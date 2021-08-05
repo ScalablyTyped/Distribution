@@ -18,28 +18,21 @@ trait ListServiceQuotaIncreaseRequestsInTemplateResponse extends StObject {
 }
 object ListServiceQuotaIncreaseRequestsInTemplateResponse {
   
-  @scala.inline
-  def apply(): ListServiceQuotaIncreaseRequestsInTemplateResponse = {
+  inline def apply(): ListServiceQuotaIncreaseRequestsInTemplateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListServiceQuotaIncreaseRequestsInTemplateResponse]
   }
   
-  @scala.inline
-  implicit class ListServiceQuotaIncreaseRequestsInTemplateResponseMutableBuilder[Self <: ListServiceQuotaIncreaseRequestsInTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListServiceQuotaIncreaseRequestsInTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setServiceQuotaIncreaseRequestInTemplateList(value: ServiceQuotaIncreaseRequestInTemplateList): Self = StObject.set(x, "ServiceQuotaIncreaseRequestInTemplateList", value.asInstanceOf[js.Any])
+    inline def setServiceQuotaIncreaseRequestInTemplateList(value: ServiceQuotaIncreaseRequestInTemplateList): Self = StObject.set(x, "ServiceQuotaIncreaseRequestInTemplateList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceQuotaIncreaseRequestInTemplateListUndefined: Self = StObject.set(x, "ServiceQuotaIncreaseRequestInTemplateList", js.undefined)
+    inline def setServiceQuotaIncreaseRequestInTemplateListUndefined: Self = StObject.set(x, "ServiceQuotaIncreaseRequestInTemplateList", js.undefined)
     
-    @scala.inline
-    def setServiceQuotaIncreaseRequestInTemplateListVarargs(value: ServiceQuotaIncreaseRequestInTemplate*): Self = StObject.set(x, "ServiceQuotaIncreaseRequestInTemplateList", js.Array(value :_*))
+    inline def setServiceQuotaIncreaseRequestInTemplateListVarargs(value: ServiceQuotaIncreaseRequestInTemplate*): Self = StObject.set(x, "ServiceQuotaIncreaseRequestInTemplateList", js.Array(value :_*))
   }
 }

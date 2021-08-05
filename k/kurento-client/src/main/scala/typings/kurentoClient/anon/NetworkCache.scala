@@ -14,28 +14,21 @@ trait NetworkCache extends StObject {
 }
 object NetworkCache {
   
-  @scala.inline
-  def apply(uri: String): NetworkCache = {
+  inline def apply(uri: String): NetworkCache = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkCache]
   }
   
-  @scala.inline
-  implicit class NetworkCacheMutableBuilder[Self <: NetworkCache] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkCache](x: Self) {
     
-    @scala.inline
-    def setNetworkCache(value: Double): Self = StObject.set(x, "networkCache", value.asInstanceOf[js.Any])
+    inline def setNetworkCache(value: Double): Self = StObject.set(x, "networkCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkCacheUndefined: Self = StObject.set(x, "networkCache", js.undefined)
+    inline def setNetworkCacheUndefined: Self = StObject.set(x, "networkCache", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseEncodedMedia(value: Boolean): Self = StObject.set(x, "useEncodedMedia", value.asInstanceOf[js.Any])
+    inline def setUseEncodedMedia(value: Boolean): Self = StObject.set(x, "useEncodedMedia", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseEncodedMediaUndefined: Self = StObject.set(x, "useEncodedMedia", js.undefined)
+    inline def setUseEncodedMediaUndefined: Self = StObject.set(x, "useEncodedMedia", js.undefined)
   }
 }

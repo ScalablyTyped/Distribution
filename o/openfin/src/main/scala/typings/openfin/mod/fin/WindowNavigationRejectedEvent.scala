@@ -14,8 +14,7 @@ trait WindowNavigationRejectedEvent
 }
 object WindowNavigationRejectedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     name: String,
     sourceName: String,
     topic: String,
@@ -28,13 +27,10 @@ object WindowNavigationRejectedEvent {
     __obj.asInstanceOf[WindowNavigationRejectedEvent]
   }
   
-  @scala.inline
-  implicit class WindowNavigationRejectedEventMutableBuilder[Self <: WindowNavigationRejectedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WindowNavigationRejectedEvent](x: Self) {
     
-    @scala.inline
-    def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
+    inline def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

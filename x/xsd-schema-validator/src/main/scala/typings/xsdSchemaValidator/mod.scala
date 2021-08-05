@@ -14,18 +14,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def validateXML(
+  inline def validateXML(
     xml: String,
     pathToXsd: String,
     callback: js.Function2[/* err */ Error, /* result */ Messages, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateXML")(xml.asInstanceOf[js.Any], pathToXsd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def validateXML(
+  inline def validateXML(
     xml: ReadableStream,
     pathToXsd: String,
     callback: js.Function2[/* err */ Error, /* result */ Messages, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateXML")(xml.asInstanceOf[js.Any], pathToXsd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def validateXML(xml: File, pathToXsd: String, callback: js.Function2[/* err */ Error, /* result */ Messages, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateXML")(xml.asInstanceOf[js.Any], pathToXsd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateXML(xml: File, pathToXsd: String, callback: js.Function2[/* err */ Error, /* result */ Messages, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateXML")(xml.asInstanceOf[js.Any], pathToXsd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

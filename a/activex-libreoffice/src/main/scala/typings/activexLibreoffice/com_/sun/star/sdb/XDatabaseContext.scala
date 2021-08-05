@@ -29,8 +29,7 @@ trait XDatabaseContext
      with XDatabaseRegistrations
 object XDatabaseContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     RegistrationNames: SafeArray[String],

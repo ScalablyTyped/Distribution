@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** IVBSAXAttributes interface */
 trait IVBSAXAttributes extends StObject {
   
-  @JSName("MSXML2.IVBSAXAttributes_typekey")
+  /* private */ @JSName("MSXML2.IVBSAXAttributes_typekey")
   var MSXML2DotIVBSAXAttributes_typekey: IVBSAXAttributes
   
   /** Look up the index of an attribute by Namespace name. */
@@ -48,8 +48,7 @@ trait IVBSAXAttributes extends StObject {
 }
 object IVBSAXAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSXML2DotIVBSAXAttributes_typekey: IVBSAXAttributes,
     getIndexFromName: (String, String) => Double,
     getIndexFromQName: String => Double,
@@ -69,46 +68,32 @@ object IVBSAXAttributes {
     __obj.asInstanceOf[IVBSAXAttributes]
   }
   
-  @scala.inline
-  implicit class IVBSAXAttributesMutableBuilder[Self <: IVBSAXAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: IVBSAXAttributes](x: Self) {
     
-    @scala.inline
-    def setGetIndexFromName(value: (String, String) => Double): Self = StObject.set(x, "getIndexFromName", js.Any.fromFunction2(value))
+    inline def setGetIndexFromName(value: (String, String) => Double): Self = StObject.set(x, "getIndexFromName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetIndexFromQName(value: String => Double): Self = StObject.set(x, "getIndexFromQName", js.Any.fromFunction1(value))
+    inline def setGetIndexFromQName(value: String => Double): Self = StObject.set(x, "getIndexFromQName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLocalName(value: Double => String): Self = StObject.set(x, "getLocalName", js.Any.fromFunction1(value))
+    inline def setGetLocalName(value: Double => String): Self = StObject.set(x, "getLocalName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetQName(value: Double => String): Self = StObject.set(x, "getQName", js.Any.fromFunction1(value))
+    inline def setGetQName(value: Double => String): Self = StObject.set(x, "getQName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetType(value: Double => String): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))
+    inline def setGetType(value: Double => String): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTypeFromName(value: (String, String) => String): Self = StObject.set(x, "getTypeFromName", js.Any.fromFunction2(value))
+    inline def setGetTypeFromName(value: (String, String) => String): Self = StObject.set(x, "getTypeFromName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetTypeFromQName(value: String => String): Self = StObject.set(x, "getTypeFromQName", js.Any.fromFunction1(value))
+    inline def setGetTypeFromQName(value: String => String): Self = StObject.set(x, "getTypeFromQName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetURI(value: Double => String): Self = StObject.set(x, "getURI", js.Any.fromFunction1(value))
+    inline def setGetURI(value: Double => String): Self = StObject.set(x, "getURI", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetValue(value: Double => String): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+    inline def setGetValue(value: Double => String): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetValueFromName(value: (String, String) => String): Self = StObject.set(x, "getValueFromName", js.Any.fromFunction2(value))
+    inline def setGetValueFromName(value: (String, String) => String): Self = StObject.set(x, "getValueFromName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetValueFromQName(value: String => String): Self = StObject.set(x, "getValueFromQName", js.Any.fromFunction1(value))
+    inline def setGetValueFromQName(value: String => String): Self = StObject.set(x, "getValueFromQName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSXML2DotIVBSAXAttributes_typekey(value: IVBSAXAttributes): Self = StObject.set(x, "MSXML2.IVBSAXAttributes_typekey", value.asInstanceOf[js.Any])
+    inline def setMSXML2DotIVBSAXAttributes_typekey(value: IVBSAXAttributes): Self = StObject.set(x, "MSXML2.IVBSAXAttributes_typekey", value.asInstanceOf[js.Any])
   }
 }

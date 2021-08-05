@@ -23,8 +23,7 @@ trait XContainerListener
 }
 object XContainerListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     elementInserted: ContainerEvent => Unit,
@@ -37,16 +36,12 @@ object XContainerListener {
     __obj.asInstanceOf[XContainerListener]
   }
   
-  @scala.inline
-  implicit class XContainerListenerMutableBuilder[Self <: XContainerListener] (val x: Self) extends AnyVal {
+  extension [Self <: XContainerListener](x: Self) {
     
-    @scala.inline
-    def setElementInserted(value: ContainerEvent => Unit): Self = StObject.set(x, "elementInserted", js.Any.fromFunction1(value))
+    inline def setElementInserted(value: ContainerEvent => Unit): Self = StObject.set(x, "elementInserted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementRemoved(value: ContainerEvent => Unit): Self = StObject.set(x, "elementRemoved", js.Any.fromFunction1(value))
+    inline def setElementRemoved(value: ContainerEvent => Unit): Self = StObject.set(x, "elementRemoved", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementReplaced(value: ContainerEvent => Unit): Self = StObject.set(x, "elementReplaced", js.Any.fromFunction1(value))
+    inline def setElementReplaced(value: ContainerEvent => Unit): Self = StObject.set(x, "elementReplaced", js.Any.fromFunction1(value))
   }
 }

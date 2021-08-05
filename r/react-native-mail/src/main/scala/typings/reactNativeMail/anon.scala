@@ -24,56 +24,40 @@ object anon {
   }
   object Attachment {
     
-    @scala.inline
-    def apply(body: String, isHTML: Boolean, subject: String): Attachment = {
+    inline def apply(body: String, isHTML: Boolean, subject: String): Attachment = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], isHTML = isHTML.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
       __obj.asInstanceOf[Attachment]
     }
     
-    @scala.inline
-    implicit class AttachmentMutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
+    extension [Self <: Attachment](x: Self) {
       
-      @scala.inline
-      def setAttachment(value: Name): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
+      inline def setAttachment(value: Name): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
+      inline def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
       
-      @scala.inline
-      def setBccRecipients(value: js.Array[String]): Self = StObject.set(x, "bccRecipients", value.asInstanceOf[js.Any])
+      inline def setBccRecipients(value: js.Array[String]): Self = StObject.set(x, "bccRecipients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBccRecipientsUndefined: Self = StObject.set(x, "bccRecipients", js.undefined)
+      inline def setBccRecipientsUndefined: Self = StObject.set(x, "bccRecipients", js.undefined)
       
-      @scala.inline
-      def setBccRecipientsVarargs(value: String*): Self = StObject.set(x, "bccRecipients", js.Array(value :_*))
+      inline def setBccRecipientsVarargs(value: String*): Self = StObject.set(x, "bccRecipients", js.Array(value :_*))
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcRecipients(value: js.Array[String]): Self = StObject.set(x, "ccRecipients", value.asInstanceOf[js.Any])
+      inline def setCcRecipients(value: js.Array[String]): Self = StObject.set(x, "ccRecipients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcRecipientsUndefined: Self = StObject.set(x, "ccRecipients", js.undefined)
+      inline def setCcRecipientsUndefined: Self = StObject.set(x, "ccRecipients", js.undefined)
       
-      @scala.inline
-      def setCcRecipientsVarargs(value: String*): Self = StObject.set(x, "ccRecipients", js.Array(value :_*))
+      inline def setCcRecipientsVarargs(value: String*): Self = StObject.set(x, "ccRecipients", js.Array(value :_*))
       
-      @scala.inline
-      def setIsHTML(value: Boolean): Self = StObject.set(x, "isHTML", value.asInstanceOf[js.Any])
+      inline def setIsHTML(value: Boolean): Self = StObject.set(x, "isHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecipients(value: js.Array[String]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
+      inline def setRecipients(value: js.Array[String]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
+      inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
       
-      @scala.inline
-      def setRecipientsVarargs(value: String*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+      inline def setRecipientsVarargs(value: String*): Self = StObject.set(x, "recipients", js.Array(value :_*))
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,27 +80,21 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(path: String, `type`: String): Name = {
+    inline def apply(path: String, `type`: String): Name = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,19 +13,15 @@ trait AcknowledgeThirdPartyJobOutput extends StObject {
 }
 object AcknowledgeThirdPartyJobOutput {
   
-  @scala.inline
-  def apply(): AcknowledgeThirdPartyJobOutput = {
+  inline def apply(): AcknowledgeThirdPartyJobOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AcknowledgeThirdPartyJobOutput]
   }
   
-  @scala.inline
-  implicit class AcknowledgeThirdPartyJobOutputMutableBuilder[Self <: AcknowledgeThirdPartyJobOutput] (val x: Self) extends AnyVal {
+  extension [Self <: AcknowledgeThirdPartyJobOutput](x: Self) {
     
-    @scala.inline
-    def setStatus(value: JobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: JobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

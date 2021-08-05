@@ -9,8 +9,7 @@ trait DisableKeyRotationInput
      with typings.awsSdkClientKmsBrowser.typesDisableKeyRotationInputMod.DisableKeyRotationInput
 object DisableKeyRotationInput {
   
-  @scala.inline
-  def apply(KeyId: String): DisableKeyRotationInput = {
+  inline def apply(KeyId: String): DisableKeyRotationInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableKeyRotationInput]
   }

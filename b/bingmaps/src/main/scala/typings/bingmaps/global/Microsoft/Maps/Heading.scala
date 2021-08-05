@@ -20,27 +20,23 @@ object Heading {
   @JSGlobal("Microsoft.Maps.Heading.East")
   @js.native
   def East: Double = js.native
-  @scala.inline
-  def East_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("East")(x.asInstanceOf[js.Any])
+  inline def East_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("East")(x.asInstanceOf[js.Any])
   
   /** A heading pointing north, 0 degrees. */
   @JSGlobal("Microsoft.Maps.Heading.North")
   @js.native
   def North: Double = js.native
-  @scala.inline
-  def North_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("North")(x.asInstanceOf[js.Any])
+  inline def North_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("North")(x.asInstanceOf[js.Any])
   
   /** A heading pointing south, 180 degrees. */
   @JSGlobal("Microsoft.Maps.Heading.South")
   @js.native
   def South: Double = js.native
-  @scala.inline
-  def South_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("South")(x.asInstanceOf[js.Any])
+  inline def South_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("South")(x.asInstanceOf[js.Any])
   
   /** A heading pointing west, 270 degrees. */
   @JSGlobal("Microsoft.Maps.Heading.West")
   @js.native
   def West: Double = js.native
-  @scala.inline
-  def West_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("West")(x.asInstanceOf[js.Any])
+  inline def West_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("West")(x.asInstanceOf[js.Any])
 }

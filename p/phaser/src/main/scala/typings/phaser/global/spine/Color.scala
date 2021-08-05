@@ -62,42 +62,35 @@ object Color {
   @JSGlobal("spine.Color.BLUE")
   @js.native
   def BLUE: typings.phaser.spine.Color = js.native
-  @scala.inline
-  def BLUE_=(x: typings.phaser.spine.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE")(x.asInstanceOf[js.Any])
+  inline def BLUE_=(x: typings.phaser.spine.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("spine.Color.GREEN")
   @js.native
   def GREEN: typings.phaser.spine.Color = js.native
-  @scala.inline
-  def GREEN_=(x: typings.phaser.spine.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN")(x.asInstanceOf[js.Any])
+  inline def GREEN_=(x: typings.phaser.spine.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("spine.Color.MAGENTA")
   @js.native
   def MAGENTA: typings.phaser.spine.Color = js.native
-  @scala.inline
-  def MAGENTA_=(x: typings.phaser.spine.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAGENTA")(x.asInstanceOf[js.Any])
+  inline def MAGENTA_=(x: typings.phaser.spine.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAGENTA")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("spine.Color.RED")
   @js.native
   def RED: typings.phaser.spine.Color = js.native
-  @scala.inline
-  def RED_=(x: typings.phaser.spine.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED")(x.asInstanceOf[js.Any])
+  inline def RED_=(x: typings.phaser.spine.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("spine.Color.WHITE")
   @js.native
   def WHITE: typings.phaser.spine.Color = js.native
-  @scala.inline
-  def WHITE_=(x: typings.phaser.spine.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHITE")(x.asInstanceOf[js.Any])
+  inline def WHITE_=(x: typings.phaser.spine.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHITE")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def rgb888ToColor(color: typings.phaser.spine.Color, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb888ToColor")(color.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def rgb888ToColor(color: typings.phaser.spine.Color, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb888ToColor")(color.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def rgba8888ToColor(color: typings.phaser.spine.Color, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba8888ToColor")(color.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def rgba8888ToColor(color: typings.phaser.spine.Color, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba8888ToColor")(color.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

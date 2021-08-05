@@ -11,16 +11,13 @@ trait PickImplhideAdditions extends StObject {
 }
 object PickImplhideAdditions {
   
-  @scala.inline
-  def apply(hideAdditions: Boolean): PickImplhideAdditions = {
+  inline def apply(hideAdditions: Boolean): PickImplhideAdditions = {
     val __obj = js.Dynamic.literal(hideAdditions = hideAdditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhideAdditions]
   }
   
-  @scala.inline
-  implicit class PickImplhideAdditionsMutableBuilder[Self <: PickImplhideAdditions] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplhideAdditions](x: Self) {
     
-    @scala.inline
-    def setHideAdditions(value: Boolean): Self = StObject.set(x, "hideAdditions", value.asInstanceOf[js.Any])
+    inline def setHideAdditions(value: Boolean): Self = StObject.set(x, "hideAdditions", value.asInstanceOf[js.Any])
   }
 }

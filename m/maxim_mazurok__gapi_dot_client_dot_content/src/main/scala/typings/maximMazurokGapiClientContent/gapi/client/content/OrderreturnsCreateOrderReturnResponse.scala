@@ -17,31 +17,23 @@ trait OrderreturnsCreateOrderReturnResponse extends StObject {
 }
 object OrderreturnsCreateOrderReturnResponse {
   
-  @scala.inline
-  def apply(): OrderreturnsCreateOrderReturnResponse = {
+  inline def apply(): OrderreturnsCreateOrderReturnResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderreturnsCreateOrderReturnResponse]
   }
   
-  @scala.inline
-  implicit class OrderreturnsCreateOrderReturnResponseMutableBuilder[Self <: OrderreturnsCreateOrderReturnResponse] (val x: Self) extends AnyVal {
+  extension [Self <: OrderreturnsCreateOrderReturnResponse](x: Self) {
     
-    @scala.inline
-    def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
+    inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionStatusUndefined: Self = StObject.set(x, "executionStatus", js.undefined)
+    inline def setExecutionStatusUndefined: Self = StObject.set(x, "executionStatus", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setOrderReturn(value: MerchantOrderReturn): Self = StObject.set(x, "orderReturn", value.asInstanceOf[js.Any])
+    inline def setOrderReturn(value: MerchantOrderReturn): Self = StObject.set(x, "orderReturn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderReturnUndefined: Self = StObject.set(x, "orderReturn", js.undefined)
+    inline def setOrderReturnUndefined: Self = StObject.set(x, "orderReturn", js.undefined)
   }
 }

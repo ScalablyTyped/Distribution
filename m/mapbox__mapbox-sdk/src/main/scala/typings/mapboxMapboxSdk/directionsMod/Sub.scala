@@ -19,22 +19,17 @@ trait Sub extends StObject {
 }
 object Sub {
   
-  @scala.inline
-  def apply(components: js.Array[Component], text: String): Sub = {
+  inline def apply(components: js.Array[Component], text: String): Sub = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sub]
   }
   
-  @scala.inline
-  implicit class SubMutableBuilder[Self <: Sub] (val x: Self) extends AnyVal {
+  extension [Self <: Sub](x: Self) {
     
-    @scala.inline
-    def setComponents(value: js.Array[Component]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: js.Array[Component]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentsVarargs(value: Component*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: Component*): Self = StObject.set(x, "components", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

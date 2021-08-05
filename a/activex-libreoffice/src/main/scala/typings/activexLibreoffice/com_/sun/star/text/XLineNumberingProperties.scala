@@ -20,8 +20,7 @@ trait XLineNumberingProperties
 }
 object XLineNumberingProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LineNumberingProperties: XPropertySet,
     acquire: () => Unit,
     getLineNumberingProperties: () => XPropertySet,
@@ -32,13 +31,10 @@ object XLineNumberingProperties {
     __obj.asInstanceOf[XLineNumberingProperties]
   }
   
-  @scala.inline
-  implicit class XLineNumberingPropertiesMutableBuilder[Self <: XLineNumberingProperties] (val x: Self) extends AnyVal {
+  extension [Self <: XLineNumberingProperties](x: Self) {
     
-    @scala.inline
-    def setGetLineNumberingProperties(value: () => XPropertySet): Self = StObject.set(x, "getLineNumberingProperties", js.Any.fromFunction0(value))
+    inline def setGetLineNumberingProperties(value: () => XPropertySet): Self = StObject.set(x, "getLineNumberingProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLineNumberingProperties(value: XPropertySet): Self = StObject.set(x, "LineNumberingProperties", value.asInstanceOf[js.Any])
+    inline def setLineNumberingProperties(value: XPropertySet): Self = StObject.set(x, "LineNumberingProperties", value.asInstanceOf[js.Any])
   }
 }

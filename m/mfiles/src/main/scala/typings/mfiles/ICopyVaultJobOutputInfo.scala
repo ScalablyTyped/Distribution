@@ -10,16 +10,13 @@ trait ICopyVaultJobOutputInfo extends StObject {
 }
 object ICopyVaultJobOutputInfo {
   
-  @scala.inline
-  def apply(VaultProperties: IVaultProperties): ICopyVaultJobOutputInfo = {
+  inline def apply(VaultProperties: IVaultProperties): ICopyVaultJobOutputInfo = {
     val __obj = js.Dynamic.literal(VaultProperties = VaultProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICopyVaultJobOutputInfo]
   }
   
-  @scala.inline
-  implicit class ICopyVaultJobOutputInfoMutableBuilder[Self <: ICopyVaultJobOutputInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ICopyVaultJobOutputInfo](x: Self) {
     
-    @scala.inline
-    def setVaultProperties(value: IVaultProperties): Self = StObject.set(x, "VaultProperties", value.asInstanceOf[js.Any])
+    inline def setVaultProperties(value: IVaultProperties): Self = StObject.set(x, "VaultProperties", value.asInstanceOf[js.Any])
   }
 }

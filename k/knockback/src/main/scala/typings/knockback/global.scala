@@ -58,8 +58,7 @@ object global {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def useOptionsOrCreate(
+      inline def useOptionsOrCreate(
         options: js.Any,
         emitter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any,
         obj: Model[js.Any, ModelSetOptions, js.Object],
@@ -96,8 +95,7 @@ object global {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def useOptionsOrCreate(options: FactoryOptions, obj: js.Any, owner_path: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("useOptionsOrCreate")(options.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], owner_path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def useOptionsOrCreate(options: FactoryOptions, obj: js.Any, owner_path: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("useOptionsOrCreate")(options.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], owner_path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     }
     
     @JSGlobal("Knockback.FormattedObservable")
@@ -190,8 +188,7 @@ object global {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def useOptionsOrCreate(
+      inline def useOptionsOrCreate(
         options: StoreOptions,
         obj: js.Any,
         observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
@@ -247,6 +244,5 @@ object global {
   @JSGlobal("kb")
   @js.native
   def kb: Static = js.native
-  @scala.inline
-  def kb_=(x: Static): Unit = js.Dynamic.global.updateDynamic("kb")(x.asInstanceOf[js.Any])
+  inline def kb_=(x: Static): Unit = js.Dynamic.global.updateDynamic("kb")(x.asInstanceOf[js.Any])
 }

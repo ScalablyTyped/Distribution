@@ -26,37 +26,27 @@ trait AdvertiserCreativeConfig extends StObject {
 }
 object AdvertiserCreativeConfig {
   
-  @scala.inline
-  def apply(): AdvertiserCreativeConfig = {
+  inline def apply(): AdvertiserCreativeConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdvertiserCreativeConfig]
   }
   
-  @scala.inline
-  implicit class AdvertiserCreativeConfigMutableBuilder[Self <: AdvertiserCreativeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AdvertiserCreativeConfig](x: Self) {
     
-    @scala.inline
-    def setDynamicCreativeEnabled(value: Boolean): Self = StObject.set(x, "dynamicCreativeEnabled", value.asInstanceOf[js.Any])
+    inline def setDynamicCreativeEnabled(value: Boolean): Self = StObject.set(x, "dynamicCreativeEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicCreativeEnabledUndefined: Self = StObject.set(x, "dynamicCreativeEnabled", js.undefined)
+    inline def setDynamicCreativeEnabledUndefined: Self = StObject.set(x, "dynamicCreativeEnabled", js.undefined)
     
-    @scala.inline
-    def setIasClientId(value: String): Self = StObject.set(x, "iasClientId", value.asInstanceOf[js.Any])
+    inline def setIasClientId(value: String): Self = StObject.set(x, "iasClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIasClientIdUndefined: Self = StObject.set(x, "iasClientId", js.undefined)
+    inline def setIasClientIdUndefined: Self = StObject.set(x, "iasClientId", js.undefined)
     
-    @scala.inline
-    def setObaComplianceDisabled(value: Boolean): Self = StObject.set(x, "obaComplianceDisabled", value.asInstanceOf[js.Any])
+    inline def setObaComplianceDisabled(value: Boolean): Self = StObject.set(x, "obaComplianceDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObaComplianceDisabledUndefined: Self = StObject.set(x, "obaComplianceDisabled", js.undefined)
+    inline def setObaComplianceDisabledUndefined: Self = StObject.set(x, "obaComplianceDisabled", js.undefined)
     
-    @scala.inline
-    def setVideoCreativeDataSharingAuthorized(value: Boolean): Self = StObject.set(x, "videoCreativeDataSharingAuthorized", value.asInstanceOf[js.Any])
+    inline def setVideoCreativeDataSharingAuthorized(value: Boolean): Self = StObject.set(x, "videoCreativeDataSharingAuthorized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoCreativeDataSharingAuthorizedUndefined: Self = StObject.set(x, "videoCreativeDataSharingAuthorized", js.undefined)
+    inline def setVideoCreativeDataSharingAuthorizedUndefined: Self = StObject.set(x, "videoCreativeDataSharingAuthorized", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait SVGAnimatedAngle extends StObject {
 }
 object SVGAnimatedAngle {
   
-  @scala.inline
-  def apply(animVal: SVGAngle, baseVal: SVGAngle): SVGAnimatedAngle = {
+  inline def apply(animVal: SVGAngle, baseVal: SVGAngle): SVGAnimatedAngle = {
     val __obj = js.Dynamic.literal(animVal = animVal.asInstanceOf[js.Any], baseVal = baseVal.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGAnimatedAngle]
   }
   
-  @scala.inline
-  implicit class SVGAnimatedAngleMutableBuilder[Self <: SVGAnimatedAngle] (val x: Self) extends AnyVal {
+  extension [Self <: SVGAnimatedAngle](x: Self) {
     
-    @scala.inline
-    def setAnimVal(value: SVGAngle): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
+    inline def setAnimVal(value: SVGAngle): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseVal(value: SVGAngle): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
+    inline def setBaseVal(value: SVGAngle): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
   }
 }

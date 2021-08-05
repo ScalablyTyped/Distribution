@@ -14,8 +14,7 @@ trait SwiftClickObject extends StObject {
 }
 object SwiftClickObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addNodeNamesToTrack: js.Array[String] => Unit,
     replaceNodeNamesToTrack: js.Array[String] => Unit,
     useCssParser: Boolean => Unit
@@ -24,16 +23,12 @@ object SwiftClickObject {
     __obj.asInstanceOf[SwiftClickObject]
   }
   
-  @scala.inline
-  implicit class SwiftClickObjectMutableBuilder[Self <: SwiftClickObject] (val x: Self) extends AnyVal {
+  extension [Self <: SwiftClickObject](x: Self) {
     
-    @scala.inline
-    def setAddNodeNamesToTrack(value: js.Array[String] => Unit): Self = StObject.set(x, "addNodeNamesToTrack", js.Any.fromFunction1(value))
+    inline def setAddNodeNamesToTrack(value: js.Array[String] => Unit): Self = StObject.set(x, "addNodeNamesToTrack", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceNodeNamesToTrack(value: js.Array[String] => Unit): Self = StObject.set(x, "replaceNodeNamesToTrack", js.Any.fromFunction1(value))
+    inline def setReplaceNodeNamesToTrack(value: js.Array[String] => Unit): Self = StObject.set(x, "replaceNodeNamesToTrack", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUseCssParser(value: Boolean => Unit): Self = StObject.set(x, "useCssParser", js.Any.fromFunction1(value))
+    inline def setUseCssParser(value: Boolean => Unit): Self = StObject.set(x, "useCssParser", js.Any.fromFunction1(value))
   }
 }

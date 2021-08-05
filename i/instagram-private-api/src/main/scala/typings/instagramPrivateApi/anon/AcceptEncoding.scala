@@ -66,8 +66,7 @@ trait AcceptEncoding extends StObject {
 }
 object AcceptEncoding {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `Accept-Encoding`: String,
     `Accept-Language`: String,
     Authorization: String,
@@ -128,94 +127,64 @@ object AcceptEncoding {
     __obj.asInstanceOf[AcceptEncoding]
   }
   
-  @scala.inline
-  implicit class AcceptEncodingMutableBuilder[Self <: AcceptEncoding] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptEncoding](x: Self) {
     
-    @scala.inline
-    def `setAccept-Encoding`(value: String): Self = StObject.set(x, "Accept-Encoding", value.asInstanceOf[js.Any])
+    inline def `setAccept-Encoding`(value: String): Self = StObject.set(x, "Accept-Encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAccept-Language`(value: String): Self = StObject.set(x, "Accept-Language", value.asInstanceOf[js.Any])
+    inline def `setAccept-Language`(value: String): Self = StObject.set(x, "Accept-Language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
+    inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnection(value: String): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: String): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
+    inline def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-Ads-Opt-Out`(value: String): Self = StObject.set(x, "X-Ads-Opt-Out", value.asInstanceOf[js.Any])
+    inline def `setX-Ads-Opt-Out`(value: String): Self = StObject.set(x, "X-Ads-Opt-Out", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-Bloks-Is-Layout-RTL`(value: String): Self = StObject.set(x, "X-Bloks-Is-Layout-RTL", value.asInstanceOf[js.Any])
+    inline def `setX-Bloks-Is-Layout-RTL`(value: String): Self = StObject.set(x, "X-Bloks-Is-Layout-RTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-Bloks-Version-Id`(value: String): Self = StObject.set(x, "X-Bloks-Version-Id", value.asInstanceOf[js.Any])
+    inline def `setX-Bloks-Version-Id`(value: String): Self = StObject.set(x, "X-Bloks-Version-Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-CM-Bandwidth-KBPS`(value: String): Self = StObject.set(x, "X-CM-Bandwidth-KBPS", value.asInstanceOf[js.Any])
+    inline def `setX-CM-Bandwidth-KBPS`(value: String): Self = StObject.set(x, "X-CM-Bandwidth-KBPS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-CM-Latency`(value: String): Self = StObject.set(x, "X-CM-Latency", value.asInstanceOf[js.Any])
+    inline def `setX-CM-Latency`(value: String): Self = StObject.set(x, "X-CM-Latency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-FB-HTTP-Engine`(value: String): Self = StObject.set(x, "X-FB-HTTP-Engine", value.asInstanceOf[js.Any])
+    inline def `setX-FB-HTTP-Engine`(value: String): Self = StObject.set(x, "X-FB-HTTP-Engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-IG-Android-ID`(value: String): Self = StObject.set(x, "X-IG-Android-ID", value.asInstanceOf[js.Any])
+    inline def `setX-IG-Android-ID`(value: String): Self = StObject.set(x, "X-IG-Android-ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-IG-App-ID`(value: String): Self = StObject.set(x, "X-IG-App-ID", value.asInstanceOf[js.Any])
+    inline def `setX-IG-App-ID`(value: String): Self = StObject.set(x, "X-IG-App-ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-IG-App-Locale`(value: String): Self = StObject.set(x, "X-IG-App-Locale", value.asInstanceOf[js.Any])
+    inline def `setX-IG-App-Locale`(value: String): Self = StObject.set(x, "X-IG-App-Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-IG-Bandwidth-Speed-KBPS`(value: String): Self = StObject.set(x, "X-IG-Bandwidth-Speed-KBPS", value.asInstanceOf[js.Any])
+    inline def `setX-IG-Bandwidth-Speed-KBPS`(value: String): Self = StObject.set(x, "X-IG-Bandwidth-Speed-KBPS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-IG-Bandwidth-TotalBytes-B`(value: String): Self = StObject.set(x, "X-IG-Bandwidth-TotalBytes-B", value.asInstanceOf[js.Any])
+    inline def `setX-IG-Bandwidth-TotalBytes-B`(value: String): Self = StObject.set(x, "X-IG-Bandwidth-TotalBytes-B", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-IG-Bandwidth-TotalTime-MS`(value: String): Self = StObject.set(x, "X-IG-Bandwidth-TotalTime-MS", value.asInstanceOf[js.Any])
+    inline def `setX-IG-Bandwidth-TotalTime-MS`(value: String): Self = StObject.set(x, "X-IG-Bandwidth-TotalTime-MS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-IG-Capabilities`(value: String): Self = StObject.set(x, "X-IG-Capabilities", value.asInstanceOf[js.Any])
+    inline def `setX-IG-Capabilities`(value: String): Self = StObject.set(x, "X-IG-Capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-IG-Connection-Speed`(value: String): Self = StObject.set(x, "X-IG-Connection-Speed", value.asInstanceOf[js.Any])
+    inline def `setX-IG-Connection-Speed`(value: String): Self = StObject.set(x, "X-IG-Connection-Speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-IG-Connection-Type`(value: String): Self = StObject.set(x, "X-IG-Connection-Type", value.asInstanceOf[js.Any])
+    inline def `setX-IG-Connection-Type`(value: String): Self = StObject.set(x, "X-IG-Connection-Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-IG-Device-ID`(value: String): Self = StObject.set(x, "X-IG-Device-ID", value.asInstanceOf[js.Any])
+    inline def `setX-IG-Device-ID`(value: String): Self = StObject.set(x, "X-IG-Device-ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-IG-Device-Locale`(value: String): Self = StObject.set(x, "X-IG-Device-Locale", value.asInstanceOf[js.Any])
+    inline def `setX-IG-Device-Locale`(value: String): Self = StObject.set(x, "X-IG-Device-Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-IG-EU-DC-ENABLED`(value: String): Self = StObject.set(x, "X-IG-EU-DC-ENABLED", value.asInstanceOf[js.Any])
+    inline def `setX-IG-EU-DC-ENABLED`(value: String): Self = StObject.set(x, "X-IG-EU-DC-ENABLED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-IG-Extended-CDN-Thumbnail-Cache-Busting-Value`(value: String): Self = StObject.set(x, "X-IG-Extended-CDN-Thumbnail-Cache-Busting-Value", value.asInstanceOf[js.Any])
+    inline def `setX-IG-Extended-CDN-Thumbnail-Cache-Busting-Value`(value: String): Self = StObject.set(x, "X-IG-Extended-CDN-Thumbnail-Cache-Busting-Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-IG-WWW-Claim`(value: String): Self = StObject.set(x, "X-IG-WWW-Claim", value.asInstanceOf[js.Any])
+    inline def `setX-IG-WWW-Claim`(value: String): Self = StObject.set(x, "X-IG-WWW-Claim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-MID`(value: String): Self = StObject.set(x, "X-MID", value.asInstanceOf[js.Any])
+    inline def `setX-MID`(value: String): Self = StObject.set(x, "X-MID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-Pigeon-Rawclienttime`(value: String): Self = StObject.set(x, "X-Pigeon-Rawclienttime", value.asInstanceOf[js.Any])
+    inline def `setX-Pigeon-Rawclienttime`(value: String): Self = StObject.set(x, "X-Pigeon-Rawclienttime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-Pigeon-Session-Id`(value: String): Self = StObject.set(x, "X-Pigeon-Session-Id", value.asInstanceOf[js.Any])
+    inline def `setX-Pigeon-Session-Id`(value: String): Self = StObject.set(x, "X-Pigeon-Session-Id", value.asInstanceOf[js.Any])
   }
 }

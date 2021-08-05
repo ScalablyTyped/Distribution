@@ -33,39 +33,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpPasteDataType extends StObject
 object PpPasteDataType {
   
-  @scala.inline
-  def ppPasteBitmap: `1` = 1.asInstanceOf[`1`]
+  inline def ppPasteBitmap: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppPasteDefault: `0` = 0.asInstanceOf[`0`]
+  inline def ppPasteDefault: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ppPasteEnhancedMetafile: `2` = 2.asInstanceOf[`2`]
+  inline def ppPasteEnhancedMetafile: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppPasteGIF: `4` = 4.asInstanceOf[`4`]
+  inline def ppPasteGIF: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def ppPasteHTML: `8` = 8.asInstanceOf[`8`]
+  inline def ppPasteHTML: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def ppPasteJPG: `5` = 5.asInstanceOf[`5`]
+  inline def ppPasteJPG: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ppPasteMetafilePicture: `3` = 3.asInstanceOf[`3`]
+  inline def ppPasteMetafilePicture: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppPasteOLEObject: `10` = 10.asInstanceOf[`10`]
+  inline def ppPasteOLEObject: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def ppPastePNG: `6` = 6.asInstanceOf[`6`]
+  inline def ppPastePNG: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def ppPasteRTF: `9` = 9.asInstanceOf[`9`]
+  inline def ppPasteRTF: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def ppPasteShape: `11` = 11.asInstanceOf[`11`]
+  inline def ppPasteShape: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def ppPasteText: `7` = 7.asInstanceOf[`7`]
+  inline def ppPasteText: `7` = 7.asInstanceOf[`7`]
 }

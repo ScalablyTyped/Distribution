@@ -11,57 +11,47 @@ object spotifyWebApiNodeStrings {
   sealed trait album
     extends StObject
        with SearchType
-  @scala.inline
-  def album: album = "album".asInstanceOf[album]
+  inline def album: album = "album".asInstanceOf[album]
   
   @js.native
   sealed trait artist
     extends StObject
        with SearchType
-  @scala.inline
-  def artist: artist = "artist".asInstanceOf[artist]
+  inline def artist: artist = "artist".asInstanceOf[artist]
   
   @js.native
   sealed trait audio extends StObject
-  @scala.inline
-  def audio: audio = "audio".asInstanceOf[audio]
+  inline def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
   sealed trait context extends StObject
-  @scala.inline
-  def context: context = "context".asInstanceOf[context]
+  inline def context: context = "context".asInstanceOf[context]
   
   @js.native
   sealed trait long_term extends StObject
-  @scala.inline
-  def long_term: long_term = "long_term".asInstanceOf[long_term]
+  inline def long_term: long_term = "long_term".asInstanceOf[long_term]
   
   @js.native
   sealed trait medium_term extends StObject
-  @scala.inline
-  def medium_term: medium_term = "medium_term".asInstanceOf[medium_term]
+  inline def medium_term: medium_term = "medium_term".asInstanceOf[medium_term]
   
   @js.native
   sealed trait off extends StObject
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
+  inline def off: off = "off".asInstanceOf[off]
   
   @js.native
   sealed trait playlist
     extends StObject
        with SearchType
-  @scala.inline
-  def playlist: playlist = "playlist".asInstanceOf[playlist]
+  inline def playlist: playlist = "playlist".asInstanceOf[playlist]
   
   @js.native
   sealed trait short_term extends StObject
-  @scala.inline
-  def short_term: short_term = "short_term".asInstanceOf[short_term]
+  inline def short_term: short_term = "short_term".asInstanceOf[short_term]
   
   @js.native
   sealed trait track
     extends StObject
        with SearchType
-  @scala.inline
-  def track: track = "track".asInstanceOf[track]
+  inline def track: track = "track".asInstanceOf[track]
 }

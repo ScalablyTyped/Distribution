@@ -11,20 +11,17 @@ object dateUtilsStrings {
   sealed trait es
     extends StObject
        with LanguageType
-  @scala.inline
-  def es: es = "es".asInstanceOf[es]
+  inline def es: es = "es".asInstanceOf[es]
   
   @js.native
   sealed trait fr
     extends StObject
        with LanguageType
-  @scala.inline
-  def fr: fr = "fr".asInstanceOf[fr]
+  inline def fr: fr = "fr".asInstanceOf[fr]
   
   @js.native
   sealed trait `pt-BR`
     extends StObject
        with LanguageType
-  @scala.inline
-  def `pt-BR`: `pt-BR` = "pt-BR".asInstanceOf[`pt-BR`]
+  inline def `pt-BR`: `pt-BR` = "pt-BR".asInstanceOf[`pt-BR`]
 }

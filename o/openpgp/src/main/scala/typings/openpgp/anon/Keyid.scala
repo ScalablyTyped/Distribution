@@ -12,19 +12,15 @@ trait Keyid extends StObject {
 }
 object Keyid {
   
-  @scala.inline
-  def apply(keyid: typings.openpgp.mod.`type`.keyid.Keyid, valid: Boolean): Keyid = {
+  inline def apply(keyid: typings.openpgp.mod.`type`.keyid.Keyid, valid: Boolean): Keyid = {
     val __obj = js.Dynamic.literal(keyid = keyid.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Keyid]
   }
   
-  @scala.inline
-  implicit class KeyidMutableBuilder[Self <: Keyid] (val x: Self) extends AnyVal {
+  extension [Self <: Keyid](x: Self) {
     
-    @scala.inline
-    def setKeyid(value: typings.openpgp.mod.`type`.keyid.Keyid): Self = StObject.set(x, "keyid", value.asInstanceOf[js.Any])
+    inline def setKeyid(value: typings.openpgp.mod.`type`.keyid.Keyid): Self = StObject.set(x, "keyid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+    inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
   }
 }

@@ -40,8 +40,7 @@ object adminMod {
     @js.native
     def datatransferV1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Admin] = js.native
     
-    @scala.inline
-    def datatransferV1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Admin]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("datatransfer_v1")(x.asInstanceOf[js.Any])
+    inline def datatransferV1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Admin]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("datatransfer_v1")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/admin", "VERSIONS.directory_v1")
@@ -60,8 +59,7 @@ object adminMod {
         typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin
       ] = js.native
     
-    @scala.inline
-    def directoryV1_=(
+    inline def directoryV1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -86,8 +84,7 @@ object adminMod {
         typings.googleapis.reportsV1Mod.adminReportsV1.Admin
       ] = js.native
     
-    @scala.inline
-    def reportsV1_=(
+    inline def reportsV1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -96,21 +93,15 @@ object adminMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reports_v1")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def admin(options: Options): Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(options.asInstanceOf[js.Any]).asInstanceOf[Admin]
-  @scala.inline
-  def admin(options: typings.googleapis.directoryV1Mod.adminDirectoryV1.Options): typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin]
-  @scala.inline
-  def admin(options: typings.googleapis.reportsV1Mod.adminReportsV1.Options): typings.googleapis.reportsV1Mod.adminReportsV1.Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.reportsV1Mod.adminReportsV1.Admin]
+  inline def admin(options: Options): Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(options.asInstanceOf[js.Any]).asInstanceOf[Admin]
+  inline def admin(options: typings.googleapis.directoryV1Mod.adminDirectoryV1.Options): typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin]
+  inline def admin(options: typings.googleapis.reportsV1Mod.adminReportsV1.Options): typings.googleapis.reportsV1Mod.adminReportsV1.Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.reportsV1Mod.adminReportsV1.Admin]
   
-  @scala.inline
-  def admin_datatransferv1(version: datatransfer_v1): Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(version.asInstanceOf[js.Any]).asInstanceOf[Admin]
+  inline def admin_datatransferv1(version: datatransfer_v1): Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(version.asInstanceOf[js.Any]).asInstanceOf[Admin]
   
-  @scala.inline
-  def admin_directoryv1(version: directory_v1): typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin]
+  inline def admin_directoryv1(version: directory_v1): typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin]
   
-  @scala.inline
-  def admin_reportsv1(version: reports_v1): typings.googleapis.reportsV1Mod.adminReportsV1.Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.reportsV1Mod.adminReportsV1.Admin]
+  inline def admin_reportsv1(version: reports_v1): typings.googleapis.reportsV1Mod.adminReportsV1.Admin = ^.asInstanceOf[js.Dynamic].applyDynamic("admin")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.reportsV1Mod.adminReportsV1.Admin]
   
   object auth extends Shortcut {
     
@@ -145,8 +136,7 @@ object adminMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

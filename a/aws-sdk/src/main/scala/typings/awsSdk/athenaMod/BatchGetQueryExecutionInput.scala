@@ -13,19 +13,15 @@ trait BatchGetQueryExecutionInput extends StObject {
 }
 object BatchGetQueryExecutionInput {
   
-  @scala.inline
-  def apply(QueryExecutionIds: QueryExecutionIdList): BatchGetQueryExecutionInput = {
+  inline def apply(QueryExecutionIds: QueryExecutionIdList): BatchGetQueryExecutionInput = {
     val __obj = js.Dynamic.literal(QueryExecutionIds = QueryExecutionIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetQueryExecutionInput]
   }
   
-  @scala.inline
-  implicit class BatchGetQueryExecutionInputMutableBuilder[Self <: BatchGetQueryExecutionInput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetQueryExecutionInput](x: Self) {
     
-    @scala.inline
-    def setQueryExecutionIds(value: QueryExecutionIdList): Self = StObject.set(x, "QueryExecutionIds", value.asInstanceOf[js.Any])
+    inline def setQueryExecutionIds(value: QueryExecutionIdList): Self = StObject.set(x, "QueryExecutionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryExecutionIdsVarargs(value: QueryExecutionId*): Self = StObject.set(x, "QueryExecutionIds", js.Array(value :_*))
+    inline def setQueryExecutionIdsVarargs(value: QueryExecutionId*): Self = StObject.set(x, "QueryExecutionIds", js.Array(value :_*))
   }
 }

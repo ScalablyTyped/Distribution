@@ -29,31 +29,23 @@ trait IListOptions
 }
 object IListOptions {
   
-  @scala.inline
-  def apply(): IListOptions = {
+  inline def apply(): IListOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListOptions]
   }
   
-  @scala.inline
-  implicit class IListOptionsMutableBuilder[Self <: IListOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IListOptions](x: Self) {
     
-    @scala.inline
-    def setEnding_before(value: String): Self = StObject.set(x, "ending_before", value.asInstanceOf[js.Any])
+    inline def setEnding_before(value: String): Self = StObject.set(x, "ending_before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnding_beforeUndefined: Self = StObject.set(x, "ending_before", js.undefined)
+    inline def setEnding_beforeUndefined: Self = StObject.set(x, "ending_before", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setStarting_after(value: String): Self = StObject.set(x, "starting_after", value.asInstanceOf[js.Any])
+    inline def setStarting_after(value: String): Self = StObject.set(x, "starting_after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarting_afterUndefined: Self = StObject.set(x, "starting_after", js.undefined)
+    inline def setStarting_afterUndefined: Self = StObject.set(x, "starting_after", js.undefined)
   }
 }

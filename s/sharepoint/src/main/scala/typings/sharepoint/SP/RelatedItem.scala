@@ -34,8 +34,7 @@ trait RelatedItem
 }
 object RelatedItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -58,43 +57,30 @@ object RelatedItem {
     __obj.asInstanceOf[RelatedItem]
   }
   
-  @scala.inline
-  implicit class RelatedItemMutableBuilder[Self <: RelatedItem] (val x: Self) extends AnyVal {
+  extension [Self <: RelatedItem](x: Self) {
     
-    @scala.inline
-    def setGet_iconUrl(value: () => String): Self = StObject.set(x, "get_iconUrl", js.Any.fromFunction0(value))
+    inline def setGet_iconUrl(value: () => String): Self = StObject.set(x, "get_iconUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_itemId(value: () => Double): Self = StObject.set(x, "get_itemId", js.Any.fromFunction0(value))
+    inline def setGet_itemId(value: () => Double): Self = StObject.set(x, "get_itemId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_listId(value: () => String): Self = StObject.set(x, "get_listId", js.Any.fromFunction0(value))
+    inline def setGet_listId(value: () => String): Self = StObject.set(x, "get_listId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
+    inline def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
+    inline def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_webId(value: () => String): Self = StObject.set(x, "get_webId", js.Any.fromFunction0(value))
+    inline def setGet_webId(value: () => String): Self = StObject.set(x, "get_webId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_iconUrl(value: String => Unit): Self = StObject.set(x, "set_iconUrl", js.Any.fromFunction1(value))
+    inline def setSet_iconUrl(value: String => Unit): Self = StObject.set(x, "set_iconUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_itemId(value: Double => Unit): Self = StObject.set(x, "set_itemId", js.Any.fromFunction1(value))
+    inline def setSet_itemId(value: Double => Unit): Self = StObject.set(x, "set_itemId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_listId(value: String => Unit): Self = StObject.set(x, "set_listId", js.Any.fromFunction1(value))
+    inline def setSet_listId(value: String => Unit): Self = StObject.set(x, "set_listId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
+    inline def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
+    inline def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_webId(value: String => Unit): Self = StObject.set(x, "set_webId", js.Any.fromFunction1(value))
+    inline def setSet_webId(value: String => Unit): Self = StObject.set(x, "set_webId", js.Any.fromFunction1(value))
   }
 }

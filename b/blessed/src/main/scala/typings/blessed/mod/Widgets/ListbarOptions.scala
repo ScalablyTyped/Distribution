@@ -27,34 +27,25 @@ trait ListbarOptions
 }
 object ListbarOptions {
   
-  @scala.inline
-  def apply(autoCommandKeys: Boolean, commands: js.Array[ListbarCommand], items: js.Array[ListbarCommand]): ListbarOptions = {
+  inline def apply(autoCommandKeys: Boolean, commands: js.Array[ListbarCommand], items: js.Array[ListbarCommand]): ListbarOptions = {
     val __obj = js.Dynamic.literal(autoCommandKeys = autoCommandKeys.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListbarOptions]
   }
   
-  @scala.inline
-  implicit class ListbarOptionsMutableBuilder[Self <: ListbarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ListbarOptions](x: Self) {
     
-    @scala.inline
-    def setAutoCommandKeys(value: Boolean): Self = StObject.set(x, "autoCommandKeys", value.asInstanceOf[js.Any])
+    inline def setAutoCommandKeys(value: Boolean): Self = StObject.set(x, "autoCommandKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommands(value: js.Array[ListbarCommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    inline def setCommands(value: js.Array[ListbarCommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandsVarargs(value: ListbarCommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: ListbarCommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
     
-    @scala.inline
-    def setItems(value: js.Array[ListbarCommand]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ListbarCommand]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ListbarCommand*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ListbarCommand*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setStyle(value: ListElementStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ListElementStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

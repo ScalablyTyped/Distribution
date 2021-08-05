@@ -14,28 +14,21 @@ trait SecurityClearCachedRealms
 }
 object SecurityClearCachedRealms {
   
-  @scala.inline
-  def apply(realms: String | js.Array[String]): SecurityClearCachedRealms = {
+  inline def apply(realms: String | js.Array[String]): SecurityClearCachedRealms = {
     val __obj = js.Dynamic.literal(realms = realms.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityClearCachedRealms]
   }
   
-  @scala.inline
-  implicit class SecurityClearCachedRealmsMutableBuilder[Self <: SecurityClearCachedRealms] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityClearCachedRealms](x: Self) {
     
-    @scala.inline
-    def setRealms(value: String | js.Array[String]): Self = StObject.set(x, "realms", value.asInstanceOf[js.Any])
+    inline def setRealms(value: String | js.Array[String]): Self = StObject.set(x, "realms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealmsVarargs(value: String*): Self = StObject.set(x, "realms", js.Array(value :_*))
+    inline def setRealmsVarargs(value: String*): Self = StObject.set(x, "realms", js.Array(value :_*))
     
-    @scala.inline
-    def setUsernames(value: String | js.Array[String]): Self = StObject.set(x, "usernames", value.asInstanceOf[js.Any])
+    inline def setUsernames(value: String | js.Array[String]): Self = StObject.set(x, "usernames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernamesUndefined: Self = StObject.set(x, "usernames", js.undefined)
+    inline def setUsernamesUndefined: Self = StObject.set(x, "usernames", js.undefined)
     
-    @scala.inline
-    def setUsernamesVarargs(value: String*): Self = StObject.set(x, "usernames", js.Array(value :_*))
+    inline def setUsernamesVarargs(value: String*): Self = StObject.set(x, "usernames", js.Array(value :_*))
   }
 }

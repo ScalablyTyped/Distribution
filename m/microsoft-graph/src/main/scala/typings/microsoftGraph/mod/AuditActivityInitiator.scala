@@ -20,31 +20,23 @@ trait AuditActivityInitiator extends StObject {
 }
 object AuditActivityInitiator {
   
-  @scala.inline
-  def apply(): AuditActivityInitiator = {
+  inline def apply(): AuditActivityInitiator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuditActivityInitiator]
   }
   
-  @scala.inline
-  implicit class AuditActivityInitiatorMutableBuilder[Self <: AuditActivityInitiator] (val x: Self) extends AnyVal {
+  extension [Self <: AuditActivityInitiator](x: Self) {
     
-    @scala.inline
-    def setApp(value: NullableOption[AppIdentity]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: NullableOption[AppIdentity]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppNull: Self = StObject.set(x, "app", null)
+    inline def setAppNull: Self = StObject.set(x, "app", null)
     
-    @scala.inline
-    def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+    inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
     
-    @scala.inline
-    def setUser(value: NullableOption[UserIdentity]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: NullableOption[UserIdentity]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNull: Self = StObject.set(x, "user", null)
+    inline def setUserNull: Self = StObject.set(x, "user", null)
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

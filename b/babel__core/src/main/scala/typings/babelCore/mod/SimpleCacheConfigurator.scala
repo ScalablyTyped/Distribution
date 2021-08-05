@@ -40,8 +40,7 @@ trait SimpleCacheConfigurator extends StObject {
 }
 object SimpleCacheConfigurator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     forever: () => Unit,
     invalidate: SimpleCacheCallback[js.Any] => js.Any,
     never: () => Unit,
@@ -52,19 +51,14 @@ object SimpleCacheConfigurator {
     __obj.asInstanceOf[SimpleCacheConfigurator]
   }
   
-  @scala.inline
-  implicit class SimpleCacheConfiguratorMutableBuilder[Self <: SimpleCacheConfigurator] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleCacheConfigurator](x: Self) {
     
-    @scala.inline
-    def setForever(value: () => Unit): Self = StObject.set(x, "forever", js.Any.fromFunction0(value))
+    inline def setForever(value: () => Unit): Self = StObject.set(x, "forever", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInvalidate(value: SimpleCacheCallback[js.Any] => js.Any): Self = StObject.set(x, "invalidate", js.Any.fromFunction1(value))
+    inline def setInvalidate(value: SimpleCacheCallback[js.Any] => js.Any): Self = StObject.set(x, "invalidate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNever(value: () => Unit): Self = StObject.set(x, "never", js.Any.fromFunction0(value))
+    inline def setNever(value: () => Unit): Self = StObject.set(x, "never", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUsing(value: SimpleCacheCallback[js.Any] => js.Any): Self = StObject.set(x, "using", js.Any.fromFunction1(value))
+    inline def setUsing(value: SimpleCacheCallback[js.Any] => js.Any): Self = StObject.set(x, "using", js.Any.fromFunction1(value))
   }
 }

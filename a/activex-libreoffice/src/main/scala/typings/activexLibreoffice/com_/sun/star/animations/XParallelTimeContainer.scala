@@ -17,8 +17,7 @@ trait XParallelTimeContainer
      with XEnumerationAccess
 object XParallelTimeContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Acceleration: Double,
     AutoReverse: Boolean,
     Begin: js.Any,

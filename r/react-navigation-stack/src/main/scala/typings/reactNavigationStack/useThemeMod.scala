@@ -11,6 +11,5 @@ object useThemeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Colors = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Colors]
+  inline def default(): Colors = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Colors]
 }

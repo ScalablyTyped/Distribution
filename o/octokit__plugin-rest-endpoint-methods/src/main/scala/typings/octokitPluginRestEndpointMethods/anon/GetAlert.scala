@@ -119,8 +119,7 @@ trait GetAlert extends StObject {
 }
 object GetAlert {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAlert: `115`,
     listAlertsForRepo: `116`,
     listRecentAnalyses: `117`,
@@ -131,22 +130,16 @@ object GetAlert {
     __obj.asInstanceOf[GetAlert]
   }
   
-  @scala.inline
-  implicit class GetAlertMutableBuilder[Self <: GetAlert] (val x: Self) extends AnyVal {
+  extension [Self <: GetAlert](x: Self) {
     
-    @scala.inline
-    def setGetAlert(value: `115`): Self = StObject.set(x, "getAlert", value.asInstanceOf[js.Any])
+    inline def setGetAlert(value: `115`): Self = StObject.set(x, "getAlert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListAlertsForRepo(value: `116`): Self = StObject.set(x, "listAlertsForRepo", value.asInstanceOf[js.Any])
+    inline def setListAlertsForRepo(value: `116`): Self = StObject.set(x, "listAlertsForRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListRecentAnalyses(value: `117`): Self = StObject.set(x, "listRecentAnalyses", value.asInstanceOf[js.Any])
+    inline def setListRecentAnalyses(value: `117`): Self = StObject.set(x, "listRecentAnalyses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateAlert(value: `118`): Self = StObject.set(x, "updateAlert", value.asInstanceOf[js.Any])
+    inline def setUpdateAlert(value: `118`): Self = StObject.set(x, "updateAlert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadSarif(value: `119`): Self = StObject.set(x, "uploadSarif", value.asInstanceOf[js.Any])
+    inline def setUploadSarif(value: `119`): Self = StObject.set(x, "uploadSarif", value.asInstanceOf[js.Any])
   }
 }

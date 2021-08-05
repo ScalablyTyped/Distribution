@@ -66,28 +66,21 @@ object dom {
     
     // static method
     /* static member */
-    @scala.inline
-    def clearAllMarkers(database: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAllMarkers")(database.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def clearAllMarkers(database: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAllMarkers")(database.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def clearMarkers(database: js.Any, element: typings.ckeditor.CKEDITOR.dom.element, removeFromDatabase: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clearMarkers")(database.asInstanceOf[js.Any], element.asInstanceOf[js.Any], removeFromDatabase.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def clearMarkers(database: js.Any, element: typings.ckeditor.CKEDITOR.dom.element, removeFromDatabase: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clearMarkers")(database.asInstanceOf[js.Any], element.asInstanceOf[js.Any], removeFromDatabase.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def createFromHtml(html: String): typings.ckeditor.CKEDITOR.dom.element = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHtml")(html.asInstanceOf[js.Any]).asInstanceOf[typings.ckeditor.CKEDITOR.dom.element]
+    inline def createFromHtml(html: String): typings.ckeditor.CKEDITOR.dom.element = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHtml")(html.asInstanceOf[js.Any]).asInstanceOf[typings.ckeditor.CKEDITOR.dom.element]
     
     /* static member */
-    @scala.inline
-    def get(element: String): typings.ckeditor.CKEDITOR.dom.element = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(element.asInstanceOf[js.Any]).asInstanceOf[typings.ckeditor.CKEDITOR.dom.element]
-    @scala.inline
-    def get(element: typings.ckeditor.CKEDITOR.dom.element): typings.ckeditor.CKEDITOR.dom.element = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(element.asInstanceOf[js.Any]).asInstanceOf[typings.ckeditor.CKEDITOR.dom.element]
-    @scala.inline
-    def get(element: HTMLElement): typings.ckeditor.CKEDITOR.dom.element = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(element.asInstanceOf[js.Any]).asInstanceOf[typings.ckeditor.CKEDITOR.dom.element]
+    inline def get(element: String): typings.ckeditor.CKEDITOR.dom.element = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(element.asInstanceOf[js.Any]).asInstanceOf[typings.ckeditor.CKEDITOR.dom.element]
+    inline def get(element: typings.ckeditor.CKEDITOR.dom.element): typings.ckeditor.CKEDITOR.dom.element = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(element.asInstanceOf[js.Any]).asInstanceOf[typings.ckeditor.CKEDITOR.dom.element]
+    inline def get(element: HTMLElement): typings.ckeditor.CKEDITOR.dom.element = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(element.asInstanceOf[js.Any]).asInstanceOf[typings.ckeditor.CKEDITOR.dom.element]
     
     /* static member */
-    @scala.inline
-    def setMarker(database: js.Any, element: typings.ckeditor.CKEDITOR.dom.element, name: String, value: js.Any): typings.ckeditor.CKEDITOR.dom.element = (^.asInstanceOf[js.Dynamic].applyDynamic("setMarker")(database.asInstanceOf[js.Any], element.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditor.CKEDITOR.dom.element]
+    inline def setMarker(database: js.Any, element: typings.ckeditor.CKEDITOR.dom.element, name: String, value: js.Any): typings.ckeditor.CKEDITOR.dom.element = (^.asInstanceOf[js.Dynamic].applyDynamic("setMarker")(database.asInstanceOf[js.Any], element.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.ckeditor.CKEDITOR.dom.element]
   }
   
   @JSGlobal("CKEDITOR.dom.elementPath")
@@ -155,8 +148,7 @@ object dom {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def mergeRanges(ranges: js.Array[typings.ckeditor.CKEDITOR.dom.range]): js.Array[typings.ckeditor.CKEDITOR.dom.range] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeRanges")(ranges.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.ckeditor.CKEDITOR.dom.range]]
+    inline def mergeRanges(ranges: js.Array[typings.ckeditor.CKEDITOR.dom.range]): js.Array[typings.ckeditor.CKEDITOR.dom.range] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeRanges")(ranges.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.ckeditor.CKEDITOR.dom.range]]
   }
   
   @JSGlobal("CKEDITOR.dom.rangeList")
@@ -204,70 +196,48 @@ object dom {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def blockBoundary(customNodeNames: js.Any): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockBoundary")(customNodeNames.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def blockBoundary(customNodeNames: js.Any): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockBoundary")(customNodeNames.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
     
     /* static member */
-    @scala.inline
-    def bogus(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("bogus")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
-    @scala.inline
-    def bogus(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("bogus")(isReject.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def bogus(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("bogus")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def bogus(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("bogus")(isReject.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
     
     /* static member */
-    @scala.inline
-    def bookmark(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("bookmark")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
-    @scala.inline
-    def bookmark(contentOnly: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("bookmark")(contentOnly.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
-    @scala.inline
-    def bookmark(contentOnly: Boolean, isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("bookmark")(contentOnly.asInstanceOf[js.Any], isReject.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
-    @scala.inline
-    def bookmark(contentOnly: Unit, isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("bookmark")(contentOnly.asInstanceOf[js.Any], isReject.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def bookmark(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("bookmark")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def bookmark(contentOnly: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("bookmark")(contentOnly.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def bookmark(contentOnly: Boolean, isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("bookmark")(contentOnly.asInstanceOf[js.Any], isReject.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def bookmark(contentOnly: Unit, isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("bookmark")(contentOnly.asInstanceOf[js.Any], isReject.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
     
     /* static member */
-    @scala.inline
-    def editable(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("editable")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
-    @scala.inline
-    def editable(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("editable")(isReject.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def editable(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("editable")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def editable(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("editable")(isReject.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
     
     /* static member */
-    @scala.inline
-    def empty(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
-    @scala.inline
-    def empty(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(isReject.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def empty(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def empty(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(isReject.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
     
     /* static member */
-    @scala.inline
-    def ignored(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("ignored")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
-    @scala.inline
-    def ignored(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("ignored")(isReject.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def ignored(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("ignored")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def ignored(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("ignored")(isReject.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
     
     /* static member */
-    @scala.inline
-    def invisible(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("invisible")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
-    @scala.inline
-    def invisible(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("invisible")(isReject.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def invisible(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("invisible")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def invisible(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("invisible")(isReject.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
     
     /* static member */
-    @scala.inline
-    def listItemBoundary(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("listItemBoundary")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def listItemBoundary(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("listItemBoundary")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
     
     /* static member */
-    @scala.inline
-    def nodeType(`type`: Double): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeType")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
-    @scala.inline
-    def nodeType(`type`: Double, isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeType")(`type`.asInstanceOf[js.Any], isReject.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def nodeType(`type`: Double): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeType")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def nodeType(`type`: Double, isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeType")(`type`.asInstanceOf[js.Any], isReject.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
     
     /* static member */
-    @scala.inline
-    def temp(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("temp")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
-    @scala.inline
-    def temp(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("temp")(isReject.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def temp(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("temp")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def temp(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("temp")(isReject.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
     
     /* static member */
-    @scala.inline
-    def whitespaces(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("whitespaces")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
-    @scala.inline
-    def whitespaces(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("whitespaces")(isReject.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def whitespaces(): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("whitespaces")().asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
+    inline def whitespaces(isReject: Boolean): js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("whitespaces")(isReject.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* node */ typings.ckeditor.CKEDITOR.dom.node, Boolean]]
     
     /* static member */
     object validEmptyBlockContainers

@@ -41,8 +41,7 @@ object cloudfunctionsMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Cloudfunctions
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -65,8 +64,7 @@ object cloudfunctionsMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2.Cloudfunctions
       ] = js.native
-    @scala.inline
-    def v1beta2_=(
+    inline def v1beta2_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -108,8 +106,7 @@ object cloudfunctionsMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -153,14 +150,10 @@ object cloudfunctionsMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def cloudfunctions(options: Options): Cloudfunctions = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudfunctions")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudfunctions]
-  @scala.inline
-  def cloudfunctions(options: typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2.Options): typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2.Cloudfunctions = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudfunctions")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2.Cloudfunctions]
+  inline def cloudfunctions(options: Options): Cloudfunctions = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudfunctions")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudfunctions]
+  inline def cloudfunctions(options: typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2.Options): typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2.Cloudfunctions = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudfunctions")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2.Cloudfunctions]
   
-  @scala.inline
-  def cloudfunctions_v1(version: v1): Cloudfunctions = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudfunctions")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudfunctions]
+  inline def cloudfunctions_v1(version: v1): Cloudfunctions = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudfunctions")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudfunctions]
   
-  @scala.inline
-  def cloudfunctions_v1beta2(version: v1beta2): typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2.Cloudfunctions = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudfunctions")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2.Cloudfunctions]
+  inline def cloudfunctions_v1beta2(version: v1beta2): typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2.Cloudfunctions = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudfunctions")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2.Cloudfunctions]
 }

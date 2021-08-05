@@ -21,25 +21,19 @@ trait SchemaOnClick extends StObject {
 }
 object SchemaOnClick {
   
-  @scala.inline
-  def apply(): SchemaOnClick = {
+  inline def apply(): SchemaOnClick = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOnClick]
   }
   
-  @scala.inline
-  implicit class SchemaOnClickMutableBuilder[Self <: SchemaOnClick] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOnClick](x: Self) {
     
-    @scala.inline
-    def setAction(value: SchemaFormAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: SchemaFormAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setOpenLink(value: SchemaOpenLink): Self = StObject.set(x, "openLink", value.asInstanceOf[js.Any])
+    inline def setOpenLink(value: SchemaOpenLink): Self = StObject.set(x, "openLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenLinkUndefined: Self = StObject.set(x, "openLink", js.undefined)
+    inline def setOpenLinkUndefined: Self = StObject.set(x, "openLink", js.undefined)
   }
 }

@@ -35,8 +35,7 @@ object anon {
   }
   object AllTime {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allTime: GoogleApiUrlShortenerUrlResourceAnalyticsObject,
       day: GoogleApiUrlShortenerUrlResourceAnalyticsObject,
       month: GoogleApiUrlShortenerUrlResourceAnalyticsObject,
@@ -47,23 +46,17 @@ object anon {
       __obj.asInstanceOf[AllTime]
     }
     
-    @scala.inline
-    implicit class AllTimeMutableBuilder[Self <: AllTime] (val x: Self) extends AnyVal {
+    extension [Self <: AllTime](x: Self) {
       
-      @scala.inline
-      def setAllTime(value: GoogleApiUrlShortenerUrlResourceAnalyticsObject): Self = StObject.set(x, "allTime", value.asInstanceOf[js.Any])
+      inline def setAllTime(value: GoogleApiUrlShortenerUrlResourceAnalyticsObject): Self = StObject.set(x, "allTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDay(value: GoogleApiUrlShortenerUrlResourceAnalyticsObject): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: GoogleApiUrlShortenerUrlResourceAnalyticsObject): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: GoogleApiUrlShortenerUrlResourceAnalyticsObject): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: GoogleApiUrlShortenerUrlResourceAnalyticsObject): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwoHours(value: GoogleApiUrlShortenerUrlResourceAnalyticsObject): Self = StObject.set(x, "twoHours", value.asInstanceOf[js.Any])
+      inline def setTwoHours(value: GoogleApiUrlShortenerUrlResourceAnalyticsObject): Self = StObject.set(x, "twoHours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeek(value: GoogleApiUrlShortenerUrlResourceAnalyticsObject): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+      inline def setWeek(value: GoogleApiUrlShortenerUrlResourceAnalyticsObject): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,29 +79,22 @@ object anon {
   }
   object Fields {
     
-    @scala.inline
-    def apply(shortUrl: String): Fields = {
+    inline def apply(shortUrl: String): Fields = {
       val __obj = js.Dynamic.literal(shortUrl = shortUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fields]
     }
     
-    @scala.inline
-    implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+    extension [Self <: Fields](x: Self) {
       
-      @scala.inline
-      def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+      inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
       
-      @scala.inline
-      def setShortUrl(value: String): Self = StObject.set(x, "shortUrl", value.asInstanceOf[js.Any])
+      inline def setShortUrl(value: String): Self = StObject.set(x, "shortUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,32 +117,24 @@ object anon {
   }
   object Projection {
     
-    @scala.inline
-    def apply(): Projection = {
+    inline def apply(): Projection = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Projection]
     }
     
-    @scala.inline
-    implicit class ProjectionMutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
+    extension [Self <: Projection](x: Self) {
       
-      @scala.inline
-      def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+      inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
       
-      @scala.inline
-      def `setStart-token`(value: String): Self = StObject.set(x, "start-token", value.asInstanceOf[js.Any])
+      inline def `setStart-token`(value: String): Self = StObject.set(x, "start-token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStart-tokenUndefined`: Self = StObject.set(x, "start-token", js.undefined)
+      inline def `setStart-tokenUndefined`: Self = StObject.set(x, "start-token", js.undefined)
     }
   }
   
@@ -174,26 +152,20 @@ object anon {
   }
   object RequestBody {
     
-    @scala.inline
-    def apply(): RequestBody = {
+    inline def apply(): RequestBody = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestBody]
     }
     
-    @scala.inline
-    implicit class RequestBodyMutableBuilder[Self <: RequestBody] (val x: Self) extends AnyVal {
+    extension [Self <: RequestBody](x: Self) {
       
-      @scala.inline
-      def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setRequestBody(value: String): Self = StObject.set(x, "RequestBody", value.asInstanceOf[js.Any])
+      inline def setRequestBody(value: String): Self = StObject.set(x, "RequestBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestBodyUndefined: Self = StObject.set(x, "RequestBody", js.undefined)
+      inline def setRequestBodyUndefined: Self = StObject.set(x, "RequestBody", js.undefined)
     }
   }
 }

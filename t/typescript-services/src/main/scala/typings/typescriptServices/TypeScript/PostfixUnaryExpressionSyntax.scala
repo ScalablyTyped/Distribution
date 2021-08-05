@@ -10,7 +10,7 @@ trait PostfixUnaryExpressionSyntax
      with SyntaxNode
      with IPostfixExpressionSyntax {
   
-  var _kind: js.Any = js.native
+  /* private */ var _kind: js.Any = js.native
   
   /* InferMemberOverrides */
   override def isExpression(): Boolean = js.native

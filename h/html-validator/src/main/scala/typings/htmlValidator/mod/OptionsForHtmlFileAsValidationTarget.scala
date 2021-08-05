@@ -12,16 +12,13 @@ trait OptionsForHtmlFileAsValidationTarget
 }
 object OptionsForHtmlFileAsValidationTarget {
   
-  @scala.inline
-  def apply(data: String): OptionsForHtmlFileAsValidationTarget = {
+  inline def apply(data: String): OptionsForHtmlFileAsValidationTarget = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsForHtmlFileAsValidationTarget]
   }
   
-  @scala.inline
-  implicit class OptionsForHtmlFileAsValidationTargetMutableBuilder[Self <: OptionsForHtmlFileAsValidationTarget] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsForHtmlFileAsValidationTarget](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

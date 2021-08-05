@@ -11,22 +11,17 @@ trait CropHintsAnnotation extends StObject {
 }
 object CropHintsAnnotation {
   
-  @scala.inline
-  def apply(): CropHintsAnnotation = {
+  inline def apply(): CropHintsAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CropHintsAnnotation]
   }
   
-  @scala.inline
-  implicit class CropHintsAnnotationMutableBuilder[Self <: CropHintsAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: CropHintsAnnotation](x: Self) {
     
-    @scala.inline
-    def setCropHints(value: js.Array[CropHint]): Self = StObject.set(x, "cropHints", value.asInstanceOf[js.Any])
+    inline def setCropHints(value: js.Array[CropHint]): Self = StObject.set(x, "cropHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropHintsUndefined: Self = StObject.set(x, "cropHints", js.undefined)
+    inline def setCropHintsUndefined: Self = StObject.set(x, "cropHints", js.undefined)
     
-    @scala.inline
-    def setCropHintsVarargs(value: CropHint*): Self = StObject.set(x, "cropHints", js.Array(value :_*))
+    inline def setCropHintsVarargs(value: CropHint*): Self = StObject.set(x, "cropHints", js.Array(value :_*))
   }
 }

@@ -41,20 +41,16 @@ object buttonMod {
   }
   object Button {
     
-    @scala.inline
-    def apply(dispose: () => Unit, toggle: () => Unit): Button = {
+    inline def apply(dispose: () => Unit, toggle: () => Unit): Button = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), toggle = js.Any.fromFunction0(toggle))
       __obj.asInstanceOf[Button]
     }
     
-    @scala.inline
-    implicit class ButtonMutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
+    extension [Self <: Button](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     }
   }
 }

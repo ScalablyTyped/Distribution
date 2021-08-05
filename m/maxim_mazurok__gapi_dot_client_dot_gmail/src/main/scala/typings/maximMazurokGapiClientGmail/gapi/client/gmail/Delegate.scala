@@ -14,25 +14,19 @@ trait Delegate extends StObject {
 }
 object Delegate {
   
-  @scala.inline
-  def apply(): Delegate = {
+  inline def apply(): Delegate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Delegate]
   }
   
-  @scala.inline
-  implicit class DelegateMutableBuilder[Self <: Delegate] (val x: Self) extends AnyVal {
+  extension [Self <: Delegate](x: Self) {
     
-    @scala.inline
-    def setDelegateEmail(value: String): Self = StObject.set(x, "delegateEmail", value.asInstanceOf[js.Any])
+    inline def setDelegateEmail(value: String): Self = StObject.set(x, "delegateEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegateEmailUndefined: Self = StObject.set(x, "delegateEmail", js.undefined)
+    inline def setDelegateEmailUndefined: Self = StObject.set(x, "delegateEmail", js.undefined)
     
-    @scala.inline
-    def setVerificationStatus(value: String): Self = StObject.set(x, "verificationStatus", value.asInstanceOf[js.Any])
+    inline def setVerificationStatus(value: String): Self = StObject.set(x, "verificationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationStatusUndefined: Self = StObject.set(x, "verificationStatus", js.undefined)
+    inline def setVerificationStatusUndefined: Self = StObject.set(x, "verificationStatus", js.undefined)
   }
 }

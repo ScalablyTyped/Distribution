@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EthernetAuthenticationType extends StObject
 object EthernetAuthenticationType {
   
-  @scala.inline
-  def `8021X`: typings.chromeApps.chromeAppsStrings.`8021X` = "8021X".asInstanceOf[typings.chromeApps.chromeAppsStrings.`8021X`]
+  inline def `8021X`: typings.chromeApps.chromeAppsStrings.`8021X` = "8021X".asInstanceOf[typings.chromeApps.chromeAppsStrings.`8021X`]
   
-  @scala.inline
-  def None: typings.chromeApps.chromeAppsStrings.None = "None".asInstanceOf[typings.chromeApps.chromeAppsStrings.None]
+  inline def None: typings.chromeApps.chromeAppsStrings.None = "None".asInstanceOf[typings.chromeApps.chromeAppsStrings.None]
 }

@@ -29,76 +29,53 @@ trait IReportHeader extends StObject {
 }
 object IReportHeader {
   
-  @scala.inline
-  def apply(): IReportHeader = {
+  inline def apply(): IReportHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IReportHeader]
   }
   
-  @scala.inline
-  implicit class IReportHeaderMutableBuilder[Self <: IReportHeader] (val x: Self) extends AnyVal {
+  extension [Self <: IReportHeader](x: Self) {
     
-    @scala.inline
-    def setAgentVersion(value: String): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
+    inline def setAgentVersion(value: String): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentVersionNull: Self = StObject.set(x, "agentVersion", null)
+    inline def setAgentVersionNull: Self = StObject.set(x, "agentVersion", null)
     
-    @scala.inline
-    def setAgentVersionUndefined: Self = StObject.set(x, "agentVersion", js.undefined)
+    inline def setAgentVersionUndefined: Self = StObject.set(x, "agentVersion", js.undefined)
     
-    @scala.inline
-    def setExecutableSchemaId(value: String): Self = StObject.set(x, "executableSchemaId", value.asInstanceOf[js.Any])
+    inline def setExecutableSchemaId(value: String): Self = StObject.set(x, "executableSchemaId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutableSchemaIdNull: Self = StObject.set(x, "executableSchemaId", null)
+    inline def setExecutableSchemaIdNull: Self = StObject.set(x, "executableSchemaId", null)
     
-    @scala.inline
-    def setExecutableSchemaIdUndefined: Self = StObject.set(x, "executableSchemaId", js.undefined)
+    inline def setExecutableSchemaIdUndefined: Self = StObject.set(x, "executableSchemaId", js.undefined)
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnameNull: Self = StObject.set(x, "hostname", null)
+    inline def setHostnameNull: Self = StObject.set(x, "hostname", null)
     
-    @scala.inline
-    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+    inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
-    @scala.inline
-    def setRuntimeVersion(value: String): Self = StObject.set(x, "runtimeVersion", value.asInstanceOf[js.Any])
+    inline def setRuntimeVersion(value: String): Self = StObject.set(x, "runtimeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeVersionNull: Self = StObject.set(x, "runtimeVersion", null)
+    inline def setRuntimeVersionNull: Self = StObject.set(x, "runtimeVersion", null)
     
-    @scala.inline
-    def setRuntimeVersionUndefined: Self = StObject.set(x, "runtimeVersion", js.undefined)
+    inline def setRuntimeVersionUndefined: Self = StObject.set(x, "runtimeVersion", js.undefined)
     
-    @scala.inline
-    def setSchemaTag(value: String): Self = StObject.set(x, "schemaTag", value.asInstanceOf[js.Any])
+    inline def setSchemaTag(value: String): Self = StObject.set(x, "schemaTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaTagNull: Self = StObject.set(x, "schemaTag", null)
+    inline def setSchemaTagNull: Self = StObject.set(x, "schemaTag", null)
     
-    @scala.inline
-    def setSchemaTagUndefined: Self = StObject.set(x, "schemaTag", js.undefined)
+    inline def setSchemaTagUndefined: Self = StObject.set(x, "schemaTag", js.undefined)
     
-    @scala.inline
-    def setServiceVersion(value: String): Self = StObject.set(x, "serviceVersion", value.asInstanceOf[js.Any])
+    inline def setServiceVersion(value: String): Self = StObject.set(x, "serviceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceVersionNull: Self = StObject.set(x, "serviceVersion", null)
+    inline def setServiceVersionNull: Self = StObject.set(x, "serviceVersion", null)
     
-    @scala.inline
-    def setServiceVersionUndefined: Self = StObject.set(x, "serviceVersion", js.undefined)
+    inline def setServiceVersionUndefined: Self = StObject.set(x, "serviceVersion", js.undefined)
     
-    @scala.inline
-    def setUname(value: String): Self = StObject.set(x, "uname", value.asInstanceOf[js.Any])
+    inline def setUname(value: String): Self = StObject.set(x, "uname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnameNull: Self = StObject.set(x, "uname", null)
+    inline def setUnameNull: Self = StObject.set(x, "uname", null)
     
-    @scala.inline
-    def setUnameUndefined: Self = StObject.set(x, "uname", js.undefined)
+    inline def setUnameUndefined: Self = StObject.set(x, "uname", js.undefined)
   }
 }

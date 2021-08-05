@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Flatten () extends Layer {
   def this(args: FlattenLayerArgs) = this()
   
-  var dataFormat: js.Any = js.native
+  /* private */ var dataFormat: js.Any = js.native
 }
 /* static members */
 object Flatten {
@@ -23,6 +23,5 @@ object Flatten {
   @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Flatten.className")
   @js.native
   def className: String = js.native
-  @scala.inline
-  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+  inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
 }

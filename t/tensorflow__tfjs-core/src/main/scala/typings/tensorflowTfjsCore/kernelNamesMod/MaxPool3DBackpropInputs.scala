@@ -15,31 +15,23 @@ trait MaxPool3DBackpropInputs extends StObject {
 }
 object MaxPool3DBackpropInputs {
   
-  @scala.inline
-  def apply(): MaxPool3DBackpropInputs = {
+  inline def apply(): MaxPool3DBackpropInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaxPool3DBackpropInputs]
   }
   
-  @scala.inline
-  implicit class MaxPool3DBackpropInputsMutableBuilder[Self <: MaxPool3DBackpropInputs] (val x: Self) extends AnyVal {
+  extension [Self <: MaxPool3DBackpropInputs](x: Self) {
     
-    @scala.inline
-    def setDy(value: js.Any): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    inline def setDy(value: js.Any): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
+    inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     
-    @scala.inline
-    def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
   }
 }

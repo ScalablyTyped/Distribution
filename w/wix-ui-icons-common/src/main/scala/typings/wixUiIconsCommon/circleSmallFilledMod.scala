@@ -22,20 +22,16 @@ object circleSmallFilledMod extends Shortcut {
   }
   object CircleSmallFilledProps {
     
-    @scala.inline
-    def apply(): CircleSmallFilledProps = {
+    inline def apply(): CircleSmallFilledProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CircleSmallFilledProps]
     }
     
-    @scala.inline
-    implicit class CircleSmallFilledPropsMutableBuilder[Self <: CircleSmallFilledProps] (val x: Self) extends AnyVal {
+    extension [Self <: CircleSmallFilledProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

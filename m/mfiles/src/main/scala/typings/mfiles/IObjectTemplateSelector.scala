@@ -22,8 +22,7 @@ trait IObjectTemplateSelector extends StObject {
 }
 object IObjectTemplateSelector {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClassSelector: IMetadataCardControl,
     Events: IEvents,
     GetObjectTypeIconURL: () => String,
@@ -36,28 +35,20 @@ object IObjectTemplateSelector {
     __obj.asInstanceOf[IObjectTemplateSelector]
   }
   
-  @scala.inline
-  implicit class IObjectTemplateSelectorMutableBuilder[Self <: IObjectTemplateSelector] (val x: Self) extends AnyVal {
+  extension [Self <: IObjectTemplateSelector](x: Self) {
     
-    @scala.inline
-    def setClassSelector(value: IMetadataCardControl): Self = StObject.set(x, "ClassSelector", value.asInstanceOf[js.Any])
+    inline def setClassSelector(value: IMetadataCardControl): Self = StObject.set(x, "ClassSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvents(value: IEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: IEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetObjectTypeIconURL(value: () => String): Self = StObject.set(x, "GetObjectTypeIconURL", js.Any.fromFunction0(value))
+    inline def setGetObjectTypeIconURL(value: () => String): Self = StObject.set(x, "GetObjectTypeIconURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetObjectTypeId(value: () => Double): Self = StObject.set(x, "GetObjectTypeId", js.Any.fromFunction0(value))
+    inline def setGetObjectTypeId(value: () => Double): Self = StObject.set(x, "GetObjectTypeId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetObjectTypeName(value: () => String): Self = StObject.set(x, "GetObjectTypeName", js.Any.fromFunction0(value))
+    inline def setGetObjectTypeName(value: () => String): Self = StObject.set(x, "GetObjectTypeName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTemplateItems(value: () => js.Any): Self = StObject.set(x, "GetTemplateItems", js.Any.fromFunction0(value))
+    inline def setGetTemplateItems(value: () => js.Any): Self = StObject.set(x, "GetTemplateItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectItem(value: String => Unit): Self = StObject.set(x, "SelectItem", js.Any.fromFunction1(value))
+    inline def setSelectItem(value: String => Unit): Self = StObject.set(x, "SelectItem", js.Any.fromFunction1(value))
   }
 }

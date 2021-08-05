@@ -29,55 +29,39 @@ trait PartialMDCTextFieldIconAd extends StObject {
 }
 object PartialMDCTextFieldIconAd {
   
-  @scala.inline
-  def apply(): PartialMDCTextFieldIconAd = {
+  inline def apply(): PartialMDCTextFieldIconAd = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialMDCTextFieldIconAd]
   }
   
-  @scala.inline
-  implicit class PartialMDCTextFieldIconAdMutableBuilder[Self <: PartialMDCTextFieldIconAd] (val x: Self) extends AnyVal {
+  extension [Self <: PartialMDCTextFieldIconAd](x: Self) {
     
-    @scala.inline
-    def setDeregisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterInteractionHandler", js.Any.fromFunction2(value))
+    inline def setDeregisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterInteractionHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDeregisterInteractionHandlerUndefined: Self = StObject.set(x, "deregisterInteractionHandler", js.undefined)
+    inline def setDeregisterInteractionHandlerUndefined: Self = StObject.set(x, "deregisterInteractionHandler", js.undefined)
     
-    @scala.inline
-    def setGetAttr(value: /* attr */ String => String | Null): Self = StObject.set(x, "getAttr", js.Any.fromFunction1(value))
+    inline def setGetAttr(value: /* attr */ String => String | Null): Self = StObject.set(x, "getAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAttrUndefined: Self = StObject.set(x, "getAttr", js.undefined)
+    inline def setGetAttrUndefined: Self = StObject.set(x, "getAttr", js.undefined)
     
-    @scala.inline
-    def setNotifyIconAction(value: () => Unit): Self = StObject.set(x, "notifyIconAction", js.Any.fromFunction0(value))
+    inline def setNotifyIconAction(value: () => Unit): Self = StObject.set(x, "notifyIconAction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNotifyIconActionUndefined: Self = StObject.set(x, "notifyIconAction", js.undefined)
+    inline def setNotifyIconActionUndefined: Self = StObject.set(x, "notifyIconAction", js.undefined)
     
-    @scala.inline
-    def setRegisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "registerInteractionHandler", js.Any.fromFunction2(value))
+    inline def setRegisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "registerInteractionHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterInteractionHandlerUndefined: Self = StObject.set(x, "registerInteractionHandler", js.undefined)
+    inline def setRegisterInteractionHandlerUndefined: Self = StObject.set(x, "registerInteractionHandler", js.undefined)
     
-    @scala.inline
-    def setRemoveAttr(value: /* attr */ String => Unit): Self = StObject.set(x, "removeAttr", js.Any.fromFunction1(value))
+    inline def setRemoveAttr(value: /* attr */ String => Unit): Self = StObject.set(x, "removeAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveAttrUndefined: Self = StObject.set(x, "removeAttr", js.undefined)
+    inline def setRemoveAttrUndefined: Self = StObject.set(x, "removeAttr", js.undefined)
     
-    @scala.inline
-    def setSetAttr(value: (/* attr */ String, /* value */ String) => Unit): Self = StObject.set(x, "setAttr", js.Any.fromFunction2(value))
+    inline def setSetAttr(value: (/* attr */ String, /* value */ String) => Unit): Self = StObject.set(x, "setAttr", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetAttrUndefined: Self = StObject.set(x, "setAttr", js.undefined)
+    inline def setSetAttrUndefined: Self = StObject.set(x, "setAttr", js.undefined)
     
-    @scala.inline
-    def setSetContent(value: /* content */ String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
+    inline def setSetContent(value: /* content */ String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetContentUndefined: Self = StObject.set(x, "setContent", js.undefined)
+    inline def setSetContentUndefined: Self = StObject.set(x, "setContent", js.undefined)
   }
 }

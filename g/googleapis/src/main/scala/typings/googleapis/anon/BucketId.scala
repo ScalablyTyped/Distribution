@@ -12,25 +12,19 @@ trait BucketId extends StObject {
 }
 object BucketId {
   
-  @scala.inline
-  def apply(): BucketId = {
+  inline def apply(): BucketId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketId]
   }
   
-  @scala.inline
-  implicit class BucketIdMutableBuilder[Self <: BucketId] (val x: Self) extends AnyVal {
+  extension [Self <: BucketId](x: Self) {
     
-    @scala.inline
-    def setBucketId(value: String): Self = StObject.set(x, "bucketId", value.asInstanceOf[js.Any])
+    inline def setBucketId(value: String): Self = StObject.set(x, "bucketId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketIdUndefined: Self = StObject.set(x, "bucketId", js.undefined)
+    inline def setBucketIdUndefined: Self = StObject.set(x, "bucketId", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

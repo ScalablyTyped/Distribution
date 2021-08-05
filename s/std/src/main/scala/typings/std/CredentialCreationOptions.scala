@@ -12,25 +12,19 @@ trait CredentialCreationOptions extends StObject {
 }
 object CredentialCreationOptions {
   
-  @scala.inline
-  def apply(): CredentialCreationOptions = {
+  inline def apply(): CredentialCreationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CredentialCreationOptions]
   }
   
-  @scala.inline
-  implicit class CredentialCreationOptionsMutableBuilder[Self <: CredentialCreationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CredentialCreationOptions](x: Self) {
     
-    @scala.inline
-    def setPublicKey(value: PublicKeyCredentialCreationOptions): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: PublicKeyCredentialCreationOptions): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
+    inline def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
   }
 }

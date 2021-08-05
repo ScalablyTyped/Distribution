@@ -53,23 +53,18 @@ object anon {
   }
   object DebuggerProxy {
     
-    @scala.inline
-    def apply(debuggerProxy: IsDebuggerConnected, eventsSocket: ReportEvent, messageSocket: Broadcast): DebuggerProxy = {
+    inline def apply(debuggerProxy: IsDebuggerConnected, eventsSocket: ReportEvent, messageSocket: Broadcast): DebuggerProxy = {
       val __obj = js.Dynamic.literal(debuggerProxy = debuggerProxy.asInstanceOf[js.Any], eventsSocket = eventsSocket.asInstanceOf[js.Any], messageSocket = messageSocket.asInstanceOf[js.Any])
       __obj.asInstanceOf[DebuggerProxy]
     }
     
-    @scala.inline
-    implicit class DebuggerProxyMutableBuilder[Self <: DebuggerProxy] (val x: Self) extends AnyVal {
+    extension [Self <: DebuggerProxy](x: Self) {
       
-      @scala.inline
-      def setDebuggerProxy(value: IsDebuggerConnected): Self = StObject.set(x, "debuggerProxy", value.asInstanceOf[js.Any])
+      inline def setDebuggerProxy(value: IsDebuggerConnected): Self = StObject.set(x, "debuggerProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsSocket(value: ReportEvent): Self = StObject.set(x, "eventsSocket", value.asInstanceOf[js.Any])
+      inline def setEventsSocket(value: ReportEvent): Self = StObject.set(x, "eventsSocket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageSocket(value: Broadcast): Self = StObject.set(x, "messageSocket", value.asInstanceOf[js.Any])
+      inline def setMessageSocket(value: Broadcast): Self = StObject.set(x, "messageSocket", value.asInstanceOf[js.Any])
     }
   }
   
@@ -345,20 +340,16 @@ object anon {
   }
   object IsDebuggerConnected {
     
-    @scala.inline
-    def apply(isDebuggerConnected: () => Boolean, server: typings.ws.mod.Server): IsDebuggerConnected = {
+    inline def apply(isDebuggerConnected: () => Boolean, server: typings.ws.mod.Server): IsDebuggerConnected = {
       val __obj = js.Dynamic.literal(isDebuggerConnected = js.Any.fromFunction0(isDebuggerConnected), server = server.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsDebuggerConnected]
     }
     
-    @scala.inline
-    implicit class IsDebuggerConnectedMutableBuilder[Self <: IsDebuggerConnected] (val x: Self) extends AnyVal {
+    extension [Self <: IsDebuggerConnected](x: Self) {
       
-      @scala.inline
-      def setIsDebuggerConnected(value: () => Boolean): Self = StObject.set(x, "isDebuggerConnected", js.Any.fromFunction0(value))
+      inline def setIsDebuggerConnected(value: () => Boolean): Self = StObject.set(x, "isDebuggerConnected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setServer(value: typings.ws.mod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: typings.ws.mod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     }
   }
   
@@ -368,17 +359,14 @@ object anon {
   }
   object ReportEvent {
     
-    @scala.inline
-    def apply(reportEvent: js.Any => Unit): ReportEvent = {
+    inline def apply(reportEvent: js.Any => Unit): ReportEvent = {
       val __obj = js.Dynamic.literal(reportEvent = js.Any.fromFunction1(reportEvent))
       __obj.asInstanceOf[ReportEvent]
     }
     
-    @scala.inline
-    implicit class ReportEventMutableBuilder[Self <: ReportEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ReportEvent](x: Self) {
       
-      @scala.inline
-      def setReportEvent(value: js.Any => Unit): Self = StObject.set(x, "reportEvent", js.Any.fromFunction1(value))
+      inline def setReportEvent(value: js.Any => Unit): Self = StObject.set(x, "reportEvent", js.Any.fromFunction1(value))
     }
   }
 }

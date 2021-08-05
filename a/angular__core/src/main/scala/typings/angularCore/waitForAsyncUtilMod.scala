@@ -15,6 +15,5 @@ object waitForAsyncUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findAsyncReferences(sourceFile: SourceFile, typeChecker: TypeChecker, asyncImportSpecifier: ImportSpecifier): Set[Identifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAsyncReferences")(sourceFile.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any], asyncImportSpecifier.asInstanceOf[js.Any])).asInstanceOf[Set[Identifier]]
+  inline def findAsyncReferences(sourceFile: SourceFile, typeChecker: TypeChecker, asyncImportSpecifier: ImportSpecifier): Set[Identifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAsyncReferences")(sourceFile.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any], asyncImportSpecifier.asInstanceOf[js.Any])).asInstanceOf[Set[Identifier]]
 }

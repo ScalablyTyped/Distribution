@@ -19,6 +19,5 @@ object Accordion {
   @JSImport("@ant-design/react-native", "Accordion.Panel")
   @js.native
   def Panel: js.Any = js.native
-  @scala.inline
-  def Panel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Panel")(x.asInstanceOf[js.Any])
+  inline def Panel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Panel")(x.asInstanceOf[js.Any])
 }

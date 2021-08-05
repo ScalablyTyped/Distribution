@@ -48,67 +48,47 @@ trait AssetAttributes extends StObject {
 }
 object AssetAttributes {
   
-  @scala.inline
-  def apply(schemaVersion: NumericVersion): AssetAttributes = {
+  inline def apply(schemaVersion: NumericVersion): AssetAttributes = {
     val __obj = js.Dynamic.literal(schemaVersion = schemaVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetAttributes]
   }
   
-  @scala.inline
-  implicit class AssetAttributesMutableBuilder[Self <: AssetAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: AssetAttributes](x: Self) {
     
-    @scala.inline
-    def setAgentId(value: AgentId): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
+    inline def setAgentId(value: AgentId): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentIdUndefined: Self = StObject.set(x, "agentId", js.undefined)
+    inline def setAgentIdUndefined: Self = StObject.set(x, "agentId", js.undefined)
     
-    @scala.inline
-    def setAmiId(value: AmiId): Self = StObject.set(x, "amiId", value.asInstanceOf[js.Any])
+    inline def setAmiId(value: AmiId): Self = StObject.set(x, "amiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmiIdUndefined: Self = StObject.set(x, "amiId", js.undefined)
+    inline def setAmiIdUndefined: Self = StObject.set(x, "amiId", js.undefined)
     
-    @scala.inline
-    def setAutoScalingGroup(value: AutoScalingGroup): Self = StObject.set(x, "autoScalingGroup", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroup(value: AutoScalingGroup): Self = StObject.set(x, "autoScalingGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingGroupUndefined: Self = StObject.set(x, "autoScalingGroup", js.undefined)
+    inline def setAutoScalingGroupUndefined: Self = StObject.set(x, "autoScalingGroup", js.undefined)
     
-    @scala.inline
-    def setHostname(value: Hostname): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: Hostname): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+    inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
-    @scala.inline
-    def setIpv4Addresses(value: Ipv4AddressList): Self = StObject.set(x, "ipv4Addresses", value.asInstanceOf[js.Any])
+    inline def setIpv4Addresses(value: Ipv4AddressList): Self = StObject.set(x, "ipv4Addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv4AddressesUndefined: Self = StObject.set(x, "ipv4Addresses", js.undefined)
+    inline def setIpv4AddressesUndefined: Self = StObject.set(x, "ipv4Addresses", js.undefined)
     
-    @scala.inline
-    def setIpv4AddressesVarargs(value: Ipv4Address*): Self = StObject.set(x, "ipv4Addresses", js.Array(value :_*))
+    inline def setIpv4AddressesVarargs(value: Ipv4Address*): Self = StObject.set(x, "ipv4Addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkInterfaces(value: NetworkInterfaces): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaces(value: NetworkInterfaces): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInterfacesUndefined: Self = StObject.set(x, "networkInterfaces", js.undefined)
+    inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "networkInterfaces", js.undefined)
     
-    @scala.inline
-    def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
+    inline def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
     
-    @scala.inline
-    def setSchemaVersion(value: NumericVersion): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
+    inline def setSchemaVersion(value: NumericVersion): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

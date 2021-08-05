@@ -10,16 +10,13 @@ trait DistanceFromEnd extends StObject {
 }
 object DistanceFromEnd {
   
-  @scala.inline
-  def apply(distanceFromEnd: Double): DistanceFromEnd = {
+  inline def apply(distanceFromEnd: Double): DistanceFromEnd = {
     val __obj = js.Dynamic.literal(distanceFromEnd = distanceFromEnd.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistanceFromEnd]
   }
   
-  @scala.inline
-  implicit class DistanceFromEndMutableBuilder[Self <: DistanceFromEnd] (val x: Self) extends AnyVal {
+  extension [Self <: DistanceFromEnd](x: Self) {
     
-    @scala.inline
-    def setDistanceFromEnd(value: Double): Self = StObject.set(x, "distanceFromEnd", value.asInstanceOf[js.Any])
+    inline def setDistanceFromEnd(value: Double): Self = StObject.set(x, "distanceFromEnd", value.asInstanceOf[js.Any])
   }
 }

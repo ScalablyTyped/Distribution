@@ -48,61 +48,43 @@ trait Build extends StObject {
 }
 object Build {
   
-  @scala.inline
-  def apply(): Build = {
+  inline def apply(): Build = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Build]
   }
   
-  @scala.inline
-  implicit class BuildMutableBuilder[Self <: Build] (val x: Self) extends AnyVal {
+  extension [Self <: Build](x: Self) {
     
-    @scala.inline
-    def setBuildArn(value: BuildArn): Self = StObject.set(x, "BuildArn", value.asInstanceOf[js.Any])
+    inline def setBuildArn(value: BuildArn): Self = StObject.set(x, "BuildArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildArnUndefined: Self = StObject.set(x, "BuildArn", js.undefined)
+    inline def setBuildArnUndefined: Self = StObject.set(x, "BuildArn", js.undefined)
     
-    @scala.inline
-    def setBuildId(value: BuildId): Self = StObject.set(x, "BuildId", value.asInstanceOf[js.Any])
+    inline def setBuildId(value: BuildId): Self = StObject.set(x, "BuildId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildIdUndefined: Self = StObject.set(x, "BuildId", js.undefined)
+    inline def setBuildIdUndefined: Self = StObject.set(x, "BuildId", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setName(value: FreeText): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: FreeText): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
+    inline def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
+    inline def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
     
-    @scala.inline
-    def setSizeOnDisk(value: PositiveLong): Self = StObject.set(x, "SizeOnDisk", value.asInstanceOf[js.Any])
+    inline def setSizeOnDisk(value: PositiveLong): Self = StObject.set(x, "SizeOnDisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeOnDiskUndefined: Self = StObject.set(x, "SizeOnDisk", js.undefined)
+    inline def setSizeOnDiskUndefined: Self = StObject.set(x, "SizeOnDisk", js.undefined)
     
-    @scala.inline
-    def setStatus(value: BuildStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: BuildStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setVersion(value: FreeText): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: FreeText): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

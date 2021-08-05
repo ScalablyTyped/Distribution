@@ -18,8 +18,7 @@ trait ParametersMigrationsMapCommitAuthorEndpoint extends StObject {
 }
 object ParametersMigrationsMapCommitAuthorEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: MigrationsMapCommitAuthorEndpoint,
     request: MigrationsMapCommitAuthorRequestOptions,
     response: OctokitResponse[MigrationsMapCommitAuthorResponseData]
@@ -28,16 +27,12 @@ object ParametersMigrationsMapCommitAuthorEndpoint {
     __obj.asInstanceOf[ParametersMigrationsMapCommitAuthorEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersMigrationsMapCommitAuthorEndpointMutableBuilder[Self <: ParametersMigrationsMapCommitAuthorEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersMigrationsMapCommitAuthorEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: MigrationsMapCommitAuthorEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MigrationsMapCommitAuthorEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: MigrationsMapCommitAuthorRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: MigrationsMapCommitAuthorRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[MigrationsMapCommitAuthorResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[MigrationsMapCommitAuthorResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait QBookmarkId extends StObject {
 }
 object QBookmarkId {
   
-  @scala.inline
-  def apply(): QBookmarkId = {
+  inline def apply(): QBookmarkId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QBookmarkId]
   }
   
-  @scala.inline
-  implicit class QBookmarkIdMutableBuilder[Self <: QBookmarkId] (val x: Self) extends AnyVal {
+  extension [Self <: QBookmarkId](x: Self) {
     
-    @scala.inline
-    def setQBookmarkId(value: String): Self = StObject.set(x, "qBookmarkId", value.asInstanceOf[js.Any])
+    inline def setQBookmarkId(value: String): Self = StObject.set(x, "qBookmarkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQBookmarkIdUndefined: Self = StObject.set(x, "qBookmarkId", js.undefined)
+    inline def setQBookmarkIdUndefined: Self = StObject.set(x, "qBookmarkId", js.undefined)
     
-    @scala.inline
-    def setQExpires(value: Double): Self = StObject.set(x, "qExpires", value.asInstanceOf[js.Any])
+    inline def setQExpires(value: Double): Self = StObject.set(x, "qExpires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQExpiresUndefined: Self = StObject.set(x, "qExpires", js.undefined)
+    inline def setQExpiresUndefined: Self = StObject.set(x, "qExpires", js.undefined)
   }
 }

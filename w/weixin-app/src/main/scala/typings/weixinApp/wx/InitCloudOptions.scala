@@ -23,25 +23,19 @@ trait InitCloudOptions extends StObject {
 }
 object InitCloudOptions {
   
-  @scala.inline
-  def apply(): InitCloudOptions = {
+  inline def apply(): InitCloudOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitCloudOptions]
   }
   
-  @scala.inline
-  implicit class InitCloudOptionsMutableBuilder[Self <: InitCloudOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InitCloudOptions](x: Self) {
     
-    @scala.inline
-    def setEnv(value: String | InitCloudEnvOptions): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: String | InitCloudEnvOptions): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    @scala.inline
-    def setTraceUser(value: Boolean): Self = StObject.set(x, "traceUser", value.asInstanceOf[js.Any])
+    inline def setTraceUser(value: Boolean): Self = StObject.set(x, "traceUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceUserUndefined: Self = StObject.set(x, "traceUser", js.undefined)
+    inline def setTraceUserUndefined: Self = StObject.set(x, "traceUser", js.undefined)
   }
 }

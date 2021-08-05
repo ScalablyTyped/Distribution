@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TextInput")
 @js.native
-class TextInput protected ()
+/* private */ class TextInput ()
   extends StObject
      with typings.activexWord.Word.TextInput

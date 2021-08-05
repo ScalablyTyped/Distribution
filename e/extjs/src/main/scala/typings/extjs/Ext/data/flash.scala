@@ -76,88 +76,62 @@ object flash {
   }
   object IBinaryXhr {
     
-    @scala.inline
-    def apply(): IBinaryXhr = {
+    inline def apply(): IBinaryXhr = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBinaryXhr]
     }
     
-    @scala.inline
-    implicit class IBinaryXhrMutableBuilder[Self <: IBinaryXhr] (val x: Self) extends AnyVal {
+    extension [Self <: IBinaryXhr](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
+      inline def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
       
-      @scala.inline
-      def setGetAllResponseHeaders(value: () => Unit): Self = StObject.set(x, "getAllResponseHeaders", js.Any.fromFunction0(value))
+      inline def setGetAllResponseHeaders(value: () => Unit): Self = StObject.set(x, "getAllResponseHeaders", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAllResponseHeadersUndefined: Self = StObject.set(x, "getAllResponseHeaders", js.undefined)
+      inline def setGetAllResponseHeadersUndefined: Self = StObject.set(x, "getAllResponseHeaders", js.undefined)
       
-      @scala.inline
-      def setGetResponseHeader(value: /* header */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getResponseHeader", js.Any.fromFunction1(value))
+      inline def setGetResponseHeader(value: /* header */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getResponseHeader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetResponseHeaderUndefined: Self = StObject.set(x, "getResponseHeader", js.undefined)
+      inline def setGetResponseHeaderUndefined: Self = StObject.set(x, "getResponseHeader", js.undefined)
       
-      @scala.inline
-      def setOnreadystatechange(value: () => Unit): Self = StObject.set(x, "onreadystatechange", js.Any.fromFunction0(value))
+      inline def setOnreadystatechange(value: () => Unit): Self = StObject.set(x, "onreadystatechange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnreadystatechangeUndefined: Self = StObject.set(x, "onreadystatechange", js.undefined)
+      inline def setOnreadystatechangeUndefined: Self = StObject.set(x, "onreadystatechange", js.undefined)
       
-      @scala.inline
-      def setOpen(
+      inline def setOpen(
         value: (/* method */ js.UndefOr[js.Any], /* url */ js.UndefOr[js.Any], /* async */ js.UndefOr[js.Any], /* user */ js.UndefOr[js.Any], /* password */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "open", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setOverrideMimeType(value: /* mimeType */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "overrideMimeType", js.Any.fromFunction1(value))
+      inline def setOverrideMimeType(value: /* mimeType */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "overrideMimeType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOverrideMimeTypeUndefined: Self = StObject.set(x, "overrideMimeType", js.undefined)
+      inline def setOverrideMimeTypeUndefined: Self = StObject.set(x, "overrideMimeType", js.undefined)
       
-      @scala.inline
-      def setReadyState(value: Double): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
+      inline def setReadyState(value: Double): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadyStateUndefined: Self = StObject.set(x, "readyState", js.undefined)
+      inline def setReadyStateUndefined: Self = StObject.set(x, "readyState", js.undefined)
       
-      @scala.inline
-      def setResponseBytes(value: Array): Self = StObject.set(x, "responseBytes", value.asInstanceOf[js.Any])
+      inline def setResponseBytes(value: Array): Self = StObject.set(x, "responseBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseBytesUndefined: Self = StObject.set(x, "responseBytes", js.undefined)
+      inline def setResponseBytesUndefined: Self = StObject.set(x, "responseBytes", js.undefined)
       
-      @scala.inline
-      def setSend(value: /* body */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: /* body */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
+      inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
       
-      @scala.inline
-      def setSetRequestHeader(value: (/* header */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setRequestHeader", js.Any.fromFunction2(value))
+      inline def setSetRequestHeader(value: (/* header */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setRequestHeader", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetRequestHeaderUndefined: Self = StObject.set(x, "setRequestHeader", js.undefined)
+      inline def setSetRequestHeaderUndefined: Self = StObject.set(x, "setRequestHeader", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
+      inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
 }

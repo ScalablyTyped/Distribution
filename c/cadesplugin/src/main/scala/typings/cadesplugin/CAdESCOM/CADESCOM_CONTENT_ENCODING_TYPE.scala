@@ -14,19 +14,15 @@ trait CADESCOM_CONTENT_ENCODING_TYPE extends StObject {
 }
 object CADESCOM_CONTENT_ENCODING_TYPE {
   
-  @scala.inline
-  def apply(): CADESCOM_CONTENT_ENCODING_TYPE = {
+  inline def apply(): CADESCOM_CONTENT_ENCODING_TYPE = {
     val __obj = js.Dynamic.literal(CADESCOM_BASE64_TO_BINARY = 1, CADESCOM_STRING_TO_UCS2LE = 0)
     __obj.asInstanceOf[CADESCOM_CONTENT_ENCODING_TYPE]
   }
   
-  @scala.inline
-  implicit class CADESCOM_CONTENT_ENCODING_TYPEMutableBuilder[Self <: CADESCOM_CONTENT_ENCODING_TYPE] (val x: Self) extends AnyVal {
+  extension [Self <: CADESCOM_CONTENT_ENCODING_TYPE](x: Self) {
     
-    @scala.inline
-    def setCADESCOM_BASE64_TO_BINARY(value: `1`): Self = StObject.set(x, "CADESCOM_BASE64_TO_BINARY", value.asInstanceOf[js.Any])
+    inline def setCADESCOM_BASE64_TO_BINARY(value: `1`): Self = StObject.set(x, "CADESCOM_BASE64_TO_BINARY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCADESCOM_STRING_TO_UCS2LE(value: `0`): Self = StObject.set(x, "CADESCOM_STRING_TO_UCS2LE", value.asInstanceOf[js.Any])
+    inline def setCADESCOM_STRING_TO_UCS2LE(value: `0`): Self = StObject.set(x, "CADESCOM_STRING_TO_UCS2LE", value.asInstanceOf[js.Any])
   }
 }

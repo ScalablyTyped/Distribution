@@ -8,31 +8,25 @@ object wordpressCoreDataStrings {
   
   @js.native
   sealed trait core extends StObject
-  @scala.inline
-  def core: core = "core".asInstanceOf[core]
+  inline def core: core = "core".asInstanceOf[core]
   
   @js.native
   sealed trait create extends StObject
-  @scala.inline
-  def create: create = "create".asInstanceOf[create]
+  inline def create: create = "create".asInstanceOf[create]
   
   @js.native
   sealed trait delete extends StObject
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
   sealed trait read extends StObject
-  @scala.inline
-  def read: read = "read".asInstanceOf[read]
+  inline def read: read = "read".asInstanceOf[read]
   
   @js.native
   sealed trait update extends StObject
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
+  inline def update: update = "update".asInstanceOf[update]
   
   @js.native
   sealed trait view extends StObject
-  @scala.inline
-  def view: view = "view".asInstanceOf[view]
+  inline def view: view = "view".asInstanceOf[view]
 }

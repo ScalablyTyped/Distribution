@@ -18,8 +18,7 @@ trait Rejected extends StObject {
 }
 object Rejected {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     approved: scala.Double,
     canceled: scala.Double,
     pending: scala.Double,
@@ -30,22 +29,16 @@ object Rejected {
     __obj.asInstanceOf[Rejected]
   }
   
-  @scala.inline
-  implicit class RejectedMutableBuilder[Self <: Rejected] (val x: Self) extends AnyVal {
+  extension [Self <: Rejected](x: Self) {
     
-    @scala.inline
-    def setApproved(value: scala.Double): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
+    inline def setApproved(value: scala.Double): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanceled(value: scala.Double): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
+    inline def setCanceled(value: scala.Double): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPending(value: scala.Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: scala.Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejected(value: scala.Double): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
+    inline def setRejected(value: scala.Double): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
+    inline def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
   }
 }

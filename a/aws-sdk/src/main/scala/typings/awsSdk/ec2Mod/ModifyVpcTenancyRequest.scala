@@ -23,25 +23,19 @@ trait ModifyVpcTenancyRequest extends StObject {
 }
 object ModifyVpcTenancyRequest {
   
-  @scala.inline
-  def apply(InstanceTenancy: VpcTenancy, VpcId: VpcId): ModifyVpcTenancyRequest = {
+  inline def apply(InstanceTenancy: VpcTenancy, VpcId: VpcId): ModifyVpcTenancyRequest = {
     val __obj = js.Dynamic.literal(InstanceTenancy = InstanceTenancy.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVpcTenancyRequest]
   }
   
-  @scala.inline
-  implicit class ModifyVpcTenancyRequestMutableBuilder[Self <: ModifyVpcTenancyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyVpcTenancyRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceTenancy(value: VpcTenancy): Self = StObject.set(x, "InstanceTenancy", value.asInstanceOf[js.Any])
+    inline def setInstanceTenancy(value: VpcTenancy): Self = StObject.set(x, "InstanceTenancy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }
 }

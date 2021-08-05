@@ -15,28 +15,21 @@ trait Asn1params extends StObject {
 }
 object Asn1params {
   
-  @scala.inline
-  def apply(name: String): Asn1params = {
+  inline def apply(name: String): Asn1params = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Asn1params]
   }
   
-  @scala.inline
-  implicit class Asn1paramsMutableBuilder[Self <: Asn1params] (val x: Self) extends AnyVal {
+  extension [Self <: Asn1params](x: Self) {
     
-    @scala.inline
-    def setAsn1params(value: ASN1Object): Self = StObject.set(x, "asn1params", value.asInstanceOf[js.Any])
+    inline def setAsn1params(value: ASN1Object): Self = StObject.set(x, "asn1params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsn1paramsUndefined: Self = StObject.set(x, "asn1params", js.undefined)
+    inline def setAsn1paramsUndefined: Self = StObject.set(x, "asn1params", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamempty(value: Boolean): Self = StObject.set(x, "paramempty", value.asInstanceOf[js.Any])
+    inline def setParamempty(value: Boolean): Self = StObject.set(x, "paramempty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamemptyUndefined: Self = StObject.set(x, "paramempty", js.undefined)
+    inline def setParamemptyUndefined: Self = StObject.set(x, "paramempty", js.undefined)
   }
 }

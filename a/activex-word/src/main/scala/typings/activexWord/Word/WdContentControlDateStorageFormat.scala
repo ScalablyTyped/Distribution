@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdContentControlDateStorageFormat extends StObject
 object WdContentControlDateStorageFormat {
   
-  @scala.inline
-  def wdContentControlDateStorageDate: `1` = 1.asInstanceOf[`1`]
+  inline def wdContentControlDateStorageDate: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdContentControlDateStorageDateTime: `2` = 2.asInstanceOf[`2`]
+  inline def wdContentControlDateStorageDateTime: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdContentControlDateStorageText: `0` = 0.asInstanceOf[`0`]
+  inline def wdContentControlDateStorageText: `0` = 0.asInstanceOf[`0`]
 }

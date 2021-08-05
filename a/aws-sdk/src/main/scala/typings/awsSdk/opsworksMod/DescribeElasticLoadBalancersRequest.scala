@@ -18,28 +18,21 @@ trait DescribeElasticLoadBalancersRequest extends StObject {
 }
 object DescribeElasticLoadBalancersRequest {
   
-  @scala.inline
-  def apply(): DescribeElasticLoadBalancersRequest = {
+  inline def apply(): DescribeElasticLoadBalancersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeElasticLoadBalancersRequest]
   }
   
-  @scala.inline
-  implicit class DescribeElasticLoadBalancersRequestMutableBuilder[Self <: DescribeElasticLoadBalancersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeElasticLoadBalancersRequest](x: Self) {
     
-    @scala.inline
-    def setLayerIds(value: Strings): Self = StObject.set(x, "LayerIds", value.asInstanceOf[js.Any])
+    inline def setLayerIds(value: Strings): Self = StObject.set(x, "LayerIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdsUndefined: Self = StObject.set(x, "LayerIds", js.undefined)
+    inline def setLayerIdsUndefined: Self = StObject.set(x, "LayerIds", js.undefined)
     
-    @scala.inline
-    def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "LayerIds", js.Array(value :_*))
+    inline def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "LayerIds", js.Array(value :_*))
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

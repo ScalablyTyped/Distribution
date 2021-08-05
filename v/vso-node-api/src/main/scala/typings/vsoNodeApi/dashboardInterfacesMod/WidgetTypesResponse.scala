@@ -14,25 +14,19 @@ trait WidgetTypesResponse extends StObject {
 }
 object WidgetTypesResponse {
   
-  @scala.inline
-  def apply(_links: js.Any, uri: String, widgetTypes: js.Array[WidgetMetadata]): WidgetTypesResponse = {
+  inline def apply(_links: js.Any, uri: String, widgetTypes: js.Array[WidgetMetadata]): WidgetTypesResponse = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], widgetTypes = widgetTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[WidgetTypesResponse]
   }
   
-  @scala.inline
-  implicit class WidgetTypesResponseMutableBuilder[Self <: WidgetTypesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: WidgetTypesResponse](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidgetTypes(value: js.Array[WidgetMetadata]): Self = StObject.set(x, "widgetTypes", value.asInstanceOf[js.Any])
+    inline def setWidgetTypes(value: js.Array[WidgetMetadata]): Self = StObject.set(x, "widgetTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidgetTypesVarargs(value: WidgetMetadata*): Self = StObject.set(x, "widgetTypes", js.Array(value :_*))
+    inline def setWidgetTypesVarargs(value: WidgetMetadata*): Self = StObject.set(x, "widgetTypes", js.Array(value :_*))
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

@@ -13,22 +13,17 @@ trait SketchMSImageCollection extends StObject {
 }
 object SketchMSImageCollection {
   
-  @scala.inline
-  def apply(images: js.Array[js.Any]): SketchMSImageCollection = {
+  inline def apply(images: js.Array[js.Any]): SketchMSImageCollection = {
     val __obj = js.Dynamic.literal(_class = "imageCollection", images = images.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSImageCollection]
   }
   
-  @scala.inline
-  implicit class SketchMSImageCollectionMutableBuilder[Self <: SketchMSImageCollection] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSImageCollection](x: Self) {
     
-    @scala.inline
-    def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def set_class(value: imageCollection): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: imageCollection): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

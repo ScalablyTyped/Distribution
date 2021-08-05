@@ -69,104 +69,72 @@ object mod {
   }
   object VerticalTimelineElementProps {
     
-    @scala.inline
-    def apply(): VerticalTimelineElementProps = {
+    inline def apply(): VerticalTimelineElementProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VerticalTimelineElementProps]
     }
     
-    @scala.inline
-    implicit class VerticalTimelineElementPropsMutableBuilder[Self <: VerticalTimelineElementProps] (val x: Self) extends AnyVal {
+    extension [Self <: VerticalTimelineElementProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContentArrowStyle(value: CSSProperties): Self = StObject.set(x, "contentArrowStyle", value.asInstanceOf[js.Any])
+      inline def setContentArrowStyle(value: CSSProperties): Self = StObject.set(x, "contentArrowStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentArrowStyleUndefined: Self = StObject.set(x, "contentArrowStyle", js.undefined)
+      inline def setContentArrowStyleUndefined: Self = StObject.set(x, "contentArrowStyle", js.undefined)
       
-      @scala.inline
-      def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+      inline def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
+      inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateClassName(value: String): Self = StObject.set(x, "dateClassName", value.asInstanceOf[js.Any])
+      inline def setDateClassName(value: String): Self = StObject.set(x, "dateClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateClassNameUndefined: Self = StObject.set(x, "dateClassName", js.undefined)
+      inline def setDateClassNameUndefined: Self = StObject.set(x, "dateClassName", js.undefined)
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconClassName(value: String): Self = StObject.set(x, "iconClassName", value.asInstanceOf[js.Any])
+      inline def setIconClassName(value: String): Self = StObject.set(x, "iconClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconClassNameUndefined: Self = StObject.set(x, "iconClassName", js.undefined)
+      inline def setIconClassNameUndefined: Self = StObject.set(x, "iconClassName", js.undefined)
       
-      @scala.inline
-      def setIconOnClick(value: () => Unit): Self = StObject.set(x, "iconOnClick", js.Any.fromFunction0(value))
+      inline def setIconOnClick(value: () => Unit): Self = StObject.set(x, "iconOnClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIconOnClickUndefined: Self = StObject.set(x, "iconOnClick", js.undefined)
+      inline def setIconOnClickUndefined: Self = StObject.set(x, "iconOnClick", js.undefined)
       
-      @scala.inline
-      def setIconStyle(value: CSSProperties): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
+      inline def setIconStyle(value: CSSProperties): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
+      inline def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIntersectionObserverProps(value: js.Any): Self = StObject.set(x, "intersectionObserverProps", value.asInstanceOf[js.Any])
+      inline def setIntersectionObserverProps(value: js.Any): Self = StObject.set(x, "intersectionObserverProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntersectionObserverPropsUndefined: Self = StObject.set(x, "intersectionObserverProps", js.undefined)
+      inline def setIntersectionObserverPropsUndefined: Self = StObject.set(x, "intersectionObserverProps", js.undefined)
       
-      @scala.inline
-      def setOnTimelineElementClick(value: () => Unit): Self = StObject.set(x, "onTimelineElementClick", js.Any.fromFunction0(value))
+      inline def setOnTimelineElementClick(value: () => Unit): Self = StObject.set(x, "onTimelineElementClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnTimelineElementClickUndefined: Self = StObject.set(x, "onTimelineElementClick", js.undefined)
+      inline def setOnTimelineElementClickUndefined: Self = StObject.set(x, "onTimelineElementClick", js.undefined)
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTextClassName(value: String): Self = StObject.set(x, "textClassName", value.asInstanceOf[js.Any])
+      inline def setTextClassName(value: String): Self = StObject.set(x, "textClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextClassNameUndefined: Self = StObject.set(x, "textClassName", js.undefined)
+      inline def setTextClassNameUndefined: Self = StObject.set(x, "textClassName", js.undefined)
     }
   }
   
@@ -180,32 +148,24 @@ object mod {
   }
   object VerticalTimelineProps {
     
-    @scala.inline
-    def apply(): VerticalTimelineProps = {
+    inline def apply(): VerticalTimelineProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VerticalTimelineProps]
     }
     
-    @scala.inline
-    implicit class VerticalTimelinePropsMutableBuilder[Self <: VerticalTimelineProps] (val x: Self) extends AnyVal {
+    extension [Self <: VerticalTimelineProps](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setLayout(value: `1-column` | `2-columns`): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: `1-column` | `2-columns`): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     }
   }
 }

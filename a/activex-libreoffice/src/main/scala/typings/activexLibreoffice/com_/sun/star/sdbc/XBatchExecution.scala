@@ -34,8 +34,7 @@ trait XBatchExecution
 }
 object XBatchExecution {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addBatch: String => Unit,
     clearBatch: () => Unit,
@@ -47,16 +46,12 @@ object XBatchExecution {
     __obj.asInstanceOf[XBatchExecution]
   }
   
-  @scala.inline
-  implicit class XBatchExecutionMutableBuilder[Self <: XBatchExecution] (val x: Self) extends AnyVal {
+  extension [Self <: XBatchExecution](x: Self) {
     
-    @scala.inline
-    def setAddBatch(value: String => Unit): Self = StObject.set(x, "addBatch", js.Any.fromFunction1(value))
+    inline def setAddBatch(value: String => Unit): Self = StObject.set(x, "addBatch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearBatch(value: () => Unit): Self = StObject.set(x, "clearBatch", js.Any.fromFunction0(value))
+    inline def setClearBatch(value: () => Unit): Self = StObject.set(x, "clearBatch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExecuteBatch(value: () => SafeArray[Double]): Self = StObject.set(x, "executeBatch", js.Any.fromFunction0(value))
+    inline def setExecuteBatch(value: () => SafeArray[Double]): Self = StObject.set(x, "executeBatch", js.Any.fromFunction0(value))
   }
 }

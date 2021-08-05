@@ -24,17 +24,14 @@ object mod extends Shortcut {
   }
   object UserAgentContext {
     
-    @scala.inline
-    def apply(userAgent: typings.koaUseragent.useragentMod.default): UserAgentContext = {
+    inline def apply(userAgent: typings.koaUseragent.useragentMod.default): UserAgentContext = {
       val __obj = js.Dynamic.literal(userAgent = userAgent.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserAgentContext]
     }
     
-    @scala.inline
-    implicit class UserAgentContextMutableBuilder[Self <: UserAgentContext] (val x: Self) extends AnyVal {
+    extension [Self <: UserAgentContext](x: Self) {
       
-      @scala.inline
-      def setUserAgent(value: typings.koaUseragent.useragentMod.default): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: typings.koaUseragent.useragentMod.default): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     }
   }
   

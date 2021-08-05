@@ -52,15 +52,15 @@ object vertexMod {
     
     def deregister(target: Vertex): Unit = js.native
     
-    var deregister_ : js.Any = js.native
+    /* private */ var deregister_ : js.Any = js.native
     
     var origin: Vertex = js.native
     
     def register(target: Vertex): Unit = js.native
     
-    var register_ : js.Any = js.native
+    /* private */ var register_ : js.Any = js.native
     
-    var registered: js.Any = js.native
+    /* private */ var registered: js.Any = js.native
   }
   
   @JSImport("sodiumjs/dist/typings/sodium/Vertex", "Vertex")
@@ -80,7 +80,7 @@ object vertexMod {
     
     var color: Color = js.native
     
-    var decRefCount: js.Any = js.native
+    /* private */ var decRefCount: js.Any = js.native
     
     def decrement(referrer: Vertex): Unit = js.native
     
@@ -88,13 +88,13 @@ object vertexMod {
     
     def descr(): String = js.native
     
-    var ensureBiggerThan: js.Any = js.native
+    /* private */ var ensureBiggerThan: js.Any = js.native
     
     def free(): Unit = js.native
     
     var id: Double = js.native
     
-    var incRefCount: js.Any = js.native
+    /* private */ var incRefCount: js.Any = js.native
     
     def increment(referrer: Vertex): Boolean = js.native
     
@@ -134,40 +134,30 @@ object vertexMod {
     @JSImport("sodiumjs/dist/typings/sodium/Vertex", "Vertex.NULL")
     @js.native
     def NULL: Vertex = js.native
-    @scala.inline
-    def NULL_=(x: Vertex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NULL")(x.asInstanceOf[js.Any])
+    inline def NULL_=(x: Vertex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NULL")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def collectCycles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("collectCycles")().asInstanceOf[Unit]
+    inline def collectCycles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("collectCycles")().asInstanceOf[Unit]
     
-    @scala.inline
-    def collectRoots(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("collectRoots")().asInstanceOf[Unit]
+    inline def collectRoots(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("collectRoots")().asInstanceOf[Unit]
     
     @JSImport("sodiumjs/dist/typings/sodium/Vertex", "Vertex.collectingCycles")
     @js.native
     def collectingCycles: Boolean = js.native
-    @scala.inline
-    def collectingCycles_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collectingCycles")(x.asInstanceOf[js.Any])
+    inline def collectingCycles_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collectingCycles")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def markRoots(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("markRoots")().asInstanceOf[Unit]
+    inline def markRoots(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("markRoots")().asInstanceOf[Unit]
     
-    @scala.inline
-    def scanRoots(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scanRoots")().asInstanceOf[Unit]
+    inline def scanRoots(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scanRoots")().asInstanceOf[Unit]
     
     @JSImport("sodiumjs/dist/typings/sodium/Vertex", "Vertex.toBeFreedList")
     @js.native
     def toBeFreedList: js.Array[Vertex] = js.native
-    @scala.inline
-    def toBeFreedList_=(x: js.Array[Vertex]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toBeFreedList")(x.asInstanceOf[js.Any])
+    inline def toBeFreedList_=(x: js.Array[Vertex]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toBeFreedList")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def describeAll(v: Vertex, visited: Set[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeAll")(v.asInstanceOf[js.Any], visited.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def describeAll(v: Vertex, visited: Set[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeAll")(v.asInstanceOf[js.Any], visited.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getTotalRegistrations(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTotalRegistrations")().asInstanceOf[Double]
+  inline def getTotalRegistrations(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTotalRegistrations")().asInstanceOf[Double]
   
-  @scala.inline
-  def setVerbose(v: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVerbose")(v.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setVerbose(v: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVerbose")(v.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

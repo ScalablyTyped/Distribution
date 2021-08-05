@@ -13,22 +13,17 @@ trait InviteUsersResponse extends StObject {
 }
 object InviteUsersResponse {
   
-  @scala.inline
-  def apply(): InviteUsersResponse = {
+  inline def apply(): InviteUsersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InviteUsersResponse]
   }
   
-  @scala.inline
-  implicit class InviteUsersResponseMutableBuilder[Self <: InviteUsersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InviteUsersResponse](x: Self) {
     
-    @scala.inline
-    def setInvites(value: InviteList): Self = StObject.set(x, "Invites", value.asInstanceOf[js.Any])
+    inline def setInvites(value: InviteList): Self = StObject.set(x, "Invites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitesUndefined: Self = StObject.set(x, "Invites", js.undefined)
+    inline def setInvitesUndefined: Self = StObject.set(x, "Invites", js.undefined)
     
-    @scala.inline
-    def setInvitesVarargs(value: Invite*): Self = StObject.set(x, "Invites", js.Array(value :_*))
+    inline def setInvitesVarargs(value: Invite*): Self = StObject.set(x, "Invites", js.Array(value :_*))
   }
 }

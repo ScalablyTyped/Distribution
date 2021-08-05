@@ -11,19 +11,15 @@ trait OneHotInputs extends StObject {
 }
 object OneHotInputs {
   
-  @scala.inline
-  def apply(): OneHotInputs = {
+  inline def apply(): OneHotInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OneHotInputs]
   }
   
-  @scala.inline
-  implicit class OneHotInputsMutableBuilder[Self <: OneHotInputs] (val x: Self) extends AnyVal {
+  extension [Self <: OneHotInputs](x: Self) {
     
-    @scala.inline
-    def setIndices(value: js.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: js.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
+    inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
   }
 }

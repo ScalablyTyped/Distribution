@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LinkType extends StObject
 object LinkType {
   
-  @scala.inline
-  def plain: typings.reactElemental.reactElementalStrings.plain = "plain".asInstanceOf[typings.reactElemental.reactElementalStrings.plain]
+  inline def plain: typings.reactElemental.reactElementalStrings.plain = "plain".asInstanceOf[typings.reactElemental.reactElementalStrings.plain]
   
-  @scala.inline
-  def regular: typings.reactElemental.reactElementalStrings.regular = "regular".asInstanceOf[typings.reactElemental.reactElementalStrings.regular]
+  inline def regular: typings.reactElemental.reactElementalStrings.regular = "regular".asInstanceOf[typings.reactElemental.reactElementalStrings.regular]
   
-  @scala.inline
-  def underline: typings.reactElemental.reactElementalStrings.underline = "underline".asInstanceOf[typings.reactElemental.reactElementalStrings.underline]
+  inline def underline: typings.reactElemental.reactElementalStrings.underline = "underline".asInstanceOf[typings.reactElemental.reactElementalStrings.underline]
 }

@@ -11,17 +11,14 @@ trait TailOptions extends StObject {
 }
 object TailOptions {
   
-  @scala.inline
-  def apply(`-n`: Double): TailOptions = {
+  inline def apply(`-n`: Double): TailOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("-n")(`-n`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TailOptions]
   }
   
-  @scala.inline
-  implicit class TailOptionsMutableBuilder[Self <: TailOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TailOptions](x: Self) {
     
-    @scala.inline
-    def `set-n`(value: Double): Self = StObject.set(x, "-n", value.asInstanceOf[js.Any])
+    inline def `set-n`(value: Double): Self = StObject.set(x, "-n", value.asInstanceOf[js.Any])
   }
 }

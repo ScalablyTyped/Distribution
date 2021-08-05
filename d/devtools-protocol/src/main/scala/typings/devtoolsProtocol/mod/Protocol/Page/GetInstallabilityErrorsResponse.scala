@@ -10,19 +10,15 @@ trait GetInstallabilityErrorsResponse extends StObject {
 }
 object GetInstallabilityErrorsResponse {
   
-  @scala.inline
-  def apply(installabilityErrors: js.Array[InstallabilityError]): GetInstallabilityErrorsResponse = {
+  inline def apply(installabilityErrors: js.Array[InstallabilityError]): GetInstallabilityErrorsResponse = {
     val __obj = js.Dynamic.literal(installabilityErrors = installabilityErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInstallabilityErrorsResponse]
   }
   
-  @scala.inline
-  implicit class GetInstallabilityErrorsResponseMutableBuilder[Self <: GetInstallabilityErrorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetInstallabilityErrorsResponse](x: Self) {
     
-    @scala.inline
-    def setInstallabilityErrors(value: js.Array[InstallabilityError]): Self = StObject.set(x, "installabilityErrors", value.asInstanceOf[js.Any])
+    inline def setInstallabilityErrors(value: js.Array[InstallabilityError]): Self = StObject.set(x, "installabilityErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallabilityErrorsVarargs(value: InstallabilityError*): Self = StObject.set(x, "installabilityErrors", js.Array(value :_*))
+    inline def setInstallabilityErrorsVarargs(value: InstallabilityError*): Self = StObject.set(x, "installabilityErrors", js.Array(value :_*))
   }
 }

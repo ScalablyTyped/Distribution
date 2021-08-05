@@ -12,6 +12,5 @@ object repeatedlyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](delay: Double, values: js.Array[V | Event[V]]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(delay.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
+  inline def default[V](delay: Double, values: js.Array[V | Event[V]]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(delay.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
 }

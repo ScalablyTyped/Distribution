@@ -9,7 +9,7 @@ object ScriptSigner {
   @js.native
   trait Signer extends StObject {
     
-    @JSName("ScriptSigner.Signer_typekey")
+    /* private */ @JSName("ScriptSigner.Signer_typekey")
     var ScriptSignerDotSigner_typekey: Signer = js.native
     
     /** @param Store [Store='my'] */

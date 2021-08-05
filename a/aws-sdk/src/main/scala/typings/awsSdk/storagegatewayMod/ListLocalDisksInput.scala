@@ -10,16 +10,13 @@ trait ListLocalDisksInput extends StObject {
 }
 object ListLocalDisksInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN): ListLocalDisksInput = {
+  inline def apply(GatewayARN: GatewayARN): ListLocalDisksInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLocalDisksInput]
   }
   
-  @scala.inline
-  implicit class ListLocalDisksInputMutableBuilder[Self <: ListLocalDisksInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListLocalDisksInput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
   }
 }

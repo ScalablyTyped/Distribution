@@ -18,25 +18,19 @@ trait ServerSideEncryption extends StObject {
 }
 object ServerSideEncryption {
   
-  @scala.inline
-  def apply(): ServerSideEncryption = {
+  inline def apply(): ServerSideEncryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerSideEncryption]
   }
   
-  @scala.inline
-  implicit class ServerSideEncryptionMutableBuilder[Self <: ServerSideEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: ServerSideEncryption](x: Self) {
     
-    @scala.inline
-    def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
+    inline def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionTypeUndefined: Self = StObject.set(x, "encryptionType", js.undefined)
+    inline def setEncryptionTypeUndefined: Self = StObject.set(x, "encryptionType", js.undefined)
     
-    @scala.inline
-    def setKmsMasterKeyId(value: string): Self = StObject.set(x, "kmsMasterKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsMasterKeyId(value: string): Self = StObject.set(x, "kmsMasterKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "kmsMasterKeyId", js.undefined)
+    inline def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "kmsMasterKeyId", js.undefined)
   }
 }

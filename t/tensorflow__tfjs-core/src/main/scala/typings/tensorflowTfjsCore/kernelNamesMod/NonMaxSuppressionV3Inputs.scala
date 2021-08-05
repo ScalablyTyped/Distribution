@@ -13,25 +13,19 @@ trait NonMaxSuppressionV3Inputs extends StObject {
 }
 object NonMaxSuppressionV3Inputs {
   
-  @scala.inline
-  def apply(): NonMaxSuppressionV3Inputs = {
+  inline def apply(): NonMaxSuppressionV3Inputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NonMaxSuppressionV3Inputs]
   }
   
-  @scala.inline
-  implicit class NonMaxSuppressionV3InputsMutableBuilder[Self <: NonMaxSuppressionV3Inputs] (val x: Self) extends AnyVal {
+  extension [Self <: NonMaxSuppressionV3Inputs](x: Self) {
     
-    @scala.inline
-    def setBoxes(value: js.Any): Self = StObject.set(x, "boxes", value.asInstanceOf[js.Any])
+    inline def setBoxes(value: js.Any): Self = StObject.set(x, "boxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxesUndefined: Self = StObject.set(x, "boxes", js.undefined)
+    inline def setBoxesUndefined: Self = StObject.set(x, "boxes", js.undefined)
     
-    @scala.inline
-    def setScores(value: js.Any): Self = StObject.set(x, "scores", value.asInstanceOf[js.Any])
+    inline def setScores(value: js.Any): Self = StObject.set(x, "scores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoresUndefined: Self = StObject.set(x, "scores", js.undefined)
+    inline def setScoresUndefined: Self = StObject.set(x, "scores", js.undefined)
   }
 }

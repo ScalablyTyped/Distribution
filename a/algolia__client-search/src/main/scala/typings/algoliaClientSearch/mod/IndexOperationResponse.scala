@@ -13,16 +13,13 @@ trait IndexOperationResponse extends StObject {
 }
 object IndexOperationResponse {
   
-  @scala.inline
-  def apply(taskID: Double): IndexOperationResponse = {
+  inline def apply(taskID: Double): IndexOperationResponse = {
     val __obj = js.Dynamic.literal(taskID = taskID.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexOperationResponse]
   }
   
-  @scala.inline
-  implicit class IndexOperationResponseMutableBuilder[Self <: IndexOperationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IndexOperationResponse](x: Self) {
     
-    @scala.inline
-    def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
+    inline def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
   }
 }

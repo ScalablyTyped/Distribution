@@ -23,31 +23,23 @@ trait ContainerServiceEndpoint extends StObject {
 }
 object ContainerServiceEndpoint {
   
-  @scala.inline
-  def apply(): ContainerServiceEndpoint = {
+  inline def apply(): ContainerServiceEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerServiceEndpoint]
   }
   
-  @scala.inline
-  implicit class ContainerServiceEndpointMutableBuilder[Self <: ContainerServiceEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerServiceEndpoint](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
     
-    @scala.inline
-    def setContainerPort(value: integer): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
+    inline def setContainerPort(value: integer): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerPortUndefined: Self = StObject.set(x, "containerPort", js.undefined)
+    inline def setContainerPortUndefined: Self = StObject.set(x, "containerPort", js.undefined)
     
-    @scala.inline
-    def setHealthCheck(value: ContainerServiceHealthCheckConfig): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
+    inline def setHealthCheck(value: ContainerServiceHealthCheckConfig): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
+    inline def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
   }
 }

@@ -24,50 +24,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+      inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+      inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
       
-      @scala.inline
-      def setLoadingClass(value: String): Self = StObject.set(x, "loadingClass", value.asInstanceOf[js.Any])
+      inline def setLoadingClass(value: String): Self = StObject.set(x, "loadingClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingClassUndefined: Self = StObject.set(x, "loadingClass", js.undefined)
+      inline def setLoadingClassUndefined: Self = StObject.set(x, "loadingClass", js.undefined)
       
-      @scala.inline
-      def setLoadingText(value: String): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
+      inline def setLoadingText(value: String): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingTextUndefined: Self = StObject.set(x, "loadingText", js.undefined)
+      inline def setLoadingTextUndefined: Self = StObject.set(x, "loadingText", js.undefined)
       
-      @scala.inline
-      def setOverlayClass(value: String): Self = StObject.set(x, "overlayClass", value.asInstanceOf[js.Any])
+      inline def setOverlayClass(value: String): Self = StObject.set(x, "overlayClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayClassUndefined: Self = StObject.set(x, "overlayClass", js.undefined)
+      inline def setOverlayClassUndefined: Self = StObject.set(x, "overlayClass", js.undefined)
       
-      @scala.inline
-      def setSpinnerClass(value: String): Self = StObject.set(x, "spinnerClass", value.asInstanceOf[js.Any])
+      inline def setSpinnerClass(value: String): Self = StObject.set(x, "spinnerClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinnerClassUndefined: Self = StObject.set(x, "spinnerClass", js.undefined)
+      inline def setSpinnerClassUndefined: Self = StObject.set(x, "spinnerClass", js.undefined)
       
-      @scala.inline
-      def setTextClass(value: String): Self = StObject.set(x, "textClass", value.asInstanceOf[js.Any])
+      inline def setTextClass(value: String): Self = StObject.set(x, "textClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextClassUndefined: Self = StObject.set(x, "textClass", js.undefined)
+      inline def setTextClassUndefined: Self = StObject.set(x, "textClass", js.undefined)
     }
   }
   

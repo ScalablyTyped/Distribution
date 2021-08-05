@@ -18,19 +18,15 @@ trait DetachRolePolicyRequest extends StObject {
 }
 object DetachRolePolicyRequest {
   
-  @scala.inline
-  def apply(PolicyArn: arnType, RoleName: roleNameType): DetachRolePolicyRequest = {
+  inline def apply(PolicyArn: arnType, RoleName: roleNameType): DetachRolePolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyArn = PolicyArn.asInstanceOf[js.Any], RoleName = RoleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachRolePolicyRequest]
   }
   
-  @scala.inline
-  implicit class DetachRolePolicyRequestMutableBuilder[Self <: DetachRolePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetachRolePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setPolicyArn(value: arnType): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
+    inline def setPolicyArn(value: arnType): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
   }
 }

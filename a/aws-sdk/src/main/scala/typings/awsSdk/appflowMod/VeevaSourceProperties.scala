@@ -13,17 +13,14 @@ trait VeevaSourceProperties extends StObject {
 }
 object VeevaSourceProperties {
   
-  @scala.inline
-  def apply(`object`: Object): VeevaSourceProperties = {
+  inline def apply(`object`: Object): VeevaSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VeevaSourceProperties]
   }
   
-  @scala.inline
-  implicit class VeevaSourcePropertiesMutableBuilder[Self <: VeevaSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: VeevaSourceProperties](x: Self) {
     
-    @scala.inline
-    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

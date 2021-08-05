@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.DAVAdapterObject")
 @js.native
-class DAVAdapterObject protected ()
+/* private */ class DAVAdapterObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.DAVAdapterObject {
   
@@ -17,7 +17,7 @@ class DAVAdapterObject protected ()
   /* CompleteClass */
   var FolderURL: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.DAVAdapterObject_typekey")
   var InfoPathDotDAVAdapterObject_typekey: typings.activexInfopath.InfoPath.DAVAdapterObject = js.native
   

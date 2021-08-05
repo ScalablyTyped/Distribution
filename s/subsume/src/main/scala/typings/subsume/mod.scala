@@ -84,8 +84,7 @@ object mod {
   	Useful when `text` comes from an external source.
   	*/
   /* static member */
-  @scala.inline
-  def parse(string: String, id: String): ParseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ParseResult]
+  inline def parse(string: String, id: String): ParseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ParseResult]
   
   /**
   	Extract embedded data corresponding to all IDs in `idArray`, if specified. Otherwise it will extract embedded data for all top-level IDs.
@@ -107,10 +106,8 @@ object mod {
   	```
   	*/
   /* static member */
-  @scala.inline
-  def parseAll(string: String): ParseResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(string.asInstanceOf[js.Any]).asInstanceOf[ParseResults]
-  @scala.inline
-  def parseAll(string: String, idArray: js.Array[String]): ParseResults = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(string.asInstanceOf[js.Any], idArray.asInstanceOf[js.Any])).asInstanceOf[ParseResults]
+  inline def parseAll(string: String): ParseResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(string.asInstanceOf[js.Any]).asInstanceOf[ParseResults]
+  inline def parseAll(string: String, idArray: js.Array[String]): ParseResults = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(string.asInstanceOf[js.Any], idArray.asInstanceOf[js.Any])).asInstanceOf[ParseResults]
   
   trait ParseResult extends StObject {
     
@@ -120,23 +117,18 @@ object mod {
   }
   object ParseResult {
     
-    @scala.inline
-    def apply(rest: String): ParseResult = {
+    inline def apply(rest: String): ParseResult = {
       val __obj = js.Dynamic.literal(rest = rest.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseResult]
     }
     
-    @scala.inline
-    implicit class ParseResultMutableBuilder[Self <: ParseResult] (val x: Self) extends AnyVal {
+    extension [Self <: ParseResult](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setRest(value: String): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
+      inline def setRest(value: String): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,20 +140,16 @@ object mod {
   }
   object ParseResults {
     
-    @scala.inline
-    def apply(data: Map[String, String], rest: String): ParseResults = {
+    inline def apply(data: Map[String, String], rest: String): ParseResults = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], rest = rest.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseResults]
     }
     
-    @scala.inline
-    implicit class ParseResultsMutableBuilder[Self <: ParseResults] (val x: Self) extends AnyVal {
+    extension [Self <: ParseResults](x: Self) {
       
-      @scala.inline
-      def setData(value: Map[String, String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Map[String, String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest(value: String): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
+      inline def setRest(value: String): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
     }
   }
   
@@ -200,8 +188,7 @@ object mod {
   }
   object Subsume {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compose: String => String,
       id: String,
       parse: String => ParseResult,
@@ -213,26 +200,19 @@ object mod {
       __obj.asInstanceOf[Subsume]
     }
     
-    @scala.inline
-    implicit class SubsumeMutableBuilder[Self <: Subsume] (val x: Self) extends AnyVal {
+    extension [Self <: Subsume](x: Self) {
       
-      @scala.inline
-      def setCompose(value: String => String): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
+      inline def setCompose(value: String => String): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParse(value: String => ParseResult): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: String => ParseResult): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPostfix(value: String): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
+      inline def setPostfix(value: String): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     }
   }
 }

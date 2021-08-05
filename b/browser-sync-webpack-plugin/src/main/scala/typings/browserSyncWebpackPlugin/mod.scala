@@ -49,38 +49,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCallback(value: (/* error */ Error, /* bs */ BrowserSyncInstance) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* error */ Error, /* bs */ BrowserSyncInstance) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setInjectCss(value: Boolean): Self = StObject.set(x, "injectCss", value.asInstanceOf[js.Any])
+      inline def setInjectCss(value: Boolean): Self = StObject.set(x, "injectCss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectCssUndefined: Self = StObject.set(x, "injectCss", js.undefined)
+      inline def setInjectCssUndefined: Self = StObject.set(x, "injectCss", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setReload(value: Boolean): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
+      inline def setReload(value: Boolean): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
+      inline def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
     }
   }
 }

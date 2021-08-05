@@ -28,34 +28,25 @@ trait DeleteInventoryRequest extends StObject {
 }
 object DeleteInventoryRequest {
   
-  @scala.inline
-  def apply(TypeName: InventoryItemTypeName): DeleteInventoryRequest = {
+  inline def apply(TypeName: InventoryItemTypeName): DeleteInventoryRequest = {
     val __obj = js.Dynamic.literal(TypeName = TypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInventoryRequest]
   }
   
-  @scala.inline
-  implicit class DeleteInventoryRequestMutableBuilder[Self <: DeleteInventoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInventoryRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: UUID): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: UUID): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setSchemaDeleteOption(value: InventorySchemaDeleteOption): Self = StObject.set(x, "SchemaDeleteOption", value.asInstanceOf[js.Any])
+    inline def setSchemaDeleteOption(value: InventorySchemaDeleteOption): Self = StObject.set(x, "SchemaDeleteOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaDeleteOptionUndefined: Self = StObject.set(x, "SchemaDeleteOption", js.undefined)
+    inline def setSchemaDeleteOptionUndefined: Self = StObject.set(x, "SchemaDeleteOption", js.undefined)
     
-    @scala.inline
-    def setTypeName(value: InventoryItemTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: InventoryItemTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
   }
 }

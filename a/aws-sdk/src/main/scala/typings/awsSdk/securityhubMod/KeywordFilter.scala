@@ -13,19 +13,15 @@ trait KeywordFilter extends StObject {
 }
 object KeywordFilter {
   
-  @scala.inline
-  def apply(): KeywordFilter = {
+  inline def apply(): KeywordFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeywordFilter]
   }
   
-  @scala.inline
-  implicit class KeywordFilterMutableBuilder[Self <: KeywordFilter] (val x: Self) extends AnyVal {
+  extension [Self <: KeywordFilter](x: Self) {
     
-    @scala.inline
-    def setValue(value: NonEmptyString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NonEmptyString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

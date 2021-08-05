@@ -33,8 +33,7 @@ trait NetworkStateChangeEventDetails extends StObject {
 }
 object NetworkStateChangeEventDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasNewConnectionCost: Boolean,
     hasNewDomainConnectivityLevel: Boolean,
     hasNewHostNameList: Boolean,
@@ -48,31 +47,22 @@ object NetworkStateChangeEventDetails {
     __obj.asInstanceOf[NetworkStateChangeEventDetails]
   }
   
-  @scala.inline
-  implicit class NetworkStateChangeEventDetailsMutableBuilder[Self <: NetworkStateChangeEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkStateChangeEventDetails](x: Self) {
     
-    @scala.inline
-    def setHasNewConnectionCost(value: Boolean): Self = StObject.set(x, "hasNewConnectionCost", value.asInstanceOf[js.Any])
+    inline def setHasNewConnectionCost(value: Boolean): Self = StObject.set(x, "hasNewConnectionCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasNewDomainConnectivityLevel(value: Boolean): Self = StObject.set(x, "hasNewDomainConnectivityLevel", value.asInstanceOf[js.Any])
+    inline def setHasNewDomainConnectivityLevel(value: Boolean): Self = StObject.set(x, "hasNewDomainConnectivityLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasNewHostNameList(value: Boolean): Self = StObject.set(x, "hasNewHostNameList", value.asInstanceOf[js.Any])
+    inline def setHasNewHostNameList(value: Boolean): Self = StObject.set(x, "hasNewHostNameList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasNewInternetConnectionProfile(value: Boolean): Self = StObject.set(x, "hasNewInternetConnectionProfile", value.asInstanceOf[js.Any])
+    inline def setHasNewInternetConnectionProfile(value: Boolean): Self = StObject.set(x, "hasNewInternetConnectionProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasNewNetworkConnectivityLevel(value: Boolean): Self = StObject.set(x, "hasNewNetworkConnectivityLevel", value.asInstanceOf[js.Any])
+    inline def setHasNewNetworkConnectivityLevel(value: Boolean): Self = StObject.set(x, "hasNewNetworkConnectivityLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasNewTetheringClientCount(value: Boolean): Self = StObject.set(x, "hasNewTetheringClientCount", value.asInstanceOf[js.Any])
+    inline def setHasNewTetheringClientCount(value: Boolean): Self = StObject.set(x, "hasNewTetheringClientCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasNewTetheringOperationalState(value: Boolean): Self = StObject.set(x, "hasNewTetheringOperationalState", value.asInstanceOf[js.Any])
+    inline def setHasNewTetheringOperationalState(value: Boolean): Self = StObject.set(x, "hasNewTetheringOperationalState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasNewWwanRegistrationState(value: Boolean): Self = StObject.set(x, "hasNewWwanRegistrationState", value.asInstanceOf[js.Any])
+    inline def setHasNewWwanRegistrationState(value: Boolean): Self = StObject.set(x, "hasNewWwanRegistrationState", value.asInstanceOf[js.Any])
   }
 }

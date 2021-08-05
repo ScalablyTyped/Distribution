@@ -18,8 +18,7 @@ trait ParametersReposGetCodeFrequencyStatsEndpoint extends StObject {
 }
 object ParametersReposGetCodeFrequencyStatsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposGetCodeFrequencyStatsEndpoint,
     request: ReposGetCodeFrequencyStatsRequestOptions,
     response: OctokitResponse[ReposGetCodeFrequencyStatsResponseData]
@@ -28,16 +27,12 @@ object ParametersReposGetCodeFrequencyStatsEndpoint {
     __obj.asInstanceOf[ParametersReposGetCodeFrequencyStatsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposGetCodeFrequencyStatsEndpointMutableBuilder[Self <: ParametersReposGetCodeFrequencyStatsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposGetCodeFrequencyStatsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposGetCodeFrequencyStatsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposGetCodeFrequencyStatsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposGetCodeFrequencyStatsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposGetCodeFrequencyStatsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetCodeFrequencyStatsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetCodeFrequencyStatsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

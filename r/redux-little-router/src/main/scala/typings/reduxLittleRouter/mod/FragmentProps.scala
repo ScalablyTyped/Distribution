@@ -26,67 +26,47 @@ trait FragmentProps extends StObject {
 }
 object FragmentProps {
   
-  @scala.inline
-  def apply(): FragmentProps = {
+  inline def apply(): FragmentProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FragmentProps]
   }
   
-  @scala.inline
-  implicit class FragmentPropsMutableBuilder[Self <: FragmentProps] (val x: Self) extends AnyVal {
+  extension [Self <: FragmentProps](x: Self) {
     
-    @scala.inline
-    def setForNoMatch(value: Boolean): Self = StObject.set(x, "forNoMatch", value.asInstanceOf[js.Any])
+    inline def setForNoMatch(value: Boolean): Self = StObject.set(x, "forNoMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForNoMatchUndefined: Self = StObject.set(x, "forNoMatch", js.undefined)
+    inline def setForNoMatchUndefined: Self = StObject.set(x, "forNoMatch", js.undefined)
     
-    @scala.inline
-    def setForRoute(value: String): Self = StObject.set(x, "forRoute", value.asInstanceOf[js.Any])
+    inline def setForRoute(value: String): Self = StObject.set(x, "forRoute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForRouteUndefined: Self = StObject.set(x, "forRoute", js.undefined)
+    inline def setForRouteUndefined: Self = StObject.set(x, "forRoute", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setMatchRoute(value: js.Function): Self = StObject.set(x, "matchRoute", value.asInstanceOf[js.Any])
+    inline def setMatchRoute(value: js.Function): Self = StObject.set(x, "matchRoute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchRouteUndefined: Self = StObject.set(x, "matchRoute", js.undefined)
+    inline def setMatchRouteUndefined: Self = StObject.set(x, "matchRoute", js.undefined)
     
-    @scala.inline
-    def setMatchWildcardRoute(value: js.Function): Self = StObject.set(x, "matchWildcardRoute", value.asInstanceOf[js.Any])
+    inline def setMatchWildcardRoute(value: js.Function): Self = StObject.set(x, "matchWildcardRoute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchWildcardRouteUndefined: Self = StObject.set(x, "matchWildcardRoute", js.undefined)
+    inline def setMatchWildcardRouteUndefined: Self = StObject.set(x, "matchWildcardRoute", js.undefined)
     
-    @scala.inline
-    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+    inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
-    @scala.inline
-    def setParentRoute(value: String): Self = StObject.set(x, "parentRoute", value.asInstanceOf[js.Any])
+    inline def setParentRoute(value: String): Self = StObject.set(x, "parentRoute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentRouteUndefined: Self = StObject.set(x, "parentRoute", js.undefined)
+    inline def setParentRouteUndefined: Self = StObject.set(x, "parentRoute", js.undefined)
     
-    @scala.inline
-    def setStyle(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setWithConditions(value: /* location */ Location => Boolean): Self = StObject.set(x, "withConditions", js.Any.fromFunction1(value))
+    inline def setWithConditions(value: /* location */ Location => Boolean): Self = StObject.set(x, "withConditions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithConditionsUndefined: Self = StObject.set(x, "withConditions", js.undefined)
+    inline def setWithConditionsUndefined: Self = StObject.set(x, "withConditions", js.undefined)
   }
 }

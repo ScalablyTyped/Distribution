@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(key: String): String = ^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(key: String, seed: Double): String = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(key: String): String = ^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(key: String, seed: Double): String = (^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("quick-hash", JSImport.Namespace)
   @js.native

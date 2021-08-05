@@ -12,19 +12,15 @@ trait Complete extends StObject {
 }
 object Complete {
   
-  @scala.inline
-  def apply(complete: Double, total: Double): Complete = {
+  inline def apply(complete: Double, total: Double): Complete = {
     val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[Complete]
   }
   
-  @scala.inline
-  implicit class CompleteMutableBuilder[Self <: Complete] (val x: Self) extends AnyVal {
+  extension [Self <: Complete](x: Self) {
     
-    @scala.inline
-    def setComplete(value: Double): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+    inline def setComplete(value: Double): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

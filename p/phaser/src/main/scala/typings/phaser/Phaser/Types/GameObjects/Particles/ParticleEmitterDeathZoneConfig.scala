@@ -18,22 +18,17 @@ trait ParticleEmitterDeathZoneConfig extends StObject {
 }
 object ParticleEmitterDeathZoneConfig {
   
-  @scala.inline
-  def apply(source: DeathZoneSource): ParticleEmitterDeathZoneConfig = {
+  inline def apply(source: DeathZoneSource): ParticleEmitterDeathZoneConfig = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticleEmitterDeathZoneConfig]
   }
   
-  @scala.inline
-  implicit class ParticleEmitterDeathZoneConfigMutableBuilder[Self <: ParticleEmitterDeathZoneConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ParticleEmitterDeathZoneConfig](x: Self) {
     
-    @scala.inline
-    def setSource(value: DeathZoneSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: DeathZoneSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

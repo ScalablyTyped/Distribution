@@ -43,112 +43,77 @@ trait IInitOptions[Ext, C /* <: IClient */] extends StObject {
 }
 object IInitOptions {
   
-  @scala.inline
-  def apply[Ext, C /* <: IClient */](): IInitOptions[Ext, C] = {
+  inline def apply[Ext, C /* <: IClient */](): IInitOptions[Ext, C] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IInitOptions[Ext, C]]
   }
   
-  @scala.inline
-  implicit class IInitOptionsMutableBuilder[Self <: IInitOptions[?, ?], Ext, C /* <: IClient */] (val x: Self & (IInitOptions[Ext, C])) extends AnyVal {
+  extension [Self <: IInitOptions[?, ?], Ext, C /* <: IClient */](x: Self & (IInitOptions[Ext, C])) {
     
-    @scala.inline
-    def setCapSQL(value: Boolean): Self = StObject.set(x, "capSQL", value.asInstanceOf[js.Any])
+    inline def setCapSQL(value: Boolean): Self = StObject.set(x, "capSQL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapSQLUndefined: Self = StObject.set(x, "capSQL", js.undefined)
+    inline def setCapSQLUndefined: Self = StObject.set(x, "capSQL", js.undefined)
     
-    @scala.inline
-    def setConnect(value: (/* client */ C, /* dc */ js.Any, /* useCount */ Double) => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction3(value))
+    inline def setConnect(value: (/* client */ C, /* dc */ js.Any, /* useCount */ Double) => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+    inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
     
-    @scala.inline
-    def setDisconnect(value: (/* client */ C, /* dc */ js.Any) => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction2(value))
+    inline def setDisconnect(value: (/* client */ C, /* dc */ js.Any) => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDisconnectUndefined: Self = StObject.set(x, "disconnect", js.undefined)
+    inline def setDisconnectUndefined: Self = StObject.set(x, "disconnect", js.undefined)
     
-    @scala.inline
-    def setError(value: (/* err */ js.Any, /* e */ IEventContext[C]) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+    inline def setError(value: (/* err */ js.Any, /* e */ IEventContext[C]) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setExtend(value: (/* obj */ (IDatabase[Ext, C]) & Ext, /* dc */ js.Any) => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
+    inline def setExtend(value: (/* obj */ (IDatabase[Ext, C]) & Ext, /* dc */ js.Any) => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    @scala.inline
-    def setNoLocking(value: Boolean): Self = StObject.set(x, "noLocking", value.asInstanceOf[js.Any])
+    inline def setNoLocking(value: Boolean): Self = StObject.set(x, "noLocking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoLockingUndefined: Self = StObject.set(x, "noLocking", js.undefined)
+    inline def setNoLockingUndefined: Self = StObject.set(x, "noLocking", js.undefined)
     
-    @scala.inline
-    def setNoWarnings(value: Boolean): Self = StObject.set(x, "noWarnings", value.asInstanceOf[js.Any])
+    inline def setNoWarnings(value: Boolean): Self = StObject.set(x, "noWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoWarningsUndefined: Self = StObject.set(x, "noWarnings", js.undefined)
+    inline def setNoWarningsUndefined: Self = StObject.set(x, "noWarnings", js.undefined)
     
-    @scala.inline
-    def setPgFormatting(value: Boolean): Self = StObject.set(x, "pgFormatting", value.asInstanceOf[js.Any])
+    inline def setPgFormatting(value: Boolean): Self = StObject.set(x, "pgFormatting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPgFormattingUndefined: Self = StObject.set(x, "pgFormatting", js.undefined)
+    inline def setPgFormattingUndefined: Self = StObject.set(x, "pgFormatting", js.undefined)
     
-    @scala.inline
-    def setPgNative(value: Boolean): Self = StObject.set(x, "pgNative", value.asInstanceOf[js.Any])
+    inline def setPgNative(value: Boolean): Self = StObject.set(x, "pgNative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPgNativeUndefined: Self = StObject.set(x, "pgNative", js.undefined)
+    inline def setPgNativeUndefined: Self = StObject.set(x, "pgNative", js.undefined)
     
-    @scala.inline
-    def setPromiseLib(value: js.Any): Self = StObject.set(x, "promiseLib", value.asInstanceOf[js.Any])
+    inline def setPromiseLib(value: js.Any): Self = StObject.set(x, "promiseLib", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromiseLibUndefined: Self = StObject.set(x, "promiseLib", js.undefined)
+    inline def setPromiseLibUndefined: Self = StObject.set(x, "promiseLib", js.undefined)
     
-    @scala.inline
-    def setQuery(value: /* e */ IEventContext[C] => Unit): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
+    inline def setQuery(value: /* e */ IEventContext[C] => Unit): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setReceive(value: (/* data */ js.Array[js.Any], /* result */ IResultExt, /* e */ IEventContext[C]) => Unit): Self = StObject.set(x, "receive", js.Any.fromFunction3(value))
+    inline def setReceive(value: (/* data */ js.Array[js.Any], /* result */ IResultExt, /* e */ IEventContext[C]) => Unit): Self = StObject.set(x, "receive", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReceiveUndefined: Self = StObject.set(x, "receive", js.undefined)
+    inline def setReceiveUndefined: Self = StObject.set(x, "receive", js.undefined)
     
-    @scala.inline
-    def setSchema(value: ValidSchema | (js.Function1[/* dc */ js.Any, ValidSchema])): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: ValidSchema | (js.Function1[/* dc */ js.Any, ValidSchema])): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaFunction1(value: /* dc */ js.Any => ValidSchema): Self = StObject.set(x, "schema", js.Any.fromFunction1(value))
+    inline def setSchemaFunction1(value: /* dc */ js.Any => ValidSchema): Self = StObject.set(x, "schema", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSchemaNull: Self = StObject.set(x, "schema", null)
+    inline def setSchemaNull: Self = StObject.set(x, "schema", null)
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setSchemaVarargs(value: String*): Self = StObject.set(x, "schema", js.Array(value :_*))
+    inline def setSchemaVarargs(value: String*): Self = StObject.set(x, "schema", js.Array(value :_*))
     
-    @scala.inline
-    def setTask(value: /* e */ IEventContext[C] => Unit): Self = StObject.set(x, "task", js.Any.fromFunction1(value))
+    inline def setTask(value: /* e */ IEventContext[C] => Unit): Self = StObject.set(x, "task", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
+    inline def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
     
-    @scala.inline
-    def setTransact(value: /* e */ IEventContext[C] => Unit): Self = StObject.set(x, "transact", js.Any.fromFunction1(value))
+    inline def setTransact(value: /* e */ IEventContext[C] => Unit): Self = StObject.set(x, "transact", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransactUndefined: Self = StObject.set(x, "transact", js.undefined)
+    inline def setTransactUndefined: Self = StObject.set(x, "transact", js.undefined)
   }
 }

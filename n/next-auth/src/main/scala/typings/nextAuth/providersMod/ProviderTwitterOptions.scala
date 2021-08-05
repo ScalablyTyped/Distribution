@@ -12,19 +12,15 @@ trait ProviderTwitterOptions extends StObject {
 }
 object ProviderTwitterOptions {
   
-  @scala.inline
-  def apply(clientId: String, clientSecret: String): ProviderTwitterOptions = {
+  inline def apply(clientId: String, clientSecret: String): ProviderTwitterOptions = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderTwitterOptions]
   }
   
-  @scala.inline
-  implicit class ProviderTwitterOptionsMutableBuilder[Self <: ProviderTwitterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderTwitterOptions](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
   }
 }

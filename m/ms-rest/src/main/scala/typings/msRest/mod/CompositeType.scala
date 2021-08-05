@@ -14,17 +14,14 @@ trait CompositeType
 }
 object CompositeType {
   
-  @scala.inline
-  def apply(name: MapperType, required: Boolean, serializedName: String, `type`: ClassName): CompositeType = {
+  inline def apply(name: MapperType, required: Boolean, serializedName: String, `type`: ClassName): CompositeType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], serializedName = serializedName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositeType]
   }
   
-  @scala.inline
-  implicit class CompositeTypeMutableBuilder[Self <: CompositeType] (val x: Self) extends AnyVal {
+  extension [Self <: CompositeType](x: Self) {
     
-    @scala.inline
-    def setType(value: ClassName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ClassName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -15,16 +15,13 @@ trait NumberFormat
 }
 object NumberFormat {
   
-  @scala.inline
-  def apply(format: (DataTable, Double) => Unit, formatValue: Double => String): NumberFormat = {
+  inline def apply(format: (DataTable, Double) => Unit, formatValue: Double => String): NumberFormat = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), formatValue = js.Any.fromFunction1(formatValue))
     __obj.asInstanceOf[NumberFormat]
   }
   
-  @scala.inline
-  implicit class NumberFormatMutableBuilder[Self <: NumberFormat] (val x: Self) extends AnyVal {
+  extension [Self <: NumberFormat](x: Self) {
     
-    @scala.inline
-    def setFormatValue(value: Double => String): Self = StObject.set(x, "formatValue", js.Any.fromFunction1(value))
+    inline def setFormatValue(value: Double => String): Self = StObject.set(x, "formatValue", js.Any.fromFunction1(value))
   }
 }

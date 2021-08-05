@@ -19,19 +19,15 @@ trait ProviderIdentifier
 }
 object ProviderIdentifier {
   
-  @scala.inline
-  def apply(providerId: String, providerUid: String): ProviderIdentifier = {
+  inline def apply(providerId: String, providerUid: String): ProviderIdentifier = {
     val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any], providerUid = providerUid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderIdentifier]
   }
   
-  @scala.inline
-  implicit class ProviderIdentifierMutableBuilder[Self <: ProviderIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderIdentifier](x: Self) {
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUid(value: String): Self = StObject.set(x, "providerUid", value.asInstanceOf[js.Any])
+    inline def setProviderUid(value: String): Self = StObject.set(x, "providerUid", value.asInstanceOf[js.Any])
   }
 }

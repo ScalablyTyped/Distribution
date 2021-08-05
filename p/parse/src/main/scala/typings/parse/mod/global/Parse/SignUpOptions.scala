@@ -12,25 +12,19 @@ trait SignUpOptions extends StObject {
 }
 object SignUpOptions {
   
-  @scala.inline
-  def apply(): SignUpOptions = {
+  inline def apply(): SignUpOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SignUpOptions]
   }
   
-  @scala.inline
-  implicit class SignUpOptionsMutableBuilder[Self <: SignUpOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SignUpOptions](x: Self) {
     
-    @scala.inline
-    def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
+    inline def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationIdUndefined: Self = StObject.set(x, "installationId", js.undefined)
+    inline def setInstallationIdUndefined: Self = StObject.set(x, "installationId", js.undefined)
     
-    @scala.inline
-    def setUseMasterKey(value: Boolean): Self = StObject.set(x, "useMasterKey", value.asInstanceOf[js.Any])
+    inline def setUseMasterKey(value: Boolean): Self = StObject.set(x, "useMasterKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseMasterKeyUndefined: Self = StObject.set(x, "useMasterKey", js.undefined)
+    inline def setUseMasterKeyUndefined: Self = StObject.set(x, "useMasterKey", js.undefined)
   }
 }

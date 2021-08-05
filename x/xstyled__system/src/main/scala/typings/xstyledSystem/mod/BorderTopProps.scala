@@ -14,27 +14,22 @@ trait BorderTopProps[TLength] extends StObject {
 }
 object BorderTopProps {
   
-  @scala.inline
-  def apply[TLength](): BorderTopProps[TLength] = {
+  inline def apply[TLength](): BorderTopProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderTopProps[TLength]]
   }
   
-  @scala.inline
-  implicit class BorderTopPropsMutableBuilder[Self <: BorderTopProps[?], TLength] (val x: Self & BorderTopProps[TLength]) extends AnyVal {
+  extension [Self <: BorderTopProps[?], TLength](x: Self & BorderTopProps[TLength]) {
     
-    @scala.inline
-    def setBorderTop(
+    inline def setBorderTop(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderTop<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
+    inline def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
     
-    @scala.inline
-    def setBorderTopVarargs(
+    inline def setBorderTopVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderTop<TLength> */ js.Any)*
     ): Self = StObject.set(x, "borderTop", js.Array(value :_*))
   }

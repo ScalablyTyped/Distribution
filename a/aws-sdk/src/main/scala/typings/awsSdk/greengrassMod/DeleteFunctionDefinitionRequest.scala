@@ -13,16 +13,13 @@ trait DeleteFunctionDefinitionRequest extends StObject {
 }
 object DeleteFunctionDefinitionRequest {
   
-  @scala.inline
-  def apply(FunctionDefinitionId: string): DeleteFunctionDefinitionRequest = {
+  inline def apply(FunctionDefinitionId: string): DeleteFunctionDefinitionRequest = {
     val __obj = js.Dynamic.literal(FunctionDefinitionId = FunctionDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFunctionDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFunctionDefinitionRequestMutableBuilder[Self <: DeleteFunctionDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFunctionDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionDefinitionId(value: string): Self = StObject.set(x, "FunctionDefinitionId", value.asInstanceOf[js.Any])
+    inline def setFunctionDefinitionId(value: string): Self = StObject.set(x, "FunctionDefinitionId", value.asInstanceOf[js.Any])
   }
 }

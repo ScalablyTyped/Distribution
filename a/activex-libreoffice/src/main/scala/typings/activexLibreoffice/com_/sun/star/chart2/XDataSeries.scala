@@ -30,8 +30,7 @@ trait XDataSeries
 }
 object XDataSeries {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getDataPointByIndex: Double => XPropertySet,
     queryInterface: `type` => js.Any,
@@ -43,16 +42,12 @@ object XDataSeries {
     __obj.asInstanceOf[XDataSeries]
   }
   
-  @scala.inline
-  implicit class XDataSeriesMutableBuilder[Self <: XDataSeries] (val x: Self) extends AnyVal {
+  extension [Self <: XDataSeries](x: Self) {
     
-    @scala.inline
-    def setGetDataPointByIndex(value: Double => XPropertySet): Self = StObject.set(x, "getDataPointByIndex", js.Any.fromFunction1(value))
+    inline def setGetDataPointByIndex(value: Double => XPropertySet): Self = StObject.set(x, "getDataPointByIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResetAllDataPoints(value: () => Unit): Self = StObject.set(x, "resetAllDataPoints", js.Any.fromFunction0(value))
+    inline def setResetAllDataPoints(value: () => Unit): Self = StObject.set(x, "resetAllDataPoints", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResetDataPoint(value: Double => Unit): Self = StObject.set(x, "resetDataPoint", js.Any.fromFunction1(value))
+    inline def setResetDataPoint(value: Double => Unit): Self = StObject.set(x, "resetDataPoint", js.Any.fromFunction1(value))
   }
 }

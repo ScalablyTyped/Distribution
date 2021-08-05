@@ -32,23 +32,18 @@ object routedAnchorMod {
   }
   object RoutedAnchorProps {
     
-    @scala.inline
-    def apply(path: String): RoutedAnchorProps = {
+    inline def apply(path: String): RoutedAnchorProps = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoutedAnchorProps]
     }
     
-    @scala.inline
-    implicit class RoutedAnchorPropsMutableBuilder[Self <: RoutedAnchorProps] (val x: Self) extends AnyVal {
+    extension [Self <: RoutedAnchorProps](x: Self) {
       
-      @scala.inline
-      def setMethod(value: push | replace): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: push | replace): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

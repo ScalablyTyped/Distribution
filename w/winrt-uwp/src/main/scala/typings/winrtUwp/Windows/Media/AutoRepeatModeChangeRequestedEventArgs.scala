@@ -12,16 +12,13 @@ trait AutoRepeatModeChangeRequestedEventArgs extends StObject {
 }
 object AutoRepeatModeChangeRequestedEventArgs {
   
-  @scala.inline
-  def apply(requestedAutoRepeatMode: MediaPlaybackAutoRepeatMode): AutoRepeatModeChangeRequestedEventArgs = {
+  inline def apply(requestedAutoRepeatMode: MediaPlaybackAutoRepeatMode): AutoRepeatModeChangeRequestedEventArgs = {
     val __obj = js.Dynamic.literal(requestedAutoRepeatMode = requestedAutoRepeatMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoRepeatModeChangeRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class AutoRepeatModeChangeRequestedEventArgsMutableBuilder[Self <: AutoRepeatModeChangeRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AutoRepeatModeChangeRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequestedAutoRepeatMode(value: MediaPlaybackAutoRepeatMode): Self = StObject.set(x, "requestedAutoRepeatMode", value.asInstanceOf[js.Any])
+    inline def setRequestedAutoRepeatMode(value: MediaPlaybackAutoRepeatMode): Self = StObject.set(x, "requestedAutoRepeatMode", value.asInstanceOf[js.Any])
   }
 }

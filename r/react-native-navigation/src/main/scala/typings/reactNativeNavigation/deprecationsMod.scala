@@ -13,13 +13,13 @@ object deprecationsMod {
     
     def checkForDeprecatedOptions(options: Record[String, js.Any]): Unit = js.native
     
-    var deprecateBottomTabsVisibility: js.Any = js.native
+    /* private */ var deprecateBottomTabsVisibility: js.Any = js.native
     
-    var deprecateInterpolationOptions: js.Any = js.native
+    /* private */ var deprecateInterpolationOptions: js.Any = js.native
     
-    var deprecateSearchBarOptions: js.Any = js.native
+    /* private */ var deprecateSearchBarOptions: js.Any = js.native
     
-    var deprecatedOptions: js.Any = js.native
+    /* private */ var deprecatedOptions: js.Any = js.native
     
     def onProcessDefaultOptions(_key: String, _parentOptions: Record[String, js.Any]): Unit = js.native
     

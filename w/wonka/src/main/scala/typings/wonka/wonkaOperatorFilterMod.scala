@@ -11,6 +11,5 @@ object wonkaOperatorFilterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filter[A](f: js.Function1[/* value */ A, Boolean]): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(f.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
+  inline def filter[A](f: js.Function1[/* value */ A, Boolean]): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(f.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
 }

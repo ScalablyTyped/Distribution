@@ -12,19 +12,15 @@ trait NavigationProp[S] extends StObject {
 }
 object NavigationProp {
   
-  @scala.inline
-  def apply[S](dispatch: /* action */ NavigationAction => Boolean, state: S): NavigationProp[S] = {
+  inline def apply[S](dispatch: /* action */ NavigationAction => Boolean, state: S): NavigationProp[S] = {
     val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationProp[S]]
   }
   
-  @scala.inline
-  implicit class NavigationPropMutableBuilder[Self <: NavigationProp[?], S] (val x: Self & NavigationProp[S]) extends AnyVal {
+  extension [Self <: NavigationProp[?], S](x: Self & NavigationProp[S]) {
     
-    @scala.inline
-    def setDispatch(value: /* action */ NavigationAction => Boolean): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+    inline def setDispatch(value: /* action */ NavigationAction => Boolean): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setState(value: S): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: S): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

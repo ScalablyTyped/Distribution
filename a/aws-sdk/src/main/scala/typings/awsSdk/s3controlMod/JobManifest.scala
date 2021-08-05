@@ -18,19 +18,15 @@ trait JobManifest extends StObject {
 }
 object JobManifest {
   
-  @scala.inline
-  def apply(Location: JobManifestLocation, Spec: JobManifestSpec): JobManifest = {
+  inline def apply(Location: JobManifestLocation, Spec: JobManifestSpec): JobManifest = {
     val __obj = js.Dynamic.literal(Location = Location.asInstanceOf[js.Any], Spec = Spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobManifest]
   }
   
-  @scala.inline
-  implicit class JobManifestMutableBuilder[Self <: JobManifest] (val x: Self) extends AnyVal {
+  extension [Self <: JobManifest](x: Self) {
     
-    @scala.inline
-    def setLocation(value: JobManifestLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: JobManifestLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: JobManifestSpec): Self = StObject.set(x, "Spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: JobManifestSpec): Self = StObject.set(x, "Spec", value.asInstanceOf[js.Any])
   }
 }

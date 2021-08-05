@@ -19,15 +19,11 @@ object normalizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def normalize(spec: TopLevelSpec & LayoutSizeMixins): TopLevel[NormalizedSpec] & LayoutSizeMixins = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(spec.asInstanceOf[js.Any]).asInstanceOf[TopLevel[NormalizedSpec] & LayoutSizeMixins]
-  @scala.inline
-  def normalize(spec: TopLevelSpec & LayoutSizeMixins, config: Config[SignalRef]): TopLevel[NormalizedSpec] & LayoutSizeMixins = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(spec.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[TopLevel[NormalizedSpec] & LayoutSizeMixins]
+  inline def normalize(spec: TopLevelSpec & LayoutSizeMixins): TopLevel[NormalizedSpec] & LayoutSizeMixins = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(spec.asInstanceOf[js.Any]).asInstanceOf[TopLevel[NormalizedSpec] & LayoutSizeMixins]
+  inline def normalize(spec: TopLevelSpec & LayoutSizeMixins, config: Config[SignalRef]): TopLevel[NormalizedSpec] & LayoutSizeMixins = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(spec.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[TopLevel[NormalizedSpec] & LayoutSizeMixins]
   
-  @scala.inline
-  def normalizeAutoSize(spec: TopLevel[NormalizedSpec], sizeInfo: autosizeAutosizeTypeAutoS): AutoSizeParams = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeAutoSize")(spec.asInstanceOf[js.Any], sizeInfo.asInstanceOf[js.Any])).asInstanceOf[AutoSizeParams]
-  @scala.inline
-  def normalizeAutoSize(
+  inline def normalizeAutoSize(spec: TopLevel[NormalizedSpec], sizeInfo: autosizeAutosizeTypeAutoS): AutoSizeParams = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeAutoSize")(spec.asInstanceOf[js.Any], sizeInfo.asInstanceOf[js.Any])).asInstanceOf[AutoSizeParams]
+  inline def normalizeAutoSize(
     spec: TopLevel[NormalizedSpec],
     sizeInfo: autosizeAutosizeTypeAutoS,
     config: Config[ExprRef | SignalRef]

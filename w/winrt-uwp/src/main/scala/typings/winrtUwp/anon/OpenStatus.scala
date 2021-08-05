@@ -16,22 +16,17 @@ trait OpenStatus extends StObject {
 }
 object OpenStatus {
   
-  @scala.inline
-  def apply(openStatus: GpioOpenStatus, pin: GpioPin, returnValue: Boolean): OpenStatus = {
+  inline def apply(openStatus: GpioOpenStatus, pin: GpioPin, returnValue: Boolean): OpenStatus = {
     val __obj = js.Dynamic.literal(openStatus = openStatus.asInstanceOf[js.Any], pin = pin.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenStatus]
   }
   
-  @scala.inline
-  implicit class OpenStatusMutableBuilder[Self <: OpenStatus] (val x: Self) extends AnyVal {
+  extension [Self <: OpenStatus](x: Self) {
     
-    @scala.inline
-    def setOpenStatus(value: GpioOpenStatus): Self = StObject.set(x, "openStatus", value.asInstanceOf[js.Any])
+    inline def setOpenStatus(value: GpioOpenStatus): Self = StObject.set(x, "openStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPin(value: GpioPin): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    inline def setPin(value: GpioPin): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

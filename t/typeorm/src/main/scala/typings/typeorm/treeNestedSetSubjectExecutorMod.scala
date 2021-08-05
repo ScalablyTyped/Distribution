@@ -24,6 +24,6 @@ object treeNestedSetSubjectExecutorMod {
       */
     def insert(subject: Subject): js.Promise[Unit] = js.native
     
-    var queryRunner: QueryRunner = js.native
+    /* protected */ var queryRunner: QueryRunner = js.native
   }
 }

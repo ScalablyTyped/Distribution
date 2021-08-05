@@ -31,8 +31,7 @@ trait FieldSchemaInFormUser
 }
 object FieldSchemaInFormUser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowGridEditing: Boolean,
     DefaultRender: Boolean,
     Description: String,
@@ -61,34 +60,24 @@ object FieldSchemaInFormUser {
     __obj.asInstanceOf[FieldSchemaInFormUser]
   }
   
-  @scala.inline
-  implicit class FieldSchemaInFormUserMutableBuilder[Self <: FieldSchemaInFormUser] (val x: Self) extends AnyVal {
+  extension [Self <: FieldSchemaInFormUser](x: Self) {
     
-    @scala.inline
-    def setDefaultRender(value: Boolean): Self = StObject.set(x, "DefaultRender", value.asInstanceOf[js.Any])
+    inline def setDefaultRender(value: Boolean): Self = StObject.set(x, "DefaultRender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitySeparator(value: String): Self = StObject.set(x, "EntitySeparator", value.asInstanceOf[js.Any])
+    inline def setEntitySeparator(value: String): Self = StObject.set(x, "EntitySeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListFormUrl(value: String): Self = StObject.set(x, "ListFormUrl", value.asInstanceOf[js.Any])
+    inline def setListFormUrl(value: String): Self = StObject.set(x, "ListFormUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPictureOnly(value: Boolean): Self = StObject.set(x, "PictureOnly", value.asInstanceOf[js.Any])
+    inline def setPictureOnly(value: Boolean): Self = StObject.set(x, "PictureOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPictureSize(value: String): Self = StObject.set(x, "PictureSize", value.asInstanceOf[js.Any])
+    inline def setPictureSize(value: String): Self = StObject.set(x, "PictureSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresence(value: Boolean): Self = StObject.set(x, "Presence", value.asInstanceOf[js.Any])
+    inline def setPresence(value: Boolean): Self = StObject.set(x, "Presence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDisplayUrl(value: String): Self = StObject.set(x, "UserDisplayUrl", value.asInstanceOf[js.Any])
+    inline def setUserDisplayUrl(value: String): Self = StObject.set(x, "UserDisplayUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithPicture(value: Boolean): Self = StObject.set(x, "WithPicture", value.asInstanceOf[js.Any])
+    inline def setWithPicture(value: Boolean): Self = StObject.set(x, "WithPicture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithPictureDetail(value: Boolean): Self = StObject.set(x, "WithPictureDetail", value.asInstanceOf[js.Any])
+    inline def setWithPictureDetail(value: Boolean): Self = StObject.set(x, "WithPictureDetail", value.asInstanceOf[js.Any])
   }
 }

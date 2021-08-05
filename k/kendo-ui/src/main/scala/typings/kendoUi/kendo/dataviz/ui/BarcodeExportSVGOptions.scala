@@ -10,19 +10,15 @@ trait BarcodeExportSVGOptions extends StObject {
 }
 object BarcodeExportSVGOptions {
   
-  @scala.inline
-  def apply(): BarcodeExportSVGOptions = {
+  inline def apply(): BarcodeExportSVGOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BarcodeExportSVGOptions]
   }
   
-  @scala.inline
-  implicit class BarcodeExportSVGOptionsMutableBuilder[Self <: BarcodeExportSVGOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BarcodeExportSVGOptions](x: Self) {
     
-    @scala.inline
-    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
   }
 }

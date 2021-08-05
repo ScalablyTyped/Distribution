@@ -13,8 +13,7 @@ trait PreventableExceptionThrownEvent
 }
 object PreventableExceptionThrownEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     column: Double,
     line: Double,
     message: String,
@@ -26,10 +25,8 @@ object PreventableExceptionThrownEvent {
     __obj.asInstanceOf[PreventableExceptionThrownEvent]
   }
   
-  @scala.inline
-  implicit class PreventableExceptionThrownEventMutableBuilder[Self <: PreventableExceptionThrownEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PreventableExceptionThrownEvent](x: Self) {
     
-    @scala.inline
-    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+    inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
   }
 }

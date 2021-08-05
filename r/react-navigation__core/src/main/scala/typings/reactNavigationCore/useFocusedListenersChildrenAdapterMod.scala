@@ -13,8 +13,7 @@ object useFocusedListenersChildrenAdapterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasNavigationFocusedListeners: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasNavigationFocusedListeners.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(hasNavigationFocusedListeners: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasNavigationFocusedListeners.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options extends StObject {
     
@@ -24,8 +23,7 @@ object useFocusedListenersChildrenAdapterMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       focusedListeners: js.Array[FocusedNavigationListener],
       navigation: NavigationHelpers[ParamListBase, js.Object]
     ): Options = {
@@ -33,17 +31,13 @@ object useFocusedListenersChildrenAdapterMod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFocusedListeners(value: js.Array[FocusedNavigationListener]): Self = StObject.set(x, "focusedListeners", value.asInstanceOf[js.Any])
+      inline def setFocusedListeners(value: js.Array[FocusedNavigationListener]): Self = StObject.set(x, "focusedListeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedListenersVarargs(value: FocusedNavigationListener*): Self = StObject.set(x, "focusedListeners", js.Array(value :_*))
+      inline def setFocusedListenersVarargs(value: FocusedNavigationListener*): Self = StObject.set(x, "focusedListeners", js.Array(value :_*))
       
-      @scala.inline
-      def setNavigation(value: NavigationHelpers[ParamListBase, js.Object]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+      inline def setNavigation(value: NavigationHelpers[ParamListBase, js.Object]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     }
   }
 }

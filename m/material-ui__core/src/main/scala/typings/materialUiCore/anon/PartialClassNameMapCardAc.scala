@@ -15,31 +15,23 @@ trait PartialClassNameMapCardAc extends StObject {
 }
 object PartialClassNameMapCardAc {
   
-  @scala.inline
-  def apply(): PartialClassNameMapCardAc = {
+  inline def apply(): PartialClassNameMapCardAc = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapCardAc]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapCardAcMutableBuilder[Self <: PartialClassNameMapCardAc] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapCardAc](x: Self) {
     
-    @scala.inline
-    def setFocusHighlight(value: String): Self = StObject.set(x, "focusHighlight", value.asInstanceOf[js.Any])
+    inline def setFocusHighlight(value: String): Self = StObject.set(x, "focusHighlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusHighlightUndefined: Self = StObject.set(x, "focusHighlight", js.undefined)
+    inline def setFocusHighlightUndefined: Self = StObject.set(x, "focusHighlight", js.undefined)
     
-    @scala.inline
-    def setFocusVisible(value: String): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
+    inline def setFocusVisible(value: String): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
+    inline def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

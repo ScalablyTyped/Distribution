@@ -17,16 +17,13 @@ trait PDFExportException
 }
 object PDFExportException {
   
-  @scala.inline
-  def apply(Context: XInterface, ErrorCodes: SafeArray[Double], Message: String): PDFExportException = {
+  inline def apply(Context: XInterface, ErrorCodes: SafeArray[Double], Message: String): PDFExportException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], ErrorCodes = ErrorCodes.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFExportException]
   }
   
-  @scala.inline
-  implicit class PDFExportExceptionMutableBuilder[Self <: PDFExportException] (val x: Self) extends AnyVal {
+  extension [Self <: PDFExportException](x: Self) {
     
-    @scala.inline
-    def setErrorCodes(value: SafeArray[Double]): Self = StObject.set(x, "ErrorCodes", value.asInstanceOf[js.Any])
+    inline def setErrorCodes(value: SafeArray[Double]): Self = StObject.set(x, "ErrorCodes", value.asInstanceOf[js.Any])
   }
 }

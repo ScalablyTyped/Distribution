@@ -12,22 +12,17 @@ trait HighlightAutoOptions
 }
 object HighlightAutoOptions {
   
-  @scala.inline
-  def apply(): HighlightAutoOptions = {
+  inline def apply(): HighlightAutoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HighlightAutoOptions]
   }
   
-  @scala.inline
-  implicit class HighlightAutoOptionsMutableBuilder[Self <: HighlightAutoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightAutoOptions](x: Self) {
     
-    @scala.inline
-    def setSubset(value: js.Array[String]): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
+    inline def setSubset(value: js.Array[String]): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubsetUndefined: Self = StObject.set(x, "subset", js.undefined)
+    inline def setSubsetUndefined: Self = StObject.set(x, "subset", js.undefined)
     
-    @scala.inline
-    def setSubsetVarargs(value: String*): Self = StObject.set(x, "subset", js.Array(value :_*))
+    inline def setSubsetVarargs(value: String*): Self = StObject.set(x, "subset", js.Array(value :_*))
   }
 }

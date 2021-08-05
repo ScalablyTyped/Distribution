@@ -215,6 +215,5 @@ object themeRulesStandardMod {
     /* 3 */ val disabledText: typings.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots.disabledText & Double = js.native
   }
   
-  @scala.inline
-  def themeRulesStandardCreator(): IThemeRules = ^.asInstanceOf[js.Dynamic].applyDynamic("themeRulesStandardCreator")().asInstanceOf[IThemeRules]
+  inline def themeRulesStandardCreator(): IThemeRules = ^.asInstanceOf[js.Dynamic].applyDynamic("themeRulesStandardCreator")().asInstanceOf[IThemeRules]
 }

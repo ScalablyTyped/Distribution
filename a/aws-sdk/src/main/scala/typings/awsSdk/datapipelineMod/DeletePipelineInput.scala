@@ -13,16 +13,13 @@ trait DeletePipelineInput extends StObject {
 }
 object DeletePipelineInput {
   
-  @scala.inline
-  def apply(pipelineId: id): DeletePipelineInput = {
+  inline def apply(pipelineId: id): DeletePipelineInput = {
     val __obj = js.Dynamic.literal(pipelineId = pipelineId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePipelineInput]
   }
   
-  @scala.inline
-  implicit class DeletePipelineInputMutableBuilder[Self <: DeletePipelineInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePipelineInput](x: Self) {
     
-    @scala.inline
-    def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
   }
 }

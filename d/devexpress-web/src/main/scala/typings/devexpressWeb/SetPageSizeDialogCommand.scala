@@ -18,16 +18,13 @@ trait SetPageSizeDialogCommand
 }
 object SetPageSizeDialogCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): SetPageSizeDialogCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): SetPageSizeDialogCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[SetPageSizeDialogCommand]
   }
   
-  @scala.inline
-  implicit class SetPageSizeDialogCommandMutableBuilder[Self <: SetPageSizeDialogCommand] (val x: Self) extends AnyVal {
+  extension [Self <: SetPageSizeDialogCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

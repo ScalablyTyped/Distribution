@@ -34,8 +34,7 @@ trait PointerEvent[T]
 }
 object PointerEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     altKey: Boolean,
     bubbles: Boolean,
     button: Double,
@@ -84,37 +83,26 @@ object PointerEvent {
     __obj.asInstanceOf[PointerEvent[T]]
   }
   
-  @scala.inline
-  implicit class PointerEventMutableBuilder[Self <: PointerEvent[?], T] (val x: Self & PointerEvent[T]) extends AnyVal {
+  extension [Self <: PointerEvent[?], T](x: Self & PointerEvent[T]) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
+    inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+    inline def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerType(value: mouse | pen | touch): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
+    inline def setPointerType(value: mouse | pen | touch): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPressure(value: Double): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
+    inline def setPressure(value: Double): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTangentialPressure(value: Double): Self = StObject.set(x, "tangentialPressure", value.asInstanceOf[js.Any])
+    inline def setTangentialPressure(value: Double): Self = StObject.set(x, "tangentialPressure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiltX(value: Double): Self = StObject.set(x, "tiltX", value.asInstanceOf[js.Any])
+    inline def setTiltX(value: Double): Self = StObject.set(x, "tiltX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiltY(value: Double): Self = StObject.set(x, "tiltY", value.asInstanceOf[js.Any])
+    inline def setTiltY(value: Double): Self = StObject.set(x, "tiltY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwist(value: Double): Self = StObject.set(x, "twist", value.asInstanceOf[js.Any])
+    inline def setTwist(value: Double): Self = StObject.set(x, "twist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ trait MtfRenderer
 }
 object MtfRenderer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createWithBitmapCanvas: XBitmapCanvas => Unit,
     draw: (Double, Double) => Unit,
@@ -27,10 +26,8 @@ object MtfRenderer {
     __obj.asInstanceOf[MtfRenderer]
   }
   
-  @scala.inline
-  implicit class MtfRendererMutableBuilder[Self <: MtfRenderer] (val x: Self) extends AnyVal {
+  extension [Self <: MtfRenderer](x: Self) {
     
-    @scala.inline
-    def setCreateWithBitmapCanvas(value: XBitmapCanvas => Unit): Self = StObject.set(x, "createWithBitmapCanvas", js.Any.fromFunction1(value))
+    inline def setCreateWithBitmapCanvas(value: XBitmapCanvas => Unit): Self = StObject.set(x, "createWithBitmapCanvas", js.Any.fromFunction1(value))
   }
 }

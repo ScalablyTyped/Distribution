@@ -60,8 +60,7 @@ trait ControlProperties extends StObject {
 }
 object ControlProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Command: String,
     Id: String,
     Image16by16: String,
@@ -93,85 +92,58 @@ object ControlProperties {
     __obj.asInstanceOf[ControlProperties]
   }
   
-  @scala.inline
-  implicit class ControlPropertiesMutableBuilder[Self <: ControlProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ControlProperties](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage16by16(value: String): Self = StObject.set(x, "Image16by16", value.asInstanceOf[js.Any])
+    inline def setImage16by16(value: String): Self = StObject.set(x, "Image16by16", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage16by16Class(value: String): Self = StObject.set(x, "Image16by16Class", value.asInstanceOf[js.Any])
+    inline def setImage16by16Class(value: String): Self = StObject.set(x, "Image16by16Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage16by16Left(value: Double): Self = StObject.set(x, "Image16by16Left", value.asInstanceOf[js.Any])
+    inline def setImage16by16Left(value: Double): Self = StObject.set(x, "Image16by16Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage16by16Top(value: Double): Self = StObject.set(x, "Image16by16Top", value.asInstanceOf[js.Any])
+    inline def setImage16by16Top(value: Double): Self = StObject.set(x, "Image16by16Top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage32by32(value: String): Self = StObject.set(x, "Image32by32", value.asInstanceOf[js.Any])
+    inline def setImage32by32(value: String): Self = StObject.set(x, "Image32by32", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage32by32Class(value: String): Self = StObject.set(x, "Image32by32Class", value.asInstanceOf[js.Any])
+    inline def setImage32by32Class(value: String): Self = StObject.set(x, "Image32by32Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage32by32Left(value: Double): Self = StObject.set(x, "Image32by32Left", value.asInstanceOf[js.Any])
+    inline def setImage32by32Left(value: Double): Self = StObject.set(x, "Image32by32Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage32by32Top(value: Double): Self = StObject.set(x, "Image32by32Top", value.asInstanceOf[js.Any])
+    inline def setImage32by32Top(value: Double): Self = StObject.set(x, "Image32by32Top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelCss(value: String): Self = StObject.set(x, "LabelCss", value.asInstanceOf[js.Any])
+    inline def setLabelCss(value: String): Self = StObject.set(x, "LabelCss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelText(value: String): Self = StObject.set(x, "LabelText", value.asInstanceOf[js.Any])
+    inline def setLabelText(value: String): Self = StObject.set(x, "LabelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopulateDynamically(value: String): Self = StObject.set(x, "PopulateDynamically", value.asInstanceOf[js.Any])
+    inline def setPopulateDynamically(value: String): Self = StObject.set(x, "PopulateDynamically", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopulateOnlyOnce(value: String): Self = StObject.set(x, "PopulateOnlyOnce", value.asInstanceOf[js.Any])
+    inline def setPopulateOnlyOnce(value: String): Self = StObject.set(x, "PopulateOnlyOnce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopulateQueryCommand(value: String): Self = StObject.set(x, "PopulateQueryCommand", value.asInstanceOf[js.Any])
+    inline def setPopulateQueryCommand(value: String): Self = StObject.set(x, "PopulateQueryCommand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateAlias(value: String): Self = StObject.set(x, "TemplateAlias", value.asInstanceOf[js.Any])
+    inline def setTemplateAlias(value: String): Self = StObject.set(x, "TemplateAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolTipDescription(value: String): Self = StObject.set(x, "ToolTipDescription", value.asInstanceOf[js.Any])
+    inline def setToolTipDescription(value: String): Self = StObject.set(x, "ToolTipDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolTipHelpKeyWord(value: String): Self = StObject.set(x, "ToolTipHelpKeyWord", value.asInstanceOf[js.Any])
+    inline def setToolTipHelpKeyWord(value: String): Self = StObject.set(x, "ToolTipHelpKeyWord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolTipImage32by32(value: String): Self = StObject.set(x, "ToolTipImage32by32", value.asInstanceOf[js.Any])
+    inline def setToolTipImage32by32(value: String): Self = StObject.set(x, "ToolTipImage32by32", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolTipImage32by32Class(value: String): Self = StObject.set(x, "ToolTipImage32by32Class", value.asInstanceOf[js.Any])
+    inline def setToolTipImage32by32Class(value: String): Self = StObject.set(x, "ToolTipImage32by32Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolTipImage32by32Left(value: Double): Self = StObject.set(x, "ToolTipImage32by32Left", value.asInstanceOf[js.Any])
+    inline def setToolTipImage32by32Left(value: Double): Self = StObject.set(x, "ToolTipImage32by32Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolTipImage32by32Top(value: Double): Self = StObject.set(x, "ToolTipImage32by32Top", value.asInstanceOf[js.Any])
+    inline def setToolTipImage32by32Top(value: Double): Self = StObject.set(x, "ToolTipImage32by32Top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolTipSelectedItemTitle(value: String): Self = StObject.set(x, "ToolTipSelectedItemTitle", value.asInstanceOf[js.Any])
+    inline def setToolTipSelectedItemTitle(value: String): Self = StObject.set(x, "ToolTipSelectedItemTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolTipShortcutKey(value: String): Self = StObject.set(x, "ToolTipShortcutKey", value.asInstanceOf[js.Any])
+    inline def setToolTipShortcutKey(value: String): Self = StObject.set(x, "ToolTipShortcutKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolTipTitle(value: String): Self = StObject.set(x, "ToolTipTitle", value.asInstanceOf[js.Any])
+    inline def setToolTipTitle(value: String): Self = StObject.set(x, "ToolTipTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

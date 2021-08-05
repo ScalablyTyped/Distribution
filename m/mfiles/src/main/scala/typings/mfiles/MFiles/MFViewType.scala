@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFViewType extends StObject
 object MFViewType {
   
-  @scala.inline
-  def FilterOnly: `1` = 1.asInstanceOf[`1`]
+  inline def FilterOnly: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Normal: `0` = 0.asInstanceOf[`0`]
+  inline def Normal: `0` = 0.asInstanceOf[`0`]
 }

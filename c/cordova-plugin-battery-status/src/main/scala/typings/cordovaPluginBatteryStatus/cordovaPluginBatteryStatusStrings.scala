@@ -10,20 +10,17 @@ object cordovaPluginBatteryStatusStrings {
   sealed trait batterycritical
     extends StObject
        with batteryEvent
-  @scala.inline
-  def batterycritical: batterycritical = "batterycritical".asInstanceOf[batterycritical]
+  inline def batterycritical: batterycritical = "batterycritical".asInstanceOf[batterycritical]
   
   @js.native
   sealed trait batterylow
     extends StObject
        with batteryEvent
-  @scala.inline
-  def batterylow: batterylow = "batterylow".asInstanceOf[batterylow]
+  inline def batterylow: batterylow = "batterylow".asInstanceOf[batterylow]
   
   @js.native
   sealed trait batterystatus
     extends StObject
        with batteryEvent
-  @scala.inline
-  def batterystatus: batterystatus = "batterystatus".asInstanceOf[batterystatus]
+  inline def batterystatus: batterystatus = "batterystatus".asInstanceOf[batterystatus]
 }

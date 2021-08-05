@@ -17,13 +17,10 @@ object PathCapType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def BUTT: `0` = 0.asInstanceOf[`0`]
+    inline def BUTT: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def ROUND: `1` = 1.asInstanceOf[`1`]
+    inline def ROUND: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def SQUARE: `2` = 2.asInstanceOf[`2`]
+    inline def SQUARE: `2` = 2.asInstanceOf[`2`]
   }
 }

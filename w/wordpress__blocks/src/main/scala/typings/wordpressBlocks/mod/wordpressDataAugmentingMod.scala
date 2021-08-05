@@ -14,9 +14,7 @@ object wordpressDataAugmentingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dispatch_coreblocks(key: coreSlashblocks): TypeofimportedActions = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedActions]
+  inline def dispatch_coreblocks(key: coreSlashblocks): TypeofimportedActions = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedActions]
   
-  @scala.inline
-  def select_coreblocks(key: coreSlashblocks): TypeofimportedSelectors = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedSelectors]
+  inline def select_coreblocks(key: coreSlashblocks): TypeofimportedSelectors = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedSelectors]
 }

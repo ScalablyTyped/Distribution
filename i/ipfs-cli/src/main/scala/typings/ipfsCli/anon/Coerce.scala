@@ -14,23 +14,18 @@ trait Coerce extends StObject {
 }
 object Coerce {
   
-  @scala.inline
-  def apply(coerce: js.Any => js.Any, describe: String, `type`: String): Coerce = {
+  inline def apply(coerce: js.Any => js.Any, describe: String, `type`: String): Coerce = {
     val __obj = js.Dynamic.literal(coerce = js.Any.fromFunction1(coerce), describe = describe.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Coerce]
   }
   
-  @scala.inline
-  implicit class CoerceMutableBuilder[Self <: Coerce] (val x: Self) extends AnyVal {
+  extension [Self <: Coerce](x: Self) {
     
-    @scala.inline
-    def setCoerce(value: js.Any => js.Any): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
+    inline def setCoerce(value: js.Any => js.Any): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+    inline def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

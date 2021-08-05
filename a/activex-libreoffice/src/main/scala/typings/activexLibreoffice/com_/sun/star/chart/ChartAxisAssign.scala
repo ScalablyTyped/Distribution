@@ -15,10 +15,8 @@ object ChartAxisAssign {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def PRIMARY_Y: `2` = 2.asInstanceOf[`2`]
+    inline def PRIMARY_Y: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def SECONDARY_Y: `4` = 4.asInstanceOf[`4`]
+    inline def SECONDARY_Y: `4` = 4.asInstanceOf[`4`]
   }
 }

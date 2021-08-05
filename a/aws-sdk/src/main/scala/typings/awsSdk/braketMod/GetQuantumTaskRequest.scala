@@ -13,16 +13,13 @@ trait GetQuantumTaskRequest extends StObject {
 }
 object GetQuantumTaskRequest {
   
-  @scala.inline
-  def apply(quantumTaskArn: QuantumTaskArn): GetQuantumTaskRequest = {
+  inline def apply(quantumTaskArn: QuantumTaskArn): GetQuantumTaskRequest = {
     val __obj = js.Dynamic.literal(quantumTaskArn = quantumTaskArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetQuantumTaskRequest]
   }
   
-  @scala.inline
-  implicit class GetQuantumTaskRequestMutableBuilder[Self <: GetQuantumTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetQuantumTaskRequest](x: Self) {
     
-    @scala.inline
-    def setQuantumTaskArn(value: QuantumTaskArn): Self = StObject.set(x, "quantumTaskArn", value.asInstanceOf[js.Any])
+    inline def setQuantumTaskArn(value: QuantumTaskArn): Self = StObject.set(x, "quantumTaskArn", value.asInstanceOf[js.Any])
   }
 }

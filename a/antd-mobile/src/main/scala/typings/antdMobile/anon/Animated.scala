@@ -28,8 +28,7 @@ trait Animated extends StObject {
 }
 object Animated {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animated: Boolean,
     animationType: String,
     closable: Boolean,
@@ -45,40 +44,28 @@ object Animated {
     __obj.asInstanceOf[Animated]
   }
   
-  @scala.inline
-  implicit class AnimatedMutableBuilder[Self <: Animated] (val x: Self) extends AnyVal {
+  extension [Self <: Animated](x: Self) {
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationType(value: String): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
+    inline def setAnimationType(value: String): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
+    inline def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooter(value: js.Array[scala.Nothing]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: js.Array[scala.Nothing]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterVarargs(value: scala.Nothing*): Self = StObject.set(x, "footer", js.Array(value :_*))
+    inline def setFooterVarargs(value: scala.Nothing*): Self = StObject.set(x, "footer", js.Array(value :_*))
     
-    @scala.inline
-    def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+    inline def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOperation(value: Boolean): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: Boolean): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopup(value: Boolean): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    inline def setPopup(value: Boolean): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
   }
 }

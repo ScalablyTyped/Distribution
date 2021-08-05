@@ -13,16 +13,13 @@ trait CreateAttributes extends StObject {
 }
 object CreateAttributes {
   
-  @scala.inline
-  def apply(attributes: js.Any): CreateAttributes = {
+  inline def apply(attributes: js.Any): CreateAttributes = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAttributes]
   }
   
-  @scala.inline
-  implicit class CreateAttributesMutableBuilder[Self <: CreateAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAttributes](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
   }
 }

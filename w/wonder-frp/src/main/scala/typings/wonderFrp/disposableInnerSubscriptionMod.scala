@@ -18,9 +18,9 @@ object disposableInnerSubscriptionMod {
     def this(subject: GeneratorSubject, observer: Observer) = this()
     def this(subject: Subject, observer: Observer) = this()
     
-    var _observer: js.Any = js.native
+    /* private */ var _observer: js.Any = js.native
     
-    var _subject: js.Any = js.native
+    /* private */ var _subject: js.Any = js.native
     
     /* CompleteClass */
     override def dispose(): Unit = js.native
@@ -32,9 +32,7 @@ object disposableInnerSubscriptionMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(subject: GeneratorSubject, observer: Observer): InnerSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(subject.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[InnerSubscription]
-    @scala.inline
-    def create(subject: Subject, observer: Observer): InnerSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(subject.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[InnerSubscription]
+    inline def create(subject: GeneratorSubject, observer: Observer): InnerSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(subject.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[InnerSubscription]
+    inline def create(subject: Subject, observer: Observer): InnerSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(subject.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[InnerSubscription]
   }
 }

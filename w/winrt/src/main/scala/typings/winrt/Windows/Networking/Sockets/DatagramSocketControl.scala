@@ -9,8 +9,7 @@ trait DatagramSocketControl
      with IDatagramSocketControl
 object DatagramSocketControl {
   
-  @scala.inline
-  def apply(outboundUnicastHopLimit: Double, qualityOfService: SocketQualityOfService): DatagramSocketControl = {
+  inline def apply(outboundUnicastHopLimit: Double, qualityOfService: SocketQualityOfService): DatagramSocketControl = {
     val __obj = js.Dynamic.literal(outboundUnicastHopLimit = outboundUnicastHopLimit.asInstanceOf[js.Any], qualityOfService = qualityOfService.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatagramSocketControl]
   }

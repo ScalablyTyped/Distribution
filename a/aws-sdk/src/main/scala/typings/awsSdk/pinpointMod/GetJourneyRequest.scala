@@ -18,19 +18,15 @@ trait GetJourneyRequest extends StObject {
 }
 object GetJourneyRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, JourneyId: string): GetJourneyRequest = {
+  inline def apply(ApplicationId: string, JourneyId: string): GetJourneyRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], JourneyId = JourneyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJourneyRequest]
   }
   
-  @scala.inline
-  implicit class GetJourneyRequestMutableBuilder[Self <: GetJourneyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetJourneyRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJourneyId(value: string): Self = StObject.set(x, "JourneyId", value.asInstanceOf[js.Any])
+    inline def setJourneyId(value: string): Self = StObject.set(x, "JourneyId", value.asInstanceOf[js.Any])
   }
 }

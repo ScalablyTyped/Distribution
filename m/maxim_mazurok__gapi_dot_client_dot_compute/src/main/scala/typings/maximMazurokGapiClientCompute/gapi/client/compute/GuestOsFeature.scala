@@ -11,19 +11,15 @@ trait GuestOsFeature extends StObject {
 }
 object GuestOsFeature {
   
-  @scala.inline
-  def apply(): GuestOsFeature = {
+  inline def apply(): GuestOsFeature = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GuestOsFeature]
   }
   
-  @scala.inline
-  implicit class GuestOsFeatureMutableBuilder[Self <: GuestOsFeature] (val x: Self) extends AnyVal {
+  extension [Self <: GuestOsFeature](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

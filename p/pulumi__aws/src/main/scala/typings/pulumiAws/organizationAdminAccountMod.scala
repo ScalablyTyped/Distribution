@@ -45,21 +45,16 @@ object organizationAdminAccountMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): OrganizationAdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[OrganizationAdminAccount]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): OrganizationAdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationAdminAccount]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: OrganizationAdminAccountState): OrganizationAdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[OrganizationAdminAccount]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: OrganizationAdminAccountState, opts: CustomResourceOptions): OrganizationAdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationAdminAccount]
+    inline def get(name: String, id: Input[ID]): OrganizationAdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[OrganizationAdminAccount]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): OrganizationAdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationAdminAccount]
+    inline def get(name: String, id: Input[ID], state: OrganizationAdminAccountState): OrganizationAdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[OrganizationAdminAccount]
+    inline def get(name: String, id: Input[ID], state: OrganizationAdminAccountState, opts: CustomResourceOptions): OrganizationAdminAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationAdminAccount]
     
     /**
       * Returns true if the given object is an instance of OrganizationAdminAccount.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/organizationAdminAccount.OrganizationAdminAccount */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/organizationAdminAccount.OrganizationAdminAccount */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/organizationAdminAccount.OrganizationAdminAccount */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/organizationAdminAccount.OrganizationAdminAccount */ Boolean]
   }
   
   trait OrganizationAdminAccountArgs extends StObject {
@@ -71,17 +66,14 @@ object organizationAdminAccountMod {
   }
   object OrganizationAdminAccountArgs {
     
-    @scala.inline
-    def apply(adminAccountId: Input[String]): OrganizationAdminAccountArgs = {
+    inline def apply(adminAccountId: Input[String]): OrganizationAdminAccountArgs = {
       val __obj = js.Dynamic.literal(adminAccountId = adminAccountId.asInstanceOf[js.Any])
       __obj.asInstanceOf[OrganizationAdminAccountArgs]
     }
     
-    @scala.inline
-    implicit class OrganizationAdminAccountArgsMutableBuilder[Self <: OrganizationAdminAccountArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationAdminAccountArgs](x: Self) {
       
-      @scala.inline
-      def setAdminAccountId(value: Input[String]): Self = StObject.set(x, "adminAccountId", value.asInstanceOf[js.Any])
+      inline def setAdminAccountId(value: Input[String]): Self = StObject.set(x, "adminAccountId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,20 +86,16 @@ object organizationAdminAccountMod {
   }
   object OrganizationAdminAccountState {
     
-    @scala.inline
-    def apply(): OrganizationAdminAccountState = {
+    inline def apply(): OrganizationAdminAccountState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OrganizationAdminAccountState]
     }
     
-    @scala.inline
-    implicit class OrganizationAdminAccountStateMutableBuilder[Self <: OrganizationAdminAccountState] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationAdminAccountState](x: Self) {
       
-      @scala.inline
-      def setAdminAccountId(value: Input[String]): Self = StObject.set(x, "adminAccountId", value.asInstanceOf[js.Any])
+      inline def setAdminAccountId(value: Input[String]): Self = StObject.set(x, "adminAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdminAccountIdUndefined: Self = StObject.set(x, "adminAccountId", js.undefined)
+      inline def setAdminAccountIdUndefined: Self = StObject.set(x, "adminAccountId", js.undefined)
     }
   }
 }

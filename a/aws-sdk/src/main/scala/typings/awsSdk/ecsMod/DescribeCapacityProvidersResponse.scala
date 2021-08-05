@@ -23,37 +23,27 @@ trait DescribeCapacityProvidersResponse extends StObject {
 }
 object DescribeCapacityProvidersResponse {
   
-  @scala.inline
-  def apply(): DescribeCapacityProvidersResponse = {
+  inline def apply(): DescribeCapacityProvidersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCapacityProvidersResponse]
   }
   
-  @scala.inline
-  implicit class DescribeCapacityProvidersResponseMutableBuilder[Self <: DescribeCapacityProvidersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCapacityProvidersResponse](x: Self) {
     
-    @scala.inline
-    def setCapacityProviders(value: CapacityProviders): Self = StObject.set(x, "capacityProviders", value.asInstanceOf[js.Any])
+    inline def setCapacityProviders(value: CapacityProviders): Self = StObject.set(x, "capacityProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityProvidersUndefined: Self = StObject.set(x, "capacityProviders", js.undefined)
+    inline def setCapacityProvidersUndefined: Self = StObject.set(x, "capacityProviders", js.undefined)
     
-    @scala.inline
-    def setCapacityProvidersVarargs(value: CapacityProvider*): Self = StObject.set(x, "capacityProviders", js.Array(value :_*))
+    inline def setCapacityProvidersVarargs(value: CapacityProvider*): Self = StObject.set(x, "capacityProviders", js.Array(value :_*))
     
-    @scala.inline
-    def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
+    inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    @scala.inline
-    def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

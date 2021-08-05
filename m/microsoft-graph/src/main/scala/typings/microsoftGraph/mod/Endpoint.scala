@@ -31,52 +31,37 @@ trait Endpoint
 }
 object Endpoint {
   
-  @scala.inline
-  def apply(): Endpoint = {
+  inline def apply(): Endpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Endpoint]
   }
   
-  @scala.inline
-  implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
+  extension [Self <: Endpoint](x: Self) {
     
-    @scala.inline
-    def setCapability(value: String): Self = StObject.set(x, "capability", value.asInstanceOf[js.Any])
+    inline def setCapability(value: String): Self = StObject.set(x, "capability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilityUndefined: Self = StObject.set(x, "capability", js.undefined)
+    inline def setCapabilityUndefined: Self = StObject.set(x, "capability", js.undefined)
     
-    @scala.inline
-    def setProviderId(value: NullableOption[String]): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: NullableOption[String]): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderIdNull: Self = StObject.set(x, "providerId", null)
+    inline def setProviderIdNull: Self = StObject.set(x, "providerId", null)
     
-    @scala.inline
-    def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
+    inline def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
     
-    @scala.inline
-    def setProviderName(value: NullableOption[String]): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
+    inline def setProviderName(value: NullableOption[String]): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderNameNull: Self = StObject.set(x, "providerName", null)
+    inline def setProviderNameNull: Self = StObject.set(x, "providerName", null)
     
-    @scala.inline
-    def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
+    inline def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
     
-    @scala.inline
-    def setProviderResourceId(value: NullableOption[String]): Self = StObject.set(x, "providerResourceId", value.asInstanceOf[js.Any])
+    inline def setProviderResourceId(value: NullableOption[String]): Self = StObject.set(x, "providerResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderResourceIdNull: Self = StObject.set(x, "providerResourceId", null)
+    inline def setProviderResourceIdNull: Self = StObject.set(x, "providerResourceId", null)
     
-    @scala.inline
-    def setProviderResourceIdUndefined: Self = StObject.set(x, "providerResourceId", js.undefined)
+    inline def setProviderResourceIdUndefined: Self = StObject.set(x, "providerResourceId", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

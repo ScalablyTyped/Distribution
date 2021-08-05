@@ -93,70 +93,49 @@ trait TEX2jaxPreprocessor extends StObject {
 }
 object TEX2jaxPreprocessor {
   
-  @scala.inline
-  def apply(): TEX2jaxPreprocessor = {
+  inline def apply(): TEX2jaxPreprocessor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TEX2jaxPreprocessor]
   }
   
-  @scala.inline
-  implicit class TEX2jaxPreprocessorMutableBuilder[Self <: TEX2jaxPreprocessor] (val x: Self) extends AnyVal {
+  extension [Self <: TEX2jaxPreprocessor](x: Self) {
     
-    @scala.inline
-    def setBalanceBraces(value: Boolean): Self = StObject.set(x, "balanceBraces", value.asInstanceOf[js.Any])
+    inline def setBalanceBraces(value: Boolean): Self = StObject.set(x, "balanceBraces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBalanceBracesUndefined: Self = StObject.set(x, "balanceBraces", js.undefined)
+    inline def setBalanceBracesUndefined: Self = StObject.set(x, "balanceBraces", js.undefined)
     
-    @scala.inline
-    def setDisplayMath(value: js.Any): Self = StObject.set(x, "displayMath", value.asInstanceOf[js.Any])
+    inline def setDisplayMath(value: js.Any): Self = StObject.set(x, "displayMath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayMathUndefined: Self = StObject.set(x, "displayMath", js.undefined)
+    inline def setDisplayMathUndefined: Self = StObject.set(x, "displayMath", js.undefined)
     
-    @scala.inline
-    def setIgnoreClass(value: String): Self = StObject.set(x, "ignoreClass", value.asInstanceOf[js.Any])
+    inline def setIgnoreClass(value: String): Self = StObject.set(x, "ignoreClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreClassUndefined: Self = StObject.set(x, "ignoreClass", js.undefined)
+    inline def setIgnoreClassUndefined: Self = StObject.set(x, "ignoreClass", js.undefined)
     
-    @scala.inline
-    def setInlineMath(value: js.Any): Self = StObject.set(x, "inlineMath", value.asInstanceOf[js.Any])
+    inline def setInlineMath(value: js.Any): Self = StObject.set(x, "inlineMath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineMathUndefined: Self = StObject.set(x, "inlineMath", js.undefined)
+    inline def setInlineMathUndefined: Self = StObject.set(x, "inlineMath", js.undefined)
     
-    @scala.inline
-    def setPreview(value: js.Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: js.Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+    inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
-    @scala.inline
-    def setProcessClass(value: String): Self = StObject.set(x, "processClass", value.asInstanceOf[js.Any])
+    inline def setProcessClass(value: String): Self = StObject.set(x, "processClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessClassUndefined: Self = StObject.set(x, "processClass", js.undefined)
+    inline def setProcessClassUndefined: Self = StObject.set(x, "processClass", js.undefined)
     
-    @scala.inline
-    def setProcessEnvironments(value: Boolean): Self = StObject.set(x, "processEnvironments", value.asInstanceOf[js.Any])
+    inline def setProcessEnvironments(value: Boolean): Self = StObject.set(x, "processEnvironments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessEnvironmentsUndefined: Self = StObject.set(x, "processEnvironments", js.undefined)
+    inline def setProcessEnvironmentsUndefined: Self = StObject.set(x, "processEnvironments", js.undefined)
     
-    @scala.inline
-    def setProcessEscapes(value: Boolean): Self = StObject.set(x, "processEscapes", value.asInstanceOf[js.Any])
+    inline def setProcessEscapes(value: Boolean): Self = StObject.set(x, "processEscapes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessEscapesUndefined: Self = StObject.set(x, "processEscapes", js.undefined)
+    inline def setProcessEscapesUndefined: Self = StObject.set(x, "processEscapes", js.undefined)
     
-    @scala.inline
-    def setSkipTags(value: js.Array[String]): Self = StObject.set(x, "skipTags", value.asInstanceOf[js.Any])
+    inline def setSkipTags(value: js.Array[String]): Self = StObject.set(x, "skipTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipTagsUndefined: Self = StObject.set(x, "skipTags", js.undefined)
+    inline def setSkipTagsUndefined: Self = StObject.set(x, "skipTags", js.undefined)
     
-    @scala.inline
-    def setSkipTagsVarargs(value: String*): Self = StObject.set(x, "skipTags", js.Array(value :_*))
+    inline def setSkipTagsVarargs(value: String*): Self = StObject.set(x, "skipTags", js.Array(value :_*))
   }
 }

@@ -14,37 +14,27 @@ trait TopicalExploreFeedResponseLayoutContent extends StObject {
 }
 object TopicalExploreFeedResponseLayoutContent {
   
-  @scala.inline
-  def apply(): TopicalExploreFeedResponseLayoutContent = {
+  inline def apply(): TopicalExploreFeedResponseLayoutContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopicalExploreFeedResponseLayoutContent]
   }
   
-  @scala.inline
-  implicit class TopicalExploreFeedResponseLayoutContentMutableBuilder[Self <: TopicalExploreFeedResponseLayoutContent] (val x: Self) extends AnyVal {
+  extension [Self <: TopicalExploreFeedResponseLayoutContent](x: Self) {
     
-    @scala.inline
-    def setFill_items(value: js.Array[TopicalExploreFeedResponseFillItemsItem]): Self = StObject.set(x, "fill_items", value.asInstanceOf[js.Any])
+    inline def setFill_items(value: js.Array[TopicalExploreFeedResponseFillItemsItem]): Self = StObject.set(x, "fill_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill_itemsUndefined: Self = StObject.set(x, "fill_items", js.undefined)
+    inline def setFill_itemsUndefined: Self = StObject.set(x, "fill_items", js.undefined)
     
-    @scala.inline
-    def setFill_itemsVarargs(value: TopicalExploreFeedResponseFillItemsItem*): Self = StObject.set(x, "fill_items", js.Array(value :_*))
+    inline def setFill_itemsVarargs(value: TopicalExploreFeedResponseFillItemsItem*): Self = StObject.set(x, "fill_items", js.Array(value :_*))
     
-    @scala.inline
-    def setMedias(value: js.Array[TopicalExploreFeedResponseMediasItem]): Self = StObject.set(x, "medias", value.asInstanceOf[js.Any])
+    inline def setMedias(value: js.Array[TopicalExploreFeedResponseMediasItem]): Self = StObject.set(x, "medias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediasUndefined: Self = StObject.set(x, "medias", js.undefined)
+    inline def setMediasUndefined: Self = StObject.set(x, "medias", js.undefined)
     
-    @scala.inline
-    def setMediasVarargs(value: TopicalExploreFeedResponseMediasItem*): Self = StObject.set(x, "medias", js.Array(value :_*))
+    inline def setMediasVarargs(value: TopicalExploreFeedResponseMediasItem*): Self = StObject.set(x, "medias", js.Array(value :_*))
     
-    @scala.inline
-    def setTwo_by_two_item(value: TopicalExploreFeedResponseTwoByTwoItem): Self = StObject.set(x, "two_by_two_item", value.asInstanceOf[js.Any])
+    inline def setTwo_by_two_item(value: TopicalExploreFeedResponseTwoByTwoItem): Self = StObject.set(x, "two_by_two_item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwo_by_two_itemUndefined: Self = StObject.set(x, "two_by_two_item", js.undefined)
+    inline def setTwo_by_two_itemUndefined: Self = StObject.set(x, "two_by_two_item", js.undefined)
   }
 }

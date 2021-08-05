@@ -10,16 +10,13 @@ trait ResourceOperation extends StObject {
 }
 object ResourceOperation {
   
-  @scala.inline
-  def apply(kind: String): ResourceOperation = {
+  inline def apply(kind: String): ResourceOperation = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceOperation]
   }
   
-  @scala.inline
-  implicit class ResourceOperationMutableBuilder[Self <: ResourceOperation] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceOperation](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

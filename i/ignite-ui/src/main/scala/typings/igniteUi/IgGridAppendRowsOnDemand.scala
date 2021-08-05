@@ -90,85 +90,59 @@ trait IgGridAppendRowsOnDemand
 }
 object IgGridAppendRowsOnDemand {
   
-  @scala.inline
-  def apply(): IgGridAppendRowsOnDemand = {
+  inline def apply(): IgGridAppendRowsOnDemand = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridAppendRowsOnDemand]
   }
   
-  @scala.inline
-  implicit class IgGridAppendRowsOnDemandMutableBuilder[Self <: IgGridAppendRowsOnDemand] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridAppendRowsOnDemand](x: Self) {
     
-    @scala.inline
-    def setChunkIndexUrlKey(value: String): Self = StObject.set(x, "chunkIndexUrlKey", value.asInstanceOf[js.Any])
+    inline def setChunkIndexUrlKey(value: String): Self = StObject.set(x, "chunkIndexUrlKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkIndexUrlKeyUndefined: Self = StObject.set(x, "chunkIndexUrlKey", js.undefined)
+    inline def setChunkIndexUrlKeyUndefined: Self = StObject.set(x, "chunkIndexUrlKey", js.undefined)
     
-    @scala.inline
-    def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+    inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+    inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     
-    @scala.inline
-    def setChunkSizeUrlKey(value: String): Self = StObject.set(x, "chunkSizeUrlKey", value.asInstanceOf[js.Any])
+    inline def setChunkSizeUrlKey(value: String): Self = StObject.set(x, "chunkSizeUrlKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkSizeUrlKeyUndefined: Self = StObject.set(x, "chunkSizeUrlKey", js.undefined)
+    inline def setChunkSizeUrlKeyUndefined: Self = StObject.set(x, "chunkSizeUrlKey", js.undefined)
     
-    @scala.inline
-    def setCurrentChunkIndex(value: Double): Self = StObject.set(x, "currentChunkIndex", value.asInstanceOf[js.Any])
+    inline def setCurrentChunkIndex(value: Double): Self = StObject.set(x, "currentChunkIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentChunkIndexUndefined: Self = StObject.set(x, "currentChunkIndex", js.undefined)
+    inline def setCurrentChunkIndexUndefined: Self = StObject.set(x, "currentChunkIndex", js.undefined)
     
-    @scala.inline
-    def setDefaultChunkIndex(value: Double): Self = StObject.set(x, "defaultChunkIndex", value.asInstanceOf[js.Any])
+    inline def setDefaultChunkIndex(value: Double): Self = StObject.set(x, "defaultChunkIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultChunkIndexUndefined: Self = StObject.set(x, "defaultChunkIndex", js.undefined)
+    inline def setDefaultChunkIndexUndefined: Self = StObject.set(x, "defaultChunkIndex", js.undefined)
     
-    @scala.inline
-    def setLoadMoreDataButtonText(value: String): Self = StObject.set(x, "loadMoreDataButtonText", value.asInstanceOf[js.Any])
+    inline def setLoadMoreDataButtonText(value: String): Self = StObject.set(x, "loadMoreDataButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadMoreDataButtonTextUndefined: Self = StObject.set(x, "loadMoreDataButtonText", js.undefined)
+    inline def setLoadMoreDataButtonTextUndefined: Self = StObject.set(x, "loadMoreDataButtonText", js.undefined)
     
-    @scala.inline
-    def setLoadTrigger(value: String): Self = StObject.set(x, "loadTrigger", value.asInstanceOf[js.Any])
+    inline def setLoadTrigger(value: String): Self = StObject.set(x, "loadTrigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadTriggerUndefined: Self = StObject.set(x, "loadTrigger", js.undefined)
+    inline def setLoadTriggerUndefined: Self = StObject.set(x, "loadTrigger", js.undefined)
     
-    @scala.inline
-    def setLocale(value: IgGridAppendRowsOnDemandLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: IgGridAppendRowsOnDemandLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setRecordCountKey(value: String): Self = StObject.set(x, "recordCountKey", value.asInstanceOf[js.Any])
+    inline def setRecordCountKey(value: String): Self = StObject.set(x, "recordCountKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordCountKeyUndefined: Self = StObject.set(x, "recordCountKey", js.undefined)
+    inline def setRecordCountKeyUndefined: Self = StObject.set(x, "recordCountKey", js.undefined)
     
-    @scala.inline
-    def setRowsRequested(value: (/* event */ Event, /* ui */ RowsRequestedEventUIParam) => Unit): Self = StObject.set(x, "rowsRequested", js.Any.fromFunction2(value))
+    inline def setRowsRequested(value: (/* event */ Event, /* ui */ RowsRequestedEventUIParam) => Unit): Self = StObject.set(x, "rowsRequested", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowsRequestedUndefined: Self = StObject.set(x, "rowsRequested", js.undefined)
+    inline def setRowsRequestedUndefined: Self = StObject.set(x, "rowsRequested", js.undefined)
     
-    @scala.inline
-    def setRowsRequesting(value: (/* event */ Event, /* ui */ RowsRequestingEventUIParam) => Unit): Self = StObject.set(x, "rowsRequesting", js.Any.fromFunction2(value))
+    inline def setRowsRequesting(value: (/* event */ Event, /* ui */ RowsRequestingEventUIParam) => Unit): Self = StObject.set(x, "rowsRequesting", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowsRequestingUndefined: Self = StObject.set(x, "rowsRequesting", js.undefined)
+    inline def setRowsRequestingUndefined: Self = StObject.set(x, "rowsRequesting", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

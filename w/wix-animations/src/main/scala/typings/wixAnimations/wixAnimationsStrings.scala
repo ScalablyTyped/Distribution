@@ -14,94 +14,82 @@ object wixAnimationsStrings {
     extends StObject
        with Sequence
        with typings.wixAnimations.srcMod.Sequence
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait bottom
     extends StObject
        with Direction
        with typings.wixAnimations.srcMod.Direction
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait flip
     extends StObject
        with Sequence
        with typings.wixAnimations.srcMod.Sequence
-  @scala.inline
-  def flip: flip = "flip".asInstanceOf[flip]
+  inline def flip: flip = "flip".asInstanceOf[flip]
   
   @js.native
   sealed trait large
     extends StObject
        with Timing
        with typings.wixAnimations.srcMod.Timing
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
+  inline def large: large = "large".asInstanceOf[large]
   
   @js.native
   sealed trait left
     extends StObject
        with Direction
        with typings.wixAnimations.srcMod.Direction
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait medium
     extends StObject
        with Timing
        with typings.wixAnimations.srcMod.Timing
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
+  inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
   sealed trait micro
     extends StObject
        with Timing
        with typings.wixAnimations.srcMod.Timing
-  @scala.inline
-  def micro: micro = "micro".asInstanceOf[micro]
+  inline def micro: micro = "micro".asInstanceOf[micro]
   
   @js.native
   sealed trait reverse
     extends StObject
        with Sequence
        with typings.wixAnimations.srcMod.Sequence
-  @scala.inline
-  def reverse: reverse = "reverse".asInstanceOf[reverse]
+  inline def reverse: reverse = "reverse".asInstanceOf[reverse]
   
   @js.native
   sealed trait `reverse-flip`
     extends StObject
        with Sequence
        with typings.wixAnimations.srcMod.Sequence
-  @scala.inline
-  def `reverse-flip`: `reverse-flip` = "reverse-flip".asInstanceOf[`reverse-flip`]
+  inline def `reverse-flip`: `reverse-flip` = "reverse-flip".asInstanceOf[`reverse-flip`]
   
   @js.native
   sealed trait right
     extends StObject
        with Direction
        with typings.wixAnimations.srcMod.Direction
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait small
     extends StObject
        with Timing
        with typings.wixAnimations.srcMod.Timing
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
+  inline def small: small = "small".asInstanceOf[small]
   
   @js.native
   sealed trait top
     extends StObject
        with Direction
        with typings.wixAnimations.srcMod.Direction
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  inline def top: top = "top".asInstanceOf[top]
 }

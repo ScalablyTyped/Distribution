@@ -16,37 +16,27 @@ trait JsonBodyParserOptions extends StObject {
 }
 object JsonBodyParserOptions {
   
-  @scala.inline
-  def apply(): JsonBodyParserOptions = {
+  inline def apply(): JsonBodyParserOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JsonBodyParserOptions]
   }
   
-  @scala.inline
-  implicit class JsonBodyParserOptionsMutableBuilder[Self <: JsonBodyParserOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JsonBodyParserOptions](x: Self) {
     
-    @scala.inline
-    def setBodyReader(value: Boolean): Self = StObject.set(x, "bodyReader", value.asInstanceOf[js.Any])
+    inline def setBodyReader(value: Boolean): Self = StObject.set(x, "bodyReader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyReaderUndefined: Self = StObject.set(x, "bodyReader", js.undefined)
+    inline def setBodyReaderUndefined: Self = StObject.set(x, "bodyReader", js.undefined)
     
-    @scala.inline
-    def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
+    inline def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapParamsUndefined: Self = StObject.set(x, "mapParams", js.undefined)
+    inline def setMapParamsUndefined: Self = StObject.set(x, "mapParams", js.undefined)
     
-    @scala.inline
-    def setOverrideParams(value: Boolean): Self = StObject.set(x, "overrideParams", value.asInstanceOf[js.Any])
+    inline def setOverrideParams(value: Boolean): Self = StObject.set(x, "overrideParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
+    inline def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
     
-    @scala.inline
-    def setReviver(value: (/* key */ js.Any, /* value */ js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
+    inline def setReviver(value: (/* key */ js.Any, /* value */ js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
+    inline def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
   }
 }

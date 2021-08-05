@@ -57,67 +57,47 @@ trait IonContent extends StObject {
 }
 object IonContent {
   
-  @scala.inline
-  def apply(): IonContent = {
+  inline def apply(): IonContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonContent]
   }
   
-  @scala.inline
-  implicit class IonContentMutableBuilder[Self <: IonContent] (val x: Self) extends AnyVal {
+  extension [Self <: IonContent](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setForceOverscroll(value: Boolean): Self = StObject.set(x, "forceOverscroll", value.asInstanceOf[js.Any])
+    inline def setForceOverscroll(value: Boolean): Self = StObject.set(x, "forceOverscroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceOverscrollUndefined: Self = StObject.set(x, "forceOverscroll", js.undefined)
+    inline def setForceOverscrollUndefined: Self = StObject.set(x, "forceOverscroll", js.undefined)
     
-    @scala.inline
-    def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+    inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
+    inline def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
     
-    @scala.inline
-    def setOnIonScroll(value: /* event */ CustomEvent[ScrollDetail] => Unit): Self = StObject.set(x, "onIonScroll", js.Any.fromFunction1(value))
+    inline def setOnIonScroll(value: /* event */ CustomEvent[ScrollDetail] => Unit): Self = StObject.set(x, "onIonScroll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonScrollEnd(value: /* event */ CustomEvent[ScrollBaseDetail] => Unit): Self = StObject.set(x, "onIonScrollEnd", js.Any.fromFunction1(value))
+    inline def setOnIonScrollEnd(value: /* event */ CustomEvent[ScrollBaseDetail] => Unit): Self = StObject.set(x, "onIonScrollEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonScrollEndUndefined: Self = StObject.set(x, "onIonScrollEnd", js.undefined)
+    inline def setOnIonScrollEndUndefined: Self = StObject.set(x, "onIonScrollEnd", js.undefined)
     
-    @scala.inline
-    def setOnIonScrollStart(value: /* event */ CustomEvent[ScrollBaseDetail] => Unit): Self = StObject.set(x, "onIonScrollStart", js.Any.fromFunction1(value))
+    inline def setOnIonScrollStart(value: /* event */ CustomEvent[ScrollBaseDetail] => Unit): Self = StObject.set(x, "onIonScrollStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonScrollStartUndefined: Self = StObject.set(x, "onIonScrollStart", js.undefined)
+    inline def setOnIonScrollStartUndefined: Self = StObject.set(x, "onIonScrollStart", js.undefined)
     
-    @scala.inline
-    def setOnIonScrollUndefined: Self = StObject.set(x, "onIonScroll", js.undefined)
+    inline def setOnIonScrollUndefined: Self = StObject.set(x, "onIonScroll", js.undefined)
     
-    @scala.inline
-    def setScrollEvents(value: Boolean): Self = StObject.set(x, "scrollEvents", value.asInstanceOf[js.Any])
+    inline def setScrollEvents(value: Boolean): Self = StObject.set(x, "scrollEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollEventsUndefined: Self = StObject.set(x, "scrollEvents", js.undefined)
+    inline def setScrollEventsUndefined: Self = StObject.set(x, "scrollEvents", js.undefined)
     
-    @scala.inline
-    def setScrollX(value: Boolean): Self = StObject.set(x, "scrollX", value.asInstanceOf[js.Any])
+    inline def setScrollX(value: Boolean): Self = StObject.set(x, "scrollX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollXUndefined: Self = StObject.set(x, "scrollX", js.undefined)
+    inline def setScrollXUndefined: Self = StObject.set(x, "scrollX", js.undefined)
     
-    @scala.inline
-    def setScrollY(value: Boolean): Self = StObject.set(x, "scrollY", value.asInstanceOf[js.Any])
+    inline def setScrollY(value: Boolean): Self = StObject.set(x, "scrollY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollYUndefined: Self = StObject.set(x, "scrollY", js.undefined)
+    inline def setScrollYUndefined: Self = StObject.set(x, "scrollY", js.undefined)
   }
 }

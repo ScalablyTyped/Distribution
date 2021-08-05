@@ -16,31 +16,23 @@ trait PolyMouseEvent
 }
 object PolyMouseEvent {
   
-  @scala.inline
-  def apply(latLng: LatLng, stop: () => Unit): PolyMouseEvent = {
+  inline def apply(latLng: LatLng, stop: () => Unit): PolyMouseEvent = {
     val __obj = js.Dynamic.literal(latLng = latLng.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
     __obj.asInstanceOf[PolyMouseEvent]
   }
   
-  @scala.inline
-  implicit class PolyMouseEventMutableBuilder[Self <: PolyMouseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PolyMouseEvent](x: Self) {
     
-    @scala.inline
-    def setEdge(value: Double): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+    inline def setEdge(value: Double): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
+    inline def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
     
-    @scala.inline
-    def setPath(value: Double): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Double): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setVertex(value: Double): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
+    inline def setVertex(value: Double): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexUndefined: Self = StObject.set(x, "vertex", js.undefined)
+    inline def setVertexUndefined: Self = StObject.set(x, "vertex", js.undefined)
   }
 }

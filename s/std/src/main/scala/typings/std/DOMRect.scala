@@ -9,8 +9,7 @@ trait DOMRect
      with DOMRectReadOnly
 object DOMRect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bottom: Double,
     height: Double,
     left: Double,

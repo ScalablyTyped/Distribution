@@ -19,21 +19,21 @@ object transformOperationExecutorMod {
   class TransformOperationExecutor protected () extends StObject {
     def this(transformationType: TransformationType, options: ClassTransformOptions) = this()
     
-    var applyCustomTransformations: js.Any = js.native
+    /* private */ var applyCustomTransformations: js.Any = js.native
     
-    var checkGroups: js.Any = js.native
+    /* private */ var checkGroups: js.Any = js.native
     
-    var checkVersion: js.Any = js.native
+    /* private */ var checkVersion: js.Any = js.native
     
-    var getKeys: js.Any = js.native
+    /* private */ var getKeys: js.Any = js.native
     
-    var getReflectedType: js.Any = js.native
+    /* private */ var getReflectedType: js.Any = js.native
     
-    var isCircular: js.Any = js.native
+    /* private */ var isCircular: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
-    var recursionStack: js.Any = js.native
+    /* private */ var recursionStack: js.Any = js.native
     
     def transform(source: js.Any, value: js.Any, targetType: js.Function, arrayType: js.Function, isMap: Boolean): js.Any = js.native
     def transform(
@@ -294,9 +294,8 @@ object transformOperationExecutorMod {
       level: Double
     ): js.Any = js.native
     
-    var transformationType: js.Any = js.native
+    /* private */ var transformationType: js.Any = js.native
   }
   
-  @scala.inline
-  def testForBuffer(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("testForBuffer")().asInstanceOf[Boolean]
+  inline def testForBuffer(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("testForBuffer")().asInstanceOf[Boolean]
 }

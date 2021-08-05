@@ -33,8 +33,7 @@ trait TagMetadata extends StObject {
 }
 object TagMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataSize: Double,
     end: Double,
     name: String,
@@ -48,28 +47,20 @@ object TagMetadata {
     __obj.asInstanceOf[TagMetadata]
   }
   
-  @scala.inline
-  implicit class TagMetadataMutableBuilder[Self <: TagMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: TagMetadata](x: Self) {
     
-    @scala.inline
-    def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
+    inline def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagStr(value: String): Self = StObject.set(x, "tagStr", value.asInstanceOf[js.Any])
+    inline def setTagStr(value: String): Self = StObject.set(x, "tagStr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TagType | u | i | f | s): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TagType | u | i | f | s): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

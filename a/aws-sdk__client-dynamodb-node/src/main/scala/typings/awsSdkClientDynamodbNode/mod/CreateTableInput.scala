@@ -13,8 +13,7 @@ trait CreateTableInput
      with typings.awsSdkClientDynamodbNode.typesCreateTableInputMod.CreateTableInput
 object CreateTableInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AttributeDefinitions: js.Array[AttributeDefinition] | Iterable[AttributeDefinition],
     KeySchema: js.Array[KeySchemaElement] | Iterable[KeySchemaElement],
     ProvisionedThroughput: ProvisionedThroughput,

@@ -104,7 +104,7 @@ object utilsMod {
       *
       * These options **WILL PERSIST** even when [[resetOptions]] is called.
       */
-    var _defaultOptions: Partial[T] = js.native
+    /* protected */ var _defaultOptions: Partial[T] = js.native
     
     /**
       * Transient options for an instance.
@@ -114,7 +114,7 @@ object utilsMod {
       *
       * These options **WILL NOT PERSIST** upon calling [[resetOptions]].
       */
-    var _options: Partial[T] = js.native
+    /* protected */ var _options: Partial[T] = js.native
     
     /**
       * Returns class options polyfilled with some of
@@ -183,17 +183,13 @@ object utilsMod {
   @js.native
   val createDigestPlaceholder: CreateDigest[HexString] = js.native
   
-  @scala.inline
-  def isTokenValid(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTokenValid")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTokenValid(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTokenValid")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def keyuri(options: KeyURIOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyuri")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def keyuri(options: KeyURIOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyuri")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def objectValues[T](value: T): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectValues")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def objectValues[T](value: T): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectValues")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def padStart(value: String, maxLength: Double, fillString: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padStart")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], fillString.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def padStart(value: String, maxLength: Double, fillString: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padStart")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], fillString.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type CreateDigest[T] = js.Function3[/* algorithm */ HashAlgorithms, /* hmacKey */ HexString, /* counter */ HexString, T]
   
@@ -223,60 +219,43 @@ object utilsMod {
   }
   object KeyURIOptions {
     
-    @scala.inline
-    def apply(accountName: String, secret: SecretKey, `type`: Strategy): KeyURIOptions = {
+    inline def apply(accountName: String, secret: SecretKey, `type`: Strategy): KeyURIOptions = {
       val __obj = js.Dynamic.literal(accountName = accountName.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyURIOptions]
     }
     
-    @scala.inline
-    implicit class KeyURIOptionsMutableBuilder[Self <: KeyURIOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KeyURIOptions](x: Self) {
       
-      @scala.inline
-      def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+      inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithm(value: HashAlgorithms): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: HashAlgorithms): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+      inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
       
-      @scala.inline
-      def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+      inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
+      inline def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
       
-      @scala.inline
-      def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+      inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
+      inline def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
       
-      @scala.inline
-      def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+      inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setSecret(value: SecretKey): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: SecretKey): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setType(value: Strategy): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Strategy): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

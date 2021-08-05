@@ -15,25 +15,19 @@ trait Item extends StObject {
 }
 object Item {
   
-  @scala.inline
-  def apply(event: FocusEvent[HTMLInputElement] | KeyboardEvent[HTMLInputElement]): Item = {
+  inline def apply(event: FocusEvent[HTMLInputElement] | KeyboardEvent[HTMLInputElement]): Item = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
   
-  @scala.inline
-  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+  extension [Self <: Item](x: Self) {
     
-    @scala.inline
-    def setEvent(value: FocusEvent[HTMLInputElement] | KeyboardEvent[HTMLInputElement]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: FocusEvent[HTMLInputElement] | KeyboardEvent[HTMLInputElement]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Label): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Label): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemNull: Self = StObject.set(x, "item", null)
+    inline def setItemNull: Self = StObject.set(x, "item", null)
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

@@ -35,25 +35,19 @@ trait GoToByIdOptions extends StObject {
 }
 object GoToByIdOptions {
   
-  @scala.inline
-  def apply(): GoToByIdOptions = {
+  inline def apply(): GoToByIdOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoToByIdOptions]
   }
   
-  @scala.inline
-  implicit class GoToByIdOptionsMutableBuilder[Self <: GoToByIdOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GoToByIdOptions](x: Self) {
     
-    @scala.inline
-    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
+    inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
-    @scala.inline
-    def setSelectionMode(value: SelectionMode | String): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    inline def setSelectionMode(value: SelectionMode | String): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+    inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
   }
 }

@@ -19,13 +19,12 @@ object d3v3adaptorMod {
     extends Layout
        with ID3StyleLayoutAdaptor {
     
-    /* InferMemberOverrides */
-    /* protected */ override def kick(): Unit = js.native
+    /* protected */ /* InferMemberOverrides */
+    override def kick(): Unit = js.native
     
-    /* InferMemberOverrides */
-    /* protected */ override def trigger(e: Event): Unit = js.native
+    /* protected */ /* InferMemberOverrides */
+    override def trigger(e: Event): Unit = js.native
   }
   
-  @scala.inline
-  def d3adaptor(): D3StyleLayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("d3adaptor")().asInstanceOf[D3StyleLayoutAdaptor]
+  inline def d3adaptor(): D3StyleLayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("d3adaptor")().asInstanceOf[D3StyleLayoutAdaptor]
 }

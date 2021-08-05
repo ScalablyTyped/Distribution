@@ -38,8 +38,7 @@ trait CreateHostedConfigurationVersionRequest extends StObject {
 }
 object CreateHostedConfigurationVersionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplicationId: Id,
     ConfigurationProfileId: Id,
     Content: _Blob,
@@ -49,31 +48,22 @@ object CreateHostedConfigurationVersionRequest {
     __obj.asInstanceOf[CreateHostedConfigurationVersionRequest]
   }
   
-  @scala.inline
-  implicit class CreateHostedConfigurationVersionRequestMutableBuilder[Self <: CreateHostedConfigurationVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateHostedConfigurationVersionRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationProfileId(value: Id): Self = StObject.set(x, "ConfigurationProfileId", value.asInstanceOf[js.Any])
+    inline def setConfigurationProfileId(value: Id): Self = StObject.set(x, "ConfigurationProfileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: _Blob): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: _Blob): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: StringWithLengthBetween1And255): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: StringWithLengthBetween1And255): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setLatestVersionNumber(value: Integer): Self = StObject.set(x, "LatestVersionNumber", value.asInstanceOf[js.Any])
+    inline def setLatestVersionNumber(value: Integer): Self = StObject.set(x, "LatestVersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestVersionNumberUndefined: Self = StObject.set(x, "LatestVersionNumber", js.undefined)
+    inline def setLatestVersionNumberUndefined: Self = StObject.set(x, "LatestVersionNumber", js.undefined)
   }
 }

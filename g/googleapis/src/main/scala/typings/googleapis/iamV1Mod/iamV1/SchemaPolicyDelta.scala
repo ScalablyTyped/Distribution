@@ -16,22 +16,17 @@ trait SchemaPolicyDelta extends StObject {
 }
 object SchemaPolicyDelta {
   
-  @scala.inline
-  def apply(): SchemaPolicyDelta = {
+  inline def apply(): SchemaPolicyDelta = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPolicyDelta]
   }
   
-  @scala.inline
-  implicit class SchemaPolicyDeltaMutableBuilder[Self <: SchemaPolicyDelta] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPolicyDelta](x: Self) {
     
-    @scala.inline
-    def setBindingDeltas(value: js.Array[SchemaBindingDelta]): Self = StObject.set(x, "bindingDeltas", value.asInstanceOf[js.Any])
+    inline def setBindingDeltas(value: js.Array[SchemaBindingDelta]): Self = StObject.set(x, "bindingDeltas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingDeltasUndefined: Self = StObject.set(x, "bindingDeltas", js.undefined)
+    inline def setBindingDeltasUndefined: Self = StObject.set(x, "bindingDeltas", js.undefined)
     
-    @scala.inline
-    def setBindingDeltasVarargs(value: SchemaBindingDelta*): Self = StObject.set(x, "bindingDeltas", js.Array(value :_*))
+    inline def setBindingDeltasVarargs(value: SchemaBindingDelta*): Self = StObject.set(x, "bindingDeltas", js.Array(value :_*))
   }
 }

@@ -11,10 +11,8 @@ object getRuleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRule(args: GetRuleArgs): js.Promise[GetRuleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRule")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRuleResult]]
-  @scala.inline
-  def getRule(args: GetRuleArgs, opts: InvokeOptions): js.Promise[GetRuleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRule")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRuleResult]]
+  inline def getRule(args: GetRuleArgs): js.Promise[GetRuleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRule")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRuleResult]]
+  inline def getRule(args: GetRuleArgs, opts: InvokeOptions): js.Promise[GetRuleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRule")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRuleResult]]
   
   trait GetRuleArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getRuleMod {
   }
   object GetRuleArgs {
     
-    @scala.inline
-    def apply(name: String): GetRuleArgs = {
+    inline def apply(name: String): GetRuleArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRuleArgs]
     }
     
-    @scala.inline
-    implicit class GetRuleArgsMutableBuilder[Self <: GetRuleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetRuleArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,20 +45,16 @@ object getRuleMod {
   }
   object GetRuleResult {
     
-    @scala.inline
-    def apply(id: String, name: String): GetRuleResult = {
+    inline def apply(id: String, name: String): GetRuleResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRuleResult]
     }
     
-    @scala.inline
-    implicit class GetRuleResultMutableBuilder[Self <: GetRuleResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetRuleResult](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

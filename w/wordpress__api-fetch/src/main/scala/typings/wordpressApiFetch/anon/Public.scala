@@ -20,8 +20,7 @@ trait Public extends StObject {
 }
 object Public {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     public: Boolean,
     publicly_queryable: Boolean,
     show_admin_column: Boolean,
@@ -33,25 +32,18 @@ object Public {
     __obj.asInstanceOf[Public]
   }
   
-  @scala.inline
-  implicit class PublicMutableBuilder[Self <: Public] (val x: Self) extends AnyVal {
+  extension [Self <: Public](x: Self) {
     
-    @scala.inline
-    def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+    inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicly_queryable(value: Boolean): Self = StObject.set(x, "publicly_queryable", value.asInstanceOf[js.Any])
+    inline def setPublicly_queryable(value: Boolean): Self = StObject.set(x, "publicly_queryable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_admin_column(value: Boolean): Self = StObject.set(x, "show_admin_column", value.asInstanceOf[js.Any])
+    inline def setShow_admin_column(value: Boolean): Self = StObject.set(x, "show_admin_column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_in_nav_menus(value: Boolean): Self = StObject.set(x, "show_in_nav_menus", value.asInstanceOf[js.Any])
+    inline def setShow_in_nav_menus(value: Boolean): Self = StObject.set(x, "show_in_nav_menus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_in_quick_edit(value: Boolean): Self = StObject.set(x, "show_in_quick_edit", value.asInstanceOf[js.Any])
+    inline def setShow_in_quick_edit(value: Boolean): Self = StObject.set(x, "show_in_quick_edit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_ui(value: Boolean): Self = StObject.set(x, "show_ui", value.asInstanceOf[js.Any])
+    inline def setShow_ui(value: Boolean): Self = StObject.set(x, "show_ui", value.asInstanceOf[js.Any])
   }
 }

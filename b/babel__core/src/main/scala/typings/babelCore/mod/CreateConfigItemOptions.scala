@@ -14,25 +14,19 @@ trait CreateConfigItemOptions extends StObject {
 }
 object CreateConfigItemOptions {
   
-  @scala.inline
-  def apply(): CreateConfigItemOptions = {
+  inline def apply(): CreateConfigItemOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateConfigItemOptions]
   }
   
-  @scala.inline
-  implicit class CreateConfigItemOptionsMutableBuilder[Self <: CreateConfigItemOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateConfigItemOptions](x: Self) {
     
-    @scala.inline
-    def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
+    inline def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirnameUndefined: Self = StObject.set(x, "dirname", js.undefined)
+    inline def setDirnameUndefined: Self = StObject.set(x, "dirname", js.undefined)
     
-    @scala.inline
-    def setType(value: preset | plugin): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: preset | plugin): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

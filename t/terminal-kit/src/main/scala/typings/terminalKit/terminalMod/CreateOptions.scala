@@ -31,73 +31,51 @@ trait CreateOptions extends StObject {
 }
 object CreateOptions {
   
-  @scala.inline
-  def apply(appId: String, appName: String): CreateOptions = {
+  inline def apply(appId: String, appName: String): CreateOptions = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], appName = appName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOptions]
   }
   
-  @scala.inline
-  implicit class CreateOptionsMutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOptions](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+    inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneric(value: String): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
+    inline def setGeneric(value: String): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenericUndefined: Self = StObject.set(x, "generic", js.undefined)
+    inline def setGenericUndefined: Self = StObject.set(x, "generic", js.undefined)
     
-    @scala.inline
-    def setIsSSH(value: Boolean): Self = StObject.set(x, "isSSH", value.asInstanceOf[js.Any])
+    inline def setIsSSH(value: Boolean): Self = StObject.set(x, "isSSH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSSHUndefined: Self = StObject.set(x, "isSSH", js.undefined)
+    inline def setIsSSHUndefined: Self = StObject.set(x, "isSSH", js.undefined)
     
-    @scala.inline
-    def setIsTTY(value: Boolean): Self = StObject.set(x, "isTTY", value.asInstanceOf[js.Any])
+    inline def setIsTTY(value: Boolean): Self = StObject.set(x, "isTTY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTTYUndefined: Self = StObject.set(x, "isTTY", js.undefined)
+    inline def setIsTTYUndefined: Self = StObject.set(x, "isTTY", js.undefined)
     
-    @scala.inline
-    def setPid(value: js.Any): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: js.Any): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPidUndefined: Self = StObject.set(x, "pid", js.undefined)
+    inline def setPidUndefined: Self = StObject.set(x, "pid", js.undefined)
     
-    @scala.inline
-    def setPreferProcessSigwinch(value: Boolean): Self = StObject.set(x, "preferProcessSigwinch", value.asInstanceOf[js.Any])
+    inline def setPreferProcessSigwinch(value: Boolean): Self = StObject.set(x, "preferProcessSigwinch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferProcessSigwinchUndefined: Self = StObject.set(x, "preferProcessSigwinch", js.undefined)
+    inline def setPreferProcessSigwinchUndefined: Self = StObject.set(x, "preferProcessSigwinch", js.undefined)
     
-    @scala.inline
-    def setProcessSigwinch(value: Boolean): Self = StObject.set(x, "processSigwinch", value.asInstanceOf[js.Any])
+    inline def setProcessSigwinch(value: Boolean): Self = StObject.set(x, "processSigwinch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessSigwinchUndefined: Self = StObject.set(x, "processSigwinch", js.undefined)
+    inline def setProcessSigwinchUndefined: Self = StObject.set(x, "processSigwinch", js.undefined)
     
-    @scala.inline
-    def setStderr(value: Process): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+    inline def setStderr(value: Process): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+    inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
     
-    @scala.inline
-    def setStdin(value: Process): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+    inline def setStdin(value: Process): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+    inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
     
-    @scala.inline
-    def setStdout(value: Process): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+    inline def setStdout(value: Process): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+    inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
   }
 }

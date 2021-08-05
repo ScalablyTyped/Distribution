@@ -39,17 +39,14 @@ object tree {
   }
   object ExpandVetoException {
     
-    @scala.inline
-    def apply(Context: XInterface, Event: TreeExpansionEvent, Message: String): ExpandVetoException = {
+    inline def apply(Context: XInterface, Event: TreeExpansionEvent, Message: String): ExpandVetoException = {
       val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Event = Event.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpandVetoException]
     }
     
-    @scala.inline
-    implicit class ExpandVetoExceptionMutableBuilder[Self <: ExpandVetoException] (val x: Self) extends AnyVal {
+    extension [Self <: ExpandVetoException](x: Self) {
       
-      @scala.inline
-      def setEvent(value: TreeExpansionEvent): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: TreeExpansionEvent): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
     }
   }
   
@@ -176,8 +173,7 @@ object tree {
   }
   object TreeControlModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DataModel: XTreeDataModel,
       DefaultControl: String,
       Editable: Boolean,
@@ -224,35 +220,25 @@ object tree {
       __obj.asInstanceOf[TreeControlModel]
     }
     
-    @scala.inline
-    implicit class TreeControlModelMutableBuilder[Self <: TreeControlModel] (val x: Self) extends AnyVal {
+    extension [Self <: TreeControlModel](x: Self) {
       
-      @scala.inline
-      def setDataModel(value: XTreeDataModel): Self = StObject.set(x, "DataModel", value.asInstanceOf[js.Any])
+      inline def setDataModel(value: XTreeDataModel): Self = StObject.set(x, "DataModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditable(value: Boolean): Self = StObject.set(x, "Editable", value.asInstanceOf[js.Any])
+      inline def setEditable(value: Boolean): Self = StObject.set(x, "Editable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
+      inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInvokesStopNodeEditing(value: Boolean): Self = StObject.set(x, "InvokesStopNodeEditing", value.asInstanceOf[js.Any])
+      inline def setInvokesStopNodeEditing(value: Boolean): Self = StObject.set(x, "InvokesStopNodeEditing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDisplayed(value: Boolean): Self = StObject.set(x, "RootDisplayed", value.asInstanceOf[js.Any])
+      inline def setRootDisplayed(value: Boolean): Self = StObject.set(x, "RootDisplayed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowHeight(value: Double): Self = StObject.set(x, "RowHeight", value.asInstanceOf[js.Any])
+      inline def setRowHeight(value: Double): Self = StObject.set(x, "RowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionType(value: SelectionType): Self = StObject.set(x, "SelectionType", value.asInstanceOf[js.Any])
+      inline def setSelectionType(value: SelectionType): Self = StObject.set(x, "SelectionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowsHandles(value: Boolean): Self = StObject.set(x, "ShowsHandles", value.asInstanceOf[js.Any])
+      inline def setShowsHandles(value: Boolean): Self = StObject.set(x, "ShowsHandles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowsRootHandles(value: Boolean): Self = StObject.set(x, "ShowsRootHandles", value.asInstanceOf[js.Any])
+      inline def setShowsRootHandles(value: Boolean): Self = StObject.set(x, "ShowsRootHandles", value.asInstanceOf[js.Any])
     }
   }
   
@@ -283,20 +269,16 @@ object tree {
   }
   object TreeDataModelEvent {
     
-    @scala.inline
-    def apply(Nodes: SafeArray[XTreeNode], ParentNode: XTreeNode, Source: XInterface): TreeDataModelEvent = {
+    inline def apply(Nodes: SafeArray[XTreeNode], ParentNode: XTreeNode, Source: XInterface): TreeDataModelEvent = {
       val __obj = js.Dynamic.literal(Nodes = Nodes.asInstanceOf[js.Any], ParentNode = ParentNode.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeDataModelEvent]
     }
     
-    @scala.inline
-    implicit class TreeDataModelEventMutableBuilder[Self <: TreeDataModelEvent] (val x: Self) extends AnyVal {
+    extension [Self <: TreeDataModelEvent](x: Self) {
       
-      @scala.inline
-      def setNodes(value: SafeArray[XTreeNode]): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: SafeArray[XTreeNode]): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentNode(value: XTreeNode): Self = StObject.set(x, "ParentNode", value.asInstanceOf[js.Any])
+      inline def setParentNode(value: XTreeNode): Self = StObject.set(x, "ParentNode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -313,17 +295,14 @@ object tree {
   }
   object TreeExpansionEvent {
     
-    @scala.inline
-    def apply(Node: XTreeNode, Source: XInterface): TreeExpansionEvent = {
+    inline def apply(Node: XTreeNode, Source: XInterface): TreeExpansionEvent = {
       val __obj = js.Dynamic.literal(Node = Node.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeExpansionEvent]
     }
     
-    @scala.inline
-    implicit class TreeExpansionEventMutableBuilder[Self <: TreeExpansionEvent] (val x: Self) extends AnyVal {
+    extension [Self <: TreeExpansionEvent](x: Self) {
       
-      @scala.inline
-      def setNode(value: XTreeNode): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
+      inline def setNode(value: XTreeNode): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
     }
   }
   
@@ -355,8 +334,7 @@ object tree {
   }
   object XMutableTreeDataModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Root: XTreeNode,
       acquire: () => Unit,
       addEventListener: XEventListener => Unit,
@@ -374,14 +352,11 @@ object tree {
       __obj.asInstanceOf[XMutableTreeDataModel]
     }
     
-    @scala.inline
-    implicit class XMutableTreeDataModelMutableBuilder[Self <: XMutableTreeDataModel] (val x: Self) extends AnyVal {
+    extension [Self <: XMutableTreeDataModel](x: Self) {
       
-      @scala.inline
-      def setCreateNode(value: (js.Any, Boolean) => XMutableTreeNode): Self = StObject.set(x, "createNode", js.Any.fromFunction2(value))
+      inline def setCreateNode(value: (js.Any, Boolean) => XMutableTreeNode): Self = StObject.set(x, "createNode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetRoot(value: XMutableTreeNode => Unit): Self = StObject.set(x, "setRoot", js.Any.fromFunction1(value))
+      inline def setSetRoot(value: XMutableTreeNode => Unit): Self = StObject.set(x, "setRoot", js.Any.fromFunction1(value))
     }
   }
   
@@ -451,8 +426,7 @@ object tree {
   }
   object XMutableTreeNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ChildCount: Double,
       CollapsedGraphicURL: String,
       DataValue: js.Any,
@@ -482,35 +456,25 @@ object tree {
       __obj.asInstanceOf[XMutableTreeNode]
     }
     
-    @scala.inline
-    implicit class XMutableTreeNodeMutableBuilder[Self <: XMutableTreeNode] (val x: Self) extends AnyVal {
+    extension [Self <: XMutableTreeNode](x: Self) {
       
-      @scala.inline
-      def setAppendChild(value: XMutableTreeNode => Unit): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
+      inline def setAppendChild(value: XMutableTreeNode => Unit): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDataValue(value: js.Any): Self = StObject.set(x, "DataValue", value.asInstanceOf[js.Any])
+      inline def setDataValue(value: js.Any): Self = StObject.set(x, "DataValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertChildByIndex(value: (Double, XMutableTreeNode) => Unit): Self = StObject.set(x, "insertChildByIndex", js.Any.fromFunction2(value))
+      inline def setInsertChildByIndex(value: (Double, XMutableTreeNode) => Unit): Self = StObject.set(x, "insertChildByIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveChildByIndex(value: Double => Unit): Self = StObject.set(x, "removeChildByIndex", js.Any.fromFunction1(value))
+      inline def setRemoveChildByIndex(value: Double => Unit): Self = StObject.set(x, "removeChildByIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetCollapsedGraphicURL(value: String => Unit): Self = StObject.set(x, "setCollapsedGraphicURL", js.Any.fromFunction1(value))
+      inline def setSetCollapsedGraphicURL(value: String => Unit): Self = StObject.set(x, "setCollapsedGraphicURL", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDisplayValue(value: js.Any => Unit): Self = StObject.set(x, "setDisplayValue", js.Any.fromFunction1(value))
+      inline def setSetDisplayValue(value: js.Any => Unit): Self = StObject.set(x, "setDisplayValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetExpandedGraphicURL(value: String => Unit): Self = StObject.set(x, "setExpandedGraphicURL", js.Any.fromFunction1(value))
+      inline def setSetExpandedGraphicURL(value: String => Unit): Self = StObject.set(x, "setExpandedGraphicURL", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetHasChildrenOnDemand(value: Boolean => Unit): Self = StObject.set(x, "setHasChildrenOnDemand", js.Any.fromFunction1(value))
+      inline def setSetHasChildrenOnDemand(value: Boolean => Unit): Self = StObject.set(x, "setHasChildrenOnDemand", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetNodeGraphicURL(value: String => Unit): Self = StObject.set(x, "setNodeGraphicURL", js.Any.fromFunction1(value))
+      inline def setSetNodeGraphicURL(value: String => Unit): Self = StObject.set(x, "setNodeGraphicURL", js.Any.fromFunction1(value))
     }
   }
   
@@ -677,8 +641,7 @@ object tree {
   }
   object XTreeControl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DefaultCollapsedGraphicURL: String,
       DefaultExpandedGraphicURL: String,
       Selection: js.Any,
@@ -718,65 +681,45 @@ object tree {
       __obj.asInstanceOf[XTreeControl]
     }
     
-    @scala.inline
-    implicit class XTreeControlMutableBuilder[Self <: XTreeControl] (val x: Self) extends AnyVal {
+    extension [Self <: XTreeControl](x: Self) {
       
-      @scala.inline
-      def setAddTreeEditListener(value: XTreeEditListener => Unit): Self = StObject.set(x, "addTreeEditListener", js.Any.fromFunction1(value))
+      inline def setAddTreeEditListener(value: XTreeEditListener => Unit): Self = StObject.set(x, "addTreeEditListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddTreeExpansionListener(value: XTreeExpansionListener => Unit): Self = StObject.set(x, "addTreeExpansionListener", js.Any.fromFunction1(value))
+      inline def setAddTreeExpansionListener(value: XTreeExpansionListener => Unit): Self = StObject.set(x, "addTreeExpansionListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCancelEditing(value: () => Unit): Self = StObject.set(x, "cancelEditing", js.Any.fromFunction0(value))
+      inline def setCancelEditing(value: () => Unit): Self = StObject.set(x, "cancelEditing", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCollapseNode(value: XTreeNode => Unit): Self = StObject.set(x, "collapseNode", js.Any.fromFunction1(value))
+      inline def setCollapseNode(value: XTreeNode => Unit): Self = StObject.set(x, "collapseNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDefaultCollapsedGraphicURL(value: String): Self = StObject.set(x, "DefaultCollapsedGraphicURL", value.asInstanceOf[js.Any])
+      inline def setDefaultCollapsedGraphicURL(value: String): Self = StObject.set(x, "DefaultCollapsedGraphicURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultExpandedGraphicURL(value: String): Self = StObject.set(x, "DefaultExpandedGraphicURL", value.asInstanceOf[js.Any])
+      inline def setDefaultExpandedGraphicURL(value: String): Self = StObject.set(x, "DefaultExpandedGraphicURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandNode(value: XTreeNode => Unit): Self = StObject.set(x, "expandNode", js.Any.fromFunction1(value))
+      inline def setExpandNode(value: XTreeNode => Unit): Self = StObject.set(x, "expandNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetClosestNodeForLocation(value: (Double, Double) => XTreeNode): Self = StObject.set(x, "getClosestNodeForLocation", js.Any.fromFunction2(value))
+      inline def setGetClosestNodeForLocation(value: (Double, Double) => XTreeNode): Self = StObject.set(x, "getClosestNodeForLocation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetNodeForLocation(value: (Double, Double) => XTreeNode): Self = StObject.set(x, "getNodeForLocation", js.Any.fromFunction2(value))
+      inline def setGetNodeForLocation(value: (Double, Double) => XTreeNode): Self = StObject.set(x, "getNodeForLocation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetNodeRect(value: XTreeNode => Rectangle): Self = StObject.set(x, "getNodeRect", js.Any.fromFunction1(value))
+      inline def setGetNodeRect(value: XTreeNode => Rectangle): Self = StObject.set(x, "getNodeRect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEditing(value: () => Boolean): Self = StObject.set(x, "isEditing", js.Any.fromFunction0(value))
+      inline def setIsEditing(value: () => Boolean): Self = StObject.set(x, "isEditing", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsNodeCollapsed(value: XTreeNode => Boolean): Self = StObject.set(x, "isNodeCollapsed", js.Any.fromFunction1(value))
+      inline def setIsNodeCollapsed(value: XTreeNode => Boolean): Self = StObject.set(x, "isNodeCollapsed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsNodeExpanded(value: XTreeNode => Boolean): Self = StObject.set(x, "isNodeExpanded", js.Any.fromFunction1(value))
+      inline def setIsNodeExpanded(value: XTreeNode => Boolean): Self = StObject.set(x, "isNodeExpanded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsNodeVisible(value: XTreeNode => Boolean): Self = StObject.set(x, "isNodeVisible", js.Any.fromFunction1(value))
+      inline def setIsNodeVisible(value: XTreeNode => Boolean): Self = StObject.set(x, "isNodeVisible", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMakeNodeVisible(value: XTreeNode => Unit): Self = StObject.set(x, "makeNodeVisible", js.Any.fromFunction1(value))
+      inline def setMakeNodeVisible(value: XTreeNode => Unit): Self = StObject.set(x, "makeNodeVisible", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveTreeEditListener(value: XTreeEditListener => Unit): Self = StObject.set(x, "removeTreeEditListener", js.Any.fromFunction1(value))
+      inline def setRemoveTreeEditListener(value: XTreeEditListener => Unit): Self = StObject.set(x, "removeTreeEditListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveTreeExpansionListener(value: XTreeExpansionListener => Unit): Self = StObject.set(x, "removeTreeExpansionListener", js.Any.fromFunction1(value))
+      inline def setRemoveTreeExpansionListener(value: XTreeExpansionListener => Unit): Self = StObject.set(x, "removeTreeExpansionListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartEditingAtNode(value: XTreeNode => Unit): Self = StObject.set(x, "startEditingAtNode", js.Any.fromFunction1(value))
+      inline def setStartEditingAtNode(value: XTreeNode => Unit): Self = StObject.set(x, "startEditingAtNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStopEditing(value: () => Boolean): Self = StObject.set(x, "stopEditing", js.Any.fromFunction0(value))
+      inline def setStopEditing(value: () => Boolean): Self = StObject.set(x, "stopEditing", js.Any.fromFunction0(value))
     }
   }
   
@@ -822,8 +765,7 @@ object tree {
   }
   object XTreeDataModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Root: XTreeNode,
       acquire: () => Unit,
       addEventListener: XEventListener => Unit,
@@ -839,20 +781,15 @@ object tree {
       __obj.asInstanceOf[XTreeDataModel]
     }
     
-    @scala.inline
-    implicit class XTreeDataModelMutableBuilder[Self <: XTreeDataModel] (val x: Self) extends AnyVal {
+    extension [Self <: XTreeDataModel](x: Self) {
       
-      @scala.inline
-      def setAddTreeDataModelListener(value: XTreeDataModelListener => Unit): Self = StObject.set(x, "addTreeDataModelListener", js.Any.fromFunction1(value))
+      inline def setAddTreeDataModelListener(value: XTreeDataModelListener => Unit): Self = StObject.set(x, "addTreeDataModelListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRoot(value: () => XTreeNode): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
+      inline def setGetRoot(value: () => XTreeNode): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveTreeDataModelListener(value: XTreeDataModelListener => Unit): Self = StObject.set(x, "removeTreeDataModelListener", js.Any.fromFunction1(value))
+      inline def setRemoveTreeDataModelListener(value: XTreeDataModelListener => Unit): Self = StObject.set(x, "removeTreeDataModelListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRoot(value: XTreeNode): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: XTreeNode): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
     }
   }
   
@@ -905,8 +842,7 @@ object tree {
   }
   object XTreeDataModelListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       disposing: EventObject => Unit,
       queryInterface: `type` => js.Any,
@@ -920,20 +856,15 @@ object tree {
       __obj.asInstanceOf[XTreeDataModelListener]
     }
     
-    @scala.inline
-    implicit class XTreeDataModelListenerMutableBuilder[Self <: XTreeDataModelListener] (val x: Self) extends AnyVal {
+    extension [Self <: XTreeDataModelListener](x: Self) {
       
-      @scala.inline
-      def setTreeNodesChanged(value: TreeDataModelEvent => Unit): Self = StObject.set(x, "treeNodesChanged", js.Any.fromFunction1(value))
+      inline def setTreeNodesChanged(value: TreeDataModelEvent => Unit): Self = StObject.set(x, "treeNodesChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTreeNodesInserted(value: TreeDataModelEvent => Unit): Self = StObject.set(x, "treeNodesInserted", js.Any.fromFunction1(value))
+      inline def setTreeNodesInserted(value: TreeDataModelEvent => Unit): Self = StObject.set(x, "treeNodesInserted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTreeNodesRemoved(value: TreeDataModelEvent => Unit): Self = StObject.set(x, "treeNodesRemoved", js.Any.fromFunction1(value))
+      inline def setTreeNodesRemoved(value: TreeDataModelEvent => Unit): Self = StObject.set(x, "treeNodesRemoved", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTreeStructureChanged(value: TreeDataModelEvent => Unit): Self = StObject.set(x, "treeStructureChanged", js.Any.fromFunction1(value))
+      inline def setTreeStructureChanged(value: TreeDataModelEvent => Unit): Self = StObject.set(x, "treeStructureChanged", js.Any.fromFunction1(value))
     }
   }
   
@@ -966,8 +897,7 @@ object tree {
   }
   object XTreeEditListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       disposing: EventObject => Unit,
       nodeEdited: (XTreeNode, String) => Unit,
@@ -979,14 +909,11 @@ object tree {
       __obj.asInstanceOf[XTreeEditListener]
     }
     
-    @scala.inline
-    implicit class XTreeEditListenerMutableBuilder[Self <: XTreeEditListener] (val x: Self) extends AnyVal {
+    extension [Self <: XTreeEditListener](x: Self) {
       
-      @scala.inline
-      def setNodeEdited(value: (XTreeNode, String) => Unit): Self = StObject.set(x, "nodeEdited", js.Any.fromFunction2(value))
+      inline def setNodeEdited(value: (XTreeNode, String) => Unit): Self = StObject.set(x, "nodeEdited", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNodeEditing(value: XTreeNode => Unit): Self = StObject.set(x, "nodeEditing", js.Any.fromFunction1(value))
+      inline def setNodeEditing(value: XTreeNode => Unit): Self = StObject.set(x, "nodeEditing", js.Any.fromFunction1(value))
     }
   }
   
@@ -1026,8 +953,7 @@ object tree {
   }
   object XTreeExpansionListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       disposing: EventObject => Unit,
       queryInterface: `type` => js.Any,
@@ -1042,23 +968,17 @@ object tree {
       __obj.asInstanceOf[XTreeExpansionListener]
     }
     
-    @scala.inline
-    implicit class XTreeExpansionListenerMutableBuilder[Self <: XTreeExpansionListener] (val x: Self) extends AnyVal {
+    extension [Self <: XTreeExpansionListener](x: Self) {
       
-      @scala.inline
-      def setRequestChildNodes(value: TreeExpansionEvent => Unit): Self = StObject.set(x, "requestChildNodes", js.Any.fromFunction1(value))
+      inline def setRequestChildNodes(value: TreeExpansionEvent => Unit): Self = StObject.set(x, "requestChildNodes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTreeCollapsed(value: TreeExpansionEvent => Unit): Self = StObject.set(x, "treeCollapsed", js.Any.fromFunction1(value))
+      inline def setTreeCollapsed(value: TreeExpansionEvent => Unit): Self = StObject.set(x, "treeCollapsed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTreeCollapsing(value: TreeExpansionEvent => Unit): Self = StObject.set(x, "treeCollapsing", js.Any.fromFunction1(value))
+      inline def setTreeCollapsing(value: TreeExpansionEvent => Unit): Self = StObject.set(x, "treeCollapsing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTreeExpanded(value: TreeExpansionEvent => Unit): Self = StObject.set(x, "treeExpanded", js.Any.fromFunction1(value))
+      inline def setTreeExpanded(value: TreeExpansionEvent => Unit): Self = StObject.set(x, "treeExpanded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTreeExpanding(value: TreeExpansionEvent => Unit): Self = StObject.set(x, "treeExpanding", js.Any.fromFunction1(value))
+      inline def setTreeExpanding(value: TreeExpansionEvent => Unit): Self = StObject.set(x, "treeExpanding", js.Any.fromFunction1(value))
     }
   }
   
@@ -1153,8 +1073,7 @@ object tree {
   }
   object XTreeNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ChildCount: Double,
       CollapsedGraphicURL: String,
       DisplayValue: js.Any,
@@ -1175,53 +1094,37 @@ object tree {
       __obj.asInstanceOf[XTreeNode]
     }
     
-    @scala.inline
-    implicit class XTreeNodeMutableBuilder[Self <: XTreeNode] (val x: Self) extends AnyVal {
+    extension [Self <: XTreeNode](x: Self) {
       
-      @scala.inline
-      def setChildCount(value: Double): Self = StObject.set(x, "ChildCount", value.asInstanceOf[js.Any])
+      inline def setChildCount(value: Double): Self = StObject.set(x, "ChildCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedGraphicURL(value: String): Self = StObject.set(x, "CollapsedGraphicURL", value.asInstanceOf[js.Any])
+      inline def setCollapsedGraphicURL(value: String): Self = StObject.set(x, "CollapsedGraphicURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayValue(value: js.Any): Self = StObject.set(x, "DisplayValue", value.asInstanceOf[js.Any])
+      inline def setDisplayValue(value: js.Any): Self = StObject.set(x, "DisplayValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedGraphicURL(value: String): Self = StObject.set(x, "ExpandedGraphicURL", value.asInstanceOf[js.Any])
+      inline def setExpandedGraphicURL(value: String): Self = StObject.set(x, "ExpandedGraphicURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetChildAt(value: Double => XTreeNode): Self = StObject.set(x, "getChildAt", js.Any.fromFunction1(value))
+      inline def setGetChildAt(value: Double => XTreeNode): Self = StObject.set(x, "getChildAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetChildCount(value: () => Double): Self = StObject.set(x, "getChildCount", js.Any.fromFunction0(value))
+      inline def setGetChildCount(value: () => Double): Self = StObject.set(x, "getChildCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCollapsedGraphicURL(value: () => String): Self = StObject.set(x, "getCollapsedGraphicURL", js.Any.fromFunction0(value))
+      inline def setGetCollapsedGraphicURL(value: () => String): Self = StObject.set(x, "getCollapsedGraphicURL", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDisplayValue(value: () => js.Any): Self = StObject.set(x, "getDisplayValue", js.Any.fromFunction0(value))
+      inline def setGetDisplayValue(value: () => js.Any): Self = StObject.set(x, "getDisplayValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetExpandedGraphicURL(value: () => String): Self = StObject.set(x, "getExpandedGraphicURL", js.Any.fromFunction0(value))
+      inline def setGetExpandedGraphicURL(value: () => String): Self = StObject.set(x, "getExpandedGraphicURL", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIndex(value: XTreeNode => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction1(value))
+      inline def setGetIndex(value: XTreeNode => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNodeGraphicURL(value: () => String): Self = StObject.set(x, "getNodeGraphicURL", js.Any.fromFunction0(value))
+      inline def setGetNodeGraphicURL(value: () => String): Self = StObject.set(x, "getNodeGraphicURL", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParent(value: () => XTreeNode): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+      inline def setGetParent(value: () => XTreeNode): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasChildrenOnDemand(value: () => Boolean): Self = StObject.set(x, "hasChildrenOnDemand", js.Any.fromFunction0(value))
+      inline def setHasChildrenOnDemand(value: () => Boolean): Self = StObject.set(x, "hasChildrenOnDemand", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNodeGraphicURL(value: String): Self = StObject.set(x, "NodeGraphicURL", value.asInstanceOf[js.Any])
+      inline def setNodeGraphicURL(value: String): Self = StObject.set(x, "NodeGraphicURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: XTreeNode): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: XTreeNode): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     }
   }
 }

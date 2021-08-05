@@ -194,19 +194,15 @@ object Client {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromUri(registrationClientUri: String, registrationAccessToken: String): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUri")(registrationClientUri.asInstanceOf[js.Any], registrationAccessToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def fromUri(
+  inline def fromUri(registrationClientUri: String, registrationAccessToken: String): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUri")(registrationClientUri.asInstanceOf[js.Any], registrationAccessToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+  inline def fromUri(
     registrationClientUri: String,
     registrationAccessToken: String,
     jwks: Unit,
     clientOptions: ClientOptions
   ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUri")(registrationClientUri.asInstanceOf[js.Any], registrationAccessToken.asInstanceOf[js.Any], jwks.asInstanceOf[js.Any], clientOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def fromUri(registrationClientUri: String, registrationAccessToken: String, jwks: JSONWebKeySet): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUri")(registrationClientUri.asInstanceOf[js.Any], registrationAccessToken.asInstanceOf[js.Any], jwks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def fromUri(
+  inline def fromUri(registrationClientUri: String, registrationAccessToken: String, jwks: JSONWebKeySet): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUri")(registrationClientUri.asInstanceOf[js.Any], registrationAccessToken.asInstanceOf[js.Any], jwks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+  inline def fromUri(
     registrationClientUri: String,
     registrationAccessToken: String,
     jwks: JSONWebKeySet,
@@ -216,11 +212,8 @@ object Client {
   @JSImport("openid-client", "Client.issuer")
   @js.native
   def issuer: Issuer[Client] = js.native
-  @scala.inline
-  def issuer_=(x: Issuer[Client]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("issuer")(x.asInstanceOf[js.Any])
+  inline def issuer_=(x: Issuer[Client]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("issuer")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def register(metadata: js.Object): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(metadata.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def register(metadata: js.Object, other: RegisterOther & ClientOptions): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(metadata.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+  inline def register(metadata: js.Object): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(metadata.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
+  inline def register(metadata: js.Object, other: RegisterOther & ClientOptions): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(metadata.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
 }

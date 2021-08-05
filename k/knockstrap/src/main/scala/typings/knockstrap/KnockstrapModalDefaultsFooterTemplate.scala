@@ -12,8 +12,7 @@ trait KnockstrapModalDefaultsFooterTemplate
 }
 object KnockstrapModalDefaultsFooterTemplate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: KnockstrapModalDefaultsFooterData,
     name: String,
     templateEngine: KnockstrapStringTemplateEngine
@@ -22,10 +21,8 @@ object KnockstrapModalDefaultsFooterTemplate {
     __obj.asInstanceOf[KnockstrapModalDefaultsFooterTemplate]
   }
   
-  @scala.inline
-  implicit class KnockstrapModalDefaultsFooterTemplateMutableBuilder[Self <: KnockstrapModalDefaultsFooterTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: KnockstrapModalDefaultsFooterTemplate](x: Self) {
     
-    @scala.inline
-    def setData(value: KnockstrapModalDefaultsFooterData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: KnockstrapModalDefaultsFooterData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

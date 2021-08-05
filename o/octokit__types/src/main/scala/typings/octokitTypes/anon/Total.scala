@@ -14,25 +14,19 @@ trait Total extends StObject {
 }
 object Total {
   
-  @scala.inline
-  def apply(author: Avatarurl, total: Double, weeks: js.Array[A]): Total = {
+  inline def apply(author: Avatarurl, total: Double, weeks: js.Array[A]): Total = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], weeks = weeks.asInstanceOf[js.Any])
     __obj.asInstanceOf[Total]
   }
   
-  @scala.inline
-  implicit class TotalMutableBuilder[Self <: Total] (val x: Self) extends AnyVal {
+  extension [Self <: Total](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeeks(value: js.Array[A]): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
+    inline def setWeeks(value: js.Array[A]): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeeksVarargs(value: A*): Self = StObject.set(x, "weeks", js.Array(value :_*))
+    inline def setWeeksVarargs(value: A*): Self = StObject.set(x, "weeks", js.Array(value :_*))
   }
 }

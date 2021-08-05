@@ -10,16 +10,13 @@ trait styleCommand extends StObject {
 }
 object styleCommand {
   
-  @scala.inline
-  def apply(exec: editor => Unit): styleCommand = {
+  inline def apply(exec: editor => Unit): styleCommand = {
     val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec))
     __obj.asInstanceOf[styleCommand]
   }
   
-  @scala.inline
-  implicit class styleCommandMutableBuilder[Self <: styleCommand] (val x: Self) extends AnyVal {
+  extension [Self <: styleCommand](x: Self) {
     
-    @scala.inline
-    def setExec(value: editor => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
+    inline def setExec(value: editor => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
   }
 }

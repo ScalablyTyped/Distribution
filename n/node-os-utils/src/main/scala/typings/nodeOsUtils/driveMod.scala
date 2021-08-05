@@ -32,8 +32,7 @@ object driveMod {
   }
   object Drive {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       free: String => js.Promise[DriveFreeInfo],
       info: String => js.Promise[DriveInfo],
       used: String => js.Promise[DriveUsedInfo]
@@ -42,17 +41,13 @@ object driveMod {
       __obj.asInstanceOf[Drive]
     }
     
-    @scala.inline
-    implicit class DriveMutableBuilder[Self <: Drive] (val x: Self) extends AnyVal {
+    extension [Self <: Drive](x: Self) {
       
-      @scala.inline
-      def setFree(value: String => js.Promise[DriveFreeInfo]): Self = StObject.set(x, "free", js.Any.fromFunction1(value))
+      inline def setFree(value: String => js.Promise[DriveFreeInfo]): Self = StObject.set(x, "free", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInfo(value: String => js.Promise[DriveInfo]): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: String => js.Promise[DriveInfo]): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUsed(value: String => js.Promise[DriveUsedInfo]): Self = StObject.set(x, "used", js.Any.fromFunction1(value))
+      inline def setUsed(value: String => js.Promise[DriveUsedInfo]): Self = StObject.set(x, "used", js.Any.fromFunction1(value))
     }
   }
   
@@ -66,23 +61,18 @@ object driveMod {
   }
   object DriveFreeInfo {
     
-    @scala.inline
-    def apply(freeGb: Double, freePercentage: Double, totalGb: Double): DriveFreeInfo = {
+    inline def apply(freeGb: Double, freePercentage: Double, totalGb: Double): DriveFreeInfo = {
       val __obj = js.Dynamic.literal(freeGb = freeGb.asInstanceOf[js.Any], freePercentage = freePercentage.asInstanceOf[js.Any], totalGb = totalGb.asInstanceOf[js.Any])
       __obj.asInstanceOf[DriveFreeInfo]
     }
     
-    @scala.inline
-    implicit class DriveFreeInfoMutableBuilder[Self <: DriveFreeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DriveFreeInfo](x: Self) {
       
-      @scala.inline
-      def setFreeGb(value: Double): Self = StObject.set(x, "freeGb", value.asInstanceOf[js.Any])
+      inline def setFreeGb(value: Double): Self = StObject.set(x, "freeGb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreePercentage(value: Double): Self = StObject.set(x, "freePercentage", value.asInstanceOf[js.Any])
+      inline def setFreePercentage(value: Double): Self = StObject.set(x, "freePercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalGb(value: Double): Self = StObject.set(x, "totalGb", value.asInstanceOf[js.Any])
+      inline def setTotalGb(value: Double): Self = StObject.set(x, "totalGb", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,20 +87,16 @@ object driveMod {
   }
   object DriveInfo {
     
-    @scala.inline
-    def apply(freeGb: Double, freePercentage: Double, totalGb: Double, usedGb: Double, usedPercentage: Double): DriveInfo = {
+    inline def apply(freeGb: Double, freePercentage: Double, totalGb: Double, usedGb: Double, usedPercentage: Double): DriveInfo = {
       val __obj = js.Dynamic.literal(freeGb = freeGb.asInstanceOf[js.Any], freePercentage = freePercentage.asInstanceOf[js.Any], totalGb = totalGb.asInstanceOf[js.Any], usedGb = usedGb.asInstanceOf[js.Any], usedPercentage = usedPercentage.asInstanceOf[js.Any])
       __obj.asInstanceOf[DriveInfo]
     }
     
-    @scala.inline
-    implicit class DriveInfoMutableBuilder[Self <: DriveInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DriveInfo](x: Self) {
       
-      @scala.inline
-      def setUsedGb(value: Double): Self = StObject.set(x, "usedGb", value.asInstanceOf[js.Any])
+      inline def setUsedGb(value: Double): Self = StObject.set(x, "usedGb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsedPercentage(value: Double): Self = StObject.set(x, "usedPercentage", value.asInstanceOf[js.Any])
+      inline def setUsedPercentage(value: Double): Self = StObject.set(x, "usedPercentage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,23 +110,18 @@ object driveMod {
   }
   object DriveUsedInfo {
     
-    @scala.inline
-    def apply(totalGb: Double, usedGb: Double, usedPercentage: Double): DriveUsedInfo = {
+    inline def apply(totalGb: Double, usedGb: Double, usedPercentage: Double): DriveUsedInfo = {
       val __obj = js.Dynamic.literal(totalGb = totalGb.asInstanceOf[js.Any], usedGb = usedGb.asInstanceOf[js.Any], usedPercentage = usedPercentage.asInstanceOf[js.Any])
       __obj.asInstanceOf[DriveUsedInfo]
     }
     
-    @scala.inline
-    implicit class DriveUsedInfoMutableBuilder[Self <: DriveUsedInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DriveUsedInfo](x: Self) {
       
-      @scala.inline
-      def setTotalGb(value: Double): Self = StObject.set(x, "totalGb", value.asInstanceOf[js.Any])
+      inline def setTotalGb(value: Double): Self = StObject.set(x, "totalGb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsedGb(value: Double): Self = StObject.set(x, "usedGb", value.asInstanceOf[js.Any])
+      inline def setUsedGb(value: Double): Self = StObject.set(x, "usedGb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsedPercentage(value: Double): Self = StObject.set(x, "usedPercentage", value.asInstanceOf[js.Any])
+      inline def setUsedPercentage(value: Double): Self = StObject.set(x, "usedPercentage", value.asInstanceOf[js.Any])
     }
   }
 }

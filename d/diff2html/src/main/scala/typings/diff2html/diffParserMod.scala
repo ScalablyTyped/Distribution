@@ -11,10 +11,8 @@ object diffParserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(diffInput: String): js.Array[DiffFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(diffInput.asInstanceOf[js.Any]).asInstanceOf[js.Array[DiffFile]]
-  @scala.inline
-  def parse(diffInput: String, config: DiffParserConfig): js.Array[DiffFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(diffInput.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Array[DiffFile]]
+  inline def parse(diffInput: String): js.Array[DiffFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(diffInput.asInstanceOf[js.Any]).asInstanceOf[js.Array[DiffFile]]
+  inline def parse(diffInput: String, config: DiffParserConfig): js.Array[DiffFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(diffInput.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Array[DiffFile]]
   
   trait DiffParserConfig extends StObject {
     
@@ -24,26 +22,20 @@ object diffParserMod {
   }
   object DiffParserConfig {
     
-    @scala.inline
-    def apply(): DiffParserConfig = {
+    inline def apply(): DiffParserConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DiffParserConfig]
     }
     
-    @scala.inline
-    implicit class DiffParserConfigMutableBuilder[Self <: DiffParserConfig] (val x: Self) extends AnyVal {
+    extension [Self <: DiffParserConfig](x: Self) {
       
-      @scala.inline
-      def setDstPrefix(value: String): Self = StObject.set(x, "dstPrefix", value.asInstanceOf[js.Any])
+      inline def setDstPrefix(value: String): Self = StObject.set(x, "dstPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDstPrefixUndefined: Self = StObject.set(x, "dstPrefix", js.undefined)
+      inline def setDstPrefixUndefined: Self = StObject.set(x, "dstPrefix", js.undefined)
       
-      @scala.inline
-      def setSrcPrefix(value: String): Self = StObject.set(x, "srcPrefix", value.asInstanceOf[js.Any])
+      inline def setSrcPrefix(value: String): Self = StObject.set(x, "srcPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcPrefixUndefined: Self = StObject.set(x, "srcPrefix", js.undefined)
+      inline def setSrcPrefixUndefined: Self = StObject.set(x, "srcPrefix", js.undefined)
     }
   }
 }

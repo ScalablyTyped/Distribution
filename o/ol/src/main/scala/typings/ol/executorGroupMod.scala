@@ -42,11 +42,9 @@ object executorGroupMod {
     ) = this()
   }
   
-  @scala.inline
-  def getCircleArray(radius: Double): js.Array[js.Array[js.UndefOr[Boolean]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCircleArray")(radius.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[js.UndefOr[Boolean]]]]
+  inline def getCircleArray(radius: Double): js.Array[js.Array[js.UndefOr[Boolean]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCircleArray")(radius.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[js.UndefOr[Boolean]]]]
   
-  @scala.inline
-  def replayDeclutter(
+  inline def replayDeclutter(
     declutterReplays: StringDictionary[js.Array[js.Any]],
     context: CanvasRenderingContext2D,
     rotation: Double,

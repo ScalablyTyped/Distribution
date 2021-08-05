@@ -22,22 +22,17 @@ trait DocumentIndexMarkAsian extends StObject {
 }
 object DocumentIndexMarkAsian {
   
-  @scala.inline
-  def apply(PrimaryKeyReading: String, SecondaryKeyReading: String, TextReading: String): DocumentIndexMarkAsian = {
+  inline def apply(PrimaryKeyReading: String, SecondaryKeyReading: String, TextReading: String): DocumentIndexMarkAsian = {
     val __obj = js.Dynamic.literal(PrimaryKeyReading = PrimaryKeyReading.asInstanceOf[js.Any], SecondaryKeyReading = SecondaryKeyReading.asInstanceOf[js.Any], TextReading = TextReading.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentIndexMarkAsian]
   }
   
-  @scala.inline
-  implicit class DocumentIndexMarkAsianMutableBuilder[Self <: DocumentIndexMarkAsian] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentIndexMarkAsian](x: Self) {
     
-    @scala.inline
-    def setPrimaryKeyReading(value: String): Self = StObject.set(x, "PrimaryKeyReading", value.asInstanceOf[js.Any])
+    inline def setPrimaryKeyReading(value: String): Self = StObject.set(x, "PrimaryKeyReading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryKeyReading(value: String): Self = StObject.set(x, "SecondaryKeyReading", value.asInstanceOf[js.Any])
+    inline def setSecondaryKeyReading(value: String): Self = StObject.set(x, "SecondaryKeyReading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextReading(value: String): Self = StObject.set(x, "TextReading", value.asInstanceOf[js.Any])
+    inline def setTextReading(value: String): Self = StObject.set(x, "TextReading", value.asInstanceOf[js.Any])
   }
 }

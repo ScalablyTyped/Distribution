@@ -26,46 +26,33 @@ trait DimensionMetadata extends StObject {
 }
 object DimensionMetadata {
   
-  @scala.inline
-  def apply(): DimensionMetadata = {
+  inline def apply(): DimensionMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DimensionMetadata]
   }
   
-  @scala.inline
-  implicit class DimensionMetadataMutableBuilder[Self <: DimensionMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionMetadata](x: Self) {
     
-    @scala.inline
-    def setApiName(value: String): Self = StObject.set(x, "apiName", value.asInstanceOf[js.Any])
+    inline def setApiName(value: String): Self = StObject.set(x, "apiName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiNameUndefined: Self = StObject.set(x, "apiName", js.undefined)
+    inline def setApiNameUndefined: Self = StObject.set(x, "apiName", js.undefined)
     
-    @scala.inline
-    def setCustomDefinition(value: Boolean): Self = StObject.set(x, "customDefinition", value.asInstanceOf[js.Any])
+    inline def setCustomDefinition(value: Boolean): Self = StObject.set(x, "customDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDefinitionUndefined: Self = StObject.set(x, "customDefinition", js.undefined)
+    inline def setCustomDefinitionUndefined: Self = StObject.set(x, "customDefinition", js.undefined)
     
-    @scala.inline
-    def setDeprecatedApiNames(value: js.Array[String]): Self = StObject.set(x, "deprecatedApiNames", value.asInstanceOf[js.Any])
+    inline def setDeprecatedApiNames(value: js.Array[String]): Self = StObject.set(x, "deprecatedApiNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedApiNamesUndefined: Self = StObject.set(x, "deprecatedApiNames", js.undefined)
+    inline def setDeprecatedApiNamesUndefined: Self = StObject.set(x, "deprecatedApiNames", js.undefined)
     
-    @scala.inline
-    def setDeprecatedApiNamesVarargs(value: String*): Self = StObject.set(x, "deprecatedApiNames", js.Array(value :_*))
+    inline def setDeprecatedApiNamesVarargs(value: String*): Self = StObject.set(x, "deprecatedApiNames", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setUiName(value: String): Self = StObject.set(x, "uiName", value.asInstanceOf[js.Any])
+    inline def setUiName(value: String): Self = StObject.set(x, "uiName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiNameUndefined: Self = StObject.set(x, "uiName", js.undefined)
+    inline def setUiNameUndefined: Self = StObject.set(x, "uiName", js.undefined)
   }
 }

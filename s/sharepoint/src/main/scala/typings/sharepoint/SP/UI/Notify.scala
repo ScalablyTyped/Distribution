@@ -17,23 +17,18 @@ object Notify {
   }
   object Notification {
     
-    @scala.inline
-    def apply(Hide: Boolean => Unit, Show: Boolean => Unit, get_id: () => String): Notification = {
+    inline def apply(Hide: Boolean => Unit, Show: Boolean => Unit, get_id: () => String): Notification = {
       val __obj = js.Dynamic.literal(Hide = js.Any.fromFunction1(Hide), Show = js.Any.fromFunction1(Show), get_id = js.Any.fromFunction0(get_id))
       __obj.asInstanceOf[Notification]
     }
     
-    @scala.inline
-    implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
+    extension [Self <: Notification](x: Self) {
       
-      @scala.inline
-      def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
+      inline def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: Boolean => Unit): Self = StObject.set(x, "Hide", js.Any.fromFunction1(value))
+      inline def setHide(value: Boolean => Unit): Self = StObject.set(x, "Hide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShow(value: Boolean => Unit): Self = StObject.set(x, "Show", js.Any.fromFunction1(value))
+      inline def setShow(value: Boolean => Unit): Self = StObject.set(x, "Show", js.Any.fromFunction1(value))
     }
   }
   
@@ -47,23 +42,18 @@ object Notify {
   }
   object NotificationContainer {
     
-    @scala.inline
-    def apply(Clear: () => Unit, GetCount: () => Double, SetEventHandler: (EventID, js.Any) => Unit): NotificationContainer = {
+    inline def apply(Clear: () => Unit, GetCount: () => Double, SetEventHandler: (EventID, js.Any) => Unit): NotificationContainer = {
       val __obj = js.Dynamic.literal(Clear = js.Any.fromFunction0(Clear), GetCount = js.Any.fromFunction0(GetCount), SetEventHandler = js.Any.fromFunction2(SetEventHandler))
       __obj.asInstanceOf[NotificationContainer]
     }
     
-    @scala.inline
-    implicit class NotificationContainerMutableBuilder[Self <: NotificationContainer] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationContainer](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCount(value: () => Double): Self = StObject.set(x, "GetCount", js.Any.fromFunction0(value))
+      inline def setGetCount(value: () => Double): Self = StObject.set(x, "GetCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetEventHandler(value: (EventID, js.Any) => Unit): Self = StObject.set(x, "SetEventHandler", js.Any.fromFunction2(value))
+      inline def setSetEventHandler(value: (EventID, js.Any) => Unit): Self = StObject.set(x, "SetEventHandler", js.Any.fromFunction2(value))
     }
   }
 }

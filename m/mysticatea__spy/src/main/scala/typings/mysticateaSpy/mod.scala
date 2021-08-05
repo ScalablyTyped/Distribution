@@ -15,10 +15,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def spy(): Spy_[js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")().asInstanceOf[Spy_[js.Function0[Unit]]]
-  @scala.inline
-  def spy[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](f: T): Spy_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(f.asInstanceOf[js.Any]).asInstanceOf[Spy_[T]]
+  inline def spy(): Spy_[js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")().asInstanceOf[Spy_[js.Function0[Unit]]]
+  inline def spy[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](f: T): Spy_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(f.asInstanceOf[js.Any]).asInstanceOf[Spy_[T]]
   
   object Spy_ {
     
@@ -30,8 +28,7 @@ object mod {
     trait Call[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] extends StObject
     object Call {
       
-      @scala.inline
-      def ReturnedCall[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](arguments: Parameters[T], `return`: ReturnType[T], `this`: This[T]): typings.mysticateaSpy.mod.Spy_.ReturnedCall[T] = {
+      inline def ReturnedCall[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](arguments: Parameters[T], `return`: ReturnType[T], `this`: This[T]): typings.mysticateaSpy.mod.Spy_.ReturnedCall[T] = {
         val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
         __obj.updateDynamic("return")(`return`.asInstanceOf[js.Any])
         __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
@@ -39,8 +36,7 @@ object mod {
         __obj.asInstanceOf[typings.mysticateaSpy.mod.Spy_.ReturnedCall[T]]
       }
       
-      @scala.inline
-      def ThrownCall[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](arguments: Parameters[T], `this`: This[T], `throw`: js.Any): typings.mysticateaSpy.mod.Spy_.ThrownCall[T] = {
+      inline def ThrownCall[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](arguments: Parameters[T], `this`: This[T], `throw`: js.Any): typings.mysticateaSpy.mod.Spy_.ThrownCall[T] = {
         val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
         __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
         __obj.updateDynamic("throw")(`throw`.asInstanceOf[js.Any])
@@ -84,8 +80,7 @@ object mod {
     }
     object CallInformation {
       
-      @scala.inline
-      def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+      inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
         calls: js.Array[Call[T]],
         reset: () => Unit,
         returnedCalls: js.Array[ReturnedCall[T]],
@@ -95,65 +90,45 @@ object mod {
         __obj.asInstanceOf[CallInformation[T]]
       }
       
-      @scala.inline
-      implicit class CallInformationMutableBuilder[Self <: CallInformation[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & CallInformation[T]) extends AnyVal {
+      extension [Self <: CallInformation[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & CallInformation[T]) {
         
-        @scala.inline
-        def setCalls(value: js.Array[Call[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
+        inline def setCalls(value: js.Array[Call[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCallsVarargs(value: Call[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
+        inline def setCallsVarargs(value: Call[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
         
-        @scala.inline
-        def setFirstCall(value: Call[T]): Self = StObject.set(x, "firstCall", value.asInstanceOf[js.Any])
+        inline def setFirstCall(value: Call[T]): Self = StObject.set(x, "firstCall", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFirstCallNull: Self = StObject.set(x, "firstCall", null)
+        inline def setFirstCallNull: Self = StObject.set(x, "firstCall", null)
         
-        @scala.inline
-        def setFirstReturnedCall(value: ReturnedCall[T]): Self = StObject.set(x, "firstReturnedCall", value.asInstanceOf[js.Any])
+        inline def setFirstReturnedCall(value: ReturnedCall[T]): Self = StObject.set(x, "firstReturnedCall", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFirstReturnedCallNull: Self = StObject.set(x, "firstReturnedCall", null)
+        inline def setFirstReturnedCallNull: Self = StObject.set(x, "firstReturnedCall", null)
         
-        @scala.inline
-        def setFirstThrownCall(value: ThrownCall[T]): Self = StObject.set(x, "firstThrownCall", value.asInstanceOf[js.Any])
+        inline def setFirstThrownCall(value: ThrownCall[T]): Self = StObject.set(x, "firstThrownCall", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFirstThrownCallNull: Self = StObject.set(x, "firstThrownCall", null)
+        inline def setFirstThrownCallNull: Self = StObject.set(x, "firstThrownCall", null)
         
-        @scala.inline
-        def setLastCall(value: Call[T]): Self = StObject.set(x, "lastCall", value.asInstanceOf[js.Any])
+        inline def setLastCall(value: Call[T]): Self = StObject.set(x, "lastCall", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastCallNull: Self = StObject.set(x, "lastCall", null)
+        inline def setLastCallNull: Self = StObject.set(x, "lastCall", null)
         
-        @scala.inline
-        def setLastReturnedCall(value: ReturnedCall[T]): Self = StObject.set(x, "lastReturnedCall", value.asInstanceOf[js.Any])
+        inline def setLastReturnedCall(value: ReturnedCall[T]): Self = StObject.set(x, "lastReturnedCall", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastReturnedCallNull: Self = StObject.set(x, "lastReturnedCall", null)
+        inline def setLastReturnedCallNull: Self = StObject.set(x, "lastReturnedCall", null)
         
-        @scala.inline
-        def setLastThrownCall(value: ThrownCall[T]): Self = StObject.set(x, "lastThrownCall", value.asInstanceOf[js.Any])
+        inline def setLastThrownCall(value: ThrownCall[T]): Self = StObject.set(x, "lastThrownCall", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastThrownCallNull: Self = StObject.set(x, "lastThrownCall", null)
+        inline def setLastThrownCallNull: Self = StObject.set(x, "lastThrownCall", null)
         
-        @scala.inline
-        def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+        inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setReturnedCalls(value: js.Array[ReturnedCall[T]]): Self = StObject.set(x, "returnedCalls", value.asInstanceOf[js.Any])
+        inline def setReturnedCalls(value: js.Array[ReturnedCall[T]]): Self = StObject.set(x, "returnedCalls", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReturnedCallsVarargs(value: ReturnedCall[T]*): Self = StObject.set(x, "returnedCalls", js.Array(value :_*))
+        inline def setReturnedCallsVarargs(value: ReturnedCall[T]*): Self = StObject.set(x, "returnedCalls", js.Array(value :_*))
         
-        @scala.inline
-        def setThrownCalls(value: js.Array[ThrownCall[T]]): Self = StObject.set(x, "thrownCalls", value.asInstanceOf[js.Any])
+        inline def setThrownCalls(value: js.Array[ThrownCall[T]]): Self = StObject.set(x, "thrownCalls", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThrownCallsVarargs(value: ThrownCall[T]*): Self = StObject.set(x, "thrownCalls", js.Array(value :_*))
+        inline def setThrownCallsVarargs(value: ThrownCall[T]*): Self = StObject.set(x, "thrownCalls", js.Array(value :_*))
       }
     }
     
@@ -172,8 +147,7 @@ object mod {
     }
     object ReturnedCall {
       
-      @scala.inline
-      def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](arguments: Parameters[T], `return`: ReturnType[T], `this`: This[T]): ReturnedCall[T] = {
+      inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](arguments: Parameters[T], `return`: ReturnType[T], `this`: This[T]): ReturnedCall[T] = {
         val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
         __obj.updateDynamic("return")(`return`.asInstanceOf[js.Any])
         __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
@@ -181,20 +155,15 @@ object mod {
         __obj.asInstanceOf[ReturnedCall[T]]
       }
       
-      @scala.inline
-      implicit class ReturnedCallMutableBuilder[Self <: ReturnedCall[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & ReturnedCall[T]) extends AnyVal {
+      extension [Self <: ReturnedCall[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & ReturnedCall[T]) {
         
-        @scala.inline
-        def setArguments(value: Parameters[T]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+        inline def setArguments(value: Parameters[T]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReturn(value: ReturnType[T]): Self = StObject.set(x, "return", value.asInstanceOf[js.Any])
+        inline def setReturn(value: ReturnType[T]): Self = StObject.set(x, "return", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThis(value: This[T]): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
+        inline def setThis(value: This[T]): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: `return`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: `return`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -213,8 +182,7 @@ object mod {
     }
     object ThrownCall {
       
-      @scala.inline
-      def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](arguments: Parameters[T], `this`: This[T], `throw`: js.Any): ThrownCall[T] = {
+      inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](arguments: Parameters[T], `this`: This[T], `throw`: js.Any): ThrownCall[T] = {
         val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
         __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
         __obj.updateDynamic("throw")(`throw`.asInstanceOf[js.Any])
@@ -222,20 +190,15 @@ object mod {
         __obj.asInstanceOf[ThrownCall[T]]
       }
       
-      @scala.inline
-      implicit class ThrownCallMutableBuilder[Self <: ThrownCall[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & ThrownCall[T]) extends AnyVal {
+      extension [Self <: ThrownCall[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & ThrownCall[T]) {
         
-        @scala.inline
-        def setArguments(value: Parameters[T]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+        inline def setArguments(value: Parameters[T]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThis(value: This[T]): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
+        inline def setThis(value: This[T]): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThrow(value: js.Any): Self = StObject.set(x, "throw", value.asInstanceOf[js.Any])
+        inline def setThrow(value: js.Any): Self = StObject.set(x, "throw", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: `throw`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: `throw`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
   }

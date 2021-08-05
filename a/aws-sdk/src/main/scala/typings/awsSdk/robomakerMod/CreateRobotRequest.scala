@@ -28,28 +28,21 @@ trait CreateRobotRequest extends StObject {
 }
 object CreateRobotRequest {
   
-  @scala.inline
-  def apply(architecture: Architecture, greengrassGroupId: Id, name: Name): CreateRobotRequest = {
+  inline def apply(architecture: Architecture, greengrassGroupId: Id, name: Name): CreateRobotRequest = {
     val __obj = js.Dynamic.literal(architecture = architecture.asInstanceOf[js.Any], greengrassGroupId = greengrassGroupId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRobotRequest]
   }
   
-  @scala.inline
-  implicit class CreateRobotRequestMutableBuilder[Self <: CreateRobotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRobotRequest](x: Self) {
     
-    @scala.inline
-    def setArchitecture(value: Architecture): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+    inline def setArchitecture(value: Architecture): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreengrassGroupId(value: Id): Self = StObject.set(x, "greengrassGroupId", value.asInstanceOf[js.Any])
+    inline def setGreengrassGroupId(value: Id): Self = StObject.set(x, "greengrassGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

@@ -44,43 +44,31 @@ trait SchemaPrivateClusterConfig extends StObject {
 }
 object SchemaPrivateClusterConfig {
   
-  @scala.inline
-  def apply(): SchemaPrivateClusterConfig = {
+  inline def apply(): SchemaPrivateClusterConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPrivateClusterConfig]
   }
   
-  @scala.inline
-  implicit class SchemaPrivateClusterConfigMutableBuilder[Self <: SchemaPrivateClusterConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPrivateClusterConfig](x: Self) {
     
-    @scala.inline
-    def setEnablePrivateEndpoint(value: Boolean): Self = StObject.set(x, "enablePrivateEndpoint", value.asInstanceOf[js.Any])
+    inline def setEnablePrivateEndpoint(value: Boolean): Self = StObject.set(x, "enablePrivateEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePrivateEndpointUndefined: Self = StObject.set(x, "enablePrivateEndpoint", js.undefined)
+    inline def setEnablePrivateEndpointUndefined: Self = StObject.set(x, "enablePrivateEndpoint", js.undefined)
     
-    @scala.inline
-    def setEnablePrivateNodes(value: Boolean): Self = StObject.set(x, "enablePrivateNodes", value.asInstanceOf[js.Any])
+    inline def setEnablePrivateNodes(value: Boolean): Self = StObject.set(x, "enablePrivateNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePrivateNodesUndefined: Self = StObject.set(x, "enablePrivateNodes", js.undefined)
+    inline def setEnablePrivateNodesUndefined: Self = StObject.set(x, "enablePrivateNodes", js.undefined)
     
-    @scala.inline
-    def setMasterIpv4CidrBlock(value: String): Self = StObject.set(x, "masterIpv4CidrBlock", value.asInstanceOf[js.Any])
+    inline def setMasterIpv4CidrBlock(value: String): Self = StObject.set(x, "masterIpv4CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterIpv4CidrBlockUndefined: Self = StObject.set(x, "masterIpv4CidrBlock", js.undefined)
+    inline def setMasterIpv4CidrBlockUndefined: Self = StObject.set(x, "masterIpv4CidrBlock", js.undefined)
     
-    @scala.inline
-    def setPrivateEndpoint(value: String): Self = StObject.set(x, "privateEndpoint", value.asInstanceOf[js.Any])
+    inline def setPrivateEndpoint(value: String): Self = StObject.set(x, "privateEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateEndpointUndefined: Self = StObject.set(x, "privateEndpoint", js.undefined)
+    inline def setPrivateEndpointUndefined: Self = StObject.set(x, "privateEndpoint", js.undefined)
     
-    @scala.inline
-    def setPublicEndpoint(value: String): Self = StObject.set(x, "publicEndpoint", value.asInstanceOf[js.Any])
+    inline def setPublicEndpoint(value: String): Self = StObject.set(x, "publicEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicEndpointUndefined: Self = StObject.set(x, "publicEndpoint", js.undefined)
+    inline def setPublicEndpointUndefined: Self = StObject.set(x, "publicEndpoint", js.undefined)
   }
 }

@@ -10,6 +10,5 @@ object valuesOfKeyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(data: js.Array[js.Any], name: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def default(data: js.Array[js.Any], name: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 }

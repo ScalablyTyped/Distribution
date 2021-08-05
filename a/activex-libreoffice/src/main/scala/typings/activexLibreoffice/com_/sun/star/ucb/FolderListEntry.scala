@@ -30,31 +30,23 @@ trait FolderListEntry extends StObject {
 }
 object FolderListEntry {
   
-  @scala.inline
-  def apply(ID: String, New: Boolean, Purge: Boolean, Removed: Boolean, Subscribed: Boolean, Title: String): FolderListEntry = {
+  inline def apply(ID: String, New: Boolean, Purge: Boolean, Removed: Boolean, Subscribed: Boolean, Title: String): FolderListEntry = {
     val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any], New = New.asInstanceOf[js.Any], Purge = Purge.asInstanceOf[js.Any], Removed = Removed.asInstanceOf[js.Any], Subscribed = Subscribed.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[FolderListEntry]
   }
   
-  @scala.inline
-  implicit class FolderListEntryMutableBuilder[Self <: FolderListEntry] (val x: Self) extends AnyVal {
+  extension [Self <: FolderListEntry](x: Self) {
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew(value: Boolean): Self = StObject.set(x, "New", value.asInstanceOf[js.Any])
+    inline def setNew(value: Boolean): Self = StObject.set(x, "New", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurge(value: Boolean): Self = StObject.set(x, "Purge", value.asInstanceOf[js.Any])
+    inline def setPurge(value: Boolean): Self = StObject.set(x, "Purge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoved(value: Boolean): Self = StObject.set(x, "Removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: Boolean): Self = StObject.set(x, "Removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribed(value: Boolean): Self = StObject.set(x, "Subscribed", value.asInstanceOf[js.Any])
+    inline def setSubscribed(value: Boolean): Self = StObject.set(x, "Subscribed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

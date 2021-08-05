@@ -54,61 +54,43 @@ trait ParamsResourceTimelineList
 }
 object ParamsResourceTimelineList {
   
-  @scala.inline
-  def apply(): ParamsResourceTimelineList = {
+  inline def apply(): ParamsResourceTimelineList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceTimelineList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceTimelineListMutableBuilder[Self <: ParamsResourceTimelineList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceTimelineList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+    inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
-    @scala.inline
-    def setIncludeDeleted(value: Boolean): Self = StObject.set(x, "includeDeleted", value.asInstanceOf[js.Any])
+    inline def setIncludeDeleted(value: Boolean): Self = StObject.set(x, "includeDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDeletedUndefined: Self = StObject.set(x, "includeDeleted", js.undefined)
+    inline def setIncludeDeletedUndefined: Self = StObject.set(x, "includeDeleted", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setPinnedOnly(value: Boolean): Self = StObject.set(x, "pinnedOnly", value.asInstanceOf[js.Any])
+    inline def setPinnedOnly(value: Boolean): Self = StObject.set(x, "pinnedOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinnedOnlyUndefined: Self = StObject.set(x, "pinnedOnly", js.undefined)
+    inline def setPinnedOnlyUndefined: Self = StObject.set(x, "pinnedOnly", js.undefined)
     
-    @scala.inline
-    def setSourceItemId(value: String): Self = StObject.set(x, "sourceItemId", value.asInstanceOf[js.Any])
+    inline def setSourceItemId(value: String): Self = StObject.set(x, "sourceItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceItemIdUndefined: Self = StObject.set(x, "sourceItemId", js.undefined)
+    inline def setSourceItemIdUndefined: Self = StObject.set(x, "sourceItemId", js.undefined)
   }
 }

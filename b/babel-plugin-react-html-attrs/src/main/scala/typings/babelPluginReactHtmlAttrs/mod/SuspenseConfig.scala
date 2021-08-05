@@ -14,25 +14,19 @@ trait SuspenseConfig
 }
 object SuspenseConfig {
   
-  @scala.inline
-  def apply(timeoutMs: Double): SuspenseConfig = {
+  inline def apply(timeoutMs: Double): SuspenseConfig = {
     val __obj = js.Dynamic.literal(timeoutMs = timeoutMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuspenseConfig]
   }
   
-  @scala.inline
-  implicit class SuspenseConfigMutableBuilder[Self <: SuspenseConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SuspenseConfig](x: Self) {
     
-    @scala.inline
-    def setBusyDelayMs(value: Double): Self = StObject.set(x, "busyDelayMs", value.asInstanceOf[js.Any])
+    inline def setBusyDelayMs(value: Double): Self = StObject.set(x, "busyDelayMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusyDelayMsUndefined: Self = StObject.set(x, "busyDelayMs", js.undefined)
+    inline def setBusyDelayMsUndefined: Self = StObject.set(x, "busyDelayMs", js.undefined)
     
-    @scala.inline
-    def setBusyMinDurationMs(value: Double): Self = StObject.set(x, "busyMinDurationMs", value.asInstanceOf[js.Any])
+    inline def setBusyMinDurationMs(value: Double): Self = StObject.set(x, "busyMinDurationMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusyMinDurationMsUndefined: Self = StObject.set(x, "busyMinDurationMs", js.undefined)
+    inline def setBusyMinDurationMsUndefined: Self = StObject.set(x, "busyMinDurationMs", js.undefined)
   }
 }

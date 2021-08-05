@@ -12,8 +12,7 @@ object createReactionCleanupTrackingUsingFinalizationRegisterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createReactionCleanupTrackingUsingFinalizationRegister(
+  inline def createReactionCleanupTrackingUsingFinalizationRegister(
     FinalizationRegistry: NonNullable[
       js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof FinalizationRegistryType */ js.Any

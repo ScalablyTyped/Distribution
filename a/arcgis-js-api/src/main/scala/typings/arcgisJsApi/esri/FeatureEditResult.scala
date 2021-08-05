@@ -33,8 +33,7 @@ trait FeatureEditResult
 }
 object FeatureEditResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     error: FeatureEditResultError,
     globalId: String,
@@ -46,16 +45,12 @@ object FeatureEditResult {
     __obj.asInstanceOf[FeatureEditResult]
   }
   
-  @scala.inline
-  implicit class FeatureEditResultMutableBuilder[Self <: FeatureEditResult] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureEditResult](x: Self) {
     
-    @scala.inline
-    def setError(value: FeatureEditResultError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: FeatureEditResultError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalId(value: String): Self = StObject.set(x, "globalId", value.asInstanceOf[js.Any])
+    inline def setGlobalId(value: String): Self = StObject.set(x, "globalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectId(value: Double): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: Double): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
   }
 }

@@ -31,8 +31,7 @@ trait XShapeGrouper
 }
 object XShapeGrouper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     group: XShapes => XShapeGroup,
     queryInterface: `type` => js.Any,
@@ -43,13 +42,10 @@ object XShapeGrouper {
     __obj.asInstanceOf[XShapeGrouper]
   }
   
-  @scala.inline
-  implicit class XShapeGrouperMutableBuilder[Self <: XShapeGrouper] (val x: Self) extends AnyVal {
+  extension [Self <: XShapeGrouper](x: Self) {
     
-    @scala.inline
-    def setGroup(value: XShapes => XShapeGroup): Self = StObject.set(x, "group", js.Any.fromFunction1(value))
+    inline def setGroup(value: XShapes => XShapeGroup): Self = StObject.set(x, "group", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUngroup(value: XShapeGroup => Unit): Self = StObject.set(x, "ungroup", js.Any.fromFunction1(value))
+    inline def setUngroup(value: XShapeGroup => Unit): Self = StObject.set(x, "ungroup", js.Any.fromFunction1(value))
   }
 }

@@ -53,70 +53,49 @@ trait IExpandedMonarchLanguageAction extends StObject {
 }
 object IExpandedMonarchLanguageAction {
   
-  @scala.inline
-  def apply(): IExpandedMonarchLanguageAction = {
+  inline def apply(): IExpandedMonarchLanguageAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IExpandedMonarchLanguageAction]
   }
   
-  @scala.inline
-  implicit class IExpandedMonarchLanguageActionMutableBuilder[Self <: IExpandedMonarchLanguageAction] (val x: Self) extends AnyVal {
+  extension [Self <: IExpandedMonarchLanguageAction](x: Self) {
     
-    @scala.inline
-    def setBracket(value: String): Self = StObject.set(x, "bracket", value.asInstanceOf[js.Any])
+    inline def setBracket(value: String): Self = StObject.set(x, "bracket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBracketUndefined: Self = StObject.set(x, "bracket", js.undefined)
+    inline def setBracketUndefined: Self = StObject.set(x, "bracket", js.undefined)
     
-    @scala.inline
-    def setCases(value: js.Object): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
+    inline def setCases(value: js.Object): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCasesUndefined: Self = StObject.set(x, "cases", js.undefined)
+    inline def setCasesUndefined: Self = StObject.set(x, "cases", js.undefined)
     
-    @scala.inline
-    def setGoBack(value: Double): Self = StObject.set(x, "goBack", value.asInstanceOf[js.Any])
+    inline def setGoBack(value: Double): Self = StObject.set(x, "goBack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoBackUndefined: Self = StObject.set(x, "goBack", js.undefined)
+    inline def setGoBackUndefined: Self = StObject.set(x, "goBack", js.undefined)
     
-    @scala.inline
-    def setGroup(value: js.Array[IMonarchLanguageAction]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: js.Array[IMonarchLanguageAction]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setGroupVarargs(value: IMonarchLanguageAction*): Self = StObject.set(x, "group", js.Array(value :_*))
+    inline def setGroupVarargs(value: IMonarchLanguageAction*): Self = StObject.set(x, "group", js.Array(value :_*))
     
-    @scala.inline
-    def setLog(value: String): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: String): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
-    @scala.inline
-    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextEmbedded(value: String): Self = StObject.set(x, "nextEmbedded", value.asInstanceOf[js.Any])
+    inline def setNextEmbedded(value: String): Self = StObject.set(x, "nextEmbedded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextEmbeddedUndefined: Self = StObject.set(x, "nextEmbedded", js.undefined)
+    inline def setNextEmbeddedUndefined: Self = StObject.set(x, "nextEmbedded", js.undefined)
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    @scala.inline
-    def setSwitchTo(value: String): Self = StObject.set(x, "switchTo", value.asInstanceOf[js.Any])
+    inline def setSwitchTo(value: String): Self = StObject.set(x, "switchTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitchToUndefined: Self = StObject.set(x, "switchTo", js.undefined)
+    inline def setSwitchToUndefined: Self = StObject.set(x, "switchTo", js.undefined)
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

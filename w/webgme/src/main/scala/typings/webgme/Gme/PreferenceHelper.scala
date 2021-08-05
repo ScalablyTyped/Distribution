@@ -10,16 +10,13 @@ trait PreferenceHelper extends StObject {
 }
 object PreferenceHelper {
   
-  @scala.inline
-  def apply(getPreferences: () => PreferenceHelper): PreferenceHelper = {
+  inline def apply(getPreferences: () => PreferenceHelper): PreferenceHelper = {
     val __obj = js.Dynamic.literal(getPreferences = js.Any.fromFunction0(getPreferences))
     __obj.asInstanceOf[PreferenceHelper]
   }
   
-  @scala.inline
-  implicit class PreferenceHelperMutableBuilder[Self <: PreferenceHelper] (val x: Self) extends AnyVal {
+  extension [Self <: PreferenceHelper](x: Self) {
     
-    @scala.inline
-    def setGetPreferences(value: () => PreferenceHelper): Self = StObject.set(x, "getPreferences", js.Any.fromFunction0(value))
+    inline def setGetPreferences(value: () => PreferenceHelper): Self = StObject.set(x, "getPreferences", js.Any.fromFunction0(value))
   }
 }

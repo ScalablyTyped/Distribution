@@ -18,25 +18,19 @@ trait MetadataInfo extends StObject {
 }
 object MetadataInfo {
   
-  @scala.inline
-  def apply(): MetadataInfo = {
+  inline def apply(): MetadataInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetadataInfo]
   }
   
-  @scala.inline
-  implicit class MetadataInfoMutableBuilder[Self <: MetadataInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MetadataInfo](x: Self) {
     
-    @scala.inline
-    def setCreatedTime(value: CreatedTimestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: CreatedTimestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    @scala.inline
-    def setMetadataValue(value: MetadataValueString): Self = StObject.set(x, "MetadataValue", value.asInstanceOf[js.Any])
+    inline def setMetadataValue(value: MetadataValueString): Self = StObject.set(x, "MetadataValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataValueUndefined: Self = StObject.set(x, "MetadataValue", js.undefined)
+    inline def setMetadataValueUndefined: Self = StObject.set(x, "MetadataValue", js.undefined)
   }
 }

@@ -16,25 +16,19 @@ trait HAdjustmentFactor extends StObject {
 }
 object HAdjustmentFactor {
   
-  @scala.inline
-  def apply(hAdjustmentFactor: Double, height: Double, vAdjustmentFactor: Double, width: Double): HAdjustmentFactor = {
+  inline def apply(hAdjustmentFactor: Double, height: Double, vAdjustmentFactor: Double, width: Double): HAdjustmentFactor = {
     val __obj = js.Dynamic.literal(hAdjustmentFactor = hAdjustmentFactor.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], vAdjustmentFactor = vAdjustmentFactor.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[HAdjustmentFactor]
   }
   
-  @scala.inline
-  implicit class HAdjustmentFactorMutableBuilder[Self <: HAdjustmentFactor] (val x: Self) extends AnyVal {
+  extension [Self <: HAdjustmentFactor](x: Self) {
     
-    @scala.inline
-    def setHAdjustmentFactor(value: Double): Self = StObject.set(x, "hAdjustmentFactor", value.asInstanceOf[js.Any])
+    inline def setHAdjustmentFactor(value: Double): Self = StObject.set(x, "hAdjustmentFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVAdjustmentFactor(value: Double): Self = StObject.set(x, "vAdjustmentFactor", value.asInstanceOf[js.Any])
+    inline def setVAdjustmentFactor(value: Double): Self = StObject.set(x, "vAdjustmentFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

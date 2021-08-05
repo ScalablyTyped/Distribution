@@ -19,10 +19,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(commands: js.Array[CommandObj | String]): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
-  @scala.inline
-  def apply(commands: js.Array[CommandObj | String], options: Options): js.Promise[Null] = (^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Null]]
+  inline def apply(commands: js.Array[CommandObj | String]): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
+  inline def apply(commands: js.Array[CommandObj | String], options: Options): js.Promise[Null] = (^.asInstanceOf[js.Dynamic].apply(commands.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Null]]
   
   @JSImport("concurrently", JSImport.Namespace)
   @js.native
@@ -40,35 +38,26 @@ object mod {
   }
   object CommandObj {
     
-    @scala.inline
-    def apply(command: String): CommandObj = {
+    inline def apply(command: String): CommandObj = {
       val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandObj]
     }
     
-    @scala.inline
-    implicit class CommandObjMutableBuilder[Self <: CommandObj] (val x: Self) extends AnyVal {
+    extension [Self <: CommandObj](x: Self) {
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPrefixColor(value: String): Self = StObject.set(x, "prefixColor", value.asInstanceOf[js.Any])
+      inline def setPrefixColor(value: String): Self = StObject.set(x, "prefixColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixColorUndefined: Self = StObject.set(x, "prefixColor", js.undefined)
+      inline def setPrefixColorUndefined: Self = StObject.set(x, "prefixColor", js.undefined)
     }
   }
   
@@ -117,89 +106,62 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDefaultInputTarget(value: Double): Self = StObject.set(x, "defaultInputTarget", value.asInstanceOf[js.Any])
+      inline def setDefaultInputTarget(value: Double): Self = StObject.set(x, "defaultInputTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultInputTargetUndefined: Self = StObject.set(x, "defaultInputTarget", js.undefined)
+      inline def setDefaultInputTargetUndefined: Self = StObject.set(x, "defaultInputTarget", js.undefined)
       
-      @scala.inline
-      def setInputStream(value: ReadableStream): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
+      inline def setInputStream(value: ReadableStream): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputStreamUndefined: Self = StObject.set(x, "inputStream", js.undefined)
+      inline def setInputStreamUndefined: Self = StObject.set(x, "inputStream", js.undefined)
       
-      @scala.inline
-      def setKillOthers(value: js.Array[success | failure]): Self = StObject.set(x, "killOthers", value.asInstanceOf[js.Any])
+      inline def setKillOthers(value: js.Array[success | failure]): Self = StObject.set(x, "killOthers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKillOthersUndefined: Self = StObject.set(x, "killOthers", js.undefined)
+      inline def setKillOthersUndefined: Self = StObject.set(x, "killOthers", js.undefined)
       
-      @scala.inline
-      def setKillOthersVarargs(value: (success | failure)*): Self = StObject.set(x, "killOthers", js.Array(value :_*))
+      inline def setKillOthersVarargs(value: (success | failure)*): Self = StObject.set(x, "killOthers", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxProcesses(value: Double): Self = StObject.set(x, "maxProcesses", value.asInstanceOf[js.Any])
+      inline def setMaxProcesses(value: Double): Self = StObject.set(x, "maxProcesses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxProcessesUndefined: Self = StObject.set(x, "maxProcesses", js.undefined)
+      inline def setMaxProcessesUndefined: Self = StObject.set(x, "maxProcesses", js.undefined)
       
-      @scala.inline
-      def setOutputStream(value: WritableStream): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
+      inline def setOutputStream(value: WritableStream): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputStreamUndefined: Self = StObject.set(x, "outputStream", js.undefined)
+      inline def setOutputStreamUndefined: Self = StObject.set(x, "outputStream", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: index | pid | time | command | name | none | String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: index | pid | time | command | name | none | String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixLength(value: Double): Self = StObject.set(x, "prefixLength", value.asInstanceOf[js.Any])
+      inline def setPrefixLength(value: Double): Self = StObject.set(x, "prefixLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixLengthUndefined: Self = StObject.set(x, "prefixLength", js.undefined)
+      inline def setPrefixLengthUndefined: Self = StObject.set(x, "prefixLength", js.undefined)
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
-      @scala.inline
-      def setRestartDelay(value: Double): Self = StObject.set(x, "restartDelay", value.asInstanceOf[js.Any])
+      inline def setRestartDelay(value: Double): Self = StObject.set(x, "restartDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestartDelayUndefined: Self = StObject.set(x, "restartDelay", js.undefined)
+      inline def setRestartDelayUndefined: Self = StObject.set(x, "restartDelay", js.undefined)
       
-      @scala.inline
-      def setRestartTries(value: Double): Self = StObject.set(x, "restartTries", value.asInstanceOf[js.Any])
+      inline def setRestartTries(value: Double): Self = StObject.set(x, "restartTries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestartTriesUndefined: Self = StObject.set(x, "restartTries", js.undefined)
+      inline def setRestartTriesUndefined: Self = StObject.set(x, "restartTries", js.undefined)
       
-      @scala.inline
-      def setSuccessCondition(value: first | last): Self = StObject.set(x, "successCondition", value.asInstanceOf[js.Any])
+      inline def setSuccessCondition(value: first | last): Self = StObject.set(x, "successCondition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessConditionUndefined: Self = StObject.set(x, "successCondition", js.undefined)
+      inline def setSuccessConditionUndefined: Self = StObject.set(x, "successCondition", js.undefined)
       
-      @scala.inline
-      def setTimestampFormat(value: String): Self = StObject.set(x, "timestampFormat", value.asInstanceOf[js.Any])
+      inline def setTimestampFormat(value: String): Self = StObject.set(x, "timestampFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampFormatUndefined: Self = StObject.set(x, "timestampFormat", js.undefined)
+      inline def setTimestampFormatUndefined: Self = StObject.set(x, "timestampFormat", js.undefined)
     }
   }
 }

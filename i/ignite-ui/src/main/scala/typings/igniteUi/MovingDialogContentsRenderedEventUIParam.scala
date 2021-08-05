@@ -13,19 +13,15 @@ trait MovingDialogContentsRenderedEventUIParam extends StObject {
 }
 object MovingDialogContentsRenderedEventUIParam {
   
-  @scala.inline
-  def apply(): MovingDialogContentsRenderedEventUIParam = {
+  inline def apply(): MovingDialogContentsRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MovingDialogContentsRenderedEventUIParam]
   }
   
-  @scala.inline
-  implicit class MovingDialogContentsRenderedEventUIParamMutableBuilder[Self <: MovingDialogContentsRenderedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: MovingDialogContentsRenderedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

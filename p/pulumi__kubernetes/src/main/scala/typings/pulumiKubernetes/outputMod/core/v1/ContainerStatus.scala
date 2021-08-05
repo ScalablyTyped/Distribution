@@ -56,8 +56,7 @@ trait ContainerStatus extends StObject {
 }
 object ContainerStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containerID: String,
     image: String,
     imageID: String,
@@ -72,34 +71,24 @@ object ContainerStatus {
     __obj.asInstanceOf[ContainerStatus]
   }
   
-  @scala.inline
-  implicit class ContainerStatusMutableBuilder[Self <: ContainerStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerStatus](x: Self) {
     
-    @scala.inline
-    def setContainerID(value: String): Self = StObject.set(x, "containerID", value.asInstanceOf[js.Any])
+    inline def setContainerID(value: String): Self = StObject.set(x, "containerID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageID(value: String): Self = StObject.set(x, "imageID", value.asInstanceOf[js.Any])
+    inline def setImageID(value: String): Self = StObject.set(x, "imageID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastState(value: ContainerState): Self = StObject.set(x, "lastState", value.asInstanceOf[js.Any])
+    inline def setLastState(value: ContainerState): Self = StObject.set(x, "lastState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+    inline def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartCount(value: Double): Self = StObject.set(x, "restartCount", value.asInstanceOf[js.Any])
+    inline def setRestartCount(value: Double): Self = StObject.set(x, "restartCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarted(value: Boolean): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+    inline def setStarted(value: Boolean): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: ContainerState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ContainerState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

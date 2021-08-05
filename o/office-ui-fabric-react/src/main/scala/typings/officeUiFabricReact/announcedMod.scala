@@ -34,7 +34,6 @@ object announcedMod {
     @JSImport("office-ui-fabric-react/lib/components/Announced", "AnnouncedBase.defaultProps")
     @js.native
     def defaultProps: PartialIAnnouncedProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialIAnnouncedProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialIAnnouncedProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

@@ -16,22 +16,17 @@ trait SchemaClassifyTextResponse extends StObject {
 }
 object SchemaClassifyTextResponse {
   
-  @scala.inline
-  def apply(): SchemaClassifyTextResponse = {
+  inline def apply(): SchemaClassifyTextResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClassifyTextResponse]
   }
   
-  @scala.inline
-  implicit class SchemaClassifyTextResponseMutableBuilder[Self <: SchemaClassifyTextResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClassifyTextResponse](x: Self) {
     
-    @scala.inline
-    def setCategories(value: js.Array[SchemaClassificationCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[SchemaClassificationCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: SchemaClassificationCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: SchemaClassificationCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
   }
 }

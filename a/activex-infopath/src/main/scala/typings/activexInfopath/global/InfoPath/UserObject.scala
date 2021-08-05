@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.UserObject")
 @js.native
-class UserObject protected ()
+/* private */ class UserObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.UserObject {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.UserObject_typekey")
   var InfoPathDotUserObject_typekey: typings.activexInfopath.InfoPath.UserObject = js.native
   

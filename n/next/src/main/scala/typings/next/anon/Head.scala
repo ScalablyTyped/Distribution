@@ -16,37 +16,27 @@ trait Head extends StObject {
 }
 object Head {
   
-  @scala.inline
-  def apply(): Head = {
+  inline def apply(): Head = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Head]
   }
   
-  @scala.inline
-  implicit class HeadMutableBuilder[Self <: Head] (val x: Self) extends AnyVal {
+  extension [Self <: Head](x: Self) {
     
-    @scala.inline
-    def setHead(value: Boolean): Self = StObject.set(x, "Head", value.asInstanceOf[js.Any])
+    inline def setHead(value: Boolean): Self = StObject.set(x, "Head", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadUndefined: Self = StObject.set(x, "Head", js.undefined)
+    inline def setHeadUndefined: Self = StObject.set(x, "Head", js.undefined)
     
-    @scala.inline
-    def setHtml(value: Boolean): Self = StObject.set(x, "Html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: Boolean): Self = StObject.set(x, "Html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "Html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "Html", js.undefined)
     
-    @scala.inline
-    def setMain(value: Boolean): Self = StObject.set(x, "Main", value.asInstanceOf[js.Any])
+    inline def setMain(value: Boolean): Self = StObject.set(x, "Main", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainUndefined: Self = StObject.set(x, "Main", js.undefined)
+    inline def setMainUndefined: Self = StObject.set(x, "Main", js.undefined)
     
-    @scala.inline
-    def setNextScript(value: Boolean): Self = StObject.set(x, "NextScript", value.asInstanceOf[js.Any])
+    inline def setNextScript(value: Boolean): Self = StObject.set(x, "NextScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextScriptUndefined: Self = StObject.set(x, "NextScript", js.undefined)
+    inline def setNextScriptUndefined: Self = StObject.set(x, "NextScript", js.undefined)
   }
 }

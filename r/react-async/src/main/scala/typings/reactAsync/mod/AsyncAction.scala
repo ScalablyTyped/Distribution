@@ -15,29 +15,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AsyncAction[T] extends StObject
 object AsyncAction {
   
-  @scala.inline
-  def Cancel(meta: Dictmeta): typings.reactAsync.mod.Cancel = {
+  inline def Cancel(meta: Dictmeta): typings.reactAsync.mod.Cancel = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("cancel")
     __obj.asInstanceOf[typings.reactAsync.mod.Cancel]
   }
   
-  @scala.inline
-  def Fulfill[T](meta: Dictmeta, payload: T): typings.reactAsync.mod.Fulfill[T] = {
+  inline def Fulfill[T](meta: Dictmeta, payload: T): typings.reactAsync.mod.Fulfill[T] = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("fulfill")
     __obj.asInstanceOf[typings.reactAsync.mod.Fulfill[T]]
   }
   
-  @scala.inline
-  def Reject(meta: Dictmeta, payload: Error): typings.reactAsync.mod.Reject = {
+  inline def Reject(meta: Dictmeta, payload: Error): typings.reactAsync.mod.Reject = {
     val __obj = js.Dynamic.literal(error = true, meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("reject")
     __obj.asInstanceOf[typings.reactAsync.mod.Reject]
   }
   
-  @scala.inline
-  def Start(meta: Dictmeta, payload: () => js.Promise[Unit]): typings.reactAsync.mod.Start = {
+  inline def Start(meta: Dictmeta, payload: () => js.Promise[Unit]): typings.reactAsync.mod.Start = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], payload = js.Any.fromFunction0(payload))
     __obj.updateDynamic("type")("start")
     __obj.asInstanceOf[typings.reactAsync.mod.Start]

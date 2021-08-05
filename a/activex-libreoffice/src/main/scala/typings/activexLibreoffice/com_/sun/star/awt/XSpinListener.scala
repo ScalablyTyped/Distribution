@@ -26,8 +26,7 @@ trait XSpinListener
 }
 object XSpinListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     down: SpinEvent => Unit,
@@ -41,19 +40,14 @@ object XSpinListener {
     __obj.asInstanceOf[XSpinListener]
   }
   
-  @scala.inline
-  implicit class XSpinListenerMutableBuilder[Self <: XSpinListener] (val x: Self) extends AnyVal {
+  extension [Self <: XSpinListener](x: Self) {
     
-    @scala.inline
-    def setDown(value: SpinEvent => Unit): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+    inline def setDown(value: SpinEvent => Unit): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFirst(value: SpinEvent => Unit): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
+    inline def setFirst(value: SpinEvent => Unit): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLast(value: SpinEvent => Unit): Self = StObject.set(x, "last", js.Any.fromFunction1(value))
+    inline def setLast(value: SpinEvent => Unit): Self = StObject.set(x, "last", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUp(value: SpinEvent => Unit): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
+    inline def setUp(value: SpinEvent => Unit): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
   }
 }

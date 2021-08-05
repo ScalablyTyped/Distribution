@@ -16,32 +16,24 @@ object anon {
   }
   object TagClass {
     
-    @scala.inline
-    def apply(): TagClass = {
+    inline def apply(): TagClass = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TagClass]
     }
     
-    @scala.inline
-    implicit class TagClassMutableBuilder[Self <: TagClass] (val x: Self) extends AnyVal {
+    extension [Self <: TagClass](x: Self) {
       
-      @scala.inline
-      def setTagClass(value: String): Self = StObject.set(x, "tagClass", value.asInstanceOf[js.Any])
+      inline def setTagClass(value: String): Self = StObject.set(x, "tagClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagClassUndefined: Self = StObject.set(x, "tagClass", js.undefined)
+      inline def setTagClassUndefined: Self = StObject.set(x, "tagClass", js.undefined)
       
-      @scala.inline
-      def setTagClose(value: String): Self = StObject.set(x, "tagClose", value.asInstanceOf[js.Any])
+      inline def setTagClose(value: String): Self = StObject.set(x, "tagClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagCloseUndefined: Self = StObject.set(x, "tagClose", js.undefined)
+      inline def setTagCloseUndefined: Self = StObject.set(x, "tagClose", js.undefined)
       
-      @scala.inline
-      def setTagOpen(value: String): Self = StObject.set(x, "tagOpen", value.asInstanceOf[js.Any])
+      inline def setTagOpen(value: String): Self = StObject.set(x, "tagOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagOpenUndefined: Self = StObject.set(x, "tagOpen", js.undefined)
+      inline def setTagOpenUndefined: Self = StObject.set(x, "tagOpen", js.undefined)
     }
   }
 }

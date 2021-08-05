@@ -10,16 +10,13 @@ trait KeyAlgorithm extends StObject {
 }
 object KeyAlgorithm {
   
-  @scala.inline
-  def apply(name: java.lang.String): KeyAlgorithm = {
+  inline def apply(name: java.lang.String): KeyAlgorithm = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyAlgorithm]
   }
   
-  @scala.inline
-  implicit class KeyAlgorithmMutableBuilder[Self <: KeyAlgorithm] (val x: Self) extends AnyVal {
+  extension [Self <: KeyAlgorithm](x: Self) {
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -15,43 +15,36 @@ object constantsMod {
     @JSImport("@antv/data-set/lib/constants", "default.GEO")
     @js.native
     def GEO: String = js.native
-    @scala.inline
-    def GEO_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GEO")(x.asInstanceOf[js.Any])
+    inline def GEO_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GEO")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/data-set/lib/constants", "default.GEO_GRATICULE")
     @js.native
     def GEO_GRATICULE: String = js.native
-    @scala.inline
-    def GEO_GRATICULE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GEO_GRATICULE")(x.asInstanceOf[js.Any])
+    inline def GEO_GRATICULE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GEO_GRATICULE")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/data-set/lib/constants", "default.GRAPH")
     @js.native
     def GRAPH: String = js.native
-    @scala.inline
-    def GRAPH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAPH")(x.asInstanceOf[js.Any])
+    inline def GRAPH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAPH")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/data-set/lib/constants", "default.HEX")
     @js.native
     def HEX: String = js.native
-    @scala.inline
-    def HEX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEX")(x.asInstanceOf[js.Any])
+    inline def HEX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEX")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/data-set/lib/constants", "default.HIERARCHY")
     @js.native
     def HIERARCHY: String = js.native
-    @scala.inline
-    def HIERARCHY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIERARCHY")(x.asInstanceOf[js.Any])
+    inline def HIERARCHY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIERARCHY")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/data-set/lib/constants", "default.STATISTICS_METHODS")
     @js.native
     def STATISTICS_METHODS: js.Array[String] = js.native
-    @scala.inline
-    def STATISTICS_METHODS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATISTICS_METHODS")(x.asInstanceOf[js.Any])
+    inline def STATISTICS_METHODS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATISTICS_METHODS")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/data-set/lib/constants", "default.TABLE")
     @js.native
     def TABLE: String = js.native
-    @scala.inline
-    def TABLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TABLE")(x.asInstanceOf[js.Any])
+    inline def TABLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TABLE")(x.asInstanceOf[js.Any])
   }
 }

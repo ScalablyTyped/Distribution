@@ -88,8 +88,7 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends StObject {
 }
 object InsertModalColumnDescription {
   
-  @scala.inline
-  def apply[TRow /* <: js.Object */](
+  inline def apply[TRow /* <: js.Object */](
     customInsertEditor: (InsertModalColumnDescription[TRow], EditableAttrs, String, Boolean, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ js.Any) => ReactElement | Boolean,
     editable: Boolean | (Editable[TRow, /* keyof TRow */ String]) | (js.Function4[
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, 
@@ -107,22 +106,17 @@ object InsertModalColumnDescription {
     __obj.asInstanceOf[InsertModalColumnDescription[TRow]]
   }
   
-  @scala.inline
-  implicit class InsertModalColumnDescriptionMutableBuilder[Self <: InsertModalColumnDescription[?], TRow /* <: js.Object */] (val x: Self & InsertModalColumnDescription[TRow]) extends AnyVal {
+  extension [Self <: InsertModalColumnDescription[?], TRow /* <: js.Object */](x: Self & InsertModalColumnDescription[TRow]) {
     
-    @scala.inline
-    def setAutoValue(value: Boolean): Self = StObject.set(x, "autoValue", value.asInstanceOf[js.Any])
+    inline def setAutoValue(value: Boolean): Self = StObject.set(x, "autoValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoValueUndefined: Self = StObject.set(x, "autoValue", js.undefined)
+    inline def setAutoValueUndefined: Self = StObject.set(x, "autoValue", js.undefined)
     
-    @scala.inline
-    def setCustomInsertEditor(
+    inline def setCustomInsertEditor(
       value: (InsertModalColumnDescription[TRow], EditableAttrs, String, Boolean, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ js.Any) => ReactElement | Boolean
     ): Self = StObject.set(x, "customInsertEditor", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setEditable(
+    inline def setEditable(
       value: Boolean | (Editable[TRow, /* keyof TRow */ String]) | (js.Function4[
           /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, 
           /* row */ TRow, 
@@ -132,43 +126,33 @@ object InsertModalColumnDescription {
         ])
     ): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditableFunction4(
+    inline def setEditableFunction4(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, /* row */ TRow, /* rowIndex */ Double, /* columnIndex */ Double) => Boolean | String | EditValidatorObject
     ): Self = StObject.set(x, "editable", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setField(value: /* keyof TRow */ String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: /* keyof TRow */ String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(
+    inline def setFormat(
       value: Boolean | (js.Function1[
           /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, 
           String
         ])
     ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatFunction1(
+    inline def setFormatFunction1(
       value: /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any => String
     ): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setHiddenOnInsert(value: Boolean): Self = StObject.set(x, "hiddenOnInsert", value.asInstanceOf[js.Any])
+    inline def setHiddenOnInsert(value: Boolean): Self = StObject.set(x, "hiddenOnInsert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsKey(value: Boolean): Self = StObject.set(x, "isKey", value.asInstanceOf[js.Any])
+    inline def setIsKey(value: Boolean): Self = StObject.set(x, "isKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsKeyUndefined: Self = StObject.set(x, "isKey", js.undefined)
+    inline def setIsKeyUndefined: Self = StObject.set(x, "isKey", js.undefined)
     
-    @scala.inline
-    def setKeyValidator(value: Boolean): Self = StObject.set(x, "keyValidator", value.asInstanceOf[js.Any])
+    inline def setKeyValidator(value: Boolean): Self = StObject.set(x, "keyValidator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String | ReactElement): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String | ReactElement): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

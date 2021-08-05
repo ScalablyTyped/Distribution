@@ -22,20 +22,16 @@ object twitterMod extends Shortcut {
   }
   object TwitterProps {
     
-    @scala.inline
-    def apply(): TwitterProps = {
+    inline def apply(): TwitterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TwitterProps]
     }
     
-    @scala.inline
-    implicit class TwitterPropsMutableBuilder[Self <: TwitterProps] (val x: Self) extends AnyVal {
+    extension [Self <: TwitterProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

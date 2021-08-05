@@ -45,19 +45,19 @@ object global {
     /* CompleteClass */
     override def aboutEquals(moduleSize: Double, i: Double, j: Double): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var count: Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var estimatedModuleSize: Double = js.native
     
     /* CompleteClass */
     override def incrementCount(): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var x: Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var y: Double = js.native
   }
   
@@ -76,8 +76,8 @@ object global {
       resultPointCallback: ResultPointCallback
     ) = this()
     
-    /* CompleteClass */
-    /* private */ override def centerFromEnd(stateCount: Double, end: Double): Double = js.native
+    /* private */ /* CompleteClass */
+    override def centerFromEnd(stateCount: Double, end: Double): Double = js.native
     
     /* CompleteClass */
     var crossCheckStateCount: js.Tuple3[Double, Double, Double] = js.native
@@ -85,11 +85,11 @@ object global {
     /* CompleteClass */
     override def find(): typings.jsqrcode.AlignmentPattern = js.native
     
-    /* CompleteClass */
-    /* private */ override def foundPatternCross(stateCount: Double): Boolean = js.native
+    /* private */ /* CompleteClass */
+    override def foundPatternCross(stateCount: Double): Boolean = js.native
     
-    /* CompleteClass */
-    /* private */ override def handlePossibleCenter(stateCount: Double, i: Double, j: Double): typings.jsqrcode.AlignmentPattern = js.native
+    /* private */ /* CompleteClass */
+    override def handlePossibleCenter(stateCount: Double, i: Double, j: Double): typings.jsqrcode.AlignmentPattern = js.native
     
     /* CompleteClass */
     var height: Double = js.native
@@ -149,7 +149,7 @@ object global {
     /* CompleteClass */
     override def get_Renamed(x: Double, y: Double): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var height: Double = js.native
     
     /* CompleteClass */
@@ -161,7 +161,7 @@ object global {
     /* CompleteClass */
     override def set_Renamed(x: Double, y: Double): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var width: Double = js.native
   }
   
@@ -211,10 +211,10 @@ object global {
     /* CompleteClass */
     override val NumDataCodewords: Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var codewords: js.Array[Double] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var numDataCodewords: Double = js.native
   }
   object DataBlock {
@@ -224,8 +224,7 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getDataBlocks(
+    inline def getDataBlocks(
       rawCodewords: js.Array[Double],
       version: typings.jsqrcode.Version,
       ecLevel: typings.jsqrcode.ErrorCorrectionLevel
@@ -254,12 +253,10 @@ object global {
     @JSGlobal("DataMask.DATA_MASKS")
     @js.native
     def DATA_MASKS: js.Array[typings.jsqrcode.DataMask] = js.native
-    @scala.inline
-    def DATA_MASKS_=(x: js.Array[typings.jsqrcode.DataMask]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_MASKS")(x.asInstanceOf[js.Any])
+    inline def DATA_MASKS_=(x: js.Array[typings.jsqrcode.DataMask]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_MASKS")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def forReference(reference: Double): typings.jsqrcode.DataMask = ^.asInstanceOf[js.Dynamic].applyDynamic("forReference")(reference.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.DataMask]
+    inline def forReference(reference: Double): typings.jsqrcode.DataMask = ^.asInstanceOf[js.Dynamic].applyDynamic("forReference")(reference.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.DataMask]
   }
   
   @JSGlobal("DataMask000")
@@ -372,17 +369,14 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def correctErrors(codewordBytes: js.Array[Double], numDataCodewords: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("correctErrors")(codewordBytes.asInstanceOf[js.Any], numDataCodewords.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def correctErrors(codewordBytes: js.Array[Double], numDataCodewords: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("correctErrors")(codewordBytes.asInstanceOf[js.Any], numDataCodewords.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def decode(bits: typings.jsqrcode.BitMatrix): typings.jsqrcode.QRCodeDataBlockReader = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(bits.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.QRCodeDataBlockReader]
+    inline def decode(bits: typings.jsqrcode.BitMatrix): typings.jsqrcode.QRCodeDataBlockReader = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(bits.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.QRCodeDataBlockReader]
     
     @JSGlobal("Decoder.rsDecoder")
     @js.native
     def rsDecoder: typings.jsqrcode.ReedSolomonDecoder = js.native
-    @scala.inline
-    def rsDecoder_=(x: typings.jsqrcode.ReedSolomonDecoder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsDecoder")(x.asInstanceOf[js.Any])
+    inline def rsDecoder_=(x: typings.jsqrcode.ReedSolomonDecoder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsDecoder")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Detector")
@@ -504,10 +498,10 @@ object global {
     /* CompleteClass */
     override val DataCodewords: Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var count: Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var dataCodewords: Double = js.native
   }
   
@@ -528,10 +522,10 @@ object global {
     /* CompleteClass */
     override val TotalECCodewords: Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var ecBlocks: js.Array[typings.jsqrcode.ECB] | (js.Tuple2[typings.jsqrcode.ECB, typings.jsqrcode.ECB]) = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var ecCodewordsPerBlock: Double = js.native
     
     /* CompleteClass */
@@ -551,13 +545,13 @@ object global {
     /* CompleteClass */
     override val Name: String = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var bits: Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var name: String = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var ordinal_Renamed_Field: Double = js.native
   }
   object ErrorCorrectionLevel {
@@ -567,8 +561,7 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def forBits(bits: Double): typings.jsqrcode.ErrorCorrectionLevel = ^.asInstanceOf[js.Dynamic].applyDynamic("forBits")(bits.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.ErrorCorrectionLevel]
+    inline def forBits(bits: Double): typings.jsqrcode.ErrorCorrectionLevel = ^.asInstanceOf[js.Dynamic].applyDynamic("forBits")(bits.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.ErrorCorrectionLevel]
   }
   
   @JSGlobal("FORMAT_INFO_DECODE_LOOKUP")
@@ -605,19 +598,19 @@ object global {
     /* CompleteClass */
     override def aboutEquals(moduleSize: Double, i: Double, j: Double): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var count: Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var estimatedModuleSize: Double = js.native
     
     /* CompleteClass */
     override def incrementCount(): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var x: Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var y: Double = js.native
   }
   
@@ -636,7 +629,7 @@ object global {
     /* CompleteClass */
     override def crossCheckHorizontal(startJ: Double, centerI: Double, maxCount: Double, originalStateCountTotal: Double): Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var crossCheckStateCount: js.Tuple5[Double, Double, Double, Double, Double] = js.native
     
     /* CompleteClass */
@@ -712,10 +705,10 @@ object global {
     /* CompleteClass */
     override def GetHashCode(): Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var dataMask: Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var errorCorrectionLevel: typings.jsqrcode.ErrorCorrectionLevel = js.native
   }
   object FormatInformation {
@@ -725,16 +718,13 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def decodeFormatInformation(maskedFormatInfo: Double): typings.jsqrcode.FormatInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFormatInformation")(maskedFormatInfo.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.FormatInformation]
+    inline def decodeFormatInformation(maskedFormatInfo: Double): typings.jsqrcode.FormatInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFormatInformation")(maskedFormatInfo.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.FormatInformation]
     
     /* static member */
-    @scala.inline
-    def doDecodeFormatInformation(maskedFormatInfo: Double): typings.jsqrcode.FormatInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("doDecodeFormatInformation")(maskedFormatInfo.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.FormatInformation]
+    inline def doDecodeFormatInformation(maskedFormatInfo: Double): typings.jsqrcode.FormatInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("doDecodeFormatInformation")(maskedFormatInfo.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.FormatInformation]
     
     /* static member */
-    @scala.inline
-    def numBitsDiffering(a: Double, b: js.Tuple2[Double, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("numBitsDiffering")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def numBitsDiffering(a: Double, b: js.Tuple2[Double, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("numBitsDiffering")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSGlobal("GF256")
@@ -771,10 +761,10 @@ object global {
     /* CompleteClass */
     override def multiply(a: Double, b: Double): Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var one: typings.jsqrcode.GF256Poly = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var zero: typings.jsqrcode.GF256Poly = js.native
   }
   object GF256 {
@@ -794,8 +784,7 @@ object global {
     val QR_CODE_FIELD: typings.jsqrcode.GF256 = js.native
     
     /* static member */
-    @scala.inline
-    def addOrSubtract(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addOrSubtract")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def addOrSubtract(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addOrSubtract")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSGlobal("GF256Poly")
@@ -817,7 +806,7 @@ object global {
     /* CompleteClass */
     override def addOrSubtract(other: typings.jsqrcode.GF256Poly): typings.jsqrcode.GF256Poly = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var coefficients: js.Array[Double] = js.native
     
     /* CompleteClass */
@@ -848,14 +837,11 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def checkAndNudgePoints(image: Uint8Array, points: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAndNudgePoints")(image.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def checkAndNudgePoints(image: Uint8Array, points: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAndNudgePoints")(image.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def sampleGrid3(image: Uint8Array, dimension: Double, transform: typings.jsqrcode.PerspectiveTransform): typings.jsqrcode.BitMatrix = (^.asInstanceOf[js.Dynamic].applyDynamic("sampleGrid3")(image.asInstanceOf[js.Any], dimension.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[typings.jsqrcode.BitMatrix]
+    inline def sampleGrid3(image: Uint8Array, dimension: Double, transform: typings.jsqrcode.PerspectiveTransform): typings.jsqrcode.BitMatrix = (^.asInstanceOf[js.Dynamic].applyDynamic("sampleGrid3")(image.asInstanceOf[js.Any], dimension.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[typings.jsqrcode.BitMatrix]
     
-    @scala.inline
-    def sampleGridx(
+    inline def sampleGridx(
       image: Uint8Array,
       dimension: Double,
       p1ToX: Double,
@@ -964,8 +950,7 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def quadrilateralToQuadrilateral(
+    inline def quadrilateralToQuadrilateral(
       x0: Double,
       y0: Double,
       x1: Double,
@@ -985,12 +970,10 @@ object global {
     ): typings.jsqrcode.PerspectiveTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("quadrilateralToQuadrilateral")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x0p.asInstanceOf[js.Any], y0p.asInstanceOf[js.Any], x1p.asInstanceOf[js.Any], y1p.asInstanceOf[js.Any], x2p.asInstanceOf[js.Any], y2p.asInstanceOf[js.Any], x3p.asInstanceOf[js.Any], y3p.asInstanceOf[js.Any])).asInstanceOf[typings.jsqrcode.PerspectiveTransform]
     
     /* static member */
-    @scala.inline
-    def quadrilateralToSquare(x0: Double, y0: Double, x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): typings.jsqrcode.PerspectiveTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("quadrilateralToSquare")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any])).asInstanceOf[typings.jsqrcode.PerspectiveTransform]
+    inline def quadrilateralToSquare(x0: Double, y0: Double, x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): typings.jsqrcode.PerspectiveTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("quadrilateralToSquare")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any])).asInstanceOf[typings.jsqrcode.PerspectiveTransform]
     
     /* static member */
-    @scala.inline
-    def squareToQuadrilateral(x0: Double, y0: Double, x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): typings.jsqrcode.PerspectiveTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("squareToQuadrilateral")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any])).asInstanceOf[typings.jsqrcode.PerspectiveTransform]
+    inline def squareToQuadrilateral(x0: Double, y0: Double, x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): typings.jsqrcode.PerspectiveTransform = (^.asInstanceOf[js.Dynamic].applyDynamic("squareToQuadrilateral")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any])).asInstanceOf[typings.jsqrcode.PerspectiveTransform]
   }
   
   @JSGlobal("Q")
@@ -1073,8 +1056,7 @@ object global {
     override def runEuclideanAlgorithm(a: typings.jsqrcode.GF256Poly, b: typings.jsqrcode.GF256Poly, R: Double): js.Tuple2[typings.jsqrcode.GF256Poly, typings.jsqrcode.GF256Poly] = js.native
   }
   
-  @scala.inline
-  def URShift(number: Double, bits: Double): Double = (js.Dynamic.global.applyDynamic("URShift")(number.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def URShift(number: Double, bits: Double): Double = (js.Dynamic.global.applyDynamic("URShift")(number.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSGlobal("Version")
   @js.native
@@ -1134,20 +1116,16 @@ object global {
     val VERSION_DECODE_INFO: js.Array[js.Any] = js.native
     
     /* static member */
-    @scala.inline
-    def decodeVersionInformation(versionBits: Double): typings.jsqrcode.Version = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeVersionInformation")(versionBits.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.Version]
+    inline def decodeVersionInformation(versionBits: Double): typings.jsqrcode.Version = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeVersionInformation")(versionBits.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.Version]
     
     /* static member */
-    @scala.inline
-    def getProvisionalVersionForDimension(dimension: Double): typings.jsqrcode.Version = ^.asInstanceOf[js.Dynamic].applyDynamic("getProvisionalVersionForDimension")(dimension.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.Version]
+    inline def getProvisionalVersionForDimension(dimension: Double): typings.jsqrcode.Version = ^.asInstanceOf[js.Dynamic].applyDynamic("getProvisionalVersionForDimension")(dimension.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.Version]
     
     /* static member */
-    @scala.inline
-    def getVersionForNumber(versionNumber: Double): typings.jsqrcode.Version = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersionForNumber")(versionNumber.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.Version]
+    inline def getVersionForNumber(versionNumber: Double): typings.jsqrcode.Version = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersionForNumber")(versionNumber.asInstanceOf[js.Any]).asInstanceOf[typings.jsqrcode.Version]
   }
   
-  @scala.inline
-  def buildVersions(): js.Array[typings.jsqrcode.Version] = js.Dynamic.global.applyDynamic("buildVersions")().asInstanceOf[js.Array[typings.jsqrcode.Version]]
+  inline def buildVersions(): js.Array[typings.jsqrcode.Version] = js.Dynamic.global.applyDynamic("buildVersions")().asInstanceOf[js.Array[typings.jsqrcode.Version]]
   
   object qrcode {
     
@@ -1155,79 +1133,59 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def binarize(th: Double): js.Array[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("binarize")(th.asInstanceOf[js.Any]).asInstanceOf[js.Array[Boolean]]
+    inline def binarize(th: Double): js.Array[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("binarize")(th.asInstanceOf[js.Any]).asInstanceOf[js.Array[Boolean]]
     
-    @scala.inline
-    def callback(result: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callback")(result.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def callback(result: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callback")(result.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def captureToCanvas(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("captureToCanvas")().asInstanceOf[Unit]
+    inline def captureToCanvas(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("captureToCanvas")().asInstanceOf[Unit]
     
     @JSGlobal("qrcode.debug")
     @js.native
     def debug: Boolean = js.native
-    @scala.inline
-    def debug_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
+    inline def debug_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def decode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")().asInstanceOf[Unit]
-    @scala.inline
-    def decode(src: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(src.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def decode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")().asInstanceOf[Unit]
+    inline def decode(src: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(src.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def decodeUrl(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_url")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def decodeUrl(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_url")(s.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def decodeUtf8(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_utf8")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def decodeUtf8(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_utf8")(s.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def getMiddleBrightnessPerArea(image: js.Array[Double]): js.Array[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMiddleBrightnessPerArea")(image.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Double]]]
+    inline def getMiddleBrightnessPerArea(image: js.Array[Double]): js.Array[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMiddleBrightnessPerArea")(image.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Double]]]
     
-    @scala.inline
-    def getPixel(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPixel")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def getPixel(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPixel")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def grayScaleToBitmap(grayScale: js.Array[Double]): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("grayScaleToBitmap")(grayScale.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def grayScaleToBitmap(grayScale: js.Array[Double]): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("grayScaleToBitmap")(grayScale.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     
-    @scala.inline
-    def grayscale(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("grayscale")().asInstanceOf[Uint8Array]
+    inline def grayscale(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("grayscale")().asInstanceOf[Uint8Array]
     
     @JSGlobal("qrcode.height")
     @js.native
     def height: Double = js.native
-    @scala.inline
-    def height_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("height")(x.asInstanceOf[js.Any])
+    inline def height_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("height")(x.asInstanceOf[js.Any])
     
     @JSGlobal("qrcode.imagedata")
     @js.native
     def imagedata: ImageData = js.native
-    @scala.inline
-    def imagedata_=(x: ImageData): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("imagedata")(x.asInstanceOf[js.Any])
+    inline def imagedata_=(x: ImageData): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("imagedata")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def isUrl(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isUrl(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSGlobal("qrcode.maxImgSize")
     @js.native
     def maxImgSize: Double = js.native
-    @scala.inline
-    def maxImgSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxImgSize")(x.asInstanceOf[js.Any])
+    inline def maxImgSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxImgSize")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def orderBestPatterns(patterns: js.Array[typings.jsqrcode.AlignmentPattern]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBestPatterns")(patterns.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def orderBestPatterns(patterns: js.Array[typings.jsqrcode.AlignmentPattern]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBestPatterns")(patterns.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def process(ctx: CanvasRenderingContext2D): String = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(ctx.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def process(ctx: CanvasRenderingContext2D): String = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(ctx.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSGlobal("qrcode.qrCodeSymbol")
     @js.native
     def qrCodeSymbol: js.Any = js.native
-    @scala.inline
-    def qrCodeSymbol_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("qrCodeSymbol")(x.asInstanceOf[js.Any])
+    inline def qrCodeSymbol_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("qrCodeSymbol")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebcam(videoId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWebcam")(videoId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setWebcam(videoId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWebcam")(videoId.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("qrcode.sizeOfDataLengthInfo")
     @js.native
@@ -1237,15 +1195,12 @@ object global {
         js.Tuple4[`14`, `13`, `16`, `12`]
       ] = js.native
     
-    @scala.inline
-    def vidError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vidError")().asInstanceOf[Unit]
-    @scala.inline
-    def vidError(error: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vidError")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def vidError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vidError")().asInstanceOf[Unit]
+    inline def vidError(error: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vidError")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("qrcode.width")
     @js.native
     def width: Double = js.native
-    @scala.inline
-    def width_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
+    inline def width_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
   }
 }

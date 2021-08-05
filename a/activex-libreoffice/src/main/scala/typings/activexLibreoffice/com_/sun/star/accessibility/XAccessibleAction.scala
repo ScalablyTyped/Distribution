@@ -60,8 +60,7 @@ trait XAccessibleAction
 }
 object XAccessibleAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleActionCount: Double,
     acquire: () => Unit,
     doAccessibleAction: Double => Boolean,
@@ -75,22 +74,16 @@ object XAccessibleAction {
     __obj.asInstanceOf[XAccessibleAction]
   }
   
-  @scala.inline
-  implicit class XAccessibleActionMutableBuilder[Self <: XAccessibleAction] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleAction](x: Self) {
     
-    @scala.inline
-    def setAccessibleActionCount(value: Double): Self = StObject.set(x, "AccessibleActionCount", value.asInstanceOf[js.Any])
+    inline def setAccessibleActionCount(value: Double): Self = StObject.set(x, "AccessibleActionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoAccessibleAction(value: Double => Boolean): Self = StObject.set(x, "doAccessibleAction", js.Any.fromFunction1(value))
+    inline def setDoAccessibleAction(value: Double => Boolean): Self = StObject.set(x, "doAccessibleAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAccessibleActionCount(value: () => Double): Self = StObject.set(x, "getAccessibleActionCount", js.Any.fromFunction0(value))
+    inline def setGetAccessibleActionCount(value: () => Double): Self = StObject.set(x, "getAccessibleActionCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAccessibleActionDescription(value: Double => String): Self = StObject.set(x, "getAccessibleActionDescription", js.Any.fromFunction1(value))
+    inline def setGetAccessibleActionDescription(value: Double => String): Self = StObject.set(x, "getAccessibleActionDescription", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAccessibleActionKeyBinding(value: Double => XAccessibleKeyBinding): Self = StObject.set(x, "getAccessibleActionKeyBinding", js.Any.fromFunction1(value))
+    inline def setGetAccessibleActionKeyBinding(value: Double => XAccessibleKeyBinding): Self = StObject.set(x, "getAccessibleActionKeyBinding", js.Any.fromFunction1(value))
   }
 }

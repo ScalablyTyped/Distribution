@@ -68,8 +68,7 @@ trait HyperParameterTrainingJobSummary extends StObject {
 }
 object HyperParameterTrainingJobSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreationTime: Timestamp,
     TrainingJobArn: TrainingJobArn,
     TrainingJobName: TrainingJobName,
@@ -80,64 +79,44 @@ object HyperParameterTrainingJobSummary {
     __obj.asInstanceOf[HyperParameterTrainingJobSummary]
   }
   
-  @scala.inline
-  implicit class HyperParameterTrainingJobSummaryMutableBuilder[Self <: HyperParameterTrainingJobSummary] (val x: Self) extends AnyVal {
+  extension [Self <: HyperParameterTrainingJobSummary](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    @scala.inline
-    def setFinalHyperParameterTuningJobObjectiveMetric(value: FinalHyperParameterTuningJobObjectiveMetric): Self = StObject.set(x, "FinalHyperParameterTuningJobObjectiveMetric", value.asInstanceOf[js.Any])
+    inline def setFinalHyperParameterTuningJobObjectiveMetric(value: FinalHyperParameterTuningJobObjectiveMetric): Self = StObject.set(x, "FinalHyperParameterTuningJobObjectiveMetric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalHyperParameterTuningJobObjectiveMetricUndefined: Self = StObject.set(x, "FinalHyperParameterTuningJobObjectiveMetric", js.undefined)
+    inline def setFinalHyperParameterTuningJobObjectiveMetricUndefined: Self = StObject.set(x, "FinalHyperParameterTuningJobObjectiveMetric", js.undefined)
     
-    @scala.inline
-    def setObjectiveStatus(value: ObjectiveStatus): Self = StObject.set(x, "ObjectiveStatus", value.asInstanceOf[js.Any])
+    inline def setObjectiveStatus(value: ObjectiveStatus): Self = StObject.set(x, "ObjectiveStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectiveStatusUndefined: Self = StObject.set(x, "ObjectiveStatus", js.undefined)
+    inline def setObjectiveStatusUndefined: Self = StObject.set(x, "ObjectiveStatus", js.undefined)
     
-    @scala.inline
-    def setTrainingEndTime(value: Timestamp): Self = StObject.set(x, "TrainingEndTime", value.asInstanceOf[js.Any])
+    inline def setTrainingEndTime(value: Timestamp): Self = StObject.set(x, "TrainingEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingEndTimeUndefined: Self = StObject.set(x, "TrainingEndTime", js.undefined)
+    inline def setTrainingEndTimeUndefined: Self = StObject.set(x, "TrainingEndTime", js.undefined)
     
-    @scala.inline
-    def setTrainingJobArn(value: TrainingJobArn): Self = StObject.set(x, "TrainingJobArn", value.asInstanceOf[js.Any])
+    inline def setTrainingJobArn(value: TrainingJobArn): Self = StObject.set(x, "TrainingJobArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingJobDefinitionName(value: HyperParameterTrainingJobDefinitionName): Self = StObject.set(x, "TrainingJobDefinitionName", value.asInstanceOf[js.Any])
+    inline def setTrainingJobDefinitionName(value: HyperParameterTrainingJobDefinitionName): Self = StObject.set(x, "TrainingJobDefinitionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingJobDefinitionNameUndefined: Self = StObject.set(x, "TrainingJobDefinitionName", js.undefined)
+    inline def setTrainingJobDefinitionNameUndefined: Self = StObject.set(x, "TrainingJobDefinitionName", js.undefined)
     
-    @scala.inline
-    def setTrainingJobName(value: TrainingJobName): Self = StObject.set(x, "TrainingJobName", value.asInstanceOf[js.Any])
+    inline def setTrainingJobName(value: TrainingJobName): Self = StObject.set(x, "TrainingJobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingJobStatus(value: TrainingJobStatus): Self = StObject.set(x, "TrainingJobStatus", value.asInstanceOf[js.Any])
+    inline def setTrainingJobStatus(value: TrainingJobStatus): Self = StObject.set(x, "TrainingJobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingStartTime(value: Timestamp): Self = StObject.set(x, "TrainingStartTime", value.asInstanceOf[js.Any])
+    inline def setTrainingStartTime(value: Timestamp): Self = StObject.set(x, "TrainingStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingStartTimeUndefined: Self = StObject.set(x, "TrainingStartTime", js.undefined)
+    inline def setTrainingStartTimeUndefined: Self = StObject.set(x, "TrainingStartTime", js.undefined)
     
-    @scala.inline
-    def setTunedHyperParameters(value: HyperParameters): Self = StObject.set(x, "TunedHyperParameters", value.asInstanceOf[js.Any])
+    inline def setTunedHyperParameters(value: HyperParameters): Self = StObject.set(x, "TunedHyperParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTuningJobName(value: HyperParameterTuningJobName): Self = StObject.set(x, "TuningJobName", value.asInstanceOf[js.Any])
+    inline def setTuningJobName(value: HyperParameterTuningJobName): Self = StObject.set(x, "TuningJobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTuningJobNameUndefined: Self = StObject.set(x, "TuningJobName", js.undefined)
+    inline def setTuningJobNameUndefined: Self = StObject.set(x, "TuningJobName", js.undefined)
   }
 }

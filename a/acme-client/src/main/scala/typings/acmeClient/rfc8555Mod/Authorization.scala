@@ -24,8 +24,7 @@ trait Authorization extends StObject {
 }
 object Authorization {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     challenges: js.Array[Challenge],
     identifier: Identifier,
     status: pending | valid | invalid | deactivated | expired | revoked
@@ -34,31 +33,22 @@ object Authorization {
     __obj.asInstanceOf[Authorization]
   }
   
-  @scala.inline
-  implicit class AuthorizationMutableBuilder[Self <: Authorization] (val x: Self) extends AnyVal {
+  extension [Self <: Authorization](x: Self) {
     
-    @scala.inline
-    def setChallenges(value: js.Array[Challenge]): Self = StObject.set(x, "challenges", value.asInstanceOf[js.Any])
+    inline def setChallenges(value: js.Array[Challenge]): Self = StObject.set(x, "challenges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChallengesVarargs(value: Challenge*): Self = StObject.set(x, "challenges", js.Array(value :_*))
+    inline def setChallengesVarargs(value: Challenge*): Self = StObject.set(x, "challenges", js.Array(value :_*))
     
-    @scala.inline
-    def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+    inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: pending | valid | invalid | deactivated | expired | revoked): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: pending | valid | invalid | deactivated | expired | revoked): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWildcard(value: Boolean): Self = StObject.set(x, "wildcard", value.asInstanceOf[js.Any])
+    inline def setWildcard(value: Boolean): Self = StObject.set(x, "wildcard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWildcardUndefined: Self = StObject.set(x, "wildcard", js.undefined)
+    inline def setWildcardUndefined: Self = StObject.set(x, "wildcard", js.undefined)
   }
 }

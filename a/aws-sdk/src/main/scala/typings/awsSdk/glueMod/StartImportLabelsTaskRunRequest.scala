@@ -23,25 +23,19 @@ trait StartImportLabelsTaskRunRequest extends StObject {
 }
 object StartImportLabelsTaskRunRequest {
   
-  @scala.inline
-  def apply(InputS3Path: UriString, TransformId: HashString): StartImportLabelsTaskRunRequest = {
+  inline def apply(InputS3Path: UriString, TransformId: HashString): StartImportLabelsTaskRunRequest = {
     val __obj = js.Dynamic.literal(InputS3Path = InputS3Path.asInstanceOf[js.Any], TransformId = TransformId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartImportLabelsTaskRunRequest]
   }
   
-  @scala.inline
-  implicit class StartImportLabelsTaskRunRequestMutableBuilder[Self <: StartImportLabelsTaskRunRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartImportLabelsTaskRunRequest](x: Self) {
     
-    @scala.inline
-    def setInputS3Path(value: UriString): Self = StObject.set(x, "InputS3Path", value.asInstanceOf[js.Any])
+    inline def setInputS3Path(value: UriString): Self = StObject.set(x, "InputS3Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceAllLabels(value: ReplaceBoolean): Self = StObject.set(x, "ReplaceAllLabels", value.asInstanceOf[js.Any])
+    inline def setReplaceAllLabels(value: ReplaceBoolean): Self = StObject.set(x, "ReplaceAllLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceAllLabelsUndefined: Self = StObject.set(x, "ReplaceAllLabels", js.undefined)
+    inline def setReplaceAllLabelsUndefined: Self = StObject.set(x, "ReplaceAllLabels", js.undefined)
     
-    @scala.inline
-    def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
+    inline def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
   }
 }

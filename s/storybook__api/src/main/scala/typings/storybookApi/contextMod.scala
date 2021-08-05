@@ -13,6 +13,5 @@ object contextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createContext(hasApiState: Combo): Context[Api] = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(hasApiState.asInstanceOf[js.Any]).asInstanceOf[Context[Api]]
+  inline def createContext(hasApiState: Combo): Context[Api] = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(hasApiState.asInstanceOf[js.Any]).asInstanceOf[Context[Api]]
 }

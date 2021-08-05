@@ -16,8 +16,7 @@ trait IProjection extends StObject {
 }
 object IProjection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fromGlobalPixels: (js.Array[Double], Double) => js.Array[Double],
     getCoordSystem: () => ICoordSystem,
     isCycled: () => js.Array[Boolean],
@@ -27,19 +26,14 @@ object IProjection {
     __obj.asInstanceOf[IProjection]
   }
   
-  @scala.inline
-  implicit class IProjectionMutableBuilder[Self <: IProjection] (val x: Self) extends AnyVal {
+  extension [Self <: IProjection](x: Self) {
     
-    @scala.inline
-    def setFromGlobalPixels(value: (js.Array[Double], Double) => js.Array[Double]): Self = StObject.set(x, "fromGlobalPixels", js.Any.fromFunction2(value))
+    inline def setFromGlobalPixels(value: (js.Array[Double], Double) => js.Array[Double]): Self = StObject.set(x, "fromGlobalPixels", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCoordSystem(value: () => ICoordSystem): Self = StObject.set(x, "getCoordSystem", js.Any.fromFunction0(value))
+    inline def setGetCoordSystem(value: () => ICoordSystem): Self = StObject.set(x, "getCoordSystem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCycled(value: () => js.Array[Boolean]): Self = StObject.set(x, "isCycled", js.Any.fromFunction0(value))
+    inline def setIsCycled(value: () => js.Array[Boolean]): Self = StObject.set(x, "isCycled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToGlobalPixels(value: (js.Array[Double], Double) => js.Array[Double]): Self = StObject.set(x, "toGlobalPixels", js.Any.fromFunction2(value))
+    inline def setToGlobalPixels(value: (js.Array[Double], Double) => js.Array[Double]): Self = StObject.set(x, "toGlobalPixels", js.Any.fromFunction2(value))
   }
 }

@@ -20,25 +20,19 @@ trait ActivitySetRepoSubscriptionRequestOptions extends StObject {
 }
 object ActivitySetRepoSubscriptionRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ActivitySetRepoSubscriptionRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ActivitySetRepoSubscriptionRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PUT", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/subscription")
     __obj.asInstanceOf[ActivitySetRepoSubscriptionRequestOptions]
   }
   
-  @scala.inline
-  implicit class ActivitySetRepoSubscriptionRequestOptionsMutableBuilder[Self <: ActivitySetRepoSubscriptionRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ActivitySetRepoSubscriptionRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashsubscription): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashsubscription): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait PurchaseRequest extends StObject {
 }
 object PurchaseRequest {
   
-  @scala.inline
-  def apply(InstanceCount: Integer, PurchaseToken: String): PurchaseRequest = {
+  inline def apply(InstanceCount: Integer, PurchaseToken: String): PurchaseRequest = {
     val __obj = js.Dynamic.literal(InstanceCount = InstanceCount.asInstanceOf[js.Any], PurchaseToken = PurchaseToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseRequest]
   }
   
-  @scala.inline
-  implicit class PurchaseRequestMutableBuilder[Self <: PurchaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseToken(value: String): Self = StObject.set(x, "PurchaseToken", value.asInstanceOf[js.Any])
+    inline def setPurchaseToken(value: String): Self = StObject.set(x, "PurchaseToken", value.asInstanceOf[js.Any])
   }
 }

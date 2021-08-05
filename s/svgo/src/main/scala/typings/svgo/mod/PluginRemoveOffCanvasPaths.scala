@@ -12,16 +12,13 @@ trait PluginRemoveOffCanvasPaths
 }
 object PluginRemoveOffCanvasPaths {
   
-  @scala.inline
-  def apply(removeOffCanvasPaths: Boolean | js.Object): PluginRemoveOffCanvasPaths = {
+  inline def apply(removeOffCanvasPaths: Boolean | js.Object): PluginRemoveOffCanvasPaths = {
     val __obj = js.Dynamic.literal(removeOffCanvasPaths = removeOffCanvasPaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveOffCanvasPaths]
   }
   
-  @scala.inline
-  implicit class PluginRemoveOffCanvasPathsMutableBuilder[Self <: PluginRemoveOffCanvasPaths] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveOffCanvasPaths](x: Self) {
     
-    @scala.inline
-    def setRemoveOffCanvasPaths(value: Boolean | js.Object): Self = StObject.set(x, "removeOffCanvasPaths", value.asInstanceOf[js.Any])
+    inline def setRemoveOffCanvasPaths(value: Boolean | js.Object): Self = StObject.set(x, "removeOffCanvasPaths", value.asInstanceOf[js.Any])
   }
 }

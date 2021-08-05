@@ -33,22 +33,17 @@ trait Blob extends StObject {
 }
 object Blob {
   
-  @scala.inline
-  def apply(isEqual: Blob => Boolean, toBase64: () => String, toUint8Array: () => Uint8Array): Blob = {
+  inline def apply(isEqual: Blob => Boolean, toBase64: () => String, toUint8Array: () => Uint8Array): Blob = {
     val __obj = js.Dynamic.literal(isEqual = js.Any.fromFunction1(isEqual), toBase64 = js.Any.fromFunction0(toBase64), toUint8Array = js.Any.fromFunction0(toUint8Array))
     __obj.asInstanceOf[Blob]
   }
   
-  @scala.inline
-  implicit class BlobMutableBuilder[Self <: Blob] (val x: Self) extends AnyVal {
+  extension [Self <: Blob](x: Self) {
     
-    @scala.inline
-    def setIsEqual(value: Blob => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    inline def setIsEqual(value: Blob => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToBase64(value: () => String): Self = StObject.set(x, "toBase64", js.Any.fromFunction0(value))
+    inline def setToBase64(value: () => String): Self = StObject.set(x, "toBase64", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToUint8Array(value: () => Uint8Array): Self = StObject.set(x, "toUint8Array", js.Any.fromFunction0(value))
+    inline def setToUint8Array(value: () => Uint8Array): Self = StObject.set(x, "toUint8Array", js.Any.fromFunction0(value))
   }
 }

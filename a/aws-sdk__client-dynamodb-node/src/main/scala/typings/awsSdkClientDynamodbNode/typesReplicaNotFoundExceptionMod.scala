@@ -18,17 +18,14 @@ object typesReplicaNotFoundExceptionMod {
   }
   object ReplicaNotFoundException {
     
-    @scala.inline
-    def apply(): ReplicaNotFoundException = {
+    inline def apply(): ReplicaNotFoundException = {
       val __obj = js.Dynamic.literal(name = "ReplicaNotFoundException")
       __obj.asInstanceOf[ReplicaNotFoundException]
     }
     
-    @scala.inline
-    implicit class ReplicaNotFoundExceptionMutableBuilder[Self <: ReplicaNotFoundException] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaNotFoundException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ReplicaNotFoundException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ReplicaNotFoundException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,20 +38,16 @@ object typesReplicaNotFoundExceptionMod {
   }
   object ReplicaNotFoundExceptionDetails {
     
-    @scala.inline
-    def apply(): ReplicaNotFoundExceptionDetails = {
+    inline def apply(): ReplicaNotFoundExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplicaNotFoundExceptionDetails]
     }
     
-    @scala.inline
-    implicit class ReplicaNotFoundExceptionDetailsMutableBuilder[Self <: ReplicaNotFoundExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaNotFoundExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

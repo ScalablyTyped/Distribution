@@ -18,19 +18,15 @@ trait QueryOptions extends StObject {
 }
 object QueryOptions {
   
-  @scala.inline
-  def apply(): QueryOptions = {
+  inline def apply(): QueryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryOptions]
   }
   
-  @scala.inline
-  implicit class QueryOptionsMutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: QueryOptions](x: Self) {
     
-    @scala.inline
-    def setOptimizerVersion(value: String): Self = StObject.set(x, "optimizerVersion", value.asInstanceOf[js.Any])
+    inline def setOptimizerVersion(value: String): Self = StObject.set(x, "optimizerVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptimizerVersionUndefined: Self = StObject.set(x, "optimizerVersion", js.undefined)
+    inline def setOptimizerVersionUndefined: Self = StObject.set(x, "optimizerVersion", js.undefined)
   }
 }

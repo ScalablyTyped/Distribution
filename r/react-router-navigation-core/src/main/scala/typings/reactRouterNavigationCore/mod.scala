@@ -64,34 +64,24 @@ object mod {
     @JSImport("react-router-navigation-core", "TabStack.defaultProps")
     @js.native
     def defaultProps: ForceSync = js.native
-    @scala.inline
-    def defaultProps_=(x: ForceSync): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ForceSync): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def build[Item](children: js.Array[ReactElement]): js.Array[Item] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[Item]]
-  @scala.inline
-  def build[Item](children: js.Array[ReactElement], oldBuild: js.Array[Item]): js.Array[Item] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(children.asInstanceOf[js.Any], oldBuild.asInstanceOf[js.Any])).asInstanceOf[js.Array[Item]]
+  inline def build[Item](children: js.Array[ReactElement]): js.Array[Item] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[Item]]
+  inline def build[Item](children: js.Array[ReactElement], oldBuild: js.Array[Item]): js.Array[Item] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(children.asInstanceOf[js.Any], oldBuild.asInstanceOf[js.Any])).asInstanceOf[js.Array[Item]]
   
-  @scala.inline
-  def createKey(route: Route[js.Object]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(route.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def createKey(route: Route[js.Object]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(route.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def get[Item /* <: Route[js.Object] */](items: js.Array[Item], route: Route[js.Object]): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(items.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[Item]
+  inline def get[Item /* <: Route[js.Object] */](items: js.Array[Item], route: Route[js.Object]): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(items.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[Item]
   
-  @scala.inline
-  def getRoute(stack: js.Array[RouteProps], location: Location[LocationState]): js.UndefOr[Route[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRoute")(stack.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Route[js.Object]]]
+  inline def getRoute(stack: js.Array[RouteProps], location: Location[LocationState]): js.UndefOr[Route[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRoute")(stack.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Route[js.Object]]]
   
-  @scala.inline
-  def renderSubView(render: js.Function2[/* propsA */ js.Any, /* propsB */ js.Any, ReactNode]): js.Function1[/* ownProps */ js.Any, ReactNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSubView")(render.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ownProps */ js.Any, ReactNode]]
-  @scala.inline
-  def renderSubView(render: js.Function2[/* propsA */ js.Any, /* propsB */ js.Any, ReactNode], additionalProps: js.Any): js.Function1[/* ownProps */ js.Any, ReactNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSubView")(render.asInstanceOf[js.Any], additionalProps.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ownProps */ js.Any, ReactNode]]
+  inline def renderSubView(render: js.Function2[/* propsA */ js.Any, /* propsB */ js.Any, ReactNode]): js.Function1[/* ownProps */ js.Any, ReactNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSubView")(render.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ownProps */ js.Any, ReactNode]]
+  inline def renderSubView(render: js.Function2[/* propsA */ js.Any, /* propsB */ js.Any, ReactNode], additionalProps: js.Any): js.Function1[/* ownProps */ js.Any, ReactNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSubView")(render.asInstanceOf[js.Any], additionalProps.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ownProps */ js.Any, ReactNode]]
   
-  @scala.inline
-  def runHistoryListenner(history: History[LocationState], onListenHistory: js.Function0[Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runHistoryListenner")(history.asInstanceOf[js.Any], onListenHistory.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def runHistoryListenner(history: History[LocationState], onListenHistory: js.Function0[Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runHistoryListenner")(history.asInstanceOf[js.Any], onListenHistory.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  @scala.inline
-  def shouldUpdate(
+  inline def shouldUpdate(
     currentItem: RouteProps,
     nextItem: RouteProps,
     currentLocation: Location[LocationState],
@@ -106,17 +96,14 @@ object mod {
   }
   object Card {
     
-    @scala.inline
-    def apply(key: String): Card = {
+    inline def apply(key: String): Card = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[Card]
     }
     
-    @scala.inline
-    implicit class CardMutableBuilder[Self <: Card] (val x: Self) extends AnyVal {
+    extension [Self <: Card](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,26 +115,20 @@ object mod {
   }
   object CardStackProps {
     
-    @scala.inline
-    def apply(render: CardsRendererProps => ReactNode): CardStackProps = {
+    inline def apply(render: CardsRendererProps => ReactNode): CardStackProps = {
       val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
       __obj.asInstanceOf[CardStackProps]
     }
     
-    @scala.inline
-    implicit class CardStackPropsMutableBuilder[Self <: CardStackProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardStackProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setRender(value: CardsRendererProps => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: CardsRendererProps => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     }
   }
   
@@ -170,23 +151,18 @@ object mod {
   }
   object NavigationState {
     
-    @scala.inline
-    def apply[OwnRoute](index: Double, routes: js.Array[Route[js.Object] & OwnRoute]): NavigationState[OwnRoute] = {
+    inline def apply[OwnRoute](index: Double, routes: js.Array[Route[js.Object] & OwnRoute]): NavigationState[OwnRoute] = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavigationState[OwnRoute]]
     }
     
-    @scala.inline
-    implicit class NavigationStateMutableBuilder[Self <: NavigationState[?], OwnRoute] (val x: Self & NavigationState[OwnRoute]) extends AnyVal {
+    extension [Self <: NavigationState[?], OwnRoute](x: Self & NavigationState[OwnRoute]) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutes(value: js.Array[Route[js.Object] & OwnRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[Route[js.Object] & OwnRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesVarargs(value: (Route[js.Object] & OwnRoute)*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: (Route[js.Object] & OwnRoute)*): Self = StObject.set(x, "routes", js.Array(value :_*))
     }
   }
   
@@ -200,26 +176,20 @@ object mod {
   }
   object Route {
     
-    @scala.inline
-    def apply[T](key: String, routeName: String): Route[T] = {
+    inline def apply[T](key: String, routeName: String): Route[T] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], routeName = routeName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Route[T]]
     }
     
-    @scala.inline
-    implicit class RouteMutableBuilder[Self <: Route[?], T] (val x: Self & Route[T]) extends AnyVal {
+    extension [Self <: Route[?], T](x: Self & Route[T]) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatch(value: `match`[T]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: `match`[T]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      @scala.inline
-      def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
+      inline def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -239,53 +209,38 @@ object mod {
   }
   object RouteProps {
     
-    @scala.inline
-    def apply(): RouteProps = {
+    inline def apply(): RouteProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouteProps]
     }
     
-    @scala.inline
-    implicit class RoutePropsMutableBuilder[Self <: RouteProps] (val x: Self) extends AnyVal {
+    extension [Self <: RouteProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: (js.Function1[/* props */ RouterProps, ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: (js.Function1[/* props */ RouterProps, ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction1(value: /* props */ RouterProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* props */ RouterProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setComponent(value: ComponentClass[RouterProps, ComponentState]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentClass[RouterProps, ComponentState]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+      inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+      inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setRender(value: /* props */ RouterProps => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* props */ RouterProps => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
   
@@ -299,23 +254,18 @@ object mod {
   }
   object Tab {
     
-    @scala.inline
-    def apply(key: String): Tab = {
+    inline def apply(key: String): Tab = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tab]
     }
     
-    @scala.inline
-    implicit class TabMutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
+    extension [Self <: Tab](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnIndexChange(value: /* index */ Double => Unit): Self = StObject.set(x, "onIndexChange", js.Any.fromFunction1(value))
+      inline def setOnIndexChange(value: /* index */ Double => Unit): Self = StObject.set(x, "onIndexChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnIndexChangeUndefined: Self = StObject.set(x, "onIndexChange", js.undefined)
+      inline def setOnIndexChangeUndefined: Self = StObject.set(x, "onIndexChange", js.undefined)
     }
   }
   
@@ -333,47 +283,34 @@ object mod {
   }
   object TabStackProps {
     
-    @scala.inline
-    def apply(render: TabsRendererProps => ReactNode): TabStackProps = {
+    inline def apply(render: TabsRendererProps => ReactNode): TabStackProps = {
       val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
       __obj.asInstanceOf[TabStackProps]
     }
     
-    @scala.inline
-    implicit class TabStackPropsMutableBuilder[Self <: TabStackProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabStackProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setForceSync(value: Boolean): Self = StObject.set(x, "forceSync", value.asInstanceOf[js.Any])
+      inline def setForceSync(value: Boolean): Self = StObject.set(x, "forceSync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceSyncUndefined: Self = StObject.set(x, "forceSync", js.undefined)
+      inline def setForceSyncUndefined: Self = StObject.set(x, "forceSync", js.undefined)
       
-      @scala.inline
-      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
       
-      @scala.inline
-      def setRender(value: TabsRendererProps => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: TabsRendererProps => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -389,8 +326,7 @@ object mod {
   }
   object TabsRendererProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       loadedTabs: js.Array[String],
       navigationState: NavigationState[TestID],
       onIndexChange: Double => Unit,
@@ -400,26 +336,19 @@ object mod {
       __obj.asInstanceOf[TabsRendererProps]
     }
     
-    @scala.inline
-    implicit class TabsRendererPropsMutableBuilder[Self <: TabsRendererProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabsRendererProps](x: Self) {
       
-      @scala.inline
-      def setLoadedTabs(value: js.Array[String]): Self = StObject.set(x, "loadedTabs", value.asInstanceOf[js.Any])
+      inline def setLoadedTabs(value: js.Array[String]): Self = StObject.set(x, "loadedTabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadedTabsVarargs(value: String*): Self = StObject.set(x, "loadedTabs", js.Array(value :_*))
+      inline def setLoadedTabsVarargs(value: String*): Self = StObject.set(x, "loadedTabs", js.Array(value :_*))
       
-      @scala.inline
-      def setNavigationState(value: NavigationState[TestID]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
+      inline def setNavigationState(value: NavigationState[TestID]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnIndexChange(value: Double => Unit): Self = StObject.set(x, "onIndexChange", js.Any.fromFunction1(value))
+      inline def setOnIndexChange(value: Double => Unit): Self = StObject.set(x, "onIndexChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
     }
   }
 }

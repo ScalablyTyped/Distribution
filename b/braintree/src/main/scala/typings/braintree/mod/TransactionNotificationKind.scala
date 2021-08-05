@@ -14,12 +14,9 @@ trait TransactionNotificationKind
      with _WebhookNotificationKind
 object TransactionNotificationKind {
   
-  @scala.inline
-  def transaction_disbursed: typings.braintree.braintreeStrings.transaction_disbursed = "transaction_disbursed".asInstanceOf[typings.braintree.braintreeStrings.transaction_disbursed]
+  inline def transaction_disbursed: typings.braintree.braintreeStrings.transaction_disbursed = "transaction_disbursed".asInstanceOf[typings.braintree.braintreeStrings.transaction_disbursed]
   
-  @scala.inline
-  def transaction_settled: typings.braintree.braintreeStrings.transaction_settled = "transaction_settled".asInstanceOf[typings.braintree.braintreeStrings.transaction_settled]
+  inline def transaction_settled: typings.braintree.braintreeStrings.transaction_settled = "transaction_settled".asInstanceOf[typings.braintree.braintreeStrings.transaction_settled]
   
-  @scala.inline
-  def transaction_settlement_declined: typings.braintree.braintreeStrings.transaction_settlement_declined = "transaction_settlement_declined".asInstanceOf[typings.braintree.braintreeStrings.transaction_settlement_declined]
+  inline def transaction_settlement_declined: typings.braintree.braintreeStrings.transaction_settlement_declined = "transaction_settlement_declined".asInstanceOf[typings.braintree.braintreeStrings.transaction_settlement_declined]
 }

@@ -28,6 +28,5 @@ object WrappedOperation {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def transform[T](left: WrappedOperation[T], right: WrappedOperation[T]): WrappedOperation[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[WrappedOperation[T]]
+  inline def transform[T](left: WrappedOperation[T], right: WrappedOperation[T]): WrappedOperation[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[WrappedOperation[T]]
 }

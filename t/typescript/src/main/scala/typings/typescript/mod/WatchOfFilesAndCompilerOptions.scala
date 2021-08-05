@@ -16,16 +16,13 @@ trait WatchOfFilesAndCompilerOptions[T]
 }
 object WatchOfFilesAndCompilerOptions {
   
-  @scala.inline
-  def apply[T](close: () => Unit, getProgram: () => T, updateRootFileNames: js.Array[java.lang.String] => Unit): WatchOfFilesAndCompilerOptions[T] = {
+  inline def apply[T](close: () => Unit, getProgram: () => T, updateRootFileNames: js.Array[java.lang.String] => Unit): WatchOfFilesAndCompilerOptions[T] = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getProgram = js.Any.fromFunction0(getProgram), updateRootFileNames = js.Any.fromFunction1(updateRootFileNames))
     __obj.asInstanceOf[WatchOfFilesAndCompilerOptions[T]]
   }
   
-  @scala.inline
-  implicit class WatchOfFilesAndCompilerOptionsMutableBuilder[Self <: WatchOfFilesAndCompilerOptions[?], T] (val x: Self & WatchOfFilesAndCompilerOptions[T]) extends AnyVal {
+  extension [Self <: WatchOfFilesAndCompilerOptions[?], T](x: Self & WatchOfFilesAndCompilerOptions[T]) {
     
-    @scala.inline
-    def setUpdateRootFileNames(value: js.Array[java.lang.String] => Unit): Self = StObject.set(x, "updateRootFileNames", js.Any.fromFunction1(value))
+    inline def setUpdateRootFileNames(value: js.Array[java.lang.String] => Unit): Self = StObject.set(x, "updateRootFileNames", js.Any.fromFunction1(value))
   }
 }

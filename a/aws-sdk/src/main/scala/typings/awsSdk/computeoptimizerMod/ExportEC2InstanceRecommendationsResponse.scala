@@ -18,25 +18,19 @@ trait ExportEC2InstanceRecommendationsResponse extends StObject {
 }
 object ExportEC2InstanceRecommendationsResponse {
   
-  @scala.inline
-  def apply(): ExportEC2InstanceRecommendationsResponse = {
+  inline def apply(): ExportEC2InstanceRecommendationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportEC2InstanceRecommendationsResponse]
   }
   
-  @scala.inline
-  implicit class ExportEC2InstanceRecommendationsResponseMutableBuilder[Self <: ExportEC2InstanceRecommendationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ExportEC2InstanceRecommendationsResponse](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
-    @scala.inline
-    def setS3Destination(value: S3Destination): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
+    inline def setS3Destination(value: S3Destination): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3DestinationUndefined: Self = StObject.set(x, "s3Destination", js.undefined)
+    inline def setS3DestinationUndefined: Self = StObject.set(x, "s3Destination", js.undefined)
   }
 }

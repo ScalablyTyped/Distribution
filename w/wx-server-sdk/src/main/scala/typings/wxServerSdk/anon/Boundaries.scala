@@ -16,34 +16,25 @@ trait Boundaries extends StObject {
 }
 object Boundaries {
   
-  @scala.inline
-  def apply(boundaries: js.Array[js.Any], groupBy: js.Any): Boundaries = {
+  inline def apply(boundaries: js.Array[js.Any], groupBy: js.Any): Boundaries = {
     val __obj = js.Dynamic.literal(boundaries = boundaries.asInstanceOf[js.Any], groupBy = groupBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Boundaries]
   }
   
-  @scala.inline
-  implicit class BoundariesMutableBuilder[Self <: Boundaries] (val x: Self) extends AnyVal {
+  extension [Self <: Boundaries](x: Self) {
     
-    @scala.inline
-    def setBoundaries(value: js.Array[js.Any]): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
+    inline def setBoundaries(value: js.Array[js.Any]): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundariesVarargs(value: js.Any*): Self = StObject.set(x, "boundaries", js.Array(value :_*))
+    inline def setBoundariesVarargs(value: js.Any*): Self = StObject.set(x, "boundaries", js.Array(value :_*))
     
-    @scala.inline
-    def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setGroupBy(value: js.Any): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+    inline def setGroupBy(value: js.Any): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput(value: js.Object): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: js.Object): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
   }
 }

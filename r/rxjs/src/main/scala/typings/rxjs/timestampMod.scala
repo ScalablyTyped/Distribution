@@ -27,8 +27,6 @@ object timestampMod {
     var value: T = js.native
   }
   
-  @scala.inline
-  def timestamp[T](): OperatorFunction[T, Timestamp_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")().asInstanceOf[OperatorFunction[T, Timestamp_[T]]]
-  @scala.inline
-  def timestamp[T](scheduler: SchedulerLike): OperatorFunction[T, Timestamp_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(scheduler.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, Timestamp_[T]]]
+  inline def timestamp[T](): OperatorFunction[T, Timestamp_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")().asInstanceOf[OperatorFunction[T, Timestamp_[T]]]
+  inline def timestamp[T](scheduler: SchedulerLike): OperatorFunction[T, Timestamp_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(scheduler.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, Timestamp_[T]]]
 }

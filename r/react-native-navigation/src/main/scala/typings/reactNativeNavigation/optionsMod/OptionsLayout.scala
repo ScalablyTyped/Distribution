@@ -47,58 +47,41 @@ trait OptionsLayout extends StObject {
 }
 object OptionsLayout {
   
-  @scala.inline
-  def apply(): OptionsLayout = {
+  inline def apply(): OptionsLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionsLayout]
   }
   
-  @scala.inline
-  implicit class OptionsLayoutMutableBuilder[Self <: OptionsLayout] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsLayout](x: Self) {
     
-    @scala.inline
-    def setAutoHideHomeIndicator(value: Boolean): Self = StObject.set(x, "autoHideHomeIndicator", value.asInstanceOf[js.Any])
+    inline def setAutoHideHomeIndicator(value: Boolean): Self = StObject.set(x, "autoHideHomeIndicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoHideHomeIndicatorUndefined: Self = StObject.set(x, "autoHideHomeIndicator", js.undefined)
+    inline def setAutoHideHomeIndicatorUndefined: Self = StObject.set(x, "autoHideHomeIndicator", js.undefined)
     
-    @scala.inline
-    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setComponentBackgroundColor(value: Color): Self = StObject.set(x, "componentBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setComponentBackgroundColor(value: Color): Self = StObject.set(x, "componentBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentBackgroundColorUndefined: Self = StObject.set(x, "componentBackgroundColor", js.undefined)
+    inline def setComponentBackgroundColorUndefined: Self = StObject.set(x, "componentBackgroundColor", js.undefined)
     
-    @scala.inline
-    def setDirection(value: rtl | ltr | locale): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: rtl | ltr | locale): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setFitSystemWindows(value: Boolean): Self = StObject.set(x, "fitSystemWindows", value.asInstanceOf[js.Any])
+    inline def setFitSystemWindows(value: Boolean): Self = StObject.set(x, "fitSystemWindows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitSystemWindowsUndefined: Self = StObject.set(x, "fitSystemWindows", js.undefined)
+    inline def setFitSystemWindowsUndefined: Self = StObject.set(x, "fitSystemWindows", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: js.Array[LayoutOrientation]): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: js.Array[LayoutOrientation]): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setOrientationVarargs(value: LayoutOrientation*): Self = StObject.set(x, "orientation", js.Array(value :_*))
+    inline def setOrientationVarargs(value: LayoutOrientation*): Self = StObject.set(x, "orientation", js.Array(value :_*))
     
-    @scala.inline
-    def setTopMargin(value: Double): Self = StObject.set(x, "topMargin", value.asInstanceOf[js.Any])
+    inline def setTopMargin(value: Double): Self = StObject.set(x, "topMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopMarginUndefined: Self = StObject.set(x, "topMargin", js.undefined)
+    inline def setTopMarginUndefined: Self = StObject.set(x, "topMargin", js.undefined)
   }
 }

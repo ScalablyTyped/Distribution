@@ -17,22 +17,19 @@ trait Declaration
      with Statement
 object Declaration {
   
-  @scala.inline
-  def ClassDeclaration(body: ClassBody): typings.estree.mod.ClassDeclaration = {
+  inline def ClassDeclaration(body: ClassBody): typings.estree.mod.ClassDeclaration = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = null)
     __obj.updateDynamic("type")("ClassDeclaration")
     __obj.asInstanceOf[typings.estree.mod.ClassDeclaration]
   }
   
-  @scala.inline
-  def FunctionDeclaration(body: BlockStatement, params: js.Array[Pattern]): typings.estree.mod.FunctionDeclaration = {
+  inline def FunctionDeclaration(body: BlockStatement, params: js.Array[Pattern]): typings.estree.mod.FunctionDeclaration = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], id = null)
     __obj.updateDynamic("type")("FunctionDeclaration")
     __obj.asInstanceOf[typings.estree.mod.FunctionDeclaration]
   }
   
-  @scala.inline
-  def VariableDeclaration(declarations: js.Array[VariableDeclarator], kind: `var` | let | const): typings.estree.mod.VariableDeclaration = {
+  inline def VariableDeclaration(declarations: js.Array[VariableDeclarator], kind: `var` | let | const): typings.estree.mod.VariableDeclaration = {
     val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("VariableDeclaration")
     __obj.asInstanceOf[typings.estree.mod.VariableDeclaration]

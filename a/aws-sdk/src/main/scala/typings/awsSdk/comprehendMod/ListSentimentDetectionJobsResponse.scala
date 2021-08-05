@@ -18,28 +18,21 @@ trait ListSentimentDetectionJobsResponse extends StObject {
 }
 object ListSentimentDetectionJobsResponse {
   
-  @scala.inline
-  def apply(): ListSentimentDetectionJobsResponse = {
+  inline def apply(): ListSentimentDetectionJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSentimentDetectionJobsResponse]
   }
   
-  @scala.inline
-  implicit class ListSentimentDetectionJobsResponseMutableBuilder[Self <: ListSentimentDetectionJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSentimentDetectionJobsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSentimentDetectionJobPropertiesList(value: SentimentDetectionJobPropertiesList): Self = StObject.set(x, "SentimentDetectionJobPropertiesList", value.asInstanceOf[js.Any])
+    inline def setSentimentDetectionJobPropertiesList(value: SentimentDetectionJobPropertiesList): Self = StObject.set(x, "SentimentDetectionJobPropertiesList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentDetectionJobPropertiesListUndefined: Self = StObject.set(x, "SentimentDetectionJobPropertiesList", js.undefined)
+    inline def setSentimentDetectionJobPropertiesListUndefined: Self = StObject.set(x, "SentimentDetectionJobPropertiesList", js.undefined)
     
-    @scala.inline
-    def setSentimentDetectionJobPropertiesListVarargs(value: SentimentDetectionJobProperties*): Self = StObject.set(x, "SentimentDetectionJobPropertiesList", js.Array(value :_*))
+    inline def setSentimentDetectionJobPropertiesListVarargs(value: SentimentDetectionJobProperties*): Self = StObject.set(x, "SentimentDetectionJobPropertiesList", js.Array(value :_*))
   }
 }

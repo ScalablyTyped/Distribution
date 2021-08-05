@@ -30,8 +30,7 @@ trait Topic
 }
 object Topic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessedAt: DateString,
     AuthorizationRules: String,
     AutoDeleteOnIdle: String,
@@ -62,31 +61,22 @@ object Topic {
     __obj.asInstanceOf[Topic]
   }
   
-  @scala.inline
-  implicit class TopicMutableBuilder[Self <: Topic] (val x: Self) extends AnyVal {
+  extension [Self <: Topic](x: Self) {
     
-    @scala.inline
-    def setAccessedAt(value: DateString): Self = StObject.set(x, "AccessedAt", value.asInstanceOf[js.Any])
+    inline def setAccessedAt(value: DateString): Self = StObject.set(x, "AccessedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountDetails(value: StringDictionary[String]): Self = StObject.set(x, "CountDetails", value.asInstanceOf[js.Any])
+    inline def setCountDetails(value: StringDictionary[String]): Self = StObject.set(x, "CountDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSubscriptionPartitioning(value: String): Self = StObject.set(x, "EnableSubscriptionPartitioning", value.asInstanceOf[js.Any])
+    inline def setEnableSubscriptionPartitioning(value: String): Self = StObject.set(x, "EnableSubscriptionPartitioning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilteringMessagesBeforePublishing(value: String): Self = StObject.set(x, "FilteringMessagesBeforePublishing", value.asInstanceOf[js.Any])
+    inline def setFilteringMessagesBeforePublishing(value: String): Self = StObject.set(x, "FilteringMessagesBeforePublishing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExpress(value: String): Self = StObject.set(x, "IsExpress", value.asInstanceOf[js.Any])
+    inline def setIsExpress(value: String): Self = StObject.set(x, "IsExpress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionCount(value: String): Self = StObject.set(x, "SubscriptionCount", value.asInstanceOf[js.Any])
+    inline def setSubscriptionCount(value: String): Self = StObject.set(x, "SubscriptionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportOrdering(value: String): Self = StObject.set(x, "SupportOrdering", value.asInstanceOf[js.Any])
+    inline def setSupportOrdering(value: String): Self = StObject.set(x, "SupportOrdering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicName(value: String): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
+    inline def setTopicName(value: String): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
   }
 }

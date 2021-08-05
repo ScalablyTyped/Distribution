@@ -13,7 +13,7 @@ object betterSqlite3BetterSqlite3QueryRunnerMod {
   class BetterSqlite3QueryRunner protected () extends AbstractSqliteQueryRunner {
     def this(driver: BetterSqlite3Driver) = this()
     
-    var cacheSize: js.Any = js.native
+    /* private */ var cacheSize: js.Any = js.native
     
     /**
       * Database driver used by connection.
@@ -21,8 +21,8 @@ object betterSqlite3BetterSqlite3QueryRunnerMod {
     @JSName("driver")
     var driver_BetterSqlite3QueryRunner: BetterSqlite3Driver = js.native
     
-    var getStmt: js.Any = js.native
+    /* private */ var getStmt: js.Any = js.native
     
-    var stmtCache: js.Any = js.native
+    /* private */ var stmtCache: js.Any = js.native
   }
 }

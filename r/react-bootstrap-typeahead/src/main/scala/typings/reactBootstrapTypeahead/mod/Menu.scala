@@ -27,12 +27,10 @@ object Menu {
   @JSImport("react-bootstrap-typeahead", "Menu.Divider")
   @js.native
   def Divider: FunctionComponent[js.Object] = js.native
-  @scala.inline
-  def Divider_=(x: FunctionComponent[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
+  inline def Divider_=(x: FunctionComponent[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
   
   @JSImport("react-bootstrap-typeahead", "Menu.Header")
   @js.native
   def Header: FunctionComponent[MenuHeaderProps] = js.native
-  @scala.inline
-  def Header_=(x: FunctionComponent[MenuHeaderProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
+  inline def Header_=(x: FunctionComponent[MenuHeaderProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
 }

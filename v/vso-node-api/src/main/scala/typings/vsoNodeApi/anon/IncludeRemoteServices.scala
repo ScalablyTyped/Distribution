@@ -12,19 +12,15 @@ trait IncludeRemoteServices extends StObject {
 }
 object IncludeRemoteServices {
   
-  @scala.inline
-  def apply(includeRemoteServices: scala.Double, none: scala.Double): IncludeRemoteServices = {
+  inline def apply(includeRemoteServices: scala.Double, none: scala.Double): IncludeRemoteServices = {
     val __obj = js.Dynamic.literal(includeRemoteServices = includeRemoteServices.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludeRemoteServices]
   }
   
-  @scala.inline
-  implicit class IncludeRemoteServicesMutableBuilder[Self <: IncludeRemoteServices] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeRemoteServices](x: Self) {
     
-    @scala.inline
-    def setIncludeRemoteServices(value: scala.Double): Self = StObject.set(x, "includeRemoteServices", value.asInstanceOf[js.Any])
+    inline def setIncludeRemoteServices(value: scala.Double): Self = StObject.set(x, "includeRemoteServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

@@ -15,17 +15,13 @@ object mod {
   trait Method extends StObject
   object Method {
     
-    @scala.inline
-    def restart: typings.jqueryCountto.jqueryCounttoStrings.restart = "restart".asInstanceOf[typings.jqueryCountto.jqueryCounttoStrings.restart]
+    inline def restart: typings.jqueryCountto.jqueryCounttoStrings.restart = "restart".asInstanceOf[typings.jqueryCountto.jqueryCounttoStrings.restart]
     
-    @scala.inline
-    def start: typings.jqueryCountto.jqueryCounttoStrings.start = "start".asInstanceOf[typings.jqueryCountto.jqueryCounttoStrings.start]
+    inline def start: typings.jqueryCountto.jqueryCounttoStrings.start = "start".asInstanceOf[typings.jqueryCountto.jqueryCounttoStrings.start]
     
-    @scala.inline
-    def stop: typings.jqueryCountto.jqueryCounttoStrings.stop = "stop".asInstanceOf[typings.jqueryCountto.jqueryCounttoStrings.stop]
+    inline def stop: typings.jqueryCountto.jqueryCounttoStrings.stop = "stop".asInstanceOf[typings.jqueryCountto.jqueryCounttoStrings.stop]
     
-    @scala.inline
-    def toggle: typings.jqueryCountto.jqueryCounttoStrings.toggle = "toggle".asInstanceOf[typings.jqueryCountto.jqueryCounttoStrings.toggle]
+    inline def toggle: typings.jqueryCountto.jqueryCounttoStrings.toggle = "toggle".asInstanceOf[typings.jqueryCountto.jqueryCounttoStrings.toggle]
   }
   
   /* Inlined std.Partial<{  from :number,   to :number,   speed :number,   refreshInterval :number,   decimals :number, formatter (value : number, options : jquery-countto.jquery-countto.Options): string, onUpdate (value : number): void, onComplete (value : number): void}> */
@@ -49,62 +45,44 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+      inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+      inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
       
-      @scala.inline
-      def setFormatter(value: (/* value */ Double, Options) => String): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
+      inline def setFormatter(value: (/* value */ Double, Options) => String): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setOnComplete(value: /* value */ Double => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      inline def setOnComplete(value: /* value */ Double => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: /* value */ Double => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+      inline def setOnUpdate(value: /* value */ Double => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
+      inline def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshIntervalUndefined: Self = StObject.set(x, "refreshInterval", js.undefined)
+      inline def setRefreshIntervalUndefined: Self = StObject.set(x, "refreshInterval", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
-      @scala.inline
-      def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   

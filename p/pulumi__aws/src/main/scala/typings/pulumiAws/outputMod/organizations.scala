@@ -35,29 +35,22 @@ object organizations {
   }
   object GetOrganizationAccount {
     
-    @scala.inline
-    def apply(arn: String, email: String, id: String, name: String, status: String): GetOrganizationAccount = {
+    inline def apply(arn: String, email: String, id: String, name: String, status: String): GetOrganizationAccount = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetOrganizationAccount]
     }
     
-    @scala.inline
-    implicit class GetOrganizationAccountMutableBuilder[Self <: GetOrganizationAccount] (val x: Self) extends AnyVal {
+    extension [Self <: GetOrganizationAccount](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,29 +83,22 @@ object organizations {
   }
   object GetOrganizationNonMasterAccount {
     
-    @scala.inline
-    def apply(arn: String, email: String, id: String, name: String, status: String): GetOrganizationNonMasterAccount = {
+    inline def apply(arn: String, email: String, id: String, name: String, status: String): GetOrganizationNonMasterAccount = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetOrganizationNonMasterAccount]
     }
     
-    @scala.inline
-    implicit class GetOrganizationNonMasterAccountMutableBuilder[Self <: GetOrganizationNonMasterAccount] (val x: Self) extends AnyVal {
+    extension [Self <: GetOrganizationNonMasterAccount](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,29 +126,22 @@ object organizations {
   }
   object GetOrganizationRoot {
     
-    @scala.inline
-    def apply(arn: String, id: String, name: String, policyTypes: js.Array[GetOrganizationRootPolicyType]): GetOrganizationRoot = {
+    inline def apply(arn: String, id: String, name: String, policyTypes: js.Array[GetOrganizationRootPolicyType]): GetOrganizationRoot = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], policyTypes = policyTypes.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetOrganizationRoot]
     }
     
-    @scala.inline
-    implicit class GetOrganizationRootMutableBuilder[Self <: GetOrganizationRoot] (val x: Self) extends AnyVal {
+    extension [Self <: GetOrganizationRoot](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyTypes(value: js.Array[GetOrganizationRootPolicyType]): Self = StObject.set(x, "policyTypes", value.asInstanceOf[js.Any])
+      inline def setPolicyTypes(value: js.Array[GetOrganizationRootPolicyType]): Self = StObject.set(x, "policyTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyTypesVarargs(value: GetOrganizationRootPolicyType*): Self = StObject.set(x, "policyTypes", js.Array(value :_*))
+      inline def setPolicyTypesVarargs(value: GetOrganizationRootPolicyType*): Self = StObject.set(x, "policyTypes", js.Array(value :_*))
     }
   }
   
@@ -177,21 +156,17 @@ object organizations {
   }
   object GetOrganizationRootPolicyType {
     
-    @scala.inline
-    def apply(status: String, `type`: String): GetOrganizationRootPolicyType = {
+    inline def apply(status: String, `type`: String): GetOrganizationRootPolicyType = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetOrganizationRootPolicyType]
     }
     
-    @scala.inline
-    implicit class GetOrganizationRootPolicyTypeMutableBuilder[Self <: GetOrganizationRootPolicyType] (val x: Self) extends AnyVal {
+    extension [Self <: GetOrganizationRootPolicyType](x: Self) {
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -214,23 +189,18 @@ object organizations {
   }
   object GetOrganizationalUnitsChildren {
     
-    @scala.inline
-    def apply(arn: String, id: String, name: String): GetOrganizationalUnitsChildren = {
+    inline def apply(arn: String, id: String, name: String): GetOrganizationalUnitsChildren = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetOrganizationalUnitsChildren]
     }
     
-    @scala.inline
-    implicit class GetOrganizationalUnitsChildrenMutableBuilder[Self <: GetOrganizationalUnitsChildren] (val x: Self) extends AnyVal {
+    extension [Self <: GetOrganizationalUnitsChildren](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -263,29 +233,22 @@ object organizations {
   }
   object OrganizationAccount {
     
-    @scala.inline
-    def apply(arn: String, email: String, id: String, name: String, status: String): OrganizationAccount = {
+    inline def apply(arn: String, email: String, id: String, name: String, status: String): OrganizationAccount = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[OrganizationAccount]
     }
     
-    @scala.inline
-    implicit class OrganizationAccountMutableBuilder[Self <: OrganizationAccount] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationAccount](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -318,29 +281,22 @@ object organizations {
   }
   object OrganizationNonMasterAccount {
     
-    @scala.inline
-    def apply(arn: String, email: String, id: String, name: String, status: String): OrganizationNonMasterAccount = {
+    inline def apply(arn: String, email: String, id: String, name: String, status: String): OrganizationNonMasterAccount = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[OrganizationNonMasterAccount]
     }
     
-    @scala.inline
-    implicit class OrganizationNonMasterAccountMutableBuilder[Self <: OrganizationNonMasterAccount] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationNonMasterAccount](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -368,29 +324,22 @@ object organizations {
   }
   object OrganizationRoot {
     
-    @scala.inline
-    def apply(arn: String, id: String, name: String, policyTypes: js.Array[OrganizationRootPolicyType]): OrganizationRoot = {
+    inline def apply(arn: String, id: String, name: String, policyTypes: js.Array[OrganizationRootPolicyType]): OrganizationRoot = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], policyTypes = policyTypes.asInstanceOf[js.Any])
       __obj.asInstanceOf[OrganizationRoot]
     }
     
-    @scala.inline
-    implicit class OrganizationRootMutableBuilder[Self <: OrganizationRoot] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationRoot](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyTypes(value: js.Array[OrganizationRootPolicyType]): Self = StObject.set(x, "policyTypes", value.asInstanceOf[js.Any])
+      inline def setPolicyTypes(value: js.Array[OrganizationRootPolicyType]): Self = StObject.set(x, "policyTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyTypesVarargs(value: OrganizationRootPolicyType*): Self = StObject.set(x, "policyTypes", js.Array(value :_*))
+      inline def setPolicyTypesVarargs(value: OrganizationRootPolicyType*): Self = StObject.set(x, "policyTypes", js.Array(value :_*))
     }
   }
   
@@ -405,21 +354,17 @@ object organizations {
   }
   object OrganizationRootPolicyType {
     
-    @scala.inline
-    def apply(status: String, `type`: String): OrganizationRootPolicyType = {
+    inline def apply(status: String, `type`: String): OrganizationRootPolicyType = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[OrganizationRootPolicyType]
     }
     
-    @scala.inline
-    implicit class OrganizationRootPolicyTypeMutableBuilder[Self <: OrganizationRootPolicyType] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationRootPolicyType](x: Self) {
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -447,26 +392,20 @@ object organizations {
   }
   object OrganizationalUnitAccount {
     
-    @scala.inline
-    def apply(arn: String, email: String, id: String, name: String): OrganizationalUnitAccount = {
+    inline def apply(arn: String, email: String, id: String, name: String): OrganizationalUnitAccount = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[OrganizationalUnitAccount]
     }
     
-    @scala.inline
-    implicit class OrganizationalUnitAccountMutableBuilder[Self <: OrganizationalUnitAccount] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationalUnitAccount](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

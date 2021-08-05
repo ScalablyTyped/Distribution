@@ -25,25 +25,19 @@ trait MultiSortReturn extends StObject {
 }
 object MultiSortReturn {
   
-  @scala.inline
-  def apply(sort: SortParams => Unit, sortBy: js.Array[String], sortDirection: SortDirectionMap): MultiSortReturn = {
+  inline def apply(sort: SortParams => Unit, sortBy: js.Array[String], sortDirection: SortDirectionMap): MultiSortReturn = {
     val __obj = js.Dynamic.literal(sort = js.Any.fromFunction1(sort), sortBy = sortBy.asInstanceOf[js.Any], sortDirection = sortDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSortReturn]
   }
   
-  @scala.inline
-  implicit class MultiSortReturnMutableBuilder[Self <: MultiSortReturn] (val x: Self) extends AnyVal {
+  extension [Self <: MultiSortReturn](x: Self) {
     
-    @scala.inline
-    def setSort(value: SortParams => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
+    inline def setSort(value: SortParams => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSortBy(value: js.Array[String]): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: js.Array[String]): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByVarargs(value: String*): Self = StObject.set(x, "sortBy", js.Array(value :_*))
+    inline def setSortByVarargs(value: String*): Self = StObject.set(x, "sortBy", js.Array(value :_*))
     
-    @scala.inline
-    def setSortDirection(value: SortDirectionMap): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
+    inline def setSortDirection(value: SortDirectionMap): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
   }
 }

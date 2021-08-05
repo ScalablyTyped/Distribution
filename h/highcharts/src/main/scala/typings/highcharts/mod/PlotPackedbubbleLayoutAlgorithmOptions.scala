@@ -128,109 +128,75 @@ trait PlotPackedbubbleLayoutAlgorithmOptions extends StObject {
 }
 object PlotPackedbubbleLayoutAlgorithmOptions {
   
-  @scala.inline
-  def apply(): PlotPackedbubbleLayoutAlgorithmOptions = {
+  inline def apply(): PlotPackedbubbleLayoutAlgorithmOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotPackedbubbleLayoutAlgorithmOptions]
   }
   
-  @scala.inline
-  implicit class PlotPackedbubbleLayoutAlgorithmOptionsMutableBuilder[Self <: PlotPackedbubbleLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotPackedbubbleLayoutAlgorithmOptions](x: Self) {
     
-    @scala.inline
-    def setBubblePadding(value: Double): Self = StObject.set(x, "bubblePadding", value.asInstanceOf[js.Any])
+    inline def setBubblePadding(value: Double): Self = StObject.set(x, "bubblePadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBubblePaddingUndefined: Self = StObject.set(x, "bubblePadding", js.undefined)
+    inline def setBubblePaddingUndefined: Self = StObject.set(x, "bubblePadding", js.undefined)
     
-    @scala.inline
-    def setDragBetweenSeries(value: Boolean): Self = StObject.set(x, "dragBetweenSeries", value.asInstanceOf[js.Any])
+    inline def setDragBetweenSeries(value: Boolean): Self = StObject.set(x, "dragBetweenSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragBetweenSeriesUndefined: Self = StObject.set(x, "dragBetweenSeries", js.undefined)
+    inline def setDragBetweenSeriesUndefined: Self = StObject.set(x, "dragBetweenSeries", js.undefined)
     
-    @scala.inline
-    def setEnableSimulation(value: Boolean): Self = StObject.set(x, "enableSimulation", value.asInstanceOf[js.Any])
+    inline def setEnableSimulation(value: Boolean): Self = StObject.set(x, "enableSimulation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSimulationUndefined: Self = StObject.set(x, "enableSimulation", js.undefined)
+    inline def setEnableSimulationUndefined: Self = StObject.set(x, "enableSimulation", js.undefined)
     
-    @scala.inline
-    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
+    inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
+    inline def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
     
-    @scala.inline
-    def setGravitationalConstant(value: Double): Self = StObject.set(x, "gravitationalConstant", value.asInstanceOf[js.Any])
+    inline def setGravitationalConstant(value: Double): Self = StObject.set(x, "gravitationalConstant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGravitationalConstantUndefined: Self = StObject.set(x, "gravitationalConstant", js.undefined)
+    inline def setGravitationalConstantUndefined: Self = StObject.set(x, "gravitationalConstant", js.undefined)
     
-    @scala.inline
-    def setInitialPositionRadius(value: Double): Self = StObject.set(x, "initialPositionRadius", value.asInstanceOf[js.Any])
+    inline def setInitialPositionRadius(value: Double): Self = StObject.set(x, "initialPositionRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialPositionRadiusUndefined: Self = StObject.set(x, "initialPositionRadius", js.undefined)
+    inline def setInitialPositionRadiusUndefined: Self = StObject.set(x, "initialPositionRadius", js.undefined)
     
-    @scala.inline
-    def setInitialPositions(value: circle | random | js.Function): Self = StObject.set(x, "initialPositions", value.asInstanceOf[js.Any])
+    inline def setInitialPositions(value: circle | random | js.Function): Self = StObject.set(x, "initialPositions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialPositionsUndefined: Self = StObject.set(x, "initialPositions", js.undefined)
+    inline def setInitialPositionsUndefined: Self = StObject.set(x, "initialPositions", js.undefined)
     
-    @scala.inline
-    def setIntegration(value: OptionsIntegrationValue): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
+    inline def setIntegration(value: OptionsIntegrationValue): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrationUndefined: Self = StObject.set(x, "integration", js.undefined)
+    inline def setIntegrationUndefined: Self = StObject.set(x, "integration", js.undefined)
     
-    @scala.inline
-    def setLinkLength(value: Double): Self = StObject.set(x, "linkLength", value.asInstanceOf[js.Any])
+    inline def setLinkLength(value: Double): Self = StObject.set(x, "linkLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkLengthUndefined: Self = StObject.set(x, "linkLength", js.undefined)
+    inline def setLinkLengthUndefined: Self = StObject.set(x, "linkLength", js.undefined)
     
-    @scala.inline
-    def setMaxIterations(value: Double): Self = StObject.set(x, "maxIterations", value.asInstanceOf[js.Any])
+    inline def setMaxIterations(value: Double): Self = StObject.set(x, "maxIterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxIterationsUndefined: Self = StObject.set(x, "maxIterations", js.undefined)
+    inline def setMaxIterationsUndefined: Self = StObject.set(x, "maxIterations", js.undefined)
     
-    @scala.inline
-    def setMaxSpeed(value: Double): Self = StObject.set(x, "maxSpeed", value.asInstanceOf[js.Any])
+    inline def setMaxSpeed(value: Double): Self = StObject.set(x, "maxSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSpeedUndefined: Self = StObject.set(x, "maxSpeed", js.undefined)
+    inline def setMaxSpeedUndefined: Self = StObject.set(x, "maxSpeed", js.undefined)
     
-    @scala.inline
-    def setParentNodeLimit(value: Boolean): Self = StObject.set(x, "parentNodeLimit", value.asInstanceOf[js.Any])
+    inline def setParentNodeLimit(value: Boolean): Self = StObject.set(x, "parentNodeLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNodeLimitUndefined: Self = StObject.set(x, "parentNodeLimit", js.undefined)
+    inline def setParentNodeLimitUndefined: Self = StObject.set(x, "parentNodeLimit", js.undefined)
     
-    @scala.inline
-    def setParentNodeOptions(value: PlotPackedbubbleLayoutAlgorithmParentNodeOptions): Self = StObject.set(x, "parentNodeOptions", value.asInstanceOf[js.Any])
+    inline def setParentNodeOptions(value: PlotPackedbubbleLayoutAlgorithmParentNodeOptions): Self = StObject.set(x, "parentNodeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNodeOptionsUndefined: Self = StObject.set(x, "parentNodeOptions", js.undefined)
+    inline def setParentNodeOptionsUndefined: Self = StObject.set(x, "parentNodeOptions", js.undefined)
     
-    @scala.inline
-    def setSeriesInteraction(value: Boolean): Self = StObject.set(x, "seriesInteraction", value.asInstanceOf[js.Any])
+    inline def setSeriesInteraction(value: Boolean): Self = StObject.set(x, "seriesInteraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesInteractionUndefined: Self = StObject.set(x, "seriesInteraction", js.undefined)
+    inline def setSeriesInteractionUndefined: Self = StObject.set(x, "seriesInteraction", js.undefined)
     
-    @scala.inline
-    def setSplitSeries(value: String): Self = StObject.set(x, "splitSeries", value.asInstanceOf[js.Any])
+    inline def setSplitSeries(value: String): Self = StObject.set(x, "splitSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitSeriesUndefined: Self = StObject.set(x, "splitSeries", js.undefined)
+    inline def setSplitSeriesUndefined: Self = StObject.set(x, "splitSeries", js.undefined)
     
-    @scala.inline
-    def setType(value: `reingold-fruchterman`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `reingold-fruchterman`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

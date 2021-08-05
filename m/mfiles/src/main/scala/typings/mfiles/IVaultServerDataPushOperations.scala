@@ -20,8 +20,7 @@ trait IVaultServerDataPushOperations extends StObject {
 }
 object IVaultServerDataPushOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CloneVaultForServerDataPush: IServerDataPushSink => IVault,
     SendCancel: Double => Unit,
     SendError: (Double, String) => Unit,
@@ -33,25 +32,18 @@ object IVaultServerDataPushOperations {
     __obj.asInstanceOf[IVaultServerDataPushOperations]
   }
   
-  @scala.inline
-  implicit class IVaultServerDataPushOperationsMutableBuilder[Self <: IVaultServerDataPushOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultServerDataPushOperations](x: Self) {
     
-    @scala.inline
-    def setCloneVaultForServerDataPush(value: IServerDataPushSink => IVault): Self = StObject.set(x, "CloneVaultForServerDataPush", js.Any.fromFunction1(value))
+    inline def setCloneVaultForServerDataPush(value: IServerDataPushSink => IVault): Self = StObject.set(x, "CloneVaultForServerDataPush", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendCancel(value: Double => Unit): Self = StObject.set(x, "SendCancel", js.Any.fromFunction1(value))
+    inline def setSendCancel(value: Double => Unit): Self = StObject.set(x, "SendCancel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendError(value: (Double, String) => Unit): Self = StObject.set(x, "SendError", js.Any.fromFunction2(value))
+    inline def setSendError(value: (Double, String) => Unit): Self = StObject.set(x, "SendError", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSendHeartbeat(value: Double => Unit): Self = StObject.set(x, "SendHeartbeat", js.Any.fromFunction1(value))
+    inline def setSendHeartbeat(value: Double => Unit): Self = StObject.set(x, "SendHeartbeat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendResponse(value: (Double, String) => Unit): Self = StObject.set(x, "SendResponse", js.Any.fromFunction2(value))
+    inline def setSendResponse(value: (Double, String) => Unit): Self = StObject.set(x, "SendResponse", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetServerDataPushSink(value: IServerDataPushSink => Unit): Self = StObject.set(x, "SetServerDataPushSink", js.Any.fromFunction1(value))
+    inline def setSetServerDataPushSink(value: IServerDataPushSink => Unit): Self = StObject.set(x, "SetServerDataPushSink", js.Any.fromFunction1(value))
   }
 }

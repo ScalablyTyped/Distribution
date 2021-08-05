@@ -20,28 +20,21 @@ trait IUnsubscribePacket
 }
 object IUnsubscribePacket {
   
-  @scala.inline
-  def apply(unsubscriptions: js.Array[String]): IUnsubscribePacket = {
+  inline def apply(unsubscriptions: js.Array[String]): IUnsubscribePacket = {
     val __obj = js.Dynamic.literal(cmd = "unsubscribe", unsubscriptions = unsubscriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUnsubscribePacket]
   }
   
-  @scala.inline
-  implicit class IUnsubscribePacketMutableBuilder[Self <: IUnsubscribePacket] (val x: Self) extends AnyVal {
+  extension [Self <: IUnsubscribePacket](x: Self) {
     
-    @scala.inline
-    def setCmd(value: unsubscribe): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    inline def setCmd(value: unsubscribe): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setUnsubscriptions(value: js.Array[String]): Self = StObject.set(x, "unsubscriptions", value.asInstanceOf[js.Any])
+    inline def setUnsubscriptions(value: js.Array[String]): Self = StObject.set(x, "unsubscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsubscriptionsVarargs(value: String*): Self = StObject.set(x, "unsubscriptions", js.Array(value :_*))
+    inline def setUnsubscriptionsVarargs(value: String*): Self = StObject.set(x, "unsubscriptions", js.Array(value :_*))
   }
 }

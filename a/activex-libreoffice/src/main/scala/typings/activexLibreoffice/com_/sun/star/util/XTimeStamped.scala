@@ -34,8 +34,7 @@ trait XTimeStamped
 }
 object XTimeStamped {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Timestamp: String,
     acquire: () => Unit,
     getTimestamp: () => String,
@@ -46,13 +45,10 @@ object XTimeStamped {
     __obj.asInstanceOf[XTimeStamped]
   }
   
-  @scala.inline
-  implicit class XTimeStampedMutableBuilder[Self <: XTimeStamped] (val x: Self) extends AnyVal {
+  extension [Self <: XTimeStamped](x: Self) {
     
-    @scala.inline
-    def setGetTimestamp(value: () => String): Self = StObject.set(x, "getTimestamp", js.Any.fromFunction0(value))
+    inline def setGetTimestamp(value: () => String): Self = StObject.set(x, "getTimestamp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
   }
 }

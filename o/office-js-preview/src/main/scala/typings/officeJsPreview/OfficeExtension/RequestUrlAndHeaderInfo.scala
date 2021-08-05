@@ -18,22 +18,17 @@ trait RequestUrlAndHeaderInfo extends StObject {
 }
 object RequestUrlAndHeaderInfo {
   
-  @scala.inline
-  def apply(url: String): RequestUrlAndHeaderInfo = {
+  inline def apply(url: String): RequestUrlAndHeaderInfo = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestUrlAndHeaderInfo]
   }
   
-  @scala.inline
-  implicit class RequestUrlAndHeaderInfoMutableBuilder[Self <: RequestUrlAndHeaderInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RequestUrlAndHeaderInfo](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

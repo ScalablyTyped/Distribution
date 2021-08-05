@@ -17,22 +17,17 @@ trait SchemaStatefulPolicyPreservedResources extends StObject {
 }
 object SchemaStatefulPolicyPreservedResources {
   
-  @scala.inline
-  def apply(): SchemaStatefulPolicyPreservedResources = {
+  inline def apply(): SchemaStatefulPolicyPreservedResources = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStatefulPolicyPreservedResources]
   }
   
-  @scala.inline
-  implicit class SchemaStatefulPolicyPreservedResourcesMutableBuilder[Self <: SchemaStatefulPolicyPreservedResources] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStatefulPolicyPreservedResources](x: Self) {
     
-    @scala.inline
-    def setDisks(value: js.Array[SchemaStatefulPolicyPreservedDisk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
+    inline def setDisks(value: js.Array[SchemaStatefulPolicyPreservedDisk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
+    inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    @scala.inline
-    def setDisksVarargs(value: SchemaStatefulPolicyPreservedDisk*): Self = StObject.set(x, "disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: SchemaStatefulPolicyPreservedDisk*): Self = StObject.set(x, "disks", js.Array(value :_*))
   }
 }

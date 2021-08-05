@@ -14,25 +14,19 @@ trait UpgradeSettings extends StObject {
 }
 object UpgradeSettings {
   
-  @scala.inline
-  def apply(): UpgradeSettings = {
+  inline def apply(): UpgradeSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpgradeSettings]
   }
   
-  @scala.inline
-  implicit class UpgradeSettingsMutableBuilder[Self <: UpgradeSettings] (val x: Self) extends AnyVal {
+  extension [Self <: UpgradeSettings](x: Self) {
     
-    @scala.inline
-    def setMaxSurge(value: Double): Self = StObject.set(x, "maxSurge", value.asInstanceOf[js.Any])
+    inline def setMaxSurge(value: Double): Self = StObject.set(x, "maxSurge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSurgeUndefined: Self = StObject.set(x, "maxSurge", js.undefined)
+    inline def setMaxSurgeUndefined: Self = StObject.set(x, "maxSurge", js.undefined)
     
-    @scala.inline
-    def setMaxUnavailable(value: Double): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
+    inline def setMaxUnavailable(value: Double): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUnavailableUndefined: Self = StObject.set(x, "maxUnavailable", js.undefined)
+    inline def setMaxUnavailableUndefined: Self = StObject.set(x, "maxUnavailable", js.undefined)
   }
 }

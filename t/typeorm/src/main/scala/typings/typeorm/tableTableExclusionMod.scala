@@ -33,7 +33,6 @@ object tableTableExclusionMod {
     /**
       * Creates exclusions from the exclusion metadata object.
       */
-    @scala.inline
-    def create(exclusionMetadata: ExclusionMetadata): TableExclusion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(exclusionMetadata.asInstanceOf[js.Any]).asInstanceOf[TableExclusion]
+    inline def create(exclusionMetadata: ExclusionMetadata): TableExclusion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(exclusionMetadata.asInstanceOf[js.Any]).asInstanceOf[TableExclusion]
   }
 }

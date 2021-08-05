@@ -20,17 +20,13 @@ object typesPublicMod {
   trait EventName extends StObject
   object EventName {
     
-    @scala.inline
-    def directory: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.directory = "directory".asInstanceOf[typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.directory]
+    inline def directory: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.directory = "directory".asInstanceOf[typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.directory]
     
-    @scala.inline
-    def error: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.error = "error".asInstanceOf[typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.error]
+    inline def error: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.error = "error".asInstanceOf[typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.error]
     
-    @scala.inline
-    def file: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.file = "file".asInstanceOf[typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.file]
+    inline def file: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.file = "file".asInstanceOf[typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.file]
     
-    @scala.inline
-    def symlink: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.symlink = "symlink".asInstanceOf[typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.symlink]
+    inline def symlink: typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.symlink = "symlink".asInstanceOf[typings.jsdevtoolsReaddirEnhanced.jsdevtoolsReaddirEnhancedStrings.symlink]
   }
   
   trait FileSystem extends StObject {
@@ -52,8 +48,7 @@ object typesPublicMod {
   }
   object FileSystem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       lstat: (String, Callback[typings.node.fsMod.Stats]) => Unit,
       readdir: (String, Callback[js.Array[String]]) => Unit,
       stat: (String, Callback[typings.node.fsMod.Stats]) => Unit
@@ -62,17 +57,13 @@ object typesPublicMod {
       __obj.asInstanceOf[FileSystem]
     }
     
-    @scala.inline
-    implicit class FileSystemMutableBuilder[Self <: FileSystem] (val x: Self) extends AnyVal {
+    extension [Self <: FileSystem](x: Self) {
       
-      @scala.inline
-      def setLstat(value: (String, Callback[typings.node.fsMod.Stats]) => Unit): Self = StObject.set(x, "lstat", js.Any.fromFunction2(value))
+      inline def setLstat(value: (String, Callback[typings.node.fsMod.Stats]) => Unit): Self = StObject.set(x, "lstat", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReaddir(value: (String, Callback[js.Array[String]]) => Unit): Self = StObject.set(x, "readdir", js.Any.fromFunction2(value))
+      inline def setReaddir(value: (String, Callback[js.Array[String]]) => Unit): Self = StObject.set(x, "readdir", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStat(value: (String, Callback[typings.node.fsMod.Stats]) => Unit): Self = StObject.set(x, "stat", js.Any.fromFunction2(value))
+      inline def setStat(value: (String, Callback[typings.node.fsMod.Stats]) => Unit): Self = StObject.set(x, "stat", js.Any.fromFunction2(value))
     }
   }
   
@@ -131,62 +122,44 @@ object typesPublicMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+      inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      @scala.inline
-      def setDeep(value: Boolean | Double | String | RegExp | FilterFunction): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean | Double | String | RegExp | FilterFunction): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepFunction1(value: /* stat */ Stats => js.Any): Self = StObject.set(x, "deep", js.Any.fromFunction1(value))
+      inline def setDeepFunction1(value: /* stat */ Stats => js.Any): Self = StObject.set(x, "deep", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+      inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
       
-      @scala.inline
-      def setFilter(value: Boolean | String | RegExp | FilterFunction): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Boolean | String | RegExp | FilterFunction): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterFunction1(value: /* stat */ Stats => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilterFunction1(value: /* stat */ Stats => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFs(value: PartialFileSystem): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: PartialFileSystem): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
+      inline def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
+      inline def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
       
-      @scala.inline
-      def setStats(value: Boolean): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: Boolean): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+      inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
       
-      @scala.inline
-      def setWithFileTypes(value: Boolean): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
+      inline def setWithFileTypes(value: Boolean): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithFileTypesUndefined: Self = StObject.set(x, "withFileTypes", js.undefined)
+      inline def setWithFileTypesUndefined: Self = StObject.set(x, "withFileTypes", js.undefined)
     }
   }
   

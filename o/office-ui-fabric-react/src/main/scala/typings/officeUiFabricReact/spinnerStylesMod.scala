@@ -12,6 +12,5 @@ object spinnerStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: ISpinnerStyleProps): ISpinnerStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ISpinnerStyles]
+  inline def getStyles(props: ISpinnerStyleProps): ISpinnerStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ISpinnerStyles]
 }

@@ -18,25 +18,19 @@ trait MessagingPayload extends StObject {
 }
 object MessagingPayload {
   
-  @scala.inline
-  def apply(): MessagingPayload = {
+  inline def apply(): MessagingPayload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessagingPayload]
   }
   
-  @scala.inline
-  implicit class MessagingPayloadMutableBuilder[Self <: MessagingPayload] (val x: Self) extends AnyVal {
+  extension [Self <: MessagingPayload](x: Self) {
     
-    @scala.inline
-    def setData(value: DataMessagePayload): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: DataMessagePayload): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setNotification(value: NotificationMessagePayload): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: NotificationMessagePayload): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
   }
 }

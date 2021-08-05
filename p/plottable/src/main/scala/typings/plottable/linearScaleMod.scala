@@ -14,6 +14,6 @@ object linearScaleMod {
     */
   class Linear () extends QuantitativeScale[Double] {
     
-    var _d3Scale: js.Any = js.native
+    /* private */ var _d3Scale: js.Any = js.native
   }
 }

@@ -18,25 +18,19 @@ trait AssociateResourceSharePermissionResponse extends StObject {
 }
 object AssociateResourceSharePermissionResponse {
   
-  @scala.inline
-  def apply(): AssociateResourceSharePermissionResponse = {
+  inline def apply(): AssociateResourceSharePermissionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateResourceSharePermissionResponse]
   }
   
-  @scala.inline
-  implicit class AssociateResourceSharePermissionResponseMutableBuilder[Self <: AssociateResourceSharePermissionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateResourceSharePermissionResponse](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValueUndefined: Self = StObject.set(x, "returnValue", js.undefined)
+    inline def setReturnValueUndefined: Self = StObject.set(x, "returnValue", js.undefined)
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BundleType extends StObject
 object BundleType {
   
-  @scala.inline
-  def `0`: typings.reactReconciler.reactReconcilerNumbers.`0` = 0.asInstanceOf[typings.reactReconciler.reactReconcilerNumbers.`0`]
+  inline def `0`: typings.reactReconciler.reactReconcilerNumbers.`0` = 0.asInstanceOf[typings.reactReconciler.reactReconcilerNumbers.`0`]
   
-  @scala.inline
-  def `1`: typings.reactReconciler.reactReconcilerNumbers.`1` = 1.asInstanceOf[typings.reactReconciler.reactReconcilerNumbers.`1`]
+  inline def `1`: typings.reactReconciler.reactReconcilerNumbers.`1` = 1.asInstanceOf[typings.reactReconciler.reactReconcilerNumbers.`1`]
 }

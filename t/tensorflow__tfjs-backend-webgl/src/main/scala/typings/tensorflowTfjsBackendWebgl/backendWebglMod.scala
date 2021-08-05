@@ -52,21 +52,21 @@ object backendWebglMod {
   class MathBackendWebGL () extends KernelBackend {
     def this(gpgpu: GPGPUContext) = this()
     
-    var acquireTexture: js.Any = js.native
+    /* private */ var acquireTexture: js.Any = js.native
     
-    var activeTimers: js.Any = js.native
+    /* private */ var activeTimers: js.Any = js.native
     
-    var argMinMaxReduce: js.Any = js.native
+    /* private */ var argMinMaxReduce: js.Any = js.native
     
-    var argReduce: js.Any = js.native
+    /* private */ var argReduce: js.Any = js.native
     
-    var argReducePacked: js.Any = js.native
+    /* private */ var argReducePacked: js.Any = js.native
     
-    var binaryCache: js.Any = js.native
+    /* private */ var binaryCache: js.Any = js.native
     
-    var canvas: js.Any = js.native
+    /* private */ var canvas: js.Any = js.native
     
-    var checkNumericalProblems: js.Any = js.native
+    /* private */ var checkNumericalProblems: js.Any = js.native
     
     def compileAndRun[K /* <: TensorInfo */](program: GPGPUProgram, inputs: js.Array[TensorInfo]): K = js.native
     def compileAndRun[K /* <: TensorInfo */](
@@ -111,15 +111,15 @@ object backendWebglMod {
       preventEagerUnpackingOfOutput: Boolean
     ): K = js.native
     
-    var computeBytes: js.Any = js.native
+    /* private */ var computeBytes: js.Any = js.native
     
-    var conv2dByMatMul: js.Any = js.native
+    /* private */ var conv2dByMatMul: js.Any = js.native
     
-    var conv2dWithIm2Row: js.Any = js.native
+    /* private */ var conv2dWithIm2Row: js.Any = js.native
     
-    var convertAndCacheOnCPU: js.Any = js.native
+    /* private */ var convertAndCacheOnCPU: js.Any = js.native
     
-    var cpuBackend: js.Any = js.native
+    /* private */ var cpuBackend: js.Any = js.native
     
     @JSName("cropAndResize")
     def cropAndResize_bilinear(
@@ -140,12 +140,12 @@ object backendWebglMod {
       extrapolationValue: Double
     ): Tensor4D = js.native
     
-    var dataRefCount: js.Any = js.native
+    /* private */ var dataRefCount: js.Any = js.native
     
     /** Decrease refCount of a `TextureData`. */
     def decRef(dataId: DataId): Unit = js.native
     
-    var decode: js.Any = js.native
+    /* private */ var decode: js.Any = js.native
     
     @JSName("depthToSpace")
     def depthToSpace_NCHW(x: Tensor4D, blockSize: Double, dataFormat: NCHW): Tensor4D = js.native
@@ -154,17 +154,17 @@ object backendWebglMod {
     
     def disposeIntermediateTensorInfo(tensorInfo: TensorInfo): Unit = js.native
     
-    var disposed: js.Any = js.native
+    /* private */ var disposed: js.Any = js.native
     
-    var downloadWaitMs: js.Any = js.native
+    /* private */ var downloadWaitMs: js.Any = js.native
     
-    var endTimer: js.Any = js.native
+    /* private */ var endTimer: js.Any = js.native
     
-    var floatPrecisionValue: js.Any = js.native
+    /* private */ var floatPrecisionValue: js.Any = js.native
     
-    var getAndSaveBinary: js.Any = js.native
+    /* private */ var getAndSaveBinary: js.Any = js.native
     
-    var getCPUBackend: js.Any = js.native
+    /* private */ var getCPUBackend: js.Any = js.native
     
     /**
       * Returns internal information for the specific data bucket. Used in unit
@@ -174,51 +174,51 @@ object backendWebglMod {
     
     def getGPGPUContext(): GPGPUContext = js.native
     
-    var getQueryTime: js.Any = js.native
+    /* private */ var getQueryTime: js.Any = js.native
     
     def getTexture(dataId: DataId): WebGLTexture = js.native
     
     def getTextureManager(): TextureManager = js.native
     
-    var getValuesFromTexture: js.Any = js.native
+    /* private */ var getValuesFromTexture: js.Any = js.native
     
     var gpgpu: GPGPUContext = js.native
     
-    var gpgpuCreatedLocally: js.Any = js.native
+    /* private */ var gpgpuCreatedLocally: js.Any = js.native
     
     /** Increase refCount of a `TextureData`. */
     def incRef(dataId: DataId): Unit = js.native
     
-    var makeComplexComponentTensorInfo: js.Any = js.native
+    /* private */ var makeComplexComponentTensorInfo: js.Any = js.native
     
-    var makeOutput: js.Any = js.native
+    /* private */ var makeOutput: js.Any = js.native
     
     def makeTensorInfo(shape: js.Array[Double], dtype: DataType): TensorInfo = js.native
     def makeTensorInfo(shape: js.Array[Double], dtype: DataType, values: BackendValues): TensorInfo = js.native
     
-    var numBytesInGPU: js.Any = js.native
+    /* private */ var numBytesInGPU: js.Any = js.native
     
-    var numMBBeforeWarning: js.Any = js.native
+    /* private */ var numMBBeforeWarning: js.Any = js.native
     
-    var packTensor: js.Any = js.native
+    /* private */ var packTensor: js.Any = js.native
     
-    var packedBinaryOp: js.Any = js.native
+    /* private */ var packedBinaryOp: js.Any = js.native
     
-    var packedReshape: js.Any = js.native
+    /* private */ var packedReshape: js.Any = js.native
     
-    var packedUnaryOp: js.Any = js.native
+    /* private */ var packedUnaryOp: js.Any = js.native
     
-    var pendingDeletes: js.Any = js.native
+    /* private */ var pendingDeletes: js.Any = js.native
     
-    var pendingDisposal: js.Any = js.native
+    /* private */ var pendingDisposal: js.Any = js.native
     
-    var pendingRead: js.Any = js.native
+    /* private */ var pendingRead: js.Any = js.native
     
-    var programTimersStack: js.Any = js.native
+    /* private */ var programTimersStack: js.Any = js.native
     
-    var reduce: js.Any = js.native
+    /* private */ var reduce: js.Any = js.native
     
-    var releaseGPUData: js.Any = js.native
+    /* private */ var releaseGPUData: js.Any = js.native
     
     def runWebGLProgram(program: GPGPUProgram, inputs: js.Array[TensorInfo], outputDtype: DataType): TensorInfo = js.native
     def runWebGLProgram(
@@ -242,34 +242,33 @@ object backendWebglMod {
       preventEagerUnpackingOfOutput: Boolean
     ): TensorInfo = js.native
     
-    var segOpCompute: js.Any = js.native
+    /* private */ var segOpCompute: js.Any = js.native
     
-    var shallowSlice: js.Any = js.native
+    /* private */ var shallowSlice: js.Any = js.native
     
     def shouldExecuteOnCPU(inputs: js.Array[TensorInfo]): Boolean = js.native
     def shouldExecuteOnCPU(inputs: js.Array[TensorInfo], sizeThreshold: Double): Boolean = js.native
     
-    var startTimer: js.Any = js.native
+    /* private */ var startTimer: js.Any = js.native
     
     var texData: DataStorage[TextureData] = js.native
     
-    var textureManager: js.Any = js.native
+    /* private */ var textureManager: js.Any = js.native
     
-    var tryRunOnCpuOrThrow: js.Any = js.native
+    /* private */ var tryRunOnCpuOrThrow: js.Any = js.native
     
-    var unpackTensor: js.Any = js.native
+    /* private */ var unpackTensor: js.Any = js.native
     
-    var uploadToGPU: js.Any = js.native
+    /* private */ var uploadToGPU: js.Any = js.native
     
-    var uploadWaitMs: js.Any = js.native
+    /* private */ var uploadWaitMs: js.Any = js.native
     
-    var warnedAboutCPUBackend: js.Any = js.native
+    /* private */ var warnedAboutCPUBackend: js.Any = js.native
     
-    var warnedAboutMemory: js.Any = js.native
+    /* private */ var warnedAboutMemory: js.Any = js.native
   }
   
-  @scala.inline
-  def getBinaryCache(webGLVersion: Double): StringDictionary[GPGPUBinary] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBinaryCache")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[GPGPUBinary]]
+  inline def getBinaryCache(webGLVersion: Double): StringDictionary[GPGPUBinary] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBinaryCache")(webGLVersion.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[GPGPUBinary]]
   
   trait CPUTimerQuery extends StObject {
     
@@ -279,23 +278,18 @@ object backendWebglMod {
   }
   object CPUTimerQuery {
     
-    @scala.inline
-    def apply(startMs: Double): CPUTimerQuery = {
+    inline def apply(startMs: Double): CPUTimerQuery = {
       val __obj = js.Dynamic.literal(startMs = startMs.asInstanceOf[js.Any])
       __obj.asInstanceOf[CPUTimerQuery]
     }
     
-    @scala.inline
-    implicit class CPUTimerQueryMutableBuilder[Self <: CPUTimerQuery] (val x: Self) extends AnyVal {
+    extension [Self <: CPUTimerQuery](x: Self) {
       
-      @scala.inline
-      def setEndMs(value: Double): Self = StObject.set(x, "endMs", value.asInstanceOf[js.Any])
+      inline def setEndMs(value: Double): Self = StObject.set(x, "endMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndMsUndefined: Self = StObject.set(x, "endMs", js.undefined)
+      inline def setEndMsUndefined: Self = StObject.set(x, "endMs", js.undefined)
       
-      @scala.inline
-      def setStartMs(value: Double): Self = StObject.set(x, "startMs", value.asInstanceOf[js.Any])
+      inline def setStartMs(value: Double): Self = StObject.set(x, "startMs", value.asInstanceOf[js.Any])
     }
   }
   
@@ -307,20 +301,16 @@ object backendWebglMod {
   }
   object KernelInfo {
     
-    @scala.inline
-    def apply(name: String, query: js.Promise[Double]): KernelInfo = {
+    inline def apply(name: String, query: js.Promise[Double]): KernelInfo = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[KernelInfo]
     }
     
-    @scala.inline
-    implicit class KernelInfoMutableBuilder[Self <: KernelInfo] (val x: Self) extends AnyVal {
+    extension [Self <: KernelInfo](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: js.Promise[Double]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Promise[Double]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
   
@@ -341,8 +331,7 @@ object backendWebglMod {
   }
   object WebGLMemoryInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       numBytes: Double,
       numBytesInGPU: Double,
       numBytesInGPUAllocated: Double,
@@ -356,20 +345,15 @@ object backendWebglMod {
       __obj.asInstanceOf[WebGLMemoryInfo]
     }
     
-    @scala.inline
-    implicit class WebGLMemoryInfoMutableBuilder[Self <: WebGLMemoryInfo] (val x: Self) extends AnyVal {
+    extension [Self <: WebGLMemoryInfo](x: Self) {
       
-      @scala.inline
-      def setNumBytesInGPU(value: Double): Self = StObject.set(x, "numBytesInGPU", value.asInstanceOf[js.Any])
+      inline def setNumBytesInGPU(value: Double): Self = StObject.set(x, "numBytesInGPU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumBytesInGPUAllocated(value: Double): Self = StObject.set(x, "numBytesInGPUAllocated", value.asInstanceOf[js.Any])
+      inline def setNumBytesInGPUAllocated(value: Double): Self = StObject.set(x, "numBytesInGPUAllocated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumBytesInGPUFree(value: Double): Self = StObject.set(x, "numBytesInGPUFree", value.asInstanceOf[js.Any])
+      inline def setNumBytesInGPUFree(value: Double): Self = StObject.set(x, "numBytesInGPUFree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnreliable(value: Boolean): Self = StObject.set(x, "unreliable", value.asInstanceOf[js.Any])
+      inline def setUnreliable(value: Boolean): Self = StObject.set(x, "unreliable", value.asInstanceOf[js.Any])
     }
   }
   
@@ -383,20 +367,16 @@ object backendWebglMod {
   }
   object WebGLTimingInfo {
     
-    @scala.inline
-    def apply(downloadWaitMs: Double, kernelMs: Double | Error, uploadWaitMs: Double, wallMs: Double): WebGLTimingInfo = {
+    inline def apply(downloadWaitMs: Double, kernelMs: Double | Error, uploadWaitMs: Double, wallMs: Double): WebGLTimingInfo = {
       val __obj = js.Dynamic.literal(downloadWaitMs = downloadWaitMs.asInstanceOf[js.Any], kernelMs = kernelMs.asInstanceOf[js.Any], uploadWaitMs = uploadWaitMs.asInstanceOf[js.Any], wallMs = wallMs.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebGLTimingInfo]
     }
     
-    @scala.inline
-    implicit class WebGLTimingInfoMutableBuilder[Self <: WebGLTimingInfo] (val x: Self) extends AnyVal {
+    extension [Self <: WebGLTimingInfo](x: Self) {
       
-      @scala.inline
-      def setDownloadWaitMs(value: Double): Self = StObject.set(x, "downloadWaitMs", value.asInstanceOf[js.Any])
+      inline def setDownloadWaitMs(value: Double): Self = StObject.set(x, "downloadWaitMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadWaitMs(value: Double): Self = StObject.set(x, "uploadWaitMs", value.asInstanceOf[js.Any])
+      inline def setUploadWaitMs(value: Double): Self = StObject.set(x, "uploadWaitMs", value.asInstanceOf[js.Any])
     }
   }
 }

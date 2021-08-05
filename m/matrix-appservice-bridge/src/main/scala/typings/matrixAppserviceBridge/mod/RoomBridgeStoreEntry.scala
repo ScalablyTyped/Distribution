@@ -18,6 +18,5 @@ object RoomBridgeStoreEntry {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def serializeEntry(entry: typings.matrixAppserviceBridge.roomBridgeStoreMod.RoomBridgeStoreEntry): RoomStoreEntryDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeEntry")(entry.asInstanceOf[js.Any]).asInstanceOf[RoomStoreEntryDoc]
+  inline def serializeEntry(entry: typings.matrixAppserviceBridge.roomBridgeStoreMod.RoomBridgeStoreEntry): RoomStoreEntryDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeEntry")(entry.asInstanceOf[js.Any]).asInstanceOf[RoomStoreEntryDoc]
 }

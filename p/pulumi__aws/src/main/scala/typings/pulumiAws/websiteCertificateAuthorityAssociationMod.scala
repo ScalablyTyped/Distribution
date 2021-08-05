@@ -60,14 +60,10 @@ object websiteCertificateAuthorityAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): WebsiteCertificateAuthorityAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WebsiteCertificateAuthorityAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WebsiteCertificateAuthorityAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebsiteCertificateAuthorityAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WebsiteCertificateAuthorityAssociationState): WebsiteCertificateAuthorityAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WebsiteCertificateAuthorityAssociation]
-    @scala.inline
-    def get(
+    inline def get(name: String, id: Input[ID]): WebsiteCertificateAuthorityAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WebsiteCertificateAuthorityAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WebsiteCertificateAuthorityAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebsiteCertificateAuthorityAssociation]
+    inline def get(name: String, id: Input[ID], state: WebsiteCertificateAuthorityAssociationState): WebsiteCertificateAuthorityAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WebsiteCertificateAuthorityAssociation]
+    inline def get(
       name: String,
       id: Input[ID],
       state: WebsiteCertificateAuthorityAssociationState,
@@ -78,8 +74,7 @@ object websiteCertificateAuthorityAssociationMod {
       * Returns true if the given object is an instance of WebsiteCertificateAuthorityAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/worklink/websiteCertificateAuthorityAssociation.WebsiteCertificateAuthorityAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/worklink/websiteCertificateAuthorityAssociation.WebsiteCertificateAuthorityAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/worklink/websiteCertificateAuthorityAssociation.WebsiteCertificateAuthorityAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/worklink/websiteCertificateAuthorityAssociation.WebsiteCertificateAuthorityAssociation */ Boolean]
   }
   
   trait WebsiteCertificateAuthorityAssociationArgs extends StObject {
@@ -101,26 +96,20 @@ object websiteCertificateAuthorityAssociationMod {
   }
   object WebsiteCertificateAuthorityAssociationArgs {
     
-    @scala.inline
-    def apply(certificate: Input[String], fleetArn: Input[String]): WebsiteCertificateAuthorityAssociationArgs = {
+    inline def apply(certificate: Input[String], fleetArn: Input[String]): WebsiteCertificateAuthorityAssociationArgs = {
       val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], fleetArn = fleetArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebsiteCertificateAuthorityAssociationArgs]
     }
     
-    @scala.inline
-    implicit class WebsiteCertificateAuthorityAssociationArgsMutableBuilder[Self <: WebsiteCertificateAuthorityAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: WebsiteCertificateAuthorityAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setCertificate(value: Input[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: Input[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: Input[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: Input[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setFleetArn(value: Input[String]): Self = StObject.set(x, "fleetArn", value.asInstanceOf[js.Any])
+      inline def setFleetArn(value: Input[String]): Self = StObject.set(x, "fleetArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,38 +137,28 @@ object websiteCertificateAuthorityAssociationMod {
   }
   object WebsiteCertificateAuthorityAssociationState {
     
-    @scala.inline
-    def apply(): WebsiteCertificateAuthorityAssociationState = {
+    inline def apply(): WebsiteCertificateAuthorityAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebsiteCertificateAuthorityAssociationState]
     }
     
-    @scala.inline
-    implicit class WebsiteCertificateAuthorityAssociationStateMutableBuilder[Self <: WebsiteCertificateAuthorityAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: WebsiteCertificateAuthorityAssociationState](x: Self) {
       
-      @scala.inline
-      def setCertificate(value: Input[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: Input[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+      inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: Input[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: Input[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setFleetArn(value: Input[String]): Self = StObject.set(x, "fleetArn", value.asInstanceOf[js.Any])
+      inline def setFleetArn(value: Input[String]): Self = StObject.set(x, "fleetArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFleetArnUndefined: Self = StObject.set(x, "fleetArn", js.undefined)
+      inline def setFleetArnUndefined: Self = StObject.set(x, "fleetArn", js.undefined)
       
-      @scala.inline
-      def setWebsiteCaId(value: Input[String]): Self = StObject.set(x, "websiteCaId", value.asInstanceOf[js.Any])
+      inline def setWebsiteCaId(value: Input[String]): Self = StObject.set(x, "websiteCaId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsiteCaIdUndefined: Self = StObject.set(x, "websiteCaId", js.undefined)
+      inline def setWebsiteCaIdUndefined: Self = StObject.set(x, "websiteCaId", js.undefined)
     }
   }
 }

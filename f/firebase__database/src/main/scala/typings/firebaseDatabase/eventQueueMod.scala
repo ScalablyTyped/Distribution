@@ -22,14 +22,14 @@ object eventQueueMod {
       * @type {!Array.<Event>}
       * @private
       */
-    var events_ : js.Any = js.native
+    /* private */ var events_ : js.Any = js.native
     
     /**
       * @return {!Path}
       */
     def getPath(): Path = js.native
     
-    val path_ : js.Any = js.native
+    /* private */ val path_ : js.Any = js.native
     
     /**
       * Iterates through the list and raises each event
@@ -45,7 +45,7 @@ object eventQueueMod {
       * @private
       * @type {!Array.<EventList>}
       */
-    var eventLists_ : js.Any = js.native
+    /* private */ var eventLists_ : js.Any = js.native
     
     /**
       * @param {!Array.<Event>} eventDataList The new events to queue.
@@ -78,13 +78,13 @@ object eventQueueMod {
       * @param {!function(!Path):boolean} predicate
       * @private
       */
-    var raiseQueuedEventsMatchingPredicate_ : js.Any = js.native
+    /* private */ var raiseQueuedEventsMatchingPredicate_ : js.Any = js.native
     
     /**
       * Tracks recursion depth of raiseQueuedEvents_, for debugging purposes.
       * @private
       * @type {!number}
       */
-    var recursionDepth_ : js.Any = js.native
+    /* private */ var recursionDepth_ : js.Any = js.native
   }
 }

@@ -17,14 +17,10 @@ object applyValueTransformersMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def transformFrom(transformer: js.Array[ValueTransformer], databaseValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFrom")(transformer.asInstanceOf[js.Any], databaseValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def transformFrom(transformer: ValueTransformer, databaseValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFrom")(transformer.asInstanceOf[js.Any], databaseValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def transformFrom(transformer: js.Array[ValueTransformer], databaseValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFrom")(transformer.asInstanceOf[js.Any], databaseValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def transformFrom(transformer: ValueTransformer, databaseValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFrom")(transformer.asInstanceOf[js.Any], databaseValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def transformTo(transformer: js.Array[ValueTransformer], entityValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transformTo")(transformer.asInstanceOf[js.Any], entityValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def transformTo(transformer: ValueTransformer, entityValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transformTo")(transformer.asInstanceOf[js.Any], entityValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def transformTo(transformer: js.Array[ValueTransformer], entityValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transformTo")(transformer.asInstanceOf[js.Any], entityValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def transformTo(transformer: ValueTransformer, entityValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transformTo")(transformer.asInstanceOf[js.Any], entityValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

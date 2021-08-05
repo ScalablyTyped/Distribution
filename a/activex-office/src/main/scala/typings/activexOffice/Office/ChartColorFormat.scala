@@ -10,7 +10,7 @@ trait ChartColorFormat extends StObject {
   
   val Creator: Double
   
-  @JSName("Office.ChartColorFormat_typekey")
+  /* private */ @JSName("Office.ChartColorFormat_typekey")
   var OfficeDotChartColorFormat_typekey: ChartColorFormat
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait ChartColorFormat extends StObject {
 }
 object ChartColorFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     OfficeDotChartColorFormat_typekey: ChartColorFormat,
@@ -41,31 +40,22 @@ object ChartColorFormat {
     __obj.asInstanceOf[ChartColorFormat]
   }
   
-  @scala.inline
-  implicit class ChartColorFormatMutableBuilder[Self <: ChartColorFormat] (val x: Self) extends AnyVal {
+  extension [Self <: ChartColorFormat](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotChartColorFormat_typekey(value: ChartColorFormat): Self = StObject.set(x, "Office.ChartColorFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotChartColorFormat_typekey(value: ChartColorFormat): Self = StObject.set(x, "Office.ChartColorFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRGB(value: Double): Self = StObject.set(x, "RGB", value.asInstanceOf[js.Any])
+    inline def setRGB(value: Double): Self = StObject.set(x, "RGB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemeColor(value: Double): Self = StObject.set(x, "SchemeColor", value.asInstanceOf[js.Any])
+    inline def setSchemeColor(value: Double): Self = StObject.set(x, "SchemeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Default(value: Double): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
+    inline def set_Default(value: Double): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
   }
 }

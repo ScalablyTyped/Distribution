@@ -10,8 +10,7 @@ trait BitmapTypedValue
      with IBitmapTypedValue
 object BitmapTypedValue {
   
-  @scala.inline
-  def apply(`type`: PropertyType, value: js.Any): BitmapTypedValue = {
+  inline def apply(`type`: PropertyType, value: js.Any): BitmapTypedValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BitmapTypedValue]

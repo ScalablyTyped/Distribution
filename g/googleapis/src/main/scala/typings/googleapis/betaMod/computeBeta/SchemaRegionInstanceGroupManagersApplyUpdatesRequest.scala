@@ -29,34 +29,25 @@ trait SchemaRegionInstanceGroupManagersApplyUpdatesRequest extends StObject {
 }
 object SchemaRegionInstanceGroupManagersApplyUpdatesRequest {
   
-  @scala.inline
-  def apply(): SchemaRegionInstanceGroupManagersApplyUpdatesRequest = {
+  inline def apply(): SchemaRegionInstanceGroupManagersApplyUpdatesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRegionInstanceGroupManagersApplyUpdatesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRegionInstanceGroupManagersApplyUpdatesRequestMutableBuilder[Self <: SchemaRegionInstanceGroupManagersApplyUpdatesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRegionInstanceGroupManagersApplyUpdatesRequest](x: Self) {
     
-    @scala.inline
-    def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
-    @scala.inline
-    def setMinimalAction(value: String): Self = StObject.set(x, "minimalAction", value.asInstanceOf[js.Any])
+    inline def setMinimalAction(value: String): Self = StObject.set(x, "minimalAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimalActionUndefined: Self = StObject.set(x, "minimalAction", js.undefined)
+    inline def setMinimalActionUndefined: Self = StObject.set(x, "minimalAction", js.undefined)
     
-    @scala.inline
-    def setMostDisruptiveAllowedAction(value: String): Self = StObject.set(x, "mostDisruptiveAllowedAction", value.asInstanceOf[js.Any])
+    inline def setMostDisruptiveAllowedAction(value: String): Self = StObject.set(x, "mostDisruptiveAllowedAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMostDisruptiveAllowedActionUndefined: Self = StObject.set(x, "mostDisruptiveAllowedAction", js.undefined)
+    inline def setMostDisruptiveAllowedActionUndefined: Self = StObject.set(x, "mostDisruptiveAllowedAction", js.undefined)
   }
 }

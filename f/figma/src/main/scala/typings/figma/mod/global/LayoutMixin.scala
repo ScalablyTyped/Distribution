@@ -36,8 +36,7 @@ trait LayoutMixin extends StObject {
 }
 object LayoutMixin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absoluteTransform: Transform,
     constrainProportions: Boolean,
     height: Double,
@@ -54,40 +53,28 @@ object LayoutMixin {
     __obj.asInstanceOf[LayoutMixin]
   }
   
-  @scala.inline
-  implicit class LayoutMixinMutableBuilder[Self <: LayoutMixin] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutMixin](x: Self) {
     
-    @scala.inline
-    def setAbsoluteTransform(value: Transform): Self = StObject.set(x, "absoluteTransform", value.asInstanceOf[js.Any])
+    inline def setAbsoluteTransform(value: Transform): Self = StObject.set(x, "absoluteTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstrainProportions(value: Boolean): Self = StObject.set(x, "constrainProportions", value.asInstanceOf[js.Any])
+    inline def setConstrainProportions(value: Boolean): Self = StObject.set(x, "constrainProportions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutAlign(value: MIN | CENTER | MAX | STRETCH): Self = StObject.set(x, "layoutAlign", value.asInstanceOf[js.Any])
+    inline def setLayoutAlign(value: MIN | CENTER | MAX | STRETCH): Self = StObject.set(x, "layoutAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeTransform(value: Transform): Self = StObject.set(x, "relativeTransform", value.asInstanceOf[js.Any])
+    inline def setRelativeTransform(value: Transform): Self = StObject.set(x, "relativeTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResize(value: (Double, Double) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
+    inline def setResize(value: (Double, Double) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResizeWithoutConstraints(value: (Double, Double) => Unit): Self = StObject.set(x, "resizeWithoutConstraints", js.Any.fromFunction2(value))
+    inline def setResizeWithoutConstraints(value: (Double, Double) => Unit): Self = StObject.set(x, "resizeWithoutConstraints", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

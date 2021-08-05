@@ -13,19 +13,15 @@ trait DescribeEventTrackerResponse extends StObject {
 }
 object DescribeEventTrackerResponse {
   
-  @scala.inline
-  def apply(): DescribeEventTrackerResponse = {
+  inline def apply(): DescribeEventTrackerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEventTrackerResponse]
   }
   
-  @scala.inline
-  implicit class DescribeEventTrackerResponseMutableBuilder[Self <: DescribeEventTrackerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEventTrackerResponse](x: Self) {
     
-    @scala.inline
-    def setEventTracker(value: EventTracker): Self = StObject.set(x, "eventTracker", value.asInstanceOf[js.Any])
+    inline def setEventTracker(value: EventTracker): Self = StObject.set(x, "eventTracker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTrackerUndefined: Self = StObject.set(x, "eventTracker", js.undefined)
+    inline def setEventTrackerUndefined: Self = StObject.set(x, "eventTracker", js.undefined)
   }
 }

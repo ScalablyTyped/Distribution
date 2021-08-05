@@ -24,8 +24,7 @@ trait PhotoImportProgress extends StObject {
 }
 object PhotoImportProgress {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bytesImported: Double,
     importProgress: Double,
     itemsImported: Double,
@@ -36,22 +35,16 @@ object PhotoImportProgress {
     __obj.asInstanceOf[PhotoImportProgress]
   }
   
-  @scala.inline
-  implicit class PhotoImportProgressMutableBuilder[Self <: PhotoImportProgress] (val x: Self) extends AnyVal {
+  extension [Self <: PhotoImportProgress](x: Self) {
     
-    @scala.inline
-    def setBytesImported(value: Double): Self = StObject.set(x, "bytesImported", value.asInstanceOf[js.Any])
+    inline def setBytesImported(value: Double): Self = StObject.set(x, "bytesImported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportProgress(value: Double): Self = StObject.set(x, "importProgress", value.asInstanceOf[js.Any])
+    inline def setImportProgress(value: Double): Self = StObject.set(x, "importProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsImported(value: Double): Self = StObject.set(x, "itemsImported", value.asInstanceOf[js.Any])
+    inline def setItemsImported(value: Double): Self = StObject.set(x, "itemsImported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesToImport(value: Double): Self = StObject.set(x, "totalBytesToImport", value.asInstanceOf[js.Any])
+    inline def setTotalBytesToImport(value: Double): Self = StObject.set(x, "totalBytesToImport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalItemsToImport(value: Double): Self = StObject.set(x, "totalItemsToImport", value.asInstanceOf[js.Any])
+    inline def setTotalItemsToImport(value: Double): Self = StObject.set(x, "totalItemsToImport", value.asInstanceOf[js.Any])
   }
 }

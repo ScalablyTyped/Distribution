@@ -20,25 +20,19 @@ trait IRectOptions
 }
 object IRectOptions {
   
-  @scala.inline
-  def apply(): IRectOptions = {
+  inline def apply(): IRectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRectOptions]
   }
   
-  @scala.inline
-  implicit class IRectOptionsMutableBuilder[Self <: IRectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IRectOptions](x: Self) {
     
-    @scala.inline
-    def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
+    inline def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
+    inline def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
     
-    @scala.inline
-    def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+    inline def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
+    inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
   }
 }

@@ -22,25 +22,19 @@ trait IErrorHandlingConfig extends StObject {
 }
 object IErrorHandlingConfig {
   
-  @scala.inline
-  def apply(): IErrorHandlingConfig = {
+  inline def apply(): IErrorHandlingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IErrorHandlingConfig]
   }
   
-  @scala.inline
-  implicit class IErrorHandlingConfigMutableBuilder[Self <: IErrorHandlingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IErrorHandlingConfig](x: Self) {
     
-    @scala.inline
-    def setObjectMaxDepth(value: Double): Self = StObject.set(x, "objectMaxDepth", value.asInstanceOf[js.Any])
+    inline def setObjectMaxDepth(value: Double): Self = StObject.set(x, "objectMaxDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectMaxDepthUndefined: Self = StObject.set(x, "objectMaxDepth", js.undefined)
+    inline def setObjectMaxDepthUndefined: Self = StObject.set(x, "objectMaxDepth", js.undefined)
     
-    @scala.inline
-    def setUrlErrorParamsEnabled(value: Boolean): Self = StObject.set(x, "urlErrorParamsEnabled", value.asInstanceOf[js.Any])
+    inline def setUrlErrorParamsEnabled(value: Boolean): Self = StObject.set(x, "urlErrorParamsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlErrorParamsEnabledUndefined: Self = StObject.set(x, "urlErrorParamsEnabled", js.undefined)
+    inline def setUrlErrorParamsEnabledUndefined: Self = StObject.set(x, "urlErrorParamsEnabled", js.undefined)
   }
 }

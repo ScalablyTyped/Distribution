@@ -23,31 +23,23 @@ trait NotifyWorkersFailureStatus extends StObject {
 }
 object NotifyWorkersFailureStatus {
   
-  @scala.inline
-  def apply(): NotifyWorkersFailureStatus = {
+  inline def apply(): NotifyWorkersFailureStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotifyWorkersFailureStatus]
   }
   
-  @scala.inline
-  implicit class NotifyWorkersFailureStatusMutableBuilder[Self <: NotifyWorkersFailureStatus] (val x: Self) extends AnyVal {
+  extension [Self <: NotifyWorkersFailureStatus](x: Self) {
     
-    @scala.inline
-    def setNotifyWorkersFailureCode(value: NotifyWorkersFailureCode): Self = StObject.set(x, "NotifyWorkersFailureCode", value.asInstanceOf[js.Any])
+    inline def setNotifyWorkersFailureCode(value: NotifyWorkersFailureCode): Self = StObject.set(x, "NotifyWorkersFailureCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyWorkersFailureCodeUndefined: Self = StObject.set(x, "NotifyWorkersFailureCode", js.undefined)
+    inline def setNotifyWorkersFailureCodeUndefined: Self = StObject.set(x, "NotifyWorkersFailureCode", js.undefined)
     
-    @scala.inline
-    def setNotifyWorkersFailureMessage(value: String): Self = StObject.set(x, "NotifyWorkersFailureMessage", value.asInstanceOf[js.Any])
+    inline def setNotifyWorkersFailureMessage(value: String): Self = StObject.set(x, "NotifyWorkersFailureMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyWorkersFailureMessageUndefined: Self = StObject.set(x, "NotifyWorkersFailureMessage", js.undefined)
+    inline def setNotifyWorkersFailureMessageUndefined: Self = StObject.set(x, "NotifyWorkersFailureMessage", js.undefined)
     
-    @scala.inline
-    def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
+    inline def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerIdUndefined: Self = StObject.set(x, "WorkerId", js.undefined)
+    inline def setWorkerIdUndefined: Self = StObject.set(x, "WorkerId", js.undefined)
   }
 }

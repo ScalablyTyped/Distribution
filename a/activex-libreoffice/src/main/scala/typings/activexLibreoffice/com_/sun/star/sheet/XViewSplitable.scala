@@ -61,8 +61,7 @@ trait XViewSplitable
 }
 object XViewSplitable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IsWindowSplit: Boolean,
     SplitColumn: Double,
     SplitHorizontal: Double,
@@ -82,40 +81,28 @@ object XViewSplitable {
     __obj.asInstanceOf[XViewSplitable]
   }
   
-  @scala.inline
-  implicit class XViewSplitableMutableBuilder[Self <: XViewSplitable] (val x: Self) extends AnyVal {
+  extension [Self <: XViewSplitable](x: Self) {
     
-    @scala.inline
-    def setGetIsWindowSplit(value: () => Boolean): Self = StObject.set(x, "getIsWindowSplit", js.Any.fromFunction0(value))
+    inline def setGetIsWindowSplit(value: () => Boolean): Self = StObject.set(x, "getIsWindowSplit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSplitColumn(value: () => Double): Self = StObject.set(x, "getSplitColumn", js.Any.fromFunction0(value))
+    inline def setGetSplitColumn(value: () => Double): Self = StObject.set(x, "getSplitColumn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSplitHorizontal(value: () => Double): Self = StObject.set(x, "getSplitHorizontal", js.Any.fromFunction0(value))
+    inline def setGetSplitHorizontal(value: () => Double): Self = StObject.set(x, "getSplitHorizontal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSplitRow(value: () => Double): Self = StObject.set(x, "getSplitRow", js.Any.fromFunction0(value))
+    inline def setGetSplitRow(value: () => Double): Self = StObject.set(x, "getSplitRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSplitVertical(value: () => Double): Self = StObject.set(x, "getSplitVertical", js.Any.fromFunction0(value))
+    inline def setGetSplitVertical(value: () => Double): Self = StObject.set(x, "getSplitVertical", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsWindowSplit(value: Boolean): Self = StObject.set(x, "IsWindowSplit", value.asInstanceOf[js.Any])
+    inline def setIsWindowSplit(value: Boolean): Self = StObject.set(x, "IsWindowSplit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitAtPosition(value: (Double, Double) => Unit): Self = StObject.set(x, "splitAtPosition", js.Any.fromFunction2(value))
+    inline def setSplitAtPosition(value: (Double, Double) => Unit): Self = StObject.set(x, "splitAtPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSplitColumn(value: Double): Self = StObject.set(x, "SplitColumn", value.asInstanceOf[js.Any])
+    inline def setSplitColumn(value: Double): Self = StObject.set(x, "SplitColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitHorizontal(value: Double): Self = StObject.set(x, "SplitHorizontal", value.asInstanceOf[js.Any])
+    inline def setSplitHorizontal(value: Double): Self = StObject.set(x, "SplitHorizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitRow(value: Double): Self = StObject.set(x, "SplitRow", value.asInstanceOf[js.Any])
+    inline def setSplitRow(value: Double): Self = StObject.set(x, "SplitRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitVertical(value: Double): Self = StObject.set(x, "SplitVertical", value.asInstanceOf[js.Any])
+    inline def setSplitVertical(value: Double): Self = StObject.set(x, "SplitVertical", value.asInstanceOf[js.Any])
   }
 }

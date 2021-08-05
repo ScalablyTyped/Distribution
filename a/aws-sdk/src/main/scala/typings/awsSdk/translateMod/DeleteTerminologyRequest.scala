@@ -13,16 +13,13 @@ trait DeleteTerminologyRequest extends StObject {
 }
 object DeleteTerminologyRequest {
   
-  @scala.inline
-  def apply(Name: ResourceName): DeleteTerminologyRequest = {
+  inline def apply(Name: ResourceName): DeleteTerminologyRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTerminologyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTerminologyRequestMutableBuilder[Self <: DeleteTerminologyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTerminologyRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

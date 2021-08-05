@@ -18,25 +18,19 @@ trait FaceDetection extends StObject {
 }
 object FaceDetection {
   
-  @scala.inline
-  def apply(): FaceDetection = {
+  inline def apply(): FaceDetection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FaceDetection]
   }
   
-  @scala.inline
-  implicit class FaceDetectionMutableBuilder[Self <: FaceDetection] (val x: Self) extends AnyVal {
+  extension [Self <: FaceDetection](x: Self) {
     
-    @scala.inline
-    def setFace(value: FaceDetail): Self = StObject.set(x, "Face", value.asInstanceOf[js.Any])
+    inline def setFace(value: FaceDetail): Self = StObject.set(x, "Face", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceUndefined: Self = StObject.set(x, "Face", js.undefined)
+    inline def setFaceUndefined: Self = StObject.set(x, "Face", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

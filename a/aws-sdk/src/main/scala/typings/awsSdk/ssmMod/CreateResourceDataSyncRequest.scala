@@ -28,34 +28,25 @@ trait CreateResourceDataSyncRequest extends StObject {
 }
 object CreateResourceDataSyncRequest {
   
-  @scala.inline
-  def apply(SyncName: ResourceDataSyncName): CreateResourceDataSyncRequest = {
+  inline def apply(SyncName: ResourceDataSyncName): CreateResourceDataSyncRequest = {
     val __obj = js.Dynamic.literal(SyncName = SyncName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateResourceDataSyncRequest]
   }
   
-  @scala.inline
-  implicit class CreateResourceDataSyncRequestMutableBuilder[Self <: CreateResourceDataSyncRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateResourceDataSyncRequest](x: Self) {
     
-    @scala.inline
-    def setS3Destination(value: ResourceDataSyncS3Destination): Self = StObject.set(x, "S3Destination", value.asInstanceOf[js.Any])
+    inline def setS3Destination(value: ResourceDataSyncS3Destination): Self = StObject.set(x, "S3Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3DestinationUndefined: Self = StObject.set(x, "S3Destination", js.undefined)
+    inline def setS3DestinationUndefined: Self = StObject.set(x, "S3Destination", js.undefined)
     
-    @scala.inline
-    def setSyncName(value: ResourceDataSyncName): Self = StObject.set(x, "SyncName", value.asInstanceOf[js.Any])
+    inline def setSyncName(value: ResourceDataSyncName): Self = StObject.set(x, "SyncName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncSource(value: ResourceDataSyncSource): Self = StObject.set(x, "SyncSource", value.asInstanceOf[js.Any])
+    inline def setSyncSource(value: ResourceDataSyncSource): Self = StObject.set(x, "SyncSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncSourceUndefined: Self = StObject.set(x, "SyncSource", js.undefined)
+    inline def setSyncSourceUndefined: Self = StObject.set(x, "SyncSource", js.undefined)
     
-    @scala.inline
-    def setSyncType(value: ResourceDataSyncType): Self = StObject.set(x, "SyncType", value.asInstanceOf[js.Any])
+    inline def setSyncType(value: ResourceDataSyncType): Self = StObject.set(x, "SyncType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncTypeUndefined: Self = StObject.set(x, "SyncType", js.undefined)
+    inline def setSyncTypeUndefined: Self = StObject.set(x, "SyncType", js.undefined)
   }
 }

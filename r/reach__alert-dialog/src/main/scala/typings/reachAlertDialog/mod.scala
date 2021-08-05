@@ -44,20 +44,16 @@ object mod {
   }
   object AlertDialogContentProps {
     
-    @scala.inline
-    def apply(): AlertDialogContentProps = {
+    inline def apply(): AlertDialogContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlertDialogContentProps]
     }
     
-    @scala.inline
-    implicit class AlertDialogContentPropsMutableBuilder[Self <: AlertDialogContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: AlertDialogContentProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -72,23 +68,18 @@ object mod {
   }
   object AlertDialogProps {
     
-    @scala.inline
-    def apply(leastDestructiveRef: RefObject[HTMLElement]): AlertDialogProps = {
+    inline def apply(leastDestructiveRef: RefObject[HTMLElement]): AlertDialogProps = {
       val __obj = js.Dynamic.literal(leastDestructiveRef = leastDestructiveRef.asInstanceOf[js.Any])
       __obj.asInstanceOf[AlertDialogProps]
     }
     
-    @scala.inline
-    implicit class AlertDialogPropsMutableBuilder[Self <: AlertDialogProps] (val x: Self) extends AnyVal {
+    extension [Self <: AlertDialogProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setLeastDestructiveRef(value: RefObject[HTMLElement]): Self = StObject.set(x, "leastDestructiveRef", value.asInstanceOf[js.Any])
+      inline def setLeastDestructiveRef(value: RefObject[HTMLElement]): Self = StObject.set(x, "leastDestructiveRef", value.asInstanceOf[js.Any])
     }
   }
 }

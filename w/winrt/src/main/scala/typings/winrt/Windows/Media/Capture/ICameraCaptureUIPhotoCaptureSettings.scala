@@ -19,8 +19,7 @@ trait ICameraCaptureUIPhotoCaptureSettings extends StObject {
 }
 object ICameraCaptureUIPhotoCaptureSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowCropping: Boolean,
     croppedAspectRatio: Size,
     croppedSizeInPixels: Size,
@@ -31,22 +30,16 @@ object ICameraCaptureUIPhotoCaptureSettings {
     __obj.asInstanceOf[ICameraCaptureUIPhotoCaptureSettings]
   }
   
-  @scala.inline
-  implicit class ICameraCaptureUIPhotoCaptureSettingsMutableBuilder[Self <: ICameraCaptureUIPhotoCaptureSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ICameraCaptureUIPhotoCaptureSettings](x: Self) {
     
-    @scala.inline
-    def setAllowCropping(value: Boolean): Self = StObject.set(x, "allowCropping", value.asInstanceOf[js.Any])
+    inline def setAllowCropping(value: Boolean): Self = StObject.set(x, "allowCropping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCroppedAspectRatio(value: Size): Self = StObject.set(x, "croppedAspectRatio", value.asInstanceOf[js.Any])
+    inline def setCroppedAspectRatio(value: Size): Self = StObject.set(x, "croppedAspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCroppedSizeInPixels(value: Size): Self = StObject.set(x, "croppedSizeInPixels", value.asInstanceOf[js.Any])
+    inline def setCroppedSizeInPixels(value: Size): Self = StObject.set(x, "croppedSizeInPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: CameraCaptureUIPhotoFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: CameraCaptureUIPhotoFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResolution(value: CameraCaptureUIMaxPhotoResolution): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
+    inline def setMaxResolution(value: CameraCaptureUIMaxPhotoResolution): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
   }
 }

@@ -16,20 +16,16 @@ object idGeneratorMod {
   }
   object IdGenerator {
     
-    @scala.inline
-    def apply(generateSpanId: () => String, generateTraceId: () => String): IdGenerator = {
+    inline def apply(generateSpanId: () => String, generateTraceId: () => String): IdGenerator = {
       val __obj = js.Dynamic.literal(generateSpanId = js.Any.fromFunction0(generateSpanId), generateTraceId = js.Any.fromFunction0(generateTraceId))
       __obj.asInstanceOf[IdGenerator]
     }
     
-    @scala.inline
-    implicit class IdGeneratorMutableBuilder[Self <: IdGenerator] (val x: Self) extends AnyVal {
+    extension [Self <: IdGenerator](x: Self) {
       
-      @scala.inline
-      def setGenerateSpanId(value: () => String): Self = StObject.set(x, "generateSpanId", js.Any.fromFunction0(value))
+      inline def setGenerateSpanId(value: () => String): Self = StObject.set(x, "generateSpanId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGenerateTraceId(value: () => String): Self = StObject.set(x, "generateTraceId", js.Any.fromFunction0(value))
+      inline def setGenerateTraceId(value: () => String): Self = StObject.set(x, "generateTraceId", js.Any.fromFunction0(value))
     }
   }
 }

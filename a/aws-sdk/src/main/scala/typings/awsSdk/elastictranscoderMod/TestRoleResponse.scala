@@ -18,28 +18,21 @@ trait TestRoleResponse extends StObject {
 }
 object TestRoleResponse {
   
-  @scala.inline
-  def apply(): TestRoleResponse = {
+  inline def apply(): TestRoleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestRoleResponse]
   }
   
-  @scala.inline
-  implicit class TestRoleResponseMutableBuilder[Self <: TestRoleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TestRoleResponse](x: Self) {
     
-    @scala.inline
-    def setMessages(value: ExceptionMessages): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: ExceptionMessages): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: String*): Self = StObject.set(x, "Messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "Messages", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: Success): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Success): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "Success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "Success", js.undefined)
   }
 }

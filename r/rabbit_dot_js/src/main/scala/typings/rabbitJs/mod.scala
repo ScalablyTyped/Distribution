@@ -145,10 +145,8 @@ object mod {
     def requeue(): js.Any = js.native
   }
   
-  @scala.inline
-  def createContext(): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")().asInstanceOf[Context]
-  @scala.inline
-  def createContext(url: String): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(url.asInstanceOf[js.Any]).asInstanceOf[Context]
+  inline def createContext(): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")().asInstanceOf[Context]
+  inline def createContext(url: String): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(url.asInstanceOf[js.Any]).asInstanceOf[Context]
   
   trait RequestMessage extends StObject {
     
@@ -158,20 +156,16 @@ object mod {
   }
   object RequestMessage {
     
-    @scala.inline
-    def apply(content: js.Any, properties: CorrelationId): RequestMessage = {
+    inline def apply(content: js.Any, properties: CorrelationId): RequestMessage = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestMessage]
     }
     
-    @scala.inline
-    implicit class RequestMessageMutableBuilder[Self <: RequestMessage] (val x: Self) extends AnyVal {
+    extension [Self <: RequestMessage](x: Self) {
       
-      @scala.inline
-      def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: CorrelationId): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: CorrelationId): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,50 +196,36 @@ object mod {
   }
   object SocketOptions {
     
-    @scala.inline
-    def apply(): SocketOptions = {
+    inline def apply(): SocketOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SocketOptions]
     }
     
-    @scala.inline
-    implicit class SocketOptionsMutableBuilder[Self <: SocketOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SocketOptions](x: Self) {
       
-      @scala.inline
-      def setExpiration(value: js.Any): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+      inline def setExpiration(value: js.Any): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
+      inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
       
-      @scala.inline
-      def setPersistent(value: js.Any): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+      inline def setPersistent(value: js.Any): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+      inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
       
-      @scala.inline
-      def setPrefetch(value: js.Any): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
+      inline def setPrefetch(value: js.Any): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
+      inline def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
       
-      @scala.inline
-      def setRouting(value: js.Any): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
+      inline def setRouting(value: js.Any): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
+      inline def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
       
-      @scala.inline
-      def setTask(value: js.Any): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+      inline def setTask(value: js.Any): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
+      inline def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
       
-      @scala.inline
-      def setTopic(value: js.Any): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: js.Any): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+      inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     }
   }
 }

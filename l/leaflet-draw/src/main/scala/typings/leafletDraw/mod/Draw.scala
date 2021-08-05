@@ -237,62 +237,44 @@ object Draw {
   }
   object EventHandlers {
     
-    @scala.inline
-    def apply(): EventHandlers = {
+    inline def apply(): EventHandlers = {
       val __obj = js.Dynamic.literal(onCreated = "draw:created", onDeleteStart = "draw:deletestart", onDeleteStop = "draw:deletestop", onDeleted = "draw:deleted", onDrawStart = "draw:drawstart", onDrawStop = "draw:drawstop", onDrawVertex = "draw:drawvertex", onEditMove = "draw:editmove", onEditResize = "draw:editresize", onEditStart = "draw:editstart", onEditStop = "draw:editstop", onEditVertex = "draw:editvertex", onEdited = "draw:edited", onMarkerContext = "draw:markercontext", onToolbarClosed = "draw:toolbarclosed", onToolbarOpened = "draw:toolbaropened")
       __obj.asInstanceOf[EventHandlers]
     }
     
-    @scala.inline
-    implicit class EventHandlersMutableBuilder[Self <: EventHandlers] (val x: Self) extends AnyVal {
+    extension [Self <: EventHandlers](x: Self) {
       
-      @scala.inline
-      def setOnCreated(value: drawColoncreated): Self = StObject.set(x, "onCreated", value.asInstanceOf[js.Any])
+      inline def setOnCreated(value: drawColoncreated): Self = StObject.set(x, "onCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDeleteStart(value: drawColondeletestart): Self = StObject.set(x, "onDeleteStart", value.asInstanceOf[js.Any])
+      inline def setOnDeleteStart(value: drawColondeletestart): Self = StObject.set(x, "onDeleteStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDeleteStop(value: drawColondeletestop): Self = StObject.set(x, "onDeleteStop", value.asInstanceOf[js.Any])
+      inline def setOnDeleteStop(value: drawColondeletestop): Self = StObject.set(x, "onDeleteStop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDeleted(value: drawColondeleted): Self = StObject.set(x, "onDeleted", value.asInstanceOf[js.Any])
+      inline def setOnDeleted(value: drawColondeleted): Self = StObject.set(x, "onDeleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDrawStart(value: drawColondrawstart): Self = StObject.set(x, "onDrawStart", value.asInstanceOf[js.Any])
+      inline def setOnDrawStart(value: drawColondrawstart): Self = StObject.set(x, "onDrawStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDrawStop(value: drawColondrawstop): Self = StObject.set(x, "onDrawStop", value.asInstanceOf[js.Any])
+      inline def setOnDrawStop(value: drawColondrawstop): Self = StObject.set(x, "onDrawStop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDrawVertex(value: drawColondrawvertex): Self = StObject.set(x, "onDrawVertex", value.asInstanceOf[js.Any])
+      inline def setOnDrawVertex(value: drawColondrawvertex): Self = StObject.set(x, "onDrawVertex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEditMove(value: drawColoneditmove): Self = StObject.set(x, "onEditMove", value.asInstanceOf[js.Any])
+      inline def setOnEditMove(value: drawColoneditmove): Self = StObject.set(x, "onEditMove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEditResize(value: drawColoneditresize): Self = StObject.set(x, "onEditResize", value.asInstanceOf[js.Any])
+      inline def setOnEditResize(value: drawColoneditresize): Self = StObject.set(x, "onEditResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEditStart(value: drawColoneditstart): Self = StObject.set(x, "onEditStart", value.asInstanceOf[js.Any])
+      inline def setOnEditStart(value: drawColoneditstart): Self = StObject.set(x, "onEditStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEditStop(value: drawColoneditstop): Self = StObject.set(x, "onEditStop", value.asInstanceOf[js.Any])
+      inline def setOnEditStop(value: drawColoneditstop): Self = StObject.set(x, "onEditStop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEditVertex(value: drawColoneditvertex): Self = StObject.set(x, "onEditVertex", value.asInstanceOf[js.Any])
+      inline def setOnEditVertex(value: drawColoneditvertex): Self = StObject.set(x, "onEditVertex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEdited(value: drawColonedited): Self = StObject.set(x, "onEdited", value.asInstanceOf[js.Any])
+      inline def setOnEdited(value: drawColonedited): Self = StObject.set(x, "onEdited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnMarkerContext(value: drawColonmarkercontext): Self = StObject.set(x, "onMarkerContext", value.asInstanceOf[js.Any])
+      inline def setOnMarkerContext(value: drawColonmarkercontext): Self = StObject.set(x, "onMarkerContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnToolbarClosed(value: drawColontoolbarclosed): Self = StObject.set(x, "onToolbarClosed", value.asInstanceOf[js.Any])
+      inline def setOnToolbarClosed(value: drawColontoolbarclosed): Self = StObject.set(x, "onToolbarClosed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnToolbarOpened(value: drawColontoolbaropened): Self = StObject.set(x, "onToolbarOpened", value.asInstanceOf[js.Any])
+      inline def setOnToolbarOpened(value: drawColontoolbaropened): Self = StObject.set(x, "onToolbarOpened", value.asInstanceOf[js.Any])
     }
   }
 }

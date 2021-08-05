@@ -23,28 +23,21 @@ trait AnalyzeDocumentRequest extends StObject {
 }
 object AnalyzeDocumentRequest {
   
-  @scala.inline
-  def apply(Document: Document, FeatureTypes: FeatureTypes): AnalyzeDocumentRequest = {
+  inline def apply(Document: Document, FeatureTypes: FeatureTypes): AnalyzeDocumentRequest = {
     val __obj = js.Dynamic.literal(Document = Document.asInstanceOf[js.Any], FeatureTypes = FeatureTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyzeDocumentRequest]
   }
   
-  @scala.inline
-  implicit class AnalyzeDocumentRequestMutableBuilder[Self <: AnalyzeDocumentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyzeDocumentRequest](x: Self) {
     
-    @scala.inline
-    def setDocument(value: Document): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: Document): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureTypes(value: FeatureTypes): Self = StObject.set(x, "FeatureTypes", value.asInstanceOf[js.Any])
+    inline def setFeatureTypes(value: FeatureTypes): Self = StObject.set(x, "FeatureTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureTypesVarargs(value: FeatureType*): Self = StObject.set(x, "FeatureTypes", js.Array(value :_*))
+    inline def setFeatureTypesVarargs(value: FeatureType*): Self = StObject.set(x, "FeatureTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setHumanLoopConfig(value: HumanLoopConfig): Self = StObject.set(x, "HumanLoopConfig", value.asInstanceOf[js.Any])
+    inline def setHumanLoopConfig(value: HumanLoopConfig): Self = StObject.set(x, "HumanLoopConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanLoopConfigUndefined: Self = StObject.set(x, "HumanLoopConfig", js.undefined)
+    inline def setHumanLoopConfigUndefined: Self = StObject.set(x, "HumanLoopConfig", js.undefined)
   }
 }

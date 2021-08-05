@@ -16,7 +16,7 @@ trait Group extends StObject {
   def CreateUser(Name: Unit, PID: String, Password: String): User = js.native
   def CreateUser(Name: Unit, PID: Unit, Password: String): User = js.native
   
-  @JSName("DAO.Group_typekey")
+  /* private */ @JSName("DAO.Group_typekey")
   var DAODotGroup_typekey: Group = js.native
   
   var Name: String = js.native

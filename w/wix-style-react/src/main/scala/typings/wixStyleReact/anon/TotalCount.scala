@@ -13,22 +13,17 @@ trait TotalCount extends StObject {
 }
 object TotalCount {
   
-  @scala.inline
-  def apply(items: js.Array[SelectorListItem], totalCount: Double): TotalCount = {
+  inline def apply(items: js.Array[SelectorListItem], totalCount: Double): TotalCount = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], totalCount = totalCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[TotalCount]
   }
   
-  @scala.inline
-  implicit class TotalCountMutableBuilder[Self <: TotalCount] (val x: Self) extends AnyVal {
+  extension [Self <: TotalCount](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[SelectorListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SelectorListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: SelectorListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SelectorListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
   }
 }

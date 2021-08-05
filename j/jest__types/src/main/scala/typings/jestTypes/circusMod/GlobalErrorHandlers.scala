@@ -12,8 +12,7 @@ trait GlobalErrorHandlers extends StObject {
 }
 object GlobalErrorHandlers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     uncaughtException: js.Array[js.Function1[/* exception */ Exception, Unit]],
     unhandledRejection: js.Array[js.Function2[/* exception */ Exception, /* promise */ js.Promise[js.Any], Unit]]
   ): GlobalErrorHandlers = {
@@ -21,19 +20,14 @@ object GlobalErrorHandlers {
     __obj.asInstanceOf[GlobalErrorHandlers]
   }
   
-  @scala.inline
-  implicit class GlobalErrorHandlersMutableBuilder[Self <: GlobalErrorHandlers] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalErrorHandlers](x: Self) {
     
-    @scala.inline
-    def setUncaughtException(value: js.Array[js.Function1[/* exception */ Exception, Unit]]): Self = StObject.set(x, "uncaughtException", value.asInstanceOf[js.Any])
+    inline def setUncaughtException(value: js.Array[js.Function1[/* exception */ Exception, Unit]]): Self = StObject.set(x, "uncaughtException", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUncaughtExceptionVarargs(value: (js.Function1[/* exception */ Exception, Unit])*): Self = StObject.set(x, "uncaughtException", js.Array(value :_*))
+    inline def setUncaughtExceptionVarargs(value: (js.Function1[/* exception */ Exception, Unit])*): Self = StObject.set(x, "uncaughtException", js.Array(value :_*))
     
-    @scala.inline
-    def setUnhandledRejection(value: js.Array[js.Function2[/* exception */ Exception, /* promise */ js.Promise[js.Any], Unit]]): Self = StObject.set(x, "unhandledRejection", value.asInstanceOf[js.Any])
+    inline def setUnhandledRejection(value: js.Array[js.Function2[/* exception */ Exception, /* promise */ js.Promise[js.Any], Unit]]): Self = StObject.set(x, "unhandledRejection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnhandledRejectionVarargs(value: (js.Function2[/* exception */ Exception, /* promise */ js.Promise[js.Any], Unit])*): Self = StObject.set(x, "unhandledRejection", js.Array(value :_*))
+    inline def setUnhandledRejectionVarargs(value: (js.Function2[/* exception */ Exception, /* promise */ js.Promise[js.Any], Unit])*): Self = StObject.set(x, "unhandledRejection", js.Array(value :_*))
   }
 }

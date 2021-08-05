@@ -16,22 +16,17 @@ trait RowMouseEventHandlerParams extends StObject {
 }
 object RowMouseEventHandlerParams {
   
-  @scala.inline
-  def apply(event: MouseEvent[js.Any, NativeMouseEvent], index: Double, rowData: js.Any): RowMouseEventHandlerParams = {
+  inline def apply(event: MouseEvent[js.Any, NativeMouseEvent], index: Double, rowData: js.Any): RowMouseEventHandlerParams = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowMouseEventHandlerParams]
   }
   
-  @scala.inline
-  implicit class RowMouseEventHandlerParamsMutableBuilder[Self <: RowMouseEventHandlerParams] (val x: Self) extends AnyVal {
+  extension [Self <: RowMouseEventHandlerParams](x: Self) {
     
-    @scala.inline
-    def setEvent(value: MouseEvent[js.Any, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: MouseEvent[js.Any, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+    inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
   }
 }

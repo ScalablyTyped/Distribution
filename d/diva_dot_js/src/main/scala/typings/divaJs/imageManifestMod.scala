@@ -24,8 +24,7 @@ object imageManifestMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromIIIF(iiifManifest: js.Object): ImageManifest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIIIF")(iiifManifest.asInstanceOf[js.Any]).asInstanceOf[ImageManifest]
+    inline def fromIIIF(iiifManifest: js.Object): ImageManifest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIIIF")(iiifManifest.asInstanceOf[js.Any]).asInstanceOf[ImageManifest]
   }
   
   type IIIFSourceAdapter = js.Any

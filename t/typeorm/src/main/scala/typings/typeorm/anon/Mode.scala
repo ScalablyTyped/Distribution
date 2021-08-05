@@ -14,19 +14,15 @@ trait Mode extends StObject {
 }
 object Mode {
   
-  @scala.inline
-  def apply(version: Double | Date): Mode = {
+  inline def apply(version: Double | Date): Mode = {
     val __obj = js.Dynamic.literal(mode = "optimistic", version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mode]
   }
   
-  @scala.inline
-  implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
+  extension [Self <: Mode](x: Self) {
     
-    @scala.inline
-    def setMode(value: optimistic): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: optimistic): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double | Date): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double | Date): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

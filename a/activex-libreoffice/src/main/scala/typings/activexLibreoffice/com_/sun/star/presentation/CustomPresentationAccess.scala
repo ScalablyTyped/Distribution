@@ -17,8 +17,7 @@ trait CustomPresentationAccess
      with XSingleServiceFactory
 object CustomPresentationAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,

@@ -23,28 +23,21 @@ trait ImportRestApiRequest extends StObject {
 }
 object ImportRestApiRequest {
   
-  @scala.inline
-  def apply(body: _Blob): ImportRestApiRequest = {
+  inline def apply(body: _Blob): ImportRestApiRequest = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportRestApiRequest]
   }
   
-  @scala.inline
-  implicit class ImportRestApiRequestMutableBuilder[Self <: ImportRestApiRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ImportRestApiRequest](x: Self) {
     
-    @scala.inline
-    def setBody(value: _Blob): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: _Blob): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailOnWarnings(value: Boolean): Self = StObject.set(x, "failOnWarnings", value.asInstanceOf[js.Any])
+    inline def setFailOnWarnings(value: Boolean): Self = StObject.set(x, "failOnWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailOnWarningsUndefined: Self = StObject.set(x, "failOnWarnings", js.undefined)
+    inline def setFailOnWarningsUndefined: Self = StObject.set(x, "failOnWarnings", js.undefined)
     
-    @scala.inline
-    def setParameters(value: MapOfStringToString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MapOfStringToString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }
 }

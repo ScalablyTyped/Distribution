@@ -18,19 +18,15 @@ trait BreakpointResolvedEventDataType extends StObject {
 }
 object BreakpointResolvedEventDataType {
   
-  @scala.inline
-  def apply(breakpointId: BreakpointId, location: Location): BreakpointResolvedEventDataType = {
+  inline def apply(breakpointId: BreakpointId, location: Location): BreakpointResolvedEventDataType = {
     val __obj = js.Dynamic.literal(breakpointId = breakpointId.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreakpointResolvedEventDataType]
   }
   
-  @scala.inline
-  implicit class BreakpointResolvedEventDataTypeMutableBuilder[Self <: BreakpointResolvedEventDataType] (val x: Self) extends AnyVal {
+  extension [Self <: BreakpointResolvedEventDataType](x: Self) {
     
-    @scala.inline
-    def setBreakpointId(value: BreakpointId): Self = StObject.set(x, "breakpointId", value.asInstanceOf[js.Any])
+    inline def setBreakpointId(value: BreakpointId): Self = StObject.set(x, "breakpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

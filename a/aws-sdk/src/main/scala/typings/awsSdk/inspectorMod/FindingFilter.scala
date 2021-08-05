@@ -48,82 +48,57 @@ trait FindingFilter extends StObject {
 }
 object FindingFilter {
   
-  @scala.inline
-  def apply(): FindingFilter = {
+  inline def apply(): FindingFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindingFilter]
   }
   
-  @scala.inline
-  implicit class FindingFilterMutableBuilder[Self <: FindingFilter] (val x: Self) extends AnyVal {
+  extension [Self <: FindingFilter](x: Self) {
     
-    @scala.inline
-    def setAgentIds(value: AgentIdList): Self = StObject.set(x, "agentIds", value.asInstanceOf[js.Any])
+    inline def setAgentIds(value: AgentIdList): Self = StObject.set(x, "agentIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentIdsUndefined: Self = StObject.set(x, "agentIds", js.undefined)
+    inline def setAgentIdsUndefined: Self = StObject.set(x, "agentIds", js.undefined)
     
-    @scala.inline
-    def setAgentIdsVarargs(value: AgentId*): Self = StObject.set(x, "agentIds", js.Array(value :_*))
+    inline def setAgentIdsVarargs(value: AgentId*): Self = StObject.set(x, "agentIds", js.Array(value :_*))
     
-    @scala.inline
-    def setAttributes(value: AttributeList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: AttributeList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setAutoScalingGroups(value: AutoScalingGroupList): Self = StObject.set(x, "autoScalingGroups", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroups(value: AutoScalingGroupList): Self = StObject.set(x, "autoScalingGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingGroupsUndefined: Self = StObject.set(x, "autoScalingGroups", js.undefined)
+    inline def setAutoScalingGroupsUndefined: Self = StObject.set(x, "autoScalingGroups", js.undefined)
     
-    @scala.inline
-    def setAutoScalingGroupsVarargs(value: AutoScalingGroup*): Self = StObject.set(x, "autoScalingGroups", js.Array(value :_*))
+    inline def setAutoScalingGroupsVarargs(value: AutoScalingGroup*): Self = StObject.set(x, "autoScalingGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setCreationTimeRange(value: TimestampRange): Self = StObject.set(x, "creationTimeRange", value.asInstanceOf[js.Any])
+    inline def setCreationTimeRange(value: TimestampRange): Self = StObject.set(x, "creationTimeRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeRangeUndefined: Self = StObject.set(x, "creationTimeRange", js.undefined)
+    inline def setCreationTimeRangeUndefined: Self = StObject.set(x, "creationTimeRange", js.undefined)
     
-    @scala.inline
-    def setRuleNames(value: RuleNameList): Self = StObject.set(x, "ruleNames", value.asInstanceOf[js.Any])
+    inline def setRuleNames(value: RuleNameList): Self = StObject.set(x, "ruleNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleNamesUndefined: Self = StObject.set(x, "ruleNames", js.undefined)
+    inline def setRuleNamesUndefined: Self = StObject.set(x, "ruleNames", js.undefined)
     
-    @scala.inline
-    def setRuleNamesVarargs(value: RuleName*): Self = StObject.set(x, "ruleNames", js.Array(value :_*))
+    inline def setRuleNamesVarargs(value: RuleName*): Self = StObject.set(x, "ruleNames", js.Array(value :_*))
     
-    @scala.inline
-    def setRulesPackageArns(value: FilterRulesPackageArnList): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
+    inline def setRulesPackageArns(value: FilterRulesPackageArnList): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesPackageArnsUndefined: Self = StObject.set(x, "rulesPackageArns", js.undefined)
+    inline def setRulesPackageArnsUndefined: Self = StObject.set(x, "rulesPackageArns", js.undefined)
     
-    @scala.inline
-    def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
+    inline def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
     
-    @scala.inline
-    def setSeverities(value: SeverityList): Self = StObject.set(x, "severities", value.asInstanceOf[js.Any])
+    inline def setSeverities(value: SeverityList): Self = StObject.set(x, "severities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeveritiesUndefined: Self = StObject.set(x, "severities", js.undefined)
+    inline def setSeveritiesUndefined: Self = StObject.set(x, "severities", js.undefined)
     
-    @scala.inline
-    def setSeveritiesVarargs(value: Severity*): Self = StObject.set(x, "severities", js.Array(value :_*))
+    inline def setSeveritiesVarargs(value: Severity*): Self = StObject.set(x, "severities", js.Array(value :_*))
     
-    @scala.inline
-    def setUserAttributes(value: AttributeList): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
+    inline def setUserAttributes(value: AttributeList): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAttributesUndefined: Self = StObject.set(x, "userAttributes", js.undefined)
+    inline def setUserAttributesUndefined: Self = StObject.set(x, "userAttributes", js.undefined)
     
-    @scala.inline
-    def setUserAttributesVarargs(value: Attribute*): Self = StObject.set(x, "userAttributes", js.Array(value :_*))
+    inline def setUserAttributesVarargs(value: Attribute*): Self = StObject.set(x, "userAttributes", js.Array(value :_*))
   }
 }

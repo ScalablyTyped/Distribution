@@ -55,8 +55,7 @@ trait XOutParameters
 }
 object XOutParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     registerNumericOutParameter: (Double, Double, Double) => Unit,
@@ -67,13 +66,10 @@ object XOutParameters {
     __obj.asInstanceOf[XOutParameters]
   }
   
-  @scala.inline
-  implicit class XOutParametersMutableBuilder[Self <: XOutParameters] (val x: Self) extends AnyVal {
+  extension [Self <: XOutParameters](x: Self) {
     
-    @scala.inline
-    def setRegisterNumericOutParameter(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "registerNumericOutParameter", js.Any.fromFunction3(value))
+    inline def setRegisterNumericOutParameter(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "registerNumericOutParameter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRegisterOutParameter(value: (Double, Double, String) => Unit): Self = StObject.set(x, "registerOutParameter", js.Any.fromFunction3(value))
+    inline def setRegisterOutParameter(value: (Double, Double, String) => Unit): Self = StObject.set(x, "registerOutParameter", js.Any.fromFunction3(value))
   }
 }

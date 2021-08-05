@@ -17,20 +17,16 @@ object anon {
   }
   object Dict {
     
-    @scala.inline
-    def apply(): Dict = {
+    inline def apply(): Dict = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dict]
     }
     
-    @scala.inline
-    implicit class DictMutableBuilder[Self <: Dict] (val x: Self) extends AnyVal {
+    extension [Self <: Dict](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -52,8 +48,7 @@ object anon {
   }
   object IsRange {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isRange: Boolean,
       number: Double,
       operator: String,
@@ -66,32 +61,23 @@ object anon {
       __obj.asInstanceOf[IsRange]
     }
     
-    @scala.inline
-    implicit class IsRangeMutableBuilder[Self <: IsRange] (val x: Self) extends AnyVal {
+    extension [Self <: IsRange](x: Self) {
       
-      @scala.inline
-      def setIsRange(value: Boolean): Self = StObject.set(x, "isRange", value.asInstanceOf[js.Any])
+      inline def setIsRange(value: Boolean): Self = StObject.set(x, "isRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParts(value: js.Array[Double]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: js.Array[Double]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartsVarargs(value: Double*): Self = StObject.set(x, "parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: Double*): Self = StObject.set(x, "parts", js.Array(value :_*))
       
-      @scala.inline
-      def setPrerelease(value: String): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
+      inline def setPrerelease(value: String): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,20 +91,16 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String, range: String): Name = {
+    inline def apply(name: String, range: String): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,23 +112,18 @@ object anon {
   }
   object Uses {
     
-    @scala.inline
-    def apply(): Uses = {
+    inline def apply(): Uses = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Uses]
     }
     
-    @scala.inline
-    implicit class UsesMutableBuilder[Self <: Uses] (val x: Self) extends AnyVal {
+    extension [Self <: Uses](x: Self) {
       
-      @scala.inline
-      def setUses(value: js.Array[Plugin | String]): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
+      inline def setUses(value: js.Array[Plugin | String]): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsesUndefined: Self = StObject.set(x, "uses", js.undefined)
+      inline def setUsesUndefined: Self = StObject.set(x, "uses", js.undefined)
       
-      @scala.inline
-      def setUsesVarargs(value: (Plugin | String)*): Self = StObject.set(x, "uses", js.Array(value :_*))
+      inline def setUsesVarargs(value: (Plugin | String)*): Self = StObject.set(x, "uses", js.Array(value :_*))
     }
   }
   
@@ -160,20 +137,16 @@ object anon {
   }
   object Version {
     
-    @scala.inline
-    def apply(name: String, version: String): Version = {
+    inline def apply(name: String, version: String): Version = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Version]
     }
     
-    @scala.inline
-    implicit class VersionMutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
+    extension [Self <: Version](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

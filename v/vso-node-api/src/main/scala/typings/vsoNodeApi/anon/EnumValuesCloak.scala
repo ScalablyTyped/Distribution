@@ -10,16 +10,13 @@ trait EnumValuesCloak extends StObject {
 }
 object EnumValuesCloak {
   
-  @scala.inline
-  def apply(enumValues: Cloak): EnumValuesCloak = {
+  inline def apply(enumValues: Cloak): EnumValuesCloak = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesCloak]
   }
   
-  @scala.inline
-  implicit class EnumValuesCloakMutableBuilder[Self <: EnumValuesCloak] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesCloak](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Cloak): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Cloak): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

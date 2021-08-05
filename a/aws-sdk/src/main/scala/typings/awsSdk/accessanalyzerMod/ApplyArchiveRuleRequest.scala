@@ -23,25 +23,19 @@ trait ApplyArchiveRuleRequest extends StObject {
 }
 object ApplyArchiveRuleRequest {
   
-  @scala.inline
-  def apply(analyzerArn: AnalyzerArn, ruleName: Name): ApplyArchiveRuleRequest = {
+  inline def apply(analyzerArn: AnalyzerArn, ruleName: Name): ApplyArchiveRuleRequest = {
     val __obj = js.Dynamic.literal(analyzerArn = analyzerArn.asInstanceOf[js.Any], ruleName = ruleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplyArchiveRuleRequest]
   }
   
-  @scala.inline
-  implicit class ApplyArchiveRuleRequestMutableBuilder[Self <: ApplyArchiveRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ApplyArchiveRuleRequest](x: Self) {
     
-    @scala.inline
-    def setAnalyzerArn(value: AnalyzerArn): Self = StObject.set(x, "analyzerArn", value.asInstanceOf[js.Any])
+    inline def setAnalyzerArn(value: AnalyzerArn): Self = StObject.set(x, "analyzerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setRuleName(value: Name): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: Name): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
   }
 }

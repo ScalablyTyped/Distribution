@@ -14,20 +14,16 @@ object anon {
   }
   object Limit {
     
-    @scala.inline
-    def apply(limit: Double, skip: Double): Limit = {
+    inline def apply(limit: Double, skip: Double): Limit = {
       val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], skip = skip.asInstanceOf[js.Any])
       __obj.asInstanceOf[Limit]
     }
     
-    @scala.inline
-    implicit class LimitMutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
+    extension [Self <: Limit](x: Self) {
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,17 +33,14 @@ object anon {
   }
   object Partial {
     
-    @scala.inline
-    def apply(partial: Boolean): Partial = {
+    inline def apply(partial: Boolean): Partial = {
       val __obj = js.Dynamic.literal(partial = partial.asInstanceOf[js.Any])
       __obj.asInstanceOf[Partial]
     }
     
-    @scala.inline
-    implicit class PartialMutableBuilder[Self <: Partial] (val x: Self) extends AnyVal {
+    extension [Self <: Partial](x: Self) {
       
-      @scala.inline
-      def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
+      inline def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
     }
   }
 }

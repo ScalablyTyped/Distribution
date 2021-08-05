@@ -38,61 +38,43 @@ trait ChannelSnippet extends StObject {
 }
 object ChannelSnippet {
   
-  @scala.inline
-  def apply(): ChannelSnippet = {
+  inline def apply(): ChannelSnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelSnippet]
   }
   
-  @scala.inline
-  implicit class ChannelSnippetMutableBuilder[Self <: ChannelSnippet] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelSnippet](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setCustomUrl(value: String): Self = StObject.set(x, "customUrl", value.asInstanceOf[js.Any])
+    inline def setCustomUrl(value: String): Self = StObject.set(x, "customUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomUrlUndefined: Self = StObject.set(x, "customUrl", js.undefined)
+    inline def setCustomUrlUndefined: Self = StObject.set(x, "customUrl", js.undefined)
     
-    @scala.inline
-    def setDefaultLanguage(value: String): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
+    inline def setDefaultLanguage(value: String): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLanguageUndefined: Self = StObject.set(x, "defaultLanguage", js.undefined)
+    inline def setDefaultLanguageUndefined: Self = StObject.set(x, "defaultLanguage", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setLocalized(value: ChannelLocalization): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
+    inline def setLocalized(value: ChannelLocalization): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizedUndefined: Self = StObject.set(x, "localized", js.undefined)
+    inline def setLocalizedUndefined: Self = StObject.set(x, "localized", js.undefined)
     
-    @scala.inline
-    def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
+    inline def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedAtUndefined: Self = StObject.set(x, "publishedAt", js.undefined)
+    inline def setPublishedAtUndefined: Self = StObject.set(x, "publishedAt", js.undefined)
     
-    @scala.inline
-    def setThumbnails(value: ThumbnailDetails): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
+    inline def setThumbnails(value: ThumbnailDetails): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
+    inline def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

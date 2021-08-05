@@ -18,22 +18,17 @@ trait UpdateDeviceDefinitionRequest extends StObject {
 }
 object UpdateDeviceDefinitionRequest {
   
-  @scala.inline
-  def apply(DeviceDefinitionId: string): UpdateDeviceDefinitionRequest = {
+  inline def apply(DeviceDefinitionId: string): UpdateDeviceDefinitionRequest = {
     val __obj = js.Dynamic.literal(DeviceDefinitionId = DeviceDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDeviceDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDeviceDefinitionRequestMutableBuilder[Self <: UpdateDeviceDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDeviceDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceDefinitionId(value: string): Self = StObject.set(x, "DeviceDefinitionId", value.asInstanceOf[js.Any])
+    inline def setDeviceDefinitionId(value: string): Self = StObject.set(x, "DeviceDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait ColumnStatisticsError extends StObject {
 }
 object ColumnStatisticsError {
   
-  @scala.inline
-  def apply(): ColumnStatisticsError = {
+  inline def apply(): ColumnStatisticsError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnStatisticsError]
   }
   
-  @scala.inline
-  implicit class ColumnStatisticsErrorMutableBuilder[Self <: ColumnStatisticsError] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnStatisticsError](x: Self) {
     
-    @scala.inline
-    def setColumnStatistics(value: ColumnStatistics): Self = StObject.set(x, "ColumnStatistics", value.asInstanceOf[js.Any])
+    inline def setColumnStatistics(value: ColumnStatistics): Self = StObject.set(x, "ColumnStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnStatisticsUndefined: Self = StObject.set(x, "ColumnStatistics", js.undefined)
+    inline def setColumnStatisticsUndefined: Self = StObject.set(x, "ColumnStatistics", js.undefined)
     
-    @scala.inline
-    def setError(value: ErrorDetail): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: ErrorDetail): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
   }
 }

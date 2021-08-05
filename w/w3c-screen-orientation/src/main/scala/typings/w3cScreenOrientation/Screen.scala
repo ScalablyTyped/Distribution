@@ -10,16 +10,13 @@ trait Screen extends StObject {
 }
 object Screen {
   
-  @scala.inline
-  def apply(orientation: ScreenOrientation): Screen = {
+  inline def apply(orientation: ScreenOrientation): Screen = {
     val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Screen]
   }
   
-  @scala.inline
-  implicit class ScreenMutableBuilder[Self <: Screen] (val x: Self) extends AnyVal {
+  extension [Self <: Screen](x: Self) {
     
-    @scala.inline
-    def setOrientation(value: ScreenOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: ScreenOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
   }
 }

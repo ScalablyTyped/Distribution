@@ -10,22 +10,17 @@ trait FailureTrace extends StObject {
 }
 object FailureTrace {
   
-  @scala.inline
-  def apply(): FailureTrace = {
+  inline def apply(): FailureTrace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailureTrace]
   }
   
-  @scala.inline
-  implicit class FailureTraceMutableBuilder[Self <: FailureTrace] (val x: Self) extends AnyVal {
+  extension [Self <: FailureTrace](x: Self) {
     
-    @scala.inline
-    def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
+    inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    @scala.inline
-    def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
   }
 }

@@ -45,34 +45,29 @@ object rectMod {
     @JSImport("@blueprintjs/table/lib/esm/common/rect", "Rect.ORIGIN")
     @js.native
     def ORIGIN: Rect = js.native
-    @scala.inline
-    def ORIGIN_=(x: Rect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORIGIN")(x.asInstanceOf[js.Any])
+    inline def ORIGIN_=(x: Rect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORIGIN")(x.asInstanceOf[js.Any])
     
     /**
       * Returns the CSS properties representing the absolute positioning of
       * this Rect.
       */
-    @scala.inline
-    def style(rect: AnyRect): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(rect.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+    inline def style(rect: AnyRect): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(rect.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
     
     /**
       * Returns a new Rect that subtracts the origin of the second argument
       * from the first.
       */
-    @scala.inline
-    def subtractOrigin(anyRect0: AnyRect, anyRect1: AnyRect): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractOrigin")(anyRect0.asInstanceOf[js.Any], anyRect1.asInstanceOf[js.Any])).asInstanceOf[Rect]
+    inline def subtractOrigin(anyRect0: AnyRect, anyRect1: AnyRect): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("subtractOrigin")(anyRect0.asInstanceOf[js.Any], anyRect1.asInstanceOf[js.Any])).asInstanceOf[Rect]
     
     /**
       * Returns the smallest Rect that entirely contains the supplied rects
       */
-    @scala.inline
-    def union(anyRect0: AnyRect, anyRect1: AnyRect): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(anyRect0.asInstanceOf[js.Any], anyRect1.asInstanceOf[js.Any])).asInstanceOf[Rect]
+    inline def union(anyRect0: AnyRect, anyRect1: AnyRect): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(anyRect0.asInstanceOf[js.Any], anyRect1.asInstanceOf[js.Any])).asInstanceOf[Rect]
     
     /**
       * Given a ClientRect or Rect object, returns a Rect object.
       */
-    @scala.inline
-    def wrap(rect: AnyRect): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(rect.asInstanceOf[js.Any]).asInstanceOf[Rect]
+    inline def wrap(rect: AnyRect): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(rect.asInstanceOf[js.Any]).asInstanceOf[Rect]
   }
   
   type AnyRect = Rect | ClientRect

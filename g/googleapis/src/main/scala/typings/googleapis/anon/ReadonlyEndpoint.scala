@@ -26,8 +26,7 @@ trait ReadonlyEndpoint extends StObject {
 }
 object ReadonlyEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _options: GlobalOptions,
     applyMethodsFromSchema: js.Any,
     applySchema: (Target, Schema, SchemaResource, APIRequestContext) => scala.Unit,
@@ -39,25 +38,18 @@ object ReadonlyEndpoint {
     __obj.asInstanceOf[ReadonlyEndpoint]
   }
   
-  @scala.inline
-  implicit class ReadonlyEndpointMutableBuilder[Self <: ReadonlyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyEndpoint](x: Self) {
     
-    @scala.inline
-    def setApplyMethodsFromSchema(value: js.Any): Self = StObject.set(x, "applyMethodsFromSchema", value.asInstanceOf[js.Any])
+    inline def setApplyMethodsFromSchema(value: js.Any): Self = StObject.set(x, "applyMethodsFromSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplySchema(value: (Target, Schema, SchemaResource, APIRequestContext) => scala.Unit): Self = StObject.set(x, "applySchema", js.Any.fromFunction4(value))
+    inline def setApplySchema(value: (Target, Schema, SchemaResource, APIRequestContext) => scala.Unit): Self = StObject.set(x, "applySchema", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetPathParams(value: js.Any): Self = StObject.set(x, "getPathParams", value.asInstanceOf[js.Any])
+    inline def setGetPathParams(value: js.Any): Self = StObject.set(x, "getPathParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogle(value: js.Any): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
+    inline def setGoogle(value: js.Any): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMakeMethod(value: js.Any): Self = StObject.set(x, "makeMethod", value.asInstanceOf[js.Any])
+    inline def setMakeMethod(value: js.Any): Self = StObject.set(x, "makeMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_options(value: GlobalOptions): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
+    inline def set_options(value: GlobalOptions): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
   }
 }

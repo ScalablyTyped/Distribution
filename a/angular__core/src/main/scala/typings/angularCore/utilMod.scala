@@ -13,6 +13,5 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findParentAccesses(typeChecker: TypeChecker, sourceFile: SourceFile): js.Array[PropertyAccessExpression] = (^.asInstanceOf[js.Dynamic].applyDynamic("findParentAccesses")(typeChecker.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[js.Array[PropertyAccessExpression]]
+  inline def findParentAccesses(typeChecker: TypeChecker, sourceFile: SourceFile): js.Array[PropertyAccessExpression] = (^.asInstanceOf[js.Dynamic].applyDynamic("findParentAccesses")(typeChecker.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[js.Array[PropertyAccessExpression]]
 }

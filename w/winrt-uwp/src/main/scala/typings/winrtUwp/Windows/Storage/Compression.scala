@@ -90,8 +90,7 @@ object Compression {
   }
   object Compressor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       detachStream: () => IOutputStream,
       finishAsync: () => IPromiseWithIAsyncOperation[Boolean],
@@ -102,23 +101,17 @@ object Compression {
       __obj.asInstanceOf[Compressor]
     }
     
-    @scala.inline
-    implicit class CompressorMutableBuilder[Self <: Compressor] (val x: Self) extends AnyVal {
+    extension [Self <: Compressor](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDetachStream(value: () => IOutputStream): Self = StObject.set(x, "detachStream", js.Any.fromFunction0(value))
+      inline def setDetachStream(value: () => IOutputStream): Self = StObject.set(x, "detachStream", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinishAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "finishAsync", js.Any.fromFunction0(value))
+      inline def setFinishAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "finishAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFlushAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "flushAsync", js.Any.fromFunction0(value))
+      inline def setFlushAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "flushAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWriteAsync(value: IBuffer => IPromiseWithIAsyncOperationWithProgress[Double, Double]): Self = StObject.set(x, "writeAsync", js.Any.fromFunction1(value))
+      inline def setWriteAsync(value: IBuffer => IPromiseWithIAsyncOperationWithProgress[Double, Double]): Self = StObject.set(x, "writeAsync", js.Any.fromFunction1(value))
     }
   }
   
@@ -145,8 +138,7 @@ object Compression {
   }
   object Decompressor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       detachStream: () => IInputStream,
       readAsync: (IBuffer, Double, InputStreamOptions) => IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
@@ -155,17 +147,13 @@ object Compression {
       __obj.asInstanceOf[Decompressor]
     }
     
-    @scala.inline
-    implicit class DecompressorMutableBuilder[Self <: Decompressor] (val x: Self) extends AnyVal {
+    extension [Self <: Decompressor](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDetachStream(value: () => IInputStream): Self = StObject.set(x, "detachStream", js.Any.fromFunction0(value))
+      inline def setDetachStream(value: () => IInputStream): Self = StObject.set(x, "detachStream", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadAsync(
+      inline def setReadAsync(
         value: (IBuffer, Double, InputStreamOptions) => IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
       ): Self = StObject.set(x, "readAsync", js.Any.fromFunction3(value))
     }

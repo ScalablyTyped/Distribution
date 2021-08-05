@@ -20,13 +20,12 @@ trait Conflicts extends StObject {
   
   def RejectAll(): Unit
   
-  @JSName("Word.Conflicts_typekey")
+  /* private */ @JSName("Word.Conflicts_typekey")
   var WordDotConflicts_typekey: Conflicts
 }
 object Conflicts {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AcceptAll: () => Unit,
     Application: Application,
     Count: Double,
@@ -41,31 +40,22 @@ object Conflicts {
     __obj.asInstanceOf[Conflicts]
   }
   
-  @scala.inline
-  implicit class ConflictsMutableBuilder[Self <: Conflicts] (val x: Self) extends AnyVal {
+  extension [Self <: Conflicts](x: Self) {
     
-    @scala.inline
-    def setAcceptAll(value: () => Unit): Self = StObject.set(x, "AcceptAll", js.Any.fromFunction0(value))
+    inline def setAcceptAll(value: () => Unit): Self = StObject.set(x, "AcceptAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => Conflict): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => Conflict): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectAll(value: () => Unit): Self = StObject.set(x, "RejectAll", js.Any.fromFunction0(value))
+    inline def setRejectAll(value: () => Unit): Self = StObject.set(x, "RejectAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWordDotConflicts_typekey(value: Conflicts): Self = StObject.set(x, "Word.Conflicts_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotConflicts_typekey(value: Conflicts): Self = StObject.set(x, "Word.Conflicts_typekey", value.asInstanceOf[js.Any])
   }
 }

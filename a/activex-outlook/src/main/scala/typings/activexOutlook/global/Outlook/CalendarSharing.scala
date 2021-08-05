@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.CalendarSharing")
 @js.native
-class CalendarSharing protected ()
+/* private */ class CalendarSharing ()
   extends StObject
      with typings.activexOutlook.Outlook.CalendarSharing {
   
@@ -41,7 +41,7 @@ class CalendarSharing protected ()
   /* CompleteClass */
   var IncludeWholeCalendar: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.CalendarSharing_typekey")
   var OutlookDotCalendarSharing_typekey: typings.activexOutlook.Outlook.CalendarSharing = js.native
   

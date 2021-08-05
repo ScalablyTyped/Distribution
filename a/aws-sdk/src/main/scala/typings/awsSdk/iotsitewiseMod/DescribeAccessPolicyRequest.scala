@@ -13,16 +13,13 @@ trait DescribeAccessPolicyRequest extends StObject {
 }
 object DescribeAccessPolicyRequest {
   
-  @scala.inline
-  def apply(accessPolicyId: ID): DescribeAccessPolicyRequest = {
+  inline def apply(accessPolicyId: ID): DescribeAccessPolicyRequest = {
     val __obj = js.Dynamic.literal(accessPolicyId = accessPolicyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAccessPolicyRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAccessPolicyRequestMutableBuilder[Self <: DescribeAccessPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccessPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setAccessPolicyId(value: ID): Self = StObject.set(x, "accessPolicyId", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyId(value: ID): Self = StObject.set(x, "accessPolicyId", value.asInstanceOf[js.Any])
   }
 }

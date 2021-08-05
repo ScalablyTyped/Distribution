@@ -18,25 +18,19 @@ trait DeferUpdateChangedEventUIParam extends StObject {
 }
 object DeferUpdateChangedEventUIParam {
   
-  @scala.inline
-  def apply(): DeferUpdateChangedEventUIParam = {
+  inline def apply(): DeferUpdateChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeferUpdateChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class DeferUpdateChangedEventUIParamMutableBuilder[Self <: DeferUpdateChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: DeferUpdateChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setDeferUpdate(value: Boolean): Self = StObject.set(x, "deferUpdate", value.asInstanceOf[js.Any])
+    inline def setDeferUpdate(value: Boolean): Self = StObject.set(x, "deferUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUpdateUndefined: Self = StObject.set(x, "deferUpdate", js.undefined)
+    inline def setDeferUpdateUndefined: Self = StObject.set(x, "deferUpdate", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

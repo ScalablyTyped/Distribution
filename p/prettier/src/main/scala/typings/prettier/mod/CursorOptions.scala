@@ -21,16 +21,13 @@ trait CursorOptions
 }
 object CursorOptions {
   
-  @scala.inline
-  def apply(cursorOffset: Double): CursorOptions = {
+  inline def apply(cursorOffset: Double): CursorOptions = {
     val __obj = js.Dynamic.literal(cursorOffset = cursorOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[CursorOptions]
   }
   
-  @scala.inline
-  implicit class CursorOptionsMutableBuilder[Self <: CursorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CursorOptions](x: Self) {
     
-    @scala.inline
-    def setCursorOffset(value: Double): Self = StObject.set(x, "cursorOffset", value.asInstanceOf[js.Any])
+    inline def setCursorOffset(value: Double): Self = StObject.set(x, "cursorOffset", value.asInstanceOf[js.Any])
   }
 }

@@ -38,8 +38,7 @@ trait ProcessModel extends StObject {
 }
 object ProcessModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     name: String,
     projects: js.Array[ProjectReference],
@@ -51,28 +50,20 @@ object ProcessModel {
     __obj.asInstanceOf[ProcessModel]
   }
   
-  @scala.inline
-  implicit class ProcessModelMutableBuilder[Self <: ProcessModel] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessModel](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjects(value: js.Array[ProjectReference]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+    inline def setProjects(value: js.Array[ProjectReference]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectsVarargs(value: ProjectReference*): Self = StObject.set(x, "projects", js.Array(value :_*))
+    inline def setProjectsVarargs(value: ProjectReference*): Self = StObject.set(x, "projects", js.Array(value :_*))
     
-    @scala.inline
-    def setProperties(value: ProcessProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: ProcessProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
+    inline def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeId(value: String): Self = StObject.set(x, "typeId", value.asInstanceOf[js.Any])
+    inline def setTypeId(value: String): Self = StObject.set(x, "typeId", value.asInstanceOf[js.Any])
   }
 }

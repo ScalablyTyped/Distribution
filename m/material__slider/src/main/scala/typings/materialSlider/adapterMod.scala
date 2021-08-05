@@ -217,8 +217,7 @@ object adapterMod {
   }
   object MDCSliderAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClass: String => Unit,
       addThumbClass: (String, Thumb) => Unit,
       deregisterBodyEventHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
@@ -258,110 +257,75 @@ object adapterMod {
       __obj.asInstanceOf[MDCSliderAdapter]
     }
     
-    @scala.inline
-    implicit class MDCSliderAdapterMutableBuilder[Self <: MDCSliderAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCSliderAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddThumbClass(value: (String, Thumb) => Unit): Self = StObject.set(x, "addThumbClass", js.Any.fromFunction2(value))
+      inline def setAddThumbClass(value: (String, Thumb) => Unit): Self = StObject.set(x, "addThumbClass", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeregisterBodyEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterBodyEventHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterBodyEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterBodyEventHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeregisterEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterEventHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterEventHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeregisterThumbEventHandler(value: (Thumb, js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterThumbEventHandler", js.Any.fromFunction3(value))
+      inline def setDeregisterThumbEventHandler(value: (Thumb, js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterThumbEventHandler", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDeregisterWindowEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterWindowEventHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterWindowEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterWindowEventHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEmitChangeEvent(value: (Double, Thumb) => Unit): Self = StObject.set(x, "emitChangeEvent", js.Any.fromFunction2(value))
+      inline def setEmitChangeEvent(value: (Double, Thumb) => Unit): Self = StObject.set(x, "emitChangeEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEmitDragEndEvent(value: (Double, Thumb) => Unit): Self = StObject.set(x, "emitDragEndEvent", js.Any.fromFunction2(value))
+      inline def setEmitDragEndEvent(value: (Double, Thumb) => Unit): Self = StObject.set(x, "emitDragEndEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEmitDragStartEvent(value: (Double, Thumb) => Unit): Self = StObject.set(x, "emitDragStartEvent", js.Any.fromFunction2(value))
+      inline def setEmitDragStartEvent(value: (Double, Thumb) => Unit): Self = StObject.set(x, "emitDragStartEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEmitInputEvent(value: (Double, Thumb) => Unit): Self = StObject.set(x, "emitInputEvent", js.Any.fromFunction2(value))
+      inline def setEmitInputEvent(value: (Double, Thumb) => Unit): Self = StObject.set(x, "emitInputEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFocusThumb(value: Thumb => Unit): Self = StObject.set(x, "focusThumb", js.Any.fromFunction1(value))
+      inline def setFocusThumb(value: Thumb => Unit): Self = StObject.set(x, "focusThumb", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAttribute(value: String => String | Null): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+      inline def setGetAttribute(value: String => String | Null): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBoundingClientRect(value: () => ClientRect): Self = StObject.set(x, "getBoundingClientRect", js.Any.fromFunction0(value))
+      inline def setGetBoundingClientRect(value: () => ClientRect): Self = StObject.set(x, "getBoundingClientRect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetThumbAttribute(value: (String, Thumb) => String | Null): Self = StObject.set(x, "getThumbAttribute", js.Any.fromFunction2(value))
+      inline def setGetThumbAttribute(value: (String, Thumb) => String | Null): Self = StObject.set(x, "getThumbAttribute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetThumbBoundingClientRect(value: Thumb => ClientRect): Self = StObject.set(x, "getThumbBoundingClientRect", js.Any.fromFunction1(value))
+      inline def setGetThumbBoundingClientRect(value: Thumb => ClientRect): Self = StObject.set(x, "getThumbBoundingClientRect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetThumbKnobWidth(value: Thumb => Double): Self = StObject.set(x, "getThumbKnobWidth", js.Any.fromFunction1(value))
+      inline def setGetThumbKnobWidth(value: Thumb => Double): Self = StObject.set(x, "getThumbKnobWidth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValueToAriaValueTextFn(value: () => (js.Function1[/* value */ Double, String]) | Null): Self = StObject.set(x, "getValueToAriaValueTextFn", js.Any.fromFunction0(value))
+      inline def setGetValueToAriaValueTextFn(value: () => (js.Function1[/* value */ Double, String]) | Null): Self = StObject.set(x, "getValueToAriaValueTextFn", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      inline def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsRTL(value: () => Boolean): Self = StObject.set(x, "isRTL", js.Any.fromFunction0(value))
+      inline def setIsRTL(value: () => Boolean): Self = StObject.set(x, "isRTL", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsThumbFocused(value: Thumb => Boolean): Self = StObject.set(x, "isThumbFocused", js.Any.fromFunction1(value))
+      inline def setIsThumbFocused(value: Thumb => Boolean): Self = StObject.set(x, "isThumbFocused", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterBodyEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerBodyEventHandler", js.Any.fromFunction2(value))
+      inline def setRegisterBodyEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerBodyEventHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerEventHandler", js.Any.fromFunction2(value))
+      inline def setRegisterEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerEventHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterThumbEventHandler(value: (Thumb, js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerThumbEventHandler", js.Any.fromFunction3(value))
+      inline def setRegisterThumbEventHandler(value: (Thumb, js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerThumbEventHandler", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRegisterWindowEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerWindowEventHandler", js.Any.fromFunction2(value))
+      inline def setRegisterWindowEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerWindowEventHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveThumbClass(value: (String, Thumb) => Unit): Self = StObject.set(x, "removeThumbClass", js.Any.fromFunction2(value))
+      inline def setRemoveThumbClass(value: (String, Thumb) => Unit): Self = StObject.set(x, "removeThumbClass", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveThumbStyleProperty(value: (String, Thumb) => Unit): Self = StObject.set(x, "removeThumbStyleProperty", js.Any.fromFunction2(value))
+      inline def setRemoveThumbStyleProperty(value: (String, Thumb) => Unit): Self = StObject.set(x, "removeThumbStyleProperty", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveTrackActiveStyleProperty(value: String => Unit): Self = StObject.set(x, "removeTrackActiveStyleProperty", js.Any.fromFunction1(value))
+      inline def setRemoveTrackActiveStyleProperty(value: String => Unit): Self = StObject.set(x, "removeTrackActiveStyleProperty", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPointerCapture(value: Double => Unit): Self = StObject.set(x, "setPointerCapture", js.Any.fromFunction1(value))
+      inline def setSetPointerCapture(value: Double => Unit): Self = StObject.set(x, "setPointerCapture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetThumbAttribute(value: (String, String, Thumb) => Unit): Self = StObject.set(x, "setThumbAttribute", js.Any.fromFunction3(value))
+      inline def setSetThumbAttribute(value: (String, String, Thumb) => Unit): Self = StObject.set(x, "setThumbAttribute", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetThumbStyleProperty(value: (String, String, Thumb) => Unit): Self = StObject.set(x, "setThumbStyleProperty", js.Any.fromFunction3(value))
+      inline def setSetThumbStyleProperty(value: (String, String, Thumb) => Unit): Self = StObject.set(x, "setThumbStyleProperty", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetTrackActiveStyleProperty(value: (String, String) => Unit): Self = StObject.set(x, "setTrackActiveStyleProperty", js.Any.fromFunction2(value))
+      inline def setSetTrackActiveStyleProperty(value: (String, String) => Unit): Self = StObject.set(x, "setTrackActiveStyleProperty", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetValueIndicatorText(value: (Double, Thumb) => Unit): Self = StObject.set(x, "setValueIndicatorText", js.Any.fromFunction2(value))
+      inline def setSetValueIndicatorText(value: (Double, Thumb) => Unit): Self = StObject.set(x, "setValueIndicatorText", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateTickMarks(value: js.Array[TickMark] => Unit): Self = StObject.set(x, "updateTickMarks", js.Any.fromFunction1(value))
+      inline def setUpdateTickMarks(value: js.Array[TickMark] => Unit): Self = StObject.set(x, "updateTickMarks", js.Any.fromFunction1(value))
     }
   }
 }

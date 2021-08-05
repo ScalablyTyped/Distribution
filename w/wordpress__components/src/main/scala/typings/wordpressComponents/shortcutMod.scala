@@ -31,26 +31,20 @@ object shortcutMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setShortcut(value: ShortcutType): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
+        inline def setShortcut(value: ShortcutType): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
+        inline def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
       }
     }
     
@@ -68,23 +62,18 @@ object shortcutMod {
     }
     object ShortcutObj {
       
-      @scala.inline
-      def apply(display: String): ShortcutObj = {
+      inline def apply(display: String): ShortcutObj = {
         val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any])
         __obj.asInstanceOf[ShortcutObj]
       }
       
-      @scala.inline
-      implicit class ShortcutObjMutableBuilder[Self <: ShortcutObj] (val x: Self) extends AnyVal {
+      extension [Self <: ShortcutObj](x: Self) {
         
-        @scala.inline
-        def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+        inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+        inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
         
-        @scala.inline
-        def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+        inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       }
     }
     

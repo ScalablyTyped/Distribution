@@ -14,8 +14,7 @@ trait Children extends StObject {
 }
 object Children {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Array[DateTimeFormatPart] => ReactElement | Null,
     value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCall>[0] */ js.Any) | String
   ): Children = {
@@ -23,14 +22,11 @@ object Children {
     __obj.asInstanceOf[Children]
   }
   
-  @scala.inline
-  implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+  extension [Self <: Children](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[DateTimeFormatPart] => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: js.Array[DateTimeFormatPart] => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(
+    inline def setValue(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCall>[0] */ js.Any) | String
     ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

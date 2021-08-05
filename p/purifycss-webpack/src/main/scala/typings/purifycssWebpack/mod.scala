@@ -30,59 +30,42 @@ object mod {
   }
   object PurifyOptions {
     
-    @scala.inline
-    def apply(): PurifyOptions = {
+    inline def apply(): PurifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PurifyOptions]
     }
     
-    @scala.inline
-    implicit class PurifyOptionsMutableBuilder[Self <: PurifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PurifyOptions](x: Self) {
       
-      @scala.inline
-      def setMinimize(value: Boolean): Self = StObject.set(x, "minimize", value.asInstanceOf[js.Any])
+      inline def setMinimize(value: Boolean): Self = StObject.set(x, "minimize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimizeUndefined: Self = StObject.set(x, "minimize", js.undefined)
+      inline def setMinimizeUndefined: Self = StObject.set(x, "minimize", js.undefined)
       
-      @scala.inline
-      def setModuleExtensions(value: js.Array[String]): Self = StObject.set(x, "moduleExtensions", value.asInstanceOf[js.Any])
+      inline def setModuleExtensions(value: js.Array[String]): Self = StObject.set(x, "moduleExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleExtensionsUndefined: Self = StObject.set(x, "moduleExtensions", js.undefined)
+      inline def setModuleExtensionsUndefined: Self = StObject.set(x, "moduleExtensions", js.undefined)
       
-      @scala.inline
-      def setModuleExtensionsVarargs(value: String*): Self = StObject.set(x, "moduleExtensions", js.Array(value :_*))
+      inline def setModuleExtensionsVarargs(value: String*): Self = StObject.set(x, "moduleExtensions", js.Array(value :_*))
       
-      @scala.inline
-      def setPaths(value: js.Object | js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Object | js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+      inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      @scala.inline
-      def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
       
-      @scala.inline
-      def setPurifyOptions(value: Info): Self = StObject.set(x, "purifyOptions", value.asInstanceOf[js.Any])
+      inline def setPurifyOptions(value: Info): Self = StObject.set(x, "purifyOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurifyOptionsUndefined: Self = StObject.set(x, "purifyOptions", js.undefined)
+      inline def setPurifyOptionsUndefined: Self = StObject.set(x, "purifyOptions", js.undefined)
       
-      @scala.inline
-      def setStyleExtensions(value: js.Array[String]): Self = StObject.set(x, "styleExtensions", value.asInstanceOf[js.Any])
+      inline def setStyleExtensions(value: js.Array[String]): Self = StObject.set(x, "styleExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleExtensionsUndefined: Self = StObject.set(x, "styleExtensions", js.undefined)
+      inline def setStyleExtensionsUndefined: Self = StObject.set(x, "styleExtensions", js.undefined)
       
-      @scala.inline
-      def setStyleExtensionsVarargs(value: String*): Self = StObject.set(x, "styleExtensions", js.Array(value :_*))
+      inline def setStyleExtensionsVarargs(value: String*): Self = StObject.set(x, "styleExtensions", js.Array(value :_*))
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   

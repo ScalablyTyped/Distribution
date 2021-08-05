@@ -11,22 +11,17 @@ trait BatchUpdatePhotosRequest extends StObject {
 }
 object BatchUpdatePhotosRequest {
   
-  @scala.inline
-  def apply(): BatchUpdatePhotosRequest = {
+  inline def apply(): BatchUpdatePhotosRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchUpdatePhotosRequest]
   }
   
-  @scala.inline
-  implicit class BatchUpdatePhotosRequestMutableBuilder[Self <: BatchUpdatePhotosRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchUpdatePhotosRequest](x: Self) {
     
-    @scala.inline
-    def setUpdatePhotoRequests(value: js.Array[UpdatePhotoRequest]): Self = StObject.set(x, "updatePhotoRequests", value.asInstanceOf[js.Any])
+    inline def setUpdatePhotoRequests(value: js.Array[UpdatePhotoRequest]): Self = StObject.set(x, "updatePhotoRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatePhotoRequestsUndefined: Self = StObject.set(x, "updatePhotoRequests", js.undefined)
+    inline def setUpdatePhotoRequestsUndefined: Self = StObject.set(x, "updatePhotoRequests", js.undefined)
     
-    @scala.inline
-    def setUpdatePhotoRequestsVarargs(value: UpdatePhotoRequest*): Self = StObject.set(x, "updatePhotoRequests", js.Array(value :_*))
+    inline def setUpdatePhotoRequestsVarargs(value: UpdatePhotoRequest*): Self = StObject.set(x, "updatePhotoRequests", js.Array(value :_*))
   }
 }

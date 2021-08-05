@@ -18,22 +18,17 @@ trait DescribeImageVersionRequest extends StObject {
 }
 object DescribeImageVersionRequest {
   
-  @scala.inline
-  def apply(ImageName: ImageName): DescribeImageVersionRequest = {
+  inline def apply(ImageName: ImageName): DescribeImageVersionRequest = {
     val __obj = js.Dynamic.literal(ImageName = ImageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeImageVersionRequest]
   }
   
-  @scala.inline
-  implicit class DescribeImageVersionRequestMutableBuilder[Self <: DescribeImageVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeImageVersionRequest](x: Self) {
     
-    @scala.inline
-    def setImageName(value: ImageName): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
+    inline def setImageName(value: ImageName): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: ImageVersionNumber): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: ImageVersionNumber): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

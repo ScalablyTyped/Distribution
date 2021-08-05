@@ -20,17 +20,14 @@ object typesDisableKeyOutputMod {
   }
   object DisableKeyOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DisableKeyOutput = {
+    inline def apply($metadata: ResponseMetadata): DisableKeyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisableKeyOutput]
     }
     
-    @scala.inline
-    implicit class DisableKeyOutputMutableBuilder[Self <: DisableKeyOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DisableKeyOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,6 +11,5 @@ object BitMatrix {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBitMatrix(allowUndefinedValues: Boolean): IBitMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("getBitMatrix")(allowUndefinedValues.asInstanceOf[js.Any]).asInstanceOf[IBitMatrix]
+  inline def getBitMatrix(allowUndefinedValues: Boolean): IBitMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("getBitMatrix")(allowUndefinedValues.asInstanceOf[js.Any]).asInstanceOf[IBitMatrix]
 }

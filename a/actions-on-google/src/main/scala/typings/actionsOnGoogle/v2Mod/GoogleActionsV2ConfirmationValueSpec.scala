@@ -13,19 +13,15 @@ trait GoogleActionsV2ConfirmationValueSpec extends StObject {
 }
 object GoogleActionsV2ConfirmationValueSpec {
   
-  @scala.inline
-  def apply(): GoogleActionsV2ConfirmationValueSpec = {
+  inline def apply(): GoogleActionsV2ConfirmationValueSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2ConfirmationValueSpec]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2ConfirmationValueSpecMutableBuilder[Self <: GoogleActionsV2ConfirmationValueSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2ConfirmationValueSpec](x: Self) {
     
-    @scala.inline
-    def setDialogSpec(value: GoogleActionsV2ConfirmationValueSpecConfirmationDialogSpec): Self = StObject.set(x, "dialogSpec", value.asInstanceOf[js.Any])
+    inline def setDialogSpec(value: GoogleActionsV2ConfirmationValueSpecConfirmationDialogSpec): Self = StObject.set(x, "dialogSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogSpecUndefined: Self = StObject.set(x, "dialogSpec", js.undefined)
+    inline def setDialogSpecUndefined: Self = StObject.set(x, "dialogSpec", js.undefined)
   }
 }

@@ -16,25 +16,19 @@ trait TransactionRiskData extends StObject {
 }
 object TransactionRiskData {
   
-  @scala.inline
-  def apply(decision: String, deviceDataCaptured: Boolean, fraudServiceProvider: String, id: String): TransactionRiskData = {
+  inline def apply(decision: String, deviceDataCaptured: Boolean, fraudServiceProvider: String, id: String): TransactionRiskData = {
     val __obj = js.Dynamic.literal(decision = decision.asInstanceOf[js.Any], deviceDataCaptured = deviceDataCaptured.asInstanceOf[js.Any], fraudServiceProvider = fraudServiceProvider.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionRiskData]
   }
   
-  @scala.inline
-  implicit class TransactionRiskDataMutableBuilder[Self <: TransactionRiskData] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionRiskData](x: Self) {
     
-    @scala.inline
-    def setDecision(value: String): Self = StObject.set(x, "decision", value.asInstanceOf[js.Any])
+    inline def setDecision(value: String): Self = StObject.set(x, "decision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceDataCaptured(value: Boolean): Self = StObject.set(x, "deviceDataCaptured", value.asInstanceOf[js.Any])
+    inline def setDeviceDataCaptured(value: Boolean): Self = StObject.set(x, "deviceDataCaptured", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFraudServiceProvider(value: String): Self = StObject.set(x, "fraudServiceProvider", value.asInstanceOf[js.Any])
+    inline def setFraudServiceProvider(value: String): Self = StObject.set(x, "fraudServiceProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

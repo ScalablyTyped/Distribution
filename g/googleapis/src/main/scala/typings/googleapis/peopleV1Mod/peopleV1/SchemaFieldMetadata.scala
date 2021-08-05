@@ -29,31 +29,23 @@ trait SchemaFieldMetadata extends StObject {
 }
 object SchemaFieldMetadata {
   
-  @scala.inline
-  def apply(): SchemaFieldMetadata = {
+  inline def apply(): SchemaFieldMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFieldMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaFieldMetadataMutableBuilder[Self <: SchemaFieldMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFieldMetadata](x: Self) {
     
-    @scala.inline
-    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+    inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifiedUndefined: Self = StObject.set(x, "verified", js.undefined)
+    inline def setVerifiedUndefined: Self = StObject.set(x, "verified", js.undefined)
   }
 }

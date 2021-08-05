@@ -55,61 +55,43 @@ trait PlotGaugeDialOptions extends StObject {
 }
 object PlotGaugeDialOptions {
   
-  @scala.inline
-  def apply(): PlotGaugeDialOptions = {
+  inline def apply(): PlotGaugeDialOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotGaugeDialOptions]
   }
   
-  @scala.inline
-  implicit class PlotGaugeDialOptionsMutableBuilder[Self <: PlotGaugeDialOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotGaugeDialOptions](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBaseLength(value: String): Self = StObject.set(x, "baseLength", value.asInstanceOf[js.Any])
+    inline def setBaseLength(value: String): Self = StObject.set(x, "baseLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseLengthUndefined: Self = StObject.set(x, "baseLength", js.undefined)
+    inline def setBaseLengthUndefined: Self = StObject.set(x, "baseLength", js.undefined)
     
-    @scala.inline
-    def setBaseWidth(value: Double): Self = StObject.set(x, "baseWidth", value.asInstanceOf[js.Any])
+    inline def setBaseWidth(value: Double): Self = StObject.set(x, "baseWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseWidthUndefined: Self = StObject.set(x, "baseWidth", js.undefined)
+    inline def setBaseWidthUndefined: Self = StObject.set(x, "baseWidth", js.undefined)
     
-    @scala.inline
-    def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    @scala.inline
-    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
-    @scala.inline
-    def setRadius(value: String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setRearLength(value: String): Self = StObject.set(x, "rearLength", value.asInstanceOf[js.Any])
+    inline def setRearLength(value: String): Self = StObject.set(x, "rearLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRearLengthUndefined: Self = StObject.set(x, "rearLength", js.undefined)
+    inline def setRearLengthUndefined: Self = StObject.set(x, "rearLength", js.undefined)
     
-    @scala.inline
-    def setTopWidth(value: Double): Self = StObject.set(x, "topWidth", value.asInstanceOf[js.Any])
+    inline def setTopWidth(value: Double): Self = StObject.set(x, "topWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopWidthUndefined: Self = StObject.set(x, "topWidth", js.undefined)
+    inline def setTopWidthUndefined: Self = StObject.set(x, "topWidth", js.undefined)
   }
 }

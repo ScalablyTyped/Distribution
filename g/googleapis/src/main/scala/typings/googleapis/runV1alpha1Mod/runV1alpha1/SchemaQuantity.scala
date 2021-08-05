@@ -18,19 +18,15 @@ trait SchemaQuantity extends StObject {
 }
 object SchemaQuantity {
   
-  @scala.inline
-  def apply(): SchemaQuantity = {
+  inline def apply(): SchemaQuantity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQuantity]
   }
   
-  @scala.inline
-  implicit class SchemaQuantityMutableBuilder[Self <: SchemaQuantity] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQuantity](x: Self) {
     
-    @scala.inline
-    def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+    inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
   }
 }

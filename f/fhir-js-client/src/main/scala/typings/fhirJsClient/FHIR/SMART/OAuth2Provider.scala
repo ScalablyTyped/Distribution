@@ -31,34 +31,25 @@ trait OAuth2Provider extends StObject {
 }
 object OAuth2Provider {
   
-  @scala.inline
-  def apply(url: String): OAuth2Provider = {
+  inline def apply(url: String): OAuth2Provider = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuth2Provider]
   }
   
-  @scala.inline
-  implicit class OAuth2ProviderMutableBuilder[Self <: OAuth2Provider] (val x: Self) extends AnyVal {
+  extension [Self <: OAuth2Provider](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOauth2(value: OAuth2Endpoints): Self = StObject.set(x, "oauth2", value.asInstanceOf[js.Any])
+    inline def setOauth2(value: OAuth2Endpoints): Self = StObject.set(x, "oauth2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth2Undefined: Self = StObject.set(x, "oauth2", js.undefined)
+    inline def setOauth2Undefined: Self = StObject.set(x, "oauth2", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

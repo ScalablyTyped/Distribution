@@ -13,11 +13,9 @@ object optionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getOpts(params: (String | PartialSwalOptions)*): SwalOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpts")(params.asInstanceOf[js.Any]).asInstanceOf[SwalOptions]
+  inline def getOpts(params: (String | PartialSwalOptions)*): SwalOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpts")(params.asInstanceOf[js.Any]).asInstanceOf[SwalOptions]
   
-  @scala.inline
-  def setDefaults(opts: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDefaults(opts: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait SwalOptions extends StObject {
     
@@ -43,8 +41,7 @@ object optionsMod {
   }
   object SwalOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       buttons: ButtonList | (js.Array[String | Boolean]),
       className: String,
       closeOnClickOutside: Boolean,
@@ -60,41 +57,29 @@ object optionsMod {
       __obj.asInstanceOf[SwalOptions]
     }
     
-    @scala.inline
-    implicit class SwalOptionsMutableBuilder[Self <: SwalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SwalOptions](x: Self) {
       
-      @scala.inline
-      def setButtons(value: ButtonList | (js.Array[String | Boolean])): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: ButtonList | (js.Array[String | Boolean])): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsVarargs(value: (String | Boolean)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: (String | Boolean)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnClickOutside(value: Boolean): Self = StObject.set(x, "closeOnClickOutside", value.asInstanceOf[js.Any])
+      inline def setCloseOnClickOutside(value: Boolean): Self = StObject.set(x, "closeOnClickOutside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
+      inline def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: ContentOptions): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ContentOptions): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDangerMode(value: Boolean): Self = StObject.set(x, "dangerMode", value.asInstanceOf[js.Any])
+      inline def setDangerMode(value: Boolean): Self = StObject.set(x, "dangerMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimer(value: Double): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
+      inline def setTimer(value: Double): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

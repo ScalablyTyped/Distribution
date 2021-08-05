@@ -39,7 +39,7 @@ trait ChartFillFormat extends StObject {
   
   def Patterned(Pattern: MsoPatternType): Unit = js.native
   
-  @JSName("PowerPoint.ChartFillFormat_typekey")
+  /* private */ @JSName("PowerPoint.ChartFillFormat_typekey")
   var PowerPointDotChartFillFormat_typekey: ChartFillFormat = js.native
   
   def PresetGradient(Style: MsoGradientStyle, Variant: Double, PresetGradientType: MsoPresetGradientType): Unit = js.native

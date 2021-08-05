@@ -71,73 +71,51 @@ trait animationConfig extends StObject {
 }
 object animationConfig {
   
-  @scala.inline
-  def apply(): animationConfig = {
+  inline def apply(): animationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[animationConfig]
   }
   
-  @scala.inline
-  implicit class animationConfigMutableBuilder[Self <: animationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: animationConfig](x: Self) {
     
-    @scala.inline
-    def setComplete(value: (/* $element */ dxElement, /* config */ js.Any) => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
+    inline def setComplete(value: (/* $element */ dxElement, /* config */ js.Any) => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setDirection(value: bottom | left | right | top): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: bottom | left | right | top): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setFrom(value: Double | String | js.Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double | String | js.Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setStaggerDelay(value: Double): Self = StObject.set(x, "staggerDelay", value.asInstanceOf[js.Any])
+    inline def setStaggerDelay(value: Double): Self = StObject.set(x, "staggerDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaggerDelayUndefined: Self = StObject.set(x, "staggerDelay", js.undefined)
+    inline def setStaggerDelayUndefined: Self = StObject.set(x, "staggerDelay", js.undefined)
     
-    @scala.inline
-    def setStart(value: (/* $element */ dxElement, /* config */ js.Any) => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+    inline def setStart(value: (/* $element */ dxElement, /* config */ js.Any) => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setTo(value: Double | String | js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Double | String | js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
-    @scala.inline
-    def setType(value: css | fade | fadeIn | fadeOut | pop | slide | slideIn | slideOut): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: css | fade | fadeIn | fadeOut | pop | slide | slideIn | slideOut): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

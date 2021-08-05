@@ -13,19 +13,15 @@ trait CreateOrUpdateTagsType extends StObject {
 }
 object CreateOrUpdateTagsType {
   
-  @scala.inline
-  def apply(Tags: Tags): CreateOrUpdateTagsType = {
+  inline def apply(Tags: Tags): CreateOrUpdateTagsType = {
     val __obj = js.Dynamic.literal(Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOrUpdateTagsType]
   }
   
-  @scala.inline
-  implicit class CreateOrUpdateTagsTypeMutableBuilder[Self <: CreateOrUpdateTagsType] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOrUpdateTagsType](x: Self) {
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

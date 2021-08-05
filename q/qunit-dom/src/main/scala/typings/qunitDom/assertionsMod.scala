@@ -36,26 +36,20 @@ object assertionsMod {
   }
   object AssertionResult {
     
-    @scala.inline
-    def apply(actual: js.Any, expected: js.Any, message: String, result: Boolean): AssertionResult = {
+    inline def apply(actual: js.Any, expected: js.Any, message: String, result: Boolean): AssertionResult = {
       val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssertionResult]
     }
     
-    @scala.inline
-    implicit class AssertionResultMutableBuilder[Self <: AssertionResult] (val x: Self) extends AnyVal {
+    extension [Self <: AssertionResult](x: Self) {
       
-      @scala.inline
-      def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      inline def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+      inline def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -242,7 +236,7 @@ object assertionsMod {
       * @returns (HTMLElement|null) a valid HTMLElement, or null
       * @throws TypeError will be thrown if target is an unrecognized type
       */
-    var findElement: js.Any = js.native
+    /* private */ var findElement: js.Any = js.native
     
     /**
       * Finds a collection of Element instances from target using querySelectorAll
@@ -250,7 +244,7 @@ object assertionsMod {
       * @returns (Element[]) an array of Element instances
       * @throws TypeError will be thrown if target is an unrecognized type
       */
-    var findElements: js.Any = js.native
+    /* private */ var findElements: js.Any = js.native
     
     /**
       * Finds a valid HTMLElement from target, or pushes a failing assertion if a valid
@@ -258,7 +252,7 @@ object assertionsMod {
       * @private
       * @returns (HTMLElement|null) a valid HTMLElement, or null
       */
-    var findTargetElement: js.Any = js.native
+    /* private */ var findTargetElement: js.Any = js.native
     
     /**
       * Assert that the `textContent` property of an {@link HTMLElement} is not empty.
@@ -803,18 +797,18 @@ object assertionsMod {
     /**
       * @private
       */
-    var pushResult: js.Any = js.native
+    /* private */ var pushResult: js.Any = js.native
     
-    var rootElement: js.Any = js.native
+    /* private */ var rootElement: js.Any = js.native
     
-    var target: js.Any = js.native
+    /* private */ var target: js.Any = js.native
     
     /**
       * @private
       */
     /* private */ def targetDescription: js.Any = js.native
     
-    var testContext: js.Any = js.native
+    /* private */ var testContext: js.Any = js.native
   }
   
   trait ExistsOptions extends StObject {
@@ -823,17 +817,14 @@ object assertionsMod {
   }
   object ExistsOptions {
     
-    @scala.inline
-    def apply(count: Double): ExistsOptions = {
+    inline def apply(count: Double): ExistsOptions = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExistsOptions]
     }
     
-    @scala.inline
-    implicit class ExistsOptionsMutableBuilder[Self <: ExistsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExistsOptions](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     }
   }
 }

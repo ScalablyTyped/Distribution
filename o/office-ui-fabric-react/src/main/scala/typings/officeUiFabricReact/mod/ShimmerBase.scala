@@ -21,6 +21,5 @@ object ShimmerBase {
   @JSImport("office-ui-fabric-react", "ShimmerBase.defaultProps")
   @js.native
   def defaultProps: IShimmerProps = js.native
-  @scala.inline
-  def defaultProps_=(x: IShimmerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: IShimmerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

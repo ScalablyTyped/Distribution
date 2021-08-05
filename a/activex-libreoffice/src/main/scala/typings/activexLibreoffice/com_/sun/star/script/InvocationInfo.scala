@@ -39,8 +39,7 @@ trait InvocationInfo extends StObject {
 }
 object InvocationInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PropertyAttribute: Double,
     aName: String,
     aParamModes: SafeArray[ParamMode],
@@ -52,25 +51,18 @@ object InvocationInfo {
     __obj.asInstanceOf[InvocationInfo]
   }
   
-  @scala.inline
-  implicit class InvocationInfoMutableBuilder[Self <: InvocationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: InvocationInfo](x: Self) {
     
-    @scala.inline
-    def setAName(value: String): Self = StObject.set(x, "aName", value.asInstanceOf[js.Any])
+    inline def setAName(value: String): Self = StObject.set(x, "aName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAParamModes(value: SafeArray[ParamMode]): Self = StObject.set(x, "aParamModes", value.asInstanceOf[js.Any])
+    inline def setAParamModes(value: SafeArray[ParamMode]): Self = StObject.set(x, "aParamModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAParamTypes(value: SafeArray[`type`]): Self = StObject.set(x, "aParamTypes", value.asInstanceOf[js.Any])
+    inline def setAParamTypes(value: SafeArray[`type`]): Self = StObject.set(x, "aParamTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAType(value: `type`): Self = StObject.set(x, "aType", value.asInstanceOf[js.Any])
+    inline def setAType(value: `type`): Self = StObject.set(x, "aType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEMemberType(value: MemberType): Self = StObject.set(x, "eMemberType", value.asInstanceOf[js.Any])
+    inline def setEMemberType(value: MemberType): Self = StObject.set(x, "eMemberType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyAttribute(value: Double): Self = StObject.set(x, "PropertyAttribute", value.asInstanceOf[js.Any])
+    inline def setPropertyAttribute(value: Double): Self = StObject.set(x, "PropertyAttribute", value.asInstanceOf[js.Any])
   }
 }

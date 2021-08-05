@@ -10,16 +10,13 @@ trait Runner[T /* <: js.Object */, U] extends StObject {
 }
 object Runner {
   
-  @scala.inline
-  def apply[T /* <: js.Object */, U](run: T => js.Promise[U]): Runner[T, U] = {
+  inline def apply[T /* <: js.Object */, U](run: T => js.Promise[U]): Runner[T, U] = {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run))
     __obj.asInstanceOf[Runner[T, U]]
   }
   
-  @scala.inline
-  implicit class RunnerMutableBuilder[Self <: Runner[?, ?], T /* <: js.Object */, U] (val x: Self & (Runner[T, U])) extends AnyVal {
+  extension [Self <: Runner[?, ?], T /* <: js.Object */, U](x: Self & (Runner[T, U])) {
     
-    @scala.inline
-    def setRun(value: T => js.Promise[U]): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+    inline def setRun(value: T => js.Promise[U]): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
   }
 }

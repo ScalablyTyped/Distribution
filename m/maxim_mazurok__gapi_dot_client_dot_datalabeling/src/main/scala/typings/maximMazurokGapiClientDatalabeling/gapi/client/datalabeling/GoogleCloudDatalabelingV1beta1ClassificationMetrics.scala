@@ -14,25 +14,19 @@ trait GoogleCloudDatalabelingV1beta1ClassificationMetrics extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1ClassificationMetrics {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1ClassificationMetrics = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1ClassificationMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ClassificationMetrics]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ClassificationMetricsMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ClassificationMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1ClassificationMetrics](x: Self) {
     
-    @scala.inline
-    def setConfusionMatrix(value: GoogleCloudDatalabelingV1beta1ConfusionMatrix): Self = StObject.set(x, "confusionMatrix", value.asInstanceOf[js.Any])
+    inline def setConfusionMatrix(value: GoogleCloudDatalabelingV1beta1ConfusionMatrix): Self = StObject.set(x, "confusionMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfusionMatrixUndefined: Self = StObject.set(x, "confusionMatrix", js.undefined)
+    inline def setConfusionMatrixUndefined: Self = StObject.set(x, "confusionMatrix", js.undefined)
     
-    @scala.inline
-    def setPrCurve(value: GoogleCloudDatalabelingV1beta1PrCurve): Self = StObject.set(x, "prCurve", value.asInstanceOf[js.Any])
+    inline def setPrCurve(value: GoogleCloudDatalabelingV1beta1PrCurve): Self = StObject.set(x, "prCurve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrCurveUndefined: Self = StObject.set(x, "prCurve", js.undefined)
+    inline def setPrCurveUndefined: Self = StObject.set(x, "prCurve", js.undefined)
   }
 }

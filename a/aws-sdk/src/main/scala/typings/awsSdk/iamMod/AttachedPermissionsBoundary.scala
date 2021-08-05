@@ -18,25 +18,19 @@ trait AttachedPermissionsBoundary extends StObject {
 }
 object AttachedPermissionsBoundary {
   
-  @scala.inline
-  def apply(): AttachedPermissionsBoundary = {
+  inline def apply(): AttachedPermissionsBoundary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachedPermissionsBoundary]
   }
   
-  @scala.inline
-  implicit class AttachedPermissionsBoundaryMutableBuilder[Self <: AttachedPermissionsBoundary] (val x: Self) extends AnyVal {
+  extension [Self <: AttachedPermissionsBoundary](x: Self) {
     
-    @scala.inline
-    def setPermissionsBoundaryArn(value: arnType): Self = StObject.set(x, "PermissionsBoundaryArn", value.asInstanceOf[js.Any])
+    inline def setPermissionsBoundaryArn(value: arnType): Self = StObject.set(x, "PermissionsBoundaryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsBoundaryArnUndefined: Self = StObject.set(x, "PermissionsBoundaryArn", js.undefined)
+    inline def setPermissionsBoundaryArnUndefined: Self = StObject.set(x, "PermissionsBoundaryArn", js.undefined)
     
-    @scala.inline
-    def setPermissionsBoundaryType(value: PermissionsBoundaryAttachmentType): Self = StObject.set(x, "PermissionsBoundaryType", value.asInstanceOf[js.Any])
+    inline def setPermissionsBoundaryType(value: PermissionsBoundaryAttachmentType): Self = StObject.set(x, "PermissionsBoundaryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsBoundaryTypeUndefined: Self = StObject.set(x, "PermissionsBoundaryType", js.undefined)
+    inline def setPermissionsBoundaryTypeUndefined: Self = StObject.set(x, "PermissionsBoundaryType", js.undefined)
   }
 }

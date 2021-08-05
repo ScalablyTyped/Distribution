@@ -13,16 +13,13 @@ trait DeleteProjectInput extends StObject {
 }
 object DeleteProjectInput {
   
-  @scala.inline
-  def apply(name: NonEmptyString): DeleteProjectInput = {
+  inline def apply(name: NonEmptyString): DeleteProjectInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProjectInput]
   }
   
-  @scala.inline
-  implicit class DeleteProjectInputMutableBuilder[Self <: DeleteProjectInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteProjectInput](x: Self) {
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

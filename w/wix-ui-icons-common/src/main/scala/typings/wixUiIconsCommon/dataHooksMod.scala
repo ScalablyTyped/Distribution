@@ -15,19 +15,16 @@ object dataHooksMod {
     @JSImport("wix-ui-icons-common/dist/stories/dataHooks", "default.categorySearchInput")
     @js.native
     def categorySearchInput: String = js.native
-    @scala.inline
-    def categorySearchInput_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("categorySearchInput")(x.asInstanceOf[js.Any])
+    inline def categorySearchInput_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("categorySearchInput")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-icons-common/dist/stories/dataHooks", "default.categoryTableCell")
     @js.native
     def categoryTableCell: String = js.native
-    @scala.inline
-    def categoryTableCell_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("categoryTableCell")(x.asInstanceOf[js.Any])
+    inline def categoryTableCell_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("categoryTableCell")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-icons-common/dist/stories/dataHooks", "default.categoryTableTitle")
     @js.native
     def categoryTableTitle: String = js.native
-    @scala.inline
-    def categoryTableTitle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("categoryTableTitle")(x.asInstanceOf[js.Any])
+    inline def categoryTableTitle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("categoryTableTitle")(x.asInstanceOf[js.Any])
   }
 }

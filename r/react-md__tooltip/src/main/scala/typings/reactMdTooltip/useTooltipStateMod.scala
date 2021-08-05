@@ -24,11 +24,9 @@ object useTooltipStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useOtherInteractionDisable(initiated: TooltipInitiated, hideTooltip: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useOtherInteractionDisable")(initiated.asInstanceOf[js.Any], hideTooltip.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useOtherInteractionDisable(initiated: TooltipInitiated, hideTooltip: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useOtherInteractionDisable")(initiated.asInstanceOf[js.Any], hideTooltip.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def useTooltipState(
+  inline def useTooltipState(
     hasPropPositionDefaultPositionPositionThresholdHoverDelayTouchTimeoutFocusDelayDisableHoverModeOnMouseEnterOnMouseLeaveOnTouchStartOnTouchMoveOnFocusOnBlurOnKeyDownOnShowOnHide: TooltipStateOptions
   ): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipState")(hasPropPositionDefaultPositionPositionThresholdHoverDelayTouchTimeoutFocusDelayDisableHoverModeOnMouseEnterOnMouseLeaveOnTouchStartOnTouchMoveOnFocusOnBlurOnKeyDownOnShowOnHide.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
   
@@ -44,26 +42,20 @@ object useTooltipStateMod {
   }
   object ReturnValue {
     
-    @scala.inline
-    def apply(handlers: PickHTMLAttributesHTMLEle, hide: () => Unit, position: SimplePosition, visible: Boolean): ReturnValue = {
+    inline def apply(handlers: PickHTMLAttributesHTMLEle, hide: () => Unit, position: SimplePosition, visible: Boolean): ReturnValue = {
       val __obj = js.Dynamic.literal(handlers = handlers.asInstanceOf[js.Any], hide = js.Any.fromFunction0(hide), position = position.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReturnValue]
     }
     
-    @scala.inline
-    implicit class ReturnValueMutableBuilder[Self <: ReturnValue] (val x: Self) extends AnyVal {
+    extension [Self <: ReturnValue](x: Self) {
       
-      @scala.inline
-      def setHandlers(value: PickHTMLAttributesHTMLEle): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: PickHTMLAttributesHTMLEle): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPosition(value: SimplePosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: SimplePosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,113 +126,78 @@ object useTooltipStateMod {
   }
   object TooltipStateOptions {
     
-    @scala.inline
-    def apply(defaultPosition: SimplePosition): TooltipStateOptions = {
+    inline def apply(defaultPosition: SimplePosition): TooltipStateOptions = {
       val __obj = js.Dynamic.literal(defaultPosition = defaultPosition.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipStateOptions]
     }
     
-    @scala.inline
-    implicit class TooltipStateOptionsMutableBuilder[Self <: TooltipStateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipStateOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultPosition(value: SimplePosition): Self = StObject.set(x, "defaultPosition", value.asInstanceOf[js.Any])
+      inline def setDefaultPosition(value: SimplePosition): Self = StObject.set(x, "defaultPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHoverMode(value: Boolean): Self = StObject.set(x, "disableHoverMode", value.asInstanceOf[js.Any])
+      inline def setDisableHoverMode(value: Boolean): Self = StObject.set(x, "disableHoverMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHoverModeUndefined: Self = StObject.set(x, "disableHoverMode", js.undefined)
+      inline def setDisableHoverModeUndefined: Self = StObject.set(x, "disableHoverMode", js.undefined)
       
-      @scala.inline
-      def setFocusDelay(value: Double): Self = StObject.set(x, "focusDelay", value.asInstanceOf[js.Any])
+      inline def setFocusDelay(value: Double): Self = StObject.set(x, "focusDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusDelayUndefined: Self = StObject.set(x, "focusDelay", js.undefined)
+      inline def setFocusDelayUndefined: Self = StObject.set(x, "focusDelay", js.undefined)
       
-      @scala.inline
-      def setHoverDelay(value: Double): Self = StObject.set(x, "hoverDelay", value.asInstanceOf[js.Any])
+      inline def setHoverDelay(value: Double): Self = StObject.set(x, "hoverDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverDelayUndefined: Self = StObject.set(x, "hoverDelay", js.undefined)
+      inline def setHoverDelayUndefined: Self = StObject.set(x, "hoverDelay", js.undefined)
       
-      @scala.inline
-      def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnContextMenu(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+      inline def setOnContextMenu(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
+      inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+      inline def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+      inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnMouseEnter(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnMouseLeave(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      @scala.inline
-      def setOnShow(value: /* mode */ UserInteractionMode => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+      inline def setOnShow(value: /* mode */ UserInteractionMode => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
-      @scala.inline
-      def setOnTouchMove(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+      inline def setOnTouchMove(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
+      inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
       
-      @scala.inline
-      def setOnTouchStart(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      inline def setOnTouchStart(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+      inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
       
-      @scala.inline
-      def setPosition(value: SimplePosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: SimplePosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionThreshold(value: Double): Self = StObject.set(x, "positionThreshold", value.asInstanceOf[js.Any])
+      inline def setPositionThreshold(value: Double): Self = StObject.set(x, "positionThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionThresholdUndefined: Self = StObject.set(x, "positionThreshold", js.undefined)
+      inline def setPositionThresholdUndefined: Self = StObject.set(x, "positionThreshold", js.undefined)
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setTouchTimeout(value: Double): Self = StObject.set(x, "touchTimeout", value.asInstanceOf[js.Any])
+      inline def setTouchTimeout(value: Double): Self = StObject.set(x, "touchTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchTimeoutUndefined: Self = StObject.set(x, "touchTimeout", js.undefined)
+      inline def setTouchTimeoutUndefined: Self = StObject.set(x, "touchTimeout", js.undefined)
     }
   }
 }

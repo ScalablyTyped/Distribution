@@ -34,8 +34,7 @@ trait AccessibleGraphControl
      with XAccessibleSelection
 object AccessibleGraphControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleContext: XAccessibleContext,
     AccessibleDescription: String,

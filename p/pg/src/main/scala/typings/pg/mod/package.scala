@@ -5,11 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def defaults: typings.pg.mod.Defaults_ & typings.pg.mod.ClientConfig = typings.pg.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaults").asInstanceOf[typings.pg.mod.Defaults_ & typings.pg.mod.ClientConfig]
+inline def defaults: typings.pg.mod.Defaults_ & typings.pg.mod.ClientConfig = typings.pg.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaults").asInstanceOf[typings.pg.mod.Defaults_ & typings.pg.mod.ClientConfig]
 
-@scala.inline
-def native: typings.pg.anon.TypeofPg | scala.Null = typings.pg.mod.^.asInstanceOf[js.Dynamic].selectDynamic("native").asInstanceOf[typings.pg.anon.TypeofPg | scala.Null]
+inline def native: typings.pg.anon.TypeofPg | scala.Null = typings.pg.mod.^.asInstanceOf[js.Dynamic].selectDynamic("native").asInstanceOf[typings.pg.anon.TypeofPg | scala.Null]
 
 type ConnectionConfig = typings.pg.mod.ClientConfig
 

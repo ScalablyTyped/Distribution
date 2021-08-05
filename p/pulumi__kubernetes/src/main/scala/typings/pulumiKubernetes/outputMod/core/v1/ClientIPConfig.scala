@@ -16,16 +16,13 @@ trait ClientIPConfig extends StObject {
 }
 object ClientIPConfig {
   
-  @scala.inline
-  def apply(timeoutSeconds: Double): ClientIPConfig = {
+  inline def apply(timeoutSeconds: Double): ClientIPConfig = {
     val __obj = js.Dynamic.literal(timeoutSeconds = timeoutSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientIPConfig]
   }
   
-  @scala.inline
-  implicit class ClientIPConfigMutableBuilder[Self <: ClientIPConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ClientIPConfig](x: Self) {
     
-    @scala.inline
-    def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
   }
 }

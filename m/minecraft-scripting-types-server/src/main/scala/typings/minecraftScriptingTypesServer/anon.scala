@@ -37,8 +37,7 @@ object anon {
   }
   object Accepteditems {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accepted_items: js.Array[String],
       interact_text: String,
       on_equip: MinecraftTrigger | String,
@@ -49,26 +48,19 @@ object anon {
       __obj.asInstanceOf[Accepteditems]
     }
     
-    @scala.inline
-    implicit class AccepteditemsMutableBuilder[Self <: Accepteditems] (val x: Self) extends AnyVal {
+    extension [Self <: Accepteditems](x: Self) {
       
-      @scala.inline
-      def setAccepted_items(value: js.Array[String]): Self = StObject.set(x, "accepted_items", value.asInstanceOf[js.Any])
+      inline def setAccepted_items(value: js.Array[String]): Self = StObject.set(x, "accepted_items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccepted_itemsVarargs(value: String*): Self = StObject.set(x, "accepted_items", js.Array(value :_*))
+      inline def setAccepted_itemsVarargs(value: String*): Self = StObject.set(x, "accepted_items", js.Array(value :_*))
       
-      @scala.inline
-      def setInteract_text(value: String): Self = StObject.set(x, "interact_text", value.asInstanceOf[js.Any])
+      inline def setInteract_text(value: String): Self = StObject.set(x, "interact_text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn_equip(value: MinecraftTrigger | String): Self = StObject.set(x, "on_equip", value.asInstanceOf[js.Any])
+      inline def setOn_equip(value: MinecraftTrigger | String): Self = StObject.set(x, "on_equip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn_unequip(value: MinecraftTrigger | String): Self = StObject.set(x, "on_unequip", value.asInstanceOf[js.Any])
+      inline def setOn_unequip(value: MinecraftTrigger | String): Self = StObject.set(x, "on_unequip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlot(value: Double): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+      inline def setSlot(value: Double): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,26 +88,20 @@ object anon {
   }
   object Amplifier {
     
-    @scala.inline
-    def apply(amplifier: Double, chance: Double, duration: Double, name: String): Amplifier = {
+    inline def apply(amplifier: Double, chance: Double, duration: Double, name: String): Amplifier = {
       val __obj = js.Dynamic.literal(amplifier = amplifier.asInstanceOf[js.Any], chance = chance.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Amplifier]
     }
     
-    @scala.inline
-    implicit class AmplifierMutableBuilder[Self <: Amplifier] (val x: Self) extends AnyVal {
+    extension [Self <: Amplifier](x: Self) {
       
-      @scala.inline
-      def setAmplifier(value: Double): Self = StObject.set(x, "amplifier", value.asInstanceOf[js.Any])
+      inline def setAmplifier(value: Double): Self = StObject.set(x, "amplifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChance(value: Double): Self = StObject.set(x, "chance", value.asInstanceOf[js.Any])
+      inline def setChance(value: Double): Self = StObject.set(x, "chance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,20 +119,16 @@ object anon {
   }
   object Dropchance {
     
-    @scala.inline
-    def apply(drop_chance: Double, slot: Double): Dropchance = {
+    inline def apply(drop_chance: Double, slot: Double): Dropchance = {
       val __obj = js.Dynamic.literal(drop_chance = drop_chance.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dropchance]
     }
     
-    @scala.inline
-    implicit class DropchanceMutableBuilder[Self <: Dropchance] (val x: Self) extends AnyVal {
+    extension [Self <: Dropchance](x: Self) {
       
-      @scala.inline
-      def setDrop_chance(value: Double): Self = StObject.set(x, "drop_chance", value.asInstanceOf[js.Any])
+      inline def setDrop_chance(value: Double): Self = StObject.set(x, "drop_chance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlot(value: Double): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+      inline def setSlot(value: Double): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,32 +157,24 @@ object anon {
   }
   object Effects {
     
-    @scala.inline
-    def apply(effects: js.Array[Amplifier], heal_amount: Double, item: String): Effects = {
+    inline def apply(effects: js.Array[Amplifier], heal_amount: Double, item: String): Effects = {
       val __obj = js.Dynamic.literal(effects = effects.asInstanceOf[js.Any], heal_amount = heal_amount.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
       __obj.asInstanceOf[Effects]
     }
     
-    @scala.inline
-    implicit class EffectsMutableBuilder[Self <: Effects] (val x: Self) extends AnyVal {
+    extension [Self <: Effects](x: Self) {
       
-      @scala.inline
-      def setEffects(value: js.Array[Amplifier]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+      inline def setEffects(value: js.Array[Amplifier]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectsVarargs(value: Amplifier*): Self = StObject.set(x, "effects", js.Array(value :_*))
+      inline def setEffectsVarargs(value: Amplifier*): Self = StObject.set(x, "effects", js.Array(value :_*))
       
-      @scala.inline
-      def setFilters(value: MinecraftFilter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: MinecraftFilter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setHeal_amount(value: Double): Self = StObject.set(x, "heal_amount", value.asInstanceOf[js.Any])
+      inline def setHeal_amount(value: Double): Self = StObject.set(x, "heal_amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
   }
   
@@ -212,20 +186,16 @@ object anon {
   }
   object Message {
     
-    @scala.inline
-    def apply(message: String, statusCode: Double): Message = {
+    inline def apply(message: String, statusCode: Double): Message = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -243,23 +213,18 @@ object anon {
   }
   object Namefilter {
     
-    @scala.inline
-    def apply(name_filter: js.Array[String], on_named: MinecraftTrigger | String): Namefilter = {
+    inline def apply(name_filter: js.Array[String], on_named: MinecraftTrigger | String): Namefilter = {
       val __obj = js.Dynamic.literal(name_filter = name_filter.asInstanceOf[js.Any], on_named = on_named.asInstanceOf[js.Any])
       __obj.asInstanceOf[Namefilter]
     }
     
-    @scala.inline
-    implicit class NamefilterMutableBuilder[Self <: Namefilter] (val x: Self) extends AnyVal {
+    extension [Self <: Namefilter](x: Self) {
       
-      @scala.inline
-      def setName_filter(value: js.Array[String]): Self = StObject.set(x, "name_filter", value.asInstanceOf[js.Any])
+      inline def setName_filter(value: js.Array[String]): Self = StObject.set(x, "name_filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName_filterVarargs(value: String*): Self = StObject.set(x, "name_filter", js.Array(value :_*))
+      inline def setName_filterVarargs(value: String*): Self = StObject.set(x, "name_filter", js.Array(value :_*))
       
-      @scala.inline
-      def setOn_named(value: MinecraftTrigger | String): Self = StObject.set(x, "on_named", value.asInstanceOf[js.Any])
+      inline def setOn_named(value: MinecraftTrigger | String): Self = StObject.set(x, "on_named", value.asInstanceOf[js.Any])
     }
   }
   
@@ -284,23 +249,18 @@ object anon {
   }
   object Particleoffsettowardsinteractor {
     
-    @scala.inline
-    def apply(particle_offset_towards_interactor: Boolean, particle_type: String, particle_y_offset: Double): Particleoffsettowardsinteractor = {
+    inline def apply(particle_offset_towards_interactor: Boolean, particle_type: String, particle_y_offset: Double): Particleoffsettowardsinteractor = {
       val __obj = js.Dynamic.literal(particle_offset_towards_interactor = particle_offset_towards_interactor.asInstanceOf[js.Any], particle_type = particle_type.asInstanceOf[js.Any], particle_y_offset = particle_y_offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[Particleoffsettowardsinteractor]
     }
     
-    @scala.inline
-    implicit class ParticleoffsettowardsinteractorMutableBuilder[Self <: Particleoffsettowardsinteractor] (val x: Self) extends AnyVal {
+    extension [Self <: Particleoffsettowardsinteractor](x: Self) {
       
-      @scala.inline
-      def setParticle_offset_towards_interactor(value: Boolean): Self = StObject.set(x, "particle_offset_towards_interactor", value.asInstanceOf[js.Any])
+      inline def setParticle_offset_towards_interactor(value: Boolean): Self = StObject.set(x, "particle_offset_towards_interactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParticle_type(value: String): Self = StObject.set(x, "particle_type", value.asInstanceOf[js.Any])
+      inline def setParticle_type(value: String): Self = StObject.set(x, "particle_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParticle_y_offset(value: Double): Self = StObject.set(x, "particle_y_offset", value.asInstanceOf[js.Any])
+      inline def setParticle_y_offset(value: Double): Self = StObject.set(x, "particle_y_offset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -320,20 +280,16 @@ object anon {
   }
   object Rangemax {
     
-    @scala.inline
-    def apply(range_max: Double, range_min: Double): Rangemax = {
+    inline def apply(range_max: Double, range_min: Double): Rangemax = {
       val __obj = js.Dynamic.literal(range_max = range_max.asInstanceOf[js.Any], range_min = range_min.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rangemax]
     }
     
-    @scala.inline
-    implicit class RangemaxMutableBuilder[Self <: Rangemax] (val x: Self) extends AnyVal {
+    extension [Self <: Rangemax](x: Self) {
       
-      @scala.inline
-      def setRange_max(value: Double): Self = StObject.set(x, "range_max", value.asInstanceOf[js.Any])
+      inline def setRange_max(value: Double): Self = StObject.set(x, "range_max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange_min(value: Double): Self = StObject.set(x, "range_min", value.asInstanceOf[js.Any])
+      inline def setRange_min(value: Double): Self = StObject.set(x, "range_min", value.asInstanceOf[js.Any])
     }
   }
   
@@ -346,17 +302,14 @@ object anon {
   }
   object Table {
     
-    @scala.inline
-    def apply(table: String): Table = {
+    inline def apply(table: String): Table = {
       val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any])
       __obj.asInstanceOf[Table]
     }
     
-    @scala.inline
-    implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
+    extension [Self <: Table](x: Self) {
       
-      @scala.inline
-      def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
   }
 }

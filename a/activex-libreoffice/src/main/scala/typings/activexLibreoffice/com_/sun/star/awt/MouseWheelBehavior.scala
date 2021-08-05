@@ -17,13 +17,10 @@ object MouseWheelBehavior {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def SCROLL_ALWAYS: `2` = 2.asInstanceOf[`2`]
+    inline def SCROLL_ALWAYS: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def SCROLL_DISABLED: `0` = 0.asInstanceOf[`0`]
+    inline def SCROLL_DISABLED: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def SCROLL_FOCUS_ONLY: `1` = 1.asInstanceOf[`1`]
+    inline def SCROLL_FOCUS_ONLY: `1` = 1.asInstanceOf[`1`]
   }
 }

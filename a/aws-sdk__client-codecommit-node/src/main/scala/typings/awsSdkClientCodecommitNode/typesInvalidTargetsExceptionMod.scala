@@ -16,17 +16,14 @@ object typesInvalidTargetsExceptionMod {
   }
   object InvalidTargetsException {
     
-    @scala.inline
-    def apply(): InvalidTargetsException = {
+    inline def apply(): InvalidTargetsException = {
       val __obj = js.Dynamic.literal(name = "InvalidTargetsException")
       __obj.asInstanceOf[InvalidTargetsException]
     }
     
-    @scala.inline
-    implicit class InvalidTargetsExceptionMutableBuilder[Self <: InvalidTargetsException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidTargetsException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidTargetsException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

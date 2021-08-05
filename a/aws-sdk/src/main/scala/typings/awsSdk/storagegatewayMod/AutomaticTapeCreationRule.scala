@@ -33,8 +33,7 @@ trait AutomaticTapeCreationRule extends StObject {
 }
 object AutomaticTapeCreationRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MinimumNumTapes: MinimumNumTapes,
     PoolId: PoolId,
     TapeBarcodePrefix: TapeBarcodePrefix,
@@ -44,25 +43,18 @@ object AutomaticTapeCreationRule {
     __obj.asInstanceOf[AutomaticTapeCreationRule]
   }
   
-  @scala.inline
-  implicit class AutomaticTapeCreationRuleMutableBuilder[Self <: AutomaticTapeCreationRule] (val x: Self) extends AnyVal {
+  extension [Self <: AutomaticTapeCreationRule](x: Self) {
     
-    @scala.inline
-    def setMinimumNumTapes(value: MinimumNumTapes): Self = StObject.set(x, "MinimumNumTapes", value.asInstanceOf[js.Any])
+    inline def setMinimumNumTapes(value: MinimumNumTapes): Self = StObject.set(x, "MinimumNumTapes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolId(value: PoolId): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
+    inline def setPoolId(value: PoolId): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeBarcodePrefix(value: TapeBarcodePrefix): Self = StObject.set(x, "TapeBarcodePrefix", value.asInstanceOf[js.Any])
+    inline def setTapeBarcodePrefix(value: TapeBarcodePrefix): Self = StObject.set(x, "TapeBarcodePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeSizeInBytes(value: TapeSize): Self = StObject.set(x, "TapeSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setTapeSizeInBytes(value: TapeSize): Self = StObject.set(x, "TapeSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorm(value: scala.Boolean): Self = StObject.set(x, "Worm", value.asInstanceOf[js.Any])
+    inline def setWorm(value: scala.Boolean): Self = StObject.set(x, "Worm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWormUndefined: Self = StObject.set(x, "Worm", js.undefined)
+    inline def setWormUndefined: Self = StObject.set(x, "Worm", js.undefined)
   }
 }

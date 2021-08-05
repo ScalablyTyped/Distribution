@@ -18,8 +18,7 @@ object reactNativeMauron85BackgroundGeolocationNumbers {
        with LocationProvider
        with ServiceMode
        with _AccuracyLevel
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
+  inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
   sealed trait `1`
@@ -28,29 +27,25 @@ object reactNativeMauron85BackgroundGeolocationNumbers {
        with LocationErrorCode
        with LocationProvider
        with ServiceMode
-  @scala.inline
-  def `1`: `1` = 1.asInstanceOf[`1`]
+  inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
   sealed trait `100`
     extends StObject
        with _AccuracyLevel
-  @scala.inline
-  def `100`: `100` = 100.asInstanceOf[`100`]
+  inline def `100`: `100` = 100.asInstanceOf[`100`]
   
   @js.native
   sealed trait `1000`
     extends StObject
        with _AccuracyLevel
-  @scala.inline
-  def `1000`: `1000` = 1000.asInstanceOf[`1000`]
+  inline def `1000`: `1000` = 1000.asInstanceOf[`1000`]
   
   @js.native
   sealed trait `10000`
     extends StObject
        with _AccuracyLevel
-  @scala.inline
-  def `10000`: `10000` = 10000.asInstanceOf[`10000`]
+  inline def `10000`: `10000` = 10000.asInstanceOf[`10000`]
   
   @js.native
   sealed trait `2`
@@ -58,13 +53,11 @@ object reactNativeMauron85BackgroundGeolocationNumbers {
        with AuthorizationStatus
        with LocationErrorCode
        with LocationProvider
-  @scala.inline
-  def `2`: `2` = 2.asInstanceOf[`2`]
+  inline def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
   sealed trait `3`
     extends StObject
        with LocationErrorCode
-  @scala.inline
-  def `3`: `3` = 3.asInstanceOf[`3`]
+  inline def `3`: `3` = 3.asInstanceOf[`3`]
 }

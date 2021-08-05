@@ -78,17 +78,14 @@ object typesDependencyTimeoutExceptionMod {
   }
   object DependencyTimeoutException {
     
-    @scala.inline
-    def apply(): DependencyTimeoutException = {
+    inline def apply(): DependencyTimeoutException = {
       val __obj = js.Dynamic.literal(name = "DependencyTimeoutException")
       __obj.asInstanceOf[DependencyTimeoutException]
     }
     
-    @scala.inline
-    implicit class DependencyTimeoutExceptionMutableBuilder[Self <: DependencyTimeoutException] (val x: Self) extends AnyVal {
+    extension [Self <: DependencyTimeoutException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.DependencyTimeoutException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.DependencyTimeoutException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,20 +98,16 @@ object typesDependencyTimeoutExceptionMod {
   }
   object DependencyTimeoutExceptionDetails {
     
-    @scala.inline
-    def apply(): DependencyTimeoutExceptionDetails = {
+    inline def apply(): DependencyTimeoutExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DependencyTimeoutExceptionDetails]
     }
     
-    @scala.inline
-    implicit class DependencyTimeoutExceptionDetailsMutableBuilder[Self <: DependencyTimeoutExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: DependencyTimeoutExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

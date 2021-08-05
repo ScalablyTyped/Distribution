@@ -19,19 +19,15 @@ trait AnalyticsApplicationInputsProcessingConfigurationLambda extends StObject {
 }
 object AnalyticsApplicationInputsProcessingConfigurationLambda {
   
-  @scala.inline
-  def apply(resourceArn: Input[String], roleArn: Input[String]): AnalyticsApplicationInputsProcessingConfigurationLambda = {
+  inline def apply(resourceArn: Input[String], roleArn: Input[String]): AnalyticsApplicationInputsProcessingConfigurationLambda = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationInputsProcessingConfigurationLambda]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationInputsProcessingConfigurationLambdaMutableBuilder[Self <: AnalyticsApplicationInputsProcessingConfigurationLambda] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationInputsProcessingConfigurationLambda](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

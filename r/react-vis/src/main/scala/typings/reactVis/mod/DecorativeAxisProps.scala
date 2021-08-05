@@ -24,43 +24,31 @@ trait DecorativeAxisProps
 }
 object DecorativeAxisProps {
   
-  @scala.inline
-  def apply(axisDomain: js.Array[Double], axisEnd: Y, axisStart: Y): DecorativeAxisProps = {
+  inline def apply(axisDomain: js.Array[Double], axisEnd: Y, axisStart: Y): DecorativeAxisProps = {
     val __obj = js.Dynamic.literal(axisDomain = axisDomain.asInstanceOf[js.Any], axisEnd = axisEnd.asInstanceOf[js.Any], axisStart = axisStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecorativeAxisProps]
   }
   
-  @scala.inline
-  implicit class DecorativeAxisPropsMutableBuilder[Self <: DecorativeAxisProps] (val x: Self) extends AnyVal {
+  extension [Self <: DecorativeAxisProps](x: Self) {
     
-    @scala.inline
-    def setAxisDomain(value: js.Array[Double]): Self = StObject.set(x, "axisDomain", value.asInstanceOf[js.Any])
+    inline def setAxisDomain(value: js.Array[Double]): Self = StObject.set(x, "axisDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisDomainVarargs(value: Double*): Self = StObject.set(x, "axisDomain", js.Array(value :_*))
+    inline def setAxisDomainVarargs(value: Double*): Self = StObject.set(x, "axisDomain", js.Array(value :_*))
     
-    @scala.inline
-    def setAxisEnd(value: Y): Self = StObject.set(x, "axisEnd", value.asInstanceOf[js.Any])
+    inline def setAxisEnd(value: Y): Self = StObject.set(x, "axisEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisStart(value: Y): Self = StObject.set(x, "axisStart", value.asInstanceOf[js.Any])
+    inline def setAxisStart(value: Y): Self = StObject.set(x, "axisStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfTicks(value: Double): Self = StObject.set(x, "numberOfTicks", value.asInstanceOf[js.Any])
+    inline def setNumberOfTicks(value: Double): Self = StObject.set(x, "numberOfTicks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfTicksUndefined: Self = StObject.set(x, "numberOfTicks", js.undefined)
+    inline def setNumberOfTicksUndefined: Self = StObject.set(x, "numberOfTicks", js.undefined)
     
-    @scala.inline
-    def setTickSize(value: Double): Self = StObject.set(x, "tickSize", value.asInstanceOf[js.Any])
+    inline def setTickSize(value: Double): Self = StObject.set(x, "tickSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickSizeUndefined: Self = StObject.set(x, "tickSize", js.undefined)
+    inline def setTickSizeUndefined: Self = StObject.set(x, "tickSize", js.undefined)
     
-    @scala.inline
-    def setTickValue(value: /* x */ js.Any => String | Double): Self = StObject.set(x, "tickValue", js.Any.fromFunction1(value))
+    inline def setTickValue(value: /* x */ js.Any => String | Double): Self = StObject.set(x, "tickValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTickValueUndefined: Self = StObject.set(x, "tickValue", js.undefined)
+    inline def setTickValueUndefined: Self = StObject.set(x, "tickValue", js.undefined)
   }
 }

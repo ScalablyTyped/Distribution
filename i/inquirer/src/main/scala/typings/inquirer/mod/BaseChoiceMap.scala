@@ -22,8 +22,7 @@ trait BaseChoiceMap[T /* <: Answers */] extends StObject {
 }
 object BaseChoiceMap {
   
-  @scala.inline
-  def apply[T /* <: Answers */](
+  inline def apply[T /* <: Answers */](
     Choice: typings.inquirer.choiceMod.^[T],
     ChoiceOptions: ChoiceOptions[T],
     Separator: typings.inquirer.separatorMod.^,
@@ -33,19 +32,14 @@ object BaseChoiceMap {
     __obj.asInstanceOf[BaseChoiceMap[T]]
   }
   
-  @scala.inline
-  implicit class BaseChoiceMapMutableBuilder[Self <: BaseChoiceMap[?], T /* <: Answers */] (val x: Self & BaseChoiceMap[T]) extends AnyVal {
+  extension [Self <: BaseChoiceMap[?], T /* <: Answers */](x: Self & BaseChoiceMap[T]) {
     
-    @scala.inline
-    def setChoice(value: typings.inquirer.choiceMod.^[T]): Self = StObject.set(x, "Choice", value.asInstanceOf[js.Any])
+    inline def setChoice(value: typings.inquirer.choiceMod.^[T]): Self = StObject.set(x, "Choice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChoiceOptions(value: ChoiceOptions[T]): Self = StObject.set(x, "ChoiceOptions", value.asInstanceOf[js.Any])
+    inline def setChoiceOptions(value: ChoiceOptions[T]): Self = StObject.set(x, "ChoiceOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparator(value: typings.inquirer.separatorMod.^): Self = StObject.set(x, "Separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: typings.inquirer.separatorMod.^): Self = StObject.set(x, "Separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorOptions(value: SeparatorOptions): Self = StObject.set(x, "SeparatorOptions", value.asInstanceOf[js.Any])
+    inline def setSeparatorOptions(value: SeparatorOptions): Self = StObject.set(x, "SeparatorOptions", value.asInstanceOf[js.Any])
   }
 }

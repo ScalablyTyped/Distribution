@@ -13,19 +13,15 @@ trait DescribeCertificateAuthorityResponse extends StObject {
 }
 object DescribeCertificateAuthorityResponse {
   
-  @scala.inline
-  def apply(): DescribeCertificateAuthorityResponse = {
+  inline def apply(): DescribeCertificateAuthorityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCertificateAuthorityResponse]
   }
   
-  @scala.inline
-  implicit class DescribeCertificateAuthorityResponseMutableBuilder[Self <: DescribeCertificateAuthorityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCertificateAuthorityResponse](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthority(value: CertificateAuthority): Self = StObject.set(x, "CertificateAuthority", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthority(value: CertificateAuthority): Self = StObject.set(x, "CertificateAuthority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateAuthorityUndefined: Self = StObject.set(x, "CertificateAuthority", js.undefined)
+    inline def setCertificateAuthorityUndefined: Self = StObject.set(x, "CertificateAuthority", js.undefined)
   }
 }

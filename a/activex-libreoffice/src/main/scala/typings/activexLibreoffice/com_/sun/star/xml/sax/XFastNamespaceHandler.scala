@@ -17,8 +17,7 @@ trait XFastNamespaceHandler
 }
 object XFastNamespaceHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getNamespaceURI: String => String,
     queryInterface: `type` => js.Any,
@@ -29,13 +28,10 @@ object XFastNamespaceHandler {
     __obj.asInstanceOf[XFastNamespaceHandler]
   }
   
-  @scala.inline
-  implicit class XFastNamespaceHandlerMutableBuilder[Self <: XFastNamespaceHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XFastNamespaceHandler](x: Self) {
     
-    @scala.inline
-    def setGetNamespaceURI(value: String => String): Self = StObject.set(x, "getNamespaceURI", js.Any.fromFunction1(value))
+    inline def setGetNamespaceURI(value: String => String): Self = StObject.set(x, "getNamespaceURI", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterNamespace(value: (String, String) => Unit): Self = StObject.set(x, "registerNamespace", js.Any.fromFunction2(value))
+    inline def setRegisterNamespace(value: (String, String) => Unit): Self = StObject.set(x, "registerNamespace", js.Any.fromFunction2(value))
   }
 }

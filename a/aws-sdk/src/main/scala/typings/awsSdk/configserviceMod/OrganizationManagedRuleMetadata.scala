@@ -48,61 +48,43 @@ trait OrganizationManagedRuleMetadata extends StObject {
 }
 object OrganizationManagedRuleMetadata {
   
-  @scala.inline
-  def apply(RuleIdentifier: StringWithCharLimit256): OrganizationManagedRuleMetadata = {
+  inline def apply(RuleIdentifier: StringWithCharLimit256): OrganizationManagedRuleMetadata = {
     val __obj = js.Dynamic.literal(RuleIdentifier = RuleIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationManagedRuleMetadata]
   }
   
-  @scala.inline
-  implicit class OrganizationManagedRuleMetadataMutableBuilder[Self <: OrganizationManagedRuleMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizationManagedRuleMetadata](x: Self) {
     
-    @scala.inline
-    def setDescription(value: StringWithCharLimit256Min0): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: StringWithCharLimit256Min0): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setInputParameters(value: StringWithCharLimit2048): Self = StObject.set(x, "InputParameters", value.asInstanceOf[js.Any])
+    inline def setInputParameters(value: StringWithCharLimit2048): Self = StObject.set(x, "InputParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputParametersUndefined: Self = StObject.set(x, "InputParameters", js.undefined)
+    inline def setInputParametersUndefined: Self = StObject.set(x, "InputParameters", js.undefined)
     
-    @scala.inline
-    def setMaximumExecutionFrequency(value: MaximumExecutionFrequency): Self = StObject.set(x, "MaximumExecutionFrequency", value.asInstanceOf[js.Any])
+    inline def setMaximumExecutionFrequency(value: MaximumExecutionFrequency): Self = StObject.set(x, "MaximumExecutionFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumExecutionFrequencyUndefined: Self = StObject.set(x, "MaximumExecutionFrequency", js.undefined)
+    inline def setMaximumExecutionFrequencyUndefined: Self = StObject.set(x, "MaximumExecutionFrequency", js.undefined)
     
-    @scala.inline
-    def setResourceIdScope(value: StringWithCharLimit768): Self = StObject.set(x, "ResourceIdScope", value.asInstanceOf[js.Any])
+    inline def setResourceIdScope(value: StringWithCharLimit768): Self = StObject.set(x, "ResourceIdScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdScopeUndefined: Self = StObject.set(x, "ResourceIdScope", js.undefined)
+    inline def setResourceIdScopeUndefined: Self = StObject.set(x, "ResourceIdScope", js.undefined)
     
-    @scala.inline
-    def setResourceTypesScope(value: ResourceTypesScope): Self = StObject.set(x, "ResourceTypesScope", value.asInstanceOf[js.Any])
+    inline def setResourceTypesScope(value: ResourceTypesScope): Self = StObject.set(x, "ResourceTypesScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypesScopeUndefined: Self = StObject.set(x, "ResourceTypesScope", js.undefined)
+    inline def setResourceTypesScopeUndefined: Self = StObject.set(x, "ResourceTypesScope", js.undefined)
     
-    @scala.inline
-    def setResourceTypesScopeVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "ResourceTypesScope", js.Array(value :_*))
+    inline def setResourceTypesScopeVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "ResourceTypesScope", js.Array(value :_*))
     
-    @scala.inline
-    def setRuleIdentifier(value: StringWithCharLimit256): Self = StObject.set(x, "RuleIdentifier", value.asInstanceOf[js.Any])
+    inline def setRuleIdentifier(value: StringWithCharLimit256): Self = StObject.set(x, "RuleIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeyScope(value: StringWithCharLimit128): Self = StObject.set(x, "TagKeyScope", value.asInstanceOf[js.Any])
+    inline def setTagKeyScope(value: StringWithCharLimit128): Self = StObject.set(x, "TagKeyScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeyScopeUndefined: Self = StObject.set(x, "TagKeyScope", js.undefined)
+    inline def setTagKeyScopeUndefined: Self = StObject.set(x, "TagKeyScope", js.undefined)
     
-    @scala.inline
-    def setTagValueScope(value: StringWithCharLimit256): Self = StObject.set(x, "TagValueScope", value.asInstanceOf[js.Any])
+    inline def setTagValueScope(value: StringWithCharLimit256): Self = StObject.set(x, "TagValueScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagValueScopeUndefined: Self = StObject.set(x, "TagValueScope", js.undefined)
+    inline def setTagValueScopeUndefined: Self = StObject.set(x, "TagValueScope", js.undefined)
   }
 }

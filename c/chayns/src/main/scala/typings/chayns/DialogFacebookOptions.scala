@@ -20,49 +20,35 @@ trait DialogFacebookOptions extends StObject {
 }
 object DialogFacebookOptions {
   
-  @scala.inline
-  def apply(preSelected: js.Array[Double], title: String): DialogFacebookOptions = {
+  inline def apply(preSelected: js.Array[Double], title: String): DialogFacebookOptions = {
     val __obj = js.Dynamic.literal(preSelected = preSelected.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogFacebookOptions]
   }
   
-  @scala.inline
-  implicit class DialogFacebookOptionsMutableBuilder[Self <: DialogFacebookOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DialogFacebookOptions](x: Self) {
     
-    @scala.inline
-    def setButton(value: js.Array[DialogFacebookButton]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: js.Array[DialogFacebookButton]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setButtonVarargs(value: DialogFacebookButton*): Self = StObject.set(x, "button", js.Array(value :_*))
+    inline def setButtonVarargs(value: DialogFacebookButton*): Self = StObject.set(x, "button", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setMultiselect(value: Double): Self = StObject.set(x, "multiselect", value.asInstanceOf[js.Any])
+    inline def setMultiselect(value: Double): Self = StObject.set(x, "multiselect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiselectUndefined: Self = StObject.set(x, "multiselect", js.undefined)
+    inline def setMultiselectUndefined: Self = StObject.set(x, "multiselect", js.undefined)
     
-    @scala.inline
-    def setPreSelected(value: js.Array[Double]): Self = StObject.set(x, "preSelected", value.asInstanceOf[js.Any])
+    inline def setPreSelected(value: js.Array[Double]): Self = StObject.set(x, "preSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreSelectedVarargs(value: Double*): Self = StObject.set(x, "preSelected", js.Array(value :_*))
+    inline def setPreSelectedVarargs(value: Double*): Self = StObject.set(x, "preSelected", js.Array(value :_*))
     
-    @scala.inline
-    def setQuickfind(value: Double): Self = StObject.set(x, "quickfind", value.asInstanceOf[js.Any])
+    inline def setQuickfind(value: Double): Self = StObject.set(x, "quickfind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuickfindUndefined: Self = StObject.set(x, "quickfind", js.undefined)
+    inline def setQuickfindUndefined: Self = StObject.set(x, "quickfind", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

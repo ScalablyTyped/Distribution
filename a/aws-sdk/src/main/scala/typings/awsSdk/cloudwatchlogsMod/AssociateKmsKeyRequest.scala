@@ -18,19 +18,15 @@ trait AssociateKmsKeyRequest extends StObject {
 }
 object AssociateKmsKeyRequest {
   
-  @scala.inline
-  def apply(kmsKeyId: KmsKeyId, logGroupName: LogGroupName): AssociateKmsKeyRequest = {
+  inline def apply(kmsKeyId: KmsKeyId, logGroupName: LogGroupName): AssociateKmsKeyRequest = {
     val __obj = js.Dynamic.literal(kmsKeyId = kmsKeyId.asInstanceOf[js.Any], logGroupName = logGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateKmsKeyRequest]
   }
   
-  @scala.inline
-  implicit class AssociateKmsKeyRequestMutableBuilder[Self <: AssociateKmsKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateKmsKeyRequest](x: Self) {
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
   }
 }

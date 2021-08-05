@@ -19,8 +19,7 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def nodeInternals(): js.Array[RegExp] = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeInternals")().asInstanceOf[js.Array[RegExp]]
+  inline def nodeInternals(): js.Array[RegExp] = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeInternals")().asInstanceOf[js.Array[RegExp]]
   
   trait CallSite extends StObject {
     
@@ -52,8 +51,7 @@ object mod {
   }
   object CallSite {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getColumnNumber: () => Double,
       getEvalOrigin: () => CallSite | String,
       getFileName: () => js.UndefOr[String],
@@ -72,47 +70,33 @@ object mod {
       __obj.asInstanceOf[CallSite]
     }
     
-    @scala.inline
-    implicit class CallSiteMutableBuilder[Self <: CallSite] (val x: Self) extends AnyVal {
+    extension [Self <: CallSite](x: Self) {
       
-      @scala.inline
-      def setGetColumnNumber(value: () => Double): Self = StObject.set(x, "getColumnNumber", js.Any.fromFunction0(value))
+      inline def setGetColumnNumber(value: () => Double): Self = StObject.set(x, "getColumnNumber", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEvalOrigin(value: () => CallSite | String): Self = StObject.set(x, "getEvalOrigin", js.Any.fromFunction0(value))
+      inline def setGetEvalOrigin(value: () => CallSite | String): Self = StObject.set(x, "getEvalOrigin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFileName(value: () => js.UndefOr[String]): Self = StObject.set(x, "getFileName", js.Any.fromFunction0(value))
+      inline def setGetFileName(value: () => js.UndefOr[String]): Self = StObject.set(x, "getFileName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFunction(value: () => js.UndefOr[js.Function]): Self = StObject.set(x, "getFunction", js.Any.fromFunction0(value))
+      inline def setGetFunction(value: () => js.UndefOr[js.Function]): Self = StObject.set(x, "getFunction", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFunctionName(value: () => String): Self = StObject.set(x, "getFunctionName", js.Any.fromFunction0(value))
+      inline def setGetFunctionName(value: () => String): Self = StObject.set(x, "getFunctionName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLineNumber(value: () => Double): Self = StObject.set(x, "getLineNumber", js.Any.fromFunction0(value))
+      inline def setGetLineNumber(value: () => Double): Self = StObject.set(x, "getLineNumber", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMethodName(value: () => String | Null): Self = StObject.set(x, "getMethodName", js.Any.fromFunction0(value))
+      inline def setGetMethodName(value: () => String | Null): Self = StObject.set(x, "getMethodName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetThis(value: () => js.UndefOr[js.Object]): Self = StObject.set(x, "getThis", js.Any.fromFunction0(value))
+      inline def setGetThis(value: () => js.UndefOr[js.Object]): Self = StObject.set(x, "getThis", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTypeName(value: () => String): Self = StObject.set(x, "getTypeName", js.Any.fromFunction0(value))
+      inline def setGetTypeName(value: () => String): Self = StObject.set(x, "getTypeName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsConstructor(value: () => Boolean): Self = StObject.set(x, "isConstructor", js.Any.fromFunction0(value))
+      inline def setIsConstructor(value: () => Boolean): Self = StObject.set(x, "isConstructor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEval(value: () => Boolean): Self = StObject.set(x, "isEval", js.Any.fromFunction0(value))
+      inline def setIsEval(value: () => Boolean): Self = StObject.set(x, "isEval", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsNative(value: () => Boolean): Self = StObject.set(x, "isNative", js.Any.fromFunction0(value))
+      inline def setIsNative(value: () => Boolean): Self = StObject.set(x, "isNative", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsToplevel(value: () => Boolean): Self = StObject.set(x, "isToplevel", js.Any.fromFunction0(value))
+      inline def setIsToplevel(value: () => Boolean): Self = StObject.set(x, "isToplevel", js.Any.fromFunction0(value))
     }
   }
   
@@ -124,20 +108,16 @@ object mod {
   }
   object CallSiteLike {
     
-    @scala.inline
-    def apply(): CallSiteLike = {
+    inline def apply(): CallSiteLike = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CallSiteLike]
     }
     
-    @scala.inline
-    implicit class CallSiteLikeMutableBuilder[Self <: CallSiteLike] (val x: Self) extends AnyVal {
+    extension [Self <: CallSiteLike](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -153,44 +133,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setIgnoredPackages(value: js.Array[String]): Self = StObject.set(x, "ignoredPackages", value.asInstanceOf[js.Any])
+      inline def setIgnoredPackages(value: js.Array[String]): Self = StObject.set(x, "ignoredPackages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoredPackagesUndefined: Self = StObject.set(x, "ignoredPackages", js.undefined)
+      inline def setIgnoredPackagesUndefined: Self = StObject.set(x, "ignoredPackages", js.undefined)
       
-      @scala.inline
-      def setIgnoredPackagesVarargs(value: String*): Self = StObject.set(x, "ignoredPackages", js.Array(value :_*))
+      inline def setIgnoredPackagesVarargs(value: String*): Self = StObject.set(x, "ignoredPackages", js.Array(value :_*))
       
-      @scala.inline
-      def setInternals(value: js.Array[RegExp]): Self = StObject.set(x, "internals", value.asInstanceOf[js.Any])
+      inline def setInternals(value: js.Array[RegExp]): Self = StObject.set(x, "internals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalsUndefined: Self = StObject.set(x, "internals", js.undefined)
+      inline def setInternalsUndefined: Self = StObject.set(x, "internals", js.undefined)
       
-      @scala.inline
-      def setInternalsVarargs(value: RegExp*): Self = StObject.set(x, "internals", js.Array(value :_*))
+      inline def setInternalsVarargs(value: RegExp*): Self = StObject.set(x, "internals", js.Array(value :_*))
       
-      @scala.inline
-      def setWrapCallSite(value: /* callSite */ CallSite => CallSite): Self = StObject.set(x, "wrapCallSite", js.Any.fromFunction1(value))
+      inline def setWrapCallSite(value: /* callSite */ CallSite => CallSite): Self = StObject.set(x, "wrapCallSite", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrapCallSiteUndefined: Self = StObject.set(x, "wrapCallSite", js.undefined)
+      inline def setWrapCallSiteUndefined: Self = StObject.set(x, "wrapCallSite", js.undefined)
     }
   }
   
@@ -214,62 +182,44 @@ object mod {
   }
   object StackData {
     
-    @scala.inline
-    def apply(): StackData = {
+    inline def apply(): StackData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StackData]
     }
     
-    @scala.inline
-    implicit class StackDataMutableBuilder[Self <: StackData] (val x: Self) extends AnyVal {
+    extension [Self <: StackData](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setConstructor(value: Boolean): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+      inline def setConstructor(value: Boolean): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
+      inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
       
-      @scala.inline
-      def setEvalOrigin(value: String): Self = StObject.set(x, "evalOrigin", value.asInstanceOf[js.Any])
+      inline def setEvalOrigin(value: String): Self = StObject.set(x, "evalOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvalOriginUndefined: Self = StObject.set(x, "evalOrigin", js.undefined)
+      inline def setEvalOriginUndefined: Self = StObject.set(x, "evalOrigin", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+      inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+      inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+      inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+      inline def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)
+      inline def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)
     }
   }
   
@@ -285,32 +235,24 @@ object mod {
   }
   object StackLineData {
     
-    @scala.inline
-    def apply(): StackLineData = {
+    inline def apply(): StackLineData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StackLineData]
     }
     
-    @scala.inline
-    implicit class StackLineDataMutableBuilder[Self <: StackLineData] (val x: Self) extends AnyVal {
+    extension [Self <: StackLineData](x: Self) {
       
-      @scala.inline
-      def setEvalColumn(value: Double): Self = StObject.set(x, "evalColumn", value.asInstanceOf[js.Any])
+      inline def setEvalColumn(value: Double): Self = StObject.set(x, "evalColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvalColumnUndefined: Self = StObject.set(x, "evalColumn", js.undefined)
+      inline def setEvalColumnUndefined: Self = StObject.set(x, "evalColumn", js.undefined)
       
-      @scala.inline
-      def setEvalFile(value: String): Self = StObject.set(x, "evalFile", value.asInstanceOf[js.Any])
+      inline def setEvalFile(value: String): Self = StObject.set(x, "evalFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvalFileUndefined: Self = StObject.set(x, "evalFile", js.undefined)
+      inline def setEvalFileUndefined: Self = StObject.set(x, "evalFile", js.undefined)
       
-      @scala.inline
-      def setEvalLine(value: Double): Self = StObject.set(x, "evalLine", value.asInstanceOf[js.Any])
+      inline def setEvalLine(value: Double): Self = StObject.set(x, "evalLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvalLineUndefined: Self = StObject.set(x, "evalLine", js.undefined)
+      inline def setEvalLineUndefined: Self = StObject.set(x, "evalLine", js.undefined)
     }
   }
   

@@ -16,8 +16,7 @@ trait EnUS extends StObject {
 }
 object EnUS {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `en-US`: Appsettingcontentwidth,
     `it-IT`: Appsettingcontentwidthfixed,
     `zh-CN`: Appsettingcontentwidth,
@@ -31,19 +30,14 @@ object EnUS {
     __obj.asInstanceOf[EnUS]
   }
   
-  @scala.inline
-  implicit class EnUSMutableBuilder[Self <: EnUS] (val x: Self) extends AnyVal {
+  extension [Self <: EnUS](x: Self) {
     
-    @scala.inline
-    def `setEn-US`(value: Appsettingcontentwidth): Self = StObject.set(x, "en-US", value.asInstanceOf[js.Any])
+    inline def `setEn-US`(value: Appsettingcontentwidth): Self = StObject.set(x, "en-US", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setIt-IT`(value: Appsettingcontentwidthfixed): Self = StObject.set(x, "it-IT", value.asInstanceOf[js.Any])
+    inline def `setIt-IT`(value: Appsettingcontentwidthfixed): Self = StObject.set(x, "it-IT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setZh-CN`(value: Appsettingcontentwidth): Self = StObject.set(x, "zh-CN", value.asInstanceOf[js.Any])
+    inline def `setZh-CN`(value: Appsettingcontentwidth): Self = StObject.set(x, "zh-CN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setZh-TW`(value: Appsettingcontentwidthfixed): Self = StObject.set(x, "zh-TW", value.asInstanceOf[js.Any])
+    inline def `setZh-TW`(value: Appsettingcontentwidthfixed): Self = StObject.set(x, "zh-TW", value.asInstanceOf[js.Any])
   }
 }

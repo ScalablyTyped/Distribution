@@ -11,16 +11,13 @@ trait Slider extends StObject {
 }
 object Slider {
   
-  @scala.inline
-  def apply(destroy: () => Unit): Slider = {
+  inline def apply(destroy: () => Unit): Slider = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
     __obj.asInstanceOf[Slider]
   }
   
-  @scala.inline
-  implicit class SliderMutableBuilder[Self <: Slider] (val x: Self) extends AnyVal {
+  extension [Self <: Slider](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }
 }

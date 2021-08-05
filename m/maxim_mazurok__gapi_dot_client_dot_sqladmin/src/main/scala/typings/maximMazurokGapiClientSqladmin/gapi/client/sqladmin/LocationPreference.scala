@@ -20,37 +20,27 @@ trait LocationPreference extends StObject {
 }
 object LocationPreference {
   
-  @scala.inline
-  def apply(): LocationPreference = {
+  inline def apply(): LocationPreference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationPreference]
   }
   
-  @scala.inline
-  implicit class LocationPreferenceMutableBuilder[Self <: LocationPreference] (val x: Self) extends AnyVal {
+  extension [Self <: LocationPreference](x: Self) {
     
-    @scala.inline
-    def setFollowGaeApplication(value: String): Self = StObject.set(x, "followGaeApplication", value.asInstanceOf[js.Any])
+    inline def setFollowGaeApplication(value: String): Self = StObject.set(x, "followGaeApplication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowGaeApplicationUndefined: Self = StObject.set(x, "followGaeApplication", js.undefined)
+    inline def setFollowGaeApplicationUndefined: Self = StObject.set(x, "followGaeApplication", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSecondaryZone(value: String): Self = StObject.set(x, "secondaryZone", value.asInstanceOf[js.Any])
+    inline def setSecondaryZone(value: String): Self = StObject.set(x, "secondaryZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryZoneUndefined: Self = StObject.set(x, "secondaryZone", js.undefined)
+    inline def setSecondaryZoneUndefined: Self = StObject.set(x, "secondaryZone", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

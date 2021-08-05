@@ -10,8 +10,7 @@ trait ProvisioningAgent
      with IProvisioningAgent
 object ProvisioningAgent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getProvisionedProfile: (ProfileMediaType, String) => ProvisionedProfile,
     provisionFromXmlDocumentAsync: String => IAsyncOperation[ProvisionFromXmlDocumentResults]
   ): ProvisioningAgent = {

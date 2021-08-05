@@ -11,16 +11,13 @@ trait TypesRegistryRequest extends StObject {
 }
 object TypesRegistryRequest {
   
-  @scala.inline
-  def apply(): TypesRegistryRequest = {
+  inline def apply(): TypesRegistryRequest = {
     val __obj = js.Dynamic.literal(kind = "typesRegistry")
     __obj.asInstanceOf[TypesRegistryRequest]
   }
   
-  @scala.inline
-  implicit class TypesRegistryRequestMutableBuilder[Self <: TypesRegistryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TypesRegistryRequest](x: Self) {
     
-    @scala.inline
-    def setKind(value: typesRegistry): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typesRegistry): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

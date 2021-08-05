@@ -23,31 +23,23 @@ trait ListDeliveryStreamsInput extends StObject {
 }
 object ListDeliveryStreamsInput {
   
-  @scala.inline
-  def apply(): ListDeliveryStreamsInput = {
+  inline def apply(): ListDeliveryStreamsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDeliveryStreamsInput]
   }
   
-  @scala.inline
-  implicit class ListDeliveryStreamsInputMutableBuilder[Self <: ListDeliveryStreamsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListDeliveryStreamsInput](x: Self) {
     
-    @scala.inline
-    def setDeliveryStreamType(value: DeliveryStreamType): Self = StObject.set(x, "DeliveryStreamType", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamType(value: DeliveryStreamType): Self = StObject.set(x, "DeliveryStreamType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryStreamTypeUndefined: Self = StObject.set(x, "DeliveryStreamType", js.undefined)
+    inline def setDeliveryStreamTypeUndefined: Self = StObject.set(x, "DeliveryStreamType", js.undefined)
     
-    @scala.inline
-    def setExclusiveStartDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "ExclusiveStartDeliveryStreamName", value.asInstanceOf[js.Any])
+    inline def setExclusiveStartDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "ExclusiveStartDeliveryStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveStartDeliveryStreamNameUndefined: Self = StObject.set(x, "ExclusiveStartDeliveryStreamName", js.undefined)
+    inline def setExclusiveStartDeliveryStreamNameUndefined: Self = StObject.set(x, "ExclusiveStartDeliveryStreamName", js.undefined)
     
-    @scala.inline
-    def setLimit(value: ListDeliveryStreamsInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: ListDeliveryStreamsInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait Replace extends StObject {
 }
 object Replace {
   
-  @scala.inline
-  def apply(): Replace = {
+  inline def apply(): Replace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Replace]
   }
   
-  @scala.inline
-  implicit class ReplaceMutableBuilder[Self <: Replace] (val x: Self) extends AnyVal {
+  extension [Self <: Replace](x: Self) {
     
-    @scala.inline
-    def setReplace(value: String | Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: String | Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
   }
 }

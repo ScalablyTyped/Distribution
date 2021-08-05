@@ -98,14 +98,12 @@ object InterfaceDeclarationSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     interfaceKeyword: ISyntaxToken,
     identifier: ISyntaxToken,
     body: typings.typescriptServices.TypeScript.ObjectTypeSyntax
   ): typings.typescriptServices.TypeScript.InterfaceDeclarationSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(interfaceKeyword.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.InterfaceDeclarationSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.InterfaceDeclarationSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.InterfaceDeclarationSyntax]
+  inline def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.InterfaceDeclarationSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.InterfaceDeclarationSyntax]
 }

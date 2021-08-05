@@ -16,8 +16,7 @@ trait SwipeableConfig extends StObject {
 }
 object SwipeableConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onSwipeDown: (Double, Double, js.Function0[Unit]) => Unit,
     onSwipeLeft: (Double, Double, js.Function0[Unit]) => Unit,
     onSwipeRight: (Double, Double, js.Function0[Unit]) => Unit,
@@ -27,19 +26,14 @@ object SwipeableConfig {
     __obj.asInstanceOf[SwipeableConfig]
   }
   
-  @scala.inline
-  implicit class SwipeableConfigMutableBuilder[Self <: SwipeableConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SwipeableConfig](x: Self) {
     
-    @scala.inline
-    def setOnSwipeDown(value: (Double, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onSwipeDown", js.Any.fromFunction3(value))
+    inline def setOnSwipeDown(value: (Double, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onSwipeDown", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnSwipeLeft(value: (Double, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onSwipeLeft", js.Any.fromFunction3(value))
+    inline def setOnSwipeLeft(value: (Double, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onSwipeLeft", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnSwipeRight(value: (Double, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onSwipeRight", js.Any.fromFunction3(value))
+    inline def setOnSwipeRight(value: (Double, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onSwipeRight", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnSwipeUp(value: (Double, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onSwipeUp", js.Any.fromFunction3(value))
+    inline def setOnSwipeUp(value: (Double, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onSwipeUp", js.Any.fromFunction3(value))
   }
 }

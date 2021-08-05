@@ -24,8 +24,7 @@ trait MediaCaptureVideoProfileMediaDescription extends StObject {
 }
 object MediaCaptureVideoProfileMediaDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     frameRate: Double,
     height: Double,
     isHdrVideoSupported: Boolean,
@@ -36,22 +35,16 @@ object MediaCaptureVideoProfileMediaDescription {
     __obj.asInstanceOf[MediaCaptureVideoProfileMediaDescription]
   }
   
-  @scala.inline
-  implicit class MediaCaptureVideoProfileMediaDescriptionMutableBuilder[Self <: MediaCaptureVideoProfileMediaDescription] (val x: Self) extends AnyVal {
+  extension [Self <: MediaCaptureVideoProfileMediaDescription](x: Self) {
     
-    @scala.inline
-    def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+    inline def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHdrVideoSupported(value: Boolean): Self = StObject.set(x, "isHdrVideoSupported", value.asInstanceOf[js.Any])
+    inline def setIsHdrVideoSupported(value: Boolean): Self = StObject.set(x, "isHdrVideoSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVariablePhotoSequenceSupported(value: Boolean): Self = StObject.set(x, "isVariablePhotoSequenceSupported", value.asInstanceOf[js.Any])
+    inline def setIsVariablePhotoSequenceSupported(value: Boolean): Self = StObject.set(x, "isVariablePhotoSequenceSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

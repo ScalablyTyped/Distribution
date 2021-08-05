@@ -10,16 +10,13 @@ trait IsPhantom extends StObject {
 }
 object IsPhantom {
   
-  @scala.inline
-  def apply(isPhantom: Boolean): IsPhantom = {
+  inline def apply(isPhantom: Boolean): IsPhantom = {
     val __obj = js.Dynamic.literal(isPhantom = isPhantom.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsPhantom]
   }
   
-  @scala.inline
-  implicit class IsPhantomMutableBuilder[Self <: IsPhantom] (val x: Self) extends AnyVal {
+  extension [Self <: IsPhantom](x: Self) {
     
-    @scala.inline
-    def setIsPhantom(value: Boolean): Self = StObject.set(x, "isPhantom", value.asInstanceOf[js.Any])
+    inline def setIsPhantom(value: Boolean): Self = StObject.set(x, "isPhantom", value.asInstanceOf[js.Any])
   }
 }

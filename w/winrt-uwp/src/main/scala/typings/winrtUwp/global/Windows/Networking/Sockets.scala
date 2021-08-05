@@ -47,8 +47,7 @@ object Sockets {
       * @return A list of EndpointPair objects.
       */
     /* static member */
-    @scala.inline
-    def getEndpointPairsAsync(remoteHostName: typings.winrtUwp.Windows.Networking.HostName, remoteServiceName: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointPairsAsync")(remoteHostName.asInstanceOf[js.Any], remoteServiceName.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getEndpointPairsAsync(remoteHostName: typings.winrtUwp.Windows.Networking.HostName, remoteServiceName: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointPairsAsync")(remoteHostName.asInstanceOf[js.Any], remoteServiceName.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     /**
       * Gets a list of EndpointPair objects based on a remote hostname and remote service name and the sort order to be used.
       * @param remoteHostName The remote hostname or IP address.
@@ -57,8 +56,7 @@ object Sockets {
       * @return A list of EndpointPair objects.
       */
     /* static member */
-    @scala.inline
-    def getEndpointPairsAsync(
+    inline def getEndpointPairsAsync(
       remoteHostName: typings.winrtUwp.Windows.Networking.HostName,
       remoteServiceName: String,
       sortOptions: typings.winrtUwp.Windows.Networking.HostNameSortOptions
@@ -315,8 +313,7 @@ object Sockets {
     @JSGlobal("Windows.Networking.Sockets.SocketActivityInformation.allSockets")
     @js.native
     def allSockets: IMapView[String, typings.winrtUwp.Windows.Networking.Sockets.SocketActivityInformation] = js.native
-    @scala.inline
-    def allSockets_=(x: IMapView[String, typings.winrtUwp.Windows.Networking.Sockets.SocketActivityInformation]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allSockets")(x.asInstanceOf[js.Any])
+    inline def allSockets_=(x: IMapView[String, typings.winrtUwp.Windows.Networking.Sockets.SocketActivityInformation]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allSockets")(x.asInstanceOf[js.Any])
   }
   
   /** Describes the kind of socket object being transferred to or from the socket broker. */
@@ -389,8 +386,7 @@ object Sockets {
       * @return The socket error status value for a socket operation.
       */
     /* static member */
-    @scala.inline
-    def getStatus(hresult: Double): SocketErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[SocketErrorStatus]
+    inline def getStatus(hresult: Double): SocketErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[SocketErrorStatus]
   }
   
   /** Specifies status values for a socket operation. */
@@ -794,7 +790,6 @@ object Sockets {
       * @return The socket error status value for a WebSocket operation.
       */
     /* static member */
-    @scala.inline
-    def getStatus(hresult: Double): WebErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[WebErrorStatus]
+    inline def getStatus(hresult: Double): WebErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[WebErrorStatus]
   }
 }

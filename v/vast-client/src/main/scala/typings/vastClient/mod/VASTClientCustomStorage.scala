@@ -15,19 +15,15 @@ trait VASTClientCustomStorage
 }
 object VASTClientCustomStorage {
   
-  @scala.inline
-  def apply(getItem: String => String | Null, setItem: (String, String) => Unit): VASTClientCustomStorage = {
+  inline def apply(getItem: String => String | Null, setItem: (String, String) => Unit): VASTClientCustomStorage = {
     val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction1(getItem), setItem = js.Any.fromFunction2(setItem))
     __obj.asInstanceOf[VASTClientCustomStorage]
   }
   
-  @scala.inline
-  implicit class VASTClientCustomStorageMutableBuilder[Self <: VASTClientCustomStorage] (val x: Self) extends AnyVal {
+  extension [Self <: VASTClientCustomStorage](x: Self) {
     
-    @scala.inline
-    def setGetItem(value: String => String | Null): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+    inline def setGetItem(value: String => String | Null): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetItem(value: (String, String) => Unit): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+    inline def setSetItem(value: (String, String) => Unit): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
   }
 }

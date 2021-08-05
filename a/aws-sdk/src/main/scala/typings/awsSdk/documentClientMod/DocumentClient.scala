@@ -164,32 +164,24 @@ object DocumentClient {
   }
   object ArchivalSummary {
     
-    @scala.inline
-    def apply(): ArchivalSummary = {
+    inline def apply(): ArchivalSummary = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ArchivalSummary]
     }
     
-    @scala.inline
-    implicit class ArchivalSummaryMutableBuilder[Self <: ArchivalSummary] (val x: Self) extends AnyVal {
+    extension [Self <: ArchivalSummary](x: Self) {
       
-      @scala.inline
-      def setArchivalBackupArn(value: BackupArn): Self = StObject.set(x, "ArchivalBackupArn", value.asInstanceOf[js.Any])
+      inline def setArchivalBackupArn(value: BackupArn): Self = StObject.set(x, "ArchivalBackupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchivalBackupArnUndefined: Self = StObject.set(x, "ArchivalBackupArn", js.undefined)
+      inline def setArchivalBackupArnUndefined: Self = StObject.set(x, "ArchivalBackupArn", js.undefined)
       
-      @scala.inline
-      def setArchivalDateTime(value: Date): Self = StObject.set(x, "ArchivalDateTime", value.asInstanceOf[js.Any])
+      inline def setArchivalDateTime(value: Date): Self = StObject.set(x, "ArchivalDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchivalDateTimeUndefined: Self = StObject.set(x, "ArchivalDateTime", js.undefined)
+      inline def setArchivalDateTimeUndefined: Self = StObject.set(x, "ArchivalDateTime", js.undefined)
       
-      @scala.inline
-      def setArchivalReason(value: ArchivalReason): Self = StObject.set(x, "ArchivalReason", value.asInstanceOf[js.Any])
+      inline def setArchivalReason(value: ArchivalReason): Self = StObject.set(x, "ArchivalReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchivalReasonUndefined: Self = StObject.set(x, "ArchivalReason", js.undefined)
+      inline def setArchivalReasonUndefined: Self = StObject.set(x, "ArchivalReason", js.undefined)
     }
   }
   
@@ -215,20 +207,16 @@ object DocumentClient {
   }
   object AttributeDefinition {
     
-    @scala.inline
-    def apply(AttributeName: KeySchemaAttributeName, AttributeType: ScalarAttributeType): AttributeDefinition = {
+    inline def apply(AttributeName: KeySchemaAttributeName, AttributeType: ScalarAttributeType): AttributeDefinition = {
       val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], AttributeType = AttributeType.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeDefinition]
     }
     
-    @scala.inline
-    implicit class AttributeDefinitionMutableBuilder[Self <: AttributeDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeDefinition](x: Self) {
       
-      @scala.inline
-      def setAttributeName(value: KeySchemaAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+      inline def setAttributeName(value: KeySchemaAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeType(value: ScalarAttributeType): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
+      inline def setAttributeType(value: ScalarAttributeType): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -260,26 +248,20 @@ object DocumentClient {
   }
   object AttributeValueUpdate {
     
-    @scala.inline
-    def apply(): AttributeValueUpdate = {
+    inline def apply(): AttributeValueUpdate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AttributeValueUpdate]
     }
     
-    @scala.inline
-    implicit class AttributeValueUpdateMutableBuilder[Self <: AttributeValueUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeValueUpdate](x: Self) {
       
-      @scala.inline
-      def setAction(value: AttributeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+      inline def setAction(value: AttributeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
       
-      @scala.inline
-      def setValue(value: AttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: AttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
     }
   }
   
@@ -297,26 +279,20 @@ object DocumentClient {
   }
   object AutoScalingPolicyDescription {
     
-    @scala.inline
-    def apply(): AutoScalingPolicyDescription = {
+    inline def apply(): AutoScalingPolicyDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoScalingPolicyDescription]
     }
     
-    @scala.inline
-    implicit class AutoScalingPolicyDescriptionMutableBuilder[Self <: AutoScalingPolicyDescription] (val x: Self) extends AnyVal {
+    extension [Self <: AutoScalingPolicyDescription](x: Self) {
       
-      @scala.inline
-      def setPolicyName(value: AutoScalingPolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+      inline def setPolicyName(value: AutoScalingPolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
+      inline def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
       
-      @scala.inline
-      def setTargetTrackingScalingPolicyConfiguration(value: AutoScalingTargetTrackingScalingPolicyConfigurationDescription): Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", value.asInstanceOf[js.Any])
+      inline def setTargetTrackingScalingPolicyConfiguration(value: AutoScalingTargetTrackingScalingPolicyConfigurationDescription): Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTrackingScalingPolicyConfigurationUndefined: Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", js.undefined)
+      inline def setTargetTrackingScalingPolicyConfigurationUndefined: Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", js.undefined)
     }
   }
   
@@ -338,25 +314,20 @@ object DocumentClient {
   }
   object AutoScalingPolicyUpdate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       TargetTrackingScalingPolicyConfiguration: AutoScalingTargetTrackingScalingPolicyConfigurationUpdate
     ): AutoScalingPolicyUpdate = {
       val __obj = js.Dynamic.literal(TargetTrackingScalingPolicyConfiguration = TargetTrackingScalingPolicyConfiguration.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutoScalingPolicyUpdate]
     }
     
-    @scala.inline
-    implicit class AutoScalingPolicyUpdateMutableBuilder[Self <: AutoScalingPolicyUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: AutoScalingPolicyUpdate](x: Self) {
       
-      @scala.inline
-      def setPolicyName(value: AutoScalingPolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+      inline def setPolicyName(value: AutoScalingPolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
+      inline def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
       
-      @scala.inline
-      def setTargetTrackingScalingPolicyConfiguration(value: AutoScalingTargetTrackingScalingPolicyConfigurationUpdate): Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", value.asInstanceOf[js.Any])
+      inline def setTargetTrackingScalingPolicyConfiguration(value: AutoScalingTargetTrackingScalingPolicyConfigurationUpdate): Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", value.asInstanceOf[js.Any])
     }
   }
   
@@ -391,47 +362,34 @@ object DocumentClient {
   }
   object AutoScalingSettingsDescription {
     
-    @scala.inline
-    def apply(): AutoScalingSettingsDescription = {
+    inline def apply(): AutoScalingSettingsDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoScalingSettingsDescription]
     }
     
-    @scala.inline
-    implicit class AutoScalingSettingsDescriptionMutableBuilder[Self <: AutoScalingSettingsDescription] (val x: Self) extends AnyVal {
+    extension [Self <: AutoScalingSettingsDescription](x: Self) {
       
-      @scala.inline
-      def setAutoScalingDisabled(value: BooleanObject): Self = StObject.set(x, "AutoScalingDisabled", value.asInstanceOf[js.Any])
+      inline def setAutoScalingDisabled(value: BooleanObject): Self = StObject.set(x, "AutoScalingDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoScalingDisabledUndefined: Self = StObject.set(x, "AutoScalingDisabled", js.undefined)
+      inline def setAutoScalingDisabledUndefined: Self = StObject.set(x, "AutoScalingDisabled", js.undefined)
       
-      @scala.inline
-      def setAutoScalingRoleArn(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "AutoScalingRoleArn", value.asInstanceOf[js.Any])
+      inline def setAutoScalingRoleArn(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "AutoScalingRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoScalingRoleArnUndefined: Self = StObject.set(x, "AutoScalingRoleArn", js.undefined)
+      inline def setAutoScalingRoleArnUndefined: Self = StObject.set(x, "AutoScalingRoleArn", js.undefined)
       
-      @scala.inline
-      def setMaximumUnits(value: PositiveLongObject): Self = StObject.set(x, "MaximumUnits", value.asInstanceOf[js.Any])
+      inline def setMaximumUnits(value: PositiveLongObject): Self = StObject.set(x, "MaximumUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumUnitsUndefined: Self = StObject.set(x, "MaximumUnits", js.undefined)
+      inline def setMaximumUnitsUndefined: Self = StObject.set(x, "MaximumUnits", js.undefined)
       
-      @scala.inline
-      def setMinimumUnits(value: PositiveLongObject): Self = StObject.set(x, "MinimumUnits", value.asInstanceOf[js.Any])
+      inline def setMinimumUnits(value: PositiveLongObject): Self = StObject.set(x, "MinimumUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumUnitsUndefined: Self = StObject.set(x, "MinimumUnits", js.undefined)
+      inline def setMinimumUnitsUndefined: Self = StObject.set(x, "MinimumUnits", js.undefined)
       
-      @scala.inline
-      def setScalingPolicies(value: AutoScalingPolicyDescriptionList): Self = StObject.set(x, "ScalingPolicies", value.asInstanceOf[js.Any])
+      inline def setScalingPolicies(value: AutoScalingPolicyDescriptionList): Self = StObject.set(x, "ScalingPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalingPoliciesUndefined: Self = StObject.set(x, "ScalingPolicies", js.undefined)
+      inline def setScalingPoliciesUndefined: Self = StObject.set(x, "ScalingPolicies", js.undefined)
       
-      @scala.inline
-      def setScalingPoliciesVarargs(value: AutoScalingPolicyDescription*): Self = StObject.set(x, "ScalingPolicies", js.Array(value :_*))
+      inline def setScalingPoliciesVarargs(value: AutoScalingPolicyDescription*): Self = StObject.set(x, "ScalingPolicies", js.Array(value :_*))
     }
   }
   
@@ -464,44 +422,32 @@ object DocumentClient {
   }
   object AutoScalingSettingsUpdate {
     
-    @scala.inline
-    def apply(): AutoScalingSettingsUpdate = {
+    inline def apply(): AutoScalingSettingsUpdate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoScalingSettingsUpdate]
     }
     
-    @scala.inline
-    implicit class AutoScalingSettingsUpdateMutableBuilder[Self <: AutoScalingSettingsUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: AutoScalingSettingsUpdate](x: Self) {
       
-      @scala.inline
-      def setAutoScalingDisabled(value: BooleanObject): Self = StObject.set(x, "AutoScalingDisabled", value.asInstanceOf[js.Any])
+      inline def setAutoScalingDisabled(value: BooleanObject): Self = StObject.set(x, "AutoScalingDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoScalingDisabledUndefined: Self = StObject.set(x, "AutoScalingDisabled", js.undefined)
+      inline def setAutoScalingDisabledUndefined: Self = StObject.set(x, "AutoScalingDisabled", js.undefined)
       
-      @scala.inline
-      def setAutoScalingRoleArn(value: AutoScalingRoleArn): Self = StObject.set(x, "AutoScalingRoleArn", value.asInstanceOf[js.Any])
+      inline def setAutoScalingRoleArn(value: AutoScalingRoleArn): Self = StObject.set(x, "AutoScalingRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoScalingRoleArnUndefined: Self = StObject.set(x, "AutoScalingRoleArn", js.undefined)
+      inline def setAutoScalingRoleArnUndefined: Self = StObject.set(x, "AutoScalingRoleArn", js.undefined)
       
-      @scala.inline
-      def setMaximumUnits(value: PositiveLongObject): Self = StObject.set(x, "MaximumUnits", value.asInstanceOf[js.Any])
+      inline def setMaximumUnits(value: PositiveLongObject): Self = StObject.set(x, "MaximumUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumUnitsUndefined: Self = StObject.set(x, "MaximumUnits", js.undefined)
+      inline def setMaximumUnitsUndefined: Self = StObject.set(x, "MaximumUnits", js.undefined)
       
-      @scala.inline
-      def setMinimumUnits(value: PositiveLongObject): Self = StObject.set(x, "MinimumUnits", value.asInstanceOf[js.Any])
+      inline def setMinimumUnits(value: PositiveLongObject): Self = StObject.set(x, "MinimumUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumUnitsUndefined: Self = StObject.set(x, "MinimumUnits", js.undefined)
+      inline def setMinimumUnitsUndefined: Self = StObject.set(x, "MinimumUnits", js.undefined)
       
-      @scala.inline
-      def setScalingPolicyUpdate(value: AutoScalingPolicyUpdate): Self = StObject.set(x, "ScalingPolicyUpdate", value.asInstanceOf[js.Any])
+      inline def setScalingPolicyUpdate(value: AutoScalingPolicyUpdate): Self = StObject.set(x, "ScalingPolicyUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalingPolicyUpdateUndefined: Self = StObject.set(x, "ScalingPolicyUpdate", js.undefined)
+      inline def setScalingPolicyUpdateUndefined: Self = StObject.set(x, "ScalingPolicyUpdate", js.undefined)
     }
   }
   
@@ -529,35 +475,26 @@ object DocumentClient {
   }
   object AutoScalingTargetTrackingScalingPolicyConfigurationDescription {
     
-    @scala.inline
-    def apply(TargetValue: typings.awsSdk.documentClientMod.DocumentClient.Double): AutoScalingTargetTrackingScalingPolicyConfigurationDescription = {
+    inline def apply(TargetValue: typings.awsSdk.documentClientMod.DocumentClient.Double): AutoScalingTargetTrackingScalingPolicyConfigurationDescription = {
       val __obj = js.Dynamic.literal(TargetValue = TargetValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutoScalingTargetTrackingScalingPolicyConfigurationDescription]
     }
     
-    @scala.inline
-    implicit class AutoScalingTargetTrackingScalingPolicyConfigurationDescriptionMutableBuilder[Self <: AutoScalingTargetTrackingScalingPolicyConfigurationDescription] (val x: Self) extends AnyVal {
+    extension [Self <: AutoScalingTargetTrackingScalingPolicyConfigurationDescription](x: Self) {
       
-      @scala.inline
-      def setDisableScaleIn(value: BooleanObject): Self = StObject.set(x, "DisableScaleIn", value.asInstanceOf[js.Any])
+      inline def setDisableScaleIn(value: BooleanObject): Self = StObject.set(x, "DisableScaleIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableScaleInUndefined: Self = StObject.set(x, "DisableScaleIn", js.undefined)
+      inline def setDisableScaleInUndefined: Self = StObject.set(x, "DisableScaleIn", js.undefined)
       
-      @scala.inline
-      def setScaleInCooldown(value: IntegerObject): Self = StObject.set(x, "ScaleInCooldown", value.asInstanceOf[js.Any])
+      inline def setScaleInCooldown(value: IntegerObject): Self = StObject.set(x, "ScaleInCooldown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleInCooldownUndefined: Self = StObject.set(x, "ScaleInCooldown", js.undefined)
+      inline def setScaleInCooldownUndefined: Self = StObject.set(x, "ScaleInCooldown", js.undefined)
       
-      @scala.inline
-      def setScaleOutCooldown(value: IntegerObject): Self = StObject.set(x, "ScaleOutCooldown", value.asInstanceOf[js.Any])
+      inline def setScaleOutCooldown(value: IntegerObject): Self = StObject.set(x, "ScaleOutCooldown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleOutCooldownUndefined: Self = StObject.set(x, "ScaleOutCooldown", js.undefined)
+      inline def setScaleOutCooldownUndefined: Self = StObject.set(x, "ScaleOutCooldown", js.undefined)
       
-      @scala.inline
-      def setTargetValue(value: typings.awsSdk.documentClientMod.DocumentClient.Double): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
+      inline def setTargetValue(value: typings.awsSdk.documentClientMod.DocumentClient.Double): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -585,35 +522,26 @@ object DocumentClient {
   }
   object AutoScalingTargetTrackingScalingPolicyConfigurationUpdate {
     
-    @scala.inline
-    def apply(TargetValue: typings.awsSdk.documentClientMod.DocumentClient.Double): AutoScalingTargetTrackingScalingPolicyConfigurationUpdate = {
+    inline def apply(TargetValue: typings.awsSdk.documentClientMod.DocumentClient.Double): AutoScalingTargetTrackingScalingPolicyConfigurationUpdate = {
       val __obj = js.Dynamic.literal(TargetValue = TargetValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutoScalingTargetTrackingScalingPolicyConfigurationUpdate]
     }
     
-    @scala.inline
-    implicit class AutoScalingTargetTrackingScalingPolicyConfigurationUpdateMutableBuilder[Self <: AutoScalingTargetTrackingScalingPolicyConfigurationUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: AutoScalingTargetTrackingScalingPolicyConfigurationUpdate](x: Self) {
       
-      @scala.inline
-      def setDisableScaleIn(value: BooleanObject): Self = StObject.set(x, "DisableScaleIn", value.asInstanceOf[js.Any])
+      inline def setDisableScaleIn(value: BooleanObject): Self = StObject.set(x, "DisableScaleIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableScaleInUndefined: Self = StObject.set(x, "DisableScaleIn", js.undefined)
+      inline def setDisableScaleInUndefined: Self = StObject.set(x, "DisableScaleIn", js.undefined)
       
-      @scala.inline
-      def setScaleInCooldown(value: IntegerObject): Self = StObject.set(x, "ScaleInCooldown", value.asInstanceOf[js.Any])
+      inline def setScaleInCooldown(value: IntegerObject): Self = StObject.set(x, "ScaleInCooldown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleInCooldownUndefined: Self = StObject.set(x, "ScaleInCooldown", js.undefined)
+      inline def setScaleInCooldownUndefined: Self = StObject.set(x, "ScaleInCooldown", js.undefined)
       
-      @scala.inline
-      def setScaleOutCooldown(value: IntegerObject): Self = StObject.set(x, "ScaleOutCooldown", value.asInstanceOf[js.Any])
+      inline def setScaleOutCooldown(value: IntegerObject): Self = StObject.set(x, "ScaleOutCooldown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleOutCooldownUndefined: Self = StObject.set(x, "ScaleOutCooldown", js.undefined)
+      inline def setScaleOutCooldownUndefined: Self = StObject.set(x, "ScaleOutCooldown", js.undefined)
       
-      @scala.inline
-      def setTargetValue(value: typings.awsSdk.documentClientMod.DocumentClient.Double): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
+      inline def setTargetValue(value: typings.awsSdk.documentClientMod.DocumentClient.Double): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -642,32 +570,24 @@ object DocumentClient {
   }
   object BackupDescription {
     
-    @scala.inline
-    def apply(): BackupDescription = {
+    inline def apply(): BackupDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BackupDescription]
     }
     
-    @scala.inline
-    implicit class BackupDescriptionMutableBuilder[Self <: BackupDescription] (val x: Self) extends AnyVal {
+    extension [Self <: BackupDescription](x: Self) {
       
-      @scala.inline
-      def setBackupDetails(value: BackupDetails): Self = StObject.set(x, "BackupDetails", value.asInstanceOf[js.Any])
+      inline def setBackupDetails(value: BackupDetails): Self = StObject.set(x, "BackupDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupDetailsUndefined: Self = StObject.set(x, "BackupDetails", js.undefined)
+      inline def setBackupDetailsUndefined: Self = StObject.set(x, "BackupDetails", js.undefined)
       
-      @scala.inline
-      def setSourceTableDetails(value: SourceTableDetails): Self = StObject.set(x, "SourceTableDetails", value.asInstanceOf[js.Any])
+      inline def setSourceTableDetails(value: SourceTableDetails): Self = StObject.set(x, "SourceTableDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTableDetailsUndefined: Self = StObject.set(x, "SourceTableDetails", js.undefined)
+      inline def setSourceTableDetailsUndefined: Self = StObject.set(x, "SourceTableDetails", js.undefined)
       
-      @scala.inline
-      def setSourceTableFeatureDetails(value: SourceTableFeatureDetails): Self = StObject.set(x, "SourceTableFeatureDetails", value.asInstanceOf[js.Any])
+      inline def setSourceTableFeatureDetails(value: SourceTableFeatureDetails): Self = StObject.set(x, "SourceTableFeatureDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTableFeatureDetailsUndefined: Self = StObject.set(x, "SourceTableFeatureDetails", js.undefined)
+      inline def setSourceTableFeatureDetailsUndefined: Self = StObject.set(x, "SourceTableFeatureDetails", js.undefined)
     }
   }
   
@@ -710,8 +630,7 @@ object DocumentClient {
   }
   object BackupDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BackupArn: BackupArn,
       BackupCreationDateTime: BackupCreationDateTime,
       BackupName: BackupName,
@@ -722,35 +641,25 @@ object DocumentClient {
       __obj.asInstanceOf[BackupDetails]
     }
     
-    @scala.inline
-    implicit class BackupDetailsMutableBuilder[Self <: BackupDetails] (val x: Self) extends AnyVal {
+    extension [Self <: BackupDetails](x: Self) {
       
-      @scala.inline
-      def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
+      inline def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupCreationDateTime(value: BackupCreationDateTime): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
+      inline def setBackupCreationDateTime(value: BackupCreationDateTime): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupExpiryDateTime(value: Date): Self = StObject.set(x, "BackupExpiryDateTime", value.asInstanceOf[js.Any])
+      inline def setBackupExpiryDateTime(value: Date): Self = StObject.set(x, "BackupExpiryDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupExpiryDateTimeUndefined: Self = StObject.set(x, "BackupExpiryDateTime", js.undefined)
+      inline def setBackupExpiryDateTimeUndefined: Self = StObject.set(x, "BackupExpiryDateTime", js.undefined)
       
-      @scala.inline
-      def setBackupName(value: BackupName): Self = StObject.set(x, "BackupName", value.asInstanceOf[js.Any])
+      inline def setBackupName(value: BackupName): Self = StObject.set(x, "BackupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupSizeBytes(value: BackupSizeBytes): Self = StObject.set(x, "BackupSizeBytes", value.asInstanceOf[js.Any])
+      inline def setBackupSizeBytes(value: BackupSizeBytes): Self = StObject.set(x, "BackupSizeBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupSizeBytesUndefined: Self = StObject.set(x, "BackupSizeBytes", js.undefined)
+      inline def setBackupSizeBytesUndefined: Self = StObject.set(x, "BackupSizeBytes", js.undefined)
       
-      @scala.inline
-      def setBackupStatus(value: BackupStatus): Self = StObject.set(x, "BackupStatus", value.asInstanceOf[js.Any])
+      inline def setBackupStatus(value: BackupStatus): Self = StObject.set(x, "BackupStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupType(value: BackupType): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
+      inline def setBackupType(value: BackupType): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -822,74 +731,52 @@ object DocumentClient {
   }
   object BackupSummary {
     
-    @scala.inline
-    def apply(): BackupSummary = {
+    inline def apply(): BackupSummary = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BackupSummary]
     }
     
-    @scala.inline
-    implicit class BackupSummaryMutableBuilder[Self <: BackupSummary] (val x: Self) extends AnyVal {
+    extension [Self <: BackupSummary](x: Self) {
       
-      @scala.inline
-      def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
+      inline def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupArnUndefined: Self = StObject.set(x, "BackupArn", js.undefined)
+      inline def setBackupArnUndefined: Self = StObject.set(x, "BackupArn", js.undefined)
       
-      @scala.inline
-      def setBackupCreationDateTime(value: BackupCreationDateTime): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
+      inline def setBackupCreationDateTime(value: BackupCreationDateTime): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupCreationDateTimeUndefined: Self = StObject.set(x, "BackupCreationDateTime", js.undefined)
+      inline def setBackupCreationDateTimeUndefined: Self = StObject.set(x, "BackupCreationDateTime", js.undefined)
       
-      @scala.inline
-      def setBackupExpiryDateTime(value: Date): Self = StObject.set(x, "BackupExpiryDateTime", value.asInstanceOf[js.Any])
+      inline def setBackupExpiryDateTime(value: Date): Self = StObject.set(x, "BackupExpiryDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupExpiryDateTimeUndefined: Self = StObject.set(x, "BackupExpiryDateTime", js.undefined)
+      inline def setBackupExpiryDateTimeUndefined: Self = StObject.set(x, "BackupExpiryDateTime", js.undefined)
       
-      @scala.inline
-      def setBackupName(value: BackupName): Self = StObject.set(x, "BackupName", value.asInstanceOf[js.Any])
+      inline def setBackupName(value: BackupName): Self = StObject.set(x, "BackupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupNameUndefined: Self = StObject.set(x, "BackupName", js.undefined)
+      inline def setBackupNameUndefined: Self = StObject.set(x, "BackupName", js.undefined)
       
-      @scala.inline
-      def setBackupSizeBytes(value: BackupSizeBytes): Self = StObject.set(x, "BackupSizeBytes", value.asInstanceOf[js.Any])
+      inline def setBackupSizeBytes(value: BackupSizeBytes): Self = StObject.set(x, "BackupSizeBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupSizeBytesUndefined: Self = StObject.set(x, "BackupSizeBytes", js.undefined)
+      inline def setBackupSizeBytesUndefined: Self = StObject.set(x, "BackupSizeBytes", js.undefined)
       
-      @scala.inline
-      def setBackupStatus(value: BackupStatus): Self = StObject.set(x, "BackupStatus", value.asInstanceOf[js.Any])
+      inline def setBackupStatus(value: BackupStatus): Self = StObject.set(x, "BackupStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupStatusUndefined: Self = StObject.set(x, "BackupStatus", js.undefined)
+      inline def setBackupStatusUndefined: Self = StObject.set(x, "BackupStatus", js.undefined)
       
-      @scala.inline
-      def setBackupType(value: BackupType): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
+      inline def setBackupType(value: BackupType): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupTypeUndefined: Self = StObject.set(x, "BackupType", js.undefined)
+      inline def setBackupTypeUndefined: Self = StObject.set(x, "BackupType", js.undefined)
       
-      @scala.inline
-      def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
+      inline def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
+      inline def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
       
-      @scala.inline
-      def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
+      inline def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableIdUndefined: Self = StObject.set(x, "TableId", js.undefined)
+      inline def setTableIdUndefined: Self = StObject.set(x, "TableId", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     }
   }
   
@@ -923,23 +810,18 @@ object DocumentClient {
   }
   object BatchGetItemInput {
     
-    @scala.inline
-    def apply(RequestItems: BatchGetRequestMap): BatchGetItemInput = {
+    inline def apply(RequestItems: BatchGetRequestMap): BatchGetItemInput = {
       val __obj = js.Dynamic.literal(RequestItems = RequestItems.asInstanceOf[js.Any])
       __obj.asInstanceOf[BatchGetItemInput]
     }
     
-    @scala.inline
-    implicit class BatchGetItemInputMutableBuilder[Self <: BatchGetItemInput] (val x: Self) extends AnyVal {
+    extension [Self <: BatchGetItemInput](x: Self) {
       
-      @scala.inline
-      def setRequestItems(value: BatchGetRequestMap): Self = StObject.set(x, "RequestItems", value.asInstanceOf[js.Any])
+      inline def setRequestItems(value: BatchGetRequestMap): Self = StObject.set(x, "RequestItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+      inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
     }
   }
   
@@ -962,35 +844,26 @@ object DocumentClient {
   }
   object BatchGetItemOutput {
     
-    @scala.inline
-    def apply(): BatchGetItemOutput = {
+    inline def apply(): BatchGetItemOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BatchGetItemOutput]
     }
     
-    @scala.inline
-    implicit class BatchGetItemOutputMutableBuilder[Self <: BatchGetItemOutput] (val x: Self) extends AnyVal {
+    extension [Self <: BatchGetItemOutput](x: Self) {
       
-      @scala.inline
-      def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
+      inline def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
       
-      @scala.inline
-      def setResponses(value: BatchGetResponseMap): Self = StObject.set(x, "Responses", value.asInstanceOf[js.Any])
+      inline def setResponses(value: BatchGetResponseMap): Self = StObject.set(x, "Responses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsesUndefined: Self = StObject.set(x, "Responses", js.undefined)
+      inline def setResponsesUndefined: Self = StObject.set(x, "Responses", js.undefined)
       
-      @scala.inline
-      def setUnprocessedKeys(value: BatchGetRequestMap): Self = StObject.set(x, "UnprocessedKeys", value.asInstanceOf[js.Any])
+      inline def setUnprocessedKeys(value: BatchGetRequestMap): Self = StObject.set(x, "UnprocessedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnprocessedKeysUndefined: Self = StObject.set(x, "UnprocessedKeys", js.undefined)
+      inline def setUnprocessedKeysUndefined: Self = StObject.set(x, "UnprocessedKeys", js.undefined)
     }
   }
   
@@ -1014,29 +887,22 @@ object DocumentClient {
   }
   object BatchWriteItemInput {
     
-    @scala.inline
-    def apply(RequestItems: BatchWriteItemRequestMap): BatchWriteItemInput = {
+    inline def apply(RequestItems: BatchWriteItemRequestMap): BatchWriteItemInput = {
       val __obj = js.Dynamic.literal(RequestItems = RequestItems.asInstanceOf[js.Any])
       __obj.asInstanceOf[BatchWriteItemInput]
     }
     
-    @scala.inline
-    implicit class BatchWriteItemInputMutableBuilder[Self <: BatchWriteItemInput] (val x: Self) extends AnyVal {
+    extension [Self <: BatchWriteItemInput](x: Self) {
       
-      @scala.inline
-      def setRequestItems(value: BatchWriteItemRequestMap): Self = StObject.set(x, "RequestItems", value.asInstanceOf[js.Any])
+      inline def setRequestItems(value: BatchWriteItemRequestMap): Self = StObject.set(x, "RequestItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+      inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
+      inline def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
+      inline def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
     }
   }
   
@@ -1059,35 +925,26 @@ object DocumentClient {
   }
   object BatchWriteItemOutput {
     
-    @scala.inline
-    def apply(): BatchWriteItemOutput = {
+    inline def apply(): BatchWriteItemOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BatchWriteItemOutput]
     }
     
-    @scala.inline
-    implicit class BatchWriteItemOutputMutableBuilder[Self <: BatchWriteItemOutput] (val x: Self) extends AnyVal {
+    extension [Self <: BatchWriteItemOutput](x: Self) {
       
-      @scala.inline
-      def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
+      inline def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
       
-      @scala.inline
-      def setItemCollectionMetrics(value: ItemCollectionMetricsPerTable): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
+      inline def setItemCollectionMetrics(value: ItemCollectionMetricsPerTable): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCollectionMetricsUndefined: Self = StObject.set(x, "ItemCollectionMetrics", js.undefined)
+      inline def setItemCollectionMetricsUndefined: Self = StObject.set(x, "ItemCollectionMetrics", js.undefined)
       
-      @scala.inline
-      def setUnprocessedItems(value: BatchWriteItemRequestMap): Self = StObject.set(x, "UnprocessedItems", value.asInstanceOf[js.Any])
+      inline def setUnprocessedItems(value: BatchWriteItemRequestMap): Self = StObject.set(x, "UnprocessedItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnprocessedItemsUndefined: Self = StObject.set(x, "UnprocessedItems", js.undefined)
+      inline def setUnprocessedItemsUndefined: Self = StObject.set(x, "UnprocessedItems", js.undefined)
     }
   }
   
@@ -1116,26 +973,20 @@ object DocumentClient {
   }
   object BillingModeSummary {
     
-    @scala.inline
-    def apply(): BillingModeSummary = {
+    inline def apply(): BillingModeSummary = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BillingModeSummary]
     }
     
-    @scala.inline
-    implicit class BillingModeSummaryMutableBuilder[Self <: BillingModeSummary] (val x: Self) extends AnyVal {
+    extension [Self <: BillingModeSummary](x: Self) {
       
-      @scala.inline
-      def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
+      inline def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
+      inline def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
       
-      @scala.inline
-      def setLastUpdateToPayPerRequestDateTime(value: Date): Self = StObject.set(x, "LastUpdateToPayPerRequestDateTime", value.asInstanceOf[js.Any])
+      inline def setLastUpdateToPayPerRequestDateTime(value: Date): Self = StObject.set(x, "LastUpdateToPayPerRequestDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUpdateToPayPerRequestDateTimeUndefined: Self = StObject.set(x, "LastUpdateToPayPerRequestDateTime", js.undefined)
+      inline def setLastUpdateToPayPerRequestDateTimeUndefined: Self = StObject.set(x, "LastUpdateToPayPerRequestDateTime", js.undefined)
     }
   }
   
@@ -1151,24 +1002,19 @@ object DocumentClient {
   }
   object BinarySet {
     
-    @scala.inline
-    def apply(values: js.Array[binaryType]): BinarySet = {
+    inline def apply(values: js.Array[binaryType]): BinarySet = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Binary")
       __obj.asInstanceOf[BinarySet]
     }
     
-    @scala.inline
-    implicit class BinarySetMutableBuilder[Self <: BinarySet] (val x: Self) extends AnyVal {
+    extension [Self <: BinarySet](x: Self) {
       
-      @scala.inline
-      def setType(value: Binary_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Binary_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[binaryType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[binaryType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: binaryType*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: binaryType*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -1200,32 +1046,24 @@ object DocumentClient {
   }
   object Capacity {
     
-    @scala.inline
-    def apply(): Capacity = {
+    inline def apply(): Capacity = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Capacity]
     }
     
-    @scala.inline
-    implicit class CapacityMutableBuilder[Self <: Capacity] (val x: Self) extends AnyVal {
+    extension [Self <: Capacity](x: Self) {
       
-      @scala.inline
-      def setCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
+      inline def setCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityUnitsUndefined: Self = StObject.set(x, "CapacityUnits", js.undefined)
+      inline def setCapacityUnitsUndefined: Self = StObject.set(x, "CapacityUnits", js.undefined)
       
-      @scala.inline
-      def setReadCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setReadCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
+      inline def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
       
-      @scala.inline
-      def setWriteCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setWriteCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteCapacityUnitsUndefined: Self = StObject.set(x, "WriteCapacityUnits", js.undefined)
+      inline def setWriteCapacityUnitsUndefined: Self = StObject.set(x, "WriteCapacityUnits", js.undefined)
     }
   }
   
@@ -1265,26 +1103,20 @@ object DocumentClient {
   }
   object Condition {
     
-    @scala.inline
-    def apply(ComparisonOperator: ComparisonOperator): Condition = {
+    inline def apply(ComparisonOperator: ComparisonOperator): Condition = {
       val __obj = js.Dynamic.literal(ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any])
       __obj.asInstanceOf[Condition]
     }
     
-    @scala.inline
-    implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
+    extension [Self <: Condition](x: Self) {
       
-      @scala.inline
-      def setAttributeValueList(value: AttributeValueList): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
+      inline def setAttributeValueList(value: AttributeValueList): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
+      inline def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
       
-      @scala.inline
-      def setAttributeValueListVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
+      inline def setAttributeValueListVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
       
-      @scala.inline
-      def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
+      inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1324,41 +1156,30 @@ object DocumentClient {
   }
   object ConditionCheck {
     
-    @scala.inline
-    def apply(ConditionExpression: ConditionExpression, Key: Key, TableName: TableName): ConditionCheck = {
+    inline def apply(ConditionExpression: ConditionExpression, Key: Key, TableName: TableName): ConditionCheck = {
       val __obj = js.Dynamic.literal(ConditionExpression = ConditionExpression.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConditionCheck]
     }
     
-    @scala.inline
-    implicit class ConditionCheckMutableBuilder[Self <: ConditionCheck] (val x: Self) extends AnyVal {
+    extension [Self <: ConditionCheck](x: Self) {
       
-      @scala.inline
-      def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
+      inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+      inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
+      inline def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnValuesOnConditionCheckFailure(value: ReturnValuesOnConditionCheckFailure): Self = StObject.set(x, "ReturnValuesOnConditionCheckFailure", value.asInstanceOf[js.Any])
+      inline def setReturnValuesOnConditionCheckFailure(value: ReturnValuesOnConditionCheckFailure): Self = StObject.set(x, "ReturnValuesOnConditionCheckFailure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnValuesOnConditionCheckFailureUndefined: Self = StObject.set(x, "ReturnValuesOnConditionCheckFailure", js.undefined)
+      inline def setReturnValuesOnConditionCheckFailureUndefined: Self = StObject.set(x, "ReturnValuesOnConditionCheckFailure", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1412,56 +1233,40 @@ object DocumentClient {
   }
   object ConsumedCapacity {
     
-    @scala.inline
-    def apply(): ConsumedCapacity = {
+    inline def apply(): ConsumedCapacity = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConsumedCapacity]
     }
     
-    @scala.inline
-    implicit class ConsumedCapacityMutableBuilder[Self <: ConsumedCapacity] (val x: Self) extends AnyVal {
+    extension [Self <: ConsumedCapacity](x: Self) {
       
-      @scala.inline
-      def setCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
+      inline def setCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityUnitsUndefined: Self = StObject.set(x, "CapacityUnits", js.undefined)
+      inline def setCapacityUnitsUndefined: Self = StObject.set(x, "CapacityUnits", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexes(value: SecondaryIndexesCapacityMap): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexes(value: SecondaryIndexesCapacityMap): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
+      inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setLocalSecondaryIndexes(value: SecondaryIndexesCapacityMap): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setLocalSecondaryIndexes(value: SecondaryIndexesCapacityMap): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
+      inline def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setReadCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setReadCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
+      inline def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
       
-      @scala.inline
-      def setTable(value: Capacity): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
+      inline def setTable(value: Capacity): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
       
-      @scala.inline
-      def setWriteCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setWriteCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteCapacityUnitsUndefined: Self = StObject.set(x, "WriteCapacityUnits", js.undefined)
+      inline def setWriteCapacityUnitsUndefined: Self = StObject.set(x, "WriteCapacityUnits", js.undefined)
     }
   }
   
@@ -1483,23 +1288,18 @@ object DocumentClient {
   }
   object ContinuousBackupsDescription {
     
-    @scala.inline
-    def apply(ContinuousBackupsStatus: ContinuousBackupsStatus): ContinuousBackupsDescription = {
+    inline def apply(ContinuousBackupsStatus: ContinuousBackupsStatus): ContinuousBackupsDescription = {
       val __obj = js.Dynamic.literal(ContinuousBackupsStatus = ContinuousBackupsStatus.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContinuousBackupsDescription]
     }
     
-    @scala.inline
-    implicit class ContinuousBackupsDescriptionMutableBuilder[Self <: ContinuousBackupsDescription] (val x: Self) extends AnyVal {
+    extension [Self <: ContinuousBackupsDescription](x: Self) {
       
-      @scala.inline
-      def setContinuousBackupsStatus(value: ContinuousBackupsStatus): Self = StObject.set(x, "ContinuousBackupsStatus", value.asInstanceOf[js.Any])
+      inline def setContinuousBackupsStatus(value: ContinuousBackupsStatus): Self = StObject.set(x, "ContinuousBackupsStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointInTimeRecoveryDescription(value: PointInTimeRecoveryDescription): Self = StObject.set(x, "PointInTimeRecoveryDescription", value.asInstanceOf[js.Any])
+      inline def setPointInTimeRecoveryDescription(value: PointInTimeRecoveryDescription): Self = StObject.set(x, "PointInTimeRecoveryDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointInTimeRecoveryDescriptionUndefined: Self = StObject.set(x, "PointInTimeRecoveryDescription", js.undefined)
+      inline def setPointInTimeRecoveryDescriptionUndefined: Self = StObject.set(x, "PointInTimeRecoveryDescription", js.undefined)
     }
   }
   
@@ -1552,32 +1352,24 @@ object DocumentClient {
   }
   object ContributorInsightsSummary {
     
-    @scala.inline
-    def apply(): ContributorInsightsSummary = {
+    inline def apply(): ContributorInsightsSummary = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContributorInsightsSummary]
     }
     
-    @scala.inline
-    implicit class ContributorInsightsSummaryMutableBuilder[Self <: ContributorInsightsSummary] (val x: Self) extends AnyVal {
+    extension [Self <: ContributorInsightsSummary](x: Self) {
       
-      @scala.inline
-      def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
+      inline def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContributorInsightsStatusUndefined: Self = StObject.set(x, "ContributorInsightsStatus", js.undefined)
+      inline def setContributorInsightsStatusUndefined: Self = StObject.set(x, "ContributorInsightsStatus", js.undefined)
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+      inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     }
   }
   
@@ -1598,26 +1390,20 @@ object DocumentClient {
   }
   object ConverterOptions {
     
-    @scala.inline
-    def apply(): ConverterOptions = {
+    inline def apply(): ConverterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConverterOptions]
     }
     
-    @scala.inline
-    implicit class ConverterOptionsMutableBuilder[Self <: ConverterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConverterOptions](x: Self) {
       
-      @scala.inline
-      def setConvertEmptyValues(value: Boolean): Self = StObject.set(x, "convertEmptyValues", value.asInstanceOf[js.Any])
+      inline def setConvertEmptyValues(value: Boolean): Self = StObject.set(x, "convertEmptyValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConvertEmptyValuesUndefined: Self = StObject.set(x, "convertEmptyValues", js.undefined)
+      inline def setConvertEmptyValuesUndefined: Self = StObject.set(x, "convertEmptyValues", js.undefined)
       
-      @scala.inline
-      def setWrapNumbers(value: Boolean): Self = StObject.set(x, "wrapNumbers", value.asInstanceOf[js.Any])
+      inline def setWrapNumbers(value: Boolean): Self = StObject.set(x, "wrapNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapNumbersUndefined: Self = StObject.set(x, "wrapNumbers", js.undefined)
+      inline def setWrapNumbersUndefined: Self = StObject.set(x, "wrapNumbers", js.undefined)
     }
   }
   
@@ -1635,20 +1421,16 @@ object DocumentClient {
   }
   object CreateBackupInput {
     
-    @scala.inline
-    def apply(BackupName: BackupName, TableName: TableName): CreateBackupInput = {
+    inline def apply(BackupName: BackupName, TableName: TableName): CreateBackupInput = {
       val __obj = js.Dynamic.literal(BackupName = BackupName.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateBackupInput]
     }
     
-    @scala.inline
-    implicit class CreateBackupInputMutableBuilder[Self <: CreateBackupInput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateBackupInput](x: Self) {
       
-      @scala.inline
-      def setBackupName(value: BackupName): Self = StObject.set(x, "BackupName", value.asInstanceOf[js.Any])
+      inline def setBackupName(value: BackupName): Self = StObject.set(x, "BackupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1661,20 +1443,16 @@ object DocumentClient {
   }
   object CreateBackupOutput {
     
-    @scala.inline
-    def apply(): CreateBackupOutput = {
+    inline def apply(): CreateBackupOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateBackupOutput]
     }
     
-    @scala.inline
-    implicit class CreateBackupOutputMutableBuilder[Self <: CreateBackupOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateBackupOutput](x: Self) {
       
-      @scala.inline
-      def setBackupDetails(value: BackupDetails): Self = StObject.set(x, "BackupDetails", value.asInstanceOf[js.Any])
+      inline def setBackupDetails(value: BackupDetails): Self = StObject.set(x, "BackupDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupDetailsUndefined: Self = StObject.set(x, "BackupDetails", js.undefined)
+      inline def setBackupDetailsUndefined: Self = StObject.set(x, "BackupDetails", js.undefined)
     }
   }
   
@@ -1702,32 +1480,24 @@ object DocumentClient {
   }
   object CreateGlobalSecondaryIndexAction {
     
-    @scala.inline
-    def apply(IndexName: IndexName, KeySchema: KeySchema, Projection: Projection): CreateGlobalSecondaryIndexAction = {
+    inline def apply(IndexName: IndexName, KeySchema: KeySchema, Projection: Projection): CreateGlobalSecondaryIndexAction = {
       val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any], KeySchema = KeySchema.asInstanceOf[js.Any], Projection = Projection.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateGlobalSecondaryIndexAction]
     }
     
-    @scala.inline
-    implicit class CreateGlobalSecondaryIndexActionMutableBuilder[Self <: CreateGlobalSecondaryIndexAction] (val x: Self) extends AnyVal {
+    extension [Self <: CreateGlobalSecondaryIndexAction](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
       
-      @scala.inline
-      def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
+      inline def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
     }
   }
   
@@ -1745,23 +1515,18 @@ object DocumentClient {
   }
   object CreateGlobalTableInput {
     
-    @scala.inline
-    def apply(GlobalTableName: TableName, ReplicationGroup: ReplicaList): CreateGlobalTableInput = {
+    inline def apply(GlobalTableName: TableName, ReplicationGroup: ReplicaList): CreateGlobalTableInput = {
       val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any], ReplicationGroup = ReplicationGroup.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateGlobalTableInput]
     }
     
-    @scala.inline
-    implicit class CreateGlobalTableInputMutableBuilder[Self <: CreateGlobalTableInput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateGlobalTableInput](x: Self) {
       
-      @scala.inline
-      def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
+      inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationGroup(value: ReplicaList): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
+      inline def setReplicationGroup(value: ReplicaList): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+      inline def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
     }
   }
   
@@ -1774,20 +1539,16 @@ object DocumentClient {
   }
   object CreateGlobalTableOutput {
     
-    @scala.inline
-    def apply(): CreateGlobalTableOutput = {
+    inline def apply(): CreateGlobalTableOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateGlobalTableOutput]
     }
     
-    @scala.inline
-    implicit class CreateGlobalTableOutputMutableBuilder[Self <: CreateGlobalTableOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateGlobalTableOutput](x: Self) {
       
-      @scala.inline
-      def setGlobalTableDescription(value: GlobalTableDescription): Self = StObject.set(x, "GlobalTableDescription", value.asInstanceOf[js.Any])
+      inline def setGlobalTableDescription(value: GlobalTableDescription): Self = StObject.set(x, "GlobalTableDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableDescriptionUndefined: Self = StObject.set(x, "GlobalTableDescription", js.undefined)
+      inline def setGlobalTableDescriptionUndefined: Self = StObject.set(x, "GlobalTableDescription", js.undefined)
     }
   }
   
@@ -1800,17 +1561,14 @@ object DocumentClient {
   }
   object CreateReplicaAction {
     
-    @scala.inline
-    def apply(RegionName: RegionName): CreateReplicaAction = {
+    inline def apply(RegionName: RegionName): CreateReplicaAction = {
       val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateReplicaAction]
     }
     
-    @scala.inline
-    implicit class CreateReplicaActionMutableBuilder[Self <: CreateReplicaAction] (val x: Self) extends AnyVal {
+    extension [Self <: CreateReplicaAction](x: Self) {
       
-      @scala.inline
-      def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+      inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1838,38 +1596,28 @@ object DocumentClient {
   }
   object CreateReplicationGroupMemberAction {
     
-    @scala.inline
-    def apply(RegionName: RegionName): CreateReplicationGroupMemberAction = {
+    inline def apply(RegionName: RegionName): CreateReplicationGroupMemberAction = {
       val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateReplicationGroupMemberAction]
     }
     
-    @scala.inline
-    implicit class CreateReplicationGroupMemberActionMutableBuilder[Self <: CreateReplicationGroupMemberAction] (val x: Self) extends AnyVal {
+    extension [Self <: CreateReplicationGroupMemberAction](x: Self) {
       
-      @scala.inline
-      def setGlobalSecondaryIndexes(value: ReplicaGlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexes(value: ReplicaGlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
+      inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setKMSMasterKeyId(value: KMSMasterKeyId): Self = StObject.set(x, "KMSMasterKeyId", value.asInstanceOf[js.Any])
+      inline def setKMSMasterKeyId(value: KMSMasterKeyId): Self = StObject.set(x, "KMSMasterKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKMSMasterKeyIdUndefined: Self = StObject.set(x, "KMSMasterKeyId", js.undefined)
+      inline def setKMSMasterKeyIdUndefined: Self = StObject.set(x, "KMSMasterKeyId", js.undefined)
       
-      @scala.inline
-      def setProvisionedThroughputOverride(value: ProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughputOverride(value: ProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
+      inline def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
       
-      @scala.inline
-      def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+      inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1882,20 +1630,16 @@ object DocumentClient {
   }
   object CreateSetOptions {
     
-    @scala.inline
-    def apply(): CreateSetOptions = {
+    inline def apply(): CreateSetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateSetOptions]
     }
     
-    @scala.inline
-    implicit class CreateSetOptionsMutableBuilder[Self <: CreateSetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateSetOptions](x: Self) {
       
-      @scala.inline
-      def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
   
@@ -1953,80 +1697,56 @@ object DocumentClient {
   }
   object CreateTableInput {
     
-    @scala.inline
-    def apply(AttributeDefinitions: AttributeDefinitions, KeySchema: KeySchema, TableName: TableName): CreateTableInput = {
+    inline def apply(AttributeDefinitions: AttributeDefinitions, KeySchema: KeySchema, TableName: TableName): CreateTableInput = {
       val __obj = js.Dynamic.literal(AttributeDefinitions = AttributeDefinitions.asInstanceOf[js.Any], KeySchema = KeySchema.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateTableInput]
     }
     
-    @scala.inline
-    implicit class CreateTableInputMutableBuilder[Self <: CreateTableInput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateTableInput](x: Self) {
       
-      @scala.inline
-      def setAttributeDefinitions(value: AttributeDefinitions): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
+      inline def setAttributeDefinitions(value: AttributeDefinitions): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value :_*))
+      inline def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value :_*))
       
-      @scala.inline
-      def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
+      inline def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
+      inline def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexes(value: GlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexes(value: GlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
+      inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
       
-      @scala.inline
-      def setLocalSecondaryIndexes(value: LocalSecondaryIndexList): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setLocalSecondaryIndexes(value: LocalSecondaryIndexList): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
+      inline def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndex*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value :_*))
+      inline def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndex*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
+      inline def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
       
-      @scala.inline
-      def setSSESpecification(value: SSESpecification): Self = StObject.set(x, "SSESpecification", value.asInstanceOf[js.Any])
+      inline def setSSESpecification(value: SSESpecification): Self = StObject.set(x, "SSESpecification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSESpecificationUndefined: Self = StObject.set(x, "SSESpecification", js.undefined)
+      inline def setSSESpecificationUndefined: Self = StObject.set(x, "SSESpecification", js.undefined)
       
-      @scala.inline
-      def setStreamSpecification(value: StreamSpecification): Self = StObject.set(x, "StreamSpecification", value.asInstanceOf[js.Any])
+      inline def setStreamSpecification(value: StreamSpecification): Self = StObject.set(x, "StreamSpecification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamSpecificationUndefined: Self = StObject.set(x, "StreamSpecification", js.undefined)
+      inline def setStreamSpecificationUndefined: Self = StObject.set(x, "StreamSpecification", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     }
   }
   
@@ -2039,20 +1759,16 @@ object DocumentClient {
   }
   object CreateTableOutput {
     
-    @scala.inline
-    def apply(): CreateTableOutput = {
+    inline def apply(): CreateTableOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateTableOutput]
     }
     
-    @scala.inline
-    implicit class CreateTableOutputMutableBuilder[Self <: CreateTableOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateTableOutput](x: Self) {
       
-      @scala.inline
-      def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
+      inline def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
+      inline def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
     }
   }
   
@@ -2094,44 +1810,32 @@ object DocumentClient {
   }
   object Delete {
     
-    @scala.inline
-    def apply(Key: Key, TableName: TableName): Delete = {
+    inline def apply(Key: Key, TableName: TableName): Delete = {
       val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Delete]
     }
     
-    @scala.inline
-    implicit class DeleteMutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
+    extension [Self <: Delete](x: Self) {
       
-      @scala.inline
-      def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
+      inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
+      inline def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+      inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
+      inline def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnValuesOnConditionCheckFailure(value: ReturnValuesOnConditionCheckFailure): Self = StObject.set(x, "ReturnValuesOnConditionCheckFailure", value.asInstanceOf[js.Any])
+      inline def setReturnValuesOnConditionCheckFailure(value: ReturnValuesOnConditionCheckFailure): Self = StObject.set(x, "ReturnValuesOnConditionCheckFailure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnValuesOnConditionCheckFailureUndefined: Self = StObject.set(x, "ReturnValuesOnConditionCheckFailure", js.undefined)
+      inline def setReturnValuesOnConditionCheckFailureUndefined: Self = StObject.set(x, "ReturnValuesOnConditionCheckFailure", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2144,17 +1848,14 @@ object DocumentClient {
   }
   object DeleteBackupInput {
     
-    @scala.inline
-    def apply(BackupArn: BackupArn): DeleteBackupInput = {
+    inline def apply(BackupArn: BackupArn): DeleteBackupInput = {
       val __obj = js.Dynamic.literal(BackupArn = BackupArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteBackupInput]
     }
     
-    @scala.inline
-    implicit class DeleteBackupInputMutableBuilder[Self <: DeleteBackupInput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteBackupInput](x: Self) {
       
-      @scala.inline
-      def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
+      inline def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2167,20 +1868,16 @@ object DocumentClient {
   }
   object DeleteBackupOutput {
     
-    @scala.inline
-    def apply(): DeleteBackupOutput = {
+    inline def apply(): DeleteBackupOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeleteBackupOutput]
     }
     
-    @scala.inline
-    implicit class DeleteBackupOutputMutableBuilder[Self <: DeleteBackupOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteBackupOutput](x: Self) {
       
-      @scala.inline
-      def setBackupDescription(value: BackupDescription): Self = StObject.set(x, "BackupDescription", value.asInstanceOf[js.Any])
+      inline def setBackupDescription(value: BackupDescription): Self = StObject.set(x, "BackupDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupDescriptionUndefined: Self = StObject.set(x, "BackupDescription", js.undefined)
+      inline def setBackupDescriptionUndefined: Self = StObject.set(x, "BackupDescription", js.undefined)
     }
   }
   
@@ -2193,17 +1890,14 @@ object DocumentClient {
   }
   object DeleteGlobalSecondaryIndexAction {
     
-    @scala.inline
-    def apply(IndexName: IndexName): DeleteGlobalSecondaryIndexAction = {
+    inline def apply(IndexName: IndexName): DeleteGlobalSecondaryIndexAction = {
       val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteGlobalSecondaryIndexAction]
     }
     
-    @scala.inline
-    implicit class DeleteGlobalSecondaryIndexActionMutableBuilder[Self <: DeleteGlobalSecondaryIndexAction] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteGlobalSecondaryIndexAction](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2258,68 +1952,48 @@ object DocumentClient {
   }
   object DeleteItemInput {
     
-    @scala.inline
-    def apply(Key: Key, TableName: TableName): DeleteItemInput = {
+    inline def apply(Key: Key, TableName: TableName): DeleteItemInput = {
       val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteItemInput]
     }
     
-    @scala.inline
-    implicit class DeleteItemInputMutableBuilder[Self <: DeleteItemInput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteItemInput](x: Self) {
       
-      @scala.inline
-      def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
+      inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
+      inline def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
       
-      @scala.inline
-      def setConditionalOperator(value: ConditionalOperator): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
+      inline def setConditionalOperator(value: ConditionalOperator): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionalOperatorUndefined: Self = StObject.set(x, "ConditionalOperator", js.undefined)
+      inline def setConditionalOperatorUndefined: Self = StObject.set(x, "ConditionalOperator", js.undefined)
       
-      @scala.inline
-      def setExpected(value: ExpectedAttributeMap): Self = StObject.set(x, "Expected", value.asInstanceOf[js.Any])
+      inline def setExpected(value: ExpectedAttributeMap): Self = StObject.set(x, "Expected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedUndefined: Self = StObject.set(x, "Expected", js.undefined)
+      inline def setExpectedUndefined: Self = StObject.set(x, "Expected", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+      inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
+      inline def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+      inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
+      inline def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
+      inline def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
       
-      @scala.inline
-      def setReturnValues(value: ReturnValue): Self = StObject.set(x, "ReturnValues", value.asInstanceOf[js.Any])
+      inline def setReturnValues(value: ReturnValue): Self = StObject.set(x, "ReturnValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnValuesUndefined: Self = StObject.set(x, "ReturnValues", js.undefined)
+      inline def setReturnValuesUndefined: Self = StObject.set(x, "ReturnValues", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2342,32 +2016,24 @@ object DocumentClient {
   }
   object DeleteItemOutput {
     
-    @scala.inline
-    def apply(): DeleteItemOutput = {
+    inline def apply(): DeleteItemOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeleteItemOutput]
     }
     
-    @scala.inline
-    implicit class DeleteItemOutputMutableBuilder[Self <: DeleteItemOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteItemOutput](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: AttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: AttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       
-      @scala.inline
-      def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setItemCollectionMetrics(value: ItemCollectionMetrics): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
+      inline def setItemCollectionMetrics(value: ItemCollectionMetrics): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCollectionMetricsUndefined: Self = StObject.set(x, "ItemCollectionMetrics", js.undefined)
+      inline def setItemCollectionMetricsUndefined: Self = StObject.set(x, "ItemCollectionMetrics", js.undefined)
     }
   }
   
@@ -2380,17 +2046,14 @@ object DocumentClient {
   }
   object DeleteReplicaAction {
     
-    @scala.inline
-    def apply(RegionName: RegionName): DeleteReplicaAction = {
+    inline def apply(RegionName: RegionName): DeleteReplicaAction = {
       val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteReplicaAction]
     }
     
-    @scala.inline
-    implicit class DeleteReplicaActionMutableBuilder[Self <: DeleteReplicaAction] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteReplicaAction](x: Self) {
       
-      @scala.inline
-      def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+      inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2403,17 +2066,14 @@ object DocumentClient {
   }
   object DeleteReplicationGroupMemberAction {
     
-    @scala.inline
-    def apply(RegionName: RegionName): DeleteReplicationGroupMemberAction = {
+    inline def apply(RegionName: RegionName): DeleteReplicationGroupMemberAction = {
       val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteReplicationGroupMemberAction]
     }
     
-    @scala.inline
-    implicit class DeleteReplicationGroupMemberActionMutableBuilder[Self <: DeleteReplicationGroupMemberAction] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteReplicationGroupMemberAction](x: Self) {
       
-      @scala.inline
-      def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+      inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2426,17 +2086,14 @@ object DocumentClient {
   }
   object DeleteRequest {
     
-    @scala.inline
-    def apply(Key: Key): DeleteRequest = {
+    inline def apply(Key: Key): DeleteRequest = {
       val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteRequest]
     }
     
-    @scala.inline
-    implicit class DeleteRequestMutableBuilder[Self <: DeleteRequest] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteRequest](x: Self) {
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2449,17 +2106,14 @@ object DocumentClient {
   }
   object DeleteTableInput {
     
-    @scala.inline
-    def apply(TableName: TableName): DeleteTableInput = {
+    inline def apply(TableName: TableName): DeleteTableInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteTableInput]
     }
     
-    @scala.inline
-    implicit class DeleteTableInputMutableBuilder[Self <: DeleteTableInput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteTableInput](x: Self) {
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2472,20 +2126,16 @@ object DocumentClient {
   }
   object DeleteTableOutput {
     
-    @scala.inline
-    def apply(): DeleteTableOutput = {
+    inline def apply(): DeleteTableOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeleteTableOutput]
     }
     
-    @scala.inline
-    implicit class DeleteTableOutputMutableBuilder[Self <: DeleteTableOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteTableOutput](x: Self) {
       
-      @scala.inline
-      def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
+      inline def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
+      inline def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
     }
   }
   
@@ -2498,17 +2148,14 @@ object DocumentClient {
   }
   object DescribeBackupInput {
     
-    @scala.inline
-    def apply(BackupArn: BackupArn): DescribeBackupInput = {
+    inline def apply(BackupArn: BackupArn): DescribeBackupInput = {
       val __obj = js.Dynamic.literal(BackupArn = BackupArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeBackupInput]
     }
     
-    @scala.inline
-    implicit class DescribeBackupInputMutableBuilder[Self <: DescribeBackupInput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeBackupInput](x: Self) {
       
-      @scala.inline
-      def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
+      inline def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2521,20 +2168,16 @@ object DocumentClient {
   }
   object DescribeBackupOutput {
     
-    @scala.inline
-    def apply(): DescribeBackupOutput = {
+    inline def apply(): DescribeBackupOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DescribeBackupOutput]
     }
     
-    @scala.inline
-    implicit class DescribeBackupOutputMutableBuilder[Self <: DescribeBackupOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeBackupOutput](x: Self) {
       
-      @scala.inline
-      def setBackupDescription(value: BackupDescription): Self = StObject.set(x, "BackupDescription", value.asInstanceOf[js.Any])
+      inline def setBackupDescription(value: BackupDescription): Self = StObject.set(x, "BackupDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupDescriptionUndefined: Self = StObject.set(x, "BackupDescription", js.undefined)
+      inline def setBackupDescriptionUndefined: Self = StObject.set(x, "BackupDescription", js.undefined)
     }
   }
   
@@ -2547,17 +2190,14 @@ object DocumentClient {
   }
   object DescribeContinuousBackupsInput {
     
-    @scala.inline
-    def apply(TableName: TableName): DescribeContinuousBackupsInput = {
+    inline def apply(TableName: TableName): DescribeContinuousBackupsInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeContinuousBackupsInput]
     }
     
-    @scala.inline
-    implicit class DescribeContinuousBackupsInputMutableBuilder[Self <: DescribeContinuousBackupsInput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeContinuousBackupsInput](x: Self) {
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2570,20 +2210,16 @@ object DocumentClient {
   }
   object DescribeContinuousBackupsOutput {
     
-    @scala.inline
-    def apply(): DescribeContinuousBackupsOutput = {
+    inline def apply(): DescribeContinuousBackupsOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DescribeContinuousBackupsOutput]
     }
     
-    @scala.inline
-    implicit class DescribeContinuousBackupsOutputMutableBuilder[Self <: DescribeContinuousBackupsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeContinuousBackupsOutput](x: Self) {
       
-      @scala.inline
-      def setContinuousBackupsDescription(value: ContinuousBackupsDescription): Self = StObject.set(x, "ContinuousBackupsDescription", value.asInstanceOf[js.Any])
+      inline def setContinuousBackupsDescription(value: ContinuousBackupsDescription): Self = StObject.set(x, "ContinuousBackupsDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuousBackupsDescriptionUndefined: Self = StObject.set(x, "ContinuousBackupsDescription", js.undefined)
+      inline def setContinuousBackupsDescriptionUndefined: Self = StObject.set(x, "ContinuousBackupsDescription", js.undefined)
     }
   }
   
@@ -2601,23 +2237,18 @@ object DocumentClient {
   }
   object DescribeContributorInsightsInput {
     
-    @scala.inline
-    def apply(TableName: TableName): DescribeContributorInsightsInput = {
+    inline def apply(TableName: TableName): DescribeContributorInsightsInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeContributorInsightsInput]
     }
     
-    @scala.inline
-    implicit class DescribeContributorInsightsInputMutableBuilder[Self <: DescribeContributorInsightsInput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeContributorInsightsInput](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+      inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2655,53 +2286,38 @@ object DocumentClient {
   }
   object DescribeContributorInsightsOutput {
     
-    @scala.inline
-    def apply(): DescribeContributorInsightsOutput = {
+    inline def apply(): DescribeContributorInsightsOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DescribeContributorInsightsOutput]
     }
     
-    @scala.inline
-    implicit class DescribeContributorInsightsOutputMutableBuilder[Self <: DescribeContributorInsightsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeContributorInsightsOutput](x: Self) {
       
-      @scala.inline
-      def setContributorInsightsRuleList(value: ContributorInsightsRuleList): Self = StObject.set(x, "ContributorInsightsRuleList", value.asInstanceOf[js.Any])
+      inline def setContributorInsightsRuleList(value: ContributorInsightsRuleList): Self = StObject.set(x, "ContributorInsightsRuleList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContributorInsightsRuleListUndefined: Self = StObject.set(x, "ContributorInsightsRuleList", js.undefined)
+      inline def setContributorInsightsRuleListUndefined: Self = StObject.set(x, "ContributorInsightsRuleList", js.undefined)
       
-      @scala.inline
-      def setContributorInsightsRuleListVarargs(value: ContributorInsightsRule*): Self = StObject.set(x, "ContributorInsightsRuleList", js.Array(value :_*))
+      inline def setContributorInsightsRuleListVarargs(value: ContributorInsightsRule*): Self = StObject.set(x, "ContributorInsightsRuleList", js.Array(value :_*))
       
-      @scala.inline
-      def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
+      inline def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContributorInsightsStatusUndefined: Self = StObject.set(x, "ContributorInsightsStatus", js.undefined)
+      inline def setContributorInsightsStatusUndefined: Self = StObject.set(x, "ContributorInsightsStatus", js.undefined)
       
-      @scala.inline
-      def setFailureException(value: FailureException): Self = StObject.set(x, "FailureException", value.asInstanceOf[js.Any])
+      inline def setFailureException(value: FailureException): Self = StObject.set(x, "FailureException", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureExceptionUndefined: Self = StObject.set(x, "FailureException", js.undefined)
+      inline def setFailureExceptionUndefined: Self = StObject.set(x, "FailureException", js.undefined)
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+      inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      @scala.inline
-      def setLastUpdateDateTime(value: LastUpdateDateTime): Self = StObject.set(x, "LastUpdateDateTime", value.asInstanceOf[js.Any])
+      inline def setLastUpdateDateTime(value: LastUpdateDateTime): Self = StObject.set(x, "LastUpdateDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUpdateDateTimeUndefined: Self = StObject.set(x, "LastUpdateDateTime", js.undefined)
+      inline def setLastUpdateDateTimeUndefined: Self = StObject.set(x, "LastUpdateDateTime", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     }
   }
   
@@ -2716,20 +2332,16 @@ object DocumentClient {
   }
   object DescribeEndpointsResponse {
     
-    @scala.inline
-    def apply(Endpoints: Endpoints): DescribeEndpointsResponse = {
+    inline def apply(Endpoints: Endpoints): DescribeEndpointsResponse = {
       val __obj = js.Dynamic.literal(Endpoints = Endpoints.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeEndpointsResponse]
     }
     
-    @scala.inline
-    implicit class DescribeEndpointsResponseMutableBuilder[Self <: DescribeEndpointsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeEndpointsResponse](x: Self) {
       
-      @scala.inline
-      def setEndpoints(value: Endpoints): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
+      inline def setEndpoints(value: Endpoints): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
     }
   }
   
@@ -2742,17 +2354,14 @@ object DocumentClient {
   }
   object DescribeExportInput {
     
-    @scala.inline
-    def apply(ExportArn: ExportArn): DescribeExportInput = {
+    inline def apply(ExportArn: ExportArn): DescribeExportInput = {
       val __obj = js.Dynamic.literal(ExportArn = ExportArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeExportInput]
     }
     
-    @scala.inline
-    implicit class DescribeExportInputMutableBuilder[Self <: DescribeExportInput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeExportInput](x: Self) {
       
-      @scala.inline
-      def setExportArn(value: ExportArn): Self = StObject.set(x, "ExportArn", value.asInstanceOf[js.Any])
+      inline def setExportArn(value: ExportArn): Self = StObject.set(x, "ExportArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2765,20 +2374,16 @@ object DocumentClient {
   }
   object DescribeExportOutput {
     
-    @scala.inline
-    def apply(): DescribeExportOutput = {
+    inline def apply(): DescribeExportOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DescribeExportOutput]
     }
     
-    @scala.inline
-    implicit class DescribeExportOutputMutableBuilder[Self <: DescribeExportOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeExportOutput](x: Self) {
       
-      @scala.inline
-      def setExportDescription(value: ExportDescription): Self = StObject.set(x, "ExportDescription", value.asInstanceOf[js.Any])
+      inline def setExportDescription(value: ExportDescription): Self = StObject.set(x, "ExportDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportDescriptionUndefined: Self = StObject.set(x, "ExportDescription", js.undefined)
+      inline def setExportDescriptionUndefined: Self = StObject.set(x, "ExportDescription", js.undefined)
     }
   }
   
@@ -2791,17 +2396,14 @@ object DocumentClient {
   }
   object DescribeGlobalTableInput {
     
-    @scala.inline
-    def apply(GlobalTableName: TableName): DescribeGlobalTableInput = {
+    inline def apply(GlobalTableName: TableName): DescribeGlobalTableInput = {
       val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeGlobalTableInput]
     }
     
-    @scala.inline
-    implicit class DescribeGlobalTableInputMutableBuilder[Self <: DescribeGlobalTableInput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeGlobalTableInput](x: Self) {
       
-      @scala.inline
-      def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
+      inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2814,20 +2416,16 @@ object DocumentClient {
   }
   object DescribeGlobalTableOutput {
     
-    @scala.inline
-    def apply(): DescribeGlobalTableOutput = {
+    inline def apply(): DescribeGlobalTableOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DescribeGlobalTableOutput]
     }
     
-    @scala.inline
-    implicit class DescribeGlobalTableOutputMutableBuilder[Self <: DescribeGlobalTableOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeGlobalTableOutput](x: Self) {
       
-      @scala.inline
-      def setGlobalTableDescription(value: GlobalTableDescription): Self = StObject.set(x, "GlobalTableDescription", value.asInstanceOf[js.Any])
+      inline def setGlobalTableDescription(value: GlobalTableDescription): Self = StObject.set(x, "GlobalTableDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableDescriptionUndefined: Self = StObject.set(x, "GlobalTableDescription", js.undefined)
+      inline def setGlobalTableDescriptionUndefined: Self = StObject.set(x, "GlobalTableDescription", js.undefined)
     }
   }
   
@@ -2840,17 +2438,14 @@ object DocumentClient {
   }
   object DescribeGlobalTableSettingsInput {
     
-    @scala.inline
-    def apply(GlobalTableName: TableName): DescribeGlobalTableSettingsInput = {
+    inline def apply(GlobalTableName: TableName): DescribeGlobalTableSettingsInput = {
       val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeGlobalTableSettingsInput]
     }
     
-    @scala.inline
-    implicit class DescribeGlobalTableSettingsInputMutableBuilder[Self <: DescribeGlobalTableSettingsInput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeGlobalTableSettingsInput](x: Self) {
       
-      @scala.inline
-      def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
+      inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2868,29 +2463,22 @@ object DocumentClient {
   }
   object DescribeGlobalTableSettingsOutput {
     
-    @scala.inline
-    def apply(): DescribeGlobalTableSettingsOutput = {
+    inline def apply(): DescribeGlobalTableSettingsOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DescribeGlobalTableSettingsOutput]
     }
     
-    @scala.inline
-    implicit class DescribeGlobalTableSettingsOutputMutableBuilder[Self <: DescribeGlobalTableSettingsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeGlobalTableSettingsOutput](x: Self) {
       
-      @scala.inline
-      def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
+      inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
+      inline def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
       
-      @scala.inline
-      def setReplicaSettings(value: ReplicaSettingsDescriptionList): Self = StObject.set(x, "ReplicaSettings", value.asInstanceOf[js.Any])
+      inline def setReplicaSettings(value: ReplicaSettingsDescriptionList): Self = StObject.set(x, "ReplicaSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaSettingsUndefined: Self = StObject.set(x, "ReplicaSettings", js.undefined)
+      inline def setReplicaSettingsUndefined: Self = StObject.set(x, "ReplicaSettings", js.undefined)
       
-      @scala.inline
-      def setReplicaSettingsVarargs(value: ReplicaSettingsDescription*): Self = StObject.set(x, "ReplicaSettings", js.Array(value :_*))
+      inline def setReplicaSettingsVarargs(value: ReplicaSettingsDescription*): Self = StObject.set(x, "ReplicaSettings", js.Array(value :_*))
     }
   }
   
@@ -2920,38 +2508,28 @@ object DocumentClient {
   }
   object DescribeLimitsOutput {
     
-    @scala.inline
-    def apply(): DescribeLimitsOutput = {
+    inline def apply(): DescribeLimitsOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DescribeLimitsOutput]
     }
     
-    @scala.inline
-    implicit class DescribeLimitsOutputMutableBuilder[Self <: DescribeLimitsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeLimitsOutput](x: Self) {
       
-      @scala.inline
-      def setAccountMaxReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "AccountMaxReadCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setAccountMaxReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "AccountMaxReadCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountMaxReadCapacityUnitsUndefined: Self = StObject.set(x, "AccountMaxReadCapacityUnits", js.undefined)
+      inline def setAccountMaxReadCapacityUnitsUndefined: Self = StObject.set(x, "AccountMaxReadCapacityUnits", js.undefined)
       
-      @scala.inline
-      def setAccountMaxWriteCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "AccountMaxWriteCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setAccountMaxWriteCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "AccountMaxWriteCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountMaxWriteCapacityUnitsUndefined: Self = StObject.set(x, "AccountMaxWriteCapacityUnits", js.undefined)
+      inline def setAccountMaxWriteCapacityUnitsUndefined: Self = StObject.set(x, "AccountMaxWriteCapacityUnits", js.undefined)
       
-      @scala.inline
-      def setTableMaxReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "TableMaxReadCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setTableMaxReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "TableMaxReadCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableMaxReadCapacityUnitsUndefined: Self = StObject.set(x, "TableMaxReadCapacityUnits", js.undefined)
+      inline def setTableMaxReadCapacityUnitsUndefined: Self = StObject.set(x, "TableMaxReadCapacityUnits", js.undefined)
       
-      @scala.inline
-      def setTableMaxWriteCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "TableMaxWriteCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setTableMaxWriteCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "TableMaxWriteCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableMaxWriteCapacityUnitsUndefined: Self = StObject.set(x, "TableMaxWriteCapacityUnits", js.undefined)
+      inline def setTableMaxWriteCapacityUnitsUndefined: Self = StObject.set(x, "TableMaxWriteCapacityUnits", js.undefined)
     }
   }
   
@@ -2964,17 +2542,14 @@ object DocumentClient {
   }
   object DescribeTableInput {
     
-    @scala.inline
-    def apply(TableName: TableName): DescribeTableInput = {
+    inline def apply(TableName: TableName): DescribeTableInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeTableInput]
     }
     
-    @scala.inline
-    implicit class DescribeTableInputMutableBuilder[Self <: DescribeTableInput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeTableInput](x: Self) {
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2987,20 +2562,16 @@ object DocumentClient {
   }
   object DescribeTableOutput {
     
-    @scala.inline
-    def apply(): DescribeTableOutput = {
+    inline def apply(): DescribeTableOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DescribeTableOutput]
     }
     
-    @scala.inline
-    implicit class DescribeTableOutputMutableBuilder[Self <: DescribeTableOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeTableOutput](x: Self) {
       
-      @scala.inline
-      def setTable(value: TableDescription): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
+      inline def setTable(value: TableDescription): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
     }
   }
   
@@ -3013,17 +2584,14 @@ object DocumentClient {
   }
   object DescribeTableReplicaAutoScalingInput {
     
-    @scala.inline
-    def apply(TableName: TableName): DescribeTableReplicaAutoScalingInput = {
+    inline def apply(TableName: TableName): DescribeTableReplicaAutoScalingInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeTableReplicaAutoScalingInput]
     }
     
-    @scala.inline
-    implicit class DescribeTableReplicaAutoScalingInputMutableBuilder[Self <: DescribeTableReplicaAutoScalingInput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeTableReplicaAutoScalingInput](x: Self) {
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -3036,20 +2604,16 @@ object DocumentClient {
   }
   object DescribeTableReplicaAutoScalingOutput {
     
-    @scala.inline
-    def apply(): DescribeTableReplicaAutoScalingOutput = {
+    inline def apply(): DescribeTableReplicaAutoScalingOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DescribeTableReplicaAutoScalingOutput]
     }
     
-    @scala.inline
-    implicit class DescribeTableReplicaAutoScalingOutputMutableBuilder[Self <: DescribeTableReplicaAutoScalingOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeTableReplicaAutoScalingOutput](x: Self) {
       
-      @scala.inline
-      def setTableAutoScalingDescription(value: TableAutoScalingDescription): Self = StObject.set(x, "TableAutoScalingDescription", value.asInstanceOf[js.Any])
+      inline def setTableAutoScalingDescription(value: TableAutoScalingDescription): Self = StObject.set(x, "TableAutoScalingDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableAutoScalingDescriptionUndefined: Self = StObject.set(x, "TableAutoScalingDescription", js.undefined)
+      inline def setTableAutoScalingDescriptionUndefined: Self = StObject.set(x, "TableAutoScalingDescription", js.undefined)
     }
   }
   
@@ -3062,17 +2626,14 @@ object DocumentClient {
   }
   object DescribeTimeToLiveInput {
     
-    @scala.inline
-    def apply(TableName: TableName): DescribeTimeToLiveInput = {
+    inline def apply(TableName: TableName): DescribeTimeToLiveInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeTimeToLiveInput]
     }
     
-    @scala.inline
-    implicit class DescribeTimeToLiveInputMutableBuilder[Self <: DescribeTimeToLiveInput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeTimeToLiveInput](x: Self) {
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -3085,20 +2646,16 @@ object DocumentClient {
   }
   object DescribeTimeToLiveOutput {
     
-    @scala.inline
-    def apply(): DescribeTimeToLiveOutput = {
+    inline def apply(): DescribeTimeToLiveOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DescribeTimeToLiveOutput]
     }
     
-    @scala.inline
-    implicit class DescribeTimeToLiveOutputMutableBuilder[Self <: DescribeTimeToLiveOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeTimeToLiveOutput](x: Self) {
       
-      @scala.inline
-      def setTimeToLiveDescription(value: TimeToLiveDescription): Self = StObject.set(x, "TimeToLiveDescription", value.asInstanceOf[js.Any])
+      inline def setTimeToLiveDescription(value: TimeToLiveDescription): Self = StObject.set(x, "TimeToLiveDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeToLiveDescriptionUndefined: Self = StObject.set(x, "TimeToLiveDescription", js.undefined)
+      inline def setTimeToLiveDescriptionUndefined: Self = StObject.set(x, "TimeToLiveDescription", js.undefined)
     }
   }
   
@@ -3118,26 +2675,20 @@ object DocumentClient {
   }
   object DocumentClientOptions {
     
-    @scala.inline
-    def apply(): DocumentClientOptions = {
+    inline def apply(): DocumentClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DocumentClientOptions]
     }
     
-    @scala.inline
-    implicit class DocumentClientOptionsMutableBuilder[Self <: DocumentClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentClientOptions](x: Self) {
       
-      @scala.inline
-      def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setService(value: ^): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: ^): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+      inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     }
   }
   
@@ -3151,22 +2702,19 @@ object DocumentClient {
   trait DynamoDbSet extends StObject
   object DynamoDbSet {
     
-    @scala.inline
-    def BinarySet(values: js.Array[binaryType]): typings.awsSdk.documentClientMod.DocumentClient.BinarySet = {
+    inline def BinarySet(values: js.Array[binaryType]): typings.awsSdk.documentClientMod.DocumentClient.BinarySet = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Binary")
       __obj.asInstanceOf[typings.awsSdk.documentClientMod.DocumentClient.BinarySet]
     }
     
-    @scala.inline
-    def NumberSet(values: js.Array[scala.Double]): typings.awsSdk.documentClientMod.DocumentClient.NumberSet = {
+    inline def NumberSet(values: js.Array[scala.Double]): typings.awsSdk.documentClientMod.DocumentClient.NumberSet = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Number")
       __obj.asInstanceOf[typings.awsSdk.documentClientMod.DocumentClient.NumberSet]
     }
     
-    @scala.inline
-    def StringSet(values: js.Array[java.lang.String]): typings.awsSdk.documentClientMod.DocumentClient.StringSet = {
+    inline def StringSet(values: js.Array[java.lang.String]): typings.awsSdk.documentClientMod.DocumentClient.StringSet = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("String")
       __obj.asInstanceOf[typings.awsSdk.documentClientMod.DocumentClient.StringSet]
@@ -3187,20 +2735,16 @@ object DocumentClient {
   }
   object Endpoint {
     
-    @scala.inline
-    def apply(Address: typings.awsSdk.documentClientMod.DocumentClient.String, CachePeriodInMinutes: Long): Endpoint = {
+    inline def apply(Address: typings.awsSdk.documentClientMod.DocumentClient.String, CachePeriodInMinutes: Long): Endpoint = {
       val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], CachePeriodInMinutes = CachePeriodInMinutes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Endpoint]
     }
     
-    @scala.inline
-    implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
+    extension [Self <: Endpoint](x: Self) {
       
-      @scala.inline
-      def setAddress(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCachePeriodInMinutes(value: Long): Self = StObject.set(x, "CachePeriodInMinutes", value.asInstanceOf[js.Any])
+      inline def setCachePeriodInMinutes(value: Long): Self = StObject.set(x, "CachePeriodInMinutes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -3236,41 +2780,30 @@ object DocumentClient {
   }
   object ExpectedAttributeValue {
     
-    @scala.inline
-    def apply(): ExpectedAttributeValue = {
+    inline def apply(): ExpectedAttributeValue = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpectedAttributeValue]
     }
     
-    @scala.inline
-    implicit class ExpectedAttributeValueMutableBuilder[Self <: ExpectedAttributeValue] (val x: Self) extends AnyVal {
+    extension [Self <: ExpectedAttributeValue](x: Self) {
       
-      @scala.inline
-      def setAttributeValueList(value: AttributeValueList): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
+      inline def setAttributeValueList(value: AttributeValueList): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
+      inline def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
       
-      @scala.inline
-      def setAttributeValueListVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
+      inline def setAttributeValueListVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
       
-      @scala.inline
-      def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
+      inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparisonOperatorUndefined: Self = StObject.set(x, "ComparisonOperator", js.undefined)
+      inline def setComparisonOperatorUndefined: Self = StObject.set(x, "ComparisonOperator", js.undefined)
       
-      @scala.inline
-      def setExists(value: BooleanObject): Self = StObject.set(x, "Exists", value.asInstanceOf[js.Any])
+      inline def setExists(value: BooleanObject): Self = StObject.set(x, "Exists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExistsUndefined: Self = StObject.set(x, "Exists", js.undefined)
+      inline def setExistsUndefined: Self = StObject.set(x, "Exists", js.undefined)
       
-      @scala.inline
-      def setValue(value: AttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: AttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
     }
   }
   
@@ -3375,128 +2908,88 @@ object DocumentClient {
   }
   object ExportDescription {
     
-    @scala.inline
-    def apply(): ExportDescription = {
+    inline def apply(): ExportDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExportDescription]
     }
     
-    @scala.inline
-    implicit class ExportDescriptionMutableBuilder[Self <: ExportDescription] (val x: Self) extends AnyVal {
+    extension [Self <: ExportDescription](x: Self) {
       
-      @scala.inline
-      def setBilledSizeBytes(value: BilledSizeBytes): Self = StObject.set(x, "BilledSizeBytes", value.asInstanceOf[js.Any])
+      inline def setBilledSizeBytes(value: BilledSizeBytes): Self = StObject.set(x, "BilledSizeBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBilledSizeBytesUndefined: Self = StObject.set(x, "BilledSizeBytes", js.undefined)
+      inline def setBilledSizeBytesUndefined: Self = StObject.set(x, "BilledSizeBytes", js.undefined)
       
-      @scala.inline
-      def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+      inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+      inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
       
-      @scala.inline
-      def setEndTime(value: ExportEndTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: ExportEndTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
       
-      @scala.inline
-      def setExportArn(value: ExportArn): Self = StObject.set(x, "ExportArn", value.asInstanceOf[js.Any])
+      inline def setExportArn(value: ExportArn): Self = StObject.set(x, "ExportArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportArnUndefined: Self = StObject.set(x, "ExportArn", js.undefined)
+      inline def setExportArnUndefined: Self = StObject.set(x, "ExportArn", js.undefined)
       
-      @scala.inline
-      def setExportFormat(value: ExportFormat): Self = StObject.set(x, "ExportFormat", value.asInstanceOf[js.Any])
+      inline def setExportFormat(value: ExportFormat): Self = StObject.set(x, "ExportFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportFormatUndefined: Self = StObject.set(x, "ExportFormat", js.undefined)
+      inline def setExportFormatUndefined: Self = StObject.set(x, "ExportFormat", js.undefined)
       
-      @scala.inline
-      def setExportManifest(value: ExportManifest): Self = StObject.set(x, "ExportManifest", value.asInstanceOf[js.Any])
+      inline def setExportManifest(value: ExportManifest): Self = StObject.set(x, "ExportManifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportManifestUndefined: Self = StObject.set(x, "ExportManifest", js.undefined)
+      inline def setExportManifestUndefined: Self = StObject.set(x, "ExportManifest", js.undefined)
       
-      @scala.inline
-      def setExportStatus(value: ExportStatus): Self = StObject.set(x, "ExportStatus", value.asInstanceOf[js.Any])
+      inline def setExportStatus(value: ExportStatus): Self = StObject.set(x, "ExportStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportStatusUndefined: Self = StObject.set(x, "ExportStatus", js.undefined)
+      inline def setExportStatusUndefined: Self = StObject.set(x, "ExportStatus", js.undefined)
       
-      @scala.inline
-      def setExportTime(value: ExportTime): Self = StObject.set(x, "ExportTime", value.asInstanceOf[js.Any])
+      inline def setExportTime(value: ExportTime): Self = StObject.set(x, "ExportTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportTimeUndefined: Self = StObject.set(x, "ExportTime", js.undefined)
+      inline def setExportTimeUndefined: Self = StObject.set(x, "ExportTime", js.undefined)
       
-      @scala.inline
-      def setFailureCode(value: FailureCode): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
+      inline def setFailureCode(value: FailureCode): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
+      inline def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
       
-      @scala.inline
-      def setFailureMessage(value: FailureMessage): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
+      inline def setFailureMessage(value: FailureMessage): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureMessageUndefined: Self = StObject.set(x, "FailureMessage", js.undefined)
+      inline def setFailureMessageUndefined: Self = StObject.set(x, "FailureMessage", js.undefined)
       
-      @scala.inline
-      def setItemCount(value: ItemCount): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
+      inline def setItemCount(value: ItemCount): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
+      inline def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
       
-      @scala.inline
-      def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+      inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3BucketOwner(value: S3BucketOwner): Self = StObject.set(x, "S3BucketOwner", value.asInstanceOf[js.Any])
+      inline def setS3BucketOwner(value: S3BucketOwner): Self = StObject.set(x, "S3BucketOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3BucketOwnerUndefined: Self = StObject.set(x, "S3BucketOwner", js.undefined)
+      inline def setS3BucketOwnerUndefined: Self = StObject.set(x, "S3BucketOwner", js.undefined)
       
-      @scala.inline
-      def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
+      inline def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
       
-      @scala.inline
-      def setS3Prefix(value: S3Prefix): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
+      inline def setS3Prefix(value: S3Prefix): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
+      inline def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
       
-      @scala.inline
-      def setS3SseAlgorithm(value: S3SseAlgorithm): Self = StObject.set(x, "S3SseAlgorithm", value.asInstanceOf[js.Any])
+      inline def setS3SseAlgorithm(value: S3SseAlgorithm): Self = StObject.set(x, "S3SseAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3SseAlgorithmUndefined: Self = StObject.set(x, "S3SseAlgorithm", js.undefined)
+      inline def setS3SseAlgorithmUndefined: Self = StObject.set(x, "S3SseAlgorithm", js.undefined)
       
-      @scala.inline
-      def setS3SseKmsKeyId(value: S3SseKmsKeyId): Self = StObject.set(x, "S3SseKmsKeyId", value.asInstanceOf[js.Any])
+      inline def setS3SseKmsKeyId(value: S3SseKmsKeyId): Self = StObject.set(x, "S3SseKmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3SseKmsKeyIdUndefined: Self = StObject.set(x, "S3SseKmsKeyId", js.undefined)
+      inline def setS3SseKmsKeyIdUndefined: Self = StObject.set(x, "S3SseKmsKeyId", js.undefined)
       
-      @scala.inline
-      def setStartTime(value: ExportStartTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: ExportStartTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
       
-      @scala.inline
-      def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
+      inline def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
+      inline def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
       
-      @scala.inline
-      def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
+      inline def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableIdUndefined: Self = StObject.set(x, "TableId", js.undefined)
+      inline def setTableIdUndefined: Self = StObject.set(x, "TableId", js.undefined)
     }
   }
   
@@ -3539,26 +3032,20 @@ object DocumentClient {
   }
   object ExportSummary {
     
-    @scala.inline
-    def apply(): ExportSummary = {
+    inline def apply(): ExportSummary = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExportSummary]
     }
     
-    @scala.inline
-    implicit class ExportSummaryMutableBuilder[Self <: ExportSummary] (val x: Self) extends AnyVal {
+    extension [Self <: ExportSummary](x: Self) {
       
-      @scala.inline
-      def setExportArn(value: ExportArn): Self = StObject.set(x, "ExportArn", value.asInstanceOf[js.Any])
+      inline def setExportArn(value: ExportArn): Self = StObject.set(x, "ExportArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportArnUndefined: Self = StObject.set(x, "ExportArn", js.undefined)
+      inline def setExportArnUndefined: Self = StObject.set(x, "ExportArn", js.undefined)
       
-      @scala.inline
-      def setExportStatus(value: ExportStatus): Self = StObject.set(x, "ExportStatus", value.asInstanceOf[js.Any])
+      inline def setExportStatus(value: ExportStatus): Self = StObject.set(x, "ExportStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportStatusUndefined: Self = StObject.set(x, "ExportStatus", js.undefined)
+      inline def setExportStatusUndefined: Self = StObject.set(x, "ExportStatus", js.undefined)
     }
   }
   
@@ -3611,62 +3098,44 @@ object DocumentClient {
   }
   object ExportTableToPointInTimeInput {
     
-    @scala.inline
-    def apply(S3Bucket: S3Bucket, TableArn: TableArn): ExportTableToPointInTimeInput = {
+    inline def apply(S3Bucket: S3Bucket, TableArn: TableArn): ExportTableToPointInTimeInput = {
       val __obj = js.Dynamic.literal(S3Bucket = S3Bucket.asInstanceOf[js.Any], TableArn = TableArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExportTableToPointInTimeInput]
     }
     
-    @scala.inline
-    implicit class ExportTableToPointInTimeInputMutableBuilder[Self <: ExportTableToPointInTimeInput] (val x: Self) extends AnyVal {
+    extension [Self <: ExportTableToPointInTimeInput](x: Self) {
       
-      @scala.inline
-      def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+      inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+      inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
       
-      @scala.inline
-      def setExportFormat(value: ExportFormat): Self = StObject.set(x, "ExportFormat", value.asInstanceOf[js.Any])
+      inline def setExportFormat(value: ExportFormat): Self = StObject.set(x, "ExportFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportFormatUndefined: Self = StObject.set(x, "ExportFormat", js.undefined)
+      inline def setExportFormatUndefined: Self = StObject.set(x, "ExportFormat", js.undefined)
       
-      @scala.inline
-      def setExportTime(value: ExportTime): Self = StObject.set(x, "ExportTime", value.asInstanceOf[js.Any])
+      inline def setExportTime(value: ExportTime): Self = StObject.set(x, "ExportTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportTimeUndefined: Self = StObject.set(x, "ExportTime", js.undefined)
+      inline def setExportTimeUndefined: Self = StObject.set(x, "ExportTime", js.undefined)
       
-      @scala.inline
-      def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+      inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3BucketOwner(value: S3BucketOwner): Self = StObject.set(x, "S3BucketOwner", value.asInstanceOf[js.Any])
+      inline def setS3BucketOwner(value: S3BucketOwner): Self = StObject.set(x, "S3BucketOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3BucketOwnerUndefined: Self = StObject.set(x, "S3BucketOwner", js.undefined)
+      inline def setS3BucketOwnerUndefined: Self = StObject.set(x, "S3BucketOwner", js.undefined)
       
-      @scala.inline
-      def setS3Prefix(value: S3Prefix): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
+      inline def setS3Prefix(value: S3Prefix): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
+      inline def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
       
-      @scala.inline
-      def setS3SseAlgorithm(value: S3SseAlgorithm): Self = StObject.set(x, "S3SseAlgorithm", value.asInstanceOf[js.Any])
+      inline def setS3SseAlgorithm(value: S3SseAlgorithm): Self = StObject.set(x, "S3SseAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3SseAlgorithmUndefined: Self = StObject.set(x, "S3SseAlgorithm", js.undefined)
+      inline def setS3SseAlgorithmUndefined: Self = StObject.set(x, "S3SseAlgorithm", js.undefined)
       
-      @scala.inline
-      def setS3SseKmsKeyId(value: S3SseKmsKeyId): Self = StObject.set(x, "S3SseKmsKeyId", value.asInstanceOf[js.Any])
+      inline def setS3SseKmsKeyId(value: S3SseKmsKeyId): Self = StObject.set(x, "S3SseKmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3SseKmsKeyIdUndefined: Self = StObject.set(x, "S3SseKmsKeyId", js.undefined)
+      inline def setS3SseKmsKeyIdUndefined: Self = StObject.set(x, "S3SseKmsKeyId", js.undefined)
       
-      @scala.inline
-      def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
+      inline def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -3679,20 +3148,16 @@ object DocumentClient {
   }
   object ExportTableToPointInTimeOutput {
     
-    @scala.inline
-    def apply(): ExportTableToPointInTimeOutput = {
+    inline def apply(): ExportTableToPointInTimeOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExportTableToPointInTimeOutput]
     }
     
-    @scala.inline
-    implicit class ExportTableToPointInTimeOutputMutableBuilder[Self <: ExportTableToPointInTimeOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ExportTableToPointInTimeOutput](x: Self) {
       
-      @scala.inline
-      def setExportDescription(value: ExportDescription): Self = StObject.set(x, "ExportDescription", value.asInstanceOf[js.Any])
+      inline def setExportDescription(value: ExportDescription): Self = StObject.set(x, "ExportDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportDescriptionUndefined: Self = StObject.set(x, "ExportDescription", js.undefined)
+      inline def setExportDescriptionUndefined: Self = StObject.set(x, "ExportDescription", js.undefined)
     }
   }
   
@@ -3722,26 +3187,20 @@ object DocumentClient {
   }
   object FailureException {
     
-    @scala.inline
-    def apply(): FailureException = {
+    inline def apply(): FailureException = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FailureException]
     }
     
-    @scala.inline
-    implicit class FailureExceptionMutableBuilder[Self <: FailureException] (val x: Self) extends AnyVal {
+    extension [Self <: FailureException](x: Self) {
       
-      @scala.inline
-      def setExceptionDescription(value: ExceptionDescription): Self = StObject.set(x, "ExceptionDescription", value.asInstanceOf[js.Any])
+      inline def setExceptionDescription(value: ExceptionDescription): Self = StObject.set(x, "ExceptionDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExceptionDescriptionUndefined: Self = StObject.set(x, "ExceptionDescription", js.undefined)
+      inline def setExceptionDescriptionUndefined: Self = StObject.set(x, "ExceptionDescription", js.undefined)
       
-      @scala.inline
-      def setExceptionName(value: ExceptionName): Self = StObject.set(x, "ExceptionName", value.asInstanceOf[js.Any])
+      inline def setExceptionName(value: ExceptionName): Self = StObject.set(x, "ExceptionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExceptionNameUndefined: Self = StObject.set(x, "ExceptionName", js.undefined)
+      inline def setExceptionNameUndefined: Self = StObject.set(x, "ExceptionName", js.undefined)
     }
   }
   
@@ -3773,32 +3232,24 @@ object DocumentClient {
   }
   object Get {
     
-    @scala.inline
-    def apply(Key: Key, TableName: TableName): Get = {
+    inline def apply(Key: Key, TableName: TableName): Get = {
       val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Get]
     }
     
-    @scala.inline
-    implicit class GetMutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
+    extension [Self <: Get](x: Self) {
       
-      @scala.inline
-      def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+      inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
+      inline def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
+      inline def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -3838,53 +3289,38 @@ object DocumentClient {
   }
   object GetItemInput {
     
-    @scala.inline
-    def apply(Key: Key, TableName: TableName): GetItemInput = {
+    inline def apply(Key: Key, TableName: TableName): GetItemInput = {
       val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetItemInput]
     }
     
-    @scala.inline
-    implicit class GetItemInputMutableBuilder[Self <: GetItemInput] (val x: Self) extends AnyVal {
+    extension [Self <: GetItemInput](x: Self) {
       
-      @scala.inline
-      def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
+      inline def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
+      inline def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
       
-      @scala.inline
-      def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
+      inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
       
-      @scala.inline
-      def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
+      inline def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
+      inline def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+      inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
+      inline def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
+      inline def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
       
-      @scala.inline
-      def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+      inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -3902,26 +3338,20 @@ object DocumentClient {
   }
   object GetItemOutput {
     
-    @scala.inline
-    def apply(): GetItemOutput = {
+    inline def apply(): GetItemOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetItemOutput]
     }
     
-    @scala.inline
-    implicit class GetItemOutputMutableBuilder[Self <: GetItemOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetItemOutput](x: Self) {
       
-      @scala.inline
-      def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setItem(value: AttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: AttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
     }
   }
   
@@ -3949,32 +3379,24 @@ object DocumentClient {
   }
   object GlobalSecondaryIndex {
     
-    @scala.inline
-    def apply(IndexName: IndexName, KeySchema: KeySchema, Projection: Projection): GlobalSecondaryIndex = {
+    inline def apply(IndexName: IndexName, KeySchema: KeySchema, Projection: Projection): GlobalSecondaryIndex = {
       val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any], KeySchema = KeySchema.asInstanceOf[js.Any], Projection = Projection.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobalSecondaryIndex]
     }
     
-    @scala.inline
-    implicit class GlobalSecondaryIndexMutableBuilder[Self <: GlobalSecondaryIndex] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalSecondaryIndex](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
       
-      @scala.inline
-      def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
+      inline def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
     }
   }
   
@@ -3989,26 +3411,20 @@ object DocumentClient {
   }
   object GlobalSecondaryIndexAutoScalingUpdate {
     
-    @scala.inline
-    def apply(): GlobalSecondaryIndexAutoScalingUpdate = {
+    inline def apply(): GlobalSecondaryIndexAutoScalingUpdate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalSecondaryIndexAutoScalingUpdate]
     }
     
-    @scala.inline
-    implicit class GlobalSecondaryIndexAutoScalingUpdateMutableBuilder[Self <: GlobalSecondaryIndexAutoScalingUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalSecondaryIndexAutoScalingUpdate](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+      inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      @scala.inline
-      def setProvisionedWriteCapacityAutoScalingUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingUpdate", value.asInstanceOf[js.Any])
+      inline def setProvisionedWriteCapacityAutoScalingUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedWriteCapacityAutoScalingUpdateUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingUpdate", js.undefined)
+      inline def setProvisionedWriteCapacityAutoScalingUpdateUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingUpdate", js.undefined)
     }
   }
   
@@ -4063,71 +3479,50 @@ object DocumentClient {
   }
   object GlobalSecondaryIndexDescription {
     
-    @scala.inline
-    def apply(): GlobalSecondaryIndexDescription = {
+    inline def apply(): GlobalSecondaryIndexDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalSecondaryIndexDescription]
     }
     
-    @scala.inline
-    implicit class GlobalSecondaryIndexDescriptionMutableBuilder[Self <: GlobalSecondaryIndexDescription] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalSecondaryIndexDescription](x: Self) {
       
-      @scala.inline
-      def setBackfilling(value: Backfilling): Self = StObject.set(x, "Backfilling", value.asInstanceOf[js.Any])
+      inline def setBackfilling(value: Backfilling): Self = StObject.set(x, "Backfilling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackfillingUndefined: Self = StObject.set(x, "Backfilling", js.undefined)
+      inline def setBackfillingUndefined: Self = StObject.set(x, "Backfilling", js.undefined)
       
-      @scala.inline
-      def setIndexArn(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "IndexArn", value.asInstanceOf[js.Any])
+      inline def setIndexArn(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "IndexArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexArnUndefined: Self = StObject.set(x, "IndexArn", js.undefined)
+      inline def setIndexArnUndefined: Self = StObject.set(x, "IndexArn", js.undefined)
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+      inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      @scala.inline
-      def setIndexSizeBytes(value: Long): Self = StObject.set(x, "IndexSizeBytes", value.asInstanceOf[js.Any])
+      inline def setIndexSizeBytes(value: Long): Self = StObject.set(x, "IndexSizeBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexSizeBytesUndefined: Self = StObject.set(x, "IndexSizeBytes", js.undefined)
+      inline def setIndexSizeBytesUndefined: Self = StObject.set(x, "IndexSizeBytes", js.undefined)
       
-      @scala.inline
-      def setIndexStatus(value: IndexStatus): Self = StObject.set(x, "IndexStatus", value.asInstanceOf[js.Any])
+      inline def setIndexStatus(value: IndexStatus): Self = StObject.set(x, "IndexStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexStatusUndefined: Self = StObject.set(x, "IndexStatus", js.undefined)
+      inline def setIndexStatusUndefined: Self = StObject.set(x, "IndexStatus", js.undefined)
       
-      @scala.inline
-      def setItemCount(value: Long): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
+      inline def setItemCount(value: Long): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
+      inline def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
       
-      @scala.inline
-      def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
+      inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
       
-      @scala.inline
-      def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
       
-      @scala.inline
-      def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
+      inline def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
       
-      @scala.inline
-      def setProvisionedThroughput(value: ProvisionedThroughputDescription): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughput(value: ProvisionedThroughputDescription): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
+      inline def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
     }
   }
   
@@ -4157,41 +3552,30 @@ object DocumentClient {
   }
   object GlobalSecondaryIndexInfo {
     
-    @scala.inline
-    def apply(): GlobalSecondaryIndexInfo = {
+    inline def apply(): GlobalSecondaryIndexInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalSecondaryIndexInfo]
     }
     
-    @scala.inline
-    implicit class GlobalSecondaryIndexInfoMutableBuilder[Self <: GlobalSecondaryIndexInfo] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalSecondaryIndexInfo](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+      inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      @scala.inline
-      def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
+      inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
       
-      @scala.inline
-      def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
       
-      @scala.inline
-      def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
+      inline def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
       
-      @scala.inline
-      def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
+      inline def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
     }
   }
   
@@ -4216,32 +3600,24 @@ object DocumentClient {
   }
   object GlobalSecondaryIndexUpdate {
     
-    @scala.inline
-    def apply(): GlobalSecondaryIndexUpdate = {
+    inline def apply(): GlobalSecondaryIndexUpdate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalSecondaryIndexUpdate]
     }
     
-    @scala.inline
-    implicit class GlobalSecondaryIndexUpdateMutableBuilder[Self <: GlobalSecondaryIndexUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalSecondaryIndexUpdate](x: Self) {
       
-      @scala.inline
-      def setCreate(value: CreateGlobalSecondaryIndexAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: CreateGlobalSecondaryIndexAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
       
-      @scala.inline
-      def setDelete(value: DeleteGlobalSecondaryIndexAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: DeleteGlobalSecondaryIndexAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
+      inline def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: UpdateGlobalSecondaryIndexAction): Self = StObject.set(x, "Update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: UpdateGlobalSecondaryIndexAction): Self = StObject.set(x, "Update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "Update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "Update", js.undefined)
     }
   }
   
@@ -4263,29 +3639,22 @@ object DocumentClient {
   }
   object GlobalTable {
     
-    @scala.inline
-    def apply(): GlobalTable = {
+    inline def apply(): GlobalTable = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalTable]
     }
     
-    @scala.inline
-    implicit class GlobalTableMutableBuilder[Self <: GlobalTable] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalTable](x: Self) {
       
-      @scala.inline
-      def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
+      inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
+      inline def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
       
-      @scala.inline
-      def setReplicationGroup(value: ReplicaList): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
+      inline def setReplicationGroup(value: ReplicaList): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
+      inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
       
-      @scala.inline
-      def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+      inline def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
     }
   }
   
@@ -4320,47 +3689,34 @@ object DocumentClient {
   }
   object GlobalTableDescription {
     
-    @scala.inline
-    def apply(): GlobalTableDescription = {
+    inline def apply(): GlobalTableDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalTableDescription]
     }
     
-    @scala.inline
-    implicit class GlobalTableDescriptionMutableBuilder[Self <: GlobalTableDescription] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalTableDescription](x: Self) {
       
-      @scala.inline
-      def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+      inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
+      inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
       
-      @scala.inline
-      def setGlobalTableArn(value: GlobalTableArnString): Self = StObject.set(x, "GlobalTableArn", value.asInstanceOf[js.Any])
+      inline def setGlobalTableArn(value: GlobalTableArnString): Self = StObject.set(x, "GlobalTableArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableArnUndefined: Self = StObject.set(x, "GlobalTableArn", js.undefined)
+      inline def setGlobalTableArnUndefined: Self = StObject.set(x, "GlobalTableArn", js.undefined)
       
-      @scala.inline
-      def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
+      inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
+      inline def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
       
-      @scala.inline
-      def setGlobalTableStatus(value: GlobalTableStatus): Self = StObject.set(x, "GlobalTableStatus", value.asInstanceOf[js.Any])
+      inline def setGlobalTableStatus(value: GlobalTableStatus): Self = StObject.set(x, "GlobalTableStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableStatusUndefined: Self = StObject.set(x, "GlobalTableStatus", js.undefined)
+      inline def setGlobalTableStatusUndefined: Self = StObject.set(x, "GlobalTableStatus", js.undefined)
       
-      @scala.inline
-      def setReplicationGroup(value: ReplicaDescriptionList): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
+      inline def setReplicationGroup(value: ReplicaDescriptionList): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
+      inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
       
-      @scala.inline
-      def setReplicationGroupVarargs(value: ReplicaDescription*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+      inline def setReplicationGroupVarargs(value: ReplicaDescription*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
     }
   }
   
@@ -4383,29 +3739,22 @@ object DocumentClient {
   }
   object GlobalTableGlobalSecondaryIndexSettingsUpdate {
     
-    @scala.inline
-    def apply(IndexName: IndexName): GlobalTableGlobalSecondaryIndexSettingsUpdate = {
+    inline def apply(IndexName: IndexName): GlobalTableGlobalSecondaryIndexSettingsUpdate = {
       val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobalTableGlobalSecondaryIndexSettingsUpdate]
     }
     
-    @scala.inline
-    implicit class GlobalTableGlobalSecondaryIndexSettingsUpdateMutableBuilder[Self <: GlobalTableGlobalSecondaryIndexSettingsUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalTableGlobalSecondaryIndexSettingsUpdate](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedWriteCapacityAutoScalingSettingsUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
+      inline def setProvisionedWriteCapacityAutoScalingSettingsUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedWriteCapacityAutoScalingSettingsUpdateUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettingsUpdate", js.undefined)
+      inline def setProvisionedWriteCapacityAutoScalingSettingsUpdateUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettingsUpdate", js.undefined)
       
-      @scala.inline
-      def setProvisionedWriteCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ProvisionedWriteCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setProvisionedWriteCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ProvisionedWriteCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedWriteCapacityUnitsUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityUnits", js.undefined)
+      inline def setProvisionedWriteCapacityUnitsUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityUnits", js.undefined)
     }
   }
   
@@ -4453,29 +3802,22 @@ object DocumentClient {
   }
   object ItemCollectionMetrics {
     
-    @scala.inline
-    def apply(): ItemCollectionMetrics = {
+    inline def apply(): ItemCollectionMetrics = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ItemCollectionMetrics]
     }
     
-    @scala.inline
-    implicit class ItemCollectionMetricsMutableBuilder[Self <: ItemCollectionMetrics] (val x: Self) extends AnyVal {
+    extension [Self <: ItemCollectionMetrics](x: Self) {
       
-      @scala.inline
-      def setItemCollectionKey(value: ItemCollectionKeyAttributeMap): Self = StObject.set(x, "ItemCollectionKey", value.asInstanceOf[js.Any])
+      inline def setItemCollectionKey(value: ItemCollectionKeyAttributeMap): Self = StObject.set(x, "ItemCollectionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCollectionKeyUndefined: Self = StObject.set(x, "ItemCollectionKey", js.undefined)
+      inline def setItemCollectionKeyUndefined: Self = StObject.set(x, "ItemCollectionKey", js.undefined)
       
-      @scala.inline
-      def setSizeEstimateRangeGB(value: ItemCollectionSizeEstimateRange): Self = StObject.set(x, "SizeEstimateRangeGB", value.asInstanceOf[js.Any])
+      inline def setSizeEstimateRangeGB(value: ItemCollectionSizeEstimateRange): Self = StObject.set(x, "SizeEstimateRangeGB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeEstimateRangeGBUndefined: Self = StObject.set(x, "SizeEstimateRangeGB", js.undefined)
+      inline def setSizeEstimateRangeGBUndefined: Self = StObject.set(x, "SizeEstimateRangeGB", js.undefined)
       
-      @scala.inline
-      def setSizeEstimateRangeGBVarargs(value: ItemCollectionSizeEstimateBound*): Self = StObject.set(x, "SizeEstimateRangeGB", js.Array(value :_*))
+      inline def setSizeEstimateRangeGBVarargs(value: ItemCollectionSizeEstimateBound*): Self = StObject.set(x, "SizeEstimateRangeGB", js.Array(value :_*))
     }
   }
   
@@ -4500,20 +3842,16 @@ object DocumentClient {
   }
   object ItemResponse {
     
-    @scala.inline
-    def apply(): ItemResponse = {
+    inline def apply(): ItemResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ItemResponse]
     }
     
-    @scala.inline
-    implicit class ItemResponseMutableBuilder[Self <: ItemResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ItemResponse](x: Self) {
       
-      @scala.inline
-      def setItem(value: AttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: AttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
     }
   }
   
@@ -4549,20 +3887,16 @@ object DocumentClient {
   }
   object KeySchemaElement {
     
-    @scala.inline
-    def apply(AttributeName: KeySchemaAttributeName, KeyType: KeyType): KeySchemaElement = {
+    inline def apply(AttributeName: KeySchemaAttributeName, KeyType: KeyType): KeySchemaElement = {
       val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], KeyType = KeyType.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeySchemaElement]
     }
     
-    @scala.inline
-    implicit class KeySchemaElementMutableBuilder[Self <: KeySchemaElement] (val x: Self) extends AnyVal {
+    extension [Self <: KeySchemaElement](x: Self) {
       
-      @scala.inline
-      def setAttributeName(value: KeySchemaAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+      inline def setAttributeName(value: KeySchemaAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyType(value: KeyType): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
+      inline def setKeyType(value: KeyType): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -4602,47 +3936,34 @@ object DocumentClient {
   }
   object KeysAndAttributes {
     
-    @scala.inline
-    def apply(Keys: KeyList): KeysAndAttributes = {
+    inline def apply(Keys: KeyList): KeysAndAttributes = {
       val __obj = js.Dynamic.literal(Keys = Keys.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeysAndAttributes]
     }
     
-    @scala.inline
-    implicit class KeysAndAttributesMutableBuilder[Self <: KeysAndAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: KeysAndAttributes](x: Self) {
       
-      @scala.inline
-      def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
+      inline def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
+      inline def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
       
-      @scala.inline
-      def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
+      inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
       
-      @scala.inline
-      def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
+      inline def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
+      inline def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+      inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
       
-      @scala.inline
-      def setKeys(value: KeyList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: KeyList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysVarargs(value: Key*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: Key*): Self = StObject.set(x, "Keys", js.Array(value :_*))
       
-      @scala.inline
-      def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
+      inline def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
+      inline def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
     }
   }
   
@@ -4684,50 +4005,36 @@ object DocumentClient {
   }
   object ListBackupsInput {
     
-    @scala.inline
-    def apply(): ListBackupsInput = {
+    inline def apply(): ListBackupsInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListBackupsInput]
     }
     
-    @scala.inline
-    implicit class ListBackupsInputMutableBuilder[Self <: ListBackupsInput] (val x: Self) extends AnyVal {
+    extension [Self <: ListBackupsInput](x: Self) {
       
-      @scala.inline
-      def setBackupType(value: BackupTypeFilter): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
+      inline def setBackupType(value: BackupTypeFilter): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupTypeUndefined: Self = StObject.set(x, "BackupType", js.undefined)
+      inline def setBackupTypeUndefined: Self = StObject.set(x, "BackupType", js.undefined)
       
-      @scala.inline
-      def setExclusiveStartBackupArn(value: BackupArn): Self = StObject.set(x, "ExclusiveStartBackupArn", value.asInstanceOf[js.Any])
+      inline def setExclusiveStartBackupArn(value: BackupArn): Self = StObject.set(x, "ExclusiveStartBackupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveStartBackupArnUndefined: Self = StObject.set(x, "ExclusiveStartBackupArn", js.undefined)
+      inline def setExclusiveStartBackupArnUndefined: Self = StObject.set(x, "ExclusiveStartBackupArn", js.undefined)
       
-      @scala.inline
-      def setLimit(value: BackupsInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: BackupsInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
       
-      @scala.inline
-      def setTimeRangeLowerBound(value: TimeRangeLowerBound): Self = StObject.set(x, "TimeRangeLowerBound", value.asInstanceOf[js.Any])
+      inline def setTimeRangeLowerBound(value: TimeRangeLowerBound): Self = StObject.set(x, "TimeRangeLowerBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeRangeLowerBoundUndefined: Self = StObject.set(x, "TimeRangeLowerBound", js.undefined)
+      inline def setTimeRangeLowerBoundUndefined: Self = StObject.set(x, "TimeRangeLowerBound", js.undefined)
       
-      @scala.inline
-      def setTimeRangeUpperBound(value: TimeRangeUpperBound): Self = StObject.set(x, "TimeRangeUpperBound", value.asInstanceOf[js.Any])
+      inline def setTimeRangeUpperBound(value: TimeRangeUpperBound): Self = StObject.set(x, "TimeRangeUpperBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeRangeUpperBoundUndefined: Self = StObject.set(x, "TimeRangeUpperBound", js.undefined)
+      inline def setTimeRangeUpperBoundUndefined: Self = StObject.set(x, "TimeRangeUpperBound", js.undefined)
     }
   }
   
@@ -4745,29 +4052,22 @@ object DocumentClient {
   }
   object ListBackupsOutput {
     
-    @scala.inline
-    def apply(): ListBackupsOutput = {
+    inline def apply(): ListBackupsOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListBackupsOutput]
     }
     
-    @scala.inline
-    implicit class ListBackupsOutputMutableBuilder[Self <: ListBackupsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListBackupsOutput](x: Self) {
       
-      @scala.inline
-      def setBackupSummaries(value: BackupSummaries): Self = StObject.set(x, "BackupSummaries", value.asInstanceOf[js.Any])
+      inline def setBackupSummaries(value: BackupSummaries): Self = StObject.set(x, "BackupSummaries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupSummariesUndefined: Self = StObject.set(x, "BackupSummaries", js.undefined)
+      inline def setBackupSummariesUndefined: Self = StObject.set(x, "BackupSummaries", js.undefined)
       
-      @scala.inline
-      def setBackupSummariesVarargs(value: BackupSummary*): Self = StObject.set(x, "BackupSummaries", js.Array(value :_*))
+      inline def setBackupSummariesVarargs(value: BackupSummary*): Self = StObject.set(x, "BackupSummaries", js.Array(value :_*))
       
-      @scala.inline
-      def setLastEvaluatedBackupArn(value: BackupArn): Self = StObject.set(x, "LastEvaluatedBackupArn", value.asInstanceOf[js.Any])
+      inline def setLastEvaluatedBackupArn(value: BackupArn): Self = StObject.set(x, "LastEvaluatedBackupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastEvaluatedBackupArnUndefined: Self = StObject.set(x, "LastEvaluatedBackupArn", js.undefined)
+      inline def setLastEvaluatedBackupArnUndefined: Self = StObject.set(x, "LastEvaluatedBackupArn", js.undefined)
     }
   }
   
@@ -4790,32 +4090,24 @@ object DocumentClient {
   }
   object ListContributorInsightsInput {
     
-    @scala.inline
-    def apply(): ListContributorInsightsInput = {
+    inline def apply(): ListContributorInsightsInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListContributorInsightsInput]
     }
     
-    @scala.inline
-    implicit class ListContributorInsightsInputMutableBuilder[Self <: ListContributorInsightsInput] (val x: Self) extends AnyVal {
+    extension [Self <: ListContributorInsightsInput](x: Self) {
       
-      @scala.inline
-      def setMaxResults(value: ListContributorInsightsLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: ListContributorInsightsLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     }
   }
   
@@ -4835,29 +4127,22 @@ object DocumentClient {
   }
   object ListContributorInsightsOutput {
     
-    @scala.inline
-    def apply(): ListContributorInsightsOutput = {
+    inline def apply(): ListContributorInsightsOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListContributorInsightsOutput]
     }
     
-    @scala.inline
-    implicit class ListContributorInsightsOutputMutableBuilder[Self <: ListContributorInsightsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListContributorInsightsOutput](x: Self) {
       
-      @scala.inline
-      def setContributorInsightsSummaries(value: ContributorInsightsSummaries): Self = StObject.set(x, "ContributorInsightsSummaries", value.asInstanceOf[js.Any])
+      inline def setContributorInsightsSummaries(value: ContributorInsightsSummaries): Self = StObject.set(x, "ContributorInsightsSummaries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContributorInsightsSummariesUndefined: Self = StObject.set(x, "ContributorInsightsSummaries", js.undefined)
+      inline def setContributorInsightsSummariesUndefined: Self = StObject.set(x, "ContributorInsightsSummaries", js.undefined)
       
-      @scala.inline
-      def setContributorInsightsSummariesVarargs(value: ContributorInsightsSummary*): Self = StObject.set(x, "ContributorInsightsSummaries", js.Array(value :_*))
+      inline def setContributorInsightsSummariesVarargs(value: ContributorInsightsSummary*): Self = StObject.set(x, "ContributorInsightsSummaries", js.Array(value :_*))
       
-      @scala.inline
-      def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     }
   }
   
@@ -4880,32 +4165,24 @@ object DocumentClient {
   }
   object ListExportsInput {
     
-    @scala.inline
-    def apply(): ListExportsInput = {
+    inline def apply(): ListExportsInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListExportsInput]
     }
     
-    @scala.inline
-    implicit class ListExportsInputMutableBuilder[Self <: ListExportsInput] (val x: Self) extends AnyVal {
+    extension [Self <: ListExportsInput](x: Self) {
       
-      @scala.inline
-      def setMaxResults(value: ListExportsMaxLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: ListExportsMaxLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: ExportNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: ExportNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
+      inline def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
+      inline def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
     }
   }
   
@@ -4925,29 +4202,22 @@ object DocumentClient {
   }
   object ListExportsOutput {
     
-    @scala.inline
-    def apply(): ListExportsOutput = {
+    inline def apply(): ListExportsOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListExportsOutput]
     }
     
-    @scala.inline
-    implicit class ListExportsOutputMutableBuilder[Self <: ListExportsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListExportsOutput](x: Self) {
       
-      @scala.inline
-      def setExportSummaries(value: ExportSummaries): Self = StObject.set(x, "ExportSummaries", value.asInstanceOf[js.Any])
+      inline def setExportSummaries(value: ExportSummaries): Self = StObject.set(x, "ExportSummaries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportSummariesUndefined: Self = StObject.set(x, "ExportSummaries", js.undefined)
+      inline def setExportSummariesUndefined: Self = StObject.set(x, "ExportSummaries", js.undefined)
       
-      @scala.inline
-      def setExportSummariesVarargs(value: ExportSummary*): Self = StObject.set(x, "ExportSummaries", js.Array(value :_*))
+      inline def setExportSummariesVarargs(value: ExportSummary*): Self = StObject.set(x, "ExportSummaries", js.Array(value :_*))
       
-      @scala.inline
-      def setNextToken(value: ExportNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: ExportNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     }
   }
   
@@ -4970,32 +4240,24 @@ object DocumentClient {
   }
   object ListGlobalTablesInput {
     
-    @scala.inline
-    def apply(): ListGlobalTablesInput = {
+    inline def apply(): ListGlobalTablesInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListGlobalTablesInput]
     }
     
-    @scala.inline
-    implicit class ListGlobalTablesInputMutableBuilder[Self <: ListGlobalTablesInput] (val x: Self) extends AnyVal {
+    extension [Self <: ListGlobalTablesInput](x: Self) {
       
-      @scala.inline
-      def setExclusiveStartGlobalTableName(value: TableName): Self = StObject.set(x, "ExclusiveStartGlobalTableName", value.asInstanceOf[js.Any])
+      inline def setExclusiveStartGlobalTableName(value: TableName): Self = StObject.set(x, "ExclusiveStartGlobalTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveStartGlobalTableNameUndefined: Self = StObject.set(x, "ExclusiveStartGlobalTableName", js.undefined)
+      inline def setExclusiveStartGlobalTableNameUndefined: Self = StObject.set(x, "ExclusiveStartGlobalTableName", js.undefined)
       
-      @scala.inline
-      def setLimit(value: PositiveIntegerObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: PositiveIntegerObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
       
-      @scala.inline
-      def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+      inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
+      inline def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
     }
   }
   
@@ -5013,29 +4275,22 @@ object DocumentClient {
   }
   object ListGlobalTablesOutput {
     
-    @scala.inline
-    def apply(): ListGlobalTablesOutput = {
+    inline def apply(): ListGlobalTablesOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListGlobalTablesOutput]
     }
     
-    @scala.inline
-    implicit class ListGlobalTablesOutputMutableBuilder[Self <: ListGlobalTablesOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListGlobalTablesOutput](x: Self) {
       
-      @scala.inline
-      def setGlobalTables(value: GlobalTableList): Self = StObject.set(x, "GlobalTables", value.asInstanceOf[js.Any])
+      inline def setGlobalTables(value: GlobalTableList): Self = StObject.set(x, "GlobalTables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTablesUndefined: Self = StObject.set(x, "GlobalTables", js.undefined)
+      inline def setGlobalTablesUndefined: Self = StObject.set(x, "GlobalTables", js.undefined)
       
-      @scala.inline
-      def setGlobalTablesVarargs(value: GlobalTable*): Self = StObject.set(x, "GlobalTables", js.Array(value :_*))
+      inline def setGlobalTablesVarargs(value: GlobalTable*): Self = StObject.set(x, "GlobalTables", js.Array(value :_*))
       
-      @scala.inline
-      def setLastEvaluatedGlobalTableName(value: TableName): Self = StObject.set(x, "LastEvaluatedGlobalTableName", value.asInstanceOf[js.Any])
+      inline def setLastEvaluatedGlobalTableName(value: TableName): Self = StObject.set(x, "LastEvaluatedGlobalTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastEvaluatedGlobalTableNameUndefined: Self = StObject.set(x, "LastEvaluatedGlobalTableName", js.undefined)
+      inline def setLastEvaluatedGlobalTableNameUndefined: Self = StObject.set(x, "LastEvaluatedGlobalTableName", js.undefined)
     }
   }
   
@@ -5053,26 +4308,20 @@ object DocumentClient {
   }
   object ListTablesInput {
     
-    @scala.inline
-    def apply(): ListTablesInput = {
+    inline def apply(): ListTablesInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListTablesInput]
     }
     
-    @scala.inline
-    implicit class ListTablesInputMutableBuilder[Self <: ListTablesInput] (val x: Self) extends AnyVal {
+    extension [Self <: ListTablesInput](x: Self) {
       
-      @scala.inline
-      def setExclusiveStartTableName(value: TableName): Self = StObject.set(x, "ExclusiveStartTableName", value.asInstanceOf[js.Any])
+      inline def setExclusiveStartTableName(value: TableName): Self = StObject.set(x, "ExclusiveStartTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveStartTableNameUndefined: Self = StObject.set(x, "ExclusiveStartTableName", js.undefined)
+      inline def setExclusiveStartTableNameUndefined: Self = StObject.set(x, "ExclusiveStartTableName", js.undefined)
       
-      @scala.inline
-      def setLimit(value: ListTablesInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: ListTablesInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     }
   }
   
@@ -5092,29 +4341,22 @@ object DocumentClient {
   }
   object ListTablesOutput {
     
-    @scala.inline
-    def apply(): ListTablesOutput = {
+    inline def apply(): ListTablesOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListTablesOutput]
     }
     
-    @scala.inline
-    implicit class ListTablesOutputMutableBuilder[Self <: ListTablesOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListTablesOutput](x: Self) {
       
-      @scala.inline
-      def setLastEvaluatedTableName(value: TableName): Self = StObject.set(x, "LastEvaluatedTableName", value.asInstanceOf[js.Any])
+      inline def setLastEvaluatedTableName(value: TableName): Self = StObject.set(x, "LastEvaluatedTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastEvaluatedTableNameUndefined: Self = StObject.set(x, "LastEvaluatedTableName", js.undefined)
+      inline def setLastEvaluatedTableNameUndefined: Self = StObject.set(x, "LastEvaluatedTableName", js.undefined)
       
-      @scala.inline
-      def setTableNames(value: TableNameList): Self = StObject.set(x, "TableNames", value.asInstanceOf[js.Any])
+      inline def setTableNames(value: TableNameList): Self = StObject.set(x, "TableNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNamesUndefined: Self = StObject.set(x, "TableNames", js.undefined)
+      inline def setTableNamesUndefined: Self = StObject.set(x, "TableNames", js.undefined)
       
-      @scala.inline
-      def setTableNamesVarargs(value: TableName*): Self = StObject.set(x, "TableNames", js.Array(value :_*))
+      inline def setTableNamesVarargs(value: TableName*): Self = StObject.set(x, "TableNames", js.Array(value :_*))
     }
   }
   
@@ -5132,23 +4374,18 @@ object DocumentClient {
   }
   object ListTagsOfResourceInput {
     
-    @scala.inline
-    def apply(ResourceArn: ResourceArnString): ListTagsOfResourceInput = {
+    inline def apply(ResourceArn: ResourceArnString): ListTagsOfResourceInput = {
       val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListTagsOfResourceInput]
     }
     
-    @scala.inline
-    implicit class ListTagsOfResourceInputMutableBuilder[Self <: ListTagsOfResourceInput] (val x: Self) extends AnyVal {
+    extension [Self <: ListTagsOfResourceInput](x: Self) {
       
-      @scala.inline
-      def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+      inline def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -5166,29 +4403,22 @@ object DocumentClient {
   }
   object ListTagsOfResourceOutput {
     
-    @scala.inline
-    def apply(): ListTagsOfResourceOutput = {
+    inline def apply(): ListTagsOfResourceOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListTagsOfResourceOutput]
     }
     
-    @scala.inline
-    implicit class ListTagsOfResourceOutputMutableBuilder[Self <: ListTagsOfResourceOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListTagsOfResourceOutput](x: Self) {
       
-      @scala.inline
-      def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     }
   }
   
@@ -5211,26 +4441,20 @@ object DocumentClient {
   }
   object LocalSecondaryIndex {
     
-    @scala.inline
-    def apply(IndexName: IndexName, KeySchema: KeySchema, Projection: Projection): LocalSecondaryIndex = {
+    inline def apply(IndexName: IndexName, KeySchema: KeySchema, Projection: Projection): LocalSecondaryIndex = {
       val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any], KeySchema = KeySchema.asInstanceOf[js.Any], Projection = Projection.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalSecondaryIndex]
     }
     
-    @scala.inline
-    implicit class LocalSecondaryIndexMutableBuilder[Self <: LocalSecondaryIndex] (val x: Self) extends AnyVal {
+    extension [Self <: LocalSecondaryIndex](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
       
-      @scala.inline
-      def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
     }
   }
   
@@ -5268,53 +4492,38 @@ object DocumentClient {
   }
   object LocalSecondaryIndexDescription {
     
-    @scala.inline
-    def apply(): LocalSecondaryIndexDescription = {
+    inline def apply(): LocalSecondaryIndexDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocalSecondaryIndexDescription]
     }
     
-    @scala.inline
-    implicit class LocalSecondaryIndexDescriptionMutableBuilder[Self <: LocalSecondaryIndexDescription] (val x: Self) extends AnyVal {
+    extension [Self <: LocalSecondaryIndexDescription](x: Self) {
       
-      @scala.inline
-      def setIndexArn(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "IndexArn", value.asInstanceOf[js.Any])
+      inline def setIndexArn(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "IndexArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexArnUndefined: Self = StObject.set(x, "IndexArn", js.undefined)
+      inline def setIndexArnUndefined: Self = StObject.set(x, "IndexArn", js.undefined)
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+      inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      @scala.inline
-      def setIndexSizeBytes(value: Long): Self = StObject.set(x, "IndexSizeBytes", value.asInstanceOf[js.Any])
+      inline def setIndexSizeBytes(value: Long): Self = StObject.set(x, "IndexSizeBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexSizeBytesUndefined: Self = StObject.set(x, "IndexSizeBytes", js.undefined)
+      inline def setIndexSizeBytesUndefined: Self = StObject.set(x, "IndexSizeBytes", js.undefined)
       
-      @scala.inline
-      def setItemCount(value: Long): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
+      inline def setItemCount(value: Long): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
+      inline def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
       
-      @scala.inline
-      def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
+      inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
       
-      @scala.inline
-      def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
       
-      @scala.inline
-      def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
+      inline def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
     }
   }
   
@@ -5339,35 +4548,26 @@ object DocumentClient {
   }
   object LocalSecondaryIndexInfo {
     
-    @scala.inline
-    def apply(): LocalSecondaryIndexInfo = {
+    inline def apply(): LocalSecondaryIndexInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocalSecondaryIndexInfo]
     }
     
-    @scala.inline
-    implicit class LocalSecondaryIndexInfoMutableBuilder[Self <: LocalSecondaryIndexInfo] (val x: Self) extends AnyVal {
+    extension [Self <: LocalSecondaryIndexInfo](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+      inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      @scala.inline
-      def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
+      inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
       
-      @scala.inline
-      def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
       
-      @scala.inline
-      def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
+      inline def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
     }
   }
   
@@ -5401,24 +4601,19 @@ object DocumentClient {
   }
   object NumberSet {
     
-    @scala.inline
-    def apply(values: js.Array[scala.Double]): NumberSet = {
+    inline def apply(values: js.Array[scala.Double]): NumberSet = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Number")
       __obj.asInstanceOf[NumberSet]
     }
     
-    @scala.inline
-    implicit class NumberSetMutableBuilder[Self <: NumberSet] (val x: Self) extends AnyVal {
+    extension [Self <: NumberSet](x: Self) {
       
-      @scala.inline
-      def setType(value: Number_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Number_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[scala.Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[scala.Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: scala.Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: scala.Double*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -5443,32 +4638,24 @@ object DocumentClient {
   }
   object PointInTimeRecoveryDescription {
     
-    @scala.inline
-    def apply(): PointInTimeRecoveryDescription = {
+    inline def apply(): PointInTimeRecoveryDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PointInTimeRecoveryDescription]
     }
     
-    @scala.inline
-    implicit class PointInTimeRecoveryDescriptionMutableBuilder[Self <: PointInTimeRecoveryDescription] (val x: Self) extends AnyVal {
+    extension [Self <: PointInTimeRecoveryDescription](x: Self) {
       
-      @scala.inline
-      def setEarliestRestorableDateTime(value: Date): Self = StObject.set(x, "EarliestRestorableDateTime", value.asInstanceOf[js.Any])
+      inline def setEarliestRestorableDateTime(value: Date): Self = StObject.set(x, "EarliestRestorableDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEarliestRestorableDateTimeUndefined: Self = StObject.set(x, "EarliestRestorableDateTime", js.undefined)
+      inline def setEarliestRestorableDateTimeUndefined: Self = StObject.set(x, "EarliestRestorableDateTime", js.undefined)
       
-      @scala.inline
-      def setLatestRestorableDateTime(value: Date): Self = StObject.set(x, "LatestRestorableDateTime", value.asInstanceOf[js.Any])
+      inline def setLatestRestorableDateTime(value: Date): Self = StObject.set(x, "LatestRestorableDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestRestorableDateTimeUndefined: Self = StObject.set(x, "LatestRestorableDateTime", js.undefined)
+      inline def setLatestRestorableDateTimeUndefined: Self = StObject.set(x, "LatestRestorableDateTime", js.undefined)
       
-      @scala.inline
-      def setPointInTimeRecoveryStatus(value: PointInTimeRecoveryStatus): Self = StObject.set(x, "PointInTimeRecoveryStatus", value.asInstanceOf[js.Any])
+      inline def setPointInTimeRecoveryStatus(value: PointInTimeRecoveryStatus): Self = StObject.set(x, "PointInTimeRecoveryStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointInTimeRecoveryStatusUndefined: Self = StObject.set(x, "PointInTimeRecoveryStatus", js.undefined)
+      inline def setPointInTimeRecoveryStatusUndefined: Self = StObject.set(x, "PointInTimeRecoveryStatus", js.undefined)
     }
   }
   
@@ -5481,17 +4668,14 @@ object DocumentClient {
   }
   object PointInTimeRecoverySpecification {
     
-    @scala.inline
-    def apply(PointInTimeRecoveryEnabled: BooleanObject): PointInTimeRecoverySpecification = {
+    inline def apply(PointInTimeRecoveryEnabled: BooleanObject): PointInTimeRecoverySpecification = {
       val __obj = js.Dynamic.literal(PointInTimeRecoveryEnabled = PointInTimeRecoveryEnabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[PointInTimeRecoverySpecification]
     }
     
-    @scala.inline
-    implicit class PointInTimeRecoverySpecificationMutableBuilder[Self <: PointInTimeRecoverySpecification] (val x: Self) extends AnyVal {
+    extension [Self <: PointInTimeRecoverySpecification](x: Self) {
       
-      @scala.inline
-      def setPointInTimeRecoveryEnabled(value: BooleanObject): Self = StObject.set(x, "PointInTimeRecoveryEnabled", value.asInstanceOf[js.Any])
+      inline def setPointInTimeRecoveryEnabled(value: BooleanObject): Self = StObject.set(x, "PointInTimeRecoveryEnabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -5520,29 +4704,22 @@ object DocumentClient {
   }
   object Projection {
     
-    @scala.inline
-    def apply(): Projection = {
+    inline def apply(): Projection = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Projection]
     }
     
-    @scala.inline
-    implicit class ProjectionMutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
+    extension [Self <: Projection](x: Self) {
       
-      @scala.inline
-      def setNonKeyAttributes(value: NonKeyAttributeNameList): Self = StObject.set(x, "NonKeyAttributes", value.asInstanceOf[js.Any])
+      inline def setNonKeyAttributes(value: NonKeyAttributeNameList): Self = StObject.set(x, "NonKeyAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonKeyAttributesUndefined: Self = StObject.set(x, "NonKeyAttributes", js.undefined)
+      inline def setNonKeyAttributesUndefined: Self = StObject.set(x, "NonKeyAttributes", js.undefined)
       
-      @scala.inline
-      def setNonKeyAttributesVarargs(value: NonKeyAttributeName*): Self = StObject.set(x, "NonKeyAttributes", js.Array(value :_*))
+      inline def setNonKeyAttributesVarargs(value: NonKeyAttributeName*): Self = StObject.set(x, "NonKeyAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setProjectionType(value: ProjectionType): Self = StObject.set(x, "ProjectionType", value.asInstanceOf[js.Any])
+      inline def setProjectionType(value: ProjectionType): Self = StObject.set(x, "ProjectionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionTypeUndefined: Self = StObject.set(x, "ProjectionType", js.undefined)
+      inline def setProjectionTypeUndefined: Self = StObject.set(x, "ProjectionType", js.undefined)
     }
   }
   
@@ -5570,20 +4747,16 @@ object DocumentClient {
   }
   object ProvisionedThroughput {
     
-    @scala.inline
-    def apply(ReadCapacityUnits: PositiveLongObject, WriteCapacityUnits: PositiveLongObject): ProvisionedThroughput = {
+    inline def apply(ReadCapacityUnits: PositiveLongObject, WriteCapacityUnits: PositiveLongObject): ProvisionedThroughput = {
       val __obj = js.Dynamic.literal(ReadCapacityUnits = ReadCapacityUnits.asInstanceOf[js.Any], WriteCapacityUnits = WriteCapacityUnits.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProvisionedThroughput]
     }
     
-    @scala.inline
-    implicit class ProvisionedThroughputMutableBuilder[Self <: ProvisionedThroughput] (val x: Self) extends AnyVal {
+    extension [Self <: ProvisionedThroughput](x: Self) {
       
-      @scala.inline
-      def setReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setWriteCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
     }
   }
   
@@ -5616,44 +4789,32 @@ object DocumentClient {
   }
   object ProvisionedThroughputDescription {
     
-    @scala.inline
-    def apply(): ProvisionedThroughputDescription = {
+    inline def apply(): ProvisionedThroughputDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProvisionedThroughputDescription]
     }
     
-    @scala.inline
-    implicit class ProvisionedThroughputDescriptionMutableBuilder[Self <: ProvisionedThroughputDescription] (val x: Self) extends AnyVal {
+    extension [Self <: ProvisionedThroughputDescription](x: Self) {
       
-      @scala.inline
-      def setLastDecreaseDateTime(value: Date): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
+      inline def setLastDecreaseDateTime(value: Date): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastDecreaseDateTimeUndefined: Self = StObject.set(x, "LastDecreaseDateTime", js.undefined)
+      inline def setLastDecreaseDateTimeUndefined: Self = StObject.set(x, "LastDecreaseDateTime", js.undefined)
       
-      @scala.inline
-      def setLastIncreaseDateTime(value: Date): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
+      inline def setLastIncreaseDateTime(value: Date): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastIncreaseDateTimeUndefined: Self = StObject.set(x, "LastIncreaseDateTime", js.undefined)
+      inline def setLastIncreaseDateTimeUndefined: Self = StObject.set(x, "LastIncreaseDateTime", js.undefined)
       
-      @scala.inline
-      def setNumberOfDecreasesToday(value: PositiveLongObject): Self = StObject.set(x, "NumberOfDecreasesToday", value.asInstanceOf[js.Any])
+      inline def setNumberOfDecreasesToday(value: PositiveLongObject): Self = StObject.set(x, "NumberOfDecreasesToday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfDecreasesTodayUndefined: Self = StObject.set(x, "NumberOfDecreasesToday", js.undefined)
+      inline def setNumberOfDecreasesTodayUndefined: Self = StObject.set(x, "NumberOfDecreasesToday", js.undefined)
       
-      @scala.inline
-      def setReadCapacityUnits(value: NonNegativeLongObject): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setReadCapacityUnits(value: NonNegativeLongObject): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
+      inline def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
       
-      @scala.inline
-      def setWriteCapacityUnits(value: NonNegativeLongObject): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setWriteCapacityUnits(value: NonNegativeLongObject): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteCapacityUnitsUndefined: Self = StObject.set(x, "WriteCapacityUnits", js.undefined)
+      inline def setWriteCapacityUnitsUndefined: Self = StObject.set(x, "WriteCapacityUnits", js.undefined)
     }
   }
   
@@ -5666,20 +4827,16 @@ object DocumentClient {
   }
   object ProvisionedThroughputOverride {
     
-    @scala.inline
-    def apply(): ProvisionedThroughputOverride = {
+    inline def apply(): ProvisionedThroughputOverride = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProvisionedThroughputOverride]
     }
     
-    @scala.inline
-    implicit class ProvisionedThroughputOverrideMutableBuilder[Self <: ProvisionedThroughputOverride] (val x: Self) extends AnyVal {
+    extension [Self <: ProvisionedThroughputOverride](x: Self) {
       
-      @scala.inline
-      def setReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
+      inline def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
     }
   }
   
@@ -5719,44 +4876,32 @@ object DocumentClient {
   }
   object Put {
     
-    @scala.inline
-    def apply(Item: PutItemInputAttributeMap, TableName: TableName): Put = {
+    inline def apply(Item: PutItemInputAttributeMap, TableName: TableName): Put = {
       val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Put]
     }
     
-    @scala.inline
-    implicit class PutMutableBuilder[Self <: Put] (val x: Self) extends AnyVal {
+    extension [Self <: Put](x: Self) {
       
-      @scala.inline
-      def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
+      inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
+      inline def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+      inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
+      inline def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
       
-      @scala.inline
-      def setItem(value: PutItemInputAttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: PutItemInputAttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnValuesOnConditionCheckFailure(value: ReturnValuesOnConditionCheckFailure): Self = StObject.set(x, "ReturnValuesOnConditionCheckFailure", value.asInstanceOf[js.Any])
+      inline def setReturnValuesOnConditionCheckFailure(value: ReturnValuesOnConditionCheckFailure): Self = StObject.set(x, "ReturnValuesOnConditionCheckFailure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnValuesOnConditionCheckFailureUndefined: Self = StObject.set(x, "ReturnValuesOnConditionCheckFailure", js.undefined)
+      inline def setReturnValuesOnConditionCheckFailureUndefined: Self = StObject.set(x, "ReturnValuesOnConditionCheckFailure", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -5811,68 +4956,48 @@ object DocumentClient {
   }
   object PutItemInput {
     
-    @scala.inline
-    def apply(Item: PutItemInputAttributeMap, TableName: TableName): PutItemInput = {
+    inline def apply(Item: PutItemInputAttributeMap, TableName: TableName): PutItemInput = {
       val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutItemInput]
     }
     
-    @scala.inline
-    implicit class PutItemInputMutableBuilder[Self <: PutItemInput] (val x: Self) extends AnyVal {
+    extension [Self <: PutItemInput](x: Self) {
       
-      @scala.inline
-      def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
+      inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
+      inline def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
       
-      @scala.inline
-      def setConditionalOperator(value: ConditionalOperator): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
+      inline def setConditionalOperator(value: ConditionalOperator): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionalOperatorUndefined: Self = StObject.set(x, "ConditionalOperator", js.undefined)
+      inline def setConditionalOperatorUndefined: Self = StObject.set(x, "ConditionalOperator", js.undefined)
       
-      @scala.inline
-      def setExpected(value: ExpectedAttributeMap): Self = StObject.set(x, "Expected", value.asInstanceOf[js.Any])
+      inline def setExpected(value: ExpectedAttributeMap): Self = StObject.set(x, "Expected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedUndefined: Self = StObject.set(x, "Expected", js.undefined)
+      inline def setExpectedUndefined: Self = StObject.set(x, "Expected", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+      inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
+      inline def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
       
-      @scala.inline
-      def setItem(value: PutItemInputAttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: PutItemInputAttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+      inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
+      inline def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
+      inline def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
       
-      @scala.inline
-      def setReturnValues(value: ReturnValue): Self = StObject.set(x, "ReturnValues", value.asInstanceOf[js.Any])
+      inline def setReturnValues(value: ReturnValue): Self = StObject.set(x, "ReturnValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnValuesUndefined: Self = StObject.set(x, "ReturnValues", js.undefined)
+      inline def setReturnValuesUndefined: Self = StObject.set(x, "ReturnValues", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -5897,32 +5022,24 @@ object DocumentClient {
   }
   object PutItemOutput {
     
-    @scala.inline
-    def apply(): PutItemOutput = {
+    inline def apply(): PutItemOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PutItemOutput]
     }
     
-    @scala.inline
-    implicit class PutItemOutputMutableBuilder[Self <: PutItemOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PutItemOutput](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: AttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: AttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       
-      @scala.inline
-      def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setItemCollectionMetrics(value: ItemCollectionMetrics): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
+      inline def setItemCollectionMetrics(value: ItemCollectionMetrics): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCollectionMetricsUndefined: Self = StObject.set(x, "ItemCollectionMetrics", js.undefined)
+      inline def setItemCollectionMetricsUndefined: Self = StObject.set(x, "ItemCollectionMetrics", js.undefined)
     }
   }
   
@@ -5935,17 +5052,14 @@ object DocumentClient {
   }
   object PutRequest {
     
-    @scala.inline
-    def apply(Item: PutItemInputAttributeMap): PutRequest = {
+    inline def apply(Item: PutItemInputAttributeMap): PutRequest = {
       val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutRequest]
     }
     
-    @scala.inline
-    implicit class PutRequestMutableBuilder[Self <: PutRequest] (val x: Self) extends AnyVal {
+    extension [Self <: PutRequest](x: Self) {
       
-      @scala.inline
-      def setItem(value: PutItemInputAttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: PutItemInputAttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     }
   }
   
@@ -6035,116 +5149,80 @@ object DocumentClient {
   }
   object QueryInput {
     
-    @scala.inline
-    def apply(TableName: TableName): QueryInput = {
+    inline def apply(TableName: TableName): QueryInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryInput]
     }
     
-    @scala.inline
-    implicit class QueryInputMutableBuilder[Self <: QueryInput] (val x: Self) extends AnyVal {
+    extension [Self <: QueryInput](x: Self) {
       
-      @scala.inline
-      def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
+      inline def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
+      inline def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
       
-      @scala.inline
-      def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
+      inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
       
-      @scala.inline
-      def setConditionalOperator(value: ConditionalOperator): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
+      inline def setConditionalOperator(value: ConditionalOperator): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionalOperatorUndefined: Self = StObject.set(x, "ConditionalOperator", js.undefined)
+      inline def setConditionalOperatorUndefined: Self = StObject.set(x, "ConditionalOperator", js.undefined)
       
-      @scala.inline
-      def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
+      inline def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
+      inline def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
       
-      @scala.inline
-      def setExclusiveStartKey(value: Key): Self = StObject.set(x, "ExclusiveStartKey", value.asInstanceOf[js.Any])
+      inline def setExclusiveStartKey(value: Key): Self = StObject.set(x, "ExclusiveStartKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveStartKeyUndefined: Self = StObject.set(x, "ExclusiveStartKey", js.undefined)
+      inline def setExclusiveStartKeyUndefined: Self = StObject.set(x, "ExclusiveStartKey", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+      inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
+      inline def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
       
-      @scala.inline
-      def setFilterExpression(value: ConditionExpression): Self = StObject.set(x, "FilterExpression", value.asInstanceOf[js.Any])
+      inline def setFilterExpression(value: ConditionExpression): Self = StObject.set(x, "FilterExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterExpressionUndefined: Self = StObject.set(x, "FilterExpression", js.undefined)
+      inline def setFilterExpressionUndefined: Self = StObject.set(x, "FilterExpression", js.undefined)
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+      inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      @scala.inline
-      def setKeyConditionExpression(value: KeyExpression): Self = StObject.set(x, "KeyConditionExpression", value.asInstanceOf[js.Any])
+      inline def setKeyConditionExpression(value: KeyExpression): Self = StObject.set(x, "KeyConditionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyConditionExpressionUndefined: Self = StObject.set(x, "KeyConditionExpression", js.undefined)
+      inline def setKeyConditionExpressionUndefined: Self = StObject.set(x, "KeyConditionExpression", js.undefined)
       
-      @scala.inline
-      def setKeyConditions(value: KeyConditions): Self = StObject.set(x, "KeyConditions", value.asInstanceOf[js.Any])
+      inline def setKeyConditions(value: KeyConditions): Self = StObject.set(x, "KeyConditions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyConditionsUndefined: Self = StObject.set(x, "KeyConditions", js.undefined)
+      inline def setKeyConditionsUndefined: Self = StObject.set(x, "KeyConditions", js.undefined)
       
-      @scala.inline
-      def setLimit(value: PositiveIntegerObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: PositiveIntegerObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
       
-      @scala.inline
-      def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
+      inline def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
+      inline def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
       
-      @scala.inline
-      def setQueryFilter(value: FilterConditionMap): Self = StObject.set(x, "QueryFilter", value.asInstanceOf[js.Any])
+      inline def setQueryFilter(value: FilterConditionMap): Self = StObject.set(x, "QueryFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryFilterUndefined: Self = StObject.set(x, "QueryFilter", js.undefined)
+      inline def setQueryFilterUndefined: Self = StObject.set(x, "QueryFilter", js.undefined)
       
-      @scala.inline
-      def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+      inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setScanIndexForward(value: BooleanObject): Self = StObject.set(x, "ScanIndexForward", value.asInstanceOf[js.Any])
+      inline def setScanIndexForward(value: BooleanObject): Self = StObject.set(x, "ScanIndexForward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScanIndexForwardUndefined: Self = StObject.set(x, "ScanIndexForward", js.undefined)
+      inline def setScanIndexForwardUndefined: Self = StObject.set(x, "ScanIndexForward", js.undefined)
       
-      @scala.inline
-      def setSelect(value: Select): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: Select): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "Select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "Select", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -6177,47 +5255,34 @@ object DocumentClient {
   }
   object QueryOutput {
     
-    @scala.inline
-    def apply(): QueryOutput = {
+    inline def apply(): QueryOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueryOutput]
     }
     
-    @scala.inline
-    implicit class QueryOutputMutableBuilder[Self <: QueryOutput] (val x: Self) extends AnyVal {
+    extension [Self <: QueryOutput](x: Self) {
       
-      @scala.inline
-      def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
       
-      @scala.inline
-      def setItems(value: ItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+      inline def setItems(value: ItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: AttributeMap*): Self = StObject.set(x, "Items", js.Array(value :_*))
+      inline def setItemsVarargs(value: AttributeMap*): Self = StObject.set(x, "Items", js.Array(value :_*))
       
-      @scala.inline
-      def setLastEvaluatedKey(value: Key): Self = StObject.set(x, "LastEvaluatedKey", value.asInstanceOf[js.Any])
+      inline def setLastEvaluatedKey(value: Key): Self = StObject.set(x, "LastEvaluatedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastEvaluatedKeyUndefined: Self = StObject.set(x, "LastEvaluatedKey", js.undefined)
+      inline def setLastEvaluatedKeyUndefined: Self = StObject.set(x, "LastEvaluatedKey", js.undefined)
       
-      @scala.inline
-      def setScannedCount(value: Integer): Self = StObject.set(x, "ScannedCount", value.asInstanceOf[js.Any])
+      inline def setScannedCount(value: Integer): Self = StObject.set(x, "ScannedCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScannedCountUndefined: Self = StObject.set(x, "ScannedCount", js.undefined)
+      inline def setScannedCountUndefined: Self = StObject.set(x, "ScannedCount", js.undefined)
     }
   }
   
@@ -6232,20 +5297,16 @@ object DocumentClient {
   }
   object Replica {
     
-    @scala.inline
-    def apply(): Replica = {
+    inline def apply(): Replica = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Replica]
     }
     
-    @scala.inline
-    implicit class ReplicaMutableBuilder[Self <: Replica] (val x: Self) extends AnyVal {
+    extension [Self <: Replica](x: Self) {
       
-      @scala.inline
-      def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+      inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
+      inline def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
     }
   }
   
@@ -6272,47 +5333,34 @@ object DocumentClient {
   }
   object ReplicaAutoScalingDescription {
     
-    @scala.inline
-    def apply(): ReplicaAutoScalingDescription = {
+    inline def apply(): ReplicaAutoScalingDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplicaAutoScalingDescription]
     }
     
-    @scala.inline
-    implicit class ReplicaAutoScalingDescriptionMutableBuilder[Self <: ReplicaAutoScalingDescription] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaAutoScalingDescription](x: Self) {
       
-      @scala.inline
-      def setGlobalSecondaryIndexes(value: ReplicaGlobalSecondaryIndexAutoScalingDescriptionList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexes(value: ReplicaGlobalSecondaryIndexAutoScalingDescriptionList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
+      inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndexAutoScalingDescription*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndexAutoScalingDescription*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+      inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
+      inline def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
       
-      @scala.inline
-      def setReplicaProvisionedReadCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
+      inline def setReplicaProvisionedReadCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaProvisionedReadCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettings", js.undefined)
+      inline def setReplicaProvisionedReadCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettings", js.undefined)
       
-      @scala.inline
-      def setReplicaProvisionedWriteCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ReplicaProvisionedWriteCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
+      inline def setReplicaProvisionedWriteCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ReplicaProvisionedWriteCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaProvisionedWriteCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ReplicaProvisionedWriteCapacityAutoScalingSettings", js.undefined)
+      inline def setReplicaProvisionedWriteCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ReplicaProvisionedWriteCapacityAutoScalingSettings", js.undefined)
       
-      @scala.inline
-      def setReplicaStatus(value: ReplicaStatus): Self = StObject.set(x, "ReplicaStatus", value.asInstanceOf[js.Any])
+      inline def setReplicaStatus(value: ReplicaStatus): Self = StObject.set(x, "ReplicaStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaStatusUndefined: Self = StObject.set(x, "ReplicaStatus", js.undefined)
+      inline def setReplicaStatusUndefined: Self = StObject.set(x, "ReplicaStatus", js.undefined)
     }
   }
   
@@ -6334,32 +5382,24 @@ object DocumentClient {
   }
   object ReplicaAutoScalingUpdate {
     
-    @scala.inline
-    def apply(RegionName: RegionName): ReplicaAutoScalingUpdate = {
+    inline def apply(RegionName: RegionName): ReplicaAutoScalingUpdate = {
       val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplicaAutoScalingUpdate]
     }
     
-    @scala.inline
-    implicit class ReplicaAutoScalingUpdateMutableBuilder[Self <: ReplicaAutoScalingUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaAutoScalingUpdate](x: Self) {
       
-      @scala.inline
-      def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+      inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaGlobalSecondaryIndexUpdates(value: ReplicaGlobalSecondaryIndexAutoScalingUpdateList): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexUpdates", value.asInstanceOf[js.Any])
+      inline def setReplicaGlobalSecondaryIndexUpdates(value: ReplicaGlobalSecondaryIndexAutoScalingUpdateList): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaGlobalSecondaryIndexUpdatesUndefined: Self = StObject.set(x, "ReplicaGlobalSecondaryIndexUpdates", js.undefined)
+      inline def setReplicaGlobalSecondaryIndexUpdatesUndefined: Self = StObject.set(x, "ReplicaGlobalSecondaryIndexUpdates", js.undefined)
       
-      @scala.inline
-      def setReplicaGlobalSecondaryIndexUpdatesVarargs(value: ReplicaGlobalSecondaryIndexAutoScalingUpdate*): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexUpdates", js.Array(value :_*))
+      inline def setReplicaGlobalSecondaryIndexUpdatesVarargs(value: ReplicaGlobalSecondaryIndexAutoScalingUpdate*): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexUpdates", js.Array(value :_*))
       
-      @scala.inline
-      def setReplicaProvisionedReadCapacityAutoScalingUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingUpdate", value.asInstanceOf[js.Any])
+      inline def setReplicaProvisionedReadCapacityAutoScalingUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaProvisionedReadCapacityAutoScalingUpdateUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingUpdate", js.undefined)
+      inline def setReplicaProvisionedReadCapacityAutoScalingUpdateUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingUpdate", js.undefined)
     }
   }
   
@@ -6409,65 +5449,46 @@ object DocumentClient {
   }
   object ReplicaDescription {
     
-    @scala.inline
-    def apply(): ReplicaDescription = {
+    inline def apply(): ReplicaDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplicaDescription]
     }
     
-    @scala.inline
-    implicit class ReplicaDescriptionMutableBuilder[Self <: ReplicaDescription] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaDescription](x: Self) {
       
-      @scala.inline
-      def setGlobalSecondaryIndexes(value: ReplicaGlobalSecondaryIndexDescriptionList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexes(value: ReplicaGlobalSecondaryIndexDescriptionList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
+      inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndexDescription*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndexDescription*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setKMSMasterKeyId(value: KMSMasterKeyId): Self = StObject.set(x, "KMSMasterKeyId", value.asInstanceOf[js.Any])
+      inline def setKMSMasterKeyId(value: KMSMasterKeyId): Self = StObject.set(x, "KMSMasterKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKMSMasterKeyIdUndefined: Self = StObject.set(x, "KMSMasterKeyId", js.undefined)
+      inline def setKMSMasterKeyIdUndefined: Self = StObject.set(x, "KMSMasterKeyId", js.undefined)
       
-      @scala.inline
-      def setProvisionedThroughputOverride(value: ProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughputOverride(value: ProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
+      inline def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
       
-      @scala.inline
-      def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+      inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
+      inline def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
       
-      @scala.inline
-      def setReplicaInaccessibleDateTime(value: Date): Self = StObject.set(x, "ReplicaInaccessibleDateTime", value.asInstanceOf[js.Any])
+      inline def setReplicaInaccessibleDateTime(value: Date): Self = StObject.set(x, "ReplicaInaccessibleDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaInaccessibleDateTimeUndefined: Self = StObject.set(x, "ReplicaInaccessibleDateTime", js.undefined)
+      inline def setReplicaInaccessibleDateTimeUndefined: Self = StObject.set(x, "ReplicaInaccessibleDateTime", js.undefined)
       
-      @scala.inline
-      def setReplicaStatus(value: ReplicaStatus): Self = StObject.set(x, "ReplicaStatus", value.asInstanceOf[js.Any])
+      inline def setReplicaStatus(value: ReplicaStatus): Self = StObject.set(x, "ReplicaStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaStatusDescription(value: ReplicaStatusDescription): Self = StObject.set(x, "ReplicaStatusDescription", value.asInstanceOf[js.Any])
+      inline def setReplicaStatusDescription(value: ReplicaStatusDescription): Self = StObject.set(x, "ReplicaStatusDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaStatusDescriptionUndefined: Self = StObject.set(x, "ReplicaStatusDescription", js.undefined)
+      inline def setReplicaStatusDescriptionUndefined: Self = StObject.set(x, "ReplicaStatusDescription", js.undefined)
       
-      @scala.inline
-      def setReplicaStatusPercentProgress(value: ReplicaStatusPercentProgress): Self = StObject.set(x, "ReplicaStatusPercentProgress", value.asInstanceOf[js.Any])
+      inline def setReplicaStatusPercentProgress(value: ReplicaStatusPercentProgress): Self = StObject.set(x, "ReplicaStatusPercentProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaStatusPercentProgressUndefined: Self = StObject.set(x, "ReplicaStatusPercentProgress", js.undefined)
+      inline def setReplicaStatusPercentProgressUndefined: Self = StObject.set(x, "ReplicaStatusPercentProgress", js.undefined)
       
-      @scala.inline
-      def setReplicaStatusUndefined: Self = StObject.set(x, "ReplicaStatus", js.undefined)
+      inline def setReplicaStatusUndefined: Self = StObject.set(x, "ReplicaStatus", js.undefined)
     }
   }
   
@@ -6487,23 +5508,18 @@ object DocumentClient {
   }
   object ReplicaGlobalSecondaryIndex {
     
-    @scala.inline
-    def apply(IndexName: IndexName): ReplicaGlobalSecondaryIndex = {
+    inline def apply(IndexName: IndexName): ReplicaGlobalSecondaryIndex = {
       val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplicaGlobalSecondaryIndex]
     }
     
-    @scala.inline
-    implicit class ReplicaGlobalSecondaryIndexMutableBuilder[Self <: ReplicaGlobalSecondaryIndex] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaGlobalSecondaryIndex](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputOverride(value: ProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughputOverride(value: ProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
+      inline def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
     }
   }
   
@@ -6525,38 +5541,28 @@ object DocumentClient {
   }
   object ReplicaGlobalSecondaryIndexAutoScalingDescription {
     
-    @scala.inline
-    def apply(): ReplicaGlobalSecondaryIndexAutoScalingDescription = {
+    inline def apply(): ReplicaGlobalSecondaryIndexAutoScalingDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplicaGlobalSecondaryIndexAutoScalingDescription]
     }
     
-    @scala.inline
-    implicit class ReplicaGlobalSecondaryIndexAutoScalingDescriptionMutableBuilder[Self <: ReplicaGlobalSecondaryIndexAutoScalingDescription] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaGlobalSecondaryIndexAutoScalingDescription](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+      inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      @scala.inline
-      def setIndexStatus(value: IndexStatus): Self = StObject.set(x, "IndexStatus", value.asInstanceOf[js.Any])
+      inline def setIndexStatus(value: IndexStatus): Self = StObject.set(x, "IndexStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexStatusUndefined: Self = StObject.set(x, "IndexStatus", js.undefined)
+      inline def setIndexStatusUndefined: Self = StObject.set(x, "IndexStatus", js.undefined)
       
-      @scala.inline
-      def setProvisionedReadCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
+      inline def setProvisionedReadCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedReadCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettings", js.undefined)
+      inline def setProvisionedReadCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettings", js.undefined)
       
-      @scala.inline
-      def setProvisionedWriteCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
+      inline def setProvisionedWriteCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedWriteCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettings", js.undefined)
+      inline def setProvisionedWriteCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettings", js.undefined)
     }
   }
   
@@ -6573,26 +5579,20 @@ object DocumentClient {
   }
   object ReplicaGlobalSecondaryIndexAutoScalingUpdate {
     
-    @scala.inline
-    def apply(): ReplicaGlobalSecondaryIndexAutoScalingUpdate = {
+    inline def apply(): ReplicaGlobalSecondaryIndexAutoScalingUpdate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplicaGlobalSecondaryIndexAutoScalingUpdate]
     }
     
-    @scala.inline
-    implicit class ReplicaGlobalSecondaryIndexAutoScalingUpdateMutableBuilder[Self <: ReplicaGlobalSecondaryIndexAutoScalingUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaGlobalSecondaryIndexAutoScalingUpdate](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+      inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      @scala.inline
-      def setProvisionedReadCapacityAutoScalingUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingUpdate", value.asInstanceOf[js.Any])
+      inline def setProvisionedReadCapacityAutoScalingUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedReadCapacityAutoScalingUpdateUndefined: Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingUpdate", js.undefined)
+      inline def setProvisionedReadCapacityAutoScalingUpdateUndefined: Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingUpdate", js.undefined)
     }
   }
   
@@ -6612,26 +5612,20 @@ object DocumentClient {
   }
   object ReplicaGlobalSecondaryIndexDescription {
     
-    @scala.inline
-    def apply(): ReplicaGlobalSecondaryIndexDescription = {
+    inline def apply(): ReplicaGlobalSecondaryIndexDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplicaGlobalSecondaryIndexDescription]
     }
     
-    @scala.inline
-    implicit class ReplicaGlobalSecondaryIndexDescriptionMutableBuilder[Self <: ReplicaGlobalSecondaryIndexDescription] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaGlobalSecondaryIndexDescription](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+      inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      @scala.inline
-      def setProvisionedThroughputOverride(value: ProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughputOverride(value: ProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
+      inline def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
     }
   }
   
@@ -6673,47 +5667,34 @@ object DocumentClient {
   }
   object ReplicaGlobalSecondaryIndexSettingsDescription {
     
-    @scala.inline
-    def apply(IndexName: IndexName): ReplicaGlobalSecondaryIndexSettingsDescription = {
+    inline def apply(IndexName: IndexName): ReplicaGlobalSecondaryIndexSettingsDescription = {
       val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplicaGlobalSecondaryIndexSettingsDescription]
     }
     
-    @scala.inline
-    implicit class ReplicaGlobalSecondaryIndexSettingsDescriptionMutableBuilder[Self <: ReplicaGlobalSecondaryIndexSettingsDescription] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaGlobalSecondaryIndexSettingsDescription](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexStatus(value: IndexStatus): Self = StObject.set(x, "IndexStatus", value.asInstanceOf[js.Any])
+      inline def setIndexStatus(value: IndexStatus): Self = StObject.set(x, "IndexStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexStatusUndefined: Self = StObject.set(x, "IndexStatus", js.undefined)
+      inline def setIndexStatusUndefined: Self = StObject.set(x, "IndexStatus", js.undefined)
       
-      @scala.inline
-      def setProvisionedReadCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
+      inline def setProvisionedReadCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedReadCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettings", js.undefined)
+      inline def setProvisionedReadCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettings", js.undefined)
       
-      @scala.inline
-      def setProvisionedReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setProvisionedReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedReadCapacityUnitsUndefined: Self = StObject.set(x, "ProvisionedReadCapacityUnits", js.undefined)
+      inline def setProvisionedReadCapacityUnitsUndefined: Self = StObject.set(x, "ProvisionedReadCapacityUnits", js.undefined)
       
-      @scala.inline
-      def setProvisionedWriteCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
+      inline def setProvisionedWriteCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedWriteCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettings", js.undefined)
+      inline def setProvisionedWriteCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettings", js.undefined)
       
-      @scala.inline
-      def setProvisionedWriteCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ProvisionedWriteCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setProvisionedWriteCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ProvisionedWriteCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedWriteCapacityUnitsUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityUnits", js.undefined)
+      inline def setProvisionedWriteCapacityUnitsUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityUnits", js.undefined)
     }
   }
   
@@ -6738,29 +5719,22 @@ object DocumentClient {
   }
   object ReplicaGlobalSecondaryIndexSettingsUpdate {
     
-    @scala.inline
-    def apply(IndexName: IndexName): ReplicaGlobalSecondaryIndexSettingsUpdate = {
+    inline def apply(IndexName: IndexName): ReplicaGlobalSecondaryIndexSettingsUpdate = {
       val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplicaGlobalSecondaryIndexSettingsUpdate]
     }
     
-    @scala.inline
-    implicit class ReplicaGlobalSecondaryIndexSettingsUpdateMutableBuilder[Self <: ReplicaGlobalSecondaryIndexSettingsUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaGlobalSecondaryIndexSettingsUpdate](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedReadCapacityAutoScalingSettingsUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
+      inline def setProvisionedReadCapacityAutoScalingSettingsUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedReadCapacityAutoScalingSettingsUpdateUndefined: Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettingsUpdate", js.undefined)
+      inline def setProvisionedReadCapacityAutoScalingSettingsUpdateUndefined: Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettingsUpdate", js.undefined)
       
-      @scala.inline
-      def setProvisionedReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setProvisionedReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedReadCapacityUnitsUndefined: Self = StObject.set(x, "ProvisionedReadCapacityUnits", js.undefined)
+      inline def setProvisionedReadCapacityUnitsUndefined: Self = StObject.set(x, "ProvisionedReadCapacityUnits", js.undefined)
     }
   }
   
@@ -6812,62 +5786,44 @@ object DocumentClient {
   }
   object ReplicaSettingsDescription {
     
-    @scala.inline
-    def apply(RegionName: RegionName): ReplicaSettingsDescription = {
+    inline def apply(RegionName: RegionName): ReplicaSettingsDescription = {
       val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplicaSettingsDescription]
     }
     
-    @scala.inline
-    implicit class ReplicaSettingsDescriptionMutableBuilder[Self <: ReplicaSettingsDescription] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaSettingsDescription](x: Self) {
       
-      @scala.inline
-      def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+      inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaBillingModeSummary(value: BillingModeSummary): Self = StObject.set(x, "ReplicaBillingModeSummary", value.asInstanceOf[js.Any])
+      inline def setReplicaBillingModeSummary(value: BillingModeSummary): Self = StObject.set(x, "ReplicaBillingModeSummary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaBillingModeSummaryUndefined: Self = StObject.set(x, "ReplicaBillingModeSummary", js.undefined)
+      inline def setReplicaBillingModeSummaryUndefined: Self = StObject.set(x, "ReplicaBillingModeSummary", js.undefined)
       
-      @scala.inline
-      def setReplicaGlobalSecondaryIndexSettings(value: ReplicaGlobalSecondaryIndexSettingsDescriptionList): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettings", value.asInstanceOf[js.Any])
+      inline def setReplicaGlobalSecondaryIndexSettings(value: ReplicaGlobalSecondaryIndexSettingsDescriptionList): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaGlobalSecondaryIndexSettingsUndefined: Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettings", js.undefined)
+      inline def setReplicaGlobalSecondaryIndexSettingsUndefined: Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettings", js.undefined)
       
-      @scala.inline
-      def setReplicaGlobalSecondaryIndexSettingsVarargs(value: ReplicaGlobalSecondaryIndexSettingsDescription*): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettings", js.Array(value :_*))
+      inline def setReplicaGlobalSecondaryIndexSettingsVarargs(value: ReplicaGlobalSecondaryIndexSettingsDescription*): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettings", js.Array(value :_*))
       
-      @scala.inline
-      def setReplicaProvisionedReadCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
+      inline def setReplicaProvisionedReadCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaProvisionedReadCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettings", js.undefined)
+      inline def setReplicaProvisionedReadCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettings", js.undefined)
       
-      @scala.inline
-      def setReplicaProvisionedReadCapacityUnits(value: NonNegativeLongObject): Self = StObject.set(x, "ReplicaProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setReplicaProvisionedReadCapacityUnits(value: NonNegativeLongObject): Self = StObject.set(x, "ReplicaProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaProvisionedReadCapacityUnitsUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityUnits", js.undefined)
+      inline def setReplicaProvisionedReadCapacityUnitsUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityUnits", js.undefined)
       
-      @scala.inline
-      def setReplicaProvisionedWriteCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ReplicaProvisionedWriteCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
+      inline def setReplicaProvisionedWriteCapacityAutoScalingSettings(value: AutoScalingSettingsDescription): Self = StObject.set(x, "ReplicaProvisionedWriteCapacityAutoScalingSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaProvisionedWriteCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ReplicaProvisionedWriteCapacityAutoScalingSettings", js.undefined)
+      inline def setReplicaProvisionedWriteCapacityAutoScalingSettingsUndefined: Self = StObject.set(x, "ReplicaProvisionedWriteCapacityAutoScalingSettings", js.undefined)
       
-      @scala.inline
-      def setReplicaProvisionedWriteCapacityUnits(value: NonNegativeLongObject): Self = StObject.set(x, "ReplicaProvisionedWriteCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setReplicaProvisionedWriteCapacityUnits(value: NonNegativeLongObject): Self = StObject.set(x, "ReplicaProvisionedWriteCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaProvisionedWriteCapacityUnitsUndefined: Self = StObject.set(x, "ReplicaProvisionedWriteCapacityUnits", js.undefined)
+      inline def setReplicaProvisionedWriteCapacityUnitsUndefined: Self = StObject.set(x, "ReplicaProvisionedWriteCapacityUnits", js.undefined)
       
-      @scala.inline
-      def setReplicaStatus(value: ReplicaStatus): Self = StObject.set(x, "ReplicaStatus", value.asInstanceOf[js.Any])
+      inline def setReplicaStatus(value: ReplicaStatus): Self = StObject.set(x, "ReplicaStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaStatusUndefined: Self = StObject.set(x, "ReplicaStatus", js.undefined)
+      inline def setReplicaStatusUndefined: Self = StObject.set(x, "ReplicaStatus", js.undefined)
     }
   }
   
@@ -6897,38 +5853,28 @@ object DocumentClient {
   }
   object ReplicaSettingsUpdate {
     
-    @scala.inline
-    def apply(RegionName: RegionName): ReplicaSettingsUpdate = {
+    inline def apply(RegionName: RegionName): ReplicaSettingsUpdate = {
       val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplicaSettingsUpdate]
     }
     
-    @scala.inline
-    implicit class ReplicaSettingsUpdateMutableBuilder[Self <: ReplicaSettingsUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaSettingsUpdate](x: Self) {
       
-      @scala.inline
-      def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+      inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaGlobalSecondaryIndexSettingsUpdate(value: ReplicaGlobalSecondaryIndexSettingsUpdateList): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettingsUpdate", value.asInstanceOf[js.Any])
+      inline def setReplicaGlobalSecondaryIndexSettingsUpdate(value: ReplicaGlobalSecondaryIndexSettingsUpdateList): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettingsUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaGlobalSecondaryIndexSettingsUpdateUndefined: Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettingsUpdate", js.undefined)
+      inline def setReplicaGlobalSecondaryIndexSettingsUpdateUndefined: Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettingsUpdate", js.undefined)
       
-      @scala.inline
-      def setReplicaGlobalSecondaryIndexSettingsUpdateVarargs(value: ReplicaGlobalSecondaryIndexSettingsUpdate*): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettingsUpdate", js.Array(value :_*))
+      inline def setReplicaGlobalSecondaryIndexSettingsUpdateVarargs(value: ReplicaGlobalSecondaryIndexSettingsUpdate*): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettingsUpdate", js.Array(value :_*))
       
-      @scala.inline
-      def setReplicaProvisionedReadCapacityAutoScalingSettingsUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
+      inline def setReplicaProvisionedReadCapacityAutoScalingSettingsUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaProvisionedReadCapacityAutoScalingSettingsUpdateUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate", js.undefined)
+      inline def setReplicaProvisionedReadCapacityAutoScalingSettingsUpdateUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate", js.undefined)
       
-      @scala.inline
-      def setReplicaProvisionedReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ReplicaProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setReplicaProvisionedReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ReplicaProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaProvisionedReadCapacityUnitsUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityUnits", js.undefined)
+      inline def setReplicaProvisionedReadCapacityUnitsUndefined: Self = StObject.set(x, "ReplicaProvisionedReadCapacityUnits", js.undefined)
     }
   }
   
@@ -6964,26 +5910,20 @@ object DocumentClient {
   }
   object ReplicaUpdate {
     
-    @scala.inline
-    def apply(): ReplicaUpdate = {
+    inline def apply(): ReplicaUpdate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplicaUpdate]
     }
     
-    @scala.inline
-    implicit class ReplicaUpdateMutableBuilder[Self <: ReplicaUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaUpdate](x: Self) {
       
-      @scala.inline
-      def setCreate(value: CreateReplicaAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: CreateReplicaAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
       
-      @scala.inline
-      def setDelete(value: DeleteReplicaAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: DeleteReplicaAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
+      inline def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
     }
   }
   
@@ -7008,32 +5948,24 @@ object DocumentClient {
   }
   object ReplicationGroupUpdate {
     
-    @scala.inline
-    def apply(): ReplicationGroupUpdate = {
+    inline def apply(): ReplicationGroupUpdate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplicationGroupUpdate]
     }
     
-    @scala.inline
-    implicit class ReplicationGroupUpdateMutableBuilder[Self <: ReplicationGroupUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicationGroupUpdate](x: Self) {
       
-      @scala.inline
-      def setCreate(value: CreateReplicationGroupMemberAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: CreateReplicationGroupMemberAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "Create", js.undefined)
       
-      @scala.inline
-      def setDelete(value: DeleteReplicationGroupMemberAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: DeleteReplicationGroupMemberAction): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
+      inline def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: UpdateReplicationGroupMemberAction): Self = StObject.set(x, "Update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: UpdateReplicationGroupMemberAction): Self = StObject.set(x, "Update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "Update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "Update", js.undefined)
     }
   }
   
@@ -7067,32 +5999,24 @@ object DocumentClient {
   }
   object RestoreSummary {
     
-    @scala.inline
-    def apply(RestoreDateTime: Date, RestoreInProgress: RestoreInProgress): RestoreSummary = {
+    inline def apply(RestoreDateTime: Date, RestoreInProgress: RestoreInProgress): RestoreSummary = {
       val __obj = js.Dynamic.literal(RestoreDateTime = RestoreDateTime.asInstanceOf[js.Any], RestoreInProgress = RestoreInProgress.asInstanceOf[js.Any])
       __obj.asInstanceOf[RestoreSummary]
     }
     
-    @scala.inline
-    implicit class RestoreSummaryMutableBuilder[Self <: RestoreSummary] (val x: Self) extends AnyVal {
+    extension [Self <: RestoreSummary](x: Self) {
       
-      @scala.inline
-      def setRestoreDateTime(value: Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
+      inline def setRestoreDateTime(value: Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestoreInProgress(value: RestoreInProgress): Self = StObject.set(x, "RestoreInProgress", value.asInstanceOf[js.Any])
+      inline def setRestoreInProgress(value: RestoreInProgress): Self = StObject.set(x, "RestoreInProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceBackupArn(value: BackupArn): Self = StObject.set(x, "SourceBackupArn", value.asInstanceOf[js.Any])
+      inline def setSourceBackupArn(value: BackupArn): Self = StObject.set(x, "SourceBackupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceBackupArnUndefined: Self = StObject.set(x, "SourceBackupArn", js.undefined)
+      inline def setSourceBackupArnUndefined: Self = StObject.set(x, "SourceBackupArn", js.undefined)
       
-      @scala.inline
-      def setSourceTableArn(value: TableArn): Self = StObject.set(x, "SourceTableArn", value.asInstanceOf[js.Any])
+      inline def setSourceTableArn(value: TableArn): Self = StObject.set(x, "SourceTableArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTableArnUndefined: Self = StObject.set(x, "SourceTableArn", js.undefined)
+      inline def setSourceTableArnUndefined: Self = StObject.set(x, "SourceTableArn", js.undefined)
     }
   }
   
@@ -7135,56 +6059,40 @@ object DocumentClient {
   }
   object RestoreTableFromBackupInput {
     
-    @scala.inline
-    def apply(BackupArn: BackupArn, TargetTableName: TableName): RestoreTableFromBackupInput = {
+    inline def apply(BackupArn: BackupArn, TargetTableName: TableName): RestoreTableFromBackupInput = {
       val __obj = js.Dynamic.literal(BackupArn = BackupArn.asInstanceOf[js.Any], TargetTableName = TargetTableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[RestoreTableFromBackupInput]
     }
     
-    @scala.inline
-    implicit class RestoreTableFromBackupInputMutableBuilder[Self <: RestoreTableFromBackupInput] (val x: Self) extends AnyVal {
+    extension [Self <: RestoreTableFromBackupInput](x: Self) {
       
-      @scala.inline
-      def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
+      inline def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBillingModeOverride(value: BillingMode): Self = StObject.set(x, "BillingModeOverride", value.asInstanceOf[js.Any])
+      inline def setBillingModeOverride(value: BillingMode): Self = StObject.set(x, "BillingModeOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBillingModeOverrideUndefined: Self = StObject.set(x, "BillingModeOverride", js.undefined)
+      inline def setBillingModeOverrideUndefined: Self = StObject.set(x, "BillingModeOverride", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexOverride(value: GlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexOverride", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexOverride(value: GlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexOverrideUndefined: Self = StObject.set(x, "GlobalSecondaryIndexOverride", js.undefined)
+      inline def setGlobalSecondaryIndexOverrideUndefined: Self = StObject.set(x, "GlobalSecondaryIndexOverride", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexOverrideVarargs(value: GlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexOverride", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexOverrideVarargs(value: GlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexOverride", js.Array(value :_*))
       
-      @scala.inline
-      def setLocalSecondaryIndexOverride(value: LocalSecondaryIndexList): Self = StObject.set(x, "LocalSecondaryIndexOverride", value.asInstanceOf[js.Any])
+      inline def setLocalSecondaryIndexOverride(value: LocalSecondaryIndexList): Self = StObject.set(x, "LocalSecondaryIndexOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSecondaryIndexOverrideUndefined: Self = StObject.set(x, "LocalSecondaryIndexOverride", js.undefined)
+      inline def setLocalSecondaryIndexOverrideUndefined: Self = StObject.set(x, "LocalSecondaryIndexOverride", js.undefined)
       
-      @scala.inline
-      def setLocalSecondaryIndexOverrideVarargs(value: LocalSecondaryIndex*): Self = StObject.set(x, "LocalSecondaryIndexOverride", js.Array(value :_*))
+      inline def setLocalSecondaryIndexOverrideVarargs(value: LocalSecondaryIndex*): Self = StObject.set(x, "LocalSecondaryIndexOverride", js.Array(value :_*))
       
-      @scala.inline
-      def setProvisionedThroughputOverride(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughputOverride(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
+      inline def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
       
-      @scala.inline
-      def setSSESpecificationOverride(value: SSESpecification): Self = StObject.set(x, "SSESpecificationOverride", value.asInstanceOf[js.Any])
+      inline def setSSESpecificationOverride(value: SSESpecification): Self = StObject.set(x, "SSESpecificationOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSESpecificationOverrideUndefined: Self = StObject.set(x, "SSESpecificationOverride", js.undefined)
+      inline def setSSESpecificationOverrideUndefined: Self = StObject.set(x, "SSESpecificationOverride", js.undefined)
       
-      @scala.inline
-      def setTargetTableName(value: TableName): Self = StObject.set(x, "TargetTableName", value.asInstanceOf[js.Any])
+      inline def setTargetTableName(value: TableName): Self = StObject.set(x, "TargetTableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -7197,20 +6105,16 @@ object DocumentClient {
   }
   object RestoreTableFromBackupOutput {
     
-    @scala.inline
-    def apply(): RestoreTableFromBackupOutput = {
+    inline def apply(): RestoreTableFromBackupOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RestoreTableFromBackupOutput]
     }
     
-    @scala.inline
-    implicit class RestoreTableFromBackupOutputMutableBuilder[Self <: RestoreTableFromBackupOutput] (val x: Self) extends AnyVal {
+    extension [Self <: RestoreTableFromBackupOutput](x: Self) {
       
-      @scala.inline
-      def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
+      inline def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
+      inline def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
     }
   }
   
@@ -7268,77 +6172,54 @@ object DocumentClient {
   }
   object RestoreTableToPointInTimeInput {
     
-    @scala.inline
-    def apply(TargetTableName: TableName): RestoreTableToPointInTimeInput = {
+    inline def apply(TargetTableName: TableName): RestoreTableToPointInTimeInput = {
       val __obj = js.Dynamic.literal(TargetTableName = TargetTableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[RestoreTableToPointInTimeInput]
     }
     
-    @scala.inline
-    implicit class RestoreTableToPointInTimeInputMutableBuilder[Self <: RestoreTableToPointInTimeInput] (val x: Self) extends AnyVal {
+    extension [Self <: RestoreTableToPointInTimeInput](x: Self) {
       
-      @scala.inline
-      def setBillingModeOverride(value: BillingMode): Self = StObject.set(x, "BillingModeOverride", value.asInstanceOf[js.Any])
+      inline def setBillingModeOverride(value: BillingMode): Self = StObject.set(x, "BillingModeOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBillingModeOverrideUndefined: Self = StObject.set(x, "BillingModeOverride", js.undefined)
+      inline def setBillingModeOverrideUndefined: Self = StObject.set(x, "BillingModeOverride", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexOverride(value: GlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexOverride", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexOverride(value: GlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexOverrideUndefined: Self = StObject.set(x, "GlobalSecondaryIndexOverride", js.undefined)
+      inline def setGlobalSecondaryIndexOverrideUndefined: Self = StObject.set(x, "GlobalSecondaryIndexOverride", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexOverrideVarargs(value: GlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexOverride", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexOverrideVarargs(value: GlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexOverride", js.Array(value :_*))
       
-      @scala.inline
-      def setLocalSecondaryIndexOverride(value: LocalSecondaryIndexList): Self = StObject.set(x, "LocalSecondaryIndexOverride", value.asInstanceOf[js.Any])
+      inline def setLocalSecondaryIndexOverride(value: LocalSecondaryIndexList): Self = StObject.set(x, "LocalSecondaryIndexOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSecondaryIndexOverrideUndefined: Self = StObject.set(x, "LocalSecondaryIndexOverride", js.undefined)
+      inline def setLocalSecondaryIndexOverrideUndefined: Self = StObject.set(x, "LocalSecondaryIndexOverride", js.undefined)
       
-      @scala.inline
-      def setLocalSecondaryIndexOverrideVarargs(value: LocalSecondaryIndex*): Self = StObject.set(x, "LocalSecondaryIndexOverride", js.Array(value :_*))
+      inline def setLocalSecondaryIndexOverrideVarargs(value: LocalSecondaryIndex*): Self = StObject.set(x, "LocalSecondaryIndexOverride", js.Array(value :_*))
       
-      @scala.inline
-      def setProvisionedThroughputOverride(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughputOverride(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
+      inline def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
       
-      @scala.inline
-      def setRestoreDateTime(value: Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
+      inline def setRestoreDateTime(value: Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestoreDateTimeUndefined: Self = StObject.set(x, "RestoreDateTime", js.undefined)
+      inline def setRestoreDateTimeUndefined: Self = StObject.set(x, "RestoreDateTime", js.undefined)
       
-      @scala.inline
-      def setSSESpecificationOverride(value: SSESpecification): Self = StObject.set(x, "SSESpecificationOverride", value.asInstanceOf[js.Any])
+      inline def setSSESpecificationOverride(value: SSESpecification): Self = StObject.set(x, "SSESpecificationOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSESpecificationOverrideUndefined: Self = StObject.set(x, "SSESpecificationOverride", js.undefined)
+      inline def setSSESpecificationOverrideUndefined: Self = StObject.set(x, "SSESpecificationOverride", js.undefined)
       
-      @scala.inline
-      def setSourceTableArn(value: TableArn): Self = StObject.set(x, "SourceTableArn", value.asInstanceOf[js.Any])
+      inline def setSourceTableArn(value: TableArn): Self = StObject.set(x, "SourceTableArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTableArnUndefined: Self = StObject.set(x, "SourceTableArn", js.undefined)
+      inline def setSourceTableArnUndefined: Self = StObject.set(x, "SourceTableArn", js.undefined)
       
-      @scala.inline
-      def setSourceTableName(value: TableName): Self = StObject.set(x, "SourceTableName", value.asInstanceOf[js.Any])
+      inline def setSourceTableName(value: TableName): Self = StObject.set(x, "SourceTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTableNameUndefined: Self = StObject.set(x, "SourceTableName", js.undefined)
+      inline def setSourceTableNameUndefined: Self = StObject.set(x, "SourceTableName", js.undefined)
       
-      @scala.inline
-      def setTargetTableName(value: TableName): Self = StObject.set(x, "TargetTableName", value.asInstanceOf[js.Any])
+      inline def setTargetTableName(value: TableName): Self = StObject.set(x, "TargetTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseLatestRestorableTime(value: BooleanObject): Self = StObject.set(x, "UseLatestRestorableTime", value.asInstanceOf[js.Any])
+      inline def setUseLatestRestorableTime(value: BooleanObject): Self = StObject.set(x, "UseLatestRestorableTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseLatestRestorableTimeUndefined: Self = StObject.set(x, "UseLatestRestorableTime", js.undefined)
+      inline def setUseLatestRestorableTimeUndefined: Self = StObject.set(x, "UseLatestRestorableTime", js.undefined)
     }
   }
   
@@ -7351,20 +6232,16 @@ object DocumentClient {
   }
   object RestoreTableToPointInTimeOutput {
     
-    @scala.inline
-    def apply(): RestoreTableToPointInTimeOutput = {
+    inline def apply(): RestoreTableToPointInTimeOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RestoreTableToPointInTimeOutput]
     }
     
-    @scala.inline
-    implicit class RestoreTableToPointInTimeOutputMutableBuilder[Self <: RestoreTableToPointInTimeOutput] (val x: Self) extends AnyVal {
+    extension [Self <: RestoreTableToPointInTimeOutput](x: Self) {
       
-      @scala.inline
-      def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
+      inline def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
+      inline def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
     }
   }
   
@@ -7439,38 +6316,28 @@ object DocumentClient {
   }
   object SSEDescription {
     
-    @scala.inline
-    def apply(): SSEDescription = {
+    inline def apply(): SSEDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SSEDescription]
     }
     
-    @scala.inline
-    implicit class SSEDescriptionMutableBuilder[Self <: SSEDescription] (val x: Self) extends AnyVal {
+    extension [Self <: SSEDescription](x: Self) {
       
-      @scala.inline
-      def setInaccessibleEncryptionDateTime(value: Date): Self = StObject.set(x, "InaccessibleEncryptionDateTime", value.asInstanceOf[js.Any])
+      inline def setInaccessibleEncryptionDateTime(value: Date): Self = StObject.set(x, "InaccessibleEncryptionDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInaccessibleEncryptionDateTimeUndefined: Self = StObject.set(x, "InaccessibleEncryptionDateTime", js.undefined)
+      inline def setInaccessibleEncryptionDateTimeUndefined: Self = StObject.set(x, "InaccessibleEncryptionDateTime", js.undefined)
       
-      @scala.inline
-      def setKMSMasterKeyArn(value: KMSMasterKeyArn): Self = StObject.set(x, "KMSMasterKeyArn", value.asInstanceOf[js.Any])
+      inline def setKMSMasterKeyArn(value: KMSMasterKeyArn): Self = StObject.set(x, "KMSMasterKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKMSMasterKeyArnUndefined: Self = StObject.set(x, "KMSMasterKeyArn", js.undefined)
+      inline def setKMSMasterKeyArnUndefined: Self = StObject.set(x, "KMSMasterKeyArn", js.undefined)
       
-      @scala.inline
-      def setSSEType(value: SSEType): Self = StObject.set(x, "SSEType", value.asInstanceOf[js.Any])
+      inline def setSSEType(value: SSEType): Self = StObject.set(x, "SSEType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSETypeUndefined: Self = StObject.set(x, "SSEType", js.undefined)
+      inline def setSSETypeUndefined: Self = StObject.set(x, "SSEType", js.undefined)
       
-      @scala.inline
-      def setStatus(value: SSEStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: SSEStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     }
   }
   
@@ -7495,32 +6362,24 @@ object DocumentClient {
   }
   object SSESpecification {
     
-    @scala.inline
-    def apply(): SSESpecification = {
+    inline def apply(): SSESpecification = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SSESpecification]
     }
     
-    @scala.inline
-    implicit class SSESpecificationMutableBuilder[Self <: SSESpecification] (val x: Self) extends AnyVal {
+    extension [Self <: SSESpecification](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: SSEEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: SSEEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
       
-      @scala.inline
-      def setKMSMasterKeyId(value: KMSMasterKeyId): Self = StObject.set(x, "KMSMasterKeyId", value.asInstanceOf[js.Any])
+      inline def setKMSMasterKeyId(value: KMSMasterKeyId): Self = StObject.set(x, "KMSMasterKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKMSMasterKeyIdUndefined: Self = StObject.set(x, "KMSMasterKeyId", js.undefined)
+      inline def setKMSMasterKeyIdUndefined: Self = StObject.set(x, "KMSMasterKeyId", js.undefined)
       
-      @scala.inline
-      def setSSEType(value: SSEType): Self = StObject.set(x, "SSEType", value.asInstanceOf[js.Any])
+      inline def setSSEType(value: SSEType): Self = StObject.set(x, "SSEType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSETypeUndefined: Self = StObject.set(x, "SSEType", js.undefined)
+      inline def setSSETypeUndefined: Self = StObject.set(x, "SSEType", js.undefined)
     }
   }
   
@@ -7630,110 +6489,76 @@ object DocumentClient {
   }
   object ScanInput {
     
-    @scala.inline
-    def apply(TableName: TableName): ScanInput = {
+    inline def apply(TableName: TableName): ScanInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScanInput]
     }
     
-    @scala.inline
-    implicit class ScanInputMutableBuilder[Self <: ScanInput] (val x: Self) extends AnyVal {
+    extension [Self <: ScanInput](x: Self) {
       
-      @scala.inline
-      def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
+      inline def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
+      inline def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
       
-      @scala.inline
-      def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
+      inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
       
-      @scala.inline
-      def setConditionalOperator(value: ConditionalOperator): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
+      inline def setConditionalOperator(value: ConditionalOperator): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionalOperatorUndefined: Self = StObject.set(x, "ConditionalOperator", js.undefined)
+      inline def setConditionalOperatorUndefined: Self = StObject.set(x, "ConditionalOperator", js.undefined)
       
-      @scala.inline
-      def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
+      inline def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
+      inline def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
       
-      @scala.inline
-      def setExclusiveStartKey(value: Key): Self = StObject.set(x, "ExclusiveStartKey", value.asInstanceOf[js.Any])
+      inline def setExclusiveStartKey(value: Key): Self = StObject.set(x, "ExclusiveStartKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveStartKeyUndefined: Self = StObject.set(x, "ExclusiveStartKey", js.undefined)
+      inline def setExclusiveStartKeyUndefined: Self = StObject.set(x, "ExclusiveStartKey", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+      inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
+      inline def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
       
-      @scala.inline
-      def setFilterExpression(value: ConditionExpression): Self = StObject.set(x, "FilterExpression", value.asInstanceOf[js.Any])
+      inline def setFilterExpression(value: ConditionExpression): Self = StObject.set(x, "FilterExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterExpressionUndefined: Self = StObject.set(x, "FilterExpression", js.undefined)
+      inline def setFilterExpressionUndefined: Self = StObject.set(x, "FilterExpression", js.undefined)
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+      inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      @scala.inline
-      def setLimit(value: PositiveIntegerObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: PositiveIntegerObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
       
-      @scala.inline
-      def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
+      inline def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
+      inline def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
       
-      @scala.inline
-      def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+      inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setScanFilter(value: FilterConditionMap): Self = StObject.set(x, "ScanFilter", value.asInstanceOf[js.Any])
+      inline def setScanFilter(value: FilterConditionMap): Self = StObject.set(x, "ScanFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScanFilterUndefined: Self = StObject.set(x, "ScanFilter", js.undefined)
+      inline def setScanFilterUndefined: Self = StObject.set(x, "ScanFilter", js.undefined)
       
-      @scala.inline
-      def setSegment(value: ScanSegment): Self = StObject.set(x, "Segment", value.asInstanceOf[js.Any])
+      inline def setSegment(value: ScanSegment): Self = StObject.set(x, "Segment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentUndefined: Self = StObject.set(x, "Segment", js.undefined)
+      inline def setSegmentUndefined: Self = StObject.set(x, "Segment", js.undefined)
       
-      @scala.inline
-      def setSelect(value: Select): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: Select): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "Select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "Select", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalSegments(value: ScanTotalSegments): Self = StObject.set(x, "TotalSegments", value.asInstanceOf[js.Any])
+      inline def setTotalSegments(value: ScanTotalSegments): Self = StObject.set(x, "TotalSegments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalSegmentsUndefined: Self = StObject.set(x, "TotalSegments", js.undefined)
+      inline def setTotalSegmentsUndefined: Self = StObject.set(x, "TotalSegments", js.undefined)
     }
   }
   
@@ -7766,47 +6591,34 @@ object DocumentClient {
   }
   object ScanOutput {
     
-    @scala.inline
-    def apply(): ScanOutput = {
+    inline def apply(): ScanOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScanOutput]
     }
     
-    @scala.inline
-    implicit class ScanOutputMutableBuilder[Self <: ScanOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ScanOutput](x: Self) {
       
-      @scala.inline
-      def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
       
-      @scala.inline
-      def setItems(value: ItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+      inline def setItems(value: ItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: AttributeMap*): Self = StObject.set(x, "Items", js.Array(value :_*))
+      inline def setItemsVarargs(value: AttributeMap*): Self = StObject.set(x, "Items", js.Array(value :_*))
       
-      @scala.inline
-      def setLastEvaluatedKey(value: Key): Self = StObject.set(x, "LastEvaluatedKey", value.asInstanceOf[js.Any])
+      inline def setLastEvaluatedKey(value: Key): Self = StObject.set(x, "LastEvaluatedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastEvaluatedKeyUndefined: Self = StObject.set(x, "LastEvaluatedKey", js.undefined)
+      inline def setLastEvaluatedKeyUndefined: Self = StObject.set(x, "LastEvaluatedKey", js.undefined)
       
-      @scala.inline
-      def setScannedCount(value: Integer): Self = StObject.set(x, "ScannedCount", value.asInstanceOf[js.Any])
+      inline def setScannedCount(value: Integer): Self = StObject.set(x, "ScannedCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScannedCountUndefined: Self = StObject.set(x, "ScannedCount", js.undefined)
+      inline def setScannedCountUndefined: Self = StObject.set(x, "ScannedCount", js.undefined)
     }
   }
   
@@ -7874,8 +6686,7 @@ object DocumentClient {
   }
   object SourceTableDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       KeySchema: KeySchema,
       ProvisionedThroughput: ProvisionedThroughput,
       TableCreationDateTime: TableCreationDateTime,
@@ -7886,50 +6697,35 @@ object DocumentClient {
       __obj.asInstanceOf[SourceTableDetails]
     }
     
-    @scala.inline
-    implicit class SourceTableDetailsMutableBuilder[Self <: SourceTableDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SourceTableDetails](x: Self) {
       
-      @scala.inline
-      def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
+      inline def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
+      inline def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
       
-      @scala.inline
-      def setItemCount(value: ItemCount): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
+      inline def setItemCount(value: ItemCount): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
+      inline def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
       
-      @scala.inline
-      def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
       
-      @scala.inline
-      def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
+      inline def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
+      inline def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
       
-      @scala.inline
-      def setTableCreationDateTime(value: TableCreationDateTime): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
+      inline def setTableCreationDateTime(value: TableCreationDateTime): Self = StObject.set(x, "TableCreationDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
+      inline def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableSizeBytes(value: Long): Self = StObject.set(x, "TableSizeBytes", value.asInstanceOf[js.Any])
+      inline def setTableSizeBytes(value: Long): Self = StObject.set(x, "TableSizeBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableSizeBytesUndefined: Self = StObject.set(x, "TableSizeBytes", js.undefined)
+      inline def setTableSizeBytesUndefined: Self = StObject.set(x, "TableSizeBytes", js.undefined)
     }
   }
   
@@ -7962,50 +6758,36 @@ object DocumentClient {
   }
   object SourceTableFeatureDetails {
     
-    @scala.inline
-    def apply(): SourceTableFeatureDetails = {
+    inline def apply(): SourceTableFeatureDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SourceTableFeatureDetails]
     }
     
-    @scala.inline
-    implicit class SourceTableFeatureDetailsMutableBuilder[Self <: SourceTableFeatureDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SourceTableFeatureDetails](x: Self) {
       
-      @scala.inline
-      def setGlobalSecondaryIndexes(value: GlobalSecondaryIndexes): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexes(value: GlobalSecondaryIndexes): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
+      inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndexInfo*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndexInfo*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setLocalSecondaryIndexes(value: LocalSecondaryIndexes): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setLocalSecondaryIndexes(value: LocalSecondaryIndexes): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
+      inline def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndexInfo*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value :_*))
+      inline def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndexInfo*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setSSEDescription(value: SSEDescription): Self = StObject.set(x, "SSEDescription", value.asInstanceOf[js.Any])
+      inline def setSSEDescription(value: SSEDescription): Self = StObject.set(x, "SSEDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSEDescriptionUndefined: Self = StObject.set(x, "SSEDescription", js.undefined)
+      inline def setSSEDescriptionUndefined: Self = StObject.set(x, "SSEDescription", js.undefined)
       
-      @scala.inline
-      def setStreamDescription(value: StreamSpecification): Self = StObject.set(x, "StreamDescription", value.asInstanceOf[js.Any])
+      inline def setStreamDescription(value: StreamSpecification): Self = StObject.set(x, "StreamDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamDescriptionUndefined: Self = StObject.set(x, "StreamDescription", js.undefined)
+      inline def setStreamDescriptionUndefined: Self = StObject.set(x, "StreamDescription", js.undefined)
       
-      @scala.inline
-      def setTimeToLiveDescription(value: TimeToLiveDescription): Self = StObject.set(x, "TimeToLiveDescription", value.asInstanceOf[js.Any])
+      inline def setTimeToLiveDescription(value: TimeToLiveDescription): Self = StObject.set(x, "TimeToLiveDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeToLiveDescriptionUndefined: Self = StObject.set(x, "TimeToLiveDescription", js.undefined)
+      inline def setTimeToLiveDescriptionUndefined: Self = StObject.set(x, "TimeToLiveDescription", js.undefined)
     }
   }
   
@@ -8027,23 +6809,18 @@ object DocumentClient {
   }
   object StreamSpecification {
     
-    @scala.inline
-    def apply(StreamEnabled: StreamEnabled): StreamSpecification = {
+    inline def apply(StreamEnabled: StreamEnabled): StreamSpecification = {
       val __obj = js.Dynamic.literal(StreamEnabled = StreamEnabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamSpecification]
     }
     
-    @scala.inline
-    implicit class StreamSpecificationMutableBuilder[Self <: StreamSpecification] (val x: Self) extends AnyVal {
+    extension [Self <: StreamSpecification](x: Self) {
       
-      @scala.inline
-      def setStreamEnabled(value: StreamEnabled): Self = StObject.set(x, "StreamEnabled", value.asInstanceOf[js.Any])
+      inline def setStreamEnabled(value: StreamEnabled): Self = StObject.set(x, "StreamEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamViewType(value: StreamViewType): Self = StObject.set(x, "StreamViewType", value.asInstanceOf[js.Any])
+      inline def setStreamViewType(value: StreamViewType): Self = StObject.set(x, "StreamViewType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamViewTypeUndefined: Self = StObject.set(x, "StreamViewType", js.undefined)
+      inline def setStreamViewTypeUndefined: Self = StObject.set(x, "StreamViewType", js.undefined)
     }
   }
   
@@ -8070,24 +6847,19 @@ object DocumentClient {
   }
   object StringSet {
     
-    @scala.inline
-    def apply(values: js.Array[java.lang.String]): StringSet = {
+    inline def apply(values: js.Array[java.lang.String]): StringSet = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("String")
       __obj.asInstanceOf[StringSet]
     }
     
-    @scala.inline
-    implicit class StringSetMutableBuilder[Self <: StringSet] (val x: Self) extends AnyVal {
+    extension [Self <: StringSet](x: Self) {
       
-      @scala.inline
-      def setType(value: String_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[java.lang.String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[java.lang.String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: java.lang.String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: java.lang.String*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -8114,35 +6886,26 @@ object DocumentClient {
   }
   object TableAutoScalingDescription {
     
-    @scala.inline
-    def apply(): TableAutoScalingDescription = {
+    inline def apply(): TableAutoScalingDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableAutoScalingDescription]
     }
     
-    @scala.inline
-    implicit class TableAutoScalingDescriptionMutableBuilder[Self <: TableAutoScalingDescription] (val x: Self) extends AnyVal {
+    extension [Self <: TableAutoScalingDescription](x: Self) {
       
-      @scala.inline
-      def setReplicas(value: ReplicaAutoScalingDescriptionList): Self = StObject.set(x, "Replicas", value.asInstanceOf[js.Any])
+      inline def setReplicas(value: ReplicaAutoScalingDescriptionList): Self = StObject.set(x, "Replicas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicasUndefined: Self = StObject.set(x, "Replicas", js.undefined)
+      inline def setReplicasUndefined: Self = StObject.set(x, "Replicas", js.undefined)
       
-      @scala.inline
-      def setReplicasVarargs(value: ReplicaAutoScalingDescription*): Self = StObject.set(x, "Replicas", js.Array(value :_*))
+      inline def setReplicasVarargs(value: ReplicaAutoScalingDescription*): Self = StObject.set(x, "Replicas", js.Array(value :_*))
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
       
-      @scala.inline
-      def setTableStatus(value: TableStatus): Self = StObject.set(x, "TableStatus", value.asInstanceOf[js.Any])
+      inline def setTableStatus(value: TableStatus): Self = StObject.set(x, "TableStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableStatusUndefined: Self = StObject.set(x, "TableStatus", js.undefined)
+      inline def setTableStatusUndefined: Self = StObject.set(x, "TableStatus", js.undefined)
     }
   }
   
@@ -8257,155 +7020,106 @@ object DocumentClient {
   }
   object TableDescription {
     
-    @scala.inline
-    def apply(): TableDescription = {
+    inline def apply(): TableDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableDescription]
     }
     
-    @scala.inline
-    implicit class TableDescriptionMutableBuilder[Self <: TableDescription] (val x: Self) extends AnyVal {
+    extension [Self <: TableDescription](x: Self) {
       
-      @scala.inline
-      def setArchivalSummary(value: ArchivalSummary): Self = StObject.set(x, "ArchivalSummary", value.asInstanceOf[js.Any])
+      inline def setArchivalSummary(value: ArchivalSummary): Self = StObject.set(x, "ArchivalSummary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchivalSummaryUndefined: Self = StObject.set(x, "ArchivalSummary", js.undefined)
+      inline def setArchivalSummaryUndefined: Self = StObject.set(x, "ArchivalSummary", js.undefined)
       
-      @scala.inline
-      def setAttributeDefinitions(value: AttributeDefinitions): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
+      inline def setAttributeDefinitions(value: AttributeDefinitions): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeDefinitionsUndefined: Self = StObject.set(x, "AttributeDefinitions", js.undefined)
+      inline def setAttributeDefinitionsUndefined: Self = StObject.set(x, "AttributeDefinitions", js.undefined)
       
-      @scala.inline
-      def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value :_*))
+      inline def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value :_*))
       
-      @scala.inline
-      def setBillingModeSummary(value: BillingModeSummary): Self = StObject.set(x, "BillingModeSummary", value.asInstanceOf[js.Any])
+      inline def setBillingModeSummary(value: BillingModeSummary): Self = StObject.set(x, "BillingModeSummary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBillingModeSummaryUndefined: Self = StObject.set(x, "BillingModeSummary", js.undefined)
+      inline def setBillingModeSummaryUndefined: Self = StObject.set(x, "BillingModeSummary", js.undefined)
       
-      @scala.inline
-      def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+      inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
+      inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexes(value: GlobalSecondaryIndexDescriptionList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexes(value: GlobalSecondaryIndexDescriptionList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
+      inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndexDescription*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndexDescription*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setGlobalTableVersion(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "GlobalTableVersion", value.asInstanceOf[js.Any])
+      inline def setGlobalTableVersion(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "GlobalTableVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableVersionUndefined: Self = StObject.set(x, "GlobalTableVersion", js.undefined)
+      inline def setGlobalTableVersionUndefined: Self = StObject.set(x, "GlobalTableVersion", js.undefined)
       
-      @scala.inline
-      def setItemCount(value: Long): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
+      inline def setItemCount(value: Long): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
+      inline def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
       
-      @scala.inline
-      def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
+      inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
       
-      @scala.inline
-      def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
       
-      @scala.inline
-      def setLatestStreamArn(value: StreamArn): Self = StObject.set(x, "LatestStreamArn", value.asInstanceOf[js.Any])
+      inline def setLatestStreamArn(value: StreamArn): Self = StObject.set(x, "LatestStreamArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestStreamArnUndefined: Self = StObject.set(x, "LatestStreamArn", js.undefined)
+      inline def setLatestStreamArnUndefined: Self = StObject.set(x, "LatestStreamArn", js.undefined)
       
-      @scala.inline
-      def setLatestStreamLabel(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "LatestStreamLabel", value.asInstanceOf[js.Any])
+      inline def setLatestStreamLabel(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "LatestStreamLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestStreamLabelUndefined: Self = StObject.set(x, "LatestStreamLabel", js.undefined)
+      inline def setLatestStreamLabelUndefined: Self = StObject.set(x, "LatestStreamLabel", js.undefined)
       
-      @scala.inline
-      def setLocalSecondaryIndexes(value: LocalSecondaryIndexDescriptionList): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setLocalSecondaryIndexes(value: LocalSecondaryIndexDescriptionList): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
+      inline def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndexDescription*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value :_*))
+      inline def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndexDescription*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setProvisionedThroughput(value: ProvisionedThroughputDescription): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughput(value: ProvisionedThroughputDescription): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
+      inline def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
       
-      @scala.inline
-      def setReplicas(value: ReplicaDescriptionList): Self = StObject.set(x, "Replicas", value.asInstanceOf[js.Any])
+      inline def setReplicas(value: ReplicaDescriptionList): Self = StObject.set(x, "Replicas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicasUndefined: Self = StObject.set(x, "Replicas", js.undefined)
+      inline def setReplicasUndefined: Self = StObject.set(x, "Replicas", js.undefined)
       
-      @scala.inline
-      def setReplicasVarargs(value: ReplicaDescription*): Self = StObject.set(x, "Replicas", js.Array(value :_*))
+      inline def setReplicasVarargs(value: ReplicaDescription*): Self = StObject.set(x, "Replicas", js.Array(value :_*))
       
-      @scala.inline
-      def setRestoreSummary(value: RestoreSummary): Self = StObject.set(x, "RestoreSummary", value.asInstanceOf[js.Any])
+      inline def setRestoreSummary(value: RestoreSummary): Self = StObject.set(x, "RestoreSummary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestoreSummaryUndefined: Self = StObject.set(x, "RestoreSummary", js.undefined)
+      inline def setRestoreSummaryUndefined: Self = StObject.set(x, "RestoreSummary", js.undefined)
       
-      @scala.inline
-      def setSSEDescription(value: SSEDescription): Self = StObject.set(x, "SSEDescription", value.asInstanceOf[js.Any])
+      inline def setSSEDescription(value: SSEDescription): Self = StObject.set(x, "SSEDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSEDescriptionUndefined: Self = StObject.set(x, "SSEDescription", js.undefined)
+      inline def setSSEDescriptionUndefined: Self = StObject.set(x, "SSEDescription", js.undefined)
       
-      @scala.inline
-      def setStreamSpecification(value: StreamSpecification): Self = StObject.set(x, "StreamSpecification", value.asInstanceOf[js.Any])
+      inline def setStreamSpecification(value: StreamSpecification): Self = StObject.set(x, "StreamSpecification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamSpecificationUndefined: Self = StObject.set(x, "StreamSpecification", js.undefined)
+      inline def setStreamSpecificationUndefined: Self = StObject.set(x, "StreamSpecification", js.undefined)
       
-      @scala.inline
-      def setTableArn(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
+      inline def setTableArn(value: typings.awsSdk.documentClientMod.DocumentClient.String): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
+      inline def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
       
-      @scala.inline
-      def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
+      inline def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableIdUndefined: Self = StObject.set(x, "TableId", js.undefined)
+      inline def setTableIdUndefined: Self = StObject.set(x, "TableId", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
       
-      @scala.inline
-      def setTableSizeBytes(value: Long): Self = StObject.set(x, "TableSizeBytes", value.asInstanceOf[js.Any])
+      inline def setTableSizeBytes(value: Long): Self = StObject.set(x, "TableSizeBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableSizeBytesUndefined: Self = StObject.set(x, "TableSizeBytes", js.undefined)
+      inline def setTableSizeBytesUndefined: Self = StObject.set(x, "TableSizeBytes", js.undefined)
       
-      @scala.inline
-      def setTableStatus(value: TableStatus): Self = StObject.set(x, "TableStatus", value.asInstanceOf[js.Any])
+      inline def setTableStatus(value: TableStatus): Self = StObject.set(x, "TableStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableStatusUndefined: Self = StObject.set(x, "TableStatus", js.undefined)
+      inline def setTableStatusUndefined: Self = StObject.set(x, "TableStatus", js.undefined)
     }
   }
   
@@ -8441,20 +7155,16 @@ object DocumentClient {
   }
   object Tag {
     
-    @scala.inline
-    def apply(Key: TagKeyString, Value: TagValueString): Tag = {
+    inline def apply(Key: TagKeyString, Value: TagValueString): Tag = {
       val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tag]
     }
     
-    @scala.inline
-    implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+    extension [Self <: Tag](x: Self) {
       
-      @scala.inline
-      def setKey(value: TagKeyString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: TagKeyString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: TagValueString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: TagValueString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -8478,23 +7188,18 @@ object DocumentClient {
   }
   object TagResourceInput {
     
-    @scala.inline
-    def apply(ResourceArn: ResourceArnString, Tags: TagList): TagResourceInput = {
+    inline def apply(ResourceArn: ResourceArnString, Tags: TagList): TagResourceInput = {
       val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagResourceInput]
     }
     
-    @scala.inline
-    implicit class TagResourceInputMutableBuilder[Self <: TagResourceInput] (val x: Self) extends AnyVal {
+    extension [Self <: TagResourceInput](x: Self) {
       
-      @scala.inline
-      def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+      inline def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     }
   }
   
@@ -8520,26 +7225,20 @@ object DocumentClient {
   }
   object TimeToLiveDescription {
     
-    @scala.inline
-    def apply(): TimeToLiveDescription = {
+    inline def apply(): TimeToLiveDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimeToLiveDescription]
     }
     
-    @scala.inline
-    implicit class TimeToLiveDescriptionMutableBuilder[Self <: TimeToLiveDescription] (val x: Self) extends AnyVal {
+    extension [Self <: TimeToLiveDescription](x: Self) {
       
-      @scala.inline
-      def setAttributeName(value: TimeToLiveAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+      inline def setAttributeName(value: TimeToLiveAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
+      inline def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
       
-      @scala.inline
-      def setTimeToLiveStatus(value: TimeToLiveStatus): Self = StObject.set(x, "TimeToLiveStatus", value.asInstanceOf[js.Any])
+      inline def setTimeToLiveStatus(value: TimeToLiveStatus): Self = StObject.set(x, "TimeToLiveStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeToLiveStatusUndefined: Self = StObject.set(x, "TimeToLiveStatus", js.undefined)
+      inline def setTimeToLiveStatusUndefined: Self = StObject.set(x, "TimeToLiveStatus", js.undefined)
     }
   }
   
@@ -8559,20 +7258,16 @@ object DocumentClient {
   }
   object TimeToLiveSpecification {
     
-    @scala.inline
-    def apply(AttributeName: TimeToLiveAttributeName, Enabled: TimeToLiveEnabled): TimeToLiveSpecification = {
+    inline def apply(AttributeName: TimeToLiveAttributeName, Enabled: TimeToLiveEnabled): TimeToLiveSpecification = {
       val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimeToLiveSpecification]
     }
     
-    @scala.inline
-    implicit class TimeToLiveSpecificationMutableBuilder[Self <: TimeToLiveSpecification] (val x: Self) extends AnyVal {
+    extension [Self <: TimeToLiveSpecification](x: Self) {
       
-      @scala.inline
-      def setAttributeName(value: TimeToLiveAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+      inline def setAttributeName(value: TimeToLiveAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: TimeToLiveEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: TimeToLiveEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -8594,17 +7289,14 @@ object DocumentClient {
   }
   object TransactGetItem {
     
-    @scala.inline
-    def apply(Get: Get): TransactGetItem = {
+    inline def apply(Get: Get): TransactGetItem = {
       val __obj = js.Dynamic.literal(Get = Get.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransactGetItem]
     }
     
-    @scala.inline
-    implicit class TransactGetItemMutableBuilder[Self <: TransactGetItem] (val x: Self) extends AnyVal {
+    extension [Self <: TransactGetItem](x: Self) {
       
-      @scala.inline
-      def setGet(value: Get): Self = StObject.set(x, "Get", value.asInstanceOf[js.Any])
+      inline def setGet(value: Get): Self = StObject.set(x, "Get", value.asInstanceOf[js.Any])
     }
   }
   
@@ -8624,26 +7316,20 @@ object DocumentClient {
   }
   object TransactGetItemsInput {
     
-    @scala.inline
-    def apply(TransactItems: TransactGetItemList): TransactGetItemsInput = {
+    inline def apply(TransactItems: TransactGetItemList): TransactGetItemsInput = {
       val __obj = js.Dynamic.literal(TransactItems = TransactItems.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransactGetItemsInput]
     }
     
-    @scala.inline
-    implicit class TransactGetItemsInputMutableBuilder[Self <: TransactGetItemsInput] (val x: Self) extends AnyVal {
+    extension [Self <: TransactGetItemsInput](x: Self) {
       
-      @scala.inline
-      def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+      inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setTransactItems(value: TransactGetItemList): Self = StObject.set(x, "TransactItems", value.asInstanceOf[js.Any])
+      inline def setTransactItems(value: TransactGetItemList): Self = StObject.set(x, "TransactItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactItemsVarargs(value: TransactGetItem*): Self = StObject.set(x, "TransactItems", js.Array(value :_*))
+      inline def setTransactItemsVarargs(value: TransactGetItem*): Self = StObject.set(x, "TransactItems", js.Array(value :_*))
     }
   }
   
@@ -8661,32 +7347,24 @@ object DocumentClient {
   }
   object TransactGetItemsOutput {
     
-    @scala.inline
-    def apply(): TransactGetItemsOutput = {
+    inline def apply(): TransactGetItemsOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransactGetItemsOutput]
     }
     
-    @scala.inline
-    implicit class TransactGetItemsOutputMutableBuilder[Self <: TransactGetItemsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: TransactGetItemsOutput](x: Self) {
       
-      @scala.inline
-      def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
+      inline def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
       
-      @scala.inline
-      def setResponses(value: ItemResponseList): Self = StObject.set(x, "Responses", value.asInstanceOf[js.Any])
+      inline def setResponses(value: ItemResponseList): Self = StObject.set(x, "Responses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsesUndefined: Self = StObject.set(x, "Responses", js.undefined)
+      inline def setResponsesUndefined: Self = StObject.set(x, "Responses", js.undefined)
       
-      @scala.inline
-      def setResponsesVarargs(value: ItemResponse*): Self = StObject.set(x, "Responses", js.Array(value :_*))
+      inline def setResponsesVarargs(value: ItemResponse*): Self = StObject.set(x, "Responses", js.Array(value :_*))
     }
   }
   
@@ -8714,38 +7392,28 @@ object DocumentClient {
   }
   object TransactWriteItem {
     
-    @scala.inline
-    def apply(): TransactWriteItem = {
+    inline def apply(): TransactWriteItem = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransactWriteItem]
     }
     
-    @scala.inline
-    implicit class TransactWriteItemMutableBuilder[Self <: TransactWriteItem] (val x: Self) extends AnyVal {
+    extension [Self <: TransactWriteItem](x: Self) {
       
-      @scala.inline
-      def setConditionCheck(value: ConditionCheck): Self = StObject.set(x, "ConditionCheck", value.asInstanceOf[js.Any])
+      inline def setConditionCheck(value: ConditionCheck): Self = StObject.set(x, "ConditionCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionCheckUndefined: Self = StObject.set(x, "ConditionCheck", js.undefined)
+      inline def setConditionCheckUndefined: Self = StObject.set(x, "ConditionCheck", js.undefined)
       
-      @scala.inline
-      def setDelete(value: Delete): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: Delete): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
+      inline def setDeleteUndefined: Self = StObject.set(x, "Delete", js.undefined)
       
-      @scala.inline
-      def setPut(value: Put): Self = StObject.set(x, "Put", value.asInstanceOf[js.Any])
+      inline def setPut(value: Put): Self = StObject.set(x, "Put", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPutUndefined: Self = StObject.set(x, "Put", js.undefined)
+      inline def setPutUndefined: Self = StObject.set(x, "Put", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: Update): Self = StObject.set(x, "Update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: Update): Self = StObject.set(x, "Update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "Update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "Update", js.undefined)
     }
   }
   
@@ -8772,38 +7440,28 @@ object DocumentClient {
   }
   object TransactWriteItemsInput {
     
-    @scala.inline
-    def apply(TransactItems: TransactWriteItemList): TransactWriteItemsInput = {
+    inline def apply(TransactItems: TransactWriteItemList): TransactWriteItemsInput = {
       val __obj = js.Dynamic.literal(TransactItems = TransactItems.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransactWriteItemsInput]
     }
     
-    @scala.inline
-    implicit class TransactWriteItemsInputMutableBuilder[Self <: TransactWriteItemsInput] (val x: Self) extends AnyVal {
+    extension [Self <: TransactWriteItemsInput](x: Self) {
       
-      @scala.inline
-      def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+      inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+      inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
       
-      @scala.inline
-      def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+      inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
+      inline def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
+      inline def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
       
-      @scala.inline
-      def setTransactItems(value: TransactWriteItemList): Self = StObject.set(x, "TransactItems", value.asInstanceOf[js.Any])
+      inline def setTransactItems(value: TransactWriteItemList): Self = StObject.set(x, "TransactItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactItemsVarargs(value: TransactWriteItem*): Self = StObject.set(x, "TransactItems", js.Array(value :_*))
+      inline def setTransactItemsVarargs(value: TransactWriteItem*): Self = StObject.set(x, "TransactItems", js.Array(value :_*))
     }
   }
   
@@ -8821,29 +7479,22 @@ object DocumentClient {
   }
   object TransactWriteItemsOutput {
     
-    @scala.inline
-    def apply(): TransactWriteItemsOutput = {
+    inline def apply(): TransactWriteItemsOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransactWriteItemsOutput]
     }
     
-    @scala.inline
-    implicit class TransactWriteItemsOutputMutableBuilder[Self <: TransactWriteItemsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: TransactWriteItemsOutput](x: Self) {
       
-      @scala.inline
-      def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
+      inline def setConsumedCapacityVarargs(value: ConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
       
-      @scala.inline
-      def setItemCollectionMetrics(value: ItemCollectionMetricsPerTable): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
+      inline def setItemCollectionMetrics(value: ItemCollectionMetricsPerTable): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCollectionMetricsUndefined: Self = StObject.set(x, "ItemCollectionMetrics", js.undefined)
+      inline def setItemCollectionMetricsUndefined: Self = StObject.set(x, "ItemCollectionMetrics", js.undefined)
     }
   }
   
@@ -8861,23 +7512,18 @@ object DocumentClient {
   }
   object UntagResourceInput {
     
-    @scala.inline
-    def apply(ResourceArn: ResourceArnString, TagKeys: TagKeyList): UntagResourceInput = {
+    inline def apply(ResourceArn: ResourceArnString, TagKeys: TagKeyList): UntagResourceInput = {
       val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[UntagResourceInput]
     }
     
-    @scala.inline
-    implicit class UntagResourceInputMutableBuilder[Self <: UntagResourceInput] (val x: Self) extends AnyVal {
+    extension [Self <: UntagResourceInput](x: Self) {
       
-      @scala.inline
-      def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+      inline def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
+      inline def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagKeysVarargs(value: TagKeyString*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+      inline def setTagKeysVarargs(value: TagKeyString*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
     }
   }
   
@@ -8922,47 +7568,34 @@ object DocumentClient {
   }
   object Update {
     
-    @scala.inline
-    def apply(Key: Key, TableName: TableName, UpdateExpression: UpdateExpression): Update = {
+    inline def apply(Key: Key, TableName: TableName, UpdateExpression: UpdateExpression): Update = {
       val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any], UpdateExpression = UpdateExpression.asInstanceOf[js.Any])
       __obj.asInstanceOf[Update]
     }
     
-    @scala.inline
-    implicit class UpdateMutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
+    extension [Self <: Update](x: Self) {
       
-      @scala.inline
-      def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
+      inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
+      inline def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+      inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
+      inline def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnValuesOnConditionCheckFailure(value: ReturnValuesOnConditionCheckFailure): Self = StObject.set(x, "ReturnValuesOnConditionCheckFailure", value.asInstanceOf[js.Any])
+      inline def setReturnValuesOnConditionCheckFailure(value: ReturnValuesOnConditionCheckFailure): Self = StObject.set(x, "ReturnValuesOnConditionCheckFailure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnValuesOnConditionCheckFailureUndefined: Self = StObject.set(x, "ReturnValuesOnConditionCheckFailure", js.undefined)
+      inline def setReturnValuesOnConditionCheckFailureUndefined: Self = StObject.set(x, "ReturnValuesOnConditionCheckFailure", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateExpression(value: UpdateExpression): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
+      inline def setUpdateExpression(value: UpdateExpression): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
     }
   }
   
@@ -8980,20 +7613,16 @@ object DocumentClient {
   }
   object UpdateContinuousBackupsInput {
     
-    @scala.inline
-    def apply(PointInTimeRecoverySpecification: PointInTimeRecoverySpecification, TableName: TableName): UpdateContinuousBackupsInput = {
+    inline def apply(PointInTimeRecoverySpecification: PointInTimeRecoverySpecification, TableName: TableName): UpdateContinuousBackupsInput = {
       val __obj = js.Dynamic.literal(PointInTimeRecoverySpecification = PointInTimeRecoverySpecification.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateContinuousBackupsInput]
     }
     
-    @scala.inline
-    implicit class UpdateContinuousBackupsInputMutableBuilder[Self <: UpdateContinuousBackupsInput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateContinuousBackupsInput](x: Self) {
       
-      @scala.inline
-      def setPointInTimeRecoverySpecification(value: PointInTimeRecoverySpecification): Self = StObject.set(x, "PointInTimeRecoverySpecification", value.asInstanceOf[js.Any])
+      inline def setPointInTimeRecoverySpecification(value: PointInTimeRecoverySpecification): Self = StObject.set(x, "PointInTimeRecoverySpecification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -9006,20 +7635,16 @@ object DocumentClient {
   }
   object UpdateContinuousBackupsOutput {
     
-    @scala.inline
-    def apply(): UpdateContinuousBackupsOutput = {
+    inline def apply(): UpdateContinuousBackupsOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateContinuousBackupsOutput]
     }
     
-    @scala.inline
-    implicit class UpdateContinuousBackupsOutputMutableBuilder[Self <: UpdateContinuousBackupsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateContinuousBackupsOutput](x: Self) {
       
-      @scala.inline
-      def setContinuousBackupsDescription(value: ContinuousBackupsDescription): Self = StObject.set(x, "ContinuousBackupsDescription", value.asInstanceOf[js.Any])
+      inline def setContinuousBackupsDescription(value: ContinuousBackupsDescription): Self = StObject.set(x, "ContinuousBackupsDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuousBackupsDescriptionUndefined: Self = StObject.set(x, "ContinuousBackupsDescription", js.undefined)
+      inline def setContinuousBackupsDescriptionUndefined: Self = StObject.set(x, "ContinuousBackupsDescription", js.undefined)
     }
   }
   
@@ -9042,26 +7667,20 @@ object DocumentClient {
   }
   object UpdateContributorInsightsInput {
     
-    @scala.inline
-    def apply(ContributorInsightsAction: ContributorInsightsAction, TableName: TableName): UpdateContributorInsightsInput = {
+    inline def apply(ContributorInsightsAction: ContributorInsightsAction, TableName: TableName): UpdateContributorInsightsInput = {
       val __obj = js.Dynamic.literal(ContributorInsightsAction = ContributorInsightsAction.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateContributorInsightsInput]
     }
     
-    @scala.inline
-    implicit class UpdateContributorInsightsInputMutableBuilder[Self <: UpdateContributorInsightsInput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateContributorInsightsInput](x: Self) {
       
-      @scala.inline
-      def setContributorInsightsAction(value: ContributorInsightsAction): Self = StObject.set(x, "ContributorInsightsAction", value.asInstanceOf[js.Any])
+      inline def setContributorInsightsAction(value: ContributorInsightsAction): Self = StObject.set(x, "ContributorInsightsAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+      inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -9084,32 +7703,24 @@ object DocumentClient {
   }
   object UpdateContributorInsightsOutput {
     
-    @scala.inline
-    def apply(): UpdateContributorInsightsOutput = {
+    inline def apply(): UpdateContributorInsightsOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateContributorInsightsOutput]
     }
     
-    @scala.inline
-    implicit class UpdateContributorInsightsOutputMutableBuilder[Self <: UpdateContributorInsightsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateContributorInsightsOutput](x: Self) {
       
-      @scala.inline
-      def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
+      inline def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContributorInsightsStatusUndefined: Self = StObject.set(x, "ContributorInsightsStatus", js.undefined)
+      inline def setContributorInsightsStatusUndefined: Self = StObject.set(x, "ContributorInsightsStatus", js.undefined)
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+      inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     }
   }
   
@@ -9129,20 +7740,16 @@ object DocumentClient {
   }
   object UpdateGlobalSecondaryIndexAction {
     
-    @scala.inline
-    def apply(IndexName: IndexName, ProvisionedThroughput: ProvisionedThroughput): UpdateGlobalSecondaryIndexAction = {
+    inline def apply(IndexName: IndexName, ProvisionedThroughput: ProvisionedThroughput): UpdateGlobalSecondaryIndexAction = {
       val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any], ProvisionedThroughput = ProvisionedThroughput.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateGlobalSecondaryIndexAction]
     }
     
-    @scala.inline
-    implicit class UpdateGlobalSecondaryIndexActionMutableBuilder[Self <: UpdateGlobalSecondaryIndexAction] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateGlobalSecondaryIndexAction](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
     }
   }
   
@@ -9160,23 +7767,18 @@ object DocumentClient {
   }
   object UpdateGlobalTableInput {
     
-    @scala.inline
-    def apply(GlobalTableName: TableName, ReplicaUpdates: ReplicaUpdateList): UpdateGlobalTableInput = {
+    inline def apply(GlobalTableName: TableName, ReplicaUpdates: ReplicaUpdateList): UpdateGlobalTableInput = {
       val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any], ReplicaUpdates = ReplicaUpdates.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateGlobalTableInput]
     }
     
-    @scala.inline
-    implicit class UpdateGlobalTableInputMutableBuilder[Self <: UpdateGlobalTableInput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateGlobalTableInput](x: Self) {
       
-      @scala.inline
-      def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
+      inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaUpdates(value: ReplicaUpdateList): Self = StObject.set(x, "ReplicaUpdates", value.asInstanceOf[js.Any])
+      inline def setReplicaUpdates(value: ReplicaUpdateList): Self = StObject.set(x, "ReplicaUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaUpdatesVarargs(value: ReplicaUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value :_*))
+      inline def setReplicaUpdatesVarargs(value: ReplicaUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value :_*))
     }
   }
   
@@ -9189,20 +7791,16 @@ object DocumentClient {
   }
   object UpdateGlobalTableOutput {
     
-    @scala.inline
-    def apply(): UpdateGlobalTableOutput = {
+    inline def apply(): UpdateGlobalTableOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateGlobalTableOutput]
     }
     
-    @scala.inline
-    implicit class UpdateGlobalTableOutputMutableBuilder[Self <: UpdateGlobalTableOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateGlobalTableOutput](x: Self) {
       
-      @scala.inline
-      def setGlobalTableDescription(value: GlobalTableDescription): Self = StObject.set(x, "GlobalTableDescription", value.asInstanceOf[js.Any])
+      inline def setGlobalTableDescription(value: GlobalTableDescription): Self = StObject.set(x, "GlobalTableDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableDescriptionUndefined: Self = StObject.set(x, "GlobalTableDescription", js.undefined)
+      inline def setGlobalTableDescriptionUndefined: Self = StObject.set(x, "GlobalTableDescription", js.undefined)
     }
   }
   
@@ -9240,53 +7838,38 @@ object DocumentClient {
   }
   object UpdateGlobalTableSettingsInput {
     
-    @scala.inline
-    def apply(GlobalTableName: TableName): UpdateGlobalTableSettingsInput = {
+    inline def apply(GlobalTableName: TableName): UpdateGlobalTableSettingsInput = {
       val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateGlobalTableSettingsInput]
     }
     
-    @scala.inline
-    implicit class UpdateGlobalTableSettingsInputMutableBuilder[Self <: UpdateGlobalTableSettingsInput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateGlobalTableSettingsInput](x: Self) {
       
-      @scala.inline
-      def setGlobalTableBillingMode(value: BillingMode): Self = StObject.set(x, "GlobalTableBillingMode", value.asInstanceOf[js.Any])
+      inline def setGlobalTableBillingMode(value: BillingMode): Self = StObject.set(x, "GlobalTableBillingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableBillingModeUndefined: Self = StObject.set(x, "GlobalTableBillingMode", js.undefined)
+      inline def setGlobalTableBillingModeUndefined: Self = StObject.set(x, "GlobalTableBillingMode", js.undefined)
       
-      @scala.inline
-      def setGlobalTableGlobalSecondaryIndexSettingsUpdate(value: GlobalTableGlobalSecondaryIndexSettingsUpdateList): Self = StObject.set(x, "GlobalTableGlobalSecondaryIndexSettingsUpdate", value.asInstanceOf[js.Any])
+      inline def setGlobalTableGlobalSecondaryIndexSettingsUpdate(value: GlobalTableGlobalSecondaryIndexSettingsUpdateList): Self = StObject.set(x, "GlobalTableGlobalSecondaryIndexSettingsUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableGlobalSecondaryIndexSettingsUpdateUndefined: Self = StObject.set(x, "GlobalTableGlobalSecondaryIndexSettingsUpdate", js.undefined)
+      inline def setGlobalTableGlobalSecondaryIndexSettingsUpdateUndefined: Self = StObject.set(x, "GlobalTableGlobalSecondaryIndexSettingsUpdate", js.undefined)
       
-      @scala.inline
-      def setGlobalTableGlobalSecondaryIndexSettingsUpdateVarargs(value: GlobalTableGlobalSecondaryIndexSettingsUpdate*): Self = StObject.set(x, "GlobalTableGlobalSecondaryIndexSettingsUpdate", js.Array(value :_*))
+      inline def setGlobalTableGlobalSecondaryIndexSettingsUpdateVarargs(value: GlobalTableGlobalSecondaryIndexSettingsUpdate*): Self = StObject.set(x, "GlobalTableGlobalSecondaryIndexSettingsUpdate", js.Array(value :_*))
       
-      @scala.inline
-      def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
+      inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
+      inline def setGlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdateUndefined: Self = StObject.set(x, "GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate", js.undefined)
+      inline def setGlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdateUndefined: Self = StObject.set(x, "GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate", js.undefined)
       
-      @scala.inline
-      def setGlobalTableProvisionedWriteCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "GlobalTableProvisionedWriteCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setGlobalTableProvisionedWriteCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "GlobalTableProvisionedWriteCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableProvisionedWriteCapacityUnitsUndefined: Self = StObject.set(x, "GlobalTableProvisionedWriteCapacityUnits", js.undefined)
+      inline def setGlobalTableProvisionedWriteCapacityUnitsUndefined: Self = StObject.set(x, "GlobalTableProvisionedWriteCapacityUnits", js.undefined)
       
-      @scala.inline
-      def setReplicaSettingsUpdate(value: ReplicaSettingsUpdateList): Self = StObject.set(x, "ReplicaSettingsUpdate", value.asInstanceOf[js.Any])
+      inline def setReplicaSettingsUpdate(value: ReplicaSettingsUpdateList): Self = StObject.set(x, "ReplicaSettingsUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaSettingsUpdateUndefined: Self = StObject.set(x, "ReplicaSettingsUpdate", js.undefined)
+      inline def setReplicaSettingsUpdateUndefined: Self = StObject.set(x, "ReplicaSettingsUpdate", js.undefined)
       
-      @scala.inline
-      def setReplicaSettingsUpdateVarargs(value: ReplicaSettingsUpdate*): Self = StObject.set(x, "ReplicaSettingsUpdate", js.Array(value :_*))
+      inline def setReplicaSettingsUpdateVarargs(value: ReplicaSettingsUpdate*): Self = StObject.set(x, "ReplicaSettingsUpdate", js.Array(value :_*))
     }
   }
   
@@ -9304,29 +7887,22 @@ object DocumentClient {
   }
   object UpdateGlobalTableSettingsOutput {
     
-    @scala.inline
-    def apply(): UpdateGlobalTableSettingsOutput = {
+    inline def apply(): UpdateGlobalTableSettingsOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateGlobalTableSettingsOutput]
     }
     
-    @scala.inline
-    implicit class UpdateGlobalTableSettingsOutputMutableBuilder[Self <: UpdateGlobalTableSettingsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateGlobalTableSettingsOutput](x: Self) {
       
-      @scala.inline
-      def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
+      inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
+      inline def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
       
-      @scala.inline
-      def setReplicaSettings(value: ReplicaSettingsDescriptionList): Self = StObject.set(x, "ReplicaSettings", value.asInstanceOf[js.Any])
+      inline def setReplicaSettings(value: ReplicaSettingsDescriptionList): Self = StObject.set(x, "ReplicaSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaSettingsUndefined: Self = StObject.set(x, "ReplicaSettings", js.undefined)
+      inline def setReplicaSettingsUndefined: Self = StObject.set(x, "ReplicaSettings", js.undefined)
       
-      @scala.inline
-      def setReplicaSettingsVarargs(value: ReplicaSettingsDescription*): Self = StObject.set(x, "ReplicaSettings", js.Array(value :_*))
+      inline def setReplicaSettingsVarargs(value: ReplicaSettingsDescription*): Self = StObject.set(x, "ReplicaSettings", js.Array(value :_*))
     }
   }
   
@@ -9391,80 +7967,56 @@ object DocumentClient {
   }
   object UpdateItemInput {
     
-    @scala.inline
-    def apply(Key: Key, TableName: TableName): UpdateItemInput = {
+    inline def apply(Key: Key, TableName: TableName): UpdateItemInput = {
       val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateItemInput]
     }
     
-    @scala.inline
-    implicit class UpdateItemInputMutableBuilder[Self <: UpdateItemInput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateItemInput](x: Self) {
       
-      @scala.inline
-      def setAttributeUpdates(value: AttributeUpdates): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
+      inline def setAttributeUpdates(value: AttributeUpdates): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeUpdatesUndefined: Self = StObject.set(x, "AttributeUpdates", js.undefined)
+      inline def setAttributeUpdatesUndefined: Self = StObject.set(x, "AttributeUpdates", js.undefined)
       
-      @scala.inline
-      def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
+      inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
+      inline def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
       
-      @scala.inline
-      def setConditionalOperator(value: ConditionalOperator): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
+      inline def setConditionalOperator(value: ConditionalOperator): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionalOperatorUndefined: Self = StObject.set(x, "ConditionalOperator", js.undefined)
+      inline def setConditionalOperatorUndefined: Self = StObject.set(x, "ConditionalOperator", js.undefined)
       
-      @scala.inline
-      def setExpected(value: ExpectedAttributeMap): Self = StObject.set(x, "Expected", value.asInstanceOf[js.Any])
+      inline def setExpected(value: ExpectedAttributeMap): Self = StObject.set(x, "Expected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedUndefined: Self = StObject.set(x, "Expected", js.undefined)
+      inline def setExpectedUndefined: Self = StObject.set(x, "Expected", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+      inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
+      inline def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+      inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
+      inline def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
+      inline def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
       
-      @scala.inline
-      def setReturnValues(value: ReturnValue): Self = StObject.set(x, "ReturnValues", value.asInstanceOf[js.Any])
+      inline def setReturnValues(value: ReturnValue): Self = StObject.set(x, "ReturnValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnValuesUndefined: Self = StObject.set(x, "ReturnValues", js.undefined)
+      inline def setReturnValuesUndefined: Self = StObject.set(x, "ReturnValues", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateExpression(value: UpdateExpression): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
+      inline def setUpdateExpression(value: UpdateExpression): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateExpressionUndefined: Self = StObject.set(x, "UpdateExpression", js.undefined)
+      inline def setUpdateExpressionUndefined: Self = StObject.set(x, "UpdateExpression", js.undefined)
     }
   }
   
@@ -9487,32 +8039,24 @@ object DocumentClient {
   }
   object UpdateItemOutput {
     
-    @scala.inline
-    def apply(): UpdateItemOutput = {
+    inline def apply(): UpdateItemOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateItemOutput]
     }
     
-    @scala.inline
-    implicit class UpdateItemOutputMutableBuilder[Self <: UpdateItemOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateItemOutput](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: AttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: AttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       
-      @scala.inline
-      def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setItemCollectionMetrics(value: ItemCollectionMetrics): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
+      inline def setItemCollectionMetrics(value: ItemCollectionMetrics): Self = StObject.set(x, "ItemCollectionMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCollectionMetricsUndefined: Self = StObject.set(x, "ItemCollectionMetrics", js.undefined)
+      inline def setItemCollectionMetricsUndefined: Self = StObject.set(x, "ItemCollectionMetrics", js.undefined)
     }
   }
   
@@ -9540,38 +8084,28 @@ object DocumentClient {
   }
   object UpdateReplicationGroupMemberAction {
     
-    @scala.inline
-    def apply(RegionName: RegionName): UpdateReplicationGroupMemberAction = {
+    inline def apply(RegionName: RegionName): UpdateReplicationGroupMemberAction = {
       val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateReplicationGroupMemberAction]
     }
     
-    @scala.inline
-    implicit class UpdateReplicationGroupMemberActionMutableBuilder[Self <: UpdateReplicationGroupMemberAction] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateReplicationGroupMemberAction](x: Self) {
       
-      @scala.inline
-      def setGlobalSecondaryIndexes(value: ReplicaGlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexes(value: ReplicaGlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
+      inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: ReplicaGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setKMSMasterKeyId(value: KMSMasterKeyId): Self = StObject.set(x, "KMSMasterKeyId", value.asInstanceOf[js.Any])
+      inline def setKMSMasterKeyId(value: KMSMasterKeyId): Self = StObject.set(x, "KMSMasterKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKMSMasterKeyIdUndefined: Self = StObject.set(x, "KMSMasterKeyId", js.undefined)
+      inline def setKMSMasterKeyIdUndefined: Self = StObject.set(x, "KMSMasterKeyId", js.undefined)
       
-      @scala.inline
-      def setProvisionedThroughputOverride(value: ProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughputOverride(value: ProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
+      inline def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
       
-      @scala.inline
-      def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+      inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -9619,68 +8153,48 @@ object DocumentClient {
   }
   object UpdateTableInput {
     
-    @scala.inline
-    def apply(TableName: TableName): UpdateTableInput = {
+    inline def apply(TableName: TableName): UpdateTableInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateTableInput]
     }
     
-    @scala.inline
-    implicit class UpdateTableInputMutableBuilder[Self <: UpdateTableInput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateTableInput](x: Self) {
       
-      @scala.inline
-      def setAttributeDefinitions(value: AttributeDefinitions): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
+      inline def setAttributeDefinitions(value: AttributeDefinitions): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeDefinitionsUndefined: Self = StObject.set(x, "AttributeDefinitions", js.undefined)
+      inline def setAttributeDefinitionsUndefined: Self = StObject.set(x, "AttributeDefinitions", js.undefined)
       
-      @scala.inline
-      def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value :_*))
+      inline def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value :_*))
       
-      @scala.inline
-      def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
+      inline def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
+      inline def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexUpdates(value: GlobalSecondaryIndexUpdateList): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexUpdates(value: GlobalSecondaryIndexUpdateList): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexUpdatesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.undefined)
+      inline def setGlobalSecondaryIndexUpdatesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexUpdatesVarargs(value: GlobalSecondaryIndexUpdate*): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexUpdatesVarargs(value: GlobalSecondaryIndexUpdate*): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.Array(value :_*))
       
-      @scala.inline
-      def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
+      inline def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
       
-      @scala.inline
-      def setReplicaUpdates(value: ReplicationGroupUpdateList): Self = StObject.set(x, "ReplicaUpdates", value.asInstanceOf[js.Any])
+      inline def setReplicaUpdates(value: ReplicationGroupUpdateList): Self = StObject.set(x, "ReplicaUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaUpdatesUndefined: Self = StObject.set(x, "ReplicaUpdates", js.undefined)
+      inline def setReplicaUpdatesUndefined: Self = StObject.set(x, "ReplicaUpdates", js.undefined)
       
-      @scala.inline
-      def setReplicaUpdatesVarargs(value: ReplicationGroupUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value :_*))
+      inline def setReplicaUpdatesVarargs(value: ReplicationGroupUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value :_*))
       
-      @scala.inline
-      def setSSESpecification(value: SSESpecification): Self = StObject.set(x, "SSESpecification", value.asInstanceOf[js.Any])
+      inline def setSSESpecification(value: SSESpecification): Self = StObject.set(x, "SSESpecification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSESpecificationUndefined: Self = StObject.set(x, "SSESpecification", js.undefined)
+      inline def setSSESpecificationUndefined: Self = StObject.set(x, "SSESpecification", js.undefined)
       
-      @scala.inline
-      def setStreamSpecification(value: StreamSpecification): Self = StObject.set(x, "StreamSpecification", value.asInstanceOf[js.Any])
+      inline def setStreamSpecification(value: StreamSpecification): Self = StObject.set(x, "StreamSpecification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamSpecificationUndefined: Self = StObject.set(x, "StreamSpecification", js.undefined)
+      inline def setStreamSpecificationUndefined: Self = StObject.set(x, "StreamSpecification", js.undefined)
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -9693,20 +8207,16 @@ object DocumentClient {
   }
   object UpdateTableOutput {
     
-    @scala.inline
-    def apply(): UpdateTableOutput = {
+    inline def apply(): UpdateTableOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateTableOutput]
     }
     
-    @scala.inline
-    implicit class UpdateTableOutputMutableBuilder[Self <: UpdateTableOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateTableOutput](x: Self) {
       
-      @scala.inline
-      def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
+      inline def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
+      inline def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
     }
   }
   
@@ -9731,41 +8241,30 @@ object DocumentClient {
   }
   object UpdateTableReplicaAutoScalingInput {
     
-    @scala.inline
-    def apply(TableName: TableName): UpdateTableReplicaAutoScalingInput = {
+    inline def apply(TableName: TableName): UpdateTableReplicaAutoScalingInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateTableReplicaAutoScalingInput]
     }
     
-    @scala.inline
-    implicit class UpdateTableReplicaAutoScalingInputMutableBuilder[Self <: UpdateTableReplicaAutoScalingInput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateTableReplicaAutoScalingInput](x: Self) {
       
-      @scala.inline
-      def setGlobalSecondaryIndexUpdates(value: GlobalSecondaryIndexAutoScalingUpdateList): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexUpdates(value: GlobalSecondaryIndexAutoScalingUpdateList): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexUpdatesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.undefined)
+      inline def setGlobalSecondaryIndexUpdatesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexUpdatesVarargs(value: GlobalSecondaryIndexAutoScalingUpdate*): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexUpdatesVarargs(value: GlobalSecondaryIndexAutoScalingUpdate*): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", js.Array(value :_*))
       
-      @scala.inline
-      def setProvisionedWriteCapacityAutoScalingUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingUpdate", value.asInstanceOf[js.Any])
+      inline def setProvisionedWriteCapacityAutoScalingUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedWriteCapacityAutoScalingUpdateUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingUpdate", js.undefined)
+      inline def setProvisionedWriteCapacityAutoScalingUpdateUndefined: Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingUpdate", js.undefined)
       
-      @scala.inline
-      def setReplicaUpdates(value: ReplicaAutoScalingUpdateList): Self = StObject.set(x, "ReplicaUpdates", value.asInstanceOf[js.Any])
+      inline def setReplicaUpdates(value: ReplicaAutoScalingUpdateList): Self = StObject.set(x, "ReplicaUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaUpdatesUndefined: Self = StObject.set(x, "ReplicaUpdates", js.undefined)
+      inline def setReplicaUpdatesUndefined: Self = StObject.set(x, "ReplicaUpdates", js.undefined)
       
-      @scala.inline
-      def setReplicaUpdatesVarargs(value: ReplicaAutoScalingUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value :_*))
+      inline def setReplicaUpdatesVarargs(value: ReplicaAutoScalingUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value :_*))
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -9778,20 +8277,16 @@ object DocumentClient {
   }
   object UpdateTableReplicaAutoScalingOutput {
     
-    @scala.inline
-    def apply(): UpdateTableReplicaAutoScalingOutput = {
+    inline def apply(): UpdateTableReplicaAutoScalingOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateTableReplicaAutoScalingOutput]
     }
     
-    @scala.inline
-    implicit class UpdateTableReplicaAutoScalingOutputMutableBuilder[Self <: UpdateTableReplicaAutoScalingOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateTableReplicaAutoScalingOutput](x: Self) {
       
-      @scala.inline
-      def setTableAutoScalingDescription(value: TableAutoScalingDescription): Self = StObject.set(x, "TableAutoScalingDescription", value.asInstanceOf[js.Any])
+      inline def setTableAutoScalingDescription(value: TableAutoScalingDescription): Self = StObject.set(x, "TableAutoScalingDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableAutoScalingDescriptionUndefined: Self = StObject.set(x, "TableAutoScalingDescription", js.undefined)
+      inline def setTableAutoScalingDescriptionUndefined: Self = StObject.set(x, "TableAutoScalingDescription", js.undefined)
     }
   }
   
@@ -9809,20 +8304,16 @@ object DocumentClient {
   }
   object UpdateTimeToLiveInput {
     
-    @scala.inline
-    def apply(TableName: TableName, TimeToLiveSpecification: TimeToLiveSpecification): UpdateTimeToLiveInput = {
+    inline def apply(TableName: TableName, TimeToLiveSpecification: TimeToLiveSpecification): UpdateTimeToLiveInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any], TimeToLiveSpecification = TimeToLiveSpecification.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateTimeToLiveInput]
     }
     
-    @scala.inline
-    implicit class UpdateTimeToLiveInputMutableBuilder[Self <: UpdateTimeToLiveInput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateTimeToLiveInput](x: Self) {
       
-      @scala.inline
-      def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeToLiveSpecification(value: TimeToLiveSpecification): Self = StObject.set(x, "TimeToLiveSpecification", value.asInstanceOf[js.Any])
+      inline def setTimeToLiveSpecification(value: TimeToLiveSpecification): Self = StObject.set(x, "TimeToLiveSpecification", value.asInstanceOf[js.Any])
     }
   }
   
@@ -9835,20 +8326,16 @@ object DocumentClient {
   }
   object UpdateTimeToLiveOutput {
     
-    @scala.inline
-    def apply(): UpdateTimeToLiveOutput = {
+    inline def apply(): UpdateTimeToLiveOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateTimeToLiveOutput]
     }
     
-    @scala.inline
-    implicit class UpdateTimeToLiveOutputMutableBuilder[Self <: UpdateTimeToLiveOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateTimeToLiveOutput](x: Self) {
       
-      @scala.inline
-      def setTimeToLiveSpecification(value: TimeToLiveSpecification): Self = StObject.set(x, "TimeToLiveSpecification", value.asInstanceOf[js.Any])
+      inline def setTimeToLiveSpecification(value: TimeToLiveSpecification): Self = StObject.set(x, "TimeToLiveSpecification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeToLiveSpecificationUndefined: Self = StObject.set(x, "TimeToLiveSpecification", js.undefined)
+      inline def setTimeToLiveSpecificationUndefined: Self = StObject.set(x, "TimeToLiveSpecification", js.undefined)
     }
   }
   
@@ -9866,26 +8353,20 @@ object DocumentClient {
   }
   object WriteRequest {
     
-    @scala.inline
-    def apply(): WriteRequest = {
+    inline def apply(): WriteRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WriteRequest]
     }
     
-    @scala.inline
-    implicit class WriteRequestMutableBuilder[Self <: WriteRequest] (val x: Self) extends AnyVal {
+    extension [Self <: WriteRequest](x: Self) {
       
-      @scala.inline
-      def setDeleteRequest(value: DeleteRequest): Self = StObject.set(x, "DeleteRequest", value.asInstanceOf[js.Any])
+      inline def setDeleteRequest(value: DeleteRequest): Self = StObject.set(x, "DeleteRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteRequestUndefined: Self = StObject.set(x, "DeleteRequest", js.undefined)
+      inline def setDeleteRequestUndefined: Self = StObject.set(x, "DeleteRequest", js.undefined)
       
-      @scala.inline
-      def setPutRequest(value: PutRequest): Self = StObject.set(x, "PutRequest", value.asInstanceOf[js.Any])
+      inline def setPutRequest(value: PutRequest): Self = StObject.set(x, "PutRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPutRequestUndefined: Self = StObject.set(x, "PutRequest", js.undefined)
+      inline def setPutRequestUndefined: Self = StObject.set(x, "PutRequest", js.undefined)
     }
   }
   

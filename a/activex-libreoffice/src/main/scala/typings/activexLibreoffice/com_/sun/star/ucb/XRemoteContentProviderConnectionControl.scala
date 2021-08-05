@@ -29,8 +29,7 @@ trait XRemoteContentProviderConnectionControl
 }
 object XRemoteContentProviderConnectionControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     enableConnectionControl: (XRemoteContentProviderAcceptor, XInterface) => Unit,
     queryInterface: `type` => js.Any,
@@ -40,10 +39,8 @@ object XRemoteContentProviderConnectionControl {
     __obj.asInstanceOf[XRemoteContentProviderConnectionControl]
   }
   
-  @scala.inline
-  implicit class XRemoteContentProviderConnectionControlMutableBuilder[Self <: XRemoteContentProviderConnectionControl] (val x: Self) extends AnyVal {
+  extension [Self <: XRemoteContentProviderConnectionControl](x: Self) {
     
-    @scala.inline
-    def setEnableConnectionControl(value: (XRemoteContentProviderAcceptor, XInterface) => Unit): Self = StObject.set(x, "enableConnectionControl", js.Any.fromFunction2(value))
+    inline def setEnableConnectionControl(value: (XRemoteContentProviderAcceptor, XInterface) => Unit): Self = StObject.set(x, "enableConnectionControl", js.Any.fromFunction2(value))
   }
 }

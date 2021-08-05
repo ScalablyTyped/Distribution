@@ -12,22 +12,17 @@ trait PruneImagesInfo extends StObject {
 }
 object PruneImagesInfo {
   
-  @scala.inline
-  def apply(ImagesDeleted: js.Array[ImageRemoveInfo], SpaceReclaimed: Double): PruneImagesInfo = {
+  inline def apply(ImagesDeleted: js.Array[ImageRemoveInfo], SpaceReclaimed: Double): PruneImagesInfo = {
     val __obj = js.Dynamic.literal(ImagesDeleted = ImagesDeleted.asInstanceOf[js.Any], SpaceReclaimed = SpaceReclaimed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PruneImagesInfo]
   }
   
-  @scala.inline
-  implicit class PruneImagesInfoMutableBuilder[Self <: PruneImagesInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PruneImagesInfo](x: Self) {
     
-    @scala.inline
-    def setImagesDeleted(value: js.Array[ImageRemoveInfo]): Self = StObject.set(x, "ImagesDeleted", value.asInstanceOf[js.Any])
+    inline def setImagesDeleted(value: js.Array[ImageRemoveInfo]): Self = StObject.set(x, "ImagesDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesDeletedVarargs(value: ImageRemoveInfo*): Self = StObject.set(x, "ImagesDeleted", js.Array(value :_*))
+    inline def setImagesDeletedVarargs(value: ImageRemoveInfo*): Self = StObject.set(x, "ImagesDeleted", js.Array(value :_*))
     
-    @scala.inline
-    def setSpaceReclaimed(value: Double): Self = StObject.set(x, "SpaceReclaimed", value.asInstanceOf[js.Any])
+    inline def setSpaceReclaimed(value: Double): Self = StObject.set(x, "SpaceReclaimed", value.asInstanceOf[js.Any])
   }
 }

@@ -19,8 +19,7 @@ trait Part extends StObject {
 }
 object Part {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     part: /* keyof vega-typings.vega-typings/types/spec/axis.AxisEncode */ axis | ticks | labels | title | grid | domain,
     vgProp: VgEncodeChannel
   ): Part = {
@@ -28,15 +27,12 @@ object Part {
     __obj.asInstanceOf[Part]
   }
   
-  @scala.inline
-  implicit class PartMutableBuilder[Self <: Part] (val x: Self) extends AnyVal {
+  extension [Self <: Part](x: Self) {
     
-    @scala.inline
-    def setPart(
+    inline def setPart(
       value: /* keyof vega-typings.vega-typings/types/spec/axis.AxisEncode */ axis | ticks | labels | title | grid | domain
     ): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVgProp(value: VgEncodeChannel): Self = StObject.set(x, "vgProp", value.asInstanceOf[js.Any])
+    inline def setVgProp(value: VgEncodeChannel): Self = StObject.set(x, "vgProp", value.asInstanceOf[js.Any])
   }
 }

@@ -92,17 +92,14 @@ object Blobs {
   }
   object BlobClientParamters {
     
-    @scala.inline
-    def apply(logger: GmeLogger): BlobClientParamters = {
+    inline def apply(logger: GmeLogger): BlobClientParamters = {
       val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlobClientParamters]
     }
     
-    @scala.inline
-    implicit class BlobClientParamtersMutableBuilder[Self <: BlobClientParamters] (val x: Self) extends AnyVal {
+    extension [Self <: BlobClientParamters](x: Self) {
       
-      @scala.inline
-      def setLogger(value: GmeLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: GmeLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,29 +117,22 @@ object Blobs {
   }
   object BlobMetadata {
     
-    @scala.inline
-    def apply(contentType: String, context: DataObject, mime: String, name: String, size: Double): BlobMetadata = {
+    inline def apply(contentType: String, context: DataObject, mime: String, name: String, size: Double): BlobMetadata = {
       val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlobMetadata]
     }
     
-    @scala.inline
-    implicit class BlobMetadataMutableBuilder[Self <: BlobMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: BlobMetadata](x: Self) {
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: DataObject): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: DataObject): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   

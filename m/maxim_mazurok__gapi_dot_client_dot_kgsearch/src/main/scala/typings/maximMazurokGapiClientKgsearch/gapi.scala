@@ -36,35 +36,26 @@ object gapi {
       }
       object SearchResponse {
         
-        @scala.inline
-        def apply(): SearchResponse = {
+        inline def apply(): SearchResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SearchResponse]
         }
         
-        @scala.inline
-        implicit class SearchResponseMutableBuilder[Self <: SearchResponse] (val x: Self) extends AnyVal {
+        extension [Self <: SearchResponse](x: Self) {
           
-          @scala.inline
-          def `set@context`(value: js.Any): Self = StObject.set(x, "@context", value.asInstanceOf[js.Any])
+          inline def `set@context`(value: js.Any): Self = StObject.set(x, "@context", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `set@contextUndefined`: Self = StObject.set(x, "@context", js.undefined)
+          inline def `set@contextUndefined`: Self = StObject.set(x, "@context", js.undefined)
           
-          @scala.inline
-          def `set@type`(value: js.Any): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
+          inline def `set@type`(value: js.Any): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `set@typeUndefined`: Self = StObject.set(x, "@type", js.undefined)
+          inline def `set@typeUndefined`: Self = StObject.set(x, "@type", js.undefined)
           
-          @scala.inline
-          def setItemListElement(value: js.Array[js.Any]): Self = StObject.set(x, "itemListElement", value.asInstanceOf[js.Any])
+          inline def setItemListElement(value: js.Array[js.Any]): Self = StObject.set(x, "itemListElement", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setItemListElementUndefined: Self = StObject.set(x, "itemListElement", js.undefined)
+          inline def setItemListElementUndefined: Self = StObject.set(x, "itemListElement", js.undefined)
           
-          @scala.inline
-          def setItemListElementVarargs(value: js.Any*): Self = StObject.set(x, "itemListElement", js.Array(value :_*))
+          inline def setItemListElementVarargs(value: js.Any*): Self = StObject.set(x, "itemListElement", js.Array(value :_*))
         }
       }
     }

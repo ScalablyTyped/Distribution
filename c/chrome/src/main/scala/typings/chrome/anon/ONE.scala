@@ -14,19 +14,15 @@ trait ONE extends StObject {
 }
 object ONE {
   
-  @scala.inline
-  def apply(): ONE = {
+  inline def apply(): ONE = {
     val __obj = js.Dynamic.literal(ONE = "one", TWO = "two")
     __obj.asInstanceOf[ONE]
   }
   
-  @scala.inline
-  implicit class ONEMutableBuilder[Self <: ONE] (val x: Self) extends AnyVal {
+  extension [Self <: ONE](x: Self) {
     
-    @scala.inline
-    def setONE(value: one): Self = StObject.set(x, "ONE", value.asInstanceOf[js.Any])
+    inline def setONE(value: one): Self = StObject.set(x, "ONE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTWO(value: two): Self = StObject.set(x, "TWO", value.asInstanceOf[js.Any])
+    inline def setTWO(value: two): Self = StObject.set(x, "TWO", value.asInstanceOf[js.Any])
   }
 }

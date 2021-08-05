@@ -12,8 +12,7 @@ trait TreatableAilment
 }
 object TreatableAilment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     detected: () => js.Promise[Boolean],
     getMessage: () => js.Promise[String],
     getTreatmentSteps: () => js.Promise[js.Array[PatientTreatmentStep]],
@@ -26,10 +25,8 @@ object TreatableAilment {
     __obj.asInstanceOf[TreatableAilment]
   }
   
-  @scala.inline
-  implicit class TreatableAilmentMutableBuilder[Self <: TreatableAilment] (val x: Self) extends AnyVal {
+  extension [Self <: TreatableAilment](x: Self) {
     
-    @scala.inline
-    def setTreatable(value: Boolean): Self = StObject.set(x, "treatable", value.asInstanceOf[js.Any])
+    inline def setTreatable(value: Boolean): Self = StObject.set(x, "treatable", value.asInstanceOf[js.Any])
   }
 }

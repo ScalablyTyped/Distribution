@@ -36,13 +36,12 @@ trait VBComponent extends StObject {
   
   val VBE: typings.activexVbide.VBIDE.VBE
   
-  @JSName("VBIDE.VBComponent_typekey")
+  /* private */ @JSName("VBIDE.VBComponent_typekey")
   var VBIDEDotVBComponent_typekey: VBComponent
 }
 object VBComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Activate: () => Unit,
     CodeModule: CodeModule,
     Collection: VBComponents,
@@ -63,49 +62,34 @@ object VBComponent {
     __obj.asInstanceOf[VBComponent]
   }
   
-  @scala.inline
-  implicit class VBComponentMutableBuilder[Self <: VBComponent] (val x: Self) extends AnyVal {
+  extension [Self <: VBComponent](x: Self) {
     
-    @scala.inline
-    def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
+    inline def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCodeModule(value: CodeModule): Self = StObject.set(x, "CodeModule", value.asInstanceOf[js.Any])
+    inline def setCodeModule(value: CodeModule): Self = StObject.set(x, "CodeModule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection(value: VBComponents): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: VBComponents): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesigner(value: js.Any): Self = StObject.set(x, "Designer", value.asInstanceOf[js.Any])
+    inline def setDesigner(value: js.Any): Self = StObject.set(x, "Designer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesignerID(value: String): Self = StObject.set(x, "DesignerID", value.asInstanceOf[js.Any])
+    inline def setDesignerID(value: String): Self = StObject.set(x, "DesignerID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesignerWindow(value: () => Window): Self = StObject.set(x, "DesignerWindow", js.Any.fromFunction0(value))
+    inline def setDesignerWindow(value: () => Window): Self = StObject.set(x, "DesignerWindow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExport(value: String => Unit): Self = StObject.set(x, "Export", js.Any.fromFunction1(value))
+    inline def setExport(value: String => Unit): Self = StObject.set(x, "Export", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasOpenDesigner(value: Boolean): Self = StObject.set(x, "HasOpenDesigner", value.asInstanceOf[js.Any])
+    inline def setHasOpenDesigner(value: Boolean): Self = StObject.set(x, "HasOpenDesigner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaved(value: Boolean): Self = StObject.set(x, "Saved", value.asInstanceOf[js.Any])
+    inline def setSaved(value: Boolean): Self = StObject.set(x, "Saved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: vbextComponentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: vbextComponentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBE(value: VBE): Self = StObject.set(x, "VBE", value.asInstanceOf[js.Any])
+    inline def setVBE(value: VBE): Self = StObject.set(x, "VBE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBIDEDotVBComponent_typekey(value: VBComponent): Self = StObject.set(x, "VBIDE.VBComponent_typekey", value.asInstanceOf[js.Any])
+    inline def setVBIDEDotVBComponent_typekey(value: VBComponent): Self = StObject.set(x, "VBIDE.VBComponent_typekey", value.asInstanceOf[js.Any])
   }
 }

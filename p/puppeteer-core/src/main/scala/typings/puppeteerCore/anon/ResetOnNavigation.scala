@@ -10,19 +10,15 @@ trait ResetOnNavigation extends StObject {
 }
 object ResetOnNavigation {
   
-  @scala.inline
-  def apply(): ResetOnNavigation = {
+  inline def apply(): ResetOnNavigation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResetOnNavigation]
   }
   
-  @scala.inline
-  implicit class ResetOnNavigationMutableBuilder[Self <: ResetOnNavigation] (val x: Self) extends AnyVal {
+  extension [Self <: ResetOnNavigation](x: Self) {
     
-    @scala.inline
-    def setResetOnNavigation(value: Boolean): Self = StObject.set(x, "resetOnNavigation", value.asInstanceOf[js.Any])
+    inline def setResetOnNavigation(value: Boolean): Self = StObject.set(x, "resetOnNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetOnNavigationUndefined: Self = StObject.set(x, "resetOnNavigation", js.undefined)
+    inline def setResetOnNavigationUndefined: Self = StObject.set(x, "resetOnNavigation", js.undefined)
   }
 }

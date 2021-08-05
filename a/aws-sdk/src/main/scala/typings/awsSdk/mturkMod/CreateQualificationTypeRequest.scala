@@ -58,64 +58,45 @@ trait CreateQualificationTypeRequest extends StObject {
 }
 object CreateQualificationTypeRequest {
   
-  @scala.inline
-  def apply(Description: String, Name: String, QualificationTypeStatus: QualificationTypeStatus): CreateQualificationTypeRequest = {
+  inline def apply(Description: String, Name: String, QualificationTypeStatus: QualificationTypeStatus): CreateQualificationTypeRequest = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], QualificationTypeStatus = QualificationTypeStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateQualificationTypeRequest]
   }
   
-  @scala.inline
-  implicit class CreateQualificationTypeRequestMutableBuilder[Self <: CreateQualificationTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateQualificationTypeRequest](x: Self) {
     
-    @scala.inline
-    def setAnswerKey(value: String): Self = StObject.set(x, "AnswerKey", value.asInstanceOf[js.Any])
+    inline def setAnswerKey(value: String): Self = StObject.set(x, "AnswerKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnswerKeyUndefined: Self = StObject.set(x, "AnswerKey", js.undefined)
+    inline def setAnswerKeyUndefined: Self = StObject.set(x, "AnswerKey", js.undefined)
     
-    @scala.inline
-    def setAutoGranted(value: Boolean): Self = StObject.set(x, "AutoGranted", value.asInstanceOf[js.Any])
+    inline def setAutoGranted(value: Boolean): Self = StObject.set(x, "AutoGranted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoGrantedUndefined: Self = StObject.set(x, "AutoGranted", js.undefined)
+    inline def setAutoGrantedUndefined: Self = StObject.set(x, "AutoGranted", js.undefined)
     
-    @scala.inline
-    def setAutoGrantedValue(value: Integer): Self = StObject.set(x, "AutoGrantedValue", value.asInstanceOf[js.Any])
+    inline def setAutoGrantedValue(value: Integer): Self = StObject.set(x, "AutoGrantedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoGrantedValueUndefined: Self = StObject.set(x, "AutoGrantedValue", js.undefined)
+    inline def setAutoGrantedValueUndefined: Self = StObject.set(x, "AutoGrantedValue", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywords(value: String): Self = StObject.set(x, "Keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: String): Self = StObject.set(x, "Keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordsUndefined: Self = StObject.set(x, "Keywords", js.undefined)
+    inline def setKeywordsUndefined: Self = StObject.set(x, "Keywords", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualificationTypeStatus(value: QualificationTypeStatus): Self = StObject.set(x, "QualificationTypeStatus", value.asInstanceOf[js.Any])
+    inline def setQualificationTypeStatus(value: QualificationTypeStatus): Self = StObject.set(x, "QualificationTypeStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryDelayInSeconds(value: Long): Self = StObject.set(x, "RetryDelayInSeconds", value.asInstanceOf[js.Any])
+    inline def setRetryDelayInSeconds(value: Long): Self = StObject.set(x, "RetryDelayInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryDelayInSecondsUndefined: Self = StObject.set(x, "RetryDelayInSeconds", js.undefined)
+    inline def setRetryDelayInSecondsUndefined: Self = StObject.set(x, "RetryDelayInSeconds", js.undefined)
     
-    @scala.inline
-    def setTest(value: String): Self = StObject.set(x, "Test", value.asInstanceOf[js.Any])
+    inline def setTest(value: String): Self = StObject.set(x, "Test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestDurationInSeconds(value: Long): Self = StObject.set(x, "TestDurationInSeconds", value.asInstanceOf[js.Any])
+    inline def setTestDurationInSeconds(value: Long): Self = StObject.set(x, "TestDurationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestDurationInSecondsUndefined: Self = StObject.set(x, "TestDurationInSeconds", js.undefined)
+    inline def setTestDurationInSecondsUndefined: Self = StObject.set(x, "TestDurationInSeconds", js.undefined)
     
-    @scala.inline
-    def setTestUndefined: Self = StObject.set(x, "Test", js.undefined)
+    inline def setTestUndefined: Self = StObject.set(x, "Test", js.undefined)
   }
 }

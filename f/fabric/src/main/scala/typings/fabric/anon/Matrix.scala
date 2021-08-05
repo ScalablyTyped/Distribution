@@ -11,22 +11,17 @@ trait Matrix extends StObject {
 }
 object Matrix {
   
-  @scala.inline
-  def apply(): Matrix = {
+  inline def apply(): Matrix = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Matrix]
   }
   
-  @scala.inline
-  implicit class MatrixMutableBuilder[Self <: Matrix] (val x: Self) extends AnyVal {
+  extension [Self <: Matrix](x: Self) {
     
-    @scala.inline
-    def setMatrix(value: js.Array[Double]): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+    inline def setMatrix(value: js.Array[Double]): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
+    inline def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
     
-    @scala.inline
-    def setMatrixVarargs(value: Double*): Self = StObject.set(x, "matrix", js.Array(value :_*))
+    inline def setMatrixVarargs(value: Double*): Self = StObject.set(x, "matrix", js.Array(value :_*))
   }
 }

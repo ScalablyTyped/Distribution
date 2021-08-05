@@ -18,16 +18,13 @@ trait ASPxClientPopupWindowEventArgs
 }
 object ASPxClientPopupWindowEventArgs {
   
-  @scala.inline
-  def apply(window: ASPxClientPopupWindow): ASPxClientPopupWindowEventArgs = {
+  inline def apply(window: ASPxClientPopupWindow): ASPxClientPopupWindowEventArgs = {
     val __obj = js.Dynamic.literal(window = window.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientPopupWindowEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientPopupWindowEventArgsMutableBuilder[Self <: ASPxClientPopupWindowEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientPopupWindowEventArgs](x: Self) {
     
-    @scala.inline
-    def setWindow(value: ASPxClientPopupWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: ASPxClientPopupWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
   }
 }

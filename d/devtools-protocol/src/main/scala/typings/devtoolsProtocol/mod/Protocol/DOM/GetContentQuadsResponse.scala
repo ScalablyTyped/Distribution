@@ -13,19 +13,15 @@ trait GetContentQuadsResponse extends StObject {
 }
 object GetContentQuadsResponse {
   
-  @scala.inline
-  def apply(quads: js.Array[Quad]): GetContentQuadsResponse = {
+  inline def apply(quads: js.Array[Quad]): GetContentQuadsResponse = {
     val __obj = js.Dynamic.literal(quads = quads.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetContentQuadsResponse]
   }
   
-  @scala.inline
-  implicit class GetContentQuadsResponseMutableBuilder[Self <: GetContentQuadsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetContentQuadsResponse](x: Self) {
     
-    @scala.inline
-    def setQuads(value: js.Array[Quad]): Self = StObject.set(x, "quads", value.asInstanceOf[js.Any])
+    inline def setQuads(value: js.Array[Quad]): Self = StObject.set(x, "quads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuadsVarargs(value: Quad*): Self = StObject.set(x, "quads", js.Array(value :_*))
+    inline def setQuadsVarargs(value: Quad*): Self = StObject.set(x, "quads", js.Array(value :_*))
   }
 }

@@ -22,8 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Transition extends StObject
 object Transition {
   
-  @scala.inline
-  def DirectionalTransition(
+  inline def DirectionalTransition(
     direction: LEFT | RIGHT | TOP | BOTTOM,
     duration: Double,
     easing: Easing,
@@ -35,8 +34,7 @@ object Transition {
     __obj.asInstanceOf[typings.figma.mod.global.DirectionalTransition]
   }
   
-  @scala.inline
-  def SimpleTransition(duration: Double, easing: Easing, `type`: DISSOLVE | SMART_ANIMATE): typings.figma.mod.global.SimpleTransition = {
+  inline def SimpleTransition(duration: Double, easing: Easing, `type`: DISSOLVE | SMART_ANIMATE): typings.figma.mod.global.SimpleTransition = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.figma.mod.global.SimpleTransition]

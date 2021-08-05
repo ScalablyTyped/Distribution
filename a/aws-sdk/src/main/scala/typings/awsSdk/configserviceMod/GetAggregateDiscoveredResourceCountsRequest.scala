@@ -33,40 +33,29 @@ trait GetAggregateDiscoveredResourceCountsRequest extends StObject {
 }
 object GetAggregateDiscoveredResourceCountsRequest {
   
-  @scala.inline
-  def apply(ConfigurationAggregatorName: ConfigurationAggregatorName): GetAggregateDiscoveredResourceCountsRequest = {
+  inline def apply(ConfigurationAggregatorName: ConfigurationAggregatorName): GetAggregateDiscoveredResourceCountsRequest = {
     val __obj = js.Dynamic.literal(ConfigurationAggregatorName = ConfigurationAggregatorName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAggregateDiscoveredResourceCountsRequest]
   }
   
-  @scala.inline
-  implicit class GetAggregateDiscoveredResourceCountsRequestMutableBuilder[Self <: GetAggregateDiscoveredResourceCountsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAggregateDiscoveredResourceCountsRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = StObject.set(x, "ConfigurationAggregatorName", value.asInstanceOf[js.Any])
+    inline def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = StObject.set(x, "ConfigurationAggregatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilters(value: ResourceCountFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: ResourceCountFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setGroupByKey(value: ResourceCountGroupKey): Self = StObject.set(x, "GroupByKey", value.asInstanceOf[js.Any])
+    inline def setGroupByKey(value: ResourceCountGroupKey): Self = StObject.set(x, "GroupByKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByKeyUndefined: Self = StObject.set(x, "GroupByKey", js.undefined)
+    inline def setGroupByKeyUndefined: Self = StObject.set(x, "GroupByKey", js.undefined)
     
-    @scala.inline
-    def setLimit(value: GroupByAPILimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: GroupByAPILimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

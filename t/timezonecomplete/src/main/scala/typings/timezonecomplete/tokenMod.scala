@@ -101,8 +101,7 @@ object tokenMod {
     /* 12 */ val ZONE: typings.timezonecomplete.tokenMod.TokenType.ZONE & Double = js.native
   }
   
-  @scala.inline
-  def tokenize(formatString: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(formatString.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+  inline def tokenize(formatString: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(formatString.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
   
   trait Token extends StObject {
     
@@ -128,27 +127,21 @@ object tokenMod {
   }
   object Token {
     
-    @scala.inline
-    def apply(length: Double, raw: String, symbol: String, `type`: TokenType): Token = {
+    inline def apply(length: Double, raw: String, symbol: String, `type`: TokenType): Token = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Token]
     }
     
-    @scala.inline
-    implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+    extension [Self <: Token](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: TokenType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TokenType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

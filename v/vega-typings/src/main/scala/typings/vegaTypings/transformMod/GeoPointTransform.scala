@@ -21,29 +21,22 @@ trait GeoPointTransform
 }
 object GeoPointTransform {
   
-  @scala.inline
-  def apply(fields: Vector2[FieldRef] | SignalRef, projection: ProjectionName): GeoPointTransform = {
+  inline def apply(fields: Vector2[FieldRef] | SignalRef, projection: ProjectionName): GeoPointTransform = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("geopoint")
     __obj.asInstanceOf[GeoPointTransform]
   }
   
-  @scala.inline
-  implicit class GeoPointTransformMutableBuilder[Self <: GeoPointTransform] (val x: Self) extends AnyVal {
+  extension [Self <: GeoPointTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setFields(value: Vector2[FieldRef] | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: Vector2[FieldRef] | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjection(value: ProjectionName): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: ProjectionName): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: geopoint): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: geopoint): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

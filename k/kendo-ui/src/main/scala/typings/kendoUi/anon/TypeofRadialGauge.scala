@@ -15,19 +15,15 @@ trait TypeofRadialGauge extends StObject {
 }
 object TypeofRadialGauge {
   
-  @scala.inline
-  def apply(extend: js.Object => RadialGauge, fn: RadialGauge): TypeofRadialGauge = {
+  inline def apply(extend: js.Object => RadialGauge, fn: RadialGauge): TypeofRadialGauge = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofRadialGauge]
   }
   
-  @scala.inline
-  implicit class TypeofRadialGaugeMutableBuilder[Self <: TypeofRadialGauge] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofRadialGauge](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => RadialGauge): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => RadialGauge): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: RadialGauge): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: RadialGauge): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

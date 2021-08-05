@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.SpellingSuggestion")
 @js.native
-class SpellingSuggestion protected ()
+/* private */ class SpellingSuggestion ()
   extends StObject
      with typings.activexWord.Word.SpellingSuggestion {
   
@@ -22,7 +22,7 @@ class SpellingSuggestion protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.SpellingSuggestion_typekey")
   var WordDotSpellingSuggestion_typekey: typings.activexWord.Word.SpellingSuggestion = js.native
 }

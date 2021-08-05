@@ -29,55 +29,39 @@ trait GoogleAnalyticsAdminV1alphaWebDataStream extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaWebDataStream {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaWebDataStream = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaWebDataStream = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaWebDataStream]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaWebDataStreamMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaWebDataStream] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaWebDataStream](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDefaultUri(value: String): Self = StObject.set(x, "defaultUri", value.asInstanceOf[js.Any])
+    inline def setDefaultUri(value: String): Self = StObject.set(x, "defaultUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUriUndefined: Self = StObject.set(x, "defaultUri", js.undefined)
+    inline def setDefaultUriUndefined: Self = StObject.set(x, "defaultUri", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setFirebaseAppId(value: String): Self = StObject.set(x, "firebaseAppId", value.asInstanceOf[js.Any])
+    inline def setFirebaseAppId(value: String): Self = StObject.set(x, "firebaseAppId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirebaseAppIdUndefined: Self = StObject.set(x, "firebaseAppId", js.undefined)
+    inline def setFirebaseAppIdUndefined: Self = StObject.set(x, "firebaseAppId", js.undefined)
     
-    @scala.inline
-    def setMeasurementId(value: String): Self = StObject.set(x, "measurementId", value.asInstanceOf[js.Any])
+    inline def setMeasurementId(value: String): Self = StObject.set(x, "measurementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasurementIdUndefined: Self = StObject.set(x, "measurementId", js.undefined)
+    inline def setMeasurementIdUndefined: Self = StObject.set(x, "measurementId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

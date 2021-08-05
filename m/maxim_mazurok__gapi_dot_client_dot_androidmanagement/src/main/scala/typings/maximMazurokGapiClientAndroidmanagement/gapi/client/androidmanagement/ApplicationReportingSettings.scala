@@ -11,19 +11,15 @@ trait ApplicationReportingSettings extends StObject {
 }
 object ApplicationReportingSettings {
   
-  @scala.inline
-  def apply(): ApplicationReportingSettings = {
+  inline def apply(): ApplicationReportingSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationReportingSettings]
   }
   
-  @scala.inline
-  implicit class ApplicationReportingSettingsMutableBuilder[Self <: ApplicationReportingSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationReportingSettings](x: Self) {
     
-    @scala.inline
-    def setIncludeRemovedApps(value: Boolean): Self = StObject.set(x, "includeRemovedApps", value.asInstanceOf[js.Any])
+    inline def setIncludeRemovedApps(value: Boolean): Self = StObject.set(x, "includeRemovedApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeRemovedAppsUndefined: Self = StObject.set(x, "includeRemovedApps", js.undefined)
+    inline def setIncludeRemovedAppsUndefined: Self = StObject.set(x, "includeRemovedApps", js.undefined)
   }
 }

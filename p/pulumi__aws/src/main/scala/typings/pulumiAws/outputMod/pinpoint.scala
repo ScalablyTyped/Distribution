@@ -25,32 +25,24 @@ object pinpoint {
   }
   object AppCampaignHook {
     
-    @scala.inline
-    def apply(): AppCampaignHook = {
+    inline def apply(): AppCampaignHook = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppCampaignHook]
     }
     
-    @scala.inline
-    implicit class AppCampaignHookMutableBuilder[Self <: AppCampaignHook] (val x: Self) extends AnyVal {
+    extension [Self <: AppCampaignHook](x: Self) {
       
-      @scala.inline
-      def setLambdaFunctionName(value: String): Self = StObject.set(x, "lambdaFunctionName", value.asInstanceOf[js.Any])
+      inline def setLambdaFunctionName(value: String): Self = StObject.set(x, "lambdaFunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaFunctionNameUndefined: Self = StObject.set(x, "lambdaFunctionName", js.undefined)
+      inline def setLambdaFunctionNameUndefined: Self = StObject.set(x, "lambdaFunctionName", js.undefined)
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setWebUrl(value: String): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
+      inline def setWebUrl(value: String): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
+      inline def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
     }
   }
   
@@ -78,38 +70,28 @@ object pinpoint {
   }
   object AppLimits {
     
-    @scala.inline
-    def apply(): AppLimits = {
+    inline def apply(): AppLimits = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppLimits]
     }
     
-    @scala.inline
-    implicit class AppLimitsMutableBuilder[Self <: AppLimits] (val x: Self) extends AnyVal {
+    extension [Self <: AppLimits](x: Self) {
       
-      @scala.inline
-      def setDaily(value: Double): Self = StObject.set(x, "daily", value.asInstanceOf[js.Any])
+      inline def setDaily(value: Double): Self = StObject.set(x, "daily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDailyUndefined: Self = StObject.set(x, "daily", js.undefined)
+      inline def setDailyUndefined: Self = StObject.set(x, "daily", js.undefined)
       
-      @scala.inline
-      def setMaximumDuration(value: Double): Self = StObject.set(x, "maximumDuration", value.asInstanceOf[js.Any])
+      inline def setMaximumDuration(value: Double): Self = StObject.set(x, "maximumDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumDurationUndefined: Self = StObject.set(x, "maximumDuration", js.undefined)
+      inline def setMaximumDurationUndefined: Self = StObject.set(x, "maximumDuration", js.undefined)
       
-      @scala.inline
-      def setMessagesPerSecond(value: Double): Self = StObject.set(x, "messagesPerSecond", value.asInstanceOf[js.Any])
+      inline def setMessagesPerSecond(value: Double): Self = StObject.set(x, "messagesPerSecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesPerSecondUndefined: Self = StObject.set(x, "messagesPerSecond", js.undefined)
+      inline def setMessagesPerSecondUndefined: Self = StObject.set(x, "messagesPerSecond", js.undefined)
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     }
   }
   
@@ -127,26 +109,20 @@ object pinpoint {
   }
   object AppQuietTime {
     
-    @scala.inline
-    def apply(): AppQuietTime = {
+    inline def apply(): AppQuietTime = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppQuietTime]
     }
     
-    @scala.inline
-    implicit class AppQuietTimeMutableBuilder[Self <: AppQuietTime] (val x: Self) extends AnyVal {
+    extension [Self <: AppQuietTime](x: Self) {
       
-      @scala.inline
-      def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
 }

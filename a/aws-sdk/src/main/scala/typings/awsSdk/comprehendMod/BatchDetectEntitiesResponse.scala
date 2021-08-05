@@ -18,25 +18,19 @@ trait BatchDetectEntitiesResponse extends StObject {
 }
 object BatchDetectEntitiesResponse {
   
-  @scala.inline
-  def apply(ErrorList: BatchItemErrorList, ResultList: ListOfDetectEntitiesResult): BatchDetectEntitiesResponse = {
+  inline def apply(ErrorList: BatchItemErrorList, ResultList: ListOfDetectEntitiesResult): BatchDetectEntitiesResponse = {
     val __obj = js.Dynamic.literal(ErrorList = ErrorList.asInstanceOf[js.Any], ResultList = ResultList.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDetectEntitiesResponse]
   }
   
-  @scala.inline
-  implicit class BatchDetectEntitiesResponseMutableBuilder[Self <: BatchDetectEntitiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDetectEntitiesResponse](x: Self) {
     
-    @scala.inline
-    def setErrorList(value: BatchItemErrorList): Self = StObject.set(x, "ErrorList", value.asInstanceOf[js.Any])
+    inline def setErrorList(value: BatchItemErrorList): Self = StObject.set(x, "ErrorList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorListVarargs(value: BatchItemError*): Self = StObject.set(x, "ErrorList", js.Array(value :_*))
+    inline def setErrorListVarargs(value: BatchItemError*): Self = StObject.set(x, "ErrorList", js.Array(value :_*))
     
-    @scala.inline
-    def setResultList(value: ListOfDetectEntitiesResult): Self = StObject.set(x, "ResultList", value.asInstanceOf[js.Any])
+    inline def setResultList(value: ListOfDetectEntitiesResult): Self = StObject.set(x, "ResultList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultListVarargs(value: BatchDetectEntitiesItemResult*): Self = StObject.set(x, "ResultList", js.Array(value :_*))
+    inline def setResultListVarargs(value: BatchDetectEntitiesItemResult*): Self = StObject.set(x, "ResultList", js.Array(value :_*))
   }
 }

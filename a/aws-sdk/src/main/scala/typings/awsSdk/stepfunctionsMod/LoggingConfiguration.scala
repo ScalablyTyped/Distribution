@@ -23,34 +23,25 @@ trait LoggingConfiguration extends StObject {
 }
 object LoggingConfiguration {
   
-  @scala.inline
-  def apply(): LoggingConfiguration = {
+  inline def apply(): LoggingConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoggingConfiguration]
   }
   
-  @scala.inline
-  implicit class LoggingConfigurationMutableBuilder[Self <: LoggingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LoggingConfiguration](x: Self) {
     
-    @scala.inline
-    def setDestinations(value: LogDestinationList): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
+    inline def setDestinations(value: LogDestinationList): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
+    inline def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
     
-    @scala.inline
-    def setDestinationsVarargs(value: LogDestination*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: LogDestination*): Self = StObject.set(x, "destinations", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeExecutionData(value: IncludeExecutionData): Self = StObject.set(x, "includeExecutionData", value.asInstanceOf[js.Any])
+    inline def setIncludeExecutionData(value: IncludeExecutionData): Self = StObject.set(x, "includeExecutionData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeExecutionDataUndefined: Self = StObject.set(x, "includeExecutionData", js.undefined)
+    inline def setIncludeExecutionDataUndefined: Self = StObject.set(x, "includeExecutionData", js.undefined)
     
-    @scala.inline
-    def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

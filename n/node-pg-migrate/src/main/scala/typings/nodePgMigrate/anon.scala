@@ -18,20 +18,16 @@ object anon {
   }
   object FilenameFormat {
     
-    @scala.inline
-    def apply(): FilenameFormat = {
+    inline def apply(): FilenameFormat = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FilenameFormat]
     }
     
-    @scala.inline
-    implicit class FilenameFormatMutableBuilder[Self <: FilenameFormat] (val x: Self) extends AnyVal {
+    extension [Self <: FilenameFormat](x: Self) {
       
-      @scala.inline
-      def setFilenameFormat(value: typings.nodePgMigrate.migrationMod.FilenameFormat): Self = StObject.set(x, "filenameFormat", value.asInstanceOf[js.Any])
+      inline def setFilenameFormat(value: typings.nodePgMigrate.migrationMod.FilenameFormat): Self = StObject.set(x, "filenameFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameFormatUndefined: Self = StObject.set(x, "filenameFormat", js.undefined)
+      inline def setFilenameFormatUndefined: Self = StObject.set(x, "filenameFormat", js.undefined)
     }
   }
   
@@ -43,23 +39,18 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String): Name = {
+    inline def apply(name: String): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     }
   }
   
@@ -71,23 +62,18 @@ object anon {
   }
   object Options {
     
-    @scala.inline
-    def apply(table: typings.nodePgMigrate.generalTypesMod.Name): Options = {
+    inline def apply(table: typings.nodePgMigrate.generalTypesMod.Name): Options = {
       val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOptions(value: LikeOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: LikeOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setTable(value: typings.nodePgMigrate.generalTypesMod.Name): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: typings.nodePgMigrate.generalTypesMod.Name): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,8 +94,7 @@ object anon {
   }
   object PublicPartPgLiteral {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       constructor: /* value */ String => js.Any,
       literal: /* true */ Boolean,
       toString_ : () => String,
@@ -120,26 +105,19 @@ object anon {
       __obj.asInstanceOf[PublicPartPgLiteral]
     }
     
-    @scala.inline
-    implicit class PublicPartPgLiteralMutableBuilder[Self <: PublicPartPgLiteral] (val x: Self) extends AnyVal {
+    extension [Self <: PublicPartPgLiteral](x: Self) {
       
-      @scala.inline
-      def setConstructor(value: /* value */ String => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+      inline def setConstructor(value: /* value */ String => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreate(value: js.Any): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: js.Any): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      @scala.inline
-      def setLiteral(value: /* true */ Boolean): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
+      inline def setLiteral(value: /* true */ Boolean): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
+      inline def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,25 +127,20 @@ object anon {
   }
   object Reverse {
     
-    @scala.inline
-    def apply(reverse: CreateTriggerFn): Reverse = {
+    inline def apply(reverse: CreateTriggerFn): Reverse = {
       val __obj = js.Dynamic.literal(reverse = reverse.asInstanceOf[js.Any])
       __obj.asInstanceOf[Reverse]
     }
     
-    @scala.inline
-    implicit class ReverseMutableBuilder[Self <: Reverse] (val x: Self) extends AnyVal {
+    extension [Self <: Reverse](x: Self) {
       
-      @scala.inline
-      def setReverse(value: CreateTriggerFn): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: CreateTriggerFn): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseFunction3(
+      inline def setReverseFunction3(
         value: (/* tableName */ typings.nodePgMigrate.generalTypesMod.Name, /* triggerName */ String, /* triggerOptions */ TriggerOptions & DropOptions) => String | js.Array[String]
       ): Self = StObject.set(x, "reverse", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setReverseFunction4(
+      inline def setReverseFunction4(
         value: (/* tableName */ typings.nodePgMigrate.generalTypesMod.Name, /* triggerName */ String, /* triggerOptions */ TriggerOptions & FunctionOptions & DropOptions, /* definition */ Value) => String | js.Array[String]
       ): Self = StObject.set(x, "reverse", js.Any.fromFunction4(value))
     }
@@ -179,18 +152,15 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(`type`: String): Type = {
+    inline def apply(`type`: String): Type = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

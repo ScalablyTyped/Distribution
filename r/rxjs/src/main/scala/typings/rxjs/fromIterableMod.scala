@@ -13,8 +13,6 @@ object fromIterableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromIterable[T](input: Iterable[T]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(input.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
-  @scala.inline
-  def fromIterable[T](input: Iterable[T], scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(input.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  inline def fromIterable[T](input: Iterable[T]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(input.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  inline def fromIterable[T](input: Iterable[T], scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(input.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
 }

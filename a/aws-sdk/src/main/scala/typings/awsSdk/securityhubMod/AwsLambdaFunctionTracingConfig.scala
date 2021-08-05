@@ -13,19 +13,15 @@ trait AwsLambdaFunctionTracingConfig extends StObject {
 }
 object AwsLambdaFunctionTracingConfig {
   
-  @scala.inline
-  def apply(): AwsLambdaFunctionTracingConfig = {
+  inline def apply(): AwsLambdaFunctionTracingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsLambdaFunctionTracingConfig]
   }
   
-  @scala.inline
-  implicit class AwsLambdaFunctionTracingConfigMutableBuilder[Self <: AwsLambdaFunctionTracingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AwsLambdaFunctionTracingConfig](x: Self) {
     
-    @scala.inline
-    def setMode(value: NonEmptyString): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: NonEmptyString): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
   }
 }

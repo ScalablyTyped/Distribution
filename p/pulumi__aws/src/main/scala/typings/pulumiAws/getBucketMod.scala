@@ -11,10 +11,8 @@ object getBucketMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBucket(args: GetBucketArgs): js.Promise[GetBucketResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucket")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBucketResult]]
-  @scala.inline
-  def getBucket(args: GetBucketArgs, opts: InvokeOptions): js.Promise[GetBucketResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBucket")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBucketResult]]
+  inline def getBucket(args: GetBucketArgs): js.Promise[GetBucketResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucket")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBucketResult]]
+  inline def getBucket(args: GetBucketArgs, opts: InvokeOptions): js.Promise[GetBucketResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBucket")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBucketResult]]
   
   trait GetBucketArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getBucketMod {
   }
   object GetBucketArgs {
     
-    @scala.inline
-    def apply(bucket: String): GetBucketArgs = {
+    inline def apply(bucket: String): GetBucketArgs = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketArgs]
     }
     
-    @scala.inline
-    implicit class GetBucketArgsMutableBuilder[Self <: GetBucketArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketArgs](x: Self) {
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,8 +80,7 @@ object getBucketMod {
   }
   object GetBucketResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       bucket: String,
       bucketDomainName: String,
@@ -101,35 +95,25 @@ object getBucketMod {
       __obj.asInstanceOf[GetBucketResult]
     }
     
-    @scala.inline
-    implicit class GetBucketResultMutableBuilder[Self <: GetBucketResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketDomainName(value: String): Self = StObject.set(x, "bucketDomainName", value.asInstanceOf[js.Any])
+      inline def setBucketDomainName(value: String): Self = StObject.set(x, "bucketDomainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketRegionalDomainName(value: String): Self = StObject.set(x, "bucketRegionalDomainName", value.asInstanceOf[js.Any])
+      inline def setBucketRegionalDomainName(value: String): Self = StObject.set(x, "bucketRegionalDomainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostedZoneId(value: String): Self = StObject.set(x, "hostedZoneId", value.asInstanceOf[js.Any])
+      inline def setHostedZoneId(value: String): Self = StObject.set(x, "hostedZoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsiteDomain(value: String): Self = StObject.set(x, "websiteDomain", value.asInstanceOf[js.Any])
+      inline def setWebsiteDomain(value: String): Self = StObject.set(x, "websiteDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsiteEndpoint(value: String): Self = StObject.set(x, "websiteEndpoint", value.asInstanceOf[js.Any])
+      inline def setWebsiteEndpoint(value: String): Self = StObject.set(x, "websiteEndpoint", value.asInstanceOf[js.Any])
     }
   }
 }

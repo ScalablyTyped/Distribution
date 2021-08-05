@@ -23,19 +23,15 @@ trait ASPxClientTreeListBatchEditNodeInsertingEventArgs
 }
 object ASPxClientTreeListBatchEditNodeInsertingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, nodeKey: String, parentNodeKey: String): ASPxClientTreeListBatchEditNodeInsertingEventArgs = {
+  inline def apply(cancel: Boolean, nodeKey: String, parentNodeKey: String): ASPxClientTreeListBatchEditNodeInsertingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], nodeKey = nodeKey.asInstanceOf[js.Any], parentNodeKey = parentNodeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListBatchEditNodeInsertingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeListBatchEditNodeInsertingEventArgsMutableBuilder[Self <: ASPxClientTreeListBatchEditNodeInsertingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeListBatchEditNodeInsertingEventArgs](x: Self) {
     
-    @scala.inline
-    def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
+    inline def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNodeKey(value: String): Self = StObject.set(x, "parentNodeKey", value.asInstanceOf[js.Any])
+    inline def setParentNodeKey(value: String): Self = StObject.set(x, "parentNodeKey", value.asInstanceOf[js.Any])
   }
 }

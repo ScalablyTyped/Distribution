@@ -28,37 +28,27 @@ trait CreateFunctionDefinitionVersionRequest extends StObject {
 }
 object CreateFunctionDefinitionVersionRequest {
   
-  @scala.inline
-  def apply(FunctionDefinitionId: string): CreateFunctionDefinitionVersionRequest = {
+  inline def apply(FunctionDefinitionId: string): CreateFunctionDefinitionVersionRequest = {
     val __obj = js.Dynamic.literal(FunctionDefinitionId = FunctionDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFunctionDefinitionVersionRequest]
   }
   
-  @scala.inline
-  implicit class CreateFunctionDefinitionVersionRequestMutableBuilder[Self <: CreateFunctionDefinitionVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFunctionDefinitionVersionRequest](x: Self) {
     
-    @scala.inline
-    def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
+    inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
+    inline def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
     
-    @scala.inline
-    def setDefaultConfig(value: FunctionDefaultConfig): Self = StObject.set(x, "DefaultConfig", value.asInstanceOf[js.Any])
+    inline def setDefaultConfig(value: FunctionDefaultConfig): Self = StObject.set(x, "DefaultConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultConfigUndefined: Self = StObject.set(x, "DefaultConfig", js.undefined)
+    inline def setDefaultConfigUndefined: Self = StObject.set(x, "DefaultConfig", js.undefined)
     
-    @scala.inline
-    def setFunctionDefinitionId(value: string): Self = StObject.set(x, "FunctionDefinitionId", value.asInstanceOf[js.Any])
+    inline def setFunctionDefinitionId(value: string): Self = StObject.set(x, "FunctionDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctions(value: listOfFunction): Self = StObject.set(x, "Functions", value.asInstanceOf[js.Any])
+    inline def setFunctions(value: listOfFunction): Self = StObject.set(x, "Functions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionsUndefined: Self = StObject.set(x, "Functions", js.undefined)
+    inline def setFunctionsUndefined: Self = StObject.set(x, "Functions", js.undefined)
     
-    @scala.inline
-    def setFunctionsVarargs(value: Function*): Self = StObject.set(x, "Functions", js.Array(value :_*))
+    inline def setFunctionsVarargs(value: Function*): Self = StObject.set(x, "Functions", js.Array(value :_*))
   }
 }

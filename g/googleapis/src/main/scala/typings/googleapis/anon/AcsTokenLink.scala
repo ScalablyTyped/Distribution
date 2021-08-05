@@ -14,31 +14,23 @@ trait AcsTokenLink extends StObject {
 }
 object AcsTokenLink {
   
-  @scala.inline
-  def apply(): AcsTokenLink = {
+  inline def apply(): AcsTokenLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AcsTokenLink]
   }
   
-  @scala.inline
-  implicit class AcsTokenLinkMutableBuilder[Self <: AcsTokenLink] (val x: Self) extends AnyVal {
+  extension [Self <: AcsTokenLink](x: Self) {
     
-    @scala.inline
-    def setAcsTokenLink(value: String): Self = StObject.set(x, "acsTokenLink", value.asInstanceOf[js.Any])
+    inline def setAcsTokenLink(value: String): Self = StObject.set(x, "acsTokenLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcsTokenLinkUndefined: Self = StObject.set(x, "acsTokenLink", js.undefined)
+    inline def setAcsTokenLinkUndefined: Self = StObject.set(x, "acsTokenLink", js.undefined)
     
-    @scala.inline
-    def setDownloadLink(value: String): Self = StObject.set(x, "downloadLink", value.asInstanceOf[js.Any])
+    inline def setDownloadLink(value: String): Self = StObject.set(x, "downloadLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadLinkUndefined: Self = StObject.set(x, "downloadLink", js.undefined)
+    inline def setDownloadLinkUndefined: Self = StObject.set(x, "downloadLink", js.undefined)
     
-    @scala.inline
-    def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
+    inline def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAvailableUndefined: Self = StObject.set(x, "isAvailable", js.undefined)
+    inline def setIsAvailableUndefined: Self = StObject.set(x, "isAvailable", js.undefined)
   }
 }

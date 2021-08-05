@@ -18,8 +18,7 @@ trait NumeralJSOptions extends StObject {
 }
 object NumeralJSOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentLocale: String,
     defaultFormat: String,
     nullFormat: String,
@@ -30,22 +29,16 @@ object NumeralJSOptions {
     __obj.asInstanceOf[NumeralJSOptions]
   }
   
-  @scala.inline
-  implicit class NumeralJSOptionsMutableBuilder[Self <: NumeralJSOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NumeralJSOptions](x: Self) {
     
-    @scala.inline
-    def setCurrentLocale(value: String): Self = StObject.set(x, "currentLocale", value.asInstanceOf[js.Any])
+    inline def setCurrentLocale(value: String): Self = StObject.set(x, "currentLocale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultFormat(value: String): Self = StObject.set(x, "defaultFormat", value.asInstanceOf[js.Any])
+    inline def setDefaultFormat(value: String): Self = StObject.set(x, "defaultFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullFormat(value: String): Self = StObject.set(x, "nullFormat", value.asInstanceOf[js.Any])
+    inline def setNullFormat(value: String): Self = StObject.set(x, "nullFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalePercentBy100(value: Boolean): Self = StObject.set(x, "scalePercentBy100", value.asInstanceOf[js.Any])
+    inline def setScalePercentBy100(value: Boolean): Self = StObject.set(x, "scalePercentBy100", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZeroFormat(value: String): Self = StObject.set(x, "zeroFormat", value.asInstanceOf[js.Any])
+    inline def setZeroFormat(value: String): Self = StObject.set(x, "zeroFormat", value.asInstanceOf[js.Any])
   }
 }

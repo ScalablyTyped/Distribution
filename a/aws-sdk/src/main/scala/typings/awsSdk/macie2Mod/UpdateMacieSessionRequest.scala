@@ -18,25 +18,19 @@ trait UpdateMacieSessionRequest extends StObject {
 }
 object UpdateMacieSessionRequest {
   
-  @scala.inline
-  def apply(): UpdateMacieSessionRequest = {
+  inline def apply(): UpdateMacieSessionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateMacieSessionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateMacieSessionRequestMutableBuilder[Self <: UpdateMacieSessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMacieSessionRequest](x: Self) {
     
-    @scala.inline
-    def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = StObject.set(x, "findingPublishingFrequency", value.asInstanceOf[js.Any])
+    inline def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = StObject.set(x, "findingPublishingFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingPublishingFrequencyUndefined: Self = StObject.set(x, "findingPublishingFrequency", js.undefined)
+    inline def setFindingPublishingFrequencyUndefined: Self = StObject.set(x, "findingPublishingFrequency", js.undefined)
     
-    @scala.inline
-    def setStatus(value: MacieStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: MacieStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

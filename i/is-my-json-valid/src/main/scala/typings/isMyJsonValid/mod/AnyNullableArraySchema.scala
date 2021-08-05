@@ -12,8 +12,7 @@ trait AnyNullableArraySchema
      with _AnySchema
 object AnyNullableArraySchema {
   
-  @scala.inline
-  def apply(items: AnySchema, `type`: js.Array[array | `null`]): AnyNullableArraySchema = {
+  inline def apply(items: AnySchema, `type`: js.Array[array | `null`]): AnyNullableArraySchema = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyNullableArraySchema]

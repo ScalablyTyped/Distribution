@@ -27,22 +27,17 @@ trait XUndoAction extends StObject {
 }
 object XUndoAction {
   
-  @scala.inline
-  def apply(Title: String, redo: () => Unit, undo: () => Unit): XUndoAction = {
+  inline def apply(Title: String, redo: () => Unit, undo: () => Unit): XUndoAction = {
     val __obj = js.Dynamic.literal(Title = Title.asInstanceOf[js.Any], redo = js.Any.fromFunction0(redo), undo = js.Any.fromFunction0(undo))
     __obj.asInstanceOf[XUndoAction]
   }
   
-  @scala.inline
-  implicit class XUndoActionMutableBuilder[Self <: XUndoAction] (val x: Self) extends AnyVal {
+  extension [Self <: XUndoAction](x: Self) {
     
-    @scala.inline
-    def setRedo(value: () => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
+    inline def setRedo(value: () => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndo(value: () => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction0(value))
+    inline def setUndo(value: () => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction0(value))
   }
 }

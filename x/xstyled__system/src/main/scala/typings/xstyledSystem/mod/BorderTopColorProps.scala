@@ -14,27 +14,22 @@ trait BorderTopColorProps extends StObject {
 }
 object BorderTopColorProps {
   
-  @scala.inline
-  def apply(): BorderTopColorProps = {
+  inline def apply(): BorderTopColorProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderTopColorProps]
   }
   
-  @scala.inline
-  implicit class BorderTopColorPropsMutableBuilder[Self <: BorderTopColorProps] (val x: Self) extends AnyVal {
+  extension [Self <: BorderTopColorProps](x: Self) {
     
-    @scala.inline
-    def setBorderTopColor(
+    inline def setBorderTopColor(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
         ]
     ): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
+    inline def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
     
-    @scala.inline
-    def setBorderTopColorVarargs(
+    inline def setBorderTopColorVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any)*
     ): Self = StObject.set(x, "borderTopColor", js.Array(value :_*))
   }

@@ -10,6 +10,5 @@ object pathFormatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPosixPath(pathString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosixPath")(pathString.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getPosixPath(pathString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosixPath")(pathString.asInstanceOf[js.Any]).asInstanceOf[String]
 }

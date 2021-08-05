@@ -11,19 +11,15 @@ trait PartialPickthisitemText extends StObject {
 }
 object PartialPickthisitemText {
   
-  @scala.inline
-  def apply(): PartialPickthisitemText = {
+  inline def apply(): PartialPickthisitemText = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickthisitemText]
   }
   
-  @scala.inline
-  implicit class PartialPickthisitemTextMutableBuilder[Self <: PartialPickthisitemText] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickthisitemText](x: Self) {
     
-    @scala.inline
-    def setItemText(value: js.Any): Self = StObject.set(x, "itemText", value.asInstanceOf[js.Any])
+    inline def setItemText(value: js.Any): Self = StObject.set(x, "itemText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemTextUndefined: Self = StObject.set(x, "itemText", js.undefined)
+    inline def setItemTextUndefined: Self = StObject.set(x, "itemText", js.undefined)
   }
 }

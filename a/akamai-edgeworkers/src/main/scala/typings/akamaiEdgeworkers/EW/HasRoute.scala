@@ -16,16 +16,13 @@ trait HasRoute extends StObject {
 }
 object HasRoute {
   
-  @scala.inline
-  def apply(route: Destination => Unit): HasRoute = {
+  inline def apply(route: Destination => Unit): HasRoute = {
     val __obj = js.Dynamic.literal(route = js.Any.fromFunction1(route))
     __obj.asInstanceOf[HasRoute]
   }
   
-  @scala.inline
-  implicit class HasRouteMutableBuilder[Self <: HasRoute] (val x: Self) extends AnyVal {
+  extension [Self <: HasRoute](x: Self) {
     
-    @scala.inline
-    def setRoute(value: Destination => Unit): Self = StObject.set(x, "route", js.Any.fromFunction1(value))
+    inline def setRoute(value: Destination => Unit): Self = StObject.set(x, "route", js.Any.fromFunction1(value))
   }
 }

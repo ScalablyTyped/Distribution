@@ -17,31 +17,23 @@ trait CompletionResult extends StObject {
 }
 object CompletionResult {
   
-  @scala.inline
-  def apply(): CompletionResult = {
+  inline def apply(): CompletionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompletionResult]
   }
   
-  @scala.inline
-  implicit class CompletionResultMutableBuilder[Self <: CompletionResult] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionResult](x: Self) {
     
-    @scala.inline
-    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
+    inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
+    inline def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
     
-    @scala.inline
-    def setSuggestion(value: String): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
+    inline def setSuggestion(value: String): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionUndefined: Self = StObject.set(x, "suggestion", js.undefined)
+    inline def setSuggestionUndefined: Self = StObject.set(x, "suggestion", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

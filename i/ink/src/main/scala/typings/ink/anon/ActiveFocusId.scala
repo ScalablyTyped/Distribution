@@ -16,28 +16,21 @@ trait ActiveFocusId extends StObject {
 }
 object ActiveFocusId {
   
-  @scala.inline
-  def apply(activeFocusId: Unit, error: Unit, focusables: js.Array[scala.Nothing], isFocusEnabled: Boolean): ActiveFocusId = {
+  inline def apply(activeFocusId: Unit, error: Unit, focusables: js.Array[scala.Nothing], isFocusEnabled: Boolean): ActiveFocusId = {
     val __obj = js.Dynamic.literal(activeFocusId = activeFocusId.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focusables = focusables.asInstanceOf[js.Any], isFocusEnabled = isFocusEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveFocusId]
   }
   
-  @scala.inline
-  implicit class ActiveFocusIdMutableBuilder[Self <: ActiveFocusId] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveFocusId](x: Self) {
     
-    @scala.inline
-    def setActiveFocusId(value: Unit): Self = StObject.set(x, "activeFocusId", value.asInstanceOf[js.Any])
+    inline def setActiveFocusId(value: Unit): Self = StObject.set(x, "activeFocusId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusables(value: js.Array[scala.Nothing]): Self = StObject.set(x, "focusables", value.asInstanceOf[js.Any])
+    inline def setFocusables(value: js.Array[scala.Nothing]): Self = StObject.set(x, "focusables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusablesVarargs(value: scala.Nothing*): Self = StObject.set(x, "focusables", js.Array(value :_*))
+    inline def setFocusablesVarargs(value: scala.Nothing*): Self = StObject.set(x, "focusables", js.Array(value :_*))
     
-    @scala.inline
-    def setIsFocusEnabled(value: Boolean): Self = StObject.set(x, "isFocusEnabled", value.asInstanceOf[js.Any])
+    inline def setIsFocusEnabled(value: Boolean): Self = StObject.set(x, "isFocusEnabled", value.asInstanceOf[js.Any])
   }
 }

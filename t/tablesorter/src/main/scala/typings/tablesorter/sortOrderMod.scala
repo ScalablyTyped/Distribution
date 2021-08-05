@@ -13,10 +13,8 @@ object sortOrderMod {
   trait SortOrder extends StObject
   object SortOrder {
     
-    @scala.inline
-    def asc: typings.tablesorter.tablesorterStrings.asc = "asc".asInstanceOf[typings.tablesorter.tablesorterStrings.asc]
+    inline def asc: typings.tablesorter.tablesorterStrings.asc = "asc".asInstanceOf[typings.tablesorter.tablesorterStrings.asc]
     
-    @scala.inline
-    def desc: typings.tablesorter.tablesorterStrings.desc = "desc".asInstanceOf[typings.tablesorter.tablesorterStrings.desc]
+    inline def desc: typings.tablesorter.tablesorterStrings.desc = "desc".asInstanceOf[typings.tablesorter.tablesorterStrings.desc]
   }
 }

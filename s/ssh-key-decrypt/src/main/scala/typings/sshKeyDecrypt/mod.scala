@@ -9,18 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(data: String, passphrase: String): Buffer = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def apply(data: String, passphrase: String, outEnc: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], outEnc.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(data: String, passphrase: String, outEnc: buffer): Buffer = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], outEnc.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def apply(data: Buffer, passphrase: String): Buffer = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def apply(data: Buffer, passphrase: String, outEnc: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], outEnc.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(data: Buffer, passphrase: String, outEnc: buffer): Buffer = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], outEnc.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def apply(data: String, passphrase: String): Buffer = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def apply(data: String, passphrase: String, outEnc: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], outEnc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(data: String, passphrase: String, outEnc: buffer): Buffer = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], outEnc.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def apply(data: Buffer, passphrase: String): Buffer = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def apply(data: Buffer, passphrase: String, outEnc: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], outEnc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(data: Buffer, passphrase: String, outEnc: buffer): Buffer = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], outEnc.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   @JSImport("ssh-key-decrypt", JSImport.Namespace)
   @js.native

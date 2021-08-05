@@ -22,19 +22,15 @@ trait LockedDocumentRequest
 }
 object LockedDocumentRequest {
   
-  @scala.inline
-  def apply(Context: XInterface, DocumentURL: String, Message: String, UserInfo: String): LockedDocumentRequest = {
+  inline def apply(Context: XInterface, DocumentURL: String, Message: String, UserInfo: String): LockedDocumentRequest = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], DocumentURL = DocumentURL.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], UserInfo = UserInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[LockedDocumentRequest]
   }
   
-  @scala.inline
-  implicit class LockedDocumentRequestMutableBuilder[Self <: LockedDocumentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: LockedDocumentRequest](x: Self) {
     
-    @scala.inline
-    def setDocumentURL(value: String): Self = StObject.set(x, "DocumentURL", value.asInstanceOf[js.Any])
+    inline def setDocumentURL(value: String): Self = StObject.set(x, "DocumentURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInfo(value: String): Self = StObject.set(x, "UserInfo", value.asInstanceOf[js.Any])
+    inline def setUserInfo(value: String): Self = StObject.set(x, "UserInfo", value.asInstanceOf[js.Any])
   }
 }

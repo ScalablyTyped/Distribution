@@ -57,8 +57,7 @@ trait DateTimeRange extends StObject {
 }
 object DateTimeRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EndDay: Double,
     EndHours: Double,
     EndMinutes: Double,
@@ -79,52 +78,36 @@ object DateTimeRange {
     __obj.asInstanceOf[DateTimeRange]
   }
   
-  @scala.inline
-  implicit class DateTimeRangeMutableBuilder[Self <: DateTimeRange] (val x: Self) extends AnyVal {
+  extension [Self <: DateTimeRange](x: Self) {
     
-    @scala.inline
-    def setEndDay(value: Double): Self = StObject.set(x, "EndDay", value.asInstanceOf[js.Any])
+    inline def setEndDay(value: Double): Self = StObject.set(x, "EndDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndHours(value: Double): Self = StObject.set(x, "EndHours", value.asInstanceOf[js.Any])
+    inline def setEndHours(value: Double): Self = StObject.set(x, "EndHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndMinutes(value: Double): Self = StObject.set(x, "EndMinutes", value.asInstanceOf[js.Any])
+    inline def setEndMinutes(value: Double): Self = StObject.set(x, "EndMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndMonth(value: Double): Self = StObject.set(x, "EndMonth", value.asInstanceOf[js.Any])
+    inline def setEndMonth(value: Double): Self = StObject.set(x, "EndMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndNanoSeconds(value: Double): Self = StObject.set(x, "EndNanoSeconds", value.asInstanceOf[js.Any])
+    inline def setEndNanoSeconds(value: Double): Self = StObject.set(x, "EndNanoSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndSeconds(value: Double): Self = StObject.set(x, "EndSeconds", value.asInstanceOf[js.Any])
+    inline def setEndSeconds(value: Double): Self = StObject.set(x, "EndSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndYear(value: Double): Self = StObject.set(x, "EndYear", value.asInstanceOf[js.Any])
+    inline def setEndYear(value: Double): Self = StObject.set(x, "EndYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUTC(value: Boolean): Self = StObject.set(x, "IsUTC", value.asInstanceOf[js.Any])
+    inline def setIsUTC(value: Boolean): Self = StObject.set(x, "IsUTC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDay(value: Double): Self = StObject.set(x, "StartDay", value.asInstanceOf[js.Any])
+    inline def setStartDay(value: Double): Self = StObject.set(x, "StartDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartHours(value: Double): Self = StObject.set(x, "StartHours", value.asInstanceOf[js.Any])
+    inline def setStartHours(value: Double): Self = StObject.set(x, "StartHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartMinutes(value: Double): Self = StObject.set(x, "StartMinutes", value.asInstanceOf[js.Any])
+    inline def setStartMinutes(value: Double): Self = StObject.set(x, "StartMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartMonth(value: Double): Self = StObject.set(x, "StartMonth", value.asInstanceOf[js.Any])
+    inline def setStartMonth(value: Double): Self = StObject.set(x, "StartMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartNanoSeconds(value: Double): Self = StObject.set(x, "StartNanoSeconds", value.asInstanceOf[js.Any])
+    inline def setStartNanoSeconds(value: Double): Self = StObject.set(x, "StartNanoSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartSeconds(value: Double): Self = StObject.set(x, "StartSeconds", value.asInstanceOf[js.Any])
+    inline def setStartSeconds(value: Double): Self = StObject.set(x, "StartSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartYear(value: Double): Self = StObject.set(x, "StartYear", value.asInstanceOf[js.Any])
+    inline def setStartYear(value: Double): Self = StObject.set(x, "StartYear", value.asInstanceOf[js.Any])
   }
 }

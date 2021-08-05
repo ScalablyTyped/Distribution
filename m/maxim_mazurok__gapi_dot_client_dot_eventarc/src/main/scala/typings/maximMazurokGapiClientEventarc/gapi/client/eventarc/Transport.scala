@@ -11,19 +11,15 @@ trait Transport extends StObject {
 }
 object Transport {
   
-  @scala.inline
-  def apply(): Transport = {
+  inline def apply(): Transport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Transport]
   }
   
-  @scala.inline
-  implicit class TransportMutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
+  extension [Self <: Transport](x: Self) {
     
-    @scala.inline
-    def setPubsub(value: Pubsub): Self = StObject.set(x, "pubsub", value.asInstanceOf[js.Any])
+    inline def setPubsub(value: Pubsub): Self = StObject.set(x, "pubsub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubsubUndefined: Self = StObject.set(x, "pubsub", js.undefined)
+    inline def setPubsubUndefined: Self = StObject.set(x, "pubsub", js.undefined)
   }
 }

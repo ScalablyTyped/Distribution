@@ -28,17 +28,14 @@ object typesInvalidPathExceptionMod {
   }
   object InvalidPathException {
     
-    @scala.inline
-    def apply(): InvalidPathException = {
+    inline def apply(): InvalidPathException = {
       val __obj = js.Dynamic.literal(name = "InvalidPathException")
       __obj.asInstanceOf[InvalidPathException]
     }
     
-    @scala.inline
-    implicit class InvalidPathExceptionMutableBuilder[Self <: InvalidPathException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidPathException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidPathException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidPathException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

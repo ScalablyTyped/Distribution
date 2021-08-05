@@ -17,22 +17,17 @@ trait SchemaRemoveHeldAccountsResponse extends StObject {
 }
 object SchemaRemoveHeldAccountsResponse {
   
-  @scala.inline
-  def apply(): SchemaRemoveHeldAccountsResponse = {
+  inline def apply(): SchemaRemoveHeldAccountsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRemoveHeldAccountsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaRemoveHeldAccountsResponseMutableBuilder[Self <: SchemaRemoveHeldAccountsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRemoveHeldAccountsResponse](x: Self) {
     
-    @scala.inline
-    def setStatuses(value: js.Array[SchemaStatus]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
+    inline def setStatuses(value: js.Array[SchemaStatus]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
+    inline def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
     
-    @scala.inline
-    def setStatusesVarargs(value: SchemaStatus*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: SchemaStatus*): Self = StObject.set(x, "statuses", js.Array(value :_*))
   }
 }

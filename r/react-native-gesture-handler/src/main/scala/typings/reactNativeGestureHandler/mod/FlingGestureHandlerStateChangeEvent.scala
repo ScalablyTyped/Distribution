@@ -13,16 +13,13 @@ trait FlingGestureHandlerStateChangeEvent
 }
 object FlingGestureHandlerStateChangeEvent {
   
-  @scala.inline
-  def apply(nativeEvent: GestureHandlerStateChangeNativeEvent & FlingGestureHandlerEventExtra): FlingGestureHandlerStateChangeEvent = {
+  inline def apply(nativeEvent: GestureHandlerStateChangeNativeEvent & FlingGestureHandlerEventExtra): FlingGestureHandlerStateChangeEvent = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlingGestureHandlerStateChangeEvent]
   }
   
-  @scala.inline
-  implicit class FlingGestureHandlerStateChangeEventMutableBuilder[Self <: FlingGestureHandlerStateChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FlingGestureHandlerStateChangeEvent](x: Self) {
     
-    @scala.inline
-    def setNativeEvent(value: GestureHandlerStateChangeNativeEvent & FlingGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+    inline def setNativeEvent(value: GestureHandlerStateChangeNativeEvent & FlingGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
   }
 }

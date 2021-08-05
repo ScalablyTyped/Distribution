@@ -16,19 +16,15 @@ trait SchemaInsertInlineSheetsChartResponse extends StObject {
 }
 object SchemaInsertInlineSheetsChartResponse {
   
-  @scala.inline
-  def apply(): SchemaInsertInlineSheetsChartResponse = {
+  inline def apply(): SchemaInsertInlineSheetsChartResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInsertInlineSheetsChartResponse]
   }
   
-  @scala.inline
-  implicit class SchemaInsertInlineSheetsChartResponseMutableBuilder[Self <: SchemaInsertInlineSheetsChartResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInsertInlineSheetsChartResponse](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

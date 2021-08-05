@@ -13,19 +13,15 @@ trait RecordFactory extends StObject {
 }
 object RecordFactory {
   
-  @scala.inline
-  def apply(MakeRecord: (js.Any, js.Any, Boolean) => IRecord, gridFieldMap: js.Any): RecordFactory = {
+  inline def apply(MakeRecord: (js.Any, js.Any, Boolean) => IRecord, gridFieldMap: js.Any): RecordFactory = {
     val __obj = js.Dynamic.literal(MakeRecord = js.Any.fromFunction3(MakeRecord), gridFieldMap = gridFieldMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordFactory]
   }
   
-  @scala.inline
-  implicit class RecordFactoryMutableBuilder[Self <: RecordFactory] (val x: Self) extends AnyVal {
+  extension [Self <: RecordFactory](x: Self) {
     
-    @scala.inline
-    def setGridFieldMap(value: js.Any): Self = StObject.set(x, "gridFieldMap", value.asInstanceOf[js.Any])
+    inline def setGridFieldMap(value: js.Any): Self = StObject.set(x, "gridFieldMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMakeRecord(value: (js.Any, js.Any, Boolean) => IRecord): Self = StObject.set(x, "MakeRecord", js.Any.fromFunction3(value))
+    inline def setMakeRecord(value: (js.Any, js.Any, Boolean) => IRecord): Self = StObject.set(x, "MakeRecord", js.Any.fromFunction3(value))
   }
 }

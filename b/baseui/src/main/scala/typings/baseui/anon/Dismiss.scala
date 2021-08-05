@@ -10,16 +10,13 @@ trait Dismiss extends StObject {
 }
 object Dismiss {
   
-  @scala.inline
-  def apply(dismiss: () => Unit): Dismiss = {
+  inline def apply(dismiss: () => Unit): Dismiss = {
     val __obj = js.Dynamic.literal(dismiss = js.Any.fromFunction0(dismiss))
     __obj.asInstanceOf[Dismiss]
   }
   
-  @scala.inline
-  implicit class DismissMutableBuilder[Self <: Dismiss] (val x: Self) extends AnyVal {
+  extension [Self <: Dismiss](x: Self) {
     
-    @scala.inline
-    def setDismiss(value: () => Unit): Self = StObject.set(x, "dismiss", js.Any.fromFunction0(value))
+    inline def setDismiss(value: () => Unit): Self = StObject.set(x, "dismiss", js.Any.fromFunction0(value))
   }
 }

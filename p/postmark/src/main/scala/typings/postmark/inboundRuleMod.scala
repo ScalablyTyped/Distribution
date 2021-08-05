@@ -22,20 +22,16 @@ object inboundRuleMod {
   }
   object InboundRule {
     
-    @scala.inline
-    def apply(ID: Double, Rule: String): InboundRule = {
+    inline def apply(ID: Double, Rule: String): InboundRule = {
       val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any], Rule = Rule.asInstanceOf[js.Any])
       __obj.asInstanceOf[InboundRule]
     }
     
-    @scala.inline
-    implicit class InboundRuleMutableBuilder[Self <: InboundRule] (val x: Self) extends AnyVal {
+    extension [Self <: InboundRule](x: Self) {
       
-      @scala.inline
-      def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRule(value: String): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
+      inline def setRule(value: String): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,23 +43,18 @@ object inboundRuleMod {
   }
   object InboundRules {
     
-    @scala.inline
-    def apply(InboundRules: js.Array[InboundRule], TotalCount: Double): InboundRules = {
+    inline def apply(InboundRules: js.Array[InboundRule], TotalCount: Double): InboundRules = {
       val __obj = js.Dynamic.literal(InboundRules = InboundRules.asInstanceOf[js.Any], TotalCount = TotalCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[InboundRules]
     }
     
-    @scala.inline
-    implicit class InboundRulesMutableBuilder[Self <: InboundRules] (val x: Self) extends AnyVal {
+    extension [Self <: InboundRules](x: Self) {
       
-      @scala.inline
-      def setInboundRules(value: js.Array[InboundRule]): Self = StObject.set(x, "InboundRules", value.asInstanceOf[js.Any])
+      inline def setInboundRules(value: js.Array[InboundRule]): Self = StObject.set(x, "InboundRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInboundRulesVarargs(value: InboundRule*): Self = StObject.set(x, "InboundRules", js.Array(value :_*))
+      inline def setInboundRulesVarargs(value: InboundRule*): Self = StObject.set(x, "InboundRules", js.Array(value :_*))
       
-      @scala.inline
-      def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+      inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }
   }
 }

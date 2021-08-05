@@ -19,39 +19,30 @@ trait IUriToLinesMapping extends StObject {
 }
 object IUriToLinesMapping {
   
-  @scala.inline
-  def apply(): IUriToLinesMapping = {
+  inline def apply(): IUriToLinesMapping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IUriToLinesMapping]
   }
   
-  @scala.inline
-  implicit class IUriToLinesMappingMutableBuilder[Self <: IUriToLinesMapping] (val x: Self) extends AnyVal {
+  extension [Self <: IUriToLinesMapping](x: Self) {
     
-    @scala.inline
-    def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
+    inline def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsolutePathNull: Self = StObject.set(x, "absolutePath", null)
+    inline def setAbsolutePathNull: Self = StObject.set(x, "absolutePath", null)
     
-    @scala.inline
-    def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
+    inline def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
     
-    @scala.inline
-    def setLines(
+    inline def setLines(
       value: js.Array[
           Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
         ]
     ): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesNull: Self = StObject.set(x, "lines", null)
+    inline def setLinesNull: Self = StObject.set(x, "lines", null)
     
-    @scala.inline
-    def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+    inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
-    @scala.inline
-    def setLinesVarargs(
+    inline def setLinesVarargs(
       value: (Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any))*
     ): Self = StObject.set(x, "lines", js.Array(value :_*))
   }

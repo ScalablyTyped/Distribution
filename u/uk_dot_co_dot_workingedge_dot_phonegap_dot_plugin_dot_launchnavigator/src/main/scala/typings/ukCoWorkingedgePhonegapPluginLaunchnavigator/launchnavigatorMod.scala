@@ -14,6 +14,5 @@ object launchnavigatorMod {
   @JSImport("uk.co.workingedge.phonegap.plugin.launchnavigator/www/launchnavigator", "launchnavigator")
   @js.native
   def launchnavigator: LaunchNavigator_ = js.native
-  @scala.inline
-  def launchnavigator_=(x: LaunchNavigator_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("launchnavigator")(x.asInstanceOf[js.Any])
+  inline def launchnavigator_=(x: LaunchNavigator_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("launchnavigator")(x.asInstanceOf[js.Any])
 }

@@ -21,71 +21,61 @@ trait NavigationStackAction
      with _NavigationAction
 object NavigationStackAction {
   
-  @scala.inline
-  def NavigationBackAction(): typings.reactNavigation.mod.NavigationBackAction = {
+  inline def NavigationBackAction(): typings.reactNavigation.mod.NavigationBackAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Navigation/BACK")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationBackAction]
   }
   
-  @scala.inline
-  def NavigationCompleteTransitionAction(key: String): typings.reactNavigation.mod.NavigationCompleteTransitionAction = {
+  inline def NavigationCompleteTransitionAction(key: String): typings.reactNavigation.mod.NavigationCompleteTransitionAction = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Navigation/COMPLETE_TRANSITION")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationCompleteTransitionAction]
   }
   
-  @scala.inline
-  def NavigationInitAction(): typings.reactNavigation.mod.NavigationInitAction = {
+  inline def NavigationInitAction(): typings.reactNavigation.mod.NavigationInitAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Navigation/INIT")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationInitAction]
   }
   
-  @scala.inline
-  def NavigationNavigateAction(routeName: String): typings.reactNavigation.mod.NavigationNavigateAction = {
+  inline def NavigationNavigateAction(routeName: String): typings.reactNavigation.mod.NavigationNavigateAction = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Navigation/NAVIGATE")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationNavigateAction]
   }
   
-  @scala.inline
-  def NavigationPopAction(): typings.reactNavigation.mod.NavigationPopAction = {
+  inline def NavigationPopAction(): typings.reactNavigation.mod.NavigationPopAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Navigation/POP")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationPopAction]
   }
   
-  @scala.inline
-  def NavigationPopToTopAction(): typings.reactNavigation.mod.NavigationPopToTopAction = {
+  inline def NavigationPopToTopAction(): typings.reactNavigation.mod.NavigationPopToTopAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Navigation/POP_TO_TOP")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationPopToTopAction]
   }
   
-  @scala.inline
-  def NavigationPushAction(routeName: String): typings.reactNavigation.mod.NavigationPushAction = {
+  inline def NavigationPushAction(routeName: String): typings.reactNavigation.mod.NavigationPushAction = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Navigation/PUSH")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationPushAction]
   }
   
-  @scala.inline
-  def NavigationReplaceAction(key: String, routeName: String): typings.reactNavigation.mod.NavigationReplaceAction = {
+  inline def NavigationReplaceAction(key: String, routeName: String): typings.reactNavigation.mod.NavigationReplaceAction = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], routeName = routeName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Navigation/REPLACE")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationReplaceAction]
   }
   
-  @scala.inline
-  def NavigationResetAction(actions: js.Array[NavigationNavigateAction], index: Double): typings.reactNavigation.mod.NavigationResetAction = {
+  inline def NavigationResetAction(actions: js.Array[NavigationNavigateAction], index: Double): typings.reactNavigation.mod.NavigationResetAction = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Navigation/RESET")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationResetAction]
   }
   
-  @scala.inline
-  def NavigationSetParamsAction(key: String, params: NavigationParams): typings.reactNavigation.mod.NavigationSetParamsAction = {
+  inline def NavigationSetParamsAction(key: String, params: NavigationParams): typings.reactNavigation.mod.NavigationSetParamsAction = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Navigation/SET_PARAMS")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationSetParamsAction]

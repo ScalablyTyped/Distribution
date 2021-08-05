@@ -15,31 +15,23 @@ trait ICommandInitializeTestCase extends StObject {
 }
 object ICommandInitializeTestCase {
   
-  @scala.inline
-  def apply(): ICommandInitializeTestCase = {
+  inline def apply(): ICommandInitializeTestCase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICommandInitializeTestCase]
   }
   
-  @scala.inline
-  implicit class ICommandInitializeTestCaseMutableBuilder[Self <: ICommandInitializeTestCase] (val x: Self) extends AnyVal {
+  extension [Self <: ICommandInitializeTestCase](x: Self) {
     
-    @scala.inline
-    def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdNull: Self = StObject.set(x, "actionId", null)
+    inline def setActionIdNull: Self = StObject.set(x, "actionId", null)
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
     
-    @scala.inline
-    def setPickle(value: IPickle): Self = StObject.set(x, "pickle", value.asInstanceOf[js.Any])
+    inline def setPickle(value: IPickle): Self = StObject.set(x, "pickle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickleNull: Self = StObject.set(x, "pickle", null)
+    inline def setPickleNull: Self = StObject.set(x, "pickle", null)
     
-    @scala.inline
-    def setPickleUndefined: Self = StObject.set(x, "pickle", js.undefined)
+    inline def setPickleUndefined: Self = StObject.set(x, "pickle", js.undefined)
   }
 }

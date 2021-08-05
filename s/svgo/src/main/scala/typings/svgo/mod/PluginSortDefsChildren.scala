@@ -13,16 +13,13 @@ trait PluginSortDefsChildren
 }
 object PluginSortDefsChildren {
   
-  @scala.inline
-  def apply(sortDefsChildren: Boolean | js.Object): PluginSortDefsChildren = {
+  inline def apply(sortDefsChildren: Boolean | js.Object): PluginSortDefsChildren = {
     val __obj = js.Dynamic.literal(sortDefsChildren = sortDefsChildren.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginSortDefsChildren]
   }
   
-  @scala.inline
-  implicit class PluginSortDefsChildrenMutableBuilder[Self <: PluginSortDefsChildren] (val x: Self) extends AnyVal {
+  extension [Self <: PluginSortDefsChildren](x: Self) {
     
-    @scala.inline
-    def setSortDefsChildren(value: Boolean | js.Object): Self = StObject.set(x, "sortDefsChildren", value.asInstanceOf[js.Any])
+    inline def setSortDefsChildren(value: Boolean | js.Object): Self = StObject.set(x, "sortDefsChildren", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait ExtensionEventCallback extends StObject {
 }
 object ExtensionEventCallback {
   
-  @scala.inline
-  def apply(uri: String): ExtensionEventCallback = {
+  inline def apply(uri: String): ExtensionEventCallback = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionEventCallback]
   }
   
-  @scala.inline
-  implicit class ExtensionEventCallbackMutableBuilder[Self <: ExtensionEventCallback] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionEventCallback](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

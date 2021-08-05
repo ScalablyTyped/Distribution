@@ -11,11 +11,9 @@ object chanceBooleans {
   sealed trait `false`
     extends StObject
        with _FalsyType
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
   
   @js.native
   sealed trait `true` extends StObject
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
+  inline def `true`: `true` = true.asInstanceOf[`true`]
 }

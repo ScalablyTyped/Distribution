@@ -11,16 +11,13 @@ trait IELangSearchEvents extends StObject {
 }
 object IELangSearchEvents {
   
-  @scala.inline
-  def apply(select: JQueryDeferred[js.Any]): IELangSearchEvents = {
+  inline def apply(select: JQueryDeferred[js.Any]): IELangSearchEvents = {
     val __obj = js.Dynamic.literal(select = select.asInstanceOf[js.Any])
     __obj.asInstanceOf[IELangSearchEvents]
   }
   
-  @scala.inline
-  implicit class IELangSearchEventsMutableBuilder[Self <: IELangSearchEvents] (val x: Self) extends AnyVal {
+  extension [Self <: IELangSearchEvents](x: Self) {
     
-    @scala.inline
-    def setSelect(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
   }
 }

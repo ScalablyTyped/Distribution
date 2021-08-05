@@ -21,8 +21,7 @@ trait FunctionParent
      with _Node
 object FunctionParent {
   
-  @scala.inline
-  def ArrowFunctionExpression_(
+  inline def ArrowFunctionExpression_(
     async: Boolean,
     body: BlockStatement_ | Expression,
     expression: Boolean,
@@ -34,8 +33,7 @@ object FunctionParent {
     __obj.asInstanceOf[typings.babelTypes.mod.ArrowFunctionExpression_]
   }
   
-  @scala.inline
-  def ClassMethod_(
+  inline def ClassMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,
@@ -51,8 +49,7 @@ object FunctionParent {
     __obj.asInstanceOf[typings.babelTypes.mod.ClassMethod_]
   }
   
-  @scala.inline
-  def ClassPrivateMethod_(
+  inline def ClassPrivateMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,
@@ -68,8 +65,7 @@ object FunctionParent {
     __obj.asInstanceOf[typings.babelTypes.mod.ClassPrivateMethod_]
   }
   
-  @scala.inline
-  def FunctionDeclaration_(
+  inline def FunctionDeclaration_(
     async: Boolean,
     body: BlockStatement_,
     generator: Boolean,
@@ -80,8 +76,7 @@ object FunctionParent {
     __obj.asInstanceOf[typings.babelTypes.mod.FunctionDeclaration_]
   }
   
-  @scala.inline
-  def FunctionExpression_(
+  inline def FunctionExpression_(
     async: Boolean,
     body: BlockStatement_,
     generator: Boolean,
@@ -92,8 +87,7 @@ object FunctionParent {
     __obj.asInstanceOf[typings.babelTypes.mod.FunctionExpression_]
   }
   
-  @scala.inline
-  def ObjectMethod_(
+  inline def ObjectMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,

@@ -26,25 +26,19 @@ trait SchemaSendCommandToDeviceRequest extends StObject {
 }
 object SchemaSendCommandToDeviceRequest {
   
-  @scala.inline
-  def apply(): SchemaSendCommandToDeviceRequest = {
+  inline def apply(): SchemaSendCommandToDeviceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSendCommandToDeviceRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSendCommandToDeviceRequestMutableBuilder[Self <: SchemaSendCommandToDeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSendCommandToDeviceRequest](x: Self) {
     
-    @scala.inline
-    def setBinaryData(value: String): Self = StObject.set(x, "binaryData", value.asInstanceOf[js.Any])
+    inline def setBinaryData(value: String): Self = StObject.set(x, "binaryData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryDataUndefined: Self = StObject.set(x, "binaryData", js.undefined)
+    inline def setBinaryDataUndefined: Self = StObject.set(x, "binaryData", js.undefined)
     
-    @scala.inline
-    def setSubfolder(value: String): Self = StObject.set(x, "subfolder", value.asInstanceOf[js.Any])
+    inline def setSubfolder(value: String): Self = StObject.set(x, "subfolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubfolderUndefined: Self = StObject.set(x, "subfolder", js.undefined)
+    inline def setSubfolderUndefined: Self = StObject.set(x, "subfolder", js.undefined)
   }
 }

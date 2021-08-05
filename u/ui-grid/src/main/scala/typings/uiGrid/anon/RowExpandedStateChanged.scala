@@ -17,16 +17,13 @@ trait RowExpandedStateChanged[TEntity] extends StObject {
 }
 object RowExpandedStateChanged {
   
-  @scala.inline
-  def apply[TEntity](rowExpandedStateChanged: (IScope, rowExpandedStateChangedHandler[TEntity]) => Unit): RowExpandedStateChanged[TEntity] = {
+  inline def apply[TEntity](rowExpandedStateChanged: (IScope, rowExpandedStateChangedHandler[TEntity]) => Unit): RowExpandedStateChanged[TEntity] = {
     val __obj = js.Dynamic.literal(rowExpandedStateChanged = js.Any.fromFunction2(rowExpandedStateChanged))
     __obj.asInstanceOf[RowExpandedStateChanged[TEntity]]
   }
   
-  @scala.inline
-  implicit class RowExpandedStateChangedMutableBuilder[Self <: RowExpandedStateChanged[?], TEntity] (val x: Self & RowExpandedStateChanged[TEntity]) extends AnyVal {
+  extension [Self <: RowExpandedStateChanged[?], TEntity](x: Self & RowExpandedStateChanged[TEntity]) {
     
-    @scala.inline
-    def setRowExpandedStateChanged(value: (IScope, rowExpandedStateChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowExpandedStateChanged", js.Any.fromFunction2(value))
+    inline def setRowExpandedStateChanged(value: (IScope, rowExpandedStateChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowExpandedStateChanged", js.Any.fromFunction2(value))
   }
 }

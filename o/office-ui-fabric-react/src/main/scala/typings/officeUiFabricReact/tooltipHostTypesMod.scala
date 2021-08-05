@@ -60,20 +60,16 @@ object tooltipHostTypesMod {
   }
   object ITooltipHost {
     
-    @scala.inline
-    def apply(dismiss: () => Unit, show: () => Unit): ITooltipHost = {
+    inline def apply(dismiss: () => Unit, show: () => Unit): ITooltipHost = {
       val __obj = js.Dynamic.literal(dismiss = js.Any.fromFunction0(dismiss), show = js.Any.fromFunction0(show))
       __obj.asInstanceOf[ITooltipHost]
     }
     
-    @scala.inline
-    implicit class ITooltipHostMutableBuilder[Self <: ITooltipHost] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipHost](x: Self) {
       
-      @scala.inline
-      def setDismiss(value: () => Unit): Self = StObject.set(x, "dismiss", js.Any.fromFunction0(value))
+      inline def setDismiss(value: () => Unit): Self = StObject.set(x, "dismiss", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -167,107 +163,74 @@ object tooltipHostTypesMod {
   }
   object ITooltipHostProps {
     
-    @scala.inline
-    def apply(): ITooltipHostProps = {
+    inline def apply(): ITooltipHostProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITooltipHostProps]
     }
     
-    @scala.inline
-    implicit class ITooltipHostPropsMutableBuilder[Self <: ITooltipHostProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipHostProps](x: Self) {
       
-      @scala.inline
-      def setCalloutProps(value: ICalloutProps): Self = StObject.set(x, "calloutProps", value.asInstanceOf[js.Any])
+      inline def setCalloutProps(value: ICalloutProps): Self = StObject.set(x, "calloutProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalloutPropsUndefined: Self = StObject.set(x, "calloutProps", js.undefined)
+      inline def setCalloutPropsUndefined: Self = StObject.set(x, "calloutProps", js.undefined)
       
-      @scala.inline
-      def setCloseDelay(value: Double): Self = StObject.set(x, "closeDelay", value.asInstanceOf[js.Any])
+      inline def setCloseDelay(value: Double): Self = StObject.set(x, "closeDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseDelayUndefined: Self = StObject.set(x, "closeDelay", js.undefined)
+      inline def setCloseDelayUndefined: Self = StObject.set(x, "closeDelay", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[ITooltipHost]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[ITooltipHost]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ ITooltipHost | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ ITooltipHost | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setContent(value: String | Element | js.Array[Element]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String | Element | js.Array[Element]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setContentVarargs(value: Element*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: Element*): Self = StObject.set(x, "content", js.Array(value :_*))
       
-      @scala.inline
-      def setDelay(value: TooltipDelay): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: TooltipDelay): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDirectionalHint(value: DirectionalHint): Self = StObject.set(x, "directionalHint", value.asInstanceOf[js.Any])
+      inline def setDirectionalHint(value: DirectionalHint): Self = StObject.set(x, "directionalHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionalHintForRTL(value: DirectionalHint): Self = StObject.set(x, "directionalHintForRTL", value.asInstanceOf[js.Any])
+      inline def setDirectionalHintForRTL(value: DirectionalHint): Self = StObject.set(x, "directionalHintForRTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionalHintForRTLUndefined: Self = StObject.set(x, "directionalHintForRTL", js.undefined)
+      inline def setDirectionalHintForRTLUndefined: Self = StObject.set(x, "directionalHintForRTL", js.undefined)
       
-      @scala.inline
-      def setDirectionalHintUndefined: Self = StObject.set(x, "directionalHint", js.undefined)
+      inline def setDirectionalHintUndefined: Self = StObject.set(x, "directionalHint", js.undefined)
       
-      @scala.inline
-      def setHostClassName(value: String): Self = StObject.set(x, "hostClassName", value.asInstanceOf[js.Any])
+      inline def setHostClassName(value: String): Self = StObject.set(x, "hostClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostClassNameUndefined: Self = StObject.set(x, "hostClassName", js.undefined)
+      inline def setHostClassNameUndefined: Self = StObject.set(x, "hostClassName", js.undefined)
       
-      @scala.inline
-      def setOnTooltipToggle(value: /* isTooltipVisible */ Boolean => Unit): Self = StObject.set(x, "onTooltipToggle", js.Any.fromFunction1(value))
+      inline def setOnTooltipToggle(value: /* isTooltipVisible */ Boolean => Unit): Self = StObject.set(x, "onTooltipToggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTooltipToggleUndefined: Self = StObject.set(x, "onTooltipToggle", js.undefined)
+      inline def setOnTooltipToggleUndefined: Self = StObject.set(x, "onTooltipToggle", js.undefined)
       
-      @scala.inline
-      def setOverflowMode(value: TooltipOverflowMode): Self = StObject.set(x, "overflowMode", value.asInstanceOf[js.Any])
+      inline def setOverflowMode(value: TooltipOverflowMode): Self = StObject.set(x, "overflowMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowModeUndefined: Self = StObject.set(x, "overflowMode", js.undefined)
+      inline def setOverflowModeUndefined: Self = StObject.set(x, "overflowMode", js.undefined)
       
-      @scala.inline
-      def setSetAriaDescribedBy(value: Boolean): Self = StObject.set(x, "setAriaDescribedBy", value.asInstanceOf[js.Any])
+      inline def setSetAriaDescribedBy(value: Boolean): Self = StObject.set(x, "setAriaDescribedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetAriaDescribedByUndefined: Self = StObject.set(x, "setAriaDescribedBy", js.undefined)
+      inline def setSetAriaDescribedByUndefined: Self = StObject.set(x, "setAriaDescribedBy", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[ITooltipHostStyleProps, ITooltipHostStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[ITooltipHostStyleProps, ITooltipHostStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: ITooltipHostStyleProps => DeepPartial[ITooltipHostStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: ITooltipHostStyleProps => DeepPartial[ITooltipHostStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTooltipProps(value: ITooltipProps): Self = StObject.set(x, "tooltipProps", value.asInstanceOf[js.Any])
+      inline def setTooltipProps(value: ITooltipProps): Self = StObject.set(x, "tooltipProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipPropsUndefined: Self = StObject.set(x, "tooltipProps", js.undefined)
+      inline def setTooltipPropsUndefined: Self = StObject.set(x, "tooltipProps", js.undefined)
     }
   }
   
@@ -279,23 +242,18 @@ object tooltipHostTypesMod {
   }
   object ITooltipHostStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): ITooltipHostStyleProps = {
+    inline def apply(theme: ITheme): ITooltipHostStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITooltipHostStyleProps]
     }
     
-    @scala.inline
-    implicit class ITooltipHostStylePropsMutableBuilder[Self <: ITooltipHostStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipHostStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -308,23 +266,18 @@ object tooltipHostTypesMod {
   }
   object ITooltipHostStyles {
     
-    @scala.inline
-    def apply(): ITooltipHostStyles = {
+    inline def apply(): ITooltipHostStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITooltipHostStyles]
     }
     
-    @scala.inline
-    implicit class ITooltipHostStylesMutableBuilder[Self <: ITooltipHostStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ITooltipHostStyles](x: Self) {
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

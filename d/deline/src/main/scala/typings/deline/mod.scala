@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(strings: String, values: js.Any*): String = (^.asInstanceOf[js.Dynamic].apply(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(strings: TemplateStringsArray, values: js.Any*): String = (^.asInstanceOf[js.Dynamic].apply(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(strings: String, values: js.Any*): String = (^.asInstanceOf[js.Dynamic].apply(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(strings: TemplateStringsArray, values: js.Any*): String = (^.asInstanceOf[js.Dynamic].apply(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("deline", JSImport.Namespace)
   @js.native

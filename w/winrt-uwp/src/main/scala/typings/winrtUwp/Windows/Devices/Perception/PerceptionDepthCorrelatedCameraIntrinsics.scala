@@ -42,8 +42,7 @@ trait PerceptionDepthCorrelatedCameraIntrinsics extends StObject {
 }
 object PerceptionDepthCorrelatedCameraIntrinsics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     unprojectAllPixelsAtCorrelatedDepthAsync: PerceptionDepthFrame => Results,
     unprojectPixelAtCorrelatedDepth: (Point, PerceptionDepthFrame) => Vector3,
     unprojectPixelsAtCorrelatedDepth: (Point, PerceptionDepthFrame) => Vector3,
@@ -53,19 +52,14 @@ object PerceptionDepthCorrelatedCameraIntrinsics {
     __obj.asInstanceOf[PerceptionDepthCorrelatedCameraIntrinsics]
   }
   
-  @scala.inline
-  implicit class PerceptionDepthCorrelatedCameraIntrinsicsMutableBuilder[Self <: PerceptionDepthCorrelatedCameraIntrinsics] (val x: Self) extends AnyVal {
+  extension [Self <: PerceptionDepthCorrelatedCameraIntrinsics](x: Self) {
     
-    @scala.inline
-    def setUnprojectAllPixelsAtCorrelatedDepthAsync(value: PerceptionDepthFrame => Results): Self = StObject.set(x, "unprojectAllPixelsAtCorrelatedDepthAsync", js.Any.fromFunction1(value))
+    inline def setUnprojectAllPixelsAtCorrelatedDepthAsync(value: PerceptionDepthFrame => Results): Self = StObject.set(x, "unprojectAllPixelsAtCorrelatedDepthAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnprojectPixelAtCorrelatedDepth(value: (Point, PerceptionDepthFrame) => Vector3): Self = StObject.set(x, "unprojectPixelAtCorrelatedDepth", js.Any.fromFunction2(value))
+    inline def setUnprojectPixelAtCorrelatedDepth(value: (Point, PerceptionDepthFrame) => Vector3): Self = StObject.set(x, "unprojectPixelAtCorrelatedDepth", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnprojectPixelsAtCorrelatedDepth(value: (Point, PerceptionDepthFrame) => Vector3): Self = StObject.set(x, "unprojectPixelsAtCorrelatedDepth", js.Any.fromFunction2(value))
+    inline def setUnprojectPixelsAtCorrelatedDepth(value: (Point, PerceptionDepthFrame) => Vector3): Self = StObject.set(x, "unprojectPixelsAtCorrelatedDepth", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnprojectRegionPixelsAtCorrelatedDepthAsync(value: (Rect, PerceptionDepthFrame) => Results): Self = StObject.set(x, "unprojectRegionPixelsAtCorrelatedDepthAsync", js.Any.fromFunction2(value))
+    inline def setUnprojectRegionPixelsAtCorrelatedDepthAsync(value: (Rect, PerceptionDepthFrame) => Results): Self = StObject.set(x, "unprojectRegionPixelsAtCorrelatedDepthAsync", js.Any.fromFunction2(value))
   }
 }

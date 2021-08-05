@@ -13,22 +13,17 @@ trait DataSetSchema extends StObject {
 }
 object DataSetSchema {
   
-  @scala.inline
-  def apply(): DataSetSchema = {
+  inline def apply(): DataSetSchema = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSetSchema]
   }
   
-  @scala.inline
-  implicit class DataSetSchemaMutableBuilder[Self <: DataSetSchema] (val x: Self) extends AnyVal {
+  extension [Self <: DataSetSchema](x: Self) {
     
-    @scala.inline
-    def setColumnSchemaList(value: ColumnSchemaList): Self = StObject.set(x, "ColumnSchemaList", value.asInstanceOf[js.Any])
+    inline def setColumnSchemaList(value: ColumnSchemaList): Self = StObject.set(x, "ColumnSchemaList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnSchemaListUndefined: Self = StObject.set(x, "ColumnSchemaList", js.undefined)
+    inline def setColumnSchemaListUndefined: Self = StObject.set(x, "ColumnSchemaList", js.undefined)
     
-    @scala.inline
-    def setColumnSchemaListVarargs(value: ColumnSchema*): Self = StObject.set(x, "ColumnSchemaList", js.Array(value :_*))
+    inline def setColumnSchemaListVarargs(value: ColumnSchema*): Self = StObject.set(x, "ColumnSchemaList", js.Array(value :_*))
   }
 }

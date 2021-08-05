@@ -20,8 +20,7 @@ trait Bit extends StObject {
 }
 object Bit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bit: scala.Double,
     dateTime: scala.Double,
     float: scala.Double,
@@ -33,25 +32,18 @@ object Bit {
     __obj.asInstanceOf[Bit]
   }
   
-  @scala.inline
-  implicit class BitMutableBuilder[Self <: Bit] (val x: Self) extends AnyVal {
+  extension [Self <: Bit](x: Self) {
     
-    @scala.inline
-    def setBit(value: scala.Double): Self = StObject.set(x, "bit", value.asInstanceOf[js.Any])
+    inline def setBit(value: scala.Double): Self = StObject.set(x, "bit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTime(value: scala.Double): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+    inline def setDateTime(value: scala.Double): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloat(value: scala.Double): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+    inline def setFloat(value: scala.Double): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuid(value: scala.Double): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: scala.Double): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInt(value: scala.Double): Self = StObject.set(x, "int", value.asInstanceOf[js.Any])
+    inline def setInt(value: scala.Double): Self = StObject.set(x, "int", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: scala.Double): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: scala.Double): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
   }
 }

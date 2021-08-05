@@ -18,25 +18,19 @@ trait DEFAULT extends StObject {
 }
 object DEFAULT {
   
-  @scala.inline
-  def apply(): DEFAULT = {
+  inline def apply(): DEFAULT = {
     val __obj = js.Dynamic.literal(CMD = "\u001D(k\u0003\u00001C", DEFAULT = 3, MAX = 16, MIN = 1)
     __obj.asInstanceOf[DEFAULT]
   }
   
-  @scala.inline
-  implicit class DEFAULTMutableBuilder[Self <: DEFAULT] (val x: Self) extends AnyVal {
+  extension [Self <: DEFAULT](x: Self) {
     
-    @scala.inline
-    def setCMD(value: InformationseparatorthreeLeftparenthesiskEndoftextNull1C): Self = StObject.set(x, "CMD", value.asInstanceOf[js.Any])
+    inline def setCMD(value: InformationseparatorthreeLeftparenthesiskEndoftextNull1C): Self = StObject.set(x, "CMD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDEFAULT(value: typings.escpos.escposNumbers.`3`): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
+    inline def setDEFAULT(value: typings.escpos.escposNumbers.`3`): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMAX(value: `16`): Self = StObject.set(x, "MAX", value.asInstanceOf[js.Any])
+    inline def setMAX(value: `16`): Self = StObject.set(x, "MAX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMIN(value: typings.escpos.escposNumbers.`1`): Self = StObject.set(x, "MIN", value.asInstanceOf[js.Any])
+    inline def setMIN(value: typings.escpos.escposNumbers.`1`): Self = StObject.set(x, "MIN", value.asInstanceOf[js.Any])
   }
 }

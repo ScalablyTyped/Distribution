@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MeasureMode extends StObject
 object MeasureMode {
   
-  @scala.inline
-  def `at-most`: typings.reactSketchapp.reactSketchappStrings.`at-most` = "at-most".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.`at-most`]
+  inline def `at-most`: typings.reactSketchapp.reactSketchappStrings.`at-most` = "at-most".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.`at-most`]
   
-  @scala.inline
-  def exactly: typings.reactSketchapp.reactSketchappStrings.exactly = "exactly".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.exactly]
+  inline def exactly: typings.reactSketchapp.reactSketchappStrings.exactly = "exactly".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.exactly]
   
-  @scala.inline
-  def undefined: typings.reactSketchapp.reactSketchappStrings.undefined = "undefined".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.undefined]
+  inline def undefined: typings.reactSketchapp.reactSketchappStrings.undefined = "undefined".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.undefined]
 }

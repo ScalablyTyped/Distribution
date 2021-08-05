@@ -16,25 +16,19 @@ trait MinHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extend
 }
 object MinHeightProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): MinHeightProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): MinHeightProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MinHeightProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class MinHeightPropsMutableBuilder[Self <: MinHeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (MinHeightProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: MinHeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (MinHeightProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setMinHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    inline def setMinHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinHeightNull: Self = StObject.set(x, "minHeight", null)
+    inline def setMinHeightNull: Self = StObject.set(x, "minHeight", null)
     
-    @scala.inline
-    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
-    @scala.inline
-    def setMinHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "minHeight", js.Array(value :_*))
+    inline def setMinHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "minHeight", js.Array(value :_*))
   }
 }

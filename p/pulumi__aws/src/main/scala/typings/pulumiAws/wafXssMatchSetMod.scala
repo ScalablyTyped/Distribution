@@ -58,21 +58,16 @@ object wafXssMatchSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): XssMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[XssMatchSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): XssMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[XssMatchSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: XssMatchSetState): XssMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[XssMatchSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: XssMatchSetState, opts: CustomResourceOptions): XssMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[XssMatchSet]
+    inline def get(name: String, id: Input[ID]): XssMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[XssMatchSet]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): XssMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[XssMatchSet]
+    inline def get(name: String, id: Input[ID], state: XssMatchSetState): XssMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[XssMatchSet]
+    inline def get(name: String, id: Input[ID], state: XssMatchSetState, opts: CustomResourceOptions): XssMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[XssMatchSet]
     
     /**
       * Returns true if the given object is an instance of XssMatchSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/xssMatchSet.XssMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/xssMatchSet.XssMatchSet */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/xssMatchSet.XssMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/xssMatchSet.XssMatchSet */ Boolean]
   }
   
   trait XssMatchSetArgs extends StObject {
@@ -89,29 +84,22 @@ object wafXssMatchSetMod {
   }
   object XssMatchSetArgs {
     
-    @scala.inline
-    def apply(): XssMatchSetArgs = {
+    inline def apply(): XssMatchSetArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XssMatchSetArgs]
     }
     
-    @scala.inline
-    implicit class XssMatchSetArgsMutableBuilder[Self <: XssMatchSetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: XssMatchSetArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setXssMatchTuples(value: Input[js.Array[Input[typings.pulumiAws.inputMod.waf.XssMatchSetXssMatchTuple]]]): Self = StObject.set(x, "xssMatchTuples", value.asInstanceOf[js.Any])
+      inline def setXssMatchTuples(value: Input[js.Array[Input[typings.pulumiAws.inputMod.waf.XssMatchSetXssMatchTuple]]]): Self = StObject.set(x, "xssMatchTuples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXssMatchTuplesUndefined: Self = StObject.set(x, "xssMatchTuples", js.undefined)
+      inline def setXssMatchTuplesUndefined: Self = StObject.set(x, "xssMatchTuples", js.undefined)
       
-      @scala.inline
-      def setXssMatchTuplesVarargs(value: Input[typings.pulumiAws.inputMod.waf.XssMatchSetXssMatchTuple]*): Self = StObject.set(x, "xssMatchTuples", js.Array(value :_*))
+      inline def setXssMatchTuplesVarargs(value: Input[typings.pulumiAws.inputMod.waf.XssMatchSetXssMatchTuple]*): Self = StObject.set(x, "xssMatchTuples", js.Array(value :_*))
     }
   }
   
@@ -134,35 +122,26 @@ object wafXssMatchSetMod {
   }
   object XssMatchSetState {
     
-    @scala.inline
-    def apply(): XssMatchSetState = {
+    inline def apply(): XssMatchSetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XssMatchSetState]
     }
     
-    @scala.inline
-    implicit class XssMatchSetStateMutableBuilder[Self <: XssMatchSetState] (val x: Self) extends AnyVal {
+    extension [Self <: XssMatchSetState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setXssMatchTuples(value: Input[js.Array[Input[typings.pulumiAws.inputMod.waf.XssMatchSetXssMatchTuple]]]): Self = StObject.set(x, "xssMatchTuples", value.asInstanceOf[js.Any])
+      inline def setXssMatchTuples(value: Input[js.Array[Input[typings.pulumiAws.inputMod.waf.XssMatchSetXssMatchTuple]]]): Self = StObject.set(x, "xssMatchTuples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXssMatchTuplesUndefined: Self = StObject.set(x, "xssMatchTuples", js.undefined)
+      inline def setXssMatchTuplesUndefined: Self = StObject.set(x, "xssMatchTuples", js.undefined)
       
-      @scala.inline
-      def setXssMatchTuplesVarargs(value: Input[typings.pulumiAws.inputMod.waf.XssMatchSetXssMatchTuple]*): Self = StObject.set(x, "xssMatchTuples", js.Array(value :_*))
+      inline def setXssMatchTuplesVarargs(value: Input[typings.pulumiAws.inputMod.waf.XssMatchSetXssMatchTuple]*): Self = StObject.set(x, "xssMatchTuples", js.Array(value :_*))
     }
   }
 }

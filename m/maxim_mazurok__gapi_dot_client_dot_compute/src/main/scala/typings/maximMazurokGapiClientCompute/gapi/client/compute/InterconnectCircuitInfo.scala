@@ -17,31 +17,23 @@ trait InterconnectCircuitInfo extends StObject {
 }
 object InterconnectCircuitInfo {
   
-  @scala.inline
-  def apply(): InterconnectCircuitInfo = {
+  inline def apply(): InterconnectCircuitInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InterconnectCircuitInfo]
   }
   
-  @scala.inline
-  implicit class InterconnectCircuitInfoMutableBuilder[Self <: InterconnectCircuitInfo] (val x: Self) extends AnyVal {
+  extension [Self <: InterconnectCircuitInfo](x: Self) {
     
-    @scala.inline
-    def setCustomerDemarcId(value: String): Self = StObject.set(x, "customerDemarcId", value.asInstanceOf[js.Any])
+    inline def setCustomerDemarcId(value: String): Self = StObject.set(x, "customerDemarcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerDemarcIdUndefined: Self = StObject.set(x, "customerDemarcId", js.undefined)
+    inline def setCustomerDemarcIdUndefined: Self = StObject.set(x, "customerDemarcId", js.undefined)
     
-    @scala.inline
-    def setGoogleCircuitId(value: String): Self = StObject.set(x, "googleCircuitId", value.asInstanceOf[js.Any])
+    inline def setGoogleCircuitId(value: String): Self = StObject.set(x, "googleCircuitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleCircuitIdUndefined: Self = StObject.set(x, "googleCircuitId", js.undefined)
+    inline def setGoogleCircuitIdUndefined: Self = StObject.set(x, "googleCircuitId", js.undefined)
     
-    @scala.inline
-    def setGoogleDemarcId(value: String): Self = StObject.set(x, "googleDemarcId", value.asInstanceOf[js.Any])
+    inline def setGoogleDemarcId(value: String): Self = StObject.set(x, "googleDemarcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleDemarcIdUndefined: Self = StObject.set(x, "googleDemarcId", js.undefined)
+    inline def setGoogleDemarcIdUndefined: Self = StObject.set(x, "googleDemarcId", js.undefined)
   }
 }

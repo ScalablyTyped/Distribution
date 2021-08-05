@@ -15,8 +15,7 @@ object typesPutBucketAnalyticsConfigurationOutputMod {
        with _OutputTypesUnion
   object PutBucketAnalyticsConfigurationOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): PutBucketAnalyticsConfigurationOutput = {
+    inline def apply($metadata: ResponseMetadata): PutBucketAnalyticsConfigurationOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutBucketAnalyticsConfigurationOutput]
     }

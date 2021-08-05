@@ -15,19 +15,15 @@ trait DefineIndexFieldRequest extends StObject {
 }
 object DefineIndexFieldRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName, IndexField: IndexField): DefineIndexFieldRequest = {
+  inline def apply(DomainName: DomainName, IndexField: IndexField): DefineIndexFieldRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], IndexField = IndexField.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineIndexFieldRequest]
   }
   
-  @scala.inline
-  implicit class DefineIndexFieldRequestMutableBuilder[Self <: DefineIndexFieldRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DefineIndexFieldRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexField(value: IndexField): Self = StObject.set(x, "IndexField", value.asInstanceOf[js.Any])
+    inline def setIndexField(value: IndexField): Self = StObject.set(x, "IndexField", value.asInstanceOf[js.Any])
   }
 }

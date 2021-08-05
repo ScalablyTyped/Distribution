@@ -16,37 +16,27 @@ trait PPScanRegions extends StObject {
 }
 object PPScanRegions {
   
-  @scala.inline
-  def apply(): PPScanRegions = {
+  inline def apply(): PPScanRegions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PPScanRegions]
   }
   
-  @scala.inline
-  implicit class PPScanRegionsMutableBuilder[Self <: PPScanRegions] (val x: Self) extends AnyVal {
+  extension [Self <: PPScanRegions](x: Self) {
     
-    @scala.inline
-    def `setX-dimension`(value: Double): Self = StObject.set(x, "x-dimension", value.asInstanceOf[js.Any])
+    inline def `setX-dimension`(value: Double): Self = StObject.set(x, "x-dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-dimensionUndefined`: Self = StObject.set(x, "x-dimension", js.undefined)
+    inline def `setX-dimensionUndefined`: Self = StObject.set(x, "x-dimension", js.undefined)
     
-    @scala.inline
-    def `setX-origin`(value: Double): Self = StObject.set(x, "x-origin", value.asInstanceOf[js.Any])
+    inline def `setX-origin`(value: Double): Self = StObject.set(x, "x-origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-originUndefined`: Self = StObject.set(x, "x-origin", js.undefined)
+    inline def `setX-originUndefined`: Self = StObject.set(x, "x-origin", js.undefined)
     
-    @scala.inline
-    def `setY-dimension`(value: Double): Self = StObject.set(x, "y-dimension", value.asInstanceOf[js.Any])
+    inline def `setY-dimension`(value: Double): Self = StObject.set(x, "y-dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setY-dimensionUndefined`: Self = StObject.set(x, "y-dimension", js.undefined)
+    inline def `setY-dimensionUndefined`: Self = StObject.set(x, "y-dimension", js.undefined)
     
-    @scala.inline
-    def `setY-origin`(value: Double): Self = StObject.set(x, "y-origin", value.asInstanceOf[js.Any])
+    inline def `setY-origin`(value: Double): Self = StObject.set(x, "y-origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setY-originUndefined`: Self = StObject.set(x, "y-origin", js.undefined)
+    inline def `setY-originUndefined`: Self = StObject.set(x, "y-origin", js.undefined)
   }
 }

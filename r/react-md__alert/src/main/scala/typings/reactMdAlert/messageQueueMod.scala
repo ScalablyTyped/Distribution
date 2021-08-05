@@ -17,8 +17,7 @@ object messageQueueMod {
   
   object MessageQueue {
     
-    @scala.inline
-    def apply[M /* <: ToastMessage */](hasTimeoutDuplicatesDefaultQueueChildrenProps: MessageQueueProps[M]): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasTimeoutDuplicatesDefaultQueueChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    inline def apply[M /* <: ToastMessage */](hasTimeoutDuplicatesDefaultQueueChildrenProps: MessageQueueProps[M]): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasTimeoutDuplicatesDefaultQueueChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("@react-md/alert/types/MessageQueue", "MessageQueue")
     @js.native
@@ -33,32 +32,27 @@ object messageQueueMod {
       @JSImport("@react-md/alert/types/MessageQueue", "MessageQueue.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/alert/types/MessageQueue", "MessageQueue.propTypes.defaultQueue")
       @js.native
       def defaultQueue: js.Any = js.native
-      @scala.inline
-      def defaultQueue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultQueue")(x.asInstanceOf[js.Any])
+      inline def defaultQueue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultQueue")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/alert/types/MessageQueue", "MessageQueue.propTypes.duplicates")
       @js.native
       def duplicates: js.Any = js.native
-      @scala.inline
-      def duplicates_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("duplicates")(x.asInstanceOf[js.Any])
+      inline def duplicates_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("duplicates")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/alert/types/MessageQueue", "MessageQueue.propTypes.onActionClick")
       @js.native
       def onActionClick: js.Any = js.native
-      @scala.inline
-      def onActionClick_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onActionClick")(x.asInstanceOf[js.Any])
+      inline def onActionClick_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onActionClick")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/alert/types/MessageQueue", "MessageQueue.propTypes.timeout")
       @js.native
       def timeout: js.Any = js.native
-      @scala.inline
-      def timeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+      inline def timeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -84,26 +78,20 @@ object messageQueueMod {
   }
   object MessageQueueProps {
     
-    @scala.inline
-    def apply[M /* <: ToastMessage */](id: String): MessageQueueProps[M] = {
+    inline def apply[M /* <: ToastMessage */](id: String): MessageQueueProps[M] = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageQueueProps[M]]
     }
     
-    @scala.inline
-    implicit class MessageQueuePropsMutableBuilder[Self <: MessageQueueProps[?], M /* <: ToastMessage */] (val x: Self & MessageQueueProps[M]) extends AnyVal {
+    extension [Self <: MessageQueueProps[?], M /* <: ToastMessage */](x: Self & MessageQueueProps[M]) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setOnActionClick(value: (M, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onActionClick", js.Any.fromFunction2(value))
+      inline def setOnActionClick(value: (M, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onActionClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnActionClickUndefined: Self = StObject.set(x, "onActionClick", js.undefined)
+      inline def setOnActionClickUndefined: Self = StObject.set(x, "onActionClick", js.undefined)
     }
   }
 }

@@ -58,46 +58,33 @@ trait SchemaSource extends StObject {
 }
 object SchemaSource {
   
-  @scala.inline
-  def apply(): SchemaSource = {
+  inline def apply(): SchemaSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSource]
   }
   
-  @scala.inline
-  implicit class SchemaSourceMutableBuilder[Self <: SchemaSource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSource](x: Self) {
     
-    @scala.inline
-    def setBaseSpecs(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "baseSpecs", value.asInstanceOf[js.Any])
+    inline def setBaseSpecs(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "baseSpecs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseSpecsUndefined: Self = StObject.set(x, "baseSpecs", js.undefined)
+    inline def setBaseSpecsUndefined: Self = StObject.set(x, "baseSpecs", js.undefined)
     
-    @scala.inline
-    def setBaseSpecsVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "baseSpecs", js.Array(value :_*))
+    inline def setBaseSpecsVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "baseSpecs", js.Array(value :_*))
     
-    @scala.inline
-    def setCodec(value: StringDictionary[js.Any]): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: StringDictionary[js.Any]): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
+    inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
-    @scala.inline
-    def setDoesNotNeedSplitting(value: Boolean): Self = StObject.set(x, "doesNotNeedSplitting", value.asInstanceOf[js.Any])
+    inline def setDoesNotNeedSplitting(value: Boolean): Self = StObject.set(x, "doesNotNeedSplitting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoesNotNeedSplittingUndefined: Self = StObject.set(x, "doesNotNeedSplitting", js.undefined)
+    inline def setDoesNotNeedSplittingUndefined: Self = StObject.set(x, "doesNotNeedSplitting", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: SchemaSourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaSourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setSpec(value: StringDictionary[js.Any]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: StringDictionary[js.Any]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+    inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
   }
 }

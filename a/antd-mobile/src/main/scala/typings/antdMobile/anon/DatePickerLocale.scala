@@ -16,25 +16,19 @@ trait DatePickerLocale extends StObject {
 }
 object DatePickerLocale {
   
-  @scala.inline
-  def apply(DatePickerLocale: Am, dismissText: String, extra: String, okText: String): DatePickerLocale = {
+  inline def apply(DatePickerLocale: Am, dismissText: String, extra: String, okText: String): DatePickerLocale = {
     val __obj = js.Dynamic.literal(DatePickerLocale = DatePickerLocale.asInstanceOf[js.Any], dismissText = dismissText.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any], okText = okText.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatePickerLocale]
   }
   
-  @scala.inline
-  implicit class DatePickerLocaleMutableBuilder[Self <: DatePickerLocale] (val x: Self) extends AnyVal {
+  extension [Self <: DatePickerLocale](x: Self) {
     
-    @scala.inline
-    def setDatePickerLocale(value: Am): Self = StObject.set(x, "DatePickerLocale", value.asInstanceOf[js.Any])
+    inline def setDatePickerLocale(value: Am): Self = StObject.set(x, "DatePickerLocale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDismissText(value: String): Self = StObject.set(x, "dismissText", value.asInstanceOf[js.Any])
+    inline def setDismissText(value: String): Self = StObject.set(x, "dismissText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtra(value: String): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: String): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
+    inline def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
   }
 }

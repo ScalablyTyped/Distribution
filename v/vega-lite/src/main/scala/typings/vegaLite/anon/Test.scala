@@ -15,16 +15,13 @@ trait Test extends StObject {
 }
 object Test {
   
-  @scala.inline
-  def apply(test: LogicalComposition[Predicate]): Test = {
+  inline def apply(test: LogicalComposition[Predicate]): Test = {
     val __obj = js.Dynamic.literal(test = test.asInstanceOf[js.Any])
     __obj.asInstanceOf[Test]
   }
   
-  @scala.inline
-  implicit class TestMutableBuilder[Self <: Test] (val x: Self) extends AnyVal {
+  extension [Self <: Test](x: Self) {
     
-    @scala.inline
-    def setTest(value: LogicalComposition[Predicate]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: LogicalComposition[Predicate]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
   }
 }

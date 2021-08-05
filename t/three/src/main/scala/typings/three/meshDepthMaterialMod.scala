@@ -80,71 +80,50 @@ object meshDepthMaterialMod {
   }
   object MeshDepthMaterialParameters {
     
-    @scala.inline
-    def apply(): MeshDepthMaterialParameters = {
+    inline def apply(): MeshDepthMaterialParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MeshDepthMaterialParameters]
     }
     
-    @scala.inline
-    implicit class MeshDepthMaterialParametersMutableBuilder[Self <: MeshDepthMaterialParameters] (val x: Self) extends AnyVal {
+    extension [Self <: MeshDepthMaterialParameters](x: Self) {
       
-      @scala.inline
-      def setAlphaMap(value: Texture): Self = StObject.set(x, "alphaMap", value.asInstanceOf[js.Any])
+      inline def setAlphaMap(value: Texture): Self = StObject.set(x, "alphaMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaMapNull: Self = StObject.set(x, "alphaMap", null)
+      inline def setAlphaMapNull: Self = StObject.set(x, "alphaMap", null)
       
-      @scala.inline
-      def setAlphaMapUndefined: Self = StObject.set(x, "alphaMap", js.undefined)
+      inline def setAlphaMapUndefined: Self = StObject.set(x, "alphaMap", js.undefined)
       
-      @scala.inline
-      def setDepthPacking(value: DepthPackingStrategies): Self = StObject.set(x, "depthPacking", value.asInstanceOf[js.Any])
+      inline def setDepthPacking(value: DepthPackingStrategies): Self = StObject.set(x, "depthPacking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthPackingUndefined: Self = StObject.set(x, "depthPacking", js.undefined)
+      inline def setDepthPackingUndefined: Self = StObject.set(x, "depthPacking", js.undefined)
       
-      @scala.inline
-      def setDisplacementBias(value: Double): Self = StObject.set(x, "displacementBias", value.asInstanceOf[js.Any])
+      inline def setDisplacementBias(value: Double): Self = StObject.set(x, "displacementBias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplacementBiasUndefined: Self = StObject.set(x, "displacementBias", js.undefined)
+      inline def setDisplacementBiasUndefined: Self = StObject.set(x, "displacementBias", js.undefined)
       
-      @scala.inline
-      def setDisplacementMap(value: Texture): Self = StObject.set(x, "displacementMap", value.asInstanceOf[js.Any])
+      inline def setDisplacementMap(value: Texture): Self = StObject.set(x, "displacementMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplacementMapNull: Self = StObject.set(x, "displacementMap", null)
+      inline def setDisplacementMapNull: Self = StObject.set(x, "displacementMap", null)
       
-      @scala.inline
-      def setDisplacementMapUndefined: Self = StObject.set(x, "displacementMap", js.undefined)
+      inline def setDisplacementMapUndefined: Self = StObject.set(x, "displacementMap", js.undefined)
       
-      @scala.inline
-      def setDisplacementScale(value: Double): Self = StObject.set(x, "displacementScale", value.asInstanceOf[js.Any])
+      inline def setDisplacementScale(value: Double): Self = StObject.set(x, "displacementScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplacementScaleUndefined: Self = StObject.set(x, "displacementScale", js.undefined)
+      inline def setDisplacementScaleUndefined: Self = StObject.set(x, "displacementScale", js.undefined)
       
-      @scala.inline
-      def setMap(value: Texture): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Texture): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapNull: Self = StObject.set(x, "map", null)
+      inline def setMapNull: Self = StObject.set(x, "map", null)
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setWireframe(value: Boolean): Self = StObject.set(x, "wireframe", value.asInstanceOf[js.Any])
+      inline def setWireframe(value: Boolean): Self = StObject.set(x, "wireframe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWireframeLinewidth(value: Double): Self = StObject.set(x, "wireframeLinewidth", value.asInstanceOf[js.Any])
+      inline def setWireframeLinewidth(value: Double): Self = StObject.set(x, "wireframeLinewidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWireframeLinewidthUndefined: Self = StObject.set(x, "wireframeLinewidth", js.undefined)
+      inline def setWireframeLinewidthUndefined: Self = StObject.set(x, "wireframeLinewidth", js.undefined)
       
-      @scala.inline
-      def setWireframeUndefined: Self = StObject.set(x, "wireframe", js.undefined)
+      inline def setWireframeUndefined: Self = StObject.set(x, "wireframe", js.undefined)
     }
   }
 }

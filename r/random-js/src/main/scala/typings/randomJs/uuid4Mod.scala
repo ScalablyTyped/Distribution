@@ -11,6 +11,5 @@ object uuid4Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def uuid4(engine: Engine): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid4")(engine.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def uuid4(engine: Engine): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid4")(engine.asInstanceOf[js.Any]).asInstanceOf[String]
 }

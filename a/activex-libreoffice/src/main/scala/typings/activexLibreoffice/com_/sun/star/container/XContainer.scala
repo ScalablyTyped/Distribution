@@ -40,8 +40,7 @@ trait XContainer
 }
 object XContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addContainerListener: XContainerListener => Unit,
     queryInterface: `type` => js.Any,
@@ -52,13 +51,10 @@ object XContainer {
     __obj.asInstanceOf[XContainer]
   }
   
-  @scala.inline
-  implicit class XContainerMutableBuilder[Self <: XContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XContainer](x: Self) {
     
-    @scala.inline
-    def setAddContainerListener(value: XContainerListener => Unit): Self = StObject.set(x, "addContainerListener", js.Any.fromFunction1(value))
+    inline def setAddContainerListener(value: XContainerListener => Unit): Self = StObject.set(x, "addContainerListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveContainerListener(value: XContainerListener => Unit): Self = StObject.set(x, "removeContainerListener", js.Any.fromFunction1(value))
+    inline def setRemoveContainerListener(value: XContainerListener => Unit): Self = StObject.set(x, "removeContainerListener", js.Any.fromFunction1(value))
   }
 }

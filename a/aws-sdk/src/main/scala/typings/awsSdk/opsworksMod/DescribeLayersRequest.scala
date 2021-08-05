@@ -18,28 +18,21 @@ trait DescribeLayersRequest extends StObject {
 }
 object DescribeLayersRequest {
   
-  @scala.inline
-  def apply(): DescribeLayersRequest = {
+  inline def apply(): DescribeLayersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLayersRequest]
   }
   
-  @scala.inline
-  implicit class DescribeLayersRequestMutableBuilder[Self <: DescribeLayersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLayersRequest](x: Self) {
     
-    @scala.inline
-    def setLayerIds(value: Strings): Self = StObject.set(x, "LayerIds", value.asInstanceOf[js.Any])
+    inline def setLayerIds(value: Strings): Self = StObject.set(x, "LayerIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdsUndefined: Self = StObject.set(x, "LayerIds", js.undefined)
+    inline def setLayerIdsUndefined: Self = StObject.set(x, "LayerIds", js.undefined)
     
-    @scala.inline
-    def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "LayerIds", js.Array(value :_*))
+    inline def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "LayerIds", js.Array(value :_*))
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

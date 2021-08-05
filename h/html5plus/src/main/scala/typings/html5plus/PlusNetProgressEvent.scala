@@ -46,37 +46,27 @@ trait PlusNetProgressEvent extends StObject {
 }
 object PlusNetProgressEvent {
   
-  @scala.inline
-  def apply(): PlusNetProgressEvent = {
+  inline def apply(): PlusNetProgressEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNetProgressEvent]
   }
   
-  @scala.inline
-  implicit class PlusNetProgressEventMutableBuilder[Self <: PlusNetProgressEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNetProgressEvent](x: Self) {
     
-    @scala.inline
-    def setLengthComputable(value: Double): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
+    inline def setLengthComputable(value: Double): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthComputableUndefined: Self = StObject.set(x, "lengthComputable", js.undefined)
+    inline def setLengthComputableUndefined: Self = StObject.set(x, "lengthComputable", js.undefined)
     
-    @scala.inline
-    def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+    inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
     
-    @scala.inline
-    def setTarget(value: PlusNetXMLHttpRequest): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: PlusNetXMLHttpRequest): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait ElementChildrenAttribute extends StObject {
 }
 object ElementChildrenAttribute {
   
-  @scala.inline
-  def apply(children: js.Any): ElementChildrenAttribute = {
+  inline def apply(children: js.Any): ElementChildrenAttribute = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementChildrenAttribute]
   }
   
-  @scala.inline
-  implicit class ElementChildrenAttributeMutableBuilder[Self <: ElementChildrenAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: ElementChildrenAttribute](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }
 }

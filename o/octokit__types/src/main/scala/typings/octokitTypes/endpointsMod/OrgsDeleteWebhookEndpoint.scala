@@ -13,20 +13,16 @@ trait OrgsDeleteWebhookEndpoint extends StObject {
 }
 object OrgsDeleteWebhookEndpoint {
   
-  @scala.inline
-  def apply(hook_id: Double, org_ : String): OrgsDeleteWebhookEndpoint = {
+  inline def apply(hook_id: Double, org_ : String): OrgsDeleteWebhookEndpoint = {
     val __obj = js.Dynamic.literal(hook_id = hook_id.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsDeleteWebhookEndpoint]
   }
   
-  @scala.inline
-  implicit class OrgsDeleteWebhookEndpointMutableBuilder[Self <: OrgsDeleteWebhookEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsDeleteWebhookEndpoint](x: Self) {
     
-    @scala.inline
-    def setHook_id(value: Double): Self = StObject.set(x, "hook_id", value.asInstanceOf[js.Any])
+    inline def setHook_id(value: Double): Self = StObject.set(x, "hook_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

@@ -15,8 +15,7 @@ trait IPathArcInBezierCurve
 }
 object IPathArcInBezierCurve {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bezierData: IBezierRange,
     endAngle: Double,
     origin: IPoint,
@@ -29,10 +28,8 @@ object IPathArcInBezierCurve {
     __obj.asInstanceOf[IPathArcInBezierCurve]
   }
   
-  @scala.inline
-  implicit class IPathArcInBezierCurveMutableBuilder[Self <: IPathArcInBezierCurve] (val x: Self) extends AnyVal {
+  extension [Self <: IPathArcInBezierCurve](x: Self) {
     
-    @scala.inline
-    def setBezierData(value: IBezierRange): Self = StObject.set(x, "bezierData", value.asInstanceOf[js.Any])
+    inline def setBezierData(value: IBezierRange): Self = StObject.set(x, "bezierData", value.asInstanceOf[js.Any])
   }
 }

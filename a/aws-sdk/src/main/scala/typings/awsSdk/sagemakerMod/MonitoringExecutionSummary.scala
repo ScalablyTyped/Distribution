@@ -48,8 +48,7 @@ trait MonitoringExecutionSummary extends StObject {
 }
 object MonitoringExecutionSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreationTime: Timestamp,
     LastModifiedTime: Timestamp,
     MonitoringExecutionStatus: ExecutionStatus,
@@ -60,40 +59,28 @@ object MonitoringExecutionSummary {
     __obj.asInstanceOf[MonitoringExecutionSummary]
   }
   
-  @scala.inline
-  implicit class MonitoringExecutionSummaryMutableBuilder[Self <: MonitoringExecutionSummary] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoringExecutionSummary](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
+    inline def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointNameUndefined: Self = StObject.set(x, "EndpointName", js.undefined)
+    inline def setEndpointNameUndefined: Self = StObject.set(x, "EndpointName", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    @scala.inline
-    def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringExecutionStatus(value: ExecutionStatus): Self = StObject.set(x, "MonitoringExecutionStatus", value.asInstanceOf[js.Any])
+    inline def setMonitoringExecutionStatus(value: ExecutionStatus): Self = StObject.set(x, "MonitoringExecutionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringScheduleName(value: MonitoringScheduleName): Self = StObject.set(x, "MonitoringScheduleName", value.asInstanceOf[js.Any])
+    inline def setMonitoringScheduleName(value: MonitoringScheduleName): Self = StObject.set(x, "MonitoringScheduleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingJobArn(value: ProcessingJobArn): Self = StObject.set(x, "ProcessingJobArn", value.asInstanceOf[js.Any])
+    inline def setProcessingJobArn(value: ProcessingJobArn): Self = StObject.set(x, "ProcessingJobArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingJobArnUndefined: Self = StObject.set(x, "ProcessingJobArn", js.undefined)
+    inline def setProcessingJobArnUndefined: Self = StObject.set(x, "ProcessingJobArn", js.undefined)
     
-    @scala.inline
-    def setScheduledTime(value: Timestamp): Self = StObject.set(x, "ScheduledTime", value.asInstanceOf[js.Any])
+    inline def setScheduledTime(value: Timestamp): Self = StObject.set(x, "ScheduledTime", value.asInstanceOf[js.Any])
   }
 }

@@ -49,8 +49,7 @@ object Sharing {
   }
   object UserRoleAssignment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       customFromJson: js.Any => Boolean,
       customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
       fromJson: js.Any => Unit,
@@ -65,20 +64,15 @@ object Sharing {
       __obj.asInstanceOf[UserRoleAssignment]
     }
     
-    @scala.inline
-    implicit class UserRoleAssignmentMutableBuilder[Self <: UserRoleAssignment] (val x: Self) extends AnyVal {
+    extension [Self <: UserRoleAssignment](x: Self) {
       
-      @scala.inline
-      def setGet_role(value: () => Role): Self = StObject.set(x, "get_role", js.Any.fromFunction0(value))
+      inline def setGet_role(value: () => Role): Self = StObject.set(x, "get_role", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_userId(value: () => String): Self = StObject.set(x, "get_userId", js.Any.fromFunction0(value))
+      inline def setGet_userId(value: () => String): Self = StObject.set(x, "get_userId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet_role(value: Role => Unit): Self = StObject.set(x, "set_role", js.Any.fromFunction1(value))
+      inline def setSet_role(value: Role => Unit): Self = StObject.set(x, "set_role", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_userId(value: String => Unit): Self = StObject.set(x, "set_userId", js.Any.fromFunction1(value))
+      inline def setSet_userId(value: String => Unit): Self = StObject.set(x, "set_userId", js.Any.fromFunction1(value))
     }
   }
   
@@ -100,8 +94,7 @@ object Sharing {
   }
   object UserSharingResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       customFromJson: js.Any => Boolean,
       customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
       fromJson: js.Any => Unit,
@@ -118,26 +111,19 @@ object Sharing {
       __obj.asInstanceOf[UserSharingResult]
     }
     
-    @scala.inline
-    implicit class UserSharingResultMutableBuilder[Self <: UserSharingResult] (val x: Self) extends AnyVal {
+    extension [Self <: UserSharingResult](x: Self) {
       
-      @scala.inline
-      def setGet_allowedRoles(value: () => js.Array[Role]): Self = StObject.set(x, "get_allowedRoles", js.Any.fromFunction0(value))
+      inline def setGet_allowedRoles(value: () => js.Array[Role]): Self = StObject.set(x, "get_allowedRoles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_currentRole(value: () => Role): Self = StObject.set(x, "get_currentRole", js.Any.fromFunction0(value))
+      inline def setGet_currentRole(value: () => Role): Self = StObject.set(x, "get_currentRole", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_isUserKnown(value: () => Boolean): Self = StObject.set(x, "get_isUserKnown", js.Any.fromFunction0(value))
+      inline def setGet_isUserKnown(value: () => Boolean): Self = StObject.set(x, "get_isUserKnown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_message(value: () => String): Self = StObject.set(x, "get_message", js.Any.fromFunction0(value))
+      inline def setGet_message(value: () => String): Self = StObject.set(x, "get_message", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_status(value: () => Boolean): Self = StObject.set(x, "get_status", js.Any.fromFunction0(value))
+      inline def setGet_status(value: () => Boolean): Self = StObject.set(x, "get_status", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_user(value: () => String): Self = StObject.set(x, "get_user", js.Any.fromFunction0(value))
+      inline def setGet_user(value: () => String): Self = StObject.set(x, "get_user", js.Any.fromFunction0(value))
     }
   }
 }

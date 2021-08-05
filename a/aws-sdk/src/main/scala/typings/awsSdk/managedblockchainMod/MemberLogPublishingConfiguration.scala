@@ -13,19 +13,15 @@ trait MemberLogPublishingConfiguration extends StObject {
 }
 object MemberLogPublishingConfiguration {
   
-  @scala.inline
-  def apply(): MemberLogPublishingConfiguration = {
+  inline def apply(): MemberLogPublishingConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MemberLogPublishingConfiguration]
   }
   
-  @scala.inline
-  implicit class MemberLogPublishingConfigurationMutableBuilder[Self <: MemberLogPublishingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: MemberLogPublishingConfiguration](x: Self) {
     
-    @scala.inline
-    def setFabric(value: MemberFabricLogPublishingConfiguration): Self = StObject.set(x, "Fabric", value.asInstanceOf[js.Any])
+    inline def setFabric(value: MemberFabricLogPublishingConfiguration): Self = StObject.set(x, "Fabric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFabricUndefined: Self = StObject.set(x, "Fabric", js.undefined)
+    inline def setFabricUndefined: Self = StObject.set(x, "Fabric", js.undefined)
   }
 }

@@ -13,10 +13,8 @@ object createMountMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): NonePSnodeReactElementopt = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[NonePSnodeReactElementopt]
-  @scala.inline
-  def default(options: PartialMountOptions): NonePSnodeReactElementopt = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[NonePSnodeReactElementopt]
+  inline def default(): NonePSnodeReactElementopt = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[NonePSnodeReactElementopt]
+  inline def default(options: PartialMountOptions): NonePSnodeReactElementopt = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[NonePSnodeReactElementopt]
   
   trait MountOptions extends StObject {
     
@@ -24,17 +22,14 @@ object createMountMod {
   }
   object MountOptions {
     
-    @scala.inline
-    def apply(mount: FnCall): MountOptions = {
+    inline def apply(mount: FnCall): MountOptions = {
       val __obj = js.Dynamic.literal(mount = mount.asInstanceOf[js.Any])
       __obj.asInstanceOf[MountOptions]
     }
     
-    @scala.inline
-    implicit class MountOptionsMutableBuilder[Self <: MountOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MountOptions](x: Self) {
       
-      @scala.inline
-      def setMount(value: FnCall): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
+      inline def setMount(value: FnCall): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
     }
   }
 }

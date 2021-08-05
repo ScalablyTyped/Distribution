@@ -23,25 +23,19 @@ trait DeleteUserDefinedFunctionRequest extends StObject {
 }
 object DeleteUserDefinedFunctionRequest {
   
-  @scala.inline
-  def apply(DatabaseName: NameString, FunctionName: NameString): DeleteUserDefinedFunctionRequest = {
+  inline def apply(DatabaseName: NameString, FunctionName: NameString): DeleteUserDefinedFunctionRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], FunctionName = FunctionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteUserDefinedFunctionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteUserDefinedFunctionRequestMutableBuilder[Self <: DeleteUserDefinedFunctionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteUserDefinedFunctionRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionName(value: NameString): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: NameString): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
   }
 }

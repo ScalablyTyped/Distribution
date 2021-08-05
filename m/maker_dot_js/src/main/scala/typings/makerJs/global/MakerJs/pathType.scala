@@ -22,24 +22,20 @@ object pathType {
   @JSGlobal("MakerJs.pathType.Arc")
   @js.native
   def Arc: String = js.native
-  @scala.inline
-  def Arc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arc")(x.asInstanceOf[js.Any])
+  inline def Arc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arc")(x.asInstanceOf[js.Any])
   
   @JSGlobal("MakerJs.pathType.BezierSeed")
   @js.native
   def BezierSeed: String = js.native
-  @scala.inline
-  def BezierSeed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BezierSeed")(x.asInstanceOf[js.Any])
+  inline def BezierSeed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BezierSeed")(x.asInstanceOf[js.Any])
   
   @JSGlobal("MakerJs.pathType.Circle")
   @js.native
   def Circle: String = js.native
-  @scala.inline
-  def Circle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Circle")(x.asInstanceOf[js.Any])
+  inline def Circle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Circle")(x.asInstanceOf[js.Any])
   
   @JSGlobal("MakerJs.pathType.Line")
   @js.native
   def Line: String = js.native
-  @scala.inline
-  def Line_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Line")(x.asInstanceOf[js.Any])
+  inline def Line_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Line")(x.asInstanceOf[js.Any])
 }

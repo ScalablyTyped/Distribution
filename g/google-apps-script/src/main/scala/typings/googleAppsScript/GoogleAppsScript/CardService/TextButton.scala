@@ -35,8 +35,7 @@ trait TextButton extends StObject {
 }
 object TextButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     setAuthorizationAction: AuthorizationAction => TextButton,
     setBackgroundColor: String => TextButton,
     setComposeAction: (Action, ComposedEmailType) => TextButton,
@@ -51,34 +50,24 @@ object TextButton {
     __obj.asInstanceOf[TextButton]
   }
   
-  @scala.inline
-  implicit class TextButtonMutableBuilder[Self <: TextButton] (val x: Self) extends AnyVal {
+  extension [Self <: TextButton](x: Self) {
     
-    @scala.inline
-    def setSetAuthorizationAction(value: AuthorizationAction => TextButton): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
+    inline def setSetAuthorizationAction(value: AuthorizationAction => TextButton): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBackgroundColor(value: String => TextButton): Self = StObject.set(x, "setBackgroundColor", js.Any.fromFunction1(value))
+    inline def setSetBackgroundColor(value: String => TextButton): Self = StObject.set(x, "setBackgroundColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetComposeAction(value: (Action, ComposedEmailType) => TextButton): Self = StObject.set(x, "setComposeAction", js.Any.fromFunction2(value))
+    inline def setSetComposeAction(value: (Action, ComposedEmailType) => TextButton): Self = StObject.set(x, "setComposeAction", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetDisabled(value: Boolean => TextButton): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
+    inline def setSetDisabled(value: Boolean => TextButton): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOnClickAction(value: Action => TextButton): Self = StObject.set(x, "setOnClickAction", js.Any.fromFunction1(value))
+    inline def setSetOnClickAction(value: Action => TextButton): Self = StObject.set(x, "setOnClickAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOnClickOpenLinkAction(value: Action => TextButton): Self = StObject.set(x, "setOnClickOpenLinkAction", js.Any.fromFunction1(value))
+    inline def setSetOnClickOpenLinkAction(value: Action => TextButton): Self = StObject.set(x, "setOnClickOpenLinkAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOpenLink(value: OpenLink => TextButton): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
+    inline def setSetOpenLink(value: OpenLink => TextButton): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetText(value: String => TextButton): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => TextButton): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTextButtonStyle(value: TextButtonStyle => TextButton): Self = StObject.set(x, "setTextButtonStyle", js.Any.fromFunction1(value))
+    inline def setSetTextButtonStyle(value: TextButtonStyle => TextButton): Self = StObject.set(x, "setTextButtonStyle", js.Any.fromFunction1(value))
   }
 }

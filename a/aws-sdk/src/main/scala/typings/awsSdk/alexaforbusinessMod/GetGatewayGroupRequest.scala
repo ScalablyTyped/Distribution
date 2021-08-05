@@ -13,16 +13,13 @@ trait GetGatewayGroupRequest extends StObject {
 }
 object GetGatewayGroupRequest {
   
-  @scala.inline
-  def apply(GatewayGroupArn: Arn): GetGatewayGroupRequest = {
+  inline def apply(GatewayGroupArn: Arn): GetGatewayGroupRequest = {
     val __obj = js.Dynamic.literal(GatewayGroupArn = GatewayGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGatewayGroupRequest]
   }
   
-  @scala.inline
-  implicit class GetGatewayGroupRequestMutableBuilder[Self <: GetGatewayGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetGatewayGroupRequest](x: Self) {
     
-    @scala.inline
-    def setGatewayGroupArn(value: Arn): Self = StObject.set(x, "GatewayGroupArn", value.asInstanceOf[js.Any])
+    inline def setGatewayGroupArn(value: Arn): Self = StObject.set(x, "GatewayGroupArn", value.asInstanceOf[js.Any])
   }
 }

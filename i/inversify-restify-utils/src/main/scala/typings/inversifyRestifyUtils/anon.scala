@@ -17,17 +17,14 @@ object anon {
   }
   object Path {
     
-    @scala.inline
-    def apply(path: StrOrRegex): Path = {
+    inline def apply(path: StrOrRegex): Path = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Path]
     }
     
-    @scala.inline
-    implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+    extension [Self <: Path](x: Self) {
       
-      @scala.inline
-      def setPath(value: StrOrRegex): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: StrOrRegex): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,8 +54,7 @@ object anon {
   }
   object optionsObjectpathStrOrReg {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       constructor: js.Function,
       hasOwnProperty: PropertyKey => Boolean,
       options: js.Object,
@@ -69,23 +65,17 @@ object anon {
       __obj.asInstanceOf[optionsObjectpathStrOrReg]
     }
     
-    @scala.inline
-    implicit class optionsObjectpathStrOrRegMutableBuilder[Self <: optionsObjectpathStrOrReg] (val x: Self) extends AnyVal {
+    extension [Self <: optionsObjectpathStrOrReg](x: Self) {
       
-      @scala.inline
-      def setConstructor(value: js.Function): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+      inline def setConstructor(value: js.Function): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasOwnProperty(value: PropertyKey => Boolean): Self = StObject.set(x, "hasOwnProperty", js.Any.fromFunction1(value))
+      inline def setHasOwnProperty(value: PropertyKey => Boolean): Self = StObject.set(x, "hasOwnProperty", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: StrOrRegex): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: StrOrRegex): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyIsEnumerable(value: PropertyKey => Boolean): Self = StObject.set(x, "propertyIsEnumerable", js.Any.fromFunction1(value))
+      inline def setPropertyIsEnumerable(value: PropertyKey => Boolean): Self = StObject.set(x, "propertyIsEnumerable", js.Any.fromFunction1(value))
     }
   }
 }

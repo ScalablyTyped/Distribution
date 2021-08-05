@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlEditionType extends StObject
 object XlEditionType {
   
-  @scala.inline
-  def xlPublisher: `1` = 1.asInstanceOf[`1`]
+  inline def xlPublisher: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlSubscriber: `2` = 2.asInstanceOf[`2`]
+  inline def xlSubscriber: `2` = 2.asInstanceOf[`2`]
 }

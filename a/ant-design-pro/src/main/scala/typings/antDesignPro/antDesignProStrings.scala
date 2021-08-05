@@ -11,130 +11,105 @@ object antDesignProStrings {
   sealed trait default
     extends StObject
        with _SizeType
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait `403` extends StObject
-  @scala.inline
-  def `403`: `403` = "403".asInstanceOf[`403`]
+  inline def `403`: `403` = "403".asInstanceOf[`403`]
   
   @js.native
   sealed trait `404` extends StObject
-  @scala.inline
-  def `404`: `404` = "404".asInstanceOf[`404`]
+  inline def `404`: `404` = "404".asInstanceOf[`404`]
   
   @js.native
   sealed trait `500` extends StObject
-  @scala.inline
-  def `500`: `500` = "500".asInstanceOf[`500`]
+  inline def `500`: `500` = "500".asInstanceOf[`500`]
   
   @js.native
   sealed trait LoginItemType extends StObject
-  @scala.inline
-  def LoginItemType: LoginItemType = "LoginItemType".asInstanceOf[LoginItemType]
+  inline def LoginItemType: LoginItemType = "LoginItemType".asInstanceOf[LoginItemType]
   
   @js.native
   sealed trait bottomCenter extends StObject
-  @scala.inline
-  def bottomCenter: bottomCenter = "bottomCenter".asInstanceOf[bottomCenter]
+  inline def bottomCenter: bottomCenter = "bottomCenter".asInstanceOf[bottomCenter]
   
   @js.native
   sealed trait bottomLeft extends StObject
-  @scala.inline
-  def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
+  inline def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
   
   @js.native
   sealed trait bottomRight extends StObject
-  @scala.inline
-  def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
+  inline def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   
   @js.native
   sealed trait down extends StObject
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
+  inline def down: down = "down".asInstanceOf[down]
   
   @js.native
   sealed trait downward extends StObject
-  @scala.inline
-  def downward: downward = "downward".asInstanceOf[downward]
+  inline def downward: downward = "downward".asInstanceOf[downward]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait horizontal extends StObject
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait large
     extends StObject
        with _SizeType
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
+  inline def large: large = "large".asInstanceOf[large]
   
   @js.native
   sealed trait multiple extends StObject
-  @scala.inline
-  def multiple: multiple = "multiple".asInstanceOf[multiple]
+  inline def multiple: multiple = "multiple".asInstanceOf[multiple]
   
   @js.native
   sealed trait single extends StObject
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
+  inline def single: single = "single".asInstanceOf[single]
   
   @js.native
   sealed trait small
     extends StObject
        with _SizeType
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
+  inline def small: small = "small".asInstanceOf[small]
   
   @js.native
   sealed trait success extends StObject
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
   sealed trait topCenter extends StObject
-  @scala.inline
-  def topCenter: topCenter = "topCenter".asInstanceOf[topCenter]
+  inline def topCenter: topCenter = "topCenter".asInstanceOf[topCenter]
   
   @js.native
   sealed trait topLeft extends StObject
-  @scala.inline
-  def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
+  inline def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
   
   @js.native
   sealed trait topRight extends StObject
-  @scala.inline
-  def topRight: topRight = "topRight".asInstanceOf[topRight]
+  inline def topRight: topRight = "topRight".asInstanceOf[topRight]
   
   @js.native
   sealed trait up extends StObject
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
+  inline def up: up = "up".asInstanceOf[up]
   
   @js.native
   sealed trait upward extends StObject
-  @scala.inline
-  def upward: upward = "upward".asInstanceOf[upward]
+  inline def upward: upward = "upward".asInstanceOf[upward]
   
   @js.native
   sealed trait vertical extends StObject
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
   sealed trait x extends StObject
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
+  inline def x: x = "x".asInstanceOf[x]
   
   @js.native
   sealed trait y extends StObject
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
+  inline def y: y = "y".asInstanceOf[y]
 }

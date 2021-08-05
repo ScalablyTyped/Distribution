@@ -13,19 +13,15 @@ trait OpenedEventUIParam extends StObject {
 }
 object OpenedEventUIParam {
   
-  @scala.inline
-  def apply(): OpenedEventUIParam = {
+  inline def apply(): OpenedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenedEventUIParam]
   }
   
-  @scala.inline
-  implicit class OpenedEventUIParamMutableBuilder[Self <: OpenedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: OpenedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

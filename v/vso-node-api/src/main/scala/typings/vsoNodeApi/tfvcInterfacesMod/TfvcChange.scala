@@ -20,8 +20,7 @@ trait TfvcChange
 }
 object TfvcChange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeType: VersionControlChangeType,
     item: TfvcItem,
     mergeSources: js.Array[TfvcMergeSource],
@@ -34,16 +33,12 @@ object TfvcChange {
     __obj.asInstanceOf[TfvcChange]
   }
   
-  @scala.inline
-  implicit class TfvcChangeMutableBuilder[Self <: TfvcChange] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcChange](x: Self) {
     
-    @scala.inline
-    def setMergeSources(value: js.Array[TfvcMergeSource]): Self = StObject.set(x, "mergeSources", value.asInstanceOf[js.Any])
+    inline def setMergeSources(value: js.Array[TfvcMergeSource]): Self = StObject.set(x, "mergeSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeSourcesVarargs(value: TfvcMergeSource*): Self = StObject.set(x, "mergeSources", js.Array(value :_*))
+    inline def setMergeSourcesVarargs(value: TfvcMergeSource*): Self = StObject.set(x, "mergeSources", js.Array(value :_*))
     
-    @scala.inline
-    def setPendingVersion(value: Double): Self = StObject.set(x, "pendingVersion", value.asInstanceOf[js.Any])
+    inline def setPendingVersion(value: Double): Self = StObject.set(x, "pendingVersion", value.asInstanceOf[js.Any])
   }
 }

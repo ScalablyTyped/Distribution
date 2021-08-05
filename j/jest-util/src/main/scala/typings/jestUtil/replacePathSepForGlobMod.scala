@@ -12,6 +12,5 @@ object replacePathSepForGlobMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(path: Path): Glob = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[Glob]
+  inline def default(path: Path): Glob = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[Glob]
 }

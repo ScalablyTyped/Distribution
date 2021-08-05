@@ -13,20 +13,16 @@ object webhooksMod {
   }
   object Webhooks {
     
-    @scala.inline
-    def apply(Webhooks: js.Array[Webhook]): Webhooks = {
+    inline def apply(Webhooks: js.Array[Webhook]): Webhooks = {
       val __obj = js.Dynamic.literal(Webhooks = Webhooks.asInstanceOf[js.Any])
       __obj.asInstanceOf[Webhooks]
     }
     
-    @scala.inline
-    implicit class WebhooksMutableBuilder[Self <: Webhooks] (val x: Self) extends AnyVal {
+    extension [Self <: Webhooks](x: Self) {
       
-      @scala.inline
-      def setWebhooks(value: js.Array[Webhook]): Self = StObject.set(x, "Webhooks", value.asInstanceOf[js.Any])
+      inline def setWebhooks(value: js.Array[Webhook]): Self = StObject.set(x, "Webhooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebhooksVarargs(value: Webhook*): Self = StObject.set(x, "Webhooks", js.Array(value :_*))
+      inline def setWebhooksVarargs(value: Webhook*): Self = StObject.set(x, "Webhooks", js.Array(value :_*))
     }
   }
 }

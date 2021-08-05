@@ -8,6 +8,5 @@ object macrotaskStrings {
   
   @js.native
   sealed trait imaginary extends StObject
-  @scala.inline
-  def imaginary: imaginary = "imaginary".asInstanceOf[imaginary]
+  inline def imaginary: imaginary = "imaginary".asInstanceOf[imaginary]
 }

@@ -28,34 +28,25 @@ trait EligibilityResponseInsurance
 }
 object EligibilityResponseInsurance {
   
-  @scala.inline
-  def apply(): EligibilityResponseInsurance = {
+  inline def apply(): EligibilityResponseInsurance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EligibilityResponseInsurance]
   }
   
-  @scala.inline
-  implicit class EligibilityResponseInsuranceMutableBuilder[Self <: EligibilityResponseInsurance] (val x: Self) extends AnyVal {
+  extension [Self <: EligibilityResponseInsurance](x: Self) {
     
-    @scala.inline
-    def setBenefitBalance(value: js.Array[EligibilityResponseInsuranceBenefitBalance]): Self = StObject.set(x, "benefitBalance", value.asInstanceOf[js.Any])
+    inline def setBenefitBalance(value: js.Array[EligibilityResponseInsuranceBenefitBalance]): Self = StObject.set(x, "benefitBalance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBenefitBalanceUndefined: Self = StObject.set(x, "benefitBalance", js.undefined)
+    inline def setBenefitBalanceUndefined: Self = StObject.set(x, "benefitBalance", js.undefined)
     
-    @scala.inline
-    def setBenefitBalanceVarargs(value: EligibilityResponseInsuranceBenefitBalance*): Self = StObject.set(x, "benefitBalance", js.Array(value :_*))
+    inline def setBenefitBalanceVarargs(value: EligibilityResponseInsuranceBenefitBalance*): Self = StObject.set(x, "benefitBalance", js.Array(value :_*))
     
-    @scala.inline
-    def setContract(value: Reference): Self = StObject.set(x, "contract", value.asInstanceOf[js.Any])
+    inline def setContract(value: Reference): Self = StObject.set(x, "contract", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContractUndefined: Self = StObject.set(x, "contract", js.undefined)
+    inline def setContractUndefined: Self = StObject.set(x, "contract", js.undefined)
     
-    @scala.inline
-    def setCoverage(value: Reference): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
+    inline def setCoverage(value: Reference): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
+    inline def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
   }
 }

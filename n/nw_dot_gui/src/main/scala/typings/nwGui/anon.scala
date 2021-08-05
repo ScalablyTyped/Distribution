@@ -14,20 +14,16 @@ object anon {
   }
   object Datatype {
     
-    @scala.inline
-    def apply(datatype: String, format: String): Datatype = {
+    inline def apply(datatype: String, format: String): Datatype = {
       val __obj = js.Dynamic.literal(datatype = datatype.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
       __obj.asInstanceOf[Datatype]
     }
     
-    @scala.inline
-    implicit class DatatypeMutableBuilder[Self <: Datatype] (val x: Self) extends AnyVal {
+    extension [Self <: Datatype](x: Self) {
       
-      @scala.inline
-      def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+      inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
   }
 }

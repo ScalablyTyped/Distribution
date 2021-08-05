@@ -31,31 +31,23 @@ trait ParamsResourceManagementAccountsummariesList
 }
 object ParamsResourceManagementAccountsummariesList {
   
-  @scala.inline
-  def apply(): ParamsResourceManagementAccountsummariesList = {
+  inline def apply(): ParamsResourceManagementAccountsummariesList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceManagementAccountsummariesList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceManagementAccountsummariesListMutableBuilder[Self <: ParamsResourceManagementAccountsummariesList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceManagementAccountsummariesList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def `setMax-results`(value: Double): Self = StObject.set(x, "max-results", value.asInstanceOf[js.Any])
+    inline def `setMax-results`(value: Double): Self = StObject.set(x, "max-results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMax-resultsUndefined`: Self = StObject.set(x, "max-results", js.undefined)
+    inline def `setMax-resultsUndefined`: Self = StObject.set(x, "max-results", js.undefined)
     
-    @scala.inline
-    def `setStart-index`(value: Double): Self = StObject.set(x, "start-index", value.asInstanceOf[js.Any])
+    inline def `setStart-index`(value: Double): Self = StObject.set(x, "start-index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setStart-indexUndefined`: Self = StObject.set(x, "start-index", js.undefined)
+    inline def `setStart-indexUndefined`: Self = StObject.set(x, "start-index", js.undefined)
   }
 }

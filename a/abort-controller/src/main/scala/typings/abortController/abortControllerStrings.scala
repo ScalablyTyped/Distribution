@@ -8,6 +8,5 @@ object abortControllerStrings {
   
   @js.native
   sealed trait loose extends StObject
-  @scala.inline
-  def loose: loose = "loose".asInstanceOf[loose]
+  inline def loose: loose = "loose".asInstanceOf[loose]
 }

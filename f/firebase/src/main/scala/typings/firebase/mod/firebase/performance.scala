@@ -34,23 +34,18 @@ object performance {
   }
   object Performance {
     
-    @scala.inline
-    def apply(dataCollectionEnabled: Boolean, instrumentationEnabled: Boolean, trace: String => Trace): Performance = {
+    inline def apply(dataCollectionEnabled: Boolean, instrumentationEnabled: Boolean, trace: String => Trace): Performance = {
       val __obj = js.Dynamic.literal(dataCollectionEnabled = dataCollectionEnabled.asInstanceOf[js.Any], instrumentationEnabled = instrumentationEnabled.asInstanceOf[js.Any], trace = js.Any.fromFunction1(trace))
       __obj.asInstanceOf[Performance]
     }
     
-    @scala.inline
-    implicit class PerformanceMutableBuilder[Self <: Performance] (val x: Self) extends AnyVal {
+    extension [Self <: Performance](x: Self) {
       
-      @scala.inline
-      def setDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "dataCollectionEnabled", value.asInstanceOf[js.Any])
+      inline def setDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "dataCollectionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstrumentationEnabled(value: Boolean): Self = StObject.set(x, "instrumentationEnabled", value.asInstanceOf[js.Any])
+      inline def setInstrumentationEnabled(value: Boolean): Self = StObject.set(x, "instrumentationEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrace(value: String => Trace): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
+      inline def setTrace(value: String => Trace): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
     }
   }
   

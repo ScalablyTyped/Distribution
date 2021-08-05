@@ -18,25 +18,19 @@ trait MessageData extends StObject {
 }
 object MessageData {
   
-  @scala.inline
-  def apply(): MessageData = {
+  inline def apply(): MessageData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageData]
   }
   
-  @scala.inline
-  implicit class MessageDataMutableBuilder[Self <: MessageData] (val x: Self) extends AnyVal {
+  extension [Self <: MessageData](x: Self) {
     
-    @scala.inline
-    def setCode(value: MessageDataCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: MessageDataCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
-    @scala.inline
-    def setValue(value: MessageDataValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: MessageDataValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

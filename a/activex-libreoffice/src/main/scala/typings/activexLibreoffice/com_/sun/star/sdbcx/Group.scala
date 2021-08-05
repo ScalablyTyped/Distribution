@@ -22,8 +22,7 @@ trait Group
 }
 object Group {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     PropertySetInfo: XPropertySetInfo,
     Users: XNameAccess,
@@ -47,10 +46,8 @@ object Group {
     __obj.asInstanceOf[Group]
   }
   
-  @scala.inline
-  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+  extension [Self <: Group](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

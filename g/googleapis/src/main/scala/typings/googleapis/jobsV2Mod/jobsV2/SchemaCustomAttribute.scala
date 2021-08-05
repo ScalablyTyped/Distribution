@@ -36,31 +36,23 @@ trait SchemaCustomAttribute extends StObject {
 }
 object SchemaCustomAttribute {
   
-  @scala.inline
-  def apply(): SchemaCustomAttribute = {
+  inline def apply(): SchemaCustomAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomAttribute]
   }
   
-  @scala.inline
-  implicit class SchemaCustomAttributeMutableBuilder[Self <: SchemaCustomAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomAttribute](x: Self) {
     
-    @scala.inline
-    def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
+    inline def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
+    inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
     
-    @scala.inline
-    def setLongValue(value: String): Self = StObject.set(x, "longValue", value.asInstanceOf[js.Any])
+    inline def setLongValue(value: String): Self = StObject.set(x, "longValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongValueUndefined: Self = StObject.set(x, "longValue", js.undefined)
+    inline def setLongValueUndefined: Self = StObject.set(x, "longValue", js.undefined)
     
-    @scala.inline
-    def setStringValues(value: SchemaStringValues): Self = StObject.set(x, "stringValues", value.asInstanceOf[js.Any])
+    inline def setStringValues(value: SchemaStringValues): Self = StObject.set(x, "stringValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValuesUndefined: Self = StObject.set(x, "stringValues", js.undefined)
+    inline def setStringValuesUndefined: Self = StObject.set(x, "stringValues", js.undefined)
   }
 }

@@ -26,8 +26,7 @@ trait XColumnsSupplier
 }
 object XColumnsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Columns: XNameAccess,
     acquire: () => Unit,
     getColumns: () => XNameAccess,
@@ -38,13 +37,10 @@ object XColumnsSupplier {
     __obj.asInstanceOf[XColumnsSupplier]
   }
   
-  @scala.inline
-  implicit class XColumnsSupplierMutableBuilder[Self <: XColumnsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XColumnsSupplier](x: Self) {
     
-    @scala.inline
-    def setColumns(value: XNameAccess): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: XNameAccess): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetColumns(value: () => XNameAccess): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
+    inline def setGetColumns(value: () => XNameAccess): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
   }
 }

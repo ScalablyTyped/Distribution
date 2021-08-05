@@ -20,16 +20,13 @@ trait RoomTerrain extends StObject {
 }
 object RoomTerrain {
   
-  @scala.inline
-  def apply(get: (Double, Double) => `0` | TERRAIN_MASK_WALL | TERRAIN_MASK_SWAMP): RoomTerrain = {
+  inline def apply(get: (Double, Double) => `0` | TERRAIN_MASK_WALL | TERRAIN_MASK_SWAMP): RoomTerrain = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
     __obj.asInstanceOf[RoomTerrain]
   }
   
-  @scala.inline
-  implicit class RoomTerrainMutableBuilder[Self <: RoomTerrain] (val x: Self) extends AnyVal {
+  extension [Self <: RoomTerrain](x: Self) {
     
-    @scala.inline
-    def setGet(value: (Double, Double) => `0` | TERRAIN_MASK_WALL | TERRAIN_MASK_SWAMP): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    inline def setGet(value: (Double, Double) => `0` | TERRAIN_MASK_WALL | TERRAIN_MASK_SWAMP): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
   }
 }

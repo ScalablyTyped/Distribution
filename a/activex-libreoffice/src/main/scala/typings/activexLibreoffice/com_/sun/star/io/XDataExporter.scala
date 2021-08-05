@@ -24,8 +24,7 @@ trait XDataExporter
 }
 object XDataExporter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     cancel: () => Unit,
     exportData: (XOutputStream, XComponent, XDataTransferEventListener) => Unit,
@@ -36,13 +35,10 @@ object XDataExporter {
     __obj.asInstanceOf[XDataExporter]
   }
   
-  @scala.inline
-  implicit class XDataExporterMutableBuilder[Self <: XDataExporter] (val x: Self) extends AnyVal {
+  extension [Self <: XDataExporter](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExportData(value: (XOutputStream, XComponent, XDataTransferEventListener) => Unit): Self = StObject.set(x, "exportData", js.Any.fromFunction3(value))
+    inline def setExportData(value: (XOutputStream, XComponent, XDataTransferEventListener) => Unit): Self = StObject.set(x, "exportData", js.Any.fromFunction3(value))
   }
 }

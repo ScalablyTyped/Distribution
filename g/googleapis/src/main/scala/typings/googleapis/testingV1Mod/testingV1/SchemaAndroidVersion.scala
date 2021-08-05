@@ -50,58 +50,41 @@ trait SchemaAndroidVersion extends StObject {
 }
 object SchemaAndroidVersion {
   
-  @scala.inline
-  def apply(): SchemaAndroidVersion = {
+  inline def apply(): SchemaAndroidVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAndroidVersion]
   }
   
-  @scala.inline
-  implicit class SchemaAndroidVersionMutableBuilder[Self <: SchemaAndroidVersion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAndroidVersion](x: Self) {
     
-    @scala.inline
-    def setApiLevel(value: Double): Self = StObject.set(x, "apiLevel", value.asInstanceOf[js.Any])
+    inline def setApiLevel(value: Double): Self = StObject.set(x, "apiLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiLevelUndefined: Self = StObject.set(x, "apiLevel", js.undefined)
+    inline def setApiLevelUndefined: Self = StObject.set(x, "apiLevel", js.undefined)
     
-    @scala.inline
-    def setCodeName(value: String): Self = StObject.set(x, "codeName", value.asInstanceOf[js.Any])
+    inline def setCodeName(value: String): Self = StObject.set(x, "codeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeNameUndefined: Self = StObject.set(x, "codeName", js.undefined)
+    inline def setCodeNameUndefined: Self = StObject.set(x, "codeName", js.undefined)
     
-    @scala.inline
-    def setDistribution(value: SchemaDistribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
+    inline def setDistribution(value: SchemaDistribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
+    inline def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setReleaseDate(value: SchemaDate): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
+    inline def setReleaseDate(value: SchemaDate): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDateUndefined: Self = StObject.set(x, "releaseDate", js.undefined)
+    inline def setReleaseDateUndefined: Self = StObject.set(x, "releaseDate", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVersionString(value: String): Self = StObject.set(x, "versionString", value.asInstanceOf[js.Any])
+    inline def setVersionString(value: String): Self = StObject.set(x, "versionString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionStringUndefined: Self = StObject.set(x, "versionString", js.undefined)
+    inline def setVersionStringUndefined: Self = StObject.set(x, "versionString", js.undefined)
   }
 }

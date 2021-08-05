@@ -13,16 +13,13 @@ trait StopGameSessionPlacementInput extends StObject {
 }
 object StopGameSessionPlacementInput {
   
-  @scala.inline
-  def apply(PlacementId: IdStringModel): StopGameSessionPlacementInput = {
+  inline def apply(PlacementId: IdStringModel): StopGameSessionPlacementInput = {
     val __obj = js.Dynamic.literal(PlacementId = PlacementId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopGameSessionPlacementInput]
   }
   
-  @scala.inline
-  implicit class StopGameSessionPlacementInputMutableBuilder[Self <: StopGameSessionPlacementInput] (val x: Self) extends AnyVal {
+  extension [Self <: StopGameSessionPlacementInput](x: Self) {
     
-    @scala.inline
-    def setPlacementId(value: IdStringModel): Self = StObject.set(x, "PlacementId", value.asInstanceOf[js.Any])
+    inline def setPlacementId(value: IdStringModel): Self = StObject.set(x, "PlacementId", value.asInstanceOf[js.Any])
   }
 }

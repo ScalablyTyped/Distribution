@@ -13,16 +13,13 @@ trait PinchGestureHandlerGestureEvent
 }
 object PinchGestureHandlerGestureEvent {
   
-  @scala.inline
-  def apply(nativeEvent: GestureHandlerGestureEventNativeEvent & PinchGestureHandlerEventExtra): PinchGestureHandlerGestureEvent = {
+  inline def apply(nativeEvent: GestureHandlerGestureEventNativeEvent & PinchGestureHandlerEventExtra): PinchGestureHandlerGestureEvent = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PinchGestureHandlerGestureEvent]
   }
   
-  @scala.inline
-  implicit class PinchGestureHandlerGestureEventMutableBuilder[Self <: PinchGestureHandlerGestureEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PinchGestureHandlerGestureEvent](x: Self) {
     
-    @scala.inline
-    def setNativeEvent(value: GestureHandlerGestureEventNativeEvent & PinchGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+    inline def setNativeEvent(value: GestureHandlerGestureEventNativeEvent & PinchGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
   }
 }

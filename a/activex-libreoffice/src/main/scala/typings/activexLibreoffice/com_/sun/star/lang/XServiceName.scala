@@ -25,8 +25,7 @@ trait XServiceName
 }
 object XServiceName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ServiceName: String,
     acquire: () => Unit,
     getServiceName: () => String,
@@ -37,13 +36,10 @@ object XServiceName {
     __obj.asInstanceOf[XServiceName]
   }
   
-  @scala.inline
-  implicit class XServiceNameMutableBuilder[Self <: XServiceName] (val x: Self) extends AnyVal {
+  extension [Self <: XServiceName](x: Self) {
     
-    @scala.inline
-    def setGetServiceName(value: () => String): Self = StObject.set(x, "getServiceName", js.Any.fromFunction0(value))
+    inline def setGetServiceName(value: () => String): Self = StObject.set(x, "getServiceName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
   }
 }

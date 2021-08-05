@@ -17,28 +17,21 @@ trait HashAlgorithm extends StObject {
 }
 object HashAlgorithm {
   
-  @scala.inline
-  def apply(acls: js.Array[ACL], hashAlgorithm: String, http: Path, ignoreErrors: Boolean): HashAlgorithm = {
+  inline def apply(acls: js.Array[ACL], hashAlgorithm: String, http: Path, ignoreErrors: Boolean): HashAlgorithm = {
     val __obj = js.Dynamic.literal(acls = acls.asInstanceOf[js.Any], hashAlgorithm = hashAlgorithm.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], ignoreErrors = ignoreErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[HashAlgorithm]
   }
   
-  @scala.inline
-  implicit class HashAlgorithmMutableBuilder[Self <: HashAlgorithm] (val x: Self) extends AnyVal {
+  extension [Self <: HashAlgorithm](x: Self) {
     
-    @scala.inline
-    def setAcls(value: js.Array[ACL]): Self = StObject.set(x, "acls", value.asInstanceOf[js.Any])
+    inline def setAcls(value: js.Array[ACL]): Self = StObject.set(x, "acls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAclsVarargs(value: ACL*): Self = StObject.set(x, "acls", js.Array(value :_*))
+    inline def setAclsVarargs(value: ACL*): Self = StObject.set(x, "acls", js.Array(value :_*))
     
-    @scala.inline
-    def setHashAlgorithm(value: String): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
+    inline def setHashAlgorithm(value: String): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttp(value: Path): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    inline def setHttp(value: Path): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
+    inline def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
   }
 }

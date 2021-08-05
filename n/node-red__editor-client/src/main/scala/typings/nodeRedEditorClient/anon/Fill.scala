@@ -16,28 +16,21 @@ trait Fill extends StObject {
 }
 object Fill {
   
-  @scala.inline
-  def apply(container: JQuery[HTMLElement]): Fill = {
+  inline def apply(container: JQuery[HTMLElement]): Fill = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fill]
   }
   
-  @scala.inline
-  implicit class FillMutableBuilder[Self <: Fill] (val x: Self) extends AnyVal {
+  extension [Self <: Fill](x: Self) {
     
-    @scala.inline
-    def setContainer(value: JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setSingleExpanded(value: Boolean): Self = StObject.set(x, "singleExpanded", value.asInstanceOf[js.Any])
+    inline def setSingleExpanded(value: Boolean): Self = StObject.set(x, "singleExpanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleExpandedUndefined: Self = StObject.set(x, "singleExpanded", js.undefined)
+    inline def setSingleExpandedUndefined: Self = StObject.set(x, "singleExpanded", js.undefined)
   }
 }

@@ -38,67 +38,47 @@ trait PartialtextstringfontPartFont extends StObject {
 }
 object PartialtextstringfontPartFont {
   
-  @scala.inline
-  def apply(): PartialtextstringfontPartFont = {
+  inline def apply(): PartialtextstringfontPartFont = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialtextstringfontPartFont]
   }
   
-  @scala.inline
-  implicit class PartialtextstringfontPartFontMutableBuilder[Self <: PartialtextstringfontPartFont] (val x: Self) extends AnyVal {
+  extension [Self <: PartialtextstringfontPartFont](x: Self) {
     
-    @scala.inline
-    def setFont(value: Partial[typings.plotlyJs.mod.Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Partial[typings.plotlyJs.mod.Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setPad(value: Partial[Padding]): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: Partial[Padding]): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
+    inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setXanchor(value: auto | left | center | right): Self = StObject.set(x, "xanchor", value.asInstanceOf[js.Any])
+    inline def setXanchor(value: auto | left | center | right): Self = StObject.set(x, "xanchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXanchorUndefined: Self = StObject.set(x, "xanchor", js.undefined)
+    inline def setXanchorUndefined: Self = StObject.set(x, "xanchor", js.undefined)
     
-    @scala.inline
-    def setXref(value: container | paper): Self = StObject.set(x, "xref", value.asInstanceOf[js.Any])
+    inline def setXref(value: container | paper): Self = StObject.set(x, "xref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXrefUndefined: Self = StObject.set(x, "xref", js.undefined)
+    inline def setXrefUndefined: Self = StObject.set(x, "xref", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    @scala.inline
-    def setYanchor(value: auto | top | middle | bottom): Self = StObject.set(x, "yanchor", value.asInstanceOf[js.Any])
+    inline def setYanchor(value: auto | top | middle | bottom): Self = StObject.set(x, "yanchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYanchorUndefined: Self = StObject.set(x, "yanchor", js.undefined)
+    inline def setYanchorUndefined: Self = StObject.set(x, "yanchor", js.undefined)
     
-    @scala.inline
-    def setYref(value: container | paper): Self = StObject.set(x, "yref", value.asInstanceOf[js.Any])
+    inline def setYref(value: container | paper): Self = StObject.set(x, "yref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYrefUndefined: Self = StObject.set(x, "yref", js.undefined)
+    inline def setYrefUndefined: Self = StObject.set(x, "yref", js.undefined)
   }
 }

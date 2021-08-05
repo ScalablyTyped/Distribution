@@ -18,19 +18,15 @@ trait DeleteObjectRequest extends StObject {
 }
 object DeleteObjectRequest {
   
-  @scala.inline
-  def apply(DirectoryArn: Arn, ObjectReference: ObjectReference): DeleteObjectRequest = {
+  inline def apply(DirectoryArn: Arn, ObjectReference: ObjectReference): DeleteObjectRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], ObjectReference = ObjectReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteObjectRequest]
   }
   
-  @scala.inline
-  implicit class DeleteObjectRequestMutableBuilder[Self <: DeleteObjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteObjectRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
+    inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
+    inline def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
   }
 }

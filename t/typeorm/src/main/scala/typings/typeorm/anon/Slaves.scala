@@ -19,22 +19,17 @@ trait Slaves extends StObject {
 }
 object Slaves {
   
-  @scala.inline
-  def apply(master: OracleConnectionCredentialsOptions, slaves: js.Array[OracleConnectionCredentialsOptions]): Slaves = {
+  inline def apply(master: OracleConnectionCredentialsOptions, slaves: js.Array[OracleConnectionCredentialsOptions]): Slaves = {
     val __obj = js.Dynamic.literal(master = master.asInstanceOf[js.Any], slaves = slaves.asInstanceOf[js.Any])
     __obj.asInstanceOf[Slaves]
   }
   
-  @scala.inline
-  implicit class SlavesMutableBuilder[Self <: Slaves] (val x: Self) extends AnyVal {
+  extension [Self <: Slaves](x: Self) {
     
-    @scala.inline
-    def setMaster(value: OracleConnectionCredentialsOptions): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
+    inline def setMaster(value: OracleConnectionCredentialsOptions): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlaves(value: js.Array[OracleConnectionCredentialsOptions]): Self = StObject.set(x, "slaves", value.asInstanceOf[js.Any])
+    inline def setSlaves(value: js.Array[OracleConnectionCredentialsOptions]): Self = StObject.set(x, "slaves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlavesVarargs(value: OracleConnectionCredentialsOptions*): Self = StObject.set(x, "slaves", js.Array(value :_*))
+    inline def setSlavesVarargs(value: OracleConnectionCredentialsOptions*): Self = StObject.set(x, "slaves", js.Array(value :_*))
   }
 }

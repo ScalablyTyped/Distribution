@@ -14,28 +14,21 @@ trait GoogleAnalyticsAdminV1alphaListWebDataStreamsResponse extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaListWebDataStreamsResponse {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaListWebDataStreamsResponse = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaListWebDataStreamsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaListWebDataStreamsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaListWebDataStreamsResponseMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaListWebDataStreamsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaListWebDataStreamsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setWebDataStreams(value: js.Array[GoogleAnalyticsAdminV1alphaWebDataStream]): Self = StObject.set(x, "webDataStreams", value.asInstanceOf[js.Any])
+    inline def setWebDataStreams(value: js.Array[GoogleAnalyticsAdminV1alphaWebDataStream]): Self = StObject.set(x, "webDataStreams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebDataStreamsUndefined: Self = StObject.set(x, "webDataStreams", js.undefined)
+    inline def setWebDataStreamsUndefined: Self = StObject.set(x, "webDataStreams", js.undefined)
     
-    @scala.inline
-    def setWebDataStreamsVarargs(value: GoogleAnalyticsAdminV1alphaWebDataStream*): Self = StObject.set(x, "webDataStreams", js.Array(value :_*))
+    inline def setWebDataStreamsVarargs(value: GoogleAnalyticsAdminV1alphaWebDataStream*): Self = StObject.set(x, "webDataStreams", js.Array(value :_*))
   }
 }

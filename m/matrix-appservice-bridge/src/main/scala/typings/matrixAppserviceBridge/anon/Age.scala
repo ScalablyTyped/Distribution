@@ -10,19 +10,15 @@ trait Age extends StObject {
 }
 object Age {
   
-  @scala.inline
-  def apply(): Age = {
+  inline def apply(): Age = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Age]
   }
   
-  @scala.inline
-  implicit class AgeMutableBuilder[Self <: Age] (val x: Self) extends AnyVal {
+  extension [Self <: Age](x: Self) {
     
-    @scala.inline
-    def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
+    inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
+    inline def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
   }
 }

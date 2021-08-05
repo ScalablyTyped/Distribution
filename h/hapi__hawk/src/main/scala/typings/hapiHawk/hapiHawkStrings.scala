@@ -8,11 +8,9 @@ object hapiHawkStrings {
   
   @js.native
   sealed trait sha1 extends StObject
-  @scala.inline
-  def sha1: sha1 = "sha1".asInstanceOf[sha1]
+  inline def sha1: sha1 = "sha1".asInstanceOf[sha1]
   
   @js.native
   sealed trait sha256 extends StObject
-  @scala.inline
-  def sha256: sha256 = "sha256".asInstanceOf[sha256]
+  inline def sha256: sha256 = "sha256".asInstanceOf[sha256]
 }

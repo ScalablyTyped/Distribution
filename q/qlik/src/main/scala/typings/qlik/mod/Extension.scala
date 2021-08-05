@@ -31,28 +31,21 @@ trait Extension extends StObject {
 }
 object Extension {
   
-  @scala.inline
-  def apply(definition: Definition, initialProperties: InitialProperties, paint: Paint): Extension = {
+  inline def apply(definition: Definition, initialProperties: InitialProperties, paint: Paint): Extension = {
     val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], initialProperties = initialProperties.asInstanceOf[js.Any], paint = paint.asInstanceOf[js.Any])
     __obj.asInstanceOf[Extension]
   }
   
-  @scala.inline
-  implicit class ExtensionMutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
+  extension [Self <: Extension](x: Self) {
     
-    @scala.inline
-    def setDefinition(value: Definition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: Definition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialProperties(value: InitialProperties): Self = StObject.set(x, "initialProperties", value.asInstanceOf[js.Any])
+    inline def setInitialProperties(value: InitialProperties): Self = StObject.set(x, "initialProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaint(value: Paint): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
+    inline def setPaint(value: Paint): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupport(value: Support): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
+    inline def setSupport(value: Support): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportUndefined: Self = StObject.set(x, "support", js.undefined)
+    inline def setSupportUndefined: Self = StObject.set(x, "support", js.undefined)
   }
 }

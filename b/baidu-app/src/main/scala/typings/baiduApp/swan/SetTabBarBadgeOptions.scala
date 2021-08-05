@@ -20,19 +20,15 @@ trait SetTabBarBadgeOptions
 }
 object SetTabBarBadgeOptions {
   
-  @scala.inline
-  def apply(index: Double, text: String): SetTabBarBadgeOptions = {
+  inline def apply(index: Double, text: String): SetTabBarBadgeOptions = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetTabBarBadgeOptions]
   }
   
-  @scala.inline
-  implicit class SetTabBarBadgeOptionsMutableBuilder[Self <: SetTabBarBadgeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SetTabBarBadgeOptions](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

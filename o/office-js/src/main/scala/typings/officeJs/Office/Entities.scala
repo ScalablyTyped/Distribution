@@ -72,8 +72,7 @@ trait Entities extends StObject {
 }
 object Entities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addresses: js.Array[String],
     contacts: js.Array[Contact],
     emailAddresses: js.Array[String],
@@ -86,49 +85,34 @@ object Entities {
     __obj.asInstanceOf[Entities]
   }
   
-  @scala.inline
-  implicit class EntitiesMutableBuilder[Self <: Entities] (val x: Self) extends AnyVal {
+  extension [Self <: Entities](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setContacts(value: js.Array[Contact]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
+    inline def setContacts(value: js.Array[Contact]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactsVarargs(value: Contact*): Self = StObject.set(x, "contacts", js.Array(value :_*))
+    inline def setContactsVarargs(value: Contact*): Self = StObject.set(x, "contacts", js.Array(value :_*))
     
-    @scala.inline
-    def setEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
+    inline def setEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressesVarargs(value: String*): Self = StObject.set(x, "emailAddresses", js.Array(value :_*))
+    inline def setEmailAddressesVarargs(value: String*): Self = StObject.set(x, "emailAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setMeetingSuggestions(value: js.Array[MeetingSuggestion]): Self = StObject.set(x, "meetingSuggestions", value.asInstanceOf[js.Any])
+    inline def setMeetingSuggestions(value: js.Array[MeetingSuggestion]): Self = StObject.set(x, "meetingSuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeetingSuggestionsVarargs(value: MeetingSuggestion*): Self = StObject.set(x, "meetingSuggestions", js.Array(value :_*))
+    inline def setMeetingSuggestionsVarargs(value: MeetingSuggestion*): Self = StObject.set(x, "meetingSuggestions", js.Array(value :_*))
     
-    @scala.inline
-    def setPhoneNumbers(value: js.Array[PhoneNumber]): Self = StObject.set(x, "phoneNumbers", value.asInstanceOf[js.Any])
+    inline def setPhoneNumbers(value: js.Array[PhoneNumber]): Self = StObject.set(x, "phoneNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumbersVarargs(value: PhoneNumber*): Self = StObject.set(x, "phoneNumbers", js.Array(value :_*))
+    inline def setPhoneNumbersVarargs(value: PhoneNumber*): Self = StObject.set(x, "phoneNumbers", js.Array(value :_*))
     
-    @scala.inline
-    def setTaskSuggestions(value: js.Array[String]): Self = StObject.set(x, "taskSuggestions", value.asInstanceOf[js.Any])
+    inline def setTaskSuggestions(value: js.Array[String]): Self = StObject.set(x, "taskSuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskSuggestionsVarargs(value: String*): Self = StObject.set(x, "taskSuggestions", js.Array(value :_*))
+    inline def setTaskSuggestionsVarargs(value: String*): Self = StObject.set(x, "taskSuggestions", js.Array(value :_*))
     
-    @scala.inline
-    def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
   }
 }

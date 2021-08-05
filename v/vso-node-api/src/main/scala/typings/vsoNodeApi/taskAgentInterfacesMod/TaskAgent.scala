@@ -48,8 +48,7 @@ trait TaskAgent
 }
 object TaskAgent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     assignedRequest: TaskAgentJobRequest,
     authorization: TaskAgentAuthorization,
@@ -70,34 +69,24 @@ object TaskAgent {
     __obj.asInstanceOf[TaskAgent]
   }
   
-  @scala.inline
-  implicit class TaskAgentMutableBuilder[Self <: TaskAgent] (val x: Self) extends AnyVal {
+  extension [Self <: TaskAgent](x: Self) {
     
-    @scala.inline
-    def setAssignedRequest(value: TaskAgentJobRequest): Self = StObject.set(x, "assignedRequest", value.asInstanceOf[js.Any])
+    inline def setAssignedRequest(value: TaskAgentJobRequest): Self = StObject.set(x, "assignedRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorization(value: TaskAgentAuthorization): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
+    inline def setAuthorization(value: TaskAgentAuthorization): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxParallelism(value: Double): Self = StObject.set(x, "maxParallelism", value.asInstanceOf[js.Any])
+    inline def setMaxParallelism(value: Double): Self = StObject.set(x, "maxParallelism", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingUpdate(value: TaskAgentUpdate): Self = StObject.set(x, "pendingUpdate", value.asInstanceOf[js.Any])
+    inline def setPendingUpdate(value: TaskAgentUpdate): Self = StObject.set(x, "pendingUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusChangedOn(value: Date): Self = StObject.set(x, "statusChangedOn", value.asInstanceOf[js.Any])
+    inline def setStatusChangedOn(value: Date): Self = StObject.set(x, "statusChangedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemCapabilities(value: StringDictionary[String]): Self = StObject.set(x, "systemCapabilities", value.asInstanceOf[js.Any])
+    inline def setSystemCapabilities(value: StringDictionary[String]): Self = StObject.set(x, "systemCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserCapabilities(value: StringDictionary[String]): Self = StObject.set(x, "userCapabilities", value.asInstanceOf[js.Any])
+    inline def setUserCapabilities(value: StringDictionary[String]): Self = StObject.set(x, "userCapabilities", value.asInstanceOf[js.Any])
   }
 }

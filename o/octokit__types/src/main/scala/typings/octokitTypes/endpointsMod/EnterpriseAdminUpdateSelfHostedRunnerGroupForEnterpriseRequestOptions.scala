@@ -20,26 +20,20 @@ trait EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseRequestOptions exte
 }
 object EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PATCH", request = request.asInstanceOf[js.Any], url = "/enterprises/:enterprise/actions/runner-groups/:runner_group_id")
     __obj.asInstanceOf[EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseRequestOptions]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseRequestOptionsMutableBuilder[Self <: EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(
+    inline def setUrl(
       value: `SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_id`
     ): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

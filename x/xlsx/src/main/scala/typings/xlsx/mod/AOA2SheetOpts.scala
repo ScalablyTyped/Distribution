@@ -10,8 +10,7 @@ trait AOA2SheetOpts
      with DateNFOption
 object AOA2SheetOpts {
   
-  @scala.inline
-  def apply(): AOA2SheetOpts = {
+  inline def apply(): AOA2SheetOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AOA2SheetOpts]
   }

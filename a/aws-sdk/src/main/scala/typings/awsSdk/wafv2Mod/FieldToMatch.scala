@@ -43,55 +43,39 @@ trait FieldToMatch extends StObject {
 }
 object FieldToMatch {
   
-  @scala.inline
-  def apply(): FieldToMatch = {
+  inline def apply(): FieldToMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldToMatch]
   }
   
-  @scala.inline
-  implicit class FieldToMatchMutableBuilder[Self <: FieldToMatch] (val x: Self) extends AnyVal {
+  extension [Self <: FieldToMatch](x: Self) {
     
-    @scala.inline
-    def setAllQueryArguments(value: AllQueryArguments): Self = StObject.set(x, "AllQueryArguments", value.asInstanceOf[js.Any])
+    inline def setAllQueryArguments(value: AllQueryArguments): Self = StObject.set(x, "AllQueryArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllQueryArgumentsUndefined: Self = StObject.set(x, "AllQueryArguments", js.undefined)
+    inline def setAllQueryArgumentsUndefined: Self = StObject.set(x, "AllQueryArguments", js.undefined)
     
-    @scala.inline
-    def setBody(value: Body): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Body): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
-    @scala.inline
-    def setMethod(value: Method): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: Method): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "Method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "Method", js.undefined)
     
-    @scala.inline
-    def setQueryString(value: QueryString): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: QueryString): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringUndefined: Self = StObject.set(x, "QueryString", js.undefined)
+    inline def setQueryStringUndefined: Self = StObject.set(x, "QueryString", js.undefined)
     
-    @scala.inline
-    def setSingleHeader(value: SingleHeader): Self = StObject.set(x, "SingleHeader", value.asInstanceOf[js.Any])
+    inline def setSingleHeader(value: SingleHeader): Self = StObject.set(x, "SingleHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleHeaderUndefined: Self = StObject.set(x, "SingleHeader", js.undefined)
+    inline def setSingleHeaderUndefined: Self = StObject.set(x, "SingleHeader", js.undefined)
     
-    @scala.inline
-    def setSingleQueryArgument(value: SingleQueryArgument): Self = StObject.set(x, "SingleQueryArgument", value.asInstanceOf[js.Any])
+    inline def setSingleQueryArgument(value: SingleQueryArgument): Self = StObject.set(x, "SingleQueryArgument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleQueryArgumentUndefined: Self = StObject.set(x, "SingleQueryArgument", js.undefined)
+    inline def setSingleQueryArgumentUndefined: Self = StObject.set(x, "SingleQueryArgument", js.undefined)
     
-    @scala.inline
-    def setUriPath(value: UriPath): Self = StObject.set(x, "UriPath", value.asInstanceOf[js.Any])
+    inline def setUriPath(value: UriPath): Self = StObject.set(x, "UriPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriPathUndefined: Self = StObject.set(x, "UriPath", js.undefined)
+    inline def setUriPathUndefined: Self = StObject.set(x, "UriPath", js.undefined)
   }
 }

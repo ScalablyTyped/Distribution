@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsTickPositionValue extends StObject
 object OptionsTickPositionValue {
   
-  @scala.inline
-  def inside: typings.highcharts.highchartsStrings.inside = "inside".asInstanceOf[typings.highcharts.highchartsStrings.inside]
+  inline def inside: typings.highcharts.highchartsStrings.inside = "inside".asInstanceOf[typings.highcharts.highchartsStrings.inside]
   
-  @scala.inline
-  def outside: typings.highcharts.highchartsStrings.outside = "outside".asInstanceOf[typings.highcharts.highchartsStrings.outside]
+  inline def outside: typings.highcharts.highchartsStrings.outside = "outside".asInstanceOf[typings.highcharts.highchartsStrings.outside]
 }

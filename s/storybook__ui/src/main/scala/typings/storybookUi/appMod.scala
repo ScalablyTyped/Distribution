@@ -30,8 +30,7 @@ object appMod extends Shortcut {
   }
   object AppProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       docsOnly: Boolean,
       layout: Layout,
       panelCount: Double,
@@ -42,23 +41,17 @@ object appMod extends Shortcut {
       __obj.asInstanceOf[AppProps]
     }
     
-    @scala.inline
-    implicit class AppPropsMutableBuilder[Self <: AppProps] (val x: Self) extends AnyVal {
+    extension [Self <: AppProps](x: Self) {
       
-      @scala.inline
-      def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
+      inline def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelCount(value: Double): Self = StObject.set(x, "panelCount", value.asInstanceOf[js.Any])
+      inline def setPanelCount(value: Double): Self = StObject.set(x, "panelCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      inline def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     }
   }
   

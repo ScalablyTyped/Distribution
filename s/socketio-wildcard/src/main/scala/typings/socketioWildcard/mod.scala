@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Function2[
+  inline def apply(): js.Function2[
     /* socket */ Socket | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClientSocket */ js.Any), 
     /* next */ js.UndefOr[js.Function1[/* err */ js.UndefOr[js.Any], Unit]], 
     Unit
@@ -17,8 +16,7 @@ object mod {
     /* next */ js.UndefOr[js.Function1[/* err */ js.UndefOr[js.Any], Unit]], 
     Unit
   ]]
-  @scala.inline
-  def apply(emitterCtor: js.Object): js.Function2[
+  inline def apply(emitterCtor: js.Object): js.Function2[
     /* socket */ Socket | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClientSocket */ js.Any), 
     /* next */ js.UndefOr[js.Function1[/* err */ js.UndefOr[js.Any], Unit]], 
     Unit

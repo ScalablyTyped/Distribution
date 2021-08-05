@@ -27,19 +27,15 @@ trait INotifyDisposing extends StObject {
 }
 object INotifyDisposing {
   
-  @scala.inline
-  def apply(add_disposing: js.Function => Unit, remove_disposing: js.Function => Unit): INotifyDisposing = {
+  inline def apply(add_disposing: js.Function => Unit, remove_disposing: js.Function => Unit): INotifyDisposing = {
     val __obj = js.Dynamic.literal(add_disposing = js.Any.fromFunction1(add_disposing), remove_disposing = js.Any.fromFunction1(remove_disposing))
     __obj.asInstanceOf[INotifyDisposing]
   }
   
-  @scala.inline
-  implicit class INotifyDisposingMutableBuilder[Self <: INotifyDisposing] (val x: Self) extends AnyVal {
+  extension [Self <: INotifyDisposing](x: Self) {
     
-    @scala.inline
-    def setAdd_disposing(value: js.Function => Unit): Self = StObject.set(x, "add_disposing", js.Any.fromFunction1(value))
+    inline def setAdd_disposing(value: js.Function => Unit): Self = StObject.set(x, "add_disposing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove_disposing(value: js.Function => Unit): Self = StObject.set(x, "remove_disposing", js.Any.fromFunction1(value))
+    inline def setRemove_disposing(value: js.Function => Unit): Self = StObject.set(x, "remove_disposing", js.Any.fromFunction1(value))
   }
 }

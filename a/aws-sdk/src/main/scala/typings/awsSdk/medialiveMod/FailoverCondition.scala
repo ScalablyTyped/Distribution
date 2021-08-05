@@ -13,19 +13,15 @@ trait FailoverCondition extends StObject {
 }
 object FailoverCondition {
   
-  @scala.inline
-  def apply(): FailoverCondition = {
+  inline def apply(): FailoverCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailoverCondition]
   }
   
-  @scala.inline
-  implicit class FailoverConditionMutableBuilder[Self <: FailoverCondition] (val x: Self) extends AnyVal {
+  extension [Self <: FailoverCondition](x: Self) {
     
-    @scala.inline
-    def setFailoverConditionSettings(value: FailoverConditionSettings): Self = StObject.set(x, "FailoverConditionSettings", value.asInstanceOf[js.Any])
+    inline def setFailoverConditionSettings(value: FailoverConditionSettings): Self = StObject.set(x, "FailoverConditionSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailoverConditionSettingsUndefined: Self = StObject.set(x, "FailoverConditionSettings", js.undefined)
+    inline def setFailoverConditionSettingsUndefined: Self = StObject.set(x, "FailoverConditionSettings", js.undefined)
   }
 }

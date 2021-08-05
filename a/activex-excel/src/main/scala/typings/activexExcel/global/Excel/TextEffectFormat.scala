@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.TextEffectFormat")
 @js.native
-class TextEffectFormat protected ()
+/* private */ class TextEffectFormat ()
   extends StObject
      with typings.activexExcel.Excel.TextEffectFormat {
   
@@ -23,7 +23,7 @@ class TextEffectFormat protected ()
   /* CompleteClass */
   override val Creator: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.TextEffectFormat_typekey")
   var ExcelDotTextEffectFormat_typekey: typings.activexExcel.Excel.TextEffectFormat = js.native
   

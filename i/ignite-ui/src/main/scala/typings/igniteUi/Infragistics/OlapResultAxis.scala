@@ -18,19 +18,15 @@ trait OlapResultAxis extends StObject {
 }
 object OlapResultAxis {
   
-  @scala.inline
-  def apply(tupleSize: () => Double, tuples: () => js.Array[js.Any]): OlapResultAxis = {
+  inline def apply(tupleSize: () => Double, tuples: () => js.Array[js.Any]): OlapResultAxis = {
     val __obj = js.Dynamic.literal(tupleSize = js.Any.fromFunction0(tupleSize), tuples = js.Any.fromFunction0(tuples))
     __obj.asInstanceOf[OlapResultAxis]
   }
   
-  @scala.inline
-  implicit class OlapResultAxisMutableBuilder[Self <: OlapResultAxis] (val x: Self) extends AnyVal {
+  extension [Self <: OlapResultAxis](x: Self) {
     
-    @scala.inline
-    def setTupleSize(value: () => Double): Self = StObject.set(x, "tupleSize", js.Any.fromFunction0(value))
+    inline def setTupleSize(value: () => Double): Self = StObject.set(x, "tupleSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTuples(value: () => js.Array[js.Any]): Self = StObject.set(x, "tuples", js.Any.fromFunction0(value))
+    inline def setTuples(value: () => js.Array[js.Any]): Self = StObject.set(x, "tuples", js.Any.fromFunction0(value))
   }
 }

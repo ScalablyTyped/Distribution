@@ -60,14 +60,11 @@ object mod {
   trait CarouselCellAlignProp extends StObject
   object CarouselCellAlignProp {
     
-    @scala.inline
-    def center: typings.nukaCarousel.nukaCarouselStrings.center = "center".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.center]
+    inline def center: typings.nukaCarousel.nukaCarouselStrings.center = "center".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.center]
     
-    @scala.inline
-    def left: typings.nukaCarousel.nukaCarouselStrings.left = "left".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.left]
+    inline def left: typings.nukaCarousel.nukaCarouselStrings.left = "left".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.left]
     
-    @scala.inline
-    def right: typings.nukaCarousel.nukaCarouselStrings.right = "right".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.right]
+    inline def right: typings.nukaCarousel.nukaCarouselStrings.right = "right".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.right]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -84,32 +81,23 @@ object mod {
   trait CarouselControlContainerProp extends StObject
   object CarouselControlContainerProp {
     
-    @scala.inline
-    def BottomCenter: typings.nukaCarousel.nukaCarouselStrings.BottomCenter = "BottomCenter".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.BottomCenter]
+    inline def BottomCenter: typings.nukaCarousel.nukaCarouselStrings.BottomCenter = "BottomCenter".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.BottomCenter]
     
-    @scala.inline
-    def BottomLeft: typings.nukaCarousel.nukaCarouselStrings.BottomLeft = "BottomLeft".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.BottomLeft]
+    inline def BottomLeft: typings.nukaCarousel.nukaCarouselStrings.BottomLeft = "BottomLeft".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.BottomLeft]
     
-    @scala.inline
-    def BottomRight: typings.nukaCarousel.nukaCarouselStrings.BottomRight = "BottomRight".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.BottomRight]
+    inline def BottomRight: typings.nukaCarousel.nukaCarouselStrings.BottomRight = "BottomRight".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.BottomRight]
     
-    @scala.inline
-    def CenterCenter: typings.nukaCarousel.nukaCarouselStrings.CenterCenter = "CenterCenter".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.CenterCenter]
+    inline def CenterCenter: typings.nukaCarousel.nukaCarouselStrings.CenterCenter = "CenterCenter".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.CenterCenter]
     
-    @scala.inline
-    def CenterLeft: typings.nukaCarousel.nukaCarouselStrings.CenterLeft = "CenterLeft".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.CenterLeft]
+    inline def CenterLeft: typings.nukaCarousel.nukaCarouselStrings.CenterLeft = "CenterLeft".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.CenterLeft]
     
-    @scala.inline
-    def CenterRight: typings.nukaCarousel.nukaCarouselStrings.CenterRight = "CenterRight".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.CenterRight]
+    inline def CenterRight: typings.nukaCarousel.nukaCarouselStrings.CenterRight = "CenterRight".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.CenterRight]
     
-    @scala.inline
-    def TopCenter: typings.nukaCarousel.nukaCarouselStrings.TopCenter = "TopCenter".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.TopCenter]
+    inline def TopCenter: typings.nukaCarousel.nukaCarouselStrings.TopCenter = "TopCenter".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.TopCenter]
     
-    @scala.inline
-    def TopLeft: typings.nukaCarousel.nukaCarouselStrings.TopLeft = "TopLeft".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.TopLeft]
+    inline def TopLeft: typings.nukaCarousel.nukaCarouselStrings.TopLeft = "TopLeft".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.TopLeft]
     
-    @scala.inline
-    def TopRight: typings.nukaCarousel.nukaCarouselStrings.TopRight = "TopRight".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.TopRight]
+    inline def TopRight: typings.nukaCarousel.nukaCarouselStrings.TopRight = "TopRight".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.TopRight]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -120,14 +108,11 @@ object mod {
   trait CarouselHeightModeProp extends StObject
   object CarouselHeightModeProp {
     
-    @scala.inline
-    def current: typings.nukaCarousel.nukaCarouselStrings.current = "current".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.current]
+    inline def current: typings.nukaCarousel.nukaCarouselStrings.current = "current".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.current]
     
-    @scala.inline
-    def first: typings.nukaCarousel.nukaCarouselStrings.first = "first".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.first]
+    inline def first: typings.nukaCarousel.nukaCarouselStrings.first = "first".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.first]
     
-    @scala.inline
-    def max: typings.nukaCarousel.nukaCarouselStrings.max = "max".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.max]
+    inline def max: typings.nukaCarousel.nukaCarouselStrings.max = "max".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.max]
   }
   
   trait CarouselProps extends StObject {
@@ -444,371 +429,250 @@ object mod {
   }
   object CarouselProps {
     
-    @scala.inline
-    def apply(): CarouselProps = {
+    inline def apply(): CarouselProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CarouselProps]
     }
     
-    @scala.inline
-    implicit class CarouselPropsMutableBuilder[Self <: CarouselProps] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselProps](x: Self) {
       
-      @scala.inline
-      def setAfterSlide(value: /* index */ Double => Unit): Self = StObject.set(x, "afterSlide", js.Any.fromFunction1(value))
+      inline def setAfterSlide(value: /* index */ Double => Unit): Self = StObject.set(x, "afterSlide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterSlideUndefined: Self = StObject.set(x, "afterSlide", js.undefined)
+      inline def setAfterSlideUndefined: Self = StObject.set(x, "afterSlide", js.undefined)
       
-      @scala.inline
-      def setAnimation(value: zoom): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: zoom): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setAutoGenerateStyleTag(value: Boolean): Self = StObject.set(x, "autoGenerateStyleTag", value.asInstanceOf[js.Any])
+      inline def setAutoGenerateStyleTag(value: Boolean): Self = StObject.set(x, "autoGenerateStyleTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoGenerateStyleTagUndefined: Self = StObject.set(x, "autoGenerateStyleTag", js.undefined)
+      inline def setAutoGenerateStyleTagUndefined: Self = StObject.set(x, "autoGenerateStyleTag", js.undefined)
       
-      @scala.inline
-      def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+      inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoplayInterval(value: Double): Self = StObject.set(x, "autoplayInterval", value.asInstanceOf[js.Any])
+      inline def setAutoplayInterval(value: Double): Self = StObject.set(x, "autoplayInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoplayIntervalUndefined: Self = StObject.set(x, "autoplayInterval", js.undefined)
+      inline def setAutoplayIntervalUndefined: Self = StObject.set(x, "autoplayInterval", js.undefined)
       
-      @scala.inline
-      def setAutoplayReverse(value: Boolean): Self = StObject.set(x, "autoplayReverse", value.asInstanceOf[js.Any])
+      inline def setAutoplayReverse(value: Boolean): Self = StObject.set(x, "autoplayReverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoplayReverseUndefined: Self = StObject.set(x, "autoplayReverse", js.undefined)
+      inline def setAutoplayReverseUndefined: Self = StObject.set(x, "autoplayReverse", js.undefined)
       
-      @scala.inline
-      def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+      inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
       
-      @scala.inline
-      def setBeforeSlide(value: (/* currentSlide */ Double, /* endSlide */ Double) => Unit): Self = StObject.set(x, "beforeSlide", js.Any.fromFunction2(value))
+      inline def setBeforeSlide(value: (/* currentSlide */ Double, /* endSlide */ Double) => Unit): Self = StObject.set(x, "beforeSlide", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeSlideUndefined: Self = StObject.set(x, "beforeSlide", js.undefined)
+      inline def setBeforeSlideUndefined: Self = StObject.set(x, "beforeSlide", js.undefined)
       
-      @scala.inline
-      def setCellAlign(value: CarouselCellAlignProp): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
+      inline def setCellAlign(value: CarouselCellAlignProp): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellAlignUndefined: Self = StObject.set(x, "cellAlign", js.undefined)
+      inline def setCellAlignUndefined: Self = StObject.set(x, "cellAlign", js.undefined)
       
-      @scala.inline
-      def setCellSpacing(value: Double): Self = StObject.set(x, "cellSpacing", value.asInstanceOf[js.Any])
+      inline def setCellSpacing(value: Double): Self = StObject.set(x, "cellSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellSpacingUndefined: Self = StObject.set(x, "cellSpacing", js.undefined)
+      inline def setCellSpacingUndefined: Self = StObject.set(x, "cellSpacing", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDefaultControlsConfig(value: ContainerClassName): Self = StObject.set(x, "defaultControlsConfig", value.asInstanceOf[js.Any])
+      inline def setDefaultControlsConfig(value: ContainerClassName): Self = StObject.set(x, "defaultControlsConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultControlsConfigUndefined: Self = StObject.set(x, "defaultControlsConfig", js.undefined)
+      inline def setDefaultControlsConfigUndefined: Self = StObject.set(x, "defaultControlsConfig", js.undefined)
       
-      @scala.inline
-      def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
+      inline def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
+      inline def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
       
-      @scala.inline
-      def setDisableEdgeSwiping(value: Boolean): Self = StObject.set(x, "disableEdgeSwiping", value.asInstanceOf[js.Any])
+      inline def setDisableEdgeSwiping(value: Boolean): Self = StObject.set(x, "disableEdgeSwiping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableEdgeSwipingUndefined: Self = StObject.set(x, "disableEdgeSwiping", js.undefined)
+      inline def setDisableEdgeSwipingUndefined: Self = StObject.set(x, "disableEdgeSwiping", js.undefined)
       
-      @scala.inline
-      def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
+      inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggingUndefined: Self = StObject.set(x, "dragging", js.undefined)
+      inline def setDraggingUndefined: Self = StObject.set(x, "dragging", js.undefined)
       
-      @scala.inline
-      def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setEdgeEasing(value: String): Self = StObject.set(x, "edgeEasing", value.asInstanceOf[js.Any])
+      inline def setEdgeEasing(value: String): Self = StObject.set(x, "edgeEasing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeEasingUndefined: Self = StObject.set(x, "edgeEasing", js.undefined)
+      inline def setEdgeEasingUndefined: Self = StObject.set(x, "edgeEasing", js.undefined)
       
-      @scala.inline
-      def setEnableKeyboardControls(value: Boolean): Self = StObject.set(x, "enableKeyboardControls", value.asInstanceOf[js.Any])
+      inline def setEnableKeyboardControls(value: Boolean): Self = StObject.set(x, "enableKeyboardControls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableKeyboardControlsUndefined: Self = StObject.set(x, "enableKeyboardControls", js.undefined)
+      inline def setEnableKeyboardControlsUndefined: Self = StObject.set(x, "enableKeyboardControls", js.undefined)
       
-      @scala.inline
-      def setFrameOverflow(value: String): Self = StObject.set(x, "frameOverflow", value.asInstanceOf[js.Any])
+      inline def setFrameOverflow(value: String): Self = StObject.set(x, "frameOverflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameOverflowUndefined: Self = StObject.set(x, "frameOverflow", js.undefined)
+      inline def setFrameOverflowUndefined: Self = StObject.set(x, "frameOverflow", js.undefined)
       
-      @scala.inline
-      def setFramePadding(value: String): Self = StObject.set(x, "framePadding", value.asInstanceOf[js.Any])
+      inline def setFramePadding(value: String): Self = StObject.set(x, "framePadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramePaddingUndefined: Self = StObject.set(x, "framePadding", js.undefined)
+      inline def setFramePaddingUndefined: Self = StObject.set(x, "framePadding", js.undefined)
       
-      @scala.inline
-      def setGetControlsContainerStyles(value: /* key */ CarouselControlContainerProp => CSSProperties): Self = StObject.set(x, "getControlsContainerStyles", js.Any.fromFunction1(value))
+      inline def setGetControlsContainerStyles(value: /* key */ CarouselControlContainerProp => CSSProperties): Self = StObject.set(x, "getControlsContainerStyles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetControlsContainerStylesUndefined: Self = StObject.set(x, "getControlsContainerStyles", js.undefined)
+      inline def setGetControlsContainerStylesUndefined: Self = StObject.set(x, "getControlsContainerStyles", js.undefined)
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightMode(value: CarouselHeightModeProp): Self = StObject.set(x, "heightMode", value.asInstanceOf[js.Any])
+      inline def setHeightMode(value: CarouselHeightModeProp): Self = StObject.set(x, "heightMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightModeUndefined: Self = StObject.set(x, "heightMode", js.undefined)
+      inline def setHeightModeUndefined: Self = StObject.set(x, "heightMode", js.undefined)
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setInitialSlideHeight(value: Double): Self = StObject.set(x, "initialSlideHeight", value.asInstanceOf[js.Any])
+      inline def setInitialSlideHeight(value: Double): Self = StObject.set(x, "initialSlideHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSlideHeightUndefined: Self = StObject.set(x, "initialSlideHeight", js.undefined)
+      inline def setInitialSlideHeightUndefined: Self = StObject.set(x, "initialSlideHeight", js.undefined)
       
-      @scala.inline
-      def setInitialSlideWidth(value: Double): Self = StObject.set(x, "initialSlideWidth", value.asInstanceOf[js.Any])
+      inline def setInitialSlideWidth(value: Double): Self = StObject.set(x, "initialSlideWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSlideWidthUndefined: Self = StObject.set(x, "initialSlideWidth", js.undefined)
+      inline def setInitialSlideWidthUndefined: Self = StObject.set(x, "initialSlideWidth", js.undefined)
       
-      @scala.inline
-      def setInnerRef(value: RefObject[HTMLInputElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: RefObject[HTMLInputElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      @scala.inline
-      def setKeyCodeConfig(value: slideActioninCarouselSlid): Self = StObject.set(x, "keyCodeConfig", value.asInstanceOf[js.Any])
+      inline def setKeyCodeConfig(value: slideActioninCarouselSlid): Self = StObject.set(x, "keyCodeConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCodeConfigUndefined: Self = StObject.set(x, "keyCodeConfig", js.undefined)
+      inline def setKeyCodeConfigUndefined: Self = StObject.set(x, "keyCodeConfig", js.undefined)
       
-      @scala.inline
-      def setOnDragStart(value: /* e */ js.UndefOr[Event] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      inline def setOnDragStart(value: /* e */ js.UndefOr[Event] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setOnResize(value: () => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction0(value))
+      inline def setOnResize(value: () => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
-      @scala.inline
-      def setOpacityScale(value: Double): Self = StObject.set(x, "opacityScale", value.asInstanceOf[js.Any])
+      inline def setOpacityScale(value: Double): Self = StObject.set(x, "opacityScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityScaleUndefined: Self = StObject.set(x, "opacityScale", js.undefined)
+      inline def setOpacityScaleUndefined: Self = StObject.set(x, "opacityScale", js.undefined)
       
-      @scala.inline
-      def setPauseOnHover(value: Boolean): Self = StObject.set(x, "pauseOnHover", value.asInstanceOf[js.Any])
+      inline def setPauseOnHover(value: Boolean): Self = StObject.set(x, "pauseOnHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseOnHoverUndefined: Self = StObject.set(x, "pauseOnHover", js.undefined)
+      inline def setPauseOnHoverUndefined: Self = StObject.set(x, "pauseOnHover", js.undefined)
       
-      @scala.inline
-      def setRenderAnnounceSlideMessage(value: /* hasCurrentSlideSlideCount */ CarouselSlideRenderControlProps => String): Self = StObject.set(x, "renderAnnounceSlideMessage", js.Any.fromFunction1(value))
+      inline def setRenderAnnounceSlideMessage(value: /* hasCurrentSlideSlideCount */ CarouselSlideRenderControlProps => String): Self = StObject.set(x, "renderAnnounceSlideMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderAnnounceSlideMessageUndefined: Self = StObject.set(x, "renderAnnounceSlideMessage", js.undefined)
+      inline def setRenderAnnounceSlideMessageUndefined: Self = StObject.set(x, "renderAnnounceSlideMessage", js.undefined)
       
-      @scala.inline
-      def setRenderBottomCenterControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderBottomCenterControls", js.Any.fromFunction1(value))
+      inline def setRenderBottomCenterControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderBottomCenterControls", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderBottomCenterControlsNull: Self = StObject.set(x, "renderBottomCenterControls", null)
+      inline def setRenderBottomCenterControlsNull: Self = StObject.set(x, "renderBottomCenterControls", null)
       
-      @scala.inline
-      def setRenderBottomCenterControlsUndefined: Self = StObject.set(x, "renderBottomCenterControls", js.undefined)
+      inline def setRenderBottomCenterControlsUndefined: Self = StObject.set(x, "renderBottomCenterControls", js.undefined)
       
-      @scala.inline
-      def setRenderBottomLeftControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderBottomLeftControls", js.Any.fromFunction1(value))
+      inline def setRenderBottomLeftControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderBottomLeftControls", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderBottomLeftControlsNull: Self = StObject.set(x, "renderBottomLeftControls", null)
+      inline def setRenderBottomLeftControlsNull: Self = StObject.set(x, "renderBottomLeftControls", null)
       
-      @scala.inline
-      def setRenderBottomLeftControlsUndefined: Self = StObject.set(x, "renderBottomLeftControls", js.undefined)
+      inline def setRenderBottomLeftControlsUndefined: Self = StObject.set(x, "renderBottomLeftControls", js.undefined)
       
-      @scala.inline
-      def setRenderBottomRightControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderBottomRightControls", js.Any.fromFunction1(value))
+      inline def setRenderBottomRightControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderBottomRightControls", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderBottomRightControlsNull: Self = StObject.set(x, "renderBottomRightControls", null)
+      inline def setRenderBottomRightControlsNull: Self = StObject.set(x, "renderBottomRightControls", null)
       
-      @scala.inline
-      def setRenderBottomRightControlsUndefined: Self = StObject.set(x, "renderBottomRightControls", js.undefined)
+      inline def setRenderBottomRightControlsUndefined: Self = StObject.set(x, "renderBottomRightControls", js.undefined)
       
-      @scala.inline
-      def setRenderCenterCenterControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderCenterCenterControls", js.Any.fromFunction1(value))
+      inline def setRenderCenterCenterControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderCenterCenterControls", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderCenterCenterControlsNull: Self = StObject.set(x, "renderCenterCenterControls", null)
+      inline def setRenderCenterCenterControlsNull: Self = StObject.set(x, "renderCenterCenterControls", null)
       
-      @scala.inline
-      def setRenderCenterCenterControlsUndefined: Self = StObject.set(x, "renderCenterCenterControls", js.undefined)
+      inline def setRenderCenterCenterControlsUndefined: Self = StObject.set(x, "renderCenterCenterControls", js.undefined)
       
-      @scala.inline
-      def setRenderCenterLeftControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderCenterLeftControls", js.Any.fromFunction1(value))
+      inline def setRenderCenterLeftControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderCenterLeftControls", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderCenterLeftControlsNull: Self = StObject.set(x, "renderCenterLeftControls", null)
+      inline def setRenderCenterLeftControlsNull: Self = StObject.set(x, "renderCenterLeftControls", null)
       
-      @scala.inline
-      def setRenderCenterLeftControlsUndefined: Self = StObject.set(x, "renderCenterLeftControls", js.undefined)
+      inline def setRenderCenterLeftControlsUndefined: Self = StObject.set(x, "renderCenterLeftControls", js.undefined)
       
-      @scala.inline
-      def setRenderCenterRightControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderCenterRightControls", js.Any.fromFunction1(value))
+      inline def setRenderCenterRightControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderCenterRightControls", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderCenterRightControlsNull: Self = StObject.set(x, "renderCenterRightControls", null)
+      inline def setRenderCenterRightControlsNull: Self = StObject.set(x, "renderCenterRightControls", null)
       
-      @scala.inline
-      def setRenderCenterRightControlsUndefined: Self = StObject.set(x, "renderCenterRightControls", js.undefined)
+      inline def setRenderCenterRightControlsUndefined: Self = StObject.set(x, "renderCenterRightControls", js.undefined)
       
-      @scala.inline
-      def setRenderTopCenterControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderTopCenterControls", js.Any.fromFunction1(value))
+      inline def setRenderTopCenterControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderTopCenterControls", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderTopCenterControlsNull: Self = StObject.set(x, "renderTopCenterControls", null)
+      inline def setRenderTopCenterControlsNull: Self = StObject.set(x, "renderTopCenterControls", null)
       
-      @scala.inline
-      def setRenderTopCenterControlsUndefined: Self = StObject.set(x, "renderTopCenterControls", js.undefined)
+      inline def setRenderTopCenterControlsUndefined: Self = StObject.set(x, "renderTopCenterControls", js.undefined)
       
-      @scala.inline
-      def setRenderTopLeftControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderTopLeftControls", js.Any.fromFunction1(value))
+      inline def setRenderTopLeftControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderTopLeftControls", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderTopLeftControlsNull: Self = StObject.set(x, "renderTopLeftControls", null)
+      inline def setRenderTopLeftControlsNull: Self = StObject.set(x, "renderTopLeftControls", null)
       
-      @scala.inline
-      def setRenderTopLeftControlsUndefined: Self = StObject.set(x, "renderTopLeftControls", js.undefined)
+      inline def setRenderTopLeftControlsUndefined: Self = StObject.set(x, "renderTopLeftControls", js.undefined)
       
-      @scala.inline
-      def setRenderTopRightControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderTopRightControls", js.Any.fromFunction1(value))
+      inline def setRenderTopRightControls(value: /* props */ CarouselSlideRenderControlProps => ReactNode): Self = StObject.set(x, "renderTopRightControls", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderTopRightControlsNull: Self = StObject.set(x, "renderTopRightControls", null)
+      inline def setRenderTopRightControlsNull: Self = StObject.set(x, "renderTopRightControls", null)
       
-      @scala.inline
-      def setRenderTopRightControlsUndefined: Self = StObject.set(x, "renderTopRightControls", js.undefined)
+      inline def setRenderTopRightControlsUndefined: Self = StObject.set(x, "renderTopRightControls", js.undefined)
       
-      @scala.inline
-      def setScrollMode(value: CarouselScrollModeProp): Self = StObject.set(x, "scrollMode", value.asInstanceOf[js.Any])
+      inline def setScrollMode(value: CarouselScrollModeProp): Self = StObject.set(x, "scrollMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollModeUndefined: Self = StObject.set(x, "scrollMode", js.undefined)
+      inline def setScrollModeUndefined: Self = StObject.set(x, "scrollMode", js.undefined)
       
-      @scala.inline
-      def setSlideIndex(value: Double): Self = StObject.set(x, "slideIndex", value.asInstanceOf[js.Any])
+      inline def setSlideIndex(value: Double): Self = StObject.set(x, "slideIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideIndexUndefined: Self = StObject.set(x, "slideIndex", js.undefined)
+      inline def setSlideIndexUndefined: Self = StObject.set(x, "slideIndex", js.undefined)
       
-      @scala.inline
-      def setSlideOffset(value: Double): Self = StObject.set(x, "slideOffset", value.asInstanceOf[js.Any])
+      inline def setSlideOffset(value: Double): Self = StObject.set(x, "slideOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideOffsetUndefined: Self = StObject.set(x, "slideOffset", js.undefined)
+      inline def setSlideOffsetUndefined: Self = StObject.set(x, "slideOffset", js.undefined)
       
-      @scala.inline
-      def setSlideWidth(value: CarouselSlideWidthProp): Self = StObject.set(x, "slideWidth", value.asInstanceOf[js.Any])
+      inline def setSlideWidth(value: CarouselSlideWidthProp): Self = StObject.set(x, "slideWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideWidthUndefined: Self = StObject.set(x, "slideWidth", js.undefined)
+      inline def setSlideWidthUndefined: Self = StObject.set(x, "slideWidth", js.undefined)
       
-      @scala.inline
-      def setSlidesToScroll(value: CarouselSlidesToScrollProp): Self = StObject.set(x, "slidesToScroll", value.asInstanceOf[js.Any])
+      inline def setSlidesToScroll(value: CarouselSlidesToScrollProp): Self = StObject.set(x, "slidesToScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidesToScrollUndefined: Self = StObject.set(x, "slidesToScroll", js.undefined)
+      inline def setSlidesToScrollUndefined: Self = StObject.set(x, "slidesToScroll", js.undefined)
       
-      @scala.inline
-      def setSlidesToShow(value: Double): Self = StObject.set(x, "slidesToShow", value.asInstanceOf[js.Any])
+      inline def setSlidesToShow(value: Double): Self = StObject.set(x, "slidesToShow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidesToShowUndefined: Self = StObject.set(x, "slidesToShow", js.undefined)
+      inline def setSlidesToShowUndefined: Self = StObject.set(x, "slidesToShow", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSwiping(value: Boolean): Self = StObject.set(x, "swiping", value.asInstanceOf[js.Any])
+      inline def setSwiping(value: Boolean): Self = StObject.set(x, "swiping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipingUndefined: Self = StObject.set(x, "swiping", js.undefined)
+      inline def setSwipingUndefined: Self = StObject.set(x, "swiping", js.undefined)
       
-      @scala.inline
-      def setTransitionMode(value: CarouselTransitionModeProp): Self = StObject.set(x, "transitionMode", value.asInstanceOf[js.Any])
+      inline def setTransitionMode(value: CarouselTransitionModeProp): Self = StObject.set(x, "transitionMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionModeUndefined: Self = StObject.set(x, "transitionMode", js.undefined)
+      inline def setTransitionModeUndefined: Self = StObject.set(x, "transitionMode", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setWithoutControls(value: Boolean): Self = StObject.set(x, "withoutControls", value.asInstanceOf[js.Any])
+      inline def setWithoutControls(value: Boolean): Self = StObject.set(x, "withoutControls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithoutControlsUndefined: Self = StObject.set(x, "withoutControls", js.undefined)
+      inline def setWithoutControlsUndefined: Self = StObject.set(x, "withoutControls", js.undefined)
       
-      @scala.inline
-      def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
+      inline def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapAroundUndefined: Self = StObject.set(x, "wrapAround", js.undefined)
+      inline def setWrapAroundUndefined: Self = StObject.set(x, "wrapAround", js.undefined)
       
-      @scala.inline
-      def setZoomScale(value: Double): Self = StObject.set(x, "zoomScale", value.asInstanceOf[js.Any])
+      inline def setZoomScale(value: Double): Self = StObject.set(x, "zoomScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomScaleUndefined: Self = StObject.set(x, "zoomScale", js.undefined)
+      inline def setZoomScaleUndefined: Self = StObject.set(x, "zoomScale", js.undefined)
     }
   }
   
@@ -821,11 +685,9 @@ object mod {
   trait CarouselScrollModeProp extends StObject
   object CarouselScrollModeProp {
     
-    @scala.inline
-    def page: typings.nukaCarousel.nukaCarouselStrings.page = "page".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.page]
+    inline def page: typings.nukaCarousel.nukaCarouselStrings.page = "page".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.page]
     
-    @scala.inline
-    def remainder: typings.nukaCarousel.nukaCarouselStrings.remainder = "remainder".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.remainder]
+    inline def remainder: typings.nukaCarousel.nukaCarouselStrings.remainder = "remainder".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.remainder]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -838,20 +700,15 @@ object mod {
   trait CarouselSlideActions extends StObject
   object CarouselSlideActions {
     
-    @scala.inline
-    def firstSlide: typings.nukaCarousel.nukaCarouselStrings.firstSlide = "firstSlide".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.firstSlide]
+    inline def firstSlide: typings.nukaCarousel.nukaCarouselStrings.firstSlide = "firstSlide".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.firstSlide]
     
-    @scala.inline
-    def lastSlide: typings.nukaCarousel.nukaCarouselStrings.lastSlide = "lastSlide".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.lastSlide]
+    inline def lastSlide: typings.nukaCarousel.nukaCarouselStrings.lastSlide = "lastSlide".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.lastSlide]
     
-    @scala.inline
-    def nextSlide: typings.nukaCarousel.nukaCarouselStrings.nextSlide = "nextSlide".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.nextSlide]
+    inline def nextSlide: typings.nukaCarousel.nukaCarouselStrings.nextSlide = "nextSlide".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.nextSlide]
     
-    @scala.inline
-    def pause: typings.nukaCarousel.nukaCarouselStrings.pause = "pause".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.pause]
+    inline def pause: typings.nukaCarousel.nukaCarouselStrings.pause = "pause".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.pause]
     
-    @scala.inline
-    def previousSlide: typings.nukaCarousel.nukaCarouselStrings.previousSlide = "previousSlide".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.previousSlide]
+    inline def previousSlide: typings.nukaCarousel.nukaCarouselStrings.previousSlide = "previousSlide".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.previousSlide]
   }
   
   trait CarouselSlideRenderControlProps extends StObject {
@@ -919,8 +776,7 @@ object mod {
   }
   object CarouselSlideRenderControlProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cellAlign: CarouselCellAlignProp,
       cellSpacing: Double,
       currentSlide: Double,
@@ -938,44 +794,31 @@ object mod {
       __obj.asInstanceOf[CarouselSlideRenderControlProps]
     }
     
-    @scala.inline
-    implicit class CarouselSlideRenderControlPropsMutableBuilder[Self <: CarouselSlideRenderControlProps] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselSlideRenderControlProps](x: Self) {
       
-      @scala.inline
-      def setCellAlign(value: CarouselCellAlignProp): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
+      inline def setCellAlign(value: CarouselCellAlignProp): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellSpacing(value: Double): Self = StObject.set(x, "cellSpacing", value.asInstanceOf[js.Any])
+      inline def setCellSpacing(value: Double): Self = StObject.set(x, "cellSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentSlide(value: Double): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
+      inline def setCurrentSlide(value: Double): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameWidth(value: Double): Self = StObject.set(x, "frameWidth", value.asInstanceOf[js.Any])
+      inline def setFrameWidth(value: Double): Self = StObject.set(x, "frameWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoToSlide(value: Double => Unit): Self = StObject.set(x, "goToSlide", js.Any.fromFunction1(value))
+      inline def setGoToSlide(value: Double => Unit): Self = StObject.set(x, "goToSlide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNextSlide(value: () => Unit): Self = StObject.set(x, "nextSlide", js.Any.fromFunction0(value))
+      inline def setNextSlide(value: () => Unit): Self = StObject.set(x, "nextSlide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreviousSlide(value: () => Unit): Self = StObject.set(x, "previousSlide", js.Any.fromFunction0(value))
+      inline def setPreviousSlide(value: () => Unit): Self = StObject.set(x, "previousSlide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSlideCount(value: Double): Self = StObject.set(x, "slideCount", value.asInstanceOf[js.Any])
+      inline def setSlideCount(value: Double): Self = StObject.set(x, "slideCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideWidth(value: Double): Self = StObject.set(x, "slideWidth", value.asInstanceOf[js.Any])
+      inline def setSlideWidth(value: Double): Self = StObject.set(x, "slideWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidesToScroll(value: CarouselSlidesToScrollProp): Self = StObject.set(x, "slidesToScroll", value.asInstanceOf[js.Any])
+      inline def setSlidesToScroll(value: CarouselSlidesToScrollProp): Self = StObject.set(x, "slidesToScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidesToShow(value: Double): Self = StObject.set(x, "slidesToShow", value.asInstanceOf[js.Any])
+      inline def setSlidesToShow(value: Double): Self = StObject.set(x, "slidesToShow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
+      inline def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1043,8 +886,7 @@ object mod {
   }
   object CarouselState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentSlide: Double,
       dragging: Boolean,
       easing: String,
@@ -1063,47 +905,33 @@ object mod {
       __obj.asInstanceOf[CarouselState]
     }
     
-    @scala.inline
-    implicit class CarouselStateMutableBuilder[Self <: CarouselState] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselState](x: Self) {
       
-      @scala.inline
-      def setCurrentSlide(value: Double): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
+      inline def setCurrentSlide(value: Double): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
+      inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameWidth(value: Double): Self = StObject.set(x, "frameWidth", value.asInstanceOf[js.Any])
+      inline def setFrameWidth(value: Double): Self = StObject.set(x, "frameWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWrappingAround(value: Boolean): Self = StObject.set(x, "isWrappingAround", value.asInstanceOf[js.Any])
+      inline def setIsWrappingAround(value: Boolean): Self = StObject.set(x, "isWrappingAround", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseOnHover(value: Boolean): Self = StObject.set(x, "pauseOnHover", value.asInstanceOf[js.Any])
+      inline def setPauseOnHover(value: Boolean): Self = StObject.set(x, "pauseOnHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetWrapAroundPosition(value: Boolean): Self = StObject.set(x, "resetWrapAroundPosition", value.asInstanceOf[js.Any])
+      inline def setResetWrapAroundPosition(value: Boolean): Self = StObject.set(x, "resetWrapAroundPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideCount(value: Double): Self = StObject.set(x, "slideCount", value.asInstanceOf[js.Any])
+      inline def setSlideCount(value: Double): Self = StObject.set(x, "slideCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideWidth(value: CarouselSlideWidthProp): Self = StObject.set(x, "slideWidth", value.asInstanceOf[js.Any])
+      inline def setSlideWidth(value: CarouselSlideWidthProp): Self = StObject.set(x, "slideWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidesToScroll(value: CarouselSlidesToScrollProp): Self = StObject.set(x, "slidesToScroll", value.asInstanceOf[js.Any])
+      inline def setSlidesToScroll(value: CarouselSlidesToScrollProp): Self = StObject.set(x, "slidesToScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapToIndex(value: Boolean): Self = StObject.set(x, "wrapToIndex", value.asInstanceOf[js.Any])
+      inline def setWrapToIndex(value: Boolean): Self = StObject.set(x, "wrapToIndex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1115,14 +943,11 @@ object mod {
   trait CarouselTransitionModeProp extends StObject
   object CarouselTransitionModeProp {
     
-    @scala.inline
-    def fade: typings.nukaCarousel.nukaCarouselStrings.fade = "fade".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.fade]
+    inline def fade: typings.nukaCarousel.nukaCarouselStrings.fade = "fade".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.fade]
     
-    @scala.inline
-    def scroll: typings.nukaCarousel.nukaCarouselStrings.scroll = "scroll".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.scroll]
+    inline def scroll: typings.nukaCarousel.nukaCarouselStrings.scroll = "scroll".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.scroll]
     
-    @scala.inline
-    def scroll3d: typings.nukaCarousel.nukaCarouselStrings.scroll3d = "scroll3d".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.scroll3d]
+    inline def scroll3d: typings.nukaCarousel.nukaCarouselStrings.scroll3d = "scroll3d".asInstanceOf[typings.nukaCarousel.nukaCarouselStrings.scroll3d]
   }
   
   type NextButtonProps = CarouselSlideRenderControlProps

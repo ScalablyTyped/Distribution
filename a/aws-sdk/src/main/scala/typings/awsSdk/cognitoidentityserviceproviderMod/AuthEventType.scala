@@ -48,64 +48,45 @@ trait AuthEventType extends StObject {
 }
 object AuthEventType {
   
-  @scala.inline
-  def apply(): AuthEventType = {
+  inline def apply(): AuthEventType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthEventType]
   }
   
-  @scala.inline
-  implicit class AuthEventTypeMutableBuilder[Self <: AuthEventType] (val x: Self) extends AnyVal {
+  extension [Self <: AuthEventType](x: Self) {
     
-    @scala.inline
-    def setChallengeResponses(value: ChallengeResponseListType): Self = StObject.set(x, "ChallengeResponses", value.asInstanceOf[js.Any])
+    inline def setChallengeResponses(value: ChallengeResponseListType): Self = StObject.set(x, "ChallengeResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChallengeResponsesUndefined: Self = StObject.set(x, "ChallengeResponses", js.undefined)
+    inline def setChallengeResponsesUndefined: Self = StObject.set(x, "ChallengeResponses", js.undefined)
     
-    @scala.inline
-    def setChallengeResponsesVarargs(value: ChallengeResponseType*): Self = StObject.set(x, "ChallengeResponses", js.Array(value :_*))
+    inline def setChallengeResponsesVarargs(value: ChallengeResponseType*): Self = StObject.set(x, "ChallengeResponses", js.Array(value :_*))
     
-    @scala.inline
-    def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setEventContextData(value: EventContextDataType): Self = StObject.set(x, "EventContextData", value.asInstanceOf[js.Any])
+    inline def setEventContextData(value: EventContextDataType): Self = StObject.set(x, "EventContextData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventContextDataUndefined: Self = StObject.set(x, "EventContextData", js.undefined)
+    inline def setEventContextDataUndefined: Self = StObject.set(x, "EventContextData", js.undefined)
     
-    @scala.inline
-    def setEventFeedback(value: EventFeedbackType): Self = StObject.set(x, "EventFeedback", value.asInstanceOf[js.Any])
+    inline def setEventFeedback(value: EventFeedbackType): Self = StObject.set(x, "EventFeedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventFeedbackUndefined: Self = StObject.set(x, "EventFeedback", js.undefined)
+    inline def setEventFeedbackUndefined: Self = StObject.set(x, "EventFeedback", js.undefined)
     
-    @scala.inline
-    def setEventId(value: StringType): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: StringType): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdUndefined: Self = StObject.set(x, "EventId", js.undefined)
+    inline def setEventIdUndefined: Self = StObject.set(x, "EventId", js.undefined)
     
-    @scala.inline
-    def setEventResponse(value: EventResponseType): Self = StObject.set(x, "EventResponse", value.asInstanceOf[js.Any])
+    inline def setEventResponse(value: EventResponseType): Self = StObject.set(x, "EventResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventResponseUndefined: Self = StObject.set(x, "EventResponse", js.undefined)
+    inline def setEventResponseUndefined: Self = StObject.set(x, "EventResponse", js.undefined)
     
-    @scala.inline
-    def setEventRisk(value: EventRiskType): Self = StObject.set(x, "EventRisk", value.asInstanceOf[js.Any])
+    inline def setEventRisk(value: EventRiskType): Self = StObject.set(x, "EventRisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventRiskUndefined: Self = StObject.set(x, "EventRisk", js.undefined)
+    inline def setEventRiskUndefined: Self = StObject.set(x, "EventRisk", js.undefined)
     
-    @scala.inline
-    def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
   }
 }

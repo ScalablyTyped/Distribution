@@ -53,8 +53,7 @@ trait ASPxClientUploadControlUploadingProgressChangedEventArgs
 }
 object ASPxClientUploadControlUploadingProgressChangedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentFileContentLength: Double,
     currentFileName: String,
     currentFileProgress: Double,
@@ -68,31 +67,22 @@ object ASPxClientUploadControlUploadingProgressChangedEventArgs {
     __obj.asInstanceOf[ASPxClientUploadControlUploadingProgressChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientUploadControlUploadingProgressChangedEventArgsMutableBuilder[Self <: ASPxClientUploadControlUploadingProgressChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientUploadControlUploadingProgressChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCurrentFileContentLength(value: Double): Self = StObject.set(x, "currentFileContentLength", value.asInstanceOf[js.Any])
+    inline def setCurrentFileContentLength(value: Double): Self = StObject.set(x, "currentFileContentLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentFileName(value: String): Self = StObject.set(x, "currentFileName", value.asInstanceOf[js.Any])
+    inline def setCurrentFileName(value: String): Self = StObject.set(x, "currentFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentFileProgress(value: Double): Self = StObject.set(x, "currentFileProgress", value.asInstanceOf[js.Any])
+    inline def setCurrentFileProgress(value: Double): Self = StObject.set(x, "currentFileProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentFileUploadedContentLength(value: Double): Self = StObject.set(x, "currentFileUploadedContentLength", value.asInstanceOf[js.Any])
+    inline def setCurrentFileUploadedContentLength(value: Double): Self = StObject.set(x, "currentFileUploadedContentLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileCount(value: Double): Self = StObject.set(x, "fileCount", value.asInstanceOf[js.Any])
+    inline def setFileCount(value: Double): Self = StObject.set(x, "fileCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalContentLength(value: Double): Self = StObject.set(x, "totalContentLength", value.asInstanceOf[js.Any])
+    inline def setTotalContentLength(value: Double): Self = StObject.set(x, "totalContentLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadedContentLength(value: Double): Self = StObject.set(x, "uploadedContentLength", value.asInstanceOf[js.Any])
+    inline def setUploadedContentLength(value: Double): Self = StObject.set(x, "uploadedContentLength", value.asInstanceOf[js.Any])
   }
 }

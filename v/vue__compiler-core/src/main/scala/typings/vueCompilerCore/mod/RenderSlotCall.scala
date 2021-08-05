@@ -24,8 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object RenderSlotCall {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arguments: (js.Tuple2[String, String | ExpressionNode]) | (js.Tuple3[String, String | ExpressionNode, PropsExpression]) | (js.Tuple4[
       String, 
       String | ExpressionNode, 
@@ -40,11 +39,9 @@ object RenderSlotCall {
     __obj.asInstanceOf[RenderSlotCall]
   }
   
-  @scala.inline
-  implicit class RenderSlotCallMutableBuilder[Self <: RenderSlotCall] (val x: Self) extends AnyVal {
+  extension [Self <: RenderSlotCall](x: Self) {
     
-    @scala.inline
-    def setArguments(
+    inline def setArguments(
       value: (js.Tuple2[String, String | ExpressionNode]) | (js.Tuple3[String, String | ExpressionNode, PropsExpression]) | (js.Tuple4[
           String, 
           String | ExpressionNode, 
@@ -53,7 +50,6 @@ object RenderSlotCall {
         ])
     ): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallee(value: js.Symbol): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
+    inline def setCallee(value: js.Symbol): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
   }
 }

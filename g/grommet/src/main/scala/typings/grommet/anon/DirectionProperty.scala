@@ -14,19 +14,15 @@ trait DirectionProperty extends StObject {
 }
 object DirectionProperty {
   
-  @scala.inline
-  def apply(direction: asc | desc, property: String): DirectionProperty = {
+  inline def apply(direction: asc | desc, property: String): DirectionProperty = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionProperty]
   }
   
-  @scala.inline
-  implicit class DirectionPropertyMutableBuilder[Self <: DirectionProperty] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionProperty](x: Self) {
     
-    @scala.inline
-    def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }
 }

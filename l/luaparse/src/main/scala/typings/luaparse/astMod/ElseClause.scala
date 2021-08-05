@@ -13,20 +13,16 @@ trait ElseClause
 }
 object ElseClause {
   
-  @scala.inline
-  def apply(body: js.Array[Statement]): ElseClause = {
+  inline def apply(body: js.Array[Statement]): ElseClause = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ElseClause")
     __obj.asInstanceOf[ElseClause]
   }
   
-  @scala.inline
-  implicit class ElseClauseMutableBuilder[Self <: ElseClause] (val x: Self) extends AnyVal {
+  extension [Self <: ElseClause](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
   }
 }

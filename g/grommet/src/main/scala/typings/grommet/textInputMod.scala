@@ -103,125 +103,86 @@ object textInputMod {
   }
   object TextInputProps {
     
-    @scala.inline
-    def apply(): TextInputProps = {
+    inline def apply(): TextInputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextInputProps]
     }
     
-    @scala.inline
-    implicit class TextInputPropsMutableBuilder[Self <: TextInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextInputProps](x: Self) {
       
-      @scala.inline
-      def setDropAlign(value: Bottom): Self = StObject.set(x, "dropAlign", value.asInstanceOf[js.Any])
+      inline def setDropAlign(value: Bottom): Self = StObject.set(x, "dropAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropAlignUndefined: Self = StObject.set(x, "dropAlign", js.undefined)
+      inline def setDropAlignUndefined: Self = StObject.set(x, "dropAlign", js.undefined)
       
-      @scala.inline
-      def setDropHeight(value: xsmall | small | medium | large | xlarge | String): Self = StObject.set(x, "dropHeight", value.asInstanceOf[js.Any])
+      inline def setDropHeight(value: xsmall | small | medium | large | xlarge | String): Self = StObject.set(x, "dropHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropHeightUndefined: Self = StObject.set(x, "dropHeight", js.undefined)
+      inline def setDropHeightUndefined: Self = StObject.set(x, "dropHeight", js.undefined)
       
-      @scala.inline
-      def setDropProps(value: DropProps): Self = StObject.set(x, "dropProps", value.asInstanceOf[js.Any])
+      inline def setDropProps(value: DropProps): Self = StObject.set(x, "dropProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropPropsUndefined: Self = StObject.set(x, "dropProps", js.undefined)
+      inline def setDropPropsUndefined: Self = StObject.set(x, "dropProps", js.undefined)
       
-      @scala.inline
-      def setDropTarget(value: js.Object): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
+      inline def setDropTarget(value: js.Object): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
+      inline def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
       
-      @scala.inline
-      def setFocusIndicator(value: Boolean): Self = StObject.set(x, "focusIndicator", value.asInstanceOf[js.Any])
+      inline def setFocusIndicator(value: Boolean): Self = StObject.set(x, "focusIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusIndicatorUndefined: Self = StObject.set(x, "focusIndicator", js.undefined)
+      inline def setFocusIndicatorUndefined: Self = StObject.set(x, "focusIndicator", js.undefined)
       
-      @scala.inline
-      def setIcon(value: Element): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Element): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMessages(value: EnterSelect): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: EnterSelect): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: /* x */ Suggestion => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* x */ Suggestion => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setOnSuggestionsClose(value: () => Unit): Self = StObject.set(x, "onSuggestionsClose", js.Any.fromFunction0(value))
+      inline def setOnSuggestionsClose(value: () => Unit): Self = StObject.set(x, "onSuggestionsClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSuggestionsCloseUndefined: Self = StObject.set(x, "onSuggestionsClose", js.undefined)
+      inline def setOnSuggestionsCloseUndefined: Self = StObject.set(x, "onSuggestionsClose", js.undefined)
       
-      @scala.inline
-      def setOnSuggestionsOpen(value: () => Unit): Self = StObject.set(x, "onSuggestionsOpen", js.Any.fromFunction0(value))
+      inline def setOnSuggestionsOpen(value: () => Unit): Self = StObject.set(x, "onSuggestionsOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSuggestionsOpenUndefined: Self = StObject.set(x, "onSuggestionsOpen", js.undefined)
+      inline def setOnSuggestionsOpenUndefined: Self = StObject.set(x, "onSuggestionsOpen", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: PlaceHolderType): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: PlaceHolderType): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setPlain(value: Boolean | full): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
+      inline def setPlain(value: Boolean | full): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
+      inline def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
       
-      @scala.inline
-      def setSize(value: small | medium | large | xlarge | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: small | medium | large | xlarge | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSuggestions(value: js.Array[LabelValue | String]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+      inline def setSuggestions(value: js.Array[LabelValue | String]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
+      inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
       
-      @scala.inline
-      def setSuggestionsVarargs(value: (LabelValue | String)*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+      inline def setSuggestionsVarargs(value: (LabelValue | String)*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

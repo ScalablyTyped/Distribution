@@ -31,8 +31,7 @@ trait FloatingObjectRelativePositionSettings extends StObject {
 }
 object FloatingObjectRelativePositionSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     horizontalPositionType: FloatingObjectHorizontalPositionType,
     horizontalRelativePosition: Double,
     verticalPositionType: FloatingObjectVerticalPositionType,
@@ -42,19 +41,14 @@ object FloatingObjectRelativePositionSettings {
     __obj.asInstanceOf[FloatingObjectRelativePositionSettings]
   }
   
-  @scala.inline
-  implicit class FloatingObjectRelativePositionSettingsMutableBuilder[Self <: FloatingObjectRelativePositionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FloatingObjectRelativePositionSettings](x: Self) {
     
-    @scala.inline
-    def setHorizontalPositionType(value: FloatingObjectHorizontalPositionType): Self = StObject.set(x, "horizontalPositionType", value.asInstanceOf[js.Any])
+    inline def setHorizontalPositionType(value: FloatingObjectHorizontalPositionType): Self = StObject.set(x, "horizontalPositionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalRelativePosition(value: Double): Self = StObject.set(x, "horizontalRelativePosition", value.asInstanceOf[js.Any])
+    inline def setHorizontalRelativePosition(value: Double): Self = StObject.set(x, "horizontalRelativePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalPositionType(value: FloatingObjectVerticalPositionType): Self = StObject.set(x, "verticalPositionType", value.asInstanceOf[js.Any])
+    inline def setVerticalPositionType(value: FloatingObjectVerticalPositionType): Self = StObject.set(x, "verticalPositionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalRelativePosition(value: Double): Self = StObject.set(x, "verticalRelativePosition", value.asInstanceOf[js.Any])
+    inline def setVerticalRelativePosition(value: Double): Self = StObject.set(x, "verticalRelativePosition", value.asInstanceOf[js.Any])
   }
 }

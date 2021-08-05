@@ -6,22 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EventException extends StObject {
   
-  @JSName("MSHTML.EventException_typekey")
+  /* private */ @JSName("MSHTML.EventException_typekey")
   var MSHTMLDotEventException_typekey: EventException
 }
 object EventException {
   
-  @scala.inline
-  def apply(MSHTMLDotEventException_typekey: EventException): EventException = {
+  inline def apply(MSHTMLDotEventException_typekey: EventException): EventException = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("MSHTML.EventException_typekey")(MSHTMLDotEventException_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventException]
   }
   
-  @scala.inline
-  implicit class EventExceptionMutableBuilder[Self <: EventException] (val x: Self) extends AnyVal {
+  extension [Self <: EventException](x: Self) {
     
-    @scala.inline
-    def setMSHTMLDotEventException_typekey(value: EventException): Self = StObject.set(x, "MSHTML.EventException_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotEventException_typekey(value: EventException): Self = StObject.set(x, "MSHTML.EventException_typekey", value.asInstanceOf[js.Any])
   }
 }

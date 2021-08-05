@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlSpeakDirection extends StObject
 object XlSpeakDirection {
   
-  @scala.inline
-  def xlSpeakByColumns: `1` = 1.asInstanceOf[`1`]
+  inline def xlSpeakByColumns: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlSpeakByRows: `0` = 0.asInstanceOf[`0`]
+  inline def xlSpeakByRows: `0` = 0.asInstanceOf[`0`]
 }

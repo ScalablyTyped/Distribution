@@ -23,14 +23,12 @@ object findProvidersMod {
     @js.native
     def numProviders: AliasDefaultDescribe = js.native
     
-    @scala.inline
-    def numProviders_=(x: AliasDefaultDescribe): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("num-providers")(x.asInstanceOf[js.Any])
+    inline def numProviders_=(x: AliasDefaultDescribe): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("num-providers")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/dht/find-providers", "builder.timeout")
     @js.native
     def timeout: CoerceType = js.native
-    @scala.inline
-    def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ipfs-cli/dist/src/commands/dht/find-providers", "command")
@@ -41,6 +39,5 @@ object findProvidersMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintKeyNumProvidersTimeout: NumProviders): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintKeyNumProvidersTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintKeyNumProvidersTimeout: NumProviders): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintKeyNumProvidersTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

@@ -18,22 +18,17 @@ trait RuleGroupRuleGroup extends StObject {
 }
 object RuleGroupRuleGroup {
   
-  @scala.inline
-  def apply(rulesSource: RuleGroupRuleGroupRulesSource): RuleGroupRuleGroup = {
+  inline def apply(rulesSource: RuleGroupRuleGroupRulesSource): RuleGroupRuleGroup = {
     val __obj = js.Dynamic.literal(rulesSource = rulesSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleGroup]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupMutableBuilder[Self <: RuleGroupRuleGroup] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroup](x: Self) {
     
-    @scala.inline
-    def setRuleVariables(value: RuleGroupRuleGroupRuleVariables): Self = StObject.set(x, "ruleVariables", value.asInstanceOf[js.Any])
+    inline def setRuleVariables(value: RuleGroupRuleGroupRuleVariables): Self = StObject.set(x, "ruleVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleVariablesUndefined: Self = StObject.set(x, "ruleVariables", js.undefined)
+    inline def setRuleVariablesUndefined: Self = StObject.set(x, "ruleVariables", js.undefined)
     
-    @scala.inline
-    def setRulesSource(value: RuleGroupRuleGroupRulesSource): Self = StObject.set(x, "rulesSource", value.asInstanceOf[js.Any])
+    inline def setRulesSource(value: RuleGroupRuleGroupRulesSource): Self = StObject.set(x, "rulesSource", value.asInstanceOf[js.Any])
   }
 }

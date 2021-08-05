@@ -14,19 +14,15 @@ trait ResolveSnapshotHeadRequest extends StObject {
 }
 object ResolveSnapshotHeadRequest {
   
-  @scala.inline
-  def apply(): ResolveSnapshotHeadRequest = {
+  inline def apply(): ResolveSnapshotHeadRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolveSnapshotHeadRequest]
   }
   
-  @scala.inline
-  implicit class ResolveSnapshotHeadRequestMutableBuilder[Self <: ResolveSnapshotHeadRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveSnapshotHeadRequest](x: Self) {
     
-    @scala.inline
-    def setResolutionPolicy(value: String): Self = StObject.set(x, "resolutionPolicy", value.asInstanceOf[js.Any])
+    inline def setResolutionPolicy(value: String): Self = StObject.set(x, "resolutionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionPolicyUndefined: Self = StObject.set(x, "resolutionPolicy", js.undefined)
+    inline def setResolutionPolicyUndefined: Self = StObject.set(x, "resolutionPolicy", js.undefined)
   }
 }

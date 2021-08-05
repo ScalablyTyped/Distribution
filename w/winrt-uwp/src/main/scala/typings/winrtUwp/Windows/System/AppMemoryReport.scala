@@ -21,8 +21,7 @@ trait AppMemoryReport extends StObject {
 }
 object AppMemoryReport {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     peakPrivateCommitUsage: Double,
     privateCommitUsage: Double,
     totalCommitLimit: Double,
@@ -32,19 +31,14 @@ object AppMemoryReport {
     __obj.asInstanceOf[AppMemoryReport]
   }
   
-  @scala.inline
-  implicit class AppMemoryReportMutableBuilder[Self <: AppMemoryReport] (val x: Self) extends AnyVal {
+  extension [Self <: AppMemoryReport](x: Self) {
     
-    @scala.inline
-    def setPeakPrivateCommitUsage(value: Double): Self = StObject.set(x, "peakPrivateCommitUsage", value.asInstanceOf[js.Any])
+    inline def setPeakPrivateCommitUsage(value: Double): Self = StObject.set(x, "peakPrivateCommitUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateCommitUsage(value: Double): Self = StObject.set(x, "privateCommitUsage", value.asInstanceOf[js.Any])
+    inline def setPrivateCommitUsage(value: Double): Self = StObject.set(x, "privateCommitUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCommitLimit(value: Double): Self = StObject.set(x, "totalCommitLimit", value.asInstanceOf[js.Any])
+    inline def setTotalCommitLimit(value: Double): Self = StObject.set(x, "totalCommitLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCommitUsage(value: Double): Self = StObject.set(x, "totalCommitUsage", value.asInstanceOf[js.Any])
+    inline def setTotalCommitUsage(value: Double): Self = StObject.set(x, "totalCommitUsage", value.asInstanceOf[js.Any])
   }
 }

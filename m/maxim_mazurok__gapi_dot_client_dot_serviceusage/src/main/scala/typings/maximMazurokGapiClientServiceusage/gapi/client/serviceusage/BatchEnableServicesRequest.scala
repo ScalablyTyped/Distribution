@@ -15,22 +15,17 @@ trait BatchEnableServicesRequest extends StObject {
 }
 object BatchEnableServicesRequest {
   
-  @scala.inline
-  def apply(): BatchEnableServicesRequest = {
+  inline def apply(): BatchEnableServicesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchEnableServicesRequest]
   }
   
-  @scala.inline
-  implicit class BatchEnableServicesRequestMutableBuilder[Self <: BatchEnableServicesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchEnableServicesRequest](x: Self) {
     
-    @scala.inline
-    def setServiceIds(value: js.Array[String]): Self = StObject.set(x, "serviceIds", value.asInstanceOf[js.Any])
+    inline def setServiceIds(value: js.Array[String]): Self = StObject.set(x, "serviceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceIdsUndefined: Self = StObject.set(x, "serviceIds", js.undefined)
+    inline def setServiceIdsUndefined: Self = StObject.set(x, "serviceIds", js.undefined)
     
-    @scala.inline
-    def setServiceIdsVarargs(value: String*): Self = StObject.set(x, "serviceIds", js.Array(value :_*))
+    inline def setServiceIdsVarargs(value: String*): Self = StObject.set(x, "serviceIds", js.Array(value :_*))
   }
 }

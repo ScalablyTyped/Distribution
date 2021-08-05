@@ -13,19 +13,15 @@ trait ContentRangeHeaderValue extends StObject {
 }
 object ContentRangeHeaderValue {
   
-  @scala.inline
-  def apply(contentRangeHeaderValue: HttpContentRangeHeaderValue, returnValue: Boolean): ContentRangeHeaderValue = {
+  inline def apply(contentRangeHeaderValue: HttpContentRangeHeaderValue, returnValue: Boolean): ContentRangeHeaderValue = {
     val __obj = js.Dynamic.literal(contentRangeHeaderValue = contentRangeHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentRangeHeaderValue]
   }
   
-  @scala.inline
-  implicit class ContentRangeHeaderValueMutableBuilder[Self <: ContentRangeHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: ContentRangeHeaderValue](x: Self) {
     
-    @scala.inline
-    def setContentRangeHeaderValue(value: HttpContentRangeHeaderValue): Self = StObject.set(x, "contentRangeHeaderValue", value.asInstanceOf[js.Any])
+    inline def setContentRangeHeaderValue(value: HttpContentRangeHeaderValue): Self = StObject.set(x, "contentRangeHeaderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

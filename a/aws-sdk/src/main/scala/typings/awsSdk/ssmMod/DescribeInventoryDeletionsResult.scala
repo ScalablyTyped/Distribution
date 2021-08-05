@@ -18,28 +18,21 @@ trait DescribeInventoryDeletionsResult extends StObject {
 }
 object DescribeInventoryDeletionsResult {
   
-  @scala.inline
-  def apply(): DescribeInventoryDeletionsResult = {
+  inline def apply(): DescribeInventoryDeletionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeInventoryDeletionsResult]
   }
   
-  @scala.inline
-  implicit class DescribeInventoryDeletionsResultMutableBuilder[Self <: DescribeInventoryDeletionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInventoryDeletionsResult](x: Self) {
     
-    @scala.inline
-    def setInventoryDeletions(value: InventoryDeletionsList): Self = StObject.set(x, "InventoryDeletions", value.asInstanceOf[js.Any])
+    inline def setInventoryDeletions(value: InventoryDeletionsList): Self = StObject.set(x, "InventoryDeletions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventoryDeletionsUndefined: Self = StObject.set(x, "InventoryDeletions", js.undefined)
+    inline def setInventoryDeletionsUndefined: Self = StObject.set(x, "InventoryDeletions", js.undefined)
     
-    @scala.inline
-    def setInventoryDeletionsVarargs(value: InventoryDeletionStatusItem*): Self = StObject.set(x, "InventoryDeletions", js.Array(value :_*))
+    inline def setInventoryDeletionsVarargs(value: InventoryDeletionStatusItem*): Self = StObject.set(x, "InventoryDeletions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

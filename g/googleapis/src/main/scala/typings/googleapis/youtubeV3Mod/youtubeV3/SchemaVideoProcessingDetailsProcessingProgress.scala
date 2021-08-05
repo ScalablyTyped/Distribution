@@ -35,31 +35,23 @@ trait SchemaVideoProcessingDetailsProcessingProgress extends StObject {
 }
 object SchemaVideoProcessingDetailsProcessingProgress {
   
-  @scala.inline
-  def apply(): SchemaVideoProcessingDetailsProcessingProgress = {
+  inline def apply(): SchemaVideoProcessingDetailsProcessingProgress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoProcessingDetailsProcessingProgress]
   }
   
-  @scala.inline
-  implicit class SchemaVideoProcessingDetailsProcessingProgressMutableBuilder[Self <: SchemaVideoProcessingDetailsProcessingProgress] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoProcessingDetailsProcessingProgress](x: Self) {
     
-    @scala.inline
-    def setPartsProcessed(value: String): Self = StObject.set(x, "partsProcessed", value.asInstanceOf[js.Any])
+    inline def setPartsProcessed(value: String): Self = StObject.set(x, "partsProcessed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartsProcessedUndefined: Self = StObject.set(x, "partsProcessed", js.undefined)
+    inline def setPartsProcessedUndefined: Self = StObject.set(x, "partsProcessed", js.undefined)
     
-    @scala.inline
-    def setPartsTotal(value: String): Self = StObject.set(x, "partsTotal", value.asInstanceOf[js.Any])
+    inline def setPartsTotal(value: String): Self = StObject.set(x, "partsTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartsTotalUndefined: Self = StObject.set(x, "partsTotal", js.undefined)
+    inline def setPartsTotalUndefined: Self = StObject.set(x, "partsTotal", js.undefined)
     
-    @scala.inline
-    def setTimeLeftMs(value: String): Self = StObject.set(x, "timeLeftMs", value.asInstanceOf[js.Any])
+    inline def setTimeLeftMs(value: String): Self = StObject.set(x, "timeLeftMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeLeftMsUndefined: Self = StObject.set(x, "timeLeftMs", js.undefined)
+    inline def setTimeLeftMsUndefined: Self = StObject.set(x, "timeLeftMs", js.undefined)
   }
 }

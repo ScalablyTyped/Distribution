@@ -145,21 +145,16 @@ object documentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Document]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Document]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DocumentState): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Document]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DocumentState, opts: CustomResourceOptions): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Document]
+    inline def get(name: String, id: Input[ID]): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Document]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Document]
+    inline def get(name: String, id: Input[ID], state: DocumentState): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Document]
+    inline def get(name: String, id: Input[ID], state: DocumentState, opts: CustomResourceOptions): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Document]
     
     /**
       * Returns true if the given object is an instance of Document.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/document.Document */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/document.Document */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/document.Document */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/document.Document */ Boolean]
   }
   
   trait DocumentArgs extends StObject {
@@ -206,59 +201,42 @@ object documentMod {
   }
   object DocumentArgs {
     
-    @scala.inline
-    def apply(content: Input[String], documentType: Input[String]): DocumentArgs = {
+    inline def apply(content: Input[String], documentType: Input[String]): DocumentArgs = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], documentType = documentType.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocumentArgs]
     }
     
-    @scala.inline
-    implicit class DocumentArgsMutableBuilder[Self <: DocumentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentArgs](x: Self) {
       
-      @scala.inline
-      def setAttachmentsSources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.DocumentAttachmentsSource]]]): Self = StObject.set(x, "attachmentsSources", value.asInstanceOf[js.Any])
+      inline def setAttachmentsSources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.DocumentAttachmentsSource]]]): Self = StObject.set(x, "attachmentsSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentsSourcesUndefined: Self = StObject.set(x, "attachmentsSources", js.undefined)
+      inline def setAttachmentsSourcesUndefined: Self = StObject.set(x, "attachmentsSources", js.undefined)
       
-      @scala.inline
-      def setAttachmentsSourcesVarargs(value: Input[typings.pulumiAws.inputMod.ssm.DocumentAttachmentsSource]*): Self = StObject.set(x, "attachmentsSources", js.Array(value :_*))
+      inline def setAttachmentsSourcesVarargs(value: Input[typings.pulumiAws.inputMod.ssm.DocumentAttachmentsSource]*): Self = StObject.set(x, "attachmentsSources", js.Array(value :_*))
       
-      @scala.inline
-      def setContent(value: Input[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Input[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentFormat(value: Input[String]): Self = StObject.set(x, "documentFormat", value.asInstanceOf[js.Any])
+      inline def setDocumentFormat(value: Input[String]): Self = StObject.set(x, "documentFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentFormatUndefined: Self = StObject.set(x, "documentFormat", js.undefined)
+      inline def setDocumentFormatUndefined: Self = StObject.set(x, "documentFormat", js.undefined)
       
-      @scala.inline
-      def setDocumentType(value: Input[String]): Self = StObject.set(x, "documentType", value.asInstanceOf[js.Any])
+      inline def setDocumentType(value: Input[String]): Self = StObject.set(x, "documentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPermissions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      inline def setPermissions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+      inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTargetType(value: Input[String]): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
+      inline def setTargetType(value: Input[String]): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
+      inline def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
     }
   }
   
@@ -368,149 +346,102 @@ object documentMod {
   }
   object DocumentState {
     
-    @scala.inline
-    def apply(): DocumentState = {
+    inline def apply(): DocumentState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DocumentState]
     }
     
-    @scala.inline
-    implicit class DocumentStateMutableBuilder[Self <: DocumentState] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAttachmentsSources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.DocumentAttachmentsSource]]]): Self = StObject.set(x, "attachmentsSources", value.asInstanceOf[js.Any])
+      inline def setAttachmentsSources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.DocumentAttachmentsSource]]]): Self = StObject.set(x, "attachmentsSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentsSourcesUndefined: Self = StObject.set(x, "attachmentsSources", js.undefined)
+      inline def setAttachmentsSourcesUndefined: Self = StObject.set(x, "attachmentsSources", js.undefined)
       
-      @scala.inline
-      def setAttachmentsSourcesVarargs(value: Input[typings.pulumiAws.inputMod.ssm.DocumentAttachmentsSource]*): Self = StObject.set(x, "attachmentsSources", js.Array(value :_*))
+      inline def setAttachmentsSourcesVarargs(value: Input[typings.pulumiAws.inputMod.ssm.DocumentAttachmentsSource]*): Self = StObject.set(x, "attachmentsSources", js.Array(value :_*))
       
-      @scala.inline
-      def setContent(value: Input[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Input[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setCreatedDate(value: Input[String]): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+      inline def setCreatedDate(value: Input[String]): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
+      inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
       
-      @scala.inline
-      def setDefaultVersion(value: Input[String]): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
+      inline def setDefaultVersion(value: Input[String]): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultVersionUndefined: Self = StObject.set(x, "defaultVersion", js.undefined)
+      inline def setDefaultVersionUndefined: Self = StObject.set(x, "defaultVersion", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDocumentFormat(value: Input[String]): Self = StObject.set(x, "documentFormat", value.asInstanceOf[js.Any])
+      inline def setDocumentFormat(value: Input[String]): Self = StObject.set(x, "documentFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentFormatUndefined: Self = StObject.set(x, "documentFormat", js.undefined)
+      inline def setDocumentFormatUndefined: Self = StObject.set(x, "documentFormat", js.undefined)
       
-      @scala.inline
-      def setDocumentType(value: Input[String]): Self = StObject.set(x, "documentType", value.asInstanceOf[js.Any])
+      inline def setDocumentType(value: Input[String]): Self = StObject.set(x, "documentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentTypeUndefined: Self = StObject.set(x, "documentType", js.undefined)
+      inline def setDocumentTypeUndefined: Self = StObject.set(x, "documentType", js.undefined)
       
-      @scala.inline
-      def setDocumentVersion(value: Input[String]): Self = StObject.set(x, "documentVersion", value.asInstanceOf[js.Any])
+      inline def setDocumentVersion(value: Input[String]): Self = StObject.set(x, "documentVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentVersionUndefined: Self = StObject.set(x, "documentVersion", js.undefined)
+      inline def setDocumentVersionUndefined: Self = StObject.set(x, "documentVersion", js.undefined)
       
-      @scala.inline
-      def setHash(value: Input[String]): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Input[String]): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashType(value: Input[String]): Self = StObject.set(x, "hashType", value.asInstanceOf[js.Any])
+      inline def setHashType(value: Input[String]): Self = StObject.set(x, "hashType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashTypeUndefined: Self = StObject.set(x, "hashType", js.undefined)
+      inline def setHashTypeUndefined: Self = StObject.set(x, "hashType", js.undefined)
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setLatestVersion(value: Input[String]): Self = StObject.set(x, "latestVersion", value.asInstanceOf[js.Any])
+      inline def setLatestVersion(value: Input[String]): Self = StObject.set(x, "latestVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestVersionUndefined: Self = StObject.set(x, "latestVersion", js.undefined)
+      inline def setLatestVersionUndefined: Self = StObject.set(x, "latestVersion", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOwner(value: Input[String]): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: Input[String]): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+      inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.DocumentParameter]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.DocumentParameter]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setParametersVarargs(value: Input[typings.pulumiAws.inputMod.ssm.DocumentParameter]*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: Input[typings.pulumiAws.inputMod.ssm.DocumentParameter]*): Self = StObject.set(x, "parameters", js.Array(value :_*))
       
-      @scala.inline
-      def setPermissions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      inline def setPermissions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+      inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
       
-      @scala.inline
-      def setPlatformTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "platformTypes", value.asInstanceOf[js.Any])
+      inline def setPlatformTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "platformTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformTypesUndefined: Self = StObject.set(x, "platformTypes", js.undefined)
+      inline def setPlatformTypesUndefined: Self = StObject.set(x, "platformTypes", js.undefined)
       
-      @scala.inline
-      def setPlatformTypesVarargs(value: Input[String]*): Self = StObject.set(x, "platformTypes", js.Array(value :_*))
+      inline def setPlatformTypesVarargs(value: Input[String]*): Self = StObject.set(x, "platformTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setSchemaVersion(value: Input[String]): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
+      inline def setSchemaVersion(value: Input[String]): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaVersionUndefined: Self = StObject.set(x, "schemaVersion", js.undefined)
+      inline def setSchemaVersionUndefined: Self = StObject.set(x, "schemaVersion", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTargetType(value: Input[String]): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
+      inline def setTargetType(value: Input[String]): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
+      inline def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
     }
   }
 }

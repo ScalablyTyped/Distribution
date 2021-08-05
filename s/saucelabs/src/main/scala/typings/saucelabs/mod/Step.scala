@@ -40,73 +40,51 @@ trait Step
 }
 object Step {
   
-  @scala.inline
-  def apply(): Step = {
+  inline def apply(): Step = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Step]
   }
   
-  @scala.inline
-  implicit class StepMutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
+  extension [Self <: Step](x: Self) {
     
-    @scala.inline
-    def setError(value: ScriptError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ScriptError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setHasReplayImage(value: Boolean): Self = StObject.set(x, "hasReplayImage", value.asInstanceOf[js.Any])
+    inline def setHasReplayImage(value: Boolean): Self = StObject.set(x, "hasReplayImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasReplayImageUndefined: Self = StObject.set(x, "hasReplayImage", js.undefined)
+    inline def setHasReplayImageUndefined: Self = StObject.set(x, "hasReplayImage", js.undefined)
     
-    @scala.inline
-    def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: PORTRAIT | LANDSCAPE): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: PORTRAIT | LANDSCAPE): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setRecordedImage(value: Id): Self = StObject.set(x, "recordedImage", value.asInstanceOf[js.Any])
+    inline def setRecordedImage(value: Id): Self = StObject.set(x, "recordedImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordedImageUndefined: Self = StObject.set(x, "recordedImage", js.undefined)
+    inline def setRecordedImageUndefined: Self = StObject.set(x, "recordedImage", js.undefined)
     
-    @scala.inline
-    def setResolvedPosition(value: Point): Self = StObject.set(x, "resolvedPosition", value.asInstanceOf[js.Any])
+    inline def setResolvedPosition(value: Point): Self = StObject.set(x, "resolvedPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedPositionUndefined: Self = StObject.set(x, "resolvedPosition", js.undefined)
+    inline def setResolvedPositionUndefined: Self = StObject.set(x, "resolvedPosition", js.undefined)
     
-    @scala.inline
-    def setStatus(value: UNKNOWN | SUCCESS | WARNING | FAILURE | SKIPPED | ABORTED | CANCELED): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: UNKNOWN | SUCCESS | WARNING | FAILURE | SKIPPED | ABORTED | CANCELED): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setWarning(value: ScriptWarning): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: ScriptWarning): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

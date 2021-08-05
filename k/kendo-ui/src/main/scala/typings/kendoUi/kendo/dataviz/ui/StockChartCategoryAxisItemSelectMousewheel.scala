@@ -12,25 +12,19 @@ trait StockChartCategoryAxisItemSelectMousewheel extends StObject {
 }
 object StockChartCategoryAxisItemSelectMousewheel {
   
-  @scala.inline
-  def apply(): StockChartCategoryAxisItemSelectMousewheel = {
+  inline def apply(): StockChartCategoryAxisItemSelectMousewheel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockChartCategoryAxisItemSelectMousewheel]
   }
   
-  @scala.inline
-  implicit class StockChartCategoryAxisItemSelectMousewheelMutableBuilder[Self <: StockChartCategoryAxisItemSelectMousewheel] (val x: Self) extends AnyVal {
+  extension [Self <: StockChartCategoryAxisItemSelectMousewheel](x: Self) {
     
-    @scala.inline
-    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
-    @scala.inline
-    def setZoom(value: String): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: String): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

@@ -17,19 +17,15 @@ trait SchemaMembersHasMember extends StObject {
 }
 object SchemaMembersHasMember {
   
-  @scala.inline
-  def apply(): SchemaMembersHasMember = {
+  inline def apply(): SchemaMembersHasMember = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMembersHasMember]
   }
   
-  @scala.inline
-  implicit class SchemaMembersHasMemberMutableBuilder[Self <: SchemaMembersHasMember] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMembersHasMember](x: Self) {
     
-    @scala.inline
-    def setIsMember(value: Boolean): Self = StObject.set(x, "isMember", value.asInstanceOf[js.Any])
+    inline def setIsMember(value: Boolean): Self = StObject.set(x, "isMember", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMemberUndefined: Self = StObject.set(x, "isMember", js.undefined)
+    inline def setIsMemberUndefined: Self = StObject.set(x, "isMember", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait SplitCapacityCommitmentRequest extends StObject {
 }
 object SplitCapacityCommitmentRequest {
   
-  @scala.inline
-  def apply(): SplitCapacityCommitmentRequest = {
+  inline def apply(): SplitCapacityCommitmentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SplitCapacityCommitmentRequest]
   }
   
-  @scala.inline
-  implicit class SplitCapacityCommitmentRequestMutableBuilder[Self <: SplitCapacityCommitmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SplitCapacityCommitmentRequest](x: Self) {
     
-    @scala.inline
-    def setSlotCount(value: String): Self = StObject.set(x, "slotCount", value.asInstanceOf[js.Any])
+    inline def setSlotCount(value: String): Self = StObject.set(x, "slotCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotCountUndefined: Self = StObject.set(x, "slotCount", js.undefined)
+    inline def setSlotCountUndefined: Self = StObject.set(x, "slotCount", js.undefined)
   }
 }

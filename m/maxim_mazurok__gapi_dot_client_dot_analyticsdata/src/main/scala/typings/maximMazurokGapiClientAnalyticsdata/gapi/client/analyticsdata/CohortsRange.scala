@@ -17,31 +17,23 @@ trait CohortsRange extends StObject {
 }
 object CohortsRange {
   
-  @scala.inline
-  def apply(): CohortsRange = {
+  inline def apply(): CohortsRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CohortsRange]
   }
   
-  @scala.inline
-  implicit class CohortsRangeMutableBuilder[Self <: CohortsRange] (val x: Self) extends AnyVal {
+  extension [Self <: CohortsRange](x: Self) {
     
-    @scala.inline
-    def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
+    inline def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOffsetUndefined: Self = StObject.set(x, "endOffset", js.undefined)
+    inline def setEndOffsetUndefined: Self = StObject.set(x, "endOffset", js.undefined)
     
-    @scala.inline
-    def setGranularity(value: String): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
+    inline def setGranularity(value: String): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
+    inline def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
     
-    @scala.inline
-    def setStartOffset(value: Double): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
+    inline def setStartOffset(value: Double): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartOffsetUndefined: Self = StObject.set(x, "startOffset", js.undefined)
+    inline def setStartOffsetUndefined: Self = StObject.set(x, "startOffset", js.undefined)
   }
 }

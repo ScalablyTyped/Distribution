@@ -83,6 +83,6 @@ trait OLEFormat extends StObject {
   
   val ProgID: String = js.native
   
-  @JSName("Word.OLEFormat_typekey")
+  /* private */ @JSName("Word.OLEFormat_typekey")
   var WordDotOLEFormat_typekey: OLEFormat = js.native
 }

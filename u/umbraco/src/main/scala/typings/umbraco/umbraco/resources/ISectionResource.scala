@@ -16,16 +16,13 @@ trait ISectionResource extends StObject {
 }
 object ISectionResource {
   
-  @scala.inline
-  def apply(getSections: () => Unit): ISectionResource = {
+  inline def apply(getSections: () => Unit): ISectionResource = {
     val __obj = js.Dynamic.literal(getSections = js.Any.fromFunction0(getSections))
     __obj.asInstanceOf[ISectionResource]
   }
   
-  @scala.inline
-  implicit class ISectionResourceMutableBuilder[Self <: ISectionResource] (val x: Self) extends AnyVal {
+  extension [Self <: ISectionResource](x: Self) {
     
-    @scala.inline
-    def setGetSections(value: () => Unit): Self = StObject.set(x, "getSections", js.Any.fromFunction0(value))
+    inline def setGetSections(value: () => Unit): Self = StObject.set(x, "getSections", js.Any.fromFunction0(value))
   }
 }

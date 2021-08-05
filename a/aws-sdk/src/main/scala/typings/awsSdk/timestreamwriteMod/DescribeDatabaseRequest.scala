@@ -13,16 +13,13 @@ trait DescribeDatabaseRequest extends StObject {
 }
 object DescribeDatabaseRequest {
   
-  @scala.inline
-  def apply(DatabaseName: ResourceName): DescribeDatabaseRequest = {
+  inline def apply(DatabaseName: ResourceName): DescribeDatabaseRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDatabaseRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDatabaseRequestMutableBuilder[Self <: DescribeDatabaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDatabaseRequest](x: Self) {
     
-    @scala.inline
-    def setDatabaseName(value: ResourceName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: ResourceName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
   }
 }

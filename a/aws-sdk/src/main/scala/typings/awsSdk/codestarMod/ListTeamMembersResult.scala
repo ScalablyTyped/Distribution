@@ -18,25 +18,19 @@ trait ListTeamMembersResult extends StObject {
 }
 object ListTeamMembersResult {
   
-  @scala.inline
-  def apply(teamMembers: TeamMemberResult): ListTeamMembersResult = {
+  inline def apply(teamMembers: TeamMemberResult): ListTeamMembersResult = {
     val __obj = js.Dynamic.literal(teamMembers = teamMembers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTeamMembersResult]
   }
   
-  @scala.inline
-  implicit class ListTeamMembersResultMutableBuilder[Self <: ListTeamMembersResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListTeamMembersResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setTeamMembers(value: TeamMemberResult): Self = StObject.set(x, "teamMembers", value.asInstanceOf[js.Any])
+    inline def setTeamMembers(value: TeamMemberResult): Self = StObject.set(x, "teamMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamMembersVarargs(value: TeamMember*): Self = StObject.set(x, "teamMembers", js.Array(value :_*))
+    inline def setTeamMembersVarargs(value: TeamMember*): Self = StObject.set(x, "teamMembers", js.Array(value :_*))
   }
 }

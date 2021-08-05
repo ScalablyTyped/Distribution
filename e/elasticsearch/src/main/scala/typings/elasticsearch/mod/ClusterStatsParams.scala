@@ -18,40 +18,29 @@ trait ClusterStatsParams
 }
 object ClusterStatsParams {
   
-  @scala.inline
-  def apply(): ClusterStatsParams = {
+  inline def apply(): ClusterStatsParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterStatsParams]
   }
   
-  @scala.inline
-  implicit class ClusterStatsParamsMutableBuilder[Self <: ClusterStatsParams] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterStatsParams](x: Self) {
     
-    @scala.inline
-    def setFlatSettings(value: Boolean): Self = StObject.set(x, "flatSettings", value.asInstanceOf[js.Any])
+    inline def setFlatSettings(value: Boolean): Self = StObject.set(x, "flatSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatSettingsUndefined: Self = StObject.set(x, "flatSettings", js.undefined)
+    inline def setFlatSettingsUndefined: Self = StObject.set(x, "flatSettings", js.undefined)
     
-    @scala.inline
-    def setHuman(value: Boolean): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
+    inline def setHuman(value: Boolean): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanUndefined: Self = StObject.set(x, "human", js.undefined)
+    inline def setHumanUndefined: Self = StObject.set(x, "human", js.undefined)
     
-    @scala.inline
-    def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+    inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
-    @scala.inline
-    def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
+    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

@@ -40,16 +40,16 @@ object iosMod {
     extends StObject
        with IFullScreenHelper {
     
-    @JSName("_$elem")
+    /* private */ @JSName("_$elem")
     var _$elem: js.Any = js.native
     
-    var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: js.Any = js.native
     
-    var _callback: js.Any = js.native
+    /* private */ var _callback: js.Any = js.native
     
-    var _enterWhenHasMetaData: js.Any = js.native
+    /* private */ var _enterWhenHasMetaData: js.Any = js.native
     
-    var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: js.Any = js.native
     
     @JSName("isAPIExist")
     def isAPIExist_MIOSFullScreen: Boolean = js.native

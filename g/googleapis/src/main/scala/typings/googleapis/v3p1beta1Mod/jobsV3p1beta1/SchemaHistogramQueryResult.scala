@@ -29,25 +29,19 @@ trait SchemaHistogramQueryResult extends StObject {
 }
 object SchemaHistogramQueryResult {
   
-  @scala.inline
-  def apply(): SchemaHistogramQueryResult = {
+  inline def apply(): SchemaHistogramQueryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHistogramQueryResult]
   }
   
-  @scala.inline
-  implicit class SchemaHistogramQueryResultMutableBuilder[Self <: SchemaHistogramQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHistogramQueryResult](x: Self) {
     
-    @scala.inline
-    def setHistogram(value: StringDictionary[String]): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
+    inline def setHistogram(value: StringDictionary[String]): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistogramQuery(value: String): Self = StObject.set(x, "histogramQuery", value.asInstanceOf[js.Any])
+    inline def setHistogramQuery(value: String): Self = StObject.set(x, "histogramQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistogramQueryUndefined: Self = StObject.set(x, "histogramQuery", js.undefined)
+    inline def setHistogramQueryUndefined: Self = StObject.set(x, "histogramQuery", js.undefined)
     
-    @scala.inline
-    def setHistogramUndefined: Self = StObject.set(x, "histogram", js.undefined)
+    inline def setHistogramUndefined: Self = StObject.set(x, "histogram", js.undefined)
   }
 }

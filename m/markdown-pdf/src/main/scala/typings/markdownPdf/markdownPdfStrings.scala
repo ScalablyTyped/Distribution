@@ -12,55 +12,47 @@ object markdownPdfStrings {
   sealed trait A3
     extends StObject
        with PaperFormat
-  @scala.inline
-  def A3: A3 = "A3".asInstanceOf[A3]
+  inline def A3: A3 = "A3".asInstanceOf[A3]
   
   @js.native
   sealed trait A4
     extends StObject
        with PaperFormat
-  @scala.inline
-  def A4: A4 = "A4".asInstanceOf[A4]
+  inline def A4: A4 = "A4".asInstanceOf[A4]
   
   @js.native
   sealed trait A5
     extends StObject
        with PaperFormat
-  @scala.inline
-  def A5: A5 = "A5".asInstanceOf[A5]
+  inline def A5: A5 = "A5".asInstanceOf[A5]
   
   @js.native
   sealed trait Legal
     extends StObject
        with PaperFormat
-  @scala.inline
-  def Legal: Legal = "Legal".asInstanceOf[Legal]
+  inline def Legal: Legal = "Legal".asInstanceOf[Legal]
   
   @js.native
   sealed trait Letter
     extends StObject
        with PaperFormat
-  @scala.inline
-  def Letter: Letter = "Letter".asInstanceOf[Letter]
+  inline def Letter: Letter = "Letter".asInstanceOf[Letter]
   
   @js.native
   sealed trait Tabloid
     extends StObject
        with PaperFormat
-  @scala.inline
-  def Tabloid: Tabloid = "Tabloid".asInstanceOf[Tabloid]
+  inline def Tabloid: Tabloid = "Tabloid".asInstanceOf[Tabloid]
   
   @js.native
   sealed trait landscape
     extends StObject
        with PaperOrientation
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  inline def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
   sealed trait portait
     extends StObject
        with PaperOrientation
-  @scala.inline
-  def portait: portait = "portait".asInstanceOf[portait]
+  inline def portait: portait = "portait".asInstanceOf[portait]
 }

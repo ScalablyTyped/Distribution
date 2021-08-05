@@ -24,8 +24,7 @@ trait NxStateCounts extends StObject {
 }
 object NxStateCounts {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qAlternative: Double,
     qDeselected: Double,
     qExcluded: Double,
@@ -39,31 +38,22 @@ object NxStateCounts {
     __obj.asInstanceOf[NxStateCounts]
   }
   
-  @scala.inline
-  implicit class NxStateCountsMutableBuilder[Self <: NxStateCounts] (val x: Self) extends AnyVal {
+  extension [Self <: NxStateCounts](x: Self) {
     
-    @scala.inline
-    def setQAlternative(value: Double): Self = StObject.set(x, "qAlternative", value.asInstanceOf[js.Any])
+    inline def setQAlternative(value: Double): Self = StObject.set(x, "qAlternative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDeselected(value: Double): Self = StObject.set(x, "qDeselected", value.asInstanceOf[js.Any])
+    inline def setQDeselected(value: Double): Self = StObject.set(x, "qDeselected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQExcluded(value: Double): Self = StObject.set(x, "qExcluded", value.asInstanceOf[js.Any])
+    inline def setQExcluded(value: Double): Self = StObject.set(x, "qExcluded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLocked(value: Double): Self = StObject.set(x, "qLocked", value.asInstanceOf[js.Any])
+    inline def setQLocked(value: Double): Self = StObject.set(x, "qLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLockedExcluded(value: Double): Self = StObject.set(x, "qLockedExcluded", value.asInstanceOf[js.Any])
+    inline def setQLockedExcluded(value: Double): Self = StObject.set(x, "qLockedExcluded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQOption(value: Double): Self = StObject.set(x, "qOption", value.asInstanceOf[js.Any])
+    inline def setQOption(value: Double): Self = StObject.set(x, "qOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSelected(value: Double): Self = StObject.set(x, "qSelected", value.asInstanceOf[js.Any])
+    inline def setQSelected(value: Double): Self = StObject.set(x, "qSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSelectedExcluded(value: Double): Self = StObject.set(x, "qSelectedExcluded", value.asInstanceOf[js.Any])
+    inline def setQSelectedExcluded(value: Double): Self = StObject.set(x, "qSelectedExcluded", value.asInstanceOf[js.Any])
   }
 }

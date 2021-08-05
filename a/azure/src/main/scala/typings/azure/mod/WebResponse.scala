@@ -19,28 +19,21 @@ trait WebResponse extends StObject {
 }
 object WebResponse {
   
-  @scala.inline
-  def apply(body: Entry, headers: js.Any, isSuccessful: Boolean, md5: js.Any, statusCode: Double): WebResponse = {
+  inline def apply(body: Entry, headers: js.Any, isSuccessful: Boolean, md5: js.Any, statusCode: Double): WebResponse = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], isSuccessful = isSuccessful.asInstanceOf[js.Any], md5 = md5.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebResponse]
   }
   
-  @scala.inline
-  implicit class WebResponseMutableBuilder[Self <: WebResponse] (val x: Self) extends AnyVal {
+  extension [Self <: WebResponse](x: Self) {
     
-    @scala.inline
-    def setBody(value: Entry): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Entry): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSuccessful(value: Boolean): Self = StObject.set(x, "isSuccessful", value.asInstanceOf[js.Any])
+    inline def setIsSuccessful(value: Boolean): Self = StObject.set(x, "isSuccessful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMd5(value: js.Any): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
+    inline def setMd5(value: js.Any): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

@@ -18,16 +18,13 @@ trait ASPxClientSpellCheckerBeforeCheckEventArgs
 }
 object ASPxClientSpellCheckerBeforeCheckEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, controlId: String): ASPxClientSpellCheckerBeforeCheckEventArgs = {
+  inline def apply(cancel: Boolean, controlId: String): ASPxClientSpellCheckerBeforeCheckEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], controlId = controlId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientSpellCheckerBeforeCheckEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientSpellCheckerBeforeCheckEventArgsMutableBuilder[Self <: ASPxClientSpellCheckerBeforeCheckEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSpellCheckerBeforeCheckEventArgs](x: Self) {
     
-    @scala.inline
-    def setControlId(value: String): Self = StObject.set(x, "controlId", value.asInstanceOf[js.Any])
+    inline def setControlId(value: String): Self = StObject.set(x, "controlId", value.asInstanceOf[js.Any])
   }
 }

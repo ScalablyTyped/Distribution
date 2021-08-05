@@ -23,8 +23,7 @@ trait SortableUIParams extends StObject {
 }
 object SortableUIParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     helper: JQuery,
     item: JQuery,
     offset: js.Any,
@@ -37,28 +36,20 @@ object SortableUIParams {
     __obj.asInstanceOf[SortableUIParams]
   }
   
-  @scala.inline
-  implicit class SortableUIParamsMutableBuilder[Self <: SortableUIParams] (val x: Self) extends AnyVal {
+  extension [Self <: SortableUIParams](x: Self) {
     
-    @scala.inline
-    def setHelper(value: JQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+    inline def setHelper(value: JQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalPosition(value: js.Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
+    inline def setOriginalPosition(value: js.Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholder(value: JQuery): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: JQuery): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: JQuery): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: JQuery): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

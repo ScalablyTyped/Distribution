@@ -28,34 +28,25 @@ trait CreateVocabularyFilterRequest extends StObject {
 }
 object CreateVocabularyFilterRequest {
   
-  @scala.inline
-  def apply(LanguageCode: LanguageCode, VocabularyFilterName: VocabularyFilterName): CreateVocabularyFilterRequest = {
+  inline def apply(LanguageCode: LanguageCode, VocabularyFilterName: VocabularyFilterName): CreateVocabularyFilterRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], VocabularyFilterName = VocabularyFilterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVocabularyFilterRequest]
   }
   
-  @scala.inline
-  implicit class CreateVocabularyFilterRequestMutableBuilder[Self <: CreateVocabularyFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVocabularyFilterRequest](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVocabularyFilterFileUri(value: Uri): Self = StObject.set(x, "VocabularyFilterFileUri", value.asInstanceOf[js.Any])
+    inline def setVocabularyFilterFileUri(value: Uri): Self = StObject.set(x, "VocabularyFilterFileUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVocabularyFilterFileUriUndefined: Self = StObject.set(x, "VocabularyFilterFileUri", js.undefined)
+    inline def setVocabularyFilterFileUriUndefined: Self = StObject.set(x, "VocabularyFilterFileUri", js.undefined)
     
-    @scala.inline
-    def setVocabularyFilterName(value: VocabularyFilterName): Self = StObject.set(x, "VocabularyFilterName", value.asInstanceOf[js.Any])
+    inline def setVocabularyFilterName(value: VocabularyFilterName): Self = StObject.set(x, "VocabularyFilterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWords(value: Words): Self = StObject.set(x, "Words", value.asInstanceOf[js.Any])
+    inline def setWords(value: Words): Self = StObject.set(x, "Words", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordsUndefined: Self = StObject.set(x, "Words", js.undefined)
+    inline def setWordsUndefined: Self = StObject.set(x, "Words", js.undefined)
     
-    @scala.inline
-    def setWordsVarargs(value: Word*): Self = StObject.set(x, "Words", js.Array(value :_*))
+    inline def setWordsVarargs(value: Word*): Self = StObject.set(x, "Words", js.Array(value :_*))
   }
 }

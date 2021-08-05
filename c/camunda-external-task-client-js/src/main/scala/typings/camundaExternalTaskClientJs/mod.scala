@@ -80,83 +80,58 @@ object mod {
   }
   object ClientConfig {
     
-    @scala.inline
-    def apply(baseUrl: String): ClientConfig = {
+    inline def apply(baseUrl: String): ClientConfig = {
       val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientConfig]
     }
     
-    @scala.inline
-    implicit class ClientConfigMutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ClientConfig](x: Self) {
       
-      @scala.inline
-      def setAsyncResponseTimeout(value: Double): Self = StObject.set(x, "asyncResponseTimeout", value.asInstanceOf[js.Any])
+      inline def setAsyncResponseTimeout(value: Double): Self = StObject.set(x, "asyncResponseTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncResponseTimeoutUndefined: Self = StObject.set(x, "asyncResponseTimeout", js.undefined)
+      inline def setAsyncResponseTimeoutUndefined: Self = StObject.set(x, "asyncResponseTimeout", js.undefined)
       
-      @scala.inline
-      def setAutoPoll(value: Boolean): Self = StObject.set(x, "autoPoll", value.asInstanceOf[js.Any])
+      inline def setAutoPoll(value: Boolean): Self = StObject.set(x, "autoPoll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoPollUndefined: Self = StObject.set(x, "autoPoll", js.undefined)
+      inline def setAutoPollUndefined: Self = StObject.set(x, "autoPoll", js.undefined)
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterceptors(value: Interceptor | js.Array[Interceptor]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
+      inline def setInterceptors(value: Interceptor | js.Array[Interceptor]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterceptorsFunction1(value: /* config */ js.Any => js.Any): Self = StObject.set(x, "interceptors", js.Any.fromFunction1(value))
+      inline def setInterceptorsFunction1(value: /* config */ js.Any => js.Any): Self = StObject.set(x, "interceptors", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInterceptorsUndefined: Self = StObject.set(x, "interceptors", js.undefined)
+      inline def setInterceptorsUndefined: Self = StObject.set(x, "interceptors", js.undefined)
       
-      @scala.inline
-      def setInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
+      inline def setInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setLockDuration(value: Double): Self = StObject.set(x, "lockDuration", value.asInstanceOf[js.Any])
+      inline def setLockDuration(value: Double): Self = StObject.set(x, "lockDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockDurationUndefined: Self = StObject.set(x, "lockDuration", js.undefined)
+      inline def setLockDurationUndefined: Self = StObject.set(x, "lockDuration", js.undefined)
       
-      @scala.inline
-      def setMaxParallelExecutions(value: Double): Self = StObject.set(x, "maxParallelExecutions", value.asInstanceOf[js.Any])
+      inline def setMaxParallelExecutions(value: Double): Self = StObject.set(x, "maxParallelExecutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxParallelExecutionsUndefined: Self = StObject.set(x, "maxParallelExecutions", js.undefined)
+      inline def setMaxParallelExecutionsUndefined: Self = StObject.set(x, "maxParallelExecutions", js.undefined)
       
-      @scala.inline
-      def setMaxTasks(value: Double): Self = StObject.set(x, "maxTasks", value.asInstanceOf[js.Any])
+      inline def setMaxTasks(value: Double): Self = StObject.set(x, "maxTasks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTasksUndefined: Self = StObject.set(x, "maxTasks", js.undefined)
+      inline def setMaxTasksUndefined: Self = StObject.set(x, "maxTasks", js.undefined)
       
-      @scala.inline
-      def setUse(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      inline def setUse(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFunction1(value: /* client */ Client => Unit): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
+      inline def setUseFunction1(value: /* client */ Client => Unit): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+      inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
       
-      @scala.inline
-      def setUseVarargs(value: Middleware*): Self = StObject.set(x, "use", js.Array(value :_*))
+      inline def setUseVarargs(value: Middleware*): Self = StObject.set(x, "use", js.Array(value :_*))
       
-      @scala.inline
-      def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
+      inline def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
+      inline def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
     }
   }
   
@@ -167,11 +142,9 @@ object mod {
   trait ErrorEvent extends StObject
   object ErrorEvent {
     
-    @scala.inline
-    def completeColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.completeColonerror = "complete:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.completeColonerror]
+    inline def completeColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.completeColonerror = "complete:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.completeColonerror]
     
-    @scala.inline
-    def pollColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonerror = "poll:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonerror]
+    inline def pollColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonerror = "poll:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonerror]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -183,17 +156,13 @@ object mod {
   trait ErrorWithTaskEvent extends StObject
   object ErrorWithTaskEvent {
     
-    @scala.inline
-    def extendLockColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.extendLockColonerror = "extendLock:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.extendLockColonerror]
+    inline def extendLockColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.extendLockColonerror = "extendLock:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.extendLockColonerror]
     
-    @scala.inline
-    def handleBpmnErrorColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleBpmnErrorColonerror = "handleBpmnError:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleBpmnErrorColonerror]
+    inline def handleBpmnErrorColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleBpmnErrorColonerror = "handleBpmnError:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleBpmnErrorColonerror]
     
-    @scala.inline
-    def handleFailureColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleFailureColonerror = "handleFailure:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleFailureColonerror]
+    inline def handleFailureColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleFailureColonerror = "handleFailure:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleFailureColonerror]
     
-    @scala.inline
-    def unlockColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unlockColonerror = "unlock:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unlockColonerror]
+    inline def unlockColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unlockColonerror = "unlock:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unlockColonerror]
   }
   
   trait HandleFailureOptions extends StObject {
@@ -208,38 +177,28 @@ object mod {
   }
   object HandleFailureOptions {
     
-    @scala.inline
-    def apply(): HandleFailureOptions = {
+    inline def apply(): HandleFailureOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HandleFailureOptions]
     }
     
-    @scala.inline
-    implicit class HandleFailureOptionsMutableBuilder[Self <: HandleFailureOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HandleFailureOptions](x: Self) {
       
-      @scala.inline
-      def setErrorDetails(value: String): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
+      inline def setErrorDetails(value: String): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+      inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setRetryTimeout(value: Double): Self = StObject.set(x, "retryTimeout", value.asInstanceOf[js.Any])
+      inline def setRetryTimeout(value: Double): Self = StObject.set(x, "retryTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryTimeoutUndefined: Self = StObject.set(x, "retryTimeout", js.undefined)
+      inline def setRetryTimeoutUndefined: Self = StObject.set(x, "retryTimeout", js.undefined)
     }
   }
   
@@ -253,20 +212,16 @@ object mod {
   }
   object HandlerArgs {
     
-    @scala.inline
-    def apply(task: Task, taskService: TaskService): HandlerArgs = {
+    inline def apply(task: Task, taskService: TaskService): HandlerArgs = {
       val __obj = js.Dynamic.literal(task = task.asInstanceOf[js.Any], taskService = taskService.asInstanceOf[js.Any])
       __obj.asInstanceOf[HandlerArgs]
     }
     
-    @scala.inline
-    implicit class HandlerArgsMutableBuilder[Self <: HandlerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: HandlerArgs](x: Self) {
       
-      @scala.inline
-      def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+      inline def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskService(value: TaskService): Self = StObject.set(x, "taskService", value.asInstanceOf[js.Any])
+      inline def setTaskService(value: TaskService): Self = StObject.set(x, "taskService", value.asInstanceOf[js.Any])
     }
   }
   
@@ -289,11 +244,9 @@ object mod {
   trait PollEvent extends StObject
   object PollEvent {
     
-    @scala.inline
-    def pollColonstart: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonstart = "poll:start".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonstart]
+    inline def pollColonstart: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonstart = "poll:start".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonstart]
     
-    @scala.inline
-    def pollColonstop: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonstop = "poll:stop".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonstop]
+    inline def pollColonstop: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonstop = "poll:stop".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonstop]
   }
   
   trait SubscribeOptions extends StObject {
@@ -320,80 +273,56 @@ object mod {
   }
   object SubscribeOptions {
     
-    @scala.inline
-    def apply(): SubscribeOptions = {
+    inline def apply(): SubscribeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SubscribeOptions]
     }
     
-    @scala.inline
-    implicit class SubscribeOptionsMutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SubscribeOptions](x: Self) {
       
-      @scala.inline
-      def setBusinessKey(value: String): Self = StObject.set(x, "businessKey", value.asInstanceOf[js.Any])
+      inline def setBusinessKey(value: String): Self = StObject.set(x, "businessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBusinessKeyUndefined: Self = StObject.set(x, "businessKey", js.undefined)
+      inline def setBusinessKeyUndefined: Self = StObject.set(x, "businessKey", js.undefined)
       
-      @scala.inline
-      def setLockDuration(value: Double): Self = StObject.set(x, "lockDuration", value.asInstanceOf[js.Any])
+      inline def setLockDuration(value: Double): Self = StObject.set(x, "lockDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockDurationUndefined: Self = StObject.set(x, "lockDuration", js.undefined)
+      inline def setLockDurationUndefined: Self = StObject.set(x, "lockDuration", js.undefined)
       
-      @scala.inline
-      def setProcessDefinitionId(value: String): Self = StObject.set(x, "processDefinitionId", value.asInstanceOf[js.Any])
+      inline def setProcessDefinitionId(value: String): Self = StObject.set(x, "processDefinitionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessDefinitionIdIn(value: String): Self = StObject.set(x, "processDefinitionIdIn", value.asInstanceOf[js.Any])
+      inline def setProcessDefinitionIdIn(value: String): Self = StObject.set(x, "processDefinitionIdIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessDefinitionIdInUndefined: Self = StObject.set(x, "processDefinitionIdIn", js.undefined)
+      inline def setProcessDefinitionIdInUndefined: Self = StObject.set(x, "processDefinitionIdIn", js.undefined)
       
-      @scala.inline
-      def setProcessDefinitionIdUndefined: Self = StObject.set(x, "processDefinitionId", js.undefined)
+      inline def setProcessDefinitionIdUndefined: Self = StObject.set(x, "processDefinitionId", js.undefined)
       
-      @scala.inline
-      def setProcessDefinitionKey(value: String): Self = StObject.set(x, "processDefinitionKey", value.asInstanceOf[js.Any])
+      inline def setProcessDefinitionKey(value: String): Self = StObject.set(x, "processDefinitionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessDefinitionKeyIn(value: String): Self = StObject.set(x, "processDefinitionKeyIn", value.asInstanceOf[js.Any])
+      inline def setProcessDefinitionKeyIn(value: String): Self = StObject.set(x, "processDefinitionKeyIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessDefinitionKeyInUndefined: Self = StObject.set(x, "processDefinitionKeyIn", js.undefined)
+      inline def setProcessDefinitionKeyInUndefined: Self = StObject.set(x, "processDefinitionKeyIn", js.undefined)
       
-      @scala.inline
-      def setProcessDefinitionKeyUndefined: Self = StObject.set(x, "processDefinitionKey", js.undefined)
+      inline def setProcessDefinitionKeyUndefined: Self = StObject.set(x, "processDefinitionKey", js.undefined)
       
-      @scala.inline
-      def setProcessDefinitionVersionTag(value: String): Self = StObject.set(x, "processDefinitionVersionTag", value.asInstanceOf[js.Any])
+      inline def setProcessDefinitionVersionTag(value: String): Self = StObject.set(x, "processDefinitionVersionTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessDefinitionVersionTagUndefined: Self = StObject.set(x, "processDefinitionVersionTag", js.undefined)
+      inline def setProcessDefinitionVersionTagUndefined: Self = StObject.set(x, "processDefinitionVersionTag", js.undefined)
       
-      @scala.inline
-      def setTenantIdIn(value: js.Array[String]): Self = StObject.set(x, "tenantIdIn", value.asInstanceOf[js.Any])
+      inline def setTenantIdIn(value: js.Array[String]): Self = StObject.set(x, "tenantIdIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTenantIdInUndefined: Self = StObject.set(x, "tenantIdIn", js.undefined)
+      inline def setTenantIdInUndefined: Self = StObject.set(x, "tenantIdIn", js.undefined)
       
-      @scala.inline
-      def setTenantIdInVarargs(value: String*): Self = StObject.set(x, "tenantIdIn", js.Array(value :_*))
+      inline def setTenantIdInVarargs(value: String*): Self = StObject.set(x, "tenantIdIn", js.Array(value :_*))
       
-      @scala.inline
-      def setVariables(value: js.Array[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: js.Array[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+      inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
       
-      @scala.inline
-      def setVariablesVarargs(value: js.Any*): Self = StObject.set(x, "variables", js.Array(value :_*))
+      inline def setVariablesVarargs(value: js.Any*): Self = StObject.set(x, "variables", js.Array(value :_*))
       
-      @scala.inline
-      def setWithoutTenantId(value: Boolean): Self = StObject.set(x, "withoutTenantId", value.asInstanceOf[js.Any])
+      inline def setWithoutTenantId(value: Boolean): Self = StObject.set(x, "withoutTenantId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithoutTenantIdUndefined: Self = StObject.set(x, "withoutTenantId", js.undefined)
+      inline def setWithoutTenantIdUndefined: Self = StObject.set(x, "withoutTenantId", js.undefined)
     }
   }
   
@@ -407,20 +336,15 @@ object mod {
   trait SuccessWithTaskEvent extends StObject
   object SuccessWithTaskEvent {
     
-    @scala.inline
-    def completeColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.completeColonsuccess = "complete:success".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.completeColonsuccess]
+    inline def completeColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.completeColonsuccess = "complete:success".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.completeColonsuccess]
     
-    @scala.inline
-    def extendLockColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.extendLockColonsuccess = "extendLock:success".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.extendLockColonsuccess]
+    inline def extendLockColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.extendLockColonsuccess = "extendLock:success".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.extendLockColonsuccess]
     
-    @scala.inline
-    def handleBpmnErrorColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleBpmnErrorColonsuccess = "handleBpmnError:success".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleBpmnErrorColonsuccess]
+    inline def handleBpmnErrorColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleBpmnErrorColonsuccess = "handleBpmnError:success".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleBpmnErrorColonsuccess]
     
-    @scala.inline
-    def handleFailureColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleFailureColonsuccess = "handleFailure:success".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleFailureColonsuccess]
+    inline def handleFailureColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleFailureColonsuccess = "handleFailure:success".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.handleFailureColonsuccess]
     
-    @scala.inline
-    def unlockColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unlockColonsuccess = "unlock:success".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unlockColonsuccess]
+    inline def unlockColonsuccess: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unlockColonsuccess = "unlock:success".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unlockColonsuccess]
   }
   
   type SuccessWithTasksEvent = pollColonsuccess
@@ -464,113 +388,78 @@ object mod {
   }
   object Task {
     
-    @scala.inline
-    def apply(variables: Variables): Task = {
+    inline def apply(variables: Variables): Task = {
       val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
       __obj.asInstanceOf[Task]
     }
     
-    @scala.inline
-    implicit class TaskMutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
+    extension [Self <: Task](x: Self) {
       
-      @scala.inline
-      def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
+      inline def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityIdUndefined: Self = StObject.set(x, "activityId", js.undefined)
+      inline def setActivityIdUndefined: Self = StObject.set(x, "activityId", js.undefined)
       
-      @scala.inline
-      def setActivityInstanceId(value: String): Self = StObject.set(x, "activityInstanceId", value.asInstanceOf[js.Any])
+      inline def setActivityInstanceId(value: String): Self = StObject.set(x, "activityInstanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityInstanceIdUndefined: Self = StObject.set(x, "activityInstanceId", js.undefined)
+      inline def setActivityInstanceIdUndefined: Self = StObject.set(x, "activityInstanceId", js.undefined)
       
-      @scala.inline
-      def setBusinessKey(value: String): Self = StObject.set(x, "businessKey", value.asInstanceOf[js.Any])
+      inline def setBusinessKey(value: String): Self = StObject.set(x, "businessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBusinessKeyUndefined: Self = StObject.set(x, "businessKey", js.undefined)
+      inline def setBusinessKeyUndefined: Self = StObject.set(x, "businessKey", js.undefined)
       
-      @scala.inline
-      def setErrorDetails(value: String): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
+      inline def setErrorDetails(value: String): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+      inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      @scala.inline
-      def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
+      inline def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
+      inline def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLockExpirationTime(value: String): Self = StObject.set(x, "lockExpirationTime", value.asInstanceOf[js.Any])
+      inline def setLockExpirationTime(value: String): Self = StObject.set(x, "lockExpirationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockExpirationTimeUndefined: Self = StObject.set(x, "lockExpirationTime", js.undefined)
+      inline def setLockExpirationTimeUndefined: Self = StObject.set(x, "lockExpirationTime", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setProcessDefinitionId(value: String): Self = StObject.set(x, "processDefinitionId", value.asInstanceOf[js.Any])
+      inline def setProcessDefinitionId(value: String): Self = StObject.set(x, "processDefinitionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessDefinitionIdUndefined: Self = StObject.set(x, "processDefinitionId", js.undefined)
+      inline def setProcessDefinitionIdUndefined: Self = StObject.set(x, "processDefinitionId", js.undefined)
       
-      @scala.inline
-      def setProcessDefinitionKey(value: String): Self = StObject.set(x, "processDefinitionKey", value.asInstanceOf[js.Any])
+      inline def setProcessDefinitionKey(value: String): Self = StObject.set(x, "processDefinitionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessDefinitionKeyUndefined: Self = StObject.set(x, "processDefinitionKey", js.undefined)
+      inline def setProcessDefinitionKeyUndefined: Self = StObject.set(x, "processDefinitionKey", js.undefined)
       
-      @scala.inline
-      def setProcessInstanceId(value: String): Self = StObject.set(x, "processInstanceId", value.asInstanceOf[js.Any])
+      inline def setProcessInstanceId(value: String): Self = StObject.set(x, "processInstanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessInstanceIdUndefined: Self = StObject.set(x, "processInstanceId", js.undefined)
+      inline def setProcessInstanceIdUndefined: Self = StObject.set(x, "processInstanceId", js.undefined)
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+      inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
+      inline def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
       
-      @scala.inline
-      def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
+      inline def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
+      inline def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
       
-      @scala.inline
-      def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
+      inline def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
+      inline def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
     }
   }
   
@@ -602,11 +491,9 @@ object mod {
   trait TopicEvent extends StObject
   object TopicEvent {
     
-    @scala.inline
-    def subscribe: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.subscribe = "subscribe".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.subscribe]
+    inline def subscribe: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.subscribe = "subscribe".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.subscribe]
     
-    @scala.inline
-    def unsubscribe: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unsubscribe = "unsubscribe".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unsubscribe]
+    inline def unsubscribe: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unsubscribe = "unsubscribe".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unsubscribe]
   }
   
   trait TopicSubscription extends StObject {
@@ -615,17 +502,14 @@ object mod {
   }
   object TopicSubscription {
     
-    @scala.inline
-    def apply(unsubscribe: () => Unit): TopicSubscription = {
+    inline def apply(unsubscribe: () => Unit): TopicSubscription = {
       val __obj = js.Dynamic.literal(unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[TopicSubscription]
     }
     
-    @scala.inline
-    implicit class TopicSubscriptionMutableBuilder[Self <: TopicSubscription] (val x: Self) extends AnyVal {
+    extension [Self <: TopicSubscription](x: Self) {
       
-      @scala.inline
-      def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+      inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
   }
   
@@ -639,24 +523,19 @@ object mod {
   }
   object TypedValue {
     
-    @scala.inline
-    def apply(`type`: String, value: Value, valueInfo: js.Object): TypedValue = {
+    inline def apply(`type`: String, value: Value, valueInfo: js.Object): TypedValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], valueInfo = valueInfo.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypedValue]
     }
     
-    @scala.inline
-    implicit class TypedValueMutableBuilder[Self <: TypedValue] (val x: Self) extends AnyVal {
+    extension [Self <: TypedValue](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueInfo(value: js.Object): Self = StObject.set(x, "valueInfo", value.asInstanceOf[js.Any])
+      inline def setValueInfo(value: js.Object): Self = StObject.set(x, "valueInfo", value.asInstanceOf[js.Any])
     }
   }
   

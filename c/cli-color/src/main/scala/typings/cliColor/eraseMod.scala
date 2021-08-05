@@ -45,8 +45,7 @@ object eraseMod extends Shortcut {
   }
   object Erase {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       line: String,
       lineLeft: String,
       lineRight: String,
@@ -58,26 +57,19 @@ object eraseMod extends Shortcut {
       __obj.asInstanceOf[Erase]
     }
     
-    @scala.inline
-    implicit class EraseMutableBuilder[Self <: Erase] (val x: Self) extends AnyVal {
+    extension [Self <: Erase](x: Self) {
       
-      @scala.inline
-      def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineLeft(value: String): Self = StObject.set(x, "lineLeft", value.asInstanceOf[js.Any])
+      inline def setLineLeft(value: String): Self = StObject.set(x, "lineLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineRight(value: String): Self = StObject.set(x, "lineRight", value.asInstanceOf[js.Any])
+      inline def setLineRight(value: String): Self = StObject.set(x, "lineRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreen(value: String): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+      inline def setScreen(value: String): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenLeft(value: String): Self = StObject.set(x, "screenLeft", value.asInstanceOf[js.Any])
+      inline def setScreenLeft(value: String): Self = StObject.set(x, "screenLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenRight(value: String): Self = StObject.set(x, "screenRight", value.asInstanceOf[js.Any])
+      inline def setScreenRight(value: String): Self = StObject.set(x, "screenRight", value.asInstanceOf[js.Any])
     }
   }
   

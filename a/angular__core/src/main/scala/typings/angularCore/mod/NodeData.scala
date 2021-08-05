@@ -17,20 +17,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait NodeData extends StObject {
   
-  var __brand: js.Any
+  /* private */ var __brand: js.Any
 }
 object NodeData {
   
-  @scala.inline
-  def apply(__brand: js.Any): NodeData = {
+  inline def apply(__brand: js.Any): NodeData = {
     val __obj = js.Dynamic.literal(__brand = __brand.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeData]
   }
   
-  @scala.inline
-  implicit class NodeDataMutableBuilder[Self <: NodeData] (val x: Self) extends AnyVal {
+  extension [Self <: NodeData](x: Self) {
     
-    @scala.inline
-    def set__brand(value: js.Any): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
+    inline def set__brand(value: js.Any): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
   }
 }

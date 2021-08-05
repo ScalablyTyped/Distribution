@@ -44,41 +44,30 @@ object postPublishPanelMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(onClose: () => Unit): Props = {
+      inline def apply(onClose: () => Unit): Props = {
         val __obj = js.Dynamic.literal(onClose = js.Any.fromFunction0(onClose))
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setForceIsDirty(value: Boolean): Self = StObject.set(x, "forceIsDirty", value.asInstanceOf[js.Any])
+        inline def setForceIsDirty(value: Boolean): Self = StObject.set(x, "forceIsDirty", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForceIsDirtyUndefined: Self = StObject.set(x, "forceIsDirty", js.undefined)
+        inline def setForceIsDirtyUndefined: Self = StObject.set(x, "forceIsDirty", js.undefined)
         
-        @scala.inline
-        def setForceIsSaving(value: Boolean): Self = StObject.set(x, "forceIsSaving", value.asInstanceOf[js.Any])
+        inline def setForceIsSaving(value: Boolean): Self = StObject.set(x, "forceIsSaving", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForceIsSavingUndefined: Self = StObject.set(x, "forceIsSaving", js.undefined)
+        inline def setForceIsSavingUndefined: Self = StObject.set(x, "forceIsSaving", js.undefined)
         
-        @scala.inline
-        def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+        inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setPostPublishExtension(value: ComponentType[js.Object]): Self = StObject.set(x, "PostPublishExtension", value.asInstanceOf[js.Any])
+        inline def setPostPublishExtension(value: ComponentType[js.Object]): Self = StObject.set(x, "PostPublishExtension", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPostPublishExtensionUndefined: Self = StObject.set(x, "PostPublishExtension", js.undefined)
+        inline def setPostPublishExtensionUndefined: Self = StObject.set(x, "PostPublishExtension", js.undefined)
         
-        @scala.inline
-        def setPrePublishExtension(value: ComponentType[js.Object]): Self = StObject.set(x, "PrePublishExtension", value.asInstanceOf[js.Any])
+        inline def setPrePublishExtension(value: ComponentType[js.Object]): Self = StObject.set(x, "PrePublishExtension", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrePublishExtensionUndefined: Self = StObject.set(x, "PrePublishExtension", js.undefined)
+        inline def setPrePublishExtensionUndefined: Self = StObject.set(x, "PrePublishExtension", js.undefined)
       }
     }
   }

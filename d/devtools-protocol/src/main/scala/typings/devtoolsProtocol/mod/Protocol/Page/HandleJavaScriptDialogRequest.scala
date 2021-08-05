@@ -19,22 +19,17 @@ trait HandleJavaScriptDialogRequest extends StObject {
 }
 object HandleJavaScriptDialogRequest {
   
-  @scala.inline
-  def apply(accept: Boolean): HandleJavaScriptDialogRequest = {
+  inline def apply(accept: Boolean): HandleJavaScriptDialogRequest = {
     val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleJavaScriptDialogRequest]
   }
   
-  @scala.inline
-  implicit class HandleJavaScriptDialogRequestMutableBuilder[Self <: HandleJavaScriptDialogRequest] (val x: Self) extends AnyVal {
+  extension [Self <: HandleJavaScriptDialogRequest](x: Self) {
     
-    @scala.inline
-    def setAccept(value: Boolean): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+    inline def setAccept(value: Boolean): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptText(value: String): Self = StObject.set(x, "promptText", value.asInstanceOf[js.Any])
+    inline def setPromptText(value: String): Self = StObject.set(x, "promptText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptTextUndefined: Self = StObject.set(x, "promptText", js.undefined)
+    inline def setPromptTextUndefined: Self = StObject.set(x, "promptText", js.undefined)
   }
 }

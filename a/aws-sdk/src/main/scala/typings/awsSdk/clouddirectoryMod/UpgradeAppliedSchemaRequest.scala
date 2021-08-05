@@ -23,25 +23,19 @@ trait UpgradeAppliedSchemaRequest extends StObject {
 }
 object UpgradeAppliedSchemaRequest {
   
-  @scala.inline
-  def apply(DirectoryArn: Arn, PublishedSchemaArn: Arn): UpgradeAppliedSchemaRequest = {
+  inline def apply(DirectoryArn: Arn, PublishedSchemaArn: Arn): UpgradeAppliedSchemaRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], PublishedSchemaArn = PublishedSchemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpgradeAppliedSchemaRequest]
   }
   
-  @scala.inline
-  implicit class UpgradeAppliedSchemaRequestMutableBuilder[Self <: UpgradeAppliedSchemaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpgradeAppliedSchemaRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
+    inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Bool): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Bool): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setPublishedSchemaArn(value: Arn): Self = StObject.set(x, "PublishedSchemaArn", value.asInstanceOf[js.Any])
+    inline def setPublishedSchemaArn(value: Arn): Self = StObject.set(x, "PublishedSchemaArn", value.asInstanceOf[js.Any])
   }
 }

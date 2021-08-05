@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object autoBindMod {
   
-  @scala.inline
-  def apply(obj: StringDictionary[PropertyDescriptor]): PropertyDescriptorMap = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[PropertyDescriptorMap]
-  @scala.inline
-  def apply(obj: StringDictionary[PropertyDescriptor], options: Options): PropertyDescriptorMap = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptorMap]
+  inline def apply(obj: StringDictionary[PropertyDescriptor]): PropertyDescriptorMap = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[PropertyDescriptorMap]
+  inline def apply(obj: StringDictionary[PropertyDescriptor], options: Options): PropertyDescriptorMap = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptorMap]
   
   @JSImport("d/auto-bind", JSImport.Namespace)
   @js.native
@@ -26,26 +24,20 @@ object autoBindMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOverwriteDefinition(value: Boolean): Self = StObject.set(x, "overwriteDefinition", value.asInstanceOf[js.Any])
+      inline def setOverwriteDefinition(value: Boolean): Self = StObject.set(x, "overwriteDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwriteDefinitionUndefined: Self = StObject.set(x, "overwriteDefinition", js.undefined)
+      inline def setOverwriteDefinitionUndefined: Self = StObject.set(x, "overwriteDefinition", js.undefined)
       
-      @scala.inline
-      def setResolveContext(value: /* context */ js.Any => js.Any): Self = StObject.set(x, "resolveContext", js.Any.fromFunction1(value))
+      inline def setResolveContext(value: /* context */ js.Any => js.Any): Self = StObject.set(x, "resolveContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolveContextUndefined: Self = StObject.set(x, "resolveContext", js.undefined)
+      inline def setResolveContextUndefined: Self = StObject.set(x, "resolveContext", js.undefined)
     }
   }
 }

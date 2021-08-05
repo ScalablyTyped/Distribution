@@ -16,22 +16,17 @@ trait SchemaAddDimensionGroupResponse extends StObject {
 }
 object SchemaAddDimensionGroupResponse {
   
-  @scala.inline
-  def apply(): SchemaAddDimensionGroupResponse = {
+  inline def apply(): SchemaAddDimensionGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAddDimensionGroupResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAddDimensionGroupResponseMutableBuilder[Self <: SchemaAddDimensionGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAddDimensionGroupResponse](x: Self) {
     
-    @scala.inline
-    def setDimensionGroups(value: js.Array[SchemaDimensionGroup]): Self = StObject.set(x, "dimensionGroups", value.asInstanceOf[js.Any])
+    inline def setDimensionGroups(value: js.Array[SchemaDimensionGroup]): Self = StObject.set(x, "dimensionGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionGroupsUndefined: Self = StObject.set(x, "dimensionGroups", js.undefined)
+    inline def setDimensionGroupsUndefined: Self = StObject.set(x, "dimensionGroups", js.undefined)
     
-    @scala.inline
-    def setDimensionGroupsVarargs(value: SchemaDimensionGroup*): Self = StObject.set(x, "dimensionGroups", js.Array(value :_*))
+    inline def setDimensionGroupsVarargs(value: SchemaDimensionGroup*): Self = StObject.set(x, "dimensionGroups", js.Array(value :_*))
   }
 }

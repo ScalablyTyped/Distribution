@@ -43,8 +43,7 @@ trait RedshiftDataSpec extends StObject {
 }
 object RedshiftDataSpec {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DatabaseCredentials: RedshiftDatabaseCredentials,
     DatabaseInformation: RedshiftDatabase,
     S3StagingLocation: S3Url,
@@ -54,37 +53,26 @@ object RedshiftDataSpec {
     __obj.asInstanceOf[RedshiftDataSpec]
   }
   
-  @scala.inline
-  implicit class RedshiftDataSpecMutableBuilder[Self <: RedshiftDataSpec] (val x: Self) extends AnyVal {
+  extension [Self <: RedshiftDataSpec](x: Self) {
     
-    @scala.inline
-    def setDataRearrangement(value: DataRearrangement): Self = StObject.set(x, "DataRearrangement", value.asInstanceOf[js.Any])
+    inline def setDataRearrangement(value: DataRearrangement): Self = StObject.set(x, "DataRearrangement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRearrangementUndefined: Self = StObject.set(x, "DataRearrangement", js.undefined)
+    inline def setDataRearrangementUndefined: Self = StObject.set(x, "DataRearrangement", js.undefined)
     
-    @scala.inline
-    def setDataSchema(value: DataSchema): Self = StObject.set(x, "DataSchema", value.asInstanceOf[js.Any])
+    inline def setDataSchema(value: DataSchema): Self = StObject.set(x, "DataSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSchemaUndefined: Self = StObject.set(x, "DataSchema", js.undefined)
+    inline def setDataSchemaUndefined: Self = StObject.set(x, "DataSchema", js.undefined)
     
-    @scala.inline
-    def setDataSchemaUri(value: S3Url): Self = StObject.set(x, "DataSchemaUri", value.asInstanceOf[js.Any])
+    inline def setDataSchemaUri(value: S3Url): Self = StObject.set(x, "DataSchemaUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSchemaUriUndefined: Self = StObject.set(x, "DataSchemaUri", js.undefined)
+    inline def setDataSchemaUriUndefined: Self = StObject.set(x, "DataSchemaUri", js.undefined)
     
-    @scala.inline
-    def setDatabaseCredentials(value: RedshiftDatabaseCredentials): Self = StObject.set(x, "DatabaseCredentials", value.asInstanceOf[js.Any])
+    inline def setDatabaseCredentials(value: RedshiftDatabaseCredentials): Self = StObject.set(x, "DatabaseCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseInformation(value: RedshiftDatabase): Self = StObject.set(x, "DatabaseInformation", value.asInstanceOf[js.Any])
+    inline def setDatabaseInformation(value: RedshiftDatabase): Self = StObject.set(x, "DatabaseInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3StagingLocation(value: S3Url): Self = StObject.set(x, "S3StagingLocation", value.asInstanceOf[js.Any])
+    inline def setS3StagingLocation(value: S3Url): Self = StObject.set(x, "S3StagingLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectSqlQuery(value: RedshiftSelectSqlQuery): Self = StObject.set(x, "SelectSqlQuery", value.asInstanceOf[js.Any])
+    inline def setSelectSqlQuery(value: RedshiftSelectSqlQuery): Self = StObject.set(x, "SelectSqlQuery", value.asInstanceOf[js.Any])
   }
 }

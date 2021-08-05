@@ -41,8 +41,7 @@ object crypto {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def decrypt(hex: String, keyObj: String, algName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(hex.asInstanceOf[js.Any], keyObj.asInstanceOf[js.Any], algName.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def decrypt(hex: String, keyObj: String, algName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(hex.asInstanceOf[js.Any], keyObj.asInstanceOf[js.Any], algName.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       * decrypt encrypted hexadecimal string with specified key and algorithm
       * @param hex hexadecial string of encrypted message
@@ -55,11 +54,9 @@ object crypto {
       * KJUR.crypto.Cipher.decrypt("aaa", prvRSAKeyObj) → "1abc2d..."
       * KJUR.crypto.Cipher.decrypt("aaa", prvRSAKeyObj, "RSAOAEP) → "23ab02..."
       */
-    @scala.inline
-    def decrypt(hex: String, keyObj: RSAKey, algName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(hex.asInstanceOf[js.Any], keyObj.asInstanceOf[js.Any], algName.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def decrypt(hex: String, keyObj: RSAKey, algName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(hex.asInstanceOf[js.Any], keyObj.asInstanceOf[js.Any], algName.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def encrypt(s: String, keyObj: String, algName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(s.asInstanceOf[js.Any], keyObj.asInstanceOf[js.Any], algName.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def encrypt(s: String, keyObj: String, algName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(s.asInstanceOf[js.Any], keyObj.asInstanceOf[js.Any], algName.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       * encrypt raw string by specified key and algorithm
       * @param s input string to encrypt
@@ -72,11 +69,9 @@ object crypto {
       * KJUR.crypto.Cipher.encrypt("aaa", pubRSAKeyObj) → "1abc2d..."
       * KJUR.crypto.Cipher.encrypt("aaa", pubRSAKeyObj, "RSAOAEP") → "23ab02..."
       */
-    @scala.inline
-    def encrypt(s: String, keyObj: RSAKey, algName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(s.asInstanceOf[js.Any], keyObj.asInstanceOf[js.Any], algName.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def encrypt(s: String, keyObj: RSAKey, algName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(s.asInstanceOf[js.Any], keyObj.asInstanceOf[js.Any], algName.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def getAlgByKeyAndName(keyObj: String, algName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlgByKeyAndName")(keyObj.asInstanceOf[js.Any], algName.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getAlgByKeyAndName(keyObj: String, algName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlgByKeyAndName")(keyObj.asInstanceOf[js.Any], algName.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       * get canonicalized encrypt/decrypt algorithm name by key and short/long algorithm name
       * @param keyObj RSAKey object or hexadecimal string of symmetric cipher key
@@ -95,8 +90,7 @@ object crypto {
       * KJUR.crypto.Cipher.getAlgByKeyAndName(objRSAKey) → "RSA"
       * KJUR.crypto.Cipher.getAlgByKeyAndName(objRSAKey, "RSAOAEP") → "RSAOAEP"
       */
-    @scala.inline
-    def getAlgByKeyAndName(keyObj: RSAKey, algName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlgByKeyAndName")(keyObj.asInstanceOf[js.Any], algName.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getAlgByKeyAndName(keyObj: RSAKey, algName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlgByKeyAndName")(keyObj.asInstanceOf[js.Any], algName.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   /**
@@ -152,8 +146,7 @@ object crypto {
       * @return r-s concatinated format of ECDSA signature value
       */
     /* static member */
-    @scala.inline
-    def asn1SigToConcatSig(asn1Sig: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asn1SigToConcatSig")(asn1Sig.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def asn1SigToConcatSig(asn1Sig: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asn1SigToConcatSig")(asn1Sig.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * convert R and S BigInteger object of signature to ASN.1 encoded signature
@@ -162,8 +155,7 @@ object crypto {
       * @return hexadecimal string of ASN.1 encoded ECDSA signature value
       */
     /* static member */
-    @scala.inline
-    def biRSSigToASN1Sig(biR: BigInteger, biS: BigInteger): String = (^.asInstanceOf[js.Dynamic].applyDynamic("biRSSigToASN1Sig")(biR.asInstanceOf[js.Any], biS.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def biRSSigToASN1Sig(biR: BigInteger, biS: BigInteger): String = (^.asInstanceOf[js.Dynamic].applyDynamic("biRSSigToASN1Sig")(biR.asInstanceOf[js.Any], biS.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * convert hexadecimal concatinated signature to ASN.1 encoded signature
@@ -171,8 +163,7 @@ object crypto {
       * @return hexadecimal string of ASN.1 encoded ECDSA signature value
       */
     /* static member */
-    @scala.inline
-    def concatSigToASN1Sig(concatSig: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("concatSigToASN1Sig")(concatSig.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def concatSigToASN1Sig(concatSig: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("concatSigToASN1Sig")(concatSig.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * static method to get normalized EC curve name from curve name or hexadecimal OID value
@@ -190,8 +181,7 @@ object crypto {
       * KJUR.crypto.ECDSA.getName("P-521") → undefined // not supported
       */
     /* static member */
-    @scala.inline
-    def getName(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getName(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(s.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * convert hexadecimal R and S value of signature to ASN.1 encoded signature
@@ -200,8 +190,7 @@ object crypto {
       * @return hexadecimal string of ASN.1 encoded ECDSA signature value
       */
     /* static member */
-    @scala.inline
-    def hexRSSigToASN1Sig(hR: String, hS: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hexRSSigToASN1Sig")(hR.asInstanceOf[js.Any], hS.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hexRSSigToASN1Sig(hR: String, hS: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hexRSSigToASN1Sig")(hR.asInstanceOf[js.Any], hS.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   /**
@@ -240,8 +229,7 @@ object crypto {
       * var keylen = param['keylen'];
       * var n = param['n'];
       */
-    @scala.inline
-    def getByName(nameOrAlias: String): ECParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("getByName")(nameOrAlias.asInstanceOf[js.Any]).asInstanceOf[ECParameter]
+    inline def getByName(nameOrAlias: String): ECParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("getByName")(nameOrAlias.asInstanceOf[js.Any]).asInstanceOf[ECParameter]
     
     /**
       * register new curve
@@ -258,8 +246,7 @@ object crypto {
       * @param oid Object Identifier for the curve
       * @param info information string for the curve
       */
-    @scala.inline
-    def regist(
+    inline def regist(
       name: String,
       keylen: Double,
       pHex: String,
@@ -444,44 +431,37 @@ object crypto {
       @JSGlobal("jsrsasign.KJUR.crypto.MessageDigest.HASHLENGTH.md5")
       @js.native
       def md5: Double = js.native
-      @scala.inline
-      def md5_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("md5")(x.asInstanceOf[js.Any])
+      inline def md5_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("md5")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.crypto.MessageDigest.HASHLENGTH.ripemd160")
       @js.native
       def ripemd160: Double = js.native
-      @scala.inline
-      def ripemd160_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ripemd160")(x.asInstanceOf[js.Any])
+      inline def ripemd160_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ripemd160")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.crypto.MessageDigest.HASHLENGTH.sha1")
       @js.native
       def sha1: Double = js.native
-      @scala.inline
-      def sha1_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha1")(x.asInstanceOf[js.Any])
+      inline def sha1_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha1")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.crypto.MessageDigest.HASHLENGTH.sha224")
       @js.native
       def sha224: Double = js.native
-      @scala.inline
-      def sha224_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha224")(x.asInstanceOf[js.Any])
+      inline def sha224_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha224")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.crypto.MessageDigest.HASHLENGTH.sha256")
       @js.native
       def sha256: Double = js.native
-      @scala.inline
-      def sha256_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha256")(x.asInstanceOf[js.Any])
+      inline def sha256_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha256")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.crypto.MessageDigest.HASHLENGTH.sha384")
       @js.native
       def sha384: Double = js.native
-      @scala.inline
-      def sha384_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha384")(x.asInstanceOf[js.Any])
+      inline def sha384_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha384")(x.asInstanceOf[js.Any])
       
       @JSGlobal("jsrsasign.KJUR.crypto.MessageDigest.HASHLENGTH.sha512")
       @js.native
       def sha512: Double = js.native
-      @scala.inline
-      def sha512_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha512")(x.asInstanceOf[js.Any])
+      inline def sha512_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha512")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -497,8 +477,7 @@ object crypto {
       * KJUR.crypto.MessageDigest.getCanonicalAlgName("MD5")   → "md5"
       */
     /* static member */
-    @scala.inline
-    def getCanonicalAlgName(alg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCanonicalAlgName")(alg.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getCanonicalAlgName(alg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCanonicalAlgName")(alg.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * get resulted hash byte length for specified algorithm name
@@ -511,8 +490,7 @@ object crypto {
       * KJUR.crypto.MessageDigest.getHashLength("sha1") → 20
       */
     /* static member */
-    @scala.inline
-    def getHashLength(alg: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashLength")(alg.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getHashLength(alg: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashLength")(alg.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   /** static object for cryptographic function utilities */
@@ -614,22 +592,19 @@ object crypto {
     @JSGlobal("jsrsasign.KJUR.crypto.Util.CRYPTOJSMESSAGEDIGESTNAME")
     @js.native
     def CRYPTOJSMESSAGEDIGESTNAME: Md5 = js.native
-    @scala.inline
-    def CRYPTOJSMESSAGEDIGESTNAME_=(x: Md5): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CRYPTOJSMESSAGEDIGESTNAME")(x.asInstanceOf[js.Any])
+    inline def CRYPTOJSMESSAGEDIGESTNAME_=(x: Md5): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CRYPTOJSMESSAGEDIGESTNAME")(x.asInstanceOf[js.Any])
     
     /** associative array of default provider name for each hash and signature algorithms */
     @JSGlobal("jsrsasign.KJUR.crypto.Util.DEFAULTPROVIDER")
     @js.native
     def DEFAULTPROVIDER: Hmacmd5 = js.native
-    @scala.inline
-    def DEFAULTPROVIDER_=(x: Hmacmd5): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULTPROVIDER")(x.asInstanceOf[js.Any])
+    inline def DEFAULTPROVIDER_=(x: Hmacmd5): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULTPROVIDER")(x.asInstanceOf[js.Any])
     
     /** PKCS#1 DigestInfo heading hexadecimal bytes for each hash algorithms */
     @JSGlobal("jsrsasign.KJUR.crypto.Util.DIGESTINFOHEAD")
     @js.native
     def DIGESTINFOHEAD: Md2 = js.native
-    @scala.inline
-    def DIGESTINFOHEAD_=(x: Md2): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIGESTINFOHEAD")(x.asInstanceOf[js.Any])
+    inline def DIGESTINFOHEAD_=(x: Md2): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIGESTINFOHEAD")(x.asInstanceOf[js.Any])
     
     /**
       * get hexadecimal DigestInfo
@@ -637,8 +612,7 @@ object crypto {
       * @param alg hash algorithm name (ex. 'sha1')
       * @return hexadecimal string DigestInfo ASN.1 structure
       */
-    @scala.inline
-    def getDigestInfoHex(hHash: String, alg: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDigestInfoHex")(hHash.asInstanceOf[js.Any], alg.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getDigestInfoHex(hHash: String, alg: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDigestInfoHex")(hHash.asInstanceOf[js.Any], alg.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * get PKCS#1 padded hexadecimal DigestInfo
@@ -647,8 +621,7 @@ object crypto {
       * @param keySize key bit length (ex. 1024)
       * @return hexadecimal string of PKCS#1 padded DigestInfo
       */
-    @scala.inline
-    def getPaddedDigestInfoHex(hHash: String, alg: String, keySize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPaddedDigestInfoHex")(hHash.asInstanceOf[js.Any], alg.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getPaddedDigestInfoHex(hHash: String, alg: String, keySize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPaddedDigestInfoHex")(hHash.asInstanceOf[js.Any], alg.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * get BigInteger object of random value from min value to max value
@@ -664,8 +637,7 @@ object crypto {
       * biMax = new BigInteger("3fa411...", 16);
       * KJUR.crypto.Util.getRandomBigIntegerMinToMax(biMin, biMax) → 32f1... of BigInteger
       */
-    @scala.inline
-    def getRandomBigIntegerMinToMax(biMin: Double, biMax: Double): BigInteger = (^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBigIntegerMinToMax")(biMin.asInstanceOf[js.Any], biMax.asInstanceOf[js.Any])).asInstanceOf[BigInteger]
+    inline def getRandomBigIntegerMinToMax(biMin: Double, biMax: Double): BigInteger = (^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBigIntegerMinToMax")(biMin.asInstanceOf[js.Any], biMax.asInstanceOf[js.Any])).asInstanceOf[BigInteger]
     
     /**
       * get BigInteger object of random value from with specified bit length
@@ -675,8 +647,7 @@ object crypto {
       * KJUR.crypto.Util.getRandomBigIntegerOfNbits(24) → 6314af of BigInteger
       * KJUR.crypto.Util.getRandomBigIntegerOfNbits(1024) → 8fbc... of BigInteger
       */
-    @scala.inline
-    def getRandomBigIntegerOfNbits(n: Double): BigInteger = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBigIntegerOfNbits")(n.asInstanceOf[js.Any]).asInstanceOf[BigInteger]
+    inline def getRandomBigIntegerOfNbits(n: Double): BigInteger = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBigIntegerOfNbits")(n.asInstanceOf[js.Any]).asInstanceOf[BigInteger]
     
     /**
       * get BigInteger object of random value from with specified byte length
@@ -686,8 +657,7 @@ object crypto {
       * KJUR.crypto.Util.getRandomBigIntegerOfNbytes(3) → 6314af of BigInteger
       * KJUR.crypto.Util.getRandomBigIntegerOfNbytes(128) → 8fbc... of BigInteger
       */
-    @scala.inline
-    def getRandomBigIntegerOfNbytes(n: Double): BigInteger = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBigIntegerOfNbytes")(n.asInstanceOf[js.Any]).asInstanceOf[BigInteger]
+    inline def getRandomBigIntegerOfNbytes(n: Double): BigInteger = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBigIntegerOfNbytes")(n.asInstanceOf[js.Any]).asInstanceOf[BigInteger]
     
     /**
       * get BigInteger object of random value from zero to max value
@@ -701,8 +671,7 @@ object crypto {
       * biMax = new BigInteger("3fa411...", 16);
       * KJUR.crypto.Util.getRandomBigIntegerZeroToMax(biMax) → 8fbc... of BigInteger
       */
-    @scala.inline
-    def getRandomBigIntegerZeroToMax(biMax: Double): BigInteger = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBigIntegerZeroToMax")(biMax.asInstanceOf[js.Any]).asInstanceOf[BigInteger]
+    inline def getRandomBigIntegerZeroToMax(biMax: Double): BigInteger = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBigIntegerZeroToMax")(biMax.asInstanceOf[js.Any]).asInstanceOf[BigInteger]
     
     /**
       * get hexadecimal string of random value from with specified bit length
@@ -712,8 +681,7 @@ object crypto {
       * KJUR.crypto.Util.getRandomHexOfNbits(24) → "6314af", "000000" or "001fb4"
       * KJUR.crypto.Util.getRandomHexOfNbits(1024) → "8fbc..." in 1024bits
       */
-    @scala.inline
-    def getRandomHexOfNbits(n: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomHexOfNbits")(n.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getRandomHexOfNbits(n: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomHexOfNbits")(n.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * get hexadecimal string of random value from with specified byte length
@@ -723,8 +691,7 @@ object crypto {
       * KJUR.crypto.Util.getRandomHexOfNbytes(3) → "6314af", "000000" or "001fb4"
       * KJUR.crypto.Util.getRandomHexOfNbytes(128) → "8fbc..." in 1024bits
       */
-    @scala.inline
-    def getRandomHexOfNbytes(n: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomHexOfNbytes")(n.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getRandomHexOfNbytes(n: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomHexOfNbytes")(n.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * get hexadecimal hash of hexadecimal string with specified algorithm
@@ -732,8 +699,7 @@ object crypto {
       * @param alg hash algorithm name
       * @return hexadecimal string of hash value
       */
-    @scala.inline
-    def hashHex(sHex: String, alg: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hashHex")(sHex.asInstanceOf[js.Any], alg.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hashHex(sHex: String, alg: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hashHex")(sHex.asInstanceOf[js.Any], alg.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * get hexadecimal hash of string with specified algorithm
@@ -741,8 +707,7 @@ object crypto {
       * @param alg hash algorithm name
       * @return hexadecimal string of hash value
       */
-    @scala.inline
-    def hashString(s: String, alg: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hashString")(s.asInstanceOf[js.Any], alg.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hashString(s: String, alg: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hashString")(s.asInstanceOf[js.Any], alg.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * get hexadecimal MD5 hash of string
@@ -751,8 +716,7 @@ object crypto {
       * @example
       * Util.md5('aaa') → 47bce5c74f589f4867dbd57e9ca9f808
       */
-    @scala.inline
-    def md5(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def md5(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("md5")(s.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * get hexadecimal RIPEMD160 hash of string
@@ -761,34 +725,29 @@ object crypto {
       * @example
       * KJUR.crypto.Util.ripemd160("aaa") → 08889bd7b151aa174c21f33f59147fa65381edea
       */
-    @scala.inline
-    def ripemd160(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ripemd160")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ripemd160(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ripemd160")(s.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * get hexadecimal SHA1 hash of string
       * @param s input string to be hashed
       * @return hexadecimal string of hash value
       */
-    @scala.inline
-    def sha1(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def sha1(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(s.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * get hexadecimal SHA256 hash of string
       * @param s input string to be hashed
       * @return hexadecimal string of hash value
       */
-    @scala.inline
-    def sha256(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def sha256(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(s.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def sha256Hex(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256Hex")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def sha256Hex(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256Hex")(s.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * get hexadecimal SHA512 hash of string
       * @param s input string to be hashed
       * @return hexadecimal string of hash value
       */
-    @scala.inline
-    def sha512(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def sha512(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha512")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

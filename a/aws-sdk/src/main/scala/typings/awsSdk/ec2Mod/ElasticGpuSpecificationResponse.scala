@@ -13,19 +13,15 @@ trait ElasticGpuSpecificationResponse extends StObject {
 }
 object ElasticGpuSpecificationResponse {
   
-  @scala.inline
-  def apply(): ElasticGpuSpecificationResponse = {
+  inline def apply(): ElasticGpuSpecificationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElasticGpuSpecificationResponse]
   }
   
-  @scala.inline
-  implicit class ElasticGpuSpecificationResponseMutableBuilder[Self <: ElasticGpuSpecificationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticGpuSpecificationResponse](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

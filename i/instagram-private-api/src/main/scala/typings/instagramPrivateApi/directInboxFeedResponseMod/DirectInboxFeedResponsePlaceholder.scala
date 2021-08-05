@@ -14,22 +14,17 @@ trait DirectInboxFeedResponsePlaceholder extends StObject {
 }
 object DirectInboxFeedResponsePlaceholder {
   
-  @scala.inline
-  def apply(is_linked: Boolean, message: String, title: String): DirectInboxFeedResponsePlaceholder = {
+  inline def apply(is_linked: Boolean, message: String, title: String): DirectInboxFeedResponsePlaceholder = {
     val __obj = js.Dynamic.literal(is_linked = is_linked.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectInboxFeedResponsePlaceholder]
   }
   
-  @scala.inline
-  implicit class DirectInboxFeedResponsePlaceholderMutableBuilder[Self <: DirectInboxFeedResponsePlaceholder] (val x: Self) extends AnyVal {
+  extension [Self <: DirectInboxFeedResponsePlaceholder](x: Self) {
     
-    @scala.inline
-    def setIs_linked(value: Boolean): Self = StObject.set(x, "is_linked", value.asInstanceOf[js.Any])
+    inline def setIs_linked(value: Boolean): Self = StObject.set(x, "is_linked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

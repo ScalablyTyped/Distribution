@@ -22,28 +22,21 @@ trait SchemaGroupLicenseUsersListResponse extends StObject {
 }
 object SchemaGroupLicenseUsersListResponse {
   
-  @scala.inline
-  def apply(): SchemaGroupLicenseUsersListResponse = {
+  inline def apply(): SchemaGroupLicenseUsersListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGroupLicenseUsersListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGroupLicenseUsersListResponseMutableBuilder[Self <: SchemaGroupLicenseUsersListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGroupLicenseUsersListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setUser(value: js.Array[SchemaUser]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: js.Array[SchemaUser]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
-    @scala.inline
-    def setUserVarargs(value: SchemaUser*): Self = StObject.set(x, "user", js.Array(value :_*))
+    inline def setUserVarargs(value: SchemaUser*): Self = StObject.set(x, "user", js.Array(value :_*))
   }
 }

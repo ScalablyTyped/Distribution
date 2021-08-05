@@ -40,32 +40,23 @@ object mod {
   @JSImport("@vue/test-utils", "RouterLinkStub")
   @js.native
   def RouterLinkStub: VueClass[Vue] = js.native
-  @scala.inline
-  def RouterLinkStub_=(x: VueClass[Vue]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RouterLinkStub")(x.asInstanceOf[js.Any])
+  inline def RouterLinkStub_=(x: VueClass[Vue]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RouterLinkStub")(x.asInstanceOf[js.Any])
   
   @JSImport("@vue/test-utils", "config")
   @js.native
   def config: VueTestUtilsConfigOptions = js.native
-  @scala.inline
-  def config_=(x: VueTestUtilsConfigOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
+  inline def config_=(x: VueTestUtilsConfigOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def createLocalVue(): VueConstructor[Vue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLocalVue")().asInstanceOf[VueConstructor[Vue]]
+  inline def createLocalVue(): VueConstructor[Vue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLocalVue")().asInstanceOf[VueConstructor[Vue]]
   
-  @scala.inline
-  def createWrapper(node: HTMLElement): Wrapper[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWrapper")(node.asInstanceOf[js.Any]).asInstanceOf[Wrapper[Null]]
-  @scala.inline
-  def createWrapper(node: HTMLElement, options: WrapperOptions): Wrapper[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWrapper")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[Null]]
-  @scala.inline
-  def createWrapper(node: Vue): Wrapper[Vue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWrapper")(node.asInstanceOf[js.Any]).asInstanceOf[Wrapper[Vue]]
-  @scala.inline
-  def createWrapper(node: Vue, options: WrapperOptions): Wrapper[Vue] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWrapper")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[Vue]]
+  inline def createWrapper(node: HTMLElement): Wrapper[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWrapper")(node.asInstanceOf[js.Any]).asInstanceOf[Wrapper[Null]]
+  inline def createWrapper(node: HTMLElement, options: WrapperOptions): Wrapper[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWrapper")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[Null]]
+  inline def createWrapper(node: Vue): Wrapper[Vue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWrapper")(node.asInstanceOf[js.Any]).asInstanceOf[Wrapper[Vue]]
+  inline def createWrapper(node: Vue, options: WrapperOptions): Wrapper[Vue] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWrapper")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[Vue]]
   
-  @scala.inline
-  def enableAutoDestroy(hook: js.Function1[/* repeated */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableAutoDestroy")(hook.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enableAutoDestroy(hook: js.Function1[/* repeated */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableAutoDestroy")(hook.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def mount[V /* <: Vue */](
+  inline def mount[V /* <: Vue */](
     component: ComponentOptions[
       V, 
       DefaultData[V], 
@@ -75,8 +66,7 @@ object mod {
       DefaultProps
     ]
   ): Wrapper[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(component.asInstanceOf[js.Any]).asInstanceOf[Wrapper[V]]
-  @scala.inline
-  def mount[V /* <: Vue */](
+  inline def mount[V /* <: Vue */](
     component: ComponentOptions[
       V, 
       DefaultData[V], 
@@ -87,20 +77,14 @@ object mod {
     ],
     options: ThisTypedMountOptions[V]
   ): Wrapper[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[V]]
-  @scala.inline
-  def mount[V /* <: Vue */](component: VueClass[V]): Wrapper[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(component.asInstanceOf[js.Any]).asInstanceOf[Wrapper[V]]
-  @scala.inline
-  def mount[V /* <: Vue */](component: VueClass[V], options: ThisTypedMountOptions[V]): Wrapper[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[V]]
-  @scala.inline
-  def mount[Props, PropDefs](component: FunctionalComponentOptions[Props, PropDefs]): Wrapper[Vue] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(component.asInstanceOf[js.Any]).asInstanceOf[Wrapper[Vue]]
-  @scala.inline
-  def mount[Props, PropDefs](component: FunctionalComponentOptions[Props, PropDefs], options: MountOptions[Vue]): Wrapper[Vue] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[Vue]]
+  inline def mount[V /* <: Vue */](component: VueClass[V]): Wrapper[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(component.asInstanceOf[js.Any]).asInstanceOf[Wrapper[V]]
+  inline def mount[V /* <: Vue */](component: VueClass[V], options: ThisTypedMountOptions[V]): Wrapper[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[V]]
+  inline def mount[Props, PropDefs](component: FunctionalComponentOptions[Props, PropDefs]): Wrapper[Vue] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(component.asInstanceOf[js.Any]).asInstanceOf[Wrapper[Vue]]
+  inline def mount[Props, PropDefs](component: FunctionalComponentOptions[Props, PropDefs], options: MountOptions[Vue]): Wrapper[Vue] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[Vue]]
   
-  @scala.inline
-  def resetAutoDestroyState(hook: js.Function1[/* repeated */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetAutoDestroyState")(hook.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def resetAutoDestroyState(hook: js.Function1[/* repeated */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetAutoDestroyState")(hook.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def shallowMount[V /* <: Vue */](
+  inline def shallowMount[V /* <: Vue */](
     component: ComponentOptions[
       V, 
       DefaultData[V], 
@@ -110,8 +94,7 @@ object mod {
       DefaultProps
     ]
   ): Wrapper[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(component.asInstanceOf[js.Any]).asInstanceOf[Wrapper[V]]
-  @scala.inline
-  def shallowMount[V /* <: Vue */](
+  inline def shallowMount[V /* <: Vue */](
     component: ComponentOptions[
       V, 
       DefaultData[V], 
@@ -122,14 +105,10 @@ object mod {
     ],
     options: ThisTypedShallowMountOptions[V]
   ): Wrapper[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[V]]
-  @scala.inline
-  def shallowMount[V /* <: Vue */](component: VueClass[V]): Wrapper[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(component.asInstanceOf[js.Any]).asInstanceOf[Wrapper[V]]
-  @scala.inline
-  def shallowMount[V /* <: Vue */](component: VueClass[V], options: ThisTypedShallowMountOptions[V]): Wrapper[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[V]]
-  @scala.inline
-  def shallowMount[Props, PropDefs](component: FunctionalComponentOptions[Props, PropDefs]): Wrapper[Vue] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(component.asInstanceOf[js.Any]).asInstanceOf[Wrapper[Vue]]
-  @scala.inline
-  def shallowMount[Props, PropDefs](component: FunctionalComponentOptions[Props, PropDefs], options: ShallowMountOptions[Vue]): Wrapper[Vue] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[Vue]]
+  inline def shallowMount[V /* <: Vue */](component: VueClass[V]): Wrapper[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(component.asInstanceOf[js.Any]).asInstanceOf[Wrapper[V]]
+  inline def shallowMount[V /* <: Vue */](component: VueClass[V], options: ThisTypedShallowMountOptions[V]): Wrapper[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[V]]
+  inline def shallowMount[Props, PropDefs](component: FunctionalComponentOptions[Props, PropDefs]): Wrapper[Vue] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(component.asInstanceOf[js.Any]).asInstanceOf[Wrapper[Vue]]
+  inline def shallowMount[Props, PropDefs](component: FunctionalComponentOptions[Props, PropDefs], options: ShallowMountOptions[Vue]): Wrapper[Vue] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[Vue]]
   
   /**
     * Base class of Wrapper and WrapperArray
@@ -224,59 +203,42 @@ object mod {
   }
   object MountOptions {
     
-    @scala.inline
-    def apply[V /* <: Vue */](): MountOptions[V] = {
+    inline def apply[V /* <: Vue */](): MountOptions[V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MountOptions[V]]
     }
     
-    @scala.inline
-    implicit class MountOptionsMutableBuilder[Self <: MountOptions[?], V /* <: Vue */] (val x: Self & MountOptions[V]) extends AnyVal {
+    extension [Self <: MountOptions[?], V /* <: Vue */](x: Self & MountOptions[V]) {
       
-      @scala.inline
-      def setAttachTo(value: Element | String): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
+      inline def setAttachTo(value: Element | String): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachToDocument(value: Boolean): Self = StObject.set(x, "attachToDocument", value.asInstanceOf[js.Any])
+      inline def setAttachToDocument(value: Boolean): Self = StObject.set(x, "attachToDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachToDocumentUndefined: Self = StObject.set(x, "attachToDocument", js.undefined)
+      inline def setAttachToDocumentUndefined: Self = StObject.set(x, "attachToDocument", js.undefined)
       
-      @scala.inline
-      def setAttachToUndefined: Self = StObject.set(x, "attachTo", js.undefined)
+      inline def setAttachToUndefined: Self = StObject.set(x, "attachTo", js.undefined)
       
-      @scala.inline
-      def setAttrs(value: Record[String, String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: Record[String, String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setContext(value: VNodeData): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: VNodeData): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setListeners(value: Record[String, js.Function | js.Array[js.Function]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: Record[String, js.Function | js.Array[js.Function]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
+      inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
       
-      @scala.inline
-      def setLocalVue(value: VueConstructor[Vue]): Self = StObject.set(x, "localVue", value.asInstanceOf[js.Any])
+      inline def setLocalVue(value: VueConstructor[Vue]): Self = StObject.set(x, "localVue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalVueUndefined: Self = StObject.set(x, "localVue", js.undefined)
+      inline def setLocalVueUndefined: Self = StObject.set(x, "localVue", js.undefined)
       
-      @scala.inline
-      def setMocks(value: js.Object | `false`): Self = StObject.set(x, "mocks", value.asInstanceOf[js.Any])
+      inline def setMocks(value: js.Object | `false`): Self = StObject.set(x, "mocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMocksUndefined: Self = StObject.set(x, "mocks", js.undefined)
+      inline def setMocksUndefined: Self = StObject.set(x, "mocks", js.undefined)
       
-      @scala.inline
-      def setParentComponent(
+      inline def setParentComponent(
         value: Component[
               DefaultData[scala.Nothing], 
               DefaultMethods[scala.Nothing], 
@@ -285,29 +247,21 @@ object mod {
             ]
       ): Self = StObject.set(x, "parentComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentComponentUndefined: Self = StObject.set(x, "parentComponent", js.undefined)
+      inline def setParentComponentUndefined: Self = StObject.set(x, "parentComponent", js.undefined)
       
-      @scala.inline
-      def setScopedSlots(value: Record[String, String | js.Function]): Self = StObject.set(x, "scopedSlots", value.asInstanceOf[js.Any])
+      inline def setScopedSlots(value: Record[String, String | js.Function]): Self = StObject.set(x, "scopedSlots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopedSlotsUndefined: Self = StObject.set(x, "scopedSlots", js.undefined)
+      inline def setScopedSlotsUndefined: Self = StObject.set(x, "scopedSlots", js.undefined)
       
-      @scala.inline
-      def setSlots(value: Slots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: Slots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
+      inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
-      @scala.inline
-      def setStubs(value: Stubs | `false`): Self = StObject.set(x, "stubs", value.asInstanceOf[js.Any])
+      inline def setStubs(value: Stubs | `false`): Self = StObject.set(x, "stubs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStubsUndefined: Self = StObject.set(x, "stubs", js.undefined)
+      inline def setStubsUndefined: Self = StObject.set(x, "stubs", js.undefined)
       
-      @scala.inline
-      def setStubsVarargs(value: String*): Self = StObject.set(x, "stubs", js.Array(value :_*))
+      inline def setStubsVarargs(value: String*): Self = StObject.set(x, "stubs", js.Array(value :_*))
     }
   }
   
@@ -320,17 +274,14 @@ object mod {
   }
   object NameSelector {
     
-    @scala.inline
-    def apply(name: String): NameSelector = {
+    inline def apply(name: String): NameSelector = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[NameSelector]
     }
     
-    @scala.inline
-    implicit class NameSelectorMutableBuilder[Self <: NameSelector] (val x: Self) extends AnyVal {
+    extension [Self <: NameSelector](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -343,17 +294,14 @@ object mod {
   }
   object RefSelector {
     
-    @scala.inline
-    def apply(ref: String): RefSelector = {
+    inline def apply(ref: String): RefSelector = {
       val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
       __obj.asInstanceOf[RefSelector]
     }
     
-    @scala.inline
-    implicit class RefSelectorMutableBuilder[Self <: RefSelector] (val x: Self) extends AnyVal {
+    extension [Self <: RefSelector](x: Self) {
       
-      @scala.inline
-      def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
   }
   
@@ -407,8 +355,7 @@ object mod {
        with ThisType[V]
   object ThisTypedMountOptions {
     
-    @scala.inline
-    def apply[V /* <: Vue */](): ThisTypedMountOptions[V] = {
+    inline def apply[V /* <: Vue */](): ThisTypedMountOptions[V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThisTypedMountOptions[V]]
     }
@@ -420,8 +367,7 @@ object mod {
        with ThisType[V]
   object ThisTypedShallowMountOptions {
     
-    @scala.inline
-    def apply[V /* <: Vue */](): ThisTypedShallowMountOptions[V] = {
+    inline def apply[V /* <: Vue */](): ThisTypedShallowMountOptions[V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThisTypedShallowMountOptions[V]]
     }
@@ -458,8 +404,7 @@ object mod {
   }
   object VueTestUtilsConfigOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       methods: Record[String, js.Function],
       mocks: Record[String, js.Any],
       stubs: Record[
@@ -476,41 +421,29 @@ object mod {
       __obj.asInstanceOf[VueTestUtilsConfigOptions]
     }
     
-    @scala.inline
-    implicit class VueTestUtilsConfigOptionsMutableBuilder[Self <: VueTestUtilsConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VueTestUtilsConfigOptions](x: Self) {
       
-      @scala.inline
-      def setDeprecationWarningHandler(value: js.Function): Self = StObject.set(x, "deprecationWarningHandler", value.asInstanceOf[js.Any])
+      inline def setDeprecationWarningHandler(value: js.Function): Self = StObject.set(x, "deprecationWarningHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecationWarningHandlerUndefined: Self = StObject.set(x, "deprecationWarningHandler", js.undefined)
+      inline def setDeprecationWarningHandlerUndefined: Self = StObject.set(x, "deprecationWarningHandler", js.undefined)
       
-      @scala.inline
-      def setMethods(value: Record[String, js.Function]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: Record[String, js.Function]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMocks(value: Record[String, js.Any]): Self = StObject.set(x, "mocks", value.asInstanceOf[js.Any])
+      inline def setMocks(value: Record[String, js.Any]): Self = StObject.set(x, "mocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvide(value: Record[String, js.Any]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+      inline def setProvide(value: Record[String, js.Any]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvideUndefined: Self = StObject.set(x, "provide", js.undefined)
+      inline def setProvideUndefined: Self = StObject.set(x, "provide", js.undefined)
       
-      @scala.inline
-      def setShowDeprecationWarnings(value: Boolean): Self = StObject.set(x, "showDeprecationWarnings", value.asInstanceOf[js.Any])
+      inline def setShowDeprecationWarnings(value: Boolean): Self = StObject.set(x, "showDeprecationWarnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDeprecationWarningsUndefined: Self = StObject.set(x, "showDeprecationWarnings", js.undefined)
+      inline def setShowDeprecationWarningsUndefined: Self = StObject.set(x, "showDeprecationWarnings", js.undefined)
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
       
-      @scala.inline
-      def setStubs(
+      inline def setStubs(
         value: Record[
               String, 
               (Component[
@@ -647,20 +580,16 @@ object mod {
   }
   object WrapperOptions {
     
-    @scala.inline
-    def apply(): WrapperOptions = {
+    inline def apply(): WrapperOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WrapperOptions]
     }
     
-    @scala.inline
-    implicit class WrapperOptionsMutableBuilder[Self <: WrapperOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WrapperOptions](x: Self) {
       
-      @scala.inline
-      def setAttachedToDocument(value: Boolean): Self = StObject.set(x, "attachedToDocument", value.asInstanceOf[js.Any])
+      inline def setAttachedToDocument(value: Boolean): Self = StObject.set(x, "attachedToDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachedToDocumentUndefined: Self = StObject.set(x, "attachedToDocument", js.undefined)
+      inline def setAttachedToDocumentUndefined: Self = StObject.set(x, "attachedToDocument", js.undefined)
     }
   }
 }

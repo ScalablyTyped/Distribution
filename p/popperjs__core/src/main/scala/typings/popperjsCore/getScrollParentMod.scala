@@ -12,6 +12,5 @@ object getScrollParentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(node: Node): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def default(node: Node): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
 }

@@ -37,8 +37,7 @@ object mod {
       * #### Complexity
       * `O(n log32 n)`
       */
-    @scala.inline
-    def from[T](items: IterableOrArrayLike[T], cmp: js.Function2[/* a */ T, /* b */ T, Double]): typings.luminoCollections.bplustreeMod.BPlusTree[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[typings.luminoCollections.bplustreeMod.BPlusTree[T]]
+    inline def from[T](items: IterableOrArrayLike[T], cmp: js.Function2[/* a */ T, /* b */ T, Double]): typings.luminoCollections.bplustreeMod.BPlusTree[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[typings.luminoCollections.bplustreeMod.BPlusTree[T]]
   }
   
   @JSImport("@lumino/collections", "LinkedList")
@@ -124,7 +123,6 @@ object mod {
       * #### Complexity
       * Linear.
       */
-    @scala.inline
-    def from[T](values: IterableOrArrayLike[T]): typings.luminoCollections.linkedlistMod.LinkedList[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(values.asInstanceOf[js.Any]).asInstanceOf[typings.luminoCollections.linkedlistMod.LinkedList[T]]
+    inline def from[T](values: IterableOrArrayLike[T]): typings.luminoCollections.linkedlistMod.LinkedList[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(values.asInstanceOf[js.Any]).asInstanceOf[typings.luminoCollections.linkedlistMod.LinkedList[T]]
   }
 }

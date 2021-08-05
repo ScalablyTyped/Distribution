@@ -37,11 +37,9 @@ object UpdateToLatestLedgerRequest {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): UpdateToLatestLedgerRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[UpdateToLatestLedgerRequest]
+  inline def deserializeBinary(bytes: Uint8Array): UpdateToLatestLedgerRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[UpdateToLatestLedgerRequest]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: UpdateToLatestLedgerRequest, reader: BinaryReader): UpdateToLatestLedgerRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[UpdateToLatestLedgerRequest]
+  inline def deserializeBinaryFromReader(message: UpdateToLatestLedgerRequest, reader: BinaryReader): UpdateToLatestLedgerRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[UpdateToLatestLedgerRequest]
   
   @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "UpdateToLatestLedgerRequest.extensions")
   @js.native
@@ -50,17 +48,13 @@ object UpdateToLatestLedgerRequest {
   @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "UpdateToLatestLedgerRequest.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: UpdateToLatestLedgerRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: UpdateToLatestLedgerRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: UpdateToLatestLedgerRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: UpdateToLatestLedgerRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -70,8 +64,7 @@ object UpdateToLatestLedgerRequest {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientKnownVersion: String,
       requestedItemsList: js.Array[typings.libraCore.getWithProofPbMod.RequestItem.AsObject]
     ): AsObject = {
@@ -79,17 +72,13 @@ object UpdateToLatestLedgerRequest {
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setClientKnownVersion(value: String): Self = StObject.set(x, "clientKnownVersion", value.asInstanceOf[js.Any])
+      inline def setClientKnownVersion(value: String): Self = StObject.set(x, "clientKnownVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestedItemsList(value: js.Array[typings.libraCore.getWithProofPbMod.RequestItem.AsObject]): Self = StObject.set(x, "requestedItemsList", value.asInstanceOf[js.Any])
+      inline def setRequestedItemsList(value: js.Array[typings.libraCore.getWithProofPbMod.RequestItem.AsObject]): Self = StObject.set(x, "requestedItemsList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestedItemsListVarargs(value: typings.libraCore.getWithProofPbMod.RequestItem.AsObject*): Self = StObject.set(x, "requestedItemsList", js.Array(value :_*))
+      inline def setRequestedItemsListVarargs(value: typings.libraCore.getWithProofPbMod.RequestItem.AsObject*): Self = StObject.set(x, "requestedItemsList", js.Array(value :_*))
     }
   }
 }

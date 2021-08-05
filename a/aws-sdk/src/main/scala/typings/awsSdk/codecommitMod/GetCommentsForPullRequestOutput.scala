@@ -18,28 +18,21 @@ trait GetCommentsForPullRequestOutput extends StObject {
 }
 object GetCommentsForPullRequestOutput {
   
-  @scala.inline
-  def apply(): GetCommentsForPullRequestOutput = {
+  inline def apply(): GetCommentsForPullRequestOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCommentsForPullRequestOutput]
   }
   
-  @scala.inline
-  implicit class GetCommentsForPullRequestOutputMutableBuilder[Self <: GetCommentsForPullRequestOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetCommentsForPullRequestOutput](x: Self) {
     
-    @scala.inline
-    def setCommentsForPullRequestData(value: CommentsForPullRequestData): Self = StObject.set(x, "commentsForPullRequestData", value.asInstanceOf[js.Any])
+    inline def setCommentsForPullRequestData(value: CommentsForPullRequestData): Self = StObject.set(x, "commentsForPullRequestData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsForPullRequestDataUndefined: Self = StObject.set(x, "commentsForPullRequestData", js.undefined)
+    inline def setCommentsForPullRequestDataUndefined: Self = StObject.set(x, "commentsForPullRequestData", js.undefined)
     
-    @scala.inline
-    def setCommentsForPullRequestDataVarargs(value: CommentsForPullRequest*): Self = StObject.set(x, "commentsForPullRequestData", js.Array(value :_*))
+    inline def setCommentsForPullRequestDataVarargs(value: CommentsForPullRequest*): Self = StObject.set(x, "commentsForPullRequestData", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

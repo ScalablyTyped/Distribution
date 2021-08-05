@@ -12,25 +12,19 @@ trait ServiceWorkerRegistration extends StObject {
 }
 object ServiceWorkerRegistration {
   
-  @scala.inline
-  def apply(): ServiceWorkerRegistration = {
+  inline def apply(): ServiceWorkerRegistration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceWorkerRegistration]
   }
   
-  @scala.inline
-  implicit class ServiceWorkerRegistrationMutableBuilder[Self <: ServiceWorkerRegistration] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceWorkerRegistration](x: Self) {
     
-    @scala.inline
-    def setServiceWorkerRegistration(value: typings.std.ServiceWorkerRegistration): Self = StObject.set(x, "serviceWorkerRegistration", value.asInstanceOf[js.Any])
+    inline def setServiceWorkerRegistration(value: typings.std.ServiceWorkerRegistration): Self = StObject.set(x, "serviceWorkerRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceWorkerRegistrationUndefined: Self = StObject.set(x, "serviceWorkerRegistration", js.undefined)
+    inline def setServiceWorkerRegistrationUndefined: Self = StObject.set(x, "serviceWorkerRegistration", js.undefined)
     
-    @scala.inline
-    def setVapidKey(value: String): Self = StObject.set(x, "vapidKey", value.asInstanceOf[js.Any])
+    inline def setVapidKey(value: String): Self = StObject.set(x, "vapidKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVapidKeyUndefined: Self = StObject.set(x, "vapidKey", js.undefined)
+    inline def setVapidKeyUndefined: Self = StObject.set(x, "vapidKey", js.undefined)
   }
 }

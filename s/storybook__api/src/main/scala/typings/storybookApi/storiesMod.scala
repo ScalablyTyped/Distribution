@@ -23,20 +23,15 @@ object storiesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def denormalizeStoryParameters(hasGlobalParametersKindParametersStories: SetStoriesPayload): StoriesRaw = ^.asInstanceOf[js.Dynamic].applyDynamic("denormalizeStoryParameters")(hasGlobalParametersKindParametersStories.asInstanceOf[js.Any]).asInstanceOf[StoriesRaw]
+  inline def denormalizeStoryParameters(hasGlobalParametersKindParametersStories: SetStoriesPayload): StoriesRaw = ^.asInstanceOf[js.Dynamic].applyDynamic("denormalizeStoryParameters")(hasGlobalParametersKindParametersStories.asInstanceOf[js.Any]).asInstanceOf[StoriesRaw]
   
-  @scala.inline
-  def isGroup(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Group */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGroup")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/api.@storybook/api/dist/lib/stories.Group */ Boolean]
+  inline def isGroup(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Group */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGroup")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/api.@storybook/api/dist/lib/stories.Group */ Boolean]
   
-  @scala.inline
-  def isRoot(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Root */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRoot")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/api.@storybook/api/dist/lib/stories.Root */ Boolean]
+  inline def isRoot(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Root */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRoot")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/api.@storybook/api/dist/lib/stories.Root */ Boolean]
   
-  @scala.inline
-  def isStory(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Story */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStory")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/api.@storybook/api/dist/lib/stories.Story */ Boolean]
+  inline def isStory(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Story */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStory")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/api.@storybook/api/dist/lib/stories.Story */ Boolean]
   
-  @scala.inline
-  def transformStoriesRawToStoriesHash(input: StoriesRaw, hasProvider: Provider): StoriesHash = (^.asInstanceOf[js.Dynamic].applyDynamic("transformStoriesRawToStoriesHash")(input.asInstanceOf[js.Any], hasProvider.asInstanceOf[js.Any])).asInstanceOf[StoriesHash]
+  inline def transformStoriesRawToStoriesHash(input: StoriesRaw, hasProvider: Provider): StoriesHash = (^.asInstanceOf[js.Dynamic].applyDynamic("transformStoriesRawToStoriesHash")(input.asInstanceOf[js.Any], hasProvider.asInstanceOf[js.Any])).asInstanceOf[StoriesHash]
   
   trait Group extends StObject {
     
@@ -62,56 +57,40 @@ object storiesMod {
   }
   object Group {
     
-    @scala.inline
-    def apply(children: js.Array[StoryId], depth: Double, id: StoryId, isComponent: Boolean, name: String): Group = {
+    inline def apply(children: js.Array[StoryId], depth: Double, id: StoryId, isComponent: Boolean, name: String): Group = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], isLeaf = false, isRoot = false, name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Group]
     }
     
-    @scala.inline
-    implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+    extension [Self <: Group](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[StoryId]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[StoryId]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: StoryId*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: StoryId*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsComponent(value: Boolean): Self = StObject.set(x, "isComponent", value.asInstanceOf[js.Any])
+      inline def setIsComponent(value: Boolean): Self = StObject.set(x, "isComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLeaf(value: `false`): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
+      inline def setIsLeaf(value: `false`): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRoot(value: `false`): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
+      inline def setIsRoot(value: `false`): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameters(value: DocsOnly): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: DocsOnly): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setParent(value: StoryId): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: StoryId): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+      inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
+      inline def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
     }
   }
   
@@ -135,41 +114,29 @@ object storiesMod {
   trait Item extends StObject
   object Item {
     
-    @scala.inline
-    def args: typings.storybookApi.storybookApiStrings.args = "args".asInstanceOf[typings.storybookApi.storybookApiStrings.args]
+    inline def args: typings.storybookApi.storybookApiStrings.args = "args".asInstanceOf[typings.storybookApi.storybookApiStrings.args]
     
-    @scala.inline
-    def children: typings.storybookApi.storybookApiStrings.children = "children".asInstanceOf[typings.storybookApi.storybookApiStrings.children]
+    inline def children: typings.storybookApi.storybookApiStrings.children = "children".asInstanceOf[typings.storybookApi.storybookApiStrings.children]
     
-    @scala.inline
-    def depth: typings.storybookApi.storybookApiStrings.depth = "depth".asInstanceOf[typings.storybookApi.storybookApiStrings.depth]
+    inline def depth: typings.storybookApi.storybookApiStrings.depth = "depth".asInstanceOf[typings.storybookApi.storybookApiStrings.depth]
     
-    @scala.inline
-    def id: typings.storybookApi.storybookApiStrings.id = "id".asInstanceOf[typings.storybookApi.storybookApiStrings.id]
+    inline def id: typings.storybookApi.storybookApiStrings.id = "id".asInstanceOf[typings.storybookApi.storybookApiStrings.id]
     
-    @scala.inline
-    def isComponent: typings.storybookApi.storybookApiStrings.isComponent = "isComponent".asInstanceOf[typings.storybookApi.storybookApiStrings.isComponent]
+    inline def isComponent: typings.storybookApi.storybookApiStrings.isComponent = "isComponent".asInstanceOf[typings.storybookApi.storybookApiStrings.isComponent]
     
-    @scala.inline
-    def isLeaf: typings.storybookApi.storybookApiStrings.isLeaf = "isLeaf".asInstanceOf[typings.storybookApi.storybookApiStrings.isLeaf]
+    inline def isLeaf: typings.storybookApi.storybookApiStrings.isLeaf = "isLeaf".asInstanceOf[typings.storybookApi.storybookApiStrings.isLeaf]
     
-    @scala.inline
-    def isRoot: typings.storybookApi.storybookApiStrings.isRoot = "isRoot".asInstanceOf[typings.storybookApi.storybookApiStrings.isRoot]
+    inline def isRoot: typings.storybookApi.storybookApiStrings.isRoot = "isRoot".asInstanceOf[typings.storybookApi.storybookApiStrings.isRoot]
     
-    @scala.inline
-    def kind: typings.storybookApi.storybookApiStrings.kind = "kind".asInstanceOf[typings.storybookApi.storybookApiStrings.kind]
+    inline def kind: typings.storybookApi.storybookApiStrings.kind = "kind".asInstanceOf[typings.storybookApi.storybookApiStrings.kind]
     
-    @scala.inline
-    def name: typings.storybookApi.storybookApiStrings.name = "name".asInstanceOf[typings.storybookApi.storybookApiStrings.name]
+    inline def name: typings.storybookApi.storybookApiStrings.name = "name".asInstanceOf[typings.storybookApi.storybookApiStrings.name]
     
-    @scala.inline
-    def parameters: typings.storybookApi.storybookApiStrings.parameters = "parameters".asInstanceOf[typings.storybookApi.storybookApiStrings.parameters]
+    inline def parameters: typings.storybookApi.storybookApiStrings.parameters = "parameters".asInstanceOf[typings.storybookApi.storybookApiStrings.parameters]
     
-    @scala.inline
-    def parent: typings.storybookApi.storybookApiStrings.parent = "parent".asInstanceOf[typings.storybookApi.storybookApiStrings.parent]
+    inline def parent: typings.storybookApi.storybookApiStrings.parent = "parent".asInstanceOf[typings.storybookApi.storybookApiStrings.parent]
     
-    @scala.inline
-    def refId: typings.storybookApi.storybookApiStrings.refId = "refId".asInstanceOf[typings.storybookApi.storybookApiStrings.refId]
+    inline def refId: typings.storybookApi.storybookApiStrings.refId = "refId".asInstanceOf[typings.storybookApi.storybookApiStrings.refId]
   }
   
   trait Root extends StObject {
@@ -192,44 +159,32 @@ object storiesMod {
   }
   object Root {
     
-    @scala.inline
-    def apply(children: js.Array[StoryId], id: StoryId, name: String): Root = {
+    inline def apply(children: js.Array[StoryId], id: StoryId, name: String): Root = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], depth = 0, id = id.asInstanceOf[js.Any], isComponent = false, isLeaf = false, isRoot = true, name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Root]
     }
     
-    @scala.inline
-    implicit class RootMutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
+    extension [Self <: Root](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[StoryId]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[StoryId]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: StoryId*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: StoryId*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setDepth(value: `0`): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: `0`): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsComponent(value: `false`): Self = StObject.set(x, "isComponent", value.asInstanceOf[js.Any])
+      inline def setIsComponent(value: `false`): Self = StObject.set(x, "isComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLeaf(value: `false`): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
+      inline def setIsLeaf(value: `false`): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRoot(value: `true`): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
+      inline def setIsRoot(value: `true`): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+      inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
+      inline def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
     }
   }
   
@@ -269,8 +224,7 @@ object storiesMod {
   }
   object Story {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       args: Args,
       depth: Double,
       id: StoryId,
@@ -283,56 +237,39 @@ object storiesMod {
       __obj.asInstanceOf[Story]
     }
     
-    @scala.inline
-    implicit class StoryMutableBuilder[Self <: Story] (val x: Self) extends AnyVal {
+    extension [Self <: Story](x: Self) {
       
-      @scala.inline
-      def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: js.Array[StoryId]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[StoryId]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: StoryId*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: StoryId*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsComponent(value: Boolean): Self = StObject.set(x, "isComponent", value.asInstanceOf[js.Any])
+      inline def setIsComponent(value: Boolean): Self = StObject.set(x, "isComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLeaf(value: `true`): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
+      inline def setIsLeaf(value: `true`): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRoot(value: `false`): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
+      inline def setIsRoot(value: `false`): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: StoryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: StoryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameters(value: DictparameterName): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: DictparameterName): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setParent(value: StoryId): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: StoryId): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+      inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
+      inline def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
     }
   }
   
@@ -356,8 +293,7 @@ object storiesMod {
   }
   object StoryInput {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       args: Args,
       children: js.Array[String],
       id: StoryId,
@@ -370,38 +306,27 @@ object storiesMod {
       __obj.asInstanceOf[StoryInput]
     }
     
-    @scala.inline
-    implicit class StoryInputMutableBuilder[Self <: StoryInput] (val x: Self) extends AnyVal {
+    extension [Self <: StoryInput](x: Self) {
       
-      @scala.inline
-      def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
+      inline def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: StoryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: StoryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameters(value: DictparameterName): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: DictparameterName): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+      inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
+      inline def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
     }
   }
 }

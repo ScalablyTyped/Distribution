@@ -15,19 +15,16 @@ object inputItemLocaleSvSEMod {
     @JSImport("antd-mobile-rn/lib/input-item/locale/sv_SE", "default.backspaceLabel")
     @js.native
     def backspaceLabel: String = js.native
-    @scala.inline
-    def backspaceLabel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backspaceLabel")(x.asInstanceOf[js.Any])
+    inline def backspaceLabel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backspaceLabel")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/input-item/locale/sv_SE", "default.cancelKeyboardLabel")
     @js.native
     def cancelKeyboardLabel: String = js.native
-    @scala.inline
-    def cancelKeyboardLabel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelKeyboardLabel")(x.asInstanceOf[js.Any])
+    inline def cancelKeyboardLabel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelKeyboardLabel")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/input-item/locale/sv_SE", "default.confirmLabel")
     @js.native
     def confirmLabel: String = js.native
-    @scala.inline
-    def confirmLabel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("confirmLabel")(x.asInstanceOf[js.Any])
+    inline def confirmLabel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("confirmLabel")(x.asInstanceOf[js.Any])
   }
 }

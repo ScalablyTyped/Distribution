@@ -58,73 +58,51 @@ trait BackupSummary extends StObject {
 }
 object BackupSummary {
   
-  @scala.inline
-  def apply(): BackupSummary = {
+  inline def apply(): BackupSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackupSummary]
   }
   
-  @scala.inline
-  implicit class BackupSummaryMutableBuilder[Self <: BackupSummary] (val x: Self) extends AnyVal {
+  extension [Self <: BackupSummary](x: Self) {
     
-    @scala.inline
-    def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
+    inline def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupArnUndefined: Self = StObject.set(x, "BackupArn", js.undefined)
+    inline def setBackupArnUndefined: Self = StObject.set(x, "BackupArn", js.undefined)
     
-    @scala.inline
-    def setBackupCreationDateTime(value: BackupCreationDateTime): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
+    inline def setBackupCreationDateTime(value: BackupCreationDateTime): Self = StObject.set(x, "BackupCreationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupCreationDateTimeUndefined: Self = StObject.set(x, "BackupCreationDateTime", js.undefined)
+    inline def setBackupCreationDateTimeUndefined: Self = StObject.set(x, "BackupCreationDateTime", js.undefined)
     
-    @scala.inline
-    def setBackupExpiryDateTime(value: Date): Self = StObject.set(x, "BackupExpiryDateTime", value.asInstanceOf[js.Any])
+    inline def setBackupExpiryDateTime(value: Date): Self = StObject.set(x, "BackupExpiryDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupExpiryDateTimeUndefined: Self = StObject.set(x, "BackupExpiryDateTime", js.undefined)
+    inline def setBackupExpiryDateTimeUndefined: Self = StObject.set(x, "BackupExpiryDateTime", js.undefined)
     
-    @scala.inline
-    def setBackupName(value: BackupName): Self = StObject.set(x, "BackupName", value.asInstanceOf[js.Any])
+    inline def setBackupName(value: BackupName): Self = StObject.set(x, "BackupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupNameUndefined: Self = StObject.set(x, "BackupName", js.undefined)
+    inline def setBackupNameUndefined: Self = StObject.set(x, "BackupName", js.undefined)
     
-    @scala.inline
-    def setBackupSizeBytes(value: BackupSizeBytes): Self = StObject.set(x, "BackupSizeBytes", value.asInstanceOf[js.Any])
+    inline def setBackupSizeBytes(value: BackupSizeBytes): Self = StObject.set(x, "BackupSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupSizeBytesUndefined: Self = StObject.set(x, "BackupSizeBytes", js.undefined)
+    inline def setBackupSizeBytesUndefined: Self = StObject.set(x, "BackupSizeBytes", js.undefined)
     
-    @scala.inline
-    def setBackupStatus(value: BackupStatus): Self = StObject.set(x, "BackupStatus", value.asInstanceOf[js.Any])
+    inline def setBackupStatus(value: BackupStatus): Self = StObject.set(x, "BackupStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupStatusUndefined: Self = StObject.set(x, "BackupStatus", js.undefined)
+    inline def setBackupStatusUndefined: Self = StObject.set(x, "BackupStatus", js.undefined)
     
-    @scala.inline
-    def setBackupType(value: BackupType): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
+    inline def setBackupType(value: BackupType): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupTypeUndefined: Self = StObject.set(x, "BackupType", js.undefined)
+    inline def setBackupTypeUndefined: Self = StObject.set(x, "BackupType", js.undefined)
     
-    @scala.inline
-    def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
+    inline def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
+    inline def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
     
-    @scala.inline
-    def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableIdUndefined: Self = StObject.set(x, "TableId", js.undefined)
+    inline def setTableIdUndefined: Self = StObject.set(x, "TableId", js.undefined)
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+    inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
   }
 }

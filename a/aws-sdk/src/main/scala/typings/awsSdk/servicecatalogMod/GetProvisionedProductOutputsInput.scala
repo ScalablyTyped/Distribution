@@ -38,52 +38,37 @@ trait GetProvisionedProductOutputsInput extends StObject {
 }
 object GetProvisionedProductOutputsInput {
   
-  @scala.inline
-  def apply(): GetProvisionedProductOutputsInput = {
+  inline def apply(): GetProvisionedProductOutputsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetProvisionedProductOutputsInput]
   }
   
-  @scala.inline
-  implicit class GetProvisionedProductOutputsInputMutableBuilder[Self <: GetProvisionedProductOutputsInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetProvisionedProductOutputsInput](x: Self) {
     
-    @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
+    inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
-    @scala.inline
-    def setOutputKeys(value: OutputKeys): Self = StObject.set(x, "OutputKeys", value.asInstanceOf[js.Any])
+    inline def setOutputKeys(value: OutputKeys): Self = StObject.set(x, "OutputKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputKeysUndefined: Self = StObject.set(x, "OutputKeys", js.undefined)
+    inline def setOutputKeysUndefined: Self = StObject.set(x, "OutputKeys", js.undefined)
     
-    @scala.inline
-    def setOutputKeysVarargs(value: OutputKey*): Self = StObject.set(x, "OutputKeys", js.Array(value :_*))
+    inline def setOutputKeysVarargs(value: OutputKey*): Self = StObject.set(x, "OutputKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
     
-    @scala.inline
-    def setProvisionedProductId(value: Id): Self = StObject.set(x, "ProvisionedProductId", value.asInstanceOf[js.Any])
+    inline def setProvisionedProductId(value: Id): Self = StObject.set(x, "ProvisionedProductId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedProductIdUndefined: Self = StObject.set(x, "ProvisionedProductId", js.undefined)
+    inline def setProvisionedProductIdUndefined: Self = StObject.set(x, "ProvisionedProductId", js.undefined)
     
-    @scala.inline
-    def setProvisionedProductName(value: ProvisionedProductName): Self = StObject.set(x, "ProvisionedProductName", value.asInstanceOf[js.Any])
+    inline def setProvisionedProductName(value: ProvisionedProductName): Self = StObject.set(x, "ProvisionedProductName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedProductNameUndefined: Self = StObject.set(x, "ProvisionedProductName", js.undefined)
+    inline def setProvisionedProductNameUndefined: Self = StObject.set(x, "ProvisionedProductName", js.undefined)
   }
 }

@@ -16,8 +16,7 @@ trait Element extends StObject {
 }
 object Element {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     element: typings.std.Element,
     model: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]
   ): Element = {
@@ -25,13 +24,10 @@ object Element {
     __obj.asInstanceOf[Element]
   }
   
-  @scala.inline
-  implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+  extension [Self <: Element](x: Self) {
     
-    @scala.inline
-    def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }
 }

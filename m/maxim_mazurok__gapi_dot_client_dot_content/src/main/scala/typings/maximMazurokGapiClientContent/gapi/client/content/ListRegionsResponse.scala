@@ -14,28 +14,21 @@ trait ListRegionsResponse extends StObject {
 }
 object ListRegionsResponse {
   
-  @scala.inline
-  def apply(): ListRegionsResponse = {
+  inline def apply(): ListRegionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRegionsResponse]
   }
   
-  @scala.inline
-  implicit class ListRegionsResponseMutableBuilder[Self <: ListRegionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRegionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRegions(value: js.Array[Region]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: js.Array[Region]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+    inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    @scala.inline
-    def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value :_*))
   }
 }

@@ -29,32 +29,24 @@ trait RouteSpecHttpRoute extends StObject {
 }
 object RouteSpecHttpRoute {
   
-  @scala.inline
-  def apply(action: Input[RouteSpecHttpRouteAction], `match`: Input[RouteSpecHttpRouteMatch]): RouteSpecHttpRoute = {
+  inline def apply(action: Input[RouteSpecHttpRouteAction], `match`: Input[RouteSpecHttpRouteMatch]): RouteSpecHttpRoute = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpecHttpRoute]
   }
   
-  @scala.inline
-  implicit class RouteSpecHttpRouteMutableBuilder[Self <: RouteSpecHttpRoute] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpecHttpRoute](x: Self) {
     
-    @scala.inline
-    def setAction(value: Input[RouteSpecHttpRouteAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Input[RouteSpecHttpRouteAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatch(value: Input[RouteSpecHttpRouteMatch]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: Input[RouteSpecHttpRouteMatch]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryPolicy(value: Input[RouteSpecHttpRouteRetryPolicy]): Self = StObject.set(x, "retryPolicy", value.asInstanceOf[js.Any])
+    inline def setRetryPolicy(value: Input[RouteSpecHttpRouteRetryPolicy]): Self = StObject.set(x, "retryPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryPolicyUndefined: Self = StObject.set(x, "retryPolicy", js.undefined)
+    inline def setRetryPolicyUndefined: Self = StObject.set(x, "retryPolicy", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Input[RouteSpecHttpRouteTimeout]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Input[RouteSpecHttpRouteTimeout]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

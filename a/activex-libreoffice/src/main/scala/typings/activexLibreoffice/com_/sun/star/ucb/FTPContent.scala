@@ -35,8 +35,7 @@ trait FTPContent
      with XChild
 object FTPContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentType: String,
     Identifier: XContentIdentifier,
     Parent: XInterface,

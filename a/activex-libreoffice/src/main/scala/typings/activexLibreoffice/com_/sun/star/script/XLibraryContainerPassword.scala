@@ -65,8 +65,7 @@ trait XLibraryContainerPassword
 }
 object XLibraryContainerPassword {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     changeLibraryPassword: (String, String, String) => Unit,
     isLibraryPasswordProtected: String => Boolean,
@@ -79,19 +78,14 @@ object XLibraryContainerPassword {
     __obj.asInstanceOf[XLibraryContainerPassword]
   }
   
-  @scala.inline
-  implicit class XLibraryContainerPasswordMutableBuilder[Self <: XLibraryContainerPassword] (val x: Self) extends AnyVal {
+  extension [Self <: XLibraryContainerPassword](x: Self) {
     
-    @scala.inline
-    def setChangeLibraryPassword(value: (String, String, String) => Unit): Self = StObject.set(x, "changeLibraryPassword", js.Any.fromFunction3(value))
+    inline def setChangeLibraryPassword(value: (String, String, String) => Unit): Self = StObject.set(x, "changeLibraryPassword", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setIsLibraryPasswordProtected(value: String => Boolean): Self = StObject.set(x, "isLibraryPasswordProtected", js.Any.fromFunction1(value))
+    inline def setIsLibraryPasswordProtected(value: String => Boolean): Self = StObject.set(x, "isLibraryPasswordProtected", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsLibraryPasswordVerified(value: String => Boolean): Self = StObject.set(x, "isLibraryPasswordVerified", js.Any.fromFunction1(value))
+    inline def setIsLibraryPasswordVerified(value: String => Boolean): Self = StObject.set(x, "isLibraryPasswordVerified", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVerifyLibraryPassword(value: (String, String) => Boolean): Self = StObject.set(x, "verifyLibraryPassword", js.Any.fromFunction2(value))
+    inline def setVerifyLibraryPassword(value: (String, String) => Boolean): Self = StObject.set(x, "verifyLibraryPassword", js.Any.fromFunction2(value))
   }
 }

@@ -61,21 +61,16 @@ object resourceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Resource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Resource]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Resource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Resource]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResourceState): Resource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Resource]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResourceState, opts: CustomResourceOptions): Resource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Resource]
+    inline def get(name: String, id: Input[ID]): Resource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Resource]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Resource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Resource]
+    inline def get(name: String, id: Input[ID], state: ResourceState): Resource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Resource]
+    inline def get(name: String, id: Input[ID], state: ResourceState, opts: CustomResourceOptions): Resource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Resource]
     
     /**
       * Returns true if the given object is an instance of Resource.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/resource.Resource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/resource.Resource */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/resource.Resource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/resource.Resource */ Boolean]
   }
   
   trait ResourceArgs extends StObject {
@@ -97,23 +92,18 @@ object resourceMod {
   }
   object ResourceArgs {
     
-    @scala.inline
-    def apply(parentId: Input[String], pathPart: Input[String], restApi: Input[String | RestApi]): ResourceArgs = {
+    inline def apply(parentId: Input[String], pathPart: Input[String], restApi: Input[String | RestApi]): ResourceArgs = {
       val __obj = js.Dynamic.literal(parentId = parentId.asInstanceOf[js.Any], pathPart = pathPart.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceArgs]
     }
     
-    @scala.inline
-    implicit class ResourceArgsMutableBuilder[Self <: ResourceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceArgs](x: Self) {
       
-      @scala.inline
-      def setParentId(value: Input[String]): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: Input[String]): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathPart(value: Input[String]): Self = StObject.set(x, "pathPart", value.asInstanceOf[js.Any])
+      inline def setPathPart(value: Input[String]): Self = StObject.set(x, "pathPart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
+      inline def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,38 +131,28 @@ object resourceMod {
   }
   object ResourceState {
     
-    @scala.inline
-    def apply(): ResourceState = {
+    inline def apply(): ResourceState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResourceState]
     }
     
-    @scala.inline
-    implicit class ResourceStateMutableBuilder[Self <: ResourceState] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceState](x: Self) {
       
-      @scala.inline
-      def setParentId(value: Input[String]): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: Input[String]): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+      inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
-      @scala.inline
-      def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathPart(value: Input[String]): Self = StObject.set(x, "pathPart", value.asInstanceOf[js.Any])
+      inline def setPathPart(value: Input[String]): Self = StObject.set(x, "pathPart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathPartUndefined: Self = StObject.set(x, "pathPart", js.undefined)
+      inline def setPathPartUndefined: Self = StObject.set(x, "pathPart", js.undefined)
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
+      inline def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestApiUndefined: Self = StObject.set(x, "restApi", js.undefined)
+      inline def setRestApiUndefined: Self = StObject.set(x, "restApi", js.undefined)
     }
   }
 }

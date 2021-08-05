@@ -46,17 +46,14 @@ object mucMod {
       }
       object Connection {
         
-        @scala.inline
-        def apply(muc: Plugin): Connection = {
+        inline def apply(muc: Plugin): Connection = {
           val __obj = js.Dynamic.literal(muc = muc.asInstanceOf[js.Any])
           __obj.asInstanceOf[Connection]
         }
         
-        @scala.inline
-        implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+        extension [Self <: Connection](x: Self) {
           
-          @scala.inline
-          def setMuc(value: Plugin): Self = StObject.set(x, "muc", value.asInstanceOf[js.Any])
+          inline def setMuc(value: Plugin): Self = StObject.set(x, "muc", value.asInstanceOf[js.Any])
         }
       }
       
@@ -309,50 +306,36 @@ object mucMod {
         }
         object OccupantInfo {
           
-          @scala.inline
-          def apply(): OccupantInfo = {
+          inline def apply(): OccupantInfo = {
             val __obj = js.Dynamic.literal()
             __obj.asInstanceOf[OccupantInfo]
           }
           
-          @scala.inline
-          implicit class OccupantInfoMutableBuilder[Self <: OccupantInfo] (val x: Self) extends AnyVal {
+          extension [Self <: OccupantInfo](x: Self) {
             
-            @scala.inline
-            def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
+            inline def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setAffiliationUndefined: Self = StObject.set(x, "affiliation", js.undefined)
+            inline def setAffiliationUndefined: Self = StObject.set(x, "affiliation", js.undefined)
             
-            @scala.inline
-            def setJid(value: String): Self = StObject.set(x, "jid", value.asInstanceOf[js.Any])
+            inline def setJid(value: String): Self = StObject.set(x, "jid", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setJidUndefined: Self = StObject.set(x, "jid", js.undefined)
+            inline def setJidUndefined: Self = StObject.set(x, "jid", js.undefined)
             
-            @scala.inline
-            def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
+            inline def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setNickUndefined: Self = StObject.set(x, "nick", js.undefined)
+            inline def setNickUndefined: Self = StObject.set(x, "nick", js.undefined)
             
-            @scala.inline
-            def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+            inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+            inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
             
-            @scala.inline
-            def setShow(value: String): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+            inline def setShow(value: String): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+            inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
             
-            @scala.inline
-            def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+            inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+            inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
           }
         }
         

@@ -10,19 +10,15 @@ trait ShapeLayerOptions extends StObject {
 }
 object ShapeLayerOptions {
   
-  @scala.inline
-  def apply(): ShapeLayerOptions = {
+  inline def apply(): ShapeLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeLayerOptions]
   }
   
-  @scala.inline
-  implicit class ShapeLayerOptionsMutableBuilder[Self <: ShapeLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeLayerOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

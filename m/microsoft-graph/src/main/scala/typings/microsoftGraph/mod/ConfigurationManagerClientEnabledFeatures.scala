@@ -26,49 +26,35 @@ trait ConfigurationManagerClientEnabledFeatures extends StObject {
 }
 object ConfigurationManagerClientEnabledFeatures {
   
-  @scala.inline
-  def apply(): ConfigurationManagerClientEnabledFeatures = {
+  inline def apply(): ConfigurationManagerClientEnabledFeatures = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigurationManagerClientEnabledFeatures]
   }
   
-  @scala.inline
-  implicit class ConfigurationManagerClientEnabledFeaturesMutableBuilder[Self <: ConfigurationManagerClientEnabledFeatures] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationManagerClientEnabledFeatures](x: Self) {
     
-    @scala.inline
-    def setCompliancePolicy(value: Boolean): Self = StObject.set(x, "compliancePolicy", value.asInstanceOf[js.Any])
+    inline def setCompliancePolicy(value: Boolean): Self = StObject.set(x, "compliancePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompliancePolicyUndefined: Self = StObject.set(x, "compliancePolicy", js.undefined)
+    inline def setCompliancePolicyUndefined: Self = StObject.set(x, "compliancePolicy", js.undefined)
     
-    @scala.inline
-    def setDeviceConfiguration(value: Boolean): Self = StObject.set(x, "deviceConfiguration", value.asInstanceOf[js.Any])
+    inline def setDeviceConfiguration(value: Boolean): Self = StObject.set(x, "deviceConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceConfigurationUndefined: Self = StObject.set(x, "deviceConfiguration", js.undefined)
+    inline def setDeviceConfigurationUndefined: Self = StObject.set(x, "deviceConfiguration", js.undefined)
     
-    @scala.inline
-    def setInventory(value: Boolean): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
+    inline def setInventory(value: Boolean): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventoryUndefined: Self = StObject.set(x, "inventory", js.undefined)
+    inline def setInventoryUndefined: Self = StObject.set(x, "inventory", js.undefined)
     
-    @scala.inline
-    def setModernApps(value: Boolean): Self = StObject.set(x, "modernApps", value.asInstanceOf[js.Any])
+    inline def setModernApps(value: Boolean): Self = StObject.set(x, "modernApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModernAppsUndefined: Self = StObject.set(x, "modernApps", js.undefined)
+    inline def setModernAppsUndefined: Self = StObject.set(x, "modernApps", js.undefined)
     
-    @scala.inline
-    def setResourceAccess(value: Boolean): Self = StObject.set(x, "resourceAccess", value.asInstanceOf[js.Any])
+    inline def setResourceAccess(value: Boolean): Self = StObject.set(x, "resourceAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceAccessUndefined: Self = StObject.set(x, "resourceAccess", js.undefined)
+    inline def setResourceAccessUndefined: Self = StObject.set(x, "resourceAccess", js.undefined)
     
-    @scala.inline
-    def setWindowsUpdateForBusiness(value: Boolean): Self = StObject.set(x, "windowsUpdateForBusiness", value.asInstanceOf[js.Any])
+    inline def setWindowsUpdateForBusiness(value: Boolean): Self = StObject.set(x, "windowsUpdateForBusiness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowsUpdateForBusinessUndefined: Self = StObject.set(x, "windowsUpdateForBusiness", js.undefined)
+    inline def setWindowsUpdateForBusinessUndefined: Self = StObject.set(x, "windowsUpdateForBusiness", js.undefined)
   }
 }

@@ -38,7 +38,6 @@ object tableCheckMod {
     /**
       * Creates checks from the check metadata object.
       */
-    @scala.inline
-    def create(checkMetadata: CheckMetadata): TableCheck = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(checkMetadata.asInstanceOf[js.Any]).asInstanceOf[TableCheck]
+    inline def create(checkMetadata: CheckMetadata): TableCheck = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(checkMetadata.asInstanceOf[js.Any]).asInstanceOf[TableCheck]
   }
 }

@@ -23,31 +23,23 @@ trait PutImageTagMutabilityResponse extends StObject {
 }
 object PutImageTagMutabilityResponse {
   
-  @scala.inline
-  def apply(): PutImageTagMutabilityResponse = {
+  inline def apply(): PutImageTagMutabilityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutImageTagMutabilityResponse]
   }
   
-  @scala.inline
-  implicit class PutImageTagMutabilityResponseMutableBuilder[Self <: PutImageTagMutabilityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutImageTagMutabilityResponse](x: Self) {
     
-    @scala.inline
-    def setImageTagMutability(value: ImageTagMutability): Self = StObject.set(x, "imageTagMutability", value.asInstanceOf[js.Any])
+    inline def setImageTagMutability(value: ImageTagMutability): Self = StObject.set(x, "imageTagMutability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageTagMutabilityUndefined: Self = StObject.set(x, "imageTagMutability", js.undefined)
+    inline def setImageTagMutabilityUndefined: Self = StObject.set(x, "imageTagMutability", js.undefined)
     
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+    inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+    inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
   }
 }

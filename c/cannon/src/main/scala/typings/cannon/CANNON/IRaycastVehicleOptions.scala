@@ -16,37 +16,27 @@ trait IRaycastVehicleOptions extends StObject {
 }
 object IRaycastVehicleOptions {
   
-  @scala.inline
-  def apply(): IRaycastVehicleOptions = {
+  inline def apply(): IRaycastVehicleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRaycastVehicleOptions]
   }
   
-  @scala.inline
-  implicit class IRaycastVehicleOptionsMutableBuilder[Self <: IRaycastVehicleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IRaycastVehicleOptions](x: Self) {
     
-    @scala.inline
-    def setChassisBody(value: Body): Self = StObject.set(x, "chassisBody", value.asInstanceOf[js.Any])
+    inline def setChassisBody(value: Body): Self = StObject.set(x, "chassisBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChassisBodyUndefined: Self = StObject.set(x, "chassisBody", js.undefined)
+    inline def setChassisBodyUndefined: Self = StObject.set(x, "chassisBody", js.undefined)
     
-    @scala.inline
-    def setIndexLeftAxis(value: Double): Self = StObject.set(x, "indexLeftAxis", value.asInstanceOf[js.Any])
+    inline def setIndexLeftAxis(value: Double): Self = StObject.set(x, "indexLeftAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexLeftAxisUndefined: Self = StObject.set(x, "indexLeftAxis", js.undefined)
+    inline def setIndexLeftAxisUndefined: Self = StObject.set(x, "indexLeftAxis", js.undefined)
     
-    @scala.inline
-    def setIndexRightAxis(value: Double): Self = StObject.set(x, "indexRightAxis", value.asInstanceOf[js.Any])
+    inline def setIndexRightAxis(value: Double): Self = StObject.set(x, "indexRightAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexRightAxisUndefined: Self = StObject.set(x, "indexRightAxis", js.undefined)
+    inline def setIndexRightAxisUndefined: Self = StObject.set(x, "indexRightAxis", js.undefined)
     
-    @scala.inline
-    def setIndexUpAxis(value: Double): Self = StObject.set(x, "indexUpAxis", value.asInstanceOf[js.Any])
+    inline def setIndexUpAxis(value: Double): Self = StObject.set(x, "indexUpAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUpAxisUndefined: Self = StObject.set(x, "indexUpAxis", js.undefined)
+    inline def setIndexUpAxisUndefined: Self = StObject.set(x, "indexUpAxis", js.undefined)
   }
 }

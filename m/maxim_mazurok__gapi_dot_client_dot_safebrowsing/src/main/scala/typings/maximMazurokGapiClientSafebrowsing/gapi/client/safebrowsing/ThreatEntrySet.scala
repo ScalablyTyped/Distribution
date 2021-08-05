@@ -29,43 +29,31 @@ trait ThreatEntrySet extends StObject {
 }
 object ThreatEntrySet {
   
-  @scala.inline
-  def apply(): ThreatEntrySet = {
+  inline def apply(): ThreatEntrySet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThreatEntrySet]
   }
   
-  @scala.inline
-  implicit class ThreatEntrySetMutableBuilder[Self <: ThreatEntrySet] (val x: Self) extends AnyVal {
+  extension [Self <: ThreatEntrySet](x: Self) {
     
-    @scala.inline
-    def setCompressionType(value: String): Self = StObject.set(x, "compressionType", value.asInstanceOf[js.Any])
+    inline def setCompressionType(value: String): Self = StObject.set(x, "compressionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionTypeUndefined: Self = StObject.set(x, "compressionType", js.undefined)
+    inline def setCompressionTypeUndefined: Self = StObject.set(x, "compressionType", js.undefined)
     
-    @scala.inline
-    def setRawHashes(value: RawHashes): Self = StObject.set(x, "rawHashes", value.asInstanceOf[js.Any])
+    inline def setRawHashes(value: RawHashes): Self = StObject.set(x, "rawHashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawHashesUndefined: Self = StObject.set(x, "rawHashes", js.undefined)
+    inline def setRawHashesUndefined: Self = StObject.set(x, "rawHashes", js.undefined)
     
-    @scala.inline
-    def setRawIndices(value: RawIndices): Self = StObject.set(x, "rawIndices", value.asInstanceOf[js.Any])
+    inline def setRawIndices(value: RawIndices): Self = StObject.set(x, "rawIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawIndicesUndefined: Self = StObject.set(x, "rawIndices", js.undefined)
+    inline def setRawIndicesUndefined: Self = StObject.set(x, "rawIndices", js.undefined)
     
-    @scala.inline
-    def setRiceHashes(value: RiceDeltaEncoding): Self = StObject.set(x, "riceHashes", value.asInstanceOf[js.Any])
+    inline def setRiceHashes(value: RiceDeltaEncoding): Self = StObject.set(x, "riceHashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRiceHashesUndefined: Self = StObject.set(x, "riceHashes", js.undefined)
+    inline def setRiceHashesUndefined: Self = StObject.set(x, "riceHashes", js.undefined)
     
-    @scala.inline
-    def setRiceIndices(value: RiceDeltaEncoding): Self = StObject.set(x, "riceIndices", value.asInstanceOf[js.Any])
+    inline def setRiceIndices(value: RiceDeltaEncoding): Self = StObject.set(x, "riceIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRiceIndicesUndefined: Self = StObject.set(x, "riceIndices", js.undefined)
+    inline def setRiceIndicesUndefined: Self = StObject.set(x, "riceIndices", js.undefined)
   }
 }

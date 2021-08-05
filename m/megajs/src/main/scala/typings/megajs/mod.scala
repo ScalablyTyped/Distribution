@@ -18,10 +18,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(options: StorageOptions): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Storage]
-  @scala.inline
-  def default(options: StorageOptions, cb: js.Any): Storage = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Storage]
+  inline def default(options: StorageOptions): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Storage]
+  inline def default(options: StorageOptions, cb: js.Any): Storage = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Storage]
   
   @JSImport("megajs", "File")
   @js.native
@@ -62,13 +60,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromURL(options: String): File = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(options.asInstanceOf[js.Any]).asInstanceOf[File]
-    @scala.inline
-    def fromURL(options: FileOptions): File = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(options.asInstanceOf[js.Any]).asInstanceOf[File]
+    inline def fromURL(options: String): File = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(options.asInstanceOf[js.Any]).asInstanceOf[File]
+    inline def fromURL(options: FileOptions): File = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(options.asInstanceOf[js.Any]).asInstanceOf[File]
     
-    @scala.inline
-    def unpackAttributes(at: js.Any): JSON = ^.asInstanceOf[js.Dynamic].applyDynamic("unpackAttributes")(at.asInstanceOf[js.Any]).asInstanceOf[JSON]
+    inline def unpackAttributes(at: js.Any): JSON = ^.asInstanceOf[js.Dynamic].applyDynamic("unpackAttributes")(at.asInstanceOf[js.Any]).asInstanceOf[JSON]
   }
   
   @JSImport("megajs", "MutableFile")
@@ -183,8 +178,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromJSON(json: JSON): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Storage]
+    inline def fromJSON(json: JSON): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Storage]
   }
   
   trait AccountInfo extends StObject {
@@ -205,8 +199,7 @@ object mod {
   }
   object AccountInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       downloadBandwidthTotal: Double,
       downloadBandwidthUsed: Double,
       sharedBandwidthLimit: Double,
@@ -220,29 +213,21 @@ object mod {
       __obj.asInstanceOf[AccountInfo]
     }
     
-    @scala.inline
-    implicit class AccountInfoMutableBuilder[Self <: AccountInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AccountInfo](x: Self) {
       
-      @scala.inline
-      def setDownloadBandwidthTotal(value: Double): Self = StObject.set(x, "downloadBandwidthTotal", value.asInstanceOf[js.Any])
+      inline def setDownloadBandwidthTotal(value: Double): Self = StObject.set(x, "downloadBandwidthTotal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadBandwidthUsed(value: Double): Self = StObject.set(x, "downloadBandwidthUsed", value.asInstanceOf[js.Any])
+      inline def setDownloadBandwidthUsed(value: Double): Self = StObject.set(x, "downloadBandwidthUsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedBandwidthLimit(value: Double): Self = StObject.set(x, "sharedBandwidthLimit", value.asInstanceOf[js.Any])
+      inline def setSharedBandwidthLimit(value: Double): Self = StObject.set(x, "sharedBandwidthLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedBandwidthUsed(value: Double): Self = StObject.set(x, "sharedBandwidthUsed", value.asInstanceOf[js.Any])
+      inline def setSharedBandwidthUsed(value: Double): Self = StObject.set(x, "sharedBandwidthUsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceTotal(value: Double): Self = StObject.set(x, "spaceTotal", value.asInstanceOf[js.Any])
+      inline def setSpaceTotal(value: Double): Self = StObject.set(x, "spaceTotal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceUsed(value: Double): Self = StObject.set(x, "spaceUsed", value.asInstanceOf[js.Any])
+      inline def setSpaceUsed(value: Double): Self = StObject.set(x, "spaceUsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -264,56 +249,40 @@ object mod {
   }
   object DownloadOptions {
     
-    @scala.inline
-    def apply(): DownloadOptions = {
+    inline def apply(): DownloadOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DownloadOptions]
     }
     
-    @scala.inline
-    implicit class DownloadOptionsMutableBuilder[Self <: DownloadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadOptions](x: Self) {
       
-      @scala.inline
-      def setChunkSizeIncrement(value: Double): Self = StObject.set(x, "chunkSizeIncrement", value.asInstanceOf[js.Any])
+      inline def setChunkSizeIncrement(value: Double): Self = StObject.set(x, "chunkSizeIncrement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkSizeIncrementUndefined: Self = StObject.set(x, "chunkSizeIncrement", js.undefined)
+      inline def setChunkSizeIncrementUndefined: Self = StObject.set(x, "chunkSizeIncrement", js.undefined)
       
-      @scala.inline
-      def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setInitialChunkSize(value: Double): Self = StObject.set(x, "initialChunkSize", value.asInstanceOf[js.Any])
+      inline def setInitialChunkSize(value: Double): Self = StObject.set(x, "initialChunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialChunkSizeUndefined: Self = StObject.set(x, "initialChunkSize", js.undefined)
+      inline def setInitialChunkSizeUndefined: Self = StObject.set(x, "initialChunkSize", js.undefined)
       
-      @scala.inline
-      def setMaxChunkSize(value: Double): Self = StObject.set(x, "maxChunkSize", value.asInstanceOf[js.Any])
+      inline def setMaxChunkSize(value: Double): Self = StObject.set(x, "maxChunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxChunkSizeUndefined: Self = StObject.set(x, "maxChunkSize", js.undefined)
+      inline def setMaxChunkSizeUndefined: Self = StObject.set(x, "maxChunkSize", js.undefined)
       
-      @scala.inline
-      def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
+      inline def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
+      inline def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
       
-      @scala.inline
-      def setReturnCiphertext(value: Boolean): Self = StObject.set(x, "returnCiphertext", value.asInstanceOf[js.Any])
+      inline def setReturnCiphertext(value: Boolean): Self = StObject.set(x, "returnCiphertext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnCiphertextUndefined: Self = StObject.set(x, "returnCiphertext", js.undefined)
+      inline def setReturnCiphertextUndefined: Self = StObject.set(x, "returnCiphertext", js.undefined)
       
-      @scala.inline
-      def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
   
@@ -327,26 +296,20 @@ object mod {
   }
   object FileOptions {
     
-    @scala.inline
-    def apply(downloadId: String, key: String): FileOptions = {
+    inline def apply(downloadId: String, key: String): FileOptions = {
       val __obj = js.Dynamic.literal(downloadId = downloadId.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileOptions]
     }
     
-    @scala.inline
-    implicit class FileOptionsMutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FileOptions](x: Self) {
       
-      @scala.inline
-      def setDirectory(value: Boolean): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+      inline def setDirectory(value: Boolean): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
+      inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
       
-      @scala.inline
-      def setDownloadId(value: String): Self = StObject.set(x, "downloadId", value.asInstanceOf[js.Any])
+      inline def setDownloadId(value: String): Self = StObject.set(x, "downloadId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -358,26 +321,20 @@ object mod {
   }
   object LinkOptions {
     
-    @scala.inline
-    def apply(): LinkOptions = {
+    inline def apply(): LinkOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LinkOptions]
     }
     
-    @scala.inline
-    implicit class LinkOptionsMutableBuilder[Self <: LinkOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LinkOptions](x: Self) {
       
-      @scala.inline
-      def setKey(value: String | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setNoKey(value: Boolean): Self = StObject.set(x, "noKey", value.asInstanceOf[js.Any])
+      inline def setNoKey(value: Boolean): Self = StObject.set(x, "noKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoKeyUndefined: Self = StObject.set(x, "noKey", js.undefined)
+      inline def setNoKeyUndefined: Self = StObject.set(x, "noKey", js.undefined)
     }
   }
   
@@ -391,29 +348,22 @@ object mod {
   }
   object MakeDirectoryOptions {
     
-    @scala.inline
-    def apply(name: String): MakeDirectoryOptions = {
+    inline def apply(name: String): MakeDirectoryOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[MakeDirectoryOptions]
     }
     
-    @scala.inline
-    implicit class MakeDirectoryOptionsMutableBuilder[Self <: MakeDirectoryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MakeDirectoryOptions](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setKey(value: String | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -431,38 +381,28 @@ object mod {
   }
   object StorageOptions {
     
-    @scala.inline
-    def apply(email: String, password: String): StorageOptions = {
+    inline def apply(email: String, password: String): StorageOptions = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
       __obj.asInstanceOf[StorageOptions]
     }
     
-    @scala.inline
-    implicit class StorageOptionsMutableBuilder[Self <: StorageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StorageOptions](x: Self) {
       
-      @scala.inline
-      def setAutoload(value: Boolean): Self = StObject.set(x, "autoload", value.asInstanceOf[js.Any])
+      inline def setAutoload(value: Boolean): Self = StObject.set(x, "autoload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoloadUndefined: Self = StObject.set(x, "autoload", js.undefined)
+      inline def setAutoloadUndefined: Self = StObject.set(x, "autoload", js.undefined)
       
-      @scala.inline
-      def setAutologin(value: Boolean): Self = StObject.set(x, "autologin", value.asInstanceOf[js.Any])
+      inline def setAutologin(value: Boolean): Self = StObject.set(x, "autologin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutologinUndefined: Self = StObject.set(x, "autologin", js.undefined)
+      inline def setAutologinUndefined: Self = StObject.set(x, "autologin", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepalive(value: Boolean): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
+      inline def setKeepalive(value: Boolean): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
+      inline def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     }
   }
   
@@ -480,41 +420,30 @@ object mod {
   }
   object UploadOptions {
     
-    @scala.inline
-    def apply(name: String): UploadOptions = {
+    inline def apply(name: String): UploadOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadOptions]
     }
     
-    @scala.inline
-    implicit class UploadOptionsMutableBuilder[Self <: UploadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UploadOptions](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewImage(value: Buffer | Readable): Self = StObject.set(x, "previewImage", value.asInstanceOf[js.Any])
+      inline def setPreviewImage(value: Buffer | Readable): Self = StObject.set(x, "previewImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewImageUndefined: Self = StObject.set(x, "previewImage", js.undefined)
+      inline def setPreviewImageUndefined: Self = StObject.set(x, "previewImage", js.undefined)
       
-      @scala.inline
-      def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setThumbnailImage(value: Buffer | Readable): Self = StObject.set(x, "thumbnailImage", value.asInstanceOf[js.Any])
+      inline def setThumbnailImage(value: Buffer | Readable): Self = StObject.set(x, "thumbnailImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailImageUndefined: Self = StObject.set(x, "thumbnailImage", js.undefined)
+      inline def setThumbnailImageUndefined: Self = StObject.set(x, "thumbnailImage", js.undefined)
     }
   }
 }

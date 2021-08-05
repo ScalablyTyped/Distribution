@@ -13,22 +13,17 @@ trait AddListenerCertificatesOutput extends StObject {
 }
 object AddListenerCertificatesOutput {
   
-  @scala.inline
-  def apply(): AddListenerCertificatesOutput = {
+  inline def apply(): AddListenerCertificatesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddListenerCertificatesOutput]
   }
   
-  @scala.inline
-  implicit class AddListenerCertificatesOutputMutableBuilder[Self <: AddListenerCertificatesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: AddListenerCertificatesOutput](x: Self) {
     
-    @scala.inline
-    def setCertificates(value: CertificateList): Self = StObject.set(x, "Certificates", value.asInstanceOf[js.Any])
+    inline def setCertificates(value: CertificateList): Self = StObject.set(x, "Certificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatesUndefined: Self = StObject.set(x, "Certificates", js.undefined)
+    inline def setCertificatesUndefined: Self = StObject.set(x, "Certificates", js.undefined)
     
-    @scala.inline
-    def setCertificatesVarargs(value: Certificate*): Self = StObject.set(x, "Certificates", js.Array(value :_*))
+    inline def setCertificatesVarargs(value: Certificate*): Self = StObject.set(x, "Certificates", js.Array(value :_*))
   }
 }

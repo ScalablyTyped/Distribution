@@ -33,31 +33,23 @@ trait SchemaPositionedObjectPositioning extends StObject {
 }
 object SchemaPositionedObjectPositioning {
   
-  @scala.inline
-  def apply(): SchemaPositionedObjectPositioning = {
+  inline def apply(): SchemaPositionedObjectPositioning = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPositionedObjectPositioning]
   }
   
-  @scala.inline
-  implicit class SchemaPositionedObjectPositioningMutableBuilder[Self <: SchemaPositionedObjectPositioning] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPositionedObjectPositioning](x: Self) {
     
-    @scala.inline
-    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setLeftOffset(value: SchemaDimension): Self = StObject.set(x, "leftOffset", value.asInstanceOf[js.Any])
+    inline def setLeftOffset(value: SchemaDimension): Self = StObject.set(x, "leftOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftOffsetUndefined: Self = StObject.set(x, "leftOffset", js.undefined)
+    inline def setLeftOffsetUndefined: Self = StObject.set(x, "leftOffset", js.undefined)
     
-    @scala.inline
-    def setTopOffset(value: SchemaDimension): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
+    inline def setTopOffset(value: SchemaDimension): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
+    inline def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.TabStop2")
 @js.native
-class TabStop2 protected ()
+/* private */ class TabStop2 ()
   extends StObject
      with typings.activexOffice.Office.TabStop2 {
   
@@ -20,7 +20,7 @@ class TabStop2 protected ()
   /* CompleteClass */
   override val Creator: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.TabStop2_typekey")
   var OfficeDotTabStop2_typekey: typings.activexOffice.Office.TabStop2 = js.native
   

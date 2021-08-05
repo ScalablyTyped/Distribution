@@ -91,91 +91,63 @@ trait SchemaRouterBgpPeer extends StObject {
 }
 object SchemaRouterBgpPeer {
   
-  @scala.inline
-  def apply(): SchemaRouterBgpPeer = {
+  inline def apply(): SchemaRouterBgpPeer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRouterBgpPeer]
   }
   
-  @scala.inline
-  implicit class SchemaRouterBgpPeerMutableBuilder[Self <: SchemaRouterBgpPeer] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRouterBgpPeer](x: Self) {
     
-    @scala.inline
-    def setAdvertiseMode(value: String): Self = StObject.set(x, "advertiseMode", value.asInstanceOf[js.Any])
+    inline def setAdvertiseMode(value: String): Self = StObject.set(x, "advertiseMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiseModeUndefined: Self = StObject.set(x, "advertiseMode", js.undefined)
+    inline def setAdvertiseModeUndefined: Self = StObject.set(x, "advertiseMode", js.undefined)
     
-    @scala.inline
-    def setAdvertisedGroups(value: js.Array[String]): Self = StObject.set(x, "advertisedGroups", value.asInstanceOf[js.Any])
+    inline def setAdvertisedGroups(value: js.Array[String]): Self = StObject.set(x, "advertisedGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertisedGroupsUndefined: Self = StObject.set(x, "advertisedGroups", js.undefined)
+    inline def setAdvertisedGroupsUndefined: Self = StObject.set(x, "advertisedGroups", js.undefined)
     
-    @scala.inline
-    def setAdvertisedGroupsVarargs(value: String*): Self = StObject.set(x, "advertisedGroups", js.Array(value :_*))
+    inline def setAdvertisedGroupsVarargs(value: String*): Self = StObject.set(x, "advertisedGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setAdvertisedIpRanges(value: js.Array[SchemaRouterAdvertisedIpRange]): Self = StObject.set(x, "advertisedIpRanges", value.asInstanceOf[js.Any])
+    inline def setAdvertisedIpRanges(value: js.Array[SchemaRouterAdvertisedIpRange]): Self = StObject.set(x, "advertisedIpRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertisedIpRangesUndefined: Self = StObject.set(x, "advertisedIpRanges", js.undefined)
+    inline def setAdvertisedIpRangesUndefined: Self = StObject.set(x, "advertisedIpRanges", js.undefined)
     
-    @scala.inline
-    def setAdvertisedIpRangesVarargs(value: SchemaRouterAdvertisedIpRange*): Self = StObject.set(x, "advertisedIpRanges", js.Array(value :_*))
+    inline def setAdvertisedIpRangesVarargs(value: SchemaRouterAdvertisedIpRange*): Self = StObject.set(x, "advertisedIpRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setAdvertisedRoutePriority(value: Double): Self = StObject.set(x, "advertisedRoutePriority", value.asInstanceOf[js.Any])
+    inline def setAdvertisedRoutePriority(value: Double): Self = StObject.set(x, "advertisedRoutePriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertisedRoutePriorityUndefined: Self = StObject.set(x, "advertisedRoutePriority", js.undefined)
+    inline def setAdvertisedRoutePriorityUndefined: Self = StObject.set(x, "advertisedRoutePriority", js.undefined)
     
-    @scala.inline
-    def setBfd(value: SchemaRouterBgpPeerBfd): Self = StObject.set(x, "bfd", value.asInstanceOf[js.Any])
+    inline def setBfd(value: SchemaRouterBgpPeerBfd): Self = StObject.set(x, "bfd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBfdUndefined: Self = StObject.set(x, "bfd", js.undefined)
+    inline def setBfdUndefined: Self = StObject.set(x, "bfd", js.undefined)
     
-    @scala.inline
-    def setEnable(value: String): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: String): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
-    @scala.inline
-    def setInterfaceName(value: String): Self = StObject.set(x, "interfaceName", value.asInstanceOf[js.Any])
+    inline def setInterfaceName(value: String): Self = StObject.set(x, "interfaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceNameUndefined: Self = StObject.set(x, "interfaceName", js.undefined)
+    inline def setInterfaceNameUndefined: Self = StObject.set(x, "interfaceName", js.undefined)
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
-    @scala.inline
-    def setManagementType(value: String): Self = StObject.set(x, "managementType", value.asInstanceOf[js.Any])
+    inline def setManagementType(value: String): Self = StObject.set(x, "managementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagementTypeUndefined: Self = StObject.set(x, "managementType", js.undefined)
+    inline def setManagementTypeUndefined: Self = StObject.set(x, "managementType", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPeerAsn(value: Double): Self = StObject.set(x, "peerAsn", value.asInstanceOf[js.Any])
+    inline def setPeerAsn(value: Double): Self = StObject.set(x, "peerAsn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerAsnUndefined: Self = StObject.set(x, "peerAsn", js.undefined)
+    inline def setPeerAsnUndefined: Self = StObject.set(x, "peerAsn", js.undefined)
     
-    @scala.inline
-    def setPeerIpAddress(value: String): Self = StObject.set(x, "peerIpAddress", value.asInstanceOf[js.Any])
+    inline def setPeerIpAddress(value: String): Self = StObject.set(x, "peerIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerIpAddressUndefined: Self = StObject.set(x, "peerIpAddress", js.undefined)
+    inline def setPeerIpAddressUndefined: Self = StObject.set(x, "peerIpAddress", js.undefined)
   }
 }

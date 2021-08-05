@@ -15,23 +15,18 @@ trait ActionsAddSelectedRepoToOrgSecretEndpoint extends StObject {
 }
 object ActionsAddSelectedRepoToOrgSecretEndpoint {
   
-  @scala.inline
-  def apply(org_ : String, repository_id: Double, secret_name: String): ActionsAddSelectedRepoToOrgSecretEndpoint = {
+  inline def apply(org_ : String, repository_id: Double, secret_name: String): ActionsAddSelectedRepoToOrgSecretEndpoint = {
     val __obj = js.Dynamic.literal(repository_id = repository_id.asInstanceOf[js.Any], secret_name = secret_name.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsAddSelectedRepoToOrgSecretEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsAddSelectedRepoToOrgSecretEndpointMutableBuilder[Self <: ActionsAddSelectedRepoToOrgSecretEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsAddSelectedRepoToOrgSecretEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
+    inline def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecret_name(value: String): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
+    inline def setSecret_name(value: String): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
   }
 }

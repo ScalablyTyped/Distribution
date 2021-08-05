@@ -34,8 +34,7 @@ trait GnomeVFSFolderContent
      with XContentCreator
 object GnomeVFSFolderContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentType: String,
     Identifier: XContentIdentifier,
     Parent: XInterface,

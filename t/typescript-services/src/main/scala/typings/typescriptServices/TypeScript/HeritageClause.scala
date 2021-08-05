@@ -8,7 +8,7 @@ trait HeritageClause
   extends StObject
      with AST {
   
-  var _nodeType: js.Any
+  /* private */ var _nodeType: js.Any
   
   def structuralEquals(ast: HeritageClause, includingPosition: Boolean): Boolean
   
@@ -16,8 +16,7 @@ trait HeritageClause
 }
 object HeritageClause {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _nodeType: js.Any,
@@ -45,16 +44,12 @@ object HeritageClause {
     __obj.asInstanceOf[HeritageClause]
   }
   
-  @scala.inline
-  implicit class HeritageClauseMutableBuilder[Self <: HeritageClause] (val x: Self) extends AnyVal {
+  extension [Self <: HeritageClause](x: Self) {
     
-    @scala.inline
-    def setStructuralEquals(value: (HeritageClause, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (HeritageClause, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTypeNames(value: ISeparatedSyntaxList2): Self = StObject.set(x, "typeNames", value.asInstanceOf[js.Any])
+    inline def setTypeNames(value: ISeparatedSyntaxList2): Self = StObject.set(x, "typeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_nodeType(value: js.Any): Self = StObject.set(x, "_nodeType", value.asInstanceOf[js.Any])
+    inline def set_nodeType(value: js.Any): Self = StObject.set(x, "_nodeType", value.asInstanceOf[js.Any])
   }
 }

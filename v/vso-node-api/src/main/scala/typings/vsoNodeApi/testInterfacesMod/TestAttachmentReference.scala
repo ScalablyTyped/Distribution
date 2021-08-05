@@ -12,19 +12,15 @@ trait TestAttachmentReference extends StObject {
 }
 object TestAttachmentReference {
   
-  @scala.inline
-  def apply(id: Double, url: String): TestAttachmentReference = {
+  inline def apply(id: Double, url: String): TestAttachmentReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestAttachmentReference]
   }
   
-  @scala.inline
-  implicit class TestAttachmentReferenceMutableBuilder[Self <: TestAttachmentReference] (val x: Self) extends AnyVal {
+  extension [Self <: TestAttachmentReference](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

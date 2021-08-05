@@ -46,21 +46,17 @@ object mod {
   }
   object Mimos {
     
-    @scala.inline
-    def apply(path: String => MimosOptionsValue, `type`: String => MimeEntry): Mimos = {
+    inline def apply(path: String => MimosOptionsValue, `type`: String => MimeEntry): Mimos = {
       val __obj = js.Dynamic.literal(path = js.Any.fromFunction1(path))
       __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
       __obj.asInstanceOf[Mimos]
     }
     
-    @scala.inline
-    implicit class MimosMutableBuilder[Self <: Mimos] (val x: Self) extends AnyVal {
+    extension [Self <: Mimos](x: Self) {
       
-      @scala.inline
-      def setPath(value: String => MimosOptionsValue): Self = StObject.set(x, "path", js.Any.fromFunction1(value))
+      inline def setPath(value: String => MimosOptionsValue): Self = StObject.set(x, "path", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setType(value: String => MimeEntry): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+      inline def setType(value: String => MimeEntry): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
     }
   }
   
@@ -81,18 +77,15 @@ object mod {
   }
   object MimosOptions {
     
-    @scala.inline
-    def apply(`override`: StringDictionary[MimosOptionsValuepredicat]): MimosOptions = {
+    inline def apply(`override`: StringDictionary[MimosOptionsValuepredicat]): MimosOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MimosOptions]
     }
     
-    @scala.inline
-    implicit class MimosOptionsMutableBuilder[Self <: MimosOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MimosOptions](x: Self) {
       
-      @scala.inline
-      def setOverride(value: StringDictionary[MimosOptionsValuepredicat]): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+      inline def setOverride(value: StringDictionary[MimosOptionsValuepredicat]): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,20 +100,16 @@ object mod {
   }
   object MimosOptionsValue {
     
-    @scala.inline
-    def apply(): MimosOptionsValue = {
+    inline def apply(): MimosOptionsValue = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MimosOptionsValue]
     }
     
-    @scala.inline
-    implicit class MimosOptionsValueMutableBuilder[Self <: MimosOptionsValue] (val x: Self) extends AnyVal {
+    extension [Self <: MimosOptionsValue](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

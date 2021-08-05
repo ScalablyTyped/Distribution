@@ -13,19 +13,15 @@ trait DataSource extends StObject {
 }
 object DataSource {
   
-  @scala.inline
-  def apply(): DataSource = {
+  inline def apply(): DataSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSource]
   }
   
-  @scala.inline
-  implicit class DataSourceMutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
+  extension [Self <: DataSource](x: Self) {
     
-    @scala.inline
-    def setDataLocation(value: S3Location): Self = StObject.set(x, "dataLocation", value.asInstanceOf[js.Any])
+    inline def setDataLocation(value: S3Location): Self = StObject.set(x, "dataLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLocationUndefined: Self = StObject.set(x, "dataLocation", js.undefined)
+    inline def setDataLocationUndefined: Self = StObject.set(x, "dataLocation", js.undefined)
   }
 }

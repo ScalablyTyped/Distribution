@@ -15,31 +15,23 @@ trait ModelMatrix extends StObject {
 }
 object ModelMatrix {
   
-  @scala.inline
-  def apply(): ModelMatrix = {
+  inline def apply(): ModelMatrix = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelMatrix]
   }
   
-  @scala.inline
-  implicit class ModelMatrixMutableBuilder[Self <: ModelMatrix] (val x: Self) extends AnyVal {
+  extension [Self <: ModelMatrix](x: Self) {
     
-    @scala.inline
-    def setBlendOption(value: typings.cesium.mod.BlendOption): Self = StObject.set(x, "blendOption", value.asInstanceOf[js.Any])
+    inline def setBlendOption(value: typings.cesium.mod.BlendOption): Self = StObject.set(x, "blendOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlendOptionUndefined: Self = StObject.set(x, "blendOption", js.undefined)
+    inline def setBlendOptionUndefined: Self = StObject.set(x, "blendOption", js.undefined)
     
-    @scala.inline
-    def setDebugShowBoundingVolume(value: Boolean): Self = StObject.set(x, "debugShowBoundingVolume", value.asInstanceOf[js.Any])
+    inline def setDebugShowBoundingVolume(value: Boolean): Self = StObject.set(x, "debugShowBoundingVolume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugShowBoundingVolumeUndefined: Self = StObject.set(x, "debugShowBoundingVolume", js.undefined)
+    inline def setDebugShowBoundingVolumeUndefined: Self = StObject.set(x, "debugShowBoundingVolume", js.undefined)
     
-    @scala.inline
-    def setModelMatrix(value: Matrix4): Self = StObject.set(x, "modelMatrix", value.asInstanceOf[js.Any])
+    inline def setModelMatrix(value: Matrix4): Self = StObject.set(x, "modelMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelMatrixUndefined: Self = StObject.set(x, "modelMatrix", js.undefined)
+    inline def setModelMatrixUndefined: Self = StObject.set(x, "modelMatrix", js.undefined)
   }
 }

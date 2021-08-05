@@ -10,8 +10,7 @@ object semiringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFunctionSemiring[A, B](S: Semiring[B]): Semiring[js.Function1[/* a */ A, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionSemiring")(S.asInstanceOf[js.Any]).asInstanceOf[Semiring[js.Function1[/* a */ A, B]]]
+  inline def getFunctionSemiring[A, B](S: Semiring[B]): Semiring[js.Function1[/* a */ A, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionSemiring")(S.asInstanceOf[js.Any]).asInstanceOf[Semiring[js.Function1[/* a */ A, B]]]
   
   trait Semiring[A] extends StObject {
     
@@ -25,26 +24,20 @@ object semiringMod {
   }
   object Semiring {
     
-    @scala.inline
-    def apply[A](add: (A, A) => A, mul: (A, A) => A, one: A, zero: A): Semiring[A] = {
+    inline def apply[A](add: (A, A) => A, mul: (A, A) => A, one: A, zero: A): Semiring[A] = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), mul = js.Any.fromFunction2(mul), one = one.asInstanceOf[js.Any], zero = zero.asInstanceOf[js.Any])
       __obj.asInstanceOf[Semiring[A]]
     }
     
-    @scala.inline
-    implicit class SemiringMutableBuilder[Self <: Semiring[?], A] (val x: Self & Semiring[A]) extends AnyVal {
+    extension [Self <: Semiring[?], A](x: Self & Semiring[A]) {
       
-      @scala.inline
-      def setAdd(value: (A, A) => A): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (A, A) => A): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMul(value: (A, A) => A): Self = StObject.set(x, "mul", js.Any.fromFunction2(value))
+      inline def setMul(value: (A, A) => A): Self = StObject.set(x, "mul", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOne(value: A): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
+      inline def setOne(value: A): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZero(value: A): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
+      inline def setZero(value: A): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
     }
   }
 }

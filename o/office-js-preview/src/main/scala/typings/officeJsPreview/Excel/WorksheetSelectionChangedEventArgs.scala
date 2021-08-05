@@ -39,23 +39,18 @@ trait WorksheetSelectionChangedEventArgs extends StObject {
 }
 object WorksheetSelectionChangedEventArgs {
   
-  @scala.inline
-  def apply(address: String, worksheetId: String): WorksheetSelectionChangedEventArgs = {
+  inline def apply(address: String, worksheetId: String): WorksheetSelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("WorksheetSelectionChanged")
     __obj.asInstanceOf[WorksheetSelectionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class WorksheetSelectionChangedEventArgsMutableBuilder[Self <: WorksheetSelectionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: WorksheetSelectionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: WorksheetSelectionChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: WorksheetSelectionChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
+    inline def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
   }
 }

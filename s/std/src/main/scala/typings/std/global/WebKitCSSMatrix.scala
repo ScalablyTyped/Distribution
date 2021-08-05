@@ -21,14 +21,10 @@ object WebKitCSSMatrix {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromFloat32Array(array32: typings.std.Float32Array): typings.std.DOMMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFloat32Array")(array32.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMMatrix]
+  inline def fromFloat32Array(array32: typings.std.Float32Array): typings.std.DOMMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFloat32Array")(array32.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMMatrix]
   
-  @scala.inline
-  def fromFloat64Array(array64: typings.std.Float64Array): typings.std.DOMMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFloat64Array")(array64.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMMatrix]
+  inline def fromFloat64Array(array64: typings.std.Float64Array): typings.std.DOMMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFloat64Array")(array64.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMMatrix]
   
-  @scala.inline
-  def fromMatrix(): typings.std.DOMMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMatrix")().asInstanceOf[typings.std.DOMMatrix]
-  @scala.inline
-  def fromMatrix(other: DOMMatrixInit): typings.std.DOMMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMatrix")(other.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMMatrix]
+  inline def fromMatrix(): typings.std.DOMMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMatrix")().asInstanceOf[typings.std.DOMMatrix]
+  inline def fromMatrix(other: DOMMatrixInit): typings.std.DOMMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMatrix")(other.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMMatrix]
 }

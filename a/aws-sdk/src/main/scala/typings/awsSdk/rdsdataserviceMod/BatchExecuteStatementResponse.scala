@@ -13,22 +13,17 @@ trait BatchExecuteStatementResponse extends StObject {
 }
 object BatchExecuteStatementResponse {
   
-  @scala.inline
-  def apply(): BatchExecuteStatementResponse = {
+  inline def apply(): BatchExecuteStatementResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchExecuteStatementResponse]
   }
   
-  @scala.inline
-  implicit class BatchExecuteStatementResponseMutableBuilder[Self <: BatchExecuteStatementResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchExecuteStatementResponse](x: Self) {
     
-    @scala.inline
-    def setUpdateResults(value: UpdateResults): Self = StObject.set(x, "updateResults", value.asInstanceOf[js.Any])
+    inline def setUpdateResults(value: UpdateResults): Self = StObject.set(x, "updateResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateResultsUndefined: Self = StObject.set(x, "updateResults", js.undefined)
+    inline def setUpdateResultsUndefined: Self = StObject.set(x, "updateResults", js.undefined)
     
-    @scala.inline
-    def setUpdateResultsVarargs(value: UpdateResult*): Self = StObject.set(x, "updateResults", js.Array(value :_*))
+    inline def setUpdateResultsVarargs(value: UpdateResult*): Self = StObject.set(x, "updateResults", js.Array(value :_*))
   }
 }

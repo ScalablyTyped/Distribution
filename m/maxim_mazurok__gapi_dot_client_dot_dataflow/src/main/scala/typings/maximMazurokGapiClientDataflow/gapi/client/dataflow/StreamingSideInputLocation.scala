@@ -14,25 +14,19 @@ trait StreamingSideInputLocation extends StObject {
 }
 object StreamingSideInputLocation {
   
-  @scala.inline
-  def apply(): StreamingSideInputLocation = {
+  inline def apply(): StreamingSideInputLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamingSideInputLocation]
   }
   
-  @scala.inline
-  implicit class StreamingSideInputLocationMutableBuilder[Self <: StreamingSideInputLocation] (val x: Self) extends AnyVal {
+  extension [Self <: StreamingSideInputLocation](x: Self) {
     
-    @scala.inline
-    def setStateFamily(value: String): Self = StObject.set(x, "stateFamily", value.asInstanceOf[js.Any])
+    inline def setStateFamily(value: String): Self = StObject.set(x, "stateFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateFamilyUndefined: Self = StObject.set(x, "stateFamily", js.undefined)
+    inline def setStateFamilyUndefined: Self = StObject.set(x, "stateFamily", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

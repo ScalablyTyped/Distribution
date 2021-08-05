@@ -13,22 +13,17 @@ trait TemplateInformation extends StObject {
 }
 object TemplateInformation {
   
-  @scala.inline
-  def apply(): TemplateInformation = {
+  inline def apply(): TemplateInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateInformation]
   }
   
-  @scala.inline
-  implicit class TemplateInformationMutableBuilder[Self <: TemplateInformation] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateInformation](x: Self) {
     
-    @scala.inline
-    def setTemplates(value: js.Array[/* Summary of a template request. */ TemplateSummary]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+    inline def setTemplates(value: js.Array[/* Summary of a template request. */ TemplateSummary]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
+    inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
-    @scala.inline
-    def setTemplatesVarargs(value: (/* Summary of a template request. */ TemplateSummary)*): Self = StObject.set(x, "templates", js.Array(value :_*))
+    inline def setTemplatesVarargs(value: (/* Summary of a template request. */ TemplateSummary)*): Self = StObject.set(x, "templates", js.Array(value :_*))
   }
 }

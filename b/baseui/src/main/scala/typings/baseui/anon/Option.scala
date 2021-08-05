@@ -12,22 +12,17 @@ trait Option extends StObject {
 }
 object Option {
   
-  @scala.inline
-  def apply(optionState: Disabled): Option = {
+  inline def apply(optionState: Disabled): Option = {
     val __obj = js.Dynamic.literal(optionState = optionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]
   }
   
-  @scala.inline
-  implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+  extension [Self <: Option](x: Self) {
     
-    @scala.inline
-    def setOption(value: typings.baseui.selectMod.Option): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+    inline def setOption(value: typings.baseui.selectMod.Option): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionState(value: Disabled): Self = StObject.set(x, "optionState", value.asInstanceOf[js.Any])
+    inline def setOptionState(value: Disabled): Self = StObject.set(x, "optionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
+    inline def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
   }
 }

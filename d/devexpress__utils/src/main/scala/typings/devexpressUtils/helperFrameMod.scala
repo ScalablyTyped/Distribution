@@ -12,23 +12,23 @@ object helperFrameMod {
   class PdfHelperFrame protected () extends StObject {
     def this(container: HTMLElement, frameClassName: String) = this()
     
-    val container: js.Any = js.native
+    /* private */ val container: js.Any = js.native
     
-    var createHelperFrame: js.Any = js.native
+    /* private */ var createHelperFrame: js.Any = js.native
     
     def dispose(): Unit = js.native
     
-    val frameClassName: js.Any = js.native
+    /* private */ val frameClassName: js.Any = js.native
     
-    var getHelperFrame: js.Any = js.native
+    /* private */ var getHelperFrame: js.Any = js.native
     
-    var getNewName: js.Any = js.native
+    /* private */ var getNewName: js.Any = js.native
     
-    var helperFrame: js.Any = js.native
+    /* private */ var helperFrame: js.Any = js.native
     
-    var helperFrameName: js.Any = js.native
+    /* private */ var helperFrameName: js.Any = js.native
     
-    var removeHelperFrame: js.Any = js.native
+    /* private */ var removeHelperFrame: js.Any = js.native
     
     def showPrintDialog(resourceUrl: String): Unit = js.native
   }

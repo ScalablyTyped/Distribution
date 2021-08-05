@@ -14,22 +14,17 @@ trait CallFunctionSuccess extends StObject {
 }
 object CallFunctionSuccess {
   
-  @scala.inline
-  def apply(errMsg: String, requestID: String, result: String): CallFunctionSuccess = {
+  inline def apply(errMsg: String, requestID: String, result: String): CallFunctionSuccess = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], requestID = requestID.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallFunctionSuccess]
   }
   
-  @scala.inline
-  implicit class CallFunctionSuccessMutableBuilder[Self <: CallFunctionSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: CallFunctionSuccess](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestID(value: String): Self = StObject.set(x, "requestID", value.asInstanceOf[js.Any])
+    inline def setRequestID(value: String): Self = StObject.set(x, "requestID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

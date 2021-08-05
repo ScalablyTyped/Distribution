@@ -15,19 +15,15 @@ trait TypeofDateInput extends StObject {
 }
 object TypeofDateInput {
   
-  @scala.inline
-  def apply(extend: js.Object => DateInput, fn: DateInput): TypeofDateInput = {
+  inline def apply(extend: js.Object => DateInput, fn: DateInput): TypeofDateInput = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofDateInput]
   }
   
-  @scala.inline
-  implicit class TypeofDateInputMutableBuilder[Self <: TypeofDateInput] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofDateInput](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => DateInput): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => DateInput): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: DateInput): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: DateInput): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

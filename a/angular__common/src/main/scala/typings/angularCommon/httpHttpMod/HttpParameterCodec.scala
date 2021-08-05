@@ -16,8 +16,7 @@ trait HttpParameterCodec extends StObject {
 }
 object HttpParameterCodec {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     decodeKey: String => String,
     decodeValue: String => String,
     encodeKey: String => String,
@@ -27,19 +26,14 @@ object HttpParameterCodec {
     __obj.asInstanceOf[HttpParameterCodec]
   }
   
-  @scala.inline
-  implicit class HttpParameterCodecMutableBuilder[Self <: HttpParameterCodec] (val x: Self) extends AnyVal {
+  extension [Self <: HttpParameterCodec](x: Self) {
     
-    @scala.inline
-    def setDecodeKey(value: String => String): Self = StObject.set(x, "decodeKey", js.Any.fromFunction1(value))
+    inline def setDecodeKey(value: String => String): Self = StObject.set(x, "decodeKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDecodeValue(value: String => String): Self = StObject.set(x, "decodeValue", js.Any.fromFunction1(value))
+    inline def setDecodeValue(value: String => String): Self = StObject.set(x, "decodeValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncodeKey(value: String => String): Self = StObject.set(x, "encodeKey", js.Any.fromFunction1(value))
+    inline def setEncodeKey(value: String => String): Self = StObject.set(x, "encodeKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncodeValue(value: String => String): Self = StObject.set(x, "encodeValue", js.Any.fromFunction1(value))
+    inline def setEncodeValue(value: String => String): Self = StObject.set(x, "encodeValue", js.Any.fromFunction1(value))
   }
 }

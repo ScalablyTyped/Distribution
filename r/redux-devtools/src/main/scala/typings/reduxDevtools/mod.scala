@@ -20,15 +20,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def instrument(): js.Function1[/* opts */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("instrument")().asInstanceOf[js.Function1[/* opts */ js.Any, js.Any]]
+    inline def instrument(): js.Function1[/* opts */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("instrument")().asInstanceOf[js.Function1[/* opts */ js.Any, js.Any]]
   }
   
-  @scala.inline
-  def createDevTools(el: ReactElement): IDevTools = ^.asInstanceOf[js.Dynamic].applyDynamic("createDevTools")(el.asInstanceOf[js.Any]).asInstanceOf[IDevTools]
+  inline def createDevTools(el: ReactElement): IDevTools = ^.asInstanceOf[js.Dynamic].applyDynamic("createDevTools")(el.asInstanceOf[js.Any]).asInstanceOf[IDevTools]
   
-  @scala.inline
-  def persistState(debugSessionKey: String): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("persistState")(debugSessionKey.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[js.Object, js.Object]]
+  inline def persistState(debugSessionKey: String): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("persistState")(debugSessionKey.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[js.Object, js.Object]]
   
   @js.native
   trait IDevTools

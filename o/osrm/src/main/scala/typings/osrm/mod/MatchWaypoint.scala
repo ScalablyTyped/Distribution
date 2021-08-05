@@ -22,8 +22,7 @@ trait MatchWaypoint
 }
 object MatchWaypoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     distance: Double,
     hint: String,
     location: Coordinate,
@@ -35,19 +34,14 @@ object MatchWaypoint {
     __obj.asInstanceOf[MatchWaypoint]
   }
   
-  @scala.inline
-  implicit class MatchWaypointMutableBuilder[Self <: MatchWaypoint] (val x: Self) extends AnyVal {
+  extension [Self <: MatchWaypoint](x: Self) {
     
-    @scala.inline
-    def setMatchings_index(value: js.Array[Double]): Self = StObject.set(x, "matchings_index", value.asInstanceOf[js.Any])
+    inline def setMatchings_index(value: js.Array[Double]): Self = StObject.set(x, "matchings_index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchings_indexVarargs(value: Double*): Self = StObject.set(x, "matchings_index", js.Array(value :_*))
+    inline def setMatchings_indexVarargs(value: Double*): Self = StObject.set(x, "matchings_index", js.Array(value :_*))
     
-    @scala.inline
-    def setWaypoint_index(value: js.Array[Double]): Self = StObject.set(x, "waypoint_index", value.asInstanceOf[js.Any])
+    inline def setWaypoint_index(value: js.Array[Double]): Self = StObject.set(x, "waypoint_index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypoint_indexVarargs(value: Double*): Self = StObject.set(x, "waypoint_index", js.Array(value :_*))
+    inline def setWaypoint_indexVarargs(value: Double*): Self = StObject.set(x, "waypoint_index", js.Array(value :_*))
   }
 }

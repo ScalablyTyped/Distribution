@@ -446,8 +446,7 @@ trait TNode extends StObject {
 }
 object TNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     classBindings: TStylingRange,
     directiveEnd: Double,
     directiveStart: Double,
@@ -465,193 +464,130 @@ object TNode {
     __obj.asInstanceOf[TNode]
   }
   
-  @scala.inline
-  implicit class TNodeMutableBuilder[Self <: TNode] (val x: Self) extends AnyVal {
+  extension [Self <: TNode](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: TAttributes): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: TAttributes): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttrsNull: Self = StObject.set(x, "attrs", null)
+    inline def setAttrsNull: Self = StObject.set(x, "attrs", null)
     
-    @scala.inline
-    def setAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "attrs", js.Array(value :_*))
+    inline def setAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "attrs", js.Array(value :_*))
     
-    @scala.inline
-    def setChild(value: TNode): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
+    inline def setChild(value: TNode): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildNull: Self = StObject.set(x, "child", null)
+    inline def setChildNull: Self = StObject.set(x, "child", null)
     
-    @scala.inline
-    def setClassBindings(value: TStylingRange): Self = StObject.set(x, "classBindings", value.asInstanceOf[js.Any])
+    inline def setClassBindings(value: TStylingRange): Self = StObject.set(x, "classBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesNull: Self = StObject.set(x, "classes", null)
+    inline def setClassesNull: Self = StObject.set(x, "classes", null)
     
-    @scala.inline
-    def setClassesWithoutHost(value: String): Self = StObject.set(x, "classesWithoutHost", value.asInstanceOf[js.Any])
+    inline def setClassesWithoutHost(value: String): Self = StObject.set(x, "classesWithoutHost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesWithoutHostNull: Self = StObject.set(x, "classesWithoutHost", null)
+    inline def setClassesWithoutHostNull: Self = StObject.set(x, "classesWithoutHost", null)
     
-    @scala.inline
-    def setDirectiveEnd(value: Double): Self = StObject.set(x, "directiveEnd", value.asInstanceOf[js.Any])
+    inline def setDirectiveEnd(value: Double): Self = StObject.set(x, "directiveEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectiveStart(value: Double): Self = StObject.set(x, "directiveStart", value.asInstanceOf[js.Any])
+    inline def setDirectiveStart(value: Double): Self = StObject.set(x, "directiveStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectiveStylingLast(value: Double): Self = StObject.set(x, "directiveStylingLast", value.asInstanceOf[js.Any])
+    inline def setDirectiveStylingLast(value: Double): Self = StObject.set(x, "directiveStylingLast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: TNodeFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: TNodeFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialInputs(value: InitialInputData): Self = StObject.set(x, "initialInputs", value.asInstanceOf[js.Any])
+    inline def setInitialInputs(value: InitialInputData): Self = StObject.set(x, "initialInputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialInputsNull: Self = StObject.set(x, "initialInputs", null)
+    inline def setInitialInputsNull: Self = StObject.set(x, "initialInputs", null)
     
-    @scala.inline
-    def setInitialInputsUndefined: Self = StObject.set(x, "initialInputs", js.undefined)
+    inline def setInitialInputsUndefined: Self = StObject.set(x, "initialInputs", js.undefined)
     
-    @scala.inline
-    def setInitialInputsVarargs(value: (InitialInputs | Null)*): Self = StObject.set(x, "initialInputs", js.Array(value :_*))
+    inline def setInitialInputsVarargs(value: (InitialInputs | Null)*): Self = StObject.set(x, "initialInputs", js.Array(value :_*))
     
-    @scala.inline
-    def setInjectorIndex(value: Double): Self = StObject.set(x, "injectorIndex", value.asInstanceOf[js.Any])
+    inline def setInjectorIndex(value: Double): Self = StObject.set(x, "injectorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: PropertyAliases): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: PropertyAliases): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsNull: Self = StObject.set(x, "inputs", null)
+    inline def setInputsNull: Self = StObject.set(x, "inputs", null)
     
-    @scala.inline
-    def setInsertBeforeIndex(value: InsertBeforeIndex): Self = StObject.set(x, "insertBeforeIndex", value.asInstanceOf[js.Any])
+    inline def setInsertBeforeIndex(value: InsertBeforeIndex): Self = StObject.set(x, "insertBeforeIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertBeforeIndexNull: Self = StObject.set(x, "insertBeforeIndex", null)
+    inline def setInsertBeforeIndexNull: Self = StObject.set(x, "insertBeforeIndex", null)
     
-    @scala.inline
-    def setInsertBeforeIndexVarargs(value: Double*): Self = StObject.set(x, "insertBeforeIndex", js.Array(value :_*))
+    inline def setInsertBeforeIndexVarargs(value: Double*): Self = StObject.set(x, "insertBeforeIndex", js.Array(value :_*))
     
-    @scala.inline
-    def setLocalNames(value: js.Array[String | Double]): Self = StObject.set(x, "localNames", value.asInstanceOf[js.Any])
+    inline def setLocalNames(value: js.Array[String | Double]): Self = StObject.set(x, "localNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalNamesNull: Self = StObject.set(x, "localNames", null)
+    inline def setLocalNamesNull: Self = StObject.set(x, "localNames", null)
     
-    @scala.inline
-    def setLocalNamesVarargs(value: (String | Double)*): Self = StObject.set(x, "localNames", js.Array(value :_*))
+    inline def setLocalNamesVarargs(value: (String | Double)*): Self = StObject.set(x, "localNames", js.Array(value :_*))
     
-    @scala.inline
-    def setMergedAttrs(value: TAttributes): Self = StObject.set(x, "mergedAttrs", value.asInstanceOf[js.Any])
+    inline def setMergedAttrs(value: TAttributes): Self = StObject.set(x, "mergedAttrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergedAttrsNull: Self = StObject.set(x, "mergedAttrs", null)
+    inline def setMergedAttrsNull: Self = StObject.set(x, "mergedAttrs", null)
     
-    @scala.inline
-    def setMergedAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "mergedAttrs", js.Array(value :_*))
+    inline def setMergedAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "mergedAttrs", js.Array(value :_*))
     
-    @scala.inline
-    def setNext(value: TNode): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: TNode): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextNull: Self = StObject.set(x, "next", null)
+    inline def setNextNull: Self = StObject.set(x, "next", null)
     
-    @scala.inline
-    def setOutputs(value: PropertyAliases): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: PropertyAliases): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsNull: Self = StObject.set(x, "outputs", null)
+    inline def setOutputsNull: Self = StObject.set(x, "outputs", null)
     
-    @scala.inline
-    def setParent(value: ɵangularPackagesCoreCoreBh | TContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: ɵangularPackagesCoreCoreBh | TContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setProjection(value: (js.Array[TNode | js.Array[RNode]]) | Double): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: (js.Array[TNode | js.Array[RNode]]) | Double): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionNext(value: TNode): Self = StObject.set(x, "projectionNext", value.asInstanceOf[js.Any])
+    inline def setProjectionNext(value: TNode): Self = StObject.set(x, "projectionNext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionNextNull: Self = StObject.set(x, "projectionNext", null)
+    inline def setProjectionNextNull: Self = StObject.set(x, "projectionNext", null)
     
-    @scala.inline
-    def setProjectionNull: Self = StObject.set(x, "projection", null)
+    inline def setProjectionNull: Self = StObject.set(x, "projection", null)
     
-    @scala.inline
-    def setProjectionVarargs(value: (TNode | js.Array[RNode])*): Self = StObject.set(x, "projection", js.Array(value :_*))
+    inline def setProjectionVarargs(value: (TNode | js.Array[RNode])*): Self = StObject.set(x, "projection", js.Array(value :_*))
     
-    @scala.inline
-    def setPropertyBindings(value: js.Array[Double]): Self = StObject.set(x, "propertyBindings", value.asInstanceOf[js.Any])
+    inline def setPropertyBindings(value: js.Array[Double]): Self = StObject.set(x, "propertyBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyBindingsNull: Self = StObject.set(x, "propertyBindings", null)
+    inline def setPropertyBindingsNull: Self = StObject.set(x, "propertyBindings", null)
     
-    @scala.inline
-    def setPropertyBindingsVarargs(value: Double*): Self = StObject.set(x, "propertyBindings", js.Array(value :_*))
+    inline def setPropertyBindingsVarargs(value: Double*): Self = StObject.set(x, "propertyBindings", js.Array(value :_*))
     
-    @scala.inline
-    def setProviderIndexes(value: TNodeProviderIndexes): Self = StObject.set(x, "providerIndexes", value.asInstanceOf[js.Any])
+    inline def setProviderIndexes(value: TNodeProviderIndexes): Self = StObject.set(x, "providerIndexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResidualClasses(value: KeyValueArray[js.Any]): Self = StObject.set(x, "residualClasses", value.asInstanceOf[js.Any])
+    inline def setResidualClasses(value: KeyValueArray[js.Any]): Self = StObject.set(x, "residualClasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResidualClassesNull: Self = StObject.set(x, "residualClasses", null)
+    inline def setResidualClassesNull: Self = StObject.set(x, "residualClasses", null)
     
-    @scala.inline
-    def setResidualClassesUndefined: Self = StObject.set(x, "residualClasses", js.undefined)
+    inline def setResidualClassesUndefined: Self = StObject.set(x, "residualClasses", js.undefined)
     
-    @scala.inline
-    def setResidualStyles(value: KeyValueArray[js.Any]): Self = StObject.set(x, "residualStyles", value.asInstanceOf[js.Any])
+    inline def setResidualStyles(value: KeyValueArray[js.Any]): Self = StObject.set(x, "residualStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResidualStylesNull: Self = StObject.set(x, "residualStyles", null)
+    inline def setResidualStylesNull: Self = StObject.set(x, "residualStyles", null)
     
-    @scala.inline
-    def setResidualStylesUndefined: Self = StObject.set(x, "residualStyles", js.undefined)
+    inline def setResidualStylesUndefined: Self = StObject.set(x, "residualStyles", js.undefined)
     
-    @scala.inline
-    def setStyleBindings(value: TStylingRange): Self = StObject.set(x, "styleBindings", value.asInstanceOf[js.Any])
+    inline def setStyleBindings(value: TStylingRange): Self = StObject.set(x, "styleBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesNull: Self = StObject.set(x, "styles", null)
+    inline def setStylesNull: Self = StObject.set(x, "styles", null)
     
-    @scala.inline
-    def setStylesWithoutHost(value: String): Self = StObject.set(x, "stylesWithoutHost", value.asInstanceOf[js.Any])
+    inline def setStylesWithoutHost(value: String): Self = StObject.set(x, "stylesWithoutHost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesWithoutHostNull: Self = StObject.set(x, "stylesWithoutHost", null)
+    inline def setStylesWithoutHostNull: Self = StObject.set(x, "stylesWithoutHost", null)
     
-    @scala.inline
-    def setTViews(value: TView | js.Array[TView]): Self = StObject.set(x, "tViews", value.asInstanceOf[js.Any])
+    inline def setTViews(value: TView | js.Array[TView]): Self = StObject.set(x, "tViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTViewsNull: Self = StObject.set(x, "tViews", null)
+    inline def setTViewsNull: Self = StObject.set(x, "tViews", null)
     
-    @scala.inline
-    def setTViewsVarargs(value: TView*): Self = StObject.set(x, "tViews", js.Array(value :_*))
+    inline def setTViewsVarargs(value: TView*): Self = StObject.set(x, "tViews", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: TNodeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TNodeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

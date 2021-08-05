@@ -14,31 +14,23 @@ trait SummaryProcess extends StObject {
 }
 object SummaryProcess {
   
-  @scala.inline
-  def apply(): SummaryProcess = {
+  inline def apply(): SummaryProcess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SummaryProcess]
   }
   
-  @scala.inline
-  implicit class SummaryProcessMutableBuilder[Self <: SummaryProcess] (val x: Self) extends AnyVal {
+  extension [Self <: SummaryProcess](x: Self) {
     
-    @scala.inline
-    def setSummaryProcess(value: String): Self = StObject.set(x, "summaryProcess", value.asInstanceOf[js.Any])
+    inline def setSummaryProcess(value: String): Self = StObject.set(x, "summaryProcess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryProcessUndefined: Self = StObject.set(x, "summaryProcess", js.undefined)
+    inline def setSummaryProcessUndefined: Self = StObject.set(x, "summaryProcess", js.undefined)
     
-    @scala.inline
-    def setTotalValue(value: js.Any): Self = StObject.set(x, "totalValue", value.asInstanceOf[js.Any])
+    inline def setTotalValue(value: js.Any): Self = StObject.set(x, "totalValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalValueUndefined: Self = StObject.set(x, "totalValue", js.undefined)
+    inline def setTotalValueUndefined: Self = StObject.set(x, "totalValue", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

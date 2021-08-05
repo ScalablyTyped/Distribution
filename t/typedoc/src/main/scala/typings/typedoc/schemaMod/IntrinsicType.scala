@@ -17,8 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object IntrinsicType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     name: ModelToObject[String] | String,
     `type`: (ModelToObject[/* "intrinsic" */ String]) | (/* "intrinsic" */ String)
   ): IntrinsicType = {
@@ -27,19 +26,14 @@ object IntrinsicType {
     __obj.asInstanceOf[IntrinsicType]
   }
   
-  @scala.inline
-  implicit class IntrinsicTypeMutableBuilder[Self <: IntrinsicType] (val x: Self) extends AnyVal {
+  extension [Self <: IntrinsicType](x: Self) {
     
-    @scala.inline
-    def setName(value: ModelToObject[String] | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ModelToObject[String] | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "name", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: (ModelToObject[/* "intrinsic" */ String]) | (/* "intrinsic" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: (ModelToObject[/* "intrinsic" */ String]) | (/* "intrinsic" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

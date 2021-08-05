@@ -76,11 +76,9 @@ object parserMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def parseAlgorithm(str: String): Contents = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAlgorithm")(str.asInstanceOf[js.Any]).asInstanceOf[Contents]
+    inline def parseAlgorithm(str: String): Contents = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAlgorithm")(str.asInstanceOf[js.Any]).asInstanceOf[Contents]
     
-    @scala.inline
-    def parseFragment(str: String): js.Array[FragmentNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFragment")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[FragmentNode]]
+    inline def parseFragment(str: String): js.Array[FragmentNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFragment")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[FragmentNode]]
   }
   
   trait ParseFragmentOpts extends StObject {
@@ -89,20 +87,16 @@ object parserMod {
   }
   object ParseFragmentOpts {
     
-    @scala.inline
-    def apply(): ParseFragmentOpts = {
+    inline def apply(): ParseFragmentOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseFragmentOpts]
     }
     
-    @scala.inline
-    implicit class ParseFragmentOptsMutableBuilder[Self <: ParseFragmentOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ParseFragmentOpts](x: Self) {
       
-      @scala.inline
-      def setInList(value: Boolean): Self = StObject.set(x, "inList", value.asInstanceOf[js.Any])
+      inline def setInList(value: Boolean): Self = StObject.set(x, "inList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInListUndefined: Self = StObject.set(x, "inList", js.undefined)
+      inline def setInListUndefined: Self = StObject.set(x, "inList", js.undefined)
     }
   }
 }

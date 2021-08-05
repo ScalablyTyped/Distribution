@@ -23,51 +23,37 @@ trait IRuntimeConfig extends StObject {
 }
 object IRuntimeConfig {
   
-  @scala.inline
-  def apply(): IRuntimeConfig = {
+  inline def apply(): IRuntimeConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRuntimeConfig]
   }
   
-  @scala.inline
-  implicit class IRuntimeConfigMutableBuilder[Self <: IRuntimeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IRuntimeConfig](x: Self) {
     
-    @scala.inline
-    def setIsDryRun(value: Boolean): Self = StObject.set(x, "isDryRun", value.asInstanceOf[js.Any])
+    inline def setIsDryRun(value: Boolean): Self = StObject.set(x, "isDryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDryRunNull: Self = StObject.set(x, "isDryRun", null)
+    inline def setIsDryRunNull: Self = StObject.set(x, "isDryRun", null)
     
-    @scala.inline
-    def setIsDryRunUndefined: Self = StObject.set(x, "isDryRun", js.undefined)
+    inline def setIsDryRunUndefined: Self = StObject.set(x, "isDryRun", js.undefined)
     
-    @scala.inline
-    def setIsFailFast(value: Boolean): Self = StObject.set(x, "isFailFast", value.asInstanceOf[js.Any])
+    inline def setIsFailFast(value: Boolean): Self = StObject.set(x, "isFailFast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFailFastNull: Self = StObject.set(x, "isFailFast", null)
+    inline def setIsFailFastNull: Self = StObject.set(x, "isFailFast", null)
     
-    @scala.inline
-    def setIsFailFastUndefined: Self = StObject.set(x, "isFailFast", js.undefined)
+    inline def setIsFailFastUndefined: Self = StObject.set(x, "isFailFast", js.undefined)
     
-    @scala.inline
-    def setIsStrict(value: Boolean): Self = StObject.set(x, "isStrict", value.asInstanceOf[js.Any])
+    inline def setIsStrict(value: Boolean): Self = StObject.set(x, "isStrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStrictNull: Self = StObject.set(x, "isStrict", null)
+    inline def setIsStrictNull: Self = StObject.set(x, "isStrict", null)
     
-    @scala.inline
-    def setIsStrictUndefined: Self = StObject.set(x, "isStrict", js.undefined)
+    inline def setIsStrictUndefined: Self = StObject.set(x, "isStrict", js.undefined)
     
-    @scala.inline
-    def setMaxParallel(
+    inline def setMaxParallel(
       value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
     ): Self = StObject.set(x, "maxParallel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxParallelNull: Self = StObject.set(x, "maxParallel", null)
+    inline def setMaxParallelNull: Self = StObject.set(x, "maxParallel", null)
     
-    @scala.inline
-    def setMaxParallelUndefined: Self = StObject.set(x, "maxParallel", js.undefined)
+    inline def setMaxParallelUndefined: Self = StObject.set(x, "maxParallel", js.undefined)
   }
 }

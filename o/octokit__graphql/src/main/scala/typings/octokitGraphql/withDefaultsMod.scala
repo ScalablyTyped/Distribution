@@ -13,6 +13,5 @@ object withDefaultsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def withDefaults(request: RequestInterface[js.Object], newDefaults: RequestParameters): graphql = (^.asInstanceOf[js.Dynamic].applyDynamic("withDefaults")(request.asInstanceOf[js.Any], newDefaults.asInstanceOf[js.Any])).asInstanceOf[graphql]
+  inline def withDefaults(request: RequestInterface[js.Object], newDefaults: RequestParameters): graphql = (^.asInstanceOf[js.Dynamic].applyDynamic("withDefaults")(request.asInstanceOf[js.Any], newDefaults.asInstanceOf[js.Any])).asInstanceOf[graphql]
 }

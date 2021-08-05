@@ -7,14 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def apply(filename: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def apply(filename: String, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def apply(options: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  inline def apply(filename: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(filename: String, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(options: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-angular-templatecache", JSImport.Namespace)
   @js.native
@@ -74,74 +70,52 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBase(value: String | js.Function): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String | js.Function): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleSystem(value: String): Self = StObject.set(x, "moduleSystem", value.asInstanceOf[js.Any])
+      inline def setModuleSystem(value: String): Self = StObject.set(x, "moduleSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleSystemUndefined: Self = StObject.set(x, "moduleSystem", js.undefined)
+      inline def setModuleSystemUndefined: Self = StObject.set(x, "moduleSystem", js.undefined)
       
-      @scala.inline
-      def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+      inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+      inline def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
+      inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
       
-      @scala.inline
-      def setTemplateBody(value: String): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
+      inline def setTemplateBody(value: String): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
+      inline def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
       
-      @scala.inline
-      def setTemplateFooter(value: String): Self = StObject.set(x, "templateFooter", value.asInstanceOf[js.Any])
+      inline def setTemplateFooter(value: String): Self = StObject.set(x, "templateFooter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateFooterUndefined: Self = StObject.set(x, "templateFooter", js.undefined)
+      inline def setTemplateFooterUndefined: Self = StObject.set(x, "templateFooter", js.undefined)
       
-      @scala.inline
-      def setTemplateHeader(value: String): Self = StObject.set(x, "templateHeader", value.asInstanceOf[js.Any])
+      inline def setTemplateHeader(value: String): Self = StObject.set(x, "templateHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateHeaderUndefined: Self = StObject.set(x, "templateHeader", js.undefined)
+      inline def setTemplateHeaderUndefined: Self = StObject.set(x, "templateHeader", js.undefined)
       
-      @scala.inline
-      def setTransformUrl(value: js.Function): Self = StObject.set(x, "transformUrl", value.asInstanceOf[js.Any])
+      inline def setTransformUrl(value: js.Function): Self = StObject.set(x, "transformUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformUrlUndefined: Self = StObject.set(x, "transformUrl", js.undefined)
+      inline def setTransformUrlUndefined: Self = StObject.set(x, "transformUrl", js.undefined)
     }
   }
 }

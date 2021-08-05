@@ -30,8 +30,7 @@ object mod {
     WindowsDependencyConfig | Null
   ] = js.native
   
-  @scala.inline
-  def generateWindows(projectDir: String, name: String, ns: String, options: GenerateOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateWindows")(projectDir.asInstanceOf[js.Any], name.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def generateWindows(projectDir: String, name: String, ns: String, options: GenerateOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateWindows")(projectDir.asInstanceOf[js.Any], name.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("@react-native-windows/cli/lib-commonjs", "projectConfig")
   @js.native
@@ -61,8 +60,7 @@ object mod {
   }
   object GenerateOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       experimentalNuGetDependency: Boolean,
       language: cpp | cs,
       overwrite: Boolean,
@@ -74,38 +72,27 @@ object mod {
       __obj.asInstanceOf[GenerateOptions]
     }
     
-    @scala.inline
-    implicit class GenerateOptionsMutableBuilder[Self <: GenerateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateOptions](x: Self) {
       
-      @scala.inline
-      def setExperimentalNuGetDependency(value: Boolean): Self = StObject.set(x, "experimentalNuGetDependency", value.asInstanceOf[js.Any])
+      inline def setExperimentalNuGetDependency(value: Boolean): Self = StObject.set(x, "experimentalNuGetDependency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: cpp | cs): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: cpp | cs): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNuGetTestFeed(value: String): Self = StObject.set(x, "nuGetTestFeed", value.asInstanceOf[js.Any])
+      inline def setNuGetTestFeed(value: String): Self = StObject.set(x, "nuGetTestFeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNuGetTestFeedUndefined: Self = StObject.set(x, "nuGetTestFeed", js.undefined)
+      inline def setNuGetTestFeedUndefined: Self = StObject.set(x, "nuGetTestFeed", js.undefined)
       
-      @scala.inline
-      def setNuGetTestVersion(value: String): Self = StObject.set(x, "nuGetTestVersion", value.asInstanceOf[js.Any])
+      inline def setNuGetTestVersion(value: String): Self = StObject.set(x, "nuGetTestVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNuGetTestVersionUndefined: Self = StObject.set(x, "nuGetTestVersion", js.undefined)
+      inline def setNuGetTestVersionUndefined: Self = StObject.set(x, "nuGetTestVersion", js.undefined)
       
-      @scala.inline
-      def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+      inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTelemetry(value: Boolean): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
+      inline def setTelemetry(value: Boolean): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseWinUI3(value: Boolean): Self = StObject.set(x, "useWinUI3", value.asInstanceOf[js.Any])
+      inline def setUseWinUI3(value: Boolean): Self = StObject.set(x, "useWinUI3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     }
   }
 }

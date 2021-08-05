@@ -14,19 +14,15 @@ trait SHOWADDDIALOG extends StObject {
 }
 object SHOWADDDIALOG {
   
-  @scala.inline
-  def apply(): SHOWADDDIALOG = {
+  inline def apply(): SHOWADDDIALOG = {
     val __obj = js.Dynamic.literal(SHOW_ADD_DIALOG = "showAddDialog", SHOW_CONFIGURE_DIALOG = "showConfigureDialog")
     __obj.asInstanceOf[SHOWADDDIALOG]
   }
   
-  @scala.inline
-  implicit class SHOWADDDIALOGMutableBuilder[Self <: SHOWADDDIALOG] (val x: Self) extends AnyVal {
+  extension [Self <: SHOWADDDIALOG](x: Self) {
     
-    @scala.inline
-    def setSHOW_ADD_DIALOG(value: showAddDialog): Self = StObject.set(x, "SHOW_ADD_DIALOG", value.asInstanceOf[js.Any])
+    inline def setSHOW_ADD_DIALOG(value: showAddDialog): Self = StObject.set(x, "SHOW_ADD_DIALOG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHOW_CONFIGURE_DIALOG(value: showConfigureDialog): Self = StObject.set(x, "SHOW_CONFIGURE_DIALOG", value.asInstanceOf[js.Any])
+    inline def setSHOW_CONFIGURE_DIALOG(value: showConfigureDialog): Self = StObject.set(x, "SHOW_CONFIGURE_DIALOG", value.asInstanceOf[js.Any])
   }
 }

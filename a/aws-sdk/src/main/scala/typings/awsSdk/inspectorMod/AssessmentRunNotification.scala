@@ -38,40 +38,29 @@ trait AssessmentRunNotification extends StObject {
 }
 object AssessmentRunNotification {
   
-  @scala.inline
-  def apply(date: Timestamp, error: Bool, event: InspectorEvent): AssessmentRunNotification = {
+  inline def apply(date: Timestamp, error: Bool, event: InspectorEvent): AssessmentRunNotification = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssessmentRunNotification]
   }
   
-  @scala.inline
-  implicit class AssessmentRunNotificationMutableBuilder[Self <: AssessmentRunNotification] (val x: Self) extends AnyVal {
+  extension [Self <: AssessmentRunNotification](x: Self) {
     
-    @scala.inline
-    def setDate(value: Timestamp): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Timestamp): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: Bool): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Bool): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: InspectorEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: InspectorEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setSnsPublishStatusCode(value: AssessmentRunNotificationSnsStatusCode): Self = StObject.set(x, "snsPublishStatusCode", value.asInstanceOf[js.Any])
+    inline def setSnsPublishStatusCode(value: AssessmentRunNotificationSnsStatusCode): Self = StObject.set(x, "snsPublishStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsPublishStatusCodeUndefined: Self = StObject.set(x, "snsPublishStatusCode", js.undefined)
+    inline def setSnsPublishStatusCodeUndefined: Self = StObject.set(x, "snsPublishStatusCode", js.undefined)
     
-    @scala.inline
-    def setSnsTopicArn(value: Arn): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
+    inline def setSnsTopicArn(value: Arn): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsTopicArnUndefined: Self = StObject.set(x, "snsTopicArn", js.undefined)
+    inline def setSnsTopicArnUndefined: Self = StObject.set(x, "snsTopicArn", js.undefined)
   }
 }

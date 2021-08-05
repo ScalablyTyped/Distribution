@@ -13,19 +13,15 @@ trait DescribeLoadBalancerAttributesOutput extends StObject {
 }
 object DescribeLoadBalancerAttributesOutput {
   
-  @scala.inline
-  def apply(): DescribeLoadBalancerAttributesOutput = {
+  inline def apply(): DescribeLoadBalancerAttributesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLoadBalancerAttributesOutput]
   }
   
-  @scala.inline
-  implicit class DescribeLoadBalancerAttributesOutputMutableBuilder[Self <: DescribeLoadBalancerAttributesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLoadBalancerAttributesOutput](x: Self) {
     
-    @scala.inline
-    def setLoadBalancerAttributes(value: LoadBalancerAttributes): Self = StObject.set(x, "LoadBalancerAttributes", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerAttributes(value: LoadBalancerAttributes): Self = StObject.set(x, "LoadBalancerAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerAttributesUndefined: Self = StObject.set(x, "LoadBalancerAttributes", js.undefined)
+    inline def setLoadBalancerAttributesUndefined: Self = StObject.set(x, "LoadBalancerAttributes", js.undefined)
   }
 }

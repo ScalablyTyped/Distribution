@@ -78,8 +78,7 @@ trait Mail extends StObject {
 }
 object Mail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addAttachment: Attachment => Unit,
     addCategory: Category => Unit,
     addContent: Content => Unit,
@@ -120,112 +119,76 @@ object Mail {
     __obj.asInstanceOf[typings.sendgrid.mod.SendGrid.Helpers.Mail.Mail]
   }
   
-  @scala.inline
-  implicit class MailMutableBuilder[Self <: typings.sendgrid.mod.SendGrid.Helpers.Mail.Mail] (val x: Self) extends AnyVal {
+  extension [Self <: typings.sendgrid.mod.SendGrid.Helpers.Mail.Mail](x: Self) {
     
-    @scala.inline
-    def setAddAttachment(value: Attachment => Unit): Self = StObject.set(x, "addAttachment", js.Any.fromFunction1(value))
+    inline def setAddAttachment(value: Attachment => Unit): Self = StObject.set(x, "addAttachment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddCategory(value: Category => Unit): Self = StObject.set(x, "addCategory", js.Any.fromFunction1(value))
+    inline def setAddCategory(value: Category => Unit): Self = StObject.set(x, "addCategory", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddContent(value: Content => Unit): Self = StObject.set(x, "addContent", js.Any.fromFunction1(value))
+    inline def setAddContent(value: Content => Unit): Self = StObject.set(x, "addContent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddCustomArg(value: CustomArgs => Unit): Self = StObject.set(x, "addCustomArg", js.Any.fromFunction1(value))
+    inline def setAddCustomArg(value: CustomArgs => Unit): Self = StObject.set(x, "addCustomArg", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddHeader(value: Header => Unit): Self = StObject.set(x, "addHeader", js.Any.fromFunction1(value))
+    inline def setAddHeader(value: Header => Unit): Self = StObject.set(x, "addHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddMailSettings(value: MailSettings => Unit): Self = StObject.set(x, "addMailSettings", js.Any.fromFunction1(value))
+    inline def setAddMailSettings(value: MailSettings => Unit): Self = StObject.set(x, "addMailSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddPersonalization(value: Personalization => Unit): Self = StObject.set(x, "addPersonalization", js.Any.fromFunction1(value))
+    inline def setAddPersonalization(value: Personalization => Unit): Self = StObject.set(x, "addPersonalization", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddSection(value: Section => Unit): Self = StObject.set(x, "addSection", js.Any.fromFunction1(value))
+    inline def setAddSection(value: Section => Unit): Self = StObject.set(x, "addSection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddTrackingSettings(value: TrackingSettings => Unit): Self = StObject.set(x, "addTrackingSettings", js.Any.fromFunction1(value))
+    inline def setAddTrackingSettings(value: TrackingSettings => Unit): Self = StObject.set(x, "addTrackingSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAsm(value: () => Asm): Self = StObject.set(x, "getAsm", js.Any.fromFunction0(value))
+    inline def setGetAsm(value: () => Asm): Self = StObject.set(x, "getAsm", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAttachments(value: () => js.Array[Attachment]): Self = StObject.set(x, "getAttachments", js.Any.fromFunction0(value))
+    inline def setGetAttachments(value: () => js.Array[Attachment]): Self = StObject.set(x, "getAttachments", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBatchId(value: () => String): Self = StObject.set(x, "getBatchId", js.Any.fromFunction0(value))
+    inline def setGetBatchId(value: () => String): Self = StObject.set(x, "getBatchId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCategories(value: () => js.Array[Category]): Self = StObject.set(x, "getCategories", js.Any.fromFunction0(value))
+    inline def setGetCategories(value: () => js.Array[Category]): Self = StObject.set(x, "getCategories", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContents(value: () => js.Array[Content]): Self = StObject.set(x, "getContents", js.Any.fromFunction0(value))
+    inline def setGetContents(value: () => js.Array[Content]): Self = StObject.set(x, "getContents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCustomArgs(value: () => js.Array[CustomArgs]): Self = StObject.set(x, "getCustomArgs", js.Any.fromFunction0(value))
+    inline def setGetCustomArgs(value: () => js.Array[CustomArgs]): Self = StObject.set(x, "getCustomArgs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFrom(value: () => Email): Self = StObject.set(x, "getFrom", js.Any.fromFunction0(value))
+    inline def setGetFrom(value: () => Email): Self = StObject.set(x, "getFrom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeaders(value: () => js.Array[Header]): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
+    inline def setGetHeaders(value: () => js.Array[Header]): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIpPoolName(value: () => String): Self = StObject.set(x, "getIpPoolName", js.Any.fromFunction0(value))
+    inline def setGetIpPoolName(value: () => String): Self = StObject.set(x, "getIpPoolName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMailSettings(value: () => MailSettings): Self = StObject.set(x, "getMailSettings", js.Any.fromFunction0(value))
+    inline def setGetMailSettings(value: () => MailSettings): Self = StObject.set(x, "getMailSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPersonalizations(value: () => js.Array[Personalization]): Self = StObject.set(x, "getPersonalizations", js.Any.fromFunction0(value))
+    inline def setGetPersonalizations(value: () => js.Array[Personalization]): Self = StObject.set(x, "getPersonalizations", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReplyTo(value: () => Email): Self = StObject.set(x, "getReplyTo", js.Any.fromFunction0(value))
+    inline def setGetReplyTo(value: () => Email): Self = StObject.set(x, "getReplyTo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSections(value: () => js.Array[Section]): Self = StObject.set(x, "getSections", js.Any.fromFunction0(value))
+    inline def setGetSections(value: () => js.Array[Section]): Self = StObject.set(x, "getSections", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSendAt(value: () => Double): Self = StObject.set(x, "getSendAt", js.Any.fromFunction0(value))
+    inline def setGetSendAt(value: () => Double): Self = StObject.set(x, "getSendAt", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubject(value: () => String): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
+    inline def setGetSubject(value: () => String): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTemplateId(value: () => String): Self = StObject.set(x, "getTemplateId", js.Any.fromFunction0(value))
+    inline def setGetTemplateId(value: () => String): Self = StObject.set(x, "getTemplateId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTrackingSettings(value: () => TrackingSettings): Self = StObject.set(x, "getTrackingSettings", js.Any.fromFunction0(value))
+    inline def setGetTrackingSettings(value: () => TrackingSettings): Self = StObject.set(x, "getTrackingSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAsm(value: Asm => Unit): Self = StObject.set(x, "setAsm", js.Any.fromFunction1(value))
+    inline def setSetAsm(value: Asm => Unit): Self = StObject.set(x, "setAsm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBatchId(value: String => Unit): Self = StObject.set(x, "setBatchId", js.Any.fromFunction1(value))
+    inline def setSetBatchId(value: String => Unit): Self = StObject.set(x, "setBatchId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFrom(value: Email => Unit): Self = StObject.set(x, "setFrom", js.Any.fromFunction1(value))
+    inline def setSetFrom(value: Email => Unit): Self = StObject.set(x, "setFrom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIpPoolName(value: String => Unit): Self = StObject.set(x, "setIpPoolName", js.Any.fromFunction1(value))
+    inline def setSetIpPoolName(value: String => Unit): Self = StObject.set(x, "setIpPoolName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetReplyTo(value: Email => Unit): Self = StObject.set(x, "setReplyTo", js.Any.fromFunction1(value))
+    inline def setSetReplyTo(value: Email => Unit): Self = StObject.set(x, "setReplyTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSendAt(value: Double => Unit): Self = StObject.set(x, "setSendAt", js.Any.fromFunction1(value))
+    inline def setSetSendAt(value: Double => Unit): Self = StObject.set(x, "setSendAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSubject(value: String => Unit): Self = StObject.set(x, "setSubject", js.Any.fromFunction1(value))
+    inline def setSetSubject(value: String => Unit): Self = StObject.set(x, "setSubject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTemplateId(value: String => Unit): Self = StObject.set(x, "setTemplateId", js.Any.fromFunction1(value))
+    inline def setSetTemplateId(value: String => Unit): Self = StObject.set(x, "setTemplateId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSON(value: () => typings.sendgrid.anon.Asm): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => typings.sendgrid.anon.Asm): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

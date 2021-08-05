@@ -62,21 +62,16 @@ object methodSettingsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): MethodSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MethodSettings]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MethodSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MethodSettings]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MethodSettingsState): MethodSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MethodSettings]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MethodSettingsState, opts: CustomResourceOptions): MethodSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MethodSettings]
+    inline def get(name: String, id: Input[ID]): MethodSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MethodSettings]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MethodSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MethodSettings]
+    inline def get(name: String, id: Input[ID], state: MethodSettingsState): MethodSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MethodSettings]
+    inline def get(name: String, id: Input[ID], state: MethodSettingsState, opts: CustomResourceOptions): MethodSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MethodSettings]
     
     /**
       * Returns true if the given object is an instance of MethodSettings.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/methodSettings.MethodSettings */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/methodSettings.MethodSettings */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/methodSettings.MethodSettings */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/methodSettings.MethodSettings */ Boolean]
   }
   
   trait MethodSettingsArgs extends StObject {
@@ -103,8 +98,7 @@ object methodSettingsMod {
   }
   object MethodSettingsArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       methodPath: Input[String],
       restApi: Input[String | RestApi],
       settings: Input[typings.pulumiAws.inputMod.apigateway.MethodSettingsSettings],
@@ -114,20 +108,15 @@ object methodSettingsMod {
       __obj.asInstanceOf[MethodSettingsArgs]
     }
     
-    @scala.inline
-    implicit class MethodSettingsArgsMutableBuilder[Self <: MethodSettingsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MethodSettingsArgs](x: Self) {
       
-      @scala.inline
-      def setMethodPath(value: Input[String]): Self = StObject.set(x, "methodPath", value.asInstanceOf[js.Any])
+      inline def setMethodPath(value: Input[String]): Self = StObject.set(x, "methodPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
+      inline def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings(value: Input[typings.pulumiAws.inputMod.apigateway.MethodSettingsSettings]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: Input[typings.pulumiAws.inputMod.apigateway.MethodSettingsSettings]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageName(value: Input[String]): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+      inline def setStageName(value: Input[String]): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,38 +144,28 @@ object methodSettingsMod {
   }
   object MethodSettingsState {
     
-    @scala.inline
-    def apply(): MethodSettingsState = {
+    inline def apply(): MethodSettingsState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MethodSettingsState]
     }
     
-    @scala.inline
-    implicit class MethodSettingsStateMutableBuilder[Self <: MethodSettingsState] (val x: Self) extends AnyVal {
+    extension [Self <: MethodSettingsState](x: Self) {
       
-      @scala.inline
-      def setMethodPath(value: Input[String]): Self = StObject.set(x, "methodPath", value.asInstanceOf[js.Any])
+      inline def setMethodPath(value: Input[String]): Self = StObject.set(x, "methodPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodPathUndefined: Self = StObject.set(x, "methodPath", js.undefined)
+      inline def setMethodPathUndefined: Self = StObject.set(x, "methodPath", js.undefined)
       
-      @scala.inline
-      def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
+      inline def setRestApi(value: Input[String | RestApi]): Self = StObject.set(x, "restApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestApiUndefined: Self = StObject.set(x, "restApi", js.undefined)
+      inline def setRestApiUndefined: Self = StObject.set(x, "restApi", js.undefined)
       
-      @scala.inline
-      def setSettings(value: Input[typings.pulumiAws.inputMod.apigateway.MethodSettingsSettings]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: Input[typings.pulumiAws.inputMod.apigateway.MethodSettingsSettings]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+      inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
       
-      @scala.inline
-      def setStageName(value: Input[String]): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+      inline def setStageName(value: Input[String]): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
+      inline def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
     }
   }
 }

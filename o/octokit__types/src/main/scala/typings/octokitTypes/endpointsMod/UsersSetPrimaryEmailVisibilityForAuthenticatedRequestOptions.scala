@@ -20,25 +20,19 @@ trait UsersSetPrimaryEmailVisibilityForAuthenticatedRequestOptions extends StObj
 }
 object UsersSetPrimaryEmailVisibilityForAuthenticatedRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): UsersSetPrimaryEmailVisibilityForAuthenticatedRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): UsersSetPrimaryEmailVisibilityForAuthenticatedRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PATCH", request = request.asInstanceOf[js.Any], url = "/user/email/visibility")
     __obj.asInstanceOf[UsersSetPrimaryEmailVisibilityForAuthenticatedRequestOptions]
   }
   
-  @scala.inline
-  implicit class UsersSetPrimaryEmailVisibilityForAuthenticatedRequestOptionsMutableBuilder[Self <: UsersSetPrimaryEmailVisibilityForAuthenticatedRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UsersSetPrimaryEmailVisibilityForAuthenticatedRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashuserSlashemailSlashvisibility): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashuserSlashemailSlashvisibility): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

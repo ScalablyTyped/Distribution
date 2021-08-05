@@ -74,8 +74,7 @@ object proxy {
   }
   object OnRequestDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       frameId: Double,
       fromCache: Boolean,
       method: String,
@@ -93,74 +92,51 @@ object proxy {
       __obj.asInstanceOf[OnRequestDetails]
     }
     
-    @scala.inline
-    implicit class OnRequestDetailsMutableBuilder[Self <: OnRequestDetails] (val x: Self) extends AnyVal {
+    extension [Self <: OnRequestDetails](x: Self) {
       
-      @scala.inline
-      def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
+      inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
+      inline def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
       
-      @scala.inline
-      def setDocumentUrl(value: String): Self = StObject.set(x, "documentUrl", value.asInstanceOf[js.Any])
+      inline def setDocumentUrl(value: String): Self = StObject.set(x, "documentUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentUrlUndefined: Self = StObject.set(x, "documentUrl", js.undefined)
+      inline def setDocumentUrlUndefined: Self = StObject.set(x, "documentUrl", js.undefined)
       
-      @scala.inline
-      def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+      inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
+      inline def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
+      inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
+      inline def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUrl(value: String): Self = StObject.set(x, "originUrl", value.asInstanceOf[js.Any])
+      inline def setOriginUrl(value: String): Self = StObject.set(x, "originUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUrlUndefined: Self = StObject.set(x, "originUrl", js.undefined)
+      inline def setOriginUrlUndefined: Self = StObject.set(x, "originUrl", js.undefined)
       
-      @scala.inline
-      def setParentFrameId(value: Double): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
+      inline def setParentFrameId(value: Double): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestHeaders(value: HttpHeaders): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+      inline def setRequestHeaders(value: HttpHeaders): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
+      inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
       
-      @scala.inline
-      def setRequestHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
+      inline def setRequestHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThirdParty(value: Boolean): Self = StObject.set(x, "thirdParty", value.asInstanceOf[js.Any])
+      inline def setThirdParty(value: Boolean): Self = StObject.set(x, "thirdParty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlClassification(value: UrlClassification): Self = StObject.set(x, "urlClassification", value.asInstanceOf[js.Any])
+      inline def setUrlClassification(value: UrlClassification): Self = StObject.set(x, "urlClassification", value.asInstanceOf[js.Any])
     }
   }
   
@@ -208,86 +184,60 @@ object proxy {
   }
   object ProxyConfig {
     
-    @scala.inline
-    def apply(): ProxyConfig = {
+    inline def apply(): ProxyConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProxyConfig]
     }
     
-    @scala.inline
-    implicit class ProxyConfigMutableBuilder[Self <: ProxyConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyConfig](x: Self) {
       
-      @scala.inline
-      def setAutoConfigUrl(value: String): Self = StObject.set(x, "autoConfigUrl", value.asInstanceOf[js.Any])
+      inline def setAutoConfigUrl(value: String): Self = StObject.set(x, "autoConfigUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoConfigUrlUndefined: Self = StObject.set(x, "autoConfigUrl", js.undefined)
+      inline def setAutoConfigUrlUndefined: Self = StObject.set(x, "autoConfigUrl", js.undefined)
       
-      @scala.inline
-      def setAutoLogin(value: Boolean): Self = StObject.set(x, "autoLogin", value.asInstanceOf[js.Any])
+      inline def setAutoLogin(value: Boolean): Self = StObject.set(x, "autoLogin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoLoginUndefined: Self = StObject.set(x, "autoLogin", js.undefined)
+      inline def setAutoLoginUndefined: Self = StObject.set(x, "autoLogin", js.undefined)
       
-      @scala.inline
-      def setFtp(value: String): Self = StObject.set(x, "ftp", value.asInstanceOf[js.Any])
+      inline def setFtp(value: String): Self = StObject.set(x, "ftp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFtpUndefined: Self = StObject.set(x, "ftp", js.undefined)
+      inline def setFtpUndefined: Self = StObject.set(x, "ftp", js.undefined)
       
-      @scala.inline
-      def setHttp(value: String): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+      inline def setHttp(value: String): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpProxyAll(value: Boolean): Self = StObject.set(x, "httpProxyAll", value.asInstanceOf[js.Any])
+      inline def setHttpProxyAll(value: Boolean): Self = StObject.set(x, "httpProxyAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpProxyAllUndefined: Self = StObject.set(x, "httpProxyAll", js.undefined)
+      inline def setHttpProxyAllUndefined: Self = StObject.set(x, "httpProxyAll", js.undefined)
       
-      @scala.inline
-      def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+      inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
       
-      @scala.inline
-      def setPassthrough(value: String): Self = StObject.set(x, "passthrough", value.asInstanceOf[js.Any])
+      inline def setPassthrough(value: String): Self = StObject.set(x, "passthrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassthroughUndefined: Self = StObject.set(x, "passthrough", js.undefined)
+      inline def setPassthroughUndefined: Self = StObject.set(x, "passthrough", js.undefined)
       
-      @scala.inline
-      def setProxyDNS(value: Boolean): Self = StObject.set(x, "proxyDNS", value.asInstanceOf[js.Any])
+      inline def setProxyDNS(value: Boolean): Self = StObject.set(x, "proxyDNS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyDNSUndefined: Self = StObject.set(x, "proxyDNS", js.undefined)
+      inline def setProxyDNSUndefined: Self = StObject.set(x, "proxyDNS", js.undefined)
       
-      @scala.inline
-      def setProxyType(value: ProxyConfigProxyType): Self = StObject.set(x, "proxyType", value.asInstanceOf[js.Any])
+      inline def setProxyType(value: ProxyConfigProxyType): Self = StObject.set(x, "proxyType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyTypeUndefined: Self = StObject.set(x, "proxyType", js.undefined)
+      inline def setProxyTypeUndefined: Self = StObject.set(x, "proxyType", js.undefined)
       
-      @scala.inline
-      def setRespectBeConservative(value: Boolean): Self = StObject.set(x, "respectBeConservative", value.asInstanceOf[js.Any])
+      inline def setRespectBeConservative(value: Boolean): Self = StObject.set(x, "respectBeConservative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRespectBeConservativeUndefined: Self = StObject.set(x, "respectBeConservative", js.undefined)
+      inline def setRespectBeConservativeUndefined: Self = StObject.set(x, "respectBeConservative", js.undefined)
       
-      @scala.inline
-      def setSocks(value: String): Self = StObject.set(x, "socks", value.asInstanceOf[js.Any])
+      inline def setSocks(value: String): Self = StObject.set(x, "socks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocksUndefined: Self = StObject.set(x, "socks", js.undefined)
+      inline def setSocksUndefined: Self = StObject.set(x, "socks", js.undefined)
       
-      @scala.inline
-      def setSocksVersion(value: Double): Self = StObject.set(x, "socksVersion", value.asInstanceOf[js.Any])
+      inline def setSocksVersion(value: Double): Self = StObject.set(x, "socksVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocksVersionUndefined: Self = StObject.set(x, "socksVersion", js.undefined)
+      inline def setSocksVersionUndefined: Self = StObject.set(x, "socksVersion", js.undefined)
       
-      @scala.inline
-      def setSsl(value: String): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+      inline def setSsl(value: String): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+      inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     }
   }
   
@@ -302,20 +252,15 @@ object proxy {
   trait ProxyConfigProxyType extends StObject
   object ProxyConfigProxyType {
     
-    @scala.inline
-    def autoConfig: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.autoConfig = "autoConfig".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.autoConfig]
+    inline def autoConfig: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.autoConfig = "autoConfig".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.autoConfig]
     
-    @scala.inline
-    def autoDetect: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.autoDetect = "autoDetect".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.autoDetect]
+    inline def autoDetect: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.autoDetect = "autoDetect".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.autoDetect]
     
-    @scala.inline
-    def manual: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual = "manual".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual]
+    inline def manual: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual = "manual".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual]
     
-    @scala.inline
-    def none: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.none = "none".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.none]
+    inline def none: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.none = "none".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.none]
     
-    @scala.inline
-    def system: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.system = "system".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.system]
+    inline def system: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.system = "system".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.system]
   }
   
   @js.native

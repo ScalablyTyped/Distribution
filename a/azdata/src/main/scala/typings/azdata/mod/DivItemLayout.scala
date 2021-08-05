@@ -19,25 +19,19 @@ trait DivItemLayout extends StObject {
 }
 object DivItemLayout {
   
-  @scala.inline
-  def apply(): DivItemLayout = {
+  inline def apply(): DivItemLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DivItemLayout]
   }
   
-  @scala.inline
-  implicit class DivItemLayoutMutableBuilder[Self <: DivItemLayout] (val x: Self) extends AnyVal {
+  extension [Self <: DivItemLayout](x: Self) {
     
-    @scala.inline
-    def setCSSStyles(value: StringDictionary[String]): Self = StObject.set(x, "CSSStyles", value.asInstanceOf[js.Any])
+    inline def setCSSStyles(value: StringDictionary[String]): Self = StObject.set(x, "CSSStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCSSStylesUndefined: Self = StObject.set(x, "CSSStyles", js.undefined)
+    inline def setCSSStylesUndefined: Self = StObject.set(x, "CSSStyles", js.undefined)
     
-    @scala.inline
-    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
   }
 }

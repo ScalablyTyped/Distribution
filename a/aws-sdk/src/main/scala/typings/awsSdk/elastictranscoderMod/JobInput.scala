@@ -58,73 +58,51 @@ trait JobInput extends StObject {
 }
 object JobInput {
   
-  @scala.inline
-  def apply(): JobInput = {
+  inline def apply(): JobInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobInput]
   }
   
-  @scala.inline
-  implicit class JobInputMutableBuilder[Self <: JobInput] (val x: Self) extends AnyVal {
+  extension [Self <: JobInput](x: Self) {
     
-    @scala.inline
-    def setAspectRatio(value: AspectRatio): Self = StObject.set(x, "AspectRatio", value.asInstanceOf[js.Any])
+    inline def setAspectRatio(value: AspectRatio): Self = StObject.set(x, "AspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAspectRatioUndefined: Self = StObject.set(x, "AspectRatio", js.undefined)
+    inline def setAspectRatioUndefined: Self = StObject.set(x, "AspectRatio", js.undefined)
     
-    @scala.inline
-    def setContainer(value: JobContainer): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: JobContainer): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "Container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "Container", js.undefined)
     
-    @scala.inline
-    def setDetectedProperties(value: DetectedProperties): Self = StObject.set(x, "DetectedProperties", value.asInstanceOf[js.Any])
+    inline def setDetectedProperties(value: DetectedProperties): Self = StObject.set(x, "DetectedProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedPropertiesUndefined: Self = StObject.set(x, "DetectedProperties", js.undefined)
+    inline def setDetectedPropertiesUndefined: Self = StObject.set(x, "DetectedProperties", js.undefined)
     
-    @scala.inline
-    def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
-    @scala.inline
-    def setFrameRate(value: FrameRate): Self = StObject.set(x, "FrameRate", value.asInstanceOf[js.Any])
+    inline def setFrameRate(value: FrameRate): Self = StObject.set(x, "FrameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameRateUndefined: Self = StObject.set(x, "FrameRate", js.undefined)
+    inline def setFrameRateUndefined: Self = StObject.set(x, "FrameRate", js.undefined)
     
-    @scala.inline
-    def setInputCaptions(value: InputCaptions): Self = StObject.set(x, "InputCaptions", value.asInstanceOf[js.Any])
+    inline def setInputCaptions(value: InputCaptions): Self = StObject.set(x, "InputCaptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputCaptionsUndefined: Self = StObject.set(x, "InputCaptions", js.undefined)
+    inline def setInputCaptionsUndefined: Self = StObject.set(x, "InputCaptions", js.undefined)
     
-    @scala.inline
-    def setInterlaced(value: Interlaced): Self = StObject.set(x, "Interlaced", value.asInstanceOf[js.Any])
+    inline def setInterlaced(value: Interlaced): Self = StObject.set(x, "Interlaced", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterlacedUndefined: Self = StObject.set(x, "Interlaced", js.undefined)
+    inline def setInterlacedUndefined: Self = StObject.set(x, "Interlaced", js.undefined)
     
-    @scala.inline
-    def setKey(value: LongKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: LongKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setResolution(value: Resolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: Resolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
+    inline def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
     
-    @scala.inline
-    def setTimeSpan(value: TimeSpan): Self = StObject.set(x, "TimeSpan", value.asInstanceOf[js.Any])
+    inline def setTimeSpan(value: TimeSpan): Self = StObject.set(x, "TimeSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSpanUndefined: Self = StObject.set(x, "TimeSpan", js.undefined)
+    inline def setTimeSpanUndefined: Self = StObject.set(x, "TimeSpan", js.undefined)
   }
 }

@@ -89,88 +89,61 @@ trait SchemaClusterConfig extends StObject {
 }
 object SchemaClusterConfig {
   
-  @scala.inline
-  def apply(): SchemaClusterConfig = {
+  inline def apply(): SchemaClusterConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClusterConfig]
   }
   
-  @scala.inline
-  implicit class SchemaClusterConfigMutableBuilder[Self <: SchemaClusterConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClusterConfig](x: Self) {
     
-    @scala.inline
-    def setAutoscalingConfig(value: SchemaAutoscalingConfig): Self = StObject.set(x, "autoscalingConfig", value.asInstanceOf[js.Any])
+    inline def setAutoscalingConfig(value: SchemaAutoscalingConfig): Self = StObject.set(x, "autoscalingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscalingConfigUndefined: Self = StObject.set(x, "autoscalingConfig", js.undefined)
+    inline def setAutoscalingConfigUndefined: Self = StObject.set(x, "autoscalingConfig", js.undefined)
     
-    @scala.inline
-    def setConfigBucket(value: String): Self = StObject.set(x, "configBucket", value.asInstanceOf[js.Any])
+    inline def setConfigBucket(value: String): Self = StObject.set(x, "configBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigBucketUndefined: Self = StObject.set(x, "configBucket", js.undefined)
+    inline def setConfigBucketUndefined: Self = StObject.set(x, "configBucket", js.undefined)
     
-    @scala.inline
-    def setEncryptionConfig(value: SchemaEncryptionConfig): Self = StObject.set(x, "encryptionConfig", value.asInstanceOf[js.Any])
+    inline def setEncryptionConfig(value: SchemaEncryptionConfig): Self = StObject.set(x, "encryptionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionConfigUndefined: Self = StObject.set(x, "encryptionConfig", js.undefined)
+    inline def setEncryptionConfigUndefined: Self = StObject.set(x, "encryptionConfig", js.undefined)
     
-    @scala.inline
-    def setEndpointConfig(value: SchemaEndpointConfig): Self = StObject.set(x, "endpointConfig", value.asInstanceOf[js.Any])
+    inline def setEndpointConfig(value: SchemaEndpointConfig): Self = StObject.set(x, "endpointConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointConfigUndefined: Self = StObject.set(x, "endpointConfig", js.undefined)
+    inline def setEndpointConfigUndefined: Self = StObject.set(x, "endpointConfig", js.undefined)
     
-    @scala.inline
-    def setGceClusterConfig(value: SchemaGceClusterConfig): Self = StObject.set(x, "gceClusterConfig", value.asInstanceOf[js.Any])
+    inline def setGceClusterConfig(value: SchemaGceClusterConfig): Self = StObject.set(x, "gceClusterConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGceClusterConfigUndefined: Self = StObject.set(x, "gceClusterConfig", js.undefined)
+    inline def setGceClusterConfigUndefined: Self = StObject.set(x, "gceClusterConfig", js.undefined)
     
-    @scala.inline
-    def setInitializationActions(value: js.Array[SchemaNodeInitializationAction]): Self = StObject.set(x, "initializationActions", value.asInstanceOf[js.Any])
+    inline def setInitializationActions(value: js.Array[SchemaNodeInitializationAction]): Self = StObject.set(x, "initializationActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializationActionsUndefined: Self = StObject.set(x, "initializationActions", js.undefined)
+    inline def setInitializationActionsUndefined: Self = StObject.set(x, "initializationActions", js.undefined)
     
-    @scala.inline
-    def setInitializationActionsVarargs(value: SchemaNodeInitializationAction*): Self = StObject.set(x, "initializationActions", js.Array(value :_*))
+    inline def setInitializationActionsVarargs(value: SchemaNodeInitializationAction*): Self = StObject.set(x, "initializationActions", js.Array(value :_*))
     
-    @scala.inline
-    def setLifecycleConfig(value: SchemaLifecycleConfig): Self = StObject.set(x, "lifecycleConfig", value.asInstanceOf[js.Any])
+    inline def setLifecycleConfig(value: SchemaLifecycleConfig): Self = StObject.set(x, "lifecycleConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleConfigUndefined: Self = StObject.set(x, "lifecycleConfig", js.undefined)
+    inline def setLifecycleConfigUndefined: Self = StObject.set(x, "lifecycleConfig", js.undefined)
     
-    @scala.inline
-    def setMasterConfig(value: SchemaInstanceGroupConfig): Self = StObject.set(x, "masterConfig", value.asInstanceOf[js.Any])
+    inline def setMasterConfig(value: SchemaInstanceGroupConfig): Self = StObject.set(x, "masterConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterConfigUndefined: Self = StObject.set(x, "masterConfig", js.undefined)
+    inline def setMasterConfigUndefined: Self = StObject.set(x, "masterConfig", js.undefined)
     
-    @scala.inline
-    def setSecondaryWorkerConfig(value: SchemaInstanceGroupConfig): Self = StObject.set(x, "secondaryWorkerConfig", value.asInstanceOf[js.Any])
+    inline def setSecondaryWorkerConfig(value: SchemaInstanceGroupConfig): Self = StObject.set(x, "secondaryWorkerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryWorkerConfigUndefined: Self = StObject.set(x, "secondaryWorkerConfig", js.undefined)
+    inline def setSecondaryWorkerConfigUndefined: Self = StObject.set(x, "secondaryWorkerConfig", js.undefined)
     
-    @scala.inline
-    def setSecurityConfig(value: SchemaSecurityConfig): Self = StObject.set(x, "securityConfig", value.asInstanceOf[js.Any])
+    inline def setSecurityConfig(value: SchemaSecurityConfig): Self = StObject.set(x, "securityConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityConfigUndefined: Self = StObject.set(x, "securityConfig", js.undefined)
+    inline def setSecurityConfigUndefined: Self = StObject.set(x, "securityConfig", js.undefined)
     
-    @scala.inline
-    def setSoftwareConfig(value: SchemaSoftwareConfig): Self = StObject.set(x, "softwareConfig", value.asInstanceOf[js.Any])
+    inline def setSoftwareConfig(value: SchemaSoftwareConfig): Self = StObject.set(x, "softwareConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareConfigUndefined: Self = StObject.set(x, "softwareConfig", js.undefined)
+    inline def setSoftwareConfigUndefined: Self = StObject.set(x, "softwareConfig", js.undefined)
     
-    @scala.inline
-    def setWorkerConfig(value: SchemaInstanceGroupConfig): Self = StObject.set(x, "workerConfig", value.asInstanceOf[js.Any])
+    inline def setWorkerConfig(value: SchemaInstanceGroupConfig): Self = StObject.set(x, "workerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerConfigUndefined: Self = StObject.set(x, "workerConfig", js.undefined)
+    inline def setWorkerConfigUndefined: Self = StObject.set(x, "workerConfig", js.undefined)
   }
 }

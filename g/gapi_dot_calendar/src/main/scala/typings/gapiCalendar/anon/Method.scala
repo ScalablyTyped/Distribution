@@ -14,19 +14,15 @@ trait Method extends StObject {
 }
 object Method {
   
-  @scala.inline
-  def apply(method: ReminderMethod, minutes: integer): Method = {
+  inline def apply(method: ReminderMethod, minutes: integer): Method = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Method]
   }
   
-  @scala.inline
-  implicit class MethodMutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
+  extension [Self <: Method](x: Self) {
     
-    @scala.inline
-    def setMethod(value: ReminderMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: ReminderMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinutes(value: integer): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+    inline def setMinutes(value: integer): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
   }
 }

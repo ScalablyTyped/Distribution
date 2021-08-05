@@ -54,8 +54,7 @@ object datePickerMod {
     @JSImport("carbon-components/components/date-picker/date-picker", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -83,8 +82,7 @@ object datePickerMod {
   }
   object DatePicker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _addInputLogic: (js.Any, js.Any) => Unit,
       _formatDate: js.Any => js.Any,
       _handleBlur: js.Any => Unit,
@@ -100,38 +98,27 @@ object datePickerMod {
       __obj.asInstanceOf[DatePicker]
     }
     
-    @scala.inline
-    implicit class DatePickerMutableBuilder[Self <: DatePicker] (val x: Self) extends AnyVal {
+    extension [Self <: DatePicker](x: Self) {
       
-      @scala.inline
-      def setRelease(value: () => js.Any): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
+      inline def setRelease(value: () => js.Any): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_addInputLogic(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_addInputLogic", js.Any.fromFunction2(value))
+      inline def set_addInputLogic(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_addInputLogic", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_formatDate(value: js.Any => js.Any): Self = StObject.set(x, "_formatDate", js.Any.fromFunction1(value))
+      inline def set_formatDate(value: js.Any => js.Any): Self = StObject.set(x, "_formatDate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_handleBlur(value: js.Any => Unit): Self = StObject.set(x, "_handleBlur", js.Any.fromFunction1(value))
+      inline def set_handleBlur(value: js.Any => Unit): Self = StObject.set(x, "_handleBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_handleFocus(value: () => Unit): Self = StObject.set(x, "_handleFocus", js.Any.fromFunction0(value))
+      inline def set_handleFocus(value: () => Unit): Self = StObject.set(x, "_handleFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_initDatePicker(value: js.Any => js.Any): Self = StObject.set(x, "_initDatePicker", js.Any.fromFunction1(value))
+      inline def set_initDatePicker(value: js.Any => js.Any): Self = StObject.set(x, "_initDatePicker", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_leftArrowHTML(value: () => String): Self = StObject.set(x, "_leftArrowHTML", js.Any.fromFunction0(value))
+      inline def set_leftArrowHTML(value: () => String): Self = StObject.set(x, "_leftArrowHTML", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_rightArrowHTML(value: () => String): Self = StObject.set(x, "_rightArrowHTML", js.Any.fromFunction0(value))
+      inline def set_rightArrowHTML(value: () => String): Self = StObject.set(x, "_rightArrowHTML", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_updateClassNames(value: js.Any => Unit): Self = StObject.set(x, "_updateClassNames", js.Any.fromFunction1(value))
+      inline def set_updateClassNames(value: js.Any => Unit): Self = StObject.set(x, "_updateClassNames", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_updateInputFields(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_updateInputFields", js.Any.fromFunction2(value))
+      inline def set_updateInputFields(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_updateInputFields", js.Any.fromFunction2(value))
     }
   }
 }

@@ -30,37 +30,27 @@ trait RouteSpecHttpRouteRetryPolicy extends StObject {
 }
 object RouteSpecHttpRouteRetryPolicy {
   
-  @scala.inline
-  def apply(maxRetries: Double, perRetryTimeout: RouteSpecHttpRouteRetryPolicyPerRetryTimeout): RouteSpecHttpRouteRetryPolicy = {
+  inline def apply(maxRetries: Double, perRetryTimeout: RouteSpecHttpRouteRetryPolicyPerRetryTimeout): RouteSpecHttpRouteRetryPolicy = {
     val __obj = js.Dynamic.literal(maxRetries = maxRetries.asInstanceOf[js.Any], perRetryTimeout = perRetryTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpecHttpRouteRetryPolicy]
   }
   
-  @scala.inline
-  implicit class RouteSpecHttpRouteRetryPolicyMutableBuilder[Self <: RouteSpecHttpRouteRetryPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpecHttpRouteRetryPolicy](x: Self) {
     
-    @scala.inline
-    def setHttpRetryEvents(value: js.Array[String]): Self = StObject.set(x, "httpRetryEvents", value.asInstanceOf[js.Any])
+    inline def setHttpRetryEvents(value: js.Array[String]): Self = StObject.set(x, "httpRetryEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpRetryEventsUndefined: Self = StObject.set(x, "httpRetryEvents", js.undefined)
+    inline def setHttpRetryEventsUndefined: Self = StObject.set(x, "httpRetryEvents", js.undefined)
     
-    @scala.inline
-    def setHttpRetryEventsVarargs(value: String*): Self = StObject.set(x, "httpRetryEvents", js.Array(value :_*))
+    inline def setHttpRetryEventsVarargs(value: String*): Self = StObject.set(x, "httpRetryEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+    inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerRetryTimeout(value: RouteSpecHttpRouteRetryPolicyPerRetryTimeout): Self = StObject.set(x, "perRetryTimeout", value.asInstanceOf[js.Any])
+    inline def setPerRetryTimeout(value: RouteSpecHttpRouteRetryPolicyPerRetryTimeout): Self = StObject.set(x, "perRetryTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTcpRetryEvents(value: js.Array[String]): Self = StObject.set(x, "tcpRetryEvents", value.asInstanceOf[js.Any])
+    inline def setTcpRetryEvents(value: js.Array[String]): Self = StObject.set(x, "tcpRetryEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTcpRetryEventsUndefined: Self = StObject.set(x, "tcpRetryEvents", js.undefined)
+    inline def setTcpRetryEventsUndefined: Self = StObject.set(x, "tcpRetryEvents", js.undefined)
     
-    @scala.inline
-    def setTcpRetryEventsVarargs(value: String*): Self = StObject.set(x, "tcpRetryEvents", js.Array(value :_*))
+    inline def setTcpRetryEventsVarargs(value: String*): Self = StObject.set(x, "tcpRetryEvents", js.Array(value :_*))
   }
 }

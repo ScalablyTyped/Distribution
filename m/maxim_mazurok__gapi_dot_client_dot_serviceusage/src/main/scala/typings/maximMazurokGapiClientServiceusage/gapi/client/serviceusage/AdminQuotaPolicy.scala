@@ -42,53 +42,39 @@ trait AdminQuotaPolicy extends StObject {
 }
 object AdminQuotaPolicy {
   
-  @scala.inline
-  def apply(): AdminQuotaPolicy = {
+  inline def apply(): AdminQuotaPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdminQuotaPolicy]
   }
   
-  @scala.inline
-  implicit class AdminQuotaPolicyMutableBuilder[Self <: AdminQuotaPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: AdminQuotaPolicy](x: Self) {
     
-    @scala.inline
-    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setDimensions(
+    inline def setDimensions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientServiceusage.maximMazurokGapiClientServiceusageStrings.AdminQuotaPolicy & TopLevel[js.Any]
     ): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+    inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPolicyValue(value: String): Self = StObject.set(x, "policyValue", value.asInstanceOf[js.Any])
+    inline def setPolicyValue(value: String): Self = StObject.set(x, "policyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyValueUndefined: Self = StObject.set(x, "policyValue", js.undefined)
+    inline def setPolicyValueUndefined: Self = StObject.set(x, "policyValue", js.undefined)
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

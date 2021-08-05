@@ -22,14 +22,11 @@ object singleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def error(error: Error): Single[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any]).asInstanceOf[Single[scala.Nothing]]
+    inline def error(error: Error): Single[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any]).asInstanceOf[Single[scala.Nothing]]
     
-    @scala.inline
-    def never(): Single[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[Single[scala.Nothing]]
+    inline def never(): Single[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[Single[scala.Nothing]]
     
-    @scala.inline
-    def of[U](value: U): Single[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(value.asInstanceOf[js.Any]).asInstanceOf[Single[U]]
+    inline def of[U](value: U): Single[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(value.asInstanceOf[js.Any]).asInstanceOf[Single[U]]
   }
   
   type CancelCallback = js.Function0[Unit]
@@ -55,23 +52,18 @@ object singleMod {
   }
   object IFutureSubscriber {
     
-    @scala.inline
-    def apply[T](onComplete: T => Unit, onError: Error => Unit, onSubscribe: CancelCallback => Unit): IFutureSubscriber[T] = {
+    inline def apply[T](onComplete: T => Unit, onError: Error => Unit, onSubscribe: CancelCallback => Unit): IFutureSubscriber[T] = {
       val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction1(onComplete), onError = js.Any.fromFunction1(onError), onSubscribe = js.Any.fromFunction1(onSubscribe))
       __obj.asInstanceOf[IFutureSubscriber[T]]
     }
     
-    @scala.inline
-    implicit class IFutureSubscriberMutableBuilder[Self <: IFutureSubscriber[?], T] (val x: Self & IFutureSubscriber[T]) extends AnyVal {
+    extension [Self <: IFutureSubscriber[?], T](x: Self & IFutureSubscriber[T]) {
       
-      @scala.inline
-      def setOnComplete(value: T => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      inline def setOnComplete(value: T => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSubscribe(value: CancelCallback => Unit): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction1(value))
+      inline def setOnSubscribe(value: CancelCallback => Unit): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction1(value))
     }
   }
   

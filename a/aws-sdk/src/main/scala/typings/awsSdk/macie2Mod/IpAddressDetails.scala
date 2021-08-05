@@ -33,43 +33,31 @@ trait IpAddressDetails extends StObject {
 }
 object IpAddressDetails {
   
-  @scala.inline
-  def apply(): IpAddressDetails = {
+  inline def apply(): IpAddressDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IpAddressDetails]
   }
   
-  @scala.inline
-  implicit class IpAddressDetailsMutableBuilder[Self <: IpAddressDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IpAddressDetails](x: Self) {
     
-    @scala.inline
-    def setIpAddressV4(value: string): Self = StObject.set(x, "ipAddressV4", value.asInstanceOf[js.Any])
+    inline def setIpAddressV4(value: string): Self = StObject.set(x, "ipAddressV4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressV4Undefined: Self = StObject.set(x, "ipAddressV4", js.undefined)
+    inline def setIpAddressV4Undefined: Self = StObject.set(x, "ipAddressV4", js.undefined)
     
-    @scala.inline
-    def setIpCity(value: IpCity): Self = StObject.set(x, "ipCity", value.asInstanceOf[js.Any])
+    inline def setIpCity(value: IpCity): Self = StObject.set(x, "ipCity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpCityUndefined: Self = StObject.set(x, "ipCity", js.undefined)
+    inline def setIpCityUndefined: Self = StObject.set(x, "ipCity", js.undefined)
     
-    @scala.inline
-    def setIpCountry(value: IpCountry): Self = StObject.set(x, "ipCountry", value.asInstanceOf[js.Any])
+    inline def setIpCountry(value: IpCountry): Self = StObject.set(x, "ipCountry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpCountryUndefined: Self = StObject.set(x, "ipCountry", js.undefined)
+    inline def setIpCountryUndefined: Self = StObject.set(x, "ipCountry", js.undefined)
     
-    @scala.inline
-    def setIpGeoLocation(value: IpGeoLocation): Self = StObject.set(x, "ipGeoLocation", value.asInstanceOf[js.Any])
+    inline def setIpGeoLocation(value: IpGeoLocation): Self = StObject.set(x, "ipGeoLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpGeoLocationUndefined: Self = StObject.set(x, "ipGeoLocation", js.undefined)
+    inline def setIpGeoLocationUndefined: Self = StObject.set(x, "ipGeoLocation", js.undefined)
     
-    @scala.inline
-    def setIpOwner(value: IpOwner): Self = StObject.set(x, "ipOwner", value.asInstanceOf[js.Any])
+    inline def setIpOwner(value: IpOwner): Self = StObject.set(x, "ipOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpOwnerUndefined: Self = StObject.set(x, "ipOwner", js.undefined)
+    inline def setIpOwnerUndefined: Self = StObject.set(x, "ipOwner", js.undefined)
   }
 }

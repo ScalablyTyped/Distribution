@@ -29,22 +29,17 @@ trait RenameParams
 }
 object RenameParams {
   
-  @scala.inline
-  def apply(newName: String, position: Position, textDocument: TextDocumentIdentifier): RenameParams = {
+  inline def apply(newName: String, position: Position, textDocument: TextDocumentIdentifier): RenameParams = {
     val __obj = js.Dynamic.literal(newName = newName.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameParams]
   }
   
-  @scala.inline
-  implicit class RenameParamsMutableBuilder[Self <: RenameParams] (val x: Self) extends AnyVal {
+  extension [Self <: RenameParams](x: Self) {
     
-    @scala.inline
-    def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
+    inline def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+    inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }
 }

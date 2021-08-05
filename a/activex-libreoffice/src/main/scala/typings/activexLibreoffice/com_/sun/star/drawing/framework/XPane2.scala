@@ -39,8 +39,7 @@ trait XPane2 extends StObject {
 }
 object XPane2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Accessible: XAccessible,
     getAccessible: () => XAccessible,
     isVisible: () => Boolean,
@@ -51,22 +50,16 @@ object XPane2 {
     __obj.asInstanceOf[XPane2]
   }
   
-  @scala.inline
-  implicit class XPane2MutableBuilder[Self <: XPane2] (val x: Self) extends AnyVal {
+  extension [Self <: XPane2](x: Self) {
     
-    @scala.inline
-    def setAccessible(value: XAccessible): Self = StObject.set(x, "Accessible", value.asInstanceOf[js.Any])
+    inline def setAccessible(value: XAccessible): Self = StObject.set(x, "Accessible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAccessible(value: () => XAccessible): Self = StObject.set(x, "getAccessible", js.Any.fromFunction0(value))
+    inline def setGetAccessible(value: () => XAccessible): Self = StObject.set(x, "getAccessible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+    inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAccessible(value: XAccessible => Unit): Self = StObject.set(x, "setAccessible", js.Any.fromFunction1(value))
+    inline def setSetAccessible(value: XAccessible => Unit): Self = StObject.set(x, "setAccessible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
+    inline def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
   }
 }

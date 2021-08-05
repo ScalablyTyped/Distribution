@@ -17,21 +17,17 @@ trait VectorEffectProps extends StObject {
 }
 object VectorEffectProps {
   
-  @scala.inline
-  def apply(): VectorEffectProps = {
+  inline def apply(): VectorEffectProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VectorEffectProps]
   }
   
-  @scala.inline
-  implicit class VectorEffectPropsMutableBuilder[Self <: VectorEffectProps] (val x: Self) extends AnyVal {
+  extension [Self <: VectorEffectProps](x: Self) {
     
-    @scala.inline
-    def setVectorEffect(
+    inline def setVectorEffect(
       value: none | `non-scaling-stroke` | nonScalingStroke | typings.reactNativeSvg.reactNativeSvgStrings.default | inherit | uri
     ): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVectorEffectUndefined: Self = StObject.set(x, "vectorEffect", js.undefined)
+    inline def setVectorEffectUndefined: Self = StObject.set(x, "vectorEffect", js.undefined)
   }
 }

@@ -16,17 +16,13 @@ object interfaceMod {
   trait GapPositionType extends StObject
   object GapPositionType {
     
-    @scala.inline
-    def bottom: typings.rcProgress.rcProgressStrings.bottom = "bottom".asInstanceOf[typings.rcProgress.rcProgressStrings.bottom]
+    inline def bottom: typings.rcProgress.rcProgressStrings.bottom = "bottom".asInstanceOf[typings.rcProgress.rcProgressStrings.bottom]
     
-    @scala.inline
-    def left: typings.rcProgress.rcProgressStrings.left = "left".asInstanceOf[typings.rcProgress.rcProgressStrings.left]
+    inline def left: typings.rcProgress.rcProgressStrings.left = "left".asInstanceOf[typings.rcProgress.rcProgressStrings.left]
     
-    @scala.inline
-    def right: typings.rcProgress.rcProgressStrings.right = "right".asInstanceOf[typings.rcProgress.rcProgressStrings.right]
+    inline def right: typings.rcProgress.rcProgressStrings.right = "right".asInstanceOf[typings.rcProgress.rcProgressStrings.right]
     
-    @scala.inline
-    def top: typings.rcProgress.rcProgressStrings.top = "top".asInstanceOf[typings.rcProgress.rcProgressStrings.top]
+    inline def top: typings.rcProgress.rcProgressStrings.top = "top".asInstanceOf[typings.rcProgress.rcProgressStrings.top]
   }
   
   trait ProgressProps extends StObject {
@@ -57,92 +53,64 @@ object interfaceMod {
   }
   object ProgressProps {
     
-    @scala.inline
-    def apply(): ProgressProps = {
+    inline def apply(): ProgressProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProgressProps]
     }
     
-    @scala.inline
-    implicit class ProgressPropsMutableBuilder[Self <: ProgressProps] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setGapDegree(value: Double): Self = StObject.set(x, "gapDegree", value.asInstanceOf[js.Any])
+      inline def setGapDegree(value: Double): Self = StObject.set(x, "gapDegree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGapDegreeUndefined: Self = StObject.set(x, "gapDegree", js.undefined)
+      inline def setGapDegreeUndefined: Self = StObject.set(x, "gapDegree", js.undefined)
       
-      @scala.inline
-      def setGapPosition(value: GapPositionType): Self = StObject.set(x, "gapPosition", value.asInstanceOf[js.Any])
+      inline def setGapPosition(value: GapPositionType): Self = StObject.set(x, "gapPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGapPositionUndefined: Self = StObject.set(x, "gapPosition", js.undefined)
+      inline def setGapPositionUndefined: Self = StObject.set(x, "gapPosition", js.undefined)
       
-      @scala.inline
-      def setPercent(value: Double | js.Array[Double]): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: Double | js.Array[Double]): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+      inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
       
-      @scala.inline
-      def setPercentVarargs(value: Double*): Self = StObject.set(x, "percent", js.Array(value :_*))
+      inline def setPercentVarargs(value: Double*): Self = StObject.set(x, "percent", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setStrokeColor(value: StrokeColorType): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+      inline def setStrokeColor(value: StrokeColorType): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+      inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
       
-      @scala.inline
-      def setStrokeColorVarargs(value: String*): Self = StObject.set(x, "strokeColor", js.Array(value :_*))
+      inline def setStrokeColorVarargs(value: String*): Self = StObject.set(x, "strokeColor", js.Array(value :_*))
       
-      @scala.inline
-      def setStrokeLinecap(value: StrokeLinecapType): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+      inline def setStrokeLinecap(value: StrokeLinecapType): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
+      inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTrailColor(value: String): Self = StObject.set(x, "trailColor", value.asInstanceOf[js.Any])
+      inline def setTrailColor(value: String): Self = StObject.set(x, "trailColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailColorUndefined: Self = StObject.set(x, "trailColor", js.undefined)
+      inline def setTrailColorUndefined: Self = StObject.set(x, "trailColor", js.undefined)
       
-      @scala.inline
-      def setTrailWidth(value: Double): Self = StObject.set(x, "trailWidth", value.asInstanceOf[js.Any])
+      inline def setTrailWidth(value: Double): Self = StObject.set(x, "trailWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailWidthUndefined: Self = StObject.set(x, "trailWidth", js.undefined)
+      inline def setTrailWidthUndefined: Self = StObject.set(x, "trailWidth", js.undefined)
       
-      @scala.inline
-      def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     }
   }
   
@@ -156,13 +124,10 @@ object interfaceMod {
   trait StrokeLinecapType extends StObject
   object StrokeLinecapType {
     
-    @scala.inline
-    def butt: typings.rcProgress.rcProgressStrings.butt = "butt".asInstanceOf[typings.rcProgress.rcProgressStrings.butt]
+    inline def butt: typings.rcProgress.rcProgressStrings.butt = "butt".asInstanceOf[typings.rcProgress.rcProgressStrings.butt]
     
-    @scala.inline
-    def round: typings.rcProgress.rcProgressStrings.round = "round".asInstanceOf[typings.rcProgress.rcProgressStrings.round]
+    inline def round: typings.rcProgress.rcProgressStrings.round = "round".asInstanceOf[typings.rcProgress.rcProgressStrings.round]
     
-    @scala.inline
-    def square: typings.rcProgress.rcProgressStrings.square = "square".asInstanceOf[typings.rcProgress.rcProgressStrings.square]
+    inline def square: typings.rcProgress.rcProgressStrings.square = "square".asInstanceOf[typings.rcProgress.rcProgressStrings.square]
   }
 }

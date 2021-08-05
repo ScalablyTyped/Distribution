@@ -65,8 +65,7 @@ trait SoftwareBitmap extends StObject {
 }
 object SoftwareBitmap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bitmapAlphaMode: BitmapAlphaMode,
     bitmapPixelFormat: BitmapPixelFormat,
     close: () => Unit,
@@ -85,46 +84,32 @@ object SoftwareBitmap {
     __obj.asInstanceOf[SoftwareBitmap]
   }
   
-  @scala.inline
-  implicit class SoftwareBitmapMutableBuilder[Self <: SoftwareBitmap] (val x: Self) extends AnyVal {
+  extension [Self <: SoftwareBitmap](x: Self) {
     
-    @scala.inline
-    def setBitmapAlphaMode(value: BitmapAlphaMode): Self = StObject.set(x, "bitmapAlphaMode", value.asInstanceOf[js.Any])
+    inline def setBitmapAlphaMode(value: BitmapAlphaMode): Self = StObject.set(x, "bitmapAlphaMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitmapPixelFormat(value: BitmapPixelFormat): Self = StObject.set(x, "bitmapPixelFormat", value.asInstanceOf[js.Any])
+    inline def setBitmapPixelFormat(value: BitmapPixelFormat): Self = StObject.set(x, "bitmapPixelFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCopyFromBuffer(value: IBuffer => Unit): Self = StObject.set(x, "copyFromBuffer", js.Any.fromFunction1(value))
+    inline def setCopyFromBuffer(value: IBuffer => Unit): Self = StObject.set(x, "copyFromBuffer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCopyTo(value: SoftwareBitmap => Unit): Self = StObject.set(x, "copyTo", js.Any.fromFunction1(value))
+    inline def setCopyTo(value: SoftwareBitmap => Unit): Self = StObject.set(x, "copyTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCopyToBuffer(value: IBuffer => Unit): Self = StObject.set(x, "copyToBuffer", js.Any.fromFunction1(value))
+    inline def setCopyToBuffer(value: IBuffer => Unit): Self = StObject.set(x, "copyToBuffer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDpiX(value: Double): Self = StObject.set(x, "dpiX", value.asInstanceOf[js.Any])
+    inline def setDpiX(value: Double): Self = StObject.set(x, "dpiX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDpiY(value: Double): Self = StObject.set(x, "dpiY", value.asInstanceOf[js.Any])
+    inline def setDpiY(value: Double): Self = StObject.set(x, "dpiY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetReadOnlyView(value: () => SoftwareBitmap): Self = StObject.set(x, "getReadOnlyView", js.Any.fromFunction0(value))
+    inline def setGetReadOnlyView(value: () => SoftwareBitmap): Self = StObject.set(x, "getReadOnlyView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
+    inline def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockBuffer(value: BitmapBufferAccessMode => BitmapBuffer): Self = StObject.set(x, "lockBuffer", js.Any.fromFunction1(value))
+    inline def setLockBuffer(value: BitmapBufferAccessMode => BitmapBuffer): Self = StObject.set(x, "lockBuffer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPixelHeight(value: Double): Self = StObject.set(x, "pixelHeight", value.asInstanceOf[js.Any])
+    inline def setPixelHeight(value: Double): Self = StObject.set(x, "pixelHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelWidth(value: Double): Self = StObject.set(x, "pixelWidth", value.asInstanceOf[js.Any])
+    inline def setPixelWidth(value: Double): Self = StObject.set(x, "pixelWidth", value.asInstanceOf[js.Any])
   }
 }

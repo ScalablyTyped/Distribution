@@ -10,16 +10,13 @@ trait OauthAuthorizationsDeleteGrantEndpoint extends StObject {
 }
 object OauthAuthorizationsDeleteGrantEndpoint {
   
-  @scala.inline
-  def apply(grant_id: Double): OauthAuthorizationsDeleteGrantEndpoint = {
+  inline def apply(grant_id: Double): OauthAuthorizationsDeleteGrantEndpoint = {
     val __obj = js.Dynamic.literal(grant_id = grant_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthAuthorizationsDeleteGrantEndpoint]
   }
   
-  @scala.inline
-  implicit class OauthAuthorizationsDeleteGrantEndpointMutableBuilder[Self <: OauthAuthorizationsDeleteGrantEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OauthAuthorizationsDeleteGrantEndpoint](x: Self) {
     
-    @scala.inline
-    def setGrant_id(value: Double): Self = StObject.set(x, "grant_id", value.asInstanceOf[js.Any])
+    inline def setGrant_id(value: Double): Self = StObject.set(x, "grant_id", value.asInstanceOf[js.Any])
   }
 }

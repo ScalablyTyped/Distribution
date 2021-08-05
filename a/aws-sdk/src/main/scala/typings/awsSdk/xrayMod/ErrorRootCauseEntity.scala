@@ -23,34 +23,25 @@ trait ErrorRootCauseEntity extends StObject {
 }
 object ErrorRootCauseEntity {
   
-  @scala.inline
-  def apply(): ErrorRootCauseEntity = {
+  inline def apply(): ErrorRootCauseEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorRootCauseEntity]
   }
   
-  @scala.inline
-  implicit class ErrorRootCauseEntityMutableBuilder[Self <: ErrorRootCauseEntity] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorRootCauseEntity](x: Self) {
     
-    @scala.inline
-    def setExceptions(value: RootCauseExceptions): Self = StObject.set(x, "Exceptions", value.asInstanceOf[js.Any])
+    inline def setExceptions(value: RootCauseExceptions): Self = StObject.set(x, "Exceptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionsUndefined: Self = StObject.set(x, "Exceptions", js.undefined)
+    inline def setExceptionsUndefined: Self = StObject.set(x, "Exceptions", js.undefined)
     
-    @scala.inline
-    def setExceptionsVarargs(value: RootCauseException*): Self = StObject.set(x, "Exceptions", js.Array(value :_*))
+    inline def setExceptionsVarargs(value: RootCauseException*): Self = StObject.set(x, "Exceptions", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRemote(value: NullableBoolean): Self = StObject.set(x, "Remote", value.asInstanceOf[js.Any])
+    inline def setRemote(value: NullableBoolean): Self = StObject.set(x, "Remote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteUndefined: Self = StObject.set(x, "Remote", js.undefined)
+    inline def setRemoteUndefined: Self = StObject.set(x, "Remote", js.undefined)
   }
 }

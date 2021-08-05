@@ -16,8 +16,7 @@ trait StandardLoopCharacteristics
 }
 object StandardLoopCharacteristics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     id: String,
@@ -29,16 +28,12 @@ object StandardLoopCharacteristics {
     __obj.asInstanceOf[StandardLoopCharacteristics]
   }
   
-  @scala.inline
-  implicit class StandardLoopCharacteristicsMutableBuilder[Self <: StandardLoopCharacteristics] (val x: Self) extends AnyVal {
+  extension [Self <: StandardLoopCharacteristics](x: Self) {
     
-    @scala.inline
-    def setLoopCondition(value: Expression): Self = StObject.set(x, "loopCondition", value.asInstanceOf[js.Any])
+    inline def setLoopCondition(value: Expression): Self = StObject.set(x, "loopCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopMaximum(value: Expression): Self = StObject.set(x, "loopMaximum", value.asInstanceOf[js.Any])
+    inline def setLoopMaximum(value: Expression): Self = StObject.set(x, "loopMaximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestBefore(value: Boolean): Self = StObject.set(x, "testBefore", value.asInstanceOf[js.Any])
+    inline def setTestBefore(value: Boolean): Self = StObject.set(x, "testBefore", value.asInstanceOf[js.Any])
   }
 }

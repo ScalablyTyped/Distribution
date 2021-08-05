@@ -27,8 +27,7 @@ trait FrameControlCapabilities extends StObject {
 }
 object FrameControlCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     exposure: FrameExposureCapabilities,
     exposureCompensation: FrameExposureCompensationCapabilities,
     flash: FrameFlashCapabilities,
@@ -40,25 +39,18 @@ object FrameControlCapabilities {
     __obj.asInstanceOf[FrameControlCapabilities]
   }
   
-  @scala.inline
-  implicit class FrameControlCapabilitiesMutableBuilder[Self <: FrameControlCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: FrameControlCapabilities](x: Self) {
     
-    @scala.inline
-    def setExposure(value: FrameExposureCapabilities): Self = StObject.set(x, "exposure", value.asInstanceOf[js.Any])
+    inline def setExposure(value: FrameExposureCapabilities): Self = StObject.set(x, "exposure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExposureCompensation(value: FrameExposureCompensationCapabilities): Self = StObject.set(x, "exposureCompensation", value.asInstanceOf[js.Any])
+    inline def setExposureCompensation(value: FrameExposureCompensationCapabilities): Self = StObject.set(x, "exposureCompensation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlash(value: FrameFlashCapabilities): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
+    inline def setFlash(value: FrameFlashCapabilities): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocus(value: FrameFocusCapabilities): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: FrameFocusCapabilities): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsoSpeed(value: FrameIsoSpeedCapabilities): Self = StObject.set(x, "isoSpeed", value.asInstanceOf[js.Any])
+    inline def setIsoSpeed(value: FrameIsoSpeedCapabilities): Self = StObject.set(x, "isoSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoConfirmationSupported(value: Boolean): Self = StObject.set(x, "photoConfirmationSupported", value.asInstanceOf[js.Any])
+    inline def setPhotoConfirmationSupported(value: Boolean): Self = StObject.set(x, "photoConfirmationSupported", value.asInstanceOf[js.Any])
   }
 }

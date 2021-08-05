@@ -22,25 +22,19 @@ trait SchemaWatchResponse extends StObject {
 }
 object SchemaWatchResponse {
   
-  @scala.inline
-  def apply(): SchemaWatchResponse = {
+  inline def apply(): SchemaWatchResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWatchResponse]
   }
   
-  @scala.inline
-  implicit class SchemaWatchResponseMutableBuilder[Self <: SchemaWatchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWatchResponse](x: Self) {
     
-    @scala.inline
-    def setExpiration(value: String): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+    inline def setExpiration(value: String): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
+    inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
     
-    @scala.inline
-    def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
+    inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
+    inline def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
   }
 }

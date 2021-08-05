@@ -18,22 +18,17 @@ trait GitAsyncRefOperationSource extends StObject {
 }
 object GitAsyncRefOperationSource {
   
-  @scala.inline
-  def apply(commitList: js.Array[GitCommitRef], pullRequestId: Double): GitAsyncRefOperationSource = {
+  inline def apply(commitList: js.Array[GitCommitRef], pullRequestId: Double): GitAsyncRefOperationSource = {
     val __obj = js.Dynamic.literal(commitList = commitList.asInstanceOf[js.Any], pullRequestId = pullRequestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitAsyncRefOperationSource]
   }
   
-  @scala.inline
-  implicit class GitAsyncRefOperationSourceMutableBuilder[Self <: GitAsyncRefOperationSource] (val x: Self) extends AnyVal {
+  extension [Self <: GitAsyncRefOperationSource](x: Self) {
     
-    @scala.inline
-    def setCommitList(value: js.Array[GitCommitRef]): Self = StObject.set(x, "commitList", value.asInstanceOf[js.Any])
+    inline def setCommitList(value: js.Array[GitCommitRef]): Self = StObject.set(x, "commitList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitListVarargs(value: GitCommitRef*): Self = StObject.set(x, "commitList", js.Array(value :_*))
+    inline def setCommitListVarargs(value: GitCommitRef*): Self = StObject.set(x, "commitList", js.Array(value :_*))
     
-    @scala.inline
-    def setPullRequestId(value: Double): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+    inline def setPullRequestId(value: Double): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
   }
 }

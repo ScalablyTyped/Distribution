@@ -24,25 +24,19 @@ trait Event extends StObject {
 }
 object Event {
   
-  @scala.inline
-  def apply(Offset: js.Any, Repeat: Double, Source: js.Any, Trigger: Double): Event = {
+  inline def apply(Offset: js.Any, Repeat: Double, Source: js.Any, Trigger: Double): Event = {
     val __obj = js.Dynamic.literal(Offset = Offset.asInstanceOf[js.Any], Repeat = Repeat.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], Trigger = Trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
   
-  @scala.inline
-  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+  extension [Self <: Event](x: Self) {
     
-    @scala.inline
-    def setOffset(value: js.Any): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: js.Any): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeat(value: Double): Self = StObject.set(x, "Repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: Double): Self = StObject.set(x, "Repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: js.Any): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Any): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrigger(value: Double): Self = StObject.set(x, "Trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: Double): Self = StObject.set(x, "Trigger", value.asInstanceOf[js.Any])
   }
 }

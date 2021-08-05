@@ -28,37 +28,27 @@ trait Cell extends StObject {
 }
 object Cell {
   
-  @scala.inline
-  def apply(): Cell = {
+  inline def apply(): Cell = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cell]
   }
   
-  @scala.inline
-  implicit class CellMutableBuilder[Self <: Cell] (val x: Self) extends AnyVal {
+  extension [Self <: Cell](x: Self) {
     
-    @scala.inline
-    def setCellReference(value: string): Self = StObject.set(x, "cellReference", value.asInstanceOf[js.Any])
+    inline def setCellReference(value: string): Self = StObject.set(x, "cellReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellReferenceUndefined: Self = StObject.set(x, "cellReference", js.undefined)
+    inline def setCellReferenceUndefined: Self = StObject.set(x, "cellReference", js.undefined)
     
-    @scala.inline
-    def setColumn(value: long): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: long): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnName(value: string): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
+    inline def setColumnName(value: string): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
+    inline def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setRow(value: long): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: long): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

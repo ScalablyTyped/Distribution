@@ -11,19 +11,15 @@ trait ResponseMetaData extends StObject {
 }
 object ResponseMetaData {
   
-  @scala.inline
-  def apply(): ResponseMetaData = {
+  inline def apply(): ResponseMetaData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponseMetaData]
   }
   
-  @scala.inline
-  implicit class ResponseMetaDataMutableBuilder[Self <: ResponseMetaData] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseMetaData](x: Self) {
     
-    @scala.inline
-    def setDataLossFromOtherRow(value: Boolean): Self = StObject.set(x, "dataLossFromOtherRow", value.asInstanceOf[js.Any])
+    inline def setDataLossFromOtherRow(value: Boolean): Self = StObject.set(x, "dataLossFromOtherRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLossFromOtherRowUndefined: Self = StObject.set(x, "dataLossFromOtherRow", js.undefined)
+    inline def setDataLossFromOtherRowUndefined: Self = StObject.set(x, "dataLossFromOtherRow", js.undefined)
   }
 }

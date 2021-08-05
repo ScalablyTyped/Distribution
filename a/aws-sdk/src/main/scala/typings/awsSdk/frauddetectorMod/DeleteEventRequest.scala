@@ -18,19 +18,15 @@ trait DeleteEventRequest extends StObject {
 }
 object DeleteEventRequest {
   
-  @scala.inline
-  def apply(eventId: identifier, eventTypeName: identifier): DeleteEventRequest = {
+  inline def apply(eventId: identifier, eventTypeName: identifier): DeleteEventRequest = {
     val __obj = js.Dynamic.literal(eventId = eventId.asInstanceOf[js.Any], eventTypeName = eventTypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEventRequest]
   }
   
-  @scala.inline
-  implicit class DeleteEventRequestMutableBuilder[Self <: DeleteEventRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEventRequest](x: Self) {
     
-    @scala.inline
-    def setEventId(value: identifier): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: identifier): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeName(value: identifier): Self = StObject.set(x, "eventTypeName", value.asInstanceOf[js.Any])
+    inline def setEventTypeName(value: identifier): Self = StObject.set(x, "eventTypeName", value.asInstanceOf[js.Any])
   }
 }

@@ -32,31 +32,23 @@ trait IgHierarchicalGridRestSettingsCreate
 }
 object IgHierarchicalGridRestSettingsCreate {
   
-  @scala.inline
-  def apply(): IgHierarchicalGridRestSettingsCreate = {
+  inline def apply(): IgHierarchicalGridRestSettingsCreate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgHierarchicalGridRestSettingsCreate]
   }
   
-  @scala.inline
-  implicit class IgHierarchicalGridRestSettingsCreateMutableBuilder[Self <: IgHierarchicalGridRestSettingsCreate] (val x: Self) extends AnyVal {
+  extension [Self <: IgHierarchicalGridRestSettingsCreate](x: Self) {
     
-    @scala.inline
-    def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
+    inline def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
+    inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

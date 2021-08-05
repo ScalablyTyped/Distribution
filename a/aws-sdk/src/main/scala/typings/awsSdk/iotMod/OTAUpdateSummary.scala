@@ -23,31 +23,23 @@ trait OTAUpdateSummary extends StObject {
 }
 object OTAUpdateSummary {
   
-  @scala.inline
-  def apply(): OTAUpdateSummary = {
+  inline def apply(): OTAUpdateSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OTAUpdateSummary]
   }
   
-  @scala.inline
-  implicit class OTAUpdateSummaryMutableBuilder[Self <: OTAUpdateSummary] (val x: Self) extends AnyVal {
+  extension [Self <: OTAUpdateSummary](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setOtaUpdateArn(value: OTAUpdateArn): Self = StObject.set(x, "otaUpdateArn", value.asInstanceOf[js.Any])
+    inline def setOtaUpdateArn(value: OTAUpdateArn): Self = StObject.set(x, "otaUpdateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtaUpdateArnUndefined: Self = StObject.set(x, "otaUpdateArn", js.undefined)
+    inline def setOtaUpdateArnUndefined: Self = StObject.set(x, "otaUpdateArn", js.undefined)
     
-    @scala.inline
-    def setOtaUpdateId(value: OTAUpdateId): Self = StObject.set(x, "otaUpdateId", value.asInstanceOf[js.Any])
+    inline def setOtaUpdateId(value: OTAUpdateId): Self = StObject.set(x, "otaUpdateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtaUpdateIdUndefined: Self = StObject.set(x, "otaUpdateId", js.undefined)
+    inline def setOtaUpdateIdUndefined: Self = StObject.set(x, "otaUpdateId", js.undefined)
   }
 }

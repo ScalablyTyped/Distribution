@@ -18,19 +18,15 @@ trait SearchBarWrapper extends StObject {
 }
 object SearchBarWrapper {
   
-  @scala.inline
-  def apply(): SearchBarWrapper = {
+  inline def apply(): SearchBarWrapper = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchBarWrapper]
   }
   
-  @scala.inline
-  implicit class SearchBarWrapperMutableBuilder[Self <: SearchBarWrapper] (val x: Self) extends AnyVal {
+  extension [Self <: SearchBarWrapper](x: Self) {
     
-    @scala.inline
-    def setPlatform(value: default | ios | android): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: default | ios | android): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
   }
 }

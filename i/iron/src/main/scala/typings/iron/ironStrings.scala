@@ -8,16 +8,13 @@ object ironStrings {
   
   @js.native
   sealed trait `aes-128-ctr` extends StObject
-  @scala.inline
-  def `aes-128-ctr`: `aes-128-ctr` = "aes-128-ctr".asInstanceOf[`aes-128-ctr`]
+  inline def `aes-128-ctr`: `aes-128-ctr` = "aes-128-ctr".asInstanceOf[`aes-128-ctr`]
   
   @js.native
   sealed trait `aes-256-cbc` extends StObject
-  @scala.inline
-  def `aes-256-cbc`: `aes-256-cbc` = "aes-256-cbc".asInstanceOf[`aes-256-cbc`]
+  inline def `aes-256-cbc`: `aes-256-cbc` = "aes-256-cbc".asInstanceOf[`aes-256-cbc`]
   
   @js.native
   sealed trait sha256 extends StObject
-  @scala.inline
-  def sha256: sha256 = "sha256".asInstanceOf[sha256]
+  inline def sha256: sha256 = "sha256".asInstanceOf[sha256]
 }

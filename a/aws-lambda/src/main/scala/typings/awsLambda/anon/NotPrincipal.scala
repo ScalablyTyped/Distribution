@@ -11,19 +11,15 @@ trait NotPrincipal extends StObject {
 }
 object NotPrincipal {
   
-  @scala.inline
-  def apply(NotPrincipal: PrincipalValue): NotPrincipal = {
+  inline def apply(NotPrincipal: PrincipalValue): NotPrincipal = {
     val __obj = js.Dynamic.literal(NotPrincipal = NotPrincipal.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotPrincipal]
   }
   
-  @scala.inline
-  implicit class NotPrincipalMutableBuilder[Self <: NotPrincipal] (val x: Self) extends AnyVal {
+  extension [Self <: NotPrincipal](x: Self) {
     
-    @scala.inline
-    def setNotPrincipal(value: PrincipalValue): Self = StObject.set(x, "NotPrincipal", value.asInstanceOf[js.Any])
+    inline def setNotPrincipal(value: PrincipalValue): Self = StObject.set(x, "NotPrincipal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotPrincipalVarargs(value: String*): Self = StObject.set(x, "NotPrincipal", js.Array(value :_*))
+    inline def setNotPrincipalVarargs(value: String*): Self = StObject.set(x, "NotPrincipal", js.Array(value :_*))
   }
 }

@@ -42,43 +42,31 @@ trait SchemaRewrite extends StObject {
 }
 object SchemaRewrite {
   
-  @scala.inline
-  def apply(): SchemaRewrite = {
+  inline def apply(): SchemaRewrite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRewrite]
   }
   
-  @scala.inline
-  implicit class SchemaRewriteMutableBuilder[Self <: SchemaRewrite] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRewrite](x: Self) {
     
-    @scala.inline
-    def setDynamicLinks(value: Boolean): Self = StObject.set(x, "dynamicLinks", value.asInstanceOf[js.Any])
+    inline def setDynamicLinks(value: Boolean): Self = StObject.set(x, "dynamicLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicLinksUndefined: Self = StObject.set(x, "dynamicLinks", js.undefined)
+    inline def setDynamicLinksUndefined: Self = StObject.set(x, "dynamicLinks", js.undefined)
     
-    @scala.inline
-    def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+    inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
-    @scala.inline
-    def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
+    inline def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
+    inline def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setRun(value: SchemaCloudRunRewrite): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
+    inline def setRun(value: SchemaCloudRunRewrite): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
+    inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
   }
 }

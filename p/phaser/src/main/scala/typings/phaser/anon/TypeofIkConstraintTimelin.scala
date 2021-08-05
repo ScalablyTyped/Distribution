@@ -44,8 +44,7 @@ trait TypeofIkConstraintTimelin extends StObject {
 }
 object TypeofIkConstraintTimelin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BEND_DIRECTION: Double,
     COMPRESS: Double,
     ENTRIES: Double,
@@ -63,43 +62,30 @@ object TypeofIkConstraintTimelin {
     __obj.asInstanceOf[TypeofIkConstraintTimelin]
   }
   
-  @scala.inline
-  implicit class TypeofIkConstraintTimelinMutableBuilder[Self <: TypeofIkConstraintTimelin] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofIkConstraintTimelin](x: Self) {
     
-    @scala.inline
-    def setBEND_DIRECTION(value: Double): Self = StObject.set(x, "BEND_DIRECTION", value.asInstanceOf[js.Any])
+    inline def setBEND_DIRECTION(value: Double): Self = StObject.set(x, "BEND_DIRECTION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCOMPRESS(value: Double): Self = StObject.set(x, "COMPRESS", value.asInstanceOf[js.Any])
+    inline def setCOMPRESS(value: Double): Self = StObject.set(x, "COMPRESS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
+    inline def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMIX(value: Double): Self = StObject.set(x, "MIX", value.asInstanceOf[js.Any])
+    inline def setMIX(value: Double): Self = StObject.set(x, "MIX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_BEND_DIRECTION(value: Double): Self = StObject.set(x, "PREV_BEND_DIRECTION", value.asInstanceOf[js.Any])
+    inline def setPREV_BEND_DIRECTION(value: Double): Self = StObject.set(x, "PREV_BEND_DIRECTION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_COMPRESS(value: Double): Self = StObject.set(x, "PREV_COMPRESS", value.asInstanceOf[js.Any])
+    inline def setPREV_COMPRESS(value: Double): Self = StObject.set(x, "PREV_COMPRESS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_MIX(value: Double): Self = StObject.set(x, "PREV_MIX", value.asInstanceOf[js.Any])
+    inline def setPREV_MIX(value: Double): Self = StObject.set(x, "PREV_MIX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_SOFTNESS(value: Double): Self = StObject.set(x, "PREV_SOFTNESS", value.asInstanceOf[js.Any])
+    inline def setPREV_SOFTNESS(value: Double): Self = StObject.set(x, "PREV_SOFTNESS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_STRETCH(value: Double): Self = StObject.set(x, "PREV_STRETCH", value.asInstanceOf[js.Any])
+    inline def setPREV_STRETCH(value: Double): Self = StObject.set(x, "PREV_STRETCH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_TIME(value: Double): Self = StObject.set(x, "PREV_TIME", value.asInstanceOf[js.Any])
+    inline def setPREV_TIME(value: Double): Self = StObject.set(x, "PREV_TIME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSOFTNESS(value: Double): Self = StObject.set(x, "SOFTNESS", value.asInstanceOf[js.Any])
+    inline def setSOFTNESS(value: Double): Self = StObject.set(x, "SOFTNESS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSTRETCH(value: Double): Self = StObject.set(x, "STRETCH", value.asInstanceOf[js.Any])
+    inline def setSTRETCH(value: Double): Self = StObject.set(x, "STRETCH", value.asInstanceOf[js.Any])
   }
 }

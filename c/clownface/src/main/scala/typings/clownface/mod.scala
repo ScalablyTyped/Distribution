@@ -16,16 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[D /* <: DatasetCore[Quad, Quad] */](options: ClownfaceInit[D]): AnyPointer[AnyContext, D] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AnyPointer[AnyContext, D]]
-  @scala.inline
-  def apply[D /* <: DatasetCore[Quad, Quad] */](options: ClownfaceInitWithValue[D]): AnyPointer[Literal, D] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AnyPointer[Literal, D]]
-  @scala.inline
-  def apply[D /* <: DatasetCore[Quad, Quad] */](options: ClownfaceInitWithValues[D]): AnyPointer[js.Array[Literal], D] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AnyPointer[js.Array[Literal], D]]
-  @scala.inline
-  def apply[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term | js.Array[Term] */](options: ClownfaceInitWithTerms[T, D]): AnyPointer[T, D] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AnyPointer[T, D]]
-  @scala.inline
-  def apply[D /* <: DatasetCore[Quad, Quad] */, T /* <: AnyContext */](other: AnyPointer[T, D]): AnyPointer[T, D] = ^.asInstanceOf[js.Dynamic].apply(other.asInstanceOf[js.Any]).asInstanceOf[AnyPointer[T, D]]
+  inline def apply[D /* <: DatasetCore[Quad, Quad] */](options: ClownfaceInit[D]): AnyPointer[AnyContext, D] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AnyPointer[AnyContext, D]]
+  inline def apply[D /* <: DatasetCore[Quad, Quad] */](options: ClownfaceInitWithValue[D]): AnyPointer[Literal, D] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AnyPointer[Literal, D]]
+  inline def apply[D /* <: DatasetCore[Quad, Quad] */](options: ClownfaceInitWithValues[D]): AnyPointer[js.Array[Literal], D] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AnyPointer[js.Array[Literal], D]]
+  inline def apply[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term | js.Array[Term] */](options: ClownfaceInitWithTerms[T, D]): AnyPointer[T, D] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AnyPointer[T, D]]
+  inline def apply[D /* <: DatasetCore[Quad, Quad] */, T /* <: AnyContext */](other: AnyPointer[T, D]): AnyPointer[T, D] = ^.asInstanceOf[js.Dynamic].apply(other.asInstanceOf[js.Any]).asInstanceOf[AnyPointer[T, D]]
   
   @JSImport("clownface", JSImport.Namespace)
   @js.native
@@ -192,35 +187,26 @@ object mod {
   }
   object ClownfaceInit {
     
-    @scala.inline
-    def apply[D /* <: DatasetCore[Quad, Quad] */](): ClownfaceInit[D] = {
+    inline def apply[D /* <: DatasetCore[Quad, Quad] */](): ClownfaceInit[D] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClownfaceInit[D]]
     }
     
-    @scala.inline
-    implicit class ClownfaceInitMutableBuilder[Self <: ClownfaceInit[?], D /* <: DatasetCore[Quad, Quad] */] (val x: Self & ClownfaceInit[D]) extends AnyVal {
+    extension [Self <: ClownfaceInit[?], D /* <: DatasetCore[Quad, Quad] */](x: Self & ClownfaceInit[D]) {
       
-      @scala.inline
-      def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+      inline def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+      inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
       
-      @scala.inline
-      def setGraph(value: QuadGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+      inline def setGraph(value: QuadGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
+      inline def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
       
-      @scala.inline
-      def set_context(value: js.Array[Context[D, Term]]): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
+      inline def set_context(value: js.Array[Context[D, Term]]): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_contextUndefined: Self = StObject.set(x, "_context", js.undefined)
+      inline def set_contextUndefined: Self = StObject.set(x, "_context", js.undefined)
       
-      @scala.inline
-      def set_contextVarargs(value: (Context[D, Term])*): Self = StObject.set(x, "_context", js.Array(value :_*))
+      inline def set_contextVarargs(value: (Context[D, Term])*): Self = StObject.set(x, "_context", js.Array(value :_*))
     }
   }
   
@@ -237,38 +223,28 @@ object mod {
   }
   object ClownfaceInitWithTerms {
     
-    @scala.inline
-    def apply[T /* <: Term | js.Array[Term] */, D /* <: DatasetCore[Quad, Quad] */](term: T): ClownfaceInitWithTerms[T, D] = {
+    inline def apply[T /* <: Term | js.Array[Term] */, D /* <: DatasetCore[Quad, Quad] */](term: T): ClownfaceInitWithTerms[T, D] = {
       val __obj = js.Dynamic.literal(term = term.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClownfaceInitWithTerms[T, D]]
     }
     
-    @scala.inline
-    implicit class ClownfaceInitWithTermsMutableBuilder[Self <: ClownfaceInitWithTerms[?, ?], T /* <: Term | js.Array[Term] */, D /* <: DatasetCore[Quad, Quad] */] (val x: Self & (ClownfaceInitWithTerms[T, D])) extends AnyVal {
+    extension [Self <: ClownfaceInitWithTerms[?, ?], T /* <: Term | js.Array[Term] */, D /* <: DatasetCore[Quad, Quad] */](x: Self & (ClownfaceInitWithTerms[T, D])) {
       
-      @scala.inline
-      def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+      inline def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+      inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
       
-      @scala.inline
-      def setGraph(value: QuadGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+      inline def setGraph(value: QuadGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
+      inline def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
       
-      @scala.inline
-      def setTerm(value: T): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+      inline def setTerm(value: T): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_context(value: js.Array[Context[D, Term]]): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
+      inline def set_context(value: js.Array[Context[D, Term]]): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_contextUndefined: Self = StObject.set(x, "_context", js.undefined)
+      inline def set_contextUndefined: Self = StObject.set(x, "_context", js.undefined)
       
-      @scala.inline
-      def set_contextVarargs(value: (Context[D, Term])*): Self = StObject.set(x, "_context", js.Array(value :_*))
+      inline def set_contextVarargs(value: (Context[D, Term])*): Self = StObject.set(x, "_context", js.Array(value :_*))
     }
   }
   
@@ -285,38 +261,28 @@ object mod {
   }
   object ClownfaceInitWithValue {
     
-    @scala.inline
-    def apply[D /* <: DatasetCore[Quad, Quad] */](value: String): ClownfaceInitWithValue[D] = {
+    inline def apply[D /* <: DatasetCore[Quad, Quad] */](value: String): ClownfaceInitWithValue[D] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClownfaceInitWithValue[D]]
     }
     
-    @scala.inline
-    implicit class ClownfaceInitWithValueMutableBuilder[Self <: ClownfaceInitWithValue[?], D /* <: DatasetCore[Quad, Quad] */] (val x: Self & ClownfaceInitWithValue[D]) extends AnyVal {
+    extension [Self <: ClownfaceInitWithValue[?], D /* <: DatasetCore[Quad, Quad] */](x: Self & ClownfaceInitWithValue[D]) {
       
-      @scala.inline
-      def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+      inline def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+      inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
       
-      @scala.inline
-      def setGraph(value: QuadGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+      inline def setGraph(value: QuadGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
+      inline def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_context(value: js.Array[Context[D, Term]]): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
+      inline def set_context(value: js.Array[Context[D, Term]]): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_contextUndefined: Self = StObject.set(x, "_context", js.undefined)
+      inline def set_contextUndefined: Self = StObject.set(x, "_context", js.undefined)
       
-      @scala.inline
-      def set_contextVarargs(value: (Context[D, Term])*): Self = StObject.set(x, "_context", js.Array(value :_*))
+      inline def set_contextVarargs(value: (Context[D, Term])*): Self = StObject.set(x, "_context", js.Array(value :_*))
     }
   }
   
@@ -333,41 +299,30 @@ object mod {
   }
   object ClownfaceInitWithValues {
     
-    @scala.inline
-    def apply[D /* <: DatasetCore[Quad, Quad] */](value: js.Array[String]): ClownfaceInitWithValues[D] = {
+    inline def apply[D /* <: DatasetCore[Quad, Quad] */](value: js.Array[String]): ClownfaceInitWithValues[D] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClownfaceInitWithValues[D]]
     }
     
-    @scala.inline
-    implicit class ClownfaceInitWithValuesMutableBuilder[Self <: ClownfaceInitWithValues[?], D /* <: DatasetCore[Quad, Quad] */] (val x: Self & ClownfaceInitWithValues[D]) extends AnyVal {
+    extension [Self <: ClownfaceInitWithValues[?], D /* <: DatasetCore[Quad, Quad] */](x: Self & ClownfaceInitWithValues[D]) {
       
-      @scala.inline
-      def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+      inline def setDataset(value: D): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+      inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
       
-      @scala.inline
-      def setGraph(value: QuadGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+      inline def setGraph(value: QuadGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
+      inline def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
       
-      @scala.inline
-      def set_context(value: js.Array[Context[D, Term]]): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
+      inline def set_context(value: js.Array[Context[D, Term]]): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_contextUndefined: Self = StObject.set(x, "_context", js.undefined)
+      inline def set_contextUndefined: Self = StObject.set(x, "_context", js.undefined)
       
-      @scala.inline
-      def set_contextVarargs(value: (Context[D, Term])*): Self = StObject.set(x, "_context", js.Array(value :_*))
+      inline def set_contextVarargs(value: (Context[D, Term])*): Self = StObject.set(x, "_context", js.Array(value :_*))
     }
   }
   
@@ -392,34 +347,26 @@ object mod {
   }
   object NodeOptions {
     
-    @scala.inline
-    def apply(): NodeOptions = {
+    inline def apply(): NodeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeOptions]
     }
     
-    @scala.inline
-    implicit class NodeOptionsMutableBuilder[Self <: NodeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NodeOptions](x: Self) {
       
-      @scala.inline
-      def setDatatype(value: Term | ToString): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+      inline def setDatatype(value: Term | ToString): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
+      inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: typings.clownface.clownfaceStrings.BlankNode | typings.clownface.clownfaceStrings.Literal | typings.clownface.clownfaceStrings.NamedNode
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -429,23 +376,18 @@ object mod {
   }
   object OutOptions {
     
-    @scala.inline
-    def apply(): OutOptions = {
+    inline def apply(): OutOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OutOptions]
     }
     
-    @scala.inline
-    implicit class OutOptionsMutableBuilder[Self <: OutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OutOptions](x: Self) {
       
-      @scala.inline
-      def setLanguage(value: String | js.Array[String]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String | js.Array[String]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setLanguageVarargs(value: String*): Self = StObject.set(x, "language", js.Array(value :_*))
+      inline def setLanguageVarargs(value: String*): Self = StObject.set(x, "language", js.Array(value :_*))
     }
   }
   

@@ -27,23 +27,18 @@ object wrappersSerializationMod {
   }
   object BidirectionalLayerConfig {
     
-    @scala.inline
-    def apply(layer: RecurrentLayerSerialization): BidirectionalLayerConfig = {
+    inline def apply(layer: RecurrentLayerSerialization): BidirectionalLayerConfig = {
       val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
       __obj.asInstanceOf[BidirectionalLayerConfig]
     }
     
-    @scala.inline
-    implicit class BidirectionalLayerConfigMutableBuilder[Self <: BidirectionalLayerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: BidirectionalLayerConfig](x: Self) {
       
-      @scala.inline
-      def setLayer(value: RecurrentLayerSerialization): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+      inline def setLayer(value: RecurrentLayerSerialization): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMerge_mode(value: BidirectionalMergeMode): Self = StObject.set(x, "merge_mode", value.asInstanceOf[js.Any])
+      inline def setMerge_mode(value: BidirectionalMergeMode): Self = StObject.set(x, "merge_mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMerge_modeUndefined: Self = StObject.set(x, "merge_mode", js.undefined)
+      inline def setMerge_modeUndefined: Self = StObject.set(x, "merge_mode", js.undefined)
     }
   }
   
@@ -57,17 +52,14 @@ object wrappersSerializationMod {
   }
   object TimeDistributedLayerConfig {
     
-    @scala.inline
-    def apply(layer: LayerSerialization): TimeDistributedLayerConfig = {
+    inline def apply(layer: LayerSerialization): TimeDistributedLayerConfig = {
       val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimeDistributedLayerConfig]
     }
     
-    @scala.inline
-    implicit class TimeDistributedLayerConfigMutableBuilder[Self <: TimeDistributedLayerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TimeDistributedLayerConfig](x: Self) {
       
-      @scala.inline
-      def setLayer(value: LayerSerialization): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+      inline def setLayer(value: LayerSerialization): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,11 +73,9 @@ object wrappersSerializationMod {
   trait WrapperLayerClassName extends StObject
   object WrapperLayerClassName {
     
-    @scala.inline
-    def Bidirectional: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Bidirectional = "Bidirectional".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Bidirectional]
+    inline def Bidirectional: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Bidirectional = "Bidirectional".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Bidirectional]
     
-    @scala.inline
-    def TimeDistributed: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.TimeDistributed = "TimeDistributed".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.TimeDistributed]
+    inline def TimeDistributed: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.TimeDistributed = "TimeDistributed".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.TimeDistributed]
   }
   
   type WrapperLayerSerialization = TimeDistributedLayerSerialization | BidirectionalLayerSerialization

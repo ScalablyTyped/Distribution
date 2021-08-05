@@ -10,16 +10,13 @@ trait PreventDefault extends StObject {
 }
 object PreventDefault {
   
-  @scala.inline
-  def apply(preventDefault: () => Unit): PreventDefault = {
+  inline def apply(preventDefault: () => Unit): PreventDefault = {
     val __obj = js.Dynamic.literal(preventDefault = js.Any.fromFunction0(preventDefault))
     __obj.asInstanceOf[PreventDefault]
   }
   
-  @scala.inline
-  implicit class PreventDefaultMutableBuilder[Self <: PreventDefault] (val x: Self) extends AnyVal {
+  extension [Self <: PreventDefault](x: Self) {
     
-    @scala.inline
-    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+    inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
   }
 }

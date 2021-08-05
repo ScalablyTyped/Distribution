@@ -12,19 +12,15 @@ trait CryptoKeyVersionTemplate extends StObject {
 }
 object CryptoKeyVersionTemplate {
   
-  @scala.inline
-  def apply(algorithm: CryptoKeyVersionAlgorithm, protectionLevel: ProtectionLevel): CryptoKeyVersionTemplate = {
+  inline def apply(algorithm: CryptoKeyVersionAlgorithm, protectionLevel: ProtectionLevel): CryptoKeyVersionTemplate = {
     val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], protectionLevel = protectionLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[CryptoKeyVersionTemplate]
   }
   
-  @scala.inline
-  implicit class CryptoKeyVersionTemplateMutableBuilder[Self <: CryptoKeyVersionTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: CryptoKeyVersionTemplate](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: CryptoKeyVersionAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: CryptoKeyVersionAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectionLevel(value: ProtectionLevel): Self = StObject.set(x, "protectionLevel", value.asInstanceOf[js.Any])
+    inline def setProtectionLevel(value: ProtectionLevel): Self = StObject.set(x, "protectionLevel", value.asInstanceOf[js.Any])
   }
 }

@@ -23,19 +23,15 @@ trait InputQuestion[T /* <: Answers */]
 }
 object InputQuestion {
   
-  @scala.inline
-  def apply[T /* <: Answers */](): InputQuestion[T] = {
+  inline def apply[T /* <: Answers */](): InputQuestion[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputQuestion[T]]
   }
   
-  @scala.inline
-  implicit class InputQuestionMutableBuilder[Self <: InputQuestion[?], T /* <: Answers */] (val x: Self & InputQuestion[T]) extends AnyVal {
+  extension [Self <: InputQuestion[?], T /* <: Answers */](x: Self & InputQuestion[T]) {
     
-    @scala.inline
-    def setType(value: input): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: input): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

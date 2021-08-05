@@ -22,8 +22,7 @@ object BAR_CORNER_RADIUS_INDEX {
       cornerRadiusTopLeft | cornerRadiusTopRight | cornerRadiusBottomLeft | cornerRadiusBottomRight
     ]
   ] = js.native
-  @scala.inline
-  def horizontal_=(
+  inline def horizontal_=(
     x: js.UndefOr[
       js.Array[
         cornerRadiusTopLeft | cornerRadiusTopRight | cornerRadiusBottomLeft | cornerRadiusBottomRight
@@ -38,8 +37,7 @@ object BAR_CORNER_RADIUS_INDEX {
       cornerRadiusTopLeft | cornerRadiusTopRight | cornerRadiusBottomLeft | cornerRadiusBottomRight
     ]
   ] = js.native
-  @scala.inline
-  def vertical_=(
+  inline def vertical_=(
     x: js.UndefOr[
       js.Array[
         cornerRadiusTopLeft | cornerRadiusTopRight | cornerRadiusBottomLeft | cornerRadiusBottomRight

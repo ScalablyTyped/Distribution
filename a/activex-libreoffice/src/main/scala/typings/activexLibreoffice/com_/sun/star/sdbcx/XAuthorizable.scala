@@ -53,8 +53,7 @@ trait XAuthorizable
 }
 object XAuthorizable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getGrantablePrivileges: (String, Double) => Double,
     getPrivileges: (String, Double) => Double,
@@ -67,19 +66,14 @@ object XAuthorizable {
     __obj.asInstanceOf[XAuthorizable]
   }
   
-  @scala.inline
-  implicit class XAuthorizableMutableBuilder[Self <: XAuthorizable] (val x: Self) extends AnyVal {
+  extension [Self <: XAuthorizable](x: Self) {
     
-    @scala.inline
-    def setGetGrantablePrivileges(value: (String, Double) => Double): Self = StObject.set(x, "getGrantablePrivileges", js.Any.fromFunction2(value))
+    inline def setGetGrantablePrivileges(value: (String, Double) => Double): Self = StObject.set(x, "getGrantablePrivileges", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetPrivileges(value: (String, Double) => Double): Self = StObject.set(x, "getPrivileges", js.Any.fromFunction2(value))
+    inline def setGetPrivileges(value: (String, Double) => Double): Self = StObject.set(x, "getPrivileges", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGrantPrivileges(value: (String, Double, Double) => Unit): Self = StObject.set(x, "grantPrivileges", js.Any.fromFunction3(value))
+    inline def setGrantPrivileges(value: (String, Double, Double) => Unit): Self = StObject.set(x, "grantPrivileges", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRevokePrivileges(value: (String, Double, Double) => Unit): Self = StObject.set(x, "revokePrivileges", js.Any.fromFunction3(value))
+    inline def setRevokePrivileges(value: (String, Double, Double) => Unit): Self = StObject.set(x, "revokePrivileges", js.Any.fromFunction3(value))
   }
 }

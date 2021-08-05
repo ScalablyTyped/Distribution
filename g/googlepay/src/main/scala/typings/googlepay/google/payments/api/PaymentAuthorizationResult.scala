@@ -21,22 +21,17 @@ trait PaymentAuthorizationResult extends StObject {
 }
 object PaymentAuthorizationResult {
   
-  @scala.inline
-  def apply(transactionState: TransactionState): PaymentAuthorizationResult = {
+  inline def apply(transactionState: TransactionState): PaymentAuthorizationResult = {
     val __obj = js.Dynamic.literal(transactionState = transactionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentAuthorizationResult]
   }
   
-  @scala.inline
-  implicit class PaymentAuthorizationResultMutableBuilder[Self <: PaymentAuthorizationResult] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentAuthorizationResult](x: Self) {
     
-    @scala.inline
-    def setError(value: PaymentDataError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: PaymentDataError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setTransactionState(value: TransactionState): Self = StObject.set(x, "transactionState", value.asInstanceOf[js.Any])
+    inline def setTransactionState(value: TransactionState): Self = StObject.set(x, "transactionState", value.asInstanceOf[js.Any])
   }
 }

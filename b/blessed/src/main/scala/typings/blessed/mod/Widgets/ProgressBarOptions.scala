@@ -42,49 +42,35 @@ trait ProgressBarOptions
 }
 object ProgressBarOptions {
   
-  @scala.inline
-  def apply(): ProgressBarOptions = {
+  inline def apply(): ProgressBarOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProgressBarOptions]
   }
   
-  @scala.inline
-  implicit class ProgressBarOptionsMutableBuilder[Self <: ProgressBarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressBarOptions](x: Self) {
     
-    @scala.inline
-    def setFilled(value: Double): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
+    inline def setFilled(value: Double): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
+    inline def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
     
-    @scala.inline
-    def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setMouse(value: Boolean): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
+    inline def setMouse(value: Boolean): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseUndefined: Self = StObject.set(x, "mouse", js.undefined)
+    inline def setMouseUndefined: Self = StObject.set(x, "mouse", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setPch(value: String): Self = StObject.set(x, "pch", value.asInstanceOf[js.Any])
+    inline def setPch(value: String): Self = StObject.set(x, "pch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPchUndefined: Self = StObject.set(x, "pch", js.undefined)
+    inline def setPchUndefined: Self = StObject.set(x, "pch", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

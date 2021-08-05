@@ -18,8 +18,7 @@ trait ArrayCollisionMatrix extends StObject {
 }
 object ArrayCollisionMatrix {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: (Double, Double) => Double,
     matrix: js.Array[Mat3],
     reset: () => Unit,
@@ -30,25 +29,18 @@ object ArrayCollisionMatrix {
     __obj.asInstanceOf[ArrayCollisionMatrix]
   }
   
-  @scala.inline
-  implicit class ArrayCollisionMatrixMutableBuilder[Self <: ArrayCollisionMatrix] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayCollisionMatrix](x: Self) {
     
-    @scala.inline
-    def setGet(value: (Double, Double) => Double): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    inline def setGet(value: (Double, Double) => Double): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMatrix(value: js.Array[Mat3]): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+    inline def setMatrix(value: js.Array[Mat3]): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatrixVarargs(value: Mat3*): Self = StObject.set(x, "matrix", js.Array(value :_*))
+    inline def setMatrixVarargs(value: Mat3*): Self = StObject.set(x, "matrix", js.Array(value :_*))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+    inline def setSet(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetNumObjects(value: Double => Unit): Self = StObject.set(x, "setNumObjects", js.Any.fromFunction1(value))
+    inline def setSetNumObjects(value: Double => Unit): Self = StObject.set(x, "setNumObjects", js.Any.fromFunction1(value))
   }
 }

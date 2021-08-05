@@ -18,25 +18,19 @@ trait QueryError extends StObject {
 }
 object QueryError {
   
-  @scala.inline
-  def apply(): QueryError = {
+  inline def apply(): QueryError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryError]
   }
   
-  @scala.inline
-  implicit class QueryErrorMutableBuilder[Self <: QueryError] (val x: Self) extends AnyVal {
+  extension [Self <: QueryError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: QueryErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: QueryErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setMessage(value: QueryErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: QueryErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

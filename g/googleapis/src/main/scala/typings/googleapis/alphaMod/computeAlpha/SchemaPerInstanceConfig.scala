@@ -43,43 +43,31 @@ trait SchemaPerInstanceConfig extends StObject {
 }
 object SchemaPerInstanceConfig {
   
-  @scala.inline
-  def apply(): SchemaPerInstanceConfig = {
+  inline def apply(): SchemaPerInstanceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPerInstanceConfig]
   }
   
-  @scala.inline
-  implicit class SchemaPerInstanceConfigMutableBuilder[Self <: SchemaPerInstanceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPerInstanceConfig](x: Self) {
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOverride(value: SchemaManagedInstanceOverride): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    inline def setOverride(value: SchemaManagedInstanceOverride): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+    inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
     
-    @scala.inline
-    def setPreservedState(value: SchemaPreservedState): Self = StObject.set(x, "preservedState", value.asInstanceOf[js.Any])
+    inline def setPreservedState(value: SchemaPreservedState): Self = StObject.set(x, "preservedState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreservedStateUndefined: Self = StObject.set(x, "preservedState", js.undefined)
+    inline def setPreservedStateUndefined: Self = StObject.set(x, "preservedState", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait BridgeIdString extends StObject {
 }
 object BridgeIdString {
   
-  @scala.inline
-  def apply(bridgeId: String): BridgeIdString = {
+  inline def apply(bridgeId: String): BridgeIdString = {
     val __obj = js.Dynamic.literal(bridgeId = bridgeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BridgeIdString]
   }
   
-  @scala.inline
-  implicit class BridgeIdStringMutableBuilder[Self <: BridgeIdString] (val x: Self) extends AnyVal {
+  extension [Self <: BridgeIdString](x: Self) {
     
-    @scala.inline
-    def setBridgeId(value: String): Self = StObject.set(x, "bridgeId", value.asInstanceOf[js.Any])
+    inline def setBridgeId(value: String): Self = StObject.set(x, "bridgeId", value.asInstanceOf[js.Any])
   }
 }

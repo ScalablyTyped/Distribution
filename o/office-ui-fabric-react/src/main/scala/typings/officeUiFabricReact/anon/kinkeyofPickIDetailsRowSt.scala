@@ -23,8 +23,7 @@ trait kinkeyofPickIDetailsRowSt extends StObject {
 }
 object kinkeyofPickIDetailsRowSt {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cell: String,
     cellAnimation: String,
     cellPadded: String,
@@ -37,28 +36,20 @@ object kinkeyofPickIDetailsRowSt {
     __obj.asInstanceOf[kinkeyofPickIDetailsRowSt]
   }
   
-  @scala.inline
-  implicit class kinkeyofPickIDetailsRowStMutableBuilder[Self <: kinkeyofPickIDetailsRowSt] (val x: Self) extends AnyVal {
+  extension [Self <: kinkeyofPickIDetailsRowSt](x: Self) {
     
-    @scala.inline
-    def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellAnimation(value: String): Self = StObject.set(x, "cellAnimation", value.asInstanceOf[js.Any])
+    inline def setCellAnimation(value: String): Self = StObject.set(x, "cellAnimation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellPadded(value: String): Self = StObject.set(x, "cellPadded", value.asInstanceOf[js.Any])
+    inline def setCellPadded(value: String): Self = StObject.set(x, "cellPadded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellUnpadded(value: String): Self = StObject.set(x, "cellUnpadded", value.asInstanceOf[js.Any])
+    inline def setCellUnpadded(value: String): Self = StObject.set(x, "cellUnpadded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMultiline(value: String): Self = StObject.set(x, "isMultiline", value.asInstanceOf[js.Any])
+    inline def setIsMultiline(value: String): Self = StObject.set(x, "isMultiline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRowHeader(value: String): Self = StObject.set(x, "isRowHeader", value.asInstanceOf[js.Any])
+    inline def setIsRowHeader(value: String): Self = StObject.set(x, "isRowHeader", value.asInstanceOf[js.Any])
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.MailMessage")
 @js.native
-class MailMessage protected ()
+/* private */ class MailMessage ()
   extends StObject
      with typings.activexWord.Word.MailMessage {
   
@@ -52,7 +52,7 @@ class MailMessage protected ()
   /* CompleteClass */
   override def ToggleHeader(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.MailMessage_typekey")
   var WordDotMailMessage_typekey: typings.activexWord.Word.MailMessage = js.native
 }

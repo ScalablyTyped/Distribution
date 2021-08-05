@@ -20,8 +20,7 @@ trait `796` extends StObject {
 }
 object `796` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[OrgsGetWebhookEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[OrgsGetWebhookResponseData]
   ): `796` = {
@@ -29,13 +28,10 @@ object `796` {
     __obj.asInstanceOf[`796`]
   }
   
-  @scala.inline
-  implicit class `796MutableBuilder`[Self <: `796`] (val x: Self) extends AnyVal {
+  extension [Self <: `796`](x: Self) {
     
-    @scala.inline
-    def setParameters(value: RequestParameters & (Omit[OrgsGetWebhookEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: RequestParameters & (Omit[OrgsGetWebhookEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[OrgsGetWebhookResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[OrgsGetWebhookResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

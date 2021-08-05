@@ -151,399 +151,269 @@ trait PartialQueryExpressionMap extends StObject {
 }
 object PartialQueryExpressionMap {
   
-  @scala.inline
-  def apply(): PartialQueryExpressionMap = {
+  inline def apply(): PartialQueryExpressionMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialQueryExpressionMap]
   }
   
-  @scala.inline
-  implicit class PartialQueryExpressionMapMutableBuilder[Self <: PartialQueryExpressionMap] (val x: Self) extends AnyVal {
+  extension [Self <: PartialQueryExpressionMap](x: Self) {
     
-    @scala.inline
-    def setAliasNamePrefixingEnabled(value: Boolean): Self = StObject.set(x, "aliasNamePrefixingEnabled", value.asInstanceOf[js.Any])
+    inline def setAliasNamePrefixingEnabled(value: Boolean): Self = StObject.set(x, "aliasNamePrefixingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasNamePrefixingEnabledUndefined: Self = StObject.set(x, "aliasNamePrefixingEnabled", js.undefined)
+    inline def setAliasNamePrefixingEnabledUndefined: Self = StObject.set(x, "aliasNamePrefixingEnabled", js.undefined)
     
-    @scala.inline
-    def setAliases(value: js.Array[Alias]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: js.Array[Alias]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+    inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
-    @scala.inline
-    def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
-    @scala.inline
-    def setAllOrderBys(value: OrderByCondition): Self = StObject.set(x, "allOrderBys", value.asInstanceOf[js.Any])
+    inline def setAllOrderBys(value: OrderByCondition): Self = StObject.set(x, "allOrderBys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllOrderBysUndefined: Self = StObject.set(x, "allOrderBys", js.undefined)
+    inline def setAllOrderBysUndefined: Self = StObject.set(x, "allOrderBys", js.undefined)
     
-    @scala.inline
-    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheDuration(value: Double): Self = StObject.set(x, "cacheDuration", value.asInstanceOf[js.Any])
+    inline def setCacheDuration(value: Double): Self = StObject.set(x, "cacheDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheDurationUndefined: Self = StObject.set(x, "cacheDuration", js.undefined)
+    inline def setCacheDurationUndefined: Self = StObject.set(x, "cacheDuration", js.undefined)
     
-    @scala.inline
-    def setCacheId(value: String): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
+    inline def setCacheId(value: String): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheIdUndefined: Self = StObject.set(x, "cacheId", js.undefined)
+    inline def setCacheIdUndefined: Self = StObject.set(x, "cacheId", js.undefined)
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setCallListeners(value: Boolean): Self = StObject.set(x, "callListeners", value.asInstanceOf[js.Any])
+    inline def setCallListeners(value: Boolean): Self = StObject.set(x, "callListeners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallListenersUndefined: Self = StObject.set(x, "callListeners", js.undefined)
+    inline def setCallListenersUndefined: Self = StObject.set(x, "callListeners", js.undefined)
     
-    @scala.inline
-    def setClone_(value: () => QueryExpressionMap): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
+    inline def setClone_(value: () => QueryExpressionMap): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+    inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setConnection(value: typings.typeorm.connectionMod.Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: typings.typeorm.connectionMod.Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+    inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
-    @scala.inline
-    def setConstructor(value: /* connection */ typings.typeorm.connectionMod.Connection => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    inline def setConstructor(value: /* connection */ typings.typeorm.connectionMod.Connection => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
+    inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     
-    @scala.inline
-    def setCreateAlias(value: /* options */ Metadata => Alias): Self = StObject.set(x, "createAlias", js.Any.fromFunction1(value))
+    inline def setCreateAlias(value: /* options */ Metadata => Alias): Self = StObject.set(x, "createAlias", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateAliasUndefined: Self = StObject.set(x, "createAlias", js.undefined)
+    inline def setCreateAliasUndefined: Self = StObject.set(x, "createAlias", js.undefined)
     
-    @scala.inline
-    def setDisableEscaping(value: Boolean): Self = StObject.set(x, "disableEscaping", value.asInstanceOf[js.Any])
+    inline def setDisableEscaping(value: Boolean): Self = StObject.set(x, "disableEscaping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableEscapingUndefined: Self = StObject.set(x, "disableEscaping", js.undefined)
+    inline def setDisableEscapingUndefined: Self = StObject.set(x, "disableEscaping", js.undefined)
     
-    @scala.inline
-    def setEnableRelationIdValues(value: Boolean): Self = StObject.set(x, "enableRelationIdValues", value.asInstanceOf[js.Any])
+    inline def setEnableRelationIdValues(value: Boolean): Self = StObject.set(x, "enableRelationIdValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableRelationIdValuesUndefined: Self = StObject.set(x, "enableRelationIdValues", js.undefined)
+    inline def setEnableRelationIdValuesUndefined: Self = StObject.set(x, "enableRelationIdValues", js.undefined)
     
-    @scala.inline
-    def setExtraAppendedAndWhereCondition(value: String): Self = StObject.set(x, "extraAppendedAndWhereCondition", value.asInstanceOf[js.Any])
+    inline def setExtraAppendedAndWhereCondition(value: String): Self = StObject.set(x, "extraAppendedAndWhereCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraAppendedAndWhereConditionUndefined: Self = StObject.set(x, "extraAppendedAndWhereCondition", js.undefined)
+    inline def setExtraAppendedAndWhereConditionUndefined: Self = StObject.set(x, "extraAppendedAndWhereCondition", js.undefined)
     
-    @scala.inline
-    def setExtraReturningColumns(value: js.Array[ColumnMetadata]): Self = StObject.set(x, "extraReturningColumns", value.asInstanceOf[js.Any])
+    inline def setExtraReturningColumns(value: js.Array[ColumnMetadata]): Self = StObject.set(x, "extraReturningColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraReturningColumnsUndefined: Self = StObject.set(x, "extraReturningColumns", js.undefined)
+    inline def setExtraReturningColumnsUndefined: Self = StObject.set(x, "extraReturningColumns", js.undefined)
     
-    @scala.inline
-    def setExtraReturningColumnsVarargs(value: ColumnMetadata*): Self = StObject.set(x, "extraReturningColumns", js.Array(value :_*))
+    inline def setExtraReturningColumnsVarargs(value: ColumnMetadata*): Self = StObject.set(x, "extraReturningColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setFindAliasByName(value: /* aliasName */ String => Alias): Self = StObject.set(x, "findAliasByName", js.Any.fromFunction1(value))
+    inline def setFindAliasByName(value: /* aliasName */ String => Alias): Self = StObject.set(x, "findAliasByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindAliasByNameUndefined: Self = StObject.set(x, "findAliasByName", js.undefined)
+    inline def setFindAliasByNameUndefined: Self = StObject.set(x, "findAliasByName", js.undefined)
     
-    @scala.inline
-    def setFindColumnByAliasExpression(value: /* aliasExpression */ String => js.UndefOr[ColumnMetadata]): Self = StObject.set(x, "findColumnByAliasExpression", js.Any.fromFunction1(value))
+    inline def setFindColumnByAliasExpression(value: /* aliasExpression */ String => js.UndefOr[ColumnMetadata]): Self = StObject.set(x, "findColumnByAliasExpression", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindColumnByAliasExpressionUndefined: Self = StObject.set(x, "findColumnByAliasExpression", js.undefined)
+    inline def setFindColumnByAliasExpressionUndefined: Self = StObject.set(x, "findColumnByAliasExpression", js.undefined)
     
-    @scala.inline
-    def setGroupBys(value: js.Array[String]): Self = StObject.set(x, "groupBys", value.asInstanceOf[js.Any])
+    inline def setGroupBys(value: js.Array[String]): Self = StObject.set(x, "groupBys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupBysUndefined: Self = StObject.set(x, "groupBys", js.undefined)
+    inline def setGroupBysUndefined: Self = StObject.set(x, "groupBys", js.undefined)
     
-    @scala.inline
-    def setGroupBysVarargs(value: String*): Self = StObject.set(x, "groupBys", js.Array(value :_*))
+    inline def setGroupBysVarargs(value: String*): Self = StObject.set(x, "groupBys", js.Array(value :_*))
     
-    @scala.inline
-    def setHavings(value: js.Array[Condition]): Self = StObject.set(x, "havings", value.asInstanceOf[js.Any])
+    inline def setHavings(value: js.Array[Condition]): Self = StObject.set(x, "havings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHavingsUndefined: Self = StObject.set(x, "havings", js.undefined)
+    inline def setHavingsUndefined: Self = StObject.set(x, "havings", js.undefined)
     
-    @scala.inline
-    def setHavingsVarargs(value: Condition*): Self = StObject.set(x, "havings", js.Array(value :_*))
+    inline def setHavingsVarargs(value: Condition*): Self = StObject.set(x, "havings", js.Array(value :_*))
     
-    @scala.inline
-    def setInsertColumns(value: js.Array[String]): Self = StObject.set(x, "insertColumns", value.asInstanceOf[js.Any])
+    inline def setInsertColumns(value: js.Array[String]): Self = StObject.set(x, "insertColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertColumnsUndefined: Self = StObject.set(x, "insertColumns", js.undefined)
+    inline def setInsertColumnsUndefined: Self = StObject.set(x, "insertColumns", js.undefined)
     
-    @scala.inline
-    def setInsertColumnsVarargs(value: String*): Self = StObject.set(x, "insertColumns", js.Array(value :_*))
+    inline def setInsertColumnsVarargs(value: String*): Self = StObject.set(x, "insertColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setJoinAttributes(value: js.Array[JoinAttribute]): Self = StObject.set(x, "joinAttributes", value.asInstanceOf[js.Any])
+    inline def setJoinAttributes(value: js.Array[JoinAttribute]): Self = StObject.set(x, "joinAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinAttributesUndefined: Self = StObject.set(x, "joinAttributes", js.undefined)
+    inline def setJoinAttributesUndefined: Self = StObject.set(x, "joinAttributes", js.undefined)
     
-    @scala.inline
-    def setJoinAttributesVarargs(value: JoinAttribute*): Self = StObject.set(x, "joinAttributes", js.Array(value :_*))
+    inline def setJoinAttributesVarargs(value: JoinAttribute*): Self = StObject.set(x, "joinAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setLockMode(
+    inline def setLockMode(
       value: optimistic | pessimistic_read | pessimistic_write | dirty_read | pessimistic_partial_write | pessimistic_write_or_fail | for_no_key_update
     ): Self = StObject.set(x, "lockMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockModeUndefined: Self = StObject.set(x, "lockMode", js.undefined)
+    inline def setLockModeUndefined: Self = StObject.set(x, "lockMode", js.undefined)
     
-    @scala.inline
-    def setLockVersion(value: Double | Date): Self = StObject.set(x, "lockVersion", value.asInstanceOf[js.Any])
+    inline def setLockVersion(value: Double | Date): Self = StObject.set(x, "lockVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockVersionUndefined: Self = StObject.set(x, "lockVersion", js.undefined)
+    inline def setLockVersionUndefined: Self = StObject.set(x, "lockVersion", js.undefined)
     
-    @scala.inline
-    def setMainAlias(value: Alias): Self = StObject.set(x, "mainAlias", value.asInstanceOf[js.Any])
+    inline def setMainAlias(value: Alias): Self = StObject.set(x, "mainAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainAliasUndefined: Self = StObject.set(x, "mainAlias", js.undefined)
+    inline def setMainAliasUndefined: Self = StObject.set(x, "mainAlias", js.undefined)
     
-    @scala.inline
-    def setNativeParameters(value: ObjectLiteral): Self = StObject.set(x, "nativeParameters", value.asInstanceOf[js.Any])
+    inline def setNativeParameters(value: ObjectLiteral): Self = StObject.set(x, "nativeParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeParametersUndefined: Self = StObject.set(x, "nativeParameters", js.undefined)
+    inline def setNativeParametersUndefined: Self = StObject.set(x, "nativeParameters", js.undefined)
     
-    @scala.inline
-    def setOf(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
+    inline def setOf(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfUndefined: Self = StObject.set(x, "of", js.undefined)
+    inline def setOfUndefined: Self = StObject.set(x, "of", js.undefined)
     
-    @scala.inline
-    def setOfVarargs(value: js.Any*): Self = StObject.set(x, "of", js.Array(value :_*))
+    inline def setOfVarargs(value: js.Any*): Self = StObject.set(x, "of", js.Array(value :_*))
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setOnConflict(value: String): Self = StObject.set(x, "onConflict", value.asInstanceOf[js.Any])
+    inline def setOnConflict(value: String): Self = StObject.set(x, "onConflict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnConflictUndefined: Self = StObject.set(x, "onConflict", js.undefined)
+    inline def setOnConflictUndefined: Self = StObject.set(x, "onConflict", js.undefined)
     
-    @scala.inline
-    def setOnIgnore(value: String | Boolean): Self = StObject.set(x, "onIgnore", value.asInstanceOf[js.Any])
+    inline def setOnIgnore(value: String | Boolean): Self = StObject.set(x, "onIgnore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnIgnoreUndefined: Self = StObject.set(x, "onIgnore", js.undefined)
+    inline def setOnIgnoreUndefined: Self = StObject.set(x, "onIgnore", js.undefined)
     
-    @scala.inline
-    def setOnUpdate(value: Conflict): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+    inline def setOnUpdate(value: Conflict): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+    inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Array[SelectQueryBuilderOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[SelectQueryBuilderOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: SelectQueryBuilderOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: SelectQueryBuilderOption*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setOrderBys(value: OrderByCondition): Self = StObject.set(x, "orderBys", value.asInstanceOf[js.Any])
+    inline def setOrderBys(value: OrderByCondition): Self = StObject.set(x, "orderBys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderBysUndefined: Self = StObject.set(x, "orderBys", js.undefined)
+    inline def setOrderBysUndefined: Self = StObject.set(x, "orderBys", js.undefined)
     
-    @scala.inline
-    def setParameters(value: ObjectLiteral): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ObjectLiteral): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParentQueryBuilder(value: QueryBuilder[js.Any]): Self = StObject.set(x, "parentQueryBuilder", value.asInstanceOf[js.Any])
+    inline def setParentQueryBuilder(value: QueryBuilder[js.Any]): Self = StObject.set(x, "parentQueryBuilder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentQueryBuilderUndefined: Self = StObject.set(x, "parentQueryBuilder", js.undefined)
+    inline def setParentQueryBuilderUndefined: Self = StObject.set(x, "parentQueryBuilder", js.undefined)
     
-    @scala.inline
-    def setQueryEntity(value: Boolean): Self = StObject.set(x, "queryEntity", value.asInstanceOf[js.Any])
+    inline def setQueryEntity(value: Boolean): Self = StObject.set(x, "queryEntity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryEntityUndefined: Self = StObject.set(x, "queryEntity", js.undefined)
+    inline def setQueryEntityUndefined: Self = StObject.set(x, "queryEntity", js.undefined)
     
-    @scala.inline
-    def setQueryType(value: select | update | delete | insert | relation | `soft-delete` | restore): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
+    inline def setQueryType(value: select | update | delete | insert | relation | `soft-delete` | restore): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryTypeUndefined: Self = StObject.set(x, "queryType", js.undefined)
+    inline def setQueryTypeUndefined: Self = StObject.set(x, "queryType", js.undefined)
     
-    @scala.inline
-    def setRelationCountAttributes(value: js.Array[RelationCountAttribute]): Self = StObject.set(x, "relationCountAttributes", value.asInstanceOf[js.Any])
+    inline def setRelationCountAttributes(value: js.Array[RelationCountAttribute]): Self = StObject.set(x, "relationCountAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationCountAttributesUndefined: Self = StObject.set(x, "relationCountAttributes", js.undefined)
+    inline def setRelationCountAttributesUndefined: Self = StObject.set(x, "relationCountAttributes", js.undefined)
     
-    @scala.inline
-    def setRelationCountAttributesVarargs(value: RelationCountAttribute*): Self = StObject.set(x, "relationCountAttributes", js.Array(value :_*))
+    inline def setRelationCountAttributesVarargs(value: RelationCountAttribute*): Self = StObject.set(x, "relationCountAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setRelationIdAttributes(value: js.Array[RelationIdAttribute]): Self = StObject.set(x, "relationIdAttributes", value.asInstanceOf[js.Any])
+    inline def setRelationIdAttributes(value: js.Array[RelationIdAttribute]): Self = StObject.set(x, "relationIdAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationIdAttributesUndefined: Self = StObject.set(x, "relationIdAttributes", js.undefined)
+    inline def setRelationIdAttributesUndefined: Self = StObject.set(x, "relationIdAttributes", js.undefined)
     
-    @scala.inline
-    def setRelationIdAttributesVarargs(value: RelationIdAttribute*): Self = StObject.set(x, "relationIdAttributes", js.Array(value :_*))
+    inline def setRelationIdAttributesVarargs(value: RelationIdAttribute*): Self = StObject.set(x, "relationIdAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setRelationMetadata(value: RelationMetadata): Self = StObject.set(x, "relationMetadata", value.asInstanceOf[js.Any])
+    inline def setRelationMetadata(value: RelationMetadata): Self = StObject.set(x, "relationMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationMetadataUndefined: Self = StObject.set(x, "relationMetadata", js.undefined)
+    inline def setRelationMetadataUndefined: Self = StObject.set(x, "relationMetadata", js.undefined)
     
-    @scala.inline
-    def setRelationPropertyPath(value: String): Self = StObject.set(x, "relationPropertyPath", value.asInstanceOf[js.Any])
+    inline def setRelationPropertyPath(value: String): Self = StObject.set(x, "relationPropertyPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationPropertyPathUndefined: Self = StObject.set(x, "relationPropertyPath", js.undefined)
+    inline def setRelationPropertyPathUndefined: Self = StObject.set(x, "relationPropertyPath", js.undefined)
     
-    @scala.inline
-    def setReturning(value: String | js.Array[String]): Self = StObject.set(x, "returning", value.asInstanceOf[js.Any])
+    inline def setReturning(value: String | js.Array[String]): Self = StObject.set(x, "returning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturningUndefined: Self = StObject.set(x, "returning", js.undefined)
+    inline def setReturningUndefined: Self = StObject.set(x, "returning", js.undefined)
     
-    @scala.inline
-    def setReturningVarargs(value: String*): Self = StObject.set(x, "returning", js.Array(value :_*))
+    inline def setReturningVarargs(value: String*): Self = StObject.set(x, "returning", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectDistinct(value: Boolean): Self = StObject.set(x, "selectDistinct", value.asInstanceOf[js.Any])
+    inline def setSelectDistinct(value: Boolean): Self = StObject.set(x, "selectDistinct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectDistinctOn(value: js.Array[String]): Self = StObject.set(x, "selectDistinctOn", value.asInstanceOf[js.Any])
+    inline def setSelectDistinctOn(value: js.Array[String]): Self = StObject.set(x, "selectDistinctOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectDistinctOnUndefined: Self = StObject.set(x, "selectDistinctOn", js.undefined)
+    inline def setSelectDistinctOnUndefined: Self = StObject.set(x, "selectDistinctOn", js.undefined)
     
-    @scala.inline
-    def setSelectDistinctOnVarargs(value: String*): Self = StObject.set(x, "selectDistinctOn", js.Array(value :_*))
+    inline def setSelectDistinctOnVarargs(value: String*): Self = StObject.set(x, "selectDistinctOn", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectDistinctUndefined: Self = StObject.set(x, "selectDistinct", js.undefined)
+    inline def setSelectDistinctUndefined: Self = StObject.set(x, "selectDistinct", js.undefined)
     
-    @scala.inline
-    def setSelects(value: js.Array[SelectQuery]): Self = StObject.set(x, "selects", value.asInstanceOf[js.Any])
+    inline def setSelects(value: js.Array[SelectQuery]): Self = StObject.set(x, "selects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectsUndefined: Self = StObject.set(x, "selects", js.undefined)
+    inline def setSelectsUndefined: Self = StObject.set(x, "selects", js.undefined)
     
-    @scala.inline
-    def setSelectsVarargs(value: SelectQuery*): Self = StObject.set(x, "selects", js.Array(value :_*))
+    inline def setSelectsVarargs(value: SelectQuery*): Self = StObject.set(x, "selects", js.Array(value :_*))
     
-    @scala.inline
-    def setSetMainAlias(value: /* alias */ Alias => Alias): Self = StObject.set(x, "setMainAlias", js.Any.fromFunction1(value))
+    inline def setSetMainAlias(value: /* alias */ Alias => Alias): Self = StObject.set(x, "setMainAlias", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMainAliasUndefined: Self = StObject.set(x, "setMainAlias", js.undefined)
+    inline def setSetMainAliasUndefined: Self = StObject.set(x, "setMainAlias", js.undefined)
     
-    @scala.inline
-    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    @scala.inline
-    def setSubQuery(value: Boolean): Self = StObject.set(x, "subQuery", value.asInstanceOf[js.Any])
+    inline def setSubQuery(value: Boolean): Self = StObject.set(x, "subQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubQueryUndefined: Self = StObject.set(x, "subQuery", js.undefined)
+    inline def setSubQueryUndefined: Self = StObject.set(x, "subQuery", js.undefined)
     
-    @scala.inline
-    def setTake(value: Double): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
+    inline def setTake(value: Double): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTakeUndefined: Self = StObject.set(x, "take", js.undefined)
+    inline def setTakeUndefined: Self = StObject.set(x, "take", js.undefined)
     
-    @scala.inline
-    def setUpdateEntity(value: Boolean): Self = StObject.set(x, "updateEntity", value.asInstanceOf[js.Any])
+    inline def setUpdateEntity(value: Boolean): Self = StObject.set(x, "updateEntity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateEntityUndefined: Self = StObject.set(x, "updateEntity", js.undefined)
+    inline def setUpdateEntityUndefined: Self = StObject.set(x, "updateEntity", js.undefined)
     
-    @scala.inline
-    def setUseTransaction(value: Boolean): Self = StObject.set(x, "useTransaction", value.asInstanceOf[js.Any])
+    inline def setUseTransaction(value: Boolean): Self = StObject.set(x, "useTransaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseTransactionUndefined: Self = StObject.set(x, "useTransaction", js.undefined)
+    inline def setUseTransactionUndefined: Self = StObject.set(x, "useTransaction", js.undefined)
     
-    @scala.inline
-    def setValuesSet(value: ObjectLiteral | js.Array[ObjectLiteral]): Self = StObject.set(x, "valuesSet", value.asInstanceOf[js.Any])
+    inline def setValuesSet(value: ObjectLiteral | js.Array[ObjectLiteral]): Self = StObject.set(x, "valuesSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesSetUndefined: Self = StObject.set(x, "valuesSet", js.undefined)
+    inline def setValuesSetUndefined: Self = StObject.set(x, "valuesSet", js.undefined)
     
-    @scala.inline
-    def setValuesSetVarargs(value: ObjectLiteral*): Self = StObject.set(x, "valuesSet", js.Array(value :_*))
+    inline def setValuesSetVarargs(value: ObjectLiteral*): Self = StObject.set(x, "valuesSet", js.Array(value :_*))
     
-    @scala.inline
-    def setWhereEntities(value: js.Array[ObjectLiteral]): Self = StObject.set(x, "whereEntities", value.asInstanceOf[js.Any])
+    inline def setWhereEntities(value: js.Array[ObjectLiteral]): Self = StObject.set(x, "whereEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhereEntitiesUndefined: Self = StObject.set(x, "whereEntities", js.undefined)
+    inline def setWhereEntitiesUndefined: Self = StObject.set(x, "whereEntities", js.undefined)
     
-    @scala.inline
-    def setWhereEntitiesVarargs(value: ObjectLiteral*): Self = StObject.set(x, "whereEntities", js.Array(value :_*))
+    inline def setWhereEntitiesVarargs(value: ObjectLiteral*): Self = StObject.set(x, "whereEntities", js.Array(value :_*))
     
-    @scala.inline
-    def setWheres(value: js.Array[Condition]): Self = StObject.set(x, "wheres", value.asInstanceOf[js.Any])
+    inline def setWheres(value: js.Array[Condition]): Self = StObject.set(x, "wheres", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWheresUndefined: Self = StObject.set(x, "wheres", js.undefined)
+    inline def setWheresUndefined: Self = StObject.set(x, "wheres", js.undefined)
     
-    @scala.inline
-    def setWheresVarargs(value: Condition*): Self = StObject.set(x, "wheres", js.Array(value :_*))
+    inline def setWheresVarargs(value: Condition*): Self = StObject.set(x, "wheres", js.Array(value :_*))
     
-    @scala.inline
-    def setWithDeleted(value: Boolean): Self = StObject.set(x, "withDeleted", value.asInstanceOf[js.Any])
+    inline def setWithDeleted(value: Boolean): Self = StObject.set(x, "withDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithDeletedUndefined: Self = StObject.set(x, "withDeleted", js.undefined)
+    inline def setWithDeletedUndefined: Self = StObject.set(x, "withDeleted", js.undefined)
   }
 }

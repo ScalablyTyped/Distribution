@@ -237,8 +237,7 @@ object roomBridgeStoreMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createUniqueId(matrixRoomId: String, remoteRoomId: String, delimiter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createUniqueId")(matrixRoomId.asInstanceOf[js.Any], remoteRoomId.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def createUniqueId(matrixRoomId: String, remoteRoomId: String, delimiter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createUniqueId")(matrixRoomId.asInstanceOf[js.Any], remoteRoomId.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("matrix-appservice-bridge/lib/components/room-bridge-store", "RoomBridgeStoreEntry")
@@ -261,8 +260,7 @@ object roomBridgeStoreMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def serializeEntry(entry: RoomBridgeStoreEntry): RoomStoreEntryDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeEntry")(entry.asInstanceOf[js.Any]).asInstanceOf[RoomStoreEntryDoc]
+    inline def serializeEntry(entry: RoomBridgeStoreEntry): RoomStoreEntryDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeEntry")(entry.asInstanceOf[js.Any]).asInstanceOf[RoomStoreEntryDoc]
   }
   
   trait RoomStoreEntryDoc extends StObject {
@@ -281,50 +279,36 @@ object roomBridgeStoreMod {
   }
   object RoomStoreEntryDoc {
     
-    @scala.inline
-    def apply(): RoomStoreEntryDoc = {
+    inline def apply(): RoomStoreEntryDoc = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RoomStoreEntryDoc]
     }
     
-    @scala.inline
-    implicit class RoomStoreEntryDocMutableBuilder[Self <: RoomStoreEntryDoc] (val x: Self) extends AnyVal {
+    extension [Self <: RoomStoreEntryDoc](x: Self) {
       
-      @scala.inline
-      def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMatrix(value: MatrixRoomData): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+      inline def setMatrix(value: MatrixRoomData): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
+      inline def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
       
-      @scala.inline
-      def setMatrix_id(value: String): Self = StObject.set(x, "matrix_id", value.asInstanceOf[js.Any])
+      inline def setMatrix_id(value: String): Self = StObject.set(x, "matrix_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatrix_idUndefined: Self = StObject.set(x, "matrix_id", js.undefined)
+      inline def setMatrix_idUndefined: Self = StObject.set(x, "matrix_id", js.undefined)
       
-      @scala.inline
-      def setRemote(value: Record[String, js.Any]): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: Record[String, js.Any]): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
+      inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
       
-      @scala.inline
-      def setRemote_id(value: String): Self = StObject.set(x, "remote_id", value.asInstanceOf[js.Any])
+      inline def setRemote_id(value: String): Self = StObject.set(x, "remote_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemote_idUndefined: Self = StObject.set(x, "remote_id", js.undefined)
+      inline def setRemote_idUndefined: Self = StObject.set(x, "remote_id", js.undefined)
     }
   }
 }

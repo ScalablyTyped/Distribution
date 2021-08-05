@@ -46,20 +46,16 @@ object Compose {
   }
   object ComposeButtonClickEvent {
     
-    @scala.inline
-    def apply(composeView: ComposeView, dropdown: DropdownView): ComposeButtonClickEvent = {
+    inline def apply(composeView: ComposeView, dropdown: DropdownView): ComposeButtonClickEvent = {
       val __obj = js.Dynamic.literal(composeView = composeView.asInstanceOf[js.Any], dropdown = dropdown.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComposeButtonClickEvent]
     }
     
-    @scala.inline
-    implicit class ComposeButtonClickEventMutableBuilder[Self <: ComposeButtonClickEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ComposeButtonClickEvent](x: Self) {
       
-      @scala.inline
-      def setComposeView(value: ComposeView): Self = StObject.set(x, "composeView", value.asInstanceOf[js.Any])
+      inline def setComposeView(value: ComposeView): Self = StObject.set(x, "composeView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+      inline def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,56 +79,40 @@ object Compose {
   }
   object ComposeButtonDescriptor {
     
-    @scala.inline
-    def apply(onClick: ComposeButtonClickEvent => Unit, title: String): ComposeButtonDescriptor = {
+    inline def apply(onClick: ComposeButtonClickEvent => Unit, title: String): ComposeButtonDescriptor = {
       val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComposeButtonDescriptor]
     }
     
-    @scala.inline
-    implicit class ComposeButtonDescriptorMutableBuilder[Self <: ComposeButtonDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: ComposeButtonDescriptor](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setHasDropdown(value: Boolean): Self = StObject.set(x, "hasDropdown", value.asInstanceOf[js.Any])
+      inline def setHasDropdown(value: Boolean): Self = StObject.set(x, "hasDropdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasDropdownUndefined: Self = StObject.set(x, "hasDropdown", js.undefined)
+      inline def setHasDropdownUndefined: Self = StObject.set(x, "hasDropdown", js.undefined)
       
-      @scala.inline
-      def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+      inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+      inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
       
-      @scala.inline
-      def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+      inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+      inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: ComposeButtonClickEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: ComposeButtonClickEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
+      inline def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
+      inline def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: MODIFIER | SEND_ACTION): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: MODIFIER | SEND_ACTION): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -144,8 +124,7 @@ object Compose {
   }
   object ComposeInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       openNewComposeView: () => js.Promise[ComposeView],
       registerComposeViewHandler: js.Function1[/* composeView */ ComposeView, Unit] => js.Function0[Unit]
     ): ComposeInstance = {
@@ -153,14 +132,11 @@ object Compose {
       __obj.asInstanceOf[ComposeInstance]
     }
     
-    @scala.inline
-    implicit class ComposeInstanceMutableBuilder[Self <: ComposeInstance] (val x: Self) extends AnyVal {
+    extension [Self <: ComposeInstance](x: Self) {
       
-      @scala.inline
-      def setOpenNewComposeView(value: () => js.Promise[ComposeView]): Self = StObject.set(x, "openNewComposeView", js.Any.fromFunction0(value))
+      inline def setOpenNewComposeView(value: () => js.Promise[ComposeView]): Self = StObject.set(x, "openNewComposeView", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegisterComposeViewHandler(value: js.Function1[/* composeView */ ComposeView, Unit] => js.Function0[Unit]): Self = StObject.set(x, "registerComposeViewHandler", js.Any.fromFunction1(value))
+      inline def setRegisterComposeViewHandler(value: js.Function1[/* composeView */ ComposeView, Unit] => js.Function0[Unit]): Self = StObject.set(x, "registerComposeViewHandler", js.Any.fromFunction1(value))
     }
   }
   
@@ -170,20 +146,16 @@ object Compose {
   }
   object ComposeNoticeDescriptor {
     
-    @scala.inline
-    def apply(): ComposeNoticeDescriptor = {
+    inline def apply(): ComposeNoticeDescriptor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComposeNoticeDescriptor]
     }
     
-    @scala.inline
-    implicit class ComposeNoticeDescriptorMutableBuilder[Self <: ComposeNoticeDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: ComposeNoticeDescriptor](x: Self) {
       
-      @scala.inline
-      def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
+      inline def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
+      inline def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
     }
   }
   
@@ -330,23 +302,18 @@ object Compose {
   }
   object RecipientsChangedEvent {
     
-    @scala.inline
-    def apply(bcc: Added, cc: Added, to: Added): RecipientsChangedEvent = {
+    inline def apply(bcc: Added, cc: Added, to: Added): RecipientsChangedEvent = {
       val __obj = js.Dynamic.literal(bcc = bcc.asInstanceOf[js.Any], cc = cc.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecipientsChangedEvent]
     }
     
-    @scala.inline
-    implicit class RecipientsChangedEventMutableBuilder[Self <: RecipientsChangedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: RecipientsChangedEvent](x: Self) {
       
-      @scala.inline
-      def setBcc(value: Added): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
+      inline def setBcc(value: Added): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCc(value: Added): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
+      inline def setCc(value: Added): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: Added): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Added): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -356,20 +323,16 @@ object Compose {
   }
   object SendOptions {
     
-    @scala.inline
-    def apply(): SendOptions = {
+    inline def apply(): SendOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SendOptions]
     }
     
-    @scala.inline
-    implicit class SendOptionsMutableBuilder[Self <: SendOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SendOptions](x: Self) {
       
-      @scala.inline
-      def setSendAndArchive(value: Boolean): Self = StObject.set(x, "sendAndArchive", value.asInstanceOf[js.Any])
+      inline def setSendAndArchive(value: Boolean): Self = StObject.set(x, "sendAndArchive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendAndArchiveUndefined: Self = StObject.set(x, "sendAndArchive", js.undefined)
+      inline def setSendAndArchiveUndefined: Self = StObject.set(x, "sendAndArchive", js.undefined)
     }
   }
   
@@ -381,26 +344,20 @@ object Compose {
   }
   object StatusBarDescriptor {
     
-    @scala.inline
-    def apply(): StatusBarDescriptor = {
+    inline def apply(): StatusBarDescriptor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatusBarDescriptor]
     }
     
-    @scala.inline
-    implicit class StatusBarDescriptorMutableBuilder[Self <: StatusBarDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: StatusBarDescriptor](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
+      inline def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
+      inline def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
     }
   }
   
@@ -412,8 +369,7 @@ object Compose {
   }
   object StatusBarView {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       destroyed: Boolean,
       el: HTMLElement,
@@ -424,11 +380,9 @@ object Compose {
       __obj.asInstanceOf[StatusBarView]
     }
     
-    @scala.inline
-    implicit class StatusBarViewMutableBuilder[Self <: StatusBarView] (val x: Self) extends AnyVal {
+    extension [Self <: StatusBarView](x: Self) {
       
-      @scala.inline
-      def setSetHeight(value: Double => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+      inline def setSetHeight(value: Double => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
     }
   }
 }

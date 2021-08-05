@@ -35,37 +35,27 @@ trait ParamsResourcePartnersDevicesMetadata
 }
 object ParamsResourcePartnersDevicesMetadata {
   
-  @scala.inline
-  def apply(): ParamsResourcePartnersDevicesMetadata = {
+  inline def apply(): ParamsResourcePartnersDevicesMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePartnersDevicesMetadata]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePartnersDevicesMetadataMutableBuilder[Self <: ParamsResourcePartnersDevicesMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePartnersDevicesMetadata](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setMetadataOwnerId(value: String): Self = StObject.set(x, "metadataOwnerId", value.asInstanceOf[js.Any])
+    inline def setMetadataOwnerId(value: String): Self = StObject.set(x, "metadataOwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataOwnerIdUndefined: Self = StObject.set(x, "metadataOwnerId", js.undefined)
+    inline def setMetadataOwnerIdUndefined: Self = StObject.set(x, "metadataOwnerId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaUpdateDeviceMetadataRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaUpdateDeviceMetadataRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

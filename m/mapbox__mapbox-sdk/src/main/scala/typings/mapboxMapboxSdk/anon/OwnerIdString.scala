@@ -10,16 +10,13 @@ trait OwnerIdString extends StObject {
 }
 object OwnerIdString {
   
-  @scala.inline
-  def apply(ownerId: String): OwnerIdString = {
+  inline def apply(ownerId: String): OwnerIdString = {
     val __obj = js.Dynamic.literal(ownerId = ownerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OwnerIdString]
   }
   
-  @scala.inline
-  implicit class OwnerIdStringMutableBuilder[Self <: OwnerIdString] (val x: Self) extends AnyVal {
+  extension [Self <: OwnerIdString](x: Self) {
     
-    @scala.inline
-    def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
   }
 }

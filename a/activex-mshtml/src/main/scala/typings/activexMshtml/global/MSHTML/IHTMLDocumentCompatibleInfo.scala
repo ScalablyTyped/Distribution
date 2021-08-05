@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLDocumentCompatibleInfo")
 @js.native
-class IHTMLDocumentCompatibleInfo protected ()
+/* private */ class IHTMLDocumentCompatibleInfo ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLDocumentCompatibleInfo {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IHTMLDocumentCompatibleInfo_typekey")
   var MSHTMLDotIHTMLDocumentCompatibleInfo_typekey: typings.activexMshtml.MSHTML.IHTMLDocumentCompatibleInfo = js.native
   

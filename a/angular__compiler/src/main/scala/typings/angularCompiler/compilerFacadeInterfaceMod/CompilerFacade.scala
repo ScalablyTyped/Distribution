@@ -31,8 +31,7 @@ trait CompilerFacade extends StObject {
 }
 object CompilerFacade {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     R3FactoryTarget: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof R3FactoryTarget */ js.Any,
     R3ResolvedDependencyType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof R3ResolvedDependencyType */ js.Any,
     ResourceLoader: InstantiableResourceLoader,
@@ -49,44 +48,32 @@ object CompilerFacade {
     __obj.asInstanceOf[CompilerFacade]
   }
   
-  @scala.inline
-  implicit class CompilerFacadeMutableBuilder[Self <: CompilerFacade] (val x: Self) extends AnyVal {
+  extension [Self <: CompilerFacade](x: Self) {
     
-    @scala.inline
-    def setCompileComponent(value: (CoreEnvironment, String, R3ComponentMetadataFacade) => js.Any): Self = StObject.set(x, "compileComponent", js.Any.fromFunction3(value))
+    inline def setCompileComponent(value: (CoreEnvironment, String, R3ComponentMetadataFacade) => js.Any): Self = StObject.set(x, "compileComponent", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCompileDirective(value: (CoreEnvironment, String, R3DirectiveMetadataFacade) => js.Any): Self = StObject.set(x, "compileDirective", js.Any.fromFunction3(value))
+    inline def setCompileDirective(value: (CoreEnvironment, String, R3DirectiveMetadataFacade) => js.Any): Self = StObject.set(x, "compileDirective", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCompileFactory(value: (CoreEnvironment, String, R3FactoryDefMetadataFacade) => js.Any): Self = StObject.set(x, "compileFactory", js.Any.fromFunction3(value))
+    inline def setCompileFactory(value: (CoreEnvironment, String, R3FactoryDefMetadataFacade) => js.Any): Self = StObject.set(x, "compileFactory", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCompileInjectable(value: (CoreEnvironment, String, R3InjectableMetadataFacade) => js.Any): Self = StObject.set(x, "compileInjectable", js.Any.fromFunction3(value))
+    inline def setCompileInjectable(value: (CoreEnvironment, String, R3InjectableMetadataFacade) => js.Any): Self = StObject.set(x, "compileInjectable", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCompileInjector(value: (CoreEnvironment, String, R3InjectorMetadataFacade) => js.Any): Self = StObject.set(x, "compileInjector", js.Any.fromFunction3(value))
+    inline def setCompileInjector(value: (CoreEnvironment, String, R3InjectorMetadataFacade) => js.Any): Self = StObject.set(x, "compileInjector", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCompileNgModule(value: (CoreEnvironment, String, R3NgModuleMetadataFacade) => js.Any): Self = StObject.set(x, "compileNgModule", js.Any.fromFunction3(value))
+    inline def setCompileNgModule(value: (CoreEnvironment, String, R3NgModuleMetadataFacade) => js.Any): Self = StObject.set(x, "compileNgModule", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCompilePipe(value: (CoreEnvironment, String, R3PipeMetadataFacade) => js.Any): Self = StObject.set(x, "compilePipe", js.Any.fromFunction3(value))
+    inline def setCompilePipe(value: (CoreEnvironment, String, R3PipeMetadataFacade) => js.Any): Self = StObject.set(x, "compilePipe", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateParseSourceSpan(value: (String, String, String) => ParseSourceSpan): Self = StObject.set(x, "createParseSourceSpan", js.Any.fromFunction3(value))
+    inline def setCreateParseSourceSpan(value: (String, String, String) => ParseSourceSpan): Self = StObject.set(x, "createParseSourceSpan", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setR3FactoryTarget(
+    inline def setR3FactoryTarget(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof R3FactoryTarget */ js.Any
     ): Self = StObject.set(x, "R3FactoryTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR3ResolvedDependencyType(
+    inline def setR3ResolvedDependencyType(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof R3ResolvedDependencyType */ js.Any
     ): Self = StObject.set(x, "R3ResolvedDependencyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceLoader(value: InstantiableResourceLoader): Self = StObject.set(x, "ResourceLoader", value.asInstanceOf[js.Any])
+    inline def setResourceLoader(value: InstantiableResourceLoader): Self = StObject.set(x, "ResourceLoader", value.asInstanceOf[js.Any])
   }
 }

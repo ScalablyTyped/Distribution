@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.XMLMapping")
 @js.native
-class XMLMapping protected ()
+/* private */ class XMLMapping ()
   extends StObject
      with typings.activexWord.Word.XMLMapping

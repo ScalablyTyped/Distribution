@@ -13,19 +13,15 @@ trait ServiceSpecification extends StObject {
 }
 object ServiceSpecification {
   
-  @scala.inline
-  def apply(): ServiceSpecification = {
+  inline def apply(): ServiceSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceSpecification]
   }
   
-  @scala.inline
-  implicit class ServiceSpecificationMutableBuilder[Self <: ServiceSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceSpecification](x: Self) {
     
-    @scala.inline
-    def setEC2Specification(value: EC2Specification): Self = StObject.set(x, "EC2Specification", value.asInstanceOf[js.Any])
+    inline def setEC2Specification(value: EC2Specification): Self = StObject.set(x, "EC2Specification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEC2SpecificationUndefined: Self = StObject.set(x, "EC2Specification", js.undefined)
+    inline def setEC2SpecificationUndefined: Self = StObject.set(x, "EC2Specification", js.undefined)
   }
 }

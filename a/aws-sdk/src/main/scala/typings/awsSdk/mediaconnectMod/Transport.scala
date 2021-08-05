@@ -43,55 +43,39 @@ trait Transport extends StObject {
 }
 object Transport {
   
-  @scala.inline
-  def apply(Protocol: Protocol): Transport = {
+  inline def apply(Protocol: Protocol): Transport = {
     val __obj = js.Dynamic.literal(Protocol = Protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transport]
   }
   
-  @scala.inline
-  implicit class TransportMutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
+  extension [Self <: Transport](x: Self) {
     
-    @scala.inline
-    def setCidrAllowList(value: listOfString): Self = StObject.set(x, "CidrAllowList", value.asInstanceOf[js.Any])
+    inline def setCidrAllowList(value: listOfString): Self = StObject.set(x, "CidrAllowList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrAllowListUndefined: Self = StObject.set(x, "CidrAllowList", js.undefined)
+    inline def setCidrAllowListUndefined: Self = StObject.set(x, "CidrAllowList", js.undefined)
     
-    @scala.inline
-    def setCidrAllowListVarargs(value: string*): Self = StObject.set(x, "CidrAllowList", js.Array(value :_*))
+    inline def setCidrAllowListVarargs(value: string*): Self = StObject.set(x, "CidrAllowList", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxBitrate(value: integer): Self = StObject.set(x, "MaxBitrate", value.asInstanceOf[js.Any])
+    inline def setMaxBitrate(value: integer): Self = StObject.set(x, "MaxBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBitrateUndefined: Self = StObject.set(x, "MaxBitrate", js.undefined)
+    inline def setMaxBitrateUndefined: Self = StObject.set(x, "MaxBitrate", js.undefined)
     
-    @scala.inline
-    def setMaxLatency(value: integer): Self = StObject.set(x, "MaxLatency", value.asInstanceOf[js.Any])
+    inline def setMaxLatency(value: integer): Self = StObject.set(x, "MaxLatency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLatencyUndefined: Self = StObject.set(x, "MaxLatency", js.undefined)
+    inline def setMaxLatencyUndefined: Self = StObject.set(x, "MaxLatency", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteId(value: string): Self = StObject.set(x, "RemoteId", value.asInstanceOf[js.Any])
+    inline def setRemoteId(value: string): Self = StObject.set(x, "RemoteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteIdUndefined: Self = StObject.set(x, "RemoteId", js.undefined)
+    inline def setRemoteIdUndefined: Self = StObject.set(x, "RemoteId", js.undefined)
     
-    @scala.inline
-    def setSmoothingLatency(value: integer): Self = StObject.set(x, "SmoothingLatency", value.asInstanceOf[js.Any])
+    inline def setSmoothingLatency(value: integer): Self = StObject.set(x, "SmoothingLatency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothingLatencyUndefined: Self = StObject.set(x, "SmoothingLatency", js.undefined)
+    inline def setSmoothingLatencyUndefined: Self = StObject.set(x, "SmoothingLatency", js.undefined)
     
-    @scala.inline
-    def setStreamId(value: string): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: string): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamIdUndefined: Self = StObject.set(x, "StreamId", js.undefined)
+    inline def setStreamIdUndefined: Self = StObject.set(x, "StreamId", js.undefined)
   }
 }

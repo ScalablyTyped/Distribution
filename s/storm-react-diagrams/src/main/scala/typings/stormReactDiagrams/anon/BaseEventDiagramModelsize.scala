@@ -21,8 +21,7 @@ trait BaseEventDiagramModelsize extends StObject {
 }
 object BaseEventDiagramModelsize {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     entity: BaseEntity[BaseListener[js.Any]],
     firing: Boolean,
     id: String,
@@ -33,22 +32,16 @@ object BaseEventDiagramModelsize {
     __obj.asInstanceOf[BaseEventDiagramModelsize]
   }
   
-  @scala.inline
-  implicit class BaseEventDiagramModelsizeMutableBuilder[Self <: BaseEventDiagramModelsize] (val x: Self) extends AnyVal {
+  extension [Self <: BaseEventDiagramModelsize](x: Self) {
     
-    @scala.inline
-    def setEntity(value: BaseEntity[BaseListener[js.Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: BaseEntity[BaseListener[js.Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])
+    inline def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopPropagation(value: () => js.Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => js.Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
   }
 }

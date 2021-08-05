@@ -25,25 +25,19 @@ trait HorizontalPodAutoscalerBehavior extends StObject {
 }
 object HorizontalPodAutoscalerBehavior {
   
-  @scala.inline
-  def apply(): HorizontalPodAutoscalerBehavior = {
+  inline def apply(): HorizontalPodAutoscalerBehavior = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HorizontalPodAutoscalerBehavior]
   }
   
-  @scala.inline
-  implicit class HorizontalPodAutoscalerBehaviorMutableBuilder[Self <: HorizontalPodAutoscalerBehavior] (val x: Self) extends AnyVal {
+  extension [Self <: HorizontalPodAutoscalerBehavior](x: Self) {
     
-    @scala.inline
-    def setScaleDown(value: Input[HPAScalingRules]): Self = StObject.set(x, "scaleDown", value.asInstanceOf[js.Any])
+    inline def setScaleDown(value: Input[HPAScalingRules]): Self = StObject.set(x, "scaleDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleDownUndefined: Self = StObject.set(x, "scaleDown", js.undefined)
+    inline def setScaleDownUndefined: Self = StObject.set(x, "scaleDown", js.undefined)
     
-    @scala.inline
-    def setScaleUp(value: Input[HPAScalingRules]): Self = StObject.set(x, "scaleUp", value.asInstanceOf[js.Any])
+    inline def setScaleUp(value: Input[HPAScalingRules]): Self = StObject.set(x, "scaleUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUpUndefined: Self = StObject.set(x, "scaleUp", js.undefined)
+    inline def setScaleUpUndefined: Self = StObject.set(x, "scaleUp", js.undefined)
   }
 }

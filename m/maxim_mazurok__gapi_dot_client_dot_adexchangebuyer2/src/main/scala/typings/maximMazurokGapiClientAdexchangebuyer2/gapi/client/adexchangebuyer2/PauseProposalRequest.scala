@@ -11,19 +11,15 @@ trait PauseProposalRequest extends StObject {
 }
 object PauseProposalRequest {
   
-  @scala.inline
-  def apply(): PauseProposalRequest = {
+  inline def apply(): PauseProposalRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PauseProposalRequest]
   }
   
-  @scala.inline
-  implicit class PauseProposalRequestMutableBuilder[Self <: PauseProposalRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PauseProposalRequest](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

@@ -38,37 +38,27 @@ trait ITextboxOptions
 }
 object ITextboxOptions {
   
-  @scala.inline
-  def apply(): ITextboxOptions = {
+  inline def apply(): ITextboxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITextboxOptions]
   }
   
-  @scala.inline
-  implicit class ITextboxOptionsMutableBuilder[Self <: ITextboxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ITextboxOptions](x: Self) {
     
-    @scala.inline
-    def setDynamicMinWidth(value: Double): Self = StObject.set(x, "dynamicMinWidth", value.asInstanceOf[js.Any])
+    inline def setDynamicMinWidth(value: Double): Self = StObject.set(x, "dynamicMinWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicMinWidthUndefined: Self = StObject.set(x, "dynamicMinWidth", js.undefined)
+    inline def setDynamicMinWidthUndefined: Self = StObject.set(x, "dynamicMinWidth", js.undefined)
     
-    @scala.inline
-    def setIsWrapping(value: Boolean): Self = StObject.set(x, "isWrapping", value.asInstanceOf[js.Any])
+    inline def setIsWrapping(value: Boolean): Self = StObject.set(x, "isWrapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWrappingUndefined: Self = StObject.set(x, "isWrapping", js.undefined)
+    inline def setIsWrappingUndefined: Self = StObject.set(x, "isWrapping", js.undefined)
     
-    @scala.inline
-    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    @scala.inline
-    def setSplitByGrapheme(value: Boolean): Self = StObject.set(x, "splitByGrapheme", value.asInstanceOf[js.Any])
+    inline def setSplitByGrapheme(value: Boolean): Self = StObject.set(x, "splitByGrapheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitByGraphemeUndefined: Self = StObject.set(x, "splitByGrapheme", js.undefined)
+    inline def setSplitByGraphemeUndefined: Self = StObject.set(x, "splitByGrapheme", js.undefined)
   }
 }

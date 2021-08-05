@@ -18,19 +18,15 @@ trait CreateLogSubscriptionRequest extends StObject {
 }
 object CreateLogSubscriptionRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId, LogGroupName: LogGroupName): CreateLogSubscriptionRequest = {
+  inline def apply(DirectoryId: DirectoryId, LogGroupName: LogGroupName): CreateLogSubscriptionRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], LogGroupName = LogGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLogSubscriptionRequest]
   }
   
-  @scala.inline
-  implicit class CreateLogSubscriptionRequestMutableBuilder[Self <: CreateLogSubscriptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLogSubscriptionRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
   }
 }

@@ -29,31 +29,23 @@ trait BuildingSublayerProperties extends StObject {
 }
 object BuildingSublayerProperties {
   
-  @scala.inline
-  def apply(): BuildingSublayerProperties = {
+  inline def apply(): BuildingSublayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildingSublayerProperties]
   }
   
-  @scala.inline
-  implicit class BuildingSublayerPropertiesMutableBuilder[Self <: BuildingSublayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BuildingSublayerProperties](x: Self) {
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

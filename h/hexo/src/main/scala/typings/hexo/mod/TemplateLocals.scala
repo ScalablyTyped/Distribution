@@ -56,8 +56,7 @@ trait TemplateLocals extends StObject {
 }
 object TemplateLocals {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _underscore: UnderscoreStatic,
     config: HexoConfig,
     env: Args,
@@ -74,39 +73,28 @@ object TemplateLocals {
     __obj.asInstanceOf[TemplateLocals]
   }
   
-  @scala.inline
-  implicit class TemplateLocalsMutableBuilder[Self <: TemplateLocals] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateLocals](x: Self) {
     
-    @scala.inline
-    def setConfig(value: HexoConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: HexoConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnv(value: Args): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: Args): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(
+    inline def setPage(
       value: typings.hexo.mod.Locals.Post | Page | Category | Tag | IndexPage | ArchivePage | CategoryPage | TagPage
     ): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSite(value: js.Any): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+    inline def setSite(value: js.Any): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: HexoConfig): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: HexoConfig): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView_dir(value: String): Self = StObject.set(x, "view_dir", value.asInstanceOf[js.Any])
+    inline def setView_dir(value: String): Self = StObject.set(x, "view_dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_underscore(value: UnderscoreStatic): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
+    inline def set_underscore(value: UnderscoreStatic): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
   }
 }

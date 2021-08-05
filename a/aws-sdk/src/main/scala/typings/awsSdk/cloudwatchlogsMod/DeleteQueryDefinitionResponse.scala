@@ -13,19 +13,15 @@ trait DeleteQueryDefinitionResponse extends StObject {
 }
 object DeleteQueryDefinitionResponse {
   
-  @scala.inline
-  def apply(): DeleteQueryDefinitionResponse = {
+  inline def apply(): DeleteQueryDefinitionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteQueryDefinitionResponse]
   }
   
-  @scala.inline
-  implicit class DeleteQueryDefinitionResponseMutableBuilder[Self <: DeleteQueryDefinitionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteQueryDefinitionResponse](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Success): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Success): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

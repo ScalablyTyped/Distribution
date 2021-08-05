@@ -89,67 +89,47 @@ trait WorksheetUpdateData extends StObject {
 }
 object WorksheetUpdateData {
   
-  @scala.inline
-  def apply(): WorksheetUpdateData = {
+  inline def apply(): WorksheetUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorksheetUpdateData]
   }
   
-  @scala.inline
-  implicit class WorksheetUpdateDataMutableBuilder[Self <: WorksheetUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: WorksheetUpdateData](x: Self) {
     
-    @scala.inline
-    def setEnableCalculation(value: Boolean): Self = StObject.set(x, "enableCalculation", value.asInstanceOf[js.Any])
+    inline def setEnableCalculation(value: Boolean): Self = StObject.set(x, "enableCalculation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableCalculationUndefined: Self = StObject.set(x, "enableCalculation", js.undefined)
+    inline def setEnableCalculationUndefined: Self = StObject.set(x, "enableCalculation", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPageLayout(value: PageLayoutUpdateData): Self = StObject.set(x, "pageLayout", value.asInstanceOf[js.Any])
+    inline def setPageLayout(value: PageLayoutUpdateData): Self = StObject.set(x, "pageLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageLayoutUndefined: Self = StObject.set(x, "pageLayout", js.undefined)
+    inline def setPageLayoutUndefined: Self = StObject.set(x, "pageLayout", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setShowGridlines(value: Boolean): Self = StObject.set(x, "showGridlines", value.asInstanceOf[js.Any])
+    inline def setShowGridlines(value: Boolean): Self = StObject.set(x, "showGridlines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowGridlinesUndefined: Self = StObject.set(x, "showGridlines", js.undefined)
+    inline def setShowGridlinesUndefined: Self = StObject.set(x, "showGridlines", js.undefined)
     
-    @scala.inline
-    def setShowHeadings(value: Boolean): Self = StObject.set(x, "showHeadings", value.asInstanceOf[js.Any])
+    inline def setShowHeadings(value: Boolean): Self = StObject.set(x, "showHeadings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowHeadingsUndefined: Self = StObject.set(x, "showHeadings", js.undefined)
+    inline def setShowHeadingsUndefined: Self = StObject.set(x, "showHeadings", js.undefined)
     
-    @scala.inline
-    def setStandardWidth(value: Double): Self = StObject.set(x, "standardWidth", value.asInstanceOf[js.Any])
+    inline def setStandardWidth(value: Double): Self = StObject.set(x, "standardWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardWidthUndefined: Self = StObject.set(x, "standardWidth", js.undefined)
+    inline def setStandardWidthUndefined: Self = StObject.set(x, "standardWidth", js.undefined)
     
-    @scala.inline
-    def setTabColor(value: String): Self = StObject.set(x, "tabColor", value.asInstanceOf[js.Any])
+    inline def setTabColor(value: String): Self = StObject.set(x, "tabColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabColorUndefined: Self = StObject.set(x, "tabColor", js.undefined)
+    inline def setTabColorUndefined: Self = StObject.set(x, "tabColor", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: SheetVisibility | Visible | Hidden | VeryHidden): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: SheetVisibility | Visible | Hidden | VeryHidden): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

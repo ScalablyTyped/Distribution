@@ -17,8 +17,7 @@ trait SourceReference
 }
 object SourceReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     character: ModelToObject[Double] | Double,
     fileName: ModelToObject[String] | String,
     line: ModelToObject[Double] | Double
@@ -27,25 +26,18 @@ object SourceReference {
     __obj.asInstanceOf[SourceReference]
   }
   
-  @scala.inline
-  implicit class SourceReferenceMutableBuilder[Self <: SourceReference] (val x: Self) extends AnyVal {
+  extension [Self <: SourceReference](x: Self) {
     
-    @scala.inline
-    def setCharacter(value: ModelToObject[Double] | Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+    inline def setCharacter(value: ModelToObject[Double] | Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "character", js.Array(value :_*))
+    inline def setCharacterVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "character", js.Array(value :_*))
     
-    @scala.inline
-    def setFileName(value: ModelToObject[String] | String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: ModelToObject[String] | String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "fileName", js.Array(value :_*))
+    inline def setFileNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "fileName", js.Array(value :_*))
     
-    @scala.inline
-    def setLine(value: ModelToObject[Double] | Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: ModelToObject[Double] | Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "line", js.Array(value :_*))
+    inline def setLineVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "line", js.Array(value :_*))
   }
 }

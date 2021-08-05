@@ -14,8 +14,7 @@ trait IncomingWebhooks[T] extends StObject {
 }
 object IncomingWebhooks {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     addResponse: IncomingWebhookOptions[T] => Unit,
     calls: js.Array[IncomingWebhookCall[T]],
     reset: () => Unit
@@ -24,19 +23,14 @@ object IncomingWebhooks {
     __obj.asInstanceOf[IncomingWebhooks[T]]
   }
   
-  @scala.inline
-  implicit class IncomingWebhooksMutableBuilder[Self <: IncomingWebhooks[?], T] (val x: Self & IncomingWebhooks[T]) extends AnyVal {
+  extension [Self <: IncomingWebhooks[?], T](x: Self & IncomingWebhooks[T]) {
     
-    @scala.inline
-    def setAddResponse(value: IncomingWebhookOptions[T] => Unit): Self = StObject.set(x, "addResponse", js.Any.fromFunction1(value))
+    inline def setAddResponse(value: IncomingWebhookOptions[T] => Unit): Self = StObject.set(x, "addResponse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalls(value: js.Array[IncomingWebhookCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
+    inline def setCalls(value: js.Array[IncomingWebhookCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallsVarargs(value: IncomingWebhookCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
+    inline def setCallsVarargs(value: IncomingWebhookCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

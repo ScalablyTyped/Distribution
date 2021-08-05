@@ -10,8 +10,7 @@ trait ScaleAnimation
      with IScaleAnimation
 object ScaleAnimation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     control1: Point,
     control2: Point,
     delay: Double,

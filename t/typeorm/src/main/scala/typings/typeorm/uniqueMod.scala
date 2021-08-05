@@ -13,14 +13,10 @@ object uniqueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Unique(fields: js.Array[String]): ClassDecorator & PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Unique")(fields.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator & PropertyDecorator]
-  @scala.inline
-  def Unique(fields: js.Function1[/* object */ js.UndefOr[js.Any], js.Array[js.Any] | StringDictionary[Double]]): ClassDecorator & PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Unique")(fields.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator & PropertyDecorator]
-  @scala.inline
-  def Unique(name: String, fields: js.Array[String]): ClassDecorator & PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Unique")(name.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[ClassDecorator & PropertyDecorator]
-  @scala.inline
-  def Unique(
+  inline def Unique(fields: js.Array[String]): ClassDecorator & PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Unique")(fields.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator & PropertyDecorator]
+  inline def Unique(fields: js.Function1[/* object */ js.UndefOr[js.Any], js.Array[js.Any] | StringDictionary[Double]]): ClassDecorator & PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Unique")(fields.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator & PropertyDecorator]
+  inline def Unique(name: String, fields: js.Array[String]): ClassDecorator & PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Unique")(name.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[ClassDecorator & PropertyDecorator]
+  inline def Unique(
     name: String,
     fields: js.Function1[/* object */ js.UndefOr[js.Any], js.Array[js.Any] | StringDictionary[Double]]
   ): ClassDecorator & PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Unique")(name.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[ClassDecorator & PropertyDecorator]

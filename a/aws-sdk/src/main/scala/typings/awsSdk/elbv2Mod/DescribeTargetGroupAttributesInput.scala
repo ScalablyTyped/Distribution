@@ -13,16 +13,13 @@ trait DescribeTargetGroupAttributesInput extends StObject {
 }
 object DescribeTargetGroupAttributesInput {
   
-  @scala.inline
-  def apply(TargetGroupArn: TargetGroupArn): DescribeTargetGroupAttributesInput = {
+  inline def apply(TargetGroupArn: TargetGroupArn): DescribeTargetGroupAttributesInput = {
     val __obj = js.Dynamic.literal(TargetGroupArn = TargetGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTargetGroupAttributesInput]
   }
   
-  @scala.inline
-  implicit class DescribeTargetGroupAttributesInputMutableBuilder[Self <: DescribeTargetGroupAttributesInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTargetGroupAttributesInput](x: Self) {
     
-    @scala.inline
-    def setTargetGroupArn(value: TargetGroupArn): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
+    inline def setTargetGroupArn(value: TargetGroupArn): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
   }
 }

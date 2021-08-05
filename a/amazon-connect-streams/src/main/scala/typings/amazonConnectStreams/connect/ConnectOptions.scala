@@ -13,19 +13,15 @@ trait ConnectOptions
 }
 object ConnectOptions {
   
-  @scala.inline
-  def apply(): ConnectOptions = {
+  inline def apply(): ConnectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectOptions]
   }
   
-  @scala.inline
-  implicit class ConnectOptionsMutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectOptions](x: Self) {
     
-    @scala.inline
-    def setQueueARN(value: String): Self = StObject.set(x, "queueARN", value.asInstanceOf[js.Any])
+    inline def setQueueARN(value: String): Self = StObject.set(x, "queueARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueARNUndefined: Self = StObject.set(x, "queueARN", js.undefined)
+    inline def setQueueARNUndefined: Self = StObject.set(x, "queueARN", js.undefined)
   }
 }

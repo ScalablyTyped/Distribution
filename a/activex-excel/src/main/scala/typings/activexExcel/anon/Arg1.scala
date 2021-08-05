@@ -16,25 +16,19 @@ trait Arg1 extends StObject {
 }
 object Arg1 {
   
-  @scala.inline
-  def apply(Arg1: Double, Arg2: Double, Cancel: Boolean, ElementID: Double): Arg1 = {
+  inline def apply(Arg1: Double, Arg2: Double, Cancel: Boolean, ElementID: Double): Arg1 = {
     val __obj = js.Dynamic.literal(Arg1 = Arg1.asInstanceOf[js.Any], Arg2 = Arg2.asInstanceOf[js.Any], Cancel = Cancel.asInstanceOf[js.Any], ElementID = ElementID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arg1]
   }
   
-  @scala.inline
-  implicit class Arg1MutableBuilder[Self <: Arg1] (val x: Self) extends AnyVal {
+  extension [Self <: Arg1](x: Self) {
     
-    @scala.inline
-    def setArg1(value: Double): Self = StObject.set(x, "Arg1", value.asInstanceOf[js.Any])
+    inline def setArg1(value: Double): Self = StObject.set(x, "Arg1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArg2(value: Double): Self = StObject.set(x, "Arg2", value.asInstanceOf[js.Any])
+    inline def setArg2(value: Double): Self = StObject.set(x, "Arg2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementID(value: Double): Self = StObject.set(x, "ElementID", value.asInstanceOf[js.Any])
+    inline def setElementID(value: Double): Self = StObject.set(x, "ElementID", value.asInstanceOf[js.Any])
   }
 }

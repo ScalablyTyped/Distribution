@@ -13,16 +13,13 @@ trait DeleteContainerServiceRequest extends StObject {
 }
 object DeleteContainerServiceRequest {
   
-  @scala.inline
-  def apply(serviceName: ContainerServiceName): DeleteContainerServiceRequest = {
+  inline def apply(serviceName: ContainerServiceName): DeleteContainerServiceRequest = {
     val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteContainerServiceRequest]
   }
   
-  @scala.inline
-  implicit class DeleteContainerServiceRequestMutableBuilder[Self <: DeleteContainerServiceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteContainerServiceRequest](x: Self) {
     
-    @scala.inline
-    def setServiceName(value: ContainerServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: ContainerServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
   }
 }

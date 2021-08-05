@@ -14,25 +14,19 @@ trait ProjectSettings extends StObject {
 }
 object ProjectSettings {
   
-  @scala.inline
-  def apply(): ProjectSettings = {
+  inline def apply(): ProjectSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectSettings]
   }
   
-  @scala.inline
-  implicit class ProjectSettingsMutableBuilder[Self <: ProjectSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectSettings](x: Self) {
     
-    @scala.inline
-    def setDefaultBucket(value: String): Self = StObject.set(x, "defaultBucket", value.asInstanceOf[js.Any])
+    inline def setDefaultBucket(value: String): Self = StObject.set(x, "defaultBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultBucketUndefined: Self = StObject.set(x, "defaultBucket", js.undefined)
+    inline def setDefaultBucketUndefined: Self = StObject.set(x, "defaultBucket", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

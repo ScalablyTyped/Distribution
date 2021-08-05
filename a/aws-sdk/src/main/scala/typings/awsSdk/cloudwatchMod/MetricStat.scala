@@ -28,28 +28,21 @@ trait MetricStat extends StObject {
 }
 object MetricStat {
   
-  @scala.inline
-  def apply(Metric: Metric, Period: Period, Stat: Stat): MetricStat = {
+  inline def apply(Metric: Metric, Period: Period, Stat: Stat): MetricStat = {
     val __obj = js.Dynamic.literal(Metric = Metric.asInstanceOf[js.Any], Period = Period.asInstanceOf[js.Any], Stat = Stat.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricStat]
   }
   
-  @scala.inline
-  implicit class MetricStatMutableBuilder[Self <: MetricStat] (val x: Self) extends AnyVal {
+  extension [Self <: MetricStat](x: Self) {
     
-    @scala.inline
-    def setMetric(value: Metric): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: Metric): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStat(value: Stat): Self = StObject.set(x, "Stat", value.asInstanceOf[js.Any])
+    inline def setStat(value: Stat): Self = StObject.set(x, "Stat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit(value: StandardUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: StandardUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

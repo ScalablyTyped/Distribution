@@ -96,53 +96,36 @@ object remoteMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def addFetch(repo: Repository, remote: String, refspec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addFetch")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], refspec.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def addFetch(repo: Repository, remote: String, refspec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addFetch")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], refspec.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def addPush(repo: Repository, remote: String, refspec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addPush")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], refspec.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def addPush(repo: Repository, remote: String, refspec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addPush")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], refspec.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def create(repo: Repository, name: String, url: String): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
+    inline def create(repo: Repository, name: String, url: String): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
     
-    @scala.inline
-    def createAnonymous(repo: Repository, url: String): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAnonymous")(repo.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
+    inline def createAnonymous(repo: Repository, url: String): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAnonymous")(repo.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
     
-    @scala.inline
-    def createDetached(url: String): js.Promise[Remote] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDetached")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Remote]]
+    inline def createDetached(url: String): js.Promise[Remote] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDetached")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Remote]]
     
-    @scala.inline
-    def createWithFetchspec(repo: Repository, name: String, url: String, fetch: String): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithFetchspec")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
+    inline def createWithFetchspec(repo: Repository, name: String, url: String, fetch: String): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithFetchspec")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
     
-    @scala.inline
-    def delete(repo: Repository, name: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def delete(repo: Repository, name: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @scala.inline
-    def initCallbacks(opts: RemoteCallbacks, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initCallbacks")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def initCallbacks(opts: RemoteCallbacks, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initCallbacks")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def isValidName(remoteName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidName")(remoteName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValidName(remoteName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidName")(remoteName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def list(repo: Repository): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
+    inline def list(repo: Repository): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
     
-    @scala.inline
-    def lookup(repo: Repository, name: String): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
-    @scala.inline
-    def lookup(repo: Repository, name: String, callback: js.Function): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
-    @scala.inline
-    def lookup(repo: Repository, name: Remote): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
-    @scala.inline
-    def lookup(repo: Repository, name: Remote, callback: js.Function): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
+    inline def lookup(repo: Repository, name: String): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
+    inline def lookup(repo: Repository, name: String, callback: js.Function): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
+    inline def lookup(repo: Repository, name: Remote): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
+    inline def lookup(repo: Repository, name: Remote, callback: js.Function): js.Promise[Remote] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remote]]
     
-    @scala.inline
-    def setAutotag(repo: Repository, remote: String, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setAutotag")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def setAutotag(repo: Repository, remote: String, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setAutotag")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def setPushurl(repo: Repository, remote: String, url: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setPushurl")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def setPushurl(repo: Repository, remote: String, url: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setPushurl")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def setUrl(repo: Repository, remote: String, url: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setUrl")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def setUrl(repo: Repository, remote: String, url: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setUrl")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`
@@ -153,17 +136,13 @@ object remoteMod {
     trait AUTOTAG_OPTION extends StObject
     object AUTOTAG_OPTION {
       
-      @scala.inline
-      def DOWNLOAD_TAGS_ALL: `3` = 3.asInstanceOf[`3`]
+      inline def DOWNLOAD_TAGS_ALL: `3` = 3.asInstanceOf[`3`]
       
-      @scala.inline
-      def DOWNLOAD_TAGS_AUTO: `1` = 1.asInstanceOf[`1`]
+      inline def DOWNLOAD_TAGS_AUTO: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def DOWNLOAD_TAGS_NONE: `2` = 2.asInstanceOf[`2`]
+      inline def DOWNLOAD_TAGS_NONE: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def DOWNLOAD_TAGS_UNSPECIFIED: `0` = 0.asInstanceOf[`0`]
+      inline def DOWNLOAD_TAGS_UNSPECIFIED: `0` = 0.asInstanceOf[`0`]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -174,14 +153,11 @@ object remoteMod {
     trait COMPLETION_TYPE extends StObject
     object COMPLETION_TYPE {
       
-      @scala.inline
-      def COMPLETION_DOWNLOAD: `0` = 0.asInstanceOf[`0`]
+      inline def COMPLETION_DOWNLOAD: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def COMPLETION_ERROR: `2` = 2.asInstanceOf[`2`]
+      inline def COMPLETION_ERROR: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def COMPLETION_INDEXING: `1` = 1.asInstanceOf[`1`]
+      inline def COMPLETION_INDEXING: `1` = 1.asInstanceOf[`1`]
     }
   }
 }

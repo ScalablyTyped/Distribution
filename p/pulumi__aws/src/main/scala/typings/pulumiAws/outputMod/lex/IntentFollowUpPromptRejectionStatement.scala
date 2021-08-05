@@ -22,25 +22,19 @@ trait IntentFollowUpPromptRejectionStatement extends StObject {
 }
 object IntentFollowUpPromptRejectionStatement {
   
-  @scala.inline
-  def apply(messages: js.Array[IntentFollowUpPromptRejectionStatementMessage]): IntentFollowUpPromptRejectionStatement = {
+  inline def apply(messages: js.Array[IntentFollowUpPromptRejectionStatementMessage]): IntentFollowUpPromptRejectionStatement = {
     val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntentFollowUpPromptRejectionStatement]
   }
   
-  @scala.inline
-  implicit class IntentFollowUpPromptRejectionStatementMutableBuilder[Self <: IntentFollowUpPromptRejectionStatement] (val x: Self) extends AnyVal {
+  extension [Self <: IntentFollowUpPromptRejectionStatement](x: Self) {
     
-    @scala.inline
-    def setMessages(value: js.Array[IntentFollowUpPromptRejectionStatementMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[IntentFollowUpPromptRejectionStatementMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesVarargs(value: IntentFollowUpPromptRejectionStatementMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: IntentFollowUpPromptRejectionStatementMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setResponseCard(value: String): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
+    inline def setResponseCard(value: String): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
+    inline def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
   }
 }

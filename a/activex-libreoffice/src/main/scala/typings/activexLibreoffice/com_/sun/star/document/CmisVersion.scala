@@ -22,25 +22,19 @@ trait CmisVersion extends StObject {
 }
 object CmisVersion {
   
-  @scala.inline
-  def apply(Author: String, Comment: String, Id: String, TimeStamp: DateTime): CmisVersion = {
+  inline def apply(Author: String, Comment: String, Id: String, TimeStamp: DateTime): CmisVersion = {
     val __obj = js.Dynamic.literal(Author = Author.asInstanceOf[js.Any], Comment = Comment.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], TimeStamp = TimeStamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[CmisVersion]
   }
   
-  @scala.inline
-  implicit class CmisVersionMutableBuilder[Self <: CmisVersion] (val x: Self) extends AnyVal {
+  extension [Self <: CmisVersion](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStamp(value: DateTime): Self = StObject.set(x, "TimeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: DateTime): Self = StObject.set(x, "TimeStamp", value.asInstanceOf[js.Any])
   }
 }

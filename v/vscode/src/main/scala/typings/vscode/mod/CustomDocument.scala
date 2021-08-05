@@ -27,19 +27,15 @@ trait CustomDocument extends StObject {
 }
 object CustomDocument {
   
-  @scala.inline
-  def apply(dispose: () => Unit, uri: Uri): CustomDocument = {
+  inline def apply(dispose: () => Unit, uri: Uri): CustomDocument = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomDocument]
   }
   
-  @scala.inline
-  implicit class CustomDocumentMutableBuilder[Self <: CustomDocument] (val x: Self) extends AnyVal {
+  extension [Self <: CustomDocument](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

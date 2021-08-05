@@ -13,19 +13,15 @@ trait ReposGetCollaboratorPermissionLevelResponseData extends StObject {
 }
 object ReposGetCollaboratorPermissionLevelResponseData {
   
-  @scala.inline
-  def apply(permission: String, user: Avatarurl): ReposGetCollaboratorPermissionLevelResponseData = {
+  inline def apply(permission: String, user: Avatarurl): ReposGetCollaboratorPermissionLevelResponseData = {
     val __obj = js.Dynamic.literal(permission = permission.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposGetCollaboratorPermissionLevelResponseData]
   }
   
-  @scala.inline
-  implicit class ReposGetCollaboratorPermissionLevelResponseDataMutableBuilder[Self <: ReposGetCollaboratorPermissionLevelResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetCollaboratorPermissionLevelResponseData](x: Self) {
     
-    @scala.inline
-    def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

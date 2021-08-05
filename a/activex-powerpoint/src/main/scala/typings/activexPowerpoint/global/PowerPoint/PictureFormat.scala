@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.PictureFormat")
 @js.native
-class PictureFormat protected ()
+/* private */ class PictureFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.PictureFormat {
   
@@ -52,7 +52,7 @@ class PictureFormat protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.PictureFormat_typekey")
   var PowerPointDotPictureFormat_typekey: typings.activexPowerpoint.PowerPoint.PictureFormat = js.native
   

@@ -30,7 +30,7 @@ object deleteIdentitiesCommandMod {
         ] {
     def this(input: DeleteIdentitiesCommandInput) = this()
     
-    var deserialize: js.Any = js.native
+    /* private */ var deserialize: js.Any = js.native
     
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
@@ -42,7 +42,7 @@ object deleteIdentitiesCommandMod {
       options: HttpHandlerOptions
     ): Handler[DeleteIdentitiesCommandInput, DeleteIdentitiesCommandOutput] = js.native
     
-    var serialize: js.Any = js.native
+    /* private */ var serialize: js.Any = js.native
   }
   
   type DeleteIdentitiesCommandInput = DeleteIdentitiesInput
@@ -54,8 +54,7 @@ object deleteIdentitiesCommandMod {
        with _ServiceOutputTypes
   object DeleteIdentitiesCommandOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DeleteIdentitiesCommandOutput = {
+    inline def apply($metadata: ResponseMetadata): DeleteIdentitiesCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteIdentitiesCommandOutput]
     }

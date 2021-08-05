@@ -13,19 +13,15 @@ trait ReleaseAnimationsRequest extends StObject {
 }
 object ReleaseAnimationsRequest {
   
-  @scala.inline
-  def apply(animations: js.Array[String]): ReleaseAnimationsRequest = {
+  inline def apply(animations: js.Array[String]): ReleaseAnimationsRequest = {
     val __obj = js.Dynamic.literal(animations = animations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseAnimationsRequest]
   }
   
-  @scala.inline
-  implicit class ReleaseAnimationsRequestMutableBuilder[Self <: ReleaseAnimationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseAnimationsRequest](x: Self) {
     
-    @scala.inline
-    def setAnimations(value: js.Array[String]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+    inline def setAnimations(value: js.Array[String]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationsVarargs(value: String*): Self = StObject.set(x, "animations", js.Array(value :_*))
+    inline def setAnimationsVarargs(value: String*): Self = StObject.set(x, "animations", js.Array(value :_*))
   }
 }

@@ -70,55 +70,39 @@ trait HeaderFooterGroupUpdateData extends StObject {
 }
 object HeaderFooterGroupUpdateData {
   
-  @scala.inline
-  def apply(): HeaderFooterGroupUpdateData = {
+  inline def apply(): HeaderFooterGroupUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeaderFooterGroupUpdateData]
   }
   
-  @scala.inline
-  implicit class HeaderFooterGroupUpdateDataMutableBuilder[Self <: HeaderFooterGroupUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderFooterGroupUpdateData](x: Self) {
     
-    @scala.inline
-    def setDefaultForAllPages(value: HeaderFooterUpdateData): Self = StObject.set(x, "defaultForAllPages", value.asInstanceOf[js.Any])
+    inline def setDefaultForAllPages(value: HeaderFooterUpdateData): Self = StObject.set(x, "defaultForAllPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultForAllPagesUndefined: Self = StObject.set(x, "defaultForAllPages", js.undefined)
+    inline def setDefaultForAllPagesUndefined: Self = StObject.set(x, "defaultForAllPages", js.undefined)
     
-    @scala.inline
-    def setEvenPages(value: HeaderFooterUpdateData): Self = StObject.set(x, "evenPages", value.asInstanceOf[js.Any])
+    inline def setEvenPages(value: HeaderFooterUpdateData): Self = StObject.set(x, "evenPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvenPagesUndefined: Self = StObject.set(x, "evenPages", js.undefined)
+    inline def setEvenPagesUndefined: Self = StObject.set(x, "evenPages", js.undefined)
     
-    @scala.inline
-    def setFirstPage(value: HeaderFooterUpdateData): Self = StObject.set(x, "firstPage", value.asInstanceOf[js.Any])
+    inline def setFirstPage(value: HeaderFooterUpdateData): Self = StObject.set(x, "firstPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPageUndefined: Self = StObject.set(x, "firstPage", js.undefined)
+    inline def setFirstPageUndefined: Self = StObject.set(x, "firstPage", js.undefined)
     
-    @scala.inline
-    def setOddPages(value: HeaderFooterUpdateData): Self = StObject.set(x, "oddPages", value.asInstanceOf[js.Any])
+    inline def setOddPages(value: HeaderFooterUpdateData): Self = StObject.set(x, "oddPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOddPagesUndefined: Self = StObject.set(x, "oddPages", js.undefined)
+    inline def setOddPagesUndefined: Self = StObject.set(x, "oddPages", js.undefined)
     
-    @scala.inline
-    def setState(value: HeaderFooterState | Default | FirstAndDefault | OddAndEven | FirstOddAndEven): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: HeaderFooterState | Default | FirstAndDefault | OddAndEven | FirstOddAndEven): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setUseSheetMargins(value: Boolean): Self = StObject.set(x, "useSheetMargins", value.asInstanceOf[js.Any])
+    inline def setUseSheetMargins(value: Boolean): Self = StObject.set(x, "useSheetMargins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSheetMarginsUndefined: Self = StObject.set(x, "useSheetMargins", js.undefined)
+    inline def setUseSheetMarginsUndefined: Self = StObject.set(x, "useSheetMargins", js.undefined)
     
-    @scala.inline
-    def setUseSheetScale(value: Boolean): Self = StObject.set(x, "useSheetScale", value.asInstanceOf[js.Any])
+    inline def setUseSheetScale(value: Boolean): Self = StObject.set(x, "useSheetScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSheetScaleUndefined: Self = StObject.set(x, "useSheetScale", js.undefined)
+    inline def setUseSheetScaleUndefined: Self = StObject.set(x, "useSheetScale", js.undefined)
   }
 }

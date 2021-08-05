@@ -13,25 +13,19 @@ trait MobileAppContent
 }
 object MobileAppContent {
   
-  @scala.inline
-  def apply(): MobileAppContent = {
+  inline def apply(): MobileAppContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MobileAppContent]
   }
   
-  @scala.inline
-  implicit class MobileAppContentMutableBuilder[Self <: MobileAppContent] (val x: Self) extends AnyVal {
+  extension [Self <: MobileAppContent](x: Self) {
     
-    @scala.inline
-    def setFiles(value: NullableOption[js.Array[MobileAppContentFile]]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: NullableOption[js.Array[MobileAppContentFile]]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesNull: Self = StObject.set(x, "files", null)
+    inline def setFilesNull: Self = StObject.set(x, "files", null)
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setFilesVarargs(value: MobileAppContentFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: MobileAppContentFile*): Self = StObject.set(x, "files", js.Array(value :_*))
   }
 }

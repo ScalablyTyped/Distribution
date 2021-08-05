@@ -15,28 +15,21 @@ trait SentenceResult extends StObject {
 }
 object SentenceResult {
   
-  @scala.inline
-  def apply(): SentenceResult = {
+  inline def apply(): SentenceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SentenceResult]
   }
   
-  @scala.inline
-  implicit class SentenceResultMutableBuilder[Self <: SentenceResult] (val x: Self) extends AnyVal {
+  extension [Self <: SentenceResult](x: Self) {
     
-    @scala.inline
-    def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

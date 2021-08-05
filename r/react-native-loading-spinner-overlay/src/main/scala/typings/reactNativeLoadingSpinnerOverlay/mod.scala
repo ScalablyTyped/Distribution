@@ -45,71 +45,50 @@ object mod {
   }
   object SpinnerProps {
     
-    @scala.inline
-    def apply(): SpinnerProps = {
+    inline def apply(): SpinnerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpinnerProps]
     }
     
-    @scala.inline
-    implicit class SpinnerPropsMutableBuilder[Self <: SpinnerProps] (val x: Self) extends AnyVal {
+    extension [Self <: SpinnerProps](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: none | slide | fade): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: none | slide | fade): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+      inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+      inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCustomIndicator(value: ReactElement): Self = StObject.set(x, "customIndicator", value.asInstanceOf[js.Any])
+      inline def setCustomIndicator(value: ReactElement): Self = StObject.set(x, "customIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomIndicatorUndefined: Self = StObject.set(x, "customIndicator", js.undefined)
+      inline def setCustomIndicatorUndefined: Self = StObject.set(x, "customIndicator", js.undefined)
       
-      @scala.inline
-      def setOverlayColor(value: String): Self = StObject.set(x, "overlayColor", value.asInstanceOf[js.Any])
+      inline def setOverlayColor(value: String): Self = StObject.set(x, "overlayColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayColorUndefined: Self = StObject.set(x, "overlayColor", js.undefined)
+      inline def setOverlayColorUndefined: Self = StObject.set(x, "overlayColor", js.undefined)
       
-      @scala.inline
-      def setSize(value: normal | small | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: normal | small | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
+      inline def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextContentUndefined: Self = StObject.set(x, "textContent", js.undefined)
+      inline def setTextContentUndefined: Self = StObject.set(x, "textContent", js.undefined)
       
-      @scala.inline
-      def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
+      inline def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
       
-      @scala.inline
-      def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+      inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
 }

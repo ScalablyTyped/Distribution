@@ -21,19 +21,15 @@ trait IWebDriverCookie
 }
 object IWebDriverCookie {
   
-  @scala.inline
-  def apply(name: String, value: String): IWebDriverCookie = {
+  inline def apply(name: String, value: String): IWebDriverCookie = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebDriverCookie]
   }
   
-  @scala.inline
-  implicit class IWebDriverCookieMutableBuilder[Self <: IWebDriverCookie] (val x: Self) extends AnyVal {
+  extension [Self <: IWebDriverCookie](x: Self) {
     
-    @scala.inline
-    def setExpiry(value: Double): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
+    inline def setExpiry(value: Double): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
+    inline def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
   }
 }

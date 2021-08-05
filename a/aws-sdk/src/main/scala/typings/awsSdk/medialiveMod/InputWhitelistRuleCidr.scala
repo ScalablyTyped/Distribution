@@ -13,19 +13,15 @@ trait InputWhitelistRuleCidr extends StObject {
 }
 object InputWhitelistRuleCidr {
   
-  @scala.inline
-  def apply(): InputWhitelistRuleCidr = {
+  inline def apply(): InputWhitelistRuleCidr = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputWhitelistRuleCidr]
   }
   
-  @scala.inline
-  implicit class InputWhitelistRuleCidrMutableBuilder[Self <: InputWhitelistRuleCidr] (val x: Self) extends AnyVal {
+  extension [Self <: InputWhitelistRuleCidr](x: Self) {
     
-    @scala.inline
-    def setCidr(value: string): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: string): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrUndefined: Self = StObject.set(x, "Cidr", js.undefined)
+    inline def setCidrUndefined: Self = StObject.set(x, "Cidr", js.undefined)
   }
 }

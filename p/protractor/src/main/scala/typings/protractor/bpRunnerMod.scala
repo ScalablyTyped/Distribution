@@ -18,7 +18,7 @@ object bpRunnerMod {
     
     def checkSupportedConfig(): Unit = js.native
     
-    var config: js.Any = js.native
+    /* private */ var config: js.Any = js.native
     
     var port: Double = js.native
     

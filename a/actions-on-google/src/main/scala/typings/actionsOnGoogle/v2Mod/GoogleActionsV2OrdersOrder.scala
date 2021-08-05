@@ -42,49 +42,35 @@ trait GoogleActionsV2OrdersOrder extends StObject {
 }
 object GoogleActionsV2OrdersOrder {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersOrder = {
+  inline def apply(): GoogleActionsV2OrdersOrder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersOrder]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersOrderMutableBuilder[Self <: GoogleActionsV2OrdersOrder] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersOrder](x: Self) {
     
-    @scala.inline
-    def setActionOrderId(value: String): Self = StObject.set(x, "actionOrderId", value.asInstanceOf[js.Any])
+    inline def setActionOrderId(value: String): Self = StObject.set(x, "actionOrderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionOrderIdUndefined: Self = StObject.set(x, "actionOrderId", js.undefined)
+    inline def setActionOrderIdUndefined: Self = StObject.set(x, "actionOrderId", js.undefined)
     
-    @scala.inline
-    def setCustomerInfo(value: GoogleActionsV2OrdersCustomerInfo): Self = StObject.set(x, "customerInfo", value.asInstanceOf[js.Any])
+    inline def setCustomerInfo(value: GoogleActionsV2OrdersCustomerInfo): Self = StObject.set(x, "customerInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerInfoUndefined: Self = StObject.set(x, "customerInfo", js.undefined)
+    inline def setCustomerInfoUndefined: Self = StObject.set(x, "customerInfo", js.undefined)
     
-    @scala.inline
-    def setFinalOrder(value: GoogleActionsV2OrdersProposedOrder): Self = StObject.set(x, "finalOrder", value.asInstanceOf[js.Any])
+    inline def setFinalOrder(value: GoogleActionsV2OrdersProposedOrder): Self = StObject.set(x, "finalOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalOrderUndefined: Self = StObject.set(x, "finalOrder", js.undefined)
+    inline def setFinalOrderUndefined: Self = StObject.set(x, "finalOrder", js.undefined)
     
-    @scala.inline
-    def setGoogleOrderId(value: String): Self = StObject.set(x, "googleOrderId", value.asInstanceOf[js.Any])
+    inline def setGoogleOrderId(value: String): Self = StObject.set(x, "googleOrderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleOrderIdUndefined: Self = StObject.set(x, "googleOrderId", js.undefined)
+    inline def setGoogleOrderIdUndefined: Self = StObject.set(x, "googleOrderId", js.undefined)
     
-    @scala.inline
-    def setOrderDate(value: String): Self = StObject.set(x, "orderDate", value.asInstanceOf[js.Any])
+    inline def setOrderDate(value: String): Self = StObject.set(x, "orderDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderDateUndefined: Self = StObject.set(x, "orderDate", js.undefined)
+    inline def setOrderDateUndefined: Self = StObject.set(x, "orderDate", js.undefined)
     
-    @scala.inline
-    def setPaymentInfo(value: GoogleActionsV2OrdersPaymentInfo): Self = StObject.set(x, "paymentInfo", value.asInstanceOf[js.Any])
+    inline def setPaymentInfo(value: GoogleActionsV2OrdersPaymentInfo): Self = StObject.set(x, "paymentInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentInfoUndefined: Self = StObject.set(x, "paymentInfo", js.undefined)
+    inline def setPaymentInfoUndefined: Self = StObject.set(x, "paymentInfo", js.undefined)
   }
 }

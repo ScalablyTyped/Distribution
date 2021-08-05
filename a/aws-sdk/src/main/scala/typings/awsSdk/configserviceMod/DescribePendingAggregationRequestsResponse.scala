@@ -18,28 +18,21 @@ trait DescribePendingAggregationRequestsResponse extends StObject {
 }
 object DescribePendingAggregationRequestsResponse {
   
-  @scala.inline
-  def apply(): DescribePendingAggregationRequestsResponse = {
+  inline def apply(): DescribePendingAggregationRequestsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePendingAggregationRequestsResponse]
   }
   
-  @scala.inline
-  implicit class DescribePendingAggregationRequestsResponseMutableBuilder[Self <: DescribePendingAggregationRequestsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePendingAggregationRequestsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPendingAggregationRequests(value: PendingAggregationRequestList): Self = StObject.set(x, "PendingAggregationRequests", value.asInstanceOf[js.Any])
+    inline def setPendingAggregationRequests(value: PendingAggregationRequestList): Self = StObject.set(x, "PendingAggregationRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingAggregationRequestsUndefined: Self = StObject.set(x, "PendingAggregationRequests", js.undefined)
+    inline def setPendingAggregationRequestsUndefined: Self = StObject.set(x, "PendingAggregationRequests", js.undefined)
     
-    @scala.inline
-    def setPendingAggregationRequestsVarargs(value: PendingAggregationRequest*): Self = StObject.set(x, "PendingAggregationRequests", js.Array(value :_*))
+    inline def setPendingAggregationRequestsVarargs(value: PendingAggregationRequest*): Self = StObject.set(x, "PendingAggregationRequests", js.Array(value :_*))
   }
 }

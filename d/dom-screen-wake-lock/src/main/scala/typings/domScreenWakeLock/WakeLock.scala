@@ -31,16 +31,13 @@ trait WakeLock extends StObject {
 }
 object WakeLock {
   
-  @scala.inline
-  def apply(request: WakeLockType => js.Promise[WakeLockSentinel]): WakeLock = {
+  inline def apply(request: WakeLockType => js.Promise[WakeLockSentinel]): WakeLock = {
     val __obj = js.Dynamic.literal(request = js.Any.fromFunction1(request))
     __obj.asInstanceOf[WakeLock]
   }
   
-  @scala.inline
-  implicit class WakeLockMutableBuilder[Self <: WakeLock] (val x: Self) extends AnyVal {
+  extension [Self <: WakeLock](x: Self) {
     
-    @scala.inline
-    def setRequest(value: WakeLockType => js.Promise[WakeLockSentinel]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+    inline def setRequest(value: WakeLockType => js.Promise[WakeLockSentinel]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
   }
 }

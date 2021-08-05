@@ -14,22 +14,17 @@ trait ReturnTypeGetNodeForLocationResponse extends StObject {
 }
 object ReturnTypeGetNodeForLocationResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[GetNodeForLocationRequest], returnType: GetNodeForLocationResponse): ReturnTypeGetNodeForLocationResponse = {
+  inline def apply(paramsType: js.Array[GetNodeForLocationRequest], returnType: GetNodeForLocationResponse): ReturnTypeGetNodeForLocationResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeGetNodeForLocationResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetNodeForLocationResponseMutableBuilder[Self <: ReturnTypeGetNodeForLocationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetNodeForLocationResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[GetNodeForLocationRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[GetNodeForLocationRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: GetNodeForLocationRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetNodeForLocationRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetNodeForLocationResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetNodeForLocationResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

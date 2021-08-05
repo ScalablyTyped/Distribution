@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IGCZ extends StObject
 object IGCZ {
   
-  @scala.inline
-  def barometric: typings.openlayers.openlayersStrings.barometric = "barometric".asInstanceOf[typings.openlayers.openlayersStrings.barometric]
+  inline def barometric: typings.openlayers.openlayersStrings.barometric = "barometric".asInstanceOf[typings.openlayers.openlayersStrings.barometric]
   
-  @scala.inline
-  def gps: typings.openlayers.openlayersStrings.gps = "gps".asInstanceOf[typings.openlayers.openlayersStrings.gps]
+  inline def gps: typings.openlayers.openlayersStrings.gps = "gps".asInstanceOf[typings.openlayers.openlayersStrings.gps]
   
-  @scala.inline
-  def none: typings.openlayers.openlayersStrings.none = "none".asInstanceOf[typings.openlayers.openlayersStrings.none]
+  inline def none: typings.openlayers.openlayersStrings.none = "none".asInstanceOf[typings.openlayers.openlayersStrings.none]
 }

@@ -60,8 +60,7 @@ object tagGroupMod {
     @JSImport("rbx/elements/tag/tag-group", "TAG_GROUP_DEFAULTS.sizes")
     @js.native
     def sizes: js.Tuple2[medium, large] = js.native
-    @scala.inline
-    def sizes_=(x: js.Tuple2[medium, large]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sizes")(x.asInstanceOf[js.Any])
+    inline def sizes_=(x: js.Tuple2[medium, large]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sizes")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rbx/elements/tag/tag-group", "TagGroup")
@@ -76,26 +75,20 @@ object tagGroupMod {
   }
   object TagGroupModifierProps {
     
-    @scala.inline
-    def apply(): TagGroupModifierProps = {
+    inline def apply(): TagGroupModifierProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TagGroupModifierProps]
     }
     
-    @scala.inline
-    implicit class TagGroupModifierPropsMutableBuilder[Self <: TagGroupModifierProps] (val x: Self) extends AnyVal {
+    extension [Self <: TagGroupModifierProps](x: Self) {
       
-      @scala.inline
-      def setGapless(value: Boolean): Self = StObject.set(x, "gapless", value.asInstanceOf[js.Any])
+      inline def setGapless(value: Boolean): Self = StObject.set(x, "gapless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGaplessUndefined: Self = StObject.set(x, "gapless", js.undefined)
+      inline def setGaplessUndefined: Self = StObject.set(x, "gapless", js.undefined)
       
-      @scala.inline
-      def setSize(value: medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -182,228 +175,156 @@ object tagGroupMod {
   }
   object TagGroupProps {
     
-    @scala.inline
-    def apply(): TagGroupProps = {
+    inline def apply(): TagGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TagGroupProps]
     }
     
-    @scala.inline
-    implicit class TagGroupPropsMutableBuilder[Self <: TagGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: TagGroupProps](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(
+      inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
       ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setBadge(value: Double | String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: Double | String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "badgeColor", value.asInstanceOf[js.Any])
+      inline def setBadgeColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "badgeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeColorUndefined: Self = StObject.set(x, "badgeColor", js.undefined)
+      inline def setBadgeColorUndefined: Self = StObject.set(x, "badgeColor", js.undefined)
       
-      @scala.inline
-      def setBadgeOutlined(value: Boolean): Self = StObject.set(x, "badgeOutlined", value.asInstanceOf[js.Any])
+      inline def setBadgeOutlined(value: Boolean): Self = StObject.set(x, "badgeOutlined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeOutlinedUndefined: Self = StObject.set(x, "badgeOutlined", js.undefined)
+      inline def setBadgeOutlinedUndefined: Self = StObject.set(x, "badgeOutlined", js.undefined)
       
-      @scala.inline
-      def setBadgeRounded(value: Boolean): Self = StObject.set(x, "badgeRounded", value.asInstanceOf[js.Any])
+      inline def setBadgeRounded(value: Boolean): Self = StObject.set(x, "badgeRounded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeRoundedUndefined: Self = StObject.set(x, "badgeRounded", js.undefined)
+      inline def setBadgeRoundedUndefined: Self = StObject.set(x, "badgeRounded", js.undefined)
       
-      @scala.inline
-      def setBadgeSize(value: small | medium | large): Self = StObject.set(x, "badgeSize", value.asInstanceOf[js.Any])
+      inline def setBadgeSize(value: small | medium | large): Self = StObject.set(x, "badgeSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeSizeUndefined: Self = StObject.set(x, "badgeSize", js.undefined)
+      inline def setBadgeSizeUndefined: Self = StObject.set(x, "badgeSize", js.undefined)
       
-      @scala.inline
-      def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+      inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClearfix(value: Boolean): Self = StObject.set(x, "clearfix", value.asInstanceOf[js.Any])
+      inline def setClearfix(value: Boolean): Self = StObject.set(x, "clearfix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearfixUndefined: Self = StObject.set(x, "clearfix", js.undefined)
+      inline def setClearfixUndefined: Self = StObject.set(x, "clearfix", js.undefined)
       
-      @scala.inline
-      def setClipped(value: Boolean): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
+      inline def setClipped(value: Boolean): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClippedUndefined: Self = StObject.set(x, "clipped", js.undefined)
+      inline def setClippedUndefined: Self = StObject.set(x, "clipped", js.undefined)
       
-      @scala.inline
-      def setGapless(value: Boolean): Self = StObject.set(x, "gapless", value.asInstanceOf[js.Any])
+      inline def setGapless(value: Boolean): Self = StObject.set(x, "gapless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGaplessUndefined: Self = StObject.set(x, "gapless", js.undefined)
+      inline def setGaplessUndefined: Self = StObject.set(x, "gapless", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
+      inline def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
+      inline def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
       
-      @scala.inline
-      def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+      inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+      inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
       
-      @scala.inline
-      def setMarginless(value: Boolean): Self = StObject.set(x, "marginless", value.asInstanceOf[js.Any])
+      inline def setMarginless(value: Boolean): Self = StObject.set(x, "marginless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginlessUndefined: Self = StObject.set(x, "marginless", js.undefined)
+      inline def setMarginlessUndefined: Self = StObject.set(x, "marginless", js.undefined)
       
-      @scala.inline
-      def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
       
-      @scala.inline
-      def setPaddingless(value: Boolean): Self = StObject.set(x, "paddingless", value.asInstanceOf[js.Any])
+      inline def setPaddingless(value: Boolean): Self = StObject.set(x, "paddingless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddinglessUndefined: Self = StObject.set(x, "paddingless", js.undefined)
+      inline def setPaddinglessUndefined: Self = StObject.set(x, "paddingless", js.undefined)
       
-      @scala.inline
-      def setPull(value: left | right): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
+      inline def setPull(value: left | right): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
+      inline def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
       
-      @scala.inline
-      def setRadiusless(value: Boolean): Self = StObject.set(x, "radiusless", value.asInstanceOf[js.Any])
+      inline def setRadiusless(value: Boolean): Self = StObject.set(x, "radiusless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiuslessUndefined: Self = StObject.set(x, "radiusless", js.undefined)
+      inline def setRadiuslessUndefined: Self = StObject.set(x, "radiusless", js.undefined)
       
-      @scala.inline
-      def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
+      inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
       
-      @scala.inline
-      def setResponsive(value: BinVariablesbreakpointsLi): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+      inline def setResponsive(value: BinVariablesbreakpointsLi): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+      inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
       
-      @scala.inline
-      def setShadowless(value: Boolean): Self = StObject.set(x, "shadowless", value.asInstanceOf[js.Any])
+      inline def setShadowless(value: Boolean): Self = StObject.set(x, "shadowless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadowlessUndefined: Self = StObject.set(x, "shadowless", js.undefined)
+      inline def setShadowlessUndefined: Self = StObject.set(x, "shadowless", js.undefined)
       
-      @scala.inline
-      def setSize(value: medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSrOnly(value: Boolean): Self = StObject.set(x, "srOnly", value.asInstanceOf[js.Any])
+      inline def setSrOnly(value: Boolean): Self = StObject.set(x, "srOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrOnlyUndefined: Self = StObject.set(x, "srOnly", js.undefined)
+      inline def setSrOnlyUndefined: Self = StObject.set(x, "srOnly", js.undefined)
       
-      @scala.inline
-      def setTextAlign(value: centered | justified | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: centered | justified | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      @scala.inline
-      def setTextColor(
+      inline def setTextColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
       ): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+      inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
       
-      @scala.inline
-      def setTextSize(value: `1` | `2` | `3` | `4` | `5` | `6` | `7`): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
+      inline def setTextSize(value: `1` | `2` | `3` | `4` | `5` | `6` | `7`): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
+      inline def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
       
-      @scala.inline
-      def setTextTransform(value: capitalized | lowercase | uppercase): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
+      inline def setTextTransform(value: capitalized | lowercase | uppercase): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
+      inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
       
-      @scala.inline
-      def setTextWeight(value: light | medium | normal | semibold | bold): Self = StObject.set(x, "textWeight", value.asInstanceOf[js.Any])
+      inline def setTextWeight(value: light | medium | normal | semibold | bold): Self = StObject.set(x, "textWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextWeightUndefined: Self = StObject.set(x, "textWeight", js.undefined)
+      inline def setTextWeightUndefined: Self = StObject.set(x, "textWeight", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: Double | String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Double | String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipActive(value: Boolean): Self = StObject.set(x, "tooltipActive", value.asInstanceOf[js.Any])
+      inline def setTooltipActive(value: Boolean): Self = StObject.set(x, "tooltipActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipActiveUndefined: Self = StObject.set(x, "tooltipActive", js.undefined)
+      inline def setTooltipActiveUndefined: Self = StObject.set(x, "tooltipActive", js.undefined)
       
-      @scala.inline
-      def setTooltipColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "tooltipColor", value.asInstanceOf[js.Any])
+      inline def setTooltipColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "tooltipColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipColorUndefined: Self = StObject.set(x, "tooltipColor", js.undefined)
+      inline def setTooltipColorUndefined: Self = StObject.set(x, "tooltipColor", js.undefined)
       
-      @scala.inline
-      def setTooltipMultiline(value: Boolean): Self = StObject.set(x, "tooltipMultiline", value.asInstanceOf[js.Any])
+      inline def setTooltipMultiline(value: Boolean): Self = StObject.set(x, "tooltipMultiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipMultilineUndefined: Self = StObject.set(x, "tooltipMultiline", js.undefined)
+      inline def setTooltipMultilineUndefined: Self = StObject.set(x, "tooltipMultiline", js.undefined)
       
-      @scala.inline
-      def setTooltipPosition(value: top | right | bottom | left): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
+      inline def setTooltipPosition(value: top | right | bottom | left): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
+      inline def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
       
-      @scala.inline
-      def setTooltipResponsive(value: KinVariablesbreakpointsto): Self = StObject.set(x, "tooltipResponsive", value.asInstanceOf[js.Any])
+      inline def setTooltipResponsive(value: KinVariablesbreakpointsto): Self = StObject.set(x, "tooltipResponsive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipResponsiveUndefined: Self = StObject.set(x, "tooltipResponsive", js.undefined)
+      inline def setTooltipResponsiveUndefined: Self = StObject.set(x, "tooltipResponsive", js.undefined)
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      @scala.inline
-      def setUnselectable(value: Boolean): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: Boolean): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
+      inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
     }
   }
   
@@ -414,17 +335,14 @@ object tagGroupMod {
   }
   object TagGroupVariables {
     
-    @scala.inline
-    def apply(sizes: medium | large): TagGroupVariables = {
+    inline def apply(sizes: medium | large): TagGroupVariables = {
       val __obj = js.Dynamic.literal(sizes = sizes.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagGroupVariables]
     }
     
-    @scala.inline
-    implicit class TagGroupVariablesMutableBuilder[Self <: TagGroupVariables] (val x: Self) extends AnyVal {
+    extension [Self <: TagGroupVariables](x: Self) {
       
-      @scala.inline
-      def setSizes(value: medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+      inline def setSizes(value: medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -434,17 +352,14 @@ object tagGroupMod {
   }
   object TagGroupVariablesDefaults {
     
-    @scala.inline
-    def apply(sizes: medium | large): TagGroupVariablesDefaults = {
+    inline def apply(sizes: medium | large): TagGroupVariablesDefaults = {
       val __obj = js.Dynamic.literal(sizes = sizes.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagGroupVariablesDefaults]
     }
     
-    @scala.inline
-    implicit class TagGroupVariablesDefaultsMutableBuilder[Self <: TagGroupVariablesDefaults] (val x: Self) extends AnyVal {
+    extension [Self <: TagGroupVariablesDefaults](x: Self) {
       
-      @scala.inline
-      def setSizes(value: medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+      inline def setSizes(value: medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }
   }
   

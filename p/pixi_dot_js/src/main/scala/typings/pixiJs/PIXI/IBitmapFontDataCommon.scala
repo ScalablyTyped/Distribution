@@ -15,16 +15,13 @@ trait IBitmapFontDataCommon extends StObject {
 }
 object IBitmapFontDataCommon {
   
-  @scala.inline
-  def apply(lineHeight: Double): IBitmapFontDataCommon = {
+  inline def apply(lineHeight: Double): IBitmapFontDataCommon = {
     val __obj = js.Dynamic.literal(lineHeight = lineHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBitmapFontDataCommon]
   }
   
-  @scala.inline
-  implicit class IBitmapFontDataCommonMutableBuilder[Self <: IBitmapFontDataCommon] (val x: Self) extends AnyVal {
+  extension [Self <: IBitmapFontDataCommon](x: Self) {
     
-    @scala.inline
-    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
   }
 }

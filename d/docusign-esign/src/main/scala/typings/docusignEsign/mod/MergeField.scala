@@ -70,88 +70,61 @@ trait MergeField extends StObject {
 }
 object MergeField {
   
-  @scala.inline
-  def apply(): MergeField = {
+  inline def apply(): MergeField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MergeField]
   }
   
-  @scala.inline
-  implicit class MergeFieldMutableBuilder[Self <: MergeField] (val x: Self) extends AnyVal {
+  extension [Self <: MergeField](x: Self) {
     
-    @scala.inline
-    def setAllowSenderToEdit(value: String): Self = StObject.set(x, "allowSenderToEdit", value.asInstanceOf[js.Any])
+    inline def setAllowSenderToEdit(value: String): Self = StObject.set(x, "allowSenderToEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSenderToEditMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "allowSenderToEditMetadata", value.asInstanceOf[js.Any])
+    inline def setAllowSenderToEditMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "allowSenderToEditMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSenderToEditMetadataUndefined: Self = StObject.set(x, "allowSenderToEditMetadata", js.undefined)
+    inline def setAllowSenderToEditMetadataUndefined: Self = StObject.set(x, "allowSenderToEditMetadata", js.undefined)
     
-    @scala.inline
-    def setAllowSenderToEditUndefined: Self = StObject.set(x, "allowSenderToEdit", js.undefined)
+    inline def setAllowSenderToEditUndefined: Self = StObject.set(x, "allowSenderToEdit", js.undefined)
     
-    @scala.inline
-    def setConfigurationType(value: String): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
+    inline def setConfigurationType(value: String): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationTypeMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "configurationTypeMetadata", value.asInstanceOf[js.Any])
+    inline def setConfigurationTypeMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "configurationTypeMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationTypeMetadataUndefined: Self = StObject.set(x, "configurationTypeMetadata", js.undefined)
+    inline def setConfigurationTypeMetadataUndefined: Self = StObject.set(x, "configurationTypeMetadata", js.undefined)
     
-    @scala.inline
-    def setConfigurationTypeUndefined: Self = StObject.set(x, "configurationType", js.undefined)
+    inline def setConfigurationTypeUndefined: Self = StObject.set(x, "configurationType", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathExtended(value: js.Array[PathExtendedElement]): Self = StObject.set(x, "pathExtended", value.asInstanceOf[js.Any])
+    inline def setPathExtended(value: js.Array[PathExtendedElement]): Self = StObject.set(x, "pathExtended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathExtendedMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "pathExtendedMetadata", value.asInstanceOf[js.Any])
+    inline def setPathExtendedMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "pathExtendedMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathExtendedMetadataUndefined: Self = StObject.set(x, "pathExtendedMetadata", js.undefined)
+    inline def setPathExtendedMetadataUndefined: Self = StObject.set(x, "pathExtendedMetadata", js.undefined)
     
-    @scala.inline
-    def setPathExtendedUndefined: Self = StObject.set(x, "pathExtended", js.undefined)
+    inline def setPathExtendedUndefined: Self = StObject.set(x, "pathExtended", js.undefined)
     
-    @scala.inline
-    def setPathExtendedVarargs(value: PathExtendedElement*): Self = StObject.set(x, "pathExtended", js.Array(value :_*))
+    inline def setPathExtendedVarargs(value: PathExtendedElement*): Self = StObject.set(x, "pathExtended", js.Array(value :_*))
     
-    @scala.inline
-    def setPathMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "pathMetadata", value.asInstanceOf[js.Any])
+    inline def setPathMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "pathMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathMetadataUndefined: Self = StObject.set(x, "pathMetadata", js.undefined)
+    inline def setPathMetadataUndefined: Self = StObject.set(x, "pathMetadata", js.undefined)
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "rowMetadata", value.asInstanceOf[js.Any])
+    inline def setRowMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "rowMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowMetadataUndefined: Self = StObject.set(x, "rowMetadata", js.undefined)
+    inline def setRowMetadataUndefined: Self = StObject.set(x, "rowMetadata", js.undefined)
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
-    @scala.inline
-    def setWriteBack(value: String): Self = StObject.set(x, "writeBack", value.asInstanceOf[js.Any])
+    inline def setWriteBack(value: String): Self = StObject.set(x, "writeBack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteBackMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "writeBackMetadata", value.asInstanceOf[js.Any])
+    inline def setWriteBackMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "writeBackMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteBackMetadataUndefined: Self = StObject.set(x, "writeBackMetadata", js.undefined)
+    inline def setWriteBackMetadataUndefined: Self = StObject.set(x, "writeBackMetadata", js.undefined)
     
-    @scala.inline
-    def setWriteBackUndefined: Self = StObject.set(x, "writeBack", js.undefined)
+    inline def setWriteBackUndefined: Self = StObject.set(x, "writeBack", js.undefined)
   }
 }

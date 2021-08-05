@@ -13,25 +13,19 @@ trait TooltipEvents extends StObject {
 }
 object TooltipEvents {
   
-  @scala.inline
-  def apply(): TooltipEvents = {
+  inline def apply(): TooltipEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TooltipEvents]
   }
   
-  @scala.inline
-  implicit class TooltipEventsMutableBuilder[Self <: TooltipEvents] (val x: Self) extends AnyVal {
+  extension [Self <: TooltipEvents](x: Self) {
     
-    @scala.inline
-    def setClose(value: (/* event */ JQueryEventObject, /* ui */ TooltipUIParams) => Unit): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
+    inline def setClose(value: (/* event */ JQueryEventObject, /* ui */ TooltipUIParams) => Unit): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setOpen(value: (/* event */ JQueryEventObject, /* ui */ TooltipUIParams) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction2(value))
+    inline def setOpen(value: (/* event */ JQueryEventObject, /* ui */ TooltipUIParams) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

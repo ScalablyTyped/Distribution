@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxConfiguration Class */
 @JSGlobal("FAXCOMEXLib.FaxConfiguration")
 @js.native
-class FaxConfiguration protected ()
+/* private */ class FaxConfiguration ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxConfiguration {
   
@@ -48,7 +48,7 @@ class FaxConfiguration protected ()
   /* CompleteClass */
   var DiscountRateStart: VarDate = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("FAXCOMEXLib.FaxConfiguration_typekey")
   var FAXCOMEXLibDotFaxConfiguration_typekey: typings.activexFaxcomexlib.FAXCOMEXLib.FaxConfiguration = js.native
   

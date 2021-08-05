@@ -21,19 +21,15 @@ trait Subtitle extends StObject {
 }
 object Subtitle {
   
-  @scala.inline
-  def apply(lang: String, url: String): Subtitle = {
+  inline def apply(lang: String, url: String): Subtitle = {
     val __obj = js.Dynamic.literal(lang = lang.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subtitle]
   }
   
-  @scala.inline
-  implicit class SubtitleMutableBuilder[Self <: Subtitle] (val x: Self) extends AnyVal {
+  extension [Self <: Subtitle](x: Self) {
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -28,8 +28,7 @@ object xml {
        with XInitialization
   object LayerParser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       InputStream: XInputStream,
       acquire: () => Unit,
       getInputStream: () => XInputStream,
@@ -58,8 +57,7 @@ object xml {
        with XInitialization
   object LayerWriter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       OutputStream: XOutputStream,
       acquire: () => Unit,
       addOrReplaceNode: (String, Double) => Unit,
@@ -100,8 +98,7 @@ object xml {
        with XInitialization
   object SchemaParser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       InputStream: XInputStream,
       acquire: () => Unit,
       getInputStream: () => XInputStream,

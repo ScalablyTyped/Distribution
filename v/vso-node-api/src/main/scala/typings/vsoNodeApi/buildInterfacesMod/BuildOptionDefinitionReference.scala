@@ -13,16 +13,13 @@ trait BuildOptionDefinitionReference extends StObject {
 }
 object BuildOptionDefinitionReference {
   
-  @scala.inline
-  def apply(id: String): BuildOptionDefinitionReference = {
+  inline def apply(id: String): BuildOptionDefinitionReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildOptionDefinitionReference]
   }
   
-  @scala.inline
-  implicit class BuildOptionDefinitionReferenceMutableBuilder[Self <: BuildOptionDefinitionReference] (val x: Self) extends AnyVal {
+  extension [Self <: BuildOptionDefinitionReference](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

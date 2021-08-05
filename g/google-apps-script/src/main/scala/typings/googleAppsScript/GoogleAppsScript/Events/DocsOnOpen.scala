@@ -15,16 +15,13 @@ trait DocsOnOpen
 }
 object DocsOnOpen {
   
-  @scala.inline
-  def apply(authMode: AuthMode, source: Document, triggerUid: String, user: User): DocsOnOpen = {
+  inline def apply(authMode: AuthMode, source: Document, triggerUid: String, user: User): DocsOnOpen = {
     val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], triggerUid = triggerUid.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocsOnOpen]
   }
   
-  @scala.inline
-  implicit class DocsOnOpenMutableBuilder[Self <: DocsOnOpen] (val x: Self) extends AnyVal {
+  extension [Self <: DocsOnOpen](x: Self) {
     
-    @scala.inline
-    def setSource(value: Document): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Document): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

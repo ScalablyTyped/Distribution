@@ -83,8 +83,7 @@ trait GraphicDescriptor
 }
 object GraphicDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Alpha: Boolean,
     Animated: Boolean,
     BitsPerPixel: Double,
@@ -109,31 +108,22 @@ object GraphicDescriptor {
     __obj.asInstanceOf[GraphicDescriptor]
   }
   
-  @scala.inline
-  implicit class GraphicDescriptorMutableBuilder[Self <: GraphicDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: GraphicDescriptor](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Boolean): Self = StObject.set(x, "Alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Boolean): Self = StObject.set(x, "Alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "Animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "Animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitsPerPixel(value: Double): Self = StObject.set(x, "BitsPerPixel", value.asInstanceOf[js.Any])
+    inline def setBitsPerPixel(value: Double): Self = StObject.set(x, "BitsPerPixel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicType(value: Double): Self = StObject.set(x, "GraphicType", value.asInstanceOf[js.Any])
+    inline def setGraphicType(value: Double): Self = StObject.set(x, "GraphicType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize100thMM(value: Size): Self = StObject.set(x, "Size100thMM", value.asInstanceOf[js.Any])
+    inline def setSize100thMM(value: Size): Self = StObject.set(x, "Size100thMM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizePixel(value: Size): Self = StObject.set(x, "SizePixel", value.asInstanceOf[js.Any])
+    inline def setSizePixel(value: Size): Self = StObject.set(x, "SizePixel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparent(value: Boolean): Self = StObject.set(x, "Transparent", value.asInstanceOf[js.Any])
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "Transparent", value.asInstanceOf[js.Any])
   }
 }

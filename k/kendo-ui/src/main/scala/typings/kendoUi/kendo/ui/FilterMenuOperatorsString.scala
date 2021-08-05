@@ -33,85 +33,59 @@ trait FilterMenuOperatorsString extends StObject {
 }
 object FilterMenuOperatorsString {
   
-  @scala.inline
-  def apply(): FilterMenuOperatorsString = {
+  inline def apply(): FilterMenuOperatorsString = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterMenuOperatorsString]
   }
   
-  @scala.inline
-  implicit class FilterMenuOperatorsStringMutableBuilder[Self <: FilterMenuOperatorsString] (val x: Self) extends AnyVal {
+  extension [Self <: FilterMenuOperatorsString](x: Self) {
     
-    @scala.inline
-    def setContains(value: String): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+    inline def setContains(value: String): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
+    inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
-    @scala.inline
-    def setDoesnotcontain(value: String): Self = StObject.set(x, "doesnotcontain", value.asInstanceOf[js.Any])
+    inline def setDoesnotcontain(value: String): Self = StObject.set(x, "doesnotcontain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoesnotcontainUndefined: Self = StObject.set(x, "doesnotcontain", js.undefined)
+    inline def setDoesnotcontainUndefined: Self = StObject.set(x, "doesnotcontain", js.undefined)
     
-    @scala.inline
-    def setEndswith(value: String): Self = StObject.set(x, "endswith", value.asInstanceOf[js.Any])
+    inline def setEndswith(value: String): Self = StObject.set(x, "endswith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndswithUndefined: Self = StObject.set(x, "endswith", js.undefined)
+    inline def setEndswithUndefined: Self = StObject.set(x, "endswith", js.undefined)
     
-    @scala.inline
-    def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
+    inline def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
+    inline def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
     
-    @scala.inline
-    def setIsempty(value: String): Self = StObject.set(x, "isempty", value.asInstanceOf[js.Any])
+    inline def setIsempty(value: String): Self = StObject.set(x, "isempty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsemptyUndefined: Self = StObject.set(x, "isempty", js.undefined)
+    inline def setIsemptyUndefined: Self = StObject.set(x, "isempty", js.undefined)
     
-    @scala.inline
-    def setIsnotempty(value: String): Self = StObject.set(x, "isnotempty", value.asInstanceOf[js.Any])
+    inline def setIsnotempty(value: String): Self = StObject.set(x, "isnotempty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsnotemptyUndefined: Self = StObject.set(x, "isnotempty", js.undefined)
+    inline def setIsnotemptyUndefined: Self = StObject.set(x, "isnotempty", js.undefined)
     
-    @scala.inline
-    def setIsnotnull(value: String): Self = StObject.set(x, "isnotnull", value.asInstanceOf[js.Any])
+    inline def setIsnotnull(value: String): Self = StObject.set(x, "isnotnull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsnotnullUndefined: Self = StObject.set(x, "isnotnull", js.undefined)
+    inline def setIsnotnullUndefined: Self = StObject.set(x, "isnotnull", js.undefined)
     
-    @scala.inline
-    def setIsnotnullorempty(value: String): Self = StObject.set(x, "isnotnullorempty", value.asInstanceOf[js.Any])
+    inline def setIsnotnullorempty(value: String): Self = StObject.set(x, "isnotnullorempty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsnotnulloremptyUndefined: Self = StObject.set(x, "isnotnullorempty", js.undefined)
+    inline def setIsnotnulloremptyUndefined: Self = StObject.set(x, "isnotnullorempty", js.undefined)
     
-    @scala.inline
-    def setIsnull(value: String): Self = StObject.set(x, "isnull", value.asInstanceOf[js.Any])
+    inline def setIsnull(value: String): Self = StObject.set(x, "isnull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsnullUndefined: Self = StObject.set(x, "isnull", js.undefined)
+    inline def setIsnullUndefined: Self = StObject.set(x, "isnull", js.undefined)
     
-    @scala.inline
-    def setIsnullorempty(value: String): Self = StObject.set(x, "isnullorempty", value.asInstanceOf[js.Any])
+    inline def setIsnullorempty(value: String): Self = StObject.set(x, "isnullorempty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsnulloremptyUndefined: Self = StObject.set(x, "isnullorempty", js.undefined)
+    inline def setIsnulloremptyUndefined: Self = StObject.set(x, "isnullorempty", js.undefined)
     
-    @scala.inline
-    def setNeq(value: String): Self = StObject.set(x, "neq", value.asInstanceOf[js.Any])
+    inline def setNeq(value: String): Self = StObject.set(x, "neq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
+    inline def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
     
-    @scala.inline
-    def setStartswith(value: String): Self = StObject.set(x, "startswith", value.asInstanceOf[js.Any])
+    inline def setStartswith(value: String): Self = StObject.set(x, "startswith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartswithUndefined: Self = StObject.set(x, "startswith", js.undefined)
+    inline def setStartswithUndefined: Self = StObject.set(x, "startswith", js.undefined)
   }
 }

@@ -41,6 +41,5 @@ object SaveOptions {
   @JSGlobal("breeze.SaveOptions.defaultInstance")
   @js.native
   def defaultInstance: typings.breeze.breeze.SaveOptions = js.native
-  @scala.inline
-  def defaultInstance_=(x: typings.breeze.breeze.SaveOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultInstance")(x.asInstanceOf[js.Any])
+  inline def defaultInstance_=(x: typings.breeze.breeze.SaveOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultInstance")(x.asInstanceOf[js.Any])
 }

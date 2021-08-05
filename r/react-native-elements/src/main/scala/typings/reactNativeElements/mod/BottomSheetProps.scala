@@ -21,19 +21,15 @@ trait BottomSheetProps extends StObject {
 }
 object BottomSheetProps {
   
-  @scala.inline
-  def apply(isVisible: Boolean, modalProps: ModalProps): BottomSheetProps = {
+  inline def apply(isVisible: Boolean, modalProps: ModalProps): BottomSheetProps = {
     val __obj = js.Dynamic.literal(isVisible = isVisible.asInstanceOf[js.Any], modalProps = modalProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[BottomSheetProps]
   }
   
-  @scala.inline
-  implicit class BottomSheetPropsMutableBuilder[Self <: BottomSheetProps] (val x: Self) extends AnyVal {
+  extension [Self <: BottomSheetProps](x: Self) {
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalProps(value: ModalProps): Self = StObject.set(x, "modalProps", value.asInstanceOf[js.Any])
+    inline def setModalProps(value: ModalProps): Self = StObject.set(x, "modalProps", value.asInstanceOf[js.Any])
   }
 }

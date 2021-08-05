@@ -15,28 +15,21 @@ trait ListLocalDisksOutput extends StObject {
 }
 object ListLocalDisksOutput {
   
-  @scala.inline
-  def apply(): ListLocalDisksOutput = {
+  inline def apply(): ListLocalDisksOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListLocalDisksOutput]
   }
   
-  @scala.inline
-  implicit class ListLocalDisksOutputMutableBuilder[Self <: ListLocalDisksOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListLocalDisksOutput](x: Self) {
     
-    @scala.inline
-    def setDisks(value: Disks): Self = StObject.set(x, "Disks", value.asInstanceOf[js.Any])
+    inline def setDisks(value: Disks): Self = StObject.set(x, "Disks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisksUndefined: Self = StObject.set(x, "Disks", js.undefined)
+    inline def setDisksUndefined: Self = StObject.set(x, "Disks", js.undefined)
     
-    @scala.inline
-    def setDisksVarargs(value: Disk*): Self = StObject.set(x, "Disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: Disk*): Self = StObject.set(x, "Disks", js.Array(value :_*))
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
   }
 }

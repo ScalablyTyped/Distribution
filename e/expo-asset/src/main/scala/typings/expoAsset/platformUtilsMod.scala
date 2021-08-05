@@ -27,14 +27,11 @@ object platformUtilsMod {
   @js.native
   val IS_MANAGED_ENV: Boolean = js.native
   
-  @scala.inline
-  def downloadAsync(uri: js.Any, hash: js.Any, `type`: js.Any, name: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadAsync")(uri.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def downloadAsync(uri: js.Any, hash: js.Any, `type`: js.Any, name: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadAsync")(uri.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getLocalAssets(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalAssets")().asInstanceOf[js.Any]
+  inline def getLocalAssets(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalAssets")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def getManifest(): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getManifest")().asInstanceOf[StringDictionary[js.Any]]
+  inline def getManifest(): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getManifest")().asInstanceOf[StringDictionary[js.Any]]
   
   @JSImport("expo-asset/build/PlatformUtils", "manifestBaseUrl")
   @js.native

@@ -16,25 +16,19 @@ trait SchemaPolicyNetwork extends StObject {
 }
 object SchemaPolicyNetwork {
   
-  @scala.inline
-  def apply(): SchemaPolicyNetwork = {
+  inline def apply(): SchemaPolicyNetwork = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPolicyNetwork]
   }
   
-  @scala.inline
-  implicit class SchemaPolicyNetworkMutableBuilder[Self <: SchemaPolicyNetwork] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPolicyNetwork](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNetworkUrl(value: String): Self = StObject.set(x, "networkUrl", value.asInstanceOf[js.Any])
+    inline def setNetworkUrl(value: String): Self = StObject.set(x, "networkUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUrlUndefined: Self = StObject.set(x, "networkUrl", js.undefined)
+    inline def setNetworkUrlUndefined: Self = StObject.set(x, "networkUrl", js.undefined)
   }
 }

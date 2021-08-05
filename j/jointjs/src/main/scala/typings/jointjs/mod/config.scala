@@ -13,18 +13,15 @@ object config {
   @JSImport("jointjs", "config.classNamePrefix")
   @js.native
   def classNamePrefix: String = js.native
-  @scala.inline
-  def classNamePrefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classNamePrefix")(x.asInstanceOf[js.Any])
+  inline def classNamePrefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classNamePrefix")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "config.defaultTheme")
   @js.native
   def defaultTheme: String = js.native
-  @scala.inline
-  def defaultTheme_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTheme")(x.asInstanceOf[js.Any])
+  inline def defaultTheme_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTheme")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "config.useCSSSelectors")
   @js.native
   def useCSSSelectors: Boolean = js.native
-  @scala.inline
-  def useCSSSelectors_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useCSSSelectors")(x.asInstanceOf[js.Any])
+  inline def useCSSSelectors_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useCSSSelectors")(x.asInstanceOf[js.Any])
 }

@@ -12,6 +12,5 @@ object globalsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(ast: Node): js.Array[Name] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any]).asInstanceOf[js.Array[Name]]
+  inline def default(ast: Node): js.Array[Name] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any]).asInstanceOf[js.Array[Name]]
 }

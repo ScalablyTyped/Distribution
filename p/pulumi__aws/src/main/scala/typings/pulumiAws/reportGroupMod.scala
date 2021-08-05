@@ -72,21 +72,16 @@ object reportGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ReportGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReportGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReportGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReportGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ReportGroupState): ReportGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReportGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ReportGroupState, opts: CustomResourceOptions): ReportGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReportGroup]
+    inline def get(name: String, id: Input[ID]): ReportGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReportGroup]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReportGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReportGroup]
+    inline def get(name: String, id: Input[ID], state: ReportGroupState): ReportGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReportGroup]
+    inline def get(name: String, id: Input[ID], state: ReportGroupState, opts: CustomResourceOptions): ReportGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReportGroup]
     
     /**
       * Returns true if the given object is an instance of ReportGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/reportGroup.ReportGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codebuild/reportGroup.ReportGroup */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/reportGroup.ReportGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codebuild/reportGroup.ReportGroup */ Boolean]
   }
   
   trait ReportGroupArgs extends StObject {
@@ -113,8 +108,7 @@ object reportGroupMod {
   }
   object ReportGroupArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exportConfig: Input[typings.pulumiAws.inputMod.codebuild.ReportGroupExportConfig],
       `type`: Input[String]
     ): ReportGroupArgs = {
@@ -123,26 +117,19 @@ object reportGroupMod {
       __obj.asInstanceOf[ReportGroupArgs]
     }
     
-    @scala.inline
-    implicit class ReportGroupArgsMutableBuilder[Self <: ReportGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ReportGroupArgs](x: Self) {
       
-      @scala.inline
-      def setExportConfig(value: Input[typings.pulumiAws.inputMod.codebuild.ReportGroupExportConfig]): Self = StObject.set(x, "exportConfig", value.asInstanceOf[js.Any])
+      inline def setExportConfig(value: Input[typings.pulumiAws.inputMod.codebuild.ReportGroupExportConfig]): Self = StObject.set(x, "exportConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,50 +167,36 @@ object reportGroupMod {
   }
   object ReportGroupState {
     
-    @scala.inline
-    def apply(): ReportGroupState = {
+    inline def apply(): ReportGroupState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReportGroupState]
     }
     
-    @scala.inline
-    implicit class ReportGroupStateMutableBuilder[Self <: ReportGroupState] (val x: Self) extends AnyVal {
+    extension [Self <: ReportGroupState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCreated(value: Input[String]): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Input[String]): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+      inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
       
-      @scala.inline
-      def setExportConfig(value: Input[typings.pulumiAws.inputMod.codebuild.ReportGroupExportConfig]): Self = StObject.set(x, "exportConfig", value.asInstanceOf[js.Any])
+      inline def setExportConfig(value: Input[typings.pulumiAws.inputMod.codebuild.ReportGroupExportConfig]): Self = StObject.set(x, "exportConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportConfigUndefined: Self = StObject.set(x, "exportConfig", js.undefined)
+      inline def setExportConfigUndefined: Self = StObject.set(x, "exportConfig", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

@@ -18,25 +18,19 @@ trait HttpContext extends StObject {
 }
 object HttpContext {
   
-  @scala.inline
-  def apply(): HttpContext = {
+  inline def apply(): HttpContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpContext]
   }
   
-  @scala.inline
-  implicit class HttpContextMutableBuilder[Self <: HttpContext] (val x: Self) extends AnyVal {
+  extension [Self <: HttpContext](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setQueryString(value: HttpQueryString): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: HttpQueryString): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringUndefined: Self = StObject.set(x, "queryString", js.undefined)
+    inline def setQueryStringUndefined: Self = StObject.set(x, "queryString", js.undefined)
   }
 }

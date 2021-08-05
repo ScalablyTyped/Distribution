@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FontStyle extends StObject
 object FontStyle {
   
-  @scala.inline
-  def italic: typings.googleAppsScript.googleAppsScriptStrings.italic = "italic".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.italic]
+  inline def italic: typings.googleAppsScript.googleAppsScriptStrings.italic = "italic".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.italic]
   
-  @scala.inline
-  def normal: typings.googleAppsScript.googleAppsScriptStrings.normal = "normal".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.normal]
+  inline def normal: typings.googleAppsScript.googleAppsScriptStrings.normal = "normal".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.normal]
 }

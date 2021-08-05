@@ -11,10 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ChaiPlugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ChaiPlugin]
-  @scala.inline
-  def apply(wrapper: js.Function1[/* debugWrapper */ DebugWrapper, String]): ChaiPlugin = ^.asInstanceOf[js.Dynamic].apply(wrapper.asInstanceOf[js.Any]).asInstanceOf[ChaiPlugin]
+  inline def apply(): ChaiPlugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ChaiPlugin]
+  inline def apply(wrapper: js.Function1[/* debugWrapper */ DebugWrapper, String]): ChaiPlugin = ^.asInstanceOf[js.Dynamic].apply(wrapper.asInstanceOf[js.Any]).asInstanceOf[ChaiPlugin]
   
   @JSImport("chai-enzyme", JSImport.Namespace)
   @js.native

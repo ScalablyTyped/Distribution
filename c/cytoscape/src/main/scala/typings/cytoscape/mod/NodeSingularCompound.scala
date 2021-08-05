@@ -36,8 +36,7 @@ trait NodeSingularCompound extends StObject {
 }
 object NodeSingularCompound {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isChild: () => Boolean,
     isChildless: () => Boolean,
     isOrphan: () => Boolean,
@@ -47,19 +46,14 @@ object NodeSingularCompound {
     __obj.asInstanceOf[NodeSingularCompound]
   }
   
-  @scala.inline
-  implicit class NodeSingularCompoundMutableBuilder[Self <: NodeSingularCompound] (val x: Self) extends AnyVal {
+  extension [Self <: NodeSingularCompound](x: Self) {
     
-    @scala.inline
-    def setIsChild(value: () => Boolean): Self = StObject.set(x, "isChild", js.Any.fromFunction0(value))
+    inline def setIsChild(value: () => Boolean): Self = StObject.set(x, "isChild", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsChildless(value: () => Boolean): Self = StObject.set(x, "isChildless", js.Any.fromFunction0(value))
+    inline def setIsChildless(value: () => Boolean): Self = StObject.set(x, "isChildless", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsOrphan(value: () => Boolean): Self = StObject.set(x, "isOrphan", js.Any.fromFunction0(value))
+    inline def setIsOrphan(value: () => Boolean): Self = StObject.set(x, "isOrphan", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsParent(value: () => Boolean): Self = StObject.set(x, "isParent", js.Any.fromFunction0(value))
+    inline def setIsParent(value: () => Boolean): Self = StObject.set(x, "isParent", js.Any.fromFunction0(value))
   }
 }

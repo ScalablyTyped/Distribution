@@ -34,9 +34,9 @@ object rectanglePlotMod {
     
     /* private */ def _entityBBox(datum: js.Any, index: js.Any, dataset: js.Any, attrToProjector: js.Any): js.Any = js.native
     
-    var _label: js.Any = js.native
+    /* private */ var _label: js.Any = js.native
     
-    var _labelsEnabled: js.Any = js.native
+    /* private */ var _labelsEnabled: js.Any = js.native
     
     /* private */ def _overlayLabel(
       labelXRange: js.Any,
@@ -123,13 +123,11 @@ object rectanglePlotMod {
     @JSImport("plottable/build/src/plots/rectanglePlot", "Rectangle._X2_KEY")
     @js.native
     def _X2_KEY: js.Any = js.native
-    @scala.inline
-    def _X2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X2_KEY")(x.asInstanceOf[js.Any])
+    inline def _X2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X2_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/rectanglePlot", "Rectangle._Y2_KEY")
     @js.native
     def _Y2_KEY: js.Any = js.native
-    @scala.inline
-    def _Y2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y2_KEY")(x.asInstanceOf[js.Any])
+    inline def _Y2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y2_KEY")(x.asInstanceOf[js.Any])
   }
 }

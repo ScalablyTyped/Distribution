@@ -37,8 +37,7 @@ trait RegExp extends StObject {
 }
 object RegExp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     compile: () => RegExp,
     exec: java.lang.String => RegExpExecArray | Null,
     global: scala.Boolean,
@@ -52,31 +51,22 @@ object RegExp {
     __obj.asInstanceOf[RegExp]
   }
   
-  @scala.inline
-  implicit class RegExpMutableBuilder[Self <: RegExp] (val x: Self) extends AnyVal {
+  extension [Self <: RegExp](x: Self) {
     
-    @scala.inline
-    def setCompile(value: () => RegExp): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
+    inline def setCompile(value: () => RegExp): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExec(value: java.lang.String => RegExpExecArray | Null): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
+    inline def setExec(value: java.lang.String => RegExpExecArray | Null): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGlobal(value: scala.Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: scala.Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCase(value: scala.Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+    inline def setIgnoreCase(value: scala.Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
+    inline def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiline(value: scala.Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+    inline def setMultiline(value: scala.Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: java.lang.String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: java.lang.String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest(value: java.lang.String => scala.Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+    inline def setTest(value: java.lang.String => scala.Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
   }
 }

@@ -23,35 +23,26 @@ trait EventObjectDestroyedobjec extends StObject {
 }
 object EventObjectDestroyedobjec {
   
-  @scala.inline
-  def apply(objectId: String, source: String, tags: js.Array[Tag], timestamp: String, timestampMillis: String): EventObjectDestroyedobjec = {
+  inline def apply(objectId: String, source: String, tags: js.Array[Tag], timestamp: String, timestampMillis: String): EventObjectDestroyedobjec = {
     val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], timestampMillis = timestampMillis.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ObjectDestroyed")
     __obj.asInstanceOf[EventObjectDestroyedobjec]
   }
   
-  @scala.inline
-  implicit class EventObjectDestroyedobjecMutableBuilder[Self <: EventObjectDestroyedobjec] (val x: Self) extends AnyVal {
+  extension [Self <: EventObjectDestroyedobjec](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
+    inline def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ObjectDestroyed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ObjectDestroyed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

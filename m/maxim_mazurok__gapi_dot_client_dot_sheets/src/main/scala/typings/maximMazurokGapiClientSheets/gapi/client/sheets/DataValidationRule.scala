@@ -20,37 +20,27 @@ trait DataValidationRule extends StObject {
 }
 object DataValidationRule {
   
-  @scala.inline
-  def apply(): DataValidationRule = {
+  inline def apply(): DataValidationRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataValidationRule]
   }
   
-  @scala.inline
-  implicit class DataValidationRuleMutableBuilder[Self <: DataValidationRule] (val x: Self) extends AnyVal {
+  extension [Self <: DataValidationRule](x: Self) {
     
-    @scala.inline
-    def setCondition(value: BooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: BooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setInputMessage(value: String): Self = StObject.set(x, "inputMessage", value.asInstanceOf[js.Any])
+    inline def setInputMessage(value: String): Self = StObject.set(x, "inputMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputMessageUndefined: Self = StObject.set(x, "inputMessage", js.undefined)
+    inline def setInputMessageUndefined: Self = StObject.set(x, "inputMessage", js.undefined)
     
-    @scala.inline
-    def setShowCustomUi(value: Boolean): Self = StObject.set(x, "showCustomUi", value.asInstanceOf[js.Any])
+    inline def setShowCustomUi(value: Boolean): Self = StObject.set(x, "showCustomUi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCustomUiUndefined: Self = StObject.set(x, "showCustomUi", js.undefined)
+    inline def setShowCustomUiUndefined: Self = StObject.set(x, "showCustomUi", js.undefined)
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

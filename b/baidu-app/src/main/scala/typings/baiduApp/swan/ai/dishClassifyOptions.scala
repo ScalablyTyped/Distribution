@@ -27,34 +27,25 @@ trait dishClassifyOptions
 }
 object dishClassifyOptions {
   
-  @scala.inline
-  def apply(image: String): dishClassifyOptions = {
+  inline def apply(image: String): dishClassifyOptions = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     __obj.asInstanceOf[dishClassifyOptions]
   }
   
-  @scala.inline
-  implicit class dishClassifyOptionsMutableBuilder[Self <: dishClassifyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: dishClassifyOptions](x: Self) {
     
-    @scala.inline
-    def setFilter_threshold(value: Double): Self = StObject.set(x, "filter_threshold", value.asInstanceOf[js.Any])
+    inline def setFilter_threshold(value: Double): Self = StObject.set(x, "filter_threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter_thresholdUndefined: Self = StObject.set(x, "filter_threshold", js.undefined)
+    inline def setFilter_thresholdUndefined: Self = StObject.set(x, "filter_threshold", js.undefined)
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ dishClassifyResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ dishClassifyResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTop_num(value: Double): Self = StObject.set(x, "top_num", value.asInstanceOf[js.Any])
+    inline def setTop_num(value: Double): Self = StObject.set(x, "top_num", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop_numUndefined: Self = StObject.set(x, "top_num", js.undefined)
+    inline def setTop_numUndefined: Self = StObject.set(x, "top_num", js.undefined)
   }
 }

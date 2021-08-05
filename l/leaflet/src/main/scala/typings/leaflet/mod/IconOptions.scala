@@ -13,16 +13,13 @@ trait IconOptions
 }
 object IconOptions {
   
-  @scala.inline
-  def apply(iconUrl: String): IconOptions = {
+  inline def apply(iconUrl: String): IconOptions = {
     val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconOptions]
   }
   
-  @scala.inline
-  implicit class IconOptionsMutableBuilder[Self <: IconOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IconOptions](x: Self) {
     
-    @scala.inline
-    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
   }
 }

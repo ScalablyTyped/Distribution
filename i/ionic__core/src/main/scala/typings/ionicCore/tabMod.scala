@@ -34,9 +34,9 @@ object tabMod {
     
     var el: HTMLIonTabElement = js.native
     
-    var loaded: js.Any = js.native
+    /* private */ var loaded: js.Any = js.native
     
-    var prepareLazyLoaded: js.Any = js.native
+    /* private */ var prepareLazyLoaded: js.Any = js.native
     
     @JSName("render")
     def render_MTab(): js.Any = js.native

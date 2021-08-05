@@ -24,25 +24,19 @@ trait SchemaDeleteRangeRequest extends StObject {
 }
 object SchemaDeleteRangeRequest {
   
-  @scala.inline
-  def apply(): SchemaDeleteRangeRequest = {
+  inline def apply(): SchemaDeleteRangeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeleteRangeRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDeleteRangeRequestMutableBuilder[Self <: SchemaDeleteRangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeleteRangeRequest](x: Self) {
     
-    @scala.inline
-    def setRange(value: SchemaGridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SchemaGridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setShiftDimension(value: String): Self = StObject.set(x, "shiftDimension", value.asInstanceOf[js.Any])
+    inline def setShiftDimension(value: String): Self = StObject.set(x, "shiftDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShiftDimensionUndefined: Self = StObject.set(x, "shiftDimension", js.undefined)
+    inline def setShiftDimensionUndefined: Self = StObject.set(x, "shiftDimension", js.undefined)
   }
 }

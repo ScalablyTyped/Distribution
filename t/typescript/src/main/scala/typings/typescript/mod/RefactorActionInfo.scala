@@ -30,25 +30,19 @@ trait RefactorActionInfo extends StObject {
 }
 object RefactorActionInfo {
   
-  @scala.inline
-  def apply(description: java.lang.String, name: java.lang.String): RefactorActionInfo = {
+  inline def apply(description: java.lang.String, name: java.lang.String): RefactorActionInfo = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefactorActionInfo]
   }
   
-  @scala.inline
-  implicit class RefactorActionInfoMutableBuilder[Self <: RefactorActionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RefactorActionInfo](x: Self) {
     
-    @scala.inline
-    def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotApplicableReason(value: java.lang.String): Self = StObject.set(x, "notApplicableReason", value.asInstanceOf[js.Any])
+    inline def setNotApplicableReason(value: java.lang.String): Self = StObject.set(x, "notApplicableReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotApplicableReasonUndefined: Self = StObject.set(x, "notApplicableReason", js.undefined)
+    inline def setNotApplicableReasonUndefined: Self = StObject.set(x, "notApplicableReason", js.undefined)
   }
 }

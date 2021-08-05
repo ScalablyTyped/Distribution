@@ -43,42 +43,32 @@ object searchMod extends Shortcut {
   }
   object SearchProps {
     
-    @scala.inline
-    def apply(): SearchProps = {
+    inline def apply(): SearchProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SearchProps]
     }
     
-    @scala.inline
-    implicit class SearchPropsMutableBuilder[Self <: SearchProps] (val x: Self) extends AnyVal {
+    extension [Self <: SearchProps](x: Self) {
       
-      @scala.inline
-      def setEnterButton(value: ReactNode): Self = StObject.set(x, "enterButton", value.asInstanceOf[js.Any])
+      inline def setEnterButton(value: ReactNode): Self = StObject.set(x, "enterButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterButtonUndefined: Self = StObject.set(x, "enterButton", js.undefined)
+      inline def setEnterButtonUndefined: Self = StObject.set(x, "enterButton", js.undefined)
       
-      @scala.inline
-      def setInputPrefixCls(value: String): Self = StObject.set(x, "inputPrefixCls", value.asInstanceOf[js.Any])
+      inline def setInputPrefixCls(value: String): Self = StObject.set(x, "inputPrefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPrefixClsUndefined: Self = StObject.set(x, "inputPrefixCls", js.undefined)
+      inline def setInputPrefixClsUndefined: Self = StObject.set(x, "inputPrefixCls", js.undefined)
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setOnSearch(
+      inline def setOnSearch(
         value: (/* value */ String, /* event */ js.UndefOr[
               ChangeEvent[HTMLInputElement] | (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLInputElement]
             ]) => Unit
       ): Self = StObject.set(x, "onSearch", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
+      inline def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
     }
   }
   

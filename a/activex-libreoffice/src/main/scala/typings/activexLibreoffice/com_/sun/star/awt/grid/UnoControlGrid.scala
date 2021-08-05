@@ -52,8 +52,7 @@ trait UnoControlGrid
      with XGridRowSelection
 object UnoControlGrid {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleContext: XAccessibleContext,
     Context: XInterface,
     CurrentColumn: Double,

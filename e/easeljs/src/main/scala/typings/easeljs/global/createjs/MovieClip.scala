@@ -35,30 +35,25 @@ object MovieClip {
   @JSGlobal("createjs.MovieClip.INDEPENDENT")
   @js.native
   def INDEPENDENT: String = js.native
-  @scala.inline
-  def INDEPENDENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDEPENDENT")(x.asInstanceOf[js.Any])
+  inline def INDEPENDENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDEPENDENT")(x.asInstanceOf[js.Any])
   
   @JSGlobal("createjs.MovieClip.SINGLE_FRAME")
   @js.native
   def SINGLE_FRAME: String = js.native
-  @scala.inline
-  def SINGLE_FRAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SINGLE_FRAME")(x.asInstanceOf[js.Any])
+  inline def SINGLE_FRAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SINGLE_FRAME")(x.asInstanceOf[js.Any])
   
   @JSGlobal("createjs.MovieClip.SYNCHED")
   @js.native
   def SYNCHED: String = js.native
-  @scala.inline
-  def SYNCHED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYNCHED")(x.asInstanceOf[js.Any])
+  inline def SYNCHED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYNCHED")(x.asInstanceOf[js.Any])
   
   @JSGlobal("createjs.MovieClip.buildDate")
   @js.native
   def buildDate: String = js.native
-  @scala.inline
-  def buildDate_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildDate")(x.asInstanceOf[js.Any])
+  inline def buildDate_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildDate")(x.asInstanceOf[js.Any])
   
   @JSGlobal("createjs.MovieClip.version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 }

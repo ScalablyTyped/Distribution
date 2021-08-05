@@ -22,37 +22,26 @@ object coreThemeMod {
   trait CoreTheme extends StObject
   object CoreTheme {
     
-    @scala.inline
-    def default: typings.tablesorter.tablesorterStrings.default = "default".asInstanceOf[typings.tablesorter.tablesorterStrings.default]
+    inline def default: typings.tablesorter.tablesorterStrings.default = "default".asInstanceOf[typings.tablesorter.tablesorterStrings.default]
     
-    @scala.inline
-    def blackice: typings.tablesorter.tablesorterStrings.blackice = "blackice".asInstanceOf[typings.tablesorter.tablesorterStrings.blackice]
+    inline def blackice: typings.tablesorter.tablesorterStrings.blackice = "blackice".asInstanceOf[typings.tablesorter.tablesorterStrings.blackice]
     
-    @scala.inline
-    def blue: typings.tablesorter.tablesorterStrings.blue = "blue".asInstanceOf[typings.tablesorter.tablesorterStrings.blue]
+    inline def blue: typings.tablesorter.tablesorterStrings.blue = "blue".asInstanceOf[typings.tablesorter.tablesorterStrings.blue]
     
-    @scala.inline
-    def bootstrap: typings.tablesorter.tablesorterStrings.bootstrap = "bootstrap".asInstanceOf[typings.tablesorter.tablesorterStrings.bootstrap]
+    inline def bootstrap: typings.tablesorter.tablesorterStrings.bootstrap = "bootstrap".asInstanceOf[typings.tablesorter.tablesorterStrings.bootstrap]
     
-    @scala.inline
-    def dark: typings.tablesorter.tablesorterStrings.dark = "dark".asInstanceOf[typings.tablesorter.tablesorterStrings.dark]
+    inline def dark: typings.tablesorter.tablesorterStrings.dark = "dark".asInstanceOf[typings.tablesorter.tablesorterStrings.dark]
     
-    @scala.inline
-    def dropbox: typings.tablesorter.tablesorterStrings.dropbox = "dropbox".asInstanceOf[typings.tablesorter.tablesorterStrings.dropbox]
+    inline def dropbox: typings.tablesorter.tablesorterStrings.dropbox = "dropbox".asInstanceOf[typings.tablesorter.tablesorterStrings.dropbox]
     
-    @scala.inline
-    def green: typings.tablesorter.tablesorterStrings.green = "green".asInstanceOf[typings.tablesorter.tablesorterStrings.green]
+    inline def green: typings.tablesorter.tablesorterStrings.green = "green".asInstanceOf[typings.tablesorter.tablesorterStrings.green]
     
-    @scala.inline
-    def grey: typings.tablesorter.tablesorterStrings.grey = "grey".asInstanceOf[typings.tablesorter.tablesorterStrings.grey]
+    inline def grey: typings.tablesorter.tablesorterStrings.grey = "grey".asInstanceOf[typings.tablesorter.tablesorterStrings.grey]
     
-    @scala.inline
-    def ice: typings.tablesorter.tablesorterStrings.ice = "ice".asInstanceOf[typings.tablesorter.tablesorterStrings.ice]
+    inline def ice: typings.tablesorter.tablesorterStrings.ice = "ice".asInstanceOf[typings.tablesorter.tablesorterStrings.ice]
     
-    @scala.inline
-    def jui: typings.tablesorter.tablesorterStrings.jui = "jui".asInstanceOf[typings.tablesorter.tablesorterStrings.jui]
+    inline def jui: typings.tablesorter.tablesorterStrings.jui = "jui".asInstanceOf[typings.tablesorter.tablesorterStrings.jui]
     
-    @scala.inline
-    def `metro-dark`: typings.tablesorter.tablesorterStrings.`metro-dark` = "metro-dark".asInstanceOf[typings.tablesorter.tablesorterStrings.`metro-dark`]
+    inline def `metro-dark`: typings.tablesorter.tablesorterStrings.`metro-dark` = "metro-dark".asInstanceOf[typings.tablesorter.tablesorterStrings.`metro-dark`]
   }
 }

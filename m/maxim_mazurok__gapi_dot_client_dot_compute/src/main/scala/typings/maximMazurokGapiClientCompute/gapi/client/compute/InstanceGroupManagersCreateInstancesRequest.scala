@@ -11,22 +11,17 @@ trait InstanceGroupManagersCreateInstancesRequest extends StObject {
 }
 object InstanceGroupManagersCreateInstancesRequest {
   
-  @scala.inline
-  def apply(): InstanceGroupManagersCreateInstancesRequest = {
+  inline def apply(): InstanceGroupManagersCreateInstancesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceGroupManagersCreateInstancesRequest]
   }
   
-  @scala.inline
-  implicit class InstanceGroupManagersCreateInstancesRequestMutableBuilder[Self <: InstanceGroupManagersCreateInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceGroupManagersCreateInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setInstances(value: js.Array[PerInstanceConfig]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[PerInstanceConfig]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: PerInstanceConfig*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: PerInstanceConfig*): Self = StObject.set(x, "instances", js.Array(value :_*))
   }
 }

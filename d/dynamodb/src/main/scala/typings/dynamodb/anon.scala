@@ -22,20 +22,16 @@ object anon {
   }
   object AttributeNames {
     
-    @scala.inline
-    def apply(attributeNames: js.Any, attributeValues: js.Any): AttributeNames = {
+    inline def apply(attributeNames: js.Any, attributeValues: js.Any): AttributeNames = {
       val __obj = js.Dynamic.literal(attributeNames = attributeNames.asInstanceOf[js.Any], attributeValues = attributeValues.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeNames]
     }
     
-    @scala.inline
-    implicit class AttributeNamesMutableBuilder[Self <: AttributeNames] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeNames](x: Self) {
       
-      @scala.inline
-      def setAttributeNames(value: js.Any): Self = StObject.set(x, "attributeNames", value.asInstanceOf[js.Any])
+      inline def setAttributeNames(value: js.Any): Self = StObject.set(x, "attributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeValues(value: js.Any): Self = StObject.set(x, "attributeValues", value.asInstanceOf[js.Any])
+      inline def setAttributeValues(value: js.Any): Self = StObject.set(x, "attributeValues", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,26 +43,20 @@ object anon {
   }
   object Dynamodb {
     
-    @scala.inline
-    def apply(): Dynamodb = {
+    inline def apply(): Dynamodb = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dynamodb]
     }
     
-    @scala.inline
-    implicit class DynamodbMutableBuilder[Self <: Dynamodb] (val x: Self) extends AnyVal {
+    extension [Self <: Dynamodb](x: Self) {
       
-      @scala.inline
-      def setDynamodb(value: DynamoDB): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
+      inline def setDynamodb(value: DynamoDB): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
+      inline def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
       
-      @scala.inline
-      def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
     }
   }
   
@@ -78,20 +68,16 @@ object anon {
   }
   object ReadCapacity {
     
-    @scala.inline
-    def apply(readCapacity: Double, writeCapacity: Double): ReadCapacity = {
+    inline def apply(readCapacity: Double, writeCapacity: Double): ReadCapacity = {
       val __obj = js.Dynamic.literal(readCapacity = readCapacity.asInstanceOf[js.Any], writeCapacity = writeCapacity.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadCapacity]
     }
     
-    @scala.inline
-    implicit class ReadCapacityMutableBuilder[Self <: ReadCapacity] (val x: Self) extends AnyVal {
+    extension [Self <: ReadCapacity](x: Self) {
       
-      @scala.inline
-      def setReadCapacity(value: Double): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
+      inline def setReadCapacity(value: Double): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteCapacity(value: Double): Self = StObject.set(x, "writeCapacity", value.asInstanceOf[js.Any])
+      inline def setWriteCapacity(value: Double): Self = StObject.set(x, "writeCapacity", value.asInstanceOf[js.Any])
     }
   }
   

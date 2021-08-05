@@ -18,25 +18,19 @@ trait CreateChannelMembershipResponse extends StObject {
 }
 object CreateChannelMembershipResponse {
   
-  @scala.inline
-  def apply(): CreateChannelMembershipResponse = {
+  inline def apply(): CreateChannelMembershipResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateChannelMembershipResponse]
   }
   
-  @scala.inline
-  implicit class CreateChannelMembershipResponseMutableBuilder[Self <: CreateChannelMembershipResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateChannelMembershipResponse](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
+    inline def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
     
-    @scala.inline
-    def setMember(value: Identity): Self = StObject.set(x, "Member", value.asInstanceOf[js.Any])
+    inline def setMember(value: Identity): Self = StObject.set(x, "Member", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberUndefined: Self = StObject.set(x, "Member", js.undefined)
+    inline def setMemberUndefined: Self = StObject.set(x, "Member", js.undefined)
   }
 }

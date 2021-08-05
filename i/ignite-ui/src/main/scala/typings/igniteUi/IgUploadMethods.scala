@@ -92,8 +92,7 @@ trait IgUploadMethods extends StObject {
 }
 object IgUploadMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addDataField: (js.Object, js.Object) => Unit,
     addDataFields: (js.Object, js.Array[js.Any]) => Unit,
     cancelAll: () => Unit,
@@ -113,49 +112,34 @@ object IgUploadMethods {
     __obj.asInstanceOf[IgUploadMethods]
   }
   
-  @scala.inline
-  implicit class IgUploadMethodsMutableBuilder[Self <: IgUploadMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgUploadMethods](x: Self) {
     
-    @scala.inline
-    def setAddDataField(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "addDataField", js.Any.fromFunction2(value))
+    inline def setAddDataField(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "addDataField", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddDataFields(value: (js.Object, js.Array[js.Any]) => Unit): Self = StObject.set(x, "addDataFields", js.Any.fromFunction2(value))
+    inline def setAddDataFields(value: (js.Object, js.Array[js.Any]) => Unit): Self = StObject.set(x, "addDataFields", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCancelAll(value: () => Unit): Self = StObject.set(x, "cancelAll", js.Any.fromFunction0(value))
+    inline def setCancelAll(value: () => Unit): Self = StObject.set(x, "cancelAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCancelUpload(value: Double => Unit): Self = StObject.set(x, "cancelUpload", js.Any.fromFunction1(value))
+    inline def setCancelUpload(value: Double => Unit): Self = StObject.set(x, "cancelUpload", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
+    inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
+    inline def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
+    inline def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
+    inline def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setContainer(value: () => Unit): Self = StObject.set(x, "container", js.Any.fromFunction0(value))
+    inline def setContainer(value: () => Unit): Self = StObject.set(x, "container", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFileInfo(value: Double => js.Object): Self = StObject.set(x, "getFileInfo", js.Any.fromFunction1(value))
+    inline def setGetFileInfo(value: Double => js.Object): Self = StObject.set(x, "getFileInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFileInfoData(value: () => js.Object): Self = StObject.set(x, "getFileInfoData", js.Any.fromFunction0(value))
+    inline def setGetFileInfoData(value: () => js.Object): Self = StObject.set(x, "getFileInfoData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartUpload(value: Double => Unit): Self = StObject.set(x, "startUpload", js.Any.fromFunction1(value))
+    inline def setStartUpload(value: Double => Unit): Self = StObject.set(x, "startUpload", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWidget(value: () => Unit): Self = StObject.set(x, "widget", js.Any.fromFunction0(value))
+    inline def setWidget(value: () => Unit): Self = StObject.set(x, "widget", js.Any.fromFunction0(value))
   }
 }

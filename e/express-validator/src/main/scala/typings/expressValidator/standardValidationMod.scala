@@ -20,13 +20,13 @@ object standardValidationMod {
     
     var message: js.Any = js.native
     
-    val negated: js.Any = js.native
+    /* private */ val negated: js.Any = js.native
     
-    val options: js.Any = js.native
+    /* private */ val options: js.Any = js.native
     
     /* CompleteClass */
     override def run(context: Context, value: js.Any, meta: Meta): js.Promise[Unit] = js.native
     
-    val validator: js.Any = js.native
+    /* private */ val validator: js.Any = js.native
   }
 }

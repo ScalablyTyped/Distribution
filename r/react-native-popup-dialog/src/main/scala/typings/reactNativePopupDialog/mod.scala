@@ -117,14 +117,11 @@ object mod {
   trait AlignTypes extends StObject
   object AlignTypes {
     
-    @scala.inline
-    def center: typings.reactNativePopupDialog.reactNativePopupDialogStrings.center = "center".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.center]
+    inline def center: typings.reactNativePopupDialog.reactNativePopupDialogStrings.center = "center".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.center]
     
-    @scala.inline
-    def left: typings.reactNativePopupDialog.reactNativePopupDialogStrings.left = "left".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.left]
+    inline def left: typings.reactNativePopupDialog.reactNativePopupDialogStrings.left = "left".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.left]
     
-    @scala.inline
-    def right: typings.reactNativePopupDialog.reactNativePopupDialogStrings.right = "right".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.right]
+    inline def right: typings.reactNativePopupDialog.reactNativePopupDialogStrings.right = "right".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.right]
   }
   
   @js.native
@@ -158,65 +155,46 @@ object mod {
   }
   object DialogButtonProps {
     
-    @scala.inline
-    def apply(text: String): DialogButtonProps = {
+    inline def apply(text: String): DialogButtonProps = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[DialogButtonProps]
     }
     
-    @scala.inline
-    implicit class DialogButtonPropsMutableBuilder[Self <: DialogButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: DialogButtonProps](x: Self) {
       
-      @scala.inline
-      def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
+      inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
+      inline def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
       
-      @scala.inline
-      def setAlign(value: AlignTypes): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: AlignTypes): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
+      inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
+      inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+      inline def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+      inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
+      inline def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
       
-      @scala.inline
-      def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+      inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     }
   }
   
@@ -226,23 +204,18 @@ object mod {
   }
   object DialogContentProps {
     
-    @scala.inline
-    def apply(): DialogContentProps = {
+    inline def apply(): DialogContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DialogContentProps]
     }
     
-    @scala.inline
-    implicit class DialogContentPropsMutableBuilder[Self <: DialogContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: DialogContentProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -254,29 +227,22 @@ object mod {
   }
   object DialogFooterProps {
     
-    @scala.inline
-    def apply(): DialogFooterProps = {
+    inline def apply(): DialogFooterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DialogFooterProps]
     }
     
-    @scala.inline
-    implicit class DialogFooterPropsMutableBuilder[Self <: DialogFooterProps] (val x: Self) extends AnyVal {
+    extension [Self <: DialogFooterProps](x: Self) {
       
-      @scala.inline
-      def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
+      inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
+      inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -322,134 +288,92 @@ object mod {
   }
   object DialogProps {
     
-    @scala.inline
-    def apply(): DialogProps = {
+    inline def apply(): DialogProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DialogProps]
     }
     
-    @scala.inline
-    implicit class DialogPropsMutableBuilder[Self <: DialogProps] (val x: Self) extends AnyVal {
+    extension [Self <: DialogProps](x: Self) {
       
-      @scala.inline
-      def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
       
-      @scala.inline
-      def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+      inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
+      inline def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
       
-      @scala.inline
-      def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+      inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
       
-      @scala.inline
-      def setDialogAnimation(value: FadeAnimation | ScaleAnimation | SlideAnimation): Self = StObject.set(x, "dialogAnimation", value.asInstanceOf[js.Any])
+      inline def setDialogAnimation(value: FadeAnimation | ScaleAnimation | SlideAnimation): Self = StObject.set(x, "dialogAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogAnimationUndefined: Self = StObject.set(x, "dialogAnimation", js.undefined)
+      inline def setDialogAnimationUndefined: Self = StObject.set(x, "dialogAnimation", js.undefined)
       
-      @scala.inline
-      def setDialogStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dialogStyle", value.asInstanceOf[js.Any])
+      inline def setDialogStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dialogStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogStyleNull: Self = StObject.set(x, "dialogStyle", null)
+      inline def setDialogStyleNull: Self = StObject.set(x, "dialogStyle", null)
       
-      @scala.inline
-      def setDialogStyleUndefined: Self = StObject.set(x, "dialogStyle", js.undefined)
+      inline def setDialogStyleUndefined: Self = StObject.set(x, "dialogStyle", js.undefined)
       
-      @scala.inline
-      def setDialogTitle(value: js.Any): Self = StObject.set(x, "dialogTitle", value.asInstanceOf[js.Any])
+      inline def setDialogTitle(value: js.Any): Self = StObject.set(x, "dialogTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogTitleUndefined: Self = StObject.set(x, "dialogTitle", js.undefined)
+      inline def setDialogTitleUndefined: Self = StObject.set(x, "dialogTitle", js.undefined)
       
-      @scala.inline
-      def setFooter(value: js.Any): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: js.Any): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setHasOverlay(value: Boolean): Self = StObject.set(x, "hasOverlay", value.asInstanceOf[js.Any])
+      inline def setHasOverlay(value: Boolean): Self = StObject.set(x, "hasOverlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasOverlayUndefined: Self = StObject.set(x, "hasOverlay", js.undefined)
+      inline def setHasOverlayUndefined: Self = StObject.set(x, "hasOverlay", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
+      inline def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+      inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      @scala.inline
-      def setOnHardwareBackPress(value: () => Boolean): Self = StObject.set(x, "onHardwareBackPress", js.Any.fromFunction0(value))
+      inline def setOnHardwareBackPress(value: () => Boolean): Self = StObject.set(x, "onHardwareBackPress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnHardwareBackPressUndefined: Self = StObject.set(x, "onHardwareBackPress", js.undefined)
+      inline def setOnHardwareBackPressUndefined: Self = StObject.set(x, "onHardwareBackPress", js.undefined)
       
-      @scala.inline
-      def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+      inline def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
-      @scala.inline
-      def setOnTouchOutside(value: () => Unit): Self = StObject.set(x, "onTouchOutside", js.Any.fromFunction0(value))
+      inline def setOnTouchOutside(value: () => Unit): Self = StObject.set(x, "onTouchOutside", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnTouchOutsideUndefined: Self = StObject.set(x, "onTouchOutside", js.undefined)
+      inline def setOnTouchOutsideUndefined: Self = StObject.set(x, "onTouchOutside", js.undefined)
       
-      @scala.inline
-      def setOverlayBackgroundColor(value: String): Self = StObject.set(x, "overlayBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setOverlayBackgroundColor(value: String): Self = StObject.set(x, "overlayBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayBackgroundColorUndefined: Self = StObject.set(x, "overlayBackgroundColor", js.undefined)
+      inline def setOverlayBackgroundColorUndefined: Self = StObject.set(x, "overlayBackgroundColor", js.undefined)
       
-      @scala.inline
-      def setOverlayOpacity(value: Double): Self = StObject.set(x, "overlayOpacity", value.asInstanceOf[js.Any])
+      inline def setOverlayOpacity(value: Double): Self = StObject.set(x, "overlayOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayOpacityUndefined: Self = StObject.set(x, "overlayOpacity", js.undefined)
+      inline def setOverlayOpacityUndefined: Self = StObject.set(x, "overlayOpacity", js.undefined)
       
-      @scala.inline
-      def setOverlayPointerEvents(value: OverlayPointerEventTypes): Self = StObject.set(x, "overlayPointerEvents", value.asInstanceOf[js.Any])
+      inline def setOverlayPointerEvents(value: OverlayPointerEventTypes): Self = StObject.set(x, "overlayPointerEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayPointerEventsUndefined: Self = StObject.set(x, "overlayPointerEvents", js.undefined)
+      inline def setOverlayPointerEventsUndefined: Self = StObject.set(x, "overlayPointerEvents", js.undefined)
       
-      @scala.inline
-      def setRounded(value: Boolean): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+      inline def setRounded(value: Boolean): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+      inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
       
-      @scala.inline
-      def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
+      inline def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
+      inline def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -467,47 +391,34 @@ object mod {
   }
   object DialogTitleProps {
     
-    @scala.inline
-    def apply(title: String): DialogTitleProps = {
+    inline def apply(title: String): DialogTitleProps = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[DialogTitleProps]
     }
     
-    @scala.inline
-    implicit class DialogTitlePropsMutableBuilder[Self <: DialogTitleProps] (val x: Self) extends AnyVal {
+    extension [Self <: DialogTitleProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: AlignTypes): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: AlignTypes): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setHasTitleBar(value: Boolean): Self = StObject.set(x, "hasTitleBar", value.asInstanceOf[js.Any])
+      inline def setHasTitleBar(value: Boolean): Self = StObject.set(x, "hasTitleBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasTitleBarUndefined: Self = StObject.set(x, "hasTitleBar", js.undefined)
+      inline def setHasTitleBarUndefined: Self = StObject.set(x, "hasTitleBar", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
+      inline def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
       
-      @scala.inline
-      def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+      inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -518,11 +429,9 @@ object mod {
   trait OverlayPointerEventTypes extends StObject
   object OverlayPointerEventTypes {
     
-    @scala.inline
-    def auto: typings.reactNativePopupDialog.reactNativePopupDialogStrings.auto = "auto".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.auto]
+    inline def auto: typings.reactNativePopupDialog.reactNativePopupDialogStrings.auto = "auto".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.auto]
     
-    @scala.inline
-    def none: typings.reactNativePopupDialog.reactNativePopupDialogStrings.none = "none".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.none]
+    inline def none: typings.reactNativePopupDialog.reactNativePopupDialogStrings.none = "none".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.none]
   }
   
   trait OverlayProps extends StObject {
@@ -545,59 +454,42 @@ object mod {
   }
   object OverlayProps {
     
-    @scala.inline
-    def apply(onPress: GestureResponderEvent => Unit): OverlayProps = {
+    inline def apply(onPress: GestureResponderEvent => Unit): OverlayProps = {
       val __obj = js.Dynamic.literal(onPress = js.Any.fromFunction1(onPress))
       __obj.asInstanceOf[OverlayProps]
     }
     
-    @scala.inline
-    implicit class OverlayPropsMutableBuilder[Self <: OverlayProps] (val x: Self) extends AnyVal {
+    extension [Self <: OverlayProps](x: Self) {
       
-      @scala.inline
-      def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setOnPress(value: GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+      inline def setOnPress(value: GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setPointerEvents(value: String): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+      inline def setPointerEvents(value: String): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
+      inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
       
-      @scala.inline
-      def setShowOverlay(value: Boolean): Self = StObject.set(x, "showOverlay", value.asInstanceOf[js.Any])
+      inline def setShowOverlay(value: Boolean): Self = StObject.set(x, "showOverlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowOverlayUndefined: Self = StObject.set(x, "showOverlay", js.undefined)
+      inline def setShowOverlayUndefined: Self = StObject.set(x, "showOverlay", js.undefined)
       
-      @scala.inline
-      def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
+      inline def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
+      inline def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   
@@ -610,16 +502,12 @@ object mod {
   trait SlideFromTypes extends StObject
   object SlideFromTypes {
     
-    @scala.inline
-    def bottom: typings.reactNativePopupDialog.reactNativePopupDialogStrings.bottom = "bottom".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.bottom]
+    inline def bottom: typings.reactNativePopupDialog.reactNativePopupDialogStrings.bottom = "bottom".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.bottom]
     
-    @scala.inline
-    def left: typings.reactNativePopupDialog.reactNativePopupDialogStrings.left = "left".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.left]
+    inline def left: typings.reactNativePopupDialog.reactNativePopupDialogStrings.left = "left".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.left]
     
-    @scala.inline
-    def right: typings.reactNativePopupDialog.reactNativePopupDialogStrings.right = "right".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.right]
+    inline def right: typings.reactNativePopupDialog.reactNativePopupDialogStrings.right = "right".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.right]
     
-    @scala.inline
-    def top: typings.reactNativePopupDialog.reactNativePopupDialogStrings.top = "top".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.top]
+    inline def top: typings.reactNativePopupDialog.reactNativePopupDialogStrings.top = "top".asInstanceOf[typings.reactNativePopupDialog.reactNativePopupDialogStrings.top]
   }
 }

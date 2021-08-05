@@ -28,37 +28,27 @@ trait GetDeployablePatchSnapshotForInstanceResult extends StObject {
 }
 object GetDeployablePatchSnapshotForInstanceResult {
   
-  @scala.inline
-  def apply(): GetDeployablePatchSnapshotForInstanceResult = {
+  inline def apply(): GetDeployablePatchSnapshotForInstanceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDeployablePatchSnapshotForInstanceResult]
   }
   
-  @scala.inline
-  implicit class GetDeployablePatchSnapshotForInstanceResultMutableBuilder[Self <: GetDeployablePatchSnapshotForInstanceResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetDeployablePatchSnapshotForInstanceResult](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setProduct(value: Product): Self = StObject.set(x, "Product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: Product): Self = StObject.set(x, "Product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductUndefined: Self = StObject.set(x, "Product", js.undefined)
+    inline def setProductUndefined: Self = StObject.set(x, "Product", js.undefined)
     
-    @scala.inline
-    def setSnapshotDownloadUrl(value: SnapshotDownloadUrl): Self = StObject.set(x, "SnapshotDownloadUrl", value.asInstanceOf[js.Any])
+    inline def setSnapshotDownloadUrl(value: SnapshotDownloadUrl): Self = StObject.set(x, "SnapshotDownloadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotDownloadUrlUndefined: Self = StObject.set(x, "SnapshotDownloadUrl", js.undefined)
+    inline def setSnapshotDownloadUrlUndefined: Self = StObject.set(x, "SnapshotDownloadUrl", js.undefined)
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
   }
 }

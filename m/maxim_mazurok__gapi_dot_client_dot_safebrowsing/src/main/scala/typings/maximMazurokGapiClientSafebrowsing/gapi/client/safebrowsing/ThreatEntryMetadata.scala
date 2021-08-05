@@ -11,22 +11,17 @@ trait ThreatEntryMetadata extends StObject {
 }
 object ThreatEntryMetadata {
   
-  @scala.inline
-  def apply(): ThreatEntryMetadata = {
+  inline def apply(): ThreatEntryMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThreatEntryMetadata]
   }
   
-  @scala.inline
-  implicit class ThreatEntryMetadataMutableBuilder[Self <: ThreatEntryMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ThreatEntryMetadata](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[MetadataEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[MetadataEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: MetadataEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: MetadataEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

@@ -23,19 +23,15 @@ trait PaymentsError extends StObject {
 }
 object PaymentsError {
   
-  @scala.inline
-  def apply(statusCode: PaymentsErrorStatusCode | String, statusMessage: String): PaymentsError = {
+  inline def apply(statusCode: PaymentsErrorStatusCode | String, statusMessage: String): PaymentsError = {
     val __obj = js.Dynamic.literal(statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentsError]
   }
   
-  @scala.inline
-  implicit class PaymentsErrorMutableBuilder[Self <: PaymentsError] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentsError](x: Self) {
     
-    @scala.inline
-    def setStatusCode(value: PaymentsErrorStatusCode | String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: PaymentsErrorStatusCode | String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
   }
 }

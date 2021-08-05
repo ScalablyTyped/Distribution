@@ -18,25 +18,19 @@ trait JobExecutionSummaryForThing extends StObject {
 }
 object JobExecutionSummaryForThing {
   
-  @scala.inline
-  def apply(): JobExecutionSummaryForThing = {
+  inline def apply(): JobExecutionSummaryForThing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobExecutionSummaryForThing]
   }
   
-  @scala.inline
-  implicit class JobExecutionSummaryForThingMutableBuilder[Self <: JobExecutionSummaryForThing] (val x: Self) extends AnyVal {
+  extension [Self <: JobExecutionSummaryForThing](x: Self) {
     
-    @scala.inline
-    def setJobExecutionSummary(value: JobExecutionSummary): Self = StObject.set(x, "jobExecutionSummary", value.asInstanceOf[js.Any])
+    inline def setJobExecutionSummary(value: JobExecutionSummary): Self = StObject.set(x, "jobExecutionSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobExecutionSummaryUndefined: Self = StObject.set(x, "jobExecutionSummary", js.undefined)
+    inline def setJobExecutionSummaryUndefined: Self = StObject.set(x, "jobExecutionSummary", js.undefined)
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
   }
 }

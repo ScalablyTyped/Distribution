@@ -15,19 +15,15 @@ trait GetReginOptions
 }
 object GetReginOptions {
   
-  @scala.inline
-  def apply(): GetReginOptions = {
+  inline def apply(): GetReginOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetReginOptions]
   }
   
-  @scala.inline
-  implicit class GetReginOptionsMutableBuilder[Self <: GetReginOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetReginOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* callback */ js.Function1[/* res */ GetReginSuccessCallbackOptions, Unit] => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* callback */ js.Function1[/* res */ GetReginSuccessCallbackOptions, Unit] => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

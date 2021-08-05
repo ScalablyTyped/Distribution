@@ -36,37 +36,27 @@ trait CameraProperties extends StObject {
 }
 object CameraProperties {
   
-  @scala.inline
-  def apply(): CameraProperties = {
+  inline def apply(): CameraProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CameraProperties]
   }
   
-  @scala.inline
-  implicit class CameraPropertiesMutableBuilder[Self <: CameraProperties] (val x: Self) extends AnyVal {
+  extension [Self <: CameraProperties](x: Self) {
     
-    @scala.inline
-    def setFov(value: Double): Self = StObject.set(x, "fov", value.asInstanceOf[js.Any])
+    inline def setFov(value: Double): Self = StObject.set(x, "fov", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFovUndefined: Self = StObject.set(x, "fov", js.undefined)
+    inline def setFovUndefined: Self = StObject.set(x, "fov", js.undefined)
     
-    @scala.inline
-    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+    inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
-    @scala.inline
-    def setPosition(value: PointProperties): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: PointProperties): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setTilt(value: Double): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
+    inline def setTilt(value: Double): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
+    inline def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
   }
 }

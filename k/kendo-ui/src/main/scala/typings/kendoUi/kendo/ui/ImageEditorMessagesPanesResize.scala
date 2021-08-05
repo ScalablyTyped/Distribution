@@ -14,31 +14,23 @@ trait ImageEditorMessagesPanesResize extends StObject {
 }
 object ImageEditorMessagesPanesResize {
   
-  @scala.inline
-  def apply(): ImageEditorMessagesPanesResize = {
+  inline def apply(): ImageEditorMessagesPanesResize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageEditorMessagesPanesResize]
   }
   
-  @scala.inline
-  implicit class ImageEditorMessagesPanesResizeMutableBuilder[Self <: ImageEditorMessagesPanesResize] (val x: Self) extends AnyVal {
+  extension [Self <: ImageEditorMessagesPanesResize](x: Self) {
     
-    @scala.inline
-    def setPercents(value: String): Self = StObject.set(x, "percents", value.asInstanceOf[js.Any])
+    inline def setPercents(value: String): Self = StObject.set(x, "percents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentsUndefined: Self = StObject.set(x, "percents", js.undefined)
+    inline def setPercentsUndefined: Self = StObject.set(x, "percents", js.undefined)
     
-    @scala.inline
-    def setPixels(value: String): Self = StObject.set(x, "pixels", value.asInstanceOf[js.Any])
+    inline def setPixels(value: String): Self = StObject.set(x, "pixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelsUndefined: Self = StObject.set(x, "pixels", js.undefined)
+    inline def setPixelsUndefined: Self = StObject.set(x, "pixels", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

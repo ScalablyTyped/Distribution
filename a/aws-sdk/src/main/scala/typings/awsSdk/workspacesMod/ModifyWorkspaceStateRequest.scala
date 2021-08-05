@@ -18,19 +18,15 @@ trait ModifyWorkspaceStateRequest extends StObject {
 }
 object ModifyWorkspaceStateRequest {
   
-  @scala.inline
-  def apply(WorkspaceId: WorkspaceId, WorkspaceState: TargetWorkspaceState): ModifyWorkspaceStateRequest = {
+  inline def apply(WorkspaceId: WorkspaceId, WorkspaceState: TargetWorkspaceState): ModifyWorkspaceStateRequest = {
     val __obj = js.Dynamic.literal(WorkspaceId = WorkspaceId.asInstanceOf[js.Any], WorkspaceState = WorkspaceState.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyWorkspaceStateRequest]
   }
   
-  @scala.inline
-  implicit class ModifyWorkspaceStateRequestMutableBuilder[Self <: ModifyWorkspaceStateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyWorkspaceStateRequest](x: Self) {
     
-    @scala.inline
-    def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "WorkspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "WorkspaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceState(value: TargetWorkspaceState): Self = StObject.set(x, "WorkspaceState", value.asInstanceOf[js.Any])
+    inline def setWorkspaceState(value: TargetWorkspaceState): Self = StObject.set(x, "WorkspaceState", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait AsyncRefOperationCompletedNotification
 }
 object AsyncRefOperationCompletedNotification {
   
-  @scala.inline
-  def apply(newRefName: String, operationId: Double): AsyncRefOperationCompletedNotification = {
+  inline def apply(newRefName: String, operationId: Double): AsyncRefOperationCompletedNotification = {
     val __obj = js.Dynamic.literal(newRefName = newRefName.asInstanceOf[js.Any], operationId = operationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncRefOperationCompletedNotification]
   }
   
-  @scala.inline
-  implicit class AsyncRefOperationCompletedNotificationMutableBuilder[Self <: AsyncRefOperationCompletedNotification] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncRefOperationCompletedNotification](x: Self) {
     
-    @scala.inline
-    def setNewRefName(value: String): Self = StObject.set(x, "newRefName", value.asInstanceOf[js.Any])
+    inline def setNewRefName(value: String): Self = StObject.set(x, "newRefName", value.asInstanceOf[js.Any])
   }
 }

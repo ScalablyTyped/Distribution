@@ -30,7 +30,7 @@ trait Databar extends StObject {
   
   var Direction: Double
   
-  @JSName("Excel.Databar_typekey")
+  /* private */ @JSName("Excel.Databar_typekey")
   var ExcelDotDatabar_typekey: Databar
   
   var Formula: String
@@ -67,8 +67,7 @@ trait Databar extends StObject {
 }
 object Databar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     AppliesTo: Range,
     AxisColor: FormatColor,
@@ -102,88 +101,60 @@ object Databar {
     __obj.asInstanceOf[Databar]
   }
   
-  @scala.inline
-  implicit class DatabarMutableBuilder[Self <: Databar] (val x: Self) extends AnyVal {
+  extension [Self <: Databar](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppliesTo(value: Range): Self = StObject.set(x, "AppliesTo", value.asInstanceOf[js.Any])
+    inline def setAppliesTo(value: Range): Self = StObject.set(x, "AppliesTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisColor(value: FormatColor): Self = StObject.set(x, "AxisColor", value.asInstanceOf[js.Any])
+    inline def setAxisColor(value: FormatColor): Self = StObject.set(x, "AxisColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisPosition(value: XlDataBarAxisPosition): Self = StObject.set(x, "AxisPosition", value.asInstanceOf[js.Any])
+    inline def setAxisPosition(value: XlDataBarAxisPosition): Self = StObject.set(x, "AxisPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarBorder(value: DataBarBorder): Self = StObject.set(x, "BarBorder", value.asInstanceOf[js.Any])
+    inline def setBarBorder(value: DataBarBorder): Self = StObject.set(x, "BarBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarColor(value: FormatColor): Self = StObject.set(x, "BarColor", value.asInstanceOf[js.Any])
+    inline def setBarColor(value: FormatColor): Self = StObject.set(x, "BarColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarFillType(value: XlDataBarFillType): Self = StObject.set(x, "BarFillType", value.asInstanceOf[js.Any])
+    inline def setBarFillType(value: XlDataBarFillType): Self = StObject.set(x, "BarFillType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDirection(value: Double): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Double): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotDatabar_typekey(value: Databar): Self = StObject.set(x, "Excel.Databar_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotDatabar_typekey(value: Databar): Self = StObject.set(x, "Excel.Databar_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPoint(value: ConditionValue): Self = StObject.set(x, "MaxPoint", value.asInstanceOf[js.Any])
+    inline def setMaxPoint(value: ConditionValue): Self = StObject.set(x, "MaxPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinPoint(value: ConditionValue): Self = StObject.set(x, "MinPoint", value.asInstanceOf[js.Any])
+    inline def setMinPoint(value: ConditionValue): Self = StObject.set(x, "MinPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifyAppliesToRange(value: Range => Unit): Self = StObject.set(x, "ModifyAppliesToRange", js.Any.fromFunction1(value))
+    inline def setModifyAppliesToRange(value: Range => Unit): Self = StObject.set(x, "ModifyAppliesToRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNegativeBarFormat(value: NegativeBarFormat): Self = StObject.set(x, "NegativeBarFormat", value.asInstanceOf[js.Any])
+    inline def setNegativeBarFormat(value: NegativeBarFormat): Self = StObject.set(x, "NegativeBarFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPTCondition(value: Boolean): Self = StObject.set(x, "PTCondition", value.asInstanceOf[js.Any])
+    inline def setPTCondition(value: Boolean): Self = StObject.set(x, "PTCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentMax(value: Double): Self = StObject.set(x, "PercentMax", value.asInstanceOf[js.Any])
+    inline def setPercentMax(value: Double): Self = StObject.set(x, "PercentMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentMin(value: Double): Self = StObject.set(x, "PercentMin", value.asInstanceOf[js.Any])
+    inline def setPercentMin(value: Double): Self = StObject.set(x, "PercentMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeType(value: XlPivotConditionScope): Self = StObject.set(x, "ScopeType", value.asInstanceOf[js.Any])
+    inline def setScopeType(value: XlPivotConditionScope): Self = StObject.set(x, "ScopeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFirstPriority(value: () => Unit): Self = StObject.set(x, "SetFirstPriority", js.Any.fromFunction0(value))
+    inline def setSetFirstPriority(value: () => Unit): Self = StObject.set(x, "SetFirstPriority", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetLastPriority(value: () => Unit): Self = StObject.set(x, "SetLastPriority", js.Any.fromFunction0(value))
+    inline def setSetLastPriority(value: () => Unit): Self = StObject.set(x, "SetLastPriority", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowValue(value: Boolean): Self = StObject.set(x, "ShowValue", value.asInstanceOf[js.Any])
+    inline def setShowValue(value: Boolean): Self = StObject.set(x, "ShowValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopIfTrue(value: Boolean): Self = StObject.set(x, "StopIfTrue", value.asInstanceOf[js.Any])
+    inline def setStopIfTrue(value: Boolean): Self = StObject.set(x, "StopIfTrue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

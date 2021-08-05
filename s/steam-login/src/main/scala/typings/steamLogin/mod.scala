@@ -17,17 +17,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def authenticate(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def authenticate(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @scala.inline
-  def enforceLogin(redirect: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceLogin")(redirect.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def enforceLogin(redirect: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceLogin")(redirect.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @scala.inline
-  def middleware(opts: MiddlewareOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(opts.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def middleware(opts: MiddlewareOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(opts.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @scala.inline
-  def verify(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def verify(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   trait MiddlewareOptions extends StObject {
     
@@ -41,29 +37,22 @@ object mod {
   }
   object MiddlewareOptions {
     
-    @scala.inline
-    def apply(apiKey: String, realm: String, verify: String): MiddlewareOptions = {
+    inline def apply(apiKey: String, realm: String, verify: String): MiddlewareOptions = {
       val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], realm = realm.asInstanceOf[js.Any], verify = verify.asInstanceOf[js.Any])
       __obj.asInstanceOf[MiddlewareOptions]
     }
     
-    @scala.inline
-    implicit class MiddlewareOptionsMutableBuilder[Self <: MiddlewareOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MiddlewareOptions](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
+      inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseSession(value: Boolean): Self = StObject.set(x, "useSession", value.asInstanceOf[js.Any])
+      inline def setUseSession(value: Boolean): Self = StObject.set(x, "useSession", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseSessionUndefined: Self = StObject.set(x, "useSession", js.undefined)
+      inline def setUseSessionUndefined: Self = StObject.set(x, "useSession", js.undefined)
       
-      @scala.inline
-      def setVerify(value: String): Self = StObject.set(x, "verify", value.asInstanceOf[js.Any])
+      inline def setVerify(value: String): Self = StObject.set(x, "verify", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,32 +85,24 @@ object mod {
   }
   object SteamUser {
     
-    @scala.inline
-    def apply(_json: Avatar, avatar: Large, name: String, profile: String, steamid: String, username: String): SteamUser = {
+    inline def apply(_json: Avatar, avatar: Large, name: String, profile: String, steamid: String, username: String): SteamUser = {
       val __obj = js.Dynamic.literal(_json = _json.asInstanceOf[js.Any], avatar = avatar.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], steamid = steamid.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[SteamUser]
     }
     
-    @scala.inline
-    implicit class SteamUserMutableBuilder[Self <: SteamUser] (val x: Self) extends AnyVal {
+    extension [Self <: SteamUser](x: Self) {
       
-      @scala.inline
-      def setAvatar(value: Large): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+      inline def setAvatar(value: Large): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSteamid(value: String): Self = StObject.set(x, "steamid", value.asInstanceOf[js.Any])
+      inline def setSteamid(value: String): Self = StObject.set(x, "steamid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_json(value: Avatar): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
+      inline def set_json(value: Avatar): Self = StObject.set(x, "_json", value.asInstanceOf[js.Any])
     }
   }
 }

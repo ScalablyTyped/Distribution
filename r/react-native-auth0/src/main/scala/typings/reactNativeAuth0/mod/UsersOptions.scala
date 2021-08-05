@@ -12,19 +12,15 @@ trait UsersOptions extends StObject {
 }
 object UsersOptions {
   
-  @scala.inline
-  def apply(baseUrl: String, token: String): UsersOptions = {
+  inline def apply(baseUrl: String, token: String): UsersOptions = {
     val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersOptions]
   }
   
-  @scala.inline
-  implicit class UsersOptionsMutableBuilder[Self <: UsersOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UsersOptions](x: Self) {
     
-    @scala.inline
-    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+    inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait Element extends StObject {
 }
 object Element {
   
-  @scala.inline
-  def apply(computedStyleMap: () => StylePropertyMapReadOnly): Element = {
+  inline def apply(computedStyleMap: () => StylePropertyMapReadOnly): Element = {
     val __obj = js.Dynamic.literal(computedStyleMap = js.Any.fromFunction0(computedStyleMap))
     __obj.asInstanceOf[Element]
   }
   
-  @scala.inline
-  implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+  extension [Self <: Element](x: Self) {
     
-    @scala.inline
-    def setComputedStyleMap(value: () => StylePropertyMapReadOnly): Self = StObject.set(x, "computedStyleMap", js.Any.fromFunction0(value))
+    inline def setComputedStyleMap(value: () => StylePropertyMapReadOnly): Self = StObject.set(x, "computedStyleMap", js.Any.fromFunction0(value))
   }
 }

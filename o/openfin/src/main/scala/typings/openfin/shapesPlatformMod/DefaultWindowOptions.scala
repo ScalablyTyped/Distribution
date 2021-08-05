@@ -13,16 +13,13 @@ trait DefaultWindowOptions
 }
 object DefaultWindowOptions {
   
-  @scala.inline
-  def apply(stylesheetUrl: String): DefaultWindowOptions = {
+  inline def apply(stylesheetUrl: String): DefaultWindowOptions = {
     val __obj = js.Dynamic.literal(stylesheetUrl = stylesheetUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultWindowOptions]
   }
   
-  @scala.inline
-  implicit class DefaultWindowOptionsMutableBuilder[Self <: DefaultWindowOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultWindowOptions](x: Self) {
     
-    @scala.inline
-    def setStylesheetUrl(value: String): Self = StObject.set(x, "stylesheetUrl", value.asInstanceOf[js.Any])
+    inline def setStylesheetUrl(value: String): Self = StObject.set(x, "stylesheetUrl", value.asInstanceOf[js.Any])
   }
 }

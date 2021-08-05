@@ -18,25 +18,19 @@ trait UpdatePublicKeyResult extends StObject {
 }
 object UpdatePublicKeyResult {
   
-  @scala.inline
-  def apply(): UpdatePublicKeyResult = {
+  inline def apply(): UpdatePublicKeyResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdatePublicKeyResult]
   }
   
-  @scala.inline
-  implicit class UpdatePublicKeyResultMutableBuilder[Self <: UpdatePublicKeyResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePublicKeyResult](x: Self) {
     
-    @scala.inline
-    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setPublicKey(value: PublicKey): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: PublicKey): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyUndefined: Self = StObject.set(x, "PublicKey", js.undefined)
+    inline def setPublicKeyUndefined: Self = StObject.set(x, "PublicKey", js.undefined)
   }
 }

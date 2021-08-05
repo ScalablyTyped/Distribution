@@ -31,8 +31,7 @@ trait TilingSpriteRenderer
 }
 object TilingSpriteRenderer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     flush: () => Unit,
     render: TilingSprite => Unit,
@@ -45,13 +44,10 @@ object TilingSpriteRenderer {
     __obj.asInstanceOf[TilingSpriteRenderer]
   }
   
-  @scala.inline
-  implicit class TilingSpriteRendererMutableBuilder[Self <: TilingSpriteRenderer] (val x: Self) extends AnyVal {
+  extension [Self <: TilingSpriteRenderer](x: Self) {
     
-    @scala.inline
-    def setRender(value: TilingSprite => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: TilingSprite => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

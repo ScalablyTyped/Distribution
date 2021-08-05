@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ISVGUseElement extends StObject {
   
-  @JSName("MSHTML.ISVGUseElement_typekey")
+  /* private */ @JSName("MSHTML.ISVGUseElement_typekey")
   var MSHTMLDotISVGUseElement_typekey: ISVGUseElement
   
   var animatedInstanceRoot: ISVGElementInstance
@@ -23,8 +23,7 @@ trait ISVGUseElement extends StObject {
 }
 object ISVGUseElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotISVGUseElement_typekey: ISVGUseElement,
     animatedInstanceRoot: ISVGElementInstance,
     height: SVGAnimatedLength,
@@ -38,28 +37,20 @@ object ISVGUseElement {
     __obj.asInstanceOf[ISVGUseElement]
   }
   
-  @scala.inline
-  implicit class ISVGUseElementMutableBuilder[Self <: ISVGUseElement] (val x: Self) extends AnyVal {
+  extension [Self <: ISVGUseElement](x: Self) {
     
-    @scala.inline
-    def setAnimatedInstanceRoot(value: ISVGElementInstance): Self = StObject.set(x, "animatedInstanceRoot", value.asInstanceOf[js.Any])
+    inline def setAnimatedInstanceRoot(value: ISVGElementInstance): Self = StObject.set(x, "animatedInstanceRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: SVGAnimatedLength): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: SVGAnimatedLength): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceRoot(value: ISVGElementInstance): Self = StObject.set(x, "instanceRoot", value.asInstanceOf[js.Any])
+    inline def setInstanceRoot(value: ISVGElementInstance): Self = StObject.set(x, "instanceRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotISVGUseElement_typekey(value: ISVGUseElement): Self = StObject.set(x, "MSHTML.ISVGUseElement_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotISVGUseElement_typekey(value: ISVGUseElement): Self = StObject.set(x, "MSHTML.ISVGUseElement_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: SVGAnimatedLength): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: SVGAnimatedLength): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: SVGAnimatedLength): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: SVGAnimatedLength): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: SVGAnimatedLength): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: SVGAnimatedLength): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

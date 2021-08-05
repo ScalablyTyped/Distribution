@@ -11,6 +11,5 @@ object urlTemplateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseUrl(template: String): Expand = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(template.asInstanceOf[js.Any]).asInstanceOf[Expand]
+  inline def parseUrl(template: String): Expand = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(template.asInstanceOf[js.Any]).asInstanceOf[Expand]
 }

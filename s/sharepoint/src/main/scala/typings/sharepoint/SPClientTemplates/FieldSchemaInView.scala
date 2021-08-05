@@ -55,8 +55,7 @@ trait FieldSchemaInView
 }
 object FieldSchemaInView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowGridEditing: Boolean,
     CalloutMenu: String,
     ClassInfo: String,
@@ -82,55 +81,38 @@ object FieldSchemaInView {
     __obj.asInstanceOf[FieldSchemaInView]
   }
   
-  @scala.inline
-  implicit class FieldSchemaInViewMutableBuilder[Self <: FieldSchemaInView] (val x: Self) extends AnyVal {
+  extension [Self <: FieldSchemaInView](x: Self) {
     
-    @scala.inline
-    def setCalloutMenu(value: String): Self = StObject.set(x, "CalloutMenu", value.asInstanceOf[js.Any])
+    inline def setCalloutMenu(value: String): Self = StObject.set(x, "CalloutMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassInfo(value: String): Self = StObject.set(x, "ClassInfo", value.asInstanceOf[js.Any])
+    inline def setClassInfo(value: String): Self = StObject.set(x, "ClassInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplicit(value: String): Self = StObject.set(x, "Explicit", value.asInstanceOf[js.Any])
+    inline def setExplicit(value: String): Self = StObject.set(x, "Explicit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldRenderer(value: js.Any): Self = StObject.set(x, "fieldRenderer", value.asInstanceOf[js.Any])
+    inline def setFieldRenderer(value: js.Any): Self = StObject.set(x, "fieldRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldTitle(value: String): Self = StObject.set(x, "FieldTitle", value.asInstanceOf[js.Any])
+    inline def setFieldTitle(value: String): Self = StObject.set(x, "FieldTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterable(value: String): Self = StObject.set(x, "Filterable", value.asInstanceOf[js.Any])
+    inline def setFilterable(value: String): Self = StObject.set(x, "Filterable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridActiveAndReadOnly(value: String): Self = StObject.set(x, "GridActiveAndReadOnly", value.asInstanceOf[js.Any])
+    inline def setGridActiveAndReadOnly(value: String): Self = StObject.set(x, "GridActiveAndReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupField(value: String): Self = StObject.set(x, "GroupField", value.asInstanceOf[js.Any])
+    inline def setGroupField(value: String): Self = StObject.set(x, "GroupField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListItemMenu(value: String): Self = StObject.set(x, "listItemMenu", value.asInstanceOf[js.Any])
+    inline def setListItemMenu(value: String): Self = StObject.set(x, "listItemMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: String): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: String): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealFieldName(value: String): Self = StObject.set(x, "RealFieldName", value.asInstanceOf[js.Any])
+    inline def setRealFieldName(value: String): Self = StObject.set(x, "RealFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultType(value: String): Self = StObject.set(x, "ResultType", value.asInstanceOf[js.Any])
+    inline def setResultType(value: String): Self = StObject.set(x, "ResultType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortable(value: String): Self = StObject.set(x, "Sortable", value.asInstanceOf[js.Any])
+    inline def setSortable(value: String): Self = StObject.set(x, "Sortable", value.asInstanceOf[js.Any])
   }
 }

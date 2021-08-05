@@ -19,18 +19,15 @@ object SpaceControls {
   @JSImport("react-foundation/enums", "SpaceControls.AUTO")
   @js.native
   def AUTO: SpaceControls = js.native
-  @scala.inline
-  def AUTO_=(x: SpaceControls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTO")(x.asInstanceOf[js.Any])
+  inline def AUTO_=(x: SpaceControls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUTO")(x.asInstanceOf[js.Any])
   
   @JSImport("react-foundation/enums", "SpaceControls.GROW")
   @js.native
   def GROW: SpaceControls = js.native
-  @scala.inline
-  def GROW_=(x: SpaceControls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROW")(x.asInstanceOf[js.Any])
+  inline def GROW_=(x: SpaceControls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROW")(x.asInstanceOf[js.Any])
   
   @JSImport("react-foundation/enums", "SpaceControls.SHRINK")
   @js.native
   def SHRINK: SpaceControls = js.native
-  @scala.inline
-  def SHRINK_=(x: SpaceControls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHRINK")(x.asInstanceOf[js.Any])
+  inline def SHRINK_=(x: SpaceControls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHRINK")(x.asInstanceOf[js.Any])
 }

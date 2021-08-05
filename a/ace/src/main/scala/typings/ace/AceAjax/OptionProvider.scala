@@ -28,8 +28,7 @@ trait OptionProvider extends StObject {
 }
 object OptionProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getOption: String => js.Any,
     getOptions: () => js.Any,
     setOption: (String, js.Any) => Unit,
@@ -39,19 +38,14 @@ object OptionProvider {
     __obj.asInstanceOf[OptionProvider]
   }
   
-  @scala.inline
-  implicit class OptionProviderMutableBuilder[Self <: OptionProvider] (val x: Self) extends AnyVal {
+  extension [Self <: OptionProvider](x: Self) {
     
-    @scala.inline
-    def setGetOption(value: String => js.Any): Self = StObject.set(x, "getOption", js.Any.fromFunction1(value))
+    inline def setGetOption(value: String => js.Any): Self = StObject.set(x, "getOption", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetOptions(value: () => js.Any): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
+    inline def setGetOptions(value: () => js.Any): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetOption(value: (String, js.Any) => Unit): Self = StObject.set(x, "setOption", js.Any.fromFunction2(value))
+    inline def setSetOption(value: (String, js.Any) => Unit): Self = StObject.set(x, "setOption", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetOptions(value: js.Any => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: js.Any => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
   }
 }

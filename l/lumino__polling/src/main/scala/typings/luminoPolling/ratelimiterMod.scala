@@ -80,12 +80,12 @@ object ratelimiterMod {
     /**
       * A promise that resolves on each successful invocation.
       */
-    var payload: PromiseDelegate[T] | Null = js.native
+    /* protected */ var payload: PromiseDelegate[T] | Null = js.native
     
     /**
       * The underlying poll instance used by the rate limiter.
       */
-    var poll: Poll[T, U, invoked] = js.native
+    /* protected */ var poll: Poll[T, U, invoked] = js.native
     
     /**
       * Stop the function if it is mid-flight.
@@ -111,7 +111,7 @@ object ratelimiterMod {
     def this(fn: js.Function0[T | js.Promise[T]], options: Double) = this()
     def this(fn: js.Function0[T | js.Promise[T]], options: IOptions) = this()
     
-    var _interval: js.Any = js.native
+    /* private */ var _interval: js.Any = js.native
   }
   object Throttler {
     
@@ -133,26 +133,20 @@ object ratelimiterMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setEdge(value: leading | trailing): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+        inline def setEdge(value: leading | trailing): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
+        inline def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
         
-        @scala.inline
-        def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+        inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+        inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       }
     }
   }

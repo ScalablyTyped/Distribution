@@ -45,49 +45,35 @@ trait SchemaDistribution extends StObject {
 }
 object SchemaDistribution {
   
-  @scala.inline
-  def apply(): SchemaDistribution = {
+  inline def apply(): SchemaDistribution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDistribution]
   }
   
-  @scala.inline
-  implicit class SchemaDistributionMutableBuilder[Self <: SchemaDistribution] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDistribution](x: Self) {
     
-    @scala.inline
-    def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+    inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
+    inline def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
     
-    @scala.inline
-    def setCpeUri(value: String): Self = StObject.set(x, "cpeUri", value.asInstanceOf[js.Any])
+    inline def setCpeUri(value: String): Self = StObject.set(x, "cpeUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpeUriUndefined: Self = StObject.set(x, "cpeUri", js.undefined)
+    inline def setCpeUriUndefined: Self = StObject.set(x, "cpeUri", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setLatestVersion(value: SchemaVersion): Self = StObject.set(x, "latestVersion", value.asInstanceOf[js.Any])
+    inline def setLatestVersion(value: SchemaVersion): Self = StObject.set(x, "latestVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestVersionUndefined: Self = StObject.set(x, "latestVersion", js.undefined)
+    inline def setLatestVersionUndefined: Self = StObject.set(x, "latestVersion", js.undefined)
     
-    @scala.inline
-    def setMaintainer(value: String): Self = StObject.set(x, "maintainer", value.asInstanceOf[js.Any])
+    inline def setMaintainer(value: String): Self = StObject.set(x, "maintainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintainerUndefined: Self = StObject.set(x, "maintainer", js.undefined)
+    inline def setMaintainerUndefined: Self = StObject.set(x, "maintainer", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

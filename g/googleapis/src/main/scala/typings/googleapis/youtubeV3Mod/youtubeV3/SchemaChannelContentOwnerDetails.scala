@@ -23,25 +23,19 @@ trait SchemaChannelContentOwnerDetails extends StObject {
 }
 object SchemaChannelContentOwnerDetails {
   
-  @scala.inline
-  def apply(): SchemaChannelContentOwnerDetails = {
+  inline def apply(): SchemaChannelContentOwnerDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChannelContentOwnerDetails]
   }
   
-  @scala.inline
-  implicit class SchemaChannelContentOwnerDetailsMutableBuilder[Self <: SchemaChannelContentOwnerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChannelContentOwnerDetails](x: Self) {
     
-    @scala.inline
-    def setContentOwner(value: String): Self = StObject.set(x, "contentOwner", value.asInstanceOf[js.Any])
+    inline def setContentOwner(value: String): Self = StObject.set(x, "contentOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentOwnerUndefined: Self = StObject.set(x, "contentOwner", js.undefined)
+    inline def setContentOwnerUndefined: Self = StObject.set(x, "contentOwner", js.undefined)
     
-    @scala.inline
-    def setTimeLinked(value: String): Self = StObject.set(x, "timeLinked", value.asInstanceOf[js.Any])
+    inline def setTimeLinked(value: String): Self = StObject.set(x, "timeLinked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeLinkedUndefined: Self = StObject.set(x, "timeLinked", js.undefined)
+    inline def setTimeLinkedUndefined: Self = StObject.set(x, "timeLinked", js.undefined)
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TrackSwitchMode extends StObject
 object TrackSwitchMode {
   
-  @scala.inline
-  def alwaysReplace: typings.dashjs.dashjsStrings.alwaysReplace = "alwaysReplace".asInstanceOf[typings.dashjs.dashjsStrings.alwaysReplace]
+  inline def alwaysReplace: typings.dashjs.dashjsStrings.alwaysReplace = "alwaysReplace".asInstanceOf[typings.dashjs.dashjsStrings.alwaysReplace]
   
-  @scala.inline
-  def neverReplace: typings.dashjs.dashjsStrings.neverReplace = "neverReplace".asInstanceOf[typings.dashjs.dashjsStrings.neverReplace]
+  inline def neverReplace: typings.dashjs.dashjsStrings.neverReplace = "neverReplace".asInstanceOf[typings.dashjs.dashjsStrings.neverReplace]
 }

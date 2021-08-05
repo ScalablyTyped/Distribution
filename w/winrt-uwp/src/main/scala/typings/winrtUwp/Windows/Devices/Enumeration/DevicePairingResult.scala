@@ -15,19 +15,15 @@ trait DevicePairingResult extends StObject {
 }
 object DevicePairingResult {
   
-  @scala.inline
-  def apply(protectionLevelUsed: DevicePairingProtectionLevel, status: DevicePairingResultStatus): DevicePairingResult = {
+  inline def apply(protectionLevelUsed: DevicePairingProtectionLevel, status: DevicePairingResultStatus): DevicePairingResult = {
     val __obj = js.Dynamic.literal(protectionLevelUsed = protectionLevelUsed.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevicePairingResult]
   }
   
-  @scala.inline
-  implicit class DevicePairingResultMutableBuilder[Self <: DevicePairingResult] (val x: Self) extends AnyVal {
+  extension [Self <: DevicePairingResult](x: Self) {
     
-    @scala.inline
-    def setProtectionLevelUsed(value: DevicePairingProtectionLevel): Self = StObject.set(x, "protectionLevelUsed", value.asInstanceOf[js.Any])
+    inline def setProtectionLevelUsed(value: DevicePairingProtectionLevel): Self = StObject.set(x, "protectionLevelUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: DevicePairingResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DevicePairingResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

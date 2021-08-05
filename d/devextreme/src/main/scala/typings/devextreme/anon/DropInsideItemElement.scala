@@ -40,97 +40,67 @@ trait DropInsideItemElement extends StObject {
 }
 object DropInsideItemElement {
   
-  @scala.inline
-  def apply(): DropInsideItemElement = {
+  inline def apply(): DropInsideItemElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropInsideItemElement]
   }
   
-  @scala.inline
-  implicit class DropInsideItemElementMutableBuilder[Self <: DropInsideItemElement] (val x: Self) extends AnyVal {
+  extension [Self <: DropInsideItemElement](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setComponent(value: dxSortable): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dxSortable): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
+    inline def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropInsideItemUndefined: Self = StObject.set(x, "dropInsideItem", js.undefined)
+    inline def setDropInsideItemUndefined: Self = StObject.set(x, "dropInsideItem", js.undefined)
     
-    @scala.inline
-    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setEvent(value: event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setFromComponent(value: dxSortable | dxDraggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
+    inline def setFromComponent(value: dxSortable | dxDraggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromComponentUndefined: Self = StObject.set(x, "fromComponent", js.undefined)
+    inline def setFromComponentUndefined: Self = StObject.set(x, "fromComponent", js.undefined)
     
-    @scala.inline
-    def setFromData(value: js.Any): Self = StObject.set(x, "fromData", value.asInstanceOf[js.Any])
+    inline def setFromData(value: js.Any): Self = StObject.set(x, "fromData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromDataUndefined: Self = StObject.set(x, "fromData", js.undefined)
+    inline def setFromDataUndefined: Self = StObject.set(x, "fromData", js.undefined)
     
-    @scala.inline
-    def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
+    inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromIndexUndefined: Self = StObject.set(x, "fromIndex", js.undefined)
+    inline def setFromIndexUndefined: Self = StObject.set(x, "fromIndex", js.undefined)
     
-    @scala.inline
-    def setItemData(value: js.Any): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+    inline def setItemData(value: js.Any): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
+    inline def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
     
-    @scala.inline
-    def setItemElement(value: dxElement): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
+    inline def setItemElement(value: dxElement): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemElementUndefined: Self = StObject.set(x, "itemElement", js.undefined)
+    inline def setItemElementUndefined: Self = StObject.set(x, "itemElement", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setToComponent(value: dxSortable | dxDraggable): Self = StObject.set(x, "toComponent", value.asInstanceOf[js.Any])
+    inline def setToComponent(value: dxSortable | dxDraggable): Self = StObject.set(x, "toComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToComponentUndefined: Self = StObject.set(x, "toComponent", js.undefined)
+    inline def setToComponentUndefined: Self = StObject.set(x, "toComponent", js.undefined)
     
-    @scala.inline
-    def setToData(value: js.Any): Self = StObject.set(x, "toData", value.asInstanceOf[js.Any])
+    inline def setToData(value: js.Any): Self = StObject.set(x, "toData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToDataUndefined: Self = StObject.set(x, "toData", js.undefined)
+    inline def setToDataUndefined: Self = StObject.set(x, "toData", js.undefined)
     
-    @scala.inline
-    def setToIndex(value: Double): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
+    inline def setToIndex(value: Double): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToIndexUndefined: Self = StObject.set(x, "toIndex", js.undefined)
+    inline def setToIndexUndefined: Self = StObject.set(x, "toIndex", js.undefined)
   }
 }

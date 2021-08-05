@@ -21,28 +21,21 @@ trait InstanceGroupManagersSetTargetPoolsRequest extends StObject {
 }
 object InstanceGroupManagersSetTargetPoolsRequest {
   
-  @scala.inline
-  def apply(): InstanceGroupManagersSetTargetPoolsRequest = {
+  inline def apply(): InstanceGroupManagersSetTargetPoolsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceGroupManagersSetTargetPoolsRequest]
   }
   
-  @scala.inline
-  implicit class InstanceGroupManagersSetTargetPoolsRequestMutableBuilder[Self <: InstanceGroupManagersSetTargetPoolsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceGroupManagersSetTargetPoolsRequest](x: Self) {
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setTargetPools(value: js.Array[String]): Self = StObject.set(x, "targetPools", value.asInstanceOf[js.Any])
+    inline def setTargetPools(value: js.Array[String]): Self = StObject.set(x, "targetPools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPoolsUndefined: Self = StObject.set(x, "targetPools", js.undefined)
+    inline def setTargetPoolsUndefined: Self = StObject.set(x, "targetPools", js.undefined)
     
-    @scala.inline
-    def setTargetPoolsVarargs(value: String*): Self = StObject.set(x, "targetPools", js.Array(value :_*))
+    inline def setTargetPoolsVarargs(value: String*): Self = StObject.set(x, "targetPools", js.Array(value :_*))
   }
 }

@@ -13,16 +13,13 @@ trait EntityRecognizerDocuments extends StObject {
 }
 object EntityRecognizerDocuments {
   
-  @scala.inline
-  def apply(S3Uri: S3Uri): EntityRecognizerDocuments = {
+  inline def apply(S3Uri: S3Uri): EntityRecognizerDocuments = {
     val __obj = js.Dynamic.literal(S3Uri = S3Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityRecognizerDocuments]
   }
   
-  @scala.inline
-  implicit class EntityRecognizerDocumentsMutableBuilder[Self <: EntityRecognizerDocuments] (val x: Self) extends AnyVal {
+  extension [Self <: EntityRecognizerDocuments](x: Self) {
     
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }
 }

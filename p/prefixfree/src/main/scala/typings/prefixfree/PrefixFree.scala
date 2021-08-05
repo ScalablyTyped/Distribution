@@ -67,17 +67,13 @@ object PrefixFree {
   trait KnownPrefixCSS extends StObject
   object KnownPrefixCSS {
     
-    @scala.inline
-    def `-moz-`: typings.prefixfree.prefixfreeStrings.`-moz-` = "-moz-".asInstanceOf[typings.prefixfree.prefixfreeStrings.`-moz-`]
+    inline def `-moz-`: typings.prefixfree.prefixfreeStrings.`-moz-` = "-moz-".asInstanceOf[typings.prefixfree.prefixfreeStrings.`-moz-`]
     
-    @scala.inline
-    def `-ms-`: typings.prefixfree.prefixfreeStrings.`-ms-` = "-ms-".asInstanceOf[typings.prefixfree.prefixfreeStrings.`-ms-`]
+    inline def `-ms-`: typings.prefixfree.prefixfreeStrings.`-ms-` = "-ms-".asInstanceOf[typings.prefixfree.prefixfreeStrings.`-ms-`]
     
-    @scala.inline
-    def `-o-`: typings.prefixfree.prefixfreeStrings.`-o-` = "-o-".asInstanceOf[typings.prefixfree.prefixfreeStrings.`-o-`]
+    inline def `-o-`: typings.prefixfree.prefixfreeStrings.`-o-` = "-o-".asInstanceOf[typings.prefixfree.prefixfreeStrings.`-o-`]
     
-    @scala.inline
-    def `-webkit-`: typings.prefixfree.prefixfreeStrings.`-webkit-` = "-webkit-".asInstanceOf[typings.prefixfree.prefixfreeStrings.`-webkit-`]
+    inline def `-webkit-`: typings.prefixfree.prefixfreeStrings.`-webkit-` = "-webkit-".asInstanceOf[typings.prefixfree.prefixfreeStrings.`-webkit-`]
   }
   
   /** The known prefixes used for CSS properties in `CSSStyleDeclaration`. */
@@ -90,16 +86,12 @@ object PrefixFree {
   trait KnownPrefixJS extends StObject
   object KnownPrefixJS {
     
-    @scala.inline
-    def Moz: typings.prefixfree.prefixfreeStrings.Moz = "Moz".asInstanceOf[typings.prefixfree.prefixfreeStrings.Moz]
+    inline def Moz: typings.prefixfree.prefixfreeStrings.Moz = "Moz".asInstanceOf[typings.prefixfree.prefixfreeStrings.Moz]
     
-    @scala.inline
-    def Ms: typings.prefixfree.prefixfreeStrings.Ms = "Ms".asInstanceOf[typings.prefixfree.prefixfreeStrings.Ms]
+    inline def Ms: typings.prefixfree.prefixfreeStrings.Ms = "Ms".asInstanceOf[typings.prefixfree.prefixfreeStrings.Ms]
     
-    @scala.inline
-    def O: typings.prefixfree.prefixfreeStrings.O = "O".asInstanceOf[typings.prefixfree.prefixfreeStrings.O]
+    inline def O: typings.prefixfree.prefixfreeStrings.O = "O".asInstanceOf[typings.prefixfree.prefixfreeStrings.O]
     
-    @scala.inline
-    def Webkit: typings.prefixfree.prefixfreeStrings.Webkit = "Webkit".asInstanceOf[typings.prefixfree.prefixfreeStrings.Webkit]
+    inline def Webkit: typings.prefixfree.prefixfreeStrings.Webkit = "Webkit".asInstanceOf[typings.prefixfree.prefixfreeStrings.Webkit]
   }
 }

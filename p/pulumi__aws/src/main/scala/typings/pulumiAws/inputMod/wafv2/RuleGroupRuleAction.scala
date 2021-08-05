@@ -24,31 +24,23 @@ trait RuleGroupRuleAction extends StObject {
 }
 object RuleGroupRuleAction {
   
-  @scala.inline
-  def apply(): RuleGroupRuleAction = {
+  inline def apply(): RuleGroupRuleAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuleGroupRuleAction]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleActionMutableBuilder[Self <: RuleGroupRuleAction] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleAction](x: Self) {
     
-    @scala.inline
-    def setAllow(value: Input[RuleGroupRuleActionAllow]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+    inline def setAllow(value: Input[RuleGroupRuleActionAllow]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
+    inline def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     
-    @scala.inline
-    def setBlock(value: Input[RuleGroupRuleActionBlock]): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: Input[RuleGroupRuleActionBlock]): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+    inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
     
-    @scala.inline
-    def setCount(value: Input[RuleGroupRuleActionCount]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Input[RuleGroupRuleActionCount]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
   }
 }

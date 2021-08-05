@@ -35,23 +35,18 @@ object fabMod {
   }
   object FABProps {
     
-    @scala.inline
-    def apply(): FABProps = {
+    inline def apply(): FABProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FABProps]
     }
     
-    @scala.inline
-    implicit class FABPropsMutableBuilder[Self <: FABProps] (val x: Self) extends AnyVal {
+    extension [Self <: FABProps](x: Self) {
       
-      @scala.inline
-      def setPosition(value: FABPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: FABPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionNull: Self = StObject.set(x, "position", null)
+      inline def setPositionNull: Self = StObject.set(x, "position", null)
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }
   }
   

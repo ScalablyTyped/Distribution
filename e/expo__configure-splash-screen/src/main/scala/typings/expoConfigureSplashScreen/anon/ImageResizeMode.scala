@@ -11,19 +11,15 @@ trait ImageResizeMode extends StObject {
 }
 object ImageResizeMode {
   
-  @scala.inline
-  def apply(): ImageResizeMode = {
+  inline def apply(): ImageResizeMode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageResizeMode]
   }
   
-  @scala.inline
-  implicit class ImageResizeModeMutableBuilder[Self <: ImageResizeMode] (val x: Self) extends AnyVal {
+  extension [Self <: ImageResizeMode](x: Self) {
     
-    @scala.inline
-    def setImageResizeMode(value: SplashScreenImageResizeModeType): Self = StObject.set(x, "imageResizeMode", value.asInstanceOf[js.Any])
+    inline def setImageResizeMode(value: SplashScreenImageResizeModeType): Self = StObject.set(x, "imageResizeMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageResizeModeUndefined: Self = StObject.set(x, "imageResizeMode", js.undefined)
+    inline def setImageResizeModeUndefined: Self = StObject.set(x, "imageResizeMode", js.undefined)
   }
 }

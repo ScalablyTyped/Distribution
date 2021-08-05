@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdStatistic extends StObject
 object WdStatistic {
   
-  @scala.inline
-  def wdStatisticCharacters: `3` = 3.asInstanceOf[`3`]
+  inline def wdStatisticCharacters: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdStatisticCharactersWithSpaces: `5` = 5.asInstanceOf[`5`]
+  inline def wdStatisticCharactersWithSpaces: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdStatisticFarEastCharacters: `6` = 6.asInstanceOf[`6`]
+  inline def wdStatisticFarEastCharacters: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdStatisticLines: `1` = 1.asInstanceOf[`1`]
+  inline def wdStatisticLines: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdStatisticPages: `2` = 2.asInstanceOf[`2`]
+  inline def wdStatisticPages: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdStatisticParagraphs: `4` = 4.asInstanceOf[`4`]
+  inline def wdStatisticParagraphs: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdStatisticWords: `0` = 0.asInstanceOf[`0`]
+  inline def wdStatisticWords: `0` = 0.asInstanceOf[`0`]
 }

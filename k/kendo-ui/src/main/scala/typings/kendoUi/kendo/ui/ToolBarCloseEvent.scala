@@ -13,19 +13,15 @@ trait ToolBarCloseEvent
 }
 object ToolBarCloseEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ToolBar): ToolBarCloseEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ToolBar): ToolBarCloseEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolBarCloseEvent]
   }
   
-  @scala.inline
-  implicit class ToolBarCloseEventMutableBuilder[Self <: ToolBarCloseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ToolBarCloseEvent](x: Self) {
     
-    @scala.inline
-    def setSplitButton(value: JQuery): Self = StObject.set(x, "SplitButton", value.asInstanceOf[js.Any])
+    inline def setSplitButton(value: JQuery): Self = StObject.set(x, "SplitButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitButtonUndefined: Self = StObject.set(x, "SplitButton", js.undefined)
+    inline def setSplitButtonUndefined: Self = StObject.set(x, "SplitButton", js.undefined)
   }
 }

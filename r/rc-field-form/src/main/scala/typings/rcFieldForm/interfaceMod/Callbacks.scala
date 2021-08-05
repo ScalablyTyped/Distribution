@@ -18,37 +18,27 @@ trait Callbacks[Values] extends StObject {
 }
 object Callbacks {
   
-  @scala.inline
-  def apply[Values](): Callbacks[Values] = {
+  inline def apply[Values](): Callbacks[Values] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Callbacks[Values]]
   }
   
-  @scala.inline
-  implicit class CallbacksMutableBuilder[Self <: Callbacks[?], Values] (val x: Self & Callbacks[Values]) extends AnyVal {
+  extension [Self <: Callbacks[?], Values](x: Self & Callbacks[Values]) {
     
-    @scala.inline
-    def setOnFieldsChange(value: (/* changedFields */ js.Array[FieldData], /* allFields */ js.Array[FieldData]) => Unit): Self = StObject.set(x, "onFieldsChange", js.Any.fromFunction2(value))
+    inline def setOnFieldsChange(value: (/* changedFields */ js.Array[FieldData], /* allFields */ js.Array[FieldData]) => Unit): Self = StObject.set(x, "onFieldsChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnFieldsChangeUndefined: Self = StObject.set(x, "onFieldsChange", js.undefined)
+    inline def setOnFieldsChangeUndefined: Self = StObject.set(x, "onFieldsChange", js.undefined)
     
-    @scala.inline
-    def setOnFinish(value: /* values */ Values => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction1(value))
+    inline def setOnFinish(value: /* values */ Values => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFinishFailed(value: /* errorInfo */ ValidateErrorEntity[Values] => Unit): Self = StObject.set(x, "onFinishFailed", js.Any.fromFunction1(value))
+    inline def setOnFinishFailed(value: /* errorInfo */ ValidateErrorEntity[Values] => Unit): Self = StObject.set(x, "onFinishFailed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFinishFailedUndefined: Self = StObject.set(x, "onFinishFailed", js.undefined)
+    inline def setOnFinishFailedUndefined: Self = StObject.set(x, "onFinishFailed", js.undefined)
     
-    @scala.inline
-    def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
+    inline def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
     
-    @scala.inline
-    def setOnValuesChange(value: (/* changedValues */ js.Any, /* values */ Values) => Unit): Self = StObject.set(x, "onValuesChange", js.Any.fromFunction2(value))
+    inline def setOnValuesChange(value: (/* changedValues */ js.Any, /* values */ Values) => Unit): Self = StObject.set(x, "onValuesChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnValuesChangeUndefined: Self = StObject.set(x, "onValuesChange", js.undefined)
+    inline def setOnValuesChangeUndefined: Self = StObject.set(x, "onValuesChange", js.undefined)
   }
 }

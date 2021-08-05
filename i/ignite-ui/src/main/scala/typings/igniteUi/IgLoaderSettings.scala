@@ -28,67 +28,47 @@ trait IgLoaderSettings extends StObject {
 }
 object IgLoaderSettings {
   
-  @scala.inline
-  def apply(cssPath: String, scriptPath: String): IgLoaderSettings = {
+  inline def apply(cssPath: String, scriptPath: String): IgLoaderSettings = {
     val __obj = js.Dynamic.literal(cssPath = cssPath.asInstanceOf[js.Any], scriptPath = scriptPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgLoaderSettings]
   }
   
-  @scala.inline
-  implicit class IgLoaderSettingsMutableBuilder[Self <: IgLoaderSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IgLoaderSettings](x: Self) {
     
-    @scala.inline
-    def setAutoDetectLocale(value: Boolean): Self = StObject.set(x, "autoDetectLocale", value.asInstanceOf[js.Any])
+    inline def setAutoDetectLocale(value: Boolean): Self = StObject.set(x, "autoDetectLocale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoDetectLocaleUndefined: Self = StObject.set(x, "autoDetectLocale", js.undefined)
+    inline def setAutoDetectLocaleUndefined: Self = StObject.set(x, "autoDetectLocale", js.undefined)
     
-    @scala.inline
-    def setCssPath(value: String): Self = StObject.set(x, "cssPath", value.asInstanceOf[js.Any])
+    inline def setCssPath(value: String): Self = StObject.set(x, "cssPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalePath(value: String): Self = StObject.set(x, "localePath", value.asInstanceOf[js.Any])
+    inline def setLocalePath(value: String): Self = StObject.set(x, "localePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalePathUndefined: Self = StObject.set(x, "localePath", js.undefined)
+    inline def setLocalePathUndefined: Self = StObject.set(x, "localePath", js.undefined)
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setPreinit(value: js.Function): Self = StObject.set(x, "preinit", value.asInstanceOf[js.Any])
+    inline def setPreinit(value: js.Function): Self = StObject.set(x, "preinit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreinitUndefined: Self = StObject.set(x, "preinit", js.undefined)
+    inline def setPreinitUndefined: Self = StObject.set(x, "preinit", js.undefined)
     
-    @scala.inline
-    def setReady(value: js.Function): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+    inline def setReady(value: js.Function): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+    inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     
-    @scala.inline
-    def setRegional(value: String): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    inline def setRegional(value: String): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
-    @scala.inline
-    def setResources(value: String): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: String): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setScriptPath(value: String): Self = StObject.set(x, "scriptPath", value.asInstanceOf[js.Any])
+    inline def setScriptPath(value: String): Self = StObject.set(x, "scriptPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

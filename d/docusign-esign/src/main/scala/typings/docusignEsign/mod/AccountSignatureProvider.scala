@@ -54,66 +54,48 @@ trait AccountSignatureProvider extends StObject {
 }
 object AccountSignatureProvider {
   
-  @scala.inline
-  def apply(): AccountSignatureProvider = {
+  inline def apply(): AccountSignatureProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountSignatureProvider]
   }
   
-  @scala.inline
-  implicit class AccountSignatureProviderMutableBuilder[Self <: AccountSignatureProvider] (val x: Self) extends AnyVal {
+  extension [Self <: AccountSignatureProvider](x: Self) {
     
-    @scala.inline
-    def setIsRequired(value: String): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
+    inline def setIsRequired(value: String): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRequiredUndefined: Self = StObject.set(x, "isRequired", js.undefined)
+    inline def setIsRequiredUndefined: Self = StObject.set(x, "isRequired", js.undefined)
     
-    @scala.inline
-    def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setSignatureProviderDisplayName(value: String): Self = StObject.set(x, "signatureProviderDisplayName", value.asInstanceOf[js.Any])
+    inline def setSignatureProviderDisplayName(value: String): Self = StObject.set(x, "signatureProviderDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureProviderDisplayNameUndefined: Self = StObject.set(x, "signatureProviderDisplayName", js.undefined)
+    inline def setSignatureProviderDisplayNameUndefined: Self = StObject.set(x, "signatureProviderDisplayName", js.undefined)
     
-    @scala.inline
-    def setSignatureProviderId(value: String): Self = StObject.set(x, "signatureProviderId", value.asInstanceOf[js.Any])
+    inline def setSignatureProviderId(value: String): Self = StObject.set(x, "signatureProviderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureProviderIdUndefined: Self = StObject.set(x, "signatureProviderId", js.undefined)
+    inline def setSignatureProviderIdUndefined: Self = StObject.set(x, "signatureProviderId", js.undefined)
     
-    @scala.inline
-    def setSignatureProviderName(value: String): Self = StObject.set(x, "signatureProviderName", value.asInstanceOf[js.Any])
+    inline def setSignatureProviderName(value: String): Self = StObject.set(x, "signatureProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureProviderNameUndefined: Self = StObject.set(x, "signatureProviderName", js.undefined)
+    inline def setSignatureProviderNameUndefined: Self = StObject.set(x, "signatureProviderName", js.undefined)
     
-    @scala.inline
-    def setSignatureProviderOptionsMetadata(value: js.Array[/* Reserved for DocuSign. */ AccountSignatureProviderOption]): Self = StObject.set(x, "signatureProviderOptionsMetadata", value.asInstanceOf[js.Any])
+    inline def setSignatureProviderOptionsMetadata(value: js.Array[/* Reserved for DocuSign. */ AccountSignatureProviderOption]): Self = StObject.set(x, "signatureProviderOptionsMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureProviderOptionsMetadataUndefined: Self = StObject.set(x, "signatureProviderOptionsMetadata", js.undefined)
+    inline def setSignatureProviderOptionsMetadataUndefined: Self = StObject.set(x, "signatureProviderOptionsMetadata", js.undefined)
     
-    @scala.inline
-    def setSignatureProviderOptionsMetadataVarargs(value: (/* Reserved for DocuSign. */ AccountSignatureProviderOption)*): Self = StObject.set(x, "signatureProviderOptionsMetadata", js.Array(value :_*))
+    inline def setSignatureProviderOptionsMetadataVarargs(value: (/* Reserved for DocuSign. */ AccountSignatureProviderOption)*): Self = StObject.set(x, "signatureProviderOptionsMetadata", js.Array(value :_*))
     
-    @scala.inline
-    def setSignatureProviderRequiredOptions(
+    inline def setSignatureProviderRequiredOptions(
       value: js.Array[
           /* Contains additional information that a specific signature provider requires. */ SignatureProviderRequiredOption
         ]
     ): Self = StObject.set(x, "signatureProviderRequiredOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureProviderRequiredOptionsUndefined: Self = StObject.set(x, "signatureProviderRequiredOptions", js.undefined)
+    inline def setSignatureProviderRequiredOptionsUndefined: Self = StObject.set(x, "signatureProviderRequiredOptions", js.undefined)
     
-    @scala.inline
-    def setSignatureProviderRequiredOptionsVarargs(
+    inline def setSignatureProviderRequiredOptionsVarargs(
       value: (/* Contains additional information that a specific signature provider requires. */ SignatureProviderRequiredOption)*
     ): Self = StObject.set(x, "signatureProviderRequiredOptions", js.Array(value :_*))
   }

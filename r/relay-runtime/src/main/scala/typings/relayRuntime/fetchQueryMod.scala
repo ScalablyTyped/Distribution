@@ -14,8 +14,7 @@ object fetchQueryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fetchQuery_variables[T /* <: OperationType */](
+  inline def fetchQuery_variables[T /* <: OperationType */](
     environment: Environment,
     taggedNode: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: T['variables'] */ js.Any
@@ -24,8 +23,7 @@ object fetchQueryMod {
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchQuery")(environment.asInstanceOf[js.Any], taggedNode.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
   ]]
-  @scala.inline
-  def fetchQuery_variables[T /* <: OperationType */](
+  inline def fetchQuery_variables[T /* <: OperationType */](
     environment: Environment,
     taggedNode: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: T['variables'] */ js.Any,

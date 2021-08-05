@@ -15,19 +15,15 @@ trait MergeTableCellsRequest extends StObject {
 }
 object MergeTableCellsRequest {
   
-  @scala.inline
-  def apply(): MergeTableCellsRequest = {
+  inline def apply(): MergeTableCellsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MergeTableCellsRequest]
   }
   
-  @scala.inline
-  implicit class MergeTableCellsRequestMutableBuilder[Self <: MergeTableCellsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: MergeTableCellsRequest](x: Self) {
     
-    @scala.inline
-    def setTableRange(value: TableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
+    inline def setTableRange(value: TableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
+    inline def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
   }
 }

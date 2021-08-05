@@ -23,28 +23,21 @@ trait CreateDBSecurityGroupMessage extends StObject {
 }
 object CreateDBSecurityGroupMessage {
   
-  @scala.inline
-  def apply(DBSecurityGroupDescription: String, DBSecurityGroupName: String): CreateDBSecurityGroupMessage = {
+  inline def apply(DBSecurityGroupDescription: String, DBSecurityGroupName: String): CreateDBSecurityGroupMessage = {
     val __obj = js.Dynamic.literal(DBSecurityGroupDescription = DBSecurityGroupDescription.asInstanceOf[js.Any], DBSecurityGroupName = DBSecurityGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDBSecurityGroupMessage]
   }
   
-  @scala.inline
-  implicit class CreateDBSecurityGroupMessageMutableBuilder[Self <: CreateDBSecurityGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDBSecurityGroupMessage](x: Self) {
     
-    @scala.inline
-    def setDBSecurityGroupDescription(value: String): Self = StObject.set(x, "DBSecurityGroupDescription", value.asInstanceOf[js.Any])
+    inline def setDBSecurityGroupDescription(value: String): Self = StObject.set(x, "DBSecurityGroupDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBSecurityGroupName(value: String): Self = StObject.set(x, "DBSecurityGroupName", value.asInstanceOf[js.Any])
+    inline def setDBSecurityGroupName(value: String): Self = StObject.set(x, "DBSecurityGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

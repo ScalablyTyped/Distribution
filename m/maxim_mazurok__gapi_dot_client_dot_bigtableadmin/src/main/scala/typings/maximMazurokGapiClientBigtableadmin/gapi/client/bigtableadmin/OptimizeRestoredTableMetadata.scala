@@ -14,25 +14,19 @@ trait OptimizeRestoredTableMetadata extends StObject {
 }
 object OptimizeRestoredTableMetadata {
   
-  @scala.inline
-  def apply(): OptimizeRestoredTableMetadata = {
+  inline def apply(): OptimizeRestoredTableMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptimizeRestoredTableMetadata]
   }
   
-  @scala.inline
-  implicit class OptimizeRestoredTableMetadataMutableBuilder[Self <: OptimizeRestoredTableMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: OptimizeRestoredTableMetadata](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProgress(value: OperationProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: OperationProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait MetricsConfiguration extends StObject {
 }
 object MetricsConfiguration {
   
-  @scala.inline
-  def apply(): MetricsConfiguration = {
+  inline def apply(): MetricsConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricsConfiguration]
   }
   
-  @scala.inline
-  implicit class MetricsConfigurationMutableBuilder[Self <: MetricsConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: MetricsConfiguration](x: Self) {
     
-    @scala.inline
-    def setCloudMetricEnabled(value: Enabled): Self = StObject.set(x, "cloudMetricEnabled", value.asInstanceOf[js.Any])
+    inline def setCloudMetricEnabled(value: Enabled): Self = StObject.set(x, "cloudMetricEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudMetricEnabledUndefined: Self = StObject.set(x, "cloudMetricEnabled", js.undefined)
+    inline def setCloudMetricEnabledUndefined: Self = StObject.set(x, "cloudMetricEnabled", js.undefined)
     
-    @scala.inline
-    def setMetricRuleRoleArn(value: RoleArn): Self = StObject.set(x, "metricRuleRoleArn", value.asInstanceOf[js.Any])
+    inline def setMetricRuleRoleArn(value: RoleArn): Self = StObject.set(x, "metricRuleRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricRuleRoleArnUndefined: Self = StObject.set(x, "metricRuleRoleArn", js.undefined)
+    inline def setMetricRuleRoleArnUndefined: Self = StObject.set(x, "metricRuleRoleArn", js.undefined)
   }
 }

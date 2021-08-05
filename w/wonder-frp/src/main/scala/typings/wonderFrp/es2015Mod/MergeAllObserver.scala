@@ -21,8 +21,7 @@ object MergeAllObserver {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(
+  inline def create(
     currentObserver: IObserver,
     groupDisposable: typings.wonderFrp.disposableGroupDisposableMod.GroupDisposable
   ): typings.wonderFrp.observerMergeAllObserverMod.MergeAllObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], groupDisposable.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.observerMergeAllObserverMod.MergeAllObserver]

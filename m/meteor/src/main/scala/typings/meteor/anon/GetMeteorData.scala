@@ -12,22 +12,17 @@ trait GetMeteorData[TOwnProps, TDataProps] extends StObject {
 }
 object GetMeteorData {
   
-  @scala.inline
-  def apply[TOwnProps, TDataProps](getMeteorData: TOwnProps => TDataProps): GetMeteorData[TOwnProps, TDataProps] = {
+  inline def apply[TOwnProps, TDataProps](getMeteorData: TOwnProps => TDataProps): GetMeteorData[TOwnProps, TDataProps] = {
     val __obj = js.Dynamic.literal(getMeteorData = js.Any.fromFunction1(getMeteorData))
     __obj.asInstanceOf[GetMeteorData[TOwnProps, TDataProps]]
   }
   
-  @scala.inline
-  implicit class GetMeteorDataMutableBuilder[Self <: GetMeteorData[?, ?], TOwnProps, TDataProps] (val x: Self & (GetMeteorData[TOwnProps, TDataProps])) extends AnyVal {
+  extension [Self <: GetMeteorData[?, ?], TOwnProps, TDataProps](x: Self & (GetMeteorData[TOwnProps, TDataProps])) {
     
-    @scala.inline
-    def setGetMeteorData(value: TOwnProps => TDataProps): Self = StObject.set(x, "getMeteorData", js.Any.fromFunction1(value))
+    inline def setGetMeteorData(value: TOwnProps => TDataProps): Self = StObject.set(x, "getMeteorData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
+    inline def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
+    inline def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
   }
 }

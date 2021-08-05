@@ -119,21 +119,16 @@ object eipMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Eip = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Eip]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Eip = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Eip]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EipState): Eip = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Eip]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EipState, opts: CustomResourceOptions): Eip = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Eip]
+    inline def get(name: String, id: Input[ID]): Eip = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Eip]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Eip = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Eip]
+    inline def get(name: String, id: Input[ID], state: EipState): Eip = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Eip]
+    inline def get(name: String, id: Input[ID], state: EipState, opts: CustomResourceOptions): Eip = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Eip]
     
     /**
       * Returns true if the given object is an instance of Eip.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/eip.Eip */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/eip.Eip */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/eip.Eip */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/eip.Eip */ Boolean]
   }
   
   trait EipArgs extends StObject {
@@ -182,62 +177,44 @@ object eipMod {
   }
   object EipArgs {
     
-    @scala.inline
-    def apply(): EipArgs = {
+    inline def apply(): EipArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EipArgs]
     }
     
-    @scala.inline
-    implicit class EipArgsMutableBuilder[Self <: EipArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EipArgs](x: Self) {
       
-      @scala.inline
-      def setAssociateWithPrivateIp(value: Input[String]): Self = StObject.set(x, "associateWithPrivateIp", value.asInstanceOf[js.Any])
+      inline def setAssociateWithPrivateIp(value: Input[String]): Self = StObject.set(x, "associateWithPrivateIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociateWithPrivateIpUndefined: Self = StObject.set(x, "associateWithPrivateIp", js.undefined)
+      inline def setAssociateWithPrivateIpUndefined: Self = StObject.set(x, "associateWithPrivateIp", js.undefined)
       
-      @scala.inline
-      def setCustomerOwnedIpv4Pool(value: Input[String]): Self = StObject.set(x, "customerOwnedIpv4Pool", value.asInstanceOf[js.Any])
+      inline def setCustomerOwnedIpv4Pool(value: Input[String]): Self = StObject.set(x, "customerOwnedIpv4Pool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerOwnedIpv4PoolUndefined: Self = StObject.set(x, "customerOwnedIpv4Pool", js.undefined)
+      inline def setCustomerOwnedIpv4PoolUndefined: Self = StObject.set(x, "customerOwnedIpv4Pool", js.undefined)
       
-      @scala.inline
-      def setInstance(value: Input[String]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: Input[String]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+      inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
       
-      @scala.inline
-      def setNetworkBorderGroup(value: Input[String]): Self = StObject.set(x, "networkBorderGroup", value.asInstanceOf[js.Any])
+      inline def setNetworkBorderGroup(value: Input[String]): Self = StObject.set(x, "networkBorderGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkBorderGroupUndefined: Self = StObject.set(x, "networkBorderGroup", js.undefined)
+      inline def setNetworkBorderGroupUndefined: Self = StObject.set(x, "networkBorderGroup", js.undefined)
       
-      @scala.inline
-      def setNetworkInterface(value: Input[String]): Self = StObject.set(x, "networkInterface", value.asInstanceOf[js.Any])
+      inline def setNetworkInterface(value: Input[String]): Self = StObject.set(x, "networkInterface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfaceUndefined: Self = StObject.set(x, "networkInterface", js.undefined)
+      inline def setNetworkInterfaceUndefined: Self = StObject.set(x, "networkInterface", js.undefined)
       
-      @scala.inline
-      def setPublicIpv4Pool(value: Input[String]): Self = StObject.set(x, "publicIpv4Pool", value.asInstanceOf[js.Any])
+      inline def setPublicIpv4Pool(value: Input[String]): Self = StObject.set(x, "publicIpv4Pool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicIpv4PoolUndefined: Self = StObject.set(x, "publicIpv4Pool", js.undefined)
+      inline def setPublicIpv4PoolUndefined: Self = StObject.set(x, "publicIpv4Pool", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpc(value: Input[Boolean]): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
+      inline def setVpc(value: Input[Boolean]): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
+      inline def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
     }
   }
   
@@ -321,110 +298,76 @@ object eipMod {
   }
   object EipState {
     
-    @scala.inline
-    def apply(): EipState = {
+    inline def apply(): EipState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EipState]
     }
     
-    @scala.inline
-    implicit class EipStateMutableBuilder[Self <: EipState] (val x: Self) extends AnyVal {
+    extension [Self <: EipState](x: Self) {
       
-      @scala.inline
-      def setAllocationId(value: Input[String]): Self = StObject.set(x, "allocationId", value.asInstanceOf[js.Any])
+      inline def setAllocationId(value: Input[String]): Self = StObject.set(x, "allocationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllocationIdUndefined: Self = StObject.set(x, "allocationId", js.undefined)
+      inline def setAllocationIdUndefined: Self = StObject.set(x, "allocationId", js.undefined)
       
-      @scala.inline
-      def setAssociateWithPrivateIp(value: Input[String]): Self = StObject.set(x, "associateWithPrivateIp", value.asInstanceOf[js.Any])
+      inline def setAssociateWithPrivateIp(value: Input[String]): Self = StObject.set(x, "associateWithPrivateIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociateWithPrivateIpUndefined: Self = StObject.set(x, "associateWithPrivateIp", js.undefined)
+      inline def setAssociateWithPrivateIpUndefined: Self = StObject.set(x, "associateWithPrivateIp", js.undefined)
       
-      @scala.inline
-      def setAssociationId(value: Input[String]): Self = StObject.set(x, "associationId", value.asInstanceOf[js.Any])
+      inline def setAssociationId(value: Input[String]): Self = StObject.set(x, "associationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociationIdUndefined: Self = StObject.set(x, "associationId", js.undefined)
+      inline def setAssociationIdUndefined: Self = StObject.set(x, "associationId", js.undefined)
       
-      @scala.inline
-      def setCustomerOwnedIp(value: Input[String]): Self = StObject.set(x, "customerOwnedIp", value.asInstanceOf[js.Any])
+      inline def setCustomerOwnedIp(value: Input[String]): Self = StObject.set(x, "customerOwnedIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerOwnedIpUndefined: Self = StObject.set(x, "customerOwnedIp", js.undefined)
+      inline def setCustomerOwnedIpUndefined: Self = StObject.set(x, "customerOwnedIp", js.undefined)
       
-      @scala.inline
-      def setCustomerOwnedIpv4Pool(value: Input[String]): Self = StObject.set(x, "customerOwnedIpv4Pool", value.asInstanceOf[js.Any])
+      inline def setCustomerOwnedIpv4Pool(value: Input[String]): Self = StObject.set(x, "customerOwnedIpv4Pool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerOwnedIpv4PoolUndefined: Self = StObject.set(x, "customerOwnedIpv4Pool", js.undefined)
+      inline def setCustomerOwnedIpv4PoolUndefined: Self = StObject.set(x, "customerOwnedIpv4Pool", js.undefined)
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setInstance(value: Input[String]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: Input[String]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+      inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
       
-      @scala.inline
-      def setNetworkBorderGroup(value: Input[String]): Self = StObject.set(x, "networkBorderGroup", value.asInstanceOf[js.Any])
+      inline def setNetworkBorderGroup(value: Input[String]): Self = StObject.set(x, "networkBorderGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkBorderGroupUndefined: Self = StObject.set(x, "networkBorderGroup", js.undefined)
+      inline def setNetworkBorderGroupUndefined: Self = StObject.set(x, "networkBorderGroup", js.undefined)
       
-      @scala.inline
-      def setNetworkInterface(value: Input[String]): Self = StObject.set(x, "networkInterface", value.asInstanceOf[js.Any])
+      inline def setNetworkInterface(value: Input[String]): Self = StObject.set(x, "networkInterface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfaceUndefined: Self = StObject.set(x, "networkInterface", js.undefined)
+      inline def setNetworkInterfaceUndefined: Self = StObject.set(x, "networkInterface", js.undefined)
       
-      @scala.inline
-      def setPrivateDns(value: Input[String]): Self = StObject.set(x, "privateDns", value.asInstanceOf[js.Any])
+      inline def setPrivateDns(value: Input[String]): Self = StObject.set(x, "privateDns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateDnsUndefined: Self = StObject.set(x, "privateDns", js.undefined)
+      inline def setPrivateDnsUndefined: Self = StObject.set(x, "privateDns", js.undefined)
       
-      @scala.inline
-      def setPrivateIp(value: Input[String]): Self = StObject.set(x, "privateIp", value.asInstanceOf[js.Any])
+      inline def setPrivateIp(value: Input[String]): Self = StObject.set(x, "privateIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateIpUndefined: Self = StObject.set(x, "privateIp", js.undefined)
+      inline def setPrivateIpUndefined: Self = StObject.set(x, "privateIp", js.undefined)
       
-      @scala.inline
-      def setPublicDns(value: Input[String]): Self = StObject.set(x, "publicDns", value.asInstanceOf[js.Any])
+      inline def setPublicDns(value: Input[String]): Self = StObject.set(x, "publicDns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicDnsUndefined: Self = StObject.set(x, "publicDns", js.undefined)
+      inline def setPublicDnsUndefined: Self = StObject.set(x, "publicDns", js.undefined)
       
-      @scala.inline
-      def setPublicIp(value: Input[String]): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
+      inline def setPublicIp(value: Input[String]): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicIpUndefined: Self = StObject.set(x, "publicIp", js.undefined)
+      inline def setPublicIpUndefined: Self = StObject.set(x, "publicIp", js.undefined)
       
-      @scala.inline
-      def setPublicIpv4Pool(value: Input[String]): Self = StObject.set(x, "publicIpv4Pool", value.asInstanceOf[js.Any])
+      inline def setPublicIpv4Pool(value: Input[String]): Self = StObject.set(x, "publicIpv4Pool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicIpv4PoolUndefined: Self = StObject.set(x, "publicIpv4Pool", js.undefined)
+      inline def setPublicIpv4PoolUndefined: Self = StObject.set(x, "publicIpv4Pool", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpc(value: Input[Boolean]): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
+      inline def setVpc(value: Input[Boolean]): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
+      inline def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
     }
   }
 }

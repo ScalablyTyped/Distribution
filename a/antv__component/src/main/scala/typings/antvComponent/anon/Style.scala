@@ -10,16 +10,13 @@ trait Style extends StObject {
 }
 object Style {
   
-  @scala.inline
-  def apply(style: Opacity): Style = {
+  inline def apply(style: Opacity): Style = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Style]
   }
   
-  @scala.inline
-  implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
+  extension [Self <: Style](x: Self) {
     
-    @scala.inline
-    def setStyle(value: Opacity): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Opacity): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

@@ -103,7 +103,7 @@ object syncstreamMod {
     
     def sid: String = js.native
     
-    val syncStreamImpl: js.Any = js.native
+    /* private */ val syncStreamImpl: js.Any = js.native
     
     def `type`: String = js.native
     
@@ -120,7 +120,7 @@ object syncstreamMod {
       */
     def this(services: StreamServices, descriptor: StreamDescriptor, removalHandler: RemovalHandler) = this()
     
-    var _handleMessagePublished: js.Any = js.native
+    /* private */ var _handleMessagePublished: js.Any = js.native
     
     /**
       * Handle event from the server
@@ -130,7 +130,7 @@ object syncstreamMod {
     
     def dateExpires: String = js.native
     
-    val descriptor: js.Any = js.native
+    /* private */ val descriptor: js.Any = js.native
     
     def links: js.Any = js.native
     
@@ -151,20 +151,16 @@ object syncstreamMod {
   }
   object StreamMessage {
     
-    @scala.inline
-    def apply(sid: String, value: js.Object): StreamMessage = {
+    inline def apply(sid: String, value: js.Object): StreamMessage = {
       val __obj = js.Dynamic.literal(sid = sid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamMessage]
     }
     
-    @scala.inline
-    implicit class StreamMessageMutableBuilder[Self <: StreamMessage] (val x: Self) extends AnyVal {
+    extension [Self <: StreamMessage](x: Self) {
       
-      @scala.inline
-      def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

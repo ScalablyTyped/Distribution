@@ -18,28 +18,21 @@ trait ListReplaysResponse extends StObject {
 }
 object ListReplaysResponse {
   
-  @scala.inline
-  def apply(): ListReplaysResponse = {
+  inline def apply(): ListReplaysResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListReplaysResponse]
   }
   
-  @scala.inline
-  implicit class ListReplaysResponseMutableBuilder[Self <: ListReplaysResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListReplaysResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setReplays(value: ReplayList): Self = StObject.set(x, "Replays", value.asInstanceOf[js.Any])
+    inline def setReplays(value: ReplayList): Self = StObject.set(x, "Replays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaysUndefined: Self = StObject.set(x, "Replays", js.undefined)
+    inline def setReplaysUndefined: Self = StObject.set(x, "Replays", js.undefined)
     
-    @scala.inline
-    def setReplaysVarargs(value: Replay*): Self = StObject.set(x, "Replays", js.Array(value :_*))
+    inline def setReplaysVarargs(value: Replay*): Self = StObject.set(x, "Replays", js.Array(value :_*))
   }
 }

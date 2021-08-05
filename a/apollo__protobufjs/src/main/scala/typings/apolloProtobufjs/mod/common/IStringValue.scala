@@ -11,19 +11,15 @@ trait IStringValue extends StObject {
 }
 object IStringValue {
   
-  @scala.inline
-  def apply(): IStringValue = {
+  inline def apply(): IStringValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IStringValue]
   }
   
-  @scala.inline
-  implicit class IStringValueMutableBuilder[Self <: IStringValue] (val x: Self) extends AnyVal {
+  extension [Self <: IStringValue](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

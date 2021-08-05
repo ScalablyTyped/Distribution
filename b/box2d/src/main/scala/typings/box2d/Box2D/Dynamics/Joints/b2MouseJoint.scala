@@ -60,8 +60,7 @@ trait b2MouseJoint
 }
 object b2MouseJoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAnchorA: () => b2Vec2,
     GetAnchorB: () => b2Vec2,
     GetBodyA: () => b2Body,
@@ -86,31 +85,22 @@ object b2MouseJoint {
     __obj.asInstanceOf[b2MouseJoint]
   }
   
-  @scala.inline
-  implicit class b2MouseJointMutableBuilder[Self <: b2MouseJoint] (val x: Self) extends AnyVal {
+  extension [Self <: b2MouseJoint](x: Self) {
     
-    @scala.inline
-    def setGetDampingRatio(value: () => Double): Self = StObject.set(x, "GetDampingRatio", js.Any.fromFunction0(value))
+    inline def setGetDampingRatio(value: () => Double): Self = StObject.set(x, "GetDampingRatio", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFrequency(value: () => Double): Self = StObject.set(x, "GetFrequency", js.Any.fromFunction0(value))
+    inline def setGetFrequency(value: () => Double): Self = StObject.set(x, "GetFrequency", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxForce(value: () => Double): Self = StObject.set(x, "GetMaxForce", js.Any.fromFunction0(value))
+    inline def setGetMaxForce(value: () => Double): Self = StObject.set(x, "GetMaxForce", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTarget(value: () => b2Vec2): Self = StObject.set(x, "GetTarget", js.Any.fromFunction0(value))
+    inline def setGetTarget(value: () => b2Vec2): Self = StObject.set(x, "GetTarget", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDampingRatio(value: Double => Unit): Self = StObject.set(x, "SetDampingRatio", js.Any.fromFunction1(value))
+    inline def setSetDampingRatio(value: Double => Unit): Self = StObject.set(x, "SetDampingRatio", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFrequency(value: Double => Unit): Self = StObject.set(x, "SetFrequency", js.Any.fromFunction1(value))
+    inline def setSetFrequency(value: Double => Unit): Self = StObject.set(x, "SetFrequency", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaxForce(value: Double => Unit): Self = StObject.set(x, "SetMaxForce", js.Any.fromFunction1(value))
+    inline def setSetMaxForce(value: Double => Unit): Self = StObject.set(x, "SetMaxForce", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTarget(value: b2Vec2 => Unit): Self = StObject.set(x, "SetTarget", js.Any.fromFunction1(value))
+    inline def setSetTarget(value: b2Vec2 => Unit): Self = StObject.set(x, "SetTarget", js.Any.fromFunction1(value))
   }
 }

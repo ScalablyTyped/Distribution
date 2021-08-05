@@ -23,31 +23,23 @@ trait EventsConfiguration extends StObject {
 }
 object EventsConfiguration {
   
-  @scala.inline
-  def apply(): EventsConfiguration = {
+  inline def apply(): EventsConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventsConfiguration]
   }
   
-  @scala.inline
-  implicit class EventsConfigurationMutableBuilder[Self <: EventsConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: EventsConfiguration](x: Self) {
     
-    @scala.inline
-    def setBotId(value: String): Self = StObject.set(x, "BotId", value.asInstanceOf[js.Any])
+    inline def setBotId(value: String): Self = StObject.set(x, "BotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotIdUndefined: Self = StObject.set(x, "BotId", js.undefined)
+    inline def setBotIdUndefined: Self = StObject.set(x, "BotId", js.undefined)
     
-    @scala.inline
-    def setLambdaFunctionArn(value: SensitiveString): Self = StObject.set(x, "LambdaFunctionArn", value.asInstanceOf[js.Any])
+    inline def setLambdaFunctionArn(value: SensitiveString): Self = StObject.set(x, "LambdaFunctionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaFunctionArnUndefined: Self = StObject.set(x, "LambdaFunctionArn", js.undefined)
+    inline def setLambdaFunctionArnUndefined: Self = StObject.set(x, "LambdaFunctionArn", js.undefined)
     
-    @scala.inline
-    def setOutboundEventsHTTPSEndpoint(value: SensitiveString): Self = StObject.set(x, "OutboundEventsHTTPSEndpoint", value.asInstanceOf[js.Any])
+    inline def setOutboundEventsHTTPSEndpoint(value: SensitiveString): Self = StObject.set(x, "OutboundEventsHTTPSEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundEventsHTTPSEndpointUndefined: Self = StObject.set(x, "OutboundEventsHTTPSEndpoint", js.undefined)
+    inline def setOutboundEventsHTTPSEndpointUndefined: Self = StObject.set(x, "OutboundEventsHTTPSEndpoint", js.undefined)
   }
 }

@@ -12,6 +12,5 @@ object autocompleteAutocompleteDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def autocompleteDriverFactory(hasElementEventTrigger: Element): Click = ^.asInstanceOf[js.Dynamic].applyDynamic("autocompleteDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[Click]
+  inline def autocompleteDriverFactory(hasElementEventTrigger: Element): Click = ^.asInstanceOf[js.Dynamic].applyDynamic("autocompleteDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[Click]
 }

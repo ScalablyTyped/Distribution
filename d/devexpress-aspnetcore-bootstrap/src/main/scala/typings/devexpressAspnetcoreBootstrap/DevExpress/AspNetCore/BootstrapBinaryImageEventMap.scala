@@ -18,8 +18,7 @@ trait BootstrapBinaryImageEventMap
 }
 object BootstrapBinaryImageEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beginCallback: BeginCallbackEventArgs,
     callbackError: CallbackErrorEventArgs,
     click: EditClickEventArgs,
@@ -34,19 +33,14 @@ object BootstrapBinaryImageEventMap {
     __obj.asInstanceOf[BootstrapBinaryImageEventMap]
   }
   
-  @scala.inline
-  implicit class BootstrapBinaryImageEventMapMutableBuilder[Self <: BootstrapBinaryImageEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapBinaryImageEventMap](x: Self) {
     
-    @scala.inline
-    def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
+    inline def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
+    inline def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClick(value: EditClickEventArgs): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    inline def setClick(value: EditClickEventArgs): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
+    inline def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
   }
 }

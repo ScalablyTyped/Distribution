@@ -77,92 +77,63 @@ object vba {
     trait Constants extends StObject
     object Constants {
       
-      @scala.inline
-      def AUTO_CLOSE: `3` = 3.asInstanceOf[`3`]
+      inline def AUTO_CLOSE: `3` = 3.asInstanceOf[`3`]
       
-      @scala.inline
-      def AUTO_EXEC: `4` = 4.asInstanceOf[`4`]
+      inline def AUTO_EXEC: `4` = 4.asInstanceOf[`4`]
       
-      @scala.inline
-      def AUTO_EXIT: `5` = 5.asInstanceOf[`5`]
+      inline def AUTO_EXIT: `5` = 5.asInstanceOf[`5`]
       
-      @scala.inline
-      def AUTO_NEW: `1` = 1.asInstanceOf[`1`]
+      inline def AUTO_NEW: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def AUTO_OPEN: `2` = 2.asInstanceOf[`2`]
+      inline def AUTO_OPEN: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def DOCUMENT_CLOSE: `1003` = 1003.asInstanceOf[`1003`]
+      inline def DOCUMENT_CLOSE: `1003` = 1003.asInstanceOf[`1003`]
       
-      @scala.inline
-      def DOCUMENT_NEW: `1001` = 1001.asInstanceOf[`1001`]
+      inline def DOCUMENT_NEW: `1001` = 1001.asInstanceOf[`1001`]
       
-      @scala.inline
-      def DOCUMENT_OPEN: `1002` = 1002.asInstanceOf[`1002`]
+      inline def DOCUMENT_OPEN: `1002` = 1002.asInstanceOf[`1002`]
       
-      @scala.inline
-      def NO_EVENT: `-1` = -1.asInstanceOf[`-1`]
+      inline def NO_EVENT: `-1` = -1.asInstanceOf[`-1`]
       
-      @scala.inline
-      def USERDEFINED_START: `1000000` = 1000000.asInstanceOf[`1000000`]
+      inline def USERDEFINED_START: `1000000` = 1000000.asInstanceOf[`1000000`]
       
-      @scala.inline
-      def WORKBOOK_ACTIVATE: `2001` = 2001.asInstanceOf[`2001`]
+      inline def WORKBOOK_ACTIVATE: `2001` = 2001.asInstanceOf[`2001`]
       
-      @scala.inline
-      def WORKBOOK_AFTERSAVE: `2007` = 2007.asInstanceOf[`2007`]
+      inline def WORKBOOK_AFTERSAVE: `2007` = 2007.asInstanceOf[`2007`]
       
-      @scala.inline
-      def WORKBOOK_BEFORECLOSE: `2004` = 2004.asInstanceOf[`2004`]
+      inline def WORKBOOK_BEFORECLOSE: `2004` = 2004.asInstanceOf[`2004`]
       
-      @scala.inline
-      def WORKBOOK_BEFOREPRINT: `2005` = 2005.asInstanceOf[`2005`]
+      inline def WORKBOOK_BEFOREPRINT: `2005` = 2005.asInstanceOf[`2005`]
       
-      @scala.inline
-      def WORKBOOK_BEFORESAVE: `2006` = 2006.asInstanceOf[`2006`]
+      inline def WORKBOOK_BEFORESAVE: `2006` = 2006.asInstanceOf[`2006`]
       
-      @scala.inline
-      def WORKBOOK_DEACTIVATE: `2002` = 2002.asInstanceOf[`2002`]
+      inline def WORKBOOK_DEACTIVATE: `2002` = 2002.asInstanceOf[`2002`]
       
-      @scala.inline
-      def WORKBOOK_NEWSHEET: `2008` = 2008.asInstanceOf[`2008`]
+      inline def WORKBOOK_NEWSHEET: `2008` = 2008.asInstanceOf[`2008`]
       
-      @scala.inline
-      def WORKBOOK_OPEN: `2003` = 2003.asInstanceOf[`2003`]
+      inline def WORKBOOK_OPEN: `2003` = 2003.asInstanceOf[`2003`]
       
-      @scala.inline
-      def WORKBOOK_WINDOWACTIVATE: `2009` = 2009.asInstanceOf[`2009`]
+      inline def WORKBOOK_WINDOWACTIVATE: `2009` = 2009.asInstanceOf[`2009`]
       
-      @scala.inline
-      def WORKBOOK_WINDOWDEACTIVATE: `2010` = 2010.asInstanceOf[`2010`]
+      inline def WORKBOOK_WINDOWDEACTIVATE: `2010` = 2010.asInstanceOf[`2010`]
       
-      @scala.inline
-      def WORKBOOK_WINDOWRESIZE: `2011` = 2011.asInstanceOf[`2011`]
+      inline def WORKBOOK_WINDOWRESIZE: `2011` = 2011.asInstanceOf[`2011`]
       
-      @scala.inline
-      def WORKSHEET_ACTIVATE: `2101` = 2101.asInstanceOf[`2101`]
+      inline def WORKSHEET_ACTIVATE: `2101` = 2101.asInstanceOf[`2101`]
       
-      @scala.inline
-      def WORKSHEET_BEFOREDOUBLECLICK: `2103` = 2103.asInstanceOf[`2103`]
+      inline def WORKSHEET_BEFOREDOUBLECLICK: `2103` = 2103.asInstanceOf[`2103`]
       
-      @scala.inline
-      def WORKSHEET_BEFORERIGHTCLICK: `2104` = 2104.asInstanceOf[`2104`]
+      inline def WORKSHEET_BEFORERIGHTCLICK: `2104` = 2104.asInstanceOf[`2104`]
       
-      @scala.inline
-      def WORKSHEET_CALCULATE: `2105` = 2105.asInstanceOf[`2105`]
+      inline def WORKSHEET_CALCULATE: `2105` = 2105.asInstanceOf[`2105`]
       
-      @scala.inline
-      def WORKSHEET_CHANGE: `2106` = 2106.asInstanceOf[`2106`]
+      inline def WORKSHEET_CHANGE: `2106` = 2106.asInstanceOf[`2106`]
       
-      @scala.inline
-      def WORKSHEET_DEACTIVATE: `2102` = 2102.asInstanceOf[`2102`]
+      inline def WORKSHEET_DEACTIVATE: `2102` = 2102.asInstanceOf[`2102`]
       
-      @scala.inline
-      def WORKSHEET_FOLLOWHYPERLINK: `2108` = 2108.asInstanceOf[`2108`]
+      inline def WORKSHEET_FOLLOWHYPERLINK: `2108` = 2108.asInstanceOf[`2108`]
       
-      @scala.inline
-      def WORKSHEET_SELECTIONCHANGE: `2107` = 2107.asInstanceOf[`2107`]
+      inline def WORKSHEET_SELECTIONCHANGE: `2107` = 2107.asInstanceOf[`2107`]
     }
   }
   
@@ -194,20 +165,16 @@ object vba {
   }
   object VBAScriptEvent {
     
-    @scala.inline
-    def apply(Identifier: Double, ModuleName: String, Source: XInterface): VBAScriptEvent = {
+    inline def apply(Identifier: Double, ModuleName: String, Source: XInterface): VBAScriptEvent = {
       val __obj = js.Dynamic.literal(Identifier = Identifier.asInstanceOf[js.Any], ModuleName = ModuleName.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
       __obj.asInstanceOf[VBAScriptEvent]
     }
     
-    @scala.inline
-    implicit class VBAScriptEventMutableBuilder[Self <: VBAScriptEvent] (val x: Self) extends AnyVal {
+    extension [Self <: VBAScriptEvent](x: Self) {
       
-      @scala.inline
-      def setIdentifier(value: Double): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: Double): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleName(value: String): Self = StObject.set(x, "ModuleName", value.asInstanceOf[js.Any])
+      inline def setModuleName(value: String): Self = StObject.set(x, "ModuleName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -221,14 +188,11 @@ object vba {
     trait Constants extends StObject
     object Constants {
       
-      @scala.inline
-      def INITIALIZE_USERFORM: `2` = 2.asInstanceOf[`2`]
+      inline def INITIALIZE_USERFORM: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def SCRIPT_STARTED: `0` = 0.asInstanceOf[`0`]
+      inline def SCRIPT_STARTED: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def SCRIPT_STOPPED: `1` = 1.asInstanceOf[`1`]
+      inline def SCRIPT_STOPPED: `1` = 1.asInstanceOf[`1`]
     }
   }
   
@@ -252,8 +216,7 @@ object vba {
   }
   object XVBACompatibility {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ProjectName: String,
       RunningVBAScripts: Double,
       VBACompatibilityMode: Boolean,
@@ -265,26 +228,19 @@ object vba {
       __obj.asInstanceOf[XVBACompatibility]
     }
     
-    @scala.inline
-    implicit class XVBACompatibilityMutableBuilder[Self <: XVBACompatibility] (val x: Self) extends AnyVal {
+    extension [Self <: XVBACompatibility](x: Self) {
       
-      @scala.inline
-      def setAddVBAScriptListener(value: XVBAScriptListener => Unit): Self = StObject.set(x, "addVBAScriptListener", js.Any.fromFunction1(value))
+      inline def setAddVBAScriptListener(value: XVBAScriptListener => Unit): Self = StObject.set(x, "addVBAScriptListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBroadcastVBAScriptEvent(value: (Double, String) => Unit): Self = StObject.set(x, "broadcastVBAScriptEvent", js.Any.fromFunction2(value))
+      inline def setBroadcastVBAScriptEvent(value: (Double, String) => Unit): Self = StObject.set(x, "broadcastVBAScriptEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProjectName(value: String): Self = StObject.set(x, "ProjectName", value.asInstanceOf[js.Any])
+      inline def setProjectName(value: String): Self = StObject.set(x, "ProjectName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveVBAScriptListener(value: XVBAScriptListener => Unit): Self = StObject.set(x, "removeVBAScriptListener", js.Any.fromFunction1(value))
+      inline def setRemoveVBAScriptListener(value: XVBAScriptListener => Unit): Self = StObject.set(x, "removeVBAScriptListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRunningVBAScripts(value: Double): Self = StObject.set(x, "RunningVBAScripts", value.asInstanceOf[js.Any])
+      inline def setRunningVBAScripts(value: Double): Self = StObject.set(x, "RunningVBAScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVBACompatibilityMode(value: Boolean): Self = StObject.set(x, "VBACompatibilityMode", value.asInstanceOf[js.Any])
+      inline def setVBACompatibilityMode(value: Boolean): Self = StObject.set(x, "VBACompatibilityMode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -311,8 +267,7 @@ object vba {
   }
   object XVBAEventProcessor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hasVbaEventHandler: (Double, SeqEquiv[js.Any]) => Boolean,
       processVbaEvent: (Double, SeqEquiv[js.Any]) => Boolean
     ): XVBAEventProcessor = {
@@ -320,14 +275,11 @@ object vba {
       __obj.asInstanceOf[XVBAEventProcessor]
     }
     
-    @scala.inline
-    implicit class XVBAEventProcessorMutableBuilder[Self <: XVBAEventProcessor] (val x: Self) extends AnyVal {
+    extension [Self <: XVBAEventProcessor](x: Self) {
       
-      @scala.inline
-      def setHasVbaEventHandler(value: (Double, SeqEquiv[js.Any]) => Boolean): Self = StObject.set(x, "hasVbaEventHandler", js.Any.fromFunction2(value))
+      inline def setHasVbaEventHandler(value: (Double, SeqEquiv[js.Any]) => Boolean): Self = StObject.set(x, "hasVbaEventHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProcessVbaEvent(value: (Double, SeqEquiv[js.Any]) => Boolean): Self = StObject.set(x, "processVbaEvent", js.Any.fromFunction2(value))
+      inline def setProcessVbaEvent(value: (Double, SeqEquiv[js.Any]) => Boolean): Self = StObject.set(x, "processVbaEvent", js.Any.fromFunction2(value))
     }
   }
   
@@ -352,20 +304,16 @@ object vba {
   }
   object XVBAMacroResolver {
     
-    @scala.inline
-    def apply(resolveScriptURLtoVBAMacro: String => String, resolveVBAMacroToScriptURL: String => String): XVBAMacroResolver = {
+    inline def apply(resolveScriptURLtoVBAMacro: String => String, resolveVBAMacroToScriptURL: String => String): XVBAMacroResolver = {
       val __obj = js.Dynamic.literal(resolveScriptURLtoVBAMacro = js.Any.fromFunction1(resolveScriptURLtoVBAMacro), resolveVBAMacroToScriptURL = js.Any.fromFunction1(resolveVBAMacroToScriptURL))
       __obj.asInstanceOf[XVBAMacroResolver]
     }
     
-    @scala.inline
-    implicit class XVBAMacroResolverMutableBuilder[Self <: XVBAMacroResolver] (val x: Self) extends AnyVal {
+    extension [Self <: XVBAMacroResolver](x: Self) {
       
-      @scala.inline
-      def setResolveScriptURLtoVBAMacro(value: String => String): Self = StObject.set(x, "resolveScriptURLtoVBAMacro", js.Any.fromFunction1(value))
+      inline def setResolveScriptURLtoVBAMacro(value: String => String): Self = StObject.set(x, "resolveScriptURLtoVBAMacro", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolveVBAMacroToScriptURL(value: String => String): Self = StObject.set(x, "resolveVBAMacroToScriptURL", js.Any.fromFunction1(value))
+      inline def setResolveVBAMacroToScriptURL(value: String => String): Self = StObject.set(x, "resolveVBAMacroToScriptURL", js.Any.fromFunction1(value))
     }
   }
   
@@ -381,8 +329,7 @@ object vba {
   }
   object XVBAModuleInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getModuleInfo: String => ModuleInfo,
       hasModuleInfo: String => Boolean,
       insertModuleInfo: (String, ModuleInfo) => Unit,
@@ -392,20 +339,15 @@ object vba {
       __obj.asInstanceOf[XVBAModuleInfo]
     }
     
-    @scala.inline
-    implicit class XVBAModuleInfoMutableBuilder[Self <: XVBAModuleInfo] (val x: Self) extends AnyVal {
+    extension [Self <: XVBAModuleInfo](x: Self) {
       
-      @scala.inline
-      def setGetModuleInfo(value: String => ModuleInfo): Self = StObject.set(x, "getModuleInfo", js.Any.fromFunction1(value))
+      inline def setGetModuleInfo(value: String => ModuleInfo): Self = StObject.set(x, "getModuleInfo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasModuleInfo(value: String => Boolean): Self = StObject.set(x, "hasModuleInfo", js.Any.fromFunction1(value))
+      inline def setHasModuleInfo(value: String => Boolean): Self = StObject.set(x, "hasModuleInfo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInsertModuleInfo(value: (String, ModuleInfo) => Unit): Self = StObject.set(x, "insertModuleInfo", js.Any.fromFunction2(value))
+      inline def setInsertModuleInfo(value: (String, ModuleInfo) => Unit): Self = StObject.set(x, "insertModuleInfo", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveModuleInfo(value: String => Unit): Self = StObject.set(x, "removeModuleInfo", js.Any.fromFunction1(value))
+      inline def setRemoveModuleInfo(value: String => Unit): Self = StObject.set(x, "removeModuleInfo", js.Any.fromFunction1(value))
     }
   }
   
@@ -417,8 +359,7 @@ object vba {
   }
   object XVBAScriptListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       disposing: EventObject => Unit,
       notifyVBAScriptEvent: VBAScriptEvent => Unit,
@@ -429,11 +370,9 @@ object vba {
       __obj.asInstanceOf[XVBAScriptListener]
     }
     
-    @scala.inline
-    implicit class XVBAScriptListenerMutableBuilder[Self <: XVBAScriptListener] (val x: Self) extends AnyVal {
+    extension [Self <: XVBAScriptListener](x: Self) {
       
-      @scala.inline
-      def setNotifyVBAScriptEvent(value: VBAScriptEvent => Unit): Self = StObject.set(x, "notifyVBAScriptEvent", js.Any.fromFunction1(value))
+      inline def setNotifyVBAScriptEvent(value: VBAScriptEvent => Unit): Self = StObject.set(x, "notifyVBAScriptEvent", js.Any.fromFunction1(value))
     }
   }
 }

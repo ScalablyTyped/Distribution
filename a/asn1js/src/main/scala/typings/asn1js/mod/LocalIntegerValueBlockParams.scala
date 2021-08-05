@@ -9,8 +9,7 @@ trait LocalIntegerValueBlockParams
      with LocalHexBlockParams
 object LocalIntegerValueBlockParams {
   
-  @scala.inline
-  def apply(): LocalIntegerValueBlockParams = {
+  inline def apply(): LocalIntegerValueBlockParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalIntegerValueBlockParams]
   }

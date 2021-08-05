@@ -10,8 +10,7 @@ object letMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def letProto[T, R](
+  inline def letProto[T, R](
     func: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* selector */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any

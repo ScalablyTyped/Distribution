@@ -40,8 +40,7 @@ trait ASPxClientTimer
 }
 object ASPxClientTimer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     GetClientVisible: () => Boolean,
     GetEnabled: () => Boolean,
@@ -67,22 +66,16 @@ object ASPxClientTimer {
     __obj.asInstanceOf[ASPxClientTimer]
   }
   
-  @scala.inline
-  implicit class ASPxClientTimerMutableBuilder[Self <: ASPxClientTimer] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTimer](x: Self) {
     
-    @scala.inline
-    def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
+    inline def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInterval(value: () => Double): Self = StObject.set(x, "GetInterval", js.Any.fromFunction0(value))
+    inline def setGetInterval(value: () => Double): Self = StObject.set(x, "GetInterval", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
+    inline def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetInterval(value: Double => Unit): Self = StObject.set(x, "SetInterval", js.Any.fromFunction1(value))
+    inline def setSetInterval(value: Double => Unit): Self = StObject.set(x, "SetInterval", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTick(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTimer]]): Self = StObject.set(x, "Tick", value.asInstanceOf[js.Any])
+    inline def setTick(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTimer]]): Self = StObject.set(x, "Tick", value.asInstanceOf[js.Any])
   }
 }

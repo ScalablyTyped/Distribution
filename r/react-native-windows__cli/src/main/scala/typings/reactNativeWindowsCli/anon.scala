@@ -21,41 +21,30 @@ object anon {
   }
   object Latest {
     
-    @scala.inline
-    def apply(): Latest = {
+    inline def apply(): Latest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Latest]
     }
     
-    @scala.inline
-    implicit class LatestMutableBuilder[Self <: Latest] (val x: Self) extends AnyVal {
+    extension [Self <: Latest](x: Self) {
       
-      @scala.inline
-      def setLatest(value: Boolean): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
+      inline def setLatest(value: Boolean): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestUndefined: Self = StObject.set(x, "latest", js.undefined)
+      inline def setLatestUndefined: Self = StObject.set(x, "latest", js.undefined)
       
-      @scala.inline
-      def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
+      inline def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
+      inline def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
       
-      @scala.inline
-      def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
+      inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -74,53 +63,38 @@ object anon {
   }
   object PartialWindowsDependencyC {
     
-    @scala.inline
-    def apply(): PartialWindowsDependencyC = {
+    inline def apply(): PartialWindowsDependencyC = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialWindowsDependencyC]
     }
     
-    @scala.inline
-    implicit class PartialWindowsDependencyCMutableBuilder[Self <: PartialWindowsDependencyC] (val x: Self) extends AnyVal {
+    extension [Self <: PartialWindowsDependencyC](x: Self) {
       
-      @scala.inline
-      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+      inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
       
-      @scala.inline
-      def setNugetPackages(value: js.Array[NuGetPackageDependency]): Self = StObject.set(x, "nugetPackages", value.asInstanceOf[js.Any])
+      inline def setNugetPackages(value: js.Array[NuGetPackageDependency]): Self = StObject.set(x, "nugetPackages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNugetPackagesUndefined: Self = StObject.set(x, "nugetPackages", js.undefined)
+      inline def setNugetPackagesUndefined: Self = StObject.set(x, "nugetPackages", js.undefined)
       
-      @scala.inline
-      def setNugetPackagesVarargs(value: NuGetPackageDependency*): Self = StObject.set(x, "nugetPackages", js.Array(value :_*))
+      inline def setNugetPackagesVarargs(value: NuGetPackageDependency*): Self = StObject.set(x, "nugetPackages", js.Array(value :_*))
       
-      @scala.inline
-      def setProjects(value: js.Array[ProjectDependency]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+      inline def setProjects(value: js.Array[ProjectDependency]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
+      inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
       
-      @scala.inline
-      def setProjectsVarargs(value: ProjectDependency*): Self = StObject.set(x, "projects", js.Array(value :_*))
+      inline def setProjectsVarargs(value: ProjectDependency*): Self = StObject.set(x, "projects", js.Array(value :_*))
       
-      @scala.inline
-      def setSolutionFile(value: String): Self = StObject.set(x, "solutionFile", value.asInstanceOf[js.Any])
+      inline def setSolutionFile(value: String): Self = StObject.set(x, "solutionFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSolutionFileNull: Self = StObject.set(x, "solutionFile", null)
+      inline def setSolutionFileNull: Self = StObject.set(x, "solutionFile", null)
       
-      @scala.inline
-      def setSolutionFileUndefined: Self = StObject.set(x, "solutionFile", js.undefined)
+      inline def setSolutionFileUndefined: Self = StObject.set(x, "solutionFile", js.undefined)
       
-      @scala.inline
-      def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
+      inline def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceDirUndefined: Self = StObject.set(x, "sourceDir", js.undefined)
+      inline def setSourceDirUndefined: Self = StObject.set(x, "sourceDir", js.undefined)
     }
   }
   
@@ -137,38 +111,28 @@ object anon {
   }
   object PartialWindowsProjectConf {
     
-    @scala.inline
-    def apply(): PartialWindowsProjectConf = {
+    inline def apply(): PartialWindowsProjectConf = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialWindowsProjectConf]
     }
     
-    @scala.inline
-    implicit class PartialWindowsProjectConfMutableBuilder[Self <: PartialWindowsProjectConf] (val x: Self) extends AnyVal {
+    extension [Self <: PartialWindowsProjectConf](x: Self) {
       
-      @scala.inline
-      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+      inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
       
-      @scala.inline
-      def setProject(value: Project): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: Project): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
-      @scala.inline
-      def setSolutionFile(value: String): Self = StObject.set(x, "solutionFile", value.asInstanceOf[js.Any])
+      inline def setSolutionFile(value: String): Self = StObject.set(x, "solutionFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSolutionFileUndefined: Self = StObject.set(x, "solutionFile", js.undefined)
+      inline def setSolutionFileUndefined: Self = StObject.set(x, "solutionFile", js.undefined)
       
-      @scala.inline
-      def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
+      inline def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceDirUndefined: Self = StObject.set(x, "sourceDir", js.undefined)
+      inline def setSourceDirUndefined: Self = StObject.set(x, "sourceDir", js.undefined)
     }
   }
   
@@ -182,35 +146,26 @@ object anon {
   }
   object Requires {
     
-    @scala.inline
-    def apply(): Requires = {
+    inline def apply(): Requires = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Requires]
     }
     
-    @scala.inline
-    implicit class RequiresMutableBuilder[Self <: Requires] (val x: Self) extends AnyVal {
+    extension [Self <: Requires](x: Self) {
       
-      @scala.inline
-      def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
+      inline def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
+      inline def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
       
-      @scala.inline
-      def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
+      inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -220,17 +175,14 @@ object anon {
   }
   object Verbose {
     
-    @scala.inline
-    def apply(verbose: Boolean): Verbose = {
+    inline def apply(verbose: Boolean): Verbose = {
       val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
       __obj.asInstanceOf[Verbose]
     }
     
-    @scala.inline
-    implicit class VerboseMutableBuilder[Self <: Verbose] (val x: Self) extends AnyVal {
+    extension [Self <: Verbose](x: Self) {
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     }
   }
 }

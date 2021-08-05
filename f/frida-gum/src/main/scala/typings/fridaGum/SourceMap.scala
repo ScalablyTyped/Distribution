@@ -19,16 +19,13 @@ trait SourceMap extends StObject {
 }
 object SourceMap {
   
-  @scala.inline
-  def apply(resolve: GeneratedSourcePosition => OriginalSourcePosition | Null): SourceMap = {
+  inline def apply(resolve: GeneratedSourcePosition => OriginalSourcePosition | Null): SourceMap = {
     val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction1(resolve))
     __obj.asInstanceOf[SourceMap]
   }
   
-  @scala.inline
-  implicit class SourceMapMutableBuilder[Self <: SourceMap] (val x: Self) extends AnyVal {
+  extension [Self <: SourceMap](x: Self) {
     
-    @scala.inline
-    def setResolve(value: GeneratedSourcePosition => OriginalSourcePosition | Null): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+    inline def setResolve(value: GeneratedSourcePosition => OriginalSourcePosition | Null): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
   }
 }

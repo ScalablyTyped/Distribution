@@ -23,31 +23,23 @@ trait DeleteAppRequest extends StObject {
 }
 object DeleteAppRequest {
   
-  @scala.inline
-  def apply(): DeleteAppRequest = {
+  inline def apply(): DeleteAppRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteAppRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAppRequestMutableBuilder[Self <: DeleteAppRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAppRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
-    @scala.inline
-    def setForceStopAppReplication(value: ForceStopAppReplication): Self = StObject.set(x, "forceStopAppReplication", value.asInstanceOf[js.Any])
+    inline def setForceStopAppReplication(value: ForceStopAppReplication): Self = StObject.set(x, "forceStopAppReplication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceStopAppReplicationUndefined: Self = StObject.set(x, "forceStopAppReplication", js.undefined)
+    inline def setForceStopAppReplicationUndefined: Self = StObject.set(x, "forceStopAppReplication", js.undefined)
     
-    @scala.inline
-    def setForceTerminateApp(value: ForceTerminateApp): Self = StObject.set(x, "forceTerminateApp", value.asInstanceOf[js.Any])
+    inline def setForceTerminateApp(value: ForceTerminateApp): Self = StObject.set(x, "forceTerminateApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceTerminateAppUndefined: Self = StObject.set(x, "forceTerminateApp", js.undefined)
+    inline def setForceTerminateAppUndefined: Self = StObject.set(x, "forceTerminateApp", js.undefined)
   }
 }

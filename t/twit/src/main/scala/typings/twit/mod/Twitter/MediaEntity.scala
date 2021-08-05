@@ -32,8 +32,7 @@ trait MediaEntity extends StObject {
 }
 object MediaEntity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     display_url: String,
     expanded_url: String,
     id: Double,
@@ -52,43 +51,30 @@ object MediaEntity {
     __obj.asInstanceOf[MediaEntity]
   }
   
-  @scala.inline
-  implicit class MediaEntityMutableBuilder[Self <: MediaEntity] (val x: Self) extends AnyVal {
+  extension [Self <: MediaEntity](x: Self) {
     
-    @scala.inline
-    def setDisplay_url(value: String): Self = StObject.set(x, "display_url", value.asInstanceOf[js.Any])
+    inline def setDisplay_url(value: String): Self = StObject.set(x, "display_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpanded_url(value: String): Self = StObject.set(x, "expanded_url", value.asInstanceOf[js.Any])
+    inline def setExpanded_url(value: String): Self = StObject.set(x, "expanded_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId_str(value: String): Self = StObject.set(x, "id_str", value.asInstanceOf[js.Any])
+    inline def setId_str(value: String): Self = StObject.set(x, "id_str", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia_url(value: String): Self = StObject.set(x, "media_url", value.asInstanceOf[js.Any])
+    inline def setMedia_url(value: String): Self = StObject.set(x, "media_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia_url_https(value: String): Self = StObject.set(x, "media_url_https", value.asInstanceOf[js.Any])
+    inline def setMedia_url_https(value: String): Self = StObject.set(x, "media_url_https", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizes(value: Sizes): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+    inline def setSizes(value: Sizes): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_status_id(value: Double): Self = StObject.set(x, "source_status_id", value.asInstanceOf[js.Any])
+    inline def setSource_status_id(value: Double): Self = StObject.set(x, "source_status_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_status_id_str(value: String): Self = StObject.set(x, "source_status_id_str", value.asInstanceOf[js.Any])
+    inline def setSource_status_id_str(value: String): Self = StObject.set(x, "source_status_id_str", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

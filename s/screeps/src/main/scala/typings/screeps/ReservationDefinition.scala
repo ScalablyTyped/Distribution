@@ -12,19 +12,15 @@ trait ReservationDefinition extends StObject {
 }
 object ReservationDefinition {
   
-  @scala.inline
-  def apply(ticksToEnd: Double, username: String): ReservationDefinition = {
+  inline def apply(ticksToEnd: Double, username: String): ReservationDefinition = {
     val __obj = js.Dynamic.literal(ticksToEnd = ticksToEnd.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservationDefinition]
   }
   
-  @scala.inline
-  implicit class ReservationDefinitionMutableBuilder[Self <: ReservationDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ReservationDefinition](x: Self) {
     
-    @scala.inline
-    def setTicksToEnd(value: Double): Self = StObject.set(x, "ticksToEnd", value.asInstanceOf[js.Any])
+    inline def setTicksToEnd(value: Double): Self = StObject.set(x, "ticksToEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

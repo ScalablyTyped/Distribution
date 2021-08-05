@@ -75,8 +75,7 @@ object jQueryFlagStrap {
   }
   object FlagStrapOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       buttonSize: String,
       buttonType: String,
       inputName: String,
@@ -88,50 +87,35 @@ object jQueryFlagStrap {
       __obj.asInstanceOf[FlagStrapOptions]
     }
     
-    @scala.inline
-    implicit class FlagStrapOptionsMutableBuilder[Self <: FlagStrapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FlagStrapOptions](x: Self) {
       
-      @scala.inline
-      def setButtonSize(value: String): Self = StObject.set(x, "buttonSize", value.asInstanceOf[js.Any])
+      inline def setButtonSize(value: String): Self = StObject.set(x, "buttonSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonType(value: String): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
+      inline def setButtonType(value: String): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountries(value: js.Object): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
+      inline def setCountries(value: js.Object): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
+      inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
       
-      @scala.inline
-      def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
+      inline def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputIdUndefined: Self = StObject.set(x, "inputId", js.undefined)
+      inline def setInputIdUndefined: Self = StObject.set(x, "inputId", js.undefined)
       
-      @scala.inline
-      def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
+      inline def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelMargin(value: String): Self = StObject.set(x, "labelMargin", value.asInstanceOf[js.Any])
+      inline def setLabelMargin(value: String): Self = StObject.set(x, "labelMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnSelect(value: (/* value */ js.Any, /* element */ js.Any) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (/* value */ js.Any, /* element */ js.Any) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: Boolean | FlagStrapPlaceholderOptions): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: Boolean | FlagStrapPlaceholderOptions): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollable(value: Boolean): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
+      inline def setScrollable(value: Boolean): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollableHeight(value: String): Self = StObject.set(x, "scrollableHeight", value.asInstanceOf[js.Any])
+      inline def setScrollableHeight(value: String): Self = StObject.set(x, "scrollableHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollableHeightUndefined: Self = StObject.set(x, "scrollableHeight", js.undefined)
+      inline def setScrollableHeightUndefined: Self = StObject.set(x, "scrollableHeight", js.undefined)
     }
   }
   
@@ -143,20 +127,16 @@ object jQueryFlagStrap {
   }
   object FlagStrapPlaceholderOptions {
     
-    @scala.inline
-    def apply(text: String, value: String): FlagStrapPlaceholderOptions = {
+    inline def apply(text: String, value: String): FlagStrapPlaceholderOptions = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FlagStrapPlaceholderOptions]
     }
     
-    @scala.inline
-    implicit class FlagStrapPlaceholderOptionsMutableBuilder[Self <: FlagStrapPlaceholderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FlagStrapPlaceholderOptions](x: Self) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,20 +146,16 @@ object jQueryFlagStrap {
   }
   object FlagStrapStatic {
     
-    @scala.inline
-    def apply(): FlagStrapStatic = {
+    inline def apply(): FlagStrapStatic = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlagStrapStatic]
     }
     
-    @scala.inline
-    implicit class FlagStrapStaticMutableBuilder[Self <: FlagStrapStatic] (val x: Self) extends AnyVal {
+    extension [Self <: FlagStrapStatic](x: Self) {
       
-      @scala.inline
-      def setFlagStrap(value: Unit): Self = StObject.set(x, "flagStrap", value.asInstanceOf[js.Any])
+      inline def setFlagStrap(value: Unit): Self = StObject.set(x, "flagStrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagStrapUndefined: Self = StObject.set(x, "flagStrap", js.undefined)
+      inline def setFlagStrapUndefined: Self = StObject.set(x, "flagStrap", js.undefined)
     }
   }
 }

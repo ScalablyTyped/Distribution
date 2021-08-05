@@ -11,6 +11,5 @@ object directionalPropertyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(property: String, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(property.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def default(property: String, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(property.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
 }

@@ -14,19 +14,15 @@ trait StoreSelection extends StObject {
 }
 object StoreSelection {
   
-  @scala.inline
-  def apply(storyId: StoryId, viewMode: ViewMode): StoreSelection = {
+  inline def apply(storyId: StoryId, viewMode: ViewMode): StoreSelection = {
     val __obj = js.Dynamic.literal(storyId = storyId.asInstanceOf[js.Any], viewMode = viewMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreSelection]
   }
   
-  @scala.inline
-  implicit class StoreSelectionMutableBuilder[Self <: StoreSelection] (val x: Self) extends AnyVal {
+  extension [Self <: StoreSelection](x: Self) {
     
-    @scala.inline
-    def setStoryId(value: StoryId): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
+    inline def setStoryId(value: StoryId): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    inline def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
   }
 }

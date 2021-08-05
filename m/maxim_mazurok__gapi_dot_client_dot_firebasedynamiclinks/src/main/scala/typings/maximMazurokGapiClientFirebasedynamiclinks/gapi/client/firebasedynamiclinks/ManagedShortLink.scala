@@ -26,52 +26,37 @@ trait ManagedShortLink extends StObject {
 }
 object ManagedShortLink {
   
-  @scala.inline
-  def apply(): ManagedShortLink = {
+  inline def apply(): ManagedShortLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedShortLink]
   }
   
-  @scala.inline
-  implicit class ManagedShortLinkMutableBuilder[Self <: ManagedShortLink] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedShortLink](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setFlaggedAttribute(value: js.Array[String]): Self = StObject.set(x, "flaggedAttribute", value.asInstanceOf[js.Any])
+    inline def setFlaggedAttribute(value: js.Array[String]): Self = StObject.set(x, "flaggedAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlaggedAttributeUndefined: Self = StObject.set(x, "flaggedAttribute", js.undefined)
+    inline def setFlaggedAttributeUndefined: Self = StObject.set(x, "flaggedAttribute", js.undefined)
     
-    @scala.inline
-    def setFlaggedAttributeVarargs(value: String*): Self = StObject.set(x, "flaggedAttribute", js.Array(value :_*))
+    inline def setFlaggedAttributeVarargs(value: String*): Self = StObject.set(x, "flaggedAttribute", js.Array(value :_*))
     
-    @scala.inline
-    def setInfo(value: DynamicLinkInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: DynamicLinkInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkName(value: String): Self = StObject.set(x, "linkName", value.asInstanceOf[js.Any])
+    inline def setLinkName(value: String): Self = StObject.set(x, "linkName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkNameUndefined: Self = StObject.set(x, "linkName", js.undefined)
+    inline def setLinkNameUndefined: Self = StObject.set(x, "linkName", js.undefined)
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

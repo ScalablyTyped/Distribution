@@ -21,19 +21,15 @@ trait IPanel
 }
 object IPanel {
   
-  @scala.inline
-  def apply(): IPanel = {
+  inline def apply(): IPanel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPanel]
   }
   
-  @scala.inline
-  implicit class IPanelMutableBuilder[Self <: IPanel] (val x: Self) extends AnyVal {
+  extension [Self <: IPanel](x: Self) {
     
-    @scala.inline
-    def setReconfigure(value: (/* store */ js.UndefOr[IStore], /* columns */ js.UndefOr[Array]) => Unit): Self = StObject.set(x, "reconfigure", js.Any.fromFunction2(value))
+    inline def setReconfigure(value: (/* store */ js.UndefOr[IStore], /* columns */ js.UndefOr[Array]) => Unit): Self = StObject.set(x, "reconfigure", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReconfigureUndefined: Self = StObject.set(x, "reconfigure", js.undefined)
+    inline def setReconfigureUndefined: Self = StObject.set(x, "reconfigure", js.undefined)
   }
 }

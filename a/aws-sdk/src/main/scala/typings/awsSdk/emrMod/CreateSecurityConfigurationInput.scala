@@ -18,19 +18,15 @@ trait CreateSecurityConfigurationInput extends StObject {
 }
 object CreateSecurityConfigurationInput {
   
-  @scala.inline
-  def apply(Name: XmlString, SecurityConfiguration: String): CreateSecurityConfigurationInput = {
+  inline def apply(Name: XmlString, SecurityConfiguration: String): CreateSecurityConfigurationInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SecurityConfiguration = SecurityConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSecurityConfigurationInput]
   }
   
-  @scala.inline
-  implicit class CreateSecurityConfigurationInputMutableBuilder[Self <: CreateSecurityConfigurationInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSecurityConfigurationInput](x: Self) {
     
-    @scala.inline
-    def setName(value: XmlString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: XmlString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityConfiguration(value: String): Self = StObject.set(x, "SecurityConfiguration", value.asInstanceOf[js.Any])
+    inline def setSecurityConfiguration(value: String): Self = StObject.set(x, "SecurityConfiguration", value.asInstanceOf[js.Any])
   }
 }

@@ -15,28 +15,21 @@ trait Intensity extends StObject {
 }
 object Intensity {
   
-  @scala.inline
-  def apply(direction: Cartesian3): Intensity = {
+  inline def apply(direction: Cartesian3): Intensity = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Intensity]
   }
   
-  @scala.inline
-  implicit class IntensityMutableBuilder[Self <: Intensity] (val x: Self) extends AnyVal {
+  extension [Self <: Intensity](x: Self) {
     
-    @scala.inline
-    def setColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDirection(value: Cartesian3): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Cartesian3): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
+    inline def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntensityUndefined: Self = StObject.set(x, "intensity", js.undefined)
+    inline def setIntensityUndefined: Self = StObject.set(x, "intensity", js.undefined)
   }
 }

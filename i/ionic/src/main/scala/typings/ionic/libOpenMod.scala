@@ -10,10 +10,8 @@ object libOpenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def openUrl(target: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openUrl")(target.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def openUrl(target: String, hasAppUrl: OpenUrlOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openUrl")(target.asInstanceOf[js.Any], hasAppUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def openUrl(target: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openUrl")(target.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def openUrl(target: String, hasAppUrl: OpenUrlOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openUrl")(target.asInstanceOf[js.Any], hasAppUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait OpenUrlOptions extends StObject {
     
@@ -23,29 +21,22 @@ object libOpenMod {
   }
   object OpenUrlOptions {
     
-    @scala.inline
-    def apply(): OpenUrlOptions = {
+    inline def apply(): OpenUrlOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OpenUrlOptions]
     }
     
-    @scala.inline
-    implicit class OpenUrlOptionsMutableBuilder[Self <: OpenUrlOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OpenUrlOptions](x: Self) {
       
-      @scala.inline
-      def setApp(value: String | js.Array[String]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: String | js.Array[String]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+      inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
       
-      @scala.inline
-      def setAppVarargs(value: String*): Self = StObject.set(x, "app", js.Array(value :_*))
+      inline def setAppVarargs(value: String*): Self = StObject.set(x, "app", js.Array(value :_*))
       
-      @scala.inline
-      def setEncode(value: Boolean): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+      inline def setEncode(value: Boolean): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+      inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
     }
   }
 }

@@ -11,16 +11,13 @@ trait GetFrameOwnerRequest extends StObject {
 }
 object GetFrameOwnerRequest {
   
-  @scala.inline
-  def apply(frameId: FrameId): GetFrameOwnerRequest = {
+  inline def apply(frameId: FrameId): GetFrameOwnerRequest = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFrameOwnerRequest]
   }
   
-  @scala.inline
-  implicit class GetFrameOwnerRequestMutableBuilder[Self <: GetFrameOwnerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFrameOwnerRequest](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
   }
 }

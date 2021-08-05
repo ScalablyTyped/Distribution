@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SelectionMode extends StObject
 object SelectionMode {
   
-  @scala.inline
-  def end: typings.std.stdStrings.end = "end".asInstanceOf[typings.std.stdStrings.end]
+  inline def end: typings.std.stdStrings.end = "end".asInstanceOf[typings.std.stdStrings.end]
   
-  @scala.inline
-  def preserve: typings.std.stdStrings.preserve = "preserve".asInstanceOf[typings.std.stdStrings.preserve]
+  inline def preserve: typings.std.stdStrings.preserve = "preserve".asInstanceOf[typings.std.stdStrings.preserve]
   
-  @scala.inline
-  def select: typings.std.stdStrings.select = "select".asInstanceOf[typings.std.stdStrings.select]
+  inline def select: typings.std.stdStrings.select = "select".asInstanceOf[typings.std.stdStrings.select]
   
-  @scala.inline
-  def start: typings.std.stdStrings.start = "start".asInstanceOf[typings.std.stdStrings.start]
+  inline def start: typings.std.stdStrings.start = "start".asInstanceOf[typings.std.stdStrings.start]
 }

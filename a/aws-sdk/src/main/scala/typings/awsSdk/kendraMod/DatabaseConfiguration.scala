@@ -35,8 +35,7 @@ trait DatabaseConfiguration extends StObject {
 }
 object DatabaseConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnConfiguration: ColumnConfiguration,
     ConnectionConfiguration: ConnectionConfiguration,
     DatabaseEngineType: DatabaseEngineType
@@ -45,34 +44,24 @@ object DatabaseConfiguration {
     __obj.asInstanceOf[DatabaseConfiguration]
   }
   
-  @scala.inline
-  implicit class DatabaseConfigurationMutableBuilder[Self <: DatabaseConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseConfiguration](x: Self) {
     
-    @scala.inline
-    def setAclConfiguration(value: AclConfiguration): Self = StObject.set(x, "AclConfiguration", value.asInstanceOf[js.Any])
+    inline def setAclConfiguration(value: AclConfiguration): Self = StObject.set(x, "AclConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAclConfigurationUndefined: Self = StObject.set(x, "AclConfiguration", js.undefined)
+    inline def setAclConfigurationUndefined: Self = StObject.set(x, "AclConfiguration", js.undefined)
     
-    @scala.inline
-    def setColumnConfiguration(value: ColumnConfiguration): Self = StObject.set(x, "ColumnConfiguration", value.asInstanceOf[js.Any])
+    inline def setColumnConfiguration(value: ColumnConfiguration): Self = StObject.set(x, "ColumnConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionConfiguration(value: ConnectionConfiguration): Self = StObject.set(x, "ConnectionConfiguration", value.asInstanceOf[js.Any])
+    inline def setConnectionConfiguration(value: ConnectionConfiguration): Self = StObject.set(x, "ConnectionConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseEngineType(value: DatabaseEngineType): Self = StObject.set(x, "DatabaseEngineType", value.asInstanceOf[js.Any])
+    inline def setDatabaseEngineType(value: DatabaseEngineType): Self = StObject.set(x, "DatabaseEngineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlConfiguration(value: SqlConfiguration): Self = StObject.set(x, "SqlConfiguration", value.asInstanceOf[js.Any])
+    inline def setSqlConfiguration(value: SqlConfiguration): Self = StObject.set(x, "SqlConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlConfigurationUndefined: Self = StObject.set(x, "SqlConfiguration", js.undefined)
+    inline def setSqlConfigurationUndefined: Self = StObject.set(x, "SqlConfiguration", js.undefined)
     
-    @scala.inline
-    def setVpcConfiguration(value: DataSourceVpcConfiguration): Self = StObject.set(x, "VpcConfiguration", value.asInstanceOf[js.Any])
+    inline def setVpcConfiguration(value: DataSourceVpcConfiguration): Self = StObject.set(x, "VpcConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfigurationUndefined: Self = StObject.set(x, "VpcConfiguration", js.undefined)
+    inline def setVpcConfigurationUndefined: Self = StObject.set(x, "VpcConfiguration", js.undefined)
   }
 }

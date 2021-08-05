@@ -23,25 +23,19 @@ trait ILineSegment
 }
 object ILineSegment {
   
-  @scala.inline
-  def apply(): ILineSegment = {
+  inline def apply(): ILineSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ILineSegment]
   }
   
-  @scala.inline
-  implicit class ILineSegmentMutableBuilder[Self <: ILineSegment] (val x: Self) extends AnyVal {
+  extension [Self <: ILineSegment](x: Self) {
     
-    @scala.inline
-    def setIntersects(value: /* lineSegment */ js.UndefOr[ILineSegment] => IPoint): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
+    inline def setIntersects(value: /* lineSegment */ js.UndefOr[ILineSegment] => IPoint): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIntersectsUndefined: Self = StObject.set(x, "intersects", js.undefined)
+    inline def setIntersectsUndefined: Self = StObject.set(x, "intersects", js.undefined)
     
-    @scala.inline
-    def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
+    inline def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
+    inline def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
   }
 }

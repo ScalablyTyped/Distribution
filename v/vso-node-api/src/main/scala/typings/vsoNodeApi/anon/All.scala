@@ -30,8 +30,7 @@ trait All extends StObject {
 }
 object All {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: scala.Double,
     batchedCI: scala.Double,
     checkInShelveset: scala.Double,
@@ -48,40 +47,28 @@ object All {
     __obj.asInstanceOf[All]
   }
   
-  @scala.inline
-  implicit class AllMutableBuilder[Self <: All] (val x: Self) extends AnyVal {
+  extension [Self <: All](x: Self) {
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchedCI(value: scala.Double): Self = StObject.set(x, "batchedCI", value.asInstanceOf[js.Any])
+    inline def setBatchedCI(value: scala.Double): Self = StObject.set(x, "batchedCI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckInShelveset(value: scala.Double): Self = StObject.set(x, "checkInShelveset", value.asInstanceOf[js.Any])
+    inline def setCheckInShelveset(value: scala.Double): Self = StObject.set(x, "checkInShelveset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndividualCI(value: scala.Double): Self = StObject.set(x, "individualCI", value.asInstanceOf[js.Any])
+    inline def setIndividualCI(value: scala.Double): Self = StObject.set(x, "individualCI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManual(value: scala.Double): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
+    inline def setManual(value: scala.Double): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequest(value: scala.Double): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
+    inline def setPullRequest(value: scala.Double): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchedule(value: scala.Double): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: scala.Double): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggered(value: scala.Double): Self = StObject.set(x, "triggered", value.asInstanceOf[js.Any])
+    inline def setTriggered(value: scala.Double): Self = StObject.set(x, "triggered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserCreated(value: scala.Double): Self = StObject.set(x, "userCreated", value.asInstanceOf[js.Any])
+    inline def setUserCreated(value: scala.Double): Self = StObject.set(x, "userCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateShelveset(value: scala.Double): Self = StObject.set(x, "validateShelveset", value.asInstanceOf[js.Any])
+    inline def setValidateShelveset(value: scala.Double): Self = StObject.set(x, "validateShelveset", value.asInstanceOf[js.Any])
   }
 }

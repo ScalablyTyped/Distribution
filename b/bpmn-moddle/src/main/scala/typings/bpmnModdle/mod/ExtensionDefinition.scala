@@ -14,8 +14,7 @@ trait ExtensionDefinition
 }
 object ExtensionDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     extensionAttributeDefinitions: js.Array[ExtensionAttributeDefinition],
@@ -25,16 +24,12 @@ object ExtensionDefinition {
     __obj.asInstanceOf[ExtensionDefinition]
   }
   
-  @scala.inline
-  implicit class ExtensionDefinitionMutableBuilder[Self <: ExtensionDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionDefinition](x: Self) {
     
-    @scala.inline
-    def setExtensionAttributeDefinitions(value: js.Array[ExtensionAttributeDefinition]): Self = StObject.set(x, "extensionAttributeDefinitions", value.asInstanceOf[js.Any])
+    inline def setExtensionAttributeDefinitions(value: js.Array[ExtensionAttributeDefinition]): Self = StObject.set(x, "extensionAttributeDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionAttributeDefinitionsVarargs(value: ExtensionAttributeDefinition*): Self = StObject.set(x, "extensionAttributeDefinitions", js.Array(value :_*))
+    inline def setExtensionAttributeDefinitionsVarargs(value: ExtensionAttributeDefinition*): Self = StObject.set(x, "extensionAttributeDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -52,9 +52,9 @@ object modelsMod {
     
     def build(): Unit = js.native
     
-    var checkShape: js.Any = js.native
+    /* private */ var checkShape: js.Any = js.native
     
-    var model: js.Any = js.native
+    /* private */ var model: js.Any = js.native
     
     /**
       * Removes the last layer in the model.
@@ -77,18 +77,13 @@ object modelsMod {
     @JSImport("@tensorflow/tfjs-layers/dist/models", "Sequential.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
     /** @nocollapse */
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: Unit, fastWeightInit: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], fastWeightInit.asInstanceOf[js.Any])).asInstanceOf[T]
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[T]
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](
+    inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: Unit, fastWeightInit: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], fastWeightInit.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def fromConfig[T /* <: Serializable */](
       cls: SerializableConstructor[T],
       config: ConfigDict,
       customObjects: ConfigDict,
@@ -96,32 +91,20 @@ object modelsMod {
     ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], fastWeightInit.asInstanceOf[js.Any])).asInstanceOf[T]
   }
   
-  @scala.inline
-  def loadLayersModelFromIOHandler(handler: IOHandler): js.Promise[LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelFromIOHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LayersModel]]
-  @scala.inline
-  def loadLayersModelFromIOHandler(handler: IOHandler, customObjects: Unit, options: LoadOptions): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelFromIOHandler")(handler.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
-  @scala.inline
-  def loadLayersModelFromIOHandler(handler: IOHandler, customObjects: ConfigDict): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelFromIOHandler")(handler.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
-  @scala.inline
-  def loadLayersModelFromIOHandler(handler: IOHandler, customObjects: ConfigDict, options: LoadOptions): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelFromIOHandler")(handler.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
+  inline def loadLayersModelFromIOHandler(handler: IOHandler): js.Promise[LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelFromIOHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LayersModel]]
+  inline def loadLayersModelFromIOHandler(handler: IOHandler, customObjects: Unit, options: LoadOptions): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelFromIOHandler")(handler.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
+  inline def loadLayersModelFromIOHandler(handler: IOHandler, customObjects: ConfigDict): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelFromIOHandler")(handler.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
+  inline def loadLayersModelFromIOHandler(handler: IOHandler, customObjects: ConfigDict, options: LoadOptions): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelFromIOHandler")(handler.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
   
-  @scala.inline
-  def loadLayersModelInternal(pathOrIOHandler: String): js.Promise[LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelInternal")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LayersModel]]
-  @scala.inline
-  def loadLayersModelInternal(pathOrIOHandler: String, options: LoadOptions): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelInternal")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
-  @scala.inline
-  def loadLayersModelInternal(pathOrIOHandler: IOHandler): js.Promise[LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelInternal")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LayersModel]]
-  @scala.inline
-  def loadLayersModelInternal(pathOrIOHandler: IOHandler, options: LoadOptions): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelInternal")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
+  inline def loadLayersModelInternal(pathOrIOHandler: String): js.Promise[LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelInternal")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LayersModel]]
+  inline def loadLayersModelInternal(pathOrIOHandler: String, options: LoadOptions): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelInternal")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
+  inline def loadLayersModelInternal(pathOrIOHandler: IOHandler): js.Promise[LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelInternal")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LayersModel]]
+  inline def loadLayersModelInternal(pathOrIOHandler: IOHandler, options: LoadOptions): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModelInternal")(pathOrIOHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
   
-  @scala.inline
-  def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig): js.Promise[LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LayersModel]]
-  @scala.inline
-  def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig, customObjects: ConfigDict): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
-  @scala.inline
-  def modelFromJSON(modelAndWeightsConfig: PyJsonDict): js.Promise[LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LayersModel]]
-  @scala.inline
-  def modelFromJSON(modelAndWeightsConfig: PyJsonDict, customObjects: ConfigDict): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
+  inline def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig): js.Promise[LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LayersModel]]
+  inline def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig, customObjects: ConfigDict): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
+  inline def modelFromJSON(modelAndWeightsConfig: PyJsonDict): js.Promise[LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LayersModel]]
+  inline def modelFromJSON(modelAndWeightsConfig: PyJsonDict, customObjects: ConfigDict): js.Promise[LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LayersModel]]
   
   trait ModelAndWeightsConfig extends StObject {
     
@@ -151,32 +134,24 @@ object modelsMod {
   }
   object ModelAndWeightsConfig {
     
-    @scala.inline
-    def apply(modelTopology: PyJsonDict): ModelAndWeightsConfig = {
+    inline def apply(modelTopology: PyJsonDict): ModelAndWeightsConfig = {
       val __obj = js.Dynamic.literal(modelTopology = modelTopology.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelAndWeightsConfig]
     }
     
-    @scala.inline
-    implicit class ModelAndWeightsConfigMutableBuilder[Self <: ModelAndWeightsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ModelAndWeightsConfig](x: Self) {
       
-      @scala.inline
-      def setModelTopology(value: PyJsonDict): Self = StObject.set(x, "modelTopology", value.asInstanceOf[js.Any])
+      inline def setModelTopology(value: PyJsonDict): Self = StObject.set(x, "modelTopology", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
+      inline def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
+      inline def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
       
-      @scala.inline
-      def setWeightsManifest(value: WeightsManifestConfig): Self = StObject.set(x, "weightsManifest", value.asInstanceOf[js.Any])
+      inline def setWeightsManifest(value: WeightsManifestConfig): Self = StObject.set(x, "weightsManifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightsManifestUndefined: Self = StObject.set(x, "weightsManifest", js.undefined)
+      inline def setWeightsManifestUndefined: Self = StObject.set(x, "weightsManifest", js.undefined)
       
-      @scala.inline
-      def setWeightsManifestVarargs(value: WeightsManifestGroupConfig*): Self = StObject.set(x, "weightsManifest", js.Array(value :_*))
+      inline def setWeightsManifestVarargs(value: WeightsManifestGroupConfig*): Self = StObject.set(x, "weightsManifest", js.Array(value :_*))
     }
   }
   
@@ -194,26 +169,20 @@ object modelsMod {
   }
   object ModelPredictArgs {
     
-    @scala.inline
-    def apply(): ModelPredictArgs = {
+    inline def apply(): ModelPredictArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModelPredictArgs]
     }
     
-    @scala.inline
-    implicit class ModelPredictArgsMutableBuilder[Self <: ModelPredictArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ModelPredictArgs](x: Self) {
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -227,29 +196,22 @@ object modelsMod {
   }
   object SequentialArgs {
     
-    @scala.inline
-    def apply(): SequentialArgs = {
+    inline def apply(): SequentialArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SequentialArgs]
     }
     
-    @scala.inline
-    implicit class SequentialArgsMutableBuilder[Self <: SequentialArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SequentialArgs](x: Self) {
       
-      @scala.inline
-      def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+      inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      @scala.inline
-      def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

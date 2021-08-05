@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(currentDir: String, options: Age): Double | (Record[String, Boolean]) = (^.asInstanceOf[js.Dynamic].apply(currentDir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | (Record[String, Boolean])]
+  inline def apply(currentDir: String, options: Age): Double | (Record[String, Boolean]) = (^.asInstanceOf[js.Dynamic].apply(currentDir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | (Record[String, Boolean])]
   
   @JSImport("find-remove", JSImport.Namespace)
   @js.native

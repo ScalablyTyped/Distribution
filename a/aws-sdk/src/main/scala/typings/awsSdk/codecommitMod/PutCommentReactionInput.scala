@@ -18,19 +18,15 @@ trait PutCommentReactionInput extends StObject {
 }
 object PutCommentReactionInput {
   
-  @scala.inline
-  def apply(commentId: CommentId, reactionValue: ReactionValue): PutCommentReactionInput = {
+  inline def apply(commentId: CommentId, reactionValue: ReactionValue): PutCommentReactionInput = {
     val __obj = js.Dynamic.literal(commentId = commentId.asInstanceOf[js.Any], reactionValue = reactionValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutCommentReactionInput]
   }
   
-  @scala.inline
-  implicit class PutCommentReactionInputMutableBuilder[Self <: PutCommentReactionInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutCommentReactionInput](x: Self) {
     
-    @scala.inline
-    def setCommentId(value: CommentId): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
+    inline def setCommentId(value: CommentId): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactionValue(value: ReactionValue): Self = StObject.set(x, "reactionValue", value.asInstanceOf[js.Any])
+    inline def setReactionValue(value: ReactionValue): Self = StObject.set(x, "reactionValue", value.asInstanceOf[js.Any])
   }
 }

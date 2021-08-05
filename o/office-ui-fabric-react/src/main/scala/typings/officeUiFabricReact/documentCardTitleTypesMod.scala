@@ -60,59 +60,42 @@ object documentCardTitleTypesMod {
   }
   object IDocumentCardTitleProps {
     
-    @scala.inline
-    def apply(title: String): IDocumentCardTitleProps = {
+    inline def apply(title: String): IDocumentCardTitleProps = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDocumentCardTitleProps]
     }
     
-    @scala.inline
-    implicit class IDocumentCardTitlePropsMutableBuilder[Self <: IDocumentCardTitleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDocumentCardTitleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IDocumentCardTitle]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IDocumentCardTitle]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IDocumentCardTitle | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IDocumentCardTitle | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setShouldTruncate(value: Boolean): Self = StObject.set(x, "shouldTruncate", value.asInstanceOf[js.Any])
+      inline def setShouldTruncate(value: Boolean): Self = StObject.set(x, "shouldTruncate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldTruncateUndefined: Self = StObject.set(x, "shouldTruncate", js.undefined)
+      inline def setShouldTruncateUndefined: Self = StObject.set(x, "shouldTruncate", js.undefined)
       
-      @scala.inline
-      def setShowAsSecondaryTitle(value: Boolean): Self = StObject.set(x, "showAsSecondaryTitle", value.asInstanceOf[js.Any])
+      inline def setShowAsSecondaryTitle(value: Boolean): Self = StObject.set(x, "showAsSecondaryTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowAsSecondaryTitleUndefined: Self = StObject.set(x, "showAsSecondaryTitle", js.undefined)
+      inline def setShowAsSecondaryTitleUndefined: Self = StObject.set(x, "showAsSecondaryTitle", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IDocumentCardTitleStyleProps, IDocumentCardTitleStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IDocumentCardTitleStyleProps, IDocumentCardTitleStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IDocumentCardTitleStyleProps => DeepPartial[IDocumentCardTitleStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IDocumentCardTitleStyleProps => DeepPartial[IDocumentCardTitleStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,29 +118,22 @@ object documentCardTitleTypesMod {
   }
   object IDocumentCardTitleStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IDocumentCardTitleStyleProps = {
+    inline def apply(theme: ITheme): IDocumentCardTitleStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDocumentCardTitleStyleProps]
     }
     
-    @scala.inline
-    implicit class IDocumentCardTitleStylePropsMutableBuilder[Self <: IDocumentCardTitleStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDocumentCardTitleStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setShowAsSecondaryTitle(value: Boolean): Self = StObject.set(x, "showAsSecondaryTitle", value.asInstanceOf[js.Any])
+      inline def setShowAsSecondaryTitle(value: Boolean): Self = StObject.set(x, "showAsSecondaryTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowAsSecondaryTitleUndefined: Self = StObject.set(x, "showAsSecondaryTitle", js.undefined)
+      inline def setShowAsSecondaryTitleUndefined: Self = StObject.set(x, "showAsSecondaryTitle", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -167,23 +143,18 @@ object documentCardTitleTypesMod {
   }
   object IDocumentCardTitleStyles {
     
-    @scala.inline
-    def apply(): IDocumentCardTitleStyles = {
+    inline def apply(): IDocumentCardTitleStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDocumentCardTitleStyles]
     }
     
-    @scala.inline
-    implicit class IDocumentCardTitleStylesMutableBuilder[Self <: IDocumentCardTitleStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IDocumentCardTitleStyles](x: Self) {
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

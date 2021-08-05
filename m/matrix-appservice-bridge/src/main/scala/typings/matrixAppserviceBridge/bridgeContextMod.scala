@@ -24,7 +24,7 @@ object bridgeContextMod {
       */
     def this(ctx: Room) = this()
     
-    var ctx: js.Any = js.native
+    /* private */ var ctx: js.Any = js.native
     
     /**
       * Returns this instance after its initialization.
@@ -52,29 +52,22 @@ object bridgeContextMod {
   }
   object BridgeContextRoom {
     
-    @scala.inline
-    def apply(matrix: MatrixRoom, remotes: js.Array[RemoteRoom]): BridgeContextRoom = {
+    inline def apply(matrix: MatrixRoom, remotes: js.Array[RemoteRoom]): BridgeContextRoom = {
       val __obj = js.Dynamic.literal(matrix = matrix.asInstanceOf[js.Any], remotes = remotes.asInstanceOf[js.Any], remote = null)
       __obj.asInstanceOf[BridgeContextRoom]
     }
     
-    @scala.inline
-    implicit class BridgeContextRoomMutableBuilder[Self <: BridgeContextRoom] (val x: Self) extends AnyVal {
+    extension [Self <: BridgeContextRoom](x: Self) {
       
-      @scala.inline
-      def setMatrix(value: MatrixRoom): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+      inline def setMatrix(value: MatrixRoom): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemote(value: RemoteRoom): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: RemoteRoom): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteNull: Self = StObject.set(x, "remote", null)
+      inline def setRemoteNull: Self = StObject.set(x, "remote", null)
       
-      @scala.inline
-      def setRemotes(value: js.Array[RemoteRoom]): Self = StObject.set(x, "remotes", value.asInstanceOf[js.Any])
+      inline def setRemotes(value: js.Array[RemoteRoom]): Self = StObject.set(x, "remotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemotesVarargs(value: RemoteRoom*): Self = StObject.set(x, "remotes", js.Array(value :_*))
+      inline def setRemotesVarargs(value: RemoteRoom*): Self = StObject.set(x, "remotes", js.Array(value :_*))
     }
   }
   
@@ -88,29 +81,22 @@ object bridgeContextMod {
   }
   object BridgeContextSenders {
     
-    @scala.inline
-    def apply(matrix: MatrixUser, remotes: js.Array[RemoteUser]): BridgeContextSenders = {
+    inline def apply(matrix: MatrixUser, remotes: js.Array[RemoteUser]): BridgeContextSenders = {
       val __obj = js.Dynamic.literal(matrix = matrix.asInstanceOf[js.Any], remotes = remotes.asInstanceOf[js.Any], remote = null)
       __obj.asInstanceOf[BridgeContextSenders]
     }
     
-    @scala.inline
-    implicit class BridgeContextSendersMutableBuilder[Self <: BridgeContextSenders] (val x: Self) extends AnyVal {
+    extension [Self <: BridgeContextSenders](x: Self) {
       
-      @scala.inline
-      def setMatrix(value: MatrixUser): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+      inline def setMatrix(value: MatrixUser): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemote(value: RemoteUser): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: RemoteUser): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteNull: Self = StObject.set(x, "remote", null)
+      inline def setRemoteNull: Self = StObject.set(x, "remote", null)
       
-      @scala.inline
-      def setRemotes(value: js.Array[RemoteUser]): Self = StObject.set(x, "remotes", value.asInstanceOf[js.Any])
+      inline def setRemotes(value: js.Array[RemoteUser]): Self = StObject.set(x, "remotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemotesVarargs(value: RemoteUser*): Self = StObject.set(x, "remotes", js.Array(value :_*))
+      inline def setRemotesVarargs(value: RemoteUser*): Self = StObject.set(x, "remotes", js.Array(value :_*))
     }
   }
   
@@ -124,32 +110,24 @@ object bridgeContextMod {
   }
   object BridgeContextTargets {
     
-    @scala.inline
-    def apply(remotes: js.Array[RemoteUser]): BridgeContextTargets = {
+    inline def apply(remotes: js.Array[RemoteUser]): BridgeContextTargets = {
       val __obj = js.Dynamic.literal(remotes = remotes.asInstanceOf[js.Any], matrix = null, remote = null)
       __obj.asInstanceOf[BridgeContextTargets]
     }
     
-    @scala.inline
-    implicit class BridgeContextTargetsMutableBuilder[Self <: BridgeContextTargets] (val x: Self) extends AnyVal {
+    extension [Self <: BridgeContextTargets](x: Self) {
       
-      @scala.inline
-      def setMatrix(value: MatrixUser): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+      inline def setMatrix(value: MatrixUser): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatrixNull: Self = StObject.set(x, "matrix", null)
+      inline def setMatrixNull: Self = StObject.set(x, "matrix", null)
       
-      @scala.inline
-      def setRemote(value: RemoteUser): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: RemoteUser): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteNull: Self = StObject.set(x, "remote", null)
+      inline def setRemoteNull: Self = StObject.set(x, "remote", null)
       
-      @scala.inline
-      def setRemotes(value: js.Array[RemoteUser]): Self = StObject.set(x, "remotes", value.asInstanceOf[js.Any])
+      inline def setRemotes(value: js.Array[RemoteUser]): Self = StObject.set(x, "remotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemotesVarargs(value: RemoteUser*): Self = StObject.set(x, "remotes", js.Array(value :_*))
+      inline def setRemotesVarargs(value: RemoteUser*): Self = StObject.set(x, "remotes", js.Array(value :_*))
     }
   }
 }

@@ -23,8 +23,7 @@ trait AuthenticationFallbackRequest
 }
 object AuthenticationFallbackRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Classification: InteractionClassification,
     Context: XInterface,
     Message: String,
@@ -35,13 +34,10 @@ object AuthenticationFallbackRequest {
     __obj.asInstanceOf[AuthenticationFallbackRequest]
   }
   
-  @scala.inline
-  implicit class AuthenticationFallbackRequestMutableBuilder[Self <: AuthenticationFallbackRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationFallbackRequest](x: Self) {
     
-    @scala.inline
-    def setInstructions(value: String): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
+    inline def setInstructions(value: String): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

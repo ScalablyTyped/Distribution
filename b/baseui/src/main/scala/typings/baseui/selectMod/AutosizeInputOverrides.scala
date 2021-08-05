@@ -12,21 +12,17 @@ trait AutosizeInputOverrides extends StObject {
 }
 object AutosizeInputOverrides {
   
-  @scala.inline
-  def apply(): AutosizeInputOverrides = {
+  inline def apply(): AutosizeInputOverrides = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutosizeInputOverrides]
   }
   
-  @scala.inline
-  implicit class AutosizeInputOverridesMutableBuilder[Self <: AutosizeInputOverrides] (val x: Self) extends AnyVal {
+  extension [Self <: AutosizeInputOverrides](x: Self) {
     
-    @scala.inline
-    def setInput(
+    inline def setInput(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
   }
 }

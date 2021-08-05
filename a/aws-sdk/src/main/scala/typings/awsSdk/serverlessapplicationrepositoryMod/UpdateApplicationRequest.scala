@@ -43,55 +43,39 @@ trait UpdateApplicationRequest extends StObject {
 }
 object UpdateApplicationRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string): UpdateApplicationRequest = {
+  inline def apply(ApplicationId: string): UpdateApplicationRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApplicationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateApplicationRequestMutableBuilder[Self <: UpdateApplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateApplicationRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthor(value: string): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: string): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorUndefined: Self = StObject.set(x, "Author", js.undefined)
+    inline def setAuthorUndefined: Self = StObject.set(x, "Author", js.undefined)
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setHomePageUrl(value: string): Self = StObject.set(x, "HomePageUrl", value.asInstanceOf[js.Any])
+    inline def setHomePageUrl(value: string): Self = StObject.set(x, "HomePageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomePageUrlUndefined: Self = StObject.set(x, "HomePageUrl", js.undefined)
+    inline def setHomePageUrlUndefined: Self = StObject.set(x, "HomePageUrl", js.undefined)
     
-    @scala.inline
-    def setLabels(value: listOfString): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: listOfString): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: string*): Self = StObject.set(x, "Labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: string*): Self = StObject.set(x, "Labels", js.Array(value :_*))
     
-    @scala.inline
-    def setReadmeBody(value: string): Self = StObject.set(x, "ReadmeBody", value.asInstanceOf[js.Any])
+    inline def setReadmeBody(value: string): Self = StObject.set(x, "ReadmeBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadmeBodyUndefined: Self = StObject.set(x, "ReadmeBody", js.undefined)
+    inline def setReadmeBodyUndefined: Self = StObject.set(x, "ReadmeBody", js.undefined)
     
-    @scala.inline
-    def setReadmeUrl(value: string): Self = StObject.set(x, "ReadmeUrl", value.asInstanceOf[js.Any])
+    inline def setReadmeUrl(value: string): Self = StObject.set(x, "ReadmeUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadmeUrlUndefined: Self = StObject.set(x, "ReadmeUrl", js.undefined)
+    inline def setReadmeUrlUndefined: Self = StObject.set(x, "ReadmeUrl", js.undefined)
   }
 }

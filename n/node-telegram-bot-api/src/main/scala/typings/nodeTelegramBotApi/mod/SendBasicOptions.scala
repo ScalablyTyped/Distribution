@@ -14,31 +14,23 @@ trait SendBasicOptions extends StObject {
 }
 object SendBasicOptions {
   
-  @scala.inline
-  def apply(): SendBasicOptions = {
+  inline def apply(): SendBasicOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendBasicOptions]
   }
   
-  @scala.inline
-  implicit class SendBasicOptionsMutableBuilder[Self <: SendBasicOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SendBasicOptions](x: Self) {
     
-    @scala.inline
-    def setDisable_notification(value: Boolean): Self = StObject.set(x, "disable_notification", value.asInstanceOf[js.Any])
+    inline def setDisable_notification(value: Boolean): Self = StObject.set(x, "disable_notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisable_notificationUndefined: Self = StObject.set(x, "disable_notification", js.undefined)
+    inline def setDisable_notificationUndefined: Self = StObject.set(x, "disable_notification", js.undefined)
     
-    @scala.inline
-    def setReply_markup(value: InlineKeyboardMarkup | ReplyKeyboardMarkup | ReplyKeyboardRemove | ForceReply): Self = StObject.set(x, "reply_markup", value.asInstanceOf[js.Any])
+    inline def setReply_markup(value: InlineKeyboardMarkup | ReplyKeyboardMarkup | ReplyKeyboardRemove | ForceReply): Self = StObject.set(x, "reply_markup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReply_markupUndefined: Self = StObject.set(x, "reply_markup", js.undefined)
+    inline def setReply_markupUndefined: Self = StObject.set(x, "reply_markup", js.undefined)
     
-    @scala.inline
-    def setReply_to_message_id(value: Double): Self = StObject.set(x, "reply_to_message_id", value.asInstanceOf[js.Any])
+    inline def setReply_to_message_id(value: Double): Self = StObject.set(x, "reply_to_message_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReply_to_message_idUndefined: Self = StObject.set(x, "reply_to_message_id", js.undefined)
+    inline def setReply_to_message_idUndefined: Self = StObject.set(x, "reply_to_message_id", js.undefined)
   }
 }

@@ -23,7 +23,7 @@ trait Timing extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.Timing_typekey")
+  /* private */ @JSName("PowerPoint.Timing_typekey")
   var PowerPointDotTiming_typekey: Timing
   
   var RepeatCount: Double
@@ -50,8 +50,7 @@ trait Timing extends StObject {
 }
 object Timing {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Accelerate: Double,
     Application: Application,
     AutoReverse: MsoTriState,
@@ -78,67 +77,46 @@ object Timing {
     __obj.asInstanceOf[Timing]
   }
   
-  @scala.inline
-  implicit class TimingMutableBuilder[Self <: Timing] (val x: Self) extends AnyVal {
+  extension [Self <: Timing](x: Self) {
     
-    @scala.inline
-    def setAccelerate(value: Double): Self = StObject.set(x, "Accelerate", value.asInstanceOf[js.Any])
+    inline def setAccelerate(value: Double): Self = StObject.set(x, "Accelerate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoReverse(value: MsoTriState): Self = StObject.set(x, "AutoReverse", value.asInstanceOf[js.Any])
+    inline def setAutoReverse(value: MsoTriState): Self = StObject.set(x, "AutoReverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBounceEnd(value: MsoTriState): Self = StObject.set(x, "BounceEnd", value.asInstanceOf[js.Any])
+    inline def setBounceEnd(value: MsoTriState): Self = StObject.set(x, "BounceEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBounceEndIntensity(value: Double): Self = StObject.set(x, "BounceEndIntensity", value.asInstanceOf[js.Any])
+    inline def setBounceEndIntensity(value: Double): Self = StObject.set(x, "BounceEndIntensity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecelerate(value: Double): Self = StObject.set(x, "Decelerate", value.asInstanceOf[js.Any])
+    inline def setDecelerate(value: Double): Self = StObject.set(x, "Decelerate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotTiming_typekey(value: Timing): Self = StObject.set(x, "PowerPoint.Timing_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotTiming_typekey(value: Timing): Self = StObject.set(x, "PowerPoint.Timing_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatCount(value: Double): Self = StObject.set(x, "RepeatCount", value.asInstanceOf[js.Any])
+    inline def setRepeatCount(value: Double): Self = StObject.set(x, "RepeatCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatDuration(value: Double): Self = StObject.set(x, "RepeatDuration", value.asInstanceOf[js.Any])
+    inline def setRepeatDuration(value: Double): Self = StObject.set(x, "RepeatDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestart(value: MsoAnimEffectRestart): Self = StObject.set(x, "Restart", value.asInstanceOf[js.Any])
+    inline def setRestart(value: MsoAnimEffectRestart): Self = StObject.set(x, "Restart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRewindAtEnd(value: MsoTriState): Self = StObject.set(x, "RewindAtEnd", value.asInstanceOf[js.Any])
+    inline def setRewindAtEnd(value: MsoTriState): Self = StObject.set(x, "RewindAtEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothEnd(value: MsoTriState): Self = StObject.set(x, "SmoothEnd", value.asInstanceOf[js.Any])
+    inline def setSmoothEnd(value: MsoTriState): Self = StObject.set(x, "SmoothEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothStart(value: MsoTriState): Self = StObject.set(x, "SmoothStart", value.asInstanceOf[js.Any])
+    inline def setSmoothStart(value: MsoTriState): Self = StObject.set(x, "SmoothStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeed(value: Double): Self = StObject.set(x, "Speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Double): Self = StObject.set(x, "Speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerBookmark(value: String): Self = StObject.set(x, "TriggerBookmark", value.asInstanceOf[js.Any])
+    inline def setTriggerBookmark(value: String): Self = StObject.set(x, "TriggerBookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerDelayTime(value: Double): Self = StObject.set(x, "TriggerDelayTime", value.asInstanceOf[js.Any])
+    inline def setTriggerDelayTime(value: Double): Self = StObject.set(x, "TriggerDelayTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerShape(value: Shape): Self = StObject.set(x, "TriggerShape", value.asInstanceOf[js.Any])
+    inline def setTriggerShape(value: Shape): Self = StObject.set(x, "TriggerShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerType(value: MsoAnimTriggerType): Self = StObject.set(x, "TriggerType", value.asInstanceOf[js.Any])
+    inline def setTriggerType(value: MsoAnimTriggerType): Self = StObject.set(x, "TriggerType", value.asInstanceOf[js.Any])
   }
 }

@@ -25,26 +25,20 @@ object find {
     * @param queryphrase The string to search for.
     * @param [params] Search parameters.
     */
-  @scala.inline
-  def find(queryphrase: String): js.Promise[Count] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(queryphrase.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Count]]
-  @scala.inline
-  def find(queryphrase: String, params: FindParams): js.Promise[Count] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(queryphrase.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Count]]
+  inline def find(queryphrase: String): js.Promise[Count] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(queryphrase.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Count]]
+  inline def find(queryphrase: String, params: FindParams): js.Promise[Count] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(queryphrase.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Count]]
   
   /**
     * Highlight a range
     * @param [params] highlightResults parameters
     */
-  @scala.inline
-  def highlightResults(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightResults")().asInstanceOf[Unit]
-  @scala.inline
-  def highlightResults(params: HighlightResultsParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightResults")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def highlightResults(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightResults")().asInstanceOf[Unit]
+  inline def highlightResults(params: HighlightResultsParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightResults")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Remove all highlighting from previous searches.
     * @param [tabId] Tab to highlight. Defaults to the active tab.
     */
-  @scala.inline
-  def removeHighlighting(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHighlighting")().asInstanceOf[Unit]
-  @scala.inline
-  def removeHighlighting(tabId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHighlighting")(tabId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeHighlighting(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHighlighting")().asInstanceOf[Unit]
+  inline def removeHighlighting(tabId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHighlighting")(tabId.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

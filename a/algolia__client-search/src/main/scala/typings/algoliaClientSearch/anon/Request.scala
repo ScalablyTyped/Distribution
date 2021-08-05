@@ -14,8 +14,7 @@ trait Request[TObject] extends StObject {
 }
 object Request {
   
-  @scala.inline
-  def apply[TObject](
+  inline def apply[TObject](
     request: BrowseRequestData => js.Promise[BrowseResponse[TObject]],
     shouldStop: BrowseResponse[TObject] => Boolean
   ): Request[TObject] = {
@@ -23,13 +22,10 @@ object Request {
     __obj.asInstanceOf[Request[TObject]]
   }
   
-  @scala.inline
-  implicit class RequestMutableBuilder[Self <: Request[?], TObject] (val x: Self & Request[TObject]) extends AnyVal {
+  extension [Self <: Request[?], TObject](x: Self & Request[TObject]) {
     
-    @scala.inline
-    def setRequest(value: BrowseRequestData => js.Promise[BrowseResponse[TObject]]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+    inline def setRequest(value: BrowseRequestData => js.Promise[BrowseResponse[TObject]]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShouldStop(value: BrowseResponse[TObject] => Boolean): Self = StObject.set(x, "shouldStop", js.Any.fromFunction1(value))
+    inline def setShouldStop(value: BrowseResponse[TObject] => Boolean): Self = StObject.set(x, "shouldStop", js.Any.fromFunction1(value))
   }
 }

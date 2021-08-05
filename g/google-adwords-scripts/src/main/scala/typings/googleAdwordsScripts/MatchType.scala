@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MatchType extends StObject
 object MatchType {
   
-  @scala.inline
-  def BROAD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.BROAD = "BROAD".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.BROAD]
+  inline def BROAD: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.BROAD = "BROAD".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.BROAD]
   
-  @scala.inline
-  def EXACT: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.EXACT = "EXACT".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.EXACT]
+  inline def EXACT: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.EXACT = "EXACT".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.EXACT]
   
-  @scala.inline
-  def PHRASE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PHRASE = "PHRASE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PHRASE]
+  inline def PHRASE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PHRASE = "PHRASE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PHRASE]
 }

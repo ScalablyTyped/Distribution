@@ -13,16 +13,13 @@ trait DragEvent
 }
 object DragEvent {
   
-  @scala.inline
-  def apply(lngLat: js.Tuple2[Double, Double]): DragEvent = {
+  inline def apply(lngLat: js.Tuple2[Double, Double]): DragEvent = {
     val __obj = js.Dynamic.literal(lngLat = lngLat.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragEvent]
   }
   
-  @scala.inline
-  implicit class DragEventMutableBuilder[Self <: DragEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DragEvent](x: Self) {
     
-    @scala.inline
-    def setLngLat(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "lngLat", value.asInstanceOf[js.Any])
+    inline def setLngLat(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "lngLat", value.asInstanceOf[js.Any])
   }
 }

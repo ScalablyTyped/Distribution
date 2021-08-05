@@ -21,8 +21,7 @@ object pickerStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/picker/style/index.native", "default.actionText")
     @js.native
     def actionText: ColorFontSizeTextAlign = js.native
-    @scala.inline
-    def actionText_=(x: ColorFontSizeTextAlign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("actionText")(x.asInstanceOf[js.Any])
+    inline def actionText_=(x: ColorFontSizeTextAlign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("actionText")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/picker/style/index.native", "default.header")
     @js.native
@@ -31,23 +30,19 @@ object pickerStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/picker/style/index.native", "default.headerItem")
     @js.native
     def headerItem: AlignItemsFlex = js.native
-    @scala.inline
-    def headerItem_=(x: AlignItemsFlex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headerItem")(x.asInstanceOf[js.Any])
+    inline def headerItem_=(x: AlignItemsFlex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headerItem")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def header_=(x: AlignItemsBorderBottomColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("header")(x.asInstanceOf[js.Any])
+    inline def header_=(x: AlignItemsBorderBottomColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("header")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/picker/style/index.native", "default.modal")
     @js.native
     def modal: FlexFlexDirectionJustifyContent = js.native
-    @scala.inline
-    def modal_=(x: FlexFlexDirectionJustifyContent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modal")(x.asInstanceOf[js.Any])
+    inline def modal_=(x: FlexFlexDirectionJustifyContent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modal")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/picker/style/index.native", "default.title")
     @js.native
     def title: ColorFontSizeTextAlign = js.native
-    @scala.inline
-    def title_=(x: ColorFontSizeTextAlign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
+    inline def title_=(x: ColorFontSizeTextAlign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
   trait IPickerStyle extends StObject {
@@ -64,8 +59,7 @@ object pickerStyleIndexNativeMod {
   }
   object IPickerStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actionText: TextStyle,
       header: ViewStyle,
       headerItem: ViewStyle,
@@ -76,23 +70,17 @@ object pickerStyleIndexNativeMod {
       __obj.asInstanceOf[IPickerStyle]
     }
     
-    @scala.inline
-    implicit class IPickerStyleMutableBuilder[Self <: IPickerStyle] (val x: Self) extends AnyVal {
+    extension [Self <: IPickerStyle](x: Self) {
       
-      @scala.inline
-      def setActionText(value: TextStyle): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
+      inline def setActionText(value: TextStyle): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader(value: ViewStyle): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: ViewStyle): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderItem(value: ViewStyle): Self = StObject.set(x, "headerItem", value.asInstanceOf[js.Any])
+      inline def setHeaderItem(value: ViewStyle): Self = StObject.set(x, "headerItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModal(value: ViewStyle): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+      inline def setModal(value: ViewStyle): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: TextStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: TextStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

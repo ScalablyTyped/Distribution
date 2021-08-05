@@ -23,22 +23,17 @@ trait LightSettings extends StObject {
 }
 object LightSettings {
   
-  @scala.inline
-  def apply(color: String, lightOffDurationMillis: Double, lightOnDurationMillis: Double): LightSettings = {
+  inline def apply(color: String, lightOffDurationMillis: Double, lightOnDurationMillis: Double): LightSettings = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], lightOffDurationMillis = lightOffDurationMillis.asInstanceOf[js.Any], lightOnDurationMillis = lightOnDurationMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[LightSettings]
   }
   
-  @scala.inline
-  implicit class LightSettingsMutableBuilder[Self <: LightSettings] (val x: Self) extends AnyVal {
+  extension [Self <: LightSettings](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightOffDurationMillis(value: Double): Self = StObject.set(x, "lightOffDurationMillis", value.asInstanceOf[js.Any])
+    inline def setLightOffDurationMillis(value: Double): Self = StObject.set(x, "lightOffDurationMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightOnDurationMillis(value: Double): Self = StObject.set(x, "lightOnDurationMillis", value.asInstanceOf[js.Any])
+    inline def setLightOnDurationMillis(value: Double): Self = StObject.set(x, "lightOnDurationMillis", value.asInstanceOf[js.Any])
   }
 }

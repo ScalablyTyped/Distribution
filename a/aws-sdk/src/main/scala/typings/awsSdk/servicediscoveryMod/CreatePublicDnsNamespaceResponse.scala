@@ -13,19 +13,15 @@ trait CreatePublicDnsNamespaceResponse extends StObject {
 }
 object CreatePublicDnsNamespaceResponse {
   
-  @scala.inline
-  def apply(): CreatePublicDnsNamespaceResponse = {
+  inline def apply(): CreatePublicDnsNamespaceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePublicDnsNamespaceResponse]
   }
   
-  @scala.inline
-  implicit class CreatePublicDnsNamespaceResponseMutableBuilder[Self <: CreatePublicDnsNamespaceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePublicDnsNamespaceResponse](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
   }
 }

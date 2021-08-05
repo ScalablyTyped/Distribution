@@ -13,8 +13,7 @@ trait IShareTargetActivatedEventArgs
 }
 object IShareTargetActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
     shareOperation: ShareOperation,
@@ -24,10 +23,8 @@ object IShareTargetActivatedEventArgs {
     __obj.asInstanceOf[IShareTargetActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class IShareTargetActivatedEventArgsMutableBuilder[Self <: IShareTargetActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IShareTargetActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setShareOperation(value: ShareOperation): Self = StObject.set(x, "shareOperation", value.asInstanceOf[js.Any])
+    inline def setShareOperation(value: ShareOperation): Self = StObject.set(x, "shareOperation", value.asInstanceOf[js.Any])
   }
 }

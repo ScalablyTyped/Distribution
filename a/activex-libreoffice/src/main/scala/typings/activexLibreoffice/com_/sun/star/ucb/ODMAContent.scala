@@ -35,8 +35,7 @@ trait ODMAContent
      with XChild
 object ODMAContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentType: String,
     Identifier: XContentIdentifier,
     Parent: XInterface,

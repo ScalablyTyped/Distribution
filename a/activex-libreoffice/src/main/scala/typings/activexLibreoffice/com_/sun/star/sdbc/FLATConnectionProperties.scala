@@ -38,8 +38,7 @@ trait FLATConnectionProperties
 }
 object FLATConnectionProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CharSet: String,
     DecimalDelimiter: String,
     Extension: String,
@@ -54,25 +53,18 @@ object FLATConnectionProperties {
     __obj.asInstanceOf[FLATConnectionProperties]
   }
   
-  @scala.inline
-  implicit class FLATConnectionPropertiesMutableBuilder[Self <: FLATConnectionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FLATConnectionProperties](x: Self) {
     
-    @scala.inline
-    def setDecimalDelimiter(value: String): Self = StObject.set(x, "DecimalDelimiter", value.asInstanceOf[js.Any])
+    inline def setDecimalDelimiter(value: String): Self = StObject.set(x, "DecimalDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldDelimiter(value: String): Self = StObject.set(x, "FieldDelimiter", value.asInstanceOf[js.Any])
+    inline def setFieldDelimiter(value: String): Self = StObject.set(x, "FieldDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderLine(value: Boolean): Self = StObject.set(x, "HeaderLine", value.asInstanceOf[js.Any])
+    inline def setHeaderLine(value: Boolean): Self = StObject.set(x, "HeaderLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringDelimiter(value: String): Self = StObject.set(x, "StringDelimiter", value.asInstanceOf[js.Any])
+    inline def setStringDelimiter(value: String): Self = StObject.set(x, "StringDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThousandDelimiter(value: String): Self = StObject.set(x, "ThousandDelimiter", value.asInstanceOf[js.Any])
+    inline def setThousandDelimiter(value: String): Self = StObject.set(x, "ThousandDelimiter", value.asInstanceOf[js.Any])
   }
 }

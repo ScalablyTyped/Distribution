@@ -27,22 +27,16 @@ object TSImportEqualsDeclaration {
   @js.native
   def apply(id: Identifier_, moduleReference: TSExternalModuleReference): TSImportEqualsDeclaration = js.native
   
-  @scala.inline
-  implicit class TSImportEqualsDeclarationMutableBuilder[Self <: TSImportEqualsDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: TSImportEqualsDeclaration](x: Self) {
     
-    @scala.inline
-    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExport(value: Boolean): Self = StObject.set(x, "isExport", value.asInstanceOf[js.Any])
+    inline def setIsExport(value: Boolean): Self = StObject.set(x, "isExport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExportNull: Self = StObject.set(x, "isExport", null)
+    inline def setIsExportNull: Self = StObject.set(x, "isExport", null)
     
-    @scala.inline
-    def setModuleReference(value: TSEntityName | TSExternalModuleReference): Self = StObject.set(x, "moduleReference", value.asInstanceOf[js.Any])
+    inline def setModuleReference(value: TSEntityName | TSExternalModuleReference): Self = StObject.set(x, "moduleReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSImportEqualsDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSImportEqualsDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

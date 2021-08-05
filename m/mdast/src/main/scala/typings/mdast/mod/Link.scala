@@ -19,23 +19,18 @@ trait Link
 }
 object Link {
   
-  @scala.inline
-  def apply(children: js.Array[StaticPhrasingContent], url: String): Link = {
+  inline def apply(children: js.Array[StaticPhrasingContent], url: String): Link = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("link")
     __obj.asInstanceOf[Link]
   }
   
-  @scala.inline
-  implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
+  extension [Self <: Link](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[StaticPhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[StaticPhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: StaticPhrasingContent*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: StaticPhrasingContent*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: link): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: link): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

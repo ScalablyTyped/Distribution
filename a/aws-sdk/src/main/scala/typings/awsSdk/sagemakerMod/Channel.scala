@@ -43,49 +43,35 @@ trait Channel extends StObject {
 }
 object Channel {
   
-  @scala.inline
-  def apply(ChannelName: ChannelName, DataSource: DataSource): Channel = {
+  inline def apply(ChannelName: ChannelName, DataSource: DataSource): Channel = {
     val __obj = js.Dynamic.literal(ChannelName = ChannelName.asInstanceOf[js.Any], DataSource = DataSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Channel]
   }
   
-  @scala.inline
-  implicit class ChannelMutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
+  extension [Self <: Channel](x: Self) {
     
-    @scala.inline
-    def setChannelName(value: ChannelName): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: ChannelName): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionType(value: CompressionType): Self = StObject.set(x, "CompressionType", value.asInstanceOf[js.Any])
+    inline def setCompressionType(value: CompressionType): Self = StObject.set(x, "CompressionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionTypeUndefined: Self = StObject.set(x, "CompressionType", js.undefined)
+    inline def setCompressionTypeUndefined: Self = StObject.set(x, "CompressionType", js.undefined)
     
-    @scala.inline
-    def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: DataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: DataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputMode(value: TrainingInputMode): Self = StObject.set(x, "InputMode", value.asInstanceOf[js.Any])
+    inline def setInputMode(value: TrainingInputMode): Self = StObject.set(x, "InputMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputModeUndefined: Self = StObject.set(x, "InputMode", js.undefined)
+    inline def setInputModeUndefined: Self = StObject.set(x, "InputMode", js.undefined)
     
-    @scala.inline
-    def setRecordWrapperType(value: RecordWrapper): Self = StObject.set(x, "RecordWrapperType", value.asInstanceOf[js.Any])
+    inline def setRecordWrapperType(value: RecordWrapper): Self = StObject.set(x, "RecordWrapperType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordWrapperTypeUndefined: Self = StObject.set(x, "RecordWrapperType", js.undefined)
+    inline def setRecordWrapperTypeUndefined: Self = StObject.set(x, "RecordWrapperType", js.undefined)
     
-    @scala.inline
-    def setShuffleConfig(value: ShuffleConfig): Self = StObject.set(x, "ShuffleConfig", value.asInstanceOf[js.Any])
+    inline def setShuffleConfig(value: ShuffleConfig): Self = StObject.set(x, "ShuffleConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShuffleConfigUndefined: Self = StObject.set(x, "ShuffleConfig", js.undefined)
+    inline def setShuffleConfigUndefined: Self = StObject.set(x, "ShuffleConfig", js.undefined)
   }
 }

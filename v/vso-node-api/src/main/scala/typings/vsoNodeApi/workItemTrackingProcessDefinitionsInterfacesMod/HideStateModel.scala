@@ -10,16 +10,13 @@ trait HideStateModel extends StObject {
 }
 object HideStateModel {
   
-  @scala.inline
-  def apply(hidden: Boolean): HideStateModel = {
+  inline def apply(hidden: Boolean): HideStateModel = {
     val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[HideStateModel]
   }
   
-  @scala.inline
-  implicit class HideStateModelMutableBuilder[Self <: HideStateModel] (val x: Self) extends AnyVal {
+  extension [Self <: HideStateModel](x: Self) {
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
   }
 }

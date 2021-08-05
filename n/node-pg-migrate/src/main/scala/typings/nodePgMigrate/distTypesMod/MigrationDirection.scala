@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MigrationDirection extends StObject
 object MigrationDirection {
   
-  @scala.inline
-  def down: typings.nodePgMigrate.nodePgMigrateStrings.down = "down".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.down]
+  inline def down: typings.nodePgMigrate.nodePgMigrateStrings.down = "down".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.down]
   
-  @scala.inline
-  def up: typings.nodePgMigrate.nodePgMigrateStrings.up = "up".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.up]
+  inline def up: typings.nodePgMigrate.nodePgMigrateStrings.up = "up".asInstanceOf[typings.nodePgMigrate.nodePgMigrateStrings.up]
 }

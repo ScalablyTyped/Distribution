@@ -23,8 +23,7 @@ trait Params extends StObject {
 }
 object Params {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fields: StringDictionary[String],
     filters: Filter | AggregatedFilters,
     page: Page,
@@ -37,28 +36,20 @@ object Params {
     __obj.asInstanceOf[Params]
   }
   
-  @scala.inline
-  implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+  extension [Self <: Params](x: Self) {
     
-    @scala.inline
-    def setFields(value: StringDictionary[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: StringDictionary[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilters(value: Filter | AggregatedFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Filter | AggregatedFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchExtended(value: String): Self = StObject.set(x, "searchExtended", value.asInstanceOf[js.Any])
+    inline def setSearchExtended(value: String): Self = StObject.set(x, "searchExtended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
   }
 }

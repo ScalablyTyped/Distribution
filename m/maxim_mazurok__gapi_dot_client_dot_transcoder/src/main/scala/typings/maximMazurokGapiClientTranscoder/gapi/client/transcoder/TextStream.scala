@@ -17,34 +17,25 @@ trait TextStream extends StObject {
 }
 object TextStream {
   
-  @scala.inline
-  def apply(): TextStream = {
+  inline def apply(): TextStream = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextStream]
   }
   
-  @scala.inline
-  implicit class TextStreamMutableBuilder[Self <: TextStream] (val x: Self) extends AnyVal {
+  extension [Self <: TextStream](x: Self) {
     
-    @scala.inline
-    def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
+    inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setMapping(value: js.Array[TextAtom]): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+    inline def setMapping(value: js.Array[TextAtom]): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
+    inline def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
     
-    @scala.inline
-    def setMappingVarargs(value: TextAtom*): Self = StObject.set(x, "mapping", js.Array(value :_*))
+    inline def setMappingVarargs(value: TextAtom*): Self = StObject.set(x, "mapping", js.Array(value :_*))
   }
 }

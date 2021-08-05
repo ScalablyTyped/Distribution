@@ -10,8 +10,6 @@ object transformMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(transform: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(transform.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def parse(transform: String, options: js.Object): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(transform.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def parse(transform: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(transform.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def parse(transform: String, options: js.Object): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(transform.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

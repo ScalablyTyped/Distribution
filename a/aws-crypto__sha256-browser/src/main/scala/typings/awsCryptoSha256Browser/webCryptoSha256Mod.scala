@@ -15,8 +15,8 @@ object webCryptoSha256Mod {
        with Hash {
     def this(secret: SourceData) = this()
     
-    val key: js.Any = js.native
+    /* private */ val key: js.Any = js.native
     
-    var toHash: js.Any = js.native
+    /* private */ var toHash: js.Any = js.native
   }
 }

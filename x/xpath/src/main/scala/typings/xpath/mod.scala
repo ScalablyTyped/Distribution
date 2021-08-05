@@ -16,8 +16,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def evaluate(
+  inline def evaluate(
     expression: String,
     contextNode: Node,
     resolver: XPathNSResolver,
@@ -29,16 +28,12 @@ object mod {
   @js.native
   def select: XPathSelect = js.native
   
-  @scala.inline
-  def select1(expression: String): SelectedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("select1")(expression.asInstanceOf[js.Any]).asInstanceOf[SelectedValue]
-  @scala.inline
-  def select1(expression: String, node: Node): SelectedValue = (^.asInstanceOf[js.Dynamic].applyDynamic("select1")(expression.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[SelectedValue]
+  inline def select1(expression: String): SelectedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("select1")(expression.asInstanceOf[js.Any]).asInstanceOf[SelectedValue]
+  inline def select1(expression: String, node: Node): SelectedValue = (^.asInstanceOf[js.Dynamic].applyDynamic("select1")(expression.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[SelectedValue]
   
-  @scala.inline
-  def select_=(x: XPathSelect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("select")(x.asInstanceOf[js.Any])
+  inline def select_=(x: XPathSelect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("select")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def useNamespaces(namespaceMap: StringDictionary[String]): XPathSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("useNamespaces")(namespaceMap.asInstanceOf[js.Any]).asInstanceOf[XPathSelect]
+  inline def useNamespaces(namespaceMap: StringDictionary[String]): XPathSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("useNamespaces")(namespaceMap.asInstanceOf[js.Any]).asInstanceOf[XPathSelect]
   
   type SelectedValue = Node | Attr | String | Double | Boolean
   

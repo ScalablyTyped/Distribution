@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "Device")
 @js.native
-class Device_ protected () extends NativeObject {
+/* private */ class Device_ () extends NativeObject {
   
   /**
     * An array of `Camera` objects ordered by priority. The first entry is considered the primary camera of

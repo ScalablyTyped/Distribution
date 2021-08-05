@@ -23,25 +23,19 @@ trait SnsAction extends StObject {
 }
 object SnsAction {
   
-  @scala.inline
-  def apply(roleArn: AwsArn, targetArn: AwsArn): SnsAction = {
+  inline def apply(roleArn: AwsArn, targetArn: AwsArn): SnsAction = {
     val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], targetArn = targetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnsAction]
   }
   
-  @scala.inline
-  implicit class SnsActionMutableBuilder[Self <: SnsAction] (val x: Self) extends AnyVal {
+  extension [Self <: SnsAction](x: Self) {
     
-    @scala.inline
-    def setMessageFormat(value: MessageFormat): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
+    inline def setMessageFormat(value: MessageFormat): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
+    inline def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetArn(value: AwsArn): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
+    inline def setTargetArn(value: AwsArn): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
   }
 }

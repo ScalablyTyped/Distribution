@@ -21,7 +21,7 @@ trait Selection extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.Selection_typekey")
+  /* private */ @JSName("PowerPoint.Selection_typekey")
   var PowerPointDotSelection_typekey: Selection
   
   val ShapeRange: typings.activexPowerpoint.PowerPoint.ShapeRange
@@ -38,8 +38,7 @@ trait Selection extends StObject {
 }
 object Selection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     ChildShapeRange: ShapeRange,
     Copy: () => Unit,
@@ -60,49 +59,34 @@ object Selection {
     __obj.asInstanceOf[Selection]
   }
   
-  @scala.inline
-  implicit class SelectionMutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
+  extension [Self <: Selection](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildShapeRange(value: ShapeRange): Self = StObject.set(x, "ChildShapeRange", value.asInstanceOf[js.Any])
+    inline def setChildShapeRange(value: ShapeRange): Self = StObject.set(x, "ChildShapeRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopy(value: () => Unit): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => Unit): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCut(value: () => Unit): Self = StObject.set(x, "Cut", js.Any.fromFunction0(value))
+    inline def setCut(value: () => Unit): Self = StObject.set(x, "Cut", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasChildShapeRange(value: Boolean): Self = StObject.set(x, "HasChildShapeRange", value.asInstanceOf[js.Any])
+    inline def setHasChildShapeRange(value: Boolean): Self = StObject.set(x, "HasChildShapeRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotSelection_typekey(value: Selection): Self = StObject.set(x, "PowerPoint.Selection_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotSelection_typekey(value: Selection): Self = StObject.set(x, "PowerPoint.Selection_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeRange(value: ShapeRange): Self = StObject.set(x, "ShapeRange", value.asInstanceOf[js.Any])
+    inline def setShapeRange(value: ShapeRange): Self = StObject.set(x, "ShapeRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideRange(value: SlideRange): Self = StObject.set(x, "SlideRange", value.asInstanceOf[js.Any])
+    inline def setSlideRange(value: SlideRange): Self = StObject.set(x, "SlideRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextRange(value: TextRange): Self = StObject.set(x, "TextRange", value.asInstanceOf[js.Any])
+    inline def setTextRange(value: TextRange): Self = StObject.set(x, "TextRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextRange2(value: TextRange2): Self = StObject.set(x, "TextRange2", value.asInstanceOf[js.Any])
+    inline def setTextRange2(value: TextRange2): Self = StObject.set(x, "TextRange2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PpSelectionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: PpSelectionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnselect(value: () => Unit): Self = StObject.set(x, "Unselect", js.Any.fromFunction0(value))
+    inline def setUnselect(value: () => Unit): Self = StObject.set(x, "Unselect", js.Any.fromFunction0(value))
   }
 }

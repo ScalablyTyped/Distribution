@@ -51,8 +51,7 @@ trait TypeofprinterProvider extends StObject {
 }
 object TypeofprinterProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onGetCapabilityRequested: Event[
       js.Function2[
         /* printerId */ String, 
@@ -85,11 +84,9 @@ object TypeofprinterProvider {
     __obj.asInstanceOf[TypeofprinterProvider]
   }
   
-  @scala.inline
-  implicit class TypeofprinterProviderMutableBuilder[Self <: TypeofprinterProvider] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofprinterProvider](x: Self) {
     
-    @scala.inline
-    def setOnGetCapabilityRequested(
+    inline def setOnGetCapabilityRequested(
       value: Event[
           js.Function2[
             /* printerId */ String, 
@@ -99,8 +96,7 @@ object TypeofprinterProvider {
         ]
     ): Self = StObject.set(x, "onGetCapabilityRequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnGetPrintersRequested(
+    inline def setOnGetPrintersRequested(
       value: Event[
           js.Function1[
             /* resultCallback */ js.Function1[/* printerInfo */ js.Array[PrinterInfo], Unit], 
@@ -109,8 +105,7 @@ object TypeofprinterProvider {
         ]
     ): Self = StObject.set(x, "onGetPrintersRequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnGetUsbPrinterInfoRequested(
+    inline def setOnGetUsbPrinterInfoRequested(
       value: Event[
           js.Function2[
             /* device */ js.Any, 
@@ -120,8 +115,7 @@ object TypeofprinterProvider {
         ]
     ): Self = StObject.set(x, "onGetUsbPrinterInfoRequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPrintRequested(
+    inline def setOnPrintRequested(
       value: Event[
           js.Function2[
             /* printJob */ PrintJob, 

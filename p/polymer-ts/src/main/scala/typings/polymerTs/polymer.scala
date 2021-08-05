@@ -62,80 +62,56 @@ object polymer {
   }
   object Element {
     
-    @scala.inline
-    def apply(): Element = {
+    inline def apply(): Element = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Element]
     }
     
-    @scala.inline
-    implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+    extension [Self <: Element](x: Self) {
       
-      @scala.inline
-      def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
+      inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
+      inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
       
-      @scala.inline
-      def setAttributeChanged(value: (/* attrName */ String, /* oldVal */ js.Any, /* newVal */ js.Any) => Unit): Self = StObject.set(x, "attributeChanged", js.Any.fromFunction3(value))
+      inline def setAttributeChanged(value: (/* attrName */ String, /* oldVal */ js.Any, /* newVal */ js.Any) => Unit): Self = StObject.set(x, "attributeChanged", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAttributeChangedUndefined: Self = StObject.set(x, "attributeChanged", js.undefined)
+      inline def setAttributeChangedUndefined: Self = StObject.set(x, "attributeChanged", js.undefined)
       
-      @scala.inline
-      def setBehaviors(value: js.Array[js.Object]): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
+      inline def setBehaviors(value: js.Array[js.Object]): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
+      inline def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
       
-      @scala.inline
-      def setBehaviorsVarargs(value: js.Object*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
+      inline def setBehaviorsVarargs(value: js.Object*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
       
-      @scala.inline
-      def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
+      inline def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+      inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
       
-      @scala.inline
-      def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
+      inline def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+      inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
       
-      @scala.inline
-      def setFactoryImpl(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "factoryImpl", js.Any.fromFunction1(value))
+      inline def setFactoryImpl(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "factoryImpl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFactoryImplUndefined: Self = StObject.set(x, "factoryImpl", js.undefined)
+      inline def setFactoryImplUndefined: Self = StObject.set(x, "factoryImpl", js.undefined)
       
-      @scala.inline
-      def setListeners(value: js.Object): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: js.Object): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
+      inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
       
-      @scala.inline
-      def setObservers(value: js.Array[String]): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
+      inline def setObservers(value: js.Array[String]): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObserversUndefined: Self = StObject.set(x, "observers", js.undefined)
+      inline def setObserversUndefined: Self = StObject.set(x, "observers", js.undefined)
       
-      @scala.inline
-      def setObserversVarargs(value: String*): Self = StObject.set(x, "observers", js.Array(value :_*))
+      inline def setObserversVarargs(value: String*): Self = StObject.set(x, "observers", js.Array(value :_*))
       
-      @scala.inline
-      def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
+      inline def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+      inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     }
   }
   
@@ -149,32 +125,24 @@ object polymer {
   }
   object FireOptions {
     
-    @scala.inline
-    def apply(): FireOptions = {
+    inline def apply(): FireOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FireOptions]
     }
     
-    @scala.inline
-    implicit class FireOptionsMutableBuilder[Self <: FireOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FireOptions](x: Self) {
       
-      @scala.inline
-      def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+      inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
+      inline def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
       
-      @scala.inline
-      def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+      inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+      inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
       
-      @scala.inline
-      def setNode(value: HTMLElement | Base): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: HTMLElement | Base): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     }
   }
   
@@ -339,41 +307,30 @@ object polymer {
   }
   object PolymerTSElement {
     
-    @scala.inline
-    def apply(): PolymerTSElement = {
+    inline def apply(): PolymerTSElement = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PolymerTSElement]
     }
     
-    @scala.inline
-    implicit class PolymerTSElementMutableBuilder[Self <: PolymerTSElement] (val x: Self) extends AnyVal {
+    extension [Self <: PolymerTSElement](x: Self) {
       
-      @scala.inline
-      def set$custom_cons(value: FunctionConstructor): Self = StObject.set(x, "$custom_cons", value.asInstanceOf[js.Any])
+      inline def set$custom_cons(value: FunctionConstructor): Self = StObject.set(x, "$custom_cons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$custom_consUndefined: Self = StObject.set(x, "$custom_cons", js.undefined)
+      inline def set$custom_consUndefined: Self = StObject.set(x, "$custom_cons", js.undefined)
       
-      @scala.inline
-      def set$custom_cons_args(value: js.Array[js.Any]): Self = StObject.set(x, "$custom_cons_args", value.asInstanceOf[js.Any])
+      inline def set$custom_cons_args(value: js.Array[js.Any]): Self = StObject.set(x, "$custom_cons_args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$custom_cons_argsUndefined: Self = StObject.set(x, "$custom_cons_args", js.undefined)
+      inline def set$custom_cons_argsUndefined: Self = StObject.set(x, "$custom_cons_args", js.undefined)
       
-      @scala.inline
-      def set$custom_cons_argsVarargs(value: js.Any*): Self = StObject.set(x, "$custom_cons_args", js.Array(value :_*))
+      inline def set$custom_cons_argsVarargs(value: js.Any*): Self = StObject.set(x, "$custom_cons_args", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
   
@@ -398,62 +355,44 @@ object polymer {
   }
   object Property {
     
-    @scala.inline
-    def apply(): Property = {
+    inline def apply(): Property = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Property]
     }
     
-    @scala.inline
-    implicit class PropertyMutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
+    extension [Self <: Property](x: Self) {
       
-      @scala.inline
-      def setComputed(value: String): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
+      inline def setComputed(value: String): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputedUndefined: Self = StObject.set(x, "computed", js.undefined)
+      inline def setComputedUndefined: Self = StObject.set(x, "computed", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
+      inline def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
+      inline def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
       
-      @scala.inline
-      def setObserver(value: String): Self = StObject.set(x, "observer", value.asInstanceOf[js.Any])
+      inline def setObserver(value: String): Self = StObject.set(x, "observer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObserverUndefined: Self = StObject.set(x, "observer", js.undefined)
+      inline def setObserverUndefined: Self = StObject.set(x, "observer", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setReflectToAttribute(value: Boolean): Self = StObject.set(x, "reflectToAttribute", value.asInstanceOf[js.Any])
+      inline def setReflectToAttribute(value: Boolean): Self = StObject.set(x, "reflectToAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReflectToAttributeUndefined: Self = StObject.set(x, "reflectToAttribute", js.undefined)
+      inline def setReflectToAttributeUndefined: Self = StObject.set(x, "reflectToAttribute", js.undefined)
       
-      @scala.inline
-      def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   

@@ -16,19 +16,15 @@ trait SchemaAddSheetResponse extends StObject {
 }
 object SchemaAddSheetResponse {
   
-  @scala.inline
-  def apply(): SchemaAddSheetResponse = {
+  inline def apply(): SchemaAddSheetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAddSheetResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAddSheetResponseMutableBuilder[Self <: SchemaAddSheetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAddSheetResponse](x: Self) {
     
-    @scala.inline
-    def setProperties(value: SchemaSheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SchemaSheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

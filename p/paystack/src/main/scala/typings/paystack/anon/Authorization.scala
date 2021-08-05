@@ -17,28 +17,21 @@ trait Authorization extends StObject {
 }
 object Authorization {
   
-  @scala.inline
-  def apply(authorization: String, customer: String, plan: String): Authorization = {
+  inline def apply(authorization: String, customer: String, plan: String): Authorization = {
     val __obj = js.Dynamic.literal(authorization = authorization.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any])
     __obj.asInstanceOf[Authorization]
   }
   
-  @scala.inline
-  implicit class AuthorizationMutableBuilder[Self <: Authorization] (val x: Self) extends AnyVal {
+  extension [Self <: Authorization](x: Self) {
     
-    @scala.inline
-    def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
+    inline def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+    inline def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_date(value: Date): Self = StObject.set(x, "start_date", value.asInstanceOf[js.Any])
+    inline def setStart_date(value: Date): Self = StObject.set(x, "start_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_dateUndefined: Self = StObject.set(x, "start_date", js.undefined)
+    inline def setStart_dateUndefined: Self = StObject.set(x, "start_date", js.undefined)
   }
 }

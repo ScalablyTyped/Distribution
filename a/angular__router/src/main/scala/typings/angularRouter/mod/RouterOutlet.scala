@@ -25,14 +25,14 @@ class RouterOutlet protected ()
     changeDetector: ChangeDetectorRef
   ) = this()
   
-  var _activatedRoute: js.Any = js.native
+  /* private */ var _activatedRoute: js.Any = js.native
   
   var activateEvents: EventEmitter[js.Any] = js.native
   
   def activateWith(activatedRoute: ActivatedRoute): Unit = js.native
   def activateWith(activatedRoute: ActivatedRoute, resolver: ComponentFactoryResolver): Unit = js.native
   
-  var activated: js.Any = js.native
+  /* private */ var activated: js.Any = js.native
   
   def activatedRoute: ActivatedRoute = js.native
   
@@ -43,7 +43,7 @@ class RouterOutlet protected ()
     */
   def attach(ref: ComponentRef[js.Any], activatedRoute: ActivatedRoute): Unit = js.native
   
-  var changeDetector: js.Any = js.native
+  /* private */ var changeDetector: js.Any = js.native
   
   def component: js.Object = js.native
   
@@ -58,9 +58,9 @@ class RouterOutlet protected ()
   
   def isActivated: Boolean = js.native
   
-  var location: js.Any = js.native
+  /* private */ var location: js.Any = js.native
   
-  var name: js.Any = js.native
+  /* private */ var name: js.Any = js.native
   
   /**
     * A callback method that performs custom clean-up, invoked immediately
@@ -79,7 +79,7 @@ class RouterOutlet protected ()
   /* CompleteClass */
   override def ngOnInit(): Unit = js.native
   
-  var parentContexts: js.Any = js.native
+  /* private */ var parentContexts: js.Any = js.native
   
-  var resolver: js.Any = js.native
+  /* private */ var resolver: js.Any = js.native
 }

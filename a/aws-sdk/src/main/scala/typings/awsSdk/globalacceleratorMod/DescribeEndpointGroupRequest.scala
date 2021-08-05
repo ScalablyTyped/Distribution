@@ -13,16 +13,13 @@ trait DescribeEndpointGroupRequest extends StObject {
 }
 object DescribeEndpointGroupRequest {
   
-  @scala.inline
-  def apply(EndpointGroupArn: GenericString): DescribeEndpointGroupRequest = {
+  inline def apply(EndpointGroupArn: GenericString): DescribeEndpointGroupRequest = {
     val __obj = js.Dynamic.literal(EndpointGroupArn = EndpointGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEndpointGroupRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEndpointGroupRequestMutableBuilder[Self <: DescribeEndpointGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEndpointGroupRequest](x: Self) {
     
-    @scala.inline
-    def setEndpointGroupArn(value: GenericString): Self = StObject.set(x, "EndpointGroupArn", value.asInstanceOf[js.Any])
+    inline def setEndpointGroupArn(value: GenericString): Self = StObject.set(x, "EndpointGroupArn", value.asInstanceOf[js.Any])
   }
 }

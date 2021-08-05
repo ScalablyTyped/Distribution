@@ -20,12 +20,10 @@ object LocaleProvider {
   @JSImport("antd-mobile-rn", "LocaleProvider.childContextTypes")
   @js.native
   def childContextTypes: AntLocale = js.native
-  @scala.inline
-  def childContextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+  inline def childContextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("antd-mobile-rn", "LocaleProvider.propTypes")
   @js.native
   def propTypes: Locale = js.native
-  @scala.inline
-  def propTypes_=(x: Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  inline def propTypes_=(x: Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
 }

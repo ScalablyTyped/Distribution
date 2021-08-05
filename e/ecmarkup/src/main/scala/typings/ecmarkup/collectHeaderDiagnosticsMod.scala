@@ -12,6 +12,5 @@ object collectHeaderDiagnosticsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def collectHeaderDiagnostics(report: js.Function1[/* e */ Warning, Unit], headers: js.Array[Contents]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("collectHeaderDiagnostics")(report.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def collectHeaderDiagnostics(report: js.Function1[/* e */ Warning, Unit], headers: js.Array[Contents]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("collectHeaderDiagnostics")(report.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

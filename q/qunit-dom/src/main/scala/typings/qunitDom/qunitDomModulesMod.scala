@@ -12,13 +12,10 @@ object qunitDomModulesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def install(assert: Assert): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(assert.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def install(assert: Assert): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(assert.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setup(assert: Assert): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(assert.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setup(assert: Assert, options: SetupOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(assert.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setup(assert: Assert): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(assert.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setup(assert: Assert, options: SetupOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(assert.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait SetupOptions extends StObject {
     
@@ -26,20 +23,16 @@ object qunitDomModulesMod {
   }
   object SetupOptions {
     
-    @scala.inline
-    def apply(): SetupOptions = {
+    inline def apply(): SetupOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetupOptions]
     }
     
-    @scala.inline
-    implicit class SetupOptionsMutableBuilder[Self <: SetupOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetupOptions](x: Self) {
       
-      @scala.inline
-      def setGetRootElement(value: () => Element | Null): Self = StObject.set(x, "getRootElement", js.Any.fromFunction0(value))
+      inline def setGetRootElement(value: () => Element | Null): Self = StObject.set(x, "getRootElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRootElementUndefined: Self = StObject.set(x, "getRootElement", js.undefined)
+      inline def setGetRootElementUndefined: Self = StObject.set(x, "getRootElement", js.undefined)
     }
   }
 }

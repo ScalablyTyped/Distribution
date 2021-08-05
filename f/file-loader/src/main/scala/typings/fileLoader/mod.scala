@@ -235,65 +235,46 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setEmitFile(value: Boolean): Self = StObject.set(x, "emitFile", value.asInstanceOf[js.Any])
+      inline def setEmitFile(value: Boolean): Self = StObject.set(x, "emitFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitFileUndefined: Self = StObject.set(x, "emitFile", js.undefined)
+      inline def setEmitFileUndefined: Self = StObject.set(x, "emitFile", js.undefined)
       
-      @scala.inline
-      def setName(value: String | (js.Function1[/* file */ String, String])): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String | (js.Function1[/* file */ String, String])): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameFunction1(value: /* file */ String => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+      inline def setNameFunction1(value: /* file */ String => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOutputPath(value: String | BuildResourcePathFn): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
+      inline def setOutputPath(value: String | BuildResourcePathFn): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputPathFunction3(value: (/* url */ String, /* resourcePath */ String, /* context */ String) => String): Self = StObject.set(x, "outputPath", js.Any.fromFunction3(value))
+      inline def setOutputPathFunction3(value: (/* url */ String, /* resourcePath */ String, /* context */ String) => String): Self = StObject.set(x, "outputPath", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
+      inline def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
       
-      @scala.inline
-      def setPostTransformPublicPath(value: /* p */ String => String): Self = StObject.set(x, "postTransformPublicPath", js.Any.fromFunction1(value))
+      inline def setPostTransformPublicPath(value: /* p */ String => String): Self = StObject.set(x, "postTransformPublicPath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPostTransformPublicPathUndefined: Self = StObject.set(x, "postTransformPublicPath", js.undefined)
+      inline def setPostTransformPublicPathUndefined: Self = StObject.set(x, "postTransformPublicPath", js.undefined)
       
-      @scala.inline
-      def setPublicPath(value: String | BuildResourcePathFn): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+      inline def setPublicPath(value: String | BuildResourcePathFn): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicPathFunction3(value: (/* url */ String, /* resourcePath */ String, /* context */ String) => String): Self = StObject.set(x, "publicPath", js.Any.fromFunction3(value))
+      inline def setPublicPathFunction3(value: (/* url */ String, /* resourcePath */ String, /* context */ String) => String): Self = StObject.set(x, "publicPath", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
+      inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
       
-      @scala.inline
-      def setRegExp(value: RegExp): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
+      inline def setRegExp(value: RegExp): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegExpUndefined: Self = StObject.set(x, "regExp", js.undefined)
+      inline def setRegExpUndefined: Self = StObject.set(x, "regExp", js.undefined)
     }
   }
 }

@@ -37,35 +37,26 @@ trait DispatchTouchEventRequest extends StObject {
 }
 object DispatchTouchEventRequest {
   
-  @scala.inline
-  def apply(touchPoints: js.Array[TouchPoint], `type`: touchStart | touchEnd | touchMove | touchCancel): DispatchTouchEventRequest = {
+  inline def apply(touchPoints: js.Array[TouchPoint], `type`: touchStart | touchEnd | touchMove | touchCancel): DispatchTouchEventRequest = {
     val __obj = js.Dynamic.literal(touchPoints = touchPoints.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DispatchTouchEventRequest]
   }
   
-  @scala.inline
-  implicit class DispatchTouchEventRequestMutableBuilder[Self <: DispatchTouchEventRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DispatchTouchEventRequest](x: Self) {
     
-    @scala.inline
-    def setModifiers(value: integer): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: integer): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
+    inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: TimeSinceEpoch): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: TimeSinceEpoch): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    @scala.inline
-    def setTouchPoints(value: js.Array[TouchPoint]): Self = StObject.set(x, "touchPoints", value.asInstanceOf[js.Any])
+    inline def setTouchPoints(value: js.Array[TouchPoint]): Self = StObject.set(x, "touchPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchPointsVarargs(value: TouchPoint*): Self = StObject.set(x, "touchPoints", js.Array(value :_*))
+    inline def setTouchPointsVarargs(value: TouchPoint*): Self = StObject.set(x, "touchPoints", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: touchStart | touchEnd | touchMove | touchCancel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: touchStart | touchEnd | touchMove | touchCancel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

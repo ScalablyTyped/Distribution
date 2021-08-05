@@ -13,19 +13,15 @@ trait EnvelopeViews extends StObject {
 }
 object EnvelopeViews {
   
-  @scala.inline
-  def apply(): EnvelopeViews = {
+  inline def apply(): EnvelopeViews = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvelopeViews]
   }
   
-  @scala.inline
-  implicit class EnvelopeViewsMutableBuilder[Self <: EnvelopeViews] (val x: Self) extends AnyVal {
+  extension [Self <: EnvelopeViews](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -43,8 +43,7 @@ trait SecurityStateExplanation extends StObject {
 }
 object SecurityStateExplanation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     certificate: js.Array[String],
     description: String,
     mixedContentType: MixedContentType,
@@ -56,37 +55,26 @@ object SecurityStateExplanation {
     __obj.asInstanceOf[SecurityStateExplanation]
   }
   
-  @scala.inline
-  implicit class SecurityStateExplanationMutableBuilder[Self <: SecurityStateExplanation] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityStateExplanation](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: js.Array[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: js.Array[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateVarargs(value: String*): Self = StObject.set(x, "certificate", js.Array(value :_*))
+    inline def setCertificateVarargs(value: String*): Self = StObject.set(x, "certificate", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMixedContentType(value: MixedContentType): Self = StObject.set(x, "mixedContentType", value.asInstanceOf[js.Any])
+    inline def setMixedContentType(value: MixedContentType): Self = StObject.set(x, "mixedContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendations(value: js.Array[String]): Self = StObject.set(x, "recommendations", value.asInstanceOf[js.Any])
+    inline def setRecommendations(value: js.Array[String]): Self = StObject.set(x, "recommendations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationsUndefined: Self = StObject.set(x, "recommendations", js.undefined)
+    inline def setRecommendationsUndefined: Self = StObject.set(x, "recommendations", js.undefined)
     
-    @scala.inline
-    def setRecommendationsVarargs(value: String*): Self = StObject.set(x, "recommendations", js.Array(value :_*))
+    inline def setRecommendationsVarargs(value: String*): Self = StObject.set(x, "recommendations", js.Array(value :_*))
     
-    @scala.inline
-    def setSecurityState(value: SecurityState): Self = StObject.set(x, "securityState", value.asInstanceOf[js.Any])
+    inline def setSecurityState(value: SecurityState): Self = StObject.set(x, "securityState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

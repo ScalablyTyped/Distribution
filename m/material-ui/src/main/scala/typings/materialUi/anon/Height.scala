@@ -16,37 +16,27 @@ trait Height extends StObject {
 }
 object Height {
   
-  @scala.inline
-  def apply(): Height = {
+  inline def apply(): Height = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Height]
   }
   
-  @scala.inline
-  implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+  extension [Self <: Height](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setIconButtonSize(value: Double): Self = StObject.set(x, "iconButtonSize", value.asInstanceOf[js.Any])
+    inline def setIconButtonSize(value: Double): Self = StObject.set(x, "iconButtonSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconButtonSizeUndefined: Self = StObject.set(x, "iconButtonSize", js.undefined)
+    inline def setIconButtonSizeUndefined: Self = StObject.set(x, "iconButtonSize", js.undefined)
     
-    @scala.inline
-    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    @scala.inline
-    def setTextTransform(value: String): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
+    inline def setTextTransform(value: String): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
+    inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
   }
 }

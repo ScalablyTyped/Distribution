@@ -13,16 +13,13 @@ trait CheckDNSAvailabilityMessage extends StObject {
 }
 object CheckDNSAvailabilityMessage {
   
-  @scala.inline
-  def apply(CNAMEPrefix: DNSCnamePrefix): CheckDNSAvailabilityMessage = {
+  inline def apply(CNAMEPrefix: DNSCnamePrefix): CheckDNSAvailabilityMessage = {
     val __obj = js.Dynamic.literal(CNAMEPrefix = CNAMEPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckDNSAvailabilityMessage]
   }
   
-  @scala.inline
-  implicit class CheckDNSAvailabilityMessageMutableBuilder[Self <: CheckDNSAvailabilityMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CheckDNSAvailabilityMessage](x: Self) {
     
-    @scala.inline
-    def setCNAMEPrefix(value: DNSCnamePrefix): Self = StObject.set(x, "CNAMEPrefix", value.asInstanceOf[js.Any])
+    inline def setCNAMEPrefix(value: DNSCnamePrefix): Self = StObject.set(x, "CNAMEPrefix", value.asInstanceOf[js.Any])
   }
 }

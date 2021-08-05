@@ -17,20 +17,16 @@ trait SpreadProperty_
 }
 object SpreadProperty_ {
   
-  @scala.inline
-  def apply(argument: Expression, end: Double, loc: SourceLocation, start: Double): SpreadProperty_ = {
+  inline def apply(argument: Expression, end: Double, loc: SourceLocation, start: Double): SpreadProperty_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("SpreadProperty")
     __obj.asInstanceOf[SpreadProperty_]
   }
   
-  @scala.inline
-  implicit class SpreadProperty_MutableBuilder[Self <: SpreadProperty_] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadProperty_](x: Self) {
     
-    @scala.inline
-    def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: SpreadProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SpreadProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

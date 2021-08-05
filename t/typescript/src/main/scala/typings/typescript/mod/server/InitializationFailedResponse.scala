@@ -17,25 +17,19 @@ trait InitializationFailedResponse
 }
 object InitializationFailedResponse {
   
-  @scala.inline
-  def apply(kind: EventInitializationFailed, message: String): InitializationFailedResponse = {
+  inline def apply(kind: EventInitializationFailed, message: String): InitializationFailedResponse = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitializationFailedResponse]
   }
   
-  @scala.inline
-  implicit class InitializationFailedResponseMutableBuilder[Self <: InitializationFailedResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InitializationFailedResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: EventInitializationFailed): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: EventInitializationFailed): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
   }
 }

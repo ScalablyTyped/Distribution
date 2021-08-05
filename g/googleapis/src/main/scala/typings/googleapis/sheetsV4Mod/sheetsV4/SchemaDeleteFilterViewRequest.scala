@@ -16,19 +16,15 @@ trait SchemaDeleteFilterViewRequest extends StObject {
 }
 object SchemaDeleteFilterViewRequest {
   
-  @scala.inline
-  def apply(): SchemaDeleteFilterViewRequest = {
+  inline def apply(): SchemaDeleteFilterViewRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeleteFilterViewRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDeleteFilterViewRequestMutableBuilder[Self <: SchemaDeleteFilterViewRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeleteFilterViewRequest](x: Self) {
     
-    @scala.inline
-    def setFilterId(value: Double): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
+    inline def setFilterId(value: Double): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
+    inline def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
   }
 }

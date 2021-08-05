@@ -38,8 +38,7 @@ trait MagneticStripeReaderReport extends StObject {
 }
 object MagneticStripeReaderReport {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     additionalSecurityInformation: IBuffer,
     cardAuthenticationData: IBuffer,
     cardAuthenticationDataLength: Double,
@@ -54,34 +53,24 @@ object MagneticStripeReaderReport {
     __obj.asInstanceOf[MagneticStripeReaderReport]
   }
   
-  @scala.inline
-  implicit class MagneticStripeReaderReportMutableBuilder[Self <: MagneticStripeReaderReport] (val x: Self) extends AnyVal {
+  extension [Self <: MagneticStripeReaderReport](x: Self) {
     
-    @scala.inline
-    def setAdditionalSecurityInformation(value: IBuffer): Self = StObject.set(x, "additionalSecurityInformation", value.asInstanceOf[js.Any])
+    inline def setAdditionalSecurityInformation(value: IBuffer): Self = StObject.set(x, "additionalSecurityInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardAuthenticationData(value: IBuffer): Self = StObject.set(x, "cardAuthenticationData", value.asInstanceOf[js.Any])
+    inline def setCardAuthenticationData(value: IBuffer): Self = StObject.set(x, "cardAuthenticationData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardAuthenticationDataLength(value: Double): Self = StObject.set(x, "cardAuthenticationDataLength", value.asInstanceOf[js.Any])
+    inline def setCardAuthenticationDataLength(value: Double): Self = StObject.set(x, "cardAuthenticationDataLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardType(value: Double): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
+    inline def setCardType(value: Double): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IMapView[String, String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMapView[String, String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack1(value: MagneticStripeReaderTrackData): Self = StObject.set(x, "track1", value.asInstanceOf[js.Any])
+    inline def setTrack1(value: MagneticStripeReaderTrackData): Self = StObject.set(x, "track1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack2(value: MagneticStripeReaderTrackData): Self = StObject.set(x, "track2", value.asInstanceOf[js.Any])
+    inline def setTrack2(value: MagneticStripeReaderTrackData): Self = StObject.set(x, "track2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack3(value: MagneticStripeReaderTrackData): Self = StObject.set(x, "track3", value.asInstanceOf[js.Any])
+    inline def setTrack3(value: MagneticStripeReaderTrackData): Self = StObject.set(x, "track3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack4(value: MagneticStripeReaderTrackData): Self = StObject.set(x, "track4", value.asInstanceOf[js.Any])
+    inline def setTrack4(value: MagneticStripeReaderTrackData): Self = StObject.set(x, "track4", value.asInstanceOf[js.Any])
   }
 }

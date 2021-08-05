@@ -12,16 +12,13 @@ trait EqlDelete
 }
 object EqlDelete {
   
-  @scala.inline
-  def apply(id: String): EqlDelete = {
+  inline def apply(id: String): EqlDelete = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[EqlDelete]
   }
   
-  @scala.inline
-  implicit class EqlDeleteMutableBuilder[Self <: EqlDelete] (val x: Self) extends AnyVal {
+  extension [Self <: EqlDelete](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

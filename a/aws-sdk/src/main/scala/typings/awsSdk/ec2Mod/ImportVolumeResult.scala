@@ -13,19 +13,15 @@ trait ImportVolumeResult extends StObject {
 }
 object ImportVolumeResult {
   
-  @scala.inline
-  def apply(): ImportVolumeResult = {
+  inline def apply(): ImportVolumeResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportVolumeResult]
   }
   
-  @scala.inline
-  implicit class ImportVolumeResultMutableBuilder[Self <: ImportVolumeResult] (val x: Self) extends AnyVal {
+  extension [Self <: ImportVolumeResult](x: Self) {
     
-    @scala.inline
-    def setConversionTask(value: ConversionTask): Self = StObject.set(x, "ConversionTask", value.asInstanceOf[js.Any])
+    inline def setConversionTask(value: ConversionTask): Self = StObject.set(x, "ConversionTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionTaskUndefined: Self = StObject.set(x, "ConversionTask", js.undefined)
+    inline def setConversionTaskUndefined: Self = StObject.set(x, "ConversionTask", js.undefined)
   }
 }

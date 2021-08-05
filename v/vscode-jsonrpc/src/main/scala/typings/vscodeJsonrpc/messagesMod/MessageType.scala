@@ -12,19 +12,15 @@ trait MessageType extends StObject {
 }
 object MessageType {
   
-  @scala.inline
-  def apply(method: String, numberOfParams: Double): MessageType = {
+  inline def apply(method: String, numberOfParams: Double): MessageType = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], numberOfParams = numberOfParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageType]
   }
   
-  @scala.inline
-  implicit class MessageTypeMutableBuilder[Self <: MessageType] (val x: Self) extends AnyVal {
+  extension [Self <: MessageType](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfParams(value: Double): Self = StObject.set(x, "numberOfParams", value.asInstanceOf[js.Any])
+    inline def setNumberOfParams(value: Double): Self = StObject.set(x, "numberOfParams", value.asInstanceOf[js.Any])
   }
 }

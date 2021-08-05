@@ -15,19 +15,15 @@ trait LrsLoadBalancingConfig
 }
 object LrsLoadBalancingConfig {
   
-  @scala.inline
-  def apply(lrs: LrsLbConfig): LrsLoadBalancingConfig = {
+  inline def apply(lrs: LrsLbConfig): LrsLoadBalancingConfig = {
     val __obj = js.Dynamic.literal(lrs = lrs.asInstanceOf[js.Any], name = "lrs")
     __obj.asInstanceOf[LrsLoadBalancingConfig]
   }
   
-  @scala.inline
-  implicit class LrsLoadBalancingConfigMutableBuilder[Self <: LrsLoadBalancingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LrsLoadBalancingConfig](x: Self) {
     
-    @scala.inline
-    def setLrs(value: LrsLbConfig): Self = StObject.set(x, "lrs", value.asInstanceOf[js.Any])
+    inline def setLrs(value: LrsLbConfig): Self = StObject.set(x, "lrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: lrs): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: lrs): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

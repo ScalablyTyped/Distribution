@@ -28,47 +28,34 @@ object customizerTypesMod {
   }
   object ICustomizerProps {
     
-    @scala.inline
-    def apply(): ICustomizerProps = {
+    inline def apply(): ICustomizerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICustomizerProps]
     }
     
-    @scala.inline
-    implicit class ICustomizerPropsMutableBuilder[Self <: ICustomizerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ICustomizerProps](x: Self) {
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[js.Any]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[js.Any]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ js.Any | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ js.Any | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setContextTransform(value: /* context */ ReadonlyICustomizerContex => ICustomizerContext): Self = StObject.set(x, "contextTransform", js.Any.fromFunction1(value))
+      inline def setContextTransform(value: /* context */ ReadonlyICustomizerContex => ICustomizerContext): Self = StObject.set(x, "contextTransform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContextTransformUndefined: Self = StObject.set(x, "contextTransform", js.undefined)
+      inline def setContextTransformUndefined: Self = StObject.set(x, "contextTransform", js.undefined)
       
-      @scala.inline
-      def setScopedSettings(value: ISettings | ISettingsFunction): Self = StObject.set(x, "scopedSettings", value.asInstanceOf[js.Any])
+      inline def setScopedSettings(value: ISettings | ISettingsFunction): Self = StObject.set(x, "scopedSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopedSettingsFunction1(value: /* settings */ ISettings => ISettings): Self = StObject.set(x, "scopedSettings", js.Any.fromFunction1(value))
+      inline def setScopedSettingsFunction1(value: /* settings */ ISettings => ISettings): Self = StObject.set(x, "scopedSettings", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScopedSettingsUndefined: Self = StObject.set(x, "scopedSettings", js.undefined)
+      inline def setScopedSettingsUndefined: Self = StObject.set(x, "scopedSettings", js.undefined)
       
-      @scala.inline
-      def setSettings(value: ISettings | ISettingsFunction): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: ISettings | ISettingsFunction): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsFunction1(value: /* settings */ ISettings => ISettings): Self = StObject.set(x, "settings", js.Any.fromFunction1(value))
+      inline def setSettingsFunction1(value: /* settings */ ISettings => ISettings): Self = StObject.set(x, "settings", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+      inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     }
   }
 }

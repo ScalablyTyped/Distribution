@@ -66,8 +66,7 @@ object Ribbon {
        with DefaultFormsInformationRequestor
   object ListViewWebPartPageComponent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canHandleCommand: String => Boolean,
       getFocusedCommands: () => js.Array[String],
       getGlobalCommands: () => js.Array[String],
@@ -104,8 +103,7 @@ object Ribbon {
   }
   object PageManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addPageComponent: Component => Unit,
       add_ribbonInited: js.Function0[Unit] => js.Any,
       canHandleCommand: String => Boolean,
@@ -122,23 +120,17 @@ object Ribbon {
       __obj.asInstanceOf[PageManager]
     }
     
-    @scala.inline
-    implicit class PageManagerMutableBuilder[Self <: PageManager] (val x: Self) extends AnyVal {
+    extension [Self <: PageManager](x: Self) {
       
-      @scala.inline
-      def setAddPageComponent(value: Component => Unit): Self = StObject.set(x, "addPageComponent", js.Any.fromFunction1(value))
+      inline def setAddPageComponent(value: Component => Unit): Self = StObject.set(x, "addPageComponent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet_ribbon(value: () => typings.sharepoint.SP.Ribbon.Ribbon): Self = StObject.set(x, "get_ribbon", js.Any.fromFunction0(value))
+      inline def setGet_ribbon(value: () => typings.sharepoint.SP.Ribbon.Ribbon): Self = StObject.set(x, "get_ribbon", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRootCommandEnabled(value: (String, Root) => Boolean): Self = StObject.set(x, "isRootCommandEnabled", js.Any.fromFunction2(value))
+      inline def setIsRootCommandEnabled(value: (String, Root) => Boolean): Self = StObject.set(x, "isRootCommandEnabled", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRootRefreshed(value: Root => Unit): Self = StObject.set(x, "onRootRefreshed", js.Any.fromFunction1(value))
+      inline def setOnRootRefreshed(value: Root => Unit): Self = StObject.set(x, "onRootRefreshed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemovePageComponent(value: Component => Unit): Self = StObject.set(x, "removePageComponent", js.Any.fromFunction1(value))
+      inline def setRemovePageComponent(value: Component => Unit): Self = StObject.set(x, "removePageComponent", js.Any.fromFunction1(value))
     }
   }
   
@@ -153,8 +145,7 @@ object Ribbon {
          with PageComponent
     object PageStateHandler {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         canHandleCommand: String => Boolean,
         getFocusedCommands: () => js.Array[String],
         getGlobalCommands: () => js.Array[String],
@@ -188,8 +179,7 @@ object Ribbon {
        with typings.sharepoint.CUI.Ribbon
   object Ribbon {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _lastHeightUpdate: Double,
       _lastLeftUpdate: Double,
       _lastTopUpdate: Double,
@@ -280,8 +270,7 @@ object Ribbon {
   }
   object WebPartComponent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canHandleCommand: String => Boolean,
       getFocusedCommands: () => js.Array[String],
       getGlobalCommands: () => js.Array[String],
@@ -297,11 +286,9 @@ object Ribbon {
       __obj.asInstanceOf[WebPartComponent]
     }
     
-    @scala.inline
-    implicit class WebPartComponentMutableBuilder[Self <: WebPartComponent] (val x: Self) extends AnyVal {
+    extension [Self <: WebPartComponent](x: Self) {
       
-      @scala.inline
-      def setSelectWebPart(value: (HTMLElement, Boolean) => Unit): Self = StObject.set(x, "selectWebPart", js.Any.fromFunction2(value))
+      inline def setSelectWebPart(value: (HTMLElement, Boolean) => Unit): Self = StObject.set(x, "selectWebPart", js.Any.fromFunction2(value))
     }
   }
   
@@ -315,23 +302,18 @@ object Ribbon {
   }
   object WebPartComponentInitInfo {
     
-    @scala.inline
-    def apply(allowWebPartAdder: Boolean, editable: Boolean, isEditMode: Boolean): WebPartComponentInitInfo = {
+    inline def apply(allowWebPartAdder: Boolean, editable: Boolean, isEditMode: Boolean): WebPartComponentInitInfo = {
       val __obj = js.Dynamic.literal(allowWebPartAdder = allowWebPartAdder.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], isEditMode = isEditMode.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebPartComponentInitInfo]
     }
     
-    @scala.inline
-    implicit class WebPartComponentInitInfoMutableBuilder[Self <: WebPartComponentInitInfo] (val x: Self) extends AnyVal {
+    extension [Self <: WebPartComponentInitInfo](x: Self) {
       
-      @scala.inline
-      def setAllowWebPartAdder(value: Boolean): Self = StObject.set(x, "allowWebPartAdder", value.asInstanceOf[js.Any])
+      inline def setAllowWebPartAdder(value: Boolean): Self = StObject.set(x, "allowWebPartAdder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+      inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEditMode(value: Boolean): Self = StObject.set(x, "isEditMode", value.asInstanceOf[js.Any])
+      inline def setIsEditMode(value: Boolean): Self = StObject.set(x, "isEditMode", value.asInstanceOf[js.Any])
     }
   }
   

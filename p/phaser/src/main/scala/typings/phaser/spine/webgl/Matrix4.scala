@@ -40,8 +40,7 @@ trait Matrix4 extends StObject {
 }
 object Matrix4 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copy: () => Matrix4,
     determinant: () => Double,
     identity: () => Matrix4,
@@ -62,52 +61,36 @@ object Matrix4 {
     __obj.asInstanceOf[Matrix4]
   }
   
-  @scala.inline
-  implicit class Matrix4MutableBuilder[Self <: Matrix4] (val x: Self) extends AnyVal {
+  extension [Self <: Matrix4](x: Self) {
     
-    @scala.inline
-    def setCopy(value: () => Matrix4): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => Matrix4): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeterminant(value: () => Double): Self = StObject.set(x, "determinant", js.Any.fromFunction0(value))
+    inline def setDeterminant(value: () => Double): Self = StObject.set(x, "determinant", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIdentity(value: () => Matrix4): Self = StObject.set(x, "identity", js.Any.fromFunction0(value))
+    inline def setIdentity(value: () => Matrix4): Self = StObject.set(x, "identity", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInvert(value: () => Matrix4): Self = StObject.set(x, "invert", js.Any.fromFunction0(value))
+    inline def setInvert(value: () => Matrix4): Self = StObject.set(x, "invert", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLookAt(value: (Vector3, Vector3, Vector3) => Matrix4): Self = StObject.set(x, "lookAt", js.Any.fromFunction3(value))
+    inline def setLookAt(value: (Vector3, Vector3, Vector3) => Matrix4): Self = StObject.set(x, "lookAt", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMultiply(value: Matrix4 => Matrix4): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
+    inline def setMultiply(value: Matrix4 => Matrix4): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMultiplyLeft(value: Matrix4 => Matrix4): Self = StObject.set(x, "multiplyLeft", js.Any.fromFunction1(value))
+    inline def setMultiplyLeft(value: Matrix4 => Matrix4): Self = StObject.set(x, "multiplyLeft", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOrtho(value: (Double, Double, Double, Double, Double, Double) => Matrix4): Self = StObject.set(x, "ortho", js.Any.fromFunction6(value))
+    inline def setOrtho(value: (Double, Double, Double, Double, Double, Double) => Matrix4): Self = StObject.set(x, "ortho", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setOrtho2d(value: (Double, Double, Double, Double) => Matrix4): Self = StObject.set(x, "ortho2d", js.Any.fromFunction4(value))
+    inline def setOrtho2d(value: (Double, Double, Double, Double) => Matrix4): Self = StObject.set(x, "ortho2d", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setProjection(value: (Double, Double, Double, Double) => Matrix4): Self = StObject.set(x, "projection", js.Any.fromFunction4(value))
+    inline def setProjection(value: (Double, Double, Double, Double) => Matrix4): Self = StObject.set(x, "projection", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSet(value: ArrayLike[Double] => Matrix4): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: ArrayLike[Double] => Matrix4): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTemp(value: Float32Array): Self = StObject.set(x, "temp", value.asInstanceOf[js.Any])
+    inline def setTemp(value: Float32Array): Self = StObject.set(x, "temp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslate(value: (Double, Double, Double) => Matrix4): Self = StObject.set(x, "translate", js.Any.fromFunction3(value))
+    inline def setTranslate(value: (Double, Double, Double) => Matrix4): Self = StObject.set(x, "translate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTranspose(value: () => Matrix4): Self = StObject.set(x, "transpose", js.Any.fromFunction0(value))
+    inline def setTranspose(value: () => Matrix4): Self = StObject.set(x, "transpose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValues(value: Float32Array): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Float32Array): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

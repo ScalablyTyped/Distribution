@@ -21,52 +21,37 @@ trait IClientBlockListResponse extends StObject {
 }
 object IClientBlockListResponse {
   
-  @scala.inline
-  def apply(): IClientBlockListResponse = {
+  inline def apply(): IClientBlockListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientBlockListResponse]
   }
   
-  @scala.inline
-  implicit class IClientBlockListResponseMutableBuilder[Self <: IClientBlockListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IClientBlockListResponse](x: Self) {
     
-    @scala.inline
-    def setBlocks(value: js.Array[IBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+    inline def setBlocks(value: js.Array[IBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocksNull: Self = StObject.set(x, "blocks", null)
+    inline def setBlocksNull: Self = StObject.set(x, "blocks", null)
     
-    @scala.inline
-    def setBlocksUndefined: Self = StObject.set(x, "blocks", js.undefined)
+    inline def setBlocksUndefined: Self = StObject.set(x, "blocks", js.undefined)
     
-    @scala.inline
-    def setBlocksVarargs(value: IBlock*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: IBlock*): Self = StObject.set(x, "blocks", js.Array(value :_*))
     
-    @scala.inline
-    def setHeadId(value: String): Self = StObject.set(x, "headId", value.asInstanceOf[js.Any])
+    inline def setHeadId(value: String): Self = StObject.set(x, "headId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadIdNull: Self = StObject.set(x, "headId", null)
+    inline def setHeadIdNull: Self = StObject.set(x, "headId", null)
     
-    @scala.inline
-    def setHeadIdUndefined: Self = StObject.set(x, "headId", js.undefined)
+    inline def setHeadIdUndefined: Self = StObject.set(x, "headId", js.undefined)
     
-    @scala.inline
-    def setPaging(value: IClientPagingResponse): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
+    inline def setPaging(value: IClientPagingResponse): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagingNull: Self = StObject.set(x, "paging", null)
+    inline def setPagingNull: Self = StObject.set(x, "paging", null)
     
-    @scala.inline
-    def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
+    inline def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

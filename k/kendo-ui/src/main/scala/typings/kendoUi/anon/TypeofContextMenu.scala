@@ -15,19 +15,15 @@ trait TypeofContextMenu extends StObject {
 }
 object TypeofContextMenu {
   
-  @scala.inline
-  def apply(extend: js.Object => ContextMenu, fn: ContextMenu): TypeofContextMenu = {
+  inline def apply(extend: js.Object => ContextMenu, fn: ContextMenu): TypeofContextMenu = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofContextMenu]
   }
   
-  @scala.inline
-  implicit class TypeofContextMenuMutableBuilder[Self <: TypeofContextMenu] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofContextMenu](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => ContextMenu): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => ContextMenu): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: ContextMenu): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: ContextMenu): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

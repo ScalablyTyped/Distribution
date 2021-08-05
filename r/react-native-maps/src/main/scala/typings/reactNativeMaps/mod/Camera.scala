@@ -18,28 +18,21 @@ trait Camera extends StObject {
 }
 object Camera {
   
-  @scala.inline
-  def apply(altitude: Double, center: LatLng, heading: Double, pitch: Double, zoom: Double): Camera = {
+  inline def apply(altitude: Double, center: LatLng, heading: Double, pitch: Double, zoom: Double): Camera = {
     val __obj = js.Dynamic.literal(altitude = altitude.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], pitch = pitch.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[Camera]
   }
   
-  @scala.inline
-  implicit class CameraMutableBuilder[Self <: Camera] (val x: Self) extends AnyVal {
+  extension [Self <: Camera](x: Self) {
     
-    @scala.inline
-    def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenter(value: LatLng): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: LatLng): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+    inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

@@ -34,8 +34,7 @@ object emscriptenMod {
     /**
       * Create an EmscriptenFileSystem instance with the given options.
       */
-    @scala.inline
-    def Create(opts: EmscriptenFileSystemOptions, cb: BFSCallback[EmscriptenFileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Create(opts: EmscriptenFileSystemOptions, cb: BFSCallback[EmscriptenFileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/Emscripten", "default.Name")
     @js.native
@@ -45,8 +44,7 @@ object emscriptenMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @scala.inline
-    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+    inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @JSImport("browserfs/dist/node/backend/Emscripten", "EmscriptenFile")
@@ -56,13 +54,13 @@ object emscriptenMod {
        with File {
     def this(_fs: EmscriptenFileSystem, _FS: js.Any, _path: String, _stream: js.Any) = this()
     
-    var _FS: js.Any = js.native
+    /* private */ var _FS: js.Any = js.native
     
-    var _fs: js.Any = js.native
+    /* private */ var _fs: js.Any = js.native
     
-    var _path: js.Any = js.native
+    /* private */ var _path: js.Any = js.native
     
-    var _stream: js.Any = js.native
+    /* private */ var _stream: js.Any = js.native
     
     /* InferMemberOverrides */
     override def chmod(mode: Double, cb: BFSOneArgCallback): Unit = js.native
@@ -138,7 +136,7 @@ object emscriptenMod {
   @js.native
   trait EmscriptenFileSystem extends SynchronousFileSystem {
     
-    var _FS: js.Any = js.native
+    /* private */ var _FS: js.Any = js.native
     
     def getName(): String = js.native
     
@@ -155,17 +153,14 @@ object emscriptenMod {
   }
   object EmscriptenFileSystemOptions {
     
-    @scala.inline
-    def apply(FS: js.Any): EmscriptenFileSystemOptions = {
+    inline def apply(FS: js.Any): EmscriptenFileSystemOptions = {
       val __obj = js.Dynamic.literal(FS = FS.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmscriptenFileSystemOptions]
     }
     
-    @scala.inline
-    implicit class EmscriptenFileSystemOptionsMutableBuilder[Self <: EmscriptenFileSystemOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EmscriptenFileSystemOptions](x: Self) {
       
-      @scala.inline
-      def setFS(value: js.Any): Self = StObject.set(x, "FS", value.asInstanceOf[js.Any])
+      inline def setFS(value: js.Any): Self = StObject.set(x, "FS", value.asInstanceOf[js.Any])
     }
   }
 }

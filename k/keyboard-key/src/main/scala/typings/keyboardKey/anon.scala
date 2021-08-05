@@ -17,23 +17,18 @@ object anon {
   }
   object PickKeyboardEventkeykeyCo {
     
-    @scala.inline
-    def apply(key: String, keyCode: Double, which: Double): PickKeyboardEventkeykeyCo = {
+    inline def apply(key: String, keyCode: Double, which: Double): PickKeyboardEventkeykeyCo = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickKeyboardEventkeykeyCo]
     }
     
-    @scala.inline
-    implicit class PickKeyboardEventkeykeyCoMutableBuilder[Self <: PickKeyboardEventkeykeyCo] (val x: Self) extends AnyVal {
+    extension [Self <: PickKeyboardEventkeykeyCo](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+      inline def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,26 +45,20 @@ object anon {
   }
   object PickKeyboardEventkeykeyCoKey {
     
-    @scala.inline
-    def apply(key: String, keyCode: Double, shiftKey: Boolean, which: Double): PickKeyboardEventkeykeyCoKey = {
+    inline def apply(key: String, keyCode: Double, shiftKey: Boolean, which: Double): PickKeyboardEventkeykeyCoKey = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickKeyboardEventkeykeyCoKey]
     }
     
-    @scala.inline
-    implicit class PickKeyboardEventkeykeyCoKeyMutableBuilder[Self <: PickKeyboardEventkeykeyCoKey] (val x: Self) extends AnyVal {
+    extension [Self <: PickKeyboardEventkeykeyCoKey](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+      inline def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
     }
   }
 }

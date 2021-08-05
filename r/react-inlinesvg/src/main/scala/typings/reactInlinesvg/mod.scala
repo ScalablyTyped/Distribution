@@ -25,8 +25,7 @@ object mod {
     @JSImport("react-inlinesvg", "default.defaultProps")
     @js.native
     def defaultProps: CacheRequests = js.native
-    @scala.inline
-    def defaultProps_=(x: CacheRequests): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CacheRequests): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -42,26 +41,26 @@ object mod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MInlineSVG(): Unit = js.native
     
-    var getElement: js.Any = js.native
+    /* private */ var getElement: js.Any = js.native
     
-    var getNode: js.Any = js.native
+    /* private */ var getNode: js.Any = js.native
     
-    var handleCacheQueue: js.Any = js.native
+    /* private */ var handleCacheQueue: js.Any = js.native
     
-    var handleError: js.Any = js.native
+    /* private */ var handleError: js.Any = js.native
     
-    var handleLoad: js.Any = js.native
+    /* private */ var handleLoad: js.Any = js.native
     
-    val hash: js.Any = js.native
+    /* private */ val hash: js.Any = js.native
     
-    var isActive: js.Any = js.native
+    /* private */ var isActive: js.Any = js.native
     
-    var load: js.Any = js.native
+    /* private */ var load: js.Any = js.native
     
-    var processSVG: js.Any = js.native
+    /* private */ var processSVG: js.Any = js.native
     
-    var request: js.Any = js.native
+    /* private */ var request: js.Any = js.native
     
-    var updateSVGAttributes: js.Any = js.native
+    /* private */ var updateSVGAttributes: js.Any = js.native
   }
 }

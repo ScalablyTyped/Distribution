@@ -59,64 +59,45 @@ trait SchemaAccounts extends StObject {
 }
 object SchemaAccounts {
   
-  @scala.inline
-  def apply(): SchemaAccounts = {
+  inline def apply(): SchemaAccounts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccounts]
   }
   
-  @scala.inline
-  implicit class SchemaAccountsMutableBuilder[Self <: SchemaAccounts] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccounts](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[SchemaAccount]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SchemaAccount]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
+    inline def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
+    inline def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: SchemaAccount*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaAccount*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
+    inline def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextLinkUndefined: Self = StObject.set(x, "nextLink", js.undefined)
+    inline def setNextLinkUndefined: Self = StObject.set(x, "nextLink", js.undefined)
     
-    @scala.inline
-    def setPreviousLink(value: String): Self = StObject.set(x, "previousLink", value.asInstanceOf[js.Any])
+    inline def setPreviousLink(value: String): Self = StObject.set(x, "previousLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousLinkUndefined: Self = StObject.set(x, "previousLink", js.undefined)
+    inline def setPreviousLinkUndefined: Self = StObject.set(x, "previousLink", js.undefined)
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
-    @scala.inline
-    def setTotalResults(value: Double): Self = StObject.set(x, "totalResults", value.asInstanceOf[js.Any])
+    inline def setTotalResults(value: Double): Self = StObject.set(x, "totalResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalResultsUndefined: Self = StObject.set(x, "totalResults", js.undefined)
+    inline def setTotalResultsUndefined: Self = StObject.set(x, "totalResults", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

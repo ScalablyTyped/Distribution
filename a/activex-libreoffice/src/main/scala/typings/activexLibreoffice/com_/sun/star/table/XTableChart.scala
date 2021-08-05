@@ -45,8 +45,7 @@ trait XTableChart
 }
 object XTableChart {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HasColumnHeaders: Boolean,
     HasRowHeaders: Boolean,
     Ranges: SafeArray[CellRangeAddress],
@@ -64,34 +63,24 @@ object XTableChart {
     __obj.asInstanceOf[XTableChart]
   }
   
-  @scala.inline
-  implicit class XTableChartMutableBuilder[Self <: XTableChart] (val x: Self) extends AnyVal {
+  extension [Self <: XTableChart](x: Self) {
     
-    @scala.inline
-    def setGetHasColumnHeaders(value: () => Boolean): Self = StObject.set(x, "getHasColumnHeaders", js.Any.fromFunction0(value))
+    inline def setGetHasColumnHeaders(value: () => Boolean): Self = StObject.set(x, "getHasColumnHeaders", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHasRowHeaders(value: () => Boolean): Self = StObject.set(x, "getHasRowHeaders", js.Any.fromFunction0(value))
+    inline def setGetHasRowHeaders(value: () => Boolean): Self = StObject.set(x, "getHasRowHeaders", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRanges(value: () => SafeArray[CellRangeAddress]): Self = StObject.set(x, "getRanges", js.Any.fromFunction0(value))
+    inline def setGetRanges(value: () => SafeArray[CellRangeAddress]): Self = StObject.set(x, "getRanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasColumnHeaders(value: Boolean): Self = StObject.set(x, "HasColumnHeaders", value.asInstanceOf[js.Any])
+    inline def setHasColumnHeaders(value: Boolean): Self = StObject.set(x, "HasColumnHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasRowHeaders(value: Boolean): Self = StObject.set(x, "HasRowHeaders", value.asInstanceOf[js.Any])
+    inline def setHasRowHeaders(value: Boolean): Self = StObject.set(x, "HasRowHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRanges(value: SafeArray[CellRangeAddress]): Self = StObject.set(x, "Ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(value: SafeArray[CellRangeAddress]): Self = StObject.set(x, "Ranges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetHasColumnHeaders(value: Boolean => Unit): Self = StObject.set(x, "setHasColumnHeaders", js.Any.fromFunction1(value))
+    inline def setSetHasColumnHeaders(value: Boolean => Unit): Self = StObject.set(x, "setHasColumnHeaders", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHasRowHeaders(value: Boolean => Unit): Self = StObject.set(x, "setHasRowHeaders", js.Any.fromFunction1(value))
+    inline def setSetHasRowHeaders(value: Boolean => Unit): Self = StObject.set(x, "setHasRowHeaders", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRanges(value: SeqEquiv[CellRangeAddress] => Unit): Self = StObject.set(x, "setRanges", js.Any.fromFunction1(value))
+    inline def setSetRanges(value: SeqEquiv[CellRangeAddress] => Unit): Self = StObject.set(x, "setRanges", js.Any.fromFunction1(value))
   }
 }

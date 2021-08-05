@@ -13,19 +13,15 @@ trait TextInsertion extends StObject {
 }
 object TextInsertion {
   
-  @scala.inline
-  def apply(caretOffset: Double, newText: java.lang.String): TextInsertion = {
+  inline def apply(caretOffset: Double, newText: java.lang.String): TextInsertion = {
     val __obj = js.Dynamic.literal(caretOffset = caretOffset.asInstanceOf[js.Any], newText = newText.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextInsertion]
   }
   
-  @scala.inline
-  implicit class TextInsertionMutableBuilder[Self <: TextInsertion] (val x: Self) extends AnyVal {
+  extension [Self <: TextInsertion](x: Self) {
     
-    @scala.inline
-    def setCaretOffset(value: Double): Self = StObject.set(x, "caretOffset", value.asInstanceOf[js.Any])
+    inline def setCaretOffset(value: Double): Self = StObject.set(x, "caretOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewText(value: java.lang.String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
+    inline def setNewText(value: java.lang.String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
   }
 }

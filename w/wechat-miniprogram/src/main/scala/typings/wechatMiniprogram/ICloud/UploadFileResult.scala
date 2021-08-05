@@ -17,19 +17,15 @@ trait UploadFileResult
 }
 object UploadFileResult {
   
-  @scala.inline
-  def apply(errMsg: String, fileID: String, statusCode: Double): UploadFileResult = {
+  inline def apply(errMsg: String, fileID: String, statusCode: Double): UploadFileResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], fileID = fileID.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadFileResult]
   }
   
-  @scala.inline
-  implicit class UploadFileResultMutableBuilder[Self <: UploadFileResult] (val x: Self) extends AnyVal {
+  extension [Self <: UploadFileResult](x: Self) {
     
-    @scala.inline
-    def setFileID(value: String): Self = StObject.set(x, "fileID", value.asInstanceOf[js.Any])
+    inline def setFileID(value: String): Self = StObject.set(x, "fileID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

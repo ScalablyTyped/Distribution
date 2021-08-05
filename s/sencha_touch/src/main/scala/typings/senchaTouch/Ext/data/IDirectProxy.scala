@@ -71,81 +71,57 @@ trait IDirectProxy
 }
 object IDirectProxy {
   
-  @scala.inline
-  def apply(): IDirectProxy = {
+  inline def apply(): IDirectProxy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDirectProxy]
   }
   
-  @scala.inline
-  implicit class IDirectProxyMutableBuilder[Self <: IDirectProxy] (val x: Self) extends AnyVal {
+  extension [Self <: IDirectProxy](x: Self) {
     
-    @scala.inline
-    def setBuildUrl(value: () => String): Self = StObject.set(x, "buildUrl", js.Any.fromFunction0(value))
+    inline def setBuildUrl(value: () => String): Self = StObject.set(x, "buildUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBuildUrlUndefined: Self = StObject.set(x, "buildUrl", js.undefined)
+    inline def setBuildUrlUndefined: Self = StObject.set(x, "buildUrl", js.undefined)
     
-    @scala.inline
-    def setDirectFn(value: js.Any): Self = StObject.set(x, "directFn", value.asInstanceOf[js.Any])
+    inline def setDirectFn(value: js.Any): Self = StObject.set(x, "directFn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectFnUndefined: Self = StObject.set(x, "directFn", js.undefined)
+    inline def setDirectFnUndefined: Self = StObject.set(x, "directFn", js.undefined)
     
-    @scala.inline
-    def setDoRequest(
+    inline def setDoRequest(
       value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "doRequest", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)
+    inline def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)
     
-    @scala.inline
-    def setGetDirectFn(value: () => js.Any): Self = StObject.set(x, "getDirectFn", js.Any.fromFunction0(value))
+    inline def setGetDirectFn(value: () => js.Any): Self = StObject.set(x, "getDirectFn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDirectFnUndefined: Self = StObject.set(x, "getDirectFn", js.undefined)
+    inline def setGetDirectFnUndefined: Self = StObject.set(x, "getDirectFn", js.undefined)
     
-    @scala.inline
-    def setGetParamOrder(value: () => js.Any): Self = StObject.set(x, "getParamOrder", js.Any.fromFunction0(value))
+    inline def setGetParamOrder(value: () => js.Any): Self = StObject.set(x, "getParamOrder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParamOrderUndefined: Self = StObject.set(x, "getParamOrder", js.undefined)
+    inline def setGetParamOrderUndefined: Self = StObject.set(x, "getParamOrder", js.undefined)
     
-    @scala.inline
-    def setGetParamsAsHash(value: () => Boolean): Self = StObject.set(x, "getParamsAsHash", js.Any.fromFunction0(value))
+    inline def setGetParamsAsHash(value: () => Boolean): Self = StObject.set(x, "getParamsAsHash", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParamsAsHashUndefined: Self = StObject.set(x, "getParamsAsHash", js.undefined)
+    inline def setGetParamsAsHashUndefined: Self = StObject.set(x, "getParamsAsHash", js.undefined)
     
-    @scala.inline
-    def setParamOrder(value: js.Any): Self = StObject.set(x, "paramOrder", value.asInstanceOf[js.Any])
+    inline def setParamOrder(value: js.Any): Self = StObject.set(x, "paramOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamOrderUndefined: Self = StObject.set(x, "paramOrder", js.undefined)
+    inline def setParamOrderUndefined: Self = StObject.set(x, "paramOrder", js.undefined)
     
-    @scala.inline
-    def setParamsAsHash(value: Boolean): Self = StObject.set(x, "paramsAsHash", value.asInstanceOf[js.Any])
+    inline def setParamsAsHash(value: Boolean): Self = StObject.set(x, "paramsAsHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsAsHashUndefined: Self = StObject.set(x, "paramsAsHash", js.undefined)
+    inline def setParamsAsHashUndefined: Self = StObject.set(x, "paramsAsHash", js.undefined)
     
-    @scala.inline
-    def setSetDirectFn(value: /* directFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDirectFn", js.Any.fromFunction1(value))
+    inline def setSetDirectFn(value: /* directFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDirectFn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDirectFnUndefined: Self = StObject.set(x, "setDirectFn", js.undefined)
+    inline def setSetDirectFnUndefined: Self = StObject.set(x, "setDirectFn", js.undefined)
     
-    @scala.inline
-    def setSetParamOrder(value: /* paramOrder */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setParamOrder", js.Any.fromFunction1(value))
+    inline def setSetParamOrder(value: /* paramOrder */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setParamOrder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetParamOrderUndefined: Self = StObject.set(x, "setParamOrder", js.undefined)
+    inline def setSetParamOrderUndefined: Self = StObject.set(x, "setParamOrder", js.undefined)
     
-    @scala.inline
-    def setSetParamsAsHash(value: /* paramsAsHash */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setParamsAsHash", js.Any.fromFunction1(value))
+    inline def setSetParamsAsHash(value: /* paramsAsHash */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setParamsAsHash", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetParamsAsHashUndefined: Self = StObject.set(x, "setParamsAsHash", js.undefined)
+    inline def setSetParamsAsHashUndefined: Self = StObject.set(x, "setParamsAsHash", js.undefined)
   }
 }

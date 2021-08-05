@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.TextStyleLevel")
 @js.native
-class TextStyleLevel protected ()
+/* private */ class TextStyleLevel ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.TextStyleLevel {
   
@@ -22,7 +22,7 @@ class TextStyleLevel protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.TextStyleLevel_typekey")
   var PowerPointDotTextStyleLevel_typekey: typings.activexPowerpoint.PowerPoint.TextStyleLevel = js.native
 }

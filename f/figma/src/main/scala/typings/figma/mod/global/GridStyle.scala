@@ -16,8 +16,7 @@ trait GridStyle
 }
 object GridStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     id: String,
     key: String,
@@ -31,16 +30,12 @@ object GridStyle {
     __obj.asInstanceOf[GridStyle]
   }
   
-  @scala.inline
-  implicit class GridStyleMutableBuilder[Self <: GridStyle] (val x: Self) extends AnyVal {
+  extension [Self <: GridStyle](x: Self) {
     
-    @scala.inline
-    def setLayoutGrids(value: js.Array[LayoutGrid]): Self = StObject.set(x, "layoutGrids", value.asInstanceOf[js.Any])
+    inline def setLayoutGrids(value: js.Array[LayoutGrid]): Self = StObject.set(x, "layoutGrids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutGridsVarargs(value: LayoutGrid*): Self = StObject.set(x, "layoutGrids", js.Array(value :_*))
+    inline def setLayoutGridsVarargs(value: LayoutGrid*): Self = StObject.set(x, "layoutGrids", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: GRID): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GRID): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

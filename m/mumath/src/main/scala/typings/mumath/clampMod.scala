@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object clampMod {
   
-  @scala.inline
-  def apply(value: Double, left: Double, right: Double): Double = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(value: Double, left: Double, right: Double): Double = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("mumath/clamp", JSImport.Namespace)
   @js.native

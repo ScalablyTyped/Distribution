@@ -33,61 +33,43 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setBearings(value: js.Array[Bearing]): Self = StObject.set(x, "bearings", value.asInstanceOf[js.Any])
+    inline def setBearings(value: js.Array[Bearing]): Self = StObject.set(x, "bearings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBearingsNull: Self = StObject.set(x, "bearings", null)
+    inline def setBearingsNull: Self = StObject.set(x, "bearings", null)
     
-    @scala.inline
-    def setBearingsUndefined: Self = StObject.set(x, "bearings", js.undefined)
+    inline def setBearingsUndefined: Self = StObject.set(x, "bearings", js.undefined)
     
-    @scala.inline
-    def setBearingsVarargs(value: Bearing*): Self = StObject.set(x, "bearings", js.Array(value :_*))
+    inline def setBearingsVarargs(value: Bearing*): Self = StObject.set(x, "bearings", js.Array(value :_*))
     
-    @scala.inline
-    def setCoordinates(value: js.Array[Coordinate]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: js.Array[Coordinate]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
+    inline def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
-    @scala.inline
-    def setCoordinatesVarargs(value: Coordinate*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: Coordinate*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
     
-    @scala.inline
-    def setGenerate_hints(value: Boolean): Self = StObject.set(x, "generate_hints", value.asInstanceOf[js.Any])
+    inline def setGenerate_hints(value: Boolean): Self = StObject.set(x, "generate_hints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerate_hintsUndefined: Self = StObject.set(x, "generate_hints", js.undefined)
+    inline def setGenerate_hintsUndefined: Self = StObject.set(x, "generate_hints", js.undefined)
     
-    @scala.inline
-    def setHints(value: js.Array[Hint]): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
+    inline def setHints(value: js.Array[Hint]): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
+    inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
     
-    @scala.inline
-    def setHintsVarargs(value: Hint*): Self = StObject.set(x, "hints", js.Array(value :_*))
+    inline def setHintsVarargs(value: Hint*): Self = StObject.set(x, "hints", js.Array(value :_*))
     
-    @scala.inline
-    def setRadiuses(value: js.Array[Radius]): Self = StObject.set(x, "radiuses", value.asInstanceOf[js.Any])
+    inline def setRadiuses(value: js.Array[Radius]): Self = StObject.set(x, "radiuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusesNull: Self = StObject.set(x, "radiuses", null)
+    inline def setRadiusesNull: Self = StObject.set(x, "radiuses", null)
     
-    @scala.inline
-    def setRadiusesUndefined: Self = StObject.set(x, "radiuses", js.undefined)
+    inline def setRadiusesUndefined: Self = StObject.set(x, "radiuses", js.undefined)
     
-    @scala.inline
-    def setRadiusesVarargs(value: Radius*): Self = StObject.set(x, "radiuses", js.Array(value :_*))
+    inline def setRadiusesVarargs(value: Radius*): Self = StObject.set(x, "radiuses", js.Array(value :_*))
   }
 }

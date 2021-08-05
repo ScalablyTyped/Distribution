@@ -20,8 +20,7 @@ trait BandwidthStatistics extends StObject {
 }
 object BandwidthStatistics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     inboundBandwidthPeaked: Boolean,
     inboundBitsPerSecond: Double,
     inboundBitsPerSecondInstability: Double,
@@ -33,25 +32,18 @@ object BandwidthStatistics {
     __obj.asInstanceOf[BandwidthStatistics]
   }
   
-  @scala.inline
-  implicit class BandwidthStatisticsMutableBuilder[Self <: BandwidthStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: BandwidthStatistics](x: Self) {
     
-    @scala.inline
-    def setInboundBandwidthPeaked(value: Boolean): Self = StObject.set(x, "inboundBandwidthPeaked", value.asInstanceOf[js.Any])
+    inline def setInboundBandwidthPeaked(value: Boolean): Self = StObject.set(x, "inboundBandwidthPeaked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundBitsPerSecond(value: Double): Self = StObject.set(x, "inboundBitsPerSecond", value.asInstanceOf[js.Any])
+    inline def setInboundBitsPerSecond(value: Double): Self = StObject.set(x, "inboundBitsPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundBitsPerSecondInstability(value: Double): Self = StObject.set(x, "inboundBitsPerSecondInstability", value.asInstanceOf[js.Any])
+    inline def setInboundBitsPerSecondInstability(value: Double): Self = StObject.set(x, "inboundBitsPerSecondInstability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundBandwidthPeaked(value: Boolean): Self = StObject.set(x, "outboundBandwidthPeaked", value.asInstanceOf[js.Any])
+    inline def setOutboundBandwidthPeaked(value: Boolean): Self = StObject.set(x, "outboundBandwidthPeaked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundBitsPerSecond(value: Double): Self = StObject.set(x, "outboundBitsPerSecond", value.asInstanceOf[js.Any])
+    inline def setOutboundBitsPerSecond(value: Double): Self = StObject.set(x, "outboundBitsPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundBitsPerSecondInstability(value: Double): Self = StObject.set(x, "outboundBitsPerSecondInstability", value.asInstanceOf[js.Any])
+    inline def setOutboundBitsPerSecondInstability(value: Double): Self = StObject.set(x, "outboundBitsPerSecondInstability", value.asInstanceOf[js.Any])
   }
 }

@@ -22,31 +22,25 @@ trait GridRowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObje
 }
 object GridRowProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): GridRowProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): GridRowProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridRowProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class GridRowPropsMutableBuilder[Self <: GridRowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & GridRowProps[ThemeType]) extends AnyVal {
+  extension [Self <: GridRowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & GridRowProps[ThemeType]) {
     
-    @scala.inline
-    def setGridRow(
+    inline def setGridRow(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridRowNull: Self = StObject.set(x, "gridRow", null)
+    inline def setGridRowNull: Self = StObject.set(x, "gridRow", null)
     
-    @scala.inline
-    def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
+    inline def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
     
-    @scala.inline
-    def setGridRowVarargs(
+    inline def setGridRowVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ js.Any) | Null)*
     ): Self = StObject.set(x, "gridRow", js.Array(value :_*))
   }

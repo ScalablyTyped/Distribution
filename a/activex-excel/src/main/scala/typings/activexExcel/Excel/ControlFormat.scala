@@ -19,7 +19,7 @@ trait ControlFormat extends StObject {
   
   var Enabled: Boolean = js.native
   
-  @JSName("Excel.ControlFormat_typekey")
+  /* private */ @JSName("Excel.ControlFormat_typekey")
   var ExcelDotControlFormat_typekey: ControlFormat = js.native
   
   var LargeChange: Double = js.native

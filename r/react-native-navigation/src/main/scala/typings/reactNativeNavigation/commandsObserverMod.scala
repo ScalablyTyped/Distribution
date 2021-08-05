@@ -14,13 +14,13 @@ object commandsObserverMod {
   class CommandsObserver protected () extends StObject {
     def this(uniqueIdProvider: UniqueIdProvider) = this()
     
-    var listeners: js.Any = js.native
+    /* private */ var listeners: js.Any = js.native
     
     def notify(commandName: String, params: Record[String, js.Any]): Unit = js.native
     
     def register(listener: CommandsListener): EventSubscription = js.native
     
-    var uniqueIdProvider: js.Any = js.native
+    /* private */ var uniqueIdProvider: js.Any = js.native
   }
   
   type CommandsListener = js.Function2[/* name */ String, /* params */ Record[String, js.Any], Unit]

@@ -21,8 +21,7 @@ trait XIdlClassProvider
 }
 object XIdlClassProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IdlClasses: SafeArray[XIdlClass[js.Any]],
     acquire: () => Unit,
     getIdlClasses: () => SafeArray[XIdlClass[js.Any]],
@@ -33,13 +32,10 @@ object XIdlClassProvider {
     __obj.asInstanceOf[XIdlClassProvider]
   }
   
-  @scala.inline
-  implicit class XIdlClassProviderMutableBuilder[Self <: XIdlClassProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XIdlClassProvider](x: Self) {
     
-    @scala.inline
-    def setGetIdlClasses(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getIdlClasses", js.Any.fromFunction0(value))
+    inline def setGetIdlClasses(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getIdlClasses", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIdlClasses(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "IdlClasses", value.asInstanceOf[js.Any])
+    inline def setIdlClasses(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "IdlClasses", value.asInstanceOf[js.Any])
   }
 }

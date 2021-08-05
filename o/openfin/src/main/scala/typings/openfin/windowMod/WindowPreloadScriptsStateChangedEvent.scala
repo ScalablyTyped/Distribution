@@ -13,8 +13,7 @@ trait WindowPreloadScriptsStateChangedEvent[Topic, Type]
 }
 object WindowPreloadScriptsStateChangedEvent {
   
-  @scala.inline
-  def apply[Topic, Type](
+  inline def apply[Topic, Type](
     name: String,
     preloadScripts: js.Array[PreloadScriptInfoRunning & js.Any],
     topic: Topic,
@@ -26,13 +25,10 @@ object WindowPreloadScriptsStateChangedEvent {
     __obj.asInstanceOf[WindowPreloadScriptsStateChangedEvent[Topic, Type]]
   }
   
-  @scala.inline
-  implicit class WindowPreloadScriptsStateChangedEventMutableBuilder[Self <: WindowPreloadScriptsStateChangedEvent[?, ?], Topic, Type] (val x: Self & (WindowPreloadScriptsStateChangedEvent[Topic, Type])) extends AnyVal {
+  extension [Self <: WindowPreloadScriptsStateChangedEvent[?, ?], Topic, Type](x: Self & (WindowPreloadScriptsStateChangedEvent[Topic, Type])) {
     
-    @scala.inline
-    def setPreloadScripts(value: js.Array[PreloadScriptInfoRunning & js.Any]): Self = StObject.set(x, "preloadScripts", value.asInstanceOf[js.Any])
+    inline def setPreloadScripts(value: js.Array[PreloadScriptInfoRunning & js.Any]): Self = StObject.set(x, "preloadScripts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreloadScriptsVarargs(value: (PreloadScriptInfoRunning & js.Any)*): Self = StObject.set(x, "preloadScripts", js.Array(value :_*))
+    inline def setPreloadScriptsVarargs(value: (PreloadScriptInfoRunning & js.Any)*): Self = StObject.set(x, "preloadScripts", js.Array(value :_*))
   }
 }

@@ -53,76 +53,53 @@ trait TemplateVersion extends StObject {
 }
 object TemplateVersion {
   
-  @scala.inline
-  def apply(): TemplateVersion = {
+  inline def apply(): TemplateVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateVersion]
   }
   
-  @scala.inline
-  implicit class TemplateVersionMutableBuilder[Self <: TemplateVersion] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateVersion](x: Self) {
     
-    @scala.inline
-    def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    @scala.inline
-    def setDataSetConfigurations(value: DataSetConfigurationList): Self = StObject.set(x, "DataSetConfigurations", value.asInstanceOf[js.Any])
+    inline def setDataSetConfigurations(value: DataSetConfigurationList): Self = StObject.set(x, "DataSetConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetConfigurationsUndefined: Self = StObject.set(x, "DataSetConfigurations", js.undefined)
+    inline def setDataSetConfigurationsUndefined: Self = StObject.set(x, "DataSetConfigurations", js.undefined)
     
-    @scala.inline
-    def setDataSetConfigurationsVarargs(value: DataSetConfiguration*): Self = StObject.set(x, "DataSetConfigurations", js.Array(value :_*))
+    inline def setDataSetConfigurationsVarargs(value: DataSetConfiguration*): Self = StObject.set(x, "DataSetConfigurations", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: VersionDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: VersionDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setErrors(value: TemplateErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: TemplateErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: TemplateError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: TemplateError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
     
-    @scala.inline
-    def setSheets(value: SheetList): Self = StObject.set(x, "Sheets", value.asInstanceOf[js.Any])
+    inline def setSheets(value: SheetList): Self = StObject.set(x, "Sheets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetsUndefined: Self = StObject.set(x, "Sheets", js.undefined)
+    inline def setSheetsUndefined: Self = StObject.set(x, "Sheets", js.undefined)
     
-    @scala.inline
-    def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "Sheets", js.Array(value :_*))
+    inline def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "Sheets", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceEntityArn(value: Arn): Self = StObject.set(x, "SourceEntityArn", value.asInstanceOf[js.Any])
+    inline def setSourceEntityArn(value: Arn): Self = StObject.set(x, "SourceEntityArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceEntityArnUndefined: Self = StObject.set(x, "SourceEntityArn", js.undefined)
+    inline def setSourceEntityArnUndefined: Self = StObject.set(x, "SourceEntityArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ResourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ResourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setThemeArn(value: Arn): Self = StObject.set(x, "ThemeArn", value.asInstanceOf[js.Any])
+    inline def setThemeArn(value: Arn): Self = StObject.set(x, "ThemeArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeArnUndefined: Self = StObject.set(x, "ThemeArn", js.undefined)
+    inline def setThemeArnUndefined: Self = StObject.set(x, "ThemeArn", js.undefined)
     
-    @scala.inline
-    def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
+    inline def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNumberUndefined: Self = StObject.set(x, "VersionNumber", js.undefined)
+    inline def setVersionNumberUndefined: Self = StObject.set(x, "VersionNumber", js.undefined)
   }
 }

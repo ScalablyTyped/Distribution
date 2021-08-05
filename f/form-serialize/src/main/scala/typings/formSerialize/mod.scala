@@ -10,20 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(form: HTMLFormElement): String = ^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(form: HTMLFormElement, options: `false`): String = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(form: HTMLFormElement, options: `true`): ResultHash = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResultHash]
-  @scala.inline
-  def apply(form: HTMLFormElement, options: OptionsHash): ResultHash = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResultHash]
-  @scala.inline
-  def apply(form: HTMLFormElement, options: OptionsString): String = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply[Result](form: HTMLFormElement, options: Boolean): Result = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
-  @scala.inline
-  def apply[Result](form: HTMLFormElement, options: Options[Result]): Result = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def apply(form: HTMLFormElement): String = ^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(form: HTMLFormElement, options: `false`): String = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(form: HTMLFormElement, options: `true`): ResultHash = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResultHash]
+  inline def apply(form: HTMLFormElement, options: OptionsHash): ResultHash = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResultHash]
+  inline def apply(form: HTMLFormElement, options: OptionsString): String = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[Result](form: HTMLFormElement, options: Boolean): Result = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def apply[Result](form: HTMLFormElement, options: Options[Result]): Result = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
   
   @JSImport("form-serialize", JSImport.Namespace)
   @js.native
@@ -48,38 +41,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[Result](): Options[Result] = {
+    inline def apply[Result](): Options[Result] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[Result]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], Result] (val x: Self & Options[Result]) extends AnyVal {
+    extension [Self <: Options[?], Result](x: Self & Options[Result]) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+      inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
       
-      @scala.inline
-      def setHash(value: Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setSerializer(value: (/* result */ Result, /* key */ String, /* value */ String) => Result): Self = StObject.set(x, "serializer", js.Any.fromFunction3(value))
+      inline def setSerializer(value: (/* result */ Result, /* key */ String, /* value */ String) => Result): Self = StObject.set(x, "serializer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSerializerUndefined: Self = StObject.set(x, "serializer", js.undefined)
+      inline def setSerializerUndefined: Self = StObject.set(x, "serializer", js.undefined)
     }
   }
   
@@ -92,17 +75,14 @@ object mod {
   }
   object OptionsHash {
     
-    @scala.inline
-    def apply(): OptionsHash = {
+    inline def apply(): OptionsHash = {
       val __obj = js.Dynamic.literal(hash = true)
       __obj.asInstanceOf[OptionsHash]
     }
     
-    @scala.inline
-    implicit class OptionsHashMutableBuilder[Self <: OptionsHash] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsHash](x: Self) {
       
-      @scala.inline
-      def setHash(value: `true`): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: `true`): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,17 +95,14 @@ object mod {
   }
   object OptionsString {
     
-    @scala.inline
-    def apply(): OptionsString = {
+    inline def apply(): OptionsString = {
       val __obj = js.Dynamic.literal(hash = false)
       __obj.asInstanceOf[OptionsString]
     }
     
-    @scala.inline
-    implicit class OptionsStringMutableBuilder[Self <: OptionsString] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsString](x: Self) {
       
-      @scala.inline
-      def setHash(value: `false`): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: `false`): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,8 +111,7 @@ object mod {
        with /* key */ StringDictionary[String | js.Array[String] | ResultHash]
   object ResultHash {
     
-    @scala.inline
-    def apply(): ResultHash = {
+    inline def apply(): ResultHash = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResultHash]
     }

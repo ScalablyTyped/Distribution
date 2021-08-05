@@ -17,28 +17,21 @@ trait ContextSizeResponse extends StObject {
 }
 object ContextSizeResponse {
   
-  @scala.inline
-  def apply(answer: Boolean): ContextSizeResponse = {
+  inline def apply(answer: Boolean): ContextSizeResponse = {
     val __obj = js.Dynamic.literal(answer = answer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextSizeResponse]
   }
   
-  @scala.inline
-  implicit class ContextSizeResponseMutableBuilder[Self <: ContextSizeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ContextSizeResponse](x: Self) {
     
-    @scala.inline
-    def setAnswer(value: Boolean): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
+    inline def setAnswer(value: Boolean): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
-    @scala.inline
-    def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+    inline def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
+    inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
   }
 }

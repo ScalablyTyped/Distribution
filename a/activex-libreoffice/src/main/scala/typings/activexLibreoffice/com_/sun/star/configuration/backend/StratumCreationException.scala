@@ -21,8 +21,7 @@ trait StratumCreationException
 }
 object StratumCreationException {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BackendException: js.Any,
     Context: XInterface,
     Message: String,
@@ -33,13 +32,10 @@ object StratumCreationException {
     __obj.asInstanceOf[StratumCreationException]
   }
   
-  @scala.inline
-  implicit class StratumCreationExceptionMutableBuilder[Self <: StratumCreationException] (val x: Self) extends AnyVal {
+  extension [Self <: StratumCreationException](x: Self) {
     
-    @scala.inline
-    def setStratumData(value: String): Self = StObject.set(x, "StratumData", value.asInstanceOf[js.Any])
+    inline def setStratumData(value: String): Self = StObject.set(x, "StratumData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStratumService(value: String): Self = StObject.set(x, "StratumService", value.asInstanceOf[js.Any])
+    inline def setStratumService(value: String): Self = StObject.set(x, "StratumService", value.asInstanceOf[js.Any])
   }
 }

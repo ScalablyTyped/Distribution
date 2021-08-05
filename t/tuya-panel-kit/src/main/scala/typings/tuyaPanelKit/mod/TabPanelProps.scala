@@ -13,19 +13,15 @@ trait TabPanelProps
 }
 object TabPanelProps {
   
-  @scala.inline
-  def apply(): TabPanelProps = {
+  inline def apply(): TabPanelProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabPanelProps]
   }
   
-  @scala.inline
-  implicit class TabPanelPropsMutableBuilder[Self <: TabPanelProps] (val x: Self) extends AnyVal {
+  extension [Self <: TabPanelProps](x: Self) {
     
-    @scala.inline
-    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
   }
 }

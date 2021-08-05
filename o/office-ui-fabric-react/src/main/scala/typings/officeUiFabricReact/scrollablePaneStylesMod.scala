@@ -12,6 +12,5 @@ object scrollablePaneStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IScrollablePaneStyleProps): IScrollablePaneStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IScrollablePaneStyles]
+  inline def getStyles(props: IScrollablePaneStyleProps): IScrollablePaneStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IScrollablePaneStyles]
 }

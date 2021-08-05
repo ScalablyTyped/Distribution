@@ -18,8 +18,7 @@ trait UnprocessedIdentityId extends StObject {
 }
 object UnprocessedIdentityId {
   
-  @scala.inline
-  def apply(): UnprocessedIdentityId = {
+  inline def apply(): UnprocessedIdentityId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnprocessedIdentityId]
   }
@@ -28,22 +27,16 @@ object UnprocessedIdentityId {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: UnprocessedIdentityId): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: UnprocessedIdentityId): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class UnprocessedIdentityIdMutableBuilder[Self <: UnprocessedIdentityId] (val x: Self) extends AnyVal {
+  extension [Self <: UnprocessedIdentityId](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: ErrorCode | String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: ErrorCode | String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+    inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
   }
 }

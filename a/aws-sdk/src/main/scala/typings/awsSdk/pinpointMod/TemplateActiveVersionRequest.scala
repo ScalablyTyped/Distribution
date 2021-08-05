@@ -13,19 +13,15 @@ trait TemplateActiveVersionRequest extends StObject {
 }
 object TemplateActiveVersionRequest {
   
-  @scala.inline
-  def apply(): TemplateActiveVersionRequest = {
+  inline def apply(): TemplateActiveVersionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateActiveVersionRequest]
   }
   
-  @scala.inline
-  implicit class TemplateActiveVersionRequestMutableBuilder[Self <: TemplateActiveVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateActiveVersionRequest](x: Self) {
     
-    @scala.inline
-    def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

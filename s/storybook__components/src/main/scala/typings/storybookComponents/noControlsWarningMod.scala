@@ -11,6 +11,5 @@ object noControlsWarningMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def NoControlsWarning(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoControlsWarning")().asInstanceOf[Element]
+  inline def NoControlsWarning(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoControlsWarning")().asInstanceOf[Element]
 }

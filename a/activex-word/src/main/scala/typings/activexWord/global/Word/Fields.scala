@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Fields")
 @js.native
-class Fields protected ()
+/* private */ class Fields ()
   extends StObject
      with typings.activexWord.Word.Fields

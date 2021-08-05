@@ -11,8 +11,7 @@ trait ManipulationStartedEventArgs
      with IManipulationStartedEventArgs
 object ManipulationStartedEventArgs {
   
-  @scala.inline
-  def apply(cumulative: ManipulationDelta, pointerDeviceType: PointerDeviceType, position: Point): ManipulationStartedEventArgs = {
+  inline def apply(cumulative: ManipulationDelta, pointerDeviceType: PointerDeviceType, position: Point): ManipulationStartedEventArgs = {
     val __obj = js.Dynamic.literal(cumulative = cumulative.asInstanceOf[js.Any], pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManipulationStartedEventArgs]
   }

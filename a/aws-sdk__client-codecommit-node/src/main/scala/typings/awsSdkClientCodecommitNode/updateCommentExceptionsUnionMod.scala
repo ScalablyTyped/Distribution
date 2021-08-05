@@ -18,44 +18,37 @@ object updateCommentExceptionsUnionMod {
   trait UpdateCommentExceptionsUnion extends StObject
   object UpdateCommentExceptionsUnion {
     
-    @scala.inline
-    def CommentContentRequiredException(): typings.awsSdkClientCodecommitNode.typesCommentContentRequiredExceptionMod.CommentContentRequiredException = {
+    inline def CommentContentRequiredException(): typings.awsSdkClientCodecommitNode.typesCommentContentRequiredExceptionMod.CommentContentRequiredException = {
       val __obj = js.Dynamic.literal(name = "CommentContentRequiredException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesCommentContentRequiredExceptionMod.CommentContentRequiredException]
     }
     
-    @scala.inline
-    def CommentContentSizeLimitExceededException(): typings.awsSdkClientCodecommitNode.typesCommentContentSizeLimitExceededExceptionMod.CommentContentSizeLimitExceededException = {
+    inline def CommentContentSizeLimitExceededException(): typings.awsSdkClientCodecommitNode.typesCommentContentSizeLimitExceededExceptionMod.CommentContentSizeLimitExceededException = {
       val __obj = js.Dynamic.literal(name = "CommentContentSizeLimitExceededException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesCommentContentSizeLimitExceededExceptionMod.CommentContentSizeLimitExceededException]
     }
     
-    @scala.inline
-    def CommentDeletedException(): typings.awsSdkClientCodecommitNode.typesCommentDeletedExceptionMod.CommentDeletedException = {
+    inline def CommentDeletedException(): typings.awsSdkClientCodecommitNode.typesCommentDeletedExceptionMod.CommentDeletedException = {
       val __obj = js.Dynamic.literal(name = "CommentDeletedException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesCommentDeletedExceptionMod.CommentDeletedException]
     }
     
-    @scala.inline
-    def CommentDoesNotExistException(): typings.awsSdkClientCodecommitNode.typesCommentDoesNotExistExceptionMod.CommentDoesNotExistException = {
+    inline def CommentDoesNotExistException(): typings.awsSdkClientCodecommitNode.typesCommentDoesNotExistExceptionMod.CommentDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "CommentDoesNotExistException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesCommentDoesNotExistExceptionMod.CommentDoesNotExistException]
     }
     
-    @scala.inline
-    def CommentIdRequiredException(): typings.awsSdkClientCodecommitNode.typesCommentIdRequiredExceptionMod.CommentIdRequiredException = {
+    inline def CommentIdRequiredException(): typings.awsSdkClientCodecommitNode.typesCommentIdRequiredExceptionMod.CommentIdRequiredException = {
       val __obj = js.Dynamic.literal(name = "CommentIdRequiredException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesCommentIdRequiredExceptionMod.CommentIdRequiredException]
     }
     
-    @scala.inline
-    def CommentNotCreatedByCallerException(): typings.awsSdkClientCodecommitNode.typesCommentNotCreatedByCallerExceptionMod.CommentNotCreatedByCallerException = {
+    inline def CommentNotCreatedByCallerException(): typings.awsSdkClientCodecommitNode.typesCommentNotCreatedByCallerExceptionMod.CommentNotCreatedByCallerException = {
       val __obj = js.Dynamic.literal(name = "CommentNotCreatedByCallerException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesCommentNotCreatedByCallerExceptionMod.CommentNotCreatedByCallerException]
     }
     
-    @scala.inline
-    def InvalidCommentIdException(): typings.awsSdkClientCodecommitNode.typesInvalidCommentIdExceptionMod.InvalidCommentIdException = {
+    inline def InvalidCommentIdException(): typings.awsSdkClientCodecommitNode.typesInvalidCommentIdExceptionMod.InvalidCommentIdException = {
       val __obj = js.Dynamic.literal(name = "InvalidCommentIdException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidCommentIdExceptionMod.InvalidCommentIdException]
     }

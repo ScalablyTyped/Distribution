@@ -16,6 +16,5 @@ trait Group extends StObject {
 }
 object Group {
   
-  @scala.inline
-  def apply: Group = ^.asInstanceOf[js.Dynamic].selectDynamic("Group").asInstanceOf[Group]
+  inline def apply: Group = ^.asInstanceOf[js.Dynamic].selectDynamic("Group").asInstanceOf[Group]
 }

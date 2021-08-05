@@ -15,25 +15,19 @@ trait PickRadiosTypeKnobvalueop extends StObject {
 }
 object PickRadiosTypeKnobvalueop {
   
-  @scala.inline
-  def apply(options: RadiosTypeOptionsProp[RadiosTypeKnobValue]): PickRadiosTypeKnobvalueop = {
+  inline def apply(options: RadiosTypeOptionsProp[RadiosTypeKnobValue]): PickRadiosTypeKnobvalueop = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickRadiosTypeKnobvalueop]
   }
   
-  @scala.inline
-  implicit class PickRadiosTypeKnobvalueopMutableBuilder[Self <: PickRadiosTypeKnobvalueop] (val x: Self) extends AnyVal {
+  extension [Self <: PickRadiosTypeKnobvalueop](x: Self) {
     
-    @scala.inline
-    def setOptions(value: RadiosTypeOptionsProp[RadiosTypeKnobValue]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: RadiosTypeOptionsProp[RadiosTypeKnobValue]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: RadiosTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: RadiosTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

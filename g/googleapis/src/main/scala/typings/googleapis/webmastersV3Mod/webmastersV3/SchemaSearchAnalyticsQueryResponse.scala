@@ -23,28 +23,21 @@ trait SchemaSearchAnalyticsQueryResponse extends StObject {
 }
 object SchemaSearchAnalyticsQueryResponse {
   
-  @scala.inline
-  def apply(): SchemaSearchAnalyticsQueryResponse = {
+  inline def apply(): SchemaSearchAnalyticsQueryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSearchAnalyticsQueryResponse]
   }
   
-  @scala.inline
-  implicit class SchemaSearchAnalyticsQueryResponseMutableBuilder[Self <: SchemaSearchAnalyticsQueryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSearchAnalyticsQueryResponse](x: Self) {
     
-    @scala.inline
-    def setResponseAggregationType(value: String): Self = StObject.set(x, "responseAggregationType", value.asInstanceOf[js.Any])
+    inline def setResponseAggregationType(value: String): Self = StObject.set(x, "responseAggregationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseAggregationTypeUndefined: Self = StObject.set(x, "responseAggregationType", js.undefined)
+    inline def setResponseAggregationTypeUndefined: Self = StObject.set(x, "responseAggregationType", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[SchemaApiDataRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[SchemaApiDataRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: SchemaApiDataRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: SchemaApiDataRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

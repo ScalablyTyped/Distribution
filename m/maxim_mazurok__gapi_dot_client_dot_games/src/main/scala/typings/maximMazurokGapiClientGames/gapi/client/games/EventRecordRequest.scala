@@ -20,40 +20,29 @@ trait EventRecordRequest extends StObject {
 }
 object EventRecordRequest {
   
-  @scala.inline
-  def apply(): EventRecordRequest = {
+  inline def apply(): EventRecordRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventRecordRequest]
   }
   
-  @scala.inline
-  implicit class EventRecordRequestMutableBuilder[Self <: EventRecordRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EventRecordRequest](x: Self) {
     
-    @scala.inline
-    def setCurrentTimeMillis(value: String): Self = StObject.set(x, "currentTimeMillis", value.asInstanceOf[js.Any])
+    inline def setCurrentTimeMillis(value: String): Self = StObject.set(x, "currentTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTimeMillisUndefined: Self = StObject.set(x, "currentTimeMillis", js.undefined)
+    inline def setCurrentTimeMillisUndefined: Self = StObject.set(x, "currentTimeMillis", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
-    @scala.inline
-    def setTimePeriods(value: js.Array[EventPeriodUpdate]): Self = StObject.set(x, "timePeriods", value.asInstanceOf[js.Any])
+    inline def setTimePeriods(value: js.Array[EventPeriodUpdate]): Self = StObject.set(x, "timePeriods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePeriodsUndefined: Self = StObject.set(x, "timePeriods", js.undefined)
+    inline def setTimePeriodsUndefined: Self = StObject.set(x, "timePeriods", js.undefined)
     
-    @scala.inline
-    def setTimePeriodsVarargs(value: EventPeriodUpdate*): Self = StObject.set(x, "timePeriods", js.Array(value :_*))
+    inline def setTimePeriodsVarargs(value: EventPeriodUpdate*): Self = StObject.set(x, "timePeriods", js.Array(value :_*))
   }
 }

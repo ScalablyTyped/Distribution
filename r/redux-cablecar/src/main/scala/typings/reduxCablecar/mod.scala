@@ -17,8 +17,7 @@ object mod {
   @JSImport("redux-cablecar", JSImport.Default)
   @js.native
   def default: (Middleware[js.Object, js.Any, Dispatch[AnyAction]]) & Connect = js.native
-  @scala.inline
-  def default_=(x: (Middleware[js.Object, js.Any, Dispatch[AnyAction]]) & Connect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: (Middleware[js.Object, js.Any, Dispatch[AnyAction]]) & Connect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   @js.native
   trait CableCar extends StObject {
@@ -50,44 +49,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConnected(value: () => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction0(value))
+      inline def setConnected(value: () => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
+      inline def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
       
-      @scala.inline
-      def setDisconnected(value: () => Unit): Self = StObject.set(x, "disconnected", js.Any.fromFunction0(value))
+      inline def setDisconnected(value: () => Unit): Self = StObject.set(x, "disconnected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisconnectedUndefined: Self = StObject.set(x, "disconnected", js.undefined)
+      inline def setDisconnectedUndefined: Self = StObject.set(x, "disconnected", js.undefined)
       
-      @scala.inline
-      def setOptimisticOnFail(value: Boolean): Self = StObject.set(x, "optimisticOnFail", value.asInstanceOf[js.Any])
+      inline def setOptimisticOnFail(value: Boolean): Self = StObject.set(x, "optimisticOnFail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimisticOnFailUndefined: Self = StObject.set(x, "optimisticOnFail", js.undefined)
+      inline def setOptimisticOnFailUndefined: Self = StObject.set(x, "optimisticOnFail", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
 }

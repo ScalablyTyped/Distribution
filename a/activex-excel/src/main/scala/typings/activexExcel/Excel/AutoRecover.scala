@@ -12,7 +12,7 @@ trait AutoRecover extends StObject {
   
   var Enabled: Boolean
   
-  @JSName("Excel.AutoRecover_typekey")
+  /* private */ @JSName("Excel.AutoRecover_typekey")
   var ExcelDotAutoRecover_typekey: AutoRecover
   
   val Parent: js.Any
@@ -23,8 +23,7 @@ trait AutoRecover extends StObject {
 }
 object AutoRecover {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     Enabled: Boolean,
@@ -38,28 +37,20 @@ object AutoRecover {
     __obj.asInstanceOf[AutoRecover]
   }
   
-  @scala.inline
-  implicit class AutoRecoverMutableBuilder[Self <: AutoRecover] (val x: Self) extends AnyVal {
+  extension [Self <: AutoRecover](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotAutoRecover_typekey(value: AutoRecover): Self = StObject.set(x, "Excel.AutoRecover_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotAutoRecover_typekey(value: AutoRecover): Self = StObject.set(x, "Excel.AutoRecover_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
   }
 }

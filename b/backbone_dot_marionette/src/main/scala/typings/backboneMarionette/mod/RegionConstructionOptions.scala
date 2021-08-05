@@ -32,37 +32,27 @@ trait RegionConstructionOptions extends StObject {
 }
 object RegionConstructionOptions {
   
-  @scala.inline
-  def apply(): RegionConstructionOptions = {
+  inline def apply(): RegionConstructionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegionConstructionOptions]
   }
   
-  @scala.inline
-  implicit class RegionConstructionOptionsMutableBuilder[Self <: RegionConstructionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RegionConstructionOptions](x: Self) {
     
-    @scala.inline
-    def setAllowMissingEl(value: Boolean): Self = StObject.set(x, "allowMissingEl", value.asInstanceOf[js.Any])
+    inline def setAllowMissingEl(value: Boolean): Self = StObject.set(x, "allowMissingEl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowMissingElUndefined: Self = StObject.set(x, "allowMissingEl", js.undefined)
+    inline def setAllowMissingElUndefined: Self = StObject.set(x, "allowMissingEl", js.undefined)
     
-    @scala.inline
-    def setEl(value: js.Any): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: js.Any): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElUndefined: Self = StObject.set(x, "el", js.undefined)
+    inline def setElUndefined: Self = StObject.set(x, "el", js.undefined)
     
-    @scala.inline
-    def setParentEl(value: String): Self = StObject.set(x, "parentEl", value.asInstanceOf[js.Any])
+    inline def setParentEl(value: String): Self = StObject.set(x, "parentEl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentElUndefined: Self = StObject.set(x, "parentEl", js.undefined)
+    inline def setParentElUndefined: Self = StObject.set(x, "parentEl", js.undefined)
     
-    @scala.inline
-    def setReplaceElement(value: String): Self = StObject.set(x, "replaceElement", value.asInstanceOf[js.Any])
+    inline def setReplaceElement(value: String): Self = StObject.set(x, "replaceElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceElementUndefined: Self = StObject.set(x, "replaceElement", js.undefined)
+    inline def setReplaceElementUndefined: Self = StObject.set(x, "replaceElement", js.undefined)
   }
 }

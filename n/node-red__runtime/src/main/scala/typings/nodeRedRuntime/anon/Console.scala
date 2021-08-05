@@ -13,19 +13,15 @@ trait Console extends StObject {
 }
 object Console {
   
-  @scala.inline
-  def apply(): Console = {
+  inline def apply(): Console = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Console]
   }
   
-  @scala.inline
-  implicit class ConsoleMutableBuilder[Self <: Console] (val x: Self) extends AnyVal {
+  extension [Self <: Console](x: Self) {
     
-    @scala.inline
-    def setConsole(value: Audit): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
+    inline def setConsole(value: Audit): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
+    inline def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
   }
 }

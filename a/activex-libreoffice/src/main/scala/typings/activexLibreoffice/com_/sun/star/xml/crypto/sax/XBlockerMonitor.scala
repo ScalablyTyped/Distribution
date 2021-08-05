@@ -23,8 +23,7 @@ trait XBlockerMonitor
 }
 object XBlockerMonitor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -34,10 +33,8 @@ object XBlockerMonitor {
     __obj.asInstanceOf[XBlockerMonitor]
   }
   
-  @scala.inline
-  implicit class XBlockerMonitorMutableBuilder[Self <: XBlockerMonitor] (val x: Self) extends AnyVal {
+  extension [Self <: XBlockerMonitor](x: Self) {
     
-    @scala.inline
-    def setSetBlockerId(value: Double => Unit): Self = StObject.set(x, "setBlockerId", js.Any.fromFunction1(value))
+    inline def setSetBlockerId(value: Double => Unit): Self = StObject.set(x, "setBlockerId", js.Any.fromFunction1(value))
   }
 }

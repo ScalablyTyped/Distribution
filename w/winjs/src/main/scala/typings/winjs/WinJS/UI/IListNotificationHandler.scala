@@ -73,8 +73,7 @@ trait IListNotificationHandler[T] extends StObject {
 }
 object IListNotificationHandler {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     beginNotifications: () => Unit,
     changed: (IItem[T], IItem[T]) => Unit,
     countChanged: (Double, Double) => Unit,
@@ -89,34 +88,24 @@ object IListNotificationHandler {
     __obj.asInstanceOf[IListNotificationHandler[T]]
   }
   
-  @scala.inline
-  implicit class IListNotificationHandlerMutableBuilder[Self <: IListNotificationHandler[?], T] (val x: Self & IListNotificationHandler[T]) extends AnyVal {
+  extension [Self <: IListNotificationHandler[?], T](x: Self & IListNotificationHandler[T]) {
     
-    @scala.inline
-    def setBeginNotifications(value: () => Unit): Self = StObject.set(x, "beginNotifications", js.Any.fromFunction0(value))
+    inline def setBeginNotifications(value: () => Unit): Self = StObject.set(x, "beginNotifications", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChanged(value: (IItem[T], IItem[T]) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction2(value))
+    inline def setChanged(value: (IItem[T], IItem[T]) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCountChanged(value: (Double, Double) => Unit): Self = StObject.set(x, "countChanged", js.Any.fromFunction2(value))
+    inline def setCountChanged(value: (Double, Double) => Unit): Self = StObject.set(x, "countChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEndNotifications(value: () => Unit): Self = StObject.set(x, "endNotifications", js.Any.fromFunction0(value))
+    inline def setEndNotifications(value: () => Unit): Self = StObject.set(x, "endNotifications", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndexChanged(value: (String, Double, Double) => Unit): Self = StObject.set(x, "indexChanged", js.Any.fromFunction3(value))
+    inline def setIndexChanged(value: (String, Double, Double) => Unit): Self = StObject.set(x, "indexChanged", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInserted(value: (IItemPromise[T], String, String) => Unit): Self = StObject.set(x, "inserted", js.Any.fromFunction3(value))
+    inline def setInserted(value: (IItemPromise[T], String, String) => Unit): Self = StObject.set(x, "inserted", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setItemAvailable(value: IItem[T] => Unit): Self = StObject.set(x, "itemAvailable", js.Any.fromFunction1(value))
+    inline def setItemAvailable(value: IItem[T] => Unit): Self = StObject.set(x, "itemAvailable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMoved(value: (IItemPromise[T], String, String) => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction3(value))
+    inline def setMoved(value: (IItemPromise[T], String, String) => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoved(value: (String, Boolean) => Unit): Self = StObject.set(x, "removed", js.Any.fromFunction2(value))
+    inline def setRemoved(value: (String, Boolean) => Unit): Self = StObject.set(x, "removed", js.Any.fromFunction2(value))
   }
 }

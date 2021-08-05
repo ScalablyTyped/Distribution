@@ -13,9 +13,9 @@ object repeatStreamMod {
   class RepeatStream protected () extends BaseStream {
     def this(source: Stream, count: Double) = this()
     
-    var _count: js.Any = js.native
+    /* private */ var _count: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
   }
   /* static members */
   object RepeatStream {
@@ -24,7 +24,6 @@ object repeatStreamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(source: Stream, count: Double): RepeatStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[RepeatStream]
+    inline def create(source: Stream, count: Double): RepeatStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[RepeatStream]
   }
 }

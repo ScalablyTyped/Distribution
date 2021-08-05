@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("firebase", "default.firestore.WriteBatch")
 @js.native
-class WriteBatch protected () extends StObject {
+/* private */ class WriteBatch () extends StObject {
   
   /**
     * Commits all of the writes in this write batch as a single atomic unit.

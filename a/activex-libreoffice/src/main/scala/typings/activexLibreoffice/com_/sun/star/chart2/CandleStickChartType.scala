@@ -65,8 +65,7 @@ trait CandleStickChartType
 }
 object CandleStickChartType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BlackDay: XPropertySet,
     ChartType: String,
     DataSeries: SafeArray[XDataSeries],
@@ -104,22 +103,16 @@ object CandleStickChartType {
     __obj.asInstanceOf[CandleStickChartType]
   }
   
-  @scala.inline
-  implicit class CandleStickChartTypeMutableBuilder[Self <: CandleStickChartType] (val x: Self) extends AnyVal {
+  extension [Self <: CandleStickChartType](x: Self) {
     
-    @scala.inline
-    def setBlackDay(value: XPropertySet): Self = StObject.set(x, "BlackDay", value.asInstanceOf[js.Any])
+    inline def setBlackDay(value: XPropertySet): Self = StObject.set(x, "BlackDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJapanese(value: Boolean): Self = StObject.set(x, "Japanese", value.asInstanceOf[js.Any])
+    inline def setJapanese(value: Boolean): Self = StObject.set(x, "Japanese", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFirst(value: Boolean): Self = StObject.set(x, "ShowFirst", value.asInstanceOf[js.Any])
+    inline def setShowFirst(value: Boolean): Self = StObject.set(x, "ShowFirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowHighLow(value: Boolean): Self = StObject.set(x, "ShowHighLow", value.asInstanceOf[js.Any])
+    inline def setShowHighLow(value: Boolean): Self = StObject.set(x, "ShowHighLow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhiteDay(value: XPropertySet): Self = StObject.set(x, "WhiteDay", value.asInstanceOf[js.Any])
+    inline def setWhiteDay(value: XPropertySet): Self = StObject.set(x, "WhiteDay", value.asInstanceOf[js.Any])
   }
 }

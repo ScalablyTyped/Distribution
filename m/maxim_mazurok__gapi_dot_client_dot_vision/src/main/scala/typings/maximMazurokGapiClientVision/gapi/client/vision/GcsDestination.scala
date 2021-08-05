@@ -18,19 +18,15 @@ trait GcsDestination extends StObject {
 }
 object GcsDestination {
   
-  @scala.inline
-  def apply(): GcsDestination = {
+  inline def apply(): GcsDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GcsDestination]
   }
   
-  @scala.inline
-  implicit class GcsDestinationMutableBuilder[Self <: GcsDestination] (val x: Self) extends AnyVal {
+  extension [Self <: GcsDestination](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

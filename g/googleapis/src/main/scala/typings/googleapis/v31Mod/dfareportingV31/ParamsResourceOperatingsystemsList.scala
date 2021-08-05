@@ -24,25 +24,19 @@ trait ParamsResourceOperatingsystemsList
 }
 object ParamsResourceOperatingsystemsList {
   
-  @scala.inline
-  def apply(): ParamsResourceOperatingsystemsList = {
+  inline def apply(): ParamsResourceOperatingsystemsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceOperatingsystemsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceOperatingsystemsListMutableBuilder[Self <: ParamsResourceOperatingsystemsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceOperatingsystemsList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+    inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
+    inline def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
   }
 }

@@ -8,36 +8,29 @@ object reactCollapsibleStrings {
   
   @js.native
   sealed trait auto extends StObject
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait hidden extends StObject
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
   sealed trait inherit extends StObject
-  @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
+  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
   sealed trait initial extends StObject
-  @scala.inline
-  def initial: initial = "initial".asInstanceOf[initial]
+  inline def initial: initial = "initial".asInstanceOf[initial]
   
   @js.native
   sealed trait scroll extends StObject
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
   sealed trait unset extends StObject
-  @scala.inline
-  def unset: unset = "unset".asInstanceOf[unset]
+  inline def unset: unset = "unset".asInstanceOf[unset]
   
   @js.native
   sealed trait visible extends StObject
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
+  inline def visible: visible = "visible".asInstanceOf[visible]
 }

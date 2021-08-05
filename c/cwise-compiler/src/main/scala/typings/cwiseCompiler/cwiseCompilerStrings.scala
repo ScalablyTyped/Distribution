@@ -11,34 +11,29 @@ object cwiseCompilerStrings {
   sealed trait array
     extends StObject
        with ArgType
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
   sealed trait index
     extends StObject
        with ArgType
-  @scala.inline
-  def index: index = "index".asInstanceOf[index]
+  inline def index: index = "index".asInstanceOf[index]
   
   @js.native
   sealed trait offset
     extends StObject
        with ArgType
-  @scala.inline
-  def offset: offset = "offset".asInstanceOf[offset]
+  inline def offset: offset = "offset".asInstanceOf[offset]
   
   @js.native
   sealed trait scalar
     extends StObject
        with ArgType
-  @scala.inline
-  def scalar: scalar = "scalar".asInstanceOf[scalar]
+  inline def scalar: scalar = "scalar".asInstanceOf[scalar]
   
   @js.native
   sealed trait shape
     extends StObject
        with ArgType
-  @scala.inline
-  def shape: shape = "shape".asInstanceOf[shape]
+  inline def shape: shape = "shape".asInstanceOf[shape]
 }

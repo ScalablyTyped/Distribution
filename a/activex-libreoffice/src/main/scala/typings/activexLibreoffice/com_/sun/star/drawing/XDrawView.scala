@@ -31,8 +31,7 @@ trait XDrawView
 }
 object XDrawView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentPage: XDrawPage,
     acquire: () => Unit,
     getCurrentPage: () => XDrawPage,
@@ -44,16 +43,12 @@ object XDrawView {
     __obj.asInstanceOf[XDrawView]
   }
   
-  @scala.inline
-  implicit class XDrawViewMutableBuilder[Self <: XDrawView] (val x: Self) extends AnyVal {
+  extension [Self <: XDrawView](x: Self) {
     
-    @scala.inline
-    def setCurrentPage(value: XDrawPage): Self = StObject.set(x, "CurrentPage", value.asInstanceOf[js.Any])
+    inline def setCurrentPage(value: XDrawPage): Self = StObject.set(x, "CurrentPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCurrentPage(value: () => XDrawPage): Self = StObject.set(x, "getCurrentPage", js.Any.fromFunction0(value))
+    inline def setGetCurrentPage(value: () => XDrawPage): Self = StObject.set(x, "getCurrentPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCurrentPage(value: XDrawPage => Unit): Self = StObject.set(x, "setCurrentPage", js.Any.fromFunction1(value))
+    inline def setSetCurrentPage(value: XDrawPage => Unit): Self = StObject.set(x, "setCurrentPage", js.Any.fromFunction1(value))
   }
 }

@@ -28,40 +28,29 @@ trait GetBucketWebsiteOutput extends StObject {
 }
 object GetBucketWebsiteOutput {
   
-  @scala.inline
-  def apply(): GetBucketWebsiteOutput = {
+  inline def apply(): GetBucketWebsiteOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBucketWebsiteOutput]
   }
   
-  @scala.inline
-  implicit class GetBucketWebsiteOutputMutableBuilder[Self <: GetBucketWebsiteOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketWebsiteOutput](x: Self) {
     
-    @scala.inline
-    def setErrorDocument(value: ErrorDocument): Self = StObject.set(x, "ErrorDocument", value.asInstanceOf[js.Any])
+    inline def setErrorDocument(value: ErrorDocument): Self = StObject.set(x, "ErrorDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDocumentUndefined: Self = StObject.set(x, "ErrorDocument", js.undefined)
+    inline def setErrorDocumentUndefined: Self = StObject.set(x, "ErrorDocument", js.undefined)
     
-    @scala.inline
-    def setIndexDocument(value: IndexDocument): Self = StObject.set(x, "IndexDocument", value.asInstanceOf[js.Any])
+    inline def setIndexDocument(value: IndexDocument): Self = StObject.set(x, "IndexDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexDocumentUndefined: Self = StObject.set(x, "IndexDocument", js.undefined)
+    inline def setIndexDocumentUndefined: Self = StObject.set(x, "IndexDocument", js.undefined)
     
-    @scala.inline
-    def setRedirectAllRequestsTo(value: RedirectAllRequestsTo): Self = StObject.set(x, "RedirectAllRequestsTo", value.asInstanceOf[js.Any])
+    inline def setRedirectAllRequestsTo(value: RedirectAllRequestsTo): Self = StObject.set(x, "RedirectAllRequestsTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectAllRequestsToUndefined: Self = StObject.set(x, "RedirectAllRequestsTo", js.undefined)
+    inline def setRedirectAllRequestsToUndefined: Self = StObject.set(x, "RedirectAllRequestsTo", js.undefined)
     
-    @scala.inline
-    def setRoutingRules(value: RoutingRules): Self = StObject.set(x, "RoutingRules", value.asInstanceOf[js.Any])
+    inline def setRoutingRules(value: RoutingRules): Self = StObject.set(x, "RoutingRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingRulesUndefined: Self = StObject.set(x, "RoutingRules", js.undefined)
+    inline def setRoutingRulesUndefined: Self = StObject.set(x, "RoutingRules", js.undefined)
     
-    @scala.inline
-    def setRoutingRulesVarargs(value: RoutingRule*): Self = StObject.set(x, "RoutingRules", js.Array(value :_*))
+    inline def setRoutingRulesVarargs(value: RoutingRule*): Self = StObject.set(x, "RoutingRules", js.Array(value :_*))
   }
 }

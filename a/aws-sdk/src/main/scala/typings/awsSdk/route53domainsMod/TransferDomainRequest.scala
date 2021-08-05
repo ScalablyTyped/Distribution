@@ -68,8 +68,7 @@ trait TransferDomainRequest extends StObject {
 }
 object TransferDomainRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdminContact: ContactDetail,
     DomainName: DomainName,
     DurationInYears: DurationInYears,
@@ -80,67 +79,46 @@ object TransferDomainRequest {
     __obj.asInstanceOf[TransferDomainRequest]
   }
   
-  @scala.inline
-  implicit class TransferDomainRequestMutableBuilder[Self <: TransferDomainRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TransferDomainRequest](x: Self) {
     
-    @scala.inline
-    def setAdminContact(value: ContactDetail): Self = StObject.set(x, "AdminContact", value.asInstanceOf[js.Any])
+    inline def setAdminContact(value: ContactDetail): Self = StObject.set(x, "AdminContact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthCode(value: DomainAuthCode): Self = StObject.set(x, "AuthCode", value.asInstanceOf[js.Any])
+    inline def setAuthCode(value: DomainAuthCode): Self = StObject.set(x, "AuthCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthCodeUndefined: Self = StObject.set(x, "AuthCode", js.undefined)
+    inline def setAuthCodeUndefined: Self = StObject.set(x, "AuthCode", js.undefined)
     
-    @scala.inline
-    def setAutoRenew(value: Boolean): Self = StObject.set(x, "AutoRenew", value.asInstanceOf[js.Any])
+    inline def setAutoRenew(value: Boolean): Self = StObject.set(x, "AutoRenew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRenewUndefined: Self = StObject.set(x, "AutoRenew", js.undefined)
+    inline def setAutoRenewUndefined: Self = StObject.set(x, "AutoRenew", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInYears(value: DurationInYears): Self = StObject.set(x, "DurationInYears", value.asInstanceOf[js.Any])
+    inline def setDurationInYears(value: DurationInYears): Self = StObject.set(x, "DurationInYears", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdnLangCode(value: LangCode): Self = StObject.set(x, "IdnLangCode", value.asInstanceOf[js.Any])
+    inline def setIdnLangCode(value: LangCode): Self = StObject.set(x, "IdnLangCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdnLangCodeUndefined: Self = StObject.set(x, "IdnLangCode", js.undefined)
+    inline def setIdnLangCodeUndefined: Self = StObject.set(x, "IdnLangCode", js.undefined)
     
-    @scala.inline
-    def setNameservers(value: NameserverList): Self = StObject.set(x, "Nameservers", value.asInstanceOf[js.Any])
+    inline def setNameservers(value: NameserverList): Self = StObject.set(x, "Nameservers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameserversUndefined: Self = StObject.set(x, "Nameservers", js.undefined)
+    inline def setNameserversUndefined: Self = StObject.set(x, "Nameservers", js.undefined)
     
-    @scala.inline
-    def setNameserversVarargs(value: Nameserver*): Self = StObject.set(x, "Nameservers", js.Array(value :_*))
+    inline def setNameserversVarargs(value: Nameserver*): Self = StObject.set(x, "Nameservers", js.Array(value :_*))
     
-    @scala.inline
-    def setPrivacyProtectAdminContact(value: Boolean): Self = StObject.set(x, "PrivacyProtectAdminContact", value.asInstanceOf[js.Any])
+    inline def setPrivacyProtectAdminContact(value: Boolean): Self = StObject.set(x, "PrivacyProtectAdminContact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacyProtectAdminContactUndefined: Self = StObject.set(x, "PrivacyProtectAdminContact", js.undefined)
+    inline def setPrivacyProtectAdminContactUndefined: Self = StObject.set(x, "PrivacyProtectAdminContact", js.undefined)
     
-    @scala.inline
-    def setPrivacyProtectRegistrantContact(value: Boolean): Self = StObject.set(x, "PrivacyProtectRegistrantContact", value.asInstanceOf[js.Any])
+    inline def setPrivacyProtectRegistrantContact(value: Boolean): Self = StObject.set(x, "PrivacyProtectRegistrantContact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacyProtectRegistrantContactUndefined: Self = StObject.set(x, "PrivacyProtectRegistrantContact", js.undefined)
+    inline def setPrivacyProtectRegistrantContactUndefined: Self = StObject.set(x, "PrivacyProtectRegistrantContact", js.undefined)
     
-    @scala.inline
-    def setPrivacyProtectTechContact(value: Boolean): Self = StObject.set(x, "PrivacyProtectTechContact", value.asInstanceOf[js.Any])
+    inline def setPrivacyProtectTechContact(value: Boolean): Self = StObject.set(x, "PrivacyProtectTechContact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacyProtectTechContactUndefined: Self = StObject.set(x, "PrivacyProtectTechContact", js.undefined)
+    inline def setPrivacyProtectTechContactUndefined: Self = StObject.set(x, "PrivacyProtectTechContact", js.undefined)
     
-    @scala.inline
-    def setRegistrantContact(value: ContactDetail): Self = StObject.set(x, "RegistrantContact", value.asInstanceOf[js.Any])
+    inline def setRegistrantContact(value: ContactDetail): Self = StObject.set(x, "RegistrantContact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTechContact(value: ContactDetail): Self = StObject.set(x, "TechContact", value.asInstanceOf[js.Any])
+    inline def setTechContact(value: ContactDetail): Self = StObject.set(x, "TechContact", value.asInstanceOf[js.Any])
   }
 }

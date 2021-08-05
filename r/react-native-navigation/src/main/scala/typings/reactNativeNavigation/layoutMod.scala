@@ -31,35 +31,26 @@ object layoutMod {
   }
   object ExternalComponent {
     
-    @scala.inline
-    def apply(name: String | Double): ExternalComponent = {
+    inline def apply(name: String | Double): ExternalComponent = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExternalComponent]
     }
     
-    @scala.inline
-    implicit class ExternalComponentMutableBuilder[Self <: ExternalComponent] (val x: Self) extends AnyVal {
+    extension [Self <: ExternalComponent](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setName(value: String | Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String | Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPassProps(value: js.Object): Self = StObject.set(x, "passProps", value.asInstanceOf[js.Any])
+      inline def setPassProps(value: js.Object): Self = StObject.set(x, "passProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassPropsUndefined: Self = StObject.set(x, "passProps", js.undefined)
+      inline def setPassPropsUndefined: Self = StObject.set(x, "passProps", js.undefined)
     }
   }
   
@@ -102,56 +93,40 @@ object layoutMod {
   }
   object Layout {
     
-    @scala.inline
-    def apply[P](): Layout[P] = {
+    inline def apply[P](): Layout[P] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Layout[P]]
     }
     
-    @scala.inline
-    implicit class LayoutMutableBuilder[Self <: Layout[?], P] (val x: Self & Layout[P]) extends AnyVal {
+    extension [Self <: Layout[?], P](x: Self & Layout[P]) {
       
-      @scala.inline
-      def setBottomTabs(value: LayoutBottomTabs): Self = StObject.set(x, "bottomTabs", value.asInstanceOf[js.Any])
+      inline def setBottomTabs(value: LayoutBottomTabs): Self = StObject.set(x, "bottomTabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomTabsUndefined: Self = StObject.set(x, "bottomTabs", js.undefined)
+      inline def setBottomTabsUndefined: Self = StObject.set(x, "bottomTabs", js.undefined)
       
-      @scala.inline
-      def setComponent(value: LayoutComponent[P]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: LayoutComponent[P]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setExternalComponent(value: ExternalComponent): Self = StObject.set(x, "externalComponent", value.asInstanceOf[js.Any])
+      inline def setExternalComponent(value: ExternalComponent): Self = StObject.set(x, "externalComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalComponentUndefined: Self = StObject.set(x, "externalComponent", js.undefined)
+      inline def setExternalComponentUndefined: Self = StObject.set(x, "externalComponent", js.undefined)
       
-      @scala.inline
-      def setSideMenu(value: LayoutSideMenu): Self = StObject.set(x, "sideMenu", value.asInstanceOf[js.Any])
+      inline def setSideMenu(value: LayoutSideMenu): Self = StObject.set(x, "sideMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSideMenuUndefined: Self = StObject.set(x, "sideMenu", js.undefined)
+      inline def setSideMenuUndefined: Self = StObject.set(x, "sideMenu", js.undefined)
       
-      @scala.inline
-      def setSplitView(value: LayoutSplitView): Self = StObject.set(x, "splitView", value.asInstanceOf[js.Any])
+      inline def setSplitView(value: LayoutSplitView): Self = StObject.set(x, "splitView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitViewUndefined: Self = StObject.set(x, "splitView", js.undefined)
+      inline def setSplitViewUndefined: Self = StObject.set(x, "splitView", js.undefined)
       
-      @scala.inline
-      def setStack(value: LayoutStack): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: LayoutStack): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
       
-      @scala.inline
-      def setTopTabs(value: LayoutTopTabs): Self = StObject.set(x, "topTabs", value.asInstanceOf[js.Any])
+      inline def setTopTabs(value: LayoutTopTabs): Self = StObject.set(x, "topTabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopTabsUndefined: Self = StObject.set(x, "topTabs", js.undefined)
+      inline def setTopTabsUndefined: Self = StObject.set(x, "topTabs", js.undefined)
     }
   }
   
@@ -175,35 +150,26 @@ object layoutMod {
   }
   object LayoutBottomTabs {
     
-    @scala.inline
-    def apply(): LayoutBottomTabs = {
+    inline def apply(): LayoutBottomTabs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutBottomTabs]
     }
     
-    @scala.inline
-    implicit class LayoutBottomTabsMutableBuilder[Self <: LayoutBottomTabs] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutBottomTabs](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[LayoutTabsChildren]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[LayoutTabsChildren]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: LayoutTabsChildren*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: LayoutTabsChildren*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
@@ -231,35 +197,26 @@ object layoutMod {
   }
   object LayoutComponent {
     
-    @scala.inline
-    def apply[P](name: String | Double): LayoutComponent[P] = {
+    inline def apply[P](name: String | Double): LayoutComponent[P] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayoutComponent[P]]
     }
     
-    @scala.inline
-    implicit class LayoutComponentMutableBuilder[Self <: LayoutComponent[?], P] (val x: Self & LayoutComponent[P]) extends AnyVal {
+    extension [Self <: LayoutComponent[?], P](x: Self & LayoutComponent[P]) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setName(value: String | Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String | Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPassProps(value: P): Self = StObject.set(x, "passProps", value.asInstanceOf[js.Any])
+      inline def setPassProps(value: P): Self = StObject.set(x, "passProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassPropsUndefined: Self = StObject.set(x, "passProps", js.undefined)
+      inline def setPassPropsUndefined: Self = StObject.set(x, "passProps", js.undefined)
     }
   }
   
@@ -276,29 +233,22 @@ object layoutMod {
   }
   object LayoutRoot {
     
-    @scala.inline
-    def apply(root: Layout[js.Object]): LayoutRoot = {
+    inline def apply(root: Layout[js.Object]): LayoutRoot = {
       val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayoutRoot]
     }
     
-    @scala.inline
-    implicit class LayoutRootMutableBuilder[Self <: LayoutRoot] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutRoot](x: Self) {
       
-      @scala.inline
-      def setModals(value: js.Any): Self = StObject.set(x, "modals", value.asInstanceOf[js.Any])
+      inline def setModals(value: js.Any): Self = StObject.set(x, "modals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModalsUndefined: Self = StObject.set(x, "modals", js.undefined)
+      inline def setModalsUndefined: Self = StObject.set(x, "modals", js.undefined)
       
-      @scala.inline
-      def setOverlays(value: js.Any): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
+      inline def setOverlays(value: js.Any): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
+      inline def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
       
-      @scala.inline
-      def setRoot(value: Layout[js.Object]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: Layout[js.Object]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
   
@@ -332,41 +282,30 @@ object layoutMod {
   }
   object LayoutSideMenu {
     
-    @scala.inline
-    def apply(center: Layout[js.Object]): LayoutSideMenu = {
+    inline def apply(center: Layout[js.Object]): LayoutSideMenu = {
       val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayoutSideMenu]
     }
     
-    @scala.inline
-    implicit class LayoutSideMenuMutableBuilder[Self <: LayoutSideMenu] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutSideMenu](x: Self) {
       
-      @scala.inline
-      def setCenter(value: Layout[js.Object]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: Layout[js.Object]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLeft(value: LayoutStackChildren): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: LayoutStackChildren): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setRight(value: LayoutStackChildren): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: LayoutStackChildren): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     }
   }
   
@@ -395,38 +334,28 @@ object layoutMod {
   }
   object LayoutSplitView {
     
-    @scala.inline
-    def apply(): LayoutSplitView = {
+    inline def apply(): LayoutSplitView = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutSplitView]
     }
     
-    @scala.inline
-    implicit class LayoutSplitViewMutableBuilder[Self <: LayoutSplitView] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutSplitView](x: Self) {
       
-      @scala.inline
-      def setDetail(value: Layout[js.Object]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: Layout[js.Object]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+      inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMaster(value: Layout[js.Object]): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
+      inline def setMaster(value: Layout[js.Object]): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterUndefined: Self = StObject.set(x, "master", js.undefined)
+      inline def setMasterUndefined: Self = StObject.set(x, "master", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
@@ -450,35 +379,26 @@ object layoutMod {
   }
   object LayoutStack {
     
-    @scala.inline
-    def apply(): LayoutStack = {
+    inline def apply(): LayoutStack = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutStack]
     }
     
-    @scala.inline
-    implicit class LayoutStackMutableBuilder[Self <: LayoutStack] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutStack](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[LayoutStackChildren]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[LayoutStackChildren]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: LayoutStackChildren*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: LayoutStackChildren*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
@@ -496,26 +416,20 @@ object layoutMod {
   }
   object LayoutStackChildren {
     
-    @scala.inline
-    def apply(): LayoutStackChildren = {
+    inline def apply(): LayoutStackChildren = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutStackChildren]
     }
     
-    @scala.inline
-    implicit class LayoutStackChildrenMutableBuilder[Self <: LayoutStackChildren] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutStackChildren](x: Self) {
       
-      @scala.inline
-      def setComponent(value: LayoutComponent[js.Object]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: LayoutComponent[js.Object]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setExternalComponent(value: ExternalComponent): Self = StObject.set(x, "externalComponent", value.asInstanceOf[js.Any])
+      inline def setExternalComponent(value: ExternalComponent): Self = StObject.set(x, "externalComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalComponentUndefined: Self = StObject.set(x, "externalComponent", js.undefined)
+      inline def setExternalComponentUndefined: Self = StObject.set(x, "externalComponent", js.undefined)
     }
   }
   
@@ -543,38 +457,28 @@ object layoutMod {
   }
   object LayoutTabsChildren {
     
-    @scala.inline
-    def apply(): LayoutTabsChildren = {
+    inline def apply(): LayoutTabsChildren = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutTabsChildren]
     }
     
-    @scala.inline
-    implicit class LayoutTabsChildrenMutableBuilder[Self <: LayoutTabsChildren] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutTabsChildren](x: Self) {
       
-      @scala.inline
-      def setComponent(value: LayoutComponent[js.Object]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: LayoutComponent[js.Object]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setExternalComponent(value: ExternalComponent): Self = StObject.set(x, "externalComponent", value.asInstanceOf[js.Any])
+      inline def setExternalComponent(value: ExternalComponent): Self = StObject.set(x, "externalComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalComponentUndefined: Self = StObject.set(x, "externalComponent", js.undefined)
+      inline def setExternalComponentUndefined: Self = StObject.set(x, "externalComponent", js.undefined)
       
-      @scala.inline
-      def setSideMenu(value: LayoutSideMenu): Self = StObject.set(x, "sideMenu", value.asInstanceOf[js.Any])
+      inline def setSideMenu(value: LayoutSideMenu): Self = StObject.set(x, "sideMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSideMenuUndefined: Self = StObject.set(x, "sideMenu", js.undefined)
+      inline def setSideMenuUndefined: Self = StObject.set(x, "sideMenu", js.undefined)
       
-      @scala.inline
-      def setStack(value: LayoutStack): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: LayoutStack): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
   
@@ -597,35 +501,26 @@ object layoutMod {
   }
   object LayoutTopTabs {
     
-    @scala.inline
-    def apply(): LayoutTopTabs = {
+    inline def apply(): LayoutTopTabs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutTopTabs]
     }
     
-    @scala.inline
-    implicit class LayoutTopTabsMutableBuilder[Self <: LayoutTopTabs] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutTopTabs](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[LayoutTabsChildren]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[LayoutTabsChildren]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: LayoutTabsChildren*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: LayoutTabsChildren*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
 }

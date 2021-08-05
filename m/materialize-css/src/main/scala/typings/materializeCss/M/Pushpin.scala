@@ -14,16 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Pushpin {
   
-  @scala.inline
-  def apply(originalOffset: Double): Pushpin = {
+  inline def apply(originalOffset: Double): Pushpin = {
     val __obj = js.Dynamic.literal(originalOffset = originalOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pushpin]
   }
   
-  @scala.inline
-  implicit class PushpinMutableBuilder[Self <: Pushpin] (val x: Self) extends AnyVal {
+  extension [Self <: Pushpin](x: Self) {
     
-    @scala.inline
-    def setOriginalOffset(value: Double): Self = StObject.set(x, "originalOffset", value.asInstanceOf[js.Any])
+    inline def setOriginalOffset(value: Double): Self = StObject.set(x, "originalOffset", value.asInstanceOf[js.Any])
   }
 }

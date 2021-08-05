@@ -16,29 +16,22 @@ trait Enabled extends StObject {
 }
 object Enabled {
   
-  @scala.inline
-  def apply(enabled: Boolean, roundness: Double, `type`: String): Enabled = {
+  inline def apply(enabled: Boolean, roundness: Double, `type`: String): Enabled = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], roundness = roundness.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enabled]
   }
   
-  @scala.inline
-  implicit class EnabledMutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
+  extension [Self <: Enabled](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceDirection(value: String | Boolean): Self = StObject.set(x, "forceDirection", value.asInstanceOf[js.Any])
+    inline def setForceDirection(value: String | Boolean): Self = StObject.set(x, "forceDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceDirectionUndefined: Self = StObject.set(x, "forceDirection", js.undefined)
+    inline def setForceDirectionUndefined: Self = StObject.set(x, "forceDirection", js.undefined)
     
-    @scala.inline
-    def setRoundness(value: Double): Self = StObject.set(x, "roundness", value.asInstanceOf[js.Any])
+    inline def setRoundness(value: Double): Self = StObject.set(x, "roundness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

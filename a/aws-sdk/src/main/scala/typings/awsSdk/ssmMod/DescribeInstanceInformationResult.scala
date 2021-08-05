@@ -18,28 +18,21 @@ trait DescribeInstanceInformationResult extends StObject {
 }
 object DescribeInstanceInformationResult {
   
-  @scala.inline
-  def apply(): DescribeInstanceInformationResult = {
+  inline def apply(): DescribeInstanceInformationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeInstanceInformationResult]
   }
   
-  @scala.inline
-  implicit class DescribeInstanceInformationResultMutableBuilder[Self <: DescribeInstanceInformationResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInstanceInformationResult](x: Self) {
     
-    @scala.inline
-    def setInstanceInformationList(value: InstanceInformationList): Self = StObject.set(x, "InstanceInformationList", value.asInstanceOf[js.Any])
+    inline def setInstanceInformationList(value: InstanceInformationList): Self = StObject.set(x, "InstanceInformationList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceInformationListUndefined: Self = StObject.set(x, "InstanceInformationList", js.undefined)
+    inline def setInstanceInformationListUndefined: Self = StObject.set(x, "InstanceInformationList", js.undefined)
     
-    @scala.inline
-    def setInstanceInformationListVarargs(value: InstanceInformation*): Self = StObject.set(x, "InstanceInformationList", js.Array(value :_*))
+    inline def setInstanceInformationListVarargs(value: InstanceInformation*): Self = StObject.set(x, "InstanceInformationList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

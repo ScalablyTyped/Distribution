@@ -28,40 +28,29 @@ trait Root extends StObject {
 }
 object Root {
   
-  @scala.inline
-  def apply(): Root = {
+  inline def apply(): Root = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Root]
   }
   
-  @scala.inline
-  implicit class RootMutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
+  extension [Self <: Root](x: Self) {
     
-    @scala.inline
-    def setArn(value: RootArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: RootArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setId(value: RootId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: RootId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setName(value: RootName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: RootName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setPolicyTypes(value: PolicyTypes): Self = StObject.set(x, "PolicyTypes", value.asInstanceOf[js.Any])
+    inline def setPolicyTypes(value: PolicyTypes): Self = StObject.set(x, "PolicyTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyTypesUndefined: Self = StObject.set(x, "PolicyTypes", js.undefined)
+    inline def setPolicyTypesUndefined: Self = StObject.set(x, "PolicyTypes", js.undefined)
     
-    @scala.inline
-    def setPolicyTypesVarargs(value: PolicyTypeSummary*): Self = StObject.set(x, "PolicyTypes", js.Array(value :_*))
+    inline def setPolicyTypesVarargs(value: PolicyTypeSummary*): Self = StObject.set(x, "PolicyTypes", js.Array(value :_*))
   }
 }

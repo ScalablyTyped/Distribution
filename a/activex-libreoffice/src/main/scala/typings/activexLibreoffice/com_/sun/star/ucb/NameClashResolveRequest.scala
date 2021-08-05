@@ -38,8 +38,7 @@ trait NameClashResolveRequest
 }
 object NameClashResolveRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClashingName: String,
     Classification: InteractionClassification,
     Context: XInterface,
@@ -51,16 +50,12 @@ object NameClashResolveRequest {
     __obj.asInstanceOf[NameClashResolveRequest]
   }
   
-  @scala.inline
-  implicit class NameClashResolveRequestMutableBuilder[Self <: NameClashResolveRequest] (val x: Self) extends AnyVal {
+  extension [Self <: NameClashResolveRequest](x: Self) {
     
-    @scala.inline
-    def setClashingName(value: String): Self = StObject.set(x, "ClashingName", value.asInstanceOf[js.Any])
+    inline def setClashingName(value: String): Self = StObject.set(x, "ClashingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposedNewName(value: String): Self = StObject.set(x, "ProposedNewName", value.asInstanceOf[js.Any])
+    inline def setProposedNewName(value: String): Self = StObject.set(x, "ProposedNewName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetFolderURL(value: String): Self = StObject.set(x, "TargetFolderURL", value.asInstanceOf[js.Any])
+    inline def setTargetFolderURL(value: String): Self = StObject.set(x, "TargetFolderURL", value.asInstanceOf[js.Any])
   }
 }

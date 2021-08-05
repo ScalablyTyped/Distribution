@@ -31,40 +31,29 @@ trait SchemaChannelBrandingSettings extends StObject {
 }
 object SchemaChannelBrandingSettings {
   
-  @scala.inline
-  def apply(): SchemaChannelBrandingSettings = {
+  inline def apply(): SchemaChannelBrandingSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChannelBrandingSettings]
   }
   
-  @scala.inline
-  implicit class SchemaChannelBrandingSettingsMutableBuilder[Self <: SchemaChannelBrandingSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChannelBrandingSettings](x: Self) {
     
-    @scala.inline
-    def setChannel(value: SchemaChannelSettings): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: SchemaChannelSettings): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
-    @scala.inline
-    def setHints(value: js.Array[SchemaPropertyValue]): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
+    inline def setHints(value: js.Array[SchemaPropertyValue]): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
+    inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
     
-    @scala.inline
-    def setHintsVarargs(value: SchemaPropertyValue*): Self = StObject.set(x, "hints", js.Array(value :_*))
+    inline def setHintsVarargs(value: SchemaPropertyValue*): Self = StObject.set(x, "hints", js.Array(value :_*))
     
-    @scala.inline
-    def setImage(value: SchemaImageSettings): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: SchemaImageSettings): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setWatch(value: SchemaWatchSettings): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    inline def setWatch(value: SchemaWatchSettings): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+    inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
   }
 }

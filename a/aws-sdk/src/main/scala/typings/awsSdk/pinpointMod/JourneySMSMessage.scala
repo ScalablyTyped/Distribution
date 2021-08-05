@@ -18,25 +18,19 @@ trait JourneySMSMessage extends StObject {
 }
 object JourneySMSMessage {
   
-  @scala.inline
-  def apply(): JourneySMSMessage = {
+  inline def apply(): JourneySMSMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JourneySMSMessage]
   }
   
-  @scala.inline
-  implicit class JourneySMSMessageMutableBuilder[Self <: JourneySMSMessage] (val x: Self) extends AnyVal {
+  extension [Self <: JourneySMSMessage](x: Self) {
     
-    @scala.inline
-    def setMessageType(value: MessageType): Self = StObject.set(x, "MessageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: MessageType): Self = StObject.set(x, "MessageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTypeUndefined: Self = StObject.set(x, "MessageType", js.undefined)
+    inline def setMessageTypeUndefined: Self = StObject.set(x, "MessageType", js.undefined)
     
-    @scala.inline
-    def setSenderId(value: string): Self = StObject.set(x, "SenderId", value.asInstanceOf[js.Any])
+    inline def setSenderId(value: string): Self = StObject.set(x, "SenderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderIdUndefined: Self = StObject.set(x, "SenderId", js.undefined)
+    inline def setSenderIdUndefined: Self = StObject.set(x, "SenderId", js.undefined)
   }
 }

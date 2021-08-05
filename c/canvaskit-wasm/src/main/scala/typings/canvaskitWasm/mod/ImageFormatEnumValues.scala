@@ -18,8 +18,7 @@ trait ImageFormatEnumValues
 }
 object ImageFormatEnumValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     JPEG: EncodedImageFormat,
     PNG: EncodedImageFormat,
     WEBP: EncodedImageFormat,
@@ -29,16 +28,12 @@ object ImageFormatEnumValues {
     __obj.asInstanceOf[ImageFormatEnumValues]
   }
   
-  @scala.inline
-  implicit class ImageFormatEnumValuesMutableBuilder[Self <: ImageFormatEnumValues] (val x: Self) extends AnyVal {
+  extension [Self <: ImageFormatEnumValues](x: Self) {
     
-    @scala.inline
-    def setJPEG(value: EncodedImageFormat): Self = StObject.set(x, "JPEG", value.asInstanceOf[js.Any])
+    inline def setJPEG(value: EncodedImageFormat): Self = StObject.set(x, "JPEG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPNG(value: EncodedImageFormat): Self = StObject.set(x, "PNG", value.asInstanceOf[js.Any])
+    inline def setPNG(value: EncodedImageFormat): Self = StObject.set(x, "PNG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWEBP(value: EncodedImageFormat): Self = StObject.set(x, "WEBP", value.asInstanceOf[js.Any])
+    inline def setWEBP(value: EncodedImageFormat): Self = StObject.set(x, "WEBP", value.asInstanceOf[js.Any])
   }
 }

@@ -16,23 +16,18 @@ object anon {
   }
   object DefaultHostAPI {
     
-    @scala.inline
-    def apply(HostAPIs: js.Array[HostAPI], defaultHostAPI: Double): DefaultHostAPI = {
+    inline def apply(HostAPIs: js.Array[HostAPI], defaultHostAPI: Double): DefaultHostAPI = {
       val __obj = js.Dynamic.literal(HostAPIs = HostAPIs.asInstanceOf[js.Any], defaultHostAPI = defaultHostAPI.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultHostAPI]
     }
     
-    @scala.inline
-    implicit class DefaultHostAPIMutableBuilder[Self <: DefaultHostAPI] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultHostAPI](x: Self) {
       
-      @scala.inline
-      def setDefaultHostAPI(value: Double): Self = StObject.set(x, "defaultHostAPI", value.asInstanceOf[js.Any])
+      inline def setDefaultHostAPI(value: Double): Self = StObject.set(x, "defaultHostAPI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostAPIs(value: js.Array[HostAPI]): Self = StObject.set(x, "HostAPIs", value.asInstanceOf[js.Any])
+      inline def setHostAPIs(value: js.Array[HostAPI]): Self = StObject.set(x, "HostAPIs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostAPIsVarargs(value: HostAPI*): Self = StObject.set(x, "HostAPIs", js.Array(value :_*))
+      inline def setHostAPIsVarargs(value: HostAPI*): Self = StObject.set(x, "HostAPIs", js.Array(value :_*))
     }
   }
   
@@ -42,17 +37,14 @@ object anon {
   }
   object InOptions {
     
-    @scala.inline
-    def apply(inOptions: AudioOptions): InOptions = {
+    inline def apply(inOptions: AudioOptions): InOptions = {
       val __obj = js.Dynamic.literal(inOptions = inOptions.asInstanceOf[js.Any])
       __obj.asInstanceOf[InOptions]
     }
     
-    @scala.inline
-    implicit class InOptionsMutableBuilder[Self <: InOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InOptions](x: Self) {
       
-      @scala.inline
-      def setInOptions(value: AudioOptions): Self = StObject.set(x, "inOptions", value.asInstanceOf[js.Any])
+      inline def setInOptions(value: AudioOptions): Self = StObject.set(x, "inOptions", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,20 +56,16 @@ object anon {
   }
   object InOptionsOutOptions {
     
-    @scala.inline
-    def apply(inOptions: AudioOptions, outOptions: AudioOptions): InOptionsOutOptions = {
+    inline def apply(inOptions: AudioOptions, outOptions: AudioOptions): InOptionsOutOptions = {
       val __obj = js.Dynamic.literal(inOptions = inOptions.asInstanceOf[js.Any], outOptions = outOptions.asInstanceOf[js.Any])
       __obj.asInstanceOf[InOptionsOutOptions]
     }
     
-    @scala.inline
-    implicit class InOptionsOutOptionsMutableBuilder[Self <: InOptionsOutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InOptionsOutOptions](x: Self) {
       
-      @scala.inline
-      def setInOptions(value: AudioOptions): Self = StObject.set(x, "inOptions", value.asInstanceOf[js.Any])
+      inline def setInOptions(value: AudioOptions): Self = StObject.set(x, "inOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutOptions(value: AudioOptions): Self = StObject.set(x, "outOptions", value.asInstanceOf[js.Any])
+      inline def setOutOptions(value: AudioOptions): Self = StObject.set(x, "outOptions", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,17 +75,14 @@ object anon {
   }
   object OutOptions {
     
-    @scala.inline
-    def apply(outOptions: AudioOptions): OutOptions = {
+    inline def apply(outOptions: AudioOptions): OutOptions = {
       val __obj = js.Dynamic.literal(outOptions = outOptions.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutOptions]
     }
     
-    @scala.inline
-    implicit class OutOptionsMutableBuilder[Self <: OutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OutOptions](x: Self) {
       
-      @scala.inline
-      def setOutOptions(value: AudioOptions): Self = StObject.set(x, "outOptions", value.asInstanceOf[js.Any])
+      inline def setOutOptions(value: AudioOptions): Self = StObject.set(x, "outOptions", value.asInstanceOf[js.Any])
     }
   }
 }

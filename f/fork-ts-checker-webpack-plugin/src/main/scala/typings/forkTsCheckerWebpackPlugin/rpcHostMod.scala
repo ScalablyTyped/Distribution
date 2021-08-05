@@ -18,20 +18,16 @@ object rpcHostMod {
   }
   object RpcHost {
     
-    @scala.inline
-    def apply(dispatch: /* message */ js.Any => js.Promise[Unit], register: RpcDispatcher => Unit): RpcHost = {
+    inline def apply(dispatch: /* message */ js.Any => js.Promise[Unit], register: RpcDispatcher => Unit): RpcHost = {
       val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), register = js.Any.fromFunction1(register))
       __obj.asInstanceOf[RpcHost]
     }
     
-    @scala.inline
-    implicit class RpcHostMutableBuilder[Self <: RpcHost] (val x: Self) extends AnyVal {
+    extension [Self <: RpcHost](x: Self) {
       
-      @scala.inline
-      def setDispatch(value: /* message */ js.Any => js.Promise[Unit]): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: /* message */ js.Any => js.Promise[Unit]): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegister(value: RpcDispatcher => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+      inline def setRegister(value: RpcDispatcher => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     }
   }
 }

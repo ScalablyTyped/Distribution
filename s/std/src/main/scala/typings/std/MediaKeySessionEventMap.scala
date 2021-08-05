@@ -12,19 +12,15 @@ trait MediaKeySessionEventMap extends StObject {
 }
 object MediaKeySessionEventMap {
   
-  @scala.inline
-  def apply(keystatuseschange: Event, message: MediaKeyMessageEvent): MediaKeySessionEventMap = {
+  inline def apply(keystatuseschange: Event, message: MediaKeyMessageEvent): MediaKeySessionEventMap = {
     val __obj = js.Dynamic.literal(keystatuseschange = keystatuseschange.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaKeySessionEventMap]
   }
   
-  @scala.inline
-  implicit class MediaKeySessionEventMapMutableBuilder[Self <: MediaKeySessionEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: MediaKeySessionEventMap](x: Self) {
     
-    @scala.inline
-    def setKeystatuseschange(value: Event): Self = StObject.set(x, "keystatuseschange", value.asInstanceOf[js.Any])
+    inline def setKeystatuseschange(value: Event): Self = StObject.set(x, "keystatuseschange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: MediaKeyMessageEvent): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: MediaKeyMessageEvent): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

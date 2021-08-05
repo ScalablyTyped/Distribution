@@ -43,55 +43,39 @@ trait AuditCheckDetails extends StObject {
 }
 object AuditCheckDetails {
   
-  @scala.inline
-  def apply(): AuditCheckDetails = {
+  inline def apply(): AuditCheckDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuditCheckDetails]
   }
   
-  @scala.inline
-  implicit class AuditCheckDetailsMutableBuilder[Self <: AuditCheckDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AuditCheckDetails](x: Self) {
     
-    @scala.inline
-    def setCheckCompliant(value: CheckCompliant): Self = StObject.set(x, "checkCompliant", value.asInstanceOf[js.Any])
+    inline def setCheckCompliant(value: CheckCompliant): Self = StObject.set(x, "checkCompliant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckCompliantUndefined: Self = StObject.set(x, "checkCompliant", js.undefined)
+    inline def setCheckCompliantUndefined: Self = StObject.set(x, "checkCompliant", js.undefined)
     
-    @scala.inline
-    def setCheckRunStatus(value: AuditCheckRunStatus): Self = StObject.set(x, "checkRunStatus", value.asInstanceOf[js.Any])
+    inline def setCheckRunStatus(value: AuditCheckRunStatus): Self = StObject.set(x, "checkRunStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckRunStatusUndefined: Self = StObject.set(x, "checkRunStatus", js.undefined)
+    inline def setCheckRunStatusUndefined: Self = StObject.set(x, "checkRunStatus", js.undefined)
     
-    @scala.inline
-    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setMessage(value: ErrorMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: ErrorMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setNonCompliantResourcesCount(value: NonCompliantResourcesCount): Self = StObject.set(x, "nonCompliantResourcesCount", value.asInstanceOf[js.Any])
+    inline def setNonCompliantResourcesCount(value: NonCompliantResourcesCount): Self = StObject.set(x, "nonCompliantResourcesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonCompliantResourcesCountUndefined: Self = StObject.set(x, "nonCompliantResourcesCount", js.undefined)
+    inline def setNonCompliantResourcesCountUndefined: Self = StObject.set(x, "nonCompliantResourcesCount", js.undefined)
     
-    @scala.inline
-    def setSuppressedNonCompliantResourcesCount(value: SuppressedNonCompliantResourcesCount): Self = StObject.set(x, "suppressedNonCompliantResourcesCount", value.asInstanceOf[js.Any])
+    inline def setSuppressedNonCompliantResourcesCount(value: SuppressedNonCompliantResourcesCount): Self = StObject.set(x, "suppressedNonCompliantResourcesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressedNonCompliantResourcesCountUndefined: Self = StObject.set(x, "suppressedNonCompliantResourcesCount", js.undefined)
+    inline def setSuppressedNonCompliantResourcesCountUndefined: Self = StObject.set(x, "suppressedNonCompliantResourcesCount", js.undefined)
     
-    @scala.inline
-    def setTotalResourcesCount(value: TotalResourcesCount): Self = StObject.set(x, "totalResourcesCount", value.asInstanceOf[js.Any])
+    inline def setTotalResourcesCount(value: TotalResourcesCount): Self = StObject.set(x, "totalResourcesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalResourcesCountUndefined: Self = StObject.set(x, "totalResourcesCount", js.undefined)
+    inline def setTotalResourcesCountUndefined: Self = StObject.set(x, "totalResourcesCount", js.undefined)
   }
 }

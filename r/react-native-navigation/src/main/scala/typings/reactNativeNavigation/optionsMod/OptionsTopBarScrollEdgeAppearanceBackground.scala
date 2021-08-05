@@ -19,25 +19,19 @@ trait OptionsTopBarScrollEdgeAppearanceBackground extends StObject {
 }
 object OptionsTopBarScrollEdgeAppearanceBackground {
   
-  @scala.inline
-  def apply(): OptionsTopBarScrollEdgeAppearanceBackground = {
+  inline def apply(): OptionsTopBarScrollEdgeAppearanceBackground = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionsTopBarScrollEdgeAppearanceBackground]
   }
   
-  @scala.inline
-  implicit class OptionsTopBarScrollEdgeAppearanceBackgroundMutableBuilder[Self <: OptionsTopBarScrollEdgeAppearanceBackground] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsTopBarScrollEdgeAppearanceBackground](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
+    inline def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
+    inline def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
   }
 }

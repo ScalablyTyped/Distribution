@@ -21,25 +21,19 @@ trait SchemaWriteInstruction extends StObject {
 }
 object SchemaWriteInstruction {
   
-  @scala.inline
-  def apply(): SchemaWriteInstruction = {
+  inline def apply(): SchemaWriteInstruction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWriteInstruction]
   }
   
-  @scala.inline
-  implicit class SchemaWriteInstructionMutableBuilder[Self <: SchemaWriteInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWriteInstruction](x: Self) {
     
-    @scala.inline
-    def setInput(value: SchemaInstructionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: SchemaInstructionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setSink(value: SchemaSink): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
+    inline def setSink(value: SchemaSink): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinkUndefined: Self = StObject.set(x, "sink", js.undefined)
+    inline def setSinkUndefined: Self = StObject.set(x, "sink", js.undefined)
   }
 }

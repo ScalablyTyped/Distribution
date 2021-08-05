@@ -32,25 +32,19 @@ trait PlusMessagingBodyType extends StObject {
 }
 object PlusMessagingBodyType {
   
-  @scala.inline
-  def apply(): PlusMessagingBodyType = {
+  inline def apply(): PlusMessagingBodyType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusMessagingBodyType]
   }
   
-  @scala.inline
-  implicit class PlusMessagingBodyTypeMutableBuilder[Self <: PlusMessagingBodyType] (val x: Self) extends AnyVal {
+  extension [Self <: PlusMessagingBodyType](x: Self) {
     
-    @scala.inline
-    def setTextSlashhtml(value: String): Self = StObject.set(x, "text/html", value.asInstanceOf[js.Any])
+    inline def setTextSlashhtml(value: String): Self = StObject.set(x, "text/html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextSlashhtmlUndefined: Self = StObject.set(x, "text/html", js.undefined)
+    inline def setTextSlashhtmlUndefined: Self = StObject.set(x, "text/html", js.undefined)
     
-    @scala.inline
-    def setTextSlashplain(value: String): Self = StObject.set(x, "text/plain", value.asInstanceOf[js.Any])
+    inline def setTextSlashplain(value: String): Self = StObject.set(x, "text/plain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextSlashplainUndefined: Self = StObject.set(x, "text/plain", js.undefined)
+    inline def setTextSlashplainUndefined: Self = StObject.set(x, "text/plain", js.undefined)
   }
 }

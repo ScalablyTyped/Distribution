@@ -51,54 +51,40 @@ object web3ProviderMod {
   }
   object ExternalProvider {
     
-    @scala.inline
-    def apply(): ExternalProvider = {
+    inline def apply(): ExternalProvider = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExternalProvider]
     }
     
-    @scala.inline
-    implicit class ExternalProviderMutableBuilder[Self <: ExternalProvider] (val x: Self) extends AnyVal {
+    extension [Self <: ExternalProvider](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setIsMetaMask(value: Boolean): Self = StObject.set(x, "isMetaMask", value.asInstanceOf[js.Any])
+      inline def setIsMetaMask(value: Boolean): Self = StObject.set(x, "isMetaMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMetaMaskUndefined: Self = StObject.set(x, "isMetaMask", js.undefined)
+      inline def setIsMetaMaskUndefined: Self = StObject.set(x, "isMetaMask", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setRequest(value: /* request */ Method => js.Promise[js.Any]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+      inline def setRequest(value: /* request */ Method => js.Promise[js.Any]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      @scala.inline
-      def setSend(
+      inline def setSend(
         value: (/* request */ Method, /* callback */ js.Function2[/* error */ js.Any, /* response */ js.Any, Unit]) => Unit
       ): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSendAsync(
+      inline def setSendAsync(
         value: (/* request */ Method, /* callback */ js.Function2[/* error */ js.Any, /* response */ js.Any, Unit]) => Unit
       ): Self = StObject.set(x, "sendAsync", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSendAsyncUndefined: Self = StObject.set(x, "sendAsync", js.undefined)
+      inline def setSendAsyncUndefined: Self = StObject.set(x, "sendAsync", js.undefined)
       
-      @scala.inline
-      def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
+      inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
     }
   }
   

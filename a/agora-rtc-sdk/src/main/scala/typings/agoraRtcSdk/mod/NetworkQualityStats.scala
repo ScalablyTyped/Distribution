@@ -39,25 +39,19 @@ trait NetworkQualityStats extends StObject {
 }
 object NetworkQualityStats {
   
-  @scala.inline
-  def apply(): NetworkQualityStats = {
+  inline def apply(): NetworkQualityStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkQualityStats]
   }
   
-  @scala.inline
-  implicit class NetworkQualityStatsMutableBuilder[Self <: NetworkQualityStats] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkQualityStats](x: Self) {
     
-    @scala.inline
-    def setDownlinkNetworkQuality(value: String): Self = StObject.set(x, "downlinkNetworkQuality", value.asInstanceOf[js.Any])
+    inline def setDownlinkNetworkQuality(value: String): Self = StObject.set(x, "downlinkNetworkQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownlinkNetworkQualityUndefined: Self = StObject.set(x, "downlinkNetworkQuality", js.undefined)
+    inline def setDownlinkNetworkQualityUndefined: Self = StObject.set(x, "downlinkNetworkQuality", js.undefined)
     
-    @scala.inline
-    def setUplinkNetworkQuality(value: String): Self = StObject.set(x, "uplinkNetworkQuality", value.asInstanceOf[js.Any])
+    inline def setUplinkNetworkQuality(value: String): Self = StObject.set(x, "uplinkNetworkQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUplinkNetworkQualityUndefined: Self = StObject.set(x, "uplinkNetworkQuality", js.undefined)
+    inline def setUplinkNetworkQualityUndefined: Self = StObject.set(x, "uplinkNetworkQuality", js.undefined)
   }
 }

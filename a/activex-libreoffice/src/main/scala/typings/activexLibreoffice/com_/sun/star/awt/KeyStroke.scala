@@ -36,25 +36,19 @@ trait KeyStroke extends StObject {
 }
 object KeyStroke {
   
-  @scala.inline
-  def apply(KeyChar: String, KeyCode: Double, KeyFunc: Double, Modifiers: Double): KeyStroke = {
+  inline def apply(KeyChar: String, KeyCode: Double, KeyFunc: Double, Modifiers: Double): KeyStroke = {
     val __obj = js.Dynamic.literal(KeyChar = KeyChar.asInstanceOf[js.Any], KeyCode = KeyCode.asInstanceOf[js.Any], KeyFunc = KeyFunc.asInstanceOf[js.Any], Modifiers = Modifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyStroke]
   }
   
-  @scala.inline
-  implicit class KeyStrokeMutableBuilder[Self <: KeyStroke] (val x: Self) extends AnyVal {
+  extension [Self <: KeyStroke](x: Self) {
     
-    @scala.inline
-    def setKeyChar(value: String): Self = StObject.set(x, "KeyChar", value.asInstanceOf[js.Any])
+    inline def setKeyChar(value: String): Self = StObject.set(x, "KeyChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyCode(value: Double): Self = StObject.set(x, "KeyCode", value.asInstanceOf[js.Any])
+    inline def setKeyCode(value: Double): Self = StObject.set(x, "KeyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyFunc(value: Double): Self = StObject.set(x, "KeyFunc", value.asInstanceOf[js.Any])
+    inline def setKeyFunc(value: Double): Self = StObject.set(x, "KeyFunc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiers(value: Double): Self = StObject.set(x, "Modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: Double): Self = StObject.set(x, "Modifiers", value.asInstanceOf[js.Any])
   }
 }

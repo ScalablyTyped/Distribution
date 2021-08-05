@@ -47,13 +47,10 @@ object privateKeyInfoMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait PrivateKeyInfo extends StObject {
@@ -82,8 +79,7 @@ object privateKeyInfoMod {
   }
   object PrivateKeyInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fromJSON: JsonWebKey => Unit,
       fromSchema: js.Any => Unit,
       privateKey: OctetString,
@@ -96,44 +92,31 @@ object privateKeyInfoMod {
       __obj.asInstanceOf[PrivateKeyInfo]
     }
     
-    @scala.inline
-    implicit class PrivateKeyInfoMutableBuilder[Self <: PrivateKeyInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PrivateKeyInfo](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[typings.pkijs.attributeMod.default]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[typings.pkijs.attributeMod.default]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setAttributesVarargs(value: typings.pkijs.attributeMod.default*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: typings.pkijs.attributeMod.default*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setFromJSON(value: JsonWebKey => Unit): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
+      inline def setFromJSON(value: JsonWebKey => Unit): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParsedKey(value: typings.pkijs.ecprivatekeyMod.default | typings.pkijs.rsaprivatekeyMod.default): Self = StObject.set(x, "parsedKey", value.asInstanceOf[js.Any])
+      inline def setParsedKey(value: typings.pkijs.ecprivatekeyMod.default | typings.pkijs.rsaprivatekeyMod.default): Self = StObject.set(x, "parsedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsedKeyUndefined: Self = StObject.set(x, "parsedKey", js.undefined)
+      inline def setParsedKeyUndefined: Self = StObject.set(x, "parsedKey", js.undefined)
       
-      @scala.inline
-      def setPrivateKey(value: OctetString): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: OctetString): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateKeyAlgorithm(value: typings.pkijs.algorithmIdentifierMod.default): Self = StObject.set(x, "privateKeyAlgorithm", value.asInstanceOf[js.Any])
+      inline def setPrivateKeyAlgorithm(value: typings.pkijs.algorithmIdentifierMod.default): Self = StObject.set(x, "privateKeyAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

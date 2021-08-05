@@ -25,25 +25,19 @@ trait IgPivotViewPivotGridOptionsLevelSortDirection
 }
 object IgPivotViewPivotGridOptionsLevelSortDirection {
   
-  @scala.inline
-  def apply(): IgPivotViewPivotGridOptionsLevelSortDirection = {
+  inline def apply(): IgPivotViewPivotGridOptionsLevelSortDirection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgPivotViewPivotGridOptionsLevelSortDirection]
   }
   
-  @scala.inline
-  implicit class IgPivotViewPivotGridOptionsLevelSortDirectionMutableBuilder[Self <: IgPivotViewPivotGridOptionsLevelSortDirection] (val x: Self) extends AnyVal {
+  extension [Self <: IgPivotViewPivotGridOptionsLevelSortDirection](x: Self) {
     
-    @scala.inline
-    def setLevelUniqueName(value: String): Self = StObject.set(x, "levelUniqueName", value.asInstanceOf[js.Any])
+    inline def setLevelUniqueName(value: String): Self = StObject.set(x, "levelUniqueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUniqueNameUndefined: Self = StObject.set(x, "levelUniqueName", js.undefined)
+    inline def setLevelUniqueNameUndefined: Self = StObject.set(x, "levelUniqueName", js.undefined)
     
-    @scala.inline
-    def setSortDirection(value: js.Any): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
+    inline def setSortDirection(value: js.Any): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
+    inline def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
   }
 }

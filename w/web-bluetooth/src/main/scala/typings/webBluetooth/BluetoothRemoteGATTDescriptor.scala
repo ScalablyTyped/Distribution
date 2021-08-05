@@ -20,8 +20,7 @@ trait BluetoothRemoteGATTDescriptor extends StObject {
 }
 object BluetoothRemoteGATTDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     characteristic: BluetoothRemoteGATTCharacteristic,
     readValue: () => js.Promise[DataView],
     uuid: String,
@@ -31,25 +30,18 @@ object BluetoothRemoteGATTDescriptor {
     __obj.asInstanceOf[BluetoothRemoteGATTDescriptor]
   }
   
-  @scala.inline
-  implicit class BluetoothRemoteGATTDescriptorMutableBuilder[Self <: BluetoothRemoteGATTDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothRemoteGATTDescriptor](x: Self) {
     
-    @scala.inline
-    def setCharacteristic(value: BluetoothRemoteGATTCharacteristic): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
+    inline def setCharacteristic(value: BluetoothRemoteGATTCharacteristic): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadValue(value: () => js.Promise[DataView]): Self = StObject.set(x, "readValue", js.Any.fromFunction0(value))
+    inline def setReadValue(value: () => js.Promise[DataView]): Self = StObject.set(x, "readValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: DataView): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: DataView): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setWriteValue(value: BufferSource => js.Promise[Unit]): Self = StObject.set(x, "writeValue", js.Any.fromFunction1(value))
+    inline def setWriteValue(value: BufferSource => js.Promise[Unit]): Self = StObject.set(x, "writeValue", js.Any.fromFunction1(value))
   }
 }

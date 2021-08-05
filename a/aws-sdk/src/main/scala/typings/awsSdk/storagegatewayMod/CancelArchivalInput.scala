@@ -15,19 +15,15 @@ trait CancelArchivalInput extends StObject {
 }
 object CancelArchivalInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN, TapeARN: TapeARN): CancelArchivalInput = {
+  inline def apply(GatewayARN: GatewayARN, TapeARN: TapeARN): CancelArchivalInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any], TapeARN = TapeARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelArchivalInput]
   }
   
-  @scala.inline
-  implicit class CancelArchivalInputMutableBuilder[Self <: CancelArchivalInput] (val x: Self) extends AnyVal {
+  extension [Self <: CancelArchivalInput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
+    inline def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
   }
 }

@@ -52,28 +52,21 @@ trait AccessibleTableModelChange extends StObject {
 }
 object AccessibleTableModelChange {
   
-  @scala.inline
-  def apply(FirstColumn: Double, FirstRow: Double, LastColumn: Double, LastRow: Double, Type: Double): AccessibleTableModelChange = {
+  inline def apply(FirstColumn: Double, FirstRow: Double, LastColumn: Double, LastRow: Double, Type: Double): AccessibleTableModelChange = {
     val __obj = js.Dynamic.literal(FirstColumn = FirstColumn.asInstanceOf[js.Any], FirstRow = FirstRow.asInstanceOf[js.Any], LastColumn = LastColumn.asInstanceOf[js.Any], LastRow = LastRow.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibleTableModelChange]
   }
   
-  @scala.inline
-  implicit class AccessibleTableModelChangeMutableBuilder[Self <: AccessibleTableModelChange] (val x: Self) extends AnyVal {
+  extension [Self <: AccessibleTableModelChange](x: Self) {
     
-    @scala.inline
-    def setFirstColumn(value: Double): Self = StObject.set(x, "FirstColumn", value.asInstanceOf[js.Any])
+    inline def setFirstColumn(value: Double): Self = StObject.set(x, "FirstColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstRow(value: Double): Self = StObject.set(x, "FirstRow", value.asInstanceOf[js.Any])
+    inline def setFirstRow(value: Double): Self = StObject.set(x, "FirstRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastColumn(value: Double): Self = StObject.set(x, "LastColumn", value.asInstanceOf[js.Any])
+    inline def setLastColumn(value: Double): Self = StObject.set(x, "LastColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRow(value: Double): Self = StObject.set(x, "LastRow", value.asInstanceOf[js.Any])
+    inline def setLastRow(value: Double): Self = StObject.set(x, "LastRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

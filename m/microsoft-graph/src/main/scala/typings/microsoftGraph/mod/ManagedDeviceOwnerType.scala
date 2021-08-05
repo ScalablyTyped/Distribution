@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ManagedDeviceOwnerType extends StObject
 object ManagedDeviceOwnerType {
   
-  @scala.inline
-  def company: typings.microsoftGraph.microsoftGraphStrings.company = "company".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.company]
+  inline def company: typings.microsoftGraph.microsoftGraphStrings.company = "company".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.company]
   
-  @scala.inline
-  def personal: typings.microsoftGraph.microsoftGraphStrings.personal = "personal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.personal]
+  inline def personal: typings.microsoftGraph.microsoftGraphStrings.personal = "personal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.personal]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }

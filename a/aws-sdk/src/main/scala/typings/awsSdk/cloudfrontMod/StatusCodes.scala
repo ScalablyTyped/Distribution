@@ -18,22 +18,17 @@ trait StatusCodes extends StObject {
 }
 object StatusCodes {
   
-  @scala.inline
-  def apply(Items: StatusCodeList, Quantity: integer): StatusCodes = {
+  inline def apply(Items: StatusCodeList, Quantity: integer): StatusCodes = {
     val __obj = js.Dynamic.literal(Items = Items.asInstanceOf[js.Any], Quantity = Quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusCodes]
   }
   
-  @scala.inline
-  implicit class StatusCodesMutableBuilder[Self <: StatusCodes] (val x: Self) extends AnyVal {
+  extension [Self <: StatusCodes](x: Self) {
     
-    @scala.inline
-    def setItems(value: StatusCodeList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: StatusCodeList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: integer*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: integer*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }
 }

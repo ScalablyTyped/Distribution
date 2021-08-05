@@ -22,20 +22,15 @@ object toplevelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def extractTopLevelProperties(t: TopLevelProperties[ExprRef | SignalRef], includeParams: Boolean): TopLevelProperties[SignalRef] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractTopLevelProperties")(t.asInstanceOf[js.Any], includeParams.asInstanceOf[js.Any])).asInstanceOf[TopLevelProperties[SignalRef]]
+  inline def extractTopLevelProperties(t: TopLevelProperties[ExprRef | SignalRef], includeParams: Boolean): TopLevelProperties[SignalRef] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractTopLevelProperties")(t.asInstanceOf[js.Any], includeParams.asInstanceOf[js.Any])).asInstanceOf[TopLevelProperties[SignalRef]]
   
-  @scala.inline
-  def getFitType(): FitType = ^.asInstanceOf[js.Dynamic].applyDynamic("getFitType")().asInstanceOf[FitType]
+  inline def getFitType(): FitType = ^.asInstanceOf[js.Dynamic].applyDynamic("getFitType")().asInstanceOf[FitType]
   
-  @scala.inline
-  def getFitType_height(sizeType: height): FitType = ^.asInstanceOf[js.Dynamic].applyDynamic("getFitType")(sizeType.asInstanceOf[js.Any]).asInstanceOf[FitType]
+  inline def getFitType_height(sizeType: height): FitType = ^.asInstanceOf[js.Dynamic].applyDynamic("getFitType")(sizeType.asInstanceOf[js.Any]).asInstanceOf[FitType]
   
-  @scala.inline
-  def getFitType_width(sizeType: width): FitType = ^.asInstanceOf[js.Dynamic].applyDynamic("getFitType")(sizeType.asInstanceOf[js.Any]).asInstanceOf[FitType]
+  inline def getFitType_width(sizeType: width): FitType = ^.asInstanceOf[js.Dynamic].applyDynamic("getFitType")(sizeType.asInstanceOf[js.Any]).asInstanceOf[FitType]
   
-  @scala.inline
-  def isFitType(autoSizeType: AutosizeType): /* is vega-lite.vega-lite/build/src/spec/toplevel.FitType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFitType")(autoSizeType.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/toplevel.FitType */ Boolean]
+  inline def isFitType(autoSizeType: AutosizeType): /* is vega-lite.vega-lite/build/src/spec/toplevel.FitType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFitType")(autoSizeType.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/toplevel.FitType */ Boolean]
   
   trait AutoSizeParams extends StObject {
     
@@ -62,32 +57,24 @@ object toplevelMod {
   }
   object AutoSizeParams {
     
-    @scala.inline
-    def apply(): AutoSizeParams = {
+    inline def apply(): AutoSizeParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoSizeParams]
     }
     
-    @scala.inline
-    implicit class AutoSizeParamsMutableBuilder[Self <: AutoSizeParams] (val x: Self) extends AnyVal {
+    extension [Self <: AutoSizeParams](x: Self) {
       
-      @scala.inline
-      def setContains(value: content | padding): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+      inline def setContains(value: content | padding): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
+      inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
       
-      @scala.inline
-      def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setType(value: AutosizeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: AutosizeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -101,20 +88,15 @@ object toplevelMod {
   trait AutosizeType extends StObject
   object AutosizeType {
     
-    @scala.inline
-    def fit: typings.vegaLite.vegaLiteStrings.fit = "fit".asInstanceOf[typings.vegaLite.vegaLiteStrings.fit]
+    inline def fit: typings.vegaLite.vegaLiteStrings.fit = "fit".asInstanceOf[typings.vegaLite.vegaLiteStrings.fit]
     
-    @scala.inline
-    def `fit-x`: typings.vegaLite.vegaLiteStrings.`fit-x` = "fit-x".asInstanceOf[typings.vegaLite.vegaLiteStrings.`fit-x`]
+    inline def `fit-x`: typings.vegaLite.vegaLiteStrings.`fit-x` = "fit-x".asInstanceOf[typings.vegaLite.vegaLiteStrings.`fit-x`]
     
-    @scala.inline
-    def `fit-y`: typings.vegaLite.vegaLiteStrings.`fit-y` = "fit-y".asInstanceOf[typings.vegaLite.vegaLiteStrings.`fit-y`]
+    inline def `fit-y`: typings.vegaLite.vegaLiteStrings.`fit-y` = "fit-y".asInstanceOf[typings.vegaLite.vegaLiteStrings.`fit-y`]
     
-    @scala.inline
-    def none: typings.vegaLite.vegaLiteStrings.none = "none".asInstanceOf[typings.vegaLite.vegaLiteStrings.none]
+    inline def none: typings.vegaLite.vegaLiteStrings.none = "none".asInstanceOf[typings.vegaLite.vegaLiteStrings.none]
     
-    @scala.inline
-    def pad: typings.vegaLite.vegaLiteStrings.pad = "pad".asInstanceOf[typings.vegaLite.vegaLiteStrings.pad]
+    inline def pad: typings.vegaLite.vegaLiteStrings.pad = "pad".asInstanceOf[typings.vegaLite.vegaLiteStrings.pad]
   }
   
   type Datasets = Dict[InlineDataset]
@@ -127,14 +109,11 @@ object toplevelMod {
   trait FitType extends StObject
   object FitType {
     
-    @scala.inline
-    def fit: typings.vegaLite.vegaLiteStrings.fit = "fit".asInstanceOf[typings.vegaLite.vegaLiteStrings.fit]
+    inline def fit: typings.vegaLite.vegaLiteStrings.fit = "fit".asInstanceOf[typings.vegaLite.vegaLiteStrings.fit]
     
-    @scala.inline
-    def `fit-x`: typings.vegaLite.vegaLiteStrings.`fit-x` = "fit-x".asInstanceOf[typings.vegaLite.vegaLiteStrings.`fit-x`]
+    inline def `fit-x`: typings.vegaLite.vegaLiteStrings.`fit-x` = "fit-x".asInstanceOf[typings.vegaLite.vegaLiteStrings.`fit-x`]
     
-    @scala.inline
-    def `fit-y`: typings.vegaLite.vegaLiteStrings.`fit-y` = "fit-y".asInstanceOf[typings.vegaLite.vegaLiteStrings.`fit-y`]
+    inline def `fit-y`: typings.vegaLite.vegaLiteStrings.`fit-y` = "fit-y".asInstanceOf[typings.vegaLite.vegaLiteStrings.`fit-y`]
   }
   
   type Padding = Double | Bottom
@@ -173,41 +152,30 @@ object toplevelMod {
   }
   object TopLevelProperties {
     
-    @scala.inline
-    def apply[ES /* <: ExprRef | SignalRef */](): TopLevelProperties[ES] = {
+    inline def apply[ES /* <: ExprRef | SignalRef */](): TopLevelProperties[ES] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TopLevelProperties[ES]]
     }
     
-    @scala.inline
-    implicit class TopLevelPropertiesMutableBuilder[Self <: TopLevelProperties[?], ES /* <: ExprRef | SignalRef */] (val x: Self & TopLevelProperties[ES]) extends AnyVal {
+    extension [Self <: TopLevelProperties[?], ES /* <: ExprRef | SignalRef */](x: Self & TopLevelProperties[ES]) {
       
-      @scala.inline
-      def setAutosize(value: AutosizeType | AutoSizeParams): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
+      inline def setAutosize(value: AutosizeType | AutoSizeParams): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutosizeUndefined: Self = StObject.set(x, "autosize", js.undefined)
+      inline def setAutosizeUndefined: Self = StObject.set(x, "autosize", js.undefined)
       
-      @scala.inline
-      def setBackground(value: Color | ES): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: Color | ES): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Padding | ES): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Padding | ES): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Array[Parameter]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[Parameter]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setParamsVarargs(value: Parameter*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: Parameter*): Self = StObject.set(x, "params", js.Array(value :_*))
     }
   }
 }

@@ -24,48 +24,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventType extends StObject
 object EventType {
   
-  @scala.inline
-  def animationend: typings.weixinApp.weixinAppStrings.animationend = "animationend".asInstanceOf[typings.weixinApp.weixinAppStrings.animationend]
+  inline def animationend: typings.weixinApp.weixinAppStrings.animationend = "animationend".asInstanceOf[typings.weixinApp.weixinAppStrings.animationend]
   
-  @scala.inline
-  def animationiteration: typings.weixinApp.weixinAppStrings.animationiteration = "animationiteration".asInstanceOf[typings.weixinApp.weixinAppStrings.animationiteration]
+  inline def animationiteration: typings.weixinApp.weixinAppStrings.animationiteration = "animationiteration".asInstanceOf[typings.weixinApp.weixinAppStrings.animationiteration]
   
-  @scala.inline
-  def animationstart: typings.weixinApp.weixinAppStrings.animationstart = "animationstart".asInstanceOf[typings.weixinApp.weixinAppStrings.animationstart]
+  inline def animationstart: typings.weixinApp.weixinAppStrings.animationstart = "animationstart".asInstanceOf[typings.weixinApp.weixinAppStrings.animationstart]
   
-  @scala.inline
-  def form: typings.weixinApp.weixinAppStrings.form = "form".asInstanceOf[typings.weixinApp.weixinAppStrings.form]
+  inline def form: typings.weixinApp.weixinAppStrings.form = "form".asInstanceOf[typings.weixinApp.weixinAppStrings.form]
   
-  @scala.inline
-  def input: typings.weixinApp.weixinAppStrings.input = "input".asInstanceOf[typings.weixinApp.weixinAppStrings.input]
+  inline def input: typings.weixinApp.weixinAppStrings.input = "input".asInstanceOf[typings.weixinApp.weixinAppStrings.input]
   
-  @scala.inline
-  def longpress: typings.weixinApp.weixinAppStrings.longpress = "longpress".asInstanceOf[typings.weixinApp.weixinAppStrings.longpress]
+  inline def longpress: typings.weixinApp.weixinAppStrings.longpress = "longpress".asInstanceOf[typings.weixinApp.weixinAppStrings.longpress]
   
-  @scala.inline
-  def scroll: typings.weixinApp.weixinAppStrings.scroll = "scroll".asInstanceOf[typings.weixinApp.weixinAppStrings.scroll]
+  inline def scroll: typings.weixinApp.weixinAppStrings.scroll = "scroll".asInstanceOf[typings.weixinApp.weixinAppStrings.scroll]
   
-  @scala.inline
-  def submit: typings.weixinApp.weixinAppStrings.submit = "submit".asInstanceOf[typings.weixinApp.weixinAppStrings.submit]
+  inline def submit: typings.weixinApp.weixinAppStrings.submit = "submit".asInstanceOf[typings.weixinApp.weixinAppStrings.submit]
   
-  @scala.inline
-  def tap: typings.weixinApp.weixinAppStrings.tap = "tap".asInstanceOf[typings.weixinApp.weixinAppStrings.tap]
+  inline def tap: typings.weixinApp.weixinAppStrings.tap = "tap".asInstanceOf[typings.weixinApp.weixinAppStrings.tap]
   
-  @scala.inline
-  def touchcancel: typings.weixinApp.weixinAppStrings.touchcancel = "touchcancel".asInstanceOf[typings.weixinApp.weixinAppStrings.touchcancel]
+  inline def touchcancel: typings.weixinApp.weixinAppStrings.touchcancel = "touchcancel".asInstanceOf[typings.weixinApp.weixinAppStrings.touchcancel]
   
-  @scala.inline
-  def touchend: typings.weixinApp.weixinAppStrings.touchend = "touchend".asInstanceOf[typings.weixinApp.weixinAppStrings.touchend]
+  inline def touchend: typings.weixinApp.weixinAppStrings.touchend = "touchend".asInstanceOf[typings.weixinApp.weixinAppStrings.touchend]
   
-  @scala.inline
-  def touchforcechange: typings.weixinApp.weixinAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typings.weixinApp.weixinAppStrings.touchforcechange]
+  inline def touchforcechange: typings.weixinApp.weixinAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typings.weixinApp.weixinAppStrings.touchforcechange]
   
-  @scala.inline
-  def touchmove: typings.weixinApp.weixinAppStrings.touchmove = "touchmove".asInstanceOf[typings.weixinApp.weixinAppStrings.touchmove]
+  inline def touchmove: typings.weixinApp.weixinAppStrings.touchmove = "touchmove".asInstanceOf[typings.weixinApp.weixinAppStrings.touchmove]
   
-  @scala.inline
-  def touchstart: typings.weixinApp.weixinAppStrings.touchstart = "touchstart".asInstanceOf[typings.weixinApp.weixinAppStrings.touchstart]
+  inline def touchstart: typings.weixinApp.weixinAppStrings.touchstart = "touchstart".asInstanceOf[typings.weixinApp.weixinAppStrings.touchstart]
   
-  @scala.inline
-  def transitionend: typings.weixinApp.weixinAppStrings.transitionend = "transitionend".asInstanceOf[typings.weixinApp.weixinAppStrings.transitionend]
+  inline def transitionend: typings.weixinApp.weixinAppStrings.transitionend = "transitionend".asInstanceOf[typings.weixinApp.weixinAppStrings.transitionend]
 }

@@ -12,16 +12,13 @@ trait SearchPaneResultSuggestionChosenEventArgs extends StObject {
 }
 object SearchPaneResultSuggestionChosenEventArgs {
   
-  @scala.inline
-  def apply(tag: String): SearchPaneResultSuggestionChosenEventArgs = {
+  inline def apply(tag: String): SearchPaneResultSuggestionChosenEventArgs = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchPaneResultSuggestionChosenEventArgs]
   }
   
-  @scala.inline
-  implicit class SearchPaneResultSuggestionChosenEventArgsMutableBuilder[Self <: SearchPaneResultSuggestionChosenEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SearchPaneResultSuggestionChosenEventArgs](x: Self) {
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

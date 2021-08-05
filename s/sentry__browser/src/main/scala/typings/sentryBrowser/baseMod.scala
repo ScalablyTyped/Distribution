@@ -22,10 +22,10 @@ object baseMod {
     def this(options: TransportOptions) = this()
     
     /** Helper to get Sentry API endpoints. */
-    val _api: API = js.native
+    /* protected */ val _api: API = js.native
     
     /** A simple buffer holding all requests. */
-    val _buffer: PromiseBuffer[Response] = js.native
+    /* protected */ val _buffer: PromiseBuffer[Response] = js.native
     
     /**
       * Gets the time that given category is disabled until for rate limiting
@@ -48,7 +48,7 @@ object baseMod {
     /* protected */ def _isRateLimited(category: String): Boolean = js.native
     
     /** Locks transport after receiving rate limits in a response */
-    val _rateLimits: Record[String, Date] = js.native
+    /* protected */ val _rateLimits: Record[String, Date] = js.native
     
     var options: TransportOptions = js.native
     

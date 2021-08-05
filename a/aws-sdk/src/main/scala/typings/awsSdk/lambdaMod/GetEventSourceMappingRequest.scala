@@ -13,16 +13,13 @@ trait GetEventSourceMappingRequest extends StObject {
 }
 object GetEventSourceMappingRequest {
   
-  @scala.inline
-  def apply(UUID: String): GetEventSourceMappingRequest = {
+  inline def apply(UUID: String): GetEventSourceMappingRequest = {
     val __obj = js.Dynamic.literal(UUID = UUID.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEventSourceMappingRequest]
   }
   
-  @scala.inline
-  implicit class GetEventSourceMappingRequestMutableBuilder[Self <: GetEventSourceMappingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetEventSourceMappingRequest](x: Self) {
     
-    @scala.inline
-    def setUUID(value: String): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
+    inline def setUUID(value: String): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
   }
 }

@@ -37,8 +37,7 @@ trait XInterfaceAttributeTypeDescription
 }
 object XInterfaceAttributeTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MemberName: String,
     Name: String,
     Position: Double,
@@ -58,16 +57,12 @@ object XInterfaceAttributeTypeDescription {
     __obj.asInstanceOf[XInterfaceAttributeTypeDescription]
   }
   
-  @scala.inline
-  implicit class XInterfaceAttributeTypeDescriptionMutableBuilder[Self <: XInterfaceAttributeTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XInterfaceAttributeTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGetType(value: () => XTypeDescription): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => XTypeDescription): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsReadOnly(value: () => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
+    inline def setIsReadOnly(value: () => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: XTypeDescription): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: XTypeDescription): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

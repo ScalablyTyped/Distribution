@@ -18,43 +18,31 @@ trait CoverflowEffectOptions extends StObject {
 }
 object CoverflowEffectOptions {
   
-  @scala.inline
-  def apply(): CoverflowEffectOptions = {
+  inline def apply(): CoverflowEffectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CoverflowEffectOptions]
   }
   
-  @scala.inline
-  implicit class CoverflowEffectOptionsMutableBuilder[Self <: CoverflowEffectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CoverflowEffectOptions](x: Self) {
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+    inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
-    @scala.inline
-    def setModifier(value: Double): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: Double): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+    inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
-    @scala.inline
-    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
-    @scala.inline
-    def setSlideShadows(value: Boolean): Self = StObject.set(x, "slideShadows", value.asInstanceOf[js.Any])
+    inline def setSlideShadows(value: Boolean): Self = StObject.set(x, "slideShadows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideShadowsUndefined: Self = StObject.set(x, "slideShadows", js.undefined)
+    inline def setSlideShadowsUndefined: Self = StObject.set(x, "slideShadows", js.undefined)
     
-    @scala.inline
-    def setStretch(value: Double): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
+    inline def setStretch(value: Double): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
+    inline def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
   }
 }

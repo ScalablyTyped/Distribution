@@ -10,16 +10,13 @@ trait IColorHelperStatics extends StObject {
 }
 object IColorHelperStatics {
   
-  @scala.inline
-  def apply(fromArgb: (Double, Double, Double, Double) => Color): IColorHelperStatics = {
+  inline def apply(fromArgb: (Double, Double, Double, Double) => Color): IColorHelperStatics = {
     val __obj = js.Dynamic.literal(fromArgb = js.Any.fromFunction4(fromArgb))
     __obj.asInstanceOf[IColorHelperStatics]
   }
   
-  @scala.inline
-  implicit class IColorHelperStaticsMutableBuilder[Self <: IColorHelperStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IColorHelperStatics](x: Self) {
     
-    @scala.inline
-    def setFromArgb(value: (Double, Double, Double, Double) => Color): Self = StObject.set(x, "fromArgb", js.Any.fromFunction4(value))
+    inline def setFromArgb(value: (Double, Double, Double, Double) => Color): Self = StObject.set(x, "fromArgb", js.Any.fromFunction4(value))
   }
 }

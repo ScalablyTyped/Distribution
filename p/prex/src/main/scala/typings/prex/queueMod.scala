@@ -17,9 +17,9 @@ object queueMod {
   class AsyncQueue[T] () extends StObject {
     def this(iterable: Iterable[T | js.Thenable[T]]) = this()
     
-    var _available: js.Any = js.native
+    /* private */ var _available: js.Any = js.native
     
-    var _pending: js.Any = js.native
+    /* private */ var _pending: js.Any = js.native
     
     /**
       * Removes and returns a Promise for the first value in the queue. If the queue is empty,

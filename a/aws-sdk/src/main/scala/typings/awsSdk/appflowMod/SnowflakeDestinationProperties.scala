@@ -28,32 +28,24 @@ trait SnowflakeDestinationProperties extends StObject {
 }
 object SnowflakeDestinationProperties {
   
-  @scala.inline
-  def apply(intermediateBucketName: BucketName, `object`: Object): SnowflakeDestinationProperties = {
+  inline def apply(intermediateBucketName: BucketName, `object`: Object): SnowflakeDestinationProperties = {
     val __obj = js.Dynamic.literal(intermediateBucketName = intermediateBucketName.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnowflakeDestinationProperties]
   }
   
-  @scala.inline
-  implicit class SnowflakeDestinationPropertiesMutableBuilder[Self <: SnowflakeDestinationProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SnowflakeDestinationProperties](x: Self) {
     
-    @scala.inline
-    def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
+    inline def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
+    inline def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
     
-    @scala.inline
-    def setErrorHandlingConfig(value: ErrorHandlingConfig): Self = StObject.set(x, "errorHandlingConfig", value.asInstanceOf[js.Any])
+    inline def setErrorHandlingConfig(value: ErrorHandlingConfig): Self = StObject.set(x, "errorHandlingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorHandlingConfigUndefined: Self = StObject.set(x, "errorHandlingConfig", js.undefined)
+    inline def setErrorHandlingConfigUndefined: Self = StObject.set(x, "errorHandlingConfig", js.undefined)
     
-    @scala.inline
-    def setIntermediateBucketName(value: BucketName): Self = StObject.set(x, "intermediateBucketName", value.asInstanceOf[js.Any])
+    inline def setIntermediateBucketName(value: BucketName): Self = StObject.set(x, "intermediateBucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

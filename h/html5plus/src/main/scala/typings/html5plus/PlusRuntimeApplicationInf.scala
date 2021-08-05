@@ -49,37 +49,27 @@ trait PlusRuntimeApplicationInf extends StObject {
 }
 object PlusRuntimeApplicationInf {
   
-  @scala.inline
-  def apply(): PlusRuntimeApplicationInf = {
+  inline def apply(): PlusRuntimeApplicationInf = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusRuntimeApplicationInf]
   }
   
-  @scala.inline
-  implicit class PlusRuntimeApplicationInfMutableBuilder[Self <: PlusRuntimeApplicationInf] (val x: Self) extends AnyVal {
+  extension [Self <: PlusRuntimeApplicationInf](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+    inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
-    @scala.inline
-    def setNewTask(value: Boolean): Self = StObject.set(x, "newTask", value.asInstanceOf[js.Any])
+    inline def setNewTask(value: Boolean): Self = StObject.set(x, "newTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewTaskUndefined: Self = StObject.set(x, "newTask", js.undefined)
+    inline def setNewTaskUndefined: Self = StObject.set(x, "newTask", js.undefined)
     
-    @scala.inline
-    def setPname(value: String): Self = StObject.set(x, "pname", value.asInstanceOf[js.Any])
+    inline def setPname(value: String): Self = StObject.set(x, "pname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPnameUndefined: Self = StObject.set(x, "pname", js.undefined)
+    inline def setPnameUndefined: Self = StObject.set(x, "pname", js.undefined)
   }
 }

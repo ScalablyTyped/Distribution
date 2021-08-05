@@ -23,34 +23,25 @@ trait SchemaUnitInvoiceAdditionalCharge extends StObject {
 }
 object SchemaUnitInvoiceAdditionalCharge {
   
-  @scala.inline
-  def apply(): SchemaUnitInvoiceAdditionalCharge = {
+  inline def apply(): SchemaUnitInvoiceAdditionalCharge = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUnitInvoiceAdditionalCharge]
   }
   
-  @scala.inline
-  implicit class SchemaUnitInvoiceAdditionalChargeMutableBuilder[Self <: SchemaUnitInvoiceAdditionalCharge] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUnitInvoiceAdditionalCharge](x: Self) {
     
-    @scala.inline
-    def setAdditionalChargeAmount(value: SchemaAmount): Self = StObject.set(x, "additionalChargeAmount", value.asInstanceOf[js.Any])
+    inline def setAdditionalChargeAmount(value: SchemaAmount): Self = StObject.set(x, "additionalChargeAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalChargeAmountUndefined: Self = StObject.set(x, "additionalChargeAmount", js.undefined)
+    inline def setAdditionalChargeAmountUndefined: Self = StObject.set(x, "additionalChargeAmount", js.undefined)
     
-    @scala.inline
-    def setAdditionalChargePromotions(value: js.Array[SchemaPromotion]): Self = StObject.set(x, "additionalChargePromotions", value.asInstanceOf[js.Any])
+    inline def setAdditionalChargePromotions(value: js.Array[SchemaPromotion]): Self = StObject.set(x, "additionalChargePromotions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalChargePromotionsUndefined: Self = StObject.set(x, "additionalChargePromotions", js.undefined)
+    inline def setAdditionalChargePromotionsUndefined: Self = StObject.set(x, "additionalChargePromotions", js.undefined)
     
-    @scala.inline
-    def setAdditionalChargePromotionsVarargs(value: SchemaPromotion*): Self = StObject.set(x, "additionalChargePromotions", js.Array(value :_*))
+    inline def setAdditionalChargePromotionsVarargs(value: SchemaPromotion*): Self = StObject.set(x, "additionalChargePromotions", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

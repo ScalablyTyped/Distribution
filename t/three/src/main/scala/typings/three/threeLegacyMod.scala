@@ -19,8 +19,7 @@ object threeLegacyMod {
   sealed trait Colors extends StObject
   object Colors {
     
-    @scala.inline
-    def apply(value: scala.Nothing): js.UndefOr[Colors & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Colors")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Colors & scala.Nothing]]
+    inline def apply(value: scala.Nothing): js.UndefOr[Colors & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Colors")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Colors & scala.Nothing]]
   }
   
   @JSImport("three/src/Three.Legacy", "FaceColors")
@@ -47,14 +46,11 @@ object threeLegacyMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attach(child: Object3D, scene: Scene, parent: Object3D): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(child.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def attach(child: Object3D, scene: Scene, parent: Object3D): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(child.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def createMultiMaterialObject(geometry: Geometry, materials: js.Array[Material]): Object3D = (^.asInstanceOf[js.Dynamic].applyDynamic("createMultiMaterialObject")(geometry.asInstanceOf[js.Any], materials.asInstanceOf[js.Any])).asInstanceOf[Object3D]
+    inline def createMultiMaterialObject(geometry: Geometry, materials: js.Array[Material]): Object3D = (^.asInstanceOf[js.Dynamic].applyDynamic("createMultiMaterialObject")(geometry.asInstanceOf[js.Any], materials.asInstanceOf[js.Any])).asInstanceOf[Object3D]
     
-    @scala.inline
-    def detach(child: Object3D, parent: Object3D, scene: Scene): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detach")(child.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def detach(child: Object3D, parent: Object3D, scene: Scene): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detach")(child.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("three/src/Three.Legacy", "VertexColors")

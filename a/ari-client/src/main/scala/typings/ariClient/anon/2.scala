@@ -10,19 +10,15 @@ trait `2` extends StObject {
 }
 object `2` {
   
-  @scala.inline
-  def apply(channel: String | js.Array[String]): `2` = {
+  inline def apply(channel: String | js.Array[String]): `2` = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
     __obj.asInstanceOf[`2`]
   }
   
-  @scala.inline
-  implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
+  extension [Self <: `2`](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String | js.Array[String]): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String | js.Array[String]): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelVarargs(value: String*): Self = StObject.set(x, "channel", js.Array(value :_*))
+    inline def setChannelVarargs(value: String*): Self = StObject.set(x, "channel", js.Array(value :_*))
   }
 }

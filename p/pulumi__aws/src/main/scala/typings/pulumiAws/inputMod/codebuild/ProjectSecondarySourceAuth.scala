@@ -19,23 +19,18 @@ trait ProjectSecondarySourceAuth extends StObject {
 }
 object ProjectSecondarySourceAuth {
   
-  @scala.inline
-  def apply(`type`: Input[String]): ProjectSecondarySourceAuth = {
+  inline def apply(`type`: Input[String]): ProjectSecondarySourceAuth = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectSecondarySourceAuth]
   }
   
-  @scala.inline
-  implicit class ProjectSecondarySourceAuthMutableBuilder[Self <: ProjectSecondarySourceAuth] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectSecondarySourceAuth](x: Self) {
     
-    @scala.inline
-    def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

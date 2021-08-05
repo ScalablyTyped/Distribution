@@ -22,14 +22,12 @@ object CallControl {
     * @return A class that represents the specified audio communications device.
     */
   /* static member */
-  @scala.inline
-  def fromId(deviceId: String): typings.winrtUwp.Windows.Media.Devices.CallControl = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(deviceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.Devices.CallControl]
+  inline def fromId(deviceId: String): typings.winrtUwp.Windows.Media.Devices.CallControl = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(deviceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.Devices.CallControl]
   
   /**
     * Returns a CallControl class that represents the default audio communications device.
     * @return A class that represents the default audio communications device.
     */
   /* static member */
-  @scala.inline
-  def getDefault(): typings.winrtUwp.Windows.Media.Devices.CallControl = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Media.Devices.CallControl]
+  inline def getDefault(): typings.winrtUwp.Windows.Media.Devices.CallControl = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Media.Devices.CallControl]
 }

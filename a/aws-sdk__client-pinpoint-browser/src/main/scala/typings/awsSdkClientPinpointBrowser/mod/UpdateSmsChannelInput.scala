@@ -10,8 +10,7 @@ trait UpdateSmsChannelInput
      with typings.awsSdkClientPinpointBrowser.typesUpdateSmsChannelInputMod.UpdateSmsChannelInput
 object UpdateSmsChannelInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, SMSChannelRequest: SMSChannelRequest): UpdateSmsChannelInput = {
+  inline def apply(ApplicationId: String, SMSChannelRequest: SMSChannelRequest): UpdateSmsChannelInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SMSChannelRequest = SMSChannelRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSmsChannelInput]
   }

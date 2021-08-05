@@ -16,10 +16,8 @@ object normalizeEmailMod {
     *
     * @param [options] - Options
     */
-  @scala.inline
-  def default(email: String): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(email.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
-  @scala.inline
-  def default(email: String, options: typings.validator.mod.validator.NormalizeEmailOptions): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def default(email: String): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(email.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
+  inline def default(email: String, options: typings.validator.mod.validator.NormalizeEmailOptions): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
   
   type NormalizeEmailOptions = typings.validator.mod.validator.NormalizeEmailOptions
 }

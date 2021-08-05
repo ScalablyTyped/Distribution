@@ -24,22 +24,18 @@ object fileNameCasingRuleMod {
     @JSImport("tslint/lib/rules/fileNameCasingRule", "Rule.FAILURE_STRING")
     @js.native
     def FAILURE_STRING: js.Any = js.native
-    @scala.inline
-    def FAILURE_STRING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING")(x.asInstanceOf[js.Any])
+    inline def FAILURE_STRING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/fileNameCasingRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def showWarning(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showWarning")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def showWarning(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showWarning")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("tslint/lib/rules/fileNameCasingRule", "Rule.stylizedNameForCasing")
     @js.native
     def stylizedNameForCasing: js.Any = js.native
-    @scala.inline
-    def stylizedNameForCasing_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stylizedNameForCasing")(x.asInstanceOf[js.Any])
+    inline def stylizedNameForCasing_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stylizedNameForCasing")(x.asInstanceOf[js.Any])
   }
 }

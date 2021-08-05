@@ -22,8 +22,7 @@ trait CreateClassifierParams extends StObject {
 }
 object CreateClassifierParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     metadata: ReadableStream | FileObject | Buffer,
     training_data: ReadableStream | FileObject | Buffer
   ): CreateClassifierParams = {
@@ -31,25 +30,18 @@ object CreateClassifierParams {
     __obj.asInstanceOf[CreateClassifierParams]
   }
   
-  @scala.inline
-  implicit class CreateClassifierParamsMutableBuilder[Self <: CreateClassifierParams] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClassifierParams](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setTraining_data(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "training_data", value.asInstanceOf[js.Any])
+    inline def setTraining_data(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "training_data", value.asInstanceOf[js.Any])
   }
 }

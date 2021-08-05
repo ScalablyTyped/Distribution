@@ -90,93 +90,65 @@ trait UserOptions extends StObject {
 }
 object UserOptions {
   
-  @scala.inline
-  def apply(template: Buffer): UserOptions = {
+  inline def apply(template: Buffer): UserOptions = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserOptions]
   }
   
-  @scala.inline
-  implicit class UserOptionsMutableBuilder[Self <: UserOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UserOptions](x: Self) {
     
-    @scala.inline
-    def setAdditionalJsContext(value: js.Object): Self = StObject.set(x, "additionalJsContext", value.asInstanceOf[js.Any])
+    inline def setAdditionalJsContext(value: js.Object): Self = StObject.set(x, "additionalJsContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalJsContextUndefined: Self = StObject.set(x, "additionalJsContext", js.undefined)
+    inline def setAdditionalJsContextUndefined: Self = StObject.set(x, "additionalJsContext", js.undefined)
     
-    @scala.inline
-    def setCmdDelimiter(value: String | (js.Tuple2[String, String])): Self = StObject.set(x, "cmdDelimiter", value.asInstanceOf[js.Any])
+    inline def setCmdDelimiter(value: String | (js.Tuple2[String, String])): Self = StObject.set(x, "cmdDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmdDelimiterUndefined: Self = StObject.set(x, "cmdDelimiter", js.undefined)
+    inline def setCmdDelimiterUndefined: Self = StObject.set(x, "cmdDelimiter", js.undefined)
     
-    @scala.inline
-    def setData(value: ReportData | QueryResolver): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ReportData | QueryResolver): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFunction2(
+    inline def setDataFunction2(
       value: (/* query */ js.UndefOr[Query], /* queryVars */ js.Any) => ReportData | js.Promise[ReportData]
     ): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setErrorHandler(value: (/* e */ Error, /* raw_code */ js.UndefOr[String]) => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
+    inline def setErrorHandler(value: (/* e */ Error, /* raw_code */ js.UndefOr[String]) => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
+    inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
     
-    @scala.inline
-    def setFailFast(value: Boolean): Self = StObject.set(x, "failFast", value.asInstanceOf[js.Any])
+    inline def setFailFast(value: Boolean): Self = StObject.set(x, "failFast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailFastUndefined: Self = StObject.set(x, "failFast", js.undefined)
+    inline def setFailFastUndefined: Self = StObject.set(x, "failFast", js.undefined)
     
-    @scala.inline
-    def setFixSmartQuotes(value: Boolean): Self = StObject.set(x, "fixSmartQuotes", value.asInstanceOf[js.Any])
+    inline def setFixSmartQuotes(value: Boolean): Self = StObject.set(x, "fixSmartQuotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixSmartQuotesUndefined: Self = StObject.set(x, "fixSmartQuotes", js.undefined)
+    inline def setFixSmartQuotesUndefined: Self = StObject.set(x, "fixSmartQuotes", js.undefined)
     
-    @scala.inline
-    def setLiteralXmlDelimiter(value: String): Self = StObject.set(x, "literalXmlDelimiter", value.asInstanceOf[js.Any])
+    inline def setLiteralXmlDelimiter(value: String): Self = StObject.set(x, "literalXmlDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiteralXmlDelimiterUndefined: Self = StObject.set(x, "literalXmlDelimiter", js.undefined)
+    inline def setLiteralXmlDelimiterUndefined: Self = StObject.set(x, "literalXmlDelimiter", js.undefined)
     
-    @scala.inline
-    def setNoSandbox(value: Boolean): Self = StObject.set(x, "noSandbox", value.asInstanceOf[js.Any])
+    inline def setNoSandbox(value: Boolean): Self = StObject.set(x, "noSandbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSandboxUndefined: Self = StObject.set(x, "noSandbox", js.undefined)
+    inline def setNoSandboxUndefined: Self = StObject.set(x, "noSandbox", js.undefined)
     
-    @scala.inline
-    def setProcessLineBreaks(value: Boolean): Self = StObject.set(x, "processLineBreaks", value.asInstanceOf[js.Any])
+    inline def setProcessLineBreaks(value: Boolean): Self = StObject.set(x, "processLineBreaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessLineBreaksUndefined: Self = StObject.set(x, "processLineBreaks", js.undefined)
+    inline def setProcessLineBreaksUndefined: Self = StObject.set(x, "processLineBreaks", js.undefined)
     
-    @scala.inline
-    def setQueryVars(value: js.Any): Self = StObject.set(x, "queryVars", value.asInstanceOf[js.Any])
+    inline def setQueryVars(value: js.Any): Self = StObject.set(x, "queryVars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryVarsUndefined: Self = StObject.set(x, "queryVars", js.undefined)
+    inline def setQueryVarsUndefined: Self = StObject.set(x, "queryVars", js.undefined)
     
-    @scala.inline
-    def setRejectNullish(value: Boolean): Self = StObject.set(x, "rejectNullish", value.asInstanceOf[js.Any])
+    inline def setRejectNullish(value: Boolean): Self = StObject.set(x, "rejectNullish", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectNullishUndefined: Self = StObject.set(x, "rejectNullish", js.undefined)
+    inline def setRejectNullishUndefined: Self = StObject.set(x, "rejectNullish", js.undefined)
     
-    @scala.inline
-    def setRunJs(value: /* o */ Ctx => ModifiedSandbox): Self = StObject.set(x, "runJs", js.Any.fromFunction1(value))
+    inline def setRunJs(value: /* o */ Ctx => ModifiedSandbox): Self = StObject.set(x, "runJs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRunJsUndefined: Self = StObject.set(x, "runJs", js.undefined)
+    inline def setRunJsUndefined: Self = StObject.set(x, "runJs", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: Buffer): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Buffer): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

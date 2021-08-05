@@ -14,19 +14,15 @@ trait App extends StObject {
 }
 object App {
   
-  @scala.inline
-  def apply(app: Application, entity: Entity): App = {
+  inline def apply(app: Application, entity: Entity): App = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], entity = entity.asInstanceOf[js.Any])
     __obj.asInstanceOf[App]
   }
   
-  @scala.inline
-  implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
+  extension [Self <: App](x: Self) {
     
-    @scala.inline
-    def setApp(value: Application): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: Application): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
   }
 }

@@ -15,31 +15,23 @@ trait IConsensusSendToRequest extends StObject {
 }
 object IConsensusSendToRequest {
   
-  @scala.inline
-  def apply(): IConsensusSendToRequest = {
+  inline def apply(): IConsensusSendToRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusSendToRequest]
   }
   
-  @scala.inline
-  implicit class IConsensusSendToRequestMutableBuilder[Self <: IConsensusSendToRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusSendToRequest](x: Self) {
     
-    @scala.inline
-    def setMessage(value: IConsensusPeerMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: IConsensusPeerMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageNull: Self = StObject.set(x, "message", null)
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setPeerId(value: Uint8Array): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+    inline def setPeerId(value: Uint8Array): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerIdNull: Self = StObject.set(x, "peerId", null)
+    inline def setPeerIdNull: Self = StObject.set(x, "peerId", null)
     
-    @scala.inline
-    def setPeerIdUndefined: Self = StObject.set(x, "peerId", js.undefined)
+    inline def setPeerIdUndefined: Self = StObject.set(x, "peerId", js.undefined)
   }
 }

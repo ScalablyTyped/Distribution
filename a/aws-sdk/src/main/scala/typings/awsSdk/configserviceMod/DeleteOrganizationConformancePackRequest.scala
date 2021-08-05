@@ -13,16 +13,13 @@ trait DeleteOrganizationConformancePackRequest extends StObject {
 }
 object DeleteOrganizationConformancePackRequest {
   
-  @scala.inline
-  def apply(OrganizationConformancePackName: OrganizationConformancePackName): DeleteOrganizationConformancePackRequest = {
+  inline def apply(OrganizationConformancePackName: OrganizationConformancePackName): DeleteOrganizationConformancePackRequest = {
     val __obj = js.Dynamic.literal(OrganizationConformancePackName = OrganizationConformancePackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteOrganizationConformancePackRequest]
   }
   
-  @scala.inline
-  implicit class DeleteOrganizationConformancePackRequestMutableBuilder[Self <: DeleteOrganizationConformancePackRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteOrganizationConformancePackRequest](x: Self) {
     
-    @scala.inline
-    def setOrganizationConformancePackName(value: OrganizationConformancePackName): Self = StObject.set(x, "OrganizationConformancePackName", value.asInstanceOf[js.Any])
+    inline def setOrganizationConformancePackName(value: OrganizationConformancePackName): Self = StObject.set(x, "OrganizationConformancePackName", value.asInstanceOf[js.Any])
   }
 }

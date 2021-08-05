@@ -13,19 +13,15 @@ trait FindingCriteria extends StObject {
 }
 object FindingCriteria {
   
-  @scala.inline
-  def apply(): FindingCriteria = {
+  inline def apply(): FindingCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindingCriteria]
   }
   
-  @scala.inline
-  implicit class FindingCriteriaMutableBuilder[Self <: FindingCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: FindingCriteria](x: Self) {
     
-    @scala.inline
-    def setCriterion(value: Criterion): Self = StObject.set(x, "criterion", value.asInstanceOf[js.Any])
+    inline def setCriterion(value: Criterion): Self = StObject.set(x, "criterion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriterionUndefined: Self = StObject.set(x, "criterion", js.undefined)
+    inline def setCriterionUndefined: Self = StObject.set(x, "criterion", js.undefined)
   }
 }

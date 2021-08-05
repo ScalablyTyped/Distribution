@@ -18,28 +18,21 @@ trait TestingData extends StObject {
 }
 object TestingData {
   
-  @scala.inline
-  def apply(): TestingData = {
+  inline def apply(): TestingData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestingData]
   }
   
-  @scala.inline
-  implicit class TestingDataMutableBuilder[Self <: TestingData] (val x: Self) extends AnyVal {
+  extension [Self <: TestingData](x: Self) {
     
-    @scala.inline
-    def setAssets(value: Assets): Self = StObject.set(x, "Assets", value.asInstanceOf[js.Any])
+    inline def setAssets(value: Assets): Self = StObject.set(x, "Assets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetsUndefined: Self = StObject.set(x, "Assets", js.undefined)
+    inline def setAssetsUndefined: Self = StObject.set(x, "Assets", js.undefined)
     
-    @scala.inline
-    def setAssetsVarargs(value: Asset*): Self = StObject.set(x, "Assets", js.Array(value :_*))
+    inline def setAssetsVarargs(value: Asset*): Self = StObject.set(x, "Assets", js.Array(value :_*))
     
-    @scala.inline
-    def setAutoCreate(value: Boolean): Self = StObject.set(x, "AutoCreate", value.asInstanceOf[js.Any])
+    inline def setAutoCreate(value: Boolean): Self = StObject.set(x, "AutoCreate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCreateUndefined: Self = StObject.set(x, "AutoCreate", js.undefined)
+    inline def setAutoCreateUndefined: Self = StObject.set(x, "AutoCreate", js.undefined)
   }
 }

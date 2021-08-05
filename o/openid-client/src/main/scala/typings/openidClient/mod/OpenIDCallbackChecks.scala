@@ -22,25 +22,19 @@ trait OpenIDCallbackChecks
 }
 object OpenIDCallbackChecks {
   
-  @scala.inline
-  def apply(): OpenIDCallbackChecks = {
+  inline def apply(): OpenIDCallbackChecks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenIDCallbackChecks]
   }
   
-  @scala.inline
-  implicit class OpenIDCallbackChecksMutableBuilder[Self <: OpenIDCallbackChecks] (val x: Self) extends AnyVal {
+  extension [Self <: OpenIDCallbackChecks](x: Self) {
     
-    @scala.inline
-    def setMax_age(value: Double): Self = StObject.set(x, "max_age", value.asInstanceOf[js.Any])
+    inline def setMax_age(value: Double): Self = StObject.set(x, "max_age", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax_ageUndefined: Self = StObject.set(x, "max_age", js.undefined)
+    inline def setMax_ageUndefined: Self = StObject.set(x, "max_age", js.undefined)
     
-    @scala.inline
-    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
   }
 }

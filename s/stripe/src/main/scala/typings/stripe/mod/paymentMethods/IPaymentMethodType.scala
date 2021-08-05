@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IPaymentMethodType extends StObject
 object IPaymentMethodType {
   
-  @scala.inline
-  def card: typings.stripe.stripeStrings.card = "card".asInstanceOf[typings.stripe.stripeStrings.card]
+  inline def card: typings.stripe.stripeStrings.card = "card".asInstanceOf[typings.stripe.stripeStrings.card]
   
-  @scala.inline
-  def card_present: typings.stripe.stripeStrings.card_present = "card_present".asInstanceOf[typings.stripe.stripeStrings.card_present]
+  inline def card_present: typings.stripe.stripeStrings.card_present = "card_present".asInstanceOf[typings.stripe.stripeStrings.card_present]
 }

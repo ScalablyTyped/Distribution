@@ -84,8 +84,7 @@ object agentMod {
   }
   object Agent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backend: typings.sharedb.mod.^,
       custom: Custom,
       send: JSONObject => Unit,
@@ -95,20 +94,15 @@ object agentMod {
       __obj.asInstanceOf[Agent]
     }
     
-    @scala.inline
-    implicit class AgentMutableBuilder[Self <: Agent] (val x: Self) extends AnyVal {
+    extension [Self <: Agent](x: Self) {
       
-      @scala.inline
-      def setBackend(value: typings.sharedb.mod.^): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+      inline def setBackend(value: typings.sharedb.mod.^): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSend(value: JSONObject => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: JSONObject => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStream(value: DuplexisServerbooleanunde): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: DuplexisServerbooleanunde): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
   

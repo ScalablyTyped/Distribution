@@ -51,8 +51,7 @@ object reviews {
   }
   object IReview {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       charge: String | ICharge,
       created: Double,
       id: String,
@@ -65,26 +64,19 @@ object reviews {
       __obj.asInstanceOf[IReview]
     }
     
-    @scala.inline
-    implicit class IReviewMutableBuilder[Self <: IReview] (val x: Self) extends AnyVal {
+    extension [Self <: IReview](x: Self) {
       
-      @scala.inline
-      def setCharge(value: String | ICharge): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
+      inline def setCharge(value: String | ICharge): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: review): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: review): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: rule | manual | approved | refunded | refunded_as_fraud | disputed): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: rule | manual | approved | refunded | refunded_as_fraud | disputed): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
   }
 }

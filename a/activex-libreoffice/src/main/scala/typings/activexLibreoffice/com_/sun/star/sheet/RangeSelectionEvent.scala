@@ -20,16 +20,13 @@ trait RangeSelectionEvent
 }
 object RangeSelectionEvent {
   
-  @scala.inline
-  def apply(RangeDescriptor: String, Source: XInterface): RangeSelectionEvent = {
+  inline def apply(RangeDescriptor: String, Source: XInterface): RangeSelectionEvent = {
     val __obj = js.Dynamic.literal(RangeDescriptor = RangeDescriptor.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeSelectionEvent]
   }
   
-  @scala.inline
-  implicit class RangeSelectionEventMutableBuilder[Self <: RangeSelectionEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RangeSelectionEvent](x: Self) {
     
-    @scala.inline
-    def setRangeDescriptor(value: String): Self = StObject.set(x, "RangeDescriptor", value.asInstanceOf[js.Any])
+    inline def setRangeDescriptor(value: String): Self = StObject.set(x, "RangeDescriptor", value.asInstanceOf[js.Any])
   }
 }

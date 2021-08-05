@@ -13,19 +13,15 @@ trait UrlAssessmentRequest
 }
 object UrlAssessmentRequest {
   
-  @scala.inline
-  def apply(): UrlAssessmentRequest = {
+  inline def apply(): UrlAssessmentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UrlAssessmentRequest]
   }
   
-  @scala.inline
-  implicit class UrlAssessmentRequestMutableBuilder[Self <: UrlAssessmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UrlAssessmentRequest](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

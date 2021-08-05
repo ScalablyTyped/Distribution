@@ -45,26 +45,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEmitDelay(value: Double): Self = StObject.set(x, "emitDelay", value.asInstanceOf[js.Any])
+      inline def setEmitDelay(value: Double): Self = StObject.set(x, "emitDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitDelayUndefined: Self = StObject.set(x, "emitDelay", js.undefined)
+      inline def setEmitDelayUndefined: Self = StObject.set(x, "emitDelay", js.undefined)
       
-      @scala.inline
-      def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
+      inline def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
+      inline def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
     }
   }
 }

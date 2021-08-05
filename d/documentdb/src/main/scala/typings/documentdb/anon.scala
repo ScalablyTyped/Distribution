@@ -16,21 +16,17 @@ object anon {
   }
   object Condition {
     
-    @scala.inline
-    def apply(condition: String, `type`: String): Condition = {
+    inline def apply(condition: String, `type`: String): Condition = {
       val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Condition]
     }
     
-    @scala.inline
-    implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
+    extension [Self <: Condition](x: Self) {
       
-      @scala.inline
-      def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

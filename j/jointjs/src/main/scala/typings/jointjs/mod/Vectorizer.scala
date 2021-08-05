@@ -183,203 +183,127 @@ object Vectorizer {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def annotateString(t: String, annotations: js.Array[TextAnnotation]): js.Array[String | StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("annotateString")(t.asInstanceOf[js.Any], annotations.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | StringDictionary[js.Any]]]
-  @scala.inline
-  def annotateString(t: String, annotations: js.Array[TextAnnotation], opt: AnnotateStringOptions): js.Array[String | StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("annotateString")(t.asInstanceOf[js.Any], annotations.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | StringDictionary[js.Any]]]
+  inline def annotateString(t: String, annotations: js.Array[TextAnnotation]): js.Array[String | StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("annotateString")(t.asInstanceOf[js.Any], annotations.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | StringDictionary[js.Any]]]
+  inline def annotateString(t: String, annotations: js.Array[TextAnnotation], opt: AnnotateStringOptions): js.Array[String | StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("annotateString")(t.asInstanceOf[js.Any], annotations.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | StringDictionary[js.Any]]]
   
-  @scala.inline
-  def convertCircleToPathData(circle: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertCircleToPathData")(circle.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def convertCircleToPathData(circle: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertCircleToPathData")(circle.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def convertCircleToPathData(circle: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertCircleToPathData")(circle.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertCircleToPathData(circle: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertCircleToPathData")(circle.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertCircleToPathData(circle: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertCircleToPathData")(circle.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertCircleToPathData(circle: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertCircleToPathData")(circle.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def convertEllipseToPathData(ellipse: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertEllipseToPathData")(ellipse.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def convertEllipseToPathData(ellipse: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertEllipseToPathData")(ellipse.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def convertEllipseToPathData(ellipse: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertEllipseToPathData")(ellipse.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertEllipseToPathData(ellipse: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertEllipseToPathData")(ellipse.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertEllipseToPathData(ellipse: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertEllipseToPathData")(ellipse.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertEllipseToPathData(ellipse: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertEllipseToPathData")(ellipse.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def convertLineToPathData(line: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertLineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def convertLineToPathData(line: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertLineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def convertLineToPathData(line: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertLineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertLineToPathData(line: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertLineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertLineToPathData(line: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertLineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertLineToPathData(line: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertLineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def convertPolygonToPathData(line: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolygonToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def convertPolygonToPathData(line: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolygonToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def convertPolygonToPathData(line: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolygonToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertPolygonToPathData(line: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolygonToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertPolygonToPathData(line: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolygonToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertPolygonToPathData(line: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolygonToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def convertPolylineToPathData(line: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolylineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def convertPolylineToPathData(line: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolylineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def convertPolylineToPathData(line: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolylineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertPolylineToPathData(line: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolylineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertPolylineToPathData(line: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolylineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertPolylineToPathData(line: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPolylineToPathData")(line.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def convertRectToPathData(rect: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertRectToPathData")(rect.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def convertRectToPathData(rect: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertRectToPathData")(rect.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def convertRectToPathData(rect: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertRectToPathData")(rect.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertRectToPathData(rect: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertRectToPathData")(rect.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertRectToPathData(rect: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertRectToPathData")(rect.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertRectToPathData(rect: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertRectToPathData")(rect.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def createSVGDocument(content: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGDocument")(content.asInstanceOf[js.Any]).asInstanceOf[Document]
+  inline def createSVGDocument(content: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGDocument")(content.asInstanceOf[js.Any]).asInstanceOf[Document]
   
-  @scala.inline
-  def createSVGMatrix(matrix: Matrix): SVGMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGMatrix")(matrix.asInstanceOf[js.Any]).asInstanceOf[SVGMatrix]
-  @scala.inline
-  def createSVGMatrix(matrix: SVGMatrix): SVGMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGMatrix")(matrix.asInstanceOf[js.Any]).asInstanceOf[SVGMatrix]
+  inline def createSVGMatrix(matrix: Matrix): SVGMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGMatrix")(matrix.asInstanceOf[js.Any]).asInstanceOf[SVGMatrix]
+  inline def createSVGMatrix(matrix: SVGMatrix): SVGMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGMatrix")(matrix.asInstanceOf[js.Any]).asInstanceOf[SVGMatrix]
   
-  @scala.inline
-  def createSVGPoint(x: Double, y: Double): SVGPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("createSVGPoint")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[SVGPoint]
+  inline def createSVGPoint(x: Double, y: Double): SVGPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("createSVGPoint")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[SVGPoint]
   
-  @scala.inline
-  def createSVGTransform(): SVGTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGTransform")().asInstanceOf[SVGTransform]
-  @scala.inline
-  def createSVGTransform(matrix: Matrix): SVGTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGTransform")(matrix.asInstanceOf[js.Any]).asInstanceOf[SVGTransform]
-  @scala.inline
-  def createSVGTransform(matrix: SVGMatrix): SVGTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGTransform")(matrix.asInstanceOf[js.Any]).asInstanceOf[SVGTransform]
+  inline def createSVGTransform(): SVGTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGTransform")().asInstanceOf[SVGTransform]
+  inline def createSVGTransform(matrix: Matrix): SVGTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGTransform")(matrix.asInstanceOf[js.Any]).asInstanceOf[SVGTransform]
+  inline def createSVGTransform(matrix: SVGMatrix): SVGTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("createSVGTransform")(matrix.asInstanceOf[js.Any]).asInstanceOf[SVGTransform]
   
-  @scala.inline
-  def createSlicePathData(innerRadius: Double, outRadius: Double, startAngle: Double, endAngle: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createSlicePathData")(innerRadius.asInstanceOf[js.Any], outRadius.asInstanceOf[js.Any], startAngle.asInstanceOf[js.Any], endAngle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createSlicePathData(innerRadius: Double, outRadius: Double, startAngle: Double, endAngle: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createSlicePathData")(innerRadius.asInstanceOf[js.Any], outRadius.asInstanceOf[js.Any], startAngle.asInstanceOf[js.Any], endAngle.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def decomposeMatrix(matrix: Matrix): DecomposedTransformation = ^.asInstanceOf[js.Dynamic].applyDynamic("decomposeMatrix")(matrix.asInstanceOf[js.Any]).asInstanceOf[DecomposedTransformation]
-  @scala.inline
-  def decomposeMatrix(matrix: SVGMatrix): DecomposedTransformation = ^.asInstanceOf[js.Dynamic].applyDynamic("decomposeMatrix")(matrix.asInstanceOf[js.Any]).asInstanceOf[DecomposedTransformation]
+  inline def decomposeMatrix(matrix: Matrix): DecomposedTransformation = ^.asInstanceOf[js.Dynamic].applyDynamic("decomposeMatrix")(matrix.asInstanceOf[js.Any]).asInstanceOf[DecomposedTransformation]
+  inline def decomposeMatrix(matrix: SVGMatrix): DecomposedTransformation = ^.asInstanceOf[js.Dynamic].applyDynamic("decomposeMatrix")(matrix.asInstanceOf[js.Any]).asInstanceOf[DecomposedTransformation]
   
-  @scala.inline
-  def deltaTransformPoint(matrix: Matrix, point: PlainPoint): PlainPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("deltaTransformPoint")(matrix.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[PlainPoint]
-  @scala.inline
-  def deltaTransformPoint(matrix: Matrix, point: SVGPoint): PlainPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("deltaTransformPoint")(matrix.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[PlainPoint]
-  @scala.inline
-  def deltaTransformPoint(matrix: SVGMatrix, point: PlainPoint): PlainPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("deltaTransformPoint")(matrix.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[PlainPoint]
-  @scala.inline
-  def deltaTransformPoint(matrix: SVGMatrix, point: SVGPoint): PlainPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("deltaTransformPoint")(matrix.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[PlainPoint]
+  inline def deltaTransformPoint(matrix: Matrix, point: PlainPoint): PlainPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("deltaTransformPoint")(matrix.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[PlainPoint]
+  inline def deltaTransformPoint(matrix: Matrix, point: SVGPoint): PlainPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("deltaTransformPoint")(matrix.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[PlainPoint]
+  inline def deltaTransformPoint(matrix: SVGMatrix, point: PlainPoint): PlainPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("deltaTransformPoint")(matrix.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[PlainPoint]
+  inline def deltaTransformPoint(matrix: SVGMatrix, point: SVGPoint): PlainPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("deltaTransformPoint")(matrix.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[PlainPoint]
   
-  @scala.inline
-  def ensureId(node: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureId")(node.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def ensureId(node: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureId")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def ensureId(node: Vectorizer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureId")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def ensureId(node: SVGElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureId")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def findAnnotationsAtIndex(annotations: js.Array[TextAnnotation], index: Double): js.Array[TextAnnotation] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAnnotationsAtIndex")(annotations.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[TextAnnotation]]
+  inline def findAnnotationsAtIndex(annotations: js.Array[TextAnnotation], index: Double): js.Array[TextAnnotation] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAnnotationsAtIndex")(annotations.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[TextAnnotation]]
   
-  @scala.inline
-  def findAnnotationsBetweenIndexes(annotations: js.Array[TextAnnotation], start: Double, end: Double): js.Array[TextAnnotation] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAnnotationsBetweenIndexes")(annotations.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[TextAnnotation]]
+  inline def findAnnotationsBetweenIndexes(annotations: js.Array[TextAnnotation], start: Double, end: Double): js.Array[TextAnnotation] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAnnotationsBetweenIndexes")(annotations.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[TextAnnotation]]
   
-  @scala.inline
-  def getPointsFromSvgNode(node: Vectorizer): js.Array[SVGPoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointsFromSvgNode")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[SVGPoint]]
-  @scala.inline
-  def getPointsFromSvgNode(node: SVGElement): js.Array[SVGPoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointsFromSvgNode")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[SVGPoint]]
+  inline def getPointsFromSvgNode(node: Vectorizer): js.Array[SVGPoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointsFromSvgNode")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[SVGPoint]]
+  inline def getPointsFromSvgNode(node: SVGElement): js.Array[SVGPoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointsFromSvgNode")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[SVGPoint]]
   
-  @scala.inline
-  def isArray(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isArray(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isSVGGraphicsElement(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSVGGraphicsElement")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSVGGraphicsElement(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSVGGraphicsElement")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isUndefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isUndefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isV(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isV")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isV(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isV")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isVElement(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVElement")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isVElement(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVElement")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def matrixToRotate(matrix: Matrix): Rotation = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToRotate")(matrix.asInstanceOf[js.Any]).asInstanceOf[Rotation]
-  @scala.inline
-  def matrixToRotate(matrix: SVGMatrix): Rotation = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToRotate")(matrix.asInstanceOf[js.Any]).asInstanceOf[Rotation]
+  inline def matrixToRotate(matrix: Matrix): Rotation = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToRotate")(matrix.asInstanceOf[js.Any]).asInstanceOf[Rotation]
+  inline def matrixToRotate(matrix: SVGMatrix): Rotation = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToRotate")(matrix.asInstanceOf[js.Any]).asInstanceOf[Rotation]
   
-  @scala.inline
-  def matrixToScale(matrix: Matrix): Scale = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToScale")(matrix.asInstanceOf[js.Any]).asInstanceOf[Scale]
-  @scala.inline
-  def matrixToScale(matrix: SVGMatrix): Scale = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToScale")(matrix.asInstanceOf[js.Any]).asInstanceOf[Scale]
+  inline def matrixToScale(matrix: Matrix): Scale = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToScale")(matrix.asInstanceOf[js.Any]).asInstanceOf[Scale]
+  inline def matrixToScale(matrix: SVGMatrix): Scale = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToScale")(matrix.asInstanceOf[js.Any]).asInstanceOf[Scale]
   
-  @scala.inline
-  def matrixToTransformString(matrix: Matrix): String = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToTransformString")(matrix.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def matrixToTransformString(matrix: SVGMatrix): String = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToTransformString")(matrix.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def matrixToTransformString(matrix: Matrix): String = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToTransformString")(matrix.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def matrixToTransformString(matrix: SVGMatrix): String = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToTransformString")(matrix.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def matrixToTranslate(matrix: Matrix): Translation = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToTranslate")(matrix.asInstanceOf[js.Any]).asInstanceOf[Translation]
-  @scala.inline
-  def matrixToTranslate(matrix: SVGMatrix): Translation = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToTranslate")(matrix.asInstanceOf[js.Any]).asInstanceOf[Translation]
+  inline def matrixToTranslate(matrix: Matrix): Translation = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToTranslate")(matrix.asInstanceOf[js.Any]).asInstanceOf[Translation]
+  inline def matrixToTranslate(matrix: SVGMatrix): Translation = ^.asInstanceOf[js.Dynamic].applyDynamic("matrixToTranslate")(matrix.asInstanceOf[js.Any]).asInstanceOf[Translation]
   
-  @scala.inline
-  def mergeAttrs(a: js.Any, b: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeAttrs")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mergeAttrs(a: js.Any, b: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeAttrs")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def normalizePathData(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePathData")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalizePathData(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePathData")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def parseTransformString(transform: String): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTransformString")(transform.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def parseTransformString(transform: String): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTransformString")(transform.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
-  @scala.inline
-  def parseXML(data: String): XMLDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXML")(data.asInstanceOf[js.Any]).asInstanceOf[XMLDocument]
-  @scala.inline
-  def parseXML(data: String, opt: ParseXMLOptions): XMLDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("parseXML")(data.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[XMLDocument]
+  inline def parseXML(data: String): XMLDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXML")(data.asInstanceOf[js.Any]).asInstanceOf[XMLDocument]
+  inline def parseXML(data: String, opt: ParseXMLOptions): XMLDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("parseXML")(data.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[XMLDocument]
   
-  @scala.inline
-  def qualifyAttr(name: String): QualifiedAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("qualifyAttr")(name.asInstanceOf[js.Any]).asInstanceOf[QualifiedAttribute]
+  inline def qualifyAttr(name: String): QualifiedAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("qualifyAttr")(name.asInstanceOf[js.Any]).asInstanceOf[QualifiedAttribute]
   
-  @scala.inline
-  def rectToPath(r: RoundedRect): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rectToPath")(r.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def rectToPath(r: RoundedRect): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rectToPath")(r.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def sanitizeText(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeText")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sanitizeText(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeText")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def shiftAnnotations(annotations: js.Array[TextAnnotation], index: Double, offset: Double): js.Array[TextAnnotation] = (^.asInstanceOf[js.Dynamic].applyDynamic("shiftAnnotations")(annotations.asInstanceOf[js.Any], index.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[TextAnnotation]]
+  inline def shiftAnnotations(annotations: js.Array[TextAnnotation], index: Double, offset: Double): js.Array[TextAnnotation] = (^.asInstanceOf[js.Dynamic].applyDynamic("shiftAnnotations")(annotations.asInstanceOf[js.Any], index.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[TextAnnotation]]
   
-  @scala.inline
-  def styleToObject(styleString: String): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("styleToObject")(styleString.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
+  inline def styleToObject(styleString: String): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("styleToObject")(styleString.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   
-  @scala.inline
-  def svgPointsToPath(points: js.Array[PlainPoint | SVGPoint]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("svgPointsToPath")(points.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def svgPointsToPath(points: js.Array[PlainPoint | SVGPoint]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("svgPointsToPath")(points.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toNode(el: js.Array[SVGElement]): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("toNode")(el.asInstanceOf[js.Any]).asInstanceOf[SVGElement]
-  @scala.inline
-  def toNode(el: Vectorizer): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("toNode")(el.asInstanceOf[js.Any]).asInstanceOf[SVGElement]
-  @scala.inline
-  def toNode(el: SVGElement): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("toNode")(el.asInstanceOf[js.Any]).asInstanceOf[SVGElement]
+  inline def toNode(el: js.Array[SVGElement]): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("toNode")(el.asInstanceOf[js.Any]).asInstanceOf[SVGElement]
+  inline def toNode(el: Vectorizer): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("toNode")(el.asInstanceOf[js.Any]).asInstanceOf[SVGElement]
+  inline def toNode(el: SVGElement): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("toNode")(el.asInstanceOf[js.Any]).asInstanceOf[SVGElement]
   
-  @scala.inline
-  def transformLine(p: Line, matrix: SVGMatrix): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("transformLine")(p.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[Line]
+  inline def transformLine(p: Line, matrix: SVGMatrix): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("transformLine")(p.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[Line]
   
-  @scala.inline
-  def transformPoint(p: PlainPoint, matrix: SVGMatrix): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPoint")(p.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[Point]
+  inline def transformPoint(p: PlainPoint, matrix: SVGMatrix): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPoint")(p.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[Point]
   
-  @scala.inline
-  def transformPolyline(p: js.Array[PlainPoint], matrix: SVGMatrix): Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPolyline")(p.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[Polyline]
-  @scala.inline
-  def transformPolyline(p: Polyline, matrix: SVGMatrix): Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPolyline")(p.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[Polyline]
+  inline def transformPolyline(p: js.Array[PlainPoint], matrix: SVGMatrix): Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPolyline")(p.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[Polyline]
+  inline def transformPolyline(p: Polyline, matrix: SVGMatrix): Polyline = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPolyline")(p.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[Polyline]
   
-  @scala.inline
-  def transformRect(r: PlainRect, matrix: SVGMatrix): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("transformRect")(r.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[Rect]
+  inline def transformRect(r: PlainRect, matrix: SVGMatrix): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("transformRect")(r.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any])).asInstanceOf[Rect]
   
-  @scala.inline
-  def transformStringToMatrix(transform: String): SVGMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("transformStringToMatrix")(transform.asInstanceOf[js.Any]).asInstanceOf[SVGMatrix]
+  inline def transformStringToMatrix(transform: String): SVGMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("transformStringToMatrix")(transform.asInstanceOf[js.Any]).asInstanceOf[SVGMatrix]
   
-  @scala.inline
-  def uniqueId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueId")().asInstanceOf[String]
+  inline def uniqueId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueId")().asInstanceOf[String]
   
   trait AnnotateStringOptions extends StObject {
     
@@ -389,26 +313,20 @@ object Vectorizer {
   }
   object AnnotateStringOptions {
     
-    @scala.inline
-    def apply(): AnnotateStringOptions = {
+    inline def apply(): AnnotateStringOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnnotateStringOptions]
     }
     
-    @scala.inline
-    implicit class AnnotateStringOptionsMutableBuilder[Self <: AnnotateStringOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AnnotateStringOptions](x: Self) {
       
-      @scala.inline
-      def setIncludeAnnotationIndices(value: Boolean): Self = StObject.set(x, "includeAnnotationIndices", value.asInstanceOf[js.Any])
+      inline def setIncludeAnnotationIndices(value: Boolean): Self = StObject.set(x, "includeAnnotationIndices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeAnnotationIndicesUndefined: Self = StObject.set(x, "includeAnnotationIndices", js.undefined)
+      inline def setIncludeAnnotationIndicesUndefined: Self = StObject.set(x, "includeAnnotationIndices", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     }
   }
   
@@ -430,8 +348,7 @@ object Vectorizer {
   }
   object DecomposedTransformation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       rotation: Double,
       scaleX: Double,
       scaleY: Double,
@@ -444,29 +361,21 @@ object Vectorizer {
       __obj.asInstanceOf[DecomposedTransformation]
     }
     
-    @scala.inline
-    implicit class DecomposedTransformationMutableBuilder[Self <: DecomposedTransformation] (val x: Self) extends AnyVal {
+    extension [Self <: DecomposedTransformation](x: Self) {
       
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+      inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+      inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkewX(value: Double): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
+      inline def setSkewX(value: Double): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkewY(value: Double): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
+      inline def setSkewY(value: Double): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateX(value: Double): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
+      inline def setTranslateX(value: Double): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateY(value: Double): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
+      inline def setTranslateY(value: Double): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -478,26 +387,20 @@ object Vectorizer {
   }
   object GetBBoxOptions {
     
-    @scala.inline
-    def apply(): GetBBoxOptions = {
+    inline def apply(): GetBBoxOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetBBoxOptions]
     }
     
-    @scala.inline
-    implicit class GetBBoxOptionsMutableBuilder[Self <: GetBBoxOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetBBoxOptions](x: Self) {
       
-      @scala.inline
-      def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+      inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+      inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
       
-      @scala.inline
-      def setTarget(value: SVGElement | Vectorizer): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: SVGElement | Vectorizer): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -518,32 +421,24 @@ object Vectorizer {
   }
   object Matrix {
     
-    @scala.inline
-    def apply(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): Matrix = {
+    inline def apply(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): Matrix = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], c = c.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any])
       __obj.asInstanceOf[Matrix]
     }
     
-    @scala.inline
-    implicit class MatrixMutableBuilder[Self <: Matrix] (val x: Self) extends AnyVal {
+    extension [Self <: Matrix](x: Self) {
       
-      @scala.inline
-      def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+      inline def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+      inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+      inline def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     }
   }
   
@@ -553,20 +448,16 @@ object Vectorizer {
   }
   object ParseXMLOptions {
     
-    @scala.inline
-    def apply(): ParseXMLOptions = {
+    inline def apply(): ParseXMLOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseXMLOptions]
     }
     
-    @scala.inline
-    implicit class ParseXMLOptionsMutableBuilder[Self <: ParseXMLOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseXMLOptions](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     }
   }
   
@@ -578,23 +469,18 @@ object Vectorizer {
   }
   object QualifiedAttribute {
     
-    @scala.inline
-    def apply(local: String): QualifiedAttribute = {
+    inline def apply(local: String): QualifiedAttribute = {
       val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any], ns = null)
       __obj.asInstanceOf[QualifiedAttribute]
     }
     
-    @scala.inline
-    implicit class QualifiedAttributeMutableBuilder[Self <: QualifiedAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: QualifiedAttribute](x: Self) {
       
-      @scala.inline
-      def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNs(value: String): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+      inline def setNs(value: String): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNsNull: Self = StObject.set(x, "ns", null)
+      inline def setNsNull: Self = StObject.set(x, "ns", null)
     }
   }
   
@@ -604,20 +490,16 @@ object Vectorizer {
   }
   object RotateOptions {
     
-    @scala.inline
-    def apply(): RotateOptions = {
+    inline def apply(): RotateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RotateOptions]
     }
     
-    @scala.inline
-    implicit class RotateOptionsMutableBuilder[Self <: RotateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RotateOptions](x: Self) {
       
-      @scala.inline
-      def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+      inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
+      inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
     }
   }
   
@@ -631,29 +513,22 @@ object Vectorizer {
   }
   object Rotation {
     
-    @scala.inline
-    def apply(angle: Double): Rotation = {
+    inline def apply(angle: Double): Rotation = {
       val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rotation]
     }
     
-    @scala.inline
-    implicit class RotationMutableBuilder[Self <: Rotation] (val x: Self) extends AnyVal {
+    extension [Self <: Rotation](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+      inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
+      inline def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
       
-      @scala.inline
-      def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+      inline def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
+      inline def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
     }
   }
   
@@ -675,50 +550,36 @@ object Vectorizer {
   }
   object RoundedRect {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): RoundedRect = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): RoundedRect = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoundedRect]
     }
     
-    @scala.inline
-    implicit class RoundedRectMutableBuilder[Self <: RoundedRect] (val x: Self) extends AnyVal {
+    extension [Self <: RoundedRect](x: Self) {
       
-      @scala.inline
-      def `setBottom-rx`(value: Double): Self = StObject.set(x, "bottom-rx", value.asInstanceOf[js.Any])
+      inline def `setBottom-rx`(value: Double): Self = StObject.set(x, "bottom-rx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBottom-rxUndefined`: Self = StObject.set(x, "bottom-rx", js.undefined)
+      inline def `setBottom-rxUndefined`: Self = StObject.set(x, "bottom-rx", js.undefined)
       
-      @scala.inline
-      def `setBottom-ry`(value: Double): Self = StObject.set(x, "bottom-ry", value.asInstanceOf[js.Any])
+      inline def `setBottom-ry`(value: Double): Self = StObject.set(x, "bottom-ry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBottom-ryUndefined`: Self = StObject.set(x, "bottom-ry", js.undefined)
+      inline def `setBottom-ryUndefined`: Self = StObject.set(x, "bottom-ry", js.undefined)
       
-      @scala.inline
-      def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
+      inline def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
+      inline def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
       
-      @scala.inline
-      def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+      inline def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
+      inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
       
-      @scala.inline
-      def `setTop-rx`(value: Double): Self = StObject.set(x, "top-rx", value.asInstanceOf[js.Any])
+      inline def `setTop-rx`(value: Double): Self = StObject.set(x, "top-rx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTop-rxUndefined`: Self = StObject.set(x, "top-rx", js.undefined)
+      inline def `setTop-rxUndefined`: Self = StObject.set(x, "top-rx", js.undefined)
       
-      @scala.inline
-      def `setTop-ry`(value: Double): Self = StObject.set(x, "top-ry", value.asInstanceOf[js.Any])
+      inline def `setTop-ry`(value: Double): Self = StObject.set(x, "top-ry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTop-ryUndefined`: Self = StObject.set(x, "top-ry", js.undefined)
+      inline def `setTop-ryUndefined`: Self = StObject.set(x, "top-ry", js.undefined)
     }
   }
   
@@ -732,23 +593,18 @@ object Vectorizer {
   }
   object Sample {
     
-    @scala.inline
-    def apply(distance: Double, x: Double, y: Double): Sample = {
+    inline def apply(distance: Double, x: Double, y: Double): Sample = {
       val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Sample]
     }
     
-    @scala.inline
-    implicit class SampleMutableBuilder[Self <: Sample] (val x: Self) extends AnyVal {
+    extension [Self <: Sample](x: Self) {
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -760,20 +616,16 @@ object Vectorizer {
   }
   object Scale {
     
-    @scala.inline
-    def apply(sx: Double, sy: Double): Scale = {
+    inline def apply(sx: Double, sy: Double): Scale = {
       val __obj = js.Dynamic.literal(sx = sx.asInstanceOf[js.Any], sy = sy.asInstanceOf[js.Any])
       __obj.asInstanceOf[Scale]
     }
     
-    @scala.inline
-    implicit class ScaleMutableBuilder[Self <: Scale] (val x: Self) extends AnyVal {
+    extension [Self <: Scale](x: Self) {
       
-      @scala.inline
-      def setSx(value: Double): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+      inline def setSx(value: Double): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSy(value: Double): Self = StObject.set(x, "sy", value.asInstanceOf[js.Any])
+      inline def setSy(value: Double): Self = StObject.set(x, "sy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -787,23 +639,18 @@ object Vectorizer {
   }
   object TextAnnotation {
     
-    @scala.inline
-    def apply(attrs: StringDictionary[js.Any], end: Double, start: Double): TextAnnotation = {
+    inline def apply(attrs: StringDictionary[js.Any], end: Double, start: Double): TextAnnotation = {
       val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextAnnotation]
     }
     
-    @scala.inline
-    implicit class TextAnnotationMutableBuilder[Self <: TextAnnotation] (val x: Self) extends AnyVal {
+    extension [Self <: TextAnnotation](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -827,65 +674,46 @@ object Vectorizer {
   }
   object TextOptions {
     
-    @scala.inline
-    def apply(): TextOptions = {
+    inline def apply(): TextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextOptions]
     }
     
-    @scala.inline
-    implicit class TextOptionsMutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TextOptions](x: Self) {
       
-      @scala.inline
-      def setAnnotations(value: js.Array[TextAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+      inline def setAnnotations(value: js.Array[TextAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+      inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
       
-      @scala.inline
-      def setAnnotationsVarargs(value: TextAnnotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+      inline def setAnnotationsVarargs(value: TextAnnotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
       
-      @scala.inline
-      def setDisplayEmpty(value: Boolean): Self = StObject.set(x, "displayEmpty", value.asInstanceOf[js.Any])
+      inline def setDisplayEmpty(value: Boolean): Self = StObject.set(x, "displayEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayEmptyUndefined: Self = StObject.set(x, "displayEmpty", js.undefined)
+      inline def setDisplayEmptyUndefined: Self = StObject.set(x, "displayEmpty", js.undefined)
       
-      @scala.inline
-      def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+      inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+      inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
       
-      @scala.inline
-      def setIncludeAnnotationIndices(value: Boolean): Self = StObject.set(x, "includeAnnotationIndices", value.asInstanceOf[js.Any])
+      inline def setIncludeAnnotationIndices(value: Boolean): Self = StObject.set(x, "includeAnnotationIndices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeAnnotationIndicesUndefined: Self = StObject.set(x, "includeAnnotationIndices", js.undefined)
+      inline def setIncludeAnnotationIndicesUndefined: Self = StObject.set(x, "includeAnnotationIndices", js.undefined)
       
-      @scala.inline
-      def setLineHeight(value: Double | String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+      inline def setLineHeight(value: Double | String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+      inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
       
-      @scala.inline
-      def setTextPath(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "textPath", value.asInstanceOf[js.Any])
+      inline def setTextPath(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "textPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextPathUndefined: Self = StObject.set(x, "textPath", js.undefined)
+      inline def setTextPathUndefined: Self = StObject.set(x, "textPath", js.undefined)
       
-      @scala.inline
-      def setTextVerticalAnchor(value: TextVerticalAnchor | Double | String): Self = StObject.set(x, "textVerticalAnchor", value.asInstanceOf[js.Any])
+      inline def setTextVerticalAnchor(value: TextVerticalAnchor | Double | String): Self = StObject.set(x, "textVerticalAnchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextVerticalAnchorUndefined: Self = StObject.set(x, "textVerticalAnchor", js.undefined)
+      inline def setTextVerticalAnchorUndefined: Self = StObject.set(x, "textVerticalAnchor", js.undefined)
       
-      @scala.inline
-      def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     }
   }
   
@@ -897,14 +725,11 @@ object Vectorizer {
   trait TextVerticalAnchor extends StObject
   object TextVerticalAnchor {
     
-    @scala.inline
-    def bottom: typings.jointjs.jointjsStrings.bottom = "bottom".asInstanceOf[typings.jointjs.jointjsStrings.bottom]
+    inline def bottom: typings.jointjs.jointjsStrings.bottom = "bottom".asInstanceOf[typings.jointjs.jointjsStrings.bottom]
     
-    @scala.inline
-    def middle: typings.jointjs.jointjsStrings.middle = "middle".asInstanceOf[typings.jointjs.jointjsStrings.middle]
+    inline def middle: typings.jointjs.jointjsStrings.middle = "middle".asInstanceOf[typings.jointjs.jointjsStrings.middle]
     
-    @scala.inline
-    def top: typings.jointjs.jointjsStrings.top = "top".asInstanceOf[typings.jointjs.jointjsStrings.top]
+    inline def top: typings.jointjs.jointjsStrings.top = "top".asInstanceOf[typings.jointjs.jointjsStrings.top]
   }
   
   trait Transform extends StObject {
@@ -919,26 +744,20 @@ object Vectorizer {
   }
   object Transform {
     
-    @scala.inline
-    def apply(rotate: Rotation, scale: Scale, translate: Translation, value: String): Transform = {
+    inline def apply(rotate: Rotation, scale: Scale, translate: Translation, value: String): Transform = {
       val __obj = js.Dynamic.literal(rotate = rotate.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], translate = translate.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Transform]
     }
     
-    @scala.inline
-    implicit class TransformMutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
+    extension [Self <: Transform](x: Self) {
       
-      @scala.inline
-      def setRotate(value: Rotation): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: Rotation): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScale(value: Scale): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Scale): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslate(value: Translation): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: Translation): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -948,20 +767,16 @@ object Vectorizer {
   }
   object TransformOptions {
     
-    @scala.inline
-    def apply(): TransformOptions = {
+    inline def apply(): TransformOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransformOptions]
     }
     
-    @scala.inline
-    implicit class TransformOptionsMutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransformOptions](x: Self) {
       
-      @scala.inline
-      def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+      inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
+      inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
     }
   }
   
@@ -973,20 +788,16 @@ object Vectorizer {
   }
   object Translation {
     
-    @scala.inline
-    def apply(tx: Double, ty: Double): Translation = {
+    inline def apply(tx: Double, ty: Double): Translation = {
       val __obj = js.Dynamic.literal(tx = tx.asInstanceOf[js.Any], ty = ty.asInstanceOf[js.Any])
       __obj.asInstanceOf[Translation]
     }
     
-    @scala.inline
-    implicit class TranslationMutableBuilder[Self <: Translation] (val x: Self) extends AnyVal {
+    extension [Self <: Translation](x: Self) {
       
-      @scala.inline
-      def setTx(value: Double): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
+      inline def setTx(value: Double): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTy(value: Double): Self = StObject.set(x, "ty", value.asInstanceOf[js.Any])
+      inline def setTy(value: Double): Self = StObject.set(x, "ty", value.asInstanceOf[js.Any])
     }
   }
 }

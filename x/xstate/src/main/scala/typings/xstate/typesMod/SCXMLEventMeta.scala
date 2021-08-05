@@ -10,16 +10,13 @@ trait SCXMLEventMeta[TEvent /* <: EventObject */] extends StObject {
 }
 object SCXMLEventMeta {
   
-  @scala.inline
-  def apply[TEvent /* <: EventObject */](_event: typings.xstate.typesMod.SCXML.Event[TEvent]): SCXMLEventMeta[TEvent] = {
+  inline def apply[TEvent /* <: EventObject */](_event: typings.xstate.typesMod.SCXML.Event[TEvent]): SCXMLEventMeta[TEvent] = {
     val __obj = js.Dynamic.literal(_event = _event.asInstanceOf[js.Any])
     __obj.asInstanceOf[SCXMLEventMeta[TEvent]]
   }
   
-  @scala.inline
-  implicit class SCXMLEventMetaMutableBuilder[Self <: SCXMLEventMeta[?], TEvent /* <: EventObject */] (val x: Self & SCXMLEventMeta[TEvent]) extends AnyVal {
+  extension [Self <: SCXMLEventMeta[?], TEvent /* <: EventObject */](x: Self & SCXMLEventMeta[TEvent]) {
     
-    @scala.inline
-    def set_event(value: typings.xstate.typesMod.SCXML.Event[TEvent]): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
+    inline def set_event(value: typings.xstate.typesMod.SCXML.Event[TEvent]): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
   }
 }

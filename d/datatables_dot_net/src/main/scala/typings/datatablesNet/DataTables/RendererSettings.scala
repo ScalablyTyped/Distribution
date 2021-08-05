@@ -14,25 +14,19 @@ trait RendererSettings extends StObject {
 }
 object RendererSettings {
   
-  @scala.inline
-  def apply(): RendererSettings = {
+  inline def apply(): RendererSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RendererSettings]
   }
   
-  @scala.inline
-  implicit class RendererSettingsMutableBuilder[Self <: RendererSettings] (val x: Self) extends AnyVal {
+  extension [Self <: RendererSettings](x: Self) {
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setPageButton(value: String): Self = StObject.set(x, "pageButton", value.asInstanceOf[js.Any])
+    inline def setPageButton(value: String): Self = StObject.set(x, "pageButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageButtonUndefined: Self = StObject.set(x, "pageButton", js.undefined)
+    inline def setPageButtonUndefined: Self = StObject.set(x, "pageButton", js.undefined)
   }
 }

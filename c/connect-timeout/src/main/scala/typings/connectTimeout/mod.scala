@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(timeout: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(timeout.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(timeout: String, options: TimeoutOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(timeout.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(timeout: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(timeout.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(timeout: String, options: TimeoutOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(timeout.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("connect-timeout", JSImport.Namespace)
   @js.native
@@ -32,20 +30,16 @@ object mod {
   }
   object TimeoutOptions {
     
-    @scala.inline
-    def apply(): TimeoutOptions = {
+    inline def apply(): TimeoutOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimeoutOptions]
     }
     
-    @scala.inline
-    implicit class TimeoutOptionsMutableBuilder[Self <: TimeoutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TimeoutOptions](x: Self) {
       
-      @scala.inline
-      def setRespond(value: Boolean): Self = StObject.set(x, "respond", value.asInstanceOf[js.Any])
+      inline def setRespond(value: Boolean): Self = StObject.set(x, "respond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRespondUndefined: Self = StObject.set(x, "respond", js.undefined)
+      inline def setRespondUndefined: Self = StObject.set(x, "respond", js.undefined)
     }
   }
 }

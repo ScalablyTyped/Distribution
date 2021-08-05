@@ -80,8 +80,7 @@ trait XFilePicker
 }
 object XFilePicker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DisplayDirectory: String,
     Files: SafeArray[String],
     acquire: () => Unit,
@@ -99,28 +98,20 @@ object XFilePicker {
     __obj.asInstanceOf[XFilePicker]
   }
   
-  @scala.inline
-  implicit class XFilePickerMutableBuilder[Self <: XFilePicker] (val x: Self) extends AnyVal {
+  extension [Self <: XFilePicker](x: Self) {
     
-    @scala.inline
-    def setDisplayDirectory(value: String): Self = StObject.set(x, "DisplayDirectory", value.asInstanceOf[js.Any])
+    inline def setDisplayDirectory(value: String): Self = StObject.set(x, "DisplayDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiles(value: SafeArray[String]): Self = StObject.set(x, "Files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: SafeArray[String]): Self = StObject.set(x, "Files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDisplayDirectory(value: () => String): Self = StObject.set(x, "getDisplayDirectory", js.Any.fromFunction0(value))
+    inline def setGetDisplayDirectory(value: () => String): Self = StObject.set(x, "getDisplayDirectory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFiles(value: () => SafeArray[String]): Self = StObject.set(x, "getFiles", js.Any.fromFunction0(value))
+    inline def setGetFiles(value: () => SafeArray[String]): Self = StObject.set(x, "getFiles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDefaultName(value: String => Unit): Self = StObject.set(x, "setDefaultName", js.Any.fromFunction1(value))
+    inline def setSetDefaultName(value: String => Unit): Self = StObject.set(x, "setDefaultName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDisplayDirectory(value: String => Unit): Self = StObject.set(x, "setDisplayDirectory", js.Any.fromFunction1(value))
+    inline def setSetDisplayDirectory(value: String => Unit): Self = StObject.set(x, "setDisplayDirectory", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMultiSelectionMode(value: Boolean => Unit): Self = StObject.set(x, "setMultiSelectionMode", js.Any.fromFunction1(value))
+    inline def setSetMultiSelectionMode(value: Boolean => Unit): Self = StObject.set(x, "setMultiSelectionMode", js.Any.fromFunction1(value))
   }
 }

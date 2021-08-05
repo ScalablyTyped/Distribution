@@ -31,8 +31,7 @@ object mod {
   @JSImport("@xtuc/long", "MAX_UNSIGNED_VALUE")
   @js.native
   def MAX_UNSIGNED_VALUE: Long = js.native
-  @scala.inline
-  def MAX_UNSIGNED_VALUE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_UNSIGNED_VALUE")(x.asInstanceOf[js.Any])
+  inline def MAX_UNSIGNED_VALUE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_UNSIGNED_VALUE")(x.asInstanceOf[js.Any])
   
   /**
     * Maximum signed value.
@@ -41,8 +40,7 @@ object mod {
   @JSImport("@xtuc/long", "MAX_VALUE")
   @js.native
   def MAX_VALUE: Long = js.native
-  @scala.inline
-  def MAX_VALUE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_VALUE")(x.asInstanceOf[js.Any])
+  inline def MAX_VALUE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_VALUE")(x.asInstanceOf[js.Any])
   
   /**
     * Minimum signed value.
@@ -51,8 +49,7 @@ object mod {
   @JSImport("@xtuc/long", "MIN_VALUE")
   @js.native
   def MIN_VALUE: Long = js.native
-  @scala.inline
-  def MIN_VALUE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_VALUE")(x.asInstanceOf[js.Any])
+  inline def MIN_VALUE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_VALUE")(x.asInstanceOf[js.Any])
   
   /**
     * Signed negative one.
@@ -61,8 +58,7 @@ object mod {
   @JSImport("@xtuc/long", "NEG_ONE")
   @js.native
   def NEG_ONE: Long = js.native
-  @scala.inline
-  def NEG_ONE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NEG_ONE")(x.asInstanceOf[js.Any])
+  inline def NEG_ONE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NEG_ONE")(x.asInstanceOf[js.Any])
   
   /**
     * Signed one.
@@ -71,8 +67,7 @@ object mod {
   @JSImport("@xtuc/long", "ONE")
   @js.native
   def ONE: Long = js.native
-  @scala.inline
-  def ONE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
+  inline def ONE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
   
   /**
     * Unsigned one.
@@ -81,8 +76,7 @@ object mod {
   @JSImport("@xtuc/long", "UONE")
   @js.native
   def UONE: Long = js.native
-  @scala.inline
-  def UONE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UONE")(x.asInstanceOf[js.Any])
+  inline def UONE_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UONE")(x.asInstanceOf[js.Any])
   
   /**
     * Unsigned zero.
@@ -91,8 +85,7 @@ object mod {
   @JSImport("@xtuc/long", "UZERO")
   @js.native
   def UZERO: Long = js.native
-  @scala.inline
-  def UZERO_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UZERO")(x.asInstanceOf[js.Any])
+  inline def UZERO_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UZERO")(x.asInstanceOf[js.Any])
   
   /**
     * Signed zero
@@ -101,111 +94,81 @@ object mod {
   @JSImport("@xtuc/long", "ZERO")
   @js.native
   def ZERO: Long = js.native
-  @scala.inline
-  def ZERO_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+  inline def ZERO_=(x: Long): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   
   /**
     * Returns a Long representing the 64 bit integer that comes by concatenating the given low and high bits. Each is assumed to use 32 bits.
     */
   /* static member */
-  @scala.inline
-  def fromBits(lowBits: Double, highBits: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[Long]
-  @scala.inline
-  def fromBits(lowBits: Double, highBits: Double, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromBits(lowBits: Double, highBits: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromBits(lowBits: Double, highBits: Double, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
   
   /**
     * Creates a Long from its byte representation.
     */
   /* static member */
-  @scala.inline
-  def fromBytes(bytes: js.Array[Double]): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any]).asInstanceOf[Long]
-  @scala.inline
-  def fromBytes(bytes: js.Array[Double], unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
-  @scala.inline
-  def fromBytes(bytes: js.Array[Double], unsigned: Boolean, le: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any], le.asInstanceOf[js.Any])).asInstanceOf[Long]
-  @scala.inline
-  def fromBytes(bytes: js.Array[Double], unsigned: Unit, le: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any], le.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromBytes(bytes: js.Array[Double]): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromBytes(bytes: js.Array[Double], unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromBytes(bytes: js.Array[Double], unsigned: Boolean, le: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any], le.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromBytes(bytes: js.Array[Double], unsigned: Unit, le: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any], le.asInstanceOf[js.Any])).asInstanceOf[Long]
   
   /**
     * Creates a Long from its big endian byte representation.
     */
   /* static member */
-  @scala.inline
-  def fromBytesBE(bytes: js.Array[Double]): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytesBE")(bytes.asInstanceOf[js.Any]).asInstanceOf[Long]
-  @scala.inline
-  def fromBytesBE(bytes: js.Array[Double], unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytesBE")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromBytesBE(bytes: js.Array[Double]): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytesBE")(bytes.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromBytesBE(bytes: js.Array[Double], unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytesBE")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
   
   /**
     * Creates a Long from its little endian byte representation.
     */
   /* static member */
-  @scala.inline
-  def fromBytesLE(bytes: js.Array[Double]): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytesLE")(bytes.asInstanceOf[js.Any]).asInstanceOf[Long]
-  @scala.inline
-  def fromBytesLE(bytes: js.Array[Double], unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytesLE")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromBytesLE(bytes: js.Array[Double]): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytesLE")(bytes.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromBytesLE(bytes: js.Array[Double], unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytesLE")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
   
   /**
     * Returns a Long representing the given 32 bit integer value.
     */
   /* static member */
-  @scala.inline
-  def fromInt(value: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
-  @scala.inline
-  def fromInt(value: Double, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromInt(value: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromInt(value: Double, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
   
   /**
     * Returns a Long representing the given value, provided that it is a finite number. Otherwise, zero is returned.
     */
   /* static member */
-  @scala.inline
-  def fromNumber(value: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
-  @scala.inline
-  def fromNumber(value: Double, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromNumber(value: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromNumber(value: Double, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
   
   /**
     * Returns a Long representation of the given string, written using the specified radix.
     */
   /* static member */
-  @scala.inline
-  def fromString(str: String): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Long]
-  @scala.inline
-  def fromString(str: String, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
-  @scala.inline
-  def fromString(str: String, unsigned: Boolean, radix: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Long]
-  @scala.inline
-  def fromString(str: String, unsigned: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
-  @scala.inline
-  def fromString(str: String, unsigned: Double, radix: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Long]
-  @scala.inline
-  def fromString(str: String, unsigned: Unit, radix: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromString(str: String): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromString(str: String, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromString(str: String, unsigned: Boolean, radix: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromString(str: String, unsigned: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromString(str: String, unsigned: Double, radix: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromString(str: String, unsigned: Unit, radix: Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Long]
   
-  @scala.inline
-  def fromValue(`val`: String): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Long]
-  @scala.inline
-  def fromValue(`val`: String, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
-  @scala.inline
-  def fromValue(`val`: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Long]
-  @scala.inline
-  def fromValue(`val`: Double, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
-  @scala.inline
-  def fromValue(`val`: High): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Long]
-  @scala.inline
-  def fromValue(`val`: High, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromValue(`val`: String): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromValue(`val`: String, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromValue(`val`: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromValue(`val`: Double, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromValue(`val`: High): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromValue(`val`: High, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
   /**
     * Converts the specified value to a Long.
     */
   /* static member */
-  @scala.inline
-  def fromValue(`val`: Long): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Long]
-  @scala.inline
-  def fromValue(`val`: Long, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
+  inline def fromValue(`val`: Long): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Long]
+  inline def fromValue(`val`: Long, unsigned: Boolean): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(`val`.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[Long]
   
   /**
     * Tests if the specified object is a Long.
     */
   /* static member */
-  @scala.inline
-  def isLong(obj: js.Any): /* is @xtuc/long.@xtuc/long.Long */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLong")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @xtuc/long.@xtuc/long.Long */ Boolean]
+  inline def isLong(obj: js.Any): /* is @xtuc/long.@xtuc/long.Long */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLong")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @xtuc/long.@xtuc/long.Long */ Boolean]
   
   @js.native
   trait Long extends StObject {

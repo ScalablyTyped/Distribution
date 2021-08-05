@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoChartFieldType extends StObject
 object MsoChartFieldType {
   
-  @scala.inline
-  def msoChartFieldBubbleSize: `1` = 1.asInstanceOf[`1`]
+  inline def msoChartFieldBubbleSize: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoChartFieldCategoryName: `2` = 2.asInstanceOf[`2`]
+  inline def msoChartFieldCategoryName: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoChartFieldFormula: `6` = 6.asInstanceOf[`6`]
+  inline def msoChartFieldFormula: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoChartFieldPercentage: `3` = 3.asInstanceOf[`3`]
+  inline def msoChartFieldPercentage: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoChartFieldRange: `7` = 7.asInstanceOf[`7`]
+  inline def msoChartFieldRange: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def msoChartFieldSeriesName: `4` = 4.asInstanceOf[`4`]
+  inline def msoChartFieldSeriesName: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoChartFieldValue: `5` = 5.asInstanceOf[`5`]
+  inline def msoChartFieldValue: `5` = 5.asInstanceOf[`5`]
 }

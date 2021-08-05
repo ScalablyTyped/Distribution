@@ -23,8 +23,7 @@ trait XModifyBroadcaster
 }
 object XModifyBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addModifyListener: XModifyListener => Unit,
     queryInterface: `type` => js.Any,
@@ -35,13 +34,10 @@ object XModifyBroadcaster {
     __obj.asInstanceOf[XModifyBroadcaster]
   }
   
-  @scala.inline
-  implicit class XModifyBroadcasterMutableBuilder[Self <: XModifyBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XModifyBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddModifyListener(value: XModifyListener => Unit): Self = StObject.set(x, "addModifyListener", js.Any.fromFunction1(value))
+    inline def setAddModifyListener(value: XModifyListener => Unit): Self = StObject.set(x, "addModifyListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveModifyListener(value: XModifyListener => Unit): Self = StObject.set(x, "removeModifyListener", js.Any.fromFunction1(value))
+    inline def setRemoveModifyListener(value: XModifyListener => Unit): Self = StObject.set(x, "removeModifyListener", js.Any.fromFunction1(value))
   }
 }

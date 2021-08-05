@@ -13,19 +13,15 @@ trait AssociatePackageResponse extends StObject {
 }
 object AssociatePackageResponse {
   
-  @scala.inline
-  def apply(): AssociatePackageResponse = {
+  inline def apply(): AssociatePackageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociatePackageResponse]
   }
   
-  @scala.inline
-  implicit class AssociatePackageResponseMutableBuilder[Self <: AssociatePackageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssociatePackageResponse](x: Self) {
     
-    @scala.inline
-    def setDomainPackageDetails(value: DomainPackageDetails): Self = StObject.set(x, "DomainPackageDetails", value.asInstanceOf[js.Any])
+    inline def setDomainPackageDetails(value: DomainPackageDetails): Self = StObject.set(x, "DomainPackageDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainPackageDetailsUndefined: Self = StObject.set(x, "DomainPackageDetails", js.undefined)
+    inline def setDomainPackageDetailsUndefined: Self = StObject.set(x, "DomainPackageDetails", js.undefined)
   }
 }

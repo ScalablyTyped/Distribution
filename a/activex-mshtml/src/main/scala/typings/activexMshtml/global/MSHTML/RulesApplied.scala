@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.RulesApplied")
 @js.native
-class RulesApplied protected ()
+/* private */ class RulesApplied ()
   extends StObject
      with typings.activexMshtml.MSHTML.RulesApplied {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.RulesApplied_typekey")
   var MSHTMLDotRulesApplied_typekey: typings.activexMshtml.MSHTML.RulesApplied = js.native
   

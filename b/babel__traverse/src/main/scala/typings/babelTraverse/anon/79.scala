@@ -11,17 +11,14 @@ trait `79` extends StObject {
 }
 object `79` {
   
-  @scala.inline
-  def apply(): `79` = {
+  inline def apply(): `79` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("ObjectTypeSpreadProperty")
     __obj.asInstanceOf[`79`]
   }
   
-  @scala.inline
-  implicit class `79MutableBuilder`[Self <: `79`] (val x: Self) extends AnyVal {
+  extension [Self <: `79`](x: Self) {
     
-    @scala.inline
-    def setType(value: ObjectTypeSpreadProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ObjectTypeSpreadProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -108,8 +108,7 @@ object operation {
       @JSGlobal("jsts.operation.buffer.BufferOp.MAX_PRECISION_DIGITS")
       @js.native
       def MAX_PRECISION_DIGITS: Double = js.native
-      @scala.inline
-      def MAX_PRECISION_DIGITS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_PRECISION_DIGITS")(x.asInstanceOf[js.Any])
+      inline def MAX_PRECISION_DIGITS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_PRECISION_DIGITS")(x.asInstanceOf[js.Any])
       
       /**
         * Computes the buffer of a geometry for a given buffer distance.
@@ -120,8 +119,7 @@ object operation {
         *          distance the buffer distance.
         * @return {Geometry} the buffer of the input geometry.
         */
-      @scala.inline
-      def bufferOp(g: Geometry, distance: Double): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferOp")(g.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+      inline def bufferOp(g: Geometry, distance: Double): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferOp")(g.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Geometry]
       
       /**
         * Computes the buffer for a geometry for a given buffer distance and accuracy
@@ -136,8 +134,7 @@ object operation {
         * @return {Geometry} the buffer of the input geometry.
         *
         */
-      @scala.inline
-      def bufferOp2(g: Geometry, distance: Double, params: typings.jsts.jsts.operation.buffer.BufferParameters): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferOp2")(g.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+      inline def bufferOp2(g: Geometry, distance: Double, params: typings.jsts.jsts.operation.buffer.BufferParameters): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferOp2")(g.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Geometry]
       
       /**
         * Computes the buffer for a geometry for a given buffer distance and accuracy
@@ -153,8 +150,7 @@ object operation {
         * @return {Geometry} the buffer of the input geometry.
         *
         */
-      @scala.inline
-      def bufferOp3(g: Geometry, distance: Double, quadrantSegments: Double): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferOp3")(g.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], quadrantSegments.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+      inline def bufferOp3(g: Geometry, distance: Double, quadrantSegments: Double): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferOp3")(g.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], quadrantSegments.asInstanceOf[js.Any])).asInstanceOf[Geometry]
       
       /**
         * Computes the buffer for a geometry for a given buffer distance and accuracy
@@ -172,8 +168,7 @@ object operation {
         * @return {Geometry} the buffer of the input geometry.
         *
         */
-      @scala.inline
-      def bufferOp4(g: Geometry, distance: Double, quadrantSegments: Double, endCapStyle: Double): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferOp4")(g.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], quadrantSegments.asInstanceOf[js.Any], endCapStyle.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+      inline def bufferOp4(g: Geometry, distance: Double, quadrantSegments: Double, endCapStyle: Double): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferOp4")(g.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], quadrantSegments.asInstanceOf[js.Any], endCapStyle.asInstanceOf[js.Any])).asInstanceOf[Geometry]
       
       /**
         * Compute a scale factor to limit the precision of a given combination of
@@ -191,8 +186,7 @@ object operation {
         *
         * @return {double} a scale factor for the buffer computation.
         */
-      @scala.inline
-      def precisionScaleFactor(g: Geometry, distance: Double, maxPrecisionDigits: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionScaleFactor")(g.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], maxPrecisionDigits.asInstanceOf[js.Any])).asInstanceOf[Double]
+      inline def precisionScaleFactor(g: Geometry, distance: Double, maxPrecisionDigits: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionScaleFactor")(g.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], maxPrecisionDigits.asInstanceOf[js.Any])).asInstanceOf[Double]
     }
     
     @JSGlobal("jsts.operation.buffer.BufferParameters")
@@ -354,8 +348,7 @@ object operation {
       @JSGlobal("jsts.operation.buffer.BufferParameters.CAP_FLAT")
       @js.native
       def CAP_FLAT: Double = js.native
-      @scala.inline
-      def CAP_FLAT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAP_FLAT")(x.asInstanceOf[js.Any])
+      inline def CAP_FLAT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAP_FLAT")(x.asInstanceOf[js.Any])
       
       /**
         * Specifies a round line buffer end cap style.
@@ -365,8 +358,7 @@ object operation {
       @JSGlobal("jsts.operation.buffer.BufferParameters.CAP_ROUND")
       @js.native
       def CAP_ROUND: Double = js.native
-      @scala.inline
-      def CAP_ROUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAP_ROUND")(x.asInstanceOf[js.Any])
+      inline def CAP_ROUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAP_ROUND")(x.asInstanceOf[js.Any])
       
       /**
         * Specifies a square line buffer end cap style.
@@ -376,8 +368,7 @@ object operation {
       @JSGlobal("jsts.operation.buffer.BufferParameters.CAP_SQUARE")
       @js.native
       def CAP_SQUARE: Double = js.native
-      @scala.inline
-      def CAP_SQUARE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAP_SQUARE")(x.asInstanceOf[js.Any])
+      inline def CAP_SQUARE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAP_SQUARE")(x.asInstanceOf[js.Any])
       
       /**
         * The default mitre limit Allows fairly pointy mitres.
@@ -387,8 +378,7 @@ object operation {
       @JSGlobal("jsts.operation.buffer.BufferParameters.DEFAULT_MITRE_LIMIT")
       @js.native
       def DEFAULT_MITRE_LIMIT: Double = js.native
-      @scala.inline
-      def DEFAULT_MITRE_LIMIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MITRE_LIMIT")(x.asInstanceOf[js.Any])
+      inline def DEFAULT_MITRE_LIMIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MITRE_LIMIT")(x.asInstanceOf[js.Any])
       
       /**
         * The default number of facets into which to divide a fillet of 90 degrees. A
@@ -400,8 +390,7 @@ object operation {
       @JSGlobal("jsts.operation.buffer.BufferParameters.DEFAULT_QUADRANT_SEGMENTS")
       @js.native
       def DEFAULT_QUADRANT_SEGMENTS: Double = js.native
-      @scala.inline
-      def DEFAULT_QUADRANT_SEGMENTS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_QUADRANT_SEGMENTS")(x.asInstanceOf[js.Any])
+      inline def DEFAULT_QUADRANT_SEGMENTS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_QUADRANT_SEGMENTS")(x.asInstanceOf[js.Any])
       
       /**
         * Specifies a bevel join style.
@@ -411,8 +400,7 @@ object operation {
       @JSGlobal("jsts.operation.buffer.BufferParameters.JOIN_BEVEL")
       @js.native
       def JOIN_BEVEL: Double = js.native
-      @scala.inline
-      def JOIN_BEVEL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JOIN_BEVEL")(x.asInstanceOf[js.Any])
+      inline def JOIN_BEVEL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JOIN_BEVEL")(x.asInstanceOf[js.Any])
       
       /**
         * Specifies a mitre join style.
@@ -420,8 +408,7 @@ object operation {
       @JSGlobal("jsts.operation.buffer.BufferParameters.JOIN_MITRE")
       @js.native
       def JOIN_MITRE: Double = js.native
-      @scala.inline
-      def JOIN_MITRE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JOIN_MITRE")(x.asInstanceOf[js.Any])
+      inline def JOIN_MITRE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JOIN_MITRE")(x.asInstanceOf[js.Any])
       
       /**
         * Specifies a round join style.
@@ -431,8 +418,7 @@ object operation {
       @JSGlobal("jsts.operation.buffer.BufferParameters.JOIN_ROUND")
       @js.native
       def JOIN_ROUND: Double = js.native
-      @scala.inline
-      def JOIN_ROUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JOIN_ROUND")(x.asInstanceOf[js.Any])
+      inline def JOIN_ROUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JOIN_ROUND")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -462,31 +448,22 @@ object operation {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def contains(g1: Geometry, g2: Geometry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def contains(g1: Geometry, g2: Geometry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @scala.inline
-      def covers(g1: Geometry, g2: Geometry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("covers")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def covers(g1: Geometry, g2: Geometry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("covers")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @scala.inline
-      def crosses(g1: Geometry, g2: Geometry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crosses")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def crosses(g1: Geometry, g2: Geometry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crosses")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @scala.inline
-      def equalsTopo(g1: Geometry, g2: Geometry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsTopo")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def equalsTopo(g1: Geometry, g2: Geometry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsTopo")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @scala.inline
-      def intersects(g1: Geometry, g2: Geometry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def intersects(g1: Geometry, g2: Geometry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @scala.inline
-      def overlaps(g1: Geometry, g2: Geometry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("overlaps")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def overlaps(g1: Geometry, g2: Geometry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("overlaps")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @scala.inline
-      def relate(g1: Geometry, g2: Geometry): IntersectionMatrix = (^.asInstanceOf[js.Dynamic].applyDynamic("relate")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any])).asInstanceOf[IntersectionMatrix]
-      @scala.inline
-      def relate(g1: Geometry, g2: Geometry, boundaryNodeRule: BoundaryNodeRule): IntersectionMatrix = (^.asInstanceOf[js.Dynamic].applyDynamic("relate")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any], boundaryNodeRule.asInstanceOf[js.Any])).asInstanceOf[IntersectionMatrix]
+      inline def relate(g1: Geometry, g2: Geometry): IntersectionMatrix = (^.asInstanceOf[js.Dynamic].applyDynamic("relate")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any])).asInstanceOf[IntersectionMatrix]
+      inline def relate(g1: Geometry, g2: Geometry, boundaryNodeRule: BoundaryNodeRule): IntersectionMatrix = (^.asInstanceOf[js.Dynamic].applyDynamic("relate")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any], boundaryNodeRule.asInstanceOf[js.Any])).asInstanceOf[IntersectionMatrix]
       
-      @scala.inline
-      def touches(g1: Geometry, g2: Geometry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("touches")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      inline def touches(g1: Geometry, g2: Geometry): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("touches")(g1.asInstanceOf[js.Any], g2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     }
   }
 }

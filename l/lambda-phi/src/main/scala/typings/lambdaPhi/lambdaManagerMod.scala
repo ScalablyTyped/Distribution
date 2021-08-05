@@ -14,25 +14,25 @@ object lambdaManagerMod {
     extends StObject
        with LambdaManager {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _apiGateway: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _callback: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _context: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _event: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _lambdaModels: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _lambdas: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _rawHandler: js.Any = js.native
     
     /* CompleteClass */
@@ -71,20 +71,20 @@ object lambdaManagerMod {
     /* CompleteClass */
     var event: js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def executeHandler(lambda: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def executeHandler(lambda: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def executePostConstructor(lambda: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def executePostConstructor(lambda: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def executePreLambdaCallback(lambda: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def executePreLambdaCallback(lambda: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def getEvent(lambda: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def getEvent(lambda: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def getEventContext(): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def getEventContext(): js.Any = js.native
     
     /* CompleteClass */
     override def getLambdaByName(name: String): typings.lambdaPhi.lambdaModelMod.default = js.native
@@ -101,11 +101,11 @@ object lambdaManagerMod {
     /* CompleteClass */
     override def setLambdaPath(target: js.Any, path: js.Any): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def setLambdaProperties(lambda: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def setLambdaProperties(lambda: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def setPreLambdaTimeoutMethod(lambda: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def setPreLambdaTimeoutMethod(lambda: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def upsertLambdaModel(target: js.Any): typings.lambdaPhi.lambdaModelMod.default = js.native
@@ -120,25 +120,24 @@ object lambdaManagerMod {
     @JSImport("lambda-phi/lib/lambda-manager", "default.instance")
     @js.native
     def instance: LambdaManager = js.native
-    @scala.inline
-    def instance_=(x: LambdaManager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
+    inline def instance_=(x: LambdaManager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
   }
   
   trait LambdaManager extends StObject {
     
-    var _apiGateway: js.Any
+    /* private */ var _apiGateway: js.Any
     
-    var _callback: js.Any
+    /* private */ var _callback: js.Any
     
-    var _context: js.Any
+    /* private */ var _context: js.Any
     
-    var _event: js.Any
+    /* private */ var _event: js.Any
     
-    var _lambdaModels: js.Any
+    /* private */ var _lambdaModels: js.Any
     
-    var _lambdas: js.Any
+    /* private */ var _lambdas: js.Any
     
-    var _rawHandler: js.Any
+    /* private */ var _rawHandler: js.Any
     
     def addCallbackProperty(target: js.Any, property: js.Any): Unit
     
@@ -192,8 +191,7 @@ object lambdaManagerMod {
   }
   object LambdaManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _apiGateway: js.Any,
       _callback: js.Any,
       _context: js.Any,
@@ -231,104 +229,71 @@ object lambdaManagerMod {
       __obj.asInstanceOf[LambdaManager]
     }
     
-    @scala.inline
-    implicit class LambdaManagerMutableBuilder[Self <: LambdaManager] (val x: Self) extends AnyVal {
+    extension [Self <: LambdaManager](x: Self) {
       
-      @scala.inline
-      def setAddCallbackProperty(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "addCallbackProperty", js.Any.fromFunction2(value))
+      inline def setAddCallbackProperty(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "addCallbackProperty", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddContextProperty(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "addContextProperty", js.Any.fromFunction2(value))
+      inline def setAddContextProperty(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "addContextProperty", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddEventContextProperty(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "addEventContextProperty", js.Any.fromFunction2(value))
+      inline def setAddEventContextProperty(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "addEventContextProperty", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddEventProperty(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "addEventProperty", js.Any.fromFunction2(value))
+      inline def setAddEventProperty(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "addEventProperty", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddHandlerMethod(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "addHandlerMethod", js.Any.fromFunction2(value))
+      inline def setAddHandlerMethod(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "addHandlerMethod", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddPostConstructorMethod(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "addPostConstructorMethod", js.Any.fromFunction2(value))
+      inline def setAddPostConstructorMethod(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "addPostConstructorMethod", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddPreLambdaCallbackMethod(value: (js.Any, String) => Unit): Self = StObject.set(x, "addPreLambdaCallbackMethod", js.Any.fromFunction2(value))
+      inline def setAddPreLambdaCallbackMethod(value: (js.Any, String) => Unit): Self = StObject.set(x, "addPreLambdaCallbackMethod", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddPreLambdaTimeoutMethod(value: (js.Any, String, Double) => Unit): Self = StObject.set(x, "addPreLambdaTimeoutMethod", js.Any.fromFunction3(value))
+      inline def setAddPreLambdaTimeoutMethod(value: (js.Any, String, Double) => Unit): Self = StObject.set(x, "addPreLambdaTimeoutMethod", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setApiGateway(value: ApiGateway): Self = StObject.set(x, "apiGateway", value.asInstanceOf[js.Any])
+      inline def setApiGateway(value: ApiGateway): Self = StObject.set(x, "apiGateway", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecuteHandler(value: js.Any => js.Any): Self = StObject.set(x, "executeHandler", js.Any.fromFunction1(value))
+      inline def setExecuteHandler(value: js.Any => js.Any): Self = StObject.set(x, "executeHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExecutePostConstructor(value: js.Any => js.Any): Self = StObject.set(x, "executePostConstructor", js.Any.fromFunction1(value))
+      inline def setExecutePostConstructor(value: js.Any => js.Any): Self = StObject.set(x, "executePostConstructor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExecutePreLambdaCallback(value: js.Any => js.Any): Self = StObject.set(x, "executePreLambdaCallback", js.Any.fromFunction1(value))
+      inline def setExecutePreLambdaCallback(value: js.Any => js.Any): Self = StObject.set(x, "executePreLambdaCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetEvent(value: js.Any => js.Any): Self = StObject.set(x, "getEvent", js.Any.fromFunction1(value))
+      inline def setGetEvent(value: js.Any => js.Any): Self = StObject.set(x, "getEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetEventContext(value: () => js.Any): Self = StObject.set(x, "getEventContext", js.Any.fromFunction0(value))
+      inline def setGetEventContext(value: () => js.Any): Self = StObject.set(x, "getEventContext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLambdaByName(value: String => typings.lambdaPhi.lambdaModelMod.default): Self = StObject.set(x, "getLambdaByName", js.Any.fromFunction1(value))
+      inline def setGetLambdaByName(value: String => typings.lambdaPhi.lambdaModelMod.default): Self = StObject.set(x, "getLambdaByName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProcessLambdas(value: () => Unit): Self = StObject.set(x, "processLambdas", js.Any.fromFunction0(value))
+      inline def setProcessLambdas(value: () => Unit): Self = StObject.set(x, "processLambdas", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRawHandler(value: js.Any): Self = StObject.set(x, "rawHandler", value.asInstanceOf[js.Any])
+      inline def setRawHandler(value: js.Any): Self = StObject.set(x, "rawHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetLambda(value: (js.Any, LambdaConfig) => Unit): Self = StObject.set(x, "setLambda", js.Any.fromFunction2(value))
+      inline def setSetLambda(value: (js.Any, LambdaConfig) => Unit): Self = StObject.set(x, "setLambda", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetLambdaPath(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "setLambdaPath", js.Any.fromFunction2(value))
+      inline def setSetLambdaPath(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "setLambdaPath", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetLambdaProperties(value: js.Any => js.Any): Self = StObject.set(x, "setLambdaProperties", js.Any.fromFunction1(value))
+      inline def setSetLambdaProperties(value: js.Any => js.Any): Self = StObject.set(x, "setLambdaProperties", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPreLambdaTimeoutMethod(value: js.Any => js.Any): Self = StObject.set(x, "setPreLambdaTimeoutMethod", js.Any.fromFunction1(value))
+      inline def setSetPreLambdaTimeoutMethod(value: js.Any => js.Any): Self = StObject.set(x, "setPreLambdaTimeoutMethod", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpsertLambdaModel(value: js.Any => typings.lambdaPhi.lambdaModelMod.default): Self = StObject.set(x, "upsertLambdaModel", js.Any.fromFunction1(value))
+      inline def setUpsertLambdaModel(value: js.Any => typings.lambdaPhi.lambdaModelMod.default): Self = StObject.set(x, "upsertLambdaModel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_apiGateway(value: js.Any): Self = StObject.set(x, "_apiGateway", value.asInstanceOf[js.Any])
+      inline def set_apiGateway(value: js.Any): Self = StObject.set(x, "_apiGateway", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_callback(value: js.Any): Self = StObject.set(x, "_callback", value.asInstanceOf[js.Any])
+      inline def set_callback(value: js.Any): Self = StObject.set(x, "_callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_context(value: js.Any): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
+      inline def set_context(value: js.Any): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_event(value: js.Any): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
+      inline def set_event(value: js.Any): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_lambdaModels(value: js.Any): Self = StObject.set(x, "_lambdaModels", value.asInstanceOf[js.Any])
+      inline def set_lambdaModels(value: js.Any): Self = StObject.set(x, "_lambdaModels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_lambdas(value: js.Any): Self = StObject.set(x, "_lambdas", value.asInstanceOf[js.Any])
+      inline def set_lambdas(value: js.Any): Self = StObject.set(x, "_lambdas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_rawHandler(value: js.Any): Self = StObject.set(x, "_rawHandler", value.asInstanceOf[js.Any])
+      inline def set_rawHandler(value: js.Any): Self = StObject.set(x, "_rawHandler", value.asInstanceOf[js.Any])
     }
   }
 }

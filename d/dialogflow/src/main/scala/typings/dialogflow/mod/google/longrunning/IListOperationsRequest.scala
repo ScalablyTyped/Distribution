@@ -21,49 +21,35 @@ trait IListOperationsRequest extends StObject {
 }
 object IListOperationsRequest {
   
-  @scala.inline
-  def apply(): IListOperationsRequest = {
+  inline def apply(): IListOperationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListOperationsRequest]
   }
   
-  @scala.inline
-  implicit class IListOperationsRequestMutableBuilder[Self <: IListOperationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IListOperationsRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterNull: Self = StObject.set(x, "filter", null)
+    inline def setFilterNull: Self = StObject.set(x, "filter", null)
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeNull: Self = StObject.set(x, "pageSize", null)
+    inline def setPageSizeNull: Self = StObject.set(x, "pageSize", null)
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenNull: Self = StObject.set(x, "pageToken", null)
+    inline def setPageTokenNull: Self = StObject.set(x, "pageToken", null)
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

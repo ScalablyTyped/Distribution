@@ -28,37 +28,27 @@ trait PolicyVersion extends StObject {
 }
 object PolicyVersion {
   
-  @scala.inline
-  def apply(): PolicyVersion = {
+  inline def apply(): PolicyVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolicyVersion]
   }
   
-  @scala.inline
-  implicit class PolicyVersionMutableBuilder[Self <: PolicyVersion] (val x: Self) extends AnyVal {
+  extension [Self <: PolicyVersion](x: Self) {
     
-    @scala.inline
-    def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
+    inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
-    @scala.inline
-    def setDocument(value: policyDocumentType): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: policyDocumentType): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "Document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "Document", js.undefined)
     
-    @scala.inline
-    def setIsDefaultVersion(value: booleanType): Self = StObject.set(x, "IsDefaultVersion", value.asInstanceOf[js.Any])
+    inline def setIsDefaultVersion(value: booleanType): Self = StObject.set(x, "IsDefaultVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultVersionUndefined: Self = StObject.set(x, "IsDefaultVersion", js.undefined)
+    inline def setIsDefaultVersionUndefined: Self = StObject.set(x, "IsDefaultVersion", js.undefined)
     
-    @scala.inline
-    def setVersionId(value: policyVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: policyVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

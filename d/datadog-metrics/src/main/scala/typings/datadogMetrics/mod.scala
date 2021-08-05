@@ -63,52 +63,31 @@ object mod {
     def increment(key: String, value: Unit, tags: Unit, timestamp: Double): Unit = js.native
   }
   
-  @scala.inline
-  def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
-  @scala.inline
-  def flush(onSuccess: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(onSuccess.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def flush(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flush")(onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def flush(onSuccess: Unit, onError: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flush")(onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
+  inline def flush(onSuccess: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(onSuccess.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def flush(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flush")(onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flush(onSuccess: Unit, onError: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flush")(onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def gauge(key: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gauge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def gauge(key: String, value: Double, tags: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gauge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def gauge(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gauge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def gauge(key: String, value: Double, tags: Unit, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gauge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def gauge(key: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gauge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def gauge(key: String, value: Double, tags: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gauge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def gauge(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gauge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def gauge(key: String, value: Double, tags: Unit, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gauge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def histogram(key: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("histogram")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def histogram(key: String, value: Double, tags: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("histogram")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def histogram(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("histogram")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def histogram(key: String, value: Double, tags: Unit, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("histogram")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def histogram(key: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("histogram")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def histogram(key: String, value: Double, tags: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("histogram")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def histogram(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("histogram")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def histogram(key: String, value: Double, tags: Unit, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("histogram")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def increment(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def increment(key: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def increment(key: String, value: Double, tags: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def increment(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def increment(key: String, value: Double, tags: Unit, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def increment(key: String, value: Unit, tags: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def increment(key: String, value: Unit, tags: js.Array[String], timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def increment(key: String, value: Unit, tags: Unit, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def increment(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def increment(key: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def increment(key: String, value: Double, tags: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def increment(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def increment(key: String, value: Double, tags: Unit, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def increment(key: String, value: Unit, tags: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def increment(key: String, value: Unit, tags: js.Array[String], timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def increment(key: String, value: Unit, tags: Unit, timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("increment")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def init(options: BufferedMetricsLoggerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def init(options: BufferedMetricsLoggerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait BufferedMetricsLoggerOptions extends StObject {
     
@@ -144,53 +123,38 @@ object mod {
   }
   object BufferedMetricsLoggerOptions {
     
-    @scala.inline
-    def apply(): BufferedMetricsLoggerOptions = {
+    inline def apply(): BufferedMetricsLoggerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BufferedMetricsLoggerOptions]
     }
     
-    @scala.inline
-    implicit class BufferedMetricsLoggerOptionsMutableBuilder[Self <: BufferedMetricsLoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BufferedMetricsLoggerOptions](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
+      inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
       
-      @scala.inline
-      def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
+      inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppKeyUndefined: Self = StObject.set(x, "appKey", js.undefined)
+      inline def setAppKeyUndefined: Self = StObject.set(x, "appKey", js.undefined)
       
-      @scala.inline
-      def setDefaultTags(value: js.Array[String]): Self = StObject.set(x, "defaultTags", value.asInstanceOf[js.Any])
+      inline def setDefaultTags(value: js.Array[String]): Self = StObject.set(x, "defaultTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultTagsUndefined: Self = StObject.set(x, "defaultTags", js.undefined)
+      inline def setDefaultTagsUndefined: Self = StObject.set(x, "defaultTags", js.undefined)
       
-      @scala.inline
-      def setDefaultTagsVarargs(value: String*): Self = StObject.set(x, "defaultTags", js.Array(value :_*))
+      inline def setDefaultTagsVarargs(value: String*): Self = StObject.set(x, "defaultTags", js.Array(value :_*))
       
-      @scala.inline
-      def setFlushIntervalSeconds(value: Double): Self = StObject.set(x, "flushIntervalSeconds", value.asInstanceOf[js.Any])
+      inline def setFlushIntervalSeconds(value: Double): Self = StObject.set(x, "flushIntervalSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlushIntervalSecondsUndefined: Self = StObject.set(x, "flushIntervalSeconds", js.undefined)
+      inline def setFlushIntervalSecondsUndefined: Self = StObject.set(x, "flushIntervalSeconds", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
 }

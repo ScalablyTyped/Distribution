@@ -48,37 +48,27 @@ trait PlusStreamStreamRestoreOptions extends StObject {
 }
 object PlusStreamStreamRestoreOptions {
   
-  @scala.inline
-  def apply(): PlusStreamStreamRestoreOptions = {
+  inline def apply(): PlusStreamStreamRestoreOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusStreamStreamRestoreOptions]
   }
   
-  @scala.inline
-  implicit class PlusStreamStreamRestoreOptionsMutableBuilder[Self <: PlusStreamStreamRestoreOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusStreamStreamRestoreOptions](x: Self) {
     
-    @scala.inline
-    def setExtras(value: js.Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+    inline def setExtras(value: js.Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
+    inline def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
     
-    @scala.inline
-    def setSplash(value: String): Self = StObject.set(x, "splash", value.asInstanceOf[js.Any])
+    inline def setSplash(value: String): Self = StObject.set(x, "splash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashUndefined: Self = StObject.set(x, "splash", js.undefined)
+    inline def setSplashUndefined: Self = StObject.set(x, "splash", js.undefined)
     
-    @scala.inline
-    def setSplashscreen(value: PlusStreamStreamRestoreSplashscreenOptions): Self = StObject.set(x, "splashscreen", value.asInstanceOf[js.Any])
+    inline def setSplashscreen(value: PlusStreamStreamRestoreSplashscreenOptions): Self = StObject.set(x, "splashscreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashscreenUndefined: Self = StObject.set(x, "splashscreen", js.undefined)
+    inline def setSplashscreenUndefined: Self = StObject.set(x, "splashscreen", js.undefined)
     
-    @scala.inline
-    def setStyles(value: PlusStreamLaunchWebviewStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: PlusStreamLaunchWebviewStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

@@ -42,6 +42,5 @@ trait DataValue extends StObject {
 }
 object DataValue {
   
-  @scala.inline
-  def apply: DataValueFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("DataValue").asInstanceOf[DataValueFactory]
+  inline def apply: DataValueFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("DataValue").asInstanceOf[DataValueFactory]
 }

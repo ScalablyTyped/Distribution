@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WMTSRequestEncoding extends StObject
 object WMTSRequestEncoding {
   
-  @scala.inline
-  def KVP: typings.openlayers.openlayersStrings.KVP = "KVP".asInstanceOf[typings.openlayers.openlayersStrings.KVP]
+  inline def KVP: typings.openlayers.openlayersStrings.KVP = "KVP".asInstanceOf[typings.openlayers.openlayersStrings.KVP]
   
-  @scala.inline
-  def REST: typings.openlayers.openlayersStrings.REST = "REST".asInstanceOf[typings.openlayers.openlayersStrings.REST]
+  inline def REST: typings.openlayers.openlayersStrings.REST = "REST".asInstanceOf[typings.openlayers.openlayersStrings.REST]
 }

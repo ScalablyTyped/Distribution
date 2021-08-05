@@ -33,37 +33,27 @@ trait ListOrganizationPortfolioAccessInput extends StObject {
 }
 object ListOrganizationPortfolioAccessInput {
   
-  @scala.inline
-  def apply(OrganizationNodeType: OrganizationNodeType, PortfolioId: Id): ListOrganizationPortfolioAccessInput = {
+  inline def apply(OrganizationNodeType: OrganizationNodeType, PortfolioId: Id): ListOrganizationPortfolioAccessInput = {
     val __obj = js.Dynamic.literal(OrganizationNodeType = OrganizationNodeType.asInstanceOf[js.Any], PortfolioId = PortfolioId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOrganizationPortfolioAccessInput]
   }
   
-  @scala.inline
-  implicit class ListOrganizationPortfolioAccessInputMutableBuilder[Self <: ListOrganizationPortfolioAccessInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListOrganizationPortfolioAccessInput](x: Self) {
     
-    @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
+    inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
-    @scala.inline
-    def setOrganizationNodeType(value: OrganizationNodeType): Self = StObject.set(x, "OrganizationNodeType", value.asInstanceOf[js.Any])
+    inline def setOrganizationNodeType(value: OrganizationNodeType): Self = StObject.set(x, "OrganizationNodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
     
-    @scala.inline
-    def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
+    inline def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
   }
 }

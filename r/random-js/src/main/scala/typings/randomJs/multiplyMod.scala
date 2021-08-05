@@ -11,6 +11,5 @@ object multiplyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def multiply(distribution: Distribution[Double], multiplier: Double): Distribution[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(distribution.asInstanceOf[js.Any], multiplier.asInstanceOf[js.Any])).asInstanceOf[Distribution[Double]]
+  inline def multiply(distribution: Distribution[Double], multiplier: Double): Distribution[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(distribution.asInstanceOf[js.Any], multiplier.asInstanceOf[js.Any])).asInstanceOf[Distribution[Double]]
 }

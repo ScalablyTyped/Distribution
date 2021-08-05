@@ -25,20 +25,16 @@ object redriveMod {
   }
   object RedrivePolicy {
     
-    @scala.inline
-    def apply(deadLetterTargetArn: ARN, maxReceiveCount: Double): RedrivePolicy = {
+    inline def apply(deadLetterTargetArn: ARN, maxReceiveCount: Double): RedrivePolicy = {
       val __obj = js.Dynamic.literal(deadLetterTargetArn = deadLetterTargetArn.asInstanceOf[js.Any], maxReceiveCount = maxReceiveCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[RedrivePolicy]
     }
     
-    @scala.inline
-    implicit class RedrivePolicyMutableBuilder[Self <: RedrivePolicy] (val x: Self) extends AnyVal {
+    extension [Self <: RedrivePolicy](x: Self) {
       
-      @scala.inline
-      def setDeadLetterTargetArn(value: ARN): Self = StObject.set(x, "deadLetterTargetArn", value.asInstanceOf[js.Any])
+      inline def setDeadLetterTargetArn(value: ARN): Self = StObject.set(x, "deadLetterTargetArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxReceiveCount(value: Double): Self = StObject.set(x, "maxReceiveCount", value.asInstanceOf[js.Any])
+      inline def setMaxReceiveCount(value: Double): Self = StObject.set(x, "maxReceiveCount", value.asInstanceOf[js.Any])
     }
   }
 }

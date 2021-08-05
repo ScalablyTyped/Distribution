@@ -21,25 +21,19 @@ trait SchemaDetectedBreak extends StObject {
 }
 object SchemaDetectedBreak {
   
-  @scala.inline
-  def apply(): SchemaDetectedBreak = {
+  inline def apply(): SchemaDetectedBreak = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDetectedBreak]
   }
   
-  @scala.inline
-  implicit class SchemaDetectedBreakMutableBuilder[Self <: SchemaDetectedBreak] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDetectedBreak](x: Self) {
     
-    @scala.inline
-    def setIsPrefix(value: Boolean): Self = StObject.set(x, "isPrefix", value.asInstanceOf[js.Any])
+    inline def setIsPrefix(value: Boolean): Self = StObject.set(x, "isPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrefixUndefined: Self = StObject.set(x, "isPrefix", js.undefined)
+    inline def setIsPrefixUndefined: Self = StObject.set(x, "isPrefix", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

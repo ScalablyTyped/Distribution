@@ -16,23 +16,18 @@ trait MediaQueryPlain
 }
 object MediaQueryPlain {
   
-  @scala.inline
-  def apply(children: js.Array[CssNodePlain]): MediaQueryPlain = {
+  inline def apply(children: js.Array[CssNodePlain]): MediaQueryPlain = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MediaQuery")
     __obj.asInstanceOf[MediaQueryPlain]
   }
   
-  @scala.inline
-  implicit class MediaQueryPlainMutableBuilder[Self <: MediaQueryPlain] (val x: Self) extends AnyVal {
+  extension [Self <: MediaQueryPlain](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[CssNodePlain]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[CssNodePlain]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: CssNodePlain*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: CssNodePlain*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.MediaQuery): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.MediaQuery): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

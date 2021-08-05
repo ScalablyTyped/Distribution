@@ -31,32 +31,24 @@ object anon {
   }
   object IIconPartialIRenderer {
     
-    @scala.inline
-    def apply(name: String, svgstr: String): IIconPartialIRenderer = {
+    inline def apply(name: String, svgstr: String): IIconPartialIRenderer = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], svgstr = svgstr.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIconPartialIRenderer]
     }
     
-    @scala.inline
-    implicit class IIconPartialIRendererMutableBuilder[Self <: IIconPartialIRenderer] (val x: Self) extends AnyVal {
+    extension [Self <: IIconPartialIRenderer](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRender(value: (/* container */ HTMLElement, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (/* container */ HTMLElement, /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setSvgstr(value: String): Self = StObject.set(x, "svgstr", value.asInstanceOf[js.Any])
+      inline def setSvgstr(value: String): Self = StObject.set(x, "svgstr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnrender(value: /* container */ HTMLElement => Unit): Self = StObject.set(x, "unrender", js.Any.fromFunction1(value))
+      inline def setUnrender(value: /* container */ HTMLElement => Unit): Self = StObject.set(x, "unrender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnrenderUndefined: Self = StObject.set(x, "unrender", js.undefined)
+      inline def setUnrenderUndefined: Self = StObject.set(x, "unrender", js.undefined)
     }
   }
 }

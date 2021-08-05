@@ -48,64 +48,45 @@ trait RecipientPhoneAuthentication extends StObject {
 }
 object RecipientPhoneAuthentication {
   
-  @scala.inline
-  def apply(): RecipientPhoneAuthentication = {
+  inline def apply(): RecipientPhoneAuthentication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipientPhoneAuthentication]
   }
   
-  @scala.inline
-  implicit class RecipientPhoneAuthenticationMutableBuilder[Self <: RecipientPhoneAuthentication] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientPhoneAuthentication](x: Self) {
     
-    @scala.inline
-    def setRecipMayProvideNumber(value: String): Self = StObject.set(x, "recipMayProvideNumber", value.asInstanceOf[js.Any])
+    inline def setRecipMayProvideNumber(value: String): Self = StObject.set(x, "recipMayProvideNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipMayProvideNumberMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "recipMayProvideNumberMetadata", value.asInstanceOf[js.Any])
+    inline def setRecipMayProvideNumberMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "recipMayProvideNumberMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipMayProvideNumberMetadataUndefined: Self = StObject.set(x, "recipMayProvideNumberMetadata", js.undefined)
+    inline def setRecipMayProvideNumberMetadataUndefined: Self = StObject.set(x, "recipMayProvideNumberMetadata", js.undefined)
     
-    @scala.inline
-    def setRecipMayProvideNumberUndefined: Self = StObject.set(x, "recipMayProvideNumber", js.undefined)
+    inline def setRecipMayProvideNumberUndefined: Self = StObject.set(x, "recipMayProvideNumber", js.undefined)
     
-    @scala.inline
-    def setRecordVoicePrint(value: String): Self = StObject.set(x, "recordVoicePrint", value.asInstanceOf[js.Any])
+    inline def setRecordVoicePrint(value: String): Self = StObject.set(x, "recordVoicePrint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordVoicePrintMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "recordVoicePrintMetadata", value.asInstanceOf[js.Any])
+    inline def setRecordVoicePrintMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "recordVoicePrintMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordVoicePrintMetadataUndefined: Self = StObject.set(x, "recordVoicePrintMetadata", js.undefined)
+    inline def setRecordVoicePrintMetadataUndefined: Self = StObject.set(x, "recordVoicePrintMetadata", js.undefined)
     
-    @scala.inline
-    def setRecordVoicePrintUndefined: Self = StObject.set(x, "recordVoicePrint", js.undefined)
+    inline def setRecordVoicePrintUndefined: Self = StObject.set(x, "recordVoicePrint", js.undefined)
     
-    @scala.inline
-    def setSenderProvidedNumbers(value: js.Array[String]): Self = StObject.set(x, "senderProvidedNumbers", value.asInstanceOf[js.Any])
+    inline def setSenderProvidedNumbers(value: js.Array[String]): Self = StObject.set(x, "senderProvidedNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderProvidedNumbersMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "senderProvidedNumbersMetadata", value.asInstanceOf[js.Any])
+    inline def setSenderProvidedNumbersMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "senderProvidedNumbersMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderProvidedNumbersMetadataUndefined: Self = StObject.set(x, "senderProvidedNumbersMetadata", js.undefined)
+    inline def setSenderProvidedNumbersMetadataUndefined: Self = StObject.set(x, "senderProvidedNumbersMetadata", js.undefined)
     
-    @scala.inline
-    def setSenderProvidedNumbersUndefined: Self = StObject.set(x, "senderProvidedNumbers", js.undefined)
+    inline def setSenderProvidedNumbersUndefined: Self = StObject.set(x, "senderProvidedNumbers", js.undefined)
     
-    @scala.inline
-    def setSenderProvidedNumbersVarargs(value: String*): Self = StObject.set(x, "senderProvidedNumbers", js.Array(value :_*))
+    inline def setSenderProvidedNumbersVarargs(value: String*): Self = StObject.set(x, "senderProvidedNumbers", js.Array(value :_*))
     
-    @scala.inline
-    def setValidateRecipProvidedNumber(value: String): Self = StObject.set(x, "validateRecipProvidedNumber", value.asInstanceOf[js.Any])
+    inline def setValidateRecipProvidedNumber(value: String): Self = StObject.set(x, "validateRecipProvidedNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateRecipProvidedNumberMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "validateRecipProvidedNumberMetadata", value.asInstanceOf[js.Any])
+    inline def setValidateRecipProvidedNumberMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "validateRecipProvidedNumberMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateRecipProvidedNumberMetadataUndefined: Self = StObject.set(x, "validateRecipProvidedNumberMetadata", js.undefined)
+    inline def setValidateRecipProvidedNumberMetadataUndefined: Self = StObject.set(x, "validateRecipProvidedNumberMetadata", js.undefined)
     
-    @scala.inline
-    def setValidateRecipProvidedNumberUndefined: Self = StObject.set(x, "validateRecipProvidedNumber", js.undefined)
+    inline def setValidateRecipProvidedNumberUndefined: Self = StObject.set(x, "validateRecipProvidedNumber", js.undefined)
   }
 }

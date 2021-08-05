@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(o: js.Any): StringJS = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[StringJS]
+  inline def apply(o: js.Any): StringJS = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[StringJS]
   
   @JSImport("string", JSImport.Namespace)
   @js.native
@@ -17,20 +16,17 @@ object mod {
   @JSImport("string", "TMPL_CLOSE")
   @js.native
   def TMPL_CLOSE: String = js.native
-  @scala.inline
-  def TMPL_CLOSE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TMPL_CLOSE")(x.asInstanceOf[js.Any])
+  inline def TMPL_CLOSE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TMPL_CLOSE")(x.asInstanceOf[js.Any])
   
   @JSImport("string", "TMPL_OPEN")
   @js.native
   def TMPL_OPEN: String = js.native
-  @scala.inline
-  def TMPL_OPEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TMPL_OPEN")(x.asInstanceOf[js.Any])
+  inline def TMPL_OPEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TMPL_OPEN")(x.asInstanceOf[js.Any])
   
   @JSImport("string", "VERSION")
   @js.native
   def VERSION: String = js.native
-  @scala.inline
-  def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+  inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   
   @js.native
   trait StringJS extends StObject {

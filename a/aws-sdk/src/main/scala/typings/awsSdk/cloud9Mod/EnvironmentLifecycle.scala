@@ -23,31 +23,23 @@ trait EnvironmentLifecycle extends StObject {
 }
 object EnvironmentLifecycle {
   
-  @scala.inline
-  def apply(): EnvironmentLifecycle = {
+  inline def apply(): EnvironmentLifecycle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvironmentLifecycle]
   }
   
-  @scala.inline
-  implicit class EnvironmentLifecycleMutableBuilder[Self <: EnvironmentLifecycle] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentLifecycle](x: Self) {
     
-    @scala.inline
-    def setFailureResource(value: String): Self = StObject.set(x, "failureResource", value.asInstanceOf[js.Any])
+    inline def setFailureResource(value: String): Self = StObject.set(x, "failureResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureResourceUndefined: Self = StObject.set(x, "failureResource", js.undefined)
+    inline def setFailureResourceUndefined: Self = StObject.set(x, "failureResource", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setStatus(value: EnvironmentLifecycleStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: EnvironmentLifecycleStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

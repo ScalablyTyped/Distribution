@@ -18,25 +18,19 @@ trait TimeBasedAutoScalingConfiguration extends StObject {
 }
 object TimeBasedAutoScalingConfiguration {
   
-  @scala.inline
-  def apply(): TimeBasedAutoScalingConfiguration = {
+  inline def apply(): TimeBasedAutoScalingConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeBasedAutoScalingConfiguration]
   }
   
-  @scala.inline
-  implicit class TimeBasedAutoScalingConfigurationMutableBuilder[Self <: TimeBasedAutoScalingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: TimeBasedAutoScalingConfiguration](x: Self) {
     
-    @scala.inline
-    def setAutoScalingSchedule(value: WeeklyAutoScalingSchedule): Self = StObject.set(x, "AutoScalingSchedule", value.asInstanceOf[js.Any])
+    inline def setAutoScalingSchedule(value: WeeklyAutoScalingSchedule): Self = StObject.set(x, "AutoScalingSchedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingScheduleUndefined: Self = StObject.set(x, "AutoScalingSchedule", js.undefined)
+    inline def setAutoScalingScheduleUndefined: Self = StObject.set(x, "AutoScalingSchedule", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
   }
 }

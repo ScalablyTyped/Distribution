@@ -266,10 +266,8 @@ object Widget {
     * the widget is already attached, or if the host is not attached
     * to the DOM.
     */
-  @scala.inline
-  def attach(widget: typings.luminoWidgets.widgetMod.Widget, host: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(widget.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def attach(widget: typings.luminoWidgets.widgetMod.Widget, host: HTMLElement, ref: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(widget.asInstanceOf[js.Any], host.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def attach(widget: typings.luminoWidgets.widgetMod.Widget, host: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(widget.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def attach(widget: typings.luminoWidgets.widgetMod.Widget, host: HTMLElement, ref: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(widget.asInstanceOf[js.Any], host.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Detach the widget from its host DOM node.
@@ -280,6 +278,5 @@ object Widget {
     * This will throw an error if the widget is not a root widget,
     * or if the widget is not attached to the DOM.
     */
-  @scala.inline
-  def detach(widget: typings.luminoWidgets.widgetMod.Widget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def detach(widget: typings.luminoWidgets.widgetMod.Widget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

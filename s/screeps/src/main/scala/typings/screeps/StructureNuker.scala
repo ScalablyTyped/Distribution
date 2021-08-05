@@ -61,8 +61,7 @@ trait StructureNuker
 }
 object StructureNuker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cooldown: Double,
     destroy: () => ScreepsReturnCode,
     effects: js.Array[RoomObjectEffect],
@@ -86,28 +85,20 @@ object StructureNuker {
     __obj.asInstanceOf[StructureNuker]
   }
   
-  @scala.inline
-  implicit class StructureNukerMutableBuilder[Self <: StructureNuker] (val x: Self) extends AnyVal {
+  extension [Self <: StructureNuker](x: Self) {
     
-    @scala.inline
-    def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
+    inline def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
+    inline def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnergyCapacity(value: Double): Self = StObject.set(x, "energyCapacity", value.asInstanceOf[js.Any])
+    inline def setEnergyCapacity(value: Double): Self = StObject.set(x, "energyCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGhodium(value: Double): Self = StObject.set(x, "ghodium", value.asInstanceOf[js.Any])
+    inline def setGhodium(value: Double): Self = StObject.set(x, "ghodium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGhodiumCapacity(value: Double): Self = StObject.set(x, "ghodiumCapacity", value.asInstanceOf[js.Any])
+    inline def setGhodiumCapacity(value: Double): Self = StObject.set(x, "ghodiumCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchNuke(value: RoomPosition => ScreepsReturnCode): Self = StObject.set(x, "launchNuke", js.Any.fromFunction1(value))
+    inline def setLaunchNuke(value: RoomPosition => ScreepsReturnCode): Self = StObject.set(x, "launchNuke", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStore(value: StoreRESOURCEENERGYRESOURAlloy): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: StoreRESOURCEENERGYRESOURAlloy): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
   }
 }

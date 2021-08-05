@@ -38,61 +38,43 @@ trait ToneParams extends StObject {
 }
 object ToneParams {
   
-  @scala.inline
-  def apply(tone_input: ToneInput | String): ToneParams = {
+  inline def apply(tone_input: ToneInput | String): ToneParams = {
     val __obj = js.Dynamic.literal(tone_input = tone_input.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToneParams]
   }
   
-  @scala.inline
-  implicit class ToneParamsMutableBuilder[Self <: ToneParams] (val x: Self) extends AnyVal {
+  extension [Self <: ToneParams](x: Self) {
     
-    @scala.inline
-    def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
+    inline def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccept_languageUndefined: Self = StObject.set(x, "accept_language", js.undefined)
+    inline def setAccept_languageUndefined: Self = StObject.set(x, "accept_language", js.undefined)
     
-    @scala.inline
-    def setContent_language(value: ContentLanguage | String): Self = StObject.set(x, "content_language", value.asInstanceOf[js.Any])
+    inline def setContent_language(value: ContentLanguage | String): Self = StObject.set(x, "content_language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent_languageUndefined: Self = StObject.set(x, "content_language", js.undefined)
+    inline def setContent_languageUndefined: Self = StObject.set(x, "content_language", js.undefined)
     
-    @scala.inline
-    def setContent_type(value: ContentType | String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+    inline def setContent_type(value: ContentType | String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
+    inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setSentences(value: Boolean): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
+    inline def setSentences(value: Boolean): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
+    inline def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
     
-    @scala.inline
-    def setTone_input(value: ToneInput | String): Self = StObject.set(x, "tone_input", value.asInstanceOf[js.Any])
+    inline def setTone_input(value: ToneInput | String): Self = StObject.set(x, "tone_input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTones(value: js.Array[String | Tones]): Self = StObject.set(x, "tones", value.asInstanceOf[js.Any])
+    inline def setTones(value: js.Array[String | Tones]): Self = StObject.set(x, "tones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTonesUndefined: Self = StObject.set(x, "tones", js.undefined)
+    inline def setTonesUndefined: Self = StObject.set(x, "tones", js.undefined)
     
-    @scala.inline
-    def setTonesVarargs(value: (String | Tones)*): Self = StObject.set(x, "tones", js.Array(value :_*))
+    inline def setTonesVarargs(value: (String | Tones)*): Self = StObject.set(x, "tones", js.Array(value :_*))
   }
 }

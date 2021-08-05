@@ -15,100 +15,69 @@ object DomUtil {
   @JSImport("leaflet", "DomUtil.TRANSFORM")
   @js.native
   def TRANSFORM: String = js.native
-  @scala.inline
-  def TRANSFORM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRANSFORM")(x.asInstanceOf[js.Any])
+  inline def TRANSFORM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRANSFORM")(x.asInstanceOf[js.Any])
   
   @JSImport("leaflet", "DomUtil.TRANSITION")
   @js.native
   def TRANSITION: String = js.native
-  @scala.inline
-  def TRANSITION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRANSITION")(x.asInstanceOf[js.Any])
+  inline def TRANSITION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRANSITION")(x.asInstanceOf[js.Any])
   
   @JSImport("leaflet", "DomUtil.TRANSITION_END")
   @js.native
   def TRANSITION_END: String = js.native
-  @scala.inline
-  def TRANSITION_END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRANSITION_END")(x.asInstanceOf[js.Any])
+  inline def TRANSITION_END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRANSITION_END")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def addClass(el: HTMLElement, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addClass(el: HTMLElement, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def create(tagName: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
-  @scala.inline
-  def create(tagName: String, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
-  @scala.inline
-  def create(tagName: String, className: String, container: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
-  @scala.inline
-  def create(tagName: String, className: Unit, container: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def create(tagName: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def create(tagName: String, className: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def create(tagName: String, className: String, container: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def create(tagName: String, className: Unit, container: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
-  @scala.inline
-  def disableImageDrag(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableImageDrag")().asInstanceOf[Unit]
+  inline def disableImageDrag(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableImageDrag")().asInstanceOf[Unit]
   
-  @scala.inline
-  def disableTextSelection(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableTextSelection")().asInstanceOf[Unit]
+  inline def disableTextSelection(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableTextSelection")().asInstanceOf[Unit]
   
-  @scala.inline
-  def empty(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def empty(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def enableImageDrag(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableImageDrag")().asInstanceOf[Unit]
+  inline def enableImageDrag(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableImageDrag")().asInstanceOf[Unit]
   
-  @scala.inline
-  def enableTextSelection(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableTextSelection")().asInstanceOf[Unit]
+  inline def enableTextSelection(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableTextSelection")().asInstanceOf[Unit]
   
   /**
     * Get Element by its ID or with the given HTML-Element
     */
-  @scala.inline
-  def get(element: String): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
-  @scala.inline
-  def get(element: HTMLElement): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
+  inline def get(element: String): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
+  inline def get(element: HTMLElement): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
   
-  @scala.inline
-  def getClass_(el: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getClass")(el.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getClass_(el: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getClass")(el.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getPosition(el: HTMLElement): Point_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(el.asInstanceOf[js.Any]).asInstanceOf[Point_]
+  inline def getPosition(el: HTMLElement): Point_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(el.asInstanceOf[js.Any]).asInstanceOf[Point_]
   
-  @scala.inline
-  def getStyle(el: HTMLElement, styleAttrib: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(el.asInstanceOf[js.Any], styleAttrib.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def getStyle(el: HTMLElement, styleAttrib: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(el.asInstanceOf[js.Any], styleAttrib.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @scala.inline
-  def hasClass(el: HTMLElement, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasClass(el: HTMLElement, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def preventOutline(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventOutline")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def preventOutline(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventOutline")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def remove(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def remove(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeClass(el: HTMLElement, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeClass(el: HTMLElement, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def restoreOutline(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restoreOutline")().asInstanceOf[Unit]
+  inline def restoreOutline(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restoreOutline")().asInstanceOf[Unit]
   
-  @scala.inline
-  def setClass(el: HTMLElement, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setClass(el: HTMLElement, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setOpacity(el: HTMLElement, opacity: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOpacity")(el.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setOpacity(el: HTMLElement, opacity: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOpacity")(el.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setPosition(el: HTMLElement, position: Point_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(el.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setPosition(el: HTMLElement, position: Point_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPosition")(el.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setTransform(el: HTMLElement, offset: Point_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTransform")(el.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setTransform(el: HTMLElement, offset: Point_, scale: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTransform")(el.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setTransform(el: HTMLElement, offset: Point_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTransform")(el.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setTransform(el: HTMLElement, offset: Point_, scale: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTransform")(el.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def testProp(props: js.Array[String]): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("testProp")(props.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
+  inline def testProp(props: js.Array[String]): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("testProp")(props.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
   
-  @scala.inline
-  def toBack(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toBack")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def toBack(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toBack")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def toFront(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toFront")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def toFront(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toFront")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

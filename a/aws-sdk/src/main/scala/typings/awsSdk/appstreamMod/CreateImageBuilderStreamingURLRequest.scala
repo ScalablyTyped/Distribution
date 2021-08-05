@@ -18,22 +18,17 @@ trait CreateImageBuilderStreamingURLRequest extends StObject {
 }
 object CreateImageBuilderStreamingURLRequest {
   
-  @scala.inline
-  def apply(Name: String): CreateImageBuilderStreamingURLRequest = {
+  inline def apply(Name: String): CreateImageBuilderStreamingURLRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateImageBuilderStreamingURLRequest]
   }
   
-  @scala.inline
-  implicit class CreateImageBuilderStreamingURLRequestMutableBuilder[Self <: CreateImageBuilderStreamingURLRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateImageBuilderStreamingURLRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidity(value: Long): Self = StObject.set(x, "Validity", value.asInstanceOf[js.Any])
+    inline def setValidity(value: Long): Self = StObject.set(x, "Validity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidityUndefined: Self = StObject.set(x, "Validity", js.undefined)
+    inline def setValidityUndefined: Self = StObject.set(x, "Validity", js.undefined)
   }
 }

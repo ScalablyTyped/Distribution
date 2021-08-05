@@ -14,22 +14,17 @@ trait StopsProps extends StObject {
 }
 object StopsProps {
   
-  @scala.inline
-  def apply(offset: String, stopColor: String, stopOpacity: String): StopsProps = {
+  inline def apply(offset: String, stopColor: String, stopOpacity: String): StopsProps = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], stopColor = stopColor.asInstanceOf[js.Any], stopOpacity = stopOpacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopsProps]
   }
   
-  @scala.inline
-  implicit class StopsPropsMutableBuilder[Self <: StopsProps] (val x: Self) extends AnyVal {
+  extension [Self <: StopsProps](x: Self) {
     
-    @scala.inline
-    def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopColor(value: String): Self = StObject.set(x, "stopColor", value.asInstanceOf[js.Any])
+    inline def setStopColor(value: String): Self = StObject.set(x, "stopColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopOpacity(value: String): Self = StObject.set(x, "stopOpacity", value.asInstanceOf[js.Any])
+    inline def setStopOpacity(value: String): Self = StObject.set(x, "stopOpacity", value.asInstanceOf[js.Any])
   }
 }

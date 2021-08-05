@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SlicerCache")
 @js.native
-class SlicerCache protected ()
+/* private */ class SlicerCache ()
   extends StObject
      with typings.activexExcel.Excel.SlicerCache {
   
@@ -33,7 +33,7 @@ class SlicerCache protected ()
   /* CompleteClass */
   override def Delete(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.SlicerCache_typekey")
   var ExcelDotSlicerCache_typekey: typings.activexExcel.Excel.SlicerCache = js.native
   

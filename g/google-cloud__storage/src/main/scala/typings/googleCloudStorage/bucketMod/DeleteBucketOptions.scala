@@ -10,19 +10,15 @@ trait DeleteBucketOptions extends StObject {
 }
 object DeleteBucketOptions {
   
-  @scala.inline
-  def apply(): DeleteBucketOptions = {
+  inline def apply(): DeleteBucketOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteBucketOptions]
   }
   
-  @scala.inline
-  implicit class DeleteBucketOptionsMutableBuilder[Self <: DeleteBucketOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBucketOptions](x: Self) {
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

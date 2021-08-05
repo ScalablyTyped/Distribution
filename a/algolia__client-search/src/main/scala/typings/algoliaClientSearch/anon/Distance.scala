@@ -14,22 +14,17 @@ trait Distance extends StObject {
 }
 object Distance {
   
-  @scala.inline
-  def apply(distance: Double, lat: Double, lng: Double): Distance = {
+  inline def apply(distance: Double, lat: Double, lng: Double): Distance = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any])
     __obj.asInstanceOf[Distance]
   }
   
-  @scala.inline
-  implicit class DistanceMutableBuilder[Self <: Distance] (val x: Self) extends AnyVal {
+  extension [Self <: Distance](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+    inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+    inline def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
   }
 }

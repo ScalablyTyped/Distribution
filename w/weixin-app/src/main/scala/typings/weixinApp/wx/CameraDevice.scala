@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CameraDevice extends StObject
 object CameraDevice {
   
-  @scala.inline
-  def back: typings.weixinApp.weixinAppStrings.back = "back".asInstanceOf[typings.weixinApp.weixinAppStrings.back]
+  inline def back: typings.weixinApp.weixinAppStrings.back = "back".asInstanceOf[typings.weixinApp.weixinAppStrings.back]
   
-  @scala.inline
-  def front: typings.weixinApp.weixinAppStrings.front = "front".asInstanceOf[typings.weixinApp.weixinAppStrings.front]
+  inline def front: typings.weixinApp.weixinAppStrings.front = "front".asInstanceOf[typings.weixinApp.weixinAppStrings.front]
 }

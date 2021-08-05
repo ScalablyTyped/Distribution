@@ -13,16 +13,13 @@ trait UpdateEndpointWeightsAndCapacitiesOutput extends StObject {
 }
 object UpdateEndpointWeightsAndCapacitiesOutput {
   
-  @scala.inline
-  def apply(EndpointArn: EndpointArn): UpdateEndpointWeightsAndCapacitiesOutput = {
+  inline def apply(EndpointArn: EndpointArn): UpdateEndpointWeightsAndCapacitiesOutput = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEndpointWeightsAndCapacitiesOutput]
   }
   
-  @scala.inline
-  implicit class UpdateEndpointWeightsAndCapacitiesOutputMutableBuilder[Self <: UpdateEndpointWeightsAndCapacitiesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEndpointWeightsAndCapacitiesOutput](x: Self) {
     
-    @scala.inline
-    def setEndpointArn(value: EndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+    inline def setEndpointArn(value: EndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
   }
 }

@@ -53,104 +53,72 @@ object timeInputMod {
   }
   object TimeInputProps {
     
-    @scala.inline
-    def apply(): TimeInputProps = {
+    inline def apply(): TimeInputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimeInputProps]
     }
     
-    @scala.inline
-    implicit class TimeInputPropsMutableBuilder[Self <: TimeInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: TimeInputProps](x: Self) {
       
-      @scala.inline
-      def setCustomSuffix(value: ReactNode): Self = StObject.set(x, "customSuffix", value.asInstanceOf[js.Any])
+      inline def setCustomSuffix(value: ReactNode): Self = StObject.set(x, "customSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSuffixUndefined: Self = StObject.set(x, "customSuffix", js.undefined)
+      inline def setCustomSuffixUndefined: Self = StObject.set(x, "customSuffix", js.undefined)
       
-      @scala.inline
-      def setDashesWhenDisabled(value: Boolean): Self = StObject.set(x, "dashesWhenDisabled", value.asInstanceOf[js.Any])
+      inline def setDashesWhenDisabled(value: Boolean): Self = StObject.set(x, "dashesWhenDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDashesWhenDisabledUndefined: Self = StObject.set(x, "dashesWhenDisabled", js.undefined)
+      inline def setDashesWhenDisabledUndefined: Self = StObject.set(x, "dashesWhenDisabled", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: Moment): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Moment): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDisableAmPm(value: Boolean): Self = StObject.set(x, "disableAmPm", value.asInstanceOf[js.Any])
+      inline def setDisableAmPm(value: Boolean): Self = StObject.set(x, "disableAmPm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableAmPmUndefined: Self = StObject.set(x, "disableAmPm", js.undefined)
+      inline def setDisableAmPmUndefined: Self = StObject.set(x, "disableAmPm", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setHideStatusSuffix(value: Boolean): Self = StObject.set(x, "hideStatusSuffix", value.asInstanceOf[js.Any])
+      inline def setHideStatusSuffix(value: Boolean): Self = StObject.set(x, "hideStatusSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideStatusSuffixUndefined: Self = StObject.set(x, "hideStatusSuffix", js.undefined)
+      inline def setHideStatusSuffixUndefined: Self = StObject.set(x, "hideStatusSuffix", js.undefined)
       
-      @scala.inline
-      def setMinutesStep(value: Double): Self = StObject.set(x, "minutesStep", value.asInstanceOf[js.Any])
+      inline def setMinutesStep(value: Double): Self = StObject.set(x, "minutesStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutesStepUndefined: Self = StObject.set(x, "minutesStep", js.undefined)
+      inline def setMinutesStepUndefined: Self = StObject.set(x, "minutesStep", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* time */ Moment => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* time */ Moment => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+      inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
       
-      @scala.inline
-      def setShowSeconds(value: Boolean): Self = StObject.set(x, "showSeconds", value.asInstanceOf[js.Any])
+      inline def setShowSeconds(value: Boolean): Self = StObject.set(x, "showSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowSecondsUndefined: Self = StObject.set(x, "showSeconds", js.undefined)
+      inline def setShowSecondsUndefined: Self = StObject.set(x, "showSeconds", js.undefined)
       
-      @scala.inline
-      def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusMessage(value: ReactNode): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+      inline def setStatusMessage(value: ReactNode): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+      inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setWidth(value: auto | `100Percentsign`): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: auto | `100Percentsign`): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

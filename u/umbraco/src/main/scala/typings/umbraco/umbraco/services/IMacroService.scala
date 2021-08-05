@@ -55,8 +55,7 @@ trait IMacroService extends StObject {
 }
 object IMacroService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     generateMacroSyntax: /* repeated */ js.Any => Unit,
     generateMvcSyntax: /* repeated */ js.Any => Unit,
     generateWebFormsSyntax: /* repeated */ js.Any => Unit
@@ -65,16 +64,12 @@ object IMacroService {
     __obj.asInstanceOf[IMacroService]
   }
   
-  @scala.inline
-  implicit class IMacroServiceMutableBuilder[Self <: IMacroService] (val x: Self) extends AnyVal {
+  extension [Self <: IMacroService](x: Self) {
     
-    @scala.inline
-    def setGenerateMacroSyntax(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "generateMacroSyntax", js.Any.fromFunction1(value))
+    inline def setGenerateMacroSyntax(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "generateMacroSyntax", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGenerateMvcSyntax(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "generateMvcSyntax", js.Any.fromFunction1(value))
+    inline def setGenerateMvcSyntax(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "generateMvcSyntax", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGenerateWebFormsSyntax(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "generateWebFormsSyntax", js.Any.fromFunction1(value))
+    inline def setGenerateWebFormsSyntax(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "generateWebFormsSyntax", js.Any.fromFunction1(value))
   }
 }

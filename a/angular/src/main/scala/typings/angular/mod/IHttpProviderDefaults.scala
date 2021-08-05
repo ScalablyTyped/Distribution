@@ -60,76 +60,53 @@ trait IHttpProviderDefaults extends StObject {
 }
 object IHttpProviderDefaults {
   
-  @scala.inline
-  def apply(): IHttpProviderDefaults = {
+  inline def apply(): IHttpProviderDefaults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IHttpProviderDefaults]
   }
   
-  @scala.inline
-  implicit class IHttpProviderDefaultsMutableBuilder[Self <: IHttpProviderDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: IHttpProviderDefaults](x: Self) {
     
-    @scala.inline
-    def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: IHttpRequestConfigHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: IHttpRequestConfigHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setParamSerializer(value: String | (js.Function1[/* obj */ js.Any, String])): Self = StObject.set(x, "paramSerializer", value.asInstanceOf[js.Any])
+    inline def setParamSerializer(value: String | (js.Function1[/* obj */ js.Any, String])): Self = StObject.set(x, "paramSerializer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamSerializerFunction1(value: /* obj */ js.Any => String): Self = StObject.set(x, "paramSerializer", js.Any.fromFunction1(value))
+    inline def setParamSerializerFunction1(value: /* obj */ js.Any => String): Self = StObject.set(x, "paramSerializer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParamSerializerUndefined: Self = StObject.set(x, "paramSerializer", js.undefined)
+    inline def setParamSerializerUndefined: Self = StObject.set(x, "paramSerializer", js.undefined)
     
-    @scala.inline
-    def setTransformRequest(value: IHttpRequestTransformer | js.Array[IHttpRequestTransformer]): Self = StObject.set(x, "transformRequest", value.asInstanceOf[js.Any])
+    inline def setTransformRequest(value: IHttpRequestTransformer | js.Array[IHttpRequestTransformer]): Self = StObject.set(x, "transformRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformRequestFunction2(value: (/* data */ js.Any, /* headersGetter */ IHttpHeadersGetter) => js.Any): Self = StObject.set(x, "transformRequest", js.Any.fromFunction2(value))
+    inline def setTransformRequestFunction2(value: (/* data */ js.Any, /* headersGetter */ IHttpHeadersGetter) => js.Any): Self = StObject.set(x, "transformRequest", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTransformRequestUndefined: Self = StObject.set(x, "transformRequest", js.undefined)
+    inline def setTransformRequestUndefined: Self = StObject.set(x, "transformRequest", js.undefined)
     
-    @scala.inline
-    def setTransformRequestVarargs(value: IHttpRequestTransformer*): Self = StObject.set(x, "transformRequest", js.Array(value :_*))
+    inline def setTransformRequestVarargs(value: IHttpRequestTransformer*): Self = StObject.set(x, "transformRequest", js.Array(value :_*))
     
-    @scala.inline
-    def setTransformResponse(value: IHttpResponseTransformer | js.Array[IHttpResponseTransformer]): Self = StObject.set(x, "transformResponse", value.asInstanceOf[js.Any])
+    inline def setTransformResponse(value: IHttpResponseTransformer | js.Array[IHttpResponseTransformer]): Self = StObject.set(x, "transformResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformResponseFunction3(value: (/* data */ js.Any, /* headersGetter */ IHttpHeadersGetter, /* status */ Double) => js.Any): Self = StObject.set(x, "transformResponse", js.Any.fromFunction3(value))
+    inline def setTransformResponseFunction3(value: (/* data */ js.Any, /* headersGetter */ IHttpHeadersGetter, /* status */ Double) => js.Any): Self = StObject.set(x, "transformResponse", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTransformResponseUndefined: Self = StObject.set(x, "transformResponse", js.undefined)
+    inline def setTransformResponseUndefined: Self = StObject.set(x, "transformResponse", js.undefined)
     
-    @scala.inline
-    def setTransformResponseVarargs(value: IHttpResponseTransformer*): Self = StObject.set(x, "transformResponse", js.Array(value :_*))
+    inline def setTransformResponseVarargs(value: IHttpResponseTransformer*): Self = StObject.set(x, "transformResponse", js.Array(value :_*))
     
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     
-    @scala.inline
-    def setXsrfCookieName(value: String): Self = StObject.set(x, "xsrfCookieName", value.asInstanceOf[js.Any])
+    inline def setXsrfCookieName(value: String): Self = StObject.set(x, "xsrfCookieName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXsrfCookieNameUndefined: Self = StObject.set(x, "xsrfCookieName", js.undefined)
+    inline def setXsrfCookieNameUndefined: Self = StObject.set(x, "xsrfCookieName", js.undefined)
     
-    @scala.inline
-    def setXsrfHeaderName(value: String): Self = StObject.set(x, "xsrfHeaderName", value.asInstanceOf[js.Any])
+    inline def setXsrfHeaderName(value: String): Self = StObject.set(x, "xsrfHeaderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXsrfHeaderNameUndefined: Self = StObject.set(x, "xsrfHeaderName", js.undefined)
+    inline def setXsrfHeaderNameUndefined: Self = StObject.set(x, "xsrfHeaderName", js.undefined)
   }
 }

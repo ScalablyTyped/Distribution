@@ -152,136 +152,93 @@ trait SearchViewModelProperties
 }
 object SearchViewModelProperties {
   
-  @scala.inline
-  def apply(): SearchViewModelProperties = {
+  inline def apply(): SearchViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchViewModelProperties]
   }
   
-  @scala.inline
-  implicit class SearchViewModelPropertiesMutableBuilder[Self <: SearchViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SearchViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setActiveSourceIndex(value: Double): Self = StObject.set(x, "activeSourceIndex", value.asInstanceOf[js.Any])
+    inline def setActiveSourceIndex(value: Double): Self = StObject.set(x, "activeSourceIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveSourceIndexUndefined: Self = StObject.set(x, "activeSourceIndex", js.undefined)
+    inline def setActiveSourceIndexUndefined: Self = StObject.set(x, "activeSourceIndex", js.undefined)
     
-    @scala.inline
-    def setAllPlaceholder(value: String): Self = StObject.set(x, "allPlaceholder", value.asInstanceOf[js.Any])
+    inline def setAllPlaceholder(value: String): Self = StObject.set(x, "allPlaceholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllPlaceholderUndefined: Self = StObject.set(x, "allPlaceholder", js.undefined)
+    inline def setAllPlaceholderUndefined: Self = StObject.set(x, "allPlaceholder", js.undefined)
     
-    @scala.inline
-    def setAutoSelect(value: Boolean): Self = StObject.set(x, "autoSelect", value.asInstanceOf[js.Any])
+    inline def setAutoSelect(value: Boolean): Self = StObject.set(x, "autoSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoSelectUndefined: Self = StObject.set(x, "autoSelect", js.undefined)
+    inline def setAutoSelectUndefined: Self = StObject.set(x, "autoSelect", js.undefined)
     
-    @scala.inline
-    def setDefaultSymbol(value: SymbolProperties): Self = StObject.set(x, "defaultSymbol", value.asInstanceOf[js.Any])
+    inline def setDefaultSymbol(value: SymbolProperties): Self = StObject.set(x, "defaultSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSymbolUndefined: Self = StObject.set(x, "defaultSymbol", js.undefined)
+    inline def setDefaultSymbolUndefined: Self = StObject.set(x, "defaultSymbol", js.undefined)
     
-    @scala.inline
-    def setIncludeDefaultSources(value: Boolean | js.Function): Self = StObject.set(x, "includeDefaultSources", value.asInstanceOf[js.Any])
+    inline def setIncludeDefaultSources(value: Boolean | js.Function): Self = StObject.set(x, "includeDefaultSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDefaultSourcesUndefined: Self = StObject.set(x, "includeDefaultSources", js.undefined)
+    inline def setIncludeDefaultSourcesUndefined: Self = StObject.set(x, "includeDefaultSources", js.undefined)
     
-    @scala.inline
-    def setLocationEnabled(value: Boolean): Self = StObject.set(x, "locationEnabled", value.asInstanceOf[js.Any])
+    inline def setLocationEnabled(value: Boolean): Self = StObject.set(x, "locationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationEnabledUndefined: Self = StObject.set(x, "locationEnabled", js.undefined)
+    inline def setLocationEnabledUndefined: Self = StObject.set(x, "locationEnabled", js.undefined)
     
-    @scala.inline
-    def setMaxInputLength(value: Double): Self = StObject.set(x, "maxInputLength", value.asInstanceOf[js.Any])
+    inline def setMaxInputLength(value: Double): Self = StObject.set(x, "maxInputLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxInputLengthUndefined: Self = StObject.set(x, "maxInputLength", js.undefined)
+    inline def setMaxInputLengthUndefined: Self = StObject.set(x, "maxInputLength", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setMaxSuggestions(value: Double): Self = StObject.set(x, "maxSuggestions", value.asInstanceOf[js.Any])
+    inline def setMaxSuggestions(value: Double): Self = StObject.set(x, "maxSuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSuggestionsUndefined: Self = StObject.set(x, "maxSuggestions", js.undefined)
+    inline def setMaxSuggestionsUndefined: Self = StObject.set(x, "maxSuggestions", js.undefined)
     
-    @scala.inline
-    def setMinSuggestCharacters(value: Double): Self = StObject.set(x, "minSuggestCharacters", value.asInstanceOf[js.Any])
+    inline def setMinSuggestCharacters(value: Double): Self = StObject.set(x, "minSuggestCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSuggestCharactersUndefined: Self = StObject.set(x, "minSuggestCharacters", js.undefined)
+    inline def setMinSuggestCharactersUndefined: Self = StObject.set(x, "minSuggestCharacters", js.undefined)
     
-    @scala.inline
-    def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
+    inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
+    inline def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
     
-    @scala.inline
-    def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
+    inline def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
+    inline def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
     
-    @scala.inline
-    def setPortal(value: PortalProperties): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
+    inline def setPortal(value: PortalProperties): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
+    inline def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
     
-    @scala.inline
-    def setResultGraphicEnabled(value: Boolean): Self = StObject.set(x, "resultGraphicEnabled", value.asInstanceOf[js.Any])
+    inline def setResultGraphicEnabled(value: Boolean): Self = StObject.set(x, "resultGraphicEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultGraphicEnabledUndefined: Self = StObject.set(x, "resultGraphicEnabled", js.undefined)
+    inline def setResultGraphicEnabledUndefined: Self = StObject.set(x, "resultGraphicEnabled", js.undefined)
     
-    @scala.inline
-    def setSearchAllEnabled(value: Boolean): Self = StObject.set(x, "searchAllEnabled", value.asInstanceOf[js.Any])
+    inline def setSearchAllEnabled(value: Boolean): Self = StObject.set(x, "searchAllEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchAllEnabledUndefined: Self = StObject.set(x, "searchAllEnabled", js.undefined)
+    inline def setSearchAllEnabledUndefined: Self = StObject.set(x, "searchAllEnabled", js.undefined)
     
-    @scala.inline
-    def setSearchTerm(value: String): Self = StObject.set(x, "searchTerm", value.asInstanceOf[js.Any])
+    inline def setSearchTerm(value: String): Self = StObject.set(x, "searchTerm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchTermUndefined: Self = StObject.set(x, "searchTerm", js.undefined)
+    inline def setSearchTermUndefined: Self = StObject.set(x, "searchTerm", js.undefined)
     
-    @scala.inline
-    def setSources(value: CollectionProperties[LayerSearchSourceProperties | LocatorSearchSourceProperties]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: CollectionProperties[LayerSearchSourceProperties | LocatorSearchSourceProperties]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    @scala.inline
-    def setSourcesVarargs(value: (LayerSearchSourceProperties | LocatorSearchSourceProperties)*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: (LayerSearchSourceProperties | LocatorSearchSourceProperties)*): Self = StObject.set(x, "sources", js.Array(value :_*))
     
-    @scala.inline
-    def setSuggestionDelay(value: Double): Self = StObject.set(x, "suggestionDelay", value.asInstanceOf[js.Any])
+    inline def setSuggestionDelay(value: Double): Self = StObject.set(x, "suggestionDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionDelayUndefined: Self = StObject.set(x, "suggestionDelay", js.undefined)
+    inline def setSuggestionDelayUndefined: Self = StObject.set(x, "suggestionDelay", js.undefined)
     
-    @scala.inline
-    def setSuggestionsEnabled(value: Boolean): Self = StObject.set(x, "suggestionsEnabled", value.asInstanceOf[js.Any])
+    inline def setSuggestionsEnabled(value: Boolean): Self = StObject.set(x, "suggestionsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionsEnabledUndefined: Self = StObject.set(x, "suggestionsEnabled", js.undefined)
+    inline def setSuggestionsEnabledUndefined: Self = StObject.set(x, "suggestionsEnabled", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

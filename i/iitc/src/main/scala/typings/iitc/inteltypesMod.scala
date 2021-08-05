@@ -20,20 +20,16 @@ object inteltypesMod {
     }
     object ChatCallback {
       
-      @scala.inline
-      def apply(result: js.Array[ChatLine]): ChatCallback = {
+      inline def apply(result: js.Array[ChatLine]): ChatCallback = {
         val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
         __obj.asInstanceOf[ChatCallback]
       }
       
-      @scala.inline
-      implicit class ChatCallbackMutableBuilder[Self <: ChatCallback] (val x: Self) extends AnyVal {
+      extension [Self <: ChatCallback](x: Self) {
         
-        @scala.inline
-        def setResult(value: js.Array[ChatLine]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+        inline def setResult(value: js.Array[ChatLine]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResultVarargs(value: ChatLine*): Self = StObject.set(x, "result", js.Array(value :_*))
+        inline def setResultVarargs(value: ChatLine*): Self = StObject.set(x, "result", js.Array(value :_*))
       }
     }
     
@@ -53,20 +49,16 @@ object inteltypesMod {
     }
     object MarkUpPlayerType {
       
-      @scala.inline
-      def apply(plain: String, team: String): MarkUpPlayerType = {
+      inline def apply(plain: String, team: String): MarkUpPlayerType = {
         val __obj = js.Dynamic.literal(plain = plain.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any])
         __obj.asInstanceOf[MarkUpPlayerType]
       }
       
-      @scala.inline
-      implicit class MarkUpPlayerTypeMutableBuilder[Self <: MarkUpPlayerType] (val x: Self) extends AnyVal {
+      extension [Self <: MarkUpPlayerType](x: Self) {
         
-        @scala.inline
-        def setPlain(value: String): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
+        inline def setPlain(value: String): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+        inline def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       }
     }
     
@@ -88,32 +80,24 @@ object inteltypesMod {
     }
     object MarkUpPortalType {
       
-      @scala.inline
-      def apply(address: String, latE6: Double, lngE6: Double, name: String, plain: String, team: String): MarkUpPortalType = {
+      inline def apply(address: String, latE6: Double, lngE6: Double, name: String, plain: String, team: String): MarkUpPortalType = {
         val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], latE6 = latE6.asInstanceOf[js.Any], lngE6 = lngE6.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], plain = plain.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any])
         __obj.asInstanceOf[MarkUpPortalType]
       }
       
-      @scala.inline
-      implicit class MarkUpPortalTypeMutableBuilder[Self <: MarkUpPortalType] (val x: Self) extends AnyVal {
+      extension [Self <: MarkUpPortalType](x: Self) {
         
-        @scala.inline
-        def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+        inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLatE6(value: Double): Self = StObject.set(x, "latE6", value.asInstanceOf[js.Any])
+        inline def setLatE6(value: Double): Self = StObject.set(x, "latE6", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLngE6(value: Double): Self = StObject.set(x, "lngE6", value.asInstanceOf[js.Any])
+        inline def setLngE6(value: Double): Self = StObject.set(x, "lngE6", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlain(value: String): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
+        inline def setPlain(value: String): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+        inline def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       }
     }
     
@@ -125,17 +109,14 @@ object inteltypesMod {
     }
     object MarkUpTextType {
       
-      @scala.inline
-      def apply(plain: String): MarkUpTextType = {
+      inline def apply(plain: String): MarkUpTextType = {
         val __obj = js.Dynamic.literal(plain = plain.asInstanceOf[js.Any])
         __obj.asInstanceOf[MarkUpTextType]
       }
       
-      @scala.inline
-      implicit class MarkUpTextTypeMutableBuilder[Self <: MarkUpTextType] (val x: Self) extends AnyVal {
+      extension [Self <: MarkUpTextType](x: Self) {
         
-        @scala.inline
-        def setPlain(value: String): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
+        inline def setPlain(value: String): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
       }
     }
     
@@ -166,8 +147,7 @@ object inteltypesMod {
     }
     object PlayerInfo {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         ap: String,
         available_invites: Double,
         energy: Double,
@@ -184,41 +164,29 @@ object inteltypesMod {
         __obj.asInstanceOf[PlayerInfo]
       }
       
-      @scala.inline
-      implicit class PlayerInfoMutableBuilder[Self <: PlayerInfo] (val x: Self) extends AnyVal {
+      extension [Self <: PlayerInfo](x: Self) {
         
-        @scala.inline
-        def setAp(value: String): Self = StObject.set(x, "ap", value.asInstanceOf[js.Any])
+        inline def setAp(value: String): Self = StObject.set(x, "ap", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAvailable_invites(value: Double): Self = StObject.set(x, "available_invites", value.asInstanceOf[js.Any])
+        inline def setAvailable_invites(value: Double): Self = StObject.set(x, "available_invites", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
+        inline def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+        inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMin_ap_for_current_level(value: String): Self = StObject.set(x, "min_ap_for_current_level", value.asInstanceOf[js.Any])
+        inline def setMin_ap_for_current_level(value: String): Self = StObject.set(x, "min_ap_for_current_level", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMin_ap_for_next_level(value: String): Self = StObject.set(x, "min_ap_for_next_level", value.asInstanceOf[js.Any])
+        inline def setMin_ap_for_next_level(value: String): Self = StObject.set(x, "min_ap_for_next_level", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNickMatcher(value: RegExp): Self = StObject.set(x, "nickMatcher", value.asInstanceOf[js.Any])
+        inline def setNickMatcher(value: RegExp): Self = StObject.set(x, "nickMatcher", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+        inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+        inline def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerified_level(value: Double): Self = StObject.set(x, "verified_level", value.asInstanceOf[js.Any])
+        inline def setVerified_level(value: Double): Self = StObject.set(x, "verified_level", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setXm_capacity(value: String): Self = StObject.set(x, "xm_capacity", value.asInstanceOf[js.Any])
+        inline def setXm_capacity(value: String): Self = StObject.set(x, "xm_capacity", value.asInstanceOf[js.Any])
       }
     }
     
@@ -228,17 +196,14 @@ object inteltypesMod {
     }
     object PlextContainer {
       
-      @scala.inline
-      def apply(plext: Markup): PlextContainer = {
+      inline def apply(plext: Markup): PlextContainer = {
         val __obj = js.Dynamic.literal(plext = plext.asInstanceOf[js.Any])
         __obj.asInstanceOf[PlextContainer]
       }
       
-      @scala.inline
-      implicit class PlextContainerMutableBuilder[Self <: PlextContainer] (val x: Self) extends AnyVal {
+      extension [Self <: PlextContainer](x: Self) {
         
-        @scala.inline
-        def setPlext(value: Markup): Self = StObject.set(x, "plext", value.asInstanceOf[js.Any])
+        inline def setPlext(value: Markup): Self = StObject.set(x, "plext", value.asInstanceOf[js.Any])
       }
     }
     

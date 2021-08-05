@@ -25,22 +25,17 @@ trait OpenDevToolsOptions extends StObject {
 }
 object OpenDevToolsOptions {
   
-  @scala.inline
-  def apply(mode: right | bottom | undocked | detach): OpenDevToolsOptions = {
+  inline def apply(mode: right | bottom | undocked | detach): OpenDevToolsOptions = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenDevToolsOptions]
   }
   
-  @scala.inline
-  implicit class OpenDevToolsOptionsMutableBuilder[Self <: OpenDevToolsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OpenDevToolsOptions](x: Self) {
     
-    @scala.inline
-    def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
+    inline def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
+    inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
-    @scala.inline
-    def setMode(value: right | bottom | undocked | detach): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: right | bottom | undocked | detach): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

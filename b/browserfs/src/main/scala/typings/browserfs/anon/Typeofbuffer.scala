@@ -10,16 +10,13 @@ trait Typeofbuffer extends StObject {
 }
 object Typeofbuffer {
   
-  @scala.inline
-  def apply(Buffer: TypeofBuffer_): Typeofbuffer = {
+  inline def apply(Buffer: TypeofBuffer_): Typeofbuffer = {
     val __obj = js.Dynamic.literal(Buffer = Buffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofbuffer]
   }
   
-  @scala.inline
-  implicit class TypeofbufferMutableBuilder[Self <: Typeofbuffer] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofbuffer](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: TypeofBuffer_): Self = StObject.set(x, "Buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: TypeofBuffer_): Self = StObject.set(x, "Buffer", value.asInstanceOf[js.Any])
   }
 }

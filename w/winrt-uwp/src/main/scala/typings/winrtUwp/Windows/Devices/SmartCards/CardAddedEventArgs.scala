@@ -12,16 +12,13 @@ trait CardAddedEventArgs extends StObject {
 }
 object CardAddedEventArgs {
   
-  @scala.inline
-  def apply(smartCard: SmartCard): CardAddedEventArgs = {
+  inline def apply(smartCard: SmartCard): CardAddedEventArgs = {
     val __obj = js.Dynamic.literal(smartCard = smartCard.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardAddedEventArgs]
   }
   
-  @scala.inline
-  implicit class CardAddedEventArgsMutableBuilder[Self <: CardAddedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CardAddedEventArgs](x: Self) {
     
-    @scala.inline
-    def setSmartCard(value: SmartCard): Self = StObject.set(x, "smartCard", value.asInstanceOf[js.Any])
+    inline def setSmartCard(value: SmartCard): Self = StObject.set(x, "smartCard", value.asInstanceOf[js.Any])
   }
 }

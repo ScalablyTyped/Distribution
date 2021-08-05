@@ -11,8 +11,7 @@ object conditionalPortalMod {
   
   object ConditionalPortal {
     
-    @scala.inline
-    def apply(hasPortalPortalIntoPortalIntoIdChildren: ConditionalPortalProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasPortalPortalIntoPortalIntoIdChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(hasPortalPortalIntoPortalIntoIdChildren: ConditionalPortalProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasPortalPortalIntoPortalIntoIdChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
     
     @JSImport("@react-md/portal/types/ConditionalPortal", "ConditionalPortal")
     @js.native
@@ -27,8 +26,7 @@ object conditionalPortalMod {
       @JSImport("@react-md/portal/types/ConditionalPortal", "ConditionalPortal.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/portal/types/ConditionalPortal", "ConditionalPortal.propTypes.portal")
       @js.native
@@ -41,14 +39,11 @@ object conditionalPortalMod {
       @JSImport("@react-md/portal/types/ConditionalPortal", "ConditionalPortal.propTypes.portalIntoId")
       @js.native
       def portalIntoId: js.Any = js.native
-      @scala.inline
-      def portalIntoId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portalIntoId")(x.asInstanceOf[js.Any])
+      inline def portalIntoId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portalIntoId")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def portalInto_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portalInto")(x.asInstanceOf[js.Any])
+      inline def portalInto_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portalInto")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def portal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portal")(x.asInstanceOf[js.Any])
+      inline def portal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portal")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -63,20 +58,16 @@ object conditionalPortalMod {
   }
   object ConditionalPortalProps {
     
-    @scala.inline
-    def apply(): ConditionalPortalProps = {
+    inline def apply(): ConditionalPortalProps = {
       val __obj = js.Dynamic.literal(children = null)
       __obj.asInstanceOf[ConditionalPortalProps]
     }
     
-    @scala.inline
-    implicit class ConditionalPortalPropsMutableBuilder[Self <: ConditionalPortalProps] (val x: Self) extends AnyVal {
+    extension [Self <: ConditionalPortalProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenNull: Self = StObject.set(x, "children", null)
+      inline def setChildrenNull: Self = StObject.set(x, "children", null)
     }
   }
   
@@ -99,38 +90,28 @@ object conditionalPortalMod {
   }
   object RenderConditionalPortalProps {
     
-    @scala.inline
-    def apply(): RenderConditionalPortalProps = {
+    inline def apply(): RenderConditionalPortalProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RenderConditionalPortalProps]
     }
     
-    @scala.inline
-    implicit class RenderConditionalPortalPropsMutableBuilder[Self <: RenderConditionalPortalProps] (val x: Self) extends AnyVal {
+    extension [Self <: RenderConditionalPortalProps](x: Self) {
       
-      @scala.inline
-      def setPortal(value: Boolean): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
+      inline def setPortal(value: Boolean): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortalInto(value: PortalInto): Self = StObject.set(x, "portalInto", value.asInstanceOf[js.Any])
+      inline def setPortalInto(value: PortalInto): Self = StObject.set(x, "portalInto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortalIntoFunction0(value: () => HTMLElement | Null): Self = StObject.set(x, "portalInto", js.Any.fromFunction0(value))
+      inline def setPortalIntoFunction0(value: () => HTMLElement | Null): Self = StObject.set(x, "portalInto", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPortalIntoId(value: String): Self = StObject.set(x, "portalIntoId", value.asInstanceOf[js.Any])
+      inline def setPortalIntoId(value: String): Self = StObject.set(x, "portalIntoId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortalIntoIdUndefined: Self = StObject.set(x, "portalIntoId", js.undefined)
+      inline def setPortalIntoIdUndefined: Self = StObject.set(x, "portalIntoId", js.undefined)
       
-      @scala.inline
-      def setPortalIntoNull: Self = StObject.set(x, "portalInto", null)
+      inline def setPortalIntoNull: Self = StObject.set(x, "portalInto", null)
       
-      @scala.inline
-      def setPortalIntoUndefined: Self = StObject.set(x, "portalInto", js.undefined)
+      inline def setPortalIntoUndefined: Self = StObject.set(x, "portalInto", js.undefined)
       
-      @scala.inline
-      def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
+      inline def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
     }
   }
 }

@@ -21,8 +21,7 @@ trait Dialog
 }
 object Dialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addButton: (Widget, js.Any) => Unit,
     addClass: String => Unit,
@@ -75,25 +74,18 @@ object Dialog {
     __obj.asInstanceOf[Dialog]
   }
   
-  @scala.inline
-  implicit class DialogMutableBuilder[Self <: Dialog] (val x: Self) extends AnyVal {
+  extension [Self <: Dialog](x: Self) {
     
-    @scala.inline
-    def setAddButton(value: (Widget, js.Any) => Unit): Self = StObject.set(x, "addButton", js.Any.fromFunction2(value))
+    inline def setAddButton(value: (Widget, js.Any) => Unit): Self = StObject.set(x, "addButton", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setButtonNames(value: js.Array[String]): Self = StObject.set(x, "buttonNames", value.asInstanceOf[js.Any])
+    inline def setButtonNames(value: js.Array[String]): Self = StObject.set(x, "buttonNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonNamesVarargs(value: String*): Self = StObject.set(x, "buttonNames", js.Array(value :_*))
+    inline def setButtonNamesVarargs(value: String*): Self = StObject.set(x, "buttonNames", js.Array(value :_*))
     
-    @scala.inline
-    def setButtons(value: js.Array[Widget]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[Widget]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsVarargs(value: Widget*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: Widget*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setRemoveButton(value: Widget => Unit): Self = StObject.set(x, "removeButton", js.Any.fromFunction1(value))
+    inline def setRemoveButton(value: Widget => Unit): Self = StObject.set(x, "removeButton", js.Any.fromFunction1(value))
   }
 }

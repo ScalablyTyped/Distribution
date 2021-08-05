@@ -13,19 +13,15 @@ trait SVGAnimatedString extends StObject {
 }
 object SVGAnimatedString {
   
-  @scala.inline
-  def apply(animVal: java.lang.String, baseVal: java.lang.String): SVGAnimatedString = {
+  inline def apply(animVal: java.lang.String, baseVal: java.lang.String): SVGAnimatedString = {
     val __obj = js.Dynamic.literal(animVal = animVal.asInstanceOf[js.Any], baseVal = baseVal.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGAnimatedString]
   }
   
-  @scala.inline
-  implicit class SVGAnimatedStringMutableBuilder[Self <: SVGAnimatedString] (val x: Self) extends AnyVal {
+  extension [Self <: SVGAnimatedString](x: Self) {
     
-    @scala.inline
-    def setAnimVal(value: java.lang.String): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
+    inline def setAnimVal(value: java.lang.String): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseVal(value: java.lang.String): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
+    inline def setBaseVal(value: java.lang.String): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
   }
 }

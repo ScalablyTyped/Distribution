@@ -33,19 +33,15 @@ trait Controls extends StObject {
 }
 object Controls {
   
-  @scala.inline
-  def apply(controls: Boolean, maxStates: Double): Controls = {
+  inline def apply(controls: Boolean, maxStates: Double): Controls = {
     val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any], maxStates = maxStates.asInstanceOf[js.Any])
     __obj.asInstanceOf[Controls]
   }
   
-  @scala.inline
-  implicit class ControlsMutableBuilder[Self <: Controls] (val x: Self) extends AnyVal {
+  extension [Self <: Controls](x: Self) {
     
-    @scala.inline
-    def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxStates(value: Double): Self = StObject.set(x, "maxStates", value.asInstanceOf[js.Any])
+    inline def setMaxStates(value: Double): Self = StObject.set(x, "maxStates", value.asInstanceOf[js.Any])
   }
 }

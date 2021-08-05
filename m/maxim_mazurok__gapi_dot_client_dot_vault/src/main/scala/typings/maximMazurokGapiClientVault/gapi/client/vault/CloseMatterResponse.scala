@@ -11,19 +11,15 @@ trait CloseMatterResponse extends StObject {
 }
 object CloseMatterResponse {
   
-  @scala.inline
-  def apply(): CloseMatterResponse = {
+  inline def apply(): CloseMatterResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloseMatterResponse]
   }
   
-  @scala.inline
-  implicit class CloseMatterResponseMutableBuilder[Self <: CloseMatterResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CloseMatterResponse](x: Self) {
     
-    @scala.inline
-    def setMatter(value: Matter): Self = StObject.set(x, "matter", value.asInstanceOf[js.Any])
+    inline def setMatter(value: Matter): Self = StObject.set(x, "matter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatterUndefined: Self = StObject.set(x, "matter", js.undefined)
+    inline def setMatterUndefined: Self = StObject.set(x, "matter", js.undefined)
   }
 }

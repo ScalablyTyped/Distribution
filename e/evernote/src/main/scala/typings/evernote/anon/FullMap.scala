@@ -14,25 +14,19 @@ trait FullMap extends StObject {
 }
 object FullMap {
   
-  @scala.inline
-  def apply(): FullMap = {
+  inline def apply(): FullMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FullMap]
   }
   
-  @scala.inline
-  implicit class FullMapMutableBuilder[Self <: FullMap] (val x: Self) extends AnyVal {
+  extension [Self <: FullMap](x: Self) {
     
-    @scala.inline
-    def setFullMap(value: Map[String, String]): Self = StObject.set(x, "fullMap", value.asInstanceOf[js.Any])
+    inline def setFullMap(value: Map[String, String]): Self = StObject.set(x, "fullMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullMapUndefined: Self = StObject.set(x, "fullMap", js.undefined)
+    inline def setFullMapUndefined: Self = StObject.set(x, "fullMap", js.undefined)
     
-    @scala.inline
-    def setKeysOnly(value: Set[String]): Self = StObject.set(x, "keysOnly", value.asInstanceOf[js.Any])
+    inline def setKeysOnly(value: Set[String]): Self = StObject.set(x, "keysOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysOnlyUndefined: Self = StObject.set(x, "keysOnly", js.undefined)
+    inline def setKeysOnlyUndefined: Self = StObject.set(x, "keysOnly", js.undefined)
   }
 }

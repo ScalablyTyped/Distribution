@@ -14,17 +14,14 @@ object anon {
   }
   object Extend {
     
-    @scala.inline
-    def apply(extend: CollectionDefinition => CollectionClass): Extend = {
+    inline def apply(extend: CollectionDefinition => CollectionClass): Extend = {
       val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend))
       __obj.asInstanceOf[Extend]
     }
     
-    @scala.inline
-    implicit class ExtendMutableBuilder[Self <: Extend] (val x: Self) extends AnyVal {
+    extension [Self <: Extend](x: Self) {
       
-      @scala.inline
-      def setExtend(value: CollectionDefinition => CollectionClass): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+      inline def setExtend(value: CollectionDefinition => CollectionClass): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     }
   }
   
@@ -36,20 +33,16 @@ object anon {
   }
   object Limit {
     
-    @scala.inline
-    def apply(limit: Double, page: Double): Limit = {
+    inline def apply(limit: Double, page: Double): Limit = {
       val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any])
       __obj.asInstanceOf[Limit]
     }
     
-    @scala.inline
-    implicit class LimitMutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
+    extension [Self <: Limit](x: Self) {
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     }
   }
 }

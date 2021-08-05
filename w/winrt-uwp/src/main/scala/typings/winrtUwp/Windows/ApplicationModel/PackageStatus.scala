@@ -48,8 +48,7 @@ trait PackageStatus extends StObject {
 }
 object PackageStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataOffline: Boolean,
     dependencyIssue: Boolean,
     deploymentInProgress: Boolean,
@@ -67,43 +66,30 @@ object PackageStatus {
     __obj.asInstanceOf[PackageStatus]
   }
   
-  @scala.inline
-  implicit class PackageStatusMutableBuilder[Self <: PackageStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PackageStatus](x: Self) {
     
-    @scala.inline
-    def setDataOffline(value: Boolean): Self = StObject.set(x, "dataOffline", value.asInstanceOf[js.Any])
+    inline def setDataOffline(value: Boolean): Self = StObject.set(x, "dataOffline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependencyIssue(value: Boolean): Self = StObject.set(x, "dependencyIssue", value.asInstanceOf[js.Any])
+    inline def setDependencyIssue(value: Boolean): Self = StObject.set(x, "dependencyIssue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentInProgress(value: Boolean): Self = StObject.set(x, "deploymentInProgress", value.asInstanceOf[js.Any])
+    inline def setDeploymentInProgress(value: Boolean): Self = StObject.set(x, "deploymentInProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseIssue(value: Boolean): Self = StObject.set(x, "licenseIssue", value.asInstanceOf[js.Any])
+    inline def setLicenseIssue(value: Boolean): Self = StObject.set(x, "licenseIssue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+    inline def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedsRemediation(value: Boolean): Self = StObject.set(x, "needsRemediation", value.asInstanceOf[js.Any])
+    inline def setNeedsRemediation(value: Boolean): Self = StObject.set(x, "needsRemediation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotAvailable(value: Boolean): Self = StObject.set(x, "notAvailable", value.asInstanceOf[js.Any])
+    inline def setNotAvailable(value: Boolean): Self = StObject.set(x, "notAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageOffline(value: Boolean): Self = StObject.set(x, "packageOffline", value.asInstanceOf[js.Any])
+    inline def setPackageOffline(value: Boolean): Self = StObject.set(x, "packageOffline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicing(value: Boolean): Self = StObject.set(x, "servicing", value.asInstanceOf[js.Any])
+    inline def setServicing(value: Boolean): Self = StObject.set(x, "servicing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTampered(value: Boolean): Self = StObject.set(x, "tampered", value.asInstanceOf[js.Any])
+    inline def setTampered(value: Boolean): Self = StObject.set(x, "tampered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyIsOK(value: () => Boolean): Self = StObject.set(x, "verifyIsOK", js.Any.fromFunction0(value))
+    inline def setVerifyIsOK(value: () => Boolean): Self = StObject.set(x, "verifyIsOK", js.Any.fromFunction0(value))
   }
 }

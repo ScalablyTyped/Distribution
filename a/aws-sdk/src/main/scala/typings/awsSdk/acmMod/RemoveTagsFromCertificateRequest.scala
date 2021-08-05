@@ -18,22 +18,17 @@ trait RemoveTagsFromCertificateRequest extends StObject {
 }
 object RemoveTagsFromCertificateRequest {
   
-  @scala.inline
-  def apply(CertificateArn: Arn, Tags: TagList): RemoveTagsFromCertificateRequest = {
+  inline def apply(CertificateArn: Arn, Tags: TagList): RemoveTagsFromCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveTagsFromCertificateRequest]
   }
   
-  @scala.inline
-  implicit class RemoveTagsFromCertificateRequestMutableBuilder[Self <: RemoveTagsFromCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveTagsFromCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

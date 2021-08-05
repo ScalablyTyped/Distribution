@@ -81,8 +81,7 @@ object ScrollContainerRegion {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ScrollContainerRegion]
+  inline def create(model: IModel): ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ScrollContainerRegion]
   
   /**
     * Creates and returns a new ScrollContainerRegion instance in the SDK and on the server.
@@ -90,8 +89,7 @@ object ScrollContainerRegion {
     * of the parent ScrollContainer element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerUnderBottom(container: ScrollContainer): ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderBottom")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainerRegion]
+  inline def createInScrollContainerUnderBottom(container: ScrollContainer): ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderBottom")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainerRegion]
   
   /**
     * Creates and returns a new ScrollContainerRegion instance in the SDK and on the server.
@@ -99,8 +97,7 @@ object ScrollContainerRegion {
     * of the parent ScrollContainer element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerUnderCenter(container: ScrollContainer): ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderCenter")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainerRegion]
+  inline def createInScrollContainerUnderCenter(container: ScrollContainer): ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderCenter")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainerRegion]
   
   /**
     * Creates and returns a new ScrollContainerRegion instance in the SDK and on the server.
@@ -108,8 +105,7 @@ object ScrollContainerRegion {
     * of the parent ScrollContainer element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerUnderLeft(container: ScrollContainer): ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainerRegion]
+  inline def createInScrollContainerUnderLeft(container: ScrollContainer): ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainerRegion]
   
   /**
     * Creates and returns a new ScrollContainerRegion instance in the SDK and on the server.
@@ -117,8 +113,7 @@ object ScrollContainerRegion {
     * of the parent ScrollContainer element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerUnderRight(container: ScrollContainer): ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainerRegion]
+  inline def createInScrollContainerUnderRight(container: ScrollContainer): ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainerRegion]
   
   /**
     * Creates and returns a new ScrollContainerRegion instance in the SDK and on the server.
@@ -126,20 +121,17 @@ object ScrollContainerRegion {
     * of the parent ScrollContainer element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerUnderTop(container: ScrollContainer): ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderTop")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainerRegion]
+  inline def createInScrollContainerUnderTop(container: ScrollContainer): ScrollContainerRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerUnderTop")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainerRegion]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainerRegion.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainerRegion.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

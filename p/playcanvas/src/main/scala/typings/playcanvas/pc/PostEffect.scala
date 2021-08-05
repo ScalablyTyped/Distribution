@@ -45,8 +45,7 @@ trait PostEffect extends StObject {
 }
 object PostEffect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     device: GraphicsDevice,
     needsDepthBuffer: Boolean,
     render: (RenderTarget, RenderTarget, Vec4) => Unit,
@@ -56,25 +55,18 @@ object PostEffect {
     __obj.asInstanceOf[PostEffect]
   }
   
-  @scala.inline
-  implicit class PostEffectMutableBuilder[Self <: PostEffect] (val x: Self) extends AnyVal {
+  extension [Self <: PostEffect](x: Self) {
     
-    @scala.inline
-    def setDevice(value: GraphicsDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: GraphicsDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedsDepthBuffer(value: Boolean): Self = StObject.set(x, "needsDepthBuffer", value.asInstanceOf[js.Any])
+    inline def setNeedsDepthBuffer(value: Boolean): Self = StObject.set(x, "needsDepthBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRender(value: (RenderTarget, RenderTarget, Vec4) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+    inline def setRender(value: (RenderTarget, RenderTarget, Vec4) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setShader(value: Shader): Self = StObject.set(x, "shader", value.asInstanceOf[js.Any])
+    inline def setShader(value: Shader): Self = StObject.set(x, "shader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShaderNull: Self = StObject.set(x, "shader", null)
+    inline def setShaderNull: Self = StObject.set(x, "shader", null)
     
-    @scala.inline
-    def setVertexBuffer(value: VertexBuffer): Self = StObject.set(x, "vertexBuffer", value.asInstanceOf[js.Any])
+    inline def setVertexBuffer(value: VertexBuffer): Self = StObject.set(x, "vertexBuffer", value.asInstanceOf[js.Any])
   }
 }

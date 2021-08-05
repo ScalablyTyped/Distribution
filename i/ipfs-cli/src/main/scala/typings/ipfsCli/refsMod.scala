@@ -24,39 +24,33 @@ object refsMod {
     @JSImport("ipfs-cli/dist/src/commands/refs", "builder.edges")
     @js.native
     def edges: Desc = js.native
-    @scala.inline
-    def edges_=(x: Desc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("edges")(x.asInstanceOf[js.Any])
+    inline def edges_=(x: Desc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("edges")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/refs", "builder.format")
     @js.native
     def format: DescType = js.native
-    @scala.inline
-    def format_=(x: DescType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("format")(x.asInstanceOf[js.Any])
+    inline def format_=(x: DescType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("format")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/refs", "builder.max-depth")
     @js.native
     def maxDepth: DescString = js.native
     
-    @scala.inline
-    def maxDepth_=(x: DescString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("max-depth")(x.asInstanceOf[js.Any])
+    inline def maxDepth_=(x: DescString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("max-depth")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/refs", "builder.recursive")
     @js.native
     def recursive: Desc = js.native
-    @scala.inline
-    def recursive_=(x: Desc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recursive")(x.asInstanceOf[js.Any])
+    inline def recursive_=(x: Desc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recursive")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/refs", "builder.timeout")
     @js.native
     def timeout: CoerceType = js.native
-    @scala.inline
-    def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/refs", "builder.unique")
     @js.native
     def unique: Desc = js.native
-    @scala.inline
-    def unique_=(x: Desc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unique")(x.asInstanceOf[js.Any])
+    inline def unique_=(x: Desc): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unique")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ipfs-cli/dist/src/commands/refs", "command")
@@ -67,6 +61,5 @@ object refsMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintKeyKeysRecursiveFormatEdgesUniqueMaxDepthTimeout: Edges): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintKeyKeysRecursiveFormatEdgesUniqueMaxDepthTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintKeyKeysRecursiveFormatEdgesUniqueMaxDepthTimeout: Edges): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintKeyKeysRecursiveFormatEdgesUniqueMaxDepthTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

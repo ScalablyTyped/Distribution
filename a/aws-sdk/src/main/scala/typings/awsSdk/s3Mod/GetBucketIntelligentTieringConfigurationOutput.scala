@@ -13,19 +13,15 @@ trait GetBucketIntelligentTieringConfigurationOutput extends StObject {
 }
 object GetBucketIntelligentTieringConfigurationOutput {
   
-  @scala.inline
-  def apply(): GetBucketIntelligentTieringConfigurationOutput = {
+  inline def apply(): GetBucketIntelligentTieringConfigurationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBucketIntelligentTieringConfigurationOutput]
   }
   
-  @scala.inline
-  implicit class GetBucketIntelligentTieringConfigurationOutputMutableBuilder[Self <: GetBucketIntelligentTieringConfigurationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketIntelligentTieringConfigurationOutput](x: Self) {
     
-    @scala.inline
-    def setIntelligentTieringConfiguration(value: IntelligentTieringConfiguration): Self = StObject.set(x, "IntelligentTieringConfiguration", value.asInstanceOf[js.Any])
+    inline def setIntelligentTieringConfiguration(value: IntelligentTieringConfiguration): Self = StObject.set(x, "IntelligentTieringConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntelligentTieringConfigurationUndefined: Self = StObject.set(x, "IntelligentTieringConfiguration", js.undefined)
+    inline def setIntelligentTieringConfigurationUndefined: Self = StObject.set(x, "IntelligentTieringConfiguration", js.undefined)
   }
 }

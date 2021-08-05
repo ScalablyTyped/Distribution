@@ -29,25 +29,19 @@ trait SourceRange extends StObject {
 }
 object SourceRange {
   
-  @scala.inline
-  def apply(endColumn: integer, endLine: integer, startColumn: integer, startLine: integer): SourceRange = {
+  inline def apply(endColumn: integer, endLine: integer, startColumn: integer, startLine: integer): SourceRange = {
     val __obj = js.Dynamic.literal(endColumn = endColumn.asInstanceOf[js.Any], endLine = endLine.asInstanceOf[js.Any], startColumn = startColumn.asInstanceOf[js.Any], startLine = startLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceRange]
   }
   
-  @scala.inline
-  implicit class SourceRangeMutableBuilder[Self <: SourceRange] (val x: Self) extends AnyVal {
+  extension [Self <: SourceRange](x: Self) {
     
-    @scala.inline
-    def setEndColumn(value: integer): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
+    inline def setEndColumn(value: integer): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndLine(value: integer): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
+    inline def setEndLine(value: integer): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartColumn(value: integer): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
+    inline def setStartColumn(value: integer): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLine(value: integer): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
+    inline def setStartLine(value: integer): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
   }
 }

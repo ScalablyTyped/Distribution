@@ -18,19 +18,15 @@ trait PutLexiconInput extends StObject {
 }
 object PutLexiconInput {
   
-  @scala.inline
-  def apply(Content: LexiconContent, Name: LexiconName): PutLexiconInput = {
+  inline def apply(Content: LexiconContent, Name: LexiconName): PutLexiconInput = {
     val __obj = js.Dynamic.literal(Content = Content.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutLexiconInput]
   }
   
-  @scala.inline
-  implicit class PutLexiconInputMutableBuilder[Self <: PutLexiconInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutLexiconInput](x: Self) {
     
-    @scala.inline
-    def setContent(value: LexiconContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: LexiconContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: LexiconName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: LexiconName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

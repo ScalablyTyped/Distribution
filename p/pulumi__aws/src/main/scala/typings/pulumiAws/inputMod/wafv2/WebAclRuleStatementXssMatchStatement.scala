@@ -19,27 +19,21 @@ trait WebAclRuleStatementXssMatchStatement extends StObject {
 }
 object WebAclRuleStatementXssMatchStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     textTransformations: Input[js.Array[Input[WebAclRuleStatementXssMatchStatementTextTransformation]]]
   ): WebAclRuleStatementXssMatchStatement = {
     val __obj = js.Dynamic.literal(textTransformations = textTransformations.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRuleStatementXssMatchStatement]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementXssMatchStatementMutableBuilder[Self <: WebAclRuleStatementXssMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementXssMatchStatement](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(value: Input[WebAclRuleStatementXssMatchStatementFieldToMatch]): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
+    inline def setFieldToMatch(value: Input[WebAclRuleStatementXssMatchStatementFieldToMatch]): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
+    inline def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
     
-    @scala.inline
-    def setTextTransformations(value: Input[js.Array[Input[WebAclRuleStatementXssMatchStatementTextTransformation]]]): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
+    inline def setTextTransformations(value: Input[js.Array[Input[WebAclRuleStatementXssMatchStatementTextTransformation]]]): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformationsVarargs(value: Input[WebAclRuleStatementXssMatchStatementTextTransformation]*): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
+    inline def setTextTransformationsVarargs(value: Input[WebAclRuleStatementXssMatchStatementTextTransformation]*): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
   }
 }

@@ -26,8 +26,7 @@ trait MapViewHitTestOptions
 }
 object MapViewHitTestOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,25 +35,18 @@ object MapViewHitTestOptions {
     __obj.asInstanceOf[MapViewHitTestOptions]
   }
   
-  @scala.inline
-  implicit class MapViewHitTestOptionsMutableBuilder[Self <: MapViewHitTestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapViewHitTestOptions](x: Self) {
     
-    @scala.inline
-    def setExclude(value: js.Array[HitTestItem] | Collection[HitTestItem] | Layer | Graphic): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: js.Array[HitTestItem] | Collection[HitTestItem] | Layer | Graphic): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    @scala.inline
-    def setExcludeVarargs(value: HitTestItem*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: HitTestItem*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
-    @scala.inline
-    def setInclude(value: js.Array[HitTestItem] | Collection[HitTestItem] | Layer | Graphic): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: js.Array[HitTestItem] | Collection[HitTestItem] | Layer | Graphic): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setIncludeVarargs(value: HitTestItem*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: HitTestItem*): Self = StObject.set(x, "include", js.Array(value :_*))
   }
 }

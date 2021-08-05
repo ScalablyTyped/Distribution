@@ -16,10 +16,10 @@ object iosFilterMod {
        with IosFilter {
     def this(minPriority: Double) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var filter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val minPriority: js.Any = js.native
     
     /* CompleteClass */
@@ -36,9 +36,9 @@ object iosFilterMod {
     extends StObject
        with IFilter {
     
-    var filter: js.Any
+    /* private */ var filter: js.Any
     
-    val minPriority: js.Any
+    /* private */ val minPriority: js.Any
     
     def setFilterByMatch(regexes: js.Array[RegExp]): Unit
     
@@ -46,8 +46,7 @@ object iosFilterMod {
   }
   object IosFilter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       filter: js.Any,
       minPriority: js.Any,
       setFilterByMatch: js.Array[RegExp] => Unit,
@@ -58,20 +57,15 @@ object iosFilterMod {
       __obj.asInstanceOf[IosFilter]
     }
     
-    @scala.inline
-    implicit class IosFilterMutableBuilder[Self <: IosFilter] (val x: Self) extends AnyVal {
+    extension [Self <: IosFilter](x: Self) {
       
-      @scala.inline
-      def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinPriority(value: js.Any): Self = StObject.set(x, "minPriority", value.asInstanceOf[js.Any])
+      inline def setMinPriority(value: js.Any): Self = StObject.set(x, "minPriority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetFilterByMatch(value: js.Array[RegExp] => Unit): Self = StObject.set(x, "setFilterByMatch", js.Any.fromFunction1(value))
+      inline def setSetFilterByMatch(value: js.Array[RegExp] => Unit): Self = StObject.set(x, "setFilterByMatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFilterByTag(value: js.Array[String] => Unit): Self = StObject.set(x, "setFilterByTag", js.Any.fromFunction1(value))
+      inline def setSetFilterByTag(value: js.Array[String] => Unit): Self = StObject.set(x, "setFilterByTag", js.Any.fromFunction1(value))
     }
   }
 }

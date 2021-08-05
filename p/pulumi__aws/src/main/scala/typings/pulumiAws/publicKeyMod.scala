@@ -70,21 +70,16 @@ object publicKeyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): PublicKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PublicKey]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PublicKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PublicKey]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PublicKeyState): PublicKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PublicKey]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PublicKeyState, opts: CustomResourceOptions): PublicKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PublicKey]
+    inline def get(name: String, id: Input[ID]): PublicKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PublicKey]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PublicKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PublicKey]
+    inline def get(name: String, id: Input[ID], state: PublicKeyState): PublicKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PublicKey]
+    inline def get(name: String, id: Input[ID], state: PublicKeyState, opts: CustomResourceOptions): PublicKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PublicKey]
     
     /**
       * Returns true if the given object is an instance of PublicKey.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudfront/publicKey.PublicKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudfront/publicKey.PublicKey */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudfront/publicKey.PublicKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudfront/publicKey.PublicKey */ Boolean]
   }
   
   trait PublicKeyArgs extends StObject {
@@ -111,35 +106,26 @@ object publicKeyMod {
   }
   object PublicKeyArgs {
     
-    @scala.inline
-    def apply(encodedKey: Input[String]): PublicKeyArgs = {
+    inline def apply(encodedKey: Input[String]): PublicKeyArgs = {
       val __obj = js.Dynamic.literal(encodedKey = encodedKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[PublicKeyArgs]
     }
     
-    @scala.inline
-    implicit class PublicKeyArgsMutableBuilder[Self <: PublicKeyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PublicKeyArgs](x: Self) {
       
-      @scala.inline
-      def setComment(value: Input[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Input[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setEncodedKey(value: Input[String]): Self = StObject.set(x, "encodedKey", value.asInstanceOf[js.Any])
+      inline def setEncodedKey(value: Input[String]): Self = StObject.set(x, "encodedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -177,50 +163,36 @@ object publicKeyMod {
   }
   object PublicKeyState {
     
-    @scala.inline
-    def apply(): PublicKeyState = {
+    inline def apply(): PublicKeyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PublicKeyState]
     }
     
-    @scala.inline
-    implicit class PublicKeyStateMutableBuilder[Self <: PublicKeyState] (val x: Self) extends AnyVal {
+    extension [Self <: PublicKeyState](x: Self) {
       
-      @scala.inline
-      def setCallerReference(value: Input[String]): Self = StObject.set(x, "callerReference", value.asInstanceOf[js.Any])
+      inline def setCallerReference(value: Input[String]): Self = StObject.set(x, "callerReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallerReferenceUndefined: Self = StObject.set(x, "callerReference", js.undefined)
+      inline def setCallerReferenceUndefined: Self = StObject.set(x, "callerReference", js.undefined)
       
-      @scala.inline
-      def setComment(value: Input[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Input[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setEncodedKey(value: Input[String]): Self = StObject.set(x, "encodedKey", value.asInstanceOf[js.Any])
+      inline def setEncodedKey(value: Input[String]): Self = StObject.set(x, "encodedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodedKeyUndefined: Self = StObject.set(x, "encodedKey", js.undefined)
+      inline def setEncodedKeyUndefined: Self = StObject.set(x, "encodedKey", js.undefined)
       
-      @scala.inline
-      def setEtag(value: Input[String]): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: Input[String]): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+      inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

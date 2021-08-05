@@ -18,25 +18,19 @@ trait EbsBlockDevice extends StObject {
 }
 object EbsBlockDevice {
   
-  @scala.inline
-  def apply(): EbsBlockDevice = {
+  inline def apply(): EbsBlockDevice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EbsBlockDevice]
   }
   
-  @scala.inline
-  implicit class EbsBlockDeviceMutableBuilder[Self <: EbsBlockDevice] (val x: Self) extends AnyVal {
+  extension [Self <: EbsBlockDevice](x: Self) {
     
-    @scala.inline
-    def setDevice(value: String): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: String): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "Device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "Device", js.undefined)
     
-    @scala.inline
-    def setVolumeSpecification(value: VolumeSpecification): Self = StObject.set(x, "VolumeSpecification", value.asInstanceOf[js.Any])
+    inline def setVolumeSpecification(value: VolumeSpecification): Self = StObject.set(x, "VolumeSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSpecificationUndefined: Self = StObject.set(x, "VolumeSpecification", js.undefined)
+    inline def setVolumeSpecificationUndefined: Self = StObject.set(x, "VolumeSpecification", js.undefined)
   }
 }

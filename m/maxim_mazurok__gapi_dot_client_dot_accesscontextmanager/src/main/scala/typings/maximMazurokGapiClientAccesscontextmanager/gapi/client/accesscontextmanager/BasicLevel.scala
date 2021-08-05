@@ -17,28 +17,21 @@ trait BasicLevel extends StObject {
 }
 object BasicLevel {
   
-  @scala.inline
-  def apply(): BasicLevel = {
+  inline def apply(): BasicLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BasicLevel]
   }
   
-  @scala.inline
-  implicit class BasicLevelMutableBuilder[Self <: BasicLevel] (val x: Self) extends AnyVal {
+  extension [Self <: BasicLevel](x: Self) {
     
-    @scala.inline
-    def setCombiningFunction(value: String): Self = StObject.set(x, "combiningFunction", value.asInstanceOf[js.Any])
+    inline def setCombiningFunction(value: String): Self = StObject.set(x, "combiningFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCombiningFunctionUndefined: Self = StObject.set(x, "combiningFunction", js.undefined)
+    inline def setCombiningFunctionUndefined: Self = StObject.set(x, "combiningFunction", js.undefined)
     
-    @scala.inline
-    def setConditions(value: js.Array[Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
   }
 }

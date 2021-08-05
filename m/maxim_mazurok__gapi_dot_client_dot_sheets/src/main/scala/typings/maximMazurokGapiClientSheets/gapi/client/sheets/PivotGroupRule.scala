@@ -17,31 +17,23 @@ trait PivotGroupRule extends StObject {
 }
 object PivotGroupRule {
   
-  @scala.inline
-  def apply(): PivotGroupRule = {
+  inline def apply(): PivotGroupRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotGroupRule]
   }
   
-  @scala.inline
-  implicit class PivotGroupRuleMutableBuilder[Self <: PivotGroupRule] (val x: Self) extends AnyVal {
+  extension [Self <: PivotGroupRule](x: Self) {
     
-    @scala.inline
-    def setDateTimeRule(value: DateTimeRule): Self = StObject.set(x, "dateTimeRule", value.asInstanceOf[js.Any])
+    inline def setDateTimeRule(value: DateTimeRule): Self = StObject.set(x, "dateTimeRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeRuleUndefined: Self = StObject.set(x, "dateTimeRule", js.undefined)
+    inline def setDateTimeRuleUndefined: Self = StObject.set(x, "dateTimeRule", js.undefined)
     
-    @scala.inline
-    def setHistogramRule(value: HistogramRule): Self = StObject.set(x, "histogramRule", value.asInstanceOf[js.Any])
+    inline def setHistogramRule(value: HistogramRule): Self = StObject.set(x, "histogramRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistogramRuleUndefined: Self = StObject.set(x, "histogramRule", js.undefined)
+    inline def setHistogramRuleUndefined: Self = StObject.set(x, "histogramRule", js.undefined)
     
-    @scala.inline
-    def setManualRule(value: ManualRule): Self = StObject.set(x, "manualRule", value.asInstanceOf[js.Any])
+    inline def setManualRule(value: ManualRule): Self = StObject.set(x, "manualRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualRuleUndefined: Self = StObject.set(x, "manualRule", js.undefined)
+    inline def setManualRuleUndefined: Self = StObject.set(x, "manualRule", js.undefined)
   }
 }

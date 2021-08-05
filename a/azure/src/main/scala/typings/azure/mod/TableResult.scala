@@ -10,16 +10,13 @@ trait TableResult extends StObject {
 }
 object TableResult {
   
-  @scala.inline
-  def apply(TableName: String): TableResult = {
+  inline def apply(TableName: String): TableResult = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableResult]
   }
   
-  @scala.inline
-  implicit class TableResultMutableBuilder[Self <: TableResult] (val x: Self) extends AnyVal {
+  extension [Self <: TableResult](x: Self) {
     
-    @scala.inline
-    def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

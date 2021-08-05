@@ -518,52 +518,43 @@ object mod {
     ): this.type = js.native
   }
   
-  @scala.inline
-  def call(wrappedFunction: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): FunctionCallAny = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[FunctionCallAny]
-  @scala.inline
-  def call[E](
+  inline def call(wrappedFunction: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): FunctionCallAny = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[FunctionCallAny]
+  inline def call[E](
     wrappedFunction: js.Function1[/* cb */ js.Function1[/* err */ E, Unit], Unit],
     callback: js.Function1[/* err */ E, Unit]
   ): TypedFunctionCall[js.Array[Unit], E, Unit, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Array[Unit], E, Unit, Unit, Unit]]
-  @scala.inline
-  def call[R1, E](
+  inline def call[R1, E](
     wrappedFunction: js.Function1[/* cb */ js.Function2[/* err */ E, /* r1 */ R1, Unit], Unit],
     callback: js.Function2[/* error */ E, /* r1 */ R1, Unit]
   ): TypedFunctionCall[js.Array[Unit], E, R1, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Array[Unit], E, R1, Unit, Unit]]
-  @scala.inline
-  def call[T1, E](
+  inline def call[T1, E](
     wrappedFunction: js.Function2[/* t1 */ T1, /* cb */ js.Function1[/* err */ E, Unit], Unit],
     t1: T1,
     callback: js.Function1[/* err */ E, Unit]
   ): TypedFunctionCall[js.Array[T1], E, Unit, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Array[T1], E, Unit, Unit, Unit]]
-  @scala.inline
-  def call[R1, R2, E](
+  inline def call[R1, R2, E](
     wrappedFunction: js.Function1[/* cb */ js.Function3[/* err */ E, /* r1 */ R1, /* r2 */ R2, Unit], Unit],
     callback: js.Function3[/* error */ E, /* r1 */ R1, /* r2 */ R2, Unit]
   ): TypedFunctionCall[js.Array[Unit], E, R1, R2, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Array[Unit], E, R1, R2, Unit]]
-  @scala.inline
-  def call[T1, R1, E](
+  inline def call[T1, R1, E](
     wrappedFunction: js.Function2[/* t1 */ T1, /* cb */ js.Function2[/* err */ E, /* r1 */ R1, Unit], Unit],
     t1: T1,
     callback: js.Function2[/* error */ E, /* r1 */ R1, Unit]
   ): TypedFunctionCall[js.Array[T1], E, R1, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Array[T1], E, R1, Unit, Unit]]
-  @scala.inline
-  def call[T1, T2, E](
+  inline def call[T1, T2, E](
     wrappedFunction: js.Function3[/* t1 */ T1, /* t2 */ T2, /* cb */ js.Function1[/* err */ E, Unit], Unit],
     t1: T1,
     t2: T2,
     callback: js.Function1[/* err */ E, Unit]
   ): TypedFunctionCall[js.Tuple2[T1, T2], E, Unit, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Tuple2[T1, T2], E, Unit, Unit, Unit]]
-  @scala.inline
-  def call[R1, R2, R3, E](
+  inline def call[R1, R2, R3, E](
     wrappedFunction: js.Function1[
       /* cb */ js.Function4[/* err */ E, /* r1 */ R1, /* r2 */ R2, /* r3 */ R3, Unit], 
       Unit
     ],
     callback: js.Function4[/* error */ E, /* r1 */ R1, /* r2 */ R2, /* r3 */ R3, Unit]
   ): TypedFunctionCall[js.Array[Unit], E, R1, R2, R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Array[Unit], E, R1, R2, R3]]
-  @scala.inline
-  def call[T1, R1, R2, E](
+  inline def call[T1, R1, R2, E](
     wrappedFunction: js.Function2[
       /* t1 */ T1, 
       /* cb */ js.Function3[/* err */ E, /* r1 */ R1, /* r2 */ R2, Unit], 
@@ -572,23 +563,20 @@ object mod {
     t1: T1,
     callback: js.Function3[/* error */ E, /* r1 */ R1, /* r2 */ R2, Unit]
   ): TypedFunctionCall[js.Array[T1], E, R1, R2, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Array[T1], E, R1, R2, Unit]]
-  @scala.inline
-  def call[T1, T2, R1, E](
+  inline def call[T1, T2, R1, E](
     wrappedFunction: js.Function3[/* t1 */ T1, /* t2 */ T2, /* cb */ js.Function2[/* err */ E, /* r1 */ R1, Unit], Unit],
     t1: T1,
     t2: T2,
     callback: js.Function2[/* error */ E, /* r1 */ R1, Unit]
   ): TypedFunctionCall[js.Tuple2[T1, T2], E, R1, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Tuple2[T1, T2], E, R1, Unit, Unit]]
-  @scala.inline
-  def call[T1, T2, T3, E](
+  inline def call[T1, T2, T3, E](
     wrappedFunction: js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* cb */ js.Function1[/* err */ E, Unit], Unit],
     t1: T1,
     t2: T2,
     t3: T3,
     callback: js.Function1[/* err */ E, Unit]
   ): TypedFunctionCall[js.Tuple3[T1, T2, T3], E, Unit, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Tuple3[T1, T2, T3], E, Unit, Unit, Unit]]
-  @scala.inline
-  def call[T1, R1, R2, R3, E](
+  inline def call[T1, R1, R2, R3, E](
     wrappedFunction: js.Function2[
       /* t1 */ T1, 
       /* cb */ js.Function4[/* err */ E, /* r1 */ R1, /* r2 */ R2, /* r3 */ R3, Unit], 
@@ -597,8 +585,7 @@ object mod {
     t1: T1,
     callback: js.Function4[/* error */ E, /* r1 */ R1, /* r2 */ R2, /* r3 */ R3, Unit]
   ): TypedFunctionCall[js.Array[T1], E, R1, R2, R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Array[T1], E, R1, R2, R3]]
-  @scala.inline
-  def call[T1, T2, R1, R2, E](
+  inline def call[T1, T2, R1, R2, E](
     wrappedFunction: js.Function3[
       /* t1 */ T1, 
       /* t2 */ T2, 
@@ -609,8 +596,7 @@ object mod {
     t2: T2,
     callback: js.Function3[/* error */ E, /* r1 */ R1, /* r2 */ R2, Unit]
   ): TypedFunctionCall[js.Tuple2[T1, T2], E, R1, R2, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Tuple2[T1, T2], E, R1, R2, Unit]]
-  @scala.inline
-  def call[T1, T2, T3, R1, E](
+  inline def call[T1, T2, T3, R1, E](
     wrappedFunction: js.Function4[
       /* t1 */ T1, 
       /* t2 */ T2, 
@@ -623,8 +609,7 @@ object mod {
     t3: T3,
     callback: js.Function2[/* error */ E, /* r1 */ R1, Unit]
   ): TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, Unit, Unit]]
-  @scala.inline
-  def call[T1, T2, R1, R2, R3, E](
+  inline def call[T1, T2, R1, R2, R3, E](
     wrappedFunction: js.Function3[
       /* t1 */ T1, 
       /* t2 */ T2, 
@@ -635,8 +620,7 @@ object mod {
     t2: T2,
     callback: js.Function4[/* error */ E, /* r1 */ R1, /* r2 */ R2, /* r3 */ R3, Unit]
   ): TypedFunctionCall[js.Tuple2[T1, T2], E, R1, R2, R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Tuple2[T1, T2], E, R1, R2, R3]]
-  @scala.inline
-  def call[T1, T2, T3, R1, R2, E](
+  inline def call[T1, T2, T3, R1, R2, E](
     wrappedFunction: js.Function4[
       /* t1 */ T1, 
       /* t2 */ T2, 
@@ -649,8 +633,7 @@ object mod {
     t3: T3,
     callback: js.Function3[/* error */ E, /* r1 */ R1, /* r2 */ R2, Unit]
   ): TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, R2, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, R2, Unit]]
-  @scala.inline
-  def call[T1, T2, T3, R1, R2, R3, E](
+  inline def call[T1, T2, T3, R1, R2, R3, E](
     wrappedFunction: js.Function4[
       /* t1 */ T1, 
       /* t2 */ T2, 
@@ -664,15 +647,11 @@ object mod {
     callback: js.Function4[/* error */ E, /* r1 */ R1, /* r2 */ R2, /* r3 */ R3, Unit]
   ): TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, R2, R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, R2, R3]]
   
-  @scala.inline
-  def exponential(): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")().asInstanceOf[Backoff]
-  @scala.inline
-  def exponential(options: ExponentialOptions): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(options.asInstanceOf[js.Any]).asInstanceOf[Backoff]
+  inline def exponential(): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")().asInstanceOf[Backoff]
+  inline def exponential(options: ExponentialOptions): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(options.asInstanceOf[js.Any]).asInstanceOf[Backoff]
   
-  @scala.inline
-  def fibonacci(): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("fibonacci")().asInstanceOf[Backoff]
-  @scala.inline
-  def fibonacci(options: Options): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("fibonacci")(options.asInstanceOf[js.Any]).asInstanceOf[Backoff]
+  inline def fibonacci(): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("fibonacci")().asInstanceOf[Backoff]
+  inline def fibonacci(options: Options): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("fibonacci")(options.asInstanceOf[js.Any]).asInstanceOf[Backoff]
   
   trait ExponentialOptions
     extends StObject
@@ -682,20 +661,16 @@ object mod {
   }
   object ExponentialOptions {
     
-    @scala.inline
-    def apply(): ExponentialOptions = {
+    inline def apply(): ExponentialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExponentialOptions]
     }
     
-    @scala.inline
-    implicit class ExponentialOptionsMutableBuilder[Self <: ExponentialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExponentialOptions](x: Self) {
       
-      @scala.inline
-      def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+      inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
+      inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
     }
   }
   
@@ -752,8 +727,7 @@ object mod {
   }
   object FunctionCallArgs {
     
-    @scala.inline
-    def apply[E, R1, R2, R3](
+    inline def apply[E, R1, R2, R3](
       addListener: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3],
       emit: (callback, js.Tuple4[E, R1, R2, R3]) => Boolean,
       getLastResult: () => js.Tuple4[E, R1, R2, R3],
@@ -768,45 +742,35 @@ object mod {
       __obj.asInstanceOf[FunctionCallArgs[E, R1, R2, R3]]
     }
     
-    @scala.inline
-    implicit class FunctionCallArgsMutableBuilder[Self <: FunctionCallArgs[?, ?, ?, ?], E, R1, R2, R3] (val x: Self & (FunctionCallArgs[E, R1, R2, R3])) extends AnyVal {
+    extension [Self <: FunctionCallArgs[?, ?, ?, ?], E, R1, R2, R3](x: Self & (FunctionCallArgs[E, R1, R2, R3])) {
       
-      @scala.inline
-      def setAddListener(
+      inline def setAddListener(
         value: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3]
       ): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEmit(value: (callback, js.Tuple4[E, R1, R2, R3]) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (callback, js.Tuple4[E, R1, R2, R3]) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetLastResult(value: () => js.Tuple4[E, R1, R2, R3]): Self = StObject.set(x, "getLastResult", js.Any.fromFunction0(value))
+      inline def setGetLastResult(value: () => js.Tuple4[E, R1, R2, R3]): Self = StObject.set(x, "getLastResult", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setListeners(value: callback => js.Array[js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
+      inline def setListeners(value: callback => js.Array[js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOn(
+      inline def setOn(
         value: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3]
       ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnce(
+      inline def setOnce(
         value: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3]
       ): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrependListener(
+      inline def setPrependListener(
         value: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3]
       ): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrependOnceListener(
+      inline def setPrependOnceListener(
         value: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3]
       ): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveListener(
+      inline def setRemoveListener(
         value: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3]
       ): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
     }
@@ -860,8 +824,7 @@ object mod {
   }
   object FunctionCallArgsAny {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addListener: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny,
       emit: (callback, js.Array[js.Any]) => Boolean,
       getLastResult: () => js.Array[js.Any],
@@ -876,35 +839,25 @@ object mod {
       __obj.asInstanceOf[FunctionCallArgsAny]
     }
     
-    @scala.inline
-    implicit class FunctionCallArgsAnyMutableBuilder[Self <: FunctionCallArgsAny] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionCallArgsAny](x: Self) {
       
-      @scala.inline
-      def setAddListener(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEmit(value: (callback, js.Array[js.Any]) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (callback, js.Array[js.Any]) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetLastResult(value: () => js.Array[js.Any]): Self = StObject.set(x, "getLastResult", js.Any.fromFunction0(value))
+      inline def setGetLastResult(value: () => js.Array[js.Any]): Self = StObject.set(x, "getLastResult", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setListeners(value: callback => js.Array[js.Function1[/* results */ js.Array[js.Any], Unit]]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
+      inline def setListeners(value: callback => js.Array[js.Function1[/* results */ js.Array[js.Any], Unit]]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOn(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnce(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+      inline def setOnce(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrependListener(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
+      inline def setPrependListener(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrependOnceListener(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
+      inline def setPrependOnceListener(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveListener(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      inline def setRemoveListener(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
     }
   }
   
@@ -956,32 +909,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setInitialDelay(value: Double): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
+      inline def setInitialDelay(value: Double): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialDelayUndefined: Self = StObject.set(x, "initialDelay", js.undefined)
+      inline def setInitialDelayUndefined: Self = StObject.set(x, "initialDelay", js.undefined)
       
-      @scala.inline
-      def setMaxDelay(value: Double): Self = StObject.set(x, "maxDelay", value.asInstanceOf[js.Any])
+      inline def setMaxDelay(value: Double): Self = StObject.set(x, "maxDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDelayUndefined: Self = StObject.set(x, "maxDelay", js.undefined)
+      inline def setMaxDelayUndefined: Self = StObject.set(x, "maxDelay", js.undefined)
       
-      @scala.inline
-      def setRandomisationFactor(value: Double): Self = StObject.set(x, "randomisationFactor", value.asInstanceOf[js.Any])
+      inline def setRandomisationFactor(value: Double): Self = StObject.set(x, "randomisationFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRandomisationFactorUndefined: Self = StObject.set(x, "randomisationFactor", js.undefined)
+      inline def setRandomisationFactorUndefined: Self = StObject.set(x, "randomisationFactor", js.undefined)
     }
   }
   

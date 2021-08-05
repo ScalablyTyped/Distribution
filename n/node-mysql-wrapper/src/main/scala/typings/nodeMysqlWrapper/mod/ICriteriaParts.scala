@@ -18,8 +18,7 @@ trait ICriteriaParts extends StObject {
 }
 object ICriteriaParts {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     noDatabaseProperties: js.Array[String],
     rawCriteriaObject: js.Any,
     selectFromClause: Table[js.Any] => String,
@@ -30,28 +29,20 @@ object ICriteriaParts {
     __obj.asInstanceOf[ICriteriaParts]
   }
   
-  @scala.inline
-  implicit class ICriteriaPartsMutableBuilder[Self <: ICriteriaParts] (val x: Self) extends AnyVal {
+  extension [Self <: ICriteriaParts](x: Self) {
     
-    @scala.inline
-    def setNoDatabaseProperties(value: js.Array[String]): Self = StObject.set(x, "noDatabaseProperties", value.asInstanceOf[js.Any])
+    inline def setNoDatabaseProperties(value: js.Array[String]): Self = StObject.set(x, "noDatabaseProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDatabasePropertiesVarargs(value: String*): Self = StObject.set(x, "noDatabaseProperties", js.Array(value :_*))
+    inline def setNoDatabasePropertiesVarargs(value: String*): Self = StObject.set(x, "noDatabaseProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setRawCriteriaObject(value: js.Any): Self = StObject.set(x, "rawCriteriaObject", value.asInstanceOf[js.Any])
+    inline def setRawCriteriaObject(value: js.Any): Self = StObject.set(x, "rawCriteriaObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectFromClause(value: Table[js.Any] => String): Self = StObject.set(x, "selectFromClause", js.Any.fromFunction1(value))
+    inline def setSelectFromClause(value: Table[js.Any] => String): Self = StObject.set(x, "selectFromClause", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTables(value: js.Array[TableToSearchPart]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+    inline def setTables(value: js.Array[TableToSearchPart]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesVarargs(value: TableToSearchPart*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: TableToSearchPart*): Self = StObject.set(x, "tables", js.Array(value :_*))
     
-    @scala.inline
-    def setWhereClause(value: String): Self = StObject.set(x, "whereClause", value.asInstanceOf[js.Any])
+    inline def setWhereClause(value: String): Self = StObject.set(x, "whereClause", value.asInstanceOf[js.Any])
   }
 }

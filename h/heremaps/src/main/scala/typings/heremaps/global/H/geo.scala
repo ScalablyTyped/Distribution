@@ -108,8 +108,7 @@ object geo {
       * @throws {H.lang.InvalidArgumentError} - throws an error in case the latLngs array has an odd length
       */
     /* static member */
-    @scala.inline
-    def fromLatLngArray(latLngs: js.Array[Double]): typings.heremaps.H.geo.LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLngArray")(latLngs.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.geo.LineString]
+    inline def fromLatLngArray(latLngs: js.Array[Double]): typings.heremaps.H.geo.LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLngArray")(latLngs.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.geo.LineString]
     
     /**
       * To obtain whether a leg (formed by the given two longitudes) crosses the International Date Line.
@@ -118,8 +117,7 @@ object geo {
       * @return {boolean}
       */
     /* static member */
-    @scala.inline
-    def isDBC(lng1: Longitude, lng2: Longitude): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDBC")(lng1.asInstanceOf[js.Any], lng2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isDBC(lng1: Longitude, lng2: Longitude): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDBC")(lng1.asInstanceOf[js.Any], lng2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   @JSGlobal("H.geo.MultiGeometry")
@@ -308,8 +306,7 @@ object geo {
       * @returns {H.geo.Point} - the created Point instance
       */
     /* static member */
-    @scala.inline
-    def fromIPoint(iPoint: IPoint): typings.heremaps.H.geo.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIPoint")(iPoint.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.geo.Point]
+    inline def fromIPoint(iPoint: IPoint): typings.heremaps.H.geo.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIPoint")(iPoint.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.geo.Point]
     
     /**
       * This method validates the given IPoint. It checks, if lat, lng, alt and ctx have valid types. Additionally the value of the lat property is clamped into a range of -90 ... +90
@@ -320,14 +317,10 @@ object geo {
       * @returns {boolean} - if the given point could validate
       */
     /* static member */
-    @scala.inline
-    def validate(point: IPoint): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(point.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def validate(point: IPoint, opt_caller: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(point.asInstanceOf[js.Any], opt_caller.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def validate(point: IPoint, opt_caller: js.Function0[Unit], opt_argNr: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(point.asInstanceOf[js.Any], opt_caller.asInstanceOf[js.Any], opt_argNr.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def validate(point: IPoint, opt_caller: Unit, opt_argNr: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(point.asInstanceOf[js.Any], opt_caller.asInstanceOf[js.Any], opt_argNr.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def validate(point: IPoint): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(point.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def validate(point: IPoint, opt_caller: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(point.asInstanceOf[js.Any], opt_caller.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def validate(point: IPoint, opt_caller: js.Function0[Unit], opt_argNr: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(point.asInstanceOf[js.Any], opt_caller.asInstanceOf[js.Any], opt_argNr.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def validate(point: IPoint, opt_caller: Unit, opt_argNr: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(point.asInstanceOf[js.Any], opt_caller.asInstanceOf[js.Any], opt_argNr.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   /**
@@ -407,10 +400,8 @@ object geo {
       * @returns {(H.geo.Rect | undefined)} - returns the minimum rectangular area covering the coordinates
       */
     /* static member */
-    @scala.inline
-    def coverLatLngAlts(latLngAltArray: js.Array[Double]): typings.heremaps.H.geo.Rect | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("coverLatLngAlts")(latLngAltArray.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.geo.Rect | Unit]
-    @scala.inline
-    def coverLatLngAlts(latLngAltArray: js.Array[Double], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("coverLatLngAlts")(latLngAltArray.asInstanceOf[js.Any], opt_skipValidation.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect | Unit]
+    inline def coverLatLngAlts(latLngAltArray: js.Array[Double]): typings.heremaps.H.geo.Rect | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("coverLatLngAlts")(latLngAltArray.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.geo.Rect | Unit]
+    inline def coverLatLngAlts(latLngAltArray: js.Array[Double], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("coverLatLngAlts")(latLngAltArray.asInstanceOf[js.Any], opt_skipValidation.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect | Unit]
     
     /**
       * This method creates the minimum rectangular area covering all of the points in the argument array.
@@ -419,10 +410,8 @@ object geo {
       * @returns {H.geo.Rect} - returns the minimum rectangular area covering the points or null if no point is covered
       */
     /* static member */
-    @scala.inline
-    def coverPoints(pointArray: js.Array[IPoint]): typings.heremaps.H.geo.Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("coverPoints")(pointArray.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.geo.Rect]
-    @scala.inline
-    def coverPoints(pointArray: js.Array[IPoint], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("coverPoints")(pointArray.asInstanceOf[js.Any], opt_skipValidation.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect]
+    inline def coverPoints(pointArray: js.Array[IPoint]): typings.heremaps.H.geo.Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("coverPoints")(pointArray.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.geo.Rect]
+    inline def coverPoints(pointArray: js.Array[IPoint], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("coverPoints")(pointArray.asInstanceOf[js.Any], opt_skipValidation.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect]
     
     /**
       * This method creates the minimum rectangular area covering all of the rectangular areas in the argument array.
@@ -431,10 +420,8 @@ object geo {
       * @returns {(H.geo.Rect | undefined)} - returns the minimum rectangular area covering the rectangular areas
       */
     /* static member */
-    @scala.inline
-    def coverRects(rectArray: js.Array[typings.heremaps.H.geo.Rect]): typings.heremaps.H.geo.Rect | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("coverRects")(rectArray.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.geo.Rect | Unit]
-    @scala.inline
-    def coverRects(rectArray: js.Array[typings.heremaps.H.geo.Rect], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("coverRects")(rectArray.asInstanceOf[js.Any], opt_skipValidation.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect | Unit]
+    inline def coverRects(rectArray: js.Array[typings.heremaps.H.geo.Rect]): typings.heremaps.H.geo.Rect | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("coverRects")(rectArray.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.geo.Rect | Unit]
+    inline def coverRects(rectArray: js.Array[typings.heremaps.H.geo.Rect], opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("coverRects")(rectArray.asInstanceOf[js.Any], opt_skipValidation.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect | Unit]
     
     /**
       * This method creates a rectangular area from a top-left and bottom-right point pair.
@@ -444,10 +431,8 @@ object geo {
       * @returns {H.geo.Rect} - returns the rectangular area defined by the top-left and bottom-right corners
       */
     /* static member */
-    @scala.inline
-    def fromPoints(topLeft: IPoint, bottomRight: IPoint): typings.heremaps.H.geo.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(topLeft.asInstanceOf[js.Any], bottomRight.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect]
-    @scala.inline
-    def fromPoints(topLeft: IPoint, bottomRight: IPoint, opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(topLeft.asInstanceOf[js.Any], bottomRight.asInstanceOf[js.Any], opt_skipValidation.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect]
+    inline def fromPoints(topLeft: IPoint, bottomRight: IPoint): typings.heremaps.H.geo.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(topLeft.asInstanceOf[js.Any], bottomRight.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect]
+    inline def fromPoints(topLeft: IPoint, bottomRight: IPoint, opt_skipValidation: Boolean): typings.heremaps.H.geo.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(topLeft.asInstanceOf[js.Any], bottomRight.asInstanceOf[js.Any], opt_skipValidation.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect]
     
     /**
       * This method merges two rects by their values. The result of the merge is a bounding rect which covers all provided rect bounds.
@@ -463,8 +448,7 @@ object geo {
       * @returns {H.geo.Rect} - either the opt_out rect or a new rect
       */
     /* static member */
-    @scala.inline
-    def merge(
+    inline def merge(
       topA: Latitude,
       leftA: Longitude,
       bottomA: Latitude,
@@ -474,8 +458,7 @@ object geo {
       bottomB: Latitude,
       rightB: Longitude
     ): typings.heremaps.H.geo.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(topA.asInstanceOf[js.Any], leftA.asInstanceOf[js.Any], bottomA.asInstanceOf[js.Any], rightA.asInstanceOf[js.Any], topB.asInstanceOf[js.Any], leftB.asInstanceOf[js.Any], bottomB.asInstanceOf[js.Any], rightB.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.geo.Rect]
-    @scala.inline
-    def merge(
+    inline def merge(
       topA: Latitude,
       leftA: Longitude,
       bottomA: Latitude,

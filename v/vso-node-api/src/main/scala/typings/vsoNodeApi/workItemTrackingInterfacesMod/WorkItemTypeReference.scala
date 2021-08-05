@@ -15,16 +15,13 @@ trait WorkItemTypeReference
 }
 object WorkItemTypeReference {
   
-  @scala.inline
-  def apply(name: String, url: String): WorkItemTypeReference = {
+  inline def apply(name: String, url: String): WorkItemTypeReference = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemTypeReference]
   }
   
-  @scala.inline
-  implicit class WorkItemTypeReferenceMutableBuilder[Self <: WorkItemTypeReference] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemTypeReference](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -15,13 +15,11 @@ object envMod {
     @JSImport("use-sidecar/dist/es5/env", "env.forceCache")
     @js.native
     def forceCache: Boolean = js.native
-    @scala.inline
-    def forceCache_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceCache")(x.asInstanceOf[js.Any])
+    inline def forceCache_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceCache")(x.asInstanceOf[js.Any])
     
     @JSImport("use-sidecar/dist/es5/env", "env.isNode")
     @js.native
     def isNode: Boolean = js.native
-    @scala.inline
-    def isNode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isNode")(x.asInstanceOf[js.Any])
+    inline def isNode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isNode")(x.asInstanceOf[js.Any])
   }
 }

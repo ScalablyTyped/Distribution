@@ -17,8 +17,7 @@ trait Typeofasset extends StObject {
 }
 object Typeofasset {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapAsset: (AxiosInstance, AssetProps) => Asset,
     wrapAssetCollection: (AxiosInstance, CollectionProp[AssetProps]) => Collection[Asset, AssetProps]
   ): Typeofasset = {
@@ -26,13 +25,10 @@ object Typeofasset {
     __obj.asInstanceOf[Typeofasset]
   }
   
-  @scala.inline
-  implicit class TypeofassetMutableBuilder[Self <: Typeofasset] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofasset](x: Self) {
     
-    @scala.inline
-    def setWrapAsset(value: (AxiosInstance, AssetProps) => Asset): Self = StObject.set(x, "wrapAsset", js.Any.fromFunction2(value))
+    inline def setWrapAsset(value: (AxiosInstance, AssetProps) => Asset): Self = StObject.set(x, "wrapAsset", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapAssetCollection(value: (AxiosInstance, CollectionProp[AssetProps]) => Collection[Asset, AssetProps]): Self = StObject.set(x, "wrapAssetCollection", js.Any.fromFunction2(value))
+    inline def setWrapAssetCollection(value: (AxiosInstance, CollectionProp[AssetProps]) => Collection[Asset, AssetProps]): Self = StObject.set(x, "wrapAssetCollection", js.Any.fromFunction2(value))
   }
 }

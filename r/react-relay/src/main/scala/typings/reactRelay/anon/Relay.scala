@@ -11,19 +11,15 @@ trait Relay extends StObject {
 }
 object Relay {
   
-  @scala.inline
-  def apply(): Relay = {
+  inline def apply(): Relay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Relay]
   }
   
-  @scala.inline
-  implicit class RelayMutableBuilder[Self <: Relay] (val x: Self) extends AnyVal {
+  extension [Self <: Relay](x: Self) {
     
-    @scala.inline
-    def setRelay(value: RelayProp): Self = StObject.set(x, "relay", value.asInstanceOf[js.Any])
+    inline def setRelay(value: RelayProp): Self = StObject.set(x, "relay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelayUndefined: Self = StObject.set(x, "relay", js.undefined)
+    inline def setRelayUndefined: Self = StObject.set(x, "relay", js.undefined)
   }
 }

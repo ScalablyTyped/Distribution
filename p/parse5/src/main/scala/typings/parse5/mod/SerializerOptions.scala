@@ -15,19 +15,15 @@ trait SerializerOptions extends StObject {
 }
 object SerializerOptions {
   
-  @scala.inline
-  def apply(): SerializerOptions = {
+  inline def apply(): SerializerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SerializerOptions]
   }
   
-  @scala.inline
-  implicit class SerializerOptionsMutableBuilder[Self <: SerializerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SerializerOptions](x: Self) {
     
-    @scala.inline
-    def setTreeAdapter(value: TreeAdapter): Self = StObject.set(x, "treeAdapter", value.asInstanceOf[js.Any])
+    inline def setTreeAdapter(value: TreeAdapter): Self = StObject.set(x, "treeAdapter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeAdapterUndefined: Self = StObject.set(x, "treeAdapter", js.undefined)
+    inline def setTreeAdapterUndefined: Self = StObject.set(x, "treeAdapter", js.undefined)
   }
 }

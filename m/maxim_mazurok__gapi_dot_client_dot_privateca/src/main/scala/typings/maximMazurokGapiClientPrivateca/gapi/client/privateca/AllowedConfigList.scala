@@ -14,22 +14,17 @@ trait AllowedConfigList extends StObject {
 }
 object AllowedConfigList {
   
-  @scala.inline
-  def apply(): AllowedConfigList = {
+  inline def apply(): AllowedConfigList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowedConfigList]
   }
   
-  @scala.inline
-  implicit class AllowedConfigListMutableBuilder[Self <: AllowedConfigList] (val x: Self) extends AnyVal {
+  extension [Self <: AllowedConfigList](x: Self) {
     
-    @scala.inline
-    def setAllowedConfigValues(value: js.Array[ReusableConfigWrapper]): Self = StObject.set(x, "allowedConfigValues", value.asInstanceOf[js.Any])
+    inline def setAllowedConfigValues(value: js.Array[ReusableConfigWrapper]): Self = StObject.set(x, "allowedConfigValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedConfigValuesUndefined: Self = StObject.set(x, "allowedConfigValues", js.undefined)
+    inline def setAllowedConfigValuesUndefined: Self = StObject.set(x, "allowedConfigValues", js.undefined)
     
-    @scala.inline
-    def setAllowedConfigValuesVarargs(value: ReusableConfigWrapper*): Self = StObject.set(x, "allowedConfigValues", js.Array(value :_*))
+    inline def setAllowedConfigValuesVarargs(value: ReusableConfigWrapper*): Self = StObject.set(x, "allowedConfigValues", js.Array(value :_*))
   }
 }

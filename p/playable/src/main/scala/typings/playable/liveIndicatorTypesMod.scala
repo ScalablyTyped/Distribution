@@ -27,8 +27,7 @@ object liveIndicatorTypesMod {
   }
   object ILiveIndicator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -40,26 +39,19 @@ object liveIndicatorTypesMod {
       __obj.asInstanceOf[ILiveIndicator]
     }
     
-    @scala.inline
-    implicit class ILiveIndicatorMutableBuilder[Self <: ILiveIndicator] (val x: Self) extends AnyVal {
+    extension [Self <: ILiveIndicator](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+      inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -69,20 +61,16 @@ object liveIndicatorTypesMod {
   }
   object ILiveIndicatorViewCallbacks {
     
-    @scala.inline
-    def apply(onClick: EventListenerOrEventListenerObject): ILiveIndicatorViewCallbacks = {
+    inline def apply(onClick: EventListenerOrEventListenerObject): ILiveIndicatorViewCallbacks = {
       val __obj = js.Dynamic.literal(onClick = onClick.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILiveIndicatorViewCallbacks]
     }
     
-    @scala.inline
-    implicit class ILiveIndicatorViewCallbacksMutableBuilder[Self <: ILiveIndicatorViewCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: ILiveIndicatorViewCallbacks](x: Self) {
       
-      @scala.inline
-      def setOnClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      inline def setOnClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClickFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClickFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     }
   }
   
@@ -96,23 +84,18 @@ object liveIndicatorTypesMod {
   }
   object ILiveIndicatorViewConfig {
     
-    @scala.inline
-    def apply(callbacks: ILiveIndicatorViewCallbacks, textMap: ITextMap, tooltipService: ITooltipService): ILiveIndicatorViewConfig = {
+    inline def apply(callbacks: ILiveIndicatorViewCallbacks, textMap: ITextMap, tooltipService: ITooltipService): ILiveIndicatorViewConfig = {
       val __obj = js.Dynamic.literal(callbacks = callbacks.asInstanceOf[js.Any], textMap = textMap.asInstanceOf[js.Any], tooltipService = tooltipService.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILiveIndicatorViewConfig]
     }
     
-    @scala.inline
-    implicit class ILiveIndicatorViewConfigMutableBuilder[Self <: ILiveIndicatorViewConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ILiveIndicatorViewConfig](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: ILiveIndicatorViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: ILiveIndicatorViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
+      inline def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
+      inline def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,8 +115,7 @@ object liveIndicatorTypesMod {
   }
   object ILiveIndicatorViewStyles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: String,
       clickable: String,
       ended: String,
@@ -145,26 +127,19 @@ object liveIndicatorTypesMod {
       __obj.asInstanceOf[ILiveIndicatorViewStyles]
     }
     
-    @scala.inline
-    implicit class ILiveIndicatorViewStylesMutableBuilder[Self <: ILiveIndicatorViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ILiveIndicatorViewStyles](x: Self) {
       
-      @scala.inline
-      def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickable(value: String): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
+      inline def setClickable(value: String): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnded(value: String): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
+      inline def setEnded(value: String): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiveIndicator(value: String): Self = StObject.set(x, "liveIndicator", value.asInstanceOf[js.Any])
+      inline def setLiveIndicator(value: String): Self = StObject.set(x, "liveIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiveIndicatorButton(value: String): Self = StObject.set(x, "liveIndicatorButton", value.asInstanceOf[js.Any])
+      inline def setLiveIndicatorButton(value: String): Self = StObject.set(x, "liveIndicatorButton", value.asInstanceOf[js.Any])
     }
   }
 }

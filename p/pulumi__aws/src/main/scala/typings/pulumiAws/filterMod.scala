@@ -82,21 +82,16 @@ object filterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Filter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Filter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FilterState): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Filter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FilterState, opts: CustomResourceOptions): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Filter]
+    inline def get(name: String, id: Input[ID]): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Filter]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Filter]
+    inline def get(name: String, id: Input[ID], state: FilterState): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Filter]
+    inline def get(name: String, id: Input[ID], state: FilterState, opts: CustomResourceOptions): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Filter]
     
     /**
       * Returns true if the given object is an instance of Filter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/filter.Filter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/filter.Filter */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/filter.Filter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/filter.Filter */ Boolean]
   }
   
   trait FilterArgs extends StObject {
@@ -138,8 +133,7 @@ object filterMod {
   }
   object FilterArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: Input[String],
       detectorId: Input[String],
       findingCriteria: Input[typings.pulumiAws.inputMod.guardduty.FilterFindingCriteria],
@@ -149,38 +143,27 @@ object filterMod {
       __obj.asInstanceOf[FilterArgs]
     }
     
-    @scala.inline
-    implicit class FilterArgsMutableBuilder[Self <: FilterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FilterArgs](x: Self) {
       
-      @scala.inline
-      def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+      inline def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindingCriteria(value: Input[typings.pulumiAws.inputMod.guardduty.FilterFindingCriteria]): Self = StObject.set(x, "findingCriteria", value.asInstanceOf[js.Any])
+      inline def setFindingCriteria(value: Input[typings.pulumiAws.inputMod.guardduty.FilterFindingCriteria]): Self = StObject.set(x, "findingCriteria", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRank(value: Input[Double]): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+      inline def setRank(value: Input[Double]): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -228,62 +211,44 @@ object filterMod {
   }
   object FilterState {
     
-    @scala.inline
-    def apply(): FilterState = {
+    inline def apply(): FilterState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FilterState]
     }
     
-    @scala.inline
-    implicit class FilterStateMutableBuilder[Self <: FilterState] (val x: Self) extends AnyVal {
+    extension [Self <: FilterState](x: Self) {
       
-      @scala.inline
-      def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+      inline def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
+      inline def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
       
-      @scala.inline
-      def setFindingCriteria(value: Input[typings.pulumiAws.inputMod.guardduty.FilterFindingCriteria]): Self = StObject.set(x, "findingCriteria", value.asInstanceOf[js.Any])
+      inline def setFindingCriteria(value: Input[typings.pulumiAws.inputMod.guardduty.FilterFindingCriteria]): Self = StObject.set(x, "findingCriteria", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindingCriteriaUndefined: Self = StObject.set(x, "findingCriteria", js.undefined)
+      inline def setFindingCriteriaUndefined: Self = StObject.set(x, "findingCriteria", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRank(value: Input[Double]): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+      inline def setRank(value: Input[Double]): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+      inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

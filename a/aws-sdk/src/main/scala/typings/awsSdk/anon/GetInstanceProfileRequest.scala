@@ -19,22 +19,17 @@ trait GetInstanceProfileRequest extends StObject {
 }
 object GetInstanceProfileRequest {
   
-  @scala.inline
-  def apply(InstanceProfileName: instanceProfileNameType): GetInstanceProfileRequest = {
+  inline def apply(InstanceProfileName: instanceProfileNameType): GetInstanceProfileRequest = {
     val __obj = js.Dynamic.literal(InstanceProfileName = InstanceProfileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInstanceProfileRequest]
   }
   
-  @scala.inline
-  implicit class GetInstanceProfileRequestMutableBuilder[Self <: GetInstanceProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetInstanceProfileRequest](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setInstanceProfileName(value: instanceProfileNameType): Self = StObject.set(x, "InstanceProfileName", value.asInstanceOf[js.Any])
+    inline def setInstanceProfileName(value: instanceProfileNameType): Self = StObject.set(x, "InstanceProfileName", value.asInstanceOf[js.Any])
   }
 }

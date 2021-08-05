@@ -12,19 +12,15 @@ trait ILanguages extends StObject {
 }
 object ILanguages {
   
-  @scala.inline
-  def apply(Count: Double, Item: Double => ILanguage): ILanguages = {
+  inline def apply(Count: Double, Item: Double => ILanguage): ILanguages = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.asInstanceOf[ILanguages]
   }
   
-  @scala.inline
-  implicit class ILanguagesMutableBuilder[Self <: ILanguages] (val x: Self) extends AnyVal {
+  extension [Self <: ILanguages](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => ILanguage): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => ILanguage): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

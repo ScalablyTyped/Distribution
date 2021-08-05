@@ -18,28 +18,21 @@ trait DescribeConfigRulesRequest extends StObject {
 }
 object DescribeConfigRulesRequest {
   
-  @scala.inline
-  def apply(): DescribeConfigRulesRequest = {
+  inline def apply(): DescribeConfigRulesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConfigRulesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeConfigRulesRequestMutableBuilder[Self <: DescribeConfigRulesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConfigRulesRequest](x: Self) {
     
-    @scala.inline
-    def setConfigRuleNames(value: ConfigRuleNames): Self = StObject.set(x, "ConfigRuleNames", value.asInstanceOf[js.Any])
+    inline def setConfigRuleNames(value: ConfigRuleNames): Self = StObject.set(x, "ConfigRuleNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRuleNamesUndefined: Self = StObject.set(x, "ConfigRuleNames", js.undefined)
+    inline def setConfigRuleNamesUndefined: Self = StObject.set(x, "ConfigRuleNames", js.undefined)
     
-    @scala.inline
-    def setConfigRuleNamesVarargs(value: ConfigRuleName*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value :_*))
+    inline def setConfigRuleNamesVarargs(value: ConfigRuleName*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -29,32 +29,24 @@ trait ClusterMasterInstanceGroupEbsConfig extends StObject {
 }
 object ClusterMasterInstanceGroupEbsConfig {
   
-  @scala.inline
-  def apply(size: Input[Double], `type`: Input[String]): ClusterMasterInstanceGroupEbsConfig = {
+  inline def apply(size: Input[Double], `type`: Input[String]): ClusterMasterInstanceGroupEbsConfig = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterMasterInstanceGroupEbsConfig]
   }
   
-  @scala.inline
-  implicit class ClusterMasterInstanceGroupEbsConfigMutableBuilder[Self <: ClusterMasterInstanceGroupEbsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterMasterInstanceGroupEbsConfig](x: Self) {
     
-    @scala.inline
-    def setIops(value: Input[Double]): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
+    inline def setIops(value: Input[Double]): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
+    inline def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
     
-    @scala.inline
-    def setSize(value: Input[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Input[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumesPerInstance(value: Input[Double]): Self = StObject.set(x, "volumesPerInstance", value.asInstanceOf[js.Any])
+    inline def setVolumesPerInstance(value: Input[Double]): Self = StObject.set(x, "volumesPerInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumesPerInstanceUndefined: Self = StObject.set(x, "volumesPerInstance", js.undefined)
+    inline def setVolumesPerInstanceUndefined: Self = StObject.set(x, "volumesPerInstance", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait Tokenizer extends StObject {
 }
 object Tokenizer {
   
-  @scala.inline
-  def apply(getLineTokens: () => js.Any): Tokenizer = {
+  inline def apply(getLineTokens: () => js.Any): Tokenizer = {
     val __obj = js.Dynamic.literal(getLineTokens = js.Any.fromFunction0(getLineTokens))
     __obj.asInstanceOf[Tokenizer]
   }
   
-  @scala.inline
-  implicit class TokenizerMutableBuilder[Self <: Tokenizer] (val x: Self) extends AnyVal {
+  extension [Self <: Tokenizer](x: Self) {
     
-    @scala.inline
-    def setGetLineTokens(value: () => js.Any): Self = StObject.set(x, "getLineTokens", js.Any.fromFunction0(value))
+    inline def setGetLineTokens(value: () => js.Any): Self = StObject.set(x, "getLineTokens", js.Any.fromFunction0(value))
   }
 }

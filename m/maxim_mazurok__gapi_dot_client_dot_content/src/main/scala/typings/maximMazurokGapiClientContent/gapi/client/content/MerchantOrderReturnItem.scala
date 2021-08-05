@@ -41,82 +41,57 @@ trait MerchantOrderReturnItem extends StObject {
 }
 object MerchantOrderReturnItem {
   
-  @scala.inline
-  def apply(): MerchantOrderReturnItem = {
+  inline def apply(): MerchantOrderReturnItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MerchantOrderReturnItem]
   }
   
-  @scala.inline
-  implicit class MerchantOrderReturnItemMutableBuilder[Self <: MerchantOrderReturnItem] (val x: Self) extends AnyVal {
+  extension [Self <: MerchantOrderReturnItem](x: Self) {
     
-    @scala.inline
-    def setCustomerReturnReason(value: CustomerReturnReason): Self = StObject.set(x, "customerReturnReason", value.asInstanceOf[js.Any])
+    inline def setCustomerReturnReason(value: CustomerReturnReason): Self = StObject.set(x, "customerReturnReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerReturnReasonUndefined: Self = StObject.set(x, "customerReturnReason", js.undefined)
+    inline def setCustomerReturnReasonUndefined: Self = StObject.set(x, "customerReturnReason", js.undefined)
     
-    @scala.inline
-    def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+    inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
     
-    @scala.inline
-    def setMerchantRejectionReason(value: MerchantRejectionReason): Self = StObject.set(x, "merchantRejectionReason", value.asInstanceOf[js.Any])
+    inline def setMerchantRejectionReason(value: MerchantRejectionReason): Self = StObject.set(x, "merchantRejectionReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantRejectionReasonUndefined: Self = StObject.set(x, "merchantRejectionReason", js.undefined)
+    inline def setMerchantRejectionReasonUndefined: Self = StObject.set(x, "merchantRejectionReason", js.undefined)
     
-    @scala.inline
-    def setMerchantReturnReason(value: RefundReason): Self = StObject.set(x, "merchantReturnReason", value.asInstanceOf[js.Any])
+    inline def setMerchantReturnReason(value: RefundReason): Self = StObject.set(x, "merchantReturnReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantReturnReasonUndefined: Self = StObject.set(x, "merchantReturnReason", js.undefined)
+    inline def setMerchantReturnReasonUndefined: Self = StObject.set(x, "merchantReturnReason", js.undefined)
     
-    @scala.inline
-    def setProduct(value: OrderLineItemProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: OrderLineItemProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+    inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
-    @scala.inline
-    def setRefundableAmount(value: MonetaryAmount): Self = StObject.set(x, "refundableAmount", value.asInstanceOf[js.Any])
+    inline def setRefundableAmount(value: MonetaryAmount): Self = StObject.set(x, "refundableAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefundableAmountUndefined: Self = StObject.set(x, "refundableAmount", js.undefined)
+    inline def setRefundableAmountUndefined: Self = StObject.set(x, "refundableAmount", js.undefined)
     
-    @scala.inline
-    def setReturnItemId(value: String): Self = StObject.set(x, "returnItemId", value.asInstanceOf[js.Any])
+    inline def setReturnItemId(value: String): Self = StObject.set(x, "returnItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnItemIdUndefined: Self = StObject.set(x, "returnItemId", js.undefined)
+    inline def setReturnItemIdUndefined: Self = StObject.set(x, "returnItemId", js.undefined)
     
-    @scala.inline
-    def setReturnShipmentIds(value: js.Array[String]): Self = StObject.set(x, "returnShipmentIds", value.asInstanceOf[js.Any])
+    inline def setReturnShipmentIds(value: js.Array[String]): Self = StObject.set(x, "returnShipmentIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnShipmentIdsUndefined: Self = StObject.set(x, "returnShipmentIds", js.undefined)
+    inline def setReturnShipmentIdsUndefined: Self = StObject.set(x, "returnShipmentIds", js.undefined)
     
-    @scala.inline
-    def setReturnShipmentIdsVarargs(value: String*): Self = StObject.set(x, "returnShipmentIds", js.Array(value :_*))
+    inline def setReturnShipmentIdsVarargs(value: String*): Self = StObject.set(x, "returnShipmentIds", js.Array(value :_*))
     
-    @scala.inline
-    def setShipmentGroupId(value: String): Self = StObject.set(x, "shipmentGroupId", value.asInstanceOf[js.Any])
+    inline def setShipmentGroupId(value: String): Self = StObject.set(x, "shipmentGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShipmentGroupIdUndefined: Self = StObject.set(x, "shipmentGroupId", js.undefined)
+    inline def setShipmentGroupIdUndefined: Self = StObject.set(x, "shipmentGroupId", js.undefined)
     
-    @scala.inline
-    def setShipmentUnitId(value: String): Self = StObject.set(x, "shipmentUnitId", value.asInstanceOf[js.Any])
+    inline def setShipmentUnitId(value: String): Self = StObject.set(x, "shipmentUnitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShipmentUnitIdUndefined: Self = StObject.set(x, "shipmentUnitId", js.undefined)
+    inline def setShipmentUnitIdUndefined: Self = StObject.set(x, "shipmentUnitId", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

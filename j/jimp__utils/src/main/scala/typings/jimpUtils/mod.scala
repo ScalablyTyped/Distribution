@@ -15,13 +15,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isNodePattern(cb: js.Function): `true` = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodePattern")(cb.asInstanceOf[js.Any]).asInstanceOf[`true`]
-  @scala.inline
-  def isNodePattern(cb: Omit[js.Any, js.Function]): `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodePattern")(cb.asInstanceOf[js.Any]).asInstanceOf[`false`]
+  inline def isNodePattern(cb: js.Function): `true` = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodePattern")(cb.asInstanceOf[js.Any]).asInstanceOf[`true`]
+  inline def isNodePattern(cb: Omit[js.Any, js.Function]): `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodePattern")(cb.asInstanceOf[js.Any]).asInstanceOf[`false`]
   
-  @scala.inline
-  def scan(
+  inline def scan(
     image: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Image */ js.Any,
     x: Double,
     y: Double,
@@ -36,12 +33,8 @@ object mod {
     ]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(image.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def throwError(error: String): ThrowStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("throwError")(error.asInstanceOf[js.Any]).asInstanceOf[ThrowStatement]
-  @scala.inline
-  def throwError(error: String, cb: js.Function1[/* err */ Error, Unit]): ThrowStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("throwError")(error.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ThrowStatement]
-  @scala.inline
-  def throwError(error: Error): ThrowStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("throwError")(error.asInstanceOf[js.Any]).asInstanceOf[ThrowStatement]
-  @scala.inline
-  def throwError(error: Error, cb: js.Function1[/* err */ Error, Unit]): ThrowStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("throwError")(error.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ThrowStatement]
+  inline def throwError(error: String): ThrowStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("throwError")(error.asInstanceOf[js.Any]).asInstanceOf[ThrowStatement]
+  inline def throwError(error: String, cb: js.Function1[/* err */ Error, Unit]): ThrowStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("throwError")(error.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ThrowStatement]
+  inline def throwError(error: Error): ThrowStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("throwError")(error.asInstanceOf[js.Any]).asInstanceOf[ThrowStatement]
+  inline def throwError(error: Error, cb: js.Function1[/* err */ Error, Unit]): ThrowStatement = (^.asInstanceOf[js.Dynamic].applyDynamic("throwError")(error.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ThrowStatement]
 }

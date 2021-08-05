@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGAnimatedString")
 @js.native
-class SVGAnimatedString protected ()
+/* private */ class SVGAnimatedString ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGAnimatedString {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGAnimatedString_typekey")
   var MSHTMLDotSVGAnimatedString_typekey: typings.activexMshtml.MSHTML.SVGAnimatedString = js.native
   

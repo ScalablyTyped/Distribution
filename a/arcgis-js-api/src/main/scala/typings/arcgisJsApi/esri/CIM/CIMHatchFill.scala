@@ -39,47 +39,34 @@ trait CIMHatchFill
 }
 object CIMHatchFill {
   
-  @scala.inline
-  def apply(): CIMHatchFill = {
+  inline def apply(): CIMHatchFill = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMHatchFill")
     __obj.asInstanceOf[CIMHatchFill]
   }
   
-  @scala.inline
-  implicit class CIMHatchFillMutableBuilder[Self <: CIMHatchFill] (val x: Self) extends AnyVal {
+  extension [Self <: CIMHatchFill](x: Self) {
     
-    @scala.inline
-    def setLineSymbol(value: CIMLineSymbol): Self = StObject.set(x, "lineSymbol", value.asInstanceOf[js.Any])
+    inline def setLineSymbol(value: CIMLineSymbol): Self = StObject.set(x, "lineSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineSymbolUndefined: Self = StObject.set(x, "lineSymbol", js.undefined)
+    inline def setLineSymbolUndefined: Self = StObject.set(x, "lineSymbol", js.undefined)
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+    inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+    inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
-    @scala.inline
-    def setSeparation(value: Double): Self = StObject.set(x, "separation", value.asInstanceOf[js.Any])
+    inline def setSeparation(value: Double): Self = StObject.set(x, "separation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparationUndefined: Self = StObject.set(x, "separation", js.undefined)
+    inline def setSeparationUndefined: Self = StObject.set(x, "separation", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMHatchFill): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMHatchFill): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

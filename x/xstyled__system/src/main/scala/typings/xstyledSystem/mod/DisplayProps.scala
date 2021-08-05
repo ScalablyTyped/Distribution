@@ -14,27 +14,22 @@ trait DisplayProps extends StObject {
 }
 object DisplayProps {
   
-  @scala.inline
-  def apply(): DisplayProps = {
+  inline def apply(): DisplayProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisplayProps]
   }
   
-  @scala.inline
-  implicit class DisplayPropsMutableBuilder[Self <: DisplayProps] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayProps](x: Self) {
     
-    @scala.inline
-    def setDisplay(
+    inline def setDisplay(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any
         ]
     ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setDisplayVarargs(
+    inline def setDisplayVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any)*
     ): Self = StObject.set(x, "display", js.Array(value :_*))
   }

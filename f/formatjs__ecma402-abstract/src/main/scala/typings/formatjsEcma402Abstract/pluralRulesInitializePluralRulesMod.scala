@@ -13,43 +13,37 @@ object pluralRulesInitializePluralRulesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def InitializePluralRules(
+  inline def InitializePluralRules(
     pl: PluralRules,
     locales: String,
     options: Unit,
     hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots: LocaleData
   ): PluralRules = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializePluralRules")(pl.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[PluralRules]
-  @scala.inline
-  def InitializePluralRules(
+  inline def InitializePluralRules(
     pl: PluralRules,
     locales: String,
     options: PluralRulesOptions,
     hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots: LocaleData
   ): PluralRules = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializePluralRules")(pl.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[PluralRules]
-  @scala.inline
-  def InitializePluralRules(
+  inline def InitializePluralRules(
     pl: PluralRules,
     locales: js.Array[String],
     options: Unit,
     hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots: LocaleData
   ): PluralRules = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializePluralRules")(pl.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[PluralRules]
-  @scala.inline
-  def InitializePluralRules(
+  inline def InitializePluralRules(
     pl: PluralRules,
     locales: js.Array[String],
     options: PluralRulesOptions,
     hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots: LocaleData
   ): PluralRules = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializePluralRules")(pl.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[PluralRules]
-  @scala.inline
-  def InitializePluralRules(
+  inline def InitializePluralRules(
     pl: PluralRules,
     locales: Unit,
     options: Unit,
     hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots: LocaleData
   ): PluralRules = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializePluralRules")(pl.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocaleGetInternalSlots.asInstanceOf[js.Any])).asInstanceOf[PluralRules]
-  @scala.inline
-  def InitializePluralRules(
+  inline def InitializePluralRules(
     pl: PluralRules,
     locales: Unit,
     options: PluralRulesOptions,

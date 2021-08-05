@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OMathDelim")
 @js.native
-class OMathDelim protected ()
+/* private */ class OMathDelim ()
   extends StObject
      with typings.activexWord.Word.OMathDelim {
   
@@ -44,7 +44,7 @@ class OMathDelim protected ()
   /* CompleteClass */
   var Shape: WdOMathShapeType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.OMathDelim_typekey")
   var WordDotOMathDelim_typekey: typings.activexWord.Word.OMathDelim = js.native
 }

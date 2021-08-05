@@ -10,16 +10,13 @@ trait EnumValuesNotFound extends StObject {
 }
 object EnumValuesNotFound {
   
-  @scala.inline
-  def apply(enumValues: NotFound): EnumValuesNotFound = {
+  inline def apply(enumValues: NotFound): EnumValuesNotFound = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesNotFound]
   }
   
-  @scala.inline
-  implicit class EnumValuesNotFoundMutableBuilder[Self <: EnumValuesNotFound] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesNotFound](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: NotFound): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: NotFound): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

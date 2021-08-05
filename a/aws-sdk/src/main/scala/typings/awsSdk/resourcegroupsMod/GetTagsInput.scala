@@ -13,16 +13,13 @@ trait GetTagsInput extends StObject {
 }
 object GetTagsInput {
   
-  @scala.inline
-  def apply(Arn: GroupArn): GetTagsInput = {
+  inline def apply(Arn: GroupArn): GetTagsInput = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTagsInput]
   }
   
-  @scala.inline
-  implicit class GetTagsInputMutableBuilder[Self <: GetTagsInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetTagsInput](x: Self) {
     
-    @scala.inline
-    def setArn(value: GroupArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: GroupArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
   }
 }

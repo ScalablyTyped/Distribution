@@ -31,52 +31,37 @@ trait IGradientOptions extends StObject {
 }
 object IGradientOptions {
   
-  @scala.inline
-  def apply(): IGradientOptions = {
+  inline def apply(): IGradientOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGradientOptions]
   }
   
-  @scala.inline
-  implicit class IGradientOptionsMutableBuilder[Self <: IGradientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IGradientOptions](x: Self) {
     
-    @scala.inline
-    def setColorStops(value: IGradientOptionsColorStops): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
+    inline def setColorStops(value: IGradientOptionsColorStops): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorStopsUndefined: Self = StObject.set(x, "colorStops", js.undefined)
+    inline def setColorStopsUndefined: Self = StObject.set(x, "colorStops", js.undefined)
     
-    @scala.inline
-    def setColorStopsVarargs(value: typings.fabric.anon.Color*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
+    inline def setColorStopsVarargs(value: typings.fabric.anon.Color*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
     
-    @scala.inline
-    def setCoords(value: IGradientOptionsCoords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+    inline def setCoords(value: IGradientOptionsCoords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
+    inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
-    @scala.inline
-    def setGradientTransform(value: js.Any): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
+    inline def setGradientTransform(value: js.Any): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientTransformUndefined: Self = StObject.set(x, "gradientTransform", js.undefined)
+    inline def setGradientTransformUndefined: Self = StObject.set(x, "gradientTransform", js.undefined)
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+    inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+    inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

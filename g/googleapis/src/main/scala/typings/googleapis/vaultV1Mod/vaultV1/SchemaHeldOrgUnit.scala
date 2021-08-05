@@ -22,25 +22,19 @@ trait SchemaHeldOrgUnit extends StObject {
 }
 object SchemaHeldOrgUnit {
   
-  @scala.inline
-  def apply(): SchemaHeldOrgUnit = {
+  inline def apply(): SchemaHeldOrgUnit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHeldOrgUnit]
   }
   
-  @scala.inline
-  implicit class SchemaHeldOrgUnitMutableBuilder[Self <: SchemaHeldOrgUnit] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHeldOrgUnit](x: Self) {
     
-    @scala.inline
-    def setHoldTime(value: String): Self = StObject.set(x, "holdTime", value.asInstanceOf[js.Any])
+    inline def setHoldTime(value: String): Self = StObject.set(x, "holdTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoldTimeUndefined: Self = StObject.set(x, "holdTime", js.undefined)
+    inline def setHoldTimeUndefined: Self = StObject.set(x, "holdTime", js.undefined)
     
-    @scala.inline
-    def setOrgUnitId(value: String): Self = StObject.set(x, "orgUnitId", value.asInstanceOf[js.Any])
+    inline def setOrgUnitId(value: String): Self = StObject.set(x, "orgUnitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrgUnitIdUndefined: Self = StObject.set(x, "orgUnitId", js.undefined)
+    inline def setOrgUnitIdUndefined: Self = StObject.set(x, "orgUnitId", js.undefined)
   }
 }

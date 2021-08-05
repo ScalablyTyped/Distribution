@@ -48,106 +48,73 @@ trait IBarChartOptions
 }
 object IBarChartOptions {
   
-  @scala.inline
-  def apply(): IBarChartOptions = {
+  inline def apply(): IBarChartOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBarChartOptions]
   }
   
-  @scala.inline
-  implicit class IBarChartOptionsMutableBuilder[Self <: IBarChartOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IBarChartOptions](x: Self) {
     
-    @scala.inline
-    def setAxisX(value: IBarChartAxis): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
+    inline def setAxisX(value: IBarChartAxis): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisXUndefined: Self = StObject.set(x, "axisX", js.undefined)
+    inline def setAxisXUndefined: Self = StObject.set(x, "axisX", js.undefined)
     
-    @scala.inline
-    def setAxisY(value: IBarChartAxis): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
+    inline def setAxisY(value: IBarChartAxis): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisYUndefined: Self = StObject.set(x, "axisY", js.undefined)
+    inline def setAxisYUndefined: Self = StObject.set(x, "axisY", js.undefined)
     
-    @scala.inline
-    def setChartPadding(value: IChartPadding): Self = StObject.set(x, "chartPadding", value.asInstanceOf[js.Any])
+    inline def setChartPadding(value: IChartPadding): Self = StObject.set(x, "chartPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartPaddingUndefined: Self = StObject.set(x, "chartPadding", js.undefined)
+    inline def setChartPaddingUndefined: Self = StObject.set(x, "chartPadding", js.undefined)
     
-    @scala.inline
-    def setClassNames(value: IBarChartClasses): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+    inline def setClassNames(value: IBarChartClasses): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
+    inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
     
-    @scala.inline
-    def setDistributeSeries(value: Boolean): Self = StObject.set(x, "distributeSeries", value.asInstanceOf[js.Any])
+    inline def setDistributeSeries(value: Boolean): Self = StObject.set(x, "distributeSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributeSeriesUndefined: Self = StObject.set(x, "distributeSeries", js.undefined)
+    inline def setDistributeSeriesUndefined: Self = StObject.set(x, "distributeSeries", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
+    inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighUndefined: Self = StObject.set(x, "high", js.undefined)
+    inline def setHighUndefined: Self = StObject.set(x, "high", js.undefined)
     
-    @scala.inline
-    def setHorizontalBars(value: Boolean): Self = StObject.set(x, "horizontalBars", value.asInstanceOf[js.Any])
+    inline def setHorizontalBars(value: Boolean): Self = StObject.set(x, "horizontalBars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalBarsUndefined: Self = StObject.set(x, "horizontalBars", js.undefined)
+    inline def setHorizontalBarsUndefined: Self = StObject.set(x, "horizontalBars", js.undefined)
     
-    @scala.inline
-    def setLow(value: Double): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
+    inline def setLow(value: Double): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowUndefined: Self = StObject.set(x, "low", js.undefined)
+    inline def setLowUndefined: Self = StObject.set(x, "low", js.undefined)
     
-    @scala.inline
-    def setOnlyInteger(value: Boolean): Self = StObject.set(x, "onlyInteger", value.asInstanceOf[js.Any])
+    inline def setOnlyInteger(value: Boolean): Self = StObject.set(x, "onlyInteger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyIntegerUndefined: Self = StObject.set(x, "onlyInteger", js.undefined)
+    inline def setOnlyIntegerUndefined: Self = StObject.set(x, "onlyInteger", js.undefined)
     
-    @scala.inline
-    def setSeriesBarDistance(value: Double): Self = StObject.set(x, "seriesBarDistance", value.asInstanceOf[js.Any])
+    inline def setSeriesBarDistance(value: Double): Self = StObject.set(x, "seriesBarDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesBarDistanceUndefined: Self = StObject.set(x, "seriesBarDistance", js.undefined)
+    inline def setSeriesBarDistanceUndefined: Self = StObject.set(x, "seriesBarDistance", js.undefined)
     
-    @scala.inline
-    def setStackBars(value: Boolean): Self = StObject.set(x, "stackBars", value.asInstanceOf[js.Any])
+    inline def setStackBars(value: Boolean): Self = StObject.set(x, "stackBars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackBarsUndefined: Self = StObject.set(x, "stackBars", js.undefined)
+    inline def setStackBarsUndefined: Self = StObject.set(x, "stackBars", js.undefined)
     
-    @scala.inline
-    def setStackMode(value: overlap | accumulate): Self = StObject.set(x, "stackMode", value.asInstanceOf[js.Any])
+    inline def setStackMode(value: overlap | accumulate): Self = StObject.set(x, "stackMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackModeUndefined: Self = StObject.set(x, "stackMode", js.undefined)
+    inline def setStackModeUndefined: Self = StObject.set(x, "stackMode", js.undefined)
     
-    @scala.inline
-    def setTicks(value: js.Array[String | Double]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: js.Array[String | Double]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
+    inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
-    @scala.inline
-    def setTicksVarargs(value: (String | Double)*): Self = StObject.set(x, "ticks", js.Array(value :_*))
+    inline def setTicksVarargs(value: (String | Double)*): Self = StObject.set(x, "ticks", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

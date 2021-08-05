@@ -14,8 +14,7 @@ object createTransitionManagerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[S](): TransitionManager[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[TransitionManager[S]]
+  inline def default[S](): TransitionManager[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[TransitionManager[S]]
   
   type Prompt[S] = PromptFunction[S] | Boolean
   

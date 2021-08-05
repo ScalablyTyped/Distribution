@@ -26,8 +26,7 @@ trait IconSymbol3DLayerAnchorPosition
 }
 object IconSymbol3DLayerAnchorPosition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object IconSymbol3DLayerAnchorPosition {
     __obj.asInstanceOf[IconSymbol3DLayerAnchorPosition]
   }
   
-  @scala.inline
-  implicit class IconSymbol3DLayerAnchorPositionMutableBuilder[Self <: IconSymbol3DLayerAnchorPosition] (val x: Self) extends AnyVal {
+  extension [Self <: IconSymbol3DLayerAnchorPosition](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

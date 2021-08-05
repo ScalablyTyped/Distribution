@@ -56,21 +56,16 @@ object webAclLoggingConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): WebAclLoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WebAclLoggingConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WebAclLoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAclLoggingConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WebAclLoggingConfigurationState): WebAclLoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WebAclLoggingConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WebAclLoggingConfigurationState, opts: CustomResourceOptions): WebAclLoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAclLoggingConfiguration]
+    inline def get(name: String, id: Input[ID]): WebAclLoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WebAclLoggingConfiguration]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WebAclLoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAclLoggingConfiguration]
+    inline def get(name: String, id: Input[ID], state: WebAclLoggingConfigurationState): WebAclLoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WebAclLoggingConfiguration]
+    inline def get(name: String, id: Input[ID], state: WebAclLoggingConfigurationState, opts: CustomResourceOptions): WebAclLoggingConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAclLoggingConfiguration]
     
     /**
       * Returns true if the given object is an instance of WebAclLoggingConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/webAclLoggingConfiguration.WebAclLoggingConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafv2/webAclLoggingConfiguration.WebAclLoggingConfiguration */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/webAclLoggingConfiguration.WebAclLoggingConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafv2/webAclLoggingConfiguration.WebAclLoggingConfiguration */ Boolean]
   }
   
   trait WebAclLoggingConfigurationArgs extends StObject {
@@ -96,36 +91,28 @@ object webAclLoggingConfigurationMod {
   }
   object WebAclLoggingConfigurationArgs {
     
-    @scala.inline
-    def apply(logDestinationConfigs: Input[js.Array[Input[String]]], resourceArn: Input[String]): WebAclLoggingConfigurationArgs = {
+    inline def apply(logDestinationConfigs: Input[js.Array[Input[String]]], resourceArn: Input[String]): WebAclLoggingConfigurationArgs = {
       val __obj = js.Dynamic.literal(logDestinationConfigs = logDestinationConfigs.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebAclLoggingConfigurationArgs]
     }
     
-    @scala.inline
-    implicit class WebAclLoggingConfigurationArgsMutableBuilder[Self <: WebAclLoggingConfigurationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: WebAclLoggingConfigurationArgs](x: Self) {
       
-      @scala.inline
-      def setLogDestinationConfigs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "logDestinationConfigs", value.asInstanceOf[js.Any])
+      inline def setLogDestinationConfigs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "logDestinationConfigs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogDestinationConfigsVarargs(value: Input[String]*): Self = StObject.set(x, "logDestinationConfigs", js.Array(value :_*))
+      inline def setLogDestinationConfigsVarargs(value: Input[String]*): Self = StObject.set(x, "logDestinationConfigs", js.Array(value :_*))
       
-      @scala.inline
-      def setRedactedFields(
+      inline def setRedactedFields(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.wafv2.WebAclLoggingConfigurationRedactedField]]
             ]
       ): Self = StObject.set(x, "redactedFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedactedFieldsUndefined: Self = StObject.set(x, "redactedFields", js.undefined)
+      inline def setRedactedFieldsUndefined: Self = StObject.set(x, "redactedFields", js.undefined)
       
-      @scala.inline
-      def setRedactedFieldsVarargs(value: Input[typings.pulumiAws.inputMod.wafv2.WebAclLoggingConfigurationRedactedField]*): Self = StObject.set(x, "redactedFields", js.Array(value :_*))
+      inline def setRedactedFieldsVarargs(value: Input[typings.pulumiAws.inputMod.wafv2.WebAclLoggingConfigurationRedactedField]*): Self = StObject.set(x, "redactedFields", js.Array(value :_*))
       
-      @scala.inline
-      def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+      inline def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,42 +139,32 @@ object webAclLoggingConfigurationMod {
   }
   object WebAclLoggingConfigurationState {
     
-    @scala.inline
-    def apply(): WebAclLoggingConfigurationState = {
+    inline def apply(): WebAclLoggingConfigurationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebAclLoggingConfigurationState]
     }
     
-    @scala.inline
-    implicit class WebAclLoggingConfigurationStateMutableBuilder[Self <: WebAclLoggingConfigurationState] (val x: Self) extends AnyVal {
+    extension [Self <: WebAclLoggingConfigurationState](x: Self) {
       
-      @scala.inline
-      def setLogDestinationConfigs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "logDestinationConfigs", value.asInstanceOf[js.Any])
+      inline def setLogDestinationConfigs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "logDestinationConfigs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogDestinationConfigsUndefined: Self = StObject.set(x, "logDestinationConfigs", js.undefined)
+      inline def setLogDestinationConfigsUndefined: Self = StObject.set(x, "logDestinationConfigs", js.undefined)
       
-      @scala.inline
-      def setLogDestinationConfigsVarargs(value: Input[String]*): Self = StObject.set(x, "logDestinationConfigs", js.Array(value :_*))
+      inline def setLogDestinationConfigsVarargs(value: Input[String]*): Self = StObject.set(x, "logDestinationConfigs", js.Array(value :_*))
       
-      @scala.inline
-      def setRedactedFields(
+      inline def setRedactedFields(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.wafv2.WebAclLoggingConfigurationRedactedField]]
             ]
       ): Self = StObject.set(x, "redactedFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedactedFieldsUndefined: Self = StObject.set(x, "redactedFields", js.undefined)
+      inline def setRedactedFieldsUndefined: Self = StObject.set(x, "redactedFields", js.undefined)
       
-      @scala.inline
-      def setRedactedFieldsVarargs(value: Input[typings.pulumiAws.inputMod.wafv2.WebAclLoggingConfigurationRedactedField]*): Self = StObject.set(x, "redactedFields", js.Array(value :_*))
+      inline def setRedactedFieldsVarargs(value: Input[typings.pulumiAws.inputMod.wafv2.WebAclLoggingConfigurationRedactedField]*): Self = StObject.set(x, "redactedFields", js.Array(value :_*))
       
-      @scala.inline
-      def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+      inline def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
+      inline def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
     }
   }
 }

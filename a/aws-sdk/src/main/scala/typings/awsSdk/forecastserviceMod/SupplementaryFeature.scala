@@ -18,19 +18,15 @@ trait SupplementaryFeature extends StObject {
 }
 object SupplementaryFeature {
   
-  @scala.inline
-  def apply(Name: Name, Value: Value): SupplementaryFeature = {
+  inline def apply(Name: Name, Value: Value): SupplementaryFeature = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupplementaryFeature]
   }
   
-  @scala.inline
-  implicit class SupplementaryFeatureMutableBuilder[Self <: SupplementaryFeature] (val x: Self) extends AnyVal {
+  extension [Self <: SupplementaryFeature](x: Self) {
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Value): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Value): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

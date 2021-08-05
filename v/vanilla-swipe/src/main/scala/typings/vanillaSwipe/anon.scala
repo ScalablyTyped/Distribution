@@ -14,20 +14,16 @@ object anon {
   }
   object ClientX {
     
-    @scala.inline
-    def apply(clientX: Double, clientY: Double): ClientX = {
+    inline def apply(clientX: Double, clientY: Double): ClientX = {
       val __obj = js.Dynamic.literal(clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientX]
     }
     
-    @scala.inline
-    implicit class ClientXMutableBuilder[Self <: ClientX] (val x: Self) extends AnyVal {
+    extension [Self <: ClientX](x: Self) {
       
-      @scala.inline
-      def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,8 +45,7 @@ object anon {
   }
   object Delta {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delta: Double,
       element: Null,
       mouseTrackingEnabled: Boolean,
@@ -63,29 +58,21 @@ object anon {
       __obj.asInstanceOf[Delta]
     }
     
-    @scala.inline
-    implicit class DeltaMutableBuilder[Self <: Delta] (val x: Self) extends AnyVal {
+    extension [Self <: Delta](x: Self) {
       
-      @scala.inline
-      def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElement(value: Null): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Null): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseTrackingEnabled(value: Boolean): Self = StObject.set(x, "mouseTrackingEnabled", value.asInstanceOf[js.Any])
+      inline def setMouseTrackingEnabled(value: Boolean): Self = StObject.set(x, "mouseTrackingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefaultTouchmoveEvent(value: Boolean): Self = StObject.set(x, "preventDefaultTouchmoveEvent", value.asInstanceOf[js.Any])
+      inline def setPreventDefaultTouchmoveEvent(value: Boolean): Self = StObject.set(x, "preventDefaultTouchmoveEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventTrackingOnMouseleave(value: Boolean): Self = StObject.set(x, "preventTrackingOnMouseleave", value.asInstanceOf[js.Any])
+      inline def setPreventTrackingOnMouseleave(value: Boolean): Self = StObject.set(x, "preventTrackingOnMouseleave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
+      inline def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchTrackingEnabled(value: Boolean): Self = StObject.set(x, "touchTrackingEnabled", value.asInstanceOf[js.Any])
+      inline def setTouchTrackingEnabled(value: Boolean): Self = StObject.set(x, "touchTrackingEnabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,8 +92,7 @@ object anon {
   }
   object IsSwiping {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isSwiping: Boolean,
       start: Double,
       traceX: js.Array[scala.Nothing],
@@ -118,32 +104,23 @@ object anon {
       __obj.asInstanceOf[IsSwiping]
     }
     
-    @scala.inline
-    implicit class IsSwipingMutableBuilder[Self <: IsSwiping] (val x: Self) extends AnyVal {
+    extension [Self <: IsSwiping](x: Self) {
       
-      @scala.inline
-      def setIsSwiping(value: Boolean): Self = StObject.set(x, "isSwiping", value.asInstanceOf[js.Any])
+      inline def setIsSwiping(value: Boolean): Self = StObject.set(x, "isSwiping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceX(value: js.Array[scala.Nothing]): Self = StObject.set(x, "traceX", value.asInstanceOf[js.Any])
+      inline def setTraceX(value: js.Array[scala.Nothing]): Self = StObject.set(x, "traceX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceXVarargs(value: scala.Nothing*): Self = StObject.set(x, "traceX", js.Array(value :_*))
+      inline def setTraceXVarargs(value: scala.Nothing*): Self = StObject.set(x, "traceX", js.Array(value :_*))
       
-      @scala.inline
-      def setTraceY(value: js.Array[scala.Nothing]): Self = StObject.set(x, "traceY", value.asInstanceOf[js.Any])
+      inline def setTraceY(value: js.Array[scala.Nothing]): Self = StObject.set(x, "traceY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceYVarargs(value: scala.Nothing*): Self = StObject.set(x, "traceY", js.Array(value :_*))
+      inline def setTraceYVarargs(value: scala.Nothing*): Self = StObject.set(x, "traceY", js.Array(value :_*))
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,17 +130,14 @@ object anon {
   }
   object Passive {
     
-    @scala.inline
-    def apply(passive: Boolean): Passive = {
+    inline def apply(passive: Boolean): Passive = {
       val __obj = js.Dynamic.literal(passive = passive.asInstanceOf[js.Any])
       __obj.asInstanceOf[Passive]
     }
     
-    @scala.inline
-    implicit class PassiveMutableBuilder[Self <: Passive] (val x: Self) extends AnyVal {
+    extension [Self <: Passive](x: Self) {
       
-      @scala.inline
-      def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+      inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
     }
   }
   
@@ -173,17 +147,14 @@ object anon {
   }
   object PassiveUndefined {
     
-    @scala.inline
-    def apply(passive: Unit): PassiveUndefined = {
+    inline def apply(passive: Unit): PassiveUndefined = {
       val __obj = js.Dynamic.literal(passive = passive.asInstanceOf[js.Any])
       __obj.asInstanceOf[PassiveUndefined]
     }
     
-    @scala.inline
-    implicit class PassiveUndefinedMutableBuilder[Self <: PassiveUndefined] (val x: Self) extends AnyVal {
+    extension [Self <: PassiveUndefined](x: Self) {
       
-      @scala.inline
-      def setPassive(value: Unit): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+      inline def setPassive(value: Unit): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,20 +166,16 @@ object anon {
   }
   object X {
     
-    @scala.inline
-    def apply(x: js.Any, y: js.Any): X = {
+    inline def apply(x: js.Any, y: js.Any): X = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[X]
     }
     
-    @scala.inline
-    implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+    extension [Self <: X](x: Self) {
       
-      @scala.inline
-      def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: js.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: js.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -220,20 +187,16 @@ object anon {
   }
   object Y {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Y = {
+    inline def apply(x: Double, y: Double): Y = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Y]
     }
     
-    @scala.inline
-    implicit class YMutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
+    extension [Self <: Y](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

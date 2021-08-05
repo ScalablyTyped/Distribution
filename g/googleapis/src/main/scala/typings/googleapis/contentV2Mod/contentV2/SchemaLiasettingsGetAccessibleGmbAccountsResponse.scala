@@ -24,34 +24,25 @@ trait SchemaLiasettingsGetAccessibleGmbAccountsResponse extends StObject {
 }
 object SchemaLiasettingsGetAccessibleGmbAccountsResponse {
   
-  @scala.inline
-  def apply(): SchemaLiasettingsGetAccessibleGmbAccountsResponse = {
+  inline def apply(): SchemaLiasettingsGetAccessibleGmbAccountsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiasettingsGetAccessibleGmbAccountsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaLiasettingsGetAccessibleGmbAccountsResponseMutableBuilder[Self <: SchemaLiasettingsGetAccessibleGmbAccountsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiasettingsGetAccessibleGmbAccountsResponse](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setGmbAccounts(value: js.Array[SchemaGmbAccountsGmbAccount]): Self = StObject.set(x, "gmbAccounts", value.asInstanceOf[js.Any])
+    inline def setGmbAccounts(value: js.Array[SchemaGmbAccountsGmbAccount]): Self = StObject.set(x, "gmbAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmbAccountsUndefined: Self = StObject.set(x, "gmbAccounts", js.undefined)
+    inline def setGmbAccountsUndefined: Self = StObject.set(x, "gmbAccounts", js.undefined)
     
-    @scala.inline
-    def setGmbAccountsVarargs(value: SchemaGmbAccountsGmbAccount*): Self = StObject.set(x, "gmbAccounts", js.Array(value :_*))
+    inline def setGmbAccountsVarargs(value: SchemaGmbAccountsGmbAccount*): Self = StObject.set(x, "gmbAccounts", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

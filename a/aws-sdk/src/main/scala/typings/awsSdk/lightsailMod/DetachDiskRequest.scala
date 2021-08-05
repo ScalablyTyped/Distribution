@@ -13,16 +13,13 @@ trait DetachDiskRequest extends StObject {
 }
 object DetachDiskRequest {
   
-  @scala.inline
-  def apply(diskName: ResourceName): DetachDiskRequest = {
+  inline def apply(diskName: ResourceName): DetachDiskRequest = {
     val __obj = js.Dynamic.literal(diskName = diskName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachDiskRequest]
   }
   
-  @scala.inline
-  implicit class DetachDiskRequestMutableBuilder[Self <: DetachDiskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetachDiskRequest](x: Self) {
     
-    @scala.inline
-    def setDiskName(value: ResourceName): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
+    inline def setDiskName(value: ResourceName): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
   }
 }

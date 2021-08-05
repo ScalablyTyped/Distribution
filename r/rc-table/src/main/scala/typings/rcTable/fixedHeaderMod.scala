@@ -45,8 +45,7 @@ object fixedHeaderMod extends Shortcut {
   }
   object FixedHeaderProps {
     
-    @scala.inline
-    def apply[RecordType](
+    inline def apply[RecordType](
       colWidths: js.Array[Double],
       columCount: Double,
       columns: ColumnsType[RecordType],
@@ -63,38 +62,27 @@ object fixedHeaderMod extends Shortcut {
       __obj.asInstanceOf[FixedHeaderProps[RecordType]]
     }
     
-    @scala.inline
-    implicit class FixedHeaderPropsMutableBuilder[Self <: FixedHeaderProps[?], RecordType] (val x: Self & FixedHeaderProps[RecordType]) extends AnyVal {
+    extension [Self <: FixedHeaderProps[?], RecordType](x: Self & FixedHeaderProps[RecordType]) {
       
-      @scala.inline
-      def setColWidths(value: js.Array[Double]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
+      inline def setColWidths(value: js.Array[Double]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColWidthsVarargs(value: Double*): Self = StObject.set(x, "colWidths", js.Array(value :_*))
+      inline def setColWidthsVarargs(value: Double*): Self = StObject.set(x, "colWidths", js.Array(value :_*))
       
-      @scala.inline
-      def setColumCount(value: Double): Self = StObject.set(x, "columCount", value.asInstanceOf[js.Any])
+      inline def setColumCount(value: Double): Self = StObject.set(x, "columCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixHeader(value: Boolean): Self = StObject.set(x, "fixHeader", value.asInstanceOf[js.Any])
+      inline def setFixHeader(value: Boolean): Self = StObject.set(x, "fixHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoData(value: Boolean): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
+      inline def setNoData(value: Boolean): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetHeader(value: Double): Self = StObject.set(x, "offsetHeader", value.asInstanceOf[js.Any])
+      inline def setOffsetHeader(value: Double): Self = StObject.set(x, "offsetHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnScroll(value: CurrentTarget => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: CurrentTarget => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStickyClassName(value: String): Self = StObject.set(x, "stickyClassName", value.asInstanceOf[js.Any])
+      inline def setStickyClassName(value: String): Self = StObject.set(x, "stickyClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyClassNameUndefined: Self = StObject.set(x, "stickyClassName", js.undefined)
+      inline def setStickyClassNameUndefined: Self = StObject.set(x, "stickyClassName", js.undefined)
     }
   }
   

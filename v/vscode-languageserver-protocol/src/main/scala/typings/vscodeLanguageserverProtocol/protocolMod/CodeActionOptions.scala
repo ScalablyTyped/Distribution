@@ -19,22 +19,17 @@ trait CodeActionOptions
 }
 object CodeActionOptions {
   
-  @scala.inline
-  def apply(): CodeActionOptions = {
+  inline def apply(): CodeActionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeActionOptions]
   }
   
-  @scala.inline
-  implicit class CodeActionOptionsMutableBuilder[Self <: CodeActionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CodeActionOptions](x: Self) {
     
-    @scala.inline
-    def setCodeActionKinds(value: js.Array[CodeActionKind]): Self = StObject.set(x, "codeActionKinds", value.asInstanceOf[js.Any])
+    inline def setCodeActionKinds(value: js.Array[CodeActionKind]): Self = StObject.set(x, "codeActionKinds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeActionKindsUndefined: Self = StObject.set(x, "codeActionKinds", js.undefined)
+    inline def setCodeActionKindsUndefined: Self = StObject.set(x, "codeActionKinds", js.undefined)
     
-    @scala.inline
-    def setCodeActionKindsVarargs(value: CodeActionKind*): Self = StObject.set(x, "codeActionKinds", js.Array(value :_*))
+    inline def setCodeActionKindsVarargs(value: CodeActionKind*): Self = StObject.set(x, "codeActionKinds", js.Array(value :_*))
   }
 }

@@ -10,16 +10,13 @@ trait UseSid extends StObject {
 }
 object UseSid {
   
-  @scala.inline
-  def apply(useSid: Boolean): UseSid = {
+  inline def apply(useSid: Boolean): UseSid = {
     val __obj = js.Dynamic.literal(useSid = useSid.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseSid]
   }
   
-  @scala.inline
-  implicit class UseSidMutableBuilder[Self <: UseSid] (val x: Self) extends AnyVal {
+  extension [Self <: UseSid](x: Self) {
     
-    @scala.inline
-    def setUseSid(value: Boolean): Self = StObject.set(x, "useSid", value.asInstanceOf[js.Any])
+    inline def setUseSid(value: Boolean): Self = StObject.set(x, "useSid", value.asInstanceOf[js.Any])
   }
 }

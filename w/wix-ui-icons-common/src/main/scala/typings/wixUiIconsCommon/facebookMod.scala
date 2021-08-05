@@ -22,20 +22,16 @@ object facebookMod extends Shortcut {
   }
   object FacebookProps {
     
-    @scala.inline
-    def apply(): FacebookProps = {
+    inline def apply(): FacebookProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FacebookProps]
     }
     
-    @scala.inline
-    implicit class FacebookPropsMutableBuilder[Self <: FacebookProps] (val x: Self) extends AnyVal {
+    extension [Self <: FacebookProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

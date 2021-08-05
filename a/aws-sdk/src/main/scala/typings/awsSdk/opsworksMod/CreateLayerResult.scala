@@ -13,19 +13,15 @@ trait CreateLayerResult extends StObject {
 }
 object CreateLayerResult {
   
-  @scala.inline
-  def apply(): CreateLayerResult = {
+  inline def apply(): CreateLayerResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateLayerResult]
   }
   
-  @scala.inline
-  implicit class CreateLayerResultMutableBuilder[Self <: CreateLayerResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLayerResult](x: Self) {
     
-    @scala.inline
-    def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdUndefined: Self = StObject.set(x, "LayerId", js.undefined)
+    inline def setLayerIdUndefined: Self = StObject.set(x, "LayerId", js.undefined)
   }
 }

@@ -78,8 +78,7 @@ trait BootstrapClientChartBase
 }
 object BootstrapClientChartBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     ArgumentAxisClick: ASPxClientEvent[
       BootstrapClientCoordinateSystemChartArgumentAxisClickEventHandler[BootstrapClientChartBase]
@@ -136,64 +135,52 @@ object BootstrapClientChartBase {
     __obj.asInstanceOf[BootstrapClientChartBase]
   }
   
-  @scala.inline
-  implicit class BootstrapClientChartBaseMutableBuilder[Self <: BootstrapClientChartBase] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientChartBase](x: Self) {
     
-    @scala.inline
-    def setArgumentAxisClick(
+    inline def setArgumentAxisClick(
       value: ASPxClientEvent[
           BootstrapClientCoordinateSystemChartArgumentAxisClickEventHandler[BootstrapClientChartBase]
         ]
     ): Self = StObject.set(x, "ArgumentAxisClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDone(value: ASPxClientEvent[BootstrapClientChartBaseDoneEventHandler[BootstrapClientChartBase]]): Self = StObject.set(x, "Done", value.asInstanceOf[js.Any])
+    inline def setDone(value: ASPxClientEvent[BootstrapClientChartBaseDoneEventHandler[BootstrapClientChartBase]]): Self = StObject.set(x, "Done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendClick(value: ASPxClientEvent[BootstrapClientChartBaseLegendClickEventHandler[BootstrapClientChartBase]]): Self = StObject.set(x, "LegendClick", value.asInstanceOf[js.Any])
+    inline def setLegendClick(value: ASPxClientEvent[BootstrapClientChartBaseLegendClickEventHandler[BootstrapClientChartBase]]): Self = StObject.set(x, "LegendClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointClick(value: ASPxClientEvent[BootstrapClientChartBasePointClickEventHandler[BootstrapClientChartBase]]): Self = StObject.set(x, "PointClick", value.asInstanceOf[js.Any])
+    inline def setPointClick(value: ASPxClientEvent[BootstrapClientChartBasePointClickEventHandler[BootstrapClientChartBase]]): Self = StObject.set(x, "PointClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointHoverChanged(
+    inline def setPointHoverChanged(
       value: ASPxClientEvent[BootstrapClientChartBasePointHoverChangedEventHandler[BootstrapClientChartBase]]
     ): Self = StObject.set(x, "PointHoverChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointSelectionChanged(
+    inline def setPointSelectionChanged(
       value: ASPxClientEvent[
           BootstrapClientChartBasePointSelectionChangedEventHandler[BootstrapClientChartBase]
         ]
     ): Self = StObject.set(x, "PointSelectionChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesClick(
+    inline def setSeriesClick(
       value: ASPxClientEvent[
           BootstrapClientCoordinateSystemChartSeriesClickEventHandler[BootstrapClientChartBase]
         ]
     ): Self = StObject.set(x, "SeriesClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesHoverChanged(
+    inline def setSeriesHoverChanged(
       value: ASPxClientEvent[
           BootstrapClientCoordinateSystemChartSeriesHoverChangedEventHandler[BootstrapClientChartBase]
         ]
     ): Self = StObject.set(x, "SeriesHoverChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesSelectionChanged(
+    inline def setSeriesSelectionChanged(
       value: ASPxClientEvent[
           BootstrapClientCoordinateSystemChartSeriesSelectionChangedEventHandler[BootstrapClientChartBase]
         ]
     ): Self = StObject.set(x, "SeriesSelectionChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipHidden(
+    inline def setTooltipHidden(
       value: ASPxClientEvent[BootstrapClientChartBaseTooltipHiddenEventHandler[BootstrapClientChartBase]]
     ): Self = StObject.set(x, "TooltipHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipShown(value: ASPxClientEvent[BootstrapClientChartBaseTooltipShownEventHandler[BootstrapClientChartBase]]): Self = StObject.set(x, "TooltipShown", value.asInstanceOf[js.Any])
+    inline def setTooltipShown(value: ASPxClientEvent[BootstrapClientChartBaseTooltipShownEventHandler[BootstrapClientChartBase]]): Self = StObject.set(x, "TooltipShown", value.asInstanceOf[js.Any])
   }
 }

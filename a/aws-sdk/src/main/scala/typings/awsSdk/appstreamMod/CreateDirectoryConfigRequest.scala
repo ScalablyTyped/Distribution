@@ -23,8 +23,7 @@ trait CreateDirectoryConfigRequest extends StObject {
 }
 object CreateDirectoryConfigRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DirectoryName: DirectoryName,
     OrganizationalUnitDistinguishedNames: OrganizationalUnitDistinguishedNamesList
   ): CreateDirectoryConfigRequest = {
@@ -32,22 +31,16 @@ object CreateDirectoryConfigRequest {
     __obj.asInstanceOf[CreateDirectoryConfigRequest]
   }
   
-  @scala.inline
-  implicit class CreateDirectoryConfigRequestMutableBuilder[Self <: CreateDirectoryConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDirectoryConfigRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryName(value: DirectoryName): Self = StObject.set(x, "DirectoryName", value.asInstanceOf[js.Any])
+    inline def setDirectoryName(value: DirectoryName): Self = StObject.set(x, "DirectoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationalUnitDistinguishedNames(value: OrganizationalUnitDistinguishedNamesList): Self = StObject.set(x, "OrganizationalUnitDistinguishedNames", value.asInstanceOf[js.Any])
+    inline def setOrganizationalUnitDistinguishedNames(value: OrganizationalUnitDistinguishedNamesList): Self = StObject.set(x, "OrganizationalUnitDistinguishedNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationalUnitDistinguishedNamesVarargs(value: OrganizationalUnitDistinguishedName*): Self = StObject.set(x, "OrganizationalUnitDistinguishedNames", js.Array(value :_*))
+    inline def setOrganizationalUnitDistinguishedNamesVarargs(value: OrganizationalUnitDistinguishedName*): Self = StObject.set(x, "OrganizationalUnitDistinguishedNames", js.Array(value :_*))
     
-    @scala.inline
-    def setServiceAccountCredentials(value: ServiceAccountCredentials): Self = StObject.set(x, "ServiceAccountCredentials", value.asInstanceOf[js.Any])
+    inline def setServiceAccountCredentials(value: ServiceAccountCredentials): Self = StObject.set(x, "ServiceAccountCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountCredentialsUndefined: Self = StObject.set(x, "ServiceAccountCredentials", js.undefined)
+    inline def setServiceAccountCredentialsUndefined: Self = StObject.set(x, "ServiceAccountCredentials", js.undefined)
   }
 }

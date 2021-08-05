@@ -28,43 +28,31 @@ trait GroupConfiguration extends StObject {
 }
 object GroupConfiguration {
   
-  @scala.inline
-  def apply(): GroupConfiguration = {
+  inline def apply(): GroupConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupConfiguration]
   }
   
-  @scala.inline
-  implicit class GroupConfigurationMutableBuilder[Self <: GroupConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: GroupConfiguration](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: GroupConfigurationList): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: GroupConfigurationList): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
     
-    @scala.inline
-    def setConfigurationVarargs(value: GroupConfigurationItem*): Self = StObject.set(x, "Configuration", js.Array(value :_*))
+    inline def setConfigurationVarargs(value: GroupConfigurationItem*): Self = StObject.set(x, "Configuration", js.Array(value :_*))
     
-    @scala.inline
-    def setFailureReason(value: GroupConfigurationFailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: GroupConfigurationFailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    @scala.inline
-    def setProposedConfiguration(value: GroupConfigurationList): Self = StObject.set(x, "ProposedConfiguration", value.asInstanceOf[js.Any])
+    inline def setProposedConfiguration(value: GroupConfigurationList): Self = StObject.set(x, "ProposedConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposedConfigurationUndefined: Self = StObject.set(x, "ProposedConfiguration", js.undefined)
+    inline def setProposedConfigurationUndefined: Self = StObject.set(x, "ProposedConfiguration", js.undefined)
     
-    @scala.inline
-    def setProposedConfigurationVarargs(value: GroupConfigurationItem*): Self = StObject.set(x, "ProposedConfiguration", js.Array(value :_*))
+    inline def setProposedConfigurationVarargs(value: GroupConfigurationItem*): Self = StObject.set(x, "ProposedConfiguration", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: GroupConfigurationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GroupConfigurationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

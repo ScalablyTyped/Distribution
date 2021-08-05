@@ -13,14 +13,14 @@ class SlidingWindow protected ()
   def this(source: ISlidingWindowSource, window: js.Array[js.Any], defaultValue: js.Any) = this()
   def this(source: ISlidingWindowSource, window: js.Array[js.Any], defaultValue: js.Any, sourceLength: Double) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _pinCount: js.Any = js.native
   
   /* CompleteClass */
   override def absoluteIndex(): Double = js.native
   
-  /* CompleteClass */
-  /* private */ override def addMoreItemsToWindow(argument: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def addMoreItemsToWindow(argument: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def currentItem(argument: js.Any): js.Any = js.native
@@ -28,13 +28,13 @@ class SlidingWindow protected ()
   /* CompleteClass */
   var currentRelativeItemIndex: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var defaultValue: js.Any = js.native
   
   /* CompleteClass */
   override def disgardAllItemsFromCurrentIndexOnwards(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var firstPinnedAbsoluteIndex: js.Any = js.native
   
   /* CompleteClass */
@@ -61,20 +61,20 @@ class SlidingWindow protected ()
   /* CompleteClass */
   override def setAbsoluteIndex(absoluteIndex: Double): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var source: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var sourceLength: js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def tryShiftOrGrowWindow(): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def tryShiftOrGrowWindow(): js.Any = js.native
   
   /* CompleteClass */
   var window: js.Array[js.Any] = js.native
   
-  /* CompleteClass */
-  /* private */ override def windowAbsoluteEndIndex(): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def windowAbsoluteEndIndex(): js.Any = js.native
   
   /* CompleteClass */
   var windowAbsoluteStartIndex: Double = js.native

@@ -24,8 +24,7 @@ trait ForceUpdate extends StObject {
 }
 object ForceUpdate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arrowProps: (Record[String, js.Any]) & Ref,
     forceUpdate: () => Unit,
     placement: typings.reactOverlays.esmUsePopperMod.Placement,
@@ -37,31 +36,22 @@ object ForceUpdate {
     __obj.asInstanceOf[ForceUpdate]
   }
   
-  @scala.inline
-  implicit class ForceUpdateMutableBuilder[Self <: ForceUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ForceUpdate](x: Self) {
     
-    @scala.inline
-    def setArrowProps(value: (Record[String, js.Any]) & Ref): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
+    inline def setArrowProps(value: (Record[String, js.Any]) & Ref): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
+    inline def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlacement(value: typings.reactOverlays.esmUsePopperMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: typings.reactOverlays.esmUsePopperMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProps(value: (Record[String, js.Any]) & Style): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: (Record[String, js.Any]) & Style): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

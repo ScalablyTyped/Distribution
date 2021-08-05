@@ -18,19 +18,15 @@ trait CloneReceiptRuleSetRequest extends StObject {
 }
 object CloneReceiptRuleSetRequest {
   
-  @scala.inline
-  def apply(OriginalRuleSetName: ReceiptRuleSetName, RuleSetName: ReceiptRuleSetName): CloneReceiptRuleSetRequest = {
+  inline def apply(OriginalRuleSetName: ReceiptRuleSetName, RuleSetName: ReceiptRuleSetName): CloneReceiptRuleSetRequest = {
     val __obj = js.Dynamic.literal(OriginalRuleSetName = OriginalRuleSetName.asInstanceOf[js.Any], RuleSetName = RuleSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloneReceiptRuleSetRequest]
   }
   
-  @scala.inline
-  implicit class CloneReceiptRuleSetRequestMutableBuilder[Self <: CloneReceiptRuleSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CloneReceiptRuleSetRequest](x: Self) {
     
-    @scala.inline
-    def setOriginalRuleSetName(value: ReceiptRuleSetName): Self = StObject.set(x, "OriginalRuleSetName", value.asInstanceOf[js.Any])
+    inline def setOriginalRuleSetName(value: ReceiptRuleSetName): Self = StObject.set(x, "OriginalRuleSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleSetName(value: ReceiptRuleSetName): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
+    inline def setRuleSetName(value: ReceiptRuleSetName): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
   }
 }

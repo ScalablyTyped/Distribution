@@ -16,25 +16,19 @@ trait TimelineChangeEvent
 }
 object TimelineChangeEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Timeline): TimelineChangeEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Timeline): TimelineChangeEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineChangeEvent]
   }
   
-  @scala.inline
-  implicit class TimelineChangeEventMutableBuilder[Self <: TimelineChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineChangeEvent](x: Self) {
     
-    @scala.inline
-    def setDataItem(value: Model): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
+    inline def setDataItem(value: Model): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
+    inline def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
     
-    @scala.inline
-    def setEventContainer(value: JQuery): Self = StObject.set(x, "eventContainer", value.asInstanceOf[js.Any])
+    inline def setEventContainer(value: JQuery): Self = StObject.set(x, "eventContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventContainerUndefined: Self = StObject.set(x, "eventContainer", js.undefined)
+    inline def setEventContainerUndefined: Self = StObject.set(x, "eventContainer", js.undefined)
   }
 }

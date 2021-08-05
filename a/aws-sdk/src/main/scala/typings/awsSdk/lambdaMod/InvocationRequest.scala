@@ -38,46 +38,33 @@ trait InvocationRequest extends StObject {
 }
 object InvocationRequest {
   
-  @scala.inline
-  def apply(FunctionName: NamespacedFunctionName): InvocationRequest = {
+  inline def apply(FunctionName: NamespacedFunctionName): InvocationRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvocationRequest]
   }
   
-  @scala.inline
-  implicit class InvocationRequestMutableBuilder[Self <: InvocationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InvocationRequest](x: Self) {
     
-    @scala.inline
-    def setClientContext(value: String): Self = StObject.set(x, "ClientContext", value.asInstanceOf[js.Any])
+    inline def setClientContext(value: String): Self = StObject.set(x, "ClientContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientContextUndefined: Self = StObject.set(x, "ClientContext", js.undefined)
+    inline def setClientContextUndefined: Self = StObject.set(x, "ClientContext", js.undefined)
     
-    @scala.inline
-    def setFunctionName(value: NamespacedFunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: NamespacedFunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvocationType(value: InvocationType): Self = StObject.set(x, "InvocationType", value.asInstanceOf[js.Any])
+    inline def setInvocationType(value: InvocationType): Self = StObject.set(x, "InvocationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvocationTypeUndefined: Self = StObject.set(x, "InvocationType", js.undefined)
+    inline def setInvocationTypeUndefined: Self = StObject.set(x, "InvocationType", js.undefined)
     
-    @scala.inline
-    def setLogType(value: LogType): Self = StObject.set(x, "LogType", value.asInstanceOf[js.Any])
+    inline def setLogType(value: LogType): Self = StObject.set(x, "LogType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogTypeUndefined: Self = StObject.set(x, "LogType", js.undefined)
+    inline def setLogTypeUndefined: Self = StObject.set(x, "LogType", js.undefined)
     
-    @scala.inline
-    def setPayload(value: _Blob): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: _Blob): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     
-    @scala.inline
-    def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
+    inline def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
+    inline def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
   }
 }

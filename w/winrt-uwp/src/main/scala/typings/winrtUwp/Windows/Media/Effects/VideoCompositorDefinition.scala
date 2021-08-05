@@ -16,19 +16,15 @@ trait VideoCompositorDefinition extends StObject {
 }
 object VideoCompositorDefinition {
   
-  @scala.inline
-  def apply(activatableClassId: String, properties: IPropertySet): VideoCompositorDefinition = {
+  inline def apply(activatableClassId: String, properties: IPropertySet): VideoCompositorDefinition = {
     val __obj = js.Dynamic.literal(activatableClassId = activatableClassId.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoCompositorDefinition]
   }
   
-  @scala.inline
-  implicit class VideoCompositorDefinitionMutableBuilder[Self <: VideoCompositorDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: VideoCompositorDefinition](x: Self) {
     
-    @scala.inline
-    def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
+    inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

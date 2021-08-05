@@ -16,37 +16,27 @@ trait TileLayoutContainer extends StObject {
 }
 object TileLayoutContainer {
   
-  @scala.inline
-  def apply(): TileLayoutContainer = {
+  inline def apply(): TileLayoutContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileLayoutContainer]
   }
   
-  @scala.inline
-  implicit class TileLayoutContainerMutableBuilder[Self <: TileLayoutContainer] (val x: Self) extends AnyVal {
+  extension [Self <: TileLayoutContainer](x: Self) {
     
-    @scala.inline
-    def setBodyTemplate(value: String | js.Function): Self = StObject.set(x, "bodyTemplate", value.asInstanceOf[js.Any])
+    inline def setBodyTemplate(value: String | js.Function): Self = StObject.set(x, "bodyTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyTemplateUndefined: Self = StObject.set(x, "bodyTemplate", js.undefined)
+    inline def setBodyTemplateUndefined: Self = StObject.set(x, "bodyTemplate", js.undefined)
     
-    @scala.inline
-    def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+    inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
+    inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
     
-    @scala.inline
-    def setHeader(value: TileLayoutContainerHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: TileLayoutContainerHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+    inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+    inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
   }
 }

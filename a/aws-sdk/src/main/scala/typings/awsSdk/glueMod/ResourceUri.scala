@@ -18,25 +18,19 @@ trait ResourceUri extends StObject {
 }
 object ResourceUri {
   
-  @scala.inline
-  def apply(): ResourceUri = {
+  inline def apply(): ResourceUri = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceUri]
   }
   
-  @scala.inline
-  implicit class ResourceUriMutableBuilder[Self <: ResourceUri] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceUri](x: Self) {
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setUri(value: URI): Self = StObject.set(x, "Uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: URI): Self = StObject.set(x, "Uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "Uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "Uri", js.undefined)
   }
 }

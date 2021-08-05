@@ -61,11 +61,9 @@ object mod {
     @js.native
     def apply(react: TypeofReact): FluxChildMixin = js.native
     
-    @scala.inline
-    implicit class FluxChildMixinMutableBuilder[Self <: FluxChildMixin] (val x: Self) extends AnyVal {
+    extension [Self <: FluxChildMixin](x: Self) {
       
-      @scala.inline
-      def setGetFlux(value: () => Flux): Self = StObject.set(x, "getFlux", js.Any.fromFunction0(value))
+      inline def setGetFlux(value: () => Flux): Self = StObject.set(x, "getFlux", js.Any.fromFunction0(value))
     }
   }
   
@@ -79,11 +77,9 @@ object mod {
     @js.native
     def apply(react: TypeofReact): FluxMixin = js.native
     
-    @scala.inline
-    implicit class FluxMixinMutableBuilder[Self <: FluxMixin] (val x: Self) extends AnyVal {
+    extension [Self <: FluxMixin](x: Self) {
       
-      @scala.inline
-      def setGetFlux(value: () => Flux): Self = StObject.set(x, "getFlux", js.Any.fromFunction0(value))
+      inline def setGetFlux(value: () => Flux): Self = StObject.set(x, "getFlux", js.Any.fromFunction0(value))
     }
   }
   
@@ -97,22 +93,18 @@ object mod {
     @js.native
     def apply[StoreState](storeNames: String*): StoreWatchMixin[StoreState] = js.native
     
-    @scala.inline
-    implicit class StoreWatchMixinMutableBuilder[Self <: StoreWatchMixin[?], StoreState] (val x: Self & StoreWatchMixin[StoreState]) extends AnyVal {
+    extension [Self <: StoreWatchMixin[?], StoreState](x: Self & StoreWatchMixin[StoreState]) {
       
-      @scala.inline
-      def setGetStateFromFlux(value: () => StoreState): Self = StObject.set(x, "getStateFromFlux", js.Any.fromFunction0(value))
+      inline def setGetStateFromFlux(value: () => StoreState): Self = StObject.set(x, "getStateFromFlux", js.Any.fromFunction0(value))
     }
   }
   
-  @scala.inline
-  def createStore(spec: StoreSpec): StoreClass = ^.asInstanceOf[js.Dynamic].applyDynamic("createStore")(spec.asInstanceOf[js.Any]).asInstanceOf[StoreClass]
+  inline def createStore(spec: StoreSpec): StoreClass = ^.asInstanceOf[js.Dynamic].applyDynamic("createStore")(spec.asInstanceOf[js.Any]).asInstanceOf[StoreClass]
   
   @JSImport("fluxxor", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   trait Context extends StObject {
     
@@ -120,17 +112,14 @@ object mod {
   }
   object Context {
     
-    @scala.inline
-    def apply(flux: Flux): Context = {
+    inline def apply(flux: Flux): Context = {
       val __obj = js.Dynamic.literal(flux = flux.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setFlux(value: Flux): Self = StObject.set(x, "flux", value.asInstanceOf[js.Any])
+      inline def setFlux(value: Flux): Self = StObject.set(x, "flux", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,26 +150,20 @@ object mod {
   }
   object StoreSpec {
     
-    @scala.inline
-    def apply(): StoreSpec = {
+    inline def apply(): StoreSpec = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StoreSpec]
     }
     
-    @scala.inline
-    implicit class StoreSpecMutableBuilder[Self <: StoreSpec] (val x: Self) extends AnyVal {
+    extension [Self <: StoreSpec](x: Self) {
       
-      @scala.inline
-      def setActions(value: js.Any): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Any): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setInitialize(value: (/* instance */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
+      inline def setInitialize(value: (/* instance */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
+      inline def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
     }
   }
 }

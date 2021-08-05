@@ -23,21 +23,17 @@ object Http {
     @JSGlobal("Dropbox.Http.AppInfo.ICON_LARGE")
     @js.native
     def ICON_LARGE: Double = js.native
-    @scala.inline
-    def ICON_LARGE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_LARGE")(x.asInstanceOf[js.Any])
+    inline def ICON_LARGE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_LARGE")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("Dropbox.Http.AppInfo.ICON_SMALL")
     @js.native
     def ICON_SMALL: Double = js.native
-    @scala.inline
-    def ICON_SMALL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_SMALL")(x.asInstanceOf[js.Any])
+    inline def ICON_SMALL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_SMALL")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def parse(appInfo: js.Object): typings.dropboxjs.Dropbox.Http.AppInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(appInfo.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.Http.AppInfo]
-    @scala.inline
-    def parse(appInfo: js.Object, appKey: String): typings.dropboxjs.Dropbox.Http.AppInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(appInfo.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any])).asInstanceOf[typings.dropboxjs.Dropbox.Http.AppInfo]
+    inline def parse(appInfo: js.Object): typings.dropboxjs.Dropbox.Http.AppInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(appInfo.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.Http.AppInfo]
+    inline def parse(appInfo: js.Object, appKey: String): typings.dropboxjs.Dropbox.Http.AppInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(appInfo.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any])).asInstanceOf[typings.dropboxjs.Dropbox.Http.AppInfo]
   }
   
   @JSGlobal("Dropbox.Http.PollResult")
@@ -59,8 +55,7 @@ object Http {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def parse(response: js.Object): typings.dropboxjs.Dropbox.Http.PollResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(response.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.Http.PollResult]
+    inline def parse(response: js.Object): typings.dropboxjs.Dropbox.Http.PollResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(response.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.Http.PollResult]
   }
   
   @JSGlobal("Dropbox.Http.PulledChange")
@@ -85,8 +80,7 @@ object Http {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def parse(entry: js.Object): typings.dropboxjs.Dropbox.Http.PulledChange = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(entry.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.Http.PulledChange]
+    inline def parse(entry: js.Object): typings.dropboxjs.Dropbox.Http.PulledChange = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(entry.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.Http.PulledChange]
   }
   
   @JSGlobal("Dropbox.Http.PulledChanges")
@@ -117,8 +111,7 @@ object Http {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def parse(deltaInfo: js.Object): typings.dropboxjs.Dropbox.Http.PulledChanges = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(deltaInfo.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.Http.PulledChanges]
+    inline def parse(deltaInfo: js.Object): typings.dropboxjs.Dropbox.Http.PulledChanges = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(deltaInfo.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.Http.PulledChanges]
   }
   
   @JSGlobal("Dropbox.Http.RangeInfo")
@@ -143,8 +136,7 @@ object Http {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def parse(headerValue: String): typings.dropboxjs.Dropbox.Http.RangeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(headerValue.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.Http.RangeInfo]
+    inline def parse(headerValue: String): typings.dropboxjs.Dropbox.Http.RangeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(headerValue.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.Http.RangeInfo]
   }
   
   @JSGlobal("Dropbox.Http.UploadCursor")
@@ -174,10 +166,8 @@ object Http {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def parse(cursorData: String): typings.dropboxjs.Dropbox.Http.UploadCursor = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cursorData.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.Http.UploadCursor]
+    inline def parse(cursorData: String): typings.dropboxjs.Dropbox.Http.UploadCursor = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cursorData.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.Http.UploadCursor]
     /* static member */
-    @scala.inline
-    def parse(cursorData: js.Object): typings.dropboxjs.Dropbox.Http.UploadCursor = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cursorData.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.Http.UploadCursor]
+    inline def parse(cursorData: js.Object): typings.dropboxjs.Dropbox.Http.UploadCursor = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cursorData.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.Http.UploadCursor]
   }
 }

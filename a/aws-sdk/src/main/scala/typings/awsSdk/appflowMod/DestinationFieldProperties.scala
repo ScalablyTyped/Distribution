@@ -33,46 +33,33 @@ trait DestinationFieldProperties extends StObject {
 }
 object DestinationFieldProperties {
   
-  @scala.inline
-  def apply(): DestinationFieldProperties = {
+  inline def apply(): DestinationFieldProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DestinationFieldProperties]
   }
   
-  @scala.inline
-  implicit class DestinationFieldPropertiesMutableBuilder[Self <: DestinationFieldProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DestinationFieldProperties](x: Self) {
     
-    @scala.inline
-    def setIsCreatable(value: Boolean): Self = StObject.set(x, "isCreatable", value.asInstanceOf[js.Any])
+    inline def setIsCreatable(value: Boolean): Self = StObject.set(x, "isCreatable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCreatableUndefined: Self = StObject.set(x, "isCreatable", js.undefined)
+    inline def setIsCreatableUndefined: Self = StObject.set(x, "isCreatable", js.undefined)
     
-    @scala.inline
-    def setIsNullable(value: Boolean): Self = StObject.set(x, "isNullable", value.asInstanceOf[js.Any])
+    inline def setIsNullable(value: Boolean): Self = StObject.set(x, "isNullable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNullableUndefined: Self = StObject.set(x, "isNullable", js.undefined)
+    inline def setIsNullableUndefined: Self = StObject.set(x, "isNullable", js.undefined)
     
-    @scala.inline
-    def setIsUpdatable(value: Boolean): Self = StObject.set(x, "isUpdatable", value.asInstanceOf[js.Any])
+    inline def setIsUpdatable(value: Boolean): Self = StObject.set(x, "isUpdatable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUpdatableUndefined: Self = StObject.set(x, "isUpdatable", js.undefined)
+    inline def setIsUpdatableUndefined: Self = StObject.set(x, "isUpdatable", js.undefined)
     
-    @scala.inline
-    def setIsUpsertable(value: Boolean): Self = StObject.set(x, "isUpsertable", value.asInstanceOf[js.Any])
+    inline def setIsUpsertable(value: Boolean): Self = StObject.set(x, "isUpsertable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUpsertableUndefined: Self = StObject.set(x, "isUpsertable", js.undefined)
+    inline def setIsUpsertableUndefined: Self = StObject.set(x, "isUpsertable", js.undefined)
     
-    @scala.inline
-    def setSupportedWriteOperations(value: SupportedWriteOperationList): Self = StObject.set(x, "supportedWriteOperations", value.asInstanceOf[js.Any])
+    inline def setSupportedWriteOperations(value: SupportedWriteOperationList): Self = StObject.set(x, "supportedWriteOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedWriteOperationsUndefined: Self = StObject.set(x, "supportedWriteOperations", js.undefined)
+    inline def setSupportedWriteOperationsUndefined: Self = StObject.set(x, "supportedWriteOperations", js.undefined)
     
-    @scala.inline
-    def setSupportedWriteOperationsVarargs(value: WriteOperationType*): Self = StObject.set(x, "supportedWriteOperations", js.Array(value :_*))
+    inline def setSupportedWriteOperationsVarargs(value: WriteOperationType*): Self = StObject.set(x, "supportedWriteOperations", js.Array(value :_*))
   }
 }

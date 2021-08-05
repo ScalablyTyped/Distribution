@@ -17,8 +17,7 @@ trait Typeoflocale extends StObject {
 }
 object Typeoflocale {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapLocale: (AxiosInstance, LocaleProps) => Locale,
     wrapLocaleCollection: (AxiosInstance, CollectionProp[LocaleProps]) => Collection[Locale, LocaleProps]
   ): Typeoflocale = {
@@ -26,13 +25,10 @@ object Typeoflocale {
     __obj.asInstanceOf[Typeoflocale]
   }
   
-  @scala.inline
-  implicit class TypeoflocaleMutableBuilder[Self <: Typeoflocale] (val x: Self) extends AnyVal {
+  extension [Self <: Typeoflocale](x: Self) {
     
-    @scala.inline
-    def setWrapLocale(value: (AxiosInstance, LocaleProps) => Locale): Self = StObject.set(x, "wrapLocale", js.Any.fromFunction2(value))
+    inline def setWrapLocale(value: (AxiosInstance, LocaleProps) => Locale): Self = StObject.set(x, "wrapLocale", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapLocaleCollection(value: (AxiosInstance, CollectionProp[LocaleProps]) => Collection[Locale, LocaleProps]): Self = StObject.set(x, "wrapLocaleCollection", js.Any.fromFunction2(value))
+    inline def setWrapLocaleCollection(value: (AxiosInstance, CollectionProp[LocaleProps]) => Collection[Locale, LocaleProps]): Self = StObject.set(x, "wrapLocaleCollection", js.Any.fromFunction2(value))
   }
 }

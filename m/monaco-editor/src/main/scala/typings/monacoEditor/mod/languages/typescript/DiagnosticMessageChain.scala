@@ -25,31 +25,23 @@ trait DiagnosticMessageChain extends StObject {
 }
 object DiagnosticMessageChain {
   
-  @scala.inline
-  def apply(category: `0` | `1` | `2` | `3`, code: Double, messageText: String): DiagnosticMessageChain = {
+  inline def apply(category: `0` | `1` | `2` | `3`, code: Double, messageText: String): DiagnosticMessageChain = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], messageText = messageText.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticMessageChain]
   }
   
-  @scala.inline
-  implicit class DiagnosticMessageChainMutableBuilder[Self <: DiagnosticMessageChain] (val x: Self) extends AnyVal {
+  extension [Self <: DiagnosticMessageChain](x: Self) {
     
-    @scala.inline
-    def setCategory(value: `0` | `1` | `2` | `3`): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: `0` | `1` | `2` | `3`): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
+    inline def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: js.Array[DiagnosticMessageChain]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: js.Array[DiagnosticMessageChain]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    @scala.inline
-    def setNextVarargs(value: DiagnosticMessageChain*): Self = StObject.set(x, "next", js.Array(value :_*))
+    inline def setNextVarargs(value: DiagnosticMessageChain*): Self = StObject.set(x, "next", js.Array(value :_*))
   }
 }

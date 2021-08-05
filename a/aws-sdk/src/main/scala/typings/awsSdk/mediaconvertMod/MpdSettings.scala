@@ -23,31 +23,23 @@ trait MpdSettings extends StObject {
 }
 object MpdSettings {
   
-  @scala.inline
-  def apply(): MpdSettings = {
+  inline def apply(): MpdSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MpdSettings]
   }
   
-  @scala.inline
-  implicit class MpdSettingsMutableBuilder[Self <: MpdSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MpdSettings](x: Self) {
     
-    @scala.inline
-    def setCaptionContainerType(value: MpdCaptionContainerType): Self = StObject.set(x, "CaptionContainerType", value.asInstanceOf[js.Any])
+    inline def setCaptionContainerType(value: MpdCaptionContainerType): Self = StObject.set(x, "CaptionContainerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionContainerTypeUndefined: Self = StObject.set(x, "CaptionContainerType", js.undefined)
+    inline def setCaptionContainerTypeUndefined: Self = StObject.set(x, "CaptionContainerType", js.undefined)
     
-    @scala.inline
-    def setScte35Esam(value: MpdScte35Esam): Self = StObject.set(x, "Scte35Esam", value.asInstanceOf[js.Any])
+    inline def setScte35Esam(value: MpdScte35Esam): Self = StObject.set(x, "Scte35Esam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScte35EsamUndefined: Self = StObject.set(x, "Scte35Esam", js.undefined)
+    inline def setScte35EsamUndefined: Self = StObject.set(x, "Scte35Esam", js.undefined)
     
-    @scala.inline
-    def setScte35Source(value: MpdScte35Source): Self = StObject.set(x, "Scte35Source", value.asInstanceOf[js.Any])
+    inline def setScte35Source(value: MpdScte35Source): Self = StObject.set(x, "Scte35Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScte35SourceUndefined: Self = StObject.set(x, "Scte35Source", js.undefined)
+    inline def setScte35SourceUndefined: Self = StObject.set(x, "Scte35Source", js.undefined)
   }
 }

@@ -29,8 +29,6 @@ object EllipsoidTangentPlane {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromPoints(cartesians: js.Array[Cartesian3]): EllipsoidTangentPlane = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(cartesians.asInstanceOf[js.Any]).asInstanceOf[EllipsoidTangentPlane]
-  @scala.inline
-  def fromPoints(cartesians: js.Array[Cartesian3], ellipsoid: Ellipsoid): EllipsoidTangentPlane = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(cartesians.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[EllipsoidTangentPlane]
+  inline def fromPoints(cartesians: js.Array[Cartesian3]): EllipsoidTangentPlane = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(cartesians.asInstanceOf[js.Any]).asInstanceOf[EllipsoidTangentPlane]
+  inline def fromPoints(cartesians: js.Array[Cartesian3], ellipsoid: Ellipsoid): EllipsoidTangentPlane = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(cartesians.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[EllipsoidTangentPlane]
 }

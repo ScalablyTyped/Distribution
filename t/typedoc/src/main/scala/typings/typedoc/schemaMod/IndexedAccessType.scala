@@ -19,8 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object IndexedAccessType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     indexType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type,
     objectType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type,
     `type`: (ModelToObject[/* "indexedAccess" */ String]) | (/* "indexedAccess" */ String)
@@ -30,25 +29,18 @@ object IndexedAccessType {
     __obj.asInstanceOf[IndexedAccessType]
   }
   
-  @scala.inline
-  implicit class IndexedAccessTypeMutableBuilder[Self <: IndexedAccessType] (val x: Self) extends AnyVal {
+  extension [Self <: IndexedAccessType](x: Self) {
     
-    @scala.inline
-    def setIndexType(value: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type): Self = StObject.set(x, "indexType", value.asInstanceOf[js.Any])
+    inline def setIndexType(value: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type): Self = StObject.set(x, "indexType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "indexType", js.Array(value :_*))
+    inline def setIndexTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "indexType", js.Array(value :_*))
     
-    @scala.inline
-    def setObjectType(value: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "objectType", js.Array(value :_*))
+    inline def setObjectTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "objectType", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: (ModelToObject[/* "indexedAccess" */ String]) | (/* "indexedAccess" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: (ModelToObject[/* "indexedAccess" */ String]) | (/* "indexedAccess" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

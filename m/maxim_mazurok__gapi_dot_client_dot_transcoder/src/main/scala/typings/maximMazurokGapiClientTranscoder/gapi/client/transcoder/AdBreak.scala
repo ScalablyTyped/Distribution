@@ -11,19 +11,15 @@ trait AdBreak extends StObject {
 }
 object AdBreak {
   
-  @scala.inline
-  def apply(): AdBreak = {
+  inline def apply(): AdBreak = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdBreak]
   }
   
-  @scala.inline
-  implicit class AdBreakMutableBuilder[Self <: AdBreak] (val x: Self) extends AnyVal {
+  extension [Self <: AdBreak](x: Self) {
     
-    @scala.inline
-    def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
+    inline def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeOffsetUndefined: Self = StObject.set(x, "startTimeOffset", js.undefined)
+    inline def setStartTimeOffsetUndefined: Self = StObject.set(x, "startTimeOffset", js.undefined)
   }
 }

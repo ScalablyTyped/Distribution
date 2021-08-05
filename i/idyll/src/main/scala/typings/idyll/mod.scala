@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: Options): IdyllInstance = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[IdyllInstance]
-  @scala.inline
-  def apply(options: Options, callback: js.Function0[Unit]): IdyllInstance = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IdyllInstance]
+  inline def apply(options: Options): IdyllInstance = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[IdyllInstance]
+  inline def apply(options: Options, callback: js.Function0[Unit]): IdyllInstance = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IdyllInstance]
   
   @JSImport("idyll", JSImport.Namespace)
   @js.native
@@ -24,11 +22,9 @@ object mod {
   trait ComponentFiles extends StObject
   object ComponentFiles {
     
-    @scala.inline
-    def COMPONENT_DIRS: typings.idyll.idyllStrings.COMPONENT_DIRS = "COMPONENT_DIRS".asInstanceOf[typings.idyll.idyllStrings.COMPONENT_DIRS]
+    inline def COMPONENT_DIRS: typings.idyll.idyllStrings.COMPONENT_DIRS = "COMPONENT_DIRS".asInstanceOf[typings.idyll.idyllStrings.COMPONENT_DIRS]
     
-    @scala.inline
-    def DEFAULT_COMPONENT_DIRS: typings.idyll.idyllStrings.DEFAULT_COMPONENT_DIRS = "DEFAULT_COMPONENT_DIRS".asInstanceOf[typings.idyll.idyllStrings.DEFAULT_COMPONENT_DIRS]
+    inline def DEFAULT_COMPONENT_DIRS: typings.idyll.idyllStrings.DEFAULT_COMPONENT_DIRS = "DEFAULT_COMPONENT_DIRS".asInstanceOf[typings.idyll.idyllStrings.DEFAULT_COMPONENT_DIRS]
   }
   
   @js.native
@@ -148,119 +144,82 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCompiler(value: typings.idyllCompiler.mod.Options): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+      inline def setCompiler(value: typings.idyllCompiler.mod.Options): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompilerUndefined: Self = StObject.set(x, "compiler", js.undefined)
+      inline def setCompilerUndefined: Self = StObject.set(x, "compiler", js.undefined)
       
-      @scala.inline
-      def setComponents(value: Boolean): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: Boolean): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      @scala.inline
-      def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+      inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      @scala.inline
-      def setDatasets(value: String): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
+      inline def setDatasets(value: String): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
+      inline def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
       
-      @scala.inline
-      def setDefaultComponents(value: Boolean): Self = StObject.set(x, "defaultComponents", value.asInstanceOf[js.Any])
+      inline def setDefaultComponents(value: Boolean): Self = StObject.set(x, "defaultComponents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultComponentsUndefined: Self = StObject.set(x, "defaultComponents", js.undefined)
+      inline def setDefaultComponentsUndefined: Self = StObject.set(x, "defaultComponents", js.undefined)
       
-      @scala.inline
-      def setInputConfig(value: Compiler): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
+      inline def setInputConfig(value: Compiler): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
+      inline def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
       
-      @scala.inline
-      def setInputFile(value: String): Self = StObject.set(x, "inputFile", value.asInstanceOf[js.Any])
+      inline def setInputFile(value: String): Self = StObject.set(x, "inputFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputFileUndefined: Self = StObject.set(x, "inputFile", js.undefined)
+      inline def setInputFileUndefined: Self = StObject.set(x, "inputFile", js.undefined)
       
-      @scala.inline
-      def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
+      inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
+      inline def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
       
-      @scala.inline
-      def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setSsr(value: Boolean): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
+      inline def setSsr(value: Boolean): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsrUndefined: Self = StObject.set(x, "ssr", js.undefined)
+      inline def setSsrUndefined: Self = StObject.set(x, "ssr", js.undefined)
       
-      @scala.inline
-      def setTemp(value: String): Self = StObject.set(x, "temp", value.asInstanceOf[js.Any])
+      inline def setTemp(value: String): Self = StObject.set(x, "temp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTempUndefined: Self = StObject.set(x, "temp", js.undefined)
+      inline def setTempUndefined: Self = StObject.set(x, "temp", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTransform(value: js.Array[String]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: js.Array[String]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setTransformVarargs(value: String*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: String*): Self = StObject.set(x, "transform", js.Array(value :_*))
       
-      @scala.inline
-      def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+      inline def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+      inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
     }
   }
   
@@ -297,8 +256,7 @@ object mod {
   }
   object Paths {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       APP_PATH: String,
       COMPONENT_DIRS: js.Array[String],
       CSS_INPUT_FILE: String,
@@ -318,56 +276,39 @@ object mod {
       __obj.asInstanceOf[Paths]
     }
     
-    @scala.inline
-    implicit class PathsMutableBuilder[Self <: Paths] (val x: Self) extends AnyVal {
+    extension [Self <: Paths](x: Self) {
       
-      @scala.inline
-      def setAPP_PATH(value: String): Self = StObject.set(x, "APP_PATH", value.asInstanceOf[js.Any])
+      inline def setAPP_PATH(value: String): Self = StObject.set(x, "APP_PATH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCOMPONENT_DIRS(value: js.Array[String]): Self = StObject.set(x, "COMPONENT_DIRS", value.asInstanceOf[js.Any])
+      inline def setCOMPONENT_DIRS(value: js.Array[String]): Self = StObject.set(x, "COMPONENT_DIRS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCOMPONENT_DIRSVarargs(value: String*): Self = StObject.set(x, "COMPONENT_DIRS", js.Array(value :_*))
+      inline def setCOMPONENT_DIRSVarargs(value: String*): Self = StObject.set(x, "COMPONENT_DIRS", js.Array(value :_*))
       
-      @scala.inline
-      def setCSS_INPUT_FILE(value: String): Self = StObject.set(x, "CSS_INPUT_FILE", value.asInstanceOf[js.Any])
+      inline def setCSS_INPUT_FILE(value: String): Self = StObject.set(x, "CSS_INPUT_FILE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCSS_OUTPUT_FILE(value: String): Self = StObject.set(x, "CSS_OUTPUT_FILE", value.asInstanceOf[js.Any])
+      inline def setCSS_OUTPUT_FILE(value: String): Self = StObject.set(x, "CSS_OUTPUT_FILE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDATA_DIR(value: String): Self = StObject.set(x, "DATA_DIR", value.asInstanceOf[js.Any])
+      inline def setDATA_DIR(value: String): Self = StObject.set(x, "DATA_DIR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEFAULT_COMPONENT_DIRS(value: js.Array[String]): Self = StObject.set(x, "DEFAULT_COMPONENT_DIRS", value.asInstanceOf[js.Any])
+      inline def setDEFAULT_COMPONENT_DIRS(value: js.Array[String]): Self = StObject.set(x, "DEFAULT_COMPONENT_DIRS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEFAULT_COMPONENT_DIRSVarargs(value: String*): Self = StObject.set(x, "DEFAULT_COMPONENT_DIRS", js.Array(value :_*))
+      inline def setDEFAULT_COMPONENT_DIRSVarargs(value: String*): Self = StObject.set(x, "DEFAULT_COMPONENT_DIRS", js.Array(value :_*))
       
-      @scala.inline
-      def setHTML_OUTPUT_FILE(value: String): Self = StObject.set(x, "HTML_OUTPUT_FILE", value.asInstanceOf[js.Any])
+      inline def setHTML_OUTPUT_FILE(value: String): Self = StObject.set(x, "HTML_OUTPUT_FILE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHTML_TEMPLATE_FILE(value: String): Self = StObject.set(x, "HTML_TEMPLATE_FILE", value.asInstanceOf[js.Any])
+      inline def setHTML_TEMPLATE_FILE(value: String): Self = StObject.set(x, "HTML_TEMPLATE_FILE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIDYLL_INPUT_FILE(value: String): Self = StObject.set(x, "IDYLL_INPUT_FILE", value.asInstanceOf[js.Any])
+      inline def setIDYLL_INPUT_FILE(value: String): Self = StObject.set(x, "IDYLL_INPUT_FILE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINPUT_DIR(value: String): Self = StObject.set(x, "INPUT_DIR", value.asInstanceOf[js.Any])
+      inline def setINPUT_DIR(value: String): Self = StObject.set(x, "INPUT_DIR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJS_OUTPUT_FILE(value: String): Self = StObject.set(x, "JS_OUTPUT_FILE", value.asInstanceOf[js.Any])
+      inline def setJS_OUTPUT_FILE(value: String): Self = StObject.set(x, "JS_OUTPUT_FILE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOUTPUT_DIR(value: String): Self = StObject.set(x, "OUTPUT_DIR", value.asInstanceOf[js.Any])
+      inline def setOUTPUT_DIR(value: String): Self = StObject.set(x, "OUTPUT_DIR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPACKAGE_FILE(value: String): Self = StObject.set(x, "PACKAGE_FILE", value.asInstanceOf[js.Any])
+      inline def setPACKAGE_FILE(value: String): Self = StObject.set(x, "PACKAGE_FILE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTMP_DIR(value: String): Self = StObject.set(x, "TMP_DIR", value.asInstanceOf[js.Any])
+      inline def setTMP_DIR(value: String): Self = StObject.set(x, "TMP_DIR", value.asInstanceOf[js.Any])
     }
   }
   
@@ -388,40 +329,28 @@ object mod {
   trait PredefinedFile extends StObject
   object PredefinedFile {
     
-    @scala.inline
-    def APP_PATH: typings.idyll.idyllStrings.APP_PATH = "APP_PATH".asInstanceOf[typings.idyll.idyllStrings.APP_PATH]
+    inline def APP_PATH: typings.idyll.idyllStrings.APP_PATH = "APP_PATH".asInstanceOf[typings.idyll.idyllStrings.APP_PATH]
     
-    @scala.inline
-    def CSS_INPUT_FILE: typings.idyll.idyllStrings.CSS_INPUT_FILE = "CSS_INPUT_FILE".asInstanceOf[typings.idyll.idyllStrings.CSS_INPUT_FILE]
+    inline def CSS_INPUT_FILE: typings.idyll.idyllStrings.CSS_INPUT_FILE = "CSS_INPUT_FILE".asInstanceOf[typings.idyll.idyllStrings.CSS_INPUT_FILE]
     
-    @scala.inline
-    def CSS_OUTPUT_FILE: typings.idyll.idyllStrings.CSS_OUTPUT_FILE = "CSS_OUTPUT_FILE".asInstanceOf[typings.idyll.idyllStrings.CSS_OUTPUT_FILE]
+    inline def CSS_OUTPUT_FILE: typings.idyll.idyllStrings.CSS_OUTPUT_FILE = "CSS_OUTPUT_FILE".asInstanceOf[typings.idyll.idyllStrings.CSS_OUTPUT_FILE]
     
-    @scala.inline
-    def DATA_DIR: typings.idyll.idyllStrings.DATA_DIR = "DATA_DIR".asInstanceOf[typings.idyll.idyllStrings.DATA_DIR]
+    inline def DATA_DIR: typings.idyll.idyllStrings.DATA_DIR = "DATA_DIR".asInstanceOf[typings.idyll.idyllStrings.DATA_DIR]
     
-    @scala.inline
-    def HTML_OUTPUT_FILE: typings.idyll.idyllStrings.HTML_OUTPUT_FILE = "HTML_OUTPUT_FILE".asInstanceOf[typings.idyll.idyllStrings.HTML_OUTPUT_FILE]
+    inline def HTML_OUTPUT_FILE: typings.idyll.idyllStrings.HTML_OUTPUT_FILE = "HTML_OUTPUT_FILE".asInstanceOf[typings.idyll.idyllStrings.HTML_OUTPUT_FILE]
     
-    @scala.inline
-    def HTML_TEMPLATE_FILE: typings.idyll.idyllStrings.HTML_TEMPLATE_FILE = "HTML_TEMPLATE_FILE".asInstanceOf[typings.idyll.idyllStrings.HTML_TEMPLATE_FILE]
+    inline def HTML_TEMPLATE_FILE: typings.idyll.idyllStrings.HTML_TEMPLATE_FILE = "HTML_TEMPLATE_FILE".asInstanceOf[typings.idyll.idyllStrings.HTML_TEMPLATE_FILE]
     
-    @scala.inline
-    def IDYLL_INPUT_FILE: typings.idyll.idyllStrings.IDYLL_INPUT_FILE = "IDYLL_INPUT_FILE".asInstanceOf[typings.idyll.idyllStrings.IDYLL_INPUT_FILE]
+    inline def IDYLL_INPUT_FILE: typings.idyll.idyllStrings.IDYLL_INPUT_FILE = "IDYLL_INPUT_FILE".asInstanceOf[typings.idyll.idyllStrings.IDYLL_INPUT_FILE]
     
-    @scala.inline
-    def INPUT_DIR: typings.idyll.idyllStrings.INPUT_DIR = "INPUT_DIR".asInstanceOf[typings.idyll.idyllStrings.INPUT_DIR]
+    inline def INPUT_DIR: typings.idyll.idyllStrings.INPUT_DIR = "INPUT_DIR".asInstanceOf[typings.idyll.idyllStrings.INPUT_DIR]
     
-    @scala.inline
-    def JS_OUTPUT_FILE: typings.idyll.idyllStrings.JS_OUTPUT_FILE = "JS_OUTPUT_FILE".asInstanceOf[typings.idyll.idyllStrings.JS_OUTPUT_FILE]
+    inline def JS_OUTPUT_FILE: typings.idyll.idyllStrings.JS_OUTPUT_FILE = "JS_OUTPUT_FILE".asInstanceOf[typings.idyll.idyllStrings.JS_OUTPUT_FILE]
     
-    @scala.inline
-    def OUTPUT_DIR: typings.idyll.idyllStrings.OUTPUT_DIR = "OUTPUT_DIR".asInstanceOf[typings.idyll.idyllStrings.OUTPUT_DIR]
+    inline def OUTPUT_DIR: typings.idyll.idyllStrings.OUTPUT_DIR = "OUTPUT_DIR".asInstanceOf[typings.idyll.idyllStrings.OUTPUT_DIR]
     
-    @scala.inline
-    def PACKAGE_FILE: typings.idyll.idyllStrings.PACKAGE_FILE = "PACKAGE_FILE".asInstanceOf[typings.idyll.idyllStrings.PACKAGE_FILE]
+    inline def PACKAGE_FILE: typings.idyll.idyllStrings.PACKAGE_FILE = "PACKAGE_FILE".asInstanceOf[typings.idyll.idyllStrings.PACKAGE_FILE]
     
-    @scala.inline
-    def TMP_DIR: typings.idyll.idyllStrings.TMP_DIR = "TMP_DIR".asInstanceOf[typings.idyll.idyllStrings.TMP_DIR]
+    inline def TMP_DIR: typings.idyll.idyllStrings.TMP_DIR = "TMP_DIR".asInstanceOf[typings.idyll.idyllStrings.TMP_DIR]
   }
 }

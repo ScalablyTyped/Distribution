@@ -47,20 +47,15 @@ object wireMod {
     /* 1 */ val OPEN: typings.openfin.wireMod.READY_STATE.OPEN & Double = js.native
   }
   
-  @scala.inline
-  def isExistingConnectConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.ExistingConnectConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExistingConnectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.ExistingConnectConfig */ Boolean]
+  inline def isExistingConnectConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.ExistingConnectConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExistingConnectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.ExistingConnectConfig */ Boolean]
   
-  @scala.inline
-  def isExternalConfig(config: ConnectConfig): /* is openfin.openfin/_v2/transport/wire.ExternalConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExternalConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.ExternalConfig */ Boolean]
+  inline def isExternalConfig(config: ConnectConfig): /* is openfin.openfin/_v2/transport/wire.ExternalConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExternalConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.ExternalConfig */ Boolean]
   
-  @scala.inline
-  def isInternalConnectConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.InternalConnectConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInternalConnectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.InternalConnectConfig */ Boolean]
+  inline def isInternalConnectConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.InternalConnectConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInternalConnectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.InternalConnectConfig */ Boolean]
   
-  @scala.inline
-  def isNewConnectConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.NewConnectConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewConnectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.NewConnectConfig */ Boolean]
+  inline def isNewConnectConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.NewConnectConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewConnectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.NewConnectConfig */ Boolean]
   
-  @scala.inline
-  def isPortDiscoveryConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.PortDiscoveryConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPortDiscoveryConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.PortDiscoveryConfig */ Boolean]
+  inline def isPortDiscoveryConfig(config: js.Any): /* is openfin.openfin/_v2/transport/wire.PortDiscoveryConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPortDiscoveryConfig")(config.asInstanceOf[js.Any]).asInstanceOf[/* is openfin.openfin/_v2/transport/wire.PortDiscoveryConfig */ Boolean]
   
   trait BaseConfig extends StObject {
     
@@ -102,131 +97,90 @@ object wireMod {
   }
   object BaseConfig {
     
-    @scala.inline
-    def apply(): BaseConfig = {
+    inline def apply(): BaseConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseConfig]
     }
     
-    @scala.inline
-    implicit class BaseConfigMutableBuilder[Self <: BaseConfig] (val x: Self) extends AnyVal {
+    extension [Self <: BaseConfig](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      @scala.inline
-      def setAppAssets(value: js.Array[Alias]): Self = StObject.set(x, "appAssets", value.asInstanceOf[js.Any])
+      inline def setAppAssets(value: js.Array[Alias]): Self = StObject.set(x, "appAssets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppAssetsUndefined: Self = StObject.set(x, "appAssets", js.undefined)
+      inline def setAppAssetsUndefined: Self = StObject.set(x, "appAssets", js.undefined)
       
-      @scala.inline
-      def setAppAssetsVarargs(value: Alias*): Self = StObject.set(x, "appAssets", js.Array(value :_*))
+      inline def setAppAssetsVarargs(value: Alias*): Self = StObject.set(x, "appAssets", js.Array(value :_*))
       
-      @scala.inline
-      def setAssetsUrl(value: String): Self = StObject.set(x, "assetsUrl", value.asInstanceOf[js.Any])
+      inline def setAssetsUrl(value: String): Self = StObject.set(x, "assetsUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetsUrlUndefined: Self = StObject.set(x, "assetsUrl", js.undefined)
+      inline def setAssetsUrlUndefined: Self = StObject.set(x, "assetsUrl", js.undefined)
       
-      @scala.inline
-      def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      @scala.inline
-      def setCustomItems(value: js.Array[js.Any]): Self = StObject.set(x, "customItems", value.asInstanceOf[js.Any])
+      inline def setCustomItems(value: js.Array[js.Any]): Self = StObject.set(x, "customItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomItemsUndefined: Self = StObject.set(x, "customItems", js.undefined)
+      inline def setCustomItemsUndefined: Self = StObject.set(x, "customItems", js.undefined)
       
-      @scala.inline
-      def setCustomItemsVarargs(value: js.Any*): Self = StObject.set(x, "customItems", js.Array(value :_*))
+      inline def setCustomItemsVarargs(value: js.Any*): Self = StObject.set(x, "customItems", js.Array(value :_*))
       
-      @scala.inline
-      def setDevToolsPort(value: Double): Self = StObject.set(x, "devToolsPort", value.asInstanceOf[js.Any])
+      inline def setDevToolsPort(value: Double): Self = StObject.set(x, "devToolsPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevToolsPortUndefined: Self = StObject.set(x, "devToolsPort", js.undefined)
+      inline def setDevToolsPortUndefined: Self = StObject.set(x, "devToolsPort", js.undefined)
       
-      @scala.inline
-      def setInstallerUI(value: Boolean): Self = StObject.set(x, "installerUI", value.asInstanceOf[js.Any])
+      inline def setInstallerUI(value: Boolean): Self = StObject.set(x, "installerUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallerUIUndefined: Self = StObject.set(x, "installerUI", js.undefined)
+      inline def setInstallerUIUndefined: Self = StObject.set(x, "installerUI", js.undefined)
       
-      @scala.inline
-      def setLicenseKey(value: String): Self = StObject.set(x, "licenseKey", value.asInstanceOf[js.Any])
+      inline def setLicenseKey(value: String): Self = StObject.set(x, "licenseKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseKeyUndefined: Self = StObject.set(x, "licenseKey", js.undefined)
+      inline def setLicenseKeyUndefined: Self = StObject.set(x, "licenseKey", js.undefined)
       
-      @scala.inline
-      def setLrsUrl(value: String): Self = StObject.set(x, "lrsUrl", value.asInstanceOf[js.Any])
+      inline def setLrsUrl(value: String): Self = StObject.set(x, "lrsUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLrsUrlUndefined: Self = StObject.set(x, "lrsUrl", js.undefined)
+      inline def setLrsUrlUndefined: Self = StObject.set(x, "lrsUrl", js.undefined)
       
-      @scala.inline
-      def setManifestUrl(value: String): Self = StObject.set(x, "manifestUrl", value.asInstanceOf[js.Any])
+      inline def setManifestUrl(value: String): Self = StObject.set(x, "manifestUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestUrlUndefined: Self = StObject.set(x, "manifestUrl", js.undefined)
+      inline def setManifestUrlUndefined: Self = StObject.set(x, "manifestUrl", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNonPersistent(value: Boolean): Self = StObject.set(x, "nonPersistent", value.asInstanceOf[js.Any])
+      inline def setNonPersistent(value: Boolean): Self = StObject.set(x, "nonPersistent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonPersistentUndefined: Self = StObject.set(x, "nonPersistent", js.undefined)
+      inline def setNonPersistentUndefined: Self = StObject.set(x, "nonPersistent", js.undefined)
       
-      @scala.inline
-      def setRuntime(value: RuntimeConfig): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: RuntimeConfig): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeClient(value: Boolean): Self = StObject.set(x, "runtimeClient", value.asInstanceOf[js.Any])
+      inline def setRuntimeClient(value: Boolean): Self = StObject.set(x, "runtimeClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeClientUndefined: Self = StObject.set(x, "runtimeClient", js.undefined)
+      inline def setRuntimeClientUndefined: Self = StObject.set(x, "runtimeClient", js.undefined)
       
-      @scala.inline
-      def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
+      inline def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
       
-      @scala.inline
-      def setServices(value: js.Array[ServiceConfig]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+      inline def setServices(value: js.Array[ServiceConfig]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+      inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
       
-      @scala.inline
-      def setServicesVarargs(value: ServiceConfig*): Self = StObject.set(x, "services", js.Array(value :_*))
+      inline def setServicesVarargs(value: ServiceConfig*): Self = StObject.set(x, "services", js.Array(value :_*))
       
-      @scala.inline
-      def setStartupApp(value: js.Any): Self = StObject.set(x, "startupApp", value.asInstanceOf[js.Any])
+      inline def setStartupApp(value: js.Any): Self = StObject.set(x, "startupApp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartupAppUndefined: Self = StObject.set(x, "startupApp", js.undefined)
+      inline def setStartupAppUndefined: Self = StObject.set(x, "startupApp", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+      inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
     }
   }
   
@@ -239,17 +193,14 @@ object wireMod {
   }
   object ConfigWithRuntime {
     
-    @scala.inline
-    def apply(runtime: RuntimeConfig): ConfigWithRuntime = {
+    inline def apply(runtime: RuntimeConfig): ConfigWithRuntime = {
       val __obj = js.Dynamic.literal(runtime = runtime.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigWithRuntime]
     }
     
-    @scala.inline
-    implicit class ConfigWithRuntimeMutableBuilder[Self <: ConfigWithRuntime] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigWithRuntime](x: Self) {
       
-      @scala.inline
-      def setRuntime(value: RuntimeConfig): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: RuntimeConfig): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -262,17 +213,14 @@ object wireMod {
   }
   object ConfigWithUuid {
     
-    @scala.inline
-    def apply(uuid: String): ConfigWithUuid = {
+    inline def apply(uuid: String): ConfigWithUuid = {
       val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigWithUuid]
     }
     
-    @scala.inline
-    implicit class ConfigWithUuidMutableBuilder[Self <: ConfigWithUuid] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigWithUuid](x: Self) {
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -284,20 +232,17 @@ object wireMod {
   trait ConnectConfig extends StObject
   object ConnectConfig {
     
-    @scala.inline
-    def ExistingConnectConfig(address: String, uuid: String): typings.openfin.wireMod.ExistingConnectConfig = {
+    inline def ExistingConnectConfig(address: String, uuid: String): typings.openfin.wireMod.ExistingConnectConfig = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.openfin.wireMod.ExistingConnectConfig]
     }
     
-    @scala.inline
-    def ExternalConfig(manifestUrl: String): typings.openfin.wireMod.ExternalConfig = {
+    inline def ExternalConfig(manifestUrl: String): typings.openfin.wireMod.ExternalConfig = {
       val __obj = js.Dynamic.literal(manifestUrl = manifestUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.openfin.wireMod.ExternalConfig]
     }
     
-    @scala.inline
-    def NewConnectConfig(uuid: String): typings.openfin.wireMod.NewConnectConfig = {
+    inline def NewConnectConfig(uuid: String): typings.openfin.wireMod.NewConnectConfig = {
       val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.openfin.wireMod.NewConnectConfig]
     }
@@ -314,17 +259,14 @@ object wireMod {
   }
   object ExistingConnectConfig {
     
-    @scala.inline
-    def apply(address: String, uuid: String): ExistingConnectConfig = {
+    inline def apply(address: String, uuid: String): ExistingConnectConfig = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExistingConnectConfig]
     }
     
-    @scala.inline
-    implicit class ExistingConnectConfigMutableBuilder[Self <: ExistingConnectConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ExistingConnectConfig](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     }
   }
   
@@ -338,17 +280,14 @@ object wireMod {
   }
   object ExternalConfig {
     
-    @scala.inline
-    def apply(manifestUrl: String): ExternalConfig = {
+    inline def apply(manifestUrl: String): ExternalConfig = {
       val __obj = js.Dynamic.literal(manifestUrl = manifestUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExternalConfig]
     }
     
-    @scala.inline
-    implicit class ExternalConfigMutableBuilder[Self <: ExternalConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ExternalConfig](x: Self) {
       
-      @scala.inline
-      def setManifestUrl(value: String): Self = StObject.set(x, "manifestUrl", value.asInstanceOf[js.Any])
+      inline def setManifestUrl(value: String): Self = StObject.set(x, "manifestUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -359,14 +298,12 @@ object wireMod {
   trait InternalConnectConfig extends StObject
   object InternalConnectConfig {
     
-    @scala.inline
-    def ExistingConnectConfig(address: String, uuid: String): typings.openfin.wireMod.ExistingConnectConfig = {
+    inline def ExistingConnectConfig(address: String, uuid: String): typings.openfin.wireMod.ExistingConnectConfig = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.openfin.wireMod.ExistingConnectConfig]
     }
     
-    @scala.inline
-    def NewConnectConfig(uuid: String): typings.openfin.wireMod.NewConnectConfig = {
+    inline def NewConnectConfig(uuid: String): typings.openfin.wireMod.NewConnectConfig = {
       val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.openfin.wireMod.NewConnectConfig]
     }
@@ -381,8 +318,7 @@ object wireMod {
        with InternalConnectConfig
   object NewConnectConfig {
     
-    @scala.inline
-    def apply(uuid: String): NewConnectConfig = {
+    inline def apply(uuid: String): NewConnectConfig = {
       val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewConnectConfig]
     }
@@ -406,47 +342,34 @@ object wireMod {
   }
   object RuntimeConfig {
     
-    @scala.inline
-    def apply(version: String): RuntimeConfig = {
+    inline def apply(version: String): RuntimeConfig = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[RuntimeConfig]
     }
     
-    @scala.inline
-    implicit class RuntimeConfigMutableBuilder[Self <: RuntimeConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RuntimeConfig](x: Self) {
       
-      @scala.inline
-      def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+      inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
       
-      @scala.inline
-      def setFallbackVersion(value: String): Self = StObject.set(x, "fallbackVersion", value.asInstanceOf[js.Any])
+      inline def setFallbackVersion(value: String): Self = StObject.set(x, "fallbackVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackVersionUndefined: Self = StObject.set(x, "fallbackVersion", js.undefined)
+      inline def setFallbackVersionUndefined: Self = StObject.set(x, "fallbackVersion", js.undefined)
       
-      @scala.inline
-      def setRvmDir(value: String): Self = StObject.set(x, "rvmDir", value.asInstanceOf[js.Any])
+      inline def setRvmDir(value: String): Self = StObject.set(x, "rvmDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRvmDirUndefined: Self = StObject.set(x, "rvmDir", js.undefined)
+      inline def setRvmDirUndefined: Self = StObject.set(x, "rvmDir", js.undefined)
       
-      @scala.inline
-      def setSecurityRealm(value: String): Self = StObject.set(x, "securityRealm", value.asInstanceOf[js.Any])
+      inline def setSecurityRealm(value: String): Self = StObject.set(x, "securityRealm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityRealmUndefined: Self = StObject.set(x, "securityRealm", js.undefined)
+      inline def setSecurityRealmUndefined: Self = StObject.set(x, "securityRealm", js.undefined)
       
-      @scala.inline
-      def setVerboseLogging(value: Boolean): Self = StObject.set(x, "verboseLogging", value.asInstanceOf[js.Any])
+      inline def setVerboseLogging(value: Boolean): Self = StObject.set(x, "verboseLogging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseLoggingUndefined: Self = StObject.set(x, "verboseLogging", js.undefined)
+      inline def setVerboseLoggingUndefined: Self = StObject.set(x, "verboseLogging", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -458,20 +381,16 @@ object wireMod {
   }
   object ServiceConfig {
     
-    @scala.inline
-    def apply(manifestUrl: String, name: String): ServiceConfig = {
+    inline def apply(manifestUrl: String, name: String): ServiceConfig = {
       val __obj = js.Dynamic.literal(manifestUrl = manifestUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceConfig]
     }
     
-    @scala.inline
-    implicit class ServiceConfigMutableBuilder[Self <: ServiceConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceConfig](x: Self) {
       
-      @scala.inline
-      def setManifestUrl(value: String): Self = StObject.set(x, "manifestUrl", value.asInstanceOf[js.Any])
+      inline def setManifestUrl(value: String): Self = StObject.set(x, "manifestUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

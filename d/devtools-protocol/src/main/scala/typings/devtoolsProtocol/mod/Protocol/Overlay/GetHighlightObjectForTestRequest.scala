@@ -34,40 +34,29 @@ trait GetHighlightObjectForTestRequest extends StObject {
 }
 object GetHighlightObjectForTestRequest {
   
-  @scala.inline
-  def apply(nodeId: NodeId): GetHighlightObjectForTestRequest = {
+  inline def apply(nodeId: NodeId): GetHighlightObjectForTestRequest = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHighlightObjectForTestRequest]
   }
   
-  @scala.inline
-  implicit class GetHighlightObjectForTestRequestMutableBuilder[Self <: GetHighlightObjectForTestRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetHighlightObjectForTestRequest](x: Self) {
     
-    @scala.inline
-    def setColorFormat(value: ColorFormat): Self = StObject.set(x, "colorFormat", value.asInstanceOf[js.Any])
+    inline def setColorFormat(value: ColorFormat): Self = StObject.set(x, "colorFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorFormatUndefined: Self = StObject.set(x, "colorFormat", js.undefined)
+    inline def setColorFormatUndefined: Self = StObject.set(x, "colorFormat", js.undefined)
     
-    @scala.inline
-    def setIncludeDistance(value: Boolean): Self = StObject.set(x, "includeDistance", value.asInstanceOf[js.Any])
+    inline def setIncludeDistance(value: Boolean): Self = StObject.set(x, "includeDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDistanceUndefined: Self = StObject.set(x, "includeDistance", js.undefined)
+    inline def setIncludeDistanceUndefined: Self = StObject.set(x, "includeDistance", js.undefined)
     
-    @scala.inline
-    def setIncludeStyle(value: Boolean): Self = StObject.set(x, "includeStyle", value.asInstanceOf[js.Any])
+    inline def setIncludeStyle(value: Boolean): Self = StObject.set(x, "includeStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeStyleUndefined: Self = StObject.set(x, "includeStyle", js.undefined)
+    inline def setIncludeStyleUndefined: Self = StObject.set(x, "includeStyle", js.undefined)
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAccessibilityInfo(value: Boolean): Self = StObject.set(x, "showAccessibilityInfo", value.asInstanceOf[js.Any])
+    inline def setShowAccessibilityInfo(value: Boolean): Self = StObject.set(x, "showAccessibilityInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAccessibilityInfoUndefined: Self = StObject.set(x, "showAccessibilityInfo", js.undefined)
+    inline def setShowAccessibilityInfoUndefined: Self = StObject.set(x, "showAccessibilityInfo", js.undefined)
   }
 }

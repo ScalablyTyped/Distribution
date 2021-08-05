@@ -142,26 +142,20 @@ object mod extends Shortcut {
   }
   object AclAllow {
     
-    @scala.inline
-    def apply(permissions: strings, resources: strings): AclAllow = {
+    inline def apply(permissions: strings, resources: strings): AclAllow = {
       val __obj = js.Dynamic.literal(permissions = permissions.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any])
       __obj.asInstanceOf[AclAllow]
     }
     
-    @scala.inline
-    implicit class AclAllowMutableBuilder[Self <: AclAllow] (val x: Self) extends AnyVal {
+    extension [Self <: AclAllow](x: Self) {
       
-      @scala.inline
-      def setPermissions(value: strings): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      inline def setPermissions(value: strings): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+      inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
       
-      @scala.inline
-      def setResources(value: strings): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: strings): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
     }
   }
   
@@ -173,26 +167,20 @@ object mod extends Shortcut {
   }
   object AclSet {
     
-    @scala.inline
-    def apply(allows: js.Array[AclAllow], roles: strings): AclSet = {
+    inline def apply(allows: js.Array[AclAllow], roles: strings): AclSet = {
       val __obj = js.Dynamic.literal(allows = allows.asInstanceOf[js.Any], roles = roles.asInstanceOf[js.Any])
       __obj.asInstanceOf[AclSet]
     }
     
-    @scala.inline
-    implicit class AclSetMutableBuilder[Self <: AclSet] (val x: Self) extends AnyVal {
+    extension [Self <: AclSet](x: Self) {
       
-      @scala.inline
-      def setAllows(value: js.Array[AclAllow]): Self = StObject.set(x, "allows", value.asInstanceOf[js.Any])
+      inline def setAllows(value: js.Array[AclAllow]): Self = StObject.set(x, "allows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowsVarargs(value: AclAllow*): Self = StObject.set(x, "allows", js.Array(value :_*))
+      inline def setAllowsVarargs(value: AclAllow*): Self = StObject.set(x, "allows", js.Array(value :_*))
       
-      @scala.inline
-      def setRoles(value: strings): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: strings): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
     }
   }
   
@@ -280,50 +268,36 @@ object mod extends Shortcut {
   }
   object BucketsOption {
     
-    @scala.inline
-    def apply(): BucketsOption = {
+    inline def apply(): BucketsOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BucketsOption]
     }
     
-    @scala.inline
-    implicit class BucketsOptionMutableBuilder[Self <: BucketsOption] (val x: Self) extends AnyVal {
+    extension [Self <: BucketsOption](x: Self) {
       
-      @scala.inline
-      def setMeta(value: String): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: String): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setParents(value: String): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+      inline def setParents(value: String): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentsUndefined: Self = StObject.set(x, "parents", js.undefined)
+      inline def setParentsUndefined: Self = StObject.set(x, "parents", js.undefined)
       
-      @scala.inline
-      def setPermissions(value: String): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      inline def setPermissions(value: String): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+      inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
       
-      @scala.inline
-      def setResources(value: String): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: String): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+      inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
-      @scala.inline
-      def setRoles(value: String): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: String): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+      inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
       
-      @scala.inline
-      def setUsers(value: String): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: String): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+      inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     }
   }
   
@@ -355,17 +329,14 @@ object mod extends Shortcut {
   }
   object Logger {
     
-    @scala.inline
-    def apply(debug: String => js.Any): Logger = {
+    inline def apply(debug: String => js.Any): Logger = {
       val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug))
       __obj.asInstanceOf[Logger]
     }
     
-    @scala.inline
-    implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+    extension [Self <: Logger](x: Self) {
       
-      @scala.inline
-      def setDebug(value: String => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: String => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     }
   }
   
@@ -399,20 +370,16 @@ object mod extends Shortcut {
   }
   object NoOp {
     
-    @scala.inline
-    def apply(end: () => Unit, params: /* repeated */ String => NoOp): NoOp = {
+    inline def apply(end: () => Unit, params: /* repeated */ String => NoOp): NoOp = {
       val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), params = js.Any.fromFunction1(params))
       __obj.asInstanceOf[NoOp]
     }
     
-    @scala.inline
-    implicit class NoOpMutableBuilder[Self <: NoOp] (val x: Self) extends AnyVal {
+    extension [Self <: NoOp](x: Self) {
       
-      @scala.inline
-      def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParams(value: /* repeated */ String => NoOp): Self = StObject.set(x, "params", js.Any.fromFunction1(value))
+      inline def setParams(value: /* repeated */ String => NoOp): Self = StObject.set(x, "params", js.Any.fromFunction1(value))
     }
   }
   
@@ -422,20 +389,16 @@ object mod extends Shortcut {
   }
   object Option {
     
-    @scala.inline
-    def apply(): Option = {
+    inline def apply(): Option = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Option]
     }
     
-    @scala.inline
-    implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+    extension [Self <: Option](x: Self) {
       
-      @scala.inline
-      def setBuckets(value: BucketsOption): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+      inline def setBuckets(value: BucketsOption): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
+      inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     }
   }
   

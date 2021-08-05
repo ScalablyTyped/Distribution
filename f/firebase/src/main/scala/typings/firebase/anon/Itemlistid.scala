@@ -18,34 +18,25 @@ trait Itemlistid
 }
 object Itemlistid {
   
-  @scala.inline
-  def apply(): Itemlistid = {
+  inline def apply(): Itemlistid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Itemlistid]
   }
   
-  @scala.inline
-  implicit class ItemlistidMutableBuilder[Self <: Itemlistid] (val x: Self) extends AnyVal {
+  extension [Self <: Itemlistid](x: Self) {
     
-    @scala.inline
-    def setItem_list_id(value: String): Self = StObject.set(x, "item_list_id", value.asInstanceOf[js.Any])
+    inline def setItem_list_id(value: String): Self = StObject.set(x, "item_list_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_list_idUndefined: Self = StObject.set(x, "item_list_id", js.undefined)
+    inline def setItem_list_idUndefined: Self = StObject.set(x, "item_list_id", js.undefined)
     
-    @scala.inline
-    def setItem_list_name(value: String): Self = StObject.set(x, "item_list_name", value.asInstanceOf[js.Any])
+    inline def setItem_list_name(value: String): Self = StObject.set(x, "item_list_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_list_nameUndefined: Self = StObject.set(x, "item_list_name", js.undefined)
+    inline def setItem_list_nameUndefined: Self = StObject.set(x, "item_list_name", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

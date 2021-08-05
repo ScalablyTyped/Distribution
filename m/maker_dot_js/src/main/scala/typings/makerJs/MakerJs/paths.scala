@@ -14,8 +14,7 @@ object paths {
        with IPathArc
   object Arc {
     
-    @scala.inline
-    def apply(endAngle: Double, origin: IPoint, radius: Double, startAngle: Double, `type`: String): Arc = {
+    inline def apply(endAngle: Double, origin: IPoint, radius: Double, startAngle: Double, `type`: String): Arc = {
       val __obj = js.Dynamic.literal(endAngle = endAngle.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Arc]
@@ -32,8 +31,7 @@ object paths {
        with IPathLine
   object Chord {
     
-    @scala.inline
-    def apply(end: IPoint, origin: IPoint, `type`: String): Chord = {
+    inline def apply(end: IPoint, origin: IPoint, `type`: String): Chord = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Chord]
@@ -48,8 +46,7 @@ object paths {
        with IPathCircle
   object Circle {
     
-    @scala.inline
-    def apply(origin: IPoint, radius: Double, `type`: String): Circle = {
+    inline def apply(origin: IPoint, radius: Double, `type`: String): Circle = {
       val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Circle]
@@ -64,8 +61,7 @@ object paths {
        with IPathLine
   object Line {
     
-    @scala.inline
-    def apply(end: IPoint, origin: IPoint, `type`: String): Line = {
+    inline def apply(end: IPoint, origin: IPoint, `type`: String): Line = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Line]
@@ -84,8 +80,7 @@ object paths {
        with IPathLine
   object Parallel {
     
-    @scala.inline
-    def apply(end: IPoint, origin: IPoint, `type`: String): Parallel = {
+    inline def apply(end: IPoint, origin: IPoint, `type`: String): Parallel = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Parallel]

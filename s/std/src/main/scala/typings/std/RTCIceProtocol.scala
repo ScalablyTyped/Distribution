@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCIceProtocol extends StObject
 object RTCIceProtocol {
   
-  @scala.inline
-  def tcp: typings.std.stdStrings.tcp = "tcp".asInstanceOf[typings.std.stdStrings.tcp]
+  inline def tcp: typings.std.stdStrings.tcp = "tcp".asInstanceOf[typings.std.stdStrings.tcp]
   
-  @scala.inline
-  def udp: typings.std.stdStrings.udp = "udp".asInstanceOf[typings.std.stdStrings.udp]
+  inline def udp: typings.std.stdStrings.udp = "udp".asInstanceOf[typings.std.stdStrings.udp]
 }

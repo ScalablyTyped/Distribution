@@ -38,8 +38,7 @@ trait XCellFormatRangesSupplier
 }
 object XCellFormatRangesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CellFormatRanges: XIndexAccess,
     acquire: () => Unit,
     getCellFormatRanges: () => XIndexAccess,
@@ -50,13 +49,10 @@ object XCellFormatRangesSupplier {
     __obj.asInstanceOf[XCellFormatRangesSupplier]
   }
   
-  @scala.inline
-  implicit class XCellFormatRangesSupplierMutableBuilder[Self <: XCellFormatRangesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XCellFormatRangesSupplier](x: Self) {
     
-    @scala.inline
-    def setCellFormatRanges(value: XIndexAccess): Self = StObject.set(x, "CellFormatRanges", value.asInstanceOf[js.Any])
+    inline def setCellFormatRanges(value: XIndexAccess): Self = StObject.set(x, "CellFormatRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCellFormatRanges(value: () => XIndexAccess): Self = StObject.set(x, "getCellFormatRanges", js.Any.fromFunction0(value))
+    inline def setGetCellFormatRanges(value: () => XIndexAccess): Self = StObject.set(x, "getCellFormatRanges", js.Any.fromFunction0(value))
   }
 }

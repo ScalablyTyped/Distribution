@@ -76,53 +76,45 @@ object TextBlock {
   @JSImport("go", "TextBlock.None")
   @js.native
   def None: EnumValue = js.native
-  @scala.inline
-  def None_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /** Used as the default value for TextBlock.overflow: if the width is too small to display all text, the TextBlock will clip.*/
   /* static member */
   @JSImport("go", "TextBlock.OverflowClip")
   @js.native
   def OverflowClip: EnumValue = js.native
-  @scala.inline
-  def OverflowClip_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OverflowClip")(x.asInstanceOf[js.Any])
+  inline def OverflowClip_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OverflowClip")(x.asInstanceOf[js.Any])
   
   /** Used as a value for TextBlock.overflow: if the width is too small to display all text, the TextBlock will display an ellipsis.*/
   /* static member */
   @JSImport("go", "TextBlock.OverflowEllipsis")
   @js.native
   def OverflowEllipsis: EnumValue = js.native
-  @scala.inline
-  def OverflowEllipsis_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OverflowEllipsis")(x.asInstanceOf[js.Any])
+  inline def OverflowEllipsis_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OverflowEllipsis")(x.asInstanceOf[js.Any])
   
   /**The TextBlock will wrap text and the width of the TextBlock will be the desiredSize's width, if any.*/
   /* static member */
   @JSImport("go", "TextBlock.WrapDesiredSize")
   @js.native
   def WrapDesiredSize: EnumValue = js.native
-  @scala.inline
-  def WrapDesiredSize_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WrapDesiredSize")(x.asInstanceOf[js.Any])
+  inline def WrapDesiredSize_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WrapDesiredSize")(x.asInstanceOf[js.Any])
   
   /**The TextBlock will wrap text, making the width of the TextBlock equal to the width of the longest line.*/
   /* static member */
   @JSImport("go", "TextBlock.WrapFit")
   @js.native
   def WrapFit: EnumValue = js.native
-  @scala.inline
-  def WrapFit_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WrapFit")(x.asInstanceOf[js.Any])
+  inline def WrapFit_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WrapFit")(x.asInstanceOf[js.Any])
   
   // undocumented
   /* static member */
-  @scala.inline
-  def getEllipsis(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEllipsis")().asInstanceOf[String]
+  inline def getEllipsis(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEllipsis")().asInstanceOf[String]
   
   // undocumented
   /* static member */
-  @scala.inline
-  def isValidFont(font: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidFont")(font.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidFont(font: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidFont")(font.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   // undocumented
   /* static member */
-  @scala.inline
-  def setEllipsis(`val`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEllipsis")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setEllipsis(`val`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEllipsis")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

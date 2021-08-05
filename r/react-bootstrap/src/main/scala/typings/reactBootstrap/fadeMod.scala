@@ -35,44 +35,32 @@ object fadeMod {
   }
   object FadeProps {
     
-    @scala.inline
-    def apply(): FadeProps = {
+    inline def apply(): FadeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FadeProps]
     }
     
-    @scala.inline
-    implicit class FadePropsMutableBuilder[Self <: FadeProps] (val x: Self) extends AnyVal {
+    extension [Self <: FadeProps](x: Self) {
       
-      @scala.inline
-      def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
+      inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
+      inline def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
       
-      @scala.inline
-      def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInUndefined: Self = StObject.set(x, "in", js.undefined)
+      inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
       
-      @scala.inline
-      def setMountOnEnter(value: Boolean): Self = StObject.set(x, "mountOnEnter", value.asInstanceOf[js.Any])
+      inline def setMountOnEnter(value: Boolean): Self = StObject.set(x, "mountOnEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountOnEnterUndefined: Self = StObject.set(x, "mountOnEnter", js.undefined)
+      inline def setMountOnEnterUndefined: Self = StObject.set(x, "mountOnEnter", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUnmountOnExit(value: Boolean): Self = StObject.set(x, "unmountOnExit", value.asInstanceOf[js.Any])
+      inline def setUnmountOnExit(value: Boolean): Self = StObject.set(x, "unmountOnExit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmountOnExitUndefined: Self = StObject.set(x, "unmountOnExit", js.undefined)
+      inline def setUnmountOnExitUndefined: Self = StObject.set(x, "unmountOnExit", js.undefined)
     }
   }
 }

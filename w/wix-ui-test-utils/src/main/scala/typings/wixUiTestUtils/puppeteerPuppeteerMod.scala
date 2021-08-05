@@ -16,8 +16,7 @@ object puppeteerPuppeteerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def puppeteerTestkitFactoryCreator[T](
+  inline def puppeteerTestkitFactoryCreator[T](
     driverFactory: js.Function3[
       /* e */ ElementHandle[Element] | Null, 
       /* page */ Page, 
@@ -26,8 +25,7 @@ object puppeteerPuppeteerMod {
     ]
   ): js.Function1[/* obj */ typings.wixUiTestUtils.anon.Page, js.Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("puppeteerTestkitFactoryCreator")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ typings.wixUiTestUtils.anon.Page, js.Promise[T]]]
   
-  @scala.inline
-  def puppeteerUniTestkitFactoryCreator[T /* <: BaseUniDriver */](
+  inline def puppeteerUniTestkitFactoryCreator[T /* <: BaseUniDriver */](
     driverFactory: js.Function3[
       /* base */ UniDriver[js.Any], 
       /* body */ UniDriver[js.Any], 
@@ -42,17 +40,14 @@ object puppeteerPuppeteerMod {
   }
   object DriverFactoryOptions {
     
-    @scala.inline
-    def apply(dataHook: String): DriverFactoryOptions = {
+    inline def apply(dataHook: String): DriverFactoryOptions = {
       val __obj = js.Dynamic.literal(dataHook = dataHook.asInstanceOf[js.Any])
       __obj.asInstanceOf[DriverFactoryOptions]
     }
     
-    @scala.inline
-    implicit class DriverFactoryOptionsMutableBuilder[Self <: DriverFactoryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DriverFactoryOptions](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     }
   }
 }

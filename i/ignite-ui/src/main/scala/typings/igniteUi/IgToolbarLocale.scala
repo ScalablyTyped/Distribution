@@ -26,25 +26,19 @@ trait IgToolbarLocale
 }
 object IgToolbarLocale {
   
-  @scala.inline
-  def apply(): IgToolbarLocale = {
+  inline def apply(): IgToolbarLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgToolbarLocale]
   }
   
-  @scala.inline
-  implicit class IgToolbarLocaleMutableBuilder[Self <: IgToolbarLocale] (val x: Self) extends AnyVal {
+  extension [Self <: IgToolbarLocale](x: Self) {
     
-    @scala.inline
-    def setCollapseButtonTitle(value: js.Any): Self = StObject.set(x, "collapseButtonTitle", value.asInstanceOf[js.Any])
+    inline def setCollapseButtonTitle(value: js.Any): Self = StObject.set(x, "collapseButtonTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapseButtonTitleUndefined: Self = StObject.set(x, "collapseButtonTitle", js.undefined)
+    inline def setCollapseButtonTitleUndefined: Self = StObject.set(x, "collapseButtonTitle", js.undefined)
     
-    @scala.inline
-    def setExpandButtonTitle(value: js.Any): Self = StObject.set(x, "expandButtonTitle", value.asInstanceOf[js.Any])
+    inline def setExpandButtonTitle(value: js.Any): Self = StObject.set(x, "expandButtonTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandButtonTitleUndefined: Self = StObject.set(x, "expandButtonTitle", js.undefined)
+    inline def setExpandButtonTitleUndefined: Self = StObject.set(x, "expandButtonTitle", js.undefined)
   }
 }

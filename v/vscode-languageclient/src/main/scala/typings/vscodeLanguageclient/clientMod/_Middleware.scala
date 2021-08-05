@@ -270,41 +270,30 @@ trait _Middleware extends StObject {
 }
 object _Middleware {
   
-  @scala.inline
-  def apply(): _Middleware = {
+  inline def apply(): _Middleware = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[_Middleware]
   }
   
-  @scala.inline
-  implicit class _MiddlewareMutableBuilder[Self <: _Middleware] (val x: Self) extends AnyVal {
+  extension [Self <: _Middleware](x: Self) {
     
-    @scala.inline
-    def setDidChange(value: NextSignature[TextDocumentChangeEvent, Unit]): Self = StObject.set(x, "didChange", value.asInstanceOf[js.Any])
+    inline def setDidChange(value: NextSignature[TextDocumentChangeEvent, Unit]): Self = StObject.set(x, "didChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDidChangeUndefined: Self = StObject.set(x, "didChange", js.undefined)
+    inline def setDidChangeUndefined: Self = StObject.set(x, "didChange", js.undefined)
     
-    @scala.inline
-    def setDidClose(value: NextSignature[typings.vscode.mod.TextDocument, Unit]): Self = StObject.set(x, "didClose", value.asInstanceOf[js.Any])
+    inline def setDidClose(value: NextSignature[typings.vscode.mod.TextDocument, Unit]): Self = StObject.set(x, "didClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDidCloseUndefined: Self = StObject.set(x, "didClose", js.undefined)
+    inline def setDidCloseUndefined: Self = StObject.set(x, "didClose", js.undefined)
     
-    @scala.inline
-    def setDidOpen(value: NextSignature[typings.vscode.mod.TextDocument, Unit]): Self = StObject.set(x, "didOpen", value.asInstanceOf[js.Any])
+    inline def setDidOpen(value: NextSignature[typings.vscode.mod.TextDocument, Unit]): Self = StObject.set(x, "didOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDidOpenUndefined: Self = StObject.set(x, "didOpen", js.undefined)
+    inline def setDidOpenUndefined: Self = StObject.set(x, "didOpen", js.undefined)
     
-    @scala.inline
-    def setDidSave(value: NextSignature[typings.vscode.mod.TextDocument, Unit]): Self = StObject.set(x, "didSave", value.asInstanceOf[js.Any])
+    inline def setDidSave(value: NextSignature[typings.vscode.mod.TextDocument, Unit]): Self = StObject.set(x, "didSave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDidSaveUndefined: Self = StObject.set(x, "didSave", js.undefined)
+    inline def setDidSaveUndefined: Self = StObject.set(x, "didSave", js.undefined)
     
-    @scala.inline
-    def setExecuteCommand(
+    inline def setExecuteCommand(
       value: js.ThisFunction3[
           /* this */ Unit, 
           /* command */ String, 
@@ -314,11 +303,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "executeCommand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecuteCommandUndefined: Self = StObject.set(x, "executeCommand", js.undefined)
+    inline def setExecuteCommandUndefined: Self = StObject.set(x, "executeCommand", js.undefined)
     
-    @scala.inline
-    def setHandleDiagnostics(
+    inline def setHandleDiagnostics(
       value: js.ThisFunction3[
           /* this */ Unit, 
           /* uri */ Uri, 
@@ -328,11 +315,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "handleDiagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleDiagnosticsUndefined: Self = StObject.set(x, "handleDiagnostics", js.undefined)
+    inline def setHandleDiagnosticsUndefined: Self = StObject.set(x, "handleDiagnostics", js.undefined)
     
-    @scala.inline
-    def setPrepareRename(
+    inline def setPrepareRename(
       value: js.ThisFunction4[
           /* this */ Unit, 
           /* document */ typings.vscode.mod.TextDocument, 
@@ -343,11 +328,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "prepareRename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrepareRenameUndefined: Self = StObject.set(x, "prepareRename", js.undefined)
+    inline def setPrepareRenameUndefined: Self = StObject.set(x, "prepareRename", js.undefined)
     
-    @scala.inline
-    def setProvideCodeActions(
+    inline def setProvideCodeActions(
       value: js.ThisFunction5[
           /* this */ Unit, 
           /* document */ typings.vscode.mod.TextDocument, 
@@ -359,11 +342,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "provideCodeActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvideCodeActionsUndefined: Self = StObject.set(x, "provideCodeActions", js.undefined)
+    inline def setProvideCodeActionsUndefined: Self = StObject.set(x, "provideCodeActions", js.undefined)
     
-    @scala.inline
-    def setProvideCodeLenses(
+    inline def setProvideCodeLenses(
       value: js.ThisFunction3[
           /* this */ Unit, 
           /* document */ typings.vscode.mod.TextDocument, 
@@ -373,11 +354,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "provideCodeLenses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvideCodeLensesUndefined: Self = StObject.set(x, "provideCodeLenses", js.undefined)
+    inline def setProvideCodeLensesUndefined: Self = StObject.set(x, "provideCodeLenses", js.undefined)
     
-    @scala.inline
-    def setProvideCompletionItem(
+    inline def setProvideCompletionItem(
       value: js.ThisFunction5[
           /* this */ Unit, 
           /* document */ typings.vscode.mod.TextDocument, 
@@ -391,11 +370,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "provideCompletionItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvideCompletionItemUndefined: Self = StObject.set(x, "provideCompletionItem", js.undefined)
+    inline def setProvideCompletionItemUndefined: Self = StObject.set(x, "provideCompletionItem", js.undefined)
     
-    @scala.inline
-    def setProvideDefinition(
+    inline def setProvideDefinition(
       value: js.ThisFunction4[
           /* this */ Unit, 
           /* document */ typings.vscode.mod.TextDocument, 
@@ -406,11 +383,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "provideDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvideDefinitionUndefined: Self = StObject.set(x, "provideDefinition", js.undefined)
+    inline def setProvideDefinitionUndefined: Self = StObject.set(x, "provideDefinition", js.undefined)
     
-    @scala.inline
-    def setProvideDocumentFormattingEdits(
+    inline def setProvideDocumentFormattingEdits(
       value: js.ThisFunction4[
           /* this */ Unit, 
           /* document */ typings.vscode.mod.TextDocument, 
@@ -421,11 +396,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "provideDocumentFormattingEdits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvideDocumentFormattingEditsUndefined: Self = StObject.set(x, "provideDocumentFormattingEdits", js.undefined)
+    inline def setProvideDocumentFormattingEditsUndefined: Self = StObject.set(x, "provideDocumentFormattingEdits", js.undefined)
     
-    @scala.inline
-    def setProvideDocumentHighlights(
+    inline def setProvideDocumentHighlights(
       value: js.ThisFunction4[
           /* this */ Unit, 
           /* document */ typings.vscode.mod.TextDocument, 
@@ -436,11 +409,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "provideDocumentHighlights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvideDocumentHighlightsUndefined: Self = StObject.set(x, "provideDocumentHighlights", js.undefined)
+    inline def setProvideDocumentHighlightsUndefined: Self = StObject.set(x, "provideDocumentHighlights", js.undefined)
     
-    @scala.inline
-    def setProvideDocumentLinks(
+    inline def setProvideDocumentLinks(
       value: js.ThisFunction3[
           /* this */ Unit, 
           /* document */ typings.vscode.mod.TextDocument, 
@@ -450,11 +421,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "provideDocumentLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvideDocumentLinksUndefined: Self = StObject.set(x, "provideDocumentLinks", js.undefined)
+    inline def setProvideDocumentLinksUndefined: Self = StObject.set(x, "provideDocumentLinks", js.undefined)
     
-    @scala.inline
-    def setProvideDocumentRangeFormattingEdits(
+    inline def setProvideDocumentRangeFormattingEdits(
       value: js.ThisFunction5[
           /* this */ Unit, 
           /* document */ typings.vscode.mod.TextDocument, 
@@ -466,11 +435,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "provideDocumentRangeFormattingEdits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvideDocumentRangeFormattingEditsUndefined: Self = StObject.set(x, "provideDocumentRangeFormattingEdits", js.undefined)
+    inline def setProvideDocumentRangeFormattingEditsUndefined: Self = StObject.set(x, "provideDocumentRangeFormattingEdits", js.undefined)
     
-    @scala.inline
-    def setProvideDocumentSymbols(
+    inline def setProvideDocumentSymbols(
       value: js.ThisFunction3[
           /* this */ Unit, 
           /* document */ typings.vscode.mod.TextDocument, 
@@ -482,11 +449,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "provideDocumentSymbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvideDocumentSymbolsUndefined: Self = StObject.set(x, "provideDocumentSymbols", js.undefined)
+    inline def setProvideDocumentSymbolsUndefined: Self = StObject.set(x, "provideDocumentSymbols", js.undefined)
     
-    @scala.inline
-    def setProvideHover(
+    inline def setProvideHover(
       value: js.ThisFunction4[
           /* this */ Unit, 
           /* document */ typings.vscode.mod.TextDocument, 
@@ -497,11 +462,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "provideHover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvideHoverUndefined: Self = StObject.set(x, "provideHover", js.undefined)
+    inline def setProvideHoverUndefined: Self = StObject.set(x, "provideHover", js.undefined)
     
-    @scala.inline
-    def setProvideOnTypeFormattingEdits(
+    inline def setProvideOnTypeFormattingEdits(
       value: js.ThisFunction6[
           /* this */ Unit, 
           /* document */ typings.vscode.mod.TextDocument, 
@@ -514,11 +477,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "provideOnTypeFormattingEdits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvideOnTypeFormattingEditsUndefined: Self = StObject.set(x, "provideOnTypeFormattingEdits", js.undefined)
+    inline def setProvideOnTypeFormattingEditsUndefined: Self = StObject.set(x, "provideOnTypeFormattingEdits", js.undefined)
     
-    @scala.inline
-    def setProvideReferences(
+    inline def setProvideReferences(
       value: js.ThisFunction5[
           /* this */ Unit, 
           /* document */ typings.vscode.mod.TextDocument, 
@@ -530,11 +491,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "provideReferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvideReferencesUndefined: Self = StObject.set(x, "provideReferences", js.undefined)
+    inline def setProvideReferencesUndefined: Self = StObject.set(x, "provideReferences", js.undefined)
     
-    @scala.inline
-    def setProvideRenameEdits(
+    inline def setProvideRenameEdits(
       value: js.ThisFunction5[
           /* this */ Unit, 
           /* document */ typings.vscode.mod.TextDocument, 
@@ -546,11 +505,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "provideRenameEdits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvideRenameEditsUndefined: Self = StObject.set(x, "provideRenameEdits", js.undefined)
+    inline def setProvideRenameEditsUndefined: Self = StObject.set(x, "provideRenameEdits", js.undefined)
     
-    @scala.inline
-    def setProvideSignatureHelp(
+    inline def setProvideSignatureHelp(
       value: js.ThisFunction5[
           /* this */ Unit, 
           /* document */ typings.vscode.mod.TextDocument, 
@@ -562,11 +519,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "provideSignatureHelp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvideSignatureHelpUndefined: Self = StObject.set(x, "provideSignatureHelp", js.undefined)
+    inline def setProvideSignatureHelpUndefined: Self = StObject.set(x, "provideSignatureHelp", js.undefined)
     
-    @scala.inline
-    def setProvideWorkspaceSymbols(
+    inline def setProvideWorkspaceSymbols(
       value: js.ThisFunction3[
           /* this */ Unit, 
           /* query */ String, 
@@ -576,11 +531,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "provideWorkspaceSymbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvideWorkspaceSymbolsUndefined: Self = StObject.set(x, "provideWorkspaceSymbols", js.undefined)
+    inline def setProvideWorkspaceSymbolsUndefined: Self = StObject.set(x, "provideWorkspaceSymbols", js.undefined)
     
-    @scala.inline
-    def setResolveCodeLens(
+    inline def setResolveCodeLens(
       value: js.ThisFunction3[
           /* this */ Unit, 
           /* codeLens */ typings.vscode.mod.CodeLens, 
@@ -590,11 +543,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "resolveCodeLens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolveCodeLensUndefined: Self = StObject.set(x, "resolveCodeLens", js.undefined)
+    inline def setResolveCodeLensUndefined: Self = StObject.set(x, "resolveCodeLens", js.undefined)
     
-    @scala.inline
-    def setResolveCompletionItem(
+    inline def setResolveCompletionItem(
       value: js.ThisFunction3[
           /* this */ Unit, 
           /* item */ typings.vscode.mod.CompletionItem, 
@@ -604,11 +555,9 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "resolveCompletionItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolveCompletionItemUndefined: Self = StObject.set(x, "resolveCompletionItem", js.undefined)
+    inline def setResolveCompletionItemUndefined: Self = StObject.set(x, "resolveCompletionItem", js.undefined)
     
-    @scala.inline
-    def setResolveDocumentLink(
+    inline def setResolveDocumentLink(
       value: js.ThisFunction3[
           /* this */ Unit, 
           /* link */ typings.vscode.mod.DocumentLink, 
@@ -618,25 +567,18 @@ object _Middleware {
         ]
     ): Self = StObject.set(x, "resolveDocumentLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolveDocumentLinkUndefined: Self = StObject.set(x, "resolveDocumentLink", js.undefined)
+    inline def setResolveDocumentLinkUndefined: Self = StObject.set(x, "resolveDocumentLink", js.undefined)
     
-    @scala.inline
-    def setWillSave(value: NextSignature[TextDocumentWillSaveEvent, Unit]): Self = StObject.set(x, "willSave", value.asInstanceOf[js.Any])
+    inline def setWillSave(value: NextSignature[TextDocumentWillSaveEvent, Unit]): Self = StObject.set(x, "willSave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWillSaveUndefined: Self = StObject.set(x, "willSave", js.undefined)
+    inline def setWillSaveUndefined: Self = StObject.set(x, "willSave", js.undefined)
     
-    @scala.inline
-    def setWillSaveWaitUntil(value: NextSignature[TextDocumentWillSaveEvent, Thenable[js.Array[typings.vscode.mod.TextEdit]]]): Self = StObject.set(x, "willSaveWaitUntil", value.asInstanceOf[js.Any])
+    inline def setWillSaveWaitUntil(value: NextSignature[TextDocumentWillSaveEvent, Thenable[js.Array[typings.vscode.mod.TextEdit]]]): Self = StObject.set(x, "willSaveWaitUntil", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWillSaveWaitUntilUndefined: Self = StObject.set(x, "willSaveWaitUntil", js.undefined)
+    inline def setWillSaveWaitUntilUndefined: Self = StObject.set(x, "willSaveWaitUntil", js.undefined)
     
-    @scala.inline
-    def setWorkspace(value: WorkspaceMiddleware): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
+    inline def setWorkspace(value: WorkspaceMiddleware): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
+    inline def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
   }
 }

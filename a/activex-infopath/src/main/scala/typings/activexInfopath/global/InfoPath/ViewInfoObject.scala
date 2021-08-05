@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.ViewInfoObject")
 @js.native
-class ViewInfoObject protected ()
+/* private */ class ViewInfoObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.ViewInfoObject {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.ViewInfoObject_typekey")
   var InfoPathDotViewInfoObject_typekey: typings.activexInfopath.InfoPath.ViewInfoObject = js.native
   

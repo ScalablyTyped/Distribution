@@ -23,38 +23,31 @@ object data {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def avg(values: js.Array[Date | Double | String]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("avg")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def avg(values: js.Array[Date | Double | String]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("avg")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def count(values: js.Array[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def count(values: js.Array[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def group(
+  inline def group(
     data: typings.googleVisualization.google.visualization.DataTable,
     keys: js.Array[Double | GroupKeyOptions]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(data.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
-  @scala.inline
-  def group(
+  inline def group(
     data: typings.googleVisualization.google.visualization.DataTable,
     keys: js.Array[Double | GroupKeyOptions],
     columns: js.Array[GroupColumnOptions]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(data.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
-  @scala.inline
-  def group(
+  inline def group(
     data: typings.googleVisualization.google.visualization.DataView,
     keys: js.Array[Double | GroupKeyOptions]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(data.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
-  @scala.inline
-  def group(
+  inline def group(
     data: typings.googleVisualization.google.visualization.DataView,
     keys: js.Array[Double | GroupKeyOptions],
     columns: js.Array[GroupColumnOptions]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(data.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
   
   // https://developers.google.com/chart/interactive/docs/reference#join
-  @scala.inline
-  def join_full(
+  inline def join_full(
     dataA: typings.googleVisualization.google.visualization.DataTable,
     dataB: typings.googleVisualization.google.visualization.DataTable,
     joinMethod: full,
@@ -62,8 +55,7 @@ object data {
     columnsA: js.Array[Double],
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(dataA.asInstanceOf[js.Any], dataB.asInstanceOf[js.Any], joinMethod.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columnsA.asInstanceOf[js.Any], columnsB.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
-  @scala.inline
-  def join_full(
+  inline def join_full(
     dataA: typings.googleVisualization.google.visualization.DataTable,
     dataB: typings.googleVisualization.google.visualization.DataView,
     joinMethod: full,
@@ -71,8 +63,7 @@ object data {
     columnsA: js.Array[Double],
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(dataA.asInstanceOf[js.Any], dataB.asInstanceOf[js.Any], joinMethod.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columnsA.asInstanceOf[js.Any], columnsB.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
-  @scala.inline
-  def join_full(
+  inline def join_full(
     dataA: typings.googleVisualization.google.visualization.DataView,
     dataB: typings.googleVisualization.google.visualization.DataTable,
     joinMethod: full,
@@ -80,8 +71,7 @@ object data {
     columnsA: js.Array[Double],
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(dataA.asInstanceOf[js.Any], dataB.asInstanceOf[js.Any], joinMethod.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columnsA.asInstanceOf[js.Any], columnsB.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
-  @scala.inline
-  def join_full(
+  inline def join_full(
     dataA: typings.googleVisualization.google.visualization.DataView,
     dataB: typings.googleVisualization.google.visualization.DataView,
     joinMethod: full,
@@ -90,8 +80,7 @@ object data {
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(dataA.asInstanceOf[js.Any], dataB.asInstanceOf[js.Any], joinMethod.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columnsA.asInstanceOf[js.Any], columnsB.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
   
-  @scala.inline
-  def join_inner(
+  inline def join_inner(
     dataA: typings.googleVisualization.google.visualization.DataTable,
     dataB: typings.googleVisualization.google.visualization.DataTable,
     joinMethod: inner,
@@ -99,8 +88,7 @@ object data {
     columnsA: js.Array[Double],
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(dataA.asInstanceOf[js.Any], dataB.asInstanceOf[js.Any], joinMethod.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columnsA.asInstanceOf[js.Any], columnsB.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
-  @scala.inline
-  def join_inner(
+  inline def join_inner(
     dataA: typings.googleVisualization.google.visualization.DataTable,
     dataB: typings.googleVisualization.google.visualization.DataView,
     joinMethod: inner,
@@ -108,8 +96,7 @@ object data {
     columnsA: js.Array[Double],
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(dataA.asInstanceOf[js.Any], dataB.asInstanceOf[js.Any], joinMethod.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columnsA.asInstanceOf[js.Any], columnsB.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
-  @scala.inline
-  def join_inner(
+  inline def join_inner(
     dataA: typings.googleVisualization.google.visualization.DataView,
     dataB: typings.googleVisualization.google.visualization.DataTable,
     joinMethod: inner,
@@ -117,8 +104,7 @@ object data {
     columnsA: js.Array[Double],
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(dataA.asInstanceOf[js.Any], dataB.asInstanceOf[js.Any], joinMethod.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columnsA.asInstanceOf[js.Any], columnsB.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
-  @scala.inline
-  def join_inner(
+  inline def join_inner(
     dataA: typings.googleVisualization.google.visualization.DataView,
     dataB: typings.googleVisualization.google.visualization.DataView,
     joinMethod: inner,
@@ -127,8 +113,7 @@ object data {
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(dataA.asInstanceOf[js.Any], dataB.asInstanceOf[js.Any], joinMethod.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columnsA.asInstanceOf[js.Any], columnsB.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
   
-  @scala.inline
-  def join_left(
+  inline def join_left(
     dataA: typings.googleVisualization.google.visualization.DataTable,
     dataB: typings.googleVisualization.google.visualization.DataTable,
     joinMethod: left,
@@ -136,8 +121,7 @@ object data {
     columnsA: js.Array[Double],
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(dataA.asInstanceOf[js.Any], dataB.asInstanceOf[js.Any], joinMethod.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columnsA.asInstanceOf[js.Any], columnsB.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
-  @scala.inline
-  def join_left(
+  inline def join_left(
     dataA: typings.googleVisualization.google.visualization.DataTable,
     dataB: typings.googleVisualization.google.visualization.DataView,
     joinMethod: left,
@@ -145,8 +129,7 @@ object data {
     columnsA: js.Array[Double],
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(dataA.asInstanceOf[js.Any], dataB.asInstanceOf[js.Any], joinMethod.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columnsA.asInstanceOf[js.Any], columnsB.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
-  @scala.inline
-  def join_left(
+  inline def join_left(
     dataA: typings.googleVisualization.google.visualization.DataView,
     dataB: typings.googleVisualization.google.visualization.DataTable,
     joinMethod: left,
@@ -154,8 +137,7 @@ object data {
     columnsA: js.Array[Double],
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(dataA.asInstanceOf[js.Any], dataB.asInstanceOf[js.Any], joinMethod.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columnsA.asInstanceOf[js.Any], columnsB.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
-  @scala.inline
-  def join_left(
+  inline def join_left(
     dataA: typings.googleVisualization.google.visualization.DataView,
     dataB: typings.googleVisualization.google.visualization.DataView,
     joinMethod: left,
@@ -164,8 +146,7 @@ object data {
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(dataA.asInstanceOf[js.Any], dataB.asInstanceOf[js.Any], joinMethod.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columnsA.asInstanceOf[js.Any], columnsB.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
   
-  @scala.inline
-  def join_right(
+  inline def join_right(
     dataA: typings.googleVisualization.google.visualization.DataTable,
     dataB: typings.googleVisualization.google.visualization.DataTable,
     joinMethod: right,
@@ -173,8 +154,7 @@ object data {
     columnsA: js.Array[Double],
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(dataA.asInstanceOf[js.Any], dataB.asInstanceOf[js.Any], joinMethod.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columnsA.asInstanceOf[js.Any], columnsB.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
-  @scala.inline
-  def join_right(
+  inline def join_right(
     dataA: typings.googleVisualization.google.visualization.DataTable,
     dataB: typings.googleVisualization.google.visualization.DataView,
     joinMethod: right,
@@ -182,8 +162,7 @@ object data {
     columnsA: js.Array[Double],
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(dataA.asInstanceOf[js.Any], dataB.asInstanceOf[js.Any], joinMethod.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columnsA.asInstanceOf[js.Any], columnsB.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
-  @scala.inline
-  def join_right(
+  inline def join_right(
     dataA: typings.googleVisualization.google.visualization.DataView,
     dataB: typings.googleVisualization.google.visualization.DataTable,
     joinMethod: right,
@@ -191,8 +170,7 @@ object data {
     columnsA: js.Array[Double],
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(dataA.asInstanceOf[js.Any], dataB.asInstanceOf[js.Any], joinMethod.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columnsA.asInstanceOf[js.Any], columnsB.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
-  @scala.inline
-  def join_right(
+  inline def join_right(
     dataA: typings.googleVisualization.google.visualization.DataView,
     dataB: typings.googleVisualization.google.visualization.DataView,
     joinMethod: right,
@@ -201,17 +179,13 @@ object data {
     columnsB: js.Array[Double]
   ): typings.googleVisualization.google.visualization.DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(dataA.asInstanceOf[js.Any], dataB.asInstanceOf[js.Any], joinMethod.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], columnsA.asInstanceOf[js.Any], columnsB.asInstanceOf[js.Any])).asInstanceOf[typings.googleVisualization.google.visualization.DataTable]
   
-  @scala.inline
-  def max(values: js.Array[Date | Double | String]): Double | String | Date = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(values.asInstanceOf[js.Any]).asInstanceOf[Double | String | Date]
+  inline def max(values: js.Array[Date | Double | String]): Double | String | Date = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(values.asInstanceOf[js.Any]).asInstanceOf[Double | String | Date]
   
-  @scala.inline
-  def min(values: js.Array[Date | Double | String]): Double | String | Date = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(values.asInstanceOf[js.Any]).asInstanceOf[Double | String | Date]
+  inline def min(values: js.Array[Date | Double | String]): Double | String | Date = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(values.asInstanceOf[js.Any]).asInstanceOf[Double | String | Date]
   
   // https://developers.google.com/chart/interactive/docs/reference#data_modifier_functions
-  @scala.inline
-  def month(value: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("month")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def month(value: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("month")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   // https://developers.google.com/chart/interactive/docs/reference#group
-  @scala.inline
-  def sum(values: js.Array[Date | Double | String]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def sum(values: js.Array[Date | Double | String]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

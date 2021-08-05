@@ -9,6 +9,5 @@ object global {
   @JSGlobal("progressJs")
   @js.native
   def progressJs: ProgressJsStatic = js.native
-  @scala.inline
-  def progressJs_=(x: ProgressJsStatic): Unit = js.Dynamic.global.updateDynamic("progressJs")(x.asInstanceOf[js.Any])
+  inline def progressJs_=(x: ProgressJsStatic): Unit = js.Dynamic.global.updateDynamic("progressJs")(x.asInstanceOf[js.Any])
 }

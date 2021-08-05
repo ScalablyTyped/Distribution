@@ -20,16 +20,13 @@ trait ModeStatic extends StObject {
 }
 object ModeStatic {
   
-  @scala.inline
-  def apply(create: (Cipher, js.Array[Double]) => Mode_): ModeStatic = {
+  inline def apply(create: (Cipher, js.Array[Double]) => Mode_): ModeStatic = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create))
     __obj.asInstanceOf[ModeStatic]
   }
   
-  @scala.inline
-  implicit class ModeStaticMutableBuilder[Self <: ModeStatic] (val x: Self) extends AnyVal {
+  extension [Self <: ModeStatic](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (Cipher, js.Array[Double]) => Mode_): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (Cipher, js.Array[Double]) => Mode_): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
   }
 }

@@ -22,19 +22,15 @@ trait EnumerateMethodsMatchClass extends StObject {
 }
 object EnumerateMethodsMatchClass {
   
-  @scala.inline
-  def apply(methods: Array[String], name: String): EnumerateMethodsMatchClass = {
+  inline def apply(methods: Array[String], name: String): EnumerateMethodsMatchClass = {
     val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumerateMethodsMatchClass]
   }
   
-  @scala.inline
-  implicit class EnumerateMethodsMatchClassMutableBuilder[Self <: EnumerateMethodsMatchClass] (val x: Self) extends AnyVal {
+  extension [Self <: EnumerateMethodsMatchClass](x: Self) {
     
-    @scala.inline
-    def setMethods(value: Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+    inline def setMethods(value: Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

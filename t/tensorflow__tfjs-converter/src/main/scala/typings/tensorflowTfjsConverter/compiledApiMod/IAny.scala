@@ -15,31 +15,23 @@ trait IAny extends StObject {
 }
 object IAny {
   
-  @scala.inline
-  def apply(): IAny = {
+  inline def apply(): IAny = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAny]
   }
   
-  @scala.inline
-  implicit class IAnyMutableBuilder[Self <: IAny] (val x: Self) extends AnyVal {
+  extension [Self <: IAny](x: Self) {
     
-    @scala.inline
-    def setTypeUrl(value: String): Self = StObject.set(x, "typeUrl", value.asInstanceOf[js.Any])
+    inline def setTypeUrl(value: String): Self = StObject.set(x, "typeUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUrlNull: Self = StObject.set(x, "typeUrl", null)
+    inline def setTypeUrlNull: Self = StObject.set(x, "typeUrl", null)
     
-    @scala.inline
-    def setTypeUrlUndefined: Self = StObject.set(x, "typeUrl", js.undefined)
+    inline def setTypeUrlUndefined: Self = StObject.set(x, "typeUrl", js.undefined)
     
-    @scala.inline
-    def setValue(value: Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

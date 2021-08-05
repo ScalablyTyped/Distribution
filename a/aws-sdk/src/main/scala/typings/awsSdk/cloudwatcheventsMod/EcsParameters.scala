@@ -38,46 +38,33 @@ trait EcsParameters extends StObject {
 }
 object EcsParameters {
   
-  @scala.inline
-  def apply(TaskDefinitionArn: Arn): EcsParameters = {
+  inline def apply(TaskDefinitionArn: Arn): EcsParameters = {
     val __obj = js.Dynamic.literal(TaskDefinitionArn = TaskDefinitionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[EcsParameters]
   }
   
-  @scala.inline
-  implicit class EcsParametersMutableBuilder[Self <: EcsParameters] (val x: Self) extends AnyVal {
+  extension [Self <: EcsParameters](x: Self) {
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
     
-    @scala.inline
-    def setLaunchType(value: LaunchType): Self = StObject.set(x, "LaunchType", value.asInstanceOf[js.Any])
+    inline def setLaunchType(value: LaunchType): Self = StObject.set(x, "LaunchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTypeUndefined: Self = StObject.set(x, "LaunchType", js.undefined)
+    inline def setLaunchTypeUndefined: Self = StObject.set(x, "LaunchType", js.undefined)
     
-    @scala.inline
-    def setNetworkConfiguration(value: NetworkConfiguration): Self = StObject.set(x, "NetworkConfiguration", value.asInstanceOf[js.Any])
+    inline def setNetworkConfiguration(value: NetworkConfiguration): Self = StObject.set(x, "NetworkConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkConfigurationUndefined: Self = StObject.set(x, "NetworkConfiguration", js.undefined)
+    inline def setNetworkConfigurationUndefined: Self = StObject.set(x, "NetworkConfiguration", js.undefined)
     
-    @scala.inline
-    def setPlatformVersion(value: String): Self = StObject.set(x, "PlatformVersion", value.asInstanceOf[js.Any])
+    inline def setPlatformVersion(value: String): Self = StObject.set(x, "PlatformVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformVersionUndefined: Self = StObject.set(x, "PlatformVersion", js.undefined)
+    inline def setPlatformVersionUndefined: Self = StObject.set(x, "PlatformVersion", js.undefined)
     
-    @scala.inline
-    def setTaskCount(value: LimitMin1): Self = StObject.set(x, "TaskCount", value.asInstanceOf[js.Any])
+    inline def setTaskCount(value: LimitMin1): Self = StObject.set(x, "TaskCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskCountUndefined: Self = StObject.set(x, "TaskCount", js.undefined)
+    inline def setTaskCountUndefined: Self = StObject.set(x, "TaskCount", js.undefined)
     
-    @scala.inline
-    def setTaskDefinitionArn(value: Arn): Self = StObject.set(x, "TaskDefinitionArn", value.asInstanceOf[js.Any])
+    inline def setTaskDefinitionArn(value: Arn): Self = StObject.set(x, "TaskDefinitionArn", value.asInstanceOf[js.Any])
   }
 }

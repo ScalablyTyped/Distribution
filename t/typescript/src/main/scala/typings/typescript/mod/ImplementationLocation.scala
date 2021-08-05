@@ -14,8 +14,7 @@ trait ImplementationLocation
 }
 object ImplementationLocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayParts: js.Array[SymbolDisplayPart],
     fileName: java.lang.String,
     kind: ScriptElementKind,
@@ -25,16 +24,12 @@ object ImplementationLocation {
     __obj.asInstanceOf[ImplementationLocation]
   }
   
-  @scala.inline
-  implicit class ImplementationLocationMutableBuilder[Self <: ImplementationLocation] (val x: Self) extends AnyVal {
+  extension [Self <: ImplementationLocation](x: Self) {
     
-    @scala.inline
-    def setDisplayParts(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "displayParts", value.asInstanceOf[js.Any])
+    inline def setDisplayParts(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "displayParts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayPartsVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "displayParts", js.Array(value :_*))
+    inline def setDisplayPartsVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "displayParts", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

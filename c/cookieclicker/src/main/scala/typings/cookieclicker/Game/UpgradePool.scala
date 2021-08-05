@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpgradePool extends StObject
 object UpgradePool {
   
-  @scala.inline
-  def _empty: typings.cookieclicker.cookieclickerStrings._empty = "".asInstanceOf[typings.cookieclicker.cookieclickerStrings._empty]
+  inline def _empty: typings.cookieclicker.cookieclickerStrings._empty = "".asInstanceOf[typings.cookieclicker.cookieclickerStrings._empty]
   
-  @scala.inline
-  def cookie: typings.cookieclicker.cookieclickerStrings.cookie = "cookie".asInstanceOf[typings.cookieclicker.cookieclickerStrings.cookie]
+  inline def cookie: typings.cookieclicker.cookieclickerStrings.cookie = "cookie".asInstanceOf[typings.cookieclicker.cookieclickerStrings.cookie]
   
-  @scala.inline
-  def debug: typings.cookieclicker.cookieclickerStrings.debug = "debug".asInstanceOf[typings.cookieclicker.cookieclickerStrings.debug]
+  inline def debug: typings.cookieclicker.cookieclickerStrings.debug = "debug".asInstanceOf[typings.cookieclicker.cookieclickerStrings.debug]
   
-  @scala.inline
-  def prestige: typings.cookieclicker.cookieclickerStrings.prestige = "prestige".asInstanceOf[typings.cookieclicker.cookieclickerStrings.prestige]
+  inline def prestige: typings.cookieclicker.cookieclickerStrings.prestige = "prestige".asInstanceOf[typings.cookieclicker.cookieclickerStrings.prestige]
   
-  @scala.inline
-  def prestigeDecor: typings.cookieclicker.cookieclickerStrings.prestigeDecor = "prestigeDecor".asInstanceOf[typings.cookieclicker.cookieclickerStrings.prestigeDecor]
+  inline def prestigeDecor: typings.cookieclicker.cookieclickerStrings.prestigeDecor = "prestigeDecor".asInstanceOf[typings.cookieclicker.cookieclickerStrings.prestigeDecor]
   
-  @scala.inline
-  def tech: typings.cookieclicker.cookieclickerStrings.tech = "tech".asInstanceOf[typings.cookieclicker.cookieclickerStrings.tech]
+  inline def tech: typings.cookieclicker.cookieclickerStrings.tech = "tech".asInstanceOf[typings.cookieclicker.cookieclickerStrings.tech]
   
-  @scala.inline
-  def toggle: typings.cookieclicker.cookieclickerStrings.toggle = "toggle".asInstanceOf[typings.cookieclicker.cookieclickerStrings.toggle]
+  inline def toggle: typings.cookieclicker.cookieclickerStrings.toggle = "toggle".asInstanceOf[typings.cookieclicker.cookieclickerStrings.toggle]
   
-  @scala.inline
-  def unused: typings.cookieclicker.cookieclickerStrings.unused = "unused".asInstanceOf[typings.cookieclicker.cookieclickerStrings.unused]
+  inline def unused: typings.cookieclicker.cookieclickerStrings.unused = "unused".asInstanceOf[typings.cookieclicker.cookieclickerStrings.unused]
 }

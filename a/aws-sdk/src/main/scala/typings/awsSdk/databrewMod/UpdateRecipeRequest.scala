@@ -23,31 +23,23 @@ trait UpdateRecipeRequest extends StObject {
 }
 object UpdateRecipeRequest {
   
-  @scala.inline
-  def apply(Name: RecipeName): UpdateRecipeRequest = {
+  inline def apply(Name: RecipeName): UpdateRecipeRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRecipeRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRecipeRequestMutableBuilder[Self <: UpdateRecipeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRecipeRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: RecipeDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: RecipeDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSteps(value: RecipeStepList): Self = StObject.set(x, "Steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: RecipeStepList): Self = StObject.set(x, "Steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsUndefined: Self = StObject.set(x, "Steps", js.undefined)
+    inline def setStepsUndefined: Self = StObject.set(x, "Steps", js.undefined)
     
-    @scala.inline
-    def setStepsVarargs(value: RecipeStep*): Self = StObject.set(x, "Steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: RecipeStep*): Self = StObject.set(x, "Steps", js.Array(value :_*))
   }
 }

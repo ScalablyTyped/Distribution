@@ -34,13 +34,13 @@ object touchBackendImplMod {
       */
     def _getDropTargetId(node: Element): js.UndefOr[Identifier] = js.native
     
-    var _isScrolling: js.Any = js.native
+    /* private */ var _isScrolling: js.Any = js.native
     
-    var _mouseClientOffset: js.Any = js.native
+    /* private */ var _mouseClientOffset: js.Any = js.native
     
-    var actions: js.Any = js.native
+    /* private */ var actions: js.Any = js.native
     
-    var addEventListener: js.Any = js.native
+    /* private */ var addEventListener: js.Any = js.native
     
     def connectDragPreview(sourceId: String, node: HTMLElement, options: js.Any): Unsubscribe = js.native
     
@@ -50,15 +50,15 @@ object touchBackendImplMod {
     
     def document: js.UndefOr[Document] = js.native
     
-    var dragOverTargetIds: js.Any = js.native
+    /* private */ var dragOverTargetIds: js.Any = js.native
     
-    var draggedSourceNode: js.Any = js.native
+    /* private */ var draggedSourceNode: js.Any = js.native
     
-    var draggedSourceNodeRemovalObserver: js.Any = js.native
+    /* private */ var draggedSourceNodeRemovalObserver: js.Any = js.native
     
-    var getSourceClientOffset: js.Any = js.native
+    /* private */ var getSourceClientOffset: js.Any = js.native
     
-    var getTopMoveStartHandler: js.Any = js.native
+    /* private */ var getTopMoveStartHandler: js.Any = js.native
     
     def handleCancelOnEscape(e: KeyboardEvent): Unit = js.native
     
@@ -81,21 +81,21 @@ object touchBackendImplMod {
     
     def handleTopMoveStartDelay(e: Event): Unit = js.native
     
-    var installSourceNodeRemovalObserver: js.Any = js.native
+    /* private */ var installSourceNodeRemovalObserver: js.Any = js.native
     
-    var lastTargetTouchFallback: js.Any = js.native
+    /* private */ var lastTargetTouchFallback: js.Any = js.native
     
-    var listenerTypes: js.Any = js.native
+    /* private */ var listenerTypes: js.Any = js.native
     
-    var monitor: js.Any = js.native
+    /* private */ var monitor: js.Any = js.native
     
-    var moveStartSourceIds: js.Any = js.native
+    /* private */ var moveStartSourceIds: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
-    var removeEventListener: js.Any = js.native
+    /* private */ var removeEventListener: js.Any = js.native
     
-    var resurrectSourceNode: js.Any = js.native
+    /* private */ var resurrectSourceNode: js.Any = js.native
     
     var sourceNodes: Map[Identifier, HTMLElement] = js.native
     
@@ -105,11 +105,11 @@ object touchBackendImplMod {
     
     var targetNodes: Map[String, HTMLElement] = js.native
     
-    var timeout: js.Any = js.native
+    /* private */ var timeout: js.Any = js.native
     
-    var uninstallSourceNodeRemovalObserver: js.Any = js.native
+    /* private */ var uninstallSourceNodeRemovalObserver: js.Any = js.native
     
-    var waitingForDelay: js.Any = js.native
+    /* private */ var waitingForDelay: js.Any = js.native
     
     def window: js.UndefOr[Window] = js.native
   }
@@ -123,7 +123,6 @@ object touchBackendImplMod {
     @JSImport("react-dnd-touch-backend/lib/TouchBackendImpl", "TouchBackendImpl.isSetUp")
     @js.native
     def isSetUp: js.Any = js.native
-    @scala.inline
-    def isSetUp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSetUp")(x.asInstanceOf[js.Any])
+    inline def isSetUp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSetUp")(x.asInstanceOf[js.Any])
   }
 }

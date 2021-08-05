@@ -40,8 +40,7 @@ trait PhotoImportSession extends StObject {
 }
 object PhotoImportSession {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendSessionDateToDestinationFolder: Boolean,
     close: () => Unit,
     destinationFileNamePrefix: String,
@@ -55,33 +54,24 @@ object PhotoImportSession {
     __obj.asInstanceOf[PhotoImportSession]
   }
   
-  @scala.inline
-  implicit class PhotoImportSessionMutableBuilder[Self <: PhotoImportSession] (val x: Self) extends AnyVal {
+  extension [Self <: PhotoImportSession](x: Self) {
     
-    @scala.inline
-    def setAppendSessionDateToDestinationFolder(value: Boolean): Self = StObject.set(x, "appendSessionDateToDestinationFolder", value.asInstanceOf[js.Any])
+    inline def setAppendSessionDateToDestinationFolder(value: Boolean): Self = StObject.set(x, "appendSessionDateToDestinationFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDestinationFileNamePrefix(value: String): Self = StObject.set(x, "destinationFileNamePrefix", value.asInstanceOf[js.Any])
+    inline def setDestinationFileNamePrefix(value: String): Self = StObject.set(x, "destinationFileNamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationFolder(value: IStorageFolder): Self = StObject.set(x, "destinationFolder", value.asInstanceOf[js.Any])
+    inline def setDestinationFolder(value: IStorageFolder): Self = StObject.set(x, "destinationFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindItemsAsync(
+    inline def setFindItemsAsync(
       value: (PhotoImportContentTypeFilter, PhotoImportItemSelectionMode) => IPromiseWithIAsyncOperationWithProgress[PhotoImportFindItemsResult, Double]
     ): Self = StObject.set(x, "findItemsAsync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: PhotoImportSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: PhotoImportSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubfolderCreationMode(value: PhotoImportSubfolderCreationMode): Self = StObject.set(x, "subfolderCreationMode", value.asInstanceOf[js.Any])
+    inline def setSubfolderCreationMode(value: PhotoImportSubfolderCreationMode): Self = StObject.set(x, "subfolderCreationMode", value.asInstanceOf[js.Any])
   }
 }

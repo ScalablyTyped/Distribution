@@ -13,19 +13,15 @@ trait DeleteEvaluationOutput extends StObject {
 }
 object DeleteEvaluationOutput {
   
-  @scala.inline
-  def apply(): DeleteEvaluationOutput = {
+  inline def apply(): DeleteEvaluationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteEvaluationOutput]
   }
   
-  @scala.inline
-  implicit class DeleteEvaluationOutputMutableBuilder[Self <: DeleteEvaluationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEvaluationOutput](x: Self) {
     
-    @scala.inline
-    def setEvaluationId(value: EntityId): Self = StObject.set(x, "EvaluationId", value.asInstanceOf[js.Any])
+    inline def setEvaluationId(value: EntityId): Self = StObject.set(x, "EvaluationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationIdUndefined: Self = StObject.set(x, "EvaluationId", js.undefined)
+    inline def setEvaluationIdUndefined: Self = StObject.set(x, "EvaluationId", js.undefined)
   }
 }

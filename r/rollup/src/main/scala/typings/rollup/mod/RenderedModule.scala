@@ -16,8 +16,7 @@ trait RenderedModule extends StObject {
 }
 object RenderedModule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     originalLength: Double,
     removedExports: js.Array[String],
     renderedExports: js.Array[String],
@@ -27,25 +26,18 @@ object RenderedModule {
     __obj.asInstanceOf[RenderedModule]
   }
   
-  @scala.inline
-  implicit class RenderedModuleMutableBuilder[Self <: RenderedModule] (val x: Self) extends AnyVal {
+  extension [Self <: RenderedModule](x: Self) {
     
-    @scala.inline
-    def setOriginalLength(value: Double): Self = StObject.set(x, "originalLength", value.asInstanceOf[js.Any])
+    inline def setOriginalLength(value: Double): Self = StObject.set(x, "originalLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedExports(value: js.Array[String]): Self = StObject.set(x, "removedExports", value.asInstanceOf[js.Any])
+    inline def setRemovedExports(value: js.Array[String]): Self = StObject.set(x, "removedExports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedExportsVarargs(value: String*): Self = StObject.set(x, "removedExports", js.Array(value :_*))
+    inline def setRemovedExportsVarargs(value: String*): Self = StObject.set(x, "removedExports", js.Array(value :_*))
     
-    @scala.inline
-    def setRenderedExports(value: js.Array[String]): Self = StObject.set(x, "renderedExports", value.asInstanceOf[js.Any])
+    inline def setRenderedExports(value: js.Array[String]): Self = StObject.set(x, "renderedExports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderedExportsVarargs(value: String*): Self = StObject.set(x, "renderedExports", js.Array(value :_*))
+    inline def setRenderedExportsVarargs(value: String*): Self = StObject.set(x, "renderedExports", js.Array(value :_*))
     
-    @scala.inline
-    def setRenderedLength(value: Double): Self = StObject.set(x, "renderedLength", value.asInstanceOf[js.Any])
+    inline def setRenderedLength(value: Double): Self = StObject.set(x, "renderedLength", value.asInstanceOf[js.Any])
   }
 }

@@ -25,31 +25,23 @@ trait GoogleMapsPlayablelocationsV3SampleCriterion extends StObject {
 }
 object GoogleMapsPlayablelocationsV3SampleCriterion {
   
-  @scala.inline
-  def apply(): GoogleMapsPlayablelocationsV3SampleCriterion = {
+  inline def apply(): GoogleMapsPlayablelocationsV3SampleCriterion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3SampleCriterion]
   }
   
-  @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3SampleCriterionMutableBuilder[Self <: GoogleMapsPlayablelocationsV3SampleCriterion] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleMapsPlayablelocationsV3SampleCriterion](x: Self) {
     
-    @scala.inline
-    def setFieldsToReturn(value: String): Self = StObject.set(x, "fieldsToReturn", value.asInstanceOf[js.Any])
+    inline def setFieldsToReturn(value: String): Self = StObject.set(x, "fieldsToReturn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsToReturnUndefined: Self = StObject.set(x, "fieldsToReturn", js.undefined)
+    inline def setFieldsToReturnUndefined: Self = StObject.set(x, "fieldsToReturn", js.undefined)
     
-    @scala.inline
-    def setFilter(value: GoogleMapsPlayablelocationsV3SampleFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: GoogleMapsPlayablelocationsV3SampleFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setGameObjectType(value: Double): Self = StObject.set(x, "gameObjectType", value.asInstanceOf[js.Any])
+    inline def setGameObjectType(value: Double): Self = StObject.set(x, "gameObjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameObjectTypeUndefined: Self = StObject.set(x, "gameObjectType", js.undefined)
+    inline def setGameObjectTypeUndefined: Self = StObject.set(x, "gameObjectType", js.undefined)
   }
 }

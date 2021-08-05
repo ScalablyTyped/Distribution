@@ -23,37 +23,27 @@ trait SocksClientChainOptions extends StObject {
 }
 object SocksClientChainOptions {
   
-  @scala.inline
-  def apply(destination: SocksRemoteHost, proxies: js.Array[SocksProxy]): SocksClientChainOptions = {
+  inline def apply(destination: SocksRemoteHost, proxies: js.Array[SocksProxy]): SocksClientChainOptions = {
     val __obj = js.Dynamic.literal(command = "connect", destination = destination.asInstanceOf[js.Any], proxies = proxies.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocksClientChainOptions]
   }
   
-  @scala.inline
-  implicit class SocksClientChainOptionsMutableBuilder[Self <: SocksClientChainOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SocksClientChainOptions](x: Self) {
     
-    @scala.inline
-    def setCommand(value: connect): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: connect): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestination(value: SocksRemoteHost): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: SocksRemoteHost): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxies(value: js.Array[SocksProxy]): Self = StObject.set(x, "proxies", value.asInstanceOf[js.Any])
+    inline def setProxies(value: js.Array[SocksProxy]): Self = StObject.set(x, "proxies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxiesVarargs(value: SocksProxy*): Self = StObject.set(x, "proxies", js.Array(value :_*))
+    inline def setProxiesVarargs(value: SocksProxy*): Self = StObject.set(x, "proxies", js.Array(value :_*))
     
-    @scala.inline
-    def setRandomizeChain(value: `false`): Self = StObject.set(x, "randomizeChain", value.asInstanceOf[js.Any])
+    inline def setRandomizeChain(value: `false`): Self = StObject.set(x, "randomizeChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandomizeChainUndefined: Self = StObject.set(x, "randomizeChain", js.undefined)
+    inline def setRandomizeChainUndefined: Self = StObject.set(x, "randomizeChain", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

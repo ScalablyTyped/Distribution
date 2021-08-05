@@ -102,8 +102,7 @@ object IfStatementSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     ifKeyword: ISyntaxToken,
     openParenToken: ISyntaxToken,
     condition: IExpressionSyntax,
@@ -112,6 +111,5 @@ object IfStatementSyntax {
   ): typings.typescriptServices.TypeScript.IfStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(ifKeyword.asInstanceOf[js.Any], openParenToken.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], closeParenToken.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.IfStatementSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(condition: IExpressionSyntax, statement: IStatementSyntax): typings.typescriptServices.TypeScript.IfStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(condition.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.IfStatementSyntax]
+  inline def create1(condition: IExpressionSyntax, statement: IStatementSyntax): typings.typescriptServices.TypeScript.IfStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(condition.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.IfStatementSyntax]
 }

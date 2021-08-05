@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "url-variables"
-version := "1.0.3-a8476b"
+version := "1.0.3-ea6fb9"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

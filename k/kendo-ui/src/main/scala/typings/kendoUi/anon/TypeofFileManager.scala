@@ -15,19 +15,15 @@ trait TypeofFileManager extends StObject {
 }
 object TypeofFileManager {
   
-  @scala.inline
-  def apply(extend: js.Object => FileManager, fn: FileManager): TypeofFileManager = {
+  inline def apply(extend: js.Object => FileManager, fn: FileManager): TypeofFileManager = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofFileManager]
   }
   
-  @scala.inline
-  implicit class TypeofFileManagerMutableBuilder[Self <: TypeofFileManager] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofFileManager](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => FileManager): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => FileManager): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: FileManager): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: FileManager): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

@@ -48,18 +48,13 @@ object mod {
     def parse(uri: String): UriObject = js.native
   }
   
-  @scala.inline
-  def format(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")().asInstanceOf[String]
-  @scala.inline
-  def format(uriObject: UriObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(uriObject.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def format(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")().asInstanceOf[String]
+  inline def format(uriObject: UriObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(uriObject.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def formatMongoose(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMongoose")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def formatMongoose(uri: UriObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMongoose")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatMongoose(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMongoose")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatMongoose(uri: UriObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMongoose")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def parse(uri: String): UriObject = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(uri.asInstanceOf[js.Any]).asInstanceOf[UriObject]
+  inline def parse(uri: String): UriObject = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(uri.asInstanceOf[js.Any]).asInstanceOf[UriObject]
   
   trait Host extends StObject {
     
@@ -69,23 +64,18 @@ object mod {
   }
   object Host {
     
-    @scala.inline
-    def apply(host: String): Host = {
+    inline def apply(host: String): Host = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
       __obj.asInstanceOf[Host]
     }
     
-    @scala.inline
-    implicit class HostMutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
+    extension [Self <: Host](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
   
@@ -105,47 +95,34 @@ object mod {
   }
   object UriObject {
     
-    @scala.inline
-    def apply(hosts: js.Array[Host], scheme: String): UriObject = {
+    inline def apply(hosts: js.Array[Host], scheme: String): UriObject = {
       val __obj = js.Dynamic.literal(hosts = hosts.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
       __obj.asInstanceOf[UriObject]
     }
     
-    @scala.inline
-    implicit class UriObjectMutableBuilder[Self <: UriObject] (val x: Self) extends AnyVal {
+    extension [Self <: UriObject](x: Self) {
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+      inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
       
-      @scala.inline
-      def setHosts(value: js.Array[Host]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+      inline def setHosts(value: js.Array[Host]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostsVarargs(value: Host*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+      inline def setHostsVarargs(value: Host*): Self = StObject.set(x, "hosts", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
@@ -155,17 +132,14 @@ object mod {
   }
   object parserOptions {
     
-    @scala.inline
-    def apply(scheme: String): parserOptions = {
+    inline def apply(scheme: String): parserOptions = {
       val __obj = js.Dynamic.literal(scheme = scheme.asInstanceOf[js.Any])
       __obj.asInstanceOf[parserOptions]
     }
     
-    @scala.inline
-    implicit class parserOptionsMutableBuilder[Self <: parserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: parserOptions](x: Self) {
       
-      @scala.inline
-      def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     }
   }
 }

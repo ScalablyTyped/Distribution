@@ -12,8 +12,7 @@ trait ASPxClientWeeklyRecurrenceControl
      with ASPxClientRecurrenceControlBase
 object ASPxClientWeeklyRecurrenceControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     CreateValueAccessor: () => DefaultRecurrenceRuleValuesAccessor,
     GetClientVisible: () => Boolean,

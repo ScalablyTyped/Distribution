@@ -14,22 +14,17 @@ trait AuthError extends StObject {
 }
 object AuthError {
   
-  @scala.inline
-  def apply(code: String, description: String, uri: String): AuthError = {
+  inline def apply(code: String, description: String, uri: String): AuthError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthError]
   }
   
-  @scala.inline
-  implicit class AuthErrorMutableBuilder[Self <: AuthError] (val x: Self) extends AnyVal {
+  extension [Self <: AuthError](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

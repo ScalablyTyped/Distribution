@@ -18,25 +18,19 @@ trait WatchCreativesResponse extends StObject {
 }
 object WatchCreativesResponse {
   
-  @scala.inline
-  def apply(): WatchCreativesResponse = {
+  inline def apply(): WatchCreativesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WatchCreativesResponse]
   }
   
-  @scala.inline
-  implicit class WatchCreativesResponseMutableBuilder[Self <: WatchCreativesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: WatchCreativesResponse](x: Self) {
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

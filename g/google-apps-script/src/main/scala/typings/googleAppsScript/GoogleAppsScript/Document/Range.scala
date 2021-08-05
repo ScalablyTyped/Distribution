@@ -38,19 +38,15 @@ trait Range extends StObject {
 }
 object Range {
   
-  @scala.inline
-  def apply(getRangeElements: () => js.Array[RangeElement], getSelectedElements: () => js.Array[RangeElement]): Range = {
+  inline def apply(getRangeElements: () => js.Array[RangeElement], getSelectedElements: () => js.Array[RangeElement]): Range = {
     val __obj = js.Dynamic.literal(getRangeElements = js.Any.fromFunction0(getRangeElements), getSelectedElements = js.Any.fromFunction0(getSelectedElements))
     __obj.asInstanceOf[Range]
   }
   
-  @scala.inline
-  implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+  extension [Self <: Range](x: Self) {
     
-    @scala.inline
-    def setGetRangeElements(value: () => js.Array[RangeElement]): Self = StObject.set(x, "getRangeElements", js.Any.fromFunction0(value))
+    inline def setGetRangeElements(value: () => js.Array[RangeElement]): Self = StObject.set(x, "getRangeElements", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedElements(value: () => js.Array[RangeElement]): Self = StObject.set(x, "getSelectedElements", js.Any.fromFunction0(value))
+    inline def setGetSelectedElements(value: () => js.Array[RangeElement]): Self = StObject.set(x, "getSelectedElements", js.Any.fromFunction0(value))
   }
 }

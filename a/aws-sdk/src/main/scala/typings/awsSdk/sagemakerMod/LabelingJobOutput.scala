@@ -18,22 +18,17 @@ trait LabelingJobOutput extends StObject {
 }
 object LabelingJobOutput {
   
-  @scala.inline
-  def apply(OutputDatasetS3Uri: S3Uri): LabelingJobOutput = {
+  inline def apply(OutputDatasetS3Uri: S3Uri): LabelingJobOutput = {
     val __obj = js.Dynamic.literal(OutputDatasetS3Uri = OutputDatasetS3Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelingJobOutput]
   }
   
-  @scala.inline
-  implicit class LabelingJobOutputMutableBuilder[Self <: LabelingJobOutput] (val x: Self) extends AnyVal {
+  extension [Self <: LabelingJobOutput](x: Self) {
     
-    @scala.inline
-    def setFinalActiveLearningModelArn(value: ModelArn): Self = StObject.set(x, "FinalActiveLearningModelArn", value.asInstanceOf[js.Any])
+    inline def setFinalActiveLearningModelArn(value: ModelArn): Self = StObject.set(x, "FinalActiveLearningModelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalActiveLearningModelArnUndefined: Self = StObject.set(x, "FinalActiveLearningModelArn", js.undefined)
+    inline def setFinalActiveLearningModelArnUndefined: Self = StObject.set(x, "FinalActiveLearningModelArn", js.undefined)
     
-    @scala.inline
-    def setOutputDatasetS3Uri(value: S3Uri): Self = StObject.set(x, "OutputDatasetS3Uri", value.asInstanceOf[js.Any])
+    inline def setOutputDatasetS3Uri(value: S3Uri): Self = StObject.set(x, "OutputDatasetS3Uri", value.asInstanceOf[js.Any])
   }
 }

@@ -438,8 +438,7 @@ trait IntrinsicElements extends StObject {
 }
 object IntrinsicElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     a: HTMLAttributes[HTMLAnchorElement],
     abbr: HTMLAttributes[HTMLElement],
     address: HTMLAttributes[HTMLElement],
@@ -607,487 +606,326 @@ object IntrinsicElements {
     __obj.asInstanceOf[IntrinsicElements]
   }
   
-  @scala.inline
-  implicit class IntrinsicElementsMutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
+  extension [Self <: IntrinsicElements](x: Self) {
     
-    @scala.inline
-    def setA(value: HTMLAttributes[HTMLAnchorElement]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: HTMLAttributes[HTMLAnchorElement]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbbr(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
+    inline def setAbbr(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddress(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimate(value: SVGAttributes[SVGAnimateElement]): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: SVGAttributes[SVGAnimateElement]): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateTransform(value: SVGAttributes[SVGAnimateElement]): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
+    inline def setAnimateTransform(value: SVGAttributes[SVGAnimateElement]): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArea(value: HTMLAttributes[HTMLAreaElement]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: HTMLAttributes[HTMLAreaElement]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArticle(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "article", value.asInstanceOf[js.Any])
+    inline def setArticle(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "article", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAside(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "aside", value.asInstanceOf[js.Any])
+    inline def setAside(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "aside", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudio(value: HTMLAttributes[HTMLAudioElement]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: HTMLAttributes[HTMLAudioElement]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setB(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBase(value: HTMLAttributes[HTMLBaseElement]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: HTMLAttributes[HTMLBaseElement]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBdi(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
+    inline def setBdi(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBdo(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "bdo", value.asInstanceOf[js.Any])
+    inline def setBdo(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "bdo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBig(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
+    inline def setBig(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockquote(value: HTMLAttributes[HTMLQuoteElement]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
+    inline def setBlockquote(value: HTMLAttributes[HTMLQuoteElement]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: HTMLAttributes[HTMLBodyElement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: HTMLAttributes[HTMLBodyElement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBr(value: HTMLAttributes[HTMLBRElement]): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
+    inline def setBr(value: HTMLAttributes[HTMLBRElement]): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButton(value: HTMLAttributes[HTMLButtonElement]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: HTMLAttributes[HTMLButtonElement]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanvas(value: HTMLAttributes[HTMLCanvasElement]): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+    inline def setCanvas(value: HTMLAttributes[HTMLCanvasElement]): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: HTMLAttributes[HTMLTableCaptionElement]): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: HTMLAttributes[HTMLTableCaptionElement]): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircle(value: SVGAttributes[SVGCircleElement]): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: SVGAttributes[SVGCircleElement]): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCite(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
+    inline def setCite(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipPath(value: SVGAttributes[SVGClipPathElement]): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
+    inline def setClipPath(value: SVGAttributes[SVGClipPathElement]): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCol(value: HTMLAttributes[HTMLTableColElement]): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+    inline def setCol(value: HTMLAttributes[HTMLTableColElement]): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColgroup(value: HTMLAttributes[HTMLTableColElement]): Self = StObject.set(x, "colgroup", value.asInstanceOf[js.Any])
+    inline def setColgroup(value: HTMLAttributes[HTMLTableColElement]): Self = StObject.set(x, "colgroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: HTMLAttributes[HTMLDataElement]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: HTMLAttributes[HTMLDataElement]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatalist(value: HTMLAttributes[HTMLDataListElement]): Self = StObject.set(x, "datalist", value.asInstanceOf[js.Any])
+    inline def setDatalist(value: HTMLAttributes[HTMLDataListElement]): Self = StObject.set(x, "datalist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDd(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
+    inline def setDd(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefs(value: SVGAttributes[SVGDefsElement]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
+    inline def setDefs(value: SVGAttributes[SVGDefsElement]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDel(value: HTMLAttributes[HTMLModElement]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
+    inline def setDel(value: HTMLAttributes[HTMLModElement]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesc(value: SVGAttributes[SVGDescElement]): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: SVGAttributes[SVGDescElement]): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: HTMLAttributes[HTMLDetailsElement]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: HTMLAttributes[HTMLDetailsElement]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDfn(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "dfn", value.asInstanceOf[js.Any])
+    inline def setDfn(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "dfn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialog(value: HTMLAttributes[HTMLDialogElement]): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
+    inline def setDialog(value: HTMLAttributes[HTMLDialogElement]): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiv(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
+    inline def setDiv(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDl(value: HTMLAttributes[HTMLDListElement]): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
+    inline def setDl(value: HTMLAttributes[HTMLDListElement]): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDt(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "dt", value.asInstanceOf[js.Any])
+    inline def setDt(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "dt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipse(value: SVGAttributes[SVGEllipseElement]): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
+    inline def setEllipse(value: SVGAttributes[SVGEllipseElement]): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEm(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
+    inline def setEm(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbed(value: HTMLAttributes[HTMLEmbedElement]): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
+    inline def setEmbed(value: HTMLAttributes[HTMLEmbedElement]): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeBlend(value: SVGAttributes[SVGFEBlendElement]): Self = StObject.set(x, "feBlend", value.asInstanceOf[js.Any])
+    inline def setFeBlend(value: SVGAttributes[SVGFEBlendElement]): Self = StObject.set(x, "feBlend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeColorMatrix(value: SVGAttributes[SVGFEColorMatrixElement]): Self = StObject.set(x, "feColorMatrix", value.asInstanceOf[js.Any])
+    inline def setFeColorMatrix(value: SVGAttributes[SVGFEColorMatrixElement]): Self = StObject.set(x, "feColorMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeComponentTransfer(value: SVGAttributes[SVGFEComponentTransferElement]): Self = StObject.set(x, "feComponentTransfer", value.asInstanceOf[js.Any])
+    inline def setFeComponentTransfer(value: SVGAttributes[SVGFEComponentTransferElement]): Self = StObject.set(x, "feComponentTransfer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeComposite(value: SVGAttributes[SVGFECompositeElement]): Self = StObject.set(x, "feComposite", value.asInstanceOf[js.Any])
+    inline def setFeComposite(value: SVGAttributes[SVGFECompositeElement]): Self = StObject.set(x, "feComposite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeConvolveMatrix(value: SVGAttributes[SVGFEConvolveMatrixElement]): Self = StObject.set(x, "feConvolveMatrix", value.asInstanceOf[js.Any])
+    inline def setFeConvolveMatrix(value: SVGAttributes[SVGFEConvolveMatrixElement]): Self = StObject.set(x, "feConvolveMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeDiffuseLighting(value: SVGAttributes[SVGFEDiffuseLightingElement]): Self = StObject.set(x, "feDiffuseLighting", value.asInstanceOf[js.Any])
+    inline def setFeDiffuseLighting(value: SVGAttributes[SVGFEDiffuseLightingElement]): Self = StObject.set(x, "feDiffuseLighting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeDisplacementMap(value: SVGAttributes[SVGFEDisplacementMapElement]): Self = StObject.set(x, "feDisplacementMap", value.asInstanceOf[js.Any])
+    inline def setFeDisplacementMap(value: SVGAttributes[SVGFEDisplacementMapElement]): Self = StObject.set(x, "feDisplacementMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeDropShadow(value: SVGAttributes[SVGFEDropShadowElement]): Self = StObject.set(x, "feDropShadow", value.asInstanceOf[js.Any])
+    inline def setFeDropShadow(value: SVGAttributes[SVGFEDropShadowElement]): Self = StObject.set(x, "feDropShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeFlood(value: SVGAttributes[SVGFEFloodElement]): Self = StObject.set(x, "feFlood", value.asInstanceOf[js.Any])
+    inline def setFeFlood(value: SVGAttributes[SVGFEFloodElement]): Self = StObject.set(x, "feFlood", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeGaussianBlur(value: SVGAttributes[SVGFEGaussianBlurElement]): Self = StObject.set(x, "feGaussianBlur", value.asInstanceOf[js.Any])
+    inline def setFeGaussianBlur(value: SVGAttributes[SVGFEGaussianBlurElement]): Self = StObject.set(x, "feGaussianBlur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeImage(value: SVGAttributes[SVGFEImageElement]): Self = StObject.set(x, "feImage", value.asInstanceOf[js.Any])
+    inline def setFeImage(value: SVGAttributes[SVGFEImageElement]): Self = StObject.set(x, "feImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeMerge(value: SVGAttributes[SVGFEMergeElement]): Self = StObject.set(x, "feMerge", value.asInstanceOf[js.Any])
+    inline def setFeMerge(value: SVGAttributes[SVGFEMergeElement]): Self = StObject.set(x, "feMerge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeMergeNode(value: SVGAttributes[SVGFEMergeNodeElement]): Self = StObject.set(x, "feMergeNode", value.asInstanceOf[js.Any])
+    inline def setFeMergeNode(value: SVGAttributes[SVGFEMergeNodeElement]): Self = StObject.set(x, "feMergeNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeMorphology(value: SVGAttributes[SVGFEMorphologyElement]): Self = StObject.set(x, "feMorphology", value.asInstanceOf[js.Any])
+    inline def setFeMorphology(value: SVGAttributes[SVGFEMorphologyElement]): Self = StObject.set(x, "feMorphology", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeOffset(value: SVGAttributes[SVGFEOffsetElement]): Self = StObject.set(x, "feOffset", value.asInstanceOf[js.Any])
+    inline def setFeOffset(value: SVGAttributes[SVGFEOffsetElement]): Self = StObject.set(x, "feOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeSpecularLighting(value: SVGAttributes[SVGFESpecularLightingElement]): Self = StObject.set(x, "feSpecularLighting", value.asInstanceOf[js.Any])
+    inline def setFeSpecularLighting(value: SVGAttributes[SVGFESpecularLightingElement]): Self = StObject.set(x, "feSpecularLighting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeTile(value: SVGAttributes[SVGFETileElement]): Self = StObject.set(x, "feTile", value.asInstanceOf[js.Any])
+    inline def setFeTile(value: SVGAttributes[SVGFETileElement]): Self = StObject.set(x, "feTile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeTurbulence(value: SVGAttributes[SVGFETurbulenceElement]): Self = StObject.set(x, "feTurbulence", value.asInstanceOf[js.Any])
+    inline def setFeTurbulence(value: SVGAttributes[SVGFETurbulenceElement]): Self = StObject.set(x, "feTurbulence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldset(value: HTMLAttributes[HTMLFieldSetElement]): Self = StObject.set(x, "fieldset", value.asInstanceOf[js.Any])
+    inline def setFieldset(value: HTMLAttributes[HTMLFieldSetElement]): Self = StObject.set(x, "fieldset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFigcaption(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "figcaption", value.asInstanceOf[js.Any])
+    inline def setFigcaption(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "figcaption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFigure(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "figure", value.asInstanceOf[js.Any])
+    inline def setFigure(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "figure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: SVGAttributes[SVGFilterElement]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: SVGAttributes[SVGFilterElement]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooter(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeignObject(value: SVGAttributes[SVGForeignObjectElement]): Self = StObject.set(x, "foreignObject", value.asInstanceOf[js.Any])
+    inline def setForeignObject(value: SVGAttributes[SVGForeignObjectElement]): Self = StObject.set(x, "foreignObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForm(value: HTMLAttributes[HTMLFormElement]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: HTMLAttributes[HTMLFormElement]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setG(value: SVGAttributes[SVGGElement]): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+    inline def setG(value: SVGAttributes[SVGGElement]): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH1(value: HTMLAttributes[HTMLHeadingElement]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
+    inline def setH1(value: HTMLAttributes[HTMLHeadingElement]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH2(value: HTMLAttributes[HTMLHeadingElement]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
+    inline def setH2(value: HTMLAttributes[HTMLHeadingElement]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH3(value: HTMLAttributes[HTMLHeadingElement]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
+    inline def setH3(value: HTMLAttributes[HTMLHeadingElement]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH4(value: HTMLAttributes[HTMLHeadingElement]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
+    inline def setH4(value: HTMLAttributes[HTMLHeadingElement]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH5(value: HTMLAttributes[HTMLHeadingElement]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
+    inline def setH5(value: HTMLAttributes[HTMLHeadingElement]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH6(value: HTMLAttributes[HTMLHeadingElement]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
+    inline def setH6(value: HTMLAttributes[HTMLHeadingElement]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHead(value: HTMLAttributes[HTMLHeadElement]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: HTMLAttributes[HTMLHeadElement]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHgroup(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "hgroup", value.asInstanceOf[js.Any])
+    inline def setHgroup(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "hgroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHr(value: HTMLAttributes[HTMLHRElement]): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
+    inline def setHr(value: HTMLAttributes[HTMLHRElement]): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml(value: HTMLAttributes[HTMLHtmlElement]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: HTMLAttributes[HTMLHtmlElement]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setI(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
+    inline def setI(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIframe(value: HTMLAttributes[HTMLIFrameElement]): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
+    inline def setIframe(value: HTMLAttributes[HTMLIFrameElement]): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: SVGAttributes[SVGImageElement]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: SVGAttributes[SVGImageElement]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImg(value: HTMLAttributes[HTMLImageElement]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+    inline def setImg(value: HTMLAttributes[HTMLImageElement]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: HTMLAttributes[HTMLInputElement]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: HTMLAttributes[HTMLInputElement]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIns(value: HTMLAttributes[HTMLModElement]): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
+    inline def setIns(value: HTMLAttributes[HTMLModElement]): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKbd(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "kbd", value.asInstanceOf[js.Any])
+    inline def setKbd(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "kbd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeygen(value: HTMLAttributes[HTMLUnknownElement]): Self = StObject.set(x, "keygen", value.asInstanceOf[js.Any])
+    inline def setKeygen(value: HTMLAttributes[HTMLUnknownElement]): Self = StObject.set(x, "keygen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: HTMLAttributes[HTMLLabelElement]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: HTMLAttributes[HTMLLabelElement]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegend(value: HTMLAttributes[HTMLLegendElement]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: HTMLAttributes[HTMLLegendElement]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLi(value: HTMLAttributes[HTMLLIElement]): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
+    inline def setLi(value: HTMLAttributes[HTMLLIElement]): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: SVGAttributes[SVGLineElement]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: SVGAttributes[SVGLineElement]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearGradient(value: SVGAttributes[SVGLinearGradientElement]): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
+    inline def setLinearGradient(value: SVGAttributes[SVGLinearGradientElement]): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink(value: HTMLAttributes[HTMLLinkElement]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: HTMLAttributes[HTMLLinkElement]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMain(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+    inline def setMain(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: HTMLAttributes[HTMLMapElement]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: HTMLAttributes[HTMLMapElement]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMark(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+    inline def setMark(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: SVGAttributes[SVGMarkerElement]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: SVGAttributes[SVGMarkerElement]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarquee(value: HTMLAttributes[HTMLMarqueeElement]): Self = StObject.set(x, "marquee", value.asInstanceOf[js.Any])
+    inline def setMarquee(value: HTMLAttributes[HTMLMarqueeElement]): Self = StObject.set(x, "marquee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMask(value: SVGAttributes[SVGMaskElement]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: SVGAttributes[SVGMaskElement]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenu(value: HTMLAttributes[HTMLMenuElement]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: HTMLAttributes[HTMLMenuElement]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuitem(value: HTMLAttributes[HTMLUnknownElement]): Self = StObject.set(x, "menuitem", value.asInstanceOf[js.Any])
+    inline def setMenuitem(value: HTMLAttributes[HTMLUnknownElement]): Self = StObject.set(x, "menuitem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeta(value: HTMLAttributes[HTMLMetaElement]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: HTMLAttributes[HTMLMetaElement]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeter(value: HTMLAttributes[HTMLMeterElement]): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
+    inline def setMeter(value: HTMLAttributes[HTMLMeterElement]): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNav(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
+    inline def setNav(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoscript(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
+    inline def setNoscript(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: HTMLAttributes[HTMLObjectElement]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: HTMLAttributes[HTMLObjectElement]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOl(value: HTMLAttributes[HTMLOListElement]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
+    inline def setOl(value: HTMLAttributes[HTMLOListElement]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptgroup(value: HTMLAttributes[HTMLOptGroupElement]): Self = StObject.set(x, "optgroup", value.asInstanceOf[js.Any])
+    inline def setOptgroup(value: HTMLAttributes[HTMLOptGroupElement]): Self = StObject.set(x, "optgroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOption(value: HTMLAttributes[HTMLOptionElement]): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+    inline def setOption(value: HTMLAttributes[HTMLOptionElement]): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput(value: HTMLAttributes[HTMLOutputElement]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: HTMLAttributes[HTMLOutputElement]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP(value: HTMLAttributes[HTMLParagraphElement]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: HTMLAttributes[HTMLParagraphElement]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParam(value: HTMLAttributes[HTMLParamElement]): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    inline def setParam(value: HTMLAttributes[HTMLParamElement]): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: SVGAttributes[SVGPathElement]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: SVGAttributes[SVGPathElement]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: SVGAttributes[SVGPatternElement]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: SVGAttributes[SVGPatternElement]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPicture(value: HTMLAttributes[HTMLPictureElement]): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
+    inline def setPicture(value: HTMLAttributes[HTMLPictureElement]): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygon(value: SVGAttributes[SVGPolygonElement]): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
+    inline def setPolygon(value: SVGAttributes[SVGPolygonElement]): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolyline(value: SVGAttributes[SVGPolylineElement]): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
+    inline def setPolyline(value: SVGAttributes[SVGPolylineElement]): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPre(value: HTMLAttributes[HTMLPreElement]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+    inline def setPre(value: HTMLAttributes[HTMLPreElement]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: HTMLAttributes[HTMLProgressElement]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: HTMLAttributes[HTMLProgressElement]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ(value: HTMLAttributes[HTMLQuoteElement]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    inline def setQ(value: HTMLAttributes[HTMLQuoteElement]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadialGradient(value: SVGAttributes[SVGRadialGradientElement]): Self = StObject.set(x, "radialGradient", value.asInstanceOf[js.Any])
+    inline def setRadialGradient(value: SVGAttributes[SVGRadialGradientElement]): Self = StObject.set(x, "radialGradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRect(value: SVGAttributes[SVGRectElement]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: SVGAttributes[SVGRectElement]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRp(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "rp", value.asInstanceOf[js.Any])
+    inline def setRp(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "rp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRt(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "rt", value.asInstanceOf[js.Any])
+    inline def setRt(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "rt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuby(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "ruby", value.asInstanceOf[js.Any])
+    inline def setRuby(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "ruby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamp(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "samp", value.asInstanceOf[js.Any])
+    inline def setSamp(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "samp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScript(value: HTMLAttributes[HTMLScriptElement]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    inline def setScript(value: HTMLAttributes[HTMLScriptElement]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSection(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+    inline def setSection(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: HTMLAttributes[HTMLSelectElement]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: HTMLAttributes[HTMLSelectElement]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlot(value: HTMLAttributes[HTMLSlotElement]): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+    inline def setSlot(value: HTMLAttributes[HTMLSlotElement]): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmall(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+    inline def setSmall(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: HTMLAttributes[HTMLSourceElement]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: HTMLAttributes[HTMLSourceElement]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpan(value: HTMLAttributes[HTMLSpanElement]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    inline def setSpan(value: HTMLAttributes[HTMLSpanElement]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: SVGAttributes[SVGStopElement]): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: SVGAttributes[SVGStopElement]): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrong(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+    inline def setStrong(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: HTMLAttributes[HTMLStyleElement]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: HTMLAttributes[HTMLStyleElement]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSub(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+    inline def setSub(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummary(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSup(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
+    inline def setSup(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvg(value: SVGAttributes[SVGSVGElement]): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+    inline def setSvg(value: SVGAttributes[SVGSVGElement]): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: SVGAttributes[SVGSymbolElement]): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: SVGAttributes[SVGSymbolElement]): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTable(value: HTMLAttributes[HTMLTableElement]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: HTMLAttributes[HTMLTableElement]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTbody(value: HTMLAttributes[HTMLTableSectionElement]): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
+    inline def setTbody(value: HTMLAttributes[HTMLTableSectionElement]): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTd(value: HTMLAttributes[HTMLTableCellElement]): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
+    inline def setTd(value: HTMLAttributes[HTMLTableCellElement]): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: SVGAttributes[SVGTextElement]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: SVGAttributes[SVGTextElement]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextarea(value: HTMLAttributes[HTMLTextAreaElement]): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
+    inline def setTextarea(value: HTMLAttributes[HTMLTextAreaElement]): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTfoot(value: HTMLAttributes[HTMLTableSectionElement]): Self = StObject.set(x, "tfoot", value.asInstanceOf[js.Any])
+    inline def setTfoot(value: HTMLAttributes[HTMLTableSectionElement]): Self = StObject.set(x, "tfoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTh(value: HTMLAttributes[HTMLTableCellElement]): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
+    inline def setTh(value: HTMLAttributes[HTMLTableCellElement]): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThead(value: HTMLAttributes[HTMLTableSectionElement]): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
+    inline def setThead(value: HTMLAttributes[HTMLTableSectionElement]): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: HTMLAttributes[HTMLTimeElement]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: HTMLAttributes[HTMLTimeElement]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: HTMLAttributes[HTMLTitleElement]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: HTMLAttributes[HTMLTitleElement]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTr(value: HTMLAttributes[HTMLTableRowElement]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+    inline def setTr(value: HTMLAttributes[HTMLTableRowElement]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack(value: HTMLAttributes[HTMLTrackElement]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: HTMLAttributes[HTMLTrackElement]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTspan(value: SVGAttributes[SVGTSpanElement]): Self = StObject.set(x, "tspan", value.asInstanceOf[js.Any])
+    inline def setTspan(value: SVGAttributes[SVGTSpanElement]): Self = StObject.set(x, "tspan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setU(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+    inline def setU(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUl(value: HTMLAttributes[HTMLUListElement]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
+    inline def setUl(value: HTMLAttributes[HTMLUListElement]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse(value: SVGAttributes[SVGUseElement]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+    inline def setUse(value: SVGAttributes[SVGUseElement]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVar(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
+    inline def setVar(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo(value: HTMLAttributes[HTMLVideoElement]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: HTMLAttributes[HTMLVideoElement]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWbr(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "wbr", value.asInstanceOf[js.Any])
+    inline def setWbr(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "wbr", value.asInstanceOf[js.Any])
   }
 }

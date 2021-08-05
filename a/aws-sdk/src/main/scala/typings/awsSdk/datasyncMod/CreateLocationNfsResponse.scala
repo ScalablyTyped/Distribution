@@ -13,19 +13,15 @@ trait CreateLocationNfsResponse extends StObject {
 }
 object CreateLocationNfsResponse {
   
-  @scala.inline
-  def apply(): CreateLocationNfsResponse = {
+  inline def apply(): CreateLocationNfsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateLocationNfsResponse]
   }
   
-  @scala.inline
-  implicit class CreateLocationNfsResponseMutableBuilder[Self <: CreateLocationNfsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLocationNfsResponse](x: Self) {
     
-    @scala.inline
-    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
+    inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
+    inline def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
   }
 }

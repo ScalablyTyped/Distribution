@@ -24,29 +24,22 @@ object settlementTransfer {
   }
   object CreateSettlementTransfer {
     
-    @scala.inline
-    def apply(AuthorId: String, DebitedFunds: MoneyData, Fees: MoneyData): CreateSettlementTransfer = {
+    inline def apply(AuthorId: String, DebitedFunds: MoneyData, Fees: MoneyData): CreateSettlementTransfer = {
       val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateSettlementTransfer]
     }
     
-    @scala.inline
-    implicit class CreateSettlementTransferMutableBuilder[Self <: CreateSettlementTransfer] (val x: Self) extends AnyVal {
+    extension [Self <: CreateSettlementTransfer](x: Self) {
       
-      @scala.inline
-      def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
+      inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebitedFunds(value: MoneyData): Self = StObject.set(x, "DebitedFunds", value.asInstanceOf[js.Any])
+      inline def setDebitedFunds(value: MoneyData): Self = StObject.set(x, "DebitedFunds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFees(value: MoneyData): Self = StObject.set(x, "Fees", value.asInstanceOf[js.Any])
+      inline def setFees(value: MoneyData): Self = StObject.set(x, "Fees", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     }
   }
   
@@ -82,8 +75,7 @@ object settlementTransfer {
   }
   object SettlementTransferData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AuthorId: String,
       CreationDate: Double,
       CreditedFunds: MoneyData,
@@ -108,23 +100,17 @@ object settlementTransfer {
       __obj.asInstanceOf[SettlementTransferData]
     }
     
-    @scala.inline
-    implicit class SettlementTransferDataMutableBuilder[Self <: SettlementTransferData] (val x: Self) extends AnyVal {
+    extension [Self <: SettlementTransferData](x: Self) {
       
-      @scala.inline
-      def setInitialTransactionId(value: String): Self = StObject.set(x, "InitialTransactionId", value.asInstanceOf[js.Any])
+      inline def setInitialTransactionId(value: String): Self = StObject.set(x, "InitialTransactionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialTransactionType(value: TransactionType): Self = StObject.set(x, "InitialTransactionType", value.asInstanceOf[js.Any])
+      inline def setInitialTransactionType(value: TransactionType): Self = StObject.set(x, "InitialTransactionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNature(value: SETTLEMENT): Self = StObject.set(x, "Nature", value.asInstanceOf[js.Any])
+      inline def setNature(value: SETTLEMENT): Self = StObject.set(x, "Nature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefundReason(value: RefundReason): Self = StObject.set(x, "RefundReason", value.asInstanceOf[js.Any])
+      inline def setRefundReason(value: RefundReason): Self = StObject.set(x, "RefundReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepudiationId(value: String): Self = StObject.set(x, "RepudiationId", value.asInstanceOf[js.Any])
+      inline def setRepudiationId(value: String): Self = StObject.set(x, "RepudiationId", value.asInstanceOf[js.Any])
     }
   }
 }

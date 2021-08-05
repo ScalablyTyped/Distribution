@@ -21,28 +21,21 @@ trait ChecksSetSuitesPreferencesEndpoint
 }
 object ChecksSetSuitesPreferencesEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[antiope], owner: String, repo: String): ChecksSetSuitesPreferencesEndpoint = {
+  inline def apply(mediaType: `0`[antiope], owner: String, repo: String): ChecksSetSuitesPreferencesEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksSetSuitesPreferencesEndpoint]
   }
   
-  @scala.inline
-  implicit class ChecksSetSuitesPreferencesEndpointMutableBuilder[Self <: ChecksSetSuitesPreferencesEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ChecksSetSuitesPreferencesEndpoint](x: Self) {
     
-    @scala.inline
-    def setAuto_trigger_checks(value: js.Array[ChecksSetSuitesPreferencesParamsAutoTriggerChecks]): Self = StObject.set(x, "auto_trigger_checks", value.asInstanceOf[js.Any])
+    inline def setAuto_trigger_checks(value: js.Array[ChecksSetSuitesPreferencesParamsAutoTriggerChecks]): Self = StObject.set(x, "auto_trigger_checks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuto_trigger_checksUndefined: Self = StObject.set(x, "auto_trigger_checks", js.undefined)
+    inline def setAuto_trigger_checksUndefined: Self = StObject.set(x, "auto_trigger_checks", js.undefined)
     
-    @scala.inline
-    def setAuto_trigger_checksVarargs(value: ChecksSetSuitesPreferencesParamsAutoTriggerChecks*): Self = StObject.set(x, "auto_trigger_checks", js.Array(value :_*))
+    inline def setAuto_trigger_checksVarargs(value: ChecksSetSuitesPreferencesParamsAutoTriggerChecks*): Self = StObject.set(x, "auto_trigger_checks", js.Array(value :_*))
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

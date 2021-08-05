@@ -38,8 +38,7 @@ trait GoogleApiUrlShortenerUrlResourceAnalyticsObject extends StObject {
 }
 object GoogleApiUrlShortenerUrlResourceAnalyticsObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     browsers: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject],
     countries: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject],
     longUrlClicks: String,
@@ -51,37 +50,26 @@ object GoogleApiUrlShortenerUrlResourceAnalyticsObject {
     __obj.asInstanceOf[GoogleApiUrlShortenerUrlResourceAnalyticsObject]
   }
   
-  @scala.inline
-  implicit class GoogleApiUrlShortenerUrlResourceAnalyticsObjectMutableBuilder[Self <: GoogleApiUrlShortenerUrlResourceAnalyticsObject] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiUrlShortenerUrlResourceAnalyticsObject](x: Self) {
     
-    @scala.inline
-    def setBrowsers(value: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
+    inline def setBrowsers(value: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowsersVarargs(value: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject*): Self = StObject.set(x, "browsers", js.Array(value :_*))
+    inline def setBrowsersVarargs(value: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject*): Self = StObject.set(x, "browsers", js.Array(value :_*))
     
-    @scala.inline
-    def setCountries(value: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
+    inline def setCountries(value: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountriesVarargs(value: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject*): Self = StObject.set(x, "countries", js.Array(value :_*))
+    inline def setCountriesVarargs(value: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject*): Self = StObject.set(x, "countries", js.Array(value :_*))
     
-    @scala.inline
-    def setLongUrlClicks(value: String): Self = StObject.set(x, "longUrlClicks", value.asInstanceOf[js.Any])
+    inline def setLongUrlClicks(value: String): Self = StObject.set(x, "longUrlClicks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatforms(value: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
+    inline def setPlatforms(value: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformsVarargs(value: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject*): Self = StObject.set(x, "platforms", js.Array(value :_*))
+    inline def setPlatformsVarargs(value: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject*): Self = StObject.set(x, "platforms", js.Array(value :_*))
     
-    @scala.inline
-    def setReferrers(value: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject]): Self = StObject.set(x, "referrers", value.asInstanceOf[js.Any])
+    inline def setReferrers(value: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject]): Self = StObject.set(x, "referrers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrersVarargs(value: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject*): Self = StObject.set(x, "referrers", js.Array(value :_*))
+    inline def setReferrersVarargs(value: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject*): Self = StObject.set(x, "referrers", js.Array(value :_*))
     
-    @scala.inline
-    def setShortUrlClicks(value: String): Self = StObject.set(x, "shortUrlClicks", value.asInstanceOf[js.Any])
+    inline def setShortUrlClicks(value: String): Self = StObject.set(x, "shortUrlClicks", value.asInstanceOf[js.Any])
   }
 }

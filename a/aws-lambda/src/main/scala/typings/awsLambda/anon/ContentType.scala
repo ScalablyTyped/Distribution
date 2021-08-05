@@ -16,25 +16,19 @@ trait ContentType extends StObject {
 }
 object ContentType {
   
-  @scala.inline
-  def apply(genericAttachments: js.Array[LexGenericAttachment], version: Double): ContentType = {
+  inline def apply(genericAttachments: js.Array[LexGenericAttachment], version: Double): ContentType = {
     val __obj = js.Dynamic.literal(contentType = "application/vnd.amazonaws.card.generic", genericAttachments = genericAttachments.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentType]
   }
   
-  @scala.inline
-  implicit class ContentTypeMutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
+  extension [Self <: ContentType](x: Self) {
     
-    @scala.inline
-    def setContentType(value: applicationSlashvndDotamazonawsDotcardDotgeneric): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: applicationSlashvndDotamazonawsDotcardDotgeneric): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenericAttachments(value: js.Array[LexGenericAttachment]): Self = StObject.set(x, "genericAttachments", value.asInstanceOf[js.Any])
+    inline def setGenericAttachments(value: js.Array[LexGenericAttachment]): Self = StObject.set(x, "genericAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenericAttachmentsVarargs(value: LexGenericAttachment*): Self = StObject.set(x, "genericAttachments", js.Array(value :_*))
+    inline def setGenericAttachmentsVarargs(value: LexGenericAttachment*): Self = StObject.set(x, "genericAttachments", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait UploadControlDropZoneLeaveEventArgs
 }
 object UploadControlDropZoneLeaveEventArgs {
   
-  @scala.inline
-  def apply(dropZone: js.Any, sender: Control): UploadControlDropZoneLeaveEventArgs = {
+  inline def apply(dropZone: js.Any, sender: Control): UploadControlDropZoneLeaveEventArgs = {
     val __obj = js.Dynamic.literal(dropZone = dropZone.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadControlDropZoneLeaveEventArgs]
   }
   
-  @scala.inline
-  implicit class UploadControlDropZoneLeaveEventArgsMutableBuilder[Self <: UploadControlDropZoneLeaveEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: UploadControlDropZoneLeaveEventArgs](x: Self) {
     
-    @scala.inline
-    def setDropZone(value: js.Any): Self = StObject.set(x, "dropZone", value.asInstanceOf[js.Any])
+    inline def setDropZone(value: js.Any): Self = StObject.set(x, "dropZone", value.asInstanceOf[js.Any])
   }
 }

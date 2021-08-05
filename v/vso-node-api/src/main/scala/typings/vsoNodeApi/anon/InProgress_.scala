@@ -18,8 +18,7 @@ trait InProgress_ extends StObject {
 }
 object InProgress_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abandoned: scala.Double,
     completed: scala.Double,
     failed: scala.Double,
@@ -30,22 +29,16 @@ object InProgress_ {
     __obj.asInstanceOf[InProgress_]
   }
   
-  @scala.inline
-  implicit class InProgress_MutableBuilder[Self <: InProgress_] (val x: Self) extends AnyVal {
+  extension [Self <: InProgress_](x: Self) {
     
-    @scala.inline
-    def setAbandoned(value: scala.Double): Self = StObject.set(x, "abandoned", value.asInstanceOf[js.Any])
+    inline def setAbandoned(value: scala.Double): Self = StObject.set(x, "abandoned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
+    inline def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
+    inline def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
   }
 }

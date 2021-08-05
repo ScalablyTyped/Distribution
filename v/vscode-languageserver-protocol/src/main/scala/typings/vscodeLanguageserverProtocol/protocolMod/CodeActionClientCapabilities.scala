@@ -28,31 +28,23 @@ trait CodeActionClientCapabilities extends StObject {
 }
 object CodeActionClientCapabilities {
   
-  @scala.inline
-  def apply(): CodeActionClientCapabilities = {
+  inline def apply(): CodeActionClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeActionClientCapabilities]
   }
   
-  @scala.inline
-  implicit class CodeActionClientCapabilitiesMutableBuilder[Self <: CodeActionClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: CodeActionClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setCodeActionLiteralSupport(value: CodeActionKind): Self = StObject.set(x, "codeActionLiteralSupport", value.asInstanceOf[js.Any])
+    inline def setCodeActionLiteralSupport(value: CodeActionKind): Self = StObject.set(x, "codeActionLiteralSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeActionLiteralSupportUndefined: Self = StObject.set(x, "codeActionLiteralSupport", js.undefined)
+    inline def setCodeActionLiteralSupportUndefined: Self = StObject.set(x, "codeActionLiteralSupport", js.undefined)
     
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+    inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
     
-    @scala.inline
-    def setIsPreferredSupport(value: Boolean): Self = StObject.set(x, "isPreferredSupport", value.asInstanceOf[js.Any])
+    inline def setIsPreferredSupport(value: Boolean): Self = StObject.set(x, "isPreferredSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPreferredSupportUndefined: Self = StObject.set(x, "isPreferredSupport", js.undefined)
+    inline def setIsPreferredSupportUndefined: Self = StObject.set(x, "isPreferredSupport", js.undefined)
   }
 }

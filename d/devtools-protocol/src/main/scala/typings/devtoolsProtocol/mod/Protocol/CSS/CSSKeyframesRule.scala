@@ -18,22 +18,17 @@ trait CSSKeyframesRule extends StObject {
 }
 object CSSKeyframesRule {
   
-  @scala.inline
-  def apply(animationName: Value, keyframes: js.Array[CSSKeyframeRule]): CSSKeyframesRule = {
+  inline def apply(animationName: Value, keyframes: js.Array[CSSKeyframeRule]): CSSKeyframesRule = {
     val __obj = js.Dynamic.literal(animationName = animationName.asInstanceOf[js.Any], keyframes = keyframes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSKeyframesRule]
   }
   
-  @scala.inline
-  implicit class CSSKeyframesRuleMutableBuilder[Self <: CSSKeyframesRule] (val x: Self) extends AnyVal {
+  extension [Self <: CSSKeyframesRule](x: Self) {
     
-    @scala.inline
-    def setAnimationName(value: Value): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
+    inline def setAnimationName(value: Value): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyframes(value: js.Array[CSSKeyframeRule]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
+    inline def setKeyframes(value: js.Array[CSSKeyframeRule]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyframesVarargs(value: CSSKeyframeRule*): Self = StObject.set(x, "keyframes", js.Array(value :_*))
+    inline def setKeyframesVarargs(value: CSSKeyframeRule*): Self = StObject.set(x, "keyframes", js.Array(value :_*))
   }
 }

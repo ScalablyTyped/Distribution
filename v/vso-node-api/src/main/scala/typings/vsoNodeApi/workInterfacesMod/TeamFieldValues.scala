@@ -25,8 +25,7 @@ trait TeamFieldValues
 }
 object TeamFieldValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     defaultValue: String,
     field: FieldReference,
@@ -37,19 +36,14 @@ object TeamFieldValues {
     __obj.asInstanceOf[TeamFieldValues]
   }
   
-  @scala.inline
-  implicit class TeamFieldValuesMutableBuilder[Self <: TeamFieldValues] (val x: Self) extends AnyVal {
+  extension [Self <: TeamFieldValues](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField(value: FieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: FieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[TeamFieldValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[TeamFieldValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: TeamFieldValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: TeamFieldValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

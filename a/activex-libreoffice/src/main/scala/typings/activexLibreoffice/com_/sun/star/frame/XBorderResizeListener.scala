@@ -22,8 +22,7 @@ trait XBorderResizeListener
 }
 object XBorderResizeListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     borderWidthsChanged: (XInterface, BorderWidths) => Unit,
     disposing: EventObject => Unit,
@@ -34,10 +33,8 @@ object XBorderResizeListener {
     __obj.asInstanceOf[XBorderResizeListener]
   }
   
-  @scala.inline
-  implicit class XBorderResizeListenerMutableBuilder[Self <: XBorderResizeListener] (val x: Self) extends AnyVal {
+  extension [Self <: XBorderResizeListener](x: Self) {
     
-    @scala.inline
-    def setBorderWidthsChanged(value: (XInterface, BorderWidths) => Unit): Self = StObject.set(x, "borderWidthsChanged", js.Any.fromFunction2(value))
+    inline def setBorderWidthsChanged(value: (XInterface, BorderWidths) => Unit): Self = StObject.set(x, "borderWidthsChanged", js.Any.fromFunction2(value))
   }
 }

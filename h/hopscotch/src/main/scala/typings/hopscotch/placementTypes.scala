@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait placementTypes extends StObject
 object placementTypes {
   
-  @scala.inline
-  def bottom: typings.hopscotch.hopscotchStrings.bottom = "bottom".asInstanceOf[typings.hopscotch.hopscotchStrings.bottom]
+  inline def bottom: typings.hopscotch.hopscotchStrings.bottom = "bottom".asInstanceOf[typings.hopscotch.hopscotchStrings.bottom]
   
-  @scala.inline
-  def left: typings.hopscotch.hopscotchStrings.left = "left".asInstanceOf[typings.hopscotch.hopscotchStrings.left]
+  inline def left: typings.hopscotch.hopscotchStrings.left = "left".asInstanceOf[typings.hopscotch.hopscotchStrings.left]
   
-  @scala.inline
-  def right: typings.hopscotch.hopscotchStrings.right = "right".asInstanceOf[typings.hopscotch.hopscotchStrings.right]
+  inline def right: typings.hopscotch.hopscotchStrings.right = "right".asInstanceOf[typings.hopscotch.hopscotchStrings.right]
   
-  @scala.inline
-  def top: typings.hopscotch.hopscotchStrings.top = "top".asInstanceOf[typings.hopscotch.hopscotchStrings.top]
+  inline def top: typings.hopscotch.hopscotchStrings.top = "top".asInstanceOf[typings.hopscotch.hopscotchStrings.top]
 }

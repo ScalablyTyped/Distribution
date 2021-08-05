@@ -10,16 +10,13 @@ trait BoardSuggestedValue extends StObject {
 }
 object BoardSuggestedValue {
   
-  @scala.inline
-  def apply(name: String): BoardSuggestedValue = {
+  inline def apply(name: String): BoardSuggestedValue = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoardSuggestedValue]
   }
   
-  @scala.inline
-  implicit class BoardSuggestedValueMutableBuilder[Self <: BoardSuggestedValue] (val x: Self) extends AnyVal {
+  extension [Self <: BoardSuggestedValue](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

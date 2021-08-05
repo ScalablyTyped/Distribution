@@ -10,19 +10,15 @@ trait GlobalLexicalScopeNamesReturnType extends StObject {
 }
 object GlobalLexicalScopeNamesReturnType {
   
-  @scala.inline
-  def apply(names: js.Array[String]): GlobalLexicalScopeNamesReturnType = {
+  inline def apply(names: js.Array[String]): GlobalLexicalScopeNamesReturnType = {
     val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalLexicalScopeNamesReturnType]
   }
   
-  @scala.inline
-  implicit class GlobalLexicalScopeNamesReturnTypeMutableBuilder[Self <: GlobalLexicalScopeNamesReturnType] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalLexicalScopeNamesReturnType](x: Self) {
     
-    @scala.inline
-    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
   }
 }

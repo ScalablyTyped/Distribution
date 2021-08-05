@@ -36,10 +36,8 @@ object mod {
     * You must pass either `path` or `animationData` to specify the Lottie animation.
     * @async
     */
-  @scala.inline
-  def apply(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def apply(opts: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def apply(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Unit]]
+  inline def apply(opts: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("puppeteer-lottie", JSImport.Namespace)
   @js.native
@@ -60,34 +58,26 @@ object mod {
   }
   object FFmpegOptions {
     
-    @scala.inline
-    def apply(): FFmpegOptions = {
+    inline def apply(): FFmpegOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FFmpegOptions]
     }
     
-    @scala.inline
-    implicit class FFmpegOptionsMutableBuilder[Self <: FFmpegOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FFmpegOptions](x: Self) {
       
-      @scala.inline
-      def setCrf(value: Double): Self = StObject.set(x, "crf", value.asInstanceOf[js.Any])
+      inline def setCrf(value: Double): Self = StObject.set(x, "crf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrfUndefined: Self = StObject.set(x, "crf", js.undefined)
+      inline def setCrfUndefined: Self = StObject.set(x, "crf", js.undefined)
       
-      @scala.inline
-      def setPreset(
+      inline def setPreset(
         value: ultrafast | superfast | veryfast | faster | fast | medium | slow | slower | veryslow | placebo
       ): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+      inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
       
-      @scala.inline
-      def setProfileVideo(value: baseline | main | high | high10 | high422 | high444): Self = StObject.set(x, "profileVideo", value.asInstanceOf[js.Any])
+      inline def setProfileVideo(value: baseline | main | high | high10 | high422 | high444): Self = StObject.set(x, "profileVideo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileVideoUndefined: Self = StObject.set(x, "profileVideo", js.undefined)
+      inline def setProfileVideoUndefined: Self = StObject.set(x, "profileVideo", js.undefined)
     }
   }
   
@@ -120,44 +110,32 @@ object mod {
   }
   object GifskiOptions {
     
-    @scala.inline
-    def apply(): GifskiOptions = {
+    inline def apply(): GifskiOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GifskiOptions]
     }
     
-    @scala.inline
-    implicit class GifskiOptionsMutableBuilder[Self <: GifskiOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GifskiOptions](x: Self) {
       
-      @scala.inline
-      def setFast(value: Boolean): Self = StObject.set(x, "fast", value.asInstanceOf[js.Any])
+      inline def setFast(value: Boolean): Self = StObject.set(x, "fast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFastUndefined: Self = StObject.set(x, "fast", js.undefined)
+      inline def setFastUndefined: Self = StObject.set(x, "fast", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+      inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+      inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -180,32 +158,24 @@ object mod {
   }
   object Inject {
     
-    @scala.inline
-    def apply(): Inject = {
+    inline def apply(): Inject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Inject]
     }
     
-    @scala.inline
-    implicit class InjectMutableBuilder[Self <: Inject] (val x: Self) extends AnyVal {
+    extension [Self <: Inject](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
+      inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      @scala.inline
-      def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -300,107 +270,74 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(output: String): Options = {
+    inline def apply(output: String): Options = {
       val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAnimationData(value: js.Object): Self = StObject.set(x, "animationData", value.asInstanceOf[js.Any])
+      inline def setAnimationData(value: js.Object): Self = StObject.set(x, "animationData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDataUndefined: Self = StObject.set(x, "animationData", js.undefined)
+      inline def setAnimationDataUndefined: Self = StObject.set(x, "animationData", js.undefined)
       
-      @scala.inline
-      def setBrowser(value: Browser): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: Browser): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
+      inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
       
-      @scala.inline
-      def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
+      inline def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceScaleFactorUndefined: Self = StObject.set(x, "deviceScaleFactor", js.undefined)
+      inline def setDeviceScaleFactorUndefined: Self = StObject.set(x, "deviceScaleFactor", js.undefined)
       
-      @scala.inline
-      def setFfmpegOptions(value: FFmpegOptions): Self = StObject.set(x, "ffmpegOptions", value.asInstanceOf[js.Any])
+      inline def setFfmpegOptions(value: FFmpegOptions): Self = StObject.set(x, "ffmpegOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFfmpegOptionsUndefined: Self = StObject.set(x, "ffmpegOptions", js.undefined)
+      inline def setFfmpegOptionsUndefined: Self = StObject.set(x, "ffmpegOptions", js.undefined)
       
-      @scala.inline
-      def setGifskiOptions(value: js.Object): Self = StObject.set(x, "gifskiOptions", value.asInstanceOf[js.Any])
+      inline def setGifskiOptions(value: js.Object): Self = StObject.set(x, "gifskiOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGifskiOptionsUndefined: Self = StObject.set(x, "gifskiOptions", js.undefined)
+      inline def setGifskiOptionsUndefined: Self = StObject.set(x, "gifskiOptions", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setInject(value: Inject): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
+      inline def setInject(value: Inject): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
+      inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
       
-      @scala.inline
-      def setJpegQuality(value: Double): Self = StObject.set(x, "jpegQuality", value.asInstanceOf[js.Any])
+      inline def setJpegQuality(value: Double): Self = StObject.set(x, "jpegQuality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJpegQualityUndefined: Self = StObject.set(x, "jpegQuality", js.undefined)
+      inline def setJpegQualityUndefined: Self = StObject.set(x, "jpegQuality", js.undefined)
       
-      @scala.inline
-      def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPuppeteerOptions(value: LaunchOptions): Self = StObject.set(x, "puppeteerOptions", value.asInstanceOf[js.Any])
+      inline def setPuppeteerOptions(value: LaunchOptions): Self = StObject.set(x, "puppeteerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuppeteerOptionsUndefined: Self = StObject.set(x, "puppeteerOptions", js.undefined)
+      inline def setPuppeteerOptionsUndefined: Self = StObject.set(x, "puppeteerOptions", js.undefined)
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+      inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
-      @scala.inline
-      def setRenderer(value: svg | canvas | html): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+      inline def setRenderer(value: svg | canvas | html): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRendererSettings(value: SVGRendererConfig | CanvasRendererConfig | HTMLRendererConfig): Self = StObject.set(x, "rendererSettings", value.asInstanceOf[js.Any])
+      inline def setRendererSettings(value: SVGRendererConfig | CanvasRendererConfig | HTMLRendererConfig): Self = StObject.set(x, "rendererSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRendererSettingsUndefined: Self = StObject.set(x, "rendererSettings", js.undefined)
+      inline def setRendererSettingsUndefined: Self = StObject.set(x, "rendererSettings", js.undefined)
       
-      @scala.inline
-      def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+      inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

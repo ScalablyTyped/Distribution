@@ -72,8 +72,7 @@ object SQIPGooglePay {
     * @platform Android
     * @throws ex
     */
-  @scala.inline
-  def canUseGooglePay(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("canUseGooglePay")().asInstanceOf[js.Promise[Boolean]]
+  inline def canUseGooglePay(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("canUseGooglePay")().asInstanceOf[js.Promise[Boolean]]
   
   // Functions
   /**
@@ -83,8 +82,7 @@ object SQIPGooglePay {
     * @param squareLocationId - The Square Location ID from the developer portal.
     * @param environment - Specifies the Google Pay environment to run Google Pay in: Test or Production
     */
-  @scala.inline
-  def initializeGooglePay(squareLocationId: String, environment: GooglePayEnvironment): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeGooglePay")(squareLocationId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def initializeGooglePay(squareLocationId: String, environment: GooglePayEnvironment): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeGooglePay")(squareLocationId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Starts the Google Pay payment authorization and returns a nonce based on the authorized Google Pay payment token.
@@ -95,8 +93,7 @@ object SQIPGooglePay {
     * @param onGooglePayCanceled - Cancel callback invoked when user cancels payment authorization.
     * @throws ex
     */
-  @scala.inline
-  def requestGooglePayNonce(
+  inline def requestGooglePayNonce(
     googlePayConfig: GooglePayConfig,
     onGooglePayNonceRequestSuccess: GooglePayNonceRequestSuccessCallback,
     onGooglePayNonceRequestFailure: GooglePayNonceRequestFailureCallback,
@@ -123,23 +120,18 @@ object SQIPGooglePay {
   }
   object GooglePayConfig {
     
-    @scala.inline
-    def apply(currencyCode: String, price: String, priceStatus: GooglePayPriceStatus): GooglePayConfig = {
+    inline def apply(currencyCode: String, price: String, priceStatus: GooglePayPriceStatus): GooglePayConfig = {
       val __obj = js.Dynamic.literal(currencyCode = currencyCode.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], priceStatus = priceStatus.asInstanceOf[js.Any])
       __obj.asInstanceOf[GooglePayConfig]
     }
     
-    @scala.inline
-    implicit class GooglePayConfigMutableBuilder[Self <: GooglePayConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GooglePayConfig](x: Self) {
       
-      @scala.inline
-      def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+      inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+      inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriceStatus(value: GooglePayPriceStatus): Self = StObject.set(x, "priceStatus", value.asInstanceOf[js.Any])
+      inline def setPriceStatus(value: GooglePayPriceStatus): Self = StObject.set(x, "priceStatus", value.asInstanceOf[js.Any])
     }
   }
   

@@ -10,16 +10,13 @@ trait RunnerOptionUrl extends StObject {
 }
 object RunnerOptionUrl {
   
-  @scala.inline
-  def apply(databaseUrl: String | ClientConfig): RunnerOptionUrl = {
+  inline def apply(databaseUrl: String | ClientConfig): RunnerOptionUrl = {
     val __obj = js.Dynamic.literal(databaseUrl = databaseUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunnerOptionUrl]
   }
   
-  @scala.inline
-  implicit class RunnerOptionUrlMutableBuilder[Self <: RunnerOptionUrl] (val x: Self) extends AnyVal {
+  extension [Self <: RunnerOptionUrl](x: Self) {
     
-    @scala.inline
-    def setDatabaseUrl(value: String | ClientConfig): Self = StObject.set(x, "databaseUrl", value.asInstanceOf[js.Any])
+    inline def setDatabaseUrl(value: String | ClientConfig): Self = StObject.set(x, "databaseUrl", value.asInstanceOf[js.Any])
   }
 }

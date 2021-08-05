@@ -14,25 +14,19 @@ trait ReelsMediaFeedResponseTalliesItem extends StObject {
 }
 object ReelsMediaFeedResponseTalliesItem {
   
-  @scala.inline
-  def apply(count: Double, text: String): ReelsMediaFeedResponseTalliesItem = {
+  inline def apply(count: Double, text: String): ReelsMediaFeedResponseTalliesItem = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReelsMediaFeedResponseTalliesItem]
   }
   
-  @scala.inline
-  implicit class ReelsMediaFeedResponseTalliesItemMutableBuilder[Self <: ReelsMediaFeedResponseTalliesItem] (val x: Self) extends AnyVal {
+  extension [Self <: ReelsMediaFeedResponseTalliesItem](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont_size(value: Double): Self = StObject.set(x, "font_size", value.asInstanceOf[js.Any])
+    inline def setFont_size(value: Double): Self = StObject.set(x, "font_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont_sizeUndefined: Self = StObject.set(x, "font_size", js.undefined)
+    inline def setFont_sizeUndefined: Self = StObject.set(x, "font_size", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

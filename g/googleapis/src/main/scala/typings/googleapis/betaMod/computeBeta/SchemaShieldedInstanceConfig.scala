@@ -26,31 +26,23 @@ trait SchemaShieldedInstanceConfig extends StObject {
 }
 object SchemaShieldedInstanceConfig {
   
-  @scala.inline
-  def apply(): SchemaShieldedInstanceConfig = {
+  inline def apply(): SchemaShieldedInstanceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaShieldedInstanceConfig]
   }
   
-  @scala.inline
-  implicit class SchemaShieldedInstanceConfigMutableBuilder[Self <: SchemaShieldedInstanceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaShieldedInstanceConfig](x: Self) {
     
-    @scala.inline
-    def setEnableIntegrityMonitoring(value: Boolean): Self = StObject.set(x, "enableIntegrityMonitoring", value.asInstanceOf[js.Any])
+    inline def setEnableIntegrityMonitoring(value: Boolean): Self = StObject.set(x, "enableIntegrityMonitoring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableIntegrityMonitoringUndefined: Self = StObject.set(x, "enableIntegrityMonitoring", js.undefined)
+    inline def setEnableIntegrityMonitoringUndefined: Self = StObject.set(x, "enableIntegrityMonitoring", js.undefined)
     
-    @scala.inline
-    def setEnableSecureBoot(value: Boolean): Self = StObject.set(x, "enableSecureBoot", value.asInstanceOf[js.Any])
+    inline def setEnableSecureBoot(value: Boolean): Self = StObject.set(x, "enableSecureBoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSecureBootUndefined: Self = StObject.set(x, "enableSecureBoot", js.undefined)
+    inline def setEnableSecureBootUndefined: Self = StObject.set(x, "enableSecureBoot", js.undefined)
     
-    @scala.inline
-    def setEnableVtpm(value: Boolean): Self = StObject.set(x, "enableVtpm", value.asInstanceOf[js.Any])
+    inline def setEnableVtpm(value: Boolean): Self = StObject.set(x, "enableVtpm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableVtpmUndefined: Self = StObject.set(x, "enableVtpm", js.undefined)
+    inline def setEnableVtpmUndefined: Self = StObject.set(x, "enableVtpm", js.undefined)
   }
 }

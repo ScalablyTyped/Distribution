@@ -63,20 +63,16 @@ object types {
   }
   object ChromeSettingClearDetails {
     
-    @scala.inline
-    def apply(): ChromeSettingClearDetails = {
+    inline def apply(): ChromeSettingClearDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChromeSettingClearDetails]
     }
     
-    @scala.inline
-    implicit class ChromeSettingClearDetailsMutableBuilder[Self <: ChromeSettingClearDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ChromeSettingClearDetails](x: Self) {
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
   }
   
@@ -87,20 +83,16 @@ object types {
   }
   object ChromeSettingGetDetails {
     
-    @scala.inline
-    def apply(): ChromeSettingGetDetails = {
+    inline def apply(): ChromeSettingGetDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChromeSettingGetDetails]
     }
     
-    @scala.inline
-    implicit class ChromeSettingGetDetailsMutableBuilder[Self <: ChromeSettingGetDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ChromeSettingGetDetails](x: Self) {
       
-      @scala.inline
-      def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
+      inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
+      inline def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
     }
   }
   
@@ -127,26 +119,20 @@ object types {
   }
   object ChromeSettingGetResultDetails {
     
-    @scala.inline
-    def apply(levelOfControl: String, value: js.Any): ChromeSettingGetResultDetails = {
+    inline def apply(levelOfControl: String, value: js.Any): ChromeSettingGetResultDetails = {
       val __obj = js.Dynamic.literal(levelOfControl = levelOfControl.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChromeSettingGetResultDetails]
     }
     
-    @scala.inline
-    implicit class ChromeSettingGetResultDetailsMutableBuilder[Self <: ChromeSettingGetResultDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ChromeSettingGetResultDetails](x: Self) {
       
-      @scala.inline
-      def setIncognitoSpecific(value: Boolean): Self = StObject.set(x, "incognitoSpecific", value.asInstanceOf[js.Any])
+      inline def setIncognitoSpecific(value: Boolean): Self = StObject.set(x, "incognitoSpecific", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncognitoSpecificUndefined: Self = StObject.set(x, "incognitoSpecific", js.undefined)
+      inline def setIncognitoSpecificUndefined: Self = StObject.set(x, "incognitoSpecific", js.undefined)
       
-      @scala.inline
-      def setLevelOfControl(value: String): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
+      inline def setLevelOfControl(value: String): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,17 +148,14 @@ object types {
   }
   object ChromeSettingSetDetails {
     
-    @scala.inline
-    def apply(value: js.Any): ChromeSettingSetDetails = {
+    inline def apply(value: js.Any): ChromeSettingSetDetails = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChromeSettingSetDetails]
     }
     
-    @scala.inline
-    implicit class ChromeSettingSetDetailsMutableBuilder[Self <: ChromeSettingSetDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ChromeSettingSetDetails](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

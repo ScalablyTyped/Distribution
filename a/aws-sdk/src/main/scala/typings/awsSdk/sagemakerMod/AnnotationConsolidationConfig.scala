@@ -13,16 +13,13 @@ trait AnnotationConsolidationConfig extends StObject {
 }
 object AnnotationConsolidationConfig {
   
-  @scala.inline
-  def apply(AnnotationConsolidationLambdaArn: LambdaFunctionArn): AnnotationConsolidationConfig = {
+  inline def apply(AnnotationConsolidationLambdaArn: LambdaFunctionArn): AnnotationConsolidationConfig = {
     val __obj = js.Dynamic.literal(AnnotationConsolidationLambdaArn = AnnotationConsolidationLambdaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationConsolidationConfig]
   }
   
-  @scala.inline
-  implicit class AnnotationConsolidationConfigMutableBuilder[Self <: AnnotationConsolidationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationConsolidationConfig](x: Self) {
     
-    @scala.inline
-    def setAnnotationConsolidationLambdaArn(value: LambdaFunctionArn): Self = StObject.set(x, "AnnotationConsolidationLambdaArn", value.asInstanceOf[js.Any])
+    inline def setAnnotationConsolidationLambdaArn(value: LambdaFunctionArn): Self = StObject.set(x, "AnnotationConsolidationLambdaArn", value.asInstanceOf[js.Any])
   }
 }

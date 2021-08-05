@@ -29,15 +29,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createClient(): SCBrokerClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[SCBrokerClient]
-  @scala.inline
-  def createClient(options: SCBrokerClientOptions): SCBrokerClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[SCBrokerClient]
+  inline def createClient(): SCBrokerClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[SCBrokerClient]
+  inline def createClient(options: SCBrokerClientOptions): SCBrokerClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[SCBrokerClient]
   
-  @scala.inline
-  def createServer(): SCBrokerServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[SCBrokerServer]
-  @scala.inline
-  def createServer(options: SCBrokerServerOptions): SCBrokerServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[SCBrokerServer]
+  inline def createServer(): SCBrokerServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[SCBrokerServer]
+  inline def createServer(options: SCBrokerServerOptions): SCBrokerServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[SCBrokerServer]
   
   trait AutoReconnectOptions extends StObject {
     
@@ -51,38 +47,28 @@ object mod {
   }
   object AutoReconnectOptions {
     
-    @scala.inline
-    def apply(): AutoReconnectOptions = {
+    inline def apply(): AutoReconnectOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoReconnectOptions]
     }
     
-    @scala.inline
-    implicit class AutoReconnectOptionsMutableBuilder[Self <: AutoReconnectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AutoReconnectOptions](x: Self) {
       
-      @scala.inline
-      def setInitialDelay(value: Double): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
+      inline def setInitialDelay(value: Double): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialDelayUndefined: Self = StObject.set(x, "initialDelay", js.undefined)
+      inline def setInitialDelayUndefined: Self = StObject.set(x, "initialDelay", js.undefined)
       
-      @scala.inline
-      def setMaxDelay(value: Double): Self = StObject.set(x, "maxDelay", value.asInstanceOf[js.Any])
+      inline def setMaxDelay(value: Double): Self = StObject.set(x, "maxDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDelayUndefined: Self = StObject.set(x, "maxDelay", js.undefined)
+      inline def setMaxDelayUndefined: Self = StObject.set(x, "maxDelay", js.undefined)
       
-      @scala.inline
-      def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
+      inline def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiplierUndefined: Self = StObject.set(x, "multiplier", js.undefined)
+      inline def setMultiplierUndefined: Self = StObject.set(x, "multiplier", js.undefined)
       
-      @scala.inline
-      def setRandomness(value: Double): Self = StObject.set(x, "randomness", value.asInstanceOf[js.Any])
+      inline def setRandomness(value: Double): Self = StObject.set(x, "randomness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRandomnessUndefined: Self = StObject.set(x, "randomness", js.undefined)
+      inline def setRandomnessUndefined: Self = StObject.set(x, "randomness", js.undefined)
     }
   }
   
@@ -105,26 +91,20 @@ object mod {
   }
   object ExitData {
     
-    @scala.inline
-    def apply(code: Double, id: String, pid: Double, signal: String): ExitData = {
+    inline def apply(code: Double, id: String, pid: Double, signal: String): ExitData = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExitData]
     }
     
-    @scala.inline
-    implicit class ExitDataMutableBuilder[Self <: ExitData] (val x: Self) extends AnyVal {
+    extension [Self <: ExitData](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,32 +118,24 @@ object mod {
   }
   object QueryOptions {
     
-    @scala.inline
-    def apply(): QueryOptions = {
+    inline def apply(): QueryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueryOptions]
     }
     
-    @scala.inline
-    implicit class QueryOptionsMutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: QueryOptions](x: Self) {
       
-      @scala.inline
-      def setBaseKey(value: KeyChain): Self = StObject.set(x, "baseKey", value.asInstanceOf[js.Any])
+      inline def setBaseKey(value: KeyChain): Self = StObject.set(x, "baseKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseKeyUndefined: Self = StObject.set(x, "baseKey", js.undefined)
+      inline def setBaseKeyUndefined: Self = StObject.set(x, "baseKey", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setNoAck(value: Boolean): Self = StObject.set(x, "noAck", value.asInstanceOf[js.Any])
+      inline def setNoAck(value: Boolean): Self = StObject.set(x, "noAck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoAckUndefined: Self = StObject.set(x, "noAck", js.undefined)
+      inline def setNoAckUndefined: Self = StObject.set(x, "noAck", js.undefined)
     }
   }
   
@@ -435,68 +407,48 @@ object mod {
   }
   object SCBrokerClientOptions {
     
-    @scala.inline
-    def apply(): SCBrokerClientOptions = {
+    inline def apply(): SCBrokerClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SCBrokerClientOptions]
     }
     
-    @scala.inline
-    implicit class SCBrokerClientOptionsMutableBuilder[Self <: SCBrokerClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SCBrokerClientOptions](x: Self) {
       
-      @scala.inline
-      def setAutoReconnect(value: Boolean): Self = StObject.set(x, "autoReconnect", value.asInstanceOf[js.Any])
+      inline def setAutoReconnect(value: Boolean): Self = StObject.set(x, "autoReconnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoReconnectOptions(value: AutoReconnectOptions): Self = StObject.set(x, "autoReconnectOptions", value.asInstanceOf[js.Any])
+      inline def setAutoReconnectOptions(value: AutoReconnectOptions): Self = StObject.set(x, "autoReconnectOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoReconnectOptionsUndefined: Self = StObject.set(x, "autoReconnectOptions", js.undefined)
+      inline def setAutoReconnectOptionsUndefined: Self = StObject.set(x, "autoReconnectOptions", js.undefined)
       
-      @scala.inline
-      def setAutoReconnectUndefined: Self = StObject.set(x, "autoReconnect", js.undefined)
+      inline def setAutoReconnectUndefined: Self = StObject.set(x, "autoReconnect", js.undefined)
       
-      @scala.inline
-      def setConnectRetryErrorThreshold(value: Double): Self = StObject.set(x, "connectRetryErrorThreshold", value.asInstanceOf[js.Any])
+      inline def setConnectRetryErrorThreshold(value: Double): Self = StObject.set(x, "connectRetryErrorThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectRetryErrorThresholdUndefined: Self = StObject.set(x, "connectRetryErrorThreshold", js.undefined)
+      inline def setConnectRetryErrorThresholdUndefined: Self = StObject.set(x, "connectRetryErrorThreshold", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setPubSubBatchDuration(value: Double): Self = StObject.set(x, "pubSubBatchDuration", value.asInstanceOf[js.Any])
+      inline def setPubSubBatchDuration(value: Double): Self = StObject.set(x, "pubSubBatchDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubSubBatchDurationUndefined: Self = StObject.set(x, "pubSubBatchDuration", js.undefined)
+      inline def setPubSubBatchDurationUndefined: Self = StObject.set(x, "pubSubBatchDuration", js.undefined)
       
-      @scala.inline
-      def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+      inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretKeyUndefined: Self = StObject.set(x, "secretKey", js.undefined)
+      inline def setSecretKeyUndefined: Self = StObject.set(x, "secretKey", js.undefined)
       
-      @scala.inline
-      def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
+      inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
+      inline def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -586,92 +538,64 @@ object mod {
   }
   object SCBrokerServerOptions {
     
-    @scala.inline
-    def apply(): SCBrokerServerOptions = {
+    inline def apply(): SCBrokerServerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SCBrokerServerOptions]
     }
     
-    @scala.inline
-    implicit class SCBrokerServerOptionsMutableBuilder[Self <: SCBrokerServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SCBrokerServerOptions](x: Self) {
       
-      @scala.inline
-      def setBrokerControllerPath(value: String): Self = StObject.set(x, "brokerControllerPath", value.asInstanceOf[js.Any])
+      inline def setBrokerControllerPath(value: String): Self = StObject.set(x, "brokerControllerPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrokerControllerPathUndefined: Self = StObject.set(x, "brokerControllerPath", js.undefined)
+      inline def setBrokerControllerPathUndefined: Self = StObject.set(x, "brokerControllerPath", js.undefined)
       
-      @scala.inline
-      def setBrokerOptions(value: SCBrokerOptions): Self = StObject.set(x, "brokerOptions", value.asInstanceOf[js.Any])
+      inline def setBrokerOptions(value: SCBrokerOptions): Self = StObject.set(x, "brokerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrokerOptionsUndefined: Self = StObject.set(x, "brokerOptions", js.undefined)
+      inline def setBrokerOptionsUndefined: Self = StObject.set(x, "brokerOptions", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDowngradeToUser(value: Double | String): Self = StObject.set(x, "downgradeToUser", value.asInstanceOf[js.Any])
+      inline def setDowngradeToUser(value: Double | String): Self = StObject.set(x, "downgradeToUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDowngradeToUserUndefined: Self = StObject.set(x, "downgradeToUser", js.undefined)
+      inline def setDowngradeToUserUndefined: Self = StObject.set(x, "downgradeToUser", js.undefined)
       
-      @scala.inline
-      def setExpiryAccuracy(value: Double): Self = StObject.set(x, "expiryAccuracy", value.asInstanceOf[js.Any])
+      inline def setExpiryAccuracy(value: Double): Self = StObject.set(x, "expiryAccuracy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiryAccuracyUndefined: Self = StObject.set(x, "expiryAccuracy", js.undefined)
+      inline def setExpiryAccuracyUndefined: Self = StObject.set(x, "expiryAccuracy", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setInspect(value: Boolean): Self = StObject.set(x, "inspect", value.asInstanceOf[js.Any])
+      inline def setInspect(value: Boolean): Self = StObject.set(x, "inspect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInspectUndefined: Self = StObject.set(x, "inspect", js.undefined)
+      inline def setInspectUndefined: Self = StObject.set(x, "inspect", js.undefined)
       
-      @scala.inline
-      def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setIpcAckTimeout(value: Double): Self = StObject.set(x, "ipcAckTimeout", value.asInstanceOf[js.Any])
+      inline def setIpcAckTimeout(value: Double): Self = StObject.set(x, "ipcAckTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpcAckTimeoutUndefined: Self = StObject.set(x, "ipcAckTimeout", js.undefined)
+      inline def setIpcAckTimeoutUndefined: Self = StObject.set(x, "ipcAckTimeout", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setProcessTermTimeout(value: Double): Self = StObject.set(x, "processTermTimeout", value.asInstanceOf[js.Any])
+      inline def setProcessTermTimeout(value: Double): Self = StObject.set(x, "processTermTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessTermTimeoutUndefined: Self = StObject.set(x, "processTermTimeout", js.undefined)
+      inline def setProcessTermTimeoutUndefined: Self = StObject.set(x, "processTermTimeout", js.undefined)
       
-      @scala.inline
-      def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+      inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretKeyUndefined: Self = StObject.set(x, "secretKey", js.undefined)
+      inline def setSecretKeyUndefined: Self = StObject.set(x, "secretKey", js.undefined)
       
-      @scala.inline
-      def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
+      inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
+      inline def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
     }
   }
   
@@ -689,47 +613,34 @@ object mod {
   }
   object SpliceOptions {
     
-    @scala.inline
-    def apply(): SpliceOptions = {
+    inline def apply(): SpliceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpliceOptions]
     }
     
-    @scala.inline
-    implicit class SpliceOptionsMutableBuilder[Self <: SpliceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SpliceOptions](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setGetValue(value: Boolean): Self = StObject.set(x, "getValue", value.asInstanceOf[js.Any])
+      inline def setGetValue(value: Boolean): Self = StObject.set(x, "getValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
+      inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setNoAck(value: Boolean): Self = StObject.set(x, "noAck", value.asInstanceOf[js.Any])
+      inline def setNoAck(value: Boolean): Self = StObject.set(x, "noAck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoAckUndefined: Self = StObject.set(x, "noAck", js.undefined)
+      inline def setNoAckUndefined: Self = StObject.set(x, "noAck", js.undefined)
     }
   }
 }

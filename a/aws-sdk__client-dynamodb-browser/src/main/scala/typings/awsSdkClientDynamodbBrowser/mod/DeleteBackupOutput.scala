@@ -10,8 +10,7 @@ trait DeleteBackupOutput
      with typings.awsSdkClientDynamodbBrowser.typesDeleteBackupOutputMod.DeleteBackupOutput
 object DeleteBackupOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): DeleteBackupOutput = {
+  inline def apply($metadata: ResponseMetadata): DeleteBackupOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBackupOutput]
   }

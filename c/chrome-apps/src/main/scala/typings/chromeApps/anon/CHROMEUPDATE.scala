@@ -20,25 +20,19 @@ trait CHROMEUPDATE extends StObject {
 }
 object CHROMEUPDATE {
   
-  @scala.inline
-  def apply(): CHROMEUPDATE = {
+  inline def apply(): CHROMEUPDATE = {
     val __obj = js.Dynamic.literal(CHROME_UPDATE = "chrome_update", INSTALL = "install", SHARED_MODULE_UPDATE = "shared_module_update", UPDATE = "update")
     __obj.asInstanceOf[CHROMEUPDATE]
   }
   
-  @scala.inline
-  implicit class CHROMEUPDATEMutableBuilder[Self <: CHROMEUPDATE] (val x: Self) extends AnyVal {
+  extension [Self <: CHROMEUPDATE](x: Self) {
     
-    @scala.inline
-    def setCHROME_UPDATE(value: chrome_update_): Self = StObject.set(x, "CHROME_UPDATE", value.asInstanceOf[js.Any])
+    inline def setCHROME_UPDATE(value: chrome_update_): Self = StObject.set(x, "CHROME_UPDATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINSTALL(value: install_): Self = StObject.set(x, "INSTALL", value.asInstanceOf[js.Any])
+    inline def setINSTALL(value: install_): Self = StObject.set(x, "INSTALL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHARED_MODULE_UPDATE(value: shared_module_update_): Self = StObject.set(x, "SHARED_MODULE_UPDATE", value.asInstanceOf[js.Any])
+    inline def setSHARED_MODULE_UPDATE(value: shared_module_update_): Self = StObject.set(x, "SHARED_MODULE_UPDATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUPDATE(value: update_): Self = StObject.set(x, "UPDATE", value.asInstanceOf[js.Any])
+    inline def setUPDATE(value: update_): Self = StObject.set(x, "UPDATE", value.asInstanceOf[js.Any])
   }
 }

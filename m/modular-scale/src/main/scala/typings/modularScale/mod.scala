@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(options: ModularScaleOptions): typings.modularScale.mod.modularScale = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[typings.modularScale.mod.modularScale]
+  inline def default(options: ModularScaleOptions): typings.modularScale.mod.modularScale = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[typings.modularScale.mod.modularScale]
   
   @JSImport("modular-scale", "ratios")
   @js.native
@@ -27,26 +26,20 @@ object mod {
   }
   object ModularScaleOptions {
     
-    @scala.inline
-    def apply(): ModularScaleOptions = {
+    inline def apply(): ModularScaleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModularScaleOptions]
     }
     
-    @scala.inline
-    implicit class ModularScaleOptionsMutableBuilder[Self <: ModularScaleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ModularScaleOptions](x: Self) {
       
-      @scala.inline
-      def setBase(value: Double | String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: Double | String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+      inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+      inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
     }
   }
   
@@ -88,8 +81,7 @@ object mod {
   }
   object ModularScaleRatio {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       augFourth: Double,
       doubleOctave: Double,
       goldenSection: Double,
@@ -112,59 +104,41 @@ object mod {
       __obj.asInstanceOf[ModularScaleRatio]
     }
     
-    @scala.inline
-    implicit class ModularScaleRatioMutableBuilder[Self <: ModularScaleRatio] (val x: Self) extends AnyVal {
+    extension [Self <: ModularScaleRatio](x: Self) {
       
-      @scala.inline
-      def setAugFourth(value: Double): Self = StObject.set(x, "augFourth", value.asInstanceOf[js.Any])
+      inline def setAugFourth(value: Double): Self = StObject.set(x, "augFourth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoubleOctave(value: Double): Self = StObject.set(x, "doubleOctave", value.asInstanceOf[js.Any])
+      inline def setDoubleOctave(value: Double): Self = StObject.set(x, "doubleOctave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoldenSection(value: Double): Self = StObject.set(x, "goldenSection", value.asInstanceOf[js.Any])
+      inline def setGoldenSection(value: Double): Self = StObject.set(x, "goldenSection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorEleventh(value: Double): Self = StObject.set(x, "majorEleventh", value.asInstanceOf[js.Any])
+      inline def setMajorEleventh(value: Double): Self = StObject.set(x, "majorEleventh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorSecond(value: Double): Self = StObject.set(x, "majorSecond", value.asInstanceOf[js.Any])
+      inline def setMajorSecond(value: Double): Self = StObject.set(x, "majorSecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorSeventh(value: Double): Self = StObject.set(x, "majorSeventh", value.asInstanceOf[js.Any])
+      inline def setMajorSeventh(value: Double): Self = StObject.set(x, "majorSeventh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorSixth(value: Double): Self = StObject.set(x, "majorSixth", value.asInstanceOf[js.Any])
+      inline def setMajorSixth(value: Double): Self = StObject.set(x, "majorSixth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorTenth(value: Double): Self = StObject.set(x, "majorTenth", value.asInstanceOf[js.Any])
+      inline def setMajorTenth(value: Double): Self = StObject.set(x, "majorTenth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorThird(value: Double): Self = StObject.set(x, "majorThird", value.asInstanceOf[js.Any])
+      inline def setMajorThird(value: Double): Self = StObject.set(x, "majorThird", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorTwelfth(value: Double): Self = StObject.set(x, "majorTwelfth", value.asInstanceOf[js.Any])
+      inline def setMajorTwelfth(value: Double): Self = StObject.set(x, "majorTwelfth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinorSecond(value: Double): Self = StObject.set(x, "minorSecond", value.asInstanceOf[js.Any])
+      inline def setMinorSecond(value: Double): Self = StObject.set(x, "minorSecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinorSeventh(value: Double): Self = StObject.set(x, "minorSeventh", value.asInstanceOf[js.Any])
+      inline def setMinorSeventh(value: Double): Self = StObject.set(x, "minorSeventh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinorSixth(value: Double): Self = StObject.set(x, "minorSixth", value.asInstanceOf[js.Any])
+      inline def setMinorSixth(value: Double): Self = StObject.set(x, "minorSixth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinorThird(value: Double): Self = StObject.set(x, "minorThird", value.asInstanceOf[js.Any])
+      inline def setMinorThird(value: Double): Self = StObject.set(x, "minorThird", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOctave(value: Double): Self = StObject.set(x, "octave", value.asInstanceOf[js.Any])
+      inline def setOctave(value: Double): Self = StObject.set(x, "octave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerfectFifth(value: Double): Self = StObject.set(x, "perfectFifth", value.asInstanceOf[js.Any])
+      inline def setPerfectFifth(value: Double): Self = StObject.set(x, "perfectFifth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerfectFourth(value: Double): Self = StObject.set(x, "perfectFourth", value.asInstanceOf[js.Any])
+      inline def setPerfectFourth(value: Double): Self = StObject.set(x, "perfectFourth", value.asInstanceOf[js.Any])
     }
   }
   

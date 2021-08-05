@@ -15,20 +15,16 @@ trait MasterpassWallet
 }
 object MasterpassWallet {
   
-  @scala.inline
-  def apply(masterpass: WalletData): MasterpassWallet = {
+  inline def apply(masterpass: WalletData): MasterpassWallet = {
     val __obj = js.Dynamic.literal(masterpass = masterpass.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("masterpass")
     __obj.asInstanceOf[MasterpassWallet]
   }
   
-  @scala.inline
-  implicit class MasterpassWalletMutableBuilder[Self <: MasterpassWallet] (val x: Self) extends AnyVal {
+  extension [Self <: MasterpassWallet](x: Self) {
     
-    @scala.inline
-    def setMasterpass(value: WalletData): Self = StObject.set(x, "masterpass", value.asInstanceOf[js.Any])
+    inline def setMasterpass(value: WalletData): Self = StObject.set(x, "masterpass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: masterpass): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: masterpass): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

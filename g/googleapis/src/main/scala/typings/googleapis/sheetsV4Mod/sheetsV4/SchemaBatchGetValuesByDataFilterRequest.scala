@@ -41,40 +41,29 @@ trait SchemaBatchGetValuesByDataFilterRequest extends StObject {
 }
 object SchemaBatchGetValuesByDataFilterRequest {
   
-  @scala.inline
-  def apply(): SchemaBatchGetValuesByDataFilterRequest = {
+  inline def apply(): SchemaBatchGetValuesByDataFilterRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchGetValuesByDataFilterRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBatchGetValuesByDataFilterRequestMutableBuilder[Self <: SchemaBatchGetValuesByDataFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchGetValuesByDataFilterRequest](x: Self) {
     
-    @scala.inline
-    def setDataFilters(value: js.Array[SchemaDataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
+    inline def setDataFilters(value: js.Array[SchemaDataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
+    inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
     
-    @scala.inline
-    def setDataFiltersVarargs(value: SchemaDataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+    inline def setDataFiltersVarargs(value: SchemaDataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setDateTimeRenderOption(value: String): Self = StObject.set(x, "dateTimeRenderOption", value.asInstanceOf[js.Any])
+    inline def setDateTimeRenderOption(value: String): Self = StObject.set(x, "dateTimeRenderOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeRenderOptionUndefined: Self = StObject.set(x, "dateTimeRenderOption", js.undefined)
+    inline def setDateTimeRenderOptionUndefined: Self = StObject.set(x, "dateTimeRenderOption", js.undefined)
     
-    @scala.inline
-    def setMajorDimension(value: String): Self = StObject.set(x, "majorDimension", value.asInstanceOf[js.Any])
+    inline def setMajorDimension(value: String): Self = StObject.set(x, "majorDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorDimensionUndefined: Self = StObject.set(x, "majorDimension", js.undefined)
+    inline def setMajorDimensionUndefined: Self = StObject.set(x, "majorDimension", js.undefined)
     
-    @scala.inline
-    def setValueRenderOption(value: String): Self = StObject.set(x, "valueRenderOption", value.asInstanceOf[js.Any])
+    inline def setValueRenderOption(value: String): Self = StObject.set(x, "valueRenderOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueRenderOptionUndefined: Self = StObject.set(x, "valueRenderOption", js.undefined)
+    inline def setValueRenderOptionUndefined: Self = StObject.set(x, "valueRenderOption", js.undefined)
   }
 }

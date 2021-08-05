@@ -21,19 +21,15 @@ trait APIError extends StObject {
 }
 object APIError {
   
-  @scala.inline
-  def apply(code: ErrorCodeType, message: String): APIError = {
+  inline def apply(code: ErrorCodeType, message: String): APIError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIError]
   }
   
-  @scala.inline
-  implicit class APIErrorMutableBuilder[Self <: APIError] (val x: Self) extends AnyVal {
+  extension [Self <: APIError](x: Self) {
     
-    @scala.inline
-    def setCode(value: ErrorCodeType): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: ErrorCodeType): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

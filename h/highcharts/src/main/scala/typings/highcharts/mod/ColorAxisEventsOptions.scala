@@ -46,31 +46,23 @@ trait ColorAxisEventsOptions extends StObject {
 }
 object ColorAxisEventsOptions {
   
-  @scala.inline
-  def apply(): ColorAxisEventsOptions = {
+  inline def apply(): ColorAxisEventsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorAxisEventsOptions]
   }
   
-  @scala.inline
-  implicit class ColorAxisEventsOptionsMutableBuilder[Self <: ColorAxisEventsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ColorAxisEventsOptions](x: Self) {
     
-    @scala.inline
-    def setAfterSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = StObject.set(x, "afterSetExtremes", value.asInstanceOf[js.Any])
+    inline def setAfterSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = StObject.set(x, "afterSetExtremes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterSetExtremesUndefined: Self = StObject.set(x, "afterSetExtremes", js.undefined)
+    inline def setAfterSetExtremesUndefined: Self = StObject.set(x, "afterSetExtremes", js.undefined)
     
-    @scala.inline
-    def setLegendItemClick(value: js.Function): Self = StObject.set(x, "legendItemClick", value.asInstanceOf[js.Any])
+    inline def setLegendItemClick(value: js.Function): Self = StObject.set(x, "legendItemClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendItemClickUndefined: Self = StObject.set(x, "legendItemClick", js.undefined)
+    inline def setLegendItemClickUndefined: Self = StObject.set(x, "legendItemClick", js.undefined)
     
-    @scala.inline
-    def setSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = StObject.set(x, "setExtremes", value.asInstanceOf[js.Any])
+    inline def setSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = StObject.set(x, "setExtremes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetExtremesUndefined: Self = StObject.set(x, "setExtremes", js.undefined)
+    inline def setSetExtremesUndefined: Self = StObject.set(x, "setExtremes", js.undefined)
   }
 }

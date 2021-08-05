@@ -15,25 +15,19 @@ trait Enable extends StObject {
 }
 object Enable {
   
-  @scala.inline
-  def apply(enable: Boolean, res: NormalSuccessResponse): Enable = {
+  inline def apply(enable: Boolean, res: NormalSuccessResponse): Enable = {
     val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], prefix = null)
     __obj.asInstanceOf[Enable]
   }
   
-  @scala.inline
-  implicit class EnableMutableBuilder[Self <: Enable] (val x: Self) extends AnyVal {
+  extension [Self <: Enable](x: Self) {
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixNull: Self = StObject.set(x, "prefix", null)
+    inline def setPrefixNull: Self = StObject.set(x, "prefix", null)
     
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

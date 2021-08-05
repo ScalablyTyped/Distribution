@@ -29,55 +29,39 @@ trait VoidedPurchase extends StObject {
 }
 object VoidedPurchase {
   
-  @scala.inline
-  def apply(): VoidedPurchase = {
+  inline def apply(): VoidedPurchase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VoidedPurchase]
   }
   
-  @scala.inline
-  implicit class VoidedPurchaseMutableBuilder[Self <: VoidedPurchase] (val x: Self) extends AnyVal {
+  extension [Self <: VoidedPurchase](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
+    inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
+    inline def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
-    @scala.inline
-    def setPurchaseTimeMillis(value: String): Self = StObject.set(x, "purchaseTimeMillis", value.asInstanceOf[js.Any])
+    inline def setPurchaseTimeMillis(value: String): Self = StObject.set(x, "purchaseTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseTimeMillisUndefined: Self = StObject.set(x, "purchaseTimeMillis", js.undefined)
+    inline def setPurchaseTimeMillisUndefined: Self = StObject.set(x, "purchaseTimeMillis", js.undefined)
     
-    @scala.inline
-    def setPurchaseToken(value: String): Self = StObject.set(x, "purchaseToken", value.asInstanceOf[js.Any])
+    inline def setPurchaseToken(value: String): Self = StObject.set(x, "purchaseToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseTokenUndefined: Self = StObject.set(x, "purchaseToken", js.undefined)
+    inline def setPurchaseTokenUndefined: Self = StObject.set(x, "purchaseToken", js.undefined)
     
-    @scala.inline
-    def setVoidedReason(value: Double): Self = StObject.set(x, "voidedReason", value.asInstanceOf[js.Any])
+    inline def setVoidedReason(value: Double): Self = StObject.set(x, "voidedReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoidedReasonUndefined: Self = StObject.set(x, "voidedReason", js.undefined)
+    inline def setVoidedReasonUndefined: Self = StObject.set(x, "voidedReason", js.undefined)
     
-    @scala.inline
-    def setVoidedSource(value: Double): Self = StObject.set(x, "voidedSource", value.asInstanceOf[js.Any])
+    inline def setVoidedSource(value: Double): Self = StObject.set(x, "voidedSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoidedSourceUndefined: Self = StObject.set(x, "voidedSource", js.undefined)
+    inline def setVoidedSourceUndefined: Self = StObject.set(x, "voidedSource", js.undefined)
     
-    @scala.inline
-    def setVoidedTimeMillis(value: String): Self = StObject.set(x, "voidedTimeMillis", value.asInstanceOf[js.Any])
+    inline def setVoidedTimeMillis(value: String): Self = StObject.set(x, "voidedTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoidedTimeMillisUndefined: Self = StObject.set(x, "voidedTimeMillis", js.undefined)
+    inline def setVoidedTimeMillisUndefined: Self = StObject.set(x, "voidedTimeMillis", js.undefined)
   }
 }

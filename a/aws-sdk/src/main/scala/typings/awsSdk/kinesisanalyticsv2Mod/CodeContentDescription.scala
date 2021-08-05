@@ -28,37 +28,27 @@ trait CodeContentDescription extends StObject {
 }
 object CodeContentDescription {
   
-  @scala.inline
-  def apply(): CodeContentDescription = {
+  inline def apply(): CodeContentDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeContentDescription]
   }
   
-  @scala.inline
-  implicit class CodeContentDescriptionMutableBuilder[Self <: CodeContentDescription] (val x: Self) extends AnyVal {
+  extension [Self <: CodeContentDescription](x: Self) {
     
-    @scala.inline
-    def setCodeMD5(value: CodeMD5): Self = StObject.set(x, "CodeMD5", value.asInstanceOf[js.Any])
+    inline def setCodeMD5(value: CodeMD5): Self = StObject.set(x, "CodeMD5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeMD5Undefined: Self = StObject.set(x, "CodeMD5", js.undefined)
+    inline def setCodeMD5Undefined: Self = StObject.set(x, "CodeMD5", js.undefined)
     
-    @scala.inline
-    def setCodeSize(value: CodeSize): Self = StObject.set(x, "CodeSize", value.asInstanceOf[js.Any])
+    inline def setCodeSize(value: CodeSize): Self = StObject.set(x, "CodeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeSizeUndefined: Self = StObject.set(x, "CodeSize", js.undefined)
+    inline def setCodeSizeUndefined: Self = StObject.set(x, "CodeSize", js.undefined)
     
-    @scala.inline
-    def setS3ApplicationCodeLocationDescription(value: S3ApplicationCodeLocationDescription): Self = StObject.set(x, "S3ApplicationCodeLocationDescription", value.asInstanceOf[js.Any])
+    inline def setS3ApplicationCodeLocationDescription(value: S3ApplicationCodeLocationDescription): Self = StObject.set(x, "S3ApplicationCodeLocationDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ApplicationCodeLocationDescriptionUndefined: Self = StObject.set(x, "S3ApplicationCodeLocationDescription", js.undefined)
+    inline def setS3ApplicationCodeLocationDescriptionUndefined: Self = StObject.set(x, "S3ApplicationCodeLocationDescription", js.undefined)
     
-    @scala.inline
-    def setTextContent(value: TextContent): Self = StObject.set(x, "TextContent", value.asInstanceOf[js.Any])
+    inline def setTextContent(value: TextContent): Self = StObject.set(x, "TextContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextContentUndefined: Self = StObject.set(x, "TextContent", js.undefined)
+    inline def setTextContentUndefined: Self = StObject.set(x, "TextContent", js.undefined)
   }
 }

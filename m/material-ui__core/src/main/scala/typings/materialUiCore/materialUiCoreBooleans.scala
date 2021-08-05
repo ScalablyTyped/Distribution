@@ -11,6 +11,5 @@ object materialUiCoreBooleans {
   sealed trait `false`
     extends StObject
        with SortDirection
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }

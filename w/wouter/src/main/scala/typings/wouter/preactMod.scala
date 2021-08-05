@@ -28,14 +28,11 @@ object preactMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Link[H /* <: BaseLocationHook */](props: LinkProps[H]): VNode[js.Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Link")(props.asInstanceOf[js.Any]).asInstanceOf[VNode[js.Any] | Null]
+  inline def Link[H /* <: BaseLocationHook */](props: LinkProps[H]): VNode[js.Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Link")(props.asInstanceOf[js.Any]).asInstanceOf[VNode[js.Any] | Null]
   
-  @scala.inline
-  def Redirect[H /* <: BaseLocationHook */](props: RedirectProps[H]): VNode[js.Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Redirect")(props.asInstanceOf[js.Any]).asInstanceOf[VNode[js.Any] | Null]
+  inline def Redirect[H /* <: BaseLocationHook */](props: RedirectProps[H]): VNode[js.Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Redirect")(props.asInstanceOf[js.Any]).asInstanceOf[VNode[js.Any] | Null]
   
-  @scala.inline
-  def Route[T /* <: DefaultParams */](props: RouteProps[T]): VNode[js.Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(props.asInstanceOf[js.Any]).asInstanceOf[VNode[js.Any] | Null]
+  inline def Route[T /* <: DefaultParams */](props: RouteProps[T]): VNode[js.Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(props.asInstanceOf[js.Any]).asInstanceOf[VNode[js.Any] | Null]
   
   @JSImport("wouter/preact", "Router")
   @js.native
@@ -45,14 +42,11 @@ object preactMod {
   @js.native
   val Switch: FunctionComponent[SwitchProps] = js.native
   
-  @scala.inline
-  def useLocation[H /* <: BaseLocationHook */](): HookReturnValue[H] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocation")().asInstanceOf[HookReturnValue[H]]
+  inline def useLocation[H /* <: BaseLocationHook */](): HookReturnValue[H] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocation")().asInstanceOf[HookReturnValue[H]]
   
-  @scala.inline
-  def useRoute[T /* <: DefaultParams */](pattern: Path): Match[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRoute")(pattern.asInstanceOf[js.Any]).asInstanceOf[Match[T]]
+  inline def useRoute[T /* <: DefaultParams */](pattern: Path): Match[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRoute")(pattern.asInstanceOf[js.Any]).asInstanceOf[Match[T]]
   
-  @scala.inline
-  def useRouter(): RouterProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouter")().asInstanceOf[RouterProps]
+  inline def useRouter(): RouterProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouter")().asInstanceOf[RouterProps]
   
   type LinkProps[H /* <: BaseLocationHook */] = OmitHTMLAttributesEventTa & NavigationalProps[H]
   
@@ -66,17 +60,14 @@ object preactMod {
   }
   object RouteComponentProps {
     
-    @scala.inline
-    def apply[T /* <: DefaultParams */](params: T): RouteComponentProps[T] = {
+    inline def apply[T /* <: DefaultParams */](params: T): RouteComponentProps[T] = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteComponentProps[T]]
     }
     
-    @scala.inline
-    implicit class RouteComponentPropsMutableBuilder[Self <: RouteComponentProps[?], T /* <: DefaultParams */] (val x: Self & RouteComponentProps[T]) extends AnyVal {
+    extension [Self <: RouteComponentProps[?], T /* <: DefaultParams */](x: Self & RouteComponentProps[T]) {
       
-      @scala.inline
-      def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,41 +81,30 @@ object preactMod {
   }
   object RouteProps {
     
-    @scala.inline
-    def apply[T /* <: DefaultParams */](): RouteProps[T] = {
+    inline def apply[T /* <: DefaultParams */](): RouteProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouteProps[T]]
     }
     
-    @scala.inline
-    implicit class RoutePropsMutableBuilder[Self <: RouteProps[?], T /* <: DefaultParams */] (val x: Self & RouteProps[T]) extends AnyVal {
+    extension [Self <: RouteProps[?], T /* <: DefaultParams */](x: Self & RouteProps[T]) {
       
-      @scala.inline
-      def setChildren(value: (js.Function1[/* params */ Params[T], ComponentChildren]) | ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: (js.Function1[/* params */ Params[T], ComponentChildren]) | ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction1(value: /* params */ Params[T] => ComponentChildren): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* params */ Params[T] => ComponentChildren): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenNull: Self = StObject.set(x, "children", null)
+      inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ComponentChild*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ComponentChild*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setComponent(value: ComponentType[RouteComponentProps[T]]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentType[RouteComponentProps[T]]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   
@@ -138,8 +118,7 @@ object preactMod {
   }
   object RouterProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       base: Path,
       hook: BaseLocationHook,
       matcher: (/* pattern */ Path, /* path */ Path) => Match[DefaultParams]
@@ -148,17 +127,13 @@ object preactMod {
       __obj.asInstanceOf[RouterProps]
     }
     
-    @scala.inline
-    implicit class RouterPropsMutableBuilder[Self <: RouterProps] (val x: Self) extends AnyVal {
+    extension [Self <: RouterProps](x: Self) {
       
-      @scala.inline
-      def setBase(value: Path): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: Path): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHook(value: BaseLocationHook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
+      inline def setHook(value: BaseLocationHook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatcher(value: (/* pattern */ Path, /* path */ Path) => Match[DefaultParams]): Self = StObject.set(x, "matcher", js.Any.fromFunction2(value))
+      inline def setMatcher(value: (/* pattern */ Path, /* path */ Path) => Match[DefaultParams]): Self = StObject.set(x, "matcher", js.Any.fromFunction2(value))
     }
   }
   
@@ -170,26 +145,20 @@ object preactMod {
   }
   object SwitchProps {
     
-    @scala.inline
-    def apply(children: js.Array[VNode[RouteProps[DefaultParams]]]): SwitchProps = {
+    inline def apply(children: js.Array[VNode[RouteProps[DefaultParams]]]): SwitchProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[SwitchProps]
     }
     
-    @scala.inline
-    implicit class SwitchPropsMutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
+    extension [Self <: SwitchProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[VNode[RouteProps[DefaultParams]]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[VNode[RouteProps[DefaultParams]]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: VNode[RouteProps[DefaultParams]]*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: VNode[RouteProps[DefaultParams]]*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     }
   }
 }

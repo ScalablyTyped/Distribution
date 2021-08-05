@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KeyFormat extends StObject
 object KeyFormat {
   
-  @scala.inline
-  def jwk: typings.std.stdStrings.jwk = "jwk".asInstanceOf[typings.std.stdStrings.jwk]
+  inline def jwk: typings.std.stdStrings.jwk = "jwk".asInstanceOf[typings.std.stdStrings.jwk]
   
-  @scala.inline
-  def pkcs8: typings.std.stdStrings.pkcs8 = "pkcs8".asInstanceOf[typings.std.stdStrings.pkcs8]
+  inline def pkcs8: typings.std.stdStrings.pkcs8 = "pkcs8".asInstanceOf[typings.std.stdStrings.pkcs8]
   
-  @scala.inline
-  def raw: typings.std.stdStrings.raw = "raw".asInstanceOf[typings.std.stdStrings.raw]
+  inline def raw: typings.std.stdStrings.raw = "raw".asInstanceOf[typings.std.stdStrings.raw]
   
-  @scala.inline
-  def spki: typings.std.stdStrings.spki = "spki".asInstanceOf[typings.std.stdStrings.spki]
+  inline def spki: typings.std.stdStrings.spki = "spki".asInstanceOf[typings.std.stdStrings.spki]
 }

@@ -8,11 +8,9 @@ object ractiveStrings {
   
   @js.native
   sealed trait fast extends StObject
-  @scala.inline
-  def fast: fast = "fast".asInstanceOf[fast]
+  inline def fast: fast = "fast".asInstanceOf[fast]
   
   @js.native
   sealed trait slow extends StObject
-  @scala.inline
-  def slow: slow = "slow".asInstanceOf[slow]
+  inline def slow: slow = "slow".asInstanceOf[slow]
 }

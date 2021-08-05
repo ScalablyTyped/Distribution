@@ -10,16 +10,13 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(BluetoothClassicSerial: BluetoothClassicSerial): Window = {
+  inline def apply(BluetoothClassicSerial: BluetoothClassicSerial): Window = {
     val __obj = js.Dynamic.literal(BluetoothClassicSerial = BluetoothClassicSerial.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setBluetoothClassicSerial(value: BluetoothClassicSerial): Self = StObject.set(x, "BluetoothClassicSerial", value.asInstanceOf[js.Any])
+    inline def setBluetoothClassicSerial(value: BluetoothClassicSerial): Self = StObject.set(x, "BluetoothClassicSerial", value.asInstanceOf[js.Any])
   }
 }

@@ -20,37 +20,27 @@ trait CliThemeConfig extends StObject {
 }
 object CliThemeConfig {
   
-  @scala.inline
-  def apply(): CliThemeConfig = {
+  inline def apply(): CliThemeConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CliThemeConfig]
   }
   
-  @scala.inline
-  implicit class CliThemeConfigMutableBuilder[Self <: CliThemeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CliThemeConfig](x: Self) {
     
-    @scala.inline
-    def setDelimiter(value: Format): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: Format): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterDotformat(value: /* str */ String => String): Self = StObject.set(x, "delimiter.format", js.Any.fromFunction1(value))
+    inline def setDelimiterDotformat(value: /* str */ String => String): Self = StObject.set(x, "delimiter.format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDelimiterDotformatUndefined: Self = StObject.set(x, "delimiter.format", js.undefined)
+    inline def setDelimiterDotformatUndefined: Self = StObject.set(x, "delimiter.format", js.undefined)
     
-    @scala.inline
-    def setDelimiterDottext(value: String): Self = StObject.set(x, "delimiter.text", value.asInstanceOf[js.Any])
+    inline def setDelimiterDottext(value: String): Self = StObject.set(x, "delimiter.text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterDottextUndefined: Self = StObject.set(x, "delimiter.text", js.undefined)
+    inline def setDelimiterDottextUndefined: Self = StObject.set(x, "delimiter.text", js.undefined)
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
-    @scala.inline
-    def setStyles(value: StringDictionary[js.Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[js.Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

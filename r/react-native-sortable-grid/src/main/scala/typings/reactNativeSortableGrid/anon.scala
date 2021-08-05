@@ -14,17 +14,14 @@ object anon {
   }
   object DeleteModeOn {
     
-    @scala.inline
-    def apply(deleteModeOn: Boolean): DeleteModeOn = {
+    inline def apply(deleteModeOn: Boolean): DeleteModeOn = {
       val __obj = js.Dynamic.literal(deleteModeOn = deleteModeOn.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteModeOn]
     }
     
-    @scala.inline
-    implicit class DeleteModeOnMutableBuilder[Self <: DeleteModeOn] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteModeOn](x: Self) {
       
-      @scala.inline
-      def setDeleteModeOn(value: Boolean): Self = StObject.set(x, "deleteModeOn", value.asInstanceOf[js.Any])
+      inline def setDeleteModeOn(value: Boolean): Self = StObject.set(x, "deleteModeOn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -34,20 +31,16 @@ object anon {
   }
   object Transform {
     
-    @scala.inline
-    def apply(transform: js.Array[StringDictionary[AnimatedInterpolation]]): Transform = {
+    inline def apply(transform: js.Array[StringDictionary[AnimatedInterpolation]]): Transform = {
       val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any])
       __obj.asInstanceOf[Transform]
     }
     
-    @scala.inline
-    implicit class TransformMutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
+    extension [Self <: Transform](x: Self) {
       
-      @scala.inline
-      def setTransform(value: js.Array[StringDictionary[AnimatedInterpolation]]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: js.Array[StringDictionary[AnimatedInterpolation]]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformVarargs(value: StringDictionary[AnimatedInterpolation]*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: StringDictionary[AnimatedInterpolation]*): Self = StObject.set(x, "transform", js.Array(value :_*))
     }
   }
 }

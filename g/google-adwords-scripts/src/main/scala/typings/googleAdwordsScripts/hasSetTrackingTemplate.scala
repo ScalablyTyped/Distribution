@@ -12,19 +12,15 @@ trait hasSetTrackingTemplate extends StObject {
 }
 object hasSetTrackingTemplate {
   
-  @scala.inline
-  def apply(setCustomParameters: js.Object => Unit, setTrackingTemplate: String => Unit): hasSetTrackingTemplate = {
+  inline def apply(setCustomParameters: js.Object => Unit, setTrackingTemplate: String => Unit): hasSetTrackingTemplate = {
     val __obj = js.Dynamic.literal(setCustomParameters = js.Any.fromFunction1(setCustomParameters), setTrackingTemplate = js.Any.fromFunction1(setTrackingTemplate))
     __obj.asInstanceOf[hasSetTrackingTemplate]
   }
   
-  @scala.inline
-  implicit class hasSetTrackingTemplateMutableBuilder[Self <: hasSetTrackingTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: hasSetTrackingTemplate](x: Self) {
     
-    @scala.inline
-    def setSetCustomParameters(value: js.Object => Unit): Self = StObject.set(x, "setCustomParameters", js.Any.fromFunction1(value))
+    inline def setSetCustomParameters(value: js.Object => Unit): Self = StObject.set(x, "setCustomParameters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTrackingTemplate(value: String => Unit): Self = StObject.set(x, "setTrackingTemplate", js.Any.fromFunction1(value))
+    inline def setSetTrackingTemplate(value: String => Unit): Self = StObject.set(x, "setTrackingTemplate", js.Any.fromFunction1(value))
   }
 }

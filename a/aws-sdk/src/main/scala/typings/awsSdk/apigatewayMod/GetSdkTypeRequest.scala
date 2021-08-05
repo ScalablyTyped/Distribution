@@ -13,16 +13,13 @@ trait GetSdkTypeRequest extends StObject {
 }
 object GetSdkTypeRequest {
   
-  @scala.inline
-  def apply(id: String): GetSdkTypeRequest = {
+  inline def apply(id: String): GetSdkTypeRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSdkTypeRequest]
   }
   
-  @scala.inline
-  implicit class GetSdkTypeRequestMutableBuilder[Self <: GetSdkTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSdkTypeRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

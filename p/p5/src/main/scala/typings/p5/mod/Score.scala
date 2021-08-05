@@ -42,8 +42,7 @@ trait Score extends StObject {
 }
 object Score {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     loop: () => Unit,
     noLoop: () => Unit,
     pause: () => Unit,
@@ -55,25 +54,18 @@ object Score {
     __obj.asInstanceOf[Score]
   }
   
-  @scala.inline
-  implicit class ScoreMutableBuilder[Self <: Score] (val x: Self) extends AnyVal {
+  extension [Self <: Score](x: Self) {
     
-    @scala.inline
-    def setLoop(value: () => Unit): Self = StObject.set(x, "loop", js.Any.fromFunction0(value))
+    inline def setLoop(value: () => Unit): Self = StObject.set(x, "loop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNoLoop(value: () => Unit): Self = StObject.set(x, "noLoop", js.Any.fromFunction0(value))
+    inline def setNoLoop(value: () => Unit): Self = StObject.set(x, "noLoop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetBPM(value: (Double, Double) => Unit): Self = StObject.set(x, "setBPM", js.Any.fromFunction2(value))
+    inline def setSetBPM(value: (Double, Double) => Unit): Self = StObject.set(x, "setBPM", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

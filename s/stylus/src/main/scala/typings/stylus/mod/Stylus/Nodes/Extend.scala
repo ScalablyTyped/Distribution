@@ -13,8 +13,7 @@ trait Extend
 }
 object Extend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -34,13 +33,10 @@ object Extend {
     __obj.asInstanceOf[Extend]
   }
   
-  @scala.inline
-  implicit class ExtendMutableBuilder[Self <: Extend] (val x: Self) extends AnyVal {
+  extension [Self <: Extend](x: Self) {
     
-    @scala.inline
-    def setSelectors(value: js.Array[Selector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+    inline def setSelectors(value: js.Array[Selector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorsVarargs(value: Selector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: Selector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
   }
 }

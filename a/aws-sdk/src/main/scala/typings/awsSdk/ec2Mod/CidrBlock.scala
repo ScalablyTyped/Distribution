@@ -13,19 +13,15 @@ trait CidrBlock extends StObject {
 }
 object CidrBlock {
   
-  @scala.inline
-  def apply(): CidrBlock = {
+  inline def apply(): CidrBlock = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CidrBlock]
   }
   
-  @scala.inline
-  implicit class CidrBlockMutableBuilder[Self <: CidrBlock] (val x: Self) extends AnyVal {
+  extension [Self <: CidrBlock](x: Self) {
     
-    @scala.inline
-    def setCidrBlock(value: String): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
+    inline def setCidrBlock(value: String): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrBlockUndefined: Self = StObject.set(x, "CidrBlock", js.undefined)
+    inline def setCidrBlockUndefined: Self = StObject.set(x, "CidrBlock", js.undefined)
   }
 }

@@ -11,20 +11,17 @@ object wordsToTimeConverterStrings {
   sealed trait average
     extends StObject
        with SpeedType
-  @scala.inline
-  def average: average = "average".asInstanceOf[average]
+  inline def average: average = "average".asInstanceOf[average]
   
   @js.native
   sealed trait fast
     extends StObject
        with SpeedType
-  @scala.inline
-  def fast: fast = "fast".asInstanceOf[fast]
+  inline def fast: fast = "fast".asInstanceOf[fast]
   
   @js.native
   sealed trait slow
     extends StObject
        with SpeedType
-  @scala.inline
-  def slow: slow = "slow".asInstanceOf[slow]
+  inline def slow: slow = "slow".asInstanceOf[slow]
 }

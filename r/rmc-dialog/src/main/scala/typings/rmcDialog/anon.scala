@@ -26,8 +26,7 @@ object anon {
   }
   object AfterClose {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       afterClose: () => Unit,
       className: String,
       closable: Boolean,
@@ -41,32 +40,23 @@ object anon {
       __obj.asInstanceOf[AfterClose]
     }
     
-    @scala.inline
-    implicit class AfterCloseMutableBuilder[Self <: AfterClose] (val x: Self) extends AnyVal {
+    extension [Self <: AfterClose](x: Self) {
       
-      @scala.inline
-      def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
+      inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
+      inline def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskClosable(value: Boolean): Self = StObject.set(x, "maskClosable", value.asInstanceOf[js.Any])
+      inline def setMaskClosable(value: Boolean): Self = StObject.set(x, "maskClosable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,23 +70,18 @@ object anon {
   }
   object OnClose {
     
-    @scala.inline
-    def apply(onClose: () => Unit, prefixCls: String, visible: Boolean): OnClose = {
+    inline def apply(onClose: () => Unit, prefixCls: String, visible: Boolean): OnClose = {
       val __obj = js.Dynamic.literal(onClose = js.Any.fromFunction0(onClose), prefixCls = prefixCls.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnClose]
     }
     
-    @scala.inline
-    implicit class OnCloseMutableBuilder[Self <: OnClose] (val x: Self) extends AnyVal {
+    extension [Self <: OnClose](x: Self) {
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,17 +91,14 @@ object anon {
   }
   object Visible {
     
-    @scala.inline
-    def apply(visible: js.Any): Visible = {
+    inline def apply(visible: js.Any): Visible = {
       val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[Visible]
     }
     
-    @scala.inline
-    implicit class VisibleMutableBuilder[Self <: Visible] (val x: Self) extends AnyVal {
+    extension [Self <: Visible](x: Self) {
       
-      @scala.inline
-      def setVisible(value: js.Any): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: js.Any): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

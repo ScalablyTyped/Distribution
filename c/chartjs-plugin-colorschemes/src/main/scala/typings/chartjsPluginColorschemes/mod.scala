@@ -24,44 +24,32 @@ object mod {
   }
   object ColorSchemesOptions {
     
-    @scala.inline
-    def apply(scheme: String | js.Array[String]): ColorSchemesOptions = {
+    inline def apply(scheme: String | js.Array[String]): ColorSchemesOptions = {
       val __obj = js.Dynamic.literal(scheme = scheme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColorSchemesOptions]
     }
     
-    @scala.inline
-    implicit class ColorSchemesOptionsMutableBuilder[Self <: ColorSchemesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ColorSchemesOptions](x: Self) {
       
-      @scala.inline
-      def setCustom(value: /* schemeColors */ js.Array[String] => js.Array[String] | Unit): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
+      inline def setCustom(value: /* schemeColors */ js.Array[String] => js.Array[String] | Unit): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      @scala.inline
-      def setFillAlpha(value: Double): Self = StObject.set(x, "fillAlpha", value.asInstanceOf[js.Any])
+      inline def setFillAlpha(value: Double): Self = StObject.set(x, "fillAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillAlphaUndefined: Self = StObject.set(x, "fillAlpha", js.undefined)
+      inline def setFillAlphaUndefined: Self = StObject.set(x, "fillAlpha", js.undefined)
       
-      @scala.inline
-      def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+      inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+      inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
       
-      @scala.inline
-      def setScheme(value: String | js.Array[String]): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: String | js.Array[String]): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemeVarargs(value: String*): Self = StObject.set(x, "scheme", js.Array(value :_*))
+      inline def setSchemeVarargs(value: String*): Self = StObject.set(x, "scheme", js.Array(value :_*))
     }
   }
   
@@ -74,20 +62,16 @@ object mod {
     }
     object ChartPluginsOptions {
       
-      @scala.inline
-      def apply(): ChartPluginsOptions = {
+      inline def apply(): ChartPluginsOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ChartPluginsOptions]
       }
       
-      @scala.inline
-      implicit class ChartPluginsOptionsMutableBuilder[Self <: ChartPluginsOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ChartPluginsOptions](x: Self) {
         
-        @scala.inline
-        def setColorschemes(value: ColorSchemesOptions): Self = StObject.set(x, "colorschemes", value.asInstanceOf[js.Any])
+        inline def setColorschemes(value: ColorSchemesOptions): Self = StObject.set(x, "colorschemes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorschemesUndefined: Self = StObject.set(x, "colorschemes", js.undefined)
+        inline def setColorschemesUndefined: Self = StObject.set(x, "colorschemes", js.undefined)
       }
     }
   }

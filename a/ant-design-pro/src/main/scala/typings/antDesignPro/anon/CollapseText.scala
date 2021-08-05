@@ -15,31 +15,23 @@ trait CollapseText extends StObject {
 }
 object CollapseText {
   
-  @scala.inline
-  def apply(): CollapseText = {
+  inline def apply(): CollapseText = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollapseText]
   }
   
-  @scala.inline
-  implicit class CollapseTextMutableBuilder[Self <: CollapseText] (val x: Self) extends AnyVal {
+  extension [Self <: CollapseText](x: Self) {
     
-    @scala.inline
-    def setCollapseText(value: ReactNode): Self = StObject.set(x, "collapseText", value.asInstanceOf[js.Any])
+    inline def setCollapseText(value: ReactNode): Self = StObject.set(x, "collapseText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapseTextUndefined: Self = StObject.set(x, "collapseText", js.undefined)
+    inline def setCollapseTextUndefined: Self = StObject.set(x, "collapseText", js.undefined)
     
-    @scala.inline
-    def setExpandText(value: ReactNode): Self = StObject.set(x, "expandText", value.asInstanceOf[js.Any])
+    inline def setExpandText(value: ReactNode): Self = StObject.set(x, "expandText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandTextUndefined: Self = StObject.set(x, "expandText", js.undefined)
+    inline def setExpandTextUndefined: Self = StObject.set(x, "expandText", js.undefined)
     
-    @scala.inline
-    def setSelectAllText(value: ReactNode): Self = StObject.set(x, "selectAllText", value.asInstanceOf[js.Any])
+    inline def setSelectAllText(value: ReactNode): Self = StObject.set(x, "selectAllText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectAllTextUndefined: Self = StObject.set(x, "selectAllText", js.undefined)
+    inline def setSelectAllTextUndefined: Self = StObject.set(x, "selectAllText", js.undefined)
   }
 }

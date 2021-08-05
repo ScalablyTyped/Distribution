@@ -18,8 +18,7 @@ trait IndexColumnDescriptor
 }
 object IndexColumnDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IsAscending: Boolean,
     Name: String,
     PropertySetInfo: XPropertySetInfo,
@@ -38,10 +37,8 @@ object IndexColumnDescriptor {
     __obj.asInstanceOf[IndexColumnDescriptor]
   }
   
-  @scala.inline
-  implicit class IndexColumnDescriptorMutableBuilder[Self <: IndexColumnDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: IndexColumnDescriptor](x: Self) {
     
-    @scala.inline
-    def setIsAscending(value: Boolean): Self = StObject.set(x, "IsAscending", value.asInstanceOf[js.Any])
+    inline def setIsAscending(value: Boolean): Self = StObject.set(x, "IsAscending", value.asInstanceOf[js.Any])
   }
 }

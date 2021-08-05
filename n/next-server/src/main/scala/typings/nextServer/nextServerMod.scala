@@ -26,29 +26,29 @@ object nextServerMod {
   @js.native
   trait Server extends StObject {
     
-    val _isLikeServerless: js.Any = js.native
+    /* private */ val _isLikeServerless: js.Any = js.native
     
     var buildId: String = js.native
     
-    var close: js.Any = js.native
+    /* private */ var close: js.Any = js.native
     
-    var compression: js.Any = js.native
+    /* private */ var compression: js.Any = js.native
     
-    var currentPhase: js.Any = js.native
+    /* private */ var currentPhase: js.Any = js.native
     
     var dir: String = js.native
     
     var distDir: String = js.native
     
-    var dynamicRoutes: js.Any = js.native
+    /* private */ var dynamicRoutes: js.Any = js.native
     
-    var findPageComponents: js.Any = js.native
+    /* private */ var findPageComponents: js.Any = js.native
     
-    var generatePublicRoutes: js.Any = js.native
+    /* private */ var generatePublicRoutes: js.Any = js.native
     
-    var generateRoutes: js.Any = js.native
+    /* private */ var generateRoutes: js.Any = js.native
     
-    var getDynamicRoutes: js.Any = js.native
+    /* private */ var getDynamicRoutes: js.Any = js.native
     
     def getRequestHandler(): js.Function3[
         /* req */ IncomingMessage, 
@@ -63,15 +63,15 @@ object nextServerMod {
       * @param res http response
       * @param pathname path of request
       */
-    var handleApiRequest: js.Any = js.native
+    /* private */ var handleApiRequest: js.Any = js.native
     
-    var handleCompression: js.Any = js.native
+    /* private */ var handleCompression: js.Any = js.native
     
-    var handleRequest: js.Any = js.native
+    /* private */ var handleRequest: js.Any = js.native
     
-    var isServeableUrl: js.Any = js.native
+    /* private */ var isServeableUrl: js.Any = js.native
     
-    var logError: js.Any = js.native
+    /* private */ var logError: js.Any = js.native
     
     var nextConfig: NextConfig = js.native
     
@@ -83,7 +83,7 @@ object nextServerMod {
     
     var quiet: Boolean = js.native
     
-    var readBuildId: js.Any = js.native
+    /* private */ var readBuildId: js.Any = js.native
     
     def render(req: IncomingMessage, res: ServerResponse, pathname: String): js.Promise[Unit] = js.native
     def render(
@@ -134,19 +134,19 @@ object nextServerMod {
       hasAmphtmlDataOnlyHasAmp: Amphtml
     ): js.Promise[String | Null] = js.native
     
-    var renderToHTMLWithComponents: js.Any = js.native
+    /* private */ var renderToHTMLWithComponents: js.Any = js.native
     
     /**
       * Resolves path to resolver function
       * @param pathname path of request
       */
-    var resolveApiRequest: js.Any = js.native
+    /* private */ var resolveApiRequest: js.Any = js.native
     
     var router: typings.nextServer.serverRouterMod.default = js.native
     
-    var run: js.Any = js.native
+    /* private */ var run: js.Any = js.native
     
-    var sendHTML: js.Any = js.native
+    /* private */ var sendHTML: js.Any = js.native
     
     def serveStatic(req: IncomingMessage, res: ServerResponse, path: String): js.Promise[Unit] = js.native
     def serveStatic(req: IncomingMessage, res: ServerResponse, path: String, parsedUrl: UrlWithParsedQuery): js.Promise[Unit] = js.native
@@ -154,7 +154,7 @@ object nextServerMod {
     def setAssetPrefix(): Unit = js.native
     def setAssetPrefix(prefix: String): Unit = js.native
     
-    var setImmutableAssetCacheControl: js.Any = js.native
+    /* private */ var setImmutableAssetCacheControl: js.Any = js.native
   }
   
   trait ServerConstructor extends StObject {
@@ -178,38 +178,28 @@ object nextServerMod {
   }
   object ServerConstructor {
     
-    @scala.inline
-    def apply(): ServerConstructor = {
+    inline def apply(): ServerConstructor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServerConstructor]
     }
     
-    @scala.inline
-    implicit class ServerConstructorMutableBuilder[Self <: ServerConstructor] (val x: Self) extends AnyVal {
+    extension [Self <: ServerConstructor](x: Self) {
       
-      @scala.inline
-      def setConf(value: NextConfig): Self = StObject.set(x, "conf", value.asInstanceOf[js.Any])
+      inline def setConf(value: NextConfig): Self = StObject.set(x, "conf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfUndefined: Self = StObject.set(x, "conf", js.undefined)
+      inline def setConfUndefined: Self = StObject.set(x, "conf", js.undefined)
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+      inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
-      @scala.inline
-      def setStaticMarkup(value: Boolean): Self = StObject.set(x, "staticMarkup", value.asInstanceOf[js.Any])
+      inline def setStaticMarkup(value: Boolean): Self = StObject.set(x, "staticMarkup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticMarkupUndefined: Self = StObject.set(x, "staticMarkup", js.undefined)
+      inline def setStaticMarkupUndefined: Self = StObject.set(x, "staticMarkup", js.undefined)
     }
   }
 }

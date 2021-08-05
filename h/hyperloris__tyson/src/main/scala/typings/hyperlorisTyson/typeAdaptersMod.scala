@@ -23,30 +23,24 @@ object typeAdaptersMod {
     @JSImport("@hyperloris/tyson/dist/types/adapters/typeAdapters", "TypeAdapters.BOOLEAN_FACTORY")
     @js.native
     def BOOLEAN_FACTORY: TypeAdapterFactory = js.native
-    @scala.inline
-    def BOOLEAN_FACTORY_=(x: TypeAdapterFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOOLEAN_FACTORY")(x.asInstanceOf[js.Any])
+    inline def BOOLEAN_FACTORY_=(x: TypeAdapterFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOOLEAN_FACTORY")(x.asInstanceOf[js.Any])
     
     @JSImport("@hyperloris/tyson/dist/types/adapters/typeAdapters", "TypeAdapters.DATE_FACTORY")
     @js.native
     def DATE_FACTORY: TypeAdapterFactory = js.native
-    @scala.inline
-    def DATE_FACTORY_=(x: TypeAdapterFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATE_FACTORY")(x.asInstanceOf[js.Any])
+    inline def DATE_FACTORY_=(x: TypeAdapterFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATE_FACTORY")(x.asInstanceOf[js.Any])
     
     @JSImport("@hyperloris/tyson/dist/types/adapters/typeAdapters", "TypeAdapters.NUMBER_FACTORY")
     @js.native
     def NUMBER_FACTORY: TypeAdapterFactory = js.native
-    @scala.inline
-    def NUMBER_FACTORY_=(x: TypeAdapterFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMBER_FACTORY")(x.asInstanceOf[js.Any])
+    inline def NUMBER_FACTORY_=(x: TypeAdapterFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMBER_FACTORY")(x.asInstanceOf[js.Any])
     
     @JSImport("@hyperloris/tyson/dist/types/adapters/typeAdapters", "TypeAdapters.STRING_FACTORY")
     @js.native
     def STRING_FACTORY: TypeAdapterFactory = js.native
-    @scala.inline
-    def STRING_FACTORY_=(x: TypeAdapterFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRING_FACTORY")(x.asInstanceOf[js.Any])
+    inline def STRING_FACTORY_=(x: TypeAdapterFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRING_FACTORY")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def newFactory[TT](`type`: ClassType[TT], typeAdapter: TypeAdapter[TT]): TypeAdapterFactory = (^.asInstanceOf[js.Dynamic].applyDynamic("newFactory")(`type`.asInstanceOf[js.Any], typeAdapter.asInstanceOf[js.Any])).asInstanceOf[TypeAdapterFactory]
-    @scala.inline
-    def newFactory[TT](`type`: TypeToken[TT], typeAdapter: TypeAdapter[TT]): TypeAdapterFactory = (^.asInstanceOf[js.Dynamic].applyDynamic("newFactory")(`type`.asInstanceOf[js.Any], typeAdapter.asInstanceOf[js.Any])).asInstanceOf[TypeAdapterFactory]
+    inline def newFactory[TT](`type`: ClassType[TT], typeAdapter: TypeAdapter[TT]): TypeAdapterFactory = (^.asInstanceOf[js.Dynamic].applyDynamic("newFactory")(`type`.asInstanceOf[js.Any], typeAdapter.asInstanceOf[js.Any])).asInstanceOf[TypeAdapterFactory]
+    inline def newFactory[TT](`type`: TypeToken[TT], typeAdapter: TypeAdapter[TT]): TypeAdapterFactory = (^.asInstanceOf[js.Dynamic].applyDynamic("newFactory")(`type`.asInstanceOf[js.Any], typeAdapter.asInstanceOf[js.Any])).asInstanceOf[TypeAdapterFactory]
   }
 }

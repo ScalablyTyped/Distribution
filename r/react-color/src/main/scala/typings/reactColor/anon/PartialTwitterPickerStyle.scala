@@ -28,67 +28,47 @@ trait PartialTwitterPickerStyle extends StObject {
 }
 object PartialTwitterPickerStyle {
   
-  @scala.inline
-  def apply(): PartialTwitterPickerStyle = {
+  inline def apply(): PartialTwitterPickerStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialTwitterPickerStyle]
   }
   
-  @scala.inline
-  implicit class PartialTwitterPickerStyleMutableBuilder[Self <: PartialTwitterPickerStyle] (val x: Self) extends AnyVal {
+  extension [Self <: PartialTwitterPickerStyle](x: Self) {
     
-    @scala.inline
-    def setBody(value: CSSProperties): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: CSSProperties): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setCard(value: CSSProperties): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setCard(value: CSSProperties): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+    inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     
-    @scala.inline
-    def setClear(value: CSSProperties): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: CSSProperties): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setHash(value: CSSProperties): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: CSSProperties): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
-    @scala.inline
-    def setInput(value: CSSProperties): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: CSSProperties): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setLabel(value: CSSProperties): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: CSSProperties): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setSwatch(value: CSSProperties): Self = StObject.set(x, "swatch", value.asInstanceOf[js.Any])
+    inline def setSwatch(value: CSSProperties): Self = StObject.set(x, "swatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwatchUndefined: Self = StObject.set(x, "swatch", js.undefined)
+    inline def setSwatchUndefined: Self = StObject.set(x, "swatch", js.undefined)
     
-    @scala.inline
-    def setTriangle(value: CSSProperties): Self = StObject.set(x, "triangle", value.asInstanceOf[js.Any])
+    inline def setTriangle(value: CSSProperties): Self = StObject.set(x, "triangle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangleShadow(value: CSSProperties): Self = StObject.set(x, "triangleShadow", value.asInstanceOf[js.Any])
+    inline def setTriangleShadow(value: CSSProperties): Self = StObject.set(x, "triangleShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangleShadowUndefined: Self = StObject.set(x, "triangleShadow", js.undefined)
+    inline def setTriangleShadowUndefined: Self = StObject.set(x, "triangleShadow", js.undefined)
     
-    @scala.inline
-    def setTriangleUndefined: Self = StObject.set(x, "triangle", js.undefined)
+    inline def setTriangleUndefined: Self = StObject.set(x, "triangle", js.undefined)
   }
 }

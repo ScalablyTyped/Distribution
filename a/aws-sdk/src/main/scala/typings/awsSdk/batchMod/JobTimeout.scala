@@ -13,19 +13,15 @@ trait JobTimeout extends StObject {
 }
 object JobTimeout {
   
-  @scala.inline
-  def apply(): JobTimeout = {
+  inline def apply(): JobTimeout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobTimeout]
   }
   
-  @scala.inline
-  implicit class JobTimeoutMutableBuilder[Self <: JobTimeout] (val x: Self) extends AnyVal {
+  extension [Self <: JobTimeout](x: Self) {
     
-    @scala.inline
-    def setAttemptDurationSeconds(value: Integer): Self = StObject.set(x, "attemptDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setAttemptDurationSeconds(value: Integer): Self = StObject.set(x, "attemptDurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttemptDurationSecondsUndefined: Self = StObject.set(x, "attemptDurationSeconds", js.undefined)
+    inline def setAttemptDurationSecondsUndefined: Self = StObject.set(x, "attemptDurationSeconds", js.undefined)
   }
 }

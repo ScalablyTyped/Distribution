@@ -43,46 +43,33 @@ trait StartOutboundVoiceContactRequest extends StObject {
 }
 object StartOutboundVoiceContactRequest {
   
-  @scala.inline
-  def apply(ContactFlowId: ContactFlowId, DestinationPhoneNumber: PhoneNumber, InstanceId: InstanceId): StartOutboundVoiceContactRequest = {
+  inline def apply(ContactFlowId: ContactFlowId, DestinationPhoneNumber: PhoneNumber, InstanceId: InstanceId): StartOutboundVoiceContactRequest = {
     val __obj = js.Dynamic.literal(ContactFlowId = ContactFlowId.asInstanceOf[js.Any], DestinationPhoneNumber = DestinationPhoneNumber.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartOutboundVoiceContactRequest]
   }
   
-  @scala.inline
-  implicit class StartOutboundVoiceContactRequestMutableBuilder[Self <: StartOutboundVoiceContactRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartOutboundVoiceContactRequest](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setContactFlowId(value: ContactFlowId): Self = StObject.set(x, "ContactFlowId", value.asInstanceOf[js.Any])
+    inline def setContactFlowId(value: ContactFlowId): Self = StObject.set(x, "ContactFlowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "DestinationPhoneNumber", value.asInstanceOf[js.Any])
+    inline def setDestinationPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "DestinationPhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueId(value: QueueId): Self = StObject.set(x, "QueueId", value.asInstanceOf[js.Any])
+    inline def setQueueId(value: QueueId): Self = StObject.set(x, "QueueId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueIdUndefined: Self = StObject.set(x, "QueueId", js.undefined)
+    inline def setQueueIdUndefined: Self = StObject.set(x, "QueueId", js.undefined)
     
-    @scala.inline
-    def setSourcePhoneNumber(value: PhoneNumber): Self = StObject.set(x, "SourcePhoneNumber", value.asInstanceOf[js.Any])
+    inline def setSourcePhoneNumber(value: PhoneNumber): Self = StObject.set(x, "SourcePhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePhoneNumberUndefined: Self = StObject.set(x, "SourcePhoneNumber", js.undefined)
+    inline def setSourcePhoneNumberUndefined: Self = StObject.set(x, "SourcePhoneNumber", js.undefined)
   }
 }

@@ -16,22 +16,17 @@ trait Trigger
 }
 object Trigger {
   
-  @scala.inline
-  def apply(id: String, triggerOperation: TriggerOperation): Trigger = {
+  inline def apply(id: String, triggerOperation: TriggerOperation): Trigger = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], triggerOperation = triggerOperation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trigger]
   }
   
-  @scala.inline
-  implicit class TriggerMutableBuilder[Self <: Trigger] (val x: Self) extends AnyVal {
+  extension [Self <: Trigger](x: Self) {
     
-    @scala.inline
-    def setTriggerOperation(value: TriggerOperation): Self = StObject.set(x, "triggerOperation", value.asInstanceOf[js.Any])
+    inline def setTriggerOperation(value: TriggerOperation): Self = StObject.set(x, "triggerOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerType(value: TriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    inline def setTriggerType(value: TriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
+    inline def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait PolygonWithCurves
 }
 object PolygonWithCurves {
   
-  @scala.inline
-  def apply(curveRings: js.Array[js.Array[Position | JsonCurve]]): PolygonWithCurves = {
+  inline def apply(curveRings: js.Array[js.Array[Position | JsonCurve]]): PolygonWithCurves = {
     val __obj = js.Dynamic.literal(curveRings = curveRings.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolygonWithCurves]
   }
   
-  @scala.inline
-  implicit class PolygonWithCurvesMutableBuilder[Self <: PolygonWithCurves] (val x: Self) extends AnyVal {
+  extension [Self <: PolygonWithCurves](x: Self) {
     
-    @scala.inline
-    def setCurveRings(value: js.Array[js.Array[Position | JsonCurve]]): Self = StObject.set(x, "curveRings", value.asInstanceOf[js.Any])
+    inline def setCurveRings(value: js.Array[js.Array[Position | JsonCurve]]): Self = StObject.set(x, "curveRings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurveRingsVarargs(value: (js.Array[Position | JsonCurve])*): Self = StObject.set(x, "curveRings", js.Array(value :_*))
+    inline def setCurveRingsVarargs(value: (js.Array[Position | JsonCurve])*): Self = StObject.set(x, "curveRings", js.Array(value :_*))
   }
 }

@@ -23,31 +23,23 @@ trait CreateClientVpnEndpointResult extends StObject {
 }
 object CreateClientVpnEndpointResult {
   
-  @scala.inline
-  def apply(): CreateClientVpnEndpointResult = {
+  inline def apply(): CreateClientVpnEndpointResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateClientVpnEndpointResult]
   }
   
-  @scala.inline
-  implicit class CreateClientVpnEndpointResultMutableBuilder[Self <: CreateClientVpnEndpointResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClientVpnEndpointResult](x: Self) {
     
-    @scala.inline
-    def setClientVpnEndpointId(value: String): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    inline def setClientVpnEndpointId(value: String): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientVpnEndpointIdUndefined: Self = StObject.set(x, "ClientVpnEndpointId", js.undefined)
+    inline def setClientVpnEndpointIdUndefined: Self = StObject.set(x, "ClientVpnEndpointId", js.undefined)
     
-    @scala.inline
-    def setDnsName(value: String): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
+    inline def setDnsName(value: String): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsNameUndefined: Self = StObject.set(x, "DnsName", js.undefined)
+    inline def setDnsNameUndefined: Self = StObject.set(x, "DnsName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ClientVpnEndpointStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ClientVpnEndpointStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

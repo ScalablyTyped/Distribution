@@ -27,73 +27,51 @@ trait Report extends StObject {
 }
 object Report {
   
-  @scala.inline
-  def apply(): Report = {
+  inline def apply(): Report = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Report]
   }
   
-  @scala.inline
-  implicit class ReportMutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
+  extension [Self <: Report](x: Self) {
     
-    @scala.inline
-    def setConditions(value: js.Array[ConditionalFormat]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[ConditionalFormat]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: ConditionalFormat*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: ConditionalFormat*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setFormats(value: js.Array[Format]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+    inline def setFormats(value: js.Array[Format]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+    inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
     
-    @scala.inline
-    def setFormatsVarargs(value: Format*): Self = StObject.set(x, "formats", js.Array(value :_*))
+    inline def setFormatsVarargs(value: Format*): Self = StObject.set(x, "formats", js.Array(value :_*))
     
-    @scala.inline
-    def setLocalization(value: js.Object | String): Self = StObject.set(x, "localization", value.asInstanceOf[js.Any])
+    inline def setLocalization(value: js.Object | String): Self = StObject.set(x, "localization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizationUndefined: Self = StObject.set(x, "localization", js.undefined)
+    inline def setLocalizationUndefined: Self = StObject.set(x, "localization", js.undefined)
     
-    @scala.inline
-    def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setSlice(value: Slice): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
+    inline def setSlice(value: Slice): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
+    inline def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
     
-    @scala.inline
-    def setTableSizes(value: Columns): Self = StObject.set(x, "tableSizes", value.asInstanceOf[js.Any])
+    inline def setTableSizes(value: Columns): Self = StObject.set(x, "tableSizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableSizesUndefined: Self = StObject.set(x, "tableSizes", js.undefined)
+    inline def setTableSizesUndefined: Self = StObject.set(x, "tableSizes", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

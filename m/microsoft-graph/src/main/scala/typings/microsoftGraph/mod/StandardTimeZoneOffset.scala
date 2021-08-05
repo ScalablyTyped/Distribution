@@ -26,58 +26,41 @@ trait StandardTimeZoneOffset extends StObject {
 }
 object StandardTimeZoneOffset {
   
-  @scala.inline
-  def apply(): StandardTimeZoneOffset = {
+  inline def apply(): StandardTimeZoneOffset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StandardTimeZoneOffset]
   }
   
-  @scala.inline
-  implicit class StandardTimeZoneOffsetMutableBuilder[Self <: StandardTimeZoneOffset] (val x: Self) extends AnyVal {
+  extension [Self <: StandardTimeZoneOffset](x: Self) {
     
-    @scala.inline
-    def setDayOccurrence(value: NullableOption[Double]): Self = StObject.set(x, "dayOccurrence", value.asInstanceOf[js.Any])
+    inline def setDayOccurrence(value: NullableOption[Double]): Self = StObject.set(x, "dayOccurrence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOccurrenceNull: Self = StObject.set(x, "dayOccurrence", null)
+    inline def setDayOccurrenceNull: Self = StObject.set(x, "dayOccurrence", null)
     
-    @scala.inline
-    def setDayOccurrenceUndefined: Self = StObject.set(x, "dayOccurrence", js.undefined)
+    inline def setDayOccurrenceUndefined: Self = StObject.set(x, "dayOccurrence", js.undefined)
     
-    @scala.inline
-    def setDayOfWeek(value: NullableOption[DayOfWeek]): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
+    inline def setDayOfWeek(value: NullableOption[DayOfWeek]): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOfWeekNull: Self = StObject.set(x, "dayOfWeek", null)
+    inline def setDayOfWeekNull: Self = StObject.set(x, "dayOfWeek", null)
     
-    @scala.inline
-    def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
+    inline def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
     
-    @scala.inline
-    def setMonth(value: NullableOption[Double]): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: NullableOption[Double]): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthNull: Self = StObject.set(x, "month", null)
+    inline def setMonthNull: Self = StObject.set(x, "month", null)
     
-    @scala.inline
-    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+    inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
-    @scala.inline
-    def setTime(value: NullableOption[String]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: NullableOption[String]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeNull: Self = StObject.set(x, "time", null)
+    inline def setTimeNull: Self = StObject.set(x, "time", null)
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
-    @scala.inline
-    def setYear(value: NullableOption[Double]): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: NullableOption[Double]): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearNull: Self = StObject.set(x, "year", null)
+    inline def setYearNull: Self = StObject.set(x, "year", null)
     
-    @scala.inline
-    def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+    inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
   }
 }

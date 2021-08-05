@@ -34,8 +34,7 @@ object Toolbar {
   }
   object Toolbar {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: ToolbarItem => ToolbarButton,
       addButton: ToolbarParams => ToolbarButton,
       addCheckBox: () => ToolbarCheckBox,
@@ -52,41 +51,29 @@ object Toolbar {
       __obj.asInstanceOf[typings.webgme.Toolbar.Toolbar]
     }
     
-    @scala.inline
-    implicit class ToolbarMutableBuilder[Self <: typings.webgme.Toolbar.Toolbar] (val x: Self) extends AnyVal {
+    extension [Self <: typings.webgme.Toolbar.Toolbar](x: Self) {
       
-      @scala.inline
-      def setAdd(value: ToolbarItem => ToolbarButton): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: ToolbarItem => ToolbarButton): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddButton(value: ToolbarParams => ToolbarButton): Self = StObject.set(x, "addButton", js.Any.fromFunction1(value))
+      inline def setAddButton(value: ToolbarParams => ToolbarButton): Self = StObject.set(x, "addButton", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddCheckBox(value: () => ToolbarCheckBox): Self = StObject.set(x, "addCheckBox", js.Any.fromFunction0(value))
+      inline def setAddCheckBox(value: () => ToolbarCheckBox): Self = StObject.set(x, "addCheckBox", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAddColorPicker(value: ToolbarParams => ToolbarColorPicker): Self = StObject.set(x, "addColorPicker", js.Any.fromFunction1(value))
+      inline def setAddColorPicker(value: ToolbarParams => ToolbarColorPicker): Self = StObject.set(x, "addColorPicker", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddDropDownButton(value: ToolbarParams => ToolbarDropDownButton): Self = StObject.set(x, "addDropDownButton", js.Any.fromFunction1(value))
+      inline def setAddDropDownButton(value: ToolbarParams => ToolbarDropDownButton): Self = StObject.set(x, "addDropDownButton", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddLabel(value: () => ToolbarLabel): Self = StObject.set(x, "addLabel", js.Any.fromFunction0(value))
+      inline def setAddLabel(value: () => ToolbarLabel): Self = StObject.set(x, "addLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAddRadioButtonGroup(value: ClickFn => ToolbarRadioButtonGroup): Self = StObject.set(x, "addRadioButtonGroup", js.Any.fromFunction1(value))
+      inline def setAddRadioButtonGroup(value: ClickFn => ToolbarRadioButtonGroup): Self = StObject.set(x, "addRadioButtonGroup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddSeparator(value: () => ToolbarSeparator): Self = StObject.set(x, "addSeparator", js.Any.fromFunction0(value))
+      inline def setAddSeparator(value: () => ToolbarSeparator): Self = StObject.set(x, "addSeparator", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAddTextBox(value: ToolbarParams => ToolbarTextBox): Self = StObject.set(x, "addTextBox", js.Any.fromFunction1(value))
+      inline def setAddTextBox(value: ToolbarParams => ToolbarTextBox): Self = StObject.set(x, "addTextBox", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddToggleButton(value: ToolbarParams => ToolbarToggleButton): Self = StObject.set(x, "addToggleButton", js.Any.fromFunction1(value))
+      inline def setAddToggleButton(value: ToolbarParams => ToolbarToggleButton): Self = StObject.set(x, "addToggleButton", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+      inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     }
   }
   
@@ -104,8 +91,7 @@ object Toolbar {
   }
   object ToolbarDropDownButton {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addButton: ToolbarParams => ToolbarButton,
       destroy: () => Unit,
       enabled: Boolean => Unit,
@@ -116,11 +102,9 @@ object Toolbar {
       __obj.asInstanceOf[ToolbarDropDownButton]
     }
     
-    @scala.inline
-    implicit class ToolbarDropDownButtonMutableBuilder[Self <: ToolbarDropDownButton] (val x: Self) extends AnyVal {
+    extension [Self <: ToolbarDropDownButton](x: Self) {
       
-      @scala.inline
-      def setAddButton(value: ToolbarParams => ToolbarButton): Self = StObject.set(x, "addButton", js.Any.fromFunction1(value))
+      inline def setAddButton(value: ToolbarParams => ToolbarButton): Self = StObject.set(x, "addButton", js.Any.fromFunction1(value))
     }
   }
   
@@ -136,26 +120,20 @@ object Toolbar {
   }
   object ToolbarItem {
     
-    @scala.inline
-    def apply(destroy: () => Unit, enabled: Boolean => Unit, hide: () => Unit, show: () => Unit): ToolbarItem = {
+    inline def apply(destroy: () => Unit, enabled: Boolean => Unit, hide: () => Unit, show: () => Unit): ToolbarItem = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), enabled = js.Any.fromFunction1(enabled), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
       __obj.asInstanceOf[ToolbarItem]
     }
     
-    @scala.inline
-    implicit class ToolbarItemMutableBuilder[Self <: ToolbarItem] (val x: Self) extends AnyVal {
+    extension [Self <: ToolbarItem](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnabled(value: Boolean => Unit): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
+      inline def setEnabled(value: Boolean => Unit): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   

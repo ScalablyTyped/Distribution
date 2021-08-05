@@ -26,7 +26,7 @@ object streamFilterStreamMod {
     
     /* private */ def _innerPredicate(predicate: js.Any, self: js.Any): js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
     /* protected */ def createObserver(observer: IObserver): Observer = js.native
     
@@ -54,8 +54,7 @@ object streamFilterStreamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(
+    inline def create(
       source: Stream,
       predicate: js.Function3[
           /* value */ js.Any, 

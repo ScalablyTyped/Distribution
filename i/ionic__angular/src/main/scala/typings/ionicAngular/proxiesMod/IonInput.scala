@@ -64,7 +64,7 @@ class IonInput protected ()
   /* CompleteClass */
   var disabled: Boolean = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /**
     * This is required for a WebKit bug which requires us to blur and focus an input to properly focus the input in an item with delegatesFocus. It will no longer be needed with iOS 14.
@@ -128,5 +128,5 @@ class IonInput protected ()
   /* CompleteClass */
   var `type`: TextFieldTypes = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

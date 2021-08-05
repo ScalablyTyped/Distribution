@@ -16,8 +16,7 @@ trait UnionType
 }
 object UnionType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `type`: ModelToObject[String] | String,
     types: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]] | js.Array[typings.typedoc.typesAbstractMod.Type]
   ): UnionType = {
@@ -26,21 +25,16 @@ object UnionType {
     __obj.asInstanceOf[UnionType]
   }
   
-  @scala.inline
-  implicit class UnionTypeMutableBuilder[Self <: UnionType] (val x: Self) extends AnyVal {
+  extension [Self <: UnionType](x: Self) {
     
-    @scala.inline
-    def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
     
-    @scala.inline
-    def setTypes(
+    inline def setTypes(
       value: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]] | js.Array[typings.typedoc.typesAbstractMod.Type]
     ): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: (typings.typedoc.typesAbstractMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: (typings.typedoc.typesAbstractMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

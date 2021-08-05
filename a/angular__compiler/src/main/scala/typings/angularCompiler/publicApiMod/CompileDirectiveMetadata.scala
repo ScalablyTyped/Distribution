@@ -19,8 +19,7 @@ object CompileDirectiveMetadata {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(
+  inline def create(
     hasIsHostTypeIsComponentSelectorExportAsChangeDetectionInputsOutputsHostProvidersViewProvidersQueriesGuardsViewQueriesEntryComponentsTemplateComponentViewTypeRendererTypeComponentFactory: ChangeDetection
   ): typings.angularCompiler.compileMetadataMod.CompileDirectiveMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(hasIsHostTypeIsComponentSelectorExportAsChangeDetectionInputsOutputsHostProvidersViewProvidersQueriesGuardsViewQueriesEntryComponentsTemplateComponentViewTypeRendererTypeComponentFactory.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompiler.compileMetadataMod.CompileDirectiveMetadata]
 }

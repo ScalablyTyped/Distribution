@@ -13,19 +13,15 @@ trait WorkspaceSettings extends StObject {
 }
 object WorkspaceSettings {
   
-  @scala.inline
-  def apply(): WorkspaceSettings = {
+  inline def apply(): WorkspaceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceSettings]
   }
   
-  @scala.inline
-  implicit class WorkspaceSettingsMutableBuilder[Self <: WorkspaceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceSettings](x: Self) {
     
-    @scala.inline
-    def setCommentsAllowed(value: String): Self = StObject.set(x, "commentsAllowed", value.asInstanceOf[js.Any])
+    inline def setCommentsAllowed(value: String): Self = StObject.set(x, "commentsAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsAllowedUndefined: Self = StObject.set(x, "commentsAllowed", js.undefined)
+    inline def setCommentsAllowedUndefined: Self = StObject.set(x, "commentsAllowed", js.undefined)
   }
 }

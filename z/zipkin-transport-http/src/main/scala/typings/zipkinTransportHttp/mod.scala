@@ -39,17 +39,14 @@ object mod {
   }
   object ErrorLogger {
     
-    @scala.inline
-    def apply(error: /* repeated */ js.Any => Unit): ErrorLogger = {
+    inline def apply(error: /* repeated */ js.Any => Unit): ErrorLogger = {
       val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error))
       __obj.asInstanceOf[ErrorLogger]
     }
     
-    @scala.inline
-    implicit class ErrorLoggerMutableBuilder[Self <: ErrorLogger] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorLogger](x: Self) {
       
-      @scala.inline
-      def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     }
   }
 }

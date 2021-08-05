@@ -25,8 +25,7 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply[ValueType](
+  inline def apply[ValueType](
     condition: js.Function1[/* value */ js.UndefOr[ValueType], Boolean],
     action: js.Function0[ValueType | js.Thenable[ValueType]]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
@@ -68,11 +67,9 @@ object mod {
   // 	action: () => ValueType | PromiseLike<ValueType>
   // ): Promise<void>;
   // export = pWhilst;
-  @scala.inline
-  def default[ValueType](
+  inline def default[ValueType](
     condition: js.Function1[/* value */ js.UndefOr[ValueType], Boolean],
     action: js.Function0[ValueType | js.Thenable[ValueType]]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(condition.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

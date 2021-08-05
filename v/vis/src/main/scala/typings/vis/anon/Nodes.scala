@@ -12,25 +12,19 @@ trait Nodes extends StObject {
 }
 object Nodes {
   
-  @scala.inline
-  def apply(edges: js.Array[String], nodes: js.Array[String]): Nodes = {
+  inline def apply(edges: js.Array[String], nodes: js.Array[String]): Nodes = {
     val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Nodes]
   }
   
-  @scala.inline
-  implicit class NodesMutableBuilder[Self <: Nodes] (val x: Self) extends AnyVal {
+  extension [Self <: Nodes](x: Self) {
     
-    @scala.inline
-    def setEdges(value: js.Array[String]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: js.Array[String]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesVarargs(value: String*): Self = StObject.set(x, "edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: String*): Self = StObject.set(x, "edges", js.Array(value :_*))
     
-    @scala.inline
-    def setNodes(value: js.Array[String]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[String]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: String*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: String*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

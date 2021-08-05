@@ -22,8 +22,7 @@ object enhancedButtonMod {
        with SharedEnhancedButtonProps[EnhancedButton]
   object EnhancedButtonProps {
     
-    @scala.inline
-    def apply(): EnhancedButtonProps = {
+    inline def apply(): EnhancedButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EnhancedButtonProps]
     }

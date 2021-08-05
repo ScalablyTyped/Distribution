@@ -39,46 +39,33 @@ trait ParamsResourceAssociationsessionsStart
 }
 object ParamsResourceAssociationsessionsStart {
   
-  @scala.inline
-  def apply(): ParamsResourceAssociationsessionsStart = {
+  inline def apply(): ParamsResourceAssociationsessionsStart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAssociationsessionsStart]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAssociationsessionsStartMutableBuilder[Self <: ParamsResourceAssociationsessionsStart] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAssociationsessionsStart](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setProductCode(value: js.Array[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
+    inline def setProductCode(value: js.Array[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
+    inline def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
     
-    @scala.inline
-    def setProductCodeVarargs(value: String*): Self = StObject.set(x, "productCode", js.Array(value :_*))
+    inline def setProductCodeVarargs(value: String*): Self = StObject.set(x, "productCode", js.Array(value :_*))
     
-    @scala.inline
-    def setUserLocale(value: String): Self = StObject.set(x, "userLocale", value.asInstanceOf[js.Any])
+    inline def setUserLocale(value: String): Self = StObject.set(x, "userLocale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLocaleUndefined: Self = StObject.set(x, "userLocale", js.undefined)
+    inline def setUserLocaleUndefined: Self = StObject.set(x, "userLocale", js.undefined)
     
-    @scala.inline
-    def setWebsiteLocale(value: String): Self = StObject.set(x, "websiteLocale", value.asInstanceOf[js.Any])
+    inline def setWebsiteLocale(value: String): Self = StObject.set(x, "websiteLocale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsiteLocaleUndefined: Self = StObject.set(x, "websiteLocale", js.undefined)
+    inline def setWebsiteLocaleUndefined: Self = StObject.set(x, "websiteLocale", js.undefined)
     
-    @scala.inline
-    def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
+    inline def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
+    inline def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
   }
 }

@@ -16,17 +16,14 @@ object optionsMod {
   }
   object Options_ {
     
-    @scala.inline
-    def apply(cwd: String): Options_ = {
+    inline def apply(cwd: String): Options_ = {
       val __obj = js.Dynamic.literal(cwd = cwd.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options_]
     }
     
-    @scala.inline
-    implicit class Options_MutableBuilder[Self <: Options_] (val x: Self) extends AnyVal {
+    extension [Self <: Options_](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     }
   }
 }

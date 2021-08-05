@@ -16,8 +16,7 @@ trait LoadingComponentBuilder
 }
 object LoadingComponentBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     component: () => LoadingComponent,
     withItem: Component => LoadingComponentBuilder,
     withProperties: js.Any => ComponentBuilder[LoadingComponent],
@@ -27,10 +26,8 @@ object LoadingComponentBuilder {
     __obj.asInstanceOf[LoadingComponentBuilder]
   }
   
-  @scala.inline
-  implicit class LoadingComponentBuilderMutableBuilder[Self <: LoadingComponentBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: LoadingComponentBuilder](x: Self) {
     
-    @scala.inline
-    def setWithItem(value: Component => LoadingComponentBuilder): Self = StObject.set(x, "withItem", js.Any.fromFunction1(value))
+    inline def setWithItem(value: Component => LoadingComponentBuilder): Self = StObject.set(x, "withItem", js.Any.fromFunction1(value))
   }
 }

@@ -10,19 +10,15 @@ trait GoogleActionsV2NewSurfaceValue extends StObject {
 }
 object GoogleActionsV2NewSurfaceValue {
   
-  @scala.inline
-  def apply(): GoogleActionsV2NewSurfaceValue = {
+  inline def apply(): GoogleActionsV2NewSurfaceValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2NewSurfaceValue]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2NewSurfaceValueMutableBuilder[Self <: GoogleActionsV2NewSurfaceValue] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2NewSurfaceValue](x: Self) {
     
-    @scala.inline
-    def setStatus(value: GoogleActionsV2NewSurfaceValueStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GoogleActionsV2NewSurfaceValueStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait ActivityTaskStartedEventAttributes extends StObject {
 }
 object ActivityTaskStartedEventAttributes {
   
-  @scala.inline
-  def apply(scheduledEventId: EventId): ActivityTaskStartedEventAttributes = {
+  inline def apply(scheduledEventId: EventId): ActivityTaskStartedEventAttributes = {
     val __obj = js.Dynamic.literal(scheduledEventId = scheduledEventId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityTaskStartedEventAttributes]
   }
   
-  @scala.inline
-  implicit class ActivityTaskStartedEventAttributesMutableBuilder[Self <: ActivityTaskStartedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityTaskStartedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+    inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
     
-    @scala.inline
-    def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
+    inline def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
   }
 }

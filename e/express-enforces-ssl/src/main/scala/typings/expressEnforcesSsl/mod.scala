@@ -14,8 +14,7 @@ object mod {
   /**
     * Enforces HTTPS connections on any incoming requests.
     */
-  @scala.inline
-  def apply(): js.Function3[
+  inline def apply(): js.Function3[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* res */ Response_[js.Any], 
     /* next */ NextFunction, 

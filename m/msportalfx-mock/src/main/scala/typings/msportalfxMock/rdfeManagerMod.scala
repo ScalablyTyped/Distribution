@@ -30,7 +30,7 @@ object rdfeManagerMod {
         */
       def addManagementCertificate(subscriptionId: String, subscriptionCertificate: SubscriptionCertificate): Boolean = js.native
       
-      var data: js.Any = js.native
+      /* private */ var data: js.Any = js.native
       
       /**
         * The Delete Management Certificate operation deletes a certificate from the specified subscription.
@@ -96,29 +96,22 @@ object rdfeManagerMod {
     }
     object MockData {
       
-      @scala.inline
-      def apply(): MockData = {
+      inline def apply(): MockData = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MockData]
       }
       
-      @scala.inline
-      implicit class MockDataMutableBuilder[Self <: MockData] (val x: Self) extends AnyVal {
+      extension [Self <: MockData](x: Self) {
         
-        @scala.inline
-        def setCertificates(value: StringMap[js.Array[SubscriptionCertificate]]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
+        inline def setCertificates(value: StringMap[js.Array[SubscriptionCertificate]]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
+        inline def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
         
-        @scala.inline
-        def setSubscriptions(value: js.Array[Subscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+        inline def setSubscriptions(value: js.Array[Subscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
+        inline def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
         
-        @scala.inline
-        def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+        inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
       }
     }
   }

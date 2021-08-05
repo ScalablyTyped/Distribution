@@ -13,25 +13,25 @@ trait PullTypeResolver extends StObject {
     signaturesBeingAggregated: js.Array[PullSignatureSymbol]
   ): Unit = js.native
   
-  var _cachedAnyTypeArgs: js.Any = js.native
+  /* private */ var _cachedAnyTypeArgs: js.Any = js.native
   
-  var _cachedArrayInterfaceType: js.Any = js.native
+  /* private */ var _cachedArrayInterfaceType: js.Any = js.native
   
-  var _cachedBooleanInterfaceType: js.Any = js.native
+  /* private */ var _cachedBooleanInterfaceType: js.Any = js.native
   
-  var _cachedFunctionArgumentsSymbol: js.Any = js.native
+  /* private */ var _cachedFunctionArgumentsSymbol: js.Any = js.native
   
-  var _cachedFunctionInterfaceType: js.Any = js.native
+  /* private */ var _cachedFunctionInterfaceType: js.Any = js.native
   
-  var _cachedIArgumentsInterfaceType: js.Any = js.native
+  /* private */ var _cachedIArgumentsInterfaceType: js.Any = js.native
   
-  var _cachedNumberInterfaceType: js.Any = js.native
+  /* private */ var _cachedNumberInterfaceType: js.Any = js.native
   
-  var _cachedObjectInterfaceType: js.Any = js.native
+  /* private */ var _cachedObjectInterfaceType: js.Any = js.native
   
-  var _cachedRegExpInterfaceType: js.Any = js.native
+  /* private */ var _cachedRegExpInterfaceType: js.Any = js.native
   
-  var _cachedStringInterfaceType: js.Any = js.native
+  /* private */ var _cachedStringInterfaceType: js.Any = js.native
   
   def _getBothKindsOfIndexSignatures(enclosingType: PullTypeSymbol, context: PullTypeResolutionContext, includeAugmentedType: Boolean): IndexSignatureInfo = js.native
   
@@ -41,7 +41,7 @@ trait PullTypeResolver extends StObject {
   
   /* private */ def alterPotentialGenericFunctionTypeToInstantiatedFunctionTypeForTypeArgumentInference(expressionSymbol: js.Any, context: js.Any): js.Any = js.native
   
-  var assignableCache: js.Any = js.native
+  /* private */ var assignableCache: js.Any = js.native
   
   /* private */ def baseListPrivacyErrorReporter(
     classOrInterface: js.Any,
@@ -168,7 +168,7 @@ trait PullTypeResolver extends StObject {
   
   /* private */ def checkUniquenessOfImportNames(decls: js.Any, doesNameExistOutside: js.Any): js.Any = js.native
   
-  var compilationSettings: js.Any = js.native
+  /* private */ var compilationSettings: js.Any = js.native
   
   /* private */ def computeArrayLiteralExpressionSymbol(arrayLit: js.Any, isContextuallyTyped: js.Any, context: js.Any): js.Any = js.native
   
@@ -331,7 +331,7 @@ trait PullTypeResolver extends StObject {
   
   /* private */ def hasRestParameterCodeGen(someFunctionDecl: js.Any): js.Any = js.native
   
-  var identicalCache: js.Any = js.native
+  /* private */ var identicalCache: js.Any = js.native
   
   /* private */ def inArgumentListOfSuperInvocation(ast: js.Any): js.Any = js.native
   
@@ -341,7 +341,7 @@ trait PullTypeResolver extends StObject {
   
   /* private */ def inIterationStatement(ast: js.Any, crossFunctions: js.Any): js.Any = js.native
   
-  var inResolvingOtherDeclsWalker: js.Any = js.native
+  /* private */ var inResolvingOtherDeclsWalker: js.Any = js.native
   
   /* private */ def inStaticMemberVariableDeclaration(ast: js.Any): js.Any = js.native
   
@@ -475,7 +475,7 @@ trait PullTypeResolver extends StObject {
   
   /* private */ def postTypeCheckVariableDeclaratorOrParameter(varDeclOrParameter: js.Any, context: js.Any): js.Any = js.native
   
-  var postTypeCheckWorkitems: js.Any = js.native
+  /* private */ var postTypeCheckWorkitems: js.Any = js.native
   
   /* private */ def processPostTypeCheckWorkItems(context: js.Any): js.Any = js.native
   
@@ -1163,7 +1163,7 @@ trait PullTypeResolver extends StObject {
     context: js.Any
   ): js.Any = js.native
   
-  var subtypeCache: js.Any = js.native
+  /* private */ var subtypeCache: js.Any = js.native
   
   /* private */ def superCallMustBeFirstStatementInConstructor(constructorDecl: js.Any): js.Any = js.native
   
@@ -1218,7 +1218,7 @@ trait PullTypeResolver extends StObject {
   
   /* private */ def typeCheckBreakStatement(ast: js.Any, context: js.Any): js.Any = js.native
   
-  var typeCheckCallBacks: js.Any = js.native
+  /* private */ var typeCheckCallBacks: js.Any = js.native
   
   /* private */ def typeCheckCallSignature(funcDecl: js.Any, context: js.Any): js.Any = js.native
   

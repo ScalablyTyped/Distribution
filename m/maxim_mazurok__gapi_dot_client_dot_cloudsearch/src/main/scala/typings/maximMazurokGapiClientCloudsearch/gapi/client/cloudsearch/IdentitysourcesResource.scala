@@ -12,19 +12,15 @@ trait IdentitysourcesResource extends StObject {
 }
 object IdentitysourcesResource {
   
-  @scala.inline
-  def apply(items: ItemsResource, unmappedids: UnmappedidsResource): IdentitysourcesResource = {
+  inline def apply(items: ItemsResource, unmappedids: UnmappedidsResource): IdentitysourcesResource = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], unmappedids = unmappedids.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentitysourcesResource]
   }
   
-  @scala.inline
-  implicit class IdentitysourcesResourceMutableBuilder[Self <: IdentitysourcesResource] (val x: Self) extends AnyVal {
+  extension [Self <: IdentitysourcesResource](x: Self) {
     
-    @scala.inline
-    def setItems(value: ItemsResource): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: ItemsResource): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnmappedids(value: UnmappedidsResource): Self = StObject.set(x, "unmappedids", value.asInstanceOf[js.Any])
+    inline def setUnmappedids(value: UnmappedidsResource): Self = StObject.set(x, "unmappedids", value.asInstanceOf[js.Any])
   }
 }

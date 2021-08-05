@@ -21,25 +21,19 @@ trait SpeechRecognizerUIOptions extends StObject {
 }
 object SpeechRecognizerUIOptions {
   
-  @scala.inline
-  def apply(audiblePrompt: String, exampleText: String, isReadBackEnabled: Boolean, showConfirmation: Boolean): SpeechRecognizerUIOptions = {
+  inline def apply(audiblePrompt: String, exampleText: String, isReadBackEnabled: Boolean, showConfirmation: Boolean): SpeechRecognizerUIOptions = {
     val __obj = js.Dynamic.literal(audiblePrompt = audiblePrompt.asInstanceOf[js.Any], exampleText = exampleText.asInstanceOf[js.Any], isReadBackEnabled = isReadBackEnabled.asInstanceOf[js.Any], showConfirmation = showConfirmation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognizerUIOptions]
   }
   
-  @scala.inline
-  implicit class SpeechRecognizerUIOptionsMutableBuilder[Self <: SpeechRecognizerUIOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechRecognizerUIOptions](x: Self) {
     
-    @scala.inline
-    def setAudiblePrompt(value: String): Self = StObject.set(x, "audiblePrompt", value.asInstanceOf[js.Any])
+    inline def setAudiblePrompt(value: String): Self = StObject.set(x, "audiblePrompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExampleText(value: String): Self = StObject.set(x, "exampleText", value.asInstanceOf[js.Any])
+    inline def setExampleText(value: String): Self = StObject.set(x, "exampleText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReadBackEnabled(value: Boolean): Self = StObject.set(x, "isReadBackEnabled", value.asInstanceOf[js.Any])
+    inline def setIsReadBackEnabled(value: Boolean): Self = StObject.set(x, "isReadBackEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowConfirmation(value: Boolean): Self = StObject.set(x, "showConfirmation", value.asInstanceOf[js.Any])
+    inline def setShowConfirmation(value: Boolean): Self = StObject.set(x, "showConfirmation", value.asInstanceOf[js.Any])
   }
 }

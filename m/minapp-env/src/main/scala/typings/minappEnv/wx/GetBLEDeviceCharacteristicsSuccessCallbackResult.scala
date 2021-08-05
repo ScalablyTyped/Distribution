@@ -11,16 +11,13 @@ trait GetBLEDeviceCharacteristicsSuccessCallbackResult extends StObject {
 }
 object GetBLEDeviceCharacteristicsSuccessCallbackResult {
   
-  @scala.inline
-  def apply(characteristics: BLECharacteristic): GetBLEDeviceCharacteristicsSuccessCallbackResult = {
+  inline def apply(characteristics: BLECharacteristic): GetBLEDeviceCharacteristicsSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(characteristics = characteristics.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBLEDeviceCharacteristicsSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetBLEDeviceCharacteristicsSuccessCallbackResultMutableBuilder[Self <: GetBLEDeviceCharacteristicsSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetBLEDeviceCharacteristicsSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setCharacteristics(value: BLECharacteristic): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
+    inline def setCharacteristics(value: BLECharacteristic): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
   }
 }

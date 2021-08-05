@@ -16,19 +16,15 @@ trait MultipleTracksResponse extends StObject {
 }
 object MultipleTracksResponse {
   
-  @scala.inline
-  def apply(tracks: js.Array[TrackObjectFull]): MultipleTracksResponse = {
+  inline def apply(tracks: js.Array[TrackObjectFull]): MultipleTracksResponse = {
     val __obj = js.Dynamic.literal(tracks = tracks.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleTracksResponse]
   }
   
-  @scala.inline
-  implicit class MultipleTracksResponseMutableBuilder[Self <: MultipleTracksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MultipleTracksResponse](x: Self) {
     
-    @scala.inline
-    def setTracks(value: js.Array[TrackObjectFull]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+    inline def setTracks(value: js.Array[TrackObjectFull]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracksVarargs(value: TrackObjectFull*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: TrackObjectFull*): Self = StObject.set(x, "tracks", js.Array(value :_*))
   }
 }

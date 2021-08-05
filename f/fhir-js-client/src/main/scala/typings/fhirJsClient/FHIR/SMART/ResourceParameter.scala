@@ -22,22 +22,17 @@ trait ResourceParameter extends StObject {
 }
 object ResourceParameter {
   
-  @scala.inline
-  def apply(resource: String): ResourceParameter = {
+  inline def apply(resource: String): ResourceParameter = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceParameter]
   }
   
-  @scala.inline
-  implicit class ResourceParameterMutableBuilder[Self <: ResourceParameter] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceParameter](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

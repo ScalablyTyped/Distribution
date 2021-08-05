@@ -23,8 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object PredicateType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asserts: ModelToObject[Boolean] | Boolean,
     name: ModelToObject[String] | String,
     `type`: (ModelToObject[/* "predicate" */ String]) | (/* "predicate" */ String)
@@ -34,36 +33,26 @@ object PredicateType {
     __obj.asInstanceOf[PredicateType]
   }
   
-  @scala.inline
-  implicit class PredicateTypeMutableBuilder[Self <: PredicateType] (val x: Self) extends AnyVal {
+  extension [Self <: PredicateType](x: Self) {
     
-    @scala.inline
-    def setAsserts(value: ModelToObject[Boolean] | Boolean): Self = StObject.set(x, "asserts", value.asInstanceOf[js.Any])
+    inline def setAsserts(value: ModelToObject[Boolean] | Boolean): Self = StObject.set(x, "asserts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssertsVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "asserts", js.Array(value :_*))
+    inline def setAssertsVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "asserts", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: ModelToObject[String] | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ModelToObject[String] | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "name", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetType(
+    inline def setTargetType(
       value: ModelToObject[js.UndefOr[typings.typedoc.typesAbstractMod.Type]] | typings.typedoc.typesAbstractMod.Type
     ): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
+    inline def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
     
-    @scala.inline
-    def setTargetTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "targetType", js.Array(value :_*))
+    inline def setTargetTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "targetType", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: (ModelToObject[/* "predicate" */ String]) | (/* "predicate" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: (ModelToObject[/* "predicate" */ String]) | (/* "predicate" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

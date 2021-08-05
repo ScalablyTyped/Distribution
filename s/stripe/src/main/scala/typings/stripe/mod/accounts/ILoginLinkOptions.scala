@@ -13,16 +13,13 @@ trait ILoginLinkOptions extends StObject {
 }
 object ILoginLinkOptions {
   
-  @scala.inline
-  def apply(redirect_url: String): ILoginLinkOptions = {
+  inline def apply(redirect_url: String): ILoginLinkOptions = {
     val __obj = js.Dynamic.literal(redirect_url = redirect_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILoginLinkOptions]
   }
   
-  @scala.inline
-  implicit class ILoginLinkOptionsMutableBuilder[Self <: ILoginLinkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ILoginLinkOptions](x: Self) {
     
-    @scala.inline
-    def setRedirect_url(value: String): Self = StObject.set(x, "redirect_url", value.asInstanceOf[js.Any])
+    inline def setRedirect_url(value: String): Self = StObject.set(x, "redirect_url", value.asInstanceOf[js.Any])
   }
 }

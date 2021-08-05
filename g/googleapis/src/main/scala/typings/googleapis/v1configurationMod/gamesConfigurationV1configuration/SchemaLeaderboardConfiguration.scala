@@ -54,61 +54,43 @@ trait SchemaLeaderboardConfiguration extends StObject {
 }
 object SchemaLeaderboardConfiguration {
   
-  @scala.inline
-  def apply(): SchemaLeaderboardConfiguration = {
+  inline def apply(): SchemaLeaderboardConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLeaderboardConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaLeaderboardConfigurationMutableBuilder[Self <: SchemaLeaderboardConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLeaderboardConfiguration](x: Self) {
     
-    @scala.inline
-    def setDraft(value: SchemaLeaderboardConfigurationDetail): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
+    inline def setDraft(value: SchemaLeaderboardConfigurationDetail): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
+    inline def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPublished(value: SchemaLeaderboardConfigurationDetail): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
+    inline def setPublished(value: SchemaLeaderboardConfigurationDetail): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
+    inline def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
     
-    @scala.inline
-    def setScoreMax(value: String): Self = StObject.set(x, "scoreMax", value.asInstanceOf[js.Any])
+    inline def setScoreMax(value: String): Self = StObject.set(x, "scoreMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreMaxUndefined: Self = StObject.set(x, "scoreMax", js.undefined)
+    inline def setScoreMaxUndefined: Self = StObject.set(x, "scoreMax", js.undefined)
     
-    @scala.inline
-    def setScoreMin(value: String): Self = StObject.set(x, "scoreMin", value.asInstanceOf[js.Any])
+    inline def setScoreMin(value: String): Self = StObject.set(x, "scoreMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreMinUndefined: Self = StObject.set(x, "scoreMin", js.undefined)
+    inline def setScoreMinUndefined: Self = StObject.set(x, "scoreMin", js.undefined)
     
-    @scala.inline
-    def setScoreOrder(value: String): Self = StObject.set(x, "scoreOrder", value.asInstanceOf[js.Any])
+    inline def setScoreOrder(value: String): Self = StObject.set(x, "scoreOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreOrderUndefined: Self = StObject.set(x, "scoreOrder", js.undefined)
+    inline def setScoreOrderUndefined: Self = StObject.set(x, "scoreOrder", js.undefined)
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

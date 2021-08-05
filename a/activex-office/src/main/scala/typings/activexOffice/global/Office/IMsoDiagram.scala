@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoDiagram")
 @js.native
-class IMsoDiagram protected ()
+/* private */ class IMsoDiagram ()
   extends StObject
      with typings.activexOffice.Office.IMsoDiagram {
   
@@ -37,7 +37,7 @@ class IMsoDiagram protected ()
   @JSName("Nodes")
   override val Nodes_Original: DiagramNodes = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.IMsoDiagram_typekey")
   var OfficeDotIMsoDiagram_typekey: typings.activexOffice.Office.IMsoDiagram = js.native
   

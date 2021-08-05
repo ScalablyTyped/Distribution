@@ -33,8 +33,7 @@ trait XGridDataListener
 }
 object XGridDataListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     dataChanged: GridDataEvent => Unit,
     disposing: EventObject => Unit,
@@ -48,19 +47,14 @@ object XGridDataListener {
     __obj.asInstanceOf[XGridDataListener]
   }
   
-  @scala.inline
-  implicit class XGridDataListenerMutableBuilder[Self <: XGridDataListener] (val x: Self) extends AnyVal {
+  extension [Self <: XGridDataListener](x: Self) {
     
-    @scala.inline
-    def setDataChanged(value: GridDataEvent => Unit): Self = StObject.set(x, "dataChanged", js.Any.fromFunction1(value))
+    inline def setDataChanged(value: GridDataEvent => Unit): Self = StObject.set(x, "dataChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRowHeadingChanged(value: GridDataEvent => Unit): Self = StObject.set(x, "rowHeadingChanged", js.Any.fromFunction1(value))
+    inline def setRowHeadingChanged(value: GridDataEvent => Unit): Self = StObject.set(x, "rowHeadingChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRowsInserted(value: GridDataEvent => Unit): Self = StObject.set(x, "rowsInserted", js.Any.fromFunction1(value))
+    inline def setRowsInserted(value: GridDataEvent => Unit): Self = StObject.set(x, "rowsInserted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRowsRemoved(value: GridDataEvent => Unit): Self = StObject.set(x, "rowsRemoved", js.Any.fromFunction1(value))
+    inline def setRowsRemoved(value: GridDataEvent => Unit): Self = StObject.set(x, "rowsRemoved", js.Any.fromFunction1(value))
   }
 }

@@ -40,8 +40,7 @@ object mod {
   
   object Collapse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hasChildrenCollapsedClassNameAppearTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedMinHeightMinPaddingTopMinPaddingBottomTemporary: CollapseProps
     ): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasChildrenCollapsedClassNameAppearTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedMinHeightMinPaddingTopMinPaddingBottomTemporary.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
     
@@ -58,92 +57,77 @@ object mod {
       @JSImport("@react-md/transition", "Collapse.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "Collapse.propTypes.className")
       @js.native
       def className: js.Any = js.native
-      @scala.inline
-      def className_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+      inline def className_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "Collapse.propTypes.collapsed")
       @js.native
       def collapsed: js.Any = js.native
-      @scala.inline
-      def collapsed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collapsed")(x.asInstanceOf[js.Any])
+      inline def collapsed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collapsed")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "Collapse.propTypes.minHeight")
       @js.native
       def minHeight: js.Any = js.native
-      @scala.inline
-      def minHeight_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minHeight")(x.asInstanceOf[js.Any])
+      inline def minHeight_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minHeight")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "Collapse.propTypes.minPaddingBottom")
       @js.native
       def minPaddingBottom: js.Any = js.native
-      @scala.inline
-      def minPaddingBottom_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minPaddingBottom")(x.asInstanceOf[js.Any])
+      inline def minPaddingBottom_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minPaddingBottom")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "Collapse.propTypes.minPaddingTop")
       @js.native
       def minPaddingTop: js.Any = js.native
-      @scala.inline
-      def minPaddingTop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minPaddingTop")(x.asInstanceOf[js.Any])
+      inline def minPaddingTop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minPaddingTop")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "Collapse.propTypes.onEnter")
       @js.native
       def onEnter: js.Any = js.native
-      @scala.inline
-      def onEnter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onEnter")(x.asInstanceOf[js.Any])
+      inline def onEnter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onEnter")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "Collapse.propTypes.onEntered")
       @js.native
       def onEntered: js.Any = js.native
-      @scala.inline
-      def onEntered_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onEntered")(x.asInstanceOf[js.Any])
+      inline def onEntered_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onEntered")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "Collapse.propTypes.onEntering")
       @js.native
       def onEntering: js.Any = js.native
-      @scala.inline
-      def onEntering_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onEntering")(x.asInstanceOf[js.Any])
+      inline def onEntering_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onEntering")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "Collapse.propTypes.onExit")
       @js.native
       def onExit: js.Any = js.native
-      @scala.inline
-      def onExit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onExit")(x.asInstanceOf[js.Any])
+      inline def onExit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onExit")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "Collapse.propTypes.onExited")
       @js.native
       def onExited: js.Any = js.native
-      @scala.inline
-      def onExited_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onExited")(x.asInstanceOf[js.Any])
+      inline def onExited_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onExited")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "Collapse.propTypes.onExiting")
       @js.native
       def onExiting: js.Any = js.native
-      @scala.inline
-      def onExiting_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onExiting")(x.asInstanceOf[js.Any])
+      inline def onExiting_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onExiting")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "Collapse.propTypes.style")
       @js.native
       def style: js.Any = js.native
-      @scala.inline
-      def style_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("style")(x.asInstanceOf[js.Any])
+      inline def style_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("style")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "Collapse.propTypes.temporary")
       @js.native
       def temporary: js.Any = js.native
-      @scala.inline
-      def temporary_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("temporary")(x.asInstanceOf[js.Any])
+      inline def temporary_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("temporary")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "Collapse.propTypes.timeout")
       @js.native
       def timeout: js.Any = js.native
-      @scala.inline
-      def timeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+      inline def timeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -201,8 +185,7 @@ object mod {
   
   object ScaleTransition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hasVisibleChildrenPropClassNamesVerticalTimeoutPortalPortalIntoPortalIntoIdMountOnEnterUnmountOnExitProps: ScaleTransitionProps
     ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasVisibleChildrenPropClassNamesVerticalTimeoutPortalPortalIntoPortalIntoIdMountOnEnterUnmountOnExitProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
@@ -219,20 +202,17 @@ object mod {
       @JSImport("@react-md/transition", "ScaleTransition.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "ScaleTransition.propTypes.classNames")
       @js.native
       def classNames: js.Any = js.native
-      @scala.inline
-      def classNames_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classNames")(x.asInstanceOf[js.Any])
+      inline def classNames_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classNames")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "ScaleTransition.propTypes.mountOnEnter")
       @js.native
       def mountOnEnter: js.Any = js.native
-      @scala.inline
-      def mountOnEnter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mountOnEnter")(x.asInstanceOf[js.Any])
+      inline def mountOnEnter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mountOnEnter")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "ScaleTransition.propTypes.portal")
       @js.native
@@ -245,38 +225,31 @@ object mod {
       @JSImport("@react-md/transition", "ScaleTransition.propTypes.portalIntoId")
       @js.native
       def portalIntoId: js.Any = js.native
-      @scala.inline
-      def portalIntoId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portalIntoId")(x.asInstanceOf[js.Any])
+      inline def portalIntoId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portalIntoId")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def portalInto_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portalInto")(x.asInstanceOf[js.Any])
+      inline def portalInto_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portalInto")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def portal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portal")(x.asInstanceOf[js.Any])
+      inline def portal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portal")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "ScaleTransition.propTypes.timeout")
       @js.native
       def timeout: js.Any = js.native
-      @scala.inline
-      def timeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+      inline def timeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "ScaleTransition.propTypes.unmountOnExit")
       @js.native
       def unmountOnExit: js.Any = js.native
-      @scala.inline
-      def unmountOnExit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unmountOnExit")(x.asInstanceOf[js.Any])
+      inline def unmountOnExit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unmountOnExit")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "ScaleTransition.propTypes.vertical")
       @js.native
       def vertical: js.Any = js.native
-      @scala.inline
-      def vertical_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vertical")(x.asInstanceOf[js.Any])
+      inline def vertical_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vertical")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/transition", "ScaleTransition.propTypes.visible")
       @js.native
       def visible: js.Any = js.native
-      @scala.inline
-      def visible_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("visible")(x.asInstanceOf[js.Any])
+      inline def visible_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("visible")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -284,33 +257,26 @@ object mod {
   @js.native
   val UNMOUNT: /* "unmount" */ String = js.native
   
-  @scala.inline
-  def useCSSTransition[E /* <: HTMLElement */](
+  inline def useCSSTransition[E /* <: HTMLElement */](
     hasAppearTemporaryTimeoutTransitionInOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedClassNamePropClassNamesPropRef: CSSTransitionOptions[E]
   ): CSSTransitionReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCSSTransition")(hasAppearTemporaryTimeoutTransitionInOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedClassNamePropClassNamesPropRef.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionReturnValue[E]]
   
-  @scala.inline
-  def useCollapse[E /* <: HTMLElement */](collapsed: Boolean): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCollapse")(collapsed.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
-  @scala.inline
-  def useCollapse[E /* <: HTMLElement */](
+  inline def useCollapse[E /* <: HTMLElement */](collapsed: Boolean): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCollapse")(collapsed.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
+  inline def useCollapse[E /* <: HTMLElement */](
     collapsed: Boolean,
     hasClassNameAppearTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedMinHeightMinPaddingTopMinPaddingBottomTemporary: CollapseOptions[E]
   ): ReturnValue[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCollapse")(collapsed.asInstanceOf[js.Any], hasClassNameAppearTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedMinHeightMinPaddingTopMinPaddingBottomTemporary.asInstanceOf[js.Any])).asInstanceOf[ReturnValue[E]]
   
-  @scala.inline
-  def useCrossFade[E /* <: HTMLElement */](): CSSTransitionReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCrossFade")().asInstanceOf[CSSTransitionReturnValue[E]]
-  @scala.inline
-  def useCrossFade[E /* <: HTMLElement */](
+  inline def useCrossFade[E /* <: HTMLElement */](): CSSTransitionReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCrossFade")().asInstanceOf[CSSTransitionReturnValue[E]]
+  inline def useCrossFade[E /* <: HTMLElement */](
     hasAppearTemporaryTransitionInClassNameOnEnterOnEnteringOnEnteredOnExitOnExitingOnExited: CrossFadeOptions[E]
   ): CSSTransitionReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCrossFade")(hasAppearTemporaryTransitionInClassNameOnEnterOnEnteringOnEnteredOnExitOnExitingOnExited.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionReturnValue[E]]
   
-  @scala.inline
-  def useFixedPositioning(
+  inline def useFixedPositioning(
     hasOnEnterOnEnteringOnEnteredOnExitedFixedToGetOptionsOnResizeOnScrollCurrentAnchorInitialXInitialYXMarginVwMarginYMarginVhMarginWidthOnPositionChangeTransformOriginPreventOverlapDisableSwappingDisableVHBounds: FixedPositioningOptions
   ): typings.reactMdTransition.useFixedPositioningMod.ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useFixedPositioning")(hasOnEnterOnEnteringOnEnteredOnExitedFixedToGetOptionsOnResizeOnScrollCurrentAnchorInitialXInitialYXMarginVwMarginYMarginVhMarginWidthOnPositionChangeTransformOriginPreventOverlapDisableSwappingDisableVHBounds.asInstanceOf[js.Any]).asInstanceOf[typings.reactMdTransition.useFixedPositioningMod.ReturnValue]
   
-  @scala.inline
-  def useTransition[E /* <: HTMLElement */](
+  inline def useTransition[E /* <: HTMLElement */](
     hasAppearRepaintTemporaryTransitionInPropTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedPropRef: TransitionOptions[E]
   ): TransitionReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTransition")(hasAppearRepaintTemporaryTransitionInPropTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedPropRef.asInstanceOf[js.Any]).asInstanceOf[TransitionReturnValue[E]]
   

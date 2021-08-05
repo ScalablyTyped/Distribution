@@ -22,17 +22,14 @@ object typesKmsdisabledexceptionMod {
   }
   object KMSDisabledException {
     
-    @scala.inline
-    def apply(): KMSDisabledException = {
+    inline def apply(): KMSDisabledException = {
       val __obj = js.Dynamic.literal(name = "KMSDisabledException")
       __obj.asInstanceOf[KMSDisabledException]
     }
     
-    @scala.inline
-    implicit class KMSDisabledExceptionMutableBuilder[Self <: KMSDisabledException] (val x: Self) extends AnyVal {
+    extension [Self <: KMSDisabledException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSDisabledException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSDisabledException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,20 +42,16 @@ object typesKmsdisabledexceptionMod {
   }
   object KMSDisabledExceptionDetails {
     
-    @scala.inline
-    def apply(): KMSDisabledExceptionDetails = {
+    inline def apply(): KMSDisabledExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KMSDisabledExceptionDetails]
     }
     
-    @scala.inline
-    implicit class KMSDisabledExceptionDetailsMutableBuilder[Self <: KMSDisabledExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: KMSDisabledExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

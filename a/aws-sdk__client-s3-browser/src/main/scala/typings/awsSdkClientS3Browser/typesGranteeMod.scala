@@ -38,41 +38,30 @@ object typesGranteeMod {
   }
   object Grantee {
     
-    @scala.inline
-    def apply(Type: CanonicalUser | AmazonCustomerByEmail | Group | String): Grantee = {
+    inline def apply(Type: CanonicalUser | AmazonCustomerByEmail | Group | String): Grantee = {
       val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[Grantee]
     }
     
-    @scala.inline
-    implicit class GranteeMutableBuilder[Self <: Grantee] (val x: Self) extends AnyVal {
+    extension [Self <: Grantee](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
       
-      @scala.inline
-      def setEmailAddress(value: String): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
+      inline def setEmailAddress(value: String): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailAddressUndefined: Self = StObject.set(x, "EmailAddress", js.undefined)
+      inline def setEmailAddressUndefined: Self = StObject.set(x, "EmailAddress", js.undefined)
       
-      @scala.inline
-      def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
+      inline def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
       
-      @scala.inline
-      def setType(value: CanonicalUser | AmazonCustomerByEmail | Group | String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: CanonicalUser | AmazonCustomerByEmail | Group | String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setURIUndefined: Self = StObject.set(x, "URI", js.undefined)
+      inline def setURIUndefined: Self = StObject.set(x, "URI", js.undefined)
     }
   }
   

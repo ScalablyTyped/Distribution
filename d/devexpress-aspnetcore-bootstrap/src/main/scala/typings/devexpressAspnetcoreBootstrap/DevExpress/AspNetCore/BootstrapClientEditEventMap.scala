@@ -18,8 +18,7 @@ trait BootstrapClientEditEventMap
 }
 object BootstrapClientEditEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     gotFocus: EventArgs,
     init: EventArgs,
     lostFocus: EventArgs,
@@ -30,19 +29,14 @@ object BootstrapClientEditEventMap {
     __obj.asInstanceOf[BootstrapClientEditEventMap]
   }
   
-  @scala.inline
-  implicit class BootstrapClientEditEventMapMutableBuilder[Self <: BootstrapClientEditEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientEditEventMap](x: Self) {
     
-    @scala.inline
-    def setGotFocus(value: EventArgs): Self = StObject.set(x, "gotFocus", value.asInstanceOf[js.Any])
+    inline def setGotFocus(value: EventArgs): Self = StObject.set(x, "gotFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLostFocus(value: EventArgs): Self = StObject.set(x, "lostFocus", value.asInstanceOf[js.Any])
+    inline def setLostFocus(value: EventArgs): Self = StObject.set(x, "lostFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidation(value: EditValidationEventArgs): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    inline def setValidation(value: EditValidationEventArgs): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
+    inline def setValueChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "valueChanged", value.asInstanceOf[js.Any])
   }
 }

@@ -16,8 +16,7 @@ object global {
     * It is preferreed to use {@link Xrm.Utility.getGlobalContext Xrm.Utility.getGlobalContext()} instead.
     * @see {@link Xrm.Utility.getGlobalContext}
     */
-  @scala.inline
-  def GetGlobalContext(): GlobalContext = js.Dynamic.global.applyDynamic("GetGlobalContext")().asInstanceOf[GlobalContext]
+  inline def GetGlobalContext(): GlobalContext = js.Dynamic.global.applyDynamic("GetGlobalContext")().asInstanceOf[GlobalContext]
   
   /**
     * Xrm Namespace

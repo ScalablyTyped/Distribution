@@ -71,26 +71,20 @@ object pluginsMod {
   }
   object AutoScrollOptions {
     
-    @scala.inline
-    def apply(): AutoScrollOptions = {
+    inline def apply(): AutoScrollOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoScrollOptions]
     }
     
-    @scala.inline
-    implicit class AutoScrollOptionsMutableBuilder[Self <: AutoScrollOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AutoScrollOptions](x: Self) {
       
-      @scala.inline
-      def setBubbleScroll(value: Boolean): Self = StObject.set(x, "bubbleScroll", value.asInstanceOf[js.Any])
+      inline def setBubbleScroll(value: Boolean): Self = StObject.set(x, "bubbleScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBubbleScrollUndefined: Self = StObject.set(x, "bubbleScroll", js.undefined)
+      inline def setBubbleScrollUndefined: Self = StObject.set(x, "bubbleScroll", js.undefined)
       
-      @scala.inline
-      def setScroll(value: Boolean | HTMLElement): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      inline def setScroll(value: Boolean | HTMLElement): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollFn(
+      inline def setScrollFn(
         value: js.ThisFunction5[
               /* this */ ^, 
               /* offsetX */ Double, 
@@ -102,23 +96,17 @@ object pluginsMod {
             ]
       ): Self = StObject.set(x, "scrollFn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollFnUndefined: Self = StObject.set(x, "scrollFn", js.undefined)
+      inline def setScrollFnUndefined: Self = StObject.set(x, "scrollFn", js.undefined)
       
-      @scala.inline
-      def setScrollSensitivity(value: Double): Self = StObject.set(x, "scrollSensitivity", value.asInstanceOf[js.Any])
+      inline def setScrollSensitivity(value: Double): Self = StObject.set(x, "scrollSensitivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollSensitivityUndefined: Self = StObject.set(x, "scrollSensitivity", js.undefined)
+      inline def setScrollSensitivityUndefined: Self = StObject.set(x, "scrollSensitivity", js.undefined)
       
-      @scala.inline
-      def setScrollSpeed(value: Double): Self = StObject.set(x, "scrollSpeed", value.asInstanceOf[js.Any])
+      inline def setScrollSpeed(value: Double): Self = StObject.set(x, "scrollSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollSpeedUndefined: Self = StObject.set(x, "scrollSpeed", js.undefined)
+      inline def setScrollSpeedUndefined: Self = StObject.set(x, "scrollSpeed", js.undefined)
       
-      @scala.inline
-      def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+      inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
     }
   }
   
@@ -153,38 +141,28 @@ object pluginsMod {
   }
   object MultiDragOptions {
     
-    @scala.inline
-    def apply(): MultiDragOptions = {
+    inline def apply(): MultiDragOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MultiDragOptions]
     }
     
-    @scala.inline
-    implicit class MultiDragOptionsMutableBuilder[Self <: MultiDragOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MultiDragOptions](x: Self) {
       
-      @scala.inline
-      def setMultiDrag(value: Boolean): Self = StObject.set(x, "multiDrag", value.asInstanceOf[js.Any])
+      inline def setMultiDrag(value: Boolean): Self = StObject.set(x, "multiDrag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiDragUndefined: Self = StObject.set(x, "multiDrag", js.undefined)
+      inline def setMultiDragUndefined: Self = StObject.set(x, "multiDrag", js.undefined)
       
-      @scala.inline
-      def setOnDeselect(value: /* event */ SortableEvent => Unit): Self = StObject.set(x, "onDeselect", js.Any.fromFunction1(value))
+      inline def setOnDeselect(value: /* event */ SortableEvent => Unit): Self = StObject.set(x, "onDeselect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
+      inline def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: /* event */ SortableEvent => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* event */ SortableEvent => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setSelectedClass(value: String): Self = StObject.set(x, "selectedClass", value.asInstanceOf[js.Any])
+      inline def setSelectedClass(value: String): Self = StObject.set(x, "selectedClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedClassUndefined: Self = StObject.set(x, "selectedClass", js.undefined)
+      inline def setSelectedClassUndefined: Self = StObject.set(x, "selectedClass", js.undefined)
     }
   }
   
@@ -211,32 +189,24 @@ object pluginsMod {
   }
   object OnSpillOptions {
     
-    @scala.inline
-    def apply(): OnSpillOptions = {
+    inline def apply(): OnSpillOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnSpillOptions]
     }
     
-    @scala.inline
-    implicit class OnSpillOptionsMutableBuilder[Self <: OnSpillOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OnSpillOptions](x: Self) {
       
-      @scala.inline
-      def setOnSpill(value: /* evt */ SortableEvent => Unit): Self = StObject.set(x, "onSpill", js.Any.fromFunction1(value))
+      inline def setOnSpill(value: /* evt */ SortableEvent => Unit): Self = StObject.set(x, "onSpill", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSpillUndefined: Self = StObject.set(x, "onSpill", js.undefined)
+      inline def setOnSpillUndefined: Self = StObject.set(x, "onSpill", js.undefined)
       
-      @scala.inline
-      def setRemoveOnSpill(value: Boolean): Self = StObject.set(x, "removeOnSpill", value.asInstanceOf[js.Any])
+      inline def setRemoveOnSpill(value: Boolean): Self = StObject.set(x, "removeOnSpill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveOnSpillUndefined: Self = StObject.set(x, "removeOnSpill", js.undefined)
+      inline def setRemoveOnSpillUndefined: Self = StObject.set(x, "removeOnSpill", js.undefined)
       
-      @scala.inline
-      def setRevertOnSpill(value: Boolean): Self = StObject.set(x, "revertOnSpill", value.asInstanceOf[js.Any])
+      inline def setRevertOnSpill(value: Boolean): Self = StObject.set(x, "revertOnSpill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevertOnSpillUndefined: Self = StObject.set(x, "revertOnSpill", js.undefined)
+      inline def setRevertOnSpillUndefined: Self = StObject.set(x, "revertOnSpill", js.undefined)
     }
   }
   
@@ -254,26 +224,20 @@ object pluginsMod {
   }
   object SwapOptions {
     
-    @scala.inline
-    def apply(): SwapOptions = {
+    inline def apply(): SwapOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwapOptions]
     }
     
-    @scala.inline
-    implicit class SwapOptionsMutableBuilder[Self <: SwapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SwapOptions](x: Self) {
       
-      @scala.inline
-      def setSwap(value: Boolean): Self = StObject.set(x, "swap", value.asInstanceOf[js.Any])
+      inline def setSwap(value: Boolean): Self = StObject.set(x, "swap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwapClass(value: String): Self = StObject.set(x, "swapClass", value.asInstanceOf[js.Any])
+      inline def setSwapClass(value: String): Self = StObject.set(x, "swapClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwapClassUndefined: Self = StObject.set(x, "swapClass", js.undefined)
+      inline def setSwapClassUndefined: Self = StObject.set(x, "swapClass", js.undefined)
       
-      @scala.inline
-      def setSwapUndefined: Self = StObject.set(x, "swap", js.undefined)
+      inline def setSwapUndefined: Self = StObject.set(x, "swap", js.undefined)
     }
   }
 }

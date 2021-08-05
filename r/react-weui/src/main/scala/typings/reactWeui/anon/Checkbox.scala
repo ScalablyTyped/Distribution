@@ -12,19 +12,15 @@ trait Checkbox extends StObject {
 }
 object Checkbox {
   
-  @scala.inline
-  def apply(checkbox: Boolean, radio: Boolean): Checkbox = {
+  inline def apply(checkbox: Boolean, radio: Boolean): Checkbox = {
     val __obj = js.Dynamic.literal(checkbox = checkbox.asInstanceOf[js.Any], radio = radio.asInstanceOf[js.Any])
     __obj.asInstanceOf[Checkbox]
   }
   
-  @scala.inline
-  implicit class CheckboxMutableBuilder[Self <: Checkbox] (val x: Self) extends AnyVal {
+  extension [Self <: Checkbox](x: Self) {
     
-    @scala.inline
-    def setCheckbox(value: Boolean): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
+    inline def setCheckbox(value: Boolean): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadio(value: Boolean): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
+    inline def setRadio(value: Boolean): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
   }
 }

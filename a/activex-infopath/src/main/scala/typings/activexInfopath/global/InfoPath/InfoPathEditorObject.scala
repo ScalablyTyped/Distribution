@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.InfoPathEditorObject")
 @js.native
-class InfoPathEditorObject protected ()
+/* private */ class InfoPathEditorObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.InfoPathEditorObject {
   
@@ -25,7 +25,7 @@ class InfoPathEditorObject protected ()
   /* CompleteClass */
   var HostName: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.InfoPathEditorObject_typekey")
   var InfoPathDotInfoPathEditorObject_typekey: typings.activexInfopath.InfoPath.InfoPathEditorObject = js.native
   

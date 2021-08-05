@@ -23,31 +23,23 @@ trait SystemTemplateDescription extends StObject {
 }
 object SystemTemplateDescription {
   
-  @scala.inline
-  def apply(): SystemTemplateDescription = {
+  inline def apply(): SystemTemplateDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SystemTemplateDescription]
   }
   
-  @scala.inline
-  implicit class SystemTemplateDescriptionMutableBuilder[Self <: SystemTemplateDescription] (val x: Self) extends AnyVal {
+  extension [Self <: SystemTemplateDescription](x: Self) {
     
-    @scala.inline
-    def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
+    inline def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
-    @scala.inline
-    def setSummary(value: SystemTemplateSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: SystemTemplateSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
-    @scala.inline
-    def setValidatedNamespaceVersion(value: Version): Self = StObject.set(x, "validatedNamespaceVersion", value.asInstanceOf[js.Any])
+    inline def setValidatedNamespaceVersion(value: Version): Self = StObject.set(x, "validatedNamespaceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatedNamespaceVersionUndefined: Self = StObject.set(x, "validatedNamespaceVersion", js.undefined)
+    inline def setValidatedNamespaceVersionUndefined: Self = StObject.set(x, "validatedNamespaceVersion", js.undefined)
   }
 }

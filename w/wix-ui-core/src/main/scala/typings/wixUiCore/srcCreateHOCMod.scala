@@ -10,8 +10,7 @@ object srcCreateHOCMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createHOC(Component: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createHOC")(Component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createHOC(Component: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createHOC")(Component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   trait WixComponentProps extends StObject {
     
@@ -21,26 +20,20 @@ object srcCreateHOCMod {
   }
   object WixComponentProps {
     
-    @scala.inline
-    def apply(): WixComponentProps = {
+    inline def apply(): WixComponentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WixComponentProps]
     }
     
-    @scala.inline
-    implicit class WixComponentPropsMutableBuilder[Self <: WixComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: WixComponentProps](x: Self) {
       
-      @scala.inline
-      def setDataClass(value: String): Self = StObject.set(x, "dataClass", value.asInstanceOf[js.Any])
+      inline def setDataClass(value: String): Self = StObject.set(x, "dataClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataClassUndefined: Self = StObject.set(x, "dataClass", js.undefined)
+      inline def setDataClassUndefined: Self = StObject.set(x, "dataClass", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
     }
   }
 }

@@ -21,49 +21,35 @@ trait ContinuousScale
 }
 object ContinuousScale {
   
-  @scala.inline
-  def apply(name: String): ContinuousScale = {
+  inline def apply(name: String): ContinuousScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContinuousScale]
   }
   
-  @scala.inline
-  implicit class ContinuousScaleMutableBuilder[Self <: ContinuousScale] (val x: Self) extends AnyVal {
+  extension [Self <: ContinuousScale](x: Self) {
     
-    @scala.inline
-    def setBins(value: ScaleBins): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
+    inline def setBins(value: ScaleBins): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
+    inline def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
     
-    @scala.inline
-    def setBinsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bins", js.Array(value :_*))
+    inline def setBinsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bins", js.Array(value :_*))
     
-    @scala.inline
-    def setClamp(value: Boolean | SignalRef): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
+    inline def setClamp(value: Boolean | SignalRef): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClampUndefined: Self = StObject.set(x, "clamp", js.undefined)
+    inline def setClampUndefined: Self = StObject.set(x, "clamp", js.undefined)
     
-    @scala.inline
-    def setInterpolate(value: ScaleInterpolate): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
+    inline def setInterpolate(value: ScaleInterpolate): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
+    inline def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Double | SignalRef): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | SignalRef): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setRange(value: RangeScheme): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: RangeScheme): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setRangeVarargs(value: (Null | Boolean | String | Double | SignalRef | RangeRawArray)*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: (Null | Boolean | String | Double | SignalRef | RangeRawArray)*): Self = StObject.set(x, "range", js.Array(value :_*))
   }
 }

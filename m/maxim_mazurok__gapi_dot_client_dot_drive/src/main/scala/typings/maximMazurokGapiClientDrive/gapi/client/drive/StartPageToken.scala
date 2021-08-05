@@ -14,25 +14,19 @@ trait StartPageToken extends StObject {
 }
 object StartPageToken {
   
-  @scala.inline
-  def apply(): StartPageToken = {
+  inline def apply(): StartPageToken = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartPageToken]
   }
   
-  @scala.inline
-  implicit class StartPageTokenMutableBuilder[Self <: StartPageToken] (val x: Self) extends AnyVal {
+  extension [Self <: StartPageToken](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setStartPageToken(value: String): Self = StObject.set(x, "startPageToken", value.asInstanceOf[js.Any])
+    inline def setStartPageToken(value: String): Self = StObject.set(x, "startPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPageTokenUndefined: Self = StObject.set(x, "startPageToken", js.undefined)
+    inline def setStartPageTokenUndefined: Self = StObject.set(x, "startPageToken", js.undefined)
   }
 }

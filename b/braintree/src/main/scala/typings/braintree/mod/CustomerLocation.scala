@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CustomerLocation extends StObject
 object CustomerLocation {
   
-  @scala.inline
-  def International: typings.braintree.braintreeStrings.International = "International".asInstanceOf[typings.braintree.braintreeStrings.International]
+  inline def International: typings.braintree.braintreeStrings.International = "International".asInstanceOf[typings.braintree.braintreeStrings.International]
   
-  @scala.inline
-  def US: typings.braintree.braintreeStrings.US = "US".asInstanceOf[typings.braintree.braintreeStrings.US]
+  inline def US: typings.braintree.braintreeStrings.US = "US".asInstanceOf[typings.braintree.braintreeStrings.US]
 }

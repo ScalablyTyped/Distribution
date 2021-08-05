@@ -17,34 +17,25 @@ trait CustomEventStatus extends StObject {
 }
 object CustomEventStatus {
   
-  @scala.inline
-  def apply(): CustomEventStatus = {
+  inline def apply(): CustomEventStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomEventStatus]
   }
   
-  @scala.inline
-  implicit class CustomEventStatusMutableBuilder[Self <: CustomEventStatus] (val x: Self) extends AnyVal {
+  extension [Self <: CustomEventStatus](x: Self) {
     
-    @scala.inline
-    def setCustomEvent(value: CustomEvent): Self = StObject.set(x, "customEvent", value.asInstanceOf[js.Any])
+    inline def setCustomEvent(value: CustomEvent): Self = StObject.set(x, "customEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomEventUndefined: Self = StObject.set(x, "customEvent", js.undefined)
+    inline def setCustomEventUndefined: Self = StObject.set(x, "customEvent", js.undefined)
     
-    @scala.inline
-    def setErrors(value: js.Array[CustomEventError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[CustomEventError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: CustomEventError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: CustomEventError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

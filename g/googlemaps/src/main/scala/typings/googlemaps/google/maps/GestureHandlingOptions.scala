@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GestureHandlingOptions extends StObject
 object GestureHandlingOptions {
   
-  @scala.inline
-  def auto: typings.googlemaps.googlemapsStrings.auto = "auto".asInstanceOf[typings.googlemaps.googlemapsStrings.auto]
+  inline def auto: typings.googlemaps.googlemapsStrings.auto = "auto".asInstanceOf[typings.googlemaps.googlemapsStrings.auto]
   
-  @scala.inline
-  def cooperative: typings.googlemaps.googlemapsStrings.cooperative = "cooperative".asInstanceOf[typings.googlemaps.googlemapsStrings.cooperative]
+  inline def cooperative: typings.googlemaps.googlemapsStrings.cooperative = "cooperative".asInstanceOf[typings.googlemaps.googlemapsStrings.cooperative]
   
-  @scala.inline
-  def greedy: typings.googlemaps.googlemapsStrings.greedy = "greedy".asInstanceOf[typings.googlemaps.googlemapsStrings.greedy]
+  inline def greedy: typings.googlemaps.googlemapsStrings.greedy = "greedy".asInstanceOf[typings.googlemaps.googlemapsStrings.greedy]
   
-  @scala.inline
-  def none: typings.googlemaps.googlemapsStrings.none = "none".asInstanceOf[typings.googlemaps.googlemapsStrings.none]
+  inline def none: typings.googlemaps.googlemapsStrings.none = "none".asInstanceOf[typings.googlemaps.googlemapsStrings.none]
 }

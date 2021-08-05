@@ -36,8 +36,7 @@ trait IShellPaneContainer extends StObject {
 }
 object IShellPaneContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddTab: (String, String, String) => IShellPaneTab,
     Content: js.Any,
     Events: IShellPaneContainerEvents,
@@ -57,49 +56,34 @@ object IShellPaneContainer {
     __obj.asInstanceOf[IShellPaneContainer]
   }
   
-  @scala.inline
-  implicit class IShellPaneContainerMutableBuilder[Self <: IShellPaneContainer] (val x: Self) extends AnyVal {
+  extension [Self <: IShellPaneContainer](x: Self) {
     
-    @scala.inline
-    def setAddTab(value: (String, String, String) => IShellPaneTab): Self = StObject.set(x, "AddTab", js.Any.fromFunction3(value))
+    inline def setAddTab(value: (String, String, String) => IShellPaneTab): Self = StObject.set(x, "AddTab", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setContent(value: js.Any): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Any): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvents(value: IShellPaneContainerEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: IShellPaneContainerEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocus(value: () => Unit): Self = StObject.set(x, "Focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => Unit): Self = StObject.set(x, "Focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedTab(value: () => IShellPaneTab): Self = StObject.set(x, "GetSelectedTab", js.Any.fromFunction0(value))
+    inline def setGetSelectedTab(value: () => IShellPaneTab): Self = StObject.set(x, "GetSelectedTab", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTab(value: String => IShellPaneTab): Self = StObject.set(x, "GetTab", js.Any.fromFunction1(value))
+    inline def setGetTab(value: String => IShellPaneTab): Self = StObject.set(x, "GetTab", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsFocused(value: Boolean): Self = StObject.set(x, "IsFocused", value.asInstanceOf[js.Any])
+    inline def setIsFocused(value: Boolean): Self = StObject.set(x, "IsFocused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimized(value: Boolean): Self = StObject.set(x, "Minimized", value.asInstanceOf[js.Any])
+    inline def setMinimized(value: Boolean): Self = StObject.set(x, "Minimized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDefaultSize(value: (Double, Boolean) => Unit): Self = StObject.set(x, "SetDefaultSize", js.Any.fromFunction2(value))
+    inline def setSetDefaultSize(value: (Double, Boolean) => Unit): Self = StObject.set(x, "SetDefaultSize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetDefaultVisibility(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "SetDefaultVisibility", js.Any.fromFunction2(value))
+    inline def setSetDefaultVisibility(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "SetDefaultVisibility", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShellFrame(value: IShellFrame): Self = StObject.set(x, "ShellFrame", value.asInstanceOf[js.Any])
+    inline def setShellFrame(value: IShellFrame): Self = StObject.set(x, "ShellFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabTitleSize(value: Double): Self = StObject.set(x, "TabTitleSize", value.asInstanceOf[js.Any])
+    inline def setTabTitleSize(value: Double): Self = StObject.set(x, "TabTitleSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

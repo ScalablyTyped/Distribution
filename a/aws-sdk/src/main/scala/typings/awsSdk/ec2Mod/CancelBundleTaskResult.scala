@@ -13,19 +13,15 @@ trait CancelBundleTaskResult extends StObject {
 }
 object CancelBundleTaskResult {
   
-  @scala.inline
-  def apply(): CancelBundleTaskResult = {
+  inline def apply(): CancelBundleTaskResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelBundleTaskResult]
   }
   
-  @scala.inline
-  implicit class CancelBundleTaskResultMutableBuilder[Self <: CancelBundleTaskResult] (val x: Self) extends AnyVal {
+  extension [Self <: CancelBundleTaskResult](x: Self) {
     
-    @scala.inline
-    def setBundleTask(value: BundleTask): Self = StObject.set(x, "BundleTask", value.asInstanceOf[js.Any])
+    inline def setBundleTask(value: BundleTask): Self = StObject.set(x, "BundleTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleTaskUndefined: Self = StObject.set(x, "BundleTask", js.undefined)
+    inline def setBundleTaskUndefined: Self = StObject.set(x, "BundleTask", js.undefined)
   }
 }

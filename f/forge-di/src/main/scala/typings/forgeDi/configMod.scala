@@ -13,20 +13,16 @@ object configMod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setInspector(value: Inspector): Self = StObject.set(x, "inspector", value.asInstanceOf[js.Any])
+      inline def setInspector(value: Inspector): Self = StObject.set(x, "inspector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInspectorUndefined: Self = StObject.set(x, "inspector", js.undefined)
+      inline def setInspectorUndefined: Self = StObject.set(x, "inspector", js.undefined)
     }
   }
 }

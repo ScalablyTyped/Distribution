@@ -12,25 +12,19 @@ trait GetShippingLabelOutput extends StObject {
 }
 object GetShippingLabelOutput {
   
-  @scala.inline
-  def apply(): GetShippingLabelOutput = {
+  inline def apply(): GetShippingLabelOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetShippingLabelOutput]
   }
   
-  @scala.inline
-  implicit class GetShippingLabelOutputMutableBuilder[Self <: GetShippingLabelOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetShippingLabelOutput](x: Self) {
     
-    @scala.inline
-    def setShippingLabelURL(value: GenericString): Self = StObject.set(x, "ShippingLabelURL", value.asInstanceOf[js.Any])
+    inline def setShippingLabelURL(value: GenericString): Self = StObject.set(x, "ShippingLabelURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingLabelURLUndefined: Self = StObject.set(x, "ShippingLabelURL", js.undefined)
+    inline def setShippingLabelURLUndefined: Self = StObject.set(x, "ShippingLabelURL", js.undefined)
     
-    @scala.inline
-    def setWarning(value: GenericString): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: GenericString): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
   }
 }

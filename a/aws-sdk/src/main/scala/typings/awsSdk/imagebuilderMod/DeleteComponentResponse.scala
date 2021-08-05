@@ -18,25 +18,19 @@ trait DeleteComponentResponse extends StObject {
 }
 object DeleteComponentResponse {
   
-  @scala.inline
-  def apply(): DeleteComponentResponse = {
+  inline def apply(): DeleteComponentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteComponentResponse]
   }
   
-  @scala.inline
-  implicit class DeleteComponentResponseMutableBuilder[Self <: DeleteComponentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteComponentResponse](x: Self) {
     
-    @scala.inline
-    def setComponentBuildVersionArn(value: ComponentBuildVersionArn): Self = StObject.set(x, "componentBuildVersionArn", value.asInstanceOf[js.Any])
+    inline def setComponentBuildVersionArn(value: ComponentBuildVersionArn): Self = StObject.set(x, "componentBuildVersionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentBuildVersionArnUndefined: Self = StObject.set(x, "componentBuildVersionArn", js.undefined)
+    inline def setComponentBuildVersionArnUndefined: Self = StObject.set(x, "componentBuildVersionArn", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

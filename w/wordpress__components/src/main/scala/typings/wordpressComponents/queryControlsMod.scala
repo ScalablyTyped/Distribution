@@ -37,11 +37,9 @@ object queryControlsMod {
     trait Order extends StObject
     object Order {
       
-      @scala.inline
-      def asc: typings.wordpressComponents.wordpressComponentsStrings.asc = "asc".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.asc]
+      inline def asc: typings.wordpressComponents.wordpressComponentsStrings.asc = "asc".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.asc]
       
-      @scala.inline
-      def desc: typings.wordpressComponents.wordpressComponentsStrings.desc = "desc".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.desc]
+      inline def desc: typings.wordpressComponents.wordpressComponentsStrings.desc = "desc".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.desc]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -51,11 +49,9 @@ object queryControlsMod {
     trait OrderBy extends StObject
     object OrderBy {
       
-      @scala.inline
-      def date: typings.wordpressComponents.wordpressComponentsStrings.date = "date".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.date]
+      inline def date: typings.wordpressComponents.wordpressComponentsStrings.date = "date".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.date]
       
-      @scala.inline
-      def title: typings.wordpressComponents.wordpressComponentsStrings.title = "title".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.title]
+      inline def title: typings.wordpressComponents.wordpressComponentsStrings.title = "title".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.title]
     }
     
     type OrderProps = OnOrderByChange | js.Object

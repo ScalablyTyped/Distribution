@@ -14,25 +14,19 @@ trait OrdersCancelResponse extends StObject {
 }
 object OrdersCancelResponse {
   
-  @scala.inline
-  def apply(): OrdersCancelResponse = {
+  inline def apply(): OrdersCancelResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrdersCancelResponse]
   }
   
-  @scala.inline
-  implicit class OrdersCancelResponseMutableBuilder[Self <: OrdersCancelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: OrdersCancelResponse](x: Self) {
     
-    @scala.inline
-    def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
+    inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionStatusUndefined: Self = StObject.set(x, "executionStatus", js.undefined)
+    inline def setExecutionStatusUndefined: Self = StObject.set(x, "executionStatus", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

@@ -31,6 +31,5 @@ object SAT {
     * @return {ICollisionData} collision
     */
   /* static member */
-  @scala.inline
-  def collides(bodyA: BodyType, bodyB: BodyType, previousCollision: ICollisionData): ICollisionData = (^.asInstanceOf[js.Dynamic].applyDynamic("collides")(bodyA.asInstanceOf[js.Any], bodyB.asInstanceOf[js.Any], previousCollision.asInstanceOf[js.Any])).asInstanceOf[ICollisionData]
+  inline def collides(bodyA: BodyType, bodyB: BodyType, previousCollision: ICollisionData): ICollisionData = (^.asInstanceOf[js.Dynamic].applyDynamic("collides")(bodyA.asInstanceOf[js.Any], bodyB.asInstanceOf[js.Any], previousCollision.asInstanceOf[js.Any])).asInstanceOf[ICollisionData]
 }

@@ -16,17 +16,17 @@ object componentProviderMod {
   @js.native
   class ComponentProvider () extends StObject {
     
-    var agDeprecatedNames: js.Any = js.native
+    /* private */ var agDeprecatedNames: js.Any = js.native
     
-    var agGridDefaults: js.Any = js.native
+    /* private */ var agGridDefaults: js.Any = js.native
     
-    var frameworkComponents: js.Any = js.native
+    /* private */ var frameworkComponents: js.Any = js.native
     
-    var gridOptions: js.Any = js.native
+    /* private */ var gridOptions: js.Any = js.native
     
     /* private */ def init(): js.Any = js.native
     
-    var jsComponents: js.Any = js.native
+    /* private */ var jsComponents: js.Any = js.native
     
     def registerComponent[A /* <: IComponent[js.Any] */](rawName: String, component: AgGridRegisteredComponentInput[A]): Unit = js.native
     
@@ -82,20 +82,16 @@ object componentProviderMod {
   }
   object DeprecatedComponentName {
     
-    @scala.inline
-    def apply(newComponentName: String, propertyHolder: String): DeprecatedComponentName = {
+    inline def apply(newComponentName: String, propertyHolder: String): DeprecatedComponentName = {
       val __obj = js.Dynamic.literal(newComponentName = newComponentName.asInstanceOf[js.Any], propertyHolder = propertyHolder.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeprecatedComponentName]
     }
     
-    @scala.inline
-    implicit class DeprecatedComponentNameMutableBuilder[Self <: DeprecatedComponentName] (val x: Self) extends AnyVal {
+    extension [Self <: DeprecatedComponentName](x: Self) {
       
-      @scala.inline
-      def setNewComponentName(value: String): Self = StObject.set(x, "newComponentName", value.asInstanceOf[js.Any])
+      inline def setNewComponentName(value: String): Self = StObject.set(x, "newComponentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyHolder(value: String): Self = StObject.set(x, "propertyHolder", value.asInstanceOf[js.Any])
+      inline def setPropertyHolder(value: String): Self = StObject.set(x, "propertyHolder", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,8 +105,7 @@ object componentProviderMod {
   }
   object RegisteredComponent {
     
-    @scala.inline
-    def apply[A /* <: IComponent[js.Any] & B */, B](
+    inline def apply[A /* <: IComponent[js.Any] & B */, B](
       component: RegisteredComponentInput[A, B],
       source: RegisteredComponentSource,
       `type`: ComponentType
@@ -120,20 +115,15 @@ object componentProviderMod {
       __obj.asInstanceOf[RegisteredComponent[A, B]]
     }
     
-    @scala.inline
-    implicit class RegisteredComponentMutableBuilder[Self <: RegisteredComponent[?, ?], A /* <: IComponent[js.Any] & B */, B] (val x: Self & (RegisteredComponent[A, B])) extends AnyVal {
+    extension [Self <: RegisteredComponent[?, ?], A /* <: IComponent[js.Any] & B */, B](x: Self & (RegisteredComponent[A, B])) {
       
-      @scala.inline
-      def setComponent(value: RegisteredComponentInput[A, B]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: RegisteredComponentInput[A, B]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentFunction1(value: /* params */ js.Any => String | HTMLElement): Self = StObject.set(x, "component", js.Any.fromFunction1(value))
+      inline def setComponentFunction1(value: /* params */ js.Any => String | HTMLElement): Self = StObject.set(x, "component", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSource(value: RegisteredComponentSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: RegisteredComponentSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: ComponentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ComponentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

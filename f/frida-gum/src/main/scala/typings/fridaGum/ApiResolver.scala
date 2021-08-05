@@ -20,16 +20,13 @@ trait ApiResolver extends StObject {
 }
 object ApiResolver {
   
-  @scala.inline
-  def apply(enumerateMatches: String => js.Array[ApiResolverMatch]): ApiResolver = {
+  inline def apply(enumerateMatches: String => js.Array[ApiResolverMatch]): ApiResolver = {
     val __obj = js.Dynamic.literal(enumerateMatches = js.Any.fromFunction1(enumerateMatches))
     __obj.asInstanceOf[ApiResolver]
   }
   
-  @scala.inline
-  implicit class ApiResolverMutableBuilder[Self <: ApiResolver] (val x: Self) extends AnyVal {
+  extension [Self <: ApiResolver](x: Self) {
     
-    @scala.inline
-    def setEnumerateMatches(value: String => js.Array[ApiResolverMatch]): Self = StObject.set(x, "enumerateMatches", js.Any.fromFunction1(value))
+    inline def setEnumerateMatches(value: String => js.Array[ApiResolverMatch]): Self = StObject.set(x, "enumerateMatches", js.Any.fromFunction1(value))
   }
 }

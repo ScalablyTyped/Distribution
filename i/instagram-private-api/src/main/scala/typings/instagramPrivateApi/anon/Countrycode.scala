@@ -13,22 +13,17 @@ trait Countrycode extends StObject {
 }
 object Countrycode {
   
-  @scala.inline
-  def apply(country_code: String, source: js.Array[String | default]): Countrycode = {
+  inline def apply(country_code: String, source: js.Array[String | default]): Countrycode = {
     val __obj = js.Dynamic.literal(country_code = country_code.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Countrycode]
   }
   
-  @scala.inline
-  implicit class CountrycodeMutableBuilder[Self <: Countrycode] (val x: Self) extends AnyVal {
+  extension [Self <: Countrycode](x: Self) {
     
-    @scala.inline
-    def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
+    inline def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: js.Array[String | default]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Array[String | default]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceVarargs(value: (String | default)*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: (String | default)*): Self = StObject.set(x, "source", js.Array(value :_*))
   }
 }

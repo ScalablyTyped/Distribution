@@ -38,49 +38,35 @@ trait CreateDataSetResponse extends StObject {
 }
 object CreateDataSetResponse {
   
-  @scala.inline
-  def apply(): CreateDataSetResponse = {
+  inline def apply(): CreateDataSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDataSetResponse]
   }
   
-  @scala.inline
-  implicit class CreateDataSetResponseMutableBuilder[Self <: CreateDataSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDataSetResponse](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setDataSetId(value: ResourceId): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: ResourceId): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetIdUndefined: Self = StObject.set(x, "DataSetId", js.undefined)
+    inline def setDataSetIdUndefined: Self = StObject.set(x, "DataSetId", js.undefined)
     
-    @scala.inline
-    def setIngestionArn(value: Arn): Self = StObject.set(x, "IngestionArn", value.asInstanceOf[js.Any])
+    inline def setIngestionArn(value: Arn): Self = StObject.set(x, "IngestionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngestionArnUndefined: Self = StObject.set(x, "IngestionArn", js.undefined)
+    inline def setIngestionArnUndefined: Self = StObject.set(x, "IngestionArn", js.undefined)
     
-    @scala.inline
-    def setIngestionId(value: ResourceId): Self = StObject.set(x, "IngestionId", value.asInstanceOf[js.Any])
+    inline def setIngestionId(value: ResourceId): Self = StObject.set(x, "IngestionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngestionIdUndefined: Self = StObject.set(x, "IngestionId", js.undefined)
+    inline def setIngestionIdUndefined: Self = StObject.set(x, "IngestionId", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

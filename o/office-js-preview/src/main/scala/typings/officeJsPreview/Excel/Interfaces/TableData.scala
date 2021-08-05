@@ -140,115 +140,79 @@ trait TableData extends StObject {
 }
 object TableData {
   
-  @scala.inline
-  def apply(): TableData = {
+  inline def apply(): TableData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableData]
   }
   
-  @scala.inline
-  implicit class TableDataMutableBuilder[Self <: TableData] (val x: Self) extends AnyVal {
+  extension [Self <: TableData](x: Self) {
     
-    @scala.inline
-    def setAutoFilter(value: AutoFilterData): Self = StObject.set(x, "autoFilter", value.asInstanceOf[js.Any])
+    inline def setAutoFilter(value: AutoFilterData): Self = StObject.set(x, "autoFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFilterUndefined: Self = StObject.set(x, "autoFilter", js.undefined)
+    inline def setAutoFilterUndefined: Self = StObject.set(x, "autoFilter", js.undefined)
     
-    @scala.inline
-    def setColumns(value: js.Array[TableColumnData]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[TableColumnData]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: TableColumnData*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: TableColumnData*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setHighlightFirstColumn(value: Boolean): Self = StObject.set(x, "highlightFirstColumn", value.asInstanceOf[js.Any])
+    inline def setHighlightFirstColumn(value: Boolean): Self = StObject.set(x, "highlightFirstColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightFirstColumnUndefined: Self = StObject.set(x, "highlightFirstColumn", js.undefined)
+    inline def setHighlightFirstColumnUndefined: Self = StObject.set(x, "highlightFirstColumn", js.undefined)
     
-    @scala.inline
-    def setHighlightLastColumn(value: Boolean): Self = StObject.set(x, "highlightLastColumn", value.asInstanceOf[js.Any])
+    inline def setHighlightLastColumn(value: Boolean): Self = StObject.set(x, "highlightLastColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightLastColumnUndefined: Self = StObject.set(x, "highlightLastColumn", js.undefined)
+    inline def setHighlightLastColumnUndefined: Self = StObject.set(x, "highlightLastColumn", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLegacyId(value: String): Self = StObject.set(x, "legacyId", value.asInstanceOf[js.Any])
+    inline def setLegacyId(value: String): Self = StObject.set(x, "legacyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegacyIdUndefined: Self = StObject.set(x, "legacyId", js.undefined)
+    inline def setLegacyIdUndefined: Self = StObject.set(x, "legacyId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[TableRowData]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[TableRowData]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: TableRowData*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: TableRowData*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setShowBandedColumns(value: Boolean): Self = StObject.set(x, "showBandedColumns", value.asInstanceOf[js.Any])
+    inline def setShowBandedColumns(value: Boolean): Self = StObject.set(x, "showBandedColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowBandedColumnsUndefined: Self = StObject.set(x, "showBandedColumns", js.undefined)
+    inline def setShowBandedColumnsUndefined: Self = StObject.set(x, "showBandedColumns", js.undefined)
     
-    @scala.inline
-    def setShowBandedRows(value: Boolean): Self = StObject.set(x, "showBandedRows", value.asInstanceOf[js.Any])
+    inline def setShowBandedRows(value: Boolean): Self = StObject.set(x, "showBandedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowBandedRowsUndefined: Self = StObject.set(x, "showBandedRows", js.undefined)
+    inline def setShowBandedRowsUndefined: Self = StObject.set(x, "showBandedRows", js.undefined)
     
-    @scala.inline
-    def setShowFilterButton(value: Boolean): Self = StObject.set(x, "showFilterButton", value.asInstanceOf[js.Any])
+    inline def setShowFilterButton(value: Boolean): Self = StObject.set(x, "showFilterButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFilterButtonUndefined: Self = StObject.set(x, "showFilterButton", js.undefined)
+    inline def setShowFilterButtonUndefined: Self = StObject.set(x, "showFilterButton", js.undefined)
     
-    @scala.inline
-    def setShowHeaders(value: Boolean): Self = StObject.set(x, "showHeaders", value.asInstanceOf[js.Any])
+    inline def setShowHeaders(value: Boolean): Self = StObject.set(x, "showHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowHeadersUndefined: Self = StObject.set(x, "showHeaders", js.undefined)
+    inline def setShowHeadersUndefined: Self = StObject.set(x, "showHeaders", js.undefined)
     
-    @scala.inline
-    def setShowTotals(value: Boolean): Self = StObject.set(x, "showTotals", value.asInstanceOf[js.Any])
+    inline def setShowTotals(value: Boolean): Self = StObject.set(x, "showTotals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTotalsUndefined: Self = StObject.set(x, "showTotals", js.undefined)
+    inline def setShowTotalsUndefined: Self = StObject.set(x, "showTotals", js.undefined)
     
-    @scala.inline
-    def setSort(value: TableSortData): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: TableSortData): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTableStyle(value: TableStyleData): Self = StObject.set(x, "tableStyle", value.asInstanceOf[js.Any])
+    inline def setTableStyle(value: TableStyleData): Self = StObject.set(x, "tableStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableStyleUndefined: Self = StObject.set(x, "tableStyle", js.undefined)
+    inline def setTableStyleUndefined: Self = StObject.set(x, "tableStyle", js.undefined)
   }
 }

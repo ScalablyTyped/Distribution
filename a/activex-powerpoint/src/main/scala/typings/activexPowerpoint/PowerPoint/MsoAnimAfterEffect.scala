@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoAnimAfterEffect extends StObject
 object MsoAnimAfterEffect {
   
-  @scala.inline
-  def msoAnimAfterEffectDim: `1` = 1.asInstanceOf[`1`]
+  inline def msoAnimAfterEffectDim: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoAnimAfterEffectHide: `2` = 2.asInstanceOf[`2`]
+  inline def msoAnimAfterEffectHide: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoAnimAfterEffectHideOnNextClick: `3` = 3.asInstanceOf[`3`]
+  inline def msoAnimAfterEffectHideOnNextClick: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoAnimAfterEffectMixed: `-1` = -1.asInstanceOf[`-1`]
+  inline def msoAnimAfterEffectMixed: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def msoAnimAfterEffectNone: `0` = 0.asInstanceOf[`0`]
+  inline def msoAnimAfterEffectNone: `0` = 0.asInstanceOf[`0`]
 }

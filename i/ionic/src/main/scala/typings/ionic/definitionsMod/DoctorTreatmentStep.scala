@@ -12,16 +12,13 @@ trait DoctorTreatmentStep
 }
 object DoctorTreatmentStep {
   
-  @scala.inline
-  def apply(message: String, treat: () => js.Promise[Unit]): DoctorTreatmentStep = {
+  inline def apply(message: String, treat: () => js.Promise[Unit]): DoctorTreatmentStep = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], treat = js.Any.fromFunction0(treat))
     __obj.asInstanceOf[DoctorTreatmentStep]
   }
   
-  @scala.inline
-  implicit class DoctorTreatmentStepMutableBuilder[Self <: DoctorTreatmentStep] (val x: Self) extends AnyVal {
+  extension [Self <: DoctorTreatmentStep](x: Self) {
     
-    @scala.inline
-    def setTreat(value: () => js.Promise[Unit]): Self = StObject.set(x, "treat", js.Any.fromFunction0(value))
+    inline def setTreat(value: () => js.Promise[Unit]): Self = StObject.set(x, "treat", js.Any.fromFunction0(value))
   }
 }

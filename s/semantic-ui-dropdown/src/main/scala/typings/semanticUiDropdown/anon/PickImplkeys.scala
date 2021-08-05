@@ -12,16 +12,13 @@ trait PickImplkeys extends StObject {
 }
 object PickImplkeys {
   
-  @scala.inline
-  def apply(keys: KeySettings): PickImplkeys = {
+  inline def apply(keys: KeySettings): PickImplkeys = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplkeys]
   }
   
-  @scala.inline
-  implicit class PickImplkeysMutableBuilder[Self <: PickImplkeys] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplkeys](x: Self) {
     
-    @scala.inline
-    def setKeys(value: KeySettings): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: KeySettings): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
   }
 }

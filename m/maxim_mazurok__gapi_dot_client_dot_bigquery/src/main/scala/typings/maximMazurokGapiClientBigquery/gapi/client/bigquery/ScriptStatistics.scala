@@ -17,28 +17,21 @@ trait ScriptStatistics extends StObject {
 }
 object ScriptStatistics {
   
-  @scala.inline
-  def apply(): ScriptStatistics = {
+  inline def apply(): ScriptStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScriptStatistics]
   }
   
-  @scala.inline
-  implicit class ScriptStatisticsMutableBuilder[Self <: ScriptStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptStatistics](x: Self) {
     
-    @scala.inline
-    def setEvaluationKind(value: String): Self = StObject.set(x, "evaluationKind", value.asInstanceOf[js.Any])
+    inline def setEvaluationKind(value: String): Self = StObject.set(x, "evaluationKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationKindUndefined: Self = StObject.set(x, "evaluationKind", js.undefined)
+    inline def setEvaluationKindUndefined: Self = StObject.set(x, "evaluationKind", js.undefined)
     
-    @scala.inline
-    def setStackFrames(value: js.Array[ScriptStackFrame]): Self = StObject.set(x, "stackFrames", value.asInstanceOf[js.Any])
+    inline def setStackFrames(value: js.Array[ScriptStackFrame]): Self = StObject.set(x, "stackFrames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackFramesUndefined: Self = StObject.set(x, "stackFrames", js.undefined)
+    inline def setStackFramesUndefined: Self = StObject.set(x, "stackFrames", js.undefined)
     
-    @scala.inline
-    def setStackFramesVarargs(value: ScriptStackFrame*): Self = StObject.set(x, "stackFrames", js.Array(value :_*))
+    inline def setStackFramesVarargs(value: ScriptStackFrame*): Self = StObject.set(x, "stackFrames", js.Array(value :_*))
   }
 }

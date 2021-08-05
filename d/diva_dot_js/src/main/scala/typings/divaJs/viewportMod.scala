@@ -88,8 +88,7 @@ object viewportMod {
   }
   object Viewport {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bottom: Double,
       hasHorizontalOverlap: Region => Boolean,
       hasVerticalOverlap: Region => Boolean,
@@ -108,47 +107,33 @@ object viewportMod {
       __obj.asInstanceOf[Viewport]
     }
     
-    @scala.inline
-    implicit class ViewportMutableBuilder[Self <: Viewport] (val x: Self) extends AnyVal {
+    extension [Self <: Viewport](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasHorizontalOverlap(value: Region => Boolean): Self = StObject.set(x, "hasHorizontalOverlap", js.Any.fromFunction1(value))
+      inline def setHasHorizontalOverlap(value: Region => Boolean): Self = StObject.set(x, "hasHorizontalOverlap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasVerticalOverlap(value: Region => Boolean): Self = StObject.set(x, "hasVerticalOverlap", js.Any.fromFunction1(value))
+      inline def setHasVerticalOverlap(value: Region => Boolean): Self = StObject.set(x, "hasVerticalOverlap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntersectionTolerance(value: Double): Self = StObject.set(x, "intersectionTolerance", value.asInstanceOf[js.Any])
+      inline def setIntersectionTolerance(value: Double): Self = StObject.set(x, "intersectionTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntersectsRegion(value: Region => Boolean): Self = StObject.set(x, "intersectsRegion", js.Any.fromFunction1(value))
+      inline def setIntersectsRegion(value: Region => Boolean): Self = StObject.set(x, "intersectsRegion", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
+      inline def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOuter(value: HTMLElement): Self = StObject.set(x, "outer", value.asInstanceOf[js.Any])
+      inline def setOuter(value: HTMLElement): Self = StObject.set(x, "outer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetInnerDimensions(value: Dimensions => Unit): Self = StObject.set(x, "setInnerDimensions", js.Any.fromFunction1(value))
+      inline def setSetInnerDimensions(value: Dimensions => Unit): Self = StObject.set(x, "setInnerDimensions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

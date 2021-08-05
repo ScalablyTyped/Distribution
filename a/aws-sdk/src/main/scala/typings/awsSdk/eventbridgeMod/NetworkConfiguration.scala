@@ -13,19 +13,15 @@ trait NetworkConfiguration extends StObject {
 }
 object NetworkConfiguration {
   
-  @scala.inline
-  def apply(): NetworkConfiguration = {
+  inline def apply(): NetworkConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkConfiguration]
   }
   
-  @scala.inline
-  implicit class NetworkConfigurationMutableBuilder[Self <: NetworkConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkConfiguration](x: Self) {
     
-    @scala.inline
-    def setAwsvpcConfiguration(value: AwsVpcConfiguration): Self = StObject.set(x, "awsvpcConfiguration", value.asInstanceOf[js.Any])
+    inline def setAwsvpcConfiguration(value: AwsVpcConfiguration): Self = StObject.set(x, "awsvpcConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsvpcConfigurationUndefined: Self = StObject.set(x, "awsvpcConfiguration", js.undefined)
+    inline def setAwsvpcConfigurationUndefined: Self = StObject.set(x, "awsvpcConfiguration", js.undefined)
   }
 }

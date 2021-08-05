@@ -21,49 +21,35 @@ trait VCardOptions extends StObject {
 }
 object VCardOptions {
   
-  @scala.inline
-  def apply(): VCardOptions = {
+  inline def apply(): VCardOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VCardOptions]
   }
   
-  @scala.inline
-  implicit class VCardOptionsMutableBuilder[Self <: VCardOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VCardOptions](x: Self) {
     
-    @scala.inline
-    def setAddressBook(value: AddressBook): Self = StObject.set(x, "addressBook", value.asInstanceOf[js.Any])
+    inline def setAddressBook(value: AddressBook): Self = StObject.set(x, "addressBook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressBookUndefined: Self = StObject.set(x, "addressBook", js.undefined)
+    inline def setAddressBookUndefined: Self = StObject.set(x, "addressBook", js.undefined)
     
-    @scala.inline
-    def setAddressData(value: String): Self = StObject.set(x, "addressData", value.asInstanceOf[js.Any])
+    inline def setAddressData(value: String): Self = StObject.set(x, "addressData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressDataUndefined: Self = StObject.set(x, "addressData", js.undefined)
+    inline def setAddressDataUndefined: Self = StObject.set(x, "addressData", js.undefined)
     
-    @scala.inline
-    def setConstructor(value: /* options */ js.UndefOr[VCardOptions] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    inline def setConstructor(value: /* options */ js.UndefOr[VCardOptions] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
+    inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

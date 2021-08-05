@@ -113,26 +113,20 @@ object UrbanAirshipPlugin {
   }
   object QuietTimeTimeSpan {
     
-    @scala.inline
-    def apply(endHour: Double, endMinute: Double, startHour: Double, startMinute: Double): QuietTimeTimeSpan = {
+    inline def apply(endHour: Double, endMinute: Double, startHour: Double, startMinute: Double): QuietTimeTimeSpan = {
       val __obj = js.Dynamic.literal(endHour = endHour.asInstanceOf[js.Any], endMinute = endMinute.asInstanceOf[js.Any], startHour = startHour.asInstanceOf[js.Any], startMinute = startMinute.asInstanceOf[js.Any])
       __obj.asInstanceOf[QuietTimeTimeSpan]
     }
     
-    @scala.inline
-    implicit class QuietTimeTimeSpanMutableBuilder[Self <: QuietTimeTimeSpan] (val x: Self) extends AnyVal {
+    extension [Self <: QuietTimeTimeSpan](x: Self) {
       
-      @scala.inline
-      def setEndHour(value: Double): Self = StObject.set(x, "endHour", value.asInstanceOf[js.Any])
+      inline def setEndHour(value: Double): Self = StObject.set(x, "endHour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndMinute(value: Double): Self = StObject.set(x, "endMinute", value.asInstanceOf[js.Any])
+      inline def setEndMinute(value: Double): Self = StObject.set(x, "endMinute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartHour(value: Double): Self = StObject.set(x, "startHour", value.asInstanceOf[js.Any])
+      inline def setStartHour(value: Double): Self = StObject.set(x, "startHour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartMinute(value: Double): Self = StObject.set(x, "startMinute", value.asInstanceOf[js.Any])
+      inline def setStartMinute(value: Double): Self = StObject.set(x, "startMinute", value.asInstanceOf[js.Any])
     }
   }
   
@@ -167,20 +161,16 @@ object UrbanAirshipPlugin {
   }
   object RunActionResult {
     
-    @scala.inline
-    def apply(error: String, value: js.Any): RunActionResult = {
+    inline def apply(error: String, value: js.Any): RunActionResult = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[RunActionResult]
     }
     
-    @scala.inline
-    implicit class RunActionResultMutableBuilder[Self <: RunActionResult] (val x: Self) extends AnyVal {
+    extension [Self <: RunActionResult](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -522,8 +512,7 @@ object UrbanAirshipPlugin {
   }
   object UrbanAirshipStatic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clearNotifications: js.Function0[Unit] => Unit,
       editChannelTagGroups: () => EditChannelTagGroupsApi,
       editNamedUserTagGroups: () => EditNamedUserTagGroupsApi,
@@ -565,116 +554,79 @@ object UrbanAirshipPlugin {
       __obj.asInstanceOf[UrbanAirshipStatic]
     }
     
-    @scala.inline
-    implicit class UrbanAirshipStaticMutableBuilder[Self <: UrbanAirshipStatic] (val x: Self) extends AnyVal {
+    extension [Self <: UrbanAirshipStatic](x: Self) {
       
-      @scala.inline
-      def setClearNotifications(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "clearNotifications", js.Any.fromFunction1(value))
+      inline def setClearNotifications(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "clearNotifications", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEditChannelTagGroups(value: () => EditChannelTagGroupsApi): Self = StObject.set(x, "editChannelTagGroups", js.Any.fromFunction0(value))
+      inline def setEditChannelTagGroups(value: () => EditChannelTagGroupsApi): Self = StObject.set(x, "editChannelTagGroups", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEditNamedUserTagGroups(value: () => EditNamedUserTagGroupsApi): Self = StObject.set(x, "editNamedUserTagGroups", js.Any.fromFunction0(value))
+      inline def setEditNamedUserTagGroups(value: () => EditNamedUserTagGroupsApi): Self = StObject.set(x, "editNamedUserTagGroups", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAlias(value: js.Function1[/* alias */ String, Unit] => Unit): Self = StObject.set(x, "getAlias", js.Any.fromFunction1(value))
+      inline def setGetAlias(value: js.Function1[/* alias */ String, Unit] => Unit): Self = StObject.set(x, "getAlias", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBadgeNumber(value: js.Function1[/* badgeNumber */ Double, Unit] => Unit): Self = StObject.set(x, "getBadgeNumber", js.Any.fromFunction1(value))
+      inline def setGetBadgeNumber(value: js.Function1[/* badgeNumber */ Double, Unit] => Unit): Self = StObject.set(x, "getBadgeNumber", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetChannelID(value: js.Function1[/* id */ String, Unit] => Unit): Self = StObject.set(x, "getChannelID", js.Any.fromFunction1(value))
+      inline def setGetChannelID(value: js.Function1[/* id */ String, Unit] => Unit): Self = StObject.set(x, "getChannelID", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLaunchNotification(value: (Boolean, js.Function1[/* push */ PushEvent, Unit]) => Unit): Self = StObject.set(x, "getLaunchNotification", js.Any.fromFunction2(value))
+      inline def setGetLaunchNotification(value: (Boolean, js.Function1[/* push */ PushEvent, Unit]) => Unit): Self = StObject.set(x, "getLaunchNotification", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetNamedUser(value: js.Function1[/* namedUserId */ String, Unit] => Unit): Self = StObject.set(x, "getNamedUser", js.Any.fromFunction1(value))
+      inline def setGetNamedUser(value: js.Function1[/* namedUserId */ String, Unit] => Unit): Self = StObject.set(x, "getNamedUser", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetQuietTime(value: js.Function1[/* quietTime */ QuietTimeTimeSpan, Unit] => Unit): Self = StObject.set(x, "getQuietTime", js.Any.fromFunction1(value))
+      inline def setGetQuietTime(value: js.Function1[/* quietTime */ QuietTimeTimeSpan, Unit] => Unit): Self = StObject.set(x, "getQuietTime", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTags(value: js.Function1[/* tags */ js.Array[String], Unit] => Unit): Self = StObject.set(x, "getTags", js.Any.fromFunction1(value))
+      inline def setGetTags(value: js.Function1[/* tags */ js.Array[String], Unit] => Unit): Self = StObject.set(x, "getTags", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsAnalyticsEnabled(value: js.Function1[/* enabled */ Boolean, Unit] => Unit): Self = StObject.set(x, "isAnalyticsEnabled", js.Any.fromFunction1(value))
+      inline def setIsAnalyticsEnabled(value: js.Function1[/* enabled */ Boolean, Unit] => Unit): Self = StObject.set(x, "isAnalyticsEnabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsBackgroundLocationEnabled(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "isBackgroundLocationEnabled", js.Any.fromFunction1(value))
+      inline def setIsBackgroundLocationEnabled(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "isBackgroundLocationEnabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsInQuietTime(value: js.Function1[/* inQuietTime */ Boolean, Unit] => Unit): Self = StObject.set(x, "isInQuietTime", js.Any.fromFunction1(value))
+      inline def setIsInQuietTime(value: js.Function1[/* inQuietTime */ Boolean, Unit] => Unit): Self = StObject.set(x, "isInQuietTime", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsLocationEnabled(value: js.Function1[/* enabled */ Boolean, Unit] => Unit): Self = StObject.set(x, "isLocationEnabled", js.Any.fromFunction1(value))
+      inline def setIsLocationEnabled(value: js.Function1[/* enabled */ Boolean, Unit] => Unit): Self = StObject.set(x, "isLocationEnabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsQuietTimeEnabled(value: js.Function1[/* enabled */ Boolean, Unit] => Unit): Self = StObject.set(x, "isQuietTimeEnabled", js.Any.fromFunction1(value))
+      inline def setIsQuietTimeEnabled(value: js.Function1[/* enabled */ Boolean, Unit] => Unit): Self = StObject.set(x, "isQuietTimeEnabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsSoundEnabled(value: js.Function1[/* enabled */ Boolean, Unit] => Unit): Self = StObject.set(x, "isSoundEnabled", js.Any.fromFunction1(value))
+      inline def setIsSoundEnabled(value: js.Function1[/* enabled */ Boolean, Unit] => Unit): Self = StObject.set(x, "isSoundEnabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsUserNotificationsEnabled(value: js.Function1[/* enabled */ Boolean, Unit] => Unit): Self = StObject.set(x, "isUserNotificationsEnabled", js.Any.fromFunction1(value))
+      inline def setIsUserNotificationsEnabled(value: js.Function1[/* enabled */ Boolean, Unit] => Unit): Self = StObject.set(x, "isUserNotificationsEnabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsVibrateEnabled(value: js.Function1[/* enabled */ Boolean, Unit] => Unit): Self = StObject.set(x, "isVibrateEnabled", js.Any.fromFunction1(value))
+      inline def setIsVibrateEnabled(value: js.Function1[/* enabled */ Boolean, Unit] => Unit): Self = StObject.set(x, "isVibrateEnabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotificationType(value: Alert): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
+      inline def setNotificationType(value: Alert): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordCurrentLocation(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "recordCurrentLocation", js.Any.fromFunction1(value))
+      inline def setRecordCurrentLocation(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "recordCurrentLocation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResetBadge(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "resetBadge", js.Any.fromFunction1(value))
+      inline def setResetBadge(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "resetBadge", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRunAction(value: (String, String, js.Function1[/* result */ RunActionResult, Unit]) => Unit): Self = StObject.set(x, "runAction", js.Any.fromFunction3(value))
+      inline def setRunAction(value: (String, String, js.Function1[/* result */ RunActionResult, Unit]) => Unit): Self = StObject.set(x, "runAction", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetAlias(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setAlias", js.Any.fromFunction2(value))
+      inline def setSetAlias(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setAlias", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetAnalyticsEnabled(value: (Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setAnalyticsEnabled", js.Any.fromFunction2(value))
+      inline def setSetAnalyticsEnabled(value: (Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setAnalyticsEnabled", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetAutobadgeEnabled(value: (Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setAutobadgeEnabled", js.Any.fromFunction2(value))
+      inline def setSetAutobadgeEnabled(value: (Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setAutobadgeEnabled", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetBackgroundLocationEnabled(value: (Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setBackgroundLocationEnabled", js.Any.fromFunction2(value))
+      inline def setSetBackgroundLocationEnabled(value: (Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setBackgroundLocationEnabled", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetBadgeNumber(value: (Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setBadgeNumber", js.Any.fromFunction2(value))
+      inline def setSetBadgeNumber(value: (Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setBadgeNumber", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetLocationEnabled(value: (Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setLocationEnabled", js.Any.fromFunction2(value))
+      inline def setSetLocationEnabled(value: (Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setLocationEnabled", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetNamedUser(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setNamedUser", js.Any.fromFunction2(value))
+      inline def setSetNamedUser(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setNamedUser", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetNotificationTypes(value: (Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setNotificationTypes", js.Any.fromFunction2(value))
+      inline def setSetNotificationTypes(value: (Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setNotificationTypes", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetQuietTime(value: (Double, Double, Double, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setQuietTime", js.Any.fromFunction5(value))
+      inline def setSetQuietTime(value: (Double, Double, Double, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setQuietTime", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setSetQuietTimeEnabled(value: (Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setQuietTimeEnabled", js.Any.fromFunction2(value))
+      inline def setSetQuietTimeEnabled(value: (Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setQuietTimeEnabled", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetSoundEnabled(value: (Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setSoundEnabled", js.Any.fromFunction2(value))
+      inline def setSetSoundEnabled(value: (Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setSoundEnabled", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetTags(value: (js.Array[String], js.Function0[Unit]) => Unit): Self = StObject.set(x, "setTags", js.Any.fromFunction2(value))
+      inline def setSetTags(value: (js.Array[String], js.Function0[Unit]) => Unit): Self = StObject.set(x, "setTags", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetUserNotificationsEnabled(value: (Boolean, js.Function1[/* status */ String, Unit]) => Unit): Self = StObject.set(x, "setUserNotificationsEnabled", js.Any.fromFunction2(value))
+      inline def setSetUserNotificationsEnabled(value: (Boolean, js.Function1[/* status */ String, Unit]) => Unit): Self = StObject.set(x, "setUserNotificationsEnabled", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetVibrateEnabled(value: (Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setVibrateEnabled", js.Any.fromFunction2(value))
+      inline def setSetVibrateEnabled(value: (Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setVibrateEnabled", js.Any.fromFunction2(value))
     }
   }
 }

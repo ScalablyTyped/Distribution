@@ -19,26 +19,22 @@ trait ShadeMode extends StObject
 object ShadeMode {
   
   /** DRAFT is a special mode which uses a BSP tree and triangle subdivision for displaying. */
-  @scala.inline
-  def DRAFT: `3` = 3.asInstanceOf[`3`]
+  inline def DRAFT: `3` = 3.asInstanceOf[`3`]
   
   /**
     * forces one normal per flat part.
     *
     * With FLAT shading, the faces of the object are rendered in a solid color.
     */
-  @scala.inline
-  def FLAT: `0` = 0.asInstanceOf[`0`]
+  inline def FLAT: `0` = 0.asInstanceOf[`0`]
   
   /** With PHONG shading, the normal itself is interpolated to get more realistic colors and light reflections. */
-  @scala.inline
-  def PHONG: `1` = 1.asInstanceOf[`1`]
+  inline def PHONG: `1` = 1.asInstanceOf[`1`]
   
   /**
     * the point is smooth, the first derivation from the curve discussion view.
     *
     * With SMOOTH shading, the colors of the lit vertices is interpolated.
     */
-  @scala.inline
-  def SMOOTH: `2` = 2.asInstanceOf[`2`]
+  inline def SMOOTH: `2` = 2.asInstanceOf[`2`]
 }

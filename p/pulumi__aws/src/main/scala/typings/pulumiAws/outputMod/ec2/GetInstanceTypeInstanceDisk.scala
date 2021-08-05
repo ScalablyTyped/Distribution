@@ -14,23 +14,18 @@ trait GetInstanceTypeInstanceDisk extends StObject {
 }
 object GetInstanceTypeInstanceDisk {
   
-  @scala.inline
-  def apply(count: Double, size: Double, `type`: String): GetInstanceTypeInstanceDisk = {
+  inline def apply(count: Double, size: Double, `type`: String): GetInstanceTypeInstanceDisk = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInstanceTypeInstanceDisk]
   }
   
-  @scala.inline
-  implicit class GetInstanceTypeInstanceDiskMutableBuilder[Self <: GetInstanceTypeInstanceDisk] (val x: Self) extends AnyVal {
+  extension [Self <: GetInstanceTypeInstanceDisk](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

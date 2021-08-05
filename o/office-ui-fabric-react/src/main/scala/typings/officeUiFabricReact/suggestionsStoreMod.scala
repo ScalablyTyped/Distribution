@@ -12,13 +12,13 @@ object suggestionsStoreMod {
   class SuggestionsStore[T] () extends StObject {
     def this(options: SuggestionsStoreOptions[T]) = this()
     
-    var _ensureSuggestionModel: js.Any = js.native
+    /* private */ var _ensureSuggestionModel: js.Any = js.native
     
-    var _isSuggestionModel: js.Any = js.native
+    /* private */ var _isSuggestionModel: js.Any = js.native
     
     def convertSuggestionsToSuggestionItems(suggestions: js.Array[ISuggestionModel[T] | T]): js.Array[ISuggestionModel[T]] = js.native
     
-    var getAriaLabel: js.Any = js.native
+    /* private */ var getAriaLabel: js.Any = js.native
     
     def getSuggestionAtIndex(index: Double): ISuggestionModel[T] = js.native
     
@@ -37,20 +37,16 @@ object suggestionsStoreMod {
   }
   object SuggestionsStoreOptions {
     
-    @scala.inline
-    def apply[T](): SuggestionsStoreOptions[T] = {
+    inline def apply[T](): SuggestionsStoreOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SuggestionsStoreOptions[T]]
     }
     
-    @scala.inline
-    implicit class SuggestionsStoreOptionsMutableBuilder[Self <: SuggestionsStoreOptions[?], T] (val x: Self & SuggestionsStoreOptions[T]) extends AnyVal {
+    extension [Self <: SuggestionsStoreOptions[?], T](x: Self & SuggestionsStoreOptions[T]) {
       
-      @scala.inline
-      def setGetAriaLabel(value: /* item */ T => String): Self = StObject.set(x, "getAriaLabel", js.Any.fromFunction1(value))
+      inline def setGetAriaLabel(value: /* item */ T => String): Self = StObject.set(x, "getAriaLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAriaLabelUndefined: Self = StObject.set(x, "getAriaLabel", js.undefined)
+      inline def setGetAriaLabelUndefined: Self = StObject.set(x, "getAriaLabel", js.undefined)
     }
   }
 }

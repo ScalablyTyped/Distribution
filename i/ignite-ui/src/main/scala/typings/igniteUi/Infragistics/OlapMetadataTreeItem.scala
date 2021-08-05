@@ -64,26 +64,20 @@ trait OlapMetadataTreeItem extends StObject {
 }
 object OlapMetadataTreeItem {
   
-  @scala.inline
-  def apply(caption: () => String, children: () => js.Object, item: () => js.Object, `type`: () => Double): OlapMetadataTreeItem = {
+  inline def apply(caption: () => String, children: () => js.Object, item: () => js.Object, `type`: () => Double): OlapMetadataTreeItem = {
     val __obj = js.Dynamic.literal(caption = js.Any.fromFunction0(caption), children = js.Any.fromFunction0(children), item = js.Any.fromFunction0(item))
     __obj.updateDynamic("type")(js.Any.fromFunction0(`type`))
     __obj.asInstanceOf[OlapMetadataTreeItem]
   }
   
-  @scala.inline
-  implicit class OlapMetadataTreeItemMutableBuilder[Self <: OlapMetadataTreeItem] (val x: Self) extends AnyVal {
+  extension [Self <: OlapMetadataTreeItem](x: Self) {
     
-    @scala.inline
-    def setCaption(value: () => String): Self = StObject.set(x, "caption", js.Any.fromFunction0(value))
+    inline def setCaption(value: () => String): Self = StObject.set(x, "caption", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChildren(value: () => js.Object): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
+    inline def setChildren(value: () => js.Object): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItem(value: () => js.Object): Self = StObject.set(x, "item", js.Any.fromFunction0(value))
+    inline def setItem(value: () => js.Object): Self = StObject.set(x, "item", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: () => Double): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+    inline def setType(value: () => Double): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
   }
 }

@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait channel extends StObject
 object channel {
   
-  @scala.inline
-  def customscheme: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.customscheme = "customscheme".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.customscheme]
+  inline def customscheme: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.customscheme = "customscheme".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.customscheme]
   
-  @scala.inline
-  def exit: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.exit = "exit".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.exit]
+  inline def exit: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.exit = "exit".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.exit]
   
-  @scala.inline
-  def loaderror: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loaderror = "loaderror".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loaderror]
+  inline def loaderror: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loaderror = "loaderror".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loaderror]
   
-  @scala.inline
-  def loadstart: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loadstart = "loadstart".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loadstart]
+  inline def loadstart: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loadstart = "loadstart".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loadstart]
   
-  @scala.inline
-  def loadstop: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loadstop = "loadstop".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loadstop]
+  inline def loadstop: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loadstop = "loadstop".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.loadstop]
   
-  @scala.inline
-  def message: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.message = "message".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.message]
+  inline def message: typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.message = "message".asInstanceOf[typings.cordovaPluginInappbrowser.cordovaPluginInappbrowserStrings.message]
 }

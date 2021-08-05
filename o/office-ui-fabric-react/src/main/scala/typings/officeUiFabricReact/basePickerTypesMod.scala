@@ -297,44 +297,32 @@ object basePickerTypesMod {
   }
   object IBasePickerStyleProps {
     
-    @scala.inline
-    def apply(): IBasePickerStyleProps = {
+    inline def apply(): IBasePickerStyleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBasePickerStyleProps]
     }
     
-    @scala.inline
-    implicit class IBasePickerStylePropsMutableBuilder[Self <: IBasePickerStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IBasePickerStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setInputClassName(value: String): Self = StObject.set(x, "inputClassName", value.asInstanceOf[js.Any])
+      inline def setInputClassName(value: String): Self = StObject.set(x, "inputClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputClassNameUndefined: Self = StObject.set(x, "inputClassName", js.undefined)
+      inline def setInputClassNameUndefined: Self = StObject.set(x, "inputClassName", js.undefined)
       
-      @scala.inline
-      def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
+      inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
+      inline def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -360,59 +348,42 @@ object basePickerTypesMod {
   }
   object IBasePickerStyles {
     
-    @scala.inline
-    def apply(): IBasePickerStyles = {
+    inline def apply(): IBasePickerStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBasePickerStyles]
     }
     
-    @scala.inline
-    implicit class IBasePickerStylesMutableBuilder[Self <: IBasePickerStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IBasePickerStyles](x: Self) {
       
-      @scala.inline
-      def setInput(value: IStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: IStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputNull: Self = StObject.set(x, "input", null)
+      inline def setInputNull: Self = StObject.set(x, "input", null)
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setItemsWrapper(value: IStyle): Self = StObject.set(x, "itemsWrapper", value.asInstanceOf[js.Any])
+      inline def setItemsWrapper(value: IStyle): Self = StObject.set(x, "itemsWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsWrapperNull: Self = StObject.set(x, "itemsWrapper", null)
+      inline def setItemsWrapperNull: Self = StObject.set(x, "itemsWrapper", null)
       
-      @scala.inline
-      def setItemsWrapperUndefined: Self = StObject.set(x, "itemsWrapper", js.undefined)
+      inline def setItemsWrapperUndefined: Self = StObject.set(x, "itemsWrapper", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setScreenReaderText(value: IStyle): Self = StObject.set(x, "screenReaderText", value.asInstanceOf[js.Any])
+      inline def setScreenReaderText(value: IStyle): Self = StObject.set(x, "screenReaderText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenReaderTextNull: Self = StObject.set(x, "screenReaderText", null)
+      inline def setScreenReaderTextNull: Self = StObject.set(x, "screenReaderText", null)
       
-      @scala.inline
-      def setScreenReaderTextUndefined: Self = StObject.set(x, "screenReaderText", js.undefined)
+      inline def setScreenReaderTextUndefined: Self = StObject.set(x, "screenReaderText", js.undefined)
       
-      @scala.inline
-      def setText(value: IStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: IStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextNull: Self = StObject.set(x, "text", null)
+      inline def setTextNull: Self = StObject.set(x, "text", null)
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -457,124 +428,86 @@ object basePickerTypesMod {
   }
   object IBasePickerSuggestionsProps {
     
-    @scala.inline
-    def apply[T](): IBasePickerSuggestionsProps[T] = {
+    inline def apply[T](): IBasePickerSuggestionsProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBasePickerSuggestionsProps[T]]
     }
     
-    @scala.inline
-    implicit class IBasePickerSuggestionsPropsMutableBuilder[Self <: IBasePickerSuggestionsProps[?], T] (val x: Self & IBasePickerSuggestionsProps[T]) extends AnyVal {
+    extension [Self <: IBasePickerSuggestionsProps[?], T](x: Self & IBasePickerSuggestionsProps[T]) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setForceResolveText(value: String): Self = StObject.set(x, "forceResolveText", value.asInstanceOf[js.Any])
+      inline def setForceResolveText(value: String): Self = StObject.set(x, "forceResolveText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceResolveTextUndefined: Self = StObject.set(x, "forceResolveText", js.undefined)
+      inline def setForceResolveTextUndefined: Self = StObject.set(x, "forceResolveText", js.undefined)
       
-      @scala.inline
-      def setLoadingText(value: String): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
+      inline def setLoadingText(value: String): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingTextUndefined: Self = StObject.set(x, "loadingText", js.undefined)
+      inline def setLoadingTextUndefined: Self = StObject.set(x, "loadingText", js.undefined)
       
-      @scala.inline
-      def setMostRecentlyUsedHeaderText(value: String): Self = StObject.set(x, "mostRecentlyUsedHeaderText", value.asInstanceOf[js.Any])
+      inline def setMostRecentlyUsedHeaderText(value: String): Self = StObject.set(x, "mostRecentlyUsedHeaderText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostRecentlyUsedHeaderTextUndefined: Self = StObject.set(x, "mostRecentlyUsedHeaderText", js.undefined)
+      inline def setMostRecentlyUsedHeaderTextUndefined: Self = StObject.set(x, "mostRecentlyUsedHeaderText", js.undefined)
       
-      @scala.inline
-      def setNoResultsFoundText(value: String): Self = StObject.set(x, "noResultsFoundText", value.asInstanceOf[js.Any])
+      inline def setNoResultsFoundText(value: String): Self = StObject.set(x, "noResultsFoundText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoResultsFoundTextUndefined: Self = StObject.set(x, "noResultsFoundText", js.undefined)
+      inline def setNoResultsFoundTextUndefined: Self = StObject.set(x, "noResultsFoundText", js.undefined)
       
-      @scala.inline
-      def setOnRenderNoResultFound(
+      inline def setOnRenderNoResultFound(
         value: (/* props */ js.UndefOr[Unit], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[Unit], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderNoResultFound", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderNoResultFoundUndefined: Self = StObject.set(x, "onRenderNoResultFound", js.undefined)
+      inline def setOnRenderNoResultFoundUndefined: Self = StObject.set(x, "onRenderNoResultFound", js.undefined)
       
-      @scala.inline
-      def setResultsFooter(value: /* props */ ISuggestionsProps[T] => Element): Self = StObject.set(x, "resultsFooter", js.Any.fromFunction1(value))
+      inline def setResultsFooter(value: /* props */ ISuggestionsProps[T] => Element): Self = StObject.set(x, "resultsFooter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResultsFooterFull(value: /* props */ ISuggestionsProps[T] => Element): Self = StObject.set(x, "resultsFooterFull", js.Any.fromFunction1(value))
+      inline def setResultsFooterFull(value: /* props */ ISuggestionsProps[T] => Element): Self = StObject.set(x, "resultsFooterFull", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResultsFooterFullUndefined: Self = StObject.set(x, "resultsFooterFull", js.undefined)
+      inline def setResultsFooterFullUndefined: Self = StObject.set(x, "resultsFooterFull", js.undefined)
       
-      @scala.inline
-      def setResultsFooterUndefined: Self = StObject.set(x, "resultsFooter", js.undefined)
+      inline def setResultsFooterUndefined: Self = StObject.set(x, "resultsFooter", js.undefined)
       
-      @scala.inline
-      def setResultsMaximumNumber(value: Double): Self = StObject.set(x, "resultsMaximumNumber", value.asInstanceOf[js.Any])
+      inline def setResultsMaximumNumber(value: Double): Self = StObject.set(x, "resultsMaximumNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsMaximumNumberUndefined: Self = StObject.set(x, "resultsMaximumNumber", js.undefined)
+      inline def setResultsMaximumNumberUndefined: Self = StObject.set(x, "resultsMaximumNumber", js.undefined)
       
-      @scala.inline
-      def setSearchForMoreText(value: String): Self = StObject.set(x, "searchForMoreText", value.asInstanceOf[js.Any])
+      inline def setSearchForMoreText(value: String): Self = StObject.set(x, "searchForMoreText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchForMoreTextUndefined: Self = StObject.set(x, "searchForMoreText", js.undefined)
+      inline def setSearchForMoreTextUndefined: Self = StObject.set(x, "searchForMoreText", js.undefined)
       
-      @scala.inline
-      def setSearchingText(value: String): Self = StObject.set(x, "searchingText", value.asInstanceOf[js.Any])
+      inline def setSearchingText(value: String): Self = StObject.set(x, "searchingText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchingTextUndefined: Self = StObject.set(x, "searchingText", js.undefined)
+      inline def setSearchingTextUndefined: Self = StObject.set(x, "searchingText", js.undefined)
       
-      @scala.inline
-      def setShowForceResolve(value: () => Boolean): Self = StObject.set(x, "showForceResolve", js.Any.fromFunction0(value))
+      inline def setShowForceResolve(value: () => Boolean): Self = StObject.set(x, "showForceResolve", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowForceResolveUndefined: Self = StObject.set(x, "showForceResolve", js.undefined)
+      inline def setShowForceResolveUndefined: Self = StObject.set(x, "showForceResolve", js.undefined)
       
-      @scala.inline
-      def setShowRemoveButtons(value: Boolean): Self = StObject.set(x, "showRemoveButtons", value.asInstanceOf[js.Any])
+      inline def setShowRemoveButtons(value: Boolean): Self = StObject.set(x, "showRemoveButtons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowRemoveButtonsUndefined: Self = StObject.set(x, "showRemoveButtons", js.undefined)
+      inline def setShowRemoveButtonsUndefined: Self = StObject.set(x, "showRemoveButtons", js.undefined)
       
-      @scala.inline
-      def setSuggestionsAvailableAlertText(value: String): Self = StObject.set(x, "suggestionsAvailableAlertText", value.asInstanceOf[js.Any])
+      inline def setSuggestionsAvailableAlertText(value: String): Self = StObject.set(x, "suggestionsAvailableAlertText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsAvailableAlertTextUndefined: Self = StObject.set(x, "suggestionsAvailableAlertText", js.undefined)
+      inline def setSuggestionsAvailableAlertTextUndefined: Self = StObject.set(x, "suggestionsAvailableAlertText", js.undefined)
       
-      @scala.inline
-      def setSuggestionsClassName(value: String): Self = StObject.set(x, "suggestionsClassName", value.asInstanceOf[js.Any])
+      inline def setSuggestionsClassName(value: String): Self = StObject.set(x, "suggestionsClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsClassNameUndefined: Self = StObject.set(x, "suggestionsClassName", js.undefined)
+      inline def setSuggestionsClassNameUndefined: Self = StObject.set(x, "suggestionsClassName", js.undefined)
       
-      @scala.inline
-      def setSuggestionsContainerAriaLabel(value: String): Self = StObject.set(x, "suggestionsContainerAriaLabel", value.asInstanceOf[js.Any])
+      inline def setSuggestionsContainerAriaLabel(value: String): Self = StObject.set(x, "suggestionsContainerAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsContainerAriaLabelUndefined: Self = StObject.set(x, "suggestionsContainerAriaLabel", js.undefined)
+      inline def setSuggestionsContainerAriaLabelUndefined: Self = StObject.set(x, "suggestionsContainerAriaLabel", js.undefined)
       
-      @scala.inline
-      def setSuggestionsHeaderText(value: String): Self = StObject.set(x, "suggestionsHeaderText", value.asInstanceOf[js.Any])
+      inline def setSuggestionsHeaderText(value: String): Self = StObject.set(x, "suggestionsHeaderText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsHeaderTextUndefined: Self = StObject.set(x, "suggestionsHeaderText", js.undefined)
+      inline def setSuggestionsHeaderTextUndefined: Self = StObject.set(x, "suggestionsHeaderText", js.undefined)
       
-      @scala.inline
-      def setSuggestionsItemClassName(value: String): Self = StObject.set(x, "suggestionsItemClassName", value.asInstanceOf[js.Any])
+      inline def setSuggestionsItemClassName(value: String): Self = StObject.set(x, "suggestionsItemClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsItemClassNameUndefined: Self = StObject.set(x, "suggestionsItemClassName", js.undefined)
+      inline def setSuggestionsItemClassNameUndefined: Self = StObject.set(x, "suggestionsItemClassName", js.undefined)
     }
   }
   
@@ -591,20 +524,16 @@ object basePickerTypesMod {
   }
   object IInputProps {
     
-    @scala.inline
-    def apply(): IInputProps = {
+    inline def apply(): IInputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IInputProps]
     }
     
-    @scala.inline
-    implicit class IInputPropsMutableBuilder[Self <: IInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: IInputProps](x: Self) {
       
-      @scala.inline
-      def setDefaultVisibleValue(value: String): Self = StObject.set(x, "defaultVisibleValue", value.asInstanceOf[js.Any])
+      inline def setDefaultVisibleValue(value: String): Self = StObject.set(x, "defaultVisibleValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultVisibleValueUndefined: Self = StObject.set(x, "defaultVisibleValue", js.undefined)
+      inline def setDefaultVisibleValueUndefined: Self = StObject.set(x, "defaultVisibleValue", js.undefined)
     }
   }
 }

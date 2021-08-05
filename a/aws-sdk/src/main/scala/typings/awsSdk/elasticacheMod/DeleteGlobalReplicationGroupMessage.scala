@@ -18,19 +18,15 @@ trait DeleteGlobalReplicationGroupMessage extends StObject {
 }
 object DeleteGlobalReplicationGroupMessage {
   
-  @scala.inline
-  def apply(GlobalReplicationGroupId: String, RetainPrimaryReplicationGroup: Boolean): DeleteGlobalReplicationGroupMessage = {
+  inline def apply(GlobalReplicationGroupId: String, RetainPrimaryReplicationGroup: Boolean): DeleteGlobalReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(GlobalReplicationGroupId = GlobalReplicationGroupId.asInstanceOf[js.Any], RetainPrimaryReplicationGroup = RetainPrimaryReplicationGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGlobalReplicationGroupMessage]
   }
   
-  @scala.inline
-  implicit class DeleteGlobalReplicationGroupMessageMutableBuilder[Self <: DeleteGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGlobalReplicationGroupMessage](x: Self) {
     
-    @scala.inline
-    def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainPrimaryReplicationGroup(value: Boolean): Self = StObject.set(x, "RetainPrimaryReplicationGroup", value.asInstanceOf[js.Any])
+    inline def setRetainPrimaryReplicationGroup(value: Boolean): Self = StObject.set(x, "RetainPrimaryReplicationGroup", value.asInstanceOf[js.Any])
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PropertyInheritsProperty extends StObject
 object PropertyInheritsProperty {
   
-  @scala.inline
-  def `false`: typings.csstype.csstypeStrings.`false` = "false".asInstanceOf[typings.csstype.csstypeStrings.`false`]
+  inline def `false`: typings.csstype.csstypeStrings.`false` = "false".asInstanceOf[typings.csstype.csstypeStrings.`false`]
   
-  @scala.inline
-  def `true`: typings.csstype.csstypeStrings.`true` = "true".asInstanceOf[typings.csstype.csstypeStrings.`true`]
+  inline def `true`: typings.csstype.csstypeStrings.`true` = "true".asInstanceOf[typings.csstype.csstypeStrings.`true`]
 }

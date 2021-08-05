@@ -13,19 +13,15 @@ trait DeleteAccountAuditConfigurationRequest extends StObject {
 }
 object DeleteAccountAuditConfigurationRequest {
   
-  @scala.inline
-  def apply(): DeleteAccountAuditConfigurationRequest = {
+  inline def apply(): DeleteAccountAuditConfigurationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteAccountAuditConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAccountAuditConfigurationRequestMutableBuilder[Self <: DeleteAccountAuditConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAccountAuditConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setDeleteScheduledAudits(value: DeleteScheduledAudits): Self = StObject.set(x, "deleteScheduledAudits", value.asInstanceOf[js.Any])
+    inline def setDeleteScheduledAudits(value: DeleteScheduledAudits): Self = StObject.set(x, "deleteScheduledAudits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteScheduledAuditsUndefined: Self = StObject.set(x, "deleteScheduledAudits", js.undefined)
+    inline def setDeleteScheduledAuditsUndefined: Self = StObject.set(x, "deleteScheduledAudits", js.undefined)
   }
 }

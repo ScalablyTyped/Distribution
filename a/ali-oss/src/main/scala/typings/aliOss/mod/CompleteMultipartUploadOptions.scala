@@ -14,31 +14,23 @@ trait CompleteMultipartUploadOptions extends StObject {
 }
 object CompleteMultipartUploadOptions {
   
-  @scala.inline
-  def apply(): CompleteMultipartUploadOptions = {
+  inline def apply(): CompleteMultipartUploadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompleteMultipartUploadOptions]
   }
   
-  @scala.inline
-  implicit class CompleteMultipartUploadOptionsMutableBuilder[Self <: CompleteMultipartUploadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CompleteMultipartUploadOptions](x: Self) {
     
-    @scala.inline
-    def setCallback(value: ObjectCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: ObjectCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

@@ -26,59 +26,42 @@ trait R3InjectableMetadataFacade extends StObject {
 }
 object R3InjectableMetadataFacade {
   
-  @scala.inline
-  def apply(name: String, providedIn: js.Any, `type`: js.Any, typeArgumentCount: Double): R3InjectableMetadataFacade = {
+  inline def apply(name: String, providedIn: js.Any, `type`: js.Any, typeArgumentCount: Double): R3InjectableMetadataFacade = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], providedIn = providedIn.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3InjectableMetadataFacade]
   }
   
-  @scala.inline
-  implicit class R3InjectableMetadataFacadeMutableBuilder[Self <: R3InjectableMetadataFacade] (val x: Self) extends AnyVal {
+  extension [Self <: R3InjectableMetadataFacade](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidedIn(value: js.Any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
+    inline def setProvidedIn(value: js.Any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeArgumentCount(value: Double): Self = StObject.set(x, "typeArgumentCount", value.asInstanceOf[js.Any])
+    inline def setTypeArgumentCount(value: Double): Self = StObject.set(x, "typeArgumentCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseClass(value: js.Any): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
+    inline def setUseClass(value: js.Any): Self = StObject.set(x, "useClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseClassUndefined: Self = StObject.set(x, "useClass", js.undefined)
+    inline def setUseClassUndefined: Self = StObject.set(x, "useClass", js.undefined)
     
-    @scala.inline
-    def setUseExisting(value: js.Any): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
+    inline def setUseExisting(value: js.Any): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseExistingUndefined: Self = StObject.set(x, "useExisting", js.undefined)
+    inline def setUseExistingUndefined: Self = StObject.set(x, "useExisting", js.undefined)
     
-    @scala.inline
-    def setUseFactory(value: js.Any): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
+    inline def setUseFactory(value: js.Any): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseFactoryUndefined: Self = StObject.set(x, "useFactory", js.undefined)
+    inline def setUseFactoryUndefined: Self = StObject.set(x, "useFactory", js.undefined)
     
-    @scala.inline
-    def setUseValue(value: js.Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
+    inline def setUseValue(value: js.Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseValueUndefined: Self = StObject.set(x, "useValue", js.undefined)
+    inline def setUseValueUndefined: Self = StObject.set(x, "useValue", js.undefined)
     
-    @scala.inline
-    def setUserDeps(value: js.Array[R3DependencyMetadataFacade]): Self = StObject.set(x, "userDeps", value.asInstanceOf[js.Any])
+    inline def setUserDeps(value: js.Array[R3DependencyMetadataFacade]): Self = StObject.set(x, "userDeps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDepsUndefined: Self = StObject.set(x, "userDeps", js.undefined)
+    inline def setUserDepsUndefined: Self = StObject.set(x, "userDeps", js.undefined)
     
-    @scala.inline
-    def setUserDepsVarargs(value: R3DependencyMetadataFacade*): Self = StObject.set(x, "userDeps", js.Array(value :_*))
+    inline def setUserDepsVarargs(value: R3DependencyMetadataFacade*): Self = StObject.set(x, "userDeps", js.Array(value :_*))
   }
 }

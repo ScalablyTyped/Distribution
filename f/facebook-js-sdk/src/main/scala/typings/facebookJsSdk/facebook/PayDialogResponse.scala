@@ -26,8 +26,7 @@ trait PayDialogResponse
 }
 object PayDialogResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     amount: String,
     currency: String,
     payment_id: String,
@@ -39,31 +38,22 @@ object PayDialogResponse {
     __obj.asInstanceOf[PayDialogResponse]
   }
   
-  @scala.inline
-  implicit class PayDialogResponseMutableBuilder[Self <: PayDialogResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PayDialogResponse](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment_id(value: String): Self = StObject.set(x, "payment_id", value.asInstanceOf[js.Any])
+    inline def setPayment_id(value: String): Self = StObject.set(x, "payment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
+    inline def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest_idUndefined: Self = StObject.set(x, "request_id", js.undefined)
+    inline def setRequest_idUndefined: Self = StObject.set(x, "request_id", js.undefined)
     
-    @scala.inline
-    def setSigned_request(value: String): Self = StObject.set(x, "signed_request", value.asInstanceOf[js.Any])
+    inline def setSigned_request(value: String): Self = StObject.set(x, "signed_request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: completed | initiated): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: completed | initiated): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

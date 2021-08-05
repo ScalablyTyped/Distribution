@@ -21,23 +21,23 @@ object serverMod {
     def this(server: ServerType, path: String, services: IServices, wsdl: WSDL) = this()
     def this(server: ServerType, path: String, services: IServices, wsdl: WSDL, options: IServerOptions) = this()
     
-    var _envelope: js.Any = js.native
+    /* private */ var _envelope: js.Any = js.native
     
-    var _executeMethod: js.Any = js.native
+    /* private */ var _executeMethod: js.Any = js.native
     
-    var _initializeOptions: js.Any = js.native
+    /* private */ var _initializeOptions: js.Any = js.native
     
-    var _process: js.Any = js.native
+    /* private */ var _process: js.Any = js.native
     
-    var _processRequestXml: js.Any = js.native
+    /* private */ var _processRequestXml: js.Any = js.native
     
-    var _processSoapHeader: js.Any = js.native
+    /* private */ var _processSoapHeader: js.Any = js.native
     
-    var _requestListener: js.Any = js.native
+    /* private */ var _requestListener: js.Any = js.native
     
-    var _sendError: js.Any = js.native
+    /* private */ var _sendError: js.Any = js.native
     
-    var _sendHttpResponse: js.Any = js.native
+    /* private */ var _sendHttpResponse: js.Any = js.native
     
     def addSoapHeader(soapHeader: js.Any): Double = js.native
     def addSoapHeader(soapHeader: js.Any, name: String): Double = js.native
@@ -70,7 +70,7 @@ object serverMod {
     def authorizeConnection(req: Request): Boolean = js.native
     def authorizeConnection(req: Request, res: Response): Boolean = js.native
     
-    var callback: js.Any = js.native
+    /* private */ var callback: js.Any = js.native
     
     def changeSoapHeader(index: js.Any, soapHeader: js.Any): Unit = js.native
     def changeSoapHeader(index: js.Any, soapHeader: js.Any, name: js.Any): Unit = js.native
@@ -90,7 +90,7 @@ object serverMod {
     @JSName("emit")
     def emit_response(event: response, headers: js.Any, methodName: String): Boolean = js.native
     
-    var enableChunkedEncoding: js.Any = js.native
+    /* private */ var enableChunkedEncoding: js.Any = js.native
     
     def getSoapHeaders(): js.Array[String] = js.native
     
@@ -106,19 +106,19 @@ object serverMod {
     @JSName("on")
     def on_response(event: response, listener: js.Function2[/* response */ js.Any, /* methodName */ String, Unit]): this.type = js.native
     
-    var onewayOptions: js.Any = js.native
+    /* private */ var onewayOptions: js.Any = js.native
     
     var path: String = js.native
     
-    var returnFault: js.Any = js.native
+    /* private */ var returnFault: js.Any = js.native
     
     var services: IServices = js.native
     
-    var soapHeaders: js.Any = js.native
+    /* private */ var soapHeaders: js.Any = js.native
     
-    var suppressStack: js.Any = js.native
+    /* private */ var suppressStack: js.Any = js.native
     
-    var wsdl: js.Any = js.native
+    /* private */ var wsdl: js.Any = js.native
   }
   
   trait IExpressApp extends StObject {
@@ -129,20 +129,16 @@ object serverMod {
   }
   object IExpressApp {
     
-    @scala.inline
-    def apply(route: js.Any, use: js.Any): IExpressApp = {
+    inline def apply(route: js.Any, use: js.Any): IExpressApp = {
       val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
       __obj.asInstanceOf[IExpressApp]
     }
     
-    @scala.inline
-    implicit class IExpressAppMutableBuilder[Self <: IExpressApp] (val x: Self) extends AnyVal {
+    extension [Self <: IExpressApp](x: Self) {
       
-      @scala.inline
-      def setRoute(value: js.Any): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: js.Any): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUse(value: js.Any): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      inline def setUse(value: js.Any): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     }
   }
   

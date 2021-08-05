@@ -44,37 +44,27 @@ trait SplitNumber extends StObject {
 }
 object SplitNumber {
   
-  @scala.inline
-  def apply(): SplitNumber = {
+  inline def apply(): SplitNumber = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SplitNumber]
   }
   
-  @scala.inline
-  implicit class SplitNumberMutableBuilder[Self <: SplitNumber] (val x: Self) extends AnyVal {
+  extension [Self <: SplitNumber](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double | String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double | String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setLineStyle(value: ShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: ShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setSplitNumber(value: Double): Self = StObject.set(x, "splitNumber", value.asInstanceOf[js.Any])
+    inline def setSplitNumber(value: Double): Self = StObject.set(x, "splitNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitNumberUndefined: Self = StObject.set(x, "splitNumber", js.undefined)
+    inline def setSplitNumberUndefined: Self = StObject.set(x, "splitNumber", js.undefined)
   }
 }

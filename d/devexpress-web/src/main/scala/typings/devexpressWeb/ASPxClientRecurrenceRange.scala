@@ -26,22 +26,17 @@ trait ASPxClientRecurrenceRange extends StObject {
 }
 object ASPxClientRecurrenceRange {
   
-  @scala.inline
-  def apply(EndByDate: String, NoEndDate: String, OccurrenceCount: String): ASPxClientRecurrenceRange = {
+  inline def apply(EndByDate: String, NoEndDate: String, OccurrenceCount: String): ASPxClientRecurrenceRange = {
     val __obj = js.Dynamic.literal(EndByDate = EndByDate.asInstanceOf[js.Any], NoEndDate = NoEndDate.asInstanceOf[js.Any], OccurrenceCount = OccurrenceCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRecurrenceRange]
   }
   
-  @scala.inline
-  implicit class ASPxClientRecurrenceRangeMutableBuilder[Self <: ASPxClientRecurrenceRange] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRecurrenceRange](x: Self) {
     
-    @scala.inline
-    def setEndByDate(value: String): Self = StObject.set(x, "EndByDate", value.asInstanceOf[js.Any])
+    inline def setEndByDate(value: String): Self = StObject.set(x, "EndByDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoEndDate(value: String): Self = StObject.set(x, "NoEndDate", value.asInstanceOf[js.Any])
+    inline def setNoEndDate(value: String): Self = StObject.set(x, "NoEndDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrenceCount(value: String): Self = StObject.set(x, "OccurrenceCount", value.asInstanceOf[js.Any])
+    inline def setOccurrenceCount(value: String): Self = StObject.set(x, "OccurrenceCount", value.asInstanceOf[js.Any])
   }
 }

@@ -17,9 +17,7 @@ object Main {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def init(): TypeofMain = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[TypeofMain]
+  inline def init(): TypeofMain = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[TypeofMain]
   
-  @scala.inline
-  def setConfig(hasCanvasIdIsTestScreenSizeUseDevicePixelRatioContextConfig: CanvasId): TypeofMain = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(hasCanvasIdIsTestScreenSizeUseDevicePixelRatioContextConfig.asInstanceOf[js.Any]).asInstanceOf[TypeofMain]
+  inline def setConfig(hasCanvasIdIsTestScreenSizeUseDevicePixelRatioContextConfig: CanvasId): TypeofMain = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(hasCanvasIdIsTestScreenSizeUseDevicePixelRatioContextConfig.asInstanceOf[js.Any]).asInstanceOf[TypeofMain]
 }

@@ -38,8 +38,7 @@ trait BatchGetFrameMetricDataResponse extends StObject {
 }
 object BatchGetFrameMetricDataResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endTime: Timestamp,
     endTimes: ListOfTimestamps,
     frameMetricData: FrameMetricData,
@@ -51,31 +50,22 @@ object BatchGetFrameMetricDataResponse {
     __obj.asInstanceOf[BatchGetFrameMetricDataResponse]
   }
   
-  @scala.inline
-  implicit class BatchGetFrameMetricDataResponseMutableBuilder[Self <: BatchGetFrameMetricDataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetFrameMetricDataResponse](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimes(value: ListOfTimestamps): Self = StObject.set(x, "endTimes", value.asInstanceOf[js.Any])
+    inline def setEndTimes(value: ListOfTimestamps): Self = StObject.set(x, "endTimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimesVarargs(value: TimestampStructure*): Self = StObject.set(x, "endTimes", js.Array(value :_*))
+    inline def setEndTimesVarargs(value: TimestampStructure*): Self = StObject.set(x, "endTimes", js.Array(value :_*))
     
-    @scala.inline
-    def setFrameMetricData(value: FrameMetricData): Self = StObject.set(x, "frameMetricData", value.asInstanceOf[js.Any])
+    inline def setFrameMetricData(value: FrameMetricData): Self = StObject.set(x, "frameMetricData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameMetricDataVarargs(value: FrameMetricDatum*): Self = StObject.set(x, "frameMetricData", js.Array(value :_*))
+    inline def setFrameMetricDataVarargs(value: FrameMetricDatum*): Self = StObject.set(x, "frameMetricData", js.Array(value :_*))
     
-    @scala.inline
-    def setResolution(value: AggregationPeriod): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: AggregationPeriod): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedEndTimes(value: UnprocessedEndTimeMap): Self = StObject.set(x, "unprocessedEndTimes", value.asInstanceOf[js.Any])
+    inline def setUnprocessedEndTimes(value: UnprocessedEndTimeMap): Self = StObject.set(x, "unprocessedEndTimes", value.asInstanceOf[js.Any])
   }
 }

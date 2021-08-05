@@ -23,26 +23,19 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def abs(n: BigNumCompatible): BigNum = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(n.asInstanceOf[js.Any]).asInstanceOf[BigNum]
+  inline def abs(n: BigNumCompatible): BigNum = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(n.asInstanceOf[js.Any]).asInstanceOf[BigNum]
   
-  @scala.inline
-  def add(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def add(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @scala.inline
-  def and(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def and(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @scala.inline
-  def bitLength(n: BigNumCompatible): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bitLength")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def bitLength(n: BigNumCompatible): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bitLength")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def cmp(left: BigNumCompatible, right: BigNumCompatible): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def cmp(left: BigNumCompatible, right: BigNumCompatible): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def div(dividend: BigNumCompatible, divisor: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(dividend.asInstanceOf[js.Any], divisor.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def div(dividend: BigNumCompatible, divisor: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(dividend.asInstanceOf[js.Any], divisor.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @scala.inline
-  def eq_(left: BigNumCompatible, right: BigNumCompatible): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def eq_(left: BigNumCompatible, right: BigNumCompatible): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Create a new BigNum from a Buffer.
@@ -50,54 +43,38 @@ object mod {
     * The default options are: {endian: 'big', size: 1}.
     */
   /* static member */
-  @scala.inline
-  def fromBuffer(buffer: Buffer): BigNum = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[BigNum]
-  @scala.inline
-  def fromBuffer(buffer: Buffer, options: BufferOptions): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def fromBuffer(buffer: Buffer): BigNum = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[BigNum]
+  inline def fromBuffer(buffer: Buffer, options: BufferOptions): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @scala.inline
-  def gcd(left: BigNumCompatible, right: BigNum): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("gcd")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def gcd(left: BigNumCompatible, right: BigNum): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("gcd")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @scala.inline
-  def ge(left: BigNumCompatible, right: BigNumCompatible): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ge")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ge(left: BigNumCompatible, right: BigNumCompatible): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ge")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def gt(left: BigNumCompatible, right: BigNumCompatible): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def gt(left: BigNumCompatible, right: BigNumCompatible): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def invertm(n: BigNumCompatible, m: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("invertm")(n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def invertm(n: BigNumCompatible, m: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("invertm")(n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
   /** Return true if num is identified as a BigNum instance. Otherwise, return false. */
   /* static member */
-  @scala.inline
-  def isBigNum(num: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNum")(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBigNum(num: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNum")(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def jacobi(a: BigNumCompatible, n: BigNum): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("jacobi")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def jacobi(a: BigNumCompatible, n: BigNum): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("jacobi")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def le(left: BigNumCompatible, right: BigNumCompatible): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("le")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def le(left: BigNumCompatible, right: BigNumCompatible): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("le")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def lt(left: BigNumCompatible, right: BigNumCompatible): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def lt(left: BigNumCompatible, right: BigNumCompatible): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def mod(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def mod(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @scala.inline
-  def mul(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def mul(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @scala.inline
-  def neg(n: BigNumCompatible): BigNum = ^.asInstanceOf[js.Dynamic].applyDynamic("neg")(n.asInstanceOf[js.Any]).asInstanceOf[BigNum]
+  inline def neg(n: BigNumCompatible): BigNum = ^.asInstanceOf[js.Dynamic].applyDynamic("neg")(n.asInstanceOf[js.Any]).asInstanceOf[BigNum]
   
-  @scala.inline
-  def or(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def or(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @scala.inline
-  def pow(base: BigNumCompatible, exponent: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exponent.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def pow(base: BigNumCompatible, exponent: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exponent.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @scala.inline
-  def powm(base: BigNumCompatible, exponent: BigNumCompatible, m: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("powm")(base.asInstanceOf[js.Any], exponent.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def powm(base: BigNumCompatible, exponent: BigNumCompatible, m: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("powm")(base.asInstanceOf[js.Any], exponent.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
   /**
     * Generate a probable prime of length bits.
@@ -105,38 +82,26 @@ object mod {
     * If safe is true, it will be a "safe" prime of the form p=2p'+1 where p' is also prime.
     */
   /* static member */
-  @scala.inline
-  def prime(bits: Double): BigNum = ^.asInstanceOf[js.Dynamic].applyDynamic("prime")(bits.asInstanceOf[js.Any]).asInstanceOf[BigNum]
-  @scala.inline
-  def prime(bits: Double, safe: Boolean): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("prime")(bits.asInstanceOf[js.Any], safe.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def prime(bits: Double): BigNum = ^.asInstanceOf[js.Dynamic].applyDynamic("prime")(bits.asInstanceOf[js.Any]).asInstanceOf[BigNum]
+  inline def prime(bits: Double, safe: Boolean): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("prime")(bits.asInstanceOf[js.Any], safe.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @scala.inline
-  def probPrime(n: BigNumCompatible): Boolean | String = ^.asInstanceOf[js.Dynamic].applyDynamic("probPrime")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean | String]
+  inline def probPrime(n: BigNumCompatible): Boolean | String = ^.asInstanceOf[js.Dynamic].applyDynamic("probPrime")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean | String]
   
-  @scala.inline
-  def rand(n: BigNumCompatible): BigNum = ^.asInstanceOf[js.Dynamic].applyDynamic("rand")(n.asInstanceOf[js.Any]).asInstanceOf[BigNum]
-  @scala.inline
-  def rand(n: BigNumCompatible, upperBound: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("rand")(n.asInstanceOf[js.Any], upperBound.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def rand(n: BigNumCompatible): BigNum = ^.asInstanceOf[js.Dynamic].applyDynamic("rand")(n.asInstanceOf[js.Any]).asInstanceOf[BigNum]
+  inline def rand(n: BigNumCompatible, upperBound: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("rand")(n.asInstanceOf[js.Any], upperBound.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @scala.inline
-  def shiftLeft(n: BigNumCompatible, bits: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("shiftLeft")(n.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def shiftLeft(n: BigNumCompatible, bits: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("shiftLeft")(n.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @scala.inline
-  def shiftRight(n: BigNumCompatible, bits: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("shiftRight")(n.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def shiftRight(n: BigNumCompatible, bits: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("shiftRight")(n.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @scala.inline
-  def sub(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def sub(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @scala.inline
-  def toBuffer(n: BigNumCompatible): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(n.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  @scala.inline
-  def toBuffer(n: BigNumCompatible, options: BufferOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(n.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def toBuffer(n: BigNumCompatible): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(n.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def toBuffer(n: BigNumCompatible, options: BufferOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(n.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def toNumber(n: BigNumCompatible): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def toNumber(n: BigNumCompatible): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def xor(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("xor")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  inline def xor(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("xor")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
   @js.native
   trait BigNum extends StObject {
@@ -265,20 +230,16 @@ object mod {
   }
   object BufferOptions {
     
-    @scala.inline
-    def apply(endian: String | Double, size: Double | String): BufferOptions = {
+    inline def apply(endian: String | Double, size: Double | String): BufferOptions = {
       val __obj = js.Dynamic.literal(endian = endian.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[BufferOptions]
     }
     
-    @scala.inline
-    implicit class BufferOptionsMutableBuilder[Self <: BufferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BufferOptions](x: Self) {
       
-      @scala.inline
-      def setEndian(value: String | Double): Self = StObject.set(x, "endian", value.asInstanceOf[js.Any])
+      inline def setEndian(value: String | Double): Self = StObject.set(x, "endian", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

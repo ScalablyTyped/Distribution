@@ -13,20 +13,16 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(): Data = {
+    inline def apply(): Data = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     }
   }
   
@@ -36,17 +32,14 @@ object anon {
   }
   object Tracking {
     
-    @scala.inline
-    def apply[T](tracking: Options[T] & Data): Tracking[T] = {
+    inline def apply[T](tracking: Options[T] & Data): Tracking[T] = {
       val __obj = js.Dynamic.literal(tracking = tracking.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tracking[T]]
     }
     
-    @scala.inline
-    implicit class TrackingMutableBuilder[Self <: Tracking[?], T] (val x: Self & Tracking[T]) extends AnyVal {
+    extension [Self <: Tracking[?], T](x: Self & Tracking[T]) {
       
-      @scala.inline
-      def setTracking(value: Options[T] & Data): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
+      inline def setTracking(value: Options[T] & Data): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -27,8 +27,7 @@ object KiiObject {
     * @return true if given ID is valid, false otherwise.
     */
   /* static member */
-  @scala.inline
-  def isValidObjectID(objectID: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidObjectID")(objectID.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidObjectID(objectID: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidObjectID")(objectID.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Generate a new KiiObject based on a given URI
@@ -43,6 +42,5 @@ object KiiObject {
     *     var group = new KiiObject.objectWithURI("kiicloud://myuri");
     */
   /* static member */
-  @scala.inline
-  def objectWithURI(uri: String): typings.kiiCloudSdk.KiiCloud.KiiObject = ^.asInstanceOf[js.Dynamic].applyDynamic("objectWithURI")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiObject]
+  inline def objectWithURI(uri: String): typings.kiiCloudSdk.KiiCloud.KiiObject = ^.asInstanceOf[js.Dynamic].applyDynamic("objectWithURI")(uri.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiObject]
 }

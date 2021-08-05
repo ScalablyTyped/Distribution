@@ -16,8 +16,7 @@ trait BasicConstraints
 }
 object BasicConstraints {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getExtnValueHex: () => String,
     getFreshValueHex: () => String,
@@ -33,10 +32,8 @@ object BasicConstraints {
     __obj.asInstanceOf[BasicConstraints]
   }
   
-  @scala.inline
-  implicit class BasicConstraintsMutableBuilder[Self <: BasicConstraints] (val x: Self) extends AnyVal {
+  extension [Self <: BasicConstraints](x: Self) {
     
-    @scala.inline
-    def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
+    inline def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
   }
 }

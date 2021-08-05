@@ -55,8 +55,7 @@ trait AffineMatrix3D extends StObject {
 }
 object AffineMatrix3D {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     m00: Double,
     m01: Double,
     m02: Double,
@@ -74,43 +73,30 @@ object AffineMatrix3D {
     __obj.asInstanceOf[AffineMatrix3D]
   }
   
-  @scala.inline
-  implicit class AffineMatrix3DMutableBuilder[Self <: AffineMatrix3D] (val x: Self) extends AnyVal {
+  extension [Self <: AffineMatrix3D](x: Self) {
     
-    @scala.inline
-    def setM00(value: Double): Self = StObject.set(x, "m00", value.asInstanceOf[js.Any])
+    inline def setM00(value: Double): Self = StObject.set(x, "m00", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM01(value: Double): Self = StObject.set(x, "m01", value.asInstanceOf[js.Any])
+    inline def setM01(value: Double): Self = StObject.set(x, "m01", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM02(value: Double): Self = StObject.set(x, "m02", value.asInstanceOf[js.Any])
+    inline def setM02(value: Double): Self = StObject.set(x, "m02", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM03(value: Double): Self = StObject.set(x, "m03", value.asInstanceOf[js.Any])
+    inline def setM03(value: Double): Self = StObject.set(x, "m03", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM10(value: Double): Self = StObject.set(x, "m10", value.asInstanceOf[js.Any])
+    inline def setM10(value: Double): Self = StObject.set(x, "m10", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM11(value: Double): Self = StObject.set(x, "m11", value.asInstanceOf[js.Any])
+    inline def setM11(value: Double): Self = StObject.set(x, "m11", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM12(value: Double): Self = StObject.set(x, "m12", value.asInstanceOf[js.Any])
+    inline def setM12(value: Double): Self = StObject.set(x, "m12", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM13(value: Double): Self = StObject.set(x, "m13", value.asInstanceOf[js.Any])
+    inline def setM13(value: Double): Self = StObject.set(x, "m13", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM20(value: Double): Self = StObject.set(x, "m20", value.asInstanceOf[js.Any])
+    inline def setM20(value: Double): Self = StObject.set(x, "m20", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM21(value: Double): Self = StObject.set(x, "m21", value.asInstanceOf[js.Any])
+    inline def setM21(value: Double): Self = StObject.set(x, "m21", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM22(value: Double): Self = StObject.set(x, "m22", value.asInstanceOf[js.Any])
+    inline def setM22(value: Double): Self = StObject.set(x, "m22", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM23(value: Double): Self = StObject.set(x, "m23", value.asInstanceOf[js.Any])
+    inline def setM23(value: Double): Self = StObject.set(x, "m23", value.asInstanceOf[js.Any])
   }
 }

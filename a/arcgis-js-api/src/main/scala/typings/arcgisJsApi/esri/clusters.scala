@@ -20,16 +20,13 @@ trait clusters extends StObject {
 }
 object clusters {
   
-  @scala.inline
-  def apply(getLabelSchemes: clustersGetLabelSchemesParams => js.Promise[Schemes]): clusters = {
+  inline def apply(getLabelSchemes: clustersGetLabelSchemesParams => js.Promise[Schemes]): clusters = {
     val __obj = js.Dynamic.literal(getLabelSchemes = js.Any.fromFunction1(getLabelSchemes))
     __obj.asInstanceOf[clusters]
   }
   
-  @scala.inline
-  implicit class clustersMutableBuilder[Self <: clusters] (val x: Self) extends AnyVal {
+  extension [Self <: clusters](x: Self) {
     
-    @scala.inline
-    def setGetLabelSchemes(value: clustersGetLabelSchemesParams => js.Promise[Schemes]): Self = StObject.set(x, "getLabelSchemes", js.Any.fromFunction1(value))
+    inline def setGetLabelSchemes(value: clustersGetLabelSchemesParams => js.Promise[Schemes]): Self = StObject.set(x, "getLabelSchemes", js.Any.fromFunction1(value))
   }
 }

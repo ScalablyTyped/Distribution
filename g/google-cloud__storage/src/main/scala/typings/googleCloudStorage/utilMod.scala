@@ -13,30 +13,20 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def encodeURI(uri: String, encodeSlash: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeURI")(uri.asInstanceOf[js.Any], encodeSlash.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encodeURI(uri: String, encodeSlash: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeURI")(uri.asInstanceOf[js.Any], encodeSlash.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def fixedEncodeURIComponent(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fixedEncodeURIComponent")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fixedEncodeURIComponent(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fixedEncodeURIComponent")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def normalize[T, U](): Callback[T, U] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")().asInstanceOf[Callback[T, U]]
-  @scala.inline
-  def normalize[T, U](optionsOrCallback: T | U): Callback[T, U] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(optionsOrCallback.asInstanceOf[js.Any]).asInstanceOf[Callback[T, U]]
-  @scala.inline
-  def normalize[T, U](optionsOrCallback: T | U, cb: U): Callback[T, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(optionsOrCallback.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Callback[T, U]]
-  @scala.inline
-  def normalize[T, U](optionsOrCallback: Unit, cb: U): Callback[T, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(optionsOrCallback.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Callback[T, U]]
+  inline def normalize[T, U](): Callback[T, U] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")().asInstanceOf[Callback[T, U]]
+  inline def normalize[T, U](optionsOrCallback: T | U): Callback[T, U] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(optionsOrCallback.asInstanceOf[js.Any]).asInstanceOf[Callback[T, U]]
+  inline def normalize[T, U](optionsOrCallback: T | U, cb: U): Callback[T, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(optionsOrCallback.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Callback[T, U]]
+  inline def normalize[T, U](optionsOrCallback: Unit, cb: U): Callback[T, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(optionsOrCallback.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Callback[T, U]]
   
-  @scala.inline
-  def objectEntries[T](obj: StringDictionary[T]): js.Array[js.Tuple2[String, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectEntries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[String, T]]]
+  inline def objectEntries[T](obj: StringDictionary[T]): js.Array[js.Tuple2[String, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectEntries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[String, T]]]
   
-  @scala.inline
-  def objectKeyToLowercase[T](`object`: StringDictionary[T]): StringDictionary[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectKeyToLowercase")(`object`.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[T]]
+  inline def objectKeyToLowercase[T](`object`: StringDictionary[T]): StringDictionary[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectKeyToLowercase")(`object`.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[T]]
   
-  @scala.inline
-  def qsStringify(qs: ParsedUrlQueryInput): String = ^.asInstanceOf[js.Dynamic].applyDynamic("qsStringify")(qs.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def qsStringify(qs: ParsedUrlQueryInput): String = ^.asInstanceOf[js.Dynamic].applyDynamic("qsStringify")(qs.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def unicodeJSONStringify(obj: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unicodeJSONStringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unicodeJSONStringify(obj: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unicodeJSONStringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
 }

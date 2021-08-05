@@ -10,19 +10,15 @@ trait SignatureHelpItemsOptions extends StObject {
 }
 object SignatureHelpItemsOptions {
   
-  @scala.inline
-  def apply(): SignatureHelpItemsOptions = {
+  inline def apply(): SignatureHelpItemsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SignatureHelpItemsOptions]
   }
   
-  @scala.inline
-  implicit class SignatureHelpItemsOptionsMutableBuilder[Self <: SignatureHelpItemsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureHelpItemsOptions](x: Self) {
     
-    @scala.inline
-    def setTriggerReason(value: SignatureHelpTriggerReason): Self = StObject.set(x, "triggerReason", value.asInstanceOf[js.Any])
+    inline def setTriggerReason(value: SignatureHelpTriggerReason): Self = StObject.set(x, "triggerReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerReasonUndefined: Self = StObject.set(x, "triggerReason", js.undefined)
+    inline def setTriggerReasonUndefined: Self = StObject.set(x, "triggerReason", js.undefined)
   }
 }

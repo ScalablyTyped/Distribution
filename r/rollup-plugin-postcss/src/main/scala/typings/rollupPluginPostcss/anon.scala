@@ -15,20 +15,16 @@ object anon {
   }
   object Ctx {
     
-    @scala.inline
-    def apply(ctx: js.Any, path: String): Ctx = {
+    inline def apply(ctx: js.Any, path: String): Ctx = {
       val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ctx]
     }
     
-    @scala.inline
-    implicit class CtxMutableBuilder[Self <: Ctx] (val x: Self) extends AnyVal {
+    extension [Self <: Ctx](x: Self) {
       
-      @scala.inline
-      def setCtx(value: js.Any): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      inline def setCtx(value: js.Any): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -38,20 +34,16 @@ object anon {
   }
   object InsertAt {
     
-    @scala.inline
-    def apply(): InsertAt = {
+    inline def apply(): InsertAt = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InsertAt]
     }
     
-    @scala.inline
-    implicit class InsertAtMutableBuilder[Self <: InsertAt] (val x: Self) extends AnyVal {
+    extension [Self <: InsertAt](x: Self) {
       
-      @scala.inline
-      def setInsertAt(value: top | String): Self = StObject.set(x, "insertAt", value.asInstanceOf[js.Any])
+      inline def setInsertAt(value: top | String): Self = StObject.set(x, "insertAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertAtUndefined: Self = StObject.set(x, "insertAt", js.undefined)
+      inline def setInsertAtUndefined: Self = StObject.set(x, "insertAt", js.undefined)
     }
   }
 }

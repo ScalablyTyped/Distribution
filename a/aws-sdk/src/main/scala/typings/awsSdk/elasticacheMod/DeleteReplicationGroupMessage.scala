@@ -23,28 +23,21 @@ trait DeleteReplicationGroupMessage extends StObject {
 }
 object DeleteReplicationGroupMessage {
   
-  @scala.inline
-  def apply(ReplicationGroupId: String): DeleteReplicationGroupMessage = {
+  inline def apply(ReplicationGroupId: String): DeleteReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(ReplicationGroupId = ReplicationGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteReplicationGroupMessage]
   }
   
-  @scala.inline
-  implicit class DeleteReplicationGroupMessageMutableBuilder[Self <: DeleteReplicationGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteReplicationGroupMessage](x: Self) {
     
-    @scala.inline
-    def setFinalSnapshotIdentifier(value: String): Self = StObject.set(x, "FinalSnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setFinalSnapshotIdentifier(value: String): Self = StObject.set(x, "FinalSnapshotIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalSnapshotIdentifierUndefined: Self = StObject.set(x, "FinalSnapshotIdentifier", js.undefined)
+    inline def setFinalSnapshotIdentifierUndefined: Self = StObject.set(x, "FinalSnapshotIdentifier", js.undefined)
     
-    @scala.inline
-    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainPrimaryCluster(value: BooleanOptional): Self = StObject.set(x, "RetainPrimaryCluster", value.asInstanceOf[js.Any])
+    inline def setRetainPrimaryCluster(value: BooleanOptional): Self = StObject.set(x, "RetainPrimaryCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainPrimaryClusterUndefined: Self = StObject.set(x, "RetainPrimaryCluster", js.undefined)
+    inline def setRetainPrimaryClusterUndefined: Self = StObject.set(x, "RetainPrimaryCluster", js.undefined)
   }
 }

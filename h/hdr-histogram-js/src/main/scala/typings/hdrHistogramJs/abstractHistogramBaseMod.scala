@@ -56,8 +56,7 @@ object abstractHistogramBaseMod {
     @JSImport("hdr-histogram-js/AbstractHistogramBase", "AbstractHistogramBase.identityBuilder")
     @js.native
     def identityBuilder: Double = js.native
-    @scala.inline
-    def identityBuilder_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identityBuilder")(x.asInstanceOf[js.Any])
+    inline def identityBuilder_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identityBuilder")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("hdr-histogram-js/AbstractHistogramBase", "NO_TAG")

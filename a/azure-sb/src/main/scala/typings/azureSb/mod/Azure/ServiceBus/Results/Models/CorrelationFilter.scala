@@ -27,67 +27,47 @@ trait CorrelationFilter extends StObject {
 }
 object CorrelationFilter {
   
-  @scala.inline
-  def apply(): CorrelationFilter = {
+  inline def apply(): CorrelationFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CorrelationFilter]
   }
   
-  @scala.inline
-  implicit class CorrelationFilterMutableBuilder[Self <: CorrelationFilter] (val x: Self) extends AnyVal {
+  extension [Self <: CorrelationFilter](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    @scala.inline
-    def setCorrelationId(value: String): Self = StObject.set(x, "CorrelationId", value.asInstanceOf[js.Any])
+    inline def setCorrelationId(value: String): Self = StObject.set(x, "CorrelationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrelationIdUndefined: Self = StObject.set(x, "CorrelationId", js.undefined)
+    inline def setCorrelationIdUndefined: Self = StObject.set(x, "CorrelationId", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
-    @scala.inline
-    def setProperties(value: String): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: String): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "Properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "Properties", js.undefined)
     
-    @scala.inline
-    def setReplyTo(value: String): Self = StObject.set(x, "ReplyTo", value.asInstanceOf[js.Any])
+    inline def setReplyTo(value: String): Self = StObject.set(x, "ReplyTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToSessionId(value: String): Self = StObject.set(x, "ReplyToSessionId", value.asInstanceOf[js.Any])
+    inline def setReplyToSessionId(value: String): Self = StObject.set(x, "ReplyToSessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToSessionIdUndefined: Self = StObject.set(x, "ReplyToSessionId", js.undefined)
+    inline def setReplyToSessionIdUndefined: Self = StObject.set(x, "ReplyToSessionId", js.undefined)
     
-    @scala.inline
-    def setReplyToUndefined: Self = StObject.set(x, "ReplyTo", js.undefined)
+    inline def setReplyToUndefined: Self = StObject.set(x, "ReplyTo", js.undefined)
     
-    @scala.inline
-    def setRequiresPreprocessing(value: String): Self = StObject.set(x, "RequiresPreprocessing", value.asInstanceOf[js.Any])
+    inline def setRequiresPreprocessing(value: String): Self = StObject.set(x, "RequiresPreprocessing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresPreprocessingUndefined: Self = StObject.set(x, "RequiresPreprocessing", js.undefined)
+    inline def setRequiresPreprocessingUndefined: Self = StObject.set(x, "RequiresPreprocessing", js.undefined)
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionIdUndefined: Self = StObject.set(x, "SessionId", js.undefined)
+    inline def setSessionIdUndefined: Self = StObject.set(x, "SessionId", js.undefined)
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "To", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "To", js.undefined)
   }
 }

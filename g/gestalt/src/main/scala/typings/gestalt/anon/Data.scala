@@ -14,28 +14,21 @@ trait Data[T] extends StObject {
 }
 object Data {
   
-  @scala.inline
-  def apply[T](data: T): Data[T] = {
+  inline def apply[T](data: T): Data[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data[T]]
   }
   
-  @scala.inline
-  implicit class DataMutableBuilder[Self <: Data[?], T] (val x: Self & Data[T]) extends AnyVal {
+  extension [Self <: Data[?], T](x: Self & Data[T]) {
     
-    @scala.inline
-    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMeasuring(value: Boolean): Self = StObject.set(x, "isMeasuring", value.asInstanceOf[js.Any])
+    inline def setIsMeasuring(value: Boolean): Self = StObject.set(x, "isMeasuring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMeasuringUndefined: Self = StObject.set(x, "isMeasuring", js.undefined)
+    inline def setIsMeasuringUndefined: Self = StObject.set(x, "isMeasuring", js.undefined)
     
-    @scala.inline
-    def setItemIdx(value: Double): Self = StObject.set(x, "itemIdx", value.asInstanceOf[js.Any])
+    inline def setItemIdx(value: Double): Self = StObject.set(x, "itemIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemIdxUndefined: Self = StObject.set(x, "itemIdx", js.undefined)
+    inline def setItemIdxUndefined: Self = StObject.set(x, "itemIdx", js.undefined)
   }
 }

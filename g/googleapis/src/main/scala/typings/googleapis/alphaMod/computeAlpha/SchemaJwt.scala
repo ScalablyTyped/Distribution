@@ -52,52 +52,37 @@ trait SchemaJwt extends StObject {
 }
 object SchemaJwt {
   
-  @scala.inline
-  def apply(): SchemaJwt = {
+  inline def apply(): SchemaJwt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJwt]
   }
   
-  @scala.inline
-  implicit class SchemaJwtMutableBuilder[Self <: SchemaJwt] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaJwt](x: Self) {
     
-    @scala.inline
-    def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
+    inline def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
+    inline def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
     
-    @scala.inline
-    def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
+    inline def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
     
-    @scala.inline
-    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+    inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
-    @scala.inline
-    def setJwksPublicKeys(value: String): Self = StObject.set(x, "jwksPublicKeys", value.asInstanceOf[js.Any])
+    inline def setJwksPublicKeys(value: String): Self = StObject.set(x, "jwksPublicKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJwksPublicKeysUndefined: Self = StObject.set(x, "jwksPublicKeys", js.undefined)
+    inline def setJwksPublicKeysUndefined: Self = StObject.set(x, "jwksPublicKeys", js.undefined)
     
-    @scala.inline
-    def setJwtHeaders(value: js.Array[SchemaJwtHeader]): Self = StObject.set(x, "jwtHeaders", value.asInstanceOf[js.Any])
+    inline def setJwtHeaders(value: js.Array[SchemaJwtHeader]): Self = StObject.set(x, "jwtHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJwtHeadersUndefined: Self = StObject.set(x, "jwtHeaders", js.undefined)
+    inline def setJwtHeadersUndefined: Self = StObject.set(x, "jwtHeaders", js.undefined)
     
-    @scala.inline
-    def setJwtHeadersVarargs(value: SchemaJwtHeader*): Self = StObject.set(x, "jwtHeaders", js.Array(value :_*))
+    inline def setJwtHeadersVarargs(value: SchemaJwtHeader*): Self = StObject.set(x, "jwtHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setJwtParams(value: js.Array[String]): Self = StObject.set(x, "jwtParams", value.asInstanceOf[js.Any])
+    inline def setJwtParams(value: js.Array[String]): Self = StObject.set(x, "jwtParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJwtParamsUndefined: Self = StObject.set(x, "jwtParams", js.undefined)
+    inline def setJwtParamsUndefined: Self = StObject.set(x, "jwtParams", js.undefined)
     
-    @scala.inline
-    def setJwtParamsVarargs(value: String*): Self = StObject.set(x, "jwtParams", js.Array(value :_*))
+    inline def setJwtParamsVarargs(value: String*): Self = StObject.set(x, "jwtParams", js.Array(value :_*))
   }
 }

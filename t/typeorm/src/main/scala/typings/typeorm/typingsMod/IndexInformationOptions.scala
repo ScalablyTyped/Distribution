@@ -20,25 +20,19 @@ trait IndexInformationOptions extends StObject {
 }
 object IndexInformationOptions {
   
-  @scala.inline
-  def apply(): IndexInformationOptions = {
+  inline def apply(): IndexInformationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IndexInformationOptions]
   }
   
-  @scala.inline
-  implicit class IndexInformationOptionsMutableBuilder[Self <: IndexInformationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IndexInformationOptions](x: Self) {
     
-    @scala.inline
-    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
+    inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
     
-    @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
   }
 }

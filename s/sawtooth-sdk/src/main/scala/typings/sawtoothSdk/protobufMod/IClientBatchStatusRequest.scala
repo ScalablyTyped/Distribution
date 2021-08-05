@@ -18,43 +18,31 @@ trait IClientBatchStatusRequest extends StObject {
 }
 object IClientBatchStatusRequest {
   
-  @scala.inline
-  def apply(): IClientBatchStatusRequest = {
+  inline def apply(): IClientBatchStatusRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientBatchStatusRequest]
   }
   
-  @scala.inline
-  implicit class IClientBatchStatusRequestMutableBuilder[Self <: IClientBatchStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IClientBatchStatusRequest](x: Self) {
     
-    @scala.inline
-    def setBatchIds(value: js.Array[String]): Self = StObject.set(x, "batchIds", value.asInstanceOf[js.Any])
+    inline def setBatchIds(value: js.Array[String]): Self = StObject.set(x, "batchIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdsNull: Self = StObject.set(x, "batchIds", null)
+    inline def setBatchIdsNull: Self = StObject.set(x, "batchIds", null)
     
-    @scala.inline
-    def setBatchIdsUndefined: Self = StObject.set(x, "batchIds", js.undefined)
+    inline def setBatchIdsUndefined: Self = StObject.set(x, "batchIds", js.undefined)
     
-    @scala.inline
-    def setBatchIdsVarargs(value: String*): Self = StObject.set(x, "batchIds", js.Array(value :_*))
+    inline def setBatchIdsVarargs(value: String*): Self = StObject.set(x, "batchIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutNull: Self = StObject.set(x, "timeout", null)
+    inline def setTimeoutNull: Self = StObject.set(x, "timeout", null)
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+    inline def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_Null: Self = StObject.set(x, "wait", null)
+    inline def setWait_Null: Self = StObject.set(x, "wait", null)
     
-    @scala.inline
-    def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
+    inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
   }
 }

@@ -19,33 +19,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PhoneType extends StObject
 object PhoneType {
   
-  @scala.inline
-  def assistant: typings.microsoftGraph.microsoftGraphStrings.assistant = "assistant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.assistant]
+  inline def assistant: typings.microsoftGraph.microsoftGraphStrings.assistant = "assistant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.assistant]
   
-  @scala.inline
-  def business: typings.microsoftGraph.microsoftGraphStrings.business = "business".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.business]
+  inline def business: typings.microsoftGraph.microsoftGraphStrings.business = "business".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.business]
   
-  @scala.inline
-  def businessFax: typings.microsoftGraph.microsoftGraphStrings.businessFax = "businessFax".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.businessFax]
+  inline def businessFax: typings.microsoftGraph.microsoftGraphStrings.businessFax = "businessFax".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.businessFax]
   
-  @scala.inline
-  def home: typings.microsoftGraph.microsoftGraphStrings.home = "home".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.home]
+  inline def home: typings.microsoftGraph.microsoftGraphStrings.home = "home".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.home]
   
-  @scala.inline
-  def homeFax: typings.microsoftGraph.microsoftGraphStrings.homeFax = "homeFax".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.homeFax]
+  inline def homeFax: typings.microsoftGraph.microsoftGraphStrings.homeFax = "homeFax".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.homeFax]
   
-  @scala.inline
-  def mobile: typings.microsoftGraph.microsoftGraphStrings.mobile = "mobile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mobile]
+  inline def mobile: typings.microsoftGraph.microsoftGraphStrings.mobile = "mobile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mobile]
   
-  @scala.inline
-  def other: typings.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.other]
+  inline def other: typings.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.other]
   
-  @scala.inline
-  def otherFax: typings.microsoftGraph.microsoftGraphStrings.otherFax = "otherFax".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.otherFax]
+  inline def otherFax: typings.microsoftGraph.microsoftGraphStrings.otherFax = "otherFax".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.otherFax]
   
-  @scala.inline
-  def pager: typings.microsoftGraph.microsoftGraphStrings.pager = "pager".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pager]
+  inline def pager: typings.microsoftGraph.microsoftGraphStrings.pager = "pager".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pager]
   
-  @scala.inline
-  def radio: typings.microsoftGraph.microsoftGraphStrings.radio = "radio".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.radio]
+  inline def radio: typings.microsoftGraph.microsoftGraphStrings.radio = "radio".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.radio]
 }

@@ -12,22 +12,17 @@ trait TouchParameters extends StObject {
 }
 object TouchParameters {
   
-  @scala.inline
-  def apply(fileId: String): TouchParameters = {
+  inline def apply(fileId: String): TouchParameters = {
     val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchParameters]
   }
   
-  @scala.inline
-  implicit class TouchParametersMutableBuilder[Self <: TouchParameters] (val x: Self) extends AnyVal {
+  extension [Self <: TouchParameters](x: Self) {
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
+    inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
+    inline def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
   }
 }

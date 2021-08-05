@@ -12,25 +12,19 @@ trait CheckFalsy extends StObject {
 }
 object CheckFalsy {
   
-  @scala.inline
-  def apply(): CheckFalsy = {
+  inline def apply(): CheckFalsy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckFalsy]
   }
   
-  @scala.inline
-  implicit class CheckFalsyMutableBuilder[Self <: CheckFalsy] (val x: Self) extends AnyVal {
+  extension [Self <: CheckFalsy](x: Self) {
     
-    @scala.inline
-    def setCheckFalsy(value: Boolean): Self = StObject.set(x, "checkFalsy", value.asInstanceOf[js.Any])
+    inline def setCheckFalsy(value: Boolean): Self = StObject.set(x, "checkFalsy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckFalsyUndefined: Self = StObject.set(x, "checkFalsy", js.undefined)
+    inline def setCheckFalsyUndefined: Self = StObject.set(x, "checkFalsy", js.undefined)
     
-    @scala.inline
-    def setCheckNull(value: Boolean): Self = StObject.set(x, "checkNull", value.asInstanceOf[js.Any])
+    inline def setCheckNull(value: Boolean): Self = StObject.set(x, "checkNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckNullUndefined: Self = StObject.set(x, "checkNull", js.undefined)
+    inline def setCheckNullUndefined: Self = StObject.set(x, "checkNull", js.undefined)
   }
 }

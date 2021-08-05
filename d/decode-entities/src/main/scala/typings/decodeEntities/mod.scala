@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(encodedString: String): String = ^.asInstanceOf[js.Dynamic].apply(encodedString.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(encodedString: String): String = ^.asInstanceOf[js.Dynamic].apply(encodedString.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("decode-entities", JSImport.Namespace)
   @js.native

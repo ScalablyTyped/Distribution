@@ -19,8 +19,7 @@ object applyOptimisticMutationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def applyOptimisticMutation(environment: Environment, config: OptimisticMutationConfig): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOptimisticMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  inline def applyOptimisticMutation(environment: Environment, config: OptimisticMutationConfig): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOptimisticMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
   trait OptimisticMutationConfig extends StObject {
     
@@ -36,50 +35,36 @@ object applyOptimisticMutationMod {
   }
   object OptimisticMutationConfig {
     
-    @scala.inline
-    def apply(mutation: GraphQLTaggedNode, variables: Variables): OptimisticMutationConfig = {
+    inline def apply(mutation: GraphQLTaggedNode, variables: Variables): OptimisticMutationConfig = {
       val __obj = js.Dynamic.literal(mutation = mutation.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptimisticMutationConfig]
     }
     
-    @scala.inline
-    implicit class OptimisticMutationConfigMutableBuilder[Self <: OptimisticMutationConfig] (val x: Self) extends AnyVal {
+    extension [Self <: OptimisticMutationConfig](x: Self) {
       
-      @scala.inline
-      def setConfigs(value: js.Array[DeclarativeMutationConfig]): Self = StObject.set(x, "configs", value.asInstanceOf[js.Any])
+      inline def setConfigs(value: js.Array[DeclarativeMutationConfig]): Self = StObject.set(x, "configs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigsNull: Self = StObject.set(x, "configs", null)
+      inline def setConfigsNull: Self = StObject.set(x, "configs", null)
       
-      @scala.inline
-      def setConfigsUndefined: Self = StObject.set(x, "configs", js.undefined)
+      inline def setConfigsUndefined: Self = StObject.set(x, "configs", js.undefined)
       
-      @scala.inline
-      def setConfigsVarargs(value: DeclarativeMutationConfig*): Self = StObject.set(x, "configs", js.Array(value :_*))
+      inline def setConfigsVarargs(value: DeclarativeMutationConfig*): Self = StObject.set(x, "configs", js.Array(value :_*))
       
-      @scala.inline
-      def setMutation(value: GraphQLTaggedNode): Self = StObject.set(x, "mutation", value.asInstanceOf[js.Any])
+      inline def setMutation(value: GraphQLTaggedNode): Self = StObject.set(x, "mutation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMutationFunction0(value: () => ReaderFragment | ConcreteRequest): Self = StObject.set(x, "mutation", js.Any.fromFunction0(value))
+      inline def setMutationFunction0(value: () => ReaderFragment | ConcreteRequest): Self = StObject.set(x, "mutation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOptimisticResponse(value: js.Object): Self = StObject.set(x, "optimisticResponse", value.asInstanceOf[js.Any])
+      inline def setOptimisticResponse(value: js.Object): Self = StObject.set(x, "optimisticResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimisticResponseUndefined: Self = StObject.set(x, "optimisticResponse", js.undefined)
+      inline def setOptimisticResponseUndefined: Self = StObject.set(x, "optimisticResponse", js.undefined)
       
-      @scala.inline
-      def setOptimisticUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "optimisticUpdater", js.Any.fromFunction2(value))
+      inline def setOptimisticUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "optimisticUpdater", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOptimisticUpdaterNull: Self = StObject.set(x, "optimisticUpdater", null)
+      inline def setOptimisticUpdaterNull: Self = StObject.set(x, "optimisticUpdater", null)
       
-      @scala.inline
-      def setOptimisticUpdaterUndefined: Self = StObject.set(x, "optimisticUpdater", js.undefined)
+      inline def setOptimisticUpdaterUndefined: Self = StObject.set(x, "optimisticUpdater", js.undefined)
       
-      @scala.inline
-      def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     }
   }
 }

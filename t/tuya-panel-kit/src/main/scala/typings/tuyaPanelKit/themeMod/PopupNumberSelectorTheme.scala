@@ -12,19 +12,15 @@ trait PopupNumberSelectorTheme extends StObject {
 }
 object PopupNumberSelectorTheme {
   
-  @scala.inline
-  def apply(cellPlusColor: String, maximumTrackTintColor: String): PopupNumberSelectorTheme = {
+  inline def apply(cellPlusColor: String, maximumTrackTintColor: String): PopupNumberSelectorTheme = {
     val __obj = js.Dynamic.literal(cellPlusColor = cellPlusColor.asInstanceOf[js.Any], maximumTrackTintColor = maximumTrackTintColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupNumberSelectorTheme]
   }
   
-  @scala.inline
-  implicit class PopupNumberSelectorThemeMutableBuilder[Self <: PopupNumberSelectorTheme] (val x: Self) extends AnyVal {
+  extension [Self <: PopupNumberSelectorTheme](x: Self) {
     
-    @scala.inline
-    def setCellPlusColor(value: String): Self = StObject.set(x, "cellPlusColor", value.asInstanceOf[js.Any])
+    inline def setCellPlusColor(value: String): Self = StObject.set(x, "cellPlusColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
+    inline def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
   }
 }

@@ -20,12 +20,10 @@ object Popover {
   @JSImport("@ant-design/react-native", "Popover.Item")
   @js.native
   def Item: TypeofPopoverItem = js.native
-  @scala.inline
-  def Item_=(x: TypeofPopoverItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: TypeofPopoverItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   
   @JSImport("@ant-design/react-native", "Popover.defaultProps")
   @js.native
   def defaultProps: OnSelect = js.native
-  @scala.inline
-  def defaultProps_=(x: OnSelect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: OnSelect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

@@ -9,8 +9,7 @@ trait IGroupDividerProps
      with typings.officeUiFabricReact.groupedListTypesMod.IGroupDividerProps
 object IGroupDividerProps {
   
-  @scala.inline
-  def apply(): IGroupDividerProps = {
+  inline def apply(): IGroupDividerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGroupDividerProps]
   }

@@ -12,19 +12,15 @@ trait ITouchCapabilities extends StObject {
 }
 object ITouchCapabilities {
   
-  @scala.inline
-  def apply(contacts: Double, touchPresent: Double): ITouchCapabilities = {
+  inline def apply(contacts: Double, touchPresent: Double): ITouchCapabilities = {
     val __obj = js.Dynamic.literal(contacts = contacts.asInstanceOf[js.Any], touchPresent = touchPresent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITouchCapabilities]
   }
   
-  @scala.inline
-  implicit class ITouchCapabilitiesMutableBuilder[Self <: ITouchCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: ITouchCapabilities](x: Self) {
     
-    @scala.inline
-    def setContacts(value: Double): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
+    inline def setContacts(value: Double): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchPresent(value: Double): Self = StObject.set(x, "touchPresent", value.asInstanceOf[js.Any])
+    inline def setTouchPresent(value: Double): Self = StObject.set(x, "touchPresent", value.asInstanceOf[js.Any])
   }
 }

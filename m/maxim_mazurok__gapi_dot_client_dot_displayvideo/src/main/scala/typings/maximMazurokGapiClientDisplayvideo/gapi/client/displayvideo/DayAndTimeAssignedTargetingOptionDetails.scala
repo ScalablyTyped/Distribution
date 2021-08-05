@@ -20,37 +20,27 @@ trait DayAndTimeAssignedTargetingOptionDetails extends StObject {
 }
 object DayAndTimeAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): DayAndTimeAssignedTargetingOptionDetails = {
+  inline def apply(): DayAndTimeAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DayAndTimeAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class DayAndTimeAssignedTargetingOptionDetailsMutableBuilder[Self <: DayAndTimeAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: DayAndTimeAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setDayOfWeek(value: String): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
+    inline def setDayOfWeek(value: String): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
+    inline def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
     
-    @scala.inline
-    def setEndHour(value: Double): Self = StObject.set(x, "endHour", value.asInstanceOf[js.Any])
+    inline def setEndHour(value: Double): Self = StObject.set(x, "endHour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndHourUndefined: Self = StObject.set(x, "endHour", js.undefined)
+    inline def setEndHourUndefined: Self = StObject.set(x, "endHour", js.undefined)
     
-    @scala.inline
-    def setStartHour(value: Double): Self = StObject.set(x, "startHour", value.asInstanceOf[js.Any])
+    inline def setStartHour(value: Double): Self = StObject.set(x, "startHour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartHourUndefined: Self = StObject.set(x, "startHour", js.undefined)
+    inline def setStartHourUndefined: Self = StObject.set(x, "startHour", js.undefined)
     
-    @scala.inline
-    def setTimeZoneResolution(value: String): Self = StObject.set(x, "timeZoneResolution", value.asInstanceOf[js.Any])
+    inline def setTimeZoneResolution(value: String): Self = StObject.set(x, "timeZoneResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneResolutionUndefined: Self = StObject.set(x, "timeZoneResolution", js.undefined)
+    inline def setTimeZoneResolutionUndefined: Self = StObject.set(x, "timeZoneResolution", js.undefined)
   }
 }

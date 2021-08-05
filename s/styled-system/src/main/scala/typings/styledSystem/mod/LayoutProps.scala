@@ -42,8 +42,7 @@ trait LayoutProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
      with OverflowProps[ThemeType]
 object LayoutProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): LayoutProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): LayoutProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayoutProps[ThemeType]]
   }

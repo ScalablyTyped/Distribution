@@ -15,20 +15,17 @@ object constantsMod {
     @JSImport("@storybook/addon-links/dist/constants", "default.NAVIGATE")
     @js.native
     def NAVIGATE: String = js.native
-    @scala.inline
-    def NAVIGATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAVIGATE")(x.asInstanceOf[js.Any])
+    inline def NAVIGATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAVIGATE")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-links/dist/constants", "default.RECEIVE")
     @js.native
     def RECEIVE: String = js.native
-    @scala.inline
-    def RECEIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RECEIVE")(x.asInstanceOf[js.Any])
+    inline def RECEIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RECEIVE")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-links/dist/constants", "default.REQUEST")
     @js.native
     def REQUEST: String = js.native
-    @scala.inline
-    def REQUEST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST")(x.asInstanceOf[js.Any])
+    inline def REQUEST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@storybook/addon-links/dist/constants", "ADDON_ID")

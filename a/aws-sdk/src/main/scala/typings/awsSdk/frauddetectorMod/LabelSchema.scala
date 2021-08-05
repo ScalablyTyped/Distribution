@@ -13,16 +13,13 @@ trait LabelSchema extends StObject {
 }
 object LabelSchema {
   
-  @scala.inline
-  def apply(labelMapper: labelMapper): LabelSchema = {
+  inline def apply(labelMapper: labelMapper): LabelSchema = {
     val __obj = js.Dynamic.literal(labelMapper = labelMapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelSchema]
   }
   
-  @scala.inline
-  implicit class LabelSchemaMutableBuilder[Self <: LabelSchema] (val x: Self) extends AnyVal {
+  extension [Self <: LabelSchema](x: Self) {
     
-    @scala.inline
-    def setLabelMapper(value: labelMapper): Self = StObject.set(x, "labelMapper", value.asInstanceOf[js.Any])
+    inline def setLabelMapper(value: labelMapper): Self = StObject.set(x, "labelMapper", value.asInstanceOf[js.Any])
   }
 }

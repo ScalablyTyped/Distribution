@@ -14,25 +14,19 @@ trait ObjectOptions extends StObject {
 }
 object ObjectOptions {
   
-  @scala.inline
-  def apply(): ObjectOptions = {
+  inline def apply(): ObjectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectOptions]
   }
   
-  @scala.inline
-  implicit class ObjectOptionsMutableBuilder[Self <: ObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectOptions](x: Self) {
     
-    @scala.inline
-    def setDisplayOptions(value: ObjectDisplayOptions): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
+    inline def setDisplayOptions(value: ObjectDisplayOptions): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
+    inline def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
     
-    @scala.inline
-    def setFreshnessOptions(value: FreshnessOptions): Self = StObject.set(x, "freshnessOptions", value.asInstanceOf[js.Any])
+    inline def setFreshnessOptions(value: FreshnessOptions): Self = StObject.set(x, "freshnessOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreshnessOptionsUndefined: Self = StObject.set(x, "freshnessOptions", js.undefined)
+    inline def setFreshnessOptionsUndefined: Self = StObject.set(x, "freshnessOptions", js.undefined)
   }
 }

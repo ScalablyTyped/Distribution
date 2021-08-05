@@ -31,25 +31,19 @@ trait AddCardAuthResult extends StObject {
 }
 object AddCardAuthResult {
   
-  @scala.inline
-  def apply(code: String, result: Appid, resultStatus: String, success: Boolean): AddCardAuthResult = {
+  inline def apply(code: String, result: Appid, resultStatus: String, success: Boolean): AddCardAuthResult = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], resultStatus = resultStatus.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCardAuthResult]
   }
   
-  @scala.inline
-  implicit class AddCardAuthResultMutableBuilder[Self <: AddCardAuthResult] (val x: Self) extends AnyVal {
+  extension [Self <: AddCardAuthResult](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Appid): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Appid): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultStatus(value: String): Self = StObject.set(x, "resultStatus", value.asInstanceOf[js.Any])
+    inline def setResultStatus(value: String): Self = StObject.set(x, "resultStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

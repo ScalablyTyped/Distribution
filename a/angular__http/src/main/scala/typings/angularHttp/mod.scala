@@ -68,8 +68,7 @@ object mod {
     /**
       * Returns a new Headers instance from the given DOMString of Response Headers
       */
-    @scala.inline
-    def fromResponseHeaderString(headersString: String): typings.angularHttp.headersMod.Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("fromResponseHeaderString")(headersString.asInstanceOf[js.Any]).asInstanceOf[typings.angularHttp.headersMod.Headers]
+    inline def fromResponseHeaderString(headersString: String): typings.angularHttp.headersMod.Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("fromResponseHeaderString")(headersString.asInstanceOf[js.Any]).asInstanceOf[typings.angularHttp.headersMod.Headers]
   }
   
   @JSImport("@angular/http", "Http")
@@ -265,17 +264,14 @@ object mod {
   abstract class XSRFStrategy ()
     extends typings.angularHttp.publicApiMod.XSRFStrategy
   
-  @scala.inline
-  def ɵangularPackagesHttpHttpA(): typings.angularHttp.xhrBackendMod.CookieXSRFStrategy = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_http_http_a")().asInstanceOf[typings.angularHttp.xhrBackendMod.CookieXSRFStrategy]
+  inline def ɵangularPackagesHttpHttpA(): typings.angularHttp.xhrBackendMod.CookieXSRFStrategy = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_http_http_a")().asInstanceOf[typings.angularHttp.xhrBackendMod.CookieXSRFStrategy]
   
-  @scala.inline
-  def ɵangularPackagesHttpHttpB(
+  inline def ɵangularPackagesHttpHttpB(
     xhrBackend: typings.angularHttp.xhrBackendMod.XHRBackend,
     requestOptions: typings.angularHttp.baseRequestOptionsMod.RequestOptions
   ): typings.angularHttp.httpMod.Http = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_http_http_b")(xhrBackend.asInstanceOf[js.Any], requestOptions.asInstanceOf[js.Any])).asInstanceOf[typings.angularHttp.httpMod.Http]
   
-  @scala.inline
-  def ɵangularPackagesHttpHttpC(
+  inline def ɵangularPackagesHttpHttpC(
     jsonpBackend: typings.angularHttp.jsonpBackendMod.JSONPBackend,
     requestOptions: typings.angularHttp.baseRequestOptionsMod.RequestOptions
   ): typings.angularHttp.httpMod.Jsonp = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_http_http_c")(jsonpBackend.asInstanceOf[js.Any], requestOptions.asInstanceOf[js.Any])).asInstanceOf[typings.angularHttp.httpMod.Jsonp]

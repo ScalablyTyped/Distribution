@@ -12,16 +12,13 @@ trait TemporalModel
 }
 object TemporalModel {
   
-  @scala.inline
-  def apply(created_at: String, id: ZendeskID): TemporalModel = {
+  inline def apply(created_at: String, id: ZendeskID): TemporalModel = {
     val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemporalModel]
   }
   
-  @scala.inline
-  implicit class TemporalModelMutableBuilder[Self <: TemporalModel] (val x: Self) extends AnyVal {
+  extension [Self <: TemporalModel](x: Self) {
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
   }
 }

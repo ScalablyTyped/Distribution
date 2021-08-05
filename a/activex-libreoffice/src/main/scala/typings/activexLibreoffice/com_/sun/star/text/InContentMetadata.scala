@@ -25,8 +25,7 @@ trait InContentMetadata
      with XChild
 object InContentMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],

@@ -24,17 +24,14 @@ object nimblePickerMod {
   }
   object NimblePickerProps {
     
-    @scala.inline
-    def apply(data: Data): NimblePickerProps = {
+    inline def apply(data: Data): NimblePickerProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[NimblePickerProps]
     }
     
-    @scala.inline
-    implicit class NimblePickerPropsMutableBuilder[Self <: NimblePickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: NimblePickerProps](x: Self) {
       
-      @scala.inline
-      def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
 }

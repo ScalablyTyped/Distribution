@@ -18,22 +18,17 @@ trait UpdateDatasetGroupRequest extends StObject {
 }
 object UpdateDatasetGroupRequest {
   
-  @scala.inline
-  def apply(DatasetArns: ArnList, DatasetGroupArn: Arn): UpdateDatasetGroupRequest = {
+  inline def apply(DatasetArns: ArnList, DatasetGroupArn: Arn): UpdateDatasetGroupRequest = {
     val __obj = js.Dynamic.literal(DatasetArns = DatasetArns.asInstanceOf[js.Any], DatasetGroupArn = DatasetGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDatasetGroupRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDatasetGroupRequestMutableBuilder[Self <: UpdateDatasetGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDatasetGroupRequest](x: Self) {
     
-    @scala.inline
-    def setDatasetArns(value: ArnList): Self = StObject.set(x, "DatasetArns", value.asInstanceOf[js.Any])
+    inline def setDatasetArns(value: ArnList): Self = StObject.set(x, "DatasetArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetArnsVarargs(value: Arn*): Self = StObject.set(x, "DatasetArns", js.Array(value :_*))
+    inline def setDatasetArnsVarargs(value: Arn*): Self = StObject.set(x, "DatasetArns", js.Array(value :_*))
     
-    @scala.inline
-    def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "DatasetGroupArn", value.asInstanceOf[js.Any])
+    inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "DatasetGroupArn", value.asInstanceOf[js.Any])
   }
 }

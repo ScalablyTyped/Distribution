@@ -86,23 +86,18 @@ object Web {
   }
   object IWebAuthenticationResult {
     
-    @scala.inline
-    def apply(responseData: String, responseErrorDetail: Double, responseStatus: WebAuthenticationStatus): IWebAuthenticationResult = {
+    inline def apply(responseData: String, responseErrorDetail: Double, responseStatus: WebAuthenticationStatus): IWebAuthenticationResult = {
       val __obj = js.Dynamic.literal(responseData = responseData.asInstanceOf[js.Any], responseErrorDetail = responseErrorDetail.asInstanceOf[js.Any], responseStatus = responseStatus.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWebAuthenticationResult]
     }
     
-    @scala.inline
-    implicit class IWebAuthenticationResultMutableBuilder[Self <: IWebAuthenticationResult] (val x: Self) extends AnyVal {
+    extension [Self <: IWebAuthenticationResult](x: Self) {
       
-      @scala.inline
-      def setResponseData(value: String): Self = StObject.set(x, "responseData", value.asInstanceOf[js.Any])
+      inline def setResponseData(value: String): Self = StObject.set(x, "responseData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseErrorDetail(value: Double): Self = StObject.set(x, "responseErrorDetail", value.asInstanceOf[js.Any])
+      inline def setResponseErrorDetail(value: Double): Self = StObject.set(x, "responseErrorDetail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseStatus(value: WebAuthenticationStatus): Self = StObject.set(x, "responseStatus", value.asInstanceOf[js.Any])
+      inline def setResponseStatus(value: WebAuthenticationStatus): Self = StObject.set(x, "responseStatus", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,8 +108,7 @@ object Web {
        with IWebAuthenticationResult
   object WebAuthenticationResult {
     
-    @scala.inline
-    def apply(responseData: String, responseErrorDetail: Double, responseStatus: WebAuthenticationStatus): WebAuthenticationResult = {
+    inline def apply(responseData: String, responseErrorDetail: Double, responseStatus: WebAuthenticationStatus): WebAuthenticationResult = {
       val __obj = js.Dynamic.literal(responseData = responseData.asInstanceOf[js.Any], responseErrorDetail = responseErrorDetail.asInstanceOf[js.Any], responseStatus = responseStatus.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebAuthenticationResult]
     }

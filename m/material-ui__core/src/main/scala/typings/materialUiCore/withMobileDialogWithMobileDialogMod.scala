@@ -13,16 +13,14 @@ object withMobileDialogWithMobileDialogMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[P](): js.Function1[
+  inline def default[P](): js.Function1[
     /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
     ComponentType[P & PartialWithWidth]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[
     /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
     ComponentType[P & PartialWithWidth]
   ]]
-  @scala.inline
-  def default[P](options: WithMobileDialogOptions): js.Function1[
+  inline def default[P](options: WithMobileDialogOptions): js.Function1[
     /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
     ComponentType[P & PartialWithWidth]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -36,20 +34,16 @@ object withMobileDialogWithMobileDialogMod {
   }
   object InjectedProps {
     
-    @scala.inline
-    def apply(): InjectedProps = {
+    inline def apply(): InjectedProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InjectedProps]
     }
     
-    @scala.inline
-    implicit class InjectedPropsMutableBuilder[Self <: InjectedProps] (val x: Self) extends AnyVal {
+    extension [Self <: InjectedProps](x: Self) {
       
-      @scala.inline
-      def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+      inline def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
+      inline def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
     }
   }
   
@@ -59,17 +53,14 @@ object withMobileDialogWithMobileDialogMod {
   }
   object WithMobileDialogOptions {
     
-    @scala.inline
-    def apply(breakpoint: Breakpoint): WithMobileDialogOptions = {
+    inline def apply(breakpoint: Breakpoint): WithMobileDialogOptions = {
       val __obj = js.Dynamic.literal(breakpoint = breakpoint.asInstanceOf[js.Any])
       __obj.asInstanceOf[WithMobileDialogOptions]
     }
     
-    @scala.inline
-    implicit class WithMobileDialogOptionsMutableBuilder[Self <: WithMobileDialogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WithMobileDialogOptions](x: Self) {
       
-      @scala.inline
-      def setBreakpoint(value: Breakpoint): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+      inline def setBreakpoint(value: Breakpoint): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
     }
   }
 }

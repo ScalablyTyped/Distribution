@@ -15,17 +15,14 @@ trait AssemblyStackAssignment
 }
 object AssemblyStackAssignment {
   
-  @scala.inline
-  def apply(): AssemblyStackAssignment = {
+  inline def apply(): AssemblyStackAssignment = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("AssemblyStackAssignment")
     __obj.asInstanceOf[AssemblyStackAssignment]
   }
   
-  @scala.inline
-  implicit class AssemblyStackAssignmentMutableBuilder[Self <: AssemblyStackAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: AssemblyStackAssignment](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyStackAssignment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyStackAssignment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

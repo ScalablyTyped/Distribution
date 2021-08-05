@@ -39,8 +39,7 @@ trait XDropTargetDragContext
 }
 object XDropTargetDragContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acceptDrag: Double => Unit,
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
@@ -51,13 +50,10 @@ object XDropTargetDragContext {
     __obj.asInstanceOf[XDropTargetDragContext]
   }
   
-  @scala.inline
-  implicit class XDropTargetDragContextMutableBuilder[Self <: XDropTargetDragContext] (val x: Self) extends AnyVal {
+  extension [Self <: XDropTargetDragContext](x: Self) {
     
-    @scala.inline
-    def setAcceptDrag(value: Double => Unit): Self = StObject.set(x, "acceptDrag", js.Any.fromFunction1(value))
+    inline def setAcceptDrag(value: Double => Unit): Self = StObject.set(x, "acceptDrag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRejectDrag(value: () => Unit): Self = StObject.set(x, "rejectDrag", js.Any.fromFunction0(value))
+    inline def setRejectDrag(value: () => Unit): Self = StObject.set(x, "rejectDrag", js.Any.fromFunction0(value))
   }
 }

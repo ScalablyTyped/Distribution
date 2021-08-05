@@ -14,19 +14,15 @@ trait TransitStop extends StObject {
 }
 object TransitStop {
   
-  @scala.inline
-  def apply(location: LatLngLiteral, name: String): TransitStop = {
+  inline def apply(location: LatLngLiteral, name: String): TransitStop = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitStop]
   }
   
-  @scala.inline
-  implicit class TransitStopMutableBuilder[Self <: TransitStop] (val x: Self) extends AnyVal {
+  extension [Self <: TransitStop](x: Self) {
     
-    @scala.inline
-    def setLocation(value: LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

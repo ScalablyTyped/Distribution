@@ -39,8 +39,7 @@ trait SortsFunctions extends StObject {
 }
 object SortsFunctions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     number: (js.Any, js.Any, String, Double) => Double,
     originalPlacement: (js.Any, js.Any) => Double,
     string: (js.Any, js.Any, String, Double) => Double
@@ -49,16 +48,12 @@ object SortsFunctions {
     __obj.asInstanceOf[SortsFunctions]
   }
   
-  @scala.inline
-  implicit class SortsFunctionsMutableBuilder[Self <: SortsFunctions] (val x: Self) extends AnyVal {
+  extension [Self <: SortsFunctions](x: Self) {
     
-    @scala.inline
-    def setNumber(value: (js.Any, js.Any, String, Double) => Double): Self = StObject.set(x, "number", js.Any.fromFunction4(value))
+    inline def setNumber(value: (js.Any, js.Any, String, Double) => Double): Self = StObject.set(x, "number", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOriginalPlacement(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "originalPlacement", js.Any.fromFunction2(value))
+    inline def setOriginalPlacement(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "originalPlacement", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setString(value: (js.Any, js.Any, String, Double) => Double): Self = StObject.set(x, "string", js.Any.fromFunction4(value))
+    inline def setString(value: (js.Any, js.Any, String, Double) => Double): Self = StObject.set(x, "string", js.Any.fromFunction4(value))
   }
 }

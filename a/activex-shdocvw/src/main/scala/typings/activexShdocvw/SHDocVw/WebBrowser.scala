@@ -198,7 +198,7 @@ trait WebBrowser extends StObject {
   /** Controls whether the window is resizable */
   var Resizable: Boolean = js.native
   
-  @JSName("SHDocVw.WebBrowser_typekey")
+  /* private */ @JSName("SHDocVw.WebBrowser_typekey")
   var SHDocVwDotWebBrowser_typekey: WebBrowser = js.native
   
   /** Set BrowserBar to Clsid */

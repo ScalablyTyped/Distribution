@@ -42,8 +42,7 @@ trait WhiteBalanceControl extends StObject {
 }
 object WhiteBalanceControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     max: Double,
     min: Double,
     preset: ColorTemperaturePreset,
@@ -57,31 +56,22 @@ object WhiteBalanceControl {
     __obj.asInstanceOf[WhiteBalanceControl]
   }
   
-  @scala.inline
-  implicit class WhiteBalanceControlMutableBuilder[Self <: WhiteBalanceControl] (val x: Self) extends AnyVal {
+  extension [Self <: WhiteBalanceControl](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreset(value: ColorTemperaturePreset): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+    inline def setPreset(value: ColorTemperaturePreset): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPresetAsync(value: ColorTemperaturePreset => IPromiseWithIAsyncAction): Self = StObject.set(x, "setPresetAsync", js.Any.fromFunction1(value))
+    inline def setSetPresetAsync(value: ColorTemperaturePreset => IPromiseWithIAsyncAction): Self = StObject.set(x, "setPresetAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueAsync(value: Double => IPromiseWithIAsyncAction): Self = StObject.set(x, "setValueAsync", js.Any.fromFunction1(value))
+    inline def setSetValueAsync(value: Double => IPromiseWithIAsyncAction): Self = StObject.set(x, "setValueAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

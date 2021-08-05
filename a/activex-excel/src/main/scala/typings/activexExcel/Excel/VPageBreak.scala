@@ -14,7 +14,7 @@ trait VPageBreak extends StObject {
   
   def DragOff(Direction: XlDirection, RegionIndex: Double): Unit
   
-  @JSName("Excel.VPageBreak_typekey")
+  /* private */ @JSName("Excel.VPageBreak_typekey")
   var ExcelDotVPageBreak_typekey: VPageBreak
   
   val Extent: XlPageBreakExtent
@@ -31,8 +31,7 @@ trait VPageBreak extends StObject {
 }
 object VPageBreak {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     Delete: () => Unit,
@@ -48,34 +47,24 @@ object VPageBreak {
     __obj.asInstanceOf[VPageBreak]
   }
   
-  @scala.inline
-  implicit class VPageBreakMutableBuilder[Self <: VPageBreak] (val x: Self) extends AnyVal {
+  extension [Self <: VPageBreak](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDragOff(value: (XlDirection, Double) => Unit): Self = StObject.set(x, "DragOff", js.Any.fromFunction2(value))
+    inline def setDragOff(value: (XlDirection, Double) => Unit): Self = StObject.set(x, "DragOff", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setExcelDotVPageBreak_typekey(value: VPageBreak): Self = StObject.set(x, "Excel.VPageBreak_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotVPageBreak_typekey(value: VPageBreak): Self = StObject.set(x, "Excel.VPageBreak_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtent(value: XlPageBreakExtent): Self = StObject.set(x, "Extent", value.asInstanceOf[js.Any])
+    inline def setExtent(value: XlPageBreakExtent): Self = StObject.set(x, "Extent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Range): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Range): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Worksheet): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Worksheet): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: XlPageBreak): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: XlPageBreak): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -14,7 +14,7 @@ object viewLifeCycleManagerMod {
     extends Component[ViewTransitionManagerProps, ViewTransitionManagerState, js.Any] {
     def this(props: ViewTransitionManagerProps) = this()
     
-    var _isMounted: js.Any = js.native
+    /* private */ var _isMounted: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MViewLifeCycleManager(): Unit = js.native
@@ -33,20 +33,16 @@ object viewLifeCycleManagerMod {
   }
   object ViewTransitionManagerProps {
     
-    @scala.inline
-    def apply(mount: Boolean, removeView: () => Unit): ViewTransitionManagerProps = {
+    inline def apply(mount: Boolean, removeView: () => Unit): ViewTransitionManagerProps = {
       val __obj = js.Dynamic.literal(mount = mount.asInstanceOf[js.Any], removeView = js.Any.fromFunction0(removeView))
       __obj.asInstanceOf[ViewTransitionManagerProps]
     }
     
-    @scala.inline
-    implicit class ViewTransitionManagerPropsMutableBuilder[Self <: ViewTransitionManagerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ViewTransitionManagerProps](x: Self) {
       
-      @scala.inline
-      def setMount(value: Boolean): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
+      inline def setMount(value: Boolean): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveView(value: () => Unit): Self = StObject.set(x, "removeView", js.Any.fromFunction0(value))
+      inline def setRemoveView(value: () => Unit): Self = StObject.set(x, "removeView", js.Any.fromFunction0(value))
     }
   }
   
@@ -56,17 +52,14 @@ object viewLifeCycleManagerMod {
   }
   object ViewTransitionManagerState {
     
-    @scala.inline
-    def apply(show: Boolean): ViewTransitionManagerState = {
+    inline def apply(show: Boolean): ViewTransitionManagerState = {
       val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
       __obj.asInstanceOf[ViewTransitionManagerState]
     }
     
-    @scala.inline
-    implicit class ViewTransitionManagerStateMutableBuilder[Self <: ViewTransitionManagerState] (val x: Self) extends AnyVal {
+    extension [Self <: ViewTransitionManagerState](x: Self) {
       
-      @scala.inline
-      def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     }
   }
 }

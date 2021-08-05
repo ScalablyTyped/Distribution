@@ -12,25 +12,19 @@ trait ChartSeriesDefaultsTooltipBorder extends StObject {
 }
 object ChartSeriesDefaultsTooltipBorder {
   
-  @scala.inline
-  def apply(): ChartSeriesDefaultsTooltipBorder = {
+  inline def apply(): ChartSeriesDefaultsTooltipBorder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartSeriesDefaultsTooltipBorder]
   }
   
-  @scala.inline
-  implicit class ChartSeriesDefaultsTooltipBorderMutableBuilder[Self <: ChartSeriesDefaultsTooltipBorder] (val x: Self) extends AnyVal {
+  extension [Self <: ChartSeriesDefaultsTooltipBorder](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

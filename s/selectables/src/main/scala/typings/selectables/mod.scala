@@ -49,74 +49,52 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setElements(value: String): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: String): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+      inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setKey(value: String | Boolean): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Boolean): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setMoreUsing(value: String): Self = StObject.set(x, "moreUsing", value.asInstanceOf[js.Any])
+      inline def setMoreUsing(value: String): Self = StObject.set(x, "moreUsing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoreUsingUndefined: Self = StObject.set(x, "moreUsing", js.undefined)
+      inline def setMoreUsingUndefined: Self = StObject.set(x, "moreUsing", js.undefined)
       
-      @scala.inline
-      def setOnDeselect(value: /* el */ Element => Unit): Self = StObject.set(x, "onDeselect", js.Any.fromFunction1(value))
+      inline def setOnDeselect(value: /* el */ Element => Unit): Self = StObject.set(x, "onDeselect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
+      inline def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: /* el */ Element => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* el */ Element => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setSelectedClass(value: String): Self = StObject.set(x, "selectedClass", value.asInstanceOf[js.Any])
+      inline def setSelectedClass(value: String): Self = StObject.set(x, "selectedClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedClassUndefined: Self = StObject.set(x, "selectedClass", js.undefined)
+      inline def setSelectedClassUndefined: Self = StObject.set(x, "selectedClass", js.undefined)
       
-      @scala.inline
-      def setStart(value: /* e */ Event => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+      inline def setStart(value: /* e */ Event => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setStop(value: /* e */ Event => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
+      inline def setStop(value: /* e */ Event => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+      inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
       
-      @scala.inline
-      def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+      inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+      inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
     }
   }
   
@@ -130,23 +108,18 @@ object mod {
   }
   object Selectables {
     
-    @scala.inline
-    def apply(disable: () => Unit, enable: () => Unit, options: Options): Selectables = {
+    inline def apply(disable: () => Unit, enable: () => Unit, options: Options): Selectables = {
       val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Selectables]
     }
     
-    @scala.inline
-    implicit class SelectablesMutableBuilder[Self <: Selectables] (val x: Self) extends AnyVal {
+    extension [Self <: Selectables](x: Self) {
       
-      @scala.inline
-      def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
 }

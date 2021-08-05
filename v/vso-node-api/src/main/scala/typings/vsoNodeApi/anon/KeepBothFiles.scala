@@ -16,8 +16,7 @@ trait KeepBothFiles extends StObject {
 }
 object KeepBothFiles {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     keepBothFiles: scala.Double,
     keepSourcePath: scala.Double,
     keepTargetPath: scala.Double,
@@ -27,19 +26,14 @@ object KeepBothFiles {
     __obj.asInstanceOf[KeepBothFiles]
   }
   
-  @scala.inline
-  implicit class KeepBothFilesMutableBuilder[Self <: KeepBothFiles] (val x: Self) extends AnyVal {
+  extension [Self <: KeepBothFiles](x: Self) {
     
-    @scala.inline
-    def setKeepBothFiles(value: scala.Double): Self = StObject.set(x, "keepBothFiles", value.asInstanceOf[js.Any])
+    inline def setKeepBothFiles(value: scala.Double): Self = StObject.set(x, "keepBothFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepSourcePath(value: scala.Double): Self = StObject.set(x, "keepSourcePath", value.asInstanceOf[js.Any])
+    inline def setKeepSourcePath(value: scala.Double): Self = StObject.set(x, "keepSourcePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepTargetPath(value: scala.Double): Self = StObject.set(x, "keepTargetPath", value.asInstanceOf[js.Any])
+    inline def setKeepTargetPath(value: scala.Double): Self = StObject.set(x, "keepTargetPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndecided(value: scala.Double): Self = StObject.set(x, "undecided", value.asInstanceOf[js.Any])
+    inline def setUndecided(value: scala.Double): Self = StObject.set(x, "undecided", value.asInstanceOf[js.Any])
   }
 }

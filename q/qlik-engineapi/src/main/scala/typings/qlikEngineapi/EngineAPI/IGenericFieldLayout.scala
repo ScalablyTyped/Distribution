@@ -18,16 +18,13 @@ trait IGenericFieldLayout
 }
 object IGenericFieldLayout {
   
-  @scala.inline
-  def apply(qFieldListObject: IFieldList, qInfo: INxInfo, qMeta: INxMeta): IGenericFieldLayout = {
+  inline def apply(qFieldListObject: IFieldList, qInfo: INxInfo, qMeta: INxMeta): IGenericFieldLayout = {
     val __obj = js.Dynamic.literal(qFieldListObject = qFieldListObject.asInstanceOf[js.Any], qInfo = qInfo.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericFieldLayout]
   }
   
-  @scala.inline
-  implicit class IGenericFieldLayoutMutableBuilder[Self <: IGenericFieldLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericFieldLayout](x: Self) {
     
-    @scala.inline
-    def setQFieldListObject(value: IFieldList): Self = StObject.set(x, "qFieldListObject", value.asInstanceOf[js.Any])
+    inline def setQFieldListObject(value: IFieldList): Self = StObject.set(x, "qFieldListObject", value.asInstanceOf[js.Any])
   }
 }

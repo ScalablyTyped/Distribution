@@ -15,19 +15,15 @@ trait PromiseFulfilledResult[T]
 }
 object PromiseFulfilledResult {
   
-  @scala.inline
-  def apply[T](value: T): PromiseFulfilledResult[T] = {
+  inline def apply[T](value: T): PromiseFulfilledResult[T] = {
     val __obj = js.Dynamic.literal(status = "fulfilled", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromiseFulfilledResult[T]]
   }
   
-  @scala.inline
-  implicit class PromiseFulfilledResultMutableBuilder[Self <: PromiseFulfilledResult[?], T] (val x: Self & PromiseFulfilledResult[T]) extends AnyVal {
+  extension [Self <: PromiseFulfilledResult[?], T](x: Self & PromiseFulfilledResult[T]) {
     
-    @scala.inline
-    def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

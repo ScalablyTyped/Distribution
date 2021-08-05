@@ -14,16 +14,13 @@ trait RegexPatternSetRegularExpression extends StObject {
 }
 object RegexPatternSetRegularExpression {
   
-  @scala.inline
-  def apply(regexString: Input[String]): RegexPatternSetRegularExpression = {
+  inline def apply(regexString: Input[String]): RegexPatternSetRegularExpression = {
     val __obj = js.Dynamic.literal(regexString = regexString.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegexPatternSetRegularExpression]
   }
   
-  @scala.inline
-  implicit class RegexPatternSetRegularExpressionMutableBuilder[Self <: RegexPatternSetRegularExpression] (val x: Self) extends AnyVal {
+  extension [Self <: RegexPatternSetRegularExpression](x: Self) {
     
-    @scala.inline
-    def setRegexString(value: Input[String]): Self = StObject.set(x, "regexString", value.asInstanceOf[js.Any])
+    inline def setRegexString(value: Input[String]): Self = StObject.set(x, "regexString", value.asInstanceOf[js.Any])
   }
 }

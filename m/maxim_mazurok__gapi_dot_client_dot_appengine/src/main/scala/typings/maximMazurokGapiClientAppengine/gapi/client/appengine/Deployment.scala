@@ -28,41 +28,31 @@ trait Deployment extends StObject {
 }
 object Deployment {
   
-  @scala.inline
-  def apply(): Deployment = {
+  inline def apply(): Deployment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Deployment]
   }
   
-  @scala.inline
-  implicit class DeploymentMutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
+  extension [Self <: Deployment](x: Self) {
     
-    @scala.inline
-    def setCloudBuildOptions(value: CloudBuildOptions): Self = StObject.set(x, "cloudBuildOptions", value.asInstanceOf[js.Any])
+    inline def setCloudBuildOptions(value: CloudBuildOptions): Self = StObject.set(x, "cloudBuildOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudBuildOptionsUndefined: Self = StObject.set(x, "cloudBuildOptions", js.undefined)
+    inline def setCloudBuildOptionsUndefined: Self = StObject.set(x, "cloudBuildOptions", js.undefined)
     
-    @scala.inline
-    def setContainer(value: ContainerInfo): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: ContainerInfo): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setFiles(
+    inline def setFiles(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.appengine.gapi.client.appengine.FileInfo}
       */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.Deployment & TopLevel[js.Any]
     ): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setZip(value: ZipInfo): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
+    inline def setZip(value: ZipInfo): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZipUndefined: Self = StObject.set(x, "zip", js.undefined)
+    inline def setZipUndefined: Self = StObject.set(x, "zip", js.undefined)
   }
 }

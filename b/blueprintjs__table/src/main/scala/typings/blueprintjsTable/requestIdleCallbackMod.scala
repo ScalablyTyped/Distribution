@@ -10,8 +10,7 @@ object requestIdleCallbackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def requestIdleCallback(callback: Callback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestIdleCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def requestIdleCallback(callback: Callback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestIdleCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type Callback = js.Function0[Unit]
 }

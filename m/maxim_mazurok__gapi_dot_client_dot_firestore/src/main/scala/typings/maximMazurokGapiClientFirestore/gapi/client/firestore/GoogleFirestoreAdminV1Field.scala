@@ -26,25 +26,19 @@ trait GoogleFirestoreAdminV1Field extends StObject {
 }
 object GoogleFirestoreAdminV1Field {
   
-  @scala.inline
-  def apply(): GoogleFirestoreAdminV1Field = {
+  inline def apply(): GoogleFirestoreAdminV1Field = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleFirestoreAdminV1Field]
   }
   
-  @scala.inline
-  implicit class GoogleFirestoreAdminV1FieldMutableBuilder[Self <: GoogleFirestoreAdminV1Field] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleFirestoreAdminV1Field](x: Self) {
     
-    @scala.inline
-    def setIndexConfig(value: GoogleFirestoreAdminV1IndexConfig): Self = StObject.set(x, "indexConfig", value.asInstanceOf[js.Any])
+    inline def setIndexConfig(value: GoogleFirestoreAdminV1IndexConfig): Self = StObject.set(x, "indexConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexConfigUndefined: Self = StObject.set(x, "indexConfig", js.undefined)
+    inline def setIndexConfigUndefined: Self = StObject.set(x, "indexConfig", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

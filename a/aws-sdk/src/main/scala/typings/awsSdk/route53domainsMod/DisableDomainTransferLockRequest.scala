@@ -13,16 +13,13 @@ trait DisableDomainTransferLockRequest extends StObject {
 }
 object DisableDomainTransferLockRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): DisableDomainTransferLockRequest = {
+  inline def apply(DomainName: DomainName): DisableDomainTransferLockRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableDomainTransferLockRequest]
   }
   
-  @scala.inline
-  implicit class DisableDomainTransferLockRequestMutableBuilder[Self <: DisableDomainTransferLockRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisableDomainTransferLockRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

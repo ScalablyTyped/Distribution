@@ -15,16 +15,13 @@ trait WlanConnectionProfileDetails extends StObject {
 }
 object WlanConnectionProfileDetails {
   
-  @scala.inline
-  def apply(getConnectedSsid: () => String): WlanConnectionProfileDetails = {
+  inline def apply(getConnectedSsid: () => String): WlanConnectionProfileDetails = {
     val __obj = js.Dynamic.literal(getConnectedSsid = js.Any.fromFunction0(getConnectedSsid))
     __obj.asInstanceOf[WlanConnectionProfileDetails]
   }
   
-  @scala.inline
-  implicit class WlanConnectionProfileDetailsMutableBuilder[Self <: WlanConnectionProfileDetails] (val x: Self) extends AnyVal {
+  extension [Self <: WlanConnectionProfileDetails](x: Self) {
     
-    @scala.inline
-    def setGetConnectedSsid(value: () => String): Self = StObject.set(x, "getConnectedSsid", js.Any.fromFunction0(value))
+    inline def setGetConnectedSsid(value: () => String): Self = StObject.set(x, "getConnectedSsid", js.Any.fromFunction0(value))
   }
 }

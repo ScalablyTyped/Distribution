@@ -26,20 +26,16 @@ object typesGetApnsSandboxChannelOutputMod {
   }
   object GetApnsSandboxChannelOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, APNSSandboxChannelResponse: UnmarshalledAPNSSandboxChannelResponse): GetApnsSandboxChannelOutput = {
+    inline def apply($metadata: ResponseMetadata, APNSSandboxChannelResponse: UnmarshalledAPNSSandboxChannelResponse): GetApnsSandboxChannelOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], APNSSandboxChannelResponse = APNSSandboxChannelResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetApnsSandboxChannelOutput]
     }
     
-    @scala.inline
-    implicit class GetApnsSandboxChannelOutputMutableBuilder[Self <: GetApnsSandboxChannelOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetApnsSandboxChannelOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAPNSSandboxChannelResponse(value: UnmarshalledAPNSSandboxChannelResponse): Self = StObject.set(x, "APNSSandboxChannelResponse", value.asInstanceOf[js.Any])
+      inline def setAPNSSandboxChannelResponse(value: UnmarshalledAPNSSandboxChannelResponse): Self = StObject.set(x, "APNSSandboxChannelResponse", value.asInstanceOf[js.Any])
     }
   }
 }

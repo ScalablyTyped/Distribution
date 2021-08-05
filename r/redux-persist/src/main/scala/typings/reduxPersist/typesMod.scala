@@ -65,112 +65,78 @@ object typesMod {
   }
   object PersistConfig {
     
-    @scala.inline
-    def apply[S, RS, HSS, ESS](key: String, storage: Storage): PersistConfig[S, RS, HSS, ESS] = {
+    inline def apply[S, RS, HSS, ESS](key: String, storage: Storage): PersistConfig[S, RS, HSS, ESS] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any])
       __obj.asInstanceOf[PersistConfig[S, RS, HSS, ESS]]
     }
     
-    @scala.inline
-    implicit class PersistConfigMutableBuilder[Self <: PersistConfig[?, ?, ?, ?], S, RS, HSS, ESS] (val x: Self & (PersistConfig[S, RS, HSS, ESS])) extends AnyVal {
+    extension [Self <: PersistConfig[?, ?, ?, ?], S, RS, HSS, ESS](x: Self & (PersistConfig[S, RS, HSS, ESS])) {
       
-      @scala.inline
-      def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+      inline def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+      inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
-      @scala.inline
-      def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
+      inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setGetStoredState(value: /* config */ PersistConfig[S, RS, HSS, ESS] => js.Promise[PersistedState]): Self = StObject.set(x, "getStoredState", js.Any.fromFunction1(value))
+      inline def setGetStoredState(value: /* config */ PersistConfig[S, RS, HSS, ESS] => js.Promise[PersistedState]): Self = StObject.set(x, "getStoredState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetStoredStateUndefined: Self = StObject.set(x, "getStoredState", js.undefined)
+      inline def setGetStoredStateUndefined: Self = StObject.set(x, "getStoredState", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyPrefix(value: String): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
+      inline def setKeyPrefix(value: String): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyPrefixUndefined: Self = StObject.set(x, "keyPrefix", js.undefined)
+      inline def setKeyPrefixUndefined: Self = StObject.set(x, "keyPrefix", js.undefined)
       
-      @scala.inline
-      def setMigrate(value: (/* state */ PersistedState, /* currentVersion */ Double) => js.Promise[PersistedState]): Self = StObject.set(x, "migrate", js.Any.fromFunction2(value))
+      inline def setMigrate(value: (/* state */ PersistedState, /* currentVersion */ Double) => js.Promise[PersistedState]): Self = StObject.set(x, "migrate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMigrateUndefined: Self = StObject.set(x, "migrate", js.undefined)
+      inline def setMigrateUndefined: Self = StObject.set(x, "migrate", js.undefined)
       
-      @scala.inline
-      def setSerialize(value: Boolean): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
+      inline def setSerialize(value: Boolean): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
+      inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
       
-      @scala.inline
-      def setStateReconciler(value: `false` | StateReconciler[S]): Self = StObject.set(x, "stateReconciler", value.asInstanceOf[js.Any])
+      inline def setStateReconciler(value: `false` | StateReconciler[S]): Self = StObject.set(x, "stateReconciler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateReconcilerFunction4(
+      inline def setStateReconcilerFunction4(
         value: (/* inboundState */ js.Any, S, S, /* config */ PersistConfig[S, js.Any, js.Any, js.Any]) => S
       ): Self = StObject.set(x, "stateReconciler", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setStateReconcilerUndefined: Self = StObject.set(x, "stateReconciler", js.undefined)
+      inline def setStateReconcilerUndefined: Self = StObject.set(x, "stateReconciler", js.undefined)
       
-      @scala.inline
-      def setStorage(value: Storage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: Storage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+      inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
+      inline def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTransforms(value: js.Array[Transform[HSS, ESS, S, RS]]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
+      inline def setTransforms(value: js.Array[Transform[HSS, ESS, S, RS]]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
+      inline def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
       
-      @scala.inline
-      def setTransformsVarargs(value: (Transform[HSS, ESS, S, RS])*): Self = StObject.set(x, "transforms", js.Array(value :_*))
+      inline def setTransformsVarargs(value: (Transform[HSS, ESS, S, RS])*): Self = StObject.set(x, "transforms", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       
-      @scala.inline
-      def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+      inline def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+      inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
       
-      @scala.inline
-      def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+      inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
       
-      @scala.inline
-      def setWriteFailHandler(value: /* err */ Error => Unit): Self = StObject.set(x, "writeFailHandler", js.Any.fromFunction1(value))
+      inline def setWriteFailHandler(value: /* err */ Error => Unit): Self = StObject.set(x, "writeFailHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteFailHandlerUndefined: Self = StObject.set(x, "writeFailHandler", js.undefined)
+      inline def setWriteFailHandlerUndefined: Self = StObject.set(x, "writeFailHandler", js.undefined)
     }
   }
   
@@ -184,20 +150,16 @@ object typesMod {
   }
   object PersistState {
     
-    @scala.inline
-    def apply(rehydrated: Boolean, version: Double): PersistState = {
+    inline def apply(rehydrated: Boolean, version: Double): PersistState = {
       val __obj = js.Dynamic.literal(rehydrated = rehydrated.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[PersistState]
     }
     
-    @scala.inline
-    implicit class PersistStateMutableBuilder[Self <: PersistState] (val x: Self) extends AnyVal {
+    extension [Self <: PersistState](x: Self) {
       
-      @scala.inline
-      def setRehydrated(value: Boolean): Self = StObject.set(x, "rehydrated", value.asInstanceOf[js.Any])
+      inline def setRehydrated(value: Boolean): Self = StObject.set(x, "rehydrated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,20 +173,16 @@ object typesMod {
   }
   object Persistoid {
     
-    @scala.inline
-    def apply(flush: () => js.Promise[js.Any], update: js.Object => Unit): Persistoid = {
+    inline def apply(flush: () => js.Promise[js.Any], update: js.Object => Unit): Persistoid = {
       val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush), update = js.Any.fromFunction1(update))
       __obj.asInstanceOf[Persistoid]
     }
     
-    @scala.inline
-    implicit class PersistoidMutableBuilder[Self <: Persistoid] (val x: Self) extends AnyVal {
+    extension [Self <: Persistoid](x: Self) {
       
-      @scala.inline
-      def setFlush(value: () => js.Promise[js.Any]): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      inline def setFlush(value: () => js.Promise[js.Any]): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: js.Object => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: js.Object => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
@@ -250,8 +208,7 @@ object typesMod {
   }
   object Persistor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispatch: PersistorAction => PersistorAction,
       flush: () => js.Promise[js.Any],
       getState: () => PersistorState,
@@ -264,29 +221,21 @@ object typesMod {
       __obj.asInstanceOf[Persistor]
     }
     
-    @scala.inline
-    implicit class PersistorMutableBuilder[Self <: Persistor] (val x: Self) extends AnyVal {
+    extension [Self <: Persistor](x: Self) {
       
-      @scala.inline
-      def setDispatch(value: PersistorAction => PersistorAction): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: PersistorAction => PersistorAction): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlush(value: () => js.Promise[js.Any]): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      inline def setFlush(value: () => js.Promise[js.Any]): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetState(value: () => PersistorState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => PersistorState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPersist(value: () => Unit): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
+      inline def setPersist(value: () => Unit): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPurge(value: () => js.Promise[js.Any]): Self = StObject.set(x, "purge", js.Any.fromFunction0(value))
+      inline def setPurge(value: () => js.Promise[js.Any]): Self = StObject.set(x, "purge", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubscribe(value: PersistorSubscribeCallback => js.Function0[js.Any]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+      inline def setSubscribe(value: PersistorSubscribeCallback => js.Function0[js.Any]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
   }
   
@@ -297,15 +246,13 @@ object typesMod {
   trait PersistorAction extends StObject
   object PersistorAction {
     
-    @scala.inline
-    def RegisterAction(key: String): typings.reduxPersist.typesMod.RegisterAction = {
+    inline def RegisterAction(key: String): typings.reduxPersist.typesMod.RegisterAction = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("persist/REGISTER")
       __obj.asInstanceOf[typings.reduxPersist.typesMod.RegisterAction]
     }
     
-    @scala.inline
-    def RehydrateAction(key: String): typings.reduxPersist.typesMod.RehydrateAction = {
+    inline def RehydrateAction(key: String): typings.reduxPersist.typesMod.RehydrateAction = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("persist/REHYDRATE")
       __obj.asInstanceOf[typings.reduxPersist.typesMod.RehydrateAction]
@@ -318,22 +265,18 @@ object typesMod {
   }
   object PersistorOptions {
     
-    @scala.inline
-    def apply(): PersistorOptions = {
+    inline def apply(): PersistorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PersistorOptions]
     }
     
-    @scala.inline
-    implicit class PersistorOptionsMutableBuilder[Self <: PersistorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PersistorOptions](x: Self) {
       
-      @scala.inline
-      def setEnhancer(
+      inline def setEnhancer(
         value: /* next */ StoreEnhancerStoreCreator[js.Object, js.Object] => StoreEnhancerStoreCreator[js.Any, js.Object]
       ): Self = StObject.set(x, "enhancer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnhancerUndefined: Self = StObject.set(x, "enhancer", js.undefined)
+      inline def setEnhancerUndefined: Self = StObject.set(x, "enhancer", js.undefined)
     }
   }
   
@@ -345,23 +288,18 @@ object typesMod {
   }
   object PersistorState {
     
-    @scala.inline
-    def apply(bootstrapped: Boolean, registry: js.Array[String]): PersistorState = {
+    inline def apply(bootstrapped: Boolean, registry: js.Array[String]): PersistorState = {
       val __obj = js.Dynamic.literal(bootstrapped = bootstrapped.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any])
       __obj.asInstanceOf[PersistorState]
     }
     
-    @scala.inline
-    implicit class PersistorStateMutableBuilder[Self <: PersistorState] (val x: Self) extends AnyVal {
+    extension [Self <: PersistorState](x: Self) {
       
-      @scala.inline
-      def setBootstrapped(value: Boolean): Self = StObject.set(x, "bootstrapped", value.asInstanceOf[js.Any])
+      inline def setBootstrapped(value: Boolean): Self = StObject.set(x, "bootstrapped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistry(value: js.Array[String]): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+      inline def setRegistry(value: js.Array[String]): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistryVarargs(value: String*): Self = StObject.set(x, "registry", js.Array(value :_*))
+      inline def setRegistryVarargs(value: String*): Self = StObject.set(x, "registry", js.Array(value :_*))
     }
   }
   
@@ -377,21 +315,17 @@ object typesMod {
   }
   object RegisterAction {
     
-    @scala.inline
-    def apply(key: String): RegisterAction = {
+    inline def apply(key: String): RegisterAction = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("persist/REGISTER")
       __obj.asInstanceOf[RegisterAction]
     }
     
-    @scala.inline
-    implicit class RegisterActionMutableBuilder[Self <: RegisterAction] (val x: Self) extends AnyVal {
+    extension [Self <: RegisterAction](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: persistSlashREGISTER): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: persistSlashREGISTER): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -409,39 +343,29 @@ object typesMod {
   }
   object RehydrateAction {
     
-    @scala.inline
-    def apply(key: String): RehydrateAction = {
+    inline def apply(key: String): RehydrateAction = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("persist/REHYDRATE")
       __obj.asInstanceOf[RehydrateAction]
     }
     
-    @scala.inline
-    implicit class RehydrateActionMutableBuilder[Self <: RehydrateAction] (val x: Self) extends AnyVal {
+    extension [Self <: RehydrateAction](x: Self) {
       
-      @scala.inline
-      def setErr(value: RehydrateErrorType): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: RehydrateErrorType): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrNull: Self = StObject.set(x, "err", null)
+      inline def setErrNull: Self = StObject.set(x, "err", null)
       
-      @scala.inline
-      def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
+      inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadNull: Self = StObject.set(x, "payload", null)
+      inline def setPayloadNull: Self = StObject.set(x, "payload", null)
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setType(value: persistSlashREHYDRATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: persistSlashREHYDRATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -465,8 +389,7 @@ object typesMod {
   }
   object Storage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getItem: (String, /* repeated */ js.Any) => js.Any,
       removeItem: (String, /* repeated */ js.Any) => js.Any,
       setItem: (String, js.Any, /* repeated */ js.Any) => js.Any
@@ -475,17 +398,13 @@ object typesMod {
       __obj.asInstanceOf[Storage]
     }
     
-    @scala.inline
-    implicit class StorageMutableBuilder[Self <: Storage] (val x: Self) extends AnyVal {
+    extension [Self <: Storage](x: Self) {
       
-      @scala.inline
-      def setGetItem(value: (String, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction2(value))
+      inline def setGetItem(value: (String, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveItem(value: (String, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "removeItem", js.Any.fromFunction2(value))
+      inline def setRemoveItem(value: (String, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "removeItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetItem(value: (String, js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "setItem", js.Any.fromFunction3(value))
+      inline def setSetItem(value: (String, js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "setItem", js.Any.fromFunction3(value))
     }
   }
   
@@ -497,8 +416,7 @@ object typesMod {
   }
   object Transform {
     
-    @scala.inline
-    def apply[HSS, ESS, S, RS](
+    inline def apply[HSS, ESS, S, RS](
       in: (HSS, /* keyof S */ /* key */ String, S) => ESS,
       out: (ESS, /* keyof RS */ /* key */ String, RS) => HSS
     ): Transform[HSS, ESS, S, RS] = {
@@ -506,14 +424,11 @@ object typesMod {
       __obj.asInstanceOf[Transform[HSS, ESS, S, RS]]
     }
     
-    @scala.inline
-    implicit class TransformMutableBuilder[Self <: Transform[?, ?, ?, ?], HSS, ESS, S, RS] (val x: Self & (Transform[HSS, ESS, S, RS])) extends AnyVal {
+    extension [Self <: Transform[?, ?, ?, ?], HSS, ESS, S, RS](x: Self & (Transform[HSS, ESS, S, RS])) {
       
-      @scala.inline
-      def setIn(value: (HSS, /* keyof S */ /* key */ String, S) => ESS): Self = StObject.set(x, "in", js.Any.fromFunction3(value))
+      inline def setIn(value: (HSS, /* keyof S */ /* key */ String, S) => ESS): Self = StObject.set(x, "in", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOut(value: (ESS, /* keyof RS */ /* key */ String, RS) => HSS): Self = StObject.set(x, "out", js.Any.fromFunction3(value))
+      inline def setOut(value: (ESS, /* keyof RS */ /* key */ String, RS) => HSS): Self = StObject.set(x, "out", js.Any.fromFunction3(value))
     }
   }
   
@@ -554,8 +469,7 @@ object typesMod {
   }
   object WebStorage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getItem: String => js.Promise[String | Null],
       removeItem: String => js.Promise[Unit],
       setItem: (String, String) => js.Promise[Unit]
@@ -564,17 +478,13 @@ object typesMod {
       __obj.asInstanceOf[WebStorage]
     }
     
-    @scala.inline
-    implicit class WebStorageMutableBuilder[Self <: WebStorage] (val x: Self) extends AnyVal {
+    extension [Self <: WebStorage](x: Self) {
       
-      @scala.inline
-      def setGetItem(value: String => js.Promise[String | Null]): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+      inline def setGetItem(value: String => js.Promise[String | Null]): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveItem(value: String => js.Promise[Unit]): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+      inline def setRemoveItem(value: String => js.Promise[Unit]): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetItem(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+      inline def setSetItem(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
     }
   }
 }

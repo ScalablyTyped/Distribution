@@ -12,10 +12,8 @@ object registerNavigationRouteMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerNavigationRoute(cachedAssetUrl: String): NavigationRoute = ^.asInstanceOf[js.Dynamic].applyDynamic("registerNavigationRoute")(cachedAssetUrl.asInstanceOf[js.Any]).asInstanceOf[NavigationRoute]
-  @scala.inline
-  def registerNavigationRoute(cachedAssetUrl: String, options: RegisterNavigationRouteOptions): NavigationRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("registerNavigationRoute")(cachedAssetUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NavigationRoute]
+  inline def registerNavigationRoute(cachedAssetUrl: String): NavigationRoute = ^.asInstanceOf[js.Dynamic].applyDynamic("registerNavigationRoute")(cachedAssetUrl.asInstanceOf[js.Any]).asInstanceOf[NavigationRoute]
+  inline def registerNavigationRoute(cachedAssetUrl: String, options: RegisterNavigationRouteOptions): NavigationRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("registerNavigationRoute")(cachedAssetUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NavigationRoute]
   
   trait RegisterNavigationRouteOptions
     extends StObject
@@ -25,20 +23,16 @@ object registerNavigationRouteMod {
   }
   object RegisterNavigationRouteOptions {
     
-    @scala.inline
-    def apply(): RegisterNavigationRouteOptions = {
+    inline def apply(): RegisterNavigationRouteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RegisterNavigationRouteOptions]
     }
     
-    @scala.inline
-    implicit class RegisterNavigationRouteOptionsMutableBuilder[Self <: RegisterNavigationRouteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RegisterNavigationRouteOptions](x: Self) {
       
-      @scala.inline
-      def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
+      inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheNameUndefined: Self = StObject.set(x, "cacheName", js.undefined)
+      inline def setCacheNameUndefined: Self = StObject.set(x, "cacheName", js.undefined)
     }
   }
 }

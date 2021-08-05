@@ -13,19 +13,15 @@ trait DescribeRxNormInferenceJobResponse extends StObject {
 }
 object DescribeRxNormInferenceJobResponse {
   
-  @scala.inline
-  def apply(): DescribeRxNormInferenceJobResponse = {
+  inline def apply(): DescribeRxNormInferenceJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRxNormInferenceJobResponse]
   }
   
-  @scala.inline
-  implicit class DescribeRxNormInferenceJobResponseMutableBuilder[Self <: DescribeRxNormInferenceJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRxNormInferenceJobResponse](x: Self) {
     
-    @scala.inline
-    def setComprehendMedicalAsyncJobProperties(value: ComprehendMedicalAsyncJobProperties): Self = StObject.set(x, "ComprehendMedicalAsyncJobProperties", value.asInstanceOf[js.Any])
+    inline def setComprehendMedicalAsyncJobProperties(value: ComprehendMedicalAsyncJobProperties): Self = StObject.set(x, "ComprehendMedicalAsyncJobProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComprehendMedicalAsyncJobPropertiesUndefined: Self = StObject.set(x, "ComprehendMedicalAsyncJobProperties", js.undefined)
+    inline def setComprehendMedicalAsyncJobPropertiesUndefined: Self = StObject.set(x, "ComprehendMedicalAsyncJobProperties", js.undefined)
   }
 }

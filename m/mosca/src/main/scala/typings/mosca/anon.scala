@@ -16,23 +16,18 @@ object anon {
   }
   object CertPath {
     
-    @scala.inline
-    def apply(certPath: String, keyPath: String, port: Double): CertPath = {
+    inline def apply(certPath: String, keyPath: String, port: Double): CertPath = {
       val __obj = js.Dynamic.literal(certPath = certPath.asInstanceOf[js.Any], keyPath = keyPath.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertPath]
     }
     
-    @scala.inline
-    implicit class CertPathMutableBuilder[Self <: CertPath] (val x: Self) extends AnyVal {
+    extension [Self <: CertPath](x: Self) {
       
-      @scala.inline
-      def setCertPath(value: String): Self = StObject.set(x, "certPath", value.asInstanceOf[js.Any])
+      inline def setCertPath(value: String): Self = StObject.set(x, "certPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyPath(value: String): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
+      inline def setKeyPath(value: String): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,17 +37,14 @@ object anon {
   }
   object Port {
     
-    @scala.inline
-    def apply(port: Double): Port = {
+    inline def apply(port: Double): Port = {
       val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[Port]
     }
     
-    @scala.inline
-    implicit class PortMutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
+    extension [Self <: Port](x: Self) {
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
 }

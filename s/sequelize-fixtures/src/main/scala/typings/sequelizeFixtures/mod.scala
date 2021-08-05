@@ -29,44 +29,32 @@ object mod extends Shortcut {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+        inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+        inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
         
-        @scala.inline
-        def setLog(value: /* message */ String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+        inline def setLog(value: /* message */ String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+        inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
         
-        @scala.inline
-        def setModifyFixtureDataFn(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "modifyFixtureDataFn", js.Any.fromFunction1(value))
+        inline def setModifyFixtureDataFn(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "modifyFixtureDataFn", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setModifyFixtureDataFnUndefined: Self = StObject.set(x, "modifyFixtureDataFn", js.undefined)
+        inline def setModifyFixtureDataFnUndefined: Self = StObject.set(x, "modifyFixtureDataFn", js.undefined)
         
-        @scala.inline
-        def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+        inline def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+        inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
         
-        @scala.inline
-        def setTransformFixtureDataFn(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "transformFixtureDataFn", js.Any.fromFunction1(value))
+        inline def setTransformFixtureDataFn(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "transformFixtureDataFn", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setTransformFixtureDataFnUndefined: Self = StObject.set(x, "transformFixtureDataFn", js.undefined)
+        inline def setTransformFixtureDataFnUndefined: Self = StObject.set(x, "transformFixtureDataFn", js.undefined)
       }
     }
     

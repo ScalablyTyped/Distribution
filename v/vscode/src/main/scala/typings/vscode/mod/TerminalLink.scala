@@ -27,25 +27,19 @@ trait TerminalLink extends StObject {
 }
 object TerminalLink {
   
-  @scala.inline
-  def apply(length: Double, startIndex: Double): TerminalLink = {
+  inline def apply(length: Double, startIndex: Double): TerminalLink = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminalLink]
   }
   
-  @scala.inline
-  implicit class TerminalLinkMutableBuilder[Self <: TerminalLink] (val x: Self) extends AnyVal {
+  extension [Self <: TerminalLink](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

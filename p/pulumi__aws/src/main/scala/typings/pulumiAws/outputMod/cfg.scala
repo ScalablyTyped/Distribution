@@ -25,35 +25,26 @@ object cfg {
   }
   object ConfigurationAggregatorAccountAggregationSource {
     
-    @scala.inline
-    def apply(accountIds: js.Array[String]): ConfigurationAggregatorAccountAggregationSource = {
+    inline def apply(accountIds: js.Array[String]): ConfigurationAggregatorAccountAggregationSource = {
       val __obj = js.Dynamic.literal(accountIds = accountIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigurationAggregatorAccountAggregationSource]
     }
     
-    @scala.inline
-    implicit class ConfigurationAggregatorAccountAggregationSourceMutableBuilder[Self <: ConfigurationAggregatorAccountAggregationSource] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationAggregatorAccountAggregationSource](x: Self) {
       
-      @scala.inline
-      def setAccountIds(value: js.Array[String]): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
+      inline def setAccountIds(value: js.Array[String]): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdsVarargs(value: String*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
+      inline def setAccountIdsVarargs(value: String*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
       
-      @scala.inline
-      def setAllRegions(value: Boolean): Self = StObject.set(x, "allRegions", value.asInstanceOf[js.Any])
+      inline def setAllRegions(value: Boolean): Self = StObject.set(x, "allRegions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllRegionsUndefined: Self = StObject.set(x, "allRegions", js.undefined)
+      inline def setAllRegionsUndefined: Self = StObject.set(x, "allRegions", js.undefined)
       
-      @scala.inline
-      def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+      inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+      inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
       
-      @scala.inline
-      def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+      inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
     }
   }
   
@@ -76,32 +67,24 @@ object cfg {
   }
   object ConfigurationAggregatorOrganizationAggregationSource {
     
-    @scala.inline
-    def apply(roleArn: String): ConfigurationAggregatorOrganizationAggregationSource = {
+    inline def apply(roleArn: String): ConfigurationAggregatorOrganizationAggregationSource = {
       val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigurationAggregatorOrganizationAggregationSource]
     }
     
-    @scala.inline
-    implicit class ConfigurationAggregatorOrganizationAggregationSourceMutableBuilder[Self <: ConfigurationAggregatorOrganizationAggregationSource] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationAggregatorOrganizationAggregationSource](x: Self) {
       
-      @scala.inline
-      def setAllRegions(value: Boolean): Self = StObject.set(x, "allRegions", value.asInstanceOf[js.Any])
+      inline def setAllRegions(value: Boolean): Self = StObject.set(x, "allRegions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllRegionsUndefined: Self = StObject.set(x, "allRegions", js.undefined)
+      inline def setAllRegionsUndefined: Self = StObject.set(x, "allRegions", js.undefined)
       
-      @scala.inline
-      def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+      inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+      inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
       
-      @scala.inline
-      def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+      inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
       
-      @scala.inline
-      def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,20 +97,16 @@ object cfg {
   }
   object DeliveryChannelSnapshotDeliveryProperties {
     
-    @scala.inline
-    def apply(): DeliveryChannelSnapshotDeliveryProperties = {
+    inline def apply(): DeliveryChannelSnapshotDeliveryProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeliveryChannelSnapshotDeliveryProperties]
     }
     
-    @scala.inline
-    implicit class DeliveryChannelSnapshotDeliveryPropertiesMutableBuilder[Self <: DeliveryChannelSnapshotDeliveryProperties] (val x: Self) extends AnyVal {
+    extension [Self <: DeliveryChannelSnapshotDeliveryProperties](x: Self) {
       
-      @scala.inline
-      def setDeliveryFrequency(value: String): Self = StObject.set(x, "deliveryFrequency", value.asInstanceOf[js.Any])
+      inline def setDeliveryFrequency(value: String): Self = StObject.set(x, "deliveryFrequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeliveryFrequencyUndefined: Self = StObject.set(x, "deliveryFrequency", js.undefined)
+      inline def setDeliveryFrequencyUndefined: Self = StObject.set(x, "deliveryFrequency", js.undefined)
     }
   }
   
@@ -150,35 +129,26 @@ object cfg {
   }
   object RecorderRecordingGroup {
     
-    @scala.inline
-    def apply(): RecorderRecordingGroup = {
+    inline def apply(): RecorderRecordingGroup = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RecorderRecordingGroup]
     }
     
-    @scala.inline
-    implicit class RecorderRecordingGroupMutableBuilder[Self <: RecorderRecordingGroup] (val x: Self) extends AnyVal {
+    extension [Self <: RecorderRecordingGroup](x: Self) {
       
-      @scala.inline
-      def setAllSupported(value: Boolean): Self = StObject.set(x, "allSupported", value.asInstanceOf[js.Any])
+      inline def setAllSupported(value: Boolean): Self = StObject.set(x, "allSupported", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllSupportedUndefined: Self = StObject.set(x, "allSupported", js.undefined)
+      inline def setAllSupportedUndefined: Self = StObject.set(x, "allSupported", js.undefined)
       
-      @scala.inline
-      def setIncludeGlobalResourceTypes(value: Boolean): Self = StObject.set(x, "includeGlobalResourceTypes", value.asInstanceOf[js.Any])
+      inline def setIncludeGlobalResourceTypes(value: Boolean): Self = StObject.set(x, "includeGlobalResourceTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeGlobalResourceTypesUndefined: Self = StObject.set(x, "includeGlobalResourceTypes", js.undefined)
+      inline def setIncludeGlobalResourceTypesUndefined: Self = StObject.set(x, "includeGlobalResourceTypes", js.undefined)
       
-      @scala.inline
-      def setResourceTypes(value: js.Array[String]): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
+      inline def setResourceTypes(value: js.Array[String]): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceTypesUndefined: Self = StObject.set(x, "resourceTypes", js.undefined)
+      inline def setResourceTypesUndefined: Self = StObject.set(x, "resourceTypes", js.undefined)
       
-      @scala.inline
-      def setResourceTypesVarargs(value: String*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
+      inline def setResourceTypesVarargs(value: String*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
     }
   }
   
@@ -201,29 +171,22 @@ object cfg {
   }
   object RemediationConfigurationParameter {
     
-    @scala.inline
-    def apply(name: String): RemediationConfigurationParameter = {
+    inline def apply(name: String): RemediationConfigurationParameter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemediationConfigurationParameter]
     }
     
-    @scala.inline
-    implicit class RemediationConfigurationParameterMutableBuilder[Self <: RemediationConfigurationParameter] (val x: Self) extends AnyVal {
+    extension [Self <: RemediationConfigurationParameter](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceValue(value: String): Self = StObject.set(x, "resourceValue", value.asInstanceOf[js.Any])
+      inline def setResourceValue(value: String): Self = StObject.set(x, "resourceValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceValueUndefined: Self = StObject.set(x, "resourceValue", js.undefined)
+      inline def setResourceValueUndefined: Self = StObject.set(x, "resourceValue", js.undefined)
       
-      @scala.inline
-      def setStaticValue(value: String): Self = StObject.set(x, "staticValue", value.asInstanceOf[js.Any])
+      inline def setStaticValue(value: String): Self = StObject.set(x, "staticValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticValueUndefined: Self = StObject.set(x, "staticValue", js.undefined)
+      inline def setStaticValueUndefined: Self = StObject.set(x, "staticValue", js.undefined)
     }
   }
   
@@ -251,41 +214,30 @@ object cfg {
   }
   object RuleScope {
     
-    @scala.inline
-    def apply(): RuleScope = {
+    inline def apply(): RuleScope = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RuleScope]
     }
     
-    @scala.inline
-    implicit class RuleScopeMutableBuilder[Self <: RuleScope] (val x: Self) extends AnyVal {
+    extension [Self <: RuleScope](x: Self) {
       
-      @scala.inline
-      def setComplianceResourceId(value: String): Self = StObject.set(x, "complianceResourceId", value.asInstanceOf[js.Any])
+      inline def setComplianceResourceId(value: String): Self = StObject.set(x, "complianceResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComplianceResourceIdUndefined: Self = StObject.set(x, "complianceResourceId", js.undefined)
+      inline def setComplianceResourceIdUndefined: Self = StObject.set(x, "complianceResourceId", js.undefined)
       
-      @scala.inline
-      def setComplianceResourceTypes(value: js.Array[String]): Self = StObject.set(x, "complianceResourceTypes", value.asInstanceOf[js.Any])
+      inline def setComplianceResourceTypes(value: js.Array[String]): Self = StObject.set(x, "complianceResourceTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComplianceResourceTypesUndefined: Self = StObject.set(x, "complianceResourceTypes", js.undefined)
+      inline def setComplianceResourceTypesUndefined: Self = StObject.set(x, "complianceResourceTypes", js.undefined)
       
-      @scala.inline
-      def setComplianceResourceTypesVarargs(value: String*): Self = StObject.set(x, "complianceResourceTypes", js.Array(value :_*))
+      inline def setComplianceResourceTypesVarargs(value: String*): Self = StObject.set(x, "complianceResourceTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setTagKey(value: String): Self = StObject.set(x, "tagKey", value.asInstanceOf[js.Any])
+      inline def setTagKey(value: String): Self = StObject.set(x, "tagKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagKeyUndefined: Self = StObject.set(x, "tagKey", js.undefined)
+      inline def setTagKeyUndefined: Self = StObject.set(x, "tagKey", js.undefined)
       
-      @scala.inline
-      def setTagValue(value: String): Self = StObject.set(x, "tagValue", value.asInstanceOf[js.Any])
+      inline def setTagValue(value: String): Self = StObject.set(x, "tagValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagValueUndefined: Self = StObject.set(x, "tagValue", js.undefined)
+      inline def setTagValueUndefined: Self = StObject.set(x, "tagValue", js.undefined)
     }
   }
   
@@ -308,29 +260,22 @@ object cfg {
   }
   object RuleSource {
     
-    @scala.inline
-    def apply(owner: String, sourceIdentifier: String): RuleSource = {
+    inline def apply(owner: String, sourceIdentifier: String): RuleSource = {
       val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], sourceIdentifier = sourceIdentifier.asInstanceOf[js.Any])
       __obj.asInstanceOf[RuleSource]
     }
     
-    @scala.inline
-    implicit class RuleSourceMutableBuilder[Self <: RuleSource] (val x: Self) extends AnyVal {
+    extension [Self <: RuleSource](x: Self) {
       
-      @scala.inline
-      def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceDetails(value: js.Array[RuleSourceSourceDetail]): Self = StObject.set(x, "sourceDetails", value.asInstanceOf[js.Any])
+      inline def setSourceDetails(value: js.Array[RuleSourceSourceDetail]): Self = StObject.set(x, "sourceDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceDetailsUndefined: Self = StObject.set(x, "sourceDetails", js.undefined)
+      inline def setSourceDetailsUndefined: Self = StObject.set(x, "sourceDetails", js.undefined)
       
-      @scala.inline
-      def setSourceDetailsVarargs(value: RuleSourceSourceDetail*): Self = StObject.set(x, "sourceDetails", js.Array(value :_*))
+      inline def setSourceDetailsVarargs(value: RuleSourceSourceDetail*): Self = StObject.set(x, "sourceDetails", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceIdentifier(value: String): Self = StObject.set(x, "sourceIdentifier", value.asInstanceOf[js.Any])
+      inline def setSourceIdentifier(value: String): Self = StObject.set(x, "sourceIdentifier", value.asInstanceOf[js.Any])
     }
   }
   
@@ -353,32 +298,24 @@ object cfg {
   }
   object RuleSourceSourceDetail {
     
-    @scala.inline
-    def apply(): RuleSourceSourceDetail = {
+    inline def apply(): RuleSourceSourceDetail = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RuleSourceSourceDetail]
     }
     
-    @scala.inline
-    implicit class RuleSourceSourceDetailMutableBuilder[Self <: RuleSourceSourceDetail] (val x: Self) extends AnyVal {
+    extension [Self <: RuleSourceSourceDetail](x: Self) {
       
-      @scala.inline
-      def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
+      inline def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSourceUndefined: Self = StObject.set(x, "eventSource", js.undefined)
+      inline def setEventSourceUndefined: Self = StObject.set(x, "eventSource", js.undefined)
       
-      @scala.inline
-      def setMaximumExecutionFrequency(value: String): Self = StObject.set(x, "maximumExecutionFrequency", value.asInstanceOf[js.Any])
+      inline def setMaximumExecutionFrequency(value: String): Self = StObject.set(x, "maximumExecutionFrequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumExecutionFrequencyUndefined: Self = StObject.set(x, "maximumExecutionFrequency", js.undefined)
+      inline def setMaximumExecutionFrequencyUndefined: Self = StObject.set(x, "maximumExecutionFrequency", js.undefined)
       
-      @scala.inline
-      def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+      inline def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
+      inline def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
     }
   }
 }

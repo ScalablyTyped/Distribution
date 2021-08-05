@@ -16,20 +16,16 @@ trait ManagedStarterTemplate
 }
 object ManagedStarterTemplate {
   
-  @scala.inline
-  def apply(id: String, name: String, projectType: ProjectType): ManagedStarterTemplate = {
+  inline def apply(id: String, name: String, projectType: ProjectType): ManagedStarterTemplate = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectType = projectType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("managed")
     __obj.asInstanceOf[ManagedStarterTemplate]
   }
   
-  @scala.inline
-  implicit class ManagedStarterTemplateMutableBuilder[Self <: ManagedStarterTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedStarterTemplate](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: managed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: managed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

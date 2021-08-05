@@ -37,7 +37,7 @@ object stateQueueManagerMod {
     
     def register(stateDecl: _StateDeclaration): StateObject = js.native
     
-    var router: js.Any = js.native
+    /* private */ var router: js.Any = js.native
     
     var states: StringDictionary[StateObject] = js.native
   }

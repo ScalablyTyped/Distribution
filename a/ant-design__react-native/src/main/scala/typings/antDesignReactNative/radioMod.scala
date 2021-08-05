@@ -23,7 +23,6 @@ object radioMod {
     @JSImport("@ant-design/react-native/lib/radio", "default.RadioItem")
     @js.native
     def RadioItem: js.Any = js.native
-    @scala.inline
-    def RadioItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RadioItem")(x.asInstanceOf[js.Any])
+    inline def RadioItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RadioItem")(x.asInstanceOf[js.Any])
   }
 }

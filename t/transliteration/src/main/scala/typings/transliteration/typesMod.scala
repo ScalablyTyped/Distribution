@@ -28,23 +28,18 @@ object typesMod {
   }
   object BrowserGlobalObject {
     
-    @scala.inline
-    def apply(slugify: SlugifyFunction, transl: TransliterateFunction, transliterate: TransliterateFunction): BrowserGlobalObject = {
+    inline def apply(slugify: SlugifyFunction, transl: TransliterateFunction, transliterate: TransliterateFunction): BrowserGlobalObject = {
       val __obj = js.Dynamic.literal(slugify = slugify.asInstanceOf[js.Any], transl = transl.asInstanceOf[js.Any], transliterate = transliterate.asInstanceOf[js.Any])
       __obj.asInstanceOf[BrowserGlobalObject]
     }
     
-    @scala.inline
-    implicit class BrowserGlobalObjectMutableBuilder[Self <: BrowserGlobalObject] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserGlobalObject](x: Self) {
       
-      @scala.inline
-      def setSlugify(value: SlugifyFunction): Self = StObject.set(x, "slugify", value.asInstanceOf[js.Any])
+      inline def setSlugify(value: SlugifyFunction): Self = StObject.set(x, "slugify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransl(value: TransliterateFunction): Self = StObject.set(x, "transl", value.asInstanceOf[js.Any])
+      inline def setTransl(value: TransliterateFunction): Self = StObject.set(x, "transl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransliterate(value: TransliterateFunction): Self = StObject.set(x, "transliterate", value.asInstanceOf[js.Any])
+      inline def setTransliterate(value: TransliterateFunction): Self = StObject.set(x, "transliterate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,14 +60,12 @@ object typesMod {
   trait Options extends StObject
   object Options {
     
-    @scala.inline
-    def OptionsSlugify(): typings.transliteration.typesMod.OptionsSlugify = {
+    inline def OptionsSlugify(): typings.transliteration.typesMod.OptionsSlugify = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.transliteration.typesMod.OptionsSlugify]
     }
     
-    @scala.inline
-    def OptionsTransliterate(): typings.transliteration.typesMod.OptionsTransliterate = {
+    inline def OptionsTransliterate(): typings.transliteration.typesMod.OptionsTransliterate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.transliteration.typesMod.OptionsTransliterate]
     }
@@ -111,38 +104,28 @@ object typesMod {
   }
   object OptionsSlugify {
     
-    @scala.inline
-    def apply(): OptionsSlugify = {
+    inline def apply(): OptionsSlugify = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsSlugify]
     }
     
-    @scala.inline
-    implicit class OptionsSlugifyMutableBuilder[Self <: OptionsSlugify] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsSlugify](x: Self) {
       
-      @scala.inline
-      def setAllowedChars(value: String): Self = StObject.set(x, "allowedChars", value.asInstanceOf[js.Any])
+      inline def setAllowedChars(value: String): Self = StObject.set(x, "allowedChars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedCharsUndefined: Self = StObject.set(x, "allowedChars", js.undefined)
+      inline def setAllowedCharsUndefined: Self = StObject.set(x, "allowedChars", js.undefined)
       
-      @scala.inline
-      def setLowercase(value: Boolean): Self = StObject.set(x, "lowercase", value.asInstanceOf[js.Any])
+      inline def setLowercase(value: Boolean): Self = StObject.set(x, "lowercase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowercaseUndefined: Self = StObject.set(x, "lowercase", js.undefined)
+      inline def setLowercaseUndefined: Self = StObject.set(x, "lowercase", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setUppercase(value: Boolean): Self = StObject.set(x, "uppercase", value.asInstanceOf[js.Any])
+      inline def setUppercase(value: Boolean): Self = StObject.set(x, "uppercase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUppercaseUndefined: Self = StObject.set(x, "uppercase", js.undefined)
+      inline def setUppercaseUndefined: Self = StObject.set(x, "uppercase", js.undefined)
     }
   }
   
@@ -190,59 +173,42 @@ object typesMod {
   }
   object OptionsTransliterate {
     
-    @scala.inline
-    def apply(): OptionsTransliterate = {
+    inline def apply(): OptionsTransliterate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsTransliterate]
     }
     
-    @scala.inline
-    implicit class OptionsTransliterateMutableBuilder[Self <: OptionsTransliterate] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsTransliterate](x: Self) {
       
-      @scala.inline
-      def setFixChineseSpacing(value: Boolean): Self = StObject.set(x, "fixChineseSpacing", value.asInstanceOf[js.Any])
+      inline def setFixChineseSpacing(value: Boolean): Self = StObject.set(x, "fixChineseSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixChineseSpacingUndefined: Self = StObject.set(x, "fixChineseSpacing", js.undefined)
+      inline def setFixChineseSpacingUndefined: Self = StObject.set(x, "fixChineseSpacing", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setReplace(value: OptionReplaceCombined): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      inline def setReplace(value: OptionReplaceCombined): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceAfter(value: OptionReplaceCombined): Self = StObject.set(x, "replaceAfter", value.asInstanceOf[js.Any])
+      inline def setReplaceAfter(value: OptionReplaceCombined): Self = StObject.set(x, "replaceAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceAfterUndefined: Self = StObject.set(x, "replaceAfter", js.undefined)
+      inline def setReplaceAfterUndefined: Self = StObject.set(x, "replaceAfter", js.undefined)
       
-      @scala.inline
-      def setReplaceAfterVarargs(value: OptionReplaceArrayItem*): Self = StObject.set(x, "replaceAfter", js.Array(value :_*))
+      inline def setReplaceAfterVarargs(value: OptionReplaceArrayItem*): Self = StObject.set(x, "replaceAfter", js.Array(value :_*))
       
-      @scala.inline
-      def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
       
-      @scala.inline
-      def setReplaceVarargs(value: OptionReplaceArrayItem*): Self = StObject.set(x, "replace", js.Array(value :_*))
+      inline def setReplaceVarargs(value: OptionReplaceArrayItem*): Self = StObject.set(x, "replace", js.Array(value :_*))
       
-      @scala.inline
-      def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
       
-      @scala.inline
-      def setUnknown(value: String): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
+      inline def setUnknown(value: String): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnknownUndefined: Self = StObject.set(x, "unknown", js.undefined)
+      inline def setUnknownUndefined: Self = StObject.set(x, "unknown", js.undefined)
     }
   }
   

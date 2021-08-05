@@ -22,20 +22,16 @@ object bowMod extends Shortcut {
   }
   object BowProps {
     
-    @scala.inline
-    def apply(): BowProps = {
+    inline def apply(): BowProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BowProps]
     }
     
-    @scala.inline
-    implicit class BowPropsMutableBuilder[Self <: BowProps] (val x: Self) extends AnyVal {
+    extension [Self <: BowProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -147,23 +147,18 @@ object mod {
   }
   object IGPIOConfig {
     
-    @scala.inline
-    def apply(pin: Double | String): IGPIOConfig = {
+    inline def apply(pin: Double | String): IGPIOConfig = {
       val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGPIOConfig]
     }
     
-    @scala.inline
-    implicit class IGPIOConfigMutableBuilder[Self <: IGPIOConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IGPIOConfig](x: Self) {
       
-      @scala.inline
-      def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+      inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullResistor(value: Double): Self = StObject.set(x, "pullResistor", value.asInstanceOf[js.Any])
+      inline def setPullResistor(value: Double): Self = StObject.set(x, "pullResistor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullResistorUndefined: Self = StObject.set(x, "pullResistor", js.undefined)
+      inline def setPullResistorUndefined: Self = StObject.set(x, "pullResistor", js.undefined)
     }
   }
   
@@ -256,17 +251,14 @@ object mod {
   }
   object ILEDModule {
     
-    @scala.inline
-    def apply(createLED: () => ILED): ILEDModule = {
+    inline def apply(createLED: () => ILED): ILEDModule = {
       val __obj = js.Dynamic.literal(createLED = js.Any.fromFunction0(createLED))
       __obj.asInstanceOf[ILEDModule]
     }
     
-    @scala.inline
-    implicit class ILEDModuleMutableBuilder[Self <: ILEDModule] (val x: Self) extends AnyVal {
+    extension [Self <: ILEDModule](x: Self) {
       
-      @scala.inline
-      def setCreateLED(value: () => ILED): Self = StObject.set(x, "createLED", js.Any.fromFunction0(value))
+      inline def setCreateLED(value: () => ILED): Self = StObject.set(x, "createLED", js.Any.fromFunction0(value))
     }
   }
   
@@ -292,29 +284,22 @@ object mod {
   }
   object IPWMConfig {
     
-    @scala.inline
-    def apply(pin: Double | String): IPWMConfig = {
+    inline def apply(pin: Double | String): IPWMConfig = {
       val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPWMConfig]
     }
     
-    @scala.inline
-    implicit class IPWMConfigMutableBuilder[Self <: IPWMConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IPWMConfig](x: Self) {
       
-      @scala.inline
-      def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+      inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+      inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
       
-      @scala.inline
-      def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+      inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     }
   }
   
@@ -346,26 +331,20 @@ object mod {
   }
   object IPinInfo {
     
-    @scala.inline
-    def apply(peripherals: js.Array[PeripheralType], pins: js.Array[String]): IPinInfo = {
+    inline def apply(peripherals: js.Array[PeripheralType], pins: js.Array[String]): IPinInfo = {
       val __obj = js.Dynamic.literal(peripherals = peripherals.asInstanceOf[js.Any], pins = pins.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPinInfo]
     }
     
-    @scala.inline
-    implicit class IPinInfoMutableBuilder[Self <: IPinInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IPinInfo](x: Self) {
       
-      @scala.inline
-      def setPeripherals(value: js.Array[PeripheralType]): Self = StObject.set(x, "peripherals", value.asInstanceOf[js.Any])
+      inline def setPeripherals(value: js.Array[PeripheralType]): Self = StObject.set(x, "peripherals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeripheralsVarargs(value: PeripheralType*): Self = StObject.set(x, "peripherals", js.Array(value :_*))
+      inline def setPeripheralsVarargs(value: PeripheralType*): Self = StObject.set(x, "peripherals", js.Array(value :_*))
       
-      @scala.inline
-      def setPins(value: js.Array[String]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+      inline def setPins(value: js.Array[String]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinsVarargs(value: String*): Self = StObject.set(x, "pins", js.Array(value :_*))
+      inline def setPinsVarargs(value: String*): Self = StObject.set(x, "pins", js.Array(value :_*))
     }
   }
   
@@ -420,46 +399,34 @@ object mod {
   }
   object ISerialOptions {
     
-    @scala.inline
-    def apply(): ISerialOptions = {
+    inline def apply(): ISerialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISerialOptions]
     }
     
-    @scala.inline
-    implicit class ISerialOptionsMutableBuilder[Self <: ISerialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISerialOptions](x: Self) {
       
-      @scala.inline
-      def setBaudRate(
+      inline def setBaudRate(
         value: `115200` | `57600` | `38400` | `19200` | `9600` | `4800` | `2400` | `1800` | `1200` | `600` | `300` | `200` | `150` | `134` | `110` | `75` | `50` | Double
       ): Self = StObject.set(x, "baudRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaudRateUndefined: Self = StObject.set(x, "baudRate", js.undefined)
+      inline def setBaudRateUndefined: Self = StObject.set(x, "baudRate", js.undefined)
       
-      @scala.inline
-      def setDataBits(value: `8` | `7` | `6` | `5`): Self = StObject.set(x, "dataBits", value.asInstanceOf[js.Any])
+      inline def setDataBits(value: `8` | `7` | `6` | `5`): Self = StObject.set(x, "dataBits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataBitsUndefined: Self = StObject.set(x, "dataBits", js.undefined)
+      inline def setDataBitsUndefined: Self = StObject.set(x, "dataBits", js.undefined)
       
-      @scala.inline
-      def setParity(value: none | even | mark | odd | space): Self = StObject.set(x, "parity", value.asInstanceOf[js.Any])
+      inline def setParity(value: none | even | mark | odd | space): Self = StObject.set(x, "parity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParityUndefined: Self = StObject.set(x, "parity", js.undefined)
+      inline def setParityUndefined: Self = StObject.set(x, "parity", js.undefined)
       
-      @scala.inline
-      def setPortId(value: String): Self = StObject.set(x, "portId", value.asInstanceOf[js.Any])
+      inline def setPortId(value: String): Self = StObject.set(x, "portId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortIdUndefined: Self = StObject.set(x, "portId", js.undefined)
+      inline def setPortIdUndefined: Self = StObject.set(x, "portId", js.undefined)
       
-      @scala.inline
-      def setStopBits(value: `1` | `2`): Self = StObject.set(x, "stopBits", value.asInstanceOf[js.Any])
+      inline def setStopBits(value: `1` | `2`): Self = StObject.set(x, "stopBits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopBitsUndefined: Self = StObject.set(x, "stopBits", js.undefined)
+      inline def setStopBitsUndefined: Self = StObject.set(x, "stopBits", js.undefined)
     }
   }
   

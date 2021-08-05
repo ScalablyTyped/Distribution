@@ -65,87 +65,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoPictureEffectType extends StObject
 object MsoPictureEffectType {
   
-  @scala.inline
-  def msoEffectBackgroundRemoval: `1` = 1.asInstanceOf[`1`]
+  inline def msoEffectBackgroundRemoval: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoEffectBlur: `2` = 2.asInstanceOf[`2`]
+  inline def msoEffectBlur: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoEffectBrightnessContrast: `3` = 3.asInstanceOf[`3`]
+  inline def msoEffectBrightnessContrast: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoEffectCement: `4` = 4.asInstanceOf[`4`]
+  inline def msoEffectCement: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoEffectChalkSketch: `6` = 6.asInstanceOf[`6`]
+  inline def msoEffectChalkSketch: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoEffectColorTemperature: `7` = 7.asInstanceOf[`7`]
+  inline def msoEffectColorTemperature: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def msoEffectCrisscrossEtching: `5` = 5.asInstanceOf[`5`]
+  inline def msoEffectCrisscrossEtching: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoEffectCutout: `8` = 8.asInstanceOf[`8`]
+  inline def msoEffectCutout: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def msoEffectFilmGrain: `9` = 9.asInstanceOf[`9`]
+  inline def msoEffectFilmGrain: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def msoEffectGlass: `10` = 10.asInstanceOf[`10`]
+  inline def msoEffectGlass: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def msoEffectGlowDiffused: `11` = 11.asInstanceOf[`11`]
+  inline def msoEffectGlowDiffused: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def msoEffectGlowEdges: `12` = 12.asInstanceOf[`12`]
+  inline def msoEffectGlowEdges: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def msoEffectLightScreen: `13` = 13.asInstanceOf[`13`]
+  inline def msoEffectLightScreen: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def msoEffectLineDrawing: `14` = 14.asInstanceOf[`14`]
+  inline def msoEffectLineDrawing: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def msoEffectMarker: `15` = 15.asInstanceOf[`15`]
+  inline def msoEffectMarker: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def msoEffectMosiaicBubbles: `16` = 16.asInstanceOf[`16`]
+  inline def msoEffectMosiaicBubbles: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def msoEffectNone: `0` = 0.asInstanceOf[`0`]
+  inline def msoEffectNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoEffectPaintBrush: `17` = 17.asInstanceOf[`17`]
+  inline def msoEffectPaintBrush: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def msoEffectPaintStrokes: `18` = 18.asInstanceOf[`18`]
+  inline def msoEffectPaintStrokes: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def msoEffectPastelsSmooth: `19` = 19.asInstanceOf[`19`]
+  inline def msoEffectPastelsSmooth: `19` = 19.asInstanceOf[`19`]
   
-  @scala.inline
-  def msoEffectPencilGrayscale: `20` = 20.asInstanceOf[`20`]
+  inline def msoEffectPencilGrayscale: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def msoEffectPencilSketch: `21` = 21.asInstanceOf[`21`]
+  inline def msoEffectPencilSketch: `21` = 21.asInstanceOf[`21`]
   
-  @scala.inline
-  def msoEffectPhotocopy: `22` = 22.asInstanceOf[`22`]
+  inline def msoEffectPhotocopy: `22` = 22.asInstanceOf[`22`]
   
-  @scala.inline
-  def msoEffectPlasticWrap: `23` = 23.asInstanceOf[`23`]
+  inline def msoEffectPlasticWrap: `23` = 23.asInstanceOf[`23`]
   
-  @scala.inline
-  def msoEffectSaturation: `24` = 24.asInstanceOf[`24`]
+  inline def msoEffectSaturation: `24` = 24.asInstanceOf[`24`]
   
-  @scala.inline
-  def msoEffectSharpenSoften: `25` = 25.asInstanceOf[`25`]
+  inline def msoEffectSharpenSoften: `25` = 25.asInstanceOf[`25`]
   
-  @scala.inline
-  def msoEffectTexturizer: `26` = 26.asInstanceOf[`26`]
+  inline def msoEffectTexturizer: `26` = 26.asInstanceOf[`26`]
   
-  @scala.inline
-  def msoEffectWatercolorSponge: `27` = 27.asInstanceOf[`27`]
+  inline def msoEffectWatercolorSponge: `27` = 27.asInstanceOf[`27`]
 }

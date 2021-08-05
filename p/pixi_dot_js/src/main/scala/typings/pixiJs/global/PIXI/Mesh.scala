@@ -63,6 +63,5 @@ object Mesh {
   @JSGlobal("PIXI.Mesh.BATCHABLE_SIZE")
   @js.native
   def BATCHABLE_SIZE: Double = js.native
-  @scala.inline
-  def BATCHABLE_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCHABLE_SIZE")(x.asInstanceOf[js.Any])
+  inline def BATCHABLE_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCHABLE_SIZE")(x.asInstanceOf[js.Any])
 }

@@ -22,17 +22,14 @@ object typesExternalServiceExceptionMod {
   }
   object ExternalServiceException {
     
-    @scala.inline
-    def apply(): ExternalServiceException = {
+    inline def apply(): ExternalServiceException = {
       val __obj = js.Dynamic.literal(name = "ExternalServiceException")
       __obj.asInstanceOf[ExternalServiceException]
     }
     
-    @scala.inline
-    implicit class ExternalServiceExceptionMutableBuilder[Self <: ExternalServiceException] (val x: Self) extends AnyVal {
+    extension [Self <: ExternalServiceException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ExternalServiceException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -47,20 +44,16 @@ object typesExternalServiceExceptionMod {
   }
   object ExternalServiceExceptionDetails {
     
-    @scala.inline
-    def apply(): ExternalServiceExceptionDetails = {
+    inline def apply(): ExternalServiceExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExternalServiceExceptionDetails]
     }
     
-    @scala.inline
-    implicit class ExternalServiceExceptionDetailsMutableBuilder[Self <: ExternalServiceExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ExternalServiceExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

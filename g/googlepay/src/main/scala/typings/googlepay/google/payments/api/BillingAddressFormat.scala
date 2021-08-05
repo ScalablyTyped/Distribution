@@ -46,9 +46,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BillingAddressFormat extends StObject
 object BillingAddressFormat {
   
-  @scala.inline
-  def FULL: typings.googlepay.googlepayStrings.FULL = "FULL".asInstanceOf[typings.googlepay.googlepayStrings.FULL]
+  inline def FULL: typings.googlepay.googlepayStrings.FULL = "FULL".asInstanceOf[typings.googlepay.googlepayStrings.FULL]
   
-  @scala.inline
-  def MIN: typings.googlepay.googlepayStrings.MIN = "MIN".asInstanceOf[typings.googlepay.googlepayStrings.MIN]
+  inline def MIN: typings.googlepay.googlepayStrings.MIN = "MIN".asInstanceOf[typings.googlepay.googlepayStrings.MIN]
 }

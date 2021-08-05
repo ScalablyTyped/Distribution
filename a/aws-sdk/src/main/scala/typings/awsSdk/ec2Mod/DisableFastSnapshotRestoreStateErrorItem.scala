@@ -18,25 +18,19 @@ trait DisableFastSnapshotRestoreStateErrorItem extends StObject {
 }
 object DisableFastSnapshotRestoreStateErrorItem {
   
-  @scala.inline
-  def apply(): DisableFastSnapshotRestoreStateErrorItem = {
+  inline def apply(): DisableFastSnapshotRestoreStateErrorItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisableFastSnapshotRestoreStateErrorItem]
   }
   
-  @scala.inline
-  implicit class DisableFastSnapshotRestoreStateErrorItemMutableBuilder[Self <: DisableFastSnapshotRestoreStateErrorItem] (val x: Self) extends AnyVal {
+  extension [Self <: DisableFastSnapshotRestoreStateErrorItem](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setError(value: DisableFastSnapshotRestoreStateError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: DisableFastSnapshotRestoreStateError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
   }
 }

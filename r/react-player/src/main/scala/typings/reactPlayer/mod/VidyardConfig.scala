@@ -10,19 +10,15 @@ trait VidyardConfig extends StObject {
 }
 object VidyardConfig {
   
-  @scala.inline
-  def apply(): VidyardConfig = {
+  inline def apply(): VidyardConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VidyardConfig]
   }
   
-  @scala.inline
-  implicit class VidyardConfigMutableBuilder[Self <: VidyardConfig] (val x: Self) extends AnyVal {
+  extension [Self <: VidyardConfig](x: Self) {
     
-    @scala.inline
-    def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

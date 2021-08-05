@@ -22,6 +22,5 @@ object BulkUnregistration {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): BulkUnregistration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BulkUnregistration]
+  inline def create(): BulkUnregistration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BulkUnregistration]
 }

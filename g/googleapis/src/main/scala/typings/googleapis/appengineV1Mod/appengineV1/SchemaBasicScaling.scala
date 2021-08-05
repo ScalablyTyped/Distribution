@@ -25,25 +25,19 @@ trait SchemaBasicScaling extends StObject {
 }
 object SchemaBasicScaling {
   
-  @scala.inline
-  def apply(): SchemaBasicScaling = {
+  inline def apply(): SchemaBasicScaling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBasicScaling]
   }
   
-  @scala.inline
-  implicit class SchemaBasicScalingMutableBuilder[Self <: SchemaBasicScaling] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBasicScaling](x: Self) {
     
-    @scala.inline
-    def setIdleTimeout(value: String): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
+    inline def setIdleTimeout(value: String): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
+    inline def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
     
-    @scala.inline
-    def setMaxInstances(value: Double): Self = StObject.set(x, "maxInstances", value.asInstanceOf[js.Any])
+    inline def setMaxInstances(value: Double): Self = StObject.set(x, "maxInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxInstancesUndefined: Self = StObject.set(x, "maxInstances", js.undefined)
+    inline def setMaxInstancesUndefined: Self = StObject.set(x, "maxInstances", js.undefined)
   }
 }

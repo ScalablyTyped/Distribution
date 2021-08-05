@@ -11,6 +11,5 @@ object legacyParseMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(array: js.Array[js.Any]): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+  inline def default(array: js.Array[js.Any]): js.Array[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
 }

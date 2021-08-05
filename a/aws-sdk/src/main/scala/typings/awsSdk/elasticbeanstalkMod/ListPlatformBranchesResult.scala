@@ -18,28 +18,21 @@ trait ListPlatformBranchesResult extends StObject {
 }
 object ListPlatformBranchesResult {
   
-  @scala.inline
-  def apply(): ListPlatformBranchesResult = {
+  inline def apply(): ListPlatformBranchesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPlatformBranchesResult]
   }
   
-  @scala.inline
-  implicit class ListPlatformBranchesResultMutableBuilder[Self <: ListPlatformBranchesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListPlatformBranchesResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPlatformBranchSummaryList(value: PlatformBranchSummaryList): Self = StObject.set(x, "PlatformBranchSummaryList", value.asInstanceOf[js.Any])
+    inline def setPlatformBranchSummaryList(value: PlatformBranchSummaryList): Self = StObject.set(x, "PlatformBranchSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformBranchSummaryListUndefined: Self = StObject.set(x, "PlatformBranchSummaryList", js.undefined)
+    inline def setPlatformBranchSummaryListUndefined: Self = StObject.set(x, "PlatformBranchSummaryList", js.undefined)
     
-    @scala.inline
-    def setPlatformBranchSummaryListVarargs(value: PlatformBranchSummary*): Self = StObject.set(x, "PlatformBranchSummaryList", js.Array(value :_*))
+    inline def setPlatformBranchSummaryListVarargs(value: PlatformBranchSummary*): Self = StObject.set(x, "PlatformBranchSummaryList", js.Array(value :_*))
   }
 }

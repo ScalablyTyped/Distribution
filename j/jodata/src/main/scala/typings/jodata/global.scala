@@ -62,50 +62,43 @@ object global {
     @JSGlobal("jo.datetime")
     @js.native
     def datetime: js.Function1[/* stringLiteral */ String, String] = js.native
-    @scala.inline
-    def datetime_=(x: js.Function1[/* stringLiteral */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("datetime")(x.asInstanceOf[js.Any])
+    inline def datetime_=(x: js.Function1[/* stringLiteral */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("datetime")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("jo.decimal")
     @js.native
     def decimal: js.Function1[/* stringLiteral */ Double, String] = js.native
-    @scala.inline
-    def decimal_=(x: js.Function1[/* stringLiteral */ Double, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decimal")(x.asInstanceOf[js.Any])
+    inline def decimal_=(x: js.Function1[/* stringLiteral */ Double, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decimal")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("jo.double")
     @js.native
     def double: js.Function1[/* stringLiteral */ Double, String] = js.native
-    @scala.inline
-    def double_=(x: js.Function1[/* stringLiteral */ Double, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("double")(x.asInstanceOf[js.Any])
+    inline def double_=(x: js.Function1[/* stringLiteral */ Double, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("double")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("jo.guid")
     @js.native
     def guid: js.Function1[/* stringLiteral */ String, String] = js.native
-    @scala.inline
-    def guid_=(x: js.Function1[/* stringLiteral */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("guid")(x.asInstanceOf[js.Any])
+    inline def guid_=(x: js.Function1[/* stringLiteral */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("guid")(x.asInstanceOf[js.Any])
     
     // Casts
     /* static member */
     @JSGlobal("jo.literal")
     @js.native
     def literal: js.Function1[/* stringLiteral */ String, String] = js.native
-    @scala.inline
-    def literal_=(x: js.Function1[/* stringLiteral */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("literal")(x.asInstanceOf[js.Any])
+    inline def literal_=(x: js.Function1[/* stringLiteral */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("literal")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("jo.loadLocal")
     @js.native
     def loadLocal: js.Function1[/* key */ js.UndefOr[String], typings.jodata.jo] = js.native
-    @scala.inline
-    def loadLocal_=(x: js.Function1[/* key */ js.UndefOr[String], typings.jodata.jo]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loadLocal")(x.asInstanceOf[js.Any])
+    inline def loadLocal_=(x: js.Function1[/* key */ js.UndefOr[String], typings.jodata.jo]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loadLocal")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("jo.single")
     @js.native
     def single: js.Function1[/* stringLiteral */ Double, String] = js.native
-    @scala.inline
-    def single_=(x: js.Function1[/* stringLiteral */ Double, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("single")(x.asInstanceOf[js.Any])
+    inline def single_=(x: js.Function1[/* stringLiteral */ Double, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("single")(x.asInstanceOf[js.Any])
   }
 }

@@ -23,19 +23,15 @@ trait ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs
 }
 object ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs {
   
-  @scala.inline
-  def apply(column: ASPxClientGridViewColumn, handled: Boolean): ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs = {
+  inline def apply(column: ASPxClientGridViewColumn, handled: Boolean): ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientGridViewBatchEditTemplateCellFocusedEventArgsMutableBuilder[Self <: ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGridViewBatchEditTemplateCellFocusedEventArgs](x: Self) {
     
-    @scala.inline
-    def setColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait GlobalText extends StObject {
 }
 object GlobalText {
   
-  @scala.inline
-  def apply(dark: String, light: String): GlobalText = {
+  inline def apply(dark: String, light: String): GlobalText = {
     val __obj = js.Dynamic.literal(dark = dark.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalText]
   }
   
-  @scala.inline
-  implicit class GlobalTextMutableBuilder[Self <: GlobalText] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalText](x: Self) {
     
-    @scala.inline
-    def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    inline def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    inline def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
   }
 }

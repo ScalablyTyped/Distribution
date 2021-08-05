@@ -12,8 +12,7 @@ trait IPrintCustomOptionDetails
 }
 object IPrintCustomOptionDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayName: String,
     errorText: String,
     optionId: String,
@@ -26,10 +25,8 @@ object IPrintCustomOptionDetails {
     __obj.asInstanceOf[IPrintCustomOptionDetails]
   }
   
-  @scala.inline
-  implicit class IPrintCustomOptionDetailsMutableBuilder[Self <: IPrintCustomOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintCustomOptionDetails](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
   }
 }

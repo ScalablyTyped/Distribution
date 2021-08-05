@@ -29,33 +29,27 @@ trait GoogleCloudRecommendationengineV1beta1FeatureMap extends StObject {
 }
 object GoogleCloudRecommendationengineV1beta1FeatureMap {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1FeatureMap = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1FeatureMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1FeatureMap]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1FeatureMapMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1FeatureMap] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1FeatureMap](x: Self) {
     
-    @scala.inline
-    def setCategoricalFeatures(
+    inline def setCategoricalFeatures(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.recommendationengine.gapi.client.recommendationengine.GoogleCloudRecommendationengineV1beta1FeatureMapStringList}
       */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1FeatureMap & TopLevel[js.Any]
     ): Self = StObject.set(x, "categoricalFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoricalFeaturesUndefined: Self = StObject.set(x, "categoricalFeatures", js.undefined)
+    inline def setCategoricalFeaturesUndefined: Self = StObject.set(x, "categoricalFeatures", js.undefined)
     
-    @scala.inline
-    def setNumericalFeatures(
+    inline def setNumericalFeatures(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.recommendationengine.gapi.client.recommendationengine.GoogleCloudRecommendationengineV1beta1FeatureMapFloatList}
       */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1FeatureMap & TopLevel[js.Any]
     ): Self = StObject.set(x, "numericalFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericalFeaturesUndefined: Self = StObject.set(x, "numericalFeatures", js.undefined)
+    inline def setNumericalFeaturesUndefined: Self = StObject.set(x, "numericalFeatures", js.undefined)
   }
 }

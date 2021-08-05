@@ -17,8 +17,7 @@ trait DatabasePoolConnectionType
 }
 object DatabasePoolConnectionType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     any: /* args */ QueryMethodParams[js.Any] => js.Promise[js.Array[js.Any]],
     anyFirst: /* args */ QueryMethodParams[js.Any] => js.Promise[
       js.Array[
@@ -48,15 +47,12 @@ object DatabasePoolConnectionType {
     __obj.asInstanceOf[DatabasePoolConnectionType]
   }
   
-  @scala.inline
-  implicit class DatabasePoolConnectionTypeMutableBuilder[Self <: DatabasePoolConnectionType] (val x: Self) extends AnyVal {
+  extension [Self <: DatabasePoolConnectionType](x: Self) {
     
-    @scala.inline
-    def setStream(
+    inline def setStream(
       value: (TaggedTemplateLiteralInvocationType[QueryResultRowType[String]], StreamHandlerType) => js.Promise[Null]
     ): Self = StObject.set(x, "stream", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTransaction(value: TransactionFunctionType[js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
+    inline def setTransaction(value: TransactionFunctionType[js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
   }
 }

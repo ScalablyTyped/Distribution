@@ -21,8 +21,7 @@ trait DataInput
 }
 object DataInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     dataState: DataState,
@@ -38,22 +37,16 @@ object DataInput {
     __obj.asInstanceOf[DataInput]
   }
   
-  @scala.inline
-  implicit class DataInputMutableBuilder[Self <: DataInput] (val x: Self) extends AnyVal {
+  extension [Self <: DataInput](x: Self) {
     
-    @scala.inline
-    def setInputSetRef(value: InputSet): Self = StObject.set(x, "inputSetRef", value.asInstanceOf[js.Any])
+    inline def setInputSetRef(value: InputSet): Self = StObject.set(x, "inputSetRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputSetWithOptional(value: InputSet): Self = StObject.set(x, "inputSetWithOptional", value.asInstanceOf[js.Any])
+    inline def setInputSetWithOptional(value: InputSet): Self = StObject.set(x, "inputSetWithOptional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputSetWithWhileExecuting(value: InputSet): Self = StObject.set(x, "inputSetWithWhileExecuting", value.asInstanceOf[js.Any])
+    inline def setInputSetWithWhileExecuting(value: InputSet): Self = StObject.set(x, "inputSetWithWhileExecuting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCollection(value: Boolean): Self = StObject.set(x, "isCollection", value.asInstanceOf[js.Any])
+    inline def setIsCollection(value: Boolean): Self = StObject.set(x, "isCollection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

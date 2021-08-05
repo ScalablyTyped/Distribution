@@ -13,25 +13,19 @@ trait PartialPickImplkeyofImplHide extends StObject {
 }
 object PartialPickImplkeyofImplHide {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplHide = {
+  inline def apply(): PartialPickImplkeyofImplHide = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplHide]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplHideMutableBuilder[Self <: PartialPickImplkeyofImplHide] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplHide](x: Self) {
     
-    @scala.inline
-    def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    inline def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    @scala.inline
-    def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

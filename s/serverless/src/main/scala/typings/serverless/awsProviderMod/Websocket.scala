@@ -14,28 +14,21 @@ trait Websocket extends StObject {
 }
 object Websocket {
   
-  @scala.inline
-  def apply(route: String): Websocket = {
+  inline def apply(route: String): Websocket = {
     val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any])
     __obj.asInstanceOf[Websocket]
   }
   
-  @scala.inline
-  implicit class WebsocketMutableBuilder[Self <: Websocket] (val x: Self) extends AnyVal {
+  extension [Self <: Websocket](x: Self) {
     
-    @scala.inline
-    def setAuthorizer(value: WebsocketAuthorizer): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
+    inline def setAuthorizer(value: WebsocketAuthorizer): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizerUndefined: Self = StObject.set(x, "authorizer", js.undefined)
+    inline def setAuthorizerUndefined: Self = StObject.set(x, "authorizer", js.undefined)
     
-    @scala.inline
-    def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteResponseSelectionExpression(value: String): Self = StObject.set(x, "routeResponseSelectionExpression", value.asInstanceOf[js.Any])
+    inline def setRouteResponseSelectionExpression(value: String): Self = StObject.set(x, "routeResponseSelectionExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteResponseSelectionExpressionUndefined: Self = StObject.set(x, "routeResponseSelectionExpression", js.undefined)
+    inline def setRouteResponseSelectionExpressionUndefined: Self = StObject.set(x, "routeResponseSelectionExpression", js.undefined)
   }
 }

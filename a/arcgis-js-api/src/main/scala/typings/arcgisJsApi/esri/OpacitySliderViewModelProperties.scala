@@ -17,22 +17,17 @@ trait OpacitySliderViewModelProperties
 }
 object OpacitySliderViewModelProperties {
   
-  @scala.inline
-  def apply(): OpacitySliderViewModelProperties = {
+  inline def apply(): OpacitySliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpacitySliderViewModelProperties]
   }
   
-  @scala.inline
-  implicit class OpacitySliderViewModelPropertiesMutableBuilder[Self <: OpacitySliderViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: OpacitySliderViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setStops(value: js.Array[OpacityStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[OpacityStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    @scala.inline
-    def setStopsVarargs(value: OpacityStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: OpacityStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
   }
 }

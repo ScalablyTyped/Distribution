@@ -31,8 +31,7 @@ trait MVCxClientGlobalEvents extends StObject {
 }
 object MVCxClientGlobalEvents {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BeginCallback: ASPxClientEvent[MVCxClientGlobalBeginCallbackEventHandler[MVCxClientGlobalEvents]],
     CallbackError: ASPxClientEvent[ASPxClientGlobalCallbackErrorEventHandler[MVCxClientGlobalEvents]],
     ControlsInitialized: ASPxClientEvent[ASPxClientControlsInitializedEventHandler[MVCxClientGlobalEvents]],
@@ -42,19 +41,14 @@ object MVCxClientGlobalEvents {
     __obj.asInstanceOf[MVCxClientGlobalEvents]
   }
   
-  @scala.inline
-  implicit class MVCxClientGlobalEventsMutableBuilder[Self <: MVCxClientGlobalEvents] (val x: Self) extends AnyVal {
+  extension [Self <: MVCxClientGlobalEvents](x: Self) {
     
-    @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[MVCxClientGlobalBeginCallbackEventHandler[MVCxClientGlobalEvents]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
+    inline def setBeginCallback(value: ASPxClientEvent[MVCxClientGlobalBeginCallbackEventHandler[MVCxClientGlobalEvents]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackError(value: ASPxClientEvent[ASPxClientGlobalCallbackErrorEventHandler[MVCxClientGlobalEvents]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
+    inline def setCallbackError(value: ASPxClientEvent[ASPxClientGlobalCallbackErrorEventHandler[MVCxClientGlobalEvents]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlsInitialized(value: ASPxClientEvent[ASPxClientControlsInitializedEventHandler[MVCxClientGlobalEvents]]): Self = StObject.set(x, "ControlsInitialized", value.asInstanceOf[js.Any])
+    inline def setControlsInitialized(value: ASPxClientEvent[ASPxClientControlsInitializedEventHandler[MVCxClientGlobalEvents]]): Self = StObject.set(x, "ControlsInitialized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCallback(value: ASPxClientEvent[ASPxClientGlobalEndCallbackEventHandler[MVCxClientGlobalEvents]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
+    inline def setEndCallback(value: ASPxClientEvent[ASPxClientGlobalEndCallbackEventHandler[MVCxClientGlobalEvents]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
   }
 }

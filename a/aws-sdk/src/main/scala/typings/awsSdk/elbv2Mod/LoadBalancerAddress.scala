@@ -28,37 +28,27 @@ trait LoadBalancerAddress extends StObject {
 }
 object LoadBalancerAddress {
   
-  @scala.inline
-  def apply(): LoadBalancerAddress = {
+  inline def apply(): LoadBalancerAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadBalancerAddress]
   }
   
-  @scala.inline
-  implicit class LoadBalancerAddressMutableBuilder[Self <: LoadBalancerAddress] (val x: Self) extends AnyVal {
+  extension [Self <: LoadBalancerAddress](x: Self) {
     
-    @scala.inline
-    def setAllocationId(value: AllocationId): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
+    inline def setAllocationId(value: AllocationId): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocationIdUndefined: Self = StObject.set(x, "AllocationId", js.undefined)
+    inline def setAllocationIdUndefined: Self = StObject.set(x, "AllocationId", js.undefined)
     
-    @scala.inline
-    def setIPv6Address(value: IPv6Address): Self = StObject.set(x, "IPv6Address", value.asInstanceOf[js.Any])
+    inline def setIPv6Address(value: IPv6Address): Self = StObject.set(x, "IPv6Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPv6AddressUndefined: Self = StObject.set(x, "IPv6Address", js.undefined)
+    inline def setIPv6AddressUndefined: Self = StObject.set(x, "IPv6Address", js.undefined)
     
-    @scala.inline
-    def setIpAddress(value: IpAddress): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: IpAddress): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
     
-    @scala.inline
-    def setPrivateIPv4Address(value: PrivateIPv4Address): Self = StObject.set(x, "PrivateIPv4Address", value.asInstanceOf[js.Any])
+    inline def setPrivateIPv4Address(value: PrivateIPv4Address): Self = StObject.set(x, "PrivateIPv4Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateIPv4AddressUndefined: Self = StObject.set(x, "PrivateIPv4Address", js.undefined)
+    inline def setPrivateIPv4AddressUndefined: Self = StObject.set(x, "PrivateIPv4Address", js.undefined)
   }
 }

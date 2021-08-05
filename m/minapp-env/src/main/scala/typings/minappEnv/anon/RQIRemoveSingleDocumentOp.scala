@@ -12,19 +12,15 @@ trait RQIRemoveSingleDocumentOp extends StObject {
 }
 object RQIRemoveSingleDocumentOp {
   
-  @scala.inline
-  def apply(): RQIRemoveSingleDocumentOp = {
+  inline def apply(): RQIRemoveSingleDocumentOp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RQIRemoveSingleDocumentOp]
   }
   
-  @scala.inline
-  implicit class RQIRemoveSingleDocumentOpMutableBuilder[Self <: RQIRemoveSingleDocumentOp] (val x: Self) extends AnyVal {
+  extension [Self <: RQIRemoveSingleDocumentOp](x: Self) {
     
-    @scala.inline
-    def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
   }
 }

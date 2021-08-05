@@ -14,22 +14,17 @@ trait Standard extends StObject {
 }
 object Standard {
   
-  @scala.inline
-  def apply(long: RecordDecimalFormatNumLDM, short: RecordDecimalFormatNumLDM, standard: String): Standard = {
+  inline def apply(long: RecordDecimalFormatNumLDM, short: RecordDecimalFormatNumLDM, standard: String): Standard = {
     val __obj = js.Dynamic.literal(long = long.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any], standard = standard.asInstanceOf[js.Any])
     __obj.asInstanceOf[Standard]
   }
   
-  @scala.inline
-  implicit class StandardMutableBuilder[Self <: Standard] (val x: Self) extends AnyVal {
+  extension [Self <: Standard](x: Self) {
     
-    @scala.inline
-    def setLong(value: RecordDecimalFormatNumLDM): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    inline def setLong(value: RecordDecimalFormatNumLDM): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort(value: RecordDecimalFormatNumLDM): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: RecordDecimalFormatNumLDM): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandard(value: String): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: String): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
   }
 }

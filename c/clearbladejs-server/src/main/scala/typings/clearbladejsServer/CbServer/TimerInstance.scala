@@ -16,8 +16,7 @@ trait TimerInstance extends StObject {
 }
 object TimerInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Delete: CbCallback => Unit,
     Update: (js.Object, CbCallback) => Unit,
     name: String,
@@ -27,19 +26,14 @@ object TimerInstance {
     __obj.asInstanceOf[TimerInstance]
   }
   
-  @scala.inline
-  implicit class TimerInstanceMutableBuilder[Self <: TimerInstance] (val x: Self) extends AnyVal {
+  extension [Self <: TimerInstance](x: Self) {
     
-    @scala.inline
-    def setDelete(value: CbCallback => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: CbCallback => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: (js.Object, CbCallback) => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (js.Object, CbCallback) => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction2(value))
   }
 }

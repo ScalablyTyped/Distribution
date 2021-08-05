@@ -19,25 +19,19 @@ trait SchemaOrdersUpdateMerchantOrderIdRequest extends StObject {
 }
 object SchemaOrdersUpdateMerchantOrderIdRequest {
   
-  @scala.inline
-  def apply(): SchemaOrdersUpdateMerchantOrderIdRequest = {
+  inline def apply(): SchemaOrdersUpdateMerchantOrderIdRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrdersUpdateMerchantOrderIdRequest]
   }
   
-  @scala.inline
-  implicit class SchemaOrdersUpdateMerchantOrderIdRequestMutableBuilder[Self <: SchemaOrdersUpdateMerchantOrderIdRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrdersUpdateMerchantOrderIdRequest](x: Self) {
     
-    @scala.inline
-    def setMerchantOrderId(value: String): Self = StObject.set(x, "merchantOrderId", value.asInstanceOf[js.Any])
+    inline def setMerchantOrderId(value: String): Self = StObject.set(x, "merchantOrderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantOrderIdUndefined: Self = StObject.set(x, "merchantOrderId", js.undefined)
+    inline def setMerchantOrderIdUndefined: Self = StObject.set(x, "merchantOrderId", js.undefined)
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
   }
 }

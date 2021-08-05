@@ -23,31 +23,23 @@ trait ListTagOptionsFilters extends StObject {
 }
 object ListTagOptionsFilters {
   
-  @scala.inline
-  def apply(): ListTagOptionsFilters = {
+  inline def apply(): ListTagOptionsFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTagOptionsFilters]
   }
   
-  @scala.inline
-  implicit class ListTagOptionsFiltersMutableBuilder[Self <: ListTagOptionsFilters] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagOptionsFilters](x: Self) {
     
-    @scala.inline
-    def setActive(value: TagOptionActive): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+    inline def setActive(value: TagOptionActive): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
     
-    @scala.inline
-    def setKey(value: TagOptionKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: TagOptionKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setValue(value: TagOptionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TagOptionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

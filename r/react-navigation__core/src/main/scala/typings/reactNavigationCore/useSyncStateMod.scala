@@ -10,8 +10,7 @@ object useSyncStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](): js.Tuple5[
+  inline def default[T](): js.Tuple5[
     T, 
     js.Function0[T], 
     js.Function1[/* state */ T, Unit], 
@@ -24,8 +23,7 @@ object useSyncStateMod {
     js.Function1[/* callback */ js.Function0[Unit], Unit], 
     js.Function0[Unit]
   ]]
-  @scala.inline
-  def default[T](initialState: T): js.Tuple5[
+  inline def default[T](initialState: T): js.Tuple5[
     T, 
     js.Function0[T], 
     js.Function1[/* state */ T, Unit], 
@@ -38,8 +36,7 @@ object useSyncStateMod {
     js.Function1[/* callback */ js.Function0[Unit], Unit], 
     js.Function0[Unit]
   ]]
-  @scala.inline
-  def default[T](initialState: js.Function0[T]): js.Tuple5[
+  inline def default[T](initialState: js.Function0[T]): js.Tuple5[
     T, 
     js.Function0[T], 
     js.Function1[/* state */ T, Unit], 

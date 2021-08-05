@@ -20,8 +20,7 @@ trait Channel extends StObject {
 }
 object Channel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Description: String,
     LastModified: String,
     Name: String,
@@ -33,31 +32,22 @@ object Channel {
     __obj.asInstanceOf[Channel]
   }
   
-  @scala.inline
-  implicit class ChannelMutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
+  extension [Self <: Channel](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModified(value: String): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: String): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayUrls(value: js.Array[String]): Self = StObject.set(x, "PlayUrls", value.asInstanceOf[js.Any])
+    inline def setPlayUrls(value: js.Array[String]): Self = StObject.set(x, "PlayUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayUrlsVarargs(value: String*): Self = StObject.set(x, "PlayUrls", js.Array(value :_*))
+    inline def setPlayUrlsVarargs(value: String*): Self = StObject.set(x, "PlayUrls", js.Array(value :_*))
     
-    @scala.inline
-    def setPublishUrls(value: js.Array[String]): Self = StObject.set(x, "PublishUrls", value.asInstanceOf[js.Any])
+    inline def setPublishUrls(value: js.Array[String]): Self = StObject.set(x, "PublishUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishUrlsVarargs(value: String*): Self = StObject.set(x, "PublishUrls", js.Array(value :_*))
+    inline def setPublishUrlsVarargs(value: String*): Self = StObject.set(x, "PublishUrls", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

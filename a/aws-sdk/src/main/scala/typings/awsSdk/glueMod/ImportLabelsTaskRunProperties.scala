@@ -18,25 +18,19 @@ trait ImportLabelsTaskRunProperties extends StObject {
 }
 object ImportLabelsTaskRunProperties {
   
-  @scala.inline
-  def apply(): ImportLabelsTaskRunProperties = {
+  inline def apply(): ImportLabelsTaskRunProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportLabelsTaskRunProperties]
   }
   
-  @scala.inline
-  implicit class ImportLabelsTaskRunPropertiesMutableBuilder[Self <: ImportLabelsTaskRunProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ImportLabelsTaskRunProperties](x: Self) {
     
-    @scala.inline
-    def setInputS3Path(value: UriString): Self = StObject.set(x, "InputS3Path", value.asInstanceOf[js.Any])
+    inline def setInputS3Path(value: UriString): Self = StObject.set(x, "InputS3Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputS3PathUndefined: Self = StObject.set(x, "InputS3Path", js.undefined)
+    inline def setInputS3PathUndefined: Self = StObject.set(x, "InputS3Path", js.undefined)
     
-    @scala.inline
-    def setReplace(value: ReplaceBoolean): Self = StObject.set(x, "Replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: ReplaceBoolean): Self = StObject.set(x, "Replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "Replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "Replace", js.undefined)
   }
 }

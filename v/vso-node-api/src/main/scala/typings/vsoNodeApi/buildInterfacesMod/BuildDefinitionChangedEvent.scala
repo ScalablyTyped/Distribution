@@ -12,19 +12,15 @@ trait BuildDefinitionChangedEvent extends StObject {
 }
 object BuildDefinitionChangedEvent {
   
-  @scala.inline
-  def apply(changeType: AuditAction, definition: BuildDefinition): BuildDefinitionChangedEvent = {
+  inline def apply(changeType: AuditAction, definition: BuildDefinition): BuildDefinitionChangedEvent = {
     val __obj = js.Dynamic.literal(changeType = changeType.asInstanceOf[js.Any], definition = definition.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildDefinitionChangedEvent]
   }
   
-  @scala.inline
-  implicit class BuildDefinitionChangedEventMutableBuilder[Self <: BuildDefinitionChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BuildDefinitionChangedEvent](x: Self) {
     
-    @scala.inline
-    def setChangeType(value: AuditAction): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: AuditAction): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinition(value: BuildDefinition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: BuildDefinition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
   }
 }

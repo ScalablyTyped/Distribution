@@ -48,26 +48,19 @@ object IWshRuntimeLibrary {
   trait ButtonType extends StObject
   object ButtonType {
     
-    @scala.inline
-    def AbortRetryIgnore: `2` = 2.asInstanceOf[`2`]
+    inline def AbortRetryIgnore: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def CancelTryagainContinue: `6` = 6.asInstanceOf[`6`]
+    inline def CancelTryagainContinue: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def OK: `0` = 0.asInstanceOf[`0`]
+    inline def OK: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def OKCancel: `1` = 1.asInstanceOf[`1`]
+    inline def OKCancel: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def RetryCancel: `5` = 5.asInstanceOf[`5`]
+    inline def RetryCancel: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def YesNo: `4` = 4.asInstanceOf[`4`]
+    inline def YesNo: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def YesNoCancel: `3` = 3.asInstanceOf[`3`]
+    inline def YesNoCancel: `3` = 3.asInstanceOf[`3`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -81,23 +74,17 @@ object IWshRuntimeLibrary {
   trait EventType extends StObject
   object EventType {
     
-    @scala.inline
-    def AuditFailure: `5` = 5.asInstanceOf[`5`]
+    inline def AuditFailure: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def AuditSuccess: `4` = 4.asInstanceOf[`4`]
+    inline def AuditSuccess: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def Error: `1` = 1.asInstanceOf[`1`]
+    inline def Error: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def Information: `3` = 3.asInstanceOf[`3`]
+    inline def Information: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def Success: `0` = 0.asInstanceOf[`0`]
+    inline def Success: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def Warning: `2` = 2.asInstanceOf[`2`]
+    inline def Warning: `2` = 2.asInstanceOf[`2`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -109,17 +96,13 @@ object IWshRuntimeLibrary {
   trait IconType extends StObject
   object IconType {
     
-    @scala.inline
-    def ExclamationMakr: `48` = 48.asInstanceOf[`48`]
+    inline def ExclamationMakr: `48` = 48.asInstanceOf[`48`]
     
-    @scala.inline
-    def InformationMark: `64` = 64.asInstanceOf[`64`]
+    inline def InformationMark: `64` = 64.asInstanceOf[`64`]
     
-    @scala.inline
-    def QuestionMark: `32` = 32.asInstanceOf[`32`]
+    inline def QuestionMark: `32` = 32.asInstanceOf[`32`]
     
-    @scala.inline
-    def Stop: `16` = 16.asInstanceOf[`16`]
+    inline def Stop: `16` = 16.asInstanceOf[`16`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -137,35 +120,25 @@ object IWshRuntimeLibrary {
   trait PopupSelection extends StObject
   object PopupSelection {
     
-    @scala.inline
-    def Abort: `3` = 3.asInstanceOf[`3`]
+    inline def Abort: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def Cancel: `2` = 2.asInstanceOf[`2`]
+    inline def Cancel: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def Continue: `11` = 11.asInstanceOf[`11`]
+    inline def Continue: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def Ignore: `5` = 5.asInstanceOf[`5`]
+    inline def Ignore: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def No: `7` = 7.asInstanceOf[`7`]
+    inline def No: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def NoButton: `-1` = -1.asInstanceOf[`-1`]
+    inline def NoButton: `-1` = -1.asInstanceOf[`-1`]
     
-    @scala.inline
-    def OK: `1` = 1.asInstanceOf[`1`]
+    inline def OK: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def Retry: `4` = 4.asInstanceOf[`4`]
+    inline def Retry: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def TryAgain: `10` = 10.asInstanceOf[`10`]
+    inline def TryAgain: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def Yes: `6` = 6.asInstanceOf[`6`]
+    inline def Yes: `6` = 6.asInstanceOf[`6`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -178,20 +151,15 @@ object IWshRuntimeLibrary {
   trait PopupType extends StObject
   object PopupType {
     
-    @scala.inline
-    def Modal: `4096` = 4096.asInstanceOf[`4096`]
+    inline def Modal: `4096` = 4096.asInstanceOf[`4096`]
     
-    @scala.inline
-    def RTL: `1048576` = 1048576.asInstanceOf[`1048576`]
+    inline def RTL: `1048576` = 1048576.asInstanceOf[`1048576`]
     
-    @scala.inline
-    def RightJustified: `524288` = 524288.asInstanceOf[`524288`]
+    inline def RightJustified: `524288` = 524288.asInstanceOf[`524288`]
     
-    @scala.inline
-    def SecondButtonDefault: `256` = 256.asInstanceOf[`256`]
+    inline def SecondButtonDefault: `256` = 256.asInstanceOf[`256`]
     
-    @scala.inline
-    def ThirdButtonDefault: `512` = 512.asInstanceOf[`512`]
+    inline def ThirdButtonDefault: `512` = 512.asInstanceOf[`512`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -202,14 +170,11 @@ object IWshRuntimeLibrary {
   trait ShortcutWindowStyle extends StObject
   object ShortcutWindowStyle {
     
-    @scala.inline
-    def `1`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1` = 1.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1`]
+    inline def `1`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1` = 1.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1`]
     
-    @scala.inline
-    def `3`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3` = 3.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3`]
+    inline def `3`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3` = 3.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3`]
     
-    @scala.inline
-    def `7`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7` = 7.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7`]
+    inline def `7`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7` = 7.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7`]
   }
   
   trait TextStreamBase extends StObject {
@@ -233,23 +198,18 @@ object IWshRuntimeLibrary {
   }
   object TextStreamBase {
     
-    @scala.inline
-    def apply(Close: () => Unit, Column: Double, Line: Double): TextStreamBase = {
+    inline def apply(Close: () => Unit, Column: Double, Line: Double): TextStreamBase = {
       val __obj = js.Dynamic.literal(Close = js.Any.fromFunction0(Close), Column = Column.asInstanceOf[js.Any], Line = Line.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextStreamBase]
     }
     
-    @scala.inline
-    implicit class TextStreamBaseMutableBuilder[Self <: TextStreamBase] (val x: Self) extends AnyVal {
+    extension [Self <: TextStreamBase](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
     }
   }
   
@@ -267,7 +227,7 @@ object IWshRuntimeLibrary {
       */
     var AtEndOfStream: Boolean
     
-    @JSName("IWshRuntimeLibrary.TextStreamReader_typekey")
+    /* private */ @JSName("IWshRuntimeLibrary.TextStreamReader_typekey")
     var IWshRuntimeLibraryDotTextStreamReader_typekey: TextStreamReader
     
     /**
@@ -305,8 +265,7 @@ object IWshRuntimeLibrary {
   }
   object TextStreamReader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AtEndOfLine: Boolean,
       AtEndOfStream: Boolean,
       Close: () => Unit,
@@ -324,32 +283,23 @@ object IWshRuntimeLibrary {
       __obj.asInstanceOf[TextStreamReader]
     }
     
-    @scala.inline
-    implicit class TextStreamReaderMutableBuilder[Self <: TextStreamReader] (val x: Self) extends AnyVal {
+    extension [Self <: TextStreamReader](x: Self) {
       
-      @scala.inline
-      def setAtEndOfLine(value: Boolean): Self = StObject.set(x, "AtEndOfLine", value.asInstanceOf[js.Any])
+      inline def setAtEndOfLine(value: Boolean): Self = StObject.set(x, "AtEndOfLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAtEndOfStream(value: Boolean): Self = StObject.set(x, "AtEndOfStream", value.asInstanceOf[js.Any])
+      inline def setAtEndOfStream(value: Boolean): Self = StObject.set(x, "AtEndOfStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIWshRuntimeLibraryDotTextStreamReader_typekey(value: TextStreamReader): Self = StObject.set(x, "IWshRuntimeLibrary.TextStreamReader_typekey", value.asInstanceOf[js.Any])
+      inline def setIWshRuntimeLibraryDotTextStreamReader_typekey(value: TextStreamReader): Self = StObject.set(x, "IWshRuntimeLibrary.TextStreamReader_typekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRead(value: Double => String): Self = StObject.set(x, "Read", js.Any.fromFunction1(value))
+      inline def setRead(value: Double => String): Self = StObject.set(x, "Read", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadAll(value: () => String): Self = StObject.set(x, "ReadAll", js.Any.fromFunction0(value))
+      inline def setReadAll(value: () => String): Self = StObject.set(x, "ReadAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadLine(value: () => String): Self = StObject.set(x, "ReadLine", js.Any.fromFunction0(value))
+      inline def setReadLine(value: () => String): Self = StObject.set(x, "ReadLine", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSkip(value: Double => Unit): Self = StObject.set(x, "Skip", js.Any.fromFunction1(value))
+      inline def setSkip(value: Double => Unit): Self = StObject.set(x, "Skip", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSkipLine(value: () => Unit): Self = StObject.set(x, "SkipLine", js.Any.fromFunction0(value))
+      inline def setSkipLine(value: () => Unit): Self = StObject.set(x, "SkipLine", js.Any.fromFunction0(value))
     }
   }
   
@@ -357,7 +307,7 @@ object IWshRuntimeLibrary {
     extends StObject
        with TextStreamBase {
     
-    @JSName("IWshRuntimeLibrary.TextStreamWriter_typekey")
+    /* private */ @JSName("IWshRuntimeLibrary.TextStreamWriter_typekey")
     var IWshRuntimeLibraryDotTextStreamWriter_typekey: TextStreamWriter
     
     /**
@@ -377,8 +327,7 @@ object IWshRuntimeLibrary {
   }
   object TextStreamWriter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Close: () => Unit,
       Column: Double,
       IWshRuntimeLibraryDotTextStreamWriter_typekey: TextStreamWriter,
@@ -392,20 +341,15 @@ object IWshRuntimeLibrary {
       __obj.asInstanceOf[TextStreamWriter]
     }
     
-    @scala.inline
-    implicit class TextStreamWriterMutableBuilder[Self <: TextStreamWriter] (val x: Self) extends AnyVal {
+    extension [Self <: TextStreamWriter](x: Self) {
       
-      @scala.inline
-      def setIWshRuntimeLibraryDotTextStreamWriter_typekey(value: TextStreamWriter): Self = StObject.set(x, "IWshRuntimeLibrary.TextStreamWriter_typekey", value.asInstanceOf[js.Any])
+      inline def setIWshRuntimeLibraryDotTextStreamWriter_typekey(value: TextStreamWriter): Self = StObject.set(x, "IWshRuntimeLibrary.TextStreamWriter_typekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrite(value: String => Unit): Self = StObject.set(x, "Write", js.Any.fromFunction1(value))
+      inline def setWrite(value: String => Unit): Self = StObject.set(x, "Write", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteBlankLines(value: Double => Unit): Self = StObject.set(x, "WriteBlankLines", js.Any.fromFunction1(value))
+      inline def setWriteBlankLines(value: Double => Unit): Self = StObject.set(x, "WriteBlankLines", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteLine(value: String => Unit): Self = StObject.set(x, "WriteLine", js.Any.fromFunction1(value))
+      inline def setWriteLine(value: String => Unit): Self = StObject.set(x, "WriteLine", js.Any.fromFunction1(value))
     }
   }
   
@@ -425,38 +369,27 @@ object IWshRuntimeLibrary {
   trait WindowStyle extends StObject
   object WindowStyle {
     
-    @scala.inline
-    def `0`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`0` = 0.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`0`]
+    inline def `0`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`0` = 0.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1` = 1.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1`]
+    inline def `1`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1` = 1.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1`]
     
-    @scala.inline
-    def `10`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`10` = 10.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`10`]
+    inline def `10`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`10` = 10.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`10`]
     
-    @scala.inline
-    def `2`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`2` = 2.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`2`]
+    inline def `2`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`2` = 2.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`2`]
     
-    @scala.inline
-    def `3`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3` = 3.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3`]
+    inline def `3`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3` = 3.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3`]
     
-    @scala.inline
-    def `4`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`4` = 4.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`4`]
+    inline def `4`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`4` = 4.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`4`]
     
-    @scala.inline
-    def `5`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`5` = 5.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`5`]
+    inline def `5`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`5` = 5.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`5`]
     
-    @scala.inline
-    def `6`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`6` = 6.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`6`]
+    inline def `6`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`6` = 6.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`6`]
     
-    @scala.inline
-    def `7`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7` = 7.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7`]
+    inline def `7`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7` = 7.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7`]
     
-    @scala.inline
-    def `8`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`8` = 8.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`8`]
+    inline def `8`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`8` = 8.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`8`]
     
-    @scala.inline
-    def `9`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`9` = 9.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`9`]
+    inline def `9`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`9` = 9.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`9`]
   }
   
   /** Generic Collection Object */
@@ -492,7 +425,7 @@ object IWshRuntimeLibrary {
     
     val ExitCode: Double
     
-    @JSName("IWshRuntimeLibrary.WshExec_typekey")
+    /* private */ @JSName("IWshRuntimeLibrary.WshExec_typekey")
     var IWshRuntimeLibraryDotWshExec_typekey: WshExec
     
     val ProcessID: Double
@@ -509,8 +442,7 @@ object IWshRuntimeLibrary {
   }
   object WshExec {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ExitCode: Double,
       IWshRuntimeLibraryDotWshExec_typekey: WshExec,
       ProcessID: Double,
@@ -525,32 +457,23 @@ object IWshRuntimeLibrary {
       __obj.asInstanceOf[WshExec]
     }
     
-    @scala.inline
-    implicit class WshExecMutableBuilder[Self <: WshExec] (val x: Self) extends AnyVal {
+    extension [Self <: WshExec](x: Self) {
       
-      @scala.inline
-      def setExitCode(value: Double): Self = StObject.set(x, "ExitCode", value.asInstanceOf[js.Any])
+      inline def setExitCode(value: Double): Self = StObject.set(x, "ExitCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIWshRuntimeLibraryDotWshExec_typekey(value: WshExec): Self = StObject.set(x, "IWshRuntimeLibrary.WshExec_typekey", value.asInstanceOf[js.Any])
+      inline def setIWshRuntimeLibraryDotWshExec_typekey(value: WshExec): Self = StObject.set(x, "IWshRuntimeLibrary.WshExec_typekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessID(value: Double): Self = StObject.set(x, "ProcessID", value.asInstanceOf[js.Any])
+      inline def setProcessID(value: Double): Self = StObject.set(x, "ProcessID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: WshExecStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: WshExecStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdErr(value: TextStreamWriter): Self = StObject.set(x, "StdErr", value.asInstanceOf[js.Any])
+      inline def setStdErr(value: TextStreamWriter): Self = StObject.set(x, "StdErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdIn(value: TextStreamReader): Self = StObject.set(x, "StdIn", value.asInstanceOf[js.Any])
+      inline def setStdIn(value: TextStreamReader): Self = StObject.set(x, "StdIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdOut(value: TextStreamWriter): Self = StObject.set(x, "StdOut", value.asInstanceOf[js.Any])
+      inline def setStdOut(value: TextStreamWriter): Self = StObject.set(x, "StdOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerminate(value: () => Unit): Self = StObject.set(x, "Terminate", js.Any.fromFunction0(value))
+      inline def setTerminate(value: () => Unit): Self = StObject.set(x, "Terminate", js.Any.fromFunction0(value))
     }
   }
   
@@ -562,14 +485,11 @@ object IWshRuntimeLibrary {
   trait WshExecStatus extends StObject
   object WshExecStatus {
     
-    @scala.inline
-    def WshFailed: `2` = 2.asInstanceOf[`2`]
+    inline def WshFailed: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def WshFinished: `1` = 1.asInstanceOf[`1`]
+    inline def WshFinished: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def WshRunning: `0` = 0.asInstanceOf[`0`]
+    inline def WshRunning: `0` = 0.asInstanceOf[`0`]
   }
   
   /** Network Object */
@@ -611,7 +531,7 @@ object IWshRuntimeLibrary {
     
     def EnumPrinterConnections(): WshCollection = js.native
     
-    @JSName("IWshRuntimeLibrary.WshNetwork_typekey")
+    /* private */ @JSName("IWshRuntimeLibrary.WshNetwork_typekey")
     var IWshRuntimeLibraryDotWshNetwork_typekey: WshNetwork = js.native
     
     /**
@@ -751,7 +671,7 @@ object IWshRuntimeLibrary {
     
     def ExpandEnvironmentStrings(Src: String): String = js.native
     
-    @JSName("IWshRuntimeLibrary.WshShell_typekey")
+    /* private */ @JSName("IWshRuntimeLibrary.WshShell_typekey")
     var IWshRuntimeLibraryDotWshShell_typekey: WshShell = js.native
     
     /** @param string [Target=''] Name of the computer system where the event should be logged; default is the local computer system */
@@ -861,7 +781,7 @@ object IWshRuntimeLibrary {
     
     var Hotkey: String
     
-    @JSName("IWshRuntimeLibrary.WshShortcut_typekey")
+    /* private */ @JSName("IWshRuntimeLibrary.WshShortcut_typekey")
     var IWshRuntimeLibraryDotWshShortcut_typekey: WshShortcut
     
     var IconLocation: String
@@ -888,8 +808,7 @@ object IWshRuntimeLibrary {
   }
   object WshShortcut {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Arguments: String,
       Description: String,
       FullName: String,
@@ -908,44 +827,31 @@ object IWshRuntimeLibrary {
       __obj.asInstanceOf[WshShortcut]
     }
     
-    @scala.inline
-    implicit class WshShortcutMutableBuilder[Self <: WshShortcut] (val x: Self) extends AnyVal {
+    extension [Self <: WshShortcut](x: Self) {
       
-      @scala.inline
-      def setArguments(value: String): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: String): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
+      inline def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHotkey(value: String): Self = StObject.set(x, "Hotkey", value.asInstanceOf[js.Any])
+      inline def setHotkey(value: String): Self = StObject.set(x, "Hotkey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIWshRuntimeLibraryDotWshShortcut_typekey(value: WshShortcut): Self = StObject.set(x, "IWshRuntimeLibrary.WshShortcut_typekey", value.asInstanceOf[js.Any])
+      inline def setIWshRuntimeLibraryDotWshShortcut_typekey(value: WshShortcut): Self = StObject.set(x, "IWshRuntimeLibrary.WshShortcut_typekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconLocation(value: String): Self = StObject.set(x, "IconLocation", value.asInstanceOf[js.Any])
+      inline def setIconLocation(value: String): Self = StObject.set(x, "IconLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoad(value: String => Unit): Self = StObject.set(x, "Load", js.Any.fromFunction1(value))
+      inline def setLoad(value: String => Unit): Self = StObject.set(x, "Load", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRelativePath(value: String): Self = StObject.set(x, "RelativePath", value.asInstanceOf[js.Any])
+      inline def setRelativePath(value: String): Self = StObject.set(x, "RelativePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
+      inline def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTargetPath(value: String): Self = StObject.set(x, "TargetPath", value.asInstanceOf[js.Any])
+      inline def setTargetPath(value: String): Self = StObject.set(x, "TargetPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowStyle(value: ShortcutWindowStyle): Self = StObject.set(x, "WindowStyle", value.asInstanceOf[js.Any])
+      inline def setWindowStyle(value: ShortcutWindowStyle): Self = StObject.set(x, "WindowStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkingDirectory(value: String): Self = StObject.set(x, "WorkingDirectory", value.asInstanceOf[js.Any])
+      inline def setWorkingDirectory(value: String): Self = StObject.set(x, "WorkingDirectory", value.asInstanceOf[js.Any])
     }
   }
   
@@ -954,7 +860,7 @@ object IWshRuntimeLibrary {
     
     val FullName: String
     
-    @JSName("IWshRuntimeLibrary.WshURLShortcut_typekey")
+    /* private */ @JSName("IWshRuntimeLibrary.WshURLShortcut_typekey")
     var IWshRuntimeLibraryDotWshURLShortcut_typekey: WshURLShortcut
     
     def Load(PathLink: String): Unit
@@ -965,8 +871,7 @@ object IWshRuntimeLibrary {
   }
   object WshURLShortcut {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       FullName: String,
       IWshRuntimeLibraryDotWshURLShortcut_typekey: WshURLShortcut,
       Load: String => Unit,
@@ -978,23 +883,17 @@ object IWshRuntimeLibrary {
       __obj.asInstanceOf[WshURLShortcut]
     }
     
-    @scala.inline
-    implicit class WshURLShortcutMutableBuilder[Self <: WshURLShortcut] (val x: Self) extends AnyVal {
+    extension [Self <: WshURLShortcut](x: Self) {
       
-      @scala.inline
-      def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
+      inline def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIWshRuntimeLibraryDotWshURLShortcut_typekey(value: WshURLShortcut): Self = StObject.set(x, "IWshRuntimeLibrary.WshURLShortcut_typekey", value.asInstanceOf[js.Any])
+      inline def setIWshRuntimeLibraryDotWshURLShortcut_typekey(value: WshURLShortcut): Self = StObject.set(x, "IWshRuntimeLibrary.WshURLShortcut_typekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoad(value: String => Unit): Self = StObject.set(x, "Load", js.Any.fromFunction1(value))
+      inline def setLoad(value: String => Unit): Self = StObject.set(x, "Load", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
+      inline def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTargetPath(value: String): Self = StObject.set(x, "TargetPath", value.asInstanceOf[js.Any])
+      inline def setTargetPath(value: String): Self = StObject.set(x, "TargetPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1009,22 +908,16 @@ object IWshRuntimeLibrary {
   trait WshWindowStyle extends StObject
   object WshWindowStyle {
     
-    @scala.inline
-    def WshHide: `0` = 0.asInstanceOf[`0`]
+    inline def WshHide: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def WshMaximizedFocus: `3` = 3.asInstanceOf[`3`]
+    inline def WshMaximizedFocus: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def WshMinimizedFocus: `2` = 2.asInstanceOf[`2`]
+    inline def WshMinimizedFocus: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def WshMinimizedNoFocus: `6` = 6.asInstanceOf[`6`]
+    inline def WshMinimizedNoFocus: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def WshNormalFocus: `1` = 1.asInstanceOf[`1`]
+    inline def WshNormalFocus: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def WshNormalNoFocus: `4` = 4.asInstanceOf[`4`]
+    inline def WshNormalNoFocus: `4` = 4.asInstanceOf[`4`]
   }
 }

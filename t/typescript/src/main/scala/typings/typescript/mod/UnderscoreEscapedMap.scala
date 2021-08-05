@@ -9,8 +9,7 @@ trait UnderscoreEscapedMap[T]
      with ESMap[String, T]
 object UnderscoreEscapedMap {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     clear: () => Unit,
     delete: String => Boolean,
     entries: () => Iterator[js.Tuple2[String, T]],

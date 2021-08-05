@@ -12,19 +12,15 @@ trait AnimatedWidth extends StObject {
 }
 object AnimatedWidth {
   
-  @scala.inline
-  def apply(animatedWidth: Double, overflowWidth: Double): AnimatedWidth = {
+  inline def apply(animatedWidth: Double, overflowWidth: Double): AnimatedWidth = {
     val __obj = js.Dynamic.literal(animatedWidth = animatedWidth.asInstanceOf[js.Any], overflowWidth = overflowWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimatedWidth]
   }
   
-  @scala.inline
-  implicit class AnimatedWidthMutableBuilder[Self <: AnimatedWidth] (val x: Self) extends AnyVal {
+  extension [Self <: AnimatedWidth](x: Self) {
     
-    @scala.inline
-    def setAnimatedWidth(value: Double): Self = StObject.set(x, "animatedWidth", value.asInstanceOf[js.Any])
+    inline def setAnimatedWidth(value: Double): Self = StObject.set(x, "animatedWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowWidth(value: Double): Self = StObject.set(x, "overflowWidth", value.asInstanceOf[js.Any])
+    inline def setOverflowWidth(value: Double): Self = StObject.set(x, "overflowWidth", value.asInstanceOf[js.Any])
   }
 }

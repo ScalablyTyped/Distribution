@@ -46,8 +46,7 @@ trait EasClientSecurityPolicy extends StObject {
 }
 object EasClientSecurityPolicy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyAsync: () => IPromiseWithIAsyncOperation[EasComplianceResults],
     checkCompliance: () => EasComplianceResults,
     disallowConvenienceLogon: Boolean,
@@ -63,37 +62,26 @@ object EasClientSecurityPolicy {
     __obj.asInstanceOf[EasClientSecurityPolicy]
   }
   
-  @scala.inline
-  implicit class EasClientSecurityPolicyMutableBuilder[Self <: EasClientSecurityPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: EasClientSecurityPolicy](x: Self) {
     
-    @scala.inline
-    def setApplyAsync(value: () => IPromiseWithIAsyncOperation[EasComplianceResults]): Self = StObject.set(x, "applyAsync", js.Any.fromFunction0(value))
+    inline def setApplyAsync(value: () => IPromiseWithIAsyncOperation[EasComplianceResults]): Self = StObject.set(x, "applyAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCheckCompliance(value: () => EasComplianceResults): Self = StObject.set(x, "checkCompliance", js.Any.fromFunction0(value))
+    inline def setCheckCompliance(value: () => EasComplianceResults): Self = StObject.set(x, "checkCompliance", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisallowConvenienceLogon(value: Boolean): Self = StObject.set(x, "disallowConvenienceLogon", value.asInstanceOf[js.Any])
+    inline def setDisallowConvenienceLogon(value: Boolean): Self = StObject.set(x, "disallowConvenienceLogon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxInactivityTimeLock(value: Double): Self = StObject.set(x, "maxInactivityTimeLock", value.asInstanceOf[js.Any])
+    inline def setMaxInactivityTimeLock(value: Double): Self = StObject.set(x, "maxInactivityTimeLock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPasswordFailedAttempts(value: Double): Self = StObject.set(x, "maxPasswordFailedAttempts", value.asInstanceOf[js.Any])
+    inline def setMaxPasswordFailedAttempts(value: Double): Self = StObject.set(x, "maxPasswordFailedAttempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinPasswordComplexCharacters(value: Double): Self = StObject.set(x, "minPasswordComplexCharacters", value.asInstanceOf[js.Any])
+    inline def setMinPasswordComplexCharacters(value: Double): Self = StObject.set(x, "minPasswordComplexCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinPasswordLength(value: Double): Self = StObject.set(x, "minPasswordLength", value.asInstanceOf[js.Any])
+    inline def setMinPasswordLength(value: Double): Self = StObject.set(x, "minPasswordLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordExpiration(value: Double): Self = StObject.set(x, "passwordExpiration", value.asInstanceOf[js.Any])
+    inline def setPasswordExpiration(value: Double): Self = StObject.set(x, "passwordExpiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordHistory(value: Double): Self = StObject.set(x, "passwordHistory", value.asInstanceOf[js.Any])
+    inline def setPasswordHistory(value: Double): Self = StObject.set(x, "passwordHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireEncryption(value: Boolean): Self = StObject.set(x, "requireEncryption", value.asInstanceOf[js.Any])
+    inline def setRequireEncryption(value: Boolean): Self = StObject.set(x, "requireEncryption", value.asInstanceOf[js.Any])
   }
 }

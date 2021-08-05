@@ -10,19 +10,15 @@ trait ChartZoomableMousewheel extends StObject {
 }
 object ChartZoomableMousewheel {
   
-  @scala.inline
-  def apply(): ChartZoomableMousewheel = {
+  inline def apply(): ChartZoomableMousewheel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartZoomableMousewheel]
   }
   
-  @scala.inline
-  implicit class ChartZoomableMousewheelMutableBuilder[Self <: ChartZoomableMousewheel] (val x: Self) extends AnyVal {
+  extension [Self <: ChartZoomableMousewheel](x: Self) {
     
-    @scala.inline
-    def setLock(value: String): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+    inline def setLock(value: String): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
+    inline def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
   }
 }

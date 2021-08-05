@@ -122,20 +122,16 @@ object mod {
   }
   object RandomOptions {
     
-    @scala.inline
-    def apply(): RandomOptions = {
+    inline def apply(): RandomOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RandomOptions]
     }
     
-    @scala.inline
-    implicit class RandomOptionsMutableBuilder[Self <: RandomOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RandomOptions](x: Self) {
       
-      @scala.inline
-      def setRandom(value: InputBuffer): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
+      inline def setRandom(value: InputBuffer): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
+      inline def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
     }
   }
   
@@ -147,20 +143,16 @@ object mod {
   }
   object RngOptions {
     
-    @scala.inline
-    def apply(): RngOptions = {
+    inline def apply(): RngOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RngOptions]
     }
     
-    @scala.inline
-    implicit class RngOptionsMutableBuilder[Self <: RngOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RngOptions](x: Self) {
       
-      @scala.inline
-      def setRng(value: () => InputBuffer): Self = StObject.set(x, "rng", js.Any.fromFunction0(value))
+      inline def setRng(value: () => InputBuffer): Self = StObject.set(x, "rng", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRngUndefined: Self = StObject.set(x, "rng", js.undefined)
+      inline def setRngUndefined: Self = StObject.set(x, "rng", js.undefined)
     }
   }
   
@@ -176,38 +168,28 @@ object mod {
   }
   object V1BaseOptions {
     
-    @scala.inline
-    def apply(): V1BaseOptions = {
+    inline def apply(): V1BaseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[V1BaseOptions]
     }
     
-    @scala.inline
-    implicit class V1BaseOptionsMutableBuilder[Self <: V1BaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: V1BaseOptions](x: Self) {
       
-      @scala.inline
-      def setClockseq(value: Double): Self = StObject.set(x, "clockseq", value.asInstanceOf[js.Any])
+      inline def setClockseq(value: Double): Self = StObject.set(x, "clockseq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockseqUndefined: Self = StObject.set(x, "clockseq", js.undefined)
+      inline def setClockseqUndefined: Self = StObject.set(x, "clockseq", js.undefined)
       
-      @scala.inline
-      def setMsecs(value: Double | Date): Self = StObject.set(x, "msecs", value.asInstanceOf[js.Any])
+      inline def setMsecs(value: Double | Date): Self = StObject.set(x, "msecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsecsUndefined: Self = StObject.set(x, "msecs", js.undefined)
+      inline def setMsecsUndefined: Self = StObject.set(x, "msecs", js.undefined)
       
-      @scala.inline
-      def setNode(value: InputBuffer): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: InputBuffer): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
       
-      @scala.inline
-      def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
+      inline def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNsecsUndefined: Self = StObject.set(x, "nsecs", js.undefined)
+      inline def setNsecsUndefined: Self = StObject.set(x, "nsecs", js.undefined)
     }
   }
   
@@ -218,14 +200,12 @@ object mod {
   trait V1Options extends StObject
   object V1Options {
     
-    @scala.inline
-    def V1RandomOptions(): typings.uuid.mod.V1RandomOptions = {
+    inline def V1RandomOptions(): typings.uuid.mod.V1RandomOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uuid.mod.V1RandomOptions]
     }
     
-    @scala.inline
-    def V1RngOptions(): typings.uuid.mod.V1RngOptions = {
+    inline def V1RngOptions(): typings.uuid.mod.V1RngOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uuid.mod.V1RngOptions]
     }
@@ -238,8 +218,7 @@ object mod {
        with V1Options
   object V1RandomOptions {
     
-    @scala.inline
-    def apply(): V1RandomOptions = {
+    inline def apply(): V1RandomOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[V1RandomOptions]
     }
@@ -252,8 +231,7 @@ object mod {
        with V1Options
   object V1RngOptions {
     
-    @scala.inline
-    def apply(): V1RngOptions = {
+    inline def apply(): V1RngOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[V1RngOptions]
     }
@@ -266,14 +244,12 @@ object mod {
   trait V4Options extends StObject
   object V4Options {
     
-    @scala.inline
-    def RandomOptions(): typings.uuid.mod.RandomOptions = {
+    inline def RandomOptions(): typings.uuid.mod.RandomOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uuid.mod.RandomOptions]
     }
     
-    @scala.inline
-    def RngOptions(): typings.uuid.mod.RngOptions = {
+    inline def RngOptions(): typings.uuid.mod.RngOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uuid.mod.RngOptions]
     }
@@ -306,20 +282,16 @@ object mod {
   }
   object v3Static {
     
-    @scala.inline
-    def apply(DNS: String, URL: String): v3Static = {
+    inline def apply(DNS: String, URL: String): v3Static = {
       val __obj = js.Dynamic.literal(DNS = DNS.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any])
       __obj.asInstanceOf[v3Static]
     }
     
-    @scala.inline
-    implicit class v3StaticMutableBuilder[Self <: v3Static] (val x: Self) extends AnyVal {
+    extension [Self <: v3Static](x: Self) {
       
-      @scala.inline
-      def setDNS(value: String): Self = StObject.set(x, "DNS", value.asInstanceOf[js.Any])
+      inline def setDNS(value: String): Self = StObject.set(x, "DNS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+      inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -352,20 +324,16 @@ object mod {
   }
   object v5Static {
     
-    @scala.inline
-    def apply(DNS: String, URL: String): v5Static = {
+    inline def apply(DNS: String, URL: String): v5Static = {
       val __obj = js.Dynamic.literal(DNS = DNS.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any])
       __obj.asInstanceOf[v5Static]
     }
     
-    @scala.inline
-    implicit class v5StaticMutableBuilder[Self <: v5Static] (val x: Self) extends AnyVal {
+    extension [Self <: v5Static](x: Self) {
       
-      @scala.inline
-      def setDNS(value: String): Self = StObject.set(x, "DNS", value.asInstanceOf[js.Any])
+      inline def setDNS(value: String): Self = StObject.set(x, "DNS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+      inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     }
   }
   

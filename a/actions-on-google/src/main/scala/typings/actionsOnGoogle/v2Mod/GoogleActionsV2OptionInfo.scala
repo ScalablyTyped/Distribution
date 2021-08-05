@@ -18,28 +18,21 @@ trait GoogleActionsV2OptionInfo extends StObject {
 }
 object GoogleActionsV2OptionInfo {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OptionInfo = {
+  inline def apply(): GoogleActionsV2OptionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OptionInfo]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OptionInfoMutableBuilder[Self <: GoogleActionsV2OptionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OptionInfo](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setSynonyms(value: js.Array[String]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
+    inline def setSynonyms(value: js.Array[String]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
+    inline def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
     
-    @scala.inline
-    def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
+    inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
   }
 }

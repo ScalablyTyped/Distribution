@@ -48,61 +48,43 @@ trait ResourceIdentifier extends StObject {
 }
 object ResourceIdentifier {
   
-  @scala.inline
-  def apply(): ResourceIdentifier = {
+  inline def apply(): ResourceIdentifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceIdentifier]
   }
   
-  @scala.inline
-  implicit class ResourceIdentifierMutableBuilder[Self <: ResourceIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceIdentifier](x: Self) {
     
-    @scala.inline
-    def setAccount(value: AwsAccountId): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: AwsAccountId): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
-    @scala.inline
-    def setCaCertificateId(value: CertificateId): Self = StObject.set(x, "caCertificateId", value.asInstanceOf[js.Any])
+    inline def setCaCertificateId(value: CertificateId): Self = StObject.set(x, "caCertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaCertificateIdUndefined: Self = StObject.set(x, "caCertificateId", js.undefined)
+    inline def setCaCertificateIdUndefined: Self = StObject.set(x, "caCertificateId", js.undefined)
     
-    @scala.inline
-    def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setCognitoIdentityPoolId(value: CognitoIdentityPoolId): Self = StObject.set(x, "cognitoIdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setCognitoIdentityPoolId(value: CognitoIdentityPoolId): Self = StObject.set(x, "cognitoIdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCognitoIdentityPoolIdUndefined: Self = StObject.set(x, "cognitoIdentityPoolId", js.undefined)
+    inline def setCognitoIdentityPoolIdUndefined: Self = StObject.set(x, "cognitoIdentityPoolId", js.undefined)
     
-    @scala.inline
-    def setDeviceCertificateId(value: CertificateId): Self = StObject.set(x, "deviceCertificateId", value.asInstanceOf[js.Any])
+    inline def setDeviceCertificateId(value: CertificateId): Self = StObject.set(x, "deviceCertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceCertificateIdUndefined: Self = StObject.set(x, "deviceCertificateId", js.undefined)
+    inline def setDeviceCertificateIdUndefined: Self = StObject.set(x, "deviceCertificateId", js.undefined)
     
-    @scala.inline
-    def setIamRoleArn(value: RoleArn): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
+    inline def setIamRoleArn(value: RoleArn): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamRoleArnUndefined: Self = StObject.set(x, "iamRoleArn", js.undefined)
+    inline def setIamRoleArnUndefined: Self = StObject.set(x, "iamRoleArn", js.undefined)
     
-    @scala.inline
-    def setPolicyVersionIdentifier(value: PolicyVersionIdentifier): Self = StObject.set(x, "policyVersionIdentifier", value.asInstanceOf[js.Any])
+    inline def setPolicyVersionIdentifier(value: PolicyVersionIdentifier): Self = StObject.set(x, "policyVersionIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyVersionIdentifierUndefined: Self = StObject.set(x, "policyVersionIdentifier", js.undefined)
+    inline def setPolicyVersionIdentifierUndefined: Self = StObject.set(x, "policyVersionIdentifier", js.undefined)
     
-    @scala.inline
-    def setRoleAliasArn(value: RoleAliasArn): Self = StObject.set(x, "roleAliasArn", value.asInstanceOf[js.Any])
+    inline def setRoleAliasArn(value: RoleAliasArn): Self = StObject.set(x, "roleAliasArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleAliasArnUndefined: Self = StObject.set(x, "roleAliasArn", js.undefined)
+    inline def setRoleAliasArnUndefined: Self = StObject.set(x, "roleAliasArn", js.undefined)
   }
 }

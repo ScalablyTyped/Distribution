@@ -18,22 +18,17 @@ trait DescribeIdentityIdFormatRequest extends StObject {
 }
 object DescribeIdentityIdFormatRequest {
   
-  @scala.inline
-  def apply(PrincipalArn: String): DescribeIdentityIdFormatRequest = {
+  inline def apply(PrincipalArn: String): DescribeIdentityIdFormatRequest = {
     val __obj = js.Dynamic.literal(PrincipalArn = PrincipalArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeIdentityIdFormatRequest]
   }
   
-  @scala.inline
-  implicit class DescribeIdentityIdFormatRequestMutableBuilder[Self <: DescribeIdentityIdFormatRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIdentityIdFormatRequest](x: Self) {
     
-    @scala.inline
-    def setPrincipalArn(value: String): Self = StObject.set(x, "PrincipalArn", value.asInstanceOf[js.Any])
+    inline def setPrincipalArn(value: String): Self = StObject.set(x, "PrincipalArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "Resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "Resource", js.undefined)
   }
 }

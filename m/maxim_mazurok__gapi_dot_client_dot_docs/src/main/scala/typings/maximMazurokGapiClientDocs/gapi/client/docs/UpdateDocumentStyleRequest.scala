@@ -20,25 +20,19 @@ trait UpdateDocumentStyleRequest extends StObject {
 }
 object UpdateDocumentStyleRequest {
   
-  @scala.inline
-  def apply(): UpdateDocumentStyleRequest = {
+  inline def apply(): UpdateDocumentStyleRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDocumentStyleRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDocumentStyleRequestMutableBuilder[Self <: UpdateDocumentStyleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDocumentStyleRequest](x: Self) {
     
-    @scala.inline
-    def setDocumentStyle(value: DocumentStyle): Self = StObject.set(x, "documentStyle", value.asInstanceOf[js.Any])
+    inline def setDocumentStyle(value: DocumentStyle): Self = StObject.set(x, "documentStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentStyleUndefined: Self = StObject.set(x, "documentStyle", js.undefined)
+    inline def setDocumentStyleUndefined: Self = StObject.set(x, "documentStyle", js.undefined)
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
   }
 }

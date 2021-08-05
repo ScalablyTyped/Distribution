@@ -44,8 +44,7 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): MDCCheckbox = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCCheckbox]
+    inline def attachTo(root: Element): MDCCheckbox = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCCheckbox]
   }
   
   type MDCCheckboxFactory = js.Function2[/* el */ Element, /* foundation */ js.UndefOr[MDCCheckboxFoundation], MDCCheckbox]

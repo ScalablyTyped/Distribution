@@ -37,8 +37,7 @@ object rootContainerTypesMod {
   }
   object IRootContainer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appendComponentElement: HTMLElement => Unit,
       attachToElement: HTMLElement => Unit,
       destroy: () => Unit,
@@ -56,44 +55,31 @@ object rootContainerTypesMod {
       __obj.asInstanceOf[IRootContainer]
     }
     
-    @scala.inline
-    implicit class IRootContainerMutableBuilder[Self <: IRootContainer] (val x: Self) extends AnyVal {
+    extension [Self <: IRootContainer](x: Self) {
       
-      @scala.inline
-      def setAppendComponentElement(value: HTMLElement => Unit): Self = StObject.set(x, "appendComponentElement", js.Any.fromFunction1(value))
+      inline def setAppendComponentElement(value: HTMLElement => Unit): Self = StObject.set(x, "appendComponentElement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAttachToElement(value: HTMLElement => Unit): Self = StObject.set(x, "attachToElement", js.Any.fromFunction1(value))
+      inline def setAttachToElement(value: HTMLElement => Unit): Self = StObject.set(x, "attachToElement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+      inline def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+      inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetFillAllSpace(value: Boolean => Unit): Self = StObject.set(x, "setFillAllSpace", js.Any.fromFunction1(value))
+      inline def setSetFillAllSpace(value: Boolean => Unit): Self = StObject.set(x, "setFillAllSpace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetHeight(value: Double => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+      inline def setSetHeight(value: Double => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRtl(value: Boolean => Unit): Self = StObject.set(x, "setRtl", js.Any.fromFunction1(value))
+      inline def setSetRtl(value: Boolean => Unit): Self = StObject.set(x, "setRtl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetWidth(value: Double => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+      inline def setSetWidth(value: Double => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -121,74 +107,52 @@ object rootContainerTypesMod {
   }
   object IRootContainerAPI {
     
-    @scala.inline
-    def apply(): IRootContainerAPI = {
+    inline def apply(): IRootContainerAPI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRootContainerAPI]
     }
     
-    @scala.inline
-    implicit class IRootContainerAPIMutableBuilder[Self <: IRootContainerAPI] (val x: Self) extends AnyVal {
+    extension [Self <: IRootContainerAPI](x: Self) {
       
-      @scala.inline
-      def setAttachToElement(value: /* element */ HTMLElement => Unit): Self = StObject.set(x, "attachToElement", js.Any.fromFunction1(value))
+      inline def setAttachToElement(value: /* element */ HTMLElement => Unit): Self = StObject.set(x, "attachToElement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAttachToElementUndefined: Self = StObject.set(x, "attachToElement", js.undefined)
+      inline def setAttachToElementUndefined: Self = StObject.set(x, "attachToElement", js.undefined)
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
+      inline def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
       
-      @scala.inline
-      def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+      inline def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHeightUndefined: Self = StObject.set(x, "getHeight", js.undefined)
+      inline def setGetHeightUndefined: Self = StObject.set(x, "getHeight", js.undefined)
       
-      @scala.inline
-      def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+      inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWidthUndefined: Self = StObject.set(x, "getWidth", js.undefined)
+      inline def setGetWidthUndefined: Self = StObject.set(x, "getWidth", js.undefined)
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+      inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      @scala.inline
-      def setSetFillAllSpace(value: /* flag */ Boolean => Unit): Self = StObject.set(x, "setFillAllSpace", js.Any.fromFunction1(value))
+      inline def setSetFillAllSpace(value: /* flag */ Boolean => Unit): Self = StObject.set(x, "setFillAllSpace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFillAllSpaceUndefined: Self = StObject.set(x, "setFillAllSpace", js.undefined)
+      inline def setSetFillAllSpaceUndefined: Self = StObject.set(x, "setFillAllSpace", js.undefined)
       
-      @scala.inline
-      def setSetHeight(value: /* height */ Double => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+      inline def setSetHeight(value: /* height */ Double => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
+      inline def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
       
-      @scala.inline
-      def setSetRtl(value: /* rtl */ Boolean => Unit): Self = StObject.set(x, "setRtl", js.Any.fromFunction1(value))
+      inline def setSetRtl(value: /* rtl */ Boolean => Unit): Self = StObject.set(x, "setRtl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRtlUndefined: Self = StObject.set(x, "setRtl", js.undefined)
+      inline def setSetRtlUndefined: Self = StObject.set(x, "setRtl", js.undefined)
       
-      @scala.inline
-      def setSetWidth(value: /* width */ Double => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+      inline def setSetWidth(value: /* width */ Double => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
+      inline def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     }
   }
   
@@ -208,8 +172,7 @@ object rootContainerTypesMod {
   }
   object IRootContainerViewCallbacks {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onMouseEnter: /* evt */ Event => Unit,
       onMouseLeave: /* evt */ Event => Unit,
       onMouseMove: /* evt */ Event => Unit
@@ -218,17 +181,13 @@ object rootContainerTypesMod {
       __obj.asInstanceOf[IRootContainerViewCallbacks]
     }
     
-    @scala.inline
-    implicit class IRootContainerViewCallbacksMutableBuilder[Self <: IRootContainerViewCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: IRootContainerViewCallbacks](x: Self) {
       
-      @scala.inline
-      def setOnMouseEnter(value: /* evt */ Event => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: /* evt */ Event => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeave(value: /* evt */ Event => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: /* evt */ Event => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseMove(value: /* evt */ Event => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+      inline def setOnMouseMove(value: /* evt */ Event => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
     }
   }
   
@@ -246,8 +205,7 @@ object rootContainerTypesMod {
   }
   object IRootContainerViewConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callbacks: IRootContainerViewCallbacks,
       fillAllSpace: Boolean,
       height: Double,
@@ -258,23 +216,17 @@ object rootContainerTypesMod {
       __obj.asInstanceOf[IRootContainerViewConfig]
     }
     
-    @scala.inline
-    implicit class IRootContainerViewConfigMutableBuilder[Self <: IRootContainerViewConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IRootContainerViewConfig](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: IRootContainerViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: IRootContainerViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillAllSpace(value: Boolean): Self = StObject.set(x, "fillAllSpace", value.asInstanceOf[js.Any])
+      inline def setFillAllSpace(value: Boolean): Self = StObject.set(x, "fillAllSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -292,29 +244,22 @@ object rootContainerTypesMod {
   }
   object IRootContainerViewStyles {
     
-    @scala.inline
-    def apply(container: String, fillAllSpace: String, fullScreen: String, hidden: String, rtl: Boolean): IRootContainerViewStyles = {
+    inline def apply(container: String, fillAllSpace: String, fullScreen: String, hidden: String, rtl: Boolean): IRootContainerViewStyles = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], fillAllSpace = fillAllSpace.asInstanceOf[js.Any], fullScreen = fullScreen.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], rtl = rtl.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRootContainerViewStyles]
     }
     
-    @scala.inline
-    implicit class IRootContainerViewStylesMutableBuilder[Self <: IRootContainerViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IRootContainerViewStyles](x: Self) {
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillAllSpace(value: String): Self = StObject.set(x, "fillAllSpace", value.asInstanceOf[js.Any])
+      inline def setFillAllSpace(value: String): Self = StObject.set(x, "fillAllSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullScreen(value: String): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+      inline def setFullScreen(value: String): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,8 +18,7 @@ trait Interpolator extends StObject {
 }
 object Interpolator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     init: (InterpolationOptions, Boolean) => Unit,
     interpolate: (String, js.Object, String, InterpolationOptions) => String,
     nest: (String, js.Function1[/* repeated */ js.Any, js.Any], InterpolationOptions) => String,
@@ -30,22 +29,16 @@ object Interpolator {
     __obj.asInstanceOf[Interpolator]
   }
   
-  @scala.inline
-  implicit class InterpolatorMutableBuilder[Self <: Interpolator] (val x: Self) extends AnyVal {
+  extension [Self <: Interpolator](x: Self) {
     
-    @scala.inline
-    def setInit(value: (InterpolationOptions, Boolean) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
+    inline def setInit(value: (InterpolationOptions, Boolean) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInterpolate(value: (String, js.Object, String, InterpolationOptions) => String): Self = StObject.set(x, "interpolate", js.Any.fromFunction4(value))
+    inline def setInterpolate(value: (String, js.Object, String, InterpolationOptions) => String): Self = StObject.set(x, "interpolate", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setNest(value: (String, js.Function1[/* repeated */ js.Any, js.Any], InterpolationOptions) => String): Self = StObject.set(x, "nest", js.Any.fromFunction3(value))
+    inline def setNest(value: (String, js.Function1[/* repeated */ js.Any, js.Any], InterpolationOptions) => String): Self = StObject.set(x, "nest", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResetRegExp(value: () => Unit): Self = StObject.set(x, "resetRegExp", js.Any.fromFunction0(value))
+    inline def setResetRegExp(value: () => Unit): Self = StObject.set(x, "resetRegExp", js.Any.fromFunction0(value))
   }
 }

@@ -18,22 +18,17 @@ trait DeleteClusterSnapshotMessage extends StObject {
 }
 object DeleteClusterSnapshotMessage {
   
-  @scala.inline
-  def apply(SnapshotIdentifier: String): DeleteClusterSnapshotMessage = {
+  inline def apply(SnapshotIdentifier: String): DeleteClusterSnapshotMessage = {
     val __obj = js.Dynamic.literal(SnapshotIdentifier = SnapshotIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteClusterSnapshotMessage]
   }
   
-  @scala.inline
-  implicit class DeleteClusterSnapshotMessageMutableBuilder[Self <: DeleteClusterSnapshotMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteClusterSnapshotMessage](x: Self) {
     
-    @scala.inline
-    def setSnapshotClusterIdentifier(value: String): Self = StObject.set(x, "SnapshotClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setSnapshotClusterIdentifier(value: String): Self = StObject.set(x, "SnapshotClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotClusterIdentifierUndefined: Self = StObject.set(x, "SnapshotClusterIdentifier", js.undefined)
+    inline def setSnapshotClusterIdentifierUndefined: Self = StObject.set(x, "SnapshotClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setSnapshotIdentifier(value: String): Self = StObject.set(x, "SnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setSnapshotIdentifier(value: String): Self = StObject.set(x, "SnapshotIdentifier", value.asInstanceOf[js.Any])
   }
 }

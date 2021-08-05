@@ -37,8 +37,7 @@ trait XItemListListener
 }
 object XItemListListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     allItemsRemoved: EventObject => Unit,
     disposing: EventObject => Unit,
@@ -53,22 +52,16 @@ object XItemListListener {
     __obj.asInstanceOf[XItemListListener]
   }
   
-  @scala.inline
-  implicit class XItemListListenerMutableBuilder[Self <: XItemListListener] (val x: Self) extends AnyVal {
+  extension [Self <: XItemListListener](x: Self) {
     
-    @scala.inline
-    def setAllItemsRemoved(value: EventObject => Unit): Self = StObject.set(x, "allItemsRemoved", js.Any.fromFunction1(value))
+    inline def setAllItemsRemoved(value: EventObject => Unit): Self = StObject.set(x, "allItemsRemoved", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItemListChanged(value: EventObject => Unit): Self = StObject.set(x, "itemListChanged", js.Any.fromFunction1(value))
+    inline def setItemListChanged(value: EventObject => Unit): Self = StObject.set(x, "itemListChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setListItemInserted(value: ItemListEvent => Unit): Self = StObject.set(x, "listItemInserted", js.Any.fromFunction1(value))
+    inline def setListItemInserted(value: ItemListEvent => Unit): Self = StObject.set(x, "listItemInserted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setListItemModified(value: ItemListEvent => Unit): Self = StObject.set(x, "listItemModified", js.Any.fromFunction1(value))
+    inline def setListItemModified(value: ItemListEvent => Unit): Self = StObject.set(x, "listItemModified", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setListItemRemoved(value: ItemListEvent => Unit): Self = StObject.set(x, "listItemRemoved", js.Any.fromFunction1(value))
+    inline def setListItemRemoved(value: ItemListEvent => Unit): Self = StObject.set(x, "listItemRemoved", js.Any.fromFunction1(value))
   }
 }

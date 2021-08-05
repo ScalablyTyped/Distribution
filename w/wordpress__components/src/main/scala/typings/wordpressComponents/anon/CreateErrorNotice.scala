@@ -16,8 +16,7 @@ trait CreateErrorNotice extends StObject {
 }
 object CreateErrorNotice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createErrorNotice: String => Unit,
     createNotice: PartialNoticePickNoticeco => Unit,
     removeAllNotices: () => Unit,
@@ -27,19 +26,14 @@ object CreateErrorNotice {
     __obj.asInstanceOf[CreateErrorNotice]
   }
   
-  @scala.inline
-  implicit class CreateErrorNoticeMutableBuilder[Self <: CreateErrorNotice] (val x: Self) extends AnyVal {
+  extension [Self <: CreateErrorNotice](x: Self) {
     
-    @scala.inline
-    def setCreateErrorNotice(value: String => Unit): Self = StObject.set(x, "createErrorNotice", js.Any.fromFunction1(value))
+    inline def setCreateErrorNotice(value: String => Unit): Self = StObject.set(x, "createErrorNotice", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateNotice(value: PartialNoticePickNoticeco => Unit): Self = StObject.set(x, "createNotice", js.Any.fromFunction1(value))
+    inline def setCreateNotice(value: PartialNoticePickNoticeco => Unit): Self = StObject.set(x, "createNotice", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveAllNotices(value: () => Unit): Self = StObject.set(x, "removeAllNotices", js.Any.fromFunction0(value))
+    inline def setRemoveAllNotices(value: () => Unit): Self = StObject.set(x, "removeAllNotices", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveNotice(value: String => Unit): Self = StObject.set(x, "removeNotice", js.Any.fromFunction1(value))
+    inline def setRemoveNotice(value: String => Unit): Self = StObject.set(x, "removeNotice", js.Any.fromFunction1(value))
   }
 }

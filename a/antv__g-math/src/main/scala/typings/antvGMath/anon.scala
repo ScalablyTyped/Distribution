@@ -18,26 +18,20 @@ object anon {
   }
   object MaxX {
     
-    @scala.inline
-    def apply(maxX: js.Any, maxY: js.Any, minX: js.Any, minY: js.Any): MaxX = {
+    inline def apply(maxX: js.Any, maxY: js.Any, minX: js.Any, minY: js.Any): MaxX = {
       val __obj = js.Dynamic.literal(maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaxX]
     }
     
-    @scala.inline
-    implicit class MaxXMutableBuilder[Self <: MaxX] (val x: Self) extends AnyVal {
+    extension [Self <: MaxX](x: Self) {
       
-      @scala.inline
-      def setMaxX(value: js.Any): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
+      inline def setMaxX(value: js.Any): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxY(value: js.Any): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
+      inline def setMaxY(value: js.Any): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinX(value: js.Any): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
+      inline def setMinX(value: js.Any): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinY(value: js.Any): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
+      inline def setMinY(value: js.Any): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,20 +43,16 @@ object anon {
   }
   object X {
     
-    @scala.inline
-    def apply(x: Double, y: Double): X = {
+    inline def apply(x: Double, y: Double): X = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[X]
     }
     
-    @scala.inline
-    implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+    extension [Self <: X](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

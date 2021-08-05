@@ -23,19 +23,15 @@ trait NodeInsertedEventArgs extends StObject {
 }
 object NodeInsertedEventArgs {
   
-  @scala.inline
-  def apply(isUndoRedo: Boolean, newNode: CustomXmlNode): NodeInsertedEventArgs = {
+  inline def apply(isUndoRedo: Boolean, newNode: CustomXmlNode): NodeInsertedEventArgs = {
     val __obj = js.Dynamic.literal(isUndoRedo = isUndoRedo.asInstanceOf[js.Any], newNode = newNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeInsertedEventArgs]
   }
   
-  @scala.inline
-  implicit class NodeInsertedEventArgsMutableBuilder[Self <: NodeInsertedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: NodeInsertedEventArgs](x: Self) {
     
-    @scala.inline
-    def setIsUndoRedo(value: Boolean): Self = StObject.set(x, "isUndoRedo", value.asInstanceOf[js.Any])
+    inline def setIsUndoRedo(value: Boolean): Self = StObject.set(x, "isUndoRedo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewNode(value: CustomXmlNode): Self = StObject.set(x, "newNode", value.asInstanceOf[js.Any])
+    inline def setNewNode(value: CustomXmlNode): Self = StObject.set(x, "newNode", value.asInstanceOf[js.Any])
   }
 }

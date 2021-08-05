@@ -22,22 +22,17 @@ trait CreateMultiFactorInfoRequest extends StObject {
 }
 object CreateMultiFactorInfoRequest {
   
-  @scala.inline
-  def apply(factorId: String): CreateMultiFactorInfoRequest = {
+  inline def apply(factorId: String): CreateMultiFactorInfoRequest = {
     val __obj = js.Dynamic.literal(factorId = factorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMultiFactorInfoRequest]
   }
   
-  @scala.inline
-  implicit class CreateMultiFactorInfoRequestMutableBuilder[Self <: CreateMultiFactorInfoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMultiFactorInfoRequest](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setFactorId(value: String): Self = StObject.set(x, "factorId", value.asInstanceOf[js.Any])
+    inline def setFactorId(value: String): Self = StObject.set(x, "factorId", value.asInstanceOf[js.Any])
   }
 }

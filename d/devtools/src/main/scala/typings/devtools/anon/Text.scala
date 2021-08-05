@@ -12,19 +12,15 @@ trait Text extends StObject {
 }
 object Text {
   
-  @scala.inline
-  def apply(elementId: String, text: String): Text = {
+  inline def apply(elementId: String, text: String): Text = {
     val __obj = js.Dynamic.literal(elementId = elementId.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Text]
   }
   
-  @scala.inline
-  implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+  extension [Self <: Text](x: Self) {
     
-    @scala.inline
-    def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
+    inline def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

@@ -17,8 +17,7 @@ trait BinOp
 }
 object BinOp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -40,16 +39,12 @@ object BinOp {
     __obj.asInstanceOf[BinOp]
   }
   
-  @scala.inline
-  implicit class BinOpMutableBuilder[Self <: BinOp] (val x: Self) extends AnyVal {
+  extension [Self <: BinOp](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOp(value: java.lang.String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: java.lang.String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
   }
 }

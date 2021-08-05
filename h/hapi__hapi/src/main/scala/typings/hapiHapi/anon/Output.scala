@@ -12,16 +12,13 @@ trait Output extends StObject {
 }
 object Output {
   
-  @scala.inline
-  def apply(output: PayloadOutput | annotated): Output = {
+  inline def apply(output: PayloadOutput | annotated): Output = {
     val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
   
-  @scala.inline
-  implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+  extension [Self <: Output](x: Self) {
     
-    @scala.inline
-    def setOutput(value: PayloadOutput | annotated): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: PayloadOutput | annotated): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
   }
 }

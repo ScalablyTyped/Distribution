@@ -14,7 +14,7 @@ trait RuleCondition extends StObject {
   
   var Enabled: Boolean
   
-  @JSName("Outlook.RuleCondition_typekey")
+  /* private */ @JSName("Outlook.RuleCondition_typekey")
   var OutlookDotRuleCondition_typekey: RuleCondition
   
   val Parent: js.Any
@@ -23,8 +23,7 @@ trait RuleCondition extends StObject {
 }
 object RuleCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     ConditionType: OlRuleConditionType,
@@ -38,28 +37,20 @@ object RuleCondition {
     __obj.asInstanceOf[RuleCondition]
   }
   
-  @scala.inline
-  implicit class RuleConditionMutableBuilder[Self <: RuleCondition] (val x: Self) extends AnyVal {
+  extension [Self <: RuleCondition](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionType(value: OlRuleConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
+    inline def setConditionType(value: OlRuleConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotRuleCondition_typekey(value: RuleCondition): Self = StObject.set(x, "Outlook.RuleCondition_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotRuleCondition_typekey(value: RuleCondition): Self = StObject.set(x, "Outlook.RuleCondition_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

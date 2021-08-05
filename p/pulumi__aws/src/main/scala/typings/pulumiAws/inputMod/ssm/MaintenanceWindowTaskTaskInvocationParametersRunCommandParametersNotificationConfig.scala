@@ -24,34 +24,25 @@ trait MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificat
 }
 object MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig {
   
-  @scala.inline
-  def apply(): MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig = {
+  inline def apply(): MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig]
   }
   
-  @scala.inline
-  implicit class MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigMutableBuilder[Self <: MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig](x: Self) {
     
-    @scala.inline
-    def setNotificationArn(value: Input[String]): Self = StObject.set(x, "notificationArn", value.asInstanceOf[js.Any])
+    inline def setNotificationArn(value: Input[String]): Self = StObject.set(x, "notificationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationArnUndefined: Self = StObject.set(x, "notificationArn", js.undefined)
+    inline def setNotificationArnUndefined: Self = StObject.set(x, "notificationArn", js.undefined)
     
-    @scala.inline
-    def setNotificationEvents(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "notificationEvents", value.asInstanceOf[js.Any])
+    inline def setNotificationEvents(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "notificationEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationEventsUndefined: Self = StObject.set(x, "notificationEvents", js.undefined)
+    inline def setNotificationEventsUndefined: Self = StObject.set(x, "notificationEvents", js.undefined)
     
-    @scala.inline
-    def setNotificationEventsVarargs(value: Input[String]*): Self = StObject.set(x, "notificationEvents", js.Array(value :_*))
+    inline def setNotificationEventsVarargs(value: Input[String]*): Self = StObject.set(x, "notificationEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setNotificationType(value: Input[String]): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
+    inline def setNotificationType(value: Input[String]): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationTypeUndefined: Self = StObject.set(x, "notificationType", js.undefined)
+    inline def setNotificationTypeUndefined: Self = StObject.set(x, "notificationType", js.undefined)
   }
 }

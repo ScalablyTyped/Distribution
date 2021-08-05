@@ -21,25 +21,19 @@ trait CapturePageConfig extends StObject {
 }
 object CapturePageConfig {
   
-  @scala.inline
-  def apply(): CapturePageConfig = {
+  inline def apply(): CapturePageConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CapturePageConfig]
   }
   
-  @scala.inline
-  implicit class CapturePageConfigMutableBuilder[Self <: CapturePageConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CapturePageConfig](x: Self) {
     
-    @scala.inline
-    def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+    inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
+    inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

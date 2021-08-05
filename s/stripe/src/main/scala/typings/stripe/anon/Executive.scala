@@ -32,37 +32,27 @@ trait Executive extends StObject {
 }
 object Executive {
   
-  @scala.inline
-  def apply(): Executive = {
+  inline def apply(): Executive = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Executive]
   }
   
-  @scala.inline
-  implicit class ExecutiveMutableBuilder[Self <: Executive] (val x: Self) extends AnyVal {
+  extension [Self <: Executive](x: Self) {
     
-    @scala.inline
-    def setDirector(value: Boolean): Self = StObject.set(x, "director", value.asInstanceOf[js.Any])
+    inline def setDirector(value: Boolean): Self = StObject.set(x, "director", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectorUndefined: Self = StObject.set(x, "director", js.undefined)
+    inline def setDirectorUndefined: Self = StObject.set(x, "director", js.undefined)
     
-    @scala.inline
-    def setExecutive(value: Boolean): Self = StObject.set(x, "executive", value.asInstanceOf[js.Any])
+    inline def setExecutive(value: Boolean): Self = StObject.set(x, "executive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutiveUndefined: Self = StObject.set(x, "executive", js.undefined)
+    inline def setExecutiveUndefined: Self = StObject.set(x, "executive", js.undefined)
     
-    @scala.inline
-    def setOwner(value: Boolean): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Boolean): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setRepresentative(value: Boolean): Self = StObject.set(x, "representative", value.asInstanceOf[js.Any])
+    inline def setRepresentative(value: Boolean): Self = StObject.set(x, "representative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepresentativeUndefined: Self = StObject.set(x, "representative", js.undefined)
+    inline def setRepresentativeUndefined: Self = StObject.set(x, "representative", js.undefined)
   }
 }

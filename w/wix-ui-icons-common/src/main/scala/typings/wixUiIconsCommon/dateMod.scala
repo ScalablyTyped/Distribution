@@ -22,20 +22,16 @@ object dateMod extends Shortcut {
   }
   object DateProps {
     
-    @scala.inline
-    def apply(): DateProps = {
+    inline def apply(): DateProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DateProps]
     }
     
-    @scala.inline
-    implicit class DatePropsMutableBuilder[Self <: DateProps] (val x: Self) extends AnyVal {
+    extension [Self <: DateProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

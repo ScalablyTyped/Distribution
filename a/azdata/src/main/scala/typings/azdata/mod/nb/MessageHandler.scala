@@ -11,16 +11,13 @@ trait MessageHandler[T /* <: IMessage */] extends StObject {
 }
 object MessageHandler {
   
-  @scala.inline
-  def apply[T /* <: IMessage */](handle: T => Unit | Thenable[Unit]): MessageHandler[T] = {
+  inline def apply[T /* <: IMessage */](handle: T => Unit | Thenable[Unit]): MessageHandler[T] = {
     val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle))
     __obj.asInstanceOf[MessageHandler[T]]
   }
   
-  @scala.inline
-  implicit class MessageHandlerMutableBuilder[Self <: MessageHandler[?], T /* <: IMessage */] (val x: Self & MessageHandler[T]) extends AnyVal {
+  extension [Self <: MessageHandler[?], T /* <: IMessage */](x: Self & MessageHandler[T]) {
     
-    @scala.inline
-    def setHandle(value: T => Unit | Thenable[Unit]): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
+    inline def setHandle(value: T => Unit | Thenable[Unit]): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
   }
 }

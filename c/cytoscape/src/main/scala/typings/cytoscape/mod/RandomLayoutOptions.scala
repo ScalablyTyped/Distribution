@@ -28,31 +28,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object RandomLayoutOptions {
   
-  @scala.inline
-  def apply(fit: Boolean): RandomLayoutOptions = {
+  inline def apply(fit: Boolean): RandomLayoutOptions = {
     val __obj = js.Dynamic.literal(fit = fit.asInstanceOf[js.Any], name = "random")
     __obj.asInstanceOf[RandomLayoutOptions]
   }
   
-  @scala.inline
-  implicit class RandomLayoutOptionsMutableBuilder[Self <: RandomLayoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RandomLayoutOptions](x: Self) {
     
-    @scala.inline
-    def setBoundingBox(value: BoundingBox12 | BoundingBoxWH): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: BoundingBox12 | BoundingBoxWH): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxUndefined: Self = StObject.set(x, "boundingBox", js.undefined)
+    inline def setBoundingBoxUndefined: Self = StObject.set(x, "boundingBox", js.undefined)
     
-    @scala.inline
-    def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
+    inline def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: random): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: random): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }
 }

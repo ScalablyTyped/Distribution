@@ -12,25 +12,19 @@ trait Custom extends StObject {
 }
 object Custom {
   
-  @scala.inline
-  def apply(id: String): Custom = {
+  inline def apply(id: String): Custom = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Custom]
   }
   
-  @scala.inline
-  implicit class CustomMutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
+  extension [Self <: Custom](x: Self) {
     
-    @scala.inline
-    def setCustom(value: js.Object): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: js.Object): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomNull: Self = StObject.set(x, "custom", null)
+    inline def setCustomNull: Self = StObject.set(x, "custom", null)
     
-    @scala.inline
-    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

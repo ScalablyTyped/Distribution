@@ -213,533 +213,357 @@ object mod {
   @js.native
   val MenuItem: FC[MenuItemProps] = js.native
   
-  @scala.inline
-  def MenuLink[T /* <: js.Object */](props: MenuLinkProps[T]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink[T /* <: js.Object */](props: MenuLinkProps[T]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_a(props: MenuLinkProps[a]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_a(props: MenuLinkProps[a]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_abbr(props: MenuLinkProps[abbr]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_abbr(props: MenuLinkProps[abbr]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_address(props: MenuLinkProps[address]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_address(props: MenuLinkProps[address]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_animate(props: MenuLinkProps[animate]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_animate(props: MenuLinkProps[animate]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_animateMotion(props: MenuLinkProps[animateMotion]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_animateMotion(props: MenuLinkProps[animateMotion]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_animateTransform(props: MenuLinkProps[animateTransform]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_animateTransform(props: MenuLinkProps[animateTransform]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_area(props: MenuLinkProps[area]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_area(props: MenuLinkProps[area]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_article(props: MenuLinkProps[article]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_article(props: MenuLinkProps[article]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_aside(props: MenuLinkProps[aside]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_aside(props: MenuLinkProps[aside]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_audio(props: MenuLinkProps[audio]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_audio(props: MenuLinkProps[audio]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_b(props: MenuLinkProps[b]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_b(props: MenuLinkProps[b]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_base(props: MenuLinkProps[base]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_base(props: MenuLinkProps[base]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_bdi(props: MenuLinkProps[bdi]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_bdi(props: MenuLinkProps[bdi]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_bdo(props: MenuLinkProps[bdo]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_bdo(props: MenuLinkProps[bdo]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_big(props: MenuLinkProps[big]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_big(props: MenuLinkProps[big]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_blockquote(props: MenuLinkProps[blockquote]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_blockquote(props: MenuLinkProps[blockquote]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_body(props: MenuLinkProps[body]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_body(props: MenuLinkProps[body]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_br(props: MenuLinkProps[br]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_br(props: MenuLinkProps[br]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_button(props: MenuLinkProps[button]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_button(props: MenuLinkProps[button]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_canvas(props: MenuLinkProps[canvas]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_canvas(props: MenuLinkProps[canvas]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_caption(props: MenuLinkProps[caption]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_caption(props: MenuLinkProps[caption]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_circle(props: MenuLinkProps[circle]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_circle(props: MenuLinkProps[circle]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_cite(props: MenuLinkProps[cite]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_cite(props: MenuLinkProps[cite]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_clipPath(props: MenuLinkProps[clipPath]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_clipPath(props: MenuLinkProps[clipPath]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_code(props: MenuLinkProps[code]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_code(props: MenuLinkProps[code]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_col(props: MenuLinkProps[col]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_col(props: MenuLinkProps[col]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_colgroup(props: MenuLinkProps[colgroup]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_colgroup(props: MenuLinkProps[colgroup]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_data(props: MenuLinkProps[data]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_data(props: MenuLinkProps[data]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_datalist(props: MenuLinkProps[datalist]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_datalist(props: MenuLinkProps[datalist]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_dd(props: MenuLinkProps[dd]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_dd(props: MenuLinkProps[dd]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_defs(props: MenuLinkProps[defs]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_defs(props: MenuLinkProps[defs]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_del(props: MenuLinkProps[del]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_del(props: MenuLinkProps[del]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_desc(props: MenuLinkProps[desc]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_desc(props: MenuLinkProps[desc]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_details(props: MenuLinkProps[details]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_details(props: MenuLinkProps[details]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_dfn(props: MenuLinkProps[dfn]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_dfn(props: MenuLinkProps[dfn]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_dialog(props: MenuLinkProps[dialog]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_dialog(props: MenuLinkProps[dialog]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_div(props: MenuLinkProps[div]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_div(props: MenuLinkProps[div]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_dl(props: MenuLinkProps[dl]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_dl(props: MenuLinkProps[dl]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_dt(props: MenuLinkProps[dt]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_dt(props: MenuLinkProps[dt]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_ellipse(props: MenuLinkProps[ellipse]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_ellipse(props: MenuLinkProps[ellipse]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_em(props: MenuLinkProps[em]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_em(props: MenuLinkProps[em]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_embed(props: MenuLinkProps[embed]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_embed(props: MenuLinkProps[embed]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feBlend(props: MenuLinkProps[feBlend]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feBlend(props: MenuLinkProps[feBlend]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feColorMatrix(props: MenuLinkProps[feColorMatrix]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feColorMatrix(props: MenuLinkProps[feColorMatrix]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feComponentTransfer(props: MenuLinkProps[feComponentTransfer]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feComponentTransfer(props: MenuLinkProps[feComponentTransfer]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feComposite(props: MenuLinkProps[feComposite]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feComposite(props: MenuLinkProps[feComposite]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feConvolveMatrix(props: MenuLinkProps[feConvolveMatrix]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feConvolveMatrix(props: MenuLinkProps[feConvolveMatrix]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feDiffuseLighting(props: MenuLinkProps[feDiffuseLighting]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feDiffuseLighting(props: MenuLinkProps[feDiffuseLighting]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feDisplacementMap(props: MenuLinkProps[feDisplacementMap]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feDisplacementMap(props: MenuLinkProps[feDisplacementMap]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feDistantLight(props: MenuLinkProps[feDistantLight]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feDistantLight(props: MenuLinkProps[feDistantLight]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feDropShadow(props: MenuLinkProps[feDropShadow]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feDropShadow(props: MenuLinkProps[feDropShadow]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feFlood(props: MenuLinkProps[feFlood]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feFlood(props: MenuLinkProps[feFlood]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feFuncA(props: MenuLinkProps[feFuncA]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feFuncA(props: MenuLinkProps[feFuncA]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feFuncB(props: MenuLinkProps[feFuncB]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feFuncB(props: MenuLinkProps[feFuncB]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feFuncG(props: MenuLinkProps[feFuncG]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feFuncG(props: MenuLinkProps[feFuncG]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feFuncR(props: MenuLinkProps[feFuncR]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feFuncR(props: MenuLinkProps[feFuncR]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feGaussianBlur(props: MenuLinkProps[feGaussianBlur]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feGaussianBlur(props: MenuLinkProps[feGaussianBlur]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feImage(props: MenuLinkProps[feImage]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feImage(props: MenuLinkProps[feImage]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feMerge(props: MenuLinkProps[feMerge]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feMerge(props: MenuLinkProps[feMerge]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feMergeNode(props: MenuLinkProps[feMergeNode]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feMergeNode(props: MenuLinkProps[feMergeNode]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feMorphology(props: MenuLinkProps[feMorphology]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feMorphology(props: MenuLinkProps[feMorphology]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feOffset(props: MenuLinkProps[feOffset]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feOffset(props: MenuLinkProps[feOffset]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_fePointLight(props: MenuLinkProps[fePointLight]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_fePointLight(props: MenuLinkProps[fePointLight]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feSpecularLighting(props: MenuLinkProps[feSpecularLighting]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feSpecularLighting(props: MenuLinkProps[feSpecularLighting]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feSpotLight(props: MenuLinkProps[feSpotLight]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feSpotLight(props: MenuLinkProps[feSpotLight]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feTile(props: MenuLinkProps[feTile]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feTile(props: MenuLinkProps[feTile]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_feTurbulence(props: MenuLinkProps[feTurbulence]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_feTurbulence(props: MenuLinkProps[feTurbulence]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_fieldset(props: MenuLinkProps[fieldset]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_fieldset(props: MenuLinkProps[fieldset]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_figcaption(props: MenuLinkProps[figcaption]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_figcaption(props: MenuLinkProps[figcaption]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_figure(props: MenuLinkProps[figure]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_figure(props: MenuLinkProps[figure]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_filter(props: MenuLinkProps[filter]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_filter(props: MenuLinkProps[filter]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_footer(props: MenuLinkProps[footer]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_footer(props: MenuLinkProps[footer]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_foreignObject(props: MenuLinkProps[foreignObject]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_foreignObject(props: MenuLinkProps[foreignObject]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_form(props: MenuLinkProps[form]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_form(props: MenuLinkProps[form]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_g(props: MenuLinkProps[g]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_g(props: MenuLinkProps[g]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_h1(props: MenuLinkProps[h1]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_h1(props: MenuLinkProps[h1]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_h2(props: MenuLinkProps[h2]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_h2(props: MenuLinkProps[h2]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_h3(props: MenuLinkProps[h3]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_h3(props: MenuLinkProps[h3]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_h4(props: MenuLinkProps[h4]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_h4(props: MenuLinkProps[h4]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_h5(props: MenuLinkProps[h5]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_h5(props: MenuLinkProps[h5]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_h6(props: MenuLinkProps[h6]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_h6(props: MenuLinkProps[h6]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_head(props: MenuLinkProps[head]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_head(props: MenuLinkProps[head]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_header(props: MenuLinkProps[header]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_header(props: MenuLinkProps[header]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_hgroup(props: MenuLinkProps[hgroup]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_hgroup(props: MenuLinkProps[hgroup]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_hr(props: MenuLinkProps[hr]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_hr(props: MenuLinkProps[hr]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_html(props: MenuLinkProps[html]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_html(props: MenuLinkProps[html]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_i(props: MenuLinkProps[i]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_i(props: MenuLinkProps[i]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_iframe(props: MenuLinkProps[iframe]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_iframe(props: MenuLinkProps[iframe]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_image(props: MenuLinkProps[image]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_image(props: MenuLinkProps[image]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_img(props: MenuLinkProps[img]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_img(props: MenuLinkProps[img]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_input(props: MenuLinkProps[input]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_input(props: MenuLinkProps[input]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_ins(props: MenuLinkProps[ins]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_ins(props: MenuLinkProps[ins]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_kbd(props: MenuLinkProps[kbd]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_kbd(props: MenuLinkProps[kbd]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_keygen(props: MenuLinkProps[keygen]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_keygen(props: MenuLinkProps[keygen]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_label(props: MenuLinkProps[label]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_label(props: MenuLinkProps[label]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_legend(props: MenuLinkProps[legend]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_legend(props: MenuLinkProps[legend]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_li(props: MenuLinkProps[li]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_li(props: MenuLinkProps[li]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_line(props: MenuLinkProps[line]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_line(props: MenuLinkProps[line]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_linearGradient(props: MenuLinkProps[linearGradient]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_linearGradient(props: MenuLinkProps[linearGradient]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_link(props: MenuLinkProps[link]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_link(props: MenuLinkProps[link]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_main(props: MenuLinkProps[main]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_main(props: MenuLinkProps[main]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_map(props: MenuLinkProps[map]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_map(props: MenuLinkProps[map]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_mark(props: MenuLinkProps[mark]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_mark(props: MenuLinkProps[mark]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_marker(props: MenuLinkProps[marker]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_marker(props: MenuLinkProps[marker]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_mask(props: MenuLinkProps[mask]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_mask(props: MenuLinkProps[mask]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_menu(props: MenuLinkProps[menu]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_menu(props: MenuLinkProps[menu]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_menuitem(props: MenuLinkProps[menuitem]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_menuitem(props: MenuLinkProps[menuitem]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_meta(props: MenuLinkProps[meta]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_meta(props: MenuLinkProps[meta]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_metadata(props: MenuLinkProps[metadata]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_metadata(props: MenuLinkProps[metadata]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_meter(props: MenuLinkProps[meter]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_meter(props: MenuLinkProps[meter]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_mpath(props: MenuLinkProps[mpath]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_mpath(props: MenuLinkProps[mpath]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_nav(props: MenuLinkProps[nav]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_nav(props: MenuLinkProps[nav]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_noindex(props: MenuLinkProps[noindex]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_noindex(props: MenuLinkProps[noindex]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_noscript(props: MenuLinkProps[noscript]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_noscript(props: MenuLinkProps[noscript]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_object(props: MenuLinkProps[`object`]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_object(props: MenuLinkProps[`object`]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_ol(props: MenuLinkProps[ol]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_ol(props: MenuLinkProps[ol]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_optgroup(props: MenuLinkProps[optgroup]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_optgroup(props: MenuLinkProps[optgroup]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_option(props: MenuLinkProps[option]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_option(props: MenuLinkProps[option]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_output(props: MenuLinkProps[output]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_output(props: MenuLinkProps[output]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_p(props: MenuLinkProps[p]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_p(props: MenuLinkProps[p]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_param(props: MenuLinkProps[param]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_param(props: MenuLinkProps[param]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_path(props: MenuLinkProps[path]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_path(props: MenuLinkProps[path]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_pattern(props: MenuLinkProps[pattern]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_pattern(props: MenuLinkProps[pattern]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_picture(props: MenuLinkProps[picture]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_picture(props: MenuLinkProps[picture]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_polygon(props: MenuLinkProps[polygon]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_polygon(props: MenuLinkProps[polygon]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_polyline(props: MenuLinkProps[polyline]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_polyline(props: MenuLinkProps[polyline]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_pre(props: MenuLinkProps[pre]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_pre(props: MenuLinkProps[pre]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_progress(props: MenuLinkProps[progress]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_progress(props: MenuLinkProps[progress]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_q(props: MenuLinkProps[q]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_q(props: MenuLinkProps[q]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_radialGradient(props: MenuLinkProps[radialGradient]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_radialGradient(props: MenuLinkProps[radialGradient]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_rect(props: MenuLinkProps[rect]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_rect(props: MenuLinkProps[rect]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_rp(props: MenuLinkProps[rp]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_rp(props: MenuLinkProps[rp]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_rt(props: MenuLinkProps[rt]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_rt(props: MenuLinkProps[rt]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_ruby(props: MenuLinkProps[ruby]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_ruby(props: MenuLinkProps[ruby]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_s(props: MenuLinkProps[s]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_s(props: MenuLinkProps[s]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_samp(props: MenuLinkProps[samp]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_samp(props: MenuLinkProps[samp]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_script(props: MenuLinkProps[script]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_script(props: MenuLinkProps[script]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_section(props: MenuLinkProps[section]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_section(props: MenuLinkProps[section]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_select(props: MenuLinkProps[select]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_select(props: MenuLinkProps[select]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_slot(props: MenuLinkProps[slot]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_slot(props: MenuLinkProps[slot]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_small(props: MenuLinkProps[small]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_small(props: MenuLinkProps[small]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_source(props: MenuLinkProps[source]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_source(props: MenuLinkProps[source]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_span(props: MenuLinkProps[span]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_span(props: MenuLinkProps[span]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_stop(props: MenuLinkProps[stop]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_stop(props: MenuLinkProps[stop]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_strong(props: MenuLinkProps[strong]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_strong(props: MenuLinkProps[strong]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_style(props: MenuLinkProps[style]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_style(props: MenuLinkProps[style]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_sub(props: MenuLinkProps[sub]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_sub(props: MenuLinkProps[sub]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_summary(props: MenuLinkProps[summary]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_summary(props: MenuLinkProps[summary]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_sup(props: MenuLinkProps[sup]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_sup(props: MenuLinkProps[sup]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_svg(props: MenuLinkProps[svg]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_svg(props: MenuLinkProps[svg]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_switch(props: MenuLinkProps[switch]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_switch(props: MenuLinkProps[switch]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_symbol(props: MenuLinkProps[symbol]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_symbol(props: MenuLinkProps[symbol]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_table(props: MenuLinkProps[table]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_table(props: MenuLinkProps[table]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_tbody(props: MenuLinkProps[tbody]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_tbody(props: MenuLinkProps[tbody]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_td(props: MenuLinkProps[td]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_td(props: MenuLinkProps[td]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_template(props: MenuLinkProps[template]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_template(props: MenuLinkProps[template]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_text(props: MenuLinkProps[text]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_text(props: MenuLinkProps[text]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_textPath(props: MenuLinkProps[textPath]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_textPath(props: MenuLinkProps[textPath]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_textarea(props: MenuLinkProps[textarea]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_textarea(props: MenuLinkProps[textarea]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_tfoot(props: MenuLinkProps[tfoot]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_tfoot(props: MenuLinkProps[tfoot]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_th(props: MenuLinkProps[th]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_th(props: MenuLinkProps[th]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_thead(props: MenuLinkProps[thead]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_thead(props: MenuLinkProps[thead]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_time(props: MenuLinkProps[time]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_time(props: MenuLinkProps[time]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_title(props: MenuLinkProps[title]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_title(props: MenuLinkProps[title]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_tr(props: MenuLinkProps[tr]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_tr(props: MenuLinkProps[tr]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_track(props: MenuLinkProps[track]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_track(props: MenuLinkProps[track]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_tspan(props: MenuLinkProps[tspan]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_tspan(props: MenuLinkProps[tspan]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_u(props: MenuLinkProps[u]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_u(props: MenuLinkProps[u]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_ul(props: MenuLinkProps[ul]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_ul(props: MenuLinkProps[ul]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_use(props: MenuLinkProps[use]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_use(props: MenuLinkProps[use]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_var(props: MenuLinkProps[`var`]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_var(props: MenuLinkProps[`var`]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_video(props: MenuLinkProps[video]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_video(props: MenuLinkProps[video]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_view(props: MenuLinkProps[view]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_view(props: MenuLinkProps[view]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_wbr(props: MenuLinkProps[wbr]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_wbr(props: MenuLinkProps[wbr]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuLink_webview(props: MenuLinkProps[webview]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuLink_webview(props: MenuLinkProps[webview]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@reach/menu-button", "MenuList")
   @js.native
@@ -757,26 +581,20 @@ object mod {
   }
   object ButtonRect {
     
-    @scala.inline
-    def apply(height: Double, left: Double, top: Double, width: Double): ButtonRect = {
+    inline def apply(height: Double, left: Double, top: Double, width: Double): ButtonRect = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[ButtonRect]
     }
     
-    @scala.inline
-    implicit class ButtonRectMutableBuilder[Self <: ButtonRect] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonRect](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -792,26 +610,20 @@ object mod {
   }
   object MenuButtonProps {
     
-    @scala.inline
-    def apply(): MenuButtonProps = {
+    inline def apply(): MenuButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MenuButtonProps]
     }
     
-    @scala.inline
-    implicit class MenuButtonPropsMutableBuilder[Self <: MenuButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: MenuButtonProps](x: Self) {
       
-      @scala.inline
-      def setOnClick(value: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: /* e */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* e */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     }
   }
   
@@ -841,62 +653,44 @@ object mod {
   }
   object MenuItemProps {
     
-    @scala.inline
-    def apply(): MenuItemProps = {
+    inline def apply(): MenuItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MenuItemProps]
     }
     
-    @scala.inline
-    implicit class MenuItemPropsMutableBuilder[Self <: MenuItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: MenuItemProps](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: /* e */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* e */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnMouseMove(value: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+      inline def setOnMouseMove(value: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
+      inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: () => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction0(value))
+      inline def setOnSelect(value: () => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setSetState(value: /* s */ State => PartialState): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+      inline def setSetState(value: /* s */ State => PartialState): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStateUndefined: Self = StObject.set(x, "setState", js.undefined)
+      inline def setSetStateUndefined: Self = StObject.set(x, "setState", js.undefined)
       
-      @scala.inline
-      def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def set_ref(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "_ref", js.Any.fromFunction1(value))
+      inline def set_ref(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "_ref", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_refUndefined: Self = StObject.set(x, "_ref", js.undefined)
+      inline def set_refUndefined: Self = StObject.set(x, "_ref", js.undefined)
     }
   }
   
@@ -910,20 +704,16 @@ object mod {
   }
   object MenuProps {
     
-    @scala.inline
-    def apply(): MenuProps = {
+    inline def apply(): MenuProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MenuProps]
     }
     
-    @scala.inline
-    implicit class MenuPropsMutableBuilder[Self <: MenuProps] (val x: Self) extends AnyVal {
+    extension [Self <: MenuProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -945,32 +735,24 @@ object mod {
   }
   object State {
     
-    @scala.inline
-    def apply(buttonId: String, closingWithClick: Boolean, isOpen: Boolean, selectionIndex: Double): State = {
+    inline def apply(buttonId: String, closingWithClick: Boolean, isOpen: Boolean, selectionIndex: Double): State = {
       val __obj = js.Dynamic.literal(buttonId = buttonId.asInstanceOf[js.Any], closingWithClick = closingWithClick.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], selectionIndex = selectionIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setButtonId(value: String): Self = StObject.set(x, "buttonId", value.asInstanceOf[js.Any])
+      inline def setButtonId(value: String): Self = StObject.set(x, "buttonId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonRect(value: ButtonRect): Self = StObject.set(x, "buttonRect", value.asInstanceOf[js.Any])
+      inline def setButtonRect(value: ButtonRect): Self = StObject.set(x, "buttonRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonRectUndefined: Self = StObject.set(x, "buttonRect", js.undefined)
+      inline def setButtonRectUndefined: Self = StObject.set(x, "buttonRect", js.undefined)
       
-      @scala.inline
-      def setClosingWithClick(value: Boolean): Self = StObject.set(x, "closingWithClick", value.asInstanceOf[js.Any])
+      inline def setClosingWithClick(value: Boolean): Self = StObject.set(x, "closingWithClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionIndex(value: Double): Self = StObject.set(x, "selectionIndex", value.asInstanceOf[js.Any])
+      inline def setSelectionIndex(value: Double): Self = StObject.set(x, "selectionIndex", value.asInstanceOf[js.Any])
     }
   }
   

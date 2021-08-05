@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcFindField extends StObject
 object AcFindField {
   
-  @scala.inline
-  def acAll: `0` = 0.asInstanceOf[`0`]
+  inline def acAll: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acCurrent: `-1` = -1.asInstanceOf[`-1`]
+  inline def acCurrent: `-1` = -1.asInstanceOf[`-1`]
 }

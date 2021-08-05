@@ -17,6 +17,5 @@ object BasicGeometryData {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(geometry: typings.wonderJs.geometryMod.Geometry): typings.wonderJs.basicGeometryDataMod.BasicGeometryData = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(geometry.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.basicGeometryDataMod.BasicGeometryData]
+  inline def create(geometry: typings.wonderJs.geometryMod.Geometry): typings.wonderJs.basicGeometryDataMod.BasicGeometryData = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(geometry.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.basicGeometryDataMod.BasicGeometryData]
 }

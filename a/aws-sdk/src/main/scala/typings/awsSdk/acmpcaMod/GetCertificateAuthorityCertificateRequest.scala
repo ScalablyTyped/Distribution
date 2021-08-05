@@ -13,16 +13,13 @@ trait GetCertificateAuthorityCertificateRequest extends StObject {
 }
 object GetCertificateAuthorityCertificateRequest {
   
-  @scala.inline
-  def apply(CertificateAuthorityArn: Arn): GetCertificateAuthorityCertificateRequest = {
+  inline def apply(CertificateAuthorityArn: Arn): GetCertificateAuthorityCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCertificateAuthorityCertificateRequest]
   }
   
-  @scala.inline
-  implicit class GetCertificateAuthorityCertificateRequestMutableBuilder[Self <: GetCertificateAuthorityCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCertificateAuthorityCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
   }
 }

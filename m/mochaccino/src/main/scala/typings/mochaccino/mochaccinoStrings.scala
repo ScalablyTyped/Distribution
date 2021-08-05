@@ -8,16 +8,13 @@ object mochaccinoStrings {
   
   @js.native
   sealed trait document extends StObject
-  @scala.inline
-  def document: document = "document".asInstanceOf[document]
+  inline def document: document = "document".asInstanceOf[document]
   
   @js.native
   sealed trait navigator extends StObject
-  @scala.inline
-  def navigator: navigator = "navigator".asInstanceOf[navigator]
+  inline def navigator: navigator = "navigator".asInstanceOf[navigator]
   
   @js.native
   sealed trait window extends StObject
-  @scala.inline
-  def window: window = "window".asInstanceOf[window]
+  inline def window: window = "window".asInstanceOf[window]
 }

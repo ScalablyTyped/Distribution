@@ -42,8 +42,7 @@ trait FieldSchemaInForm
 }
 object FieldSchemaInForm {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowGridEditing: Boolean,
     Description: String,
     Direction: String,
@@ -63,37 +62,26 @@ object FieldSchemaInForm {
     __obj.asInstanceOf[FieldSchemaInForm]
   }
   
-  @scala.inline
-  implicit class FieldSchemaInFormMutableBuilder[Self <: FieldSchemaInForm] (val x: Self) extends AnyVal {
+  extension [Self <: FieldSchemaInForm](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIMEMode(value: js.Any): Self = StObject.set(x, "IMEMode", value.asInstanceOf[js.Any])
+    inline def setIMEMode(value: js.Any): Self = StObject.set(x, "IMEMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyField(value: Boolean): Self = StObject.set(x, "ReadOnlyField", value.asInstanceOf[js.Any])
+    inline def setReadOnlyField(value: Boolean): Self = StObject.set(x, "ReadOnlyField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "Required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "Required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictedMode(value: Boolean): Self = StObject.set(x, "RestrictedMode", value.asInstanceOf[js.Any])
+    inline def setRestrictedMode(value: Boolean): Self = StObject.set(x, "RestrictedMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseMinWidth(value: Boolean): Self = StObject.set(x, "UseMinWidth", value.asInstanceOf[js.Any])
+    inline def setUseMinWidth(value: Boolean): Self = StObject.set(x, "UseMinWidth", value.asInstanceOf[js.Any])
   }
 }

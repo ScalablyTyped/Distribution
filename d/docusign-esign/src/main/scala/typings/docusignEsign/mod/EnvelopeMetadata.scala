@@ -25,31 +25,23 @@ trait EnvelopeMetadata extends StObject {
 }
 object EnvelopeMetadata {
   
-  @scala.inline
-  def apply(): EnvelopeMetadata = {
+  inline def apply(): EnvelopeMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvelopeMetadata]
   }
   
-  @scala.inline
-  implicit class EnvelopeMetadataMutableBuilder[Self <: EnvelopeMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: EnvelopeMetadata](x: Self) {
     
-    @scala.inline
-    def setAllowAdvancedCorrect(value: String): Self = StObject.set(x, "allowAdvancedCorrect", value.asInstanceOf[js.Any])
+    inline def setAllowAdvancedCorrect(value: String): Self = StObject.set(x, "allowAdvancedCorrect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowAdvancedCorrectUndefined: Self = StObject.set(x, "allowAdvancedCorrect", js.undefined)
+    inline def setAllowAdvancedCorrectUndefined: Self = StObject.set(x, "allowAdvancedCorrect", js.undefined)
     
-    @scala.inline
-    def setAllowCorrect(value: String): Self = StObject.set(x, "allowCorrect", value.asInstanceOf[js.Any])
+    inline def setAllowCorrect(value: String): Self = StObject.set(x, "allowCorrect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowCorrectUndefined: Self = StObject.set(x, "allowCorrect", js.undefined)
+    inline def setAllowCorrectUndefined: Self = StObject.set(x, "allowCorrect", js.undefined)
     
-    @scala.inline
-    def setEnableSignWithNotary(value: String): Self = StObject.set(x, "enableSignWithNotary", value.asInstanceOf[js.Any])
+    inline def setEnableSignWithNotary(value: String): Self = StObject.set(x, "enableSignWithNotary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSignWithNotaryUndefined: Self = StObject.set(x, "enableSignWithNotary", js.undefined)
+    inline def setEnableSignWithNotaryUndefined: Self = StObject.set(x, "enableSignWithNotary", js.undefined)
   }
 }

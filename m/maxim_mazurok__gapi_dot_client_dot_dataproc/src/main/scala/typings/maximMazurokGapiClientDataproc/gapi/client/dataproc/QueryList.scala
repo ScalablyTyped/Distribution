@@ -14,22 +14,17 @@ trait QueryList extends StObject {
 }
 object QueryList {
   
-  @scala.inline
-  def apply(): QueryList = {
+  inline def apply(): QueryList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryList]
   }
   
-  @scala.inline
-  implicit class QueryListMutableBuilder[Self <: QueryList] (val x: Self) extends AnyVal {
+  extension [Self <: QueryList](x: Self) {
     
-    @scala.inline
-    def setQueries(value: js.Array[String]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+    inline def setQueries(value: js.Array[String]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
+    inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
-    @scala.inline
-    def setQueriesVarargs(value: String*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: String*): Self = StObject.set(x, "queries", js.Array(value :_*))
   }
 }

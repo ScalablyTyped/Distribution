@@ -25,25 +25,19 @@ trait IgnoreRulesParams extends StObject {
 }
 object IgnoreRulesParams {
   
-  @scala.inline
-  def apply(): IgnoreRulesParams = {
+  inline def apply(): IgnoreRulesParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgnoreRulesParams]
   }
   
-  @scala.inline
-  implicit class IgnoreRulesParamsMutableBuilder[Self <: IgnoreRulesParams] (val x: Self) extends AnyVal {
+  extension [Self <: IgnoreRulesParams](x: Self) {
     
-    @scala.inline
-    def setHasTag(value: String): Self = StObject.set(x, "hasTag", value.asInstanceOf[js.Any])
+    inline def setHasTag(value: String): Self = StObject.set(x, "hasTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasTagUndefined: Self = StObject.set(x, "hasTag", js.undefined)
+    inline def setHasTagUndefined: Self = StObject.set(x, "hasTag", js.undefined)
     
-    @scala.inline
-    def setLowerPriorityThan(value: integer): Self = StObject.set(x, "lowerPriorityThan", value.asInstanceOf[js.Any])
+    inline def setLowerPriorityThan(value: integer): Self = StObject.set(x, "lowerPriorityThan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerPriorityThanUndefined: Self = StObject.set(x, "lowerPriorityThan", js.undefined)
+    inline def setLowerPriorityThanUndefined: Self = StObject.set(x, "lowerPriorityThan", js.undefined)
   }
 }

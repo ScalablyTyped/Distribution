@@ -15,23 +15,23 @@ object editingItemMod {
     extends Component[IEditingSelectedPeopleItemProps, IPeoplePickerItemState, js.Any] {
     def this(props: IEditingSelectedPeopleItemProps) = this()
     
-    var _editingFloatingPicker: js.Any = js.native
+    /* private */ var _editingFloatingPicker: js.Any = js.native
     
-    var _editingInput: js.Any = js.native
+    /* private */ var _editingInput: js.Any = js.native
     
-    var _onInputBlur: js.Any = js.native
+    /* private */ var _onInputBlur: js.Any = js.native
     
-    var _onInputChange: js.Any = js.native
+    /* private */ var _onInputChange: js.Any = js.native
     
-    var _onInputClick: js.Any = js.native
+    /* private */ var _onInputClick: js.Any = js.native
     
-    var _onInputKeyDown: js.Any = js.native
+    /* private */ var _onInputKeyDown: js.Any = js.native
     
-    var _onSuggestionSelected: js.Any = js.native
+    /* private */ var _onSuggestionSelected: js.Any = js.native
     
-    var _renderEditingSuggestions: js.Any = js.native
+    /* private */ var _renderEditingSuggestions: js.Any = js.native
     
-    var _resolveInputRef: js.Any = js.native
+    /* private */ var _resolveInputRef: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MEditingItem(): Unit = js.native

@@ -14,22 +14,17 @@ trait NavigationScreenConfigProps[NavigationScreenPropType, ScreenProps] extends
 }
 object NavigationScreenConfigProps {
   
-  @scala.inline
-  def apply[NavigationScreenPropType, ScreenProps](navigation: NavigationScreenPropType, screenProps: ScreenProps, theme: SupportedThemes): NavigationScreenConfigProps[NavigationScreenPropType, ScreenProps] = {
+  inline def apply[NavigationScreenPropType, ScreenProps](navigation: NavigationScreenPropType, screenProps: ScreenProps, theme: SupportedThemes): NavigationScreenConfigProps[NavigationScreenPropType, ScreenProps] = {
     val __obj = js.Dynamic.literal(navigation = navigation.asInstanceOf[js.Any], screenProps = screenProps.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationScreenConfigProps[NavigationScreenPropType, ScreenProps]]
   }
   
-  @scala.inline
-  implicit class NavigationScreenConfigPropsMutableBuilder[Self <: NavigationScreenConfigProps[?, ?], NavigationScreenPropType, ScreenProps] (val x: Self & (NavigationScreenConfigProps[NavigationScreenPropType, ScreenProps])) extends AnyVal {
+  extension [Self <: NavigationScreenConfigProps[?, ?], NavigationScreenPropType, ScreenProps](x: Self & (NavigationScreenConfigProps[NavigationScreenPropType, ScreenProps])) {
     
-    @scala.inline
-    def setNavigation(value: NavigationScreenPropType): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: NavigationScreenPropType): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenProps(value: ScreenProps): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+    inline def setScreenProps(value: ScreenProps): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: SupportedThemes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: SupportedThemes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

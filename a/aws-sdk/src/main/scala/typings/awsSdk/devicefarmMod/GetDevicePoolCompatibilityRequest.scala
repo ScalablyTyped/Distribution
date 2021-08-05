@@ -33,40 +33,29 @@ trait GetDevicePoolCompatibilityRequest extends StObject {
 }
 object GetDevicePoolCompatibilityRequest {
   
-  @scala.inline
-  def apply(devicePoolArn: AmazonResourceName): GetDevicePoolCompatibilityRequest = {
+  inline def apply(devicePoolArn: AmazonResourceName): GetDevicePoolCompatibilityRequest = {
     val __obj = js.Dynamic.literal(devicePoolArn = devicePoolArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDevicePoolCompatibilityRequest]
   }
   
-  @scala.inline
-  implicit class GetDevicePoolCompatibilityRequestMutableBuilder[Self <: GetDevicePoolCompatibilityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDevicePoolCompatibilityRequest](x: Self) {
     
-    @scala.inline
-    def setAppArn(value: AmazonResourceName): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
+    inline def setAppArn(value: AmazonResourceName): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppArnUndefined: Self = StObject.set(x, "appArn", js.undefined)
+    inline def setAppArnUndefined: Self = StObject.set(x, "appArn", js.undefined)
     
-    @scala.inline
-    def setConfiguration(value: ScheduleRunConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: ScheduleRunConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
-    @scala.inline
-    def setDevicePoolArn(value: AmazonResourceName): Self = StObject.set(x, "devicePoolArn", value.asInstanceOf[js.Any])
+    inline def setDevicePoolArn(value: AmazonResourceName): Self = StObject.set(x, "devicePoolArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest(value: ScheduleRunTest): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: ScheduleRunTest): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestType(value: TestType): Self = StObject.set(x, "testType", value.asInstanceOf[js.Any])
+    inline def setTestType(value: TestType): Self = StObject.set(x, "testType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestTypeUndefined: Self = StObject.set(x, "testType", js.undefined)
+    inline def setTestTypeUndefined: Self = StObject.set(x, "testType", js.undefined)
     
-    @scala.inline
-    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+    inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
   }
 }

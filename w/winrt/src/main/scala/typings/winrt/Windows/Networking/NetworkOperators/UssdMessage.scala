@@ -10,8 +10,7 @@ trait UssdMessage
      with IUssdMessage
 object UssdMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataCodingScheme: Double,
     getPayload: () => Uint8Array,
     payloadAsText: String,

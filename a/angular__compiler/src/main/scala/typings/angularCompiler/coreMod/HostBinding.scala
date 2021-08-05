@@ -10,19 +10,15 @@ trait HostBinding extends StObject {
 }
 object HostBinding {
   
-  @scala.inline
-  def apply(): HostBinding = {
+  inline def apply(): HostBinding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HostBinding]
   }
   
-  @scala.inline
-  implicit class HostBindingMutableBuilder[Self <: HostBinding] (val x: Self) extends AnyVal {
+  extension [Self <: HostBinding](x: Self) {
     
-    @scala.inline
-    def setHostPropertyName(value: String): Self = StObject.set(x, "hostPropertyName", value.asInstanceOf[js.Any])
+    inline def setHostPropertyName(value: String): Self = StObject.set(x, "hostPropertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostPropertyNameUndefined: Self = StObject.set(x, "hostPropertyName", js.undefined)
+    inline def setHostPropertyNameUndefined: Self = StObject.set(x, "hostPropertyName", js.undefined)
   }
 }

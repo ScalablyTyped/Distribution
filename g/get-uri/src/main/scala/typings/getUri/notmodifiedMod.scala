@@ -32,17 +32,14 @@ object notmodifiedMod {
   }
   object NotModifiedError {
     
-    @scala.inline
-    def apply(code: String, message: String, name: String): NotModifiedError = {
+    inline def apply(code: String, message: String, name: String): NotModifiedError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotModifiedError]
     }
     
-    @scala.inline
-    implicit class NotModifiedErrorMutableBuilder[Self <: NotModifiedError] (val x: Self) extends AnyVal {
+    extension [Self <: NotModifiedError](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
   }
 }

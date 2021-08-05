@@ -14,16 +14,13 @@ trait PauseOnAsyncCallParameterType extends StObject {
 }
 object PauseOnAsyncCallParameterType {
   
-  @scala.inline
-  def apply(parentStackTraceId: StackTraceId): PauseOnAsyncCallParameterType = {
+  inline def apply(parentStackTraceId: StackTraceId): PauseOnAsyncCallParameterType = {
     val __obj = js.Dynamic.literal(parentStackTraceId = parentStackTraceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PauseOnAsyncCallParameterType]
   }
   
-  @scala.inline
-  implicit class PauseOnAsyncCallParameterTypeMutableBuilder[Self <: PauseOnAsyncCallParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: PauseOnAsyncCallParameterType](x: Self) {
     
-    @scala.inline
-    def setParentStackTraceId(value: StackTraceId): Self = StObject.set(x, "parentStackTraceId", value.asInstanceOf[js.Any])
+    inline def setParentStackTraceId(value: StackTraceId): Self = StObject.set(x, "parentStackTraceId", value.asInstanceOf[js.Any])
   }
 }

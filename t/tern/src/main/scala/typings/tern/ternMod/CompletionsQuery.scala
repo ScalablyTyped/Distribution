@@ -61,98 +61,68 @@ trait CompletionsQuery
 }
 object CompletionsQuery {
   
-  @scala.inline
-  def apply(end: Double | Position, file: String): CompletionsQuery = {
+  inline def apply(end: Double | Position, file: String): CompletionsQuery = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("completions")
     __obj.asInstanceOf[CompletionsQuery]
   }
   
-  @scala.inline
-  implicit class CompletionsQueryMutableBuilder[Self <: CompletionsQuery] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionsQuery](x: Self) {
     
-    @scala.inline
-    def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
+    inline def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
+    inline def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
     
-    @scala.inline
-    def setDepths(value: Boolean): Self = StObject.set(x, "depths", value.asInstanceOf[js.Any])
+    inline def setDepths(value: Boolean): Self = StObject.set(x, "depths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthsUndefined: Self = StObject.set(x, "depths", js.undefined)
+    inline def setDepthsUndefined: Self = StObject.set(x, "depths", js.undefined)
     
-    @scala.inline
-    def setDocs(value: Boolean): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
+    inline def setDocs(value: Boolean): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocsUndefined: Self = StObject.set(x, "docs", js.undefined)
+    inline def setDocsUndefined: Self = StObject.set(x, "docs", js.undefined)
     
-    @scala.inline
-    def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandWordForward(value: Boolean): Self = StObject.set(x, "expandWordForward", value.asInstanceOf[js.Any])
+    inline def setExpandWordForward(value: Boolean): Self = StObject.set(x, "expandWordForward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandWordForwardUndefined: Self = StObject.set(x, "expandWordForward", js.undefined)
+    inline def setExpandWordForwardUndefined: Self = StObject.set(x, "expandWordForward", js.undefined)
     
-    @scala.inline
-    def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setGuess(value: Boolean): Self = StObject.set(x, "guess", value.asInstanceOf[js.Any])
+    inline def setGuess(value: Boolean): Self = StObject.set(x, "guess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuessUndefined: Self = StObject.set(x, "guess", js.undefined)
+    inline def setGuessUndefined: Self = StObject.set(x, "guess", js.undefined)
     
-    @scala.inline
-    def setInLiteral(value: Boolean): Self = StObject.set(x, "inLiteral", value.asInstanceOf[js.Any])
+    inline def setInLiteral(value: Boolean): Self = StObject.set(x, "inLiteral", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInLiteralUndefined: Self = StObject.set(x, "inLiteral", js.undefined)
+    inline def setInLiteralUndefined: Self = StObject.set(x, "inLiteral", js.undefined)
     
-    @scala.inline
-    def setIncludeKeywords(value: Boolean): Self = StObject.set(x, "includeKeywords", value.asInstanceOf[js.Any])
+    inline def setIncludeKeywords(value: Boolean): Self = StObject.set(x, "includeKeywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeKeywordsUndefined: Self = StObject.set(x, "includeKeywords", js.undefined)
+    inline def setIncludeKeywordsUndefined: Self = StObject.set(x, "includeKeywords", js.undefined)
     
-    @scala.inline
-    def setOmitObjectPrototype(value: Boolean): Self = StObject.set(x, "omitObjectPrototype", value.asInstanceOf[js.Any])
+    inline def setOmitObjectPrototype(value: Boolean): Self = StObject.set(x, "omitObjectPrototype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOmitObjectPrototypeUndefined: Self = StObject.set(x, "omitObjectPrototype", js.undefined)
+    inline def setOmitObjectPrototypeUndefined: Self = StObject.set(x, "omitObjectPrototype", js.undefined)
     
-    @scala.inline
-    def setOrigins(value: Boolean): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
+    inline def setOrigins(value: Boolean): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
+    inline def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
     
-    @scala.inline
-    def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setType(value: completions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: completions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: Boolean): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: Boolean): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setUrls(value: Boolean): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: Boolean): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+    inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
   }
 }

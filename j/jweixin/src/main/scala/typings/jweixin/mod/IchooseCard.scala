@@ -36,8 +36,7 @@ trait IchooseCard
 }
 object IchooseCard {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cardId: String,
     cardSign: String,
     cardType: String,
@@ -51,31 +50,22 @@ object IchooseCard {
     __obj.asInstanceOf[IchooseCard]
   }
   
-  @scala.inline
-  implicit class IchooseCardMutableBuilder[Self <: IchooseCard] (val x: Self) extends AnyVal {
+  extension [Self <: IchooseCard](x: Self) {
     
-    @scala.inline
-    def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
+    inline def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardSign(value: String): Self = StObject.set(x, "cardSign", value.asInstanceOf[js.Any])
+    inline def setCardSign(value: String): Self = StObject.set(x, "cardSign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
+    inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
+    inline def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShopId(value: String): Self = StObject.set(x, "shopId", value.asInstanceOf[js.Any])
+    inline def setShopId(value: String): Self = StObject.set(x, "shopId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignType(value: String): Self = StObject.set(x, "signType", value.asInstanceOf[js.Any])
+    inline def setSignType(value: String): Self = StObject.set(x, "signType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: CardList => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: CardList => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

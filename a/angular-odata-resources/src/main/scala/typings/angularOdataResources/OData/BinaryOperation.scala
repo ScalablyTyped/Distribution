@@ -14,11 +14,11 @@ trait BinaryOperation
   def and(propertyOrPredicate: js.Any, operatorOrValue: js.Any, value: js.Any): BinaryOperation = js.native
   def and(propertyOrPredicate: js.Any, operatorOrValue: Unit, value: js.Any): BinaryOperation = js.native
   
-  var filterOperator: js.Any = js.native
+  /* private */ var filterOperator: js.Any = js.native
   
-  var operandA: js.Any = js.native
+  /* private */ var operandA: js.Any = js.native
   
-  var operandB: js.Any = js.native
+  /* private */ var operandB: js.Any = js.native
   
   def or(propertyOrPredicate: js.Any): BinaryOperation = js.native
   def or(propertyOrPredicate: js.Any, operatorOrValue: js.Any): BinaryOperation = js.native

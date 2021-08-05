@@ -19,6 +19,5 @@ object SwipeAction {
   @JSImport("@ant-design/react-native", "SwipeAction.defaultProps")
   @js.native
   def defaultProps: SwipeActionProps = js.native
-  @scala.inline
-  def defaultProps_=(x: SwipeActionProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: SwipeActionProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InitialProperties extends StObject
 object InitialProperties {
   
-  @scala.inline
-  def InitialPropertiesHyperCube(qHyperCubeDef: HyperCubeDef): typings.qlik.mod.InitialPropertiesHyperCube = {
+  inline def InitialPropertiesHyperCube(qHyperCubeDef: HyperCubeDef): typings.qlik.mod.InitialPropertiesHyperCube = {
     val __obj = js.Dynamic.literal(qHyperCubeDef = qHyperCubeDef.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.qlik.mod.InitialPropertiesHyperCube]
   }
   
-  @scala.inline
-  def InitialPropertiesListobject(qListobjectDef: ListobjectDef): typings.qlik.mod.InitialPropertiesListobject = {
+  inline def InitialPropertiesListobject(qListobjectDef: ListobjectDef): typings.qlik.mod.InitialPropertiesListobject = {
     val __obj = js.Dynamic.literal(qListobjectDef = qListobjectDef.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.qlik.mod.InitialPropertiesListobject]
   }

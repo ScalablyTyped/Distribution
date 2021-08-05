@@ -10,19 +10,15 @@ trait ListAutomaticTapeCreationPoliciesInput extends StObject {
 }
 object ListAutomaticTapeCreationPoliciesInput {
   
-  @scala.inline
-  def apply(): ListAutomaticTapeCreationPoliciesInput = {
+  inline def apply(): ListAutomaticTapeCreationPoliciesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAutomaticTapeCreationPoliciesInput]
   }
   
-  @scala.inline
-  implicit class ListAutomaticTapeCreationPoliciesInputMutableBuilder[Self <: ListAutomaticTapeCreationPoliciesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListAutomaticTapeCreationPoliciesInput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
   }
 }

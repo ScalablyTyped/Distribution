@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdCollapseDirection extends StObject
 object WdCollapseDirection {
   
-  @scala.inline
-  def wdCollapseEnd: `0` = 0.asInstanceOf[`0`]
+  inline def wdCollapseEnd: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdCollapseStart: `1` = 1.asInstanceOf[`1`]
+  inline def wdCollapseStart: `1` = 1.asInstanceOf[`1`]
 }

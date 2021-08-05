@@ -10,16 +10,13 @@ trait StorageManager extends StObject {
 }
 object StorageManager {
   
-  @scala.inline
-  def apply(getDirectory: () => js.Promise[FileSystemDirectoryHandle]): StorageManager = {
+  inline def apply(getDirectory: () => js.Promise[FileSystemDirectoryHandle]): StorageManager = {
     val __obj = js.Dynamic.literal(getDirectory = js.Any.fromFunction0(getDirectory))
     __obj.asInstanceOf[StorageManager]
   }
   
-  @scala.inline
-  implicit class StorageManagerMutableBuilder[Self <: StorageManager] (val x: Self) extends AnyVal {
+  extension [Self <: StorageManager](x: Self) {
     
-    @scala.inline
-    def setGetDirectory(value: () => js.Promise[FileSystemDirectoryHandle]): Self = StObject.set(x, "getDirectory", js.Any.fromFunction0(value))
+    inline def setGetDirectory(value: () => js.Promise[FileSystemDirectoryHandle]): Self = StObject.set(x, "getDirectory", js.Any.fromFunction0(value))
   }
 }

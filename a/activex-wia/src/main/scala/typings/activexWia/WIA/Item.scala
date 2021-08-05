@@ -54,6 +54,6 @@ trait Item extends StObject {
   def Transfer(): ImageFile = js.native
   def Transfer(FormatID: String): ImageFile = js.native
   
-  @JSName("WIA.Item_typekey")
+  /* private */ @JSName("WIA.Item_typekey")
   var WIADotItem_typekey: Item = js.native
 }

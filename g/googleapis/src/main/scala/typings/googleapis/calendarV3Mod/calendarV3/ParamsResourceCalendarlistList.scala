@@ -65,55 +65,39 @@ trait ParamsResourceCalendarlistList
 }
 object ParamsResourceCalendarlistList {
   
-  @scala.inline
-  def apply(): ParamsResourceCalendarlistList = {
+  inline def apply(): ParamsResourceCalendarlistList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCalendarlistList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCalendarlistListMutableBuilder[Self <: ParamsResourceCalendarlistList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCalendarlistList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setMinAccessRole(value: String): Self = StObject.set(x, "minAccessRole", value.asInstanceOf[js.Any])
+    inline def setMinAccessRole(value: String): Self = StObject.set(x, "minAccessRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinAccessRoleUndefined: Self = StObject.set(x, "minAccessRole", js.undefined)
+    inline def setMinAccessRoleUndefined: Self = StObject.set(x, "minAccessRole", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setShowDeleted(value: Boolean): Self = StObject.set(x, "showDeleted", value.asInstanceOf[js.Any])
+    inline def setShowDeleted(value: Boolean): Self = StObject.set(x, "showDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDeletedUndefined: Self = StObject.set(x, "showDeleted", js.undefined)
+    inline def setShowDeletedUndefined: Self = StObject.set(x, "showDeleted", js.undefined)
     
-    @scala.inline
-    def setShowHidden(value: Boolean): Self = StObject.set(x, "showHidden", value.asInstanceOf[js.Any])
+    inline def setShowHidden(value: Boolean): Self = StObject.set(x, "showHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowHiddenUndefined: Self = StObject.set(x, "showHidden", js.undefined)
+    inline def setShowHiddenUndefined: Self = StObject.set(x, "showHidden", js.undefined)
     
-    @scala.inline
-    def setSyncToken(value: String): Self = StObject.set(x, "syncToken", value.asInstanceOf[js.Any])
+    inline def setSyncToken(value: String): Self = StObject.set(x, "syncToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncTokenUndefined: Self = StObject.set(x, "syncToken", js.undefined)
+    inline def setSyncTokenUndefined: Self = StObject.set(x, "syncToken", js.undefined)
   }
 }

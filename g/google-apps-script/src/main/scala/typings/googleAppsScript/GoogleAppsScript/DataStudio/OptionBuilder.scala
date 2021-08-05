@@ -33,19 +33,15 @@ trait OptionBuilder extends StObject {
 }
 object OptionBuilder {
   
-  @scala.inline
-  def apply(setLabel: String => OptionBuilder, setValue: String => OptionBuilder): OptionBuilder = {
+  inline def apply(setLabel: String => OptionBuilder, setValue: String => OptionBuilder): OptionBuilder = {
     val __obj = js.Dynamic.literal(setLabel = js.Any.fromFunction1(setLabel), setValue = js.Any.fromFunction1(setValue))
     __obj.asInstanceOf[OptionBuilder]
   }
   
-  @scala.inline
-  implicit class OptionBuilderMutableBuilder[Self <: OptionBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: OptionBuilder](x: Self) {
     
-    @scala.inline
-    def setSetLabel(value: String => OptionBuilder): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
+    inline def setSetLabel(value: String => OptionBuilder): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: String => OptionBuilder): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: String => OptionBuilder): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
   }
 }

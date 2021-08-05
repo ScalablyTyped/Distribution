@@ -14,8 +14,7 @@ trait PrismLib extends StObject {
 }
 object PrismLib {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     highlight: (String, PrismGrammar, Language) => String,
     languages: LanguageDict,
     tokenize: (String, PrismGrammar, Language) => js.Array[PrismToken | String]
@@ -24,16 +23,12 @@ object PrismLib {
     __obj.asInstanceOf[PrismLib]
   }
   
-  @scala.inline
-  implicit class PrismLibMutableBuilder[Self <: PrismLib] (val x: Self) extends AnyVal {
+  extension [Self <: PrismLib](x: Self) {
     
-    @scala.inline
-    def setHighlight(value: (String, PrismGrammar, Language) => String): Self = StObject.set(x, "highlight", js.Any.fromFunction3(value))
+    inline def setHighlight(value: (String, PrismGrammar, Language) => String): Self = StObject.set(x, "highlight", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setLanguages(value: LanguageDict): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: LanguageDict): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenize(value: (String, PrismGrammar, Language) => js.Array[PrismToken | String]): Self = StObject.set(x, "tokenize", js.Any.fromFunction3(value))
+    inline def setTokenize(value: (String, PrismGrammar, Language) => js.Array[PrismToken | String]): Self = StObject.set(x, "tokenize", js.Any.fromFunction3(value))
   }
 }

@@ -12,16 +12,16 @@ class Classifier protected ()
      with typings.typescriptServices.TypeScript.Services.Classifier {
   def this(host: IClassifierHost) = this()
   
-  /* CompleteClass */
-  /* private */ override def addResult(text: js.Any, offset: js.Any, result: js.Any, length: js.Any, kind: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def addResult(text: js.Any, offset: js.Any, result: js.Any, length: js.Any, kind: js.Any): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var characterWindow: js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def classFromKind(kind: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def classFromKind(kind: js.Any): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var diagnostics: js.Any = js.native
   
   /* CompleteClass */
@@ -30,12 +30,12 @@ class Classifier protected ()
   /* CompleteClass */
   var host: IClassifierHost = js.native
   
-  /* CompleteClass */
-  /* private */ override def processToken(text: js.Any, offset: js.Any, token: js.Any, result: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def processToken(text: js.Any, offset: js.Any, token: js.Any, result: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def processTriviaList(text: js.Any, offset: js.Any, triviaList: js.Any, result: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def processTriviaList(text: js.Any, offset: js.Any, triviaList: js.Any, result: js.Any): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var scanner: js.Any = js.native
 }

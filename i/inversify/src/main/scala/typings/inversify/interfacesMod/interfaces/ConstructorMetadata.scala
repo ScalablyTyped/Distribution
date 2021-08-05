@@ -12,25 +12,19 @@ trait ConstructorMetadata extends StObject {
 }
 object ConstructorMetadata {
   
-  @scala.inline
-  def apply(userGeneratedMetadata: MetadataMap): ConstructorMetadata = {
+  inline def apply(userGeneratedMetadata: MetadataMap): ConstructorMetadata = {
     val __obj = js.Dynamic.literal(userGeneratedMetadata = userGeneratedMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorMetadata]
   }
   
-  @scala.inline
-  implicit class ConstructorMetadataMutableBuilder[Self <: ConstructorMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ConstructorMetadata](x: Self) {
     
-    @scala.inline
-    def setCompilerGeneratedMetadata(value: js.Array[js.Function]): Self = StObject.set(x, "compilerGeneratedMetadata", value.asInstanceOf[js.Any])
+    inline def setCompilerGeneratedMetadata(value: js.Array[js.Function]): Self = StObject.set(x, "compilerGeneratedMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompilerGeneratedMetadataUndefined: Self = StObject.set(x, "compilerGeneratedMetadata", js.undefined)
+    inline def setCompilerGeneratedMetadataUndefined: Self = StObject.set(x, "compilerGeneratedMetadata", js.undefined)
     
-    @scala.inline
-    def setCompilerGeneratedMetadataVarargs(value: js.Function*): Self = StObject.set(x, "compilerGeneratedMetadata", js.Array(value :_*))
+    inline def setCompilerGeneratedMetadataVarargs(value: js.Function*): Self = StObject.set(x, "compilerGeneratedMetadata", js.Array(value :_*))
     
-    @scala.inline
-    def setUserGeneratedMetadata(value: MetadataMap): Self = StObject.set(x, "userGeneratedMetadata", value.asInstanceOf[js.Any])
+    inline def setUserGeneratedMetadata(value: MetadataMap): Self = StObject.set(x, "userGeneratedMetadata", value.asInstanceOf[js.Any])
   }
 }

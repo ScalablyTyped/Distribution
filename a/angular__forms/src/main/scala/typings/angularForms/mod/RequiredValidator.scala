@@ -10,9 +10,9 @@ class RequiredValidator ()
   extends StObject
      with Validator {
   
-  var _onChange: js.Any = js.native
+  /* private */ var _onChange: js.Any = js.native
   
-  var _required: js.Any = js.native
+  /* private */ var _required: js.Any = js.native
   
   /**
     * Registers a callback function to call when the validator inputs change.

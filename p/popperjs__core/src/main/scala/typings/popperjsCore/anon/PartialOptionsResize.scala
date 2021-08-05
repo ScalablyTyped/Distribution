@@ -13,25 +13,19 @@ trait PartialOptionsResize extends StObject {
 }
 object PartialOptionsResize {
   
-  @scala.inline
-  def apply(): PartialOptionsResize = {
+  inline def apply(): PartialOptionsResize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialOptionsResize]
   }
   
-  @scala.inline
-  implicit class PartialOptionsResizeMutableBuilder[Self <: PartialOptionsResize] (val x: Self) extends AnyVal {
+  extension [Self <: PartialOptionsResize](x: Self) {
     
-    @scala.inline
-    def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
-    @scala.inline
-    def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    inline def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+    inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
   }
 }

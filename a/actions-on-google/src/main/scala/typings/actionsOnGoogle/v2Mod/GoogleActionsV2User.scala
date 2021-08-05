@@ -70,79 +70,55 @@ trait GoogleActionsV2User extends StObject {
 }
 object GoogleActionsV2User {
   
-  @scala.inline
-  def apply(): GoogleActionsV2User = {
+  inline def apply(): GoogleActionsV2User = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2User]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2UserMutableBuilder[Self <: GoogleActionsV2User] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2User](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
-    @scala.inline
-    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+    inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
+    inline def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
     
-    @scala.inline
-    def setLastSeen(value: String): Self = StObject.set(x, "lastSeen", value.asInstanceOf[js.Any])
+    inline def setLastSeen(value: String): Self = StObject.set(x, "lastSeen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSeenUndefined: Self = StObject.set(x, "lastSeen", js.undefined)
+    inline def setLastSeenUndefined: Self = StObject.set(x, "lastSeen", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setPackageEntitlements(value: js.Array[GoogleActionsV2PackageEntitlement]): Self = StObject.set(x, "packageEntitlements", value.asInstanceOf[js.Any])
+    inline def setPackageEntitlements(value: js.Array[GoogleActionsV2PackageEntitlement]): Self = StObject.set(x, "packageEntitlements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageEntitlementsUndefined: Self = StObject.set(x, "packageEntitlements", js.undefined)
+    inline def setPackageEntitlementsUndefined: Self = StObject.set(x, "packageEntitlements", js.undefined)
     
-    @scala.inline
-    def setPackageEntitlementsVarargs(value: GoogleActionsV2PackageEntitlement*): Self = StObject.set(x, "packageEntitlements", js.Array(value :_*))
+    inline def setPackageEntitlementsVarargs(value: GoogleActionsV2PackageEntitlement*): Self = StObject.set(x, "packageEntitlements", js.Array(value :_*))
     
-    @scala.inline
-    def setPermissions(value: js.Array[GoogleActionsV2UserPermissions]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[GoogleActionsV2UserPermissions]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: GoogleActionsV2UserPermissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: GoogleActionsV2UserPermissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
-    @scala.inline
-    def setProfile(value: GoogleActionsV2UserProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: GoogleActionsV2UserProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
-    @scala.inline
-    def setUserStorage(value: String): Self = StObject.set(x, "userStorage", value.asInstanceOf[js.Any])
+    inline def setUserStorage(value: String): Self = StObject.set(x, "userStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserStorageUndefined: Self = StObject.set(x, "userStorage", js.undefined)
+    inline def setUserStorageUndefined: Self = StObject.set(x, "userStorage", js.undefined)
     
-    @scala.inline
-    def setUserVerificationStatus(value: GoogleActionsV2UserUserVerificationStatus): Self = StObject.set(x, "userVerificationStatus", value.asInstanceOf[js.Any])
+    inline def setUserVerificationStatus(value: GoogleActionsV2UserUserVerificationStatus): Self = StObject.set(x, "userVerificationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserVerificationStatusUndefined: Self = StObject.set(x, "userVerificationStatus", js.undefined)
+    inline def setUserVerificationStatusUndefined: Self = StObject.set(x, "userVerificationStatus", js.undefined)
   }
 }

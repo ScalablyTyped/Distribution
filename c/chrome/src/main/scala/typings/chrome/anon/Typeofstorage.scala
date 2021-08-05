@@ -20,8 +20,7 @@ trait Typeofstorage extends StObject {
 }
 object Typeofstorage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     local: LocalStorageArea,
     managed: StorageArea,
     onChanged: StorageChangedEvent,
@@ -31,19 +30,14 @@ object Typeofstorage {
     __obj.asInstanceOf[Typeofstorage]
   }
   
-  @scala.inline
-  implicit class TypeofstorageMutableBuilder[Self <: Typeofstorage] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofstorage](x: Self) {
     
-    @scala.inline
-    def setLocal(value: LocalStorageArea): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: LocalStorageArea): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManaged(value: StorageArea): Self = StObject.set(x, "managed", value.asInstanceOf[js.Any])
+    inline def setManaged(value: StorageArea): Self = StObject.set(x, "managed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChanged(value: StorageChangedEvent): Self = StObject.set(x, "onChanged", value.asInstanceOf[js.Any])
+    inline def setOnChanged(value: StorageChangedEvent): Self = StObject.set(x, "onChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSync(value: SyncStorageArea): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+    inline def setSync(value: SyncStorageArea): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
   }
 }

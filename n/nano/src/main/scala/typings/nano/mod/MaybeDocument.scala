@@ -10,8 +10,7 @@ trait MaybeDocument
      with MaybeRevisionedDocument
 object MaybeDocument {
   
-  @scala.inline
-  def apply(): MaybeDocument = {
+  inline def apply(): MaybeDocument = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaybeDocument]
   }

@@ -13,19 +13,15 @@ trait SchemaRoutersPreviewResponse extends StObject {
 }
 object SchemaRoutersPreviewResponse {
   
-  @scala.inline
-  def apply(): SchemaRoutersPreviewResponse = {
+  inline def apply(): SchemaRoutersPreviewResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRoutersPreviewResponse]
   }
   
-  @scala.inline
-  implicit class SchemaRoutersPreviewResponseMutableBuilder[Self <: SchemaRoutersPreviewResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRoutersPreviewResponse](x: Self) {
     
-    @scala.inline
-    def setResource(value: SchemaRouter): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SchemaRouter): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

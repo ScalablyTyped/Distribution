@@ -102,16 +102,14 @@ object notificationMod {
     @JSImport("rxjs/internal/Notification", "Notification.completeNotification")
     @js.native
     def completeNotification: js.Any = js.native
-    @scala.inline
-    def completeNotification_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("completeNotification")(x.asInstanceOf[js.Any])
+    inline def completeNotification_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("completeNotification")(x.asInstanceOf[js.Any])
     
     /**
       * A shortcut to create a Notification instance of the type `complete`.
       * @return {Notification<any>} The valueless "complete" Notification.
       * @nocollapse
       */
-    @scala.inline
-    def createComplete(): Notification[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createComplete")().asInstanceOf[Notification[js.Any]]
+    inline def createComplete(): Notification[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createComplete")().asInstanceOf[Notification[js.Any]]
     
     /**
       * A shortcut to create a Notification instance of the type `error` from a
@@ -121,10 +119,8 @@ object notificationMod {
       * argument.
       * @nocollapse
       */
-    @scala.inline
-    def createError[T](): Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createError")().asInstanceOf[Notification[T]]
-    @scala.inline
-    def createError[T](err: js.Any): Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createError")(err.asInstanceOf[js.Any]).asInstanceOf[Notification[T]]
+    inline def createError[T](): Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createError")().asInstanceOf[Notification[T]]
+    inline def createError[T](err: js.Any): Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createError")(err.asInstanceOf[js.Any]).asInstanceOf[Notification[T]]
     
     /**
       * A shortcut to create a Notification instance of the type `next` from a
@@ -134,14 +130,12 @@ object notificationMod {
       * argument.
       * @nocollapse
       */
-    @scala.inline
-    def createNext[T](value: T): Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNext")(value.asInstanceOf[js.Any]).asInstanceOf[Notification[T]]
+    inline def createNext[T](value: T): Notification[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNext")(value.asInstanceOf[js.Any]).asInstanceOf[Notification[T]]
     
     @JSImport("rxjs/internal/Notification", "Notification.undefinedValueNotification")
     @js.native
     def undefinedValueNotification: js.Any = js.native
-    @scala.inline
-    def undefinedValueNotification_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefinedValueNotification")(x.asInstanceOf[js.Any])
+    inline def undefinedValueNotification_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefinedValueNotification")(x.asInstanceOf[js.Any])
   }
   
   @js.native

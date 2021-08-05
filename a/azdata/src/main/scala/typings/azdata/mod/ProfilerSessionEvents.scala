@@ -14,25 +14,19 @@ trait ProfilerSessionEvents extends StObject {
 }
 object ProfilerSessionEvents {
   
-  @scala.inline
-  def apply(events: js.Array[ProfilerEvent], eventsLost: Boolean, sessionId: String): ProfilerSessionEvents = {
+  inline def apply(events: js.Array[ProfilerEvent], eventsLost: Boolean, sessionId: String): ProfilerSessionEvents = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], eventsLost = eventsLost.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfilerSessionEvents]
   }
   
-  @scala.inline
-  implicit class ProfilerSessionEventsMutableBuilder[Self <: ProfilerSessionEvents] (val x: Self) extends AnyVal {
+  extension [Self <: ProfilerSessionEvents](x: Self) {
     
-    @scala.inline
-    def setEvents(value: js.Array[ProfilerEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[ProfilerEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsLost(value: Boolean): Self = StObject.set(x, "eventsLost", value.asInstanceOf[js.Any])
+    inline def setEventsLost(value: Boolean): Self = StObject.set(x, "eventsLost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsVarargs(value: ProfilerEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: ProfilerEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ trait MetricsFactory extends StObject {
 }
 object MetricsFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createCounter: (String, js.Any) => Counter,
     createGauge: (String, js.Any) => Gauge,
     createTimer: (String, js.Any) => Timer
@@ -24,16 +23,12 @@ object MetricsFactory {
     __obj.asInstanceOf[MetricsFactory]
   }
   
-  @scala.inline
-  implicit class MetricsFactoryMutableBuilder[Self <: MetricsFactory] (val x: Self) extends AnyVal {
+  extension [Self <: MetricsFactory](x: Self) {
     
-    @scala.inline
-    def setCreateCounter(value: (String, js.Any) => Counter): Self = StObject.set(x, "createCounter", js.Any.fromFunction2(value))
+    inline def setCreateCounter(value: (String, js.Any) => Counter): Self = StObject.set(x, "createCounter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateGauge(value: (String, js.Any) => Gauge): Self = StObject.set(x, "createGauge", js.Any.fromFunction2(value))
+    inline def setCreateGauge(value: (String, js.Any) => Gauge): Self = StObject.set(x, "createGauge", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateTimer(value: (String, js.Any) => Timer): Self = StObject.set(x, "createTimer", js.Any.fromFunction2(value))
+    inline def setCreateTimer(value: (String, js.Any) => Timer): Self = StObject.set(x, "createTimer", js.Any.fromFunction2(value))
   }
 }

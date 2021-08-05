@@ -18,50 +18,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Command extends StObject
 object Command {
   
-  @scala.inline
-  def ApplyCommand($apply: js.Function): typings.tcomb.mod.ApplyCommand = {
+  inline def ApplyCommand($apply: js.Function): typings.tcomb.mod.ApplyCommand = {
     val __obj = js.Dynamic.literal($apply = $apply.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tcomb.mod.ApplyCommand]
   }
   
-  @scala.inline
-  def MergeCommand($merge: js.Object): typings.tcomb.mod.MergeCommand = {
+  inline def MergeCommand($merge: js.Object): typings.tcomb.mod.MergeCommand = {
     val __obj = js.Dynamic.literal($merge = $merge.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tcomb.mod.MergeCommand]
   }
   
-  @scala.inline
-  def PushCommand($push: js.Array[js.Any]): typings.tcomb.mod.PushCommand = {
+  inline def PushCommand($push: js.Array[js.Any]): typings.tcomb.mod.PushCommand = {
     val __obj = js.Dynamic.literal($push = $push.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tcomb.mod.PushCommand]
   }
   
-  @scala.inline
-  def RemoveCommand($remove: js.Array[java.lang.String]): typings.tcomb.mod.RemoveCommand = {
+  inline def RemoveCommand($remove: js.Array[java.lang.String]): typings.tcomb.mod.RemoveCommand = {
     val __obj = js.Dynamic.literal($remove = $remove.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tcomb.mod.RemoveCommand]
   }
   
-  @scala.inline
-  def SetCommand($set: js.Any): typings.tcomb.mod.SetCommand = {
+  inline def SetCommand($set: js.Any): typings.tcomb.mod.SetCommand = {
     val __obj = js.Dynamic.literal($set = $set.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tcomb.mod.SetCommand]
   }
   
-  @scala.inline
-  def SpliceCommand($splice: js.Array[js.Array[js.Any]]): typings.tcomb.mod.SpliceCommand = {
+  inline def SpliceCommand($splice: js.Array[js.Array[js.Any]]): typings.tcomb.mod.SpliceCommand = {
     val __obj = js.Dynamic.literal($splice = $splice.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tcomb.mod.SpliceCommand]
   }
   
-  @scala.inline
-  def SwapCommand($swap: From): typings.tcomb.mod.SwapCommand = {
+  inline def SwapCommand($swap: From): typings.tcomb.mod.SwapCommand = {
     val __obj = js.Dynamic.literal($swap = $swap.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tcomb.mod.SwapCommand]
   }
   
-  @scala.inline
-  def UnshiftCommand($unshift: js.Array[js.Any]): typings.tcomb.mod.UnshiftCommand = {
+  inline def UnshiftCommand($unshift: js.Array[js.Any]): typings.tcomb.mod.UnshiftCommand = {
     val __obj = js.Dynamic.literal($unshift = $unshift.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tcomb.mod.UnshiftCommand]
   }

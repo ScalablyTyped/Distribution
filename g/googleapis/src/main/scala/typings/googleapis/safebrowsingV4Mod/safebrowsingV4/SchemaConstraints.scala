@@ -49,52 +49,37 @@ trait SchemaConstraints extends StObject {
 }
 object SchemaConstraints {
   
-  @scala.inline
-  def apply(): SchemaConstraints = {
+  inline def apply(): SchemaConstraints = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConstraints]
   }
   
-  @scala.inline
-  implicit class SchemaConstraintsMutableBuilder[Self <: SchemaConstraints] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConstraints](x: Self) {
     
-    @scala.inline
-    def setDeviceLocation(value: String): Self = StObject.set(x, "deviceLocation", value.asInstanceOf[js.Any])
+    inline def setDeviceLocation(value: String): Self = StObject.set(x, "deviceLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceLocationUndefined: Self = StObject.set(x, "deviceLocation", js.undefined)
+    inline def setDeviceLocationUndefined: Self = StObject.set(x, "deviceLocation", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setMaxDatabaseEntries(value: Double): Self = StObject.set(x, "maxDatabaseEntries", value.asInstanceOf[js.Any])
+    inline def setMaxDatabaseEntries(value: Double): Self = StObject.set(x, "maxDatabaseEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDatabaseEntriesUndefined: Self = StObject.set(x, "maxDatabaseEntries", js.undefined)
+    inline def setMaxDatabaseEntriesUndefined: Self = StObject.set(x, "maxDatabaseEntries", js.undefined)
     
-    @scala.inline
-    def setMaxUpdateEntries(value: Double): Self = StObject.set(x, "maxUpdateEntries", value.asInstanceOf[js.Any])
+    inline def setMaxUpdateEntries(value: Double): Self = StObject.set(x, "maxUpdateEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUpdateEntriesUndefined: Self = StObject.set(x, "maxUpdateEntries", js.undefined)
+    inline def setMaxUpdateEntriesUndefined: Self = StObject.set(x, "maxUpdateEntries", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setSupportedCompressions(value: js.Array[String]): Self = StObject.set(x, "supportedCompressions", value.asInstanceOf[js.Any])
+    inline def setSupportedCompressions(value: js.Array[String]): Self = StObject.set(x, "supportedCompressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedCompressionsUndefined: Self = StObject.set(x, "supportedCompressions", js.undefined)
+    inline def setSupportedCompressionsUndefined: Self = StObject.set(x, "supportedCompressions", js.undefined)
     
-    @scala.inline
-    def setSupportedCompressionsVarargs(value: String*): Self = StObject.set(x, "supportedCompressions", js.Array(value :_*))
+    inline def setSupportedCompressionsVarargs(value: String*): Self = StObject.set(x, "supportedCompressions", js.Array(value :_*))
   }
 }

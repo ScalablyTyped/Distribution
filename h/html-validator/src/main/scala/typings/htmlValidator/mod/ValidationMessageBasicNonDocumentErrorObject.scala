@@ -16,23 +16,18 @@ trait ValidationMessageBasicNonDocumentErrorObject extends StObject {
 }
 object ValidationMessageBasicNonDocumentErrorObject {
   
-  @scala.inline
-  def apply(): ValidationMessageBasicNonDocumentErrorObject = {
+  inline def apply(): ValidationMessageBasicNonDocumentErrorObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("non-document-error")
     __obj.asInstanceOf[ValidationMessageBasicNonDocumentErrorObject]
   }
   
-  @scala.inline
-  implicit class ValidationMessageBasicNonDocumentErrorObjectMutableBuilder[Self <: ValidationMessageBasicNonDocumentErrorObject] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationMessageBasicNonDocumentErrorObject](x: Self) {
     
-    @scala.inline
-    def setSubType(value: internal | io | schema): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
+    inline def setSubType(value: internal | io | schema): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTypeUndefined: Self = StObject.set(x, "subType", js.undefined)
+    inline def setSubTypeUndefined: Self = StObject.set(x, "subType", js.undefined)
     
-    @scala.inline
-    def setType(value: `non-document-error`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `non-document-error`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

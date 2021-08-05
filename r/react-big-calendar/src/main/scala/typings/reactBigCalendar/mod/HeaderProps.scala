@@ -15,22 +15,17 @@ trait HeaderProps extends StObject {
 }
 object HeaderProps {
   
-  @scala.inline
-  def apply(date: Date, label: String, localizer: DateLocalizer): HeaderProps = {
+  inline def apply(date: Date, label: String, localizer: DateLocalizer): HeaderProps = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], localizer = localizer.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderProps]
   }
   
-  @scala.inline
-  implicit class HeaderPropsMutableBuilder[Self <: HeaderProps] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderProps](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizer(value: DateLocalizer): Self = StObject.set(x, "localizer", value.asInstanceOf[js.Any])
+    inline def setLocalizer(value: DateLocalizer): Self = StObject.set(x, "localizer", value.asInstanceOf[js.Any])
   }
 }

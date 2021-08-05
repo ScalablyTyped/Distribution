@@ -55,8 +55,7 @@ object testDomTestContainerMod {
     def unmountAfterEachTest(): this.type = js.native
   }
   
-  @scala.inline
-  def createDOMContainer(): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createDOMContainer")().asInstanceOf[HTMLElement]
+  inline def createDOMContainer(): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createDOMContainer")().asInstanceOf[HTMLElement]
   
   trait LegacyDriverArgs extends StObject {
     
@@ -70,32 +69,24 @@ object testDomTestContainerMod {
   }
   object LegacyDriverArgs {
     
-    @scala.inline
-    def apply(eventTrigger: TypeofSimulate, wrapper: HTMLElement): LegacyDriverArgs = {
+    inline def apply(eventTrigger: TypeofSimulate, wrapper: HTMLElement): LegacyDriverArgs = {
       val __obj = js.Dynamic.literal(eventTrigger = eventTrigger.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any], element = null)
       __obj.asInstanceOf[LegacyDriverArgs]
     }
     
-    @scala.inline
-    implicit class LegacyDriverArgsMutableBuilder[Self <: LegacyDriverArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LegacyDriverArgs](x: Self) {
       
-      @scala.inline
-      def setComponent(value: Element): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: Element): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementNull: Self = StObject.set(x, "element", null)
+      inline def setElementNull: Self = StObject.set(x, "element", null)
       
-      @scala.inline
-      def setEventTrigger(value: TypeofSimulate): Self = StObject.set(x, "eventTrigger", value.asInstanceOf[js.Any])
+      inline def setEventTrigger(value: TypeofSimulate): Self = StObject.set(x, "eventTrigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapper(value: HTMLElement): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: HTMLElement): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
 }

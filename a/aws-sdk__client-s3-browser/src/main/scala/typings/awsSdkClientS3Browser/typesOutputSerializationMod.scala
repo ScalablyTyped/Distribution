@@ -24,26 +24,20 @@ object typesOutputSerializationMod {
   }
   object OutputSerialization {
     
-    @scala.inline
-    def apply(): OutputSerialization = {
+    inline def apply(): OutputSerialization = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OutputSerialization]
     }
     
-    @scala.inline
-    implicit class OutputSerializationMutableBuilder[Self <: OutputSerialization] (val x: Self) extends AnyVal {
+    extension [Self <: OutputSerialization](x: Self) {
       
-      @scala.inline
-      def setCSV(value: CSVOutput): Self = StObject.set(x, "CSV", value.asInstanceOf[js.Any])
+      inline def setCSV(value: CSVOutput): Self = StObject.set(x, "CSV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCSVUndefined: Self = StObject.set(x, "CSV", js.undefined)
+      inline def setCSVUndefined: Self = StObject.set(x, "CSV", js.undefined)
       
-      @scala.inline
-      def setJSON(value: JSONOutput): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
+      inline def setJSON(value: JSONOutput): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSONUndefined: Self = StObject.set(x, "JSON", js.undefined)
+      inline def setJSONUndefined: Self = StObject.set(x, "JSON", js.undefined)
     }
   }
   
@@ -65,26 +59,20 @@ object typesOutputSerializationMod {
   }
   object UnmarshalledOutputSerialization {
     
-    @scala.inline
-    def apply(): UnmarshalledOutputSerialization = {
+    inline def apply(): UnmarshalledOutputSerialization = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledOutputSerialization]
     }
     
-    @scala.inline
-    implicit class UnmarshalledOutputSerializationMutableBuilder[Self <: UnmarshalledOutputSerialization] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledOutputSerialization](x: Self) {
       
-      @scala.inline
-      def setCSV(value: UnmarshalledCSVOutput): Self = StObject.set(x, "CSV", value.asInstanceOf[js.Any])
+      inline def setCSV(value: UnmarshalledCSVOutput): Self = StObject.set(x, "CSV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCSVUndefined: Self = StObject.set(x, "CSV", js.undefined)
+      inline def setCSVUndefined: Self = StObject.set(x, "CSV", js.undefined)
       
-      @scala.inline
-      def setJSON(value: UnmarshalledJSONOutput): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
+      inline def setJSON(value: UnmarshalledJSONOutput): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSONUndefined: Self = StObject.set(x, "JSON", js.undefined)
+      inline def setJSONUndefined: Self = StObject.set(x, "JSON", js.undefined)
     }
   }
 }

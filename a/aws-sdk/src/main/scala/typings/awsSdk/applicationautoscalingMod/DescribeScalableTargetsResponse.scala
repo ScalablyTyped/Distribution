@@ -18,28 +18,21 @@ trait DescribeScalableTargetsResponse extends StObject {
 }
 object DescribeScalableTargetsResponse {
   
-  @scala.inline
-  def apply(): DescribeScalableTargetsResponse = {
+  inline def apply(): DescribeScalableTargetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeScalableTargetsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeScalableTargetsResponseMutableBuilder[Self <: DescribeScalableTargetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeScalableTargetsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setScalableTargets(value: ScalableTargets): Self = StObject.set(x, "ScalableTargets", value.asInstanceOf[js.Any])
+    inline def setScalableTargets(value: ScalableTargets): Self = StObject.set(x, "ScalableTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalableTargetsUndefined: Self = StObject.set(x, "ScalableTargets", js.undefined)
+    inline def setScalableTargetsUndefined: Self = StObject.set(x, "ScalableTargets", js.undefined)
     
-    @scala.inline
-    def setScalableTargetsVarargs(value: ScalableTarget*): Self = StObject.set(x, "ScalableTargets", js.Array(value :_*))
+    inline def setScalableTargetsVarargs(value: ScalableTarget*): Self = StObject.set(x, "ScalableTargets", js.Array(value :_*))
   }
 }

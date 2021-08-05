@@ -11,16 +11,13 @@ trait PickImplnoURL extends StObject {
 }
 object PickImplnoURL {
   
-  @scala.inline
-  def apply(noURL: String): PickImplnoURL = {
+  inline def apply(noURL: String): PickImplnoURL = {
     val __obj = js.Dynamic.literal(noURL = noURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnoURL]
   }
   
-  @scala.inline
-  implicit class PickImplnoURLMutableBuilder[Self <: PickImplnoURL] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplnoURL](x: Self) {
     
-    @scala.inline
-    def setNoURL(value: String): Self = StObject.set(x, "noURL", value.asInstanceOf[js.Any])
+    inline def setNoURL(value: String): Self = StObject.set(x, "noURL", value.asInstanceOf[js.Any])
   }
 }

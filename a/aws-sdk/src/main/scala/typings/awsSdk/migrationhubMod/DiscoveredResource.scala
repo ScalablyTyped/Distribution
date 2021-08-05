@@ -18,22 +18,17 @@ trait DiscoveredResource extends StObject {
 }
 object DiscoveredResource {
   
-  @scala.inline
-  def apply(ConfigurationId: ConfigurationId): DiscoveredResource = {
+  inline def apply(ConfigurationId: ConfigurationId): DiscoveredResource = {
     val __obj = js.Dynamic.literal(ConfigurationId = ConfigurationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscoveredResource]
   }
   
-  @scala.inline
-  implicit class DiscoveredResourceMutableBuilder[Self <: DiscoveredResource] (val x: Self) extends AnyVal {
+  extension [Self <: DiscoveredResource](x: Self) {
     
-    @scala.inline
-    def setConfigurationId(value: ConfigurationId): Self = StObject.set(x, "ConfigurationId", value.asInstanceOf[js.Any])
+    inline def setConfigurationId(value: ConfigurationId): Self = StObject.set(x, "ConfigurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: DiscoveredResourceDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DiscoveredResourceDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

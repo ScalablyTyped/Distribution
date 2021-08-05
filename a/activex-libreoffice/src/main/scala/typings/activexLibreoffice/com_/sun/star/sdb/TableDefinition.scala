@@ -23,8 +23,7 @@ trait TableDefinition
 }
 object TableDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PropertySetInfo: XPropertySetInfo,
     acquire: () => Unit,
     addPropertyChangeListener: (String, XPropertyChangeListener) => Unit,
@@ -43,13 +42,10 @@ object TableDefinition {
     __obj.asInstanceOf[TableDefinition]
   }
   
-  @scala.inline
-  implicit class TableDefinitionMutableBuilder[Self <: TableDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: TableDefinition](x: Self) {
     
-    @scala.inline
-    def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
+    inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateWithName(value: String => Unit): Self = StObject.set(x, "createWithName", js.Any.fromFunction1(value))
+    inline def setCreateWithName(value: String => Unit): Self = StObject.set(x, "createWithName", js.Any.fromFunction1(value))
   }
 }

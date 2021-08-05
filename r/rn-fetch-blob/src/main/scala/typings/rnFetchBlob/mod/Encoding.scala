@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Encoding extends StObject
 object Encoding {
   
-  @scala.inline
-  def ascii: typings.rnFetchBlob.rnFetchBlobStrings.ascii = "ascii".asInstanceOf[typings.rnFetchBlob.rnFetchBlobStrings.ascii]
+  inline def ascii: typings.rnFetchBlob.rnFetchBlobStrings.ascii = "ascii".asInstanceOf[typings.rnFetchBlob.rnFetchBlobStrings.ascii]
   
-  @scala.inline
-  def base64: typings.rnFetchBlob.rnFetchBlobStrings.base64 = "base64".asInstanceOf[typings.rnFetchBlob.rnFetchBlobStrings.base64]
+  inline def base64: typings.rnFetchBlob.rnFetchBlobStrings.base64 = "base64".asInstanceOf[typings.rnFetchBlob.rnFetchBlobStrings.base64]
   
-  @scala.inline
-  def utf8: typings.rnFetchBlob.rnFetchBlobStrings.utf8 = "utf8".asInstanceOf[typings.rnFetchBlob.rnFetchBlobStrings.utf8]
+  inline def utf8: typings.rnFetchBlob.rnFetchBlobStrings.utf8 = "utf8".asInstanceOf[typings.rnFetchBlob.rnFetchBlobStrings.utf8]
 }

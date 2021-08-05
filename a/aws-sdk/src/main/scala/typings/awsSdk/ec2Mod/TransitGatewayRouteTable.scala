@@ -43,58 +43,41 @@ trait TransitGatewayRouteTable extends StObject {
 }
 object TransitGatewayRouteTable {
   
-  @scala.inline
-  def apply(): TransitGatewayRouteTable = {
+  inline def apply(): TransitGatewayRouteTable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitGatewayRouteTable]
   }
   
-  @scala.inline
-  implicit class TransitGatewayRouteTableMutableBuilder[Self <: TransitGatewayRouteTable] (val x: Self) extends AnyVal {
+  extension [Self <: TransitGatewayRouteTable](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: DateTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: DateTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setDefaultAssociationRouteTable(value: Boolean): Self = StObject.set(x, "DefaultAssociationRouteTable", value.asInstanceOf[js.Any])
+    inline def setDefaultAssociationRouteTable(value: Boolean): Self = StObject.set(x, "DefaultAssociationRouteTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultAssociationRouteTableUndefined: Self = StObject.set(x, "DefaultAssociationRouteTable", js.undefined)
+    inline def setDefaultAssociationRouteTableUndefined: Self = StObject.set(x, "DefaultAssociationRouteTable", js.undefined)
     
-    @scala.inline
-    def setDefaultPropagationRouteTable(value: Boolean): Self = StObject.set(x, "DefaultPropagationRouteTable", value.asInstanceOf[js.Any])
+    inline def setDefaultPropagationRouteTable(value: Boolean): Self = StObject.set(x, "DefaultPropagationRouteTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPropagationRouteTableUndefined: Self = StObject.set(x, "DefaultPropagationRouteTable", js.undefined)
+    inline def setDefaultPropagationRouteTableUndefined: Self = StObject.set(x, "DefaultPropagationRouteTable", js.undefined)
     
-    @scala.inline
-    def setState(value: TransitGatewayRouteTableState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: TransitGatewayRouteTableState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTransitGatewayId(value: String): Self = StObject.set(x, "TransitGatewayId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayId(value: String): Self = StObject.set(x, "TransitGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayIdUndefined: Self = StObject.set(x, "TransitGatewayId", js.undefined)
+    inline def setTransitGatewayIdUndefined: Self = StObject.set(x, "TransitGatewayId", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayRouteTableId(value: String): Self = StObject.set(x, "TransitGatewayRouteTableId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayRouteTableId(value: String): Self = StObject.set(x, "TransitGatewayRouteTableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayRouteTableIdUndefined: Self = StObject.set(x, "TransitGatewayRouteTableId", js.undefined)
+    inline def setTransitGatewayRouteTableIdUndefined: Self = StObject.set(x, "TransitGatewayRouteTableId", js.undefined)
   }
 }

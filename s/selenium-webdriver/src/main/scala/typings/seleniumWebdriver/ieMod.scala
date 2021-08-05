@@ -47,18 +47,12 @@ object ieMod {
       *   to start the IEDriverServer in a child process, optionally.
       * @return {!Driver} A new driver instance.
       */
-    @scala.inline
-    def createSession(): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")().asInstanceOf[Driver]
-    @scala.inline
-    def createSession(options: Unit, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(options.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(options: Options): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(options.asInstanceOf[js.Any]).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(options: Options, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(options.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(options: Capabilities): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(options.asInstanceOf[js.Any]).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(options: Capabilities, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(options.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    inline def createSession(): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")().asInstanceOf[Driver]
+    inline def createSession(options: Unit, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(options.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    inline def createSession(options: Options): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(options.asInstanceOf[js.Any]).asInstanceOf[Driver]
+    inline def createSession(options: Options, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(options.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    inline def createSession(options: Capabilities): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(options.asInstanceOf[js.Any]).asInstanceOf[Driver]
+    inline def createSession(options: Capabilities, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(options.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
   }
   
   @JSImport("selenium-webdriver/ie", "Options")
@@ -242,22 +236,16 @@ object ieMod {
   trait Level extends StObject
   object Level {
     
-    @scala.inline
-    def DEBUG: typings.seleniumWebdriver.seleniumWebdriverStrings.DEBUG = "DEBUG".asInstanceOf[typings.seleniumWebdriver.seleniumWebdriverStrings.DEBUG]
+    inline def DEBUG: typings.seleniumWebdriver.seleniumWebdriverStrings.DEBUG = "DEBUG".asInstanceOf[typings.seleniumWebdriver.seleniumWebdriverStrings.DEBUG]
     
-    @scala.inline
-    def ERROR: typings.seleniumWebdriver.seleniumWebdriverStrings.ERROR = "ERROR".asInstanceOf[typings.seleniumWebdriver.seleniumWebdriverStrings.ERROR]
+    inline def ERROR: typings.seleniumWebdriver.seleniumWebdriverStrings.ERROR = "ERROR".asInstanceOf[typings.seleniumWebdriver.seleniumWebdriverStrings.ERROR]
     
-    @scala.inline
-    def FATAL: typings.seleniumWebdriver.seleniumWebdriverStrings.FATAL = "FATAL".asInstanceOf[typings.seleniumWebdriver.seleniumWebdriverStrings.FATAL]
+    inline def FATAL: typings.seleniumWebdriver.seleniumWebdriverStrings.FATAL = "FATAL".asInstanceOf[typings.seleniumWebdriver.seleniumWebdriverStrings.FATAL]
     
-    @scala.inline
-    def INFO: typings.seleniumWebdriver.seleniumWebdriverStrings.INFO = "INFO".asInstanceOf[typings.seleniumWebdriver.seleniumWebdriverStrings.INFO]
+    inline def INFO: typings.seleniumWebdriver.seleniumWebdriverStrings.INFO = "INFO".asInstanceOf[typings.seleniumWebdriver.seleniumWebdriverStrings.INFO]
     
-    @scala.inline
-    def TRACE: typings.seleniumWebdriver.seleniumWebdriverStrings.TRACE = "TRACE".asInstanceOf[typings.seleniumWebdriver.seleniumWebdriverStrings.TRACE]
+    inline def TRACE: typings.seleniumWebdriver.seleniumWebdriverStrings.TRACE = "TRACE".asInstanceOf[typings.seleniumWebdriver.seleniumWebdriverStrings.TRACE]
     
-    @scala.inline
-    def WARN: typings.seleniumWebdriver.seleniumWebdriverStrings.WARN = "WARN".asInstanceOf[typings.seleniumWebdriver.seleniumWebdriverStrings.WARN]
+    inline def WARN: typings.seleniumWebdriver.seleniumWebdriverStrings.WARN = "WARN".asInstanceOf[typings.seleniumWebdriver.seleniumWebdriverStrings.WARN]
   }
 }

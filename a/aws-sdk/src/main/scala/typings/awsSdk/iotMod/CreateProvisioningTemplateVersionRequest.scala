@@ -23,25 +23,19 @@ trait CreateProvisioningTemplateVersionRequest extends StObject {
 }
 object CreateProvisioningTemplateVersionRequest {
   
-  @scala.inline
-  def apply(templateBody: TemplateBody, templateName: TemplateName): CreateProvisioningTemplateVersionRequest = {
+  inline def apply(templateBody: TemplateBody, templateName: TemplateName): CreateProvisioningTemplateVersionRequest = {
     val __obj = js.Dynamic.literal(templateBody = templateBody.asInstanceOf[js.Any], templateName = templateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProvisioningTemplateVersionRequest]
   }
   
-  @scala.inline
-  implicit class CreateProvisioningTemplateVersionRequestMutableBuilder[Self <: CreateProvisioningTemplateVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProvisioningTemplateVersionRequest](x: Self) {
     
-    @scala.inline
-    def setSetAsDefault(value: SetAsDefault): Self = StObject.set(x, "setAsDefault", value.asInstanceOf[js.Any])
+    inline def setSetAsDefault(value: SetAsDefault): Self = StObject.set(x, "setAsDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAsDefaultUndefined: Self = StObject.set(x, "setAsDefault", js.undefined)
+    inline def setSetAsDefaultUndefined: Self = StObject.set(x, "setAsDefault", js.undefined)
     
-    @scala.inline
-    def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
+    inline def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
   }
 }

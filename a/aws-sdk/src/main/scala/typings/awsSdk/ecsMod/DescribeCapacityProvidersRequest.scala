@@ -28,43 +28,31 @@ trait DescribeCapacityProvidersRequest extends StObject {
 }
 object DescribeCapacityProvidersRequest {
   
-  @scala.inline
-  def apply(): DescribeCapacityProvidersRequest = {
+  inline def apply(): DescribeCapacityProvidersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCapacityProvidersRequest]
   }
   
-  @scala.inline
-  implicit class DescribeCapacityProvidersRequestMutableBuilder[Self <: DescribeCapacityProvidersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCapacityProvidersRequest](x: Self) {
     
-    @scala.inline
-    def setCapacityProviders(value: StringList): Self = StObject.set(x, "capacityProviders", value.asInstanceOf[js.Any])
+    inline def setCapacityProviders(value: StringList): Self = StObject.set(x, "capacityProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityProvidersUndefined: Self = StObject.set(x, "capacityProviders", js.undefined)
+    inline def setCapacityProvidersUndefined: Self = StObject.set(x, "capacityProviders", js.undefined)
     
-    @scala.inline
-    def setCapacityProvidersVarargs(value: String*): Self = StObject.set(x, "capacityProviders", js.Array(value :_*))
+    inline def setCapacityProvidersVarargs(value: String*): Self = StObject.set(x, "capacityProviders", js.Array(value :_*))
     
-    @scala.inline
-    def setInclude(value: CapacityProviderFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: CapacityProviderFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setIncludeVarargs(value: CapacityProviderField*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: CapacityProviderField*): Self = StObject.set(x, "include", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

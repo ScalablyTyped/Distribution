@@ -23,28 +23,21 @@ trait GetQueryResultsInput extends StObject {
 }
 object GetQueryResultsInput {
   
-  @scala.inline
-  def apply(QueryExecutionId: QueryExecutionId): GetQueryResultsInput = {
+  inline def apply(QueryExecutionId: QueryExecutionId): GetQueryResultsInput = {
     val __obj = js.Dynamic.literal(QueryExecutionId = QueryExecutionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetQueryResultsInput]
   }
   
-  @scala.inline
-  implicit class GetQueryResultsInputMutableBuilder[Self <: GetQueryResultsInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetQueryResultsInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxQueryResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxQueryResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setQueryExecutionId(value: QueryExecutionId): Self = StObject.set(x, "QueryExecutionId", value.asInstanceOf[js.Any])
+    inline def setQueryExecutionId(value: QueryExecutionId): Self = StObject.set(x, "QueryExecutionId", value.asInstanceOf[js.Any])
   }
 }

@@ -6,38 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object strIreplaceMod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: js.Any, replace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: js.Any, replace: js.Any, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: js.Any, replace: js.Any, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: js.Any, replace: js.Any, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: js.Any, replace: Unit, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: js.Any, replace: Unit, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: js.Any, replace: Unit, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: Unit, replace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: Unit, replace: js.Any, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: Unit, replace: js.Any, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: Unit, replace: js.Any, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: Unit, replace: Unit, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: Unit, replace: Unit, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(search: Unit, replace: Unit, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(search: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(search: js.Any, replace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: js.Any, replace: js.Any, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: js.Any, replace: js.Any, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: js.Any, replace: js.Any, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: js.Any, replace: Unit, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: js.Any, replace: Unit, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: js.Any, replace: Unit, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: Unit, replace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: Unit, replace: js.Any, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: Unit, replace: js.Any, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: Unit, replace: js.Any, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: Unit, replace: Unit, subject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: Unit, replace: Unit, subject: js.Any, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(search: Unit, replace: Unit, subject: Unit, countObj: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], countObj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("locutus/php/strings/str_ireplace", JSImport.Namespace)
   @js.native

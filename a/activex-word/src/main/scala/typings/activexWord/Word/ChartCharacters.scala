@@ -26,13 +26,12 @@ trait ChartCharacters extends StObject {
   
   var Text: String
   
-  @JSName("Word.ChartCharacters_typekey")
+  /* private */ @JSName("Word.ChartCharacters_typekey")
   var WordDotChartCharacters_typekey: ChartCharacters
 }
 object ChartCharacters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Caption: String,
     Count: Double,
@@ -50,40 +49,28 @@ object ChartCharacters {
     __obj.asInstanceOf[ChartCharacters]
   }
   
-  @scala.inline
-  implicit class ChartCharactersMutableBuilder[Self <: ChartCharacters] (val x: Self) extends AnyVal {
+  extension [Self <: ChartCharacters](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFont(value: ChartFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: ChartFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsert(value: String => js.Any): Self = StObject.set(x, "Insert", js.Any.fromFunction1(value))
+    inline def setInsert(value: String => js.Any): Self = StObject.set(x, "Insert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneticCharacters(value: String): Self = StObject.set(x, "PhoneticCharacters", value.asInstanceOf[js.Any])
+    inline def setPhoneticCharacters(value: String): Self = StObject.set(x, "PhoneticCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotChartCharacters_typekey(value: ChartCharacters): Self = StObject.set(x, "Word.ChartCharacters_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotChartCharacters_typekey(value: ChartCharacters): Self = StObject.set(x, "Word.ChartCharacters_typekey", value.asInstanceOf[js.Any])
   }
 }

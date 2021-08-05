@@ -18,7 +18,7 @@ trait BatchGeometry extends StObject {
     * @member {PIXI.Buffer} PIXI.BatchGeometry#_buffer
     * @protected
     */
-  var _buffer: Buffer
+  /* protected */ var _buffer: Buffer
   
   /**
     * Index buffer data
@@ -26,23 +26,19 @@ trait BatchGeometry extends StObject {
     * @member {PIXI.Buffer} PIXI.BatchGeometry#_indexBuffer
     * @protected
     */
-  var _indexBuffer: Buffer
+  /* protected */ var _indexBuffer: Buffer
 }
 object BatchGeometry {
   
-  @scala.inline
-  def apply(_buffer: Buffer, _indexBuffer: Buffer): BatchGeometry = {
+  inline def apply(_buffer: Buffer, _indexBuffer: Buffer): BatchGeometry = {
     val __obj = js.Dynamic.literal(_buffer = _buffer.asInstanceOf[js.Any], _indexBuffer = _indexBuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGeometry]
   }
   
-  @scala.inline
-  implicit class BatchGeometryMutableBuilder[Self <: BatchGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGeometry](x: Self) {
     
-    @scala.inline
-    def set_buffer(value: Buffer): Self = StObject.set(x, "_buffer", value.asInstanceOf[js.Any])
+    inline def set_buffer(value: Buffer): Self = StObject.set(x, "_buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_indexBuffer(value: Buffer): Self = StObject.set(x, "_indexBuffer", value.asInstanceOf[js.Any])
+    inline def set_indexBuffer(value: Buffer): Self = StObject.set(x, "_indexBuffer", value.asInstanceOf[js.Any])
   }
 }

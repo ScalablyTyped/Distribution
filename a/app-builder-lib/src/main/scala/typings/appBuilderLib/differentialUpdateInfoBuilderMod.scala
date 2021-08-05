@@ -21,17 +21,12 @@ object differentialUpdateInfoBuilderMod {
   @js.native
   val BLOCK_MAP_FILE_SUFFIX: /* ".blockmap" */ String = js.native
   
-  @scala.inline
-  def appendBlockmap(file: String): js.Promise[BlockMapDataHolder] = ^.asInstanceOf[js.Dynamic].applyDynamic("appendBlockmap")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BlockMapDataHolder]]
+  inline def appendBlockmap(file: String): js.Promise[BlockMapDataHolder] = ^.asInstanceOf[js.Dynamic].applyDynamic("appendBlockmap")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BlockMapDataHolder]]
   
-  @scala.inline
-  def configureDifferentialAwareArchiveOptions(archiveOptions: ArchiveOptions): ArchiveOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("configureDifferentialAwareArchiveOptions")(archiveOptions.asInstanceOf[js.Any]).asInstanceOf[ArchiveOptions]
+  inline def configureDifferentialAwareArchiveOptions(archiveOptions: ArchiveOptions): ArchiveOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("configureDifferentialAwareArchiveOptions")(archiveOptions.asInstanceOf[js.Any]).asInstanceOf[ArchiveOptions]
   
-  @scala.inline
-  def createBlockmap(file: String, target: Target, packager: PlatformPackager[js.Any]): js.Promise[BlockMapDataHolder] = (^.asInstanceOf[js.Dynamic].applyDynamic("createBlockmap")(file.asInstanceOf[js.Any], target.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BlockMapDataHolder]]
-  @scala.inline
-  def createBlockmap(file: String, target: Target, packager: PlatformPackager[js.Any], safeArtifactName: String): js.Promise[BlockMapDataHolder] = (^.asInstanceOf[js.Dynamic].applyDynamic("createBlockmap")(file.asInstanceOf[js.Any], target.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], safeArtifactName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BlockMapDataHolder]]
+  inline def createBlockmap(file: String, target: Target, packager: PlatformPackager[js.Any]): js.Promise[BlockMapDataHolder] = (^.asInstanceOf[js.Dynamic].applyDynamic("createBlockmap")(file.asInstanceOf[js.Any], target.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BlockMapDataHolder]]
+  inline def createBlockmap(file: String, target: Target, packager: PlatformPackager[js.Any], safeArtifactName: String): js.Promise[BlockMapDataHolder] = (^.asInstanceOf[js.Dynamic].applyDynamic("createBlockmap")(file.asInstanceOf[js.Any], target.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], safeArtifactName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BlockMapDataHolder]]
   
-  @scala.inline
-  def createNsisWebDifferentialUpdateInfo(artifactPath: String, packageFiles: StringDictionary[PackageFileInfo]): Packages | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createNsisWebDifferentialUpdateInfo")(artifactPath.asInstanceOf[js.Any], packageFiles.asInstanceOf[js.Any])).asInstanceOf[Packages | Null]
+  inline def createNsisWebDifferentialUpdateInfo(artifactPath: String, packageFiles: StringDictionary[PackageFileInfo]): Packages | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createNsisWebDifferentialUpdateInfo")(artifactPath.asInstanceOf[js.Any], packageFiles.asInstanceOf[js.Any])).asInstanceOf[Packages | Null]
 }

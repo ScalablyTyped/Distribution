@@ -14,20 +14,16 @@ object anon {
   }
   object Fn {
     
-    @scala.inline
-    def apply(fn: js.Any => js.Any, style: String): Fn = {
+    inline def apply(fn: js.Any => js.Any, style: String): Fn = {
       val __obj = js.Dynamic.literal(fn = js.Any.fromFunction1(fn), style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fn]
     }
     
-    @scala.inline
-    implicit class FnMutableBuilder[Self <: Fn] (val x: Self) extends AnyVal {
+    extension [Self <: Fn](x: Self) {
       
-      @scala.inline
-      def setFn(value: js.Any => js.Any): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+      inline def setFn(value: js.Any => js.Any): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
 }

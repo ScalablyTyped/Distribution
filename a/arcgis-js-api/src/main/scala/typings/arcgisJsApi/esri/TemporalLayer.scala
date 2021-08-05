@@ -36,25 +36,19 @@ trait TemporalLayer extends StObject {
 }
 object TemporalLayer {
   
-  @scala.inline
-  def apply(timeExtent: TimeExtent, timeInfo: TimeInfo, timeOffset: TimeInterval, useViewTime: Boolean): TemporalLayer = {
+  inline def apply(timeExtent: TimeExtent, timeInfo: TimeInfo, timeOffset: TimeInterval, useViewTime: Boolean): TemporalLayer = {
     val __obj = js.Dynamic.literal(timeExtent = timeExtent.asInstanceOf[js.Any], timeInfo = timeInfo.asInstanceOf[js.Any], timeOffset = timeOffset.asInstanceOf[js.Any], useViewTime = useViewTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemporalLayer]
   }
   
-  @scala.inline
-  implicit class TemporalLayerMutableBuilder[Self <: TemporalLayer] (val x: Self) extends AnyVal {
+  extension [Self <: TemporalLayer](x: Self) {
     
-    @scala.inline
-    def setTimeExtent(value: TimeExtent): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
+    inline def setTimeExtent(value: TimeExtent): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeInfo(value: TimeInfo): Self = StObject.set(x, "timeInfo", value.asInstanceOf[js.Any])
+    inline def setTimeInfo(value: TimeInfo): Self = StObject.set(x, "timeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOffset(value: TimeInterval): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
+    inline def setTimeOffset(value: TimeInterval): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseViewTime(value: Boolean): Self = StObject.set(x, "useViewTime", value.asInstanceOf[js.Any])
+    inline def setUseViewTime(value: Boolean): Self = StObject.set(x, "useViewTime", value.asInstanceOf[js.Any])
   }
 }

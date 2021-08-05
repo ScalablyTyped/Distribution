@@ -13,12 +13,10 @@ object ContentRepo {
   @JSImport("matrix-appservice-bridge", "ContentRepo.getHttpUriForMxc")
   @js.native
   def getHttpUriForMxc: js.Any = js.native
-  @scala.inline
-  def getHttpUriForMxc_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getHttpUriForMxc")(x.asInstanceOf[js.Any])
+  inline def getHttpUriForMxc_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getHttpUriForMxc")(x.asInstanceOf[js.Any])
   
   @JSImport("matrix-appservice-bridge", "ContentRepo.getIdenticonUri")
   @js.native
   def getIdenticonUri: js.Any = js.native
-  @scala.inline
-  def getIdenticonUri_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getIdenticonUri")(x.asInstanceOf[js.Any])
+  inline def getIdenticonUri_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getIdenticonUri")(x.asInstanceOf[js.Any])
 }

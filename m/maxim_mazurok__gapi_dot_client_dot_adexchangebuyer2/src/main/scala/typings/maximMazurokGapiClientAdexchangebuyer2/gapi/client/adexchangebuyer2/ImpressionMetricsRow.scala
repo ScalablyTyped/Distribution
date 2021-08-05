@@ -26,49 +26,35 @@ trait ImpressionMetricsRow extends StObject {
 }
 object ImpressionMetricsRow {
   
-  @scala.inline
-  def apply(): ImpressionMetricsRow = {
+  inline def apply(): ImpressionMetricsRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImpressionMetricsRow]
   }
   
-  @scala.inline
-  implicit class ImpressionMetricsRowMutableBuilder[Self <: ImpressionMetricsRow] (val x: Self) extends AnyVal {
+  extension [Self <: ImpressionMetricsRow](x: Self) {
     
-    @scala.inline
-    def setAvailableImpressions(value: MetricValue): Self = StObject.set(x, "availableImpressions", value.asInstanceOf[js.Any])
+    inline def setAvailableImpressions(value: MetricValue): Self = StObject.set(x, "availableImpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableImpressionsUndefined: Self = StObject.set(x, "availableImpressions", js.undefined)
+    inline def setAvailableImpressionsUndefined: Self = StObject.set(x, "availableImpressions", js.undefined)
     
-    @scala.inline
-    def setBidRequests(value: MetricValue): Self = StObject.set(x, "bidRequests", value.asInstanceOf[js.Any])
+    inline def setBidRequests(value: MetricValue): Self = StObject.set(x, "bidRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidRequestsUndefined: Self = StObject.set(x, "bidRequests", js.undefined)
+    inline def setBidRequestsUndefined: Self = StObject.set(x, "bidRequests", js.undefined)
     
-    @scala.inline
-    def setInventoryMatches(value: MetricValue): Self = StObject.set(x, "inventoryMatches", value.asInstanceOf[js.Any])
+    inline def setInventoryMatches(value: MetricValue): Self = StObject.set(x, "inventoryMatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventoryMatchesUndefined: Self = StObject.set(x, "inventoryMatches", js.undefined)
+    inline def setInventoryMatchesUndefined: Self = StObject.set(x, "inventoryMatches", js.undefined)
     
-    @scala.inline
-    def setResponsesWithBids(value: MetricValue): Self = StObject.set(x, "responsesWithBids", value.asInstanceOf[js.Any])
+    inline def setResponsesWithBids(value: MetricValue): Self = StObject.set(x, "responsesWithBids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesWithBidsUndefined: Self = StObject.set(x, "responsesWithBids", js.undefined)
+    inline def setResponsesWithBidsUndefined: Self = StObject.set(x, "responsesWithBids", js.undefined)
     
-    @scala.inline
-    def setRowDimensions(value: RowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
+    inline def setRowDimensions(value: RowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
+    inline def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
     
-    @scala.inline
-    def setSuccessfulResponses(value: MetricValue): Self = StObject.set(x, "successfulResponses", value.asInstanceOf[js.Any])
+    inline def setSuccessfulResponses(value: MetricValue): Self = StObject.set(x, "successfulResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulResponsesUndefined: Self = StObject.set(x, "successfulResponses", js.undefined)
+    inline def setSuccessfulResponsesUndefined: Self = StObject.set(x, "successfulResponses", js.undefined)
   }
 }

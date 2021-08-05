@@ -17,8 +17,6 @@ object passiveFileSystemMod {
     * @param caseSensitive
     * @param realFileSystem
     */
-  @scala.inline
-  def createPassiveFileSystem(caseSensitive: Boolean, realFileSystem: FileSystem): FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("createPassiveFileSystem")(caseSensitive.asInstanceOf[js.Any], realFileSystem.asInstanceOf[js.Any])).asInstanceOf[FileSystem]
-  @scala.inline
-  def createPassiveFileSystem(caseSensitive: Unit, realFileSystem: FileSystem): FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("createPassiveFileSystem")(caseSensitive.asInstanceOf[js.Any], realFileSystem.asInstanceOf[js.Any])).asInstanceOf[FileSystem]
+  inline def createPassiveFileSystem(caseSensitive: Boolean, realFileSystem: FileSystem): FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("createPassiveFileSystem")(caseSensitive.asInstanceOf[js.Any], realFileSystem.asInstanceOf[js.Any])).asInstanceOf[FileSystem]
+  inline def createPassiveFileSystem(caseSensitive: Unit, realFileSystem: FileSystem): FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("createPassiveFileSystem")(caseSensitive.asInstanceOf[js.Any], realFileSystem.asInstanceOf[js.Any])).asInstanceOf[FileSystem]
 }

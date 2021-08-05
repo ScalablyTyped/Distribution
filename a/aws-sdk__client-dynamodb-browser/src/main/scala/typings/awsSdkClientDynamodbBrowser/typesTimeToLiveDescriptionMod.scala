@@ -24,26 +24,20 @@ object typesTimeToLiveDescriptionMod {
   }
   object TimeToLiveDescription {
     
-    @scala.inline
-    def apply(): TimeToLiveDescription = {
+    inline def apply(): TimeToLiveDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimeToLiveDescription]
     }
     
-    @scala.inline
-    implicit class TimeToLiveDescriptionMutableBuilder[Self <: TimeToLiveDescription] (val x: Self) extends AnyVal {
+    extension [Self <: TimeToLiveDescription](x: Self) {
       
-      @scala.inline
-      def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+      inline def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
+      inline def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
       
-      @scala.inline
-      def setTimeToLiveStatus(value: ENABLING | DISABLING | ENABLED | DISABLED | String): Self = StObject.set(x, "TimeToLiveStatus", value.asInstanceOf[js.Any])
+      inline def setTimeToLiveStatus(value: ENABLING | DISABLING | ENABLED | DISABLED | String): Self = StObject.set(x, "TimeToLiveStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeToLiveStatusUndefined: Self = StObject.set(x, "TimeToLiveStatus", js.undefined)
+      inline def setTimeToLiveStatusUndefined: Self = StObject.set(x, "TimeToLiveStatus", js.undefined)
     }
   }
   

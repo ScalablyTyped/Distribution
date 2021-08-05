@@ -12,22 +12,17 @@ trait SlotOutletProcessResult extends StObject {
 }
 object SlotOutletProcessResult {
   
-  @scala.inline
-  def apply(slotName: String | ExpressionNode): SlotOutletProcessResult = {
+  inline def apply(slotName: String | ExpressionNode): SlotOutletProcessResult = {
     val __obj = js.Dynamic.literal(slotName = slotName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlotOutletProcessResult]
   }
   
-  @scala.inline
-  implicit class SlotOutletProcessResultMutableBuilder[Self <: SlotOutletProcessResult] (val x: Self) extends AnyVal {
+  extension [Self <: SlotOutletProcessResult](x: Self) {
     
-    @scala.inline
-    def setSlotName(value: String | ExpressionNode): Self = StObject.set(x, "slotName", value.asInstanceOf[js.Any])
+    inline def setSlotName(value: String | ExpressionNode): Self = StObject.set(x, "slotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotProps(value: PropsExpression): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
+    inline def setSlotProps(value: PropsExpression): Self = StObject.set(x, "slotProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
+    inline def setSlotPropsUndefined: Self = StObject.set(x, "slotProps", js.undefined)
   }
 }

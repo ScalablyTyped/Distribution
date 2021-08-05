@@ -12,16 +12,13 @@ trait ErrMsgResponse extends StObject {
 }
 object ErrMsgResponse {
   
-  @scala.inline
-  def apply(errMsg: ok | String): ErrMsgResponse = {
+  inline def apply(errMsg: ok | String): ErrMsgResponse = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrMsgResponse]
   }
   
-  @scala.inline
-  implicit class ErrMsgResponseMutableBuilder[Self <: ErrMsgResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ErrMsgResponse](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: ok | String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: ok | String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

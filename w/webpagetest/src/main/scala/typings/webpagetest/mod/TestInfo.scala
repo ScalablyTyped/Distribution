@@ -64,8 +64,7 @@ trait TestInfo extends StObject {
 }
 object TestInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     block: String,
     bodies: Double,
     browser: String,
@@ -99,91 +98,62 @@ object TestInfo {
     __obj.asInstanceOf[TestInfo]
   }
   
-  @scala.inline
-  implicit class TestInfoMutableBuilder[Self <: TestInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TestInfo](x: Self) {
     
-    @scala.inline
-    def setBlock(value: String): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: String): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodies(value: Double): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
+    inline def setBodies(value: Double): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+    inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBwIn(value: Double): Self = StObject.set(x, "bwIn", value.asInstanceOf[js.Any])
+    inline def setBwIn(value: Double): Self = StObject.set(x, "bwIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBwOut(value: Double): Self = StObject.set(x, "bwOut", value.asInstanceOf[js.Any])
+    inline def setBwOut(value: Double): Self = StObject.set(x, "bwOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectivity(value: String): Self = StObject.set(x, "connectivity", value.asInstanceOf[js.Any])
+    inline def setConnectivity(value: String): Self = StObject.set(x, "connectivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFvonly(value: Double): Self = StObject.set(x, "fvonly", value.asInstanceOf[js.Any])
+    inline def setFvonly(value: Double): Self = StObject.set(x, "fvonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreSSL(value: Double): Self = StObject.set(x, "ignoreSSL", value.asInstanceOf[js.Any])
+    inline def setIgnoreSSL(value: Double): Self = StObject.set(x, "ignoreSSL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIq(value: Double): Self = StObject.set(x, "iq", value.asInstanceOf[js.Any])
+    inline def setIq(value: Double): Self = StObject.set(x, "iq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepua(value: Double): Self = StObject.set(x, "keepua", value.asInstanceOf[js.Any])
+    inline def setKeepua(value: Double): Self = StObject.set(x, "keepua", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
+    inline def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobile(value: Double): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: Double): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetlog(value: Double): Self = StObject.set(x, "netlog", value.asInstanceOf[js.Any])
+    inline def setNetlog(value: Double): Self = StObject.set(x, "netlog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoscript(value: Double): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
+    inline def setNoscript(value: Double): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlr(value: String): Self = StObject.set(x, "plr", value.asInstanceOf[js.Any])
+    inline def setPlr(value: String): Self = StObject.set(x, "plr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPngss(value: Double): Self = StObject.set(x, "pngss", value.asInstanceOf[js.Any])
+    inline def setPngss(value: Double): Self = StObject.set(x, "pngss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuns(value: Double): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
+    inline def setRuns(value: Double): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScripted(value: Double): Self = StObject.set(x, "scripted", value.asInstanceOf[js.Any])
+    inline def setScripted(value: Double): Self = StObject.set(x, "scripted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandards(value: Double): Self = StObject.set(x, "standards", value.asInstanceOf[js.Any])
+    inline def setStandards(value: Double): Self = StObject.set(x, "standards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTcpdump(value: Double): Self = StObject.set(x, "tcpdump", value.asInstanceOf[js.Any])
+    inline def setTcpdump(value: Double): Self = StObject.set(x, "tcpdump", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeline(value: Double): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
+    inline def setTimeline(value: Double): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrace(value: Double): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+    inline def setTrace(value: Double): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo(value: String): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: String): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeb10(value: Double): Self = StObject.set(x, "web10", value.asInstanceOf[js.Any])
+    inline def setWeb10(value: Double): Self = StObject.set(x, "web10", value.asInstanceOf[js.Any])
   }
 }

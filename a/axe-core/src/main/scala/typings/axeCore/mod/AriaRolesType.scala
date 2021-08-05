@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AriaRolesType extends StObject
 object AriaRolesType {
   
-  @scala.inline
-  def `abstract`: typings.axeCore.axeCoreStrings.`abstract` = "abstract".asInstanceOf[typings.axeCore.axeCoreStrings.`abstract`]
+  inline def `abstract`: typings.axeCore.axeCoreStrings.`abstract` = "abstract".asInstanceOf[typings.axeCore.axeCoreStrings.`abstract`]
   
-  @scala.inline
-  def landmark: typings.axeCore.axeCoreStrings.landmark = "landmark".asInstanceOf[typings.axeCore.axeCoreStrings.landmark]
+  inline def landmark: typings.axeCore.axeCoreStrings.landmark = "landmark".asInstanceOf[typings.axeCore.axeCoreStrings.landmark]
   
-  @scala.inline
-  def structure: typings.axeCore.axeCoreStrings.structure = "structure".asInstanceOf[typings.axeCore.axeCoreStrings.structure]
+  inline def structure: typings.axeCore.axeCoreStrings.structure = "structure".asInstanceOf[typings.axeCore.axeCoreStrings.structure]
   
-  @scala.inline
-  def widget: typings.axeCore.axeCoreStrings.widget = "widget".asInstanceOf[typings.axeCore.axeCoreStrings.widget]
+  inline def widget: typings.axeCore.axeCoreStrings.widget = "widget".asInstanceOf[typings.axeCore.axeCoreStrings.widget]
 }

@@ -18,13 +18,13 @@ object nsisUtilMod {
   class AppPackageHelper protected () extends StObject {
     def this(elevateHelper: CopyElevateHelper) = this()
     
-    val archToFileInfo: js.Any = js.native
+    /* private */ val archToFileInfo: js.Any = js.native
     
-    val elevateHelper: js.Any = js.native
+    /* private */ val elevateHelper: js.Any = js.native
     
     def finishBuild(): js.Promise[js.Any] = js.native
     
-    val infoToIsDelete: js.Any = js.native
+    /* private */ val infoToIsDelete: js.Any = js.native
     
     def packArch(arch: Arch, target: NsisTarget): js.Promise[PackageFileInfo] = js.native
     
@@ -36,13 +36,12 @@ object nsisUtilMod {
   @js.native
   class CopyElevateHelper () extends StObject {
     
-    val copied: js.Any = js.native
+    /* private */ val copied: js.Any = js.native
     
     def copy(appOutDir: String, target: NsisTarget): js.Promise[js.Any] = js.native
   }
   
-  @scala.inline
-  def NSIS_PATH(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("NSIS_PATH")().asInstanceOf[js.Promise[String]]
+  inline def NSIS_PATH(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("NSIS_PATH")().asInstanceOf[js.Promise[String]]
   
   @JSImport("app-builder-lib/out/targets/nsis/nsisUtil", "UninstallerReader")
   @js.native
@@ -54,8 +53,7 @@ object nsisUtilMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def exec(installerPath: String, uninstallerPath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(installerPath.asInstanceOf[js.Any], uninstallerPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def exec(installerPath: String, uninstallerPath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(installerPath.asInstanceOf[js.Any], uninstallerPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("app-builder-lib/out/targets/nsis/nsisUtil", "nsisTemplatesDir")

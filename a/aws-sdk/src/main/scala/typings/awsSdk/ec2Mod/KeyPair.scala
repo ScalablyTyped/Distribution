@@ -33,46 +33,33 @@ trait KeyPair extends StObject {
 }
 object KeyPair {
   
-  @scala.inline
-  def apply(): KeyPair = {
+  inline def apply(): KeyPair = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyPair]
   }
   
-  @scala.inline
-  implicit class KeyPairMutableBuilder[Self <: KeyPair] (val x: Self) extends AnyVal {
+  extension [Self <: KeyPair](x: Self) {
     
-    @scala.inline
-    def setKeyFingerprint(value: String): Self = StObject.set(x, "KeyFingerprint", value.asInstanceOf[js.Any])
+    inline def setKeyFingerprint(value: String): Self = StObject.set(x, "KeyFingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyFingerprintUndefined: Self = StObject.set(x, "KeyFingerprint", js.undefined)
+    inline def setKeyFingerprintUndefined: Self = StObject.set(x, "KeyFingerprint", js.undefined)
     
-    @scala.inline
-    def setKeyMaterial(value: SensitiveUserData): Self = StObject.set(x, "KeyMaterial", value.asInstanceOf[js.Any])
+    inline def setKeyMaterial(value: SensitiveUserData): Self = StObject.set(x, "KeyMaterial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyMaterialUndefined: Self = StObject.set(x, "KeyMaterial", js.undefined)
+    inline def setKeyMaterialUndefined: Self = StObject.set(x, "KeyMaterial", js.undefined)
     
-    @scala.inline
-    def setKeyName(value: String): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
+    inline def setKeyName(value: String): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyNameUndefined: Self = StObject.set(x, "KeyName", js.undefined)
+    inline def setKeyNameUndefined: Self = StObject.set(x, "KeyName", js.undefined)
     
-    @scala.inline
-    def setKeyPairId(value: String): Self = StObject.set(x, "KeyPairId", value.asInstanceOf[js.Any])
+    inline def setKeyPairId(value: String): Self = StObject.set(x, "KeyPairId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPairIdUndefined: Self = StObject.set(x, "KeyPairId", js.undefined)
+    inline def setKeyPairIdUndefined: Self = StObject.set(x, "KeyPairId", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -26,36 +26,31 @@ object responsiveResponsiveMod {
     @JSImport("semantic-ui-react/dist/commonjs/addons/Responsive/Responsive", "default.onlyComputer")
     @js.native
     def onlyComputer: ResponsiveWidthShorthand = js.native
-    @scala.inline
-    def onlyComputer_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyComputer")(x.asInstanceOf[js.Any])
+    inline def onlyComputer_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyComputer")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("semantic-ui-react/dist/commonjs/addons/Responsive/Responsive", "default.onlyLargeScreen")
     @js.native
     def onlyLargeScreen: ResponsiveWidthShorthand = js.native
-    @scala.inline
-    def onlyLargeScreen_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyLargeScreen")(x.asInstanceOf[js.Any])
+    inline def onlyLargeScreen_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyLargeScreen")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("semantic-ui-react/dist/commonjs/addons/Responsive/Responsive", "default.onlyMobile")
     @js.native
     def onlyMobile: ResponsiveWidthShorthand = js.native
-    @scala.inline
-    def onlyMobile_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyMobile")(x.asInstanceOf[js.Any])
+    inline def onlyMobile_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyMobile")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("semantic-ui-react/dist/commonjs/addons/Responsive/Responsive", "default.onlyTablet")
     @js.native
     def onlyTablet: ResponsiveWidthShorthand = js.native
-    @scala.inline
-    def onlyTablet_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyTablet")(x.asInstanceOf[js.Any])
+    inline def onlyTablet_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyTablet")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("semantic-ui-react/dist/commonjs/addons/Responsive/Responsive", "default.onlyWidescreen")
     @js.native
     def onlyWidescreen: ResponsiveWidthShorthand = js.native
-    @scala.inline
-    def onlyWidescreen_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyWidescreen")(x.asInstanceOf[js.Any])
+    inline def onlyWidescreen_=(x: ResponsiveWidthShorthand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlyWidescreen")(x.asInstanceOf[js.Any])
   }
   
   type Responsive = Component[ResponsiveProps, js.Object, js.Any]
@@ -68,17 +63,14 @@ object responsiveResponsiveMod {
   }
   object ResponsiveOnUpdateData {
     
-    @scala.inline
-    def apply(width: Double): ResponsiveOnUpdateData = {
+    inline def apply(width: Double): ResponsiveOnUpdateData = {
       val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponsiveOnUpdateData]
     }
     
-    @scala.inline
-    implicit class ResponsiveOnUpdateDataMutableBuilder[Self <: ResponsiveOnUpdateData] (val x: Self) extends AnyVal {
+    extension [Self <: ResponsiveOnUpdateData](x: Self) {
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,8 +80,7 @@ object responsiveResponsiveMod {
        with /* key */ StringDictionary[js.Any]
   object ResponsiveProps {
     
-    @scala.inline
-    def apply(): ResponsiveProps = {
+    inline def apply(): ResponsiveProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResponsiveProps]
     }
@@ -103,26 +94,20 @@ object responsiveResponsiveMod {
   }
   object ResponsiveWidthShorthand {
     
-    @scala.inline
-    def apply(): ResponsiveWidthShorthand = {
+    inline def apply(): ResponsiveWidthShorthand = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResponsiveWidthShorthand]
     }
     
-    @scala.inline
-    implicit class ResponsiveWidthShorthandMutableBuilder[Self <: ResponsiveWidthShorthand] (val x: Self) extends AnyVal {
+    extension [Self <: ResponsiveWidthShorthand](x: Self) {
       
-      @scala.inline
-      def setMaxWidth(value: Double | String): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double | String): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: Double | String): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double | String): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     }
   }
   
@@ -165,56 +150,40 @@ object responsiveResponsiveMod {
   }
   object StrictResponsiveProps {
     
-    @scala.inline
-    def apply(): StrictResponsiveProps = {
+    inline def apply(): StrictResponsiveProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictResponsiveProps]
     }
     
-    @scala.inline
-    implicit class StrictResponsivePropsMutableBuilder[Self <: StrictResponsiveProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictResponsiveProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setFireOnMount(value: Boolean): Self = StObject.set(x, "fireOnMount", value.asInstanceOf[js.Any])
+      inline def setFireOnMount(value: Boolean): Self = StObject.set(x, "fireOnMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFireOnMountUndefined: Self = StObject.set(x, "fireOnMount", js.undefined)
+      inline def setFireOnMountUndefined: Self = StObject.set(x, "fireOnMount", js.undefined)
       
-      @scala.inline
-      def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+      inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWidthUndefined: Self = StObject.set(x, "getWidth", js.undefined)
+      inline def setGetWidthUndefined: Self = StObject.set(x, "getWidth", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double | String): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double | String): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: Double | String): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double | String): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: (/* event */ SyntheticEvent[HTMLElement, Event], /* data */ ResponsiveOnUpdateData) => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction2(value))
+      inline def setOnUpdate(value: (/* event */ SyntheticEvent[HTMLElement, Event], /* data */ ResponsiveOnUpdateData) => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
     }
   }
 }

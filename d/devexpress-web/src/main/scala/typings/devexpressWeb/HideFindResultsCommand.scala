@@ -18,16 +18,13 @@ trait HideFindResultsCommand
 }
 object HideFindResultsCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): HideFindResultsCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): HideFindResultsCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[HideFindResultsCommand]
   }
   
-  @scala.inline
-  implicit class HideFindResultsCommandMutableBuilder[Self <: HideFindResultsCommand] (val x: Self) extends AnyVal {
+  extension [Self <: HideFindResultsCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

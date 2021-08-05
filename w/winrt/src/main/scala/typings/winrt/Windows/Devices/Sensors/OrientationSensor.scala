@@ -9,8 +9,7 @@ trait OrientationSensor
      with IOrientationSensor
 object OrientationSensor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCurrentReading: () => OrientationSensorReading,
     minimumReportInterval: Double,
     onreadingchanged: js.Any,

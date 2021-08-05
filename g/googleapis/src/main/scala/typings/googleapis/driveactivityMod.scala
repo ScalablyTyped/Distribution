@@ -40,8 +40,7 @@ object driveactivityMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Driveactivity
       ] = js.native
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object driveactivityMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object driveactivityMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def driveactivity(options: Options): Driveactivity = ^.asInstanceOf[js.Dynamic].applyDynamic("driveactivity")(options.asInstanceOf[js.Any]).asInstanceOf[Driveactivity]
+  inline def driveactivity(options: Options): Driveactivity = ^.asInstanceOf[js.Dynamic].applyDynamic("driveactivity")(options.asInstanceOf[js.Any]).asInstanceOf[Driveactivity]
   
-  @scala.inline
-  def driveactivity_v2(version: v2): Driveactivity = ^.asInstanceOf[js.Dynamic].applyDynamic("driveactivity")(version.asInstanceOf[js.Any]).asInstanceOf[Driveactivity]
+  inline def driveactivity_v2(version: v2): Driveactivity = ^.asInstanceOf[js.Dynamic].applyDynamic("driveactivity")(version.asInstanceOf[js.Any]).asInstanceOf[Driveactivity]
 }

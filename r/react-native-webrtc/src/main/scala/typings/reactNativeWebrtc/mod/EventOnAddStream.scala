@@ -10,16 +10,13 @@ trait EventOnAddStream extends StObject {
 }
 object EventOnAddStream {
   
-  @scala.inline
-  def apply(stream: MediaStream): EventOnAddStream = {
+  inline def apply(stream: MediaStream): EventOnAddStream = {
     val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventOnAddStream]
   }
   
-  @scala.inline
-  implicit class EventOnAddStreamMutableBuilder[Self <: EventOnAddStream] (val x: Self) extends AnyVal {
+  extension [Self <: EventOnAddStream](x: Self) {
     
-    @scala.inline
-    def setStream(value: MediaStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: MediaStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }
 }

@@ -33,8 +33,7 @@ object anon {
   }
   object CaseSensitive {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       caseSensitive: Boolean,
       identity: Boolean,
       index: Double,
@@ -49,53 +48,37 @@ object anon {
       __obj.asInstanceOf[CaseSensitive]
     }
     
-    @scala.inline
-    implicit class CaseSensitiveMutableBuilder[Self <: CaseSensitive] (val x: Self) extends AnyVal {
+    extension [Self <: CaseSensitive](x: Self) {
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+      inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setType(value: js.Function0[ISqlType] | ISqlType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Function0[ISqlType] | ISqlType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeFunction0(value: () => ISqlType): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+      inline def setTypeFunction0(value: () => ISqlType): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUdt(value: js.Any): Self = StObject.set(x, "udt", value.asInstanceOf[js.Any])
+      inline def setUdt(value: js.Any): Self = StObject.set(x, "udt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUdtUndefined: Self = StObject.set(x, "udt", js.undefined)
+      inline def setUdtUndefined: Self = StObject.set(x, "udt", js.undefined)
     }
   }
   
@@ -119,8 +102,7 @@ object anon {
   }
   object Io {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       io: Double,
       length: Double,
       name: String,
@@ -135,35 +117,25 @@ object anon {
       __obj.asInstanceOf[Io]
     }
     
-    @scala.inline
-    implicit class IoMutableBuilder[Self <: Io] (val x: Self) extends AnyVal {
+    extension [Self <: Io](x: Self) {
       
-      @scala.inline
-      def setIo(value: Double): Self = StObject.set(x, "io", value.asInstanceOf[js.Any])
+      inline def setIo(value: Double): Self = StObject.set(x, "io", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTvpType(value: js.Any): Self = StObject.set(x, "tvpType", value.asInstanceOf[js.Any])
+      inline def setTvpType(value: js.Any): Self = StObject.set(x, "tvpType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: js.Function0[ISqlType] | ISqlType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Function0[ISqlType] | ISqlType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeFunction0(value: () => ISqlType): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+      inline def setTypeFunction0(value: () => ISqlType): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -176,21 +148,17 @@ object anon {
   }
   object Js {
     
-    @scala.inline
-    def apply(js_ : js.Any, sql: js.Any): Js = {
+    inline def apply(js_ : js.Any, sql: js.Any): Js = {
       val __obj = js.Dynamic.literal(sql = sql.asInstanceOf[js.Any])
       __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
       __obj.asInstanceOf[Js]
     }
     
-    @scala.inline
-    implicit class JsMutableBuilder[Self <: Js] (val x: Self) extends AnyVal {
+    extension [Self <: Js](x: Self) {
       
-      @scala.inline
-      def setJs_(value: js.Any): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
+      inline def setJs_(value: js.Any): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSql(value: js.Any): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+      inline def setSql(value: js.Any): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     }
   }
 }

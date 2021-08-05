@@ -14,25 +14,19 @@ trait OAuthConnectUrlRequest extends StObject {
 }
 object OAuthConnectUrlRequest {
   
-  @scala.inline
-  def apply(redirectUri: String, scope: String): OAuthConnectUrlRequest = {
+  inline def apply(redirectUri: String, scope: String): OAuthConnectUrlRequest = {
     val __obj = js.Dynamic.literal(redirectUri = redirectUri.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuthConnectUrlRequest]
   }
   
-  @scala.inline
-  implicit class OAuthConnectUrlRequestMutableBuilder[Self <: OAuthConnectUrlRequest] (val x: Self) extends AnyVal {
+  extension [Self <: OAuthConnectUrlRequest](x: Self) {
     
-    @scala.inline
-    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+    inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

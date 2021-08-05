@@ -11,22 +11,17 @@ trait CustomListGroup extends StObject {
 }
 object CustomListGroup {
   
-  @scala.inline
-  def apply(): CustomListGroup = {
+  inline def apply(): CustomListGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomListGroup]
   }
   
-  @scala.inline
-  implicit class CustomListGroupMutableBuilder[Self <: CustomListGroup] (val x: Self) extends AnyVal {
+  extension [Self <: CustomListGroup](x: Self) {
     
-    @scala.inline
-    def setSettings(value: js.Array[CustomListTargetingSetting]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: js.Array[CustomListTargetingSetting]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    @scala.inline
-    def setSettingsVarargs(value: CustomListTargetingSetting*): Self = StObject.set(x, "settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: CustomListTargetingSetting*): Self = StObject.set(x, "settings", js.Array(value :_*))
   }
 }

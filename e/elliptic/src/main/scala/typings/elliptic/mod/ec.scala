@@ -147,37 +147,23 @@ object ec {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromPrivate(ec: ec, priv: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
-    @scala.inline
-    def fromPrivate(ec: ec, priv: String, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
-    @scala.inline
-    def fromPrivate(ec: ec, priv: KeyPair): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
-    @scala.inline
-    def fromPrivate(ec: ec, priv: KeyPair, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def fromPrivate(ec: ec, priv: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def fromPrivate(ec: ec, priv: String, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def fromPrivate(ec: ec, priv: KeyPair): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def fromPrivate(ec: ec, priv: KeyPair, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
     /* static member */
-    @scala.inline
-    def fromPrivate(ec: ec, priv: Buffer): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
-    @scala.inline
-    def fromPrivate(ec: ec, priv: Buffer, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def fromPrivate(ec: ec, priv: Buffer): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def fromPrivate(ec: ec, priv: Buffer, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
     
-    @scala.inline
-    def fromPublic(ec: ec, pub: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
-    @scala.inline
-    def fromPublic(ec: ec, pub: String, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
-    @scala.inline
-    def fromPublic(ec: ec, pub: X): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
-    @scala.inline
-    def fromPublic(ec: ec, pub: X, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
-    @scala.inline
-    def fromPublic(ec: ec, pub: KeyPair): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
-    @scala.inline
-    def fromPublic(ec: ec, pub: KeyPair, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def fromPublic(ec: ec, pub: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def fromPublic(ec: ec, pub: String, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def fromPublic(ec: ec, pub: X): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def fromPublic(ec: ec, pub: X, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def fromPublic(ec: ec, pub: KeyPair): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def fromPublic(ec: ec, pub: KeyPair, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
     /* static member */
-    @scala.inline
-    def fromPublic(ec: ec, pub: Buffer): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
-    @scala.inline
-    def fromPublic(ec: ec, pub: Buffer, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def fromPublic(ec: ec, pub: Buffer): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def fromPublic(ec: ec, pub: Buffer, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
   }
   
   @JSImport("elliptic", "ec.Signature")
@@ -210,35 +196,26 @@ object ec {
   }
   object GenKeyPairOptions {
     
-    @scala.inline
-    def apply(entropy: js.Any): GenKeyPairOptions = {
+    inline def apply(entropy: js.Any): GenKeyPairOptions = {
       val __obj = js.Dynamic.literal(entropy = entropy.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenKeyPairOptions]
     }
     
-    @scala.inline
-    implicit class GenKeyPairOptionsMutableBuilder[Self <: GenKeyPairOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GenKeyPairOptions](x: Self) {
       
-      @scala.inline
-      def setEntropy(value: js.Any): Self = StObject.set(x, "entropy", value.asInstanceOf[js.Any])
+      inline def setEntropy(value: js.Any): Self = StObject.set(x, "entropy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntropyEnc(value: String): Self = StObject.set(x, "entropyEnc", value.asInstanceOf[js.Any])
+      inline def setEntropyEnc(value: String): Self = StObject.set(x, "entropyEnc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntropyEncUndefined: Self = StObject.set(x, "entropyEnc", js.undefined)
+      inline def setEntropyEncUndefined: Self = StObject.set(x, "entropyEnc", js.undefined)
       
-      @scala.inline
-      def setPers(value: js.Any): Self = StObject.set(x, "pers", value.asInstanceOf[js.Any])
+      inline def setPers(value: js.Any): Self = StObject.set(x, "pers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersEnc(value: String): Self = StObject.set(x, "persEnc", value.asInstanceOf[js.Any])
+      inline def setPersEnc(value: String): Self = StObject.set(x, "persEnc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersEncUndefined: Self = StObject.set(x, "persEnc", js.undefined)
+      inline def setPersEncUndefined: Self = StObject.set(x, "persEnc", js.undefined)
       
-      @scala.inline
-      def setPersUndefined: Self = StObject.set(x, "pers", js.undefined)
+      inline def setPersUndefined: Self = StObject.set(x, "pers", js.undefined)
     }
   }
   
@@ -254,38 +231,28 @@ object ec {
   }
   object KeyPairOptions {
     
-    @scala.inline
-    def apply(): KeyPairOptions = {
+    inline def apply(): KeyPairOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyPairOptions]
     }
     
-    @scala.inline
-    implicit class KeyPairOptionsMutableBuilder[Self <: KeyPairOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KeyPairOptions](x: Self) {
       
-      @scala.inline
-      def setPriv(value: Buffer): Self = StObject.set(x, "priv", value.asInstanceOf[js.Any])
+      inline def setPriv(value: Buffer): Self = StObject.set(x, "priv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivEnc(value: String): Self = StObject.set(x, "privEnc", value.asInstanceOf[js.Any])
+      inline def setPrivEnc(value: String): Self = StObject.set(x, "privEnc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivEncUndefined: Self = StObject.set(x, "privEnc", js.undefined)
+      inline def setPrivEncUndefined: Self = StObject.set(x, "privEnc", js.undefined)
       
-      @scala.inline
-      def setPrivUndefined: Self = StObject.set(x, "priv", js.undefined)
+      inline def setPrivUndefined: Self = StObject.set(x, "priv", js.undefined)
       
-      @scala.inline
-      def setPub(value: Buffer): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
+      inline def setPub(value: Buffer): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubEnc(value: String): Self = StObject.set(x, "pubEnc", value.asInstanceOf[js.Any])
+      inline def setPubEnc(value: String): Self = StObject.set(x, "pubEnc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubEncUndefined: Self = StObject.set(x, "pubEnc", js.undefined)
+      inline def setPubEncUndefined: Self = StObject.set(x, "pubEnc", js.undefined)
       
-      @scala.inline
-      def setPubUndefined: Self = StObject.set(x, "pub", js.undefined)
+      inline def setPubUndefined: Self = StObject.set(x, "pub", js.undefined)
     }
   }
   
@@ -303,40 +270,30 @@ object ec {
   }
   object SignOptions {
     
-    @scala.inline
-    def apply(): SignOptions = {
+    inline def apply(): SignOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SignOptions]
     }
     
-    @scala.inline
-    implicit class SignOptionsMutableBuilder[Self <: SignOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SignOptions](x: Self) {
       
-      @scala.inline
-      def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
+      inline def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanonicalUndefined: Self = StObject.set(x, "canonical", js.undefined)
+      inline def setCanonicalUndefined: Self = StObject.set(x, "canonical", js.undefined)
       
-      @scala.inline
-      def setK(
+      inline def setK(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
       ): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKUndefined: Self = StObject.set(x, "k", js.undefined)
+      inline def setKUndefined: Self = StObject.set(x, "k", js.undefined)
       
-      @scala.inline
-      def setPers(value: js.Any): Self = StObject.set(x, "pers", value.asInstanceOf[js.Any])
+      inline def setPers(value: js.Any): Self = StObject.set(x, "pers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersEnc(value: String): Self = StObject.set(x, "persEnc", value.asInstanceOf[js.Any])
+      inline def setPersEnc(value: String): Self = StObject.set(x, "persEnc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersEncUndefined: Self = StObject.set(x, "persEnc", js.undefined)
+      inline def setPersEncUndefined: Self = StObject.set(x, "persEnc", js.undefined)
       
-      @scala.inline
-      def setPersUndefined: Self = StObject.set(x, "pers", js.undefined)
+      inline def setPersUndefined: Self = StObject.set(x, "pers", js.undefined)
     }
   }
   
@@ -352,32 +309,24 @@ object ec {
   }
   object SignatureOptions {
     
-    @scala.inline
-    def apply(r: BNInput, s: BNInput): SignatureOptions = {
+    inline def apply(r: BNInput, s: BNInput): SignatureOptions = {
       val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignatureOptions]
     }
     
-    @scala.inline
-    implicit class SignatureOptionsMutableBuilder[Self <: SignatureOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SignatureOptions](x: Self) {
       
-      @scala.inline
-      def setR(value: BNInput): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: BNInput): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRVarargs(value: Double*): Self = StObject.set(x, "r", js.Array(value :_*))
+      inline def setRVarargs(value: Double*): Self = StObject.set(x, "r", js.Array(value :_*))
       
-      @scala.inline
-      def setRecoveryParam(value: Double): Self = StObject.set(x, "recoveryParam", value.asInstanceOf[js.Any])
+      inline def setRecoveryParam(value: Double): Self = StObject.set(x, "recoveryParam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecoveryParamUndefined: Self = StObject.set(x, "recoveryParam", js.undefined)
+      inline def setRecoveryParamUndefined: Self = StObject.set(x, "recoveryParam", js.undefined)
       
-      @scala.inline
-      def setS(value: BNInput): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: BNInput): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSVarargs(value: Double*): Self = StObject.set(x, "s", js.Array(value :_*))
+      inline def setSVarargs(value: Double*): Self = StObject.set(x, "s", js.Array(value :_*))
     }
   }
 }

@@ -33,40 +33,29 @@ trait UpdateThingRequest extends StObject {
 }
 object UpdateThingRequest {
   
-  @scala.inline
-  def apply(thingName: ThingName): UpdateThingRequest = {
+  inline def apply(thingName: ThingName): UpdateThingRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateThingRequest]
   }
   
-  @scala.inline
-  implicit class UpdateThingRequestMutableBuilder[Self <: UpdateThingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateThingRequest](x: Self) {
     
-    @scala.inline
-    def setAttributePayload(value: AttributePayload): Self = StObject.set(x, "attributePayload", value.asInstanceOf[js.Any])
+    inline def setAttributePayload(value: AttributePayload): Self = StObject.set(x, "attributePayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributePayloadUndefined: Self = StObject.set(x, "attributePayload", js.undefined)
+    inline def setAttributePayloadUndefined: Self = StObject.set(x, "attributePayload", js.undefined)
     
-    @scala.inline
-    def setExpectedVersion(value: OptionalVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
+    inline def setExpectedVersion(value: OptionalVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedVersionUndefined: Self = StObject.set(x, "expectedVersion", js.undefined)
+    inline def setExpectedVersionUndefined: Self = StObject.set(x, "expectedVersion", js.undefined)
     
-    @scala.inline
-    def setRemoveThingType(value: RemoveThingType): Self = StObject.set(x, "removeThingType", value.asInstanceOf[js.Any])
+    inline def setRemoveThingType(value: RemoveThingType): Self = StObject.set(x, "removeThingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveThingTypeUndefined: Self = StObject.set(x, "removeThingType", js.undefined)
+    inline def setRemoveThingTypeUndefined: Self = StObject.set(x, "removeThingType", js.undefined)
     
-    @scala.inline
-    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
+    inline def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingTypeNameUndefined: Self = StObject.set(x, "thingTypeName", js.undefined)
+    inline def setThingTypeNameUndefined: Self = StObject.set(x, "thingTypeName", js.undefined)
   }
 }

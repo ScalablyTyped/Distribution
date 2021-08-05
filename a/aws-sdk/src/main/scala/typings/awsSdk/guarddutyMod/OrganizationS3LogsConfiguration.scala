@@ -13,16 +13,13 @@ trait OrganizationS3LogsConfiguration extends StObject {
 }
 object OrganizationS3LogsConfiguration {
   
-  @scala.inline
-  def apply(AutoEnable: Boolean): OrganizationS3LogsConfiguration = {
+  inline def apply(AutoEnable: Boolean): OrganizationS3LogsConfiguration = {
     val __obj = js.Dynamic.literal(AutoEnable = AutoEnable.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationS3LogsConfiguration]
   }
   
-  @scala.inline
-  implicit class OrganizationS3LogsConfigurationMutableBuilder[Self <: OrganizationS3LogsConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizationS3LogsConfiguration](x: Self) {
     
-    @scala.inline
-    def setAutoEnable(value: Boolean): Self = StObject.set(x, "AutoEnable", value.asInstanceOf[js.Any])
+    inline def setAutoEnable(value: Boolean): Self = StObject.set(x, "AutoEnable", value.asInstanceOf[js.Any])
   }
 }

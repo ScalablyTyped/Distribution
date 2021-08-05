@@ -26,67 +26,47 @@ trait ShortcutTags extends StObject {
 }
 object ShortcutTags {
   
-  @scala.inline
-  def apply(): ShortcutTags = {
+  inline def apply(): ShortcutTags = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShortcutTags]
   }
   
-  @scala.inline
-  implicit class ShortcutTagsMutableBuilder[Self <: ShortcutTags] (val x: Self) extends AnyVal {
+  extension [Self <: ShortcutTags](x: Self) {
     
-    @scala.inline
-    def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
+    inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
+    inline def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
     
-    @scala.inline
-    def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
+    inline def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
+    inline def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
+    inline def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenreUndefined: Self = StObject.set(x, "genre", js.undefined)
+    inline def setGenreUndefined: Self = StObject.set(x, "genre", js.undefined)
     
-    @scala.inline
-    def setLyrics(value: String): Self = StObject.set(x, "lyrics", value.asInstanceOf[js.Any])
+    inline def setLyrics(value: String): Self = StObject.set(x, "lyrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLyricsUndefined: Self = StObject.set(x, "lyrics", js.undefined)
+    inline def setLyricsUndefined: Self = StObject.set(x, "lyrics", js.undefined)
     
-    @scala.inline
-    def setPicture(value: PictureType): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
+    inline def setPicture(value: PictureType): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPictureUndefined: Self = StObject.set(x, "picture", js.undefined)
+    inline def setPictureUndefined: Self = StObject.set(x, "picture", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+    inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     
-    @scala.inline
-    def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+    inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
   }
 }

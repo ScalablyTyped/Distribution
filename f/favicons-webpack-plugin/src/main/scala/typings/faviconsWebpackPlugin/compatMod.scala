@@ -11,15 +11,11 @@ object compatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAssetPath(hasMainTemplate: MainTemplate, name: js.Any, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAssetPath")(hasMainTemplate.asInstanceOf[js.Any], name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getAssetPath(hasMainTemplate: MainTemplate, name: js.Any, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAssetPath")(hasMainTemplate.asInstanceOf[js.Any], name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getContext(loader: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(loader.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getContext(loader: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(loader.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def tap(tappable: js.Any, hook: js.Any, name: js.Any, plugin: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tap")(tappable.asInstanceOf[js.Any], hook.asInstanceOf[js.Any], name.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def tap(tappable: js.Any, hook: js.Any, name: js.Any, plugin: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tap")(tappable.asInstanceOf[js.Any], hook.asInstanceOf[js.Any], name.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def tapHtml(tappable: js.Any, name: js.Any, plugin: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tapHtml")(tappable.asInstanceOf[js.Any], name.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def tapHtml(tappable: js.Any, name: js.Any, plugin: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tapHtml")(tappable.asInstanceOf[js.Any], name.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

@@ -12,25 +12,19 @@ trait SizeWeight extends StObject {
 }
 object SizeWeight {
   
-  @scala.inline
-  def apply(): SizeWeight = {
+  inline def apply(): SizeWeight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SizeWeight]
   }
   
-  @scala.inline
-  implicit class SizeWeightMutableBuilder[Self <: SizeWeight] (val x: Self) extends AnyVal {
+  extension [Self <: SizeWeight](x: Self) {
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

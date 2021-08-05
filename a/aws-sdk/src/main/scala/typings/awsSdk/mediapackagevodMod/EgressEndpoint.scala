@@ -18,25 +18,19 @@ trait EgressEndpoint extends StObject {
 }
 object EgressEndpoint {
   
-  @scala.inline
-  def apply(): EgressEndpoint = {
+  inline def apply(): EgressEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EgressEndpoint]
   }
   
-  @scala.inline
-  implicit class EgressEndpointMutableBuilder[Self <: EgressEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EgressEndpoint](x: Self) {
     
-    @scala.inline
-    def setPackagingConfigurationId(value: string): Self = StObject.set(x, "PackagingConfigurationId", value.asInstanceOf[js.Any])
+    inline def setPackagingConfigurationId(value: string): Self = StObject.set(x, "PackagingConfigurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackagingConfigurationIdUndefined: Self = StObject.set(x, "PackagingConfigurationId", js.undefined)
+    inline def setPackagingConfigurationIdUndefined: Self = StObject.set(x, "PackagingConfigurationId", js.undefined)
     
-    @scala.inline
-    def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

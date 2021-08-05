@@ -28,37 +28,27 @@ trait DataFormatConversionConfiguration extends StObject {
 }
 object DataFormatConversionConfiguration {
   
-  @scala.inline
-  def apply(): DataFormatConversionConfiguration = {
+  inline def apply(): DataFormatConversionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataFormatConversionConfiguration]
   }
   
-  @scala.inline
-  implicit class DataFormatConversionConfigurationMutableBuilder[Self <: DataFormatConversionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DataFormatConversionConfiguration](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: BooleanObject): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: BooleanObject): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setInputFormatConfiguration(value: InputFormatConfiguration): Self = StObject.set(x, "InputFormatConfiguration", value.asInstanceOf[js.Any])
+    inline def setInputFormatConfiguration(value: InputFormatConfiguration): Self = StObject.set(x, "InputFormatConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputFormatConfigurationUndefined: Self = StObject.set(x, "InputFormatConfiguration", js.undefined)
+    inline def setInputFormatConfigurationUndefined: Self = StObject.set(x, "InputFormatConfiguration", js.undefined)
     
-    @scala.inline
-    def setOutputFormatConfiguration(value: OutputFormatConfiguration): Self = StObject.set(x, "OutputFormatConfiguration", value.asInstanceOf[js.Any])
+    inline def setOutputFormatConfiguration(value: OutputFormatConfiguration): Self = StObject.set(x, "OutputFormatConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputFormatConfigurationUndefined: Self = StObject.set(x, "OutputFormatConfiguration", js.undefined)
+    inline def setOutputFormatConfigurationUndefined: Self = StObject.set(x, "OutputFormatConfiguration", js.undefined)
     
-    @scala.inline
-    def setSchemaConfiguration(value: SchemaConfiguration): Self = StObject.set(x, "SchemaConfiguration", value.asInstanceOf[js.Any])
+    inline def setSchemaConfiguration(value: SchemaConfiguration): Self = StObject.set(x, "SchemaConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaConfigurationUndefined: Self = StObject.set(x, "SchemaConfiguration", js.undefined)
+    inline def setSchemaConfigurationUndefined: Self = StObject.set(x, "SchemaConfiguration", js.undefined)
   }
 }

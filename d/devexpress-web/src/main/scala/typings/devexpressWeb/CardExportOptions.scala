@@ -17,16 +17,13 @@ trait CardExportOptions extends StObject {
 }
 object CardExportOptions {
   
-  @scala.inline
-  def apply(AutoArrangeContent: Boolean): CardExportOptions = {
+  inline def apply(AutoArrangeContent: Boolean): CardExportOptions = {
     val __obj = js.Dynamic.literal(AutoArrangeContent = AutoArrangeContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardExportOptions]
   }
   
-  @scala.inline
-  implicit class CardExportOptionsMutableBuilder[Self <: CardExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CardExportOptions](x: Self) {
     
-    @scala.inline
-    def setAutoArrangeContent(value: Boolean): Self = StObject.set(x, "AutoArrangeContent", value.asInstanceOf[js.Any])
+    inline def setAutoArrangeContent(value: Boolean): Self = StObject.set(x, "AutoArrangeContent", value.asInstanceOf[js.Any])
   }
 }

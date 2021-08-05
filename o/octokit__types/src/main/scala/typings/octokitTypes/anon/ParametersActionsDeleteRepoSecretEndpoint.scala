@@ -17,8 +17,7 @@ trait ParametersActionsDeleteRepoSecretEndpoint extends StObject {
 }
 object ParametersActionsDeleteRepoSecretEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActionsDeleteRepoSecretEndpoint,
     request: ActionsDeleteRepoSecretRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersActionsDeleteRepoSecretEndpoint {
     __obj.asInstanceOf[ParametersActionsDeleteRepoSecretEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActionsDeleteRepoSecretEndpointMutableBuilder[Self <: ParametersActionsDeleteRepoSecretEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActionsDeleteRepoSecretEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActionsDeleteRepoSecretEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActionsDeleteRepoSecretEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActionsDeleteRepoSecretRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActionsDeleteRepoSecretRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

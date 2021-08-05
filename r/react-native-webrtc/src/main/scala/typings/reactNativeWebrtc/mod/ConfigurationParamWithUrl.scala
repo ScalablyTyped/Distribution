@@ -12,16 +12,13 @@ trait ConfigurationParamWithUrl
 }
 object ConfigurationParamWithUrl {
   
-  @scala.inline
-  def apply(url: String): ConfigurationParamWithUrl = {
+  inline def apply(url: String): ConfigurationParamWithUrl = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationParamWithUrl]
   }
   
-  @scala.inline
-  implicit class ConfigurationParamWithUrlMutableBuilder[Self <: ConfigurationParamWithUrl] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationParamWithUrl](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -20,40 +20,29 @@ trait NonSdkApiUsageViolationReport extends StObject {
 }
 object NonSdkApiUsageViolationReport {
   
-  @scala.inline
-  def apply(): NonSdkApiUsageViolationReport = {
+  inline def apply(): NonSdkApiUsageViolationReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NonSdkApiUsageViolationReport]
   }
   
-  @scala.inline
-  implicit class NonSdkApiUsageViolationReportMutableBuilder[Self <: NonSdkApiUsageViolationReport] (val x: Self) extends AnyVal {
+  extension [Self <: NonSdkApiUsageViolationReport](x: Self) {
     
-    @scala.inline
-    def setExampleApis(value: js.Array[NonSdkApi]): Self = StObject.set(x, "exampleApis", value.asInstanceOf[js.Any])
+    inline def setExampleApis(value: js.Array[NonSdkApi]): Self = StObject.set(x, "exampleApis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExampleApisUndefined: Self = StObject.set(x, "exampleApis", js.undefined)
+    inline def setExampleApisUndefined: Self = StObject.set(x, "exampleApis", js.undefined)
     
-    @scala.inline
-    def setExampleApisVarargs(value: NonSdkApi*): Self = StObject.set(x, "exampleApis", js.Array(value :_*))
+    inline def setExampleApisVarargs(value: NonSdkApi*): Self = StObject.set(x, "exampleApis", js.Array(value :_*))
     
-    @scala.inline
-    def setMinSdkVersion(value: Double): Self = StObject.set(x, "minSdkVersion", value.asInstanceOf[js.Any])
+    inline def setMinSdkVersion(value: Double): Self = StObject.set(x, "minSdkVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSdkVersionUndefined: Self = StObject.set(x, "minSdkVersion", js.undefined)
+    inline def setMinSdkVersionUndefined: Self = StObject.set(x, "minSdkVersion", js.undefined)
     
-    @scala.inline
-    def setTargetSdkVersion(value: Double): Self = StObject.set(x, "targetSdkVersion", value.asInstanceOf[js.Any])
+    inline def setTargetSdkVersion(value: Double): Self = StObject.set(x, "targetSdkVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSdkVersionUndefined: Self = StObject.set(x, "targetSdkVersion", js.undefined)
+    inline def setTargetSdkVersionUndefined: Self = StObject.set(x, "targetSdkVersion", js.undefined)
     
-    @scala.inline
-    def setUniqueApis(value: Double): Self = StObject.set(x, "uniqueApis", value.asInstanceOf[js.Any])
+    inline def setUniqueApis(value: Double): Self = StObject.set(x, "uniqueApis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueApisUndefined: Self = StObject.set(x, "uniqueApis", js.undefined)
+    inline def setUniqueApisUndefined: Self = StObject.set(x, "uniqueApis", js.undefined)
   }
 }

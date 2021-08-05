@@ -16,8 +16,7 @@ trait HighlightsRepositoryHighlightsTrayResponseRootObject extends StObject {
 }
 object HighlightsRepositoryHighlightsTrayResponseRootObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     show_empty_state: Boolean,
     status: String,
     tray: js.Array[HighlightsRepositoryHighlightsTrayResponseTrayItem],
@@ -27,22 +26,16 @@ object HighlightsRepositoryHighlightsTrayResponseRootObject {
     __obj.asInstanceOf[HighlightsRepositoryHighlightsTrayResponseRootObject]
   }
   
-  @scala.inline
-  implicit class HighlightsRepositoryHighlightsTrayResponseRootObjectMutableBuilder[Self <: HighlightsRepositoryHighlightsTrayResponseRootObject] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightsRepositoryHighlightsTrayResponseRootObject](x: Self) {
     
-    @scala.inline
-    def setShow_empty_state(value: Boolean): Self = StObject.set(x, "show_empty_state", value.asInstanceOf[js.Any])
+    inline def setShow_empty_state(value: Boolean): Self = StObject.set(x, "show_empty_state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTray(value: js.Array[HighlightsRepositoryHighlightsTrayResponseTrayItem]): Self = StObject.set(x, "tray", value.asInstanceOf[js.Any])
+    inline def setTray(value: js.Array[HighlightsRepositoryHighlightsTrayResponseTrayItem]): Self = StObject.set(x, "tray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrayVarargs(value: HighlightsRepositoryHighlightsTrayResponseTrayItem*): Self = StObject.set(x, "tray", js.Array(value :_*))
+    inline def setTrayVarargs(value: HighlightsRepositoryHighlightsTrayResponseTrayItem*): Self = StObject.set(x, "tray", js.Array(value :_*))
     
-    @scala.inline
-    def setTv_channel(value: HighlightsRepositoryHighlightsTrayResponseTvChannel): Self = StObject.set(x, "tv_channel", value.asInstanceOf[js.Any])
+    inline def setTv_channel(value: HighlightsRepositoryHighlightsTrayResponseTvChannel): Self = StObject.set(x, "tv_channel", value.asInstanceOf[js.Any])
   }
 }

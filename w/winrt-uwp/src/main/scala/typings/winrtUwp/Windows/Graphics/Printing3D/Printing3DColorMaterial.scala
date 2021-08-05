@@ -16,19 +16,15 @@ trait Printing3DColorMaterial extends StObject {
 }
 object Printing3DColorMaterial {
   
-  @scala.inline
-  def apply(color: Color, value: Double): Printing3DColorMaterial = {
+  inline def apply(color: Color, value: Double): Printing3DColorMaterial = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Printing3DColorMaterial]
   }
   
-  @scala.inline
-  implicit class Printing3DColorMaterialMutableBuilder[Self <: Printing3DColorMaterial] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DColorMaterial](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -19,8 +19,7 @@ trait `1076` extends StObject {
 }
 object `1076` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[UsersDeleteGpgKeyForAuthenticatedEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[js.Any]
   ): `1076` = {
@@ -28,15 +27,12 @@ object `1076` {
     __obj.asInstanceOf[`1076`]
   }
   
-  @scala.inline
-  implicit class `1076MutableBuilder`[Self <: `1076`] (val x: Self) extends AnyVal {
+  extension [Self <: `1076`](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: RequestParameters & (Omit[UsersDeleteGpgKeyForAuthenticatedEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -18,6 +18,6 @@ object textLineDatasetMod {
       */
     def this(input: DataSource) = this()
     
-    val input: DataSource = js.native
+    /* protected */ val input: DataSource = js.native
   }
 }

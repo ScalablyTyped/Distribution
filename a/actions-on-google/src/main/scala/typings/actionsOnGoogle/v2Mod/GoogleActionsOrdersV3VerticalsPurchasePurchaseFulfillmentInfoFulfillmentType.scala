@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfoFulfillmentType extends StObject
 object GoogleActionsOrdersV3VerticalsPurchasePurchaseFulfillmentInfoFulfillmentType {
   
-  @scala.inline
-  def DELIVERY: typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY = "DELIVERY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY]
+  inline def DELIVERY: typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY = "DELIVERY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY]
   
-  @scala.inline
-  def PICKUP: typings.actionsOnGoogle.actionsOnGoogleStrings.PICKUP = "PICKUP".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PICKUP]
+  inline def PICKUP: typings.actionsOnGoogle.actionsOnGoogleStrings.PICKUP = "PICKUP".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PICKUP]
   
-  @scala.inline
-  def TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED = "TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED]
+  inline def TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED = "TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED]
 }

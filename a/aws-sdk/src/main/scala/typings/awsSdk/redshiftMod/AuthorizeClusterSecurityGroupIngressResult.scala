@@ -10,19 +10,15 @@ trait AuthorizeClusterSecurityGroupIngressResult extends StObject {
 }
 object AuthorizeClusterSecurityGroupIngressResult {
   
-  @scala.inline
-  def apply(): AuthorizeClusterSecurityGroupIngressResult = {
+  inline def apply(): AuthorizeClusterSecurityGroupIngressResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthorizeClusterSecurityGroupIngressResult]
   }
   
-  @scala.inline
-  implicit class AuthorizeClusterSecurityGroupIngressResultMutableBuilder[Self <: AuthorizeClusterSecurityGroupIngressResult] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizeClusterSecurityGroupIngressResult](x: Self) {
     
-    @scala.inline
-    def setClusterSecurityGroup(value: ClusterSecurityGroup): Self = StObject.set(x, "ClusterSecurityGroup", value.asInstanceOf[js.Any])
+    inline def setClusterSecurityGroup(value: ClusterSecurityGroup): Self = StObject.set(x, "ClusterSecurityGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterSecurityGroupUndefined: Self = StObject.set(x, "ClusterSecurityGroup", js.undefined)
+    inline def setClusterSecurityGroupUndefined: Self = StObject.set(x, "ClusterSecurityGroup", js.undefined)
   }
 }

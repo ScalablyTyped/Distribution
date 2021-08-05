@@ -17,11 +17,11 @@ object writerMod {
     def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[js.Any]) = this()
     def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[js.Any], _wrapper: Wrapper) = this()
     
-    var _measurer: js.Any = js.native
+    /* private */ var _measurer: js.Any = js.native
     
-    var _penFactory: js.Any = js.native
+    /* private */ var _penFactory: js.Any = js.native
     
-    var _wrapper: js.Any = js.native
+    /* private */ var _wrapper: js.Any = js.native
     
     def measurer(newMeasurer: AbstractMeasurer): Writer = js.native
     
@@ -57,20 +57,17 @@ object writerMod {
     @JSImport("typesettable/build/src/writers/writer", "Writer.SupportedRotation")
     @js.native
     def SupportedRotation: js.Any = js.native
-    @scala.inline
-    def SupportedRotation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SupportedRotation")(x.asInstanceOf[js.Any])
+    inline def SupportedRotation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SupportedRotation")(x.asInstanceOf[js.Any])
     
     @JSImport("typesettable/build/src/writers/writer", "Writer.XOffsetFactor")
     @js.native
     def XOffsetFactor: KinIXAlignnumber = js.native
-    @scala.inline
-    def XOffsetFactor_=(x: KinIXAlignnumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XOffsetFactor")(x.asInstanceOf[js.Any])
+    inline def XOffsetFactor_=(x: KinIXAlignnumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XOffsetFactor")(x.asInstanceOf[js.Any])
     
     @JSImport("typesettable/build/src/writers/writer", "Writer.YOffsetFactor")
     @js.native
     def YOffsetFactor: KinIYAlignnumber = js.native
-    @scala.inline
-    def YOffsetFactor_=(x: KinIYAlignnumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YOffsetFactor")(x.asInstanceOf[js.Any])
+    inline def YOffsetFactor_=(x: KinIYAlignnumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YOffsetFactor")(x.asInstanceOf[js.Any])
   }
   
   trait IPen extends StObject {
@@ -90,23 +87,18 @@ object writerMod {
   }
   object IPen {
     
-    @scala.inline
-    def apply(write: (String, Double, IXAlign, Double, Double) => Unit): IPen = {
+    inline def apply(write: (String, Double, IXAlign, Double, Double) => Unit): IPen = {
       val __obj = js.Dynamic.literal(write = js.Any.fromFunction5(write))
       __obj.asInstanceOf[IPen]
     }
     
-    @scala.inline
-    implicit class IPenMutableBuilder[Self <: IPen] (val x: Self) extends AnyVal {
+    extension [Self <: IPen](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setWrite(value: (String, Double, IXAlign, Double, Double) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction5(value))
+      inline def setWrite(value: (String, Double, IXAlign, Double, Double) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction5(value))
     }
   }
   
@@ -126,20 +118,16 @@ object writerMod {
   }
   object ITransform {
     
-    @scala.inline
-    def apply(rotate: Double, translate: js.Tuple2[Double, Double]): ITransform = {
+    inline def apply(rotate: Double, translate: js.Tuple2[Double, Double]): ITransform = {
       val __obj = js.Dynamic.literal(rotate = rotate.asInstanceOf[js.Any], translate = translate.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITransform]
     }
     
-    @scala.inline
-    implicit class ITransformMutableBuilder[Self <: ITransform] (val x: Self) extends AnyVal {
+    extension [Self <: ITransform](x: Self) {
       
-      @scala.inline
-      def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslate(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,38 +168,28 @@ object writerMod {
   }
   object IWriteOptions {
     
-    @scala.inline
-    def apply(): IWriteOptions = {
+    inline def apply(): IWriteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IWriteOptions]
     }
     
-    @scala.inline
-    implicit class IWriteOptionsMutableBuilder[Self <: IWriteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IWriteOptions](x: Self) {
       
-      @scala.inline
-      def setTextRotation(value: Double): Self = StObject.set(x, "textRotation", value.asInstanceOf[js.Any])
+      inline def setTextRotation(value: Double): Self = StObject.set(x, "textRotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextRotationUndefined: Self = StObject.set(x, "textRotation", js.undefined)
+      inline def setTextRotationUndefined: Self = StObject.set(x, "textRotation", js.undefined)
       
-      @scala.inline
-      def setTextShear(value: Double): Self = StObject.set(x, "textShear", value.asInstanceOf[js.Any])
+      inline def setTextShear(value: Double): Self = StObject.set(x, "textShear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextShearUndefined: Self = StObject.set(x, "textShear", js.undefined)
+      inline def setTextShearUndefined: Self = StObject.set(x, "textShear", js.undefined)
       
-      @scala.inline
-      def setXAlign(value: IXAlign): Self = StObject.set(x, "xAlign", value.asInstanceOf[js.Any])
+      inline def setXAlign(value: IXAlign): Self = StObject.set(x, "xAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXAlignUndefined: Self = StObject.set(x, "xAlign", js.undefined)
+      inline def setXAlignUndefined: Self = StObject.set(x, "xAlign", js.undefined)
       
-      @scala.inline
-      def setYAlign(value: IYAlign): Self = StObject.set(x, "yAlign", value.asInstanceOf[js.Any])
+      inline def setYAlign(value: IYAlign): Self = StObject.set(x, "yAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYAlignUndefined: Self = StObject.set(x, "yAlign", js.undefined)
+      inline def setYAlignUndefined: Self = StObject.set(x, "yAlign", js.undefined)
     }
   }
   
@@ -223,14 +201,11 @@ object writerMod {
   trait IXAlign extends StObject
   object IXAlign {
     
-    @scala.inline
-    def center: typings.typesettable.typesettableStrings.center = "center".asInstanceOf[typings.typesettable.typesettableStrings.center]
+    inline def center: typings.typesettable.typesettableStrings.center = "center".asInstanceOf[typings.typesettable.typesettableStrings.center]
     
-    @scala.inline
-    def left: typings.typesettable.typesettableStrings.left = "left".asInstanceOf[typings.typesettable.typesettableStrings.left]
+    inline def left: typings.typesettable.typesettableStrings.left = "left".asInstanceOf[typings.typesettable.typesettableStrings.left]
     
-    @scala.inline
-    def right: typings.typesettable.typesettableStrings.right = "right".asInstanceOf[typings.typesettable.typesettableStrings.right]
+    inline def right: typings.typesettable.typesettableStrings.right = "right".asInstanceOf[typings.typesettable.typesettableStrings.right]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -241,13 +216,10 @@ object writerMod {
   trait IYAlign extends StObject
   object IYAlign {
     
-    @scala.inline
-    def bottom: typings.typesettable.typesettableStrings.bottom = "bottom".asInstanceOf[typings.typesettable.typesettableStrings.bottom]
+    inline def bottom: typings.typesettable.typesettableStrings.bottom = "bottom".asInstanceOf[typings.typesettable.typesettableStrings.bottom]
     
-    @scala.inline
-    def center: typings.typesettable.typesettableStrings.center = "center".asInstanceOf[typings.typesettable.typesettableStrings.center]
+    inline def center: typings.typesettable.typesettableStrings.center = "center".asInstanceOf[typings.typesettable.typesettableStrings.center]
     
-    @scala.inline
-    def top: typings.typesettable.typesettableStrings.top = "top".asInstanceOf[typings.typesettable.typesettableStrings.top]
+    inline def top: typings.typesettable.typesettableStrings.top = "top".asInstanceOf[typings.typesettable.typesettableStrings.top]
   }
 }

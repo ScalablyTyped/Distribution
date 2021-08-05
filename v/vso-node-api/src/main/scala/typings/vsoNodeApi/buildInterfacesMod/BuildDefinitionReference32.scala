@@ -42,8 +42,7 @@ trait BuildDefinitionReference32
 }
 object BuildDefinitionReference32 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     authoredBy: IdentityRef,
     createdDate: Date,
@@ -67,34 +66,24 @@ object BuildDefinitionReference32 {
     __obj.asInstanceOf[BuildDefinitionReference32]
   }
   
-  @scala.inline
-  implicit class BuildDefinitionReference32MutableBuilder[Self <: BuildDefinitionReference32] (val x: Self) extends AnyVal {
+  extension [Self <: BuildDefinitionReference32](x: Self) {
     
-    @scala.inline
-    def setAuthoredBy(value: IdentityRef): Self = StObject.set(x, "authoredBy", value.asInstanceOf[js.Any])
+    inline def setAuthoredBy(value: IdentityRef): Self = StObject.set(x, "authoredBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraftOf(value: DefinitionReference): Self = StObject.set(x, "draftOf", value.asInstanceOf[js.Any])
+    inline def setDraftOf(value: DefinitionReference): Self = StObject.set(x, "draftOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrafts(value: js.Array[DefinitionReference]): Self = StObject.set(x, "drafts", value.asInstanceOf[js.Any])
+    inline def setDrafts(value: js.Array[DefinitionReference]): Self = StObject.set(x, "drafts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraftsVarargs(value: DefinitionReference*): Self = StObject.set(x, "drafts", js.Array(value :_*))
+    inline def setDraftsVarargs(value: DefinitionReference*): Self = StObject.set(x, "drafts", js.Array(value :_*))
     
-    @scala.inline
-    def setMetrics(value: js.Array[BuildMetric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[BuildMetric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsVarargs(value: BuildMetric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: BuildMetric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setQuality(value: DefinitionQuality): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: DefinitionQuality): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueue(value: AgentPoolQueue): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: AgentPoolQueue): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

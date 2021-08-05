@@ -89,128 +89,88 @@ object mod extends Shortcut {
   }
   object RangeSliderProps {
     
-    @scala.inline
-    def apply(): RangeSliderProps = {
+    inline def apply(): RangeSliderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RangeSliderProps]
     }
     
-    @scala.inline
-    implicit class RangeSliderPropsMutableBuilder[Self <: RangeSliderProps] (val x: Self) extends AnyVal {
+    extension [Self <: RangeSliderProps](x: Self) {
       
-      @scala.inline
-      def setBsPrefix(value: String): Self = StObject.set(x, "bsPrefix", value.asInstanceOf[js.Any])
+      inline def setBsPrefix(value: String): Self = StObject.set(x, "bsPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsPrefixUndefined: Self = StObject.set(x, "bsPrefix", js.undefined)
+      inline def setBsPrefixUndefined: Self = StObject.set(x, "bsPrefix", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setInputProps(value: DetailedHTMLProps[HTMLAttributes[HTMLInputElement], HTMLInputElement]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      inline def setInputProps(value: DetailedHTMLProps[HTMLAttributes[HTMLInputElement], HTMLInputElement]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
+      inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setOnAfterChange(value: (/* event */ MouseEvent[HTMLInputElement, NativeMouseEvent], /* value */ Double) => Unit): Self = StObject.set(x, "onAfterChange", js.Any.fromFunction2(value))
+      inline def setOnAfterChange(value: (/* event */ MouseEvent[HTMLInputElement, NativeMouseEvent], /* value */ Double) => Unit): Self = StObject.set(x, "onAfterChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnAfterChangeUndefined: Self = StObject.set(x, "onAfterChange", js.undefined)
+      inline def setOnAfterChangeUndefined: Self = StObject.set(x, "onAfterChange", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* event */ ChangeEvent[HTMLInputElement], /* value */ Double) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* event */ ChangeEvent[HTMLInputElement], /* value */ Double) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setRef(value: (js.Function1[/* instance */ HTMLInputElement | Null, Unit]) | RefObject[HTMLInputElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: (js.Function1[/* instance */ HTMLInputElement | Null, Unit]) | RefObject[HTMLInputElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setSize(value: sm | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: sm | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: auto | on | off): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: auto | on | off): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipLabel(value: /* value */ Double => ReactNode): Self = StObject.set(x, "tooltipLabel", js.Any.fromFunction1(value))
+      inline def setTooltipLabel(value: /* value */ Double => ReactNode): Self = StObject.set(x, "tooltipLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTooltipLabelUndefined: Self = StObject.set(x, "tooltipLabel", js.undefined)
+      inline def setTooltipLabelUndefined: Self = StObject.set(x, "tooltipLabel", js.undefined)
       
-      @scala.inline
-      def setTooltipPlacement(value: top | bottom): Self = StObject.set(x, "tooltipPlacement", value.asInstanceOf[js.Any])
+      inline def setTooltipPlacement(value: top | bottom): Self = StObject.set(x, "tooltipPlacement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipPlacementUndefined: Self = StObject.set(x, "tooltipPlacement", js.undefined)
+      inline def setTooltipPlacementUndefined: Self = StObject.set(x, "tooltipPlacement", js.undefined)
       
-      @scala.inline
-      def setTooltipProps(value: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]): Self = StObject.set(x, "tooltipProps", value.asInstanceOf[js.Any])
+      inline def setTooltipProps(value: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]): Self = StObject.set(x, "tooltipProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipPropsUndefined: Self = StObject.set(x, "tooltipProps", js.undefined)
+      inline def setTooltipPropsUndefined: Self = StObject.set(x, "tooltipProps", js.undefined)
       
-      @scala.inline
-      def setTooltipStyle(value: CSSProperties): Self = StObject.set(x, "tooltipStyle", value.asInstanceOf[js.Any])
+      inline def setTooltipStyle(value: CSSProperties): Self = StObject.set(x, "tooltipStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipStyleUndefined: Self = StObject.set(x, "tooltipStyle", js.undefined)
+      inline def setTooltipStyleUndefined: Self = StObject.set(x, "tooltipStyle", js.undefined)
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setVariant(value: primary | secondary | success | danger | warning | info | dark | light): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: primary | secondary | success | danger | warning | info | dark | light): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+      inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     }
   }
   

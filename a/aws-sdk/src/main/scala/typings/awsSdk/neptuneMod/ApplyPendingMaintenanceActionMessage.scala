@@ -23,22 +23,17 @@ trait ApplyPendingMaintenanceActionMessage extends StObject {
 }
 object ApplyPendingMaintenanceActionMessage {
   
-  @scala.inline
-  def apply(ApplyAction: String, OptInType: String, ResourceIdentifier: String): ApplyPendingMaintenanceActionMessage = {
+  inline def apply(ApplyAction: String, OptInType: String, ResourceIdentifier: String): ApplyPendingMaintenanceActionMessage = {
     val __obj = js.Dynamic.literal(ApplyAction = ApplyAction.asInstanceOf[js.Any], OptInType = OptInType.asInstanceOf[js.Any], ResourceIdentifier = ResourceIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplyPendingMaintenanceActionMessage]
   }
   
-  @scala.inline
-  implicit class ApplyPendingMaintenanceActionMessageMutableBuilder[Self <: ApplyPendingMaintenanceActionMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ApplyPendingMaintenanceActionMessage](x: Self) {
     
-    @scala.inline
-    def setApplyAction(value: String): Self = StObject.set(x, "ApplyAction", value.asInstanceOf[js.Any])
+    inline def setApplyAction(value: String): Self = StObject.set(x, "ApplyAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptInType(value: String): Self = StObject.set(x, "OptInType", value.asInstanceOf[js.Any])
+    inline def setOptInType(value: String): Self = StObject.set(x, "OptInType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdentifier(value: String): Self = StObject.set(x, "ResourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setResourceIdentifier(value: String): Self = StObject.set(x, "ResourceIdentifier", value.asInstanceOf[js.Any])
   }
 }

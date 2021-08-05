@@ -11,22 +11,17 @@ trait LintPolicyResponse extends StObject {
 }
 object LintPolicyResponse {
   
-  @scala.inline
-  def apply(): LintPolicyResponse = {
+  inline def apply(): LintPolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LintPolicyResponse]
   }
   
-  @scala.inline
-  implicit class LintPolicyResponseMutableBuilder[Self <: LintPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LintPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setLintResults(value: js.Array[LintResult]): Self = StObject.set(x, "lintResults", value.asInstanceOf[js.Any])
+    inline def setLintResults(value: js.Array[LintResult]): Self = StObject.set(x, "lintResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLintResultsUndefined: Self = StObject.set(x, "lintResults", js.undefined)
+    inline def setLintResultsUndefined: Self = StObject.set(x, "lintResults", js.undefined)
     
-    @scala.inline
-    def setLintResultsVarargs(value: LintResult*): Self = StObject.set(x, "lintResults", js.Array(value :_*))
+    inline def setLintResultsVarargs(value: LintResult*): Self = StObject.set(x, "lintResults", js.Array(value :_*))
   }
 }

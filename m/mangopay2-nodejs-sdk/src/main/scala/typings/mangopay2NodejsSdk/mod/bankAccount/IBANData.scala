@@ -24,8 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object IBANData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Active: Boolean,
     CreationDate: Double,
     IBAN: String,
@@ -40,16 +39,12 @@ object IBANData {
     __obj.asInstanceOf[IBANData]
   }
   
-  @scala.inline
-  implicit class IBANDataMutableBuilder[Self <: IBANData] (val x: Self) extends AnyVal {
+  extension [Self <: IBANData](x: Self) {
     
-    @scala.inline
-    def setBIC(value: String): Self = StObject.set(x, "BIC", value.asInstanceOf[js.Any])
+    inline def setBIC(value: String): Self = StObject.set(x, "BIC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBICUndefined: Self = StObject.set(x, "BIC", js.undefined)
+    inline def setBICUndefined: Self = StObject.set(x, "BIC", js.undefined)
     
-    @scala.inline
-    def setIBAN(value: String): Self = StObject.set(x, "IBAN", value.asInstanceOf[js.Any])
+    inline def setIBAN(value: String): Self = StObject.set(x, "IBAN", value.asInstanceOf[js.Any])
   }
 }

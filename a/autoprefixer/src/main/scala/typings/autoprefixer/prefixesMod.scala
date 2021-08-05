@@ -30,20 +30,16 @@ object prefixesMod {
   }
   object Prefixes {
     
-    @scala.inline
-    def apply(remove: StringDictionary[js.Any], unprefixed: String => String): Prefixes = {
+    inline def apply(remove: StringDictionary[js.Any], unprefixed: String => String): Prefixes = {
       val __obj = js.Dynamic.literal(remove = remove.asInstanceOf[js.Any], unprefixed = js.Any.fromFunction1(unprefixed))
       __obj.asInstanceOf[Prefixes]
     }
     
-    @scala.inline
-    implicit class PrefixesMutableBuilder[Self <: Prefixes] (val x: Self) extends AnyVal {
+    extension [Self <: Prefixes](x: Self) {
       
-      @scala.inline
-      def setRemove(value: StringDictionary[js.Any]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: StringDictionary[js.Any]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnprefixed(value: String => String): Self = StObject.set(x, "unprefixed", js.Any.fromFunction1(value))
+      inline def setUnprefixed(value: String => String): Self = StObject.set(x, "unprefixed", js.Any.fromFunction1(value))
     }
   }
   
@@ -52,8 +48,7 @@ object prefixesMod {
        with Prefixes
   object PrefixesImpl {
     
-    @scala.inline
-    def apply(remove: StringDictionary[js.Any], unprefixed: String => String): PrefixesImpl = {
+    inline def apply(remove: StringDictionary[js.Any], unprefixed: String => String): PrefixesImpl = {
       val __obj = js.Dynamic.literal(remove = remove.asInstanceOf[js.Any], unprefixed = js.Any.fromFunction1(unprefixed))
       __obj.asInstanceOf[PrefixesImpl]
     }

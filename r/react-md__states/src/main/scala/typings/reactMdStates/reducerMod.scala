@@ -34,18 +34,13 @@ object reducerMod {
   @js.native
   val REMOVE: /* "REMOVE" */ String = js.native
   
-  @scala.inline
-  def createRippleAction[E /* <: HTMLElement */](event: RippleEvent[E], disableSpacebarClick: Boolean): CreateAction[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRippleAction")(event.asInstanceOf[js.Any], disableSpacebarClick.asInstanceOf[js.Any])).asInstanceOf[CreateAction[E]]
+  inline def createRippleAction[E /* <: HTMLElement */](event: RippleEvent[E], disableSpacebarClick: Boolean): CreateAction[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRippleAction")(event.asInstanceOf[js.Any], disableSpacebarClick.asInstanceOf[js.Any])).asInstanceOf[CreateAction[E]]
   
-  @scala.inline
-  def reducer[E /* <: HTMLElement */](state: Unit, action: RippleStateAction[E]): RipplesState = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[RipplesState]
-  @scala.inline
-  def reducer[E /* <: HTMLElement */](state: RipplesState, action: RippleStateAction[E]): RipplesState = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[RipplesState]
+  inline def reducer[E /* <: HTMLElement */](state: Unit, action: RippleStateAction[E]): RipplesState = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[RipplesState]
+  inline def reducer[E /* <: HTMLElement */](state: RipplesState, action: RippleStateAction[E]): RipplesState = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[RipplesState]
   
-  @scala.inline
-  def useRippleTransition[E /* <: HTMLElement */](): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRippleTransition")().asInstanceOf[ReturnValue[E]]
-  @scala.inline
-  def useRippleTransition[E /* <: HTMLElement */](disableSpacebarClick: Boolean): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRippleTransition")(disableSpacebarClick.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
+  inline def useRippleTransition[E /* <: HTMLElement */](): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRippleTransition")().asInstanceOf[ReturnValue[E]]
+  inline def useRippleTransition[E /* <: HTMLElement */](disableSpacebarClick: Boolean): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRippleTransition")(disableSpacebarClick.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
   
   trait CancelAction
     extends StObject
@@ -57,21 +52,17 @@ object reducerMod {
   }
   object CancelAction {
     
-    @scala.inline
-    def apply(ease: Boolean, `type`: /* "CANCEL" */ String): CancelAction = {
+    inline def apply(ease: Boolean, `type`: /* "CANCEL" */ String): CancelAction = {
       val __obj = js.Dynamic.literal(ease = ease.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CancelAction]
     }
     
-    @scala.inline
-    implicit class CancelActionMutableBuilder[Self <: CancelAction] (val x: Self) extends AnyVal {
+    extension [Self <: CancelAction](x: Self) {
       
-      @scala.inline
-      def setEase(value: Boolean): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
+      inline def setEase(value: Boolean): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: /* "CANCEL" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: /* "CANCEL" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,24 +78,19 @@ object reducerMod {
   }
   object CreateAction {
     
-    @scala.inline
-    def apply[E /* <: HTMLElement */](disableSpacebarClick: Boolean, event: RippleEvent[E], `type`: /* "CREATE" */ String): CreateAction[E] = {
+    inline def apply[E /* <: HTMLElement */](disableSpacebarClick: Boolean, event: RippleEvent[E], `type`: /* "CREATE" */ String): CreateAction[E] = {
       val __obj = js.Dynamic.literal(disableSpacebarClick = disableSpacebarClick.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateAction[E]]
     }
     
-    @scala.inline
-    implicit class CreateActionMutableBuilder[Self <: CreateAction[?], E /* <: HTMLElement */] (val x: Self & CreateAction[E]) extends AnyVal {
+    extension [Self <: CreateAction[?], E /* <: HTMLElement */](x: Self & CreateAction[E]) {
       
-      @scala.inline
-      def setDisableSpacebarClick(value: Boolean): Self = StObject.set(x, "disableSpacebarClick", value.asInstanceOf[js.Any])
+      inline def setDisableSpacebarClick(value: Boolean): Self = StObject.set(x, "disableSpacebarClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: RippleEvent[E]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: RippleEvent[E]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: /* "CREATE" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: /* "CREATE" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,21 +104,17 @@ object reducerMod {
   }
   object EnteredAction {
     
-    @scala.inline
-    def apply(ripple: RippleState, `type`: /* "ENTERED" */ String): EnteredAction = {
+    inline def apply(ripple: RippleState, `type`: /* "ENTERED" */ String): EnteredAction = {
       val __obj = js.Dynamic.literal(ripple = ripple.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnteredAction]
     }
     
-    @scala.inline
-    implicit class EnteredActionMutableBuilder[Self <: EnteredAction] (val x: Self) extends AnyVal {
+    extension [Self <: EnteredAction](x: Self) {
       
-      @scala.inline
-      def setRipple(value: RippleState): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
+      inline def setRipple(value: RippleState): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: /* "ENTERED" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: /* "ENTERED" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,21 +128,17 @@ object reducerMod {
   }
   object ReleaseAction {
     
-    @scala.inline
-    def apply[E /* <: HTMLElement */](event: RippleEvent[E], `type`: /* "RELEASE" */ String): ReleaseAction[E] = {
+    inline def apply[E /* <: HTMLElement */](event: RippleEvent[E], `type`: /* "RELEASE" */ String): ReleaseAction[E] = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReleaseAction[E]]
     }
     
-    @scala.inline
-    implicit class ReleaseActionMutableBuilder[Self <: ReleaseAction[?], E /* <: HTMLElement */] (val x: Self & ReleaseAction[E]) extends AnyVal {
+    extension [Self <: ReleaseAction[?], E /* <: HTMLElement */](x: Self & ReleaseAction[E]) {
       
-      @scala.inline
-      def setEvent(value: RippleEvent[E]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: RippleEvent[E]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: /* "RELEASE" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: /* "RELEASE" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,21 +152,17 @@ object reducerMod {
   }
   object RemoveAction {
     
-    @scala.inline
-    def apply(ripple: RippleState, `type`: /* "REMOVE" */ String): RemoveAction = {
+    inline def apply(ripple: RippleState, `type`: /* "REMOVE" */ String): RemoveAction = {
       val __obj = js.Dynamic.literal(ripple = ripple.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoveAction]
     }
     
-    @scala.inline
-    implicit class RemoveActionMutableBuilder[Self <: RemoveAction] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveAction](x: Self) {
       
-      @scala.inline
-      def setRipple(value: RippleState): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
+      inline def setRipple(value: RippleState): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: /* "REMOVE" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: /* "REMOVE" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -219,36 +193,31 @@ object reducerMod {
   trait RippleStateAction[E /* <: HTMLElement */] extends StObject
   object RippleStateAction {
     
-    @scala.inline
-    def CancelAction(ease: Boolean, `type`: /* "CANCEL" */ String): typings.reactMdStates.reducerMod.CancelAction = {
+    inline def CancelAction(ease: Boolean, `type`: /* "CANCEL" */ String): typings.reactMdStates.reducerMod.CancelAction = {
       val __obj = js.Dynamic.literal(ease = ease.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactMdStates.reducerMod.CancelAction]
     }
     
-    @scala.inline
-    def CreateAction[E /* <: HTMLElement */](disableSpacebarClick: Boolean, event: RippleEvent[E], `type`: /* "CREATE" */ String): typings.reactMdStates.reducerMod.CreateAction[E] = {
+    inline def CreateAction[E /* <: HTMLElement */](disableSpacebarClick: Boolean, event: RippleEvent[E], `type`: /* "CREATE" */ String): typings.reactMdStates.reducerMod.CreateAction[E] = {
       val __obj = js.Dynamic.literal(disableSpacebarClick = disableSpacebarClick.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactMdStates.reducerMod.CreateAction[E]]
     }
     
-    @scala.inline
-    def EnteredAction(ripple: RippleState, `type`: /* "ENTERED" */ String): typings.reactMdStates.reducerMod.EnteredAction = {
+    inline def EnteredAction(ripple: RippleState, `type`: /* "ENTERED" */ String): typings.reactMdStates.reducerMod.EnteredAction = {
       val __obj = js.Dynamic.literal(ripple = ripple.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactMdStates.reducerMod.EnteredAction]
     }
     
-    @scala.inline
-    def ReleaseAction[E /* <: HTMLElement */](event: RippleEvent[E], `type`: /* "RELEASE" */ String): typings.reactMdStates.reducerMod.ReleaseAction[E] = {
+    inline def ReleaseAction[E /* <: HTMLElement */](event: RippleEvent[E], `type`: /* "RELEASE" */ String): typings.reactMdStates.reducerMod.ReleaseAction[E] = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactMdStates.reducerMod.ReleaseAction[E]]
     }
     
-    @scala.inline
-    def RemoveAction(ripple: RippleState, `type`: /* "REMOVE" */ String): typings.reactMdStates.reducerMod.RemoveAction = {
+    inline def RemoveAction(ripple: RippleState, `type`: /* "REMOVE" */ String): typings.reactMdStates.reducerMod.RemoveAction = {
       val __obj = js.Dynamic.literal(ripple = ripple.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactMdStates.reducerMod.RemoveAction]

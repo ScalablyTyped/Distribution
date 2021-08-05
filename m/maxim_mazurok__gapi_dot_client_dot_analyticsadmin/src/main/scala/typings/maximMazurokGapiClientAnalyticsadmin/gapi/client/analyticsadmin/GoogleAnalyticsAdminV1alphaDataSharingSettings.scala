@@ -29,49 +29,35 @@ trait GoogleAnalyticsAdminV1alphaDataSharingSettings extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaDataSharingSettings {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaDataSharingSettings = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaDataSharingSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaDataSharingSettings]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaDataSharingSettingsMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaDataSharingSettings] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaDataSharingSettings](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSharingWithGoogleAnySalesEnabled(value: Boolean): Self = StObject.set(x, "sharingWithGoogleAnySalesEnabled", value.asInstanceOf[js.Any])
+    inline def setSharingWithGoogleAnySalesEnabled(value: Boolean): Self = StObject.set(x, "sharingWithGoogleAnySalesEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharingWithGoogleAnySalesEnabledUndefined: Self = StObject.set(x, "sharingWithGoogleAnySalesEnabled", js.undefined)
+    inline def setSharingWithGoogleAnySalesEnabledUndefined: Self = StObject.set(x, "sharingWithGoogleAnySalesEnabled", js.undefined)
     
-    @scala.inline
-    def setSharingWithGoogleAssignedSalesEnabled(value: Boolean): Self = StObject.set(x, "sharingWithGoogleAssignedSalesEnabled", value.asInstanceOf[js.Any])
+    inline def setSharingWithGoogleAssignedSalesEnabled(value: Boolean): Self = StObject.set(x, "sharingWithGoogleAssignedSalesEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharingWithGoogleAssignedSalesEnabledUndefined: Self = StObject.set(x, "sharingWithGoogleAssignedSalesEnabled", js.undefined)
+    inline def setSharingWithGoogleAssignedSalesEnabledUndefined: Self = StObject.set(x, "sharingWithGoogleAssignedSalesEnabled", js.undefined)
     
-    @scala.inline
-    def setSharingWithGoogleProductsEnabled(value: Boolean): Self = StObject.set(x, "sharingWithGoogleProductsEnabled", value.asInstanceOf[js.Any])
+    inline def setSharingWithGoogleProductsEnabled(value: Boolean): Self = StObject.set(x, "sharingWithGoogleProductsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharingWithGoogleProductsEnabledUndefined: Self = StObject.set(x, "sharingWithGoogleProductsEnabled", js.undefined)
+    inline def setSharingWithGoogleProductsEnabledUndefined: Self = StObject.set(x, "sharingWithGoogleProductsEnabled", js.undefined)
     
-    @scala.inline
-    def setSharingWithGoogleSupportEnabled(value: Boolean): Self = StObject.set(x, "sharingWithGoogleSupportEnabled", value.asInstanceOf[js.Any])
+    inline def setSharingWithGoogleSupportEnabled(value: Boolean): Self = StObject.set(x, "sharingWithGoogleSupportEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharingWithGoogleSupportEnabledUndefined: Self = StObject.set(x, "sharingWithGoogleSupportEnabled", js.undefined)
+    inline def setSharingWithGoogleSupportEnabledUndefined: Self = StObject.set(x, "sharingWithGoogleSupportEnabled", js.undefined)
     
-    @scala.inline
-    def setSharingWithOthersEnabled(value: Boolean): Self = StObject.set(x, "sharingWithOthersEnabled", value.asInstanceOf[js.Any])
+    inline def setSharingWithOthersEnabled(value: Boolean): Self = StObject.set(x, "sharingWithOthersEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharingWithOthersEnabledUndefined: Self = StObject.set(x, "sharingWithOthersEnabled", js.undefined)
+    inline def setSharingWithOthersEnabledUndefined: Self = StObject.set(x, "sharingWithOthersEnabled", js.undefined)
   }
 }

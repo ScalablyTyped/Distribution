@@ -12,22 +12,17 @@ trait IConsensusPeerInfo extends StObject {
 }
 object IConsensusPeerInfo {
   
-  @scala.inline
-  def apply(): IConsensusPeerInfo = {
+  inline def apply(): IConsensusPeerInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusPeerInfo]
   }
   
-  @scala.inline
-  implicit class IConsensusPeerInfoMutableBuilder[Self <: IConsensusPeerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusPeerInfo](x: Self) {
     
-    @scala.inline
-    def setPeerId(value: Uint8Array): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+    inline def setPeerId(value: Uint8Array): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerIdNull: Self = StObject.set(x, "peerId", null)
+    inline def setPeerIdNull: Self = StObject.set(x, "peerId", null)
     
-    @scala.inline
-    def setPeerIdUndefined: Self = StObject.set(x, "peerId", js.undefined)
+    inline def setPeerIdUndefined: Self = StObject.set(x, "peerId", js.undefined)
   }
 }

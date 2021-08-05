@@ -5,27 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def check(source: java.lang.String): scala.Boolean = typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("check")(source.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-@scala.inline
-def check(source: java.lang.String, options: typings.prettier.mod.Options): scala.Boolean = (typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("check")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def check(source: java.lang.String): scala.Boolean = typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("check")(source.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def check(source: java.lang.String, options: typings.prettier.mod.Options): scala.Boolean = (typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("check")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def clearConfigCache(): scala.Unit = typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearConfigCache")().asInstanceOf[scala.Unit]
+inline def clearConfigCache(): scala.Unit = typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearConfigCache")().asInstanceOf[scala.Unit]
 
-@scala.inline
-def format(source: java.lang.String): java.lang.String = typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("format")(source.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-@scala.inline
-def format(source: java.lang.String, options: typings.prettier.mod.Options): java.lang.String = (typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("format")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def format(source: java.lang.String): java.lang.String = typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("format")(source.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def format(source: java.lang.String, options: typings.prettier.mod.Options): java.lang.String = (typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("format")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
 
-@scala.inline
-def formatWithCursor(source: java.lang.String, options: typings.prettier.mod.CursorOptions): typings.prettier.mod.CursorResult = (typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatWithCursor")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.prettier.mod.CursorResult]
+inline def formatWithCursor(source: java.lang.String, options: typings.prettier.mod.CursorOptions): typings.prettier.mod.CursorResult = (typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("formatWithCursor")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.prettier.mod.CursorResult]
 
-@scala.inline
-def getSupportInfo(): typings.prettier.mod.SupportInfo = typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSupportInfo")().asInstanceOf[typings.prettier.mod.SupportInfo]
+inline def getSupportInfo(): typings.prettier.mod.SupportInfo = typings.prettier.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSupportInfo")().asInstanceOf[typings.prettier.mod.SupportInfo]
 
-@scala.inline
-def version: java.lang.String = typings.prettier.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+inline def version: java.lang.String = typings.prettier.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
 
 type AST = js.Any
 

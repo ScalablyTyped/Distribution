@@ -70,8 +70,7 @@ trait TypeofSkeletonBinary extends StObject {
 }
 object TypeofSkeletonBinary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AttachmentTypeValues: js.Array[Double],
     BONE_ROTATE: Double,
     BONE_SCALE: Double,
@@ -96,82 +95,56 @@ object TypeofSkeletonBinary {
     __obj.asInstanceOf[TypeofSkeletonBinary]
   }
   
-  @scala.inline
-  implicit class TypeofSkeletonBinaryMutableBuilder[Self <: TypeofSkeletonBinary] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSkeletonBinary](x: Self) {
     
-    @scala.inline
-    def setAttachmentTypeValues(value: js.Array[Double]): Self = StObject.set(x, "AttachmentTypeValues", value.asInstanceOf[js.Any])
+    inline def setAttachmentTypeValues(value: js.Array[Double]): Self = StObject.set(x, "AttachmentTypeValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentTypeValuesVarargs(value: Double*): Self = StObject.set(x, "AttachmentTypeValues", js.Array(value :_*))
+    inline def setAttachmentTypeValuesVarargs(value: Double*): Self = StObject.set(x, "AttachmentTypeValues", js.Array(value :_*))
     
-    @scala.inline
-    def setBONE_ROTATE(value: Double): Self = StObject.set(x, "BONE_ROTATE", value.asInstanceOf[js.Any])
+    inline def setBONE_ROTATE(value: Double): Self = StObject.set(x, "BONE_ROTATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBONE_SCALE(value: Double): Self = StObject.set(x, "BONE_SCALE", value.asInstanceOf[js.Any])
+    inline def setBONE_SCALE(value: Double): Self = StObject.set(x, "BONE_SCALE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBONE_SHEAR(value: Double): Self = StObject.set(x, "BONE_SHEAR", value.asInstanceOf[js.Any])
+    inline def setBONE_SHEAR(value: Double): Self = StObject.set(x, "BONE_SHEAR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBONE_TRANSLATE(value: Double): Self = StObject.set(x, "BONE_TRANSLATE", value.asInstanceOf[js.Any])
+    inline def setBONE_TRANSLATE(value: Double): Self = StObject.set(x, "BONE_TRANSLATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlendModeValues(value: js.Array[BlendMode]): Self = StObject.set(x, "BlendModeValues", value.asInstanceOf[js.Any])
+    inline def setBlendModeValues(value: js.Array[BlendMode]): Self = StObject.set(x, "BlendModeValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlendModeValuesVarargs(value: BlendMode*): Self = StObject.set(x, "BlendModeValues", js.Array(value :_*))
+    inline def setBlendModeValuesVarargs(value: BlendMode*): Self = StObject.set(x, "BlendModeValues", js.Array(value :_*))
     
-    @scala.inline
-    def setCURVE_BEZIER(value: Double): Self = StObject.set(x, "CURVE_BEZIER", value.asInstanceOf[js.Any])
+    inline def setCURVE_BEZIER(value: Double): Self = StObject.set(x, "CURVE_BEZIER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCURVE_LINEAR(value: Double): Self = StObject.set(x, "CURVE_LINEAR", value.asInstanceOf[js.Any])
+    inline def setCURVE_LINEAR(value: Double): Self = StObject.set(x, "CURVE_LINEAR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCURVE_STEPPED(value: Double): Self = StObject.set(x, "CURVE_STEPPED", value.asInstanceOf[js.Any])
+    inline def setCURVE_STEPPED(value: Double): Self = StObject.set(x, "CURVE_STEPPED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPATH_MIX(value: Double): Self = StObject.set(x, "PATH_MIX", value.asInstanceOf[js.Any])
+    inline def setPATH_MIX(value: Double): Self = StObject.set(x, "PATH_MIX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPATH_POSITION(value: Double): Self = StObject.set(x, "PATH_POSITION", value.asInstanceOf[js.Any])
+    inline def setPATH_POSITION(value: Double): Self = StObject.set(x, "PATH_POSITION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPATH_SPACING(value: Double): Self = StObject.set(x, "PATH_SPACING", value.asInstanceOf[js.Any])
+    inline def setPATH_SPACING(value: Double): Self = StObject.set(x, "PATH_SPACING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionModeValues(value: js.Array[PositionMode]): Self = StObject.set(x, "PositionModeValues", value.asInstanceOf[js.Any])
+    inline def setPositionModeValues(value: js.Array[PositionMode]): Self = StObject.set(x, "PositionModeValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionModeValuesVarargs(value: PositionMode*): Self = StObject.set(x, "PositionModeValues", js.Array(value :_*))
+    inline def setPositionModeValuesVarargs(value: PositionMode*): Self = StObject.set(x, "PositionModeValues", js.Array(value :_*))
     
-    @scala.inline
-    def setRotateModeValues(value: js.Array[RotateMode]): Self = StObject.set(x, "RotateModeValues", value.asInstanceOf[js.Any])
+    inline def setRotateModeValues(value: js.Array[RotateMode]): Self = StObject.set(x, "RotateModeValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateModeValuesVarargs(value: RotateMode*): Self = StObject.set(x, "RotateModeValues", js.Array(value :_*))
+    inline def setRotateModeValuesVarargs(value: RotateMode*): Self = StObject.set(x, "RotateModeValues", js.Array(value :_*))
     
-    @scala.inline
-    def setSLOT_ATTACHMENT(value: Double): Self = StObject.set(x, "SLOT_ATTACHMENT", value.asInstanceOf[js.Any])
+    inline def setSLOT_ATTACHMENT(value: Double): Self = StObject.set(x, "SLOT_ATTACHMENT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSLOT_COLOR(value: Double): Self = StObject.set(x, "SLOT_COLOR", value.asInstanceOf[js.Any])
+    inline def setSLOT_COLOR(value: Double): Self = StObject.set(x, "SLOT_COLOR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSLOT_TWO_COLOR(value: Double): Self = StObject.set(x, "SLOT_TWO_COLOR", value.asInstanceOf[js.Any])
+    inline def setSLOT_TWO_COLOR(value: Double): Self = StObject.set(x, "SLOT_TWO_COLOR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingModeValues(value: js.Array[SpacingMode]): Self = StObject.set(x, "SpacingModeValues", value.asInstanceOf[js.Any])
+    inline def setSpacingModeValues(value: js.Array[SpacingMode]): Self = StObject.set(x, "SpacingModeValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingModeValuesVarargs(value: SpacingMode*): Self = StObject.set(x, "SpacingModeValues", js.Array(value :_*))
+    inline def setSpacingModeValuesVarargs(value: SpacingMode*): Self = StObject.set(x, "SpacingModeValues", js.Array(value :_*))
     
-    @scala.inline
-    def setTransformModeValues(value: js.Array[TransformMode]): Self = StObject.set(x, "TransformModeValues", value.asInstanceOf[js.Any])
+    inline def setTransformModeValues(value: js.Array[TransformMode]): Self = StObject.set(x, "TransformModeValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformModeValuesVarargs(value: TransformMode*): Self = StObject.set(x, "TransformModeValues", js.Array(value :_*))
+    inline def setTransformModeValuesVarargs(value: TransformMode*): Self = StObject.set(x, "TransformModeValues", js.Array(value :_*))
   }
 }

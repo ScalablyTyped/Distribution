@@ -11,16 +11,13 @@ trait WorkWeekProps extends StObject {
 }
 object WorkWeekProps {
   
-  @scala.inline
-  def apply(date: Date): WorkWeekProps = {
+  inline def apply(date: Date): WorkWeekProps = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkWeekProps]
   }
   
-  @scala.inline
-  implicit class WorkWeekPropsMutableBuilder[Self <: WorkWeekProps] (val x: Self) extends AnyVal {
+  extension [Self <: WorkWeekProps](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
   }
 }

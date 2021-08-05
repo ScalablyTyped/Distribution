@@ -10,8 +10,7 @@ object throttleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(func: js.Function, wait: Double, options: OptionsType): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def default(func: js.Function, wait: Double, options: OptionsType): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
   trait OptionsType extends StObject {
     
@@ -21,26 +20,20 @@ object throttleMod {
   }
   object OptionsType {
     
-    @scala.inline
-    def apply(): OptionsType = {
+    inline def apply(): OptionsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsType]
     }
     
-    @scala.inline
-    implicit class OptionsTypeMutableBuilder[Self <: OptionsType] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsType](x: Self) {
       
-      @scala.inline
-      def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+      inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+      inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
       
-      @scala.inline
-      def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+      inline def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
+      inline def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
     }
   }
 }

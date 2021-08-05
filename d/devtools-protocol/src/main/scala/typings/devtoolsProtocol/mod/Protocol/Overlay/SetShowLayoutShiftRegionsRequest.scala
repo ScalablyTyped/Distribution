@@ -13,16 +13,13 @@ trait SetShowLayoutShiftRegionsRequest extends StObject {
 }
 object SetShowLayoutShiftRegionsRequest {
   
-  @scala.inline
-  def apply(result: Boolean): SetShowLayoutShiftRegionsRequest = {
+  inline def apply(result: Boolean): SetShowLayoutShiftRegionsRequest = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetShowLayoutShiftRegionsRequest]
   }
   
-  @scala.inline
-  implicit class SetShowLayoutShiftRegionsRequestMutableBuilder[Self <: SetShowLayoutShiftRegionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetShowLayoutShiftRegionsRequest](x: Self) {
     
-    @scala.inline
-    def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

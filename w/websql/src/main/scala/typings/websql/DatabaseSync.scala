@@ -18,8 +18,7 @@ trait DatabaseSync extends StObject {
 }
 object DatabaseSync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeVersion: (DOMString, DOMString, SQLTransactionSyncCallback) => Unit,
     readTransaction: SQLTransactionSyncCallback => Unit,
     transaction: SQLTransactionSyncCallback => Unit,
@@ -29,19 +28,14 @@ object DatabaseSync {
     __obj.asInstanceOf[DatabaseSync]
   }
   
-  @scala.inline
-  implicit class DatabaseSyncMutableBuilder[Self <: DatabaseSync] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseSync](x: Self) {
     
-    @scala.inline
-    def setChangeVersion(value: (DOMString, DOMString, SQLTransactionSyncCallback) => Unit): Self = StObject.set(x, "changeVersion", js.Any.fromFunction3(value))
+    inline def setChangeVersion(value: (DOMString, DOMString, SQLTransactionSyncCallback) => Unit): Self = StObject.set(x, "changeVersion", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReadTransaction(value: SQLTransactionSyncCallback => Unit): Self = StObject.set(x, "readTransaction", js.Any.fromFunction1(value))
+    inline def setReadTransaction(value: SQLTransactionSyncCallback => Unit): Self = StObject.set(x, "readTransaction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransaction(value: SQLTransactionSyncCallback => Unit): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
+    inline def setTransaction(value: SQLTransactionSyncCallback => Unit): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVersion(value: DOMString): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: DOMString): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

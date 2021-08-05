@@ -15,8 +15,7 @@ object rulesMod {
   @js.native
   val default: js.Array[IRule] = js.native
   
-  @scala.inline
-  def defaultOrConstrained(`match`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOrConstrained")(`match`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def defaultOrConstrained(`match`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOrConstrained")(`match`.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait IRule extends StObject {
     
@@ -28,29 +27,22 @@ object rulesMod {
   }
   object IRule {
     
-    @scala.inline
-    def apply(name: String, pattern: RegExp): IRule = {
+    inline def apply(name: String, pattern: RegExp): IRule = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRule]
     }
     
-    @scala.inline
-    implicit class IRuleMutableBuilder[Self <: IRule] (val x: Self) extends AnyVal {
+    extension [Self <: IRule](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegex(value: RegExp | RegExpFactory): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: RegExp | RegExpFactory): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexFunction1(value: /* match */ js.Any => RegExp): Self = StObject.set(x, "regex", js.Any.fromFunction1(value))
+      inline def setRegexFunction1(value: /* match */ js.Any => RegExp): Self = StObject.set(x, "regex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+      inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
     }
   }
   

@@ -11,944 +11,809 @@ object tzOffsetStrings {
   sealed trait AfricaSlashAlgiers
     extends StObject
        with Timezone
-  @scala.inline
-  def AfricaSlashAlgiers: AfricaSlashAlgiers = "Africa/Algiers".asInstanceOf[AfricaSlashAlgiers]
+  inline def AfricaSlashAlgiers: AfricaSlashAlgiers = "Africa/Algiers".asInstanceOf[AfricaSlashAlgiers]
   
   @js.native
   sealed trait AfricaSlashCairo
     extends StObject
        with Timezone
-  @scala.inline
-  def AfricaSlashCairo: AfricaSlashCairo = "Africa/Cairo".asInstanceOf[AfricaSlashCairo]
+  inline def AfricaSlashCairo: AfricaSlashCairo = "Africa/Cairo".asInstanceOf[AfricaSlashCairo]
   
   @js.native
   sealed trait AfricaSlashCasablanca
     extends StObject
        with Timezone
-  @scala.inline
-  def AfricaSlashCasablanca: AfricaSlashCasablanca = "Africa/Casablanca".asInstanceOf[AfricaSlashCasablanca]
+  inline def AfricaSlashCasablanca: AfricaSlashCasablanca = "Africa/Casablanca".asInstanceOf[AfricaSlashCasablanca]
   
   @js.native
   sealed trait AfricaSlashHarare
     extends StObject
        with Timezone
-  @scala.inline
-  def AfricaSlashHarare: AfricaSlashHarare = "Africa/Harare".asInstanceOf[AfricaSlashHarare]
+  inline def AfricaSlashHarare: AfricaSlashHarare = "Africa/Harare".asInstanceOf[AfricaSlashHarare]
   
   @js.native
   sealed trait AfricaSlashJohannesburg
     extends StObject
        with Timezone
-  @scala.inline
-  def AfricaSlashJohannesburg: AfricaSlashJohannesburg = "Africa/Johannesburg".asInstanceOf[AfricaSlashJohannesburg]
+  inline def AfricaSlashJohannesburg: AfricaSlashJohannesburg = "Africa/Johannesburg".asInstanceOf[AfricaSlashJohannesburg]
   
   @js.native
   sealed trait AfricaSlashMonrovia
     extends StObject
        with Timezone
-  @scala.inline
-  def AfricaSlashMonrovia: AfricaSlashMonrovia = "Africa/Monrovia".asInstanceOf[AfricaSlashMonrovia]
+  inline def AfricaSlashMonrovia: AfricaSlashMonrovia = "Africa/Monrovia".asInstanceOf[AfricaSlashMonrovia]
   
   @js.native
   sealed trait AfricaSlashNairobi
     extends StObject
        with Timezone
-  @scala.inline
-  def AfricaSlashNairobi: AfricaSlashNairobi = "Africa/Nairobi".asInstanceOf[AfricaSlashNairobi]
+  inline def AfricaSlashNairobi: AfricaSlashNairobi = "Africa/Nairobi".asInstanceOf[AfricaSlashNairobi]
   
   @js.native
   sealed trait AmericaSlashArgentinaSlashBuenos_Aires
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashArgentinaSlashBuenos_Aires: AmericaSlashArgentinaSlashBuenos_Aires = "America/Argentina/Buenos_Aires".asInstanceOf[AmericaSlashArgentinaSlashBuenos_Aires]
+  inline def AmericaSlashArgentinaSlashBuenos_Aires: AmericaSlashArgentinaSlashBuenos_Aires = "America/Argentina/Buenos_Aires".asInstanceOf[AmericaSlashArgentinaSlashBuenos_Aires]
   
   @js.native
   sealed trait AmericaSlashBogota
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashBogota: AmericaSlashBogota = "America/Bogota".asInstanceOf[AmericaSlashBogota]
+  inline def AmericaSlashBogota: AmericaSlashBogota = "America/Bogota".asInstanceOf[AmericaSlashBogota]
   
   @js.native
   sealed trait AmericaSlashCaracas
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashCaracas: AmericaSlashCaracas = "America/Caracas".asInstanceOf[AmericaSlashCaracas]
+  inline def AmericaSlashCaracas: AmericaSlashCaracas = "America/Caracas".asInstanceOf[AmericaSlashCaracas]
   
   @js.native
   sealed trait AmericaSlashChicago
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashChicago: AmericaSlashChicago = "America/Chicago".asInstanceOf[AmericaSlashChicago]
+  inline def AmericaSlashChicago: AmericaSlashChicago = "America/Chicago".asInstanceOf[AmericaSlashChicago]
   
   @js.native
   sealed trait AmericaSlashChihuahua
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashChihuahua: AmericaSlashChihuahua = "America/Chihuahua".asInstanceOf[AmericaSlashChihuahua]
+  inline def AmericaSlashChihuahua: AmericaSlashChihuahua = "America/Chihuahua".asInstanceOf[AmericaSlashChihuahua]
   
   @js.native
   sealed trait AmericaSlashDenver
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashDenver: AmericaSlashDenver = "America/Denver".asInstanceOf[AmericaSlashDenver]
+  inline def AmericaSlashDenver: AmericaSlashDenver = "America/Denver".asInstanceOf[AmericaSlashDenver]
   
   @js.native
   sealed trait AmericaSlashGodthab
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashGodthab: AmericaSlashGodthab = "America/Godthab".asInstanceOf[AmericaSlashGodthab]
+  inline def AmericaSlashGodthab: AmericaSlashGodthab = "America/Godthab".asInstanceOf[AmericaSlashGodthab]
   
   @js.native
   sealed trait AmericaSlashGuatemala
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashGuatemala: AmericaSlashGuatemala = "America/Guatemala".asInstanceOf[AmericaSlashGuatemala]
+  inline def AmericaSlashGuatemala: AmericaSlashGuatemala = "America/Guatemala".asInstanceOf[AmericaSlashGuatemala]
   
   @js.native
   sealed trait AmericaSlashGuyana
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashGuyana: AmericaSlashGuyana = "America/Guyana".asInstanceOf[AmericaSlashGuyana]
+  inline def AmericaSlashGuyana: AmericaSlashGuyana = "America/Guyana".asInstanceOf[AmericaSlashGuyana]
   
   @js.native
   sealed trait AmericaSlashHalifax
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashHalifax: AmericaSlashHalifax = "America/Halifax".asInstanceOf[AmericaSlashHalifax]
+  inline def AmericaSlashHalifax: AmericaSlashHalifax = "America/Halifax".asInstanceOf[AmericaSlashHalifax]
   
   @js.native
   sealed trait AmericaSlashIndianaSlashIndianapolis
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashIndianaSlashIndianapolis: AmericaSlashIndianaSlashIndianapolis = "America/Indiana/Indianapolis".asInstanceOf[AmericaSlashIndianaSlashIndianapolis]
+  inline def AmericaSlashIndianaSlashIndianapolis: AmericaSlashIndianaSlashIndianapolis = "America/Indiana/Indianapolis".asInstanceOf[AmericaSlashIndianaSlashIndianapolis]
   
   @js.native
   sealed trait AmericaSlashJuneau
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashJuneau: AmericaSlashJuneau = "America/Juneau".asInstanceOf[AmericaSlashJuneau]
+  inline def AmericaSlashJuneau: AmericaSlashJuneau = "America/Juneau".asInstanceOf[AmericaSlashJuneau]
   
   @js.native
   sealed trait AmericaSlashLa_Paz
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashLa_Paz: AmericaSlashLa_Paz = "America/La_Paz".asInstanceOf[AmericaSlashLa_Paz]
+  inline def AmericaSlashLa_Paz: AmericaSlashLa_Paz = "America/La_Paz".asInstanceOf[AmericaSlashLa_Paz]
   
   @js.native
   sealed trait AmericaSlashLima
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashLima: AmericaSlashLima = "America/Lima".asInstanceOf[AmericaSlashLima]
+  inline def AmericaSlashLima: AmericaSlashLima = "America/Lima".asInstanceOf[AmericaSlashLima]
   
   @js.native
   sealed trait AmericaSlashLos_Angeles
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashLos_Angeles: AmericaSlashLos_Angeles = "America/Los_Angeles".asInstanceOf[AmericaSlashLos_Angeles]
+  inline def AmericaSlashLos_Angeles: AmericaSlashLos_Angeles = "America/Los_Angeles".asInstanceOf[AmericaSlashLos_Angeles]
   
   @js.native
   sealed trait AmericaSlashMazatlan
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashMazatlan: AmericaSlashMazatlan = "America/Mazatlan".asInstanceOf[AmericaSlashMazatlan]
+  inline def AmericaSlashMazatlan: AmericaSlashMazatlan = "America/Mazatlan".asInstanceOf[AmericaSlashMazatlan]
   
   @js.native
   sealed trait AmericaSlashMexico_City
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashMexico_City: AmericaSlashMexico_City = "America/Mexico_City".asInstanceOf[AmericaSlashMexico_City]
+  inline def AmericaSlashMexico_City: AmericaSlashMexico_City = "America/Mexico_City".asInstanceOf[AmericaSlashMexico_City]
   
   @js.native
   sealed trait AmericaSlashMonterrey
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashMonterrey: AmericaSlashMonterrey = "America/Monterrey".asInstanceOf[AmericaSlashMonterrey]
+  inline def AmericaSlashMonterrey: AmericaSlashMonterrey = "America/Monterrey".asInstanceOf[AmericaSlashMonterrey]
   
   @js.native
   sealed trait AmericaSlashMontevideo
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashMontevideo: AmericaSlashMontevideo = "America/Montevideo".asInstanceOf[AmericaSlashMontevideo]
+  inline def AmericaSlashMontevideo: AmericaSlashMontevideo = "America/Montevideo".asInstanceOf[AmericaSlashMontevideo]
   
   @js.native
   sealed trait AmericaSlashNew_York
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashNew_York: AmericaSlashNew_York = "America/New_York".asInstanceOf[AmericaSlashNew_York]
+  inline def AmericaSlashNew_York: AmericaSlashNew_York = "America/New_York".asInstanceOf[AmericaSlashNew_York]
   
   @js.native
   sealed trait AmericaSlashPhoenix
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashPhoenix: AmericaSlashPhoenix = "America/Phoenix".asInstanceOf[AmericaSlashPhoenix]
+  inline def AmericaSlashPhoenix: AmericaSlashPhoenix = "America/Phoenix".asInstanceOf[AmericaSlashPhoenix]
   
   @js.native
   sealed trait AmericaSlashPuerto_Rico
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashPuerto_Rico: AmericaSlashPuerto_Rico = "America/Puerto_Rico".asInstanceOf[AmericaSlashPuerto_Rico]
+  inline def AmericaSlashPuerto_Rico: AmericaSlashPuerto_Rico = "America/Puerto_Rico".asInstanceOf[AmericaSlashPuerto_Rico]
   
   @js.native
   sealed trait AmericaSlashRegina
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashRegina: AmericaSlashRegina = "America/Regina".asInstanceOf[AmericaSlashRegina]
+  inline def AmericaSlashRegina: AmericaSlashRegina = "America/Regina".asInstanceOf[AmericaSlashRegina]
   
   @js.native
   sealed trait AmericaSlashSantiago
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashSantiago: AmericaSlashSantiago = "America/Santiago".asInstanceOf[AmericaSlashSantiago]
+  inline def AmericaSlashSantiago: AmericaSlashSantiago = "America/Santiago".asInstanceOf[AmericaSlashSantiago]
   
   @js.native
   sealed trait AmericaSlashSao_Paulo
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashSao_Paulo: AmericaSlashSao_Paulo = "America/Sao_Paulo".asInstanceOf[AmericaSlashSao_Paulo]
+  inline def AmericaSlashSao_Paulo: AmericaSlashSao_Paulo = "America/Sao_Paulo".asInstanceOf[AmericaSlashSao_Paulo]
   
   @js.native
   sealed trait AmericaSlashSt_Johns
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashSt_Johns: AmericaSlashSt_Johns = "America/St_Johns".asInstanceOf[AmericaSlashSt_Johns]
+  inline def AmericaSlashSt_Johns: AmericaSlashSt_Johns = "America/St_Johns".asInstanceOf[AmericaSlashSt_Johns]
   
   @js.native
   sealed trait AmericaSlashTijuana
     extends StObject
        with Timezone
-  @scala.inline
-  def AmericaSlashTijuana: AmericaSlashTijuana = "America/Tijuana".asInstanceOf[AmericaSlashTijuana]
+  inline def AmericaSlashTijuana: AmericaSlashTijuana = "America/Tijuana".asInstanceOf[AmericaSlashTijuana]
   
   @js.native
   sealed trait AsiaSlashAlmaty
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashAlmaty: AsiaSlashAlmaty = "Asia/Almaty".asInstanceOf[AsiaSlashAlmaty]
+  inline def AsiaSlashAlmaty: AsiaSlashAlmaty = "Asia/Almaty".asInstanceOf[AsiaSlashAlmaty]
   
   @js.native
   sealed trait AsiaSlashBaghdad
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashBaghdad: AsiaSlashBaghdad = "Asia/Baghdad".asInstanceOf[AsiaSlashBaghdad]
+  inline def AsiaSlashBaghdad: AsiaSlashBaghdad = "Asia/Baghdad".asInstanceOf[AsiaSlashBaghdad]
   
   @js.native
   sealed trait AsiaSlashBaku
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashBaku: AsiaSlashBaku = "Asia/Baku".asInstanceOf[AsiaSlashBaku]
+  inline def AsiaSlashBaku: AsiaSlashBaku = "Asia/Baku".asInstanceOf[AsiaSlashBaku]
   
   @js.native
   sealed trait AsiaSlashBangkok
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashBangkok: AsiaSlashBangkok = "Asia/Bangkok".asInstanceOf[AsiaSlashBangkok]
+  inline def AsiaSlashBangkok: AsiaSlashBangkok = "Asia/Bangkok".asInstanceOf[AsiaSlashBangkok]
   
   @js.native
   sealed trait AsiaSlashChongqing
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashChongqing: AsiaSlashChongqing = "Asia/Chongqing".asInstanceOf[AsiaSlashChongqing]
+  inline def AsiaSlashChongqing: AsiaSlashChongqing = "Asia/Chongqing".asInstanceOf[AsiaSlashChongqing]
   
   @js.native
   sealed trait AsiaSlashColombo
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashColombo: AsiaSlashColombo = "Asia/Colombo".asInstanceOf[AsiaSlashColombo]
+  inline def AsiaSlashColombo: AsiaSlashColombo = "Asia/Colombo".asInstanceOf[AsiaSlashColombo]
   
   @js.native
   sealed trait AsiaSlashDhaka
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashDhaka: AsiaSlashDhaka = "Asia/Dhaka".asInstanceOf[AsiaSlashDhaka]
+  inline def AsiaSlashDhaka: AsiaSlashDhaka = "Asia/Dhaka".asInstanceOf[AsiaSlashDhaka]
   
   @js.native
   sealed trait AsiaSlashHong_Kong
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashHong_Kong: AsiaSlashHong_Kong = "Asia/Hong_Kong".asInstanceOf[AsiaSlashHong_Kong]
+  inline def AsiaSlashHong_Kong: AsiaSlashHong_Kong = "Asia/Hong_Kong".asInstanceOf[AsiaSlashHong_Kong]
   
   @js.native
   sealed trait AsiaSlashIrkutsk
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashIrkutsk: AsiaSlashIrkutsk = "Asia/Irkutsk".asInstanceOf[AsiaSlashIrkutsk]
+  inline def AsiaSlashIrkutsk: AsiaSlashIrkutsk = "Asia/Irkutsk".asInstanceOf[AsiaSlashIrkutsk]
   
   @js.native
   sealed trait AsiaSlashJakarta
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashJakarta: AsiaSlashJakarta = "Asia/Jakarta".asInstanceOf[AsiaSlashJakarta]
+  inline def AsiaSlashJakarta: AsiaSlashJakarta = "Asia/Jakarta".asInstanceOf[AsiaSlashJakarta]
   
   @js.native
   sealed trait AsiaSlashJerusalem
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashJerusalem: AsiaSlashJerusalem = "Asia/Jerusalem".asInstanceOf[AsiaSlashJerusalem]
+  inline def AsiaSlashJerusalem: AsiaSlashJerusalem = "Asia/Jerusalem".asInstanceOf[AsiaSlashJerusalem]
   
   @js.native
   sealed trait AsiaSlashKabul
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashKabul: AsiaSlashKabul = "Asia/Kabul".asInstanceOf[AsiaSlashKabul]
+  inline def AsiaSlashKabul: AsiaSlashKabul = "Asia/Kabul".asInstanceOf[AsiaSlashKabul]
   
   @js.native
   sealed trait AsiaSlashKamchatka
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashKamchatka: AsiaSlashKamchatka = "Asia/Kamchatka".asInstanceOf[AsiaSlashKamchatka]
+  inline def AsiaSlashKamchatka: AsiaSlashKamchatka = "Asia/Kamchatka".asInstanceOf[AsiaSlashKamchatka]
   
   @js.native
   sealed trait AsiaSlashKarachi
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashKarachi: AsiaSlashKarachi = "Asia/Karachi".asInstanceOf[AsiaSlashKarachi]
+  inline def AsiaSlashKarachi: AsiaSlashKarachi = "Asia/Karachi".asInstanceOf[AsiaSlashKarachi]
   
   @js.native
   sealed trait AsiaSlashKathmandu
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashKathmandu: AsiaSlashKathmandu = "Asia/Kathmandu".asInstanceOf[AsiaSlashKathmandu]
+  inline def AsiaSlashKathmandu: AsiaSlashKathmandu = "Asia/Kathmandu".asInstanceOf[AsiaSlashKathmandu]
   
   @js.native
   sealed trait AsiaSlashKolkata
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashKolkata: AsiaSlashKolkata = "Asia/Kolkata".asInstanceOf[AsiaSlashKolkata]
+  inline def AsiaSlashKolkata: AsiaSlashKolkata = "Asia/Kolkata".asInstanceOf[AsiaSlashKolkata]
   
   @js.native
   sealed trait AsiaSlashKrasnoyarsk
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashKrasnoyarsk: AsiaSlashKrasnoyarsk = "Asia/Krasnoyarsk".asInstanceOf[AsiaSlashKrasnoyarsk]
+  inline def AsiaSlashKrasnoyarsk: AsiaSlashKrasnoyarsk = "Asia/Krasnoyarsk".asInstanceOf[AsiaSlashKrasnoyarsk]
   
   @js.native
   sealed trait AsiaSlashKuala_Lumpur
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashKuala_Lumpur: AsiaSlashKuala_Lumpur = "Asia/Kuala_Lumpur".asInstanceOf[AsiaSlashKuala_Lumpur]
+  inline def AsiaSlashKuala_Lumpur: AsiaSlashKuala_Lumpur = "Asia/Kuala_Lumpur".asInstanceOf[AsiaSlashKuala_Lumpur]
   
   @js.native
   sealed trait AsiaSlashKuwait
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashKuwait: AsiaSlashKuwait = "Asia/Kuwait".asInstanceOf[AsiaSlashKuwait]
+  inline def AsiaSlashKuwait: AsiaSlashKuwait = "Asia/Kuwait".asInstanceOf[AsiaSlashKuwait]
   
   @js.native
   sealed trait AsiaSlashMagadan
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashMagadan: AsiaSlashMagadan = "Asia/Magadan".asInstanceOf[AsiaSlashMagadan]
+  inline def AsiaSlashMagadan: AsiaSlashMagadan = "Asia/Magadan".asInstanceOf[AsiaSlashMagadan]
   
   @js.native
   sealed trait AsiaSlashMuscat
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashMuscat: AsiaSlashMuscat = "Asia/Muscat".asInstanceOf[AsiaSlashMuscat]
+  inline def AsiaSlashMuscat: AsiaSlashMuscat = "Asia/Muscat".asInstanceOf[AsiaSlashMuscat]
   
   @js.native
   sealed trait AsiaSlashNovosibirsk
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashNovosibirsk: AsiaSlashNovosibirsk = "Asia/Novosibirsk".asInstanceOf[AsiaSlashNovosibirsk]
+  inline def AsiaSlashNovosibirsk: AsiaSlashNovosibirsk = "Asia/Novosibirsk".asInstanceOf[AsiaSlashNovosibirsk]
   
   @js.native
   sealed trait AsiaSlashRangoon
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashRangoon: AsiaSlashRangoon = "Asia/Rangoon".asInstanceOf[AsiaSlashRangoon]
+  inline def AsiaSlashRangoon: AsiaSlashRangoon = "Asia/Rangoon".asInstanceOf[AsiaSlashRangoon]
   
   @js.native
   sealed trait AsiaSlashRiyadh
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashRiyadh: AsiaSlashRiyadh = "Asia/Riyadh".asInstanceOf[AsiaSlashRiyadh]
+  inline def AsiaSlashRiyadh: AsiaSlashRiyadh = "Asia/Riyadh".asInstanceOf[AsiaSlashRiyadh]
   
   @js.native
   sealed trait AsiaSlashSeoul
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashSeoul: AsiaSlashSeoul = "Asia/Seoul".asInstanceOf[AsiaSlashSeoul]
+  inline def AsiaSlashSeoul: AsiaSlashSeoul = "Asia/Seoul".asInstanceOf[AsiaSlashSeoul]
   
   @js.native
   sealed trait AsiaSlashShanghai
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashShanghai: AsiaSlashShanghai = "Asia/Shanghai".asInstanceOf[AsiaSlashShanghai]
+  inline def AsiaSlashShanghai: AsiaSlashShanghai = "Asia/Shanghai".asInstanceOf[AsiaSlashShanghai]
   
   @js.native
   sealed trait AsiaSlashSingapore
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashSingapore: AsiaSlashSingapore = "Asia/Singapore".asInstanceOf[AsiaSlashSingapore]
+  inline def AsiaSlashSingapore: AsiaSlashSingapore = "Asia/Singapore".asInstanceOf[AsiaSlashSingapore]
   
   @js.native
   sealed trait AsiaSlashSrednekolymsk
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashSrednekolymsk: AsiaSlashSrednekolymsk = "Asia/Srednekolymsk".asInstanceOf[AsiaSlashSrednekolymsk]
+  inline def AsiaSlashSrednekolymsk: AsiaSlashSrednekolymsk = "Asia/Srednekolymsk".asInstanceOf[AsiaSlashSrednekolymsk]
   
   @js.native
   sealed trait AsiaSlashTaipei
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashTaipei: AsiaSlashTaipei = "Asia/Taipei".asInstanceOf[AsiaSlashTaipei]
+  inline def AsiaSlashTaipei: AsiaSlashTaipei = "Asia/Taipei".asInstanceOf[AsiaSlashTaipei]
   
   @js.native
   sealed trait AsiaSlashTashkent
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashTashkent: AsiaSlashTashkent = "Asia/Tashkent".asInstanceOf[AsiaSlashTashkent]
+  inline def AsiaSlashTashkent: AsiaSlashTashkent = "Asia/Tashkent".asInstanceOf[AsiaSlashTashkent]
   
   @js.native
   sealed trait AsiaSlashTbilisi
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashTbilisi: AsiaSlashTbilisi = "Asia/Tbilisi".asInstanceOf[AsiaSlashTbilisi]
+  inline def AsiaSlashTbilisi: AsiaSlashTbilisi = "Asia/Tbilisi".asInstanceOf[AsiaSlashTbilisi]
   
   @js.native
   sealed trait AsiaSlashTehran
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashTehran: AsiaSlashTehran = "Asia/Tehran".asInstanceOf[AsiaSlashTehran]
+  inline def AsiaSlashTehran: AsiaSlashTehran = "Asia/Tehran".asInstanceOf[AsiaSlashTehran]
   
   @js.native
   sealed trait AsiaSlashTokyo
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashTokyo: AsiaSlashTokyo = "Asia/Tokyo".asInstanceOf[AsiaSlashTokyo]
+  inline def AsiaSlashTokyo: AsiaSlashTokyo = "Asia/Tokyo".asInstanceOf[AsiaSlashTokyo]
   
   @js.native
   sealed trait AsiaSlashUlaanbaatar
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashUlaanbaatar: AsiaSlashUlaanbaatar = "Asia/Ulaanbaatar".asInstanceOf[AsiaSlashUlaanbaatar]
+  inline def AsiaSlashUlaanbaatar: AsiaSlashUlaanbaatar = "Asia/Ulaanbaatar".asInstanceOf[AsiaSlashUlaanbaatar]
   
   @js.native
   sealed trait AsiaSlashUrumqi
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashUrumqi: AsiaSlashUrumqi = "Asia/Urumqi".asInstanceOf[AsiaSlashUrumqi]
+  inline def AsiaSlashUrumqi: AsiaSlashUrumqi = "Asia/Urumqi".asInstanceOf[AsiaSlashUrumqi]
   
   @js.native
   sealed trait AsiaSlashVladivostok
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashVladivostok: AsiaSlashVladivostok = "Asia/Vladivostok".asInstanceOf[AsiaSlashVladivostok]
+  inline def AsiaSlashVladivostok: AsiaSlashVladivostok = "Asia/Vladivostok".asInstanceOf[AsiaSlashVladivostok]
   
   @js.native
   sealed trait AsiaSlashYakutsk
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashYakutsk: AsiaSlashYakutsk = "Asia/Yakutsk".asInstanceOf[AsiaSlashYakutsk]
+  inline def AsiaSlashYakutsk: AsiaSlashYakutsk = "Asia/Yakutsk".asInstanceOf[AsiaSlashYakutsk]
   
   @js.native
   sealed trait AsiaSlashYekaterinburg
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashYekaterinburg: AsiaSlashYekaterinburg = "Asia/Yekaterinburg".asInstanceOf[AsiaSlashYekaterinburg]
+  inline def AsiaSlashYekaterinburg: AsiaSlashYekaterinburg = "Asia/Yekaterinburg".asInstanceOf[AsiaSlashYekaterinburg]
   
   @js.native
   sealed trait AsiaSlashYerevan
     extends StObject
        with Timezone
-  @scala.inline
-  def AsiaSlashYerevan: AsiaSlashYerevan = "Asia/Yerevan".asInstanceOf[AsiaSlashYerevan]
+  inline def AsiaSlashYerevan: AsiaSlashYerevan = "Asia/Yerevan".asInstanceOf[AsiaSlashYerevan]
   
   @js.native
   sealed trait AtlanticSlashAzores
     extends StObject
        with Timezone
-  @scala.inline
-  def AtlanticSlashAzores: AtlanticSlashAzores = "Atlantic/Azores".asInstanceOf[AtlanticSlashAzores]
+  inline def AtlanticSlashAzores: AtlanticSlashAzores = "Atlantic/Azores".asInstanceOf[AtlanticSlashAzores]
   
   @js.native
   sealed trait AtlanticSlashCape_Verde
     extends StObject
        with Timezone
-  @scala.inline
-  def AtlanticSlashCape_Verde: AtlanticSlashCape_Verde = "Atlantic/Cape_Verde".asInstanceOf[AtlanticSlashCape_Verde]
+  inline def AtlanticSlashCape_Verde: AtlanticSlashCape_Verde = "Atlantic/Cape_Verde".asInstanceOf[AtlanticSlashCape_Verde]
   
   @js.native
   sealed trait AtlanticSlashSouth_Georgia
     extends StObject
        with Timezone
-  @scala.inline
-  def AtlanticSlashSouth_Georgia: AtlanticSlashSouth_Georgia = "Atlantic/South_Georgia".asInstanceOf[AtlanticSlashSouth_Georgia]
+  inline def AtlanticSlashSouth_Georgia: AtlanticSlashSouth_Georgia = "Atlantic/South_Georgia".asInstanceOf[AtlanticSlashSouth_Georgia]
   
   @js.native
   sealed trait AustraliaSlashAdelaide
     extends StObject
        with Timezone
-  @scala.inline
-  def AustraliaSlashAdelaide: AustraliaSlashAdelaide = "Australia/Adelaide".asInstanceOf[AustraliaSlashAdelaide]
+  inline def AustraliaSlashAdelaide: AustraliaSlashAdelaide = "Australia/Adelaide".asInstanceOf[AustraliaSlashAdelaide]
   
   @js.native
   sealed trait AustraliaSlashBrisbane
     extends StObject
        with Timezone
-  @scala.inline
-  def AustraliaSlashBrisbane: AustraliaSlashBrisbane = "Australia/Brisbane".asInstanceOf[AustraliaSlashBrisbane]
+  inline def AustraliaSlashBrisbane: AustraliaSlashBrisbane = "Australia/Brisbane".asInstanceOf[AustraliaSlashBrisbane]
   
   @js.native
   sealed trait AustraliaSlashDarwin
     extends StObject
        with Timezone
-  @scala.inline
-  def AustraliaSlashDarwin: AustraliaSlashDarwin = "Australia/Darwin".asInstanceOf[AustraliaSlashDarwin]
+  inline def AustraliaSlashDarwin: AustraliaSlashDarwin = "Australia/Darwin".asInstanceOf[AustraliaSlashDarwin]
   
   @js.native
   sealed trait AustraliaSlashHobart
     extends StObject
        with Timezone
-  @scala.inline
-  def AustraliaSlashHobart: AustraliaSlashHobart = "Australia/Hobart".asInstanceOf[AustraliaSlashHobart]
+  inline def AustraliaSlashHobart: AustraliaSlashHobart = "Australia/Hobart".asInstanceOf[AustraliaSlashHobart]
   
   @js.native
   sealed trait AustraliaSlashMelbourne
     extends StObject
        with Timezone
-  @scala.inline
-  def AustraliaSlashMelbourne: AustraliaSlashMelbourne = "Australia/Melbourne".asInstanceOf[AustraliaSlashMelbourne]
+  inline def AustraliaSlashMelbourne: AustraliaSlashMelbourne = "Australia/Melbourne".asInstanceOf[AustraliaSlashMelbourne]
   
   @js.native
   sealed trait AustraliaSlashPerth
     extends StObject
        with Timezone
-  @scala.inline
-  def AustraliaSlashPerth: AustraliaSlashPerth = "Australia/Perth".asInstanceOf[AustraliaSlashPerth]
+  inline def AustraliaSlashPerth: AustraliaSlashPerth = "Australia/Perth".asInstanceOf[AustraliaSlashPerth]
   
   @js.native
   sealed trait AustraliaSlashSydney
     extends StObject
        with Timezone
-  @scala.inline
-  def AustraliaSlashSydney: AustraliaSlashSydney = "Australia/Sydney".asInstanceOf[AustraliaSlashSydney]
+  inline def AustraliaSlashSydney: AustraliaSlashSydney = "Australia/Sydney".asInstanceOf[AustraliaSlashSydney]
   
   @js.native
   sealed trait EtcSlashGMTPlussign12
     extends StObject
        with Timezone
-  @scala.inline
-  def EtcSlashGMTPlussign12: EtcSlashGMTPlussign12 = "Etc/GMT+12".asInstanceOf[EtcSlashGMTPlussign12]
+  inline def EtcSlashGMTPlussign12: EtcSlashGMTPlussign12 = "Etc/GMT+12".asInstanceOf[EtcSlashGMTPlussign12]
   
   @js.native
   sealed trait EtcSlashUTC
     extends StObject
        with Timezone
-  @scala.inline
-  def EtcSlashUTC: EtcSlashUTC = "Etc/UTC".asInstanceOf[EtcSlashUTC]
+  inline def EtcSlashUTC: EtcSlashUTC = "Etc/UTC".asInstanceOf[EtcSlashUTC]
   
   @js.native
   sealed trait EuropeSlashAmsterdam
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashAmsterdam: EuropeSlashAmsterdam = "Europe/Amsterdam".asInstanceOf[EuropeSlashAmsterdam]
+  inline def EuropeSlashAmsterdam: EuropeSlashAmsterdam = "Europe/Amsterdam".asInstanceOf[EuropeSlashAmsterdam]
   
   @js.native
   sealed trait EuropeSlashAthens
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashAthens: EuropeSlashAthens = "Europe/Athens".asInstanceOf[EuropeSlashAthens]
+  inline def EuropeSlashAthens: EuropeSlashAthens = "Europe/Athens".asInstanceOf[EuropeSlashAthens]
   
   @js.native
   sealed trait EuropeSlashBelgrade
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashBelgrade: EuropeSlashBelgrade = "Europe/Belgrade".asInstanceOf[EuropeSlashBelgrade]
+  inline def EuropeSlashBelgrade: EuropeSlashBelgrade = "Europe/Belgrade".asInstanceOf[EuropeSlashBelgrade]
   
   @js.native
   sealed trait EuropeSlashBerlin
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashBerlin: EuropeSlashBerlin = "Europe/Berlin".asInstanceOf[EuropeSlashBerlin]
+  inline def EuropeSlashBerlin: EuropeSlashBerlin = "Europe/Berlin".asInstanceOf[EuropeSlashBerlin]
   
   @js.native
   sealed trait EuropeSlashBratislava
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashBratislava: EuropeSlashBratislava = "Europe/Bratislava".asInstanceOf[EuropeSlashBratislava]
+  inline def EuropeSlashBratislava: EuropeSlashBratislava = "Europe/Bratislava".asInstanceOf[EuropeSlashBratislava]
   
   @js.native
   sealed trait EuropeSlashBrussels
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashBrussels: EuropeSlashBrussels = "Europe/Brussels".asInstanceOf[EuropeSlashBrussels]
+  inline def EuropeSlashBrussels: EuropeSlashBrussels = "Europe/Brussels".asInstanceOf[EuropeSlashBrussels]
   
   @js.native
   sealed trait EuropeSlashBucharest
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashBucharest: EuropeSlashBucharest = "Europe/Bucharest".asInstanceOf[EuropeSlashBucharest]
+  inline def EuropeSlashBucharest: EuropeSlashBucharest = "Europe/Bucharest".asInstanceOf[EuropeSlashBucharest]
   
   @js.native
   sealed trait EuropeSlashBudapest
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashBudapest: EuropeSlashBudapest = "Europe/Budapest".asInstanceOf[EuropeSlashBudapest]
+  inline def EuropeSlashBudapest: EuropeSlashBudapest = "Europe/Budapest".asInstanceOf[EuropeSlashBudapest]
   
   @js.native
   sealed trait EuropeSlashCopenhagen
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashCopenhagen: EuropeSlashCopenhagen = "Europe/Copenhagen".asInstanceOf[EuropeSlashCopenhagen]
+  inline def EuropeSlashCopenhagen: EuropeSlashCopenhagen = "Europe/Copenhagen".asInstanceOf[EuropeSlashCopenhagen]
   
   @js.native
   sealed trait EuropeSlashDublin
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashDublin: EuropeSlashDublin = "Europe/Dublin".asInstanceOf[EuropeSlashDublin]
+  inline def EuropeSlashDublin: EuropeSlashDublin = "Europe/Dublin".asInstanceOf[EuropeSlashDublin]
   
   @js.native
   sealed trait EuropeSlashHelsinki
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashHelsinki: EuropeSlashHelsinki = "Europe/Helsinki".asInstanceOf[EuropeSlashHelsinki]
+  inline def EuropeSlashHelsinki: EuropeSlashHelsinki = "Europe/Helsinki".asInstanceOf[EuropeSlashHelsinki]
   
   @js.native
   sealed trait EuropeSlashIstanbul
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashIstanbul: EuropeSlashIstanbul = "Europe/Istanbul".asInstanceOf[EuropeSlashIstanbul]
+  inline def EuropeSlashIstanbul: EuropeSlashIstanbul = "Europe/Istanbul".asInstanceOf[EuropeSlashIstanbul]
   
   @js.native
   sealed trait EuropeSlashKaliningrad
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashKaliningrad: EuropeSlashKaliningrad = "Europe/Kaliningrad".asInstanceOf[EuropeSlashKaliningrad]
+  inline def EuropeSlashKaliningrad: EuropeSlashKaliningrad = "Europe/Kaliningrad".asInstanceOf[EuropeSlashKaliningrad]
   
   @js.native
   sealed trait EuropeSlashKiev
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashKiev: EuropeSlashKiev = "Europe/Kiev".asInstanceOf[EuropeSlashKiev]
+  inline def EuropeSlashKiev: EuropeSlashKiev = "Europe/Kiev".asInstanceOf[EuropeSlashKiev]
   
   @js.native
   sealed trait EuropeSlashLisbon
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashLisbon: EuropeSlashLisbon = "Europe/Lisbon".asInstanceOf[EuropeSlashLisbon]
+  inline def EuropeSlashLisbon: EuropeSlashLisbon = "Europe/Lisbon".asInstanceOf[EuropeSlashLisbon]
   
   @js.native
   sealed trait EuropeSlashLjubljana
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashLjubljana: EuropeSlashLjubljana = "Europe/Ljubljana".asInstanceOf[EuropeSlashLjubljana]
+  inline def EuropeSlashLjubljana: EuropeSlashLjubljana = "Europe/Ljubljana".asInstanceOf[EuropeSlashLjubljana]
   
   @js.native
   sealed trait EuropeSlashLondon
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashLondon: EuropeSlashLondon = "Europe/London".asInstanceOf[EuropeSlashLondon]
+  inline def EuropeSlashLondon: EuropeSlashLondon = "Europe/London".asInstanceOf[EuropeSlashLondon]
   
   @js.native
   sealed trait EuropeSlashMadrid
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashMadrid: EuropeSlashMadrid = "Europe/Madrid".asInstanceOf[EuropeSlashMadrid]
+  inline def EuropeSlashMadrid: EuropeSlashMadrid = "Europe/Madrid".asInstanceOf[EuropeSlashMadrid]
   
   @js.native
   sealed trait EuropeSlashMinsk
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashMinsk: EuropeSlashMinsk = "Europe/Minsk".asInstanceOf[EuropeSlashMinsk]
+  inline def EuropeSlashMinsk: EuropeSlashMinsk = "Europe/Minsk".asInstanceOf[EuropeSlashMinsk]
   
   @js.native
   sealed trait EuropeSlashMoscow
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashMoscow: EuropeSlashMoscow = "Europe/Moscow".asInstanceOf[EuropeSlashMoscow]
+  inline def EuropeSlashMoscow: EuropeSlashMoscow = "Europe/Moscow".asInstanceOf[EuropeSlashMoscow]
   
   @js.native
   sealed trait EuropeSlashParis
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashParis: EuropeSlashParis = "Europe/Paris".asInstanceOf[EuropeSlashParis]
+  inline def EuropeSlashParis: EuropeSlashParis = "Europe/Paris".asInstanceOf[EuropeSlashParis]
   
   @js.native
   sealed trait EuropeSlashPrague
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashPrague: EuropeSlashPrague = "Europe/Prague".asInstanceOf[EuropeSlashPrague]
+  inline def EuropeSlashPrague: EuropeSlashPrague = "Europe/Prague".asInstanceOf[EuropeSlashPrague]
   
   @js.native
   sealed trait EuropeSlashRiga
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashRiga: EuropeSlashRiga = "Europe/Riga".asInstanceOf[EuropeSlashRiga]
+  inline def EuropeSlashRiga: EuropeSlashRiga = "Europe/Riga".asInstanceOf[EuropeSlashRiga]
   
   @js.native
   sealed trait EuropeSlashRome
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashRome: EuropeSlashRome = "Europe/Rome".asInstanceOf[EuropeSlashRome]
+  inline def EuropeSlashRome: EuropeSlashRome = "Europe/Rome".asInstanceOf[EuropeSlashRome]
   
   @js.native
   sealed trait EuropeSlashSamara
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashSamara: EuropeSlashSamara = "Europe/Samara".asInstanceOf[EuropeSlashSamara]
+  inline def EuropeSlashSamara: EuropeSlashSamara = "Europe/Samara".asInstanceOf[EuropeSlashSamara]
   
   @js.native
   sealed trait EuropeSlashSarajevo
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashSarajevo: EuropeSlashSarajevo = "Europe/Sarajevo".asInstanceOf[EuropeSlashSarajevo]
+  inline def EuropeSlashSarajevo: EuropeSlashSarajevo = "Europe/Sarajevo".asInstanceOf[EuropeSlashSarajevo]
   
   @js.native
   sealed trait EuropeSlashSkopje
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashSkopje: EuropeSlashSkopje = "Europe/Skopje".asInstanceOf[EuropeSlashSkopje]
+  inline def EuropeSlashSkopje: EuropeSlashSkopje = "Europe/Skopje".asInstanceOf[EuropeSlashSkopje]
   
   @js.native
   sealed trait EuropeSlashSofia
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashSofia: EuropeSlashSofia = "Europe/Sofia".asInstanceOf[EuropeSlashSofia]
+  inline def EuropeSlashSofia: EuropeSlashSofia = "Europe/Sofia".asInstanceOf[EuropeSlashSofia]
   
   @js.native
   sealed trait EuropeSlashStockholm
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashStockholm: EuropeSlashStockholm = "Europe/Stockholm".asInstanceOf[EuropeSlashStockholm]
+  inline def EuropeSlashStockholm: EuropeSlashStockholm = "Europe/Stockholm".asInstanceOf[EuropeSlashStockholm]
   
   @js.native
   sealed trait EuropeSlashTallinn
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashTallinn: EuropeSlashTallinn = "Europe/Tallinn".asInstanceOf[EuropeSlashTallinn]
+  inline def EuropeSlashTallinn: EuropeSlashTallinn = "Europe/Tallinn".asInstanceOf[EuropeSlashTallinn]
   
   @js.native
   sealed trait EuropeSlashVienna
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashVienna: EuropeSlashVienna = "Europe/Vienna".asInstanceOf[EuropeSlashVienna]
+  inline def EuropeSlashVienna: EuropeSlashVienna = "Europe/Vienna".asInstanceOf[EuropeSlashVienna]
   
   @js.native
   sealed trait EuropeSlashVilnius
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashVilnius: EuropeSlashVilnius = "Europe/Vilnius".asInstanceOf[EuropeSlashVilnius]
+  inline def EuropeSlashVilnius: EuropeSlashVilnius = "Europe/Vilnius".asInstanceOf[EuropeSlashVilnius]
   
   @js.native
   sealed trait EuropeSlashVolgograd
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashVolgograd: EuropeSlashVolgograd = "Europe/Volgograd".asInstanceOf[EuropeSlashVolgograd]
+  inline def EuropeSlashVolgograd: EuropeSlashVolgograd = "Europe/Volgograd".asInstanceOf[EuropeSlashVolgograd]
   
   @js.native
   sealed trait EuropeSlashWarsaw
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashWarsaw: EuropeSlashWarsaw = "Europe/Warsaw".asInstanceOf[EuropeSlashWarsaw]
+  inline def EuropeSlashWarsaw: EuropeSlashWarsaw = "Europe/Warsaw".asInstanceOf[EuropeSlashWarsaw]
   
   @js.native
   sealed trait EuropeSlashZagreb
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashZagreb: EuropeSlashZagreb = "Europe/Zagreb".asInstanceOf[EuropeSlashZagreb]
+  inline def EuropeSlashZagreb: EuropeSlashZagreb = "Europe/Zagreb".asInstanceOf[EuropeSlashZagreb]
   
   @js.native
   sealed trait EuropeSlashZurich
     extends StObject
        with Timezone
-  @scala.inline
-  def EuropeSlashZurich: EuropeSlashZurich = "Europe/Zurich".asInstanceOf[EuropeSlashZurich]
+  inline def EuropeSlashZurich: EuropeSlashZurich = "Europe/Zurich".asInstanceOf[EuropeSlashZurich]
   
   @js.native
   sealed trait PacificSlashApia
     extends StObject
        with Timezone
-  @scala.inline
-  def PacificSlashApia: PacificSlashApia = "Pacific/Apia".asInstanceOf[PacificSlashApia]
+  inline def PacificSlashApia: PacificSlashApia = "Pacific/Apia".asInstanceOf[PacificSlashApia]
   
   @js.native
   sealed trait PacificSlashAuckland
     extends StObject
        with Timezone
-  @scala.inline
-  def PacificSlashAuckland: PacificSlashAuckland = "Pacific/Auckland".asInstanceOf[PacificSlashAuckland]
+  inline def PacificSlashAuckland: PacificSlashAuckland = "Pacific/Auckland".asInstanceOf[PacificSlashAuckland]
   
   @js.native
   sealed trait PacificSlashChatham
     extends StObject
        with Timezone
-  @scala.inline
-  def PacificSlashChatham: PacificSlashChatham = "Pacific/Chatham".asInstanceOf[PacificSlashChatham]
+  inline def PacificSlashChatham: PacificSlashChatham = "Pacific/Chatham".asInstanceOf[PacificSlashChatham]
   
   @js.native
   sealed trait PacificSlashFakaofo
     extends StObject
        with Timezone
-  @scala.inline
-  def PacificSlashFakaofo: PacificSlashFakaofo = "Pacific/Fakaofo".asInstanceOf[PacificSlashFakaofo]
+  inline def PacificSlashFakaofo: PacificSlashFakaofo = "Pacific/Fakaofo".asInstanceOf[PacificSlashFakaofo]
   
   @js.native
   sealed trait PacificSlashFiji
     extends StObject
        with Timezone
-  @scala.inline
-  def PacificSlashFiji: PacificSlashFiji = "Pacific/Fiji".asInstanceOf[PacificSlashFiji]
+  inline def PacificSlashFiji: PacificSlashFiji = "Pacific/Fiji".asInstanceOf[PacificSlashFiji]
   
   @js.native
   sealed trait PacificSlashGuadalcanal
     extends StObject
        with Timezone
-  @scala.inline
-  def PacificSlashGuadalcanal: PacificSlashGuadalcanal = "Pacific/Guadalcanal".asInstanceOf[PacificSlashGuadalcanal]
+  inline def PacificSlashGuadalcanal: PacificSlashGuadalcanal = "Pacific/Guadalcanal".asInstanceOf[PacificSlashGuadalcanal]
   
   @js.native
   sealed trait PacificSlashGuam
     extends StObject
        with Timezone
-  @scala.inline
-  def PacificSlashGuam: PacificSlashGuam = "Pacific/Guam".asInstanceOf[PacificSlashGuam]
+  inline def PacificSlashGuam: PacificSlashGuam = "Pacific/Guam".asInstanceOf[PacificSlashGuam]
   
   @js.native
   sealed trait PacificSlashHonolulu
     extends StObject
        with Timezone
-  @scala.inline
-  def PacificSlashHonolulu: PacificSlashHonolulu = "Pacific/Honolulu".asInstanceOf[PacificSlashHonolulu]
+  inline def PacificSlashHonolulu: PacificSlashHonolulu = "Pacific/Honolulu".asInstanceOf[PacificSlashHonolulu]
   
   @js.native
   sealed trait PacificSlashMajuro
     extends StObject
        with Timezone
-  @scala.inline
-  def PacificSlashMajuro: PacificSlashMajuro = "Pacific/Majuro".asInstanceOf[PacificSlashMajuro]
+  inline def PacificSlashMajuro: PacificSlashMajuro = "Pacific/Majuro".asInstanceOf[PacificSlashMajuro]
   
   @js.native
   sealed trait PacificSlashMidway
     extends StObject
        with Timezone
-  @scala.inline
-  def PacificSlashMidway: PacificSlashMidway = "Pacific/Midway".asInstanceOf[PacificSlashMidway]
+  inline def PacificSlashMidway: PacificSlashMidway = "Pacific/Midway".asInstanceOf[PacificSlashMidway]
   
   @js.native
   sealed trait PacificSlashNoumea
     extends StObject
        with Timezone
-  @scala.inline
-  def PacificSlashNoumea: PacificSlashNoumea = "Pacific/Noumea".asInstanceOf[PacificSlashNoumea]
+  inline def PacificSlashNoumea: PacificSlashNoumea = "Pacific/Noumea".asInstanceOf[PacificSlashNoumea]
   
   @js.native
   sealed trait PacificSlashPago_Pago
     extends StObject
        with Timezone
-  @scala.inline
-  def PacificSlashPago_Pago: PacificSlashPago_Pago = "Pacific/Pago_Pago".asInstanceOf[PacificSlashPago_Pago]
+  inline def PacificSlashPago_Pago: PacificSlashPago_Pago = "Pacific/Pago_Pago".asInstanceOf[PacificSlashPago_Pago]
   
   @js.native
   sealed trait PacificSlashPort_Moresby
     extends StObject
        with Timezone
-  @scala.inline
-  def PacificSlashPort_Moresby: PacificSlashPort_Moresby = "Pacific/Port_Moresby".asInstanceOf[PacificSlashPort_Moresby]
+  inline def PacificSlashPort_Moresby: PacificSlashPort_Moresby = "Pacific/Port_Moresby".asInstanceOf[PacificSlashPort_Moresby]
   
   @js.native
   sealed trait PacificSlashTongatapu
     extends StObject
        with Timezone
-  @scala.inline
-  def PacificSlashTongatapu: PacificSlashTongatapu = "Pacific/Tongatapu".asInstanceOf[PacificSlashTongatapu]
+  inline def PacificSlashTongatapu: PacificSlashTongatapu = "Pacific/Tongatapu".asInstanceOf[PacificSlashTongatapu]
 }

@@ -21,28 +21,21 @@ trait SchemaNetworkEndpointGroupsScopedList extends StObject {
 }
 object SchemaNetworkEndpointGroupsScopedList {
   
-  @scala.inline
-  def apply(): SchemaNetworkEndpointGroupsScopedList = {
+  inline def apply(): SchemaNetworkEndpointGroupsScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNetworkEndpointGroupsScopedList]
   }
   
-  @scala.inline
-  implicit class SchemaNetworkEndpointGroupsScopedListMutableBuilder[Self <: SchemaNetworkEndpointGroupsScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNetworkEndpointGroupsScopedList](x: Self) {
     
-    @scala.inline
-    def setNetworkEndpointGroups(value: js.Array[SchemaNetworkEndpointGroup]): Self = StObject.set(x, "networkEndpointGroups", value.asInstanceOf[js.Any])
+    inline def setNetworkEndpointGroups(value: js.Array[SchemaNetworkEndpointGroup]): Self = StObject.set(x, "networkEndpointGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkEndpointGroupsUndefined: Self = StObject.set(x, "networkEndpointGroups", js.undefined)
+    inline def setNetworkEndpointGroupsUndefined: Self = StObject.set(x, "networkEndpointGroups", js.undefined)
     
-    @scala.inline
-    def setNetworkEndpointGroupsVarargs(value: SchemaNetworkEndpointGroup*): Self = StObject.set(x, "networkEndpointGroups", js.Array(value :_*))
+    inline def setNetworkEndpointGroupsVarargs(value: SchemaNetworkEndpointGroup*): Self = StObject.set(x, "networkEndpointGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

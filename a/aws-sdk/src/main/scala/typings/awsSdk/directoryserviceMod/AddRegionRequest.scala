@@ -20,22 +20,17 @@ trait AddRegionRequest extends StObject {
 }
 object AddRegionRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId, RegionName: RegionName, VPCSettings: DirectoryVpcSettings): AddRegionRequest = {
+  inline def apply(DirectoryId: DirectoryId, RegionName: RegionName, VPCSettings: DirectoryVpcSettings): AddRegionRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], RegionName = RegionName.asInstanceOf[js.Any], VPCSettings = VPCSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddRegionRequest]
   }
   
-  @scala.inline
-  implicit class AddRegionRequestMutableBuilder[Self <: AddRegionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddRegionRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+    inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPCSettings(value: DirectoryVpcSettings): Self = StObject.set(x, "VPCSettings", value.asInstanceOf[js.Any])
+    inline def setVPCSettings(value: DirectoryVpcSettings): Self = StObject.set(x, "VPCSettings", value.asInstanceOf[js.Any])
   }
 }

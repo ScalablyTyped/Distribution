@@ -14,31 +14,23 @@ trait BeginDragOptions extends StObject {
 }
 object BeginDragOptions {
   
-  @scala.inline
-  def apply(): BeginDragOptions = {
+  inline def apply(): BeginDragOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BeginDragOptions]
   }
   
-  @scala.inline
-  implicit class BeginDragOptionsMutableBuilder[Self <: BeginDragOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BeginDragOptions](x: Self) {
     
-    @scala.inline
-    def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
+    inline def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientOffsetUndefined: Self = StObject.set(x, "clientOffset", js.undefined)
+    inline def setClientOffsetUndefined: Self = StObject.set(x, "clientOffset", js.undefined)
     
-    @scala.inline
-    def setGetSourceClientOffset(value: /* sourceId */ Identifier => XYCoord): Self = StObject.set(x, "getSourceClientOffset", js.Any.fromFunction1(value))
+    inline def setGetSourceClientOffset(value: /* sourceId */ Identifier => XYCoord): Self = StObject.set(x, "getSourceClientOffset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSourceClientOffsetUndefined: Self = StObject.set(x, "getSourceClientOffset", js.undefined)
+    inline def setGetSourceClientOffsetUndefined: Self = StObject.set(x, "getSourceClientOffset", js.undefined)
     
-    @scala.inline
-    def setPublishSource(value: Boolean): Self = StObject.set(x, "publishSource", value.asInstanceOf[js.Any])
+    inline def setPublishSource(value: Boolean): Self = StObject.set(x, "publishSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishSourceUndefined: Self = StObject.set(x, "publishSource", js.undefined)
+    inline def setPublishSourceUndefined: Self = StObject.set(x, "publishSource", js.undefined)
   }
 }

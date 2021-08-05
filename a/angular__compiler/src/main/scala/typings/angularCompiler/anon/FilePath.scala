@@ -14,22 +14,17 @@ trait FilePath extends StObject {
 }
 object FilePath {
   
-  @scala.inline
-  def apply(filePath: String, fn: js.Any, name: String): FilePath = {
+  inline def apply(filePath: String, fn: js.Any, name: String): FilePath = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilePath]
   }
   
-  @scala.inline
-  implicit class FilePathMutableBuilder[Self <: FilePath] (val x: Self) extends AnyVal {
+  extension [Self <: FilePath](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFn(value: js.Any): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: js.Any): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

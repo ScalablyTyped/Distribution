@@ -25,8 +25,7 @@ trait Delta extends StObject {
 }
 object Delta {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     decreasing: Symbol,
     increasing: Symbol,
     position: top | bottom | left | right,
@@ -38,25 +37,18 @@ object Delta {
     __obj.asInstanceOf[Delta]
   }
   
-  @scala.inline
-  implicit class DeltaMutableBuilder[Self <: Delta] (val x: Self) extends AnyVal {
+  extension [Self <: Delta](x: Self) {
     
-    @scala.inline
-    def setDecreasing(value: Symbol): Self = StObject.set(x, "decreasing", value.asInstanceOf[js.Any])
+    inline def setDecreasing(value: Symbol): Self = StObject.set(x, "decreasing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncreasing(value: Symbol): Self = StObject.set(x, "increasing", value.asInstanceOf[js.Any])
+    inline def setIncreasing(value: Symbol): Self = StObject.set(x, "increasing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: top | bottom | left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: top | bottom | left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReference(value: Double): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: Double): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+    inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueformat(value: String): Self = StObject.set(x, "valueformat", value.asInstanceOf[js.Any])
+    inline def setValueformat(value: String): Self = StObject.set(x, "valueformat", value.asInstanceOf[js.Any])
   }
 }

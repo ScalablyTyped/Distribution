@@ -14,8 +14,7 @@ trait QueryOptions
      with IQueryOptions
 object QueryOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applicationSearchFilter: String,
     dateStackOption: DateStackOption,
     fileTypeFilter: IVector[String],

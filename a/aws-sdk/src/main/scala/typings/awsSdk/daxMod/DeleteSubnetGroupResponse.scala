@@ -13,19 +13,15 @@ trait DeleteSubnetGroupResponse extends StObject {
 }
 object DeleteSubnetGroupResponse {
   
-  @scala.inline
-  def apply(): DeleteSubnetGroupResponse = {
+  inline def apply(): DeleteSubnetGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteSubnetGroupResponse]
   }
   
-  @scala.inline
-  implicit class DeleteSubnetGroupResponseMutableBuilder[Self <: DeleteSubnetGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSubnetGroupResponse](x: Self) {
     
-    @scala.inline
-    def setDeletionMessage(value: String): Self = StObject.set(x, "DeletionMessage", value.asInstanceOf[js.Any])
+    inline def setDeletionMessage(value: String): Self = StObject.set(x, "DeletionMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionMessageUndefined: Self = StObject.set(x, "DeletionMessage", js.undefined)
+    inline def setDeletionMessageUndefined: Self = StObject.set(x, "DeletionMessage", js.undefined)
   }
 }

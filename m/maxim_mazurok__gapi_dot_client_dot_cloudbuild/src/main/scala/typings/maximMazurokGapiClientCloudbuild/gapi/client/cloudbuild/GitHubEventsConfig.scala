@@ -23,43 +23,31 @@ trait GitHubEventsConfig extends StObject {
 }
 object GitHubEventsConfig {
   
-  @scala.inline
-  def apply(): GitHubEventsConfig = {
+  inline def apply(): GitHubEventsConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GitHubEventsConfig]
   }
   
-  @scala.inline
-  implicit class GitHubEventsConfigMutableBuilder[Self <: GitHubEventsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GitHubEventsConfig](x: Self) {
     
-    @scala.inline
-    def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
+    inline def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationIdUndefined: Self = StObject.set(x, "installationId", js.undefined)
+    inline def setInstallationIdUndefined: Self = StObject.set(x, "installationId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setPullRequest(value: PullRequestFilter): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
+    inline def setPullRequest(value: PullRequestFilter): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestUndefined: Self = StObject.set(x, "pullRequest", js.undefined)
+    inline def setPullRequestUndefined: Self = StObject.set(x, "pullRequest", js.undefined)
     
-    @scala.inline
-    def setPush(value: PushFilter): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+    inline def setPush(value: PushFilter): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
+    inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
   }
 }

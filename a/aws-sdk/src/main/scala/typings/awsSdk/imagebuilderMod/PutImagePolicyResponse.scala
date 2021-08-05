@@ -18,25 +18,19 @@ trait PutImagePolicyResponse extends StObject {
 }
 object PutImagePolicyResponse {
   
-  @scala.inline
-  def apply(): PutImagePolicyResponse = {
+  inline def apply(): PutImagePolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutImagePolicyResponse]
   }
   
-  @scala.inline
-  implicit class PutImagePolicyResponseMutableBuilder[Self <: PutImagePolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutImagePolicyResponse](x: Self) {
     
-    @scala.inline
-    def setImageArn(value: ImageBuildVersionArn): Self = StObject.set(x, "imageArn", value.asInstanceOf[js.Any])
+    inline def setImageArn(value: ImageBuildVersionArn): Self = StObject.set(x, "imageArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageArnUndefined: Self = StObject.set(x, "imageArn", js.undefined)
+    inline def setImageArnUndefined: Self = StObject.set(x, "imageArn", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

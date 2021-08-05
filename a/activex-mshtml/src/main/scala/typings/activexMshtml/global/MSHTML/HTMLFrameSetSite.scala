@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLFrameSetSite")
 @js.native
-class HTMLFrameSetSite protected ()
+/* private */ class HTMLFrameSetSite ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLFrameSetSite

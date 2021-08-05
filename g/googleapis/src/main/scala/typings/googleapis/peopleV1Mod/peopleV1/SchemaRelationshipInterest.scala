@@ -30,31 +30,23 @@ trait SchemaRelationshipInterest extends StObject {
 }
 object SchemaRelationshipInterest {
   
-  @scala.inline
-  def apply(): SchemaRelationshipInterest = {
+  inline def apply(): SchemaRelationshipInterest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRelationshipInterest]
   }
   
-  @scala.inline
-  implicit class SchemaRelationshipInterestMutableBuilder[Self <: SchemaRelationshipInterest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRelationshipInterest](x: Self) {
     
-    @scala.inline
-    def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
+    inline def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedValueUndefined: Self = StObject.set(x, "formattedValue", js.undefined)
+    inline def setFormattedValueUndefined: Self = StObject.set(x, "formattedValue", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: SchemaFieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaFieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

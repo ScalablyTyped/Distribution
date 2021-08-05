@@ -48,17 +48,14 @@ object mod extends Shortcut {
   }
   object Command {
     
-    @scala.inline
-    def apply(End: () => Pos, OpPos: Pos, Pos: () => Pos): Command = {
+    inline def apply(End: () => Pos, OpPos: Pos, Pos: () => Pos): Command = {
       val __obj = js.Dynamic.literal(End = js.Any.fromFunction0(End), OpPos = OpPos.asInstanceOf[js.Any], Pos = js.Any.fromFunction0(Pos))
       __obj.asInstanceOf[Command]
     }
     
-    @scala.inline
-    implicit class CommandMutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
+    extension [Self <: Command](x: Self) {
       
-      @scala.inline
-      def setOpPos(value: Pos): Self = StObject.set(x, "OpPos", value.asInstanceOf[js.Any])
+      inline def setOpPos(value: Pos): Self = StObject.set(x, "OpPos", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,20 +69,16 @@ object mod extends Shortcut {
   }
   object Comment {
     
-    @scala.inline
-    def apply(End: () => Pos, Hash: Pos, Pos: () => Pos, Text: String): Comment = {
+    inline def apply(End: () => Pos, Hash: Pos, Pos: () => Pos, Text: String): Comment = {
       val __obj = js.Dynamic.literal(End = js.Any.fromFunction0(End), Hash = Hash.asInstanceOf[js.Any], Pos = js.Any.fromFunction0(Pos), Text = Text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Comment]
     }
     
-    @scala.inline
-    implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+    extension [Self <: Comment](x: Self) {
       
-      @scala.inline
-      def setHash(value: Pos): Self = StObject.set(x, "Hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Pos): Self = StObject.set(x, "Hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,32 +94,24 @@ object mod extends Shortcut {
   }
   object File {
     
-    @scala.inline
-    def apply(End: () => Pos, Last: js.Array[Stmt], Name: String, Pos: () => Pos): File = {
+    inline def apply(End: () => Pos, Last: js.Array[Stmt], Name: String, Pos: () => Pos): File = {
       val __obj = js.Dynamic.literal(End = js.Any.fromFunction0(End), Last = Last.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Pos = js.Any.fromFunction0(Pos))
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setLast(value: js.Array[Stmt]): Self = StObject.set(x, "Last", value.asInstanceOf[js.Any])
+      inline def setLast(value: js.Array[Stmt]): Self = StObject.set(x, "Last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastVarargs(value: Stmt*): Self = StObject.set(x, "Last", js.Array(value :_*))
+      inline def setLastVarargs(value: Stmt*): Self = StObject.set(x, "Last", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStmts(value: js.Array[Stmt]): Self = StObject.set(x, "Stmts", value.asInstanceOf[js.Any])
+      inline def setStmts(value: js.Array[Stmt]): Self = StObject.set(x, "Stmts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStmtsUndefined: Self = StObject.set(x, "Stmts", js.undefined)
+      inline def setStmtsUndefined: Self = StObject.set(x, "Stmts", js.undefined)
       
-      @scala.inline
-      def setStmtsVarargs(value: Stmt*): Self = StObject.set(x, "Stmts", js.Array(value :_*))
+      inline def setStmtsVarargs(value: Stmt*): Self = StObject.set(x, "Stmts", js.Array(value :_*))
     }
   }
   
@@ -142,23 +127,18 @@ object mod extends Shortcut {
   }
   object Lit {
     
-    @scala.inline
-    def apply(End: () => Pos, Pos: () => Pos, Value: String, ValueEnd: Pos, ValuePos: Pos): Lit = {
+    inline def apply(End: () => Pos, Pos: () => Pos, Value: String, ValueEnd: Pos, ValuePos: Pos): Lit = {
       val __obj = js.Dynamic.literal(End = js.Any.fromFunction0(End), Pos = js.Any.fromFunction0(Pos), Value = Value.asInstanceOf[js.Any], ValueEnd = ValueEnd.asInstanceOf[js.Any], ValuePos = ValuePos.asInstanceOf[js.Any])
       __obj.asInstanceOf[Lit]
     }
     
-    @scala.inline
-    implicit class LitMutableBuilder[Self <: Lit] (val x: Self) extends AnyVal {
+    extension [Self <: Lit](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueEnd(value: Pos): Self = StObject.set(x, "ValueEnd", value.asInstanceOf[js.Any])
+      inline def setValueEnd(value: Pos): Self = StObject.set(x, "ValueEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuePos(value: Pos): Self = StObject.set(x, "ValuePos", value.asInstanceOf[js.Any])
+      inline def setValuePos(value: Pos): Self = StObject.set(x, "ValuePos", value.asInstanceOf[js.Any])
     }
   }
   
@@ -170,20 +150,16 @@ object mod extends Shortcut {
   }
   object Node {
     
-    @scala.inline
-    def apply(End: () => Pos, Pos: () => Pos): Node = {
+    inline def apply(End: () => Pos, Pos: () => Pos): Node = {
       val __obj = js.Dynamic.literal(End = js.Any.fromFunction0(End), Pos = js.Any.fromFunction0(Pos))
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setEnd(value: () => Pos): Self = StObject.set(x, "End", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Pos): Self = StObject.set(x, "End", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPos(value: () => Pos): Self = StObject.set(x, "Pos", js.Any.fromFunction0(value))
+      inline def setPos(value: () => Pos): Self = StObject.set(x, "Pos", js.Any.fromFunction0(value))
     }
   }
   
@@ -212,8 +188,7 @@ object mod extends Shortcut {
   }
   object Pos {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       After: Pos => Boolean,
       Col: () => Double,
       IsValid: () => Boolean,
@@ -225,26 +200,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Pos]
     }
     
-    @scala.inline
-    implicit class PosMutableBuilder[Self <: Pos] (val x: Self) extends AnyVal {
+    extension [Self <: Pos](x: Self) {
       
-      @scala.inline
-      def setAfter(value: Pos => Boolean): Self = StObject.set(x, "After", js.Any.fromFunction1(value))
+      inline def setAfter(value: Pos => Boolean): Self = StObject.set(x, "After", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCol(value: () => Double): Self = StObject.set(x, "Col", js.Any.fromFunction0(value))
+      inline def setCol(value: () => Double): Self = StObject.set(x, "Col", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsValid(value: () => Boolean): Self = StObject.set(x, "IsValid", js.Any.fromFunction0(value))
+      inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "IsValid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLine(value: () => Double): Self = StObject.set(x, "Line", js.Any.fromFunction0(value))
+      inline def setLine(value: () => Double): Self = StObject.set(x, "Line", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOffset(value: () => Double): Self = StObject.set(x, "Offset", js.Any.fromFunction0(value))
+      inline def setOffset(value: () => Double): Self = StObject.set(x, "Offset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setString(value: () => String): Self = StObject.set(x, "String", js.Any.fromFunction0(value))
+      inline def setString(value: () => String): Self = StObject.set(x, "String", js.Any.fromFunction0(value))
     }
   }
   
@@ -254,17 +222,14 @@ object mod extends Shortcut {
   }
   object Printer {
     
-    @scala.inline
-    def apply(Print: Node => String): Printer = {
+    inline def apply(Print: Node => String): Printer = {
       val __obj = js.Dynamic.literal(Print = js.Any.fromFunction1(Print))
       __obj.asInstanceOf[Printer]
     }
     
-    @scala.inline
-    implicit class PrinterMutableBuilder[Self <: Printer] (val x: Self) extends AnyVal {
+    extension [Self <: Printer](x: Self) {
       
-      @scala.inline
-      def setPrint(value: Node => String): Self = StObject.set(x, "Print", js.Any.fromFunction1(value))
+      inline def setPrint(value: Node => String): Self = StObject.set(x, "Print", js.Any.fromFunction1(value))
     }
   }
   
@@ -276,17 +241,14 @@ object mod extends Shortcut {
   }
   object ShellScript {
     
-    @scala.inline
-    def apply(syntax: BinaryNextLine): ShellScript = {
+    inline def apply(syntax: BinaryNextLine): ShellScript = {
       val __obj = js.Dynamic.literal(syntax = syntax.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShellScript]
     }
     
-    @scala.inline
-    implicit class ShellScriptMutableBuilder[Self <: ShellScript] (val x: Self) extends AnyVal {
+    extension [Self <: ShellScript](x: Self) {
       
-      @scala.inline
-      def setSyntax(value: BinaryNextLine): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+      inline def setSyntax(value: BinaryNextLine): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     }
   }
   
@@ -310,8 +272,7 @@ object mod extends Shortcut {
   }
   object Stmt {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Background: Boolean,
       Cmd: Command,
       Comments: js.Array[Comment],
@@ -326,32 +287,23 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Stmt]
     }
     
-    @scala.inline
-    implicit class StmtMutableBuilder[Self <: Stmt] (val x: Self) extends AnyVal {
+    extension [Self <: Stmt](x: Self) {
       
-      @scala.inline
-      def setBackground(value: Boolean): Self = StObject.set(x, "Background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: Boolean): Self = StObject.set(x, "Background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCmd(value: Command): Self = StObject.set(x, "Cmd", value.asInstanceOf[js.Any])
+      inline def setCmd(value: Command): Self = StObject.set(x, "Cmd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComments(value: js.Array[Comment]): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: js.Array[Comment]): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "Comments", js.Array(value :_*))
+      inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "Comments", js.Array(value :_*))
       
-      @scala.inline
-      def setCoprocess(value: Boolean): Self = StObject.set(x, "Coprocess", value.asInstanceOf[js.Any])
+      inline def setCoprocess(value: Boolean): Self = StObject.set(x, "Coprocess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNegated(value: Boolean): Self = StObject.set(x, "Negated", value.asInstanceOf[js.Any])
+      inline def setNegated(value: Boolean): Self = StObject.set(x, "Negated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Pos): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Pos): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSemicolon(value: Pos): Self = StObject.set(x, "Semicolon", value.asInstanceOf[js.Any])
+      inline def setSemicolon(value: Pos): Self = StObject.set(x, "Semicolon", value.asInstanceOf[js.Any])
     }
   }
   
@@ -365,23 +317,18 @@ object mod extends Shortcut {
   }
   object Word {
     
-    @scala.inline
-    def apply(End: () => Pos, Lit: () => String, Parts: js.Array[WordPart], Pos: () => Pos): Word = {
+    inline def apply(End: () => Pos, Lit: () => String, Parts: js.Array[WordPart], Pos: () => Pos): Word = {
       val __obj = js.Dynamic.literal(End = js.Any.fromFunction0(End), Lit = js.Any.fromFunction0(Lit), Parts = Parts.asInstanceOf[js.Any], Pos = js.Any.fromFunction0(Pos))
       __obj.asInstanceOf[Word]
     }
     
-    @scala.inline
-    implicit class WordMutableBuilder[Self <: Word] (val x: Self) extends AnyVal {
+    extension [Self <: Word](x: Self) {
       
-      @scala.inline
-      def setLit(value: () => String): Self = StObject.set(x, "Lit", js.Any.fromFunction0(value))
+      inline def setLit(value: () => String): Self = StObject.set(x, "Lit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParts(value: js.Array[WordPart]): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: js.Array[WordPart]): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartsVarargs(value: WordPart*): Self = StObject.set(x, "Parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: WordPart*): Self = StObject.set(x, "Parts", js.Array(value :_*))
     }
   }
   

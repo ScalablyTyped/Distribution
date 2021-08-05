@@ -48,10 +48,8 @@ object AnnotationHelper {
     * @returns constant value or binding info object for a property as expected by  {@link
     * sap.ui.base.ManagedObject#applySettings applySettings}
     */
-  @scala.inline
-  def createPropertySetting(vParts: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySetting")(vParts.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def createPropertySetting(vParts: js.Array[js.Any], fnRootFormatter: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySetting")(vParts.asInstanceOf[js.Any], fnRootFormatter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createPropertySetting(vParts: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySetting")(vParts.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createPropertySetting(vParts: js.Array[js.Any], fnRootFormatter: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertySetting")(vParts.asInstanceOf[js.Any], fnRootFormatter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * A formatter function to be used in a complex binding inside an XML template viewin order to
@@ -99,14 +97,10 @@ object AnnotationHelper {
     * <code>oInterface.getObject("")</code></li>  </ul>
     * @returns the resulting string value to write into the processed XML
     */
-  @scala.inline
-  def format(oInterface: IContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(oInterface.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def format(oInterface: IContext, vRawValue: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(oInterface.asInstanceOf[js.Any], vRawValue.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def format(oInterface: Context): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(oInterface.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def format(oInterface: Context, vRawValue: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(oInterface.asInstanceOf[js.Any], vRawValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(oInterface: IContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(oInterface.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def format(oInterface: IContext, vRawValue: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(oInterface.asInstanceOf[js.Any], vRawValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(oInterface: Context): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(oInterface.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def format(oInterface: Context, vRawValue: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(oInterface.asInstanceOf[js.Any], vRawValue.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * A formatter function to be used in a complex binding inside an XML template viewin order to
@@ -131,14 +125,10 @@ object AnnotationHelper {
     * (in case no navigation is needed); returns "" in case the navigation path  cannot be determined
     * (this is treated as falsy in <code>template:if</code>  statements!)
     */
-  @scala.inline
-  def getNavigationPath(oInterface: IContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNavigationPath")(oInterface.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def getNavigationPath(oInterface: IContext, vRawValue: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getNavigationPath")(oInterface.asInstanceOf[js.Any], vRawValue.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getNavigationPath(oInterface: Context): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNavigationPath")(oInterface.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def getNavigationPath(oInterface: Context, vRawValue: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getNavigationPath")(oInterface.asInstanceOf[js.Any], vRawValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getNavigationPath(oInterface: IContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNavigationPath")(oInterface.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getNavigationPath(oInterface: IContext, vRawValue: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getNavigationPath")(oInterface.asInstanceOf[js.Any], vRawValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getNavigationPath(oInterface: Context): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNavigationPath")(oInterface.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getNavigationPath(oInterface: Context, vRawValue: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getNavigationPath")(oInterface.asInstanceOf[js.Any], vRawValue.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Helper function for a <code>template:with</code> instruction that depending on howit is called goes
@@ -156,8 +146,7 @@ object AnnotationHelper {
     * @returns the path to the entity set, or <code>undefined</code> if no such set is found. In  this
     * case, a warning is logged to the console.
     */
-  @scala.inline
-  def gotoEntitySet(oContext: Context): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gotoEntitySet")(oContext.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def gotoEntitySet(oContext: Context): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gotoEntitySet")(oContext.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Helper function for a <code>template:with</code> instruction that goes to theentity type with the
@@ -172,8 +161,7 @@ object AnnotationHelper {
     * @returns the path to the entity type with the given qualified name,  or <code>undefined</code> if no
     * such type is found. In this case, a warning is  logged to the console.
     */
-  @scala.inline
-  def gotoEntityType(oContext: Context): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gotoEntityType")(oContext.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def gotoEntityType(oContext: Context): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gotoEntityType")(oContext.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Helper function for a <code>template:with</code> instruction that goes to thefunction import with
@@ -190,8 +178,7 @@ object AnnotationHelper {
     * @returns the path to the function import with the given qualified name,  or <code>undefined</code>
     * if no function import is found. In this case, a warning  is logged to the console.
     */
-  @scala.inline
-  def gotoFunctionImport(oContext: Context): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gotoFunctionImport")(oContext.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def gotoFunctionImport(oContext: Context): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gotoFunctionImport")(oContext.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * A formatter function to be used in a complex binding inside an XML template viewin order to
@@ -216,14 +203,10 @@ object AnnotationHelper {
     * "*", <code>""</code> in case the navigation path cannot be   determined, <code>"false"</code>
     * otherwise (the latter are both treated as falsy   in <code>template:if</code> statements!)
     */
-  @scala.inline
-  def isMultiple(oInterface: IContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isMultiple")(oInterface.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def isMultiple(oInterface: IContext, vRawValue: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("isMultiple")(oInterface.asInstanceOf[js.Any], vRawValue.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def isMultiple(oInterface: Context): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isMultiple")(oInterface.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def isMultiple(oInterface: Context, vRawValue: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("isMultiple")(oInterface.asInstanceOf[js.Any], vRawValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def isMultiple(oInterface: IContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isMultiple")(oInterface.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def isMultiple(oInterface: IContext, vRawValue: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("isMultiple")(oInterface.asInstanceOf[js.Any], vRawValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def isMultiple(oInterface: Context): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isMultiple")(oInterface.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def isMultiple(oInterface: Context, vRawValue: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("isMultiple")(oInterface.asInstanceOf[js.Any], vRawValue.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Helper function for a <code>template:with</code> instruction that resolves a dynamic"14.5.2
@@ -238,8 +221,7 @@ object AnnotationHelper {
     * @returns the path to the target, or <code>undefined</code> in case the path cannot be  resolved. In
     * this case, a warning is logged to the console.
     */
-  @scala.inline
-  def resolvePath(oContext: Context): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvePath")(oContext.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def resolvePath(oContext: Context): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvePath")(oContext.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Formatter function that is used in a complex binding inside an XML template view.The function is
@@ -257,12 +239,8 @@ object AnnotationHelper {
     * <code>oInterface.getObject("")</code></li>  </ul>
     * @returns the resulting string value to write into the processed XML
     */
-  @scala.inline
-  def simplePath(oInterface: IContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("simplePath")(oInterface.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def simplePath(oInterface: IContext, vRawValue: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("simplePath")(oInterface.asInstanceOf[js.Any], vRawValue.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def simplePath(oInterface: Context): String = ^.asInstanceOf[js.Dynamic].applyDynamic("simplePath")(oInterface.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def simplePath(oInterface: Context, vRawValue: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("simplePath")(oInterface.asInstanceOf[js.Any], vRawValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def simplePath(oInterface: IContext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("simplePath")(oInterface.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def simplePath(oInterface: IContext, vRawValue: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("simplePath")(oInterface.asInstanceOf[js.Any], vRawValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def simplePath(oInterface: Context): String = ^.asInstanceOf[js.Dynamic].applyDynamic("simplePath")(oInterface.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def simplePath(oInterface: Context, vRawValue: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("simplePath")(oInterface.asInstanceOf[js.Any], vRawValue.asInstanceOf[js.Any])).asInstanceOf[String]
 }

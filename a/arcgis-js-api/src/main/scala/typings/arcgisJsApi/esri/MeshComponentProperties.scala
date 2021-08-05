@@ -34,34 +34,25 @@ trait MeshComponentProperties extends StObject {
 }
 object MeshComponentProperties {
   
-  @scala.inline
-  def apply(): MeshComponentProperties = {
+  inline def apply(): MeshComponentProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeshComponentProperties]
   }
   
-  @scala.inline
-  implicit class MeshComponentPropertiesMutableBuilder[Self <: MeshComponentProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MeshComponentProperties](x: Self) {
     
-    @scala.inline
-    def setFaces(value: Uint32Array | js.Array[Double] | Uint16Array): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
+    inline def setFaces(value: Uint32Array | js.Array[Double] | Uint16Array): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacesUndefined: Self = StObject.set(x, "faces", js.undefined)
+    inline def setFacesUndefined: Self = StObject.set(x, "faces", js.undefined)
     
-    @scala.inline
-    def setFacesVarargs(value: Double*): Self = StObject.set(x, "faces", js.Array(value :_*))
+    inline def setFacesVarargs(value: Double*): Self = StObject.set(x, "faces", js.Array(value :_*))
     
-    @scala.inline
-    def setMaterial(value: MeshMaterialProperties | MeshMaterialMetallicRoughnessProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: MeshMaterialProperties | MeshMaterialMetallicRoughnessProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
-    @scala.inline
-    def setShading(value: source | flat | smooth): Self = StObject.set(x, "shading", value.asInstanceOf[js.Any])
+    inline def setShading(value: source | flat | smooth): Self = StObject.set(x, "shading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadingUndefined: Self = StObject.set(x, "shading", js.undefined)
+    inline def setShadingUndefined: Self = StObject.set(x, "shading", js.undefined)
   }
 }

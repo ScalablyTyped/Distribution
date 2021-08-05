@@ -26,8 +26,7 @@ trait RNFetchBlobReadStream extends StObject {
 }
 object RNFetchBlobReadStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     closed: Boolean,
     encoding: Encoding,
     onData: js.Function1[/* chunk */ String | js.Array[Double], Unit] => Unit,
@@ -41,37 +40,26 @@ object RNFetchBlobReadStream {
     __obj.asInstanceOf[RNFetchBlobReadStream]
   }
   
-  @scala.inline
-  implicit class RNFetchBlobReadStreamMutableBuilder[Self <: RNFetchBlobReadStream] (val x: Self) extends AnyVal {
+  extension [Self <: RNFetchBlobReadStream](x: Self) {
     
-    @scala.inline
-    def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+    inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
+    inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
     
-    @scala.inline
-    def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+    inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncoding(value: Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnData(value: js.Function1[/* chunk */ String | js.Array[Double], Unit] => Unit): Self = StObject.set(x, "onData", js.Any.fromFunction1(value))
+    inline def setOnData(value: js.Function1[/* chunk */ String | js.Array[Double], Unit] => Unit): Self = StObject.set(x, "onData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnEnd(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+    inline def setOnEnd(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnError(value: js.Function1[/* err */ js.Any, Unit] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: js.Function1[/* err */ js.Any, Unit] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTick(value: Double): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    inline def setTick(value: Double): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
   }
 }

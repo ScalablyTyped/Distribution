@@ -71,8 +71,7 @@ trait Display extends StObject {
 }
 object Display {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accelerometerSupport: available | unavailable | unknown_,
     bounds: Rectangle,
     colorDepth: Double,
@@ -92,49 +91,34 @@ object Display {
     __obj.asInstanceOf[Display]
   }
   
-  @scala.inline
-  implicit class DisplayMutableBuilder[Self <: Display] (val x: Self) extends AnyVal {
+  extension [Self <: Display](x: Self) {
     
-    @scala.inline
-    def setAccelerometerSupport(value: available | unavailable | unknown_): Self = StObject.set(x, "accelerometerSupport", value.asInstanceOf[js.Any])
+    inline def setAccelerometerSupport(value: available | unavailable | unknown_): Self = StObject.set(x, "accelerometerSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBounds(value: Rectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Rectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorDepth(value: Double): Self = StObject.set(x, "colorDepth", value.asInstanceOf[js.Any])
+    inline def setColorDepth(value: Double): Self = StObject.set(x, "colorDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSpace(value: String): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
+    inline def setColorSpace(value: String): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthPerComponent(value: Double): Self = StObject.set(x, "depthPerComponent", value.asInstanceOf[js.Any])
+    inline def setDepthPerComponent(value: Double): Self = StObject.set(x, "depthPerComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+    inline def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonochrome(value: Boolean): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
+    inline def setMonochrome(value: Boolean): Self = StObject.set(x, "monochrome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchSupport(value: available | unavailable | unknown_): Self = StObject.set(x, "touchSupport", value.asInstanceOf[js.Any])
+    inline def setTouchSupport(value: available | unavailable | unknown_): Self = StObject.set(x, "touchSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkArea(value: Rectangle): Self = StObject.set(x, "workArea", value.asInstanceOf[js.Any])
+    inline def setWorkArea(value: Rectangle): Self = StObject.set(x, "workArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkAreaSize(value: Size): Self = StObject.set(x, "workAreaSize", value.asInstanceOf[js.Any])
+    inline def setWorkAreaSize(value: Size): Self = StObject.set(x, "workAreaSize", value.asInstanceOf[js.Any])
   }
 }

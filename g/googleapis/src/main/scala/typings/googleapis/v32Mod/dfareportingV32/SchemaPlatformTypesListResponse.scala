@@ -22,28 +22,21 @@ trait SchemaPlatformTypesListResponse extends StObject {
 }
 object SchemaPlatformTypesListResponse {
   
-  @scala.inline
-  def apply(): SchemaPlatformTypesListResponse = {
+  inline def apply(): SchemaPlatformTypesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPlatformTypesListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaPlatformTypesListResponseMutableBuilder[Self <: SchemaPlatformTypesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPlatformTypesListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPlatformTypes(value: js.Array[SchemaPlatformType]): Self = StObject.set(x, "platformTypes", value.asInstanceOf[js.Any])
+    inline def setPlatformTypes(value: js.Array[SchemaPlatformType]): Self = StObject.set(x, "platformTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformTypesUndefined: Self = StObject.set(x, "platformTypes", js.undefined)
+    inline def setPlatformTypesUndefined: Self = StObject.set(x, "platformTypes", js.undefined)
     
-    @scala.inline
-    def setPlatformTypesVarargs(value: SchemaPlatformType*): Self = StObject.set(x, "platformTypes", js.Array(value :_*))
+    inline def setPlatformTypesVarargs(value: SchemaPlatformType*): Self = StObject.set(x, "platformTypes", js.Array(value :_*))
   }
 }

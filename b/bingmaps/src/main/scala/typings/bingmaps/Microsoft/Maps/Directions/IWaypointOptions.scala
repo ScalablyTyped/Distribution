@@ -23,31 +23,23 @@ trait IWaypointOptions extends StObject {
 }
 object IWaypointOptions {
   
-  @scala.inline
-  def apply(): IWaypointOptions = {
+  inline def apply(): IWaypointOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IWaypointOptions]
   }
   
-  @scala.inline
-  implicit class IWaypointOptionsMutableBuilder[Self <: IWaypointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IWaypointOptions](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setIsViaPoint(value: Boolean): Self = StObject.set(x, "isViaPoint", value.asInstanceOf[js.Any])
+    inline def setIsViaPoint(value: Boolean): Self = StObject.set(x, "isViaPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsViaPointUndefined: Self = StObject.set(x, "isViaPoint", js.undefined)
+    inline def setIsViaPointUndefined: Self = StObject.set(x, "isViaPoint", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

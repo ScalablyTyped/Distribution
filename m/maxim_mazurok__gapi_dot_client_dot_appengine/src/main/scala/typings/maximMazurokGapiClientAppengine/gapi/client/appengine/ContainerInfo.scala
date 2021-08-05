@@ -14,19 +14,15 @@ trait ContainerInfo extends StObject {
 }
 object ContainerInfo {
   
-  @scala.inline
-  def apply(): ContainerInfo = {
+  inline def apply(): ContainerInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerInfo]
   }
   
-  @scala.inline
-  implicit class ContainerInfoMutableBuilder[Self <: ContainerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerInfo](x: Self) {
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

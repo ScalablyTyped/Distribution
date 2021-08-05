@@ -18,22 +18,17 @@ trait KinesisStreamsOutputDescription extends StObject {
 }
 object KinesisStreamsOutputDescription {
   
-  @scala.inline
-  def apply(ResourceARN: ResourceARN): KinesisStreamsOutputDescription = {
+  inline def apply(ResourceARN: ResourceARN): KinesisStreamsOutputDescription = {
     val __obj = js.Dynamic.literal(ResourceARN = ResourceARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[KinesisStreamsOutputDescription]
   }
   
-  @scala.inline
-  implicit class KinesisStreamsOutputDescriptionMutableBuilder[Self <: KinesisStreamsOutputDescription] (val x: Self) extends AnyVal {
+  extension [Self <: KinesisStreamsOutputDescription](x: Self) {
     
-    @scala.inline
-    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
+    inline def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
+    inline def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
   }
 }

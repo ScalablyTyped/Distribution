@@ -12,19 +12,15 @@ trait Utility extends StObject {
 }
 object Utility {
   
-  @scala.inline
-  def apply(lAYOUTS_LATESTVERSION_RELATIVE_URL: String, lAYOUTS_LATESTVERSION_URL: String): Utility = {
+  inline def apply(lAYOUTS_LATESTVERSION_RELATIVE_URL: String, lAYOUTS_LATESTVERSION_URL: String): Utility = {
     val __obj = js.Dynamic.literal(lAYOUTS_LATESTVERSION_RELATIVE_URL = lAYOUTS_LATESTVERSION_RELATIVE_URL.asInstanceOf[js.Any], lAYOUTS_LATESTVERSION_URL = lAYOUTS_LATESTVERSION_URL.asInstanceOf[js.Any])
     __obj.asInstanceOf[Utility]
   }
   
-  @scala.inline
-  implicit class UtilityMutableBuilder[Self <: Utility] (val x: Self) extends AnyVal {
+  extension [Self <: Utility](x: Self) {
     
-    @scala.inline
-    def setLAYOUTS_LATESTVERSION_RELATIVE_URL(value: String): Self = StObject.set(x, "lAYOUTS_LATESTVERSION_RELATIVE_URL", value.asInstanceOf[js.Any])
+    inline def setLAYOUTS_LATESTVERSION_RELATIVE_URL(value: String): Self = StObject.set(x, "lAYOUTS_LATESTVERSION_RELATIVE_URL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLAYOUTS_LATESTVERSION_URL(value: String): Self = StObject.set(x, "lAYOUTS_LATESTVERSION_URL", value.asInstanceOf[js.Any])
+    inline def setLAYOUTS_LATESTVERSION_URL(value: String): Self = StObject.set(x, "lAYOUTS_LATESTVERSION_URL", value.asInstanceOf[js.Any])
   }
 }

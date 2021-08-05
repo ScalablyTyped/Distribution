@@ -25,20 +25,16 @@ object pageHeaderMod {
   }
   object PageHeaderProps {
     
-    @scala.inline
-    def apply(): PageHeaderProps = {
+    inline def apply(): PageHeaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageHeaderProps]
     }
     
-    @scala.inline
-    implicit class PageHeaderPropsMutableBuilder[Self <: PageHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: PageHeaderProps](x: Self) {
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
     }
   }
 }

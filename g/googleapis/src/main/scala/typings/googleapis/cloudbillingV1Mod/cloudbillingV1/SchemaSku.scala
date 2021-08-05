@@ -51,61 +51,43 @@ trait SchemaSku extends StObject {
 }
 object SchemaSku {
   
-  @scala.inline
-  def apply(): SchemaSku = {
+  inline def apply(): SchemaSku = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSku]
   }
   
-  @scala.inline
-  implicit class SchemaSkuMutableBuilder[Self <: SchemaSku] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSku](x: Self) {
     
-    @scala.inline
-    def setCategory(value: SchemaCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: SchemaCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPricingInfo(value: js.Array[SchemaPricingInfo]): Self = StObject.set(x, "pricingInfo", value.asInstanceOf[js.Any])
+    inline def setPricingInfo(value: js.Array[SchemaPricingInfo]): Self = StObject.set(x, "pricingInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricingInfoUndefined: Self = StObject.set(x, "pricingInfo", js.undefined)
+    inline def setPricingInfoUndefined: Self = StObject.set(x, "pricingInfo", js.undefined)
     
-    @scala.inline
-    def setPricingInfoVarargs(value: SchemaPricingInfo*): Self = StObject.set(x, "pricingInfo", js.Array(value :_*))
+    inline def setPricingInfoVarargs(value: SchemaPricingInfo*): Self = StObject.set(x, "pricingInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setServiceProviderName(value: String): Self = StObject.set(x, "serviceProviderName", value.asInstanceOf[js.Any])
+    inline def setServiceProviderName(value: String): Self = StObject.set(x, "serviceProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceProviderNameUndefined: Self = StObject.set(x, "serviceProviderName", js.undefined)
+    inline def setServiceProviderNameUndefined: Self = StObject.set(x, "serviceProviderName", js.undefined)
     
-    @scala.inline
-    def setServiceRegions(value: js.Array[String]): Self = StObject.set(x, "serviceRegions", value.asInstanceOf[js.Any])
+    inline def setServiceRegions(value: js.Array[String]): Self = StObject.set(x, "serviceRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceRegionsUndefined: Self = StObject.set(x, "serviceRegions", js.undefined)
+    inline def setServiceRegionsUndefined: Self = StObject.set(x, "serviceRegions", js.undefined)
     
-    @scala.inline
-    def setServiceRegionsVarargs(value: String*): Self = StObject.set(x, "serviceRegions", js.Array(value :_*))
+    inline def setServiceRegionsVarargs(value: String*): Self = StObject.set(x, "serviceRegions", js.Array(value :_*))
     
-    @scala.inline
-    def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
+    inline def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
+    inline def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
   }
 }

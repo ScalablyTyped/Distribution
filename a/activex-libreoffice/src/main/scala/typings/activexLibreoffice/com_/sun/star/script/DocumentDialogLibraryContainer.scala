@@ -34,8 +34,7 @@ trait DocumentDialogLibraryContainer
 }
 object DocumentDialogLibraryContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContainerLocationName: String,
     ElementNames: SafeArray[String],
     ElementType: `type`,
@@ -72,13 +71,10 @@ object DocumentDialogLibraryContainer {
     __obj.asInstanceOf[DocumentDialogLibraryContainer]
   }
   
-  @scala.inline
-  implicit class DocumentDialogLibraryContainerMutableBuilder[Self <: DocumentDialogLibraryContainer] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentDialogLibraryContainer](x: Self) {
     
-    @scala.inline
-    def setCreate(value: XStorageBasedDocument => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: XStorageBasedDocument => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateWithURL(value: String => Unit): Self = StObject.set(x, "createWithURL", js.Any.fromFunction1(value))
+    inline def setCreateWithURL(value: String => Unit): Self = StObject.set(x, "createWithURL", js.Any.fromFunction1(value))
   }
 }

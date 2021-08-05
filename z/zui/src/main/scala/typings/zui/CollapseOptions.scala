@@ -12,25 +12,19 @@ trait CollapseOptions extends StObject {
 }
 object CollapseOptions {
   
-  @scala.inline
-  def apply(): CollapseOptions = {
+  inline def apply(): CollapseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollapseOptions]
   }
   
-  @scala.inline
-  implicit class CollapseOptionsMutableBuilder[Self <: CollapseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CollapseOptions](x: Self) {
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setToggle(value: Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+    inline def setToggle(value: Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+    inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
   }
 }

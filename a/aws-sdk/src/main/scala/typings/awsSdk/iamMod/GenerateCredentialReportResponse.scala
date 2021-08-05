@@ -18,25 +18,19 @@ trait GenerateCredentialReportResponse extends StObject {
 }
 object GenerateCredentialReportResponse {
   
-  @scala.inline
-  def apply(): GenerateCredentialReportResponse = {
+  inline def apply(): GenerateCredentialReportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateCredentialReportResponse]
   }
   
-  @scala.inline
-  implicit class GenerateCredentialReportResponseMutableBuilder[Self <: GenerateCredentialReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateCredentialReportResponse](x: Self) {
     
-    @scala.inline
-    def setDescription(value: ReportStateDescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ReportStateDescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setState(value: ReportStateType): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ReportStateType): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

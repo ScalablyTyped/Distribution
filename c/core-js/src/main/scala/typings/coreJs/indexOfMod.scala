@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object indexOfMod {
   
   /* was `typeof core.Array.indexOf` */
-  @scala.inline
-  def apply[T](array: ArrayLike[T], searchElement: T): Double = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], searchElement.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def apply[T](array: ArrayLike[T], searchElement: T, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], searchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply[T](array: ArrayLike[T], searchElement: T): Double = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], searchElement.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply[T](array: ArrayLike[T], searchElement: T, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], searchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("core-js/fn/array/index-of", JSImport.Namespace)
   @js.native

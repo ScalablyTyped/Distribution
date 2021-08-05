@@ -38,8 +38,7 @@ trait ConditionalDataBarRule extends StObject {
 }
 object ConditionalDataBarRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `type`: ConditionalFormatRuleType | Invalid | Automatic | LowestValue | HighestValue | Number | Percent | Formula | Percentile
   ): ConditionalDataBarRule = {
     val __obj = js.Dynamic.literal()
@@ -47,17 +46,13 @@ object ConditionalDataBarRule {
     __obj.asInstanceOf[ConditionalDataBarRule]
   }
   
-  @scala.inline
-  implicit class ConditionalDataBarRuleMutableBuilder[Self <: ConditionalDataBarRule] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalDataBarRule](x: Self) {
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+    inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: ConditionalFormatRuleType | Invalid | Automatic | LowestValue | HighestValue | Number | Percent | Formula | Percentile
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

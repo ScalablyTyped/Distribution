@@ -39,8 +39,7 @@ trait Lifetimes extends StObject {
 }
 object Lifetimes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attached: () => Unit,
     created: () => Unit,
     detached: () => Unit,
@@ -51,22 +50,16 @@ object Lifetimes {
     __obj.asInstanceOf[Lifetimes]
   }
   
-  @scala.inline
-  implicit class LifetimesMutableBuilder[Self <: Lifetimes] (val x: Self) extends AnyVal {
+  extension [Self <: Lifetimes](x: Self) {
     
-    @scala.inline
-    def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
+    inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
+    inline def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
+    inline def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoved(value: () => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction0(value))
+    inline def setMoved(value: () => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
+    inline def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
   }
 }

@@ -14,17 +14,14 @@ object angular {
     }
     object I18nextProvider {
       
-      @scala.inline
-      def apply(options: js.Any): I18nextProvider = {
+      inline def apply(options: js.Any): I18nextProvider = {
         val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
         __obj.asInstanceOf[I18nextProvider]
       }
       
-      @scala.inline
-      implicit class I18nextProviderMutableBuilder[Self <: I18nextProvider] (val x: Self) extends AnyVal {
+      extension [Self <: I18nextProvider](x: Self) {
         
-        @scala.inline
-        def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       }
     }
   }

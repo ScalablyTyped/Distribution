@@ -22,37 +22,27 @@ trait IncomingHttpHeaders
 }
 object IncomingHttpHeaders {
   
-  @scala.inline
-  def apply(): IncomingHttpHeaders = {
+  inline def apply(): IncomingHttpHeaders = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncomingHttpHeaders]
   }
   
-  @scala.inline
-  implicit class IncomingHttpHeadersMutableBuilder[Self <: IncomingHttpHeaders] (val x: Self) extends AnyVal {
+  extension [Self <: IncomingHttpHeaders](x: Self) {
     
-    @scala.inline
-    def setColonauthority(value: String): Self = StObject.set(x, ":authority", value.asInstanceOf[js.Any])
+    inline def setColonauthority(value: String): Self = StObject.set(x, ":authority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColonauthorityUndefined: Self = StObject.set(x, ":authority", js.undefined)
+    inline def setColonauthorityUndefined: Self = StObject.set(x, ":authority", js.undefined)
     
-    @scala.inline
-    def setColonmethod(value: String): Self = StObject.set(x, ":method", value.asInstanceOf[js.Any])
+    inline def setColonmethod(value: String): Self = StObject.set(x, ":method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColonmethodUndefined: Self = StObject.set(x, ":method", js.undefined)
+    inline def setColonmethodUndefined: Self = StObject.set(x, ":method", js.undefined)
     
-    @scala.inline
-    def setColonpath(value: String): Self = StObject.set(x, ":path", value.asInstanceOf[js.Any])
+    inline def setColonpath(value: String): Self = StObject.set(x, ":path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColonpathUndefined: Self = StObject.set(x, ":path", js.undefined)
+    inline def setColonpathUndefined: Self = StObject.set(x, ":path", js.undefined)
     
-    @scala.inline
-    def setColonscheme(value: String): Self = StObject.set(x, ":scheme", value.asInstanceOf[js.Any])
+    inline def setColonscheme(value: String): Self = StObject.set(x, ":scheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColonschemeUndefined: Self = StObject.set(x, ":scheme", js.undefined)
+    inline def setColonschemeUndefined: Self = StObject.set(x, ":scheme", js.undefined)
   }
 }

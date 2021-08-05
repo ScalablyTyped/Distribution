@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StackingDirection extends StObject
 object StackingDirection {
   
-  @scala.inline
-  def NO_STACKING: `0` = 0.asInstanceOf[`0`]
+  inline def NO_STACKING: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Y_STACKING: `1` = 1.asInstanceOf[`1`]
+  inline def Y_STACKING: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Z_STACKING: `2` = 2.asInstanceOf[`2`]
+  inline def Z_STACKING: `2` = 2.asInstanceOf[`2`]
 }

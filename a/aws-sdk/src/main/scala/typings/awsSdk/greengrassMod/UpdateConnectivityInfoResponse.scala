@@ -18,25 +18,19 @@ trait UpdateConnectivityInfoResponse extends StObject {
 }
 object UpdateConnectivityInfoResponse {
   
-  @scala.inline
-  def apply(): UpdateConnectivityInfoResponse = {
+  inline def apply(): UpdateConnectivityInfoResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateConnectivityInfoResponse]
   }
   
-  @scala.inline
-  implicit class UpdateConnectivityInfoResponseMutableBuilder[Self <: UpdateConnectivityInfoResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateConnectivityInfoResponse](x: Self) {
     
-    @scala.inline
-    def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait SecurityGroupIdentifier extends StObject {
 }
 object SecurityGroupIdentifier {
   
-  @scala.inline
-  def apply(): SecurityGroupIdentifier = {
+  inline def apply(): SecurityGroupIdentifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityGroupIdentifier]
   }
   
-  @scala.inline
-  implicit class SecurityGroupIdentifierMutableBuilder[Self <: SecurityGroupIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityGroupIdentifier](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: String): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
   }
 }

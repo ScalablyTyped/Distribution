@@ -13,19 +13,15 @@ trait SchemaResourcePolicyVmMaintenancePolicy extends StObject {
 }
 object SchemaResourcePolicyVmMaintenancePolicy {
   
-  @scala.inline
-  def apply(): SchemaResourcePolicyVmMaintenancePolicy = {
+  inline def apply(): SchemaResourcePolicyVmMaintenancePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourcePolicyVmMaintenancePolicy]
   }
   
-  @scala.inline
-  implicit class SchemaResourcePolicyVmMaintenancePolicyMutableBuilder[Self <: SchemaResourcePolicyVmMaintenancePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourcePolicyVmMaintenancePolicy](x: Self) {
     
-    @scala.inline
-    def setMaintenanceWindow(value: SchemaResourcePolicyVmMaintenancePolicyMaintenanceWindow): Self = StObject.set(x, "maintenanceWindow", value.asInstanceOf[js.Any])
+    inline def setMaintenanceWindow(value: SchemaResourcePolicyVmMaintenancePolicyMaintenanceWindow): Self = StObject.set(x, "maintenanceWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintenanceWindowUndefined: Self = StObject.set(x, "maintenanceWindow", js.undefined)
+    inline def setMaintenanceWindowUndefined: Self = StObject.set(x, "maintenanceWindow", js.undefined)
   }
 }

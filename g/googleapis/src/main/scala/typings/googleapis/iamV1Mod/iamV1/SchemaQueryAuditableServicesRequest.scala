@@ -19,19 +19,15 @@ trait SchemaQueryAuditableServicesRequest extends StObject {
 }
 object SchemaQueryAuditableServicesRequest {
   
-  @scala.inline
-  def apply(): SchemaQueryAuditableServicesRequest = {
+  inline def apply(): SchemaQueryAuditableServicesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQueryAuditableServicesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaQueryAuditableServicesRequestMutableBuilder[Self <: SchemaQueryAuditableServicesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQueryAuditableServicesRequest](x: Self) {
     
-    @scala.inline
-    def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
+    inline def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
+    inline def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
   }
 }

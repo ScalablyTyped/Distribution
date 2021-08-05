@@ -14,31 +14,23 @@ trait BeginsWith extends StObject {
 }
 object BeginsWith {
   
-  @scala.inline
-  def apply(): BeginsWith = {
+  inline def apply(): BeginsWith = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BeginsWith]
   }
   
-  @scala.inline
-  implicit class BeginsWithMutableBuilder[Self <: BeginsWith] (val x: Self) extends AnyVal {
+  extension [Self <: BeginsWith](x: Self) {
     
-    @scala.inline
-    def setBeginsWith(value: String): Self = StObject.set(x, "beginsWith", value.asInstanceOf[js.Any])
+    inline def setBeginsWith(value: String): Self = StObject.set(x, "beginsWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginsWithUndefined: Self = StObject.set(x, "beginsWith", js.undefined)
+    inline def setBeginsWithUndefined: Self = StObject.set(x, "beginsWith", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setStartAt(value: String): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
+    inline def setStartAt(value: String): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
+    inline def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
   }
 }

@@ -58,8 +58,7 @@ object system {
     val ^ : js.Any = js.native
     
     /** Queries basic CPU information of the system. */
-    @scala.inline
-    def getInfo(callback: js.Function1[/* info */ CpuInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getInfo(callback: js.Function1[/* info */ CpuInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   ////////////////////
@@ -85,26 +84,22 @@ object system {
       @JSGlobal("chrome.system.display.DisplayPosition.BOTTOM")
       @js.native
       def BOTTOM: bottom_ = js.native
-      @scala.inline
-      def BOTTOM_=(x: bottom_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOTTOM")(x.asInstanceOf[js.Any])
+      inline def BOTTOM_=(x: bottom_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOTTOM")(x.asInstanceOf[js.Any])
       
       @JSGlobal("chrome.system.display.DisplayPosition.LEFT")
       @js.native
       def LEFT: left_ = js.native
-      @scala.inline
-      def LEFT_=(x: left_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT")(x.asInstanceOf[js.Any])
+      inline def LEFT_=(x: left_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT")(x.asInstanceOf[js.Any])
       
       @JSGlobal("chrome.system.display.DisplayPosition.RIGHT")
       @js.native
       def RIGHT: right_ = js.native
-      @scala.inline
-      def RIGHT_=(x: right_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
+      inline def RIGHT_=(x: right_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
       
       @JSGlobal("chrome.system.display.DisplayPosition.TOP")
       @js.native
       def TOP: top_ = js.native
-      @scala.inline
-      def TOP_=(x: top_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP")(x.asInstanceOf[js.Any])
+      inline def TOP_=(x: top_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP")(x.asInstanceOf[js.Any])
     }
     
     object MirrorMode {
@@ -116,20 +111,17 @@ object system {
       @JSGlobal("chrome.system.display.MirrorMode.MIXED")
       @js.native
       def MIXED: mixed = js.native
-      @scala.inline
-      def MIXED_=(x: mixed): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIXED")(x.asInstanceOf[js.Any])
+      inline def MIXED_=(x: mixed): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIXED")(x.asInstanceOf[js.Any])
       
       @JSGlobal("chrome.system.display.MirrorMode.NORMAL")
       @js.native
       def NORMAL: normal_ = js.native
-      @scala.inline
-      def NORMAL_=(x: normal_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NORMAL")(x.asInstanceOf[js.Any])
+      inline def NORMAL_=(x: normal_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NORMAL")(x.asInstanceOf[js.Any])
       
       @JSGlobal("chrome.system.display.MirrorMode.OFF")
       @js.native
       def OFF: off = js.native
-      @scala.inline
-      def OFF_=(x: off): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OFF")(x.asInstanceOf[js.Any])
+      inline def OFF_=(x: off): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OFF")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -137,8 +129,7 @@ object system {
       * @since Chrome 57
       * @param id The display's unique identifier.
       */
-    @scala.inline
-    def clearTouchCalibration(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTouchCalibration")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def clearTouchCalibration(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTouchCalibration")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Sets the touch calibration pairs for a display.
@@ -150,8 +141,7 @@ object system {
       * @param bounds Bounds of the display when the touch calibration was performed. |bounds.left| and |bounds.top| values are ignored.
       * @throws Error
       */
-    @scala.inline
-    def completeCustomTouchCalibration(pairs: TouchCalibrationPairs, bounds: Bounds): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("completeCustomTouchCalibration")(pairs.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def completeCustomTouchCalibration(pairs: TouchCalibrationPairs, bounds: Bounds): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("completeCustomTouchCalibration")(pairs.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
@@ -162,8 +152,7 @@ object system {
       * @since Chrome 46
       * @param {boolean} enabled True if unified desktop should be enabled.
       */
-    @scala.inline
-    def enableUnifiedDesktop(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableUnifiedDesktop")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def enableUnifiedDesktop(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableUnifiedDesktop")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
@@ -172,23 +161,20 @@ object system {
       * @export
       * @param callback The callback to invoke with the results.
       */
-    @scala.inline
-    def getDisplayLayout(callback: js.Function1[/* layouts */ js.Array[DisplayLayout], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayLayout")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getDisplayLayout(callback: js.Function1[/* layouts */ js.Array[DisplayLayout], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayLayout")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Requests the information for all attached display devices.
       * @param callback The callback to invoke with the results.
       */
-    @scala.inline
-    def getInfo(callback: js.Function1[/* info */ js.Array[DisplayInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getInfo(callback: js.Function1[/* info */ js.Array[DisplayInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /**
       * Requests the information for all attached display devices.
       * @since Chrome 59
       * @param flags Options affecting how the information is returned.
       * @param callback The callback to invoke with the results.
       */
-    @scala.inline
-    def getInfo(flags: DisplayInfoFlags, callback: js.Function1[/* info */ js.Array[DisplayInfo], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def getInfo(flags: DisplayInfoFlags, callback: js.Function1[/* info */ js.Array[DisplayInfo], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(flags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Fired when anything changes to the display configuration.
@@ -206,24 +192,21 @@ object system {
       * @param id The display's unique identifier.
       * @param delta The amount to change the overscan insets.
       */
-    @scala.inline
-    def overscanCalibrationAdjust(id: String, delta: Insets): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("overscanCalibrationAdjust")(id.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def overscanCalibrationAdjust(id: String, delta: Insets): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("overscanCalibrationAdjust")(id.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Complete overscan adjustments for a display by saving the current values and hiding the overlay.
       * @since Chrome 53
       * @param id The display's unique identifier.
       */
-    @scala.inline
-    def overscanCalibrationComplete(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overscanCalibrationComplete")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def overscanCalibrationComplete(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overscanCalibrationComplete")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Resets the overscan insets for a display to the last saved value (i.e before Start was called).
       * @since Chrome 53
       * @param id The display's unique identifier.
       */
-    @scala.inline
-    def overscanCalibrationReset(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overscanCalibrationReset")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def overscanCalibrationReset(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overscanCalibrationReset")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Starts overscan calibration for a display.
@@ -232,8 +215,7 @@ object system {
       * @since Chrome 53
       * @param id The display's unique identifier.
       */
-    @scala.inline
-    def overscanCalibrationStart(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overscanCalibrationStart")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def overscanCalibrationStart(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overscanCalibrationStart")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
@@ -246,10 +228,8 @@ object system {
       * @param layouts The layout information, required for all displays except the primary display.
       * @param callback Empty function called when the function finishes. To find out whether the function succeeded, runtime.lastError should be queried.
       */
-    @scala.inline
-    def setDisplayLayout(layouts: js.Array[DisplayLayout]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayLayout")(layouts.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def setDisplayLayout(layouts: js.Array[DisplayLayout], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayLayout")(layouts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setDisplayLayout(layouts: js.Array[DisplayLayout]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayLayout")(layouts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setDisplayLayout(layouts: js.Array[DisplayLayout], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayLayout")(layouts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * @requires(CrOS Kiosk apps | WebUI) This is only available to Chrome OS Kiosk apps and Web UI.
@@ -261,13 +241,10 @@ object system {
       * @param {DisplayPropertiesInfo} info The information about display properties that should be changed. A property will be changed only if a new value for it is specified in |info|.
       * @param {() => void} [callback] Empty function called when the function finishes. To find out whether the function succeeded, runtime.lastError should be queried.
       */
-    @scala.inline
-    def setDisplayProperties(id: String, info: DisplayPropertiesInfo): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayProperties")(id.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setDisplayProperties(id: String, info: DisplayPropertiesInfo, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayProperties")(id.asInstanceOf[js.Any], info.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setDisplayProperties(id: String, info: DisplayPropertiesInfo): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayProperties")(id.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setDisplayProperties(id: String, info: DisplayPropertiesInfo, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayProperties")(id.asInstanceOf[js.Any], info.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def setMirrorMode(info: MirrorModeInfoMixed, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMirrorMode")(info.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMirrorMode(info: MirrorModeInfoMixed, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMirrorMode")(info.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * @requires(CrOS Kiosk app) Chrome OS Kiosk apps only
       * @since Chrome 65.
@@ -277,8 +254,7 @@ object system {
       * Calling setDisplayProperties() will fail for the
       * mirroring destination displays.
       */
-    @scala.inline
-    def setMirrorMode(info: MirrorModeInfo, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMirrorMode")(info.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMirrorMode(info: MirrorModeInfo, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMirrorMode")(info.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Displays the native touch calibration UX for the display with **id** as display id.
@@ -289,8 +265,7 @@ object system {
       * @param id The display's unique identifier.
       * @param callback Optional callback to inform the caller that the touch calibration has ended. The argument of the callback informs if the calibration was a success or not.
       */
-    @scala.inline
-    def showNativeTouchCalibration(id: String, callback: js.Function1[/* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showNativeTouchCalibration")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def showNativeTouchCalibration(id: String, callback: js.Function1[/* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showNativeTouchCalibration")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Starts custom touch calibration for a display.
@@ -299,8 +274,7 @@ object system {
       * @since Chrome 57
       * @param id The display's unique identifier.
       */
-    @scala.inline
-    def startCustomTouchCalibration(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startCustomTouchCalibration")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def startCustomTouchCalibration(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startCustomTouchCalibration")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   ///////////////////
@@ -318,8 +292,7 @@ object system {
     val ^ : js.Any = js.native
     
     /** Get physical memory information. */
-    @scala.inline
-    def getInfo(callback: js.Function1[/* info */ MemoryInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getInfo(callback: js.Function1[/* info */ MemoryInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   //////////////////////
@@ -336,8 +309,7 @@ object system {
     val ^ : js.Any = js.native
     
     /** Retrieves information about local adapters on this system. */
-    @scala.inline
-    def getNetworkInterfaces(callback: js.Function1[/* networkInterfaces */ js.Array[NetworkInterface], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterfaces")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getNetworkInterfaces(callback: js.Function1[/* networkInterfaces */ js.Array[NetworkInterface], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterfaces")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /////////////////////////
@@ -373,8 +345,7 @@ object system {
       * Requests information on attached power sources.
       * @param callback The callback to invoke with the results or undefined if the power source information is not known.
       */
-    @scala.inline
-    def getPowerSourceInfo(callback: js.Function1[/* powerSourceInfo */ js.UndefOr[js.Array[PowerSourceInfo]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPowerSourceInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getPowerSourceInfo(callback: js.Function1[/* powerSourceInfo */ js.UndefOr[js.Array[PowerSourceInfo]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPowerSourceInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Event for changes in the set of connected power sources.
@@ -387,8 +358,7 @@ object system {
       * Requests a power source status update.
       * Resulting power source status updates are observable using *onPowerChanged*.
       */
-    @scala.inline
-    def requestStatusUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStatusUpdate")().asInstanceOf[Unit]
+    inline def requestStatusUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStatusUpdate")().asInstanceOf[Unit]
   }
   
   ////////////////////
@@ -414,26 +384,22 @@ object system {
       @JSGlobal("chrome.system.storage.EjectDeviceResultCode.FAILURE")
       @js.native
       def FAILURE: failure_ = js.native
-      @scala.inline
-      def FAILURE_=(x: failure_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE")(x.asInstanceOf[js.Any])
+      inline def FAILURE_=(x: failure_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE")(x.asInstanceOf[js.Any])
       
       @JSGlobal("chrome.system.storage.EjectDeviceResultCode.IN_USE")
       @js.native
       def IN_USE: in_use_ = js.native
-      @scala.inline
-      def IN_USE_=(x: in_use_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IN_USE")(x.asInstanceOf[js.Any])
+      inline def IN_USE_=(x: in_use_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IN_USE")(x.asInstanceOf[js.Any])
       
       @JSGlobal("chrome.system.storage.EjectDeviceResultCode.NO_SUCH_DEVICE")
       @js.native
       def NO_SUCH_DEVICE: no_such_device_ = js.native
-      @scala.inline
-      def NO_SUCH_DEVICE_=(x: no_such_device_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_SUCH_DEVICE")(x.asInstanceOf[js.Any])
+      inline def NO_SUCH_DEVICE_=(x: no_such_device_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_SUCH_DEVICE")(x.asInstanceOf[js.Any])
       
       @JSGlobal("chrome.system.storage.EjectDeviceResultCode.SUCCESS")
       @js.native
       def SUCCESS: success_ = js.native
-      @scala.inline
-      def SUCCESS_=(x: success_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
+      inline def SUCCESS_=(x: success_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
     }
     
     object StorageUnitType {
@@ -445,20 +411,17 @@ object system {
       @JSGlobal("chrome.system.storage.StorageUnitType.FIXED")
       @js.native
       def FIXED: fixed_ = js.native
-      @scala.inline
-      def FIXED_=(x: fixed_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FIXED")(x.asInstanceOf[js.Any])
+      inline def FIXED_=(x: fixed_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FIXED")(x.asInstanceOf[js.Any])
       
       @JSGlobal("chrome.system.storage.StorageUnitType.REMOVABLE")
       @js.native
       def REMOVABLE: removable_ = js.native
-      @scala.inline
-      def REMOVABLE_=(x: removable_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REMOVABLE")(x.asInstanceOf[js.Any])
+      inline def REMOVABLE_=(x: removable_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REMOVABLE")(x.asInstanceOf[js.Any])
       
       @JSGlobal("chrome.system.storage.StorageUnitType.UNKNOWN")
       @js.native
       def UNKNOWN: unknown__ = js.native
-      @scala.inline
-      def UNKNOWN_=(x: unknown__): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN")(x.asInstanceOf[js.Any])
+      inline def UNKNOWN_=(x: unknown__): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -475,8 +438,7 @@ object system {
       *
       * **failure:** The ejection command failed.
       */
-    @scala.inline
-    def ejectDevice(
+    inline def ejectDevice(
       id: String,
       callback: js.Function1[
           /* result */ ToStringLiteral[
@@ -495,12 +457,10 @@ object system {
       * Get the available capacity of a specified |id| storage device. The |id| is the transient device ID from StorageUnitInfo.
       * @since Dev channel only.
       */
-    @scala.inline
-    def getAvailableCapacity(id: String, callback: js.Function1[/* info */ StorageCapacityInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableCapacity")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def getAvailableCapacity(id: String, callback: js.Function1[/* info */ StorageCapacityInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableCapacity")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Get the storage information from the system. The argument passed to the callback is an array of StorageUnitInfo objects. */
-    @scala.inline
-    def getInfo(callback: js.Function1[/* info */ js.Array[StorageUnitInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getInfo(callback: js.Function1[/* info */ js.Array[StorageUnitInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Fired when a new removable storage is attached to the system. */
     @JSGlobal("chrome.system.storage.onAttached")

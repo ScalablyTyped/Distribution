@@ -138,7 +138,7 @@ object syncdocumentMod {
     
     def sid: String = js.native
     
-    val syncDocumentImpl: js.Any = js.native
+    /* private */ val syncDocumentImpl: js.Any = js.native
     
     def `type`: String = js.native
     
@@ -186,28 +186,28 @@ object syncdocumentMod {
     /**
       * @private
       */
-    var _handleSuccessfulUpdateResult: js.Any = js.native
+    /* private */ var _handleSuccessfulUpdateResult: js.Any = js.native
     
     /**
       * @private
       */
-    var _postUpdateToServer: js.Any = js.native
+    /* private */ var _postUpdateToServer: js.Any = js.native
     
     /**
       * @private
       */
-    var _setUnconditionally: js.Any = js.native
+    /* private */ var _setUnconditionally: js.Any = js.native
     
     /**
       * @private
       */
-    var _setWithIfMatch: js.Any = js.native
+    /* private */ var _setWithIfMatch: js.Any = js.native
     
     /**
       * Get new data from server
       * @private
       */
-    var _softSync: js.Any = js.native
+    /* private */ var _softSync: js.Any = js.native
     
     /**
       * Update data entity with new data
@@ -219,9 +219,9 @@ object syncdocumentMod {
     
     def dateUpdated: Date = js.native
     
-    val descriptor: js.Any = js.native
+    /* private */ val descriptor: js.Any = js.native
     
-    var isDeleted: js.Any = js.native
+    /* private */ var isDeleted: js.Any = js.native
     
     def mutate(mutator: Mutator): js.Promise[js.Object] = js.native
     def mutate(mutator: Mutator, metadataUpdates: DocumentMetadata): js.Promise[js.Object] = js.native
@@ -238,7 +238,7 @@ object syncdocumentMod {
     def update(obj: js.Object): js.Promise[js.Object] = js.native
     def update(obj: js.Object, metadataUpdates: DocumentMetadata): js.Promise[js.Object] = js.native
     
-    val updateMergingQueue: js.Any = js.native
+    /* private */ val updateMergingQueue: js.Any = js.native
     
     def uri: String = js.native
     
@@ -265,8 +265,7 @@ object syncdocumentMod {
   }
   object DocumentDescriptor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: js.Object,
       date_expires: String,
       date_updated: Date,
@@ -280,32 +279,23 @@ object syncdocumentMod {
       __obj.asInstanceOf[DocumentDescriptor]
     }
     
-    @scala.inline
-    implicit class DocumentDescriptorMutableBuilder[Self <: DocumentDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentDescriptor](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate_expires(value: String): Self = StObject.set(x, "date_expires", value.asInstanceOf[js.Any])
+      inline def setDate_expires(value: String): Self = StObject.set(x, "date_expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate_updated(value: Date): Self = StObject.set(x, "date_updated", value.asInstanceOf[js.Any])
+      inline def setDate_updated(value: Date): Self = StObject.set(x, "date_updated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_event_id(value: Double): Self = StObject.set(x, "last_event_id", value.asInstanceOf[js.Any])
+      inline def setLast_event_id(value: Double): Self = StObject.set(x, "last_event_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+      inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnique_name(value: String): Self = StObject.set(x, "unique_name", value.asInstanceOf[js.Any])
+      inline def setUnique_name(value: String): Self = StObject.set(x, "unique_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -315,20 +305,16 @@ object syncdocumentMod {
   }
   object DocumentMetadata {
     
-    @scala.inline
-    def apply(): DocumentMetadata = {
+    inline def apply(): DocumentMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DocumentMetadata]
     }
     
-    @scala.inline
-    implicit class DocumentMetadataMutableBuilder[Self <: DocumentMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentMetadata](x: Self) {
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
   

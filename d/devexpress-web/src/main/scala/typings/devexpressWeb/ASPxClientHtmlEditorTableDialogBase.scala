@@ -18,8 +18,7 @@ trait ASPxClientHtmlEditorTableDialogBase
 }
 object ASPxClientHtmlEditorTableDialogBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetBackgroundColorColorEdit: () => ASPxClientColorEdit,
     GetCancelButton: () => ASPxClientButton,
     GetFormLayout: () => ASPxClientFormLayout,
@@ -29,10 +28,8 @@ object ASPxClientHtmlEditorTableDialogBase {
     __obj.asInstanceOf[ASPxClientHtmlEditorTableDialogBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorTableDialogBaseMutableBuilder[Self <: ASPxClientHtmlEditorTableDialogBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorTableDialogBase](x: Self) {
     
-    @scala.inline
-    def setGetBackgroundColorColorEdit(value: () => ASPxClientColorEdit): Self = StObject.set(x, "GetBackgroundColorColorEdit", js.Any.fromFunction0(value))
+    inline def setGetBackgroundColorColorEdit(value: () => ASPxClientColorEdit): Self = StObject.set(x, "GetBackgroundColorColorEdit", js.Any.fromFunction0(value))
   }
 }

@@ -14,8 +14,7 @@ object contentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[E /* <: js.Object */](props: FCProps[ContentProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default[E /* <: js.Object */](props: FCProps[ContentProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   type ContentProps[E /* <: js.Object */] = E & ContentPropsBase
   
@@ -29,32 +28,24 @@ object contentMod {
   }
   object ContentPropsBase {
     
-    @scala.inline
-    def apply(): ContentPropsBase = {
+    inline def apply(): ContentPropsBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContentPropsBase]
     }
     
-    @scala.inline
-    implicit class ContentPropsBaseMutableBuilder[Self <: ContentPropsBase] (val x: Self) extends AnyVal {
+    extension [Self <: ContentPropsBase](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTagName(value: ReactCreateElementParam): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: ReactCreateElementParam): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+      inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     }
   }
 }

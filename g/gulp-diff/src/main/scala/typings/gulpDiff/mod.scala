@@ -11,10 +11,8 @@ object mod {
     * Gulp task to diff files in the stream against a destination.
     * @param dest target directory to diff against, defaults to diff against original source file
     */
-  @scala.inline
-  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
-  @scala.inline
-  def apply(dest: String): Transform = ^.asInstanceOf[js.Dynamic].apply(dest.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  inline def apply(dest: String): Transform = ^.asInstanceOf[js.Dynamic].apply(dest.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
   @JSImport("gulp-diff", JSImport.Namespace)
   @js.native
@@ -24,10 +22,8 @@ object mod {
   @js.native
   val diff: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof gulp_diff */ js.Any = js.native
   
-  @scala.inline
-  def reporter(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("reporter")().asInstanceOf[Transform]
-  @scala.inline
-  def reporter(opts: ReporterOptions): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("reporter")(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def reporter(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("reporter")().asInstanceOf[Transform]
+  inline def reporter(opts: ReporterOptions): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("reporter")(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
   trait ReporterOptions extends StObject {
     
@@ -43,26 +39,20 @@ object mod {
   }
   object ReporterOptions {
     
-    @scala.inline
-    def apply(): ReporterOptions = {
+    inline def apply(): ReporterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReporterOptions]
     }
     
-    @scala.inline
-    implicit class ReporterOptionsMutableBuilder[Self <: ReporterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReporterOptions](x: Self) {
       
-      @scala.inline
-      def setFail(value: Boolean): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
+      inline def setFail(value: Boolean): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+      inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+      inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
     }
   }
 }

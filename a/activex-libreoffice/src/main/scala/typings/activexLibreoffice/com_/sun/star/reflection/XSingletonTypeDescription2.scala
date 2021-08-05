@@ -36,8 +36,7 @@ trait XSingletonTypeDescription2
 }
 object XSingletonTypeDescription2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Interface: XTypeDescription,
     Name: String,
     Service: XServiceTypeDescription,
@@ -55,16 +54,12 @@ object XSingletonTypeDescription2 {
     __obj.asInstanceOf[XSingletonTypeDescription2]
   }
   
-  @scala.inline
-  implicit class XSingletonTypeDescription2MutableBuilder[Self <: XSingletonTypeDescription2] (val x: Self) extends AnyVal {
+  extension [Self <: XSingletonTypeDescription2](x: Self) {
     
-    @scala.inline
-    def setGetInterface(value: () => XTypeDescription): Self = StObject.set(x, "getInterface", js.Any.fromFunction0(value))
+    inline def setGetInterface(value: () => XTypeDescription): Self = StObject.set(x, "getInterface", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInterface(value: XTypeDescription): Self = StObject.set(x, "Interface", value.asInstanceOf[js.Any])
+    inline def setInterface(value: XTypeDescription): Self = StObject.set(x, "Interface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInterfaceBased(value: () => Boolean): Self = StObject.set(x, "isInterfaceBased", js.Any.fromFunction0(value))
+    inline def setIsInterfaceBased(value: () => Boolean): Self = StObject.set(x, "isInterfaceBased", js.Any.fromFunction0(value))
   }
 }

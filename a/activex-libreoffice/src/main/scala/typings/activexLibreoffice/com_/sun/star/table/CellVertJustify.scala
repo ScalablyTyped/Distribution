@@ -19,16 +19,14 @@ trait CellVertJustify extends StObject
 object CellVertJustify {
   
   /** contents are aligned to the lower edge of the cell. */
-  @scala.inline
-  def BOTTOM: `3` = 3.asInstanceOf[`3`]
+  inline def BOTTOM: `3` = 3.asInstanceOf[`3`]
   
   /**
     * contents are horizontally centered.
     *
     * contents are aligned to the vertical middle of the cell.
     */
-  @scala.inline
-  def CENTER: `2` = 2.asInstanceOf[`2`]
+  inline def CENTER: `2` = 2.asInstanceOf[`2`]
   
   /**
     * default alignment is used (left for numbers, right for text).
@@ -37,10 +35,8 @@ object CellVertJustify {
     *
     * default alignment is used.
     */
-  @scala.inline
-  def STANDARD: `0` = 0.asInstanceOf[`0`]
+  inline def STANDARD: `0` = 0.asInstanceOf[`0`]
   
   /** contents are aligned with the upper edge of the cell. */
-  @scala.inline
-  def TOP: `1` = 1.asInstanceOf[`1`]
+  inline def TOP: `1` = 1.asInstanceOf[`1`]
 }

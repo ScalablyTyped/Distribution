@@ -28,20 +28,16 @@ object projectionMod {
   }
   object Projection {
     
-    @scala.inline
-    def apply(): Projection = {
+    inline def apply(): Projection = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Projection]
     }
     
-    @scala.inline
-    implicit class ProjectionMutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
+    extension [Self <: Projection](x: Self) {
       
-      @scala.inline
-      def setTranslate(value: Vector2[Double] | SignalRef): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: Vector2[Double] | SignalRef): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+      inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     }
   }
   

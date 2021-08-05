@@ -18,25 +18,19 @@ trait DeletePackageVersionsResult extends StObject {
 }
 object DeletePackageVersionsResult {
   
-  @scala.inline
-  def apply(): DeletePackageVersionsResult = {
+  inline def apply(): DeletePackageVersionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeletePackageVersionsResult]
   }
   
-  @scala.inline
-  implicit class DeletePackageVersionsResultMutableBuilder[Self <: DeletePackageVersionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePackageVersionsResult](x: Self) {
     
-    @scala.inline
-    def setFailedVersions(value: PackageVersionErrorMap): Self = StObject.set(x, "failedVersions", value.asInstanceOf[js.Any])
+    inline def setFailedVersions(value: PackageVersionErrorMap): Self = StObject.set(x, "failedVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedVersionsUndefined: Self = StObject.set(x, "failedVersions", js.undefined)
+    inline def setFailedVersionsUndefined: Self = StObject.set(x, "failedVersions", js.undefined)
     
-    @scala.inline
-    def setSuccessfulVersions(value: SuccessfulPackageVersionInfoMap): Self = StObject.set(x, "successfulVersions", value.asInstanceOf[js.Any])
+    inline def setSuccessfulVersions(value: SuccessfulPackageVersionInfoMap): Self = StObject.set(x, "successfulVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulVersionsUndefined: Self = StObject.set(x, "successfulVersions", js.undefined)
+    inline def setSuccessfulVersionsUndefined: Self = StObject.set(x, "successfulVersions", js.undefined)
   }
 }

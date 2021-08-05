@@ -47,46 +47,33 @@ trait RouteOptionsSecureObject extends StObject {
 }
 object RouteOptionsSecureObject {
   
-  @scala.inline
-  def apply(xss: Boolean): RouteOptionsSecureObject = {
+  inline def apply(xss: Boolean): RouteOptionsSecureObject = {
     val __obj = js.Dynamic.literal(xss = xss.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteOptionsSecureObject]
   }
   
-  @scala.inline
-  implicit class RouteOptionsSecureObjectMutableBuilder[Self <: RouteOptionsSecureObject] (val x: Self) extends AnyVal {
+  extension [Self <: RouteOptionsSecureObject](x: Self) {
     
-    @scala.inline
-    def setHsts(value: Boolean | Double | IncludeSubdomains): Self = StObject.set(x, "hsts", value.asInstanceOf[js.Any])
+    inline def setHsts(value: Boolean | Double | IncludeSubdomains): Self = StObject.set(x, "hsts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHstsUndefined: Self = StObject.set(x, "hsts", js.undefined)
+    inline def setHstsUndefined: Self = StObject.set(x, "hsts", js.undefined)
     
-    @scala.inline
-    def setNoOpen(value: Boolean): Self = StObject.set(x, "noOpen", value.asInstanceOf[js.Any])
+    inline def setNoOpen(value: Boolean): Self = StObject.set(x, "noOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoOpenUndefined: Self = StObject.set(x, "noOpen", js.undefined)
+    inline def setNoOpenUndefined: Self = StObject.set(x, "noOpen", js.undefined)
     
-    @scala.inline
-    def setNoSniff(value: Boolean): Self = StObject.set(x, "noSniff", value.asInstanceOf[js.Any])
+    inline def setNoSniff(value: Boolean): Self = StObject.set(x, "noSniff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSniffUndefined: Self = StObject.set(x, "noSniff", js.undefined)
+    inline def setNoSniffUndefined: Self = StObject.set(x, "noSniff", js.undefined)
     
-    @scala.inline
-    def setReferrer(value: `false` | ReferrerPolicy): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+    inline def setReferrer(value: `false` | ReferrerPolicy): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
+    inline def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
     
-    @scala.inline
-    def setXframe(value: `true` | deny | sameorigin | Rule): Self = StObject.set(x, "xframe", value.asInstanceOf[js.Any])
+    inline def setXframe(value: `true` | deny | sameorigin | Rule): Self = StObject.set(x, "xframe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXframeUndefined: Self = StObject.set(x, "xframe", js.undefined)
+    inline def setXframeUndefined: Self = StObject.set(x, "xframe", js.undefined)
     
-    @scala.inline
-    def setXss(value: Boolean): Self = StObject.set(x, "xss", value.asInstanceOf[js.Any])
+    inline def setXss(value: Boolean): Self = StObject.set(x, "xss", value.asInstanceOf[js.Any])
   }
 }

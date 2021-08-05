@@ -29,14 +29,12 @@ object listItemMod {
     @JSImport("@ant-design/react-native/lib/list/ListItem", "default.Brief")
     @js.native
     def Brief: Instantiable0[typings.antDesignReactNative.listItemMod.Brief] = js.native
-    @scala.inline
-    def Brief_=(x: Instantiable0[Brief]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Brief")(x.asInstanceOf[js.Any])
+    inline def Brief_=(x: Instantiable0[Brief]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Brief")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/list/ListItem", "default.defaultProps")
     @js.native
     def defaultProps: PartialListItemProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialListItemProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialListItemProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@ant-design/react-native/lib/list/ListItem", "Brief")
@@ -57,8 +55,7 @@ object listItemMod {
        with WithThemeStyles[PickListStyleBriefBriefTe]
   object BriefProps {
     
-    @scala.inline
-    def apply(): BriefProps = {
+    inline def apply(): BriefProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BriefProps]
     }
@@ -87,53 +84,38 @@ object listItemMod {
   }
   object ListItemProps {
     
-    @scala.inline
-    def apply(): ListItemProps = {
+    inline def apply(): ListItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListItemProps]
     }
     
-    @scala.inline
-    implicit class ListItemPropsMutableBuilder[Self <: ListItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListItemProps](x: Self) {
       
-      @scala.inline
-      def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
+      inline def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayLongPressUndefined: Self = StObject.set(x, "delayLongPress", js.undefined)
+      inline def setDelayLongPressUndefined: Self = StObject.set(x, "delayLongPress", js.undefined)
       
-      @scala.inline
-      def setOnLongPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
+      inline def setOnLongPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
+      inline def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
       
-      @scala.inline
-      def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+      inline def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPressIn(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
+      inline def setOnPressIn(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
+      inline def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
       
-      @scala.inline
-      def setOnPressOut(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction1(value))
+      inline def setOnPressOut(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
+      inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
       
-      @scala.inline
-      def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+      inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

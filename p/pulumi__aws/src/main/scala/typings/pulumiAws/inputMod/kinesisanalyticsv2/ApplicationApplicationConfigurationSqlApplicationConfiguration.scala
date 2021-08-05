@@ -32,42 +32,33 @@ trait ApplicationApplicationConfigurationSqlApplicationConfiguration extends StO
 }
 object ApplicationApplicationConfigurationSqlApplicationConfiguration {
   
-  @scala.inline
-  def apply(): ApplicationApplicationConfigurationSqlApplicationConfiguration = {
+  inline def apply(): ApplicationApplicationConfigurationSqlApplicationConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationApplicationConfigurationSqlApplicationConfiguration]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationSqlApplicationConfiguration](x: Self) {
     
-    @scala.inline
-    def setInput(value: Input[ApplicationApplicationConfigurationSqlApplicationConfigurationInput]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Input[ApplicationApplicationConfigurationSqlApplicationConfigurationInput]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setOutputs(
+    inline def setOutputs(
       value: Input[
           js.Array[Input[ApplicationApplicationConfigurationSqlApplicationConfigurationOutput]]
         ]
     ): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
-    @scala.inline
-    def setOutputsVarargs(value: Input[ApplicationApplicationConfigurationSqlApplicationConfigurationOutput]*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: Input[ApplicationApplicationConfigurationSqlApplicationConfigurationOutput]*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     
-    @scala.inline
-    def setReferenceDataSource(
+    inline def setReferenceDataSource(
       value: Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource
         ]
     ): Self = StObject.set(x, "referenceDataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceDataSourceUndefined: Self = StObject.set(x, "referenceDataSource", js.undefined)
+    inline def setReferenceDataSourceUndefined: Self = StObject.set(x, "referenceDataSource", js.undefined)
   }
 }

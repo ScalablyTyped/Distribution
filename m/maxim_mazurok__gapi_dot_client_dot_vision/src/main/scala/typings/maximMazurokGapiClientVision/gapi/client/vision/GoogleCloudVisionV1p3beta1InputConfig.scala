@@ -20,31 +20,23 @@ trait GoogleCloudVisionV1p3beta1InputConfig extends StObject {
 }
 object GoogleCloudVisionV1p3beta1InputConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p3beta1InputConfig = {
+  inline def apply(): GoogleCloudVisionV1p3beta1InputConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p3beta1InputConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p3beta1InputConfigMutableBuilder[Self <: GoogleCloudVisionV1p3beta1InputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p3beta1InputConfig](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setGcsSource(value: GoogleCloudVisionV1p3beta1GcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
+    inline def setGcsSource(value: GoogleCloudVisionV1p3beta1GcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
+    inline def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait LangModule extends StObject {
 }
 object LangModule {
   
-  @scala.inline
-  def apply(lang: String, module: String): LangModule = {
+  inline def apply(lang: String, module: String): LangModule = {
     val __obj = js.Dynamic.literal(lang = lang.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any])
     __obj.asInstanceOf[LangModule]
   }
   
-  @scala.inline
-  implicit class LangModuleMutableBuilder[Self <: LangModule] (val x: Self) extends AnyVal {
+  extension [Self <: LangModule](x: Self) {
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
+    inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
   }
 }

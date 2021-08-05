@@ -18,22 +18,17 @@ trait LambdaAction extends StObject {
 }
 object LambdaAction {
   
-  @scala.inline
-  def apply(functionArn: AmazonResourceName): LambdaAction = {
+  inline def apply(functionArn: AmazonResourceName): LambdaAction = {
     val __obj = js.Dynamic.literal(functionArn = functionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaAction]
   }
   
-  @scala.inline
-  implicit class LambdaActionMutableBuilder[Self <: LambdaAction] (val x: Self) extends AnyVal {
+  extension [Self <: LambdaAction](x: Self) {
     
-    @scala.inline
-    def setFunctionArn(value: AmazonResourceName): Self = StObject.set(x, "functionArn", value.asInstanceOf[js.Any])
+    inline def setFunctionArn(value: AmazonResourceName): Self = StObject.set(x, "functionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

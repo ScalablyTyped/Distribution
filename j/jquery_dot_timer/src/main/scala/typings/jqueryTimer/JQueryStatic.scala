@@ -21,16 +21,13 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(timer: JQueryTimer): JQueryStatic = {
+  inline def apply(timer: JQueryTimer): JQueryStatic = {
     val __obj = js.Dynamic.literal(timer = timer.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setTimer(value: JQueryTimer): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
+    inline def setTimer(value: JQueryTimer): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
   }
 }

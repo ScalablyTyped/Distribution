@@ -137,23 +137,18 @@ object SemanticUI {
       }
       object Impl {
         
-        @scala.inline
-        def apply(active: String, hover: String, loading: String): Impl = {
+        inline def apply(active: String, hover: String, loading: String): Impl = {
           val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any])
           __obj.asInstanceOf[Impl]
         }
         
-        @scala.inline
-        implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+        extension [Self <: Impl](x: Self) {
           
-          @scala.inline
-          def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+          inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHover(value: String): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+          inline def setHover(value: String): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+          inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
         }
       }
       
@@ -168,17 +163,14 @@ object SemanticUI {
     }
     object ErrorSettings {
       
-      @scala.inline
-      def apply(action: String & js.UndefOr[String]): ErrorSettings = {
+      inline def apply(action: String & js.UndefOr[String]): ErrorSettings = {
         val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
         __obj.asInstanceOf[ErrorSettings]
       }
       
-      @scala.inline
-      implicit class ErrorSettingsMutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
+      extension [Self <: ErrorSettings](x: Self) {
         
-        @scala.inline
-        def setAction(value: String & js.UndefOr[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        inline def setAction(value: String & js.UndefOr[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       }
       
       trait Impl extends StObject {
@@ -190,17 +182,14 @@ object SemanticUI {
       }
       object Impl {
         
-        @scala.inline
-        def apply(action: String): Impl = {
+        inline def apply(action: String): Impl = {
           val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
           __obj.asInstanceOf[Impl]
         }
         
-        @scala.inline
-        implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+        extension [Self <: Impl](x: Self) {
           
-          @scala.inline
-          def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+          inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         }
       }
       
@@ -211,17 +200,14 @@ object SemanticUI {
       }
       object Param {
         
-        @scala.inline
-        def apply(action: String & js.UndefOr[String]): typings.semanticUiRating.SemanticUI.Rating.ErrorSettings.Param = {
+        inline def apply(action: String & js.UndefOr[String]): typings.semanticUiRating.SemanticUI.Rating.ErrorSettings.Param = {
           val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiRating.SemanticUI.Rating.ErrorSettings.Param]
         }
         
-        @scala.inline
-        implicit class ParamMutableBuilder[Self <: typings.semanticUiRating.SemanticUI.Rating.ErrorSettings.Param] (val x: Self) extends AnyVal {
+        extension [Self <: typings.semanticUiRating.SemanticUI.Rating.ErrorSettings.Param](x: Self) {
           
-          @scala.inline
-          def setAction(value: String & js.UndefOr[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+          inline def setAction(value: String & js.UndefOr[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         }
       }
     }
@@ -233,8 +219,7 @@ object SemanticUI {
     }
     object SelectorSettings {
       
-      @scala.inline
-      def apply(icon: String & js.UndefOr[String]): SelectorSettings = {
+      inline def apply(icon: String & js.UndefOr[String]): SelectorSettings = {
         val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
         __obj.asInstanceOf[SelectorSettings]
       }
@@ -248,17 +233,14 @@ object SemanticUI {
       }
       object Impl {
         
-        @scala.inline
-        def apply(icon: String): Impl = {
+        inline def apply(icon: String): Impl = {
           val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
           __obj.asInstanceOf[Impl]
         }
         
-        @scala.inline
-        implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+        extension [Self <: Impl](x: Self) {
           
-          @scala.inline
-          def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+          inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         }
       }
       
@@ -269,25 +251,20 @@ object SemanticUI {
       }
       object Param {
         
-        @scala.inline
-        def apply(icon: String & js.UndefOr[String]): typings.semanticUiRating.SemanticUI.Rating.SelectorSettings.Param = {
+        inline def apply(icon: String & js.UndefOr[String]): typings.semanticUiRating.SemanticUI.Rating.SelectorSettings.Param = {
           val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiRating.SemanticUI.Rating.SelectorSettings.Param]
         }
         
-        @scala.inline
-        implicit class ParamMutableBuilder[Self <: typings.semanticUiRating.SemanticUI.Rating.SelectorSettings.Param] (val x: Self) extends AnyVal {
+        extension [Self <: typings.semanticUiRating.SemanticUI.Rating.SelectorSettings.Param](x: Self) {
           
-          @scala.inline
-          def setIcon(value: String & js.UndefOr[String]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+          inline def setIcon(value: String & js.UndefOr[String]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         }
       }
       
-      @scala.inline
-      implicit class SelectorSettingsMutableBuilder[Self <: SelectorSettings] (val x: Self) extends AnyVal {
+      extension [Self <: SelectorSettings](x: Self) {
         
-        @scala.inline
-        def setIcon(value: String & js.UndefOr[String]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: String & js.UndefOr[String]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -379,8 +356,7 @@ object SemanticUI {
     }
     object Impl {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         className: ClassNameSettings,
         clearable: auto | Boolean,
         debug: Boolean,
@@ -400,50 +376,35 @@ object SemanticUI {
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClearable(value: auto | Boolean): Self = StObject.set(x, "clearable", value.asInstanceOf[js.Any])
+        inline def setClearable(value: auto | Boolean): Self = StObject.set(x, "clearable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+        inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFireOnInit(value: Boolean): Self = StObject.set(x, "fireOnInit", value.asInstanceOf[js.Any])
+        inline def setFireOnInit(value: Boolean): Self = StObject.set(x, "fireOnInit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInitialRating(value: Double): Self = StObject.set(x, "initialRating", value.asInstanceOf[js.Any])
+        inline def setInitialRating(value: Double): Self = StObject.set(x, "initialRating", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+        inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+        inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnRate(value: Double => Unit): Self = StObject.set(x, "onRate", js.Any.fromFunction1(value))
+        inline def setOnRate(value: Double => Unit): Self = StObject.set(x, "onRate", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+        inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+        inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+        inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       }
     }
     

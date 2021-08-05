@@ -12,22 +12,17 @@ trait VariableScopeDefinition
 }
 object VariableScopeDefinition {
   
-  @scala.inline
-  def apply(): VariableScopeDefinition = {
+  inline def apply(): VariableScopeDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VariableScopeDefinition]
   }
   
-  @scala.inline
-  implicit class VariableScopeDefinitionMutableBuilder[Self <: VariableScopeDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: VariableScopeDefinition](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[VariableDefinition]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[VariableDefinition]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: VariableDefinition*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: VariableDefinition*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

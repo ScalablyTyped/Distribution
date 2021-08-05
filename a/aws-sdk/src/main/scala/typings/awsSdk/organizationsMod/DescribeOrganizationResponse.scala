@@ -13,19 +13,15 @@ trait DescribeOrganizationResponse extends StObject {
 }
 object DescribeOrganizationResponse {
   
-  @scala.inline
-  def apply(): DescribeOrganizationResponse = {
+  inline def apply(): DescribeOrganizationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeOrganizationResponse]
   }
   
-  @scala.inline
-  implicit class DescribeOrganizationResponseMutableBuilder[Self <: DescribeOrganizationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOrganizationResponse](x: Self) {
     
-    @scala.inline
-    def setOrganization(value: Organization): Self = StObject.set(x, "Organization", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: Organization): Self = StObject.set(x, "Organization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationUndefined: Self = StObject.set(x, "Organization", js.undefined)
+    inline def setOrganizationUndefined: Self = StObject.set(x, "Organization", js.undefined)
   }
 }

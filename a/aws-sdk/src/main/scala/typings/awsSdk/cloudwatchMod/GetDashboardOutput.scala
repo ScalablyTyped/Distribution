@@ -23,31 +23,23 @@ trait GetDashboardOutput extends StObject {
 }
 object GetDashboardOutput {
   
-  @scala.inline
-  def apply(): GetDashboardOutput = {
+  inline def apply(): GetDashboardOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDashboardOutput]
   }
   
-  @scala.inline
-  implicit class GetDashboardOutputMutableBuilder[Self <: GetDashboardOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDashboardOutput](x: Self) {
     
-    @scala.inline
-    def setDashboardArn(value: DashboardArn): Self = StObject.set(x, "DashboardArn", value.asInstanceOf[js.Any])
+    inline def setDashboardArn(value: DashboardArn): Self = StObject.set(x, "DashboardArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardArnUndefined: Self = StObject.set(x, "DashboardArn", js.undefined)
+    inline def setDashboardArnUndefined: Self = StObject.set(x, "DashboardArn", js.undefined)
     
-    @scala.inline
-    def setDashboardBody(value: DashboardBody): Self = StObject.set(x, "DashboardBody", value.asInstanceOf[js.Any])
+    inline def setDashboardBody(value: DashboardBody): Self = StObject.set(x, "DashboardBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardBodyUndefined: Self = StObject.set(x, "DashboardBody", js.undefined)
+    inline def setDashboardBodyUndefined: Self = StObject.set(x, "DashboardBody", js.undefined)
     
-    @scala.inline
-    def setDashboardName(value: DashboardName): Self = StObject.set(x, "DashboardName", value.asInstanceOf[js.Any])
+    inline def setDashboardName(value: DashboardName): Self = StObject.set(x, "DashboardName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardNameUndefined: Self = StObject.set(x, "DashboardName", js.undefined)
+    inline def setDashboardNameUndefined: Self = StObject.set(x, "DashboardName", js.undefined)
   }
 }

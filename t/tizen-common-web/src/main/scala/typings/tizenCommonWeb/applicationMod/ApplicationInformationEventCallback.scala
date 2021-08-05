@@ -30,31 +30,23 @@ trait ApplicationInformationEventCallback extends StObject {
 }
 object ApplicationInformationEventCallback {
   
-  @scala.inline
-  def apply(): ApplicationInformationEventCallback = {
+  inline def apply(): ApplicationInformationEventCallback = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationInformationEventCallback]
   }
   
-  @scala.inline
-  implicit class ApplicationInformationEventCallbackMutableBuilder[Self <: ApplicationInformationEventCallback] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationInformationEventCallback](x: Self) {
     
-    @scala.inline
-    def setOninstalled(value: /* info */ ApplicationInformation => Unit): Self = StObject.set(x, "oninstalled", js.Any.fromFunction1(value))
+    inline def setOninstalled(value: /* info */ ApplicationInformation => Unit): Self = StObject.set(x, "oninstalled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOninstalledUndefined: Self = StObject.set(x, "oninstalled", js.undefined)
+    inline def setOninstalledUndefined: Self = StObject.set(x, "oninstalled", js.undefined)
     
-    @scala.inline
-    def setOnuninstalled(value: /* id */ PackageId => Unit): Self = StObject.set(x, "onuninstalled", js.Any.fromFunction1(value))
+    inline def setOnuninstalled(value: /* id */ PackageId => Unit): Self = StObject.set(x, "onuninstalled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnuninstalledUndefined: Self = StObject.set(x, "onuninstalled", js.undefined)
+    inline def setOnuninstalledUndefined: Self = StObject.set(x, "onuninstalled", js.undefined)
     
-    @scala.inline
-    def setOnupdated(value: /* info */ ApplicationInformation => Unit): Self = StObject.set(x, "onupdated", js.Any.fromFunction1(value))
+    inline def setOnupdated(value: /* info */ ApplicationInformation => Unit): Self = StObject.set(x, "onupdated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnupdatedUndefined: Self = StObject.set(x, "onupdated", js.undefined)
+    inline def setOnupdatedUndefined: Self = StObject.set(x, "onupdated", js.undefined)
   }
 }

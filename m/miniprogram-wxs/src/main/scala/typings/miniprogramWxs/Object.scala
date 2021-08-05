@@ -29,8 +29,7 @@ trait Object extends StObject {
 }
 object Object {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: Function,
     hasOwnProperty: PropertyKey => scala.Boolean,
     isPrototypeOf: Object => scala.Boolean,
@@ -40,19 +39,14 @@ object Object {
     __obj.asInstanceOf[Object]
   }
   
-  @scala.inline
-  implicit class ObjectMutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
+  extension [Self <: Object](x: Self) {
     
-    @scala.inline
-    def setConstructor(value: Function): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: Function): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasOwnProperty(value: PropertyKey => scala.Boolean): Self = StObject.set(x, "hasOwnProperty", js.Any.fromFunction1(value))
+    inline def setHasOwnProperty(value: PropertyKey => scala.Boolean): Self = StObject.set(x, "hasOwnProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsPrototypeOf(value: Object => scala.Boolean): Self = StObject.set(x, "isPrototypeOf", js.Any.fromFunction1(value))
+    inline def setIsPrototypeOf(value: Object => scala.Boolean): Self = StObject.set(x, "isPrototypeOf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropertyIsEnumerable(value: PropertyKey => scala.Boolean): Self = StObject.set(x, "propertyIsEnumerable", js.Any.fromFunction1(value))
+    inline def setPropertyIsEnumerable(value: PropertyKey => scala.Boolean): Self = StObject.set(x, "propertyIsEnumerable", js.Any.fromFunction1(value))
   }
 }

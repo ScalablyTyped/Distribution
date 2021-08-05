@@ -13,19 +13,15 @@ trait SVGObject[T] extends StObject {
 }
 object SVGObject {
   
-  @scala.inline
-  def apply[T](create: (T, /* repeated */ js.Any) => Element, update: (T, /* repeated */ js.Any) => Unit): SVGObject[T] = {
+  inline def apply[T](create: (T, /* repeated */ js.Any) => Element, update: (T, /* repeated */ js.Any) => Unit): SVGObject[T] = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), update = js.Any.fromFunction2(update))
     __obj.asInstanceOf[SVGObject[T]]
   }
   
-  @scala.inline
-  implicit class SVGObjectMutableBuilder[Self <: SVGObject[?], T] (val x: Self & SVGObject[T]) extends AnyVal {
+  extension [Self <: SVGObject[?], T](x: Self & SVGObject[T]) {
     
-    @scala.inline
-    def setCreate(value: (T, /* repeated */ js.Any) => Element): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (T, /* repeated */ js.Any) => Element): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdate(value: (T, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (T, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

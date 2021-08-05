@@ -16,25 +16,19 @@ trait OffsetLeft extends StObject {
 }
 object OffsetLeft {
   
-  @scala.inline
-  def apply(offsetHeight: js.Any, offsetLeft: Unit, offsetTop: js.Any, offsetWidth: Unit): OffsetLeft = {
+  inline def apply(offsetHeight: js.Any, offsetLeft: Unit, offsetTop: js.Any, offsetWidth: Unit): OffsetLeft = {
     val __obj = js.Dynamic.literal(offsetHeight = offsetHeight.asInstanceOf[js.Any], offsetLeft = offsetLeft.asInstanceOf[js.Any], offsetTop = offsetTop.asInstanceOf[js.Any], offsetWidth = offsetWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[OffsetLeft]
   }
   
-  @scala.inline
-  implicit class OffsetLeftMutableBuilder[Self <: OffsetLeft] (val x: Self) extends AnyVal {
+  extension [Self <: OffsetLeft](x: Self) {
     
-    @scala.inline
-    def setOffsetHeight(value: js.Any): Self = StObject.set(x, "offsetHeight", value.asInstanceOf[js.Any])
+    inline def setOffsetHeight(value: js.Any): Self = StObject.set(x, "offsetHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetLeft(value: Unit): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
+    inline def setOffsetLeft(value: Unit): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetTop(value: js.Any): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
+    inline def setOffsetTop(value: js.Any): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetWidth(value: Unit): Self = StObject.set(x, "offsetWidth", value.asInstanceOf[js.Any])
+    inline def setOffsetWidth(value: Unit): Self = StObject.set(x, "offsetWidth", value.asInstanceOf[js.Any])
   }
 }

@@ -58,85 +58,59 @@ trait AttributeValue extends StObject {
 }
 object AttributeValue {
   
-  @scala.inline
-  def apply(): AttributeValue = {
+  inline def apply(): AttributeValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttributeValue]
   }
   
-  @scala.inline
-  implicit class AttributeValueMutableBuilder[Self <: AttributeValue] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeValue](x: Self) {
     
-    @scala.inline
-    def setB(value: BinaryAttributeValue): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
+    inline def setB(value: BinaryAttributeValue): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBOOL(value: BooleanAttributeValue): Self = StObject.set(x, "BOOL", value.asInstanceOf[js.Any])
+    inline def setBOOL(value: BooleanAttributeValue): Self = StObject.set(x, "BOOL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBOOLUndefined: Self = StObject.set(x, "BOOL", js.undefined)
+    inline def setBOOLUndefined: Self = StObject.set(x, "BOOL", js.undefined)
     
-    @scala.inline
-    def setBS(value: BinarySetAttributeValue): Self = StObject.set(x, "BS", value.asInstanceOf[js.Any])
+    inline def setBS(value: BinarySetAttributeValue): Self = StObject.set(x, "BS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBSUndefined: Self = StObject.set(x, "BS", js.undefined)
+    inline def setBSUndefined: Self = StObject.set(x, "BS", js.undefined)
     
-    @scala.inline
-    def setBSVarargs(value: BinaryAttributeValue*): Self = StObject.set(x, "BS", js.Array(value :_*))
+    inline def setBSVarargs(value: BinaryAttributeValue*): Self = StObject.set(x, "BS", js.Array(value :_*))
     
-    @scala.inline
-    def setBUndefined: Self = StObject.set(x, "B", js.undefined)
+    inline def setBUndefined: Self = StObject.set(x, "B", js.undefined)
     
-    @scala.inline
-    def setL(value: ListAttributeValue): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
+    inline def setL(value: ListAttributeValue): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLUndefined: Self = StObject.set(x, "L", js.undefined)
+    inline def setLUndefined: Self = StObject.set(x, "L", js.undefined)
     
-    @scala.inline
-    def setLVarargs(value: AttributeValue*): Self = StObject.set(x, "L", js.Array(value :_*))
+    inline def setLVarargs(value: AttributeValue*): Self = StObject.set(x, "L", js.Array(value :_*))
     
-    @scala.inline
-    def setM(value: MapAttributeValue): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
+    inline def setM(value: MapAttributeValue): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMUndefined: Self = StObject.set(x, "M", js.undefined)
+    inline def setMUndefined: Self = StObject.set(x, "M", js.undefined)
     
-    @scala.inline
-    def setN(value: NumberAttributeValue): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+    inline def setN(value: NumberAttributeValue): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNS(value: NumberSetAttributeValue): Self = StObject.set(x, "NS", value.asInstanceOf[js.Any])
+    inline def setNS(value: NumberSetAttributeValue): Self = StObject.set(x, "NS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNSUndefined: Self = StObject.set(x, "NS", js.undefined)
+    inline def setNSUndefined: Self = StObject.set(x, "NS", js.undefined)
     
-    @scala.inline
-    def setNSVarargs(value: NumberAttributeValue*): Self = StObject.set(x, "NS", js.Array(value :_*))
+    inline def setNSVarargs(value: NumberAttributeValue*): Self = StObject.set(x, "NS", js.Array(value :_*))
     
-    @scala.inline
-    def setNULL(value: NullAttributeValue): Self = StObject.set(x, "NULL", value.asInstanceOf[js.Any])
+    inline def setNULL(value: NullAttributeValue): Self = StObject.set(x, "NULL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNULLUndefined: Self = StObject.set(x, "NULL", js.undefined)
+    inline def setNULLUndefined: Self = StObject.set(x, "NULL", js.undefined)
     
-    @scala.inline
-    def setNUndefined: Self = StObject.set(x, "N", js.undefined)
+    inline def setNUndefined: Self = StObject.set(x, "N", js.undefined)
     
-    @scala.inline
-    def setS(value: StringAttributeValue): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
+    inline def setS(value: StringAttributeValue): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSS(value: StringSetAttributeValue): Self = StObject.set(x, "SS", value.asInstanceOf[js.Any])
+    inline def setSS(value: StringSetAttributeValue): Self = StObject.set(x, "SS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSUndefined: Self = StObject.set(x, "SS", js.undefined)
+    inline def setSSUndefined: Self = StObject.set(x, "SS", js.undefined)
     
-    @scala.inline
-    def setSSVarargs(value: StringAttributeValue*): Self = StObject.set(x, "SS", js.Array(value :_*))
+    inline def setSSVarargs(value: StringAttributeValue*): Self = StObject.set(x, "SS", js.Array(value :_*))
     
-    @scala.inline
-    def setSUndefined: Self = StObject.set(x, "S", js.undefined)
+    inline def setSUndefined: Self = StObject.set(x, "S", js.undefined)
   }
 }

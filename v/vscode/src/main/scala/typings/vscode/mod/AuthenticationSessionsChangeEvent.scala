@@ -13,16 +13,13 @@ trait AuthenticationSessionsChangeEvent extends StObject {
 }
 object AuthenticationSessionsChangeEvent {
   
-  @scala.inline
-  def apply(provider: AuthenticationProviderInformation): AuthenticationSessionsChangeEvent = {
+  inline def apply(provider: AuthenticationProviderInformation): AuthenticationSessionsChangeEvent = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationSessionsChangeEvent]
   }
   
-  @scala.inline
-  implicit class AuthenticationSessionsChangeEventMutableBuilder[Self <: AuthenticationSessionsChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationSessionsChangeEvent](x: Self) {
     
-    @scala.inline
-    def setProvider(value: AuthenticationProviderInformation): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: AuthenticationProviderInformation): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
   }
 }

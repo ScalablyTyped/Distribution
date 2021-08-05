@@ -13,8 +13,7 @@ object mod {
   
   object breakpoint {
     
-    @scala.inline
-    def apply(args: js.Any*): String = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(args: js.Any*): String = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("@carbon/layout", "breakpoint")
     @js.native
@@ -23,8 +22,7 @@ object mod {
   
   object breakpointDown {
     
-    @scala.inline
-    def apply(name: String): String = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(name: String): String = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("@carbon/layout", "breakpointDown")
     @js.native
@@ -33,8 +31,7 @@ object mod {
   
   object breakpointUp {
     
-    @scala.inline
-    def apply(name: String): String = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(name: String): String = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("@carbon/layout", "breakpointUp")
     @js.native
@@ -50,38 +47,32 @@ object mod {
     @JSImport("@carbon/layout", "breakpoints.lg")
     @js.native
     def lg: Columns = js.native
-    @scala.inline
-    def lg_=(x: Columns): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lg")(x.asInstanceOf[js.Any])
+    inline def lg_=(x: Columns): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lg")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/layout", "breakpoints.max")
     @js.native
     def max: Columns = js.native
-    @scala.inline
-    def max_=(x: Columns): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("max")(x.asInstanceOf[js.Any])
+    inline def max_=(x: Columns): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("max")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/layout", "breakpoints.md")
     @js.native
     def md: Columns = js.native
-    @scala.inline
-    def md_=(x: Columns): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("md")(x.asInstanceOf[js.Any])
+    inline def md_=(x: Columns): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("md")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/layout", "breakpoints.sm")
     @js.native
     def sm: Columns = js.native
-    @scala.inline
-    def sm_=(x: Columns): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sm")(x.asInstanceOf[js.Any])
+    inline def sm_=(x: Columns): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sm")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/layout", "breakpoints.xlg")
     @js.native
     def xlg: Columns = js.native
-    @scala.inline
-    def xlg_=(x: Columns): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xlg")(x.asInstanceOf[js.Any])
+    inline def xlg_=(x: Columns): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xlg")(x.asInstanceOf[js.Any])
   }
   
   object em {
     
-    @scala.inline
-    def apply(px: Double): String = ^.asInstanceOf[js.Dynamic].apply(px.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(px: Double): String = ^.asInstanceOf[js.Dynamic].apply(px.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("@carbon/layout", "em")
     @js.native
@@ -94,8 +85,7 @@ object mod {
   
   object miniUnits {
     
-    @scala.inline
-    def apply(count: Double): String = ^.asInstanceOf[js.Dynamic].apply(count.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(count: Double): String = ^.asInstanceOf[js.Dynamic].apply(count.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("@carbon/layout", "miniUnits")
     @js.native
@@ -104,8 +94,7 @@ object mod {
   
   object px {
     
-    @scala.inline
-    def apply(value: Double): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(value: Double): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("@carbon/layout", "px")
     @js.native
@@ -114,8 +103,7 @@ object mod {
   
   object rem {
     
-    @scala.inline
-    def apply(px: Double): String = ^.asInstanceOf[js.Dynamic].apply(px.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(px: Double): String = ^.asInstanceOf[js.Dynamic].apply(px.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("@carbon/layout", "rem")
     @js.native

@@ -14,22 +14,17 @@ trait PullRequestTrigger
 }
 object PullRequestTrigger {
   
-  @scala.inline
-  def apply(branchFilters: js.Array[String], forks: Forks, triggerType: DefinitionTriggerType): PullRequestTrigger = {
+  inline def apply(branchFilters: js.Array[String], forks: Forks, triggerType: DefinitionTriggerType): PullRequestTrigger = {
     val __obj = js.Dynamic.literal(branchFilters = branchFilters.asInstanceOf[js.Any], forks = forks.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullRequestTrigger]
   }
   
-  @scala.inline
-  implicit class PullRequestTriggerMutableBuilder[Self <: PullRequestTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: PullRequestTrigger](x: Self) {
     
-    @scala.inline
-    def setBranchFilters(value: js.Array[String]): Self = StObject.set(x, "branchFilters", value.asInstanceOf[js.Any])
+    inline def setBranchFilters(value: js.Array[String]): Self = StObject.set(x, "branchFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchFiltersVarargs(value: String*): Self = StObject.set(x, "branchFilters", js.Array(value :_*))
+    inline def setBranchFiltersVarargs(value: String*): Self = StObject.set(x, "branchFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setForks(value: Forks): Self = StObject.set(x, "forks", value.asInstanceOf[js.Any])
+    inline def setForks(value: Forks): Self = StObject.set(x, "forks", value.asInstanceOf[js.Any])
   }
 }

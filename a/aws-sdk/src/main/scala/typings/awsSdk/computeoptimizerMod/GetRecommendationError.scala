@@ -23,31 +23,23 @@ trait GetRecommendationError extends StObject {
 }
 object GetRecommendationError {
   
-  @scala.inline
-  def apply(): GetRecommendationError = {
+  inline def apply(): GetRecommendationError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRecommendationError]
   }
   
-  @scala.inline
-  implicit class GetRecommendationErrorMutableBuilder[Self <: GetRecommendationError] (val x: Self) extends AnyVal {
+  extension [Self <: GetRecommendationError](x: Self) {
     
-    @scala.inline
-    def setCode(value: Code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

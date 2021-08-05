@@ -13,22 +13,17 @@ trait `40` extends StObject {
 }
 object `40` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[TrackComputedStyleUpdatesRequest], returnType: Unit): `40` = {
+  inline def apply(paramsType: js.Array[TrackComputedStyleUpdatesRequest], returnType: Unit): `40` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`40`]
   }
   
-  @scala.inline
-  implicit class `40MutableBuilder`[Self <: `40`] (val x: Self) extends AnyVal {
+  extension [Self <: `40`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[TrackComputedStyleUpdatesRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[TrackComputedStyleUpdatesRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: TrackComputedStyleUpdatesRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: TrackComputedStyleUpdatesRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

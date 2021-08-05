@@ -14,11 +14,9 @@ object inputMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(WrappedComponent: ComponentType[InputProps]): ComponentType[AnimatedInputProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedInputProps]]
+  inline def default(WrappedComponent: ComponentType[InputProps]): ComponentType[AnimatedInputProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedInputProps]]
   
-  @scala.inline
-  def AnimatedInput(WrappedComponent: ComponentType[InputProps]): ComponentType[AnimatedInputProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimatedInput")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedInputProps]]
+  inline def AnimatedInput(WrappedComponent: ComponentType[InputProps]): ComponentType[AnimatedInputProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimatedInput")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedInputProps]]
   
   type AnimatedInputProps = BaseTransition & PropsWithInnerRef & InputProps
 }

@@ -14,19 +14,15 @@ trait NotificationsStatics extends StObject {
 }
 object NotificationsStatics {
   
-  @scala.inline
-  def apply(Android: Action, Notification: Instantiable0[Notification]): NotificationsStatics = {
+  inline def apply(Android: Action, Notification: Instantiable0[Notification]): NotificationsStatics = {
     val __obj = js.Dynamic.literal(Android = Android.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationsStatics]
   }
   
-  @scala.inline
-  implicit class NotificationsStaticsMutableBuilder[Self <: NotificationsStatics] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationsStatics](x: Self) {
     
-    @scala.inline
-    def setAndroid(value: Action): Self = StObject.set(x, "Android", value.asInstanceOf[js.Any])
+    inline def setAndroid(value: Action): Self = StObject.set(x, "Android", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotification(value: Instantiable0[Notification]): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: Instantiable0[Notification]): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
   }
 }

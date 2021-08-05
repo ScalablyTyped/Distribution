@@ -35,8 +35,7 @@ trait XDDELink
 }
 object XDDELink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: String,
     Item: String,
     Topic: String,
@@ -51,25 +50,18 @@ object XDDELink {
     __obj.asInstanceOf[XDDELink]
   }
   
-  @scala.inline
-  implicit class XDDELinkMutableBuilder[Self <: XDDELink] (val x: Self) extends AnyVal {
+  extension [Self <: XDDELink](x: Self) {
     
-    @scala.inline
-    def setApplication(value: String): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: String): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetApplication(value: () => String): Self = StObject.set(x, "getApplication", js.Any.fromFunction0(value))
+    inline def setGetApplication(value: () => String): Self = StObject.set(x, "getApplication", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItem(value: () => String): Self = StObject.set(x, "getItem", js.Any.fromFunction0(value))
+    inline def setGetItem(value: () => String): Self = StObject.set(x, "getItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTopic(value: () => String): Self = StObject.set(x, "getTopic", js.Any.fromFunction0(value))
+    inline def setGetTopic(value: () => String): Self = StObject.set(x, "getTopic", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItem(value: String): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    inline def setItem(value: String): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "Topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "Topic", value.asInstanceOf[js.Any])
   }
 }

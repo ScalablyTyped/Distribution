@@ -20,17 +20,14 @@ object typesSetDataRetrievalPolicyOutputMod {
   }
   object SetDataRetrievalPolicyOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): SetDataRetrievalPolicyOutput = {
+    inline def apply($metadata: ResponseMetadata): SetDataRetrievalPolicyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetDataRetrievalPolicyOutput]
     }
     
-    @scala.inline
-    implicit class SetDataRetrievalPolicyOutputMutableBuilder[Self <: SetDataRetrievalPolicyOutput] (val x: Self) extends AnyVal {
+    extension [Self <: SetDataRetrievalPolicyOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

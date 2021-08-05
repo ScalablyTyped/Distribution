@@ -19,31 +19,23 @@ trait HighlightHighlightInfo extends StObject {
 }
 object HighlightHighlightInfo {
   
-  @scala.inline
-  def apply(tabs: js.Array[Double] | Double): HighlightHighlightInfo = {
+  inline def apply(tabs: js.Array[Double] | Double): HighlightHighlightInfo = {
     val __obj = js.Dynamic.literal(tabs = tabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightHighlightInfo]
   }
   
-  @scala.inline
-  implicit class HighlightHighlightInfoMutableBuilder[Self <: HighlightHighlightInfo] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightHighlightInfo](x: Self) {
     
-    @scala.inline
-    def setPopulate(value: Boolean): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
+    inline def setPopulate(value: Boolean): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
+    inline def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
     
-    @scala.inline
-    def setTabs(value: js.Array[Double] | Double): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+    inline def setTabs(value: js.Array[Double] | Double): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabsVarargs(value: Double*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+    inline def setTabsVarargs(value: Double*): Self = StObject.set(x, "tabs", js.Array(value :_*))
     
-    @scala.inline
-    def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+    inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+    inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
   }
 }

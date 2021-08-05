@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlFilterAction extends StObject
 object XlFilterAction {
   
-  @scala.inline
-  def xlFilterCopy: `2` = 2.asInstanceOf[`2`]
+  inline def xlFilterCopy: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlFilterInPlace: `1` = 1.asInstanceOf[`1`]
+  inline def xlFilterInPlace: `1` = 1.asInstanceOf[`1`]
 }

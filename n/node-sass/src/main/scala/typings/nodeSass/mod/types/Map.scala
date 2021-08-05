@@ -19,13 +19,10 @@ object Map {
   @js.native
   val ^ : MapConstructor = js.native
   
-  @scala.inline
-  implicit class MapMutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
+  extension [Self <: Map](x: Self) {
     
-    @scala.inline
-    def setGetKey(value: Double => Value): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
+    inline def setGetKey(value: Double => Value): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetKey(value: (Double, Value) => Unit): Self = StObject.set(x, "setKey", js.Any.fromFunction2(value))
+    inline def setSetKey(value: (Double, Value) => Unit): Self = StObject.set(x, "setKey", js.Any.fromFunction2(value))
   }
 }

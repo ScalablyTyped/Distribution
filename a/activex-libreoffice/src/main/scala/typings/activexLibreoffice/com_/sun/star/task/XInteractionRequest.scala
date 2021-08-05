@@ -32,8 +32,7 @@ trait XInteractionRequest
 }
 object XInteractionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Continuations: SafeArray[XInteractionContinuation],
     Request: js.Any,
     acquire: () => Unit,
@@ -46,19 +45,14 @@ object XInteractionRequest {
     __obj.asInstanceOf[XInteractionRequest]
   }
   
-  @scala.inline
-  implicit class XInteractionRequestMutableBuilder[Self <: XInteractionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: XInteractionRequest](x: Self) {
     
-    @scala.inline
-    def setContinuations(value: SafeArray[XInteractionContinuation]): Self = StObject.set(x, "Continuations", value.asInstanceOf[js.Any])
+    inline def setContinuations(value: SafeArray[XInteractionContinuation]): Self = StObject.set(x, "Continuations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetContinuations(value: () => SafeArray[XInteractionContinuation]): Self = StObject.set(x, "getContinuations", js.Any.fromFunction0(value))
+    inline def setGetContinuations(value: () => SafeArray[XInteractionContinuation]): Self = StObject.set(x, "getContinuations", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRequest(value: () => js.Any): Self = StObject.set(x, "getRequest", js.Any.fromFunction0(value))
+    inline def setGetRequest(value: () => js.Any): Self = StObject.set(x, "getRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequest(value: js.Any): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: js.Any): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
   }
 }

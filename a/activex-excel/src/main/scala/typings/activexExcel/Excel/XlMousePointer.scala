@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlMousePointer extends StObject
 object XlMousePointer {
   
-  @scala.inline
-  def xlDefault: `-4143` = -4143.asInstanceOf[`-4143`]
+  inline def xlDefault: `-4143` = -4143.asInstanceOf[`-4143`]
   
-  @scala.inline
-  def xlIBeam: `3` = 3.asInstanceOf[`3`]
+  inline def xlIBeam: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlNorthwestArrow: `1` = 1.asInstanceOf[`1`]
+  inline def xlNorthwestArrow: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlWait: `2` = 2.asInstanceOf[`2`]
+  inline def xlWait: `2` = 2.asInstanceOf[`2`]
 }

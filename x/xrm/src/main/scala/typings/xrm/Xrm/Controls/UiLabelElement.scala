@@ -23,19 +23,15 @@ trait UiLabelElement extends StObject {
 }
 object UiLabelElement {
   
-  @scala.inline
-  def apply(getLabel: () => String, setLabel: String => Unit): UiLabelElement = {
+  inline def apply(getLabel: () => String, setLabel: String => Unit): UiLabelElement = {
     val __obj = js.Dynamic.literal(getLabel = js.Any.fromFunction0(getLabel), setLabel = js.Any.fromFunction1(setLabel))
     __obj.asInstanceOf[UiLabelElement]
   }
   
-  @scala.inline
-  implicit class UiLabelElementMutableBuilder[Self <: UiLabelElement] (val x: Self) extends AnyVal {
+  extension [Self <: UiLabelElement](x: Self) {
     
-    @scala.inline
-    def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+    inline def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetLabel(value: String => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
+    inline def setSetLabel(value: String => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
   }
 }

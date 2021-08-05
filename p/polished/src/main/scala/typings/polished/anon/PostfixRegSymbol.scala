@@ -16,22 +16,17 @@ trait PostfixRegSymbol extends StObject {
 }
 object PostfixRegSymbol {
   
-  @scala.inline
-  def apply(postfix: ArgCountFNotation): PostfixRegSymbol = {
+  inline def apply(postfix: ArgCountFNotation): PostfixRegSymbol = {
     val __obj = js.Dynamic.literal(postfix = postfix.asInstanceOf[js.Any], regSymbol = "\\)", symbol = ")")
     __obj.asInstanceOf[PostfixRegSymbol]
   }
   
-  @scala.inline
-  implicit class PostfixRegSymbolMutableBuilder[Self <: PostfixRegSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: PostfixRegSymbol](x: Self) {
     
-    @scala.inline
-    def setPostfix(value: ArgCountFNotation): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
+    inline def setPostfix(value: ArgCountFNotation): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegSymbol(value: BackslashRightparenthesis): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: BackslashRightparenthesis): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: Rightparenthesis): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: Rightparenthesis): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

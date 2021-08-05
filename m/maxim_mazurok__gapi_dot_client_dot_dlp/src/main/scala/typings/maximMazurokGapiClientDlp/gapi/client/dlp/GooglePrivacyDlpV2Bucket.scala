@@ -17,31 +17,23 @@ trait GooglePrivacyDlpV2Bucket extends StObject {
 }
 object GooglePrivacyDlpV2Bucket {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2Bucket = {
+  inline def apply(): GooglePrivacyDlpV2Bucket = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2Bucket]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2BucketMutableBuilder[Self <: GooglePrivacyDlpV2Bucket] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2Bucket](x: Self) {
     
-    @scala.inline
-    def setMax(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setReplacementValue(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "replacementValue", value.asInstanceOf[js.Any])
+    inline def setReplacementValue(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "replacementValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementValueUndefined: Self = StObject.set(x, "replacementValue", js.undefined)
+    inline def setReplacementValueUndefined: Self = StObject.set(x, "replacementValue", js.undefined)
   }
 }

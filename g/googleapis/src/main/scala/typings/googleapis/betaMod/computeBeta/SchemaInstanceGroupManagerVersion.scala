@@ -29,31 +29,23 @@ trait SchemaInstanceGroupManagerVersion extends StObject {
 }
 object SchemaInstanceGroupManagerVersion {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupManagerVersion = {
+  inline def apply(): SchemaInstanceGroupManagerVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagerVersion]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupManagerVersionMutableBuilder[Self <: SchemaInstanceGroupManagerVersion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupManagerVersion](x: Self) {
     
-    @scala.inline
-    def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
+    inline def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTemplateUndefined: Self = StObject.set(x, "instanceTemplate", js.undefined)
+    inline def setInstanceTemplateUndefined: Self = StObject.set(x, "instanceTemplate", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTargetSize(value: SchemaFixedOrPercent): Self = StObject.set(x, "targetSize", value.asInstanceOf[js.Any])
+    inline def setTargetSize(value: SchemaFixedOrPercent): Self = StObject.set(x, "targetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSizeUndefined: Self = StObject.set(x, "targetSize", js.undefined)
+    inline def setTargetSizeUndefined: Self = StObject.set(x, "targetSize", js.undefined)
   }
 }

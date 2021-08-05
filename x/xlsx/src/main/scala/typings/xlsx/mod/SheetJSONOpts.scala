@@ -10,8 +10,7 @@ trait SheetJSONOpts
      with OriginOption
 object SheetJSONOpts {
   
-  @scala.inline
-  def apply(): SheetJSONOpts = {
+  inline def apply(): SheetJSONOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SheetJSONOpts]
   }

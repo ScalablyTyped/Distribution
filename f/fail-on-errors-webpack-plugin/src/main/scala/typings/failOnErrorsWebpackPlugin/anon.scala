@@ -14,26 +14,20 @@ object anon {
   }
   object FailOnErrors {
     
-    @scala.inline
-    def apply(): FailOnErrors = {
+    inline def apply(): FailOnErrors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FailOnErrors]
     }
     
-    @scala.inline
-    implicit class FailOnErrorsMutableBuilder[Self <: FailOnErrors] (val x: Self) extends AnyVal {
+    extension [Self <: FailOnErrors](x: Self) {
       
-      @scala.inline
-      def setFailOnErrors(value: Boolean): Self = StObject.set(x, "failOnErrors", value.asInstanceOf[js.Any])
+      inline def setFailOnErrors(value: Boolean): Self = StObject.set(x, "failOnErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailOnErrorsUndefined: Self = StObject.set(x, "failOnErrors", js.undefined)
+      inline def setFailOnErrorsUndefined: Self = StObject.set(x, "failOnErrors", js.undefined)
       
-      @scala.inline
-      def setFailOnWarnings(value: Boolean): Self = StObject.set(x, "failOnWarnings", value.asInstanceOf[js.Any])
+      inline def setFailOnWarnings(value: Boolean): Self = StObject.set(x, "failOnWarnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailOnWarningsUndefined: Self = StObject.set(x, "failOnWarnings", js.undefined)
+      inline def setFailOnWarningsUndefined: Self = StObject.set(x, "failOnWarnings", js.undefined)
     }
   }
 }

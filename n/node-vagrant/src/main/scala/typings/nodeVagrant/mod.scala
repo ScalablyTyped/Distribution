@@ -25,104 +25,66 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def boxAdd(box: String): ProgressEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("boxAdd")(box.asInstanceOf[js.Any]).asInstanceOf[ProgressEmitter]
-  @scala.inline
-  def boxAdd(box: String, args: String): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxAdd")(box.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
-  @scala.inline
-  def boxAdd(box: String, args: String, cb: Callback): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxAdd")(box.asInstanceOf[js.Any], args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
-  @scala.inline
-  def boxAdd(box: String, args: js.Array[String]): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxAdd")(box.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
-  @scala.inline
-  def boxAdd(box: String, args: js.Array[String], cb: Callback): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxAdd")(box.asInstanceOf[js.Any], args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
-  @scala.inline
-  def boxAdd(box: String, args: Unit, cb: Callback): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxAdd")(box.asInstanceOf[js.Any], args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
-  @scala.inline
-  def boxAdd(box: String, cb: Callback): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxAdd")(box.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
+  inline def boxAdd(box: String): ProgressEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("boxAdd")(box.asInstanceOf[js.Any]).asInstanceOf[ProgressEmitter]
+  inline def boxAdd(box: String, args: String): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxAdd")(box.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
+  inline def boxAdd(box: String, args: String, cb: Callback): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxAdd")(box.asInstanceOf[js.Any], args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
+  inline def boxAdd(box: String, args: js.Array[String]): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxAdd")(box.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
+  inline def boxAdd(box: String, args: js.Array[String], cb: Callback): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxAdd")(box.asInstanceOf[js.Any], args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
+  inline def boxAdd(box: String, args: Unit, cb: Callback): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxAdd")(box.asInstanceOf[js.Any], args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
+  inline def boxAdd(box: String, cb: Callback): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxAdd")(box.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
   
-  @scala.inline
-  def boxList(args: String, cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Name]], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxList")(args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def boxList(
+  inline def boxList(args: String, cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Name]], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxList")(args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def boxList(
     args: js.Array[String],
     cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Name]], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxList")(args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def boxList(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Name]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("boxList")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def boxList(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Name]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("boxList")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def boxOutdated(
+  inline def boxOutdated(
     args: String,
     cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[CurrentVersion]], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxOutdated")(args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def boxOutdated(
+  inline def boxOutdated(
     args: js.Array[String],
     cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[CurrentVersion]], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxOutdated")(args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def boxOutdated(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[CurrentVersion]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("boxOutdated")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def boxOutdated(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[CurrentVersion]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("boxOutdated")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def boxPrune(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("boxPrune")().asInstanceOf[Unit]
-  @scala.inline
-  def boxPrune(args: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("boxPrune")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def boxPrune(args: String, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxPrune")(args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def boxPrune(args: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("boxPrune")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def boxPrune(args: js.Array[String], cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxPrune")(args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def boxPrune(cb: Callback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("boxPrune")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def boxPrune(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("boxPrune")().asInstanceOf[Unit]
+  inline def boxPrune(args: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("boxPrune")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def boxPrune(args: String, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxPrune")(args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def boxPrune(args: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("boxPrune")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def boxPrune(args: js.Array[String], cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxPrune")(args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def boxPrune(cb: Callback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("boxPrune")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def boxRemove(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("boxRemove")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def boxRemove(name: String, args: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxRemove")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def boxRemove(name: String, args: String, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxRemove")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def boxRemove(name: String, args: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxRemove")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def boxRemove(name: String, args: js.Array[String], cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxRemove")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def boxRemove(name: String, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxRemove")(name.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def boxRemove(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("boxRemove")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def boxRemove(name: String, args: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxRemove")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def boxRemove(name: String, args: String, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxRemove")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def boxRemove(name: String, args: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxRemove")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def boxRemove(name: String, args: js.Array[String], cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxRemove")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def boxRemove(name: String, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boxRemove")(name.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def boxUpdate(box: String): ProgressEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("boxUpdate")(box.asInstanceOf[js.Any]).asInstanceOf[ProgressEmitter]
-  @scala.inline
-  def boxUpdate(box: String, provider: String): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxUpdate")(box.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
-  @scala.inline
-  def boxUpdate(box: String, provider: String, cb: Callback): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxUpdate")(box.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
-  @scala.inline
-  def boxUpdate(box: String, provider: Null, cb: Callback): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxUpdate")(box.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
+  inline def boxUpdate(box: String): ProgressEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("boxUpdate")(box.asInstanceOf[js.Any]).asInstanceOf[ProgressEmitter]
+  inline def boxUpdate(box: String, provider: String): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxUpdate")(box.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
+  inline def boxUpdate(box: String, provider: String, cb: Callback): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxUpdate")(box.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
+  inline def boxUpdate(box: String, provider: Null, cb: Callback): ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("boxUpdate")(box.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ProgressEmitter]
   
-  @scala.inline
-  def create(): Machine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Machine]
-  @scala.inline
-  def create(opts: Env): Machine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[Machine]
+  inline def create(): Machine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Machine]
+  inline def create(opts: Env): Machine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[Machine]
   
-  @scala.inline
-  def globalStatus(args: String, cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Id]], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("globalStatus")(args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def globalStatus(
+  inline def globalStatus(args: String, cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Id]], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("globalStatus")(args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def globalStatus(
     args: js.Array[String],
     cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Id]], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("globalStatus")(args.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def globalStatus(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Id]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("globalStatus")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def globalStatus(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[js.Array[Id]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("globalStatus")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def promisify(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("promisify")().asInstanceOf[Unit]
+  inline def promisify(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("promisify")().asInstanceOf[Unit]
   
-  @scala.inline
-  def version(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("version")().asInstanceOf[Unit]
-  @scala.inline
-  def version(cb: Callback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("version")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def version(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("version")().asInstanceOf[Unit]
+  inline def version(cb: Callback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("version")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def versionStatus(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[Major], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("versionStatus")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def versionStatus(cb: js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[Major], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("versionStatus")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type Callback = js.Function2[/* err */ ErrorArg, /* out */ js.UndefOr[String], Unit]
   

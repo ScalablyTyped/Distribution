@@ -8,6 +8,5 @@ object jsreportJsrenderStrings {
   
   @js.native
   sealed trait jsrender extends StObject
-  @scala.inline
-  def jsrender: jsrender = "jsrender".asInstanceOf[jsrender]
+  inline def jsrender: jsrender = "jsrender".asInstanceOf[jsrender]
 }

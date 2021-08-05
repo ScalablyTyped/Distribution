@@ -97,21 +97,16 @@ object computeEnvironmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ComputeEnvironment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ComputeEnvironment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ComputeEnvironment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ComputeEnvironment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ComputeEnvironmentState): ComputeEnvironment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ComputeEnvironment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ComputeEnvironmentState, opts: CustomResourceOptions): ComputeEnvironment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ComputeEnvironment]
+    inline def get(name: String, id: Input[ID]): ComputeEnvironment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ComputeEnvironment]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ComputeEnvironment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ComputeEnvironment]
+    inline def get(name: String, id: Input[ID], state: ComputeEnvironmentState): ComputeEnvironment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ComputeEnvironment]
+    inline def get(name: String, id: Input[ID], state: ComputeEnvironmentState, opts: CustomResourceOptions): ComputeEnvironment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ComputeEnvironment]
     
     /**
       * Returns true if the given object is an instance of ComputeEnvironment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/computeEnvironment.ComputeEnvironment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/batch/computeEnvironment.ComputeEnvironment */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/computeEnvironment.ComputeEnvironment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/batch/computeEnvironment.ComputeEnvironment */ Boolean]
   }
   
   trait ComputeEnvironmentArgs extends StObject {
@@ -153,51 +148,37 @@ object computeEnvironmentMod {
   }
   object ComputeEnvironmentArgs {
     
-    @scala.inline
-    def apply(serviceRole: Input[String], `type`: Input[String]): ComputeEnvironmentArgs = {
+    inline def apply(serviceRole: Input[String], `type`: Input[String]): ComputeEnvironmentArgs = {
       val __obj = js.Dynamic.literal(serviceRole = serviceRole.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComputeEnvironmentArgs]
     }
     
-    @scala.inline
-    implicit class ComputeEnvironmentArgsMutableBuilder[Self <: ComputeEnvironmentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ComputeEnvironmentArgs](x: Self) {
       
-      @scala.inline
-      def setComputeEnvironmentName(value: Input[String]): Self = StObject.set(x, "computeEnvironmentName", value.asInstanceOf[js.Any])
+      inline def setComputeEnvironmentName(value: Input[String]): Self = StObject.set(x, "computeEnvironmentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeEnvironmentNamePrefix(value: Input[String]): Self = StObject.set(x, "computeEnvironmentNamePrefix", value.asInstanceOf[js.Any])
+      inline def setComputeEnvironmentNamePrefix(value: Input[String]): Self = StObject.set(x, "computeEnvironmentNamePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeEnvironmentNamePrefixUndefined: Self = StObject.set(x, "computeEnvironmentNamePrefix", js.undefined)
+      inline def setComputeEnvironmentNamePrefixUndefined: Self = StObject.set(x, "computeEnvironmentNamePrefix", js.undefined)
       
-      @scala.inline
-      def setComputeEnvironmentNameUndefined: Self = StObject.set(x, "computeEnvironmentName", js.undefined)
+      inline def setComputeEnvironmentNameUndefined: Self = StObject.set(x, "computeEnvironmentName", js.undefined)
       
-      @scala.inline
-      def setComputeResources(value: Input[typings.pulumiAws.inputMod.batch.ComputeEnvironmentComputeResources]): Self = StObject.set(x, "computeResources", value.asInstanceOf[js.Any])
+      inline def setComputeResources(value: Input[typings.pulumiAws.inputMod.batch.ComputeEnvironmentComputeResources]): Self = StObject.set(x, "computeResources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeResourcesUndefined: Self = StObject.set(x, "computeResources", js.undefined)
+      inline def setComputeResourcesUndefined: Self = StObject.set(x, "computeResources", js.undefined)
       
-      @scala.inline
-      def setServiceRole(value: Input[String]): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
+      inline def setServiceRole(value: Input[String]): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -260,80 +241,56 @@ object computeEnvironmentMod {
   }
   object ComputeEnvironmentState {
     
-    @scala.inline
-    def apply(): ComputeEnvironmentState = {
+    inline def apply(): ComputeEnvironmentState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComputeEnvironmentState]
     }
     
-    @scala.inline
-    implicit class ComputeEnvironmentStateMutableBuilder[Self <: ComputeEnvironmentState] (val x: Self) extends AnyVal {
+    extension [Self <: ComputeEnvironmentState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setComputeEnvironmentName(value: Input[String]): Self = StObject.set(x, "computeEnvironmentName", value.asInstanceOf[js.Any])
+      inline def setComputeEnvironmentName(value: Input[String]): Self = StObject.set(x, "computeEnvironmentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeEnvironmentNamePrefix(value: Input[String]): Self = StObject.set(x, "computeEnvironmentNamePrefix", value.asInstanceOf[js.Any])
+      inline def setComputeEnvironmentNamePrefix(value: Input[String]): Self = StObject.set(x, "computeEnvironmentNamePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeEnvironmentNamePrefixUndefined: Self = StObject.set(x, "computeEnvironmentNamePrefix", js.undefined)
+      inline def setComputeEnvironmentNamePrefixUndefined: Self = StObject.set(x, "computeEnvironmentNamePrefix", js.undefined)
       
-      @scala.inline
-      def setComputeEnvironmentNameUndefined: Self = StObject.set(x, "computeEnvironmentName", js.undefined)
+      inline def setComputeEnvironmentNameUndefined: Self = StObject.set(x, "computeEnvironmentName", js.undefined)
       
-      @scala.inline
-      def setComputeResources(value: Input[typings.pulumiAws.inputMod.batch.ComputeEnvironmentComputeResources]): Self = StObject.set(x, "computeResources", value.asInstanceOf[js.Any])
+      inline def setComputeResources(value: Input[typings.pulumiAws.inputMod.batch.ComputeEnvironmentComputeResources]): Self = StObject.set(x, "computeResources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeResourcesUndefined: Self = StObject.set(x, "computeResources", js.undefined)
+      inline def setComputeResourcesUndefined: Self = StObject.set(x, "computeResources", js.undefined)
       
-      @scala.inline
-      def setEcsClusterArn(value: Input[String]): Self = StObject.set(x, "ecsClusterArn", value.asInstanceOf[js.Any])
+      inline def setEcsClusterArn(value: Input[String]): Self = StObject.set(x, "ecsClusterArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEcsClusterArnUndefined: Self = StObject.set(x, "ecsClusterArn", js.undefined)
+      inline def setEcsClusterArnUndefined: Self = StObject.set(x, "ecsClusterArn", js.undefined)
       
-      @scala.inline
-      def setServiceRole(value: Input[String]): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
+      inline def setServiceRole(value: Input[String]): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceRoleUndefined: Self = StObject.set(x, "serviceRole", js.undefined)
+      inline def setServiceRoleUndefined: Self = StObject.set(x, "serviceRole", js.undefined)
       
-      @scala.inline
-      def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusReason(value: Input[String]): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
+      inline def setStatusReason(value: Input[String]): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
+      inline def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

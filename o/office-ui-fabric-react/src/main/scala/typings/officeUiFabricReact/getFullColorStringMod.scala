@@ -11,6 +11,5 @@ object getFullColorStringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFullColorString(color: IColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullColorString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getFullColorString(color: IColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullColorString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
 }

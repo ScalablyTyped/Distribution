@@ -68,133 +68,91 @@ trait ParagraphStyleSuggestionState extends StObject {
 }
 object ParagraphStyleSuggestionState {
   
-  @scala.inline
-  def apply(): ParagraphStyleSuggestionState = {
+  inline def apply(): ParagraphStyleSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParagraphStyleSuggestionState]
   }
   
-  @scala.inline
-  implicit class ParagraphStyleSuggestionStateMutableBuilder[Self <: ParagraphStyleSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphStyleSuggestionState](x: Self) {
     
-    @scala.inline
-    def setAlignmentSuggested(value: Boolean): Self = StObject.set(x, "alignmentSuggested", value.asInstanceOf[js.Any])
+    inline def setAlignmentSuggested(value: Boolean): Self = StObject.set(x, "alignmentSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentSuggestedUndefined: Self = StObject.set(x, "alignmentSuggested", js.undefined)
+    inline def setAlignmentSuggestedUndefined: Self = StObject.set(x, "alignmentSuggested", js.undefined)
     
-    @scala.inline
-    def setAvoidWidowAndOrphanSuggested(value: Boolean): Self = StObject.set(x, "avoidWidowAndOrphanSuggested", value.asInstanceOf[js.Any])
+    inline def setAvoidWidowAndOrphanSuggested(value: Boolean): Self = StObject.set(x, "avoidWidowAndOrphanSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvoidWidowAndOrphanSuggestedUndefined: Self = StObject.set(x, "avoidWidowAndOrphanSuggested", js.undefined)
+    inline def setAvoidWidowAndOrphanSuggestedUndefined: Self = StObject.set(x, "avoidWidowAndOrphanSuggested", js.undefined)
     
-    @scala.inline
-    def setBorderBetweenSuggested(value: Boolean): Self = StObject.set(x, "borderBetweenSuggested", value.asInstanceOf[js.Any])
+    inline def setBorderBetweenSuggested(value: Boolean): Self = StObject.set(x, "borderBetweenSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBetweenSuggestedUndefined: Self = StObject.set(x, "borderBetweenSuggested", js.undefined)
+    inline def setBorderBetweenSuggestedUndefined: Self = StObject.set(x, "borderBetweenSuggested", js.undefined)
     
-    @scala.inline
-    def setBorderBottomSuggested(value: Boolean): Self = StObject.set(x, "borderBottomSuggested", value.asInstanceOf[js.Any])
+    inline def setBorderBottomSuggested(value: Boolean): Self = StObject.set(x, "borderBottomSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottomSuggestedUndefined: Self = StObject.set(x, "borderBottomSuggested", js.undefined)
+    inline def setBorderBottomSuggestedUndefined: Self = StObject.set(x, "borderBottomSuggested", js.undefined)
     
-    @scala.inline
-    def setBorderLeftSuggested(value: Boolean): Self = StObject.set(x, "borderLeftSuggested", value.asInstanceOf[js.Any])
+    inline def setBorderLeftSuggested(value: Boolean): Self = StObject.set(x, "borderLeftSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderLeftSuggestedUndefined: Self = StObject.set(x, "borderLeftSuggested", js.undefined)
+    inline def setBorderLeftSuggestedUndefined: Self = StObject.set(x, "borderLeftSuggested", js.undefined)
     
-    @scala.inline
-    def setBorderRightSuggested(value: Boolean): Self = StObject.set(x, "borderRightSuggested", value.asInstanceOf[js.Any])
+    inline def setBorderRightSuggested(value: Boolean): Self = StObject.set(x, "borderRightSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRightSuggestedUndefined: Self = StObject.set(x, "borderRightSuggested", js.undefined)
+    inline def setBorderRightSuggestedUndefined: Self = StObject.set(x, "borderRightSuggested", js.undefined)
     
-    @scala.inline
-    def setBorderTopSuggested(value: Boolean): Self = StObject.set(x, "borderTopSuggested", value.asInstanceOf[js.Any])
+    inline def setBorderTopSuggested(value: Boolean): Self = StObject.set(x, "borderTopSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTopSuggestedUndefined: Self = StObject.set(x, "borderTopSuggested", js.undefined)
+    inline def setBorderTopSuggestedUndefined: Self = StObject.set(x, "borderTopSuggested", js.undefined)
     
-    @scala.inline
-    def setDirectionSuggested(value: Boolean): Self = StObject.set(x, "directionSuggested", value.asInstanceOf[js.Any])
+    inline def setDirectionSuggested(value: Boolean): Self = StObject.set(x, "directionSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionSuggestedUndefined: Self = StObject.set(x, "directionSuggested", js.undefined)
+    inline def setDirectionSuggestedUndefined: Self = StObject.set(x, "directionSuggested", js.undefined)
     
-    @scala.inline
-    def setHeadingIdSuggested(value: Boolean): Self = StObject.set(x, "headingIdSuggested", value.asInstanceOf[js.Any])
+    inline def setHeadingIdSuggested(value: Boolean): Self = StObject.set(x, "headingIdSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingIdSuggestedUndefined: Self = StObject.set(x, "headingIdSuggested", js.undefined)
+    inline def setHeadingIdSuggestedUndefined: Self = StObject.set(x, "headingIdSuggested", js.undefined)
     
-    @scala.inline
-    def setIndentEndSuggested(value: Boolean): Self = StObject.set(x, "indentEndSuggested", value.asInstanceOf[js.Any])
+    inline def setIndentEndSuggested(value: Boolean): Self = StObject.set(x, "indentEndSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentEndSuggestedUndefined: Self = StObject.set(x, "indentEndSuggested", js.undefined)
+    inline def setIndentEndSuggestedUndefined: Self = StObject.set(x, "indentEndSuggested", js.undefined)
     
-    @scala.inline
-    def setIndentFirstLineSuggested(value: Boolean): Self = StObject.set(x, "indentFirstLineSuggested", value.asInstanceOf[js.Any])
+    inline def setIndentFirstLineSuggested(value: Boolean): Self = StObject.set(x, "indentFirstLineSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentFirstLineSuggestedUndefined: Self = StObject.set(x, "indentFirstLineSuggested", js.undefined)
+    inline def setIndentFirstLineSuggestedUndefined: Self = StObject.set(x, "indentFirstLineSuggested", js.undefined)
     
-    @scala.inline
-    def setIndentStartSuggested(value: Boolean): Self = StObject.set(x, "indentStartSuggested", value.asInstanceOf[js.Any])
+    inline def setIndentStartSuggested(value: Boolean): Self = StObject.set(x, "indentStartSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentStartSuggestedUndefined: Self = StObject.set(x, "indentStartSuggested", js.undefined)
+    inline def setIndentStartSuggestedUndefined: Self = StObject.set(x, "indentStartSuggested", js.undefined)
     
-    @scala.inline
-    def setKeepLinesTogetherSuggested(value: Boolean): Self = StObject.set(x, "keepLinesTogetherSuggested", value.asInstanceOf[js.Any])
+    inline def setKeepLinesTogetherSuggested(value: Boolean): Self = StObject.set(x, "keepLinesTogetherSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepLinesTogetherSuggestedUndefined: Self = StObject.set(x, "keepLinesTogetherSuggested", js.undefined)
+    inline def setKeepLinesTogetherSuggestedUndefined: Self = StObject.set(x, "keepLinesTogetherSuggested", js.undefined)
     
-    @scala.inline
-    def setKeepWithNextSuggested(value: Boolean): Self = StObject.set(x, "keepWithNextSuggested", value.asInstanceOf[js.Any])
+    inline def setKeepWithNextSuggested(value: Boolean): Self = StObject.set(x, "keepWithNextSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepWithNextSuggestedUndefined: Self = StObject.set(x, "keepWithNextSuggested", js.undefined)
+    inline def setKeepWithNextSuggestedUndefined: Self = StObject.set(x, "keepWithNextSuggested", js.undefined)
     
-    @scala.inline
-    def setLineSpacingSuggested(value: Boolean): Self = StObject.set(x, "lineSpacingSuggested", value.asInstanceOf[js.Any])
+    inline def setLineSpacingSuggested(value: Boolean): Self = StObject.set(x, "lineSpacingSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineSpacingSuggestedUndefined: Self = StObject.set(x, "lineSpacingSuggested", js.undefined)
+    inline def setLineSpacingSuggestedUndefined: Self = StObject.set(x, "lineSpacingSuggested", js.undefined)
     
-    @scala.inline
-    def setNamedStyleTypeSuggested(value: Boolean): Self = StObject.set(x, "namedStyleTypeSuggested", value.asInstanceOf[js.Any])
+    inline def setNamedStyleTypeSuggested(value: Boolean): Self = StObject.set(x, "namedStyleTypeSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedStyleTypeSuggestedUndefined: Self = StObject.set(x, "namedStyleTypeSuggested", js.undefined)
+    inline def setNamedStyleTypeSuggestedUndefined: Self = StObject.set(x, "namedStyleTypeSuggested", js.undefined)
     
-    @scala.inline
-    def setShadingSuggestionState(value: ShadingSuggestionState): Self = StObject.set(x, "shadingSuggestionState", value.asInstanceOf[js.Any])
+    inline def setShadingSuggestionState(value: ShadingSuggestionState): Self = StObject.set(x, "shadingSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadingSuggestionStateUndefined: Self = StObject.set(x, "shadingSuggestionState", js.undefined)
+    inline def setShadingSuggestionStateUndefined: Self = StObject.set(x, "shadingSuggestionState", js.undefined)
     
-    @scala.inline
-    def setSpaceAboveSuggested(value: Boolean): Self = StObject.set(x, "spaceAboveSuggested", value.asInstanceOf[js.Any])
+    inline def setSpaceAboveSuggested(value: Boolean): Self = StObject.set(x, "spaceAboveSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceAboveSuggestedUndefined: Self = StObject.set(x, "spaceAboveSuggested", js.undefined)
+    inline def setSpaceAboveSuggestedUndefined: Self = StObject.set(x, "spaceAboveSuggested", js.undefined)
     
-    @scala.inline
-    def setSpaceBelowSuggested(value: Boolean): Self = StObject.set(x, "spaceBelowSuggested", value.asInstanceOf[js.Any])
+    inline def setSpaceBelowSuggested(value: Boolean): Self = StObject.set(x, "spaceBelowSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceBelowSuggestedUndefined: Self = StObject.set(x, "spaceBelowSuggested", js.undefined)
+    inline def setSpaceBelowSuggestedUndefined: Self = StObject.set(x, "spaceBelowSuggested", js.undefined)
     
-    @scala.inline
-    def setSpacingModeSuggested(value: Boolean): Self = StObject.set(x, "spacingModeSuggested", value.asInstanceOf[js.Any])
+    inline def setSpacingModeSuggested(value: Boolean): Self = StObject.set(x, "spacingModeSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingModeSuggestedUndefined: Self = StObject.set(x, "spacingModeSuggested", js.undefined)
+    inline def setSpacingModeSuggestedUndefined: Self = StObject.set(x, "spacingModeSuggested", js.undefined)
   }
 }

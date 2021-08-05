@@ -16,8 +16,7 @@ trait WithStatement
 }
 object WithStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -45,16 +44,12 @@ object WithStatement {
     __obj.asInstanceOf[WithStatement]
   }
   
-  @scala.inline
-  implicit class WithStatementMutableBuilder[Self <: WithStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WithStatement](x: Self) {
     
-    @scala.inline
-    def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatement(value: AST): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
+    inline def setStatement(value: AST): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (WithStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (WithStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

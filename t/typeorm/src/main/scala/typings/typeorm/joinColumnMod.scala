@@ -12,10 +12,7 @@ object joinColumnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def JoinColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("JoinColumn")().asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def JoinColumn(options: js.Array[JoinColumnOptions]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("JoinColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def JoinColumn(options: JoinColumnOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("JoinColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def JoinColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("JoinColumn")().asInstanceOf[PropertyDecorator]
+  inline def JoinColumn(options: js.Array[JoinColumnOptions]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("JoinColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def JoinColumn(options: JoinColumnOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("JoinColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
 }

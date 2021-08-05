@@ -38,29 +38,22 @@ object typesSendUsersMessageResponseMod {
   }
   object SendUsersMessageResponse {
     
-    @scala.inline
-    def apply(): SendUsersMessageResponse = {
+    inline def apply(): SendUsersMessageResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SendUsersMessageResponse]
     }
     
-    @scala.inline
-    implicit class SendUsersMessageResponseMutableBuilder[Self <: SendUsersMessageResponse] (val x: Self) extends AnyVal {
+    extension [Self <: SendUsersMessageResponse](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
+      inline def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
       
-      @scala.inline
-      def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+      inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
       
-      @scala.inline
-      def setResult(
+      inline def setResult(
         value: (StringDictionary[
               StringDictionary[EndpointMessageResult] | (Iterable[js.Tuple2[String, EndpointMessageResult]])
             ]) | (Iterable[
@@ -71,8 +64,7 @@ object typesSendUsersMessageResponseMod {
             ])
       ): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
     }
   }
   
@@ -88,20 +80,16 @@ object typesSendUsersMessageResponseMod {
   }
   object UnmarshalledSendUsersMessageResponse {
     
-    @scala.inline
-    def apply(): UnmarshalledSendUsersMessageResponse = {
+    inline def apply(): UnmarshalledSendUsersMessageResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledSendUsersMessageResponse]
     }
     
-    @scala.inline
-    implicit class UnmarshalledSendUsersMessageResponseMutableBuilder[Self <: UnmarshalledSendUsersMessageResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledSendUsersMessageResponse](x: Self) {
       
-      @scala.inline
-      def setResult(value: StringDictionary[StringDictionary[UnmarshalledEndpointMessageResult]]): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+      inline def setResult(value: StringDictionary[StringDictionary[UnmarshalledEndpointMessageResult]]): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
     }
   }
 }

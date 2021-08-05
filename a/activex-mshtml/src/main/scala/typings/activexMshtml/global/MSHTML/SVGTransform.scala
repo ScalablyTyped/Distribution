@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGTransform")
 @js.native
-class SVGTransform protected ()
+/* private */ class SVGTransform ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGTransform {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGTransform_typekey")
   var MSHTMLDotSVGTransform_typekey: typings.activexMshtml.MSHTML.SVGTransform = js.native
   

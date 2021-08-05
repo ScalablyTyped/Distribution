@@ -24,25 +24,19 @@ trait PointSymbol3DProperties
 }
 object PointSymbol3DProperties {
   
-  @scala.inline
-  def apply(): PointSymbol3DProperties = {
+  inline def apply(): PointSymbol3DProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointSymbol3DProperties]
   }
   
-  @scala.inline
-  implicit class PointSymbol3DPropertiesMutableBuilder[Self <: PointSymbol3DProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PointSymbol3DProperties](x: Self) {
     
-    @scala.inline
-    def setCallout(value: LineCallout3DProperties): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
+    inline def setCallout(value: LineCallout3DProperties): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalloutUndefined: Self = StObject.set(x, "callout", js.undefined)
+    inline def setCalloutUndefined: Self = StObject.set(x, "callout", js.undefined)
     
-    @scala.inline
-    def setVerticalOffset(value: PointSymbol3DVerticalOffsetProperties): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
+    inline def setVerticalOffset(value: PointSymbol3DVerticalOffsetProperties): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalOffsetUndefined: Self = StObject.set(x, "verticalOffset", js.undefined)
+    inline def setVerticalOffsetUndefined: Self = StObject.set(x, "verticalOffset", js.undefined)
   }
 }

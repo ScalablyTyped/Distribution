@@ -24,49 +24,35 @@ trait Env extends StObject {
 }
 object Env {
   
-  @scala.inline
-  def apply(): Env = {
+  inline def apply(): Env = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Env]
   }
   
-  @scala.inline
-  implicit class EnvMutableBuilder[Self <: Env] (val x: Self) extends AnyVal {
+  extension [Self <: Env](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+    inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+    inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
-    @scala.inline
-    def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    @scala.inline
-    def setMatchers(value: js.Array[String]): Self = StObject.set(x, "matchers", value.asInstanceOf[js.Any])
+    inline def setMatchers(value: js.Array[String]): Self = StObject.set(x, "matchers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchersUndefined: Self = StObject.set(x, "matchers", js.undefined)
+    inline def setMatchersUndefined: Self = StObject.set(x, "matchers", js.undefined)
     
-    @scala.inline
-    def setMatchersVarargs(value: String*): Self = StObject.set(x, "matchers", js.Array(value :_*))
+    inline def setMatchersVarargs(value: String*): Self = StObject.set(x, "matchers", js.Array(value :_*))
     
-    @scala.inline
-    def setStdio(value: (js.Tuple3[pipe | ignore, pipe | ignore, pipe | ignore]) | pipe | ignore | jsonrpc | Double): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
+    inline def setStdio(value: (js.Tuple3[pipe | ignore, pipe | ignore, pipe | ignore]) | pipe | ignore | jsonrpc | Double): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
+    inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
   }
 }

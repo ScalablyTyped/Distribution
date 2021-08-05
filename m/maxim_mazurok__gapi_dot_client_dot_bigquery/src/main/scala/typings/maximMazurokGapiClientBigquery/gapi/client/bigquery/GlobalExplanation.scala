@@ -14,28 +14,21 @@ trait GlobalExplanation extends StObject {
 }
 object GlobalExplanation {
   
-  @scala.inline
-  def apply(): GlobalExplanation = {
+  inline def apply(): GlobalExplanation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalExplanation]
   }
   
-  @scala.inline
-  implicit class GlobalExplanationMutableBuilder[Self <: GlobalExplanation] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalExplanation](x: Self) {
     
-    @scala.inline
-    def setClassLabel(value: String): Self = StObject.set(x, "classLabel", value.asInstanceOf[js.Any])
+    inline def setClassLabel(value: String): Self = StObject.set(x, "classLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassLabelUndefined: Self = StObject.set(x, "classLabel", js.undefined)
+    inline def setClassLabelUndefined: Self = StObject.set(x, "classLabel", js.undefined)
     
-    @scala.inline
-    def setExplanations(value: js.Array[Explanation]): Self = StObject.set(x, "explanations", value.asInstanceOf[js.Any])
+    inline def setExplanations(value: js.Array[Explanation]): Self = StObject.set(x, "explanations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplanationsUndefined: Self = StObject.set(x, "explanations", js.undefined)
+    inline def setExplanationsUndefined: Self = StObject.set(x, "explanations", js.undefined)
     
-    @scala.inline
-    def setExplanationsVarargs(value: Explanation*): Self = StObject.set(x, "explanations", js.Array(value :_*))
+    inline def setExplanationsVarargs(value: Explanation*): Self = StObject.set(x, "explanations", js.Array(value :_*))
   }
 }

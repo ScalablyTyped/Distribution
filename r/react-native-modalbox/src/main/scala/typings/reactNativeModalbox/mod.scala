@@ -207,149 +207,102 @@ object mod {
   }
   object ModalProps {
     
-    @scala.inline
-    def apply(): ModalProps = {
+    inline def apply(): ModalProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModalProps]
     }
     
-    @scala.inline
-    implicit class ModalPropsMutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
+    extension [Self <: ModalProps](x: Self) {
       
-      @scala.inline
-      def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
       
-      @scala.inline
-      def setBackButtonClose(value: Boolean): Self = StObject.set(x, "backButtonClose", value.asInstanceOf[js.Any])
+      inline def setBackButtonClose(value: Boolean): Self = StObject.set(x, "backButtonClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackButtonCloseUndefined: Self = StObject.set(x, "backButtonClose", js.undefined)
+      inline def setBackButtonCloseUndefined: Self = StObject.set(x, "backButtonClose", js.undefined)
       
-      @scala.inline
-      def setBackdrop(value: Boolean): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+      inline def setBackdrop(value: Boolean): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropColor(value: String): Self = StObject.set(x, "backdropColor", value.asInstanceOf[js.Any])
+      inline def setBackdropColor(value: String): Self = StObject.set(x, "backdropColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropColorUndefined: Self = StObject.set(x, "backdropColor", js.undefined)
+      inline def setBackdropColorUndefined: Self = StObject.set(x, "backdropColor", js.undefined)
       
-      @scala.inline
-      def setBackdropContent(value: ReactNode): Self = StObject.set(x, "backdropContent", value.asInstanceOf[js.Any])
+      inline def setBackdropContent(value: ReactNode): Self = StObject.set(x, "backdropContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropContentUndefined: Self = StObject.set(x, "backdropContent", js.undefined)
+      inline def setBackdropContentUndefined: Self = StObject.set(x, "backdropContent", js.undefined)
       
-      @scala.inline
-      def setBackdropOpacity(value: Double): Self = StObject.set(x, "backdropOpacity", value.asInstanceOf[js.Any])
+      inline def setBackdropOpacity(value: Double): Self = StObject.set(x, "backdropOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropOpacityUndefined: Self = StObject.set(x, "backdropOpacity", js.undefined)
+      inline def setBackdropOpacityUndefined: Self = StObject.set(x, "backdropOpacity", js.undefined)
       
-      @scala.inline
-      def setBackdropPressToClose(value: Boolean): Self = StObject.set(x, "backdropPressToClose", value.asInstanceOf[js.Any])
+      inline def setBackdropPressToClose(value: Boolean): Self = StObject.set(x, "backdropPressToClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropPressToCloseUndefined: Self = StObject.set(x, "backdropPressToClose", js.undefined)
+      inline def setBackdropPressToCloseUndefined: Self = StObject.set(x, "backdropPressToClose", js.undefined)
       
-      @scala.inline
-      def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
+      inline def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
       
-      @scala.inline
-      def setCoverScreen(value: Boolean): Self = StObject.set(x, "coverScreen", value.asInstanceOf[js.Any])
+      inline def setCoverScreen(value: Boolean): Self = StObject.set(x, "coverScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverScreenUndefined: Self = StObject.set(x, "coverScreen", js.undefined)
+      inline def setCoverScreenUndefined: Self = StObject.set(x, "coverScreen", js.undefined)
       
-      @scala.inline
-      def setEntry(value: top | bottom | String): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+      inline def setEntry(value: top | bottom | String): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
+      inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
       
-      @scala.inline
-      def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
+      inline def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+      inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
       
-      @scala.inline
-      def setKeyboardTopOffset(value: Double): Self = StObject.set(x, "keyboardTopOffset", value.asInstanceOf[js.Any])
+      inline def setKeyboardTopOffset(value: Double): Self = StObject.set(x, "keyboardTopOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardTopOffsetUndefined: Self = StObject.set(x, "keyboardTopOffset", js.undefined)
+      inline def setKeyboardTopOffsetUndefined: Self = StObject.set(x, "keyboardTopOffset", js.undefined)
       
-      @scala.inline
-      def setOnClosed(value: () => Unit): Self = StObject.set(x, "onClosed", js.Any.fromFunction0(value))
+      inline def setOnClosed(value: () => Unit): Self = StObject.set(x, "onClosed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClosedUndefined: Self = StObject.set(x, "onClosed", js.undefined)
+      inline def setOnClosedUndefined: Self = StObject.set(x, "onClosed", js.undefined)
       
-      @scala.inline
-      def setOnClosingState(value: /* state */ Boolean => Unit): Self = StObject.set(x, "onClosingState", js.Any.fromFunction1(value))
+      inline def setOnClosingState(value: /* state */ Boolean => Unit): Self = StObject.set(x, "onClosingState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClosingStateUndefined: Self = StObject.set(x, "onClosingState", js.undefined)
+      inline def setOnClosingStateUndefined: Self = StObject.set(x, "onClosingState", js.undefined)
       
-      @scala.inline
-      def setOnOpened(value: () => Unit): Self = StObject.set(x, "onOpened", js.Any.fromFunction0(value))
+      inline def setOnOpened(value: () => Unit): Self = StObject.set(x, "onOpened", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnOpenedUndefined: Self = StObject.set(x, "onOpened", js.undefined)
+      inline def setOnOpenedUndefined: Self = StObject.set(x, "onOpened", js.undefined)
       
-      @scala.inline
-      def setPosition(value: top | center | bottom | String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: top | center | bottom | String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setStartOpen(value: Boolean): Self = StObject.set(x, "startOpen", value.asInstanceOf[js.Any])
+      inline def setStartOpen(value: Boolean): Self = StObject.set(x, "startOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartOpenUndefined: Self = StObject.set(x, "startOpen", js.undefined)
+      inline def setStartOpenUndefined: Self = StObject.set(x, "startOpen", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSwipeArea(value: Double): Self = StObject.set(x, "swipeArea", value.asInstanceOf[js.Any])
+      inline def setSwipeArea(value: Double): Self = StObject.set(x, "swipeArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeAreaUndefined: Self = StObject.set(x, "swipeArea", js.undefined)
+      inline def setSwipeAreaUndefined: Self = StObject.set(x, "swipeArea", js.undefined)
       
-      @scala.inline
-      def setSwipeThreshold(value: Double): Self = StObject.set(x, "swipeThreshold", value.asInstanceOf[js.Any])
+      inline def setSwipeThreshold(value: Double): Self = StObject.set(x, "swipeThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeThresholdUndefined: Self = StObject.set(x, "swipeThreshold", js.undefined)
+      inline def setSwipeThresholdUndefined: Self = StObject.set(x, "swipeThreshold", js.undefined)
       
-      @scala.inline
-      def setSwipeToClose(value: Boolean): Self = StObject.set(x, "swipeToClose", value.asInstanceOf[js.Any])
+      inline def setSwipeToClose(value: Boolean): Self = StObject.set(x, "swipeToClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeToCloseUndefined: Self = StObject.set(x, "swipeToClose", js.undefined)
+      inline def setSwipeToCloseUndefined: Self = StObject.set(x, "swipeToClose", js.undefined)
       
-      @scala.inline
-      def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
+      inline def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
+      inline def setUseNativeDriverUndefined: Self = StObject.set(x, "useNativeDriver", js.undefined)
     }
   }
 }

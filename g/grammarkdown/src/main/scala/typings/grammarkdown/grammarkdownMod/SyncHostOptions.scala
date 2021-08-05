@@ -15,25 +15,19 @@ trait SyncHostOptions
 }
 object SyncHostOptions {
   
-  @scala.inline
-  def apply(): SyncHostOptions = {
+  inline def apply(): SyncHostOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyncHostOptions]
   }
   
-  @scala.inline
-  implicit class SyncHostOptionsMutableBuilder[Self <: SyncHostOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SyncHostOptions](x: Self) {
     
-    @scala.inline
-    def setReadFileSync(value: LegacyReadFileSyncCallback | ReadFileSyncCallback | `false`): Self = StObject.set(x, "readFileSync", value.asInstanceOf[js.Any])
+    inline def setReadFileSync(value: LegacyReadFileSyncCallback | ReadFileSyncCallback | `false`): Self = StObject.set(x, "readFileSync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadFileSyncUndefined: Self = StObject.set(x, "readFileSync", js.undefined)
+    inline def setReadFileSyncUndefined: Self = StObject.set(x, "readFileSync", js.undefined)
     
-    @scala.inline
-    def setWriteFileSync(value: LegacyWriteFileSyncCallback | WriteFileSyncCallback | `false`): Self = StObject.set(x, "writeFileSync", value.asInstanceOf[js.Any])
+    inline def setWriteFileSync(value: LegacyWriteFileSyncCallback | WriteFileSyncCallback | `false`): Self = StObject.set(x, "writeFileSync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteFileSyncUndefined: Self = StObject.set(x, "writeFileSync", js.undefined)
+    inline def setWriteFileSyncUndefined: Self = StObject.set(x, "writeFileSync", js.undefined)
   }
 }

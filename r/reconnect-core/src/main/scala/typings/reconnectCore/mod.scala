@@ -18,8 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[ArgType, ConnectionType](cf: ConnectFunction[ArgType, ConnectionType]): CustomModule[ArgType, ConnectionType] = ^.asInstanceOf[js.Dynamic].apply(cf.asInstanceOf[js.Any]).asInstanceOf[CustomModule[ArgType, ConnectionType]]
+  inline def apply[ArgType, ConnectionType](cf: ConnectFunction[ArgType, ConnectionType]): CustomModule[ArgType, ConnectionType] = ^.asInstanceOf[js.Dynamic].apply(cf.asInstanceOf[js.Any]).asInstanceOf[CustomModule[ArgType, ConnectionType]]
   
   @JSImport("reconnect-core", JSImport.Namespace)
   @js.native
@@ -84,38 +83,28 @@ object mod {
   }
   object ModuleOptions {
     
-    @scala.inline
-    def apply[ConnectionType](): ModuleOptions[ConnectionType] = {
+    inline def apply[ConnectionType](): ModuleOptions[ConnectionType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModuleOptions[ConnectionType]]
     }
     
-    @scala.inline
-    implicit class ModuleOptionsMutableBuilder[Self <: ModuleOptions[?], ConnectionType] (val x: Self & ModuleOptions[ConnectionType]) extends AnyVal {
+    extension [Self <: ModuleOptions[?], ConnectionType](x: Self & ModuleOptions[ConnectionType]) {
       
-      @scala.inline
-      def setFailAfter(value: Double): Self = StObject.set(x, "failAfter", value.asInstanceOf[js.Any])
+      inline def setFailAfter(value: Double): Self = StObject.set(x, "failAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailAfterUndefined: Self = StObject.set(x, "failAfter", js.undefined)
+      inline def setFailAfterUndefined: Self = StObject.set(x, "failAfter", js.undefined)
       
-      @scala.inline
-      def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
+      inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
+      inline def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
       
-      @scala.inline
-      def setOnConnect(value: /* con */ ConnectionType => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
+      inline def setOnConnect(value: /* con */ ConnectionType => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
+      inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
       
-      @scala.inline
-      def setStrategy(value: fibonacci | exponential | Backoff): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      inline def setStrategy(value: fibonacci | exponential | Backoff): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     }
   }
 }

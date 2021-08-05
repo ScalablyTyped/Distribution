@@ -11,9 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def htmlSafe(str: String): SafeString = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlSafe")(str.asInstanceOf[js.Any]).asInstanceOf[SafeString]
+  inline def htmlSafe(str: String): SafeString = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlSafe")(str.asInstanceOf[js.Any]).asInstanceOf[SafeString]
   
-  @scala.inline
-  def isHTMLSafe(str: js.Any): /* is @ember/template.@ember/template/-private/handlebars.SafeString */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTMLSafe")(str.asInstanceOf[js.Any]).asInstanceOf[/* is @ember/template.@ember/template/-private/handlebars.SafeString */ Boolean]
+  inline def isHTMLSafe(str: js.Any): /* is @ember/template.@ember/template/-private/handlebars.SafeString */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTMLSafe")(str.asInstanceOf[js.Any]).asInstanceOf[/* is @ember/template.@ember/template/-private/handlebars.SafeString */ Boolean]
 }

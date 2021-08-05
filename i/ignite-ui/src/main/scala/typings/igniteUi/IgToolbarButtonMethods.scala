@@ -37,8 +37,7 @@ trait IgToolbarButtonMethods extends StObject {
 }
 object IgToolbarButtonMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activate: js.Object => Unit,
     deactivate: js.Object => Unit,
     destroy: () => Unit,
@@ -49,22 +48,16 @@ object IgToolbarButtonMethods {
     __obj.asInstanceOf[IgToolbarButtonMethods]
   }
   
-  @scala.inline
-  implicit class IgToolbarButtonMethodsMutableBuilder[Self <: IgToolbarButtonMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgToolbarButtonMethods](x: Self) {
     
-    @scala.inline
-    def setActivate(value: js.Object => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
+    inline def setActivate(value: js.Object => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeactivate(value: js.Object => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction1(value))
+    inline def setDeactivate(value: js.Object => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+    inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWidget(value: () => js.Object): Self = StObject.set(x, "widget", js.Any.fromFunction0(value))
+    inline def setWidget(value: () => js.Object): Self = StObject.set(x, "widget", js.Any.fromFunction0(value))
   }
 }

@@ -14,25 +14,19 @@ trait PolylineOptions
 }
 object PolylineOptions {
   
-  @scala.inline
-  def apply(): PolylineOptions = {
+  inline def apply(): PolylineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolylineOptions]
   }
   
-  @scala.inline
-  implicit class PolylineOptionsMutableBuilder[Self <: PolylineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PolylineOptions](x: Self) {
     
-    @scala.inline
-    def setNoClip(value: Boolean): Self = StObject.set(x, "noClip", value.asInstanceOf[js.Any])
+    inline def setNoClip(value: Boolean): Self = StObject.set(x, "noClip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoClipUndefined: Self = StObject.set(x, "noClip", js.undefined)
+    inline def setNoClipUndefined: Self = StObject.set(x, "noClip", js.undefined)
     
-    @scala.inline
-    def setSmoothFactor(value: Double): Self = StObject.set(x, "smoothFactor", value.asInstanceOf[js.Any])
+    inline def setSmoothFactor(value: Double): Self = StObject.set(x, "smoothFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothFactorUndefined: Self = StObject.set(x, "smoothFactor", js.undefined)
+    inline def setSmoothFactorUndefined: Self = StObject.set(x, "smoothFactor", js.undefined)
   }
 }

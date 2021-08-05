@@ -23,23 +23,18 @@ object typesReplicationConfigurationMod {
   }
   object ReplicationConfiguration {
     
-    @scala.inline
-    def apply(Role: String, Rules: js.Array[ReplicationRule] | Iterable[ReplicationRule]): ReplicationConfiguration = {
+    inline def apply(Role: String, Rules: js.Array[ReplicationRule] | Iterable[ReplicationRule]): ReplicationConfiguration = {
       val __obj = js.Dynamic.literal(Role = Role.asInstanceOf[js.Any], Rules = Rules.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplicationConfiguration]
     }
     
-    @scala.inline
-    implicit class ReplicationConfigurationMutableBuilder[Self <: ReplicationConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicationConfiguration](x: Self) {
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRules(value: js.Array[ReplicationRule] | Iterable[ReplicationRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[ReplicationRule] | Iterable[ReplicationRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesVarargs(value: ReplicationRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: ReplicationRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     }
   }
   
@@ -55,20 +50,16 @@ object typesReplicationConfigurationMod {
   }
   object UnmarshalledReplicationConfiguration {
     
-    @scala.inline
-    def apply(Role: String, Rules: js.Array[UnmarshalledReplicationRule]): UnmarshalledReplicationConfiguration = {
+    inline def apply(Role: String, Rules: js.Array[UnmarshalledReplicationRule]): UnmarshalledReplicationConfiguration = {
       val __obj = js.Dynamic.literal(Role = Role.asInstanceOf[js.Any], Rules = Rules.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledReplicationConfiguration]
     }
     
-    @scala.inline
-    implicit class UnmarshalledReplicationConfigurationMutableBuilder[Self <: UnmarshalledReplicationConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledReplicationConfiguration](x: Self) {
       
-      @scala.inline
-      def setRules(value: js.Array[UnmarshalledReplicationRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[UnmarshalledReplicationRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesVarargs(value: UnmarshalledReplicationRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: UnmarshalledReplicationRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     }
   }
 }

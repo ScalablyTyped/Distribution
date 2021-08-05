@@ -13,17 +13,14 @@ object anon {
   }
   object Fake {
     
-    @scala.inline
-    def apply(fake: SensorData): Fake = {
+    inline def apply(fake: SensorData): Fake = {
       val __obj = js.Dynamic.literal(fake = fake.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fake]
     }
     
-    @scala.inline
-    implicit class FakeMutableBuilder[Self <: Fake] (val x: Self) extends AnyVal {
+    extension [Self <: Fake](x: Self) {
       
-      @scala.inline
-      def setFake(value: SensorData): Self = StObject.set(x, "fake", value.asInstanceOf[js.Any])
+      inline def setFake(value: SensorData): Self = StObject.set(x, "fake", value.asInstanceOf[js.Any])
     }
   }
   
@@ -33,17 +30,14 @@ object anon {
   }
   object Test {
     
-    @scala.inline
-    def apply(test: Fake): Test = {
+    inline def apply(test: Fake): Test = {
       val __obj = js.Dynamic.literal(test = test.asInstanceOf[js.Any])
       __obj.asInstanceOf[Test]
     }
     
-    @scala.inline
-    implicit class TestMutableBuilder[Self <: Test] (val x: Self) extends AnyVal {
+    extension [Self <: Test](x: Self) {
       
-      @scala.inline
-      def setTest(value: Fake): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: Fake): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     }
   }
 }

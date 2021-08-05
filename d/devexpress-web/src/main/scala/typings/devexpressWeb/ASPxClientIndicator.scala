@@ -18,16 +18,13 @@ trait ASPxClientIndicator
 }
 object ASPxClientIndicator {
   
-  @scala.inline
-  def apply(chart: ASPxClientWebChart, name: String, series: ASPxClientSeries): ASPxClientIndicator = {
+  inline def apply(chart: ASPxClientWebChart, name: String, series: ASPxClientSeries): ASPxClientIndicator = {
     val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientIndicator]
   }
   
-  @scala.inline
-  implicit class ASPxClientIndicatorMutableBuilder[Self <: ASPxClientIndicator] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientIndicator](x: Self) {
     
-    @scala.inline
-    def setSeries(value: ASPxClientSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: ASPxClientSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
   }
 }

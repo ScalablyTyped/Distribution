@@ -25,8 +25,7 @@ trait ProgressEvent
 }
 object ProgressEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AT_TARGET: Double,
     BUBBLING_PHASE: Double,
     CAPTURING_PHASE: Double,
@@ -53,19 +52,14 @@ object ProgressEvent {
     __obj.asInstanceOf[ProgressEvent]
   }
   
-  @scala.inline
-  implicit class ProgressEventMutableBuilder[Self <: ProgressEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressEvent](x: Self) {
     
-    @scala.inline
-    def setInitProgressEvent(value: (String, Boolean, Boolean, Boolean, Double, Double) => Unit): Self = StObject.set(x, "initProgressEvent", js.Any.fromFunction6(value))
+    inline def setInitProgressEvent(value: (String, Boolean, Boolean, Boolean, Double, Double) => Unit): Self = StObject.set(x, "initProgressEvent", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
+    inline def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

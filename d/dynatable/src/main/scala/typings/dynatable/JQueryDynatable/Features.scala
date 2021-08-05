@@ -53,49 +53,35 @@ trait Features extends StObject {
 }
 object Features {
   
-  @scala.inline
-  def apply(): Features = {
+  inline def apply(): Features = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Features]
   }
   
-  @scala.inline
-  implicit class FeaturesMutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
+  extension [Self <: Features](x: Self) {
     
-    @scala.inline
-    def setPaginate(value: Boolean): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
+    inline def setPaginate(value: Boolean): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
+    inline def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
     
-    @scala.inline
-    def setPerPageSelect(value: Boolean): Self = StObject.set(x, "perPageSelect", value.asInstanceOf[js.Any])
+    inline def setPerPageSelect(value: Boolean): Self = StObject.set(x, "perPageSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerPageSelectUndefined: Self = StObject.set(x, "perPageSelect", js.undefined)
+    inline def setPerPageSelectUndefined: Self = StObject.set(x, "perPageSelect", js.undefined)
     
-    @scala.inline
-    def setPushState(value: Boolean): Self = StObject.set(x, "pushState", value.asInstanceOf[js.Any])
+    inline def setPushState(value: Boolean): Self = StObject.set(x, "pushState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushStateUndefined: Self = StObject.set(x, "pushState", js.undefined)
+    inline def setPushStateUndefined: Self = StObject.set(x, "pushState", js.undefined)
     
-    @scala.inline
-    def setRecordCount(value: Boolean): Self = StObject.set(x, "recordCount", value.asInstanceOf[js.Any])
+    inline def setRecordCount(value: Boolean): Self = StObject.set(x, "recordCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordCountUndefined: Self = StObject.set(x, "recordCount", js.undefined)
+    inline def setRecordCountUndefined: Self = StObject.set(x, "recordCount", js.undefined)
     
-    @scala.inline
-    def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
-    @scala.inline
-    def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

@@ -99,80 +99,56 @@ object mod {
   }
   object CommonFlexProps {
     
-    @scala.inline
-    def apply(): CommonFlexProps = {
+    inline def apply(): CommonFlexProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonFlexProps]
     }
     
-    @scala.inline
-    implicit class CommonFlexPropsMutableBuilder[Self <: CommonFlexProps] (val x: Self) extends AnyVal {
+    extension [Self <: CommonFlexProps](x: Self) {
       
-      @scala.inline
-      def setAlignContent(value: String): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
+      inline def setAlignContent(value: String): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
+      inline def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
       
-      @scala.inline
-      def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+      inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
+      inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
       
-      @scala.inline
-      def setColumn(value: Boolean): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Boolean): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setFlex(value: Double | String | Boolean): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+      inline def setFlex(value: Double | String | Boolean): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
+      inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setJustifyContent(value: String): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+      inline def setJustifyContent(value: String): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
+      inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
       
-      @scala.inline
-      def setRow(value: Boolean): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Boolean): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+      inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   
@@ -182,8 +158,7 @@ object mod {
        with CommonFlexProps
   object FlexProps {
     
-    @scala.inline
-    def apply(): FlexProps = {
+    inline def apply(): FlexProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlexProps]
     }
@@ -214,32 +189,24 @@ object mod {
   }
   object ItemProps {
     
-    @scala.inline
-    def apply(): ItemProps = {
+    inline def apply(): ItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ItemProps]
     }
     
-    @scala.inline
-    implicit class ItemPropsMutableBuilder[Self <: ItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: ItemProps](x: Self) {
       
-      @scala.inline
-      def setFlexBasis(value: Double | none | auto | content | `fit-content` | `min-content` | `max-content` | fit): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
+      inline def setFlexBasis(value: Double | none | auto | content | `fit-content` | `min-content` | `max-content` | fit): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
+      inline def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
       
-      @scala.inline
-      def setFlexGrow(value: Double | String | Boolean): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
+      inline def setFlexGrow(value: Double | String | Boolean): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
+      inline def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
       
-      @scala.inline
-      def setFlexShrink(value: Double | String): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
+      inline def setFlexShrink(value: Double | String): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
+      inline def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
     }
   }
 }

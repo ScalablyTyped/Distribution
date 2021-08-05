@@ -22,25 +22,19 @@ trait SchemaJobPlacement extends StObject {
 }
 object SchemaJobPlacement {
   
-  @scala.inline
-  def apply(): SchemaJobPlacement = {
+  inline def apply(): SchemaJobPlacement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJobPlacement]
   }
   
-  @scala.inline
-  implicit class SchemaJobPlacementMutableBuilder[Self <: SchemaJobPlacement] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaJobPlacement](x: Self) {
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
+    inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
-    @scala.inline
-    def setClusterUuid(value: String): Self = StObject.set(x, "clusterUuid", value.asInstanceOf[js.Any])
+    inline def setClusterUuid(value: String): Self = StObject.set(x, "clusterUuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUuidUndefined: Self = StObject.set(x, "clusterUuid", js.undefined)
+    inline def setClusterUuidUndefined: Self = StObject.set(x, "clusterUuid", js.undefined)
   }
 }

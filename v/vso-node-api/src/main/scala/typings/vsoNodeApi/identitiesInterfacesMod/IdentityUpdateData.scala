@@ -14,22 +14,17 @@ trait IdentityUpdateData extends StObject {
 }
 object IdentityUpdateData {
   
-  @scala.inline
-  def apply(id: String, index: Double, updated: Boolean): IdentityUpdateData = {
+  inline def apply(id: String, index: Double, updated: Boolean): IdentityUpdateData = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityUpdateData]
   }
   
-  @scala.inline
-  implicit class IdentityUpdateDataMutableBuilder[Self <: IdentityUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityUpdateData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated(value: Boolean): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: Boolean): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
   }
 }

@@ -414,13 +414,13 @@ class File protected () extends ServiceObject[File] {
   def download(options: DownloadOptions): js.Promise[DownloadResponse] = js.native
   def download(options: DownloadOptions, callback: DownloadCallback): Unit = js.native
   
-  var encryptionKey: js.Any = js.native
+  /* private */ var encryptionKey: js.Any = js.native
   
-  var encryptionKeyBase64: js.Any = js.native
+  /* private */ var encryptionKeyBase64: js.Any = js.native
   
-  var encryptionKeyHash: js.Any = js.native
+  /* private */ var encryptionKeyHash: js.Any = js.native
   
-  var encryptionKeyInterceptor: js.Any = js.native
+  /* private */ var encryptionKeyInterceptor: js.Any = js.native
   
   def generateSignedPostPolicyV2(callback: GenerateSignedPostPolicyV2Callback): Unit = js.native
   def generateSignedPostPolicyV2(options: GenerateSignedPostPolicyV2Options): js.Promise[GenerateSignedPostPolicyV2Response] = js.native

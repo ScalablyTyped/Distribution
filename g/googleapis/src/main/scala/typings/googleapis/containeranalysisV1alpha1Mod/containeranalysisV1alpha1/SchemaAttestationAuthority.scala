@@ -21,19 +21,15 @@ trait SchemaAttestationAuthority extends StObject {
 }
 object SchemaAttestationAuthority {
   
-  @scala.inline
-  def apply(): SchemaAttestationAuthority = {
+  inline def apply(): SchemaAttestationAuthority = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAttestationAuthority]
   }
   
-  @scala.inline
-  implicit class SchemaAttestationAuthorityMutableBuilder[Self <: SchemaAttestationAuthority] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAttestationAuthority](x: Self) {
     
-    @scala.inline
-    def setHint(value: SchemaAttestationAuthorityHint): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+    inline def setHint(value: SchemaAttestationAuthorityHint): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+    inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
   }
 }

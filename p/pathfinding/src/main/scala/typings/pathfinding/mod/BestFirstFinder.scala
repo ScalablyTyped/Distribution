@@ -11,6 +11,5 @@ trait BestFirstFinder
      with AStarFinder
 object BestFirstFinder {
   
-  @scala.inline
-  def apply: BestFirstFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("BestFirstFinder").asInstanceOf[BestFirstFinder]
+  inline def apply: BestFirstFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("BestFirstFinder").asInstanceOf[BestFirstFinder]
 }

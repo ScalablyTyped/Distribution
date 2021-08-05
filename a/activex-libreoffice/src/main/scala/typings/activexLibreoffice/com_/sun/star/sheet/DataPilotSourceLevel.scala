@@ -43,8 +43,7 @@ trait DataPilotSourceLevel
 }
 object DataPilotSourceLevel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Members: XMembersAccess,
     Name: String,
     PropertySetInfo: XPropertySetInfo,
@@ -71,16 +70,12 @@ object DataPilotSourceLevel {
     __obj.asInstanceOf[DataPilotSourceLevel]
   }
   
-  @scala.inline
-  implicit class DataPilotSourceLevelMutableBuilder[Self <: DataPilotSourceLevel] (val x: Self) extends AnyVal {
+  extension [Self <: DataPilotSourceLevel](x: Self) {
     
-    @scala.inline
-    def setShowEmpty(value: Boolean): Self = StObject.set(x, "ShowEmpty", value.asInstanceOf[js.Any])
+    inline def setShowEmpty(value: Boolean): Self = StObject.set(x, "ShowEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTotals(value: SafeArray[GeneralFunction]): Self = StObject.set(x, "SubTotals", value.asInstanceOf[js.Any])
+    inline def setSubTotals(value: SafeArray[GeneralFunction]): Self = StObject.set(x, "SubTotals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTotals2(value: SafeArray[Double]): Self = StObject.set(x, "SubTotals2", value.asInstanceOf[js.Any])
+    inline def setSubTotals2(value: SafeArray[Double]): Self = StObject.set(x, "SubTotals2", value.asInstanceOf[js.Any])
   }
 }

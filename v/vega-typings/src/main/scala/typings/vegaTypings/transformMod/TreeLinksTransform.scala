@@ -13,17 +13,14 @@ trait TreeLinksTransform
 }
 object TreeLinksTransform {
   
-  @scala.inline
-  def apply(): TreeLinksTransform = {
+  inline def apply(): TreeLinksTransform = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("treelinks")
     __obj.asInstanceOf[TreeLinksTransform]
   }
   
-  @scala.inline
-  implicit class TreeLinksTransformMutableBuilder[Self <: TreeLinksTransform] (val x: Self) extends AnyVal {
+  extension [Self <: TreeLinksTransform](x: Self) {
     
-    @scala.inline
-    def setType(value: treelinks): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: treelinks): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

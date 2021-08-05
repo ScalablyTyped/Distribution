@@ -10,16 +10,13 @@ trait PlayerOptionsColor extends StObject {
 }
 object PlayerOptionsColor {
   
-  @scala.inline
-  def apply(playerOptions: Color): PlayerOptionsColor = {
+  inline def apply(playerOptions: Color): PlayerOptionsColor = {
     val __obj = js.Dynamic.literal(playerOptions = playerOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerOptionsColor]
   }
   
-  @scala.inline
-  implicit class PlayerOptionsColorMutableBuilder[Self <: PlayerOptionsColor] (val x: Self) extends AnyVal {
+  extension [Self <: PlayerOptionsColor](x: Self) {
     
-    @scala.inline
-    def setPlayerOptions(value: Color): Self = StObject.set(x, "playerOptions", value.asInstanceOf[js.Any])
+    inline def setPlayerOptions(value: Color): Self = StObject.set(x, "playerOptions", value.asInstanceOf[js.Any])
   }
 }

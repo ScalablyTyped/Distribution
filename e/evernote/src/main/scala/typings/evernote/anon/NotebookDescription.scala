@@ -15,31 +15,23 @@ trait NotebookDescription extends StObject {
 }
 object NotebookDescription {
   
-  @scala.inline
-  def apply(): NotebookDescription = {
+  inline def apply(): NotebookDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotebookDescription]
   }
   
-  @scala.inline
-  implicit class NotebookDescriptionMutableBuilder[Self <: NotebookDescription] (val x: Self) extends AnyVal {
+  extension [Self <: NotebookDescription](x: Self) {
     
-    @scala.inline
-    def setNotebookDescription(value: String): Self = StObject.set(x, "notebookDescription", value.asInstanceOf[js.Any])
+    inline def setNotebookDescription(value: String): Self = StObject.set(x, "notebookDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotebookDescriptionUndefined: Self = StObject.set(x, "notebookDescription", js.undefined)
+    inline def setNotebookDescriptionUndefined: Self = StObject.set(x, "notebookDescription", js.undefined)
     
-    @scala.inline
-    def setPrivilege(value: SharedNotebookPrivilegeLevel): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
+    inline def setPrivilege(value: SharedNotebookPrivilegeLevel): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
+    inline def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
     
-    @scala.inline
-    def setRecommended(value: Boolean): Self = StObject.set(x, "recommended", value.asInstanceOf[js.Any])
+    inline def setRecommended(value: Boolean): Self = StObject.set(x, "recommended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendedUndefined: Self = StObject.set(x, "recommended", js.undefined)
+    inline def setRecommendedUndefined: Self = StObject.set(x, "recommended", js.undefined)
   }
 }

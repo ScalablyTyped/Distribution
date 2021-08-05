@@ -23,31 +23,23 @@ trait RetryBuildBatchInput extends StObject {
 }
 object RetryBuildBatchInput {
   
-  @scala.inline
-  def apply(): RetryBuildBatchInput = {
+  inline def apply(): RetryBuildBatchInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetryBuildBatchInput]
   }
   
-  @scala.inline
-  implicit class RetryBuildBatchInputMutableBuilder[Self <: RetryBuildBatchInput] (val x: Self) extends AnyVal {
+  extension [Self <: RetryBuildBatchInput](x: Self) {
     
-    @scala.inline
-    def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIdempotencyToken(value: String): Self = StObject.set(x, "idempotencyToken", value.asInstanceOf[js.Any])
+    inline def setIdempotencyToken(value: String): Self = StObject.set(x, "idempotencyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdempotencyTokenUndefined: Self = StObject.set(x, "idempotencyToken", js.undefined)
+    inline def setIdempotencyTokenUndefined: Self = StObject.set(x, "idempotencyToken", js.undefined)
     
-    @scala.inline
-    def setRetryType(value: RetryBuildBatchType): Self = StObject.set(x, "retryType", value.asInstanceOf[js.Any])
+    inline def setRetryType(value: RetryBuildBatchType): Self = StObject.set(x, "retryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryTypeUndefined: Self = StObject.set(x, "retryType", js.undefined)
+    inline def setRetryTypeUndefined: Self = StObject.set(x, "retryType", js.undefined)
   }
 }

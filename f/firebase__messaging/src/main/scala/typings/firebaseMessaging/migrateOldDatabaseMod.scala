@@ -15,8 +15,7 @@ object migrateOldDatabaseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def migrateOldDatabase(senderId: String): js.Promise[TokenDetails | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("migrateOldDatabase")(senderId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TokenDetails | Null]]
+  inline def migrateOldDatabase(senderId: String): js.Promise[TokenDetails | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("migrateOldDatabase")(senderId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TokenDetails | Null]]
   
   trait V2TokenDetails extends StObject {
     
@@ -42,8 +41,7 @@ object migrateOldDatabaseMod {
   }
   object V2TokenDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fcmPushSet: String,
       fcmSenderId: String,
       fcmToken: String,
@@ -55,50 +53,35 @@ object migrateOldDatabaseMod {
       __obj.asInstanceOf[V2TokenDetails]
     }
     
-    @scala.inline
-    implicit class V2TokenDetailsMutableBuilder[Self <: V2TokenDetails] (val x: Self) extends AnyVal {
+    extension [Self <: V2TokenDetails](x: Self) {
       
-      @scala.inline
-      def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+      inline def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+      inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setFcmPushSet(value: String): Self = StObject.set(x, "fcmPushSet", value.asInstanceOf[js.Any])
+      inline def setFcmPushSet(value: String): Self = StObject.set(x, "fcmPushSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFcmSenderId(value: String): Self = StObject.set(x, "fcmSenderId", value.asInstanceOf[js.Any])
+      inline def setFcmSenderId(value: String): Self = StObject.set(x, "fcmSenderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFcmToken(value: String): Self = StObject.set(x, "fcmToken", value.asInstanceOf[js.Any])
+      inline def setFcmToken(value: String): Self = StObject.set(x, "fcmToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP256dh(value: String): Self = StObject.set(x, "p256dh", value.asInstanceOf[js.Any])
+      inline def setP256dh(value: String): Self = StObject.set(x, "p256dh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP256dhUndefined: Self = StObject.set(x, "p256dh", js.undefined)
+      inline def setP256dhUndefined: Self = StObject.set(x, "p256dh", js.undefined)
       
-      @scala.inline
-      def setSubscription(value: PushSubscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+      inline def setSubscription(value: PushSubscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwScope(value: String): Self = StObject.set(x, "swScope", value.asInstanceOf[js.Any])
+      inline def setSwScope(value: String): Self = StObject.set(x, "swScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVapidKey(value: String | Uint8Array): Self = StObject.set(x, "vapidKey", value.asInstanceOf[js.Any])
+      inline def setVapidKey(value: String | Uint8Array): Self = StObject.set(x, "vapidKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,8 +107,7 @@ object migrateOldDatabaseMod {
   }
   object V3TokenDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       auth: ArrayBuffer,
       createTime: Double,
       endpoint: String,
@@ -140,35 +122,25 @@ object migrateOldDatabaseMod {
       __obj.asInstanceOf[V3TokenDetails]
     }
     
-    @scala.inline
-    implicit class V3TokenDetailsMutableBuilder[Self <: V3TokenDetails] (val x: Self) extends AnyVal {
+    extension [Self <: V3TokenDetails](x: Self) {
       
-      @scala.inline
-      def setAuth(value: ArrayBuffer): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: ArrayBuffer): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+      inline def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFcmPushSet(value: String): Self = StObject.set(x, "fcmPushSet", value.asInstanceOf[js.Any])
+      inline def setFcmPushSet(value: String): Self = StObject.set(x, "fcmPushSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFcmSenderId(value: String): Self = StObject.set(x, "fcmSenderId", value.asInstanceOf[js.Any])
+      inline def setFcmSenderId(value: String): Self = StObject.set(x, "fcmSenderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFcmToken(value: String): Self = StObject.set(x, "fcmToken", value.asInstanceOf[js.Any])
+      inline def setFcmToken(value: String): Self = StObject.set(x, "fcmToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP256dh(value: ArrayBuffer): Self = StObject.set(x, "p256dh", value.asInstanceOf[js.Any])
+      inline def setP256dh(value: ArrayBuffer): Self = StObject.set(x, "p256dh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwScope(value: String): Self = StObject.set(x, "swScope", value.asInstanceOf[js.Any])
+      inline def setSwScope(value: String): Self = StObject.set(x, "swScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVapidKey(value: Uint8Array): Self = StObject.set(x, "vapidKey", value.asInstanceOf[js.Any])
+      inline def setVapidKey(value: Uint8Array): Self = StObject.set(x, "vapidKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -192,8 +164,7 @@ object migrateOldDatabaseMod {
   }
   object V4TokenDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       auth: ArrayBufferLike,
       createTime: Double,
       endpoint: String,
@@ -207,32 +178,23 @@ object migrateOldDatabaseMod {
       __obj.asInstanceOf[V4TokenDetails]
     }
     
-    @scala.inline
-    implicit class V4TokenDetailsMutableBuilder[Self <: V4TokenDetails] (val x: Self) extends AnyVal {
+    extension [Self <: V4TokenDetails](x: Self) {
       
-      @scala.inline
-      def setAuth(value: ArrayBufferLike): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: ArrayBufferLike): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+      inline def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFcmSenderId(value: String): Self = StObject.set(x, "fcmSenderId", value.asInstanceOf[js.Any])
+      inline def setFcmSenderId(value: String): Self = StObject.set(x, "fcmSenderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFcmToken(value: String): Self = StObject.set(x, "fcmToken", value.asInstanceOf[js.Any])
+      inline def setFcmToken(value: String): Self = StObject.set(x, "fcmToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP256dh(value: ArrayBufferLike): Self = StObject.set(x, "p256dh", value.asInstanceOf[js.Any])
+      inline def setP256dh(value: ArrayBufferLike): Self = StObject.set(x, "p256dh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwScope(value: String): Self = StObject.set(x, "swScope", value.asInstanceOf[js.Any])
+      inline def setSwScope(value: String): Self = StObject.set(x, "swScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVapidKey(value: Uint8Array): Self = StObject.set(x, "vapidKey", value.asInstanceOf[js.Any])
+      inline def setVapidKey(value: Uint8Array): Self = StObject.set(x, "vapidKey", value.asInstanceOf[js.Any])
     }
   }
 }

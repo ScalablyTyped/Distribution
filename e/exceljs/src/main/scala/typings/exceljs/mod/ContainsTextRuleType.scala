@@ -18,29 +18,22 @@ trait ContainsTextRuleType
 }
 object ContainsTextRuleType {
   
-  @scala.inline
-  def apply(priority: Double): ContainsTextRuleType = {
+  inline def apply(priority: Double): ContainsTextRuleType = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("containsText")
     __obj.asInstanceOf[ContainsTextRuleType]
   }
   
-  @scala.inline
-  implicit class ContainsTextRuleTypeMutableBuilder[Self <: ContainsTextRuleType] (val x: Self) extends AnyVal {
+  extension [Self <: ContainsTextRuleType](x: Self) {
     
-    @scala.inline
-    def setOperator(value: ContainsTextOperators): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: ContainsTextOperators): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: containsText): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: containsText): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

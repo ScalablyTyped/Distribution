@@ -56,11 +56,9 @@ object physicsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def LINEAR(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("LINEAR")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def LINEAR(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("LINEAR")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def QUADRATIC(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("QUADRATIC")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def QUADRATIC(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("QUADRATIC")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   @JSImport("famous/physics", "Force")
@@ -302,11 +300,9 @@ object physicsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def FENE(dist: js.Any, rMax: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FENE")(dist.asInstanceOf[js.Any], rMax.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def FENE(dist: js.Any, rMax: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("FENE")(dist.asInstanceOf[js.Any], rMax.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def HOOKE(dist: js.Any, rMax: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("HOOKE")(dist.asInstanceOf[js.Any], rMax.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def HOOKE(dist: js.Any, rMax: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("HOOKE")(dist.asInstanceOf[js.Any], rMax.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSImport("famous/physics", "Wall")
@@ -331,32 +327,24 @@ object physicsMod {
   }
   object IDragOptions {
     
-    @scala.inline
-    def apply(): IDragOptions = {
+    inline def apply(): IDragOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDragOptions]
     }
     
-    @scala.inline
-    implicit class IDragOptionsMutableBuilder[Self <: IDragOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IDragOptions](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
+      inline def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
+      inline def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
       
-      @scala.inline
-      def setType(value: /* v */ Double => Double): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+      inline def setType(value: /* v */ Double => Double): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -366,23 +354,18 @@ object physicsMod {
   }
   object IForceOptions {
     
-    @scala.inline
-    def apply(): IForceOptions = {
+    inline def apply(): IForceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IForceOptions]
     }
     
-    @scala.inline
-    implicit class IForceOptionsMutableBuilder[Self <: IForceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IForceOptions](x: Self) {
       
-      @scala.inline
-      def setTargets(value: js.Array[js.Any]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: js.Array[js.Any]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+      inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      @scala.inline
-      def setTargetsVarargs(value: js.Any*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: js.Any*): Self = StObject.set(x, "targets", js.Array(value :_*))
     }
   }
   
@@ -410,77 +393,54 @@ object physicsMod {
   }
   object IParticleOptions {
     
-    @scala.inline
-    def apply(): IParticleOptions = {
+    inline def apply(): IParticleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IParticleOptions]
     }
     
-    @scala.inline
-    implicit class IParticleOptionsMutableBuilder[Self <: IParticleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IParticleOptions](x: Self) {
       
-      @scala.inline
-      def setCollisionGroup(value: Double): Self = StObject.set(x, "collisionGroup", value.asInstanceOf[js.Any])
+      inline def setCollisionGroup(value: Double): Self = StObject.set(x, "collisionGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollisionGroupUndefined: Self = StObject.set(x, "collisionGroup", js.undefined)
+      inline def setCollisionGroupUndefined: Self = StObject.set(x, "collisionGroup", js.undefined)
       
-      @scala.inline
-      def setCollisionMask(value: Double): Self = StObject.set(x, "collisionMask", value.asInstanceOf[js.Any])
+      inline def setCollisionMask(value: Double): Self = StObject.set(x, "collisionMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollisionMaskUndefined: Self = StObject.set(x, "collisionMask", js.undefined)
+      inline def setCollisionMaskUndefined: Self = StObject.set(x, "collisionMask", js.undefined)
       
-      @scala.inline
-      def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
+      inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
+      inline def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
       
-      @scala.inline
-      def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
+      inline def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
+      inline def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
       
-      @scala.inline
-      def setOrientation(value: Quaternion): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: Quaternion): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Vec3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Vec3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
+      inline def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestitutionUndefined: Self = StObject.set(x, "restitution", js.undefined)
+      inline def setRestitutionUndefined: Self = StObject.set(x, "restitution", js.undefined)
       
-      @scala.inline
-      def setRestrictions(value: Double): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+      inline def setRestrictions(value: Double): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
+      inline def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
       
-      @scala.inline
-      def setSize(value: js.Array[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: js.Array[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+      inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
       
-      @scala.inline
-      def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
+      inline def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVelocityUndefined: Self = StObject.set(x, "velocity", js.undefined)
+      inline def setVelocityUndefined: Self = StObject.set(x, "velocity", js.undefined)
     }
   }
   
@@ -492,26 +452,20 @@ object physicsMod {
   }
   object IPhysicsTransform {
     
-    @scala.inline
-    def apply(position: js.Array[Double], rotation: js.Array[Double]): IPhysicsTransform = {
+    inline def apply(position: js.Array[Double], rotation: js.Array[Double]): IPhysicsTransform = {
       val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPhysicsTransform]
     }
     
-    @scala.inline
-    implicit class IPhysicsTransformMutableBuilder[Self <: IPhysicsTransform] (val x: Self) extends AnyVal {
+    extension [Self <: IPhysicsTransform](x: Self) {
       
-      @scala.inline
-      def setPosition(value: js.Array[Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: js.Array[Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value :_*))
+      inline def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value :_*))
       
-      @scala.inline
-      def setRotation(value: js.Array[Double]): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: js.Array[Double]): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationVarargs(value: Double*): Self = StObject.set(x, "rotation", js.Array(value :_*))
+      inline def setRotationVarargs(value: Double*): Self = StObject.set(x, "rotation", js.Array(value :_*))
     }
   }
   
@@ -535,56 +489,40 @@ object physicsMod {
   }
   object IRotationalSpringOptions {
     
-    @scala.inline
-    def apply(): IRotationalSpringOptions = {
+    inline def apply(): IRotationalSpringOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRotationalSpringOptions]
     }
     
-    @scala.inline
-    implicit class IRotationalSpringOptionsMutableBuilder[Self <: IRotationalSpringOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IRotationalSpringOptions](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: Quaternion): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: Quaternion): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+      inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDampingRatio(value: Double): Self = StObject.set(x, "dampingRatio", value.asInstanceOf[js.Any])
+      inline def setDampingRatio(value: Double): Self = StObject.set(x, "dampingRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDampingRatioUndefined: Self = StObject.set(x, "dampingRatio", js.undefined)
+      inline def setDampingRatioUndefined: Self = StObject.set(x, "dampingRatio", js.undefined)
       
-      @scala.inline
-      def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
+      inline def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+      inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+      inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
       
-      @scala.inline
-      def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
+      inline def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
+      inline def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
       
-      @scala.inline
-      def setType(value: (/* dist */ js.Any, /* rMax */ js.Any) => Double): Self = StObject.set(x, "type", js.Any.fromFunction2(value))
+      inline def setType(value: (/* dist */ js.Any, /* rMax */ js.Any) => Double): Self = StObject.set(x, "type", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -610,62 +548,44 @@ object physicsMod {
   }
   object ISpringOptions {
     
-    @scala.inline
-    def apply(): ISpringOptions = {
+    inline def apply(): ISpringOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISpringOptions]
     }
     
-    @scala.inline
-    implicit class ISpringOptionsMutableBuilder[Self <: ISpringOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISpringOptions](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: Vec3): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: Vec3): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+      inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDampingRatio(value: Double): Self = StObject.set(x, "dampingRatio", value.asInstanceOf[js.Any])
+      inline def setDampingRatio(value: Double): Self = StObject.set(x, "dampingRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDampingRatioUndefined: Self = StObject.set(x, "dampingRatio", js.undefined)
+      inline def setDampingRatioUndefined: Self = StObject.set(x, "dampingRatio", js.undefined)
       
-      @scala.inline
-      def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
+      inline def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      @scala.inline
-      def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+      inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+      inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
       
-      @scala.inline
-      def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
+      inline def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
+      inline def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
       
-      @scala.inline
-      def setType(value: (/* dist */ js.Any, /* rMax */ js.Any) => Double): Self = StObject.set(x, "type", js.Any.fromFunction2(value))
+      inline def setType(value: (/* dist */ js.Any, /* rMax */ js.Any) => Double): Self = StObject.set(x, "type", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -677,20 +597,16 @@ object physicsMod {
   }
   object IWallOptions {
     
-    @scala.inline
-    def apply(): IWallOptions = {
+    inline def apply(): IWallOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IWallOptions]
     }
     
-    @scala.inline
-    implicit class IWallOptionsMutableBuilder[Self <: IWallOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IWallOptions](x: Self) {
       
-      @scala.inline
-      def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     }
   }
 }

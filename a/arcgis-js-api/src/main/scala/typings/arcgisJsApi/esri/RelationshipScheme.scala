@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RelationshipScheme extends StObject
 object RelationshipScheme {
   
-  @scala.inline
-  def RelationshipSchemeForMesh(
+  inline def RelationshipSchemeForMesh(
     colorsForClassBreaks: js.Array[RelationshipSchemeForMeshColorsForClassBreaks],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -30,8 +29,7 @@ object RelationshipScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.RelationshipSchemeForMesh]
   }
   
-  @scala.inline
-  def RelationshipSchemeForPoint(
+  inline def RelationshipSchemeForPoint(
     colorsForClassBreaks: js.Array[RelationshipSchemeForPointColorsForClassBreaks],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -48,8 +46,7 @@ object RelationshipScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.RelationshipSchemeForPoint]
   }
   
-  @scala.inline
-  def RelationshipSchemeForPolygon(
+  inline def RelationshipSchemeForPolygon(
     colorsForClassBreaks: js.Array[RelationshipSchemeForPolygonColorsForClassBreaks],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -65,8 +62,7 @@ object RelationshipScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.RelationshipSchemeForPolygon]
   }
   
-  @scala.inline
-  def RelationshipSchemeForPolyline(
+  inline def RelationshipSchemeForPolyline(
     colorsForClassBreaks: js.Array[RelationshipSchemeForPolylineColorsForClassBreaks],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,

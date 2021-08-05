@@ -11,18 +11,15 @@ object reactTetherStrings {
   sealed trait scrollParent
     extends StObject
        with _ContraintsTo
-  @scala.inline
-  def scrollParent: scrollParent = "scrollParent".asInstanceOf[scrollParent]
+  inline def scrollParent: scrollParent = "scrollParent".asInstanceOf[scrollParent]
   
   @js.native
   sealed trait together extends StObject
-  @scala.inline
-  def together: together = "together".asInstanceOf[together]
+  inline def together: together = "together".asInstanceOf[together]
   
   @js.native
   sealed trait window
     extends StObject
        with _ContraintsTo
-  @scala.inline
-  def window: window = "window".asInstanceOf[window]
+  inline def window: window = "window".asInstanceOf[window]
 }

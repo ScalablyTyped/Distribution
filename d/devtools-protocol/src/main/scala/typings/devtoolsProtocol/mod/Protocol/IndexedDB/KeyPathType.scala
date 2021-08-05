@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KeyPathType extends StObject
 object KeyPathType {
   
-  @scala.inline
-  def Array: array = "array".asInstanceOf[array]
+  inline def Array: array = "array".asInstanceOf[array]
   
-  @scala.inline
-  def Null: `null` = "null".asInstanceOf[`null`]
+  inline def Null: `null` = "null".asInstanceOf[`null`]
   
-  @scala.inline
-  def String: string = "string".asInstanceOf[string]
+  inline def String: string = "string".asInstanceOf[string]
 }

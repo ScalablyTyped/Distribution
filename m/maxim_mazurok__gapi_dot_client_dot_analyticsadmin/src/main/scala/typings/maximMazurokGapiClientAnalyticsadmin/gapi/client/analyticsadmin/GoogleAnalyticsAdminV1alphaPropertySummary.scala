@@ -14,25 +14,19 @@ trait GoogleAnalyticsAdminV1alphaPropertySummary extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaPropertySummary {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaPropertySummary = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaPropertySummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaPropertySummary]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaPropertySummaryMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaPropertySummary] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaPropertySummary](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
   }
 }

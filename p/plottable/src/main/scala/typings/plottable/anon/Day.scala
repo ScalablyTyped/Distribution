@@ -29,34 +29,25 @@ trait Day extends StObject {
 }
 object Day {
   
-  @scala.inline
-  def apply(): Day = {
+  inline def apply(): Day = {
     val __obj = js.Dynamic.literal(day = "day", hour = "hour", minute = "minute", month = "month", second = "second", week = "week", year = "year")
     __obj.asInstanceOf[Day]
   }
   
-  @scala.inline
-  implicit class DayMutableBuilder[Self <: Day] (val x: Self) extends AnyVal {
+  extension [Self <: Day](x: Self) {
     
-    @scala.inline
-    def setDay(value: day): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: day): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHour(value: hour): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+    inline def setHour(value: hour): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinute(value: minute): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+    inline def setMinute(value: minute): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth(value: month): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: month): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecond(value: second): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: second): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeek(value: week): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+    inline def setWeek(value: week): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYear(value: year): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: year): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }
 }

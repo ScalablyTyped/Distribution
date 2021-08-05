@@ -18,28 +18,21 @@ trait ListContributorInsightsOutput extends StObject {
 }
 object ListContributorInsightsOutput {
   
-  @scala.inline
-  def apply(): ListContributorInsightsOutput = {
+  inline def apply(): ListContributorInsightsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListContributorInsightsOutput]
   }
   
-  @scala.inline
-  implicit class ListContributorInsightsOutputMutableBuilder[Self <: ListContributorInsightsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListContributorInsightsOutput](x: Self) {
     
-    @scala.inline
-    def setContributorInsightsSummaries(value: ContributorInsightsSummaries): Self = StObject.set(x, "ContributorInsightsSummaries", value.asInstanceOf[js.Any])
+    inline def setContributorInsightsSummaries(value: ContributorInsightsSummaries): Self = StObject.set(x, "ContributorInsightsSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContributorInsightsSummariesUndefined: Self = StObject.set(x, "ContributorInsightsSummaries", js.undefined)
+    inline def setContributorInsightsSummariesUndefined: Self = StObject.set(x, "ContributorInsightsSummaries", js.undefined)
     
-    @scala.inline
-    def setContributorInsightsSummariesVarargs(value: ContributorInsightsSummary*): Self = StObject.set(x, "ContributorInsightsSummaries", js.Array(value :_*))
+    inline def setContributorInsightsSummariesVarargs(value: ContributorInsightsSummary*): Self = StObject.set(x, "ContributorInsightsSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

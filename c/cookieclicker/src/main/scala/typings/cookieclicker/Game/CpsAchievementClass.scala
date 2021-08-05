@@ -15,8 +15,7 @@ trait CpsAchievementClass
 }
 object CpsAchievementClass {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseDesc: String,
     click: () => Unit,
     desc: String,
@@ -36,10 +35,8 @@ object CpsAchievementClass {
     __obj.asInstanceOf[CpsAchievementClass]
   }
   
-  @scala.inline
-  implicit class CpsAchievementClassMutableBuilder[Self <: CpsAchievementClass] (val x: Self) extends AnyVal {
+  extension [Self <: CpsAchievementClass](x: Self) {
     
-    @scala.inline
-    def setTreshold(value: Double): Self = StObject.set(x, "treshold", value.asInstanceOf[js.Any])
+    inline def setTreshold(value: Double): Self = StObject.set(x, "treshold", value.asInstanceOf[js.Any])
   }
 }

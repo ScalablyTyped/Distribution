@@ -13,16 +13,13 @@ trait VirtualNodeStatus extends StObject {
 }
 object VirtualNodeStatus {
   
-  @scala.inline
-  def apply(status: VirtualNodeStatusCode): VirtualNodeStatus = {
+  inline def apply(status: VirtualNodeStatusCode): VirtualNodeStatus = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeStatus]
   }
   
-  @scala.inline
-  implicit class VirtualNodeStatusMutableBuilder[Self <: VirtualNodeStatus] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeStatus](x: Self) {
     
-    @scala.inline
-    def setStatus(value: VirtualNodeStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: VirtualNodeStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

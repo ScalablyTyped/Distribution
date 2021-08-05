@@ -54,6 +54,5 @@ object refsLocalMod {
   @js.native
   val epilog: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintTimeoutMultihash: Multihash): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintTimeoutMultihash.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintTimeoutMultihash: Multihash): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintTimeoutMultihash.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

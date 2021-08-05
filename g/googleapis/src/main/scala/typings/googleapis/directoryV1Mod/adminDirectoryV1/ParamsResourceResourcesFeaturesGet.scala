@@ -31,31 +31,23 @@ trait ParamsResourceResourcesFeaturesGet
 }
 object ParamsResourceResourcesFeaturesGet {
   
-  @scala.inline
-  def apply(): ParamsResourceResourcesFeaturesGet = {
+  inline def apply(): ParamsResourceResourcesFeaturesGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceResourcesFeaturesGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceResourcesFeaturesGetMutableBuilder[Self <: ParamsResourceResourcesFeaturesGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceResourcesFeaturesGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
     
-    @scala.inline
-    def setFeatureKey(value: String): Self = StObject.set(x, "featureKey", value.asInstanceOf[js.Any])
+    inline def setFeatureKey(value: String): Self = StObject.set(x, "featureKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureKeyUndefined: Self = StObject.set(x, "featureKey", js.undefined)
+    inline def setFeatureKeyUndefined: Self = StObject.set(x, "featureKey", js.undefined)
   }
 }

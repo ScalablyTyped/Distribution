@@ -54,8 +54,7 @@ object Rx {
   }
   object VirtualTimeScheduler {
     
-    @scala.inline
-    def apply[TAbsolute, TRelative](
+    inline def apply[TAbsolute, TRelative](
       add: (TAbsolute, TRelative) => TAbsolute,
       advanceBy: TRelative => Unit,
       advanceTo: TAbsolute => Unit,
@@ -91,54 +90,39 @@ object Rx {
       __obj.asInstanceOf[VirtualTimeScheduler[TAbsolute, TRelative]]
     }
     
-    @scala.inline
-    implicit class VirtualTimeSchedulerMutableBuilder[Self <: VirtualTimeScheduler[?, ?], TAbsolute, TRelative] (val x: Self & (VirtualTimeScheduler[TAbsolute, TRelative])) extends AnyVal {
+    extension [Self <: VirtualTimeScheduler[?, ?], TAbsolute, TRelative](x: Self & (VirtualTimeScheduler[TAbsolute, TRelative])) {
       
-      @scala.inline
-      def setAdd(value: (TAbsolute, TRelative) => TAbsolute): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (TAbsolute, TRelative) => TAbsolute): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAdvanceBy(value: TRelative => Unit): Self = StObject.set(x, "advanceBy", js.Any.fromFunction1(value))
+      inline def setAdvanceBy(value: TRelative => Unit): Self = StObject.set(x, "advanceBy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAdvanceTo(value: TAbsolute => Unit): Self = StObject.set(x, "advanceTo", js.Any.fromFunction1(value))
+      inline def setAdvanceTo(value: TAbsolute => Unit): Self = StObject.set(x, "advanceTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNext(value: () => ScheduledItem[TAbsolute]): Self = StObject.set(x, "getNext", js.Any.fromFunction0(value))
+      inline def setGetNext(value: () => ScheduledItem[TAbsolute]): Self = StObject.set(x, "getNext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleAbsolute(value: (TAbsolute, js.Function0[Unit]) => IDisposable): Self = StObject.set(x, "scheduleAbsolute", js.Any.fromFunction2(value))
+      inline def setScheduleAbsolute(value: (TAbsolute, js.Function0[Unit]) => IDisposable): Self = StObject.set(x, "scheduleAbsolute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setScheduleAbsoluteWithState(
+      inline def setScheduleAbsoluteWithState(
         value: (js.Any, TAbsolute, js.Function2[/* scheduler */ typings.rxCore.Rx.IScheduler, js.Any, IDisposable]) => IDisposable
       ): Self = StObject.set(x, "scheduleAbsoluteWithState", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setScheduleRelative(value: (TRelative, js.Function0[Unit]) => IDisposable): Self = StObject.set(x, "scheduleRelative", js.Any.fromFunction2(value))
+      inline def setScheduleRelative(value: (TRelative, js.Function0[Unit]) => IDisposable): Self = StObject.set(x, "scheduleRelative", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setScheduleRelativeWithState(
+      inline def setScheduleRelativeWithState(
         value: (js.Any, TRelative, js.Function2[/* scheduler */ typings.rxCore.Rx.IScheduler, js.Any, IDisposable]) => IDisposable
       ): Self = StObject.set(x, "scheduleRelativeWithState", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSleep(value: TRelative => Unit): Self = StObject.set(x, "sleep", js.Any.fromFunction1(value))
+      inline def setSleep(value: TRelative => Unit): Self = StObject.set(x, "sleep", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStart(value: () => IDisposable): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => IDisposable): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToDateTimeOffset(value: TAbsolute => Double): Self = StObject.set(x, "toDateTimeOffset", js.Any.fromFunction1(value))
+      inline def setToDateTimeOffset(value: TAbsolute => Double): Self = StObject.set(x, "toDateTimeOffset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToRelative(value: Double => TRelative): Self = StObject.set(x, "toRelative", js.Any.fromFunction1(value))
+      inline def setToRelative(value: Double => TRelative): Self = StObject.set(x, "toRelative", js.Any.fromFunction1(value))
     }
   }
 }

@@ -13,19 +13,15 @@ trait GetWorldTemplateBodyResponse extends StObject {
 }
 object GetWorldTemplateBodyResponse {
   
-  @scala.inline
-  def apply(): GetWorldTemplateBodyResponse = {
+  inline def apply(): GetWorldTemplateBodyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetWorldTemplateBodyResponse]
   }
   
-  @scala.inline
-  implicit class GetWorldTemplateBodyResponseMutableBuilder[Self <: GetWorldTemplateBodyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetWorldTemplateBodyResponse](x: Self) {
     
-    @scala.inline
-    def setTemplateBody(value: Json): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
+    inline def setTemplateBody(value: Json): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
+    inline def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
   }
 }

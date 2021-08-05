@@ -9,6 +9,5 @@ object global {
   @JSGlobal("bootbox")
   @js.native
   def bootbox: BootboxStatic = js.native
-  @scala.inline
-  def bootbox_=(x: BootboxStatic): Unit = js.Dynamic.global.updateDynamic("bootbox")(x.asInstanceOf[js.Any])
+  inline def bootbox_=(x: BootboxStatic): Unit = js.Dynamic.global.updateDynamic("bootbox")(x.asInstanceOf[js.Any])
 }

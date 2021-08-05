@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableRecordKeyType extends StObject
 object TableRecordKeyType {
   
-  @scala.inline
-  def ANY_KEY: typings.qlikEngineapi.qlikEngineapiStrings.ANY_KEY = "ANY_KEY".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.ANY_KEY]
+  inline def ANY_KEY: typings.qlikEngineapi.qlikEngineapiStrings.ANY_KEY = "ANY_KEY".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.ANY_KEY]
   
-  @scala.inline
-  def NOT_KEY: typings.qlikEngineapi.qlikEngineapiStrings.NOT_KEY = "NOT_KEY".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NOT_KEY]
+  inline def NOT_KEY: typings.qlikEngineapi.qlikEngineapiStrings.NOT_KEY = "NOT_KEY".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NOT_KEY]
   
-  @scala.inline
-  def PERFECT_KEY: typings.qlikEngineapi.qlikEngineapiStrings.PERFECT_KEY = "PERFECT_KEY".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.PERFECT_KEY]
+  inline def PERFECT_KEY: typings.qlikEngineapi.qlikEngineapiStrings.PERFECT_KEY = "PERFECT_KEY".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.PERFECT_KEY]
   
-  @scala.inline
-  def PRIMARY_KEY: typings.qlikEngineapi.qlikEngineapiStrings.PRIMARY_KEY = "PRIMARY_KEY".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.PRIMARY_KEY]
+  inline def PRIMARY_KEY: typings.qlikEngineapi.qlikEngineapiStrings.PRIMARY_KEY = "PRIMARY_KEY".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.PRIMARY_KEY]
 }

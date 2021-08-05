@@ -25,8 +25,7 @@ trait LanguageDetectorAsyncModule
 }
 object LanguageDetectorAsyncModule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cacheUserLanguage: String => Unit,
     detect: js.Function1[/* lng */ String, Unit] => Unit,
     init: (Services, js.Object, InitOptions) => Unit
@@ -36,22 +35,16 @@ object LanguageDetectorAsyncModule {
     __obj.asInstanceOf[LanguageDetectorAsyncModule]
   }
   
-  @scala.inline
-  implicit class LanguageDetectorAsyncModuleMutableBuilder[Self <: LanguageDetectorAsyncModule] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageDetectorAsyncModule](x: Self) {
     
-    @scala.inline
-    def setAsync(value: `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUserLanguage(value: String => Unit): Self = StObject.set(x, "cacheUserLanguage", js.Any.fromFunction1(value))
+    inline def setCacheUserLanguage(value: String => Unit): Self = StObject.set(x, "cacheUserLanguage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDetect(value: js.Function1[/* lng */ String, Unit] => Unit): Self = StObject.set(x, "detect", js.Any.fromFunction1(value))
+    inline def setDetect(value: js.Function1[/* lng */ String, Unit] => Unit): Self = StObject.set(x, "detect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInit(value: (Services, js.Object, InitOptions) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
+    inline def setInit(value: (Services, js.Object, InitOptions) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setType(value: languageDetector): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: languageDetector): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

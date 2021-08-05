@@ -14,8 +14,7 @@ trait ActivateRoomResponse extends StObject {
 }
 object ActivateRoomResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     immutableRoomAttributes: ImmutableRoomAttributes,
     roomAttributes: BaseRoomAttributes,
     roomSystemInfo: RoomSystemInfo
@@ -24,16 +23,12 @@ object ActivateRoomResponse {
     __obj.asInstanceOf[ActivateRoomResponse]
   }
   
-  @scala.inline
-  implicit class ActivateRoomResponseMutableBuilder[Self <: ActivateRoomResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ActivateRoomResponse](x: Self) {
     
-    @scala.inline
-    def setImmutableRoomAttributes(value: ImmutableRoomAttributes): Self = StObject.set(x, "immutableRoomAttributes", value.asInstanceOf[js.Any])
+    inline def setImmutableRoomAttributes(value: ImmutableRoomAttributes): Self = StObject.set(x, "immutableRoomAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomAttributes(value: BaseRoomAttributes): Self = StObject.set(x, "roomAttributes", value.asInstanceOf[js.Any])
+    inline def setRoomAttributes(value: BaseRoomAttributes): Self = StObject.set(x, "roomAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomSystemInfo(value: RoomSystemInfo): Self = StObject.set(x, "roomSystemInfo", value.asInstanceOf[js.Any])
+    inline def setRoomSystemInfo(value: RoomSystemInfo): Self = StObject.set(x, "roomSystemInfo", value.asInstanceOf[js.Any])
   }
 }

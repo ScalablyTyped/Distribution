@@ -13,19 +13,15 @@ trait GetPossibleBreakpointsReturnType extends StObject {
 }
 object GetPossibleBreakpointsReturnType {
   
-  @scala.inline
-  def apply(locations: js.Array[BreakLocation]): GetPossibleBreakpointsReturnType = {
+  inline def apply(locations: js.Array[BreakLocation]): GetPossibleBreakpointsReturnType = {
     val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPossibleBreakpointsReturnType]
   }
   
-  @scala.inline
-  implicit class GetPossibleBreakpointsReturnTypeMutableBuilder[Self <: GetPossibleBreakpointsReturnType] (val x: Self) extends AnyVal {
+  extension [Self <: GetPossibleBreakpointsReturnType](x: Self) {
     
-    @scala.inline
-    def setLocations(value: js.Array[BreakLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[BreakLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsVarargs(value: BreakLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: BreakLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
   }
 }

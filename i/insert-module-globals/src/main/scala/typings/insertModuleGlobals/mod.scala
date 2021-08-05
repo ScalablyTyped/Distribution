@@ -58,38 +58,28 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlways(value: Boolean): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
+      inline def setAlways(value: Boolean): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
+      inline def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
       
-      @scala.inline
-      def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
+      inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
+      inline def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setVars(value: VarsOption): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
+      inline def setVars(value: VarsOption): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVarsUndefined: Self = StObject.set(x, "vars", js.undefined)
+      inline def setVarsUndefined: Self = StObject.set(x, "vars", js.undefined)
     }
   }
   
@@ -103,26 +93,20 @@ object mod extends Shortcut {
   }
   object VariableConfig {
     
-    @scala.inline
-    def apply(id: String, source: String): VariableConfig = {
+    inline def apply(id: String, source: String): VariableConfig = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[VariableConfig]
     }
     
-    @scala.inline
-    implicit class VariableConfigMutableBuilder[Self <: VariableConfig] (val x: Self) extends AnyVal {
+    extension [Self <: VariableConfig](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     }
   }
   

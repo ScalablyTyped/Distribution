@@ -12,22 +12,17 @@ trait ISchema extends StObject {
 }
 object ISchema {
   
-  @scala.inline
-  def apply(columns: js.Array[IColumn], table: String): ISchema = {
+  inline def apply(columns: js.Array[IColumn], table: String): ISchema = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISchema]
   }
   
-  @scala.inline
-  implicit class ISchemaMutableBuilder[Self <: ISchema] (val x: Self) extends AnyVal {
+  extension [Self <: ISchema](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[IColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[IColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
   }
 }

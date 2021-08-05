@@ -22,25 +22,19 @@ trait UpdateMonitoringResponse extends StObject {
 }
 object UpdateMonitoringResponse {
   
-  @scala.inline
-  def apply(): UpdateMonitoringResponse = {
+  inline def apply(): UpdateMonitoringResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateMonitoringResponse]
   }
   
-  @scala.inline
-  implicit class UpdateMonitoringResponseMutableBuilder[Self <: UpdateMonitoringResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMonitoringResponse](x: Self) {
     
-    @scala.inline
-    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
+    inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
+    inline def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
     
-    @scala.inline
-    def setClusterOperationArn(value: string): Self = StObject.set(x, "ClusterOperationArn", value.asInstanceOf[js.Any])
+    inline def setClusterOperationArn(value: string): Self = StObject.set(x, "ClusterOperationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterOperationArnUndefined: Self = StObject.set(x, "ClusterOperationArn", js.undefined)
+    inline def setClusterOperationArnUndefined: Self = StObject.set(x, "ClusterOperationArn", js.undefined)
   }
 }

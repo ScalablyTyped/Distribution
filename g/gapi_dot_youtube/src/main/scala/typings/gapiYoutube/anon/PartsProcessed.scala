@@ -23,22 +23,17 @@ trait PartsProcessed extends StObject {
 }
 object PartsProcessed {
   
-  @scala.inline
-  def apply(partsProcessed: Double, partsTotal: Double, timeLeftMs: Double): PartsProcessed = {
+  inline def apply(partsProcessed: Double, partsTotal: Double, timeLeftMs: Double): PartsProcessed = {
     val __obj = js.Dynamic.literal(partsProcessed = partsProcessed.asInstanceOf[js.Any], partsTotal = partsTotal.asInstanceOf[js.Any], timeLeftMs = timeLeftMs.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartsProcessed]
   }
   
-  @scala.inline
-  implicit class PartsProcessedMutableBuilder[Self <: PartsProcessed] (val x: Self) extends AnyVal {
+  extension [Self <: PartsProcessed](x: Self) {
     
-    @scala.inline
-    def setPartsProcessed(value: Double): Self = StObject.set(x, "partsProcessed", value.asInstanceOf[js.Any])
+    inline def setPartsProcessed(value: Double): Self = StObject.set(x, "partsProcessed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartsTotal(value: Double): Self = StObject.set(x, "partsTotal", value.asInstanceOf[js.Any])
+    inline def setPartsTotal(value: Double): Self = StObject.set(x, "partsTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeLeftMs(value: Double): Self = StObject.set(x, "timeLeftMs", value.asInstanceOf[js.Any])
+    inline def setTimeLeftMs(value: Double): Self = StObject.set(x, "timeLeftMs", value.asInstanceOf[js.Any])
   }
 }

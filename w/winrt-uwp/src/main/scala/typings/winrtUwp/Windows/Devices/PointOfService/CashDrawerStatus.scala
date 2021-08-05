@@ -15,19 +15,15 @@ trait CashDrawerStatus extends StObject {
 }
 object CashDrawerStatus {
   
-  @scala.inline
-  def apply(extendedStatus: Double, statusKind: CashDrawerStatusKind): CashDrawerStatus = {
+  inline def apply(extendedStatus: Double, statusKind: CashDrawerStatusKind): CashDrawerStatus = {
     val __obj = js.Dynamic.literal(extendedStatus = extendedStatus.asInstanceOf[js.Any], statusKind = statusKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[CashDrawerStatus]
   }
   
-  @scala.inline
-  implicit class CashDrawerStatusMutableBuilder[Self <: CashDrawerStatus] (val x: Self) extends AnyVal {
+  extension [Self <: CashDrawerStatus](x: Self) {
     
-    @scala.inline
-    def setExtendedStatus(value: Double): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
+    inline def setExtendedStatus(value: Double): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusKind(value: CashDrawerStatusKind): Self = StObject.set(x, "statusKind", value.asInstanceOf[js.Any])
+    inline def setStatusKind(value: CashDrawerStatusKind): Self = StObject.set(x, "statusKind", value.asInstanceOf[js.Any])
   }
 }

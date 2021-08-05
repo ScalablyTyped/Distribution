@@ -14,7 +14,7 @@ trait SlicerCacheLevel extends StObject {
   
   var CrossFilterType: XlSlicerCrossFilterType
   
-  @JSName("Excel.SlicerCacheLevel_typekey")
+  /* private */ @JSName("Excel.SlicerCacheLevel_typekey")
   var ExcelDotSlicerCacheLevel_typekey: SlicerCacheLevel
   
   val Name: String
@@ -34,8 +34,7 @@ trait SlicerCacheLevel extends StObject {
 }
 object SlicerCacheLevel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Creator: XlCreator,
@@ -53,40 +52,28 @@ object SlicerCacheLevel {
     __obj.asInstanceOf[SlicerCacheLevel]
   }
   
-  @scala.inline
-  implicit class SlicerCacheLevelMutableBuilder[Self <: SlicerCacheLevel] (val x: Self) extends AnyVal {
+  extension [Self <: SlicerCacheLevel](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossFilterType(value: XlSlicerCrossFilterType): Self = StObject.set(x, "CrossFilterType", value.asInstanceOf[js.Any])
+    inline def setCrossFilterType(value: XlSlicerCrossFilterType): Self = StObject.set(x, "CrossFilterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotSlicerCacheLevel_typekey(value: SlicerCacheLevel): Self = StObject.set(x, "Excel.SlicerCacheLevel_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotSlicerCacheLevel_typekey(value: SlicerCacheLevel): Self = StObject.set(x, "Excel.SlicerCacheLevel_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrdinal(value: Double): Self = StObject.set(x, "Ordinal", value.asInstanceOf[js.Any])
+    inline def setOrdinal(value: Double): Self = StObject.set(x, "Ordinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlicerItems(value: SlicerItems): Self = StObject.set(x, "SlicerItems", value.asInstanceOf[js.Any])
+    inline def setSlicerItems(value: SlicerItems): Self = StObject.set(x, "SlicerItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortItems(value: XlSlicerSort): Self = StObject.set(x, "SortItems", value.asInstanceOf[js.Any])
+    inline def setSortItems(value: XlSlicerSort): Self = StObject.set(x, "SortItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleSlicerItemsList(value: js.Any): Self = StObject.set(x, "VisibleSlicerItemsList", value.asInstanceOf[js.Any])
+    inline def setVisibleSlicerItemsList(value: js.Any): Self = StObject.set(x, "VisibleSlicerItemsList", value.asInstanceOf[js.Any])
   }
 }

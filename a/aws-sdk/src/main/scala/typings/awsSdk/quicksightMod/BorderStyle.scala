@@ -13,19 +13,15 @@ trait BorderStyle extends StObject {
 }
 object BorderStyle {
   
-  @scala.inline
-  def apply(): BorderStyle = {
+  inline def apply(): BorderStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderStyle]
   }
   
-  @scala.inline
-  implicit class BorderStyleMutableBuilder[Self <: BorderStyle] (val x: Self) extends AnyVal {
+  extension [Self <: BorderStyle](x: Self) {
     
-    @scala.inline
-    def setShow(value: scala.Boolean): Self = StObject.set(x, "Show", value.asInstanceOf[js.Any])
+    inline def setShow(value: scala.Boolean): Self = StObject.set(x, "Show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "Show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "Show", js.undefined)
   }
 }

@@ -17,16 +17,13 @@ trait OnInit extends StObject {
 }
 object OnInit {
   
-  @scala.inline
-  def apply(ngOnInit: () => Unit): OnInit = {
+  inline def apply(ngOnInit: () => Unit): OnInit = {
     val __obj = js.Dynamic.literal(ngOnInit = js.Any.fromFunction0(ngOnInit))
     __obj.asInstanceOf[OnInit]
   }
   
-  @scala.inline
-  implicit class OnInitMutableBuilder[Self <: OnInit] (val x: Self) extends AnyVal {
+  extension [Self <: OnInit](x: Self) {
     
-    @scala.inline
-    def setNgOnInit(value: () => Unit): Self = StObject.set(x, "ngOnInit", js.Any.fromFunction0(value))
+    inline def setNgOnInit(value: () => Unit): Self = StObject.set(x, "ngOnInit", js.Any.fromFunction0(value))
   }
 }

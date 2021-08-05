@@ -13,16 +13,13 @@ trait GetDevEndpointRequest extends StObject {
 }
 object GetDevEndpointRequest {
   
-  @scala.inline
-  def apply(EndpointName: GenericString): GetDevEndpointRequest = {
+  inline def apply(EndpointName: GenericString): GetDevEndpointRequest = {
     val __obj = js.Dynamic.literal(EndpointName = EndpointName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDevEndpointRequest]
   }
   
-  @scala.inline
-  implicit class GetDevEndpointRequestMutableBuilder[Self <: GetDevEndpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDevEndpointRequest](x: Self) {
     
-    @scala.inline
-    def setEndpointName(value: GenericString): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
+    inline def setEndpointName(value: GenericString): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
   }
 }

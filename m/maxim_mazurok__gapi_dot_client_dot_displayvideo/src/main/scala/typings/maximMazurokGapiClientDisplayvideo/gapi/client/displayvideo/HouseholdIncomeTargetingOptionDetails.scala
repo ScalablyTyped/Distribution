@@ -11,19 +11,15 @@ trait HouseholdIncomeTargetingOptionDetails extends StObject {
 }
 object HouseholdIncomeTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): HouseholdIncomeTargetingOptionDetails = {
+  inline def apply(): HouseholdIncomeTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HouseholdIncomeTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class HouseholdIncomeTargetingOptionDetailsMutableBuilder[Self <: HouseholdIncomeTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: HouseholdIncomeTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setHouseholdIncome(value: String): Self = StObject.set(x, "householdIncome", value.asInstanceOf[js.Any])
+    inline def setHouseholdIncome(value: String): Self = StObject.set(x, "householdIncome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHouseholdIncomeUndefined: Self = StObject.set(x, "householdIncome", js.undefined)
+    inline def setHouseholdIncomeUndefined: Self = StObject.set(x, "householdIncome", js.undefined)
   }
 }

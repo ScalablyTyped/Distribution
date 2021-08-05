@@ -13,7 +13,7 @@ object observerIgnoreElementsObserverMod {
   class IgnoreElementsObserver protected () extends Observer {
     def this(currentObserver: IObserver) = this()
     
-    var _currentObserver: js.Any = js.native
+    /* private */ var _currentObserver: js.Any = js.native
   }
   /* static members */
   object IgnoreElementsObserver {
@@ -22,7 +22,6 @@ object observerIgnoreElementsObserverMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(currentObserver: IObserver): IgnoreElementsObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any]).asInstanceOf[IgnoreElementsObserver]
+    inline def create(currentObserver: IObserver): IgnoreElementsObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any]).asInstanceOf[IgnoreElementsObserver]
   }
 }

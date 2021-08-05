@@ -8,6 +8,5 @@ object gatsbyTransformerRemarkStrings {
   
   @js.native
   sealed trait `gatsby-transformer-remark` extends StObject
-  @scala.inline
-  def `gatsby-transformer-remark`: `gatsby-transformer-remark` = "gatsby-transformer-remark".asInstanceOf[`gatsby-transformer-remark`]
+  inline def `gatsby-transformer-remark`: `gatsby-transformer-remark` = "gatsby-transformer-remark".asInstanceOf[`gatsby-transformer-remark`]
 }

@@ -19,8 +19,7 @@ trait ContributionNodeQueryResult extends StObject {
 }
 object ContributionNodeQueryResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     nodes: StringDictionary[ClientContributionNode],
     providerDetails: StringDictionary[ClientContributionProviderDetails]
   ): ContributionNodeQueryResult = {
@@ -28,13 +27,10 @@ object ContributionNodeQueryResult {
     __obj.asInstanceOf[ContributionNodeQueryResult]
   }
   
-  @scala.inline
-  implicit class ContributionNodeQueryResultMutableBuilder[Self <: ContributionNodeQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: ContributionNodeQueryResult](x: Self) {
     
-    @scala.inline
-    def setNodes(value: StringDictionary[ClientContributionNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: StringDictionary[ClientContributionNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderDetails(value: StringDictionary[ClientContributionProviderDetails]): Self = StObject.set(x, "providerDetails", value.asInstanceOf[js.Any])
+    inline def setProviderDetails(value: StringDictionary[ClientContributionProviderDetails]): Self = StObject.set(x, "providerDetails", value.asInstanceOf[js.Any])
   }
 }

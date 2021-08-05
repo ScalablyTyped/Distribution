@@ -25,20 +25,16 @@ trait ObjectOrStatePermission
 }
 object ObjectOrStatePermission {
   
-  @scala.inline
-  def apply(operation: list | read | write | create | delete, `type`: `object` | file | users | state): ObjectOrStatePermission = {
+  inline def apply(operation: list | read | write | create | delete, `type`: `object` | file | users | state): ObjectOrStatePermission = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectOrStatePermission]
   }
   
-  @scala.inline
-  implicit class ObjectOrStatePermissionMutableBuilder[Self <: ObjectOrStatePermission] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectOrStatePermission](x: Self) {
     
-    @scala.inline
-    def setOperation(value: list | read | write | create | delete): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: list | read | write | create | delete): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `object` | file | users | state): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `object` | file | users | state): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

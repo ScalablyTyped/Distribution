@@ -24,14 +24,13 @@ trait GF256 extends StObject {
   
   def multiply(a: Double, b: Double): Double
   
-  var one: GF256Poly
+  /* private */ var one: GF256Poly
   
-  var zero: GF256Poly
+  /* private */ var zero: GF256Poly
 }
 object GF256 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     One: GF256Poly,
     Zero: GF256Poly,
     buildMonomial: (Double, Double) => GF256Poly,
@@ -48,40 +47,28 @@ object GF256 {
     __obj.asInstanceOf[GF256]
   }
   
-  @scala.inline
-  implicit class GF256MutableBuilder[Self <: GF256] (val x: Self) extends AnyVal {
+  extension [Self <: GF256](x: Self) {
     
-    @scala.inline
-    def setBuildMonomial(value: (Double, Double) => GF256Poly): Self = StObject.set(x, "buildMonomial", js.Any.fromFunction2(value))
+    inline def setBuildMonomial(value: (Double, Double) => GF256Poly): Self = StObject.set(x, "buildMonomial", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setExp(value: Double => Double): Self = StObject.set(x, "exp", js.Any.fromFunction1(value))
+    inline def setExp(value: Double => Double): Self = StObject.set(x, "exp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpTable(value: js.Array[Double]): Self = StObject.set(x, "expTable", value.asInstanceOf[js.Any])
+    inline def setExpTable(value: js.Array[Double]): Self = StObject.set(x, "expTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpTableVarargs(value: Double*): Self = StObject.set(x, "expTable", js.Array(value :_*))
+    inline def setExpTableVarargs(value: Double*): Self = StObject.set(x, "expTable", js.Array(value :_*))
     
-    @scala.inline
-    def setInverse(value: Double => Double): Self = StObject.set(x, "inverse", js.Any.fromFunction1(value))
+    inline def setInverse(value: Double => Double): Self = StObject.set(x, "inverse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLog(value: Double => Double): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    inline def setLog(value: Double => Double): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLogTable(value: js.Array[Double]): Self = StObject.set(x, "logTable", value.asInstanceOf[js.Any])
+    inline def setLogTable(value: js.Array[Double]): Self = StObject.set(x, "logTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogTableVarargs(value: Double*): Self = StObject.set(x, "logTable", js.Array(value :_*))
+    inline def setLogTableVarargs(value: Double*): Self = StObject.set(x, "logTable", js.Array(value :_*))
     
-    @scala.inline
-    def setMultiply(value: (Double, Double) => Double): Self = StObject.set(x, "multiply", js.Any.fromFunction2(value))
+    inline def setMultiply(value: (Double, Double) => Double): Self = StObject.set(x, "multiply", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOne(value: GF256Poly): Self = StObject.set(x, "One", value.asInstanceOf[js.Any])
+    inline def setOne(value: GF256Poly): Self = StObject.set(x, "One", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZero(value: GF256Poly): Self = StObject.set(x, "Zero", value.asInstanceOf[js.Any])
+    inline def setZero(value: GF256Poly): Self = StObject.set(x, "Zero", value.asInstanceOf[js.Any])
   }
 }

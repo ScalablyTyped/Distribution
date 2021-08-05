@@ -21,20 +21,17 @@ object MobileFooterType {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MobileFooterType.Custom")
   @js.native
   def Custom: MobileFooterType = js.native
-  @scala.inline
-  def Custom_=(x: MobileFooterType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Custom")(x.asInstanceOf[js.Any])
+  inline def Custom_=(x: MobileFooterType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Custom")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MobileFooterType.MenuBar")
   @js.native
   def MenuBar: MobileFooterType = js.native
-  @scala.inline
-  def MenuBar_=(x: MobileFooterType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MenuBar")(x.asInstanceOf[js.Any])
+  inline def MenuBar_=(x: MobileFooterType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MenuBar")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MobileFooterType.None")
   @js.native
   def None: MobileFooterType = js.native
-  @scala.inline
-  def None_=(x: MobileFooterType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: MobileFooterType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
 }

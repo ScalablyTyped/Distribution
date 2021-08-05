@@ -17,19 +17,15 @@ trait SchemaBinaryAuthorization extends StObject {
 }
 object SchemaBinaryAuthorization {
   
-  @scala.inline
-  def apply(): SchemaBinaryAuthorization = {
+  inline def apply(): SchemaBinaryAuthorization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBinaryAuthorization]
   }
   
-  @scala.inline
-  implicit class SchemaBinaryAuthorizationMutableBuilder[Self <: SchemaBinaryAuthorization] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBinaryAuthorization](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

@@ -21,49 +21,35 @@ trait LinkObject extends StObject {
 }
 object LinkObject {
   
-  @scala.inline
-  def apply(): LinkObject = {
+  inline def apply(): LinkObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinkObject]
   }
   
-  @scala.inline
-  implicit class LinkObjectMutableBuilder[Self <: LinkObject] (val x: Self) extends AnyVal {
+  extension [Self <: LinkObject](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
-    @scala.inline
-    def setOperationRef(value: String): Self = StObject.set(x, "operationRef", value.asInstanceOf[js.Any])
+    inline def setOperationRef(value: String): Self = StObject.set(x, "operationRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationRefUndefined: Self = StObject.set(x, "operationRef", js.undefined)
+    inline def setOperationRefUndefined: Self = StObject.set(x, "operationRef", js.undefined)
     
-    @scala.inline
-    def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: js.Any): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: js.Any): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setServer(value: ServerObject): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: ServerObject): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

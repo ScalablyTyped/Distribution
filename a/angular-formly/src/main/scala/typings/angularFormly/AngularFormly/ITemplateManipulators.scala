@@ -12,31 +12,23 @@ trait ITemplateManipulators extends StObject {
 }
 object ITemplateManipulators {
   
-  @scala.inline
-  def apply(): ITemplateManipulators = {
+  inline def apply(): ITemplateManipulators = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITemplateManipulators]
   }
   
-  @scala.inline
-  implicit class ITemplateManipulatorsMutableBuilder[Self <: ITemplateManipulators] (val x: Self) extends AnyVal {
+  extension [Self <: ITemplateManipulators](x: Self) {
     
-    @scala.inline
-    def setPostWrapper(value: js.Array[ITemplateManipulator]): Self = StObject.set(x, "postWrapper", value.asInstanceOf[js.Any])
+    inline def setPostWrapper(value: js.Array[ITemplateManipulator]): Self = StObject.set(x, "postWrapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostWrapperUndefined: Self = StObject.set(x, "postWrapper", js.undefined)
+    inline def setPostWrapperUndefined: Self = StObject.set(x, "postWrapper", js.undefined)
     
-    @scala.inline
-    def setPostWrapperVarargs(value: ITemplateManipulator*): Self = StObject.set(x, "postWrapper", js.Array(value :_*))
+    inline def setPostWrapperVarargs(value: ITemplateManipulator*): Self = StObject.set(x, "postWrapper", js.Array(value :_*))
     
-    @scala.inline
-    def setPreWrapper(value: js.Array[ITemplateManipulator]): Self = StObject.set(x, "preWrapper", value.asInstanceOf[js.Any])
+    inline def setPreWrapper(value: js.Array[ITemplateManipulator]): Self = StObject.set(x, "preWrapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreWrapperUndefined: Self = StObject.set(x, "preWrapper", js.undefined)
+    inline def setPreWrapperUndefined: Self = StObject.set(x, "preWrapper", js.undefined)
     
-    @scala.inline
-    def setPreWrapperVarargs(value: ITemplateManipulator*): Self = StObject.set(x, "preWrapper", js.Array(value :_*))
+    inline def setPreWrapperVarargs(value: ITemplateManipulator*): Self = StObject.set(x, "preWrapper", js.Array(value :_*))
   }
 }

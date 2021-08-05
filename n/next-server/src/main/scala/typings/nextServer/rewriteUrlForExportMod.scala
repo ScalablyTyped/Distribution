@@ -10,6 +10,5 @@ object rewriteUrlForExportMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def rewriteUrlForNextExport(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rewriteUrlForNextExport")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def rewriteUrlForNextExport(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rewriteUrlForNextExport")(url.asInstanceOf[js.Any]).asInstanceOf[String]
 }

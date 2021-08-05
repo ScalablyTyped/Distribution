@@ -18,22 +18,17 @@ trait PlayHistoryObject extends StObject {
 }
 object PlayHistoryObject {
   
-  @scala.inline
-  def apply(context: ContextObject, played_at: String, track: TrackObjectSimplified): PlayHistoryObject = {
+  inline def apply(context: ContextObject, played_at: String, track: TrackObjectSimplified): PlayHistoryObject = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], played_at = played_at.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayHistoryObject]
   }
   
-  @scala.inline
-  implicit class PlayHistoryObjectMutableBuilder[Self <: PlayHistoryObject] (val x: Self) extends AnyVal {
+  extension [Self <: PlayHistoryObject](x: Self) {
     
-    @scala.inline
-    def setContext(value: ContextObject): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: ContextObject): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayed_at(value: String): Self = StObject.set(x, "played_at", value.asInstanceOf[js.Any])
+    inline def setPlayed_at(value: String): Self = StObject.set(x, "played_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack(value: TrackObjectSimplified): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: TrackObjectSimplified): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
   }
 }

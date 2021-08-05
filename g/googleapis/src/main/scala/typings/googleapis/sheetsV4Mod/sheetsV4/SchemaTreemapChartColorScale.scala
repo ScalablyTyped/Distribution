@@ -35,37 +35,27 @@ trait SchemaTreemapChartColorScale extends StObject {
 }
 object SchemaTreemapChartColorScale {
   
-  @scala.inline
-  def apply(): SchemaTreemapChartColorScale = {
+  inline def apply(): SchemaTreemapChartColorScale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTreemapChartColorScale]
   }
   
-  @scala.inline
-  implicit class SchemaTreemapChartColorScaleMutableBuilder[Self <: SchemaTreemapChartColorScale] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTreemapChartColorScale](x: Self) {
     
-    @scala.inline
-    def setMaxValueColor(value: SchemaColor): Self = StObject.set(x, "maxValueColor", value.asInstanceOf[js.Any])
+    inline def setMaxValueColor(value: SchemaColor): Self = StObject.set(x, "maxValueColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueColorUndefined: Self = StObject.set(x, "maxValueColor", js.undefined)
+    inline def setMaxValueColorUndefined: Self = StObject.set(x, "maxValueColor", js.undefined)
     
-    @scala.inline
-    def setMidValueColor(value: SchemaColor): Self = StObject.set(x, "midValueColor", value.asInstanceOf[js.Any])
+    inline def setMidValueColor(value: SchemaColor): Self = StObject.set(x, "midValueColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMidValueColorUndefined: Self = StObject.set(x, "midValueColor", js.undefined)
+    inline def setMidValueColorUndefined: Self = StObject.set(x, "midValueColor", js.undefined)
     
-    @scala.inline
-    def setMinValueColor(value: SchemaColor): Self = StObject.set(x, "minValueColor", value.asInstanceOf[js.Any])
+    inline def setMinValueColor(value: SchemaColor): Self = StObject.set(x, "minValueColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueColorUndefined: Self = StObject.set(x, "minValueColor", js.undefined)
+    inline def setMinValueColorUndefined: Self = StObject.set(x, "minValueColor", js.undefined)
     
-    @scala.inline
-    def setNoDataColor(value: SchemaColor): Self = StObject.set(x, "noDataColor", value.asInstanceOf[js.Any])
+    inline def setNoDataColor(value: SchemaColor): Self = StObject.set(x, "noDataColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataColorUndefined: Self = StObject.set(x, "noDataColor", js.undefined)
+    inline def setNoDataColorUndefined: Self = StObject.set(x, "noDataColor", js.undefined)
   }
 }

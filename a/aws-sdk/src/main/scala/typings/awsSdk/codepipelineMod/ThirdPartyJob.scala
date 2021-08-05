@@ -18,25 +18,19 @@ trait ThirdPartyJob extends StObject {
 }
 object ThirdPartyJob {
   
-  @scala.inline
-  def apply(): ThirdPartyJob = {
+  inline def apply(): ThirdPartyJob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThirdPartyJob]
   }
   
-  @scala.inline
-  implicit class ThirdPartyJobMutableBuilder[Self <: ThirdPartyJob] (val x: Self) extends AnyVal {
+  extension [Self <: ThirdPartyJob](x: Self) {
     
-    @scala.inline
-    def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
   }
 }

@@ -38,40 +38,29 @@ trait ImportAssetFromSignedUrlResponseDetails extends StObject {
 }
 object ImportAssetFromSignedUrlResponseDetails {
   
-  @scala.inline
-  def apply(AssetName: AssetName, DataSetId: Id, RevisionId: Id): ImportAssetFromSignedUrlResponseDetails = {
+  inline def apply(AssetName: AssetName, DataSetId: Id, RevisionId: Id): ImportAssetFromSignedUrlResponseDetails = {
     val __obj = js.Dynamic.literal(AssetName = AssetName.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportAssetFromSignedUrlResponseDetails]
   }
   
-  @scala.inline
-  implicit class ImportAssetFromSignedUrlResponseDetailsMutableBuilder[Self <: ImportAssetFromSignedUrlResponseDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ImportAssetFromSignedUrlResponseDetails](x: Self) {
     
-    @scala.inline
-    def setAssetName(value: AssetName): Self = StObject.set(x, "AssetName", value.asInstanceOf[js.Any])
+    inline def setAssetName(value: AssetName): Self = StObject.set(x, "AssetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMd5Hash(value: stringMin24Max24PatternAZaZ094AZaZ092AZaZ093): Self = StObject.set(x, "Md5Hash", value.asInstanceOf[js.Any])
+    inline def setMd5Hash(value: stringMin24Max24PatternAZaZ094AZaZ092AZaZ093): Self = StObject.set(x, "Md5Hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMd5HashUndefined: Self = StObject.set(x, "Md5Hash", js.undefined)
+    inline def setMd5HashUndefined: Self = StObject.set(x, "Md5Hash", js.undefined)
     
-    @scala.inline
-    def setRevisionId(value: Id): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: Id): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedUrl(value: string): Self = StObject.set(x, "SignedUrl", value.asInstanceOf[js.Any])
+    inline def setSignedUrl(value: string): Self = StObject.set(x, "SignedUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedUrlExpiresAt(value: Timestamp): Self = StObject.set(x, "SignedUrlExpiresAt", value.asInstanceOf[js.Any])
+    inline def setSignedUrlExpiresAt(value: Timestamp): Self = StObject.set(x, "SignedUrlExpiresAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedUrlExpiresAtUndefined: Self = StObject.set(x, "SignedUrlExpiresAt", js.undefined)
+    inline def setSignedUrlExpiresAtUndefined: Self = StObject.set(x, "SignedUrlExpiresAt", js.undefined)
     
-    @scala.inline
-    def setSignedUrlUndefined: Self = StObject.set(x, "SignedUrl", js.undefined)
+    inline def setSignedUrlUndefined: Self = StObject.set(x, "SignedUrl", js.undefined)
   }
 }

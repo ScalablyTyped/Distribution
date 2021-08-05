@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def isSupportedType(`type`: typings.storybookAddons.typesMod.Types_): scala.Boolean = typings.storybookAddons.typesMod.^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedType")(`type`.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isSupportedType(`type`: typings.storybookAddons.typesMod.Types_): scala.Boolean = typings.storybookAddons.typesMod.^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedType")(`type`.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
 type ArgTypes = org.scalablytyped.runtime.StringDictionary[typings.storybookAddons.typesMod.ArgType]
 

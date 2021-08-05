@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reflectIsExtensibleMod {
   
   /* was `typeof core.Reflect.isExtensible` */
-  @scala.inline
-  def apply(target: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(target: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("core-js/fn/reflect/is-extensible", JSImport.Namespace)
   @js.native

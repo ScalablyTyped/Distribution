@@ -14,25 +14,19 @@ trait IDirectionsEventArgs extends StObject {
 }
 object IDirectionsEventArgs {
   
-  @scala.inline
-  def apply(route: js.Array[IRoute], routeSummary: js.Array[IRouteSummary]): IDirectionsEventArgs = {
+  inline def apply(route: js.Array[IRoute], routeSummary: js.Array[IRouteSummary]): IDirectionsEventArgs = {
     val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any], routeSummary = routeSummary.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDirectionsEventArgs]
   }
   
-  @scala.inline
-  implicit class IDirectionsEventArgsMutableBuilder[Self <: IDirectionsEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IDirectionsEventArgs](x: Self) {
     
-    @scala.inline
-    def setRoute(value: js.Array[IRoute]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: js.Array[IRoute]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteSummary(value: js.Array[IRouteSummary]): Self = StObject.set(x, "routeSummary", value.asInstanceOf[js.Any])
+    inline def setRouteSummary(value: js.Array[IRouteSummary]): Self = StObject.set(x, "routeSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteSummaryVarargs(value: IRouteSummary*): Self = StObject.set(x, "routeSummary", js.Array(value :_*))
+    inline def setRouteSummaryVarargs(value: IRouteSummary*): Self = StObject.set(x, "routeSummary", js.Array(value :_*))
     
-    @scala.inline
-    def setRouteVarargs(value: IRoute*): Self = StObject.set(x, "route", js.Array(value :_*))
+    inline def setRouteVarargs(value: IRoute*): Self = StObject.set(x, "route", js.Array(value :_*))
   }
 }

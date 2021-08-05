@@ -26,8 +26,7 @@ trait BitmapFontFile
 }
 object BitmapFontFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     addToMultiFile: File => MultiFile,
     baseURL: String,
@@ -50,10 +49,8 @@ object BitmapFontFile {
     __obj.asInstanceOf[BitmapFontFile]
   }
   
-  @scala.inline
-  implicit class BitmapFontFileMutableBuilder[Self <: BitmapFontFile] (val x: Self) extends AnyVal {
+  extension [Self <: BitmapFontFile](x: Self) {
     
-    @scala.inline
-    def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
+    inline def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }
 }

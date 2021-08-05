@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Warning = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Warning]
+  inline def default(): Warning = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Warning]
   
   @JSImport("fastify-warning", "WarnOpts")
   @js.native

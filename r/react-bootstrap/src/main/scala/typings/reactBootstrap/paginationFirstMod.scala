@@ -22,8 +22,7 @@ object paginationFirstMod {
        with HTMLProps[PaginationFirst]
   object PaginationFirstProps {
     
-    @scala.inline
-    def apply(): PaginationFirstProps = {
+    inline def apply(): PaginationFirstProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaginationFirstProps]
     }

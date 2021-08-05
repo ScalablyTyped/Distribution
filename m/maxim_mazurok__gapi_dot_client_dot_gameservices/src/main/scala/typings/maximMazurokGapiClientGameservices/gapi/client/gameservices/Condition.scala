@@ -23,46 +23,33 @@ trait Condition extends StObject {
 }
 object Condition {
   
-  @scala.inline
-  def apply(): Condition = {
+  inline def apply(): Condition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Condition]
   }
   
-  @scala.inline
-  implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
+  extension [Self <: Condition](x: Self) {
     
-    @scala.inline
-    def setIam(value: String): Self = StObject.set(x, "iam", value.asInstanceOf[js.Any])
+    inline def setIam(value: String): Self = StObject.set(x, "iam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamUndefined: Self = StObject.set(x, "iam", js.undefined)
+    inline def setIamUndefined: Self = StObject.set(x, "iam", js.undefined)
     
-    @scala.inline
-    def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+    inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
     
-    @scala.inline
-    def setSvc(value: String): Self = StObject.set(x, "svc", value.asInstanceOf[js.Any])
+    inline def setSvc(value: String): Self = StObject.set(x, "svc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvcUndefined: Self = StObject.set(x, "svc", js.undefined)
+    inline def setSvcUndefined: Self = StObject.set(x, "svc", js.undefined)
     
-    @scala.inline
-    def setSys(value: String): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+    inline def setSys(value: String): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSysUndefined: Self = StObject.set(x, "sys", js.undefined)
+    inline def setSysUndefined: Self = StObject.set(x, "sys", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

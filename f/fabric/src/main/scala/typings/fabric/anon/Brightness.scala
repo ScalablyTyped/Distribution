@@ -14,16 +14,13 @@ trait Brightness extends StObject {
 }
 object Brightness {
   
-  @scala.inline
-  def apply(brightness: Double): Brightness = {
+  inline def apply(brightness: Double): Brightness = {
     val __obj = js.Dynamic.literal(brightness = brightness.asInstanceOf[js.Any])
     __obj.asInstanceOf[Brightness]
   }
   
-  @scala.inline
-  implicit class BrightnessMutableBuilder[Self <: Brightness] (val x: Self) extends AnyVal {
+  extension [Self <: Brightness](x: Self) {
     
-    @scala.inline
-    def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
+    inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
   }
 }

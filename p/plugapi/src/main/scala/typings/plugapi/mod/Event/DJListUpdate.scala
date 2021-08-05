@@ -13,22 +13,17 @@ trait DJListUpdate extends StObject {
 }
 object DJListUpdate {
   
-  @scala.inline
-  def apply(djs: js.Array[DJ], remove: String): DJListUpdate = {
+  inline def apply(djs: js.Array[DJ], remove: String): DJListUpdate = {
     val __obj = js.Dynamic.literal(djs = djs.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any])
     __obj.asInstanceOf[DJListUpdate]
   }
   
-  @scala.inline
-  implicit class DJListUpdateMutableBuilder[Self <: DJListUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: DJListUpdate](x: Self) {
     
-    @scala.inline
-    def setDjs(value: js.Array[DJ]): Self = StObject.set(x, "djs", value.asInstanceOf[js.Any])
+    inline def setDjs(value: js.Array[DJ]): Self = StObject.set(x, "djs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDjsVarargs(value: DJ*): Self = StObject.set(x, "djs", js.Array(value :_*))
+    inline def setDjsVarargs(value: DJ*): Self = StObject.set(x, "djs", js.Array(value :_*))
     
-    @scala.inline
-    def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
   }
 }

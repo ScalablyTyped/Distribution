@@ -12,25 +12,19 @@ trait Next extends StObject {
 }
 object Next {
   
-  @scala.inline
-  def apply(): Next = {
+  inline def apply(): Next = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Next]
   }
   
-  @scala.inline
-  implicit class NextMutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
+  extension [Self <: Next](x: Self) {
     
-    @scala.inline
-    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    @scala.inline
-    def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    inline def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+    inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
   }
 }

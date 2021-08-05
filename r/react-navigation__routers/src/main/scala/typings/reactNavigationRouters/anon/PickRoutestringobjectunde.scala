@@ -13,25 +13,19 @@ trait PickRoutestringobjectunde extends StObject {
 }
 object PickRoutestringobjectunde {
   
-  @scala.inline
-  def apply(): PickRoutestringobjectunde = {
+  inline def apply(): PickRoutestringobjectunde = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickRoutestringobjectunde]
   }
   
-  @scala.inline
-  implicit class PickRoutestringobjectundeMutableBuilder[Self <: PickRoutestringobjectunde] (val x: Self) extends AnyVal {
+  extension [Self <: PickRoutestringobjectunde](x: Self) {
     
-    @scala.inline
-    def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

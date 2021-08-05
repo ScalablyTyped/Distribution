@@ -22,13 +22,11 @@ object padMod {
     /* CompleteClass */
     override def build(): String = js.native
     
-    val count: js.Any = js.native
+    /* private */ val count: js.Any = js.native
     
-    val separator: js.Any = js.native
+    /* private */ val separator: js.Any = js.native
   }
   
-  @scala.inline
-  def pad(count: Double): Pad_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pad")(count.asInstanceOf[js.Any]).asInstanceOf[Pad_]
-  @scala.inline
-  def pad(count: Double, separator: String): Pad_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(count.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Pad_]
+  inline def pad(count: Double): Pad_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pad")(count.asInstanceOf[js.Any]).asInstanceOf[Pad_]
+  inline def pad(count: Double, separator: String): Pad_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(count.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Pad_]
 }

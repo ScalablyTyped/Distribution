@@ -81,8 +81,7 @@ object mod {
     
     /** ES6-style promise constructor wrapper around mpromise. */
     /* static member */
-    @scala.inline
-    def ES6[TRes](
+    inline def ES6[TRes](
       resolver: js.Function2[
           /* complete */ js.Function1[/* repeated */ TRes, Unit | TRes | js.Thenable[TRes]], 
           /* error */ js.Function1[/* e */ js.Any, Unit | TRes | js.Thenable[TRes]], 

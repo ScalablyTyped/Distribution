@@ -10,8 +10,7 @@ trait ErrorSchema
      with /* k */ StringDictionary[ErrorSchema]
 object ErrorSchema {
   
-  @scala.inline
-  def apply(): ErrorSchema = {
+  inline def apply(): ErrorSchema = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorSchema]
   }

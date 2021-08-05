@@ -26,58 +26,41 @@ trait Thumbnail extends StObject {
 }
 object Thumbnail {
   
-  @scala.inline
-  def apply(): Thumbnail = {
+  inline def apply(): Thumbnail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Thumbnail]
   }
   
-  @scala.inline
-  implicit class ThumbnailMutableBuilder[Self <: Thumbnail] (val x: Self) extends AnyVal {
+  extension [Self <: Thumbnail](x: Self) {
     
-    @scala.inline
-    def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentNull: Self = StObject.set(x, "content", null)
+    inline def setContentNull: Self = StObject.set(x, "content", null)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setHeight(value: NullableOption[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: NullableOption[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightNull: Self = StObject.set(x, "height", null)
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setSourceItemId(value: NullableOption[String]): Self = StObject.set(x, "sourceItemId", value.asInstanceOf[js.Any])
+    inline def setSourceItemId(value: NullableOption[String]): Self = StObject.set(x, "sourceItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceItemIdNull: Self = StObject.set(x, "sourceItemId", null)
+    inline def setSourceItemIdNull: Self = StObject.set(x, "sourceItemId", null)
     
-    @scala.inline
-    def setSourceItemIdUndefined: Self = StObject.set(x, "sourceItemId", js.undefined)
+    inline def setSourceItemIdUndefined: Self = StObject.set(x, "sourceItemId", js.undefined)
     
-    @scala.inline
-    def setUrl(value: NullableOption[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: NullableOption[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlNull: Self = StObject.set(x, "url", null)
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setWidth(value: NullableOption[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: NullableOption[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthNull: Self = StObject.set(x, "width", null)
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

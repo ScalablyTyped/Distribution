@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.DocContextChangeEventObject")
 @js.native
-class DocContextChangeEventObject protected ()
+/* private */ class DocContextChangeEventObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.DocContextChangeEventObject {
   
   /* CompleteClass */
   override val Context: IXMLDOMNode = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.DocContextChangeEventObject_typekey")
   var InfoPathDotDocContextChangeEventObject_typekey: typings.activexInfopath.InfoPath.DocContextChangeEventObject = js.native
   

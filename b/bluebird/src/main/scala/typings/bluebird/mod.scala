@@ -329,8 +329,7 @@ object mod {
     ], 
     Bluebird[js.Object]
   ] = js.native
-  @scala.inline
-  def Promise_=(
+  inline def Promise_=(
     x: Instantiable1[
       /* callback */ js.Function3[
         /* resolve */ js.Function1[
@@ -362,21 +361,16 @@ object mod {
   }
   
   /* static member */
-  @scala.inline
-  def all[T1](values: js.Array[Resolvable[T1]]): Bluebird[js.Array[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Array[T1]]]
+  inline def all[T1](values: js.Array[Resolvable[T1]]): Bluebird[js.Array[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Array[T1]]]
   // array with values
   /* static member */
-  @scala.inline
-  def all[R](values: Resolvable[Iterable[Resolvable[R]]]): Bluebird[js.Array[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Array[R]]]
+  inline def all[R](values: Resolvable[Iterable[Resolvable[R]]]): Bluebird[js.Array[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Array[R]]]
   /* static member */
-  @scala.inline
-  def all[T1, T2](values: js.Tuple2[Resolvable[T1], Resolvable[T2]]): Bluebird[js.Tuple2[T1, T2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple2[T1, T2]]]
+  inline def all[T1, T2](values: js.Tuple2[Resolvable[T1], Resolvable[T2]]): Bluebird[js.Tuple2[T1, T2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple2[T1, T2]]]
   /* static member */
-  @scala.inline
-  def all[T1, T2, T3](values: js.Tuple3[Resolvable[T1], Resolvable[T2], Resolvable[T3]]): Bluebird[js.Tuple3[T1, T2, T3]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple3[T1, T2, T3]]]
+  inline def all[T1, T2, T3](values: js.Tuple3[Resolvable[T1], Resolvable[T2], Resolvable[T3]]): Bluebird[js.Tuple3[T1, T2, T3]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple3[T1, T2, T3]]]
   /* static member */
-  @scala.inline
-  def all[T1, T2, T3, T4](values: js.Tuple4[Resolvable[T1], Resolvable[T2], Resolvable[T3], Resolvable[T4]]): Bluebird[js.Tuple4[T1, T2, T3, T4]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple4[T1, T2, T3, T4]]]
+  inline def all[T1, T2, T3, T4](values: js.Tuple4[Resolvable[T1], Resolvable[T2], Resolvable[T3], Resolvable[T4]]): Bluebird[js.Tuple4[T1, T2, T3, T4]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple4[T1, T2, T3, T4]]]
   /**
     * Given an array, or a promise of an array, which contains promises (or a mix of promises and values) return a promise that is fulfilled when all the items in the array are fulfilled.
     * The promise's fulfillment value is an array with fulfillment values at respective positions to the original array.
@@ -385,27 +379,20 @@ object mod {
   // TODO enable more overloads
   // array with promises of different types
   /* static member */
-  @scala.inline
-  def all[T1, T2, T3, T4, T5](values: js.Tuple5[Resolvable[T1], Resolvable[T2], Resolvable[T3], Resolvable[T4], Resolvable[T5]]): Bluebird[js.Tuple5[T1, T2, T3, T4, T5]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple5[T1, T2, T3, T4, T5]]]
+  inline def all[T1, T2, T3, T4, T5](values: js.Tuple5[Resolvable[T1], Resolvable[T2], Resolvable[T3], Resolvable[T4], Resolvable[T5]]): Bluebird[js.Tuple5[T1, T2, T3, T4, T5]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple5[T1, T2, T3, T4, T5]]]
   
   /* static member */
-  @scala.inline
-  def allSettled[T1](values: js.Array[Resolvable[T1]]): Bluebird[js.Array[Inspection[T1]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Array[Inspection[T1]]]]
+  inline def allSettled[T1](values: js.Array[Resolvable[T1]]): Bluebird[js.Array[Inspection[T1]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Array[Inspection[T1]]]]
   /* static member */
-  @scala.inline
-  def allSettled[R](values: Resolvable[Iterable[Resolvable[R]]]): Bluebird[js.Array[Inspection[R]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Array[Inspection[R]]]]
+  inline def allSettled[R](values: Resolvable[Iterable[Resolvable[R]]]): Bluebird[js.Array[Inspection[R]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Array[Inspection[R]]]]
   /* static member */
-  @scala.inline
-  def allSettled[T1, T2](values: js.Tuple2[Resolvable[T1], Resolvable[T2]]): Bluebird[js.Tuple2[Inspection[T1], Inspection[T2]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple2[Inspection[T1], Inspection[T2]]]]
+  inline def allSettled[T1, T2](values: js.Tuple2[Resolvable[T1], Resolvable[T2]]): Bluebird[js.Tuple2[Inspection[T1], Inspection[T2]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple2[Inspection[T1], Inspection[T2]]]]
   /* static member */
-  @scala.inline
-  def allSettled[T1, T2, T3](values: js.Tuple3[Resolvable[T1], Resolvable[T2], Resolvable[T3]]): Bluebird[js.Tuple3[Inspection[T1], Inspection[T2], Inspection[T3]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple3[Inspection[T1], Inspection[T2], Inspection[T3]]]]
+  inline def allSettled[T1, T2, T3](values: js.Tuple3[Resolvable[T1], Resolvable[T2], Resolvable[T3]]): Bluebird[js.Tuple3[Inspection[T1], Inspection[T2], Inspection[T3]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple3[Inspection[T1], Inspection[T2], Inspection[T3]]]]
   /* static member */
-  @scala.inline
-  def allSettled[T1, T2, T3, T4](values: js.Tuple4[Resolvable[T1], Resolvable[T2], Resolvable[T3], Resolvable[T4]]): Bluebird[js.Tuple4[Inspection[T1], Inspection[T2], Inspection[T3], Inspection[T4]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple4[Inspection[T1], Inspection[T2], Inspection[T3], Inspection[T4]]]]
+  inline def allSettled[T1, T2, T3, T4](values: js.Tuple4[Resolvable[T1], Resolvable[T2], Resolvable[T3], Resolvable[T4]]): Bluebird[js.Tuple4[Inspection[T1], Inspection[T2], Inspection[T3], Inspection[T4]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple4[Inspection[T1], Inspection[T2], Inspection[T3], Inspection[T4]]]]
   /* static member */
-  @scala.inline
-  def allSettled[T1, T2, T3, T4, T5](values: js.Tuple5[Resolvable[T1], Resolvable[T2], Resolvable[T3], Resolvable[T4], Resolvable[T5]]): Bluebird[
+  inline def allSettled[T1, T2, T3, T4, T5](values: js.Tuple5[Resolvable[T1], Resolvable[T2], Resolvable[T3], Resolvable[T4], Resolvable[T5]]): Bluebird[
     js.Tuple5[Inspection[T1], Inspection[T2], Inspection[T3], Inspection[T4], Inspection[T5]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[
     js.Tuple5[Inspection[T1], Inspection[T2], Inspection[T3], Inspection[T4], Inspection[T5]]
@@ -416,19 +403,16 @@ object mod {
     * Like `Promise.some()`, with 1 as `count`. However, if the promise fulfills, the fulfillment value is not an array of 1 but the value directly.
     */
   /* static member */
-  @scala.inline
-  def any[R](values: Resolvable[Iterable[Resolvable[R]]]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
+  inline def any[R](values: Resolvable[Iterable[Resolvable[R]]]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
   
   /* static member */
-  @scala.inline
-  def attempt[R](fn: js.Function0[Resolvable[R]]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(fn.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
+  inline def attempt[R](fn: js.Function0[Resolvable[R]]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(fn.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
   
   /**
     * Sugar for `Promise.resolve(undefined).bind(thisArg);`. See `.bind()`.
     */
   /* static member */
-  @scala.inline
-  def bind(thisArg: js.Any): Bluebird[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(thisArg.asInstanceOf[js.Any]).asInstanceOf[Bluebird[Unit]]
+  inline def bind(thisArg: js.Any): Bluebird[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(thisArg.asInstanceOf[js.Any]).asInstanceOf[Bluebird[Unit]]
   
   /**
     * Cast the given `value` to a trusted promise.
@@ -437,8 +421,7 @@ object mod {
     * If `value` is a thenable (Promise-like object, like those returned by jQuery's `$.ajax`), returns a trusted that: Promise assimilates the state of the thenable.
     */
   /* static member */
-  @scala.inline
-  def cast[R](value: Resolvable[R]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(value.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
+  inline def cast[R](value: Resolvable[R]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(value.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
   
   /**
     * Configure long stack traces, warnings, monitoring and cancellation.
@@ -446,8 +429,7 @@ object mod {
     *  enables long stack traces and warnings.
     */
   /* static member */
-  @scala.inline
-  def config(options: Cancellation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def config(options: Cancellation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Returns a function that can use `yield` to run asynchronous code synchronously.
@@ -458,54 +440,41 @@ object mod {
   // TODO: After https://github.com/Microsoft/TypeScript/issues/2983 is implemented, we can use
   // the return type propagation of generators to automatically infer the return type T.
   /* static member */
-  @scala.inline
-  def coroutine[T](generatorFunction: js.Function0[IterableIterator[js.Any]]): js.Function0[Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Bluebird[T]]]
-  @scala.inline
-  def coroutine[T](generatorFunction: js.Function0[IterableIterator[js.Any]], options: CoroutineOptions): js.Function0[Bluebird[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Bluebird[T]]]
+  inline def coroutine[T](generatorFunction: js.Function0[IterableIterator[js.Any]]): js.Function0[Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Bluebird[T]]]
+  inline def coroutine[T](generatorFunction: js.Function0[IterableIterator[js.Any]], options: CoroutineOptions): js.Function0[Bluebird[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Bluebird[T]]]
   /* static member */
-  @scala.inline
-  def coroutine[T, A1](generatorFunction: js.Function1[/* a1 */ A1, IterableIterator[js.Any]]): js.Function1[/* a1 */ A1, Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a1 */ A1, Bluebird[T]]]
-  @scala.inline
-  def coroutine[T, A1](generatorFunction: js.Function1[/* a1 */ A1, IterableIterator[js.Any]], options: CoroutineOptions): js.Function1[/* a1 */ A1, Bluebird[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a1 */ A1, Bluebird[T]]]
+  inline def coroutine[T, A1](generatorFunction: js.Function1[/* a1 */ A1, IterableIterator[js.Any]]): js.Function1[/* a1 */ A1, Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a1 */ A1, Bluebird[T]]]
+  inline def coroutine[T, A1](generatorFunction: js.Function1[/* a1 */ A1, IterableIterator[js.Any]], options: CoroutineOptions): js.Function1[/* a1 */ A1, Bluebird[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a1 */ A1, Bluebird[T]]]
   /* static member */
-  @scala.inline
-  def coroutine[T, A1, A2](generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, IterableIterator[js.Any]]): js.Function2[/* a1 */ A1, /* a2 */ A2, Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a1 */ A1, /* a2 */ A2, Bluebird[T]]]
-  @scala.inline
-  def coroutine[T, A1, A2](
+  inline def coroutine[T, A1, A2](generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, IterableIterator[js.Any]]): js.Function2[/* a1 */ A1, /* a2 */ A2, Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a1 */ A1, /* a2 */ A2, Bluebird[T]]]
+  inline def coroutine[T, A1, A2](
     generatorFunction: js.Function2[/* a1 */ A1, /* a2 */ A2, IterableIterator[js.Any]],
     options: CoroutineOptions
   ): js.Function2[/* a1 */ A1, /* a2 */ A2, Bluebird[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* a1 */ A1, /* a2 */ A2, Bluebird[T]]]
   /* static member */
-  @scala.inline
-  def coroutine[T, A1, A2, A3](generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, IterableIterator[js.Any]]): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, Bluebird[T]]]
-  @scala.inline
-  def coroutine[T, A1, A2, A3](
+  inline def coroutine[T, A1, A2, A3](generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, IterableIterator[js.Any]]): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, Bluebird[T]]]
+  inline def coroutine[T, A1, A2, A3](
     generatorFunction: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, IterableIterator[js.Any]],
     options: CoroutineOptions
   ): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, Bluebird[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, Bluebird[T]]]
   /* static member */
-  @scala.inline
-  def coroutine[T, A1, A2, A3, A4](
+  inline def coroutine[T, A1, A2, A3, A4](
     generatorFunction: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, IterableIterator[js.Any]]
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, Bluebird[T]]]
-  @scala.inline
-  def coroutine[T, A1, A2, A3, A4](
+  inline def coroutine[T, A1, A2, A3, A4](
     generatorFunction: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, IterableIterator[js.Any]],
     options: CoroutineOptions
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, Bluebird[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, Bluebird[T]]]
   /* static member */
-  @scala.inline
-  def coroutine[T, A1, A2, A3, A4, A5](
+  inline def coroutine[T, A1, A2, A3, A4, A5](
     generatorFunction: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, IterableIterator[js.Any]]
   ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, Bluebird[T]]]
-  @scala.inline
-  def coroutine[T, A1, A2, A3, A4, A5](
+  inline def coroutine[T, A1, A2, A3, A4, A5](
     generatorFunction: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, IterableIterator[js.Any]],
     options: CoroutineOptions
   ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, Bluebird[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, Bluebird[T]]]
   /* static member */
-  @scala.inline
-  def coroutine[T, A1, A2, A3, A4, A5, A6](
+  inline def coroutine[T, A1, A2, A3, A4, A5, A6](
     generatorFunction: js.Function6[
       /* a1 */ A1, 
       /* a2 */ A2, 
@@ -516,8 +485,7 @@ object mod {
       IterableIterator[js.Any]
     ]
   ): js.Function6[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, /* a6 */ A6, Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function6[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, /* a6 */ A6, Bluebird[T]]]
-  @scala.inline
-  def coroutine[T, A1, A2, A3, A4, A5, A6](
+  inline def coroutine[T, A1, A2, A3, A4, A5, A6](
     generatorFunction: js.Function6[
       /* a1 */ A1, 
       /* a2 */ A2, 
@@ -530,8 +498,7 @@ object mod {
     options: CoroutineOptions
   ): js.Function6[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, /* a6 */ A6, Bluebird[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("coroutine")(generatorFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function6[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, /* a6 */ A6, Bluebird[T]]]
   /* static member */
-  @scala.inline
-  def coroutine[T, A1, A2, A3, A4, A5, A6, A7](
+  inline def coroutine[T, A1, A2, A3, A4, A5, A6, A7](
     generatorFunction: js.Function7[
       /* a1 */ A1, 
       /* a2 */ A2, 
@@ -561,8 +528,7 @@ object mod {
     /* a7 */ A7, 
     Bluebird[T]
   ]]
-  @scala.inline
-  def coroutine[T, A1, A2, A3, A4, A5, A6, A7](
+  inline def coroutine[T, A1, A2, A3, A4, A5, A6, A7](
     generatorFunction: js.Function7[
       /* a1 */ A1, 
       /* a2 */ A2, 
@@ -594,8 +560,7 @@ object mod {
     Bluebird[T]
   ]]
   /* static member */
-  @scala.inline
-  def coroutine[T, A1, A2, A3, A4, A5, A6, A7, A8](
+  inline def coroutine[T, A1, A2, A3, A4, A5, A6, A7, A8](
     generatorFunction: js.Function8[
       /* a1 */ A1, 
       /* a2 */ A2, 
@@ -628,8 +593,7 @@ object mod {
     /* a8 */ A8, 
     Bluebird[T]
   ]]
-  @scala.inline
-  def coroutine[T, A1, A2, A3, A4, A5, A6, A7, A8](
+  inline def coroutine[T, A1, A2, A3, A4, A5, A6, A7, A8](
     generatorFunction: js.Function8[
       /* a1 */ A1, 
       /* a2 */ A2, 
@@ -670,20 +634,17 @@ object mod {
     * @see http://bluebirdjs.com/docs/deprecated-apis.html#promise-resolution
     */
   /* static member */
-  @scala.inline
-  def defer[R](): Resolver[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")().asInstanceOf[Resolver[R]]
+  inline def defer[R](): Resolver[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")().asInstanceOf[Resolver[R]]
   
   /* static member */
-  @scala.inline
-  def delay(ms: Double): Bluebird[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any]).asInstanceOf[Bluebird[Unit]]
+  inline def delay(ms: Double): Bluebird[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any]).asInstanceOf[Bluebird[Unit]]
   /**
     * Returns a promise that will be resolved with value (or undefined) after given ms milliseconds.
     * If value is a promise, the delay will start counting down when it is fulfilled and the returned
     *  promise will be fulfilled with the fulfillment value of the value promise.
     */
   /* static member */
-  @scala.inline
-  def delay[R](ms: Double, value: Resolvable[R]): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def delay[R](ms: Double, value: Resolvable[R]): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   
   /**
     * Iterate over an array, or a promise of an array,
@@ -695,8 +656,7 @@ object mod {
     * If the iterator function returns a promise or a thenable, the result for the promise is awaited for before continuing with next iteration.
     */
   /* static member */
-  @scala.inline
-  def each[R](values: Resolvable[Iterable[Resolvable[R]]], iterator: IterateFunction[R, js.Any]): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(values.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
+  inline def each[R](values: Resolvable[Iterable[Resolvable[R]]], iterator: IterateFunction[R, js.Any]): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(values.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
   
   /**
     * Filter an array, or a promise of an array,
@@ -709,25 +669,21 @@ object mod {
     * *The original array is not modified.
     */
   /* static member */
-  @scala.inline
-  def filter[R](values: Resolvable[Iterable[Resolvable[R]]], filterer: IterateFunction[R, Boolean]): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(values.asInstanceOf[js.Any], filterer.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
-  @scala.inline
-  def filter[R](
+  inline def filter[R](values: Resolvable[Iterable[Resolvable[R]]], filterer: IterateFunction[R, Boolean]): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(values.asInstanceOf[js.Any], filterer.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
+  inline def filter[R](
     values: Resolvable[Iterable[Resolvable[R]]],
     filterer: IterateFunction[R, Boolean],
     option: ConcurrencyOption
   ): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(values.asInstanceOf[js.Any], filterer.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
   
   /* static member */
-  @scala.inline
-  def fromCallback[T](
+  inline def fromCallback[T](
     resolver: js.Function1[
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
       Unit
     ]
   ): Bluebird[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCallback")(resolver.asInstanceOf[js.Any]).asInstanceOf[Bluebird[T]]
-  @scala.inline
-  def fromCallback[T](
+  inline def fromCallback[T](
     resolver: js.Function1[
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
       Unit
@@ -739,15 +695,13 @@ object mod {
     * Returns a promise that is resolved by a node style callback function.
     */
   /* static member */
-  @scala.inline
-  def fromNode[T](
+  inline def fromNode[T](
     resolver: js.Function1[
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
       Unit
     ]
   ): Bluebird[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNode")(resolver.asInstanceOf[js.Any]).asInstanceOf[Bluebird[T]]
-  @scala.inline
-  def fromNode[T](
+  inline def fromNode[T](
     resolver: js.Function1[
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
       Unit
@@ -760,8 +714,7 @@ object mod {
     *
     * This method should be used before you use any of the methods which would otherwise alter the global Bluebird object - to avoid polluting global state.
     */
-  @scala.inline
-  def getNewLibraryCopy(): Instantiable1[
+  inline def getNewLibraryCopy(): Instantiable1[
     /* callback */ js.Function3[
       /* resolve */ js.Function1[
         /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any]], 
@@ -789,14 +742,12 @@ object mod {
     * See if `value` is a trusted Promise.
     */
   /* static member */
-  @scala.inline
-  def is(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def is(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   // variadic array
   /** @deprecated use .all instead */
   /* static member */
-  @scala.inline
-  def join[R](values: Resolvable[R]*): Bluebird[js.Array[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Array[R]]]
+  inline def join[R](values: Resolvable[R]*): Bluebird[js.Array[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Array[R]]]
   /**
     * Promise.join(
     *   Promise<any>|any values...,
@@ -808,26 +759,22 @@ object mod {
     * This behavior has been deprecated but is still supported partially - when the last argument is an immediate function value the new semantics will apply
     */
   /* static member */
-  @scala.inline
-  def join[R, A1](arg1: Resolvable[A1], handler: js.Function1[/* arg1 */ A1, Resolvable[R]]): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1](arg1: Resolvable[A1], handler: js.Function1[/* arg1 */ A1, Resolvable[R]]): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   /* static member */
-  @scala.inline
-  def join[R, A1, A2](
+  inline def join[R, A1, A2](
     arg1: Resolvable[A1],
     arg2: Resolvable[A2],
     handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, Resolvable[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   /* static member */
-  @scala.inline
-  def join[R, A1, A2, A3](
+  inline def join[R, A1, A2, A3](
     arg1: Resolvable[A1],
     arg2: Resolvable[A2],
     arg3: Resolvable[A3],
     handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Resolvable[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   /* static member */
-  @scala.inline
-  def join[R, A1, A2, A3, A4](
+  inline def join[R, A1, A2, A3, A4](
     arg1: Resolvable[A1],
     arg2: Resolvable[A2],
     arg3: Resolvable[A3],
@@ -835,8 +782,7 @@ object mod {
     handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Resolvable[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   /* static member */
-  @scala.inline
-  def join[R, A1, A2, A3, A4, A5](
+  inline def join[R, A1, A2, A3, A4, A5](
     arg1: Resolvable[A1],
     arg2: Resolvable[A2],
     arg3: Resolvable[A3],
@@ -852,8 +798,7 @@ object mod {
     * Long stack traces imply a substantial performance penalty, around 4-5x for throughput and 0.5x for latency.
     */
   /* static member */
-  @scala.inline
-  def longStackTraces(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("longStackTraces")().asInstanceOf[Unit]
+  inline def longStackTraces(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("longStackTraces")().asInstanceOf[Unit]
   
   /**
     * Map an array, or a promise of an array,
@@ -866,10 +811,8 @@ object mod {
     * *The original array is not modified.*
     */
   /* static member */
-  @scala.inline
-  def map[R, U](values: Resolvable[Iterable[Resolvable[R]]], mapper: IterateFunction[R, U]): Bluebird[js.Array[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(values.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[U]]]
-  @scala.inline
-  def map[R, U](
+  inline def map[R, U](values: Resolvable[Iterable[Resolvable[R]]], mapper: IterateFunction[R, U]): Bluebird[js.Array[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(values.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[U]]]
+  inline def map[R, U](
     values: Resolvable[Iterable[Resolvable[R]]],
     mapper: IterateFunction[R, U],
     options: ConcurrencyOption
@@ -886,8 +829,7 @@ object mod {
     * If any promise in the input array is rejected or any promise returned by the iterator function is rejected, the result will be rejected as well.
     */
   /* static member */
-  @scala.inline
-  def mapSeries[R, U](values: Resolvable[Iterable[Resolvable[R]]], iterator: IterateFunction[R, U]): Bluebird[js.Array[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapSeries")(values.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[U]]]
+  inline def mapSeries[R, U](values: Resolvable[Iterable[Resolvable[R]]], iterator: IterateFunction[R, U]): Bluebird[js.Array[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapSeries")(values.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[U]]]
   
   /**
     * Returns a new function that wraps the given function `fn`.
@@ -895,29 +837,22 @@ object mod {
     * This method is convenient when a function can sometimes return synchronously or throw synchronously.
     */
   /* static member */
-  @scala.inline
-  def method[R](fn: js.Function0[Resolvable[R]]): js.Function0[Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Bluebird[R]]]
+  inline def method[R](fn: js.Function0[Resolvable[R]]): js.Function0[Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Bluebird[R]]]
   /* static member */
-  @scala.inline
-  def method[R](fn: js.Function1[/* repeated */ js.Any, Resolvable[R]]): js.Function1[/* repeated */ js.Any, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Bluebird[R]]]
+  inline def method[R](fn: js.Function1[/* repeated */ js.Any, Resolvable[R]]): js.Function1[/* repeated */ js.Any, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Bluebird[R]]]
   /* static member */
-  @scala.inline
-  def method[R, A1, A2](fn: js.Function2[/* arg1 */ A1, /* arg2 */ A2, Resolvable[R]]): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Bluebird[R]]]
+  inline def method[R, A1, A2](fn: js.Function2[/* arg1 */ A1, /* arg2 */ A2, Resolvable[R]]): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Bluebird[R]]]
   /* static member */
-  @scala.inline
-  def method[R, A1, A2, A3](fn: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Resolvable[R]]): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Bluebird[R]]]
+  inline def method[R, A1, A2, A3](fn: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Resolvable[R]]): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Bluebird[R]]]
   /* static member */
-  @scala.inline
-  def method[R, A1, A2, A3, A4](fn: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Resolvable[R]]): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Bluebird[R]]]
+  inline def method[R, A1, A2, A3, A4](fn: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Resolvable[R]]): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Bluebird[R]]]
   /* static member */
-  @scala.inline
-  def method[R, A1, A2, A3, A4, A5](
+  inline def method[R, A1, A2, A3, A4, A5](
     fn: js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Resolvable[R]]
   ): js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Bluebird[R]]]
   
   /* static member */
-  @scala.inline
-  def method_RA1[R, A1](fn: js.Function1[/* arg1 */ A1, Resolvable[R]]): js.Function1[/* arg1 */ A1, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A1, Bluebird[R]]]
+  inline def method_RA1[R, A1](fn: js.Function1[/* arg1 */ A1, Resolvable[R]]): js.Function1[/* arg1 */ A1, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A1, Bluebird[R]]]
   
   /**
     * This is relevant to browser environments with no module loader.
@@ -925,8 +860,7 @@ object mod {
     * Release control of the Promise namespace to whatever it was before this library was loaded.
     * Returns a reference to the library namespace so you can attach it to something else.
     */
-  @scala.inline
-  def noConflict(): Instantiable1[
+  inline def noConflict(): Instantiable1[
     /* callback */ js.Function3[
       /* resolve */ js.Function1[
         /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any]], 
@@ -959,35 +893,28 @@ object mod {
     * Note: this hook is specific to the bluebird instance its called on, application developers should use global rejection events.
     */
   /* static member */
-  @scala.inline
-  def onPossiblyUnhandledRejection(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPossiblyUnhandledRejection")().asInstanceOf[Unit]
+  inline def onPossiblyUnhandledRejection(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPossiblyUnhandledRejection")().asInstanceOf[Unit]
   /**
     * Add `handler` as the handler to call when there is a possibly unhandled rejection. The default handler logs the error stack to stderr or `console.error` in browsers.
     *
     * Passing no value or a non-function will have the effect of removing any kind of handling for possibly unhandled rejections.
     */
   /* static member */
-  @scala.inline
-  def onPossiblyUnhandledRejection(handler: js.Function1[/* reason */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPossiblyUnhandledRejection")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def onPossiblyUnhandledRejection(handler: js.Function2[/* error */ Error, /* promise */ Bluebird[js.Any], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPossiblyUnhandledRejection")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onPossiblyUnhandledRejection(handler: js.Function1[/* reason */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPossiblyUnhandledRejection")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onPossiblyUnhandledRejection(handler: js.Function2[/* error */ Error, /* promise */ Bluebird[js.Any], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPossiblyUnhandledRejection")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def promisify(nodeFunction: js.Function1[/* repeated */ js.Any, Unit]): js.Function1[/* repeated */ js.Any, Bluebird[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(nodeFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Bluebird[js.Any]]]
-  @scala.inline
-  def promisify(nodeFunction: js.Function1[/* repeated */ js.Any, Unit], options: PromisifyOptions): js.Function1[/* repeated */ js.Any, Bluebird[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(nodeFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Bluebird[js.Any]]]
+  inline def promisify(nodeFunction: js.Function1[/* repeated */ js.Any, Unit]): js.Function1[/* repeated */ js.Any, Bluebird[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(nodeFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Bluebird[js.Any]]]
+  inline def promisify(nodeFunction: js.Function1[/* repeated */ js.Any, Unit], options: PromisifyOptions): js.Function1[/* repeated */ js.Any, Bluebird[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(nodeFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Bluebird[js.Any]]]
   /* static member */
-  @scala.inline
-  def promisify[T, A1](
+  inline def promisify[T, A1](
     func: js.Function2[
       /* arg1 */ A1, 
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
       Unit
     ]
   ): js.Function1[/* arg1 */ A1, Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(func.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A1, Bluebird[T]]]
-  @scala.inline
-  def promisify[T, A1](
+  inline def promisify[T, A1](
     func: js.Function2[
       /* arg1 */ A1, 
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
@@ -996,8 +923,7 @@ object mod {
     options: PromisifyOptions
   ): js.Function1[/* arg1 */ A1, Bluebird[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arg1 */ A1, Bluebird[T]]]
   /* static member */
-  @scala.inline
-  def promisify[T, A1, A2](
+  inline def promisify[T, A1, A2](
     func: js.Function3[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
@@ -1005,8 +931,7 @@ object mod {
       Unit
     ]
   ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(func.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Bluebird[T]]]
-  @scala.inline
-  def promisify[T, A1, A2](
+  inline def promisify[T, A1, A2](
     func: js.Function3[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
@@ -1016,8 +941,7 @@ object mod {
     options: PromisifyOptions
   ): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Bluebird[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Bluebird[T]]]
   /* static member */
-  @scala.inline
-  def promisify[T, A1, A2, A3](
+  inline def promisify[T, A1, A2, A3](
     func: js.Function4[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
@@ -1026,8 +950,7 @@ object mod {
       Unit
     ]
   ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(func.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Bluebird[T]]]
-  @scala.inline
-  def promisify[T, A1, A2, A3](
+  inline def promisify[T, A1, A2, A3](
     func: js.Function4[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
@@ -1038,8 +961,7 @@ object mod {
     options: PromisifyOptions
   ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Bluebird[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Bluebird[T]]]
   /* static member */
-  @scala.inline
-  def promisify[T, A1, A2, A3, A4](
+  inline def promisify[T, A1, A2, A3, A4](
     func: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
@@ -1049,8 +971,7 @@ object mod {
       Unit
     ]
   ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(func.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Bluebird[T]]]
-  @scala.inline
-  def promisify[T, A1, A2, A3, A4](
+  inline def promisify[T, A1, A2, A3, A4](
     func: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
@@ -1062,8 +983,7 @@ object mod {
     options: PromisifyOptions
   ): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Bluebird[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Bluebird[T]]]
   /* static member */
-  @scala.inline
-  def promisify[T, A1, A2, A3, A4, A5](
+  inline def promisify[T, A1, A2, A3, A4, A5](
     func: js.Function6[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
@@ -1074,8 +994,7 @@ object mod {
       Unit
     ]
   ): js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(func.asInstanceOf[js.Any]).asInstanceOf[js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Bluebird[T]]]
-  @scala.inline
-  def promisify[T, A1, A2, A3, A4, A5](
+  inline def promisify[T, A1, A2, A3, A4, A5](
     func: js.Function6[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
@@ -1098,10 +1017,8 @@ object mod {
     */
   // TODO how to model promisifyAll?
   /* static member */
-  @scala.inline
-  def promisifyAll[T /* <: js.Object */](target: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("promisifyAll")(target.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def promisifyAll[T /* <: js.Object */](target: T, options: PromisifyAllOptions[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyAll")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def promisifyAll[T /* <: js.Object */](target: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("promisifyAll")(target.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def promisifyAll[T /* <: js.Object */](target: T, options: PromisifyAllOptions[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyAll")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Returns a function that will wrap the given `nodeFunction`.
@@ -1115,15 +1032,13 @@ object mod {
     * If you pass a `receiver`, the `nodeFunction` will be called as a method on the `receiver`.
     */
   /* static member */
-  @scala.inline
-  def promisify_T_Function0[T](
+  inline def promisify_T_Function0[T](
     func: js.Function1[
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
       Unit
     ]
   ): js.Function0[Bluebird[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(func.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Bluebird[T]]]
-  @scala.inline
-  def promisify_T_Function0[T](
+  inline def promisify_T_Function0[T](
     func: js.Function1[
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], Unit], 
       Unit
@@ -1133,12 +1048,10 @@ object mod {
   
   // trusted promise for object
   /* static member */
-  @scala.inline
-  def props[T](`object`: js.Thenable[ResolvableProps[T]]): Bluebird[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(`object`.asInstanceOf[js.Any]).asInstanceOf[Bluebird[T]]
+  inline def props[T](`object`: js.Thenable[ResolvableProps[T]]): Bluebird[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(`object`.asInstanceOf[js.Any]).asInstanceOf[Bluebird[T]]
   // object
   /* static member */
-  @scala.inline
-  def props[T](`object`: ResolvableProps[T]): Bluebird[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(`object`.asInstanceOf[js.Any]).asInstanceOf[Bluebird[T]]
+  inline def props[T](`object`: ResolvableProps[T]): Bluebird[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(`object`.asInstanceOf[js.Any]).asInstanceOf[Bluebird[T]]
   
   /**
     * Like ``Promise.all`` but for object properties instead of array items. Returns a promise that is fulfilled when all the properties of the object are fulfilled.
@@ -1153,8 +1066,7 @@ object mod {
     */
   // map
   /* static member */
-  @scala.inline
-  def props_KV[K, V](map: Resolvable[Map[K, Resolvable[V]]]): Bluebird[Map[K, V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(map.asInstanceOf[js.Any]).asInstanceOf[Bluebird[Map[K, V]]]
+  inline def props_KV[K, V](map: Resolvable[Map[K, Resolvable[V]]]): Bluebird[Map[K, V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(map.asInstanceOf[js.Any]).asInstanceOf[Bluebird[Map[K, V]]]
   
   /**
     * Given an array, or a promise of an array, which contains promises (or a mix of promises and values) return a promise that is
@@ -1163,8 +1075,7 @@ object mod {
     * **Note** If you pass empty array or a sparse array with no values, or a promise/thenable for such, it will be forever pending.
     */
   /* static member */
-  @scala.inline
-  def race[R](values: Resolvable[Iterable[Resolvable[R]]]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
+  inline def race[R](values: Resolvable[Iterable[Resolvable[R]]]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
   
   /**
     * Reduce an array, or a promise of an array,
@@ -1180,8 +1091,7 @@ object mod {
     * If `initialValue` is given and the array doesn't have at least 1 item, `initialValue` is returned.*
     */
   /* static member */
-  @scala.inline
-  def reduce[R, U](
+  inline def reduce[R, U](
     values: Resolvable[Iterable[Resolvable[R]]],
     reducer: js.Function4[
       /* total */ U, 
@@ -1191,8 +1101,7 @@ object mod {
       Resolvable[U]
     ]
   ): Bluebird[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(values.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any])).asInstanceOf[Bluebird[U]]
-  @scala.inline
-  def reduce[R, U](
+  inline def reduce[R, U](
     values: Resolvable[Iterable[Resolvable[R]]],
     reducer: js.Function4[
       /* total */ U, 
@@ -1208,18 +1117,15 @@ object mod {
     * Create a promise that is rejected with the given `reason`.
     */
   /* static member */
-  @scala.inline
-  def reject(reason: js.Any): Bluebird[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any]).asInstanceOf[Bluebird[scala.Nothing]]
+  inline def reject(reason: js.Any): Bluebird[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any]).asInstanceOf[Bluebird[scala.Nothing]]
   
   /**
     * Create a promise that is resolved with the given `value`. If `value` is a thenable or promise, the returned promise will assume its state.
     */
   /* static member */
-  @scala.inline
-  def resolve(): Bluebird[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")().asInstanceOf[Bluebird[Unit]]
+  inline def resolve(): Bluebird[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")().asInstanceOf[Bluebird[Unit]]
   /* static member */
-  @scala.inline
-  def resolve[R](value: Resolvable[R]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
+  inline def resolve[R](value: Resolvable[R]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
   
   /**
     * Changes how bluebird schedules calls a-synchronously.
@@ -1227,8 +1133,7 @@ object mod {
     * @param scheduler Should be a function that asynchronously schedules
     *                  the calling of the passed in function
     */
-  @scala.inline
-  def setScheduler(scheduler: js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, Unit], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setScheduler")(scheduler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setScheduler(scheduler: js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, Unit], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setScheduler")(scheduler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Initiate a competitive race between multiple promises or values (values will become immediately fulfilled promises).
@@ -1241,8 +1146,7 @@ object mod {
     * *The original array is not modified.*
     */
   /* static member */
-  @scala.inline
-  def some[R](values: Resolvable[Iterable[Resolvable[R]]], count: Double): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(values.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
+  inline def some[R](values: Resolvable[Iterable[Resolvable[R]]], count: Double): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(values.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
   
   /**
     * Start the chain of promises with `Promise.try`. Any synchronous exceptions will be turned into rejections on the returned promise.
@@ -1253,8 +1157,7 @@ object mod {
     * Alias for `attempt();` for compatibility with earlier ECMAScript version.
     */
   /* static member */
-  @scala.inline
-  def `try`[R](fn: js.Function0[Resolvable[R]]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("try")(fn.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
+  inline def `try`[R](fn: js.Function0[Resolvable[R]]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("try")(fn.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
   
   /**
     * In conjunction with `.disposer`, using will make sure that no matter what, the specified disposer
@@ -1262,18 +1165,15 @@ object mod {
     *  necessary because there is no standard interface in node for disposing resources.
     */
   /* static member */
-  @scala.inline
-  def `using`[R, T](disposer: Disposer[R], executor: js.Function1[/* transaction */ R, js.Thenable[T]]): Bluebird[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("using")(disposer.asInstanceOf[js.Any], executor.asInstanceOf[js.Any])).asInstanceOf[Bluebird[T]]
+  inline def `using`[R, T](disposer: Disposer[R], executor: js.Function1[/* transaction */ R, js.Thenable[T]]): Bluebird[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("using")(disposer.asInstanceOf[js.Any], executor.asInstanceOf[js.Any])).asInstanceOf[Bluebird[T]]
   /* static member */
-  @scala.inline
-  def `using`[R1, R2, T](
+  inline def `using`[R1, R2, T](
     disposer: Disposer[R1],
     disposer2: Disposer[R2],
     executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, js.Thenable[T]]
   ): Bluebird[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("using")(disposer.asInstanceOf[js.Any], disposer2.asInstanceOf[js.Any], executor.asInstanceOf[js.Any])).asInstanceOf[Bluebird[T]]
   /* static member */
-  @scala.inline
-  def `using`[R1, R2, R3, T](
+  inline def `using`[R1, R2, R3, T](
     disposer: Disposer[R1],
     disposer2: Disposer[R2],
     disposer3: Disposer[R3],
@@ -1287,8 +1187,7 @@ object mod {
   @JSImport("bluebird", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Bluebird[R]
@@ -3839,17 +3738,14 @@ object mod {
   }
   object ConcurrencyOption {
     
-    @scala.inline
-    def apply(concurrency: Double): ConcurrencyOption = {
+    inline def apply(concurrency: Double): ConcurrencyOption = {
       val __obj = js.Dynamic.literal(concurrency = concurrency.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConcurrencyOption]
     }
     
-    @scala.inline
-    implicit class ConcurrencyOptionMutableBuilder[Self <: ConcurrencyOption] (val x: Self) extends AnyVal {
+    extension [Self <: ConcurrencyOption](x: Self) {
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
     }
   }
   
@@ -3861,17 +3757,14 @@ object mod {
   }
   object CoroutineOptions {
     
-    @scala.inline
-    def apply(yieldHandler: js.Any => js.Any): CoroutineOptions = {
+    inline def apply(yieldHandler: js.Any => js.Any): CoroutineOptions = {
       val __obj = js.Dynamic.literal(yieldHandler = js.Any.fromFunction1(yieldHandler))
       __obj.asInstanceOf[CoroutineOptions]
     }
     
-    @scala.inline
-    implicit class CoroutineOptionsMutableBuilder[Self <: CoroutineOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CoroutineOptions](x: Self) {
       
-      @scala.inline
-      def setYieldHandler(value: js.Any => js.Any): Self = StObject.set(x, "yieldHandler", js.Any.fromFunction1(value))
+      inline def setYieldHandler(value: js.Any => js.Any): Self = StObject.set(x, "yieldHandler", js.Any.fromFunction1(value))
     }
   }
   
@@ -3881,20 +3774,16 @@ object mod {
   }
   object FromNodeOptions {
     
-    @scala.inline
-    def apply(): FromNodeOptions = {
+    inline def apply(): FromNodeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FromNodeOptions]
     }
     
-    @scala.inline
-    implicit class FromNodeOptionsMutableBuilder[Self <: FromNodeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FromNodeOptions](x: Self) {
       
-      @scala.inline
-      def setMultiArgs(value: Boolean): Self = StObject.set(x, "multiArgs", value.asInstanceOf[js.Any])
+      inline def setMultiArgs(value: Boolean): Self = StObject.set(x, "multiArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiArgsUndefined: Self = StObject.set(x, "multiArgs", js.undefined)
+      inline def setMultiArgsUndefined: Self = StObject.set(x, "multiArgs", js.undefined)
     }
   }
   
@@ -3936,8 +3825,7 @@ object mod {
   }
   object Inspection {
     
-    @scala.inline
-    def apply[R](
+    inline def apply[R](
       isCancelled: () => Boolean,
       isFulfilled: () => Boolean,
       isPending: () => Boolean,
@@ -3949,26 +3837,19 @@ object mod {
       __obj.asInstanceOf[Inspection[R]]
     }
     
-    @scala.inline
-    implicit class InspectionMutableBuilder[Self <: Inspection[?], R] (val x: Self & Inspection[R]) extends AnyVal {
+    extension [Self <: Inspection[?], R](x: Self & Inspection[R]) {
       
-      @scala.inline
-      def setIsCancelled(value: () => Boolean): Self = StObject.set(x, "isCancelled", js.Any.fromFunction0(value))
+      inline def setIsCancelled(value: () => Boolean): Self = StObject.set(x, "isCancelled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFulfilled(value: () => Boolean): Self = StObject.set(x, "isFulfilled", js.Any.fromFunction0(value))
+      inline def setIsFulfilled(value: () => Boolean): Self = StObject.set(x, "isFulfilled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPending(value: () => Boolean): Self = StObject.set(x, "isPending", js.Any.fromFunction0(value))
+      inline def setIsPending(value: () => Boolean): Self = StObject.set(x, "isPending", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRejected(value: () => Boolean): Self = StObject.set(x, "isRejected", js.Any.fromFunction0(value))
+      inline def setIsRejected(value: () => Boolean): Self = StObject.set(x, "isRejected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReason(value: () => js.Any): Self = StObject.set(x, "reason", js.Any.fromFunction0(value))
+      inline def setReason(value: () => js.Any): Self = StObject.set(x, "reason", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValue(value: () => R): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
+      inline def setValue(value: () => R): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
     }
   }
   
@@ -4002,25 +3883,20 @@ object mod {
   }
   object PromisifyAllOptions {
     
-    @scala.inline
-    def apply[T](): PromisifyAllOptions[T] = {
+    inline def apply[T](): PromisifyAllOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PromisifyAllOptions[T]]
     }
     
-    @scala.inline
-    implicit class PromisifyAllOptionsMutableBuilder[Self <: PromisifyAllOptions[?], T] (val x: Self & PromisifyAllOptions[T]) extends AnyVal {
+    extension [Self <: PromisifyAllOptions[?], T](x: Self & PromisifyAllOptions[T]) {
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: (/* name */ String, /* func */ js.Function1[/* repeated */ js.Any, js.Any], /* target */ js.UndefOr[js.Any], /* passesDefaultFilter */ js.UndefOr[Boolean]) => Boolean
       ): Self = StObject.set(x, "filter", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setPromisifier(
+      inline def setPromisifier(
         value: js.ThisFunction2[
               /* this */ T, 
               /* originalMethod */ js.Function1[/* repeated */ js.Any, js.Any], 
@@ -4029,14 +3905,11 @@ object mod {
             ]
       ): Self = StObject.set(x, "promisifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromisifierUndefined: Self = StObject.set(x, "promisifier", js.undefined)
+      inline def setPromisifierUndefined: Self = StObject.set(x, "promisifier", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     }
   }
   
@@ -4048,26 +3921,20 @@ object mod {
   }
   object PromisifyOptions {
     
-    @scala.inline
-    def apply(): PromisifyOptions = {
+    inline def apply(): PromisifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PromisifyOptions]
     }
     
-    @scala.inline
-    implicit class PromisifyOptionsMutableBuilder[Self <: PromisifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PromisifyOptions](x: Self) {
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setMultiArgs(value: Boolean): Self = StObject.set(x, "multiArgs", value.asInstanceOf[js.Any])
+      inline def setMultiArgs(value: Boolean): Self = StObject.set(x, "multiArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiArgsUndefined: Self = StObject.set(x, "multiArgs", js.undefined)
+      inline def setMultiArgsUndefined: Self = StObject.set(x, "multiArgs", js.undefined)
     }
   }
   
@@ -4110,17 +3977,14 @@ object mod {
   }
   object SpreadOption {
     
-    @scala.inline
-    def apply(spread: Boolean): SpreadOption = {
+    inline def apply(spread: Boolean): SpreadOption = {
       val __obj = js.Dynamic.literal(spread = spread.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpreadOption]
     }
     
-    @scala.inline
-    implicit class SpreadOptionMutableBuilder[Self <: SpreadOption] (val x: Self) extends AnyVal {
+    extension [Self <: SpreadOption](x: Self) {
       
-      @scala.inline
-      def setSpread(value: Boolean): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
+      inline def setSpread(value: Boolean): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
     }
   }
   

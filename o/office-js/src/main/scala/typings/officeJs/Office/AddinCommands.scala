@@ -71,17 +71,14 @@ object AddinCommands {
   }
   object EventCompletedOptions {
     
-    @scala.inline
-    def apply(allowEvent: Boolean): EventCompletedOptions = {
+    inline def apply(allowEvent: Boolean): EventCompletedOptions = {
       val __obj = js.Dynamic.literal(allowEvent = allowEvent.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventCompletedOptions]
     }
     
-    @scala.inline
-    implicit class EventCompletedOptionsMutableBuilder[Self <: EventCompletedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EventCompletedOptions](x: Self) {
       
-      @scala.inline
-      def setAllowEvent(value: Boolean): Self = StObject.set(x, "allowEvent", value.asInstanceOf[js.Any])
+      inline def setAllowEvent(value: Boolean): Self = StObject.set(x, "allowEvent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,17 +95,14 @@ object AddinCommands {
   }
   object Source {
     
-    @scala.inline
-    def apply(id: String): Source = {
+    inline def apply(id: String): Source = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Source]
     }
     
-    @scala.inline
-    implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+    extension [Self <: Source](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,19 +14,15 @@ trait GetWindowForTargetRequest extends StObject {
 }
 object GetWindowForTargetRequest {
   
-  @scala.inline
-  def apply(): GetWindowForTargetRequest = {
+  inline def apply(): GetWindowForTargetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetWindowForTargetRequest]
   }
   
-  @scala.inline
-  implicit class GetWindowForTargetRequestMutableBuilder[Self <: GetWindowForTargetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetWindowForTargetRequest](x: Self) {
     
-    @scala.inline
-    def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+    inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
   }
 }

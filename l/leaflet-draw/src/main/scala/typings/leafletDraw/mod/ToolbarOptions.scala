@@ -25,49 +25,35 @@ trait ToolbarOptions extends StObject {
 }
 object ToolbarOptions {
   
-  @scala.inline
-  def apply(): ToolbarOptions = {
+  inline def apply(): ToolbarOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToolbarOptions]
   }
   
-  @scala.inline
-  implicit class ToolbarOptionsMutableBuilder[Self <: ToolbarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ToolbarOptions](x: Self) {
     
-    @scala.inline
-    def setCircle(value: CircleOptions): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: CircleOptions): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+    inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
     
-    @scala.inline
-    def setCirclemarker(value: CircleOptions): Self = StObject.set(x, "circlemarker", value.asInstanceOf[js.Any])
+    inline def setCirclemarker(value: CircleOptions): Self = StObject.set(x, "circlemarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCirclemarkerUndefined: Self = StObject.set(x, "circlemarker", js.undefined)
+    inline def setCirclemarkerUndefined: Self = StObject.set(x, "circlemarker", js.undefined)
     
-    @scala.inline
-    def setMarker(value: MarkerOptions): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: MarkerOptions): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setPolygon(value: PolygonOptions): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
+    inline def setPolygon(value: PolygonOptions): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonUndefined: Self = StObject.set(x, "polygon", js.undefined)
+    inline def setPolygonUndefined: Self = StObject.set(x, "polygon", js.undefined)
     
-    @scala.inline
-    def setPolyline(value: PolylineOptions): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
+    inline def setPolyline(value: PolylineOptions): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylineUndefined: Self = StObject.set(x, "polyline", js.undefined)
+    inline def setPolylineUndefined: Self = StObject.set(x, "polyline", js.undefined)
     
-    @scala.inline
-    def setRectangle(value: RectangleOptions): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
+    inline def setRectangle(value: RectangleOptions): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
+    inline def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
   }
 }

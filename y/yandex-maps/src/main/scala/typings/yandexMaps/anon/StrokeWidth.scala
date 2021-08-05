@@ -10,19 +10,15 @@ trait StrokeWidth extends StObject {
 }
 object StrokeWidth {
   
-  @scala.inline
-  def apply(): StrokeWidth = {
+  inline def apply(): StrokeWidth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StrokeWidth]
   }
   
-  @scala.inline
-  implicit class StrokeWidthMutableBuilder[Self <: StrokeWidth] (val x: Self) extends AnyVal {
+  extension [Self <: StrokeWidth](x: Self) {
     
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

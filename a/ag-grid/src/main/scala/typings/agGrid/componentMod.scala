@@ -47,20 +47,20 @@ object componentMod {
       after it is pressed. */
     var afterGuiAttached: js.UndefOr[js.Function1[/* params */ js.UndefOr[IAfterGuiAttachedParams], Unit]] = js.native
     
-    var annotatedEventListeners: js.Any = js.native
+    /* private */ var annotatedEventListeners: js.Any = js.native
     
     def appendChild(newChild: IComponent[js.Any]): Unit = js.native
     def appendChild(newChild: Node): Unit = js.native
     
-    var childComponents: js.Any = js.native
+    /* private */ var childComponents: js.Any = js.native
     
-    var compId: js.Any = js.native
+    /* private */ var compId: js.Any = js.native
     
     /* private */ def copyAttributesFromNode(attrLists: js.Any, childNode: js.Any): js.Any = js.native
     
     /* private */ def createChildAttributes(attrLists: js.Any, child: js.Any): js.Any = js.native
     
-    var eGui: js.Any = js.native
+    /* private */ var eGui: js.Any = js.native
     
     /* private */ def getAgComponentMetaData(key: js.Any): js.Any = js.native
     
@@ -104,7 +104,7 @@ object componentMod {
     
     /* private */ def swapInComponentForQuerySelectors(newComponent: js.Any, childNode: js.Any): js.Any = js.native
     
-    var visible: js.Any = js.native
+    /* private */ var visible: js.Any = js.native
     
     /* protected */ def wireQuerySelectors(): Unit = js.native
   }
@@ -118,8 +118,7 @@ object componentMod {
     @JSImport("ag-grid/dist/lib/widgets/component", "Component.EVENT_VISIBLE_CHANGED")
     @js.native
     def EVENT_VISIBLE_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_VISIBLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_VISIBLE_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_VISIBLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_VISIBLE_CHANGED")(x.asInstanceOf[js.Any])
   }
   
   trait VisibleChangedEvent
@@ -130,18 +129,15 @@ object componentMod {
   }
   object VisibleChangedEvent {
     
-    @scala.inline
-    def apply(`type`: String, visible: Boolean): VisibleChangedEvent = {
+    inline def apply(`type`: String, visible: Boolean): VisibleChangedEvent = {
       val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[VisibleChangedEvent]
     }
     
-    @scala.inline
-    implicit class VisibleChangedEventMutableBuilder[Self <: VisibleChangedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: VisibleChangedEvent](x: Self) {
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

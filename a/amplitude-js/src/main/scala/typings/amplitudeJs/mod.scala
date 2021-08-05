@@ -162,145 +162,97 @@ object mod {
   @js.native
   val __VERSION__ : String = js.native
   
-  @scala.inline
-  def clearUserProperties(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearUserProperties")().asInstanceOf[Unit]
+  inline def clearUserProperties(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearUserProperties")().asInstanceOf[Unit]
   
-  @scala.inline
-  def getInstance(): AmplitudeClient = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[AmplitudeClient]
-  @scala.inline
-  def getInstance(instanceName: String): AmplitudeClient = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(instanceName.asInstanceOf[js.Any]).asInstanceOf[AmplitudeClient]
+  inline def getInstance(): AmplitudeClient = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[AmplitudeClient]
+  inline def getInstance(instanceName: String): AmplitudeClient = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(instanceName.asInstanceOf[js.Any]).asInstanceOf[AmplitudeClient]
   
-  @scala.inline
-  def getSessionId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionId")().asInstanceOf[Double]
+  inline def getSessionId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionId")().asInstanceOf[Double]
   
-  @scala.inline
-  def identify(identify: Identify_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("identify")(identify.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def identify(identify: Identify_, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("identify")(identify.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def identify(identify: Identify_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("identify")(identify.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def identify(identify: Identify_, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("identify")(identify.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def init(apiKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def init(apiKey: String, userId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def init(
+  inline def init(apiKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def init(apiKey: String, userId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def init(
     apiKey: String,
     userId: String,
     options: Unit,
     callback: js.Function1[/* client */ AmplitudeClient, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def init(apiKey: String, userId: String, options: Config): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def init(
+  inline def init(apiKey: String, userId: String, options: Config): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def init(
     apiKey: String,
     userId: String,
     options: Config,
     callback: js.Function1[/* client */ AmplitudeClient, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def init(
+  inline def init(
     apiKey: String,
     userId: Unit,
     options: Unit,
     callback: js.Function1[/* client */ AmplitudeClient, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def init(apiKey: String, userId: Unit, options: Config): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def init(
+  inline def init(apiKey: String, userId: Unit, options: Config): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def init(
     apiKey: String,
     userId: Unit,
     options: Config,
     callback: js.Function1[/* client */ AmplitudeClient, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def isNewSession(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewSession")().asInstanceOf[Boolean]
+  inline def isNewSession(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewSession")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def logEvent(event: String): LogReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any]).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEvent(event: String, data: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEvent(event: String, data: js.Any, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEvent(event: String, data: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEvent(event: String): LogReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any]).asInstanceOf[LogReturn]
+  inline def logEvent(event: String, data: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEvent(event: String, data: js.Any, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEvent(event: String, data: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
   
-  @scala.inline
-  def logEventWithGroups(event: String): LogReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any]).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEventWithGroups(event: String, data: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEventWithGroups(event: String, data: js.Any, groups: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEventWithGroups(event: String, data: js.Any, groups: js.Any, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEventWithGroups(event: String, data: js.Any, groups: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEventWithGroups(event: String, data: Unit, groups: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEventWithGroups(event: String, data: Unit, groups: js.Any, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEventWithGroups(event: String, data: Unit, groups: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithGroups(event: String): LogReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any]).asInstanceOf[LogReturn]
+  inline def logEventWithGroups(event: String, data: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithGroups(event: String, data: js.Any, groups: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithGroups(event: String, data: js.Any, groups: js.Any, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithGroups(event: String, data: js.Any, groups: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithGroups(event: String, data: Unit, groups: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithGroups(event: String, data: Unit, groups: js.Any, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithGroups(event: String, data: Unit, groups: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
   
-  @scala.inline
-  def logEventWithTimestamp(event: String): LogReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any]).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEventWithTimestamp(event: String, data: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEventWithTimestamp(event: String, data: js.Any, timestamp: Double): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEventWithTimestamp(event: String, data: js.Any, timestamp: Double, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEventWithTimestamp(event: String, data: js.Any, timestamp: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEventWithTimestamp(event: String, data: Unit, timestamp: Double): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEventWithTimestamp(event: String, data: Unit, timestamp: Double, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
-  @scala.inline
-  def logEventWithTimestamp(event: String, data: Unit, timestamp: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithTimestamp(event: String): LogReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any]).asInstanceOf[LogReturn]
+  inline def logEventWithTimestamp(event: String, data: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithTimestamp(event: String, data: js.Any, timestamp: Double): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithTimestamp(event: String, data: js.Any, timestamp: Double, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithTimestamp(event: String, data: js.Any, timestamp: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithTimestamp(event: String, data: Unit, timestamp: Double): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithTimestamp(event: String, data: Unit, timestamp: Double, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logEventWithTimestamp(event: String, data: Unit, timestamp: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
   
-  @scala.inline
-  def logRevenue(pric: Double, quantity: Double, product: String): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logRevenue")(pric.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], product.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  inline def logRevenue(pric: Double, quantity: Double, product: String): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logRevenue")(pric.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], product.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
   
-  @scala.inline
-  def logRevenueV2(revenue_obj: Revenue): LogReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("logRevenueV2")(revenue_obj.asInstanceOf[js.Any]).asInstanceOf[LogReturn]
+  inline def logRevenueV2(revenue_obj: Revenue): LogReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("logRevenueV2")(revenue_obj.asInstanceOf[js.Any]).asInstanceOf[LogReturn]
   
   @JSImport("amplitude-js", "options")
   @js.native
   val options: Config = js.native
   
-  @scala.inline
-  def regenerateDeviceId(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("regenerateDeviceId")().asInstanceOf[Unit]
+  inline def regenerateDeviceId(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("regenerateDeviceId")().asInstanceOf[Unit]
   
-  @scala.inline
-  def setDeviceId(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDeviceId")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDeviceId(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDeviceId")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setDomain(domain: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDomain(domain: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setGlobalUserProperties(properties: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalUserProperties")(properties.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setGlobalUserProperties(properties: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalUserProperties")(properties.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setGroup(groupType: String, groupName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setGroup")(groupType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setGroup(groupType: String, groupName: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setGroup")(groupType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setGroup(groupType: String, groupName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setGroup")(groupType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setGroup(groupType: String, groupName: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setGroup")(groupType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setOptOut(optOut: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptOut")(optOut.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setOptOut(optOut: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptOut")(optOut.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setUserId(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")().asInstanceOf[Unit]
-  @scala.inline
-  def setUserId(userId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")(userId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setUserId(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")().asInstanceOf[Unit]
+  inline def setUserId(userId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")(userId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setUserProperties(properties: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserProperties")(properties.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setUserProperties(properties: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserProperties")(properties.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setVersionName(version: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVersionName")(version.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setVersionName(version: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVersionName")(version.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type Callback = js.Function3[
     /* responseCode */ Double, 
@@ -381,218 +333,148 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
+      inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
+      inline def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
       
-      @scala.inline
-      def setBatchEvents(value: Boolean): Self = StObject.set(x, "batchEvents", value.asInstanceOf[js.Any])
+      inline def setBatchEvents(value: Boolean): Self = StObject.set(x, "batchEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchEventsUndefined: Self = StObject.set(x, "batchEvents", js.undefined)
+      inline def setBatchEventsUndefined: Self = StObject.set(x, "batchEvents", js.undefined)
       
-      @scala.inline
-      def setCookieExpiration(value: Double): Self = StObject.set(x, "cookieExpiration", value.asInstanceOf[js.Any])
+      inline def setCookieExpiration(value: Double): Self = StObject.set(x, "cookieExpiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieExpirationUndefined: Self = StObject.set(x, "cookieExpiration", js.undefined)
+      inline def setCookieExpirationUndefined: Self = StObject.set(x, "cookieExpiration", js.undefined)
       
-      @scala.inline
-      def setCookieForceUpgrade(value: Boolean): Self = StObject.set(x, "cookieForceUpgrade", value.asInstanceOf[js.Any])
+      inline def setCookieForceUpgrade(value: Boolean): Self = StObject.set(x, "cookieForceUpgrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieForceUpgradeUndefined: Self = StObject.set(x, "cookieForceUpgrade", js.undefined)
+      inline def setCookieForceUpgradeUndefined: Self = StObject.set(x, "cookieForceUpgrade", js.undefined)
       
-      @scala.inline
-      def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
+      inline def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieNameUndefined: Self = StObject.set(x, "cookieName", js.undefined)
+      inline def setCookieNameUndefined: Self = StObject.set(x, "cookieName", js.undefined)
       
-      @scala.inline
-      def setDeferInitialization(value: Boolean): Self = StObject.set(x, "deferInitialization", value.asInstanceOf[js.Any])
+      inline def setDeferInitialization(value: Boolean): Self = StObject.set(x, "deferInitialization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferInitializationUndefined: Self = StObject.set(x, "deferInitialization", js.undefined)
+      inline def setDeferInitializationUndefined: Self = StObject.set(x, "deferInitialization", js.undefined)
       
-      @scala.inline
-      def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+      inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceIdFromUrlParam(value: Boolean): Self = StObject.set(x, "deviceIdFromUrlParam", value.asInstanceOf[js.Any])
+      inline def setDeviceIdFromUrlParam(value: Boolean): Self = StObject.set(x, "deviceIdFromUrlParam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceIdFromUrlParamUndefined: Self = StObject.set(x, "deviceIdFromUrlParam", js.undefined)
+      inline def setDeviceIdFromUrlParamUndefined: Self = StObject.set(x, "deviceIdFromUrlParam", js.undefined)
       
-      @scala.inline
-      def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+      inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
       
-      @scala.inline
-      def setDisableCookies(value: Boolean): Self = StObject.set(x, "disableCookies", value.asInstanceOf[js.Any])
+      inline def setDisableCookies(value: Boolean): Self = StObject.set(x, "disableCookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableCookiesUndefined: Self = StObject.set(x, "disableCookies", js.undefined)
+      inline def setDisableCookiesUndefined: Self = StObject.set(x, "disableCookies", js.undefined)
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setEventUploadPeriodMillis(value: Double): Self = StObject.set(x, "eventUploadPeriodMillis", value.asInstanceOf[js.Any])
+      inline def setEventUploadPeriodMillis(value: Double): Self = StObject.set(x, "eventUploadPeriodMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventUploadPeriodMillisUndefined: Self = StObject.set(x, "eventUploadPeriodMillis", js.undefined)
+      inline def setEventUploadPeriodMillisUndefined: Self = StObject.set(x, "eventUploadPeriodMillis", js.undefined)
       
-      @scala.inline
-      def setEventUploadThreshold(value: Double): Self = StObject.set(x, "eventUploadThreshold", value.asInstanceOf[js.Any])
+      inline def setEventUploadThreshold(value: Double): Self = StObject.set(x, "eventUploadThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventUploadThresholdUndefined: Self = StObject.set(x, "eventUploadThreshold", js.undefined)
+      inline def setEventUploadThresholdUndefined: Self = StObject.set(x, "eventUploadThreshold", js.undefined)
       
-      @scala.inline
-      def setForceHttps(value: Boolean): Self = StObject.set(x, "forceHttps", value.asInstanceOf[js.Any])
+      inline def setForceHttps(value: Boolean): Self = StObject.set(x, "forceHttps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceHttpsUndefined: Self = StObject.set(x, "forceHttps", js.undefined)
+      inline def setForceHttpsUndefined: Self = StObject.set(x, "forceHttps", js.undefined)
       
-      @scala.inline
-      def setIncludeGclid(value: Boolean): Self = StObject.set(x, "includeGclid", value.asInstanceOf[js.Any])
+      inline def setIncludeGclid(value: Boolean): Self = StObject.set(x, "includeGclid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeGclidUndefined: Self = StObject.set(x, "includeGclid", js.undefined)
+      inline def setIncludeGclidUndefined: Self = StObject.set(x, "includeGclid", js.undefined)
       
-      @scala.inline
-      def setIncludeReferrer(value: Boolean): Self = StObject.set(x, "includeReferrer", value.asInstanceOf[js.Any])
+      inline def setIncludeReferrer(value: Boolean): Self = StObject.set(x, "includeReferrer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeReferrerUndefined: Self = StObject.set(x, "includeReferrer", js.undefined)
+      inline def setIncludeReferrerUndefined: Self = StObject.set(x, "includeReferrer", js.undefined)
       
-      @scala.inline
-      def setIncludeUtm(value: Boolean): Self = StObject.set(x, "includeUtm", value.asInstanceOf[js.Any])
+      inline def setIncludeUtm(value: Boolean): Self = StObject.set(x, "includeUtm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUtmUndefined: Self = StObject.set(x, "includeUtm", js.undefined)
+      inline def setIncludeUtmUndefined: Self = StObject.set(x, "includeUtm", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: DISABLE | ERROR | WARN | INFO): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: DISABLE | ERROR | WARN | INFO): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
+      inline def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOptOut(value: Boolean): Self = StObject.set(x, "optOut", value.asInstanceOf[js.Any])
+      inline def setOptOut(value: Boolean): Self = StObject.set(x, "optOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptOutUndefined: Self = StObject.set(x, "optOut", js.undefined)
+      inline def setOptOutUndefined: Self = StObject.set(x, "optOut", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setSameSiteCookie(value: Lax | Strict | None): Self = StObject.set(x, "sameSiteCookie", value.asInstanceOf[js.Any])
+      inline def setSameSiteCookie(value: Lax | Strict | None): Self = StObject.set(x, "sameSiteCookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSameSiteCookieUndefined: Self = StObject.set(x, "sameSiteCookie", js.undefined)
+      inline def setSameSiteCookieUndefined: Self = StObject.set(x, "sameSiteCookie", js.undefined)
       
-      @scala.inline
-      def setSaveEvents(value: Boolean): Self = StObject.set(x, "saveEvents", value.asInstanceOf[js.Any])
+      inline def setSaveEvents(value: Boolean): Self = StObject.set(x, "saveEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveEventsUndefined: Self = StObject.set(x, "saveEvents", js.undefined)
+      inline def setSaveEventsUndefined: Self = StObject.set(x, "saveEvents", js.undefined)
       
-      @scala.inline
-      def setSaveParamsReferrerOncePerSession(value: Boolean): Self = StObject.set(x, "saveParamsReferrerOncePerSession", value.asInstanceOf[js.Any])
+      inline def setSaveParamsReferrerOncePerSession(value: Boolean): Self = StObject.set(x, "saveParamsReferrerOncePerSession", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveParamsReferrerOncePerSessionUndefined: Self = StObject.set(x, "saveParamsReferrerOncePerSession", js.undefined)
+      inline def setSaveParamsReferrerOncePerSessionUndefined: Self = StObject.set(x, "saveParamsReferrerOncePerSession", js.undefined)
       
-      @scala.inline
-      def setSavedMaxCount(value: Double): Self = StObject.set(x, "savedMaxCount", value.asInstanceOf[js.Any])
+      inline def setSavedMaxCount(value: Double): Self = StObject.set(x, "savedMaxCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSavedMaxCountUndefined: Self = StObject.set(x, "savedMaxCount", js.undefined)
+      inline def setSavedMaxCountUndefined: Self = StObject.set(x, "savedMaxCount", js.undefined)
       
-      @scala.inline
-      def setSecureCookie(value: Boolean): Self = StObject.set(x, "secureCookie", value.asInstanceOf[js.Any])
+      inline def setSecureCookie(value: Boolean): Self = StObject.set(x, "secureCookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureCookieUndefined: Self = StObject.set(x, "secureCookie", js.undefined)
+      inline def setSecureCookieUndefined: Self = StObject.set(x, "secureCookie", js.undefined)
       
-      @scala.inline
-      def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
+      inline def setSessionTimeout(value: Double): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
+      inline def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
       
-      @scala.inline
-      def setTrackingOptions(value: Carrier): Self = StObject.set(x, "trackingOptions", value.asInstanceOf[js.Any])
+      inline def setTrackingOptions(value: Carrier): Self = StObject.set(x, "trackingOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackingOptionsUndefined: Self = StObject.set(x, "trackingOptions", js.undefined)
+      inline def setTrackingOptionsUndefined: Self = StObject.set(x, "trackingOptions", js.undefined)
       
-      @scala.inline
-      def setUnsentIdentifyKey(value: String): Self = StObject.set(x, "unsentIdentifyKey", value.asInstanceOf[js.Any])
+      inline def setUnsentIdentifyKey(value: String): Self = StObject.set(x, "unsentIdentifyKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsentIdentifyKeyUndefined: Self = StObject.set(x, "unsentIdentifyKey", js.undefined)
+      inline def setUnsentIdentifyKeyUndefined: Self = StObject.set(x, "unsentIdentifyKey", js.undefined)
       
-      @scala.inline
-      def setUnsentKey(value: String): Self = StObject.set(x, "unsentKey", value.asInstanceOf[js.Any])
+      inline def setUnsentKey(value: String): Self = StObject.set(x, "unsentKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsentKeyUndefined: Self = StObject.set(x, "unsentKey", js.undefined)
+      inline def setUnsentKeyUndefined: Self = StObject.set(x, "unsentKey", js.undefined)
       
-      @scala.inline
-      def setUnsetParamsReferrerOnNewSession(value: Boolean): Self = StObject.set(x, "unsetParamsReferrerOnNewSession", value.asInstanceOf[js.Any])
+      inline def setUnsetParamsReferrerOnNewSession(value: Boolean): Self = StObject.set(x, "unsetParamsReferrerOnNewSession", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsetParamsReferrerOnNewSessionUndefined: Self = StObject.set(x, "unsetParamsReferrerOnNewSession", js.undefined)
+      inline def setUnsetParamsReferrerOnNewSessionUndefined: Self = StObject.set(x, "unsetParamsReferrerOnNewSession", js.undefined)
       
-      @scala.inline
-      def setUploadBatchSize(value: Double): Self = StObject.set(x, "uploadBatchSize", value.asInstanceOf[js.Any])
+      inline def setUploadBatchSize(value: Double): Self = StObject.set(x, "uploadBatchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadBatchSizeUndefined: Self = StObject.set(x, "uploadBatchSize", js.undefined)
+      inline def setUploadBatchSizeUndefined: Self = StObject.set(x, "uploadBatchSize", js.undefined)
       
-      @scala.inline
-      def setUseNativeDeviceInfo(value: Boolean): Self = StObject.set(x, "useNativeDeviceInfo", value.asInstanceOf[js.Any])
+      inline def setUseNativeDeviceInfo(value: Boolean): Self = StObject.set(x, "useNativeDeviceInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNativeDeviceInfoUndefined: Self = StObject.set(x, "useNativeDeviceInfo", js.undefined)
+      inline def setUseNativeDeviceInfoUndefined: Self = StObject.set(x, "useNativeDeviceInfo", js.undefined)
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+      inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     }
   }
   

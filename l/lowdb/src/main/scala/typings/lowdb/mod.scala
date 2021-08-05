@@ -40,32 +40,24 @@ object mod extends Shortcut {
   }
   object AdapterOptions {
     
-    @scala.inline
-    def apply[SchemaT](): AdapterOptions[SchemaT] = {
+    inline def apply[SchemaT](): AdapterOptions[SchemaT] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AdapterOptions[SchemaT]]
     }
     
-    @scala.inline
-    implicit class AdapterOptionsMutableBuilder[Self <: AdapterOptions[?], SchemaT] (val x: Self & AdapterOptions[SchemaT]) extends AnyVal {
+    extension [Self <: AdapterOptions[?], SchemaT](x: Self & AdapterOptions[SchemaT]) {
       
-      @scala.inline
-      def setDefaultValue(value: SchemaT): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: SchemaT): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDeserialize(value: /* serializedData */ String => SchemaT): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+      inline def setDeserialize(value: /* serializedData */ String => SchemaT): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeserializeUndefined: Self = StObject.set(x, "deserialize", js.undefined)
+      inline def setDeserializeUndefined: Self = StObject.set(x, "deserialize", js.undefined)
       
-      @scala.inline
-      def setSerialize(value: /* data */ SchemaT => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+      inline def setSerialize(value: /* data */ SchemaT => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
+      inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
     }
   }
   
@@ -292,20 +284,16 @@ object mod extends Shortcut {
   }
   object LowdbBase {
     
-    @scala.inline
-    def apply[SchemaT](getState: () => SchemaT, setState: SchemaT => LowdbBase[SchemaT]): LowdbBase[SchemaT] = {
+    inline def apply[SchemaT](getState: () => SchemaT, setState: SchemaT => LowdbBase[SchemaT]): LowdbBase[SchemaT] = {
       val __obj = js.Dynamic.literal(getState = js.Any.fromFunction0(getState), setState = js.Any.fromFunction1(setState))
       __obj.asInstanceOf[LowdbBase[SchemaT]]
     }
     
-    @scala.inline
-    implicit class LowdbBaseMutableBuilder[Self <: LowdbBase[?], SchemaT] (val x: Self & LowdbBase[SchemaT]) extends AnyVal {
+    extension [Self <: LowdbBase[?], SchemaT](x: Self & LowdbBase[SchemaT]) {
       
-      @scala.inline
-      def setGetState(value: () => SchemaT): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => SchemaT): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetState(value: SchemaT => LowdbBase[SchemaT]): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+      inline def setSetState(value: SchemaT => LowdbBase[SchemaT]): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
     }
   }
   
@@ -585,17 +573,14 @@ object mod extends Shortcut {
     }
     object CollectionChain {
       
-      @scala.inline
-      def apply[T](write: () => ArrayLike[T] & js.Promise[ArrayLike[T]]): CollectionChain[T] = {
+      inline def apply[T](write: () => ArrayLike[T] & js.Promise[ArrayLike[T]]): CollectionChain[T] = {
         val __obj = js.Dynamic.literal(write = js.Any.fromFunction0(write))
         __obj.asInstanceOf[CollectionChain[T]]
       }
       
-      @scala.inline
-      implicit class CollectionChainMutableBuilder[Self <: CollectionChain[?], T] (val x: Self & CollectionChain[T]) extends AnyVal {
+      extension [Self <: CollectionChain[?], T](x: Self & CollectionChain[T]) {
         
-        @scala.inline
-        def setWrite(value: () => ArrayLike[T] & js.Promise[ArrayLike[T]]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
+        inline def setWrite(value: () => ArrayLike[T] & js.Promise[ArrayLike[T]]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
       }
     }
     
@@ -605,17 +590,14 @@ object mod extends Shortcut {
     }
     object FunctionChain {
       
-      @scala.inline
-      def apply[T](write: () => T & js.Promise[T]): FunctionChain[T] = {
+      inline def apply[T](write: () => T & js.Promise[T]): FunctionChain[T] = {
         val __obj = js.Dynamic.literal(write = js.Any.fromFunction0(write))
         __obj.asInstanceOf[FunctionChain[T]]
       }
       
-      @scala.inline
-      implicit class FunctionChainMutableBuilder[Self <: FunctionChain[?], T] (val x: Self & FunctionChain[T]) extends AnyVal {
+      extension [Self <: FunctionChain[?], T](x: Self & FunctionChain[T]) {
         
-        @scala.inline
-        def setWrite(value: () => T & js.Promise[T]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
+        inline def setWrite(value: () => T & js.Promise[T]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
       }
     }
     
@@ -628,17 +610,14 @@ object mod extends Shortcut {
     }
     object ObjectChain {
       
-      @scala.inline
-      def apply[T](write: () => T & js.Promise[T]): typings.lowdb.mod.lodashAugmentingMod.ObjectChain[T] = {
+      inline def apply[T](write: () => T & js.Promise[T]): typings.lowdb.mod.lodashAugmentingMod.ObjectChain[T] = {
         val __obj = js.Dynamic.literal(write = js.Any.fromFunction0(write))
         __obj.asInstanceOf[typings.lowdb.mod.lodashAugmentingMod.ObjectChain[T]]
       }
       
-      @scala.inline
-      implicit class ObjectChainMutableBuilder[Self <: typings.lowdb.mod.lodashAugmentingMod.ObjectChain[?], T] (val x: Self & typings.lowdb.mod.lodashAugmentingMod.ObjectChain[T]) extends AnyVal {
+      extension [Self <: typings.lowdb.mod.lodashAugmentingMod.ObjectChain[?], T](x: Self & typings.lowdb.mod.lodashAugmentingMod.ObjectChain[T]) {
         
-        @scala.inline
-        def setWrite(value: () => T & js.Promise[T]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
+        inline def setWrite(value: () => T & js.Promise[T]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
       }
     }
     
@@ -648,17 +627,14 @@ object mod extends Shortcut {
     }
     object PrimitiveChain {
       
-      @scala.inline
-      def apply[T](write: () => T & js.Promise[T]): PrimitiveChain[T] = {
+      inline def apply[T](write: () => T & js.Promise[T]): PrimitiveChain[T] = {
         val __obj = js.Dynamic.literal(write = js.Any.fromFunction0(write))
         __obj.asInstanceOf[PrimitiveChain[T]]
       }
       
-      @scala.inline
-      implicit class PrimitiveChainMutableBuilder[Self <: PrimitiveChain[?], T] (val x: Self & PrimitiveChain[T]) extends AnyVal {
+      extension [Self <: PrimitiveChain[?], T](x: Self & PrimitiveChain[T]) {
         
-        @scala.inline
-        def setWrite(value: () => T & js.Promise[T]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
+        inline def setWrite(value: () => T & js.Promise[T]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
       }
     }
     
@@ -668,17 +644,14 @@ object mod extends Shortcut {
     }
     object StringChain {
       
-      @scala.inline
-      def apply(write: () => String & js.Promise[String]): StringChain = {
+      inline def apply(write: () => String & js.Promise[String]): StringChain = {
         val __obj = js.Dynamic.literal(write = js.Any.fromFunction0(write))
         __obj.asInstanceOf[StringChain]
       }
       
-      @scala.inline
-      implicit class StringChainMutableBuilder[Self <: StringChain] (val x: Self) extends AnyVal {
+      extension [Self <: StringChain](x: Self) {
         
-        @scala.inline
-        def setWrite(value: () => String & js.Promise[String]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
+        inline def setWrite(value: () => String & js.Promise[String]): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
       }
     }
   }

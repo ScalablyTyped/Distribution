@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmCycle extends StObject
 object fmCycle {
   
-  @scala.inline
-  def fmCycleAllForms: `0` = 0.asInstanceOf[`0`]
+  inline def fmCycleAllForms: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fmCycleCurrentForm: `2` = 2.asInstanceOf[`2`]
+  inline def fmCycleCurrentForm: `2` = 2.asInstanceOf[`2`]
 }

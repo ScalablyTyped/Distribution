@@ -23,46 +23,33 @@ trait GoogleCloudDatalabelingV1beta1VideoPayload extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1VideoPayload {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1VideoPayload = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1VideoPayload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1VideoPayload]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1VideoPayloadMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1VideoPayload] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1VideoPayload](x: Self) {
     
-    @scala.inline
-    def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+    inline def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
+    inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setSignedUri(value: String): Self = StObject.set(x, "signedUri", value.asInstanceOf[js.Any])
+    inline def setSignedUri(value: String): Self = StObject.set(x, "signedUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedUriUndefined: Self = StObject.set(x, "signedUri", js.undefined)
+    inline def setSignedUriUndefined: Self = StObject.set(x, "signedUri", js.undefined)
     
-    @scala.inline
-    def setVideoThumbnails(value: js.Array[GoogleCloudDatalabelingV1beta1VideoThumbnail]): Self = StObject.set(x, "videoThumbnails", value.asInstanceOf[js.Any])
+    inline def setVideoThumbnails(value: js.Array[GoogleCloudDatalabelingV1beta1VideoThumbnail]): Self = StObject.set(x, "videoThumbnails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoThumbnailsUndefined: Self = StObject.set(x, "videoThumbnails", js.undefined)
+    inline def setVideoThumbnailsUndefined: Self = StObject.set(x, "videoThumbnails", js.undefined)
     
-    @scala.inline
-    def setVideoThumbnailsVarargs(value: GoogleCloudDatalabelingV1beta1VideoThumbnail*): Self = StObject.set(x, "videoThumbnails", js.Array(value :_*))
+    inline def setVideoThumbnailsVarargs(value: GoogleCloudDatalabelingV1beta1VideoThumbnail*): Self = StObject.set(x, "videoThumbnails", js.Array(value :_*))
     
-    @scala.inline
-    def setVideoUri(value: String): Self = StObject.set(x, "videoUri", value.asInstanceOf[js.Any])
+    inline def setVideoUri(value: String): Self = StObject.set(x, "videoUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoUriUndefined: Self = StObject.set(x, "videoUri", js.undefined)
+    inline def setVideoUriUndefined: Self = StObject.set(x, "videoUri", js.undefined)
   }
 }

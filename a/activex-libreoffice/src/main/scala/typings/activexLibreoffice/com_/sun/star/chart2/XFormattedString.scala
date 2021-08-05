@@ -18,8 +18,7 @@ trait XFormattedString
 }
 object XFormattedString {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     String: String,
     acquire: () => Unit,
     getString: () => String,
@@ -31,16 +30,12 @@ object XFormattedString {
     __obj.asInstanceOf[XFormattedString]
   }
   
-  @scala.inline
-  implicit class XFormattedStringMutableBuilder[Self <: XFormattedString] (val x: Self) extends AnyVal {
+  extension [Self <: XFormattedString](x: Self) {
     
-    @scala.inline
-    def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
+    inline def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetString(value: String => Unit): Self = StObject.set(x, "setString", js.Any.fromFunction1(value))
+    inline def setSetString(value: String => Unit): Self = StObject.set(x, "setString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setString(value: String): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
+    inline def setString(value: String): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
   }
 }

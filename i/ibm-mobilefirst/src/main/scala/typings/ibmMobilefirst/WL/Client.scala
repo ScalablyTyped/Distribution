@@ -27,8 +27,7 @@ object Client {
   }
   object AbstractChallengeHandler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       handleChallenge: js.Any => Boolean,
       isCustomResponse: js.Any => Boolean,
       submitAdapterAuthentication: (ChallengehandlerInvocationData, ChallengeHandlerAuthenticationOptions) => Unit,
@@ -40,28 +39,21 @@ object Client {
       __obj.asInstanceOf[AbstractChallengeHandler]
     }
     
-    @scala.inline
-    implicit class AbstractChallengeHandlerMutableBuilder[Self <: AbstractChallengeHandler] (val x: Self) extends AnyVal {
+    extension [Self <: AbstractChallengeHandler](x: Self) {
       
-      @scala.inline
-      def setHandleChallenge(value: js.Any => Boolean): Self = StObject.set(x, "handleChallenge", js.Any.fromFunction1(value))
+      inline def setHandleChallenge(value: js.Any => Boolean): Self = StObject.set(x, "handleChallenge", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsCustomResponse(value: js.Any => Boolean): Self = StObject.set(x, "isCustomResponse", js.Any.fromFunction1(value))
+      inline def setIsCustomResponse(value: js.Any => Boolean): Self = StObject.set(x, "isCustomResponse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubmitAdapterAuthentication(value: (ChallengehandlerInvocationData, ChallengeHandlerAuthenticationOptions) => Unit): Self = StObject.set(x, "submitAdapterAuthentication", js.Any.fromFunction2(value))
+      inline def setSubmitAdapterAuthentication(value: (ChallengehandlerInvocationData, ChallengeHandlerAuthenticationOptions) => Unit): Self = StObject.set(x, "submitAdapterAuthentication", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSubmitFailure(value: String => Unit): Self = StObject.set(x, "submitFailure", js.Any.fromFunction1(value))
+      inline def setSubmitFailure(value: String => Unit): Self = StObject.set(x, "submitFailure", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubmitLoginForm(
+      inline def setSubmitLoginForm(
         value: (String, ChallengeHandlerSubmitLoginFormOptions, js.Function1[/* transport */ js.Any, Unit]) => Unit
       ): Self = StObject.set(x, "submitLoginForm", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSubmitSuccess(value: () => Unit): Self = StObject.set(x, "submitSuccess", js.Any.fromFunction0(value))
+      inline def setSubmitSuccess(value: () => Unit): Self = StObject.set(x, "submitSuccess", js.Any.fromFunction0(value))
     }
   }
   
@@ -77,32 +69,24 @@ object Client {
   }
   object ChallengeHandlerSubmitLoginFormOptions {
     
-    @scala.inline
-    def apply(): ChallengeHandlerSubmitLoginFormOptions = {
+    inline def apply(): ChallengeHandlerSubmitLoginFormOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChallengeHandlerSubmitLoginFormOptions]
     }
     
-    @scala.inline
-    implicit class ChallengeHandlerSubmitLoginFormOptionsMutableBuilder[Self <: ChallengeHandlerSubmitLoginFormOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChallengeHandlerSubmitLoginFormOptions](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -116,26 +100,20 @@ object Client {
   }
   object ChallengehandlerInvocationData {
     
-    @scala.inline
-    def apply(adapter: String, parameters: js.Array[js.Any], procedure: String): ChallengehandlerInvocationData = {
+    inline def apply(adapter: String, parameters: js.Array[js.Any], procedure: String): ChallengehandlerInvocationData = {
       val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], procedure = procedure.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChallengehandlerInvocationData]
     }
     
-    @scala.inline
-    implicit class ChallengehandlerInvocationDataMutableBuilder[Self <: ChallengehandlerInvocationData] (val x: Self) extends AnyVal {
+    extension [Self <: ChallengehandlerInvocationData](x: Self) {
       
-      @scala.inline
-      def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      inline def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersVarargs(value: js.Any*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: js.Any*): Self = StObject.set(x, "parameters", js.Array(value :_*))
       
-      @scala.inline
-      def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
+      inline def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,26 +127,20 @@ object Client {
   }
   object ConnectOptions {
     
-    @scala.inline
-    def apply(onFailure: FailureResponse => Unit, onSuccess: ResponseBase => Unit): ConnectOptions = {
+    inline def apply(onFailure: FailureResponse => Unit, onSuccess: ResponseBase => Unit): ConnectOptions = {
       val __obj = js.Dynamic.literal(onFailure = js.Any.fromFunction1(onFailure), onSuccess = js.Any.fromFunction1(onSuccess))
       __obj.asInstanceOf[ConnectOptions]
     }
     
-    @scala.inline
-    implicit class ConnectOptionsMutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectOptions](x: Self) {
       
-      @scala.inline
-      def setOnFailure(value: FailureResponse => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
+      inline def setOnFailure(value: FailureResponse => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSuccess(value: ResponseBase => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
+      inline def setOnSuccess(value: ResponseBase => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -180,26 +152,20 @@ object Client {
   }
   object EventTransmissionPolicy {
     
-    @scala.inline
-    def apply(): EventTransmissionPolicy = {
+    inline def apply(): EventTransmissionPolicy = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventTransmissionPolicy]
     }
     
-    @scala.inline
-    implicit class EventTransmissionPolicyMutableBuilder[Self <: EventTransmissionPolicy] (val x: Self) extends AnyVal {
+    extension [Self <: EventTransmissionPolicy](x: Self) {
       
-      @scala.inline
-      def setEventStorageEnabled(value: Boolean): Self = StObject.set(x, "eventStorageEnabled", value.asInstanceOf[js.Any])
+      inline def setEventStorageEnabled(value: Boolean): Self = StObject.set(x, "eventStorageEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventStorageEnabledUndefined: Self = StObject.set(x, "eventStorageEnabled", js.undefined)
+      inline def setEventStorageEnabledUndefined: Self = StObject.set(x, "eventStorageEnabled", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     }
   }
   
@@ -252,113 +218,78 @@ object Client {
   }
   object InitOptions {
     
-    @scala.inline
-    def apply(onGetCustomDeviceProvisioningProperties: js.Function1[/* data */ js.Any, Unit] => Unit): InitOptions = {
+    inline def apply(onGetCustomDeviceProvisioningProperties: js.Function1[/* data */ js.Any, Unit] => Unit): InitOptions = {
       val __obj = js.Dynamic.literal(onGetCustomDeviceProvisioningProperties = js.Any.fromFunction1(onGetCustomDeviceProvisioningProperties))
       __obj.asInstanceOf[InitOptions]
     }
     
-    @scala.inline
-    implicit class InitOptionsMutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InitOptions](x: Self) {
       
-      @scala.inline
-      def setAuthenticator(value: js.Object): Self = StObject.set(x, "authenticator", value.asInstanceOf[js.Any])
+      inline def setAuthenticator(value: js.Object): Self = StObject.set(x, "authenticator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthenticatorUndefined: Self = StObject.set(x, "authenticator", js.undefined)
+      inline def setAuthenticatorUndefined: Self = StObject.set(x, "authenticator", js.undefined)
       
-      @scala.inline
-      def setAutoHideSplash(value: Boolean): Self = StObject.set(x, "autoHideSplash", value.asInstanceOf[js.Any])
+      inline def setAutoHideSplash(value: Boolean): Self = StObject.set(x, "autoHideSplash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoHideSplashUndefined: Self = StObject.set(x, "autoHideSplash", js.undefined)
+      inline def setAutoHideSplashUndefined: Self = StObject.set(x, "autoHideSplash", js.undefined)
       
-      @scala.inline
-      def setConnectOnStartup(value: Boolean): Self = StObject.set(x, "connectOnStartup", value.asInstanceOf[js.Any])
+      inline def setConnectOnStartup(value: Boolean): Self = StObject.set(x, "connectOnStartup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectOnStartupUndefined: Self = StObject.set(x, "connectOnStartup", js.undefined)
+      inline def setConnectOnStartupUndefined: Self = StObject.set(x, "connectOnStartup", js.undefined)
       
-      @scala.inline
-      def setEnableLogger(value: Boolean): Self = StObject.set(x, "enableLogger", value.asInstanceOf[js.Any])
+      inline def setEnableLogger(value: Boolean): Self = StObject.set(x, "enableLogger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableLoggerUndefined: Self = StObject.set(x, "enableLogger", js.undefined)
+      inline def setEnableLoggerUndefined: Self = StObject.set(x, "enableLogger", js.undefined)
       
-      @scala.inline
-      def setHeartBeatIntervalInSecs(value: Double): Self = StObject.set(x, "heartBeatIntervalInSecs", value.asInstanceOf[js.Any])
+      inline def setHeartBeatIntervalInSecs(value: Double): Self = StObject.set(x, "heartBeatIntervalInSecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeartBeatIntervalInSecsUndefined: Self = StObject.set(x, "heartBeatIntervalInSecs", js.undefined)
+      inline def setHeartBeatIntervalInSecsUndefined: Self = StObject.set(x, "heartBeatIntervalInSecs", js.undefined)
       
-      @scala.inline
-      def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      @scala.inline
-      def setOnConnectionFailure(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onConnectionFailure", js.Any.fromFunction1(value))
+      inline def setOnConnectionFailure(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onConnectionFailure", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnConnectionFailureUndefined: Self = StObject.set(x, "onConnectionFailure", js.undefined)
+      inline def setOnConnectionFailureUndefined: Self = StObject.set(x, "onConnectionFailure", js.undefined)
       
-      @scala.inline
-      def setOnDisabledCookies(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onDisabledCookies", js.Any.fromFunction1(value))
+      inline def setOnDisabledCookies(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onDisabledCookies", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDisabledCookiesUndefined: Self = StObject.set(x, "onDisabledCookies", js.undefined)
+      inline def setOnDisabledCookiesUndefined: Self = StObject.set(x, "onDisabledCookies", js.undefined)
       
-      @scala.inline
-      def setOnErrorAppVersionAccessDenial(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onErrorAppVersionAccessDenial", js.Any.fromFunction1(value))
+      inline def setOnErrorAppVersionAccessDenial(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onErrorAppVersionAccessDenial", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorAppVersionAccessDenialUndefined: Self = StObject.set(x, "onErrorAppVersionAccessDenial", js.undefined)
+      inline def setOnErrorAppVersionAccessDenialUndefined: Self = StObject.set(x, "onErrorAppVersionAccessDenial", js.undefined)
       
-      @scala.inline
-      def setOnErrorRemoteDisableDenial(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onErrorRemoteDisableDenial", js.Any.fromFunction1(value))
+      inline def setOnErrorRemoteDisableDenial(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onErrorRemoteDisableDenial", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorRemoteDisableDenialUndefined: Self = StObject.set(x, "onErrorRemoteDisableDenial", js.undefined)
+      inline def setOnErrorRemoteDisableDenialUndefined: Self = StObject.set(x, "onErrorRemoteDisableDenial", js.undefined)
       
-      @scala.inline
-      def setOnGetCustomDeviceProvisioningProperties(value: js.Function1[/* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "onGetCustomDeviceProvisioningProperties", js.Any.fromFunction1(value))
+      inline def setOnGetCustomDeviceProvisioningProperties(value: js.Function1[/* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "onGetCustomDeviceProvisioningProperties", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRequestTimeout(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onRequestTimeout", js.Any.fromFunction1(value))
+      inline def setOnRequestTimeout(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onRequestTimeout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRequestTimeoutUndefined: Self = StObject.set(x, "onRequestTimeout", js.undefined)
+      inline def setOnRequestTimeoutUndefined: Self = StObject.set(x, "onRequestTimeout", js.undefined)
       
-      @scala.inline
-      def setOnUnsupportedBrowser(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onUnsupportedBrowser", js.Any.fromFunction1(value))
+      inline def setOnUnsupportedBrowser(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onUnsupportedBrowser", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUnsupportedBrowserUndefined: Self = StObject.set(x, "onUnsupportedBrowser", js.undefined)
+      inline def setOnUnsupportedBrowserUndefined: Self = StObject.set(x, "onUnsupportedBrowser", js.undefined)
       
-      @scala.inline
-      def setOnUnsupportedVersion(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onUnsupportedVersion", js.Any.fromFunction1(value))
+      inline def setOnUnsupportedVersion(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onUnsupportedVersion", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUnsupportedVersionUndefined: Self = StObject.set(x, "onUnsupportedVersion", js.undefined)
+      inline def setOnUnsupportedVersionUndefined: Self = StObject.set(x, "onUnsupportedVersion", js.undefined)
       
-      @scala.inline
-      def setOnUserInstanceAccessViolation(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onUserInstanceAccessViolation", js.Any.fromFunction1(value))
+      inline def setOnUserInstanceAccessViolation(value: /* response */ FailureResponse => Unit): Self = StObject.set(x, "onUserInstanceAccessViolation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUserInstanceAccessViolationUndefined: Self = StObject.set(x, "onUserInstanceAccessViolation", js.undefined)
+      inline def setOnUserInstanceAccessViolationUndefined: Self = StObject.set(x, "onUserInstanceAccessViolation", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setValidateArguments(value: Boolean): Self = StObject.set(x, "validateArguments", value.asInstanceOf[js.Any])
+      inline def setValidateArguments(value: Boolean): Self = StObject.set(x, "validateArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateArgumentsUndefined: Self = StObject.set(x, "validateArguments", js.undefined)
+      inline def setValidateArgumentsUndefined: Self = StObject.set(x, "validateArguments", js.undefined)
     }
   }
   
@@ -374,35 +305,26 @@ object Client {
   }
   object ProcedureInvocationData {
     
-    @scala.inline
-    def apply(adapter: String, procedure: String): ProcedureInvocationData = {
+    inline def apply(adapter: String, procedure: String): ProcedureInvocationData = {
       val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any], procedure = procedure.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcedureInvocationData]
     }
     
-    @scala.inline
-    implicit class ProcedureInvocationDataMutableBuilder[Self <: ProcedureInvocationData] (val x: Self) extends AnyVal {
+    extension [Self <: ProcedureInvocationData](x: Self) {
       
-      @scala.inline
-      def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      inline def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressResponse(value: Boolean): Self = StObject.set(x, "compressResponse", value.asInstanceOf[js.Any])
+      inline def setCompressResponse(value: Boolean): Self = StObject.set(x, "compressResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressResponseUndefined: Self = StObject.set(x, "compressResponse", js.undefined)
+      inline def setCompressResponseUndefined: Self = StObject.set(x, "compressResponse", js.undefined)
       
-      @scala.inline
-      def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setParametersVarargs(value: js.Any*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: js.Any*): Self = StObject.set(x, "parameters", js.Array(value :_*))
       
-      @scala.inline
-      def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
+      inline def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
     }
   }
   
@@ -417,20 +339,16 @@ object Client {
   }
   object ProcedureInvocationOptions {
     
-    @scala.inline
-    def apply(onSuccess: ProcedureResponse => Unit, timeout: Double): ProcedureInvocationOptions = {
+    inline def apply(onSuccess: ProcedureResponse => Unit, timeout: Double): ProcedureInvocationOptions = {
       val __obj = js.Dynamic.literal(onSuccess = js.Any.fromFunction1(onSuccess), timeout = timeout.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcedureInvocationOptions]
     }
     
-    @scala.inline
-    implicit class ProcedureInvocationOptionsMutableBuilder[Self <: ProcedureInvocationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ProcedureInvocationOptions](x: Self) {
       
-      @scala.inline
-      def setOnSuccess(value: ProcedureResponse => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
+      inline def setOnSuccess(value: ProcedureResponse => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -442,26 +360,20 @@ object Client {
   }
   object ProcedureInvocationResult {
     
-    @scala.inline
-    def apply(isSuccessful: Boolean): ProcedureInvocationResult = {
+    inline def apply(isSuccessful: Boolean): ProcedureInvocationResult = {
       val __obj = js.Dynamic.literal(isSuccessful = isSuccessful.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcedureInvocationResult]
     }
     
-    @scala.inline
-    implicit class ProcedureInvocationResultMutableBuilder[Self <: ProcedureInvocationResult] (val x: Self) extends AnyVal {
+    extension [Self <: ProcedureInvocationResult](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setIsSuccessful(value: Boolean): Self = StObject.set(x, "isSuccessful", value.asInstanceOf[js.Any])
+      inline def setIsSuccessful(value: Boolean): Self = StObject.set(x, "isSuccessful", value.asInstanceOf[js.Any])
     }
   }
   
@@ -475,8 +387,7 @@ object Client {
   }
   object ProcedureResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       errorCode: Double,
       errorMsg: String,
       headerJSON: StringDictionary[js.Any],
@@ -493,23 +404,17 @@ object Client {
       __obj.asInstanceOf[ProcedureResponse]
     }
     
-    @scala.inline
-    implicit class ProcedureResponseMutableBuilder[Self <: ProcedureResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ProcedureResponse](x: Self) {
       
-      @scala.inline
-      def setInvocationResult(value: ProcedureInvocationResult): Self = StObject.set(x, "invocationResult", value.asInstanceOf[js.Any])
+      inline def setInvocationResult(value: ProcedureInvocationResult): Self = StObject.set(x, "invocationResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvocationResultUndefined: Self = StObject.set(x, "invocationResult", js.undefined)
+      inline def setInvocationResultUndefined: Self = StObject.set(x, "invocationResult", js.undefined)
       
-      @scala.inline
-      def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setParametersVarargs(value: js.Any*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: js.Any*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     }
   }
   
@@ -519,17 +424,14 @@ object Client {
   }
   object SharedTokenObject {
     
-    @scala.inline
-    def apply(key: String): SharedTokenObject = {
+    inline def apply(key: String): SharedTokenObject = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[SharedTokenObject]
     }
     
-    @scala.inline
-    implicit class SharedTokenObjectMutableBuilder[Self <: SharedTokenObject] (val x: Self) extends AnyVal {
+    extension [Self <: SharedTokenObject](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   

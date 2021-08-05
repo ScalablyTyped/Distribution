@@ -54,6 +54,5 @@ object Point {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convert(a: PointLike): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(a.asInstanceOf[js.Any]).asInstanceOf[Point]
+  inline def convert(a: PointLike): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(a.asInstanceOf[js.Any]).asInstanceOf[Point]
 }

@@ -41,8 +41,7 @@ trait ChartAxisYSupplier
 }
 object ChartAxisYSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HasYAxis: Boolean,
     HasYAxisDescription: Boolean,
     HasYAxisGrid: Boolean,
@@ -64,22 +63,16 @@ object ChartAxisYSupplier {
     __obj.asInstanceOf[ChartAxisYSupplier]
   }
   
-  @scala.inline
-  implicit class ChartAxisYSupplierMutableBuilder[Self <: ChartAxisYSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: ChartAxisYSupplier](x: Self) {
     
-    @scala.inline
-    def setHasYAxis(value: Boolean): Self = StObject.set(x, "HasYAxis", value.asInstanceOf[js.Any])
+    inline def setHasYAxis(value: Boolean): Self = StObject.set(x, "HasYAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasYAxisDescription(value: Boolean): Self = StObject.set(x, "HasYAxisDescription", value.asInstanceOf[js.Any])
+    inline def setHasYAxisDescription(value: Boolean): Self = StObject.set(x, "HasYAxisDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasYAxisGrid(value: Boolean): Self = StObject.set(x, "HasYAxisGrid", value.asInstanceOf[js.Any])
+    inline def setHasYAxisGrid(value: Boolean): Self = StObject.set(x, "HasYAxisGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasYAxisHelpGrid(value: Boolean): Self = StObject.set(x, "HasYAxisHelpGrid", value.asInstanceOf[js.Any])
+    inline def setHasYAxisHelpGrid(value: Boolean): Self = StObject.set(x, "HasYAxisHelpGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasYAxisTitle(value: Boolean): Self = StObject.set(x, "HasYAxisTitle", value.asInstanceOf[js.Any])
+    inline def setHasYAxisTitle(value: Boolean): Self = StObject.set(x, "HasYAxisTitle", value.asInstanceOf[js.Any])
   }
 }

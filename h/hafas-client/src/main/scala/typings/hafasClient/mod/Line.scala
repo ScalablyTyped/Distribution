@@ -51,110 +51,76 @@ trait Line extends StObject {
 }
 object Line {
   
-  @scala.inline
-  def apply(): Line = {
+  inline def apply(): Line = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("line")
     __obj.asInstanceOf[Line]
   }
   
-  @scala.inline
-  implicit class LineMutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
+  extension [Self <: Line](x: Self) {
     
-    @scala.inline
-    def setAdditionalName(value: String): Self = StObject.set(x, "additionalName", value.asInstanceOf[js.Any])
+    inline def setAdditionalName(value: String): Self = StObject.set(x, "additionalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalNameUndefined: Self = StObject.set(x, "additionalName", js.undefined)
+    inline def setAdditionalNameUndefined: Self = StObject.set(x, "additionalName", js.undefined)
     
-    @scala.inline
-    def setAdminCode(value: String): Self = StObject.set(x, "adminCode", value.asInstanceOf[js.Any])
+    inline def setAdminCode(value: String): Self = StObject.set(x, "adminCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminCodeUndefined: Self = StObject.set(x, "adminCode", js.undefined)
+    inline def setAdminCodeUndefined: Self = StObject.set(x, "adminCode", js.undefined)
     
-    @scala.inline
-    def setExpress(value: Boolean): Self = StObject.set(x, "express", value.asInstanceOf[js.Any])
+    inline def setExpress(value: Boolean): Self = StObject.set(x, "express", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressUndefined: Self = StObject.set(x, "express", js.undefined)
+    inline def setExpressUndefined: Self = StObject.set(x, "express", js.undefined)
     
-    @scala.inline
-    def setFahrtNr(value: String): Self = StObject.set(x, "fahrtNr", value.asInstanceOf[js.Any])
+    inline def setFahrtNr(value: String): Self = StObject.set(x, "fahrtNr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFahrtNrUndefined: Self = StObject.set(x, "fahrtNr", js.undefined)
+    inline def setFahrtNrUndefined: Self = StObject.set(x, "fahrtNr", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMetro(value: Boolean): Self = StObject.set(x, "metro", value.asInstanceOf[js.Any])
+    inline def setMetro(value: Boolean): Self = StObject.set(x, "metro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetroUndefined: Self = StObject.set(x, "metro", js.undefined)
+    inline def setMetroUndefined: Self = StObject.set(x, "metro", js.undefined)
     
-    @scala.inline
-    def setMode(value: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNight(value: Boolean): Self = StObject.set(x, "night", value.asInstanceOf[js.Any])
+    inline def setNight(value: Boolean): Self = StObject.set(x, "night", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNightUndefined: Self = StObject.set(x, "night", js.undefined)
+    inline def setNightUndefined: Self = StObject.set(x, "night", js.undefined)
     
-    @scala.inline
-    def setNr(value: Double): Self = StObject.set(x, "nr", value.asInstanceOf[js.Any])
+    inline def setNr(value: Double): Self = StObject.set(x, "nr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNrUndefined: Self = StObject.set(x, "nr", js.undefined)
+    inline def setNrUndefined: Self = StObject.set(x, "nr", js.undefined)
     
-    @scala.inline
-    def setOperator(value: Operator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: Operator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    @scala.inline
-    def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+    inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
-    @scala.inline
-    def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+    inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+    inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
     
-    @scala.inline
-    def setRoutes(value: js.Array[String]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: js.Array[String]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+    inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
     
-    @scala.inline
-    def setRoutesVarargs(value: String*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: String*): Self = StObject.set(x, "routes", js.Array(value :_*))
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
-    @scala.inline
-    def setType(value: line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

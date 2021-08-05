@@ -16,8 +16,7 @@ trait Queryable[T] extends StObject {
 }
 object Queryable {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     delete: () => ModifyingQuery,
     select: /* repeated */ js.Any => Query[js.Any],
     selectDeep: /* repeated */ js.Any => Query[js.Any],
@@ -27,19 +26,14 @@ object Queryable {
     __obj.asInstanceOf[Queryable[T]]
   }
   
-  @scala.inline
-  implicit class QueryableMutableBuilder[Self <: Queryable[?], T] (val x: Self & Queryable[T]) extends AnyVal {
+  extension [Self <: Queryable[?], T](x: Self & Queryable[T]) {
     
-    @scala.inline
-    def setDelete(value: () => ModifyingQuery): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => ModifyingQuery): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelect(value: /* repeated */ js.Any => Query[js.Any]): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+    inline def setSelect(value: /* repeated */ js.Any => Query[js.Any]): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectDeep(value: /* repeated */ js.Any => Query[js.Any]): Self = StObject.set(x, "selectDeep", js.Any.fromFunction1(value))
+    inline def setSelectDeep(value: /* repeated */ js.Any => Query[js.Any]): Self = StObject.set(x, "selectDeep", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWhere(value: /* repeated */ js.Any => Query[T]): Self = StObject.set(x, "where", js.Any.fromFunction1(value))
+    inline def setWhere(value: /* repeated */ js.Any => Query[T]): Self = StObject.set(x, "where", js.Any.fromFunction1(value))
   }
 }

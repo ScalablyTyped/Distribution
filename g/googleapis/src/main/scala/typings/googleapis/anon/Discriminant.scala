@@ -12,28 +12,21 @@ trait Discriminant extends StObject {
 }
 object Discriminant {
   
-  @scala.inline
-  def apply(): Discriminant = {
+  inline def apply(): Discriminant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Discriminant]
   }
   
-  @scala.inline
-  implicit class DiscriminantMutableBuilder[Self <: Discriminant] (val x: Self) extends AnyVal {
+  extension [Self <: Discriminant](x: Self) {
     
-    @scala.inline
-    def setDiscriminant(value: String): Self = StObject.set(x, "discriminant", value.asInstanceOf[js.Any])
+    inline def setDiscriminant(value: String): Self = StObject.set(x, "discriminant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscriminantUndefined: Self = StObject.set(x, "discriminant", js.undefined)
+    inline def setDiscriminantUndefined: Self = StObject.set(x, "discriminant", js.undefined)
     
-    @scala.inline
-    def setMap(value: js.Array[Ref]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: js.Array[Ref]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setMapVarargs(value: Ref*): Self = StObject.set(x, "map", js.Array(value :_*))
+    inline def setMapVarargs(value: Ref*): Self = StObject.set(x, "map", js.Array(value :_*))
   }
 }

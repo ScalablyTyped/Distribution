@@ -15,20 +15,16 @@ trait FilterPattern
 }
 object FilterPattern {
   
-  @scala.inline
-  def apply(expression: Expression): FilterPattern = {
+  inline def apply(expression: Expression): FilterPattern = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("filter")
     __obj.asInstanceOf[FilterPattern]
   }
   
-  @scala.inline
-  implicit class FilterPatternMutableBuilder[Self <: FilterPattern] (val x: Self) extends AnyVal {
+  extension [Self <: FilterPattern](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: filter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: filter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

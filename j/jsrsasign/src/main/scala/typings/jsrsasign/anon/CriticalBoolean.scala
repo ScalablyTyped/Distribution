@@ -10,16 +10,13 @@ trait CriticalBoolean extends StObject {
 }
 object CriticalBoolean {
   
-  @scala.inline
-  def apply(critical: Boolean): CriticalBoolean = {
+  inline def apply(critical: Boolean): CriticalBoolean = {
     val __obj = js.Dynamic.literal(critical = critical.asInstanceOf[js.Any])
     __obj.asInstanceOf[CriticalBoolean]
   }
   
-  @scala.inline
-  implicit class CriticalBooleanMutableBuilder[Self <: CriticalBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: CriticalBoolean](x: Self) {
     
-    @scala.inline
-    def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
+    inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
   }
 }

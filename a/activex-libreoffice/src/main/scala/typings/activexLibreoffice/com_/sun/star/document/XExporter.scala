@@ -29,8 +29,7 @@ trait XExporter
 }
 object XExporter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -40,10 +39,8 @@ object XExporter {
     __obj.asInstanceOf[XExporter]
   }
   
-  @scala.inline
-  implicit class XExporterMutableBuilder[Self <: XExporter] (val x: Self) extends AnyVal {
+  extension [Self <: XExporter](x: Self) {
     
-    @scala.inline
-    def setSetSourceDocument(value: XComponent => Unit): Self = StObject.set(x, "setSourceDocument", js.Any.fromFunction1(value))
+    inline def setSetSourceDocument(value: XComponent => Unit): Self = StObject.set(x, "setSourceDocument", js.Any.fromFunction1(value))
   }
 }

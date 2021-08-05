@@ -25,55 +25,39 @@ trait PartialAccordionStyle extends StObject {
 }
 object PartialAccordionStyle {
   
-  @scala.inline
-  def apply(): PartialAccordionStyle = {
+  inline def apply(): PartialAccordionStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialAccordionStyle]
   }
   
-  @scala.inline
-  implicit class PartialAccordionStyleMutableBuilder[Self <: PartialAccordionStyle] (val x: Self) extends AnyVal {
+  extension [Self <: PartialAccordionStyle](x: Self) {
     
-    @scala.inline
-    def setArrow(value: TextStyle): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+    inline def setArrow(value: TextStyle): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
+    inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
     
-    @scala.inline
-    def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setContent(value: ViewStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ViewStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentText(value: TextStyle): Self = StObject.set(x, "contentText", value.asInstanceOf[js.Any])
+    inline def setContentText(value: TextStyle): Self = StObject.set(x, "contentText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTextUndefined: Self = StObject.set(x, "contentText", js.undefined)
+    inline def setContentTextUndefined: Self = StObject.set(x, "contentText", js.undefined)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setHeader(value: ViewStyle): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: ViewStyle): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderText(value: TextStyle): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
+    inline def setHeaderText(value: TextStyle): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderTextUndefined: Self = StObject.set(x, "headerText", js.undefined)
+    inline def setHeaderTextUndefined: Self = StObject.set(x, "headerText", js.undefined)
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setHeaderWrap(value: ViewStyle): Self = StObject.set(x, "headerWrap", value.asInstanceOf[js.Any])
+    inline def setHeaderWrap(value: ViewStyle): Self = StObject.set(x, "headerWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderWrapUndefined: Self = StObject.set(x, "headerWrap", js.undefined)
+    inline def setHeaderWrapUndefined: Self = StObject.set(x, "headerWrap", js.undefined)
   }
 }

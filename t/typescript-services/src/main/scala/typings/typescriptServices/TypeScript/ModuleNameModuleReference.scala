@@ -12,8 +12,7 @@ trait ModuleNameModuleReference
 }
 object ModuleNameModuleReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -40,10 +39,8 @@ object ModuleNameModuleReference {
     __obj.asInstanceOf[ModuleNameModuleReference]
   }
   
-  @scala.inline
-  implicit class ModuleNameModuleReferenceMutableBuilder[Self <: ModuleNameModuleReference] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleNameModuleReference](x: Self) {
     
-    @scala.inline
-    def setModuleName(value: AST): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
+    inline def setModuleName(value: AST): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
   }
 }

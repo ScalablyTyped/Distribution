@@ -16,29 +16,22 @@ object anon {
   }
   object ImportedBy {
     
-    @scala.inline
-    def apply(importedBy: js.Array[String], imports: js.Array[String], modified: String): ImportedBy = {
+    inline def apply(importedBy: js.Array[String], imports: js.Array[String], modified: String): ImportedBy = {
       val __obj = js.Dynamic.literal(importedBy = importedBy.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImportedBy]
     }
     
-    @scala.inline
-    implicit class ImportedByMutableBuilder[Self <: ImportedBy] (val x: Self) extends AnyVal {
+    extension [Self <: ImportedBy](x: Self) {
       
-      @scala.inline
-      def setImportedBy(value: js.Array[String]): Self = StObject.set(x, "importedBy", value.asInstanceOf[js.Any])
+      inline def setImportedBy(value: js.Array[String]): Self = StObject.set(x, "importedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportedByVarargs(value: String*): Self = StObject.set(x, "importedBy", js.Array(value :_*))
+      inline def setImportedByVarargs(value: String*): Self = StObject.set(x, "importedBy", js.Array(value :_*))
       
-      @scala.inline
-      def setImports(value: js.Array[String]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+      inline def setImports(value: js.Array[String]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportsVarargs(value: String*): Self = StObject.set(x, "imports", js.Array(value :_*))
+      inline def setImportsVarargs(value: String*): Self = StObject.set(x, "imports", js.Array(value :_*))
       
-      @scala.inline
-      def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     }
   }
 }

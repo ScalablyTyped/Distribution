@@ -20,17 +20,14 @@ object typesDeleteFunctionOutputMod {
   }
   object DeleteFunctionOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DeleteFunctionOutput = {
+    inline def apply($metadata: ResponseMetadata): DeleteFunctionOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteFunctionOutput]
     }
     
-    @scala.inline
-    implicit class DeleteFunctionOutputMutableBuilder[Self <: DeleteFunctionOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteFunctionOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

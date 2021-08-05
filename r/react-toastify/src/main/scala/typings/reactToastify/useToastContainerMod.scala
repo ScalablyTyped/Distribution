@@ -14,8 +14,7 @@ object useToastContainerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useToastContainer(props: ToastContainerProps): Collection = ^.asInstanceOf[js.Dynamic].applyDynamic("useToastContainer")(props.asInstanceOf[js.Any]).asInstanceOf[Collection]
+  inline def useToastContainer(props: ToastContainerProps): Collection = ^.asInstanceOf[js.Dynamic].applyDynamic("useToastContainer")(props.asInstanceOf[js.Any]).asInstanceOf[Collection]
   
   trait ContainerInstance extends StObject {
     
@@ -33,8 +32,7 @@ object useToastContainerMod {
   }
   object ContainerInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       displayedToast: Double,
       getToast: Id => Toast | Null,
       isToastActive: Id => Boolean,
@@ -45,32 +43,23 @@ object useToastContainerMod {
       __obj.asInstanceOf[ContainerInstance]
     }
     
-    @scala.inline
-    implicit class ContainerInstanceMutableBuilder[Self <: ContainerInstance] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerInstance](x: Self) {
       
-      @scala.inline
-      def setContainerId(value: Id): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+      inline def setContainerId(value: Id): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerIdNull: Self = StObject.set(x, "containerId", null)
+      inline def setContainerIdNull: Self = StObject.set(x, "containerId", null)
       
-      @scala.inline
-      def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+      inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
       
-      @scala.inline
-      def setDisplayedToast(value: Double): Self = StObject.set(x, "displayedToast", value.asInstanceOf[js.Any])
+      inline def setDisplayedToast(value: Double): Self = StObject.set(x, "displayedToast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetToast(value: Id => Toast | Null): Self = StObject.set(x, "getToast", js.Any.fromFunction1(value))
+      inline def setGetToast(value: Id => Toast | Null): Self = StObject.set(x, "getToast", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsToastActive(value: Id => Boolean): Self = StObject.set(x, "isToastActive", js.Any.fromFunction1(value))
+      inline def setIsToastActive(value: Id => Boolean): Self = StObject.set(x, "isToastActive", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProps(value: ToastContainerProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: ToastContainerProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToastKey(value: Double): Self = StObject.set(x, "toastKey", value.asInstanceOf[js.Any])
+      inline def setToastKey(value: Double): Self = StObject.set(x, "toastKey", value.asInstanceOf[js.Any])
     }
   }
 }

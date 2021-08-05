@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KeyType extends StObject
 object KeyType {
   
-  @scala.inline
-  def Array: array = "array".asInstanceOf[array]
+  inline def Array: array = "array".asInstanceOf[array]
   
-  @scala.inline
-  def Date: date = "date".asInstanceOf[date]
+  inline def Date: date = "date".asInstanceOf[date]
   
-  @scala.inline
-  def Number: number = "number".asInstanceOf[number]
+  inline def Number: number = "number".asInstanceOf[number]
   
-  @scala.inline
-  def String: string = "string".asInstanceOf[string]
+  inline def String: string = "string".asInstanceOf[string]
 }

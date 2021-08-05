@@ -13,19 +13,15 @@ trait PutResolverRulePolicyResponse extends StObject {
 }
 object PutResolverRulePolicyResponse {
   
-  @scala.inline
-  def apply(): PutResolverRulePolicyResponse = {
+  inline def apply(): PutResolverRulePolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutResolverRulePolicyResponse]
   }
   
-  @scala.inline
-  implicit class PutResolverRulePolicyResponseMutableBuilder[Self <: PutResolverRulePolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutResolverRulePolicyResponse](x: Self) {
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "ReturnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "ReturnValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValueUndefined: Self = StObject.set(x, "ReturnValue", js.undefined)
+    inline def setReturnValueUndefined: Self = StObject.set(x, "ReturnValue", js.undefined)
   }
 }

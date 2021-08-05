@@ -12,25 +12,19 @@ trait LocalForageDbInstanceOptions extends StObject {
 }
 object LocalForageDbInstanceOptions {
   
-  @scala.inline
-  def apply(): LocalForageDbInstanceOptions = {
+  inline def apply(): LocalForageDbInstanceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalForageDbInstanceOptions]
   }
   
-  @scala.inline
-  implicit class LocalForageDbInstanceOptionsMutableBuilder[Self <: LocalForageDbInstanceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LocalForageDbInstanceOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
+    inline def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreNameUndefined: Self = StObject.set(x, "storeName", js.undefined)
+    inline def setStoreNameUndefined: Self = StObject.set(x, "storeName", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait QFieldValues extends StObject {
 }
 object QFieldValues {
   
-  @scala.inline
-  def apply(qFieldValues: js.Array[IFieldValue]): QFieldValues = {
+  inline def apply(qFieldValues: js.Array[IFieldValue]): QFieldValues = {
     val __obj = js.Dynamic.literal(qFieldValues = qFieldValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[QFieldValues]
   }
   
-  @scala.inline
-  implicit class QFieldValuesMutableBuilder[Self <: QFieldValues] (val x: Self) extends AnyVal {
+  extension [Self <: QFieldValues](x: Self) {
     
-    @scala.inline
-    def setQFieldValues(value: js.Array[IFieldValue]): Self = StObject.set(x, "qFieldValues", value.asInstanceOf[js.Any])
+    inline def setQFieldValues(value: js.Array[IFieldValue]): Self = StObject.set(x, "qFieldValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldValuesVarargs(value: IFieldValue*): Self = StObject.set(x, "qFieldValues", js.Array(value :_*))
+    inline def setQFieldValuesVarargs(value: IFieldValue*): Self = StObject.set(x, "qFieldValues", js.Array(value :_*))
   }
 }

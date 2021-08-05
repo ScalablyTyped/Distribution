@@ -13,19 +13,15 @@ trait AddressName extends StObject {
 }
 object AddressName {
   
-  @scala.inline
-  def apply(address: ICardholderBillingAddress, name: String): AddressName = {
+  inline def apply(address: ICardholderBillingAddress, name: String): AddressName = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressName]
   }
   
-  @scala.inline
-  implicit class AddressNameMutableBuilder[Self <: AddressName] (val x: Self) extends AnyVal {
+  extension [Self <: AddressName](x: Self) {
     
-    @scala.inline
-    def setAddress(value: ICardholderBillingAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: ICardholderBillingAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

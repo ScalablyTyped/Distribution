@@ -40,48 +40,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChannelType extends StObject
 object ChannelType {
   
-  @scala.inline
-  def FLOAT: `0x10DE` = 0x10DE.asInstanceOf[`0x10DE`]
+  inline def FLOAT: `0x10DE` = 0x10DE.asInstanceOf[`0x10DE`]
   
-  @scala.inline
-  def HALF_FLOAT: `0x10DD` = 0x10DD.asInstanceOf[`0x10DD`]
+  inline def HALF_FLOAT: `0x10DD` = 0x10DD.asInstanceOf[`0x10DD`]
   
-  @scala.inline
-  def SIGNED_INT16: `0x10D8` = 0x10D8.asInstanceOf[`0x10D8`]
+  inline def SIGNED_INT16: `0x10D8` = 0x10D8.asInstanceOf[`0x10D8`]
   
-  @scala.inline
-  def SIGNED_INT32: `0x10D9` = 0x10D9.asInstanceOf[`0x10D9`]
+  inline def SIGNED_INT32: `0x10D9` = 0x10D9.asInstanceOf[`0x10D9`]
   
-  @scala.inline
-  def SIGNED_INT8: `0x10D7` = 0x10D7.asInstanceOf[`0x10D7`]
+  inline def SIGNED_INT8: `0x10D7` = 0x10D7.asInstanceOf[`0x10D7`]
   
-  @scala.inline
-  def SNORM_INT16: `0x10D1` = 0x10D1.asInstanceOf[`0x10D1`]
+  inline def SNORM_INT16: `0x10D1` = 0x10D1.asInstanceOf[`0x10D1`]
   
-  @scala.inline
-  def SNORM_INT8: `0x10D0` = 0x10D0.asInstanceOf[`0x10D0`]
+  inline def SNORM_INT8: `0x10D0` = 0x10D0.asInstanceOf[`0x10D0`]
   
-  @scala.inline
-  def UNORM_INT16: `0x10D3` = 0x10D3.asInstanceOf[`0x10D3`]
+  inline def UNORM_INT16: `0x10D3` = 0x10D3.asInstanceOf[`0x10D3`]
   
-  @scala.inline
-  def UNORM_INT8: `0x10D2` = 0x10D2.asInstanceOf[`0x10D2`]
+  inline def UNORM_INT8: `0x10D2` = 0x10D2.asInstanceOf[`0x10D2`]
   
-  @scala.inline
-  def UNORM_INT_101010: `0x10D6` = 0x10D6.asInstanceOf[`0x10D6`]
+  inline def UNORM_INT_101010: `0x10D6` = 0x10D6.asInstanceOf[`0x10D6`]
   
-  @scala.inline
-  def UNORM_SHORT_555: `0x10D5` = 0x10D5.asInstanceOf[`0x10D5`]
+  inline def UNORM_SHORT_555: `0x10D5` = 0x10D5.asInstanceOf[`0x10D5`]
   
-  @scala.inline
-  def UNORM_SHORT_565: `0x10D4` = 0x10D4.asInstanceOf[`0x10D4`]
+  inline def UNORM_SHORT_565: `0x10D4` = 0x10D4.asInstanceOf[`0x10D4`]
   
-  @scala.inline
-  def UNSIGNED_INT16: `0x10DB` = 0x10DB.asInstanceOf[`0x10DB`]
+  inline def UNSIGNED_INT16: `0x10DB` = 0x10DB.asInstanceOf[`0x10DB`]
   
-  @scala.inline
-  def UNSIGNED_INT32: `0x10DC` = 0x10DC.asInstanceOf[`0x10DC`]
+  inline def UNSIGNED_INT32: `0x10DC` = 0x10DC.asInstanceOf[`0x10DC`]
   
-  @scala.inline
-  def UNSIGNED_INT8: `0x10DA` = 0x10DA.asInstanceOf[`0x10DA`]
+  inline def UNSIGNED_INT8: `0x10DA` = 0x10DA.asInstanceOf[`0x10DA`]
 }

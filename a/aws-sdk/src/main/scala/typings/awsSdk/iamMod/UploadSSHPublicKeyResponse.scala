@@ -13,19 +13,15 @@ trait UploadSSHPublicKeyResponse extends StObject {
 }
 object UploadSSHPublicKeyResponse {
   
-  @scala.inline
-  def apply(): UploadSSHPublicKeyResponse = {
+  inline def apply(): UploadSSHPublicKeyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadSSHPublicKeyResponse]
   }
   
-  @scala.inline
-  implicit class UploadSSHPublicKeyResponseMutableBuilder[Self <: UploadSSHPublicKeyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UploadSSHPublicKeyResponse](x: Self) {
     
-    @scala.inline
-    def setSSHPublicKey(value: SSHPublicKey): Self = StObject.set(x, "SSHPublicKey", value.asInstanceOf[js.Any])
+    inline def setSSHPublicKey(value: SSHPublicKey): Self = StObject.set(x, "SSHPublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSHPublicKeyUndefined: Self = StObject.set(x, "SSHPublicKey", js.undefined)
+    inline def setSSHPublicKeyUndefined: Self = StObject.set(x, "SSHPublicKey", js.undefined)
   }
 }

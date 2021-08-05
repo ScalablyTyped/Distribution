@@ -23,19 +23,15 @@ trait CompositeDisposable
 }
 object CompositeDisposable {
   
-  @scala.inline
-  def apply(add: IDisposable => Unit, dispose: () => Unit, remove: IDisposable => Unit): CompositeDisposable = {
+  inline def apply(add: IDisposable => Unit, dispose: () => Unit, remove: IDisposable => Unit): CompositeDisposable = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), dispose = js.Any.fromFunction0(dispose), remove = js.Any.fromFunction1(remove))
     __obj.asInstanceOf[CompositeDisposable]
   }
   
-  @scala.inline
-  implicit class CompositeDisposableMutableBuilder[Self <: CompositeDisposable] (val x: Self) extends AnyVal {
+  extension [Self <: CompositeDisposable](x: Self) {
     
-    @scala.inline
-    def setAdd(value: IDisposable => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: IDisposable => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: IDisposable => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: IDisposable => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

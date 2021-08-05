@@ -32,8 +32,7 @@ trait ExtKeyUsage
 }
 object ExtKeyUsage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getExtnValueHex: () => String,
     getFreshValueHex: () => String,
@@ -50,13 +49,10 @@ object ExtKeyUsage {
     __obj.asInstanceOf[ExtKeyUsage]
   }
   
-  @scala.inline
-  implicit class ExtKeyUsageMutableBuilder[Self <: ExtKeyUsage] (val x: Self) extends AnyVal {
+  extension [Self <: ExtKeyUsage](x: Self) {
     
-    @scala.inline
-    def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
+    inline def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetPurposeArray(value: js.Array[ObjectIdentifierParam | HexParam | NameParam] => Unit): Self = StObject.set(x, "setPurposeArray", js.Any.fromFunction1(value))
+    inline def setSetPurposeArray(value: js.Array[ObjectIdentifierParam | HexParam | NameParam] => Unit): Self = StObject.set(x, "setPurposeArray", js.Any.fromFunction1(value))
   }
 }

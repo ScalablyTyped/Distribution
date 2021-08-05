@@ -10,16 +10,13 @@ trait Increment extends StObject {
 }
 object Increment {
   
-  @scala.inline
-  def apply(increment: Double): Increment = {
+  inline def apply(increment: Double): Increment = {
     val __obj = js.Dynamic.literal(increment = increment.asInstanceOf[js.Any])
     __obj.asInstanceOf[Increment]
   }
   
-  @scala.inline
-  implicit class IncrementMutableBuilder[Self <: Increment] (val x: Self) extends AnyVal {
+  extension [Self <: Increment](x: Self) {
     
-    @scala.inline
-    def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
+    inline def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
   }
 }

@@ -53,55 +53,39 @@ trait AddPermissionRequest extends StObject {
 }
 object AddPermissionRequest {
   
-  @scala.inline
-  def apply(Action: Action, FunctionName: FunctionName, Principal: Principal, StatementId: StatementId): AddPermissionRequest = {
+  inline def apply(Action: Action, FunctionName: FunctionName, Principal: Principal, StatementId: StatementId): AddPermissionRequest = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], FunctionName = FunctionName.asInstanceOf[js.Any], Principal = Principal.asInstanceOf[js.Any], StatementId = StatementId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddPermissionRequest]
   }
   
-  @scala.inline
-  implicit class AddPermissionRequestMutableBuilder[Self <: AddPermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddPermissionRequest](x: Self) {
     
-    @scala.inline
-    def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSourceToken(value: EventSourceToken): Self = StObject.set(x, "EventSourceToken", value.asInstanceOf[js.Any])
+    inline def setEventSourceToken(value: EventSourceToken): Self = StObject.set(x, "EventSourceToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSourceTokenUndefined: Self = StObject.set(x, "EventSourceToken", js.undefined)
+    inline def setEventSourceTokenUndefined: Self = StObject.set(x, "EventSourceToken", js.undefined)
     
-    @scala.inline
-    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipal(value: Principal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: Principal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
+    inline def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
+    inline def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
     
-    @scala.inline
-    def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
     
-    @scala.inline
-    def setSourceAccount(value: SourceOwner): Self = StObject.set(x, "SourceAccount", value.asInstanceOf[js.Any])
+    inline def setSourceAccount(value: SourceOwner): Self = StObject.set(x, "SourceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceAccountUndefined: Self = StObject.set(x, "SourceAccount", js.undefined)
+    inline def setSourceAccountUndefined: Self = StObject.set(x, "SourceAccount", js.undefined)
     
-    @scala.inline
-    def setSourceArn(value: Arn): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
+    inline def setSourceArn(value: Arn): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
+    inline def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
     
-    @scala.inline
-    def setStatementId(value: StatementId): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
+    inline def setStatementId(value: StatementId): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
   }
 }

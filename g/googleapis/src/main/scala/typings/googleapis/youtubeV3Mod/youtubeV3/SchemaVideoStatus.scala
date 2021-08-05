@@ -58,61 +58,43 @@ trait SchemaVideoStatus extends StObject {
 }
 object SchemaVideoStatus {
   
-  @scala.inline
-  def apply(): SchemaVideoStatus = {
+  inline def apply(): SchemaVideoStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoStatus]
   }
   
-  @scala.inline
-  implicit class SchemaVideoStatusMutableBuilder[Self <: SchemaVideoStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoStatus](x: Self) {
     
-    @scala.inline
-    def setEmbeddable(value: Boolean): Self = StObject.set(x, "embeddable", value.asInstanceOf[js.Any])
+    inline def setEmbeddable(value: Boolean): Self = StObject.set(x, "embeddable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddableUndefined: Self = StObject.set(x, "embeddable", js.undefined)
+    inline def setEmbeddableUndefined: Self = StObject.set(x, "embeddable", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
-    @scala.inline
-    def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    inline def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
+    inline def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
     
-    @scala.inline
-    def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
+    inline def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacyStatusUndefined: Self = StObject.set(x, "privacyStatus", js.undefined)
+    inline def setPrivacyStatusUndefined: Self = StObject.set(x, "privacyStatus", js.undefined)
     
-    @scala.inline
-    def setPublicStatsViewable(value: Boolean): Self = StObject.set(x, "publicStatsViewable", value.asInstanceOf[js.Any])
+    inline def setPublicStatsViewable(value: Boolean): Self = StObject.set(x, "publicStatsViewable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicStatsViewableUndefined: Self = StObject.set(x, "publicStatsViewable", js.undefined)
+    inline def setPublicStatsViewableUndefined: Self = StObject.set(x, "publicStatsViewable", js.undefined)
     
-    @scala.inline
-    def setPublishAt(value: String): Self = StObject.set(x, "publishAt", value.asInstanceOf[js.Any])
+    inline def setPublishAt(value: String): Self = StObject.set(x, "publishAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishAtUndefined: Self = StObject.set(x, "publishAt", js.undefined)
+    inline def setPublishAtUndefined: Self = StObject.set(x, "publishAt", js.undefined)
     
-    @scala.inline
-    def setRejectionReason(value: String): Self = StObject.set(x, "rejectionReason", value.asInstanceOf[js.Any])
+    inline def setRejectionReason(value: String): Self = StObject.set(x, "rejectionReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectionReasonUndefined: Self = StObject.set(x, "rejectionReason", js.undefined)
+    inline def setRejectionReasonUndefined: Self = StObject.set(x, "rejectionReason", js.undefined)
     
-    @scala.inline
-    def setUploadStatus(value: String): Self = StObject.set(x, "uploadStatus", value.asInstanceOf[js.Any])
+    inline def setUploadStatus(value: String): Self = StObject.set(x, "uploadStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadStatusUndefined: Self = StObject.set(x, "uploadStatus", js.undefined)
+    inline def setUploadStatusUndefined: Self = StObject.set(x, "uploadStatus", js.undefined)
   }
 }

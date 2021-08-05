@@ -13,16 +13,13 @@ trait PublishRecipeResponse extends StObject {
 }
 object PublishRecipeResponse {
   
-  @scala.inline
-  def apply(Name: RecipeName): PublishRecipeResponse = {
+  inline def apply(Name: RecipeName): PublishRecipeResponse = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishRecipeResponse]
   }
   
-  @scala.inline
-  implicit class PublishRecipeResponseMutableBuilder[Self <: PublishRecipeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PublishRecipeResponse](x: Self) {
     
-    @scala.inline
-    def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

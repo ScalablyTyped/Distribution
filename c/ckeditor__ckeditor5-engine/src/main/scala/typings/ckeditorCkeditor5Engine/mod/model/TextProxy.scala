@@ -14,7 +14,7 @@ class TextProxy protected ()
   extends StObject
      with Item
      with _NodeSet {
-  protected def this(textNode: Text, offsetInText: Double, length: Double) = this()
+  /* protected */ def this(textNode: Text, offsetInText: Double, length: Double) = this()
   
   val data: String = js.native
   

@@ -33,25 +33,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object http2 {
   
-  @scala.inline
-  def apply(): http2 = {
+  inline def apply(): http2 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[http2]
   }
   
-  @scala.inline
-  implicit class http2MutableBuilder[Self <: http2] (val x: Self) extends AnyVal {
+  extension [Self <: http2](x: Self) {
     
-    @scala.inline
-    def setClient(value: Http2Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: Http2Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+    inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
-    @scala.inline
-    def setServer(value: Http2Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: Http2Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

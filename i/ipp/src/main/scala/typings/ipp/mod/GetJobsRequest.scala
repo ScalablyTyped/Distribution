@@ -11,17 +11,14 @@ trait GetJobsRequest extends StObject {
 }
 object GetJobsRequest {
   
-  @scala.inline
-  def apply(`operation-attributes-tag`: Limit): GetJobsRequest = {
+  inline def apply(`operation-attributes-tag`: Limit): GetJobsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("operation-attributes-tag")(`operation-attributes-tag`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJobsRequest]
   }
   
-  @scala.inline
-  implicit class GetJobsRequestMutableBuilder[Self <: GetJobsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetJobsRequest](x: Self) {
     
-    @scala.inline
-    def `setOperation-attributes-tag`(value: Limit): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setOperation-attributes-tag`(value: Limit): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
   }
 }

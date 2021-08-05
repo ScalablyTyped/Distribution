@@ -104,118 +104,81 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TestReport {
   
-  @scala.inline
-  def apply(result: code, status: code, testScript: Reference): TestReport = {
+  inline def apply(result: code, status: code, testScript: Reference): TestReport = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], testScript = testScript.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestReport]
   }
   
-  @scala.inline
-  implicit class TestReportMutableBuilder[Self <: TestReport] (val x: Self) extends AnyVal {
+  extension [Self <: TestReport](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setIssued(value: dateTime): Self = StObject.set(x, "issued", value.asInstanceOf[js.Any])
+    inline def setIssued(value: dateTime): Self = StObject.set(x, "issued", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuedUndefined: Self = StObject.set(x, "issued", js.undefined)
+    inline def setIssuedUndefined: Self = StObject.set(x, "issued", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParticipant(value: js.Array[TestReportParticipant]): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
+    inline def setParticipant(value: js.Array[TestReportParticipant]): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantUndefined: Self = StObject.set(x, "participant", js.undefined)
+    inline def setParticipantUndefined: Self = StObject.set(x, "participant", js.undefined)
     
-    @scala.inline
-    def setParticipantVarargs(value: TestReportParticipant*): Self = StObject.set(x, "participant", js.Array(value :_*))
+    inline def setParticipantVarargs(value: TestReportParticipant*): Self = StObject.set(x, "participant", js.Array(value :_*))
     
-    @scala.inline
-    def setResult(value: code): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: code): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScore(value: decimal): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: decimal): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
-    @scala.inline
-    def setSetup(value: TestReportSetup): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
+    inline def setSetup(value: TestReportSetup): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
+    inline def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
     
-    @scala.inline
-    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeardown(value: TestReportTeardown): Self = StObject.set(x, "teardown", value.asInstanceOf[js.Any])
+    inline def setTeardown(value: TestReportTeardown): Self = StObject.set(x, "teardown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeardownUndefined: Self = StObject.set(x, "teardown", js.undefined)
+    inline def setTeardownUndefined: Self = StObject.set(x, "teardown", js.undefined)
     
-    @scala.inline
-    def setTest(value: js.Array[TestReportTest]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: js.Array[TestReportTest]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestScript(value: Reference): Self = StObject.set(x, "testScript", value.asInstanceOf[js.Any])
+    inline def setTestScript(value: Reference): Self = StObject.set(x, "testScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+    inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
-    @scala.inline
-    def setTestVarargs(value: TestReportTest*): Self = StObject.set(x, "test", js.Array(value :_*))
+    inline def setTestVarargs(value: TestReportTest*): Self = StObject.set(x, "test", js.Array(value :_*))
     
-    @scala.inline
-    def setTester(value: String): Self = StObject.set(x, "tester", value.asInstanceOf[js.Any])
+    inline def setTester(value: String): Self = StObject.set(x, "tester", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTesterUndefined: Self = StObject.set(x, "tester", js.undefined)
+    inline def setTesterUndefined: Self = StObject.set(x, "tester", js.undefined)
     
-    @scala.inline
-    def set_issued(value: Element): Self = StObject.set(x, "_issued", value.asInstanceOf[js.Any])
+    inline def set_issued(value: Element): Self = StObject.set(x, "_issued", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_issuedUndefined: Self = StObject.set(x, "_issued", js.undefined)
+    inline def set_issuedUndefined: Self = StObject.set(x, "_issued", js.undefined)
     
-    @scala.inline
-    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
-    @scala.inline
-    def set_result(value: Element): Self = StObject.set(x, "_result", value.asInstanceOf[js.Any])
+    inline def set_result(value: Element): Self = StObject.set(x, "_result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_resultUndefined: Self = StObject.set(x, "_result", js.undefined)
+    inline def set_resultUndefined: Self = StObject.set(x, "_result", js.undefined)
     
-    @scala.inline
-    def set_score(value: Element): Self = StObject.set(x, "_score", value.asInstanceOf[js.Any])
+    inline def set_score(value: Element): Self = StObject.set(x, "_score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_scoreUndefined: Self = StObject.set(x, "_score", js.undefined)
+    inline def set_scoreUndefined: Self = StObject.set(x, "_score", js.undefined)
     
-    @scala.inline
-    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
+    inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
+    inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
     
-    @scala.inline
-    def set_tester(value: Element): Self = StObject.set(x, "_tester", value.asInstanceOf[js.Any])
+    inline def set_tester(value: Element): Self = StObject.set(x, "_tester", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_testerUndefined: Self = StObject.set(x, "_tester", js.undefined)
+    inline def set_testerUndefined: Self = StObject.set(x, "_tester", js.undefined)
   }
 }

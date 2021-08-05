@@ -24,8 +24,7 @@ object sliderMod {
     @JSImport("antd-mobile/lib/slider", "default.defaultProps")
     @js.native
     def defaultProps: PrefixCls = js.native
-    @scala.inline
-    def defaultProps_=(x: PrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -56,68 +55,48 @@ object sliderMod {
   }
   object SliderProps {
     
-    @scala.inline
-    def apply(): SliderProps = {
+    inline def apply(): SliderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SliderProps]
     }
     
-    @scala.inline
-    implicit class SliderPropsMutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
+    extension [Self <: SliderProps](x: Self) {
       
-      @scala.inline
-      def setDots(value: Boolean): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
+      inline def setDots(value: Boolean): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
+      inline def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
       
-      @scala.inline
-      def setHandleStyle(value: CSSProperties): Self = StObject.set(x, "handleStyle", value.asInstanceOf[js.Any])
+      inline def setHandleStyle(value: CSSProperties): Self = StObject.set(x, "handleStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleStyleUndefined: Self = StObject.set(x, "handleStyle", js.undefined)
+      inline def setHandleStyleUndefined: Self = StObject.set(x, "handleStyle", js.undefined)
       
-      @scala.inline
-      def setIncluded(value: Boolean): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
+      inline def setIncluded(value: Boolean): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
+      inline def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
       
-      @scala.inline
-      def setMarks(value: NumberDictionary[String]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
+      inline def setMarks(value: NumberDictionary[String]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
+      inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
       
-      @scala.inline
-      def setMaximumTrackStyle(value: CSSProperties): Self = StObject.set(x, "maximumTrackStyle", value.asInstanceOf[js.Any])
+      inline def setMaximumTrackStyle(value: CSSProperties): Self = StObject.set(x, "maximumTrackStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumTrackStyleUndefined: Self = StObject.set(x, "maximumTrackStyle", js.undefined)
+      inline def setMaximumTrackStyleUndefined: Self = StObject.set(x, "maximumTrackStyle", js.undefined)
       
-      @scala.inline
-      def setMinimumTrackStyle(value: CSSProperties): Self = StObject.set(x, "minimumTrackStyle", value.asInstanceOf[js.Any])
+      inline def setMinimumTrackStyle(value: CSSProperties): Self = StObject.set(x, "minimumTrackStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumTrackStyleUndefined: Self = StObject.set(x, "minimumTrackStyle", js.undefined)
+      inline def setMinimumTrackStyleUndefined: Self = StObject.set(x, "minimumTrackStyle", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setRailStyle(value: CSSProperties): Self = StObject.set(x, "railStyle", value.asInstanceOf[js.Any])
+      inline def setRailStyle(value: CSSProperties): Self = StObject.set(x, "railStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRailStyleUndefined: Self = StObject.set(x, "railStyle", js.undefined)
+      inline def setRailStyleUndefined: Self = StObject.set(x, "railStyle", js.undefined)
       
-      @scala.inline
-      def setTrackStyle(value: CSSProperties): Self = StObject.set(x, "trackStyle", value.asInstanceOf[js.Any])
+      inline def setTrackStyle(value: CSSProperties): Self = StObject.set(x, "trackStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackStyleUndefined: Self = StObject.set(x, "trackStyle", js.undefined)
+      inline def setTrackStyleUndefined: Self = StObject.set(x, "trackStyle", js.undefined)
     }
   }
 }

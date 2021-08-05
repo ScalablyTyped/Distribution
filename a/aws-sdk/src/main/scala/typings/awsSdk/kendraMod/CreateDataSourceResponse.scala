@@ -13,16 +13,13 @@ trait CreateDataSourceResponse extends StObject {
 }
 object CreateDataSourceResponse {
   
-  @scala.inline
-  def apply(Id: DataSourceId): CreateDataSourceResponse = {
+  inline def apply(Id: DataSourceId): CreateDataSourceResponse = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDataSourceResponse]
   }
   
-  @scala.inline
-  implicit class CreateDataSourceResponseMutableBuilder[Self <: CreateDataSourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDataSourceResponse](x: Self) {
     
-    @scala.inline
-    def setId(value: DataSourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: DataSourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

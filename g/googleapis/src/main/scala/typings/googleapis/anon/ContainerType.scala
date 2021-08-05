@@ -14,31 +14,23 @@ trait ContainerType extends StObject {
 }
 object ContainerType {
   
-  @scala.inline
-  def apply(): ContainerType = {
+  inline def apply(): ContainerType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerType]
   }
   
-  @scala.inline
-  implicit class ContainerTypeMutableBuilder[Self <: ContainerType] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerType](x: Self) {
     
-    @scala.inline
-    def setContainerType(value: String): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
+    inline def setContainerType(value: String): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerTypeUndefined: Self = StObject.set(x, "containerType", js.undefined)
+    inline def setContainerTypeUndefined: Self = StObject.set(x, "containerType", js.undefined)
     
-    @scala.inline
-    def setSha1Checksum(value: String): Self = StObject.set(x, "sha1Checksum", value.asInstanceOf[js.Any])
+    inline def setSha1Checksum(value: String): Self = StObject.set(x, "sha1Checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha1ChecksumUndefined: Self = StObject.set(x, "sha1Checksum", js.undefined)
+    inline def setSha1ChecksumUndefined: Self = StObject.set(x, "sha1Checksum", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait DescribePatchGroupsResult extends StObject {
 }
 object DescribePatchGroupsResult {
   
-  @scala.inline
-  def apply(): DescribePatchGroupsResult = {
+  inline def apply(): DescribePatchGroupsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePatchGroupsResult]
   }
   
-  @scala.inline
-  implicit class DescribePatchGroupsResultMutableBuilder[Self <: DescribePatchGroupsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePatchGroupsResult](x: Self) {
     
-    @scala.inline
-    def setMappings(value: PatchGroupPatchBaselineMappingList): Self = StObject.set(x, "Mappings", value.asInstanceOf[js.Any])
+    inline def setMappings(value: PatchGroupPatchBaselineMappingList): Self = StObject.set(x, "Mappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingsUndefined: Self = StObject.set(x, "Mappings", js.undefined)
+    inline def setMappingsUndefined: Self = StObject.set(x, "Mappings", js.undefined)
     
-    @scala.inline
-    def setMappingsVarargs(value: PatchGroupPatchBaselineMapping*): Self = StObject.set(x, "Mappings", js.Array(value :_*))
+    inline def setMappingsVarargs(value: PatchGroupPatchBaselineMapping*): Self = StObject.set(x, "Mappings", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

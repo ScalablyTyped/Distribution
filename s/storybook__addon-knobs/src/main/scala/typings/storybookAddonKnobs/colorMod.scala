@@ -25,20 +25,16 @@ object colorMod {
     @JSImport("@storybook/addon-knobs/dist/components/types/Color", "default.defaultProps")
     @js.native
     def defaultProps: ColorTypeProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ColorTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ColorTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def deserialize(value: ColorTypeKnobValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def deserialize(value: ColorTypeKnobValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Color", "default.propTypes")
     @js.native
     def propTypes: OnChange = js.native
-    @scala.inline
-    def propTypes_=(x: OnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: OnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serialize(value: ColorTypeKnobValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def serialize(value: ColorTypeKnobValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @js.native
@@ -51,9 +47,9 @@ object colorMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MColorType(): Unit = js.native
     
-    var handleChange: js.Any = js.native
+    /* private */ var handleChange: js.Any = js.native
     
-    var handleClick: js.Any = js.native
+    /* private */ var handleClick: js.Any = js.native
     
     def handleWindowMouseDown(e: MouseEvent): Unit = js.native
     
@@ -75,17 +71,14 @@ object colorMod {
   }
   object ColorTypeState {
     
-    @scala.inline
-    def apply(displayColorPicker: Boolean): ColorTypeState = {
+    inline def apply(displayColorPicker: Boolean): ColorTypeState = {
       val __obj = js.Dynamic.literal(displayColorPicker = displayColorPicker.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColorTypeState]
     }
     
-    @scala.inline
-    implicit class ColorTypeStateMutableBuilder[Self <: ColorTypeState] (val x: Self) extends AnyVal {
+    extension [Self <: ColorTypeState](x: Self) {
       
-      @scala.inline
-      def setDisplayColorPicker(value: Boolean): Self = StObject.set(x, "displayColorPicker", value.asInstanceOf[js.Any])
+      inline def setDisplayColorPicker(value: Boolean): Self = StObject.set(x, "displayColorPicker", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -19,28 +19,21 @@ trait Enabled[TInstProps /* <: TProps */, TProps /* <: NodeProperties */] extend
 }
 object Enabled {
   
-  @scala.inline
-  def apply[TInstProps /* <: TProps */, TProps /* <: NodeProperties */](onclick: () => Unit): Enabled[TInstProps, TProps] = {
+  inline def apply[TInstProps /* <: TProps */, TProps /* <: NodeProperties */](onclick: () => Unit): Enabled[TInstProps, TProps] = {
     val __obj = js.Dynamic.literal(onclick = js.Any.fromFunction0(onclick))
     __obj.asInstanceOf[Enabled[TInstProps, TProps]]
   }
   
-  @scala.inline
-  implicit class EnabledMutableBuilder[Self <: Enabled[?, ?], TInstProps /* <: TProps */, TProps /* <: NodeProperties */] (val x: Self & (Enabled[TInstProps, TProps])) extends AnyVal {
+  extension [Self <: Enabled[?, ?], TInstProps /* <: TProps */, TProps /* <: NodeProperties */](x: Self & (Enabled[TInstProps, TProps])) {
     
-    @scala.inline
-    def setEnabled(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setOnclick(value: () => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction0(value))
+    inline def setOnclick(value: () => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVisible(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Boolean]): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: js.ThisFunction0[/* this */ NodeInstance[TInstProps], Boolean]): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

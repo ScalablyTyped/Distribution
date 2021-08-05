@@ -14,8 +14,7 @@ trait Resolve extends StObject {
 }
 object Resolve {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.APIWithExtraOptions<(ipfsPath : imported_cids, options : imported_get.GetOptions & imported_utils.AbortOptions | undefined): Promise<imported_get.DagEntry>, imported_src.HttpOptions> */ js.Any,
     put: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.APIWithExtraOptions<(dagNode : any, options : imported_put.PutOptions & imported_utils.AbortOptions | undefined): Promise<imported_cids>, imported_src.HttpOptions> */ js.Any,
     resolve: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.APIWithExtraOptions<(ipfsPath : string | imported_cids, options : imported_resolve.ResolveOptions & imported_utils.AbortOptions | undefined): Promise<imported_resolve.ResolveResult>, imported_src.HttpOptions> */ js.Any
@@ -24,21 +23,17 @@ object Resolve {
     __obj.asInstanceOf[Resolve]
   }
   
-  @scala.inline
-  implicit class ResolveMutableBuilder[Self <: Resolve] (val x: Self) extends AnyVal {
+  extension [Self <: Resolve](x: Self) {
     
-    @scala.inline
-    def setGet(
+    inline def setGet(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.APIWithExtraOptions<(ipfsPath : imported_cids, options : imported_get.GetOptions & imported_utils.AbortOptions | undefined): Promise<imported_get.DagEntry>, imported_src.HttpOptions> */ js.Any
     ): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPut(
+    inline def setPut(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.APIWithExtraOptions<(dagNode : any, options : imported_put.PutOptions & imported_utils.AbortOptions | undefined): Promise<imported_cids>, imported_src.HttpOptions> */ js.Any
     ): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolve(
+    inline def setResolve(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.APIWithExtraOptions<(ipfsPath : string | imported_cids, options : imported_resolve.ResolveOptions & imported_utils.AbortOptions | undefined): Promise<imported_resolve.ResolveResult>, imported_src.HttpOptions> */ js.Any
     ): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
   }

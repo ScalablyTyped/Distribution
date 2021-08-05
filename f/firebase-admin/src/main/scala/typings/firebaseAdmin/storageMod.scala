@@ -10,10 +10,8 @@ object storageMod {
   
   object storage {
     
-    @scala.inline
-    def apply(): Storage = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Storage]
-    @scala.inline
-    def apply(app: App): Storage = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Storage]
+    inline def apply(): Storage = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Storage]
+    inline def apply(app: App): Storage = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Storage]
     
     @JSImport("firebase-admin/lib/storage", "storage")
     @js.native

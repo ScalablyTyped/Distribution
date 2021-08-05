@@ -19,6 +19,5 @@ class Sticky protected ()
 }
 object Sticky {
   
-  @scala.inline
-  def apply: ComponentClass[StickyProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("Sticky").asInstanceOf[ComponentClass[StickyProps, ComponentState]]
+  inline def apply: ComponentClass[StickyProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("Sticky").asInstanceOf[ComponentClass[StickyProps, ComponentState]]
 }

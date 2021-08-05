@@ -17,6 +17,5 @@ trait BaseBind extends StObject {
 }
 object BaseBind {
   
-  @scala.inline
-  def apply: BaseBind = ^.asInstanceOf[js.Dynamic].selectDynamic("BaseBind").asInstanceOf[BaseBind]
+  inline def apply: BaseBind = ^.asInstanceOf[js.Dynamic].selectDynamic("BaseBind").asInstanceOf[BaseBind]
 }

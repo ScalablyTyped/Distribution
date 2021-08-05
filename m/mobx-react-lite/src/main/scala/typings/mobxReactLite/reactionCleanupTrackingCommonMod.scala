@@ -20,8 +20,7 @@ object reactionCleanupTrackingCommonMod {
   @js.native
   val CLEANUP_TIMER_LOOP_MILLIS: /* 10000 */ Double = js.native
   
-  @scala.inline
-  def createTrackingData(reaction: Reaction_): IReactionTracking = ^.asInstanceOf[js.Dynamic].applyDynamic("createTrackingData")(reaction.asInstanceOf[js.Any]).asInstanceOf[IReactionTracking]
+  inline def createTrackingData(reaction: Reaction_): IReactionTracking = ^.asInstanceOf[js.Dynamic].applyDynamic("createTrackingData")(reaction.asInstanceOf[js.Any]).asInstanceOf[IReactionTracking]
   
   trait IReactionTracking extends StObject {
     
@@ -54,32 +53,24 @@ object reactionCleanupTrackingCommonMod {
   }
   object IReactionTracking {
     
-    @scala.inline
-    def apply(changedBeforeMount: Boolean, cleanAt: Double, mounted: Boolean, reaction: Reaction_): IReactionTracking = {
+    inline def apply(changedBeforeMount: Boolean, cleanAt: Double, mounted: Boolean, reaction: Reaction_): IReactionTracking = {
       val __obj = js.Dynamic.literal(changedBeforeMount = changedBeforeMount.asInstanceOf[js.Any], cleanAt = cleanAt.asInstanceOf[js.Any], mounted = mounted.asInstanceOf[js.Any], reaction = reaction.asInstanceOf[js.Any])
       __obj.asInstanceOf[IReactionTracking]
     }
     
-    @scala.inline
-    implicit class IReactionTrackingMutableBuilder[Self <: IReactionTracking] (val x: Self) extends AnyVal {
+    extension [Self <: IReactionTracking](x: Self) {
       
-      @scala.inline
-      def setChangedBeforeMount(value: Boolean): Self = StObject.set(x, "changedBeforeMount", value.asInstanceOf[js.Any])
+      inline def setChangedBeforeMount(value: Boolean): Self = StObject.set(x, "changedBeforeMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleanAt(value: Double): Self = StObject.set(x, "cleanAt", value.asInstanceOf[js.Any])
+      inline def setCleanAt(value: Double): Self = StObject.set(x, "cleanAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalizationRegistryCleanupToken(value: Double): Self = StObject.set(x, "finalizationRegistryCleanupToken", value.asInstanceOf[js.Any])
+      inline def setFinalizationRegistryCleanupToken(value: Double): Self = StObject.set(x, "finalizationRegistryCleanupToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalizationRegistryCleanupTokenUndefined: Self = StObject.set(x, "finalizationRegistryCleanupToken", js.undefined)
+      inline def setFinalizationRegistryCleanupTokenUndefined: Self = StObject.set(x, "finalizationRegistryCleanupToken", js.undefined)
       
-      @scala.inline
-      def setMounted(value: Boolean): Self = StObject.set(x, "mounted", value.asInstanceOf[js.Any])
+      inline def setMounted(value: Boolean): Self = StObject.set(x, "mounted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReaction(value: Reaction_): Self = StObject.set(x, "reaction", value.asInstanceOf[js.Any])
+      inline def setReaction(value: Reaction_): Self = StObject.set(x, "reaction", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,8 +95,7 @@ object reactionCleanupTrackingCommonMod {
   }
   object ReactionCleanupTracking {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addReactionToTrack: (MutableRefObject[IReactionTracking | Null], Reaction_, js.Object) => IReactionTracking,
       forceCleanupTimerToRunNowForTests: () => Unit,
       recordReactionAsCommitted: MutableRefObject[IReactionTracking | Null] => Unit,
@@ -115,20 +105,15 @@ object reactionCleanupTrackingCommonMod {
       __obj.asInstanceOf[ReactionCleanupTracking]
     }
     
-    @scala.inline
-    implicit class ReactionCleanupTrackingMutableBuilder[Self <: ReactionCleanupTracking] (val x: Self) extends AnyVal {
+    extension [Self <: ReactionCleanupTracking](x: Self) {
       
-      @scala.inline
-      def setAddReactionToTrack(value: (MutableRefObject[IReactionTracking | Null], Reaction_, js.Object) => IReactionTracking): Self = StObject.set(x, "addReactionToTrack", js.Any.fromFunction3(value))
+      inline def setAddReactionToTrack(value: (MutableRefObject[IReactionTracking | Null], Reaction_, js.Object) => IReactionTracking): Self = StObject.set(x, "addReactionToTrack", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setForceCleanupTimerToRunNowForTests(value: () => Unit): Self = StObject.set(x, "forceCleanupTimerToRunNowForTests", js.Any.fromFunction0(value))
+      inline def setForceCleanupTimerToRunNowForTests(value: () => Unit): Self = StObject.set(x, "forceCleanupTimerToRunNowForTests", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRecordReactionAsCommitted(value: MutableRefObject[IReactionTracking | Null] => Unit): Self = StObject.set(x, "recordReactionAsCommitted", js.Any.fromFunction1(value))
+      inline def setRecordReactionAsCommitted(value: MutableRefObject[IReactionTracking | Null] => Unit): Self = StObject.set(x, "recordReactionAsCommitted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResetCleanupScheduleForTests(value: () => Unit): Self = StObject.set(x, "resetCleanupScheduleForTests", js.Any.fromFunction0(value))
+      inline def setResetCleanupScheduleForTests(value: () => Unit): Self = StObject.set(x, "resetCleanupScheduleForTests", js.Any.fromFunction0(value))
     }
   }
 }

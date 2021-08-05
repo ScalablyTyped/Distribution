@@ -16,8 +16,7 @@ object createTargetFactoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createTargetFactory[Props](spec: DropTargetSpec[Props]): js.Function2[/* monitor */ DropTargetMonitor, /* ref */ RefObject[js.Any], Target] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTargetFactory")(spec.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* monitor */ DropTargetMonitor, /* ref */ RefObject[js.Any], Target]]
+  inline def createTargetFactory[Props](spec: DropTargetSpec[Props]): js.Function2[/* monitor */ DropTargetMonitor, /* ref */ RefObject[js.Any], Target] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTargetFactory")(spec.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* monitor */ DropTargetMonitor, /* ref */ RefObject[js.Any], Target]]
   
   trait Target
     extends StObject
@@ -29,8 +28,7 @@ object createTargetFactoryMod {
   }
   object Target {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canDrop: (DragDropMonitor, Identifier) => Boolean,
       drop: (DragDropMonitor, Identifier) => js.Any,
       hover: (DragDropMonitor, Identifier) => Unit,
@@ -41,14 +39,11 @@ object createTargetFactoryMod {
       __obj.asInstanceOf[Target]
     }
     
-    @scala.inline
-    implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
+    extension [Self <: Target](x: Self) {
       
-      @scala.inline
-      def setReceiveMonitor(value: js.Any => Unit): Self = StObject.set(x, "receiveMonitor", js.Any.fromFunction1(value))
+      inline def setReceiveMonitor(value: js.Any => Unit): Self = StObject.set(x, "receiveMonitor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReceiveProps(value: js.Any => Unit): Self = StObject.set(x, "receiveProps", js.Any.fromFunction1(value))
+      inline def setReceiveProps(value: js.Any => Unit): Self = StObject.set(x, "receiveProps", js.Any.fromFunction1(value))
     }
   }
 }

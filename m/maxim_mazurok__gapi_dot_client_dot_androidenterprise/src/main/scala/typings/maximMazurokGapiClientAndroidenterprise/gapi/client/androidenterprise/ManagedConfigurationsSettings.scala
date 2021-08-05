@@ -17,31 +17,23 @@ trait ManagedConfigurationsSettings extends StObject {
 }
 object ManagedConfigurationsSettings {
   
-  @scala.inline
-  def apply(): ManagedConfigurationsSettings = {
+  inline def apply(): ManagedConfigurationsSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedConfigurationsSettings]
   }
   
-  @scala.inline
-  implicit class ManagedConfigurationsSettingsMutableBuilder[Self <: ManagedConfigurationsSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedConfigurationsSettings](x: Self) {
     
-    @scala.inline
-    def setLastUpdatedTimestampMillis(value: String): Self = StObject.set(x, "lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestampMillis(value: String): Self = StObject.set(x, "lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimestampMillisUndefined: Self = StObject.set(x, "lastUpdatedTimestampMillis", js.undefined)
+    inline def setLastUpdatedTimestampMillisUndefined: Self = StObject.set(x, "lastUpdatedTimestampMillis", js.undefined)
     
-    @scala.inline
-    def setMcmId(value: String): Self = StObject.set(x, "mcmId", value.asInstanceOf[js.Any])
+    inline def setMcmId(value: String): Self = StObject.set(x, "mcmId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMcmIdUndefined: Self = StObject.set(x, "mcmId", js.undefined)
+    inline def setMcmIdUndefined: Self = StObject.set(x, "mcmId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

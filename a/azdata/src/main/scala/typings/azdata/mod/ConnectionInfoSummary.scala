@@ -43,8 +43,7 @@ trait ConnectionInfoSummary extends StObject {
 }
 object ConnectionInfoSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectionId: String,
     connectionSummary: ConnectionSummary,
     errorMessage: String,
@@ -57,28 +56,20 @@ object ConnectionInfoSummary {
     __obj.asInstanceOf[ConnectionInfoSummary]
   }
   
-  @scala.inline
-  implicit class ConnectionInfoSummaryMutableBuilder[Self <: ConnectionInfoSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionInfoSummary](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionSummary(value: ConnectionSummary): Self = StObject.set(x, "connectionSummary", value.asInstanceOf[js.Any])
+    inline def setConnectionSummary(value: ConnectionSummary): Self = StObject.set(x, "connectionSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorNumber(value: Double): Self = StObject.set(x, "errorNumber", value.asInstanceOf[js.Any])
+    inline def setErrorNumber(value: Double): Self = StObject.set(x, "errorNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
+    inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerInfo(value: ServerInfo): Self = StObject.set(x, "serverInfo", value.asInstanceOf[js.Any])
+    inline def setServerInfo(value: ServerInfo): Self = StObject.set(x, "serverInfo", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait QIsDesktop extends StObject {
 }
 object QIsDesktop {
   
-  @scala.inline
-  def apply(qIsDesktop: Boolean, qSSOEnabled: Boolean): QIsDesktop = {
+  inline def apply(qIsDesktop: Boolean, qSSOEnabled: Boolean): QIsDesktop = {
     val __obj = js.Dynamic.literal(qIsDesktop = qIsDesktop.asInstanceOf[js.Any], qSSOEnabled = qSSOEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[QIsDesktop]
   }
   
-  @scala.inline
-  implicit class QIsDesktopMutableBuilder[Self <: QIsDesktop] (val x: Self) extends AnyVal {
+  extension [Self <: QIsDesktop](x: Self) {
     
-    @scala.inline
-    def setQIsDesktop(value: Boolean): Self = StObject.set(x, "qIsDesktop", value.asInstanceOf[js.Any])
+    inline def setQIsDesktop(value: Boolean): Self = StObject.set(x, "qIsDesktop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSSOEnabled(value: Boolean): Self = StObject.set(x, "qSSOEnabled", value.asInstanceOf[js.Any])
+    inline def setQSSOEnabled(value: Boolean): Self = StObject.set(x, "qSSOEnabled", value.asInstanceOf[js.Any])
   }
 }

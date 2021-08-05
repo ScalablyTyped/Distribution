@@ -17,16 +17,13 @@ trait OnThemeChangeCallbackResult extends StObject {
 }
 object OnThemeChangeCallbackResult {
   
-  @scala.inline
-  def apply(theme: dark | light): OnThemeChangeCallbackResult = {
+  inline def apply(theme: dark | light): OnThemeChangeCallbackResult = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnThemeChangeCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnThemeChangeCallbackResultMutableBuilder[Self <: OnThemeChangeCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnThemeChangeCallbackResult](x: Self) {
     
-    @scala.inline
-    def setTheme(value: dark | light): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: dark | light): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

@@ -70,6 +70,5 @@ trait DataProcessor extends StObject {
 }
 object DataProcessor {
   
-  @scala.inline
-  def apply: DataProcessor = ^.asInstanceOf[js.Dynamic].selectDynamic("DataProcessor").asInstanceOf[DataProcessor]
+  inline def apply: DataProcessor = ^.asInstanceOf[js.Dynamic].selectDynamic("DataProcessor").asInstanceOf[DataProcessor]
 }

@@ -18,28 +18,21 @@ trait GetWorkflowRunsResponse extends StObject {
 }
 object GetWorkflowRunsResponse {
   
-  @scala.inline
-  def apply(): GetWorkflowRunsResponse = {
+  inline def apply(): GetWorkflowRunsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetWorkflowRunsResponse]
   }
   
-  @scala.inline
-  implicit class GetWorkflowRunsResponseMutableBuilder[Self <: GetWorkflowRunsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetWorkflowRunsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRuns(value: WorkflowRuns): Self = StObject.set(x, "Runs", value.asInstanceOf[js.Any])
+    inline def setRuns(value: WorkflowRuns): Self = StObject.set(x, "Runs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunsUndefined: Self = StObject.set(x, "Runs", js.undefined)
+    inline def setRunsUndefined: Self = StObject.set(x, "Runs", js.undefined)
     
-    @scala.inline
-    def setRunsVarargs(value: WorkflowRun*): Self = StObject.set(x, "Runs", js.Array(value :_*))
+    inline def setRunsVarargs(value: WorkflowRun*): Self = StObject.set(x, "Runs", js.Array(value :_*))
   }
 }

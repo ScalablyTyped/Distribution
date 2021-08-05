@@ -10,16 +10,13 @@ trait AsyncBoolean extends StObject {
 }
 object AsyncBoolean {
   
-  @scala.inline
-  def apply(async: Boolean): AsyncBoolean = {
+  inline def apply(async: Boolean): AsyncBoolean = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncBoolean]
   }
   
-  @scala.inline
-  implicit class AsyncBooleanMutableBuilder[Self <: AsyncBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncBoolean](x: Self) {
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
   }
 }

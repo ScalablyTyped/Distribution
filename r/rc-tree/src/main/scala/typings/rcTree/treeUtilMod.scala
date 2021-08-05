@@ -24,83 +24,62 @@ object treeUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertDataToEntities(dataNodes: js.Array[DataNode]): KeyEntities = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any]).asInstanceOf[KeyEntities]
-  @scala.inline
-  def convertDataToEntities(
+  inline def convertDataToEntities(dataNodes: js.Array[DataNode]): KeyEntities = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any]).asInstanceOf[KeyEntities]
+  inline def convertDataToEntities(
     dataNodes: js.Array[DataNode],
     hasInitWrapperProcessEntityOnProcessFinished: Unit,
     externalGetKey: String
   ): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], hasInitWrapperProcessEntityOnProcessFinished.asInstanceOf[js.Any], externalGetKey.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
-  @scala.inline
-  def convertDataToEntities(
+  inline def convertDataToEntities(
     dataNodes: js.Array[DataNode],
     hasInitWrapperProcessEntityOnProcessFinished: Unit,
     externalGetKey: GetKey[DataNode]
   ): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], hasInitWrapperProcessEntityOnProcessFinished.asInstanceOf[js.Any], externalGetKey.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
-  @scala.inline
-  def convertDataToEntities(dataNodes: js.Array[DataNode], hasInitWrapperProcessEntityOnProcessFinished: InitWrapper): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], hasInitWrapperProcessEntityOnProcessFinished.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
-  @scala.inline
-  def convertDataToEntities(
+  inline def convertDataToEntities(dataNodes: js.Array[DataNode], hasInitWrapperProcessEntityOnProcessFinished: InitWrapper): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], hasInitWrapperProcessEntityOnProcessFinished.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
+  inline def convertDataToEntities(
     dataNodes: js.Array[DataNode],
     hasInitWrapperProcessEntityOnProcessFinished: InitWrapper,
     externalGetKey: String
   ): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], hasInitWrapperProcessEntityOnProcessFinished.asInstanceOf[js.Any], externalGetKey.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
-  @scala.inline
-  def convertDataToEntities(
+  inline def convertDataToEntities(
     dataNodes: js.Array[DataNode],
     hasInitWrapperProcessEntityOnProcessFinished: InitWrapper,
     externalGetKey: GetKey[DataNode]
   ): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], hasInitWrapperProcessEntityOnProcessFinished.asInstanceOf[js.Any], externalGetKey.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
   
-  @scala.inline
-  def convertNodePropsToEventData(props: TreeNodeProps): EventDataNode = ^.asInstanceOf[js.Dynamic].applyDynamic("convertNodePropsToEventData")(props.asInstanceOf[js.Any]).asInstanceOf[EventDataNode]
+  inline def convertNodePropsToEventData(props: TreeNodeProps): EventDataNode = ^.asInstanceOf[js.Dynamic].applyDynamic("convertNodePropsToEventData")(props.asInstanceOf[js.Any]).asInstanceOf[EventDataNode]
   
-  @scala.inline
-  def convertTreeToData(rootNodes: ReactNode): js.Array[DataNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertTreeToData")(rootNodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[DataNode]]
+  inline def convertTreeToData(rootNodes: ReactNode): js.Array[DataNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertTreeToData")(rootNodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[DataNode]]
   
-  @scala.inline
-  def flattenTreeData(): js.Array[FlattenNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")().asInstanceOf[js.Array[FlattenNode]]
-  @scala.inline
-  def flattenTreeData(treeNodeList: js.Array[DataNode]): js.Array[FlattenNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any]).asInstanceOf[js.Array[FlattenNode]]
-  @scala.inline
-  def flattenTreeData(treeNodeList: js.Array[DataNode], expandedKeys: js.Array[Key]): js.Array[FlattenNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any], expandedKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode]]
-  @scala.inline
-  def flattenTreeData(treeNodeList: Unit, expandedKeys: js.Array[Key]): js.Array[FlattenNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any], expandedKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode]]
+  inline def flattenTreeData(): js.Array[FlattenNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")().asInstanceOf[js.Array[FlattenNode]]
+  inline def flattenTreeData(treeNodeList: js.Array[DataNode]): js.Array[FlattenNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any]).asInstanceOf[js.Array[FlattenNode]]
+  inline def flattenTreeData(treeNodeList: js.Array[DataNode], expandedKeys: js.Array[Key]): js.Array[FlattenNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any], expandedKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode]]
+  inline def flattenTreeData(treeNodeList: Unit, expandedKeys: js.Array[Key]): js.Array[FlattenNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any], expandedKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode]]
   
-  @scala.inline
-  def flattenTreeData_true(treeNodeList: js.Array[DataNode], expandedKeys: `true`): js.Array[FlattenNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any], expandedKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode]]
-  @scala.inline
-  def flattenTreeData_true(treeNodeList: Unit, expandedKeys: `true`): js.Array[FlattenNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any], expandedKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode]]
+  inline def flattenTreeData_true(treeNodeList: js.Array[DataNode], expandedKeys: `true`): js.Array[FlattenNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any], expandedKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode]]
+  inline def flattenTreeData_true(treeNodeList: Unit, expandedKeys: `true`): js.Array[FlattenNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any], expandedKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode]]
   
-  @scala.inline
-  def getKey(key: Key, pos: String): String | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(key.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[String | Double]
+  inline def getKey(key: Key, pos: String): String | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(key.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[String | Double]
   
-  @scala.inline
-  def getTreeNodeProps(
+  inline def getTreeNodeProps(
     key: Key,
     hasExpandedKeysSelectedKeysLoadedKeysLoadingKeysCheckedKeysHalfCheckedKeysDragOverNodeKeyDropPositionKeyEntities: TreeNodeRequiredProps
   ): DragOver = (^.asInstanceOf[js.Dynamic].applyDynamic("getTreeNodeProps")(key.asInstanceOf[js.Any], hasExpandedKeysSelectedKeysLoadedKeysLoadingKeysCheckedKeysHalfCheckedKeysDragOverNodeKeyDropPositionKeyEntities.asInstanceOf[js.Any])).asInstanceOf[DragOver]
   
-  @scala.inline
-  def traverseDataNodes(dataNodes: js.Array[DataNode], callback: js.Function1[/* data */ Index, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseDataNodes")(dataNodes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def traverseDataNodes(
+  inline def traverseDataNodes(dataNodes: js.Array[DataNode], callback: js.Function1[/* data */ Index, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseDataNodes")(dataNodes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def traverseDataNodes(
     dataNodes: js.Array[DataNode],
     callback: js.Function1[/* data */ Index, Unit],
     externalGetKey: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseDataNodes")(dataNodes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], externalGetKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def traverseDataNodes(
+  inline def traverseDataNodes(
     dataNodes: js.Array[DataNode],
     callback: js.Function1[/* data */ Index, Unit],
     externalGetKey: GetKey[DataNode]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseDataNodes")(dataNodes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], externalGetKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def warningWithoutKey(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warningWithoutKey")().asInstanceOf[Unit]
-  @scala.inline
-  def warningWithoutKey(treeData: js.Array[DataNode]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warningWithoutKey")(treeData.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def warningWithoutKey(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warningWithoutKey")().asInstanceOf[Unit]
+  inline def warningWithoutKey(treeData: js.Array[DataNode]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warningWithoutKey")(treeData.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait TreeNodeRequiredProps extends StObject {
     
@@ -124,8 +103,7 @@ object treeUtilMod {
   }
   object TreeNodeRequiredProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       checkedKeys: js.Array[Key],
       dragOverNodeKey: Key,
       dropPosition: Double,
@@ -140,53 +118,37 @@ object treeUtilMod {
       __obj.asInstanceOf[TreeNodeRequiredProps]
     }
     
-    @scala.inline
-    implicit class TreeNodeRequiredPropsMutableBuilder[Self <: TreeNodeRequiredProps] (val x: Self) extends AnyVal {
+    extension [Self <: TreeNodeRequiredProps](x: Self) {
       
-      @scala.inline
-      def setCheckedKeys(value: js.Array[Key]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
+      inline def setCheckedKeys(value: js.Array[Key]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "checkedKeys", js.Array(value :_*))
+      inline def setCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "checkedKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setDragOverNodeKey(value: Key): Self = StObject.set(x, "dragOverNodeKey", value.asInstanceOf[js.Any])
+      inline def setDragOverNodeKey(value: Key): Self = StObject.set(x, "dragOverNodeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropPosition(value: Double): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
+      inline def setDropPosition(value: Double): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedKeys(value: js.Array[Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
+      inline def setExpandedKeys(value: js.Array[Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedKeysVarargs(value: Key*): Self = StObject.set(x, "expandedKeys", js.Array(value :_*))
+      inline def setExpandedKeysVarargs(value: Key*): Self = StObject.set(x, "expandedKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setHalfCheckedKeys(value: js.Array[Key]): Self = StObject.set(x, "halfCheckedKeys", value.asInstanceOf[js.Any])
+      inline def setHalfCheckedKeys(value: js.Array[Key]): Self = StObject.set(x, "halfCheckedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHalfCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "halfCheckedKeys", js.Array(value :_*))
+      inline def setHalfCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "halfCheckedKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setKeyEntities(value: Record[Key, DataEntity]): Self = StObject.set(x, "keyEntities", value.asInstanceOf[js.Any])
+      inline def setKeyEntities(value: Record[Key, DataEntity]): Self = StObject.set(x, "keyEntities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadedKeys(value: js.Array[Key]): Self = StObject.set(x, "loadedKeys", value.asInstanceOf[js.Any])
+      inline def setLoadedKeys(value: js.Array[Key]): Self = StObject.set(x, "loadedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadedKeysVarargs(value: Key*): Self = StObject.set(x, "loadedKeys", js.Array(value :_*))
+      inline def setLoadedKeysVarargs(value: Key*): Self = StObject.set(x, "loadedKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setLoadingKeys(value: js.Array[Key]): Self = StObject.set(x, "loadingKeys", value.asInstanceOf[js.Any])
+      inline def setLoadingKeys(value: js.Array[Key]): Self = StObject.set(x, "loadingKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingKeysVarargs(value: Key*): Self = StObject.set(x, "loadingKeys", js.Array(value :_*))
+      inline def setLoadingKeysVarargs(value: Key*): Self = StObject.set(x, "loadingKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setSelectedKeys(value: js.Array[Key]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
+      inline def setSelectedKeys(value: js.Array[Key]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedKeysVarargs(value: Key*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
+      inline def setSelectedKeysVarargs(value: Key*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
     }
   }
   
@@ -198,20 +160,16 @@ object treeUtilMod {
   }
   object Wrapper {
     
-    @scala.inline
-    def apply(keyEntities: Record[Key, DataEntity], posEntities: Record[String, DataEntity]): Wrapper = {
+    inline def apply(keyEntities: Record[Key, DataEntity], posEntities: Record[String, DataEntity]): Wrapper = {
       val __obj = js.Dynamic.literal(keyEntities = keyEntities.asInstanceOf[js.Any], posEntities = posEntities.asInstanceOf[js.Any])
       __obj.asInstanceOf[Wrapper]
     }
     
-    @scala.inline
-    implicit class WrapperMutableBuilder[Self <: Wrapper] (val x: Self) extends AnyVal {
+    extension [Self <: Wrapper](x: Self) {
       
-      @scala.inline
-      def setKeyEntities(value: Record[Key, DataEntity]): Self = StObject.set(x, "keyEntities", value.asInstanceOf[js.Any])
+      inline def setKeyEntities(value: Record[Key, DataEntity]): Self = StObject.set(x, "keyEntities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosEntities(value: Record[String, DataEntity]): Self = StObject.set(x, "posEntities", value.asInstanceOf[js.Any])
+      inline def setPosEntities(value: Record[String, DataEntity]): Self = StObject.set(x, "posEntities", value.asInstanceOf[js.Any])
     }
   }
 }

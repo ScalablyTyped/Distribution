@@ -16,34 +16,25 @@ trait ImageDescriptor extends StObject {
 }
 object ImageDescriptor {
   
-  @scala.inline
-  def apply(imageUrl: String): ImageDescriptor = {
+  inline def apply(imageUrl: String): ImageDescriptor = {
     val __obj = js.Dynamic.literal(imageUrl = imageUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageDescriptor]
   }
   
-  @scala.inline
-  implicit class ImageDescriptorMutableBuilder[Self <: ImageDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: ImageDescriptor](x: Self) {
     
-    @scala.inline
-    def setImageClass(value: String): Self = StObject.set(x, "imageClass", value.asInstanceOf[js.Any])
+    inline def setImageClass(value: String): Self = StObject.set(x, "imageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageClassUndefined: Self = StObject.set(x, "imageClass", js.undefined)
+    inline def setImageClassUndefined: Self = StObject.set(x, "imageClass", js.undefined)
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
+    inline def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
+    inline def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

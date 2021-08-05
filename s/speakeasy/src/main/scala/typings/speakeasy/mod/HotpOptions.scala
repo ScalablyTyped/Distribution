@@ -26,31 +26,23 @@ trait HotpOptions
 }
 object HotpOptions {
   
-  @scala.inline
-  def apply(counter: Double, secret: String): HotpOptions = {
+  inline def apply(counter: Double, secret: String): HotpOptions = {
     val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotpOptions]
   }
   
-  @scala.inline
-  implicit class HotpOptionsMutableBuilder[Self <: HotpOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HotpOptions](x: Self) {
     
-    @scala.inline
-    def setDigest(value: Buffer): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: Buffer): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+    inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
+    inline def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
   }
 }

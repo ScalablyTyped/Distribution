@@ -32,8 +32,7 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply(): js.Promise[js.UndefOr[Result]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.UndefOr[Result]]]
+  inline def apply(): js.Promise[js.UndefOr[Result]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.UndefOr[Result]]]
   
   @JSImport("active-win", JSImport.Namespace)
   @js.native
@@ -58,8 +57,7 @@ object mod {
   	}
   	```
   	*/
-  @scala.inline
-  def sync(): js.UndefOr[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.UndefOr[Result]]
+  inline def sync(): js.UndefOr[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.UndefOr[Result]]
   
   trait BaseOwner extends StObject {
     
@@ -80,23 +78,18 @@ object mod {
   }
   object BaseOwner {
     
-    @scala.inline
-    def apply(name: String, path: String, processId: Double): BaseOwner = {
+    inline def apply(name: String, path: String, processId: Double): BaseOwner = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseOwner]
     }
     
-    @scala.inline
-    implicit class BaseOwnerMutableBuilder[Self <: BaseOwner] (val x: Self) extends AnyVal {
+    extension [Self <: BaseOwner](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+      inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,29 +123,22 @@ object mod {
   }
   object BaseResult {
     
-    @scala.inline
-    def apply(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, title: String): BaseResult = {
+    inline def apply(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, title: String): BaseResult = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseResult]
     }
     
-    @scala.inline
-    implicit class BaseResultMutableBuilder[Self <: BaseResult] (val x: Self) extends AnyVal {
+    extension [Self <: BaseResult](x: Self) {
       
-      @scala.inline
-      def setBounds(value: Height): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Height): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryUsage(value: Double): Self = StObject.set(x, "memoryUsage", value.asInstanceOf[js.Any])
+      inline def setMemoryUsage(value: Double): Self = StObject.set(x, "memoryUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwner(value: BaseOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: BaseOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,17 +151,14 @@ object mod {
   }
   object LinuxResult {
     
-    @scala.inline
-    def apply(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, title: String): LinuxResult = {
+    inline def apply(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, title: String): LinuxResult = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = "linux", title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinuxResult]
     }
     
-    @scala.inline
-    implicit class LinuxResultMutableBuilder[Self <: LinuxResult] (val x: Self) extends AnyVal {
+    extension [Self <: LinuxResult](x: Self) {
       
-      @scala.inline
-      def setPlatform(value: linux): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: linux): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }
   }
   
@@ -190,17 +173,14 @@ object mod {
   }
   object MacOSOwner {
     
-    @scala.inline
-    def apply(bundleId: Double, name: String, path: String, processId: Double): MacOSOwner = {
+    inline def apply(bundleId: Double, name: String, path: String, processId: Double): MacOSOwner = {
       val __obj = js.Dynamic.literal(bundleId = bundleId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any])
       __obj.asInstanceOf[MacOSOwner]
     }
     
-    @scala.inline
-    implicit class MacOSOwnerMutableBuilder[Self <: MacOSOwner] (val x: Self) extends AnyVal {
+    extension [Self <: MacOSOwner](x: Self) {
       
-      @scala.inline
-      def setBundleId(value: Double): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+      inline def setBundleId(value: Double): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -221,26 +201,20 @@ object mod {
   }
   object MacOSResult {
     
-    @scala.inline
-    def apply(bounds: Height, id: Double, memoryUsage: Double, owner: MacOSOwner, title: String): MacOSResult = {
+    inline def apply(bounds: Height, id: Double, memoryUsage: Double, owner: MacOSOwner, title: String): MacOSResult = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = "macos", title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[MacOSResult]
     }
     
-    @scala.inline
-    implicit class MacOSResultMutableBuilder[Self <: MacOSResult] (val x: Self) extends AnyVal {
+    extension [Self <: MacOSResult](x: Self) {
       
-      @scala.inline
-      def setOwner(value: MacOSOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: MacOSOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatform(value: macos): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: macos): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -252,20 +226,17 @@ object mod {
   trait Result extends StObject
   object Result {
     
-    @scala.inline
-    def LinuxResult(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, title: String): typings.activeWin.mod.LinuxResult = {
+    inline def LinuxResult(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, title: String): typings.activeWin.mod.LinuxResult = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = "linux", title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.activeWin.mod.LinuxResult]
     }
     
-    @scala.inline
-    def MacOSResult(bounds: Height, id: Double, memoryUsage: Double, owner: MacOSOwner, title: String): typings.activeWin.mod.MacOSResult = {
+    inline def MacOSResult(bounds: Height, id: Double, memoryUsage: Double, owner: MacOSOwner, title: String): typings.activeWin.mod.MacOSResult = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = "macos", title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.activeWin.mod.MacOSResult]
     }
     
-    @scala.inline
-    def WindowsResult(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, title: String): typings.activeWin.mod.WindowsResult = {
+    inline def WindowsResult(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, title: String): typings.activeWin.mod.WindowsResult = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = "windows", title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.activeWin.mod.WindowsResult]
     }
@@ -280,17 +251,14 @@ object mod {
   }
   object WindowsResult {
     
-    @scala.inline
-    def apply(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, title: String): WindowsResult = {
+    inline def apply(bounds: Height, id: Double, memoryUsage: Double, owner: BaseOwner, title: String): WindowsResult = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], platform = "windows", title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[WindowsResult]
     }
     
-    @scala.inline
-    implicit class WindowsResultMutableBuilder[Self <: WindowsResult] (val x: Self) extends AnyVal {
+    extension [Self <: WindowsResult](x: Self) {
       
-      @scala.inline
-      def setPlatform(value: windows): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: windows): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }
   }
 }

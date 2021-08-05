@@ -17,8 +17,7 @@ object nodePathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(fork: Fork): NodePathConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fork.asInstanceOf[js.Any]).asInstanceOf[NodePathConstructor]
+  inline def default(fork: Fork): NodePathConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fork.asInstanceOf[js.Any]).asInstanceOf[NodePathConstructor]
   
   @js.native
   trait NodePath[N, V]

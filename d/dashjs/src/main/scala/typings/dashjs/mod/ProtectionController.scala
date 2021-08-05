@@ -37,8 +37,7 @@ trait ProtectionController extends StObject {
 }
 object ProtectionController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     closeKeySession: SessionToken => Unit,
     createKeySession: (ArrayBuffer, Uint8Array) => Unit,
     getKeySystems: () => js.Array[KeySystem],
@@ -57,46 +56,32 @@ object ProtectionController {
     __obj.asInstanceOf[ProtectionController]
   }
   
-  @scala.inline
-  implicit class ProtectionControllerMutableBuilder[Self <: ProtectionController] (val x: Self) extends AnyVal {
+  extension [Self <: ProtectionController](x: Self) {
     
-    @scala.inline
-    def setCloseKeySession(value: SessionToken => Unit): Self = StObject.set(x, "closeKeySession", js.Any.fromFunction1(value))
+    inline def setCloseKeySession(value: SessionToken => Unit): Self = StObject.set(x, "closeKeySession", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateKeySession(value: (ArrayBuffer, Uint8Array) => Unit): Self = StObject.set(x, "createKeySession", js.Any.fromFunction2(value))
+    inline def setCreateKeySession(value: (ArrayBuffer, Uint8Array) => Unit): Self = StObject.set(x, "createKeySession", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetKeySystems(value: () => js.Array[KeySystem]): Self = StObject.set(x, "getKeySystems", js.Any.fromFunction0(value))
+    inline def setGetKeySystems(value: () => js.Array[KeySystem]): Self = StObject.set(x, "getKeySystems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSupportedKeySystemsFromContentProtection(value: js.Array[js.Any] => js.Array[SupportedKeySystem]): Self = StObject.set(x, "getSupportedKeySystemsFromContentProtection", js.Any.fromFunction1(value))
+    inline def setGetSupportedKeySystemsFromContentProtection(value: js.Array[js.Any] => js.Array[SupportedKeySystem]): Self = StObject.set(x, "getSupportedKeySystemsFromContentProtection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitializeForMedia(value: ProtectionMediaInfo => Unit): Self = StObject.set(x, "initializeForMedia", js.Any.fromFunction1(value))
+    inline def setInitializeForMedia(value: ProtectionMediaInfo => Unit): Self = StObject.set(x, "initializeForMedia", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveKeySession(value: SessionToken => Unit): Self = StObject.set(x, "removeKeySession", js.Any.fromFunction1(value))
+    inline def setRemoveKeySession(value: SessionToken => Unit): Self = StObject.set(x, "removeKeySession", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetMediaElement(value: HTMLMediaElement => Unit): Self = StObject.set(x, "setMediaElement", js.Any.fromFunction1(value))
+    inline def setSetMediaElement(value: HTMLMediaElement => Unit): Self = StObject.set(x, "setMediaElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetProtectionData(value: ProtectionData => Unit): Self = StObject.set(x, "setProtectionData", js.Any.fromFunction1(value))
+    inline def setSetProtectionData(value: ProtectionData => Unit): Self = StObject.set(x, "setProtectionData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRobustnessLevel(value: String => Unit): Self = StObject.set(x, "setRobustnessLevel", js.Any.fromFunction1(value))
+    inline def setSetRobustnessLevel(value: String => Unit): Self = StObject.set(x, "setRobustnessLevel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetServerCertificate(value: ArrayBuffer => Unit): Self = StObject.set(x, "setServerCertificate", js.Any.fromFunction1(value))
+    inline def setSetServerCertificate(value: ArrayBuffer => Unit): Self = StObject.set(x, "setServerCertificate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSessionType(value: String => Unit): Self = StObject.set(x, "setSessionType", js.Any.fromFunction1(value))
+    inline def setSetSessionType(value: String => Unit): Self = StObject.set(x, "setSessionType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

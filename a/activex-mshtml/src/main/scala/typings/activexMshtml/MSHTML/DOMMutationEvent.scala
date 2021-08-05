@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DOMMutationEvent extends StObject {
   
-  @JSName("MSHTML.DOMMutationEvent_typekey")
+  /* private */ @JSName("MSHTML.DOMMutationEvent_typekey")
   var MSHTMLDotDOMMutationEvent_typekey: DOMMutationEvent
   
   val attrChange: Double
@@ -62,8 +62,7 @@ trait DOMMutationEvent extends StObject {
 }
 object DOMMutationEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotDOMMutationEvent_typekey: DOMMutationEvent,
     attrChange: Double,
     attrName: String,
@@ -93,73 +92,50 @@ object DOMMutationEvent {
     __obj.asInstanceOf[DOMMutationEvent]
   }
   
-  @scala.inline
-  implicit class DOMMutationEventMutableBuilder[Self <: DOMMutationEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DOMMutationEvent](x: Self) {
     
-    @scala.inline
-    def setAttrChange(value: Double): Self = StObject.set(x, "attrChange", value.asInstanceOf[js.Any])
+    inline def setAttrChange(value: Double): Self = StObject.set(x, "attrChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttrName(value: String): Self = StObject.set(x, "attrName", value.asInstanceOf[js.Any])
+    inline def setAttrName(value: String): Self = StObject.set(x, "attrName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+    inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
+    inline def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTarget(value: IEventTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+    inline def setCurrentTarget(value: IEventTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
+    inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
+    inline def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitEvent(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction3(value))
+    inline def setInitEvent(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInitMutationEvent(value: (String, Boolean, Boolean, js.Any, String, String, String, Double) => Unit): Self = StObject.set(x, "initMutationEvent", js.Any.fromFunction8(value))
+    inline def setInitMutationEvent(value: (String, Boolean, Boolean, js.Any, String, String, String, Double) => Unit): Self = StObject.set(x, "initMutationEvent", js.Any.fromFunction8(value))
     
-    @scala.inline
-    def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
+    inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotDOMMutationEvent_typekey(value: DOMMutationEvent): Self = StObject.set(x, "MSHTML.DOMMutationEvent_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotDOMMutationEvent_typekey(value: DOMMutationEvent): Self = StObject.set(x, "MSHTML.DOMMutationEvent_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevValue(value: String): Self = StObject.set(x, "prevValue", value.asInstanceOf[js.Any])
+    inline def setPrevValue(value: String): Self = StObject.set(x, "prevValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+    inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRelatedNode(value: js.Any): Self = StObject.set(x, "relatedNode", value.asInstanceOf[js.Any])
+    inline def setRelatedNode(value: js.Any): Self = StObject.set(x, "relatedNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcElement(value: IHTMLElement): Self = StObject.set(x, "srcElement", value.asInstanceOf[js.Any])
+    inline def setSrcElement(value: IHTMLElement): Self = StObject.set(x, "srcElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
+    inline def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTarget(value: IEventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: IEventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

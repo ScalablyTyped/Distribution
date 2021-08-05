@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def wrapper: typings.xelib.mod.XELib = typings.xelib.mod.^.asInstanceOf[js.Dynamic].selectDynamic("wrapper").asInstanceOf[typings.xelib.mod.XELib]
+inline def wrapper: typings.xelib.mod.XELib = typings.xelib.mod.^.asInstanceOf[js.Dynamic].selectDynamic("wrapper").asInstanceOf[typings.xelib.mod.XELib]
 
 type ContainerHandle = typings.xelib.mod.Handle & js.Object
 

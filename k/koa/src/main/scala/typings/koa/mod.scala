@@ -1381,8 +1381,7 @@ object mod {
   /* key */ StringDictionary[js.Any]
   object DefaultContext {
     
-    @scala.inline
-    def apply(): DefaultContext = {
+    inline def apply(): DefaultContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultContext]
     }

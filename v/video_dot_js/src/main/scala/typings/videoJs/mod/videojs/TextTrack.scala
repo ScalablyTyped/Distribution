@@ -95,20 +95,15 @@ object TextTrack {
   trait Kind extends StObject
   object Kind {
     
-    @scala.inline
-    def captions: typings.videoJs.videoJsStrings.captions = "captions".asInstanceOf[typings.videoJs.videoJsStrings.captions]
+    inline def captions: typings.videoJs.videoJsStrings.captions = "captions".asInstanceOf[typings.videoJs.videoJsStrings.captions]
     
-    @scala.inline
-    def chapters: typings.videoJs.videoJsStrings.chapters = "chapters".asInstanceOf[typings.videoJs.videoJsStrings.chapters]
+    inline def chapters: typings.videoJs.videoJsStrings.chapters = "chapters".asInstanceOf[typings.videoJs.videoJsStrings.chapters]
     
-    @scala.inline
-    def descriptions: typings.videoJs.videoJsStrings.descriptions = "descriptions".asInstanceOf[typings.videoJs.videoJsStrings.descriptions]
+    inline def descriptions: typings.videoJs.videoJsStrings.descriptions = "descriptions".asInstanceOf[typings.videoJs.videoJsStrings.descriptions]
     
-    @scala.inline
-    def metadata: typings.videoJs.videoJsStrings.metadata = "metadata".asInstanceOf[typings.videoJs.videoJsStrings.metadata]
+    inline def metadata: typings.videoJs.videoJsStrings.metadata = "metadata".asInstanceOf[typings.videoJs.videoJsStrings.metadata]
     
-    @scala.inline
-    def subtitles: typings.videoJs.videoJsStrings.subtitles = "subtitles".asInstanceOf[typings.videoJs.videoJsStrings.subtitles]
+    inline def subtitles: typings.videoJs.videoJsStrings.subtitles = "subtitles".asInstanceOf[typings.videoJs.videoJsStrings.subtitles]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -119,13 +114,10 @@ object TextTrack {
   trait Mode extends StObject
   object Mode {
     
-    @scala.inline
-    def disabled: typings.videoJs.videoJsStrings.disabled = "disabled".asInstanceOf[typings.videoJs.videoJsStrings.disabled]
+    inline def disabled: typings.videoJs.videoJsStrings.disabled = "disabled".asInstanceOf[typings.videoJs.videoJsStrings.disabled]
     
-    @scala.inline
-    def hidden: typings.videoJs.videoJsStrings.hidden = "hidden".asInstanceOf[typings.videoJs.videoJsStrings.hidden]
+    inline def hidden: typings.videoJs.videoJsStrings.hidden = "hidden".asInstanceOf[typings.videoJs.videoJsStrings.hidden]
     
-    @scala.inline
-    def showing: typings.videoJs.videoJsStrings.showing = "showing".asInstanceOf[typings.videoJs.videoJsStrings.showing]
+    inline def showing: typings.videoJs.videoJsStrings.showing = "showing".asInstanceOf[typings.videoJs.videoJsStrings.showing]
   }
 }

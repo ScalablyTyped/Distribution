@@ -12,19 +12,15 @@ trait AdErrorParam extends StObject {
 }
 object AdErrorParam {
   
-  @scala.inline
-  def apply(message: String, tag: String): AdErrorParam = {
+  inline def apply(message: String, tag: String): AdErrorParam = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdErrorParam]
   }
   
-  @scala.inline
-  implicit class AdErrorParamMutableBuilder[Self <: AdErrorParam] (val x: Self) extends AnyVal {
+  extension [Self <: AdErrorParam](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

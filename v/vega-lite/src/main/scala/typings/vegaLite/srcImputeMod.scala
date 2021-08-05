@@ -42,41 +42,30 @@ object srcImputeMod {
   }
   object ImputeParams {
     
-    @scala.inline
-    def apply(): ImputeParams = {
+    inline def apply(): ImputeParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImputeParams]
     }
     
-    @scala.inline
-    implicit class ImputeParamsMutableBuilder[Self <: ImputeParams] (val x: Self) extends AnyVal {
+    extension [Self <: ImputeParams](x: Self) {
       
-      @scala.inline
-      def setFrame(value: js.Tuple2[Null | Double, Null | Double]): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      inline def setFrame(value: js.Tuple2[Null | Double, Null | Double]): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+      inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
       
-      @scala.inline
-      def setKeyvals(value: js.Array[js.Any] | ImputeSequence): Self = StObject.set(x, "keyvals", value.asInstanceOf[js.Any])
+      inline def setKeyvals(value: js.Array[js.Any] | ImputeSequence): Self = StObject.set(x, "keyvals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyvalsUndefined: Self = StObject.set(x, "keyvals", js.undefined)
+      inline def setKeyvalsUndefined: Self = StObject.set(x, "keyvals", js.undefined)
       
-      @scala.inline
-      def setKeyvalsVarargs(value: js.Any*): Self = StObject.set(x, "keyvals", js.Array(value :_*))
+      inline def setKeyvalsVarargs(value: js.Any*): Self = StObject.set(x, "keyvals", js.Array(value :_*))
       
-      @scala.inline
-      def setMethod(value: ImputeMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: ImputeMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

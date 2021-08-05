@@ -13,19 +13,15 @@ trait SchemaFieldReference extends StObject {
 }
 object SchemaFieldReference {
   
-  @scala.inline
-  def apply(): SchemaFieldReference = {
+  inline def apply(): SchemaFieldReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFieldReference]
   }
   
-  @scala.inline
-  implicit class SchemaFieldReferenceMutableBuilder[Self <: SchemaFieldReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFieldReference](x: Self) {
     
-    @scala.inline
-    def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
+    inline def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldPathUndefined: Self = StObject.set(x, "fieldPath", js.undefined)
+    inline def setFieldPathUndefined: Self = StObject.set(x, "fieldPath", js.undefined)
   }
 }

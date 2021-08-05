@@ -8,21 +8,17 @@ object meteorDburlesCollectionHelpersStrings {
   
   @js.native
   sealed trait RemoveHelperBrands extends StObject
-  @scala.inline
-  def RemoveHelperBrands: RemoveHelperBrands = "RemoveHelperBrands".asInstanceOf[RemoveHelperBrands]
+  inline def RemoveHelperBrands: RemoveHelperBrands = "RemoveHelperBrands".asInstanceOf[RemoveHelperBrands]
   
   @js.native
   sealed trait _meteor_dburles_collection_helpers_allowPartial extends StObject
-  @scala.inline
-  def _meteor_dburles_collection_helpers_allowPartial: _meteor_dburles_collection_helpers_allowPartial = "_meteor_dburles_collection_helpers_allowPartial".asInstanceOf[_meteor_dburles_collection_helpers_allowPartial]
+  inline def _meteor_dburles_collection_helpers_allowPartial: _meteor_dburles_collection_helpers_allowPartial = "_meteor_dburles_collection_helpers_allowPartial".asInstanceOf[_meteor_dburles_collection_helpers_allowPartial]
   
   @js.native
   sealed trait _meteor_dburles_collection_helpers_brand extends StObject
-  @scala.inline
-  def _meteor_dburles_collection_helpers_brand: _meteor_dburles_collection_helpers_brand = "_meteor_dburles_collection_helpers_brand".asInstanceOf[_meteor_dburles_collection_helpers_brand]
+  inline def _meteor_dburles_collection_helpers_brand: _meteor_dburles_collection_helpers_brand = "_meteor_dburles_collection_helpers_brand".asInstanceOf[_meteor_dburles_collection_helpers_brand]
   
   @js.native
   sealed trait _meteor_dburles_collection_helpers_flavor extends StObject
-  @scala.inline
-  def _meteor_dburles_collection_helpers_flavor: _meteor_dburles_collection_helpers_flavor = "_meteor_dburles_collection_helpers_flavor".asInstanceOf[_meteor_dburles_collection_helpers_flavor]
+  inline def _meteor_dburles_collection_helpers_flavor: _meteor_dburles_collection_helpers_flavor = "_meteor_dburles_collection_helpers_flavor".asInstanceOf[_meteor_dburles_collection_helpers_flavor]
 }

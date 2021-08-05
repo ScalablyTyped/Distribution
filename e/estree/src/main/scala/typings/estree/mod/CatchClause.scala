@@ -18,26 +18,20 @@ trait CatchClause
 }
 object CatchClause {
   
-  @scala.inline
-  def apply(body: BlockStatement): CatchClause = {
+  inline def apply(body: BlockStatement): CatchClause = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], param = null)
     __obj.updateDynamic("type")("CatchClause")
     __obj.asInstanceOf[CatchClause]
   }
   
-  @scala.inline
-  implicit class CatchClauseMutableBuilder[Self <: CatchClause] (val x: Self) extends AnyVal {
+  extension [Self <: CatchClause](x: Self) {
     
-    @scala.inline
-    def setBody(value: BlockStatement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: BlockStatement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParam(value: Pattern): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    inline def setParam(value: Pattern): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamNull: Self = StObject.set(x, "param", null)
+    inline def setParamNull: Self = StObject.set(x, "param", null)
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.CatchClause): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.CatchClause): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

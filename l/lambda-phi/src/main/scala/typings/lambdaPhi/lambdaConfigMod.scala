@@ -12,17 +12,14 @@ object lambdaConfigMod {
   }
   object LambdaConfig {
     
-    @scala.inline
-    def apply(allowNullInjection: Boolean): LambdaConfig = {
+    inline def apply(allowNullInjection: Boolean): LambdaConfig = {
       val __obj = js.Dynamic.literal(allowNullInjection = allowNullInjection.asInstanceOf[js.Any])
       __obj.asInstanceOf[LambdaConfig]
     }
     
-    @scala.inline
-    implicit class LambdaConfigMutableBuilder[Self <: LambdaConfig] (val x: Self) extends AnyVal {
+    extension [Self <: LambdaConfig](x: Self) {
       
-      @scala.inline
-      def setAllowNullInjection(value: Boolean): Self = StObject.set(x, "allowNullInjection", value.asInstanceOf[js.Any])
+      inline def setAllowNullInjection(value: Boolean): Self = StObject.set(x, "allowNullInjection", value.asInstanceOf[js.Any])
     }
   }
 }

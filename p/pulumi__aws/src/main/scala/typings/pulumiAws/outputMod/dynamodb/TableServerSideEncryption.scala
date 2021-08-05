@@ -19,19 +19,15 @@ trait TableServerSideEncryption extends StObject {
 }
 object TableServerSideEncryption {
   
-  @scala.inline
-  def apply(enabled: Boolean, kmsKeyArn: String): TableServerSideEncryption = {
+  inline def apply(enabled: Boolean, kmsKeyArn: String): TableServerSideEncryption = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], kmsKeyArn = kmsKeyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableServerSideEncryption]
   }
   
-  @scala.inline
-  implicit class TableServerSideEncryptionMutableBuilder[Self <: TableServerSideEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: TableServerSideEncryption](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
   }
 }

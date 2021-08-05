@@ -81,56 +81,40 @@ object menuButtonMod {
   }
   object MenuButtonProps {
     
-    @scala.inline
-    def apply(id: String, visible: Boolean): MenuButtonProps = {
+    inline def apply(id: String, visible: Boolean): MenuButtonProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[MenuButtonProps]
     }
     
-    @scala.inline
-    implicit class MenuButtonPropsMutableBuilder[Self <: MenuButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: MenuButtonProps](x: Self) {
       
-      @scala.inline
-      def `setAria-haspopup`(value: menu | `true` | typings.reactMdMenu.reactMdMenuBooleans.`true`): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: menu | `true` | typings.reactMdMenu.reactMdMenuBooleans.`true`): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
+      inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      @scala.inline
-      def setAsAppBarAction(value: Boolean): Self = StObject.set(x, "asAppBarAction", value.asInstanceOf[js.Any])
+      inline def setAsAppBarAction(value: Boolean): Self = StObject.set(x, "asAppBarAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsAppBarActionUndefined: Self = StObject.set(x, "asAppBarAction", js.undefined)
+      inline def setAsAppBarActionUndefined: Self = StObject.set(x, "asAppBarAction", js.undefined)
       
-      @scala.inline
-      def setDisableDropdownIcon(value: Boolean): Self = StObject.set(x, "disableDropdownIcon", value.asInstanceOf[js.Any])
+      inline def setDisableDropdownIcon(value: Boolean): Self = StObject.set(x, "disableDropdownIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableDropdownIconUndefined: Self = StObject.set(x, "disableDropdownIcon", js.undefined)
+      inline def setDisableDropdownIconUndefined: Self = StObject.set(x, "disableDropdownIcon", js.undefined)
       
-      @scala.inline
-      def setDropdownIcon(value: ReactNode): Self = StObject.set(x, "dropdownIcon", value.asInstanceOf[js.Any])
+      inline def setDropdownIcon(value: ReactNode): Self = StObject.set(x, "dropdownIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownIconUndefined: Self = StObject.set(x, "dropdownIcon", js.undefined)
+      inline def setDropdownIconUndefined: Self = StObject.set(x, "dropdownIcon", js.undefined)
       
-      @scala.inline
-      def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+      inline def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+      inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+      inline def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+      inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

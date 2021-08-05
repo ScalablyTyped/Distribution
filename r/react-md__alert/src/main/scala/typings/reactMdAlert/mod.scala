@@ -42,8 +42,7 @@ object mod {
   
   object MessageQueue {
     
-    @scala.inline
-    def apply[M /* <: ToastMessage */](hasTimeoutDuplicatesDefaultQueueChildrenProps: MessageQueueProps[M]): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasTimeoutDuplicatesDefaultQueueChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    inline def apply[M /* <: ToastMessage */](hasTimeoutDuplicatesDefaultQueueChildrenProps: MessageQueueProps[M]): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasTimeoutDuplicatesDefaultQueueChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("@react-md/alert", "MessageQueue")
     @js.native
@@ -58,32 +57,27 @@ object mod {
       @JSImport("@react-md/alert", "MessageQueue.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/alert", "MessageQueue.propTypes.defaultQueue")
       @js.native
       def defaultQueue: js.Any = js.native
-      @scala.inline
-      def defaultQueue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultQueue")(x.asInstanceOf[js.Any])
+      inline def defaultQueue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultQueue")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/alert", "MessageQueue.propTypes.duplicates")
       @js.native
       def duplicates: js.Any = js.native
-      @scala.inline
-      def duplicates_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("duplicates")(x.asInstanceOf[js.Any])
+      inline def duplicates_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("duplicates")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/alert", "MessageQueue.propTypes.onActionClick")
       @js.native
       def onActionClick: js.Any = js.native
-      @scala.inline
-      def onActionClick_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onActionClick")(x.asInstanceOf[js.Any])
+      inline def onActionClick_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onActionClick")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/alert", "MessageQueue.propTypes.timeout")
       @js.native
       def timeout: js.Any = js.native
-      @scala.inline
-      def timeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+      inline def timeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -107,15 +101,11 @@ object mod {
   @js.native
   val Toast: ForwardRefExoticComponent[ToastProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @scala.inline
-  def useAddMessage[M /* <: Message */](): AddMessage[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAddMessage")().asInstanceOf[AddMessage[M]]
+  inline def useAddMessage[M /* <: Message */](): AddMessage[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAddMessage")().asInstanceOf[AddMessage[M]]
   
-  @scala.inline
-  def useMessageQueueActions[M /* <: Message */](): MessageQueueActions[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMessageQueueActions")().asInstanceOf[MessageQueueActions[M]]
+  inline def useMessageQueueActions[M /* <: Message */](): MessageQueueActions[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMessageQueueActions")().asInstanceOf[MessageQueueActions[M]]
   
-  @scala.inline
-  def useMessageVisibility(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useMessageVisibility")().asInstanceOf[Boolean]
+  inline def useMessageVisibility(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useMessageVisibility")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def useQueue[M /* <: Message */](): js.Array[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("useQueue")().asInstanceOf[js.Array[M]]
+  inline def useQueue[M /* <: Message */](): js.Array[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("useQueue")().asInstanceOf[js.Array[M]]
 }

@@ -18,25 +18,19 @@ trait RoleLastUsed extends StObject {
 }
 object RoleLastUsed {
   
-  @scala.inline
-  def apply(): RoleLastUsed = {
+  inline def apply(): RoleLastUsed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoleLastUsed]
   }
   
-  @scala.inline
-  implicit class RoleLastUsedMutableBuilder[Self <: RoleLastUsed] (val x: Self) extends AnyVal {
+  extension [Self <: RoleLastUsed](x: Self) {
     
-    @scala.inline
-    def setLastUsedDate(value: dateType): Self = StObject.set(x, "LastUsedDate", value.asInstanceOf[js.Any])
+    inline def setLastUsedDate(value: dateType): Self = StObject.set(x, "LastUsedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUsedDateUndefined: Self = StObject.set(x, "LastUsedDate", js.undefined)
+    inline def setLastUsedDateUndefined: Self = StObject.set(x, "LastUsedDate", js.undefined)
     
-    @scala.inline
-    def setRegion(value: stringType): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: stringType): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
   }
 }

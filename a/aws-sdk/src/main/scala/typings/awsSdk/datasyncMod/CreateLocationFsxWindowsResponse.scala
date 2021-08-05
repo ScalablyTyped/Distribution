@@ -13,19 +13,15 @@ trait CreateLocationFsxWindowsResponse extends StObject {
 }
 object CreateLocationFsxWindowsResponse {
   
-  @scala.inline
-  def apply(): CreateLocationFsxWindowsResponse = {
+  inline def apply(): CreateLocationFsxWindowsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateLocationFsxWindowsResponse]
   }
   
-  @scala.inline
-  implicit class CreateLocationFsxWindowsResponseMutableBuilder[Self <: CreateLocationFsxWindowsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLocationFsxWindowsResponse](x: Self) {
     
-    @scala.inline
-    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
+    inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
+    inline def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
   }
 }

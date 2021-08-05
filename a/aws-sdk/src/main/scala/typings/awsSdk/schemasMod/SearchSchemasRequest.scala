@@ -25,31 +25,23 @@ trait SearchSchemasRequest extends StObject {
 }
 object SearchSchemasRequest {
   
-  @scala.inline
-  def apply(Keywords: string, RegistryName: string): SearchSchemasRequest = {
+  inline def apply(Keywords: string, RegistryName: string): SearchSchemasRequest = {
     val __obj = js.Dynamic.literal(Keywords = Keywords.asInstanceOf[js.Any], RegistryName = RegistryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchSchemasRequest]
   }
   
-  @scala.inline
-  implicit class SearchSchemasRequestMutableBuilder[Self <: SearchSchemasRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SearchSchemasRequest](x: Self) {
     
-    @scala.inline
-    def setKeywords(value: string): Self = StObject.set(x, "Keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: string): Self = StObject.set(x, "Keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: integer): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: integer): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
+    inline def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
   }
 }

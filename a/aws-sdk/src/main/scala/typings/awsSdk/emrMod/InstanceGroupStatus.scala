@@ -23,31 +23,23 @@ trait InstanceGroupStatus extends StObject {
 }
 object InstanceGroupStatus {
   
-  @scala.inline
-  def apply(): InstanceGroupStatus = {
+  inline def apply(): InstanceGroupStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceGroupStatus]
   }
   
-  @scala.inline
-  implicit class InstanceGroupStatusMutableBuilder[Self <: InstanceGroupStatus] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceGroupStatus](x: Self) {
     
-    @scala.inline
-    def setState(value: InstanceGroupState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: InstanceGroupState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateChangeReason(value: InstanceGroupStateChangeReason): Self = StObject.set(x, "StateChangeReason", value.asInstanceOf[js.Any])
+    inline def setStateChangeReason(value: InstanceGroupStateChangeReason): Self = StObject.set(x, "StateChangeReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateChangeReasonUndefined: Self = StObject.set(x, "StateChangeReason", js.undefined)
+    inline def setStateChangeReasonUndefined: Self = StObject.set(x, "StateChangeReason", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setTimeline(value: InstanceGroupTimeline): Self = StObject.set(x, "Timeline", value.asInstanceOf[js.Any])
+    inline def setTimeline(value: InstanceGroupTimeline): Self = StObject.set(x, "Timeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimelineUndefined: Self = StObject.set(x, "Timeline", js.undefined)
+    inline def setTimelineUndefined: Self = StObject.set(x, "Timeline", js.undefined)
   }
 }

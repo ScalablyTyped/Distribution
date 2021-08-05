@@ -16,19 +16,15 @@ trait SchemaSourceGetMetadataRequest extends StObject {
 }
 object SchemaSourceGetMetadataRequest {
   
-  @scala.inline
-  def apply(): SchemaSourceGetMetadataRequest = {
+  inline def apply(): SchemaSourceGetMetadataRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSourceGetMetadataRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSourceGetMetadataRequestMutableBuilder[Self <: SchemaSourceGetMetadataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSourceGetMetadataRequest](x: Self) {
     
-    @scala.inline
-    def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

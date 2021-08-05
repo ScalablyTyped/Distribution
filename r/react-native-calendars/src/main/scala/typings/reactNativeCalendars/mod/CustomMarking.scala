@@ -12,16 +12,13 @@ trait CustomMarking
 }
 object CustomMarking {
   
-  @scala.inline
-  def apply(customStyles: MarkedDateCustomStyles): CustomMarking = {
+  inline def apply(customStyles: MarkedDateCustomStyles): CustomMarking = {
     val __obj = js.Dynamic.literal(customStyles = customStyles.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomMarking]
   }
   
-  @scala.inline
-  implicit class CustomMarkingMutableBuilder[Self <: CustomMarking] (val x: Self) extends AnyVal {
+  extension [Self <: CustomMarking](x: Self) {
     
-    @scala.inline
-    def setCustomStyles(value: MarkedDateCustomStyles): Self = StObject.set(x, "customStyles", value.asInstanceOf[js.Any])
+    inline def setCustomStyles(value: MarkedDateCustomStyles): Self = StObject.set(x, "customStyles", value.asInstanceOf[js.Any])
   }
 }

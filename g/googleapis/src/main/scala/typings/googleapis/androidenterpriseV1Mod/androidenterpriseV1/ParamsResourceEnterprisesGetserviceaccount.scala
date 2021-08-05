@@ -29,31 +29,23 @@ trait ParamsResourceEnterprisesGetserviceaccount
 }
 object ParamsResourceEnterprisesGetserviceaccount {
   
-  @scala.inline
-  def apply(): ParamsResourceEnterprisesGetserviceaccount = {
+  inline def apply(): ParamsResourceEnterprisesGetserviceaccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceEnterprisesGetserviceaccount]
   }
   
-  @scala.inline
-  implicit class ParamsResourceEnterprisesGetserviceaccountMutableBuilder[Self <: ParamsResourceEnterprisesGetserviceaccount] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceEnterprisesGetserviceaccount](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
+    inline def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseIdUndefined: Self = StObject.set(x, "enterpriseId", js.undefined)
+    inline def setEnterpriseIdUndefined: Self = StObject.set(x, "enterpriseId", js.undefined)
     
-    @scala.inline
-    def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+    inline def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
+    inline def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
   }
 }

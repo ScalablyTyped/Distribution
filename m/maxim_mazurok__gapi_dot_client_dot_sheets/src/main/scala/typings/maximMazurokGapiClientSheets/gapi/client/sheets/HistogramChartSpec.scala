@@ -33,46 +33,33 @@ trait HistogramChartSpec extends StObject {
 }
 object HistogramChartSpec {
   
-  @scala.inline
-  def apply(): HistogramChartSpec = {
+  inline def apply(): HistogramChartSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistogramChartSpec]
   }
   
-  @scala.inline
-  implicit class HistogramChartSpecMutableBuilder[Self <: HistogramChartSpec] (val x: Self) extends AnyVal {
+  extension [Self <: HistogramChartSpec](x: Self) {
     
-    @scala.inline
-    def setBucketSize(value: Double): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
+    inline def setBucketSize(value: Double): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
+    inline def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
     
-    @scala.inline
-    def setLegendPosition(value: String): Self = StObject.set(x, "legendPosition", value.asInstanceOf[js.Any])
+    inline def setLegendPosition(value: String): Self = StObject.set(x, "legendPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendPositionUndefined: Self = StObject.set(x, "legendPosition", js.undefined)
+    inline def setLegendPositionUndefined: Self = StObject.set(x, "legendPosition", js.undefined)
     
-    @scala.inline
-    def setOutlierPercentile(value: Double): Self = StObject.set(x, "outlierPercentile", value.asInstanceOf[js.Any])
+    inline def setOutlierPercentile(value: Double): Self = StObject.set(x, "outlierPercentile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlierPercentileUndefined: Self = StObject.set(x, "outlierPercentile", js.undefined)
+    inline def setOutlierPercentileUndefined: Self = StObject.set(x, "outlierPercentile", js.undefined)
     
-    @scala.inline
-    def setSeries(value: js.Array[HistogramSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: js.Array[HistogramSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    @scala.inline
-    def setSeriesVarargs(value: HistogramSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: HistogramSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
     
-    @scala.inline
-    def setShowItemDividers(value: Boolean): Self = StObject.set(x, "showItemDividers", value.asInstanceOf[js.Any])
+    inline def setShowItemDividers(value: Boolean): Self = StObject.set(x, "showItemDividers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowItemDividersUndefined: Self = StObject.set(x, "showItemDividers", js.undefined)
+    inline def setShowItemDividersUndefined: Self = StObject.set(x, "showItemDividers", js.undefined)
   }
 }

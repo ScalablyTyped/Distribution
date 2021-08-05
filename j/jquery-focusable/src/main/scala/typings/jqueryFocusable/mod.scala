@@ -16,26 +16,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFindNegativeTabindex(value: Boolean): Self = StObject.set(x, "findNegativeTabindex", value.asInstanceOf[js.Any])
+      inline def setFindNegativeTabindex(value: Boolean): Self = StObject.set(x, "findNegativeTabindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindNegativeTabindexUndefined: Self = StObject.set(x, "findNegativeTabindex", js.undefined)
+      inline def setFindNegativeTabindexUndefined: Self = StObject.set(x, "findNegativeTabindex", js.undefined)
       
-      @scala.inline
-      def setFindPositiveTabindex(value: `true`): Self = StObject.set(x, "findPositiveTabindex", value.asInstanceOf[js.Any])
+      inline def setFindPositiveTabindex(value: `true`): Self = StObject.set(x, "findPositiveTabindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindPositiveTabindexUndefined: Self = StObject.set(x, "findPositiveTabindex", js.undefined)
+      inline def setFindPositiveTabindexUndefined: Self = StObject.set(x, "findPositiveTabindex", js.undefined)
     }
   }
   

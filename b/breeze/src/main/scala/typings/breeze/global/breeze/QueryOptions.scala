@@ -22,6 +22,5 @@ object QueryOptions {
   @JSGlobal("breeze.QueryOptions.defaultInstance")
   @js.native
   def defaultInstance: typings.breeze.breeze.QueryOptions = js.native
-  @scala.inline
-  def defaultInstance_=(x: typings.breeze.breeze.QueryOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultInstance")(x.asInstanceOf[js.Any])
+  inline def defaultInstance_=(x: typings.breeze.breeze.QueryOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultInstance")(x.asInstanceOf[js.Any])
 }

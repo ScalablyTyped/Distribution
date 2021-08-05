@@ -13,22 +13,17 @@ trait ListDomainNamesResponse extends StObject {
 }
 object ListDomainNamesResponse {
   
-  @scala.inline
-  def apply(): ListDomainNamesResponse = {
+  inline def apply(): ListDomainNamesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDomainNamesResponse]
   }
   
-  @scala.inline
-  implicit class ListDomainNamesResponseMutableBuilder[Self <: ListDomainNamesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDomainNamesResponse](x: Self) {
     
-    @scala.inline
-    def setDomainNames(value: DomainInfoList): Self = StObject.set(x, "DomainNames", value.asInstanceOf[js.Any])
+    inline def setDomainNames(value: DomainInfoList): Self = StObject.set(x, "DomainNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNamesUndefined: Self = StObject.set(x, "DomainNames", js.undefined)
+    inline def setDomainNamesUndefined: Self = StObject.set(x, "DomainNames", js.undefined)
     
-    @scala.inline
-    def setDomainNamesVarargs(value: DomainInfo*): Self = StObject.set(x, "DomainNames", js.Array(value :_*))
+    inline def setDomainNamesVarargs(value: DomainInfo*): Self = StObject.set(x, "DomainNames", js.Array(value :_*))
   }
 }

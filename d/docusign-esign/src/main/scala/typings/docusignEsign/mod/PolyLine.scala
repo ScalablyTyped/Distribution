@@ -16,37 +16,27 @@ trait PolyLine extends StObject {
 }
 object PolyLine {
   
-  @scala.inline
-  def apply(): PolyLine = {
+  inline def apply(): PolyLine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolyLine]
   }
   
-  @scala.inline
-  implicit class PolyLineMutableBuilder[Self <: PolyLine] (val x: Self) extends AnyVal {
+  extension [Self <: PolyLine](x: Self) {
     
-    @scala.inline
-    def setX1(value: String): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+    inline def setX1(value: String): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
+    inline def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
     
-    @scala.inline
-    def setX2(value: String): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+    inline def setX2(value: String): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
+    inline def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
     
-    @scala.inline
-    def setY1(value: String): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+    inline def setY1(value: String): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
+    inline def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
     
-    @scala.inline
-    def setY2(value: String): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: String): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
+    inline def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
   }
 }

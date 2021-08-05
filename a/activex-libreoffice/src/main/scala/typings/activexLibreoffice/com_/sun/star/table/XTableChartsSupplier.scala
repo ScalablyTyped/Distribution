@@ -25,8 +25,7 @@ trait XTableChartsSupplier
 }
 object XTableChartsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Charts: XTableCharts,
     acquire: () => Unit,
     getCharts: () => XTableCharts,
@@ -37,13 +36,10 @@ object XTableChartsSupplier {
     __obj.asInstanceOf[XTableChartsSupplier]
   }
   
-  @scala.inline
-  implicit class XTableChartsSupplierMutableBuilder[Self <: XTableChartsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XTableChartsSupplier](x: Self) {
     
-    @scala.inline
-    def setCharts(value: XTableCharts): Self = StObject.set(x, "Charts", value.asInstanceOf[js.Any])
+    inline def setCharts(value: XTableCharts): Self = StObject.set(x, "Charts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCharts(value: () => XTableCharts): Self = StObject.set(x, "getCharts", js.Any.fromFunction0(value))
+    inline def setGetCharts(value: () => XTableCharts): Self = StObject.set(x, "getCharts", js.Any.fromFunction0(value))
   }
 }

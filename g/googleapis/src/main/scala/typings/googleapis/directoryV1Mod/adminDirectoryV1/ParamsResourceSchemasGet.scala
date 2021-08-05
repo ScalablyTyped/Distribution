@@ -29,31 +29,23 @@ trait ParamsResourceSchemasGet
 }
 object ParamsResourceSchemasGet {
   
-  @scala.inline
-  def apply(): ParamsResourceSchemasGet = {
+  inline def apply(): ParamsResourceSchemasGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceSchemasGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceSchemasGetMutableBuilder[Self <: ParamsResourceSchemasGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceSchemasGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
-    @scala.inline
-    def setSchemaKey(value: String): Self = StObject.set(x, "schemaKey", value.asInstanceOf[js.Any])
+    inline def setSchemaKey(value: String): Self = StObject.set(x, "schemaKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaKeyUndefined: Self = StObject.set(x, "schemaKey", js.undefined)
+    inline def setSchemaKeyUndefined: Self = StObject.set(x, "schemaKey", js.undefined)
   }
 }

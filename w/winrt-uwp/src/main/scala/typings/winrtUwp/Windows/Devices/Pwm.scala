@@ -28,8 +28,7 @@ object Pwm {
   }
   object PwmController {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actualFrequency: js.Any,
       maxFrequency: js.Any,
       minFrequency: js.Any,
@@ -41,26 +40,19 @@ object Pwm {
       __obj.asInstanceOf[PwmController]
     }
     
-    @scala.inline
-    implicit class PwmControllerMutableBuilder[Self <: PwmController] (val x: Self) extends AnyVal {
+    extension [Self <: PwmController](x: Self) {
       
-      @scala.inline
-      def setActualFrequency(value: js.Any): Self = StObject.set(x, "actualFrequency", value.asInstanceOf[js.Any])
+      inline def setActualFrequency(value: js.Any): Self = StObject.set(x, "actualFrequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFrequency(value: js.Any): Self = StObject.set(x, "maxFrequency", value.asInstanceOf[js.Any])
+      inline def setMaxFrequency(value: js.Any): Self = StObject.set(x, "maxFrequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinFrequency(value: js.Any): Self = StObject.set(x, "minFrequency", value.asInstanceOf[js.Any])
+      inline def setMinFrequency(value: js.Any): Self = StObject.set(x, "minFrequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenPin(value: js.Any): Self = StObject.set(x, "openPin", value.asInstanceOf[js.Any])
+      inline def setOpenPin(value: js.Any): Self = StObject.set(x, "openPin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinCount(value: js.Any): Self = StObject.set(x, "pinCount", value.asInstanceOf[js.Any])
+      inline def setPinCount(value: js.Any): Self = StObject.set(x, "pinCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetDesiredFrequency(value: js.Any): Self = StObject.set(x, "setDesiredFrequency", value.asInstanceOf[js.Any])
+      inline def setSetDesiredFrequency(value: js.Any): Self = StObject.set(x, "setDesiredFrequency", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,8 +83,7 @@ object Pwm {
   }
   object PwmPin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: js.Any,
       controller: js.Any,
       getActiveDutyCyclePercentage: js.Any,
@@ -106,32 +97,23 @@ object Pwm {
       __obj.asInstanceOf[PwmPin]
     }
     
-    @scala.inline
-    implicit class PwmPinMutableBuilder[Self <: PwmPin] (val x: Self) extends AnyVal {
+    extension [Self <: PwmPin](x: Self) {
       
-      @scala.inline
-      def setClose(value: js.Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: js.Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetActiveDutyCyclePercentage(value: js.Any): Self = StObject.set(x, "getActiveDutyCyclePercentage", value.asInstanceOf[js.Any])
+      inline def setGetActiveDutyCyclePercentage(value: js.Any): Self = StObject.set(x, "getActiveDutyCyclePercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsStarted(value: js.Any): Self = StObject.set(x, "isStarted", value.asInstanceOf[js.Any])
+      inline def setIsStarted(value: js.Any): Self = StObject.set(x, "isStarted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolarity(value: js.Any): Self = StObject.set(x, "polarity", value.asInstanceOf[js.Any])
+      inline def setPolarity(value: js.Any): Self = StObject.set(x, "polarity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetActiveDutyCyclePercentage(value: js.Any): Self = StObject.set(x, "setActiveDutyCyclePercentage", value.asInstanceOf[js.Any])
+      inline def setSetActiveDutyCyclePercentage(value: js.Any): Self = StObject.set(x, "setActiveDutyCyclePercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStop(value: js.Any): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+      inline def setStop(value: js.Any): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     }
   }
 }

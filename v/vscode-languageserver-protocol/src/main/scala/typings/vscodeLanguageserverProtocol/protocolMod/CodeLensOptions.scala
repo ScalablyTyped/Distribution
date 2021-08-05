@@ -15,19 +15,15 @@ trait CodeLensOptions
 }
 object CodeLensOptions {
   
-  @scala.inline
-  def apply(): CodeLensOptions = {
+  inline def apply(): CodeLensOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeLensOptions]
   }
   
-  @scala.inline
-  implicit class CodeLensOptionsMutableBuilder[Self <: CodeLensOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CodeLensOptions](x: Self) {
     
-    @scala.inline
-    def setResolveProvider(value: Boolean): Self = StObject.set(x, "resolveProvider", value.asInstanceOf[js.Any])
+    inline def setResolveProvider(value: Boolean): Self = StObject.set(x, "resolveProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolveProviderUndefined: Self = StObject.set(x, "resolveProvider", js.undefined)
+    inline def setResolveProviderUndefined: Self = StObject.set(x, "resolveProvider", js.undefined)
   }
 }

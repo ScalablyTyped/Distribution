@@ -11,16 +11,13 @@ trait ISyndicationClientFactory extends StObject {
 }
 object ISyndicationClientFactory {
   
-  @scala.inline
-  def apply(createSyndicationClient: PasswordCredential => SyndicationClient): ISyndicationClientFactory = {
+  inline def apply(createSyndicationClient: PasswordCredential => SyndicationClient): ISyndicationClientFactory = {
     val __obj = js.Dynamic.literal(createSyndicationClient = js.Any.fromFunction1(createSyndicationClient))
     __obj.asInstanceOf[ISyndicationClientFactory]
   }
   
-  @scala.inline
-  implicit class ISyndicationClientFactoryMutableBuilder[Self <: ISyndicationClientFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ISyndicationClientFactory](x: Self) {
     
-    @scala.inline
-    def setCreateSyndicationClient(value: PasswordCredential => SyndicationClient): Self = StObject.set(x, "createSyndicationClient", js.Any.fromFunction1(value))
+    inline def setCreateSyndicationClient(value: PasswordCredential => SyndicationClient): Self = StObject.set(x, "createSyndicationClient", js.Any.fromFunction1(value))
   }
 }

@@ -11,8 +11,7 @@ trait DeleteEventStreamOutput
      with typings.awsSdkClientPinpointBrowser.typesDeleteEventStreamOutputMod.DeleteEventStreamOutput
 object DeleteEventStreamOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, EventStream: UnmarshalledEventStream): DeleteEventStreamOutput = {
+  inline def apply($metadata: ResponseMetadata, EventStream: UnmarshalledEventStream): DeleteEventStreamOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], EventStream = EventStream.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEventStreamOutput]
   }

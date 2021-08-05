@@ -15,8 +15,7 @@ trait GraphicObjectResolver
 }
 object GraphicObjectResolver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createWithStorage: XStorage => Unit,
     queryInterface: `type` => js.Any,
@@ -27,10 +26,8 @@ object GraphicObjectResolver {
     __obj.asInstanceOf[GraphicObjectResolver]
   }
   
-  @scala.inline
-  implicit class GraphicObjectResolverMutableBuilder[Self <: GraphicObjectResolver] (val x: Self) extends AnyVal {
+  extension [Self <: GraphicObjectResolver](x: Self) {
     
-    @scala.inline
-    def setCreateWithStorage(value: XStorage => Unit): Self = StObject.set(x, "createWithStorage", js.Any.fromFunction1(value))
+    inline def setCreateWithStorage(value: XStorage => Unit): Self = StObject.set(x, "createWithStorage", js.Any.fromFunction1(value))
   }
 }

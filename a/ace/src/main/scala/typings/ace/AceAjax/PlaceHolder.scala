@@ -52,8 +52,7 @@ trait PlaceHolder extends StObject {
 }
 object PlaceHolder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: () => Unit,
     detach: () => Unit,
     hideOtherMarkers: () => Unit,
@@ -67,31 +66,22 @@ object PlaceHolder {
     __obj.asInstanceOf[PlaceHolder]
   }
   
-  @scala.inline
-  implicit class PlaceHolderMutableBuilder[Self <: PlaceHolder] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceHolder](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
+    inline def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideOtherMarkers(value: () => Unit): Self = StObject.set(x, "hideOtherMarkers", js.Any.fromFunction0(value))
+    inline def setHideOtherMarkers(value: () => Unit): Self = StObject.set(x, "hideOtherMarkers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOn(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (String, js.Function1[/* e */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnCursorChange(value: () => Unit): Self = StObject.set(x, "onCursorChange", js.Any.fromFunction0(value))
+    inline def setOnCursorChange(value: () => Unit): Self = StObject.set(x, "onCursorChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnUpdate(value: () => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction0(value))
+    inline def setOnUpdate(value: () => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetup(value: () => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction0(value))
+    inline def setSetup(value: () => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowOtherMarkers(value: () => Unit): Self = StObject.set(x, "showOtherMarkers", js.Any.fromFunction0(value))
+    inline def setShowOtherMarkers(value: () => Unit): Self = StObject.set(x, "showOtherMarkers", js.Any.fromFunction0(value))
   }
 }

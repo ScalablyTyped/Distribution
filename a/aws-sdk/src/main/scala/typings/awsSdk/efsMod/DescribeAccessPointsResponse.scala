@@ -18,28 +18,21 @@ trait DescribeAccessPointsResponse extends StObject {
 }
 object DescribeAccessPointsResponse {
   
-  @scala.inline
-  def apply(): DescribeAccessPointsResponse = {
+  inline def apply(): DescribeAccessPointsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAccessPointsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAccessPointsResponseMutableBuilder[Self <: DescribeAccessPointsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccessPointsResponse](x: Self) {
     
-    @scala.inline
-    def setAccessPoints(value: AccessPointDescriptions): Self = StObject.set(x, "AccessPoints", value.asInstanceOf[js.Any])
+    inline def setAccessPoints(value: AccessPointDescriptions): Self = StObject.set(x, "AccessPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPointsUndefined: Self = StObject.set(x, "AccessPoints", js.undefined)
+    inline def setAccessPointsUndefined: Self = StObject.set(x, "AccessPoints", js.undefined)
     
-    @scala.inline
-    def setAccessPointsVarargs(value: AccessPointDescription*): Self = StObject.set(x, "AccessPoints", js.Array(value :_*))
+    inline def setAccessPointsVarargs(value: AccessPointDescription*): Self = StObject.set(x, "AccessPoints", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

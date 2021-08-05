@@ -11,7 +11,7 @@ trait XDocuments extends StObject {
   
   val Count: Double = js.native
   
-  @JSName("InfoPath.XDocuments_typekey")
+  /* private */ @JSName("InfoPath.XDocuments_typekey")
   var InfoPathDotXDocuments_typekey: XDocuments = js.native
   
   def Item(varIndex: js.Any): _XDocument = js.native

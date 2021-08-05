@@ -14,31 +14,23 @@ trait AuthOptions extends StObject {
 }
 object AuthOptions {
   
-  @scala.inline
-  def apply(): AuthOptions = {
+  inline def apply(): AuthOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthOptions]
   }
   
-  @scala.inline
-  implicit class AuthOptionsMutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AuthOptions](x: Self) {
     
-    @scala.inline
-    def setAuthUrl(value: String): Self = StObject.set(x, "authUrl", value.asInstanceOf[js.Any])
+    inline def setAuthUrl(value: String): Self = StObject.set(x, "authUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUrlUndefined: Self = StObject.set(x, "authUrl", js.undefined)
+    inline def setAuthUrlUndefined: Self = StObject.set(x, "authUrl", js.undefined)
     
-    @scala.inline
-    def setOnAuth(value: /* user */ AuthUserData => Unit): Self = StObject.set(x, "onAuth", js.Any.fromFunction1(value))
+    inline def setOnAuth(value: /* user */ AuthUserData => Unit): Self = StObject.set(x, "onAuth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnAuthUndefined: Self = StObject.set(x, "onAuth", js.undefined)
+    inline def setOnAuthUndefined: Self = StObject.set(x, "onAuth", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

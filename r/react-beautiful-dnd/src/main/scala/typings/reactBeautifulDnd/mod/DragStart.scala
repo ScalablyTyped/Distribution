@@ -15,20 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object DragStart {
   
-  @scala.inline
-  def apply(draggableId: DraggableId, mode: MovementMode, source: DraggableLocation, `type`: TypeId): DragStart = {
+  inline def apply(draggableId: DraggableId, mode: MovementMode, source: DraggableLocation, `type`: TypeId): DragStart = {
     val __obj = js.Dynamic.literal(draggableId = draggableId.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragStart]
   }
   
-  @scala.inline
-  implicit class DragStartMutableBuilder[Self <: DragStart] (val x: Self) extends AnyVal {
+  extension [Self <: DragStart](x: Self) {
     
-    @scala.inline
-    def setSource(value: DraggableLocation): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: DraggableLocation): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TypeId): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TypeId): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

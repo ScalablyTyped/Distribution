@@ -12,19 +12,15 @@ trait UsersOptions
 }
 object UsersOptions {
   
-  @scala.inline
-  def apply(baseUrl: String): UsersOptions = {
+  inline def apply(baseUrl: String): UsersOptions = {
     val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersOptions]
   }
   
-  @scala.inline
-  implicit class UsersOptionsMutableBuilder[Self <: UsersOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UsersOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
   }
 }

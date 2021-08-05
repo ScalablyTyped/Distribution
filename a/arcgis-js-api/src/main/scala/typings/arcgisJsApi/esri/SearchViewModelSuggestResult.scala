@@ -33,8 +33,7 @@ trait SearchViewModelSuggestResult
 }
 object SearchViewModelSuggestResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     key: String,
@@ -46,16 +45,12 @@ object SearchViewModelSuggestResult {
     __obj.asInstanceOf[SearchViewModelSuggestResult]
   }
   
-  @scala.inline
-  implicit class SearchViewModelSuggestResultMutableBuilder[Self <: SearchViewModelSuggestResult] (val x: Self) extends AnyVal {
+  extension [Self <: SearchViewModelSuggestResult](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
+    inline def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

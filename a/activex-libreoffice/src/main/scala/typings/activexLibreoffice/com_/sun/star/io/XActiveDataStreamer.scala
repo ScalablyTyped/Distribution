@@ -30,8 +30,7 @@ trait XActiveDataStreamer
 }
 object XActiveDataStreamer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Stream: XStream,
     acquire: () => Unit,
     getStream: () => XStream,
@@ -43,16 +42,12 @@ object XActiveDataStreamer {
     __obj.asInstanceOf[XActiveDataStreamer]
   }
   
-  @scala.inline
-  implicit class XActiveDataStreamerMutableBuilder[Self <: XActiveDataStreamer] (val x: Self) extends AnyVal {
+  extension [Self <: XActiveDataStreamer](x: Self) {
     
-    @scala.inline
-    def setGetStream(value: () => XStream): Self = StObject.set(x, "getStream", js.Any.fromFunction0(value))
+    inline def setGetStream(value: () => XStream): Self = StObject.set(x, "getStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetStream(value: XStream => Unit): Self = StObject.set(x, "setStream", js.Any.fromFunction1(value))
+    inline def setSetStream(value: XStream => Unit): Self = StObject.set(x, "setStream", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStream(value: XStream): Self = StObject.set(x, "Stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: XStream): Self = StObject.set(x, "Stream", value.asInstanceOf[js.Any])
   }
 }

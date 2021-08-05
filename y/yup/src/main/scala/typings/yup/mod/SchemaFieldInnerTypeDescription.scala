@@ -22,35 +22,26 @@ trait SchemaFieldInnerTypeDescription
 }
 object SchemaFieldInnerTypeDescription {
   
-  @scala.inline
-  def apply(label: String, meta: js.Object, tests: js.Array[Name], `type`: String): SchemaFieldInnerTypeDescription = {
+  inline def apply(label: String, meta: js.Object, tests: js.Array[Name], `type`: String): SchemaFieldInnerTypeDescription = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFieldInnerTypeDescription]
   }
   
-  @scala.inline
-  implicit class SchemaFieldInnerTypeDescriptionMutableBuilder[Self <: SchemaFieldInnerTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFieldInnerTypeDescription](x: Self) {
     
-    @scala.inline
-    def setInnerType(value: SchemaFieldDescription): Self = StObject.set(x, "innerType", value.asInstanceOf[js.Any])
+    inline def setInnerType(value: SchemaFieldDescription): Self = StObject.set(x, "innerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerTypeUndefined: Self = StObject.set(x, "innerType", js.undefined)
+    inline def setInnerTypeUndefined: Self = StObject.set(x, "innerType", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTests(value: js.Array[Name]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
+    inline def setTests(value: js.Array[Name]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestsVarargs(value: Name*): Self = StObject.set(x, "tests", js.Array(value :_*))
+    inline def setTestsVarargs(value: Name*): Self = StObject.set(x, "tests", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

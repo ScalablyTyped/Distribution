@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Type extends StObject
 object Type {
   
-  @scala.inline
-  def GROUP: typings.facebookInstantGames.facebookInstantGamesStrings.GROUP = "GROUP".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.GROUP]
+  inline def GROUP: typings.facebookInstantGames.facebookInstantGamesStrings.GROUP = "GROUP".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.GROUP]
   
-  @scala.inline
-  def POST: typings.facebookInstantGames.facebookInstantGamesStrings.POST = "POST".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.POST]
+  inline def POST: typings.facebookInstantGames.facebookInstantGamesStrings.POST = "POST".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.POST]
   
-  @scala.inline
-  def SOLO: typings.facebookInstantGames.facebookInstantGamesStrings.SOLO = "SOLO".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.SOLO]
+  inline def SOLO: typings.facebookInstantGames.facebookInstantGamesStrings.SOLO = "SOLO".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.SOLO]
   
-  @scala.inline
-  def THREAD: typings.facebookInstantGames.facebookInstantGamesStrings.THREAD = "THREAD".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.THREAD]
+  inline def THREAD: typings.facebookInstantGames.facebookInstantGamesStrings.THREAD = "THREAD".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.THREAD]
 }

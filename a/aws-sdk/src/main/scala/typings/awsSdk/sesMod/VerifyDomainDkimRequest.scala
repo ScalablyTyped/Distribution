@@ -13,16 +13,13 @@ trait VerifyDomainDkimRequest extends StObject {
 }
 object VerifyDomainDkimRequest {
   
-  @scala.inline
-  def apply(Domain: Domain): VerifyDomainDkimRequest = {
+  inline def apply(Domain: Domain): VerifyDomainDkimRequest = {
     val __obj = js.Dynamic.literal(Domain = Domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyDomainDkimRequest]
   }
   
-  @scala.inline
-  implicit class VerifyDomainDkimRequestMutableBuilder[Self <: VerifyDomainDkimRequest] (val x: Self) extends AnyVal {
+  extension [Self <: VerifyDomainDkimRequest](x: Self) {
     
-    @scala.inline
-    def setDomain(value: Domain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: Domain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
   }
 }

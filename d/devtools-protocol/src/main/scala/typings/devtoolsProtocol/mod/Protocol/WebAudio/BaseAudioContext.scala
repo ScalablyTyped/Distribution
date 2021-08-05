@@ -31,8 +31,7 @@ trait BaseAudioContext extends StObject {
 }
 object BaseAudioContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callbackBufferSize: Double,
     contextId: GraphObjectId,
     contextState: ContextState,
@@ -44,31 +43,22 @@ object BaseAudioContext {
     __obj.asInstanceOf[BaseAudioContext]
   }
   
-  @scala.inline
-  implicit class BaseAudioContextMutableBuilder[Self <: BaseAudioContext] (val x: Self) extends AnyVal {
+  extension [Self <: BaseAudioContext](x: Self) {
     
-    @scala.inline
-    def setCallbackBufferSize(value: Double): Self = StObject.set(x, "callbackBufferSize", value.asInstanceOf[js.Any])
+    inline def setCallbackBufferSize(value: Double): Self = StObject.set(x, "callbackBufferSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
+    inline def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextState(value: ContextState): Self = StObject.set(x, "contextState", value.asInstanceOf[js.Any])
+    inline def setContextState(value: ContextState): Self = StObject.set(x, "contextState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextType(value: ContextType): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
+    inline def setContextType(value: ContextType): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxOutputChannelCount(value: Double): Self = StObject.set(x, "maxOutputChannelCount", value.asInstanceOf[js.Any])
+    inline def setMaxOutputChannelCount(value: Double): Self = StObject.set(x, "maxOutputChannelCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealtimeData(value: ContextRealtimeData): Self = StObject.set(x, "realtimeData", value.asInstanceOf[js.Any])
+    inline def setRealtimeData(value: ContextRealtimeData): Self = StObject.set(x, "realtimeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealtimeDataUndefined: Self = StObject.set(x, "realtimeData", js.undefined)
+    inline def setRealtimeDataUndefined: Self = StObject.set(x, "realtimeData", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait EventType_ extends StObject {
 }
 object EventType_ {
   
-  @scala.inline
-  def apply(): EventType_ = {
+  inline def apply(): EventType_ = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventType_]
   }
   
-  @scala.inline
-  implicit class EventType_MutableBuilder[Self <: EventType_] (val x: Self) extends AnyVal {
+  extension [Self <: EventType_](x: Self) {
     
-    @scala.inline
-    def setCategory(value: eventTypeCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: eventTypeCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setCode(value: eventTypeCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: eventTypeCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setService(value: service): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: service): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

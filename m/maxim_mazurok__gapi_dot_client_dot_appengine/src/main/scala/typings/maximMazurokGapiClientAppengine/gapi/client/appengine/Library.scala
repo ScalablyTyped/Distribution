@@ -14,25 +14,19 @@ trait Library extends StObject {
 }
 object Library {
   
-  @scala.inline
-  def apply(): Library = {
+  inline def apply(): Library = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Library]
   }
   
-  @scala.inline
-  implicit class LibraryMutableBuilder[Self <: Library] (val x: Self) extends AnyVal {
+  extension [Self <: Library](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

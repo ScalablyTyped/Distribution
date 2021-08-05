@@ -120,6 +120,5 @@ object Graphics {
   @JSGlobal("Phaser.GameObjects.Graphics.TargetCamera")
   @js.native
   def TargetCamera: Camera = js.native
-  @scala.inline
-  def TargetCamera_=(x: Camera): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TargetCamera")(x.asInstanceOf[js.Any])
+  inline def TargetCamera_=(x: Camera): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TargetCamera")(x.asInstanceOf[js.Any])
 }

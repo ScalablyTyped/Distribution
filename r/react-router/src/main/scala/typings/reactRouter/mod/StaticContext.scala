@@ -10,19 +10,15 @@ trait StaticContext extends StObject {
 }
 object StaticContext {
   
-  @scala.inline
-  def apply(): StaticContext = {
+  inline def apply(): StaticContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StaticContext]
   }
   
-  @scala.inline
-  implicit class StaticContextMutableBuilder[Self <: StaticContext] (val x: Self) extends AnyVal {
+  extension [Self <: StaticContext](x: Self) {
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

@@ -11,8 +11,6 @@ object useMediaQueryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def unstableUseMediaQuery(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useMediaQuery")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def unstableUseMediaQuery(query: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useMediaQuery")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def unstableUseMediaQuery(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useMediaQuery")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def unstableUseMediaQuery(query: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useMediaQuery")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

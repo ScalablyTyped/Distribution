@@ -11,15 +11,14 @@ trait Options extends StObject {
   
   var DoNotPromptForConvert: MsoTriState
   
-  @JSName("PowerPoint.Options_typekey")
+  /* private */ @JSName("PowerPoint.Options_typekey")
   var PowerPointDotOptions_typekey: Options
   
   var ShowCoauthoringMergeChanges: Boolean
 }
 object Options {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DisplayPasteOptions: MsoTriState,
     DoNotPromptForConvert: MsoTriState,
     PowerPointDotOptions_typekey: Options,
@@ -30,19 +29,14 @@ object Options {
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setDisplayPasteOptions(value: MsoTriState): Self = StObject.set(x, "DisplayPasteOptions", value.asInstanceOf[js.Any])
+    inline def setDisplayPasteOptions(value: MsoTriState): Self = StObject.set(x, "DisplayPasteOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoNotPromptForConvert(value: MsoTriState): Self = StObject.set(x, "DoNotPromptForConvert", value.asInstanceOf[js.Any])
+    inline def setDoNotPromptForConvert(value: MsoTriState): Self = StObject.set(x, "DoNotPromptForConvert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotOptions_typekey(value: Options): Self = StObject.set(x, "PowerPoint.Options_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotOptions_typekey(value: Options): Self = StObject.set(x, "PowerPoint.Options_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCoauthoringMergeChanges(value: Boolean): Self = StObject.set(x, "ShowCoauthoringMergeChanges", value.asInstanceOf[js.Any])
+    inline def setShowCoauthoringMergeChanges(value: Boolean): Self = StObject.set(x, "ShowCoauthoringMergeChanges", value.asInstanceOf[js.Any])
   }
 }

@@ -25,22 +25,22 @@ object webServerConnectorMod {
     /**
       * @hidden
       */
-    var _Handle_browser_connect: js.Any = js.native
+    /* private */ var _Handle_browser_connect: js.Any = js.native
     
     /**
       * @hidden
       */
-    var _Handle_browser_message: js.Any = js.native
+    /* private */ var _Handle_browser_message: js.Any = js.native
     
     /**
       * @hidden
       */
-    var _Handle_node_connect: js.Any = js.native
+    /* private */ var _Handle_node_connect: js.Any = js.native
     
     /**
       * @hidden
       */
-    var browser_socket_ : js.Any = js.native
+    /* private */ var browser_socket_ : js.Any = js.native
     
     /**
       * Connect to a web server.
@@ -87,7 +87,7 @@ object webServerConnectorMod {
     /**
       * @hidden
       */
-    var node_client_ : js.Any = js.native
+    /* private */ var node_client_ : js.Any = js.native
     
     /**
       * @inheritdoc

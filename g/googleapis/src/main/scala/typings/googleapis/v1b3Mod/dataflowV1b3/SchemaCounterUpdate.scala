@@ -89,103 +89,71 @@ trait SchemaCounterUpdate extends StObject {
 }
 object SchemaCounterUpdate {
   
-  @scala.inline
-  def apply(): SchemaCounterUpdate = {
+  inline def apply(): SchemaCounterUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCounterUpdate]
   }
   
-  @scala.inline
-  implicit class SchemaCounterUpdateMutableBuilder[Self <: SchemaCounterUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCounterUpdate](x: Self) {
     
-    @scala.inline
-    def setBoolean(value: Boolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+    inline def setBoolean(value: Boolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
+    inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
     
-    @scala.inline
-    def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
+    inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
     
-    @scala.inline
-    def setDistribution(value: SchemaDistributionUpdate): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
+    inline def setDistribution(value: SchemaDistributionUpdate): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
+    inline def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
     
-    @scala.inline
-    def setFloatingPoint(value: Double): Self = StObject.set(x, "floatingPoint", value.asInstanceOf[js.Any])
+    inline def setFloatingPoint(value: Double): Self = StObject.set(x, "floatingPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatingPointList(value: SchemaFloatingPointList): Self = StObject.set(x, "floatingPointList", value.asInstanceOf[js.Any])
+    inline def setFloatingPointList(value: SchemaFloatingPointList): Self = StObject.set(x, "floatingPointList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatingPointListUndefined: Self = StObject.set(x, "floatingPointList", js.undefined)
+    inline def setFloatingPointListUndefined: Self = StObject.set(x, "floatingPointList", js.undefined)
     
-    @scala.inline
-    def setFloatingPointMean(value: SchemaFloatingPointMean): Self = StObject.set(x, "floatingPointMean", value.asInstanceOf[js.Any])
+    inline def setFloatingPointMean(value: SchemaFloatingPointMean): Self = StObject.set(x, "floatingPointMean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatingPointMeanUndefined: Self = StObject.set(x, "floatingPointMean", js.undefined)
+    inline def setFloatingPointMeanUndefined: Self = StObject.set(x, "floatingPointMean", js.undefined)
     
-    @scala.inline
-    def setFloatingPointUndefined: Self = StObject.set(x, "floatingPoint", js.undefined)
+    inline def setFloatingPointUndefined: Self = StObject.set(x, "floatingPoint", js.undefined)
     
-    @scala.inline
-    def setInteger(value: SchemaSplitInt64): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
+    inline def setInteger(value: SchemaSplitInt64): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegerGauge(value: SchemaIntegerGauge): Self = StObject.set(x, "integerGauge", value.asInstanceOf[js.Any])
+    inline def setIntegerGauge(value: SchemaIntegerGauge): Self = StObject.set(x, "integerGauge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegerGaugeUndefined: Self = StObject.set(x, "integerGauge", js.undefined)
+    inline def setIntegerGaugeUndefined: Self = StObject.set(x, "integerGauge", js.undefined)
     
-    @scala.inline
-    def setIntegerList(value: SchemaIntegerList): Self = StObject.set(x, "integerList", value.asInstanceOf[js.Any])
+    inline def setIntegerList(value: SchemaIntegerList): Self = StObject.set(x, "integerList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegerListUndefined: Self = StObject.set(x, "integerList", js.undefined)
+    inline def setIntegerListUndefined: Self = StObject.set(x, "integerList", js.undefined)
     
-    @scala.inline
-    def setIntegerMean(value: SchemaIntegerMean): Self = StObject.set(x, "integerMean", value.asInstanceOf[js.Any])
+    inline def setIntegerMean(value: SchemaIntegerMean): Self = StObject.set(x, "integerMean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegerMeanUndefined: Self = StObject.set(x, "integerMean", js.undefined)
+    inline def setIntegerMeanUndefined: Self = StObject.set(x, "integerMean", js.undefined)
     
-    @scala.inline
-    def setIntegerUndefined: Self = StObject.set(x, "integer", js.undefined)
+    inline def setIntegerUndefined: Self = StObject.set(x, "integer", js.undefined)
     
-    @scala.inline
-    def setInternal(value: js.Any): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+    inline def setInternal(value: js.Any): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
+    inline def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
     
-    @scala.inline
-    def setNameAndKind(value: SchemaNameAndKind): Self = StObject.set(x, "nameAndKind", value.asInstanceOf[js.Any])
+    inline def setNameAndKind(value: SchemaNameAndKind): Self = StObject.set(x, "nameAndKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameAndKindUndefined: Self = StObject.set(x, "nameAndKind", js.undefined)
+    inline def setNameAndKindUndefined: Self = StObject.set(x, "nameAndKind", js.undefined)
     
-    @scala.inline
-    def setShortId(value: String): Self = StObject.set(x, "shortId", value.asInstanceOf[js.Any])
+    inline def setShortId(value: String): Self = StObject.set(x, "shortId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortIdUndefined: Self = StObject.set(x, "shortId", js.undefined)
+    inline def setShortIdUndefined: Self = StObject.set(x, "shortId", js.undefined)
     
-    @scala.inline
-    def setStringList(value: SchemaStringList): Self = StObject.set(x, "stringList", value.asInstanceOf[js.Any])
+    inline def setStringList(value: SchemaStringList): Self = StObject.set(x, "stringList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringListUndefined: Self = StObject.set(x, "stringList", js.undefined)
+    inline def setStringListUndefined: Self = StObject.set(x, "stringList", js.undefined)
     
-    @scala.inline
-    def setStructuredNameAndMetadata(value: SchemaCounterStructuredNameAndMetadata): Self = StObject.set(x, "structuredNameAndMetadata", value.asInstanceOf[js.Any])
+    inline def setStructuredNameAndMetadata(value: SchemaCounterStructuredNameAndMetadata): Self = StObject.set(x, "structuredNameAndMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuredNameAndMetadataUndefined: Self = StObject.set(x, "structuredNameAndMetadata", js.undefined)
+    inline def setStructuredNameAndMetadataUndefined: Self = StObject.set(x, "structuredNameAndMetadata", js.undefined)
   }
 }

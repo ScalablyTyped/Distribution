@@ -14,25 +14,19 @@ trait Term extends StObject {
 }
 object Term {
   
-  @scala.inline
-  def apply(): Term = {
+  inline def apply(): Term = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Term]
   }
   
-  @scala.inline
-  implicit class TermMutableBuilder[Self <: Term] (val x: Self) extends AnyVal {
+  extension [Self <: Term](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

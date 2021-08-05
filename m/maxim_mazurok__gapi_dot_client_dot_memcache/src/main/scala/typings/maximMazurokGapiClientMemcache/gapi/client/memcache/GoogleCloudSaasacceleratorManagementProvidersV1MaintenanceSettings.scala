@@ -26,29 +26,23 @@ trait GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings extends
 }
 object GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings {
   
-  @scala.inline
-  def apply(): GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings = {
+  inline def apply(): GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings]
   }
   
-  @scala.inline
-  implicit class GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettingsMutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings](x: Self) {
     
-    @scala.inline
-    def setExclude(value: Boolean): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: Boolean): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    @scala.inline
-    def setMaintenancePolicies(
+    inline def setMaintenancePolicies(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.memcache.gapi.client.memcache.MaintenancePolicy}
       */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings & TopLevel[js.Any]
     ): Self = StObject.set(x, "maintenancePolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintenancePoliciesUndefined: Self = StObject.set(x, "maintenancePolicies", js.undefined)
+    inline def setMaintenancePoliciesUndefined: Self = StObject.set(x, "maintenancePolicies", js.undefined)
   }
 }

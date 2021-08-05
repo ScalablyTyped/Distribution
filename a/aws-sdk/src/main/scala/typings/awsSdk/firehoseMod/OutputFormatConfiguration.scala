@@ -13,19 +13,15 @@ trait OutputFormatConfiguration extends StObject {
 }
 object OutputFormatConfiguration {
   
-  @scala.inline
-  def apply(): OutputFormatConfiguration = {
+  inline def apply(): OutputFormatConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputFormatConfiguration]
   }
   
-  @scala.inline
-  implicit class OutputFormatConfigurationMutableBuilder[Self <: OutputFormatConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: OutputFormatConfiguration](x: Self) {
     
-    @scala.inline
-    def setSerializer(value: Serializer): Self = StObject.set(x, "Serializer", value.asInstanceOf[js.Any])
+    inline def setSerializer(value: Serializer): Self = StObject.set(x, "Serializer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializerUndefined: Self = StObject.set(x, "Serializer", js.undefined)
+    inline def setSerializerUndefined: Self = StObject.set(x, "Serializer", js.undefined)
   }
 }

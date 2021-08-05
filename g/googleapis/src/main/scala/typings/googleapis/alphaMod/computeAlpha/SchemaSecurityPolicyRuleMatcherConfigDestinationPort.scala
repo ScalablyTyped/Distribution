@@ -26,28 +26,21 @@ trait SchemaSecurityPolicyRuleMatcherConfigDestinationPort extends StObject {
 }
 object SchemaSecurityPolicyRuleMatcherConfigDestinationPort {
   
-  @scala.inline
-  def apply(): SchemaSecurityPolicyRuleMatcherConfigDestinationPort = {
+  inline def apply(): SchemaSecurityPolicyRuleMatcherConfigDestinationPort = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecurityPolicyRuleMatcherConfigDestinationPort]
   }
   
-  @scala.inline
-  implicit class SchemaSecurityPolicyRuleMatcherConfigDestinationPortMutableBuilder[Self <: SchemaSecurityPolicyRuleMatcherConfigDestinationPort] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSecurityPolicyRuleMatcherConfigDestinationPort](x: Self) {
     
-    @scala.inline
-    def setIpProtocol(value: String): Self = StObject.set(x, "ipProtocol", value.asInstanceOf[js.Any])
+    inline def setIpProtocol(value: String): Self = StObject.set(x, "ipProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpProtocolUndefined: Self = StObject.set(x, "ipProtocol", js.undefined)
+    inline def setIpProtocolUndefined: Self = StObject.set(x, "ipProtocol", js.undefined)
     
-    @scala.inline
-    def setPorts(value: js.Array[String]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: js.Array[String]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+    inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
-    @scala.inline
-    def setPortsVarargs(value: String*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: String*): Self = StObject.set(x, "ports", js.Array(value :_*))
   }
 }

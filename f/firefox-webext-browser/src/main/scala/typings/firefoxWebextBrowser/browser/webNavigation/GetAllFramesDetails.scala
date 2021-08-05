@@ -12,16 +12,13 @@ trait GetAllFramesDetails extends StObject {
 }
 object GetAllFramesDetails {
   
-  @scala.inline
-  def apply(tabId: Double): GetAllFramesDetails = {
+  inline def apply(tabId: Double): GetAllFramesDetails = {
     val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAllFramesDetails]
   }
   
-  @scala.inline
-  implicit class GetAllFramesDetailsMutableBuilder[Self <: GetAllFramesDetails] (val x: Self) extends AnyVal {
+  extension [Self <: GetAllFramesDetails](x: Self) {
     
-    @scala.inline
-    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+    inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
   }
 }

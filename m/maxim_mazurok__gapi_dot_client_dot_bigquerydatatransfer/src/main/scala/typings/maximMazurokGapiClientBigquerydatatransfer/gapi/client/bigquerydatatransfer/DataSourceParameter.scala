@@ -56,115 +56,79 @@ trait DataSourceParameter extends StObject {
 }
 object DataSourceParameter {
   
-  @scala.inline
-  def apply(): DataSourceParameter = {
+  inline def apply(): DataSourceParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceParameter]
   }
   
-  @scala.inline
-  implicit class DataSourceParameterMutableBuilder[Self <: DataSourceParameter] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceParameter](x: Self) {
     
-    @scala.inline
-    def setAllowedValues(value: js.Array[String]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
+    inline def setAllowedValues(value: js.Array[String]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedValuesUndefined: Self = StObject.set(x, "allowedValues", js.undefined)
+    inline def setAllowedValuesUndefined: Self = StObject.set(x, "allowedValues", js.undefined)
     
-    @scala.inline
-    def setAllowedValuesVarargs(value: String*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
+    inline def setAllowedValuesVarargs(value: String*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
     
-    @scala.inline
-    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[DataSourceParameter]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[DataSourceParameter]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: DataSourceParameter*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: DataSourceParameter*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
+    inline def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
+    inline def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    @scala.inline
-    def setParamId(value: String): Self = StObject.set(x, "paramId", value.asInstanceOf[js.Any])
+    inline def setParamId(value: String): Self = StObject.set(x, "paramId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamIdUndefined: Self = StObject.set(x, "paramId", js.undefined)
+    inline def setParamIdUndefined: Self = StObject.set(x, "paramId", js.undefined)
     
-    @scala.inline
-    def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
+    inline def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurseUndefined: Self = StObject.set(x, "recurse", js.undefined)
+    inline def setRecurseUndefined: Self = StObject.set(x, "recurse", js.undefined)
     
-    @scala.inline
-    def setRepeated(value: Boolean): Self = StObject.set(x, "repeated", value.asInstanceOf[js.Any])
+    inline def setRepeated(value: Boolean): Self = StObject.set(x, "repeated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatedUndefined: Self = StObject.set(x, "repeated", js.undefined)
+    inline def setRepeatedUndefined: Self = StObject.set(x, "repeated", js.undefined)
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValidationDescription(value: String): Self = StObject.set(x, "validationDescription", value.asInstanceOf[js.Any])
+    inline def setValidationDescription(value: String): Self = StObject.set(x, "validationDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationDescriptionUndefined: Self = StObject.set(x, "validationDescription", js.undefined)
+    inline def setValidationDescriptionUndefined: Self = StObject.set(x, "validationDescription", js.undefined)
     
-    @scala.inline
-    def setValidationHelpUrl(value: String): Self = StObject.set(x, "validationHelpUrl", value.asInstanceOf[js.Any])
+    inline def setValidationHelpUrl(value: String): Self = StObject.set(x, "validationHelpUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationHelpUrlUndefined: Self = StObject.set(x, "validationHelpUrl", js.undefined)
+    inline def setValidationHelpUrlUndefined: Self = StObject.set(x, "validationHelpUrl", js.undefined)
     
-    @scala.inline
-    def setValidationRegex(value: String): Self = StObject.set(x, "validationRegex", value.asInstanceOf[js.Any])
+    inline def setValidationRegex(value: String): Self = StObject.set(x, "validationRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationRegexUndefined: Self = StObject.set(x, "validationRegex", js.undefined)
+    inline def setValidationRegexUndefined: Self = StObject.set(x, "validationRegex", js.undefined)
   }
 }

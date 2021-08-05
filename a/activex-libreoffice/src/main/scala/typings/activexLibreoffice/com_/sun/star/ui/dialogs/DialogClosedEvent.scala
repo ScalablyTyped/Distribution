@@ -24,16 +24,13 @@ trait DialogClosedEvent
 }
 object DialogClosedEvent {
   
-  @scala.inline
-  def apply(DialogResult: Double, Source: XInterface): DialogClosedEvent = {
+  inline def apply(DialogResult: Double, Source: XInterface): DialogClosedEvent = {
     val __obj = js.Dynamic.literal(DialogResult = DialogResult.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogClosedEvent]
   }
   
-  @scala.inline
-  implicit class DialogClosedEventMutableBuilder[Self <: DialogClosedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DialogClosedEvent](x: Self) {
     
-    @scala.inline
-    def setDialogResult(value: Double): Self = StObject.set(x, "DialogResult", value.asInstanceOf[js.Any])
+    inline def setDialogResult(value: Double): Self = StObject.set(x, "DialogResult", value.asInstanceOf[js.Any])
   }
 }

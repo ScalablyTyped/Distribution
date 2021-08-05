@@ -23,20 +23,16 @@ trait OfficeThemeChangedEventArgs extends StObject {
 }
 object OfficeThemeChangedEventArgs {
   
-  @scala.inline
-  def apply(officeTheme: OfficeTheme): OfficeThemeChangedEventArgs = {
+  inline def apply(officeTheme: OfficeTheme): OfficeThemeChangedEventArgs = {
     val __obj = js.Dynamic.literal(officeTheme = officeTheme.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("officeThemeChanged")
     __obj.asInstanceOf[OfficeThemeChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class OfficeThemeChangedEventArgsMutableBuilder[Self <: OfficeThemeChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: OfficeThemeChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setOfficeTheme(value: OfficeTheme): Self = StObject.set(x, "officeTheme", value.asInstanceOf[js.Any])
+    inline def setOfficeTheme(value: OfficeTheme): Self = StObject.set(x, "officeTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: officeThemeChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: officeThemeChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

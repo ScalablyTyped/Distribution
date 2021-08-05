@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SupportedThemes extends StObject
 object SupportedThemes {
   
-  @scala.inline
-  def dark: typings.reactNavigation.reactNavigationStrings.dark = "dark".asInstanceOf[typings.reactNavigation.reactNavigationStrings.dark]
+  inline def dark: typings.reactNavigation.reactNavigationStrings.dark = "dark".asInstanceOf[typings.reactNavigation.reactNavigationStrings.dark]
   
-  @scala.inline
-  def light: typings.reactNavigation.reactNavigationStrings.light = "light".asInstanceOf[typings.reactNavigation.reactNavigationStrings.light]
+  inline def light: typings.reactNavigation.reactNavigationStrings.light = "light".asInstanceOf[typings.reactNavigation.reactNavigationStrings.light]
 }

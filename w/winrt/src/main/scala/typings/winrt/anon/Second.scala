@@ -13,19 +13,15 @@ trait Second extends StObject {
 }
 object Second {
   
-  @scala.inline
-  def apply(first: IMapView[String, js.Any], second: IMapView[String, js.Any]): Second = {
+  inline def apply(first: IMapView[String, js.Any], second: IMapView[String, js.Any]): Second = {
     val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any])
     __obj.asInstanceOf[Second]
   }
   
-  @scala.inline
-  implicit class SecondMutableBuilder[Self <: Second] (val x: Self) extends AnyVal {
+  extension [Self <: Second](x: Self) {
     
-    @scala.inline
-    def setFirst(value: IMapView[String, js.Any]): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    inline def setFirst(value: IMapView[String, js.Any]): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecond(value: IMapView[String, js.Any]): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: IMapView[String, js.Any]): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
   }
 }

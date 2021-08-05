@@ -26,8 +26,7 @@ object anon {
   }
   object BOX {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BOX: Double,
       COMPOUND: Double,
       CONVEXPOLYHEDRON: Double,
@@ -41,32 +40,23 @@ object anon {
       __obj.asInstanceOf[BOX]
     }
     
-    @scala.inline
-    implicit class BOXMutableBuilder[Self <: BOX] (val x: Self) extends AnyVal {
+    extension [Self <: BOX](x: Self) {
       
-      @scala.inline
-      def setBOX(value: Double): Self = StObject.set(x, "BOX", value.asInstanceOf[js.Any])
+      inline def setBOX(value: Double): Self = StObject.set(x, "BOX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCOMPOUND(value: Double): Self = StObject.set(x, "COMPOUND", value.asInstanceOf[js.Any])
+      inline def setCOMPOUND(value: Double): Self = StObject.set(x, "COMPOUND", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONVEXPOLYHEDRON(value: Double): Self = StObject.set(x, "CONVEXPOLYHEDRON", value.asInstanceOf[js.Any])
+      inline def setCONVEXPOLYHEDRON(value: Double): Self = StObject.set(x, "CONVEXPOLYHEDRON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCYLINDER(value: Double): Self = StObject.set(x, "CYLINDER", value.asInstanceOf[js.Any])
+      inline def setCYLINDER(value: Double): Self = StObject.set(x, "CYLINDER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHEIGHTFIELD(value: Double): Self = StObject.set(x, "HEIGHTFIELD", value.asInstanceOf[js.Any])
+      inline def setHEIGHTFIELD(value: Double): Self = StObject.set(x, "HEIGHTFIELD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPARTICLE(value: Double): Self = StObject.set(x, "PARTICLE", value.asInstanceOf[js.Any])
+      inline def setPARTICLE(value: Double): Self = StObject.set(x, "PARTICLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPLANE(value: Double): Self = StObject.set(x, "PLANE", value.asInstanceOf[js.Any])
+      inline def setPLANE(value: Double): Self = StObject.set(x, "PLANE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSPHERE(value: Double): Self = StObject.set(x, "SPHERE", value.asInstanceOf[js.Any])
+      inline def setSPHERE(value: Double): Self = StObject.set(x, "SPHERE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,8 +74,7 @@ object anon {
   }
   object Broadphaser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       broadphaser: Double,
       integrate: Double,
       makeContactConstraints: Double,
@@ -96,23 +85,17 @@ object anon {
       __obj.asInstanceOf[Broadphaser]
     }
     
-    @scala.inline
-    implicit class BroadphaserMutableBuilder[Self <: Broadphaser] (val x: Self) extends AnyVal {
+    extension [Self <: Broadphaser](x: Self) {
       
-      @scala.inline
-      def setBroadphaser(value: Double): Self = StObject.set(x, "broadphaser", value.asInstanceOf[js.Any])
+      inline def setBroadphaser(value: Double): Self = StObject.set(x, "broadphaser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrate(value: Double): Self = StObject.set(x, "integrate", value.asInstanceOf[js.Any])
+      inline def setIntegrate(value: Double): Self = StObject.set(x, "integrate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMakeContactConstraints(value: Double): Self = StObject.set(x, "makeContactConstraints", value.asInstanceOf[js.Any])
+      inline def setMakeContactConstraints(value: Double): Self = StObject.set(x, "makeContactConstraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNarrowphase(value: Double): Self = StObject.set(x, "narrowphase", value.asInstanceOf[js.Any])
+      inline def setNarrowphase(value: Double): Self = StObject.set(x, "narrowphase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSolve(value: Double): Self = StObject.set(x, "solve", value.asInstanceOf[js.Any])
+      inline def setSolve(value: Double): Self = StObject.set(x, "solve", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,20 +105,16 @@ object anon {
   }
   object Keys {
     
-    @scala.inline
-    def apply(keys: js.Array[js.Any]): Keys = {
+    inline def apply(keys: js.Array[js.Any]): Keys = {
       val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
       __obj.asInstanceOf[Keys]
     }
     
-    @scala.inline
-    implicit class KeysMutableBuilder[Self <: Keys] (val x: Self) extends AnyVal {
+    extension [Self <: Keys](x: Self) {
       
-      @scala.inline
-      def setKeys(value: js.Array[js.Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: js.Array[js.Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysVarargs(value: js.Any*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: js.Any*): Self = StObject.set(x, "keys", js.Array(value :_*))
     }
   }
 }

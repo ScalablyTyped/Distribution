@@ -53,61 +53,43 @@ trait PlanDefinitionActionDynamicValue
 }
 object PlanDefinitionActionDynamicValue {
   
-  @scala.inline
-  def apply(): PlanDefinitionActionDynamicValue = {
+  inline def apply(): PlanDefinitionActionDynamicValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlanDefinitionActionDynamicValue]
   }
   
-  @scala.inline
-  implicit class PlanDefinitionActionDynamicValueMutableBuilder[Self <: PlanDefinitionActionDynamicValue] (val x: Self) extends AnyVal {
+  extension [Self <: PlanDefinitionActionDynamicValue](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    @scala.inline
-    def set_expression(value: Element): Self = StObject.set(x, "_expression", value.asInstanceOf[js.Any])
+    inline def set_expression(value: Element): Self = StObject.set(x, "_expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_expressionUndefined: Self = StObject.set(x, "_expression", js.undefined)
+    inline def set_expressionUndefined: Self = StObject.set(x, "_expression", js.undefined)
     
-    @scala.inline
-    def set_language(value: Element): Self = StObject.set(x, "_language", value.asInstanceOf[js.Any])
+    inline def set_language(value: Element): Self = StObject.set(x, "_language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_languageUndefined: Self = StObject.set(x, "_language", js.undefined)
+    inline def set_languageUndefined: Self = StObject.set(x, "_language", js.undefined)
     
-    @scala.inline
-    def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
+    inline def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
+    inline def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
   }
 }

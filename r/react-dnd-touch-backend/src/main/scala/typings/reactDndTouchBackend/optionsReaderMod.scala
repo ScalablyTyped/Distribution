@@ -17,7 +17,7 @@ object optionsReaderMod {
        with TouchBackendOptions {
     def this(incoming: TouchBackendOptions, context: TouchBackendContext) = this()
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     @JSName("delayMouseStart")
     var delayMouseStart_OptionsReader: Double = js.native

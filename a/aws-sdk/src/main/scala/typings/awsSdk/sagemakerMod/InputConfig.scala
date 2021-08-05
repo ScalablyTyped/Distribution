@@ -23,22 +23,17 @@ trait InputConfig extends StObject {
 }
 object InputConfig {
   
-  @scala.inline
-  def apply(DataInputConfig: DataInputConfig, Framework: Framework, S3Uri: S3Uri): InputConfig = {
+  inline def apply(DataInputConfig: DataInputConfig, Framework: Framework, S3Uri: S3Uri): InputConfig = {
     val __obj = js.Dynamic.literal(DataInputConfig = DataInputConfig.asInstanceOf[js.Any], Framework = Framework.asInstanceOf[js.Any], S3Uri = S3Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputConfig]
   }
   
-  @scala.inline
-  implicit class InputConfigMutableBuilder[Self <: InputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InputConfig](x: Self) {
     
-    @scala.inline
-    def setDataInputConfig(value: DataInputConfig): Self = StObject.set(x, "DataInputConfig", value.asInstanceOf[js.Any])
+    inline def setDataInputConfig(value: DataInputConfig): Self = StObject.set(x, "DataInputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramework(value: Framework): Self = StObject.set(x, "Framework", value.asInstanceOf[js.Any])
+    inline def setFramework(value: Framework): Self = StObject.set(x, "Framework", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }
 }

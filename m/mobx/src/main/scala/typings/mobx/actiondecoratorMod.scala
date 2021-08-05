@@ -15,16 +15,12 @@ object actiondecoratorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def actionFieldDecorator(name: String): js.Function3[/* target */ js.Any, /* prop */ js.Any, /* descriptor */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("actionFieldDecorator")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* prop */ js.Any, /* descriptor */ js.Any, Unit]]
+  inline def actionFieldDecorator(name: String): js.Function3[/* target */ js.Any, /* prop */ js.Any, /* descriptor */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("actionFieldDecorator")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* prop */ js.Any, /* descriptor */ js.Any, Unit]]
   
-  @scala.inline
-  def boundActionDecorator(target: js.Any, propertyName: js.Any, descriptor: js.Any): Get | Set | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("boundActionDecorator")(target.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Get | Set | Null]
-  @scala.inline
-  def boundActionDecorator(target: js.Any, propertyName: js.Any, descriptor: js.Any, applyToInstance: Boolean): Get | Set | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("boundActionDecorator")(target.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any], applyToInstance.asInstanceOf[js.Any])).asInstanceOf[Get | Set | Null]
+  inline def boundActionDecorator(target: js.Any, propertyName: js.Any, descriptor: js.Any): Get | Set | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("boundActionDecorator")(target.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Get | Set | Null]
+  inline def boundActionDecorator(target: js.Any, propertyName: js.Any, descriptor: js.Any, applyToInstance: Boolean): Get | Set | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("boundActionDecorator")(target.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any], applyToInstance.asInstanceOf[js.Any])).asInstanceOf[Get | Set | Null]
   
-  @scala.inline
-  def namedActionDecorator(name: String): js.Function3[
+  inline def namedActionDecorator(name: String): js.Function3[
     /* target */ js.Any, 
     /* prop */ js.Any, 
     /* descriptor */ BabelDescriptor, 

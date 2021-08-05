@@ -16,22 +16,17 @@ trait SchemaUpdateAvailabilityResponse extends StObject {
 }
 object SchemaUpdateAvailabilityResponse {
   
-  @scala.inline
-  def apply(): SchemaUpdateAvailabilityResponse = {
+  inline def apply(): SchemaUpdateAvailabilityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateAvailabilityResponse]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateAvailabilityResponseMutableBuilder[Self <: SchemaUpdateAvailabilityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateAvailabilityResponse](x: Self) {
     
-    @scala.inline
-    def setAvailabilities(value: js.Array[SchemaAvailability]): Self = StObject.set(x, "availabilities", value.asInstanceOf[js.Any])
+    inline def setAvailabilities(value: js.Array[SchemaAvailability]): Self = StObject.set(x, "availabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilitiesUndefined: Self = StObject.set(x, "availabilities", js.undefined)
+    inline def setAvailabilitiesUndefined: Self = StObject.set(x, "availabilities", js.undefined)
     
-    @scala.inline
-    def setAvailabilitiesVarargs(value: SchemaAvailability*): Self = StObject.set(x, "availabilities", js.Array(value :_*))
+    inline def setAvailabilitiesVarargs(value: SchemaAvailability*): Self = StObject.set(x, "availabilities", js.Array(value :_*))
   }
 }

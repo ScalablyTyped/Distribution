@@ -20,23 +20,18 @@ object datasync {
   }
   object EfsLocationEc2Config {
     
-    @scala.inline
-    def apply(securityGroupArns: js.Array[String], subnetArn: String): EfsLocationEc2Config = {
+    inline def apply(securityGroupArns: js.Array[String], subnetArn: String): EfsLocationEc2Config = {
       val __obj = js.Dynamic.literal(securityGroupArns = securityGroupArns.asInstanceOf[js.Any], subnetArn = subnetArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[EfsLocationEc2Config]
     }
     
-    @scala.inline
-    implicit class EfsLocationEc2ConfigMutableBuilder[Self <: EfsLocationEc2Config] (val x: Self) extends AnyVal {
+    extension [Self <: EfsLocationEc2Config](x: Self) {
       
-      @scala.inline
-      def setSecurityGroupArns(value: js.Array[String]): Self = StObject.set(x, "securityGroupArns", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupArns(value: js.Array[String]): Self = StObject.set(x, "securityGroupArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupArnsVarargs(value: String*): Self = StObject.set(x, "securityGroupArns", js.Array(value :_*))
+      inline def setSecurityGroupArnsVarargs(value: String*): Self = StObject.set(x, "securityGroupArns", js.Array(value :_*))
       
-      @scala.inline
-      def setSubnetArn(value: String): Self = StObject.set(x, "subnetArn", value.asInstanceOf[js.Any])
+      inline def setSubnetArn(value: String): Self = StObject.set(x, "subnetArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,20 +44,16 @@ object datasync {
   }
   object LocationSmbMountOptions {
     
-    @scala.inline
-    def apply(): LocationSmbMountOptions = {
+    inline def apply(): LocationSmbMountOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocationSmbMountOptions]
     }
     
-    @scala.inline
-    implicit class LocationSmbMountOptionsMutableBuilder[Self <: LocationSmbMountOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LocationSmbMountOptions](x: Self) {
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -75,20 +66,16 @@ object datasync {
   }
   object NfsLocationOnPremConfig {
     
-    @scala.inline
-    def apply(agentArns: js.Array[String]): NfsLocationOnPremConfig = {
+    inline def apply(agentArns: js.Array[String]): NfsLocationOnPremConfig = {
       val __obj = js.Dynamic.literal(agentArns = agentArns.asInstanceOf[js.Any])
       __obj.asInstanceOf[NfsLocationOnPremConfig]
     }
     
-    @scala.inline
-    implicit class NfsLocationOnPremConfigMutableBuilder[Self <: NfsLocationOnPremConfig] (val x: Self) extends AnyVal {
+    extension [Self <: NfsLocationOnPremConfig](x: Self) {
       
-      @scala.inline
-      def setAgentArns(value: js.Array[String]): Self = StObject.set(x, "agentArns", value.asInstanceOf[js.Any])
+      inline def setAgentArns(value: js.Array[String]): Self = StObject.set(x, "agentArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentArnsVarargs(value: String*): Self = StObject.set(x, "agentArns", js.Array(value :_*))
+      inline def setAgentArnsVarargs(value: String*): Self = StObject.set(x, "agentArns", js.Array(value :_*))
     }
   }
   
@@ -101,17 +88,14 @@ object datasync {
   }
   object S3LocationS3Config {
     
-    @scala.inline
-    def apply(bucketAccessRoleArn: String): S3LocationS3Config = {
+    inline def apply(bucketAccessRoleArn: String): S3LocationS3Config = {
       val __obj = js.Dynamic.literal(bucketAccessRoleArn = bucketAccessRoleArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[S3LocationS3Config]
     }
     
-    @scala.inline
-    implicit class S3LocationS3ConfigMutableBuilder[Self <: S3LocationS3Config] (val x: Self) extends AnyVal {
+    extension [Self <: S3LocationS3Config](x: Self) {
       
-      @scala.inline
-      def setBucketAccessRoleArn(value: String): Self = StObject.set(x, "bucketAccessRoleArn", value.asInstanceOf[js.Any])
+      inline def setBucketAccessRoleArn(value: String): Self = StObject.set(x, "bucketAccessRoleArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,68 +148,48 @@ object datasync {
   }
   object TaskOptions {
     
-    @scala.inline
-    def apply(): TaskOptions = {
+    inline def apply(): TaskOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TaskOptions]
     }
     
-    @scala.inline
-    implicit class TaskOptionsMutableBuilder[Self <: TaskOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TaskOptions](x: Self) {
       
-      @scala.inline
-      def setAtime(value: String): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+      inline def setAtime(value: String): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAtimeUndefined: Self = StObject.set(x, "atime", js.undefined)
+      inline def setAtimeUndefined: Self = StObject.set(x, "atime", js.undefined)
       
-      @scala.inline
-      def setBytesPerSecond(value: Double): Self = StObject.set(x, "bytesPerSecond", value.asInstanceOf[js.Any])
+      inline def setBytesPerSecond(value: Double): Self = StObject.set(x, "bytesPerSecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBytesPerSecondUndefined: Self = StObject.set(x, "bytesPerSecond", js.undefined)
+      inline def setBytesPerSecondUndefined: Self = StObject.set(x, "bytesPerSecond", js.undefined)
       
-      @scala.inline
-      def setGid(value: String): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: String): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
+      inline def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
       
-      @scala.inline
-      def setMtime(value: String): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: String): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       
-      @scala.inline
-      def setPosixPermissions(value: String): Self = StObject.set(x, "posixPermissions", value.asInstanceOf[js.Any])
+      inline def setPosixPermissions(value: String): Self = StObject.set(x, "posixPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosixPermissionsUndefined: Self = StObject.set(x, "posixPermissions", js.undefined)
+      inline def setPosixPermissionsUndefined: Self = StObject.set(x, "posixPermissions", js.undefined)
       
-      @scala.inline
-      def setPreserveDeletedFiles(value: String): Self = StObject.set(x, "preserveDeletedFiles", value.asInstanceOf[js.Any])
+      inline def setPreserveDeletedFiles(value: String): Self = StObject.set(x, "preserveDeletedFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveDeletedFilesUndefined: Self = StObject.set(x, "preserveDeletedFiles", js.undefined)
+      inline def setPreserveDeletedFilesUndefined: Self = StObject.set(x, "preserveDeletedFiles", js.undefined)
       
-      @scala.inline
-      def setPreserveDevices(value: String): Self = StObject.set(x, "preserveDevices", value.asInstanceOf[js.Any])
+      inline def setPreserveDevices(value: String): Self = StObject.set(x, "preserveDevices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveDevicesUndefined: Self = StObject.set(x, "preserveDevices", js.undefined)
+      inline def setPreserveDevicesUndefined: Self = StObject.set(x, "preserveDevices", js.undefined)
       
-      @scala.inline
-      def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+      inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
       
-      @scala.inline
-      def setVerifyMode(value: String): Self = StObject.set(x, "verifyMode", value.asInstanceOf[js.Any])
+      inline def setVerifyMode(value: String): Self = StObject.set(x, "verifyMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerifyModeUndefined: Self = StObject.set(x, "verifyMode", js.undefined)
+      inline def setVerifyModeUndefined: Self = StObject.set(x, "verifyMode", js.undefined)
     }
   }
 }

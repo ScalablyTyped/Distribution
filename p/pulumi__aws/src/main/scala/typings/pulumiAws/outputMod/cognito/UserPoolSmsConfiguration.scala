@@ -18,19 +18,15 @@ trait UserPoolSmsConfiguration extends StObject {
 }
 object UserPoolSmsConfiguration {
   
-  @scala.inline
-  def apply(externalId: String, snsCallerArn: String): UserPoolSmsConfiguration = {
+  inline def apply(externalId: String, snsCallerArn: String): UserPoolSmsConfiguration = {
     val __obj = js.Dynamic.literal(externalId = externalId.asInstanceOf[js.Any], snsCallerArn = snsCallerArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolSmsConfiguration]
   }
   
-  @scala.inline
-  implicit class UserPoolSmsConfigurationMutableBuilder[Self <: UserPoolSmsConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: UserPoolSmsConfiguration](x: Self) {
     
-    @scala.inline
-    def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsCallerArn(value: String): Self = StObject.set(x, "snsCallerArn", value.asInstanceOf[js.Any])
+    inline def setSnsCallerArn(value: String): Self = StObject.set(x, "snsCallerArn", value.asInstanceOf[js.Any])
   }
 }

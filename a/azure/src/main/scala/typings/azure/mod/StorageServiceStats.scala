@@ -11,16 +11,13 @@ trait StorageServiceStats extends StObject {
 }
 object StorageServiceStats {
   
-  @scala.inline
-  def apply(GeoReplication: LastSyncTime): StorageServiceStats = {
+  inline def apply(GeoReplication: LastSyncTime): StorageServiceStats = {
     val __obj = js.Dynamic.literal(GeoReplication = GeoReplication.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageServiceStats]
   }
   
-  @scala.inline
-  implicit class StorageServiceStatsMutableBuilder[Self <: StorageServiceStats] (val x: Self) extends AnyVal {
+  extension [Self <: StorageServiceStats](x: Self) {
     
-    @scala.inline
-    def setGeoReplication(value: LastSyncTime): Self = StObject.set(x, "GeoReplication", value.asInstanceOf[js.Any])
+    inline def setGeoReplication(value: LastSyncTime): Self = StObject.set(x, "GeoReplication", value.asInstanceOf[js.Any])
   }
 }

@@ -46,8 +46,7 @@ trait Adjustments extends StObject {
 }
 object Adjustments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adjustments: String,
     discount: String,
     giftCard: String,
@@ -61,34 +60,24 @@ object Adjustments {
     __obj.asInstanceOf[Adjustments]
   }
   
-  @scala.inline
-  implicit class AdjustmentsMutableBuilder[Self <: Adjustments] (val x: Self) extends AnyVal {
+  extension [Self <: Adjustments](x: Self) {
     
-    @scala.inline
-    def setAdjustments(value: String): Self = StObject.set(x, "adjustments", value.asInstanceOf[js.Any])
+    inline def setAdjustments(value: String): Self = StObject.set(x, "adjustments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscount(value: String): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
+    inline def setDiscount(value: String): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGiftCard(value: String): Self = StObject.set(x, "giftCard", value.asInstanceOf[js.Any])
+    inline def setGiftCard(value: String): Self = StObject.set(x, "giftCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setSubscriptions(value: String): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+    inline def setSubscriptions(value: String): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtotal(value: String): Self = StObject.set(x, "subtotal", value.asInstanceOf[js.Any])
+    inline def setSubtotal(value: String): Self = StObject.set(x, "subtotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxes(value: String): Self = StObject.set(x, "taxes", value.asInstanceOf[js.Any])
+    inline def setTaxes(value: String): Self = StObject.set(x, "taxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

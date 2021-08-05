@@ -67,8 +67,7 @@ object stateCoreMod {
   }
   object StateCore {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Token: Instantiable3[
           /* type */ String, 
           /* tag */ String, 
@@ -85,23 +84,17 @@ object stateCoreMod {
       __obj.asInstanceOf[StateCore]
     }
     
-    @scala.inline
-    implicit class StateCoreMutableBuilder[Self <: StateCore] (val x: Self) extends AnyVal {
+    extension [Self <: StateCore](x: Self) {
       
-      @scala.inline
-      def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineMode(value: Boolean): Self = StObject.set(x, "inlineMode", value.asInstanceOf[js.Any])
+      inline def setInlineMode(value: Boolean): Self = StObject.set(x, "inlineMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMd(value: MarkdownIt): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+      inline def setMd(value: MarkdownIt): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(
+      inline def setToken(
         value: Instantiable3[
               /* type */ String, 
               /* tag */ String, 
@@ -110,11 +103,9 @@ object stateCoreMod {
             ]
       ): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokens(value: js.Array[typings.markdownIt.tokenMod.^]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: js.Array[typings.markdownIt.tokenMod.^]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokensVarargs(value: typings.markdownIt.tokenMod.^ *): Self = StObject.set(x, "tokens", js.Array(value :_*))
+      inline def setTokensVarargs(value: typings.markdownIt.tokenMod.^ *): Self = StObject.set(x, "tokens", js.Array(value :_*))
     }
   }
 }

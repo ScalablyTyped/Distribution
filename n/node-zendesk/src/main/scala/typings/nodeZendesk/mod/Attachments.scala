@@ -26,8 +26,7 @@ object Attachments {
   }
   object Model {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       content_type: String,
       content_url: String,
       file_name: String,
@@ -44,14 +43,11 @@ object Attachments {
       __obj.asInstanceOf[Model]
     }
     
-    @scala.inline
-    implicit class ModelMutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
+    extension [Self <: Model](x: Self) {
       
-      @scala.inline
-      def setThumbnails(value: js.Array[Photo]): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
+      inline def setThumbnails(value: js.Array[Photo]): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailsVarargs(value: Photo*): Self = StObject.set(x, "thumbnails", js.Array(value :_*))
+      inline def setThumbnailsVarargs(value: Photo*): Self = StObject.set(x, "thumbnails", js.Array(value :_*))
     }
   }
   
@@ -77,8 +73,7 @@ object Attachments {
   }
   object Photo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       content_type: String,
       content_url: String,
       file_name: String,
@@ -94,32 +89,23 @@ object Attachments {
       __obj.asInstanceOf[Photo]
     }
     
-    @scala.inline
-    implicit class PhotoMutableBuilder[Self <: Photo] (val x: Self) extends AnyVal {
+    extension [Self <: Photo](x: Self) {
       
-      @scala.inline
-      def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+      inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent_url(value: String): Self = StObject.set(x, "content_url", value.asInstanceOf[js.Any])
+      inline def setContent_url(value: String): Self = StObject.set(x, "content_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile_name(value: String): Self = StObject.set(x, "file_name", value.asInstanceOf[js.Any])
+      inline def setFile_name(value: String): Self = StObject.set(x, "file_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -56,70 +56,49 @@ trait ImageUrl extends StObject {
 }
 object ImageUrl {
   
-  @scala.inline
-  def apply(key: String, opNum: Double): ImageUrl = {
+  inline def apply(key: String, opNum: Double): ImageUrl = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], opNum = opNum.asInstanceOf[js.Any], operation = "add")
     __obj.asInstanceOf[ImageUrl]
   }
   
-  @scala.inline
-  implicit class ImageUrlMutableBuilder[Self <: ImageUrl] (val x: Self) extends AnyVal {
+  extension [Self <: ImageUrl](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: /* res */ ErrCode => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ ErrCode => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlId(value: String): Self = StObject.set(x, "imageUrlId", value.asInstanceOf[js.Any])
+    inline def setImageUrlId(value: String): Self = StObject.set(x, "imageUrlId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlIdUndefined: Self = StObject.set(x, "imageUrlId", js.undefined)
+    inline def setImageUrlIdUndefined: Self = StObject.set(x, "imageUrlId", js.undefined)
     
-    @scala.inline
-    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpNum(value: Double): Self = StObject.set(x, "opNum", value.asInstanceOf[js.Any])
+    inline def setOpNum(value: Double): Self = StObject.set(x, "opNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: add): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: add): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+    inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+    inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
+    inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setToUser(value: String): Self = StObject.set(x, "toUser", value.asInstanceOf[js.Any])
+    inline def setToUser(value: String): Self = StObject.set(x, "toUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUserUndefined: Self = StObject.set(x, "toUser", js.undefined)
+    inline def setToUserUndefined: Self = StObject.set(x, "toUser", js.undefined)
   }
 }

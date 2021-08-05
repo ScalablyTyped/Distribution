@@ -38,8 +38,7 @@ object mod {
     @JSImport("raygun", "default.Client")
     @js.native
     def Client: Instantiable0[Raygun] = js.native
-    @scala.inline
-    def Client_=(x: Instantiable0[Raygun]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Client")(x.asInstanceOf[js.Any])
+    inline def Client_=(x: Instantiable0[Raygun]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Client")(x.asInstanceOf[js.Any])
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -106,7 +105,7 @@ object mod {
     
     def offline(): Unit = js.native
     
-    var offlineStorage: js.Any = js.native
+    /* private */ var offlineStorage: js.Any = js.native
     
     def onBeforeSend(onBeforeSend: Hook[Message]): this.type = js.native
     

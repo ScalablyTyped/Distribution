@@ -18,28 +18,21 @@ trait GetRecordsOutput extends StObject {
 }
 object GetRecordsOutput {
   
-  @scala.inline
-  def apply(): GetRecordsOutput = {
+  inline def apply(): GetRecordsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRecordsOutput]
   }
   
-  @scala.inline
-  implicit class GetRecordsOutputMutableBuilder[Self <: GetRecordsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetRecordsOutput](x: Self) {
     
-    @scala.inline
-    def setNextShardIterator(value: ShardIterator): Self = StObject.set(x, "NextShardIterator", value.asInstanceOf[js.Any])
+    inline def setNextShardIterator(value: ShardIterator): Self = StObject.set(x, "NextShardIterator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextShardIteratorUndefined: Self = StObject.set(x, "NextShardIterator", js.undefined)
+    inline def setNextShardIteratorUndefined: Self = StObject.set(x, "NextShardIterator", js.undefined)
     
-    @scala.inline
-    def setRecords(value: RecordList): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+    inline def setRecords(value: RecordList): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsUndefined: Self = StObject.set(x, "Records", js.undefined)
+    inline def setRecordsUndefined: Self = StObject.set(x, "Records", js.undefined)
     
-    @scala.inline
-    def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value :_*))
   }
 }

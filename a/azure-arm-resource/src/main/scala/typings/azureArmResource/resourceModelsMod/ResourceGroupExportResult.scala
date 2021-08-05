@@ -18,25 +18,19 @@ trait ResourceGroupExportResult extends StObject {
 }
 object ResourceGroupExportResult {
   
-  @scala.inline
-  def apply(): ResourceGroupExportResult = {
+  inline def apply(): ResourceGroupExportResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceGroupExportResult]
   }
   
-  @scala.inline
-  implicit class ResourceGroupExportResultMutableBuilder[Self <: ResourceGroupExportResult] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceGroupExportResult](x: Self) {
     
-    @scala.inline
-    def setError(value: ResourceManagementErrorWithDetails): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ResourceManagementErrorWithDetails): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

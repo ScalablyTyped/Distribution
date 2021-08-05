@@ -34,8 +34,7 @@ trait StoreCollectionData extends StObject {
 }
 object StoreCollectionData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquiredDate: Date,
     campaignId: String,
     developerOfferId: String,
@@ -49,31 +48,22 @@ object StoreCollectionData {
     __obj.asInstanceOf[StoreCollectionData]
   }
   
-  @scala.inline
-  implicit class StoreCollectionDataMutableBuilder[Self <: StoreCollectionData] (val x: Self) extends AnyVal {
+  extension [Self <: StoreCollectionData](x: Self) {
     
-    @scala.inline
-    def setAcquiredDate(value: Date): Self = StObject.set(x, "acquiredDate", value.asInstanceOf[js.Any])
+    inline def setAcquiredDate(value: Date): Self = StObject.set(x, "acquiredDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
+    inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperOfferId(value: String): Self = StObject.set(x, "developerOfferId", value.asInstanceOf[js.Any])
+    inline def setDeveloperOfferId(value: String): Self = StObject.set(x, "developerOfferId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedJsonData(value: String): Self = StObject.set(x, "extendedJsonData", value.asInstanceOf[js.Any])
+    inline def setExtendedJsonData(value: String): Self = StObject.set(x, "extendedJsonData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTrial(value: Boolean): Self = StObject.set(x, "isTrial", value.asInstanceOf[js.Any])
+    inline def setIsTrial(value: Boolean): Self = StObject.set(x, "isTrial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialTimeRemaining(value: Double): Self = StObject.set(x, "trialTimeRemaining", value.asInstanceOf[js.Any])
+    inline def setTrialTimeRemaining(value: Double): Self = StObject.set(x, "trialTimeRemaining", value.asInstanceOf[js.Any])
   }
 }

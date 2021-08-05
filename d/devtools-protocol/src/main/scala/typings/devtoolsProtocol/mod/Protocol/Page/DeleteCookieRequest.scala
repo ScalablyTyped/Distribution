@@ -18,19 +18,15 @@ trait DeleteCookieRequest extends StObject {
 }
 object DeleteCookieRequest {
   
-  @scala.inline
-  def apply(cookieName: String, url: String): DeleteCookieRequest = {
+  inline def apply(cookieName: String, url: String): DeleteCookieRequest = {
     val __obj = js.Dynamic.literal(cookieName = cookieName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCookieRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCookieRequestMutableBuilder[Self <: DeleteCookieRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCookieRequest](x: Self) {
     
-    @scala.inline
-    def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
+    inline def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

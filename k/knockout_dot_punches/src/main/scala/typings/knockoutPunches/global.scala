@@ -9,6 +9,5 @@ object global {
   @JSGlobal("punches")
   @js.native
   def punches: KnockoutPunchesStatic = js.native
-  @scala.inline
-  def punches_=(x: KnockoutPunchesStatic): Unit = js.Dynamic.global.updateDynamic("punches")(x.asInstanceOf[js.Any])
+  inline def punches_=(x: KnockoutPunchesStatic): Unit = js.Dynamic.global.updateDynamic("punches")(x.asInstanceOf[js.Any])
 }

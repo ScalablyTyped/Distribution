@@ -10,16 +10,13 @@ trait CustomShapes extends StObject {
 }
 object CustomShapes {
   
-  @scala.inline
-  def apply(init: Sigma => Unit): CustomShapes = {
+  inline def apply(init: Sigma => Unit): CustomShapes = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
     __obj.asInstanceOf[CustomShapes]
   }
   
-  @scala.inline
-  implicit class CustomShapesMutableBuilder[Self <: CustomShapes] (val x: Self) extends AnyVal {
+  extension [Self <: CustomShapes](x: Self) {
     
-    @scala.inline
-    def setInit(value: Sigma => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: Sigma => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
   }
 }

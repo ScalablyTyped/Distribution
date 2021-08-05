@@ -32,8 +32,7 @@ object mod {
     * ```
     */
   // prettier-ignore
-  @scala.inline
-  def ifViewportMatches(query: String): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifViewportMatches")(query.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
+  inline def ifViewportMatches(query: String): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifViewportMatches")(query.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
   
   /**
     * Higher-order component creator, creating a new component which renders with the given prop names,
@@ -55,8 +54,7 @@ object mod {
     * ```
     */
   // prettier-ignore
-  @scala.inline
-  def withViewportMatch[T /* <: Record[String, String] */](queries: T): js.Function1[
+  inline def withViewportMatch[T /* <: Record[String, String] */](queries: T): js.Function1[
     /* component */ ComponentType[js.Any], 
     ComponentType[Omit[js.Any, /* keyof T */ String]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withViewportMatch")(queries.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -71,10 +69,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def dispatch_coreviewport(key: coreSlashviewport): TypeofimportedActions = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedActions]
+    inline def dispatch_coreviewport(key: coreSlashviewport): TypeofimportedActions = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedActions]
     
-    @scala.inline
-    def select_coreviewport(key: coreSlashviewport): TypeofimportedSelectors = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedSelectors]
+    inline def select_coreviewport(key: coreSlashviewport): TypeofimportedSelectors = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedSelectors]
   }
 }

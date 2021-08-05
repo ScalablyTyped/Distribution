@@ -11,11 +11,9 @@ object loadComponentsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def interopDefault(mod: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("interopDefault")(mod.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def interopDefault(mod: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("interopDefault")(mod.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def loadComponents(distDir: String, buildId: String, pathname: String, serverless: Boolean): js.Promise[LoadComponentsReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadComponents")(distDir.asInstanceOf[js.Any], buildId.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LoadComponentsReturnType]]
+  inline def loadComponents(distDir: String, buildId: String, pathname: String, serverless: Boolean): js.Promise[LoadComponentsReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadComponents")(distDir.asInstanceOf[js.Any], buildId.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LoadComponentsReturnType]]
   
   trait LoadComponentsReturnType extends StObject {
     
@@ -35,50 +33,36 @@ object loadComponentsMod {
   }
   object LoadComponentsReturnType {
     
-    @scala.inline
-    def apply(Component: js.Any, pageConfig: PageConfig): LoadComponentsReturnType = {
+    inline def apply(Component: js.Any, pageConfig: PageConfig): LoadComponentsReturnType = {
       val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], pageConfig = pageConfig.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadComponentsReturnType]
     }
     
-    @scala.inline
-    implicit class LoadComponentsReturnTypeMutableBuilder[Self <: LoadComponentsReturnType] (val x: Self) extends AnyVal {
+    extension [Self <: LoadComponentsReturnType](x: Self) {
       
-      @scala.inline
-      def setApp(value: js.Any): Self = StObject.set(x, "App", value.asInstanceOf[js.Any])
+      inline def setApp(value: js.Any): Self = StObject.set(x, "App", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppUndefined: Self = StObject.set(x, "App", js.undefined)
+      inline def setAppUndefined: Self = StObject.set(x, "App", js.undefined)
       
-      @scala.inline
-      def setBuildManifest(value: js.Any): Self = StObject.set(x, "buildManifest", value.asInstanceOf[js.Any])
+      inline def setBuildManifest(value: js.Any): Self = StObject.set(x, "buildManifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildManifestUndefined: Self = StObject.set(x, "buildManifest", js.undefined)
+      inline def setBuildManifestUndefined: Self = StObject.set(x, "buildManifest", js.undefined)
       
-      @scala.inline
-      def setComponent(value: js.Any): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: js.Any): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocument(value: js.Any): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+      inline def setDocument(value: js.Any): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentMiddleware(value: js.Any): Self = StObject.set(x, "DocumentMiddleware", value.asInstanceOf[js.Any])
+      inline def setDocumentMiddleware(value: js.Any): Self = StObject.set(x, "DocumentMiddleware", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentMiddlewareUndefined: Self = StObject.set(x, "DocumentMiddleware", js.undefined)
+      inline def setDocumentMiddlewareUndefined: Self = StObject.set(x, "DocumentMiddleware", js.undefined)
       
-      @scala.inline
-      def setDocumentUndefined: Self = StObject.set(x, "Document", js.undefined)
+      inline def setDocumentUndefined: Self = StObject.set(x, "Document", js.undefined)
       
-      @scala.inline
-      def setPageConfig(value: PageConfig): Self = StObject.set(x, "pageConfig", value.asInstanceOf[js.Any])
+      inline def setPageConfig(value: PageConfig): Self = StObject.set(x, "pageConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReactLoadableManifest(value: js.Any): Self = StObject.set(x, "reactLoadableManifest", value.asInstanceOf[js.Any])
+      inline def setReactLoadableManifest(value: js.Any): Self = StObject.set(x, "reactLoadableManifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReactLoadableManifestUndefined: Self = StObject.set(x, "reactLoadableManifest", js.undefined)
+      inline def setReactLoadableManifestUndefined: Self = StObject.set(x, "reactLoadableManifest", js.undefined)
     }
   }
 }

@@ -20,25 +20,19 @@ trait HttpFaultAbort extends StObject {
 }
 object HttpFaultAbort {
   
-  @scala.inline
-  def apply(): HttpFaultAbort = {
+  inline def apply(): HttpFaultAbort = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpFaultAbort]
   }
   
-  @scala.inline
-  implicit class HttpFaultAbortMutableBuilder[Self <: HttpFaultAbort] (val x: Self) extends AnyVal {
+  extension [Self <: HttpFaultAbort](x: Self) {
     
-    @scala.inline
-    def setHttpStatus(value: Double): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
+    inline def setHttpStatus(value: Double): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpStatusUndefined: Self = StObject.set(x, "httpStatus", js.undefined)
+    inline def setHttpStatusUndefined: Self = StObject.set(x, "httpStatus", js.undefined)
     
-    @scala.inline
-    def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+    inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+    inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
   }
 }

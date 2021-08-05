@@ -13,16 +13,13 @@ trait DisableOrganizationAdminAccountRequest extends StObject {
 }
 object DisableOrganizationAdminAccountRequest {
   
-  @scala.inline
-  def apply(AdminAccountId: String): DisableOrganizationAdminAccountRequest = {
+  inline def apply(AdminAccountId: String): DisableOrganizationAdminAccountRequest = {
     val __obj = js.Dynamic.literal(AdminAccountId = AdminAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableOrganizationAdminAccountRequest]
   }
   
-  @scala.inline
-  implicit class DisableOrganizationAdminAccountRequestMutableBuilder[Self <: DisableOrganizationAdminAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisableOrganizationAdminAccountRequest](x: Self) {
     
-    @scala.inline
-    def setAdminAccountId(value: String): Self = StObject.set(x, "AdminAccountId", value.asInstanceOf[js.Any])
+    inline def setAdminAccountId(value: String): Self = StObject.set(x, "AdminAccountId", value.asInstanceOf[js.Any])
   }
 }

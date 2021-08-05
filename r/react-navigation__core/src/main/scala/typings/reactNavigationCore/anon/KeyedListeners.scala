@@ -18,8 +18,7 @@ trait KeyedListeners extends StObject {
 }
 object KeyedListeners {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addKeyedListener: (js.Any, String, /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.KeyedListenerMap[T] */ js.Any) => js.Function0[Unit],
     keyedListeners: BeforeRemove
   ): KeyedListeners = {
@@ -27,15 +26,12 @@ object KeyedListeners {
     __obj.asInstanceOf[KeyedListeners]
   }
   
-  @scala.inline
-  implicit class KeyedListenersMutableBuilder[Self <: KeyedListeners] (val x: Self) extends AnyVal {
+  extension [Self <: KeyedListeners](x: Self) {
     
-    @scala.inline
-    def setAddKeyedListener(
+    inline def setAddKeyedListener(
       value: (js.Any, String, /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.KeyedListenerMap[T] */ js.Any) => js.Function0[Unit]
     ): Self = StObject.set(x, "addKeyedListener", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setKeyedListeners(value: BeforeRemove): Self = StObject.set(x, "keyedListeners", value.asInstanceOf[js.Any])
+    inline def setKeyedListeners(value: BeforeRemove): Self = StObject.set(x, "keyedListeners", value.asInstanceOf[js.Any])
   }
 }

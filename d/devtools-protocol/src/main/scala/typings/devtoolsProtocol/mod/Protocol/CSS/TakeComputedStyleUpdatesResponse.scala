@@ -14,19 +14,15 @@ trait TakeComputedStyleUpdatesResponse extends StObject {
 }
 object TakeComputedStyleUpdatesResponse {
   
-  @scala.inline
-  def apply(nodeIds: js.Array[NodeId]): TakeComputedStyleUpdatesResponse = {
+  inline def apply(nodeIds: js.Array[NodeId]): TakeComputedStyleUpdatesResponse = {
     val __obj = js.Dynamic.literal(nodeIds = nodeIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[TakeComputedStyleUpdatesResponse]
   }
   
-  @scala.inline
-  implicit class TakeComputedStyleUpdatesResponseMutableBuilder[Self <: TakeComputedStyleUpdatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TakeComputedStyleUpdatesResponse](x: Self) {
     
-    @scala.inline
-    def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
+    inline def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdsVarargs(value: NodeId*): Self = StObject.set(x, "nodeIds", js.Array(value :_*))
+    inline def setNodeIdsVarargs(value: NodeId*): Self = StObject.set(x, "nodeIds", js.Array(value :_*))
   }
 }

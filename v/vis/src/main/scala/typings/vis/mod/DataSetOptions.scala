@@ -28,25 +28,19 @@ trait DataSetOptions
 }
 object DataSetOptions {
   
-  @scala.inline
-  def apply(): DataSetOptions = {
+  inline def apply(): DataSetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSetOptions]
   }
   
-  @scala.inline
-  implicit class DataSetOptionsMutableBuilder[Self <: DataSetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DataSetOptions](x: Self) {
     
-    @scala.inline
-    def setFieldId(value: String): Self = StObject.set(x, "fieldId", value.asInstanceOf[js.Any])
+    inline def setFieldId(value: String): Self = StObject.set(x, "fieldId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldIdUndefined: Self = StObject.set(x, "fieldId", js.undefined)
+    inline def setFieldIdUndefined: Self = StObject.set(x, "fieldId", js.undefined)
     
-    @scala.inline
-    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

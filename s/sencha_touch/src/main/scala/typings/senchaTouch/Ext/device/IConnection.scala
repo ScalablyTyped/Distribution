@@ -10,8 +10,7 @@ trait IConnection
      with IAbstract
 object IConnection {
   
-  @scala.inline
-  def apply(): IConnection = {
+  inline def apply(): IConnection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConnection]
   }

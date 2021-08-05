@@ -14,28 +14,21 @@ trait ManagedAppPolicyDeploymentSummaryPerApp extends StObject {
 }
 object ManagedAppPolicyDeploymentSummaryPerApp {
   
-  @scala.inline
-  def apply(): ManagedAppPolicyDeploymentSummaryPerApp = {
+  inline def apply(): ManagedAppPolicyDeploymentSummaryPerApp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedAppPolicyDeploymentSummaryPerApp]
   }
   
-  @scala.inline
-  implicit class ManagedAppPolicyDeploymentSummaryPerAppMutableBuilder[Self <: ManagedAppPolicyDeploymentSummaryPerApp] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedAppPolicyDeploymentSummaryPerApp](x: Self) {
     
-    @scala.inline
-    def setConfigurationAppliedUserCount(value: Double): Self = StObject.set(x, "configurationAppliedUserCount", value.asInstanceOf[js.Any])
+    inline def setConfigurationAppliedUserCount(value: Double): Self = StObject.set(x, "configurationAppliedUserCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationAppliedUserCountUndefined: Self = StObject.set(x, "configurationAppliedUserCount", js.undefined)
+    inline def setConfigurationAppliedUserCountUndefined: Self = StObject.set(x, "configurationAppliedUserCount", js.undefined)
     
-    @scala.inline
-    def setMobileAppIdentifier(value: NullableOption[MobileAppIdentifier]): Self = StObject.set(x, "mobileAppIdentifier", value.asInstanceOf[js.Any])
+    inline def setMobileAppIdentifier(value: NullableOption[MobileAppIdentifier]): Self = StObject.set(x, "mobileAppIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileAppIdentifierNull: Self = StObject.set(x, "mobileAppIdentifier", null)
+    inline def setMobileAppIdentifierNull: Self = StObject.set(x, "mobileAppIdentifier", null)
     
-    @scala.inline
-    def setMobileAppIdentifierUndefined: Self = StObject.set(x, "mobileAppIdentifier", js.undefined)
+    inline def setMobileAppIdentifierUndefined: Self = StObject.set(x, "mobileAppIdentifier", js.undefined)
   }
 }

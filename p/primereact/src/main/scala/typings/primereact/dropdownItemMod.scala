@@ -33,38 +33,28 @@ object dropdownItemMod {
   }
   object DropdownItemProps {
     
-    @scala.inline
-    def apply(): DropdownItemProps = {
+    inline def apply(): DropdownItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropdownItemProps]
     }
     
-    @scala.inline
-    implicit class DropdownItemPropsMutableBuilder[Self <: DropdownItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownItemProps](x: Self) {
       
-      @scala.inline
-      def setOnClick(value: /* e */ Option => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* e */ Option => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOption(value: js.Object): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+      inline def setOption(value: js.Object): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
+      inline def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: /* option */ js.Any => js.UndefOr[Element]): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+      inline def setTemplate(value: /* option */ js.Any => js.UndefOr[Element]): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
 }

@@ -10,19 +10,15 @@ trait AutocompleteExposed extends StObject {
 }
 object AutocompleteExposed {
   
-  @scala.inline
-  def apply(): AutocompleteExposed = {
+  inline def apply(): AutocompleteExposed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutocompleteExposed]
   }
   
-  @scala.inline
-  implicit class AutocompleteExposedMutableBuilder[Self <: AutocompleteExposed] (val x: Self) extends AnyVal {
+  extension [Self <: AutocompleteExposed](x: Self) {
     
-    @scala.inline
-    def setDefaultRefinement(value: String): Self = StObject.set(x, "defaultRefinement", value.asInstanceOf[js.Any])
+    inline def setDefaultRefinement(value: String): Self = StObject.set(x, "defaultRefinement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRefinementUndefined: Self = StObject.set(x, "defaultRefinement", js.undefined)
+    inline def setDefaultRefinementUndefined: Self = StObject.set(x, "defaultRefinement", js.undefined)
   }
 }

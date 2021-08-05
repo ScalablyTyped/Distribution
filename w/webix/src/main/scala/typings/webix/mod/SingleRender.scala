@@ -20,6 +20,5 @@ trait SingleRender extends StObject {
 }
 object SingleRender {
   
-  @scala.inline
-  def apply: SingleRender = ^.asInstanceOf[js.Dynamic].selectDynamic("SingleRender").asInstanceOf[SingleRender]
+  inline def apply: SingleRender = ^.asInstanceOf[js.Dynamic].selectDynamic("SingleRender").asInstanceOf[SingleRender]
 }

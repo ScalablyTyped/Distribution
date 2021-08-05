@@ -12,25 +12,19 @@ trait AutoscrollPreserveFolds extends StObject {
 }
 object AutoscrollPreserveFolds {
   
-  @scala.inline
-  def apply(): AutoscrollPreserveFolds = {
+  inline def apply(): AutoscrollPreserveFolds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoscrollPreserveFolds]
   }
   
-  @scala.inline
-  implicit class AutoscrollPreserveFoldsMutableBuilder[Self <: AutoscrollPreserveFolds] (val x: Self) extends AnyVal {
+  extension [Self <: AutoscrollPreserveFolds](x: Self) {
     
-    @scala.inline
-    def setAutoscroll(value: Boolean): Self = StObject.set(x, "autoscroll", value.asInstanceOf[js.Any])
+    inline def setAutoscroll(value: Boolean): Self = StObject.set(x, "autoscroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscrollUndefined: Self = StObject.set(x, "autoscroll", js.undefined)
+    inline def setAutoscrollUndefined: Self = StObject.set(x, "autoscroll", js.undefined)
     
-    @scala.inline
-    def setPreserveFolds(value: Boolean): Self = StObject.set(x, "preserveFolds", value.asInstanceOf[js.Any])
+    inline def setPreserveFolds(value: Boolean): Self = StObject.set(x, "preserveFolds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveFoldsUndefined: Self = StObject.set(x, "preserveFolds", js.undefined)
+    inline def setPreserveFoldsUndefined: Self = StObject.set(x, "preserveFolds", js.undefined)
   }
 }

@@ -12,9 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLangDir(strLocale: String): ltr | rtl = ^.asInstanceOf[js.Dynamic].applyDynamic("getLangDir")(strLocale.asInstanceOf[js.Any]).asInstanceOf[ltr | rtl]
+  inline def getLangDir(strLocale: String): ltr | rtl = ^.asInstanceOf[js.Dynamic].applyDynamic("getLangDir")(strLocale.asInstanceOf[js.Any]).asInstanceOf[ltr | rtl]
   
-  @scala.inline
-  def isRtlLang(strLocale: String): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isRtlLang")(strLocale.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
+  inline def isRtlLang(strLocale: String): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isRtlLang")(strLocale.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
 }

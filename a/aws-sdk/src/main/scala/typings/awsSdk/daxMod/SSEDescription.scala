@@ -13,19 +13,15 @@ trait SSEDescription extends StObject {
 }
 object SSEDescription {
   
-  @scala.inline
-  def apply(): SSEDescription = {
+  inline def apply(): SSEDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SSEDescription]
   }
   
-  @scala.inline
-  implicit class SSEDescriptionMutableBuilder[Self <: SSEDescription] (val x: Self) extends AnyVal {
+  extension [Self <: SSEDescription](x: Self) {
     
-    @scala.inline
-    def setStatus(value: SSEStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SSEStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -21,26 +21,20 @@ trait BinaryOperation
 }
 object BinaryOperation {
   
-  @scala.inline
-  def apply(left: Expression, operator: BinOp, right: Expression): BinaryOperation = {
+  inline def apply(left: Expression, operator: BinOp, right: Expression): BinaryOperation = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BinaryOperation")
     __obj.asInstanceOf[BinaryOperation]
   }
   
-  @scala.inline
-  implicit class BinaryOperationMutableBuilder[Self <: BinaryOperation] (val x: Self) extends AnyVal {
+  extension [Self <: BinaryOperation](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: BinOp): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: BinOp): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.BinaryOperation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.BinaryOperation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

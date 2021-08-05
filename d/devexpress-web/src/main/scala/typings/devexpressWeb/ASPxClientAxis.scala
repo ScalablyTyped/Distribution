@@ -18,8 +18,7 @@ trait ASPxClientAxis
 }
 object ASPxClientAxis {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisTitle: ASPxClientAxisTitle,
     chart: ASPxClientWebChart,
     constantLines: js.Array[ASPxClientConstantLine],
@@ -33,10 +32,8 @@ object ASPxClientAxis {
     __obj.asInstanceOf[ASPxClientAxis]
   }
   
-  @scala.inline
-  implicit class ASPxClientAxisMutableBuilder[Self <: ASPxClientAxis] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientAxis](x: Self) {
     
-    @scala.inline
-    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
   }
 }

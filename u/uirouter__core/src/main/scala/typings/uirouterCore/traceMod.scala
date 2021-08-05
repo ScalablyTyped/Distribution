@@ -76,10 +76,10 @@ object traceMod {
   class Trace_ () extends StObject {
     
     /** @internal */
-    var _enabled: js.Any = js.native
+    /* private */ var _enabled: js.Any = js.native
     
     /** @internal */
-    var _set: js.Any = js.native
+    /* private */ var _set: js.Any = js.native
     
     /** @internal */
     var approximateDigests: Double = js.native

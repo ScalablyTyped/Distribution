@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrientationType extends StObject
 object OrientationType {
   
-  @scala.inline
-  def black: typings.chessboardjs.chessboardjsStrings.black = "black".asInstanceOf[typings.chessboardjs.chessboardjsStrings.black]
+  inline def black: typings.chessboardjs.chessboardjsStrings.black = "black".asInstanceOf[typings.chessboardjs.chessboardjsStrings.black]
   
-  @scala.inline
-  def white: typings.chessboardjs.chessboardjsStrings.white = "white".asInstanceOf[typings.chessboardjs.chessboardjsStrings.white]
+  inline def white: typings.chessboardjs.chessboardjsStrings.white = "white".asInstanceOf[typings.chessboardjs.chessboardjsStrings.white]
 }

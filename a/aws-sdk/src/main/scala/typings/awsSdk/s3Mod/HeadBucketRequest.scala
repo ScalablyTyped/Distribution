@@ -18,22 +18,17 @@ trait HeadBucketRequest extends StObject {
 }
 object HeadBucketRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName): HeadBucketRequest = {
+  inline def apply(Bucket: BucketName): HeadBucketRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadBucketRequest]
   }
   
-  @scala.inline
-  implicit class HeadBucketRequestMutableBuilder[Self <: HeadBucketRequest] (val x: Self) extends AnyVal {
+  extension [Self <: HeadBucketRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    inline def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
+    inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
   }
 }

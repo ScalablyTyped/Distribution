@@ -13,16 +13,13 @@ trait GetServiceSettingRequest extends StObject {
 }
 object GetServiceSettingRequest {
   
-  @scala.inline
-  def apply(SettingId: ServiceSettingId): GetServiceSettingRequest = {
+  inline def apply(SettingId: ServiceSettingId): GetServiceSettingRequest = {
     val __obj = js.Dynamic.literal(SettingId = SettingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServiceSettingRequest]
   }
   
-  @scala.inline
-  implicit class GetServiceSettingRequestMutableBuilder[Self <: GetServiceSettingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetServiceSettingRequest](x: Self) {
     
-    @scala.inline
-    def setSettingId(value: ServiceSettingId): Self = StObject.set(x, "SettingId", value.asInstanceOf[js.Any])
+    inline def setSettingId(value: ServiceSettingId): Self = StObject.set(x, "SettingId", value.asInstanceOf[js.Any])
   }
 }

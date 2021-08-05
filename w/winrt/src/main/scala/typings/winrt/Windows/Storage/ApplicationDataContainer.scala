@@ -11,8 +11,7 @@ trait ApplicationDataContainer
      with IApplicationDataContainer
 object ApplicationDataContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containers: IMapView[String, ApplicationDataContainer],
     createContainer: (String, ApplicationDataCreateDisposition) => ApplicationDataContainer,
     deleteContainer: String => Unit,

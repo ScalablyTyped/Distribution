@@ -10,12 +10,9 @@ object mediaproxy {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def endMediaSession(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("end_media_session")().asInstanceOf[Double]
+  inline def endMediaSession(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("end_media_session")().asInstanceOf[Double]
   
-  @scala.inline
-  def engageMediaProxy(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("engage_media_proxy")().asInstanceOf[Double]
+  inline def engageMediaProxy(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("engage_media_proxy")().asInstanceOf[Double]
   
-  @scala.inline
-  def useMediaProxy(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("use_media_proxy")().asInstanceOf[Double]
+  inline def useMediaProxy(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("use_media_proxy")().asInstanceOf[Double]
 }

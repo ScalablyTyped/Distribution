@@ -18,28 +18,21 @@ trait DescribeVpcEndpointServicePermissionsResult extends StObject {
 }
 object DescribeVpcEndpointServicePermissionsResult {
   
-  @scala.inline
-  def apply(): DescribeVpcEndpointServicePermissionsResult = {
+  inline def apply(): DescribeVpcEndpointServicePermissionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVpcEndpointServicePermissionsResult]
   }
   
-  @scala.inline
-  implicit class DescribeVpcEndpointServicePermissionsResultMutableBuilder[Self <: DescribeVpcEndpointServicePermissionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVpcEndpointServicePermissionsResult](x: Self) {
     
-    @scala.inline
-    def setAllowedPrincipals(value: AllowedPrincipalSet): Self = StObject.set(x, "AllowedPrincipals", value.asInstanceOf[js.Any])
+    inline def setAllowedPrincipals(value: AllowedPrincipalSet): Self = StObject.set(x, "AllowedPrincipals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedPrincipalsUndefined: Self = StObject.set(x, "AllowedPrincipals", js.undefined)
+    inline def setAllowedPrincipalsUndefined: Self = StObject.set(x, "AllowedPrincipals", js.undefined)
     
-    @scala.inline
-    def setAllowedPrincipalsVarargs(value: AllowedPrincipal*): Self = StObject.set(x, "AllowedPrincipals", js.Array(value :_*))
+    inline def setAllowedPrincipalsVarargs(value: AllowedPrincipal*): Self = StObject.set(x, "AllowedPrincipals", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

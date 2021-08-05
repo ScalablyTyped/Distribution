@@ -12,16 +12,13 @@ trait SearchBoxOptions extends StObject {
 }
 object SearchBoxOptions {
   
-  @scala.inline
-  def apply(bounds: LatLngBounds | LatLngBoundsLiteral): SearchBoxOptions = {
+  inline def apply(bounds: LatLngBounds | LatLngBoundsLiteral): SearchBoxOptions = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchBoxOptions]
   }
   
-  @scala.inline
-  implicit class SearchBoxOptionsMutableBuilder[Self <: SearchBoxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchBoxOptions](x: Self) {
     
-    @scala.inline
-    def setBounds(value: LatLngBounds | LatLngBoundsLiteral): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: LatLngBounds | LatLngBoundsLiteral): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
   }
 }

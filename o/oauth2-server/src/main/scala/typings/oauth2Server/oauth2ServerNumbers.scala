@@ -11,6 +11,5 @@ object oauth2ServerNumbers {
   sealed trait `0`
     extends StObject
        with _Falsey
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
+  inline def `0`: `0` = 0.asInstanceOf[`0`]
 }

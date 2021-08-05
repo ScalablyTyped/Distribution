@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def box(): Box_ = ^.asInstanceOf[js.Dynamic].applyDynamic("box")().asInstanceOf[Box_]
+  inline def box(): Box_ = ^.asInstanceOf[js.Dynamic].applyDynamic("box")().asInstanceOf[Box_]
   
   @js.native
   trait Box_ extends StObject {

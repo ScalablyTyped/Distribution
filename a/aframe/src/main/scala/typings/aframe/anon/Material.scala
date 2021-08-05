@@ -10,16 +10,13 @@ trait Material extends StObject {
 }
 object Material {
   
-  @scala.inline
-  def apply(material: js.Object): Material = {
+  inline def apply(material: js.Object): Material = {
     val __obj = js.Dynamic.literal(material = material.asInstanceOf[js.Any])
     __obj.asInstanceOf[Material]
   }
   
-  @scala.inline
-  implicit class MaterialMutableBuilder[Self <: Material] (val x: Self) extends AnyVal {
+  extension [Self <: Material](x: Self) {
     
-    @scala.inline
-    def setMaterial(value: js.Object): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: js.Object): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
   }
 }

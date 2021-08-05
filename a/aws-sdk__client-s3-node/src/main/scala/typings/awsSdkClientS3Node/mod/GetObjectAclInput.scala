@@ -9,8 +9,7 @@ trait GetObjectAclInput
      with typings.awsSdkClientS3Node.typesGetObjectAclInputMod.GetObjectAclInput
 object GetObjectAclInput {
   
-  @scala.inline
-  def apply(Bucket: String, Key: String): GetObjectAclInput = {
+  inline def apply(Bucket: String, Key: String): GetObjectAclInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectAclInput]
   }

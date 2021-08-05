@@ -23,31 +23,23 @@ trait Fmp4HlsSettings extends StObject {
 }
 object Fmp4HlsSettings {
   
-  @scala.inline
-  def apply(): Fmp4HlsSettings = {
+  inline def apply(): Fmp4HlsSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Fmp4HlsSettings]
   }
   
-  @scala.inline
-  implicit class Fmp4HlsSettingsMutableBuilder[Self <: Fmp4HlsSettings] (val x: Self) extends AnyVal {
+  extension [Self <: Fmp4HlsSettings](x: Self) {
     
-    @scala.inline
-    def setAudioRenditionSets(value: string): Self = StObject.set(x, "AudioRenditionSets", value.asInstanceOf[js.Any])
+    inline def setAudioRenditionSets(value: string): Self = StObject.set(x, "AudioRenditionSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioRenditionSetsUndefined: Self = StObject.set(x, "AudioRenditionSets", js.undefined)
+    inline def setAudioRenditionSetsUndefined: Self = StObject.set(x, "AudioRenditionSets", js.undefined)
     
-    @scala.inline
-    def setNielsenId3Behavior(value: Fmp4NielsenId3Behavior): Self = StObject.set(x, "NielsenId3Behavior", value.asInstanceOf[js.Any])
+    inline def setNielsenId3Behavior(value: Fmp4NielsenId3Behavior): Self = StObject.set(x, "NielsenId3Behavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNielsenId3BehaviorUndefined: Self = StObject.set(x, "NielsenId3Behavior", js.undefined)
+    inline def setNielsenId3BehaviorUndefined: Self = StObject.set(x, "NielsenId3Behavior", js.undefined)
     
-    @scala.inline
-    def setTimedMetadataBehavior(value: Fmp4TimedMetadataBehavior): Self = StObject.set(x, "TimedMetadataBehavior", value.asInstanceOf[js.Any])
+    inline def setTimedMetadataBehavior(value: Fmp4TimedMetadataBehavior): Self = StObject.set(x, "TimedMetadataBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedMetadataBehaviorUndefined: Self = StObject.set(x, "TimedMetadataBehavior", js.undefined)
+    inline def setTimedMetadataBehaviorUndefined: Self = StObject.set(x, "TimedMetadataBehavior", js.undefined)
   }
 }

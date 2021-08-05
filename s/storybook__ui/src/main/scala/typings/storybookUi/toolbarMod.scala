@@ -48,8 +48,7 @@ object toolbarMod {
   @js.native
   val Tools: NamedExoticComponent[List] = js.native
   
-  @scala.inline
-  def createTabsTool(tabs: js.Array[Addon]): Addon = ^.asInstanceOf[js.Dynamic].applyDynamic("createTabsTool")(tabs.asInstanceOf[js.Any]).asInstanceOf[Addon]
+  inline def createTabsTool(tabs: js.Array[Addon]): Addon = ^.asInstanceOf[js.Dynamic].applyDynamic("createTabsTool")(tabs.asInstanceOf[js.Any]).asInstanceOf[Addon]
   
   @JSImport("@storybook/ui/dist/components/preview/toolbar", "defaultTools")
   @js.native
@@ -59,8 +58,7 @@ object toolbarMod {
   @js.native
   val defaultToolsExtra: js.Array[Addon] = js.native
   
-  @scala.inline
-  def filterTools(
+  inline def filterTools(
     tools: js.Array[Addon],
     toolsExtra: js.Array[Addon],
     tabs: js.Array[Addon],
@@ -71,11 +69,9 @@ object toolbarMod {
   @js.native
   val fullScreenTool: Addon = js.native
   
-  @scala.inline
-  def getTools(getFn: js.Function1[/* type */ Types_, Collection[js.Any]]): js.Array[Addon] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTools")(getFn.asInstanceOf[js.Any]).asInstanceOf[js.Array[Addon]]
+  inline def getTools(getFn: js.Function1[/* type */ Types_, Collection[js.Any]]): js.Array[Addon] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTools")(getFn.asInstanceOf[js.Any]).asInstanceOf[js.Array[Addon]]
   
-  @scala.inline
-  def getToolsExtra(getFn: js.Function1[/* type */ Types_, Collection[js.Any]]): js.Array[Addon] = ^.asInstanceOf[js.Dynamic].applyDynamic("getToolsExtra")(getFn.asInstanceOf[js.Any]).asInstanceOf[js.Array[Addon]]
+  inline def getToolsExtra(getFn: js.Function1[/* type */ Types_, Collection[js.Any]]): js.Array[Addon] = ^.asInstanceOf[js.Dynamic].applyDynamic("getToolsExtra")(getFn.asInstanceOf[js.Any]).asInstanceOf[js.Array[Addon]]
   
   trait ToolData extends StObject {
     
@@ -89,29 +85,22 @@ object toolbarMod {
   }
   object ToolData {
     
-    @scala.inline
-    def apply(api: API, isShown: Boolean, story: Story | Group, tabs: js.Array[Addon]): ToolData = {
+    inline def apply(api: API, isShown: Boolean, story: Story | Group, tabs: js.Array[Addon]): ToolData = {
       val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], isShown = isShown.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToolData]
     }
     
-    @scala.inline
-    implicit class ToolDataMutableBuilder[Self <: ToolData] (val x: Self) extends AnyVal {
+    extension [Self <: ToolData](x: Self) {
       
-      @scala.inline
-      def setApi(value: API): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: API): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsShown(value: Boolean): Self = StObject.set(x, "isShown", value.asInstanceOf[js.Any])
+      inline def setIsShown(value: Boolean): Self = StObject.set(x, "isShown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStory(value: Story | Group): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
+      inline def setStory(value: Story | Group): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabs(value: js.Array[Addon]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: js.Array[Addon]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsVarargs(value: Addon*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Addon*): Self = StObject.set(x, "tabs", js.Array(value :_*))
     }
   }
 }

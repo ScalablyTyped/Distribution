@@ -13,16 +13,13 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  @scala.inline
-  def apply(resource: ResourceType): Resource = {
+  inline def apply(resource: ResourceType): Resource = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
   
-  @scala.inline
-  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+  extension [Self <: Resource](x: Self) {
     
-    @scala.inline
-    def setResource(value: ResourceType): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: ResourceType): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

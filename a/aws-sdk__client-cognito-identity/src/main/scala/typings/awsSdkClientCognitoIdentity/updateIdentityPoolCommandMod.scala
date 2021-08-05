@@ -29,7 +29,7 @@ object updateIdentityPoolCommandMod {
         ] {
     def this(input: UpdateIdentityPoolCommandInput) = this()
     
-    var deserialize: js.Any = js.native
+    /* private */ var deserialize: js.Any = js.native
     
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
@@ -41,7 +41,7 @@ object updateIdentityPoolCommandMod {
       options: HttpHandlerOptions
     ): Handler[UpdateIdentityPoolCommandInput, UpdateIdentityPoolCommandOutput] = js.native
     
-    var serialize: js.Any = js.native
+    /* private */ var serialize: js.Any = js.native
   }
   
   type UpdateIdentityPoolCommandInput = IdentityPool
@@ -53,8 +53,7 @@ object updateIdentityPoolCommandMod {
        with _ServiceOutputTypes
   object UpdateIdentityPoolCommandOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): UpdateIdentityPoolCommandOutput = {
+    inline def apply($metadata: ResponseMetadata): UpdateIdentityPoolCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateIdentityPoolCommandOutput]
     }

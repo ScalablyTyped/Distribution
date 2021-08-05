@@ -37,49 +37,35 @@ trait Contract
 }
 object Contract {
   
-  @scala.inline
-  def apply(): Contract = {
+  inline def apply(): Contract = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Contract]
   }
   
-  @scala.inline
-  implicit class ContractMutableBuilder[Self <: Contract] (val x: Self) extends AnyVal {
+  extension [Self <: Contract](x: Self) {
     
-    @scala.inline
-    def setContractType(value: NullableOption[String]): Self = StObject.set(x, "contractType", value.asInstanceOf[js.Any])
+    inline def setContractType(value: NullableOption[String]): Self = StObject.set(x, "contractType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContractTypeNull: Self = StObject.set(x, "contractType", null)
+    inline def setContractTypeNull: Self = StObject.set(x, "contractType", null)
     
-    @scala.inline
-    def setContractTypeUndefined: Self = StObject.set(x, "contractType", js.undefined)
+    inline def setContractTypeUndefined: Self = StObject.set(x, "contractType", js.undefined)
     
-    @scala.inline
-    def setCustomerId(value: NullableOption[String]): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    inline def setCustomerId(value: NullableOption[String]): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIdNull: Self = StObject.set(x, "customerId", null)
+    inline def setCustomerIdNull: Self = StObject.set(x, "customerId", null)
     
-    @scala.inline
-    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
-    @scala.inline
-    def setDefaultDomainName(value: NullableOption[String]): Self = StObject.set(x, "defaultDomainName", value.asInstanceOf[js.Any])
+    inline def setDefaultDomainName(value: NullableOption[String]): Self = StObject.set(x, "defaultDomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultDomainNameNull: Self = StObject.set(x, "defaultDomainName", null)
+    inline def setDefaultDomainNameNull: Self = StObject.set(x, "defaultDomainName", null)
     
-    @scala.inline
-    def setDefaultDomainNameUndefined: Self = StObject.set(x, "defaultDomainName", js.undefined)
+    inline def setDefaultDomainNameUndefined: Self = StObject.set(x, "defaultDomainName", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
   }
 }

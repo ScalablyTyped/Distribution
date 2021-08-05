@@ -29,43 +29,31 @@ trait IngestionInfo extends StObject {
 }
 object IngestionInfo {
   
-  @scala.inline
-  def apply(): IngestionInfo = {
+  inline def apply(): IngestionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IngestionInfo]
   }
   
-  @scala.inline
-  implicit class IngestionInfoMutableBuilder[Self <: IngestionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IngestionInfo](x: Self) {
     
-    @scala.inline
-    def setBackupIngestionAddress(value: String): Self = StObject.set(x, "backupIngestionAddress", value.asInstanceOf[js.Any])
+    inline def setBackupIngestionAddress(value: String): Self = StObject.set(x, "backupIngestionAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupIngestionAddressUndefined: Self = StObject.set(x, "backupIngestionAddress", js.undefined)
+    inline def setBackupIngestionAddressUndefined: Self = StObject.set(x, "backupIngestionAddress", js.undefined)
     
-    @scala.inline
-    def setIngestionAddress(value: String): Self = StObject.set(x, "ingestionAddress", value.asInstanceOf[js.Any])
+    inline def setIngestionAddress(value: String): Self = StObject.set(x, "ingestionAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngestionAddressUndefined: Self = StObject.set(x, "ingestionAddress", js.undefined)
+    inline def setIngestionAddressUndefined: Self = StObject.set(x, "ingestionAddress", js.undefined)
     
-    @scala.inline
-    def setRtmpsBackupIngestionAddress(value: String): Self = StObject.set(x, "rtmpsBackupIngestionAddress", value.asInstanceOf[js.Any])
+    inline def setRtmpsBackupIngestionAddress(value: String): Self = StObject.set(x, "rtmpsBackupIngestionAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtmpsBackupIngestionAddressUndefined: Self = StObject.set(x, "rtmpsBackupIngestionAddress", js.undefined)
+    inline def setRtmpsBackupIngestionAddressUndefined: Self = StObject.set(x, "rtmpsBackupIngestionAddress", js.undefined)
     
-    @scala.inline
-    def setRtmpsIngestionAddress(value: String): Self = StObject.set(x, "rtmpsIngestionAddress", value.asInstanceOf[js.Any])
+    inline def setRtmpsIngestionAddress(value: String): Self = StObject.set(x, "rtmpsIngestionAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtmpsIngestionAddressUndefined: Self = StObject.set(x, "rtmpsIngestionAddress", js.undefined)
+    inline def setRtmpsIngestionAddressUndefined: Self = StObject.set(x, "rtmpsIngestionAddress", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: String): Self = StObject.set(x, "streamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: String): Self = StObject.set(x, "streamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamNameUndefined: Self = StObject.set(x, "streamName", js.undefined)
+    inline def setStreamNameUndefined: Self = StObject.set(x, "streamName", js.undefined)
   }
 }

@@ -59,61 +59,43 @@ trait SchemaJobConfiguration extends StObject {
 }
 object SchemaJobConfiguration {
   
-  @scala.inline
-  def apply(): SchemaJobConfiguration = {
+  inline def apply(): SchemaJobConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJobConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaJobConfigurationMutableBuilder[Self <: SchemaJobConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaJobConfiguration](x: Self) {
     
-    @scala.inline
-    def setCopy(value: SchemaJobConfigurationTableCopy): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+    inline def setCopy(value: SchemaJobConfigurationTableCopy): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+    inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
-    @scala.inline
-    def setExtract(value: SchemaJobConfigurationExtract): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
+    inline def setExtract(value: SchemaJobConfigurationExtract): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtractUndefined: Self = StObject.set(x, "extract", js.undefined)
+    inline def setExtractUndefined: Self = StObject.set(x, "extract", js.undefined)
     
-    @scala.inline
-    def setJobTimeoutMs(value: String): Self = StObject.set(x, "jobTimeoutMs", value.asInstanceOf[js.Any])
+    inline def setJobTimeoutMs(value: String): Self = StObject.set(x, "jobTimeoutMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTimeoutMsUndefined: Self = StObject.set(x, "jobTimeoutMs", js.undefined)
+    inline def setJobTimeoutMsUndefined: Self = StObject.set(x, "jobTimeoutMs", js.undefined)
     
-    @scala.inline
-    def setJobType(value: String): Self = StObject.set(x, "jobType", value.asInstanceOf[js.Any])
+    inline def setJobType(value: String): Self = StObject.set(x, "jobType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTypeUndefined: Self = StObject.set(x, "jobType", js.undefined)
+    inline def setJobTypeUndefined: Self = StObject.set(x, "jobType", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLoad(value: SchemaJobConfigurationLoad): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: SchemaJobConfigurationLoad): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    @scala.inline
-    def setQuery(value: SchemaJobConfigurationQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: SchemaJobConfigurationQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

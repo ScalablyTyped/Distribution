@@ -185,10 +185,8 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#between
     */
   /* static member */
-  @scala.inline
-  def between(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
-  @scala.inline
-  def between(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  inline def between(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  inline def between(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
   
   /**
     * _Events that occurred last week._
@@ -196,10 +194,8 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#lastweek
     */
   /* static member */
-  @scala.inline
-  def lastWeek(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
-  @scala.inline
-  def lastWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  inline def lastWeek(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  inline def lastWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
   
   /**
     * _Events that occur next week._
@@ -207,10 +203,8 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#nextweek
     */
   /* static member */
-  @scala.inline
-  def nextWeek(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("nextWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
-  @scala.inline
-  def nextWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("nextWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  inline def nextWeek(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("nextWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  inline def nextWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("nextWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
   
   /**
     * _Presents a view for creating a calendar event._
@@ -219,8 +213,7 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#presentcreate
     */
   /* static member */
-  @scala.inline
-  def presentCreate(): js.Promise[typings.scriptableIos.CalendarEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("presentCreate")().asInstanceOf[js.Promise[typings.scriptableIos.CalendarEvent]]
+  inline def presentCreate(): js.Promise[typings.scriptableIos.CalendarEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("presentCreate")().asInstanceOf[js.Promise[typings.scriptableIos.CalendarEvent]]
   
   /**
     * _Events that occur this week._
@@ -228,10 +221,8 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#thisweek
     */
   /* static member */
-  @scala.inline
-  def thisWeek(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("thisWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
-  @scala.inline
-  def thisWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("thisWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  inline def thisWeek(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("thisWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  inline def thisWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("thisWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
   
   /**
     * _Events occurring today._
@@ -239,10 +230,8 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#today
     */
   /* static member */
-  @scala.inline
-  def today(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("today")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
-  @scala.inline
-  def today(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("today")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  inline def today(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("today")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  inline def today(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("today")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
   
   /**
     * _Events occurring tomorrow._
@@ -250,10 +239,8 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#tomorrow
     */
   /* static member */
-  @scala.inline
-  def tomorrow(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tomorrow")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
-  @scala.inline
-  def tomorrow(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tomorrow")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  inline def tomorrow(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tomorrow")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  inline def tomorrow(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tomorrow")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
   
   /**
     * _Events that occurred yesterday._
@@ -261,8 +248,6 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#yesterday
     */
   /* static member */
-  @scala.inline
-  def yesterday(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("yesterday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
-  @scala.inline
-  def yesterday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("yesterday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  inline def yesterday(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("yesterday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  inline def yesterday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("yesterday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
 }

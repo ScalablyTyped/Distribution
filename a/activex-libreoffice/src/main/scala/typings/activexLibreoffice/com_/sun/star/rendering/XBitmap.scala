@@ -56,8 +56,7 @@ trait XBitmap
 }
 object XBitmap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Size: IntegerSize2D,
     acquire: () => Unit,
     getScaledBitmap: (RealSize2D, Boolean) => XBitmap,
@@ -70,19 +69,14 @@ object XBitmap {
     __obj.asInstanceOf[XBitmap]
   }
   
-  @scala.inline
-  implicit class XBitmapMutableBuilder[Self <: XBitmap] (val x: Self) extends AnyVal {
+  extension [Self <: XBitmap](x: Self) {
     
-    @scala.inline
-    def setGetScaledBitmap(value: (RealSize2D, Boolean) => XBitmap): Self = StObject.set(x, "getScaledBitmap", js.Any.fromFunction2(value))
+    inline def setGetScaledBitmap(value: (RealSize2D, Boolean) => XBitmap): Self = StObject.set(x, "getScaledBitmap", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetSize(value: () => IntegerSize2D): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+    inline def setGetSize(value: () => IntegerSize2D): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasAlpha(value: () => Boolean): Self = StObject.set(x, "hasAlpha", js.Any.fromFunction0(value))
+    inline def setHasAlpha(value: () => Boolean): Self = StObject.set(x, "hasAlpha", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSize(value: IntegerSize2D): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: IntegerSize2D): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
   }
 }

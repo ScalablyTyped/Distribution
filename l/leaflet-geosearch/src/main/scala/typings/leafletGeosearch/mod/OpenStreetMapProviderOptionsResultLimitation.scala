@@ -22,49 +22,35 @@ trait OpenStreetMapProviderOptionsResultLimitation extends StObject {
 }
 object OpenStreetMapProviderOptionsResultLimitation {
   
-  @scala.inline
-  def apply(): OpenStreetMapProviderOptionsResultLimitation = {
+  inline def apply(): OpenStreetMapProviderOptionsResultLimitation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenStreetMapProviderOptionsResultLimitation]
   }
   
-  @scala.inline
-  implicit class OpenStreetMapProviderOptionsResultLimitationMutableBuilder[Self <: OpenStreetMapProviderOptionsResultLimitation] (val x: Self) extends AnyVal {
+  extension [Self <: OpenStreetMapProviderOptionsResultLimitation](x: Self) {
     
-    @scala.inline
-    def setBounded(value: `0` | `1`): Self = StObject.set(x, "bounded", value.asInstanceOf[js.Any])
+    inline def setBounded(value: `0` | `1`): Self = StObject.set(x, "bounded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundedUndefined: Self = StObject.set(x, "bounded", js.undefined)
+    inline def setBoundedUndefined: Self = StObject.set(x, "bounded", js.undefined)
     
-    @scala.inline
-    def setCountrycodes(value: String): Self = StObject.set(x, "countrycodes", value.asInstanceOf[js.Any])
+    inline def setCountrycodes(value: String): Self = StObject.set(x, "countrycodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountrycodesUndefined: Self = StObject.set(x, "countrycodes", js.undefined)
+    inline def setCountrycodesUndefined: Self = StObject.set(x, "countrycodes", js.undefined)
     
-    @scala.inline
-    def setExclude_place_ids(value: String): Self = StObject.set(x, "exclude_place_ids", value.asInstanceOf[js.Any])
+    inline def setExclude_place_ids(value: String): Self = StObject.set(x, "exclude_place_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclude_place_idsUndefined: Self = StObject.set(x, "exclude_place_ids", js.undefined)
+    inline def setExclude_place_idsUndefined: Self = StObject.set(x, "exclude_place_ids", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setViewbox(value: String): Self = StObject.set(x, "viewbox", value.asInstanceOf[js.Any])
+    inline def setViewbox(value: String): Self = StObject.set(x, "viewbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewboxUndefined: Self = StObject.set(x, "viewbox", js.undefined)
+    inline def setViewboxUndefined: Self = StObject.set(x, "viewbox", js.undefined)
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

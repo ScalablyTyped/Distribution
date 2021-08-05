@@ -18,31 +18,23 @@ trait MapContextIncludePointsOptions extends StObject {
 }
 object MapContextIncludePointsOptions {
   
-  @scala.inline
-  def apply(): MapContextIncludePointsOptions = {
+  inline def apply(): MapContextIncludePointsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapContextIncludePointsOptions]
   }
   
-  @scala.inline
-  implicit class MapContextIncludePointsOptionsMutableBuilder[Self <: MapContextIncludePointsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapContextIncludePointsOptions](x: Self) {
     
-    @scala.inline
-    def setPadding(value: js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
     
-    @scala.inline
-    def setPoints(value: js.Array[LocationObject]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[LocationObject]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    @scala.inline
-    def setPointsVarargs(value: LocationObject*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: LocationObject*): Self = StObject.set(x, "points", js.Array(value :_*))
   }
 }

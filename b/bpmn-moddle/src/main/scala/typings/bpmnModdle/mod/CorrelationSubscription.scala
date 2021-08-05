@@ -14,8 +14,7 @@ trait CorrelationSubscription
 }
 object CorrelationSubscription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     correlationKeyRef: CorrelationKey,
@@ -26,16 +25,12 @@ object CorrelationSubscription {
     __obj.asInstanceOf[CorrelationSubscription]
   }
   
-  @scala.inline
-  implicit class CorrelationSubscriptionMutableBuilder[Self <: CorrelationSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: CorrelationSubscription](x: Self) {
     
-    @scala.inline
-    def setCorrelationKeyRef(value: CorrelationKey): Self = StObject.set(x, "correlationKeyRef", value.asInstanceOf[js.Any])
+    inline def setCorrelationKeyRef(value: CorrelationKey): Self = StObject.set(x, "correlationKeyRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrelationPropertyBinding(value: js.Array[CorrelationKey]): Self = StObject.set(x, "correlationPropertyBinding", value.asInstanceOf[js.Any])
+    inline def setCorrelationPropertyBinding(value: js.Array[CorrelationKey]): Self = StObject.set(x, "correlationPropertyBinding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrelationPropertyBindingVarargs(value: CorrelationKey*): Self = StObject.set(x, "correlationPropertyBinding", js.Array(value :_*))
+    inline def setCorrelationPropertyBindingVarargs(value: CorrelationKey*): Self = StObject.set(x, "correlationPropertyBinding", js.Array(value :_*))
   }
 }

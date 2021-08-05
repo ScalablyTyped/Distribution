@@ -12,7 +12,7 @@ object configurationMod {
     def this(token: String) = this()
     def this(token: String, options: js.Any) = this()
     
-    var _token: js.Any = js.native
+    /* private */ var _token: js.Any = js.native
     
     val registrarUrl: String = js.native
     

@@ -18,25 +18,19 @@ trait InstanceMarketOptionsRequest extends StObject {
 }
 object InstanceMarketOptionsRequest {
   
-  @scala.inline
-  def apply(): InstanceMarketOptionsRequest = {
+  inline def apply(): InstanceMarketOptionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceMarketOptionsRequest]
   }
   
-  @scala.inline
-  implicit class InstanceMarketOptionsRequestMutableBuilder[Self <: InstanceMarketOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceMarketOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setMarketType(value: MarketType): Self = StObject.set(x, "MarketType", value.asInstanceOf[js.Any])
+    inline def setMarketType(value: MarketType): Self = StObject.set(x, "MarketType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarketTypeUndefined: Self = StObject.set(x, "MarketType", js.undefined)
+    inline def setMarketTypeUndefined: Self = StObject.set(x, "MarketType", js.undefined)
     
-    @scala.inline
-    def setSpotOptions(value: SpotMarketOptions): Self = StObject.set(x, "SpotOptions", value.asInstanceOf[js.Any])
+    inline def setSpotOptions(value: SpotMarketOptions): Self = StObject.set(x, "SpotOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotOptionsUndefined: Self = StObject.set(x, "SpotOptions", js.undefined)
+    inline def setSpotOptionsUndefined: Self = StObject.set(x, "SpotOptions", js.undefined)
   }
 }

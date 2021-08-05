@@ -12,19 +12,15 @@ trait NativeScrollSize extends StObject {
 }
 object NativeScrollSize {
   
-  @scala.inline
-  def apply(height: Double, width: Double): NativeScrollSize = {
+  inline def apply(height: Double, width: Double): NativeScrollSize = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeScrollSize]
   }
   
-  @scala.inline
-  implicit class NativeScrollSizeMutableBuilder[Self <: NativeScrollSize] (val x: Self) extends AnyVal {
+  extension [Self <: NativeScrollSize](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

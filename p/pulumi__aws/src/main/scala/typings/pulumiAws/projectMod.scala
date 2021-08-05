@@ -144,21 +144,16 @@ object projectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Project]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Project]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ProjectState): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Project]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ProjectState, opts: CustomResourceOptions): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Project]
+    inline def get(name: String, id: Input[ID]): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Project]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Project]
+    inline def get(name: String, id: Input[ID], state: ProjectState): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Project]
+    inline def get(name: String, id: Input[ID], state: ProjectState, opts: CustomResourceOptions): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Project]
     
     /**
       * Returns true if the given object is an instance of Project.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/project.Project */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codebuild/project.Project */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/project.Project */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codebuild/project.Project */ Boolean]
   }
   
   trait ProjectArgs extends StObject {
@@ -254,8 +249,7 @@ object projectMod {
   }
   object ProjectArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       artifacts: Input[typings.pulumiAws.inputMod.codebuild.ProjectArtifacts],
       environment: Input[typings.pulumiAws.inputMod.codebuild.ProjectEnvironment],
       serviceRole: Input[String],
@@ -265,104 +259,71 @@ object projectMod {
       __obj.asInstanceOf[ProjectArgs]
     }
     
-    @scala.inline
-    implicit class ProjectArgsMutableBuilder[Self <: ProjectArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ProjectArgs](x: Self) {
       
-      @scala.inline
-      def setArtifacts(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectArtifacts]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
+      inline def setArtifacts(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectArtifacts]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeEnabled(value: Input[Boolean]): Self = StObject.set(x, "badgeEnabled", value.asInstanceOf[js.Any])
+      inline def setBadgeEnabled(value: Input[Boolean]): Self = StObject.set(x, "badgeEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeEnabledUndefined: Self = StObject.set(x, "badgeEnabled", js.undefined)
+      inline def setBadgeEnabledUndefined: Self = StObject.set(x, "badgeEnabled", js.undefined)
       
-      @scala.inline
-      def setBuildTimeout(value: Input[Double]): Self = StObject.set(x, "buildTimeout", value.asInstanceOf[js.Any])
+      inline def setBuildTimeout(value: Input[Double]): Self = StObject.set(x, "buildTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildTimeoutUndefined: Self = StObject.set(x, "buildTimeout", js.undefined)
+      inline def setBuildTimeoutUndefined: Self = StObject.set(x, "buildTimeout", js.undefined)
       
-      @scala.inline
-      def setCache(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectCache]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectCache]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEncryptionKey(value: Input[String]): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
+      inline def setEncryptionKey(value: Input[String]): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
+      inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
       
-      @scala.inline
-      def setEnvironment(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectEnvironment]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectEnvironment]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogsConfig(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectLogsConfig]): Self = StObject.set(x, "logsConfig", value.asInstanceOf[js.Any])
+      inline def setLogsConfig(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectLogsConfig]): Self = StObject.set(x, "logsConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogsConfigUndefined: Self = StObject.set(x, "logsConfig", js.undefined)
+      inline def setLogsConfigUndefined: Self = StObject.set(x, "logsConfig", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setQueuedTimeout(value: Input[Double]): Self = StObject.set(x, "queuedTimeout", value.asInstanceOf[js.Any])
+      inline def setQueuedTimeout(value: Input[Double]): Self = StObject.set(x, "queuedTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueuedTimeoutUndefined: Self = StObject.set(x, "queuedTimeout", js.undefined)
+      inline def setQueuedTimeoutUndefined: Self = StObject.set(x, "queuedTimeout", js.undefined)
       
-      @scala.inline
-      def setSecondaryArtifacts(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondaryArtifact]]]): Self = StObject.set(x, "secondaryArtifacts", value.asInstanceOf[js.Any])
+      inline def setSecondaryArtifacts(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondaryArtifact]]]): Self = StObject.set(x, "secondaryArtifacts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryArtifactsUndefined: Self = StObject.set(x, "secondaryArtifacts", js.undefined)
+      inline def setSecondaryArtifactsUndefined: Self = StObject.set(x, "secondaryArtifacts", js.undefined)
       
-      @scala.inline
-      def setSecondaryArtifactsVarargs(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondaryArtifact]*): Self = StObject.set(x, "secondaryArtifacts", js.Array(value :_*))
+      inline def setSecondaryArtifactsVarargs(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondaryArtifact]*): Self = StObject.set(x, "secondaryArtifacts", js.Array(value :_*))
       
-      @scala.inline
-      def setSecondarySources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondarySource]]]): Self = StObject.set(x, "secondarySources", value.asInstanceOf[js.Any])
+      inline def setSecondarySources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondarySource]]]): Self = StObject.set(x, "secondarySources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondarySourcesUndefined: Self = StObject.set(x, "secondarySources", js.undefined)
+      inline def setSecondarySourcesUndefined: Self = StObject.set(x, "secondarySources", js.undefined)
       
-      @scala.inline
-      def setSecondarySourcesVarargs(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondarySource]*): Self = StObject.set(x, "secondarySources", js.Array(value :_*))
+      inline def setSecondarySourcesVarargs(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondarySource]*): Self = StObject.set(x, "secondarySources", js.Array(value :_*))
       
-      @scala.inline
-      def setServiceRole(value: Input[String]): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
+      inline def setServiceRole(value: Input[String]): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectSource]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectSource]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceVersion(value: Input[String]): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
+      inline def setSourceVersion(value: Input[String]): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceVersionUndefined: Self = StObject.set(x, "sourceVersion", js.undefined)
+      inline def setSourceVersionUndefined: Self = StObject.set(x, "sourceVersion", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcConfig(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectVpcConfig]): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
+      inline def setVpcConfig(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectVpcConfig]): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
+      inline def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
     }
   }
   
@@ -469,134 +430,92 @@ object projectMod {
   }
   object ProjectState {
     
-    @scala.inline
-    def apply(): ProjectState = {
+    inline def apply(): ProjectState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProjectState]
     }
     
-    @scala.inline
-    implicit class ProjectStateMutableBuilder[Self <: ProjectState] (val x: Self) extends AnyVal {
+    extension [Self <: ProjectState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setArtifacts(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectArtifacts]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
+      inline def setArtifacts(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectArtifacts]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
+      inline def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
       
-      @scala.inline
-      def setBadgeEnabled(value: Input[Boolean]): Self = StObject.set(x, "badgeEnabled", value.asInstanceOf[js.Any])
+      inline def setBadgeEnabled(value: Input[Boolean]): Self = StObject.set(x, "badgeEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeEnabledUndefined: Self = StObject.set(x, "badgeEnabled", js.undefined)
+      inline def setBadgeEnabledUndefined: Self = StObject.set(x, "badgeEnabled", js.undefined)
       
-      @scala.inline
-      def setBadgeUrl(value: Input[String]): Self = StObject.set(x, "badgeUrl", value.asInstanceOf[js.Any])
+      inline def setBadgeUrl(value: Input[String]): Self = StObject.set(x, "badgeUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeUrlUndefined: Self = StObject.set(x, "badgeUrl", js.undefined)
+      inline def setBadgeUrlUndefined: Self = StObject.set(x, "badgeUrl", js.undefined)
       
-      @scala.inline
-      def setBuildTimeout(value: Input[Double]): Self = StObject.set(x, "buildTimeout", value.asInstanceOf[js.Any])
+      inline def setBuildTimeout(value: Input[Double]): Self = StObject.set(x, "buildTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildTimeoutUndefined: Self = StObject.set(x, "buildTimeout", js.undefined)
+      inline def setBuildTimeoutUndefined: Self = StObject.set(x, "buildTimeout", js.undefined)
       
-      @scala.inline
-      def setCache(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectCache]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectCache]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEncryptionKey(value: Input[String]): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
+      inline def setEncryptionKey(value: Input[String]): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
+      inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
       
-      @scala.inline
-      def setEnvironment(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectEnvironment]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectEnvironment]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      @scala.inline
-      def setLogsConfig(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectLogsConfig]): Self = StObject.set(x, "logsConfig", value.asInstanceOf[js.Any])
+      inline def setLogsConfig(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectLogsConfig]): Self = StObject.set(x, "logsConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogsConfigUndefined: Self = StObject.set(x, "logsConfig", js.undefined)
+      inline def setLogsConfigUndefined: Self = StObject.set(x, "logsConfig", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setQueuedTimeout(value: Input[Double]): Self = StObject.set(x, "queuedTimeout", value.asInstanceOf[js.Any])
+      inline def setQueuedTimeout(value: Input[Double]): Self = StObject.set(x, "queuedTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueuedTimeoutUndefined: Self = StObject.set(x, "queuedTimeout", js.undefined)
+      inline def setQueuedTimeoutUndefined: Self = StObject.set(x, "queuedTimeout", js.undefined)
       
-      @scala.inline
-      def setSecondaryArtifacts(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondaryArtifact]]]): Self = StObject.set(x, "secondaryArtifacts", value.asInstanceOf[js.Any])
+      inline def setSecondaryArtifacts(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondaryArtifact]]]): Self = StObject.set(x, "secondaryArtifacts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryArtifactsUndefined: Self = StObject.set(x, "secondaryArtifacts", js.undefined)
+      inline def setSecondaryArtifactsUndefined: Self = StObject.set(x, "secondaryArtifacts", js.undefined)
       
-      @scala.inline
-      def setSecondaryArtifactsVarargs(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondaryArtifact]*): Self = StObject.set(x, "secondaryArtifacts", js.Array(value :_*))
+      inline def setSecondaryArtifactsVarargs(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondaryArtifact]*): Self = StObject.set(x, "secondaryArtifacts", js.Array(value :_*))
       
-      @scala.inline
-      def setSecondarySources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondarySource]]]): Self = StObject.set(x, "secondarySources", value.asInstanceOf[js.Any])
+      inline def setSecondarySources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondarySource]]]): Self = StObject.set(x, "secondarySources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondarySourcesUndefined: Self = StObject.set(x, "secondarySources", js.undefined)
+      inline def setSecondarySourcesUndefined: Self = StObject.set(x, "secondarySources", js.undefined)
       
-      @scala.inline
-      def setSecondarySourcesVarargs(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondarySource]*): Self = StObject.set(x, "secondarySources", js.Array(value :_*))
+      inline def setSecondarySourcesVarargs(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondarySource]*): Self = StObject.set(x, "secondarySources", js.Array(value :_*))
       
-      @scala.inline
-      def setServiceRole(value: Input[String]): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
+      inline def setServiceRole(value: Input[String]): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceRoleUndefined: Self = StObject.set(x, "serviceRole", js.undefined)
+      inline def setServiceRoleUndefined: Self = StObject.set(x, "serviceRole", js.undefined)
       
-      @scala.inline
-      def setSource(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectSource]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectSource]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setSourceVersion(value: Input[String]): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
+      inline def setSourceVersion(value: Input[String]): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceVersionUndefined: Self = StObject.set(x, "sourceVersion", js.undefined)
+      inline def setSourceVersionUndefined: Self = StObject.set(x, "sourceVersion", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcConfig(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectVpcConfig]): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
+      inline def setVpcConfig(value: Input[typings.pulumiAws.inputMod.codebuild.ProjectVpcConfig]): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
+      inline def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
     }
   }
 }

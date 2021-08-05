@@ -13,14 +13,10 @@ object getCustomerGatewayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCustomerGateway(): js.Promise[GetCustomerGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomerGateway")().asInstanceOf[js.Promise[GetCustomerGatewayResult]]
-  @scala.inline
-  def getCustomerGateway(args: Unit, opts: InvokeOptions): js.Promise[GetCustomerGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCustomerGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCustomerGatewayResult]]
-  @scala.inline
-  def getCustomerGateway(args: GetCustomerGatewayArgs): js.Promise[GetCustomerGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomerGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCustomerGatewayResult]]
-  @scala.inline
-  def getCustomerGateway(args: GetCustomerGatewayArgs, opts: InvokeOptions): js.Promise[GetCustomerGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCustomerGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCustomerGatewayResult]]
+  inline def getCustomerGateway(): js.Promise[GetCustomerGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomerGateway")().asInstanceOf[js.Promise[GetCustomerGatewayResult]]
+  inline def getCustomerGateway(args: Unit, opts: InvokeOptions): js.Promise[GetCustomerGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCustomerGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCustomerGatewayResult]]
+  inline def getCustomerGateway(args: GetCustomerGatewayArgs): js.Promise[GetCustomerGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomerGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCustomerGatewayResult]]
+  inline def getCustomerGateway(args: GetCustomerGatewayArgs, opts: InvokeOptions): js.Promise[GetCustomerGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCustomerGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCustomerGatewayResult]]
   
   trait GetCustomerGatewayArgs extends StObject {
     
@@ -41,35 +37,26 @@ object getCustomerGatewayMod {
   }
   object GetCustomerGatewayArgs {
     
-    @scala.inline
-    def apply(): GetCustomerGatewayArgs = {
+    inline def apply(): GetCustomerGatewayArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetCustomerGatewayArgs]
     }
     
-    @scala.inline
-    implicit class GetCustomerGatewayArgsMutableBuilder[Self <: GetCustomerGatewayArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetCustomerGatewayArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetCustomerGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetCustomerGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetCustomerGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetCustomerGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -106,45 +93,33 @@ object getCustomerGatewayMod {
   }
   object GetCustomerGatewayResult {
     
-    @scala.inline
-    def apply(arn: String, bgpAsn: Double, ipAddress: String, tags: StringDictionary[String], `type`: String): GetCustomerGatewayResult = {
+    inline def apply(arn: String, bgpAsn: Double, ipAddress: String, tags: StringDictionary[String], `type`: String): GetCustomerGatewayResult = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], bgpAsn = bgpAsn.asInstanceOf[js.Any], ipAddress = ipAddress.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetCustomerGatewayResult]
     }
     
-    @scala.inline
-    implicit class GetCustomerGatewayResultMutableBuilder[Self <: GetCustomerGatewayResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetCustomerGatewayResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgpAsn(value: Double): Self = StObject.set(x, "bgpAsn", value.asInstanceOf[js.Any])
+      inline def setBgpAsn(value: Double): Self = StObject.set(x, "bgpAsn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetCustomerGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetCustomerGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetCustomerGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetCustomerGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

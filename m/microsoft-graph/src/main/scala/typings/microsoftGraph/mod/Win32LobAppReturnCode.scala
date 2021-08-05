@@ -14,25 +14,19 @@ trait Win32LobAppReturnCode extends StObject {
 }
 object Win32LobAppReturnCode {
   
-  @scala.inline
-  def apply(): Win32LobAppReturnCode = {
+  inline def apply(): Win32LobAppReturnCode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Win32LobAppReturnCode]
   }
   
-  @scala.inline
-  implicit class Win32LobAppReturnCodeMutableBuilder[Self <: Win32LobAppReturnCode] (val x: Self) extends AnyVal {
+  extension [Self <: Win32LobAppReturnCode](x: Self) {
     
-    @scala.inline
-    def setReturnCode(value: Double): Self = StObject.set(x, "returnCode", value.asInstanceOf[js.Any])
+    inline def setReturnCode(value: Double): Self = StObject.set(x, "returnCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnCodeUndefined: Self = StObject.set(x, "returnCode", js.undefined)
+    inline def setReturnCodeUndefined: Self = StObject.set(x, "returnCode", js.undefined)
     
-    @scala.inline
-    def setType(value: Win32LobAppReturnCodeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Win32LobAppReturnCodeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

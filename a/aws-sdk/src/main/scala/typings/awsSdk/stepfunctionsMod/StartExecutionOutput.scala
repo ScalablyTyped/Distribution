@@ -18,19 +18,15 @@ trait StartExecutionOutput extends StObject {
 }
 object StartExecutionOutput {
   
-  @scala.inline
-  def apply(executionArn: Arn, startDate: Timestamp): StartExecutionOutput = {
+  inline def apply(executionArn: Arn, startDate: Timestamp): StartExecutionOutput = {
     val __obj = js.Dynamic.literal(executionArn = executionArn.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartExecutionOutput]
   }
   
-  @scala.inline
-  implicit class StartExecutionOutputMutableBuilder[Self <: StartExecutionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: StartExecutionOutput](x: Self) {
     
-    @scala.inline
-    def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
+    inline def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDate(value: Timestamp): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Timestamp): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
   }
 }

@@ -10,8 +10,7 @@ trait SignatureHelpRegistrationOptions
      with SignatureHelpOptions
 object SignatureHelpRegistrationOptions {
   
-  @scala.inline
-  def apply(): SignatureHelpRegistrationOptions = {
+  inline def apply(): SignatureHelpRegistrationOptions = {
     val __obj = js.Dynamic.literal(documentSelector = null)
     __obj.asInstanceOf[SignatureHelpRegistrationOptions]
   }

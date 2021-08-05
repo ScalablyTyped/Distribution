@@ -18,8 +18,7 @@ trait FlowCollection
 }
 object FlowCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasComment: Boolean,
     hasProps: Boolean,
     items: js.Array[FlowChar | BlankLine | Comment | Alias | Scalar | FlowCollection],
@@ -33,16 +32,12 @@ object FlowCollection {
     __obj.asInstanceOf[FlowCollection]
   }
   
-  @scala.inline
-  implicit class FlowCollectionMutableBuilder[Self <: FlowCollection] (val x: Self) extends AnyVal {
+  extension [Self <: FlowCollection](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[FlowChar | BlankLine | Comment | Alias | Scalar | FlowCollection]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[FlowChar | BlankLine | Comment | Alias | Scalar | FlowCollection]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: (FlowChar | BlankLine | Comment | Alias | Scalar | FlowCollection)*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: (FlowChar | BlankLine | Comment | Alias | Scalar | FlowCollection)*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: FLOW_MAP | FLOW_SEQ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FLOW_MAP | FLOW_SEQ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

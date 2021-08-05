@@ -13,16 +13,13 @@ trait INDStartResult extends StObject {
 }
 object INDStartResult {
   
-  @scala.inline
-  def apply(mediaStreamSource: MediaStreamSource): INDStartResult = {
+  inline def apply(mediaStreamSource: MediaStreamSource): INDStartResult = {
     val __obj = js.Dynamic.literal(mediaStreamSource = mediaStreamSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[INDStartResult]
   }
   
-  @scala.inline
-  implicit class INDStartResultMutableBuilder[Self <: INDStartResult] (val x: Self) extends AnyVal {
+  extension [Self <: INDStartResult](x: Self) {
     
-    @scala.inline
-    def setMediaStreamSource(value: MediaStreamSource): Self = StObject.set(x, "mediaStreamSource", value.asInstanceOf[js.Any])
+    inline def setMediaStreamSource(value: MediaStreamSource): Self = StObject.set(x, "mediaStreamSource", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait CSSKeywordValue
 }
 object CSSKeywordValue {
   
-  @scala.inline
-  def apply(value: String): CSSKeywordValue = {
+  inline def apply(value: String): CSSKeywordValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSKeywordValue]
   }
   
-  @scala.inline
-  implicit class CSSKeywordValueMutableBuilder[Self <: CSSKeywordValue] (val x: Self) extends AnyVal {
+  extension [Self <: CSSKeywordValue](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

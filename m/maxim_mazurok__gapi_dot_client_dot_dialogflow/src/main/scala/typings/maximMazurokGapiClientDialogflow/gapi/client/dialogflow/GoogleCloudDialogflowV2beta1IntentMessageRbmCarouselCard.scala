@@ -14,28 +14,21 @@ trait GoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCard extends StObject 
 }
 object GoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCard {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCard = {
+  inline def apply(): GoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCard = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCard]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCardMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCard] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCard](x: Self) {
     
-    @scala.inline
-    def setCardContents(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent]): Self = StObject.set(x, "cardContents", value.asInstanceOf[js.Any])
+    inline def setCardContents(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent]): Self = StObject.set(x, "cardContents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardContentsUndefined: Self = StObject.set(x, "cardContents", js.undefined)
+    inline def setCardContentsUndefined: Self = StObject.set(x, "cardContents", js.undefined)
     
-    @scala.inline
-    def setCardContentsVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent*): Self = StObject.set(x, "cardContents", js.Array(value :_*))
+    inline def setCardContentsVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent*): Self = StObject.set(x, "cardContents", js.Array(value :_*))
     
-    @scala.inline
-    def setCardWidth(value: String): Self = StObject.set(x, "cardWidth", value.asInstanceOf[js.Any])
+    inline def setCardWidth(value: String): Self = StObject.set(x, "cardWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardWidthUndefined: Self = StObject.set(x, "cardWidth", js.undefined)
+    inline def setCardWidthUndefined: Self = StObject.set(x, "cardWidth", js.undefined)
   }
 }

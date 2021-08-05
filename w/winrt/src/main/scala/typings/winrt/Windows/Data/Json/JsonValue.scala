@@ -9,8 +9,7 @@ trait JsonValue
      with IJsonValue
 object JsonValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getArray: () => JsonArray,
     getBoolean: () => Boolean,
     getNumber: () => Double,

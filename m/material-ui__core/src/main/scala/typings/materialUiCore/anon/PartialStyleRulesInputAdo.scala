@@ -20,43 +20,31 @@ trait PartialStyleRulesInputAdo extends StObject {
 }
 object PartialStyleRulesInputAdo {
   
-  @scala.inline
-  def apply(): PartialStyleRulesInputAdo = {
+  inline def apply(): PartialStyleRulesInputAdo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesInputAdo]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesInputAdoMutableBuilder[Self <: PartialStyleRulesInputAdo] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesInputAdo](x: Self) {
     
-    @scala.inline
-    def setDisablePointerEvents(value: CSSProperties): Self = StObject.set(x, "disablePointerEvents", value.asInstanceOf[js.Any])
+    inline def setDisablePointerEvents(value: CSSProperties): Self = StObject.set(x, "disablePointerEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisablePointerEventsUndefined: Self = StObject.set(x, "disablePointerEvents", js.undefined)
+    inline def setDisablePointerEventsUndefined: Self = StObject.set(x, "disablePointerEvents", js.undefined)
     
-    @scala.inline
-    def setFilled(value: CSSProperties): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
+    inline def setFilled(value: CSSProperties): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
+    inline def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
     
-    @scala.inline
-    def setPositionEnd(value: CSSProperties): Self = StObject.set(x, "positionEnd", value.asInstanceOf[js.Any])
+    inline def setPositionEnd(value: CSSProperties): Self = StObject.set(x, "positionEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionEndUndefined: Self = StObject.set(x, "positionEnd", js.undefined)
+    inline def setPositionEndUndefined: Self = StObject.set(x, "positionEnd", js.undefined)
     
-    @scala.inline
-    def setPositionStart(value: CSSProperties): Self = StObject.set(x, "positionStart", value.asInstanceOf[js.Any])
+    inline def setPositionStart(value: CSSProperties): Self = StObject.set(x, "positionStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionStartUndefined: Self = StObject.set(x, "positionStart", js.undefined)
+    inline def setPositionStartUndefined: Self = StObject.set(x, "positionStart", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

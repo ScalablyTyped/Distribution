@@ -18,25 +18,19 @@ trait StreamNameCondition extends StObject {
 }
 object StreamNameCondition {
   
-  @scala.inline
-  def apply(): StreamNameCondition = {
+  inline def apply(): StreamNameCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamNameCondition]
   }
   
-  @scala.inline
-  implicit class StreamNameConditionMutableBuilder[Self <: StreamNameCondition] (val x: Self) extends AnyVal {
+  extension [Self <: StreamNameCondition](x: Self) {
     
-    @scala.inline
-    def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
+    inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonOperatorUndefined: Self = StObject.set(x, "ComparisonOperator", js.undefined)
+    inline def setComparisonOperatorUndefined: Self = StObject.set(x, "ComparisonOperator", js.undefined)
     
-    @scala.inline
-    def setComparisonValue(value: StreamName): Self = StObject.set(x, "ComparisonValue", value.asInstanceOf[js.Any])
+    inline def setComparisonValue(value: StreamName): Self = StObject.set(x, "ComparisonValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonValueUndefined: Self = StObject.set(x, "ComparisonValue", js.undefined)
+    inline def setComparisonValueUndefined: Self = StObject.set(x, "ComparisonValue", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait ServerCreate extends StObject {
 }
 object ServerCreate {
   
-  @scala.inline
-  def apply(server: TeamSpeakServer, token: String): ServerCreate = {
+  inline def apply(server: TeamSpeakServer, token: String): ServerCreate = {
     val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerCreate]
   }
   
-  @scala.inline
-  implicit class ServerCreateMutableBuilder[Self <: ServerCreate] (val x: Self) extends AnyVal {
+  extension [Self <: ServerCreate](x: Self) {
     
-    @scala.inline
-    def setServer(value: TeamSpeakServer): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: TeamSpeakServer): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

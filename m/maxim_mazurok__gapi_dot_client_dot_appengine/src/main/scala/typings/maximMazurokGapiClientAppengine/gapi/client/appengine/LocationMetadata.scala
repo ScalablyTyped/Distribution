@@ -14,25 +14,19 @@ trait LocationMetadata extends StObject {
 }
 object LocationMetadata {
   
-  @scala.inline
-  def apply(): LocationMetadata = {
+  inline def apply(): LocationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationMetadata]
   }
   
-  @scala.inline
-  implicit class LocationMetadataMutableBuilder[Self <: LocationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: LocationMetadata](x: Self) {
     
-    @scala.inline
-    def setFlexibleEnvironmentAvailable(value: Boolean): Self = StObject.set(x, "flexibleEnvironmentAvailable", value.asInstanceOf[js.Any])
+    inline def setFlexibleEnvironmentAvailable(value: Boolean): Self = StObject.set(x, "flexibleEnvironmentAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexibleEnvironmentAvailableUndefined: Self = StObject.set(x, "flexibleEnvironmentAvailable", js.undefined)
+    inline def setFlexibleEnvironmentAvailableUndefined: Self = StObject.set(x, "flexibleEnvironmentAvailable", js.undefined)
     
-    @scala.inline
-    def setStandardEnvironmentAvailable(value: Boolean): Self = StObject.set(x, "standardEnvironmentAvailable", value.asInstanceOf[js.Any])
+    inline def setStandardEnvironmentAvailable(value: Boolean): Self = StObject.set(x, "standardEnvironmentAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardEnvironmentAvailableUndefined: Self = StObject.set(x, "standardEnvironmentAvailable", js.undefined)
+    inline def setStandardEnvironmentAvailableUndefined: Self = StObject.set(x, "standardEnvironmentAvailable", js.undefined)
   }
 }

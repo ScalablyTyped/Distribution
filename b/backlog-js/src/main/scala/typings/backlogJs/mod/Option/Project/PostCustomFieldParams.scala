@@ -18,40 +18,29 @@ trait PostCustomFieldParams extends StObject {
 }
 object PostCustomFieldParams {
   
-  @scala.inline
-  def apply(name: String, typeId: FieldType): PostCustomFieldParams = {
+  inline def apply(name: String, typeId: FieldType): PostCustomFieldParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], typeId = typeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostCustomFieldParams]
   }
   
-  @scala.inline
-  implicit class PostCustomFieldParamsMutableBuilder[Self <: PostCustomFieldParams] (val x: Self) extends AnyVal {
+  extension [Self <: PostCustomFieldParams](x: Self) {
     
-    @scala.inline
-    def setApplicableIssueTypes(value: js.Array[Double]): Self = StObject.set(x, "applicableIssueTypes", value.asInstanceOf[js.Any])
+    inline def setApplicableIssueTypes(value: js.Array[Double]): Self = StObject.set(x, "applicableIssueTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicableIssueTypesUndefined: Self = StObject.set(x, "applicableIssueTypes", js.undefined)
+    inline def setApplicableIssueTypesUndefined: Self = StObject.set(x, "applicableIssueTypes", js.undefined)
     
-    @scala.inline
-    def setApplicableIssueTypesVarargs(value: Double*): Self = StObject.set(x, "applicableIssueTypes", js.Array(value :_*))
+    inline def setApplicableIssueTypesVarargs(value: Double*): Self = StObject.set(x, "applicableIssueTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    @scala.inline
-    def setTypeId(value: FieldType): Self = StObject.set(x, "typeId", value.asInstanceOf[js.Any])
+    inline def setTypeId(value: FieldType): Self = StObject.set(x, "typeId", value.asInstanceOf[js.Any])
   }
 }

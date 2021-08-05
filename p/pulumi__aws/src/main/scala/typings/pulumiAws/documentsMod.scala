@@ -16,8 +16,7 @@ object documentsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assumeRolePolicyForPrincipal(principal: Principal): PolicyDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("assumeRolePolicyForPrincipal")(principal.asInstanceOf[js.Any]).asInstanceOf[PolicyDocument]
+  inline def assumeRolePolicyForPrincipal(principal: Principal): PolicyDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("assumeRolePolicyForPrincipal")(principal.asInstanceOf[js.Any]).asInstanceOf[PolicyDocument]
   
   trait AWSPrincipal
     extends StObject
@@ -27,20 +26,16 @@ object documentsMod {
   }
   object AWSPrincipal {
     
-    @scala.inline
-    def apply(AWS: Input[js.Array[Input[String]] | String]): AWSPrincipal = {
+    inline def apply(AWS: Input[js.Array[Input[String]] | String]): AWSPrincipal = {
       val __obj = js.Dynamic.literal(AWS = AWS.asInstanceOf[js.Any])
       __obj.asInstanceOf[AWSPrincipal]
     }
     
-    @scala.inline
-    implicit class AWSPrincipalMutableBuilder[Self <: AWSPrincipal] (val x: Self) extends AnyVal {
+    extension [Self <: AWSPrincipal](x: Self) {
       
-      @scala.inline
-      def setAWS(value: Input[js.Array[Input[String]] | String]): Self = StObject.set(x, "AWS", value.asInstanceOf[js.Any])
+      inline def setAWS(value: Input[js.Array[Input[String]] | String]): Self = StObject.set(x, "AWS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAWSVarargs(value: Input[String]*): Self = StObject.set(x, "AWS", js.Array(value :_*))
+      inline def setAWSVarargs(value: Input[String]*): Self = StObject.set(x, "AWS", js.Array(value :_*))
     }
   }
   
@@ -79,20 +74,16 @@ object documentsMod {
   }
   object FederatedPrincipal {
     
-    @scala.inline
-    def apply(Federated: Input[js.Array[Input[String]] | String]): FederatedPrincipal = {
+    inline def apply(Federated: Input[js.Array[Input[String]] | String]): FederatedPrincipal = {
       val __obj = js.Dynamic.literal(Federated = Federated.asInstanceOf[js.Any])
       __obj.asInstanceOf[FederatedPrincipal]
     }
     
-    @scala.inline
-    implicit class FederatedPrincipalMutableBuilder[Self <: FederatedPrincipal] (val x: Self) extends AnyVal {
+    extension [Self <: FederatedPrincipal](x: Self) {
       
-      @scala.inline
-      def setFederated(value: Input[js.Array[Input[String]] | String]): Self = StObject.set(x, "Federated", value.asInstanceOf[js.Any])
+      inline def setFederated(value: Input[js.Array[Input[String]] | String]): Self = StObject.set(x, "Federated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFederatedVarargs(value: Input[String]*): Self = StObject.set(x, "Federated", js.Array(value :_*))
+      inline def setFederatedVarargs(value: Input[String]*): Self = StObject.set(x, "Federated", js.Array(value :_*))
     }
   }
   
@@ -115,29 +106,22 @@ object documentsMod {
   }
   object PolicyDocument {
     
-    @scala.inline
-    def apply(Statement: Input[js.Array[Input[PolicyStatement]]], Version: Input[`2008-10-17` | `2012-10-17`]): PolicyDocument = {
+    inline def apply(Statement: Input[js.Array[Input[PolicyStatement]]], Version: Input[`2008-10-17` | `2012-10-17`]): PolicyDocument = {
       val __obj = js.Dynamic.literal(Statement = Statement.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyDocument]
     }
     
-    @scala.inline
-    implicit class PolicyDocumentMutableBuilder[Self <: PolicyDocument] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyDocument](x: Self) {
       
-      @scala.inline
-      def setId(value: Input[String]): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: Input[String]): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      @scala.inline
-      def setStatement(value: Input[js.Array[Input[PolicyStatement]]]): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
+      inline def setStatement(value: Input[js.Array[Input[PolicyStatement]]]): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementVarargs(value: Input[PolicyStatement]*): Self = StObject.set(x, "Statement", js.Array(value :_*))
+      inline def setStatementVarargs(value: Input[PolicyStatement]*): Self = StObject.set(x, "Statement", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: Input[`2008-10-17` | `2012-10-17`]): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Input[`2008-10-17` | `2012-10-17`]): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,77 +178,54 @@ object documentsMod {
   }
   object PolicyStatement {
     
-    @scala.inline
-    def apply(Effect: Input[Allow | Deny]): PolicyStatement = {
+    inline def apply(Effect: Input[Allow | Deny]): PolicyStatement = {
       val __obj = js.Dynamic.literal(Effect = Effect.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyStatement]
     }
     
-    @scala.inline
-    implicit class PolicyStatementMutableBuilder[Self <: PolicyStatement] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyStatement](x: Self) {
       
-      @scala.inline
-      def setAction(value: Input[js.Array[Input[String]] | String]): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+      inline def setAction(value: Input[js.Array[Input[String]] | String]): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
       
-      @scala.inline
-      def setActionVarargs(value: Input[String]*): Self = StObject.set(x, "Action", js.Array(value :_*))
+      inline def setActionVarargs(value: Input[String]*): Self = StObject.set(x, "Action", js.Array(value :_*))
       
-      @scala.inline
-      def setCondition(value: Input[Conditions]): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: Input[Conditions]): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
+      inline def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
       
-      @scala.inline
-      def setEffect(value: Input[Allow | Deny]): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: Input[Allow | Deny]): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotAction(value: Input[js.Array[Input[String]] | String]): Self = StObject.set(x, "NotAction", value.asInstanceOf[js.Any])
+      inline def setNotAction(value: Input[js.Array[Input[String]] | String]): Self = StObject.set(x, "NotAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotActionUndefined: Self = StObject.set(x, "NotAction", js.undefined)
+      inline def setNotActionUndefined: Self = StObject.set(x, "NotAction", js.undefined)
       
-      @scala.inline
-      def setNotActionVarargs(value: Input[String]*): Self = StObject.set(x, "NotAction", js.Array(value :_*))
+      inline def setNotActionVarargs(value: Input[String]*): Self = StObject.set(x, "NotAction", js.Array(value :_*))
       
-      @scala.inline
-      def setNotPrincipal(value: Input[Principal]): Self = StObject.set(x, "NotPrincipal", value.asInstanceOf[js.Any])
+      inline def setNotPrincipal(value: Input[Principal]): Self = StObject.set(x, "NotPrincipal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotPrincipalUndefined: Self = StObject.set(x, "NotPrincipal", js.undefined)
+      inline def setNotPrincipalUndefined: Self = StObject.set(x, "NotPrincipal", js.undefined)
       
-      @scala.inline
-      def setNotResource(value: Input[js.Array[Input[String]] | String]): Self = StObject.set(x, "NotResource", value.asInstanceOf[js.Any])
+      inline def setNotResource(value: Input[js.Array[Input[String]] | String]): Self = StObject.set(x, "NotResource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotResourceUndefined: Self = StObject.set(x, "NotResource", js.undefined)
+      inline def setNotResourceUndefined: Self = StObject.set(x, "NotResource", js.undefined)
       
-      @scala.inline
-      def setNotResourceVarargs(value: Input[String]*): Self = StObject.set(x, "NotResource", js.Array(value :_*))
+      inline def setNotResourceVarargs(value: Input[String]*): Self = StObject.set(x, "NotResource", js.Array(value :_*))
       
-      @scala.inline
-      def setPrincipal(value: Input[Principal]): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
+      inline def setPrincipal(value: Input[Principal]): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrincipalUndefined: Self = StObject.set(x, "Principal", js.undefined)
+      inline def setPrincipalUndefined: Self = StObject.set(x, "Principal", js.undefined)
       
-      @scala.inline
-      def setResource(value: Input[js.Array[Input[String]] | String]): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: Input[js.Array[Input[String]] | String]): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "Resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "Resource", js.undefined)
       
-      @scala.inline
-      def setResourceVarargs(value: Input[String]*): Self = StObject.set(x, "Resource", js.Array(value :_*))
+      inline def setResourceVarargs(value: Input[String]*): Self = StObject.set(x, "Resource", js.Array(value :_*))
       
-      @scala.inline
-      def setSid(value: Input[String]): Self = StObject.set(x, "Sid", value.asInstanceOf[js.Any])
+      inline def setSid(value: Input[String]): Self = StObject.set(x, "Sid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSidUndefined: Self = StObject.set(x, "Sid", js.undefined)
+      inline def setSidUndefined: Self = StObject.set(x, "Sid", js.undefined)
     }
   }
   
@@ -284,20 +245,16 @@ object documentsMod {
   }
   object ServicePrincipal {
     
-    @scala.inline
-    def apply(Service: Input[js.Array[Input[String]] | String]): ServicePrincipal = {
+    inline def apply(Service: Input[js.Array[Input[String]] | String]): ServicePrincipal = {
       val __obj = js.Dynamic.literal(Service = Service.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServicePrincipal]
     }
     
-    @scala.inline
-    implicit class ServicePrincipalMutableBuilder[Self <: ServicePrincipal] (val x: Self) extends AnyVal {
+    extension [Self <: ServicePrincipal](x: Self) {
       
-      @scala.inline
-      def setService(value: Input[js.Array[Input[String]] | String]): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
+      inline def setService(value: Input[js.Array[Input[String]] | String]): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceVarargs(value: Input[String]*): Self = StObject.set(x, "Service", js.Array(value :_*))
+      inline def setServiceVarargs(value: Input[String]*): Self = StObject.set(x, "Service", js.Array(value :_*))
     }
   }
 }

@@ -12,19 +12,15 @@ trait PathT extends StObject {
 }
 object PathT {
   
-  @scala.inline
-  def apply(segmentIndex: Double, value: Double): PathT = {
+  inline def apply(segmentIndex: Double, value: Double): PathT = {
     val __obj = js.Dynamic.literal(segmentIndex = segmentIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathT]
   }
   
-  @scala.inline
-  implicit class PathTMutableBuilder[Self <: PathT] (val x: Self) extends AnyVal {
+  extension [Self <: PathT](x: Self) {
     
-    @scala.inline
-    def setSegmentIndex(value: Double): Self = StObject.set(x, "segmentIndex", value.asInstanceOf[js.Any])
+    inline def setSegmentIndex(value: Double): Self = StObject.set(x, "segmentIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

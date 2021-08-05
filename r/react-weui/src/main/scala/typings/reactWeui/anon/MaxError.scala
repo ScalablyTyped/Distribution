@@ -10,16 +10,13 @@ trait MaxError extends StObject {
 }
 object MaxError {
   
-  @scala.inline
-  def apply(maxError: js.Any): MaxError = {
+  inline def apply(maxError: js.Any): MaxError = {
     val __obj = js.Dynamic.literal(maxError = maxError.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxError]
   }
   
-  @scala.inline
-  implicit class MaxErrorMutableBuilder[Self <: MaxError] (val x: Self) extends AnyVal {
+  extension [Self <: MaxError](x: Self) {
     
-    @scala.inline
-    def setMaxError(value: js.Any): Self = StObject.set(x, "maxError", value.asInstanceOf[js.Any])
+    inline def setMaxError(value: js.Any): Self = StObject.set(x, "maxError", value.asInstanceOf[js.Any])
   }
 }

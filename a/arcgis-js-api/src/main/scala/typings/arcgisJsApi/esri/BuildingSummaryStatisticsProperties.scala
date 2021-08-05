@@ -17,22 +17,17 @@ trait BuildingSummaryStatisticsProperties
 }
 object BuildingSummaryStatisticsProperties {
   
-  @scala.inline
-  def apply(): BuildingSummaryStatisticsProperties = {
+  inline def apply(): BuildingSummaryStatisticsProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildingSummaryStatisticsProperties]
   }
   
-  @scala.inline
-  implicit class BuildingSummaryStatisticsPropertiesMutableBuilder[Self <: BuildingSummaryStatisticsProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BuildingSummaryStatisticsProperties](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[BuildingFieldStatistics]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[BuildingFieldStatistics]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: BuildingFieldStatistics*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: BuildingFieldStatistics*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

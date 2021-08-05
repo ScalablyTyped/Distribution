@@ -19,73 +19,73 @@ object progressViewMod {
   trait ProgressView
     extends typings.playable.viewMod.default[IProgressViewStyles] {
     
-    @JSName("_$buffered")
+    /* private */ @JSName("_$buffered")
     var _$buffered: js.Any = js.native
     
-    @JSName("_$hitbox")
+    /* private */ @JSName("_$hitbox")
     var _$hitbox: js.Any = js.native
     
-    @JSName("_$played")
+    /* private */ @JSName("_$played")
     var _$played: js.Any = js.native
     
-    @JSName("_$rootElement")
+    /* private */ @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
     
-    @JSName("_$seekButton")
+    /* private */ @JSName("_$seekButton")
     var _$seekButton: js.Any = js.native
     
-    @JSName("_$seekTo")
+    /* private */ @JSName("_$seekTo")
     var _$seekTo: js.Any = js.native
     
-    @JSName("_$syncButton")
+    /* private */ @JSName("_$syncButton")
     var _$syncButton: js.Any = js.native
     
-    @JSName("_$timeIndicators")
+    /* private */ @JSName("_$timeIndicators")
     var _$timeIndicators: js.Any = js.native
     
-    var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: js.Any = js.native
     
-    var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: js.Any = js.native
     
-    var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: js.Any = js.native
     
-    var _currentPlayedPercent: js.Any = js.native
+    /* private */ var _currentPlayedPercent: js.Any = js.native
     
-    var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: js.Any = js.native
     
-    var _isDragging: js.Any = js.native
+    /* private */ var _isDragging: js.Any = js.native
     
-    var _setBufferedDOMAttributes: js.Any = js.native
+    /* private */ var _setBufferedDOMAttributes: js.Any = js.native
     
-    var _setPlayedByDrag: js.Any = js.native
+    /* private */ var _setPlayedByDrag: js.Any = js.native
     
-    var _setPlayedDOMAttributes: js.Any = js.native
+    /* private */ var _setPlayedDOMAttributes: js.Any = js.native
     
-    var _setPlayedDOMPosition: js.Any = js.native
+    /* private */ var _setPlayedDOMPosition: js.Any = js.native
     
-    var _setSeekToDOMAttributes: js.Any = js.native
+    /* private */ var _setSeekToDOMAttributes: js.Any = js.native
     
-    var _startDrag: js.Any = js.native
+    /* private */ var _startDrag: js.Any = js.native
     
-    var _startDragOnMouseDown: js.Any = js.native
+    /* private */ var _startDragOnMouseDown: js.Any = js.native
     
-    var _startSeekToByMouse: js.Any = js.native
+    /* private */ var _startSeekToByMouse: js.Any = js.native
     
-    var _stopDrag: js.Any = js.native
+    /* private */ var _stopDrag: js.Any = js.native
     
-    var _stopDragOnMouseUp: js.Any = js.native
+    /* private */ var _stopDragOnMouseUp: js.Any = js.native
     
-    var _stopSeekToByMouse: js.Any = js.native
+    /* private */ var _stopSeekToByMouse: js.Any = js.native
     
-    var _syncButtonTooltipReference: js.Any = js.native
+    /* private */ var _syncButtonTooltipReference: js.Any = js.native
     
-    var _syncWithLive: js.Any = js.native
+    /* private */ var _syncWithLive: js.Any = js.native
     
-    var _textMap: js.Any = js.native
+    /* private */ var _textMap: js.Any = js.native
     
-    var _tooltipService: js.Any = js.native
+    /* private */ var _tooltipService: js.Any = js.native
     
-    var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: js.Any = js.native
     
     def addTimeIndicator(percent: Double): Unit = js.native
     

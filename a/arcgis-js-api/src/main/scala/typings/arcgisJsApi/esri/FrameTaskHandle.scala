@@ -33,8 +33,7 @@ trait FrameTaskHandle
 }
 object FrameTaskHandle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     pause: () => Unit,
@@ -46,16 +45,12 @@ object FrameTaskHandle {
     __obj.asInstanceOf[FrameTaskHandle]
   }
   
-  @scala.inline
-  implicit class FrameTaskHandleMutableBuilder[Self <: FrameTaskHandle] (val x: Self) extends AnyVal {
+  extension [Self <: FrameTaskHandle](x: Self) {
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+    inline def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
   }
 }

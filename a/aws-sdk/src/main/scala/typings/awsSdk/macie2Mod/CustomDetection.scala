@@ -28,37 +28,27 @@ trait CustomDetection extends StObject {
 }
 object CustomDetection {
   
-  @scala.inline
-  def apply(): CustomDetection = {
+  inline def apply(): CustomDetection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomDetection]
   }
   
-  @scala.inline
-  implicit class CustomDetectionMutableBuilder[Self <: CustomDetection] (val x: Self) extends AnyVal {
+  extension [Self <: CustomDetection](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOccurrences(value: Occurrences): Self = StObject.set(x, "occurrences", value.asInstanceOf[js.Any])
+    inline def setOccurrences(value: Occurrences): Self = StObject.set(x, "occurrences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrencesUndefined: Self = StObject.set(x, "occurrences", js.undefined)
+    inline def setOccurrencesUndefined: Self = StObject.set(x, "occurrences", js.undefined)
   }
 }

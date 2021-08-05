@@ -18,19 +18,15 @@ trait PutSuppressedDestinationRequest extends StObject {
 }
 object PutSuppressedDestinationRequest {
   
-  @scala.inline
-  def apply(EmailAddress: EmailAddress, Reason: SuppressionListReason): PutSuppressedDestinationRequest = {
+  inline def apply(EmailAddress: EmailAddress, Reason: SuppressionListReason): PutSuppressedDestinationRequest = {
     val __obj = js.Dynamic.literal(EmailAddress = EmailAddress.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutSuppressedDestinationRequest]
   }
   
-  @scala.inline
-  implicit class PutSuppressedDestinationRequestMutableBuilder[Self <: PutSuppressedDestinationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutSuppressedDestinationRequest](x: Self) {
     
-    @scala.inline
-    def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: SuppressionListReason): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: SuppressionListReason): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }
 }

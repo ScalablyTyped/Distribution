@@ -44,7 +44,7 @@ object libSshMod {
        with ResourceClientPaginate[SSHKey] {
     def this(hasClientTokenUser: SSHKeyClientDeps) = this()
     
-    var client: IClient = js.native
+    /* protected */ var client: IClient = js.native
     
     /* CompleteClass */
     override def create(details: SSHKeyCreateDetails): js.Promise[SSHKey] = js.native
@@ -53,24 +53,19 @@ object libSshMod {
     
     def paginate(args: PartialPaginateArgsResponMax): IPaginator[Response[js.Array[SSHKey]], PaginatorState] = js.native
     
-    var token: String = js.native
+    /* protected */ var token: String = js.native
     
-    var user: IdNumber = js.native
+    /* protected */ var user: IdNumber = js.native
   }
   
-  @scala.inline
-  def getGeneratedPrivateKeyPath(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeneratedPrivateKeyPath")().asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def getGeneratedPrivateKeyPath(userId: Double): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeneratedPrivateKeyPath")(userId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getGeneratedPrivateKeyPath(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeneratedPrivateKeyPath")().asInstanceOf[js.Promise[String]]
+  inline def getGeneratedPrivateKeyPath(userId: Double): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeneratedPrivateKeyPath")(userId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def parsePublicKey(pubkey: String): js.Tuple4[String, String, String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePublicKey")(pubkey.asInstanceOf[js.Any]).asInstanceOf[js.Tuple4[String, String, String, String]]
+  inline def parsePublicKey(pubkey: String): js.Tuple4[String, String, String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePublicKey")(pubkey.asInstanceOf[js.Any]).asInstanceOf[js.Tuple4[String, String, String, String]]
   
-  @scala.inline
-  def parsePublicKeyFile(pubkeyPath: String): js.Promise[js.Tuple4[String, String, String, String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePublicKeyFile")(pubkeyPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple4[String, String, String, String]]]
+  inline def parsePublicKeyFile(pubkeyPath: String): js.Promise[js.Tuple4[String, String, String, String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePublicKeyFile")(pubkeyPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple4[String, String, String, String]]]
   
-  @scala.inline
-  def validatePrivateKey(keyPath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePrivateKey")(keyPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def validatePrivateKey(keyPath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePrivateKey")(keyPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   trait SSHKeyClientDeps extends StObject {
     
@@ -82,23 +77,18 @@ object libSshMod {
   }
   object SSHKeyClientDeps {
     
-    @scala.inline
-    def apply(client: IClient, token: String, user: IdNumber): SSHKeyClientDeps = {
+    inline def apply(client: IClient, token: String, user: IdNumber): SSHKeyClientDeps = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[SSHKeyClientDeps]
     }
     
-    @scala.inline
-    implicit class SSHKeyClientDepsMutableBuilder[Self <: SSHKeyClientDeps] (val x: Self) extends AnyVal {
+    extension [Self <: SSHKeyClientDeps](x: Self) {
       
-      @scala.inline
-      def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: IdNumber): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: IdNumber): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,17 +98,14 @@ object libSshMod {
   }
   object SSHKeyCreateDetails {
     
-    @scala.inline
-    def apply(pubkey: String): SSHKeyCreateDetails = {
+    inline def apply(pubkey: String): SSHKeyCreateDetails = {
       val __obj = js.Dynamic.literal(pubkey = pubkey.asInstanceOf[js.Any])
       __obj.asInstanceOf[SSHKeyCreateDetails]
     }
     
-    @scala.inline
-    implicit class SSHKeyCreateDetailsMutableBuilder[Self <: SSHKeyCreateDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SSHKeyCreateDetails](x: Self) {
       
-      @scala.inline
-      def setPubkey(value: String): Self = StObject.set(x, "pubkey", value.asInstanceOf[js.Any])
+      inline def setPubkey(value: String): Self = StObject.set(x, "pubkey", value.asInstanceOf[js.Any])
     }
   }
 }

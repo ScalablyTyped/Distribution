@@ -13,19 +13,15 @@ trait IAction extends StObject {
 }
 object IAction {
   
-  @scala.inline
-  def apply(): IAction = {
+  inline def apply(): IAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAction]
   }
   
-  @scala.inline
-  implicit class IActionMutableBuilder[Self <: IAction] (val x: Self) extends AnyVal {
+  extension [Self <: IAction](x: Self) {
     
-    @scala.inline
-    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
+    inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
   }
 }

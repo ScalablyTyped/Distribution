@@ -18,25 +18,19 @@ trait CompatibleImage extends StObject {
 }
 object CompatibleImage {
   
-  @scala.inline
-  def apply(): CompatibleImage = {
+  inline def apply(): CompatibleImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompatibleImage]
   }
   
-  @scala.inline
-  implicit class CompatibleImageMutableBuilder[Self <: CompatibleImage] (val x: Self) extends AnyVal {
+  extension [Self <: CompatibleImage](x: Self) {
     
-    @scala.inline
-    def setAmiId(value: String): Self = StObject.set(x, "AmiId", value.asInstanceOf[js.Any])
+    inline def setAmiId(value: String): Self = StObject.set(x, "AmiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmiIdUndefined: Self = StObject.set(x, "AmiId", js.undefined)
+    inline def setAmiIdUndefined: Self = StObject.set(x, "AmiId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

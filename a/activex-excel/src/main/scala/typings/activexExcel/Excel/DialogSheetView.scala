@@ -12,7 +12,7 @@ trait DialogSheetView
   
   val Creator: XlCreator
   
-  @JSName("Excel.DialogSheetView_typekey")
+  /* private */ @JSName("Excel.DialogSheetView_typekey")
   var ExcelDotDialogSheetView_typekey: DialogSheetView
   
   val Parent: js.Any
@@ -21,8 +21,7 @@ trait DialogSheetView
 }
 object DialogSheetView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     ExcelDotDialogSheetView_typekey: DialogSheetView,
@@ -34,22 +33,16 @@ object DialogSheetView {
     __obj.asInstanceOf[DialogSheetView]
   }
   
-  @scala.inline
-  implicit class DialogSheetViewMutableBuilder[Self <: DialogSheetView] (val x: Self) extends AnyVal {
+  extension [Self <: DialogSheetView](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotDialogSheetView_typekey(value: DialogSheetView): Self = StObject.set(x, "Excel.DialogSheetView_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotDialogSheetView_typekey(value: DialogSheetView): Self = StObject.set(x, "Excel.DialogSheetView_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheet(value: DialogSheet): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
+    inline def setSheet(value: DialogSheet): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
   }
 }

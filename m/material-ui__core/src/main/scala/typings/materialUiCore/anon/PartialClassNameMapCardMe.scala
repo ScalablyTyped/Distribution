@@ -13,25 +13,19 @@ trait PartialClassNameMapCardMe extends StObject {
 }
 object PartialClassNameMapCardMe {
   
-  @scala.inline
-  def apply(): PartialClassNameMapCardMe = {
+  inline def apply(): PartialClassNameMapCardMe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapCardMe]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapCardMeMutableBuilder[Self <: PartialClassNameMapCardMe] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapCardMe](x: Self) {
     
-    @scala.inline
-    def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

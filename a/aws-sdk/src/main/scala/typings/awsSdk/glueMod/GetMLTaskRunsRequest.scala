@@ -33,40 +33,29 @@ trait GetMLTaskRunsRequest extends StObject {
 }
 object GetMLTaskRunsRequest {
   
-  @scala.inline
-  def apply(TransformId: HashString): GetMLTaskRunsRequest = {
+  inline def apply(TransformId: HashString): GetMLTaskRunsRequest = {
     val __obj = js.Dynamic.literal(TransformId = TransformId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMLTaskRunsRequest]
   }
   
-  @scala.inline
-  implicit class GetMLTaskRunsRequestMutableBuilder[Self <: GetMLTaskRunsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetMLTaskRunsRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: TaskRunFilterCriteria): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: TaskRunFilterCriteria): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSort(value: TaskRunSortCriteria): Self = StObject.set(x, "Sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: TaskRunSortCriteria): Self = StObject.set(x, "Sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "Sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "Sort", js.undefined)
     
-    @scala.inline
-    def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
+    inline def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
   }
 }

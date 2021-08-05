@@ -33,40 +33,29 @@ trait ModifySubnetAttributeRequest extends StObject {
 }
 object ModifySubnetAttributeRequest {
   
-  @scala.inline
-  def apply(SubnetId: SubnetId): ModifySubnetAttributeRequest = {
+  inline def apply(SubnetId: SubnetId): ModifySubnetAttributeRequest = {
     val __obj = js.Dynamic.literal(SubnetId = SubnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifySubnetAttributeRequest]
   }
   
-  @scala.inline
-  implicit class ModifySubnetAttributeRequestMutableBuilder[Self <: ModifySubnetAttributeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifySubnetAttributeRequest](x: Self) {
     
-    @scala.inline
-    def setAssignIpv6AddressOnCreation(value: AttributeBooleanValue): Self = StObject.set(x, "AssignIpv6AddressOnCreation", value.asInstanceOf[js.Any])
+    inline def setAssignIpv6AddressOnCreation(value: AttributeBooleanValue): Self = StObject.set(x, "AssignIpv6AddressOnCreation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignIpv6AddressOnCreationUndefined: Self = StObject.set(x, "AssignIpv6AddressOnCreation", js.undefined)
+    inline def setAssignIpv6AddressOnCreationUndefined: Self = StObject.set(x, "AssignIpv6AddressOnCreation", js.undefined)
     
-    @scala.inline
-    def setCustomerOwnedIpv4Pool(value: CoipPoolId): Self = StObject.set(x, "CustomerOwnedIpv4Pool", value.asInstanceOf[js.Any])
+    inline def setCustomerOwnedIpv4Pool(value: CoipPoolId): Self = StObject.set(x, "CustomerOwnedIpv4Pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerOwnedIpv4PoolUndefined: Self = StObject.set(x, "CustomerOwnedIpv4Pool", js.undefined)
+    inline def setCustomerOwnedIpv4PoolUndefined: Self = StObject.set(x, "CustomerOwnedIpv4Pool", js.undefined)
     
-    @scala.inline
-    def setMapCustomerOwnedIpOnLaunch(value: AttributeBooleanValue): Self = StObject.set(x, "MapCustomerOwnedIpOnLaunch", value.asInstanceOf[js.Any])
+    inline def setMapCustomerOwnedIpOnLaunch(value: AttributeBooleanValue): Self = StObject.set(x, "MapCustomerOwnedIpOnLaunch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapCustomerOwnedIpOnLaunchUndefined: Self = StObject.set(x, "MapCustomerOwnedIpOnLaunch", js.undefined)
+    inline def setMapCustomerOwnedIpOnLaunchUndefined: Self = StObject.set(x, "MapCustomerOwnedIpOnLaunch", js.undefined)
     
-    @scala.inline
-    def setMapPublicIpOnLaunch(value: AttributeBooleanValue): Self = StObject.set(x, "MapPublicIpOnLaunch", value.asInstanceOf[js.Any])
+    inline def setMapPublicIpOnLaunch(value: AttributeBooleanValue): Self = StObject.set(x, "MapPublicIpOnLaunch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapPublicIpOnLaunchUndefined: Self = StObject.set(x, "MapPublicIpOnLaunch", js.undefined)
+    inline def setMapPublicIpOnLaunchUndefined: Self = StObject.set(x, "MapPublicIpOnLaunch", js.undefined)
     
-    @scala.inline
-    def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
   }
 }

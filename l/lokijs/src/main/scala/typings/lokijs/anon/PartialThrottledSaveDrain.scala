@@ -17,37 +17,27 @@ trait PartialThrottledSaveDrain extends StObject {
 }
 object PartialThrottledSaveDrain {
   
-  @scala.inline
-  def apply(): PartialThrottledSaveDrain = {
+  inline def apply(): PartialThrottledSaveDrain = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialThrottledSaveDrain]
   }
   
-  @scala.inline
-  implicit class PartialThrottledSaveDrainMutableBuilder[Self <: PartialThrottledSaveDrain] (val x: Self) extends AnyVal {
+  extension [Self <: PartialThrottledSaveDrain](x: Self) {
     
-    @scala.inline
-    def setRecursiveWait(value: Boolean): Self = StObject.set(x, "recursiveWait", value.asInstanceOf[js.Any])
+    inline def setRecursiveWait(value: Boolean): Self = StObject.set(x, "recursiveWait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveWaitLimit(value: Boolean): Self = StObject.set(x, "recursiveWaitLimit", value.asInstanceOf[js.Any])
+    inline def setRecursiveWaitLimit(value: Boolean): Self = StObject.set(x, "recursiveWaitLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveWaitLimitDuration(value: Double): Self = StObject.set(x, "recursiveWaitLimitDuration", value.asInstanceOf[js.Any])
+    inline def setRecursiveWaitLimitDuration(value: Double): Self = StObject.set(x, "recursiveWaitLimitDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveWaitLimitDurationUndefined: Self = StObject.set(x, "recursiveWaitLimitDuration", js.undefined)
+    inline def setRecursiveWaitLimitDurationUndefined: Self = StObject.set(x, "recursiveWaitLimitDuration", js.undefined)
     
-    @scala.inline
-    def setRecursiveWaitLimitUndefined: Self = StObject.set(x, "recursiveWaitLimit", js.undefined)
+    inline def setRecursiveWaitLimitUndefined: Self = StObject.set(x, "recursiveWaitLimit", js.undefined)
     
-    @scala.inline
-    def setRecursiveWaitUndefined: Self = StObject.set(x, "recursiveWait", js.undefined)
+    inline def setRecursiveWaitUndefined: Self = StObject.set(x, "recursiveWait", js.undefined)
     
-    @scala.inline
-    def setStarted(value: Double): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+    inline def setStarted(value: Double): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
+    inline def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.AutoFormatRule")
 @js.native
-class AutoFormatRule protected ()
+/* private */ class AutoFormatRule ()
   extends StObject
      with typings.activexOutlook.Outlook.AutoFormatRule {
   
@@ -29,7 +29,7 @@ class AutoFormatRule protected ()
   /* CompleteClass */
   var Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.AutoFormatRule_typekey")
   var OutlookDotAutoFormatRule_typekey: typings.activexOutlook.Outlook.AutoFormatRule = js.native
   

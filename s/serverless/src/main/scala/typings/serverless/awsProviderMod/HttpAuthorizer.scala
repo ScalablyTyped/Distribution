@@ -20,49 +20,35 @@ trait HttpAuthorizer extends StObject {
 }
 object HttpAuthorizer {
   
-  @scala.inline
-  def apply(): HttpAuthorizer = {
+  inline def apply(): HttpAuthorizer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpAuthorizer]
   }
   
-  @scala.inline
-  implicit class HttpAuthorizerMutableBuilder[Self <: HttpAuthorizer] (val x: Self) extends AnyVal {
+  extension [Self <: HttpAuthorizer](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setIdentitySource(value: String): Self = StObject.set(x, "identitySource", value.asInstanceOf[js.Any])
+    inline def setIdentitySource(value: String): Self = StObject.set(x, "identitySource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentitySourceUndefined: Self = StObject.set(x, "identitySource", js.undefined)
+    inline def setIdentitySourceUndefined: Self = StObject.set(x, "identitySource", js.undefined)
     
-    @scala.inline
-    def setIdentityValidationExpression(value: String): Self = StObject.set(x, "identityValidationExpression", value.asInstanceOf[js.Any])
+    inline def setIdentityValidationExpression(value: String): Self = StObject.set(x, "identityValidationExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityValidationExpressionUndefined: Self = StObject.set(x, "identityValidationExpression", js.undefined)
+    inline def setIdentityValidationExpressionUndefined: Self = StObject.set(x, "identityValidationExpression", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResultTtlInSeconds(value: Double | String): Self = StObject.set(x, "resultTtlInSeconds", value.asInstanceOf[js.Any])
+    inline def setResultTtlInSeconds(value: Double | String): Self = StObject.set(x, "resultTtlInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultTtlInSecondsUndefined: Self = StObject.set(x, "resultTtlInSeconds", js.undefined)
+    inline def setResultTtlInSecondsUndefined: Self = StObject.set(x, "resultTtlInSeconds", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

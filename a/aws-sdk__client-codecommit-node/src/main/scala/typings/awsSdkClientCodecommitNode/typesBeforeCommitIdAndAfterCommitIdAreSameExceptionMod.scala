@@ -18,17 +18,14 @@ object typesBeforeCommitIdAndAfterCommitIdAreSameExceptionMod {
   }
   object BeforeCommitIdAndAfterCommitIdAreSameException {
     
-    @scala.inline
-    def apply(): BeforeCommitIdAndAfterCommitIdAreSameException = {
+    inline def apply(): BeforeCommitIdAndAfterCommitIdAreSameException = {
       val __obj = js.Dynamic.literal(name = "BeforeCommitIdAndAfterCommitIdAreSameException")
       __obj.asInstanceOf[BeforeCommitIdAndAfterCommitIdAreSameException]
     }
     
-    @scala.inline
-    implicit class BeforeCommitIdAndAfterCommitIdAreSameExceptionMutableBuilder[Self <: BeforeCommitIdAndAfterCommitIdAreSameException] (val x: Self) extends AnyVal {
+    extension [Self <: BeforeCommitIdAndAfterCommitIdAreSameException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BeforeCommitIdAndAfterCommitIdAreSameException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

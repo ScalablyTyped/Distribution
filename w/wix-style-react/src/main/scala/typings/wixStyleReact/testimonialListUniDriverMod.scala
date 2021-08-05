@@ -25,8 +25,7 @@ object testimonialListUniDriverMod {
   }
   object TestimonialListUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -41,26 +40,19 @@ object testimonialListUniDriverMod {
       __obj.asInstanceOf[TestimonialListUniDriver]
     }
     
-    @scala.inline
-    implicit class TestimonialListUniDriverMutableBuilder[Self <: TestimonialListUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: TestimonialListUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetNumberOfTestimonials(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumberOfTestimonials", js.Any.fromFunction0(value))
+      inline def setGetNumberOfTestimonials(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumberOfTestimonials", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTestimonialAuthorName(value: () => js.Promise[String]): Self = StObject.set(x, "getTestimonialAuthorName", js.Any.fromFunction0(value))
+      inline def setGetTestimonialAuthorName(value: () => js.Promise[String]): Self = StObject.set(x, "getTestimonialAuthorName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTestimonialText(value: () => js.Promise[String]): Self = StObject.set(x, "getTestimonialText", js.Any.fromFunction0(value))
+      inline def setGetTestimonialText(value: () => js.Promise[String]): Self = StObject.set(x, "getTestimonialText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasTestimonialAuthorName(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasTestimonialAuthorName", js.Any.fromFunction0(value))
+      inline def setHasTestimonialAuthorName(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasTestimonialAuthorName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasTestimonialAvatar(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasTestimonialAvatar", js.Any.fromFunction0(value))
+      inline def setHasTestimonialAvatar(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasTestimonialAvatar", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasTestimonialText(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasTestimonialText", js.Any.fromFunction0(value))
+      inline def setHasTestimonialText(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasTestimonialText", js.Any.fromFunction0(value))
     }
   }
 }

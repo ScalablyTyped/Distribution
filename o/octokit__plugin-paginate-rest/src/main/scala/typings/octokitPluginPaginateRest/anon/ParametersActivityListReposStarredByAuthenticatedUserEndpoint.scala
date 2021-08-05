@@ -18,8 +18,7 @@ trait ParametersActivityListReposStarredByAuthenticatedUserEndpoint extends StOb
 }
 object ParametersActivityListReposStarredByAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActivityListReposStarredByAuthenticatedUserEndpoint,
     response: OctokitResponse[
       ActivityListReposStarredByAuthenticatedUserResponseData | ActivityListReposStarredByAuthenticatedUserResponse200Data
@@ -29,14 +28,11 @@ object ParametersActivityListReposStarredByAuthenticatedUserEndpoint {
     __obj.asInstanceOf[ParametersActivityListReposStarredByAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActivityListReposStarredByAuthenticatedUserEndpointMutableBuilder[Self <: ParametersActivityListReposStarredByAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActivityListReposStarredByAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActivityListReposStarredByAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActivityListReposStarredByAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(
+    inline def setResponse(
       value: OctokitResponse[
           ActivityListReposStarredByAuthenticatedUserResponseData | ActivityListReposStarredByAuthenticatedUserResponse200Data
         ]

@@ -13,19 +13,15 @@ trait DescribeAttackResponse extends StObject {
 }
 object DescribeAttackResponse {
   
-  @scala.inline
-  def apply(): DescribeAttackResponse = {
+  inline def apply(): DescribeAttackResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAttackResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAttackResponseMutableBuilder[Self <: DescribeAttackResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAttackResponse](x: Self) {
     
-    @scala.inline
-    def setAttack(value: AttackDetail): Self = StObject.set(x, "Attack", value.asInstanceOf[js.Any])
+    inline def setAttack(value: AttackDetail): Self = StObject.set(x, "Attack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttackUndefined: Self = StObject.set(x, "Attack", js.undefined)
+    inline def setAttackUndefined: Self = StObject.set(x, "Attack", js.undefined)
   }
 }

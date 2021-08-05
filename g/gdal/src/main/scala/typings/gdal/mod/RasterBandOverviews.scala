@@ -18,8 +18,7 @@ trait RasterBandOverviews extends StObject {
 }
 object RasterBandOverviews {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     count: () => Double,
     forEach: js.Function2[/* overviewBand */ RasterBand, /* i */ Double, Unit] => Unit,
     get: Double => RasterBand,
@@ -30,22 +29,16 @@ object RasterBandOverviews {
     __obj.asInstanceOf[RasterBandOverviews]
   }
   
-  @scala.inline
-  implicit class RasterBandOverviewsMutableBuilder[Self <: RasterBandOverviews] (val x: Self) extends AnyVal {
+  extension [Self <: RasterBandOverviews](x: Self) {
     
-    @scala.inline
-    def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
+    inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setForEach(value: js.Function2[/* overviewBand */ RasterBand, /* i */ Double, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+    inline def setForEach(value: js.Function2[/* overviewBand */ RasterBand, /* i */ Double, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: Double => RasterBand): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: Double => RasterBand): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBySampleCount(value: Double => RasterBand): Self = StObject.set(x, "getBySampleCount", js.Any.fromFunction1(value))
+    inline def setGetBySampleCount(value: Double => RasterBand): Self = StObject.set(x, "getBySampleCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMap(value: js.Function2[/* overviewBand */ RasterBand, /* i */ Double, js.Any] => js.Array[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+    inline def setMap(value: js.Function2[/* overviewBand */ RasterBand, /* i */ Double, js.Any] => js.Array[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
   }
 }

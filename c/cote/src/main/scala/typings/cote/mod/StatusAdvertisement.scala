@@ -34,46 +34,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object StatusAdvertisement {
   
-  @scala.inline
-  def apply(name: String): StatusAdvertisement = {
+  inline def apply(name: String): StatusAdvertisement = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusAdvertisement]
   }
   
-  @scala.inline
-  implicit class StatusAdvertisementMutableBuilder[Self <: StatusAdvertisement] (val x: Self) extends AnyVal {
+  extension [Self <: StatusAdvertisement](x: Self) {
     
-    @scala.inline
-    def setBroadcasts(value: js.Array[String]): Self = StObject.set(x, "broadcasts", value.asInstanceOf[js.Any])
+    inline def setBroadcasts(value: js.Array[String]): Self = StObject.set(x, "broadcasts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBroadcastsUndefined: Self = StObject.set(x, "broadcasts", js.undefined)
+    inline def setBroadcastsUndefined: Self = StObject.set(x, "broadcasts", js.undefined)
     
-    @scala.inline
-    def setBroadcastsVarargs(value: String*): Self = StObject.set(x, "broadcasts", js.Array(value :_*))
+    inline def setBroadcastsVarargs(value: String*): Self = StObject.set(x, "broadcasts", js.Array(value :_*))
     
-    @scala.inline
-    def setRespondsTo(value: js.Array[String]): Self = StObject.set(x, "respondsTo", value.asInstanceOf[js.Any])
+    inline def setRespondsTo(value: js.Array[String]): Self = StObject.set(x, "respondsTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRespondsToUndefined: Self = StObject.set(x, "respondsTo", js.undefined)
+    inline def setRespondsToUndefined: Self = StObject.set(x, "respondsTo", js.undefined)
     
-    @scala.inline
-    def setRespondsToVarargs(value: String*): Self = StObject.set(x, "respondsTo", js.Array(value :_*))
+    inline def setRespondsToVarargs(value: String*): Self = StObject.set(x, "respondsTo", js.Array(value :_*))
     
-    @scala.inline
-    def setSubscribesTo(value: js.Array[String]): Self = StObject.set(x, "subscribesTo", value.asInstanceOf[js.Any])
+    inline def setSubscribesTo(value: js.Array[String]): Self = StObject.set(x, "subscribesTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribesToUndefined: Self = StObject.set(x, "subscribesTo", js.undefined)
+    inline def setSubscribesToUndefined: Self = StObject.set(x, "subscribesTo", js.undefined)
     
-    @scala.inline
-    def setSubscribesToVarargs(value: String*): Self = StObject.set(x, "subscribesTo", js.Array(value :_*))
+    inline def setSubscribesToVarargs(value: String*): Self = StObject.set(x, "subscribesTo", js.Array(value :_*))
     
-    @scala.inline
-    def setSubset(value: String): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
+    inline def setSubset(value: String): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubsetUndefined: Self = StObject.set(x, "subset", js.undefined)
+    inline def setSubsetUndefined: Self = StObject.set(x, "subset", js.undefined)
   }
 }

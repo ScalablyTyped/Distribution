@@ -23,22 +23,16 @@ object KeyGroup {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ALPHA: `512` = 512.asInstanceOf[`512`]
+    inline def ALPHA: `512` = 512.asInstanceOf[`512`]
     
-    @scala.inline
-    def CURSOR: `1024` = 1024.asInstanceOf[`1024`]
+    inline def CURSOR: `1024` = 1024.asInstanceOf[`1024`]
     
-    @scala.inline
-    def FKEYS: `768` = 768.asInstanceOf[`768`]
+    inline def FKEYS: `768` = 768.asInstanceOf[`768`]
     
-    @scala.inline
-    def MISC: `1280` = 1280.asInstanceOf[`1280`]
+    inline def MISC: `1280` = 1280.asInstanceOf[`1280`]
     
-    @scala.inline
-    def NUM: `256` = 256.asInstanceOf[`256`]
+    inline def NUM: `256` = 256.asInstanceOf[`256`]
     
-    @scala.inline
-    def TYPE: `3840` = 3840.asInstanceOf[`3840`]
+    inline def TYPE: `3840` = 3840.asInstanceOf[`3840`]
   }
 }

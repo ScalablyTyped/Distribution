@@ -16,16 +16,13 @@ trait WinNavigationPolicy extends StObject {
 }
 object WinNavigationPolicy {
   
-  @scala.inline
-  def apply(ignore: () => Unit): WinNavigationPolicy = {
+  inline def apply(ignore: () => Unit): WinNavigationPolicy = {
     val __obj = js.Dynamic.literal(ignore = js.Any.fromFunction0(ignore))
     __obj.asInstanceOf[WinNavigationPolicy]
   }
   
-  @scala.inline
-  implicit class WinNavigationPolicyMutableBuilder[Self <: WinNavigationPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: WinNavigationPolicy](x: Self) {
     
-    @scala.inline
-    def setIgnore(value: () => Unit): Self = StObject.set(x, "ignore", js.Any.fromFunction0(value))
+    inline def setIgnore(value: () => Unit): Self = StObject.set(x, "ignore", js.Any.fromFunction0(value))
   }
 }

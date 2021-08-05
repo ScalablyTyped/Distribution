@@ -88,29 +88,22 @@ object Mocha {
   }
   object IRunnable {
     
-    @scala.inline
-    def apply(async: Boolean, fn: js.Function, sync: Boolean, timedOut: Boolean, title: String): IRunnable = {
+    inline def apply(async: Boolean, fn: js.Function, sync: Boolean, timedOut: Boolean, title: String): IRunnable = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any], timedOut = timedOut.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRunnable]
     }
     
-    @scala.inline
-    implicit class IRunnableMutableBuilder[Self <: IRunnable] (val x: Self) extends AnyVal {
+    extension [Self <: IRunnable](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFn(value: js.Function): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      inline def setFn(value: js.Function): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimedOut(value: Boolean): Self = StObject.set(x, "timedOut", value.asInstanceOf[js.Any])
+      inline def setTimedOut(value: Boolean): Self = StObject.set(x, "timedOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,23 +121,18 @@ object Mocha {
   }
   object ISuite {
     
-    @scala.inline
-    def apply(fullTitle: () => String, parent: ISuite, title: String): ISuite = {
+    inline def apply(fullTitle: () => String, parent: ISuite, title: String): ISuite = {
       val __obj = js.Dynamic.literal(fullTitle = js.Any.fromFunction0(fullTitle), parent = parent.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISuite]
     }
     
-    @scala.inline
-    implicit class ISuiteMutableBuilder[Self <: ISuite] (val x: Self) extends AnyVal {
+    extension [Self <: ISuite](x: Self) {
       
-      @scala.inline
-      def setFullTitle(value: () => String): Self = StObject.set(x, "fullTitle", js.Any.fromFunction0(value))
+      inline def setFullTitle(value: () => String): Self = StObject.set(x, "fullTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParent(value: ISuite): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: ISuite): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,8 +149,7 @@ object Mocha {
   }
   object ITest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       async: Boolean,
       fn: js.Function,
       fullTitle: () => String,
@@ -176,17 +163,13 @@ object Mocha {
       __obj.asInstanceOf[ITest]
     }
     
-    @scala.inline
-    implicit class ITestMutableBuilder[Self <: ITest] (val x: Self) extends AnyVal {
+    extension [Self <: ITest](x: Self) {
       
-      @scala.inline
-      def setFullTitle(value: () => String): Self = StObject.set(x, "fullTitle", js.Any.fromFunction0(value))
+      inline def setFullTitle(value: () => String): Self = StObject.set(x, "fullTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParent(value: ISuite): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: ISuite): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     }
   }
   
@@ -216,17 +199,14 @@ object Mocha {
     }
     object Base {
       
-      @scala.inline
-      def apply(stats: Failures): Base = {
+      inline def apply(stats: Failures): Base = {
         val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
         __obj.asInstanceOf[Base]
       }
       
-      @scala.inline
-      implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
+      extension [Self <: Base](x: Self) {
         
-        @scala.inline
-        def setStats(value: Failures): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+        inline def setStats(value: Failures): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       }
     }
     

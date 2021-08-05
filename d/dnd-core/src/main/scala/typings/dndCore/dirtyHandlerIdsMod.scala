@@ -11,10 +11,8 @@ object dirtyHandlerIdsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def reduce(_state: Unit, action: Action[DirtyHandlerIdPayload]): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(_state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
-  @scala.inline
-  def reduce(_state: State, action: Action[DirtyHandlerIdPayload]): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(_state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
+  inline def reduce(_state: Unit, action: Action[DirtyHandlerIdPayload]): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(_state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
+  inline def reduce(_state: State, action: Action[DirtyHandlerIdPayload]): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(_state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
   
   trait DirtyHandlerIdPayload extends StObject {
     
@@ -24,26 +22,20 @@ object dirtyHandlerIdsMod {
   }
   object DirtyHandlerIdPayload {
     
-    @scala.inline
-    def apply(prevTargetIds: js.Array[String], targetIds: js.Array[String]): DirtyHandlerIdPayload = {
+    inline def apply(prevTargetIds: js.Array[String], targetIds: js.Array[String]): DirtyHandlerIdPayload = {
       val __obj = js.Dynamic.literal(prevTargetIds = prevTargetIds.asInstanceOf[js.Any], targetIds = targetIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirtyHandlerIdPayload]
     }
     
-    @scala.inline
-    implicit class DirtyHandlerIdPayloadMutableBuilder[Self <: DirtyHandlerIdPayload] (val x: Self) extends AnyVal {
+    extension [Self <: DirtyHandlerIdPayload](x: Self) {
       
-      @scala.inline
-      def setPrevTargetIds(value: js.Array[String]): Self = StObject.set(x, "prevTargetIds", value.asInstanceOf[js.Any])
+      inline def setPrevTargetIds(value: js.Array[String]): Self = StObject.set(x, "prevTargetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevTargetIdsVarargs(value: String*): Self = StObject.set(x, "prevTargetIds", js.Array(value :_*))
+      inline def setPrevTargetIdsVarargs(value: String*): Self = StObject.set(x, "prevTargetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTargetIds(value: js.Array[String]): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
+      inline def setTargetIds(value: js.Array[String]): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetIdsVarargs(value: String*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
+      inline def setTargetIdsVarargs(value: String*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
     }
   }
   

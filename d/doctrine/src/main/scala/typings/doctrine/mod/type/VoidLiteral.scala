@@ -13,17 +13,14 @@ trait VoidLiteral
 }
 object VoidLiteral {
   
-  @scala.inline
-  def apply(): VoidLiteral = {
+  inline def apply(): VoidLiteral = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("VoidLiteral")
     __obj.asInstanceOf[VoidLiteral]
   }
   
-  @scala.inline
-  implicit class VoidLiteralMutableBuilder[Self <: VoidLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: VoidLiteral](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.doctrine.doctrineStrings.VoidLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.doctrine.doctrineStrings.VoidLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

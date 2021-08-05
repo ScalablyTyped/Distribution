@@ -13,6 +13,5 @@ class DigestAlgAndValueType ()
   extends typings.xadesjs.xmlMod.DigestAlgAndValueType
 object DigestAlgAndValueType {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.DigestAlgAndValueType] = ^.asInstanceOf[js.Dynamic].selectDynamic("DigestAlgAndValueType").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.DigestAlgAndValueType]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.DigestAlgAndValueType] = ^.asInstanceOf[js.Dynamic].selectDynamic("DigestAlgAndValueType").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.DigestAlgAndValueType]]
 }

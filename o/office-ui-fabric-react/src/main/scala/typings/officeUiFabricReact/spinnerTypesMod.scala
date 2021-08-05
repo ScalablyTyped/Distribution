@@ -151,74 +151,52 @@ object spinnerTypesMod {
   }
   object ISpinnerProps {
     
-    @scala.inline
-    def apply(): ISpinnerProps = {
+    inline def apply(): ISpinnerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISpinnerProps]
     }
     
-    @scala.inline
-    implicit class ISpinnerPropsMutableBuilder[Self <: ISpinnerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISpinnerProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setAriaLive(value: assertive | polite | off): Self = StObject.set(x, "ariaLive", value.asInstanceOf[js.Any])
+      inline def setAriaLive(value: assertive | polite | off): Self = StObject.set(x, "ariaLive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLiveUndefined: Self = StObject.set(x, "ariaLive", js.undefined)
+      inline def setAriaLiveUndefined: Self = StObject.set(x, "ariaLive", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[ISpinner]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[ISpinner]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ ISpinner | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ ISpinner | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelPosition(value: SpinnerLabelPosition): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+      inline def setLabelPosition(value: SpinnerLabelPosition): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
+      inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setSize(value: SpinnerSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: SpinnerSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[ISpinnerStyleProps, ISpinnerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[ISpinnerStyleProps, ISpinnerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: ISpinnerStyleProps => DeepPartial[ISpinnerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: ISpinnerStyleProps => DeepPartial[ISpinnerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setType(value: SpinnerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: SpinnerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -238,35 +216,26 @@ object spinnerTypesMod {
   }
   object ISpinnerStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): ISpinnerStyleProps = {
+    inline def apply(theme: ITheme): ISpinnerStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISpinnerStyleProps]
     }
     
-    @scala.inline
-    implicit class ISpinnerStylePropsMutableBuilder[Self <: ISpinnerStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISpinnerStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setLabelPosition(value: SpinnerLabelPosition): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+      inline def setLabelPosition(value: SpinnerLabelPosition): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
+      inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
       
-      @scala.inline
-      def setSize(value: SpinnerSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: SpinnerSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -286,50 +255,36 @@ object spinnerTypesMod {
   }
   object ISpinnerStyles {
     
-    @scala.inline
-    def apply(): ISpinnerStyles = {
+    inline def apply(): ISpinnerStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISpinnerStyles]
     }
     
-    @scala.inline
-    implicit class ISpinnerStylesMutableBuilder[Self <: ISpinnerStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ISpinnerStyles](x: Self) {
       
-      @scala.inline
-      def setCircle(value: IStyle): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+      inline def setCircle(value: IStyle): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircleNull: Self = StObject.set(x, "circle", null)
+      inline def setCircleNull: Self = StObject.set(x, "circle", null)
       
-      @scala.inline
-      def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+      inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
       
-      @scala.inline
-      def setLabel(value: IStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: IStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelNull: Self = StObject.set(x, "label", null)
+      inline def setLabelNull: Self = StObject.set(x, "label", null)
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setScreenReaderText(value: IStyle): Self = StObject.set(x, "screenReaderText", value.asInstanceOf[js.Any])
+      inline def setScreenReaderText(value: IStyle): Self = StObject.set(x, "screenReaderText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenReaderTextNull: Self = StObject.set(x, "screenReaderText", null)
+      inline def setScreenReaderTextNull: Self = StObject.set(x, "screenReaderText", null)
       
-      @scala.inline
-      def setScreenReaderTextUndefined: Self = StObject.set(x, "screenReaderText", js.undefined)
+      inline def setScreenReaderTextUndefined: Self = StObject.set(x, "screenReaderText", js.undefined)
     }
   }
   
@@ -342,16 +297,12 @@ object spinnerTypesMod {
   trait SpinnerLabelPosition extends StObject
   object SpinnerLabelPosition {
     
-    @scala.inline
-    def bottom: typings.officeUiFabricReact.officeUiFabricReactStrings.bottom = "bottom".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.bottom]
+    inline def bottom: typings.officeUiFabricReact.officeUiFabricReactStrings.bottom = "bottom".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.bottom]
     
-    @scala.inline
-    def left: typings.officeUiFabricReact.officeUiFabricReactStrings.left = "left".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.left]
+    inline def left: typings.officeUiFabricReact.officeUiFabricReactStrings.left = "left".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.left]
     
-    @scala.inline
-    def right: typings.officeUiFabricReact.officeUiFabricReactStrings.right = "right".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.right]
+    inline def right: typings.officeUiFabricReact.officeUiFabricReactStrings.right = "right".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.right]
     
-    @scala.inline
-    def top: typings.officeUiFabricReact.officeUiFabricReactStrings.top = "top".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.top]
+    inline def top: typings.officeUiFabricReact.officeUiFabricReactStrings.top = "top".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.top]
   }
 }

@@ -13,6 +13,5 @@ object scheduleObservableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def scheduleObservable[T](input: InteropObservable[T], scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleObservable")(input.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  inline def scheduleObservable[T](input: InteropObservable[T], scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleObservable")(input.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
 }

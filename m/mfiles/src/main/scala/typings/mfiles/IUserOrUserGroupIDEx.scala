@@ -27,8 +27,7 @@ trait IUserOrUserGroupIDEx extends StObject {
 }
 object IUserOrUserGroupIDEx {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IUserOrUserGroupIDEx,
     IndirectProperty: IIndirectPropertyID,
     SetIndirectPropertyPseudoUser: IIndirectPropertyID => Unit,
@@ -43,34 +42,24 @@ object IUserOrUserGroupIDEx {
     __obj.asInstanceOf[IUserOrUserGroupIDEx]
   }
   
-  @scala.inline
-  implicit class IUserOrUserGroupIDExMutableBuilder[Self <: IUserOrUserGroupIDEx] (val x: Self) extends AnyVal {
+  extension [Self <: IUserOrUserGroupIDEx](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IUserOrUserGroupIDEx): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IUserOrUserGroupIDEx): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndirectProperty(value: IIndirectPropertyID): Self = StObject.set(x, "IndirectProperty", value.asInstanceOf[js.Any])
+    inline def setIndirectProperty(value: IIndirectPropertyID): Self = StObject.set(x, "IndirectProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetIndirectPropertyPseudoUser(value: IIndirectPropertyID => Unit): Self = StObject.set(x, "SetIndirectPropertyPseudoUser", js.Any.fromFunction1(value))
+    inline def setSetIndirectPropertyPseudoUser(value: IIndirectPropertyID => Unit): Self = StObject.set(x, "SetIndirectPropertyPseudoUser", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUserAccount(value: Double => Unit): Self = StObject.set(x, "SetUserAccount", js.Any.fromFunction1(value))
+    inline def setSetUserAccount(value: Double => Unit): Self = StObject.set(x, "SetUserAccount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUserGroup(value: Double => Unit): Self = StObject.set(x, "SetUserGroup", js.Any.fromFunction1(value))
+    inline def setSetUserGroup(value: Double => Unit): Self = StObject.set(x, "SetUserGroup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWorkflowStatePseudoUser(value: Double => Unit): Self = StObject.set(x, "SetWorkflowStatePseudoUser", js.Any.fromFunction1(value))
+    inline def setSetWorkflowStatePseudoUser(value: Double => Unit): Self = StObject.set(x, "SetWorkflowStatePseudoUser", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUserOrGroupID(value: Double): Self = StObject.set(x, "UserOrGroupID", value.asInstanceOf[js.Any])
+    inline def setUserOrGroupID(value: Double): Self = StObject.set(x, "UserOrGroupID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserOrGroupType(value: MFUserOrUserGroupType): Self = StObject.set(x, "UserOrGroupType", value.asInstanceOf[js.Any])
+    inline def setUserOrGroupType(value: MFUserOrUserGroupType): Self = StObject.set(x, "UserOrGroupType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowState(value: Double): Self = StObject.set(x, "WorkflowState", value.asInstanceOf[js.Any])
+    inline def setWorkflowState(value: Double): Self = StObject.set(x, "WorkflowState", value.asInstanceOf[js.Any])
   }
 }

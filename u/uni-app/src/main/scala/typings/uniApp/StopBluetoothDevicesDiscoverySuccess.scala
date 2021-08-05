@@ -13,19 +13,15 @@ trait StopBluetoothDevicesDiscoverySuccess extends StObject {
 }
 object StopBluetoothDevicesDiscoverySuccess {
   
-  @scala.inline
-  def apply(): StopBluetoothDevicesDiscoverySuccess = {
+  inline def apply(): StopBluetoothDevicesDiscoverySuccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopBluetoothDevicesDiscoverySuccess]
   }
   
-  @scala.inline
-  implicit class StopBluetoothDevicesDiscoverySuccessMutableBuilder[Self <: StopBluetoothDevicesDiscoverySuccess] (val x: Self) extends AnyVal {
+  extension [Self <: StopBluetoothDevicesDiscoverySuccess](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
   }
 }

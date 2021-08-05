@@ -19,8 +19,7 @@ trait KeyColumn
 }
 object KeyColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultValue: String,
     Description: String,
     IsAutoIncrement: Boolean,
@@ -50,10 +49,8 @@ object KeyColumn {
     __obj.asInstanceOf[KeyColumn]
   }
   
-  @scala.inline
-  implicit class KeyColumnMutableBuilder[Self <: KeyColumn] (val x: Self) extends AnyVal {
+  extension [Self <: KeyColumn](x: Self) {
     
-    @scala.inline
-    def setRelatedColumn(value: String): Self = StObject.set(x, "RelatedColumn", value.asInstanceOf[js.Any])
+    inline def setRelatedColumn(value: String): Self = StObject.set(x, "RelatedColumn", value.asInstanceOf[js.Any])
   }
 }

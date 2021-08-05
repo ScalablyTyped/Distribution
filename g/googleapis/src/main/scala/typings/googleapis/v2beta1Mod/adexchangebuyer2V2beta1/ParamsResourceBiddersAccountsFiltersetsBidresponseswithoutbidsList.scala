@@ -44,37 +44,27 @@ trait ParamsResourceBiddersAccountsFiltersetsBidresponseswithoutbidsList
 }
 object ParamsResourceBiddersAccountsFiltersetsBidresponseswithoutbidsList {
   
-  @scala.inline
-  def apply(): ParamsResourceBiddersAccountsFiltersetsBidresponseswithoutbidsList = {
+  inline def apply(): ParamsResourceBiddersAccountsFiltersetsBidresponseswithoutbidsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceBiddersAccountsFiltersetsBidresponseswithoutbidsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceBiddersAccountsFiltersetsBidresponseswithoutbidsListMutableBuilder[Self <: ParamsResourceBiddersAccountsFiltersetsBidresponseswithoutbidsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceBiddersAccountsFiltersetsBidresponseswithoutbidsList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setFilterSetName(value: String): Self = StObject.set(x, "filterSetName", value.asInstanceOf[js.Any])
+    inline def setFilterSetName(value: String): Self = StObject.set(x, "filterSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterSetNameUndefined: Self = StObject.set(x, "filterSetName", js.undefined)
+    inline def setFilterSetNameUndefined: Self = StObject.set(x, "filterSetName", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

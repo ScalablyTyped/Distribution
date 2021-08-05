@@ -50,49 +50,35 @@ trait IgLayoutManagerBorderLayout
 }
 object IgLayoutManagerBorderLayout {
   
-  @scala.inline
-  def apply(): IgLayoutManagerBorderLayout = {
+  inline def apply(): IgLayoutManagerBorderLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgLayoutManagerBorderLayout]
   }
   
-  @scala.inline
-  implicit class IgLayoutManagerBorderLayoutMutableBuilder[Self <: IgLayoutManagerBorderLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IgLayoutManagerBorderLayout](x: Self) {
     
-    @scala.inline
-    def setLeftWidth(value: String): Self = StObject.set(x, "leftWidth", value.asInstanceOf[js.Any])
+    inline def setLeftWidth(value: String): Self = StObject.set(x, "leftWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftWidthUndefined: Self = StObject.set(x, "leftWidth", js.undefined)
+    inline def setLeftWidthUndefined: Self = StObject.set(x, "leftWidth", js.undefined)
     
-    @scala.inline
-    def setRightWidth(value: String): Self = StObject.set(x, "rightWidth", value.asInstanceOf[js.Any])
+    inline def setRightWidth(value: String): Self = StObject.set(x, "rightWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightWidthUndefined: Self = StObject.set(x, "rightWidth", js.undefined)
+    inline def setRightWidthUndefined: Self = StObject.set(x, "rightWidth", js.undefined)
     
-    @scala.inline
-    def setShowFooter(value: Boolean): Self = StObject.set(x, "showFooter", value.asInstanceOf[js.Any])
+    inline def setShowFooter(value: Boolean): Self = StObject.set(x, "showFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFooterUndefined: Self = StObject.set(x, "showFooter", js.undefined)
+    inline def setShowFooterUndefined: Self = StObject.set(x, "showFooter", js.undefined)
     
-    @scala.inline
-    def setShowHeader(value: Boolean): Self = StObject.set(x, "showHeader", value.asInstanceOf[js.Any])
+    inline def setShowHeader(value: Boolean): Self = StObject.set(x, "showHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowHeaderUndefined: Self = StObject.set(x, "showHeader", js.undefined)
+    inline def setShowHeaderUndefined: Self = StObject.set(x, "showHeader", js.undefined)
     
-    @scala.inline
-    def setShowLeft(value: Boolean): Self = StObject.set(x, "showLeft", value.asInstanceOf[js.Any])
+    inline def setShowLeft(value: Boolean): Self = StObject.set(x, "showLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowLeftUndefined: Self = StObject.set(x, "showLeft", js.undefined)
+    inline def setShowLeftUndefined: Self = StObject.set(x, "showLeft", js.undefined)
     
-    @scala.inline
-    def setShowRight(value: Boolean): Self = StObject.set(x, "showRight", value.asInstanceOf[js.Any])
+    inline def setShowRight(value: Boolean): Self = StObject.set(x, "showRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowRightUndefined: Self = StObject.set(x, "showRight", js.undefined)
+    inline def setShowRightUndefined: Self = StObject.set(x, "showRight", js.undefined)
   }
 }

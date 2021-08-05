@@ -13,17 +13,14 @@ trait SliderStopAction
 }
 object SliderStopAction {
   
-  @scala.inline
-  def apply(): SliderStopAction = {
+  inline def apply(): SliderStopAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("stop")
     __obj.asInstanceOf[SliderStopAction]
   }
   
-  @scala.inline
-  implicit class SliderStopActionMutableBuilder[Self <: SliderStopAction] (val x: Self) extends AnyVal {
+  extension [Self <: SliderStopAction](x: Self) {
     
-    @scala.inline
-    def setType(value: stop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: stop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

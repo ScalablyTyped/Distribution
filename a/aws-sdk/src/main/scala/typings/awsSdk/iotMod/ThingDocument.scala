@@ -43,58 +43,41 @@ trait ThingDocument extends StObject {
 }
 object ThingDocument {
   
-  @scala.inline
-  def apply(): ThingDocument = {
+  inline def apply(): ThingDocument = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThingDocument]
   }
   
-  @scala.inline
-  implicit class ThingDocumentMutableBuilder[Self <: ThingDocument] (val x: Self) extends AnyVal {
+  extension [Self <: ThingDocument](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setConnectivity(value: ThingConnectivity): Self = StObject.set(x, "connectivity", value.asInstanceOf[js.Any])
+    inline def setConnectivity(value: ThingConnectivity): Self = StObject.set(x, "connectivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectivityUndefined: Self = StObject.set(x, "connectivity", js.undefined)
+    inline def setConnectivityUndefined: Self = StObject.set(x, "connectivity", js.undefined)
     
-    @scala.inline
-    def setShadow(value: JsonDocument): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: JsonDocument): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
-    @scala.inline
-    def setThingGroupNames(value: ThingGroupNameList): Self = StObject.set(x, "thingGroupNames", value.asInstanceOf[js.Any])
+    inline def setThingGroupNames(value: ThingGroupNameList): Self = StObject.set(x, "thingGroupNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingGroupNamesUndefined: Self = StObject.set(x, "thingGroupNames", js.undefined)
+    inline def setThingGroupNamesUndefined: Self = StObject.set(x, "thingGroupNames", js.undefined)
     
-    @scala.inline
-    def setThingGroupNamesVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupNames", js.Array(value :_*))
+    inline def setThingGroupNamesVarargs(value: ThingGroupName*): Self = StObject.set(x, "thingGroupNames", js.Array(value :_*))
     
-    @scala.inline
-    def setThingId(value: ThingId): Self = StObject.set(x, "thingId", value.asInstanceOf[js.Any])
+    inline def setThingId(value: ThingId): Self = StObject.set(x, "thingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingIdUndefined: Self = StObject.set(x, "thingId", js.undefined)
+    inline def setThingIdUndefined: Self = StObject.set(x, "thingId", js.undefined)
     
-    @scala.inline
-    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
+    inline def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
     
-    @scala.inline
-    def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
+    inline def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingTypeNameUndefined: Self = StObject.set(x, "thingTypeName", js.undefined)
+    inline def setThingTypeNameUndefined: Self = StObject.set(x, "thingTypeName", js.undefined)
   }
 }

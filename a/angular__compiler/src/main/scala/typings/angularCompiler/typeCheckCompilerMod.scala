@@ -37,8 +37,8 @@ object typeCheckCompilerMod {
       ctx: OutputContext
     ): js.Array[Statement] = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
-    var reflector: js.Any = js.native
+    /* private */ var reflector: js.Any = js.native
   }
 }

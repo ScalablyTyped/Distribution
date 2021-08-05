@@ -15,25 +15,19 @@ trait From
 }
 object From {
   
-  @scala.inline
-  def apply(): From = {
+  inline def apply(): From = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[From]
   }
   
-  @scala.inline
-  implicit class FromMutableBuilder[Self <: From] (val x: Self) extends AnyVal {
+  extension [Self <: From](x: Self) {
     
-    @scala.inline
-    def set_from(value: String): Self = StObject.set(x, "_from", value.asInstanceOf[js.Any])
+    inline def set_from(value: String): Self = StObject.set(x, "_from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_fromUndefined: Self = StObject.set(x, "_from", js.undefined)
+    inline def set_fromUndefined: Self = StObject.set(x, "_from", js.undefined)
     
-    @scala.inline
-    def set_to(value: String): Self = StObject.set(x, "_to", value.asInstanceOf[js.Any])
+    inline def set_to(value: String): Self = StObject.set(x, "_to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_toUndefined: Self = StObject.set(x, "_to", js.undefined)
+    inline def set_toUndefined: Self = StObject.set(x, "_to", js.undefined)
   }
 }

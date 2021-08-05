@@ -13,17 +13,14 @@ object anon {
   }
   object Connect {
     
-    @scala.inline
-    def apply(connect: () => ErrorHandleFunction): Connect = {
+    inline def apply(connect: () => ErrorHandleFunction): Connect = {
       val __obj = js.Dynamic.literal(connect = js.Any.fromFunction0(connect))
       __obj.asInstanceOf[Connect]
     }
     
-    @scala.inline
-    implicit class ConnectMutableBuilder[Self <: Connect] (val x: Self) extends AnyVal {
+    extension [Self <: Connect](x: Self) {
       
-      @scala.inline
-      def setConnect(value: () => ErrorHandleFunction): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
+      inline def setConnect(value: () => ErrorHandleFunction): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
     }
   }
   
@@ -37,32 +34,24 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(): Name = {
+    inline def apply(): Name = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+      inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+      inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -79,32 +68,24 @@ object anon {
   }
   object Spanid {
     
-    @scala.inline
-    def apply(): Spanid = {
+    inline def apply(): Spanid = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Spanid]
     }
     
-    @scala.inline
-    implicit class SpanidMutableBuilder[Self <: Spanid] (val x: Self) extends AnyVal {
+    extension [Self <: Spanid](x: Self) {
       
-      @scala.inline
-      def setSpanDotid(value: String): Self = StObject.set(x, "span.id", value.asInstanceOf[js.Any])
+      inline def setSpanDotid(value: String): Self = StObject.set(x, "span.id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpanDotidUndefined: Self = StObject.set(x, "span.id", js.undefined)
+      inline def setSpanDotidUndefined: Self = StObject.set(x, "span.id", js.undefined)
       
-      @scala.inline
-      def setTraceDotid(value: String): Self = StObject.set(x, "trace.id", value.asInstanceOf[js.Any])
+      inline def setTraceDotid(value: String): Self = StObject.set(x, "trace.id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceDotidUndefined: Self = StObject.set(x, "trace.id", js.undefined)
+      inline def setTraceDotidUndefined: Self = StObject.set(x, "trace.id", js.undefined)
       
-      @scala.inline
-      def setTransactionDotid(value: String): Self = StObject.set(x, "transaction.id", value.asInstanceOf[js.Any])
+      inline def setTransactionDotid(value: String): Self = StObject.set(x, "transaction.id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionDotidUndefined: Self = StObject.set(x, "transaction.id", js.undefined)
+      inline def setTransactionDotidUndefined: Self = StObject.set(x, "transaction.id", js.undefined)
     }
   }
 }

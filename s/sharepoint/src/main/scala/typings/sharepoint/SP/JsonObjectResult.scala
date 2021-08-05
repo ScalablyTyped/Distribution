@@ -10,16 +10,13 @@ trait JsonObjectResult extends StObject {
 }
 object JsonObjectResult {
   
-  @scala.inline
-  def apply(get_value: () => js.Any): JsonObjectResult = {
+  inline def apply(get_value: () => js.Any): JsonObjectResult = {
     val __obj = js.Dynamic.literal(get_value = js.Any.fromFunction0(get_value))
     __obj.asInstanceOf[JsonObjectResult]
   }
   
-  @scala.inline
-  implicit class JsonObjectResultMutableBuilder[Self <: JsonObjectResult] (val x: Self) extends AnyVal {
+  extension [Self <: JsonObjectResult](x: Self) {
     
-    @scala.inline
-    def setGet_value(value: () => js.Any): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
+    inline def setGet_value(value: () => js.Any): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
   }
 }

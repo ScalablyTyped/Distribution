@@ -43,8 +43,7 @@ trait InsecureContentStatus extends StObject {
 }
 object InsecureContentStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containedMixedForm: Boolean,
     displayedContentWithCertErrors: Boolean,
     displayedInsecureContentStyle: SecurityState,
@@ -57,28 +56,20 @@ object InsecureContentStatus {
     __obj.asInstanceOf[InsecureContentStatus]
   }
   
-  @scala.inline
-  implicit class InsecureContentStatusMutableBuilder[Self <: InsecureContentStatus] (val x: Self) extends AnyVal {
+  extension [Self <: InsecureContentStatus](x: Self) {
     
-    @scala.inline
-    def setContainedMixedForm(value: Boolean): Self = StObject.set(x, "containedMixedForm", value.asInstanceOf[js.Any])
+    inline def setContainedMixedForm(value: Boolean): Self = StObject.set(x, "containedMixedForm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayedContentWithCertErrors(value: Boolean): Self = StObject.set(x, "displayedContentWithCertErrors", value.asInstanceOf[js.Any])
+    inline def setDisplayedContentWithCertErrors(value: Boolean): Self = StObject.set(x, "displayedContentWithCertErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayedInsecureContentStyle(value: SecurityState): Self = StObject.set(x, "displayedInsecureContentStyle", value.asInstanceOf[js.Any])
+    inline def setDisplayedInsecureContentStyle(value: SecurityState): Self = StObject.set(x, "displayedInsecureContentStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayedMixedContent(value: Boolean): Self = StObject.set(x, "displayedMixedContent", value.asInstanceOf[js.Any])
+    inline def setDisplayedMixedContent(value: Boolean): Self = StObject.set(x, "displayedMixedContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRanContentWithCertErrors(value: Boolean): Self = StObject.set(x, "ranContentWithCertErrors", value.asInstanceOf[js.Any])
+    inline def setRanContentWithCertErrors(value: Boolean): Self = StObject.set(x, "ranContentWithCertErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRanInsecureContentStyle(value: SecurityState): Self = StObject.set(x, "ranInsecureContentStyle", value.asInstanceOf[js.Any])
+    inline def setRanInsecureContentStyle(value: SecurityState): Self = StObject.set(x, "ranInsecureContentStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRanMixedContent(value: Boolean): Self = StObject.set(x, "ranMixedContent", value.asInstanceOf[js.Any])
+    inline def setRanMixedContent(value: Boolean): Self = StObject.set(x, "ranMixedContent", value.asInstanceOf[js.Any])
   }
 }

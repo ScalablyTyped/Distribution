@@ -13,19 +13,15 @@ trait Dark extends StObject {
 }
 object Dark {
   
-  @scala.inline
-  def apply(dark: Uri, light: Uri): Dark = {
+  inline def apply(dark: Uri, light: Uri): Dark = {
     val __obj = js.Dynamic.literal(dark = dark.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dark]
   }
   
-  @scala.inline
-  implicit class DarkMutableBuilder[Self <: Dark] (val x: Self) extends AnyVal {
+  extension [Self <: Dark](x: Self) {
     
-    @scala.inline
-    def setDark(value: Uri): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    inline def setDark(value: Uri): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLight(value: Uri): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    inline def setLight(value: Uri): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
   }
 }

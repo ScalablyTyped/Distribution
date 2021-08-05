@@ -13,22 +13,17 @@ trait PollForJobsOutput extends StObject {
 }
 object PollForJobsOutput {
   
-  @scala.inline
-  def apply(): PollForJobsOutput = {
+  inline def apply(): PollForJobsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PollForJobsOutput]
   }
   
-  @scala.inline
-  implicit class PollForJobsOutputMutableBuilder[Self <: PollForJobsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PollForJobsOutput](x: Self) {
     
-    @scala.inline
-    def setJobs(value: JobList): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
+    inline def setJobs(value: JobList): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
+    inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
-    @scala.inline
-    def setJobsVarargs(value: Job*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: Job*): Self = StObject.set(x, "jobs", js.Array(value :_*))
   }
 }

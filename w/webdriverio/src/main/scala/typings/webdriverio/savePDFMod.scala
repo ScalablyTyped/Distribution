@@ -11,10 +11,8 @@ object savePDFMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(filepath: String): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def default(
+  inline def default(filepath: String): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def default(
     filepath: String,
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.PDFPrintOptions */ js.Any
   ): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(filepath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]

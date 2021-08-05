@@ -18,19 +18,15 @@ trait GetDataSourceRequest extends StObject {
 }
 object GetDataSourceRequest {
   
-  @scala.inline
-  def apply(apiId: String, name: ResourceName): GetDataSourceRequest = {
+  inline def apply(apiId: String, name: ResourceName): GetDataSourceRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDataSourceRequest]
   }
   
-  @scala.inline
-  implicit class GetDataSourceRequestMutableBuilder[Self <: GetDataSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDataSourceRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

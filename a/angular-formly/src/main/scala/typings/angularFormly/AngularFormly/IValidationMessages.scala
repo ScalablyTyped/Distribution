@@ -20,8 +20,7 @@ trait IValidationMessages extends StObject {
 }
 object IValidationMessages {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addStringMessage: (String, String) => Unit,
     addTemplateOptionValueMessage: (String, String, String, String, String) => Unit,
     messages: StringDictionary[
@@ -32,17 +31,13 @@ object IValidationMessages {
     __obj.asInstanceOf[IValidationMessages]
   }
   
-  @scala.inline
-  implicit class IValidationMessagesMutableBuilder[Self <: IValidationMessages] (val x: Self) extends AnyVal {
+  extension [Self <: IValidationMessages](x: Self) {
     
-    @scala.inline
-    def setAddStringMessage(value: (String, String) => Unit): Self = StObject.set(x, "addStringMessage", js.Any.fromFunction2(value))
+    inline def setAddStringMessage(value: (String, String) => Unit): Self = StObject.set(x, "addStringMessage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddTemplateOptionValueMessage(value: (String, String, String, String, String) => Unit): Self = StObject.set(x, "addTemplateOptionValueMessage", js.Any.fromFunction5(value))
+    inline def setAddTemplateOptionValueMessage(value: (String, String, String, String, String) => Unit): Self = StObject.set(x, "addTemplateOptionValueMessage", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setMessages(
+    inline def setMessages(
       value: StringDictionary[
           js.Function3[/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope, String]
         ]

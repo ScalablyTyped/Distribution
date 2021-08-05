@@ -44,37 +44,27 @@ trait CustomPropertyCollectionLoadOptions extends StObject {
 }
 object CustomPropertyCollectionLoadOptions {
   
-  @scala.inline
-  def apply(): CustomPropertyCollectionLoadOptions = {
+  inline def apply(): CustomPropertyCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomPropertyCollectionLoadOptions]
   }
   
-  @scala.inline
-  implicit class CustomPropertyCollectionLoadOptionsMutableBuilder[Self <: CustomPropertyCollectionLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPropertyCollectionLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setKey(value: Boolean): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Boolean): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait IpRuleItem extends StObject {
 }
 object IpRuleItem {
   
-  @scala.inline
-  def apply(): IpRuleItem = {
+  inline def apply(): IpRuleItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IpRuleItem]
   }
   
-  @scala.inline
-  implicit class IpRuleItemMutableBuilder[Self <: IpRuleItem] (val x: Self) extends AnyVal {
+  extension [Self <: IpRuleItem](x: Self) {
     
-    @scala.inline
-    def setIpRule(value: IpRule): Self = StObject.set(x, "ipRule", value.asInstanceOf[js.Any])
+    inline def setIpRule(value: IpRule): Self = StObject.set(x, "ipRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpRuleUndefined: Self = StObject.set(x, "ipRule", js.undefined)
+    inline def setIpRuleUndefined: Self = StObject.set(x, "ipRule", js.undefined)
     
-    @scala.inline
-    def setRuleDesc(value: IpRuleDesc): Self = StObject.set(x, "ruleDesc", value.asInstanceOf[js.Any])
+    inline def setRuleDesc(value: IpRuleDesc): Self = StObject.set(x, "ruleDesc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleDescUndefined: Self = StObject.set(x, "ruleDesc", js.undefined)
+    inline def setRuleDescUndefined: Self = StObject.set(x, "ruleDesc", js.undefined)
   }
 }

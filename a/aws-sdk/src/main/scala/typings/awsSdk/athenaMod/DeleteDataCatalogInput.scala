@@ -13,16 +13,13 @@ trait DeleteDataCatalogInput extends StObject {
 }
 object DeleteDataCatalogInput {
   
-  @scala.inline
-  def apply(Name: CatalogNameString): DeleteDataCatalogInput = {
+  inline def apply(Name: CatalogNameString): DeleteDataCatalogInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDataCatalogInput]
   }
   
-  @scala.inline
-  implicit class DeleteDataCatalogInputMutableBuilder[Self <: DeleteDataCatalogInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDataCatalogInput](x: Self) {
     
-    @scala.inline
-    def setName(value: CatalogNameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: CatalogNameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -16,25 +16,19 @@ trait PassiveDto extends StObject {
 }
 object PassiveDto {
   
-  @scala.inline
-  def apply(description: String, image: ImageDto, name: String, sanitizedDescription: String): PassiveDto = {
+  inline def apply(description: String, image: ImageDto, name: String, sanitizedDescription: String): PassiveDto = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sanitizedDescription = sanitizedDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[PassiveDto]
   }
   
-  @scala.inline
-  implicit class PassiveDtoMutableBuilder[Self <: PassiveDto] (val x: Self) extends AnyVal {
+  extension [Self <: PassiveDto](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: ImageDto): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ImageDto): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSanitizedDescription(value: String): Self = StObject.set(x, "sanitizedDescription", value.asInstanceOf[js.Any])
+    inline def setSanitizedDescription(value: String): Self = StObject.set(x, "sanitizedDescription", value.asInstanceOf[js.Any])
   }
 }

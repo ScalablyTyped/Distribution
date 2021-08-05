@@ -26,49 +26,35 @@ trait StructuralElement extends StObject {
 }
 object StructuralElement {
   
-  @scala.inline
-  def apply(): StructuralElement = {
+  inline def apply(): StructuralElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StructuralElement]
   }
   
-  @scala.inline
-  implicit class StructuralElementMutableBuilder[Self <: StructuralElement] (val x: Self) extends AnyVal {
+  extension [Self <: StructuralElement](x: Self) {
     
-    @scala.inline
-    def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+    inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+    inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
-    @scala.inline
-    def setParagraph(value: Paragraph): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+    inline def setParagraph(value: Paragraph): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
+    inline def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
     
-    @scala.inline
-    def setSectionBreak(value: SectionBreak): Self = StObject.set(x, "sectionBreak", value.asInstanceOf[js.Any])
+    inline def setSectionBreak(value: SectionBreak): Self = StObject.set(x, "sectionBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionBreakUndefined: Self = StObject.set(x, "sectionBreak", js.undefined)
+    inline def setSectionBreakUndefined: Self = StObject.set(x, "sectionBreak", js.undefined)
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
-    @scala.inline
-    def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableOfContents(value: TableOfContents): Self = StObject.set(x, "tableOfContents", value.asInstanceOf[js.Any])
+    inline def setTableOfContents(value: TableOfContents): Self = StObject.set(x, "tableOfContents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableOfContentsUndefined: Self = StObject.set(x, "tableOfContents", js.undefined)
+    inline def setTableOfContentsUndefined: Self = StObject.set(x, "tableOfContents", js.undefined)
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

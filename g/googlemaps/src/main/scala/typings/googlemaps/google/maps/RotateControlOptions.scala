@@ -15,19 +15,15 @@ trait RotateControlOptions extends StObject {
 }
 object RotateControlOptions {
   
-  @scala.inline
-  def apply(): RotateControlOptions = {
+  inline def apply(): RotateControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RotateControlOptions]
   }
   
-  @scala.inline
-  implicit class RotateControlOptionsMutableBuilder[Self <: RotateControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RotateControlOptions](x: Self) {
     
-    @scala.inline
-    def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

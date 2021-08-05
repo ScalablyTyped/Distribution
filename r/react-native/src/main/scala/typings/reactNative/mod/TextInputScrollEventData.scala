@@ -11,16 +11,13 @@ trait TextInputScrollEventData extends StObject {
 }
 object TextInputScrollEventData {
   
-  @scala.inline
-  def apply(contentOffset: X): TextInputScrollEventData = {
+  inline def apply(contentOffset: X): TextInputScrollEventData = {
     val __obj = js.Dynamic.literal(contentOffset = contentOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextInputScrollEventData]
   }
   
-  @scala.inline
-  implicit class TextInputScrollEventDataMutableBuilder[Self <: TextInputScrollEventData] (val x: Self) extends AnyVal {
+  extension [Self <: TextInputScrollEventData](x: Self) {
     
-    @scala.inline
-    def setContentOffset(value: X): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
+    inline def setContentOffset(value: X): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
   }
 }

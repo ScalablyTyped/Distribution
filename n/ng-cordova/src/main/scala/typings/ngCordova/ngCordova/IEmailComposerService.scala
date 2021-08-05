@@ -15,8 +15,7 @@ trait IEmailComposerService extends StObject {
 }
 object IEmailComposerService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addAlias: (String, String) => Unit,
     isAvailable: () => IPromise[Boolean],
     open: IEmailComposerOptions => IPromise[js.Any]
@@ -25,16 +24,12 @@ object IEmailComposerService {
     __obj.asInstanceOf[IEmailComposerService]
   }
   
-  @scala.inline
-  implicit class IEmailComposerServiceMutableBuilder[Self <: IEmailComposerService] (val x: Self) extends AnyVal {
+  extension [Self <: IEmailComposerService](x: Self) {
     
-    @scala.inline
-    def setAddAlias(value: (String, String) => Unit): Self = StObject.set(x, "addAlias", js.Any.fromFunction2(value))
+    inline def setAddAlias(value: (String, String) => Unit): Self = StObject.set(x, "addAlias", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsAvailable(value: () => IPromise[Boolean]): Self = StObject.set(x, "isAvailable", js.Any.fromFunction0(value))
+    inline def setIsAvailable(value: () => IPromise[Boolean]): Self = StObject.set(x, "isAvailable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpen(value: IEmailComposerOptions => IPromise[js.Any]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    inline def setOpen(value: IEmailComposerOptions => IPromise[js.Any]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
   }
 }

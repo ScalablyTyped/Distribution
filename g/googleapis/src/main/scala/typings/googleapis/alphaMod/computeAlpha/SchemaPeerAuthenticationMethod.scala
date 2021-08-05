@@ -16,19 +16,15 @@ trait SchemaPeerAuthenticationMethod extends StObject {
 }
 object SchemaPeerAuthenticationMethod {
   
-  @scala.inline
-  def apply(): SchemaPeerAuthenticationMethod = {
+  inline def apply(): SchemaPeerAuthenticationMethod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPeerAuthenticationMethod]
   }
   
-  @scala.inline
-  implicit class SchemaPeerAuthenticationMethodMutableBuilder[Self <: SchemaPeerAuthenticationMethod] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPeerAuthenticationMethod](x: Self) {
     
-    @scala.inline
-    def setMtls(value: SchemaMutualTls): Self = StObject.set(x, "mtls", value.asInstanceOf[js.Any])
+    inline def setMtls(value: SchemaMutualTls): Self = StObject.set(x, "mtls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtlsUndefined: Self = StObject.set(x, "mtls", js.undefined)
+    inline def setMtlsUndefined: Self = StObject.set(x, "mtls", js.undefined)
   }
 }

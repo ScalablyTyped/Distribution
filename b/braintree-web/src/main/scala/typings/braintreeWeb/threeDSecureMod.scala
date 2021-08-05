@@ -129,20 +129,16 @@ object threeDSecureMod {
   }
   object ThreeDSecureAccountDetails {
     
-    @scala.inline
-    def apply(cardType: String, lastTwo: String): ThreeDSecureAccountDetails = {
+    inline def apply(cardType: String, lastTwo: String): ThreeDSecureAccountDetails = {
       val __obj = js.Dynamic.literal(cardType = cardType.asInstanceOf[js.Any], lastTwo = lastTwo.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThreeDSecureAccountDetails]
     }
     
-    @scala.inline
-    implicit class ThreeDSecureAccountDetailsMutableBuilder[Self <: ThreeDSecureAccountDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ThreeDSecureAccountDetails](x: Self) {
       
-      @scala.inline
-      def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
+      inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastTwo(value: String): Self = StObject.set(x, "lastTwo", value.asInstanceOf[js.Any])
+      inline def setLastTwo(value: String): Self = StObject.set(x, "lastTwo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -160,8 +156,7 @@ object threeDSecureMod {
   }
   object ThreeDSecureVerifyPayload {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       details: ThreeDSecureAccountDetails,
       liabilityShiftPossible: Boolean,
@@ -172,23 +167,17 @@ object threeDSecureMod {
       __obj.asInstanceOf[ThreeDSecureVerifyPayload]
     }
     
-    @scala.inline
-    implicit class ThreeDSecureVerifyPayloadMutableBuilder[Self <: ThreeDSecureVerifyPayload] (val x: Self) extends AnyVal {
+    extension [Self <: ThreeDSecureVerifyPayload](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetails(value: ThreeDSecureAccountDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: ThreeDSecureAccountDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiabilityShiftPossible(value: Boolean): Self = StObject.set(x, "liabilityShiftPossible", value.asInstanceOf[js.Any])
+      inline def setLiabilityShiftPossible(value: Boolean): Self = StObject.set(x, "liabilityShiftPossible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiabilityShifted(value: Boolean): Self = StObject.set(x, "liabilityShifted", value.asInstanceOf[js.Any])
+      inline def setLiabilityShifted(value: Boolean): Self = StObject.set(x, "liabilityShifted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     }
   }
 }

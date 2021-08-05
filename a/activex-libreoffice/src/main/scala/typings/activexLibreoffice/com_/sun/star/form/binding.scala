@@ -650,23 +650,18 @@ object binding {
   }
   object ListEntryEvent {
     
-    @scala.inline
-    def apply(Count: Double, Entries: SafeArray[String], Position: Double, Source: XInterface): ListEntryEvent = {
+    inline def apply(Count: Double, Entries: SafeArray[String], Position: Double, Source: XInterface): ListEntryEvent = {
       val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Entries = Entries.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListEntryEvent]
     }
     
-    @scala.inline
-    implicit class ListEntryEventMutableBuilder[Self <: ListEntryEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ListEntryEvent](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntries(value: SafeArray[String]): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: SafeArray[String]): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     }
   }
   
@@ -677,8 +672,7 @@ object binding {
        with XComponent
   object ListEntrySource {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AllListEntries: SafeArray[String],
       ListEntryCount: Double,
       acquire: () => Unit,
@@ -736,8 +730,7 @@ object binding {
   }
   object ValueBinding {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       PropertySetInfo: XPropertySetInfo,
       ReadOnly: Boolean,
       Relevant: Boolean,
@@ -766,14 +759,11 @@ object binding {
       __obj.asInstanceOf[ValueBinding]
     }
     
-    @scala.inline
-    implicit class ValueBindingMutableBuilder[Self <: ValueBinding] (val x: Self) extends AnyVal {
+    extension [Self <: ValueBinding](x: Self) {
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelevant(value: Boolean): Self = StObject.set(x, "Relevant", value.asInstanceOf[js.Any])
+      inline def setRelevant(value: Boolean): Self = StObject.set(x, "Relevant", value.asInstanceOf[js.Any])
     }
   }
   
@@ -802,8 +792,7 @@ object binding {
   }
   object XBindableValue {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ValueBinding: XValueBinding,
       acquire: () => Unit,
       getValueBinding: () => XValueBinding,
@@ -815,17 +804,13 @@ object binding {
       __obj.asInstanceOf[XBindableValue]
     }
     
-    @scala.inline
-    implicit class XBindableValueMutableBuilder[Self <: XBindableValue] (val x: Self) extends AnyVal {
+    extension [Self <: XBindableValue](x: Self) {
       
-      @scala.inline
-      def setGetValueBinding(value: () => XValueBinding): Self = StObject.set(x, "getValueBinding", js.Any.fromFunction0(value))
+      inline def setGetValueBinding(value: () => XValueBinding): Self = StObject.set(x, "getValueBinding", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetValueBinding(value: XValueBinding => Unit): Self = StObject.set(x, "setValueBinding", js.Any.fromFunction1(value))
+      inline def setSetValueBinding(value: XValueBinding => Unit): Self = StObject.set(x, "setValueBinding", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValueBinding(value: XValueBinding): Self = StObject.set(x, "ValueBinding", value.asInstanceOf[js.Any])
+      inline def setValueBinding(value: XValueBinding): Self = StObject.set(x, "ValueBinding", value.asInstanceOf[js.Any])
     }
   }
   
@@ -862,8 +847,7 @@ object binding {
   }
   object XListEntryListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       allEntriesChanged: EventObject => Unit,
       disposing: EventObject => Unit,
@@ -877,20 +861,15 @@ object binding {
       __obj.asInstanceOf[XListEntryListener]
     }
     
-    @scala.inline
-    implicit class XListEntryListenerMutableBuilder[Self <: XListEntryListener] (val x: Self) extends AnyVal {
+    extension [Self <: XListEntryListener](x: Self) {
       
-      @scala.inline
-      def setAllEntriesChanged(value: EventObject => Unit): Self = StObject.set(x, "allEntriesChanged", js.Any.fromFunction1(value))
+      inline def setAllEntriesChanged(value: EventObject => Unit): Self = StObject.set(x, "allEntriesChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEntryChanged(value: ListEntryEvent => Unit): Self = StObject.set(x, "entryChanged", js.Any.fromFunction1(value))
+      inline def setEntryChanged(value: ListEntryEvent => Unit): Self = StObject.set(x, "entryChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEntryRangeInserted(value: ListEntryEvent => Unit): Self = StObject.set(x, "entryRangeInserted", js.Any.fromFunction1(value))
+      inline def setEntryRangeInserted(value: ListEntryEvent => Unit): Self = StObject.set(x, "entryRangeInserted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEntryRangeRemoved(value: ListEntryEvent => Unit): Self = StObject.set(x, "entryRangeRemoved", js.Any.fromFunction1(value))
+      inline def setEntryRangeRemoved(value: ListEntryEvent => Unit): Self = StObject.set(x, "entryRangeRemoved", js.Any.fromFunction1(value))
     }
   }
   
@@ -915,8 +894,7 @@ object binding {
   }
   object XListEntrySink {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ListEntrySource: XListEntrySource,
       acquire: () => Unit,
       getListEntrySource: () => XListEntrySource,
@@ -928,17 +906,13 @@ object binding {
       __obj.asInstanceOf[XListEntrySink]
     }
     
-    @scala.inline
-    implicit class XListEntrySinkMutableBuilder[Self <: XListEntrySink] (val x: Self) extends AnyVal {
+    extension [Self <: XListEntrySink](x: Self) {
       
-      @scala.inline
-      def setGetListEntrySource(value: () => XListEntrySource): Self = StObject.set(x, "getListEntrySource", js.Any.fromFunction0(value))
+      inline def setGetListEntrySource(value: () => XListEntrySource): Self = StObject.set(x, "getListEntrySource", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setListEntrySource(value: XListEntrySource): Self = StObject.set(x, "ListEntrySource", value.asInstanceOf[js.Any])
+      inline def setListEntrySource(value: XListEntrySource): Self = StObject.set(x, "ListEntrySource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetListEntrySource(value: XListEntrySource => Unit): Self = StObject.set(x, "setListEntrySource", js.Any.fromFunction1(value))
+      inline def setSetListEntrySource(value: XListEntrySource => Unit): Self = StObject.set(x, "setListEntrySource", js.Any.fromFunction1(value))
     }
   }
   
@@ -986,8 +960,7 @@ object binding {
   }
   object XListEntrySource {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AllListEntries: SafeArray[String],
       ListEntryCount: Double,
       acquire: () => Unit,
@@ -1003,29 +976,21 @@ object binding {
       __obj.asInstanceOf[XListEntrySource]
     }
     
-    @scala.inline
-    implicit class XListEntrySourceMutableBuilder[Self <: XListEntrySource] (val x: Self) extends AnyVal {
+    extension [Self <: XListEntrySource](x: Self) {
       
-      @scala.inline
-      def setAddListEntryListener(value: XListEntryListener => Unit): Self = StObject.set(x, "addListEntryListener", js.Any.fromFunction1(value))
+      inline def setAddListEntryListener(value: XListEntryListener => Unit): Self = StObject.set(x, "addListEntryListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAllListEntries(value: SafeArray[String]): Self = StObject.set(x, "AllListEntries", value.asInstanceOf[js.Any])
+      inline def setAllListEntries(value: SafeArray[String]): Self = StObject.set(x, "AllListEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAllListEntries(value: () => SafeArray[String]): Self = StObject.set(x, "getAllListEntries", js.Any.fromFunction0(value))
+      inline def setGetAllListEntries(value: () => SafeArray[String]): Self = StObject.set(x, "getAllListEntries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetListEntry(value: Double => String): Self = StObject.set(x, "getListEntry", js.Any.fromFunction1(value))
+      inline def setGetListEntry(value: Double => String): Self = StObject.set(x, "getListEntry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetListEntryCount(value: () => Double): Self = StObject.set(x, "getListEntryCount", js.Any.fromFunction0(value))
+      inline def setGetListEntryCount(value: () => Double): Self = StObject.set(x, "getListEntryCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setListEntryCount(value: Double): Self = StObject.set(x, "ListEntryCount", value.asInstanceOf[js.Any])
+      inline def setListEntryCount(value: Double): Self = StObject.set(x, "ListEntryCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveListEntryListener(value: XListEntryListener => Unit): Self = StObject.set(x, "removeListEntryListener", js.Any.fromFunction1(value))
+      inline def setRemoveListEntryListener(value: XListEntryListener => Unit): Self = StObject.set(x, "removeListEntryListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -1075,8 +1040,7 @@ object binding {
   }
   object XValueBinding {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       SupportedValueTypes: SafeArray[`type`],
       acquire: () => Unit,
       getSupportedValueTypes: () => SafeArray[`type`],
@@ -1090,23 +1054,17 @@ object binding {
       __obj.asInstanceOf[XValueBinding]
     }
     
-    @scala.inline
-    implicit class XValueBindingMutableBuilder[Self <: XValueBinding] (val x: Self) extends AnyVal {
+    extension [Self <: XValueBinding](x: Self) {
       
-      @scala.inline
-      def setGetSupportedValueTypes(value: () => SafeArray[`type`]): Self = StObject.set(x, "getSupportedValueTypes", js.Any.fromFunction0(value))
+      inline def setGetSupportedValueTypes(value: () => SafeArray[`type`]): Self = StObject.set(x, "getSupportedValueTypes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: `type` => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+      inline def setGetValue(value: `type` => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSupportedValueTypes(value: SafeArray[`type`]): Self = StObject.set(x, "SupportedValueTypes", value.asInstanceOf[js.Any])
+      inline def setSupportedValueTypes(value: SafeArray[`type`]): Self = StObject.set(x, "SupportedValueTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsType(value: `type` => Boolean): Self = StObject.set(x, "supportsType", js.Any.fromFunction1(value))
+      inline def setSupportsType(value: `type` => Boolean): Self = StObject.set(x, "supportsType", js.Any.fromFunction1(value))
     }
   }
 }

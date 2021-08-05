@@ -16,20 +16,16 @@ trait ProtectionDestroyedEvent
 }
 object ProtectionDestroyedEvent {
   
-  @scala.inline
-  def apply(data: String): ProtectionDestroyedEvent = {
+  inline def apply(data: String): ProtectionDestroyedEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("public_protectiondestroyed")
     __obj.asInstanceOf[ProtectionDestroyedEvent]
   }
   
-  @scala.inline
-  implicit class ProtectionDestroyedEventMutableBuilder[Self <: ProtectionDestroyedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ProtectionDestroyedEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: public_protectiondestroyed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: public_protectiondestroyed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

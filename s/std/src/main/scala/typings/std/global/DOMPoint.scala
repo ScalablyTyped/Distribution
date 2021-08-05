@@ -33,8 +33,6 @@ object DOMPoint {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromPoint(): typings.std.DOMPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoint")().asInstanceOf[typings.std.DOMPoint]
-  @scala.inline
-  def fromPoint(other: DOMPointInit): typings.std.DOMPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoint")(other.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMPoint]
+  inline def fromPoint(): typings.std.DOMPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoint")().asInstanceOf[typings.std.DOMPoint]
+  inline def fromPoint(other: DOMPointInit): typings.std.DOMPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoint")(other.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMPoint]
 }

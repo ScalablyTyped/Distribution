@@ -29,31 +29,23 @@ trait HivePartitioningOptions extends StObject {
 }
 object HivePartitioningOptions {
   
-  @scala.inline
-  def apply(): HivePartitioningOptions = {
+  inline def apply(): HivePartitioningOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HivePartitioningOptions]
   }
   
-  @scala.inline
-  implicit class HivePartitioningOptionsMutableBuilder[Self <: HivePartitioningOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HivePartitioningOptions](x: Self) {
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setRequirePartitionFilter(value: Boolean): Self = StObject.set(x, "requirePartitionFilter", value.asInstanceOf[js.Any])
+    inline def setRequirePartitionFilter(value: Boolean): Self = StObject.set(x, "requirePartitionFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequirePartitionFilterUndefined: Self = StObject.set(x, "requirePartitionFilter", js.undefined)
+    inline def setRequirePartitionFilterUndefined: Self = StObject.set(x, "requirePartitionFilter", js.undefined)
     
-    @scala.inline
-    def setSourceUriPrefix(value: String): Self = StObject.set(x, "sourceUriPrefix", value.asInstanceOf[js.Any])
+    inline def setSourceUriPrefix(value: String): Self = StObject.set(x, "sourceUriPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUriPrefixUndefined: Self = StObject.set(x, "sourceUriPrefix", js.undefined)
+    inline def setSourceUriPrefixUndefined: Self = StObject.set(x, "sourceUriPrefix", js.undefined)
   }
 }

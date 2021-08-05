@@ -20,28 +20,21 @@ trait Previews extends StObject {
 }
 object Previews {
   
-  @scala.inline
-  def apply(): Previews = {
+  inline def apply(): Previews = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Previews]
   }
   
-  @scala.inline
-  implicit class PreviewsMutableBuilder[Self <: Previews] (val x: Self) extends AnyVal {
+  extension [Self <: Previews](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setPreviews(value: js.Array[String]): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])
+    inline def setPreviews(value: js.Array[String]): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewsUndefined: Self = StObject.set(x, "previews", js.undefined)
+    inline def setPreviewsUndefined: Self = StObject.set(x, "previews", js.undefined)
     
-    @scala.inline
-    def setPreviewsVarargs(value: String*): Self = StObject.set(x, "previews", js.Array(value :_*))
+    inline def setPreviewsVarargs(value: String*): Self = StObject.set(x, "previews", js.Array(value :_*))
   }
 }

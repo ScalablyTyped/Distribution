@@ -12,16 +12,13 @@ trait UrlBasedRequestPrepareOptions
 }
 object UrlBasedRequestPrepareOptions {
   
-  @scala.inline
-  def apply(deserializationMapper: Mapper, method: String, serializationMapper: Mapper, url: String): UrlBasedRequestPrepareOptions = {
+  inline def apply(deserializationMapper: Mapper, method: String, serializationMapper: Mapper, url: String): UrlBasedRequestPrepareOptions = {
     val __obj = js.Dynamic.literal(deserializationMapper = deserializationMapper.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], serializationMapper = serializationMapper.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlBasedRequestPrepareOptions]
   }
   
-  @scala.inline
-  implicit class UrlBasedRequestPrepareOptionsMutableBuilder[Self <: UrlBasedRequestPrepareOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UrlBasedRequestPrepareOptions](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

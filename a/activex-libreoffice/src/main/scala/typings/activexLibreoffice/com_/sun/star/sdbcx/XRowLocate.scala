@@ -84,8 +84,7 @@ trait XRowLocate
 }
 object XRowLocate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bookmark: js.Any,
     acquire: () => Unit,
     compareBookmarks: (js.Any, js.Any) => Double,
@@ -101,28 +100,20 @@ object XRowLocate {
     __obj.asInstanceOf[XRowLocate]
   }
   
-  @scala.inline
-  implicit class XRowLocateMutableBuilder[Self <: XRowLocate] (val x: Self) extends AnyVal {
+  extension [Self <: XRowLocate](x: Self) {
     
-    @scala.inline
-    def setBookmark(value: js.Any): Self = StObject.set(x, "Bookmark", value.asInstanceOf[js.Any])
+    inline def setBookmark(value: js.Any): Self = StObject.set(x, "Bookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompareBookmarks(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "compareBookmarks", js.Any.fromFunction2(value))
+    inline def setCompareBookmarks(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "compareBookmarks", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetBookmark(value: () => js.Any): Self = StObject.set(x, "getBookmark", js.Any.fromFunction0(value))
+    inline def setGetBookmark(value: () => js.Any): Self = StObject.set(x, "getBookmark", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasOrderedBookmarks(value: () => Boolean): Self = StObject.set(x, "hasOrderedBookmarks", js.Any.fromFunction0(value))
+    inline def setHasOrderedBookmarks(value: () => Boolean): Self = StObject.set(x, "hasOrderedBookmarks", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHashBookmark(value: js.Any => Double): Self = StObject.set(x, "hashBookmark", js.Any.fromFunction1(value))
+    inline def setHashBookmark(value: js.Any => Double): Self = StObject.set(x, "hashBookmark", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMoveRelativeToBookmark(value: (js.Any, Double) => Boolean): Self = StObject.set(x, "moveRelativeToBookmark", js.Any.fromFunction2(value))
+    inline def setMoveRelativeToBookmark(value: (js.Any, Double) => Boolean): Self = StObject.set(x, "moveRelativeToBookmark", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMoveToBookmark(value: js.Any => Boolean): Self = StObject.set(x, "moveToBookmark", js.Any.fromFunction1(value))
+    inline def setMoveToBookmark(value: js.Any => Boolean): Self = StObject.set(x, "moveToBookmark", js.Any.fromFunction1(value))
   }
 }

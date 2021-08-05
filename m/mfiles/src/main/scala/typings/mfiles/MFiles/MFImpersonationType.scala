@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFImpersonationType extends StObject
 object MFImpersonationType {
   
-  @scala.inline
-  def ExtAccount: `2` = 2.asInstanceOf[`2`]
+  inline def ExtAccount: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def LocalSystem: `0` = 0.asInstanceOf[`0`]
+  inline def LocalSystem: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def SpecificAccount: `1` = 1.asInstanceOf[`1`]
+  inline def SpecificAccount: `1` = 1.asInstanceOf[`1`]
 }

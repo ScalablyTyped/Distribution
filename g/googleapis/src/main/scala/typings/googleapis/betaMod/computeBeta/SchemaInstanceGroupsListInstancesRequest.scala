@@ -15,19 +15,15 @@ trait SchemaInstanceGroupsListInstancesRequest extends StObject {
 }
 object SchemaInstanceGroupsListInstancesRequest {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupsListInstancesRequest = {
+  inline def apply(): SchemaInstanceGroupsListInstancesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupsListInstancesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupsListInstancesRequestMutableBuilder[Self <: SchemaInstanceGroupsListInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupsListInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceState(value: String): Self = StObject.set(x, "instanceState", value.asInstanceOf[js.Any])
+    inline def setInstanceState(value: String): Self = StObject.set(x, "instanceState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceStateUndefined: Self = StObject.set(x, "instanceState", js.undefined)
+    inline def setInstanceStateUndefined: Self = StObject.set(x, "instanceState", js.undefined)
   }
 }

@@ -14,28 +14,21 @@ trait MetricFilterClause extends StObject {
 }
 object MetricFilterClause {
   
-  @scala.inline
-  def apply(): MetricFilterClause = {
+  inline def apply(): MetricFilterClause = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricFilterClause]
   }
   
-  @scala.inline
-  implicit class MetricFilterClauseMutableBuilder[Self <: MetricFilterClause] (val x: Self) extends AnyVal {
+  extension [Self <: MetricFilterClause](x: Self) {
     
-    @scala.inline
-    def setFilters(value: js.Array[MetricFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[MetricFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: MetricFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: MetricFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
   }
 }

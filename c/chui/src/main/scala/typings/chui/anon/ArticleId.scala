@@ -16,37 +16,27 @@ trait ArticleId extends StObject {
 }
 object ArticleId {
   
-  @scala.inline
-  def apply(): ArticleId = {
+  inline def apply(): ArticleId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArticleId]
   }
   
-  @scala.inline
-  implicit class ArticleIdMutableBuilder[Self <: ArticleId] (val x: Self) extends AnyVal {
+  extension [Self <: ArticleId](x: Self) {
     
-    @scala.inline
-    def setArticleId(value: js.Any): Self = StObject.set(x, "articleId", value.asInstanceOf[js.Any])
+    inline def setArticleId(value: js.Any): Self = StObject.set(x, "articleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArticleIdUndefined: Self = StObject.set(x, "articleId", js.undefined)
+    inline def setArticleIdUndefined: Self = StObject.set(x, "articleId", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
   }
 }

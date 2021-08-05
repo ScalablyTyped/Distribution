@@ -33,43 +33,31 @@ trait SchemaTestOrderLineItem extends StObject {
 }
 object SchemaTestOrderLineItem {
   
-  @scala.inline
-  def apply(): SchemaTestOrderLineItem = {
+  inline def apply(): SchemaTestOrderLineItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTestOrderLineItem]
   }
   
-  @scala.inline
-  implicit class SchemaTestOrderLineItemMutableBuilder[Self <: SchemaTestOrderLineItem] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTestOrderLineItem](x: Self) {
     
-    @scala.inline
-    def setProduct(value: SchemaTestOrderLineItemProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: SchemaTestOrderLineItemProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+    inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
-    @scala.inline
-    def setQuantityOrdered(value: Double): Self = StObject.set(x, "quantityOrdered", value.asInstanceOf[js.Any])
+    inline def setQuantityOrdered(value: Double): Self = StObject.set(x, "quantityOrdered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityOrderedUndefined: Self = StObject.set(x, "quantityOrdered", js.undefined)
+    inline def setQuantityOrderedUndefined: Self = StObject.set(x, "quantityOrdered", js.undefined)
     
-    @scala.inline
-    def setReturnInfo(value: SchemaOrderLineItemReturnInfo): Self = StObject.set(x, "returnInfo", value.asInstanceOf[js.Any])
+    inline def setReturnInfo(value: SchemaOrderLineItemReturnInfo): Self = StObject.set(x, "returnInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnInfoUndefined: Self = StObject.set(x, "returnInfo", js.undefined)
+    inline def setReturnInfoUndefined: Self = StObject.set(x, "returnInfo", js.undefined)
     
-    @scala.inline
-    def setShippingDetails(value: SchemaOrderLineItemShippingDetails): Self = StObject.set(x, "shippingDetails", value.asInstanceOf[js.Any])
+    inline def setShippingDetails(value: SchemaOrderLineItemShippingDetails): Self = StObject.set(x, "shippingDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingDetailsUndefined: Self = StObject.set(x, "shippingDetails", js.undefined)
+    inline def setShippingDetailsUndefined: Self = StObject.set(x, "shippingDetails", js.undefined)
     
-    @scala.inline
-    def setUnitTax(value: SchemaPrice): Self = StObject.set(x, "unitTax", value.asInstanceOf[js.Any])
+    inline def setUnitTax(value: SchemaPrice): Self = StObject.set(x, "unitTax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitTaxUndefined: Self = StObject.set(x, "unitTax", js.undefined)
+    inline def setUnitTaxUndefined: Self = StObject.set(x, "unitTax", js.undefined)
   }
 }

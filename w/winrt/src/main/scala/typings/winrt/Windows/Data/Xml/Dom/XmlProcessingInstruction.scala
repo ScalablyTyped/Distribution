@@ -9,8 +9,7 @@ trait XmlProcessingInstruction
      with IXmlProcessingInstruction
 object XmlProcessingInstruction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendChild: IXmlNode => IXmlNode,
     attributes: XmlNamedNodeMap,
     childNodes: XmlNodeList,

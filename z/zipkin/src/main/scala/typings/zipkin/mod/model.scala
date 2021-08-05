@@ -82,20 +82,16 @@ object model {
   }
   object Annotation {
     
-    @scala.inline
-    def apply(timestamp: Double, value: String): typings.zipkin.mod.model.Annotation = {
+    inline def apply(timestamp: Double, value: String): typings.zipkin.mod.model.Annotation = {
       val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.zipkin.mod.model.Annotation]
     }
     
-    @scala.inline
-    implicit class AnnotationMutableBuilder[Self <: typings.zipkin.mod.model.Annotation] (val x: Self) extends AnyVal {
+    extension [Self <: typings.zipkin.mod.model.Annotation](x: Self) {
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

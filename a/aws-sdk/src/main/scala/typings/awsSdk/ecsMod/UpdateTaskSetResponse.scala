@@ -10,19 +10,15 @@ trait UpdateTaskSetResponse extends StObject {
 }
 object UpdateTaskSetResponse {
   
-  @scala.inline
-  def apply(): UpdateTaskSetResponse = {
+  inline def apply(): UpdateTaskSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateTaskSetResponse]
   }
   
-  @scala.inline
-  implicit class UpdateTaskSetResponseMutableBuilder[Self <: UpdateTaskSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTaskSetResponse](x: Self) {
     
-    @scala.inline
-    def setTaskSet(value: TaskSet): Self = StObject.set(x, "taskSet", value.asInstanceOf[js.Any])
+    inline def setTaskSet(value: TaskSet): Self = StObject.set(x, "taskSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskSetUndefined: Self = StObject.set(x, "taskSet", js.undefined)
+    inline def setTaskSetUndefined: Self = StObject.set(x, "taskSet", js.undefined)
   }
 }

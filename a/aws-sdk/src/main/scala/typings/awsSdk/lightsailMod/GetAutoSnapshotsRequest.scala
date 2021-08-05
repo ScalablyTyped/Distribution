@@ -13,16 +13,13 @@ trait GetAutoSnapshotsRequest extends StObject {
 }
 object GetAutoSnapshotsRequest {
   
-  @scala.inline
-  def apply(resourceName: ResourceName): GetAutoSnapshotsRequest = {
+  inline def apply(resourceName: ResourceName): GetAutoSnapshotsRequest = {
     val __obj = js.Dynamic.literal(resourceName = resourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAutoSnapshotsRequest]
   }
   
-  @scala.inline
-  implicit class GetAutoSnapshotsRequestMutableBuilder[Self <: GetAutoSnapshotsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAutoSnapshotsRequest](x: Self) {
     
-    @scala.inline
-    def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
   }
 }

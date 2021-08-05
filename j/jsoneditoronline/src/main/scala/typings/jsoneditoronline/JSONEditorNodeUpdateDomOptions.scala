@@ -12,25 +12,19 @@ trait JSONEditorNodeUpdateDomOptions extends StObject {
 }
 object JSONEditorNodeUpdateDomOptions {
   
-  @scala.inline
-  def apply(): JSONEditorNodeUpdateDomOptions = {
+  inline def apply(): JSONEditorNodeUpdateDomOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JSONEditorNodeUpdateDomOptions]
   }
   
-  @scala.inline
-  implicit class JSONEditorNodeUpdateDomOptionsMutableBuilder[Self <: JSONEditorNodeUpdateDomOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JSONEditorNodeUpdateDomOptions](x: Self) {
     
-    @scala.inline
-    def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
+    inline def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurseUndefined: Self = StObject.set(x, "recurse", js.undefined)
+    inline def setRecurseUndefined: Self = StObject.set(x, "recurse", js.undefined)
     
-    @scala.inline
-    def setUpdateIndexes(value: Boolean): Self = StObject.set(x, "updateIndexes", value.asInstanceOf[js.Any])
+    inline def setUpdateIndexes(value: Boolean): Self = StObject.set(x, "updateIndexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateIndexesUndefined: Self = StObject.set(x, "updateIndexes", js.undefined)
+    inline def setUpdateIndexesUndefined: Self = StObject.set(x, "updateIndexes", js.undefined)
   }
 }

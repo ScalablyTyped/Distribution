@@ -23,28 +23,21 @@ trait ListDelegatedServicesForAccountRequest extends StObject {
 }
 object ListDelegatedServicesForAccountRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId): ListDelegatedServicesForAccountRequest = {
+  inline def apply(AccountId: AccountId): ListDelegatedServicesForAccountRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDelegatedServicesForAccountRequest]
   }
   
-  @scala.inline
-  implicit class ListDelegatedServicesForAccountRequestMutableBuilder[Self <: ListDelegatedServicesForAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListDelegatedServicesForAccountRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

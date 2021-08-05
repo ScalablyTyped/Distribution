@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReferenceEdge extends StObject
 object ReferenceEdge {
   
-  @scala.inline
-  def bottom: typings.ipp.ippStrings.bottom = "bottom".asInstanceOf[typings.ipp.ippStrings.bottom]
+  inline def bottom: typings.ipp.ippStrings.bottom = "bottom".asInstanceOf[typings.ipp.ippStrings.bottom]
   
-  @scala.inline
-  def left: typings.ipp.ippStrings.left = "left".asInstanceOf[typings.ipp.ippStrings.left]
+  inline def left: typings.ipp.ippStrings.left = "left".asInstanceOf[typings.ipp.ippStrings.left]
   
-  @scala.inline
-  def right: typings.ipp.ippStrings.right = "right".asInstanceOf[typings.ipp.ippStrings.right]
+  inline def right: typings.ipp.ippStrings.right = "right".asInstanceOf[typings.ipp.ippStrings.right]
   
-  @scala.inline
-  def top: typings.ipp.ippStrings.top = "top".asInstanceOf[typings.ipp.ippStrings.top]
+  inline def top: typings.ipp.ippStrings.top = "top".asInstanceOf[typings.ipp.ippStrings.top]
 }

@@ -14,31 +14,23 @@ trait DialogflowV1Status extends StObject {
 }
 object DialogflowV1Status {
   
-  @scala.inline
-  def apply(): DialogflowV1Status = {
+  inline def apply(): DialogflowV1Status = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogflowV1Status]
   }
   
-  @scala.inline
-  implicit class DialogflowV1StatusMutableBuilder[Self <: DialogflowV1Status] (val x: Self) extends AnyVal {
+  extension [Self <: DialogflowV1Status](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
+    inline def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorTypeUndefined: Self = StObject.set(x, "errorType", js.undefined)
+    inline def setErrorTypeUndefined: Self = StObject.set(x, "errorType", js.undefined)
     
-    @scala.inline
-    def setWebhookTimedOut(value: Boolean): Self = StObject.set(x, "webhookTimedOut", value.asInstanceOf[js.Any])
+    inline def setWebhookTimedOut(value: Boolean): Self = StObject.set(x, "webhookTimedOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookTimedOutUndefined: Self = StObject.set(x, "webhookTimedOut", js.undefined)
+    inline def setWebhookTimedOutUndefined: Self = StObject.set(x, "webhookTimedOut", js.undefined)
   }
 }

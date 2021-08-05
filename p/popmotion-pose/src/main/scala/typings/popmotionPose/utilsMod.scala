@@ -13,9 +13,7 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def measureWithoutTransform(element: HTMLElement): DOMRect = ^.asInstanceOf[js.Dynamic].applyDynamic("measureWithoutTransform")(element.asInstanceOf[js.Any]).asInstanceOf[DOMRect]
+  inline def measureWithoutTransform(element: HTMLElement): DOMRect = ^.asInstanceOf[js.Dynamic].applyDynamic("measureWithoutTransform")(element.asInstanceOf[js.Any]).asInstanceOf[DOMRect]
   
-  @scala.inline
-  def resolveProp(target: js.Any, props: StringDictionary[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveProp")(target.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def resolveProp(target: js.Any, props: StringDictionary[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveProp")(target.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

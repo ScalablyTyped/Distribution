@@ -28,8 +28,7 @@ trait HidBooleanControlDescription extends StObject {
 }
 object HidBooleanControlDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: Double,
     parentCollections: IVectorView[HidCollection],
     reportId: Double,
@@ -41,25 +40,18 @@ object HidBooleanControlDescription {
     __obj.asInstanceOf[HidBooleanControlDescription]
   }
   
-  @scala.inline
-  implicit class HidBooleanControlDescriptionMutableBuilder[Self <: HidBooleanControlDescription] (val x: Self) extends AnyVal {
+  extension [Self <: HidBooleanControlDescription](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentCollections(value: IVectorView[HidCollection]): Self = StObject.set(x, "parentCollections", value.asInstanceOf[js.Any])
+    inline def setParentCollections(value: IVectorView[HidCollection]): Self = StObject.set(x, "parentCollections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportId(value: Double): Self = StObject.set(x, "reportId", value.asInstanceOf[js.Any])
+    inline def setReportId(value: Double): Self = StObject.set(x, "reportId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportType(value: HidReportType): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
+    inline def setReportType(value: HidReportType): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageId(value: Double): Self = StObject.set(x, "usageId", value.asInstanceOf[js.Any])
+    inline def setUsageId(value: Double): Self = StObject.set(x, "usageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
+    inline def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
   }
 }

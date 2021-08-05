@@ -18,19 +18,15 @@ trait AssumedRoleUser extends StObject {
 }
 object AssumedRoleUser {
   
-  @scala.inline
-  def apply(Arn: arnType, AssumedRoleId: assumedRoleIdType): AssumedRoleUser = {
+  inline def apply(Arn: arnType, AssumedRoleId: assumedRoleIdType): AssumedRoleUser = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], AssumedRoleId = AssumedRoleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssumedRoleUser]
   }
   
-  @scala.inline
-  implicit class AssumedRoleUserMutableBuilder[Self <: AssumedRoleUser] (val x: Self) extends AnyVal {
+  extension [Self <: AssumedRoleUser](x: Self) {
     
-    @scala.inline
-    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssumedRoleId(value: assumedRoleIdType): Self = StObject.set(x, "AssumedRoleId", value.asInstanceOf[js.Any])
+    inline def setAssumedRoleId(value: assumedRoleIdType): Self = StObject.set(x, "AssumedRoleId", value.asInstanceOf[js.Any])
   }
 }

@@ -17,31 +17,23 @@ trait WebhookExpressOptions extends StObject {
 }
 object WebhookExpressOptions {
   
-  @scala.inline
-  def apply(): WebhookExpressOptions = {
+  inline def apply(): WebhookExpressOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebhookExpressOptions]
   }
   
-  @scala.inline
-  implicit class WebhookExpressOptionsMutableBuilder[Self <: WebhookExpressOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WebhookExpressOptions](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

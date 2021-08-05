@@ -10,16 +10,13 @@ trait IHandle extends StObject {
 }
 object IHandle {
   
-  @scala.inline
-  def apply(remove: () => Unit): IHandle = {
+  inline def apply(remove: () => Unit): IHandle = {
     val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
     __obj.asInstanceOf[IHandle]
   }
   
-  @scala.inline
-  implicit class IHandleMutableBuilder[Self <: IHandle] (val x: Self) extends AnyVal {
+  extension [Self <: IHandle](x: Self) {
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

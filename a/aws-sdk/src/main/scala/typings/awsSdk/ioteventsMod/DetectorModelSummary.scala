@@ -23,31 +23,23 @@ trait DetectorModelSummary extends StObject {
 }
 object DetectorModelSummary {
   
-  @scala.inline
-  def apply(): DetectorModelSummary = {
+  inline def apply(): DetectorModelSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectorModelSummary]
   }
   
-  @scala.inline
-  implicit class DetectorModelSummaryMutableBuilder[Self <: DetectorModelSummary] (val x: Self) extends AnyVal {
+  extension [Self <: DetectorModelSummary](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setDetectorModelDescription(value: DetectorModelDescription): Self = StObject.set(x, "detectorModelDescription", value.asInstanceOf[js.Any])
+    inline def setDetectorModelDescription(value: DetectorModelDescription): Self = StObject.set(x, "detectorModelDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorModelDescriptionUndefined: Self = StObject.set(x, "detectorModelDescription", js.undefined)
+    inline def setDetectorModelDescriptionUndefined: Self = StObject.set(x, "detectorModelDescription", js.undefined)
     
-    @scala.inline
-    def setDetectorModelName(value: DetectorModelName): Self = StObject.set(x, "detectorModelName", value.asInstanceOf[js.Any])
+    inline def setDetectorModelName(value: DetectorModelName): Self = StObject.set(x, "detectorModelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorModelNameUndefined: Self = StObject.set(x, "detectorModelName", js.undefined)
+    inline def setDetectorModelNameUndefined: Self = StObject.set(x, "detectorModelName", js.undefined)
   }
 }

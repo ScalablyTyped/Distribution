@@ -14,8 +14,7 @@ trait ChangeToken
 }
 object ChangeToken {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -28,13 +27,10 @@ object ChangeToken {
     __obj.asInstanceOf[ChangeToken]
   }
   
-  @scala.inline
-  implicit class ChangeTokenMutableBuilder[Self <: ChangeToken] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeToken](x: Self) {
     
-    @scala.inline
-    def setGet_stringValue(value: () => String): Self = StObject.set(x, "get_stringValue", js.Any.fromFunction0(value))
+    inline def setGet_stringValue(value: () => String): Self = StObject.set(x, "get_stringValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_stringValue(value: String => Unit): Self = StObject.set(x, "set_stringValue", js.Any.fromFunction1(value))
+    inline def setSet_stringValue(value: String => Unit): Self = StObject.set(x, "set_stringValue", js.Any.fromFunction1(value))
   }
 }

@@ -28,37 +28,27 @@ trait ICreated extends StObject {
 }
 object ICreated {
   
-  @scala.inline
-  def apply(): ICreated = {
+  inline def apply(): ICreated = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICreated]
   }
   
-  @scala.inline
-  implicit class ICreatedMutableBuilder[Self <: ICreated] (val x: Self) extends AnyVal {
+  extension [Self <: ICreated](x: Self) {
     
-    @scala.inline
-    def setGt(value: Double): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
+    inline def setGt(value: Double): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
+    inline def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
     
-    @scala.inline
-    def setGte(value: Double): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
+    inline def setGte(value: Double): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
+    inline def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
     
-    @scala.inline
-    def setLt(value: Double): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
+    inline def setLt(value: Double): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
+    inline def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
     
-    @scala.inline
-    def setLte(value: Double): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
+    inline def setLte(value: Double): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
+    inline def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
   }
 }

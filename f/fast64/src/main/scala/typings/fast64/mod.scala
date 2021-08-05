@@ -11,21 +11,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decode(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def decode(base64: String, options: Options): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base64.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def decode(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def decode(base64: String, options: Options): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base64.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @scala.inline
-  def encode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def urldecode(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urldecode")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def urldecode(base64: String, options: Options): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("urldecode")(base64.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def urldecode(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urldecode")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def urldecode(base64: String, options: Options): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("urldecode")(base64.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @scala.inline
-  def urlencode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlencode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def urlencode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlencode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait Options extends StObject {
     
@@ -33,17 +27,14 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(uint8Array: Boolean): Options = {
+    inline def apply(uint8Array: Boolean): Options = {
       val __obj = js.Dynamic.literal(uint8Array = uint8Array.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setUint8Array(value: Boolean): Self = StObject.set(x, "uint8Array", value.asInstanceOf[js.Any])
+      inline def setUint8Array(value: Boolean): Self = StObject.set(x, "uint8Array", value.asInstanceOf[js.Any])
     }
   }
 }

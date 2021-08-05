@@ -11,9 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decode(base64: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base64.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  inline def decode(base64: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base64.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
   
-  @scala.inline
-  def encode(arraybuffer: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(arraybuffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(arraybuffer: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(arraybuffer.asInstanceOf[js.Any]).asInstanceOf[String]
 }

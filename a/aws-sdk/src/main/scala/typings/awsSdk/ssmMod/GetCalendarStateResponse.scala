@@ -23,31 +23,23 @@ trait GetCalendarStateResponse extends StObject {
 }
 object GetCalendarStateResponse {
   
-  @scala.inline
-  def apply(): GetCalendarStateResponse = {
+  inline def apply(): GetCalendarStateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCalendarStateResponse]
   }
   
-  @scala.inline
-  implicit class GetCalendarStateResponseMutableBuilder[Self <: GetCalendarStateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCalendarStateResponse](x: Self) {
     
-    @scala.inline
-    def setAtTime(value: ISO8601String): Self = StObject.set(x, "AtTime", value.asInstanceOf[js.Any])
+    inline def setAtTime(value: ISO8601String): Self = StObject.set(x, "AtTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtTimeUndefined: Self = StObject.set(x, "AtTime", js.undefined)
+    inline def setAtTimeUndefined: Self = StObject.set(x, "AtTime", js.undefined)
     
-    @scala.inline
-    def setNextTransitionTime(value: ISO8601String): Self = StObject.set(x, "NextTransitionTime", value.asInstanceOf[js.Any])
+    inline def setNextTransitionTime(value: ISO8601String): Self = StObject.set(x, "NextTransitionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTransitionTimeUndefined: Self = StObject.set(x, "NextTransitionTime", js.undefined)
+    inline def setNextTransitionTimeUndefined: Self = StObject.set(x, "NextTransitionTime", js.undefined)
     
-    @scala.inline
-    def setState(value: CalendarState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: CalendarState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

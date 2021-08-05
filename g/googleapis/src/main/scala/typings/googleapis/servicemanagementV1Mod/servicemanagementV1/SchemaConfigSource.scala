@@ -25,28 +25,21 @@ trait SchemaConfigSource extends StObject {
 }
 object SchemaConfigSource {
   
-  @scala.inline
-  def apply(): SchemaConfigSource = {
+  inline def apply(): SchemaConfigSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConfigSource]
   }
   
-  @scala.inline
-  implicit class SchemaConfigSourceMutableBuilder[Self <: SchemaConfigSource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConfigSource](x: Self) {
     
-    @scala.inline
-    def setFiles(value: js.Array[SchemaConfigFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[SchemaConfigFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setFilesVarargs(value: SchemaConfigFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: SchemaConfigFile*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

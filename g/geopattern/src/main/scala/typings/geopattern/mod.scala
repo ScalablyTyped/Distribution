@@ -10,14 +10,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generate(): Pattern = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[Pattern]
-  @scala.inline
-  def generate(string: String): Pattern = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(string.asInstanceOf[js.Any]).asInstanceOf[Pattern]
-  @scala.inline
-  def generate(string: String, options: PatternOptions): Pattern = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Pattern]
-  @scala.inline
-  def generate(string: Unit, options: PatternOptions): Pattern = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Pattern]
+  inline def generate(): Pattern = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[Pattern]
+  inline def generate(string: String): Pattern = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(string.asInstanceOf[js.Any]).asInstanceOf[Pattern]
+  inline def generate(string: String, options: PatternOptions): Pattern = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Pattern]
+  inline def generate(string: Unit, options: PatternOptions): Pattern = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Pattern]
   
   /* Rewritten from type alias, can be one of: 
     - typings.geopattern.geopatternStrings.chevrons
@@ -40,53 +36,37 @@ object mod {
   trait GeneratorType extends StObject
   object GeneratorType {
     
-    @scala.inline
-    def chevrons: typings.geopattern.geopatternStrings.chevrons = "chevrons".asInstanceOf[typings.geopattern.geopatternStrings.chevrons]
+    inline def chevrons: typings.geopattern.geopatternStrings.chevrons = "chevrons".asInstanceOf[typings.geopattern.geopatternStrings.chevrons]
     
-    @scala.inline
-    def concentricCircles: typings.geopattern.geopatternStrings.concentricCircles = "concentricCircles".asInstanceOf[typings.geopattern.geopatternStrings.concentricCircles]
+    inline def concentricCircles: typings.geopattern.geopatternStrings.concentricCircles = "concentricCircles".asInstanceOf[typings.geopattern.geopatternStrings.concentricCircles]
     
-    @scala.inline
-    def diamonds: typings.geopattern.geopatternStrings.diamonds = "diamonds".asInstanceOf[typings.geopattern.geopatternStrings.diamonds]
+    inline def diamonds: typings.geopattern.geopatternStrings.diamonds = "diamonds".asInstanceOf[typings.geopattern.geopatternStrings.diamonds]
     
-    @scala.inline
-    def hexagons: typings.geopattern.geopatternStrings.hexagons = "hexagons".asInstanceOf[typings.geopattern.geopatternStrings.hexagons]
+    inline def hexagons: typings.geopattern.geopatternStrings.hexagons = "hexagons".asInstanceOf[typings.geopattern.geopatternStrings.hexagons]
     
-    @scala.inline
-    def mosaicSquares: typings.geopattern.geopatternStrings.mosaicSquares = "mosaicSquares".asInstanceOf[typings.geopattern.geopatternStrings.mosaicSquares]
+    inline def mosaicSquares: typings.geopattern.geopatternStrings.mosaicSquares = "mosaicSquares".asInstanceOf[typings.geopattern.geopatternStrings.mosaicSquares]
     
-    @scala.inline
-    def nestedSquares: typings.geopattern.geopatternStrings.nestedSquares = "nestedSquares".asInstanceOf[typings.geopattern.geopatternStrings.nestedSquares]
+    inline def nestedSquares: typings.geopattern.geopatternStrings.nestedSquares = "nestedSquares".asInstanceOf[typings.geopattern.geopatternStrings.nestedSquares]
     
-    @scala.inline
-    def octagons: typings.geopattern.geopatternStrings.octagons = "octagons".asInstanceOf[typings.geopattern.geopatternStrings.octagons]
+    inline def octagons: typings.geopattern.geopatternStrings.octagons = "octagons".asInstanceOf[typings.geopattern.geopatternStrings.octagons]
     
-    @scala.inline
-    def overlappingCircles: typings.geopattern.geopatternStrings.overlappingCircles = "overlappingCircles".asInstanceOf[typings.geopattern.geopatternStrings.overlappingCircles]
+    inline def overlappingCircles: typings.geopattern.geopatternStrings.overlappingCircles = "overlappingCircles".asInstanceOf[typings.geopattern.geopatternStrings.overlappingCircles]
     
-    @scala.inline
-    def overlappingRings: typings.geopattern.geopatternStrings.overlappingRings = "overlappingRings".asInstanceOf[typings.geopattern.geopatternStrings.overlappingRings]
+    inline def overlappingRings: typings.geopattern.geopatternStrings.overlappingRings = "overlappingRings".asInstanceOf[typings.geopattern.geopatternStrings.overlappingRings]
     
-    @scala.inline
-    def plaid: typings.geopattern.geopatternStrings.plaid = "plaid".asInstanceOf[typings.geopattern.geopatternStrings.plaid]
+    inline def plaid: typings.geopattern.geopatternStrings.plaid = "plaid".asInstanceOf[typings.geopattern.geopatternStrings.plaid]
     
-    @scala.inline
-    def plusSigns: typings.geopattern.geopatternStrings.plusSigns = "plusSigns".asInstanceOf[typings.geopattern.geopatternStrings.plusSigns]
+    inline def plusSigns: typings.geopattern.geopatternStrings.plusSigns = "plusSigns".asInstanceOf[typings.geopattern.geopatternStrings.plusSigns]
     
-    @scala.inline
-    def sineWaves: typings.geopattern.geopatternStrings.sineWaves = "sineWaves".asInstanceOf[typings.geopattern.geopatternStrings.sineWaves]
+    inline def sineWaves: typings.geopattern.geopatternStrings.sineWaves = "sineWaves".asInstanceOf[typings.geopattern.geopatternStrings.sineWaves]
     
-    @scala.inline
-    def squares: typings.geopattern.geopatternStrings.squares = "squares".asInstanceOf[typings.geopattern.geopatternStrings.squares]
+    inline def squares: typings.geopattern.geopatternStrings.squares = "squares".asInstanceOf[typings.geopattern.geopatternStrings.squares]
     
-    @scala.inline
-    def tessellation: typings.geopattern.geopatternStrings.tessellation = "tessellation".asInstanceOf[typings.geopattern.geopatternStrings.tessellation]
+    inline def tessellation: typings.geopattern.geopatternStrings.tessellation = "tessellation".asInstanceOf[typings.geopattern.geopatternStrings.tessellation]
     
-    @scala.inline
-    def triangles: typings.geopattern.geopatternStrings.triangles = "triangles".asInstanceOf[typings.geopattern.geopatternStrings.triangles]
+    inline def triangles: typings.geopattern.geopatternStrings.triangles = "triangles".asInstanceOf[typings.geopattern.geopatternStrings.triangles]
     
-    @scala.inline
-    def xes: typings.geopattern.geopatternStrings.xes = "xes".asInstanceOf[typings.geopattern.geopatternStrings.xes]
+    inline def xes: typings.geopattern.geopatternStrings.xes = "xes".asInstanceOf[typings.geopattern.geopatternStrings.xes]
   }
   
   trait Pattern extends StObject {
@@ -114,8 +94,7 @@ object mod {
   }
   object Pattern {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       color: String,
       toBase64: () => String,
       toDataUri: () => String,
@@ -126,23 +105,17 @@ object mod {
       __obj.asInstanceOf[Pattern]
     }
     
-    @scala.inline
-    implicit class PatternMutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
+    extension [Self <: Pattern](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToBase64(value: () => String): Self = StObject.set(x, "toBase64", js.Any.fromFunction0(value))
+      inline def setToBase64(value: () => String): Self = StObject.set(x, "toBase64", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToDataUri(value: () => String): Self = StObject.set(x, "toDataUri", js.Any.fromFunction0(value))
+      inline def setToDataUri(value: () => String): Self = StObject.set(x, "toDataUri", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToDataUrl(value: () => String): Self = StObject.set(x, "toDataUrl", js.Any.fromFunction0(value))
+      inline def setToDataUrl(value: () => String): Self = StObject.set(x, "toDataUrl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSvg(value: () => String): Self = StObject.set(x, "toSvg", js.Any.fromFunction0(value))
+      inline def setToSvg(value: () => String): Self = StObject.set(x, "toSvg", js.Any.fromFunction0(value))
     }
   }
   
@@ -171,32 +144,24 @@ object mod {
   }
   object PatternOptions {
     
-    @scala.inline
-    def apply(): PatternOptions = {
+    inline def apply(): PatternOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PatternOptions]
     }
     
-    @scala.inline
-    implicit class PatternOptionsMutableBuilder[Self <: PatternOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PatternOptions](x: Self) {
       
-      @scala.inline
-      def setBaseColor(value: String): Self = StObject.set(x, "baseColor", value.asInstanceOf[js.Any])
+      inline def setBaseColor(value: String): Self = StObject.set(x, "baseColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseColorUndefined: Self = StObject.set(x, "baseColor", js.undefined)
+      inline def setBaseColorUndefined: Self = StObject.set(x, "baseColor", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setGenerator(value: GeneratorType): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
+      inline def setGenerator(value: GeneratorType): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneratorUndefined: Self = StObject.set(x, "generator", js.undefined)
+      inline def setGeneratorUndefined: Self = StObject.set(x, "generator", js.undefined)
     }
   }
   

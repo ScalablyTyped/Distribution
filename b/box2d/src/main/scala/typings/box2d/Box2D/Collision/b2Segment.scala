@@ -46,8 +46,7 @@ trait b2Segment extends StObject {
 }
 object b2Segment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Extend: b2AABB => Unit,
     ExtendBackward: b2AABB => Unit,
     ExtendForward: b2AABB => Unit,
@@ -59,25 +58,18 @@ object b2Segment {
     __obj.asInstanceOf[b2Segment]
   }
   
-  @scala.inline
-  implicit class b2SegmentMutableBuilder[Self <: b2Segment] (val x: Self) extends AnyVal {
+  extension [Self <: b2Segment](x: Self) {
     
-    @scala.inline
-    def setExtend(value: b2AABB => Unit): Self = StObject.set(x, "Extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: b2AABB => Unit): Self = StObject.set(x, "Extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExtendBackward(value: b2AABB => Unit): Self = StObject.set(x, "ExtendBackward", js.Any.fromFunction1(value))
+    inline def setExtendBackward(value: b2AABB => Unit): Self = StObject.set(x, "ExtendBackward", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExtendForward(value: b2AABB => Unit): Self = StObject.set(x, "ExtendForward", js.Any.fromFunction1(value))
+    inline def setExtendForward(value: b2AABB => Unit): Self = StObject.set(x, "ExtendForward", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setP1(value: b2Vec2): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
+    inline def setP1(value: b2Vec2): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP2(value: b2Vec2): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
+    inline def setP2(value: b2Vec2): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestSegment(value: (js.Array[Double], b2Vec2, b2Segment, Double) => Boolean): Self = StObject.set(x, "TestSegment", js.Any.fromFunction4(value))
+    inline def setTestSegment(value: (js.Array[Double], b2Vec2, b2Segment, Double) => Boolean): Self = StObject.set(x, "TestSegment", js.Any.fromFunction4(value))
   }
 }

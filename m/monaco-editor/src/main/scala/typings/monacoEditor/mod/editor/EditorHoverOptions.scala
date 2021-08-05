@@ -15,22 +15,17 @@ trait EditorHoverOptions extends StObject {
 }
 object EditorHoverOptions {
   
-  @scala.inline
-  def apply(delay: Double, enabled: Boolean, sticky: Boolean): EditorHoverOptions = {
+  inline def apply(delay: Double, enabled: Boolean, sticky: Boolean): EditorHoverOptions = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], sticky = sticky.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorHoverOptions]
   }
   
-  @scala.inline
-  implicit class EditorHoverOptionsMutableBuilder[Self <: EditorHoverOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EditorHoverOptions](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+    inline def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
   }
 }

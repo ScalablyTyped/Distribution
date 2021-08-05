@@ -14,25 +14,19 @@ trait PlaylistLocalization extends StObject {
 }
 object PlaylistLocalization {
   
-  @scala.inline
-  def apply(): PlaylistLocalization = {
+  inline def apply(): PlaylistLocalization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlaylistLocalization]
   }
   
-  @scala.inline
-  implicit class PlaylistLocalizationMutableBuilder[Self <: PlaylistLocalization] (val x: Self) extends AnyVal {
+  extension [Self <: PlaylistLocalization](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

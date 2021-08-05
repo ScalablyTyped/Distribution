@@ -14,10 +14,8 @@ object getLaunchConfigurationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLaunchConfiguration(args: GetLaunchConfigurationArgs): js.Promise[GetLaunchConfigurationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchConfiguration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLaunchConfigurationResult]]
-  @scala.inline
-  def getLaunchConfiguration(args: GetLaunchConfigurationArgs, opts: InvokeOptions): js.Promise[GetLaunchConfigurationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchConfiguration")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLaunchConfigurationResult]]
+  inline def getLaunchConfiguration(args: GetLaunchConfigurationArgs): js.Promise[GetLaunchConfigurationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchConfiguration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLaunchConfigurationResult]]
+  inline def getLaunchConfiguration(args: GetLaunchConfigurationArgs, opts: InvokeOptions): js.Promise[GetLaunchConfigurationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchConfiguration")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLaunchConfigurationResult]]
   
   trait GetLaunchConfigurationArgs extends StObject {
     
@@ -28,17 +26,14 @@ object getLaunchConfigurationMod {
   }
   object GetLaunchConfigurationArgs {
     
-    @scala.inline
-    def apply(name: String): GetLaunchConfigurationArgs = {
+    inline def apply(name: String): GetLaunchConfigurationArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetLaunchConfigurationArgs]
     }
     
-    @scala.inline
-    implicit class GetLaunchConfigurationArgsMutableBuilder[Self <: GetLaunchConfigurationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetLaunchConfigurationArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,8 +136,7 @@ object getLaunchConfigurationMod {
   }
   object GetLaunchConfigurationResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       associatePublicIpAddress: Boolean,
       ebsBlockDevices: js.Array[GetLaunchConfigurationEbsBlockDevice],
@@ -167,80 +161,55 @@ object getLaunchConfigurationMod {
       __obj.asInstanceOf[GetLaunchConfigurationResult]
     }
     
-    @scala.inline
-    implicit class GetLaunchConfigurationResultMutableBuilder[Self <: GetLaunchConfigurationResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetLaunchConfigurationResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociatePublicIpAddress(value: Boolean): Self = StObject.set(x, "associatePublicIpAddress", value.asInstanceOf[js.Any])
+      inline def setAssociatePublicIpAddress(value: Boolean): Self = StObject.set(x, "associatePublicIpAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsBlockDevices(value: js.Array[GetLaunchConfigurationEbsBlockDevice]): Self = StObject.set(x, "ebsBlockDevices", value.asInstanceOf[js.Any])
+      inline def setEbsBlockDevices(value: js.Array[GetLaunchConfigurationEbsBlockDevice]): Self = StObject.set(x, "ebsBlockDevices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsBlockDevicesVarargs(value: GetLaunchConfigurationEbsBlockDevice*): Self = StObject.set(x, "ebsBlockDevices", js.Array(value :_*))
+      inline def setEbsBlockDevicesVarargs(value: GetLaunchConfigurationEbsBlockDevice*): Self = StObject.set(x, "ebsBlockDevices", js.Array(value :_*))
       
-      @scala.inline
-      def setEbsOptimized(value: Boolean): Self = StObject.set(x, "ebsOptimized", value.asInstanceOf[js.Any])
+      inline def setEbsOptimized(value: Boolean): Self = StObject.set(x, "ebsOptimized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableMonitoring(value: Boolean): Self = StObject.set(x, "enableMonitoring", value.asInstanceOf[js.Any])
+      inline def setEnableMonitoring(value: Boolean): Self = StObject.set(x, "enableMonitoring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEphemeralBlockDevices(value: js.Array[GetLaunchConfigurationEphemeralBlockDevice]): Self = StObject.set(x, "ephemeralBlockDevices", value.asInstanceOf[js.Any])
+      inline def setEphemeralBlockDevices(value: js.Array[GetLaunchConfigurationEphemeralBlockDevice]): Self = StObject.set(x, "ephemeralBlockDevices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEphemeralBlockDevicesVarargs(value: GetLaunchConfigurationEphemeralBlockDevice*): Self = StObject.set(x, "ephemeralBlockDevices", js.Array(value :_*))
+      inline def setEphemeralBlockDevicesVarargs(value: GetLaunchConfigurationEphemeralBlockDevice*): Self = StObject.set(x, "ephemeralBlockDevices", js.Array(value :_*))
       
-      @scala.inline
-      def setIamInstanceProfile(value: String): Self = StObject.set(x, "iamInstanceProfile", value.asInstanceOf[js.Any])
+      inline def setIamInstanceProfile(value: String): Self = StObject.set(x, "iamInstanceProfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
+      inline def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
+      inline def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementTenancy(value: String): Self = StObject.set(x, "placementTenancy", value.asInstanceOf[js.Any])
+      inline def setPlacementTenancy(value: String): Self = StObject.set(x, "placementTenancy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootBlockDevices(value: js.Array[GetLaunchConfigurationRootBlockDevice]): Self = StObject.set(x, "rootBlockDevices", value.asInstanceOf[js.Any])
+      inline def setRootBlockDevices(value: js.Array[GetLaunchConfigurationRootBlockDevice]): Self = StObject.set(x, "rootBlockDevices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootBlockDevicesVarargs(value: GetLaunchConfigurationRootBlockDevice*): Self = StObject.set(x, "rootBlockDevices", js.Array(value :_*))
+      inline def setRootBlockDevicesVarargs(value: GetLaunchConfigurationRootBlockDevice*): Self = StObject.set(x, "rootBlockDevices", js.Array(value :_*))
       
-      @scala.inline
-      def setSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
+      inline def setSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
+      inline def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setSpotPrice(value: String): Self = StObject.set(x, "spotPrice", value.asInstanceOf[js.Any])
+      inline def setSpotPrice(value: String): Self = StObject.set(x, "spotPrice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserData(value: String): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      inline def setUserData(value: String): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcClassicLinkId(value: String): Self = StObject.set(x, "vpcClassicLinkId", value.asInstanceOf[js.Any])
+      inline def setVpcClassicLinkId(value: String): Self = StObject.set(x, "vpcClassicLinkId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcClassicLinkSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "vpcClassicLinkSecurityGroups", value.asInstanceOf[js.Any])
+      inline def setVpcClassicLinkSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "vpcClassicLinkSecurityGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcClassicLinkSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "vpcClassicLinkSecurityGroups", js.Array(value :_*))
+      inline def setVpcClassicLinkSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "vpcClassicLinkSecurityGroups", js.Array(value :_*))
     }
   }
 }

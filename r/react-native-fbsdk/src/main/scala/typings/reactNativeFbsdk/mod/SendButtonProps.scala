@@ -19,22 +19,17 @@ trait SendButtonProps extends StObject {
 }
 object SendButtonProps {
   
-  @scala.inline
-  def apply(shareContent: ShareContent): SendButtonProps = {
+  inline def apply(shareContent: ShareContent): SendButtonProps = {
     val __obj = js.Dynamic.literal(shareContent = shareContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendButtonProps]
   }
   
-  @scala.inline
-  implicit class SendButtonPropsMutableBuilder[Self <: SendButtonProps] (val x: Self) extends AnyVal {
+  extension [Self <: SendButtonProps](x: Self) {
     
-    @scala.inline
-    def setShareContent(value: ShareContent): Self = StObject.set(x, "shareContent", value.asInstanceOf[js.Any])
+    inline def setShareContent(value: ShareContent): Self = StObject.set(x, "shareContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

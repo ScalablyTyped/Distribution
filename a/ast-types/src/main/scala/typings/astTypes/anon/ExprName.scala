@@ -19,37 +19,27 @@ trait ExprName extends StObject {
 }
 object ExprName {
   
-  @scala.inline
-  def apply(exprName: IdentifierKind | TSQualifiedNameKind | TSImportTypeKind): ExprName = {
+  inline def apply(exprName: IdentifierKind | TSQualifiedNameKind | TSImportTypeKind): ExprName = {
     val __obj = js.Dynamic.literal(exprName = exprName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExprName]
   }
   
-  @scala.inline
-  implicit class ExprNameMutableBuilder[Self <: ExprName] (val x: Self) extends AnyVal {
+  extension [Self <: ExprName](x: Self) {
     
-    @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsNull: Self = StObject.set(x, "comments", null)
+    inline def setCommentsNull: Self = StObject.set(x, "comments", null)
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setExprName(value: IdentifierKind | TSQualifiedNameKind | TSImportTypeKind): Self = StObject.set(x, "exprName", value.asInstanceOf[js.Any])
+    inline def setExprName(value: IdentifierKind | TSQualifiedNameKind | TSImportTypeKind): Self = StObject.set(x, "exprName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocNull: Self = StObject.set(x, "loc", null)
+    inline def setLocNull: Self = StObject.set(x, "loc", null)
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
   }
 }

@@ -18,16 +18,13 @@ trait ASPxClientReportDesignerDialogCancelEventArgs
 }
 object ASPxClientReportDesignerDialogCancelEventArgs {
   
-  @scala.inline
-  def apply(Cancel: Boolean, Report: js.Any, Url: String): ASPxClientReportDesignerDialogCancelEventArgs = {
+  inline def apply(Cancel: Boolean, Report: js.Any, Url: String): ASPxClientReportDesignerDialogCancelEventArgs = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Report = Report.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientReportDesignerDialogCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientReportDesignerDialogCancelEventArgsMutableBuilder[Self <: ASPxClientReportDesignerDialogCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientReportDesignerDialogCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
   }
 }

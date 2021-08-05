@@ -26,7 +26,7 @@ object digestAuthenticationMod {
     def this(loggerFactory: LoggerFactory, ha1: Unit, username: String, password: String) = this()
     def this(loggerFactory: LoggerFactory, ha1: Unit, username: Unit, password: String) = this()
     
-    var algorithm: js.Any = js.native
+    /* private */ var algorithm: js.Any = js.native
     
     /**
       * Performs Digest authentication given a SIP request and the challenge
@@ -41,41 +41,41 @@ object digestAuthenticationMod {
     /**
       * Generate Digest 'response' value.
       */
-    var calculateResponse: js.Any = js.native
+    /* private */ var calculateResponse: js.Any = js.native
     
-    var cnonce: js.Any = js.native
+    /* private */ var cnonce: js.Any = js.native
     
-    var ha1: js.Any = js.native
+    /* private */ var ha1: js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
-    var method: js.Any = js.native
+    /* private */ var method: js.Any = js.native
     
-    var nc: js.Any = js.native
+    /* private */ var nc: js.Any = js.native
     
-    var ncHex: js.Any = js.native
+    /* private */ var ncHex: js.Any = js.native
     
-    var nonce: js.Any = js.native
+    /* private */ var nonce: js.Any = js.native
     
-    var opaque: js.Any = js.native
+    /* private */ var opaque: js.Any = js.native
     
-    var password: js.Any = js.native
+    /* private */ var password: js.Any = js.native
     
-    var qop: js.Any = js.native
+    /* private */ var qop: js.Any = js.native
     
-    var realm: js.Any = js.native
+    /* private */ var realm: js.Any = js.native
     
-    var response: js.Any = js.native
+    /* private */ var response: js.Any = js.native
     
     var stale: js.UndefOr[Boolean] = js.native
     
     /**
       * Generate the 'nc' value as required by Digest in this.ncHex by reading this.nc.
       */
-    var updateNcHex: js.Any = js.native
+    /* private */ var updateNcHex: js.Any = js.native
     
-    var uri: js.Any = js.native
+    /* private */ var uri: js.Any = js.native
     
-    var username: js.Any = js.native
+    /* private */ var username: js.Any = js.native
   }
 }

@@ -17,26 +17,20 @@ trait CallInfo extends StObject {
 }
 object CallInfo {
   
-  @scala.inline
-  def apply(args: js.Array[js.Any], `object`: js.Any, returnValue: js.Any): CallInfo = {
+  inline def apply(args: js.Array[js.Any], `object`: js.Any, returnValue: js.Any): CallInfo = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallInfo]
   }
   
-  @scala.inline
-  implicit class CallInfoMutableBuilder[Self <: CallInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CallInfo](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

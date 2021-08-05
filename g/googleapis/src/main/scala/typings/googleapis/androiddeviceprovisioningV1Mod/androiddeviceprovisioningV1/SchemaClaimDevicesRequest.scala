@@ -18,22 +18,17 @@ trait SchemaClaimDevicesRequest extends StObject {
 }
 object SchemaClaimDevicesRequest {
   
-  @scala.inline
-  def apply(): SchemaClaimDevicesRequest = {
+  inline def apply(): SchemaClaimDevicesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClaimDevicesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaClaimDevicesRequestMutableBuilder[Self <: SchemaClaimDevicesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClaimDevicesRequest](x: Self) {
     
-    @scala.inline
-    def setClaims(value: js.Array[SchemaPartnerClaim]): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
+    inline def setClaims(value: js.Array[SchemaPartnerClaim]): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClaimsUndefined: Self = StObject.set(x, "claims", js.undefined)
+    inline def setClaimsUndefined: Self = StObject.set(x, "claims", js.undefined)
     
-    @scala.inline
-    def setClaimsVarargs(value: SchemaPartnerClaim*): Self = StObject.set(x, "claims", js.Array(value :_*))
+    inline def setClaimsVarargs(value: SchemaPartnerClaim*): Self = StObject.set(x, "claims", js.Array(value :_*))
   }
 }

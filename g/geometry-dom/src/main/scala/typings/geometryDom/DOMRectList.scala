@@ -21,19 +21,15 @@ trait DOMRectList extends StObject {
 }
 object DOMRectList {
   
-  @scala.inline
-  def apply(item: Double => DOMRect, length: Double): DOMRectList = {
+  inline def apply(item: Double => DOMRect, length: Double): DOMRectList = {
     val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMRectList]
   }
   
-  @scala.inline
-  implicit class DOMRectListMutableBuilder[Self <: DOMRectList] (val x: Self) extends AnyVal {
+  extension [Self <: DOMRectList](x: Self) {
     
-    @scala.inline
-    def setItem(value: Double => DOMRect): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => DOMRect): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

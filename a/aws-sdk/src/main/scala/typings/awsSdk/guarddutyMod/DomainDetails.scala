@@ -13,19 +13,15 @@ trait DomainDetails extends StObject {
 }
 object DomainDetails {
   
-  @scala.inline
-  def apply(): DomainDetails = {
+  inline def apply(): DomainDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainDetails]
   }
   
-  @scala.inline
-  implicit class DomainDetailsMutableBuilder[Self <: DomainDetails] (val x: Self) extends AnyVal {
+  extension [Self <: DomainDetails](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
   }
 }

@@ -18,16 +18,13 @@ trait DefaultFormatter extends StObject {
 }
 object DefaultFormatter {
   
-  @scala.inline
-  def apply(format: (DataTable, Double) => Unit): DefaultFormatter = {
+  inline def apply(format: (DataTable, Double) => Unit): DefaultFormatter = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format))
     __obj.asInstanceOf[DefaultFormatter]
   }
   
-  @scala.inline
-  implicit class DefaultFormatterMutableBuilder[Self <: DefaultFormatter] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultFormatter](x: Self) {
     
-    @scala.inline
-    def setFormat(value: (DataTable, Double) => Unit): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+    inline def setFormat(value: (DataTable, Double) => Unit): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
   }
 }

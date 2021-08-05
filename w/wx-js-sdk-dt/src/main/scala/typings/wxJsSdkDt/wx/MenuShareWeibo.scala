@@ -15,16 +15,13 @@ trait MenuShareWeibo
 }
 object MenuShareWeibo {
   
-  @scala.inline
-  def apply(desc: String, link: String, title: String): MenuShareWeibo = {
+  inline def apply(desc: String, link: String, title: String): MenuShareWeibo = {
     val __obj = js.Dynamic.literal(desc = desc.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuShareWeibo]
   }
   
-  @scala.inline
-  implicit class MenuShareWeiboMutableBuilder[Self <: MenuShareWeibo] (val x: Self) extends AnyVal {
+  extension [Self <: MenuShareWeibo](x: Self) {
     
-    @scala.inline
-    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
   }
 }

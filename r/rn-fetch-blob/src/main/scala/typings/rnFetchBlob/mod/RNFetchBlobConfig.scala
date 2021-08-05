@@ -55,73 +55,51 @@ trait RNFetchBlobConfig extends StObject {
 }
 object RNFetchBlobConfig {
   
-  @scala.inline
-  def apply(): RNFetchBlobConfig = {
+  inline def apply(): RNFetchBlobConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RNFetchBlobConfig]
   }
   
-  @scala.inline
-  implicit class RNFetchBlobConfigMutableBuilder[Self <: RNFetchBlobConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RNFetchBlobConfig](x: Self) {
     
-    @scala.inline
-    def setAddAndroidDownloads(value: AddAndroidDownloads): Self = StObject.set(x, "addAndroidDownloads", value.asInstanceOf[js.Any])
+    inline def setAddAndroidDownloads(value: AddAndroidDownloads): Self = StObject.set(x, "addAndroidDownloads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddAndroidDownloadsUndefined: Self = StObject.set(x, "addAndroidDownloads", js.undefined)
+    inline def setAddAndroidDownloadsUndefined: Self = StObject.set(x, "addAndroidDownloads", js.undefined)
     
-    @scala.inline
-    def setAppendExt(value: String): Self = StObject.set(x, "appendExt", value.asInstanceOf[js.Any])
+    inline def setAppendExt(value: String): Self = StObject.set(x, "appendExt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendExtUndefined: Self = StObject.set(x, "appendExt", js.undefined)
+    inline def setAppendExtUndefined: Self = StObject.set(x, "appendExt", js.undefined)
     
-    @scala.inline
-    def setFileCache(value: Boolean): Self = StObject.set(x, "fileCache", value.asInstanceOf[js.Any])
+    inline def setFileCache(value: Boolean): Self = StObject.set(x, "fileCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileCacheUndefined: Self = StObject.set(x, "fileCache", js.undefined)
+    inline def setFileCacheUndefined: Self = StObject.set(x, "fileCache", js.undefined)
     
-    @scala.inline
-    def setIOSBackgroundTask(value: Boolean): Self = StObject.set(x, "IOSBackgroundTask", value.asInstanceOf[js.Any])
+    inline def setIOSBackgroundTask(value: Boolean): Self = StObject.set(x, "IOSBackgroundTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIOSBackgroundTaskUndefined: Self = StObject.set(x, "IOSBackgroundTask", js.undefined)
+    inline def setIOSBackgroundTaskUndefined: Self = StObject.set(x, "IOSBackgroundTask", js.undefined)
     
-    @scala.inline
-    def setIndicator(value: Boolean): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+    inline def setIndicator(value: Boolean): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
+    inline def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
     
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setTrusty(value: Boolean): Self = StObject.set(x, "trusty", value.asInstanceOf[js.Any])
+    inline def setTrusty(value: Boolean): Self = StObject.set(x, "trusty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustyUndefined: Self = StObject.set(x, "trusty", js.undefined)
+    inline def setTrustyUndefined: Self = StObject.set(x, "trusty", js.undefined)
   }
 }

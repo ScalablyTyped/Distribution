@@ -13,22 +13,17 @@ trait WorkbookChartGridlinesFormat
 }
 object WorkbookChartGridlinesFormat {
   
-  @scala.inline
-  def apply(): WorkbookChartGridlinesFormat = {
+  inline def apply(): WorkbookChartGridlinesFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookChartGridlinesFormat]
   }
   
-  @scala.inline
-  implicit class WorkbookChartGridlinesFormatMutableBuilder[Self <: WorkbookChartGridlinesFormat] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookChartGridlinesFormat](x: Self) {
     
-    @scala.inline
-    def setLine(value: NullableOption[WorkbookChartLineFormat]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: NullableOption[WorkbookChartLineFormat]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNull: Self = StObject.set(x, "line", null)
+    inline def setLineNull: Self = StObject.set(x, "line", null)
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }
 }

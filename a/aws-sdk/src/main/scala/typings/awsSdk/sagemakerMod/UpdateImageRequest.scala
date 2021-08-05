@@ -33,43 +33,31 @@ trait UpdateImageRequest extends StObject {
 }
 object UpdateImageRequest {
   
-  @scala.inline
-  def apply(ImageName: ImageName): UpdateImageRequest = {
+  inline def apply(ImageName: ImageName): UpdateImageRequest = {
     val __obj = js.Dynamic.literal(ImageName = ImageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateImageRequest]
   }
   
-  @scala.inline
-  implicit class UpdateImageRequestMutableBuilder[Self <: UpdateImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateImageRequest](x: Self) {
     
-    @scala.inline
-    def setDeleteProperties(value: ImageDeletePropertyList): Self = StObject.set(x, "DeleteProperties", value.asInstanceOf[js.Any])
+    inline def setDeleteProperties(value: ImageDeletePropertyList): Self = StObject.set(x, "DeleteProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletePropertiesUndefined: Self = StObject.set(x, "DeleteProperties", js.undefined)
+    inline def setDeletePropertiesUndefined: Self = StObject.set(x, "DeleteProperties", js.undefined)
     
-    @scala.inline
-    def setDeletePropertiesVarargs(value: ImageDeleteProperty*): Self = StObject.set(x, "DeleteProperties", js.Array(value :_*))
+    inline def setDeletePropertiesVarargs(value: ImageDeleteProperty*): Self = StObject.set(x, "DeleteProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: ImageDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ImageDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: ImageDisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: ImageDisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
-    @scala.inline
-    def setImageName(value: ImageName): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
+    inline def setImageName(value: ImageName): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
   }
 }

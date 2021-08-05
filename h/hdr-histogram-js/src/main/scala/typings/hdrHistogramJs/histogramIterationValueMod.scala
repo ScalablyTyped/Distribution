@@ -62,8 +62,7 @@ object histogramIterationValueMod {
   }
   object HistogramIterationValue {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       countAddedInThisIterationStep: Double,
       countAtValueIteratedTo: Double,
       percentile: Double,
@@ -78,35 +77,25 @@ object histogramIterationValueMod {
       __obj.asInstanceOf[HistogramIterationValue]
     }
     
-    @scala.inline
-    implicit class HistogramIterationValueMutableBuilder[Self <: HistogramIterationValue] (val x: Self) extends AnyVal {
+    extension [Self <: HistogramIterationValue](x: Self) {
       
-      @scala.inline
-      def setCountAddedInThisIterationStep(value: Double): Self = StObject.set(x, "countAddedInThisIterationStep", value.asInstanceOf[js.Any])
+      inline def setCountAddedInThisIterationStep(value: Double): Self = StObject.set(x, "countAddedInThisIterationStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountAtValueIteratedTo(value: Double): Self = StObject.set(x, "countAtValueIteratedTo", value.asInstanceOf[js.Any])
+      inline def setCountAtValueIteratedTo(value: Double): Self = StObject.set(x, "countAtValueIteratedTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentile(value: Double): Self = StObject.set(x, "percentile", value.asInstanceOf[js.Any])
+      inline def setPercentile(value: Double): Self = StObject.set(x, "percentile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentileLevelIteratedTo(value: Double): Self = StObject.set(x, "percentileLevelIteratedTo", value.asInstanceOf[js.Any])
+      inline def setPercentileLevelIteratedTo(value: Double): Self = StObject.set(x, "percentileLevelIteratedTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTotalCountToThisValue(value: Double): Self = StObject.set(x, "totalCountToThisValue", value.asInstanceOf[js.Any])
+      inline def setTotalCountToThisValue(value: Double): Self = StObject.set(x, "totalCountToThisValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalValueToThisValue(value: Double): Self = StObject.set(x, "totalValueToThisValue", value.asInstanceOf[js.Any])
+      inline def setTotalValueToThisValue(value: Double): Self = StObject.set(x, "totalValueToThisValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueIteratedFrom(value: Double): Self = StObject.set(x, "valueIteratedFrom", value.asInstanceOf[js.Any])
+      inline def setValueIteratedFrom(value: Double): Self = StObject.set(x, "valueIteratedFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueIteratedTo(value: Double): Self = StObject.set(x, "valueIteratedTo", value.asInstanceOf[js.Any])
+      inline def setValueIteratedTo(value: Double): Self = StObject.set(x, "valueIteratedTo", value.asInstanceOf[js.Any])
     }
   }
 }

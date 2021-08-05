@@ -16,19 +16,15 @@ trait LimitRangeSpec extends StObject {
 }
 object LimitRangeSpec {
   
-  @scala.inline
-  def apply(limits: js.Array[LimitRangeItem]): LimitRangeSpec = {
+  inline def apply(limits: js.Array[LimitRangeItem]): LimitRangeSpec = {
     val __obj = js.Dynamic.literal(limits = limits.asInstanceOf[js.Any])
     __obj.asInstanceOf[LimitRangeSpec]
   }
   
-  @scala.inline
-  implicit class LimitRangeSpecMutableBuilder[Self <: LimitRangeSpec] (val x: Self) extends AnyVal {
+  extension [Self <: LimitRangeSpec](x: Self) {
     
-    @scala.inline
-    def setLimits(value: js.Array[LimitRangeItem]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: js.Array[LimitRangeItem]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitsVarargs(value: LimitRangeItem*): Self = StObject.set(x, "limits", js.Array(value :_*))
+    inline def setLimitsVarargs(value: LimitRangeItem*): Self = StObject.set(x, "limits", js.Array(value :_*))
   }
 }

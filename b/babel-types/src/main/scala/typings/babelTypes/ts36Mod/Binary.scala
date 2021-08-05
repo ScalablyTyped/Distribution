@@ -34,8 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Binary extends StObject
 object Binary {
   
-  @scala.inline
-  def BinaryExpression_(
+  inline def BinaryExpression_(
     end: Double,
     left: Expression,
     loc: SourceLocation,
@@ -48,8 +47,7 @@ object Binary {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.BinaryExpression_]
   }
   
-  @scala.inline
-  def LogicalExpression_(
+  inline def LogicalExpression_(
     end: Double,
     left: Expression,
     loc: SourceLocation,

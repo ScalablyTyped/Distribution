@@ -15,28 +15,21 @@ trait TargetVpnGatewaysScopedList extends StObject {
 }
 object TargetVpnGatewaysScopedList {
   
-  @scala.inline
-  def apply(): TargetVpnGatewaysScopedList = {
+  inline def apply(): TargetVpnGatewaysScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetVpnGatewaysScopedList]
   }
   
-  @scala.inline
-  implicit class TargetVpnGatewaysScopedListMutableBuilder[Self <: TargetVpnGatewaysScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: TargetVpnGatewaysScopedList](x: Self) {
     
-    @scala.inline
-    def setTargetVpnGateways(value: js.Array[TargetVpnGateway]): Self = StObject.set(x, "targetVpnGateways", value.asInstanceOf[js.Any])
+    inline def setTargetVpnGateways(value: js.Array[TargetVpnGateway]): Self = StObject.set(x, "targetVpnGateways", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVpnGatewaysUndefined: Self = StObject.set(x, "targetVpnGateways", js.undefined)
+    inline def setTargetVpnGatewaysUndefined: Self = StObject.set(x, "targetVpnGateways", js.undefined)
     
-    @scala.inline
-    def setTargetVpnGatewaysVarargs(value: TargetVpnGateway*): Self = StObject.set(x, "targetVpnGateways", js.Array(value :_*))
+    inline def setTargetVpnGatewaysVarargs(value: TargetVpnGateway*): Self = StObject.set(x, "targetVpnGateways", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

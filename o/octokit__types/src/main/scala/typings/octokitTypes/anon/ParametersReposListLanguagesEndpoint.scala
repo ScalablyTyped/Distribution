@@ -18,8 +18,7 @@ trait ParametersReposListLanguagesEndpoint extends StObject {
 }
 object ParametersReposListLanguagesEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposListLanguagesEndpoint,
     request: ReposListLanguagesRequestOptions,
     response: OctokitResponse[ReposListLanguagesResponseData]
@@ -28,16 +27,12 @@ object ParametersReposListLanguagesEndpoint {
     __obj.asInstanceOf[ParametersReposListLanguagesEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposListLanguagesEndpointMutableBuilder[Self <: ParametersReposListLanguagesEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposListLanguagesEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposListLanguagesEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposListLanguagesEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposListLanguagesRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposListLanguagesRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposListLanguagesResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposListLanguagesResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

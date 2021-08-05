@@ -13,25 +13,19 @@ trait BucketByTime extends StObject {
 }
 object BucketByTime {
   
-  @scala.inline
-  def apply(): BucketByTime = {
+  inline def apply(): BucketByTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketByTime]
   }
   
-  @scala.inline
-  implicit class BucketByTimeMutableBuilder[Self <: BucketByTime] (val x: Self) extends AnyVal {
+  extension [Self <: BucketByTime](x: Self) {
     
-    @scala.inline
-    def setDurationMillis(value: String): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
+    inline def setDurationMillis(value: String): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationMillisUndefined: Self = StObject.set(x, "durationMillis", js.undefined)
+    inline def setDurationMillisUndefined: Self = StObject.set(x, "durationMillis", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: BucketByTimePeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: BucketByTimePeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

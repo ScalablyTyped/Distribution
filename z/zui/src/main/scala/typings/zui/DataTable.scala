@@ -11,16 +11,13 @@ trait DataTable extends StObject {
 }
 object DataTable {
   
-  @scala.inline
-  def apply(checks: CheckedAll): DataTable = {
+  inline def apply(checks: CheckedAll): DataTable = {
     val __obj = js.Dynamic.literal(checks = checks.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTable]
   }
   
-  @scala.inline
-  implicit class DataTableMutableBuilder[Self <: DataTable] (val x: Self) extends AnyVal {
+  extension [Self <: DataTable](x: Self) {
     
-    @scala.inline
-    def setChecks(value: CheckedAll): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
+    inline def setChecks(value: CheckedAll): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
   }
 }

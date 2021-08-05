@@ -34,61 +34,43 @@ trait ServerConfig extends StObject {
 }
 object ServerConfig {
   
-  @scala.inline
-  def apply(hostKeys: js.Array[Buffer | String | EncryptedPrivateKey]): ServerConfig = {
+  inline def apply(hostKeys: js.Array[Buffer | String | EncryptedPrivateKey]): ServerConfig = {
     val __obj = js.Dynamic.literal(hostKeys = hostKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerConfig]
   }
   
-  @scala.inline
-  implicit class ServerConfigMutableBuilder[Self <: ServerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ServerConfig](x: Self) {
     
-    @scala.inline
-    def setAlgorithms(value: Algorithms): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+    inline def setAlgorithms(value: Algorithms): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+    inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
     
-    @scala.inline
-    def setBanner(value: String): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
+    inline def setBanner(value: String): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
+    inline def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
     
-    @scala.inline
-    def setDebug(value: /* information */ String => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    inline def setDebug(value: /* information */ String => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setGreeting(value: String): Self = StObject.set(x, "greeting", value.asInstanceOf[js.Any])
+    inline def setGreeting(value: String): Self = StObject.set(x, "greeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreetingUndefined: Self = StObject.set(x, "greeting", js.undefined)
+    inline def setGreetingUndefined: Self = StObject.set(x, "greeting", js.undefined)
     
-    @scala.inline
-    def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+    inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+    inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
     
-    @scala.inline
-    def setHostKeys(value: js.Array[Buffer | String | EncryptedPrivateKey]): Self = StObject.set(x, "hostKeys", value.asInstanceOf[js.Any])
+    inline def setHostKeys(value: js.Array[Buffer | String | EncryptedPrivateKey]): Self = StObject.set(x, "hostKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostKeysVarargs(value: (Buffer | String | EncryptedPrivateKey)*): Self = StObject.set(x, "hostKeys", js.Array(value :_*))
+    inline def setHostKeysVarargs(value: (Buffer | String | EncryptedPrivateKey)*): Self = StObject.set(x, "hostKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setIdent(value: String): Self = StObject.set(x, "ident", value.asInstanceOf[js.Any])
+    inline def setIdent(value: String): Self = StObject.set(x, "ident", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentUndefined: Self = StObject.set(x, "ident", js.undefined)
+    inline def setIdentUndefined: Self = StObject.set(x, "ident", js.undefined)
     
-    @scala.inline
-    def setMaxPacketSize(value: Double): Self = StObject.set(x, "maxPacketSize", value.asInstanceOf[js.Any])
+    inline def setMaxPacketSize(value: Double): Self = StObject.set(x, "maxPacketSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPacketSizeUndefined: Self = StObject.set(x, "maxPacketSize", js.undefined)
+    inline def setMaxPacketSizeUndefined: Self = StObject.set(x, "maxPacketSize", js.undefined)
   }
 }

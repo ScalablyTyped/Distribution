@@ -14,31 +14,23 @@ trait HistogramHistogramOptions extends StObject {
 }
 object HistogramHistogramOptions {
   
-  @scala.inline
-  def apply(): HistogramHistogramOptions = {
+  inline def apply(): HistogramHistogramOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistogramHistogramOptions]
   }
   
-  @scala.inline
-  implicit class HistogramHistogramOptionsMutableBuilder[Self <: HistogramHistogramOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HistogramHistogramOptions](x: Self) {
     
-    @scala.inline
-    def setBucketSize(value: Double): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
+    inline def setBucketSize(value: Double): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
+    inline def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
     
-    @scala.inline
-    def setHideBucketItems(value: Boolean): Self = StObject.set(x, "hideBucketItems", value.asInstanceOf[js.Any])
+    inline def setHideBucketItems(value: Boolean): Self = StObject.set(x, "hideBucketItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideBucketItemsUndefined: Self = StObject.set(x, "hideBucketItems", js.undefined)
+    inline def setHideBucketItemsUndefined: Self = StObject.set(x, "hideBucketItems", js.undefined)
     
-    @scala.inline
-    def setLastBucketPercentile(value: Double): Self = StObject.set(x, "lastBucketPercentile", value.asInstanceOf[js.Any])
+    inline def setLastBucketPercentile(value: Double): Self = StObject.set(x, "lastBucketPercentile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastBucketPercentileUndefined: Self = StObject.set(x, "lastBucketPercentile", js.undefined)
+    inline def setLastBucketPercentileUndefined: Self = StObject.set(x, "lastBucketPercentile", js.undefined)
   }
 }

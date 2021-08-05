@@ -92,10 +92,8 @@ object Ornament {
   @JSImport("vexflow", "Flow.Ornament.DEBUG")
   @js.native
   def DEBUG: Boolean = js.native
-  @scala.inline
-  def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
+  inline def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def format(ornaments: js.Array[typings.vexflow.Vex.Flow.Ornament], state: Leftshift): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(ornaments.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def format(ornaments: js.Array[typings.vexflow.Vex.Flow.Ornament], state: Leftshift): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(ornaments.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

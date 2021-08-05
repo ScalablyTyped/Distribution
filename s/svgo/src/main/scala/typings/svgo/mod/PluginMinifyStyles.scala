@@ -12,16 +12,13 @@ trait PluginMinifyStyles
 }
 object PluginMinifyStyles {
   
-  @scala.inline
-  def apply(minifyStyles: Boolean | js.Object): PluginMinifyStyles = {
+  inline def apply(minifyStyles: Boolean | js.Object): PluginMinifyStyles = {
     val __obj = js.Dynamic.literal(minifyStyles = minifyStyles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginMinifyStyles]
   }
   
-  @scala.inline
-  implicit class PluginMinifyStylesMutableBuilder[Self <: PluginMinifyStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PluginMinifyStyles](x: Self) {
     
-    @scala.inline
-    def setMinifyStyles(value: Boolean | js.Object): Self = StObject.set(x, "minifyStyles", value.asInstanceOf[js.Any])
+    inline def setMinifyStyles(value: Boolean | js.Object): Self = StObject.set(x, "minifyStyles", value.asInstanceOf[js.Any])
   }
 }

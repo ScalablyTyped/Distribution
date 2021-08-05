@@ -13,19 +13,15 @@ trait CancelStatementResponse extends StObject {
 }
 object CancelStatementResponse {
   
-  @scala.inline
-  def apply(): CancelStatementResponse = {
+  inline def apply(): CancelStatementResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelStatementResponse]
   }
   
-  @scala.inline
-  implicit class CancelStatementResponseMutableBuilder[Self <: CancelStatementResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CancelStatementResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Boolean): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Boolean): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -23,28 +23,21 @@ trait Tmpfs extends StObject {
 }
 object Tmpfs {
   
-  @scala.inline
-  def apply(containerPath: String, size: Integer): Tmpfs = {
+  inline def apply(containerPath: String, size: Integer): Tmpfs = {
     val __obj = js.Dynamic.literal(containerPath = containerPath.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tmpfs]
   }
   
-  @scala.inline
-  implicit class TmpfsMutableBuilder[Self <: Tmpfs] (val x: Self) extends AnyVal {
+  extension [Self <: Tmpfs](x: Self) {
     
-    @scala.inline
-    def setContainerPath(value: String): Self = StObject.set(x, "containerPath", value.asInstanceOf[js.Any])
+    inline def setContainerPath(value: String): Self = StObject.set(x, "containerPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountOptions(value: StringList): Self = StObject.set(x, "mountOptions", value.asInstanceOf[js.Any])
+    inline def setMountOptions(value: StringList): Self = StObject.set(x, "mountOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountOptionsUndefined: Self = StObject.set(x, "mountOptions", js.undefined)
+    inline def setMountOptionsUndefined: Self = StObject.set(x, "mountOptions", js.undefined)
     
-    @scala.inline
-    def setMountOptionsVarargs(value: String*): Self = StObject.set(x, "mountOptions", js.Array(value :_*))
+    inline def setMountOptionsVarargs(value: String*): Self = StObject.set(x, "mountOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setSize(value: Integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

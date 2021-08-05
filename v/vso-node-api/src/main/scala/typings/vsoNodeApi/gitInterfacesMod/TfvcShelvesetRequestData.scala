@@ -43,8 +43,7 @@ trait TfvcShelvesetRequestData extends StObject {
 }
 object TfvcShelvesetRequestData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     includeDetails: Boolean,
     includeLinks: Boolean,
     includeWorkItems: Boolean,
@@ -57,28 +56,20 @@ object TfvcShelvesetRequestData {
     __obj.asInstanceOf[TfvcShelvesetRequestData]
   }
   
-  @scala.inline
-  implicit class TfvcShelvesetRequestDataMutableBuilder[Self <: TfvcShelvesetRequestData] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcShelvesetRequestData](x: Self) {
     
-    @scala.inline
-    def setIncludeDetails(value: Boolean): Self = StObject.set(x, "includeDetails", value.asInstanceOf[js.Any])
+    inline def setIncludeDetails(value: Boolean): Self = StObject.set(x, "includeDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
+    inline def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeWorkItems(value: Boolean): Self = StObject.set(x, "includeWorkItems", value.asInstanceOf[js.Any])
+    inline def setIncludeWorkItems(value: Boolean): Self = StObject.set(x, "includeWorkItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxChangeCount(value: Double): Self = StObject.set(x, "maxChangeCount", value.asInstanceOf[js.Any])
+    inline def setMaxChangeCount(value: Double): Self = StObject.set(x, "maxChangeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCommentLength(value: Double): Self = StObject.set(x, "maxCommentLength", value.asInstanceOf[js.Any])
+    inline def setMaxCommentLength(value: Double): Self = StObject.set(x, "maxCommentLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
   }
 }

@@ -29,37 +29,27 @@ trait IPaymentIntentCaptureOptions extends StObject {
 }
 object IPaymentIntentCaptureOptions {
   
-  @scala.inline
-  def apply(): IPaymentIntentCaptureOptions = {
+  inline def apply(): IPaymentIntentCaptureOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPaymentIntentCaptureOptions]
   }
   
-  @scala.inline
-  implicit class IPaymentIntentCaptureOptionsMutableBuilder[Self <: IPaymentIntentCaptureOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPaymentIntentCaptureOptions](x: Self) {
     
-    @scala.inline
-    def setAmount_to_capture(value: Double): Self = StObject.set(x, "amount_to_capture", value.asInstanceOf[js.Any])
+    inline def setAmount_to_capture(value: Double): Self = StObject.set(x, "amount_to_capture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmount_to_captureUndefined: Self = StObject.set(x, "amount_to_capture", js.undefined)
+    inline def setAmount_to_captureUndefined: Self = StObject.set(x, "amount_to_capture", js.undefined)
     
-    @scala.inline
-    def setApplication_fee_amount(value: Double): Self = StObject.set(x, "application_fee_amount", value.asInstanceOf[js.Any])
+    inline def setApplication_fee_amount(value: Double): Self = StObject.set(x, "application_fee_amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication_fee_amountUndefined: Self = StObject.set(x, "application_fee_amount", js.undefined)
+    inline def setApplication_fee_amountUndefined: Self = StObject.set(x, "application_fee_amount", js.undefined)
     
-    @scala.inline
-    def setOn_behalf_of(value: String): Self = StObject.set(x, "on_behalf_of", value.asInstanceOf[js.Any])
+    inline def setOn_behalf_of(value: String): Self = StObject.set(x, "on_behalf_of", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn_behalf_ofUndefined: Self = StObject.set(x, "on_behalf_of", js.undefined)
+    inline def setOn_behalf_ofUndefined: Self = StObject.set(x, "on_behalf_of", js.undefined)
     
-    @scala.inline
-    def setTransfer_data(value: ISetupIntentTransferData): Self = StObject.set(x, "transfer_data", value.asInstanceOf[js.Any])
+    inline def setTransfer_data(value: ISetupIntentTransferData): Self = StObject.set(x, "transfer_data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransfer_dataUndefined: Self = StObject.set(x, "transfer_data", js.undefined)
+    inline def setTransfer_dataUndefined: Self = StObject.set(x, "transfer_data", js.undefined)
   }
 }

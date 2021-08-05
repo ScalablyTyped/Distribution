@@ -12,19 +12,15 @@ trait Typeofpower extends StObject {
 }
 object Typeofpower {
   
-  @scala.inline
-  def apply(releaseKeepAwake: () => Unit, requestKeepAwake: String => Unit): Typeofpower = {
+  inline def apply(releaseKeepAwake: () => Unit, requestKeepAwake: String => Unit): Typeofpower = {
     val __obj = js.Dynamic.literal(releaseKeepAwake = js.Any.fromFunction0(releaseKeepAwake), requestKeepAwake = js.Any.fromFunction1(requestKeepAwake))
     __obj.asInstanceOf[Typeofpower]
   }
   
-  @scala.inline
-  implicit class TypeofpowerMutableBuilder[Self <: Typeofpower] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofpower](x: Self) {
     
-    @scala.inline
-    def setReleaseKeepAwake(value: () => Unit): Self = StObject.set(x, "releaseKeepAwake", js.Any.fromFunction0(value))
+    inline def setReleaseKeepAwake(value: () => Unit): Self = StObject.set(x, "releaseKeepAwake", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequestKeepAwake(value: String => Unit): Self = StObject.set(x, "requestKeepAwake", js.Any.fromFunction1(value))
+    inline def setRequestKeepAwake(value: String => Unit): Self = StObject.set(x, "requestKeepAwake", js.Any.fromFunction1(value))
   }
 }

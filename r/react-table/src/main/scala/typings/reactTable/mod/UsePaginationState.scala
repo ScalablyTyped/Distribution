@@ -12,19 +12,15 @@ trait UsePaginationState[D /* <: js.Object */] extends StObject {
 }
 object UsePaginationState {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](pageIndex: Double, pageSize: Double): UsePaginationState[D] = {
+  inline def apply[D /* <: js.Object */](pageIndex: Double, pageSize: Double): UsePaginationState[D] = {
     val __obj = js.Dynamic.literal(pageIndex = pageIndex.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsePaginationState[D]]
   }
   
-  @scala.inline
-  implicit class UsePaginationStateMutableBuilder[Self <: UsePaginationState[?], D /* <: js.Object */] (val x: Self & UsePaginationState[D]) extends AnyVal {
+  extension [Self <: UsePaginationState[?], D /* <: js.Object */](x: Self & UsePaginationState[D]) {
     
-    @scala.inline
-    def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
+    inline def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
   }
 }

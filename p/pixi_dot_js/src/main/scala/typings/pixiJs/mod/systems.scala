@@ -216,8 +216,8 @@ object systems {
       *
       * @protected
       */
-    /* CompleteClass */
-    /* protected */ override def getExtensions(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def getExtensions(): Unit = js.native
     
     /**
       * Handles a lost webgl context
@@ -225,16 +225,16 @@ object systems {
       * @protected
       * @param {WebGLContextEvent} event - The context lost event.
       */
-    /* CompleteClass */
-    /* protected */ override def handleContextLost(event: WebGLContextEvent): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def handleContextLost(event: WebGLContextEvent): Unit = js.native
     
     /**
       * Handles a restored webgl context
       *
       * @protected
       */
-    /* CompleteClass */
-    /* protected */ override def handleContextRestored(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def handleContextRestored(): Unit = js.native
     
     /**
       * Initialize the context
@@ -242,8 +242,8 @@ object systems {
       * @protected
       * @param {WebGLRenderingContext} gl - WebGL context
       */
-    /* CompleteClass */
-    /* protected */ override def initFromContext(gl: WebGLRenderingContext): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def initFromContext(gl: WebGLRenderingContext): Unit = js.native
     
     /**
       * Initialize from context options
@@ -252,8 +252,8 @@ object systems {
       * @see https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext
       * @param {object} options - context attributes
       */
-    /* CompleteClass */
-    /* protected */ override def initFromOptions(options: js.Any): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def initFromOptions(options: js.Any): Unit = js.native
     
     /**
       * `true` if the context is lost
@@ -268,8 +268,8 @@ object systems {
       *
       * @protected
       */
-    /* CompleteClass */
-    /* protected */ override def postrender(): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def postrender(): Unit = js.native
     
     /**
       * The renderer this manager works for.
@@ -285,8 +285,8 @@ object systems {
       * @protected
       * @param {WebGLRenderingContext} gl - Render context
       */
-    /* CompleteClass */
-    /* protected */ override def validateContext(gl: WebGLRenderingContext): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def validateContext(gl: WebGLRenderingContext): Unit = js.native
     
     /**
       * Either 1 or 2 to reflect the WebGL version being used
@@ -646,7 +646,7 @@ object systems {
       * @member {boolean} PIXI.systems.StateSystem#_blendEq
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _blendEq: Boolean = js.native
     
     /**

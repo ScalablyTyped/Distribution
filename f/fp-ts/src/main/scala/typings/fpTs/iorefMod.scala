@@ -29,6 +29,5 @@ object iorefMod {
     def write(a: A): IO_[Unit] = js.native
   }
   
-  @scala.inline
-  def newIORef[A](a: A): IO_[IORef[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("newIORef")(a.asInstanceOf[js.Any]).asInstanceOf[IO_[IORef[A]]]
+  inline def newIORef[A](a: A): IO_[IORef[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("newIORef")(a.asInstanceOf[js.Any]).asInstanceOf[IO_[IORef[A]]]
 }

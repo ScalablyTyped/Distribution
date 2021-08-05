@@ -17,22 +17,17 @@ trait StepperConstants extends StObject {
 }
 object StepperConstants {
   
-  @scala.inline
-  def apply(DIRECTION: CCW, RUNSTATE: ACCEL, TYPE: DRIVER): StepperConstants = {
+  inline def apply(DIRECTION: CCW, RUNSTATE: ACCEL, TYPE: DRIVER): StepperConstants = {
     val __obj = js.Dynamic.literal(DIRECTION = DIRECTION.asInstanceOf[js.Any], RUNSTATE = RUNSTATE.asInstanceOf[js.Any], TYPE = TYPE.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepperConstants]
   }
   
-  @scala.inline
-  implicit class StepperConstantsMutableBuilder[Self <: StepperConstants] (val x: Self) extends AnyVal {
+  extension [Self <: StepperConstants](x: Self) {
     
-    @scala.inline
-    def setDIRECTION(value: CCW): Self = StObject.set(x, "DIRECTION", value.asInstanceOf[js.Any])
+    inline def setDIRECTION(value: CCW): Self = StObject.set(x, "DIRECTION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRUNSTATE(value: ACCEL): Self = StObject.set(x, "RUNSTATE", value.asInstanceOf[js.Any])
+    inline def setRUNSTATE(value: ACCEL): Self = StObject.set(x, "RUNSTATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTYPE(value: DRIVER): Self = StObject.set(x, "TYPE", value.asInstanceOf[js.Any])
+    inline def setTYPE(value: DRIVER): Self = StObject.set(x, "TYPE", value.asInstanceOf[js.Any])
   }
 }

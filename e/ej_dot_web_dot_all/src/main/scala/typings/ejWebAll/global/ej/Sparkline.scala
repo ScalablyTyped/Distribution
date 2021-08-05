@@ -52,8 +52,7 @@ object Sparkline {
   @JSGlobal("ej.Sparkline.Locale")
   @js.native
   def Locale: js.Any = js.native
-  @scala.inline
-  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.Sparkline.Theme")
   @js.native
@@ -105,6 +104,5 @@ object Sparkline {
   @JSGlobal("ej.Sparkline.fn")
   @js.native
   def fn: typings.ejWebAll.ej.Sparkline = js.native
-  @scala.inline
-  def fn_=(x: typings.ejWebAll.ej.Sparkline): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.ejWebAll.ej.Sparkline): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

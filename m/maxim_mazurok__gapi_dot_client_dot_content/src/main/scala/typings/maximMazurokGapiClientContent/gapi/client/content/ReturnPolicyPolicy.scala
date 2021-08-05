@@ -29,31 +29,23 @@ trait ReturnPolicyPolicy extends StObject {
 }
 object ReturnPolicyPolicy {
   
-  @scala.inline
-  def apply(): ReturnPolicyPolicy = {
+  inline def apply(): ReturnPolicyPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReturnPolicyPolicy]
   }
   
-  @scala.inline
-  implicit class ReturnPolicyPolicyMutableBuilder[Self <: ReturnPolicyPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnPolicyPolicy](x: Self) {
     
-    @scala.inline
-    def setLastReturnDate(value: String): Self = StObject.set(x, "lastReturnDate", value.asInstanceOf[js.Any])
+    inline def setLastReturnDate(value: String): Self = StObject.set(x, "lastReturnDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastReturnDateUndefined: Self = StObject.set(x, "lastReturnDate", js.undefined)
+    inline def setLastReturnDateUndefined: Self = StObject.set(x, "lastReturnDate", js.undefined)
     
-    @scala.inline
-    def setNumberOfDays(value: String): Self = StObject.set(x, "numberOfDays", value.asInstanceOf[js.Any])
+    inline def setNumberOfDays(value: String): Self = StObject.set(x, "numberOfDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfDaysUndefined: Self = StObject.set(x, "numberOfDays", js.undefined)
+    inline def setNumberOfDaysUndefined: Self = StObject.set(x, "numberOfDays", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

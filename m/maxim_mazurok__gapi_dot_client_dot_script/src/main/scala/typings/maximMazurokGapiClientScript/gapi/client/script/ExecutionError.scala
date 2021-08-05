@@ -17,34 +17,25 @@ trait ExecutionError extends StObject {
 }
 object ExecutionError {
   
-  @scala.inline
-  def apply(): ExecutionError = {
+  inline def apply(): ExecutionError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecutionError]
   }
   
-  @scala.inline
-  implicit class ExecutionErrorMutableBuilder[Self <: ExecutionError] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionError](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
+    inline def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorTypeUndefined: Self = StObject.set(x, "errorType", js.undefined)
+    inline def setErrorTypeUndefined: Self = StObject.set(x, "errorType", js.undefined)
     
-    @scala.inline
-    def setScriptStackTraceElements(value: js.Array[ScriptStackTraceElement]): Self = StObject.set(x, "scriptStackTraceElements", value.asInstanceOf[js.Any])
+    inline def setScriptStackTraceElements(value: js.Array[ScriptStackTraceElement]): Self = StObject.set(x, "scriptStackTraceElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptStackTraceElementsUndefined: Self = StObject.set(x, "scriptStackTraceElements", js.undefined)
+    inline def setScriptStackTraceElementsUndefined: Self = StObject.set(x, "scriptStackTraceElements", js.undefined)
     
-    @scala.inline
-    def setScriptStackTraceElementsVarargs(value: ScriptStackTraceElement*): Self = StObject.set(x, "scriptStackTraceElements", js.Array(value :_*))
+    inline def setScriptStackTraceElementsVarargs(value: ScriptStackTraceElement*): Self = StObject.set(x, "scriptStackTraceElements", js.Array(value :_*))
   }
 }

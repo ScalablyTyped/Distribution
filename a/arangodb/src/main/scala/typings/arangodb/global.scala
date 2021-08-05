@@ -15,39 +15,31 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def route(handler: Handler): Endpoint = ^.asInstanceOf[js.Dynamic].applyDynamic("route")(handler.asInstanceOf[js.Any]).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(handler: Handler, name: String): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(pathOrMiddleware: String, handler: Handler): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(pathOrMiddleware: String, handler: Handler, name: String): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(handler: Handler): Endpoint = ^.asInstanceOf[js.Dynamic].applyDynamic("route")(handler.asInstanceOf[js.Any]).asInstanceOf[Endpoint]
+    inline def route(handler: Handler, name: String): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def route(pathOrMiddleware: String, handler: Handler): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def route(pathOrMiddleware: String, handler: Handler, name: String): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
       handler: Handler
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
       handler: Handler,
       name: String
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
       middleware3: SimpleMiddleware,
       handler: Handler
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -55,8 +47,7 @@ object global {
       handler: Handler,
       name: String
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -64,8 +55,7 @@ object global {
       middleware4: SimpleMiddleware,
       handler: Handler
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -74,8 +64,7 @@ object global {
       handler: Handler,
       name: String
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -84,8 +73,7 @@ object global {
       middleware5: SimpleMiddleware,
       handler: Handler
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -95,8 +83,7 @@ object global {
       handler: Handler,
       name: String
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -106,8 +93,7 @@ object global {
       middleware6: SimpleMiddleware,
       handler: Handler
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], middleware6.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -118,8 +104,7 @@ object global {
       handler: Handler,
       name: String
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], middleware6.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -130,8 +115,7 @@ object global {
       middleware7: SimpleMiddleware,
       handler: Handler
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], middleware6.asInstanceOf[js.Any], middleware7.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -143,8 +127,7 @@ object global {
       handler: Handler,
       name: String
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], middleware6.asInstanceOf[js.Any], middleware7.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -156,8 +139,7 @@ object global {
       middleware8: SimpleMiddleware,
       handler: Handler
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], middleware6.asInstanceOf[js.Any], middleware7.asInstanceOf[js.Any], middleware8.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -170,8 +152,7 @@ object global {
       handler: Handler,
       name: String
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], middleware6.asInstanceOf[js.Any], middleware7.asInstanceOf[js.Any], middleware8.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -184,8 +165,7 @@ object global {
       middleware9: SimpleMiddleware,
       handler: Handler
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], middleware6.asInstanceOf[js.Any], middleware7.asInstanceOf[js.Any], middleware8.asInstanceOf[js.Any], middleware9.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: String,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -199,39 +179,31 @@ object global {
       handler: Handler,
       name: String
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], middleware6.asInstanceOf[js.Any], middleware7.asInstanceOf[js.Any], middleware8.asInstanceOf[js.Any], middleware9.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(pathOrMiddleware: String, middleware: SimpleMiddleware, handler: Handler): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(pathOrMiddleware: String, middleware: SimpleMiddleware, handler: Handler, name: String): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(pathOrMiddleware: SimpleMiddleware, handler: Handler): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(pathOrMiddleware: SimpleMiddleware, handler: Handler, name: String): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(pathOrMiddleware: String, middleware: SimpleMiddleware, handler: Handler): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def route(pathOrMiddleware: String, middleware: SimpleMiddleware, handler: Handler, name: String): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def route(pathOrMiddleware: SimpleMiddleware, handler: Handler): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def route(pathOrMiddleware: SimpleMiddleware, handler: Handler, name: String): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
       handler: Handler
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
       handler: Handler,
       name: String
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
       middleware3: SimpleMiddleware,
       handler: Handler
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -239,8 +211,7 @@ object global {
       handler: Handler,
       name: String
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -248,8 +219,7 @@ object global {
       middleware4: SimpleMiddleware,
       handler: Handler
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -258,8 +228,7 @@ object global {
       handler: Handler,
       name: String
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -268,8 +237,7 @@ object global {
       middleware5: SimpleMiddleware,
       handler: Handler
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -279,8 +247,7 @@ object global {
       handler: Handler,
       name: String
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -290,8 +257,7 @@ object global {
       middleware6: SimpleMiddleware,
       handler: Handler
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], middleware6.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -302,8 +268,7 @@ object global {
       handler: Handler,
       name: String
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], middleware6.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -314,8 +279,7 @@ object global {
       middleware7: SimpleMiddleware,
       handler: Handler
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], middleware6.asInstanceOf[js.Any], middleware7.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -327,8 +291,7 @@ object global {
       handler: Handler,
       name: String
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], middleware6.asInstanceOf[js.Any], middleware7.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -340,8 +303,7 @@ object global {
       middleware8: SimpleMiddleware,
       handler: Handler
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], middleware6.asInstanceOf[js.Any], middleware7.asInstanceOf[js.Any], middleware8.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -354,8 +316,7 @@ object global {
       handler: Handler,
       name: String
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], middleware6.asInstanceOf[js.Any], middleware7.asInstanceOf[js.Any], middleware8.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -368,8 +329,7 @@ object global {
       middleware9: SimpleMiddleware,
       handler: Handler
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], middleware6.asInstanceOf[js.Any], middleware7.asInstanceOf[js.Any], middleware8.asInstanceOf[js.Any], middleware9.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(
+    inline def route(
       pathOrMiddleware: SimpleMiddleware,
       middleware1: SimpleMiddleware,
       middleware2: SimpleMiddleware,
@@ -383,9 +343,7 @@ object global {
       handler: Handler,
       name: String
     ): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware1.asInstanceOf[js.Any], middleware2.asInstanceOf[js.Any], middleware3.asInstanceOf[js.Any], middleware4.asInstanceOf[js.Any], middleware5.asInstanceOf[js.Any], middleware6.asInstanceOf[js.Any], middleware7.asInstanceOf[js.Any], middleware8.asInstanceOf[js.Any], middleware9.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(pathOrMiddleware: SimpleMiddleware, middleware: SimpleMiddleware, handler: Handler): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
-    @scala.inline
-    def route(pathOrMiddleware: SimpleMiddleware, middleware: SimpleMiddleware, handler: Handler, name: String): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def route(pathOrMiddleware: SimpleMiddleware, middleware: SimpleMiddleware, handler: Handler): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    inline def route(pathOrMiddleware: SimpleMiddleware, middleware: SimpleMiddleware, handler: Handler, name: String): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(pathOrMiddleware.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
   }
 }

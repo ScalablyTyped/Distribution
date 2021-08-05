@@ -10,16 +10,13 @@ trait PlayRequest extends StObject {
 }
 object PlayRequest {
   
-  @scala.inline
-  def apply(customData: js.Object): PlayRequest = {
+  inline def apply(customData: js.Object): PlayRequest = {
     val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayRequest]
   }
   
-  @scala.inline
-  implicit class PlayRequestMutableBuilder[Self <: PlayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PlayRequest](x: Self) {
     
-    @scala.inline
-    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
   }
 }

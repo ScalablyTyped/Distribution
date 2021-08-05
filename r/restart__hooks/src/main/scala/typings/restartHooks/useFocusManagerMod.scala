@@ -12,8 +12,7 @@ object useFocusManagerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(opts: FocusManagerOptions): FocusController = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[FocusController]
+  inline def default(opts: FocusManagerOptions): FocusController = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[FocusController]
   
   trait FocusController extends StObject {
     
@@ -23,20 +22,16 @@ object useFocusManagerMod {
   }
   object FocusController {
     
-    @scala.inline
-    def apply(onBlur: js.Any => Unit, onFocus: js.Any => Unit): FocusController = {
+    inline def apply(onBlur: js.Any => Unit, onFocus: js.Any => Unit): FocusController = {
       val __obj = js.Dynamic.literal(onBlur = js.Any.fromFunction1(onBlur), onFocus = js.Any.fromFunction1(onFocus))
       __obj.asInstanceOf[FocusController]
     }
     
-    @scala.inline
-    implicit class FocusControllerMutableBuilder[Self <: FocusController] (val x: Self) extends AnyVal {
+    extension [Self <: FocusController](x: Self) {
       
-      @scala.inline
-      def setOnBlur(value: js.Any => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: js.Any => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocus(value: js.Any => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: js.Any => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     }
   }
   
@@ -67,35 +62,26 @@ object useFocusManagerMod {
   }
   object FocusManagerOptions {
     
-    @scala.inline
-    def apply(isDisabled: () => Boolean): FocusManagerOptions = {
+    inline def apply(isDisabled: () => Boolean): FocusManagerOptions = {
       val __obj = js.Dynamic.literal(isDisabled = js.Any.fromFunction0(isDisabled))
       __obj.asInstanceOf[FocusManagerOptions]
     }
     
-    @scala.inline
-    implicit class FocusManagerOptionsMutableBuilder[Self <: FocusManagerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FocusManagerOptions](x: Self) {
       
-      @scala.inline
-      def setDidHandle(value: (/* focused */ Boolean, /* event */ FocusEvent[Element]) => Unit): Self = StObject.set(x, "didHandle", js.Any.fromFunction2(value))
+      inline def setDidHandle(value: (/* focused */ Boolean, /* event */ FocusEvent[Element]) => Unit): Self = StObject.set(x, "didHandle", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDidHandleUndefined: Self = StObject.set(x, "didHandle", js.undefined)
+      inline def setDidHandleUndefined: Self = StObject.set(x, "didHandle", js.undefined)
       
-      @scala.inline
-      def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnChange(value: (/* focused */ Boolean, /* event */ FocusEvent[Element]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* focused */ Boolean, /* event */ FocusEvent[Element]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setWillHandle(value: (/* focused */ Boolean, /* event */ FocusEvent[Element]) => Boolean | Unit): Self = StObject.set(x, "willHandle", js.Any.fromFunction2(value))
+      inline def setWillHandle(value: (/* focused */ Boolean, /* event */ FocusEvent[Element]) => Boolean | Unit): Self = StObject.set(x, "willHandle", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWillHandleUndefined: Self = StObject.set(x, "willHandle", js.undefined)
+      inline def setWillHandleUndefined: Self = StObject.set(x, "willHandle", js.undefined)
     }
   }
 }

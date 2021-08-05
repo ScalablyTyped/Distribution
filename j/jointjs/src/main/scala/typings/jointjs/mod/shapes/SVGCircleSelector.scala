@@ -14,19 +14,15 @@ trait SVGCircleSelector
 }
 object SVGCircleSelector {
   
-  @scala.inline
-  def apply(): SVGCircleSelector = {
+  inline def apply(): SVGCircleSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SVGCircleSelector]
   }
   
-  @scala.inline
-  implicit class SVGCircleSelectorMutableBuilder[Self <: SVGCircleSelector] (val x: Self) extends AnyVal {
+  extension [Self <: SVGCircleSelector](x: Self) {
     
-    @scala.inline
-    def setCircle(value: SVGCircleAttributes): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: SVGCircleAttributes): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+    inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
   }
 }

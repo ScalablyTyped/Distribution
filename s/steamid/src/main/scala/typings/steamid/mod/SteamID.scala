@@ -56,8 +56,7 @@ trait SteamID extends StObject {
 }
 object SteamID {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accountid: Double,
     getSteam2RenderedID: /* newerFormat */ js.UndefOr[Boolean] => String,
     getSteam3RenderedID: () => String,
@@ -78,46 +77,32 @@ object SteamID {
     __obj.asInstanceOf[SteamID]
   }
   
-  @scala.inline
-  implicit class SteamIDMutableBuilder[Self <: SteamID] (val x: Self) extends AnyVal {
+  extension [Self <: SteamID](x: Self) {
     
-    @scala.inline
-    def setAccountid(value: Double): Self = StObject.set(x, "accountid", value.asInstanceOf[js.Any])
+    inline def setAccountid(value: Double): Self = StObject.set(x, "accountid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSteam2RenderedID(value: /* newerFormat */ js.UndefOr[Boolean] => String): Self = StObject.set(x, "getSteam2RenderedID", js.Any.fromFunction1(value))
+    inline def setGetSteam2RenderedID(value: /* newerFormat */ js.UndefOr[Boolean] => String): Self = StObject.set(x, "getSteam2RenderedID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSteam3RenderedID(value: () => String): Self = StObject.set(x, "getSteam3RenderedID", js.Any.fromFunction0(value))
+    inline def setGetSteam3RenderedID(value: () => String): Self = StObject.set(x, "getSteam3RenderedID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSteamID64(value: () => String): Self = StObject.set(x, "getSteamID64", js.Any.fromFunction0(value))
+    inline def setGetSteamID64(value: () => String): Self = StObject.set(x, "getSteamID64", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGroupChat(value: () => Boolean): Self = StObject.set(x, "isGroupChat", js.Any.fromFunction0(value))
+    inline def setIsGroupChat(value: () => Boolean): Self = StObject.set(x, "isGroupChat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLobby(value: () => Boolean): Self = StObject.set(x, "isLobby", js.Any.fromFunction0(value))
+    inline def setIsLobby(value: () => Boolean): Self = StObject.set(x, "isLobby", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+    inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSteam2(value: /* newerFormat */ js.UndefOr[Boolean] => String): Self = StObject.set(x, "steam2", js.Any.fromFunction1(value))
+    inline def setSteam2(value: /* newerFormat */ js.UndefOr[Boolean] => String): Self = StObject.set(x, "steam2", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSteam3(value: () => String): Self = StObject.set(x, "steam3", js.Any.fromFunction0(value))
+    inline def setSteam3(value: () => String): Self = StObject.set(x, "steam3", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
+    inline def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniverse(value: Universe): Self = StObject.set(x, "universe", value.asInstanceOf[js.Any])
+    inline def setUniverse(value: Universe): Self = StObject.set(x, "universe", value.asInstanceOf[js.Any])
   }
 }

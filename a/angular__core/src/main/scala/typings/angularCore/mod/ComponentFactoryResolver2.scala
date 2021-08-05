@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ComponentFactoryResolver2 extends ComponentFactoryResolver {
   
-  var ngModule: js.Any = js.native
+  /* private */ var ngModule: js.Any = js.native
 }

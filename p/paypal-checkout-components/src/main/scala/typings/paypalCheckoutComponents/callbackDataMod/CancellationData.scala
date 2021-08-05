@@ -20,8 +20,7 @@ trait CancellationData extends StObject {
 }
 object CancellationData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     billingID: String,
     button_version: String,
     cancelUrl: String,
@@ -33,25 +32,18 @@ object CancellationData {
     __obj.asInstanceOf[CancellationData]
   }
   
-  @scala.inline
-  implicit class CancellationDataMutableBuilder[Self <: CancellationData] (val x: Self) extends AnyVal {
+  extension [Self <: CancellationData](x: Self) {
     
-    @scala.inline
-    def setBillingID(value: String): Self = StObject.set(x, "billingID", value.asInstanceOf[js.Any])
+    inline def setBillingID(value: String): Self = StObject.set(x, "billingID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButton_version(value: String): Self = StObject.set(x, "button_version", value.asInstanceOf[js.Any])
+    inline def setButton_version(value: String): Self = StObject.set(x, "button_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUrl(value: String): Self = StObject.set(x, "cancelUrl", value.asInstanceOf[js.Any])
+    inline def setCancelUrl(value: String): Self = StObject.set(x, "cancelUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+    inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentID(value: String): Self = StObject.set(x, "paymentID", value.asInstanceOf[js.Any])
+    inline def setPaymentID(value: String): Self = StObject.set(x, "paymentID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentToken(value: String): Self = StObject.set(x, "paymentToken", value.asInstanceOf[js.Any])
+    inline def setPaymentToken(value: String): Self = StObject.set(x, "paymentToken", value.asInstanceOf[js.Any])
   }
 }

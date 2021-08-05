@@ -17,31 +17,23 @@ trait ProductAmount extends StObject {
 }
 object ProductAmount {
   
-  @scala.inline
-  def apply(): ProductAmount = {
+  inline def apply(): ProductAmount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProductAmount]
   }
   
-  @scala.inline
-  implicit class ProductAmountMutableBuilder[Self <: ProductAmount] (val x: Self) extends AnyVal {
+  extension [Self <: ProductAmount](x: Self) {
     
-    @scala.inline
-    def setPriceAmount(value: Price): Self = StObject.set(x, "priceAmount", value.asInstanceOf[js.Any])
+    inline def setPriceAmount(value: Price): Self = StObject.set(x, "priceAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceAmountUndefined: Self = StObject.set(x, "priceAmount", js.undefined)
+    inline def setPriceAmountUndefined: Self = StObject.set(x, "priceAmount", js.undefined)
     
-    @scala.inline
-    def setRemittedTaxAmount(value: Price): Self = StObject.set(x, "remittedTaxAmount", value.asInstanceOf[js.Any])
+    inline def setRemittedTaxAmount(value: Price): Self = StObject.set(x, "remittedTaxAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemittedTaxAmountUndefined: Self = StObject.set(x, "remittedTaxAmount", js.undefined)
+    inline def setRemittedTaxAmountUndefined: Self = StObject.set(x, "remittedTaxAmount", js.undefined)
     
-    @scala.inline
-    def setTaxAmount(value: Price): Self = StObject.set(x, "taxAmount", value.asInstanceOf[js.Any])
+    inline def setTaxAmount(value: Price): Self = StObject.set(x, "taxAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxAmountUndefined: Self = StObject.set(x, "taxAmount", js.undefined)
+    inline def setTaxAmountUndefined: Self = StObject.set(x, "taxAmount", js.undefined)
   }
 }

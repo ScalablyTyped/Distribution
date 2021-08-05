@@ -23,8 +23,7 @@ trait SetLoadBalancerListenerSSLCertificateInput extends StObject {
 }
 object SetLoadBalancerListenerSSLCertificateInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LoadBalancerName: AccessPointName,
     LoadBalancerPort: AccessPointPort,
     SSLCertificateId: SSLCertificateId
@@ -33,16 +32,12 @@ object SetLoadBalancerListenerSSLCertificateInput {
     __obj.asInstanceOf[SetLoadBalancerListenerSSLCertificateInput]
   }
   
-  @scala.inline
-  implicit class SetLoadBalancerListenerSSLCertificateInputMutableBuilder[Self <: SetLoadBalancerListenerSSLCertificateInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetLoadBalancerListenerSSLCertificateInput](x: Self) {
     
-    @scala.inline
-    def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerPort(value: AccessPointPort): Self = StObject.set(x, "LoadBalancerPort", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerPort(value: AccessPointPort): Self = StObject.set(x, "LoadBalancerPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSLCertificateId(value: SSLCertificateId): Self = StObject.set(x, "SSLCertificateId", value.asInstanceOf[js.Any])
+    inline def setSSLCertificateId(value: SSLCertificateId): Self = StObject.set(x, "SSLCertificateId", value.asInstanceOf[js.Any])
   }
 }

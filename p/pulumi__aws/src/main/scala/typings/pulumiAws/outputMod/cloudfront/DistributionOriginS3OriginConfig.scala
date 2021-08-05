@@ -14,16 +14,13 @@ trait DistributionOriginS3OriginConfig extends StObject {
 }
 object DistributionOriginS3OriginConfig {
   
-  @scala.inline
-  def apply(originAccessIdentity: String): DistributionOriginS3OriginConfig = {
+  inline def apply(originAccessIdentity: String): DistributionOriginS3OriginConfig = {
     val __obj = js.Dynamic.literal(originAccessIdentity = originAccessIdentity.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionOriginS3OriginConfig]
   }
   
-  @scala.inline
-  implicit class DistributionOriginS3OriginConfigMutableBuilder[Self <: DistributionOriginS3OriginConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionOriginS3OriginConfig](x: Self) {
     
-    @scala.inline
-    def setOriginAccessIdentity(value: String): Self = StObject.set(x, "originAccessIdentity", value.asInstanceOf[js.Any])
+    inline def setOriginAccessIdentity(value: String): Self = StObject.set(x, "originAccessIdentity", value.asInstanceOf[js.Any])
   }
 }

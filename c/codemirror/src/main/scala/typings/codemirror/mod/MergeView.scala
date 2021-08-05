@@ -10,10 +10,8 @@ object MergeView {
   /**
     * A function that calculates either a two-way or three-way merge between different sets of content.
     */
-  @scala.inline
-  def apply(element: HTMLElement): MergeViewEditor = ^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any]).asInstanceOf[MergeViewEditor]
-  @scala.inline
-  def apply(element: HTMLElement, options: MergeViewEditorConfiguration): MergeViewEditor = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MergeViewEditor]
+  inline def apply(element: HTMLElement): MergeViewEditor = ^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any]).asInstanceOf[MergeViewEditor]
+  inline def apply(element: HTMLElement, options: MergeViewEditorConfiguration): MergeViewEditor = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MergeViewEditor]
   
   @JSImport("codemirror", "MergeView")
   @js.native
@@ -33,20 +31,16 @@ object MergeView {
   }
   object DiffView {
     
-    @scala.inline
-    def apply(forceUpdate: () => js.Function1[/* mode */ String, Unit], setShowDifferences: Boolean => Unit): DiffView = {
+    inline def apply(forceUpdate: () => js.Function1[/* mode */ String, Unit], setShowDifferences: Boolean => Unit): DiffView = {
       val __obj = js.Dynamic.literal(forceUpdate = js.Any.fromFunction0(forceUpdate), setShowDifferences = js.Any.fromFunction1(setShowDifferences))
       __obj.asInstanceOf[DiffView]
     }
     
-    @scala.inline
-    implicit class DiffViewMutableBuilder[Self <: DiffView] (val x: Self) extends AnyVal {
+    extension [Self <: DiffView](x: Self) {
       
-      @scala.inline
-      def setForceUpdate(value: () => js.Function1[/* mode */ String, Unit]): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
+      inline def setForceUpdate(value: () => js.Function1[/* mode */ String, Unit]): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetShowDifferences(value: Boolean => Unit): Self = StObject.set(x, "setShowDifferences", js.Any.fromFunction1(value))
+      inline def setSetShowDifferences(value: Boolean => Unit): Self = StObject.set(x, "setShowDifferences", js.Any.fromFunction1(value))
     }
   }
   
@@ -65,26 +59,20 @@ object MergeView {
   }
   object MergeViewDiffChunk {
     
-    @scala.inline
-    def apply(editFrom: Double, editTo: Double, origFrom: Double, origTo: Double): MergeViewDiffChunk = {
+    inline def apply(editFrom: Double, editTo: Double, origFrom: Double, origTo: Double): MergeViewDiffChunk = {
       val __obj = js.Dynamic.literal(editFrom = editFrom.asInstanceOf[js.Any], editTo = editTo.asInstanceOf[js.Any], origFrom = origFrom.asInstanceOf[js.Any], origTo = origTo.asInstanceOf[js.Any])
       __obj.asInstanceOf[MergeViewDiffChunk]
     }
     
-    @scala.inline
-    implicit class MergeViewDiffChunkMutableBuilder[Self <: MergeViewDiffChunk] (val x: Self) extends AnyVal {
+    extension [Self <: MergeViewDiffChunk](x: Self) {
       
-      @scala.inline
-      def setEditFrom(value: Double): Self = StObject.set(x, "editFrom", value.asInstanceOf[js.Any])
+      inline def setEditFrom(value: Double): Self = StObject.set(x, "editFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditTo(value: Double): Self = StObject.set(x, "editTo", value.asInstanceOf[js.Any])
+      inline def setEditTo(value: Double): Self = StObject.set(x, "editTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigFrom(value: Double): Self = StObject.set(x, "origFrom", value.asInstanceOf[js.Any])
+      inline def setOrigFrom(value: Double): Self = StObject.set(x, "origFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigTo(value: Double): Self = StObject.set(x, "origTo", value.asInstanceOf[js.Any])
+      inline def setOrigTo(value: Double): Self = StObject.set(x, "origTo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,67 +176,48 @@ object MergeView {
   }
   object MergeViewEditorConfiguration {
     
-    @scala.inline
-    def apply(orig: js.Any): MergeViewEditorConfiguration = {
+    inline def apply(orig: js.Any): MergeViewEditorConfiguration = {
       val __obj = js.Dynamic.literal(orig = orig.asInstanceOf[js.Any])
       __obj.asInstanceOf[MergeViewEditorConfiguration]
     }
     
-    @scala.inline
-    implicit class MergeViewEditorConfigurationMutableBuilder[Self <: MergeViewEditorConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: MergeViewEditorConfiguration](x: Self) {
       
-      @scala.inline
-      def setAllowEditingOriginals(value: Boolean): Self = StObject.set(x, "allowEditingOriginals", value.asInstanceOf[js.Any])
+      inline def setAllowEditingOriginals(value: Boolean): Self = StObject.set(x, "allowEditingOriginals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowEditingOriginalsUndefined: Self = StObject.set(x, "allowEditingOriginals", js.undefined)
+      inline def setAllowEditingOriginalsUndefined: Self = StObject.set(x, "allowEditingOriginals", js.undefined)
       
-      @scala.inline
-      def setCollapseIdentical(value: Boolean | Double): Self = StObject.set(x, "collapseIdentical", value.asInstanceOf[js.Any])
+      inline def setCollapseIdentical(value: Boolean | Double): Self = StObject.set(x, "collapseIdentical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseIdenticalUndefined: Self = StObject.set(x, "collapseIdentical", js.undefined)
+      inline def setCollapseIdenticalUndefined: Self = StObject.set(x, "collapseIdentical", js.undefined)
       
-      @scala.inline
-      def setConnect(value: String): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+      inline def setConnect(value: String): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+      inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
       
-      @scala.inline
-      def setOnCollapse(
+      inline def setOnCollapse(
         value: (/* mergeView */ MergeViewEditor, /* line */ Double, /* size */ Double, /* mark */ TextMarker) => Unit
       ): Self = StObject.set(x, "onCollapse", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnCollapseUndefined: Self = StObject.set(x, "onCollapse", js.undefined)
+      inline def setOnCollapseUndefined: Self = StObject.set(x, "onCollapse", js.undefined)
       
-      @scala.inline
-      def setOrig(value: js.Any): Self = StObject.set(x, "orig", value.asInstanceOf[js.Any])
+      inline def setOrig(value: js.Any): Self = StObject.set(x, "orig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigLeft(value: js.Any): Self = StObject.set(x, "origLeft", value.asInstanceOf[js.Any])
+      inline def setOrigLeft(value: js.Any): Self = StObject.set(x, "origLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigLeftUndefined: Self = StObject.set(x, "origLeft", js.undefined)
+      inline def setOrigLeftUndefined: Self = StObject.set(x, "origLeft", js.undefined)
       
-      @scala.inline
-      def setOrigRight(value: js.Any): Self = StObject.set(x, "origRight", value.asInstanceOf[js.Any])
+      inline def setOrigRight(value: js.Any): Self = StObject.set(x, "origRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigRightUndefined: Self = StObject.set(x, "origRight", js.undefined)
+      inline def setOrigRightUndefined: Self = StObject.set(x, "origRight", js.undefined)
       
-      @scala.inline
-      def setRevertButtons(value: Boolean): Self = StObject.set(x, "revertButtons", value.asInstanceOf[js.Any])
+      inline def setRevertButtons(value: Boolean): Self = StObject.set(x, "revertButtons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevertButtonsUndefined: Self = StObject.set(x, "revertButtons", js.undefined)
+      inline def setRevertButtonsUndefined: Self = StObject.set(x, "revertButtons", js.undefined)
       
-      @scala.inline
-      def setShowDifferences(value: Boolean): Self = StObject.set(x, "showDifferences", value.asInstanceOf[js.Any])
+      inline def setShowDifferences(value: Boolean): Self = StObject.set(x, "showDifferences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDifferencesUndefined: Self = StObject.set(x, "showDifferences", js.undefined)
+      inline def setShowDifferencesUndefined: Self = StObject.set(x, "showDifferences", js.undefined)
     }
   }
 }

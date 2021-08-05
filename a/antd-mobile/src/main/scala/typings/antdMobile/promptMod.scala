@@ -14,25 +14,21 @@ object promptMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(title: ReactNode, message: ReactNode, callbackOrActions: CallbackOrActions[CSSProperties]): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any])).asInstanceOf[Close]
-  @scala.inline
-  def default(
+  inline def default(title: ReactNode, message: ReactNode, callbackOrActions: CallbackOrActions[CSSProperties]): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any])).asInstanceOf[Close]
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
     `type`: String
   ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Close]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
     `type`: String,
     defaultValue: String
   ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Close]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
@@ -40,8 +36,7 @@ object promptMod {
     defaultValue: String,
     placeholders: js.Array[String]
   ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[Close]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
@@ -50,8 +45,7 @@ object promptMod {
     placeholders: js.Array[String],
     platform: String
   ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
@@ -60,8 +54,7 @@ object promptMod {
     placeholders: Unit,
     platform: String
   ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
@@ -69,8 +62,7 @@ object promptMod {
     defaultValue: Unit,
     placeholders: js.Array[String]
   ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[Close]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
@@ -79,8 +71,7 @@ object promptMod {
     placeholders: js.Array[String],
     platform: String
   ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
@@ -89,16 +80,14 @@ object promptMod {
     placeholders: Unit,
     platform: String
   ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
     `type`: Unit,
     defaultValue: String
   ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Close]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
@@ -106,8 +95,7 @@ object promptMod {
     defaultValue: String,
     placeholders: js.Array[String]
   ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[Close]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
@@ -116,8 +104,7 @@ object promptMod {
     placeholders: js.Array[String],
     platform: String
   ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
@@ -126,8 +113,7 @@ object promptMod {
     placeholders: Unit,
     platform: String
   ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
@@ -135,8 +121,7 @@ object promptMod {
     defaultValue: Unit,
     placeholders: js.Array[String]
   ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[Close]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],
@@ -145,8 +130,7 @@ object promptMod {
     placeholders: js.Array[String],
     platform: String
   ): Close = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Close]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[CSSProperties],

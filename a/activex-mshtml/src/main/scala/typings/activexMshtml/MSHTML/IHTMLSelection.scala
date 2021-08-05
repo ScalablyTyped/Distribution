@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IHTMLSelection extends StObject {
   
-  @JSName("MSHTML.IHTMLSelection_typekey")
+  /* private */ @JSName("MSHTML.IHTMLSelection_typekey")
   var MSHTMLDotIHTMLSelection_typekey: IHTMLSelection
   
   def addRange(range: js.Any): Unit
@@ -41,8 +41,7 @@ trait IHTMLSelection extends StObject {
 }
 object IHTMLSelection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotIHTMLSelection_typekey: IHTMLSelection,
     addRange: js.Any => Unit,
     anchorNode: IHTMLDOMNode,
@@ -65,55 +64,38 @@ object IHTMLSelection {
     __obj.asInstanceOf[IHTMLSelection]
   }
   
-  @scala.inline
-  implicit class IHTMLSelectionMutableBuilder[Self <: IHTMLSelection] (val x: Self) extends AnyVal {
+  extension [Self <: IHTMLSelection](x: Self) {
     
-    @scala.inline
-    def setAddRange(value: js.Any => Unit): Self = StObject.set(x, "addRange", js.Any.fromFunction1(value))
+    inline def setAddRange(value: js.Any => Unit): Self = StObject.set(x, "addRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAnchorNode(value: IHTMLDOMNode): Self = StObject.set(x, "anchorNode", value.asInstanceOf[js.Any])
+    inline def setAnchorNode(value: IHTMLDOMNode): Self = StObject.set(x, "anchorNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorOffset(value: Double): Self = StObject.set(x, "anchorOffset", value.asInstanceOf[js.Any])
+    inline def setAnchorOffset(value: Double): Self = StObject.set(x, "anchorOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapse(value: (js.Any, Double) => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction2(value))
+    inline def setCollapse(value: (js.Any, Double) => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCollapseToEnd(value: () => Unit): Self = StObject.set(x, "collapseToEnd", js.Any.fromFunction0(value))
+    inline def setCollapseToEnd(value: () => Unit): Self = StObject.set(x, "collapseToEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCollapseToStart(value: () => Unit): Self = StObject.set(x, "collapseToStart", js.Any.fromFunction0(value))
+    inline def setCollapseToStart(value: () => Unit): Self = StObject.set(x, "collapseToStart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeleteFromDocument(value: () => Unit): Self = StObject.set(x, "deleteFromDocument", js.Any.fromFunction0(value))
+    inline def setDeleteFromDocument(value: () => Unit): Self = StObject.set(x, "deleteFromDocument", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFocusNode(value: IHTMLDOMNode): Self = StObject.set(x, "focusNode", value.asInstanceOf[js.Any])
+    inline def setFocusNode(value: IHTMLDOMNode): Self = StObject.set(x, "focusNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusOffset(value: Double): Self = StObject.set(x, "focusOffset", value.asInstanceOf[js.Any])
+    inline def setFocusOffset(value: Double): Self = StObject.set(x, "focusOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetRangeAt(value: Double => IHTMLDOMRange): Self = StObject.set(x, "getRangeAt", js.Any.fromFunction1(value))
+    inline def setGetRangeAt(value: Double => IHTMLDOMRange): Self = StObject.set(x, "getRangeAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
+    inline def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotIHTMLSelection_typekey(value: IHTMLSelection): Self = StObject.set(x, "MSHTML.IHTMLSelection_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotIHTMLSelection_typekey(value: IHTMLSelection): Self = StObject.set(x, "MSHTML.IHTMLSelection_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeCount(value: Double): Self = StObject.set(x, "rangeCount", value.asInstanceOf[js.Any])
+    inline def setRangeCount(value: Double): Self = StObject.set(x, "rangeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveAllRanges(value: () => Unit): Self = StObject.set(x, "removeAllRanges", js.Any.fromFunction0(value))
+    inline def setRemoveAllRanges(value: () => Unit): Self = StObject.set(x, "removeAllRanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveRange(value: js.Any => Unit): Self = StObject.set(x, "removeRange", js.Any.fromFunction1(value))
+    inline def setRemoveRange(value: js.Any => Unit): Self = StObject.set(x, "removeRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectAllChildren(value: js.Any => Unit): Self = StObject.set(x, "selectAllChildren", js.Any.fromFunction1(value))
+    inline def setSelectAllChildren(value: js.Any => Unit): Self = StObject.set(x, "selectAllChildren", js.Any.fromFunction1(value))
   }
 }

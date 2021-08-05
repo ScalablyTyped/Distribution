@@ -12,25 +12,19 @@ trait ContactFindOptions extends StObject {
 }
 object ContactFindOptions {
   
-  @scala.inline
-  def apply(): ContactFindOptions = {
+  inline def apply(): ContactFindOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContactFindOptions]
   }
   
-  @scala.inline
-  implicit class ContactFindOptionsMutableBuilder[Self <: ContactFindOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ContactFindOptions](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
   }
 }

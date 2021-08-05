@@ -29,18 +29,15 @@ object mod extends Shortcut {
   }
   object EqMethod {
     
-    @scala.inline
-    def apply(eq_ : EqMethod => Boolean): EqMethod = {
+    inline def apply(eq_ : EqMethod => Boolean): EqMethod = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("eq")(js.Any.fromFunction1(eq_))
       __obj.asInstanceOf[EqMethod]
     }
     
-    @scala.inline
-    implicit class EqMethodMutableBuilder[Self <: EqMethod] (val x: Self) extends AnyVal {
+    extension [Self <: EqMethod](x: Self) {
       
-      @scala.inline
-      def setEq_(value: EqMethod => Boolean): Self = StObject.set(x, "eq", js.Any.fromFunction1(value))
+      inline def setEq_(value: EqMethod => Boolean): Self = StObject.set(x, "eq", js.Any.fromFunction1(value))
     }
   }
   
@@ -53,17 +50,14 @@ object mod extends Shortcut {
   }
   object MarkTypeAttributes {
     
-    @scala.inline
-    def apply(markType: String): MarkTypeAttributes = {
+    inline def apply(markType: String): MarkTypeAttributes = {
       val __obj = js.Dynamic.literal(markType = markType.asInstanceOf[js.Any])
       __obj.asInstanceOf[MarkTypeAttributes]
     }
     
-    @scala.inline
-    implicit class MarkTypeAttributesMutableBuilder[Self <: MarkTypeAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: MarkTypeAttributes](x: Self) {
       
-      @scala.inline
-      def setMarkType(value: String): Self = StObject.set(x, "markType", value.asInstanceOf[js.Any])
+      inline def setMarkType(value: String): Self = StObject.set(x, "markType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,17 +70,14 @@ object mod extends Shortcut {
   }
   object NodeTypeAttributes {
     
-    @scala.inline
-    def apply(nodeType: String): NodeTypeAttributes = {
+    inline def apply(nodeType: String): NodeTypeAttributes = {
       val __obj = js.Dynamic.literal(nodeType = nodeType.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeTypeAttributes]
     }
     
-    @scala.inline
-    implicit class NodeTypeAttributesMutableBuilder[Self <: NodeTypeAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: NodeTypeAttributes](x: Self) {
       
-      @scala.inline
-      def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+      inline def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,8 +265,7 @@ object mod extends Shortcut {
   }
   object ProsemirrorTestBuilder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       a: /* args */ Args => TaggedFlatObject[TestSchema],
       blockquote: /* args */ Args => TaggedProsemirrorNode[TestSchema],
       br: /* args */ Args => TaggedProsemirrorNode[TestSchema],
@@ -313,103 +303,71 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ProsemirrorTestBuilder]
     }
     
-    @scala.inline
-    implicit class ProsemirrorTestBuilderMutableBuilder[Self <: ProsemirrorTestBuilder] (val x: Self) extends AnyVal {
+    extension [Self <: ProsemirrorTestBuilder](x: Self) {
       
-      @scala.inline
-      def setA(value: /* args */ Args => TaggedFlatObject[TestSchema]): Self = StObject.set(x, "a", js.Any.fromFunction1(value))
+      inline def setA(value: /* args */ Args => TaggedFlatObject[TestSchema]): Self = StObject.set(x, "a", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBlockquote(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "blockquote", js.Any.fromFunction1(value))
+      inline def setBlockquote(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "blockquote", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBr(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "br", js.Any.fromFunction1(value))
+      inline def setBr(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "br", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBuilders(
+      inline def setBuilders(
         value: (/* testSchema */ Schema[String, String], /* names */ Record[String, NodeTypeAttributes | MarkTypeAttributes]) => (Record[String, NodeBuilderMethod[Schema[String, String]]]) & (Record[String, MarkBuilderMethod[Schema[String, String]]]) & typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.Builder & (TopLevel[Record[String, NodeTypeAttributes | MarkTypeAttributes]])
       ): Self = StObject.set(x, "builders", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBullet_list(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "bullet_list", js.Any.fromFunction1(value))
+      inline def setBullet_list(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "bullet_list", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCode(value: /* args */ Args => TaggedFlatObject[TestSchema]): Self = StObject.set(x, "code", js.Any.fromFunction1(value))
+      inline def setCode(value: /* args */ Args => TaggedFlatObject[TestSchema]): Self = StObject.set(x, "code", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCode_block(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "code_block", js.Any.fromFunction1(value))
+      inline def setCode_block(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "code_block", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDoc(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "doc", js.Any.fromFunction1(value))
+      inline def setDoc(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "doc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEm(value: /* args */ Args => TaggedFlatObject[TestSchema]): Self = StObject.set(x, "em", js.Any.fromFunction1(value))
+      inline def setEm(value: /* args */ Args => TaggedFlatObject[TestSchema]): Self = StObject.set(x, "em", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEq_(value: (EqMethod, EqMethod) => Boolean): Self = StObject.set(x, "eq", js.Any.fromFunction2(value))
+      inline def setEq_(value: (EqMethod, EqMethod) => Boolean): Self = StObject.set(x, "eq", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setH1(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "h1", js.Any.fromFunction1(value))
+      inline def setH1(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "h1", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setH2(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "h2", js.Any.fromFunction1(value))
+      inline def setH2(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "h2", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setH3(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "h3", js.Any.fromFunction1(value))
+      inline def setH3(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "h3", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHard_break(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "hard_break", js.Any.fromFunction1(value))
+      inline def setHard_break(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "hard_break", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeading(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "heading", js.Any.fromFunction1(value))
+      inline def setHeading(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "heading", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHorizontal_rule(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "horizontal_rule", js.Any.fromFunction1(value))
+      inline def setHorizontal_rule(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "horizontal_rule", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHr(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "hr", js.Any.fromFunction1(value))
+      inline def setHr(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "hr", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setImage(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "image", js.Any.fromFunction1(value))
+      inline def setImage(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "image", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setImg(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "img", js.Any.fromFunction1(value))
+      inline def setImg(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "img", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLi(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "li", js.Any.fromFunction1(value))
+      inline def setLi(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "li", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLink(value: /* args */ Args => TaggedFlatObject[TestSchema]): Self = StObject.set(x, "link", js.Any.fromFunction1(value))
+      inline def setLink(value: /* args */ Args => TaggedFlatObject[TestSchema]): Self = StObject.set(x, "link", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setList_item(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "list_item", js.Any.fromFunction1(value))
+      inline def setList_item(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "list_item", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOl(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "ol", js.Any.fromFunction1(value))
+      inline def setOl(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "ol", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrdered_list(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "ordered_list", js.Any.fromFunction1(value))
+      inline def setOrdered_list(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "ordered_list", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setP(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "p", js.Any.fromFunction1(value))
+      inline def setP(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "p", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParagraph(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "paragraph", js.Any.fromFunction1(value))
+      inline def setParagraph(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "paragraph", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPre(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "pre", js.Any.fromFunction1(value))
+      inline def setPre(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "pre", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSchema(value: TestSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: TestSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrong(value: /* args */ Args => TaggedFlatObject[TestSchema]): Self = StObject.set(x, "strong", js.Any.fromFunction1(value))
+      inline def setStrong(value: /* args */ Args => TaggedFlatObject[TestSchema]): Self = StObject.set(x, "strong", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setText(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+      inline def setText(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUl(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "ul", js.Any.fromFunction1(value))
+      inline def setUl(value: /* args */ Args => TaggedProsemirrorNode[TestSchema]): Self = StObject.set(x, "ul", js.Any.fromFunction1(value))
     }
   }
   
@@ -421,23 +379,18 @@ object mod extends Shortcut {
   }
   object TaggedFlatObject {
     
-    @scala.inline
-    def apply[S /* <: Schema[js.Any, js.Any] */](flat: js.Array[TaggedProsemirrorNode[S] | TaggedFlatObject[S]], tag: Record[String, Double]): TaggedFlatObject[S] = {
+    inline def apply[S /* <: Schema[js.Any, js.Any] */](flat: js.Array[TaggedProsemirrorNode[S] | TaggedFlatObject[S]], tag: Record[String, Double]): TaggedFlatObject[S] = {
       val __obj = js.Dynamic.literal(flat = flat.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[TaggedFlatObject[S]]
     }
     
-    @scala.inline
-    implicit class TaggedFlatObjectMutableBuilder[Self <: TaggedFlatObject[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & TaggedFlatObject[S]) extends AnyVal {
+    extension [Self <: TaggedFlatObject[?], S /* <: Schema[js.Any, js.Any] */](x: Self & TaggedFlatObject[S]) {
       
-      @scala.inline
-      def setFlat(value: js.Array[TaggedProsemirrorNode[S] | TaggedFlatObject[S]]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+      inline def setFlat(value: js.Array[TaggedProsemirrorNode[S] | TaggedFlatObject[S]]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlatVarargs(value: (TaggedProsemirrorNode[S] | TaggedFlatObject[S])*): Self = StObject.set(x, "flat", js.Array(value :_*))
+      inline def setFlatVarargs(value: (TaggedProsemirrorNode[S] | TaggedFlatObject[S])*): Self = StObject.set(x, "flat", js.Array(value :_*))
       
-      @scala.inline
-      def setTag(value: Record[String, Double]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: Record[String, Double]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -456,20 +409,15 @@ object mod extends Shortcut {
   trait TestMarksUnion extends StObject
   object TestMarksUnion {
     
-    @scala.inline
-    def a: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.a = "a".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.a]
+    inline def a: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.a = "a".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.a]
     
-    @scala.inline
-    def code: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.code = "code".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.code]
+    inline def code: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.code = "code".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.code]
     
-    @scala.inline
-    def em: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.em = "em".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.em]
+    inline def em: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.em = "em".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.em]
     
-    @scala.inline
-    def link: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.link = "link".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.link]
+    inline def link: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.link = "link".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.link]
     
-    @scala.inline
-    def strong: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.strong = "strong".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.strong]
+    inline def strong: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.strong = "strong".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.strong]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -500,74 +448,51 @@ object mod extends Shortcut {
   trait TestNodesUnion extends StObject
   object TestNodesUnion {
     
-    @scala.inline
-    def blockquote: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.blockquote = "blockquote".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.blockquote]
+    inline def blockquote: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.blockquote = "blockquote".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.blockquote]
     
-    @scala.inline
-    def br: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.br = "br".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.br]
+    inline def br: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.br = "br".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.br]
     
-    @scala.inline
-    def bullet_list: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.bullet_list = "bullet_list".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.bullet_list]
+    inline def bullet_list: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.bullet_list = "bullet_list".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.bullet_list]
     
-    @scala.inline
-    def code_block: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.code_block = "code_block".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.code_block]
+    inline def code_block: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.code_block = "code_block".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.code_block]
     
-    @scala.inline
-    def doc: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.doc = "doc".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.doc]
+    inline def doc: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.doc = "doc".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.doc]
     
-    @scala.inline
-    def h1: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h1 = "h1".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h1]
+    inline def h1: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h1 = "h1".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h1]
     
-    @scala.inline
-    def h2: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h2 = "h2".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h2]
+    inline def h2: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h2 = "h2".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h2]
     
-    @scala.inline
-    def h3: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h3 = "h3".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h3]
+    inline def h3: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h3 = "h3".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.h3]
     
-    @scala.inline
-    def hard_break: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.hard_break = "hard_break".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.hard_break]
+    inline def hard_break: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.hard_break = "hard_break".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.hard_break]
     
-    @scala.inline
-    def heading: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.heading = "heading".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.heading]
+    inline def heading: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.heading = "heading".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.heading]
     
-    @scala.inline
-    def horizontal_rule: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.horizontal_rule = "horizontal_rule".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.horizontal_rule]
+    inline def horizontal_rule: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.horizontal_rule = "horizontal_rule".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.horizontal_rule]
     
-    @scala.inline
-    def hr: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.hr = "hr".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.hr]
+    inline def hr: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.hr = "hr".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.hr]
     
-    @scala.inline
-    def image: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.image = "image".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.image]
+    inline def image: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.image = "image".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.image]
     
-    @scala.inline
-    def img: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.img = "img".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.img]
+    inline def img: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.img = "img".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.img]
     
-    @scala.inline
-    def li: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.li = "li".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.li]
+    inline def li: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.li = "li".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.li]
     
-    @scala.inline
-    def list_item: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.list_item = "list_item".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.list_item]
+    inline def list_item: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.list_item = "list_item".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.list_item]
     
-    @scala.inline
-    def ol: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ol = "ol".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ol]
+    inline def ol: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ol = "ol".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ol]
     
-    @scala.inline
-    def ordered_list: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ordered_list = "ordered_list".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ordered_list]
+    inline def ordered_list: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ordered_list = "ordered_list".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ordered_list]
     
-    @scala.inline
-    def p: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.p = "p".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.p]
+    inline def p: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.p = "p".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.p]
     
-    @scala.inline
-    def paragraph: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.paragraph = "paragraph".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.paragraph]
+    inline def paragraph: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.paragraph = "paragraph".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.paragraph]
     
-    @scala.inline
-    def pre: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.pre = "pre".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.pre]
+    inline def pre: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.pre = "pre".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.pre]
     
-    @scala.inline
-    def text: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.text = "text".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.text]
+    inline def text: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.text = "text".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.text]
     
-    @scala.inline
-    def ul: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ul = "ul".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ul]
+    inline def ul: typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ul = "ul".asInstanceOf[typings.prosemirrorTestBuilder.prosemirrorTestBuilderStrings.ul]
   }
   
   type TestSchema = Schema[TestNodesUnion, TestMarksUnion]

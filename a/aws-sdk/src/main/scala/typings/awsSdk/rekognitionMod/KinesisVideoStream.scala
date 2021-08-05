@@ -13,19 +13,15 @@ trait KinesisVideoStream extends StObject {
 }
 object KinesisVideoStream {
   
-  @scala.inline
-  def apply(): KinesisVideoStream = {
+  inline def apply(): KinesisVideoStream = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KinesisVideoStream]
   }
   
-  @scala.inline
-  implicit class KinesisVideoStreamMutableBuilder[Self <: KinesisVideoStream] (val x: Self) extends AnyVal {
+  extension [Self <: KinesisVideoStream](x: Self) {
     
-    @scala.inline
-    def setArn(value: KinesisVideoArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: KinesisVideoArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
   }
 }

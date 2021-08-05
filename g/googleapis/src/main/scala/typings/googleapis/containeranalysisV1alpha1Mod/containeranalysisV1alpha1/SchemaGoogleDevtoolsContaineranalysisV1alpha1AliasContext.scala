@@ -21,25 +21,19 @@ trait SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext extends StObject
 }
 object SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext = {
+  inline def apply(): SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContextMutableBuilder[Self <: SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

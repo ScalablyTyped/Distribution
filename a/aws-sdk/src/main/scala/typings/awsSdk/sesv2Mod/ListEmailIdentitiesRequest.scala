@@ -18,25 +18,19 @@ trait ListEmailIdentitiesRequest extends StObject {
 }
 object ListEmailIdentitiesRequest {
   
-  @scala.inline
-  def apply(): ListEmailIdentitiesRequest = {
+  inline def apply(): ListEmailIdentitiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEmailIdentitiesRequest]
   }
   
-  @scala.inline
-  implicit class ListEmailIdentitiesRequestMutableBuilder[Self <: ListEmailIdentitiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListEmailIdentitiesRequest](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: MaxItems): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: MaxItems): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
   }
 }

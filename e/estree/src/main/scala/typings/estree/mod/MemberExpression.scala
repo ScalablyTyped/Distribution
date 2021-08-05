@@ -24,30 +24,23 @@ trait MemberExpression
 }
 object MemberExpression {
   
-  @scala.inline
-  def apply(computed: Boolean, `object`: Expression | Super, optional: Boolean, property: Expression): MemberExpression = {
+  inline def apply(computed: Boolean, `object`: Expression | Super, optional: Boolean, property: Expression): MemberExpression = {
     val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MemberExpression")
     __obj.asInstanceOf[MemberExpression]
   }
   
-  @scala.inline
-  implicit class MemberExpressionMutableBuilder[Self <: MemberExpression] (val x: Self) extends AnyVal {
+  extension [Self <: MemberExpression](x: Self) {
     
-    @scala.inline
-    def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
+    inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: Expression | Super): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Expression | Super): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: Expression): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: Expression): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.MemberExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.MemberExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

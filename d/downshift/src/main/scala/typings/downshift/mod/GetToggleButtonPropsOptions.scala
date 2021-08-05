@@ -11,8 +11,7 @@ trait GetToggleButtonPropsOptions
      with HTMLProps[HTMLButtonElement]
 object GetToggleButtonPropsOptions {
   
-  @scala.inline
-  def apply(): GetToggleButtonPropsOptions = {
+  inline def apply(): GetToggleButtonPropsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetToggleButtonPropsOptions]
   }

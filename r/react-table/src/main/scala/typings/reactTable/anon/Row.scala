@@ -10,16 +10,13 @@ trait Row[D /* <: js.Object */] extends StObject {
 }
 object Row {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](row: typings.reactTable.mod.Row[D]): Row[D] = {
+  inline def apply[D /* <: js.Object */](row: typings.reactTable.mod.Row[D]): Row[D] = {
     val __obj = js.Dynamic.literal(row = row.asInstanceOf[js.Any])
     __obj.asInstanceOf[Row[D]]
   }
   
-  @scala.inline
-  implicit class RowMutableBuilder[Self <: Row[?], D /* <: js.Object */] (val x: Self & Row[D]) extends AnyVal {
+  extension [Self <: Row[?], D /* <: js.Object */](x: Self & Row[D]) {
     
-    @scala.inline
-    def setRow(value: typings.reactTable.mod.Row[D]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: typings.reactTable.mod.Row[D]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

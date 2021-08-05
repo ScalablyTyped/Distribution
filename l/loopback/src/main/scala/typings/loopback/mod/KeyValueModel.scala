@@ -35,8 +35,7 @@ object KeyValueModel {
     * @param {() => void} callback
     */
   /* static member */
-  @scala.inline
-  def expire(key: String, ttl: Double, options: js.Any, callback: js.Function0[Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("expire")(key.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
+  inline def expire(key: String, ttl: Double, options: js.Any, callback: js.Function0[Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("expire")(key.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
   
   /**
     * Return the value associated with a given key.
@@ -53,14 +52,10 @@ object KeyValueModel {
     * @param {() => void} callback
     */
   /* static member */
-  @scala.inline
-  def get(key: String): js.Thenable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[js.Any]]
-  @scala.inline
-  def get(key: String, option: js.Any): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
-  @scala.inline
-  def get(key: String, option: js.Any, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], option.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
-  @scala.inline
-  def get(key: String, option: Unit, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], option.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
+  inline def get(key: String): js.Thenable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[js.Any]]
+  inline def get(key: String, option: js.Any): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
+  inline def get(key: String, option: js.Any, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], option.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
+  inline def get(key: String, option: Unit, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], option.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
   
   /**
     * Asynchronously iterate all keys in the database. Similar to .keys()
@@ -102,8 +97,7 @@ object KeyValueModel {
     * @return {any} result AsyncIterator An Object implementing next(cb) -> Promise function that can be used to iterate all keys.
     */
   /* static member */
-  @scala.inline
-  def iterateKeys(filter: Match): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("iterateKeys")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def iterateKeys(filter: Match): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("iterateKeys")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Return all keys in the database.
@@ -124,8 +118,7 @@ object KeyValueModel {
     * @return {PromiseLike<any>}
     */
   /* static member */
-  @scala.inline
-  def keys(filter: Match, callback: js.Function0[Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("keys")(filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
+  inline def keys(filter: Match, callback: js.Function0[Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("keys")(filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
   
   /**
     * Persist a value and associate it with the given key.
@@ -143,18 +136,12 @@ object KeyValueModel {
     * @param {() => void} callback
     */
   /* static member */
-  @scala.inline
-  def set(key: String, value: js.Any): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
-  @scala.inline
-  def set(key: String, value: js.Any, options: js.Any): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
-  @scala.inline
-  def set(key: String, value: js.Any, options: js.Any, callback: js.Function1[/* err */ Error, Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
-  @scala.inline
-  def set(key: String, value: js.Any, options: Double): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
-  @scala.inline
-  def set(key: String, value: js.Any, options: Double, callback: js.Function1[/* err */ Error, Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
-  @scala.inline
-  def set(key: String, value: js.Any, options: Unit, callback: js.Function1[/* err */ Error, Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
+  inline def set(key: String, value: js.Any): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
+  inline def set(key: String, value: js.Any, options: js.Any): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
+  inline def set(key: String, value: js.Any, options: js.Any, callback: js.Function1[/* err */ Error, Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
+  inline def set(key: String, value: js.Any, options: Double): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
+  inline def set(key: String, value: js.Any, options: Double, callback: js.Function1[/* err */ Error, Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
+  inline def set(key: String, value: js.Any, options: Unit, callback: js.Function1[/* err */ Error, Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
   
   /**
     * Return the TTL (time to live) for a given key.
@@ -169,12 +156,8 @@ object KeyValueModel {
     * @param {() => void} callback
     */
   /* static member */
-  @scala.inline
-  def ttl(key: String): js.Thenable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ttl")(key.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[js.Any]]
-  @scala.inline
-  def ttl(key: String, options: js.Any): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ttl")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
-  @scala.inline
-  def ttl(key: String, options: js.Any, cb: js.Function1[/* error */ Error, Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ttl")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
-  @scala.inline
-  def ttl(key: String, options: Unit, cb: js.Function1[/* error */ Error, Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ttl")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
+  inline def ttl(key: String): js.Thenable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ttl")(key.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[js.Any]]
+  inline def ttl(key: String, options: js.Any): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ttl")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
+  inline def ttl(key: String, options: js.Any, cb: js.Function1[/* error */ Error, Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ttl")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
+  inline def ttl(key: String, options: Unit, cb: js.Function1[/* error */ Error, Unit]): js.Thenable[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ttl")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[js.Any]]
 }

@@ -9,20 +9,17 @@ object wanakanaStrings {
   
   @js.native
   sealed trait hepburn extends StObject
-  @scala.inline
-  def hepburn: hepburn = "hepburn".asInstanceOf[hepburn]
+  inline def hepburn: hepburn = "hepburn".asInstanceOf[hepburn]
   
   @js.native
   sealed trait toHiragana
     extends StObject
        with IMEModes
-  @scala.inline
-  def toHiragana: toHiragana = "toHiragana".asInstanceOf[toHiragana]
+  inline def toHiragana: toHiragana = "toHiragana".asInstanceOf[toHiragana]
   
   @js.native
   sealed trait toKatakana
     extends StObject
        with IMEModes
-  @scala.inline
-  def toKatakana: toKatakana = "toKatakana".asInstanceOf[toKatakana]
+  inline def toKatakana: toKatakana = "toKatakana".asInstanceOf[toKatakana]
 }

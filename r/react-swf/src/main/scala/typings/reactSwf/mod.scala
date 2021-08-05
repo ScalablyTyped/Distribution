@@ -23,16 +23,14 @@ object mod {
     * Must not be called in a non-browser environment.
     * @return {?string} 'X.Y.Z'-version or null.
     */
-  @scala.inline
-  def getFPVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFPVersion")().asInstanceOf[String]
+  inline def getFPVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFPVersion")().asInstanceOf[String]
   
   /**
     * Returns if installed Flash Player meets version requirement.
     * Must not be called in a non-browser environment.
     * @return {boolean} true if supported
     */
-  @scala.inline
-  def isFPVersionSupported(versionString: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFPVersionSupported")(versionString.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFPVersionSupported(versionString: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFPVersionSupported")(versionString.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   object rswf {
     
@@ -154,119 +152,82 @@ object mod {
     }
     object Props {
       
-      @scala.inline
-      def apply(src: String): Props = {
+      inline def apply(src: String): Props = {
         val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+        inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+        inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
         
-        @scala.inline
-        def setAllowFullScreen(value: Boolean): Self = StObject.set(x, "allowFullScreen", value.asInstanceOf[js.Any])
+        inline def setAllowFullScreen(value: Boolean): Self = StObject.set(x, "allowFullScreen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllowFullScreenUndefined: Self = StObject.set(x, "allowFullScreen", js.undefined)
+        inline def setAllowFullScreenUndefined: Self = StObject.set(x, "allowFullScreen", js.undefined)
         
-        @scala.inline
-        def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+        inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+        inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
         
-        @scala.inline
-        def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
+        inline def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
+        inline def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
         
-        @scala.inline
-        def setFlashVars(value: js.Object | String): Self = StObject.set(x, "flashVars", value.asInstanceOf[js.Any])
+        inline def setFlashVars(value: js.Object | String): Self = StObject.set(x, "flashVars", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFlashVarsUndefined: Self = StObject.set(x, "flashVars", js.undefined)
+        inline def setFlashVarsUndefined: Self = StObject.set(x, "flashVars", js.undefined)
         
-        @scala.inline
-        def setFullScreenAspectRatio(value: String): Self = StObject.set(x, "fullScreenAspectRatio", value.asInstanceOf[js.Any])
+        inline def setFullScreenAspectRatio(value: String): Self = StObject.set(x, "fullScreenAspectRatio", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFullScreenAspectRatioUndefined: Self = StObject.set(x, "fullScreenAspectRatio", js.undefined)
+        inline def setFullScreenAspectRatioUndefined: Self = StObject.set(x, "fullScreenAspectRatio", js.undefined)
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+        inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+        inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+        inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
         
-        @scala.inline
-        def setMenu(value: Boolean): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+        inline def setMenu(value: Boolean): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+        inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
         
-        @scala.inline
-        def setPlay(value: Boolean): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
+        inline def setPlay(value: Boolean): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
+        inline def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
         
-        @scala.inline
-        def setPluginspage(value: String): Self = StObject.set(x, "pluginspage", value.asInstanceOf[js.Any])
+        inline def setPluginspage(value: String): Self = StObject.set(x, "pluginspage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPluginspageUndefined: Self = StObject.set(x, "pluginspage", js.undefined)
+        inline def setPluginspageUndefined: Self = StObject.set(x, "pluginspage", js.undefined)
         
-        @scala.inline
-        def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+        inline def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+        inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
         
-        @scala.inline
-        def setSalign(value: String): Self = StObject.set(x, "salign", value.asInstanceOf[js.Any])
+        inline def setSalign(value: String): Self = StObject.set(x, "salign", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSalignUndefined: Self = StObject.set(x, "salign", js.undefined)
+        inline def setSalignUndefined: Self = StObject.set(x, "salign", js.undefined)
         
-        @scala.inline
-        def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+        inline def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+        inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
         
-        @scala.inline
-        def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+        inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+        inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
         
-        @scala.inline
-        def setWmode(value: String): Self = StObject.set(x, "wmode", value.asInstanceOf[js.Any])
+        inline def setWmode(value: String): Self = StObject.set(x, "wmode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWmodeUndefined: Self = StObject.set(x, "wmode", js.undefined)
+        inline def setWmodeUndefined: Self = StObject.set(x, "wmode", js.undefined)
       }
     }
     

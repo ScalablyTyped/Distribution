@@ -36,35 +36,26 @@ object typesGetRecordsOutputMod {
   }
   object GetRecordsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, Records: js.Array[UnmarshalledRecord]): GetRecordsOutput = {
+    inline def apply($metadata: ResponseMetadata, Records: js.Array[UnmarshalledRecord]): GetRecordsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRecordsOutput]
     }
     
-    @scala.inline
-    implicit class GetRecordsOutputMutableBuilder[Self <: GetRecordsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetRecordsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMillisBehindLatest(value: Double): Self = StObject.set(x, "MillisBehindLatest", value.asInstanceOf[js.Any])
+      inline def setMillisBehindLatest(value: Double): Self = StObject.set(x, "MillisBehindLatest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMillisBehindLatestUndefined: Self = StObject.set(x, "MillisBehindLatest", js.undefined)
+      inline def setMillisBehindLatestUndefined: Self = StObject.set(x, "MillisBehindLatest", js.undefined)
       
-      @scala.inline
-      def setNextShardIterator(value: String): Self = StObject.set(x, "NextShardIterator", value.asInstanceOf[js.Any])
+      inline def setNextShardIterator(value: String): Self = StObject.set(x, "NextShardIterator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextShardIteratorUndefined: Self = StObject.set(x, "NextShardIterator", js.undefined)
+      inline def setNextShardIteratorUndefined: Self = StObject.set(x, "NextShardIterator", js.undefined)
       
-      @scala.inline
-      def setRecords(value: js.Array[UnmarshalledRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[UnmarshalledRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: UnmarshalledRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: UnmarshalledRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
     }
   }
 }

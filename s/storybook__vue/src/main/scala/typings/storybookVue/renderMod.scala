@@ -11,8 +11,7 @@ object renderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasStoryFnKindNameArgsShowMainShowErrorShowExceptionForceRender: RenderContext): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStoryFnKindNameArgsShowMainShowErrorShowExceptionForceRender.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(hasStoryFnKindNameArgsShowMainShowErrorShowExceptionForceRender: RenderContext): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStoryFnKindNameArgsShowMainShowErrorShowExceptionForceRender.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("@storybook/vue/dist/client/preview/render", "COMPONENT")
   @js.native

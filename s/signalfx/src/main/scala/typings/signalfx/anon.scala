@@ -18,26 +18,20 @@ object anon {
   }
   object CONTROL {
     
-    @scala.inline
-    def apply(CONTROL: String, DATA: String, EVENT: String, METADATA: String): CONTROL = {
+    inline def apply(CONTROL: String, DATA: String, EVENT: String, METADATA: String): CONTROL = {
       val __obj = js.Dynamic.literal(CONTROL = CONTROL.asInstanceOf[js.Any], DATA = DATA.asInstanceOf[js.Any], EVENT = EVENT.asInstanceOf[js.Any], METADATA = METADATA.asInstanceOf[js.Any])
       __obj.asInstanceOf[CONTROL]
     }
     
-    @scala.inline
-    implicit class CONTROLMutableBuilder[Self <: CONTROL] (val x: Self) extends AnyVal {
+    extension [Self <: CONTROL](x: Self) {
       
-      @scala.inline
-      def setCONTROL(value: String): Self = StObject.set(x, "CONTROL", value.asInstanceOf[js.Any])
+      inline def setCONTROL(value: String): Self = StObject.set(x, "CONTROL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDATA(value: String): Self = StObject.set(x, "DATA", value.asInstanceOf[js.Any])
+      inline def setDATA(value: String): Self = StObject.set(x, "DATA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT(value: String): Self = StObject.set(x, "EVENT", value.asInstanceOf[js.Any])
+      inline def setEVENT(value: String): Self = StObject.set(x, "EVENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMETADATA(value: String): Self = StObject.set(x, "METADATA", value.asInstanceOf[js.Any])
+      inline def setMETADATA(value: String): Self = StObject.set(x, "METADATA", value.asInstanceOf[js.Any])
     }
   }
 }

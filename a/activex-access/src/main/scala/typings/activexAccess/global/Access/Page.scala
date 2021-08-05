@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Page")
 @js.native
-class Page protected ()
+/* private */ class Page ()
   extends StObject
      with typings.activexAccess.Access.Page

@@ -42,55 +42,39 @@ trait GoogleCloudRecommendationengineV1beta1ProductEventDetail extends StObject 
 }
 object GoogleCloudRecommendationengineV1beta1ProductEventDetail {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1ProductEventDetail = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1ProductEventDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ProductEventDetail]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ProductEventDetailMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ProductEventDetail] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1ProductEventDetail](x: Self) {
     
-    @scala.inline
-    def setCartId(value: String): Self = StObject.set(x, "cartId", value.asInstanceOf[js.Any])
+    inline def setCartId(value: String): Self = StObject.set(x, "cartId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCartIdUndefined: Self = StObject.set(x, "cartId", js.undefined)
+    inline def setCartIdUndefined: Self = StObject.set(x, "cartId", js.undefined)
     
-    @scala.inline
-    def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
+    inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
+    inline def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
     
-    @scala.inline
-    def setPageCategories(value: js.Array[GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy]): Self = StObject.set(x, "pageCategories", value.asInstanceOf[js.Any])
+    inline def setPageCategories(value: js.Array[GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy]): Self = StObject.set(x, "pageCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageCategoriesUndefined: Self = StObject.set(x, "pageCategories", js.undefined)
+    inline def setPageCategoriesUndefined: Self = StObject.set(x, "pageCategories", js.undefined)
     
-    @scala.inline
-    def setPageCategoriesVarargs(value: GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy*): Self = StObject.set(x, "pageCategories", js.Array(value :_*))
+    inline def setPageCategoriesVarargs(value: GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy*): Self = StObject.set(x, "pageCategories", js.Array(value :_*))
     
-    @scala.inline
-    def setProductDetails(value: js.Array[GoogleCloudRecommendationengineV1beta1ProductDetail]): Self = StObject.set(x, "productDetails", value.asInstanceOf[js.Any])
+    inline def setProductDetails(value: js.Array[GoogleCloudRecommendationengineV1beta1ProductDetail]): Self = StObject.set(x, "productDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductDetailsUndefined: Self = StObject.set(x, "productDetails", js.undefined)
+    inline def setProductDetailsUndefined: Self = StObject.set(x, "productDetails", js.undefined)
     
-    @scala.inline
-    def setProductDetailsVarargs(value: GoogleCloudRecommendationengineV1beta1ProductDetail*): Self = StObject.set(x, "productDetails", js.Array(value :_*))
+    inline def setProductDetailsVarargs(value: GoogleCloudRecommendationengineV1beta1ProductDetail*): Self = StObject.set(x, "productDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setPurchaseTransaction(value: GoogleCloudRecommendationengineV1beta1PurchaseTransaction): Self = StObject.set(x, "purchaseTransaction", value.asInstanceOf[js.Any])
+    inline def setPurchaseTransaction(value: GoogleCloudRecommendationengineV1beta1PurchaseTransaction): Self = StObject.set(x, "purchaseTransaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseTransactionUndefined: Self = StObject.set(x, "purchaseTransaction", js.undefined)
+    inline def setPurchaseTransactionUndefined: Self = StObject.set(x, "purchaseTransaction", js.undefined)
     
-    @scala.inline
-    def setSearchQuery(value: String): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
+    inline def setSearchQuery(value: String): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchQueryUndefined: Self = StObject.set(x, "searchQuery", js.undefined)
+    inline def setSearchQueryUndefined: Self = StObject.set(x, "searchQuery", js.undefined)
   }
 }

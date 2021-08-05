@@ -21,40 +21,29 @@ trait CreateUnitOptions extends StObject {
 }
 object CreateUnitOptions {
   
-  @scala.inline
-  def apply(): CreateUnitOptions = {
+  inline def apply(): CreateUnitOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateUnitOptions]
   }
   
-  @scala.inline
-  implicit class CreateUnitOptionsMutableBuilder[Self <: CreateUnitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateUnitOptions](x: Self) {
     
-    @scala.inline
-    def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+    inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
-    @scala.inline
-    def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+    inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
     
-    @scala.inline
-    def setPrefixes(value: none | short | long | binary_short | binary_long): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
+    inline def setPrefixes(value: none | short | long | binary_short | binary_long): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
+    inline def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
   }
 }

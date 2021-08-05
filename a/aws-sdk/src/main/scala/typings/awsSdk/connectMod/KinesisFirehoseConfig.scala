@@ -13,16 +13,13 @@ trait KinesisFirehoseConfig extends StObject {
 }
 object KinesisFirehoseConfig {
   
-  @scala.inline
-  def apply(FirehoseArn: ARN): KinesisFirehoseConfig = {
+  inline def apply(FirehoseArn: ARN): KinesisFirehoseConfig = {
     val __obj = js.Dynamic.literal(FirehoseArn = FirehoseArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[KinesisFirehoseConfig]
   }
   
-  @scala.inline
-  implicit class KinesisFirehoseConfigMutableBuilder[Self <: KinesisFirehoseConfig] (val x: Self) extends AnyVal {
+  extension [Self <: KinesisFirehoseConfig](x: Self) {
     
-    @scala.inline
-    def setFirehoseArn(value: ARN): Self = StObject.set(x, "FirehoseArn", value.asInstanceOf[js.Any])
+    inline def setFirehoseArn(value: ARN): Self = StObject.set(x, "FirehoseArn", value.asInstanceOf[js.Any])
   }
 }

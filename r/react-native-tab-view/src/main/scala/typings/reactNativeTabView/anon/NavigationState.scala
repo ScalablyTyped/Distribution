@@ -10,16 +10,13 @@ trait NavigationState[T /* <: typings.reactNativeTabView.typesMod.Route */] exte
 }
 object NavigationState {
   
-  @scala.inline
-  def apply[T /* <: typings.reactNativeTabView.typesMod.Route */](navigationState: typings.reactNativeTabView.typesMod.NavigationState[T]): NavigationState[T] = {
+  inline def apply[T /* <: typings.reactNativeTabView.typesMod.Route */](navigationState: typings.reactNativeTabView.typesMod.NavigationState[T]): NavigationState[T] = {
     val __obj = js.Dynamic.literal(navigationState = navigationState.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationState[T]]
   }
   
-  @scala.inline
-  implicit class NavigationStateMutableBuilder[Self <: NavigationState[?], T /* <: typings.reactNativeTabView.typesMod.Route */] (val x: Self & NavigationState[T]) extends AnyVal {
+  extension [Self <: NavigationState[?], T /* <: typings.reactNativeTabView.typesMod.Route */](x: Self & NavigationState[T]) {
     
-    @scala.inline
-    def setNavigationState(value: typings.reactNativeTabView.typesMod.NavigationState[T]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
+    inline def setNavigationState(value: typings.reactNativeTabView.typesMod.NavigationState[T]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
   }
 }

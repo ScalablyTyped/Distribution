@@ -17,31 +17,23 @@ trait CmTrackingAd extends StObject {
 }
 object CmTrackingAd {
   
-  @scala.inline
-  def apply(): CmTrackingAd = {
+  inline def apply(): CmTrackingAd = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CmTrackingAd]
   }
   
-  @scala.inline
-  implicit class CmTrackingAdMutableBuilder[Self <: CmTrackingAd] (val x: Self) extends AnyVal {
+  extension [Self <: CmTrackingAd](x: Self) {
     
-    @scala.inline
-    def setCmAdId(value: String): Self = StObject.set(x, "cmAdId", value.asInstanceOf[js.Any])
+    inline def setCmAdId(value: String): Self = StObject.set(x, "cmAdId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmAdIdUndefined: Self = StObject.set(x, "cmAdId", js.undefined)
+    inline def setCmAdIdUndefined: Self = StObject.set(x, "cmAdId", js.undefined)
     
-    @scala.inline
-    def setCmCreativeId(value: String): Self = StObject.set(x, "cmCreativeId", value.asInstanceOf[js.Any])
+    inline def setCmCreativeId(value: String): Self = StObject.set(x, "cmCreativeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmCreativeIdUndefined: Self = StObject.set(x, "cmCreativeId", js.undefined)
+    inline def setCmCreativeIdUndefined: Self = StObject.set(x, "cmCreativeId", js.undefined)
     
-    @scala.inline
-    def setCmPlacementId(value: String): Self = StObject.set(x, "cmPlacementId", value.asInstanceOf[js.Any])
+    inline def setCmPlacementId(value: String): Self = StObject.set(x, "cmPlacementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmPlacementIdUndefined: Self = StObject.set(x, "cmPlacementId", js.undefined)
+    inline def setCmPlacementIdUndefined: Self = StObject.set(x, "cmPlacementId", js.undefined)
   }
 }

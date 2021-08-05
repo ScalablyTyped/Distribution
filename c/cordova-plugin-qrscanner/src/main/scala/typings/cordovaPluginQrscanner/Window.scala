@@ -10,16 +10,13 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(QRScanner: QRScanner): Window = {
+  inline def apply(QRScanner: QRScanner): Window = {
     val __obj = js.Dynamic.literal(QRScanner = QRScanner.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setQRScanner(value: QRScanner): Self = StObject.set(x, "QRScanner", value.asInstanceOf[js.Any])
+    inline def setQRScanner(value: QRScanner): Self = StObject.set(x, "QRScanner", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait Outpost extends StObject {
 }
 object Outpost {
   
-  @scala.inline
-  def apply(): Outpost = {
+  inline def apply(): Outpost = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Outpost]
   }
   
-  @scala.inline
-  implicit class OutpostMutableBuilder[Self <: Outpost] (val x: Self) extends AnyVal {
+  extension [Self <: Outpost](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
   }
 }

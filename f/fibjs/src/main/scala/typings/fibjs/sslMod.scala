@@ -65,18 +65,13 @@ object sslMod {
   @js.native
   val ca: ClassX509Cert = js.native
   
-  @scala.inline
-  def connect(url: String): ClassStream = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[ClassStream]
-  @scala.inline
-  def connect(url: String, timeout: Double): ClassStream = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[ClassStream]
+  inline def connect(url: String): ClassStream = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[ClassStream]
+  inline def connect(url: String, timeout: Double): ClassStream = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[ClassStream]
   
-  @scala.inline
-  def loadClientCertFile(crtFile: String, keyFile: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadClientCertFile")(crtFile.asInstanceOf[js.Any], keyFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def loadClientCertFile(crtFile: String, keyFile: String, password: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadClientCertFile")(crtFile.asInstanceOf[js.Any], keyFile.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loadClientCertFile(crtFile: String, keyFile: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadClientCertFile")(crtFile.asInstanceOf[js.Any], keyFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loadClientCertFile(crtFile: String, keyFile: String, password: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadClientCertFile")(crtFile.asInstanceOf[js.Any], keyFile.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def loadRootCerts(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadRootCerts")().asInstanceOf[Unit]
+  inline def loadRootCerts(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadRootCerts")().asInstanceOf[Unit]
   
   @JSImport("ssl", "max_version")
   @js.native
@@ -86,8 +81,7 @@ object sslMod {
   @js.native
   val minVersion: Double = js.native
   
-  @scala.inline
-  def setClientCert(crt: ClassX509Cert, key: ClassPKey): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setClientCert")(crt.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setClientCert(crt: ClassX509Cert, key: ClassPKey): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setClientCert")(crt.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("ssl", "ssl3")
   @js.native

@@ -13,19 +13,15 @@ trait DeleteDataSourceOutput extends StObject {
 }
 object DeleteDataSourceOutput {
   
-  @scala.inline
-  def apply(): DeleteDataSourceOutput = {
+  inline def apply(): DeleteDataSourceOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteDataSourceOutput]
   }
   
-  @scala.inline
-  implicit class DeleteDataSourceOutputMutableBuilder[Self <: DeleteDataSourceOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDataSourceOutput](x: Self) {
     
-    @scala.inline
-    def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceIdUndefined: Self = StObject.set(x, "DataSourceId", js.undefined)
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "DataSourceId", js.undefined)
   }
 }

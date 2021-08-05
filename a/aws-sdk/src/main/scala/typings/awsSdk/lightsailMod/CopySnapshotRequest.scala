@@ -38,43 +38,31 @@ trait CopySnapshotRequest extends StObject {
 }
 object CopySnapshotRequest {
   
-  @scala.inline
-  def apply(sourceRegion: RegionName, targetSnapshotName: ResourceName): CopySnapshotRequest = {
+  inline def apply(sourceRegion: RegionName, targetSnapshotName: ResourceName): CopySnapshotRequest = {
     val __obj = js.Dynamic.literal(sourceRegion = sourceRegion.asInstanceOf[js.Any], targetSnapshotName = targetSnapshotName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopySnapshotRequest]
   }
   
-  @scala.inline
-  implicit class CopySnapshotRequestMutableBuilder[Self <: CopySnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CopySnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setRestoreDate(value: String): Self = StObject.set(x, "restoreDate", value.asInstanceOf[js.Any])
+    inline def setRestoreDate(value: String): Self = StObject.set(x, "restoreDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreDateUndefined: Self = StObject.set(x, "restoreDate", js.undefined)
+    inline def setRestoreDateUndefined: Self = StObject.set(x, "restoreDate", js.undefined)
     
-    @scala.inline
-    def setSourceRegion(value: RegionName): Self = StObject.set(x, "sourceRegion", value.asInstanceOf[js.Any])
+    inline def setSourceRegion(value: RegionName): Self = StObject.set(x, "sourceRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceResourceName(value: String): Self = StObject.set(x, "sourceResourceName", value.asInstanceOf[js.Any])
+    inline def setSourceResourceName(value: String): Self = StObject.set(x, "sourceResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceResourceNameUndefined: Self = StObject.set(x, "sourceResourceName", js.undefined)
+    inline def setSourceResourceNameUndefined: Self = StObject.set(x, "sourceResourceName", js.undefined)
     
-    @scala.inline
-    def setSourceSnapshotName(value: ResourceName): Self = StObject.set(x, "sourceSnapshotName", value.asInstanceOf[js.Any])
+    inline def setSourceSnapshotName(value: ResourceName): Self = StObject.set(x, "sourceSnapshotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSnapshotNameUndefined: Self = StObject.set(x, "sourceSnapshotName", js.undefined)
+    inline def setSourceSnapshotNameUndefined: Self = StObject.set(x, "sourceSnapshotName", js.undefined)
     
-    @scala.inline
-    def setTargetSnapshotName(value: ResourceName): Self = StObject.set(x, "targetSnapshotName", value.asInstanceOf[js.Any])
+    inline def setTargetSnapshotName(value: ResourceName): Self = StObject.set(x, "targetSnapshotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLatestRestorableAutoSnapshot(value: Boolean): Self = StObject.set(x, "useLatestRestorableAutoSnapshot", value.asInstanceOf[js.Any])
+    inline def setUseLatestRestorableAutoSnapshot(value: Boolean): Self = StObject.set(x, "useLatestRestorableAutoSnapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLatestRestorableAutoSnapshotUndefined: Self = StObject.set(x, "useLatestRestorableAutoSnapshot", js.undefined)
+    inline def setUseLatestRestorableAutoSnapshotUndefined: Self = StObject.set(x, "useLatestRestorableAutoSnapshot", js.undefined)
   }
 }

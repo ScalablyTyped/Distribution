@@ -93,6 +93,5 @@ object ConstructSignatureSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.ConstructSignatureSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.ConstructSignatureSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.ConstructSignatureSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.ConstructSignatureSyntax]
 }

@@ -234,7 +234,7 @@ trait CustomXMLPart extends StObject {
   
   val NamespaceURI: String = js.native
   
-  @JSName("Office.CustomXMLPart_typekey")
+  /* private */ @JSName("Office.CustomXMLPart_typekey")
   var OfficeDotCustomXMLPart_typekey: CustomXMLPart = js.native
   
   val Parent: js.Any = js.native

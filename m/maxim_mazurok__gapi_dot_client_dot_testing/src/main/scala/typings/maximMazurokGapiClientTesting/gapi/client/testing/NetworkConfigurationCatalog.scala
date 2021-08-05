@@ -10,22 +10,17 @@ trait NetworkConfigurationCatalog extends StObject {
 }
 object NetworkConfigurationCatalog {
   
-  @scala.inline
-  def apply(): NetworkConfigurationCatalog = {
+  inline def apply(): NetworkConfigurationCatalog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkConfigurationCatalog]
   }
   
-  @scala.inline
-  implicit class NetworkConfigurationCatalogMutableBuilder[Self <: NetworkConfigurationCatalog] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkConfigurationCatalog](x: Self) {
     
-    @scala.inline
-    def setConfigurations(value: js.Array[NetworkConfiguration]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
+    inline def setConfigurations(value: js.Array[NetworkConfiguration]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationsUndefined: Self = StObject.set(x, "configurations", js.undefined)
+    inline def setConfigurationsUndefined: Self = StObject.set(x, "configurations", js.undefined)
     
-    @scala.inline
-    def setConfigurationsVarargs(value: NetworkConfiguration*): Self = StObject.set(x, "configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: NetworkConfiguration*): Self = StObject.set(x, "configurations", js.Array(value :_*))
   }
 }

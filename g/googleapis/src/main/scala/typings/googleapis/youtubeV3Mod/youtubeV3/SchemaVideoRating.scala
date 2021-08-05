@@ -12,25 +12,19 @@ trait SchemaVideoRating extends StObject {
 }
 object SchemaVideoRating {
   
-  @scala.inline
-  def apply(): SchemaVideoRating = {
+  inline def apply(): SchemaVideoRating = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoRating]
   }
   
-  @scala.inline
-  implicit class SchemaVideoRatingMutableBuilder[Self <: SchemaVideoRating] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoRating](x: Self) {
     
-    @scala.inline
-    def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+    inline def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
+    inline def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
+    inline def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
   }
 }

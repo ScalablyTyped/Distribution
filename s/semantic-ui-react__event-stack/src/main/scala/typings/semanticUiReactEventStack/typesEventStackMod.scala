@@ -27,14 +27,12 @@ object typesEventStackMod {
     @JSImport("@semantic-ui-react/event-stack/lib/types/EventStack", "default.defaultProps")
     @js.native
     def defaultProps: Pool = js.native
-    @scala.inline
-    def defaultProps_=(x: Pool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Pool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@semantic-ui-react/event-stack/lib/types/EventStack", "default.propTypes")
     @js.native
     def propTypes: Name = js.native
-    @scala.inline
-    def propTypes_=(x: Name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: Name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -71,38 +69,28 @@ object typesEventStackMod {
   }
   object EventStackProps {
     
-    @scala.inline
-    def apply(name: String, on: InputEventListener): EventStackProps = {
+    inline def apply(name: String, on: InputEventListener): EventStackProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventStackProps]
     }
     
-    @scala.inline
-    implicit class EventStackPropsMutableBuilder[Self <: EventStackProps] (val x: Self) extends AnyVal {
+    extension [Self <: EventStackProps](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn(value: InputEventListener): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: InputEventListener): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
+      inline def setOnFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnVarargs(value: EventListener*): Self = StObject.set(x, "on", js.Array(value :_*))
+      inline def setOnVarargs(value: EventListener*): Self = StObject.set(x, "on", js.Array(value :_*))
       
-      @scala.inline
-      def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+      inline def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
+      inline def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
       
-      @scala.inline
-      def setTarget(value: InputTargetElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: InputTargetElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
 }

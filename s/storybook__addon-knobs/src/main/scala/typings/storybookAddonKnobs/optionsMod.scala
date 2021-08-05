@@ -19,10 +19,8 @@ object optionsMod {
   /* Inlined react.react.FunctionComponent<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Options.OptionsTypeProps<any>> & {  serialize :{None <T>(value : T): T},   deserialize :{None <T>(value : T): T}} */
   object default {
     
-    @scala.inline
-    def apply(props: PropsWithChildren[OptionsTypeProps[js.Any]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    @scala.inline
-    def apply(props: PropsWithChildren[OptionsTypeProps[js.Any]], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildren[OptionsTypeProps[js.Any]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildren[OptionsTypeProps[js.Any]], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Options", JSImport.Default)
     @js.native
@@ -31,38 +29,32 @@ object optionsMod {
     @JSImport("@storybook/addon-knobs/dist/components/types/Options", "default.contextTypes")
     @js.native
     def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    @scala.inline
-    def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Options", "default.defaultProps")
     @js.native
     def defaultProps: js.UndefOr[PartialOptionsTypePropsan] = js.native
-    @scala.inline
-    def defaultProps_=(x: js.UndefOr[PartialOptionsTypePropsan]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: js.UndefOr[PartialOptionsTypePropsan]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Options", "default.deserialize")
     @js.native
     def deserialize: FnCall = js.native
-    @scala.inline
-    def deserialize_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deserialize")(x.asInstanceOf[js.Any])
+    inline def deserialize_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deserialize")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Options", "default.displayName")
     @js.native
     def displayName: js.UndefOr[String] = js.native
-    @scala.inline
-    def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Options", "default.propTypes")
     @js.native
     def propTypes: js.UndefOr[WeakValidationMapOptionsT] = js.native
-    @scala.inline
-    def propTypes_=(x: js.UndefOr[WeakValidationMapOptionsT]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapOptionsT]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Options", "default.serialize")
     @js.native
     def serialize: FnCall = js.native
-    @scala.inline
-    def serialize_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialize")(x.asInstanceOf[js.Any])
+    inline def serialize_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialize")(x.asInstanceOf[js.Any])
   }
   
   trait OptionsKnobOptions extends StObject {
@@ -71,17 +63,14 @@ object optionsMod {
   }
   object OptionsKnobOptions {
     
-    @scala.inline
-    def apply(display: OptionsKnobOptionsDisplay): OptionsKnobOptions = {
+    inline def apply(display: OptionsKnobOptionsDisplay): OptionsKnobOptions = {
       val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsKnobOptions]
     }
     
-    @scala.inline
-    implicit class OptionsKnobOptionsMutableBuilder[Self <: OptionsKnobOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsKnobOptions](x: Self) {
       
-      @scala.inline
-      def setDisplay(value: OptionsKnobOptionsDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: OptionsKnobOptionsDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,23 +85,17 @@ object optionsMod {
   trait OptionsKnobOptionsDisplay extends StObject
   object OptionsKnobOptionsDisplay {
     
-    @scala.inline
-    def check: typings.storybookAddonKnobs.storybookAddonKnobsStrings.check = "check".asInstanceOf[typings.storybookAddonKnobs.storybookAddonKnobsStrings.check]
+    inline def check: typings.storybookAddonKnobs.storybookAddonKnobsStrings.check = "check".asInstanceOf[typings.storybookAddonKnobs.storybookAddonKnobsStrings.check]
     
-    @scala.inline
-    def `inline-check`: typings.storybookAddonKnobs.storybookAddonKnobsStrings.`inline-check` = "inline-check".asInstanceOf[typings.storybookAddonKnobs.storybookAddonKnobsStrings.`inline-check`]
+    inline def `inline-check`: typings.storybookAddonKnobs.storybookAddonKnobsStrings.`inline-check` = "inline-check".asInstanceOf[typings.storybookAddonKnobs.storybookAddonKnobsStrings.`inline-check`]
     
-    @scala.inline
-    def `inline-radio`: typings.storybookAddonKnobs.storybookAddonKnobsStrings.`inline-radio` = "inline-radio".asInstanceOf[typings.storybookAddonKnobs.storybookAddonKnobsStrings.`inline-radio`]
+    inline def `inline-radio`: typings.storybookAddonKnobs.storybookAddonKnobsStrings.`inline-radio` = "inline-radio".asInstanceOf[typings.storybookAddonKnobs.storybookAddonKnobsStrings.`inline-radio`]
     
-    @scala.inline
-    def `multi-select`: typings.storybookAddonKnobs.storybookAddonKnobsStrings.`multi-select` = "multi-select".asInstanceOf[typings.storybookAddonKnobs.storybookAddonKnobsStrings.`multi-select`]
+    inline def `multi-select`: typings.storybookAddonKnobs.storybookAddonKnobsStrings.`multi-select` = "multi-select".asInstanceOf[typings.storybookAddonKnobs.storybookAddonKnobsStrings.`multi-select`]
     
-    @scala.inline
-    def radio: typings.storybookAddonKnobs.storybookAddonKnobsStrings.radio = "radio".asInstanceOf[typings.storybookAddonKnobs.storybookAddonKnobsStrings.radio]
+    inline def radio: typings.storybookAddonKnobs.storybookAddonKnobsStrings.radio = "radio".asInstanceOf[typings.storybookAddonKnobs.storybookAddonKnobsStrings.radio]
     
-    @scala.inline
-    def select: typings.storybookAddonKnobs.storybookAddonKnobsStrings.select = "select".asInstanceOf[typings.storybookAddonKnobs.storybookAddonKnobsStrings.select]
+    inline def select: typings.storybookAddonKnobs.storybookAddonKnobsStrings.select = "select".asInstanceOf[typings.storybookAddonKnobs.storybookAddonKnobsStrings.select]
   }
   
   trait OptionsTypeKnob[T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */]
@@ -125,20 +108,16 @@ object optionsMod {
   }
   object OptionsTypeKnob {
     
-    @scala.inline
-    def apply[T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */](name: String, options: OptionsTypeOptionsProp[T], optionsObj: OptionsKnobOptions, value: T): OptionsTypeKnob[T] = {
+    inline def apply[T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */](name: String, options: OptionsTypeOptionsProp[T], optionsObj: OptionsKnobOptions, value: T): OptionsTypeKnob[T] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], optionsObj = optionsObj.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsTypeKnob[T]]
     }
     
-    @scala.inline
-    implicit class OptionsTypeKnobMutableBuilder[Self <: OptionsTypeKnob[?], T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */] (val x: Self & OptionsTypeKnob[T]) extends AnyVal {
+    extension [Self <: OptionsTypeKnob[?], T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */](x: Self & OptionsTypeKnob[T]) {
       
-      @scala.inline
-      def setOptions(value: OptionsTypeOptionsProp[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: OptionsTypeOptionsProp[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsObj(value: OptionsKnobOptions): Self = StObject.set(x, "optionsObj", value.asInstanceOf[js.Any])
+      inline def setOptionsObj(value: OptionsKnobOptions): Self = StObject.set(x, "optionsObj", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,20 +138,16 @@ object optionsMod {
   }
   object OptionsTypeProps {
     
-    @scala.inline
-    def apply[T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */](display: OptionsKnobOptionsDisplay, knob: OptionsTypeKnob[T], onChange: T => T): OptionsTypeProps[T] = {
+    inline def apply[T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */](display: OptionsKnobOptionsDisplay, knob: OptionsTypeKnob[T], onChange: T => T): OptionsTypeProps[T] = {
       val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], knob = knob.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
       __obj.asInstanceOf[OptionsTypeProps[T]]
     }
     
-    @scala.inline
-    implicit class OptionsTypePropsMutableBuilder[Self <: OptionsTypeProps[?], T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */] (val x: Self & OptionsTypeProps[T]) extends AnyVal {
+    extension [Self <: OptionsTypeProps[?], T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */](x: Self & OptionsTypeProps[T]) {
       
-      @scala.inline
-      def setDisplay(value: OptionsKnobOptionsDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: OptionsKnobOptionsDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKnob(value: OptionsTypeKnob[T]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+      inline def setKnob(value: OptionsTypeKnob[T]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     }
   }
 }

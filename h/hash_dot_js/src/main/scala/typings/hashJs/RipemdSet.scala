@@ -12,16 +12,13 @@ trait RipemdSet extends StObject {
 }
 object RipemdSet {
   
-  @scala.inline
-  def apply(ripemd160: () => Ripemd160): RipemdSet = {
+  inline def apply(ripemd160: () => Ripemd160): RipemdSet = {
     val __obj = js.Dynamic.literal(ripemd160 = js.Any.fromFunction0(ripemd160))
     __obj.asInstanceOf[RipemdSet]
   }
   
-  @scala.inline
-  implicit class RipemdSetMutableBuilder[Self <: RipemdSet] (val x: Self) extends AnyVal {
+  extension [Self <: RipemdSet](x: Self) {
     
-    @scala.inline
-    def setRipemd160(value: () => Ripemd160): Self = StObject.set(x, "ripemd160", js.Any.fromFunction0(value))
+    inline def setRipemd160(value: () => Ripemd160): Self = StObject.set(x, "ripemd160", js.Any.fromFunction0(value))
   }
 }

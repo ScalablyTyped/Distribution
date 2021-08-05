@@ -10,16 +10,13 @@ trait MediaParam extends StObject {
 }
 object MediaParam {
   
-  @scala.inline
-  def apply(file_path: String): MediaParam = {
+  inline def apply(file_path: String): MediaParam = {
     val __obj = js.Dynamic.literal(file_path = file_path.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaParam]
   }
   
-  @scala.inline
-  implicit class MediaParamMutableBuilder[Self <: MediaParam] (val x: Self) extends AnyVal {
+  extension [Self <: MediaParam](x: Self) {
     
-    @scala.inline
-    def setFile_path(value: String): Self = StObject.set(x, "file_path", value.asInstanceOf[js.Any])
+    inline def setFile_path(value: String): Self = StObject.set(x, "file_path", value.asInstanceOf[js.Any])
   }
 }

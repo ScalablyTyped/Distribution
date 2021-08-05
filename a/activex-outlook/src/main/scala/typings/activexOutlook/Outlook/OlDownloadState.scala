@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlDownloadState extends StObject
 object OlDownloadState {
   
-  @scala.inline
-  def olFullItem: `1` = 1.asInstanceOf[`1`]
+  inline def olFullItem: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olHeaderOnly: `0` = 0.asInstanceOf[`0`]
+  inline def olHeaderOnly: `0` = 0.asInstanceOf[`0`]
 }

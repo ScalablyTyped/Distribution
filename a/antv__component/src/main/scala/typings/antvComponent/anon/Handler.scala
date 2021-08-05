@@ -16,25 +16,19 @@ trait Handler extends StObject {
 }
 object Handler {
   
-  @scala.inline
-  def apply(handler: Size, label: Formatter, rail: DefaultLength, title: Spacing): Handler = {
+  inline def apply(handler: Size, label: Formatter, rail: DefaultLength, title: Spacing): Handler = {
     val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], rail = rail.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Handler]
   }
   
-  @scala.inline
-  implicit class HandlerMutableBuilder[Self <: Handler] (val x: Self) extends AnyVal {
+  extension [Self <: Handler](x: Self) {
     
-    @scala.inline
-    def setHandler(value: Size): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: Size): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: Formatter): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Formatter): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRail(value: DefaultLength): Self = StObject.set(x, "rail", value.asInstanceOf[js.Any])
+    inline def setRail(value: DefaultLength): Self = StObject.set(x, "rail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: Spacing): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Spacing): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

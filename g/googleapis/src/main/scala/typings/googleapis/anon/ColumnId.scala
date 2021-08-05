@@ -12,25 +12,19 @@ trait ColumnId extends StObject {
 }
 object ColumnId {
   
-  @scala.inline
-  def apply(): ColumnId = {
+  inline def apply(): ColumnId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnId]
   }
   
-  @scala.inline
-  implicit class ColumnIdMutableBuilder[Self <: ColumnId] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnId](x: Self) {
     
-    @scala.inline
-    def setColumnId(value: Double): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
+    inline def setColumnId(value: Double): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIdUndefined: Self = StObject.set(x, "columnId", js.undefined)
+    inline def setColumnIdUndefined: Self = StObject.set(x, "columnId", js.undefined)
     
-    @scala.inline
-    def setTableIndex(value: Double): Self = StObject.set(x, "tableIndex", value.asInstanceOf[js.Any])
+    inline def setTableIndex(value: Double): Self = StObject.set(x, "tableIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableIndexUndefined: Self = StObject.set(x, "tableIndex", js.undefined)
+    inline def setTableIndexUndefined: Self = StObject.set(x, "tableIndex", js.undefined)
   }
 }

@@ -22,17 +22,14 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: () => js.Promise[js.Array[java.lang.String]]): Data = {
+    inline def apply(data: () => js.Promise[js.Array[java.lang.String]]): Data = {
       val __obj = js.Dynamic.literal(data = js.Any.fromFunction0(data))
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: () => js.Promise[js.Array[java.lang.String]]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      inline def setData(value: () => js.Promise[js.Array[java.lang.String]]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
     }
   }
   
@@ -42,23 +39,18 @@ object anon {
   }
   object String {
     
-    @scala.inline
-    def apply(): String = {
+    inline def apply(): String = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[String]
     }
     
-    @scala.inline
-    implicit class StringMutableBuilder[Self <: String] (val x: Self) extends AnyVal {
+    extension [Self <: String](x: Self) {
       
-      @scala.inline
-      def setString(value: js.Array[java.lang.String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: js.Array[java.lang.String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+      inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
       
-      @scala.inline
-      def setStringVarargs(value: java.lang.String*): Self = StObject.set(x, "string", js.Array(value :_*))
+      inline def setStringVarargs(value: java.lang.String*): Self = StObject.set(x, "string", js.Array(value :_*))
     }
   }
 }

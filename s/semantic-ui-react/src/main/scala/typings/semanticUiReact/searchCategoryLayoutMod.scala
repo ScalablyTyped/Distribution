@@ -20,8 +20,7 @@ object searchCategoryLayoutMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object SearchCategoryLayoutProps {
     
-    @scala.inline
-    def apply(categoryContent: ReactElement, resultsContent: ReactElement): SearchCategoryLayoutProps = {
+    inline def apply(categoryContent: ReactElement, resultsContent: ReactElement): SearchCategoryLayoutProps = {
       val __obj = js.Dynamic.literal(categoryContent = categoryContent.asInstanceOf[js.Any], resultsContent = resultsContent.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchCategoryLayoutProps]
     }
@@ -37,20 +36,16 @@ object searchCategoryLayoutMod extends Shortcut {
   }
   object StrictSearchCategoryLayoutProps {
     
-    @scala.inline
-    def apply(categoryContent: ReactElement, resultsContent: ReactElement): StrictSearchCategoryLayoutProps = {
+    inline def apply(categoryContent: ReactElement, resultsContent: ReactElement): StrictSearchCategoryLayoutProps = {
       val __obj = js.Dynamic.literal(categoryContent = categoryContent.asInstanceOf[js.Any], resultsContent = resultsContent.asInstanceOf[js.Any])
       __obj.asInstanceOf[StrictSearchCategoryLayoutProps]
     }
     
-    @scala.inline
-    implicit class StrictSearchCategoryLayoutPropsMutableBuilder[Self <: StrictSearchCategoryLayoutProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictSearchCategoryLayoutProps](x: Self) {
       
-      @scala.inline
-      def setCategoryContent(value: ReactElement): Self = StObject.set(x, "categoryContent", value.asInstanceOf[js.Any])
+      inline def setCategoryContent(value: ReactElement): Self = StObject.set(x, "categoryContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsContent(value: ReactElement): Self = StObject.set(x, "resultsContent", value.asInstanceOf[js.Any])
+      inline def setResultsContent(value: ReactElement): Self = StObject.set(x, "resultsContent", value.asInstanceOf[js.Any])
     }
   }
   

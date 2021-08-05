@@ -15,19 +15,15 @@ trait TypeofBulletGraph extends StObject {
 }
 object TypeofBulletGraph {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: BulletGraph): TypeofBulletGraph = {
+  inline def apply(Locale: js.Any, fn: BulletGraph): TypeofBulletGraph = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofBulletGraph]
   }
   
-  @scala.inline
-  implicit class TypeofBulletGraphMutableBuilder[Self <: TypeofBulletGraph] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofBulletGraph](x: Self) {
     
-    @scala.inline
-    def setFn(value: BulletGraph): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: BulletGraph): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

@@ -98,162 +98,113 @@ trait WorkerPool extends StObject {
 }
 object WorkerPool {
   
-  @scala.inline
-  def apply(): WorkerPool = {
+  inline def apply(): WorkerPool = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkerPool]
   }
   
-  @scala.inline
-  implicit class WorkerPoolMutableBuilder[Self <: WorkerPool] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerPool](x: Self) {
     
-    @scala.inline
-    def setAutoscalingSettings(value: AutoscalingSettings): Self = StObject.set(x, "autoscalingSettings", value.asInstanceOf[js.Any])
+    inline def setAutoscalingSettings(value: AutoscalingSettings): Self = StObject.set(x, "autoscalingSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscalingSettingsUndefined: Self = StObject.set(x, "autoscalingSettings", js.undefined)
+    inline def setAutoscalingSettingsUndefined: Self = StObject.set(x, "autoscalingSettings", js.undefined)
     
-    @scala.inline
-    def setDataDisks(value: js.Array[Disk]): Self = StObject.set(x, "dataDisks", value.asInstanceOf[js.Any])
+    inline def setDataDisks(value: js.Array[Disk]): Self = StObject.set(x, "dataDisks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDisksUndefined: Self = StObject.set(x, "dataDisks", js.undefined)
+    inline def setDataDisksUndefined: Self = StObject.set(x, "dataDisks", js.undefined)
     
-    @scala.inline
-    def setDataDisksVarargs(value: Disk*): Self = StObject.set(x, "dataDisks", js.Array(value :_*))
+    inline def setDataDisksVarargs(value: Disk*): Self = StObject.set(x, "dataDisks", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultPackageSet(value: String): Self = StObject.set(x, "defaultPackageSet", value.asInstanceOf[js.Any])
+    inline def setDefaultPackageSet(value: String): Self = StObject.set(x, "defaultPackageSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPackageSetUndefined: Self = StObject.set(x, "defaultPackageSet", js.undefined)
+    inline def setDefaultPackageSetUndefined: Self = StObject.set(x, "defaultPackageSet", js.undefined)
     
-    @scala.inline
-    def setDiskSizeGb(value: Double): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
+    inline def setDiskSizeGb(value: Double): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
+    inline def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
     
-    @scala.inline
-    def setDiskSourceImage(value: String): Self = StObject.set(x, "diskSourceImage", value.asInstanceOf[js.Any])
+    inline def setDiskSourceImage(value: String): Self = StObject.set(x, "diskSourceImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskSourceImageUndefined: Self = StObject.set(x, "diskSourceImage", js.undefined)
+    inline def setDiskSourceImageUndefined: Self = StObject.set(x, "diskSourceImage", js.undefined)
     
-    @scala.inline
-    def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
+    inline def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
+    inline def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
     
-    @scala.inline
-    def setIpConfiguration(value: String): Self = StObject.set(x, "ipConfiguration", value.asInstanceOf[js.Any])
+    inline def setIpConfiguration(value: String): Self = StObject.set(x, "ipConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpConfigurationUndefined: Self = StObject.set(x, "ipConfiguration", js.undefined)
+    inline def setIpConfigurationUndefined: Self = StObject.set(x, "ipConfiguration", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
+    inline def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
+    inline def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
-    @scala.inline
-    def setMetadata(
+    inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerPool & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setNumThreadsPerWorker(value: Double): Self = StObject.set(x, "numThreadsPerWorker", value.asInstanceOf[js.Any])
+    inline def setNumThreadsPerWorker(value: Double): Self = StObject.set(x, "numThreadsPerWorker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumThreadsPerWorkerUndefined: Self = StObject.set(x, "numThreadsPerWorker", js.undefined)
+    inline def setNumThreadsPerWorkerUndefined: Self = StObject.set(x, "numThreadsPerWorker", js.undefined)
     
-    @scala.inline
-    def setNumWorkers(value: Double): Self = StObject.set(x, "numWorkers", value.asInstanceOf[js.Any])
+    inline def setNumWorkers(value: Double): Self = StObject.set(x, "numWorkers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumWorkersUndefined: Self = StObject.set(x, "numWorkers", js.undefined)
+    inline def setNumWorkersUndefined: Self = StObject.set(x, "numWorkers", js.undefined)
     
-    @scala.inline
-    def setOnHostMaintenance(value: String): Self = StObject.set(x, "onHostMaintenance", value.asInstanceOf[js.Any])
+    inline def setOnHostMaintenance(value: String): Self = StObject.set(x, "onHostMaintenance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnHostMaintenanceUndefined: Self = StObject.set(x, "onHostMaintenance", js.undefined)
+    inline def setOnHostMaintenanceUndefined: Self = StObject.set(x, "onHostMaintenance", js.undefined)
     
-    @scala.inline
-    def setPackages(value: js.Array[Package]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
+    inline def setPackages(value: js.Array[Package]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
+    inline def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
     
-    @scala.inline
-    def setPackagesVarargs(value: Package*): Self = StObject.set(x, "packages", js.Array(value :_*))
+    inline def setPackagesVarargs(value: Package*): Self = StObject.set(x, "packages", js.Array(value :_*))
     
-    @scala.inline
-    def setPoolArgs(
+    inline def setPoolArgs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerPool & TopLevel[js.Any]
     ): Self = StObject.set(x, "poolArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolArgsUndefined: Self = StObject.set(x, "poolArgs", js.undefined)
+    inline def setPoolArgsUndefined: Self = StObject.set(x, "poolArgs", js.undefined)
     
-    @scala.inline
-    def setSdkHarnessContainerImages(value: js.Array[SdkHarnessContainerImage]): Self = StObject.set(x, "sdkHarnessContainerImages", value.asInstanceOf[js.Any])
+    inline def setSdkHarnessContainerImages(value: js.Array[SdkHarnessContainerImage]): Self = StObject.set(x, "sdkHarnessContainerImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdkHarnessContainerImagesUndefined: Self = StObject.set(x, "sdkHarnessContainerImages", js.undefined)
+    inline def setSdkHarnessContainerImagesUndefined: Self = StObject.set(x, "sdkHarnessContainerImages", js.undefined)
     
-    @scala.inline
-    def setSdkHarnessContainerImagesVarargs(value: SdkHarnessContainerImage*): Self = StObject.set(x, "sdkHarnessContainerImages", js.Array(value :_*))
+    inline def setSdkHarnessContainerImagesVarargs(value: SdkHarnessContainerImage*): Self = StObject.set(x, "sdkHarnessContainerImages", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
+    inline def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
+    inline def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
     
-    @scala.inline
-    def setTaskrunnerSettings(value: TaskRunnerSettings): Self = StObject.set(x, "taskrunnerSettings", value.asInstanceOf[js.Any])
+    inline def setTaskrunnerSettings(value: TaskRunnerSettings): Self = StObject.set(x, "taskrunnerSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskrunnerSettingsUndefined: Self = StObject.set(x, "taskrunnerSettings", js.undefined)
+    inline def setTaskrunnerSettingsUndefined: Self = StObject.set(x, "taskrunnerSettings", js.undefined)
     
-    @scala.inline
-    def setTeardownPolicy(value: String): Self = StObject.set(x, "teardownPolicy", value.asInstanceOf[js.Any])
+    inline def setTeardownPolicy(value: String): Self = StObject.set(x, "teardownPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeardownPolicyUndefined: Self = StObject.set(x, "teardownPolicy", js.undefined)
+    inline def setTeardownPolicyUndefined: Self = StObject.set(x, "teardownPolicy", js.undefined)
     
-    @scala.inline
-    def setWorkerHarnessContainerImage(value: String): Self = StObject.set(x, "workerHarnessContainerImage", value.asInstanceOf[js.Any])
+    inline def setWorkerHarnessContainerImage(value: String): Self = StObject.set(x, "workerHarnessContainerImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerHarnessContainerImageUndefined: Self = StObject.set(x, "workerHarnessContainerImage", js.undefined)
+    inline def setWorkerHarnessContainerImageUndefined: Self = StObject.set(x, "workerHarnessContainerImage", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

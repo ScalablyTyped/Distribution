@@ -21,15 +21,14 @@ trait HeadersFooters extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.HeadersFooters_typekey")
+  /* private */ @JSName("PowerPoint.HeadersFooters_typekey")
   var PowerPointDotHeadersFooters_typekey: HeadersFooters
   
   val SlideNumber: HeaderFooter
 }
 object HeadersFooters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Clear: () => Unit,
     DateAndTime: HeaderFooter,
@@ -45,34 +44,24 @@ object HeadersFooters {
     __obj.asInstanceOf[HeadersFooters]
   }
   
-  @scala.inline
-  implicit class HeadersFootersMutableBuilder[Self <: HeadersFooters] (val x: Self) extends AnyVal {
+  extension [Self <: HeadersFooters](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDateAndTime(value: HeaderFooter): Self = StObject.set(x, "DateAndTime", value.asInstanceOf[js.Any])
+    inline def setDateAndTime(value: HeaderFooter): Self = StObject.set(x, "DateAndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayOnTitleSlide(value: MsoTriState): Self = StObject.set(x, "DisplayOnTitleSlide", value.asInstanceOf[js.Any])
+    inline def setDisplayOnTitleSlide(value: MsoTriState): Self = StObject.set(x, "DisplayOnTitleSlide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooter(value: HeaderFooter): Self = StObject.set(x, "Footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: HeaderFooter): Self = StObject.set(x, "Footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: HeaderFooter): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: HeaderFooter): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotHeadersFooters_typekey(value: HeadersFooters): Self = StObject.set(x, "PowerPoint.HeadersFooters_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotHeadersFooters_typekey(value: HeadersFooters): Self = StObject.set(x, "PowerPoint.HeadersFooters_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideNumber(value: HeaderFooter): Self = StObject.set(x, "SlideNumber", value.asInstanceOf[js.Any])
+    inline def setSlideNumber(value: HeaderFooter): Self = StObject.set(x, "SlideNumber", value.asInstanceOf[js.Any])
   }
 }

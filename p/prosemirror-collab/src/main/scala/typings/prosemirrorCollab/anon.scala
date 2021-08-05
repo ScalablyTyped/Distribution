@@ -17,32 +17,24 @@ object anon {
   }
   object ClientID {
     
-    @scala.inline
-    def apply(): ClientID = {
+    inline def apply(): ClientID = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientID]
     }
     
-    @scala.inline
-    implicit class ClientIDMutableBuilder[Self <: ClientID] (val x: Self) extends AnyVal {
+    extension [Self <: ClientID](x: Self) {
       
-      @scala.inline
-      def setClientID(value: Double | String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+      inline def setClientID(value: Double | String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIDNull: Self = StObject.set(x, "clientID", null)
+      inline def setClientIDNull: Self = StObject.set(x, "clientID", null)
       
-      @scala.inline
-      def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
+      inline def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionNull: Self = StObject.set(x, "version", null)
+      inline def setVersionNull: Self = StObject.set(x, "version", null)
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -52,20 +44,16 @@ object anon {
   }
   object MapSelectionBackward {
     
-    @scala.inline
-    def apply(): MapSelectionBackward = {
+    inline def apply(): MapSelectionBackward = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MapSelectionBackward]
     }
     
-    @scala.inline
-    implicit class MapSelectionBackwardMutableBuilder[Self <: MapSelectionBackward] (val x: Self) extends AnyVal {
+    extension [Self <: MapSelectionBackward](x: Self) {
       
-      @scala.inline
-      def setMapSelectionBackward(value: Boolean): Self = StObject.set(x, "mapSelectionBackward", value.asInstanceOf[js.Any])
+      inline def setMapSelectionBackward(value: Boolean): Self = StObject.set(x, "mapSelectionBackward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapSelectionBackwardUndefined: Self = StObject.set(x, "mapSelectionBackward", js.undefined)
+      inline def setMapSelectionBackwardUndefined: Self = StObject.set(x, "mapSelectionBackward", js.undefined)
     }
   }
   
@@ -81,8 +69,7 @@ object anon {
   }
   object Origins {
     
-    @scala.inline
-    def apply[S /* <: Schema[js.Any, js.Any] */](
+    inline def apply[S /* <: Schema[js.Any, js.Any] */](
       clientID: Double | String,
       origins: js.Array[Transaction[S]],
       steps: js.Array[Step[S]],
@@ -92,26 +79,19 @@ object anon {
       __obj.asInstanceOf[Origins[S]]
     }
     
-    @scala.inline
-    implicit class OriginsMutableBuilder[Self <: Origins[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & Origins[S]) extends AnyVal {
+    extension [Self <: Origins[?], S /* <: Schema[js.Any, js.Any] */](x: Self & Origins[S]) {
       
-      @scala.inline
-      def setClientID(value: Double | String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+      inline def setClientID(value: Double | String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigins(value: js.Array[Transaction[S]]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
+      inline def setOrigins(value: js.Array[Transaction[S]]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginsVarargs(value: Transaction[S]*): Self = StObject.set(x, "origins", js.Array(value :_*))
+      inline def setOriginsVarargs(value: Transaction[S]*): Self = StObject.set(x, "origins", js.Array(value :_*))
       
-      @scala.inline
-      def setSteps(value: js.Array[Step[S]]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[Step[S]]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsVarargs(value: Step[S]*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: Step[S]*): Self = StObject.set(x, "steps", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

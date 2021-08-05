@@ -10,9 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decode(encodedText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(encodedText.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def decode(encodedText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(encodedText.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def encode(decodedText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(decodedText.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(decodedText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(decodedText.asInstanceOf[js.Any]).asInstanceOf[String]
 }

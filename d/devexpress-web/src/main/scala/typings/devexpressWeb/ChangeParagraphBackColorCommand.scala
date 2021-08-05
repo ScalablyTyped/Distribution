@@ -24,19 +24,15 @@ trait ChangeParagraphBackColorCommand
 }
 object ChangeParagraphBackColorCommand {
   
-  @scala.inline
-  def apply(execute: String => Boolean, getState: () => CommandState[String]): ChangeParagraphBackColorCommand = {
+  inline def apply(execute: String => Boolean, getState: () => CommandState[String]): ChangeParagraphBackColorCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeParagraphBackColorCommand]
   }
   
-  @scala.inline
-  implicit class ChangeParagraphBackColorCommandMutableBuilder[Self <: ChangeParagraphBackColorCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeParagraphBackColorCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[String]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[String]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

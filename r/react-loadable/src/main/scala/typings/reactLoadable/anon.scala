@@ -13,17 +13,14 @@ object anon {
   }
   object Default {
     
-    @scala.inline
-    def apply[Props](default: ComponentType[Props]): Default[Props] = {
+    inline def apply[Props](default: ComponentType[Props]): Default[Props] = {
       val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
       __obj.asInstanceOf[Default[Props]]
     }
     
-    @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default[?], Props] (val x: Self & Default[Props]) extends AnyVal {
+    extension [Self <: Default[?], Props](x: Self & Default[Props]) {
       
-      @scala.inline
-      def setDefault(value: ComponentType[Props]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: ComponentType[Props]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
   }
 }

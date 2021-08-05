@@ -17,20 +17,16 @@ object globalHotkeyMod {
   }
   object GlobalHotkeyEvent {
     
-    @scala.inline
-    def apply[Type](hotkey: String, identity: Identity): GlobalHotkeyEvent[Type] = {
+    inline def apply[Type](hotkey: String, identity: Identity): GlobalHotkeyEvent[Type] = {
       val __obj = js.Dynamic.literal(hotkey = hotkey.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobalHotkeyEvent[Type]]
     }
     
-    @scala.inline
-    implicit class GlobalHotkeyEventMutableBuilder[Self <: GlobalHotkeyEvent[?], Type] (val x: Self & GlobalHotkeyEvent[Type]) extends AnyVal {
+    extension [Self <: GlobalHotkeyEvent[?], Type](x: Self & GlobalHotkeyEvent[Type]) {
       
-      @scala.inline
-      def setHotkey(value: String): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
+      inline def setHotkey(value: String): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     }
   }
   

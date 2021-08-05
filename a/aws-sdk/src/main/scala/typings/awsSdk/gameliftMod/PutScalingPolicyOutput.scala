@@ -13,19 +13,15 @@ trait PutScalingPolicyOutput extends StObject {
 }
 object PutScalingPolicyOutput {
   
-  @scala.inline
-  def apply(): PutScalingPolicyOutput = {
+  inline def apply(): PutScalingPolicyOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutScalingPolicyOutput]
   }
   
-  @scala.inline
-  implicit class PutScalingPolicyOutputMutableBuilder[Self <: PutScalingPolicyOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PutScalingPolicyOutput](x: Self) {
     
-    @scala.inline
-    def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

@@ -15,22 +15,17 @@ trait Lastsave extends StObject {
 }
 object Lastsave {
   
-  @scala.inline
-  def apply(lastsave: Date, savecount: Double, value: String): Lastsave = {
+  inline def apply(lastsave: Date, savecount: Double, value: String): Lastsave = {
     val __obj = js.Dynamic.literal(lastsave = lastsave.asInstanceOf[js.Any], savecount = savecount.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Lastsave]
   }
   
-  @scala.inline
-  implicit class LastsaveMutableBuilder[Self <: Lastsave] (val x: Self) extends AnyVal {
+  extension [Self <: Lastsave](x: Self) {
     
-    @scala.inline
-    def setLastsave(value: Date): Self = StObject.set(x, "lastsave", value.asInstanceOf[js.Any])
+    inline def setLastsave(value: Date): Self = StObject.set(x, "lastsave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavecount(value: Double): Self = StObject.set(x, "savecount", value.asInstanceOf[js.Any])
+    inline def setSavecount(value: Double): Self = StObject.set(x, "savecount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

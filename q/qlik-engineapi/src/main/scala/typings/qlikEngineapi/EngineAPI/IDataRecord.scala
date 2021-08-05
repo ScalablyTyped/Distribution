@@ -18,19 +18,15 @@ trait IDataRecord extends StObject {
 }
 object IDataRecord {
   
-  @scala.inline
-  def apply(qValues: js.Array[String]): IDataRecord = {
+  inline def apply(qValues: js.Array[String]): IDataRecord = {
     val __obj = js.Dynamic.literal(qValues = qValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDataRecord]
   }
   
-  @scala.inline
-  implicit class IDataRecordMutableBuilder[Self <: IDataRecord] (val x: Self) extends AnyVal {
+  extension [Self <: IDataRecord](x: Self) {
     
-    @scala.inline
-    def setQValues(value: js.Array[String]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
+    inline def setQValues(value: js.Array[String]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQValuesVarargs(value: String*): Self = StObject.set(x, "qValues", js.Array(value :_*))
+    inline def setQValuesVarargs(value: String*): Self = StObject.set(x, "qValues", js.Array(value :_*))
   }
 }

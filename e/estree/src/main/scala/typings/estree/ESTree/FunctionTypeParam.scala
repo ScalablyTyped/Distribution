@@ -14,8 +14,7 @@ trait FunctionTypeParam extends StObject {
 }
 object FunctionTypeParam {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any,
     optional: Boolean,
     typeAnnotation: FlowTypeAnnotation
@@ -24,18 +23,14 @@ object FunctionTypeParam {
     __obj.asInstanceOf[FunctionTypeParam]
   }
   
-  @scala.inline
-  implicit class FunctionTypeParamMutableBuilder[Self <: FunctionTypeParam] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionTypeParam](x: Self) {
     
-    @scala.inline
-    def setName(
+    inline def setName(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any
     ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: FlowTypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: FlowTypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }
 }

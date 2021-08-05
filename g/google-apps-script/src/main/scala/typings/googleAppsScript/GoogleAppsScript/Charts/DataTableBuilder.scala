@@ -32,8 +32,7 @@ trait DataTableBuilder extends StObject {
 }
 object DataTableBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addColumn: (ColumnType, String) => DataTableBuilder,
     addRow: js.Array[js.Any] => DataTableBuilder,
     build: () => DataTable,
@@ -43,19 +42,14 @@ object DataTableBuilder {
     __obj.asInstanceOf[DataTableBuilder]
   }
   
-  @scala.inline
-  implicit class DataTableBuilderMutableBuilder[Self <: DataTableBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: DataTableBuilder](x: Self) {
     
-    @scala.inline
-    def setAddColumn(value: (ColumnType, String) => DataTableBuilder): Self = StObject.set(x, "addColumn", js.Any.fromFunction2(value))
+    inline def setAddColumn(value: (ColumnType, String) => DataTableBuilder): Self = StObject.set(x, "addColumn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddRow(value: js.Array[js.Any] => DataTableBuilder): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))
+    inline def setAddRow(value: js.Array[js.Any] => DataTableBuilder): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBuild(value: () => DataTable): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => DataTable): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetValue(value: (Integer, Integer, js.Any) => DataTableBuilder): Self = StObject.set(x, "setValue", js.Any.fromFunction3(value))
+    inline def setSetValue(value: (Integer, Integer, js.Any) => DataTableBuilder): Self = StObject.set(x, "setValue", js.Any.fromFunction3(value))
   }
 }

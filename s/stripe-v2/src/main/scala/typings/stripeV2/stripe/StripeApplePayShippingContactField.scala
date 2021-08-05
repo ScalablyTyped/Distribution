@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StripeApplePayShippingContactField extends StObject
 object StripeApplePayShippingContactField {
   
-  @scala.inline
-  def email: typings.stripeV2.stripeV2Strings.email = "email".asInstanceOf[typings.stripeV2.stripeV2Strings.email]
+  inline def email: typings.stripeV2.stripeV2Strings.email = "email".asInstanceOf[typings.stripeV2.stripeV2Strings.email]
   
-  @scala.inline
-  def name: typings.stripeV2.stripeV2Strings.name = "name".asInstanceOf[typings.stripeV2.stripeV2Strings.name]
+  inline def name: typings.stripeV2.stripeV2Strings.name = "name".asInstanceOf[typings.stripeV2.stripeV2Strings.name]
   
-  @scala.inline
-  def phone: typings.stripeV2.stripeV2Strings.phone = "phone".asInstanceOf[typings.stripeV2.stripeV2Strings.phone]
+  inline def phone: typings.stripeV2.stripeV2Strings.phone = "phone".asInstanceOf[typings.stripeV2.stripeV2Strings.phone]
   
-  @scala.inline
-  def postalAddress: typings.stripeV2.stripeV2Strings.postalAddress = "postalAddress".asInstanceOf[typings.stripeV2.stripeV2Strings.postalAddress]
+  inline def postalAddress: typings.stripeV2.stripeV2Strings.postalAddress = "postalAddress".asInstanceOf[typings.stripeV2.stripeV2Strings.postalAddress]
 }

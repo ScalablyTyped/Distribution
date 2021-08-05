@@ -23,10 +23,8 @@ object reactMod {
   }
   ```
   */
-  @scala.inline
-  def apply[SelfType /* <: Component[js.Object, js.Object, js.Any] */](self: SelfType): SelfType = ^.asInstanceOf[js.Dynamic].apply(self.asInstanceOf[js.Any]).asInstanceOf[SelfType]
-  @scala.inline
-  def apply[SelfType /* <: Component[js.Object, js.Object, js.Any] */](self: SelfType, options: Options): SelfType = (^.asInstanceOf[js.Dynamic].apply(self.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SelfType]
+  inline def apply[SelfType /* <: Component[js.Object, js.Object, js.Any] */](self: SelfType): SelfType = ^.asInstanceOf[js.Dynamic].apply(self.asInstanceOf[js.Any]).asInstanceOf[SelfType]
+  inline def apply[SelfType /* <: Component[js.Object, js.Object, js.Any] */](self: SelfType, options: Options): SelfType = (^.asInstanceOf[js.Dynamic].apply(self.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SelfType]
   
   @JSImport("auto-bind/react", JSImport.Namespace)
   @js.native

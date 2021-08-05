@@ -21,8 +21,7 @@ trait XAlterQuery
 }
 object XAlterQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     alterCommand: (String, Boolean) => Unit,
     queryInterface: `type` => js.Any,
@@ -32,10 +31,8 @@ object XAlterQuery {
     __obj.asInstanceOf[XAlterQuery]
   }
   
-  @scala.inline
-  implicit class XAlterQueryMutableBuilder[Self <: XAlterQuery] (val x: Self) extends AnyVal {
+  extension [Self <: XAlterQuery](x: Self) {
     
-    @scala.inline
-    def setAlterCommand(value: (String, Boolean) => Unit): Self = StObject.set(x, "alterCommand", js.Any.fromFunction2(value))
+    inline def setAlterCommand(value: (String, Boolean) => Unit): Self = StObject.set(x, "alterCommand", js.Any.fromFunction2(value))
   }
 }

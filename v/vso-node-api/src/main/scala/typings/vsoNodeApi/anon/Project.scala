@@ -12,19 +12,15 @@ trait Project extends StObject {
 }
 object Project {
   
-  @scala.inline
-  def apply(project: scala.Double, projectCollection: scala.Double): Project = {
+  inline def apply(project: scala.Double, projectCollection: scala.Double): Project = {
     val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], projectCollection = projectCollection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Project]
   }
   
-  @scala.inline
-  implicit class ProjectMutableBuilder[Self <: Project] (val x: Self) extends AnyVal {
+  extension [Self <: Project](x: Self) {
     
-    @scala.inline
-    def setProject(value: scala.Double): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: scala.Double): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectCollection(value: scala.Double): Self = StObject.set(x, "projectCollection", value.asInstanceOf[js.Any])
+    inline def setProjectCollection(value: scala.Double): Self = StObject.set(x, "projectCollection", value.asInstanceOf[js.Any])
   }
 }

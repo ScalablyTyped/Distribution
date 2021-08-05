@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** IFaxOutgoingJob interface */
 @JSGlobal("FAXCOMEXLib.IFaxOutgoingJob")
 @js.native
-class IFaxOutgoingJob protected ()
+/* private */ class IFaxOutgoingJob ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.IFaxOutgoingJob {
   
@@ -53,7 +53,7 @@ class IFaxOutgoingJob protected ()
   /* CompleteClass */
   override val ExtendedStatusCode: FAX_JOB_EXTENDED_STATUS_ENUM = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("FAXCOMEXLib.IFaxOutgoingJob_typekey")
   var FAXCOMEXLibDotIFaxOutgoingJob_typekey: typings.activexFaxcomexlib.FAXCOMEXLib.IFaxOutgoingJob = js.native
   

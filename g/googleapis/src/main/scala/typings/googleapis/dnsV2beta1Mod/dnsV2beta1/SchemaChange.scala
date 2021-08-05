@@ -26,61 +26,43 @@ trait SchemaChange extends StObject {
 }
 object SchemaChange {
   
-  @scala.inline
-  def apply(): SchemaChange = {
+  inline def apply(): SchemaChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChange]
   }
   
-  @scala.inline
-  implicit class SchemaChangeMutableBuilder[Self <: SchemaChange] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChange](x: Self) {
     
-    @scala.inline
-    def setAdditions(value: js.Array[SchemaResourceRecordSet]): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
+    inline def setAdditions(value: js.Array[SchemaResourceRecordSet]): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionsUndefined: Self = StObject.set(x, "additions", js.undefined)
+    inline def setAdditionsUndefined: Self = StObject.set(x, "additions", js.undefined)
     
-    @scala.inline
-    def setAdditionsVarargs(value: SchemaResourceRecordSet*): Self = StObject.set(x, "additions", js.Array(value :_*))
+    inline def setAdditionsVarargs(value: SchemaResourceRecordSet*): Self = StObject.set(x, "additions", js.Array(value :_*))
     
-    @scala.inline
-    def setDeletions(value: js.Array[SchemaResourceRecordSet]): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
+    inline def setDeletions(value: js.Array[SchemaResourceRecordSet]): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionsUndefined: Self = StObject.set(x, "deletions", js.undefined)
+    inline def setDeletionsUndefined: Self = StObject.set(x, "deletions", js.undefined)
     
-    @scala.inline
-    def setDeletionsVarargs(value: SchemaResourceRecordSet*): Self = StObject.set(x, "deletions", js.Array(value :_*))
+    inline def setDeletionsVarargs(value: SchemaResourceRecordSet*): Self = StObject.set(x, "deletions", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsServing(value: Boolean): Self = StObject.set(x, "isServing", value.asInstanceOf[js.Any])
+    inline def setIsServing(value: Boolean): Self = StObject.set(x, "isServing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsServingUndefined: Self = StObject.set(x, "isServing", js.undefined)
+    inline def setIsServingUndefined: Self = StObject.set(x, "isServing", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

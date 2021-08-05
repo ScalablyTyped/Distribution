@@ -26,31 +26,23 @@ trait SchemaBuildBazelRemoteExecutionV2FileNode extends StObject {
 }
 object SchemaBuildBazelRemoteExecutionV2FileNode {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelRemoteExecutionV2FileNode = {
+  inline def apply(): SchemaBuildBazelRemoteExecutionV2FileNode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2FileNode]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2FileNodeMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2FileNode] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelRemoteExecutionV2FileNode](x: Self) {
     
-    @scala.inline
-    def setDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setIsExecutable(value: Boolean): Self = StObject.set(x, "isExecutable", value.asInstanceOf[js.Any])
+    inline def setIsExecutable(value: Boolean): Self = StObject.set(x, "isExecutable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExecutableUndefined: Self = StObject.set(x, "isExecutable", js.undefined)
+    inline def setIsExecutableUndefined: Self = StObject.set(x, "isExecutable", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

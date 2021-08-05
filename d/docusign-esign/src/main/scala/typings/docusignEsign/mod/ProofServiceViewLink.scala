@@ -10,19 +10,15 @@ trait ProofServiceViewLink extends StObject {
 }
 object ProofServiceViewLink {
   
-  @scala.inline
-  def apply(): ProofServiceViewLink = {
+  inline def apply(): ProofServiceViewLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProofServiceViewLink]
   }
   
-  @scala.inline
-  implicit class ProofServiceViewLinkMutableBuilder[Self <: ProofServiceViewLink] (val x: Self) extends AnyVal {
+  extension [Self <: ProofServiceViewLink](x: Self) {
     
-    @scala.inline
-    def setViewLink(value: String): Self = StObject.set(x, "ViewLink", value.asInstanceOf[js.Any])
+    inline def setViewLink(value: String): Self = StObject.set(x, "ViewLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewLinkUndefined: Self = StObject.set(x, "ViewLink", js.undefined)
+    inline def setViewLinkUndefined: Self = StObject.set(x, "ViewLink", js.undefined)
   }
 }

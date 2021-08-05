@@ -16,12 +16,12 @@ object twilsockConnectorMod {
   class TwilsockConnector protected () extends Connector {
     def this(context: js.Any, twilsock: js.Any, config: Configuration) = this()
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     def setNotificationId(args: js.Any*): Unit = js.native
     
-    val twilsock: js.Any = js.native
+    /* private */ val twilsock: js.Any = js.native
     
-    var updateContextRequest: js.Any = js.native
+    /* private */ var updateContextRequest: js.Any = js.native
   }
 }

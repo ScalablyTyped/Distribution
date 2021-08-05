@@ -18,19 +18,15 @@ trait StartDataSourceSyncJobRequest extends StObject {
 }
 object StartDataSourceSyncJobRequest {
   
-  @scala.inline
-  def apply(Id: DataSourceId, IndexId: IndexId): StartDataSourceSyncJobRequest = {
+  inline def apply(Id: DataSourceId, IndexId: IndexId): StartDataSourceSyncJobRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], IndexId = IndexId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartDataSourceSyncJobRequest]
   }
   
-  @scala.inline
-  implicit class StartDataSourceSyncJobRequestMutableBuilder[Self <: StartDataSourceSyncJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartDataSourceSyncJobRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: DataSourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: DataSourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
+    inline def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
   }
 }

@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def OAuth2Server_=(
+inline def OAuth2Server_=(
   x: org.scalablytyped.runtime.Instantiable1[
   /* options */ typings.oauth2Server.mod.ServerOptions, 
   typings.oauth2Server.mod.OAuth2Server

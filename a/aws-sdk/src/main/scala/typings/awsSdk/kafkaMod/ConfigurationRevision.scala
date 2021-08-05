@@ -29,25 +29,19 @@ trait ConfigurationRevision extends StObject {
 }
 object ConfigurationRevision {
   
-  @scala.inline
-  def apply(CreationTime: timestampIso8601, Revision: long): ConfigurationRevision = {
+  inline def apply(CreationTime: timestampIso8601, Revision: long): ConfigurationRevision = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], Revision = Revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationRevision]
   }
   
-  @scala.inline
-  implicit class ConfigurationRevisionMutableBuilder[Self <: ConfigurationRevision] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationRevision](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: timestampIso8601): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: timestampIso8601): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setRevision(value: long): Self = StObject.set(x, "Revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: long): Self = StObject.set(x, "Revision", value.asInstanceOf[js.Any])
   }
 }

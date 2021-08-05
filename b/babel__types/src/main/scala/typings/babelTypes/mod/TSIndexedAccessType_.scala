@@ -20,23 +20,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TSIndexedAccessType_ {
   
-  @scala.inline
-  def apply(indexType: TSType, objectType: TSType): TSIndexedAccessType_ = {
+  inline def apply(indexType: TSType, objectType: TSType): TSIndexedAccessType_ = {
     val __obj = js.Dynamic.literal(indexType = indexType.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSIndexedAccessType")
     __obj.asInstanceOf[TSIndexedAccessType_]
   }
   
-  @scala.inline
-  implicit class TSIndexedAccessType_MutableBuilder[Self <: TSIndexedAccessType_] (val x: Self) extends AnyVal {
+  extension [Self <: TSIndexedAccessType_](x: Self) {
     
-    @scala.inline
-    def setIndexType(value: TSType): Self = StObject.set(x, "indexType", value.asInstanceOf[js.Any])
+    inline def setIndexType(value: TSType): Self = StObject.set(x, "indexType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectType(value: TSType): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: TSType): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TSIndexedAccessType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSIndexedAccessType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

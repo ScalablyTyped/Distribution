@@ -13,19 +13,15 @@ trait StockToolsGuiDefinitionsLinesRayOptions extends StObject {
 }
 object StockToolsGuiDefinitionsLinesRayOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsLinesRayOptions = {
+  inline def apply(): StockToolsGuiDefinitionsLinesRayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsLinesRayOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsLinesRayOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsLinesRayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsLinesRayOptions](x: Self) {
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

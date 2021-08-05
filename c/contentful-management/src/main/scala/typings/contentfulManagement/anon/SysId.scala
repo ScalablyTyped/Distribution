@@ -10,16 +10,13 @@ trait SysId extends StObject {
 }
 object SysId {
   
-  @scala.inline
-  def apply(sys: Id): SysId = {
+  inline def apply(sys: Id): SysId = {
     val __obj = js.Dynamic.literal(sys = sys.asInstanceOf[js.Any])
     __obj.asInstanceOf[SysId]
   }
   
-  @scala.inline
-  implicit class SysIdMutableBuilder[Self <: SysId] (val x: Self) extends AnyVal {
+  extension [Self <: SysId](x: Self) {
     
-    @scala.inline
-    def setSys(value: Id): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+    inline def setSys(value: Id): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
   }
 }

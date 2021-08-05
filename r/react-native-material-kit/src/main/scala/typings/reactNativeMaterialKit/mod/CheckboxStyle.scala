@@ -18,43 +18,31 @@ trait CheckboxStyle extends StObject {
 }
 object CheckboxStyle {
   
-  @scala.inline
-  def apply(): CheckboxStyle = {
+  inline def apply(): CheckboxStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckboxStyle]
   }
   
-  @scala.inline
-  implicit class CheckboxStyleMutableBuilder[Self <: CheckboxStyle] (val x: Self) extends AnyVal {
+  extension [Self <: CheckboxStyle](x: Self) {
     
-    @scala.inline
-    def setBorderOffColor(value: String): Self = StObject.set(x, "borderOffColor", value.asInstanceOf[js.Any])
+    inline def setBorderOffColor(value: String): Self = StObject.set(x, "borderOffColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderOffColorUndefined: Self = StObject.set(x, "borderOffColor", js.undefined)
+    inline def setBorderOffColorUndefined: Self = StObject.set(x, "borderOffColor", js.undefined)
     
-    @scala.inline
-    def setBorderOnColor(value: String): Self = StObject.set(x, "borderOnColor", value.asInstanceOf[js.Any])
+    inline def setBorderOnColor(value: String): Self = StObject.set(x, "borderOnColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderOnColorUndefined: Self = StObject.set(x, "borderOnColor", js.undefined)
+    inline def setBorderOnColorUndefined: Self = StObject.set(x, "borderOnColor", js.undefined)
     
-    @scala.inline
-    def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
-    @scala.inline
-    def setInset(value: Double): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInset(value: Double): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
-    @scala.inline
-    def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
+    inline def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
+    inline def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
   }
 }

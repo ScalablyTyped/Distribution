@@ -17,16 +17,13 @@ trait SystemInfoCpu
 }
 object SystemInfoCpu {
   
-  @scala.inline
-  def apply(load: Double): SystemInfoCpu = {
+  inline def apply(load: Double): SystemInfoCpu = {
     val __obj = js.Dynamic.literal(load = load.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemInfoCpu]
   }
   
-  @scala.inline
-  implicit class SystemInfoCpuMutableBuilder[Self <: SystemInfoCpu] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoCpu](x: Self) {
     
-    @scala.inline
-    def setLoad(value: Double): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: Double): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
   }
 }

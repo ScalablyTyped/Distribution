@@ -13,16 +13,13 @@ trait GetPublicKeyRequest extends StObject {
 }
 object GetPublicKeyRequest {
   
-  @scala.inline
-  def apply(Id: String): GetPublicKeyRequest = {
+  inline def apply(Id: String): GetPublicKeyRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPublicKeyRequest]
   }
   
-  @scala.inline
-  implicit class GetPublicKeyRequestMutableBuilder[Self <: GetPublicKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetPublicKeyRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

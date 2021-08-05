@@ -28,8 +28,7 @@ trait RTCPeerConnectionEventMap extends StObject {
 }
 object RTCPeerConnectionEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectionstatechange: Event,
     datachannel: RTCDataChannelEvent,
     icecandidate: RTCPeerConnectionIceEvent,
@@ -45,37 +44,26 @@ object RTCPeerConnectionEventMap {
     __obj.asInstanceOf[RTCPeerConnectionEventMap]
   }
   
-  @scala.inline
-  implicit class RTCPeerConnectionEventMapMutableBuilder[Self <: RTCPeerConnectionEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: RTCPeerConnectionEventMap](x: Self) {
     
-    @scala.inline
-    def setConnectionstatechange(value: Event): Self = StObject.set(x, "connectionstatechange", value.asInstanceOf[js.Any])
+    inline def setConnectionstatechange(value: Event): Self = StObject.set(x, "connectionstatechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatachannel(value: RTCDataChannelEvent): Self = StObject.set(x, "datachannel", value.asInstanceOf[js.Any])
+    inline def setDatachannel(value: RTCDataChannelEvent): Self = StObject.set(x, "datachannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcecandidate(value: RTCPeerConnectionIceEvent): Self = StObject.set(x, "icecandidate", value.asInstanceOf[js.Any])
+    inline def setIcecandidate(value: RTCPeerConnectionIceEvent): Self = StObject.set(x, "icecandidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcecandidateerror(value: RTCPeerConnectionIceErrorEvent): Self = StObject.set(x, "icecandidateerror", value.asInstanceOf[js.Any])
+    inline def setIcecandidateerror(value: RTCPeerConnectionIceErrorEvent): Self = StObject.set(x, "icecandidateerror", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIceconnectionstatechange(value: Event): Self = StObject.set(x, "iceconnectionstatechange", value.asInstanceOf[js.Any])
+    inline def setIceconnectionstatechange(value: Event): Self = StObject.set(x, "iceconnectionstatechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcegatheringstatechange(value: Event): Self = StObject.set(x, "icegatheringstatechange", value.asInstanceOf[js.Any])
+    inline def setIcegatheringstatechange(value: Event): Self = StObject.set(x, "icegatheringstatechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegotiationneeded(value: Event): Self = StObject.set(x, "negotiationneeded", value.asInstanceOf[js.Any])
+    inline def setNegotiationneeded(value: Event): Self = StObject.set(x, "negotiationneeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalingstatechange(value: Event): Self = StObject.set(x, "signalingstatechange", value.asInstanceOf[js.Any])
+    inline def setSignalingstatechange(value: Event): Self = StObject.set(x, "signalingstatechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatsended(value: RTCStatsEvent): Self = StObject.set(x, "statsended", value.asInstanceOf[js.Any])
+    inline def setStatsended(value: RTCStatsEvent): Self = StObject.set(x, "statsended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack(value: RTCTrackEvent): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: RTCTrackEvent): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
   }
 }

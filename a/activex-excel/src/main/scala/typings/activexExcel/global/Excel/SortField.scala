@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SortField")
 @js.native
-class SortField protected ()
+/* private */ class SortField ()
   extends StObject
      with typings.activexExcel.Excel.SortField {
   
@@ -30,7 +30,7 @@ class SortField protected ()
   /* CompleteClass */
   override def Delete(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.SortField_typekey")
   var ExcelDotSortField_typekey: typings.activexExcel.Excel.SortField = js.native
   

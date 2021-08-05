@@ -12,25 +12,19 @@ trait Params extends StObject {
 }
 object Params {
   
-  @scala.inline
-  def apply(): Params = {
+  inline def apply(): Params = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Params]
   }
   
-  @scala.inline
-  implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+  extension [Self <: Params](x: Self) {
     
-    @scala.inline
-    def setOpt_expand(value: String): Self = StObject.set(x, "opt_expand", value.asInstanceOf[js.Any])
+    inline def setOpt_expand(value: String): Self = StObject.set(x, "opt_expand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpt_expandUndefined: Self = StObject.set(x, "opt_expand", js.undefined)
+    inline def setOpt_expandUndefined: Self = StObject.set(x, "opt_expand", js.undefined)
     
-    @scala.inline
-    def setOpt_fields(value: String): Self = StObject.set(x, "opt_fields", value.asInstanceOf[js.Any])
+    inline def setOpt_fields(value: String): Self = StObject.set(x, "opt_fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpt_fieldsUndefined: Self = StObject.set(x, "opt_fields", js.undefined)
+    inline def setOpt_fieldsUndefined: Self = StObject.set(x, "opt_fields", js.undefined)
   }
 }

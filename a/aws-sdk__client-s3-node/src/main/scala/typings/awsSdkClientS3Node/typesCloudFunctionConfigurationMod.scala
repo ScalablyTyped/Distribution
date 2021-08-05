@@ -53,31 +53,24 @@ object typesCloudFunctionConfigurationMod {
   }
   object CloudFunctionConfiguration {
     
-    @scala.inline
-    def apply(): CloudFunctionConfiguration = {
+    inline def apply(): CloudFunctionConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CloudFunctionConfiguration]
     }
     
-    @scala.inline
-    implicit class CloudFunctionConfigurationMutableBuilder[Self <: CloudFunctionConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: CloudFunctionConfiguration](x: Self) {
       
-      @scala.inline
-      def setCloudFunction(value: String): Self = StObject.set(x, "CloudFunction", value.asInstanceOf[js.Any])
+      inline def setCloudFunction(value: String): Self = StObject.set(x, "CloudFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudFunctionUndefined: Self = StObject.set(x, "CloudFunction", js.undefined)
+      inline def setCloudFunctionUndefined: Self = StObject.set(x, "CloudFunction", js.undefined)
       
-      @scala.inline
-      def setEvent(
+      inline def setEvent(
         value: s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
       ): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventUndefined: Self = StObject.set(x, "Event", js.undefined)
+      inline def setEventUndefined: Self = StObject.set(x, "Event", js.undefined)
       
-      @scala.inline
-      def setEvents(
+      inline def setEvents(
         value: (js.Array[
               s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
             ]) | (Iterable[
@@ -85,25 +78,19 @@ object typesCloudFunctionConfigurationMod {
             ])
       ): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
       
-      @scala.inline
-      def setEventsVarargs(
+      inline def setEventsVarargs(
         value: (s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String)*
       ): Self = StObject.set(x, "Events", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      @scala.inline
-      def setInvocationRole(value: String): Self = StObject.set(x, "InvocationRole", value.asInstanceOf[js.Any])
+      inline def setInvocationRole(value: String): Self = StObject.set(x, "InvocationRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvocationRoleUndefined: Self = StObject.set(x, "InvocationRole", js.undefined)
+      inline def setInvocationRoleUndefined: Self = StObject.set(x, "InvocationRole", js.undefined)
     }
   }
   
@@ -123,27 +110,22 @@ object typesCloudFunctionConfigurationMod {
   }
   object UnmarshalledCloudFunctionConfiguration {
     
-    @scala.inline
-    def apply(): UnmarshalledCloudFunctionConfiguration = {
+    inline def apply(): UnmarshalledCloudFunctionConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledCloudFunctionConfiguration]
     }
     
-    @scala.inline
-    implicit class UnmarshalledCloudFunctionConfigurationMutableBuilder[Self <: UnmarshalledCloudFunctionConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledCloudFunctionConfiguration](x: Self) {
       
-      @scala.inline
-      def setEvents(
+      inline def setEvents(
         value: js.Array[
               s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
             ]
       ): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
       
-      @scala.inline
-      def setEventsVarargs(
+      inline def setEventsVarargs(
         value: (s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String)*
       ): Self = StObject.set(x, "Events", js.Array(value :_*))
     }

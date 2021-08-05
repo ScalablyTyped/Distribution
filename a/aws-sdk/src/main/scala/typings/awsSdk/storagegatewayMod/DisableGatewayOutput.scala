@@ -13,19 +13,15 @@ trait DisableGatewayOutput extends StObject {
 }
 object DisableGatewayOutput {
   
-  @scala.inline
-  def apply(): DisableGatewayOutput = {
+  inline def apply(): DisableGatewayOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisableGatewayOutput]
   }
   
-  @scala.inline
-  implicit class DisableGatewayOutputMutableBuilder[Self <: DisableGatewayOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DisableGatewayOutput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
   }
 }

@@ -13,6 +13,5 @@ class OtherRef ()
   extends typings.xadesjs.xmlMod.OtherRef
 object OtherRef {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.OtherRef] = ^.asInstanceOf[js.Dynamic].selectDynamic("OtherRef").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.OtherRef]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.OtherRef] = ^.asInstanceOf[js.Dynamic].selectDynamic("OtherRef").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.OtherRef]]
 }

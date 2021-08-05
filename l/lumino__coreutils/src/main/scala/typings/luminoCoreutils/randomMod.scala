@@ -30,7 +30,6 @@ object randomMod {
       *   - `require('crypto').randomBytes
       *   - `Math.random`
       */
-    @scala.inline
-    def getRandomValues(buffer: Uint8Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomValues")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getRandomValues(buffer: Uint8Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomValues")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

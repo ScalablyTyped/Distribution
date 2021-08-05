@@ -22,34 +22,24 @@ object columnModeMod {
   trait ColumnMode extends StObject
   object ColumnMode {
     
-    @scala.inline
-    def array: typings.typeorm.typeormStrings.array = "array".asInstanceOf[typings.typeorm.typeormStrings.array]
+    inline def array: typings.typeorm.typeormStrings.array = "array".asInstanceOf[typings.typeorm.typeormStrings.array]
     
-    @scala.inline
-    def createDate: typings.typeorm.typeormStrings.createDate = "createDate".asInstanceOf[typings.typeorm.typeormStrings.createDate]
+    inline def createDate: typings.typeorm.typeormStrings.createDate = "createDate".asInstanceOf[typings.typeorm.typeormStrings.createDate]
     
-    @scala.inline
-    def deleteDate: typings.typeorm.typeormStrings.deleteDate = "deleteDate".asInstanceOf[typings.typeorm.typeormStrings.deleteDate]
+    inline def deleteDate: typings.typeorm.typeormStrings.deleteDate = "deleteDate".asInstanceOf[typings.typeorm.typeormStrings.deleteDate]
     
-    @scala.inline
-    def objectId: typings.typeorm.typeormStrings.objectId = "objectId".asInstanceOf[typings.typeorm.typeormStrings.objectId]
+    inline def objectId: typings.typeorm.typeormStrings.objectId = "objectId".asInstanceOf[typings.typeorm.typeormStrings.objectId]
     
-    @scala.inline
-    def regular: typings.typeorm.typeormStrings.regular = "regular".asInstanceOf[typings.typeorm.typeormStrings.regular]
+    inline def regular: typings.typeorm.typeormStrings.regular = "regular".asInstanceOf[typings.typeorm.typeormStrings.regular]
     
-    @scala.inline
-    def treeChildrenCount: typings.typeorm.typeormStrings.treeChildrenCount = "treeChildrenCount".asInstanceOf[typings.typeorm.typeormStrings.treeChildrenCount]
+    inline def treeChildrenCount: typings.typeorm.typeormStrings.treeChildrenCount = "treeChildrenCount".asInstanceOf[typings.typeorm.typeormStrings.treeChildrenCount]
     
-    @scala.inline
-    def treeLevel: typings.typeorm.typeormStrings.treeLevel = "treeLevel".asInstanceOf[typings.typeorm.typeormStrings.treeLevel]
+    inline def treeLevel: typings.typeorm.typeormStrings.treeLevel = "treeLevel".asInstanceOf[typings.typeorm.typeormStrings.treeLevel]
     
-    @scala.inline
-    def updateDate: typings.typeorm.typeormStrings.updateDate = "updateDate".asInstanceOf[typings.typeorm.typeormStrings.updateDate]
+    inline def updateDate: typings.typeorm.typeormStrings.updateDate = "updateDate".asInstanceOf[typings.typeorm.typeormStrings.updateDate]
     
-    @scala.inline
-    def version: typings.typeorm.typeormStrings.version = "version".asInstanceOf[typings.typeorm.typeormStrings.version]
+    inline def version: typings.typeorm.typeormStrings.version = "version".asInstanceOf[typings.typeorm.typeormStrings.version]
     
-    @scala.inline
-    def virtual: virtual_ = "virtual".asInstanceOf[virtual_]
+    inline def virtual: virtual_ = "virtual".asInstanceOf[virtual_]
   }
 }

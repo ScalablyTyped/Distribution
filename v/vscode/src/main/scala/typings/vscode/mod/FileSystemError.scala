@@ -44,66 +44,48 @@ object FileSystemError {
     * creating but not overwriting a file.
     * @param messageOrUri Message or uri.
     */
-  @scala.inline
-  def FileExists(): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileExists")().asInstanceOf[FileSystemError]
-  @scala.inline
-  def FileExists(messageOrUri: String): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileExists")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
-  @scala.inline
-  def FileExists(messageOrUri: Uri): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileExists")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
+  inline def FileExists(): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileExists")().asInstanceOf[FileSystemError]
+  inline def FileExists(messageOrUri: String): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileExists")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
+  inline def FileExists(messageOrUri: Uri): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileExists")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
   
   /**
     * Create an error to signal that a file is a folder.
     * @param messageOrUri Message or uri.
     */
-  @scala.inline
-  def FileIsADirectory(): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileIsADirectory")().asInstanceOf[FileSystemError]
-  @scala.inline
-  def FileIsADirectory(messageOrUri: String): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileIsADirectory")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
-  @scala.inline
-  def FileIsADirectory(messageOrUri: Uri): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileIsADirectory")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
+  inline def FileIsADirectory(): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileIsADirectory")().asInstanceOf[FileSystemError]
+  inline def FileIsADirectory(messageOrUri: String): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileIsADirectory")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
+  inline def FileIsADirectory(messageOrUri: Uri): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileIsADirectory")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
   
   /**
     * Create an error to signal that a file is not a folder.
     * @param messageOrUri Message or uri.
     */
-  @scala.inline
-  def FileNotADirectory(): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileNotADirectory")().asInstanceOf[FileSystemError]
-  @scala.inline
-  def FileNotADirectory(messageOrUri: String): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileNotADirectory")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
-  @scala.inline
-  def FileNotADirectory(messageOrUri: Uri): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileNotADirectory")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
+  inline def FileNotADirectory(): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileNotADirectory")().asInstanceOf[FileSystemError]
+  inline def FileNotADirectory(messageOrUri: String): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileNotADirectory")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
+  inline def FileNotADirectory(messageOrUri: Uri): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileNotADirectory")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
   
   /**
     * Create an error to signal that a file or folder wasn't found.
     * @param messageOrUri Message or uri.
     */
-  @scala.inline
-  def FileNotFound(): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileNotFound")().asInstanceOf[FileSystemError]
-  @scala.inline
-  def FileNotFound(messageOrUri: String): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileNotFound")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
-  @scala.inline
-  def FileNotFound(messageOrUri: Uri): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileNotFound")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
+  inline def FileNotFound(): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileNotFound")().asInstanceOf[FileSystemError]
+  inline def FileNotFound(messageOrUri: String): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileNotFound")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
+  inline def FileNotFound(messageOrUri: Uri): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("FileNotFound")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
   
   /**
     * Create an error to signal that an operation lacks required permissions.
     * @param messageOrUri Message or uri.
     */
-  @scala.inline
-  def NoPermissions(): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("NoPermissions")().asInstanceOf[FileSystemError]
-  @scala.inline
-  def NoPermissions(messageOrUri: String): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("NoPermissions")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
-  @scala.inline
-  def NoPermissions(messageOrUri: Uri): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("NoPermissions")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
+  inline def NoPermissions(): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("NoPermissions")().asInstanceOf[FileSystemError]
+  inline def NoPermissions(messageOrUri: String): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("NoPermissions")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
+  inline def NoPermissions(messageOrUri: Uri): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("NoPermissions")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
   
   /**
     * Create an error to signal that the file system is unavailable or too busy to
     * complete a request.
     * @param messageOrUri Message or uri.
     */
-  @scala.inline
-  def Unavailable(): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("Unavailable")().asInstanceOf[FileSystemError]
-  @scala.inline
-  def Unavailable(messageOrUri: String): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("Unavailable")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
-  @scala.inline
-  def Unavailable(messageOrUri: Uri): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("Unavailable")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
+  inline def Unavailable(): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("Unavailable")().asInstanceOf[FileSystemError]
+  inline def Unavailable(messageOrUri: String): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("Unavailable")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
+  inline def Unavailable(messageOrUri: Uri): FileSystemError = ^.asInstanceOf[js.Dynamic].applyDynamic("Unavailable")(messageOrUri.asInstanceOf[js.Any]).asInstanceOf[FileSystemError]
 }

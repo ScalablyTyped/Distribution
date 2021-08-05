@@ -11,6 +11,5 @@ object cashDomNumbers {
   sealed trait `0`
     extends StObject
        with _falsy
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
+  inline def `0`: `0` = 0.asInstanceOf[`0`]
 }

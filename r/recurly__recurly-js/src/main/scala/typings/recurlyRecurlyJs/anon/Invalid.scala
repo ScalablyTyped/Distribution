@@ -23,31 +23,23 @@ trait Invalid extends StObject {
 }
 object Invalid {
   
-  @scala.inline
-  def apply(): Invalid = {
+  inline def apply(): Invalid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Invalid]
   }
   
-  @scala.inline
-  implicit class InvalidMutableBuilder[Self <: Invalid] (val x: Self) extends AnyVal {
+  extension [Self <: Invalid](x: Self) {
     
-    @scala.inline
-    def setInvalid(value: CommonElementStyle): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+    inline def setInvalid(value: CommonElementStyle): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+    inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
     
-    @scala.inline
-    def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: Color): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: Color): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
   }
 }

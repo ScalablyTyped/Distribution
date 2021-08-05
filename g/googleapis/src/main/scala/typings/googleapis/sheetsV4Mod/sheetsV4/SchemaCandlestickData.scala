@@ -38,37 +38,27 @@ trait SchemaCandlestickData extends StObject {
 }
 object SchemaCandlestickData {
   
-  @scala.inline
-  def apply(): SchemaCandlestickData = {
+  inline def apply(): SchemaCandlestickData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCandlestickData]
   }
   
-  @scala.inline
-  implicit class SchemaCandlestickDataMutableBuilder[Self <: SchemaCandlestickData] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCandlestickData](x: Self) {
     
-    @scala.inline
-    def setCloseSeries(value: SchemaCandlestickSeries): Self = StObject.set(x, "closeSeries", value.asInstanceOf[js.Any])
+    inline def setCloseSeries(value: SchemaCandlestickSeries): Self = StObject.set(x, "closeSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseSeriesUndefined: Self = StObject.set(x, "closeSeries", js.undefined)
+    inline def setCloseSeriesUndefined: Self = StObject.set(x, "closeSeries", js.undefined)
     
-    @scala.inline
-    def setHighSeries(value: SchemaCandlestickSeries): Self = StObject.set(x, "highSeries", value.asInstanceOf[js.Any])
+    inline def setHighSeries(value: SchemaCandlestickSeries): Self = StObject.set(x, "highSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighSeriesUndefined: Self = StObject.set(x, "highSeries", js.undefined)
+    inline def setHighSeriesUndefined: Self = StObject.set(x, "highSeries", js.undefined)
     
-    @scala.inline
-    def setLowSeries(value: SchemaCandlestickSeries): Self = StObject.set(x, "lowSeries", value.asInstanceOf[js.Any])
+    inline def setLowSeries(value: SchemaCandlestickSeries): Self = StObject.set(x, "lowSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowSeriesUndefined: Self = StObject.set(x, "lowSeries", js.undefined)
+    inline def setLowSeriesUndefined: Self = StObject.set(x, "lowSeries", js.undefined)
     
-    @scala.inline
-    def setOpenSeries(value: SchemaCandlestickSeries): Self = StObject.set(x, "openSeries", value.asInstanceOf[js.Any])
+    inline def setOpenSeries(value: SchemaCandlestickSeries): Self = StObject.set(x, "openSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenSeriesUndefined: Self = StObject.set(x, "openSeries", js.undefined)
+    inline def setOpenSeriesUndefined: Self = StObject.set(x, "openSeries", js.undefined)
   }
 }

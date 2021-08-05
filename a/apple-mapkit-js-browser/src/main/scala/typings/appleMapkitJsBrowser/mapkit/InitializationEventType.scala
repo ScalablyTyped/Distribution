@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InitializationEventType extends StObject
 object InitializationEventType {
   
-  @scala.inline
-  def `configuration-change`: typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.`configuration-change` = "configuration-change".asInstanceOf[typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.`configuration-change`]
+  inline def `configuration-change`: typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.`configuration-change` = "configuration-change".asInstanceOf[typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.`configuration-change`]
   
-  @scala.inline
-  def error: typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.error = "error".asInstanceOf[typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.error]
+  inline def error: typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.error = "error".asInstanceOf[typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.error]
 }

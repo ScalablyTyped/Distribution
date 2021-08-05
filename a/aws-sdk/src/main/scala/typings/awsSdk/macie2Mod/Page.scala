@@ -23,31 +23,23 @@ trait Page extends StObject {
 }
 object Page {
   
-  @scala.inline
-  def apply(): Page = {
+  inline def apply(): Page = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Page]
   }
   
-  @scala.inline
-  implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
+  extension [Self <: Page](x: Self) {
     
-    @scala.inline
-    def setLineRange(value: Range): Self = StObject.set(x, "lineRange", value.asInstanceOf[js.Any])
+    inline def setLineRange(value: Range): Self = StObject.set(x, "lineRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineRangeUndefined: Self = StObject.set(x, "lineRange", js.undefined)
+    inline def setLineRangeUndefined: Self = StObject.set(x, "lineRange", js.undefined)
     
-    @scala.inline
-    def setOffsetRange(value: Range): Self = StObject.set(x, "offsetRange", value.asInstanceOf[js.Any])
+    inline def setOffsetRange(value: Range): Self = StObject.set(x, "offsetRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetRangeUndefined: Self = StObject.set(x, "offsetRange", js.undefined)
+    inline def setOffsetRangeUndefined: Self = StObject.set(x, "offsetRange", js.undefined)
     
-    @scala.inline
-    def setPageNumber(value: long): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
+    inline def setPageNumber(value: long): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
+    inline def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
   }
 }

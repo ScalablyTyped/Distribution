@@ -10,16 +10,13 @@ trait UpdateVoiceChannelResponse extends StObject {
 }
 object UpdateVoiceChannelResponse {
   
-  @scala.inline
-  def apply(VoiceChannelResponse: VoiceChannelResponse): UpdateVoiceChannelResponse = {
+  inline def apply(VoiceChannelResponse: VoiceChannelResponse): UpdateVoiceChannelResponse = {
     val __obj = js.Dynamic.literal(VoiceChannelResponse = VoiceChannelResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateVoiceChannelResponse]
   }
   
-  @scala.inline
-  implicit class UpdateVoiceChannelResponseMutableBuilder[Self <: UpdateVoiceChannelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateVoiceChannelResponse](x: Self) {
     
-    @scala.inline
-    def setVoiceChannelResponse(value: VoiceChannelResponse): Self = StObject.set(x, "VoiceChannelResponse", value.asInstanceOf[js.Any])
+    inline def setVoiceChannelResponse(value: VoiceChannelResponse): Self = StObject.set(x, "VoiceChannelResponse", value.asInstanceOf[js.Any])
   }
 }

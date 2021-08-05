@@ -11,6 +11,5 @@ object subscriptionArgsInvalidMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def subscriptionArgsInvalid(event: String, fn: FramebusOnHandler, origin: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subscriptionArgsInvalid")(event.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def subscriptionArgsInvalid(event: String, fn: FramebusOnHandler, origin: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subscriptionArgsInvalid")(event.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

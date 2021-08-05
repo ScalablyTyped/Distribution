@@ -15,19 +15,15 @@ trait SupportedFeatures extends StObject {
 }
 object SupportedFeatures {
   
-  @scala.inline
-  def apply(custom_language_model: Boolean, speaker_labels: Boolean): SupportedFeatures = {
+  inline def apply(custom_language_model: Boolean, speaker_labels: Boolean): SupportedFeatures = {
     val __obj = js.Dynamic.literal(custom_language_model = custom_language_model.asInstanceOf[js.Any], speaker_labels = speaker_labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportedFeatures]
   }
   
-  @scala.inline
-  implicit class SupportedFeaturesMutableBuilder[Self <: SupportedFeatures] (val x: Self) extends AnyVal {
+  extension [Self <: SupportedFeatures](x: Self) {
     
-    @scala.inline
-    def setCustom_language_model(value: Boolean): Self = StObject.set(x, "custom_language_model", value.asInstanceOf[js.Any])
+    inline def setCustom_language_model(value: Boolean): Self = StObject.set(x, "custom_language_model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeaker_labels(value: Boolean): Self = StObject.set(x, "speaker_labels", value.asInstanceOf[js.Any])
+    inline def setSpeaker_labels(value: Boolean): Self = StObject.set(x, "speaker_labels", value.asInstanceOf[js.Any])
   }
 }

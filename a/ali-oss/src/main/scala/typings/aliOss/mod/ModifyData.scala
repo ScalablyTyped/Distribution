@@ -13,19 +13,15 @@ trait ModifyData extends StObject {
 }
 object ModifyData {
   
-  @scala.inline
-  def apply(etag: String, lastModified: String): ModifyData = {
+  inline def apply(etag: String, lastModified: String): ModifyData = {
     val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyData]
   }
   
-  @scala.inline
-  implicit class ModifyDataMutableBuilder[Self <: ModifyData] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyData](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
   }
 }

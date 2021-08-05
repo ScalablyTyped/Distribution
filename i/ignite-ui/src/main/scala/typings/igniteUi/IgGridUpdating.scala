@@ -282,289 +282,195 @@ trait IgGridUpdating
 }
 object IgGridUpdating {
   
-  @scala.inline
-  def apply(): IgGridUpdating = {
+  inline def apply(): IgGridUpdating = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridUpdating]
   }
   
-  @scala.inline
-  implicit class IgGridUpdatingMutableBuilder[Self <: IgGridUpdating] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridUpdating](x: Self) {
     
-    @scala.inline
-    def setAddRowLabel(value: String): Self = StObject.set(x, "addRowLabel", value.asInstanceOf[js.Any])
+    inline def setAddRowLabel(value: String): Self = StObject.set(x, "addRowLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddRowLabelUndefined: Self = StObject.set(x, "addRowLabel", js.undefined)
+    inline def setAddRowLabelUndefined: Self = StObject.set(x, "addRowLabel", js.undefined)
     
-    @scala.inline
-    def setAddRowTooltip(value: String): Self = StObject.set(x, "addRowTooltip", value.asInstanceOf[js.Any])
+    inline def setAddRowTooltip(value: String): Self = StObject.set(x, "addRowTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddRowTooltipUndefined: Self = StObject.set(x, "addRowTooltip", js.undefined)
+    inline def setAddRowTooltipUndefined: Self = StObject.set(x, "addRowTooltip", js.undefined)
     
-    @scala.inline
-    def setCancelLabel(value: String): Self = StObject.set(x, "cancelLabel", value.asInstanceOf[js.Any])
+    inline def setCancelLabel(value: String): Self = StObject.set(x, "cancelLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelLabelUndefined: Self = StObject.set(x, "cancelLabel", js.undefined)
+    inline def setCancelLabelUndefined: Self = StObject.set(x, "cancelLabel", js.undefined)
     
-    @scala.inline
-    def setCancelTooltip(value: String): Self = StObject.set(x, "cancelTooltip", value.asInstanceOf[js.Any])
+    inline def setCancelTooltip(value: String): Self = StObject.set(x, "cancelTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelTooltipUndefined: Self = StObject.set(x, "cancelTooltip", js.undefined)
+    inline def setCancelTooltipUndefined: Self = StObject.set(x, "cancelTooltip", js.undefined)
     
-    @scala.inline
-    def setColumnSettings(value: js.Array[IgGridUpdatingColumnSetting]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
+    inline def setColumnSettings(value: js.Array[IgGridUpdatingColumnSetting]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
+    inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    @scala.inline
-    def setColumnSettingsVarargs(value: IgGridUpdatingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
+    inline def setColumnSettingsVarargs(value: IgGridUpdatingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
     
-    @scala.inline
-    def setDataDirty(value: (/* event */ Event, /* ui */ DataDirtyEventUIParam) => Unit): Self = StObject.set(x, "dataDirty", js.Any.fromFunction2(value))
+    inline def setDataDirty(value: (/* event */ Event, /* ui */ DataDirtyEventUIParam) => Unit): Self = StObject.set(x, "dataDirty", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDataDirtyUndefined: Self = StObject.set(x, "dataDirty", js.undefined)
+    inline def setDataDirtyUndefined: Self = StObject.set(x, "dataDirty", js.undefined)
     
-    @scala.inline
-    def setDeleteRowLabel(value: String): Self = StObject.set(x, "deleteRowLabel", value.asInstanceOf[js.Any])
+    inline def setDeleteRowLabel(value: String): Self = StObject.set(x, "deleteRowLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteRowLabelUndefined: Self = StObject.set(x, "deleteRowLabel", js.undefined)
+    inline def setDeleteRowLabelUndefined: Self = StObject.set(x, "deleteRowLabel", js.undefined)
     
-    @scala.inline
-    def setDeleteRowTooltip(value: String): Self = StObject.set(x, "deleteRowTooltip", value.asInstanceOf[js.Any])
+    inline def setDeleteRowTooltip(value: String): Self = StObject.set(x, "deleteRowTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteRowTooltipUndefined: Self = StObject.set(x, "deleteRowTooltip", js.undefined)
+    inline def setDeleteRowTooltipUndefined: Self = StObject.set(x, "deleteRowTooltip", js.undefined)
     
-    @scala.inline
-    def setDialogWidget(value: String): Self = StObject.set(x, "dialogWidget", value.asInstanceOf[js.Any])
+    inline def setDialogWidget(value: String): Self = StObject.set(x, "dialogWidget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogWidgetUndefined: Self = StObject.set(x, "dialogWidget", js.undefined)
+    inline def setDialogWidgetUndefined: Self = StObject.set(x, "dialogWidget", js.undefined)
     
-    @scala.inline
-    def setDoneLabel(value: String): Self = StObject.set(x, "doneLabel", value.asInstanceOf[js.Any])
+    inline def setDoneLabel(value: String): Self = StObject.set(x, "doneLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoneLabelUndefined: Self = StObject.set(x, "doneLabel", js.undefined)
+    inline def setDoneLabelUndefined: Self = StObject.set(x, "doneLabel", js.undefined)
     
-    @scala.inline
-    def setDoneTooltip(value: String): Self = StObject.set(x, "doneTooltip", value.asInstanceOf[js.Any])
+    inline def setDoneTooltip(value: String): Self = StObject.set(x, "doneTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoneTooltipUndefined: Self = StObject.set(x, "doneTooltip", js.undefined)
+    inline def setDoneTooltipUndefined: Self = StObject.set(x, "doneTooltip", js.undefined)
     
-    @scala.inline
-    def setEditCellEnded(value: (/* event */ Event, /* ui */ EditCellEndedEventUIParam) => Unit): Self = StObject.set(x, "editCellEnded", js.Any.fromFunction2(value))
+    inline def setEditCellEnded(value: (/* event */ Event, /* ui */ EditCellEndedEventUIParam) => Unit): Self = StObject.set(x, "editCellEnded", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEditCellEndedUndefined: Self = StObject.set(x, "editCellEnded", js.undefined)
+    inline def setEditCellEndedUndefined: Self = StObject.set(x, "editCellEnded", js.undefined)
     
-    @scala.inline
-    def setEditCellEnding(value: (/* event */ Event, /* ui */ EditCellEndingEventUIParam) => Unit): Self = StObject.set(x, "editCellEnding", js.Any.fromFunction2(value))
+    inline def setEditCellEnding(value: (/* event */ Event, /* ui */ EditCellEndingEventUIParam) => Unit): Self = StObject.set(x, "editCellEnding", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEditCellEndingUndefined: Self = StObject.set(x, "editCellEnding", js.undefined)
+    inline def setEditCellEndingUndefined: Self = StObject.set(x, "editCellEnding", js.undefined)
     
-    @scala.inline
-    def setEditCellStarted(value: (/* event */ Event, /* ui */ EditCellStartedEventUIParam) => Unit): Self = StObject.set(x, "editCellStarted", js.Any.fromFunction2(value))
+    inline def setEditCellStarted(value: (/* event */ Event, /* ui */ EditCellStartedEventUIParam) => Unit): Self = StObject.set(x, "editCellStarted", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEditCellStartedUndefined: Self = StObject.set(x, "editCellStarted", js.undefined)
+    inline def setEditCellStartedUndefined: Self = StObject.set(x, "editCellStarted", js.undefined)
     
-    @scala.inline
-    def setEditCellStarting(value: (/* event */ Event, /* ui */ EditCellStartingEventUIParam) => Unit): Self = StObject.set(x, "editCellStarting", js.Any.fromFunction2(value))
+    inline def setEditCellStarting(value: (/* event */ Event, /* ui */ EditCellStartingEventUIParam) => Unit): Self = StObject.set(x, "editCellStarting", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEditCellStartingUndefined: Self = StObject.set(x, "editCellStarting", js.undefined)
+    inline def setEditCellStartingUndefined: Self = StObject.set(x, "editCellStarting", js.undefined)
     
-    @scala.inline
-    def setEditMode(value: String): Self = StObject.set(x, "editMode", value.asInstanceOf[js.Any])
+    inline def setEditMode(value: String): Self = StObject.set(x, "editMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditModeUndefined: Self = StObject.set(x, "editMode", js.undefined)
+    inline def setEditModeUndefined: Self = StObject.set(x, "editMode", js.undefined)
     
-    @scala.inline
-    def setEditRowEnded(value: (/* event */ Event, /* ui */ EditRowEndedEventUIParam) => Unit): Self = StObject.set(x, "editRowEnded", js.Any.fromFunction2(value))
+    inline def setEditRowEnded(value: (/* event */ Event, /* ui */ EditRowEndedEventUIParam) => Unit): Self = StObject.set(x, "editRowEnded", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEditRowEndedUndefined: Self = StObject.set(x, "editRowEnded", js.undefined)
+    inline def setEditRowEndedUndefined: Self = StObject.set(x, "editRowEnded", js.undefined)
     
-    @scala.inline
-    def setEditRowEnding(value: (/* event */ Event, /* ui */ EditRowEndingEventUIParam) => Unit): Self = StObject.set(x, "editRowEnding", js.Any.fromFunction2(value))
+    inline def setEditRowEnding(value: (/* event */ Event, /* ui */ EditRowEndingEventUIParam) => Unit): Self = StObject.set(x, "editRowEnding", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEditRowEndingUndefined: Self = StObject.set(x, "editRowEnding", js.undefined)
+    inline def setEditRowEndingUndefined: Self = StObject.set(x, "editRowEnding", js.undefined)
     
-    @scala.inline
-    def setEditRowStarted(value: (/* event */ Event, /* ui */ EditRowStartedEventUIParam) => Unit): Self = StObject.set(x, "editRowStarted", js.Any.fromFunction2(value))
+    inline def setEditRowStarted(value: (/* event */ Event, /* ui */ EditRowStartedEventUIParam) => Unit): Self = StObject.set(x, "editRowStarted", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEditRowStartedUndefined: Self = StObject.set(x, "editRowStarted", js.undefined)
+    inline def setEditRowStartedUndefined: Self = StObject.set(x, "editRowStarted", js.undefined)
     
-    @scala.inline
-    def setEditRowStarting(value: (/* event */ Event, /* ui */ EditRowStartingEventUIParam) => Unit): Self = StObject.set(x, "editRowStarting", js.Any.fromFunction2(value))
+    inline def setEditRowStarting(value: (/* event */ Event, /* ui */ EditRowStartingEventUIParam) => Unit): Self = StObject.set(x, "editRowStarting", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEditRowStartingUndefined: Self = StObject.set(x, "editRowStarting", js.undefined)
+    inline def setEditRowStartingUndefined: Self = StObject.set(x, "editRowStarting", js.undefined)
     
-    @scala.inline
-    def setEnableAddRow(value: Boolean): Self = StObject.set(x, "enableAddRow", value.asInstanceOf[js.Any])
+    inline def setEnableAddRow(value: Boolean): Self = StObject.set(x, "enableAddRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAddRowUndefined: Self = StObject.set(x, "enableAddRow", js.undefined)
+    inline def setEnableAddRowUndefined: Self = StObject.set(x, "enableAddRow", js.undefined)
     
-    @scala.inline
-    def setEnableDataDirtyException(value: Boolean): Self = StObject.set(x, "enableDataDirtyException", value.asInstanceOf[js.Any])
+    inline def setEnableDataDirtyException(value: Boolean): Self = StObject.set(x, "enableDataDirtyException", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDataDirtyExceptionUndefined: Self = StObject.set(x, "enableDataDirtyException", js.undefined)
+    inline def setEnableDataDirtyExceptionUndefined: Self = StObject.set(x, "enableDataDirtyException", js.undefined)
     
-    @scala.inline
-    def setEnableDeleteRow(value: Boolean): Self = StObject.set(x, "enableDeleteRow", value.asInstanceOf[js.Any])
+    inline def setEnableDeleteRow(value: Boolean): Self = StObject.set(x, "enableDeleteRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDeleteRowUndefined: Self = StObject.set(x, "enableDeleteRow", js.undefined)
+    inline def setEnableDeleteRowUndefined: Self = StObject.set(x, "enableDeleteRow", js.undefined)
     
-    @scala.inline
-    def setExcelNavigationMode(value: Boolean): Self = StObject.set(x, "excelNavigationMode", value.asInstanceOf[js.Any])
+    inline def setExcelNavigationMode(value: Boolean): Self = StObject.set(x, "excelNavigationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelNavigationModeUndefined: Self = StObject.set(x, "excelNavigationMode", js.undefined)
+    inline def setExcelNavigationModeUndefined: Self = StObject.set(x, "excelNavigationMode", js.undefined)
     
-    @scala.inline
-    def setGeneratePrimaryKeyValue(value: (/* event */ Event, /* ui */ GeneratePrimaryKeyValueEventUIParam) => Unit): Self = StObject.set(x, "generatePrimaryKeyValue", js.Any.fromFunction2(value))
+    inline def setGeneratePrimaryKeyValue(value: (/* event */ Event, /* ui */ GeneratePrimaryKeyValueEventUIParam) => Unit): Self = StObject.set(x, "generatePrimaryKeyValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGeneratePrimaryKeyValueUndefined: Self = StObject.set(x, "generatePrimaryKeyValue", js.undefined)
+    inline def setGeneratePrimaryKeyValueUndefined: Self = StObject.set(x, "generatePrimaryKeyValue", js.undefined)
     
-    @scala.inline
-    def setHorizontalMoveOnEnter(value: Boolean): Self = StObject.set(x, "horizontalMoveOnEnter", value.asInstanceOf[js.Any])
+    inline def setHorizontalMoveOnEnter(value: Boolean): Self = StObject.set(x, "horizontalMoveOnEnter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalMoveOnEnterUndefined: Self = StObject.set(x, "horizontalMoveOnEnter", js.undefined)
+    inline def setHorizontalMoveOnEnterUndefined: Self = StObject.set(x, "horizontalMoveOnEnter", js.undefined)
     
-    @scala.inline
-    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
     
-    @scala.inline
-    def setLocale(value: IgGridUpdatingLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: IgGridUpdatingLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setRowAdded(value: (/* event */ Event, /* ui */ RowAddedEventUIParam) => Unit): Self = StObject.set(x, "rowAdded", js.Any.fromFunction2(value))
+    inline def setRowAdded(value: (/* event */ Event, /* ui */ RowAddedEventUIParam) => Unit): Self = StObject.set(x, "rowAdded", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowAddedUndefined: Self = StObject.set(x, "rowAdded", js.undefined)
+    inline def setRowAddedUndefined: Self = StObject.set(x, "rowAdded", js.undefined)
     
-    @scala.inline
-    def setRowAdding(value: (/* event */ Event, /* ui */ RowAddingEventUIParam) => Unit): Self = StObject.set(x, "rowAdding", js.Any.fromFunction2(value))
+    inline def setRowAdding(value: (/* event */ Event, /* ui */ RowAddingEventUIParam) => Unit): Self = StObject.set(x, "rowAdding", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowAddingUndefined: Self = StObject.set(x, "rowAdding", js.undefined)
+    inline def setRowAddingUndefined: Self = StObject.set(x, "rowAdding", js.undefined)
     
-    @scala.inline
-    def setRowDeleted(value: (/* event */ Event, /* ui */ RowDeletedEventUIParam) => Unit): Self = StObject.set(x, "rowDeleted", js.Any.fromFunction2(value))
+    inline def setRowDeleted(value: (/* event */ Event, /* ui */ RowDeletedEventUIParam) => Unit): Self = StObject.set(x, "rowDeleted", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowDeletedUndefined: Self = StObject.set(x, "rowDeleted", js.undefined)
+    inline def setRowDeletedUndefined: Self = StObject.set(x, "rowDeleted", js.undefined)
     
-    @scala.inline
-    def setRowDeleting(value: (/* event */ Event, /* ui */ RowDeletingEventUIParam) => Unit): Self = StObject.set(x, "rowDeleting", js.Any.fromFunction2(value))
+    inline def setRowDeleting(value: (/* event */ Event, /* ui */ RowDeletingEventUIParam) => Unit): Self = StObject.set(x, "rowDeleting", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowDeletingUndefined: Self = StObject.set(x, "rowDeleting", js.undefined)
+    inline def setRowDeletingUndefined: Self = StObject.set(x, "rowDeleting", js.undefined)
     
-    @scala.inline
-    def setRowEditDialogAfterClose(value: (/* event */ Event, /* ui */ RowEditDialogAfterCloseEventUIParam) => Unit): Self = StObject.set(x, "rowEditDialogAfterClose", js.Any.fromFunction2(value))
+    inline def setRowEditDialogAfterClose(value: (/* event */ Event, /* ui */ RowEditDialogAfterCloseEventUIParam) => Unit): Self = StObject.set(x, "rowEditDialogAfterClose", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowEditDialogAfterCloseUndefined: Self = StObject.set(x, "rowEditDialogAfterClose", js.undefined)
+    inline def setRowEditDialogAfterCloseUndefined: Self = StObject.set(x, "rowEditDialogAfterClose", js.undefined)
     
-    @scala.inline
-    def setRowEditDialogAfterOpen(value: (/* event */ Event, /* ui */ RowEditDialogAfterOpenEventUIParam) => Unit): Self = StObject.set(x, "rowEditDialogAfterOpen", js.Any.fromFunction2(value))
+    inline def setRowEditDialogAfterOpen(value: (/* event */ Event, /* ui */ RowEditDialogAfterOpenEventUIParam) => Unit): Self = StObject.set(x, "rowEditDialogAfterOpen", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowEditDialogAfterOpenUndefined: Self = StObject.set(x, "rowEditDialogAfterOpen", js.undefined)
+    inline def setRowEditDialogAfterOpenUndefined: Self = StObject.set(x, "rowEditDialogAfterOpen", js.undefined)
     
-    @scala.inline
-    def setRowEditDialogBeforeClose(value: (/* event */ Event, /* ui */ RowEditDialogBeforeCloseEventUIParam) => Unit): Self = StObject.set(x, "rowEditDialogBeforeClose", js.Any.fromFunction2(value))
+    inline def setRowEditDialogBeforeClose(value: (/* event */ Event, /* ui */ RowEditDialogBeforeCloseEventUIParam) => Unit): Self = StObject.set(x, "rowEditDialogBeforeClose", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowEditDialogBeforeCloseUndefined: Self = StObject.set(x, "rowEditDialogBeforeClose", js.undefined)
+    inline def setRowEditDialogBeforeCloseUndefined: Self = StObject.set(x, "rowEditDialogBeforeClose", js.undefined)
     
-    @scala.inline
-    def setRowEditDialogBeforeOpen(value: (/* event */ Event, /* ui */ RowEditDialogBeforeOpenEventUIParam) => Unit): Self = StObject.set(x, "rowEditDialogBeforeOpen", js.Any.fromFunction2(value))
+    inline def setRowEditDialogBeforeOpen(value: (/* event */ Event, /* ui */ RowEditDialogBeforeOpenEventUIParam) => Unit): Self = StObject.set(x, "rowEditDialogBeforeOpen", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowEditDialogBeforeOpenUndefined: Self = StObject.set(x, "rowEditDialogBeforeOpen", js.undefined)
+    inline def setRowEditDialogBeforeOpenUndefined: Self = StObject.set(x, "rowEditDialogBeforeOpen", js.undefined)
     
-    @scala.inline
-    def setRowEditDialogContentsRendered(value: (/* event */ Event, /* ui */ RowEditDialogContentsRenderedEventUIParam) => Unit): Self = StObject.set(x, "rowEditDialogContentsRendered", js.Any.fromFunction2(value))
+    inline def setRowEditDialogContentsRendered(value: (/* event */ Event, /* ui */ RowEditDialogContentsRenderedEventUIParam) => Unit): Self = StObject.set(x, "rowEditDialogContentsRendered", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowEditDialogContentsRenderedUndefined: Self = StObject.set(x, "rowEditDialogContentsRendered", js.undefined)
+    inline def setRowEditDialogContentsRenderedUndefined: Self = StObject.set(x, "rowEditDialogContentsRendered", js.undefined)
     
-    @scala.inline
-    def setRowEditDialogOptions(value: IgGridUpdatingRowEditDialogOptions): Self = StObject.set(x, "rowEditDialogOptions", value.asInstanceOf[js.Any])
+    inline def setRowEditDialogOptions(value: IgGridUpdatingRowEditDialogOptions): Self = StObject.set(x, "rowEditDialogOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowEditDialogOptionsUndefined: Self = StObject.set(x, "rowEditDialogOptions", js.undefined)
+    inline def setRowEditDialogOptionsUndefined: Self = StObject.set(x, "rowEditDialogOptions", js.undefined)
     
-    @scala.inline
-    def setSaveChangesErrorHandler(value: js.Function | String): Self = StObject.set(x, "saveChangesErrorHandler", value.asInstanceOf[js.Any])
+    inline def setSaveChangesErrorHandler(value: js.Function | String): Self = StObject.set(x, "saveChangesErrorHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveChangesErrorHandlerUndefined: Self = StObject.set(x, "saveChangesErrorHandler", js.undefined)
+    inline def setSaveChangesErrorHandlerUndefined: Self = StObject.set(x, "saveChangesErrorHandler", js.undefined)
     
-    @scala.inline
-    def setSaveChangesSuccessHandler(value: js.Function | String): Self = StObject.set(x, "saveChangesSuccessHandler", value.asInstanceOf[js.Any])
+    inline def setSaveChangesSuccessHandler(value: js.Function | String): Self = StObject.set(x, "saveChangesSuccessHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveChangesSuccessHandlerUndefined: Self = StObject.set(x, "saveChangesSuccessHandler", js.undefined)
+    inline def setSaveChangesSuccessHandlerUndefined: Self = StObject.set(x, "saveChangesSuccessHandler", js.undefined)
     
-    @scala.inline
-    def setShowDoneCancelButtons(value: Boolean): Self = StObject.set(x, "showDoneCancelButtons", value.asInstanceOf[js.Any])
+    inline def setShowDoneCancelButtons(value: Boolean): Self = StObject.set(x, "showDoneCancelButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDoneCancelButtonsUndefined: Self = StObject.set(x, "showDoneCancelButtons", js.undefined)
+    inline def setShowDoneCancelButtonsUndefined: Self = StObject.set(x, "showDoneCancelButtons", js.undefined)
     
-    @scala.inline
-    def setStartEditTriggers(value: String | js.Array[js.Any]): Self = StObject.set(x, "startEditTriggers", value.asInstanceOf[js.Any])
+    inline def setStartEditTriggers(value: String | js.Array[js.Any]): Self = StObject.set(x, "startEditTriggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartEditTriggersUndefined: Self = StObject.set(x, "startEditTriggers", js.undefined)
+    inline def setStartEditTriggersUndefined: Self = StObject.set(x, "startEditTriggers", js.undefined)
     
-    @scala.inline
-    def setStartEditTriggersVarargs(value: js.Any*): Self = StObject.set(x, "startEditTriggers", js.Array(value :_*))
+    inline def setStartEditTriggersVarargs(value: js.Any*): Self = StObject.set(x, "startEditTriggers", js.Array(value :_*))
     
-    @scala.inline
-    def setSwipeDistance(value: String | Double): Self = StObject.set(x, "swipeDistance", value.asInstanceOf[js.Any])
+    inline def setSwipeDistance(value: String | Double): Self = StObject.set(x, "swipeDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipeDistanceUndefined: Self = StObject.set(x, "swipeDistance", js.undefined)
+    inline def setSwipeDistanceUndefined: Self = StObject.set(x, "swipeDistance", js.undefined)
     
-    @scala.inline
-    def setValidation(value: Boolean): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    inline def setValidation(value: Boolean): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+    inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
     
-    @scala.inline
-    def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
+    inline def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapAroundUndefined: Self = StObject.set(x, "wrapAround", js.undefined)
+    inline def setWrapAroundUndefined: Self = StObject.set(x, "wrapAround", js.undefined)
   }
 }

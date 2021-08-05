@@ -24,7 +24,7 @@ trait Hyperlink extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.Hyperlink_typekey")
+  /* private */ @JSName("PowerPoint.Hyperlink_typekey")
   var PowerPointDotHyperlink_typekey: Hyperlink
   
   var ScreenTip: String
@@ -39,8 +39,7 @@ trait Hyperlink extends StObject {
 }
 object Hyperlink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddToFavorites: () => Unit,
     Address: String,
     Application: Application,
@@ -61,49 +60,34 @@ object Hyperlink {
     __obj.asInstanceOf[Hyperlink]
   }
   
-  @scala.inline
-  implicit class HyperlinkMutableBuilder[Self <: Hyperlink] (val x: Self) extends AnyVal {
+  extension [Self <: Hyperlink](x: Self) {
     
-    @scala.inline
-    def setAddToFavorites(value: () => Unit): Self = StObject.set(x, "AddToFavorites", js.Any.fromFunction0(value))
+    inline def setAddToFavorites(value: () => Unit): Self = StObject.set(x, "AddToFavorites", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateNewDocument(value: (String, MsoTriState, MsoTriState) => Unit): Self = StObject.set(x, "CreateNewDocument", js.Any.fromFunction3(value))
+    inline def setCreateNewDocument(value: (String, MsoTriState, MsoTriState) => Unit): Self = StObject.set(x, "CreateNewDocument", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEmailSubject(value: String): Self = StObject.set(x, "EmailSubject", value.asInstanceOf[js.Any])
+    inline def setEmailSubject(value: String): Self = StObject.set(x, "EmailSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollow(value: () => Unit): Self = StObject.set(x, "Follow", js.Any.fromFunction0(value))
+    inline def setFollow(value: () => Unit): Self = StObject.set(x, "Follow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotHyperlink_typekey(value: Hyperlink): Self = StObject.set(x, "PowerPoint.Hyperlink_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotHyperlink_typekey(value: Hyperlink): Self = StObject.set(x, "PowerPoint.Hyperlink_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenTip(value: String): Self = StObject.set(x, "ScreenTip", value.asInstanceOf[js.Any])
+    inline def setScreenTip(value: String): Self = StObject.set(x, "ScreenTip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAndReturn(value: MsoTriState): Self = StObject.set(x, "ShowAndReturn", value.asInstanceOf[js.Any])
+    inline def setShowAndReturn(value: MsoTriState): Self = StObject.set(x, "ShowAndReturn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubAddress(value: String): Self = StObject.set(x, "SubAddress", value.asInstanceOf[js.Any])
+    inline def setSubAddress(value: String): Self = StObject.set(x, "SubAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextToDisplay(value: String): Self = StObject.set(x, "TextToDisplay", value.asInstanceOf[js.Any])
+    inline def setTextToDisplay(value: String): Self = StObject.set(x, "TextToDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MsoHyperlinkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MsoHyperlinkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

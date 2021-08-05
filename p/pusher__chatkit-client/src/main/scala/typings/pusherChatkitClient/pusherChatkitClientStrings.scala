@@ -9,47 +9,39 @@ object pusherChatkitClientStrings {
   
   @js.native
   sealed trait attachment extends StObject
-  @scala.inline
-  def attachment: attachment = "attachment".asInstanceOf[attachment]
+  inline def attachment: attachment = "attachment".asInstanceOf[attachment]
   
   @js.native
   sealed trait `inline` extends StObject
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
   sealed trait newer extends StObject
-  @scala.inline
-  def newer: newer = "newer".asInstanceOf[newer]
+  inline def newer: newer = "newer".asInstanceOf[newer]
   
   @js.native
   sealed trait offline
     extends StObject
        with PusherUserPresence
-  @scala.inline
-  def offline: offline = "offline".asInstanceOf[offline]
+  inline def offline: offline = "offline".asInstanceOf[offline]
   
   @js.native
   sealed trait older extends StObject
-  @scala.inline
-  def older: older = "older".asInstanceOf[older]
+  inline def older: older = "older".asInstanceOf[older]
   
   @js.native
   sealed trait online
     extends StObject
        with PusherUserPresence
-  @scala.inline
-  def online: online = "online".asInstanceOf[online]
+  inline def online: online = "online".asInstanceOf[online]
   
   @js.native
   sealed trait unknown
     extends StObject
        with PusherUserPresence
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
   sealed trait url extends StObject
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
+  inline def url: url = "url".asInstanceOf[url]
 }

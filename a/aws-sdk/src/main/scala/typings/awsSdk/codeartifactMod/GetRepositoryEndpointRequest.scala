@@ -28,28 +28,21 @@ trait GetRepositoryEndpointRequest extends StObject {
 }
 object GetRepositoryEndpointRequest {
   
-  @scala.inline
-  def apply(domain: DomainName, format: PackageFormat, repository: RepositoryName): GetRepositoryEndpointRequest = {
+  inline def apply(domain: DomainName, format: PackageFormat, repository: RepositoryName): GetRepositoryEndpointRequest = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRepositoryEndpointRequest]
   }
   
-  @scala.inline
-  implicit class GetRepositoryEndpointRequestMutableBuilder[Self <: GetRepositoryEndpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRepositoryEndpointRequest](x: Self) {
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
+    inline def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
+    inline def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
     
-    @scala.inline
-    def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepository(value: RepositoryName): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: RepositoryName): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
   }
 }

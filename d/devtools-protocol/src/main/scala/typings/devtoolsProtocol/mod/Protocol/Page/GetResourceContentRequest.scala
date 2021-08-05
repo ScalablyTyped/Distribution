@@ -18,19 +18,15 @@ trait GetResourceContentRequest extends StObject {
 }
 object GetResourceContentRequest {
   
-  @scala.inline
-  def apply(frameId: FrameId, url: String): GetResourceContentRequest = {
+  inline def apply(frameId: FrameId, url: String): GetResourceContentRequest = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourceContentRequest]
   }
   
-  @scala.inline
-  implicit class GetResourceContentRequestMutableBuilder[Self <: GetResourceContentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourceContentRequest](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

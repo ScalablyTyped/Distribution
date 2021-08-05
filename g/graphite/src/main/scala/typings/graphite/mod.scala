@@ -18,22 +18,16 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def appendTags(flatMetrics: js.Any, tags: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTags")(flatMetrics.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def appendTags(flatMetrics: js.Any, tags: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTags")(flatMetrics.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def createClient(dsn: String): GraphiteClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(dsn.asInstanceOf[js.Any]).asInstanceOf[GraphiteClient]
+  inline def createClient(dsn: String): GraphiteClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(dsn.asInstanceOf[js.Any]).asInstanceOf[GraphiteClient]
   
   /* static member */
-  @scala.inline
-  def flatten(`object`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def flatten(`object`: js.Any, flat: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any], flat.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def flatten(`object`: js.Any, flat: js.Any, prefix: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any], flat.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def flatten(`object`: js.Any, flat: Unit, prefix: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any], flat.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def flatten(`object`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def flatten(`object`: js.Any, flat: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any], flat.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def flatten(`object`: js.Any, flat: js.Any, prefix: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any], flat.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def flatten(`object`: js.Any, flat: Unit, prefix: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any], flat.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   type Callback = js.Function1[/* err */ js.Any, Unit]
   
@@ -61,17 +55,14 @@ object mod {
   }
   object GraphiteClientProperties {
     
-    @scala.inline
-    def apply(carbon: js.Any): GraphiteClientProperties = {
+    inline def apply(carbon: js.Any): GraphiteClientProperties = {
       val __obj = js.Dynamic.literal(carbon = carbon.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphiteClientProperties]
     }
     
-    @scala.inline
-    implicit class GraphiteClientPropertiesMutableBuilder[Self <: GraphiteClientProperties] (val x: Self) extends AnyVal {
+    extension [Self <: GraphiteClientProperties](x: Self) {
       
-      @scala.inline
-      def setCarbon(value: js.Any): Self = StObject.set(x, "carbon", value.asInstanceOf[js.Any])
+      inline def setCarbon(value: js.Any): Self = StObject.set(x, "carbon", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -19,25 +19,19 @@ trait GetContentsSuccessCallbackResult extends StObject {
 }
 object GetContentsSuccessCallbackResult {
   
-  @scala.inline
-  def apply(delta: IAnyObject, errMsg: String, html: String, text: String): GetContentsSuccessCallbackResult = {
+  inline def apply(delta: IAnyObject, errMsg: String, html: String, text: String): GetContentsSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetContentsSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetContentsSuccessCallbackResultMutableBuilder[Self <: GetContentsSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetContentsSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setDelta(value: IAnyObject): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    inline def setDelta(value: IAnyObject): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

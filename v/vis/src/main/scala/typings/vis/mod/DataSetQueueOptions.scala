@@ -21,19 +21,15 @@ trait DataSetQueueOptions extends StObject {
 }
 object DataSetQueueOptions {
   
-  @scala.inline
-  def apply(): DataSetQueueOptions = {
+  inline def apply(): DataSetQueueOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSetQueueOptions]
   }
   
-  @scala.inline
-  implicit class DataSetQueueOptionsMutableBuilder[Self <: DataSetQueueOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DataSetQueueOptions](x: Self) {
     
-    @scala.inline
-    def setQueue(value: js.Any | Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: js.Any | Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+    inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
   }
 }

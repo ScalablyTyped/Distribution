@@ -63,8 +63,7 @@ trait XFramesSupplier
 }
 object XFramesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveFrame: XFrame,
     ComponentWindow: XWindow,
     ContainerWindow: XWindow,
@@ -103,22 +102,16 @@ object XFramesSupplier {
     __obj.asInstanceOf[XFramesSupplier]
   }
   
-  @scala.inline
-  implicit class XFramesSupplierMutableBuilder[Self <: XFramesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XFramesSupplier](x: Self) {
     
-    @scala.inline
-    def setActiveFrame(value: XFrame): Self = StObject.set(x, "ActiveFrame", value.asInstanceOf[js.Any])
+    inline def setActiveFrame(value: XFrame): Self = StObject.set(x, "ActiveFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrames(value: XFrames): Self = StObject.set(x, "Frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: XFrames): Self = StObject.set(x, "Frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetActiveFrame(value: () => XFrame): Self = StObject.set(x, "getActiveFrame", js.Any.fromFunction0(value))
+    inline def setGetActiveFrame(value: () => XFrame): Self = StObject.set(x, "getActiveFrame", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFrames(value: () => XFrames): Self = StObject.set(x, "getFrames", js.Any.fromFunction0(value))
+    inline def setGetFrames(value: () => XFrames): Self = StObject.set(x, "getFrames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetActiveFrame(value: XFrame => Unit): Self = StObject.set(x, "setActiveFrame", js.Any.fromFunction1(value))
+    inline def setSetActiveFrame(value: XFrame => Unit): Self = StObject.set(x, "setActiveFrame", js.Any.fromFunction1(value))
   }
 }

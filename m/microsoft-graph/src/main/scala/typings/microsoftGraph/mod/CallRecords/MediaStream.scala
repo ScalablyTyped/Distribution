@@ -123,235 +123,159 @@ trait MediaStream extends StObject {
 }
 object MediaStream {
   
-  @scala.inline
-  def apply(): MediaStream = {
+  inline def apply(): MediaStream = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaStream]
   }
   
-  @scala.inline
-  implicit class MediaStreamMutableBuilder[Self <: MediaStream] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStream](x: Self) {
     
-    @scala.inline
-    def setAverageAudioDegradation(value: NullableOption[Double]): Self = StObject.set(x, "averageAudioDegradation", value.asInstanceOf[js.Any])
+    inline def setAverageAudioDegradation(value: NullableOption[Double]): Self = StObject.set(x, "averageAudioDegradation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageAudioDegradationNull: Self = StObject.set(x, "averageAudioDegradation", null)
+    inline def setAverageAudioDegradationNull: Self = StObject.set(x, "averageAudioDegradation", null)
     
-    @scala.inline
-    def setAverageAudioDegradationUndefined: Self = StObject.set(x, "averageAudioDegradation", js.undefined)
+    inline def setAverageAudioDegradationUndefined: Self = StObject.set(x, "averageAudioDegradation", js.undefined)
     
-    @scala.inline
-    def setAverageAudioNetworkJitter(value: NullableOption[String]): Self = StObject.set(x, "averageAudioNetworkJitter", value.asInstanceOf[js.Any])
+    inline def setAverageAudioNetworkJitter(value: NullableOption[String]): Self = StObject.set(x, "averageAudioNetworkJitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageAudioNetworkJitterNull: Self = StObject.set(x, "averageAudioNetworkJitter", null)
+    inline def setAverageAudioNetworkJitterNull: Self = StObject.set(x, "averageAudioNetworkJitter", null)
     
-    @scala.inline
-    def setAverageAudioNetworkJitterUndefined: Self = StObject.set(x, "averageAudioNetworkJitter", js.undefined)
+    inline def setAverageAudioNetworkJitterUndefined: Self = StObject.set(x, "averageAudioNetworkJitter", js.undefined)
     
-    @scala.inline
-    def setAverageBandwidthEstimate(value: NullableOption[Double]): Self = StObject.set(x, "averageBandwidthEstimate", value.asInstanceOf[js.Any])
+    inline def setAverageBandwidthEstimate(value: NullableOption[Double]): Self = StObject.set(x, "averageBandwidthEstimate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageBandwidthEstimateNull: Self = StObject.set(x, "averageBandwidthEstimate", null)
+    inline def setAverageBandwidthEstimateNull: Self = StObject.set(x, "averageBandwidthEstimate", null)
     
-    @scala.inline
-    def setAverageBandwidthEstimateUndefined: Self = StObject.set(x, "averageBandwidthEstimate", js.undefined)
+    inline def setAverageBandwidthEstimateUndefined: Self = StObject.set(x, "averageBandwidthEstimate", js.undefined)
     
-    @scala.inline
-    def setAverageJitter(value: NullableOption[String]): Self = StObject.set(x, "averageJitter", value.asInstanceOf[js.Any])
+    inline def setAverageJitter(value: NullableOption[String]): Self = StObject.set(x, "averageJitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageJitterNull: Self = StObject.set(x, "averageJitter", null)
+    inline def setAverageJitterNull: Self = StObject.set(x, "averageJitter", null)
     
-    @scala.inline
-    def setAverageJitterUndefined: Self = StObject.set(x, "averageJitter", js.undefined)
+    inline def setAverageJitterUndefined: Self = StObject.set(x, "averageJitter", js.undefined)
     
-    @scala.inline
-    def setAveragePacketLossRate(value: NullableOption[Double]): Self = StObject.set(x, "averagePacketLossRate", value.asInstanceOf[js.Any])
+    inline def setAveragePacketLossRate(value: NullableOption[Double]): Self = StObject.set(x, "averagePacketLossRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAveragePacketLossRateNull: Self = StObject.set(x, "averagePacketLossRate", null)
+    inline def setAveragePacketLossRateNull: Self = StObject.set(x, "averagePacketLossRate", null)
     
-    @scala.inline
-    def setAveragePacketLossRateUndefined: Self = StObject.set(x, "averagePacketLossRate", js.undefined)
+    inline def setAveragePacketLossRateUndefined: Self = StObject.set(x, "averagePacketLossRate", js.undefined)
     
-    @scala.inline
-    def setAverageRatioOfConcealedSamples(value: NullableOption[Double]): Self = StObject.set(x, "averageRatioOfConcealedSamples", value.asInstanceOf[js.Any])
+    inline def setAverageRatioOfConcealedSamples(value: NullableOption[Double]): Self = StObject.set(x, "averageRatioOfConcealedSamples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageRatioOfConcealedSamplesNull: Self = StObject.set(x, "averageRatioOfConcealedSamples", null)
+    inline def setAverageRatioOfConcealedSamplesNull: Self = StObject.set(x, "averageRatioOfConcealedSamples", null)
     
-    @scala.inline
-    def setAverageRatioOfConcealedSamplesUndefined: Self = StObject.set(x, "averageRatioOfConcealedSamples", js.undefined)
+    inline def setAverageRatioOfConcealedSamplesUndefined: Self = StObject.set(x, "averageRatioOfConcealedSamples", js.undefined)
     
-    @scala.inline
-    def setAverageReceivedFrameRate(value: NullableOption[Double]): Self = StObject.set(x, "averageReceivedFrameRate", value.asInstanceOf[js.Any])
+    inline def setAverageReceivedFrameRate(value: NullableOption[Double]): Self = StObject.set(x, "averageReceivedFrameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageReceivedFrameRateNull: Self = StObject.set(x, "averageReceivedFrameRate", null)
+    inline def setAverageReceivedFrameRateNull: Self = StObject.set(x, "averageReceivedFrameRate", null)
     
-    @scala.inline
-    def setAverageReceivedFrameRateUndefined: Self = StObject.set(x, "averageReceivedFrameRate", js.undefined)
+    inline def setAverageReceivedFrameRateUndefined: Self = StObject.set(x, "averageReceivedFrameRate", js.undefined)
     
-    @scala.inline
-    def setAverageRoundTripTime(value: NullableOption[String]): Self = StObject.set(x, "averageRoundTripTime", value.asInstanceOf[js.Any])
+    inline def setAverageRoundTripTime(value: NullableOption[String]): Self = StObject.set(x, "averageRoundTripTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageRoundTripTimeNull: Self = StObject.set(x, "averageRoundTripTime", null)
+    inline def setAverageRoundTripTimeNull: Self = StObject.set(x, "averageRoundTripTime", null)
     
-    @scala.inline
-    def setAverageRoundTripTimeUndefined: Self = StObject.set(x, "averageRoundTripTime", js.undefined)
+    inline def setAverageRoundTripTimeUndefined: Self = StObject.set(x, "averageRoundTripTime", js.undefined)
     
-    @scala.inline
-    def setAverageVideoFrameLossPercentage(value: NullableOption[Double]): Self = StObject.set(x, "averageVideoFrameLossPercentage", value.asInstanceOf[js.Any])
+    inline def setAverageVideoFrameLossPercentage(value: NullableOption[Double]): Self = StObject.set(x, "averageVideoFrameLossPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageVideoFrameLossPercentageNull: Self = StObject.set(x, "averageVideoFrameLossPercentage", null)
+    inline def setAverageVideoFrameLossPercentageNull: Self = StObject.set(x, "averageVideoFrameLossPercentage", null)
     
-    @scala.inline
-    def setAverageVideoFrameLossPercentageUndefined: Self = StObject.set(x, "averageVideoFrameLossPercentage", js.undefined)
+    inline def setAverageVideoFrameLossPercentageUndefined: Self = StObject.set(x, "averageVideoFrameLossPercentage", js.undefined)
     
-    @scala.inline
-    def setAverageVideoFrameRate(value: NullableOption[Double]): Self = StObject.set(x, "averageVideoFrameRate", value.asInstanceOf[js.Any])
+    inline def setAverageVideoFrameRate(value: NullableOption[Double]): Self = StObject.set(x, "averageVideoFrameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageVideoFrameRateNull: Self = StObject.set(x, "averageVideoFrameRate", null)
+    inline def setAverageVideoFrameRateNull: Self = StObject.set(x, "averageVideoFrameRate", null)
     
-    @scala.inline
-    def setAverageVideoFrameRateUndefined: Self = StObject.set(x, "averageVideoFrameRate", js.undefined)
+    inline def setAverageVideoFrameRateUndefined: Self = StObject.set(x, "averageVideoFrameRate", js.undefined)
     
-    @scala.inline
-    def setAverageVideoPacketLossRate(value: NullableOption[Double]): Self = StObject.set(x, "averageVideoPacketLossRate", value.asInstanceOf[js.Any])
+    inline def setAverageVideoPacketLossRate(value: NullableOption[Double]): Self = StObject.set(x, "averageVideoPacketLossRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageVideoPacketLossRateNull: Self = StObject.set(x, "averageVideoPacketLossRate", null)
+    inline def setAverageVideoPacketLossRateNull: Self = StObject.set(x, "averageVideoPacketLossRate", null)
     
-    @scala.inline
-    def setAverageVideoPacketLossRateUndefined: Self = StObject.set(x, "averageVideoPacketLossRate", js.undefined)
+    inline def setAverageVideoPacketLossRateUndefined: Self = StObject.set(x, "averageVideoPacketLossRate", js.undefined)
     
-    @scala.inline
-    def setEndDateTime(value: NullableOption[String]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
+    inline def setEndDateTime(value: NullableOption[String]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateTimeNull: Self = StObject.set(x, "endDateTime", null)
+    inline def setEndDateTimeNull: Self = StObject.set(x, "endDateTime", null)
     
-    @scala.inline
-    def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
+    inline def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
     
-    @scala.inline
-    def setLowFrameRateRatio(value: NullableOption[Double]): Self = StObject.set(x, "lowFrameRateRatio", value.asInstanceOf[js.Any])
+    inline def setLowFrameRateRatio(value: NullableOption[Double]): Self = StObject.set(x, "lowFrameRateRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowFrameRateRatioNull: Self = StObject.set(x, "lowFrameRateRatio", null)
+    inline def setLowFrameRateRatioNull: Self = StObject.set(x, "lowFrameRateRatio", null)
     
-    @scala.inline
-    def setLowFrameRateRatioUndefined: Self = StObject.set(x, "lowFrameRateRatio", js.undefined)
+    inline def setLowFrameRateRatioUndefined: Self = StObject.set(x, "lowFrameRateRatio", js.undefined)
     
-    @scala.inline
-    def setLowVideoProcessingCapabilityRatio(value: NullableOption[Double]): Self = StObject.set(x, "lowVideoProcessingCapabilityRatio", value.asInstanceOf[js.Any])
+    inline def setLowVideoProcessingCapabilityRatio(value: NullableOption[Double]): Self = StObject.set(x, "lowVideoProcessingCapabilityRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowVideoProcessingCapabilityRatioNull: Self = StObject.set(x, "lowVideoProcessingCapabilityRatio", null)
+    inline def setLowVideoProcessingCapabilityRatioNull: Self = StObject.set(x, "lowVideoProcessingCapabilityRatio", null)
     
-    @scala.inline
-    def setLowVideoProcessingCapabilityRatioUndefined: Self = StObject.set(x, "lowVideoProcessingCapabilityRatio", js.undefined)
+    inline def setLowVideoProcessingCapabilityRatioUndefined: Self = StObject.set(x, "lowVideoProcessingCapabilityRatio", js.undefined)
     
-    @scala.inline
-    def setMaxAudioNetworkJitter(value: NullableOption[String]): Self = StObject.set(x, "maxAudioNetworkJitter", value.asInstanceOf[js.Any])
+    inline def setMaxAudioNetworkJitter(value: NullableOption[String]): Self = StObject.set(x, "maxAudioNetworkJitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAudioNetworkJitterNull: Self = StObject.set(x, "maxAudioNetworkJitter", null)
+    inline def setMaxAudioNetworkJitterNull: Self = StObject.set(x, "maxAudioNetworkJitter", null)
     
-    @scala.inline
-    def setMaxAudioNetworkJitterUndefined: Self = StObject.set(x, "maxAudioNetworkJitter", js.undefined)
+    inline def setMaxAudioNetworkJitterUndefined: Self = StObject.set(x, "maxAudioNetworkJitter", js.undefined)
     
-    @scala.inline
-    def setMaxJitter(value: NullableOption[String]): Self = StObject.set(x, "maxJitter", value.asInstanceOf[js.Any])
+    inline def setMaxJitter(value: NullableOption[String]): Self = StObject.set(x, "maxJitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxJitterNull: Self = StObject.set(x, "maxJitter", null)
+    inline def setMaxJitterNull: Self = StObject.set(x, "maxJitter", null)
     
-    @scala.inline
-    def setMaxJitterUndefined: Self = StObject.set(x, "maxJitter", js.undefined)
+    inline def setMaxJitterUndefined: Self = StObject.set(x, "maxJitter", js.undefined)
     
-    @scala.inline
-    def setMaxPacketLossRate(value: NullableOption[Double]): Self = StObject.set(x, "maxPacketLossRate", value.asInstanceOf[js.Any])
+    inline def setMaxPacketLossRate(value: NullableOption[Double]): Self = StObject.set(x, "maxPacketLossRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPacketLossRateNull: Self = StObject.set(x, "maxPacketLossRate", null)
+    inline def setMaxPacketLossRateNull: Self = StObject.set(x, "maxPacketLossRate", null)
     
-    @scala.inline
-    def setMaxPacketLossRateUndefined: Self = StObject.set(x, "maxPacketLossRate", js.undefined)
+    inline def setMaxPacketLossRateUndefined: Self = StObject.set(x, "maxPacketLossRate", js.undefined)
     
-    @scala.inline
-    def setMaxRatioOfConcealedSamples(value: NullableOption[Double]): Self = StObject.set(x, "maxRatioOfConcealedSamples", value.asInstanceOf[js.Any])
+    inline def setMaxRatioOfConcealedSamples(value: NullableOption[Double]): Self = StObject.set(x, "maxRatioOfConcealedSamples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRatioOfConcealedSamplesNull: Self = StObject.set(x, "maxRatioOfConcealedSamples", null)
+    inline def setMaxRatioOfConcealedSamplesNull: Self = StObject.set(x, "maxRatioOfConcealedSamples", null)
     
-    @scala.inline
-    def setMaxRatioOfConcealedSamplesUndefined: Self = StObject.set(x, "maxRatioOfConcealedSamples", js.undefined)
+    inline def setMaxRatioOfConcealedSamplesUndefined: Self = StObject.set(x, "maxRatioOfConcealedSamples", js.undefined)
     
-    @scala.inline
-    def setMaxRoundTripTime(value: NullableOption[String]): Self = StObject.set(x, "maxRoundTripTime", value.asInstanceOf[js.Any])
+    inline def setMaxRoundTripTime(value: NullableOption[String]): Self = StObject.set(x, "maxRoundTripTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRoundTripTimeNull: Self = StObject.set(x, "maxRoundTripTime", null)
+    inline def setMaxRoundTripTimeNull: Self = StObject.set(x, "maxRoundTripTime", null)
     
-    @scala.inline
-    def setMaxRoundTripTimeUndefined: Self = StObject.set(x, "maxRoundTripTime", js.undefined)
+    inline def setMaxRoundTripTimeUndefined: Self = StObject.set(x, "maxRoundTripTime", js.undefined)
     
-    @scala.inline
-    def setPacketUtilization(value: NullableOption[Double]): Self = StObject.set(x, "packetUtilization", value.asInstanceOf[js.Any])
+    inline def setPacketUtilization(value: NullableOption[Double]): Self = StObject.set(x, "packetUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacketUtilizationNull: Self = StObject.set(x, "packetUtilization", null)
+    inline def setPacketUtilizationNull: Self = StObject.set(x, "packetUtilization", null)
     
-    @scala.inline
-    def setPacketUtilizationUndefined: Self = StObject.set(x, "packetUtilization", js.undefined)
+    inline def setPacketUtilizationUndefined: Self = StObject.set(x, "packetUtilization", js.undefined)
     
-    @scala.inline
-    def setPostForwardErrorCorrectionPacketLossRate(value: NullableOption[Double]): Self = StObject.set(x, "postForwardErrorCorrectionPacketLossRate", value.asInstanceOf[js.Any])
+    inline def setPostForwardErrorCorrectionPacketLossRate(value: NullableOption[Double]): Self = StObject.set(x, "postForwardErrorCorrectionPacketLossRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostForwardErrorCorrectionPacketLossRateNull: Self = StObject.set(x, "postForwardErrorCorrectionPacketLossRate", null)
+    inline def setPostForwardErrorCorrectionPacketLossRateNull: Self = StObject.set(x, "postForwardErrorCorrectionPacketLossRate", null)
     
-    @scala.inline
-    def setPostForwardErrorCorrectionPacketLossRateUndefined: Self = StObject.set(x, "postForwardErrorCorrectionPacketLossRate", js.undefined)
+    inline def setPostForwardErrorCorrectionPacketLossRateUndefined: Self = StObject.set(x, "postForwardErrorCorrectionPacketLossRate", js.undefined)
     
-    @scala.inline
-    def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
+    inline def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
     
-    @scala.inline
-    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
     
-    @scala.inline
-    def setStreamDirection(value: MediaStreamDirection): Self = StObject.set(x, "streamDirection", value.asInstanceOf[js.Any])
+    inline def setStreamDirection(value: MediaStreamDirection): Self = StObject.set(x, "streamDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamDirectionUndefined: Self = StObject.set(x, "streamDirection", js.undefined)
+    inline def setStreamDirectionUndefined: Self = StObject.set(x, "streamDirection", js.undefined)
     
-    @scala.inline
-    def setStreamId(value: NullableOption[String]): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: NullableOption[String]): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamIdNull: Self = StObject.set(x, "streamId", null)
+    inline def setStreamIdNull: Self = StObject.set(x, "streamId", null)
     
-    @scala.inline
-    def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
+    inline def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
     
-    @scala.inline
-    def setWasMediaBypassed(value: NullableOption[Boolean]): Self = StObject.set(x, "wasMediaBypassed", value.asInstanceOf[js.Any])
+    inline def setWasMediaBypassed(value: NullableOption[Boolean]): Self = StObject.set(x, "wasMediaBypassed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWasMediaBypassedNull: Self = StObject.set(x, "wasMediaBypassed", null)
+    inline def setWasMediaBypassedNull: Self = StObject.set(x, "wasMediaBypassed", null)
     
-    @scala.inline
-    def setWasMediaBypassedUndefined: Self = StObject.set(x, "wasMediaBypassed", js.undefined)
+    inline def setWasMediaBypassedUndefined: Self = StObject.set(x, "wasMediaBypassed", js.undefined)
   }
 }

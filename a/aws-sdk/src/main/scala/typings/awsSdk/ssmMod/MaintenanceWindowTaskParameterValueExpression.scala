@@ -13,22 +13,17 @@ trait MaintenanceWindowTaskParameterValueExpression extends StObject {
 }
 object MaintenanceWindowTaskParameterValueExpression {
   
-  @scala.inline
-  def apply(): MaintenanceWindowTaskParameterValueExpression = {
+  inline def apply(): MaintenanceWindowTaskParameterValueExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaintenanceWindowTaskParameterValueExpression]
   }
   
-  @scala.inline
-  implicit class MaintenanceWindowTaskParameterValueExpressionMutableBuilder[Self <: MaintenanceWindowTaskParameterValueExpression] (val x: Self) extends AnyVal {
+  extension [Self <: MaintenanceWindowTaskParameterValueExpression](x: Self) {
     
-    @scala.inline
-    def setValues(value: MaintenanceWindowTaskParameterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: MaintenanceWindowTaskParameterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: MaintenanceWindowTaskParameterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: MaintenanceWindowTaskParameterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

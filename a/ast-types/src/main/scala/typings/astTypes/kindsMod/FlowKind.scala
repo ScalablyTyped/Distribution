@@ -42,233 +42,200 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlowKind extends StObject
 object FlowKind {
   
-  @scala.inline
-  def AnyTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.AnyTypeAnnotation = {
+  inline def AnyTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.AnyTypeAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("AnyTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.AnyTypeAnnotation]
   }
   
-  @scala.inline
-  def ArrayTypeAnnotation(elementType: FlowTypeKind): typings.astTypes.namedTypesMod.namedTypes.ArrayTypeAnnotation = {
+  inline def ArrayTypeAnnotation(elementType: FlowTypeKind): typings.astTypes.namedTypesMod.namedTypes.ArrayTypeAnnotation = {
     val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ArrayTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ArrayTypeAnnotation]
   }
   
-  @scala.inline
-  def BigIntLiteralTypeAnnotation(raw: String, value: Null): typings.astTypes.namedTypesMod.namedTypes.BigIntLiteralTypeAnnotation = {
+  inline def BigIntLiteralTypeAnnotation(raw: String, value: Null): typings.astTypes.namedTypesMod.namedTypes.BigIntLiteralTypeAnnotation = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BigIntLiteralTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.BigIntLiteralTypeAnnotation]
   }
   
-  @scala.inline
-  def BigIntTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.BigIntTypeAnnotation = {
+  inline def BigIntTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.BigIntTypeAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("BigIntTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.BigIntTypeAnnotation]
   }
   
-  @scala.inline
-  def BooleanLiteralTypeAnnotation(raw: String, value: Boolean): typings.astTypes.namedTypesMod.namedTypes.BooleanLiteralTypeAnnotation = {
+  inline def BooleanLiteralTypeAnnotation(raw: String, value: Boolean): typings.astTypes.namedTypesMod.namedTypes.BooleanLiteralTypeAnnotation = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BooleanLiteralTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.BooleanLiteralTypeAnnotation]
   }
   
-  @scala.inline
-  def BooleanTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.BooleanTypeAnnotation = {
+  inline def BooleanTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.BooleanTypeAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("BooleanTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.BooleanTypeAnnotation]
   }
   
-  @scala.inline
-  def DeclaredPredicate(value: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.DeclaredPredicate = {
+  inline def DeclaredPredicate(value: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.DeclaredPredicate = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DeclaredPredicate")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.DeclaredPredicate]
   }
   
-  @scala.inline
-  def EmptyTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.EmptyTypeAnnotation = {
+  inline def EmptyTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.EmptyTypeAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("EmptyTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.EmptyTypeAnnotation]
   }
   
-  @scala.inline
-  def ExistentialTypeParam(): typings.astTypes.namedTypesMod.namedTypes.ExistentialTypeParam = {
+  inline def ExistentialTypeParam(): typings.astTypes.namedTypesMod.namedTypes.ExistentialTypeParam = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("ExistentialTypeParam")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ExistentialTypeParam]
   }
   
-  @scala.inline
-  def ExistsTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.ExistsTypeAnnotation = {
+  inline def ExistsTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.ExistsTypeAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("ExistsTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ExistsTypeAnnotation]
   }
   
-  @scala.inline
-  def FunctionTypeAnnotation(params: js.Array[FunctionTypeParamKind], returnType: FlowTypeKind): typings.astTypes.namedTypesMod.namedTypes.FunctionTypeAnnotation = {
+  inline def FunctionTypeAnnotation(params: js.Array[FunctionTypeParamKind], returnType: FlowTypeKind): typings.astTypes.namedTypesMod.namedTypes.FunctionTypeAnnotation = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], rest = null, typeParameters = null)
     __obj.updateDynamic("type")("FunctionTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.FunctionTypeAnnotation]
   }
   
-  @scala.inline
-  def GenericTypeAnnotation(id: IdentifierKind | QualifiedTypeIdentifierKind): typings.astTypes.namedTypesMod.namedTypes.GenericTypeAnnotation = {
+  inline def GenericTypeAnnotation(id: IdentifierKind | QualifiedTypeIdentifierKind): typings.astTypes.namedTypesMod.namedTypes.GenericTypeAnnotation = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], typeParameters = null)
     __obj.updateDynamic("type")("GenericTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.GenericTypeAnnotation]
   }
   
-  @scala.inline
-  def InferredPredicate(): typings.astTypes.namedTypesMod.namedTypes.InferredPredicate = {
+  inline def InferredPredicate(): typings.astTypes.namedTypesMod.namedTypes.InferredPredicate = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("InferredPredicate")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.InferredPredicate]
   }
   
-  @scala.inline
-  def InterfaceTypeAnnotation(body: ObjectTypeAnnotationKind): typings.astTypes.namedTypesMod.namedTypes.InterfaceTypeAnnotation = {
+  inline def InterfaceTypeAnnotation(body: ObjectTypeAnnotationKind): typings.astTypes.namedTypesMod.namedTypes.InterfaceTypeAnnotation = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("InterfaceTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.InterfaceTypeAnnotation]
   }
   
-  @scala.inline
-  def IntersectionTypeAnnotation(types: js.Array[FlowTypeKind]): typings.astTypes.namedTypesMod.namedTypes.IntersectionTypeAnnotation = {
+  inline def IntersectionTypeAnnotation(types: js.Array[FlowTypeKind]): typings.astTypes.namedTypesMod.namedTypes.IntersectionTypeAnnotation = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("IntersectionTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.IntersectionTypeAnnotation]
   }
   
-  @scala.inline
-  def MemberTypeAnnotation(`object`: IdentifierKind, property: MemberTypeAnnotationKind | GenericTypeAnnotationKind): typings.astTypes.namedTypesMod.namedTypes.MemberTypeAnnotation = {
+  inline def MemberTypeAnnotation(`object`: IdentifierKind, property: MemberTypeAnnotationKind | GenericTypeAnnotationKind): typings.astTypes.namedTypesMod.namedTypes.MemberTypeAnnotation = {
     val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MemberTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.MemberTypeAnnotation]
   }
   
-  @scala.inline
-  def MixedTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.MixedTypeAnnotation = {
+  inline def MixedTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.MixedTypeAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("MixedTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.MixedTypeAnnotation]
   }
   
-  @scala.inline
-  def NullLiteralTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.NullLiteralTypeAnnotation = {
+  inline def NullLiteralTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.NullLiteralTypeAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("NullLiteralTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.NullLiteralTypeAnnotation]
   }
   
-  @scala.inline
-  def NullTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.NullTypeAnnotation = {
+  inline def NullTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.NullTypeAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("NullTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.NullTypeAnnotation]
   }
   
-  @scala.inline
-  def NullableTypeAnnotation(typeAnnotation: FlowTypeKind): typings.astTypes.namedTypesMod.namedTypes.NullableTypeAnnotation = {
+  inline def NullableTypeAnnotation(typeAnnotation: FlowTypeKind): typings.astTypes.namedTypesMod.namedTypes.NullableTypeAnnotation = {
     val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NullableTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.NullableTypeAnnotation]
   }
   
-  @scala.inline
-  def NumberLiteralTypeAnnotation(raw: String, value: Double): typings.astTypes.namedTypesMod.namedTypes.NumberLiteralTypeAnnotation = {
+  inline def NumberLiteralTypeAnnotation(raw: String, value: Double): typings.astTypes.namedTypesMod.namedTypes.NumberLiteralTypeAnnotation = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NumberLiteralTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.NumberLiteralTypeAnnotation]
   }
   
-  @scala.inline
-  def NumberTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.NumberTypeAnnotation = {
+  inline def NumberTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.NumberTypeAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("NumberTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.NumberTypeAnnotation]
   }
   
-  @scala.inline
-  def NumericLiteralTypeAnnotation(raw: String, value: Double): typings.astTypes.namedTypesMod.namedTypes.NumericLiteralTypeAnnotation = {
+  inline def NumericLiteralTypeAnnotation(raw: String, value: Double): typings.astTypes.namedTypesMod.namedTypes.NumericLiteralTypeAnnotation = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NumericLiteralTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.NumericLiteralTypeAnnotation]
   }
   
-  @scala.inline
-  def ObjectTypeAnnotation(properties: js.Array[ObjectTypePropertyKind | ObjectTypeSpreadPropertyKind]): typings.astTypes.namedTypesMod.namedTypes.ObjectTypeAnnotation = {
+  inline def ObjectTypeAnnotation(properties: js.Array[ObjectTypePropertyKind | ObjectTypeSpreadPropertyKind]): typings.astTypes.namedTypesMod.namedTypes.ObjectTypeAnnotation = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ObjectTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ObjectTypeAnnotation]
   }
   
-  @scala.inline
-  def StringLiteralTypeAnnotation(raw: String, value: String): typings.astTypes.namedTypesMod.namedTypes.StringLiteralTypeAnnotation = {
+  inline def StringLiteralTypeAnnotation(raw: String, value: String): typings.astTypes.namedTypesMod.namedTypes.StringLiteralTypeAnnotation = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("StringLiteralTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.StringLiteralTypeAnnotation]
   }
   
-  @scala.inline
-  def StringTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.StringTypeAnnotation = {
+  inline def StringTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.StringTypeAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("StringTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.StringTypeAnnotation]
   }
   
-  @scala.inline
-  def SymbolTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.SymbolTypeAnnotation = {
+  inline def SymbolTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.SymbolTypeAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("SymbolTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.SymbolTypeAnnotation]
   }
   
-  @scala.inline
-  def ThisTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.ThisTypeAnnotation = {
+  inline def ThisTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.ThisTypeAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("ThisTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ThisTypeAnnotation]
   }
   
-  @scala.inline
-  def TupleTypeAnnotation(types: js.Array[FlowTypeKind]): typings.astTypes.namedTypesMod.namedTypes.TupleTypeAnnotation = {
+  inline def TupleTypeAnnotation(types: js.Array[FlowTypeKind]): typings.astTypes.namedTypesMod.namedTypes.TupleTypeAnnotation = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TupleTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TupleTypeAnnotation]
   }
   
-  @scala.inline
-  def TypeParameter(name: String): typings.astTypes.namedTypesMod.namedTypes.TypeParameter = {
+  inline def TypeParameter(name: String): typings.astTypes.namedTypesMod.namedTypes.TypeParameter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TypeParameter")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TypeParameter]
   }
   
-  @scala.inline
-  def TypeofTypeAnnotation(argument: FlowTypeKind): typings.astTypes.namedTypesMod.namedTypes.TypeofTypeAnnotation = {
+  inline def TypeofTypeAnnotation(argument: FlowTypeKind): typings.astTypes.namedTypesMod.namedTypes.TypeofTypeAnnotation = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TypeofTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TypeofTypeAnnotation]
   }
   
-  @scala.inline
-  def UnionTypeAnnotation(types: js.Array[FlowTypeKind]): typings.astTypes.namedTypesMod.namedTypes.UnionTypeAnnotation = {
+  inline def UnionTypeAnnotation(types: js.Array[FlowTypeKind]): typings.astTypes.namedTypesMod.namedTypes.UnionTypeAnnotation = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("UnionTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.UnionTypeAnnotation]
   }
   
-  @scala.inline
-  def VoidTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.VoidTypeAnnotation = {
+  inline def VoidTypeAnnotation(): typings.astTypes.namedTypesMod.namedTypes.VoidTypeAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("VoidTypeAnnotation")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.VoidTypeAnnotation]

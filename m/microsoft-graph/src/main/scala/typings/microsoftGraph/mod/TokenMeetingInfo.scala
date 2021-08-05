@@ -13,19 +13,15 @@ trait TokenMeetingInfo
 }
 object TokenMeetingInfo {
   
-  @scala.inline
-  def apply(): TokenMeetingInfo = {
+  inline def apply(): TokenMeetingInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TokenMeetingInfo]
   }
   
-  @scala.inline
-  implicit class TokenMeetingInfoMutableBuilder[Self <: TokenMeetingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TokenMeetingInfo](x: Self) {
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

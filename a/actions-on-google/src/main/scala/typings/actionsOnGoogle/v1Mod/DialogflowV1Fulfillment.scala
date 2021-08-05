@@ -12,28 +12,21 @@ trait DialogflowV1Fulfillment extends StObject {
 }
 object DialogflowV1Fulfillment {
   
-  @scala.inline
-  def apply(): DialogflowV1Fulfillment = {
+  inline def apply(): DialogflowV1Fulfillment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogflowV1Fulfillment]
   }
   
-  @scala.inline
-  implicit class DialogflowV1FulfillmentMutableBuilder[Self <: DialogflowV1Fulfillment] (val x: Self) extends AnyVal {
+  extension [Self <: DialogflowV1Fulfillment](x: Self) {
     
-    @scala.inline
-    def setMessages(value: js.Array[DialogflowV1Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[DialogflowV1Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: DialogflowV1Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: DialogflowV1Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setSpeech(value: String): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
+    inline def setSpeech(value: String): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechUndefined: Self = StObject.set(x, "speech", js.undefined)
+    inline def setSpeechUndefined: Self = StObject.set(x, "speech", js.undefined)
   }
 }

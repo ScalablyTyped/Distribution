@@ -14,8 +14,7 @@ object comboBoxClassNamesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getClassNames(
+  inline def getClassNames(
     styles: PartialIComboBoxStyles,
     className: String,
     isOpen: Boolean,
@@ -26,6 +25,5 @@ object comboBoxClassNamesMod {
     hasErrorMessage: Boolean
   ): IComboBoxClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")(styles.asInstanceOf[js.Any], className.asInstanceOf[js.Any], isOpen.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], required.asInstanceOf[js.Any], focused.asInstanceOf[js.Any], allowFreeForm.asInstanceOf[js.Any], hasErrorMessage.asInstanceOf[js.Any])).asInstanceOf[IComboBoxClassNames]
   
-  @scala.inline
-  def getComboBoxOptionClassNames(styles: PartialIComboBoxOptionSty): IComboBoxOptionClassNames = ^.asInstanceOf[js.Dynamic].applyDynamic("getComboBoxOptionClassNames")(styles.asInstanceOf[js.Any]).asInstanceOf[IComboBoxOptionClassNames]
+  inline def getComboBoxOptionClassNames(styles: PartialIComboBoxOptionSty): IComboBoxOptionClassNames = ^.asInstanceOf[js.Dynamic].applyDynamic("getComboBoxOptionClassNames")(styles.asInstanceOf[js.Any]).asInstanceOf[IComboBoxOptionClassNames]
 }

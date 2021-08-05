@@ -23,19 +23,15 @@ trait ASPxClientImageGalleryFullscreenViewerEventArgs
 }
 object ASPxClientImageGalleryFullscreenViewerEventArgs {
   
-  @scala.inline
-  def apply(index: Double, name: String): ASPxClientImageGalleryFullscreenViewerEventArgs = {
+  inline def apply(index: Double, name: String): ASPxClientImageGalleryFullscreenViewerEventArgs = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientImageGalleryFullscreenViewerEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientImageGalleryFullscreenViewerEventArgsMutableBuilder[Self <: ASPxClientImageGalleryFullscreenViewerEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientImageGalleryFullscreenViewerEventArgs](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

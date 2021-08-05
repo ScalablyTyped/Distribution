@@ -18,16 +18,13 @@ trait ASPxClientGridViewFocusedCellChangingEventArgs
 }
 object ASPxClientGridViewFocusedCellChangingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, cellInfo: ASPxClientGridViewCellInfo): ASPxClientGridViewFocusedCellChangingEventArgs = {
+  inline def apply(cancel: Boolean, cellInfo: ASPxClientGridViewCellInfo): ASPxClientGridViewFocusedCellChangingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], cellInfo = cellInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientGridViewFocusedCellChangingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientGridViewFocusedCellChangingEventArgsMutableBuilder[Self <: ASPxClientGridViewFocusedCellChangingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGridViewFocusedCellChangingEventArgs](x: Self) {
     
-    @scala.inline
-    def setCellInfo(value: ASPxClientGridViewCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
+    inline def setCellInfo(value: ASPxClientGridViewCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
   }
 }

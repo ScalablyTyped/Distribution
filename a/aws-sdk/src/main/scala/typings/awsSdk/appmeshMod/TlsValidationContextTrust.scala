@@ -18,25 +18,19 @@ trait TlsValidationContextTrust extends StObject {
 }
 object TlsValidationContextTrust {
   
-  @scala.inline
-  def apply(): TlsValidationContextTrust = {
+  inline def apply(): TlsValidationContextTrust = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TlsValidationContextTrust]
   }
   
-  @scala.inline
-  implicit class TlsValidationContextTrustMutableBuilder[Self <: TlsValidationContextTrust] (val x: Self) extends AnyVal {
+  extension [Self <: TlsValidationContextTrust](x: Self) {
     
-    @scala.inline
-    def setAcm(value: TlsValidationContextAcmTrust): Self = StObject.set(x, "acm", value.asInstanceOf[js.Any])
+    inline def setAcm(value: TlsValidationContextAcmTrust): Self = StObject.set(x, "acm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcmUndefined: Self = StObject.set(x, "acm", js.undefined)
+    inline def setAcmUndefined: Self = StObject.set(x, "acm", js.undefined)
     
-    @scala.inline
-    def setFile(value: TlsValidationContextFileTrust): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: TlsValidationContextFileTrust): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
   }
 }

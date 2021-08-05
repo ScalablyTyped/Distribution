@@ -11,22 +11,17 @@ trait GoogleCloudDialogflowV2IntentMessageSimpleResponses extends StObject {
 }
 object GoogleCloudDialogflowV2IntentMessageSimpleResponses {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2IntentMessageSimpleResponses = {
+  inline def apply(): GoogleCloudDialogflowV2IntentMessageSimpleResponses = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageSimpleResponses]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2IntentMessageSimpleResponsesMutableBuilder[Self <: GoogleCloudDialogflowV2IntentMessageSimpleResponses] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2IntentMessageSimpleResponses](x: Self) {
     
-    @scala.inline
-    def setSimpleResponses(value: js.Array[GoogleCloudDialogflowV2IntentMessageSimpleResponse]): Self = StObject.set(x, "simpleResponses", value.asInstanceOf[js.Any])
+    inline def setSimpleResponses(value: js.Array[GoogleCloudDialogflowV2IntentMessageSimpleResponse]): Self = StObject.set(x, "simpleResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimpleResponsesUndefined: Self = StObject.set(x, "simpleResponses", js.undefined)
+    inline def setSimpleResponsesUndefined: Self = StObject.set(x, "simpleResponses", js.undefined)
     
-    @scala.inline
-    def setSimpleResponsesVarargs(value: GoogleCloudDialogflowV2IntentMessageSimpleResponse*): Self = StObject.set(x, "simpleResponses", js.Array(value :_*))
+    inline def setSimpleResponsesVarargs(value: GoogleCloudDialogflowV2IntentMessageSimpleResponse*): Self = StObject.set(x, "simpleResponses", js.Array(value :_*))
   }
 }

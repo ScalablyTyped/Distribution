@@ -18,8 +18,7 @@ trait ParametersAppsGetUserInstallationEndpoint extends StObject {
 }
 object ParametersAppsGetUserInstallationEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: AppsGetUserInstallationEndpoint,
     request: AppsGetUserInstallationRequestOptions,
     response: OctokitResponse[AppsGetUserInstallationResponseData]
@@ -28,16 +27,12 @@ object ParametersAppsGetUserInstallationEndpoint {
     __obj.asInstanceOf[ParametersAppsGetUserInstallationEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersAppsGetUserInstallationEndpointMutableBuilder[Self <: ParametersAppsGetUserInstallationEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersAppsGetUserInstallationEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: AppsGetUserInstallationEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: AppsGetUserInstallationEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: AppsGetUserInstallationRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: AppsGetUserInstallationRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[AppsGetUserInstallationResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[AppsGetUserInstallationResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

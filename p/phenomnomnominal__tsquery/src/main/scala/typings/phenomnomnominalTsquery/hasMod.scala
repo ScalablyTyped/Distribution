@@ -13,6 +13,5 @@ object hasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def has(node: Node, selector: TSQuerySelectorNode, _underscore: js.Array[Node], options: TSQueryOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], _underscore.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def has(node: Node, selector: TSQuerySelectorNode, _underscore: js.Array[Node], options: TSQueryOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], _underscore.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

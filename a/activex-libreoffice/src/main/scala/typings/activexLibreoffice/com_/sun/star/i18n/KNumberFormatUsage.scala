@@ -27,28 +27,20 @@ object KNumberFormatUsage {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CURRENCY: `8` = 8.asInstanceOf[`8`]
+    inline def CURRENCY: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def DATE: `1` = 1.asInstanceOf[`1`]
+    inline def DATE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def DATE_TIME: `3` = 3.asInstanceOf[`3`]
+    inline def DATE_TIME: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def FIXED_NUMBER: `4` = 4.asInstanceOf[`4`]
+    inline def FIXED_NUMBER: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def FRACTION_NUMBER: `5` = 5.asInstanceOf[`5`]
+    inline def FRACTION_NUMBER: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def PERCENT_NUMBER: `6` = 6.asInstanceOf[`6`]
+    inline def PERCENT_NUMBER: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def SCIENTIFIC_NUMBER: `7` = 7.asInstanceOf[`7`]
+    inline def SCIENTIFIC_NUMBER: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def TIME: `2` = 2.asInstanceOf[`2`]
+    inline def TIME: `2` = 2.asInstanceOf[`2`]
   }
 }

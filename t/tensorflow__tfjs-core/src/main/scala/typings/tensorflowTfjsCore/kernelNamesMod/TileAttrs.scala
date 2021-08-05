@@ -10,19 +10,15 @@ trait TileAttrs extends StObject {
 }
 object TileAttrs {
   
-  @scala.inline
-  def apply(reps: js.Array[Double]): TileAttrs = {
+  inline def apply(reps: js.Array[Double]): TileAttrs = {
     val __obj = js.Dynamic.literal(reps = reps.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileAttrs]
   }
   
-  @scala.inline
-  implicit class TileAttrsMutableBuilder[Self <: TileAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: TileAttrs](x: Self) {
     
-    @scala.inline
-    def setReps(value: js.Array[Double]): Self = StObject.set(x, "reps", value.asInstanceOf[js.Any])
+    inline def setReps(value: js.Array[Double]): Self = StObject.set(x, "reps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepsVarargs(value: Double*): Self = StObject.set(x, "reps", js.Array(value :_*))
+    inline def setRepsVarargs(value: Double*): Self = StObject.set(x, "reps", js.Array(value :_*))
   }
 }

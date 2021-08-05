@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppListType extends StObject
 object AppListType {
   
-  @scala.inline
-  def appsInListCompliant: typings.microsoftGraph.microsoftGraphStrings.appsInListCompliant = "appsInListCompliant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.appsInListCompliant]
+  inline def appsInListCompliant: typings.microsoftGraph.microsoftGraphStrings.appsInListCompliant = "appsInListCompliant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.appsInListCompliant]
   
-  @scala.inline
-  def appsNotInListCompliant: typings.microsoftGraph.microsoftGraphStrings.appsNotInListCompliant = "appsNotInListCompliant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.appsNotInListCompliant]
+  inline def appsNotInListCompliant: typings.microsoftGraph.microsoftGraphStrings.appsNotInListCompliant = "appsNotInListCompliant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.appsNotInListCompliant]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
 }

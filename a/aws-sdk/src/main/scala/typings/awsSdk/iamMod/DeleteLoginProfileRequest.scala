@@ -13,16 +13,13 @@ trait DeleteLoginProfileRequest extends StObject {
 }
 object DeleteLoginProfileRequest {
   
-  @scala.inline
-  def apply(UserName: userNameType): DeleteLoginProfileRequest = {
+  inline def apply(UserName: userNameType): DeleteLoginProfileRequest = {
     val __obj = js.Dynamic.literal(UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLoginProfileRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLoginProfileRequestMutableBuilder[Self <: DeleteLoginProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLoginProfileRequest](x: Self) {
     
-    @scala.inline
-    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

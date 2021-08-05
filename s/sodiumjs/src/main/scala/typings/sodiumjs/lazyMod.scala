@@ -11,7 +11,7 @@ object lazyMod {
   class Lazy[A] protected () extends StObject {
     def this(f: js.Function0[A]) = this()
     
-    var f: js.Any = js.native
+    /* private */ var f: js.Any = js.native
     
     /**
       * Get the value if available, throwing an exception if not.

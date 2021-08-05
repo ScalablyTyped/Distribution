@@ -14,10 +14,8 @@ object mod {
     * @example
     * pinyin("中心") // returns [ [ 'zhōng' ], [ 'xīn' ] ]
     */
-  @scala.inline
-  def apply(words: String): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(words.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
-  @scala.inline
-  def apply(words: String, options: Options): js.Array[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(words.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[String]]]
+  inline def apply(words: String): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(words.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
+  inline def apply(words: String, options: Options): js.Array[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(words.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[String]]]
   
   @JSImport("pinyin", JSImport.Namespace)
   @js.native
@@ -79,8 +77,7 @@ object mod {
     * 如果返回  0 表示 a 和 b 顺序相同
     * 如果返回  1 表示 a 在 b 后
     */
-  @scala.inline
-  def compare(a: String, b: String): `-1` | `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`-1` | `0` | `1`]
+  inline def compare(a: String, b: String): `-1` | `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`-1` | `0` | `1`]
   
   trait Options extends StObject {
     
@@ -110,32 +107,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setHeteronym(value: Boolean): Self = StObject.set(x, "heteronym", value.asInstanceOf[js.Any])
+      inline def setHeteronym(value: Boolean): Self = StObject.set(x, "heteronym", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeteronymUndefined: Self = StObject.set(x, "heteronym", js.undefined)
+      inline def setHeteronymUndefined: Self = StObject.set(x, "heteronym", js.undefined)
       
-      @scala.inline
-      def setSegment(value: Boolean): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+      inline def setSegment(value: Boolean): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
+      inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
       
-      @scala.inline
-      def setStyle(value: Double): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Double): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

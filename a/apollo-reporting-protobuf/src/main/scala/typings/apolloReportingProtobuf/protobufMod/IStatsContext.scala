@@ -17,40 +17,29 @@ trait IStatsContext extends StObject {
 }
 object IStatsContext {
   
-  @scala.inline
-  def apply(): IStatsContext = {
+  inline def apply(): IStatsContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IStatsContext]
   }
   
-  @scala.inline
-  implicit class IStatsContextMutableBuilder[Self <: IStatsContext] (val x: Self) extends AnyVal {
+  extension [Self <: IStatsContext](x: Self) {
     
-    @scala.inline
-    def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
+    inline def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientNameNull: Self = StObject.set(x, "clientName", null)
+    inline def setClientNameNull: Self = StObject.set(x, "clientName", null)
     
-    @scala.inline
-    def setClientNameUndefined: Self = StObject.set(x, "clientName", js.undefined)
+    inline def setClientNameUndefined: Self = StObject.set(x, "clientName", js.undefined)
     
-    @scala.inline
-    def setClientReferenceId(value: String): Self = StObject.set(x, "clientReferenceId", value.asInstanceOf[js.Any])
+    inline def setClientReferenceId(value: String): Self = StObject.set(x, "clientReferenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientReferenceIdNull: Self = StObject.set(x, "clientReferenceId", null)
+    inline def setClientReferenceIdNull: Self = StObject.set(x, "clientReferenceId", null)
     
-    @scala.inline
-    def setClientReferenceIdUndefined: Self = StObject.set(x, "clientReferenceId", js.undefined)
+    inline def setClientReferenceIdUndefined: Self = StObject.set(x, "clientReferenceId", js.undefined)
     
-    @scala.inline
-    def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
+    inline def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientVersionNull: Self = StObject.set(x, "clientVersion", null)
+    inline def setClientVersionNull: Self = StObject.set(x, "clientVersion", null)
     
-    @scala.inline
-    def setClientVersionUndefined: Self = StObject.set(x, "clientVersion", js.undefined)
+    inline def setClientVersionUndefined: Self = StObject.set(x, "clientVersion", js.undefined)
   }
 }

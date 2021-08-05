@@ -12,11 +12,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[S](reducers: ReducersMapObject[S, js.Any]): Reducer[S, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, AnyAction]]
+  inline def default[S](reducers: ReducersMapObject[S, js.Any]): Reducer[S, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, AnyAction]]
   
-  @scala.inline
-  def default_SA_ActionAny[S, A /* <: Action[js.Any] */](reducers: ReducersMapObject[S, A]): Reducer[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, A]]
+  inline def default_SA_ActionAny[S, A /* <: Action[js.Any] */](reducers: ReducersMapObject[S, A]): Reducer[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, A]]
   
   trait Action[T] extends StObject {
     
@@ -24,18 +22,15 @@ object mod {
   }
   object Action {
     
-    @scala.inline
-    def apply[T](`type`: T): Action[T] = {
+    inline def apply[T](`type`: T): Action[T] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action[T]]
     }
     
-    @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action[?], T] (val x: Self & Action[T]) extends AnyVal {
+    extension [Self <: Action[?], T](x: Self & Action[T]) {
       
-      @scala.inline
-      def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,8 +41,7 @@ object mod {
   /* extraProps */ StringDictionary[js.Any]
   object AnyAction {
     
-    @scala.inline
-    def apply(`type`: js.Any): AnyAction = {
+    inline def apply(`type`: js.Any): AnyAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnyAction]

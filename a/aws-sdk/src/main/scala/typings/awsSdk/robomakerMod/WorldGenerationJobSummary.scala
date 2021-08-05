@@ -43,55 +43,39 @@ trait WorldGenerationJobSummary extends StObject {
 }
 object WorldGenerationJobSummary {
   
-  @scala.inline
-  def apply(): WorldGenerationJobSummary = {
+  inline def apply(): WorldGenerationJobSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorldGenerationJobSummary]
   }
   
-  @scala.inline
-  implicit class WorldGenerationJobSummaryMutableBuilder[Self <: WorldGenerationJobSummary] (val x: Self) extends AnyVal {
+  extension [Self <: WorldGenerationJobSummary](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setFailedWorldCount(value: Integer): Self = StObject.set(x, "failedWorldCount", value.asInstanceOf[js.Any])
+    inline def setFailedWorldCount(value: Integer): Self = StObject.set(x, "failedWorldCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedWorldCountUndefined: Self = StObject.set(x, "failedWorldCount", js.undefined)
+    inline def setFailedWorldCountUndefined: Self = StObject.set(x, "failedWorldCount", js.undefined)
     
-    @scala.inline
-    def setStatus(value: WorldGenerationJobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: WorldGenerationJobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setSucceededWorldCount(value: Integer): Self = StObject.set(x, "succeededWorldCount", value.asInstanceOf[js.Any])
+    inline def setSucceededWorldCount(value: Integer): Self = StObject.set(x, "succeededWorldCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceededWorldCountUndefined: Self = StObject.set(x, "succeededWorldCount", js.undefined)
+    inline def setSucceededWorldCountUndefined: Self = StObject.set(x, "succeededWorldCount", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: Arn): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Arn): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setWorldCount(value: WorldCount): Self = StObject.set(x, "worldCount", value.asInstanceOf[js.Any])
+    inline def setWorldCount(value: WorldCount): Self = StObject.set(x, "worldCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldCountUndefined: Self = StObject.set(x, "worldCount", js.undefined)
+    inline def setWorldCountUndefined: Self = StObject.set(x, "worldCount", js.undefined)
   }
 }

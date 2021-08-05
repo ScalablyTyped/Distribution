@@ -11,17 +11,14 @@ trait GetSystemDirectoryOptions extends StObject {
 }
 object GetSystemDirectoryOptions {
   
-  @scala.inline
-  def apply(): GetSystemDirectoryOptions = {
+  inline def apply(): GetSystemDirectoryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("sandbox")
     __obj.asInstanceOf[GetSystemDirectoryOptions]
   }
   
-  @scala.inline
-  implicit class GetSystemDirectoryOptionsMutableBuilder[Self <: GetSystemDirectoryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetSystemDirectoryOptions](x: Self) {
     
-    @scala.inline
-    def setType(value: sandbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: sandbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

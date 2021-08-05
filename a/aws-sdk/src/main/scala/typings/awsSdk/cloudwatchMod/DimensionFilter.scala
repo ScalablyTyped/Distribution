@@ -18,22 +18,17 @@ trait DimensionFilter extends StObject {
 }
 object DimensionFilter {
   
-  @scala.inline
-  def apply(Name: DimensionName): DimensionFilter = {
+  inline def apply(Name: DimensionName): DimensionFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionFilter]
   }
   
-  @scala.inline
-  implicit class DimensionFilterMutableBuilder[Self <: DimensionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: DimensionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DimensionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: DimensionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: DimensionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

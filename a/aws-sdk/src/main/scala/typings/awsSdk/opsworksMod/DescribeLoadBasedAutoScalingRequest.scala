@@ -13,19 +13,15 @@ trait DescribeLoadBasedAutoScalingRequest extends StObject {
 }
 object DescribeLoadBasedAutoScalingRequest {
   
-  @scala.inline
-  def apply(LayerIds: Strings): DescribeLoadBasedAutoScalingRequest = {
+  inline def apply(LayerIds: Strings): DescribeLoadBasedAutoScalingRequest = {
     val __obj = js.Dynamic.literal(LayerIds = LayerIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLoadBasedAutoScalingRequest]
   }
   
-  @scala.inline
-  implicit class DescribeLoadBasedAutoScalingRequestMutableBuilder[Self <: DescribeLoadBasedAutoScalingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLoadBasedAutoScalingRequest](x: Self) {
     
-    @scala.inline
-    def setLayerIds(value: Strings): Self = StObject.set(x, "LayerIds", value.asInstanceOf[js.Any])
+    inline def setLayerIds(value: Strings): Self = StObject.set(x, "LayerIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "LayerIds", js.Array(value :_*))
+    inline def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "LayerIds", js.Array(value :_*))
   }
 }

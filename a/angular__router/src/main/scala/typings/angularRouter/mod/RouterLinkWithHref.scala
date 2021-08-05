@@ -17,7 +17,7 @@ class RouterLinkWithHref protected ()
      with OnDestroy {
   def this(router: Router, route: ActivatedRoute, locationStrategy: LocationStrategy) = this()
   
-  var commands: js.Any = js.native
+  /* private */ var commands: js.Any = js.native
   
   /**
     * Passed to {@link Router#createUrlTree Router#createUrlTree} as part of the
@@ -29,7 +29,7 @@ class RouterLinkWithHref protected ()
   
   var href: String = js.native
   
-  var locationStrategy: js.Any = js.native
+  /* private */ var locationStrategy: js.Any = js.native
   
   /**
     * A callback method that is invoked immediately after the
@@ -51,7 +51,7 @@ class RouterLinkWithHref protected ()
   /** @nodoc */
   def onClick(button: Double, ctrlKey: Boolean, shiftKey: Boolean, altKey: Boolean, metaKey: Boolean): Boolean = js.native
   
-  var preserve: js.Any = js.native
+  /* private */ var preserve: js.Any = js.native
   
   /**
     * Passed to {@link Router#createUrlTree Router#createUrlTree} as part of the
@@ -85,9 +85,9 @@ class RouterLinkWithHref protected ()
     */
   var replaceUrl: Boolean = js.native
   
-  var route: js.Any = js.native
+  /* private */ var route: js.Any = js.native
   
-  var router: js.Any = js.native
+  /* private */ var router: js.Any = js.native
   
   /**
     * Commands to pass to {@link Router#createUrlTree Router#createUrlTree}.
@@ -114,11 +114,11 @@ class RouterLinkWithHref protected ()
     */
   var state: js.UndefOr[StringDictionary[js.Any]] = js.native
   
-  var subscription: js.Any = js.native
+  /* private */ var subscription: js.Any = js.native
   
   var target: String = js.native
   
-  var updateTargetUrlAndHref: js.Any = js.native
+  /* private */ var updateTargetUrlAndHref: js.Any = js.native
   
   def urlTree: UrlTree = js.native
 }

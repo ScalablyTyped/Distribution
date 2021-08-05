@@ -20,8 +20,7 @@ trait ActiveXObjectNameMap extends StObject {
 }
 object ActiveXObjectNameMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InfoPathDotApplication: Application,
     InfoPathDotEditor: InfoPathEditorObject,
     InfoPathDotExternalApplication: ExternalApplication
@@ -33,16 +32,12 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
     
-    @scala.inline
-    def setInfoPathDotApplication(value: Application): Self = StObject.set(x, "InfoPath.Application", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotApplication(value: Application): Self = StObject.set(x, "InfoPath.Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotEditor(value: InfoPathEditorObject): Self = StObject.set(x, "InfoPath.Editor", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotEditor(value: InfoPathEditorObject): Self = StObject.set(x, "InfoPath.Editor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotExternalApplication(value: ExternalApplication): Self = StObject.set(x, "InfoPath.ExternalApplication", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotExternalApplication(value: ExternalApplication): Self = StObject.set(x, "InfoPath.ExternalApplication", value.asInstanceOf[js.Any])
   }
 }

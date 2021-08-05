@@ -18,19 +18,15 @@ trait TimestreamDimension extends StObject {
 }
 object TimestreamDimension {
   
-  @scala.inline
-  def apply(name: TimestreamDimensionName, value: TimestreamDimensionValue): TimestreamDimension = {
+  inline def apply(name: TimestreamDimensionName, value: TimestreamDimensionValue): TimestreamDimension = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimestreamDimension]
   }
   
-  @scala.inline
-  implicit class TimestreamDimensionMutableBuilder[Self <: TimestreamDimension] (val x: Self) extends AnyVal {
+  extension [Self <: TimestreamDimension](x: Self) {
     
-    @scala.inline
-    def setName(value: TimestreamDimensionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: TimestreamDimensionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: TimestreamDimensionValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TimestreamDimensionValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

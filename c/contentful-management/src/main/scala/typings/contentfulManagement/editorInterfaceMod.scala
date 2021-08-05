@@ -13,8 +13,7 @@ object editorInterfaceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapEditorInterface(http: AxiosInstance, data: EditorInterfaceProps): EditorInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEditorInterface")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[EditorInterface]
+  inline def wrapEditorInterface(http: AxiosInstance, data: EditorInterfaceProps): EditorInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEditorInterface")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[EditorInterface]
   
   trait Control extends StObject {
     
@@ -32,23 +31,18 @@ object editorInterfaceMod {
   }
   object Control {
     
-    @scala.inline
-    def apply(fieldId: String, widgetId: String, widgetNamespace: String): Control = {
+    inline def apply(fieldId: String, widgetId: String, widgetNamespace: String): Control = {
       val __obj = js.Dynamic.literal(fieldId = fieldId.asInstanceOf[js.Any], widgetId = widgetId.asInstanceOf[js.Any], widgetNamespace = widgetNamespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[Control]
     }
     
-    @scala.inline
-    implicit class ControlMutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
+    extension [Self <: Control](x: Self) {
       
-      @scala.inline
-      def setFieldId(value: String): Self = StObject.set(x, "fieldId", value.asInstanceOf[js.Any])
+      inline def setFieldId(value: String): Self = StObject.set(x, "fieldId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidgetId(value: String): Self = StObject.set(x, "widgetId", value.asInstanceOf[js.Any])
+      inline def setWidgetId(value: String): Self = StObject.set(x, "widgetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidgetNamespace(value: String): Self = StObject.set(x, "widgetNamespace", value.asInstanceOf[js.Any])
+      inline def setWidgetNamespace(value: String): Self = StObject.set(x, "widgetNamespace", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,8 +97,7 @@ object editorInterfaceMod {
   }
   object EditorInterface {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       controls: js.Array[Control],
       getControlForField: String => Null | Control,
       sys: MetaSysPropsspacesysMetaL,
@@ -115,14 +108,11 @@ object editorInterfaceMod {
       __obj.asInstanceOf[EditorInterface]
     }
     
-    @scala.inline
-    implicit class EditorInterfaceMutableBuilder[Self <: EditorInterface] (val x: Self) extends AnyVal {
+    extension [Self <: EditorInterface](x: Self) {
       
-      @scala.inline
-      def setGetControlForField(value: String => Null | Control): Self = StObject.set(x, "getControlForField", js.Any.fromFunction1(value))
+      inline def setGetControlForField(value: String => Null | Control): Self = StObject.set(x, "getControlForField", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: () => js.Promise[EditorInterface]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[EditorInterface]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -137,23 +127,18 @@ object editorInterfaceMod {
   }
   object EditorInterfaceProps {
     
-    @scala.inline
-    def apply(controls: js.Array[Control], sys: MetaSysPropsspacesysMetaL): EditorInterfaceProps = {
+    inline def apply(controls: js.Array[Control], sys: MetaSysPropsspacesysMetaL): EditorInterfaceProps = {
       val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[EditorInterfaceProps]
     }
     
-    @scala.inline
-    implicit class EditorInterfacePropsMutableBuilder[Self <: EditorInterfaceProps] (val x: Self) extends AnyVal {
+    extension [Self <: EditorInterfaceProps](x: Self) {
       
-      @scala.inline
-      def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      inline def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value :_*))
+      inline def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value :_*))
       
-      @scala.inline
-      def setSys(value: MetaSysPropsspacesysMetaL): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysPropsspacesysMetaL): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

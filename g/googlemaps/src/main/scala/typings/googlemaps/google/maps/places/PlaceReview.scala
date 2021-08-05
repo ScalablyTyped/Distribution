@@ -27,8 +27,7 @@ trait PlaceReview extends StObject {
 }
 object PlaceReview {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aspects: js.Array[PlaceAspectRating],
     author_name: String,
     language: String,
@@ -42,40 +41,28 @@ object PlaceReview {
     __obj.asInstanceOf[PlaceReview]
   }
   
-  @scala.inline
-  implicit class PlaceReviewMutableBuilder[Self <: PlaceReview] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceReview](x: Self) {
     
-    @scala.inline
-    def setAspects(value: js.Array[PlaceAspectRating]): Self = StObject.set(x, "aspects", value.asInstanceOf[js.Any])
+    inline def setAspects(value: js.Array[PlaceAspectRating]): Self = StObject.set(x, "aspects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAspectsVarargs(value: PlaceAspectRating*): Self = StObject.set(x, "aspects", js.Array(value :_*))
+    inline def setAspectsVarargs(value: PlaceAspectRating*): Self = StObject.set(x, "aspects", js.Array(value :_*))
     
-    @scala.inline
-    def setAuthor_name(value: String): Self = StObject.set(x, "author_name", value.asInstanceOf[js.Any])
+    inline def setAuthor_name(value: String): Self = StObject.set(x, "author_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthor_url(value: String): Self = StObject.set(x, "author_url", value.asInstanceOf[js.Any])
+    inline def setAuthor_url(value: String): Self = StObject.set(x, "author_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthor_urlUndefined: Self = StObject.set(x, "author_url", js.undefined)
+    inline def setAuthor_urlUndefined: Self = StObject.set(x, "author_url", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_photo_url(value: String): Self = StObject.set(x, "profile_photo_url", value.asInstanceOf[js.Any])
+    inline def setProfile_photo_url(value: String): Self = StObject.set(x, "profile_photo_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+    inline def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelative_time_description(value: String): Self = StObject.set(x, "relative_time_description", value.asInstanceOf[js.Any])
+    inline def setRelative_time_description(value: String): Self = StObject.set(x, "relative_time_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

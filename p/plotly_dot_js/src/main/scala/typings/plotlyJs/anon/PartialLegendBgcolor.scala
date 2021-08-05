@@ -44,79 +44,55 @@ trait PartialLegendBgcolor extends StObject {
 }
 object PartialLegendBgcolor {
   
-  @scala.inline
-  def apply(): PartialLegendBgcolor = {
+  inline def apply(): PartialLegendBgcolor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialLegendBgcolor]
   }
   
-  @scala.inline
-  implicit class PartialLegendBgcolorMutableBuilder[Self <: PartialLegendBgcolor] (val x: Self) extends AnyVal {
+  extension [Self <: PartialLegendBgcolor](x: Self) {
     
-    @scala.inline
-    def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
+    inline def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
+    inline def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
     
-    @scala.inline
-    def setBordercolor(value: String): Self = StObject.set(x, "bordercolor", value.asInstanceOf[js.Any])
+    inline def setBordercolor(value: String): Self = StObject.set(x, "bordercolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBordercolorUndefined: Self = StObject.set(x, "bordercolor", js.undefined)
+    inline def setBordercolorUndefined: Self = StObject.set(x, "bordercolor", js.undefined)
     
-    @scala.inline
-    def setBorderwidth(value: Double): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
+    inline def setBorderwidth(value: Double): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderwidthUndefined: Self = StObject.set(x, "borderwidth", js.undefined)
+    inline def setBorderwidthUndefined: Self = StObject.set(x, "borderwidth", js.undefined)
     
-    @scala.inline
-    def setFont(value: Partial[typings.plotlyJs.mod.Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Partial[typings.plotlyJs.mod.Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: v | h): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: v | h): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setTracegroupgap(value: Double): Self = StObject.set(x, "tracegroupgap", value.asInstanceOf[js.Any])
+    inline def setTracegroupgap(value: Double): Self = StObject.set(x, "tracegroupgap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracegroupgapUndefined: Self = StObject.set(x, "tracegroupgap", js.undefined)
+    inline def setTracegroupgapUndefined: Self = StObject.set(x, "tracegroupgap", js.undefined)
     
-    @scala.inline
-    def setTraceorder(value: grouped | normal | reversed): Self = StObject.set(x, "traceorder", value.asInstanceOf[js.Any])
+    inline def setTraceorder(value: grouped | normal | reversed): Self = StObject.set(x, "traceorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceorderUndefined: Self = StObject.set(x, "traceorder", js.undefined)
+    inline def setTraceorderUndefined: Self = StObject.set(x, "traceorder", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setXanchor(value: auto | left | center | right): Self = StObject.set(x, "xanchor", value.asInstanceOf[js.Any])
+    inline def setXanchor(value: auto | left | center | right): Self = StObject.set(x, "xanchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXanchorUndefined: Self = StObject.set(x, "xanchor", js.undefined)
+    inline def setXanchorUndefined: Self = StObject.set(x, "xanchor", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    @scala.inline
-    def setYanchor(value: auto | top | middle | bottom): Self = StObject.set(x, "yanchor", value.asInstanceOf[js.Any])
+    inline def setYanchor(value: auto | top | middle | bottom): Self = StObject.set(x, "yanchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYanchorUndefined: Self = StObject.set(x, "yanchor", js.undefined)
+    inline def setYanchorUndefined: Self = StObject.set(x, "yanchor", js.undefined)
   }
 }

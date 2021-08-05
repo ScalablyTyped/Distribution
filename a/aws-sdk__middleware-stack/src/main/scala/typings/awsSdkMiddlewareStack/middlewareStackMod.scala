@@ -11,6 +11,5 @@ object middlewareStackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def constructStack[Input /* <: js.Object */, Output /* <: js.Object */](): MiddlewareStack[Input, Output] = ^.asInstanceOf[js.Dynamic].applyDynamic("constructStack")().asInstanceOf[MiddlewareStack[Input, Output]]
+  inline def constructStack[Input /* <: js.Object */, Output /* <: js.Object */](): MiddlewareStack[Input, Output] = ^.asInstanceOf[js.Dynamic].applyDynamic("constructStack")().asInstanceOf[MiddlewareStack[Input, Output]]
 }

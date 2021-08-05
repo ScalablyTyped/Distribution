@@ -32,8 +32,7 @@ trait IContentWidget extends StObject {
 }
 object IContentWidget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDomNode: () => HTMLElement,
     getId: () => String,
     getPosition: () => IContentWidgetPosition | Null
@@ -42,28 +41,20 @@ object IContentWidget {
     __obj.asInstanceOf[IContentWidget]
   }
   
-  @scala.inline
-  implicit class IContentWidgetMutableBuilder[Self <: IContentWidget] (val x: Self) extends AnyVal {
+  extension [Self <: IContentWidget](x: Self) {
     
-    @scala.inline
-    def setAllowEditorOverflow(value: Boolean): Self = StObject.set(x, "allowEditorOverflow", value.asInstanceOf[js.Any])
+    inline def setAllowEditorOverflow(value: Boolean): Self = StObject.set(x, "allowEditorOverflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowEditorOverflowUndefined: Self = StObject.set(x, "allowEditorOverflow", js.undefined)
+    inline def setAllowEditorOverflowUndefined: Self = StObject.set(x, "allowEditorOverflow", js.undefined)
     
-    @scala.inline
-    def setGetDomNode(value: () => HTMLElement): Self = StObject.set(x, "getDomNode", js.Any.fromFunction0(value))
+    inline def setGetDomNode(value: () => HTMLElement): Self = StObject.set(x, "getDomNode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPosition(value: () => IContentWidgetPosition | Null): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => IContentWidgetPosition | Null): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuppressMouseDown(value: Boolean): Self = StObject.set(x, "suppressMouseDown", value.asInstanceOf[js.Any])
+    inline def setSuppressMouseDown(value: Boolean): Self = StObject.set(x, "suppressMouseDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressMouseDownUndefined: Self = StObject.set(x, "suppressMouseDown", js.undefined)
+    inline def setSuppressMouseDownUndefined: Self = StObject.set(x, "suppressMouseDown", js.undefined)
   }
 }

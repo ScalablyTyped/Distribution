@@ -11,35 +11,29 @@ object markJsStrings {
   sealed trait complementary
     extends StObject
        with MarkAccuracy
-  @scala.inline
-  def complementary: complementary = "complementary".asInstanceOf[complementary]
+  inline def complementary: complementary = "complementary".asInstanceOf[complementary]
   
   @js.native
   sealed trait disabled extends StObject
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
   sealed trait enabled extends StObject
-  @scala.inline
-  def enabled: enabled = "enabled".asInstanceOf[enabled]
+  inline def enabled: enabled = "enabled".asInstanceOf[enabled]
   
   @js.native
   sealed trait exactly
     extends StObject
        with MarkAccuracy
-  @scala.inline
-  def exactly: exactly = "exactly".asInstanceOf[exactly]
+  inline def exactly: exactly = "exactly".asInstanceOf[exactly]
   
   @js.native
   sealed trait partially
     extends StObject
        with MarkAccuracy
-  @scala.inline
-  def partially: partially = "partially".asInstanceOf[partially]
+  inline def partially: partially = "partially".asInstanceOf[partially]
   
   @js.native
   sealed trait withSpaces extends StObject
-  @scala.inline
-  def withSpaces: withSpaces = "withSpaces".asInstanceOf[withSpaces]
+  inline def withSpaces: withSpaces = "withSpaces".asInstanceOf[withSpaces]
 }

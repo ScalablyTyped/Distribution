@@ -11,19 +11,15 @@ trait GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse extends StO
 }
 object GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponseMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1RejoinUserEventsResponse](x: Self) {
     
-    @scala.inline
-    def setRejoinedUserEventsCount(value: String): Self = StObject.set(x, "rejoinedUserEventsCount", value.asInstanceOf[js.Any])
+    inline def setRejoinedUserEventsCount(value: String): Self = StObject.set(x, "rejoinedUserEventsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejoinedUserEventsCountUndefined: Self = StObject.set(x, "rejoinedUserEventsCount", js.undefined)
+    inline def setRejoinedUserEventsCountUndefined: Self = StObject.set(x, "rejoinedUserEventsCount", js.undefined)
   }
 }

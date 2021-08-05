@@ -18,8 +18,7 @@ trait IBackgroundTaskBuilder extends StObject {
 }
 object IBackgroundTaskBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCondition: IBackgroundCondition => Unit,
     name: String,
     register: () => BackgroundTaskRegistration,
@@ -30,22 +29,16 @@ object IBackgroundTaskBuilder {
     __obj.asInstanceOf[IBackgroundTaskBuilder]
   }
   
-  @scala.inline
-  implicit class IBackgroundTaskBuilderMutableBuilder[Self <: IBackgroundTaskBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: IBackgroundTaskBuilder](x: Self) {
     
-    @scala.inline
-    def setAddCondition(value: IBackgroundCondition => Unit): Self = StObject.set(x, "addCondition", js.Any.fromFunction1(value))
+    inline def setAddCondition(value: IBackgroundCondition => Unit): Self = StObject.set(x, "addCondition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegister(value: () => BackgroundTaskRegistration): Self = StObject.set(x, "register", js.Any.fromFunction0(value))
+    inline def setRegister(value: () => BackgroundTaskRegistration): Self = StObject.set(x, "register", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetTrigger(value: IBackgroundTrigger => Unit): Self = StObject.set(x, "setTrigger", js.Any.fromFunction1(value))
+    inline def setSetTrigger(value: IBackgroundTrigger => Unit): Self = StObject.set(x, "setTrigger", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTaskEntryPoint(value: String): Self = StObject.set(x, "taskEntryPoint", value.asInstanceOf[js.Any])
+    inline def setTaskEntryPoint(value: String): Self = StObject.set(x, "taskEntryPoint", value.asInstanceOf[js.Any])
   }
 }

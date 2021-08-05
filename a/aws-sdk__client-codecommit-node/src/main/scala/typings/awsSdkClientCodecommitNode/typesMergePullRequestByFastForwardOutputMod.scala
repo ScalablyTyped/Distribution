@@ -26,23 +26,18 @@ object typesMergePullRequestByFastForwardOutputMod {
   }
   object MergePullRequestByFastForwardOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): MergePullRequestByFastForwardOutput = {
+    inline def apply($metadata: ResponseMetadata): MergePullRequestByFastForwardOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[MergePullRequestByFastForwardOutput]
     }
     
-    @scala.inline
-    implicit class MergePullRequestByFastForwardOutputMutableBuilder[Self <: MergePullRequestByFastForwardOutput] (val x: Self) extends AnyVal {
+    extension [Self <: MergePullRequestByFastForwardOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequest(value: UnmarshalledPullRequest): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
+      inline def setPullRequest(value: UnmarshalledPullRequest): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestUndefined: Self = StObject.set(x, "pullRequest", js.undefined)
+      inline def setPullRequestUndefined: Self = StObject.set(x, "pullRequest", js.undefined)
     }
   }
 }

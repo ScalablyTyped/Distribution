@@ -18,19 +18,15 @@ trait CreateBackupInput extends StObject {
 }
 object CreateBackupInput {
   
-  @scala.inline
-  def apply(BackupName: BackupName, TableName: TableName): CreateBackupInput = {
+  inline def apply(BackupName: BackupName, TableName: TableName): CreateBackupInput = {
     val __obj = js.Dynamic.literal(BackupName = BackupName.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBackupInput]
   }
   
-  @scala.inline
-  implicit class CreateBackupInputMutableBuilder[Self <: CreateBackupInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBackupInput](x: Self) {
     
-    @scala.inline
-    def setBackupName(value: BackupName): Self = StObject.set(x, "BackupName", value.asInstanceOf[js.Any])
+    inline def setBackupName(value: BackupName): Self = StObject.set(x, "BackupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait PrintTaskRequestedEventArgs extends StObject {
 }
 object PrintTaskRequestedEventArgs {
   
-  @scala.inline
-  def apply(request: PrintTaskRequest): PrintTaskRequestedEventArgs = {
+  inline def apply(request: PrintTaskRequest): PrintTaskRequestedEventArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintTaskRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class PrintTaskRequestedEventArgsMutableBuilder[Self <: PrintTaskRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PrintTaskRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequest(value: PrintTaskRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: PrintTaskRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ trait InsightsServiceAccountResponseUser extends StObject {
 }
 object InsightsServiceAccountResponseUser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     business_manager: InsightsServiceAccountResponseBusinessManager,
     business_profile: InsightsServiceAccountResponseBusinessProfile,
     followers_count: Double,
@@ -36,28 +35,20 @@ object InsightsServiceAccountResponseUser {
     __obj.asInstanceOf[InsightsServiceAccountResponseUser]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponseUserMutableBuilder[Self <: InsightsServiceAccountResponseUser] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponseUser](x: Self) {
     
-    @scala.inline
-    def setBusiness_manager(value: InsightsServiceAccountResponseBusinessManager): Self = StObject.set(x, "business_manager", value.asInstanceOf[js.Any])
+    inline def setBusiness_manager(value: InsightsServiceAccountResponseBusinessManager): Self = StObject.set(x, "business_manager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusiness_profile(value: InsightsServiceAccountResponseBusinessProfile): Self = StObject.set(x, "business_profile", value.asInstanceOf[js.Any])
+    inline def setBusiness_profile(value: InsightsServiceAccountResponseBusinessProfile): Self = StObject.set(x, "business_profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowers_count(value: Double): Self = StObject.set(x, "followers_count", value.asInstanceOf[js.Any])
+    inline def setFollowers_count(value: Double): Self = StObject.set(x, "followers_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstagram_user_id(value: String): Self = StObject.set(x, "instagram_user_id", value.asInstanceOf[js.Any])
+    inline def setInstagram_user_id(value: String): Self = StObject.set(x, "instagram_user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_picture(value: InsightsServiceAccountResponseProfilePicture): Self = StObject.set(x, "profile_picture", value.asInstanceOf[js.Any])
+    inline def setProfile_picture(value: InsightsServiceAccountResponseProfilePicture): Self = StObject.set(x, "profile_picture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

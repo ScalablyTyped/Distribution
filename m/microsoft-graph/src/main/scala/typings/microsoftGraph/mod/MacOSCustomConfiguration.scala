@@ -19,34 +19,25 @@ trait MacOSCustomConfiguration
 }
 object MacOSCustomConfiguration {
   
-  @scala.inline
-  def apply(): MacOSCustomConfiguration = {
+  inline def apply(): MacOSCustomConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MacOSCustomConfiguration]
   }
   
-  @scala.inline
-  implicit class MacOSCustomConfigurationMutableBuilder[Self <: MacOSCustomConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: MacOSCustomConfiguration](x: Self) {
     
-    @scala.inline
-    def setPayload(value: Double): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Double): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadFileName(value: NullableOption[String]): Self = StObject.set(x, "payloadFileName", value.asInstanceOf[js.Any])
+    inline def setPayloadFileName(value: NullableOption[String]): Self = StObject.set(x, "payloadFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadFileNameNull: Self = StObject.set(x, "payloadFileName", null)
+    inline def setPayloadFileNameNull: Self = StObject.set(x, "payloadFileName", null)
     
-    @scala.inline
-    def setPayloadFileNameUndefined: Self = StObject.set(x, "payloadFileName", js.undefined)
+    inline def setPayloadFileNameUndefined: Self = StObject.set(x, "payloadFileName", js.undefined)
     
-    @scala.inline
-    def setPayloadName(value: String): Self = StObject.set(x, "payloadName", value.asInstanceOf[js.Any])
+    inline def setPayloadName(value: String): Self = StObject.set(x, "payloadName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadNameUndefined: Self = StObject.set(x, "payloadName", js.undefined)
+    inline def setPayloadNameUndefined: Self = StObject.set(x, "payloadName", js.undefined)
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

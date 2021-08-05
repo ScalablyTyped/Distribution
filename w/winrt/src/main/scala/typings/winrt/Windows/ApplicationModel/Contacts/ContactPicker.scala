@@ -12,8 +12,7 @@ trait ContactPicker
      with IContactPicker
 object ContactPicker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commitButtonText: String,
     desiredFields: IVector[String],
     pickMultipleContactsAsync: () => IAsyncOperation[IVectorView[ContactInformation]],

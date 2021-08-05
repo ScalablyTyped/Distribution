@@ -12,19 +12,15 @@ trait Mdurl extends StObject {
 }
 object Mdurl {
   
-  @scala.inline
-  def apply(mdurl: Decode, ucmicro: Any): Mdurl = {
+  inline def apply(mdurl: Decode, ucmicro: Any): Mdurl = {
     val __obj = js.Dynamic.literal(mdurl = mdurl.asInstanceOf[js.Any], ucmicro = ucmicro.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mdurl]
   }
   
-  @scala.inline
-  implicit class MdurlMutableBuilder[Self <: Mdurl] (val x: Self) extends AnyVal {
+  extension [Self <: Mdurl](x: Self) {
     
-    @scala.inline
-    def setMdurl(value: Decode): Self = StObject.set(x, "mdurl", value.asInstanceOf[js.Any])
+    inline def setMdurl(value: Decode): Self = StObject.set(x, "mdurl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUcmicro(value: Any): Self = StObject.set(x, "ucmicro", value.asInstanceOf[js.Any])
+    inline def setUcmicro(value: Any): Self = StObject.set(x, "ucmicro", value.asInstanceOf[js.Any])
   }
 }

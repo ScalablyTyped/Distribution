@@ -11,22 +11,17 @@ trait BuildBazelRemoteExecutionV2BatchReadBlobsResponse extends StObject {
 }
 object BuildBazelRemoteExecutionV2BatchReadBlobsResponse {
   
-  @scala.inline
-  def apply(): BuildBazelRemoteExecutionV2BatchReadBlobsResponse = {
+  inline def apply(): BuildBazelRemoteExecutionV2BatchReadBlobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2BatchReadBlobsResponse]
   }
   
-  @scala.inline
-  implicit class BuildBazelRemoteExecutionV2BatchReadBlobsResponseMutableBuilder[Self <: BuildBazelRemoteExecutionV2BatchReadBlobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBazelRemoteExecutionV2BatchReadBlobsResponse](x: Self) {
     
-    @scala.inline
-    def setResponses(value: js.Array[BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: js.Array[BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
+    inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    @scala.inline
-    def setResponsesVarargs(value: BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
   }
 }

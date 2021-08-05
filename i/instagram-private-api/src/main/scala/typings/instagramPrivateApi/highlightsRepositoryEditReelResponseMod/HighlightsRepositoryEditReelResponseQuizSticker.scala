@@ -28,8 +28,7 @@ trait HighlightsRepositoryEditReelResponseQuizSticker extends StObject {
 }
 object HighlightsRepositoryEditReelResponseQuizSticker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     correct_answer: Double,
     end_background_color: String,
     finished: Boolean,
@@ -45,40 +44,28 @@ object HighlightsRepositoryEditReelResponseQuizSticker {
     __obj.asInstanceOf[HighlightsRepositoryEditReelResponseQuizSticker]
   }
   
-  @scala.inline
-  implicit class HighlightsRepositoryEditReelResponseQuizStickerMutableBuilder[Self <: HighlightsRepositoryEditReelResponseQuizSticker] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightsRepositoryEditReelResponseQuizSticker](x: Self) {
     
-    @scala.inline
-    def setCorrect_answer(value: Double): Self = StObject.set(x, "correct_answer", value.asInstanceOf[js.Any])
+    inline def setCorrect_answer(value: Double): Self = StObject.set(x, "correct_answer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_background_color(value: String): Self = StObject.set(x, "end_background_color", value.asInstanceOf[js.Any])
+    inline def setEnd_background_color(value: String): Self = StObject.set(x, "end_background_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
+    inline def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
+    inline def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuiz_id(value: String): Self = StObject.set(x, "quiz_id", value.asInstanceOf[js.Any])
+    inline def setQuiz_id(value: String): Self = StObject.set(x, "quiz_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_background_color(value: String): Self = StObject.set(x, "start_background_color", value.asInstanceOf[js.Any])
+    inline def setStart_background_color(value: String): Self = StObject.set(x, "start_background_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTallies(value: js.Array[HighlightsRepositoryEditReelResponseTalliesItem]): Self = StObject.set(x, "tallies", value.asInstanceOf[js.Any])
+    inline def setTallies(value: js.Array[HighlightsRepositoryEditReelResponseTalliesItem]): Self = StObject.set(x, "tallies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTalliesVarargs(value: HighlightsRepositoryEditReelResponseTalliesItem*): Self = StObject.set(x, "tallies", js.Array(value :_*))
+    inline def setTalliesVarargs(value: HighlightsRepositoryEditReelResponseTalliesItem*): Self = StObject.set(x, "tallies", js.Array(value :_*))
     
-    @scala.inline
-    def setText_color(value: String): Self = StObject.set(x, "text_color", value.asInstanceOf[js.Any])
+    inline def setText_color(value: String): Self = StObject.set(x, "text_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewer_can_answer(value: Boolean): Self = StObject.set(x, "viewer_can_answer", value.asInstanceOf[js.Any])
+    inline def setViewer_can_answer(value: Boolean): Self = StObject.set(x, "viewer_can_answer", value.asInstanceOf[js.Any])
   }
 }

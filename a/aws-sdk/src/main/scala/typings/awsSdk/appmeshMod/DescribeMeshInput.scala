@@ -18,22 +18,17 @@ trait DescribeMeshInput extends StObject {
 }
 object DescribeMeshInput {
   
-  @scala.inline
-  def apply(meshName: ResourceName): DescribeMeshInput = {
+  inline def apply(meshName: ResourceName): DescribeMeshInput = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeMeshInput]
   }
   
-  @scala.inline
-  implicit class DescribeMeshInputMutableBuilder[Self <: DescribeMeshInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMeshInput](x: Self) {
     
-    @scala.inline
-    def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
+    inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshOwner(value: AccountId): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
+    inline def setMeshOwner(value: AccountId): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshOwnerUndefined: Self = StObject.set(x, "meshOwner", js.undefined)
+    inline def setMeshOwnerUndefined: Self = StObject.set(x, "meshOwner", js.undefined)
   }
 }

@@ -26,16 +26,13 @@ object FocusZone {
   @JSImport("office-ui-fabric-react", "FocusZone._onKeyDownCapture")
   @js.native
   def _onKeyDownCapture: js.Any = js.native
-  @scala.inline
-  def _onKeyDownCapture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_onKeyDownCapture")(x.asInstanceOf[js.Any])
+  inline def _onKeyDownCapture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_onKeyDownCapture")(x.asInstanceOf[js.Any])
   
   @JSImport("office-ui-fabric-react", "FocusZone.defaultProps")
   @js.native
   def defaultProps: IFocusZoneProps = js.native
-  @scala.inline
-  def defaultProps_=(x: IFocusZoneProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: IFocusZoneProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   /** Used for testing purposes only. */
-  @scala.inline
-  def getOuterZones(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getOuterZones")().asInstanceOf[Double]
+  inline def getOuterZones(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getOuterZones")().asInstanceOf[Double]
 }

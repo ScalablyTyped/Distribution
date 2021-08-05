@@ -16,8 +16,7 @@ object anon {
   }
   object Module {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Module: typings.vizJs.Module,
       render: (/* instance */ typings.vizJs.Module, /* src */ String, /* options */ Options) => String
     ): typings.vizJs.anon.Module = {
@@ -25,14 +24,11 @@ object anon {
       __obj.asInstanceOf[typings.vizJs.anon.Module]
     }
     
-    @scala.inline
-    implicit class ModuleMutableBuilder[Self <: typings.vizJs.anon.Module] (val x: Self) extends AnyVal {
+    extension [Self <: typings.vizJs.anon.Module](x: Self) {
       
-      @scala.inline
-      def setModule(value: typings.vizJs.Module): Self = StObject.set(x, "Module", value.asInstanceOf[js.Any])
+      inline def setModule(value: typings.vizJs.Module): Self = StObject.set(x, "Module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRender(value: (/* instance */ typings.vizJs.Module, /* src */ String, /* options */ Options) => String): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+      inline def setRender(value: (/* instance */ typings.vizJs.Module, /* src */ String, /* options */ Options) => String): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     }
   }
 }

@@ -7,15 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  @scala.inline
-  def apply(/**
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(/**
     * text to ellipsize.
     */
   text: String): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(
+  inline def apply(
     /**
     * text to ellipsize.
     */
@@ -25,8 +22,7 @@ object mod {
     */
   maxLength: Double
   ): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(
+  inline def apply(
     /**
     * text to ellipsize.
     */
@@ -40,8 +36,7 @@ object mod {
     */
   options: Chars
   ): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(
+  inline def apply(
     /**
     * text to ellipsize.
     */
@@ -55,8 +50,7 @@ object mod {
     */
   options: Chars
   ): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(
+  inline def apply(
     /**
     * text to ellipsize.
     */
@@ -66,8 +60,7 @@ object mod {
     */
   maxLength: Double
   ): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(
+  inline def apply(
     /**
     * text to ellipsize.
     */
@@ -81,8 +74,7 @@ object mod {
     */
   options: Chars
   ): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(
+  inline def apply(
     /**
     * text to ellipsize.
     */

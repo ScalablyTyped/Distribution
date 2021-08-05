@@ -14,20 +14,16 @@ object compilerWithWatchFileSystemMod {
   }
   object CompilerWithWatchFileSystem {
     
-    @scala.inline
-    def apply[TWatchFileSystem /* <: WatchFileSystem */](): CompilerWithWatchFileSystem[TWatchFileSystem] = {
+    inline def apply[TWatchFileSystem /* <: WatchFileSystem */](): CompilerWithWatchFileSystem[TWatchFileSystem] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CompilerWithWatchFileSystem[TWatchFileSystem]]
     }
     
-    @scala.inline
-    implicit class CompilerWithWatchFileSystemMutableBuilder[Self <: CompilerWithWatchFileSystem[?], TWatchFileSystem /* <: WatchFileSystem */] (val x: Self & CompilerWithWatchFileSystem[TWatchFileSystem]) extends AnyVal {
+    extension [Self <: CompilerWithWatchFileSystem[?], TWatchFileSystem /* <: WatchFileSystem */](x: Self & CompilerWithWatchFileSystem[TWatchFileSystem]) {
       
-      @scala.inline
-      def setWatchFileSystem(value: TWatchFileSystem): Self = StObject.set(x, "watchFileSystem", value.asInstanceOf[js.Any])
+      inline def setWatchFileSystem(value: TWatchFileSystem): Self = StObject.set(x, "watchFileSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchFileSystemUndefined: Self = StObject.set(x, "watchFileSystem", js.undefined)
+      inline def setWatchFileSystemUndefined: Self = StObject.set(x, "watchFileSystem", js.undefined)
     }
   }
 }

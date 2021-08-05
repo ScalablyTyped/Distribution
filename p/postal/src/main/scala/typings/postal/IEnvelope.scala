@@ -17,34 +17,25 @@ trait IEnvelope[T] extends StObject {
 }
 object IEnvelope {
   
-  @scala.inline
-  def apply[T](topic: String): IEnvelope[T] = {
+  inline def apply[T](topic: String): IEnvelope[T] = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEnvelope[T]]
   }
   
-  @scala.inline
-  implicit class IEnvelopeMutableBuilder[Self <: IEnvelope[?], T] (val x: Self & IEnvelope[T]) extends AnyVal {
+  extension [Self <: IEnvelope[?], T](x: Self & IEnvelope[T]) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
-    @scala.inline
-    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setTimeStamp(value: String): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: String): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
+    inline def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

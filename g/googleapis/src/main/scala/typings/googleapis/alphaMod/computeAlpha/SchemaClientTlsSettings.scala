@@ -43,40 +43,29 @@ trait SchemaClientTlsSettings extends StObject {
 }
 object SchemaClientTlsSettings {
   
-  @scala.inline
-  def apply(): SchemaClientTlsSettings = {
+  inline def apply(): SchemaClientTlsSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClientTlsSettings]
   }
   
-  @scala.inline
-  implicit class SchemaClientTlsSettingsMutableBuilder[Self <: SchemaClientTlsSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClientTlsSettings](x: Self) {
     
-    @scala.inline
-    def setClientTlsContext(value: SchemaTlsContext): Self = StObject.set(x, "clientTlsContext", value.asInstanceOf[js.Any])
+    inline def setClientTlsContext(value: SchemaTlsContext): Self = StObject.set(x, "clientTlsContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTlsContextUndefined: Self = StObject.set(x, "clientTlsContext", js.undefined)
+    inline def setClientTlsContextUndefined: Self = StObject.set(x, "clientTlsContext", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setSni(value: String): Self = StObject.set(x, "sni", value.asInstanceOf[js.Any])
+    inline def setSni(value: String): Self = StObject.set(x, "sni", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSniUndefined: Self = StObject.set(x, "sni", js.undefined)
+    inline def setSniUndefined: Self = StObject.set(x, "sni", js.undefined)
     
-    @scala.inline
-    def setSubjectAltNames(value: js.Array[String]): Self = StObject.set(x, "subjectAltNames", value.asInstanceOf[js.Any])
+    inline def setSubjectAltNames(value: js.Array[String]): Self = StObject.set(x, "subjectAltNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectAltNamesUndefined: Self = StObject.set(x, "subjectAltNames", js.undefined)
+    inline def setSubjectAltNamesUndefined: Self = StObject.set(x, "subjectAltNames", js.undefined)
     
-    @scala.inline
-    def setSubjectAltNamesVarargs(value: String*): Self = StObject.set(x, "subjectAltNames", js.Array(value :_*))
+    inline def setSubjectAltNamesVarargs(value: String*): Self = StObject.set(x, "subjectAltNames", js.Array(value :_*))
   }
 }

@@ -10,16 +10,13 @@ trait GetOutpostInput extends StObject {
 }
 object GetOutpostInput {
   
-  @scala.inline
-  def apply(OutpostId: OutpostId): GetOutpostInput = {
+  inline def apply(OutpostId: OutpostId): GetOutpostInput = {
     val __obj = js.Dynamic.literal(OutpostId = OutpostId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOutpostInput]
   }
   
-  @scala.inline
-  implicit class GetOutpostInputMutableBuilder[Self <: GetOutpostInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetOutpostInput](x: Self) {
     
-    @scala.inline
-    def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
+    inline def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
   }
 }

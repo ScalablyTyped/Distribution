@@ -23,29 +23,23 @@ trait GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse extends StObj
 }
 object GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse {
   
-  @scala.inline
-  def apply(): GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse = {
+  inline def apply(): GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponseMutableBuilder[Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse](x: Self) {
     
-    @scala.inline
-    def setLocationsPerGameObjectType(
+    inline def setLocationsPerGameObjectType(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.playablelocations.gapi.client.playablelocations.GoogleMapsPlayablelocationsV3SamplePlayableLocationList}
       */ typings.maximMazurokGapiClientPlayablelocations.maximMazurokGapiClientPlayablelocationsStrings.GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "locationsPerGameObjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsPerGameObjectTypeUndefined: Self = StObject.set(x, "locationsPerGameObjectType", js.undefined)
+    inline def setLocationsPerGameObjectTypeUndefined: Self = StObject.set(x, "locationsPerGameObjectType", js.undefined)
     
-    @scala.inline
-    def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

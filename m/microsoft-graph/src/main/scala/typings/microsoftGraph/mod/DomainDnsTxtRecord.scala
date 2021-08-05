@@ -13,19 +13,15 @@ trait DomainDnsTxtRecord
 }
 object DomainDnsTxtRecord {
   
-  @scala.inline
-  def apply(): DomainDnsTxtRecord = {
+  inline def apply(): DomainDnsTxtRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainDnsTxtRecord]
   }
   
-  @scala.inline
-  implicit class DomainDnsTxtRecordMutableBuilder[Self <: DomainDnsTxtRecord] (val x: Self) extends AnyVal {
+  extension [Self <: DomainDnsTxtRecord](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

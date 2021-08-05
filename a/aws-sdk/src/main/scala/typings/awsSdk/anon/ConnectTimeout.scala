@@ -18,25 +18,19 @@ trait ConnectTimeout extends StObject {
 }
 object ConnectTimeout {
   
-  @scala.inline
-  def apply(): ConnectTimeout = {
+  inline def apply(): ConnectTimeout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectTimeout]
   }
   
-  @scala.inline
-  implicit class ConnectTimeoutMutableBuilder[Self <: ConnectTimeout] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectTimeout](x: Self) {
     
-    @scala.inline
-    def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
+    inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
+    inline def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

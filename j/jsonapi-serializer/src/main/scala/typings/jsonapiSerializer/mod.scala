@@ -42,8 +42,7 @@ object mod {
     def this(opts: DeserializerOptions) = this()
   }
   
-  @scala.inline
-  def Deserializer_=(x: DeserializerConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Deserializer")(x.asInstanceOf[js.Any])
+  inline def Deserializer_=(x: DeserializerConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Deserializer")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("jsonapi-serializer", "Error")
@@ -60,8 +59,7 @@ object mod {
   @JSImport("jsonapi-serializer", "Error")
   @js.native
   def Error: ErrorConstructor = js.native
-  @scala.inline
-  def Error_=(x: ErrorConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Error")(x.asInstanceOf[js.Any])
+  inline def Error_=(x: ErrorConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Error")(x.asInstanceOf[js.Any])
   
   trait Serializer extends StObject {
     
@@ -73,11 +71,9 @@ object mod {
     @js.native
     val ^ : SerializerConstructor = js.native
     
-    @scala.inline
-    implicit class SerializerMutableBuilder[Self <: Serializer] (val x: Self) extends AnyVal {
+    extension [Self <: Serializer](x: Self) {
       
-      @scala.inline
-      def setSerialize(value: js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+      inline def setSerialize(value: js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
     }
   }
   
@@ -116,49 +112,36 @@ object mod {
   }
   object DeserializerOptions {
     
-    @scala.inline
-    def apply(): DeserializerOptions = {
+    inline def apply(): DeserializerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeserializerOptions]
     }
     
-    @scala.inline
-    implicit class DeserializerOptionsMutableBuilder[Self <: DeserializerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DeserializerOptions](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setKeyForAttribute(
+      inline def setKeyForAttribute(
         value: `dash-case` | `lisp-case` | `spinal-case` | `kebab-case` | underscore_case | snake_case | camelCase_ | CamelCase | KeyForAttribute
       ): Self = StObject.set(x, "keyForAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyForAttributeFunction1(value: /* attribute */ String => String): Self = StObject.set(x, "keyForAttribute", js.Any.fromFunction1(value))
+      inline def setKeyForAttributeFunction1(value: /* attribute */ String => String): Self = StObject.set(x, "keyForAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeyForAttributeUndefined: Self = StObject.set(x, "keyForAttribute", js.undefined)
+      inline def setKeyForAttributeUndefined: Self = StObject.set(x, "keyForAttribute", js.undefined)
       
-      @scala.inline
-      def setPluralizeType(value: Boolean): Self = StObject.set(x, "pluralizeType", value.asInstanceOf[js.Any])
+      inline def setPluralizeType(value: Boolean): Self = StObject.set(x, "pluralizeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluralizeTypeUndefined: Self = StObject.set(x, "pluralizeType", js.undefined)
+      inline def setPluralizeTypeUndefined: Self = StObject.set(x, "pluralizeType", js.undefined)
       
-      @scala.inline
-      def setTransform(value: /* record */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* record */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setTypeAsAttribute(value: Boolean): Self = StObject.set(x, "typeAsAttribute", value.asInstanceOf[js.Any])
+      inline def setTypeAsAttribute(value: Boolean): Self = StObject.set(x, "typeAsAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeAsAttributeUndefined: Self = StObject.set(x, "typeAsAttribute", js.undefined)
+      inline def setTypeAsAttributeUndefined: Self = StObject.set(x, "typeAsAttribute", js.undefined)
     }
   }
   
@@ -176,20 +159,16 @@ object mod {
   }
   object JSONAPIError {
     
-    @scala.inline
-    def apply(errors: js.Array[js.Any]): JSONAPIError = {
+    inline def apply(errors: js.Array[js.Any]): JSONAPIError = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSONAPIError]
     }
     
-    @scala.inline
-    implicit class JSONAPIErrorMutableBuilder[Self <: JSONAPIError] (val x: Self) extends AnyVal {
+    extension [Self <: JSONAPIError](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
     }
   }
   
@@ -213,62 +192,44 @@ object mod {
   }
   object JSONAPIErrorOptions {
     
-    @scala.inline
-    def apply(): JSONAPIErrorOptions = {
+    inline def apply(): JSONAPIErrorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JSONAPIErrorOptions]
     }
     
-    @scala.inline
-    implicit class JSONAPIErrorOptionsMutableBuilder[Self <: JSONAPIErrorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JSONAPIErrorOptions](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+      inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLinks(value: About): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: About): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+      inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      @scala.inline
-      def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setSource(value: Parameter): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Parameter): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -292,35 +253,26 @@ object mod {
   }
   object Relation {
     
-    @scala.inline
-    def apply(ref: String | RefFunction): Relation = {
+    inline def apply(ref: String | RefFunction): Relation = {
       val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
       __obj.asInstanceOf[Relation]
     }
     
-    @scala.inline
-    implicit class RelationMutableBuilder[Self <: Relation] (val x: Self) extends AnyVal {
+    extension [Self <: Relation](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setIncluded(value: Boolean): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
+      inline def setIncluded(value: Boolean): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
+      inline def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
       
-      @scala.inline
-      def setRef(value: String | RefFunction): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: String | RefFunction): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefFunction2(value: (/* current */ js.Any, /* item */ js.Any) => String): Self = StObject.set(x, "ref", js.Any.fromFunction2(value))
+      inline def setRefFunction2(value: (/* current */ js.Any, /* item */ js.Any) => String): Self = StObject.set(x, "ref", js.Any.fromFunction2(value))
     }
   }
   
@@ -365,122 +317,84 @@ object mod {
   }
   object SerializerOptions {
     
-    @scala.inline
-    def apply(): SerializerOptions = {
+    inline def apply(): SerializerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SerializerOptions]
     }
     
-    @scala.inline
-    implicit class SerializerOptionsMutableBuilder[Self <: SerializerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SerializerOptions](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setDataLinks(value: StringDictionary[String | LinkFunction]): Self = StObject.set(x, "dataLinks", value.asInstanceOf[js.Any])
+      inline def setDataLinks(value: StringDictionary[String | LinkFunction]): Self = StObject.set(x, "dataLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataLinksUndefined: Self = StObject.set(x, "dataLinks", js.undefined)
+      inline def setDataLinksUndefined: Self = StObject.set(x, "dataLinks", js.undefined)
       
-      @scala.inline
-      def setDataMeta(value: js.Function0[Unit] | js.Object): Self = StObject.set(x, "dataMeta", value.asInstanceOf[js.Any])
+      inline def setDataMeta(value: js.Function0[Unit] | js.Object): Self = StObject.set(x, "dataMeta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataMetaFunction0(value: () => Unit): Self = StObject.set(x, "dataMeta", js.Any.fromFunction0(value))
+      inline def setDataMetaFunction0(value: () => Unit): Self = StObject.set(x, "dataMeta", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDataMetaUndefined: Self = StObject.set(x, "dataMeta", js.undefined)
+      inline def setDataMetaUndefined: Self = StObject.set(x, "dataMeta", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIgnoreRelationshipData(value: Boolean): Self = StObject.set(x, "ignoreRelationshipData", value.asInstanceOf[js.Any])
+      inline def setIgnoreRelationshipData(value: Boolean): Self = StObject.set(x, "ignoreRelationshipData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreRelationshipDataUndefined: Self = StObject.set(x, "ignoreRelationshipData", js.undefined)
+      inline def setIgnoreRelationshipDataUndefined: Self = StObject.set(x, "ignoreRelationshipData", js.undefined)
       
-      @scala.inline
-      def setIncluded(value: Boolean): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
+      inline def setIncluded(value: Boolean): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
+      inline def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
       
-      @scala.inline
-      def setKeyForAttribute(value: String | KeyForAttribute): Self = StObject.set(x, "keyForAttribute", value.asInstanceOf[js.Any])
+      inline def setKeyForAttribute(value: String | KeyForAttribute): Self = StObject.set(x, "keyForAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyForAttributeFunction1(value: /* attribute */ String => String): Self = StObject.set(x, "keyForAttribute", js.Any.fromFunction1(value))
+      inline def setKeyForAttributeFunction1(value: /* attribute */ String => String): Self = StObject.set(x, "keyForAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeyForAttributeUndefined: Self = StObject.set(x, "keyForAttribute", js.undefined)
+      inline def setKeyForAttributeUndefined: Self = StObject.set(x, "keyForAttribute", js.undefined)
       
-      @scala.inline
-      def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setNullIfMissing(value: Boolean): Self = StObject.set(x, "nullIfMissing", value.asInstanceOf[js.Any])
+      inline def setNullIfMissing(value: Boolean): Self = StObject.set(x, "nullIfMissing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNullIfMissingUndefined: Self = StObject.set(x, "nullIfMissing", js.undefined)
+      inline def setNullIfMissingUndefined: Self = StObject.set(x, "nullIfMissing", js.undefined)
       
-      @scala.inline
-      def setPluralizeType(value: Boolean): Self = StObject.set(x, "pluralizeType", value.asInstanceOf[js.Any])
+      inline def setPluralizeType(value: Boolean): Self = StObject.set(x, "pluralizeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluralizeTypeUndefined: Self = StObject.set(x, "pluralizeType", js.undefined)
+      inline def setPluralizeTypeUndefined: Self = StObject.set(x, "pluralizeType", js.undefined)
       
-      @scala.inline
-      def setRef(value: js.Function0[Unit] | Boolean | String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: js.Function0[Unit] | Boolean | String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefFunction0(value: () => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
+      inline def setRefFunction0(value: () => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setRelationshipLinks(value: StringDictionary[String | LinkFunction]): Self = StObject.set(x, "relationshipLinks", value.asInstanceOf[js.Any])
+      inline def setRelationshipLinks(value: StringDictionary[String | LinkFunction]): Self = StObject.set(x, "relationshipLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelationshipLinksUndefined: Self = StObject.set(x, "relationshipLinks", js.undefined)
+      inline def setRelationshipLinksUndefined: Self = StObject.set(x, "relationshipLinks", js.undefined)
       
-      @scala.inline
-      def setRelationshipMeta(value: js.Object): Self = StObject.set(x, "relationshipMeta", value.asInstanceOf[js.Any])
+      inline def setRelationshipMeta(value: js.Object): Self = StObject.set(x, "relationshipMeta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelationshipMetaUndefined: Self = StObject.set(x, "relationshipMeta", js.undefined)
+      inline def setRelationshipMetaUndefined: Self = StObject.set(x, "relationshipMeta", js.undefined)
       
-      @scala.inline
-      def setTopLevelLinks(value: StringDictionary[String | LinkFunction]): Self = StObject.set(x, "topLevelLinks", value.asInstanceOf[js.Any])
+      inline def setTopLevelLinks(value: StringDictionary[String | LinkFunction]): Self = StObject.set(x, "topLevelLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopLevelLinksUndefined: Self = StObject.set(x, "topLevelLinks", js.undefined)
+      inline def setTopLevelLinksUndefined: Self = StObject.set(x, "topLevelLinks", js.undefined)
       
-      @scala.inline
-      def setTransform(value: /* record */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* record */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setTypeForAttribute(value: (/* attribute */ String, /* object */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "typeForAttribute", js.Any.fromFunction2(value))
+      inline def setTypeForAttribute(value: (/* attribute */ String, /* object */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "typeForAttribute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTypeForAttributeUndefined: Self = StObject.set(x, "typeForAttribute", js.undefined)
+      inline def setTypeForAttributeUndefined: Self = StObject.set(x, "typeForAttribute", js.undefined)
     }
   }
   

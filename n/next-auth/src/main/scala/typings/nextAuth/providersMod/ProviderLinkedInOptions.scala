@@ -14,25 +14,19 @@ trait ProviderLinkedInOptions extends StObject {
 }
 object ProviderLinkedInOptions {
   
-  @scala.inline
-  def apply(clientId: String, clientSecret: String): ProviderLinkedInOptions = {
+  inline def apply(clientId: String, clientSecret: String): ProviderLinkedInOptions = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderLinkedInOptions]
   }
   
-  @scala.inline
-  implicit class ProviderLinkedInOptionsMutableBuilder[Self <: ProviderLinkedInOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderLinkedInOptions](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

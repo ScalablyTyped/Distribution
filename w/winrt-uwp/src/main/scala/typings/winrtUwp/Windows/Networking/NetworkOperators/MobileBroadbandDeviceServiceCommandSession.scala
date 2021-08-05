@@ -30,8 +30,7 @@ trait MobileBroadbandDeviceServiceCommandSession extends StObject {
 }
 object MobileBroadbandDeviceServiceCommandSession {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     closeSession: () => Unit,
     sendQueryCommandAsync: (Double, IBuffer) => IPromiseWithIAsyncOperation[MobileBroadbandDeviceServiceCommandResult],
     sendSetCommandAsync: (Double, IBuffer) => IPromiseWithIAsyncOperation[MobileBroadbandDeviceServiceCommandResult]
@@ -40,16 +39,12 @@ object MobileBroadbandDeviceServiceCommandSession {
     __obj.asInstanceOf[MobileBroadbandDeviceServiceCommandSession]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandDeviceServiceCommandSessionMutableBuilder[Self <: MobileBroadbandDeviceServiceCommandSession] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandDeviceServiceCommandSession](x: Self) {
     
-    @scala.inline
-    def setCloseSession(value: () => Unit): Self = StObject.set(x, "closeSession", js.Any.fromFunction0(value))
+    inline def setCloseSession(value: () => Unit): Self = StObject.set(x, "closeSession", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSendQueryCommandAsync(value: (Double, IBuffer) => IPromiseWithIAsyncOperation[MobileBroadbandDeviceServiceCommandResult]): Self = StObject.set(x, "sendQueryCommandAsync", js.Any.fromFunction2(value))
+    inline def setSendQueryCommandAsync(value: (Double, IBuffer) => IPromiseWithIAsyncOperation[MobileBroadbandDeviceServiceCommandResult]): Self = StObject.set(x, "sendQueryCommandAsync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSendSetCommandAsync(value: (Double, IBuffer) => IPromiseWithIAsyncOperation[MobileBroadbandDeviceServiceCommandResult]): Self = StObject.set(x, "sendSetCommandAsync", js.Any.fromFunction2(value))
+    inline def setSendSetCommandAsync(value: (Double, IBuffer) => IPromiseWithIAsyncOperation[MobileBroadbandDeviceServiceCommandResult]): Self = StObject.set(x, "sendSetCommandAsync", js.Any.fromFunction2(value))
   }
 }

@@ -22,19 +22,15 @@ trait ViewPropsIOS
 }
 object ViewPropsIOS {
   
-  @scala.inline
-  def apply(): ViewPropsIOS = {
+  inline def apply(): ViewPropsIOS = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewPropsIOS]
   }
   
-  @scala.inline
-  implicit class ViewPropsIOSMutableBuilder[Self <: ViewPropsIOS] (val x: Self) extends AnyVal {
+  extension [Self <: ViewPropsIOS](x: Self) {
     
-    @scala.inline
-    def setShouldRasterizeIOS(value: Boolean): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])
+    inline def setShouldRasterizeIOS(value: Boolean): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
+    inline def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
   }
 }

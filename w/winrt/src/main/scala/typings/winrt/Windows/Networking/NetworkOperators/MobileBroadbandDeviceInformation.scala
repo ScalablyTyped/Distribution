@@ -11,8 +11,7 @@ trait MobileBroadbandDeviceInformation
      with IMobileBroadbandDeviceInformation
 object MobileBroadbandDeviceInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cellularClass: CellularClass,
     currentRadioState: MobileBroadbandRadioState,
     customDataClass: String,

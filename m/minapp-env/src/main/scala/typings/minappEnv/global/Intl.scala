@@ -19,31 +19,21 @@ object Intl {
   
   object Collator {
     
-    @scala.inline
-    def apply(): typings.minappEnv.Intl.Collator = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.minappEnv.Intl.Collator]
-    @scala.inline
-    def apply(locales: java.lang.String): typings.minappEnv.Intl.Collator = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Intl.Collator]
-    @scala.inline
-    def apply(locales: java.lang.String, options: CollatorOptions): typings.minappEnv.Intl.Collator = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.Collator]
-    @scala.inline
-    def apply(locales: Unit, options: CollatorOptions): typings.minappEnv.Intl.Collator = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.Collator]
-    @scala.inline
-    def apply(locales: typings.minappEnv.Array[java.lang.String]): typings.minappEnv.Intl.Collator = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Intl.Collator]
-    @scala.inline
-    def apply(locales: typings.minappEnv.Array[java.lang.String], options: CollatorOptions): typings.minappEnv.Intl.Collator = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.Collator]
+    inline def apply(): typings.minappEnv.Intl.Collator = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.minappEnv.Intl.Collator]
+    inline def apply(locales: java.lang.String): typings.minappEnv.Intl.Collator = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Intl.Collator]
+    inline def apply(locales: java.lang.String, options: CollatorOptions): typings.minappEnv.Intl.Collator = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.Collator]
+    inline def apply(locales: Unit, options: CollatorOptions): typings.minappEnv.Intl.Collator = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.Collator]
+    inline def apply(locales: typings.minappEnv.Array[java.lang.String]): typings.minappEnv.Intl.Collator = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Intl.Collator]
+    inline def apply(locales: typings.minappEnv.Array[java.lang.String], options: CollatorOptions): typings.minappEnv.Intl.Collator = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.Collator]
     
     @JSGlobal("Intl.Collator")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def supportedLocalesOf(locales: java.lang.String): typings.minappEnv.Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
-    @scala.inline
-    def supportedLocalesOf(locales: java.lang.String, options: CollatorOptions): typings.minappEnv.Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
-    @scala.inline
-    def supportedLocalesOf(locales: typings.minappEnv.Array[java.lang.String]): typings.minappEnv.Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
-    @scala.inline
-    def supportedLocalesOf(locales: typings.minappEnv.Array[java.lang.String], options: CollatorOptions): typings.minappEnv.Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
+    inline def supportedLocalesOf(locales: java.lang.String): typings.minappEnv.Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
+    inline def supportedLocalesOf(locales: java.lang.String, options: CollatorOptions): typings.minappEnv.Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
+    inline def supportedLocalesOf(locales: typings.minappEnv.Array[java.lang.String]): typings.minappEnv.Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
+    inline def supportedLocalesOf(locales: typings.minappEnv.Array[java.lang.String], options: CollatorOptions): typings.minappEnv.Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -67,31 +57,21 @@ object Intl {
   
   object DateTimeFormat {
     
-    @scala.inline
-    def apply(): typings.minappEnv.Intl.DateTimeFormat = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.minappEnv.Intl.DateTimeFormat]
-    @scala.inline
-    def apply(locales: java.lang.String): typings.minappEnv.Intl.DateTimeFormat = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Intl.DateTimeFormat]
-    @scala.inline
-    def apply(locales: java.lang.String, options: DateTimeFormatOptions): typings.minappEnv.Intl.DateTimeFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.DateTimeFormat]
-    @scala.inline
-    def apply(locales: Unit, options: DateTimeFormatOptions): typings.minappEnv.Intl.DateTimeFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.DateTimeFormat]
-    @scala.inline
-    def apply(locales: typings.minappEnv.Array[java.lang.String]): typings.minappEnv.Intl.DateTimeFormat = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Intl.DateTimeFormat]
-    @scala.inline
-    def apply(locales: typings.minappEnv.Array[java.lang.String], options: DateTimeFormatOptions): typings.minappEnv.Intl.DateTimeFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.DateTimeFormat]
+    inline def apply(): typings.minappEnv.Intl.DateTimeFormat = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.minappEnv.Intl.DateTimeFormat]
+    inline def apply(locales: java.lang.String): typings.minappEnv.Intl.DateTimeFormat = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Intl.DateTimeFormat]
+    inline def apply(locales: java.lang.String, options: DateTimeFormatOptions): typings.minappEnv.Intl.DateTimeFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.DateTimeFormat]
+    inline def apply(locales: Unit, options: DateTimeFormatOptions): typings.minappEnv.Intl.DateTimeFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.DateTimeFormat]
+    inline def apply(locales: typings.minappEnv.Array[java.lang.String]): typings.minappEnv.Intl.DateTimeFormat = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Intl.DateTimeFormat]
+    inline def apply(locales: typings.minappEnv.Array[java.lang.String], options: DateTimeFormatOptions): typings.minappEnv.Intl.DateTimeFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.DateTimeFormat]
     
     @JSGlobal("Intl.DateTimeFormat")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def supportedLocalesOf(locales: java.lang.String): typings.minappEnv.Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
-    @scala.inline
-    def supportedLocalesOf(locales: java.lang.String, options: DateTimeFormatOptions): typings.minappEnv.Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
-    @scala.inline
-    def supportedLocalesOf(locales: typings.minappEnv.Array[java.lang.String]): typings.minappEnv.Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
-    @scala.inline
-    def supportedLocalesOf(locales: typings.minappEnv.Array[java.lang.String], options: DateTimeFormatOptions): typings.minappEnv.Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
+    inline def supportedLocalesOf(locales: java.lang.String): typings.minappEnv.Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
+    inline def supportedLocalesOf(locales: java.lang.String, options: DateTimeFormatOptions): typings.minappEnv.Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
+    inline def supportedLocalesOf(locales: typings.minappEnv.Array[java.lang.String]): typings.minappEnv.Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
+    inline def supportedLocalesOf(locales: typings.minappEnv.Array[java.lang.String], options: DateTimeFormatOptions): typings.minappEnv.Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -109,31 +89,21 @@ object Intl {
   
   object NumberFormat {
     
-    @scala.inline
-    def apply(): typings.minappEnv.Intl.NumberFormat = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.minappEnv.Intl.NumberFormat]
-    @scala.inline
-    def apply(locales: java.lang.String): typings.minappEnv.Intl.NumberFormat = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Intl.NumberFormat]
-    @scala.inline
-    def apply(locales: java.lang.String, options: NumberFormatOptions): typings.minappEnv.Intl.NumberFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.NumberFormat]
-    @scala.inline
-    def apply(locales: Unit, options: NumberFormatOptions): typings.minappEnv.Intl.NumberFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.NumberFormat]
-    @scala.inline
-    def apply(locales: typings.minappEnv.Array[java.lang.String]): typings.minappEnv.Intl.NumberFormat = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Intl.NumberFormat]
-    @scala.inline
-    def apply(locales: typings.minappEnv.Array[java.lang.String], options: NumberFormatOptions): typings.minappEnv.Intl.NumberFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.NumberFormat]
+    inline def apply(): typings.minappEnv.Intl.NumberFormat = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.minappEnv.Intl.NumberFormat]
+    inline def apply(locales: java.lang.String): typings.minappEnv.Intl.NumberFormat = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Intl.NumberFormat]
+    inline def apply(locales: java.lang.String, options: NumberFormatOptions): typings.minappEnv.Intl.NumberFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.NumberFormat]
+    inline def apply(locales: Unit, options: NumberFormatOptions): typings.minappEnv.Intl.NumberFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.NumberFormat]
+    inline def apply(locales: typings.minappEnv.Array[java.lang.String]): typings.minappEnv.Intl.NumberFormat = ^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Intl.NumberFormat]
+    inline def apply(locales: typings.minappEnv.Array[java.lang.String], options: NumberFormatOptions): typings.minappEnv.Intl.NumberFormat = (^.asInstanceOf[js.Dynamic].apply(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Intl.NumberFormat]
     
     @JSGlobal("Intl.NumberFormat")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def supportedLocalesOf(locales: java.lang.String): typings.minappEnv.Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
-    @scala.inline
-    def supportedLocalesOf(locales: java.lang.String, options: NumberFormatOptions): typings.minappEnv.Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
-    @scala.inline
-    def supportedLocalesOf(locales: typings.minappEnv.Array[java.lang.String]): typings.minappEnv.Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
-    @scala.inline
-    def supportedLocalesOf(locales: typings.minappEnv.Array[java.lang.String], options: NumberFormatOptions): typings.minappEnv.Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
+    inline def supportedLocalesOf(locales: java.lang.String): typings.minappEnv.Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
+    inline def supportedLocalesOf(locales: java.lang.String, options: NumberFormatOptions): typings.minappEnv.Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
+    inline def supportedLocalesOf(locales: typings.minappEnv.Array[java.lang.String]): typings.minappEnv.Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
+    inline def supportedLocalesOf(locales: typings.minappEnv.Array[java.lang.String], options: NumberFormatOptions): typings.minappEnv.Array[java.lang.String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.minappEnv.Array[java.lang.String]]
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */

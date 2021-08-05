@@ -14,31 +14,23 @@ trait LangAccessibilityExportingOptions extends StObject {
 }
 object LangAccessibilityExportingOptions {
   
-  @scala.inline
-  def apply(): LangAccessibilityExportingOptions = {
+  inline def apply(): LangAccessibilityExportingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LangAccessibilityExportingOptions]
   }
   
-  @scala.inline
-  implicit class LangAccessibilityExportingOptionsMutableBuilder[Self <: LangAccessibilityExportingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LangAccessibilityExportingOptions](x: Self) {
     
-    @scala.inline
-    def setChartMenuLabel(value: String): Self = StObject.set(x, "chartMenuLabel", value.asInstanceOf[js.Any])
+    inline def setChartMenuLabel(value: String): Self = StObject.set(x, "chartMenuLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartMenuLabelUndefined: Self = StObject.set(x, "chartMenuLabel", js.undefined)
+    inline def setChartMenuLabelUndefined: Self = StObject.set(x, "chartMenuLabel", js.undefined)
     
-    @scala.inline
-    def setExportRegionLabel(value: String): Self = StObject.set(x, "exportRegionLabel", value.asInstanceOf[js.Any])
+    inline def setExportRegionLabel(value: String): Self = StObject.set(x, "exportRegionLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportRegionLabelUndefined: Self = StObject.set(x, "exportRegionLabel", js.undefined)
+    inline def setExportRegionLabelUndefined: Self = StObject.set(x, "exportRegionLabel", js.undefined)
     
-    @scala.inline
-    def setMenuButtonLabel(value: String): Self = StObject.set(x, "menuButtonLabel", value.asInstanceOf[js.Any])
+    inline def setMenuButtonLabel(value: String): Self = StObject.set(x, "menuButtonLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuButtonLabelUndefined: Self = StObject.set(x, "menuButtonLabel", js.undefined)
+    inline def setMenuButtonLabelUndefined: Self = StObject.set(x, "menuButtonLabel", js.undefined)
   }
 }

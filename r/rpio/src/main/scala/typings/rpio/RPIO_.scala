@@ -59,34 +59,26 @@ object RPIO_ {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setGpiomem(value: Boolean): Self = StObject.set(x, "gpiomem", value.asInstanceOf[js.Any])
+      inline def setGpiomem(value: Boolean): Self = StObject.set(x, "gpiomem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGpiomemUndefined: Self = StObject.set(x, "gpiomem", js.undefined)
+      inline def setGpiomemUndefined: Self = StObject.set(x, "gpiomem", js.undefined)
       
-      @scala.inline
-      def setMapping(value: gpio | physical): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+      inline def setMapping(value: gpio | physical): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
+      inline def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
       
-      @scala.inline
-      def setMock(
+      inline def setMock(
         value: `raspi-b-r1` | `raspi-a` | `raspi-b` | `raspi-aPlussign` | `raspi-bPlussign` | `raspi-2` | `raspi-3` | `raspi-zero` | `raspi-zero-w`
       ): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMockUndefined: Self = StObject.set(x, "mock", js.undefined)
+      inline def setMockUndefined: Self = StObject.set(x, "mock", js.undefined)
     }
   }
 }

@@ -15,19 +15,15 @@ trait Printing3DBufferDescription extends StObject {
 }
 object Printing3DBufferDescription {
   
-  @scala.inline
-  def apply(format: Printing3DBufferFormat, stride: Double): Printing3DBufferDescription = {
+  inline def apply(format: Printing3DBufferFormat, stride: Double): Printing3DBufferDescription = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], stride = stride.asInstanceOf[js.Any])
     __obj.asInstanceOf[Printing3DBufferDescription]
   }
   
-  @scala.inline
-  implicit class Printing3DBufferDescriptionMutableBuilder[Self <: Printing3DBufferDescription] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DBufferDescription](x: Self) {
     
-    @scala.inline
-    def setFormat(value: Printing3DBufferFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Printing3DBufferFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStride(value: Double): Self = StObject.set(x, "stride", value.asInstanceOf[js.Any])
+    inline def setStride(value: Double): Self = StObject.set(x, "stride", value.asInstanceOf[js.Any])
   }
 }

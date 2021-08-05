@@ -21,22 +21,17 @@ trait textReviewOptions
 }
 object textReviewOptions {
   
-  @scala.inline
-  def apply(content: String): textReviewOptions = {
+  inline def apply(content: String): textReviewOptions = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[textReviewOptions]
   }
   
-  @scala.inline
-  implicit class textReviewOptionsMutableBuilder[Self <: textReviewOptions] (val x: Self) extends AnyVal {
+  extension [Self <: textReviewOptions](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ textReviewResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ textReviewResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

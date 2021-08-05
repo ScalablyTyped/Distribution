@@ -20,16 +20,14 @@ object useLoadMoreFunctionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getConnectionState(
+  inline def getConnectionState(
     direction: Direction,
     fragmentNode: ReaderFragment,
     fragmentData: js.Any,
     connectionPathInFragmentData: js.Array[String | Double]
   ): Cursor = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionState")(direction.asInstanceOf[js.Any], fragmentNode.asInstanceOf[js.Any], fragmentData.asInstanceOf[js.Any], connectionPathInFragmentData.asInstanceOf[js.Any])).asInstanceOf[Cursor]
   
-  @scala.inline
-  def useLoadMoreFunction[TQuery /* <: OperationType */](args: UseLoadMoreFunctionArgs): js.Tuple3[LoadMoreFn[TQuery], Boolean, DisposeFn] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLoadMoreFunction")(args.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[LoadMoreFn[TQuery], Boolean, DisposeFn]]
+  inline def useLoadMoreFunction[TQuery /* <: OperationType */](args: UseLoadMoreFunctionArgs): js.Tuple3[LoadMoreFn[TQuery], Boolean, DisposeFn] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLoadMoreFunction")(args.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[LoadMoreFn[TQuery], Boolean, DisposeFn]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactRelay.reactRelayStrings.forward
@@ -38,11 +36,9 @@ object useLoadMoreFunctionMod {
   trait Direction extends StObject
   object Direction {
     
-    @scala.inline
-    def backward: typings.reactRelay.reactRelayStrings.backward = "backward".asInstanceOf[typings.reactRelay.reactRelayStrings.backward]
+    inline def backward: typings.reactRelay.reactRelayStrings.backward = "backward".asInstanceOf[typings.reactRelay.reactRelayStrings.backward]
     
-    @scala.inline
-    def forward: typings.reactRelay.reactRelayStrings.forward = "forward".asInstanceOf[typings.reactRelay.reactRelayStrings.forward]
+    inline def forward: typings.reactRelay.reactRelayStrings.forward = "forward".asInstanceOf[typings.reactRelay.reactRelayStrings.forward]
   }
   
   type LoadMoreFn[TQuery /* <: OperationType */] = js.Function2[/* count */ Double, /* options */ js.UndefOr[OnComplete[TQuery]], Disposable]
@@ -75,8 +71,7 @@ object useLoadMoreFunctionMod {
   }
   object UseLoadMoreFunctionArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       componentDisplayName: String,
       connectionPathInFragmentData: js.Array[String | Double],
       direction: Direction,
@@ -93,53 +88,37 @@ object useLoadMoreFunctionMod {
       __obj.asInstanceOf[UseLoadMoreFunctionArgs]
     }
     
-    @scala.inline
-    implicit class UseLoadMoreFunctionArgsMutableBuilder[Self <: UseLoadMoreFunctionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UseLoadMoreFunctionArgs](x: Self) {
       
-      @scala.inline
-      def setComponentDisplayName(value: String): Self = StObject.set(x, "componentDisplayName", value.asInstanceOf[js.Any])
+      inline def setComponentDisplayName(value: String): Self = StObject.set(x, "componentDisplayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionPathInFragmentData(value: js.Array[String | Double]): Self = StObject.set(x, "connectionPathInFragmentData", value.asInstanceOf[js.Any])
+      inline def setConnectionPathInFragmentData(value: js.Array[String | Double]): Self = StObject.set(x, "connectionPathInFragmentData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionPathInFragmentDataVarargs(value: (String | Double)*): Self = StObject.set(x, "connectionPathInFragmentData", js.Array(value :_*))
+      inline def setConnectionPathInFragmentDataVarargs(value: (String | Double)*): Self = StObject.set(x, "connectionPathInFragmentData", js.Array(value :_*))
       
-      @scala.inline
-      def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentData(value: js.Any): Self = StObject.set(x, "fragmentData", value.asInstanceOf[js.Any])
+      inline def setFragmentData(value: js.Any): Self = StObject.set(x, "fragmentData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentIdentifier(value: String): Self = StObject.set(x, "fragmentIdentifier", value.asInstanceOf[js.Any])
+      inline def setFragmentIdentifier(value: String): Self = StObject.set(x, "fragmentIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentNode(value: ReaderFragment): Self = StObject.set(x, "fragmentNode", value.asInstanceOf[js.Any])
+      inline def setFragmentNode(value: ReaderFragment): Self = StObject.set(x, "fragmentNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentRef(value: js.Any): Self = StObject.set(x, "fragmentRef", value.asInstanceOf[js.Any])
+      inline def setFragmentRef(value: js.Any): Self = StObject.set(x, "fragmentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifierField(value: String): Self = StObject.set(x, "identifierField", value.asInstanceOf[js.Any])
+      inline def setIdentifierField(value: String): Self = StObject.set(x, "identifierField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifierFieldNull: Self = StObject.set(x, "identifierField", null)
+      inline def setIdentifierFieldNull: Self = StObject.set(x, "identifierField", null)
       
-      @scala.inline
-      def setIdentifierFieldUndefined: Self = StObject.set(x, "identifierField", js.undefined)
+      inline def setIdentifierFieldUndefined: Self = StObject.set(x, "identifierField", js.undefined)
       
-      @scala.inline
-      def setObserver(value: Observer[GraphQLResponse]): Self = StObject.set(x, "observer", value.asInstanceOf[js.Any])
+      inline def setObserver(value: Observer[GraphQLResponse]): Self = StObject.set(x, "observer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnReset(value: () => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction0(value))
+      inline def setOnReset(value: () => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPaginationMetadata(value: ReaderPaginationMetadata): Self = StObject.set(x, "paginationMetadata", value.asInstanceOf[js.Any])
+      inline def setPaginationMetadata(value: ReaderPaginationMetadata): Self = StObject.set(x, "paginationMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationRequest(value: ConcreteRequest): Self = StObject.set(x, "paginationRequest", value.asInstanceOf[js.Any])
+      inline def setPaginationRequest(value: ConcreteRequest): Self = StObject.set(x, "paginationRequest", value.asInstanceOf[js.Any])
     }
   }
 }

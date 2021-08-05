@@ -28,37 +28,27 @@ trait DeletedObject extends StObject {
 }
 object DeletedObject {
   
-  @scala.inline
-  def apply(): DeletedObject = {
+  inline def apply(): DeletedObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeletedObject]
   }
   
-  @scala.inline
-  implicit class DeletedObjectMutableBuilder[Self <: DeletedObject] (val x: Self) extends AnyVal {
+  extension [Self <: DeletedObject](x: Self) {
     
-    @scala.inline
-    def setDeleteMarker(value: DeleteMarker): Self = StObject.set(x, "DeleteMarker", value.asInstanceOf[js.Any])
+    inline def setDeleteMarker(value: DeleteMarker): Self = StObject.set(x, "DeleteMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteMarkerUndefined: Self = StObject.set(x, "DeleteMarker", js.undefined)
+    inline def setDeleteMarkerUndefined: Self = StObject.set(x, "DeleteMarker", js.undefined)
     
-    @scala.inline
-    def setDeleteMarkerVersionId(value: DeleteMarkerVersionId): Self = StObject.set(x, "DeleteMarkerVersionId", value.asInstanceOf[js.Any])
+    inline def setDeleteMarkerVersionId(value: DeleteMarkerVersionId): Self = StObject.set(x, "DeleteMarkerVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteMarkerVersionIdUndefined: Self = StObject.set(x, "DeleteMarkerVersionId", js.undefined)
+    inline def setDeleteMarkerVersionIdUndefined: Self = StObject.set(x, "DeleteMarkerVersionId", js.undefined)
     
-    @scala.inline
-    def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setVersionId(value: ObjectVersionId): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: ObjectVersionId): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

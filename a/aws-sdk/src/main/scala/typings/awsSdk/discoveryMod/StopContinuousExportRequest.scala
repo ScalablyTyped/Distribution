@@ -13,16 +13,13 @@ trait StopContinuousExportRequest extends StObject {
 }
 object StopContinuousExportRequest {
   
-  @scala.inline
-  def apply(exportId: ConfigurationsExportId): StopContinuousExportRequest = {
+  inline def apply(exportId: ConfigurationsExportId): StopContinuousExportRequest = {
     val __obj = js.Dynamic.literal(exportId = exportId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopContinuousExportRequest]
   }
   
-  @scala.inline
-  implicit class StopContinuousExportRequestMutableBuilder[Self <: StopContinuousExportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopContinuousExportRequest](x: Self) {
     
-    @scala.inline
-    def setExportId(value: ConfigurationsExportId): Self = StObject.set(x, "exportId", value.asInstanceOf[js.Any])
+    inline def setExportId(value: ConfigurationsExportId): Self = StObject.set(x, "exportId", value.asInstanceOf[js.Any])
   }
 }

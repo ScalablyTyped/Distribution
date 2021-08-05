@@ -48,61 +48,43 @@ trait CreateAccountStatus extends StObject {
 }
 object CreateAccountStatus {
   
-  @scala.inline
-  def apply(): CreateAccountStatus = {
+  inline def apply(): CreateAccountStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateAccountStatus]
   }
   
-  @scala.inline
-  implicit class CreateAccountStatusMutableBuilder[Self <: CreateAccountStatus] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAccountStatus](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setAccountName(value: AccountName): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: AccountName): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountNameUndefined: Self = StObject.set(x, "AccountName", js.undefined)
+    inline def setAccountNameUndefined: Self = StObject.set(x, "AccountName", js.undefined)
     
-    @scala.inline
-    def setCompletedTimestamp(value: Timestamp): Self = StObject.set(x, "CompletedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCompletedTimestamp(value: Timestamp): Self = StObject.set(x, "CompletedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedTimestampUndefined: Self = StObject.set(x, "CompletedTimestamp", js.undefined)
+    inline def setCompletedTimestampUndefined: Self = StObject.set(x, "CompletedTimestamp", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: CreateAccountFailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: CreateAccountFailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    @scala.inline
-    def setGovCloudAccountId(value: AccountId): Self = StObject.set(x, "GovCloudAccountId", value.asInstanceOf[js.Any])
+    inline def setGovCloudAccountId(value: AccountId): Self = StObject.set(x, "GovCloudAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGovCloudAccountIdUndefined: Self = StObject.set(x, "GovCloudAccountId", js.undefined)
+    inline def setGovCloudAccountIdUndefined: Self = StObject.set(x, "GovCloudAccountId", js.undefined)
     
-    @scala.inline
-    def setId(value: CreateAccountRequestId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: CreateAccountRequestId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setRequestedTimestamp(value: Timestamp): Self = StObject.set(x, "RequestedTimestamp", value.asInstanceOf[js.Any])
+    inline def setRequestedTimestamp(value: Timestamp): Self = StObject.set(x, "RequestedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedTimestampUndefined: Self = StObject.set(x, "RequestedTimestamp", js.undefined)
+    inline def setRequestedTimestampUndefined: Self = StObject.set(x, "RequestedTimestamp", js.undefined)
     
-    @scala.inline
-    def setState(value: CreateAccountState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: CreateAccountState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

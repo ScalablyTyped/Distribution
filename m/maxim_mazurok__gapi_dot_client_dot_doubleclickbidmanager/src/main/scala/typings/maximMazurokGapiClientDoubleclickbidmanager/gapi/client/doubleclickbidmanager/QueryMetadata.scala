@@ -44,82 +44,57 @@ trait QueryMetadata extends StObject {
 }
 object QueryMetadata {
   
-  @scala.inline
-  def apply(): QueryMetadata = {
+  inline def apply(): QueryMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryMetadata]
   }
   
-  @scala.inline
-  implicit class QueryMetadataMutableBuilder[Self <: QueryMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: QueryMetadata](x: Self) {
     
-    @scala.inline
-    def setDataRange(value: String): Self = StObject.set(x, "dataRange", value.asInstanceOf[js.Any])
+    inline def setDataRange(value: String): Self = StObject.set(x, "dataRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRangeUndefined: Self = StObject.set(x, "dataRange", js.undefined)
+    inline def setDataRangeUndefined: Self = StObject.set(x, "dataRange", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setGoogleCloudStoragePathForLatestReport(value: String): Self = StObject.set(x, "googleCloudStoragePathForLatestReport", value.asInstanceOf[js.Any])
+    inline def setGoogleCloudStoragePathForLatestReport(value: String): Self = StObject.set(x, "googleCloudStoragePathForLatestReport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleCloudStoragePathForLatestReportUndefined: Self = StObject.set(x, "googleCloudStoragePathForLatestReport", js.undefined)
+    inline def setGoogleCloudStoragePathForLatestReportUndefined: Self = StObject.set(x, "googleCloudStoragePathForLatestReport", js.undefined)
     
-    @scala.inline
-    def setGoogleDrivePathForLatestReport(value: String): Self = StObject.set(x, "googleDrivePathForLatestReport", value.asInstanceOf[js.Any])
+    inline def setGoogleDrivePathForLatestReport(value: String): Self = StObject.set(x, "googleDrivePathForLatestReport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleDrivePathForLatestReportUndefined: Self = StObject.set(x, "googleDrivePathForLatestReport", js.undefined)
+    inline def setGoogleDrivePathForLatestReportUndefined: Self = StObject.set(x, "googleDrivePathForLatestReport", js.undefined)
     
-    @scala.inline
-    def setLatestReportRunTimeMs(value: String): Self = StObject.set(x, "latestReportRunTimeMs", value.asInstanceOf[js.Any])
+    inline def setLatestReportRunTimeMs(value: String): Self = StObject.set(x, "latestReportRunTimeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestReportRunTimeMsUndefined: Self = StObject.set(x, "latestReportRunTimeMs", js.undefined)
+    inline def setLatestReportRunTimeMsUndefined: Self = StObject.set(x, "latestReportRunTimeMs", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setReportCount(value: Double): Self = StObject.set(x, "reportCount", value.asInstanceOf[js.Any])
+    inline def setReportCount(value: Double): Self = StObject.set(x, "reportCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportCountUndefined: Self = StObject.set(x, "reportCount", js.undefined)
+    inline def setReportCountUndefined: Self = StObject.set(x, "reportCount", js.undefined)
     
-    @scala.inline
-    def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+    inline def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunningUndefined: Self = StObject.set(x, "running", js.undefined)
+    inline def setRunningUndefined: Self = StObject.set(x, "running", js.undefined)
     
-    @scala.inline
-    def setSendNotification(value: Boolean): Self = StObject.set(x, "sendNotification", value.asInstanceOf[js.Any])
+    inline def setSendNotification(value: Boolean): Self = StObject.set(x, "sendNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendNotificationUndefined: Self = StObject.set(x, "sendNotification", js.undefined)
+    inline def setSendNotificationUndefined: Self = StObject.set(x, "sendNotification", js.undefined)
     
-    @scala.inline
-    def setShareEmailAddress(value: js.Array[String]): Self = StObject.set(x, "shareEmailAddress", value.asInstanceOf[js.Any])
+    inline def setShareEmailAddress(value: js.Array[String]): Self = StObject.set(x, "shareEmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareEmailAddressUndefined: Self = StObject.set(x, "shareEmailAddress", js.undefined)
+    inline def setShareEmailAddressUndefined: Self = StObject.set(x, "shareEmailAddress", js.undefined)
     
-    @scala.inline
-    def setShareEmailAddressVarargs(value: String*): Self = StObject.set(x, "shareEmailAddress", js.Array(value :_*))
+    inline def setShareEmailAddressVarargs(value: String*): Self = StObject.set(x, "shareEmailAddress", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

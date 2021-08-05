@@ -16,20 +16,16 @@ object textPuppeteerDriverMod {
   }
   object TextPuppeteerDriver {
     
-    @scala.inline
-    def apply(element: () => ElementHandle[Element], getValue: () => js.Promise[String]): TextPuppeteerDriver = {
+    inline def apply(element: () => ElementHandle[Element], getValue: () => js.Promise[String]): TextPuppeteerDriver = {
       val __obj = js.Dynamic.literal(element = js.Any.fromFunction0(element), getValue = js.Any.fromFunction0(getValue))
       __obj.asInstanceOf[TextPuppeteerDriver]
     }
     
-    @scala.inline
-    implicit class TextPuppeteerDriverMutableBuilder[Self <: TextPuppeteerDriver] (val x: Self) extends AnyVal {
+    extension [Self <: TextPuppeteerDriver](x: Self) {
       
-      @scala.inline
-      def setElement(value: () => ElementHandle[Element]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+      inline def setElement(value: () => ElementHandle[Element]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     }
   }
 }

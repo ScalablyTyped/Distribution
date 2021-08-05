@@ -15,8 +15,7 @@ object shortcutsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def controlOrMetaKey(): meta | control = ^.asInstanceOf[js.Dynamic].applyDynamic("controlOrMetaKey")().asInstanceOf[meta | control]
+  inline def controlOrMetaKey(): meta | control = ^.asInstanceOf[js.Dynamic].applyDynamic("controlOrMetaKey")().asInstanceOf[meta | control]
   
   @JSImport("@storybook/api/dist/modules/shortcuts", "defaultShortcuts")
   @js.native
@@ -26,11 +25,9 @@ object shortcutsMod {
   @js.native
   val init: ModuleFn = js.native
   
-  @scala.inline
-  def isMacLike(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMacLike")().asInstanceOf[Boolean]
+  inline def isMacLike(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMacLike")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def keys[O](o: O): js.Array[/* keyof O */ String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(o.asInstanceOf[js.Any]).asInstanceOf[js.Array[/* keyof O */ String]]
+  inline def keys[O](o: O): js.Array[/* keyof O */ String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(o.asInstanceOf[js.Any]).asInstanceOf[js.Array[/* keyof O */ String]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.storybookApi.storybookApiStrings.fullScreen
@@ -105,8 +102,7 @@ object shortcutsMod {
   }
   object Shortcuts {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aboutPage: KeyCollection,
       collapseAll: KeyCollection,
       escape: KeyCollection,
@@ -130,116 +126,79 @@ object shortcutsMod {
       __obj.asInstanceOf[Shortcuts]
     }
     
-    @scala.inline
-    implicit class ShortcutsMutableBuilder[Self <: Shortcuts] (val x: Self) extends AnyVal {
+    extension [Self <: Shortcuts](x: Self) {
       
-      @scala.inline
-      def setAboutPage(value: KeyCollection): Self = StObject.set(x, "aboutPage", value.asInstanceOf[js.Any])
+      inline def setAboutPage(value: KeyCollection): Self = StObject.set(x, "aboutPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAboutPageVarargs(value: String*): Self = StObject.set(x, "aboutPage", js.Array(value :_*))
+      inline def setAboutPageVarargs(value: String*): Self = StObject.set(x, "aboutPage", js.Array(value :_*))
       
-      @scala.inline
-      def setCollapseAll(value: KeyCollection): Self = StObject.set(x, "collapseAll", value.asInstanceOf[js.Any])
+      inline def setCollapseAll(value: KeyCollection): Self = StObject.set(x, "collapseAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseAllVarargs(value: String*): Self = StObject.set(x, "collapseAll", js.Array(value :_*))
+      inline def setCollapseAllVarargs(value: String*): Self = StObject.set(x, "collapseAll", js.Array(value :_*))
       
-      @scala.inline
-      def setEscape(value: KeyCollection): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      inline def setEscape(value: KeyCollection): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeVarargs(value: String*): Self = StObject.set(x, "escape", js.Array(value :_*))
+      inline def setEscapeVarargs(value: String*): Self = StObject.set(x, "escape", js.Array(value :_*))
       
-      @scala.inline
-      def setExpandAll(value: KeyCollection): Self = StObject.set(x, "expandAll", value.asInstanceOf[js.Any])
+      inline def setExpandAll(value: KeyCollection): Self = StObject.set(x, "expandAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandAllVarargs(value: String*): Self = StObject.set(x, "expandAll", js.Array(value :_*))
+      inline def setExpandAllVarargs(value: String*): Self = StObject.set(x, "expandAll", js.Array(value :_*))
       
-      @scala.inline
-      def setFocusIframe(value: KeyCollection): Self = StObject.set(x, "focusIframe", value.asInstanceOf[js.Any])
+      inline def setFocusIframe(value: KeyCollection): Self = StObject.set(x, "focusIframe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusIframeVarargs(value: String*): Self = StObject.set(x, "focusIframe", js.Array(value :_*))
+      inline def setFocusIframeVarargs(value: String*): Self = StObject.set(x, "focusIframe", js.Array(value :_*))
       
-      @scala.inline
-      def setFocusNav(value: KeyCollection): Self = StObject.set(x, "focusNav", value.asInstanceOf[js.Any])
+      inline def setFocusNav(value: KeyCollection): Self = StObject.set(x, "focusNav", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusNavVarargs(value: String*): Self = StObject.set(x, "focusNav", js.Array(value :_*))
+      inline def setFocusNavVarargs(value: String*): Self = StObject.set(x, "focusNav", js.Array(value :_*))
       
-      @scala.inline
-      def setFocusPanel(value: KeyCollection): Self = StObject.set(x, "focusPanel", value.asInstanceOf[js.Any])
+      inline def setFocusPanel(value: KeyCollection): Self = StObject.set(x, "focusPanel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusPanelVarargs(value: String*): Self = StObject.set(x, "focusPanel", js.Array(value :_*))
+      inline def setFocusPanelVarargs(value: String*): Self = StObject.set(x, "focusPanel", js.Array(value :_*))
       
-      @scala.inline
-      def setFullScreen(value: KeyCollection): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+      inline def setFullScreen(value: KeyCollection): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullScreenVarargs(value: String*): Self = StObject.set(x, "fullScreen", js.Array(value :_*))
+      inline def setFullScreenVarargs(value: String*): Self = StObject.set(x, "fullScreen", js.Array(value :_*))
       
-      @scala.inline
-      def setNextComponent(value: KeyCollection): Self = StObject.set(x, "nextComponent", value.asInstanceOf[js.Any])
+      inline def setNextComponent(value: KeyCollection): Self = StObject.set(x, "nextComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextComponentVarargs(value: String*): Self = StObject.set(x, "nextComponent", js.Array(value :_*))
+      inline def setNextComponentVarargs(value: String*): Self = StObject.set(x, "nextComponent", js.Array(value :_*))
       
-      @scala.inline
-      def setNextStory(value: KeyCollection): Self = StObject.set(x, "nextStory", value.asInstanceOf[js.Any])
+      inline def setNextStory(value: KeyCollection): Self = StObject.set(x, "nextStory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextStoryVarargs(value: String*): Self = StObject.set(x, "nextStory", js.Array(value :_*))
+      inline def setNextStoryVarargs(value: String*): Self = StObject.set(x, "nextStory", js.Array(value :_*))
       
-      @scala.inline
-      def setPanelPosition(value: KeyCollection): Self = StObject.set(x, "panelPosition", value.asInstanceOf[js.Any])
+      inline def setPanelPosition(value: KeyCollection): Self = StObject.set(x, "panelPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelPositionVarargs(value: String*): Self = StObject.set(x, "panelPosition", js.Array(value :_*))
+      inline def setPanelPositionVarargs(value: String*): Self = StObject.set(x, "panelPosition", js.Array(value :_*))
       
-      @scala.inline
-      def setPrevComponent(value: KeyCollection): Self = StObject.set(x, "prevComponent", value.asInstanceOf[js.Any])
+      inline def setPrevComponent(value: KeyCollection): Self = StObject.set(x, "prevComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevComponentVarargs(value: String*): Self = StObject.set(x, "prevComponent", js.Array(value :_*))
+      inline def setPrevComponentVarargs(value: String*): Self = StObject.set(x, "prevComponent", js.Array(value :_*))
       
-      @scala.inline
-      def setPrevStory(value: KeyCollection): Self = StObject.set(x, "prevStory", value.asInstanceOf[js.Any])
+      inline def setPrevStory(value: KeyCollection): Self = StObject.set(x, "prevStory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevStoryVarargs(value: String*): Self = StObject.set(x, "prevStory", js.Array(value :_*))
+      inline def setPrevStoryVarargs(value: String*): Self = StObject.set(x, "prevStory", js.Array(value :_*))
       
-      @scala.inline
-      def setSearch(value: KeyCollection): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: KeyCollection): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchVarargs(value: String*): Self = StObject.set(x, "search", js.Array(value :_*))
+      inline def setSearchVarargs(value: String*): Self = StObject.set(x, "search", js.Array(value :_*))
       
-      @scala.inline
-      def setShortcutsPage(value: KeyCollection): Self = StObject.set(x, "shortcutsPage", value.asInstanceOf[js.Any])
+      inline def setShortcutsPage(value: KeyCollection): Self = StObject.set(x, "shortcutsPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortcutsPageVarargs(value: String*): Self = StObject.set(x, "shortcutsPage", js.Array(value :_*))
+      inline def setShortcutsPageVarargs(value: String*): Self = StObject.set(x, "shortcutsPage", js.Array(value :_*))
       
-      @scala.inline
-      def setToggleNav(value: KeyCollection): Self = StObject.set(x, "toggleNav", value.asInstanceOf[js.Any])
+      inline def setToggleNav(value: KeyCollection): Self = StObject.set(x, "toggleNav", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleNavVarargs(value: String*): Self = StObject.set(x, "toggleNav", js.Array(value :_*))
+      inline def setToggleNavVarargs(value: String*): Self = StObject.set(x, "toggleNav", js.Array(value :_*))
       
-      @scala.inline
-      def setTogglePanel(value: KeyCollection): Self = StObject.set(x, "togglePanel", value.asInstanceOf[js.Any])
+      inline def setTogglePanel(value: KeyCollection): Self = StObject.set(x, "togglePanel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTogglePanelVarargs(value: String*): Self = StObject.set(x, "togglePanel", js.Array(value :_*))
+      inline def setTogglePanelVarargs(value: String*): Self = StObject.set(x, "togglePanel", js.Array(value :_*))
       
-      @scala.inline
-      def setToolbar(value: KeyCollection): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+      inline def setToolbar(value: KeyCollection): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToolbarVarargs(value: String*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
+      inline def setToolbarVarargs(value: String*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
     }
   }
   
@@ -261,8 +220,7 @@ object shortcutsMod {
   }
   object SubAPI {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getShortcutKeys: () => Shortcuts,
       handleKeydownEvent: Event => Unit,
       handleShortcutFeature: Action => Unit,
@@ -275,29 +233,21 @@ object shortcutsMod {
       __obj.asInstanceOf[SubAPI]
     }
     
-    @scala.inline
-    implicit class SubAPIMutableBuilder[Self <: SubAPI] (val x: Self) extends AnyVal {
+    extension [Self <: SubAPI](x: Self) {
       
-      @scala.inline
-      def setGetShortcutKeys(value: () => Shortcuts): Self = StObject.set(x, "getShortcutKeys", js.Any.fromFunction0(value))
+      inline def setGetShortcutKeys(value: () => Shortcuts): Self = StObject.set(x, "getShortcutKeys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHandleKeydownEvent(value: Event => Unit): Self = StObject.set(x, "handleKeydownEvent", js.Any.fromFunction1(value))
+      inline def setHandleKeydownEvent(value: Event => Unit): Self = StObject.set(x, "handleKeydownEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleShortcutFeature(value: Action => Unit): Self = StObject.set(x, "handleShortcutFeature", js.Any.fromFunction1(value))
+      inline def setHandleShortcutFeature(value: Action => Unit): Self = StObject.set(x, "handleShortcutFeature", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRestoreAllDefaultShortcuts(value: () => js.Promise[Shortcuts]): Self = StObject.set(x, "restoreAllDefaultShortcuts", js.Any.fromFunction0(value))
+      inline def setRestoreAllDefaultShortcuts(value: () => js.Promise[Shortcuts]): Self = StObject.set(x, "restoreAllDefaultShortcuts", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRestoreDefaultShortcut(value: Action => js.Promise[KeyCollection]): Self = StObject.set(x, "restoreDefaultShortcut", js.Any.fromFunction1(value))
+      inline def setRestoreDefaultShortcut(value: Action => js.Promise[KeyCollection]): Self = StObject.set(x, "restoreDefaultShortcut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetShortcut(value: (Action, KeyCollection) => js.Promise[KeyCollection]): Self = StObject.set(x, "setShortcut", js.Any.fromFunction2(value))
+      inline def setSetShortcut(value: (Action, KeyCollection) => js.Promise[KeyCollection]): Self = StObject.set(x, "setShortcut", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetShortcuts(value: Shortcuts => js.Promise[Shortcuts]): Self = StObject.set(x, "setShortcuts", js.Any.fromFunction1(value))
+      inline def setSetShortcuts(value: Shortcuts => js.Promise[Shortcuts]): Self = StObject.set(x, "setShortcuts", js.Any.fromFunction1(value))
     }
   }
   
@@ -307,17 +257,14 @@ object shortcutsMod {
   }
   object SubState {
     
-    @scala.inline
-    def apply(shortcuts: Shortcuts): SubState = {
+    inline def apply(shortcuts: Shortcuts): SubState = {
       val __obj = js.Dynamic.literal(shortcuts = shortcuts.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubState]
     }
     
-    @scala.inline
-    implicit class SubStateMutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
+    extension [Self <: SubState](x: Self) {
       
-      @scala.inline
-      def setShortcuts(value: Shortcuts): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
+      inline def setShortcuts(value: Shortcuts): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
     }
   }
 }

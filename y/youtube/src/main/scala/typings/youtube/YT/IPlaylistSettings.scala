@@ -25,28 +25,21 @@ trait IPlaylistSettings
 }
 object IPlaylistSettings {
   
-  @scala.inline
-  def apply(list: String): IPlaylistSettings = {
+  inline def apply(list: String): IPlaylistSettings = {
     val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPlaylistSettings]
   }
   
-  @scala.inline
-  implicit class IPlaylistSettingsMutableBuilder[Self <: IPlaylistSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IPlaylistSettings](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListType(value: ListType): Self = StObject.set(x, "listType", value.asInstanceOf[js.Any])
+    inline def setListType(value: ListType): Self = StObject.set(x, "listType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListTypeUndefined: Self = StObject.set(x, "listType", js.undefined)
+    inline def setListTypeUndefined: Self = StObject.set(x, "listType", js.undefined)
   }
 }

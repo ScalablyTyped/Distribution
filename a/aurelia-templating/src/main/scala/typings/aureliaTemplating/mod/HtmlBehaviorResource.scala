@@ -139,8 +139,6 @@ object HtmlBehaviorResource {
     * @param name The name of the potential resource.
     * @param existing An already existing resource that may need a convention name applied.
     */
-  @scala.inline
-  def convention(name: String): HtmlBehaviorResource = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")(name.asInstanceOf[js.Any]).asInstanceOf[HtmlBehaviorResource]
-  @scala.inline
-  def convention(name: String, existing: HtmlBehaviorResource): HtmlBehaviorResource = (^.asInstanceOf[js.Dynamic].applyDynamic("convention")(name.asInstanceOf[js.Any], existing.asInstanceOf[js.Any])).asInstanceOf[HtmlBehaviorResource]
+  inline def convention(name: String): HtmlBehaviorResource = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")(name.asInstanceOf[js.Any]).asInstanceOf[HtmlBehaviorResource]
+  inline def convention(name: String, existing: HtmlBehaviorResource): HtmlBehaviorResource = (^.asInstanceOf[js.Dynamic].applyDynamic("convention")(name.asInstanceOf[js.Any], existing.asInstanceOf[js.Any])).asInstanceOf[HtmlBehaviorResource]
 }

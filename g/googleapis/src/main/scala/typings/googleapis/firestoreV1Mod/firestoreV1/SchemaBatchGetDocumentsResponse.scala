@@ -36,37 +36,27 @@ trait SchemaBatchGetDocumentsResponse extends StObject {
 }
 object SchemaBatchGetDocumentsResponse {
   
-  @scala.inline
-  def apply(): SchemaBatchGetDocumentsResponse = {
+  inline def apply(): SchemaBatchGetDocumentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchGetDocumentsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaBatchGetDocumentsResponseMutableBuilder[Self <: SchemaBatchGetDocumentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchGetDocumentsResponse](x: Self) {
     
-    @scala.inline
-    def setFound(value: SchemaDocument): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
+    inline def setFound(value: SchemaDocument): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFoundUndefined: Self = StObject.set(x, "found", js.undefined)
+    inline def setFoundUndefined: Self = StObject.set(x, "found", js.undefined)
     
-    @scala.inline
-    def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+    inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+    inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
     
-    @scala.inline
-    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
     
-    @scala.inline
-    def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

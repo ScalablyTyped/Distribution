@@ -18,25 +18,19 @@ trait BuildStatusConfig extends StObject {
 }
 object BuildStatusConfig {
   
-  @scala.inline
-  def apply(): BuildStatusConfig = {
+  inline def apply(): BuildStatusConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildStatusConfig]
   }
   
-  @scala.inline
-  implicit class BuildStatusConfigMutableBuilder[Self <: BuildStatusConfig] (val x: Self) extends AnyVal {
+  extension [Self <: BuildStatusConfig](x: Self) {
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setTargetUrl(value: String): Self = StObject.set(x, "targetUrl", value.asInstanceOf[js.Any])
+    inline def setTargetUrl(value: String): Self = StObject.set(x, "targetUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUrlUndefined: Self = StObject.set(x, "targetUrl", js.undefined)
+    inline def setTargetUrlUndefined: Self = StObject.set(x, "targetUrl", js.undefined)
   }
 }

@@ -17,22 +17,17 @@ trait ActionsDeleteSelfHostedRunnerFromRepoEndpoint extends StObject {
 }
 object ActionsDeleteSelfHostedRunnerFromRepoEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String, runner_id: Double): ActionsDeleteSelfHostedRunnerFromRepoEndpoint = {
+  inline def apply(owner: String, repo: String, runner_id: Double): ActionsDeleteSelfHostedRunnerFromRepoEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], runner_id = runner_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsDeleteSelfHostedRunnerFromRepoEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsDeleteSelfHostedRunnerFromRepoEndpointMutableBuilder[Self <: ActionsDeleteSelfHostedRunnerFromRepoEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsDeleteSelfHostedRunnerFromRepoEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunner_id(value: Double): Self = StObject.set(x, "runner_id", value.asInstanceOf[js.Any])
+    inline def setRunner_id(value: Double): Self = StObject.set(x, "runner_id", value.asInstanceOf[js.Any])
   }
 }

@@ -52,8 +52,7 @@ trait MobileBroadbandModem extends StObject {
 }
 object MobileBroadbandModem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentAccount: MobileBroadbandAccount,
     currentNetwork: MobileBroadbandNetwork,
     deviceInformation: MobileBroadbandDeviceInformation,
@@ -69,37 +68,26 @@ object MobileBroadbandModem {
     __obj.asInstanceOf[MobileBroadbandModem]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandModemMutableBuilder[Self <: MobileBroadbandModem] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandModem](x: Self) {
     
-    @scala.inline
-    def setCurrentAccount(value: MobileBroadbandAccount): Self = StObject.set(x, "currentAccount", value.asInstanceOf[js.Any])
+    inline def setCurrentAccount(value: MobileBroadbandAccount): Self = StObject.set(x, "currentAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentNetwork(value: MobileBroadbandNetwork): Self = StObject.set(x, "currentNetwork", value.asInstanceOf[js.Any])
+    inline def setCurrentNetwork(value: MobileBroadbandNetwork): Self = StObject.set(x, "currentNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceInformation(value: MobileBroadbandDeviceInformation): Self = StObject.set(x, "deviceInformation", value.asInstanceOf[js.Any])
+    inline def setDeviceInformation(value: MobileBroadbandDeviceInformation): Self = StObject.set(x, "deviceInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceServices(value: IVectorView[MobileBroadbandDeviceServiceInformation]): Self = StObject.set(x, "deviceServices", value.asInstanceOf[js.Any])
+    inline def setDeviceServices(value: IVectorView[MobileBroadbandDeviceServiceInformation]): Self = StObject.set(x, "deviceServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCurrentConfigurationAsync(value: () => IPromiseWithIAsyncOperation[MobileBroadbandModemConfiguration]): Self = StObject.set(x, "getCurrentConfigurationAsync", js.Any.fromFunction0(value))
+    inline def setGetCurrentConfigurationAsync(value: () => IPromiseWithIAsyncOperation[MobileBroadbandModemConfiguration]): Self = StObject.set(x, "getCurrentConfigurationAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDeviceService(value: String => MobileBroadbandDeviceService): Self = StObject.set(x, "getDeviceService", js.Any.fromFunction1(value))
+    inline def setGetDeviceService(value: String => MobileBroadbandDeviceService): Self = StObject.set(x, "getDeviceService", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsResetSupported(value: Boolean): Self = StObject.set(x, "isResetSupported", value.asInstanceOf[js.Any])
+    inline def setIsResetSupported(value: Boolean): Self = StObject.set(x, "isResetSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDeviceServiceCommandSizeInBytes(value: Double): Self = StObject.set(x, "maxDeviceServiceCommandSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setMaxDeviceServiceCommandSizeInBytes(value: Double): Self = StObject.set(x, "maxDeviceServiceCommandSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDeviceServiceDataSizeInBytes(value: Double): Self = StObject.set(x, "maxDeviceServiceDataSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setMaxDeviceServiceDataSizeInBytes(value: Double): Self = StObject.set(x, "maxDeviceServiceDataSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "resetAsync", js.Any.fromFunction0(value))
+    inline def setResetAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "resetAsync", js.Any.fromFunction0(value))
   }
 }

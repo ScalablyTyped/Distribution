@@ -13,19 +13,15 @@ trait BulkSendRequest extends StObject {
 }
 object BulkSendRequest {
   
-  @scala.inline
-  def apply(): BulkSendRequest = {
+  inline def apply(): BulkSendRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkSendRequest]
   }
   
-  @scala.inline
-  implicit class BulkSendRequestMutableBuilder[Self <: BulkSendRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BulkSendRequest](x: Self) {
     
-    @scala.inline
-    def setEnvelopeOrTemplateId(value: String): Self = StObject.set(x, "envelopeOrTemplateId", value.asInstanceOf[js.Any])
+    inline def setEnvelopeOrTemplateId(value: String): Self = StObject.set(x, "envelopeOrTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeOrTemplateIdUndefined: Self = StObject.set(x, "envelopeOrTemplateId", js.undefined)
+    inline def setEnvelopeOrTemplateIdUndefined: Self = StObject.set(x, "envelopeOrTemplateId", js.undefined)
   }
 }

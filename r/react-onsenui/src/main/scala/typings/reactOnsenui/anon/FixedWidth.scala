@@ -27,55 +27,39 @@ trait FixedWidth extends StObject {
 }
 object FixedWidth {
   
-  @scala.inline
-  def apply(): FixedWidth = {
+  inline def apply(): FixedWidth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FixedWidth]
   }
   
-  @scala.inline
-  implicit class FixedWidthMutableBuilder[Self <: FixedWidth] (val x: Self) extends AnyVal {
+  extension [Self <: FixedWidth](x: Self) {
     
-    @scala.inline
-    def setFixedWidth(value: Boolean): Self = StObject.set(x, "fixedWidth", value.asInstanceOf[js.Any])
+    inline def setFixedWidth(value: Boolean): Self = StObject.set(x, "fixedWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedWidthUndefined: Self = StObject.set(x, "fixedWidth", js.undefined)
+    inline def setFixedWidthUndefined: Self = StObject.set(x, "fixedWidth", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String | ModifiersString): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String | ModifiersString): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+    inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
-    @scala.inline
-    def setRotate(value: `90` | `180` | `270`): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: `90` | `180` | `270`): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double | ModifiersNumber): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double | ModifiersNumber): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSpin(value: Boolean): Self = StObject.set(x, "spin", value.asInstanceOf[js.Any])
+    inline def setSpin(value: Boolean): Self = StObject.set(x, "spin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpinUndefined: Self = StObject.set(x, "spin", js.undefined)
+    inline def setSpinUndefined: Self = StObject.set(x, "spin", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

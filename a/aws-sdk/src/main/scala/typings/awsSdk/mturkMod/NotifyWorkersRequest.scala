@@ -23,25 +23,19 @@ trait NotifyWorkersRequest extends StObject {
 }
 object NotifyWorkersRequest {
   
-  @scala.inline
-  def apply(MessageText: String, Subject: String, WorkerIds: CustomerIdList): NotifyWorkersRequest = {
+  inline def apply(MessageText: String, Subject: String, WorkerIds: CustomerIdList): NotifyWorkersRequest = {
     val __obj = js.Dynamic.literal(MessageText = MessageText.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], WorkerIds = WorkerIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyWorkersRequest]
   }
   
-  @scala.inline
-  implicit class NotifyWorkersRequestMutableBuilder[Self <: NotifyWorkersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: NotifyWorkersRequest](x: Self) {
     
-    @scala.inline
-    def setMessageText(value: String): Self = StObject.set(x, "MessageText", value.asInstanceOf[js.Any])
+    inline def setMessageText(value: String): Self = StObject.set(x, "MessageText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerIds(value: CustomerIdList): Self = StObject.set(x, "WorkerIds", value.asInstanceOf[js.Any])
+    inline def setWorkerIds(value: CustomerIdList): Self = StObject.set(x, "WorkerIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerIdsVarargs(value: CustomerId*): Self = StObject.set(x, "WorkerIds", js.Array(value :_*))
+    inline def setWorkerIdsVarargs(value: CustomerId*): Self = StObject.set(x, "WorkerIds", js.Array(value :_*))
   }
 }

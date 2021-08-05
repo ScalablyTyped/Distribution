@@ -69,8 +69,7 @@ object emitterBinaryMod {
   }
   object BinaryHTTPEmitter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       emit: (UrlURL, js.Object) => js.Promise[js.Any],
       extensionPrefix: js.Any,
       headerParserMap: Map[js.Any, js.Any]
@@ -79,17 +78,13 @@ object emitterBinaryMod {
       __obj.asInstanceOf[BinaryHTTPEmitter]
     }
     
-    @scala.inline
-    implicit class BinaryHTTPEmitterMutableBuilder[Self <: BinaryHTTPEmitter] (val x: Self) extends AnyVal {
+    extension [Self <: BinaryHTTPEmitter](x: Self) {
       
-      @scala.inline
-      def setEmit(value: (UrlURL, js.Object) => js.Promise[js.Any]): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (UrlURL, js.Object) => js.Promise[js.Any]): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExtensionPrefix(value: js.Any): Self = StObject.set(x, "extensionPrefix", value.asInstanceOf[js.Any])
+      inline def setExtensionPrefix(value: js.Any): Self = StObject.set(x, "extensionPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderParserMap(value: Map[js.Any, js.Any]): Self = StObject.set(x, "headerParserMap", value.asInstanceOf[js.Any])
+      inline def setHeaderParserMap(value: Map[js.Any, js.Any]): Self = StObject.set(x, "headerParserMap", value.asInstanceOf[js.Any])
     }
   }
 }

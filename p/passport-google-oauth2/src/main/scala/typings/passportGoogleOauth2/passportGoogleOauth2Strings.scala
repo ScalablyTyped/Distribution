@@ -8,6 +8,5 @@ object passportGoogleOauth2Strings {
   
   @js.native
   sealed trait Bearer extends StObject
-  @scala.inline
-  def Bearer: Bearer = "Bearer".asInstanceOf[Bearer]
+  inline def Bearer: Bearer = "Bearer".asInstanceOf[Bearer]
 }

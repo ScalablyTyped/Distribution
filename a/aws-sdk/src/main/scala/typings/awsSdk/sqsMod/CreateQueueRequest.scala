@@ -23,28 +23,21 @@ trait CreateQueueRequest extends StObject {
 }
 object CreateQueueRequest {
   
-  @scala.inline
-  def apply(QueueName: String): CreateQueueRequest = {
+  inline def apply(QueueName: String): CreateQueueRequest = {
     val __obj = js.Dynamic.literal(QueueName = QueueName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateQueueRequest]
   }
   
-  @scala.inline
-  implicit class CreateQueueRequestMutableBuilder[Self <: CreateQueueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateQueueRequest](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: QueueAttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: QueueAttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setQueueName(value: String): Self = StObject.set(x, "QueueName", value.asInstanceOf[js.Any])
+    inline def setQueueName(value: String): Self = StObject.set(x, "QueueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

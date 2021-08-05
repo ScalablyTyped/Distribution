@@ -18,22 +18,17 @@ trait Order
 }
 object Order {
   
-  @scala.inline
-  def apply(field: String | ExprRef | SignalRef): Order = {
+  inline def apply(field: String | ExprRef | SignalRef): Order = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[Order]
   }
   
-  @scala.inline
-  implicit class OrderMutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
+  extension [Self <: Order](x: Self) {
     
-    @scala.inline
-    def setField(value: String | ExprRef | SignalRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String | ExprRef | SignalRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
   }
 }

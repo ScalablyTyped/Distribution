@@ -88,8 +88,7 @@ object MicroflowSettings {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
+  inline def create(model: IModel): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -100,8 +99,7 @@ object MicroflowSettings {
     *  6.0.0 to 7.12.0
     */
   /* static member */
-  @scala.inline
-  def createInAssociationWidgetUnderOnChangeMicroflowSettings(container: AssociationWidget): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
+  inline def createInAssociationWidgetUnderOnChangeMicroflowSettings(container: AssociationWidget): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -112,8 +110,7 @@ object MicroflowSettings {
     *  6.0.0 to 7.12.0
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnChangeMicroflowSettings(container: AttributeWidget): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
+  inline def createInAttributeWidgetUnderOnChangeMicroflowSettings(container: AttributeWidget): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -124,8 +121,7 @@ object MicroflowSettings {
     *  6.0.0 to 7.12.0
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnEnterMicroflowSettings(container: AttributeWidget): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
+  inline def createInAttributeWidgetUnderOnEnterMicroflowSettings(container: AttributeWidget): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -136,8 +132,7 @@ object MicroflowSettings {
     *  6.0.0 to 7.12.0
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnLeaveMicroflowSettings(container: AttributeWidget): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
+  inline def createInAttributeWidgetUnderOnLeaveMicroflowSettings(container: AttributeWidget): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -145,8 +140,7 @@ object MicroflowSettings {
     * of the parent MicroflowClientAction element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowClientActionUnderMicroflowSettings(container: MicroflowClientAction): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowClientActionUnderMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
+  inline def createInMicroflowClientActionUnderMicroflowSettings(container: MicroflowClientAction): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowClientActionUnderMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -154,8 +148,7 @@ object MicroflowSettings {
     * of the parent MicroflowSource element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowSourceUnderMicroflowSettings(container: MicroflowSource): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowSourceUnderMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
+  inline def createInMicroflowSourceUnderMicroflowSettings(container: MicroflowSource): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowSourceUnderMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -166,8 +159,7 @@ object MicroflowSettings {
     *  6.0.0 to 7.17.0
     */
   /* static member */
-  @scala.inline
-  def createInOnClickMicroflowUnderMicroflowSettings(container: OnClickMicroflow): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOnClickMicroflowUnderMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
+  inline def createInOnClickMicroflowUnderMicroflowSettings(container: OnClickMicroflow): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOnClickMicroflowUnderMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -178,8 +170,7 @@ object MicroflowSettings {
     *  6.0.0 to 7.12.0
     */
   /* static member */
-  @scala.inline
-  def createInReferenceSetSelectorUnderOnChangeMicroflowSettings(container: ReferenceSetSelector): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
+  inline def createInReferenceSetSelectorUnderOnChangeMicroflowSettings(container: ReferenceSetSelector): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
   
   /**
     * Creates and returns a new MicroflowSettings instance in the SDK and on the server.
@@ -187,20 +178,17 @@ object MicroflowSettings {
     * of the parent SelectorMicroflowSource element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInSelectorMicroflowSourceUnderDataSourceMicroflowSettings(container: SelectorMicroflowSource): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSelectorMicroflowSourceUnderDataSourceMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
+  inline def createInSelectorMicroflowSourceUnderDataSourceMicroflowSettings(container: SelectorMicroflowSource): MicroflowSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSelectorMicroflowSourceUnderDataSourceMicroflowSettings")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSettings]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MicroflowSettings.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MicroflowSettings.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

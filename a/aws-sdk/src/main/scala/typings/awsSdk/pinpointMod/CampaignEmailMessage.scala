@@ -28,37 +28,27 @@ trait CampaignEmailMessage extends StObject {
 }
 object CampaignEmailMessage {
   
-  @scala.inline
-  def apply(): CampaignEmailMessage = {
+  inline def apply(): CampaignEmailMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CampaignEmailMessage]
   }
   
-  @scala.inline
-  implicit class CampaignEmailMessageMutableBuilder[Self <: CampaignEmailMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CampaignEmailMessage](x: Self) {
     
-    @scala.inline
-    def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+    inline def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
-    @scala.inline
-    def setFromAddress(value: string): Self = StObject.set(x, "FromAddress", value.asInstanceOf[js.Any])
+    inline def setFromAddress(value: string): Self = StObject.set(x, "FromAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromAddressUndefined: Self = StObject.set(x, "FromAddress", js.undefined)
+    inline def setFromAddressUndefined: Self = StObject.set(x, "FromAddress", js.undefined)
     
-    @scala.inline
-    def setHtmlBody(value: string): Self = StObject.set(x, "HtmlBody", value.asInstanceOf[js.Any])
+    inline def setHtmlBody(value: string): Self = StObject.set(x, "HtmlBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlBodyUndefined: Self = StObject.set(x, "HtmlBody", js.undefined)
+    inline def setHtmlBodyUndefined: Self = StObject.set(x, "HtmlBody", js.undefined)
     
-    @scala.inline
-    def setTitle(value: string): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: string): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait LogSubscription extends StObject {
 }
 object LogSubscription {
   
-  @scala.inline
-  def apply(): LogSubscription = {
+  inline def apply(): LogSubscription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogSubscription]
   }
   
-  @scala.inline
-  implicit class LogSubscriptionMutableBuilder[Self <: LogSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: LogSubscription](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
+    inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
+    inline def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
     
-    @scala.inline
-    def setSubscriptionCreatedDateTime(value: SubscriptionCreatedDateTime): Self = StObject.set(x, "SubscriptionCreatedDateTime", value.asInstanceOf[js.Any])
+    inline def setSubscriptionCreatedDateTime(value: SubscriptionCreatedDateTime): Self = StObject.set(x, "SubscriptionCreatedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionCreatedDateTimeUndefined: Self = StObject.set(x, "SubscriptionCreatedDateTime", js.undefined)
+    inline def setSubscriptionCreatedDateTimeUndefined: Self = StObject.set(x, "SubscriptionCreatedDateTime", js.undefined)
   }
 }

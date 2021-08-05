@@ -19,8 +19,7 @@ object configParserMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getFilePaths(patterns: js.Any, omitWarnings: js.Any): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilePaths")(patterns.asInstanceOf[js.Any], omitWarnings.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def getFilePaths(patterns: js.Any, omitWarnings: js.Any): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilePaths")(patterns.asInstanceOf[js.Any], omitWarnings.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   }
   
   @js.native

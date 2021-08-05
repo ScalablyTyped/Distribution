@@ -32,27 +32,21 @@ trait NAMessageProperties extends StObject {
 }
 object NAMessageProperties {
   
-  @scala.inline
-  def apply(): NAMessageProperties = {
+  inline def apply(): NAMessageProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NAMessageProperties]
   }
   
-  @scala.inline
-  implicit class NAMessagePropertiesMutableBuilder[Self <: NAMessageProperties] (val x: Self) extends AnyVal {
+  extension [Self <: NAMessageProperties](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: informative | `process-definition` | `process-start` | `process-stop` | warning | error | empty | abort
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait AccountWorkWorkItemModel extends StObject {
 }
 object AccountWorkWorkItemModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assignedTo: String,
     changedDate: Date,
     id: Double,
@@ -37,28 +36,20 @@ object AccountWorkWorkItemModel {
     __obj.asInstanceOf[AccountWorkWorkItemModel]
   }
   
-  @scala.inline
-  implicit class AccountWorkWorkItemModelMutableBuilder[Self <: AccountWorkWorkItemModel] (val x: Self) extends AnyVal {
+  extension [Self <: AccountWorkWorkItemModel](x: Self) {
     
-    @scala.inline
-    def setAssignedTo(value: String): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
+    inline def setAssignedTo(value: String): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
+    inline def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamProject(value: String): Self = StObject.set(x, "teamProject", value.asInstanceOf[js.Any])
+    inline def setTeamProject(value: String): Self = StObject.set(x, "teamProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemType(value: String): Self = StObject.set(x, "workItemType", value.asInstanceOf[js.Any])
+    inline def setWorkItemType(value: String): Self = StObject.set(x, "workItemType", value.asInstanceOf[js.Any])
   }
 }

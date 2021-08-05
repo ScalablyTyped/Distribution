@@ -12,22 +12,17 @@ trait LicenseObject extends StObject {
 }
 object LicenseObject {
   
-  @scala.inline
-  def apply(name: String): LicenseObject = {
+  inline def apply(name: String): LicenseObject = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LicenseObject]
   }
   
-  @scala.inline
-  implicit class LicenseObjectMutableBuilder[Self <: LicenseObject] (val x: Self) extends AnyVal {
+  extension [Self <: LicenseObject](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

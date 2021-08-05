@@ -15,8 +15,7 @@ trait AddressBookSourcePilot
 }
 object AddressBookSourcePilot {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createWithParent: XWindow => Unit,
     execute: () => Double,
@@ -28,10 +27,8 @@ object AddressBookSourcePilot {
     __obj.asInstanceOf[AddressBookSourcePilot]
   }
   
-  @scala.inline
-  implicit class AddressBookSourcePilotMutableBuilder[Self <: AddressBookSourcePilot] (val x: Self) extends AnyVal {
+  extension [Self <: AddressBookSourcePilot](x: Self) {
     
-    @scala.inline
-    def setCreateWithParent(value: XWindow => Unit): Self = StObject.set(x, "createWithParent", js.Any.fromFunction1(value))
+    inline def setCreateWithParent(value: XWindow => Unit): Self = StObject.set(x, "createWithParent", js.Any.fromFunction1(value))
   }
 }

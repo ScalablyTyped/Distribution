@@ -50,8 +50,7 @@ trait IgColorPickerSplitButtonMethods extends StObject {
 }
 object IgColorPickerSplitButtonMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     collapse: js.Object => js.Object,
     destroy: () => js.Object,
     expand: js.Object => js.Object,
@@ -64,28 +63,20 @@ object IgColorPickerSplitButtonMethods {
     __obj.asInstanceOf[IgColorPickerSplitButtonMethods]
   }
   
-  @scala.inline
-  implicit class IgColorPickerSplitButtonMethodsMutableBuilder[Self <: IgColorPickerSplitButtonMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgColorPickerSplitButtonMethods](x: Self) {
     
-    @scala.inline
-    def setCollapse(value: js.Object => js.Object): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
+    inline def setCollapse(value: js.Object => js.Object): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroy(value: () => js.Object): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => js.Object): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExpand(value: js.Object => js.Object): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
+    inline def setExpand(value: js.Object => js.Object): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetColor(value: String => js.Object): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
+    inline def setSetColor(value: String => js.Object): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSwitchToButton(value: js.Object => Unit): Self = StObject.set(x, "switchToButton", js.Any.fromFunction1(value))
+    inline def setSwitchToButton(value: js.Object => Unit): Self = StObject.set(x, "switchToButton", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggle(value: js.Object => js.Object): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+    inline def setToggle(value: js.Object => js.Object): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWidget(value: () => Unit): Self = StObject.set(x, "widget", js.Any.fromFunction0(value))
+    inline def setWidget(value: () => Unit): Self = StObject.set(x, "widget", js.Any.fromFunction0(value))
   }
 }

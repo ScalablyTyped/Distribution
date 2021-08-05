@@ -36,44 +36,32 @@ object pdfExporter {
   }
   object PdfExportDataGridProps {
     
-    @scala.inline
-    def apply(): PdfExportDataGridProps = {
+    inline def apply(): PdfExportDataGridProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PdfExportDataGridProps]
     }
     
-    @scala.inline
-    implicit class PdfExportDataGridPropsMutableBuilder[Self <: PdfExportDataGridProps] (val x: Self) extends AnyVal {
+    extension [Self <: PdfExportDataGridProps](x: Self) {
       
-      @scala.inline
-      def setAutoTableOptions(value: js.Any): Self = StObject.set(x, "autoTableOptions", value.asInstanceOf[js.Any])
+      inline def setAutoTableOptions(value: js.Any): Self = StObject.set(x, "autoTableOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoTableOptionsUndefined: Self = StObject.set(x, "autoTableOptions", js.undefined)
+      inline def setAutoTableOptionsUndefined: Self = StObject.set(x, "autoTableOptions", js.undefined)
       
-      @scala.inline
-      def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setJsPDFDocument(value: js.Any): Self = StObject.set(x, "jsPDFDocument", value.asInstanceOf[js.Any])
+      inline def setJsPDFDocument(value: js.Any): Self = StObject.set(x, "jsPDFDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsPDFDocumentUndefined: Self = StObject.set(x, "jsPDFDocument", js.undefined)
+      inline def setJsPDFDocumentUndefined: Self = StObject.set(x, "jsPDFDocument", js.undefined)
       
-      @scala.inline
-      def setKeepColumnWidths(value: Boolean): Self = StObject.set(x, "keepColumnWidths", value.asInstanceOf[js.Any])
+      inline def setKeepColumnWidths(value: Boolean): Self = StObject.set(x, "keepColumnWidths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepColumnWidthsUndefined: Self = StObject.set(x, "keepColumnWidths", js.undefined)
+      inline def setKeepColumnWidthsUndefined: Self = StObject.set(x, "keepColumnWidths", js.undefined)
       
-      @scala.inline
-      def setSelectedRowsOnly(value: Boolean): Self = StObject.set(x, "selectedRowsOnly", value.asInstanceOf[js.Any])
+      inline def setSelectedRowsOnly(value: Boolean): Self = StObject.set(x, "selectedRowsOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedRowsOnlyUndefined: Self = StObject.set(x, "selectedRowsOnly", js.undefined)
+      inline def setSelectedRowsOnlyUndefined: Self = StObject.set(x, "selectedRowsOnly", js.undefined)
     }
   }
 }

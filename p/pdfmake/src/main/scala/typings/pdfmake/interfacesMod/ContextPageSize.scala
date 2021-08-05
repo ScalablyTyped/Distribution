@@ -14,22 +14,17 @@ trait ContextPageSize extends StObject {
 }
 object ContextPageSize {
   
-  @scala.inline
-  def apply(height: Double, orientation: PageOrientation, width: Double): ContextPageSize = {
+  inline def apply(height: Double, orientation: PageOrientation, width: Double): ContextPageSize = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextPageSize]
   }
   
-  @scala.inline
-  implicit class ContextPageSizeMutableBuilder[Self <: ContextPageSize] (val x: Self) extends AnyVal {
+  extension [Self <: ContextPageSize](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: PageOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: PageOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -10,8 +10,7 @@ trait PointerPointProperties
      with IPointerPointProperties
 object PointerPointProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contactRect: Rect,
     contactRectRaw: Rect,
     getUsageValue: (Double, Double) => Double,

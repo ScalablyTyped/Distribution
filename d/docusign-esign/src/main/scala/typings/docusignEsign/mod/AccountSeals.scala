@@ -13,22 +13,17 @@ trait AccountSeals extends StObject {
 }
 object AccountSeals {
   
-  @scala.inline
-  def apply(): AccountSeals = {
+  inline def apply(): AccountSeals = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountSeals]
   }
   
-  @scala.inline
-  implicit class AccountSealsMutableBuilder[Self <: AccountSeals] (val x: Self) extends AnyVal {
+  extension [Self <: AccountSeals](x: Self) {
     
-    @scala.inline
-    def setSeals(value: js.Array[SealIdentifier]): Self = StObject.set(x, "seals", value.asInstanceOf[js.Any])
+    inline def setSeals(value: js.Array[SealIdentifier]): Self = StObject.set(x, "seals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSealsUndefined: Self = StObject.set(x, "seals", js.undefined)
+    inline def setSealsUndefined: Self = StObject.set(x, "seals", js.undefined)
     
-    @scala.inline
-    def setSealsVarargs(value: SealIdentifier*): Self = StObject.set(x, "seals", js.Array(value :_*))
+    inline def setSealsVarargs(value: SealIdentifier*): Self = StObject.set(x, "seals", js.Array(value :_*))
   }
 }

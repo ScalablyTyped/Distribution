@@ -11,8 +11,7 @@ object transformMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def rotate(
+  inline def rotate(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -20,8 +19,7 @@ object transformMod {
     angle: Double,
     anchor: js.Array[Double]
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def rotate(
+  inline def rotate(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -31,8 +29,7 @@ object transformMod {
     opt_dest: js.Array[Double]
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any], opt_dest.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def scale(
+  inline def scale(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -41,8 +38,7 @@ object transformMod {
     sy: Double,
     anchor: js.Array[Double]
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def scale(
+  inline def scale(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -53,16 +49,14 @@ object transformMod {
     opt_dest: js.Array[Double]
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any], opt_dest.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def transform2D(
+  inline def transform2D(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
     stride: Double,
     transform: Transform
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform2D")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def transform2D(
+  inline def transform2D(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -71,8 +65,7 @@ object transformMod {
     opt_dest: js.Array[Double]
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform2D")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opt_dest.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def translate(
+  inline def translate(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -80,8 +73,7 @@ object transformMod {
     deltaX: Double,
     deltaY: Double
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], deltaX.asInstanceOf[js.Any], deltaY.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def translate(
+  inline def translate(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,

@@ -16,17 +16,14 @@ object typesBucketAlreadyOwnedByYouMod {
   }
   object BucketAlreadyOwnedByYou {
     
-    @scala.inline
-    def apply(): BucketAlreadyOwnedByYou = {
+    inline def apply(): BucketAlreadyOwnedByYou = {
       val __obj = js.Dynamic.literal(name = "BucketAlreadyOwnedByYou")
       __obj.asInstanceOf[BucketAlreadyOwnedByYou]
     }
     
-    @scala.inline
-    implicit class BucketAlreadyOwnedByYouMutableBuilder[Self <: BucketAlreadyOwnedByYou] (val x: Self) extends AnyVal {
+    extension [Self <: BucketAlreadyOwnedByYou](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.BucketAlreadyOwnedByYou): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.BucketAlreadyOwnedByYou): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

@@ -8,14 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = ^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]]]
-  @scala.inline
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Double): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]]]
-  @scala.inline
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Double, options: DebounceOptions): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]]]
-  @scala.inline
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Unit, options: DebounceOptions): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]]]
+  inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = ^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]]]
+  inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Double): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]]]
+  inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Double, options: DebounceOptions): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]]]
+  inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: T, wait: Unit, options: DebounceOptions): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]]]
   
   @JSImport("debounce-promise", JSImport.Namespace)
   @js.native
@@ -29,26 +25,20 @@ object mod {
   }
   object DebounceOptions {
     
-    @scala.inline
-    def apply(): DebounceOptions = {
+    inline def apply(): DebounceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DebounceOptions]
     }
     
-    @scala.inline
-    implicit class DebounceOptionsMutableBuilder[Self <: DebounceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DebounceOptions](x: Self) {
       
-      @scala.inline
-      def setAccumulate(value: Boolean): Self = StObject.set(x, "accumulate", value.asInstanceOf[js.Any])
+      inline def setAccumulate(value: Boolean): Self = StObject.set(x, "accumulate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccumulateUndefined: Self = StObject.set(x, "accumulate", js.undefined)
+      inline def setAccumulateUndefined: Self = StObject.set(x, "accumulate", js.undefined)
       
-      @scala.inline
-      def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+      inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+      inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
     }
   }
 }

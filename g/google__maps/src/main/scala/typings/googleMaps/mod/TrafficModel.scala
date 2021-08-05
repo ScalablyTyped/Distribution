@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TrafficModel extends StObject
 object TrafficModel {
   
-  @scala.inline
-  def best_guess: typings.googleMaps.googleMapsStrings.best_guess = "best_guess".asInstanceOf[typings.googleMaps.googleMapsStrings.best_guess]
+  inline def best_guess: typings.googleMaps.googleMapsStrings.best_guess = "best_guess".asInstanceOf[typings.googleMaps.googleMapsStrings.best_guess]
   
-  @scala.inline
-  def optimistic: typings.googleMaps.googleMapsStrings.optimistic = "optimistic".asInstanceOf[typings.googleMaps.googleMapsStrings.optimistic]
+  inline def optimistic: typings.googleMaps.googleMapsStrings.optimistic = "optimistic".asInstanceOf[typings.googleMaps.googleMapsStrings.optimistic]
   
-  @scala.inline
-  def pessimistic: typings.googleMaps.googleMapsStrings.pessimistic = "pessimistic".asInstanceOf[typings.googleMaps.googleMapsStrings.pessimistic]
+  inline def pessimistic: typings.googleMaps.googleMapsStrings.pessimistic = "pessimistic".asInstanceOf[typings.googleMaps.googleMapsStrings.pessimistic]
 }

@@ -17,16 +17,13 @@ trait ListableResource
 }
 object ListableResource {
   
-  @scala.inline
-  def apply(get: RestMethod, list: RestMethod): ListableResource = {
+  inline def apply(get: RestMethod, list: RestMethod): ListableResource = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListableResource]
   }
   
-  @scala.inline
-  implicit class ListableResourceMutableBuilder[Self <: ListableResource] (val x: Self) extends AnyVal {
+  extension [Self <: ListableResource](x: Self) {
     
-    @scala.inline
-    def setList(value: RestMethod): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: RestMethod): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
   }
 }

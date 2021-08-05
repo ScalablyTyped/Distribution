@@ -18,22 +18,17 @@ trait DeleteCachePolicyRequest extends StObject {
 }
 object DeleteCachePolicyRequest {
   
-  @scala.inline
-  def apply(Id: String): DeleteCachePolicyRequest = {
+  inline def apply(Id: String): DeleteCachePolicyRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCachePolicyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCachePolicyRequestMutableBuilder[Self <: DeleteCachePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCachePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
+    inline def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
+    inline def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
   }
 }

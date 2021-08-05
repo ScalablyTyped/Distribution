@@ -14,22 +14,17 @@ trait SmartHomeV1QueryRequest
 }
 object SmartHomeV1QueryRequest {
   
-  @scala.inline
-  def apply(inputs: js.Array[SmartHomeV1QueryRequestInputs], requestId: String): SmartHomeV1QueryRequest = {
+  inline def apply(inputs: js.Array[SmartHomeV1QueryRequestInputs], requestId: String): SmartHomeV1QueryRequest = {
     val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1QueryRequest]
   }
   
-  @scala.inline
-  implicit class SmartHomeV1QueryRequestMutableBuilder[Self <: SmartHomeV1QueryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SmartHomeV1QueryRequest](x: Self) {
     
-    @scala.inline
-    def setInputs(value: js.Array[SmartHomeV1QueryRequestInputs]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[SmartHomeV1QueryRequestInputs]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsVarargs(value: SmartHomeV1QueryRequestInputs*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: SmartHomeV1QueryRequestInputs*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

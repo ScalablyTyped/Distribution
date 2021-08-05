@@ -38,6 +38,5 @@ object Collection {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def installMethodForwarding(target: js.Object, source: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("installMethodForwarding")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def installMethodForwarding(target: js.Object, source: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("installMethodForwarding")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Object]
 }

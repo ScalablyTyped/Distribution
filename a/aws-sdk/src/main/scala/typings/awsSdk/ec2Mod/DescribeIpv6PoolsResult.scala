@@ -18,28 +18,21 @@ trait DescribeIpv6PoolsResult extends StObject {
 }
 object DescribeIpv6PoolsResult {
   
-  @scala.inline
-  def apply(): DescribeIpv6PoolsResult = {
+  inline def apply(): DescribeIpv6PoolsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeIpv6PoolsResult]
   }
   
-  @scala.inline
-  implicit class DescribeIpv6PoolsResultMutableBuilder[Self <: DescribeIpv6PoolsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIpv6PoolsResult](x: Self) {
     
-    @scala.inline
-    def setIpv6Pools(value: Ipv6PoolSet): Self = StObject.set(x, "Ipv6Pools", value.asInstanceOf[js.Any])
+    inline def setIpv6Pools(value: Ipv6PoolSet): Self = StObject.set(x, "Ipv6Pools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6PoolsUndefined: Self = StObject.set(x, "Ipv6Pools", js.undefined)
+    inline def setIpv6PoolsUndefined: Self = StObject.set(x, "Ipv6Pools", js.undefined)
     
-    @scala.inline
-    def setIpv6PoolsVarargs(value: Ipv6Pool*): Self = StObject.set(x, "Ipv6Pools", js.Array(value :_*))
+    inline def setIpv6PoolsVarargs(value: Ipv6Pool*): Self = StObject.set(x, "Ipv6Pools", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "unhomoglyph"
-version := "1.0.6-1699dc"
+version := "1.0.6-225fb5"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -15,31 +15,23 @@ trait UseRowSelectOptions[D /* <: js.Object */] extends StObject {
 }
 object UseRowSelectOptions {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](): UseRowSelectOptions[D] = {
+  inline def apply[D /* <: js.Object */](): UseRowSelectOptions[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseRowSelectOptions[D]]
   }
   
-  @scala.inline
-  implicit class UseRowSelectOptionsMutableBuilder[Self <: UseRowSelectOptions[?], D /* <: js.Object */] (val x: Self & UseRowSelectOptions[D]) extends AnyVal {
+  extension [Self <: UseRowSelectOptions[?], D /* <: js.Object */](x: Self & UseRowSelectOptions[D]) {
     
-    @scala.inline
-    def setAutoResetSelectedRows(value: Boolean): Self = StObject.set(x, "autoResetSelectedRows", value.asInstanceOf[js.Any])
+    inline def setAutoResetSelectedRows(value: Boolean): Self = StObject.set(x, "autoResetSelectedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoResetSelectedRowsUndefined: Self = StObject.set(x, "autoResetSelectedRows", js.undefined)
+    inline def setAutoResetSelectedRowsUndefined: Self = StObject.set(x, "autoResetSelectedRows", js.undefined)
     
-    @scala.inline
-    def setManualRowSelectedKey(value: IdType[D]): Self = StObject.set(x, "manualRowSelectedKey", value.asInstanceOf[js.Any])
+    inline def setManualRowSelectedKey(value: IdType[D]): Self = StObject.set(x, "manualRowSelectedKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualRowSelectedKeyUndefined: Self = StObject.set(x, "manualRowSelectedKey", js.undefined)
+    inline def setManualRowSelectedKeyUndefined: Self = StObject.set(x, "manualRowSelectedKey", js.undefined)
     
-    @scala.inline
-    def setSelectSubRows(value: Boolean): Self = StObject.set(x, "selectSubRows", value.asInstanceOf[js.Any])
+    inline def setSelectSubRows(value: Boolean): Self = StObject.set(x, "selectSubRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectSubRowsUndefined: Self = StObject.set(x, "selectSubRows", js.undefined)
+    inline def setSelectSubRowsUndefined: Self = StObject.set(x, "selectSubRows", js.undefined)
   }
 }

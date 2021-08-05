@@ -11,19 +11,15 @@ trait DeliveryConfig extends StObject {
 }
 object DeliveryConfig {
   
-  @scala.inline
-  def apply(): DeliveryConfig = {
+  inline def apply(): DeliveryConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeliveryConfig]
   }
   
-  @scala.inline
-  implicit class DeliveryConfigMutableBuilder[Self <: DeliveryConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DeliveryConfig](x: Self) {
     
-    @scala.inline
-    def setDeliveryRequirement(value: String): Self = StObject.set(x, "deliveryRequirement", value.asInstanceOf[js.Any])
+    inline def setDeliveryRequirement(value: String): Self = StObject.set(x, "deliveryRequirement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryRequirementUndefined: Self = StObject.set(x, "deliveryRequirement", js.undefined)
+    inline def setDeliveryRequirementUndefined: Self = StObject.set(x, "deliveryRequirement", js.undefined)
   }
 }

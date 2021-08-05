@@ -72,97 +72,67 @@ trait ILine
 }
 object ILine {
   
-  @scala.inline
-  def apply(): ILine = {
+  inline def apply(): ILine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ILine]
   }
   
-  @scala.inline
-  implicit class ILineMutableBuilder[Self <: ILine] (val x: Self) extends AnyVal {
+  extension [Self <: ILine](x: Self) {
     
-    @scala.inline
-    def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setGetAggregator(value: () => js.Any): Self = StObject.set(x, "getAggregator", js.Any.fromFunction0(value))
+    inline def setGetAggregator(value: () => js.Any): Self = StObject.set(x, "getAggregator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAggregatorUndefined: Self = StObject.set(x, "getAggregator", js.undefined)
+    inline def setGetAggregatorUndefined: Self = StObject.set(x, "getAggregator", js.undefined)
     
-    @scala.inline
-    def setGetFill(value: () => Boolean): Self = StObject.set(x, "getFill", js.Any.fromFunction0(value))
+    inline def setGetFill(value: () => Boolean): Self = StObject.set(x, "getFill", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFillUndefined: Self = StObject.set(x, "getFill", js.undefined)
+    inline def setGetFillUndefined: Self = StObject.set(x, "getFill", js.undefined)
     
-    @scala.inline
-    def setGetSelectionTolerance(value: () => Double): Self = StObject.set(x, "getSelectionTolerance", js.Any.fromFunction0(value))
+    inline def setGetSelectionTolerance(value: () => Double): Self = StObject.set(x, "getSelectionTolerance", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectionToleranceUndefined: Self = StObject.set(x, "getSelectionTolerance", js.undefined)
+    inline def setGetSelectionToleranceUndefined: Self = StObject.set(x, "getSelectionTolerance", js.undefined)
     
-    @scala.inline
-    def setGetSmooth(value: () => js.Any): Self = StObject.set(x, "getSmooth", js.Any.fromFunction0(value))
+    inline def setGetSmooth(value: () => js.Any): Self = StObject.set(x, "getSmooth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSmoothUndefined: Self = StObject.set(x, "getSmooth", js.undefined)
+    inline def setGetSmoothUndefined: Self = StObject.set(x, "getSmooth", js.undefined)
     
-    @scala.inline
-    def setGetStep(value: () => Boolean): Self = StObject.set(x, "getStep", js.Any.fromFunction0(value))
+    inline def setGetStep(value: () => Boolean): Self = StObject.set(x, "getStep", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStepUndefined: Self = StObject.set(x, "getStep", js.undefined)
+    inline def setGetStepUndefined: Self = StObject.set(x, "getStep", js.undefined)
     
-    @scala.inline
-    def setSelectionTolerance(value: Double): Self = StObject.set(x, "selectionTolerance", value.asInstanceOf[js.Any])
+    inline def setSelectionTolerance(value: Double): Self = StObject.set(x, "selectionTolerance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionToleranceUndefined: Self = StObject.set(x, "selectionTolerance", js.undefined)
+    inline def setSelectionToleranceUndefined: Self = StObject.set(x, "selectionTolerance", js.undefined)
     
-    @scala.inline
-    def setSetAggregator(value: /* aggregator */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAggregator", js.Any.fromFunction1(value))
+    inline def setSetAggregator(value: /* aggregator */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAggregator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAggregatorUndefined: Self = StObject.set(x, "setAggregator", js.undefined)
+    inline def setSetAggregatorUndefined: Self = StObject.set(x, "setAggregator", js.undefined)
     
-    @scala.inline
-    def setSetFill(value: /* fill */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setFill", js.Any.fromFunction1(value))
+    inline def setSetFill(value: /* fill */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setFill", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFillUndefined: Self = StObject.set(x, "setFill", js.undefined)
+    inline def setSetFillUndefined: Self = StObject.set(x, "setFill", js.undefined)
     
-    @scala.inline
-    def setSetSelectionTolerance(value: /* selectionTolerance */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setSelectionTolerance", js.Any.fromFunction1(value))
+    inline def setSetSelectionTolerance(value: /* selectionTolerance */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setSelectionTolerance", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSelectionToleranceUndefined: Self = StObject.set(x, "setSelectionTolerance", js.undefined)
+    inline def setSetSelectionToleranceUndefined: Self = StObject.set(x, "setSelectionTolerance", js.undefined)
     
-    @scala.inline
-    def setSetSmooth(value: /* smooth */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSmooth", js.Any.fromFunction1(value))
+    inline def setSetSmooth(value: /* smooth */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSmooth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSmoothUndefined: Self = StObject.set(x, "setSmooth", js.undefined)
+    inline def setSetSmoothUndefined: Self = StObject.set(x, "setSmooth", js.undefined)
     
-    @scala.inline
-    def setSetStep(value: /* step */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setStep", js.Any.fromFunction1(value))
+    inline def setSetStep(value: /* step */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setStep", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStepUndefined: Self = StObject.set(x, "setStep", js.undefined)
+    inline def setSetStepUndefined: Self = StObject.set(x, "setStep", js.undefined)
     
-    @scala.inline
-    def setSmooth(value: js.Any): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+    inline def setSmooth(value: js.Any): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
+    inline def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
     
-    @scala.inline
-    def setStep(value: Boolean): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Boolean): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

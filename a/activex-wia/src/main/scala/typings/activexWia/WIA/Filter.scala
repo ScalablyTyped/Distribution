@@ -27,13 +27,12 @@ trait Filter extends StObject {
   @JSName("Properties")
   val Properties_Original: Properties
   
-  @JSName("WIA.Filter_typekey")
+  /* private */ @JSName("WIA.Filter_typekey")
   var WIADotFilter_typekey: Filter
 }
 object Filter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Description: String,
     FilterID: String,
     Name: String,
@@ -45,22 +44,16 @@ object Filter {
     __obj.asInstanceOf[Filter]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+  extension [Self <: Filter](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterID(value: String): Self = StObject.set(x, "FilterID", value.asInstanceOf[js.Any])
+    inline def setFilterID(value: String): Self = StObject.set(x, "FilterID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIADotFilter_typekey(value: Filter): Self = StObject.set(x, "WIA.Filter_typekey", value.asInstanceOf[js.Any])
+    inline def setWIADotFilter_typekey(value: Filter): Self = StObject.set(x, "WIA.Filter_typekey", value.asInstanceOf[js.Any])
   }
 }

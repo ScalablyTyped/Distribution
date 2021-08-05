@@ -28,52 +28,37 @@ trait AttributeOptions
 }
 object AttributeOptions {
   
-  @scala.inline
-  def apply(attribute: String, raws: Insensitive): AttributeOptions = {
+  inline def apply(attribute: String, raws: Insensitive): AttributeOptions = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], raws = raws.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeOptions]
   }
   
-  @scala.inline
-  implicit class AttributeOptionsMutableBuilder[Self <: AttributeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeOptions](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsensitive(value: Boolean): Self = StObject.set(x, "insensitive", value.asInstanceOf[js.Any])
+    inline def setInsensitive(value: Boolean): Self = StObject.set(x, "insensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsensitiveUndefined: Self = StObject.set(x, "insensitive", js.undefined)
+    inline def setInsensitiveUndefined: Self = StObject.set(x, "insensitive", js.undefined)
     
-    @scala.inline
-    def setOperator(value: AttributeOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: AttributeOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    @scala.inline
-    def setQuoteMark(value: QuoteMark): Self = StObject.set(x, "quoteMark", value.asInstanceOf[js.Any])
+    inline def setQuoteMark(value: QuoteMark): Self = StObject.set(x, "quoteMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteMarkNull: Self = StObject.set(x, "quoteMark", null)
+    inline def setQuoteMarkNull: Self = StObject.set(x, "quoteMark", null)
     
-    @scala.inline
-    def setQuoteMarkUndefined: Self = StObject.set(x, "quoteMark", js.undefined)
+    inline def setQuoteMarkUndefined: Self = StObject.set(x, "quoteMark", js.undefined)
     
-    @scala.inline
-    def setQuoted(value: Boolean): Self = StObject.set(x, "quoted", value.asInstanceOf[js.Any])
+    inline def setQuoted(value: Boolean): Self = StObject.set(x, "quoted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotedUndefined: Self = StObject.set(x, "quoted", js.undefined)
+    inline def setQuotedUndefined: Self = StObject.set(x, "quoted", js.undefined)
     
-    @scala.inline
-    def setRaws(value: Insensitive): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
+    inline def setRaws(value: Insensitive): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaces(value: After): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+    inline def setSpaces(value: After): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
+    inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
   }
 }

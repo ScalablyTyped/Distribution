@@ -101,67 +101,47 @@ trait PlayerOptions extends StObject {
 }
 object PlayerOptions {
   
-  @scala.inline
-  def apply(): PlayerOptions = {
+  inline def apply(): PlayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlayerOptions]
   }
   
-  @scala.inline
-  implicit class PlayerOptionsMutableBuilder[Self <: PlayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlayerOptions](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setFormat(value: WidgetFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: WidgetFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLayout(value: WidgetLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: WidgetLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setOnload(value: /* state */ PlayerState => Unit): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
+    inline def setOnload(value: /* state */ PlayerState => Unit): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
+    inline def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
     
-    @scala.inline
-    def setPlaylist(value: Boolean): Self = StObject.set(x, "playlist", value.asInstanceOf[js.Any])
+    inline def setPlaylist(value: Boolean): Self = StObject.set(x, "playlist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylistUndefined: Self = StObject.set(x, "playlist", js.undefined)
+    inline def setPlaylistUndefined: Self = StObject.set(x, "playlist", js.undefined)
     
-    @scala.inline
-    def setSize(value: WidgetSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: WidgetSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoHiLoLines")
 @js.native
-class IMsoHiLoLines protected ()
+/* private */ class IMsoHiLoLines ()
   extends StObject
      with typings.activexOffice.Office.IMsoHiLoLines {
   
@@ -28,7 +28,7 @@ class IMsoHiLoLines protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.IMsoHiLoLines_typekey")
   var OfficeDotIMsoHiLoLines_typekey: typings.activexOffice.Office.IMsoHiLoLines = js.native
   

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Environment extends StObject
 object Environment {
   
-  @scala.inline
-  def development: typings.plaidLink.plaidLinkStrings.development = "development".asInstanceOf[typings.plaidLink.plaidLinkStrings.development]
+  inline def development: typings.plaidLink.plaidLinkStrings.development = "development".asInstanceOf[typings.plaidLink.plaidLinkStrings.development]
   
-  @scala.inline
-  def production: typings.plaidLink.plaidLinkStrings.production = "production".asInstanceOf[typings.plaidLink.plaidLinkStrings.production]
+  inline def production: typings.plaidLink.plaidLinkStrings.production = "production".asInstanceOf[typings.plaidLink.plaidLinkStrings.production]
   
-  @scala.inline
-  def sandbox: typings.plaidLink.plaidLinkStrings.sandbox = "sandbox".asInstanceOf[typings.plaidLink.plaidLinkStrings.sandbox]
+  inline def sandbox: typings.plaidLink.plaidLinkStrings.sandbox = "sandbox".asInstanceOf[typings.plaidLink.plaidLinkStrings.sandbox]
 }

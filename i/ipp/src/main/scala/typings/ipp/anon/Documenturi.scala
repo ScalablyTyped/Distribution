@@ -34,8 +34,7 @@ trait Documenturi extends StObject {
 }
 object Documenturi {
   
-  @scala.inline
-  def apply(`document-uri`: String, `last-document`: Boolean, `requesting-user-name`: String): Documenturi = {
+  inline def apply(`document-uri`: String, `last-document`: Boolean, `requesting-user-name`: String): Documenturi = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("document-uri")(`document-uri`.asInstanceOf[js.Any])
     __obj.updateDynamic("last-document")(`last-document`.asInstanceOf[js.Any])
@@ -43,70 +42,48 @@ object Documenturi {
     __obj.asInstanceOf[Documenturi]
   }
   
-  @scala.inline
-  implicit class DocumenturiMutableBuilder[Self <: Documenturi] (val x: Self) extends AnyVal {
+  extension [Self <: Documenturi](x: Self) {
     
-    @scala.inline
-    def `setAttributes-charset`(value: CharacterSet): Self = StObject.set(x, "attributes-charset", value.asInstanceOf[js.Any])
+    inline def `setAttributes-charset`(value: CharacterSet): Self = StObject.set(x, "attributes-charset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAttributes-charsetUndefined`: Self = StObject.set(x, "attributes-charset", js.undefined)
+    inline def `setAttributes-charsetUndefined`: Self = StObject.set(x, "attributes-charset", js.undefined)
     
-    @scala.inline
-    def `setAttributes-natural-language`(value: String): Self = StObject.set(x, "attributes-natural-language", value.asInstanceOf[js.Any])
+    inline def `setAttributes-natural-language`(value: String): Self = StObject.set(x, "attributes-natural-language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAttributes-natural-languageUndefined`: Self = StObject.set(x, "attributes-natural-language", js.undefined)
+    inline def `setAttributes-natural-languageUndefined`: Self = StObject.set(x, "attributes-natural-language", js.undefined)
     
-    @scala.inline
-    def setCompression(value: typings.ipp.mod.Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: typings.ipp.mod.Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+    inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
-    @scala.inline
-    def `setDocument-format`(value: MimeMediaType): Self = StObject.set(x, "document-format", value.asInstanceOf[js.Any])
+    inline def `setDocument-format`(value: MimeMediaType): Self = StObject.set(x, "document-format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDocument-formatUndefined`: Self = StObject.set(x, "document-format", js.undefined)
+    inline def `setDocument-formatUndefined`: Self = StObject.set(x, "document-format", js.undefined)
     
-    @scala.inline
-    def `setDocument-name`(value: String): Self = StObject.set(x, "document-name", value.asInstanceOf[js.Any])
+    inline def `setDocument-name`(value: String): Self = StObject.set(x, "document-name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDocument-nameUndefined`: Self = StObject.set(x, "document-name", js.undefined)
+    inline def `setDocument-nameUndefined`: Self = StObject.set(x, "document-name", js.undefined)
     
-    @scala.inline
-    def `setDocument-natural-language`(value: String): Self = StObject.set(x, "document-natural-language", value.asInstanceOf[js.Any])
+    inline def `setDocument-natural-language`(value: String): Self = StObject.set(x, "document-natural-language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDocument-natural-languageUndefined`: Self = StObject.set(x, "document-natural-language", js.undefined)
+    inline def `setDocument-natural-languageUndefined`: Self = StObject.set(x, "document-natural-language", js.undefined)
     
-    @scala.inline
-    def `setDocument-uri`(value: String): Self = StObject.set(x, "document-uri", value.asInstanceOf[js.Any])
+    inline def `setDocument-uri`(value: String): Self = StObject.set(x, "document-uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setJob-id`(value: Double): Self = StObject.set(x, "job-id", value.asInstanceOf[js.Any])
+    inline def `setJob-id`(value: Double): Self = StObject.set(x, "job-id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setJob-idUndefined`: Self = StObject.set(x, "job-id", js.undefined)
+    inline def `setJob-idUndefined`: Self = StObject.set(x, "job-id", js.undefined)
     
-    @scala.inline
-    def `setJob-uri`(value: String): Self = StObject.set(x, "job-uri", value.asInstanceOf[js.Any])
+    inline def `setJob-uri`(value: String): Self = StObject.set(x, "job-uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setJob-uriUndefined`: Self = StObject.set(x, "job-uri", js.undefined)
+    inline def `setJob-uriUndefined`: Self = StObject.set(x, "job-uri", js.undefined)
     
-    @scala.inline
-    def `setLast-document`(value: Boolean): Self = StObject.set(x, "last-document", value.asInstanceOf[js.Any])
+    inline def `setLast-document`(value: Boolean): Self = StObject.set(x, "last-document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPrinter-uri`(value: String): Self = StObject.set(x, "printer-uri", value.asInstanceOf[js.Any])
+    inline def `setPrinter-uri`(value: String): Self = StObject.set(x, "printer-uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPrinter-uriUndefined`: Self = StObject.set(x, "printer-uri", js.undefined)
+    inline def `setPrinter-uriUndefined`: Self = StObject.set(x, "printer-uri", js.undefined)
     
-    @scala.inline
-    def `setRequesting-user-name`(value: String): Self = StObject.set(x, "requesting-user-name", value.asInstanceOf[js.Any])
+    inline def `setRequesting-user-name`(value: String): Self = StObject.set(x, "requesting-user-name", value.asInstanceOf[js.Any])
   }
 }

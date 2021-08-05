@@ -189,20 +189,16 @@ object dialogflowConvMod {
   }
   object DialogflowConversationOptions {
     
-    @scala.inline
-    def apply[TConvData, TUserStorage](): DialogflowConversationOptions[TConvData, TUserStorage] = {
+    inline def apply[TConvData, TUserStorage](): DialogflowConversationOptions[TConvData, TUserStorage] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DialogflowConversationOptions[TConvData, TUserStorage]]
     }
     
-    @scala.inline
-    implicit class DialogflowConversationOptionsMutableBuilder[Self <: DialogflowConversationOptions[?, ?], TConvData, TUserStorage] (val x: Self & (DialogflowConversationOptions[TConvData, TUserStorage])) extends AnyVal {
+    extension [Self <: DialogflowConversationOptions[?, ?], TConvData, TUserStorage](x: Self & (DialogflowConversationOptions[TConvData, TUserStorage])) {
       
-      @scala.inline
-      def setBody(value: GoogleCloudDialogflowV2WebhookRequest | DialogflowV1WebhookRequest): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: GoogleCloudDialogflowV2WebhookRequest | DialogflowV1WebhookRequest): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     }
   }
   
@@ -224,62 +220,44 @@ object dialogflowConvMod {
   }
   object GoogleAssistantResponse {
     
-    @scala.inline
-    def apply(): GoogleAssistantResponse = {
+    inline def apply(): GoogleAssistantResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GoogleAssistantResponse]
     }
     
-    @scala.inline
-    implicit class GoogleAssistantResponseMutableBuilder[Self <: GoogleAssistantResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GoogleAssistantResponse](x: Self) {
       
-      @scala.inline
-      def setExpectUserResponse(value: Boolean): Self = StObject.set(x, "expectUserResponse", value.asInstanceOf[js.Any])
+      inline def setExpectUserResponse(value: Boolean): Self = StObject.set(x, "expectUserResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectUserResponseUndefined: Self = StObject.set(x, "expectUserResponse", js.undefined)
+      inline def setExpectUserResponseUndefined: Self = StObject.set(x, "expectUserResponse", js.undefined)
       
-      @scala.inline
-      def setIsSsml(value: Boolean): Self = StObject.set(x, "isSsml", value.asInstanceOf[js.Any])
+      inline def setIsSsml(value: Boolean): Self = StObject.set(x, "isSsml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSsmlUndefined: Self = StObject.set(x, "isSsml", js.undefined)
+      inline def setIsSsmlUndefined: Self = StObject.set(x, "isSsml", js.undefined)
       
-      @scala.inline
-      def setNoInputPrompts(value: js.Array[GoogleActionsV2SimpleResponse]): Self = StObject.set(x, "noInputPrompts", value.asInstanceOf[js.Any])
+      inline def setNoInputPrompts(value: js.Array[GoogleActionsV2SimpleResponse]): Self = StObject.set(x, "noInputPrompts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoInputPromptsUndefined: Self = StObject.set(x, "noInputPrompts", js.undefined)
+      inline def setNoInputPromptsUndefined: Self = StObject.set(x, "noInputPrompts", js.undefined)
       
-      @scala.inline
-      def setNoInputPromptsVarargs(value: GoogleActionsV2SimpleResponse*): Self = StObject.set(x, "noInputPrompts", js.Array(value :_*))
+      inline def setNoInputPromptsVarargs(value: GoogleActionsV2SimpleResponse*): Self = StObject.set(x, "noInputPrompts", js.Array(value :_*))
       
-      @scala.inline
-      def setRichResponse(value: GoogleActionsV2RichResponse): Self = StObject.set(x, "richResponse", value.asInstanceOf[js.Any])
+      inline def setRichResponse(value: GoogleActionsV2RichResponse): Self = StObject.set(x, "richResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRichResponseUndefined: Self = StObject.set(x, "richResponse", js.undefined)
+      inline def setRichResponseUndefined: Self = StObject.set(x, "richResponse", js.undefined)
       
-      @scala.inline
-      def setSpeechBiasingHints(value: js.Array[String]): Self = StObject.set(x, "speechBiasingHints", value.asInstanceOf[js.Any])
+      inline def setSpeechBiasingHints(value: js.Array[String]): Self = StObject.set(x, "speechBiasingHints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeechBiasingHintsUndefined: Self = StObject.set(x, "speechBiasingHints", js.undefined)
+      inline def setSpeechBiasingHintsUndefined: Self = StObject.set(x, "speechBiasingHints", js.undefined)
       
-      @scala.inline
-      def setSpeechBiasingHintsVarargs(value: String*): Self = StObject.set(x, "speechBiasingHints", js.Array(value :_*))
+      inline def setSpeechBiasingHintsVarargs(value: String*): Self = StObject.set(x, "speechBiasingHints", js.Array(value :_*))
       
-      @scala.inline
-      def setSystemIntent(value: SystemIntent): Self = StObject.set(x, "systemIntent", value.asInstanceOf[js.Any])
+      inline def setSystemIntent(value: SystemIntent): Self = StObject.set(x, "systemIntent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystemIntentUndefined: Self = StObject.set(x, "systemIntent", js.undefined)
+      inline def setSystemIntentUndefined: Self = StObject.set(x, "systemIntent", js.undefined)
       
-      @scala.inline
-      def setUserStorage(value: String): Self = StObject.set(x, "userStorage", value.asInstanceOf[js.Any])
+      inline def setUserStorage(value: String): Self = StObject.set(x, "userStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserStorageUndefined: Self = StObject.set(x, "userStorage", js.undefined)
+      inline def setUserStorageUndefined: Self = StObject.set(x, "userStorage", js.undefined)
     }
   }
   
@@ -289,17 +267,14 @@ object dialogflowConvMod {
   }
   object PayloadGoogle {
     
-    @scala.inline
-    def apply(google: GoogleAssistantResponse): PayloadGoogle = {
+    inline def apply(google: GoogleAssistantResponse): PayloadGoogle = {
       val __obj = js.Dynamic.literal(google = google.asInstanceOf[js.Any])
       __obj.asInstanceOf[PayloadGoogle]
     }
     
-    @scala.inline
-    implicit class PayloadGoogleMutableBuilder[Self <: PayloadGoogle] (val x: Self) extends AnyVal {
+    extension [Self <: PayloadGoogle](x: Self) {
       
-      @scala.inline
-      def setGoogle(value: GoogleAssistantResponse): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
+      inline def setGoogle(value: GoogleAssistantResponse): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
     }
   }
   
@@ -311,20 +286,16 @@ object dialogflowConvMod {
   }
   object SystemIntent {
     
-    @scala.inline
-    def apply(data: ProtoAnystringJsonObject, intent: String): SystemIntent = {
+    inline def apply(data: ProtoAnystringJsonObject, intent: String): SystemIntent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any])
       __obj.asInstanceOf[SystemIntent]
     }
     
-    @scala.inline
-    implicit class SystemIntentMutableBuilder[Self <: SystemIntent] (val x: Self) extends AnyVal {
+    extension [Self <: SystemIntent](x: Self) {
       
-      @scala.inline
-      def setData(value: ProtoAnystringJsonObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ProtoAnystringJsonObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+      inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     }
   }
 }

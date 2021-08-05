@@ -18,8 +18,7 @@ trait GetBlockPublicAccessConfigurationOutput extends StObject {
 }
 object GetBlockPublicAccessConfigurationOutput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BlockPublicAccessConfiguration: BlockPublicAccessConfiguration,
     BlockPublicAccessConfigurationMetadata: BlockPublicAccessConfigurationMetadata
   ): GetBlockPublicAccessConfigurationOutput = {
@@ -27,13 +26,10 @@ object GetBlockPublicAccessConfigurationOutput {
     __obj.asInstanceOf[GetBlockPublicAccessConfigurationOutput]
   }
   
-  @scala.inline
-  implicit class GetBlockPublicAccessConfigurationOutputMutableBuilder[Self <: GetBlockPublicAccessConfigurationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBlockPublicAccessConfigurationOutput](x: Self) {
     
-    @scala.inline
-    def setBlockPublicAccessConfiguration(value: BlockPublicAccessConfiguration): Self = StObject.set(x, "BlockPublicAccessConfiguration", value.asInstanceOf[js.Any])
+    inline def setBlockPublicAccessConfiguration(value: BlockPublicAccessConfiguration): Self = StObject.set(x, "BlockPublicAccessConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockPublicAccessConfigurationMetadata(value: BlockPublicAccessConfigurationMetadata): Self = StObject.set(x, "BlockPublicAccessConfigurationMetadata", value.asInstanceOf[js.Any])
+    inline def setBlockPublicAccessConfigurationMetadata(value: BlockPublicAccessConfigurationMetadata): Self = StObject.set(x, "BlockPublicAccessConfigurationMetadata", value.asInstanceOf[js.Any])
   }
 }

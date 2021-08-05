@@ -10,6 +10,5 @@ object dynamicobjectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createDynamicObservableObject(base: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createDynamicObservableObject")(base.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createDynamicObservableObject(base: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createDynamicObservableObject")(base.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMDragEvent")
 @js.native
-class DOMDragEvent protected ()
+/* private */ class DOMDragEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMDragEvent {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.DOMDragEvent_typekey")
   var MSHTMLDotDOMDragEvent_typekey: typings.activexMshtml.MSHTML.DOMDragEvent = js.native
   

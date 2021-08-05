@@ -25,52 +25,37 @@ trait TermsAndConditionsAcceptanceStatus
 }
 object TermsAndConditionsAcceptanceStatus {
   
-  @scala.inline
-  def apply(): TermsAndConditionsAcceptanceStatus = {
+  inline def apply(): TermsAndConditionsAcceptanceStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TermsAndConditionsAcceptanceStatus]
   }
   
-  @scala.inline
-  implicit class TermsAndConditionsAcceptanceStatusMutableBuilder[Self <: TermsAndConditionsAcceptanceStatus] (val x: Self) extends AnyVal {
+  extension [Self <: TermsAndConditionsAcceptanceStatus](x: Self) {
     
-    @scala.inline
-    def setAcceptedDateTime(value: String): Self = StObject.set(x, "acceptedDateTime", value.asInstanceOf[js.Any])
+    inline def setAcceptedDateTime(value: String): Self = StObject.set(x, "acceptedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptedDateTimeUndefined: Self = StObject.set(x, "acceptedDateTime", js.undefined)
+    inline def setAcceptedDateTimeUndefined: Self = StObject.set(x, "acceptedDateTime", js.undefined)
     
-    @scala.inline
-    def setAcceptedVersion(value: Double): Self = StObject.set(x, "acceptedVersion", value.asInstanceOf[js.Any])
+    inline def setAcceptedVersion(value: Double): Self = StObject.set(x, "acceptedVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptedVersionUndefined: Self = StObject.set(x, "acceptedVersion", js.undefined)
+    inline def setAcceptedVersionUndefined: Self = StObject.set(x, "acceptedVersion", js.undefined)
     
-    @scala.inline
-    def setTermsAndConditions(value: NullableOption[TermsAndConditions]): Self = StObject.set(x, "termsAndConditions", value.asInstanceOf[js.Any])
+    inline def setTermsAndConditions(value: NullableOption[TermsAndConditions]): Self = StObject.set(x, "termsAndConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsAndConditionsNull: Self = StObject.set(x, "termsAndConditions", null)
+    inline def setTermsAndConditionsNull: Self = StObject.set(x, "termsAndConditions", null)
     
-    @scala.inline
-    def setTermsAndConditionsUndefined: Self = StObject.set(x, "termsAndConditions", js.undefined)
+    inline def setTermsAndConditionsUndefined: Self = StObject.set(x, "termsAndConditions", js.undefined)
     
-    @scala.inline
-    def setUserDisplayName(value: NullableOption[String]): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
+    inline def setUserDisplayName(value: NullableOption[String]): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDisplayNameNull: Self = StObject.set(x, "userDisplayName", null)
+    inline def setUserDisplayNameNull: Self = StObject.set(x, "userDisplayName", null)
     
-    @scala.inline
-    def setUserDisplayNameUndefined: Self = StObject.set(x, "userDisplayName", js.undefined)
+    inline def setUserDisplayNameUndefined: Self = StObject.set(x, "userDisplayName", js.undefined)
     
-    @scala.inline
-    def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
+    inline def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
+    inline def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
     
-    @scala.inline
-    def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
+    inline def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
   }
 }

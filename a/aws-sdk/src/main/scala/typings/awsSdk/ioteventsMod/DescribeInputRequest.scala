@@ -13,16 +13,13 @@ trait DescribeInputRequest extends StObject {
 }
 object DescribeInputRequest {
   
-  @scala.inline
-  def apply(inputName: InputName): DescribeInputRequest = {
+  inline def apply(inputName: InputName): DescribeInputRequest = {
     val __obj = js.Dynamic.literal(inputName = inputName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInputRequest]
   }
   
-  @scala.inline
-  implicit class DescribeInputRequestMutableBuilder[Self <: DescribeInputRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInputRequest](x: Self) {
     
-    @scala.inline
-    def setInputName(value: InputName): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
+    inline def setInputName(value: InputName): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
   }
 }

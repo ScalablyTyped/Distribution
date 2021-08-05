@@ -14,19 +14,15 @@ trait ReindexRethrottleParams
 }
 object ReindexRethrottleParams {
   
-  @scala.inline
-  def apply(requestsPerSecond: Double, taskId: String): ReindexRethrottleParams = {
+  inline def apply(requestsPerSecond: Double, taskId: String): ReindexRethrottleParams = {
     val __obj = js.Dynamic.literal(requestsPerSecond = requestsPerSecond.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReindexRethrottleParams]
   }
   
-  @scala.inline
-  implicit class ReindexRethrottleParamsMutableBuilder[Self <: ReindexRethrottleParams] (val x: Self) extends AnyVal {
+  extension [Self <: ReindexRethrottleParams](x: Self) {
     
-    @scala.inline
-    def setRequestsPerSecond(value: Double): Self = StObject.set(x, "requestsPerSecond", value.asInstanceOf[js.Any])
+    inline def setRequestsPerSecond(value: Double): Self = StObject.set(x, "requestsPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

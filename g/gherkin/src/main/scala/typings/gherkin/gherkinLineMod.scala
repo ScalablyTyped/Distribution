@@ -35,10 +35,10 @@ object gherkinLineMod {
     /* CompleteClass */
     var isEmpty: Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val lineNumber: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val lineText: js.Any = js.native
     
     /* CompleteClass */
@@ -70,9 +70,9 @@ object gherkinLineMod {
     
     var isEmpty: Boolean
     
-    val lineNumber: js.Any
+    /* private */ val lineNumber: js.Any
     
-    val lineText: js.Any
+    /* private */ val lineText: js.Any
     
     def startsWith(prefix: String): Boolean
     
@@ -84,8 +84,7 @@ object gherkinLineMod {
   }
   object GherkinLine {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       column: Double,
       getLineText: Double => String,
       getRestTrimmed: Double => String,
@@ -104,47 +103,33 @@ object gherkinLineMod {
       __obj.asInstanceOf[GherkinLine]
     }
     
-    @scala.inline
-    implicit class GherkinLineMutableBuilder[Self <: GherkinLine] (val x: Self) extends AnyVal {
+    extension [Self <: GherkinLine](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetLineText(value: Double => String): Self = StObject.set(x, "getLineText", js.Any.fromFunction1(value))
+      inline def setGetLineText(value: Double => String): Self = StObject.set(x, "getLineText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRestTrimmed(value: Double => String): Self = StObject.set(x, "getRestTrimmed", js.Any.fromFunction1(value))
+      inline def setGetRestTrimmed(value: Double => String): Self = StObject.set(x, "getRestTrimmed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTableCells(value: () => js.Array[Column]): Self = StObject.set(x, "getTableCells", js.Any.fromFunction0(value))
+      inline def setGetTableCells(value: () => js.Array[Column]): Self = StObject.set(x, "getTableCells", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTags(value: () => js.Array[Column]): Self = StObject.set(x, "getTags", js.Any.fromFunction0(value))
+      inline def setGetTags(value: () => js.Array[Column]): Self = StObject.set(x, "getTags", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+      inline def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumber(value: js.Any): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: js.Any): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineText(value: js.Any): Self = StObject.set(x, "lineText", value.asInstanceOf[js.Any])
+      inline def setLineText(value: js.Any): Self = StObject.set(x, "lineText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartsWith(value: String => Boolean): Self = StObject.set(x, "startsWith", js.Any.fromFunction1(value))
+      inline def setStartsWith(value: String => Boolean): Self = StObject.set(x, "startsWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartsWithTitleKeyword(value: String => Boolean): Self = StObject.set(x, "startsWithTitleKeyword", js.Any.fromFunction1(value))
+      inline def setStartsWithTitleKeyword(value: String => Boolean): Self = StObject.set(x, "startsWithTitleKeyword", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimmedLineText(value: String): Self = StObject.set(x, "trimmedLineText", value.asInstanceOf[js.Any])
+      inline def setTrimmedLineText(value: String): Self = StObject.set(x, "trimmedLineText", value.asInstanceOf[js.Any])
     }
   }
 }

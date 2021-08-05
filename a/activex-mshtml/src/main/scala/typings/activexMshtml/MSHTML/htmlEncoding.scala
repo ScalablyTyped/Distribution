@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlEncoding extends StObject
 object htmlEncoding {
   
-  @scala.inline
-  def htmlEncodingMultipart: `1` = 1.asInstanceOf[`1`]
+  inline def htmlEncodingMultipart: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def htmlEncodingText: `2` = 2.asInstanceOf[`2`]
+  inline def htmlEncodingText: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def htmlEncodingURL: `0` = 0.asInstanceOf[`0`]
+  inline def htmlEncodingURL: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def htmlEncoding_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlEncoding_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

@@ -6,32 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 /* static member */
-@scala.inline
-def defaultListenPort: scala.Double = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultListenPort").asInstanceOf[scala.Double]
-@scala.inline
-def defaultListenPort_=(x: scala.Double): scala.Unit = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].updateDynamic("defaultListenPort")(x.asInstanceOf[js.Any])
+inline def defaultListenPort: scala.Double = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultListenPort").asInstanceOf[scala.Double]
+inline def defaultListenPort_=(x: scala.Double): scala.Unit = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].updateDynamic("defaultListenPort")(x.asInstanceOf[js.Any])
 
 /* static member */
-@scala.inline
-def defaultServer: java.lang.String = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultServer").asInstanceOf[java.lang.String]
-@scala.inline
-def defaultServer_=(x: java.lang.String): scala.Unit = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].updateDynamic("defaultServer")(x.asInstanceOf[js.Any])
+inline def defaultServer: java.lang.String = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultServer").asInstanceOf[java.lang.String]
+inline def defaultServer_=(x: java.lang.String): scala.Unit = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].updateDynamic("defaultServer")(x.asInstanceOf[js.Any])
 
 /* static member */
-@scala.inline
-def defaultWaitResultsPort: scala.Double = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultWaitResultsPort").asInstanceOf[scala.Double]
-@scala.inline
-def defaultWaitResultsPort_=(x: scala.Double): scala.Unit = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].updateDynamic("defaultWaitResultsPort")(x.asInstanceOf[js.Any])
+inline def defaultWaitResultsPort: scala.Double = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultWaitResultsPort").asInstanceOf[scala.Double]
+inline def defaultWaitResultsPort_=(x: scala.Double): scala.Unit = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].updateDynamic("defaultWaitResultsPort")(x.asInstanceOf[js.Any])
 
 /* static member */
-@scala.inline
-def scriptToString(script: typings.webpagetest.mod.TestScript): java.lang.String = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].applyDynamic("scriptToString")(script.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def scriptToString(script: typings.webpagetest.mod.TestScript): java.lang.String = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].applyDynamic("scriptToString")(script.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
 
 /* static member */
-@scala.inline
-def version: java.lang.String = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
-@scala.inline
-def version_=(x: java.lang.String): scala.Unit = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+inline def version: java.lang.String = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+inline def version_=(x: java.lang.String): scala.Unit = typings.webpagetest.mod.^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 
 type Callback[R] = js.Function3[
 /* err */ js.UndefOr[typings.std.Error], 

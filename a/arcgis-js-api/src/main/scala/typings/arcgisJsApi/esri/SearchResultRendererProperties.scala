@@ -24,25 +24,19 @@ trait SearchResultRendererProperties
 }
 object SearchResultRendererProperties {
   
-  @scala.inline
-  def apply(): SearchResultRendererProperties = {
+  inline def apply(): SearchResultRendererProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchResultRendererProperties]
   }
   
-  @scala.inline
-  implicit class SearchResultRendererPropertiesMutableBuilder[Self <: SearchResultRendererProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SearchResultRendererProperties](x: Self) {
     
-    @scala.inline
-    def setShowMoreResultsOpen(value: Boolean): Self = StObject.set(x, "showMoreResultsOpen", value.asInstanceOf[js.Any])
+    inline def setShowMoreResultsOpen(value: Boolean): Self = StObject.set(x, "showMoreResultsOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMoreResultsOpenUndefined: Self = StObject.set(x, "showMoreResultsOpen", js.undefined)
+    inline def setShowMoreResultsOpenUndefined: Self = StObject.set(x, "showMoreResultsOpen", js.undefined)
     
-    @scala.inline
-    def setViewModel(value: SearchViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: SearchViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

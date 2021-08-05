@@ -13,14 +13,10 @@ object getElasticIpMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getElasticIp(): js.Promise[GetElasticIpResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElasticIp")().asInstanceOf[js.Promise[GetElasticIpResult]]
-  @scala.inline
-  def getElasticIp(args: Unit, opts: InvokeOptions): js.Promise[GetElasticIpResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElasticIp")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetElasticIpResult]]
-  @scala.inline
-  def getElasticIp(args: GetElasticIpArgs): js.Promise[GetElasticIpResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElasticIp")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetElasticIpResult]]
-  @scala.inline
-  def getElasticIp(args: GetElasticIpArgs, opts: InvokeOptions): js.Promise[GetElasticIpResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElasticIp")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetElasticIpResult]]
+  inline def getElasticIp(): js.Promise[GetElasticIpResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElasticIp")().asInstanceOf[js.Promise[GetElasticIpResult]]
+  inline def getElasticIp(args: Unit, opts: InvokeOptions): js.Promise[GetElasticIpResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElasticIp")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetElasticIpResult]]
+  inline def getElasticIp(args: GetElasticIpArgs): js.Promise[GetElasticIpResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElasticIp")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetElasticIpResult]]
+  inline def getElasticIp(args: GetElasticIpArgs, opts: InvokeOptions): js.Promise[GetElasticIpResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElasticIp")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetElasticIpResult]]
   
   trait GetElasticIpArgs extends StObject {
     
@@ -46,41 +42,30 @@ object getElasticIpMod {
   }
   object GetElasticIpArgs {
     
-    @scala.inline
-    def apply(): GetElasticIpArgs = {
+    inline def apply(): GetElasticIpArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetElasticIpArgs]
     }
     
-    @scala.inline
-    implicit class GetElasticIpArgsMutableBuilder[Self <: GetElasticIpArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetElasticIpArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetElasticIpFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetElasticIpFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetElasticIpFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetElasticIpFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setPublicIp(value: String): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
+      inline def setPublicIp(value: String): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicIpUndefined: Self = StObject.set(x, "publicIp", js.undefined)
+      inline def setPublicIpUndefined: Self = StObject.set(x, "publicIp", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -160,8 +145,7 @@ object getElasticIpMod {
   }
   object GetElasticIpResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       associationId: String,
       customerOwnedIp: String,
       customerOwnedIpv4Pool: String,
@@ -181,59 +165,41 @@ object getElasticIpMod {
       __obj.asInstanceOf[GetElasticIpResult]
     }
     
-    @scala.inline
-    implicit class GetElasticIpResultMutableBuilder[Self <: GetElasticIpResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetElasticIpResult](x: Self) {
       
-      @scala.inline
-      def setAssociationId(value: String): Self = StObject.set(x, "associationId", value.asInstanceOf[js.Any])
+      inline def setAssociationId(value: String): Self = StObject.set(x, "associationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerOwnedIp(value: String): Self = StObject.set(x, "customerOwnedIp", value.asInstanceOf[js.Any])
+      inline def setCustomerOwnedIp(value: String): Self = StObject.set(x, "customerOwnedIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerOwnedIpv4Pool(value: String): Self = StObject.set(x, "customerOwnedIpv4Pool", value.asInstanceOf[js.Any])
+      inline def setCustomerOwnedIpv4Pool(value: String): Self = StObject.set(x, "customerOwnedIpv4Pool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.GetElasticIpFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.GetElasticIpFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.GetElasticIpFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.GetElasticIpFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfaceId(value: String): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
+      inline def setNetworkInterfaceId(value: String): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfaceOwnerId(value: String): Self = StObject.set(x, "networkInterfaceOwnerId", value.asInstanceOf[js.Any])
+      inline def setNetworkInterfaceOwnerId(value: String): Self = StObject.set(x, "networkInterfaceOwnerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateDns(value: String): Self = StObject.set(x, "privateDns", value.asInstanceOf[js.Any])
+      inline def setPrivateDns(value: String): Self = StObject.set(x, "privateDns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateIp(value: String): Self = StObject.set(x, "privateIp", value.asInstanceOf[js.Any])
+      inline def setPrivateIp(value: String): Self = StObject.set(x, "privateIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicDns(value: String): Self = StObject.set(x, "publicDns", value.asInstanceOf[js.Any])
+      inline def setPublicDns(value: String): Self = StObject.set(x, "publicDns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicIp(value: String): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
+      inline def setPublicIp(value: String): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicIpv4Pool(value: String): Self = StObject.set(x, "publicIpv4Pool", value.asInstanceOf[js.Any])
+      inline def setPublicIpv4Pool(value: String): Self = StObject.set(x, "publicIpv4Pool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,19 +13,15 @@ trait ApplicationVersionDescriptionMessage extends StObject {
 }
 object ApplicationVersionDescriptionMessage {
   
-  @scala.inline
-  def apply(): ApplicationVersionDescriptionMessage = {
+  inline def apply(): ApplicationVersionDescriptionMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationVersionDescriptionMessage]
   }
   
-  @scala.inline
-  implicit class ApplicationVersionDescriptionMessageMutableBuilder[Self <: ApplicationVersionDescriptionMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationVersionDescriptionMessage](x: Self) {
     
-    @scala.inline
-    def setApplicationVersion(value: ApplicationVersionDescription): Self = StObject.set(x, "ApplicationVersion", value.asInstanceOf[js.Any])
+    inline def setApplicationVersion(value: ApplicationVersionDescription): Self = StObject.set(x, "ApplicationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVersionUndefined: Self = StObject.set(x, "ApplicationVersion", js.undefined)
+    inline def setApplicationVersionUndefined: Self = StObject.set(x, "ApplicationVersion", js.undefined)
   }
 }

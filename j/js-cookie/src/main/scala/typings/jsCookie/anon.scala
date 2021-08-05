@@ -16,26 +16,20 @@ object anon {
   }
   object Read {
     
-    @scala.inline
-    def apply[TConv /* <: js.Object */](): Read[TConv] = {
+    inline def apply[TConv /* <: js.Object */](): Read[TConv] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Read[TConv]]
     }
     
-    @scala.inline
-    implicit class ReadMutableBuilder[Self <: Read[?], TConv /* <: js.Object */] (val x: Self & Read[TConv]) extends AnyVal {
+    extension [Self <: Read[?], TConv /* <: js.Object */](x: Self & Read[TConv]) {
       
-      @scala.inline
-      def setRead(value: (/* value */ String, /* name */ String) => String): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
+      inline def setRead(value: (/* value */ String, /* name */ String) => String): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+      inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
       
-      @scala.inline
-      def setWrite(value: (/* value */ String | TConv, /* name */ String) => String): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
+      inline def setWrite(value: (/* value */ String | TConv, /* name */ String) => String): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+      inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
     }
   }
 }

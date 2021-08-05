@@ -26,9 +26,7 @@ object AssociationType {
   @JSImport("mendixmodelsdk", "domainmodels.AssociationType.ReferenceSet")
   @js.native
   def ReferenceSet: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationType = js.native
-  @scala.inline
-  def ReferenceSet_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReferenceSet")(x.asInstanceOf[js.Any])
+  inline def ReferenceSet_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReferenceSet")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Reference_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reference")(x.asInstanceOf[js.Any])
+  inline def Reference_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reference")(x.asInstanceOf[js.Any])
 }

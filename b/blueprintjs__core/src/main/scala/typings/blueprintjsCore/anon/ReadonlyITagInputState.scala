@@ -17,28 +17,21 @@ trait ReadonlyITagInputState extends StObject {
 }
 object ReadonlyITagInputState {
   
-  @scala.inline
-  def apply(activeIndex: Double, inputValue: String, isInputFocused: Boolean): ReadonlyITagInputState = {
+  inline def apply(activeIndex: Double, inputValue: String, isInputFocused: Boolean): ReadonlyITagInputState = {
     val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any], isInputFocused = isInputFocused.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyITagInputState]
   }
   
-  @scala.inline
-  implicit class ReadonlyITagInputStateMutableBuilder[Self <: ReadonlyITagInputState] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyITagInputState](x: Self) {
     
-    @scala.inline
-    def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+    inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+    inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInputFocused(value: Boolean): Self = StObject.set(x, "isInputFocused", value.asInstanceOf[js.Any])
+    inline def setIsInputFocused(value: Boolean): Self = StObject.set(x, "isInputFocused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevInputValueProp(value: String): Self = StObject.set(x, "prevInputValueProp", value.asInstanceOf[js.Any])
+    inline def setPrevInputValueProp(value: String): Self = StObject.set(x, "prevInputValueProp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevInputValuePropUndefined: Self = StObject.set(x, "prevInputValueProp", js.undefined)
+    inline def setPrevInputValuePropUndefined: Self = StObject.set(x, "prevInputValueProp", js.undefined)
   }
 }

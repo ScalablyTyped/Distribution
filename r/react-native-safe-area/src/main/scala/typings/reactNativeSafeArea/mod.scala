@@ -28,18 +28,14 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def addEventListener(eventType: EventType, listener: js.Function1[/* payload */ EventPayload, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(eventType: EventType, listener: js.Function1[/* payload */ EventPayload, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def getSafeAreaInsetsForRootView(): js.Promise[EventPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSafeAreaInsetsForRootView")().asInstanceOf[js.Promise[EventPayload]]
+    inline def getSafeAreaInsetsForRootView(): js.Promise[EventPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSafeAreaInsetsForRootView")().asInstanceOf[js.Promise[EventPayload]]
     
-    @scala.inline
-    def removeEventListener(eventType: EventType, listener: js.Function1[/* payload */ EventPayload, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(eventType: EventType, listener: js.Function1[/* payload */ EventPayload, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def withSafeArea_absolutePosition[P](
+  inline def withSafeArea_absolutePosition[P](
     WrappedComponent: ComponentType[P],
     /**
     * @default 'margin'
@@ -51,8 +47,7 @@ object mod {
   direction: Direction
   ): ComponentType[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSafeArea")(WrappedComponent.asInstanceOf[js.Any], applyTo.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[ComponentType[P]]
   
-  @scala.inline
-  def withSafeArea_contentInset[P](
+  inline def withSafeArea_contentInset[P](
     WrappedComponent: ComponentType[P],
     /**
     * @default 'margin'
@@ -64,8 +59,7 @@ object mod {
   direction: Direction
   ): ComponentType[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSafeArea")(WrappedComponent.asInstanceOf[js.Any], applyTo.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[ComponentType[P]]
   
-  @scala.inline
-  def withSafeArea_margin[P](
+  inline def withSafeArea_margin[P](
     WrappedComponent: ComponentType[P],
     /**
     * @default 'margin'
@@ -77,8 +71,7 @@ object mod {
   direction: Direction
   ): ComponentType[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSafeArea")(WrappedComponent.asInstanceOf[js.Any], applyTo.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[ComponentType[P]]
   
-  @scala.inline
-  def withSafeArea_padding[P](
+  inline def withSafeArea_padding[P](
     WrappedComponent: ComponentType[P],
     /**
     * @default 'margin'
@@ -115,62 +108,43 @@ object mod {
   trait Direction extends StObject
   object Direction {
     
-    @scala.inline
-    def all: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.all = "all".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.all]
+    inline def all: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.all = "all".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.all]
     
-    @scala.inline
-    def bottom: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottom = "bottom".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottom]
+    inline def bottom: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottom = "bottom".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottom]
     
-    @scala.inline
-    def bottomAndLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomAndLeft = "bottomAndLeft".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomAndLeft]
+    inline def bottomAndLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomAndLeft = "bottomAndLeft".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomAndLeft]
     
-    @scala.inline
-    def bottomAndRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomAndRight = "bottomAndRight".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomAndRight]
+    inline def bottomAndRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomAndRight = "bottomAndRight".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomAndRight]
     
-    @scala.inline
-    def bottomLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomLeft]
+    inline def bottomLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomLeft = "bottomLeft".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomLeft]
     
-    @scala.inline
-    def bottomRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomRight = "bottomRight".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomRight]
+    inline def bottomRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomRight = "bottomRight".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.bottomRight]
     
-    @scala.inline
-    def horizontal: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontal = "horizontal".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontal]
+    inline def horizontal: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontal = "horizontal".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontal]
     
-    @scala.inline
-    def horizontalAndBottom: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontalAndBottom = "horizontalAndBottom".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontalAndBottom]
+    inline def horizontalAndBottom: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontalAndBottom = "horizontalAndBottom".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontalAndBottom]
     
-    @scala.inline
-    def horizontalAndTop: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontalAndTop = "horizontalAndTop".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontalAndTop]
+    inline def horizontalAndTop: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontalAndTop = "horizontalAndTop".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.horizontalAndTop]
     
-    @scala.inline
-    def left: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.left = "left".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.left]
+    inline def left: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.left = "left".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.left]
     
-    @scala.inline
-    def right: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.right = "right".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.right]
+    inline def right: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.right = "right".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.right]
     
-    @scala.inline
-    def top: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.top = "top".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.top]
+    inline def top: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.top = "top".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.top]
     
-    @scala.inline
-    def topAndLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topAndLeft = "topAndLeft".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topAndLeft]
+    inline def topAndLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topAndLeft = "topAndLeft".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topAndLeft]
     
-    @scala.inline
-    def topAndRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topAndRight = "topAndRight".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topAndRight]
+    inline def topAndRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topAndRight = "topAndRight".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topAndRight]
     
-    @scala.inline
-    def topLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topLeft = "topLeft".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topLeft]
+    inline def topLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topLeft = "topLeft".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topLeft]
     
-    @scala.inline
-    def topRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topRight = "topRight".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topRight]
+    inline def topRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topRight = "topRight".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.topRight]
     
-    @scala.inline
-    def vertical: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.vertical = "vertical".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.vertical]
+    inline def vertical: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.vertical = "vertical".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.vertical]
     
-    @scala.inline
-    def verticalAndLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.verticalAndLeft = "verticalAndLeft".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.verticalAndLeft]
+    inline def verticalAndLeft: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.verticalAndLeft = "verticalAndLeft".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.verticalAndLeft]
     
-    @scala.inline
-    def verticalAndRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.verticalAndRight = "verticalAndRight".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.verticalAndRight]
+    inline def verticalAndRight: typings.reactNativeSafeArea.reactNativeSafeAreaStrings.verticalAndRight = "verticalAndRight".asInstanceOf[typings.reactNativeSafeArea.reactNativeSafeAreaStrings.verticalAndRight]
   }
   
   trait EventPayload extends StObject {
@@ -179,17 +153,14 @@ object mod {
   }
   object EventPayload {
     
-    @scala.inline
-    def apply(safeAreaInsets: SafeAreaInsets): EventPayload = {
+    inline def apply(safeAreaInsets: SafeAreaInsets): EventPayload = {
       val __obj = js.Dynamic.literal(safeAreaInsets = safeAreaInsets.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventPayload]
     }
     
-    @scala.inline
-    implicit class EventPayloadMutableBuilder[Self <: EventPayload] (val x: Self) extends AnyVal {
+    extension [Self <: EventPayload](x: Self) {
       
-      @scala.inline
-      def setSafeAreaInsets(value: SafeAreaInsets): Self = StObject.set(x, "safeAreaInsets", value.asInstanceOf[js.Any])
+      inline def setSafeAreaInsets(value: SafeAreaInsets): Self = StObject.set(x, "safeAreaInsets", value.asInstanceOf[js.Any])
     }
   }
   
@@ -210,26 +181,20 @@ object mod {
   }
   object SafeAreaInsets {
     
-    @scala.inline
-    def apply(bottom: Double, left: Double, right: Double, top: Double): SafeAreaInsets = {
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double): SafeAreaInsets = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[SafeAreaInsets]
     }
     
-    @scala.inline
-    implicit class SafeAreaInsetsMutableBuilder[Self <: SafeAreaInsets] (val x: Self) extends AnyVal {
+    extension [Self <: SafeAreaInsets](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
 }

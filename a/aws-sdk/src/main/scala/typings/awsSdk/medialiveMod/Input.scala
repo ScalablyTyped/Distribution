@@ -79,121 +79,83 @@ trait Input extends StObject {
 }
 object Input {
   
-  @scala.inline
-  def apply(): Input = {
+  inline def apply(): Input = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Input]
   }
   
-  @scala.inline
-  implicit class InputMutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
+  extension [Self <: Input](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setAttachedChannels(value: listOfString): Self = StObject.set(x, "AttachedChannels", value.asInstanceOf[js.Any])
+    inline def setAttachedChannels(value: listOfString): Self = StObject.set(x, "AttachedChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachedChannelsUndefined: Self = StObject.set(x, "AttachedChannels", js.undefined)
+    inline def setAttachedChannelsUndefined: Self = StObject.set(x, "AttachedChannels", js.undefined)
     
-    @scala.inline
-    def setAttachedChannelsVarargs(value: string*): Self = StObject.set(x, "AttachedChannels", js.Array(value :_*))
+    inline def setAttachedChannelsVarargs(value: string*): Self = StObject.set(x, "AttachedChannels", js.Array(value :_*))
     
-    @scala.inline
-    def setDestinations(value: listOfInputDestination): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
+    inline def setDestinations(value: listOfInputDestination): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
+    inline def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
-    @scala.inline
-    def setDestinationsVarargs(value: InputDestination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: InputDestination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setInputClass(value: InputClass): Self = StObject.set(x, "InputClass", value.asInstanceOf[js.Any])
+    inline def setInputClass(value: InputClass): Self = StObject.set(x, "InputClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputClassUndefined: Self = StObject.set(x, "InputClass", js.undefined)
+    inline def setInputClassUndefined: Self = StObject.set(x, "InputClass", js.undefined)
     
-    @scala.inline
-    def setInputDevices(value: listOfInputDeviceSettings): Self = StObject.set(x, "InputDevices", value.asInstanceOf[js.Any])
+    inline def setInputDevices(value: listOfInputDeviceSettings): Self = StObject.set(x, "InputDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDevicesUndefined: Self = StObject.set(x, "InputDevices", js.undefined)
+    inline def setInputDevicesUndefined: Self = StObject.set(x, "InputDevices", js.undefined)
     
-    @scala.inline
-    def setInputDevicesVarargs(value: InputDeviceSettings*): Self = StObject.set(x, "InputDevices", js.Array(value :_*))
+    inline def setInputDevicesVarargs(value: InputDeviceSettings*): Self = StObject.set(x, "InputDevices", js.Array(value :_*))
     
-    @scala.inline
-    def setInputSourceType(value: InputSourceType): Self = StObject.set(x, "InputSourceType", value.asInstanceOf[js.Any])
+    inline def setInputSourceType(value: InputSourceType): Self = StObject.set(x, "InputSourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputSourceTypeUndefined: Self = StObject.set(x, "InputSourceType", js.undefined)
+    inline def setInputSourceTypeUndefined: Self = StObject.set(x, "InputSourceType", js.undefined)
     
-    @scala.inline
-    def setMediaConnectFlows(value: listOfMediaConnectFlow): Self = StObject.set(x, "MediaConnectFlows", value.asInstanceOf[js.Any])
+    inline def setMediaConnectFlows(value: listOfMediaConnectFlow): Self = StObject.set(x, "MediaConnectFlows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaConnectFlowsUndefined: Self = StObject.set(x, "MediaConnectFlows", js.undefined)
+    inline def setMediaConnectFlowsUndefined: Self = StObject.set(x, "MediaConnectFlows", js.undefined)
     
-    @scala.inline
-    def setMediaConnectFlowsVarargs(value: MediaConnectFlow*): Self = StObject.set(x, "MediaConnectFlows", js.Array(value :_*))
+    inline def setMediaConnectFlowsVarargs(value: MediaConnectFlow*): Self = StObject.set(x, "MediaConnectFlows", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
-    @scala.inline
-    def setSecurityGroups(value: listOfString): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
+    inline def setSecurityGroups(value: listOfString): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
+    inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setSources(value: listOfInputSource): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: listOfInputSource): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
     
-    @scala.inline
-    def setSourcesVarargs(value: InputSource*): Self = StObject.set(x, "Sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: InputSource*): Self = StObject.set(x, "Sources", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: InputState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: InputState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setType(value: InputType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: InputType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

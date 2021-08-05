@@ -10,16 +10,13 @@ trait CameraRollEdgeInfo extends StObject {
 }
 object CameraRollEdgeInfo {
   
-  @scala.inline
-  def apply(node: CameraRollNodeInfo): CameraRollEdgeInfo = {
+  inline def apply(node: CameraRollNodeInfo): CameraRollEdgeInfo = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraRollEdgeInfo]
   }
   
-  @scala.inline
-  implicit class CameraRollEdgeInfoMutableBuilder[Self <: CameraRollEdgeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CameraRollEdgeInfo](x: Self) {
     
-    @scala.inline
-    def setNode(value: CameraRollNodeInfo): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: CameraRollNodeInfo): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

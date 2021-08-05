@@ -41,44 +41,32 @@ object typesApplicationSettingsResourceMod {
   }
   object ApplicationSettingsResource {
     
-    @scala.inline
-    def apply(): ApplicationSettingsResource = {
+    inline def apply(): ApplicationSettingsResource = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ApplicationSettingsResource]
     }
     
-    @scala.inline
-    implicit class ApplicationSettingsResourceMutableBuilder[Self <: ApplicationSettingsResource] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationSettingsResource](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
+      inline def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
       
-      @scala.inline
-      def setCampaignHook(value: CampaignHook): Self = StObject.set(x, "CampaignHook", value.asInstanceOf[js.Any])
+      inline def setCampaignHook(value: CampaignHook): Self = StObject.set(x, "CampaignHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCampaignHookUndefined: Self = StObject.set(x, "CampaignHook", js.undefined)
+      inline def setCampaignHookUndefined: Self = StObject.set(x, "CampaignHook", js.undefined)
       
-      @scala.inline
-      def setLastModifiedDate(value: String): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+      inline def setLastModifiedDate(value: String): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
+      inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
       
-      @scala.inline
-      def setLimits(value: CampaignLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
+      inline def setLimits(value: CampaignLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
+      inline def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
       
-      @scala.inline
-      def setQuietTime(value: QuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
+      inline def setQuietTime(value: QuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
+      inline def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
     }
   }
   
@@ -106,32 +94,24 @@ object typesApplicationSettingsResourceMod {
   }
   object UnmarshalledApplicationSettingsResource {
     
-    @scala.inline
-    def apply(): UnmarshalledApplicationSettingsResource = {
+    inline def apply(): UnmarshalledApplicationSettingsResource = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledApplicationSettingsResource]
     }
     
-    @scala.inline
-    implicit class UnmarshalledApplicationSettingsResourceMutableBuilder[Self <: UnmarshalledApplicationSettingsResource] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledApplicationSettingsResource](x: Self) {
       
-      @scala.inline
-      def setCampaignHook(value: UnmarshalledCampaignHook): Self = StObject.set(x, "CampaignHook", value.asInstanceOf[js.Any])
+      inline def setCampaignHook(value: UnmarshalledCampaignHook): Self = StObject.set(x, "CampaignHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCampaignHookUndefined: Self = StObject.set(x, "CampaignHook", js.undefined)
+      inline def setCampaignHookUndefined: Self = StObject.set(x, "CampaignHook", js.undefined)
       
-      @scala.inline
-      def setLimits(value: UnmarshalledCampaignLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
+      inline def setLimits(value: UnmarshalledCampaignLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
+      inline def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
       
-      @scala.inline
-      def setQuietTime(value: UnmarshalledQuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
+      inline def setQuietTime(value: UnmarshalledQuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
+      inline def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
     }
   }
 }

@@ -97,9 +97,7 @@ object Range {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def comparePoints(p1: Point, p2: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("comparePoints")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def comparePoints(p1: Point, p2: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("comparePoints")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def fromPoints(start: Point, end: Point): typings.aceBuilds.mod.Ace.Range = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.aceBuilds.mod.Ace.Range]
+  inline def fromPoints(start: Point, end: Point): typings.aceBuilds.mod.Ace.Range = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.aceBuilds.mod.Ace.Range]
 }

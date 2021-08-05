@@ -24,8 +24,7 @@ trait XVersionedSchemaSupplier
 }
 object XVersionedSchemaSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getComponentSchema: String => XSchema,
     getSchemaVersion: String => String,
@@ -36,10 +35,8 @@ object XVersionedSchemaSupplier {
     __obj.asInstanceOf[XVersionedSchemaSupplier]
   }
   
-  @scala.inline
-  implicit class XVersionedSchemaSupplierMutableBuilder[Self <: XVersionedSchemaSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XVersionedSchemaSupplier](x: Self) {
     
-    @scala.inline
-    def setGetSchemaVersion(value: String => String): Self = StObject.set(x, "getSchemaVersion", js.Any.fromFunction1(value))
+    inline def setGetSchemaVersion(value: String => String): Self = StObject.set(x, "getSchemaVersion", js.Any.fromFunction1(value))
   }
 }

@@ -19,8 +19,7 @@ trait PlainTextFormatter
 }
 object PlainTextFormatter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Head: String,
     Tail: String,
     create: () => Unit,
@@ -32,10 +31,8 @@ object PlainTextFormatter {
     __obj.asInstanceOf[PlainTextFormatter]
   }
   
-  @scala.inline
-  implicit class PlainTextFormatterMutableBuilder[Self <: PlainTextFormatter] (val x: Self) extends AnyVal {
+  extension [Self <: PlainTextFormatter](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
   }
 }

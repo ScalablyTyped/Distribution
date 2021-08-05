@@ -19,8 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(config: CredstashConfig): Credstash = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Credstash]
+  inline def apply(config: CredstashConfig): Credstash = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Credstash]
   
   @JSImport("nodecredstash", JSImport.Namespace)
   @js.native
@@ -67,44 +66,32 @@ object mod {
   }
   object CredstashConfig {
     
-    @scala.inline
-    def apply(): CredstashConfig = {
+    inline def apply(): CredstashConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CredstashConfig]
     }
     
-    @scala.inline
-    implicit class CredstashConfigMutableBuilder[Self <: CredstashConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CredstashConfig](x: Self) {
       
-      @scala.inline
-      def setAwsOpts(value: ClientConfiguration): Self = StObject.set(x, "awsOpts", value.asInstanceOf[js.Any])
+      inline def setAwsOpts(value: ClientConfiguration): Self = StObject.set(x, "awsOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsOptsUndefined: Self = StObject.set(x, "awsOpts", js.undefined)
+      inline def setAwsOptsUndefined: Self = StObject.set(x, "awsOpts", js.undefined)
       
-      @scala.inline
-      def setDynamoOpts(value: typings.awsSdk.dynamodbMod.ClientConfiguration): Self = StObject.set(x, "dynamoOpts", value.asInstanceOf[js.Any])
+      inline def setDynamoOpts(value: typings.awsSdk.dynamodbMod.ClientConfiguration): Self = StObject.set(x, "dynamoOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamoOptsUndefined: Self = StObject.set(x, "dynamoOpts", js.undefined)
+      inline def setDynamoOptsUndefined: Self = StObject.set(x, "dynamoOpts", js.undefined)
       
-      @scala.inline
-      def setKmsKey(value: String): Self = StObject.set(x, "kmsKey", value.asInstanceOf[js.Any])
+      inline def setKmsKey(value: String): Self = StObject.set(x, "kmsKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyUndefined: Self = StObject.set(x, "kmsKey", js.undefined)
+      inline def setKmsKeyUndefined: Self = StObject.set(x, "kmsKey", js.undefined)
       
-      @scala.inline
-      def setKmsOpts(value: ClientConfiguration): Self = StObject.set(x, "kmsOpts", value.asInstanceOf[js.Any])
+      inline def setKmsOpts(value: ClientConfiguration): Self = StObject.set(x, "kmsOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsOptsUndefined: Self = StObject.set(x, "kmsOpts", js.undefined)
+      inline def setKmsOptsUndefined: Self = StObject.set(x, "kmsOpts", js.undefined)
       
-      @scala.inline
-      def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     }
   }
   
@@ -124,35 +111,26 @@ object mod {
   }
   object PutSecretOptions {
     
-    @scala.inline
-    def apply(context: CredstashContext, name: String, secret: String): PutSecretOptions = {
+    inline def apply(context: CredstashContext, name: String, secret: String): PutSecretOptions = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutSecretOptions]
     }
     
-    @scala.inline
-    implicit class PutSecretOptionsMutableBuilder[Self <: PutSecretOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PutSecretOptions](x: Self) {
       
-      @scala.inline
-      def setContext(value: CredstashContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: CredstashContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+      inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+      inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

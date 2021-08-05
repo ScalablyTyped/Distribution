@@ -81,21 +81,17 @@ object geo {
   }
   object AbstractGeometry {
     
-    @scala.inline
-    def apply(equals_ : js.Any => Boolean, getBoundingBox: () => Rect): AbstractGeometry = {
+    inline def apply(equals_ : js.Any => Boolean, getBoundingBox: () => Rect): AbstractGeometry = {
       val __obj = js.Dynamic.literal(getBoundingBox = js.Any.fromFunction0(getBoundingBox))
       __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
       __obj.asInstanceOf[AbstractGeometry]
     }
     
-    @scala.inline
-    implicit class AbstractGeometryMutableBuilder[Self <: AbstractGeometry] (val x: Self) extends AnyVal {
+    extension [Self <: AbstractGeometry](x: Self) {
       
-      @scala.inline
-      def setEquals_(value: js.Any => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: js.Any => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBoundingBox(value: () => Rect): Self = StObject.set(x, "getBoundingBox", js.Any.fromFunction0(value))
+      inline def setGetBoundingBox(value: () => Rect): Self = StObject.set(x, "getBoundingBox", js.Any.fromFunction0(value))
     }
   }
   
@@ -123,32 +119,24 @@ object geo {
   }
   object IPoint {
     
-    @scala.inline
-    def apply(lat: Latitude, lng: Longitude): IPoint = {
+    inline def apply(lat: Latitude, lng: Longitude): IPoint = {
       val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPoint]
     }
     
-    @scala.inline
-    implicit class IPointMutableBuilder[Self <: IPoint] (val x: Self) extends AnyVal {
+    extension [Self <: IPoint](x: Self) {
       
-      @scala.inline
-      def setAlt(value: Altitude): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      inline def setAlt(value: Altitude): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      @scala.inline
-      def setCtx(value: AltitudeContext): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      inline def setCtx(value: AltitudeContext): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtxUndefined: Self = StObject.set(x, "ctx", js.undefined)
+      inline def setCtxUndefined: Self = StObject.set(x, "ctx", js.undefined)
       
-      @scala.inline
-      def setLat(value: Latitude): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+      inline def setLat(value: Latitude): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLng(value: Longitude): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+      inline def setLng(value: Longitude): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
     }
   }
   
@@ -563,20 +551,16 @@ object geo {
     }
     object Direction {
       
-      @scala.inline
-      def apply(NORTH: Double, SOUTH: Double): Direction = {
+      inline def apply(NORTH: Double, SOUTH: Double): Direction = {
         val __obj = js.Dynamic.literal(NORTH = NORTH.asInstanceOf[js.Any], SOUTH = SOUTH.asInstanceOf[js.Any])
         __obj.asInstanceOf[Direction]
       }
       
-      @scala.inline
-      implicit class DirectionMutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
+      extension [Self <: Direction](x: Self) {
         
-        @scala.inline
-        def setNORTH(value: Double): Self = StObject.set(x, "NORTH", value.asInstanceOf[js.Any])
+        inline def setNORTH(value: Double): Self = StObject.set(x, "NORTH", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSOUTH(value: Double): Self = StObject.set(x, "SOUTH", value.asInstanceOf[js.Any])
+        inline def setSOUTH(value: Double): Self = StObject.set(x, "SOUTH", value.asInstanceOf[js.Any])
       }
     }
   }

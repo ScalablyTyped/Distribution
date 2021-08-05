@@ -12,8 +12,6 @@ object browserGeturlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getUrl(href: String): js.Promise[GetUrlResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(href.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetUrlResponse]]
-  @scala.inline
-  def getUrl(href: String, options: Options): js.Promise[GetUrlResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(href.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetUrlResponse]]
+  inline def getUrl(href: String): js.Promise[GetUrlResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(href.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetUrlResponse]]
+  inline def getUrl(href: String, options: Options): js.Promise[GetUrlResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(href.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetUrlResponse]]
 }

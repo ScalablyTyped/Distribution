@@ -33,40 +33,29 @@ trait DescribeCommunicationsRequest extends StObject {
 }
 object DescribeCommunicationsRequest {
   
-  @scala.inline
-  def apply(caseId: CaseId): DescribeCommunicationsRequest = {
+  inline def apply(caseId: CaseId): DescribeCommunicationsRequest = {
     val __obj = js.Dynamic.literal(caseId = caseId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCommunicationsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeCommunicationsRequestMutableBuilder[Self <: DescribeCommunicationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCommunicationsRequest](x: Self) {
     
-    @scala.inline
-    def setAfterTime(value: AfterTime): Self = StObject.set(x, "afterTime", value.asInstanceOf[js.Any])
+    inline def setAfterTime(value: AfterTime): Self = StObject.set(x, "afterTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterTimeUndefined: Self = StObject.set(x, "afterTime", js.undefined)
+    inline def setAfterTimeUndefined: Self = StObject.set(x, "afterTime", js.undefined)
     
-    @scala.inline
-    def setBeforeTime(value: BeforeTime): Self = StObject.set(x, "beforeTime", value.asInstanceOf[js.Any])
+    inline def setBeforeTime(value: BeforeTime): Self = StObject.set(x, "beforeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeTimeUndefined: Self = StObject.set(x, "beforeTime", js.undefined)
+    inline def setBeforeTimeUndefined: Self = StObject.set(x, "beforeTime", js.undefined)
     
-    @scala.inline
-    def setCaseId(value: CaseId): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
+    inline def setCaseId(value: CaseId): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait PickImplsiblingLabel extends StObject {
 }
 object PickImplsiblingLabel {
   
-  @scala.inline
-  def apply(siblingLabel: String): PickImplsiblingLabel = {
+  inline def apply(siblingLabel: String): PickImplsiblingLabel = {
     val __obj = js.Dynamic.literal(siblingLabel = siblingLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsiblingLabel]
   }
   
-  @scala.inline
-  implicit class PickImplsiblingLabelMutableBuilder[Self <: PickImplsiblingLabel] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplsiblingLabel](x: Self) {
     
-    @scala.inline
-    def setSiblingLabel(value: String): Self = StObject.set(x, "siblingLabel", value.asInstanceOf[js.Any])
+    inline def setSiblingLabel(value: String): Self = StObject.set(x, "siblingLabel", value.asInstanceOf[js.Any])
   }
 }

@@ -24,22 +24,21 @@ object appxTargetMod {
     @JSImport("app-builder-lib/out/targets/AppxTarget", "default.computeUserAssets")
     @js.native
     def computeUserAssets: js.Any = js.native
-    @scala.inline
-    def computeUserAssets_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("computeUserAssets")(x.asInstanceOf[js.Any])
+    inline def computeUserAssets_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("computeUserAssets")(x.asInstanceOf[js.Any])
   }
   
   @js.native
   trait AppXTarget extends Target {
     
-    var computePublisherName: js.Any = js.native
+    /* private */ var computePublisherName: js.Any = js.native
     
-    var getExtensions: js.Any = js.native
+    /* private */ var getExtensions: js.Any = js.native
     
     @JSName("options")
     val options_AppXTarget: AppXOptions = js.native
     
-    val packager: js.Any = js.native
+    /* private */ val packager: js.Any = js.native
     
-    var writeManifest: js.Any = js.native
+    /* private */ var writeManifest: js.Any = js.native
   }
 }

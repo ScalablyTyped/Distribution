@@ -71,49 +71,35 @@ trait SchemaRouterBgpPeerBfd extends StObject {
 }
 object SchemaRouterBgpPeerBfd {
   
-  @scala.inline
-  def apply(): SchemaRouterBgpPeerBfd = {
+  inline def apply(): SchemaRouterBgpPeerBfd = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRouterBgpPeerBfd]
   }
   
-  @scala.inline
-  implicit class SchemaRouterBgpPeerBfdMutableBuilder[Self <: SchemaRouterBgpPeerBfd] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRouterBgpPeerBfd](x: Self) {
     
-    @scala.inline
-    def setMinReceiveInterval(value: Double): Self = StObject.set(x, "minReceiveInterval", value.asInstanceOf[js.Any])
+    inline def setMinReceiveInterval(value: Double): Self = StObject.set(x, "minReceiveInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinReceiveIntervalUndefined: Self = StObject.set(x, "minReceiveInterval", js.undefined)
+    inline def setMinReceiveIntervalUndefined: Self = StObject.set(x, "minReceiveInterval", js.undefined)
     
-    @scala.inline
-    def setMinTransmitInterval(value: Double): Self = StObject.set(x, "minTransmitInterval", value.asInstanceOf[js.Any])
+    inline def setMinTransmitInterval(value: Double): Self = StObject.set(x, "minTransmitInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinTransmitIntervalUndefined: Self = StObject.set(x, "minTransmitInterval", js.undefined)
+    inline def setMinTransmitIntervalUndefined: Self = StObject.set(x, "minTransmitInterval", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
+    inline def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiplierUndefined: Self = StObject.set(x, "multiplier", js.undefined)
+    inline def setMultiplierUndefined: Self = StObject.set(x, "multiplier", js.undefined)
     
-    @scala.inline
-    def setPacketMode(value: String): Self = StObject.set(x, "packetMode", value.asInstanceOf[js.Any])
+    inline def setPacketMode(value: String): Self = StObject.set(x, "packetMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacketModeUndefined: Self = StObject.set(x, "packetMode", js.undefined)
+    inline def setPacketModeUndefined: Self = StObject.set(x, "packetMode", js.undefined)
     
-    @scala.inline
-    def setSlowTimerInterval(value: Double): Self = StObject.set(x, "slowTimerInterval", value.asInstanceOf[js.Any])
+    inline def setSlowTimerInterval(value: Double): Self = StObject.set(x, "slowTimerInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlowTimerIntervalUndefined: Self = StObject.set(x, "slowTimerInterval", js.undefined)
+    inline def setSlowTimerIntervalUndefined: Self = StObject.set(x, "slowTimerInterval", js.undefined)
   }
 }

@@ -14,28 +14,21 @@ trait GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse extends StOb
 }
 object GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponseMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse](x: Self) {
     
-    @scala.inline
-    def setPurgedEventsCount(value: String): Self = StObject.set(x, "purgedEventsCount", value.asInstanceOf[js.Any])
+    inline def setPurgedEventsCount(value: String): Self = StObject.set(x, "purgedEventsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurgedEventsCountUndefined: Self = StObject.set(x, "purgedEventsCount", js.undefined)
+    inline def setPurgedEventsCountUndefined: Self = StObject.set(x, "purgedEventsCount", js.undefined)
     
-    @scala.inline
-    def setUserEventsSample(value: js.Array[GoogleCloudRecommendationengineV1beta1UserEvent]): Self = StObject.set(x, "userEventsSample", value.asInstanceOf[js.Any])
+    inline def setUserEventsSample(value: js.Array[GoogleCloudRecommendationengineV1beta1UserEvent]): Self = StObject.set(x, "userEventsSample", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEventsSampleUndefined: Self = StObject.set(x, "userEventsSample", js.undefined)
+    inline def setUserEventsSampleUndefined: Self = StObject.set(x, "userEventsSample", js.undefined)
     
-    @scala.inline
-    def setUserEventsSampleVarargs(value: GoogleCloudRecommendationengineV1beta1UserEvent*): Self = StObject.set(x, "userEventsSample", js.Array(value :_*))
+    inline def setUserEventsSampleVarargs(value: GoogleCloudRecommendationengineV1beta1UserEvent*): Self = StObject.set(x, "userEventsSample", js.Array(value :_*))
   }
 }

@@ -13,16 +13,13 @@ trait ObjComponentProps
 }
 object ObjComponentProps {
   
-  @scala.inline
-  def apply(page: Obj): ObjComponentProps = {
+  inline def apply(page: Obj): ObjComponentProps = {
     val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjComponentProps]
   }
   
-  @scala.inline
-  implicit class ObjComponentPropsMutableBuilder[Self <: ObjComponentProps] (val x: Self) extends AnyVal {
+  extension [Self <: ObjComponentProps](x: Self) {
     
-    @scala.inline
-    def setPage(value: Obj): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Obj): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
   }
 }

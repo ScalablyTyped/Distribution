@@ -48,17 +48,14 @@ object mod extends Shortcut {
   }
   object Cancelable {
     
-    @scala.inline
-    def apply(cancel: () => Unit): Cancelable = {
+    inline def apply(cancel: () => Unit): Cancelable = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel))
       __obj.asInstanceOf[Cancelable]
     }
     
-    @scala.inline
-    implicit class CancelableMutableBuilder[Self <: Cancelable] (val x: Self) extends AnyVal {
+    extension [Self <: Cancelable](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }
   }
   
@@ -1732,17 +1729,14 @@ object mod extends Shortcut {
   }
   object List {
     
-    @scala.inline
-    def apply[T](length: Double): List[T] = {
+    inline def apply[T](length: Double): List[T] = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[List[T]]
     }
     
-    @scala.inline
-    implicit class ListMutableBuilder[Self <: List[?], T] (val x: Self & List[T]) extends AnyVal {
+    extension [Self <: List[?], T](x: Self & List[T]) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1807,38 +1801,28 @@ object mod extends Shortcut {
   }
   object TemplateSettings {
     
-    @scala.inline
-    def apply(): TemplateSettings = {
+    inline def apply(): TemplateSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TemplateSettings]
     }
     
-    @scala.inline
-    implicit class TemplateSettingsMutableBuilder[Self <: TemplateSettings] (val x: Self) extends AnyVal {
+    extension [Self <: TemplateSettings](x: Self) {
       
-      @scala.inline
-      def setEscape(value: RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      inline def setEscape(value: RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setEvaluate(value: RegExp): Self = StObject.set(x, "evaluate", value.asInstanceOf[js.Any])
+      inline def setEvaluate(value: RegExp): Self = StObject.set(x, "evaluate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvaluateUndefined: Self = StObject.set(x, "evaluate", js.undefined)
+      inline def setEvaluateUndefined: Self = StObject.set(x, "evaluate", js.undefined)
       
-      @scala.inline
-      def setInterpolate(value: RegExp): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
+      inline def setInterpolate(value: RegExp): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
+      inline def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
       
-      @scala.inline
-      def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+      inline def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+      inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
     }
   }
   
@@ -1859,26 +1843,20 @@ object mod extends Shortcut {
   }
   object ThrottleSettings {
     
-    @scala.inline
-    def apply(): ThrottleSettings = {
+    inline def apply(): ThrottleSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThrottleSettings]
     }
     
-    @scala.inline
-    implicit class ThrottleSettingsMutableBuilder[Self <: ThrottleSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ThrottleSettings](x: Self) {
       
-      @scala.inline
-      def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+      inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+      inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
       
-      @scala.inline
-      def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+      inline def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
+      inline def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
     }
   }
   

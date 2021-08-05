@@ -18,6 +18,5 @@ object BeanStub {
   @JSImport("ag-grid/dist/lib/main", "BeanStub.EVENT_DESTROYED")
   @js.native
   def EVENT_DESTROYED: String = js.native
-  @scala.inline
-  def EVENT_DESTROYED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_DESTROYED")(x.asInstanceOf[js.Any])
+  inline def EVENT_DESTROYED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_DESTROYED")(x.asInstanceOf[js.Any])
 }

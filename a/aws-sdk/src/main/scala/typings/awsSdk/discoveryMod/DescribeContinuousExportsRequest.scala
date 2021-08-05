@@ -23,34 +23,25 @@ trait DescribeContinuousExportsRequest extends StObject {
 }
 object DescribeContinuousExportsRequest {
   
-  @scala.inline
-  def apply(): DescribeContinuousExportsRequest = {
+  inline def apply(): DescribeContinuousExportsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeContinuousExportsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeContinuousExportsRequestMutableBuilder[Self <: DescribeContinuousExportsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeContinuousExportsRequest](x: Self) {
     
-    @scala.inline
-    def setExportIds(value: ContinuousExportIds): Self = StObject.set(x, "exportIds", value.asInstanceOf[js.Any])
+    inline def setExportIds(value: ContinuousExportIds): Self = StObject.set(x, "exportIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportIdsUndefined: Self = StObject.set(x, "exportIds", js.undefined)
+    inline def setExportIdsUndefined: Self = StObject.set(x, "exportIds", js.undefined)
     
-    @scala.inline
-    def setExportIdsVarargs(value: ConfigurationsExportId*): Self = StObject.set(x, "exportIds", js.Array(value :_*))
+    inline def setExportIdsVarargs(value: ConfigurationsExportId*): Self = StObject.set(x, "exportIds", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: DescribeContinuousExportsMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: DescribeContinuousExportsMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

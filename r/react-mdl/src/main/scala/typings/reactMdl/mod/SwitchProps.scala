@@ -17,19 +17,15 @@ trait SwitchProps
 }
 object SwitchProps {
   
-  @scala.inline
-  def apply(): SwitchProps = {
+  inline def apply(): SwitchProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SwitchProps]
   }
   
-  @scala.inline
-  implicit class SwitchPropsMutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
+  extension [Self <: SwitchProps](x: Self) {
     
-    @scala.inline
-    def setOnChange(value: FormEvent[Switch] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: FormEvent[Switch] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
   }
 }

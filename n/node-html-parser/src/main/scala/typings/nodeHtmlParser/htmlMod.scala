@@ -43,17 +43,12 @@ object htmlMod {
     ) = this()
   }
   
-  @scala.inline
-  def parse(data: String): HTMLElementvalidboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any]).asInstanceOf[HTMLElementvalidboolean]
-  @scala.inline
-  def parse(data: String, options: PartialOptions): HTMLElementvalidboolean = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElementvalidboolean]
-  @scala.inline
-  def parse(data: String, options: PartialOptionsnoFixfalse): HTMLElementvalidboolean = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElementvalidboolean]
-  @scala.inline
-  def parse(data: String, options: PartialOptionsnoFixtrue): (HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid]
+  inline def parse(data: String): HTMLElementvalidboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any]).asInstanceOf[HTMLElementvalidboolean]
+  inline def parse(data: String, options: PartialOptions): HTMLElementvalidboolean = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElementvalidboolean]
+  inline def parse(data: String, options: PartialOptionsnoFixfalse): HTMLElementvalidboolean = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElementvalidboolean]
+  inline def parse(data: String, options: PartialOptionsnoFixtrue): (HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid]
   
-  @scala.inline
-  def parse_Intersection(data: String): (HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any]).asInstanceOf[(HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid]
+  inline def parse_Intersection(data: String): (HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any]).asInstanceOf[(HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid]
   
   type Attributes = StringDictionary[String]
   
@@ -61,9 +56,9 @@ object htmlMod {
   trait HTMLElement
     extends typings.nodeHtmlParser.nodeMod.default {
     
-    var _attrs: js.Any = js.native
+    /* private */ var _attrs: js.Any = js.native
     
-    var _rawAttrs: js.Any = js.native
+    /* private */ var _rawAttrs: js.Any = js.native
     
     /**
       * Append a child node to childNodes
@@ -145,7 +140,7 @@ object htmlMod {
       */
     def rawAttributes: RawAttributes = js.native
     
-    var rawAttrs: js.Any = js.native
+    /* private */ var rawAttrs: js.Any = js.native
     
     var rawTagName: String = js.native
     
@@ -233,17 +228,13 @@ object htmlMod {
   trait InsertPosition extends StObject
   object InsertPosition {
     
-    @scala.inline
-    def afterbegin: typings.nodeHtmlParser.nodeHtmlParserStrings.afterbegin = "afterbegin".asInstanceOf[typings.nodeHtmlParser.nodeHtmlParserStrings.afterbegin]
+    inline def afterbegin: typings.nodeHtmlParser.nodeHtmlParserStrings.afterbegin = "afterbegin".asInstanceOf[typings.nodeHtmlParser.nodeHtmlParserStrings.afterbegin]
     
-    @scala.inline
-    def afterend: typings.nodeHtmlParser.nodeHtmlParserStrings.afterend = "afterend".asInstanceOf[typings.nodeHtmlParser.nodeHtmlParserStrings.afterend]
+    inline def afterend: typings.nodeHtmlParser.nodeHtmlParserStrings.afterend = "afterend".asInstanceOf[typings.nodeHtmlParser.nodeHtmlParserStrings.afterend]
     
-    @scala.inline
-    def beforebegin: typings.nodeHtmlParser.nodeHtmlParserStrings.beforebegin = "beforebegin".asInstanceOf[typings.nodeHtmlParser.nodeHtmlParserStrings.beforebegin]
+    inline def beforebegin: typings.nodeHtmlParser.nodeHtmlParserStrings.beforebegin = "beforebegin".asInstanceOf[typings.nodeHtmlParser.nodeHtmlParserStrings.beforebegin]
     
-    @scala.inline
-    def beforeend: typings.nodeHtmlParser.nodeHtmlParserStrings.beforeend = "beforeend".asInstanceOf[typings.nodeHtmlParser.nodeHtmlParserStrings.beforeend]
+    inline def beforeend: typings.nodeHtmlParser.nodeHtmlParserStrings.beforeend = "beforeend".asInstanceOf[typings.nodeHtmlParser.nodeHtmlParserStrings.beforeend]
   }
   
   trait KeyAttributes extends StObject {
@@ -254,26 +245,20 @@ object htmlMod {
   }
   object KeyAttributes {
     
-    @scala.inline
-    def apply(): KeyAttributes = {
+    inline def apply(): KeyAttributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyAttributes]
     }
     
-    @scala.inline
-    implicit class KeyAttributesMutableBuilder[Self <: KeyAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: KeyAttributes](x: Self) {
       
-      @scala.inline
-      def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+      inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
   }
   
@@ -287,23 +272,18 @@ object htmlMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(blockTextElements: StringDictionary[Boolean], comment: Boolean, lowerCaseTagName: Boolean): Options = {
+    inline def apply(blockTextElements: StringDictionary[Boolean], comment: Boolean, lowerCaseTagName: Boolean): Options = {
       val __obj = js.Dynamic.literal(blockTextElements = blockTextElements.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], lowerCaseTagName = lowerCaseTagName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBlockTextElements(value: StringDictionary[Boolean]): Self = StObject.set(x, "blockTextElements", value.asInstanceOf[js.Any])
+      inline def setBlockTextElements(value: StringDictionary[Boolean]): Self = StObject.set(x, "blockTextElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowerCaseTagName(value: Boolean): Self = StObject.set(x, "lowerCaseTagName", value.asInstanceOf[js.Any])
+      inline def setLowerCaseTagName(value: Boolean): Self = StObject.set(x, "lowerCaseTagName", value.asInstanceOf[js.Any])
     }
   }
   

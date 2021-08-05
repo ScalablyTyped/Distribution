@@ -39,48 +39,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoButtonSetType extends StObject
 object MsoButtonSetType {
   
-  @scala.inline
-  def msoButtonSetAbortRetryIgnore: `10` = 10.asInstanceOf[`10`]
+  inline def msoButtonSetAbortRetryIgnore: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def msoButtonSetBackClose: `6` = 6.asInstanceOf[`6`]
+  inline def msoButtonSetBackClose: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoButtonSetBackNextClose: `8` = 8.asInstanceOf[`8`]
+  inline def msoButtonSetBackNextClose: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def msoButtonSetBackNextSnooze: `12` = 12.asInstanceOf[`12`]
+  inline def msoButtonSetBackNextSnooze: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def msoButtonSetCancel: `2` = 2.asInstanceOf[`2`]
+  inline def msoButtonSetCancel: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoButtonSetNextClose: `7` = 7.asInstanceOf[`7`]
+  inline def msoButtonSetNextClose: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def msoButtonSetNone: `0` = 0.asInstanceOf[`0`]
+  inline def msoButtonSetNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoButtonSetOK: `1` = 1.asInstanceOf[`1`]
+  inline def msoButtonSetOK: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoButtonSetOkCancel: `3` = 3.asInstanceOf[`3`]
+  inline def msoButtonSetOkCancel: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoButtonSetRetryCancel: `9` = 9.asInstanceOf[`9`]
+  inline def msoButtonSetRetryCancel: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def msoButtonSetSearchClose: `11` = 11.asInstanceOf[`11`]
+  inline def msoButtonSetSearchClose: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def msoButtonSetTipsOptionsClose: `13` = 13.asInstanceOf[`13`]
+  inline def msoButtonSetTipsOptionsClose: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def msoButtonSetYesAllNoCancel: `14` = 14.asInstanceOf[`14`]
+  inline def msoButtonSetYesAllNoCancel: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def msoButtonSetYesNo: `4` = 4.asInstanceOf[`4`]
+  inline def msoButtonSetYesNo: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoButtonSetYesNoCancel: `5` = 5.asInstanceOf[`5`]
+  inline def msoButtonSetYesNoCancel: `5` = 5.asInstanceOf[`5`]
 }

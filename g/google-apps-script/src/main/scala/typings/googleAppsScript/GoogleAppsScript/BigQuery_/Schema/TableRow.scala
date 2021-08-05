@@ -10,22 +10,17 @@ trait TableRow extends StObject {
 }
 object TableRow {
   
-  @scala.inline
-  def apply(): TableRow = {
+  inline def apply(): TableRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableRow]
   }
   
-  @scala.inline
-  implicit class TableRowMutableBuilder[Self <: TableRow] (val x: Self) extends AnyVal {
+  extension [Self <: TableRow](x: Self) {
     
-    @scala.inline
-    def setF(value: js.Array[TableCell]): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+    inline def setF(value: js.Array[TableCell]): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFUndefined: Self = StObject.set(x, "f", js.undefined)
+    inline def setFUndefined: Self = StObject.set(x, "f", js.undefined)
     
-    @scala.inline
-    def setFVarargs(value: TableCell*): Self = StObject.set(x, "f", js.Array(value :_*))
+    inline def setFVarargs(value: TableCell*): Self = StObject.set(x, "f", js.Array(value :_*))
   }
 }

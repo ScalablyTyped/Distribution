@@ -14,8 +14,7 @@ trait ReaderRefetchableFragment
 }
 object ReaderRefetchableFragment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     argumentDefinitions: js.Array[ReaderArgumentDefinition],
     kind: String,
     metadata: Refetch,
@@ -28,10 +27,8 @@ object ReaderRefetchableFragment {
     __obj.asInstanceOf[ReaderRefetchableFragment]
   }
   
-  @scala.inline
-  implicit class ReaderRefetchableFragmentMutableBuilder[Self <: ReaderRefetchableFragment] (val x: Self) extends AnyVal {
+  extension [Self <: ReaderRefetchableFragment](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: Refetch): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Refetch): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }
 }

@@ -13,8 +13,7 @@ trait LayerContainer extends StObject {
 }
 object LayerContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addLayer: (/* layer */ Layer, /* name */ String, /* checked */ js.UndefOr[Boolean]) => Unit,
     removeLayer: /* layer */ Layer => Unit
   ): LayerContainer = {
@@ -22,13 +21,10 @@ object LayerContainer {
     __obj.asInstanceOf[LayerContainer]
   }
   
-  @scala.inline
-  implicit class LayerContainerMutableBuilder[Self <: LayerContainer] (val x: Self) extends AnyVal {
+  extension [Self <: LayerContainer](x: Self) {
     
-    @scala.inline
-    def setAddLayer(value: (/* layer */ Layer, /* name */ String, /* checked */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "addLayer", js.Any.fromFunction3(value))
+    inline def setAddLayer(value: (/* layer */ Layer, /* name */ String, /* checked */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "addLayer", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoveLayer(value: /* layer */ Layer => Unit): Self = StObject.set(x, "removeLayer", js.Any.fromFunction1(value))
+    inline def setRemoveLayer(value: /* layer */ Layer => Unit): Self = StObject.set(x, "removeLayer", js.Any.fromFunction1(value))
   }
 }

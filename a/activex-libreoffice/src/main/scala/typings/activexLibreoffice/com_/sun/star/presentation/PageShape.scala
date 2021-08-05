@@ -34,8 +34,7 @@ trait PageShape
      with typings.activexLibreoffice.com_.sun.star.drawing.PageShape
 object PageShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bookmark: String,
     DimColor: Color,
     DimHide: Boolean,

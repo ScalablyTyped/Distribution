@@ -10,19 +10,15 @@ trait DomainTransferability extends StObject {
 }
 object DomainTransferability {
   
-  @scala.inline
-  def apply(): DomainTransferability = {
+  inline def apply(): DomainTransferability = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainTransferability]
   }
   
-  @scala.inline
-  implicit class DomainTransferabilityMutableBuilder[Self <: DomainTransferability] (val x: Self) extends AnyVal {
+  extension [Self <: DomainTransferability](x: Self) {
     
-    @scala.inline
-    def setTransferable(value: Transferable): Self = StObject.set(x, "Transferable", value.asInstanceOf[js.Any])
+    inline def setTransferable(value: Transferable): Self = StObject.set(x, "Transferable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferableUndefined: Self = StObject.set(x, "Transferable", js.undefined)
+    inline def setTransferableUndefined: Self = StObject.set(x, "Transferable", js.undefined)
   }
 }

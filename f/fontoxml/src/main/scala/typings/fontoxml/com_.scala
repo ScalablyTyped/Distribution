@@ -20,27 +20,21 @@ object com_ {
     }
     object IFontoMessageEventData {
       
-      @scala.inline
-      def apply(command: String, metadata: js.Any, scope: IInvocator, `type`: String): IFontoMessageEventData = {
+      inline def apply(command: String, metadata: js.Any, scope: IInvocator, `type`: String): IFontoMessageEventData = {
         val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[IFontoMessageEventData]
       }
       
-      @scala.inline
-      implicit class IFontoMessageEventDataMutableBuilder[Self <: IFontoMessageEventData] (val x: Self) extends AnyVal {
+      extension [Self <: IFontoMessageEventData](x: Self) {
         
-        @scala.inline
-        def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+        inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScope(value: IInvocator): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+        inline def setScope(value: IInvocator): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -69,50 +63,36 @@ object com_ {
     }
     object IInvocator {
       
-      @scala.inline
-      def apply(cmsBaseUrl: String, documentIds: js.Array[String], editSessionToken: String): IInvocator = {
+      inline def apply(cmsBaseUrl: String, documentIds: js.Array[String], editSessionToken: String): IInvocator = {
         val __obj = js.Dynamic.literal(cmsBaseUrl = cmsBaseUrl.asInstanceOf[js.Any], documentIds = documentIds.asInstanceOf[js.Any], editSessionToken = editSessionToken.asInstanceOf[js.Any])
         __obj.asInstanceOf[IInvocator]
       }
       
-      @scala.inline
-      implicit class IInvocatorMutableBuilder[Self <: IInvocator] (val x: Self) extends AnyVal {
+      extension [Self <: IInvocator](x: Self) {
         
-        @scala.inline
-        def setAutosave(value: Boolean): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
+        inline def setAutosave(value: Boolean): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutosaveUndefined: Self = StObject.set(x, "autosave", js.undefined)
+        inline def setAutosaveUndefined: Self = StObject.set(x, "autosave", js.undefined)
         
-        @scala.inline
-        def setCmsBaseUrl(value: String): Self = StObject.set(x, "cmsBaseUrl", value.asInstanceOf[js.Any])
+        inline def setCmsBaseUrl(value: String): Self = StObject.set(x, "cmsBaseUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDocumentIds(value: js.Array[String]): Self = StObject.set(x, "documentIds", value.asInstanceOf[js.Any])
+        inline def setDocumentIds(value: js.Array[String]): Self = StObject.set(x, "documentIds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDocumentIdsVarargs(value: String*): Self = StObject.set(x, "documentIds", js.Array(value :_*))
+        inline def setDocumentIdsVarargs(value: String*): Self = StObject.set(x, "documentIds", js.Array(value :_*))
         
-        @scala.inline
-        def setEditSessionToken(value: String): Self = StObject.set(x, "editSessionToken", value.asInstanceOf[js.Any])
+        inline def setEditSessionToken(value: String): Self = StObject.set(x, "editSessionToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeartbeat(value: Double): Self = StObject.set(x, "heartbeat", value.asInstanceOf[js.Any])
+        inline def setHeartbeat(value: Double): Self = StObject.set(x, "heartbeat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeartbeatUndefined: Self = StObject.set(x, "heartbeat", js.undefined)
+        inline def setHeartbeatUndefined: Self = StObject.set(x, "heartbeat", js.undefined)
         
-        @scala.inline
-        def setUser(value: IUserInfo): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        inline def setUser(value: IUserInfo): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+        inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
         
-        @scala.inline
-        def setWorkflow(value: IWorkflowInfo): Self = StObject.set(x, "workflow", value.asInstanceOf[js.Any])
+        inline def setWorkflow(value: IWorkflowInfo): Self = StObject.set(x, "workflow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWorkflowUndefined: Self = StObject.set(x, "workflow", js.undefined)
+        inline def setWorkflowUndefined: Self = StObject.set(x, "workflow", js.undefined)
       }
     }
     
@@ -124,17 +104,14 @@ object com_ {
     }
     object IUserInfo {
       
-      @scala.inline
-      def apply(displayName: String, id: String, roleId: String): IUserInfo = {
+      inline def apply(displayName: String, id: String, roleId: String): IUserInfo = {
         val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], roleId = roleId.asInstanceOf[js.Any])
         __obj.asInstanceOf[IUserInfo]
       }
       
-      @scala.inline
-      implicit class IUserInfoMutableBuilder[Self <: IUserInfo] (val x: Self) extends AnyVal {
+      extension [Self <: IUserInfo](x: Self) {
         
-        @scala.inline
-        def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
+        inline def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
       }
     }
     
@@ -146,20 +123,16 @@ object com_ {
     }
     object IWorkflowInfo {
       
-      @scala.inline
-      def apply(displayName: String, id: String): IWorkflowInfo = {
+      inline def apply(displayName: String, id: String): IWorkflowInfo = {
         val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
         __obj.asInstanceOf[IWorkflowInfo]
       }
       
-      @scala.inline
-      implicit class IWorkflowInfoMutableBuilder[Self <: IWorkflowInfo] (val x: Self) extends AnyVal {
+      extension [Self <: IWorkflowInfo](x: Self) {
         
-        @scala.inline
-        def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+        inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       }
     }
   }

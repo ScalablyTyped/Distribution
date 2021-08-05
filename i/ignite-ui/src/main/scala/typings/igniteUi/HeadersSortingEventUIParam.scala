@@ -18,28 +18,21 @@ trait HeadersSortingEventUIParam extends StObject {
 }
 object HeadersSortingEventUIParam {
   
-  @scala.inline
-  def apply(): HeadersSortingEventUIParam = {
+  inline def apply(): HeadersSortingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeadersSortingEventUIParam]
   }
   
-  @scala.inline
-  implicit class HeadersSortingEventUIParamMutableBuilder[Self <: HeadersSortingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: HeadersSortingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setLevelSortDirections(value: js.Array[js.Any]): Self = StObject.set(x, "levelSortDirections", value.asInstanceOf[js.Any])
+    inline def setLevelSortDirections(value: js.Array[js.Any]): Self = StObject.set(x, "levelSortDirections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelSortDirectionsUndefined: Self = StObject.set(x, "levelSortDirections", js.undefined)
+    inline def setLevelSortDirectionsUndefined: Self = StObject.set(x, "levelSortDirections", js.undefined)
     
-    @scala.inline
-    def setLevelSortDirectionsVarargs(value: js.Any*): Self = StObject.set(x, "levelSortDirections", js.Array(value :_*))
+    inline def setLevelSortDirectionsVarargs(value: js.Any*): Self = StObject.set(x, "levelSortDirections", js.Array(value :_*))
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

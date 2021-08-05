@@ -13,19 +13,15 @@ trait StartWorkflowRunResponse extends StObject {
 }
 object StartWorkflowRunResponse {
   
-  @scala.inline
-  def apply(): StartWorkflowRunResponse = {
+  inline def apply(): StartWorkflowRunResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartWorkflowRunResponse]
   }
   
-  @scala.inline
-  implicit class StartWorkflowRunResponseMutableBuilder[Self <: StartWorkflowRunResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartWorkflowRunResponse](x: Self) {
     
-    @scala.inline
-    def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunIdUndefined: Self = StObject.set(x, "RunId", js.undefined)
+    inline def setRunIdUndefined: Self = StObject.set(x, "RunId", js.undefined)
   }
 }

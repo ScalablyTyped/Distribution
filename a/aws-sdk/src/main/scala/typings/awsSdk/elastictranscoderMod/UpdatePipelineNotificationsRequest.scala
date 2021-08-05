@@ -18,19 +18,15 @@ trait UpdatePipelineNotificationsRequest extends StObject {
 }
 object UpdatePipelineNotificationsRequest {
   
-  @scala.inline
-  def apply(Id: Id, Notifications: Notifications): UpdatePipelineNotificationsRequest = {
+  inline def apply(Id: Id, Notifications: Notifications): UpdatePipelineNotificationsRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Notifications = Notifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePipelineNotificationsRequest]
   }
   
-  @scala.inline
-  implicit class UpdatePipelineNotificationsRequestMutableBuilder[Self <: UpdatePipelineNotificationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePipelineNotificationsRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifications(value: Notifications): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
+    inline def setNotifications(value: Notifications): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
   }
 }

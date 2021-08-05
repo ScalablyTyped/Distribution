@@ -10,19 +10,15 @@ trait GetOutpostOutput extends StObject {
 }
 object GetOutpostOutput {
   
-  @scala.inline
-  def apply(): GetOutpostOutput = {
+  inline def apply(): GetOutpostOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetOutpostOutput]
   }
   
-  @scala.inline
-  implicit class GetOutpostOutputMutableBuilder[Self <: GetOutpostOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetOutpostOutput](x: Self) {
     
-    @scala.inline
-    def setOutpost(value: Outpost): Self = StObject.set(x, "Outpost", value.asInstanceOf[js.Any])
+    inline def setOutpost(value: Outpost): Self = StObject.set(x, "Outpost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutpostUndefined: Self = StObject.set(x, "Outpost", js.undefined)
+    inline def setOutpostUndefined: Self = StObject.set(x, "Outpost", js.undefined)
   }
 }

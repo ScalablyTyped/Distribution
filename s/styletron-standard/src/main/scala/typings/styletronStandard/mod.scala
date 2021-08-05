@@ -12,14 +12,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def driver(style: StyleObject, styletron: StandardEngine): String = (^.asInstanceOf[js.Dynamic].applyDynamic("driver")(style.asInstanceOf[js.Any], styletron.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def driver(style: StyleObject, styletron: StandardEngine): String = (^.asInstanceOf[js.Dynamic].applyDynamic("driver")(style.asInstanceOf[js.Any], styletron.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getInitialStyle(): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialStyle")().asInstanceOf[StyleObject]
+  inline def getInitialStyle(): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialStyle")().asInstanceOf[StyleObject]
   
-  @scala.inline
-  def renderDeclarativeRules(style: StyleObject, styletrong: StandardEngine): StyleObject = (^.asInstanceOf[js.Dynamic].applyDynamic("renderDeclarativeRules")(style.asInstanceOf[js.Any], styletrong.asInstanceOf[js.Any])).asInstanceOf[StyleObject]
+  inline def renderDeclarativeRules(style: StyleObject, styletrong: StandardEngine): StyleObject = (^.asInstanceOf[js.Dynamic].applyDynamic("renderDeclarativeRules")(style.asInstanceOf[js.Any], styletrong.asInstanceOf[js.Any])).asInstanceOf[StyleObject]
   
   type FontFace = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.AtRule.FontFace */ js.Any
   
@@ -33,26 +30,20 @@ object mod {
   }
   object KeyframesObject {
     
-    @scala.inline
-    def apply(): KeyframesObject = {
+    inline def apply(): KeyframesObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyframesObject]
     }
     
-    @scala.inline
-    implicit class KeyframesObjectMutableBuilder[Self <: KeyframesObject] (val x: Self) extends AnyVal {
+    extension [Self <: KeyframesObject](x: Self) {
       
-      @scala.inline
-      def setFrom(value: Properties): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Properties): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setTo(value: Properties): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Properties): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   
@@ -70,8 +61,7 @@ object mod {
   }
   object StandardEngine {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       renderFontFace: FontFace => String,
       renderKeyframes: KeyframesObject => String,
       renderStyle: StyleObject => String
@@ -80,17 +70,13 @@ object mod {
       __obj.asInstanceOf[StandardEngine]
     }
     
-    @scala.inline
-    implicit class StandardEngineMutableBuilder[Self <: StandardEngine] (val x: Self) extends AnyVal {
+    extension [Self <: StandardEngine](x: Self) {
       
-      @scala.inline
-      def setRenderFontFace(value: FontFace => String): Self = StObject.set(x, "renderFontFace", js.Any.fromFunction1(value))
+      inline def setRenderFontFace(value: FontFace => String): Self = StObject.set(x, "renderFontFace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderKeyframes(value: KeyframesObject => String): Self = StObject.set(x, "renderKeyframes", js.Any.fromFunction1(value))
+      inline def setRenderKeyframes(value: KeyframesObject => String): Self = StObject.set(x, "renderKeyframes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderStyle(value: StyleObject => String): Self = StObject.set(x, "renderStyle", js.Any.fromFunction1(value))
+      inline def setRenderStyle(value: StyleObject => String): Self = StObject.set(x, "renderStyle", js.Any.fromFunction1(value))
     }
   }
   

@@ -23,28 +23,21 @@ trait DeleteRelationalDatabaseRequest extends StObject {
 }
 object DeleteRelationalDatabaseRequest {
   
-  @scala.inline
-  def apply(relationalDatabaseName: ResourceName): DeleteRelationalDatabaseRequest = {
+  inline def apply(relationalDatabaseName: ResourceName): DeleteRelationalDatabaseRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRelationalDatabaseRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRelationalDatabaseRequestMutableBuilder[Self <: DeleteRelationalDatabaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRelationalDatabaseRequest](x: Self) {
     
-    @scala.inline
-    def setFinalRelationalDatabaseSnapshotName(value: ResourceName): Self = StObject.set(x, "finalRelationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
+    inline def setFinalRelationalDatabaseSnapshotName(value: ResourceName): Self = StObject.set(x, "finalRelationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalRelationalDatabaseSnapshotNameUndefined: Self = StObject.set(x, "finalRelationalDatabaseSnapshotName", js.undefined)
+    inline def setFinalRelationalDatabaseSnapshotNameUndefined: Self = StObject.set(x, "finalRelationalDatabaseSnapshotName", js.undefined)
     
-    @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipFinalSnapshot(value: Boolean): Self = StObject.set(x, "skipFinalSnapshot", value.asInstanceOf[js.Any])
+    inline def setSkipFinalSnapshot(value: Boolean): Self = StObject.set(x, "skipFinalSnapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipFinalSnapshotUndefined: Self = StObject.set(x, "skipFinalSnapshot", js.undefined)
+    inline def setSkipFinalSnapshotUndefined: Self = StObject.set(x, "skipFinalSnapshot", js.undefined)
   }
 }

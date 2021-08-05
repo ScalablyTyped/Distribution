@@ -22,25 +22,19 @@ trait IntentConclusionStatement extends StObject {
 }
 object IntentConclusionStatement {
   
-  @scala.inline
-  def apply(messages: js.Array[IntentConclusionStatementMessage]): IntentConclusionStatement = {
+  inline def apply(messages: js.Array[IntentConclusionStatementMessage]): IntentConclusionStatement = {
     val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntentConclusionStatement]
   }
   
-  @scala.inline
-  implicit class IntentConclusionStatementMutableBuilder[Self <: IntentConclusionStatement] (val x: Self) extends AnyVal {
+  extension [Self <: IntentConclusionStatement](x: Self) {
     
-    @scala.inline
-    def setMessages(value: js.Array[IntentConclusionStatementMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[IntentConclusionStatementMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesVarargs(value: IntentConclusionStatementMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: IntentConclusionStatementMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setResponseCard(value: String): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
+    inline def setResponseCard(value: String): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
+    inline def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
   }
 }

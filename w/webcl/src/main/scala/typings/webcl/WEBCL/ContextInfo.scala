@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ContextInfo {
   
   //CONTEXT_REFERENCE_COUNT                   = 0x1080, // disallowed
-  @scala.inline
-  def CONTEXT_DEVICES: `0x1081` = 0x1081.asInstanceOf[`0x1081`]
+  inline def CONTEXT_DEVICES: `0x1081` = 0x1081.asInstanceOf[`0x1081`]
 }

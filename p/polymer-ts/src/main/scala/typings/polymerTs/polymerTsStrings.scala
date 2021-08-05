@@ -8,6 +8,5 @@ object polymerTsStrings {
   
   @js.native
   sealed trait splice extends StObject
-  @scala.inline
-  def splice: splice = "splice".asInstanceOf[splice]
+  inline def splice: splice = "splice".asInstanceOf[splice]
 }

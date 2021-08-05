@@ -12,19 +12,15 @@ trait ThemeColorPair extends StObject {
 }
 object ThemeColorPair {
   
-  @scala.inline
-  def apply(color: ColorStyle, colorType: ThemeColorType): ThemeColorPair = {
+  inline def apply(color: ColorStyle, colorType: ThemeColorType): ThemeColorPair = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], colorType = colorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeColorPair]
   }
   
-  @scala.inline
-  implicit class ThemeColorPairMutableBuilder[Self <: ThemeColorPair] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeColorPair](x: Self) {
     
-    @scala.inline
-    def setColor(value: ColorStyle): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorStyle): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorType(value: ThemeColorType): Self = StObject.set(x, "colorType", value.asInstanceOf[js.Any])
+    inline def setColorType(value: ThemeColorType): Self = StObject.set(x, "colorType", value.asInstanceOf[js.Any])
   }
 }

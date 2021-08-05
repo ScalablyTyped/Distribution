@@ -45,56 +45,40 @@ object mod {
   }
   object UrlPatternOptions {
     
-    @scala.inline
-    def apply(): UrlPatternOptions = {
+    inline def apply(): UrlPatternOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UrlPatternOptions]
     }
     
-    @scala.inline
-    implicit class UrlPatternOptionsMutableBuilder[Self <: UrlPatternOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UrlPatternOptions](x: Self) {
       
-      @scala.inline
-      def setEscapeChar(value: String): Self = StObject.set(x, "escapeChar", value.asInstanceOf[js.Any])
+      inline def setEscapeChar(value: String): Self = StObject.set(x, "escapeChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeCharUndefined: Self = StObject.set(x, "escapeChar", js.undefined)
+      inline def setEscapeCharUndefined: Self = StObject.set(x, "escapeChar", js.undefined)
       
-      @scala.inline
-      def setOptionalSegmentEndChar(value: String): Self = StObject.set(x, "optionalSegmentEndChar", value.asInstanceOf[js.Any])
+      inline def setOptionalSegmentEndChar(value: String): Self = StObject.set(x, "optionalSegmentEndChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalSegmentEndCharUndefined: Self = StObject.set(x, "optionalSegmentEndChar", js.undefined)
+      inline def setOptionalSegmentEndCharUndefined: Self = StObject.set(x, "optionalSegmentEndChar", js.undefined)
       
-      @scala.inline
-      def setOptionalSegmentStartChar(value: String): Self = StObject.set(x, "optionalSegmentStartChar", value.asInstanceOf[js.Any])
+      inline def setOptionalSegmentStartChar(value: String): Self = StObject.set(x, "optionalSegmentStartChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalSegmentStartCharUndefined: Self = StObject.set(x, "optionalSegmentStartChar", js.undefined)
+      inline def setOptionalSegmentStartCharUndefined: Self = StObject.set(x, "optionalSegmentStartChar", js.undefined)
       
-      @scala.inline
-      def setSegmentNameCharset(value: String): Self = StObject.set(x, "segmentNameCharset", value.asInstanceOf[js.Any])
+      inline def setSegmentNameCharset(value: String): Self = StObject.set(x, "segmentNameCharset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentNameCharsetUndefined: Self = StObject.set(x, "segmentNameCharset", js.undefined)
+      inline def setSegmentNameCharsetUndefined: Self = StObject.set(x, "segmentNameCharset", js.undefined)
       
-      @scala.inline
-      def setSegmentNameStartChar(value: String): Self = StObject.set(x, "segmentNameStartChar", value.asInstanceOf[js.Any])
+      inline def setSegmentNameStartChar(value: String): Self = StObject.set(x, "segmentNameStartChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentNameStartCharUndefined: Self = StObject.set(x, "segmentNameStartChar", js.undefined)
+      inline def setSegmentNameStartCharUndefined: Self = StObject.set(x, "segmentNameStartChar", js.undefined)
       
-      @scala.inline
-      def setSegmentValueCharset(value: String): Self = StObject.set(x, "segmentValueCharset", value.asInstanceOf[js.Any])
+      inline def setSegmentValueCharset(value: String): Self = StObject.set(x, "segmentValueCharset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentValueCharsetUndefined: Self = StObject.set(x, "segmentValueCharset", js.undefined)
+      inline def setSegmentValueCharsetUndefined: Self = StObject.set(x, "segmentValueCharset", js.undefined)
       
-      @scala.inline
-      def setWildcardChar(value: String): Self = StObject.set(x, "wildcardChar", value.asInstanceOf[js.Any])
+      inline def setWildcardChar(value: String): Self = StObject.set(x, "wildcardChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWildcardCharUndefined: Self = StObject.set(x, "wildcardChar", js.undefined)
+      inline def setWildcardCharUndefined: Self = StObject.set(x, "wildcardChar", js.undefined)
     }
   }
 }

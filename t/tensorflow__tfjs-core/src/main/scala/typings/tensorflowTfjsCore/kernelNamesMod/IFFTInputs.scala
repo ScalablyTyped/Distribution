@@ -11,19 +11,15 @@ trait IFFTInputs extends StObject {
 }
 object IFFTInputs {
   
-  @scala.inline
-  def apply(): IFFTInputs = {
+  inline def apply(): IFFTInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFFTInputs]
   }
   
-  @scala.inline
-  implicit class IFFTInputsMutableBuilder[Self <: IFFTInputs] (val x: Self) extends AnyVal {
+  extension [Self <: IFFTInputs](x: Self) {
     
-    @scala.inline
-    def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
   }
 }

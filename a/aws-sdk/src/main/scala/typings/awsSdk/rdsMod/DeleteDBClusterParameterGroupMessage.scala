@@ -13,16 +13,13 @@ trait DeleteDBClusterParameterGroupMessage extends StObject {
 }
 object DeleteDBClusterParameterGroupMessage {
   
-  @scala.inline
-  def apply(DBClusterParameterGroupName: String): DeleteDBClusterParameterGroupMessage = {
+  inline def apply(DBClusterParameterGroupName: String): DeleteDBClusterParameterGroupMessage = {
     val __obj = js.Dynamic.literal(DBClusterParameterGroupName = DBClusterParameterGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDBClusterParameterGroupMessage]
   }
   
-  @scala.inline
-  implicit class DeleteDBClusterParameterGroupMessageMutableBuilder[Self <: DeleteDBClusterParameterGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDBClusterParameterGroupMessage](x: Self) {
     
-    @scala.inline
-    def setDBClusterParameterGroupName(value: String): Self = StObject.set(x, "DBClusterParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setDBClusterParameterGroupName(value: String): Self = StObject.set(x, "DBClusterParameterGroupName", value.asInstanceOf[js.Any])
   }
 }

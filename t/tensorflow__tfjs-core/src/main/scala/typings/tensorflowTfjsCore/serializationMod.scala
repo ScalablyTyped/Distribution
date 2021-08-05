@@ -51,13 +51,12 @@ object serializationMod {
       * @param config The Configuration for the object.
       */
     /** @nocollapse */
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   }
   
   @JSImport("@tensorflow/tfjs-core/dist/serialization", "SerializationMap")
   @js.native
-  class SerializationMap protected () extends StObject {
+  /* private */ class SerializationMap () extends StObject {
     
     var classNameMap: StringDictionary[js.Tuple2[SerializableConstructor[Serializable], FromConfigMethod[Serializable]]] = js.native
   }
@@ -71,24 +70,20 @@ object serializationMod {
     /**
       * Returns the singleton instance of the map.
       */
-    @scala.inline
-    def getMap(): SerializationMap = ^.asInstanceOf[js.Dynamic].applyDynamic("getMap")().asInstanceOf[SerializationMap]
+    inline def getMap(): SerializationMap = ^.asInstanceOf[js.Dynamic].applyDynamic("getMap")().asInstanceOf[SerializationMap]
     
     @JSImport("@tensorflow/tfjs-core/dist/serialization", "SerializationMap.instance")
     @js.native
     def instance: js.Any = js.native
-    @scala.inline
-    def instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
+    inline def instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
     
     /**
       * Registers the class as serializable.
       */
-    @scala.inline
-    def register[T /* <: Serializable */](cls: SerializableConstructor[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def register[T /* <: Serializable */](cls: SerializableConstructor[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def registerClass[T /* <: Serializable */](cls: SerializableConstructor[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerClass")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerClass[T /* <: Serializable */](cls: SerializableConstructor[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerClass")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait ConfigDict
     extends StObject
@@ -96,8 +91,7 @@ object serializationMod {
        with _ConfigDictValue
   object ConfigDict {
     
-    @scala.inline
-    def apply(): ConfigDict = {
+    inline def apply(): ConfigDict = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigDict]
     }

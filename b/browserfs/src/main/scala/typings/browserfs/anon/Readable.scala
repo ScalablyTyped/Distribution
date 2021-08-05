@@ -13,19 +13,15 @@ trait Readable extends StObject {
 }
 object Readable {
   
-  @scala.inline
-  def apply(readable: FileSystem, writable: FileSystem): Readable = {
+  inline def apply(readable: FileSystem, writable: FileSystem): Readable = {
     val __obj = js.Dynamic.literal(readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readable]
   }
   
-  @scala.inline
-  implicit class ReadableMutableBuilder[Self <: Readable] (val x: Self) extends AnyVal {
+  extension [Self <: Readable](x: Self) {
     
-    @scala.inline
-    def setReadable(value: FileSystem): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+    inline def setReadable(value: FileSystem): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritable(value: FileSystem): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+    inline def setWritable(value: FileSystem): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
   }
 }

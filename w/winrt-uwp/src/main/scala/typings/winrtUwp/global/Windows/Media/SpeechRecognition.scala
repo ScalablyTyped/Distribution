@@ -481,24 +481,21 @@ object SpeechRecognition {
     @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizer.supportedGrammarLanguages")
     @js.native
     def supportedGrammarLanguages: IVectorView[Language] = js.native
-    @scala.inline
-    def supportedGrammarLanguages_=(x: IVectorView[Language]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedGrammarLanguages")(x.asInstanceOf[js.Any])
+    inline def supportedGrammarLanguages_=(x: IVectorView[Language]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedGrammarLanguages")(x.asInstanceOf[js.Any])
     
     /** Gets the collection of languages supported by the pre-defined, web-service grammars of the SpeechRecognitionTopicConstraint objects specified in the Constraints property. */
     /* static member */
     @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizer.supportedTopicLanguages")
     @js.native
     def supportedTopicLanguages: IVectorView[Language] = js.native
-    @scala.inline
-    def supportedTopicLanguages_=(x: IVectorView[Language]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedTopicLanguages")(x.asInstanceOf[js.Any])
+    inline def supportedTopicLanguages_=(x: IVectorView[Language]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedTopicLanguages")(x.asInstanceOf[js.Any])
     
     /** Gets the language of the device specified in Settings > Time & Language > Speech. */
     /* static member */
     @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizer.systemSpeechLanguage")
     @js.native
     def systemSpeechLanguage: Language = js.native
-    @scala.inline
-    def systemSpeechLanguage_=(x: Language): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("systemSpeechLanguage")(x.asInstanceOf[js.Any])
+    inline def systemSpeechLanguage_=(x: Language): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("systemSpeechLanguage")(x.asInstanceOf[js.Any])
   }
   
   /** Specifies the state of the speech recognizer. */

@@ -28,8 +28,6 @@ object HeadingPitchRange {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def clone_(hpr: HeadingPitchRange): HeadingPitchRange = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(hpr.asInstanceOf[js.Any]).asInstanceOf[HeadingPitchRange]
-  @scala.inline
-  def clone_(hpr: HeadingPitchRange, result: HeadingPitchRange): HeadingPitchRange = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(hpr.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[HeadingPitchRange]
+  inline def clone_(hpr: HeadingPitchRange): HeadingPitchRange = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(hpr.asInstanceOf[js.Any]).asInstanceOf[HeadingPitchRange]
+  inline def clone_(hpr: HeadingPitchRange, result: HeadingPitchRange): HeadingPitchRange = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(hpr.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[HeadingPitchRange]
 }

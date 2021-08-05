@@ -12,25 +12,19 @@ trait KafkaVersion extends StObject {
 }
 object KafkaVersion {
   
-  @scala.inline
-  def apply(): KafkaVersion = {
+  inline def apply(): KafkaVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KafkaVersion]
   }
   
-  @scala.inline
-  implicit class KafkaVersionMutableBuilder[Self <: KafkaVersion] (val x: Self) extends AnyVal {
+  extension [Self <: KafkaVersion](x: Self) {
     
-    @scala.inline
-    def setStatus(value: KafkaVersionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: KafkaVersionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

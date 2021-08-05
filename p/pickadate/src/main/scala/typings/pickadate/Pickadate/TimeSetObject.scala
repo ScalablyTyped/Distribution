@@ -16,19 +16,15 @@ trait TimeSetObject
 }
 object TimeSetObject {
   
-  @scala.inline
-  def apply(): TimeSetObject = {
+  inline def apply(): TimeSetObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeSetObject]
   }
   
-  @scala.inline
-  implicit class TimeSetObjectMutableBuilder[Self <: TimeSetObject] (val x: Self) extends AnyVal {
+  extension [Self <: TimeSetObject](x: Self) {
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
   }
 }

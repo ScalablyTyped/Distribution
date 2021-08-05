@@ -23,31 +23,23 @@ trait NodeManagement extends StObject {
 }
 object NodeManagement {
   
-  @scala.inline
-  def apply(): NodeManagement = {
+  inline def apply(): NodeManagement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeManagement]
   }
   
-  @scala.inline
-  implicit class NodeManagementMutableBuilder[Self <: NodeManagement] (val x: Self) extends AnyVal {
+  extension [Self <: NodeManagement](x: Self) {
     
-    @scala.inline
-    def setAutoRepair(value: Boolean): Self = StObject.set(x, "autoRepair", value.asInstanceOf[js.Any])
+    inline def setAutoRepair(value: Boolean): Self = StObject.set(x, "autoRepair", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRepairUndefined: Self = StObject.set(x, "autoRepair", js.undefined)
+    inline def setAutoRepairUndefined: Self = StObject.set(x, "autoRepair", js.undefined)
     
-    @scala.inline
-    def setAutoUpgrade(value: Boolean): Self = StObject.set(x, "autoUpgrade", value.asInstanceOf[js.Any])
+    inline def setAutoUpgrade(value: Boolean): Self = StObject.set(x, "autoUpgrade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUpgradeUndefined: Self = StObject.set(x, "autoUpgrade", js.undefined)
+    inline def setAutoUpgradeUndefined: Self = StObject.set(x, "autoUpgrade", js.undefined)
     
-    @scala.inline
-    def setUpgradeOptions(value: AutoUpgradeOptions): Self = StObject.set(x, "upgradeOptions", value.asInstanceOf[js.Any])
+    inline def setUpgradeOptions(value: AutoUpgradeOptions): Self = StObject.set(x, "upgradeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradeOptionsUndefined: Self = StObject.set(x, "upgradeOptions", js.undefined)
+    inline def setUpgradeOptionsUndefined: Self = StObject.set(x, "upgradeOptions", js.undefined)
   }
 }

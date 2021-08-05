@@ -20,43 +20,31 @@ trait BulkEditSitesRequest extends StObject {
 }
 object BulkEditSitesRequest {
   
-  @scala.inline
-  def apply(): BulkEditSitesRequest = {
+  inline def apply(): BulkEditSitesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkEditSitesRequest]
   }
   
-  @scala.inline
-  implicit class BulkEditSitesRequestMutableBuilder[Self <: BulkEditSitesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BulkEditSitesRequest](x: Self) {
     
-    @scala.inline
-    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
+    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
-    @scala.inline
-    def setCreatedSites(value: js.Array[Site]): Self = StObject.set(x, "createdSites", value.asInstanceOf[js.Any])
+    inline def setCreatedSites(value: js.Array[Site]): Self = StObject.set(x, "createdSites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedSitesUndefined: Self = StObject.set(x, "createdSites", js.undefined)
+    inline def setCreatedSitesUndefined: Self = StObject.set(x, "createdSites", js.undefined)
     
-    @scala.inline
-    def setCreatedSitesVarargs(value: Site*): Self = StObject.set(x, "createdSites", js.Array(value :_*))
+    inline def setCreatedSitesVarargs(value: Site*): Self = StObject.set(x, "createdSites", js.Array(value :_*))
     
-    @scala.inline
-    def setDeletedSites(value: js.Array[String]): Self = StObject.set(x, "deletedSites", value.asInstanceOf[js.Any])
+    inline def setDeletedSites(value: js.Array[String]): Self = StObject.set(x, "deletedSites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedSitesUndefined: Self = StObject.set(x, "deletedSites", js.undefined)
+    inline def setDeletedSitesUndefined: Self = StObject.set(x, "deletedSites", js.undefined)
     
-    @scala.inline
-    def setDeletedSitesVarargs(value: String*): Self = StObject.set(x, "deletedSites", js.Array(value :_*))
+    inline def setDeletedSitesVarargs(value: String*): Self = StObject.set(x, "deletedSites", js.Array(value :_*))
     
-    @scala.inline
-    def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
+    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
+    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
   }
 }

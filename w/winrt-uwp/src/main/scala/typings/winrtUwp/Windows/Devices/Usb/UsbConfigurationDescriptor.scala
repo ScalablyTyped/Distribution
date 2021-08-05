@@ -21,25 +21,19 @@ trait UsbConfigurationDescriptor extends StObject {
 }
 object UsbConfigurationDescriptor {
   
-  @scala.inline
-  def apply(configurationValue: Double, maxPowerMilliamps: Double, remoteWakeup: Boolean, selfPowered: Boolean): UsbConfigurationDescriptor = {
+  inline def apply(configurationValue: Double, maxPowerMilliamps: Double, remoteWakeup: Boolean, selfPowered: Boolean): UsbConfigurationDescriptor = {
     val __obj = js.Dynamic.literal(configurationValue = configurationValue.asInstanceOf[js.Any], maxPowerMilliamps = maxPowerMilliamps.asInstanceOf[js.Any], remoteWakeup = remoteWakeup.asInstanceOf[js.Any], selfPowered = selfPowered.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsbConfigurationDescriptor]
   }
   
-  @scala.inline
-  implicit class UsbConfigurationDescriptorMutableBuilder[Self <: UsbConfigurationDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: UsbConfigurationDescriptor](x: Self) {
     
-    @scala.inline
-    def setConfigurationValue(value: Double): Self = StObject.set(x, "configurationValue", value.asInstanceOf[js.Any])
+    inline def setConfigurationValue(value: Double): Self = StObject.set(x, "configurationValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPowerMilliamps(value: Double): Self = StObject.set(x, "maxPowerMilliamps", value.asInstanceOf[js.Any])
+    inline def setMaxPowerMilliamps(value: Double): Self = StObject.set(x, "maxPowerMilliamps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteWakeup(value: Boolean): Self = StObject.set(x, "remoteWakeup", value.asInstanceOf[js.Any])
+    inline def setRemoteWakeup(value: Boolean): Self = StObject.set(x, "remoteWakeup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfPowered(value: Boolean): Self = StObject.set(x, "selfPowered", value.asInstanceOf[js.Any])
+    inline def setSelfPowered(value: Boolean): Self = StObject.set(x, "selfPowered", value.asInstanceOf[js.Any])
   }
 }

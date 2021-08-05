@@ -12,17 +12,14 @@ trait ActiveXObjectNameMap extends StObject {
 }
 object ActiveXObjectNameMap {
   
-  @scala.inline
-  def apply(MicrosoftDotDiskQuota: DiskQuotaControl): ActiveXObjectNameMap = {
+  inline def apply(MicrosoftDotDiskQuota: DiskQuotaControl): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("Microsoft.DiskQuota")(MicrosoftDotDiskQuota.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
     
-    @scala.inline
-    def setMicrosoftDotDiskQuota(value: DiskQuotaControl): Self = StObject.set(x, "Microsoft.DiskQuota", value.asInstanceOf[js.Any])
+    inline def setMicrosoftDotDiskQuota(value: DiskQuotaControl): Self = StObject.set(x, "Microsoft.DiskQuota", value.asInstanceOf[js.Any])
   }
 }

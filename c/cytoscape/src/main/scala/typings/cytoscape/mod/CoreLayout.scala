@@ -38,8 +38,7 @@ trait CoreLayout extends StObject {
 }
 object CoreLayout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createLayout: LayoutOptions => Layouts,
     layout: LayoutOptions => Layouts,
     makeLayout: LayoutOptions => Layouts
@@ -48,16 +47,12 @@ object CoreLayout {
     __obj.asInstanceOf[CoreLayout]
   }
   
-  @scala.inline
-  implicit class CoreLayoutMutableBuilder[Self <: CoreLayout] (val x: Self) extends AnyVal {
+  extension [Self <: CoreLayout](x: Self) {
     
-    @scala.inline
-    def setCreateLayout(value: LayoutOptions => Layouts): Self = StObject.set(x, "createLayout", js.Any.fromFunction1(value))
+    inline def setCreateLayout(value: LayoutOptions => Layouts): Self = StObject.set(x, "createLayout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLayout(value: LayoutOptions => Layouts): Self = StObject.set(x, "layout", js.Any.fromFunction1(value))
+    inline def setLayout(value: LayoutOptions => Layouts): Self = StObject.set(x, "layout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMakeLayout(value: LayoutOptions => Layouts): Self = StObject.set(x, "makeLayout", js.Any.fromFunction1(value))
+    inline def setMakeLayout(value: LayoutOptions => Layouts): Self = StObject.set(x, "makeLayout", js.Any.fromFunction1(value))
   }
 }

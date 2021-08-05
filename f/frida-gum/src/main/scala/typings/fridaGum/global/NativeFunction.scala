@@ -31,6 +31,5 @@ class NativeFunction protected ()
 }
 object NativeFunction {
   
-  @scala.inline
-  def apply: NativeFunctionConstructor = js.Dynamic.global.selectDynamic("NativeFunction").asInstanceOf[NativeFunctionConstructor]
+  inline def apply: NativeFunctionConstructor = js.Dynamic.global.selectDynamic("NativeFunction").asInstanceOf[NativeFunctionConstructor]
 }

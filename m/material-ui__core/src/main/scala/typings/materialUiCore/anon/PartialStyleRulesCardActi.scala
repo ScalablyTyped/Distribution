@@ -16,31 +16,23 @@ trait PartialStyleRulesCardActi extends StObject {
 }
 object PartialStyleRulesCardActi {
   
-  @scala.inline
-  def apply(): PartialStyleRulesCardActi = {
+  inline def apply(): PartialStyleRulesCardActi = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesCardActi]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesCardActiMutableBuilder[Self <: PartialStyleRulesCardActi] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesCardActi](x: Self) {
     
-    @scala.inline
-    def setAction(value: CSSProperties): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: CSSProperties): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setDisableActionSpacing(value: CSSProperties): Self = StObject.set(x, "disableActionSpacing", value.asInstanceOf[js.Any])
+    inline def setDisableActionSpacing(value: CSSProperties): Self = StObject.set(x, "disableActionSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableActionSpacingUndefined: Self = StObject.set(x, "disableActionSpacing", js.undefined)
+    inline def setDisableActionSpacingUndefined: Self = StObject.set(x, "disableActionSpacing", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait TextFormat extends StObject {
 }
 object TextFormat {
   
-  @scala.inline
-  def apply(): TextFormat = {
+  inline def apply(): TextFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextFormat]
   }
   
-  @scala.inline
-  implicit class TextFormatMutableBuilder[Self <: TextFormat] (val x: Self) extends AnyVal {
+  extension [Self <: TextFormat](x: Self) {
     
-    @scala.inline
-    def setTextFormat(value: LyricistTextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
+    inline def setTextFormat(value: LyricistTextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
+    inline def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
   }
 }

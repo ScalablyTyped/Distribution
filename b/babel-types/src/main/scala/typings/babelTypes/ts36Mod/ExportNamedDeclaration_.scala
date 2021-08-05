@@ -24,8 +24,7 @@ trait ExportNamedDeclaration_
 }
 object ExportNamedDeclaration_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     declaration: Declaration,
     end: Double,
     loc: SourceLocation,
@@ -37,25 +36,18 @@ object ExportNamedDeclaration_ {
     __obj.asInstanceOf[ExportNamedDeclaration_]
   }
   
-  @scala.inline
-  implicit class ExportNamedDeclaration_MutableBuilder[Self <: ExportNamedDeclaration_] (val x: Self) extends AnyVal {
+  extension [Self <: ExportNamedDeclaration_](x: Self) {
     
-    @scala.inline
-    def setDeclaration(value: Declaration): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
+    inline def setDeclaration(value: Declaration): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: StringLiteral_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: StringLiteral_): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNull: Self = StObject.set(x, "source", null)
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
     
-    @scala.inline
-    def setSpecifiers(value: js.Array[ExportSpecifier_]): Self = StObject.set(x, "specifiers", value.asInstanceOf[js.Any])
+    inline def setSpecifiers(value: js.Array[ExportSpecifier_]): Self = StObject.set(x, "specifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecifiersVarargs(value: ExportSpecifier_ *): Self = StObject.set(x, "specifiers", js.Array(value :_*))
+    inline def setSpecifiersVarargs(value: ExportSpecifier_ *): Self = StObject.set(x, "specifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: ExportNamedDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ExportNamedDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

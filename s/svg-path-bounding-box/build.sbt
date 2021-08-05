@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "svg-path-bounding-box"
-version := "1.0-dt-20200515Z-7ac99c"
+version := "1.0-dt-20200515Z-bae217"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -13,25 +13,19 @@ trait IncludeNonWordCharacters extends StObject {
 }
 object IncludeNonWordCharacters {
   
-  @scala.inline
-  def apply(): IncludeNonWordCharacters = {
+  inline def apply(): IncludeNonWordCharacters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncludeNonWordCharacters]
   }
   
-  @scala.inline
-  implicit class IncludeNonWordCharactersMutableBuilder[Self <: IncludeNonWordCharacters] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeNonWordCharacters](x: Self) {
     
-    @scala.inline
-    def setIncludeNonWordCharacters(value: Boolean): Self = StObject.set(x, "includeNonWordCharacters", value.asInstanceOf[js.Any])
+    inline def setIncludeNonWordCharacters(value: Boolean): Self = StObject.set(x, "includeNonWordCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeNonWordCharactersUndefined: Self = StObject.set(x, "includeNonWordCharacters", js.undefined)
+    inline def setIncludeNonWordCharactersUndefined: Self = StObject.set(x, "includeNonWordCharacters", js.undefined)
     
-    @scala.inline
-    def setWordRegex(value: RegExp): Self = StObject.set(x, "wordRegex", value.asInstanceOf[js.Any])
+    inline def setWordRegex(value: RegExp): Self = StObject.set(x, "wordRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordRegexUndefined: Self = StObject.set(x, "wordRegex", js.undefined)
+    inline def setWordRegexUndefined: Self = StObject.set(x, "wordRegex", js.undefined)
   }
 }

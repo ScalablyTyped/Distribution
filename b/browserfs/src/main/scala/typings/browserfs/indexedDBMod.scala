@@ -45,8 +45,7 @@ object indexedDBMod {
     /**
       * Constructs an IndexedDB file system with the given options.
       */
-    @scala.inline
-    def Create(opts: IndexedDBFileSystemOptions, cb: BFSCallback[IndexedDBFileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Create(opts: IndexedDBFileSystemOptions, cb: BFSCallback[IndexedDBFileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/IndexedDB", "default.Name")
     @js.native
@@ -56,8 +55,7 @@ object indexedDBMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @scala.inline
-    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+    inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @JSImport("browserfs/dist/node/backend/IndexedDB", "IndexedDBROTransaction")
@@ -139,9 +137,9 @@ object indexedDBMod {
     def this(cb: BFSCallback[IndexedDBStore]) = this()
     def this(cb: BFSCallback[IndexedDBStore], storeName: String) = this()
     
-    var db: js.Any = js.native
+    /* private */ var db: js.Any = js.native
     
-    var storeName: js.Any = js.native
+    /* private */ var storeName: js.Any = js.native
   }
   
   type IndexedDBFileSystem = AsyncKeyValueFileSystem
@@ -152,20 +150,16 @@ object indexedDBMod {
   }
   object IndexedDBFileSystemOptions {
     
-    @scala.inline
-    def apply(): IndexedDBFileSystemOptions = {
+    inline def apply(): IndexedDBFileSystemOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IndexedDBFileSystemOptions]
     }
     
-    @scala.inline
-    implicit class IndexedDBFileSystemOptionsMutableBuilder[Self <: IndexedDBFileSystemOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IndexedDBFileSystemOptions](x: Self) {
       
-      @scala.inline
-      def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
+      inline def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreNameUndefined: Self = StObject.set(x, "storeName", js.undefined)
+      inline def setStoreNameUndefined: Self = StObject.set(x, "storeName", js.undefined)
     }
   }
 }

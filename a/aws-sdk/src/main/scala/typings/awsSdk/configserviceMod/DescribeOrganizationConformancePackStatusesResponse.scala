@@ -18,28 +18,21 @@ trait DescribeOrganizationConformancePackStatusesResponse extends StObject {
 }
 object DescribeOrganizationConformancePackStatusesResponse {
   
-  @scala.inline
-  def apply(): DescribeOrganizationConformancePackStatusesResponse = {
+  inline def apply(): DescribeOrganizationConformancePackStatusesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeOrganizationConformancePackStatusesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeOrganizationConformancePackStatusesResponseMutableBuilder[Self <: DescribeOrganizationConformancePackStatusesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOrganizationConformancePackStatusesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOrganizationConformancePackStatuses(value: OrganizationConformancePackStatuses): Self = StObject.set(x, "OrganizationConformancePackStatuses", value.asInstanceOf[js.Any])
+    inline def setOrganizationConformancePackStatuses(value: OrganizationConformancePackStatuses): Self = StObject.set(x, "OrganizationConformancePackStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationConformancePackStatusesUndefined: Self = StObject.set(x, "OrganizationConformancePackStatuses", js.undefined)
+    inline def setOrganizationConformancePackStatusesUndefined: Self = StObject.set(x, "OrganizationConformancePackStatuses", js.undefined)
     
-    @scala.inline
-    def setOrganizationConformancePackStatusesVarargs(value: OrganizationConformancePackStatus*): Self = StObject.set(x, "OrganizationConformancePackStatuses", js.Array(value :_*))
+    inline def setOrganizationConformancePackStatusesVarargs(value: OrganizationConformancePackStatus*): Self = StObject.set(x, "OrganizationConformancePackStatuses", js.Array(value :_*))
   }
 }

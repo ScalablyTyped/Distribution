@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dispatch[T /* <: js.Object */](types: String*): Dispatch_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(types.asInstanceOf[js.Any]).asInstanceOf[Dispatch_[T]]
+  inline def dispatch[T /* <: js.Object */](types: String*): Dispatch_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(types.asInstanceOf[js.Any]).asInstanceOf[Dispatch_[T]]
   
   @js.native
   trait Dispatch_[T /* <: js.Object */] extends StObject {

@@ -27,6 +27,5 @@ object Mouse {
     * @returns True if locked.
     */
   /* static member */
-  @scala.inline
-  def isPointerLocked(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPointerLocked")().asInstanceOf[Boolean]
+  inline def isPointerLocked(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPointerLocked")().asInstanceOf[Boolean]
 }

@@ -15,16 +15,13 @@ trait ConnectTheDots
 }
 object ConnectTheDots {
   
-  @scala.inline
-  def apply(paths: IPathMap): ConnectTheDots = {
+  inline def apply(paths: IPathMap): ConnectTheDots = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectTheDots]
   }
   
-  @scala.inline
-  implicit class ConnectTheDotsMutableBuilder[Self <: ConnectTheDots] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectTheDots](x: Self) {
     
-    @scala.inline
-    def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait NewsRepositoryInboxResponseBusinessProfileReminder extends StObject {
 }
 object NewsRepositoryInboxResponseBusinessProfileReminder {
   
-  @scala.inline
-  def apply(subtitle: String, title: String): NewsRepositoryInboxResponseBusinessProfileReminder = {
+  inline def apply(subtitle: String, title: String): NewsRepositoryInboxResponseBusinessProfileReminder = {
     val __obj = js.Dynamic.literal(subtitle = subtitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewsRepositoryInboxResponseBusinessProfileReminder]
   }
   
-  @scala.inline
-  implicit class NewsRepositoryInboxResponseBusinessProfileReminderMutableBuilder[Self <: NewsRepositoryInboxResponseBusinessProfileReminder] (val x: Self) extends AnyVal {
+  extension [Self <: NewsRepositoryInboxResponseBusinessProfileReminder](x: Self) {
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

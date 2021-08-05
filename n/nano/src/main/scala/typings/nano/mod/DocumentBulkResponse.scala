@@ -21,34 +21,25 @@ trait DocumentBulkResponse extends StObject {
 }
 object DocumentBulkResponse {
   
-  @scala.inline
-  def apply(id: String): DocumentBulkResponse = {
+  inline def apply(id: String): DocumentBulkResponse = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentBulkResponse]
   }
   
-  @scala.inline
-  implicit class DocumentBulkResponseMutableBuilder[Self <: DocumentBulkResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentBulkResponse](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
   }
 }

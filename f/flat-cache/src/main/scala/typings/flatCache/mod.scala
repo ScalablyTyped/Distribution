@@ -11,28 +11,19 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clearAll(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")().asInstanceOf[Boolean]
-  @scala.inline
-  def clearAll(cacheDir: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")(cacheDir.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def clearAll(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")().asInstanceOf[Boolean]
+  inline def clearAll(cacheDir: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")(cacheDir.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def clearCacheById(cacheId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCacheById")(cacheId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def clearCacheById(cacheId: String, cacheDir: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("clearCacheById")(cacheId.asInstanceOf[js.Any], cacheDir.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def clearCacheById(cacheId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCacheById")(cacheId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def clearCacheById(cacheId: String, cacheDir: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("clearCacheById")(cacheId.asInstanceOf[js.Any], cacheDir.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def create(cacheId: String): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheId.asInstanceOf[js.Any]).asInstanceOf[Cache]
-  @scala.inline
-  def create(cacheId: String, cacheDir: String): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheId.asInstanceOf[js.Any], cacheDir.asInstanceOf[js.Any])).asInstanceOf[Cache]
+  inline def create(cacheId: String): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheId.asInstanceOf[js.Any]).asInstanceOf[Cache]
+  inline def create(cacheId: String, cacheDir: String): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(cacheId.asInstanceOf[js.Any], cacheDir.asInstanceOf[js.Any])).asInstanceOf[Cache]
   
-  @scala.inline
-  def createFromFile(filePath: String): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[Cache]
+  inline def createFromFile(filePath: String): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[Cache]
   
-  @scala.inline
-  def load(cacheId: String): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(cacheId.asInstanceOf[js.Any]).asInstanceOf[Cache]
-  @scala.inline
-  def load(cacheId: String, cacheDir: String): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(cacheId.asInstanceOf[js.Any], cacheDir.asInstanceOf[js.Any])).asInstanceOf[Cache]
+  inline def load(cacheId: String): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(cacheId.asInstanceOf[js.Any]).asInstanceOf[Cache]
+  inline def load(cacheId: String, cacheDir: String): Cache = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(cacheId.asInstanceOf[js.Any], cacheDir.asInstanceOf[js.Any])).asInstanceOf[Cache]
   
   @js.native
   trait Cache extends StObject {

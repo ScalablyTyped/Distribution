@@ -33,8 +33,7 @@ trait GithubAuthProviderInstance
 }
 object GithubAuthProviderInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addScope: String => AuthProvider,
     providerId: String,
     setCustomParameters: js.Object => AuthProvider
@@ -43,13 +42,10 @@ object GithubAuthProviderInstance {
     __obj.asInstanceOf[GithubAuthProviderInstance]
   }
   
-  @scala.inline
-  implicit class GithubAuthProviderInstanceMutableBuilder[Self <: GithubAuthProviderInstance] (val x: Self) extends AnyVal {
+  extension [Self <: GithubAuthProviderInstance](x: Self) {
     
-    @scala.inline
-    def setAddScope(value: String => AuthProvider): Self = StObject.set(x, "addScope", js.Any.fromFunction1(value))
+    inline def setAddScope(value: String => AuthProvider): Self = StObject.set(x, "addScope", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCustomParameters(value: js.Object => AuthProvider): Self = StObject.set(x, "setCustomParameters", js.Any.fromFunction1(value))
+    inline def setSetCustomParameters(value: js.Object => AuthProvider): Self = StObject.set(x, "setCustomParameters", js.Any.fromFunction1(value))
   }
 }

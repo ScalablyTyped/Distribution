@@ -26,31 +26,23 @@ trait SchemaErrorHandler extends StObject {
 }
 object SchemaErrorHandler {
   
-  @scala.inline
-  def apply(): SchemaErrorHandler = {
+  inline def apply(): SchemaErrorHandler = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaErrorHandler]
   }
   
-  @scala.inline
-  implicit class SchemaErrorHandlerMutableBuilder[Self <: SchemaErrorHandler] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaErrorHandler](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setStaticFile(value: String): Self = StObject.set(x, "staticFile", value.asInstanceOf[js.Any])
+    inline def setStaticFile(value: String): Self = StObject.set(x, "staticFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticFileUndefined: Self = StObject.set(x, "staticFile", js.undefined)
+    inline def setStaticFileUndefined: Self = StObject.set(x, "staticFile", js.undefined)
   }
 }

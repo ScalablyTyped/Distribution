@@ -16,19 +16,15 @@ trait LoginStatus extends StObject {
 }
 object LoginStatus {
   
-  @scala.inline
-  def apply(authResponse: Expire, status: ConnectionStatus): LoginStatus = {
+  inline def apply(authResponse: Expire, status: ConnectionStatus): LoginStatus = {
     val __obj = js.Dynamic.literal(authResponse = authResponse.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginStatus]
   }
   
-  @scala.inline
-  implicit class LoginStatusMutableBuilder[Self <: LoginStatus] (val x: Self) extends AnyVal {
+  extension [Self <: LoginStatus](x: Self) {
     
-    @scala.inline
-    def setAuthResponse(value: Expire): Self = StObject.set(x, "authResponse", value.asInstanceOf[js.Any])
+    inline def setAuthResponse(value: Expire): Self = StObject.set(x, "authResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ConnectionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ConnectionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

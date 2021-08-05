@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LifeCycleAction extends StObject
 object LifeCycleAction {
   
-  @scala.inline
-  def create: typings.dynogels.dynogelsStrings.create = "create".asInstanceOf[typings.dynogels.dynogelsStrings.create]
+  inline def create: typings.dynogels.dynogelsStrings.create = "create".asInstanceOf[typings.dynogels.dynogelsStrings.create]
   
-  @scala.inline
-  def destroy: typings.dynogels.dynogelsStrings.destroy = "destroy".asInstanceOf[typings.dynogels.dynogelsStrings.destroy]
+  inline def destroy: typings.dynogels.dynogelsStrings.destroy = "destroy".asInstanceOf[typings.dynogels.dynogelsStrings.destroy]
   
-  @scala.inline
-  def update: typings.dynogels.dynogelsStrings.update = "update".asInstanceOf[typings.dynogels.dynogelsStrings.update]
+  inline def update: typings.dynogels.dynogelsStrings.update = "update".asInstanceOf[typings.dynogels.dynogelsStrings.update]
 }

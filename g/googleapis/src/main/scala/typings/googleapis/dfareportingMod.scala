@@ -44,8 +44,7 @@ object dfareportingMod {
         Dfareporting
       ] = js.native
     
-    @scala.inline
-    def v31_=(
+    inline def v31_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -70,8 +69,7 @@ object dfareportingMod {
         typings.googleapis.v32Mod.dfareportingV32.Dfareporting
       ] = js.native
     
-    @scala.inline
-    def v32_=(
+    inline def v32_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -96,8 +94,7 @@ object dfareportingMod {
         typings.googleapis.v33Mod.dfareportingV33.Dfareporting
       ] = js.native
     
-    @scala.inline
-    def v33_=(
+    inline def v33_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -139,8 +136,7 @@ object dfareportingMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -184,19 +180,13 @@ object dfareportingMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def dfareporting(options: Options): Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(options.asInstanceOf[js.Any]).asInstanceOf[Dfareporting]
-  @scala.inline
-  def dfareporting(options: typings.googleapis.v32Mod.dfareportingV32.Options): typings.googleapis.v32Mod.dfareportingV32.Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v32Mod.dfareportingV32.Dfareporting]
-  @scala.inline
-  def dfareporting(options: typings.googleapis.v33Mod.dfareportingV33.Options): typings.googleapis.v33Mod.dfareportingV33.Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v33Mod.dfareportingV33.Dfareporting]
+  inline def dfareporting(options: Options): Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(options.asInstanceOf[js.Any]).asInstanceOf[Dfareporting]
+  inline def dfareporting(options: typings.googleapis.v32Mod.dfareportingV32.Options): typings.googleapis.v32Mod.dfareportingV32.Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v32Mod.dfareportingV32.Dfareporting]
+  inline def dfareporting(options: typings.googleapis.v33Mod.dfareportingV33.Options): typings.googleapis.v33Mod.dfareportingV33.Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v33Mod.dfareportingV33.Dfareporting]
   
-  @scala.inline
-  def dfareporting_v31(version: v3Dot1): Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(version.asInstanceOf[js.Any]).asInstanceOf[Dfareporting]
+  inline def dfareporting_v31(version: v3Dot1): Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(version.asInstanceOf[js.Any]).asInstanceOf[Dfareporting]
   
-  @scala.inline
-  def dfareporting_v32(version: v3Dot2): typings.googleapis.v32Mod.dfareportingV32.Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v32Mod.dfareportingV32.Dfareporting]
+  inline def dfareporting_v32(version: v3Dot2): typings.googleapis.v32Mod.dfareportingV32.Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v32Mod.dfareportingV32.Dfareporting]
   
-  @scala.inline
-  def dfareporting_v33(version: v3Dot3): typings.googleapis.v33Mod.dfareportingV33.Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v33Mod.dfareportingV33.Dfareporting]
+  inline def dfareporting_v33(version: v3Dot3): typings.googleapis.v33Mod.dfareportingV33.Dfareporting = ^.asInstanceOf[js.Dynamic].applyDynamic("dfareporting")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v33Mod.dfareportingV33.Dfareporting]
 }

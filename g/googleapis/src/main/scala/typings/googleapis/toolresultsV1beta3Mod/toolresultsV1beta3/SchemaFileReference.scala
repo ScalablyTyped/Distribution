@@ -21,19 +21,15 @@ trait SchemaFileReference extends StObject {
 }
 object SchemaFileReference {
   
-  @scala.inline
-  def apply(): SchemaFileReference = {
+  inline def apply(): SchemaFileReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFileReference]
   }
   
-  @scala.inline
-  implicit class SchemaFileReferenceMutableBuilder[Self <: SchemaFileReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFileReference](x: Self) {
     
-    @scala.inline
-    def setFileUri(value: String): Self = StObject.set(x, "fileUri", value.asInstanceOf[js.Any])
+    inline def setFileUri(value: String): Self = StObject.set(x, "fileUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUriUndefined: Self = StObject.set(x, "fileUri", js.undefined)
+    inline def setFileUriUndefined: Self = StObject.set(x, "fileUri", js.undefined)
   }
 }

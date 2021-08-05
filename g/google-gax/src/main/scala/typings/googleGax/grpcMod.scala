@@ -65,8 +65,7 @@ object grpcMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def _findIncludePath(originPath: String, includePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_findIncludePath")(originPath.asInstanceOf[js.Any], includePath.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def _findIncludePath(originPath: String, includePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_findIncludePath")(originPath.asInstanceOf[js.Any], includePath.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("google-gax/build/src/grpc", "GrpcClient")
@@ -173,8 +172,7 @@ object grpcMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def _resolveFile(protoPath: String, filename: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_resolveFile")(protoPath.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def _resolveFile(protoPath: String, filename: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_resolveFile")(protoPath.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Creates a 'bytelength' function for a given proto message class.
@@ -186,8 +184,7 @@ object grpcMod {
       * @return {function(Object):number} - a function to compute the byte length
       *   for an object.
       */
-    @scala.inline
-    def createByteLengthFunction(message: Encode): js.Function1[/* obj */ js.Object, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("createByteLengthFunction")(message.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Object, Double]]
+    inline def createByteLengthFunction(message: Encode): js.Function1[/* obj */ js.Object, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("createByteLengthFunction")(message.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Object, Double]]
   }
   
   trait ClientStubOptions
@@ -204,38 +201,28 @@ object grpcMod {
   }
   object ClientStubOptions {
     
-    @scala.inline
-    def apply(): ClientStubOptions = {
+    inline def apply(): ClientStubOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientStubOptions]
     }
     
-    @scala.inline
-    implicit class ClientStubOptionsMutableBuilder[Self <: ClientStubOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientStubOptions](x: Self) {
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
+      inline def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicePathUndefined: Self = StObject.set(x, "servicePath", js.undefined)
+      inline def setServicePathUndefined: Self = StObject.set(x, "servicePath", js.undefined)
       
-      @scala.inline
-      def setSslCreds(value: typings.grpcGrpcJs.mod.ChannelCredentials): Self = StObject.set(x, "sslCreds", value.asInstanceOf[js.Any])
+      inline def setSslCreds(value: typings.grpcGrpcJs.mod.ChannelCredentials): Self = StObject.set(x, "sslCreds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslCredsUndefined: Self = StObject.set(x, "sslCreds", js.undefined)
+      inline def setSslCredsUndefined: Self = StObject.set(x, "sslCreds", js.undefined)
     }
   }
   
@@ -249,26 +236,20 @@ object grpcMod {
   }
   object GrpcClientOptions {
     
-    @scala.inline
-    def apply(): GrpcClientOptions = {
+    inline def apply(): GrpcClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GrpcClientOptions]
     }
     
-    @scala.inline
-    implicit class GrpcClientOptionsMutableBuilder[Self <: GrpcClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GrpcClientOptions](x: Self) {
       
-      @scala.inline
-      def setAuth(value: GoogleAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: GoogleAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setGrpc(value: GrpcModule): Self = StObject.set(x, "grpc", value.asInstanceOf[js.Any])
+      inline def setGrpc(value: GrpcModule): Self = StObject.set(x, "grpc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrpcUndefined: Self = StObject.set(x, "grpc", js.undefined)
+      inline def setGrpcUndefined: Self = StObject.set(x, "grpc", js.undefined)
     }
   }
   
@@ -362,18 +343,15 @@ object grpcMod {
   }
   object MetadataValue {
     
-    @scala.inline
-    def apply(equals_ : js.Function): MetadataValue = {
+    inline def apply(equals_ : js.Function): MetadataValue = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("equals")(equals_.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetadataValue]
     }
     
-    @scala.inline
-    implicit class MetadataValueMutableBuilder[Self <: MetadataValue] (val x: Self) extends AnyVal {
+    extension [Self <: MetadataValue](x: Self) {
       
-      @scala.inline
-      def setEquals_(value: js.Function): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
+      inline def setEquals_(value: js.Function): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
     }
   }
 }

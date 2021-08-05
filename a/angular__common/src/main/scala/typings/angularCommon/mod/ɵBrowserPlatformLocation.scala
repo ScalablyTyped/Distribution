@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ɵBrowserPlatformLocation protected () extends PlatformLocation {
   def this(_doc: js.Any) = this()
   
-  var _doc: js.Any = js.native
+  /* private */ var _doc: js.Any = js.native
   
-  var _history: js.Any = js.native
+  /* private */ var _history: js.Any = js.native
   
   val location: Location = js.native
   

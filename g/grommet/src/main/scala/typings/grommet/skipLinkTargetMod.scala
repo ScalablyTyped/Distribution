@@ -20,23 +20,18 @@ object skipLinkTargetMod {
   }
   object SkipLinkTargetProps {
     
-    @scala.inline
-    def apply(id: String): SkipLinkTargetProps = {
+    inline def apply(id: String): SkipLinkTargetProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[SkipLinkTargetProps]
     }
     
-    @scala.inline
-    implicit class SkipLinkTargetPropsMutableBuilder[Self <: SkipLinkTargetProps] (val x: Self) extends AnyVal {
+    extension [Self <: SkipLinkTargetProps](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     }
   }
 }

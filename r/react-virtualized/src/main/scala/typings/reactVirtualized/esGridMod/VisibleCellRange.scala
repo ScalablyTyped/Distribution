@@ -12,19 +12,15 @@ trait VisibleCellRange extends StObject {
 }
 object VisibleCellRange {
   
-  @scala.inline
-  def apply(start: Double, stop: Double): VisibleCellRange = {
+  inline def apply(start: Double, stop: Double): VisibleCellRange = {
     val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisibleCellRange]
   }
   
-  @scala.inline
-  implicit class VisibleCellRangeMutableBuilder[Self <: VisibleCellRange] (val x: Self) extends AnyVal {
+  extension [Self <: VisibleCellRange](x: Self) {
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
   }
 }

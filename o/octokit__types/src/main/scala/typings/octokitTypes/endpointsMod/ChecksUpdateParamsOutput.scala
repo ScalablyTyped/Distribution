@@ -18,46 +18,33 @@ trait ChecksUpdateParamsOutput extends StObject {
 }
 object ChecksUpdateParamsOutput {
   
-  @scala.inline
-  def apply(summary: String): ChecksUpdateParamsOutput = {
+  inline def apply(summary: String): ChecksUpdateParamsOutput = {
     val __obj = js.Dynamic.literal(summary = summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksUpdateParamsOutput]
   }
   
-  @scala.inline
-  implicit class ChecksUpdateParamsOutputMutableBuilder[Self <: ChecksUpdateParamsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ChecksUpdateParamsOutput](x: Self) {
     
-    @scala.inline
-    def setAnnotations(value: js.Array[ChecksUpdateParamsOutputAnnotations]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: js.Array[ChecksUpdateParamsOutputAnnotations]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    @scala.inline
-    def setAnnotationsVarargs(value: ChecksUpdateParamsOutputAnnotations*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: ChecksUpdateParamsOutputAnnotations*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
-    @scala.inline
-    def setImages(value: js.Array[ChecksUpdateParamsOutputImages]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[ChecksUpdateParamsOutputImages]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    @scala.inline
-    def setImagesVarargs(value: ChecksUpdateParamsOutputImages*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: ChecksUpdateParamsOutputImages*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

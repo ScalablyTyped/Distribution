@@ -12,19 +12,15 @@ trait SecurityClearCachedPrivileges
 }
 object SecurityClearCachedPrivileges {
   
-  @scala.inline
-  def apply(application: String | js.Array[String]): SecurityClearCachedPrivileges = {
+  inline def apply(application: String | js.Array[String]): SecurityClearCachedPrivileges = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityClearCachedPrivileges]
   }
   
-  @scala.inline
-  implicit class SecurityClearCachedPrivilegesMutableBuilder[Self <: SecurityClearCachedPrivileges] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityClearCachedPrivileges](x: Self) {
     
-    @scala.inline
-    def setApplication(value: String | js.Array[String]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: String | js.Array[String]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVarargs(value: String*): Self = StObject.set(x, "application", js.Array(value :_*))
+    inline def setApplicationVarargs(value: String*): Self = StObject.set(x, "application", js.Array(value :_*))
   }
 }

@@ -17,31 +17,23 @@ trait OrderTrackingSignalShipmentLineItemMapping extends StObject {
 }
 object OrderTrackingSignalShipmentLineItemMapping {
   
-  @scala.inline
-  def apply(): OrderTrackingSignalShipmentLineItemMapping = {
+  inline def apply(): OrderTrackingSignalShipmentLineItemMapping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderTrackingSignalShipmentLineItemMapping]
   }
   
-  @scala.inline
-  implicit class OrderTrackingSignalShipmentLineItemMappingMutableBuilder[Self <: OrderTrackingSignalShipmentLineItemMapping] (val x: Self) extends AnyVal {
+  extension [Self <: OrderTrackingSignalShipmentLineItemMapping](x: Self) {
     
-    @scala.inline
-    def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
+    inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
+    inline def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    @scala.inline
-    def setShipmentId(value: String): Self = StObject.set(x, "shipmentId", value.asInstanceOf[js.Any])
+    inline def setShipmentId(value: String): Self = StObject.set(x, "shipmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShipmentIdUndefined: Self = StObject.set(x, "shipmentId", js.undefined)
+    inline def setShipmentIdUndefined: Self = StObject.set(x, "shipmentId", js.undefined)
   }
 }

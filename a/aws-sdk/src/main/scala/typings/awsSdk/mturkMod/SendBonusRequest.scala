@@ -33,31 +33,23 @@ trait SendBonusRequest extends StObject {
 }
 object SendBonusRequest {
   
-  @scala.inline
-  def apply(AssignmentId: EntityId, BonusAmount: CurrencyAmount, Reason: String, WorkerId: CustomerId): SendBonusRequest = {
+  inline def apply(AssignmentId: EntityId, BonusAmount: CurrencyAmount, Reason: String, WorkerId: CustomerId): SendBonusRequest = {
     val __obj = js.Dynamic.literal(AssignmentId = AssignmentId.asInstanceOf[js.Any], BonusAmount = BonusAmount.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any], WorkerId = WorkerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendBonusRequest]
   }
   
-  @scala.inline
-  implicit class SendBonusRequestMutableBuilder[Self <: SendBonusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendBonusRequest](x: Self) {
     
-    @scala.inline
-    def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
+    inline def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBonusAmount(value: CurrencyAmount): Self = StObject.set(x, "BonusAmount", value.asInstanceOf[js.Any])
+    inline def setBonusAmount(value: CurrencyAmount): Self = StObject.set(x, "BonusAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueRequestToken(value: IdempotencyToken): Self = StObject.set(x, "UniqueRequestToken", value.asInstanceOf[js.Any])
+    inline def setUniqueRequestToken(value: IdempotencyToken): Self = StObject.set(x, "UniqueRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueRequestTokenUndefined: Self = StObject.set(x, "UniqueRequestToken", js.undefined)
+    inline def setUniqueRequestTokenUndefined: Self = StObject.set(x, "UniqueRequestToken", js.undefined)
     
-    @scala.inline
-    def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
+    inline def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
   }
 }

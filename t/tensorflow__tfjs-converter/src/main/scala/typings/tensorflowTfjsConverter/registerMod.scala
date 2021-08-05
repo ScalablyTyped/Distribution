@@ -12,12 +12,9 @@ object registerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deregisterOp(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterOp")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deregisterOp(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterOp")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getRegisteredOp(name: String): OpMapper = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegisteredOp")(name.asInstanceOf[js.Any]).asInstanceOf[OpMapper]
+  inline def getRegisteredOp(name: String): OpMapper = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegisteredOp")(name.asInstanceOf[js.Any]).asInstanceOf[OpMapper]
   
-  @scala.inline
-  def registerOp(name: String, opFunc: OpExecutor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOp")(name.asInstanceOf[js.Any], opFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerOp(name: String, opFunc: OpExecutor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOp")(name.asInstanceOf[js.Any], opFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

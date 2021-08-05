@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BuiltinTheme extends StObject
 object BuiltinTheme {
   
-  @scala.inline
-  def `hc-black`: typings.monacoEditor.monacoEditorStrings.`hc-black` = "hc-black".asInstanceOf[typings.monacoEditor.monacoEditorStrings.`hc-black`]
+  inline def `hc-black`: typings.monacoEditor.monacoEditorStrings.`hc-black` = "hc-black".asInstanceOf[typings.monacoEditor.monacoEditorStrings.`hc-black`]
   
-  @scala.inline
-  def vs: typings.monacoEditor.monacoEditorStrings.vs = "vs".asInstanceOf[typings.monacoEditor.monacoEditorStrings.vs]
+  inline def vs: typings.monacoEditor.monacoEditorStrings.vs = "vs".asInstanceOf[typings.monacoEditor.monacoEditorStrings.vs]
   
-  @scala.inline
-  def `vs-dark`: typings.monacoEditor.monacoEditorStrings.`vs-dark` = "vs-dark".asInstanceOf[typings.monacoEditor.monacoEditorStrings.`vs-dark`]
+  inline def `vs-dark`: typings.monacoEditor.monacoEditorStrings.`vs-dark` = "vs-dark".asInstanceOf[typings.monacoEditor.monacoEditorStrings.`vs-dark`]
 }

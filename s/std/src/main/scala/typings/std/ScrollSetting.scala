@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScrollSetting extends StObject
 object ScrollSetting {
   
-  @scala.inline
-  def _empty: typings.std.stdStrings._empty = "".asInstanceOf[typings.std.stdStrings._empty]
+  inline def _empty: typings.std.stdStrings._empty = "".asInstanceOf[typings.std.stdStrings._empty]
   
-  @scala.inline
-  def up: typings.std.stdStrings.up = "up".asInstanceOf[typings.std.stdStrings.up]
+  inline def up: typings.std.stdStrings.up = "up".asInstanceOf[typings.std.stdStrings.up]
 }

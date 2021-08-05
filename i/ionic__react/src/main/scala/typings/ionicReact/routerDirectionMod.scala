@@ -15,16 +15,12 @@ object routerDirectionMod {
   trait RouterDirection extends StObject
   object RouterDirection {
     
-    @scala.inline
-    def back: typings.ionicReact.ionicReactStrings.back = "back".asInstanceOf[typings.ionicReact.ionicReactStrings.back]
+    inline def back: typings.ionicReact.ionicReactStrings.back = "back".asInstanceOf[typings.ionicReact.ionicReactStrings.back]
     
-    @scala.inline
-    def forward: typings.ionicReact.ionicReactStrings.forward = "forward".asInstanceOf[typings.ionicReact.ionicReactStrings.forward]
+    inline def forward: typings.ionicReact.ionicReactStrings.forward = "forward".asInstanceOf[typings.ionicReact.ionicReactStrings.forward]
     
-    @scala.inline
-    def none: typings.ionicReact.ionicReactStrings.none = "none".asInstanceOf[typings.ionicReact.ionicReactStrings.none]
+    inline def none: typings.ionicReact.ionicReactStrings.none = "none".asInstanceOf[typings.ionicReact.ionicReactStrings.none]
     
-    @scala.inline
-    def root: typings.ionicReact.ionicReactStrings.root = "root".asInstanceOf[typings.ionicReact.ionicReactStrings.root]
+    inline def root: typings.ionicReact.ionicReactStrings.root = "root".asInstanceOf[typings.ionicReact.ionicReactStrings.root]
   }
 }

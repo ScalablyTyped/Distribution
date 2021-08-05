@@ -10,8 +10,7 @@ trait GetObjectAclExceptionsUnion
      with NoSuchKey
 object GetObjectAclExceptionsUnion {
   
-  @scala.inline
-  def apply(): GetObjectAclExceptionsUnion = {
+  inline def apply(): GetObjectAclExceptionsUnion = {
     val __obj = js.Dynamic.literal(name = "NoSuchKey")
     __obj.asInstanceOf[GetObjectAclExceptionsUnion]
   }

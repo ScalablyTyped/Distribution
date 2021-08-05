@@ -14,8 +14,7 @@ trait TokenHandshake
 }
 object TokenHandshake {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authData: TokenAuthData,
     authType: String,
     authVersion: String,
@@ -28,13 +27,10 @@ object TokenHandshake {
     __obj.asInstanceOf[TokenHandshake]
   }
   
-  @scala.inline
-  implicit class TokenHandshakeMutableBuilder[Self <: TokenHandshake] (val x: Self) extends AnyVal {
+  extension [Self <: TokenHandshake](x: Self) {
     
-    @scala.inline
-    def setAuthData(value: TokenAuthData): Self = StObject.set(x, "authData", value.asInstanceOf[js.Any])
+    inline def setAuthData(value: TokenAuthData): Self = StObject.set(x, "authData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

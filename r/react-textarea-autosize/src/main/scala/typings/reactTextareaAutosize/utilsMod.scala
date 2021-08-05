@@ -12,9 +12,7 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
+  inline def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
   
-  @scala.inline
-  def pick[Obj /* <: StringDictionary[js.Any] */, Key /* <: /* keyof Obj */ String */](props: js.Array[Key], obj: Obj): Pick[Obj, Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(props.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Pick[Obj, Key]]
+  inline def pick[Obj /* <: StringDictionary[js.Any] */, Key /* <: /* keyof Obj */ String */](props: js.Array[Key], obj: Obj): Pick[Obj, Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(props.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Pick[Obj, Key]]
 }

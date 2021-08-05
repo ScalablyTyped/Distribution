@@ -23,25 +23,19 @@ trait ResetImageAttributeRequest extends StObject {
 }
 object ResetImageAttributeRequest {
   
-  @scala.inline
-  def apply(Attribute: ResetImageAttributeName, ImageId: ImageId): ResetImageAttributeRequest = {
+  inline def apply(Attribute: ResetImageAttributeName, ImageId: ImageId): ResetImageAttributeRequest = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], ImageId = ImageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetImageAttributeRequest]
   }
   
-  @scala.inline
-  implicit class ResetImageAttributeRequestMutableBuilder[Self <: ResetImageAttributeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResetImageAttributeRequest](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: ResetImageAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: ResetImageAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DescribeJournalS3ExportResponse extends StObject {
 }
 object DescribeJournalS3ExportResponse {
   
-  @scala.inline
-  def apply(ExportDescription: JournalS3ExportDescription): DescribeJournalS3ExportResponse = {
+  inline def apply(ExportDescription: JournalS3ExportDescription): DescribeJournalS3ExportResponse = {
     val __obj = js.Dynamic.literal(ExportDescription = ExportDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeJournalS3ExportResponse]
   }
   
-  @scala.inline
-  implicit class DescribeJournalS3ExportResponseMutableBuilder[Self <: DescribeJournalS3ExportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeJournalS3ExportResponse](x: Self) {
     
-    @scala.inline
-    def setExportDescription(value: JournalS3ExportDescription): Self = StObject.set(x, "ExportDescription", value.asInstanceOf[js.Any])
+    inline def setExportDescription(value: JournalS3ExportDescription): Self = StObject.set(x, "ExportDescription", value.asInstanceOf[js.Any])
   }
 }

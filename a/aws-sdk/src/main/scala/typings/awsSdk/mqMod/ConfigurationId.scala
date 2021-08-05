@@ -18,25 +18,19 @@ trait ConfigurationId extends StObject {
 }
 object ConfigurationId {
   
-  @scala.inline
-  def apply(): ConfigurationId = {
+  inline def apply(): ConfigurationId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigurationId]
   }
   
-  @scala.inline
-  implicit class ConfigurationIdMutableBuilder[Self <: ConfigurationId] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationId](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setRevision(value: integer): Self = StObject.set(x, "Revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: integer): Self = StObject.set(x, "Revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionUndefined: Self = StObject.set(x, "Revision", js.undefined)
+    inline def setRevisionUndefined: Self = StObject.set(x, "Revision", js.undefined)
   }
 }

@@ -33,31 +33,23 @@ trait ImagingManifestStudySeriesInstance
 }
 object ImagingManifestStudySeriesInstance {
   
-  @scala.inline
-  def apply(sopClass: oid, uid: oid): ImagingManifestStudySeriesInstance = {
+  inline def apply(sopClass: oid, uid: oid): ImagingManifestStudySeriesInstance = {
     val __obj = js.Dynamic.literal(sopClass = sopClass.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagingManifestStudySeriesInstance]
   }
   
-  @scala.inline
-  implicit class ImagingManifestStudySeriesInstanceMutableBuilder[Self <: ImagingManifestStudySeriesInstance] (val x: Self) extends AnyVal {
+  extension [Self <: ImagingManifestStudySeriesInstance](x: Self) {
     
-    @scala.inline
-    def setSopClass(value: oid): Self = StObject.set(x, "sopClass", value.asInstanceOf[js.Any])
+    inline def setSopClass(value: oid): Self = StObject.set(x, "sopClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: oid): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: oid): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sopClass(value: Element): Self = StObject.set(x, "_sopClass", value.asInstanceOf[js.Any])
+    inline def set_sopClass(value: Element): Self = StObject.set(x, "_sopClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sopClassUndefined: Self = StObject.set(x, "_sopClass", js.undefined)
+    inline def set_sopClassUndefined: Self = StObject.set(x, "_sopClass", js.undefined)
     
-    @scala.inline
-    def set_uid(value: Element): Self = StObject.set(x, "_uid", value.asInstanceOf[js.Any])
+    inline def set_uid(value: Element): Self = StObject.set(x, "_uid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_uidUndefined: Self = StObject.set(x, "_uid", js.undefined)
+    inline def set_uidUndefined: Self = StObject.set(x, "_uid", js.undefined)
   }
 }

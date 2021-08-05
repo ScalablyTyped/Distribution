@@ -12,19 +12,15 @@ trait SchemaIDObj extends StObject {
 }
 object SchemaIDObj {
   
-  @scala.inline
-  def apply(schema_name: String, schema_version: String): SchemaIDObj = {
+  inline def apply(schema_name: String, schema_version: String): SchemaIDObj = {
     val __obj = js.Dynamic.literal(schema_name = schema_name.asInstanceOf[js.Any], schema_version = schema_version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIDObj]
   }
   
-  @scala.inline
-  implicit class SchemaIDObjMutableBuilder[Self <: SchemaIDObj] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIDObj](x: Self) {
     
-    @scala.inline
-    def setSchema_name(value: String): Self = StObject.set(x, "schema_name", value.asInstanceOf[js.Any])
+    inline def setSchema_name(value: String): Self = StObject.set(x, "schema_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema_version(value: String): Self = StObject.set(x, "schema_version", value.asInstanceOf[js.Any])
+    inline def setSchema_version(value: String): Self = StObject.set(x, "schema_version", value.asInstanceOf[js.Any])
   }
 }

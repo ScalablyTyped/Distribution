@@ -73,8 +73,7 @@ trait DescribePortalResponse extends StObject {
 }
 object DescribePortalResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     portalArn: ARN,
     portalClientId: PortalClientId,
     portalContactEmail: Email,
@@ -89,58 +88,40 @@ object DescribePortalResponse {
     __obj.asInstanceOf[DescribePortalResponse]
   }
   
-  @scala.inline
-  implicit class DescribePortalResponseMutableBuilder[Self <: DescribePortalResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePortalResponse](x: Self) {
     
-    @scala.inline
-    def setPortalArn(value: ARN): Self = StObject.set(x, "portalArn", value.asInstanceOf[js.Any])
+    inline def setPortalArn(value: ARN): Self = StObject.set(x, "portalArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalAuthMode(value: AuthMode): Self = StObject.set(x, "portalAuthMode", value.asInstanceOf[js.Any])
+    inline def setPortalAuthMode(value: AuthMode): Self = StObject.set(x, "portalAuthMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalAuthModeUndefined: Self = StObject.set(x, "portalAuthMode", js.undefined)
+    inline def setPortalAuthModeUndefined: Self = StObject.set(x, "portalAuthMode", js.undefined)
     
-    @scala.inline
-    def setPortalClientId(value: PortalClientId): Self = StObject.set(x, "portalClientId", value.asInstanceOf[js.Any])
+    inline def setPortalClientId(value: PortalClientId): Self = StObject.set(x, "portalClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalContactEmail(value: Email): Self = StObject.set(x, "portalContactEmail", value.asInstanceOf[js.Any])
+    inline def setPortalContactEmail(value: Email): Self = StObject.set(x, "portalContactEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalCreationDate(value: Timestamp): Self = StObject.set(x, "portalCreationDate", value.asInstanceOf[js.Any])
+    inline def setPortalCreationDate(value: Timestamp): Self = StObject.set(x, "portalCreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalDescription(value: Description): Self = StObject.set(x, "portalDescription", value.asInstanceOf[js.Any])
+    inline def setPortalDescription(value: Description): Self = StObject.set(x, "portalDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalDescriptionUndefined: Self = StObject.set(x, "portalDescription", js.undefined)
+    inline def setPortalDescriptionUndefined: Self = StObject.set(x, "portalDescription", js.undefined)
     
-    @scala.inline
-    def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
+    inline def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalLastUpdateDate(value: Timestamp): Self = StObject.set(x, "portalLastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setPortalLastUpdateDate(value: Timestamp): Self = StObject.set(x, "portalLastUpdateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalLogoImageLocation(value: ImageLocation): Self = StObject.set(x, "portalLogoImageLocation", value.asInstanceOf[js.Any])
+    inline def setPortalLogoImageLocation(value: ImageLocation): Self = StObject.set(x, "portalLogoImageLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalLogoImageLocationUndefined: Self = StObject.set(x, "portalLogoImageLocation", js.undefined)
+    inline def setPortalLogoImageLocationUndefined: Self = StObject.set(x, "portalLogoImageLocation", js.undefined)
     
-    @scala.inline
-    def setPortalName(value: Name): Self = StObject.set(x, "portalName", value.asInstanceOf[js.Any])
+    inline def setPortalName(value: Name): Self = StObject.set(x, "portalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalStartUrl(value: Url): Self = StObject.set(x, "portalStartUrl", value.asInstanceOf[js.Any])
+    inline def setPortalStartUrl(value: Url): Self = StObject.set(x, "portalStartUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalStatus(value: PortalStatus): Self = StObject.set(x, "portalStatus", value.asInstanceOf[js.Any])
+    inline def setPortalStatus(value: PortalStatus): Self = StObject.set(x, "portalStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: ARN): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: ARN): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

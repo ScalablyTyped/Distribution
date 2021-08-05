@@ -23,34 +23,25 @@ trait DescribeSpotFleetInstancesResponse extends StObject {
 }
 object DescribeSpotFleetInstancesResponse {
   
-  @scala.inline
-  def apply(): DescribeSpotFleetInstancesResponse = {
+  inline def apply(): DescribeSpotFleetInstancesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSpotFleetInstancesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeSpotFleetInstancesResponseMutableBuilder[Self <: DescribeSpotFleetInstancesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSpotFleetInstancesResponse](x: Self) {
     
-    @scala.inline
-    def setActiveInstances(value: ActiveInstanceSet): Self = StObject.set(x, "ActiveInstances", value.asInstanceOf[js.Any])
+    inline def setActiveInstances(value: ActiveInstanceSet): Self = StObject.set(x, "ActiveInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveInstancesUndefined: Self = StObject.set(x, "ActiveInstances", js.undefined)
+    inline def setActiveInstancesUndefined: Self = StObject.set(x, "ActiveInstances", js.undefined)
     
-    @scala.inline
-    def setActiveInstancesVarargs(value: ActiveInstance*): Self = StObject.set(x, "ActiveInstances", js.Array(value :_*))
+    inline def setActiveInstancesVarargs(value: ActiveInstance*): Self = StObject.set(x, "ActiveInstances", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSpotFleetRequestId(value: String): Self = StObject.set(x, "SpotFleetRequestId", value.asInstanceOf[js.Any])
+    inline def setSpotFleetRequestId(value: String): Self = StObject.set(x, "SpotFleetRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotFleetRequestIdUndefined: Self = StObject.set(x, "SpotFleetRequestId", js.undefined)
+    inline def setSpotFleetRequestIdUndefined: Self = StObject.set(x, "SpotFleetRequestId", js.undefined)
   }
 }

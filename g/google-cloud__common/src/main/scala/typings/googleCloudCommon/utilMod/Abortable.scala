@@ -10,16 +10,13 @@ trait Abortable extends StObject {
 }
 object Abortable {
   
-  @scala.inline
-  def apply(abort: () => Unit): Abortable = {
+  inline def apply(abort: () => Unit): Abortable = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
     __obj.asInstanceOf[Abortable]
   }
   
-  @scala.inline
-  implicit class AbortableMutableBuilder[Self <: Abortable] (val x: Self) extends AnyVal {
+  extension [Self <: Abortable](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
   }
 }

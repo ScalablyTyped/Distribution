@@ -20,8 +20,7 @@ trait EraSpec extends StObject {
 }
 object EraSpec {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abbr: String,
     name: String,
     narrow: String,
@@ -33,25 +32,18 @@ object EraSpec {
     __obj.asInstanceOf[EraSpec]
   }
   
-  @scala.inline
-  implicit class EraSpecMutableBuilder[Self <: EraSpec] (val x: Self) extends AnyVal {
+  extension [Self <: EraSpec](x: Self) {
     
-    @scala.inline
-    def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
+    inline def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNarrow(value: String): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
+    inline def setNarrow(value: String): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSince(value: String | Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: String | Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUntil(value: String | Double): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
+    inline def setUntil(value: String | Double): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
   }
 }

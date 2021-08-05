@@ -15,22 +15,17 @@ trait IExecuteReply extends StObject {
 }
 object IExecuteReply {
   
-  @scala.inline
-  def apply(status: ok | error | abort): IExecuteReply = {
+  inline def apply(status: ok | error | abort): IExecuteReply = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], execution_count = null)
     __obj.asInstanceOf[IExecuteReply]
   }
   
-  @scala.inline
-  implicit class IExecuteReplyMutableBuilder[Self <: IExecuteReply] (val x: Self) extends AnyVal {
+  extension [Self <: IExecuteReply](x: Self) {
     
-    @scala.inline
-    def setExecution_count(value: Double): Self = StObject.set(x, "execution_count", value.asInstanceOf[js.Any])
+    inline def setExecution_count(value: Double): Self = StObject.set(x, "execution_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecution_countNull: Self = StObject.set(x, "execution_count", null)
+    inline def setExecution_countNull: Self = StObject.set(x, "execution_count", null)
     
-    @scala.inline
-    def setStatus(value: ok | error | abort): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ok | error | abort): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

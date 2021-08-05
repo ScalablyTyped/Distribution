@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RouteTypes extends StObject
 object RouteTypes {
   
-  @scala.inline
-  def CHAT: typings.inboxsdk.inboxsdkStrings.CHAT = "CHAT".asInstanceOf[typings.inboxsdk.inboxsdkStrings.CHAT]
+  inline def CHAT: typings.inboxsdk.inboxsdkStrings.CHAT = "CHAT".asInstanceOf[typings.inboxsdk.inboxsdkStrings.CHAT]
   
-  @scala.inline
-  def CUSTOM: typings.inboxsdk.inboxsdkStrings.CUSTOM = "CUSTOM".asInstanceOf[typings.inboxsdk.inboxsdkStrings.CUSTOM]
+  inline def CUSTOM: typings.inboxsdk.inboxsdkStrings.CUSTOM = "CUSTOM".asInstanceOf[typings.inboxsdk.inboxsdkStrings.CUSTOM]
   
-  @scala.inline
-  def LIST: typings.inboxsdk.inboxsdkStrings.LIST = "LIST".asInstanceOf[typings.inboxsdk.inboxsdkStrings.LIST]
+  inline def LIST: typings.inboxsdk.inboxsdkStrings.LIST = "LIST".asInstanceOf[typings.inboxsdk.inboxsdkStrings.LIST]
   
-  @scala.inline
-  def SETTINGS: typings.inboxsdk.inboxsdkStrings.SETTINGS = "SETTINGS".asInstanceOf[typings.inboxsdk.inboxsdkStrings.SETTINGS]
+  inline def SETTINGS: typings.inboxsdk.inboxsdkStrings.SETTINGS = "SETTINGS".asInstanceOf[typings.inboxsdk.inboxsdkStrings.SETTINGS]
   
-  @scala.inline
-  def THREAD: typings.inboxsdk.inboxsdkStrings.THREAD = "THREAD".asInstanceOf[typings.inboxsdk.inboxsdkStrings.THREAD]
+  inline def THREAD: typings.inboxsdk.inboxsdkStrings.THREAD = "THREAD".asInstanceOf[typings.inboxsdk.inboxsdkStrings.THREAD]
   
-  @scala.inline
-  def UNKNOWN: typings.inboxsdk.inboxsdkStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.inboxsdk.inboxsdkStrings.UNKNOWN]
+  inline def UNKNOWN: typings.inboxsdk.inboxsdkStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.inboxsdk.inboxsdkStrings.UNKNOWN]
 }

@@ -67,67 +67,47 @@ trait DocumentData extends StObject {
 }
 object DocumentData {
   
-  @scala.inline
-  def apply(): DocumentData = {
+  inline def apply(): DocumentData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentData]
   }
   
-  @scala.inline
-  implicit class DocumentDataMutableBuilder[Self <: DocumentData] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentData](x: Self) {
     
-    @scala.inline
-    def setBody(value: BodyData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: BodyData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setContentControls(value: js.Array[ContentControlData]): Self = StObject.set(x, "contentControls", value.asInstanceOf[js.Any])
+    inline def setContentControls(value: js.Array[ContentControlData]): Self = StObject.set(x, "contentControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentControlsUndefined: Self = StObject.set(x, "contentControls", js.undefined)
+    inline def setContentControlsUndefined: Self = StObject.set(x, "contentControls", js.undefined)
     
-    @scala.inline
-    def setContentControlsVarargs(value: ContentControlData*): Self = StObject.set(x, "contentControls", js.Array(value :_*))
+    inline def setContentControlsVarargs(value: ContentControlData*): Self = StObject.set(x, "contentControls", js.Array(value :_*))
     
-    @scala.inline
-    def setCustomXmlParts(value: js.Array[CustomXmlPartData]): Self = StObject.set(x, "customXmlParts", value.asInstanceOf[js.Any])
+    inline def setCustomXmlParts(value: js.Array[CustomXmlPartData]): Self = StObject.set(x, "customXmlParts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomXmlPartsUndefined: Self = StObject.set(x, "customXmlParts", js.undefined)
+    inline def setCustomXmlPartsUndefined: Self = StObject.set(x, "customXmlParts", js.undefined)
     
-    @scala.inline
-    def setCustomXmlPartsVarargs(value: CustomXmlPartData*): Self = StObject.set(x, "customXmlParts", js.Array(value :_*))
+    inline def setCustomXmlPartsVarargs(value: CustomXmlPartData*): Self = StObject.set(x, "customXmlParts", js.Array(value :_*))
     
-    @scala.inline
-    def setProperties(value: DocumentPropertiesData): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: DocumentPropertiesData): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setSaved(value: Boolean): Self = StObject.set(x, "saved", value.asInstanceOf[js.Any])
+    inline def setSaved(value: Boolean): Self = StObject.set(x, "saved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavedUndefined: Self = StObject.set(x, "saved", js.undefined)
+    inline def setSavedUndefined: Self = StObject.set(x, "saved", js.undefined)
     
-    @scala.inline
-    def setSections(value: js.Array[SectionData]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+    inline def setSections(value: js.Array[SectionData]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
+    inline def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
     
-    @scala.inline
-    def setSectionsVarargs(value: SectionData*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: SectionData*): Self = StObject.set(x, "sections", js.Array(value :_*))
     
-    @scala.inline
-    def setSettings(value: js.Array[SettingData]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: js.Array[SettingData]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    @scala.inline
-    def setSettingsVarargs(value: SettingData*): Self = StObject.set(x, "settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: SettingData*): Self = StObject.set(x, "settings", js.Array(value :_*))
   }
 }

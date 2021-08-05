@@ -33,34 +33,25 @@ trait AppInviteContent extends StObject {
 }
 object AppInviteContent {
   
-  @scala.inline
-  def apply(applinkUrl: String): AppInviteContent = {
+  inline def apply(applinkUrl: String): AppInviteContent = {
     val __obj = js.Dynamic.literal(applinkUrl = applinkUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppInviteContent]
   }
   
-  @scala.inline
-  implicit class AppInviteContentMutableBuilder[Self <: AppInviteContent] (val x: Self) extends AnyVal {
+  extension [Self <: AppInviteContent](x: Self) {
     
-    @scala.inline
-    def setApplinkUrl(value: String): Self = StObject.set(x, "applinkUrl", value.asInstanceOf[js.Any])
+    inline def setApplinkUrl(value: String): Self = StObject.set(x, "applinkUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewImageUrl(value: String): Self = StObject.set(x, "previewImageUrl", value.asInstanceOf[js.Any])
+    inline def setPreviewImageUrl(value: String): Self = StObject.set(x, "previewImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewImageUrlUndefined: Self = StObject.set(x, "previewImageUrl", js.undefined)
+    inline def setPreviewImageUrlUndefined: Self = StObject.set(x, "previewImageUrl", js.undefined)
     
-    @scala.inline
-    def setPromotionCode(value: String): Self = StObject.set(x, "promotionCode", value.asInstanceOf[js.Any])
+    inline def setPromotionCode(value: String): Self = StObject.set(x, "promotionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromotionCodeUndefined: Self = StObject.set(x, "promotionCode", js.undefined)
+    inline def setPromotionCodeUndefined: Self = StObject.set(x, "promotionCode", js.undefined)
     
-    @scala.inline
-    def setPromotionText(value: String): Self = StObject.set(x, "promotionText", value.asInstanceOf[js.Any])
+    inline def setPromotionText(value: String): Self = StObject.set(x, "promotionText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromotionTextUndefined: Self = StObject.set(x, "promotionText", js.undefined)
+    inline def setPromotionTextUndefined: Self = StObject.set(x, "promotionText", js.undefined)
   }
 }

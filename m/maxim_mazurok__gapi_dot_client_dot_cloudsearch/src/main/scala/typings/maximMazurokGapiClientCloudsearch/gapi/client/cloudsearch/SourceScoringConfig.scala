@@ -11,19 +11,15 @@ trait SourceScoringConfig extends StObject {
 }
 object SourceScoringConfig {
   
-  @scala.inline
-  def apply(): SourceScoringConfig = {
+  inline def apply(): SourceScoringConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceScoringConfig]
   }
   
-  @scala.inline
-  implicit class SourceScoringConfigMutableBuilder[Self <: SourceScoringConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SourceScoringConfig](x: Self) {
     
-    @scala.inline
-    def setSourceImportance(value: String): Self = StObject.set(x, "sourceImportance", value.asInstanceOf[js.Any])
+    inline def setSourceImportance(value: String): Self = StObject.set(x, "sourceImportance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceImportanceUndefined: Self = StObject.set(x, "sourceImportance", js.undefined)
+    inline def setSourceImportanceUndefined: Self = StObject.set(x, "sourceImportance", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait Styles extends StObject {
 }
 object Styles {
   
-  @scala.inline
-  def apply(styles: StringDictionary[RegisteredStyle[js.Any]]): Styles = {
+  inline def apply(styles: StringDictionary[RegisteredStyle[js.Any]]): Styles = {
     val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Styles]
   }
   
-  @scala.inline
-  implicit class StylesMutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
+  extension [Self <: Styles](x: Self) {
     
-    @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

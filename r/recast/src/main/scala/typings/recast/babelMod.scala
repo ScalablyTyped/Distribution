@@ -14,10 +14,8 @@ object babelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(source: String): File_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[File_]
-  @scala.inline
-  def parse(source: String, options: Overrides): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[File_]
+  inline def parse(source: String): File_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[File_]
+  inline def parse(source: String, options: Overrides): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[File_]
   
   @JSImport("recast/parsers/babel", "parser")
   @js.native
@@ -32,17 +30,14 @@ object babelMod {
   }
   object BabelParser {
     
-    @scala.inline
-    def apply(parse: FnCall): BabelParser = {
+    inline def apply(parse: FnCall): BabelParser = {
       val __obj = js.Dynamic.literal(parse = parse.asInstanceOf[js.Any])
       __obj.asInstanceOf[BabelParser]
     }
     
-    @scala.inline
-    implicit class BabelParserMutableBuilder[Self <: BabelParser] (val x: Self) extends AnyVal {
+    extension [Self <: BabelParser](x: Self) {
       
-      @scala.inline
-      def setParse(value: FnCall): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      inline def setParse(value: FnCall): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -23,28 +23,21 @@ trait CancelConversionRequest extends StObject {
 }
 object CancelConversionRequest {
   
-  @scala.inline
-  def apply(ConversionTaskId: ConversionTaskId): CancelConversionRequest = {
+  inline def apply(ConversionTaskId: ConversionTaskId): CancelConversionRequest = {
     val __obj = js.Dynamic.literal(ConversionTaskId = ConversionTaskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelConversionRequest]
   }
   
-  @scala.inline
-  implicit class CancelConversionRequestMutableBuilder[Self <: CancelConversionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelConversionRequest](x: Self) {
     
-    @scala.inline
-    def setConversionTaskId(value: ConversionTaskId): Self = StObject.set(x, "ConversionTaskId", value.asInstanceOf[js.Any])
+    inline def setConversionTaskId(value: ConversionTaskId): Self = StObject.set(x, "ConversionTaskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setReasonMessage(value: String): Self = StObject.set(x, "ReasonMessage", value.asInstanceOf[js.Any])
+    inline def setReasonMessage(value: String): Self = StObject.set(x, "ReasonMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonMessageUndefined: Self = StObject.set(x, "ReasonMessage", js.undefined)
+    inline def setReasonMessageUndefined: Self = StObject.set(x, "ReasonMessage", js.undefined)
   }
 }

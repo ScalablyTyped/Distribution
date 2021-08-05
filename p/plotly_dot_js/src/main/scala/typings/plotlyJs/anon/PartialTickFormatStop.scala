@@ -20,43 +20,31 @@ trait PartialTickFormatStop extends StObject {
 }
 object PartialTickFormatStop {
   
-  @scala.inline
-  def apply(): PartialTickFormatStop = {
+  inline def apply(): PartialTickFormatStop = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialTickFormatStop]
   }
   
-  @scala.inline
-  implicit class PartialTickFormatStopMutableBuilder[Self <: PartialTickFormatStop] (val x: Self) extends AnyVal {
+  extension [Self <: PartialTickFormatStop](x: Self) {
     
-    @scala.inline
-    def setDtickrange(value: js.Tuple2[DTickValue | Null, DTickValue | Null]): Self = StObject.set(x, "dtickrange", value.asInstanceOf[js.Any])
+    inline def setDtickrange(value: js.Tuple2[DTickValue | Null, DTickValue | Null]): Self = StObject.set(x, "dtickrange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDtickrangeUndefined: Self = StObject.set(x, "dtickrange", js.undefined)
+    inline def setDtickrangeUndefined: Self = StObject.set(x, "dtickrange", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTemplateitemname(value: String): Self = StObject.set(x, "templateitemname", value.asInstanceOf[js.Any])
+    inline def setTemplateitemname(value: String): Self = StObject.set(x, "templateitemname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateitemnameUndefined: Self = StObject.set(x, "templateitemname", js.undefined)
+    inline def setTemplateitemnameUndefined: Self = StObject.set(x, "templateitemname", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -19,43 +19,31 @@ trait PartialClassNameMapTableS extends StObject {
 }
 object PartialClassNameMapTableS {
   
-  @scala.inline
-  def apply(): PartialClassNameMapTableS = {
+  inline def apply(): PartialClassNameMapTableS = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapTableS]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapTableSMutableBuilder[Self <: PartialClassNameMapTableS] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapTableS](x: Self) {
     
-    @scala.inline
-    def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconDirectionAsc(value: String): Self = StObject.set(x, "iconDirectionAsc", value.asInstanceOf[js.Any])
+    inline def setIconDirectionAsc(value: String): Self = StObject.set(x, "iconDirectionAsc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconDirectionAscUndefined: Self = StObject.set(x, "iconDirectionAsc", js.undefined)
+    inline def setIconDirectionAscUndefined: Self = StObject.set(x, "iconDirectionAsc", js.undefined)
     
-    @scala.inline
-    def setIconDirectionDesc(value: String): Self = StObject.set(x, "iconDirectionDesc", value.asInstanceOf[js.Any])
+    inline def setIconDirectionDesc(value: String): Self = StObject.set(x, "iconDirectionDesc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconDirectionDescUndefined: Self = StObject.set(x, "iconDirectionDesc", js.undefined)
+    inline def setIconDirectionDescUndefined: Self = StObject.set(x, "iconDirectionDesc", js.undefined)
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

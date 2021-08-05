@@ -26,16 +26,13 @@ trait IntermediateCardInfo extends StObject {
 }
 object IntermediateCardInfo {
   
-  @scala.inline
-  def apply(cardNetwork: CardNetwork): IntermediateCardInfo = {
+  inline def apply(cardNetwork: CardNetwork): IntermediateCardInfo = {
     val __obj = js.Dynamic.literal(cardNetwork = cardNetwork.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntermediateCardInfo]
   }
   
-  @scala.inline
-  implicit class IntermediateCardInfoMutableBuilder[Self <: IntermediateCardInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IntermediateCardInfo](x: Self) {
     
-    @scala.inline
-    def setCardNetwork(value: CardNetwork): Self = StObject.set(x, "cardNetwork", value.asInstanceOf[js.Any])
+    inline def setCardNetwork(value: CardNetwork): Self = StObject.set(x, "cardNetwork", value.asInstanceOf[js.Any])
   }
 }

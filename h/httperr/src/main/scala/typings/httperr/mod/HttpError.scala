@@ -23,8 +23,7 @@ trait HttpError
 }
 object HttpError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: String,
     message: String,
     name: String,
@@ -36,19 +35,14 @@ object HttpError {
     __obj.asInstanceOf[HttpError]
   }
   
-  @scala.inline
-  implicit class HttpErrorMutableBuilder[Self <: HttpError] (val x: Self) extends AnyVal {
+  extension [Self <: HttpError](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToObject(value: /* repeated */ String | RegExp => js.Any): Self = StObject.set(x, "toObject", js.Any.fromFunction1(value))
+    inline def setToObject(value: /* repeated */ String | RegExp => js.Any): Self = StObject.set(x, "toObject", js.Any.fromFunction1(value))
   }
 }

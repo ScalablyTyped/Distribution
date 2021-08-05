@@ -16,8 +16,7 @@ trait OAuthGateway extends StObject {
 }
 object OAuthGateway {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectUrl: OAuthConnectUrlRequest => String,
     createTokenFromCode: OAuthCreateTokenFromCodeRequest => js.Promise[ValidatedResponse[OAuthToken]],
     createTokenFromRefreshToken: OAuthCreateTokenFromRefreshTokenRequest => js.Promise[ValidatedResponse[OAuthToken]],
@@ -27,19 +26,14 @@ object OAuthGateway {
     __obj.asInstanceOf[OAuthGateway]
   }
   
-  @scala.inline
-  implicit class OAuthGatewayMutableBuilder[Self <: OAuthGateway] (val x: Self) extends AnyVal {
+  extension [Self <: OAuthGateway](x: Self) {
     
-    @scala.inline
-    def setConnectUrl(value: OAuthConnectUrlRequest => String): Self = StObject.set(x, "connectUrl", js.Any.fromFunction1(value))
+    inline def setConnectUrl(value: OAuthConnectUrlRequest => String): Self = StObject.set(x, "connectUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateTokenFromCode(value: OAuthCreateTokenFromCodeRequest => js.Promise[ValidatedResponse[OAuthToken]]): Self = StObject.set(x, "createTokenFromCode", js.Any.fromFunction1(value))
+    inline def setCreateTokenFromCode(value: OAuthCreateTokenFromCodeRequest => js.Promise[ValidatedResponse[OAuthToken]]): Self = StObject.set(x, "createTokenFromCode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateTokenFromRefreshToken(value: OAuthCreateTokenFromRefreshTokenRequest => js.Promise[ValidatedResponse[OAuthToken]]): Self = StObject.set(x, "createTokenFromRefreshToken", js.Any.fromFunction1(value))
+    inline def setCreateTokenFromRefreshToken(value: OAuthCreateTokenFromRefreshTokenRequest => js.Promise[ValidatedResponse[OAuthToken]]): Self = StObject.set(x, "createTokenFromRefreshToken", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRevokeAccessToken(value: String => js.Promise[ValidatedResponse[Unit]]): Self = StObject.set(x, "revokeAccessToken", js.Any.fromFunction1(value))
+    inline def setRevokeAccessToken(value: String => js.Promise[ValidatedResponse[Unit]]): Self = StObject.set(x, "revokeAccessToken", js.Any.fromFunction1(value))
   }
 }

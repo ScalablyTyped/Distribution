@@ -11,8 +11,7 @@ object eventsBaseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTopic(e: RuntimeEvent[js.Any, String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopic")(e.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getTopic(e: RuntimeEvent[js.Any, String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopic")(e.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.openfin.eventsBaseMod.RuntimeEvent because Already inherited */ trait ApplicationEvent[Topic, Type]
@@ -23,18 +22,15 @@ object eventsBaseMod {
   }
   object ApplicationEvent {
     
-    @scala.inline
-    def apply[Topic, Type](topic: Topic, `type`: Type, uuid: String): ApplicationEvent[Topic, Type] = {
+    inline def apply[Topic, Type](topic: Topic, `type`: Type, uuid: String): ApplicationEvent[Topic, Type] = {
       val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplicationEvent[Topic, Type]]
     }
     
-    @scala.inline
-    implicit class ApplicationEventMutableBuilder[Self <: ApplicationEvent[?, ?], Topic, Type] (val x: Self & (ApplicationEvent[Topic, Type])) extends AnyVal {
+    extension [Self <: ApplicationEvent[?, ?], Topic, Type](x: Self & (ApplicationEvent[Topic, Type])) {
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,21 +44,17 @@ object eventsBaseMod {
   }
   object BaseEvent {
     
-    @scala.inline
-    def apply[Topic, Type](topic: Topic, `type`: Type): BaseEvent[Topic, Type] = {
+    inline def apply[Topic, Type](topic: Topic, `type`: Type): BaseEvent[Topic, Type] = {
       val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseEvent[Topic, Type]]
     }
     
-    @scala.inline
-    implicit class BaseEventMutableBuilder[Self <: BaseEvent[?, ?], Topic, Type] (val x: Self & (BaseEvent[Topic, Type])) extends AnyVal {
+    extension [Self <: BaseEvent[?, ?], Topic, Type](x: Self & (BaseEvent[Topic, Type])) {
       
-      @scala.inline
-      def setTopic(value: Topic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: Topic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,20 +72,16 @@ object eventsBaseMod {
   }
   object BaseEventMap {
     
-    @scala.inline
-    def apply(listenerRemoved: String, newListener: String): BaseEventMap = {
+    inline def apply(listenerRemoved: String, newListener: String): BaseEventMap = {
       val __obj = js.Dynamic.literal(listenerRemoved = listenerRemoved.asInstanceOf[js.Any], newListener = newListener.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseEventMap]
     }
     
-    @scala.inline
-    implicit class BaseEventMapMutableBuilder[Self <: BaseEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: BaseEventMap](x: Self) {
       
-      @scala.inline
-      def setListenerRemoved(value: String): Self = StObject.set(x, "listenerRemoved", value.asInstanceOf[js.Any])
+      inline def setListenerRemoved(value: String): Self = StObject.set(x, "listenerRemoved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewListener(value: String): Self = StObject.set(x, "newListener", value.asInstanceOf[js.Any])
+      inline def setNewListener(value: String): Self = StObject.set(x, "newListener", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,29 +94,25 @@ object eventsBaseMod {
   trait RuntimeEvent[Topic, Type] extends StObject
   object RuntimeEvent {
     
-    @scala.inline
-    def ApplicationEvent[Topic, Type](topic: Topic, `type`: Type, uuid: String): typings.openfin.eventsBaseMod.ApplicationEvent[Topic, Type] = {
+    inline def ApplicationEvent[Topic, Type](topic: Topic, `type`: Type, uuid: String): typings.openfin.eventsBaseMod.ApplicationEvent[Topic, Type] = {
       val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.openfin.eventsBaseMod.ApplicationEvent[Topic, Type]]
     }
     
-    @scala.inline
-    def BaseEvent[Topic, Type](topic: Topic, `type`: Type): typings.openfin.eventsBaseMod.BaseEvent[Topic, Type] = {
+    inline def BaseEvent[Topic, Type](topic: Topic, `type`: Type): typings.openfin.eventsBaseMod.BaseEvent[Topic, Type] = {
       val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.openfin.eventsBaseMod.BaseEvent[Topic, Type]]
     }
     
-    @scala.inline
-    def FrameEvent[Type](frameName: String, name: String, `type`: Type, uuid: String): typings.openfin.frameMod.FrameEvent[Type] = {
+    inline def FrameEvent[Type](frameName: String, name: String, `type`: Type, uuid: String): typings.openfin.frameMod.FrameEvent[Type] = {
       val __obj = js.Dynamic.literal(entityType = "iframe", frameName = frameName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], topic = "frame", uuid = uuid.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.openfin.frameMod.FrameEvent[Type]]
     }
     
-    @scala.inline
-    def WindowEvent[Topic, Type](name: String, topic: Topic, `type`: Type, uuid: String): typings.openfin.eventsBaseMod.WindowEvent[Topic, Type] = {
+    inline def WindowEvent[Topic, Type](name: String, topic: Topic, `type`: Type, uuid: String): typings.openfin.eventsBaseMod.WindowEvent[Topic, Type] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.openfin.eventsBaseMod.WindowEvent[Topic, Type]]
@@ -144,18 +128,15 @@ object eventsBaseMod {
   }
   object WindowEvent {
     
-    @scala.inline
-    def apply[Topic, Type](name: String, topic: Topic, `type`: Type, uuid: String): WindowEvent[Topic, Type] = {
+    inline def apply[Topic, Type](name: String, topic: Topic, `type`: Type, uuid: String): WindowEvent[Topic, Type] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[WindowEvent[Topic, Type]]
     }
     
-    @scala.inline
-    implicit class WindowEventMutableBuilder[Self <: WindowEvent[?, ?], Topic, Type] (val x: Self & (WindowEvent[Topic, Type])) extends AnyVal {
+    extension [Self <: WindowEvent[?, ?], Topic, Type](x: Self & (WindowEvent[Topic, Type])) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

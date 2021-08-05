@@ -13,16 +13,13 @@ trait StatefulRuleGroupReference extends StObject {
 }
 object StatefulRuleGroupReference {
   
-  @scala.inline
-  def apply(ResourceArn: ResourceArn): StatefulRuleGroupReference = {
+  inline def apply(ResourceArn: ResourceArn): StatefulRuleGroupReference = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatefulRuleGroupReference]
   }
   
-  @scala.inline
-  implicit class StatefulRuleGroupReferenceMutableBuilder[Self <: StatefulRuleGroupReference] (val x: Self) extends AnyVal {
+  extension [Self <: StatefulRuleGroupReference](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

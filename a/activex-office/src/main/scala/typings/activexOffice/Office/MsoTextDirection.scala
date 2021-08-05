@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoTextDirection extends StObject
 object MsoTextDirection {
   
-  @scala.inline
-  def msoTextDirectionLeftToRight: `1` = 1.asInstanceOf[`1`]
+  inline def msoTextDirectionLeftToRight: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoTextDirectionMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoTextDirectionMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoTextDirectionRightToLeft: `2` = 2.asInstanceOf[`2`]
+  inline def msoTextDirectionRightToLeft: `2` = 2.asInstanceOf[`2`]
 }

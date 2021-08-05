@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlDataSeriesType extends StObject
 object XlDataSeriesType {
   
-  @scala.inline
-  def xlAutoFill: `4` = 4.asInstanceOf[`4`]
+  inline def xlAutoFill: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlChronological: `3` = 3.asInstanceOf[`3`]
+  inline def xlChronological: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlDataSeriesLinear: `-4132` = -4132.asInstanceOf[`-4132`]
+  inline def xlDataSeriesLinear: `-4132` = -4132.asInstanceOf[`-4132`]
   
-  @scala.inline
-  def xlGrowth: `2` = 2.asInstanceOf[`2`]
+  inline def xlGrowth: `2` = 2.asInstanceOf[`2`]
 }

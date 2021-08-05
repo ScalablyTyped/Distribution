@@ -13,16 +13,13 @@ trait StopApplicationRequest extends StObject {
 }
 object StopApplicationRequest {
   
-  @scala.inline
-  def apply(ApplicationName: ApplicationName): StopApplicationRequest = {
+  inline def apply(ApplicationName: ApplicationName): StopApplicationRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopApplicationRequest]
   }
   
-  @scala.inline
-  implicit class StopApplicationRequestMutableBuilder[Self <: StopApplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopApplicationRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
   }
 }

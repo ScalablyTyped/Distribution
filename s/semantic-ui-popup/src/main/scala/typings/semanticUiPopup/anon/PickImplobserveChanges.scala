@@ -11,16 +11,13 @@ trait PickImplobserveChanges extends StObject {
 }
 object PickImplobserveChanges {
   
-  @scala.inline
-  def apply(observeChanges: Boolean): PickImplobserveChanges = {
+  inline def apply(observeChanges: Boolean): PickImplobserveChanges = {
     val __obj = js.Dynamic.literal(observeChanges = observeChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplobserveChanges]
   }
   
-  @scala.inline
-  implicit class PickImplobserveChangesMutableBuilder[Self <: PickImplobserveChanges] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplobserveChanges](x: Self) {
     
-    @scala.inline
-    def setObserveChanges(value: Boolean): Self = StObject.set(x, "observeChanges", value.asInstanceOf[js.Any])
+    inline def setObserveChanges(value: Boolean): Self = StObject.set(x, "observeChanges", value.asInstanceOf[js.Any])
   }
 }

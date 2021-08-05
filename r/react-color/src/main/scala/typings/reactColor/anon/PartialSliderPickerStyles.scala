@@ -14,19 +14,15 @@ trait PartialSliderPickerStyles extends StObject {
 }
 object PartialSliderPickerStyles {
   
-  @scala.inline
-  def apply(): PartialSliderPickerStyles = {
+  inline def apply(): PartialSliderPickerStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialSliderPickerStyles]
   }
   
-  @scala.inline
-  implicit class PartialSliderPickerStylesMutableBuilder[Self <: PartialSliderPickerStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PartialSliderPickerStyles](x: Self) {
     
-    @scala.inline
-    def setHue(value: CSSProperties): Self = StObject.set(x, "Hue", value.asInstanceOf[js.Any])
+    inline def setHue(value: CSSProperties): Self = StObject.set(x, "Hue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHueUndefined: Self = StObject.set(x, "Hue", js.undefined)
+    inline def setHueUndefined: Self = StObject.set(x, "Hue", js.undefined)
   }
 }

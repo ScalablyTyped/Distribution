@@ -15,19 +15,15 @@ trait OnRenderItem extends StObject {
 }
 object OnRenderItem {
   
-  @scala.inline
-  def apply(onRenderItem: ITagItemProps => Element, onRenderSuggestionsItem: ITag => Element): OnRenderItem = {
+  inline def apply(onRenderItem: ITagItemProps => Element, onRenderSuggestionsItem: ITag => Element): OnRenderItem = {
     val __obj = js.Dynamic.literal(onRenderItem = js.Any.fromFunction1(onRenderItem), onRenderSuggestionsItem = js.Any.fromFunction1(onRenderSuggestionsItem))
     __obj.asInstanceOf[OnRenderItem]
   }
   
-  @scala.inline
-  implicit class OnRenderItemMutableBuilder[Self <: OnRenderItem] (val x: Self) extends AnyVal {
+  extension [Self <: OnRenderItem](x: Self) {
     
-    @scala.inline
-    def setOnRenderItem(value: ITagItemProps => Element): Self = StObject.set(x, "onRenderItem", js.Any.fromFunction1(value))
+    inline def setOnRenderItem(value: ITagItemProps => Element): Self = StObject.set(x, "onRenderItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRenderSuggestionsItem(value: ITag => Element): Self = StObject.set(x, "onRenderSuggestionsItem", js.Any.fromFunction1(value))
+    inline def setOnRenderSuggestionsItem(value: ITag => Element): Self = StObject.set(x, "onRenderSuggestionsItem", js.Any.fromFunction1(value))
   }
 }

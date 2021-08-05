@@ -39,47 +39,34 @@ trait ApplicationAppSource extends StObject {
 }
 object ApplicationAppSource {
   
-  @scala.inline
-  def apply(`type`: Input[String]): ApplicationAppSource = {
+  inline def apply(`type`: Input[String]): ApplicationAppSource = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationAppSource]
   }
   
-  @scala.inline
-  implicit class ApplicationAppSourceMutableBuilder[Self <: ApplicationAppSource] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationAppSource](x: Self) {
     
-    @scala.inline
-    def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setRevision(value: Input[String]): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Input[String]): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
+    inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
     
-    @scala.inline
-    def setSshKey(value: Input[String]): Self = StObject.set(x, "sshKey", value.asInstanceOf[js.Any])
+    inline def setSshKey(value: Input[String]): Self = StObject.set(x, "sshKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshKeyUndefined: Self = StObject.set(x, "sshKey", js.undefined)
+    inline def setSshKeyUndefined: Self = StObject.set(x, "sshKey", js.undefined)
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

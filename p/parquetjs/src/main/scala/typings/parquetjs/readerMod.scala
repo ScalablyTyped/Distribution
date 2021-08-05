@@ -81,8 +81,7 @@ object readerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def openFile(filePath: String): ParquetReader = ^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[ParquetReader]
+    inline def openFile(filePath: String): ParquetReader = ^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[ParquetReader]
   }
   
   @JSImport("parquetjs/lib/reader", "ParquetReader")
@@ -114,7 +113,6 @@ object readerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def openFile(filePath: String): js.Promise[ParquetReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ParquetReader]]
+    inline def openFile(filePath: String): js.Promise[ParquetReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ParquetReader]]
   }
 }

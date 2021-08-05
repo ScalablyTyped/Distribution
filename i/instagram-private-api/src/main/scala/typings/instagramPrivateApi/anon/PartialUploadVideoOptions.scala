@@ -39,103 +39,71 @@ trait PartialUploadVideoOptions extends StObject {
 }
 object PartialUploadVideoOptions {
   
-  @scala.inline
-  def apply(): PartialUploadVideoOptions = {
+  inline def apply(): PartialUploadVideoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialUploadVideoOptions]
   }
   
-  @scala.inline
-  implicit class PartialUploadVideoOptionsMutableBuilder[Self <: PartialUploadVideoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialUploadVideoOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setForAlbum(value: Boolean): Self = StObject.set(x, "forAlbum", value.asInstanceOf[js.Any])
+    inline def setForAlbum(value: Boolean): Self = StObject.set(x, "forAlbum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForAlbumUndefined: Self = StObject.set(x, "forAlbum", js.undefined)
+    inline def setForAlbumUndefined: Self = StObject.set(x, "forAlbum", js.undefined)
     
-    @scala.inline
-    def setForDirectStory(value: Boolean): Self = StObject.set(x, "forDirectStory", value.asInstanceOf[js.Any])
+    inline def setForDirectStory(value: Boolean): Self = StObject.set(x, "forDirectStory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForDirectStoryUndefined: Self = StObject.set(x, "forDirectStory", js.undefined)
+    inline def setForDirectStoryUndefined: Self = StObject.set(x, "forDirectStory", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setIsDirect(value: Boolean): Self = StObject.set(x, "isDirect", value.asInstanceOf[js.Any])
+    inline def setIsDirect(value: Boolean): Self = StObject.set(x, "isDirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDirectUndefined: Self = StObject.set(x, "isDirect", js.undefined)
+    inline def setIsDirectUndefined: Self = StObject.set(x, "isDirect", js.undefined)
     
-    @scala.inline
-    def setIsDirectVoice(value: Boolean): Self = StObject.set(x, "isDirectVoice", value.asInstanceOf[js.Any])
+    inline def setIsDirectVoice(value: Boolean): Self = StObject.set(x, "isDirectVoice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDirectVoiceUndefined: Self = StObject.set(x, "isDirectVoice", js.undefined)
+    inline def setIsDirectVoiceUndefined: Self = StObject.set(x, "isDirectVoice", js.undefined)
     
-    @scala.inline
-    def setIsIgtvVideo(value: Boolean): Self = StObject.set(x, "isIgtvVideo", value.asInstanceOf[js.Any])
+    inline def setIsIgtvVideo(value: Boolean): Self = StObject.set(x, "isIgtvVideo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIgtvVideoUndefined: Self = StObject.set(x, "isIgtvVideo", js.undefined)
+    inline def setIsIgtvVideoUndefined: Self = StObject.set(x, "isIgtvVideo", js.undefined)
     
-    @scala.inline
-    def setIsSidecar(value: Boolean): Self = StObject.set(x, "isSidecar", value.asInstanceOf[js.Any])
+    inline def setIsSidecar(value: Boolean): Self = StObject.set(x, "isSidecar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSidecarUndefined: Self = StObject.set(x, "isSidecar", js.undefined)
+    inline def setIsSidecarUndefined: Self = StObject.set(x, "isSidecar", js.undefined)
     
-    @scala.inline
-    def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+    inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+    inline def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
+    inline def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
     
-    @scala.inline
-    def setUploadName(value: String): Self = StObject.set(x, "uploadName", value.asInstanceOf[js.Any])
+    inline def setUploadName(value: String): Self = StObject.set(x, "uploadName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadNameUndefined: Self = StObject.set(x, "uploadName", js.undefined)
+    inline def setUploadNameUndefined: Self = StObject.set(x, "uploadName", js.undefined)
     
-    @scala.inline
-    def setVideo(value: typings.node.Buffer): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: typings.node.Buffer): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+    inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     
-    @scala.inline
-    def setWaterfallId(value: String): Self = StObject.set(x, "waterfallId", value.asInstanceOf[js.Any])
+    inline def setWaterfallId(value: String): Self = StObject.set(x, "waterfallId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaterfallIdUndefined: Self = StObject.set(x, "waterfallId", js.undefined)
+    inline def setWaterfallIdUndefined: Self = StObject.set(x, "waterfallId", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

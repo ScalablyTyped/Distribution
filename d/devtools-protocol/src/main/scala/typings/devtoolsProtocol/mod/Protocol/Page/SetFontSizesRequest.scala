@@ -13,16 +13,13 @@ trait SetFontSizesRequest extends StObject {
 }
 object SetFontSizesRequest {
   
-  @scala.inline
-  def apply(fontSizes: FontSizes): SetFontSizesRequest = {
+  inline def apply(fontSizes: FontSizes): SetFontSizesRequest = {
     val __obj = js.Dynamic.literal(fontSizes = fontSizes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetFontSizesRequest]
   }
   
-  @scala.inline
-  implicit class SetFontSizesRequestMutableBuilder[Self <: SetFontSizesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetFontSizesRequest](x: Self) {
     
-    @scala.inline
-    def setFontSizes(value: FontSizes): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
+    inline def setFontSizes(value: FontSizes): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
   }
 }

@@ -29,31 +29,23 @@ trait SchemaAuthentication extends StObject {
 }
 object SchemaAuthentication {
   
-  @scala.inline
-  def apply(): SchemaAuthentication = {
+  inline def apply(): SchemaAuthentication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAuthentication]
   }
   
-  @scala.inline
-  implicit class SchemaAuthenticationMutableBuilder[Self <: SchemaAuthentication] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAuthentication](x: Self) {
     
-    @scala.inline
-    def setProviders(value: js.Array[SchemaAuthProvider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    inline def setProviders(value: js.Array[SchemaAuthProvider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
+    inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
-    @scala.inline
-    def setProvidersVarargs(value: SchemaAuthProvider*): Self = StObject.set(x, "providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: SchemaAuthProvider*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
-    @scala.inline
-    def setRules(value: js.Array[SchemaAuthenticationRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[SchemaAuthenticationRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: SchemaAuthenticationRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: SchemaAuthenticationRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

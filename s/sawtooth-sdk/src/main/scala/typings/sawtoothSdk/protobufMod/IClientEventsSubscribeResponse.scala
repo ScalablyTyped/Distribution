@@ -15,31 +15,23 @@ trait IClientEventsSubscribeResponse extends StObject {
 }
 object IClientEventsSubscribeResponse {
   
-  @scala.inline
-  def apply(): IClientEventsSubscribeResponse = {
+  inline def apply(): IClientEventsSubscribeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientEventsSubscribeResponse]
   }
   
-  @scala.inline
-  implicit class IClientEventsSubscribeResponseMutableBuilder[Self <: IClientEventsSubscribeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IClientEventsSubscribeResponse](x: Self) {
     
-    @scala.inline
-    def setResponseMessage(value: String): Self = StObject.set(x, "responseMessage", value.asInstanceOf[js.Any])
+    inline def setResponseMessage(value: String): Self = StObject.set(x, "responseMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseMessageNull: Self = StObject.set(x, "responseMessage", null)
+    inline def setResponseMessageNull: Self = StObject.set(x, "responseMessage", null)
     
-    @scala.inline
-    def setResponseMessageUndefined: Self = StObject.set(x, "responseMessage", js.undefined)
+    inline def setResponseMessageUndefined: Self = StObject.set(x, "responseMessage", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait GetAppsRequest extends StObject {
 }
 object GetAppsRequest {
   
-  @scala.inline
-  def apply(): GetAppsRequest = {
+  inline def apply(): GetAppsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAppsRequest]
   }
   
-  @scala.inline
-  implicit class GetAppsRequestMutableBuilder[Self <: GetAppsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAppsRequest](x: Self) {
     
-    @scala.inline
-    def setPageSize(value: string): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: string): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setToken(value: string): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
+    inline def setToken(value: string): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
   }
 }

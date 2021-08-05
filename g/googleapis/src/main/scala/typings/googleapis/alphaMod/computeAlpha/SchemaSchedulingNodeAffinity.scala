@@ -27,34 +27,25 @@ trait SchemaSchedulingNodeAffinity extends StObject {
 }
 object SchemaSchedulingNodeAffinity {
   
-  @scala.inline
-  def apply(): SchemaSchedulingNodeAffinity = {
+  inline def apply(): SchemaSchedulingNodeAffinity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSchedulingNodeAffinity]
   }
   
-  @scala.inline
-  implicit class SchemaSchedulingNodeAffinityMutableBuilder[Self <: SchemaSchedulingNodeAffinity] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSchedulingNodeAffinity](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

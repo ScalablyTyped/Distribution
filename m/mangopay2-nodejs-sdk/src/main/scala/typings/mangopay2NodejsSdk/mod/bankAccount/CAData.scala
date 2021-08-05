@@ -34,8 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object CAData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccountNumber: String,
     Active: Boolean,
     BankName: String,
@@ -53,19 +52,14 @@ object CAData {
     __obj.asInstanceOf[CAData]
   }
   
-  @scala.inline
-  implicit class CADataMutableBuilder[Self <: CAData] (val x: Self) extends AnyVal {
+  extension [Self <: CAData](x: Self) {
     
-    @scala.inline
-    def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
+    inline def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBankName(value: String): Self = StObject.set(x, "BankName", value.asInstanceOf[js.Any])
+    inline def setBankName(value: String): Self = StObject.set(x, "BankName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchCode(value: String): Self = StObject.set(x, "BranchCode", value.asInstanceOf[js.Any])
+    inline def setBranchCode(value: String): Self = StObject.set(x, "BranchCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstitutionNumber(value: String): Self = StObject.set(x, "InstitutionNumber", value.asInstanceOf[js.Any])
+    inline def setInstitutionNumber(value: String): Self = StObject.set(x, "InstitutionNumber", value.asInstanceOf[js.Any])
   }
 }

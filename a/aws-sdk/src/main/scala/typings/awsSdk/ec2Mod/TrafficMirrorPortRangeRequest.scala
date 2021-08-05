@@ -18,25 +18,19 @@ trait TrafficMirrorPortRangeRequest extends StObject {
 }
 object TrafficMirrorPortRangeRequest {
   
-  @scala.inline
-  def apply(): TrafficMirrorPortRangeRequest = {
+  inline def apply(): TrafficMirrorPortRangeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrafficMirrorPortRangeRequest]
   }
   
-  @scala.inline
-  implicit class TrafficMirrorPortRangeRequestMutableBuilder[Self <: TrafficMirrorPortRangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TrafficMirrorPortRangeRequest](x: Self) {
     
-    @scala.inline
-    def setFromPort(value: Integer): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
+    inline def setFromPort(value: Integer): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromPortUndefined: Self = StObject.set(x, "FromPort", js.undefined)
+    inline def setFromPortUndefined: Self = StObject.set(x, "FromPort", js.undefined)
     
-    @scala.inline
-    def setToPort(value: Integer): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
+    inline def setToPort(value: Integer): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToPortUndefined: Self = StObject.set(x, "ToPort", js.undefined)
+    inline def setToPortUndefined: Self = StObject.set(x, "ToPort", js.undefined)
   }
 }

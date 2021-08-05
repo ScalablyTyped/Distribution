@@ -13,22 +13,17 @@ trait GetObjectResult extends StObject {
 }
 object GetObjectResult {
   
-  @scala.inline
-  def apply(res: NormalSuccessResponse): GetObjectResult = {
+  inline def apply(res: NormalSuccessResponse): GetObjectResult = {
     val __obj = js.Dynamic.literal(res = res.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectResult]
   }
   
-  @scala.inline
-  implicit class GetObjectResultMutableBuilder[Self <: GetObjectResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetObjectResult](x: Self) {
     
-    @scala.inline
-    def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

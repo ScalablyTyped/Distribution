@@ -11,8 +11,7 @@ trait InitializeParams
      with WorkspaceFoldersInitializeParams
 object InitializeParams {
   
-  @scala.inline
-  def apply(capabilities: ClientCapabilities): InitializeParams = {
+  inline def apply(capabilities: ClientCapabilities): InitializeParams = {
     val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], processId = null, rootUri = null, workspaceFolders = null)
     __obj.asInstanceOf[InitializeParams]
   }

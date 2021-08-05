@@ -5,44 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def _empty: typings.jquery.JQueryStatic = typings.backbone.mod.^.asInstanceOf[js.Dynamic].selectDynamic("$").asInstanceOf[typings.jquery.JQueryStatic]
-@scala.inline
-def _empty_=(x: typings.jquery.JQueryStatic): scala.Unit = typings.backbone.mod.^.asInstanceOf[js.Dynamic].updateDynamic("$")(x.asInstanceOf[js.Any])
+inline def _empty: typings.jquery.JQueryStatic = typings.backbone.mod.^.asInstanceOf[js.Dynamic].selectDynamic("$").asInstanceOf[typings.jquery.JQueryStatic]
+inline def _empty_=(x: typings.jquery.JQueryStatic): scala.Unit = typings.backbone.mod.^.asInstanceOf[js.Dynamic].updateDynamic("$")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def ajax(): typings.jquery.JQueryXHR = typings.backbone.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ajax")().asInstanceOf[typings.jquery.JQueryXHR]
-@scala.inline
-def ajax(options: typings.jquery.JQueryAjaxSettings): typings.jquery.JQueryXHR = typings.backbone.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(options.asInstanceOf[js.Any]).asInstanceOf[typings.jquery.JQueryXHR]
+inline def ajax(): typings.jquery.JQueryXHR = typings.backbone.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ajax")().asInstanceOf[typings.jquery.JQueryXHR]
+inline def ajax(options: typings.jquery.JQueryAjaxSettings): typings.jquery.JQueryXHR = typings.backbone.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(options.asInstanceOf[js.Any]).asInstanceOf[typings.jquery.JQueryXHR]
 
-@scala.inline
-def emulateHTTP: scala.Boolean = typings.backbone.mod.^.asInstanceOf[js.Dynamic].selectDynamic("emulateHTTP").asInstanceOf[scala.Boolean]
-@scala.inline
-def emulateHTTP_=(x: scala.Boolean): scala.Unit = typings.backbone.mod.^.asInstanceOf[js.Dynamic].updateDynamic("emulateHTTP")(x.asInstanceOf[js.Any])
+inline def emulateHTTP: scala.Boolean = typings.backbone.mod.^.asInstanceOf[js.Dynamic].selectDynamic("emulateHTTP").asInstanceOf[scala.Boolean]
+inline def emulateHTTP_=(x: scala.Boolean): scala.Unit = typings.backbone.mod.^.asInstanceOf[js.Dynamic].updateDynamic("emulateHTTP")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def emulateJSON: scala.Boolean = typings.backbone.mod.^.asInstanceOf[js.Dynamic].selectDynamic("emulateJSON").asInstanceOf[scala.Boolean]
-@scala.inline
-def emulateJSON_=(x: scala.Boolean): scala.Unit = typings.backbone.mod.^.asInstanceOf[js.Dynamic].updateDynamic("emulateJSON")(x.asInstanceOf[js.Any])
+inline def emulateJSON: scala.Boolean = typings.backbone.mod.^.asInstanceOf[js.Dynamic].selectDynamic("emulateJSON").asInstanceOf[scala.Boolean]
+inline def emulateJSON_=(x: scala.Boolean): scala.Unit = typings.backbone.mod.^.asInstanceOf[js.Dynamic].updateDynamic("emulateJSON")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def history: typings.backbone.mod.History_ = typings.backbone.mod.^.asInstanceOf[js.Dynamic].selectDynamic("history").asInstanceOf[typings.backbone.mod.History_]
-@scala.inline
-def history_=(x: typings.backbone.mod.History_): scala.Unit = typings.backbone.mod.^.asInstanceOf[js.Dynamic].updateDynamic("history")(x.asInstanceOf[js.Any])
+inline def history: typings.backbone.mod.History_ = typings.backbone.mod.^.asInstanceOf[js.Dynamic].selectDynamic("history").asInstanceOf[typings.backbone.mod.History_]
+inline def history_=(x: typings.backbone.mod.History_): scala.Unit = typings.backbone.mod.^.asInstanceOf[js.Dynamic].updateDynamic("history")(x.asInstanceOf[js.Any])
 
 // Utility
-@scala.inline
-def noConflict(): typings.backbone.anon.Typeofbackbone = typings.backbone.mod.^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[typings.backbone.anon.Typeofbackbone]
+inline def noConflict(): typings.backbone.anon.Typeofbackbone = typings.backbone.mod.^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[typings.backbone.anon.Typeofbackbone]
 
-@scala.inline
-def sync(
+inline def sync(
   method: java.lang.String,
   model: typings.backbone.mod.Collection[
   typings.backbone.mod.Model[js.Any, typings.backbone.mod.ModelSetOptions, js.Object]
 ]
 ): js.Any = (typings.backbone.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-@scala.inline
-def sync(
+inline def sync(
   method: java.lang.String,
   model: typings.backbone.mod.Collection[
   typings.backbone.mod.Model[js.Any, typings.backbone.mod.ModelSetOptions, js.Object]
@@ -50,13 +37,11 @@ def sync(
   options: typings.jquery.JQueryAjaxSettings
 ): js.Any = (typings.backbone.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 // SYNC
-@scala.inline
-def sync(
+inline def sync(
   method: java.lang.String,
   model: typings.backbone.mod.Model[js.Any, typings.backbone.mod.ModelSetOptions, js.Object]
 ): js.Any = (typings.backbone.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sync")(method.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-@scala.inline
-def sync(
+inline def sync(
   method: java.lang.String,
   model: typings.backbone.mod.Model[js.Any, typings.backbone.mod.ModelSetOptions, js.Object],
   options: typings.jquery.JQueryAjaxSettings

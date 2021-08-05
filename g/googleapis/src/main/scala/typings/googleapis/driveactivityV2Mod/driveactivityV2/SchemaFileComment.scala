@@ -37,37 +37,27 @@ trait SchemaFileComment extends StObject {
 }
 object SchemaFileComment {
   
-  @scala.inline
-  def apply(): SchemaFileComment = {
+  inline def apply(): SchemaFileComment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFileComment]
   }
   
-  @scala.inline
-  implicit class SchemaFileCommentMutableBuilder[Self <: SchemaFileComment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFileComment](x: Self) {
     
-    @scala.inline
-    def setLegacyCommentId(value: String): Self = StObject.set(x, "legacyCommentId", value.asInstanceOf[js.Any])
+    inline def setLegacyCommentId(value: String): Self = StObject.set(x, "legacyCommentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegacyCommentIdUndefined: Self = StObject.set(x, "legacyCommentId", js.undefined)
+    inline def setLegacyCommentIdUndefined: Self = StObject.set(x, "legacyCommentId", js.undefined)
     
-    @scala.inline
-    def setLegacyDiscussionId(value: String): Self = StObject.set(x, "legacyDiscussionId", value.asInstanceOf[js.Any])
+    inline def setLegacyDiscussionId(value: String): Self = StObject.set(x, "legacyDiscussionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegacyDiscussionIdUndefined: Self = StObject.set(x, "legacyDiscussionId", js.undefined)
+    inline def setLegacyDiscussionIdUndefined: Self = StObject.set(x, "legacyDiscussionId", js.undefined)
     
-    @scala.inline
-    def setLinkToDiscussion(value: String): Self = StObject.set(x, "linkToDiscussion", value.asInstanceOf[js.Any])
+    inline def setLinkToDiscussion(value: String): Self = StObject.set(x, "linkToDiscussion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkToDiscussionUndefined: Self = StObject.set(x, "linkToDiscussion", js.undefined)
+    inline def setLinkToDiscussionUndefined: Self = StObject.set(x, "linkToDiscussion", js.undefined)
     
-    @scala.inline
-    def setParent(value: SchemaDriveItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: SchemaDriveItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

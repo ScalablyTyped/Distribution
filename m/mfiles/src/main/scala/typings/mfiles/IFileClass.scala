@@ -24,8 +24,7 @@ trait IFileClass extends StObject {
 }
 object IFileClass {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IFileClass,
     DisplayName: String,
     DotAndExtension: String,
@@ -39,31 +38,22 @@ object IFileClass {
     __obj.asInstanceOf[IFileClass]
   }
   
-  @scala.inline
-  implicit class IFileClassMutableBuilder[Self <: IFileClass] (val x: Self) extends AnyVal {
+  extension [Self <: IFileClass](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IFileClass): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IFileClass): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotAndExtension(value: String): Self = StObject.set(x, "DotAndExtension", value.asInstanceOf[js.Any])
+    inline def setDotAndExtension(value: String): Self = StObject.set(x, "DotAndExtension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileClass(value: String): Self = StObject.set(x, "FileClass", value.asInstanceOf[js.Any])
+    inline def setFileClass(value: String): Self = StObject.set(x, "FileClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadByExtension(value: String => Unit): Self = StObject.set(x, "LoadByExtension", js.Any.fromFunction1(value))
+    inline def setLoadByExtension(value: String => Unit): Self = StObject.set(x, "LoadByExtension", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadByFileClass(value: (String, String) => Unit): Self = StObject.set(x, "LoadByFileClass", js.Any.fromFunction2(value))
+    inline def setLoadByFileClass(value: (String, String) => Unit): Self = StObject.set(x, "LoadByFileClass", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetFileClassInfo(value: (String, String, String) => Unit): Self = StObject.set(x, "SetFileClassInfo", js.Any.fromFunction3(value))
+    inline def setSetFileClassInfo(value: (String, String, String) => Unit): Self = StObject.set(x, "SetFileClassInfo", js.Any.fromFunction3(value))
   }
 }

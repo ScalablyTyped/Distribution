@@ -13,25 +13,19 @@ trait CurrentTargetScrollLeft extends StObject {
 }
 object CurrentTargetScrollLeft {
   
-  @scala.inline
-  def apply(): CurrentTargetScrollLeft = {
+  inline def apply(): CurrentTargetScrollLeft = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CurrentTargetScrollLeft]
   }
   
-  @scala.inline
-  implicit class CurrentTargetScrollLeftMutableBuilder[Self <: CurrentTargetScrollLeft] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentTargetScrollLeft](x: Self) {
     
-    @scala.inline
-    def setCurrentTarget(value: HTMLElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+    inline def setCurrentTarget(value: HTMLElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
+    inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
     
-    @scala.inline
-    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
+    inline def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
   }
 }

@@ -36,8 +36,7 @@ trait BasePostRevision[T /* <: Context */]
 }
 object BasePostRevision {
   
-  @scala.inline
-  def apply[T /* <: Context */](
+  inline def apply[T /* <: Context */](
     _links: Record[String, js.Array[Dictk]],
     author: Double,
     content: Contextual[T, js.Object, js.Object],
@@ -56,43 +55,30 @@ object BasePostRevision {
     __obj.asInstanceOf[BasePostRevision[T]]
   }
   
-  @scala.inline
-  implicit class BasePostRevisionMutableBuilder[Self <: BasePostRevision[?], T /* <: Context */] (val x: Self & BasePostRevision[T]) extends AnyVal {
+  extension [Self <: BasePostRevision[?], T /* <: Context */](x: Self & BasePostRevision[T]) {
     
-    @scala.inline
-    def setAuthor(value: Double): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Double): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: Contextual[T, js.Object, js.Object]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Contextual[T, js.Object, js.Object]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate_gmt(value: String): Self = StObject.set(x, "date_gmt", value.asInstanceOf[js.Any])
+    inline def setDate_gmt(value: String): Self = StObject.set(x, "date_gmt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcerpt(value: Contextual[T, js.Object, js.Object]): Self = StObject.set(x, "excerpt", value.asInstanceOf[js.Any])
+    inline def setExcerpt(value: Contextual[T, js.Object, js.Object]): Self = StObject.set(x, "excerpt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuid(value: Contextual[T, js.Object, js.Object]): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: Contextual[T, js.Object, js.Object]): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+    inline def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModified_gmt(value: String): Self = StObject.set(x, "modified_gmt", value.asInstanceOf[js.Any])
+    inline def setModified_gmt(value: String): Self = StObject.set(x, "modified_gmt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Double): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Double): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: Contextual[T, js.Object, js.Object]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Contextual[T, js.Object, js.Object]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

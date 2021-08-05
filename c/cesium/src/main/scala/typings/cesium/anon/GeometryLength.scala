@@ -15,28 +15,21 @@ trait GeometryLength extends StObject {
 }
 object GeometryLength {
   
-  @scala.inline
-  def apply(geometry: typings.cesium.mod.Geometry): GeometryLength = {
+  inline def apply(geometry: typings.cesium.mod.Geometry): GeometryLength = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeometryLength]
   }
   
-  @scala.inline
-  implicit class GeometryLengthMutableBuilder[Self <: GeometryLength] (val x: Self) extends AnyVal {
+  extension [Self <: GeometryLength](x: Self) {
     
-    @scala.inline
-    def setGeometry(value: typings.cesium.mod.Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: typings.cesium.mod.Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setModelMatrix(value: Matrix4): Self = StObject.set(x, "modelMatrix", value.asInstanceOf[js.Any])
+    inline def setModelMatrix(value: Matrix4): Self = StObject.set(x, "modelMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelMatrixUndefined: Self = StObject.set(x, "modelMatrix", js.undefined)
+    inline def setModelMatrixUndefined: Self = StObject.set(x, "modelMatrix", js.undefined)
   }
 }

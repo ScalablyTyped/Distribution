@@ -15,19 +15,15 @@ trait UnzipOptions
 }
 object UnzipOptions {
   
-  @scala.inline
-  def apply(targetPath: String, zipFilePath: String): UnzipOptions = {
+  inline def apply(targetPath: String, zipFilePath: String): UnzipOptions = {
     val __obj = js.Dynamic.literal(targetPath = targetPath.asInstanceOf[js.Any], zipFilePath = zipFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnzipOptions]
   }
   
-  @scala.inline
-  implicit class UnzipOptionsMutableBuilder[Self <: UnzipOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UnzipOptions](x: Self) {
     
-    @scala.inline
-    def setTargetPath(value: String): Self = StObject.set(x, "targetPath", value.asInstanceOf[js.Any])
+    inline def setTargetPath(value: String): Self = StObject.set(x, "targetPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZipFilePath(value: String): Self = StObject.set(x, "zipFilePath", value.asInstanceOf[js.Any])
+    inline def setZipFilePath(value: String): Self = StObject.set(x, "zipFilePath", value.asInstanceOf[js.Any])
   }
 }

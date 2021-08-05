@@ -13,19 +13,15 @@ trait TreeViewSelectionChangeEvent[T] extends StObject {
 }
 object TreeViewSelectionChangeEvent {
   
-  @scala.inline
-  def apply[T](selection: js.Array[T]): TreeViewSelectionChangeEvent[T] = {
+  inline def apply[T](selection: js.Array[T]): TreeViewSelectionChangeEvent[T] = {
     val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewSelectionChangeEvent[T]]
   }
   
-  @scala.inline
-  implicit class TreeViewSelectionChangeEventMutableBuilder[Self <: TreeViewSelectionChangeEvent[?], T] (val x: Self & TreeViewSelectionChangeEvent[T]) extends AnyVal {
+  extension [Self <: TreeViewSelectionChangeEvent[?], T](x: Self & TreeViewSelectionChangeEvent[T]) {
     
-    @scala.inline
-    def setSelection(value: js.Array[T]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: js.Array[T]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionVarargs(value: T*): Self = StObject.set(x, "selection", js.Array(value :_*))
+    inline def setSelectionVarargs(value: T*): Self = StObject.set(x, "selection", js.Array(value :_*))
   }
 }

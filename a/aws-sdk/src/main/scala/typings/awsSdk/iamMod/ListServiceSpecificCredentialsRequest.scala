@@ -18,25 +18,19 @@ trait ListServiceSpecificCredentialsRequest extends StObject {
 }
 object ListServiceSpecificCredentialsRequest {
   
-  @scala.inline
-  def apply(): ListServiceSpecificCredentialsRequest = {
+  inline def apply(): ListServiceSpecificCredentialsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListServiceSpecificCredentialsRequest]
   }
   
-  @scala.inline
-  implicit class ListServiceSpecificCredentialsRequestMutableBuilder[Self <: ListServiceSpecificCredentialsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListServiceSpecificCredentialsRequest](x: Self) {
     
-    @scala.inline
-    def setServiceName(value: serviceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: serviceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
     
-    @scala.inline
-    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

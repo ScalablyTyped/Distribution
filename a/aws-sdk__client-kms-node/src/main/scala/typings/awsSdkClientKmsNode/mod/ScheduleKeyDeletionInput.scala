@@ -9,8 +9,7 @@ trait ScheduleKeyDeletionInput
      with typings.awsSdkClientKmsNode.typesScheduleKeyDeletionInputMod.ScheduleKeyDeletionInput
 object ScheduleKeyDeletionInput {
   
-  @scala.inline
-  def apply(KeyId: String): ScheduleKeyDeletionInput = {
+  inline def apply(KeyId: String): ScheduleKeyDeletionInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleKeyDeletionInput]
   }

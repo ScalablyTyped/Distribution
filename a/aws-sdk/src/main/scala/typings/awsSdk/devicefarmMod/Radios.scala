@@ -28,37 +28,27 @@ trait Radios extends StObject {
 }
 object Radios {
   
-  @scala.inline
-  def apply(): Radios = {
+  inline def apply(): Radios = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Radios]
   }
   
-  @scala.inline
-  implicit class RadiosMutableBuilder[Self <: Radios] (val x: Self) extends AnyVal {
+  extension [Self <: Radios](x: Self) {
     
-    @scala.inline
-    def setBluetooth(value: Boolean): Self = StObject.set(x, "bluetooth", value.asInstanceOf[js.Any])
+    inline def setBluetooth(value: Boolean): Self = StObject.set(x, "bluetooth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBluetoothUndefined: Self = StObject.set(x, "bluetooth", js.undefined)
+    inline def setBluetoothUndefined: Self = StObject.set(x, "bluetooth", js.undefined)
     
-    @scala.inline
-    def setGps(value: Boolean): Self = StObject.set(x, "gps", value.asInstanceOf[js.Any])
+    inline def setGps(value: Boolean): Self = StObject.set(x, "gps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGpsUndefined: Self = StObject.set(x, "gps", js.undefined)
+    inline def setGpsUndefined: Self = StObject.set(x, "gps", js.undefined)
     
-    @scala.inline
-    def setNfc(value: Boolean): Self = StObject.set(x, "nfc", value.asInstanceOf[js.Any])
+    inline def setNfc(value: Boolean): Self = StObject.set(x, "nfc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNfcUndefined: Self = StObject.set(x, "nfc", js.undefined)
+    inline def setNfcUndefined: Self = StObject.set(x, "nfc", js.undefined)
     
-    @scala.inline
-    def setWifi(value: Boolean): Self = StObject.set(x, "wifi", value.asInstanceOf[js.Any])
+    inline def setWifi(value: Boolean): Self = StObject.set(x, "wifi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiUndefined: Self = StObject.set(x, "wifi", js.undefined)
+    inline def setWifiUndefined: Self = StObject.set(x, "wifi", js.undefined)
   }
 }

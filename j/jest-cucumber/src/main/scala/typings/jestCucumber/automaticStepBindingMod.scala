@@ -12,6 +12,5 @@ object automaticStepBindingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def autoBindSteps(features: js.Array[ParsedFeature], stepDefinitions: js.Array[StepsDefinitionCallbackFunction]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autoBindSteps")(features.asInstanceOf[js.Any], stepDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def autoBindSteps(features: js.Array[ParsedFeature], stepDefinitions: js.Array[StepsDefinitionCallbackFunction]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autoBindSteps")(features.asInstanceOf[js.Any], stepDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

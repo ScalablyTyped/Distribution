@@ -12,16 +12,13 @@ trait PickImplmockResponse extends StObject {
 }
 object PickImplmockResponse {
   
-  @scala.inline
-  def apply(mockResponse: js.Any | `false`): PickImplmockResponse = {
+  inline def apply(mockResponse: js.Any | `false`): PickImplmockResponse = {
     val __obj = js.Dynamic.literal(mockResponse = mockResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmockResponse]
   }
   
-  @scala.inline
-  implicit class PickImplmockResponseMutableBuilder[Self <: PickImplmockResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplmockResponse](x: Self) {
     
-    @scala.inline
-    def setMockResponse(value: js.Any | `false`): Self = StObject.set(x, "mockResponse", value.asInstanceOf[js.Any])
+    inline def setMockResponse(value: js.Any | `false`): Self = StObject.set(x, "mockResponse", value.asInstanceOf[js.Any])
   }
 }

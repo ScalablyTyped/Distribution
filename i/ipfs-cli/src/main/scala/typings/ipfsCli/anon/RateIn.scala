@@ -17,25 +17,19 @@ trait RateIn extends StObject {
 }
 object RateIn {
   
-  @scala.inline
-  def apply(rateIn: default, rateOut: default, totalIn: js.Any, totalOut: js.Any): RateIn = {
+  inline def apply(rateIn: default, rateOut: default, totalIn: js.Any, totalOut: js.Any): RateIn = {
     val __obj = js.Dynamic.literal(rateIn = rateIn.asInstanceOf[js.Any], rateOut = rateOut.asInstanceOf[js.Any], totalIn = totalIn.asInstanceOf[js.Any], totalOut = totalOut.asInstanceOf[js.Any])
     __obj.asInstanceOf[RateIn]
   }
   
-  @scala.inline
-  implicit class RateInMutableBuilder[Self <: RateIn] (val x: Self) extends AnyVal {
+  extension [Self <: RateIn](x: Self) {
     
-    @scala.inline
-    def setRateIn(value: default): Self = StObject.set(x, "rateIn", value.asInstanceOf[js.Any])
+    inline def setRateIn(value: default): Self = StObject.set(x, "rateIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateOut(value: default): Self = StObject.set(x, "rateOut", value.asInstanceOf[js.Any])
+    inline def setRateOut(value: default): Self = StObject.set(x, "rateOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalIn(value: js.Any): Self = StObject.set(x, "totalIn", value.asInstanceOf[js.Any])
+    inline def setTotalIn(value: js.Any): Self = StObject.set(x, "totalIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalOut(value: js.Any): Self = StObject.set(x, "totalOut", value.asInstanceOf[js.Any])
+    inline def setTotalOut(value: js.Any): Self = StObject.set(x, "totalOut", value.asInstanceOf[js.Any])
   }
 }

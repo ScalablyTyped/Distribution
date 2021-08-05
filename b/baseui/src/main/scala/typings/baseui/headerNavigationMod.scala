@@ -25,17 +25,13 @@ object headerNavigationMod {
     @js.native
     val ^ : ALIGN = js.native
     
-    @scala.inline
-    implicit class ALIGNMutableBuilder[Self <: ALIGN] (val x: Self) extends AnyVal {
+    extension [Self <: ALIGN](x: Self) {
       
-      @scala.inline
-      def setCenter(value: center): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: center): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: `flex-start`): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: `flex-start`): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: `flex-end`): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: `flex-end`): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,22 +67,18 @@ object headerNavigationMod {
   }
   object HeaderNavigationOverrides {
     
-    @scala.inline
-    def apply(): HeaderNavigationOverrides = {
+    inline def apply(): HeaderNavigationOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeaderNavigationOverrides]
     }
     
-    @scala.inline
-    implicit class HeaderNavigationOverridesMutableBuilder[Self <: HeaderNavigationOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderNavigationOverrides](x: Self) {
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
     }
   }
   
@@ -96,20 +88,16 @@ object headerNavigationMod {
   }
   object HeaderNavigationProps {
     
-    @scala.inline
-    def apply(): HeaderNavigationProps = {
+    inline def apply(): HeaderNavigationProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeaderNavigationProps]
     }
     
-    @scala.inline
-    implicit class HeaderNavigationPropsMutableBuilder[Self <: HeaderNavigationProps] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderNavigationProps](x: Self) {
       
-      @scala.inline
-      def setOverrides(value: HeaderNavigationOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: HeaderNavigationOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     }
   }
 }

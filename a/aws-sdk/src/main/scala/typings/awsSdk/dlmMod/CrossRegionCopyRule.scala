@@ -33,37 +33,27 @@ trait CrossRegionCopyRule extends StObject {
 }
 object CrossRegionCopyRule {
   
-  @scala.inline
-  def apply(Encrypted: Encrypted, TargetRegion: TargetRegion): CrossRegionCopyRule = {
+  inline def apply(Encrypted: Encrypted, TargetRegion: TargetRegion): CrossRegionCopyRule = {
     val __obj = js.Dynamic.literal(Encrypted = Encrypted.asInstanceOf[js.Any], TargetRegion = TargetRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrossRegionCopyRule]
   }
   
-  @scala.inline
-  implicit class CrossRegionCopyRuleMutableBuilder[Self <: CrossRegionCopyRule] (val x: Self) extends AnyVal {
+  extension [Self <: CrossRegionCopyRule](x: Self) {
     
-    @scala.inline
-    def setCmkArn(value: CmkArn): Self = StObject.set(x, "CmkArn", value.asInstanceOf[js.Any])
+    inline def setCmkArn(value: CmkArn): Self = StObject.set(x, "CmkArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmkArnUndefined: Self = StObject.set(x, "CmkArn", js.undefined)
+    inline def setCmkArnUndefined: Self = StObject.set(x, "CmkArn", js.undefined)
     
-    @scala.inline
-    def setCopyTags(value: CopyTagsNullable): Self = StObject.set(x, "CopyTags", value.asInstanceOf[js.Any])
+    inline def setCopyTags(value: CopyTagsNullable): Self = StObject.set(x, "CopyTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyTagsUndefined: Self = StObject.set(x, "CopyTags", js.undefined)
+    inline def setCopyTagsUndefined: Self = StObject.set(x, "CopyTags", js.undefined)
     
-    @scala.inline
-    def setEncrypted(value: Encrypted): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: Encrypted): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainRule(value: CrossRegionCopyRetainRule): Self = StObject.set(x, "RetainRule", value.asInstanceOf[js.Any])
+    inline def setRetainRule(value: CrossRegionCopyRetainRule): Self = StObject.set(x, "RetainRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainRuleUndefined: Self = StObject.set(x, "RetainRule", js.undefined)
+    inline def setRetainRuleUndefined: Self = StObject.set(x, "RetainRule", js.undefined)
     
-    @scala.inline
-    def setTargetRegion(value: TargetRegion): Self = StObject.set(x, "TargetRegion", value.asInstanceOf[js.Any])
+    inline def setTargetRegion(value: TargetRegion): Self = StObject.set(x, "TargetRegion", value.asInstanceOf[js.Any])
   }
 }

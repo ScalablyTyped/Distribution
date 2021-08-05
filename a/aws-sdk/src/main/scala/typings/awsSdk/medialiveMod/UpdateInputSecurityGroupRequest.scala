@@ -23,31 +23,23 @@ trait UpdateInputSecurityGroupRequest extends StObject {
 }
 object UpdateInputSecurityGroupRequest {
   
-  @scala.inline
-  def apply(InputSecurityGroupId: string): UpdateInputSecurityGroupRequest = {
+  inline def apply(InputSecurityGroupId: string): UpdateInputSecurityGroupRequest = {
     val __obj = js.Dynamic.literal(InputSecurityGroupId = InputSecurityGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateInputSecurityGroupRequest]
   }
   
-  @scala.inline
-  implicit class UpdateInputSecurityGroupRequestMutableBuilder[Self <: UpdateInputSecurityGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateInputSecurityGroupRequest](x: Self) {
     
-    @scala.inline
-    def setInputSecurityGroupId(value: string): Self = StObject.set(x, "InputSecurityGroupId", value.asInstanceOf[js.Any])
+    inline def setInputSecurityGroupId(value: string): Self = StObject.set(x, "InputSecurityGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setWhitelistRules(value: listOfInputWhitelistRuleCidr): Self = StObject.set(x, "WhitelistRules", value.asInstanceOf[js.Any])
+    inline def setWhitelistRules(value: listOfInputWhitelistRuleCidr): Self = StObject.set(x, "WhitelistRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitelistRulesUndefined: Self = StObject.set(x, "WhitelistRules", js.undefined)
+    inline def setWhitelistRulesUndefined: Self = StObject.set(x, "WhitelistRules", js.undefined)
     
-    @scala.inline
-    def setWhitelistRulesVarargs(value: InputWhitelistRuleCidr*): Self = StObject.set(x, "WhitelistRules", js.Array(value :_*))
+    inline def setWhitelistRulesVarargs(value: InputWhitelistRuleCidr*): Self = StObject.set(x, "WhitelistRules", js.Array(value :_*))
   }
 }

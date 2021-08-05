@@ -44,31 +44,23 @@ trait LSTMCellLayerArgs
 }
 object LSTMCellLayerArgs {
   
-  @scala.inline
-  def apply(units: Double): LSTMCellLayerArgs = {
+  inline def apply(units: Double): LSTMCellLayerArgs = {
     val __obj = js.Dynamic.literal(units = units.asInstanceOf[js.Any])
     __obj.asInstanceOf[LSTMCellLayerArgs]
   }
   
-  @scala.inline
-  implicit class LSTMCellLayerArgsMutableBuilder[Self <: LSTMCellLayerArgs] (val x: Self) extends AnyVal {
+  extension [Self <: LSTMCellLayerArgs](x: Self) {
     
-    @scala.inline
-    def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+    inline def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
+    inline def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
     
-    @scala.inline
-    def setRecurrentActivation(value: ActivationIdentifier): Self = StObject.set(x, "recurrentActivation", value.asInstanceOf[js.Any])
+    inline def setRecurrentActivation(value: ActivationIdentifier): Self = StObject.set(x, "recurrentActivation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurrentActivationUndefined: Self = StObject.set(x, "recurrentActivation", js.undefined)
+    inline def setRecurrentActivationUndefined: Self = StObject.set(x, "recurrentActivation", js.undefined)
     
-    @scala.inline
-    def setUnitForgetBias(value: Boolean): Self = StObject.set(x, "unitForgetBias", value.asInstanceOf[js.Any])
+    inline def setUnitForgetBias(value: Boolean): Self = StObject.set(x, "unitForgetBias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitForgetBiasUndefined: Self = StObject.set(x, "unitForgetBias", js.undefined)
+    inline def setUnitForgetBiasUndefined: Self = StObject.set(x, "unitForgetBias", js.undefined)
   }
 }

@@ -31,31 +31,23 @@ trait ParamsResourceUserprofilesGuardiansGet
 }
 object ParamsResourceUserprofilesGuardiansGet {
   
-  @scala.inline
-  def apply(): ParamsResourceUserprofilesGuardiansGet = {
+  inline def apply(): ParamsResourceUserprofilesGuardiansGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceUserprofilesGuardiansGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceUserprofilesGuardiansGetMutableBuilder[Self <: ParamsResourceUserprofilesGuardiansGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceUserprofilesGuardiansGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setGuardianId(value: String): Self = StObject.set(x, "guardianId", value.asInstanceOf[js.Any])
+    inline def setGuardianId(value: String): Self = StObject.set(x, "guardianId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuardianIdUndefined: Self = StObject.set(x, "guardianId", js.undefined)
+    inline def setGuardianIdUndefined: Self = StObject.set(x, "guardianId", js.undefined)
     
-    @scala.inline
-    def setStudentId(value: String): Self = StObject.set(x, "studentId", value.asInstanceOf[js.Any])
+    inline def setStudentId(value: String): Self = StObject.set(x, "studentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudentIdUndefined: Self = StObject.set(x, "studentId", js.undefined)
+    inline def setStudentIdUndefined: Self = StObject.set(x, "studentId", js.undefined)
   }
 }

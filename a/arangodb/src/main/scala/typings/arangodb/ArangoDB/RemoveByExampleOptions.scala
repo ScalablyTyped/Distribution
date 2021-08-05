@@ -12,25 +12,19 @@ trait RemoveByExampleOptions extends StObject {
 }
 object RemoveByExampleOptions {
   
-  @scala.inline
-  def apply(): RemoveByExampleOptions = {
+  inline def apply(): RemoveByExampleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveByExampleOptions]
   }
   
-  @scala.inline
-  implicit class RemoveByExampleOptionsMutableBuilder[Self <: RemoveByExampleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveByExampleOptions](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
+    inline def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
+    inline def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
   }
 }

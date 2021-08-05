@@ -10,13 +10,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def format(digits: String, format: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(digits.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def format(digits: String, format: String, options: FormatOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(digits.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(digits: String, format: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(digits.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(digits: String, format: String, options: FormatOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(digits.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def normalize(digits: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(digits.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalize(digits: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(digits.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait FormatOptions extends StObject {
     
@@ -24,17 +21,14 @@ object mod {
   }
   object FormatOptions {
     
-    @scala.inline
-    def apply(normalize: Boolean): FormatOptions = {
+    inline def apply(normalize: Boolean): FormatOptions = {
       val __obj = js.Dynamic.literal(normalize = normalize.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormatOptions]
     }
     
-    @scala.inline
-    implicit class FormatOptionsMutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FormatOptions](x: Self) {
       
-      @scala.inline
-      def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
+      inline def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
     }
   }
 }

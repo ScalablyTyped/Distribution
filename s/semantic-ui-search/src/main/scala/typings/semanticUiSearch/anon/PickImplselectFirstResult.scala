@@ -11,16 +11,13 @@ trait PickImplselectFirstResult extends StObject {
 }
 object PickImplselectFirstResult {
   
-  @scala.inline
-  def apply(selectFirstResult: Boolean): PickImplselectFirstResult = {
+  inline def apply(selectFirstResult: Boolean): PickImplselectFirstResult = {
     val __obj = js.Dynamic.literal(selectFirstResult = selectFirstResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplselectFirstResult]
   }
   
-  @scala.inline
-  implicit class PickImplselectFirstResultMutableBuilder[Self <: PickImplselectFirstResult] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplselectFirstResult](x: Self) {
     
-    @scala.inline
-    def setSelectFirstResult(value: Boolean): Self = StObject.set(x, "selectFirstResult", value.asInstanceOf[js.Any])
+    inline def setSelectFirstResult(value: Boolean): Self = StObject.set(x, "selectFirstResult", value.asInstanceOf[js.Any])
   }
 }

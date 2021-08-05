@@ -12,8 +12,7 @@ object opcodesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getOpcodesForHF(common: default): NumberDictionary[Opcode] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpcodesForHF")(common.asInstanceOf[js.Any]).asInstanceOf[NumberDictionary[Opcode]]
+  inline def getOpcodesForHF(common: default): NumberDictionary[Opcode] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpcodesForHF")(common.asInstanceOf[js.Any]).asInstanceOf[NumberDictionary[Opcode]]
   
   trait Opcode extends StObject {
     
@@ -25,23 +24,18 @@ object opcodesMod {
   }
   object Opcode {
     
-    @scala.inline
-    def apply(fee: Double, isAsync: Boolean, name: String): Opcode = {
+    inline def apply(fee: Double, isAsync: Boolean, name: String): Opcode = {
       val __obj = js.Dynamic.literal(fee = fee.asInstanceOf[js.Any], isAsync = isAsync.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Opcode]
     }
     
-    @scala.inline
-    implicit class OpcodeMutableBuilder[Self <: Opcode] (val x: Self) extends AnyVal {
+    extension [Self <: Opcode](x: Self) {
       
-      @scala.inline
-      def setFee(value: Double): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
+      inline def setFee(value: Double): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAsync(value: Boolean): Self = StObject.set(x, "isAsync", value.asInstanceOf[js.Any])
+      inline def setIsAsync(value: Boolean): Self = StObject.set(x, "isAsync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

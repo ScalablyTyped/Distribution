@@ -28,28 +28,21 @@ trait Header extends StObject {
 }
 object Header {
   
-  @scala.inline
-  def apply(comments: String, identRaw: String, versions: Versions): Header = {
+  inline def apply(comments: String, identRaw: String, versions: Versions): Header = {
     val __obj = js.Dynamic.literal(comments = comments.asInstanceOf[js.Any], identRaw = identRaw.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }
   
-  @scala.inline
-  implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+  extension [Self <: Header](x: Self) {
     
-    @scala.inline
-    def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreeting(value: String): Self = StObject.set(x, "greeting", value.asInstanceOf[js.Any])
+    inline def setGreeting(value: String): Self = StObject.set(x, "greeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreetingUndefined: Self = StObject.set(x, "greeting", js.undefined)
+    inline def setGreetingUndefined: Self = StObject.set(x, "greeting", js.undefined)
     
-    @scala.inline
-    def setIdentRaw(value: String): Self = StObject.set(x, "identRaw", value.asInstanceOf[js.Any])
+    inline def setIdentRaw(value: String): Self = StObject.set(x, "identRaw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersions(value: Versions): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: Versions): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
   }
 }

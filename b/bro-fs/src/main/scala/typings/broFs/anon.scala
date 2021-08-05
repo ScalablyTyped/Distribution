@@ -16,18 +16,15 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("Blob")
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setType(value: Blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,18 +34,15 @@ object anon {
   }
   object `1` {
     
-    @scala.inline
-    def apply(): `1` = {
+    inline def apply(): `1` = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("File")
       __obj.asInstanceOf[`1`]
     }
     
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+    extension [Self <: `1`](x: Self) {
       
-      @scala.inline
-      def setType(value: File): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: File): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,20 +52,16 @@ object anon {
   }
   object `2` {
     
-    @scala.inline
-    def apply(): `2` = {
+    inline def apply(): `2` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`2`]
     }
     
-    @scala.inline
-    implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
+    extension [Self <: `2`](x: Self) {
       
-      @scala.inline
-      def setType(value: TextType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TextType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -81,20 +71,16 @@ object anon {
   }
   object Create {
     
-    @scala.inline
-    def apply(): Create = {
+    inline def apply(): Create = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Create]
     }
     
-    @scala.inline
-    implicit class CreateMutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
+    extension [Self <: Create](x: Self) {
       
-      @scala.inline
-      def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     }
   }
   
@@ -104,20 +90,16 @@ object anon {
   }
   object Deep {
     
-    @scala.inline
-    def apply(): Deep = {
+    inline def apply(): Deep = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Deep]
     }
     
-    @scala.inline
-    implicit class DeepMutableBuilder[Self <: Deep] (val x: Self) extends AnyVal {
+    extension [Self <: Deep](x: Self) {
       
-      @scala.inline
-      def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+      inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
     }
   }
   
@@ -127,18 +109,15 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(): Type = {
+    inline def apply(): Type = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("ArrayBuffer")
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(value: ArrayBuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ArrayBuffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

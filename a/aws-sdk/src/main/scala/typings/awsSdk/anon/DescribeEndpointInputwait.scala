@@ -19,22 +19,17 @@ trait DescribeEndpointInputwait extends StObject {
 }
 object DescribeEndpointInputwait {
   
-  @scala.inline
-  def apply(EndpointName: EndpointName): DescribeEndpointInputwait = {
+  inline def apply(EndpointName: EndpointName): DescribeEndpointInputwait = {
     val __obj = js.Dynamic.literal(EndpointName = EndpointName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEndpointInputwait]
   }
   
-  @scala.inline
-  implicit class DescribeEndpointInputwaitMutableBuilder[Self <: DescribeEndpointInputwait] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEndpointInputwait](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
+    inline def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
   }
 }

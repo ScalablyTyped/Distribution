@@ -10,16 +10,13 @@ trait NextExecution extends StObject {
 }
 object NextExecution {
   
-  @scala.inline
-  def apply(nextExecution: js.Function): NextExecution = {
+  inline def apply(nextExecution: js.Function): NextExecution = {
     val __obj = js.Dynamic.literal(nextExecution = nextExecution.asInstanceOf[js.Any])
     __obj.asInstanceOf[NextExecution]
   }
   
-  @scala.inline
-  implicit class NextExecutionMutableBuilder[Self <: NextExecution] (val x: Self) extends AnyVal {
+  extension [Self <: NextExecution](x: Self) {
     
-    @scala.inline
-    def setNextExecution(value: js.Function): Self = StObject.set(x, "nextExecution", value.asInstanceOf[js.Any])
+    inline def setNextExecution(value: js.Function): Self = StObject.set(x, "nextExecution", value.asInstanceOf[js.Any])
   }
 }

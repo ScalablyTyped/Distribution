@@ -67,14 +67,12 @@ object Color {
     * @param color The color class that needs to be clones.
     * @returns The colne of the color.
     */
-  @scala.inline
-  def clone(color: typings.bingmaps.Microsoft.Maps.Color): typings.bingmaps.Microsoft.Maps.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(color.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Color]
+  inline def clone(color: typings.bingmaps.Microsoft.Maps.Color): typings.bingmaps.Microsoft.Maps.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(color.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Color]
   
   /**
     * Creates the color from a hex string.
     * @param hex The color represented as '#rrggbb' format.
     * @returns The color object.
     */
-  @scala.inline
-  def fromHex(hex: String): typings.bingmaps.Microsoft.Maps.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Color]
+  inline def fromHex(hex: String): typings.bingmaps.Microsoft.Maps.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.bingmaps.Microsoft.Maps.Color]
 }

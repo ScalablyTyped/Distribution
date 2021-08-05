@@ -18,19 +18,15 @@ trait JsonTokenTypeConfiguration extends StObject {
 }
 object JsonTokenTypeConfiguration {
   
-  @scala.inline
-  def apply(GroupAttributeField: String, UserNameAttributeField: String): JsonTokenTypeConfiguration = {
+  inline def apply(GroupAttributeField: String, UserNameAttributeField: String): JsonTokenTypeConfiguration = {
     val __obj = js.Dynamic.literal(GroupAttributeField = GroupAttributeField.asInstanceOf[js.Any], UserNameAttributeField = UserNameAttributeField.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonTokenTypeConfiguration]
   }
   
-  @scala.inline
-  implicit class JsonTokenTypeConfigurationMutableBuilder[Self <: JsonTokenTypeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: JsonTokenTypeConfiguration](x: Self) {
     
-    @scala.inline
-    def setGroupAttributeField(value: String): Self = StObject.set(x, "GroupAttributeField", value.asInstanceOf[js.Any])
+    inline def setGroupAttributeField(value: String): Self = StObject.set(x, "GroupAttributeField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameAttributeField(value: String): Self = StObject.set(x, "UserNameAttributeField", value.asInstanceOf[js.Any])
+    inline def setUserNameAttributeField(value: String): Self = StObject.set(x, "UserNameAttributeField", value.asInstanceOf[js.Any])
   }
 }

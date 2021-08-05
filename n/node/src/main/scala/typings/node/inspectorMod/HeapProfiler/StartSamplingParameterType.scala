@@ -13,19 +13,15 @@ trait StartSamplingParameterType extends StObject {
 }
 object StartSamplingParameterType {
   
-  @scala.inline
-  def apply(): StartSamplingParameterType = {
+  inline def apply(): StartSamplingParameterType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartSamplingParameterType]
   }
   
-  @scala.inline
-  implicit class StartSamplingParameterTypeMutableBuilder[Self <: StartSamplingParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: StartSamplingParameterType](x: Self) {
     
-    @scala.inline
-    def setSamplingInterval(value: Double): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
+    inline def setSamplingInterval(value: Double): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplingIntervalUndefined: Self = StObject.set(x, "samplingInterval", js.undefined)
+    inline def setSamplingIntervalUndefined: Self = StObject.set(x, "samplingInterval", js.undefined)
   }
 }

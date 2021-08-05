@@ -11,16 +11,13 @@ trait ControlId extends StObject {
 }
 object ControlId {
   
-  @scala.inline
-  def apply(controlId: Double): ControlId = {
+  inline def apply(controlId: Double): ControlId = {
     val __obj = js.Dynamic.literal(controlId = controlId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlId]
   }
   
-  @scala.inline
-  implicit class ControlIdMutableBuilder[Self <: ControlId] (val x: Self) extends AnyVal {
+  extension [Self <: ControlId](x: Self) {
     
-    @scala.inline
-    def setControlId(value: Double): Self = StObject.set(x, "controlId", value.asInstanceOf[js.Any])
+    inline def setControlId(value: Double): Self = StObject.set(x, "controlId", value.asInstanceOf[js.Any])
   }
 }

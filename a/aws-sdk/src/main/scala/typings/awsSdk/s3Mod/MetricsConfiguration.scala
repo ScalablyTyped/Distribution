@@ -18,22 +18,17 @@ trait MetricsConfiguration extends StObject {
 }
 object MetricsConfiguration {
   
-  @scala.inline
-  def apply(Id: MetricsId): MetricsConfiguration = {
+  inline def apply(Id: MetricsId): MetricsConfiguration = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricsConfiguration]
   }
   
-  @scala.inline
-  implicit class MetricsConfigurationMutableBuilder[Self <: MetricsConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: MetricsConfiguration](x: Self) {
     
-    @scala.inline
-    def setFilter(value: MetricsFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: MetricsFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setId(value: MetricsId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: MetricsId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

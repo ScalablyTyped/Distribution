@@ -12,19 +12,15 @@ trait AgentQueueEvent extends StObject {
 }
 object AgentQueueEvent {
   
-  @scala.inline
-  def apply(eventType: String, queue: TaskAgentQueue): AgentQueueEvent = {
+  inline def apply(eventType: String, queue: TaskAgentQueue): AgentQueueEvent = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentQueueEvent]
   }
   
-  @scala.inline
-  implicit class AgentQueueEventMutableBuilder[Self <: AgentQueueEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AgentQueueEvent](x: Self) {
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueue(value: TaskAgentQueue): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: TaskAgentQueue): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
   }
 }

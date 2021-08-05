@@ -14,19 +14,15 @@ trait DownloadFileSuccessCallbackResult extends StObject {
 }
 object DownloadFileSuccessCallbackResult {
   
-  @scala.inline
-  def apply(statusCode: Double, tempFilePath: String): DownloadFileSuccessCallbackResult = {
+  inline def apply(statusCode: Double, tempFilePath: String): DownloadFileSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(statusCode = statusCode.asInstanceOf[js.Any], tempFilePath = tempFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadFileSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class DownloadFileSuccessCallbackResultMutableBuilder[Self <: DownloadFileSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadFileSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
   }
 }

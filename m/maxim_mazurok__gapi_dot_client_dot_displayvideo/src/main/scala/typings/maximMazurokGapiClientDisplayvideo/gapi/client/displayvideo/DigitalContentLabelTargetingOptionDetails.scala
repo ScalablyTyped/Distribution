@@ -11,19 +11,15 @@ trait DigitalContentLabelTargetingOptionDetails extends StObject {
 }
 object DigitalContentLabelTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): DigitalContentLabelTargetingOptionDetails = {
+  inline def apply(): DigitalContentLabelTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DigitalContentLabelTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class DigitalContentLabelTargetingOptionDetailsMutableBuilder[Self <: DigitalContentLabelTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: DigitalContentLabelTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setContentRatingTier(value: String): Self = StObject.set(x, "contentRatingTier", value.asInstanceOf[js.Any])
+    inline def setContentRatingTier(value: String): Self = StObject.set(x, "contentRatingTier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentRatingTierUndefined: Self = StObject.set(x, "contentRatingTier", js.undefined)
+    inline def setContentRatingTierUndefined: Self = StObject.set(x, "contentRatingTier", js.undefined)
   }
 }

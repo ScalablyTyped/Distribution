@@ -144,41 +144,30 @@ object Icon {
   }
   object Options {
     
-    @scala.inline
-    def apply(crossOrigin: Boolean): Options = {
+    inline def apply(crossOrigin: Boolean): Options = {
       val __obj = js.Dynamic.literal(crossOrigin = crossOrigin.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: IPoint): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: IPoint): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setAsCanvas(value: HitArea): Self = StObject.set(x, "asCanvas", value.asInstanceOf[js.Any])
+      inline def setAsCanvas(value: HitArea): Self = StObject.set(x, "asCanvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsCanvasUndefined: Self = StObject.set(x, "asCanvas", js.undefined)
+      inline def setAsCanvasUndefined: Self = StObject.set(x, "asCanvas", js.undefined)
       
-      @scala.inline
-      def setCrossOrigin(value: Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHitArea(value: HitArea): Self = StObject.set(x, "hitArea", value.asInstanceOf[js.Any])
+      inline def setHitArea(value: HitArea): Self = StObject.set(x, "hitArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHitAreaUndefined: Self = StObject.set(x, "hitArea", js.undefined)
+      inline def setHitAreaUndefined: Self = StObject.set(x, "hitArea", js.undefined)
       
-      @scala.inline
-      def setSize(value: ISize | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ISize | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

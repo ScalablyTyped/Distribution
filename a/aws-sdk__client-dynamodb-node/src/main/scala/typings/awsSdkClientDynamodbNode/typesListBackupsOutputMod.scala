@@ -31,32 +31,24 @@ object typesListBackupsOutputMod {
   }
   object ListBackupsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListBackupsOutput = {
+    inline def apply($metadata: ResponseMetadata): ListBackupsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListBackupsOutput]
     }
     
-    @scala.inline
-    implicit class ListBackupsOutputMutableBuilder[Self <: ListBackupsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListBackupsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupSummaries(value: js.Array[UnmarshalledBackupSummary]): Self = StObject.set(x, "BackupSummaries", value.asInstanceOf[js.Any])
+      inline def setBackupSummaries(value: js.Array[UnmarshalledBackupSummary]): Self = StObject.set(x, "BackupSummaries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupSummariesUndefined: Self = StObject.set(x, "BackupSummaries", js.undefined)
+      inline def setBackupSummariesUndefined: Self = StObject.set(x, "BackupSummaries", js.undefined)
       
-      @scala.inline
-      def setBackupSummariesVarargs(value: UnmarshalledBackupSummary*): Self = StObject.set(x, "BackupSummaries", js.Array(value :_*))
+      inline def setBackupSummariesVarargs(value: UnmarshalledBackupSummary*): Self = StObject.set(x, "BackupSummaries", js.Array(value :_*))
       
-      @scala.inline
-      def setLastEvaluatedBackupArn(value: String): Self = StObject.set(x, "LastEvaluatedBackupArn", value.asInstanceOf[js.Any])
+      inline def setLastEvaluatedBackupArn(value: String): Self = StObject.set(x, "LastEvaluatedBackupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastEvaluatedBackupArnUndefined: Self = StObject.set(x, "LastEvaluatedBackupArn", js.undefined)
+      inline def setLastEvaluatedBackupArnUndefined: Self = StObject.set(x, "LastEvaluatedBackupArn", js.undefined)
     }
   }
 }

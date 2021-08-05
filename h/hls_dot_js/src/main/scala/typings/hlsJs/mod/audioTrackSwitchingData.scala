@@ -10,16 +10,13 @@ trait audioTrackSwitchingData extends StObject {
 }
 object audioTrackSwitchingData {
   
-  @scala.inline
-  def apply(id: String): audioTrackSwitchingData = {
+  inline def apply(id: String): audioTrackSwitchingData = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[audioTrackSwitchingData]
   }
   
-  @scala.inline
-  implicit class audioTrackSwitchingDataMutableBuilder[Self <: audioTrackSwitchingData] (val x: Self) extends AnyVal {
+  extension [Self <: audioTrackSwitchingData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

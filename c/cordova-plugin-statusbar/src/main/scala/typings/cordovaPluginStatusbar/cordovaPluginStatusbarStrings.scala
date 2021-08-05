@@ -8,6 +8,5 @@ object cordovaPluginStatusbarStrings {
   
   @js.native
   sealed trait statusTap extends StObject
-  @scala.inline
-  def statusTap: statusTap = "statusTap".asInstanceOf[statusTap]
+  inline def statusTap: statusTap = "statusTap".asInstanceOf[statusTap]
 }

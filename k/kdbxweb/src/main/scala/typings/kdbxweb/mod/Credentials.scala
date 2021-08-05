@@ -33,9 +33,7 @@ object Credentials {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createKeyFileWithHash(hash: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("createKeyFileWithHash")(hash.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def createKeyFileWithHash(hash: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("createKeyFileWithHash")(hash.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @scala.inline
-  def createRandomKeyFile(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandomKeyFile")().asInstanceOf[Uint8Array]
+  inline def createRandomKeyFile(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandomKeyFile")().asInstanceOf[Uint8Array]
 }

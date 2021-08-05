@@ -21,31 +21,23 @@ trait StyledTextProps extends StObject {
 }
 object StyledTextProps {
   
-  @scala.inline
-  def apply(): StyledTextProps = {
+  inline def apply(): StyledTextProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StyledTextProps]
   }
   
-  @scala.inline
-  implicit class StyledTextPropsMutableBuilder[Self <: StyledTextProps] (val x: Self) extends AnyVal {
+  extension [Self <: StyledTextProps](x: Self) {
     
-    @scala.inline
-    def setStyle(value: BackgroundColor): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: BackgroundColor): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

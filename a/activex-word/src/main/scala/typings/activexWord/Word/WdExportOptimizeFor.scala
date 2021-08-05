@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdExportOptimizeFor extends StObject
 object WdExportOptimizeFor {
   
-  @scala.inline
-  def wdExportOptimizeForOnScreen: `1` = 1.asInstanceOf[`1`]
+  inline def wdExportOptimizeForOnScreen: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdExportOptimizeForPrint: `0` = 0.asInstanceOf[`0`]
+  inline def wdExportOptimizeForPrint: `0` = 0.asInstanceOf[`0`]
 }

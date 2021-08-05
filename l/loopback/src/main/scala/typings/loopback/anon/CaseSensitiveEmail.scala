@@ -29,8 +29,7 @@ trait CaseSensitiveEmail extends StObject {
 }
 object CaseSensitiveEmail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acls: js.Array[ACL],
     caseSensitiveEmail: Boolean,
     emailVerificationRequired: Boolean,
@@ -46,40 +45,28 @@ object CaseSensitiveEmail {
     __obj.asInstanceOf[CaseSensitiveEmail]
   }
   
-  @scala.inline
-  implicit class CaseSensitiveEmailMutableBuilder[Self <: CaseSensitiveEmail] (val x: Self) extends AnyVal {
+  extension [Self <: CaseSensitiveEmail](x: Self) {
     
-    @scala.inline
-    def setAcls(value: js.Array[ACL]): Self = StObject.set(x, "acls", value.asInstanceOf[js.Any])
+    inline def setAcls(value: js.Array[ACL]): Self = StObject.set(x, "acls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAclsVarargs(value: ACL*): Self = StObject.set(x, "acls", js.Array(value :_*))
+    inline def setAclsVarargs(value: ACL*): Self = StObject.set(x, "acls", js.Array(value :_*))
     
-    @scala.inline
-    def setCaseSensitiveEmail(value: Boolean): Self = StObject.set(x, "caseSensitiveEmail", value.asInstanceOf[js.Any])
+    inline def setCaseSensitiveEmail(value: Boolean): Self = StObject.set(x, "caseSensitiveEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailVerificationRequired(value: Boolean): Self = StObject.set(x, "emailVerificationRequired", value.asInstanceOf[js.Any])
+    inline def setEmailVerificationRequired(value: Boolean): Self = StObject.set(x, "emailVerificationRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttp(value: Path): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    inline def setHttp(value: Path): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTTL(value: Double): Self = StObject.set(x, "maxTTL", value.asInstanceOf[js.Any])
+    inline def setMaxTTL(value: Double): Self = StObject.set(x, "maxTTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealmDelimiter(value: String): Self = StObject.set(x, "realmDelimiter", value.asInstanceOf[js.Any])
+    inline def setRealmDelimiter(value: String): Self = StObject.set(x, "realmDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealmRequired(value: Boolean): Self = StObject.set(x, "realmRequired", value.asInstanceOf[js.Any])
+    inline def setRealmRequired(value: Boolean): Self = StObject.set(x, "realmRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetPasswordTokenTTL(value: Double): Self = StObject.set(x, "resetPasswordTokenTTL", value.asInstanceOf[js.Any])
+    inline def setResetPasswordTokenTTL(value: Double): Self = StObject.set(x, "resetPasswordTokenTTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaltWorkFactor(value: Double): Self = StObject.set(x, "saltWorkFactor", value.asInstanceOf[js.Any])
+    inline def setSaltWorkFactor(value: Double): Self = StObject.set(x, "saltWorkFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
   }
 }

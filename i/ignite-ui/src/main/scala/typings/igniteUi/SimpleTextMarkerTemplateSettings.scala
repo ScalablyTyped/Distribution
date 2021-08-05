@@ -28,55 +28,39 @@ trait SimpleTextMarkerTemplateSettings
 }
 object SimpleTextMarkerTemplateSettings {
   
-  @scala.inline
-  def apply(): SimpleTextMarkerTemplateSettings = {
+  inline def apply(): SimpleTextMarkerTemplateSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SimpleTextMarkerTemplateSettings]
   }
   
-  @scala.inline
-  implicit class SimpleTextMarkerTemplateSettingsMutableBuilder[Self <: SimpleTextMarkerTemplateSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleTextMarkerTemplateSettings](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    @scala.inline
-    def setBorderThickness(value: Double): Self = StObject.set(x, "borderThickness", value.asInstanceOf[js.Any])
+    inline def setBorderThickness(value: Double): Self = StObject.set(x, "borderThickness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderThicknessUndefined: Self = StObject.set(x, "borderThickness", js.undefined)
+    inline def setBorderThicknessUndefined: Self = StObject.set(x, "borderThickness", js.undefined)
     
-    @scala.inline
-    def setFont(value: js.Any): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: js.Any): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setGetText(value: js.Any): Self = StObject.set(x, "getText", value.asInstanceOf[js.Any])
+    inline def setGetText(value: js.Any): Self = StObject.set(x, "getText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetTextUndefined: Self = StObject.set(x, "getText", js.undefined)
+    inline def setGetTextUndefined: Self = StObject.set(x, "getText", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
   }
 }

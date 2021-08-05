@@ -18,25 +18,19 @@ trait IAMPolicyAssignmentSummary extends StObject {
 }
 object IAMPolicyAssignmentSummary {
   
-  @scala.inline
-  def apply(): IAMPolicyAssignmentSummary = {
+  inline def apply(): IAMPolicyAssignmentSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAMPolicyAssignmentSummary]
   }
   
-  @scala.inline
-  implicit class IAMPolicyAssignmentSummaryMutableBuilder[Self <: IAMPolicyAssignmentSummary] (val x: Self) extends AnyVal {
+  extension [Self <: IAMPolicyAssignmentSummary](x: Self) {
     
-    @scala.inline
-    def setAssignmentName(value: IAMPolicyAssignmentName): Self = StObject.set(x, "AssignmentName", value.asInstanceOf[js.Any])
+    inline def setAssignmentName(value: IAMPolicyAssignmentName): Self = StObject.set(x, "AssignmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentNameUndefined: Self = StObject.set(x, "AssignmentName", js.undefined)
+    inline def setAssignmentNameUndefined: Self = StObject.set(x, "AssignmentName", js.undefined)
     
-    @scala.inline
-    def setAssignmentStatus(value: AssignmentStatus): Self = StObject.set(x, "AssignmentStatus", value.asInstanceOf[js.Any])
+    inline def setAssignmentStatus(value: AssignmentStatus): Self = StObject.set(x, "AssignmentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentStatusUndefined: Self = StObject.set(x, "AssignmentStatus", js.undefined)
+    inline def setAssignmentStatusUndefined: Self = StObject.set(x, "AssignmentStatus", js.undefined)
   }
 }

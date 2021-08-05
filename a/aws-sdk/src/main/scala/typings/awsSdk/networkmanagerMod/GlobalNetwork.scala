@@ -38,52 +38,37 @@ trait GlobalNetwork extends StObject {
 }
 object GlobalNetwork {
   
-  @scala.inline
-  def apply(): GlobalNetwork = {
+  inline def apply(): GlobalNetwork = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalNetwork]
   }
   
-  @scala.inline
-  implicit class GlobalNetworkMutableBuilder[Self <: GlobalNetwork] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalNetwork](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: DateTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: DateTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setGlobalNetworkArn(value: String): Self = StObject.set(x, "GlobalNetworkArn", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkArn(value: String): Self = StObject.set(x, "GlobalNetworkArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalNetworkArnUndefined: Self = StObject.set(x, "GlobalNetworkArn", js.undefined)
+    inline def setGlobalNetworkArnUndefined: Self = StObject.set(x, "GlobalNetworkArn", js.undefined)
     
-    @scala.inline
-    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalNetworkIdUndefined: Self = StObject.set(x, "GlobalNetworkId", js.undefined)
+    inline def setGlobalNetworkIdUndefined: Self = StObject.set(x, "GlobalNetworkId", js.undefined)
     
-    @scala.inline
-    def setState(value: GlobalNetworkState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: GlobalNetworkState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

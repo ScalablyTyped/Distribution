@@ -10,19 +10,15 @@ trait UnregistrationParams extends StObject {
 }
 object UnregistrationParams {
   
-  @scala.inline
-  def apply(unregisterations: js.Array[Unregistration]): UnregistrationParams = {
+  inline def apply(unregisterations: js.Array[Unregistration]): UnregistrationParams = {
     val __obj = js.Dynamic.literal(unregisterations = unregisterations.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnregistrationParams]
   }
   
-  @scala.inline
-  implicit class UnregistrationParamsMutableBuilder[Self <: UnregistrationParams] (val x: Self) extends AnyVal {
+  extension [Self <: UnregistrationParams](x: Self) {
     
-    @scala.inline
-    def setUnregisterations(value: js.Array[Unregistration]): Self = StObject.set(x, "unregisterations", value.asInstanceOf[js.Any])
+    inline def setUnregisterations(value: js.Array[Unregistration]): Self = StObject.set(x, "unregisterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnregisterationsVarargs(value: Unregistration*): Self = StObject.set(x, "unregisterations", js.Array(value :_*))
+    inline def setUnregisterationsVarargs(value: Unregistration*): Self = StObject.set(x, "unregisterations", js.Array(value :_*))
   }
 }

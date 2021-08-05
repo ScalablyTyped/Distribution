@@ -18,11 +18,11 @@ trait ZipFS
   extends SynchronousFileSystem
      with FileSystem {
   
-  var _directoryEntries: js.Any = js.native
+  /* private */ var _directoryEntries: js.Any = js.native
   
-  var _eocd: js.Any = js.native
+  /* private */ var _eocd: js.Any = js.native
   
-  var _index: js.Any = js.native
+  /* private */ var _index: js.Any = js.native
   
   /* InferMemberOverrides */
   override def chmod(p: String, isLchmod: Boolean, mode: Double, cb: BFSOneArgCallback): Unit = js.native
@@ -36,7 +36,7 @@ trait ZipFS
   /* InferMemberOverrides */
   override def chownSync(p: String, isLchown: Boolean, uid: Double, gid: Double): Unit = js.native
   
-  var data: js.Any = js.native
+  /* private */ var data: js.Any = js.native
   
   /* InferMemberOverrides */
   override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
@@ -70,7 +70,7 @@ trait ZipFS
   /* InferMemberOverrides */
   override def mkdirSync(p: String, mode: Double): Unit = js.native
   
-  var name: js.Any = js.native
+  /* private */ var name: js.Any = js.native
   
   /* InferMemberOverrides */
   override def open(p: String, flag: FileFlag, mode: Double, cb: BFSCallback[File]): Unit = js.native

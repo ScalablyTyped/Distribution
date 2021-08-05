@@ -14,19 +14,15 @@ trait GetHistoricalBytesSuccessCallbackResult extends StObject {
 }
 object GetHistoricalBytesSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, histBytes: ArrayBuffer): GetHistoricalBytesSuccessCallbackResult = {
+  inline def apply(errMsg: String, histBytes: ArrayBuffer): GetHistoricalBytesSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], histBytes = histBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHistoricalBytesSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetHistoricalBytesSuccessCallbackResultMutableBuilder[Self <: GetHistoricalBytesSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetHistoricalBytesSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistBytes(value: ArrayBuffer): Self = StObject.set(x, "histBytes", value.asInstanceOf[js.Any])
+    inline def setHistBytes(value: ArrayBuffer): Self = StObject.set(x, "histBytes", value.asInstanceOf[js.Any])
   }
 }

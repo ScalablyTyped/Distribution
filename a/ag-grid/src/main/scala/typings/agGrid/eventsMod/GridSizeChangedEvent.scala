@@ -16,20 +16,16 @@ trait GridSizeChangedEvent
 }
 object GridSizeChangedEvent {
   
-  @scala.inline
-  def apply(api: GridApi, clientHeight: Double, clientWidth: Double, columnApi: ColumnApi, `type`: String): GridSizeChangedEvent = {
+  inline def apply(api: GridApi, clientHeight: Double, clientWidth: Double, columnApi: ColumnApi, `type`: String): GridSizeChangedEvent = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], clientHeight = clientHeight.asInstanceOf[js.Any], clientWidth = clientWidth.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridSizeChangedEvent]
   }
   
-  @scala.inline
-  implicit class GridSizeChangedEventMutableBuilder[Self <: GridSizeChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GridSizeChangedEvent](x: Self) {
     
-    @scala.inline
-    def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
+    inline def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientWidth(value: Double): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
+    inline def setClientWidth(value: Double): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
   }
 }

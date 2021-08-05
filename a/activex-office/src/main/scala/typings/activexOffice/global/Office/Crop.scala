@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.Crop")
 @js.native
-class Crop protected ()
+/* private */ class Crop ()
   extends StObject
      with typings.activexOffice.Office.Crop {
   
@@ -16,7 +16,7 @@ class Crop protected ()
   /* CompleteClass */
   override val Creator: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.Crop_typekey")
   var OfficeDotCrop_typekey: typings.activexOffice.Office.Crop = js.native
   

@@ -159,29 +159,22 @@ object mod {
   }
   object DownloadInfo {
     
-    @scala.inline
-    def apply(downloadedSize: Double, fileName: String, filePath: String, isResumed: Boolean, totalSize: Double): DownloadInfo = {
+    inline def apply(downloadedSize: Double, fileName: String, filePath: String, isResumed: Boolean, totalSize: Double): DownloadInfo = {
       val __obj = js.Dynamic.literal(downloadedSize = downloadedSize.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], isResumed = isResumed.asInstanceOf[js.Any], totalSize = totalSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[DownloadInfo]
     }
     
-    @scala.inline
-    implicit class DownloadInfoMutableBuilder[Self <: DownloadInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadInfo](x: Self) {
       
-      @scala.inline
-      def setDownloadedSize(value: Double): Self = StObject.set(x, "downloadedSize", value.asInstanceOf[js.Any])
+      inline def setDownloadedSize(value: Double): Self = StObject.set(x, "downloadedSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsResumed(value: Boolean): Self = StObject.set(x, "isResumed", value.asInstanceOf[js.Any])
+      inline def setIsResumed(value: Boolean): Self = StObject.set(x, "isResumed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+      inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -197,29 +190,22 @@ object mod {
   }
   object DownloaderError {
     
-    @scala.inline
-    def apply(message: String): DownloaderError = {
+    inline def apply(message: String): DownloaderError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[DownloaderError]
     }
     
-    @scala.inline
-    implicit class DownloaderErrorMutableBuilder[Self <: DownloaderError] (val x: Self) extends AnyVal {
+    extension [Self <: DownloaderError](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   
@@ -238,26 +224,20 @@ object mod {
   }
   object FilePaths {
     
-    @scala.inline
-    def apply(fileName: String, path: String, prevFileName: String, prevPath: String): FilePaths = {
+    inline def apply(fileName: String, path: String, prevFileName: String, prevPath: String): FilePaths = {
       val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], prevFileName = prevFileName.asInstanceOf[js.Any], prevPath = prevPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilePaths]
     }
     
-    @scala.inline
-    implicit class FilePathsMutableBuilder[Self <: FilePaths] (val x: Self) extends AnyVal {
+    extension [Self <: FilePaths](x: Self) {
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevFileName(value: String): Self = StObject.set(x, "prevFileName", value.asInstanceOf[js.Any])
+      inline def setPrevFileName(value: String): Self = StObject.set(x, "prevFileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevPath(value: String): Self = StObject.set(x, "prevPath", value.asInstanceOf[js.Any])
+      inline def setPrevPath(value: String): Self = StObject.set(x, "prevPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -279,29 +259,22 @@ object mod {
   }
   object FinalDownloadInfo {
     
-    @scala.inline
-    def apply(downloadedSize: Double, fileName: String, filePath: String, onDiskSize: Double, totalSize: Double): FinalDownloadInfo = {
+    inline def apply(downloadedSize: Double, fileName: String, filePath: String, onDiskSize: Double, totalSize: Double): FinalDownloadInfo = {
       val __obj = js.Dynamic.literal(downloadedSize = downloadedSize.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], onDiskSize = onDiskSize.asInstanceOf[js.Any], totalSize = totalSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[FinalDownloadInfo]
     }
     
-    @scala.inline
-    implicit class FinalDownloadInfoMutableBuilder[Self <: FinalDownloadInfo] (val x: Self) extends AnyVal {
+    extension [Self <: FinalDownloadInfo](x: Self) {
       
-      @scala.inline
-      def setDownloadedSize(value: Double): Self = StObject.set(x, "downloadedSize", value.asInstanceOf[js.Any])
+      inline def setDownloadedSize(value: Double): Self = StObject.set(x, "downloadedSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDiskSize(value: Double): Self = StObject.set(x, "onDiskSize", value.asInstanceOf[js.Any])
+      inline def setOnDiskSize(value: Double): Self = StObject.set(x, "onDiskSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+      inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -338,74 +311,52 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setForceResume(value: Boolean): Self = StObject.set(x, "forceResume", value.asInstanceOf[js.Any])
+      inline def setForceResume(value: Boolean): Self = StObject.set(x, "forceResume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceResumeUndefined: Self = StObject.set(x, "forceResume", js.undefined)
+      inline def setForceResumeUndefined: Self = StObject.set(x, "forceResume", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHttpRequestOptions(value: RequestOptions): Self = StObject.set(x, "httpRequestOptions", value.asInstanceOf[js.Any])
+      inline def setHttpRequestOptions(value: RequestOptions): Self = StObject.set(x, "httpRequestOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpRequestOptionsUndefined: Self = StObject.set(x, "httpRequestOptions", js.undefined)
+      inline def setHttpRequestOptionsUndefined: Self = StObject.set(x, "httpRequestOptions", js.undefined)
       
-      @scala.inline
-      def setHttpsRequestOptions(value: typings.node.httpsMod.RequestOptions): Self = StObject.set(x, "httpsRequestOptions", value.asInstanceOf[js.Any])
+      inline def setHttpsRequestOptions(value: typings.node.httpsMod.RequestOptions): Self = StObject.set(x, "httpsRequestOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpsRequestOptionsUndefined: Self = StObject.set(x, "httpsRequestOptions", js.undefined)
+      inline def setHttpsRequestOptionsUndefined: Self = StObject.set(x, "httpsRequestOptions", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+      inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+      inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
       
-      @scala.inline
-      def setRemoveOnFail(value: Boolean): Self = StObject.set(x, "removeOnFail", value.asInstanceOf[js.Any])
+      inline def setRemoveOnFail(value: Boolean): Self = StObject.set(x, "removeOnFail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveOnFailUndefined: Self = StObject.set(x, "removeOnFail", js.undefined)
+      inline def setRemoveOnFailUndefined: Self = StObject.set(x, "removeOnFail", js.undefined)
       
-      @scala.inline
-      def setRemoveOnStop(value: Boolean): Self = StObject.set(x, "removeOnStop", value.asInstanceOf[js.Any])
+      inline def setRemoveOnStop(value: Boolean): Self = StObject.set(x, "removeOnStop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveOnStopUndefined: Self = StObject.set(x, "removeOnStop", js.undefined)
+      inline def setRemoveOnStopUndefined: Self = StObject.set(x, "removeOnStop", js.undefined)
       
-      @scala.inline
-      def setRetry(value: Delay): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      inline def setRetry(value: Delay): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+      inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     }
   }
   
@@ -427,29 +378,22 @@ object mod {
   }
   object Stats {
     
-    @scala.inline
-    def apply(downloaded: Double, name: String, progress: Double, speed: Double, total: Double): Stats = {
+    inline def apply(downloaded: Double, name: String, progress: Double, speed: Double, total: Double): Stats = {
       val __obj = js.Dynamic.literal(downloaded = downloaded.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stats]
     }
     
-    @scala.inline
-    implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
+    extension [Self <: Stats](x: Self) {
       
-      @scala.inline
-      def setDownloaded(value: Double): Self = StObject.set(x, "downloaded", value.asInstanceOf[js.Any])
+      inline def setDownloaded(value: Double): Self = StObject.set(x, "downloaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
 }

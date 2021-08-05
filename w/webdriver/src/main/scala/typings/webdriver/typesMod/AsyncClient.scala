@@ -2764,8 +2764,7 @@ trait AsyncClient extends StObject {
 }
 object AsyncClient {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _getWindowSize: /* args */ Parameters[js.Function0[ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function0[ProtocolCommandResponse]]],
     _setWindowSize: /* args */ Parameters[js.Function2[/* width */ Double, /* height */ Double, Unit]] => js.Promise[ReturnType[js.Function2[/* width */ Double, /* height */ Double, Unit]]],
     acceptAlert: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]],
@@ -3407,14 +3406,11 @@ object AsyncClient {
     __obj.asInstanceOf[AsyncClient]
   }
   
-  @scala.inline
-  implicit class AsyncClientMutableBuilder[Self <: AsyncClient] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncClient](x: Self) {
     
-    @scala.inline
-    def setAcceptAlert(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "acceptAlert", js.Any.fromFunction1(value))
+    inline def setAcceptAlert(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "acceptAlert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setActivateApp(
+    inline def setActivateApp(
       value: /* args */ Parameters[
           js.Function2[/* appId */ js.UndefOr[String], /* bundleId */ js.UndefOr[String], Unit]
         ] => js.Promise[
@@ -3424,18 +3420,15 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "activateApp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setActivateIME(
+    inline def setActivateIME(
       value: /* args */ Parameters[js.Function1[/* engine */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* engine */ String, Unit]]]
     ): Self = StObject.set(x, "activateIME", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddCookie(
+    inline def setAddCookie(
       value: /* args */ Parameters[js.Function1[/* cookie */ js.Object, Unit]] => js.Promise[ReturnType[js.Function1[/* cookie */ js.Object, Unit]]]
     ): Self = StObject.set(x, "addCookie", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssertPerformance(
+    inline def setAssertPerformance(
       value: /* args */ Parameters[
           js.Function2[
             /* name */ String, 
@@ -3453,43 +3446,33 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "assertPerformance", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBack(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "back", js.Any.fromFunction1(value))
+    inline def setBack(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "back", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBackground(
+    inline def setBackground(
       value: /* args */ Parameters[js.Function1[/* seconds */ Double | Null, Unit]] => js.Promise[ReturnType[js.Function1[/* seconds */ Double | Null, Unit]]]
     ): Self = StObject.set(x, "background", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setButtonDown(
+    inline def setButtonDown(
       value: /* args */ Parameters[js.Function1[/* button */ js.UndefOr[Double], Unit]] => js.Promise[ReturnType[js.Function1[/* button */ js.UndefOr[Double], Unit]]]
     ): Self = StObject.set(x, "buttonDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setButtonUp(
+    inline def setButtonUp(
       value: /* args */ Parameters[js.Function1[/* button */ js.UndefOr[Double], Unit]] => js.Promise[ReturnType[js.Function1[/* button */ js.UndefOr[Double], Unit]]]
     ): Self = StObject.set(x, "buttonUp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearLocalStorage(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "clearLocalStorage", js.Any.fromFunction1(value))
+    inline def setClearLocalStorage(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "clearLocalStorage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearMockCalls(
+    inline def setClearMockCalls(
       value: /* args */ Parameters[js.Function2[/* mockId */ String, /* restore */ Boolean, Unit]] => js.Promise[ReturnType[js.Function2[/* mockId */ String, /* restore */ Boolean, Unit]]]
     ): Self = StObject.set(x, "clearMockCalls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearSessionStorage(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "clearSessionStorage", js.Any.fromFunction1(value))
+    inline def setClearSessionStorage(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "clearSessionStorage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCloseApp(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "closeApp", js.Any.fromFunction1(value))
+    inline def setCloseApp(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "closeApp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCloseWindow(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "closeWindow", js.Any.fromFunction1(value))
+    inline def setCloseWindow(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "closeWindow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompareImages(
+    inline def setCompareImages(
       value: /* args */ Parameters[
           js.Function4[
             /* mode */ String, 
@@ -3511,43 +3494,33 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "compareImages", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateWindow(
+    inline def setCreateWindow(
       value: /* args */ Parameters[js.Function1[/* type */ tab | window, WindowHandle]] => js.Promise[ReturnType[js.Function1[/* type */ tab | window, WindowHandle]]]
     ): Self = StObject.set(x, "createWindow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeactivateIME(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "deactivateIME", js.Any.fromFunction1(value))
+    inline def setDeactivateIME(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "deactivateIME", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteAllCookies(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "deleteAllCookies", js.Any.fromFunction1(value))
+    inline def setDeleteAllCookies(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "deleteAllCookies", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteCookie(
+    inline def setDeleteCookie(
       value: /* args */ Parameters[js.Function1[/* name */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* name */ String, Unit]]]
     ): Self = StObject.set(x, "deleteCookie", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteLocalStorageItem(
+    inline def setDeleteLocalStorageItem(
       value: /* args */ Parameters[js.Function1[/* key */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* key */ String, Unit]]]
     ): Self = StObject.set(x, "deleteLocalStorageItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteNetworkConditions(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "deleteNetworkConditions", js.Any.fromFunction1(value))
+    inline def setDeleteNetworkConditions(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "deleteNetworkConditions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteSession(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "deleteSession", js.Any.fromFunction1(value))
+    inline def setDeleteSession(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "deleteSession", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteSessionStorageItem(
+    inline def setDeleteSessionStorageItem(
       value: /* args */ Parameters[js.Function1[/* key */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* key */ String, Unit]]]
     ): Self = StObject.set(x, "deleteSessionStorageItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDismissAlert(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "dismissAlert", js.Any.fromFunction1(value))
+    inline def setDismissAlert(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "dismissAlert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDriverScript(
+    inline def setDriverScript(
       value: /* args */ Parameters[
           js.Function3[
             /* script */ String, 
@@ -3567,45 +3540,37 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "driverScript", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementClear(
+    inline def setElementClear(
       value: /* args */ Parameters[js.Function1[/* elementId */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* elementId */ String, Unit]]]
     ): Self = StObject.set(x, "elementClear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementClick(
+    inline def setElementClick(
       value: /* args */ Parameters[js.Function1[/* elementId */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* elementId */ String, Unit]]]
     ): Self = StObject.set(x, "elementClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementEquals(
+    inline def setElementEquals(
       value: /* args */ Parameters[js.Function2[/* elementId */ String, /* otherElementId */ String, Boolean]] => js.Promise[
           ReturnType[js.Function2[/* elementId */ String, /* otherElementId */ String, Boolean]]
         ]
     ): Self = StObject.set(x, "elementEquals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementHover(
+    inline def setElementHover(
       value: /* args */ Parameters[js.Function1[/* elementId */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* elementId */ String, Unit]]]
     ): Self = StObject.set(x, "elementHover", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementSendKeys(
+    inline def setElementSendKeys(
       value: /* args */ Parameters[js.Function2[/* elementId */ String, /* text */ String, Unit]] => js.Promise[ReturnType[js.Function2[/* elementId */ String, /* text */ String, Unit]]]
     ): Self = StObject.set(x, "elementSendKeys", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementSubmit(
+    inline def setElementSubmit(
       value: /* args */ Parameters[js.Function1[/* elementId */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* elementId */ String, Unit]]]
     ): Self = StObject.set(x, "elementSubmit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEndCoverage(
+    inline def setEndCoverage(
       value: /* args */ Parameters[js.Function2[/* intent */ String, /* path */ String, Unit]] => js.Promise[ReturnType[js.Function2[/* intent */ String, /* path */ String, Unit]]]
     ): Self = StObject.set(x, "endCoverage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExecuteAsyncScript(
+    inline def setExecuteAsyncScript(
       value: /* args */ Parameters[
           js.Function2[
             /* script */ String, 
@@ -3623,8 +3588,7 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "executeAsyncScript", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExecuteScript(
+    inline def setExecuteScript(
       value: /* args */ Parameters[
           js.Function2[
             /* script */ String, 
@@ -3642,18 +3606,15 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "executeScript", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFile(
+    inline def setFile(
       value: /* args */ Parameters[js.Function1[/* file */ String, String]] => js.Promise[ReturnType[js.Function1[/* file */ String, String]]]
     ): Self = StObject.set(x, "file", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindElement(
+    inline def setFindElement(
       value: /* args */ Parameters[js.Function2[/* using */ String, /* value */ String, String]] => js.Promise[ReturnType[js.Function2[/* using */ String, /* value */ String, String]]]
     ): Self = StObject.set(x, "findElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindElementFromElement(
+    inline def setFindElementFromElement(
       value: /* args */ Parameters[
           js.Function3[/* elementId */ String, /* using */ String, /* value */ String, String]
         ] => js.Promise[
@@ -3663,15 +3624,13 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "findElementFromElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindElements(
+    inline def setFindElements(
       value: /* args */ Parameters[js.Function2[/* using */ String, /* value */ String, js.Array[String]]] => js.Promise[
           ReturnType[js.Function2[/* using */ String, /* value */ String, js.Array[String]]]
         ]
     ): Self = StObject.set(x, "findElements", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindElementsFromElement(
+    inline def setFindElementsFromElement(
       value: /* args */ Parameters[
           js.Function3[/* elementId */ String, /* using */ String, /* value */ String, js.Array[String]]
         ] => js.Promise[
@@ -3681,200 +3640,155 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "findElementsFromElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFingerPrint(
+    inline def setFingerPrint(
       value: /* args */ Parameters[js.Function1[/* fingerprintId */ Double, Unit]] => js.Promise[ReturnType[js.Function1[/* fingerprintId */ Double, Unit]]]
     ): Self = StObject.set(x, "fingerPrint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForward(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "forward", js.Any.fromFunction1(value))
+    inline def setForward(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "forward", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFreeze(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "freeze", js.Any.fromFunction1(value))
+    inline def setFreeze(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "freeze", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFullscreenWindow(
+    inline def setFullscreenWindow(
       value: /* args */ Parameters[js.Function0[RectReturn]] => js.Promise[ReturnType[js.Function0[RectReturn]]]
     ): Self = StObject.set(x, "fullscreenWindow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGenerateTestReport(
+    inline def setGenerateTestReport(
       value: /* args */ Parameters[js.Function2[/* message */ String, /* group */ String, Unit]] => js.Promise[ReturnType[js.Function2[/* message */ String, /* group */ String, Unit]]]
     ): Self = StObject.set(x, "generateTestReport", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetActiveElement(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getActiveElement", js.Any.fromFunction1(value))
+    inline def setGetActiveElement(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getActiveElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetActiveEngine(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getActiveEngine", js.Any.fromFunction1(value))
+    inline def setGetActiveEngine(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getActiveEngine", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAlertText(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getAlertText", js.Any.fromFunction1(value))
+    inline def setGetAlertText(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getAlertText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAllCookies(
+    inline def setGetAllCookies(
       value: /* args */ Parameters[js.Function0[js.Array[js.Object]]] => js.Promise[ReturnType[js.Function0[js.Array[js.Object]]]]
     ): Self = StObject.set(x, "getAllCookies", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetApplicationCacheStatus(value: /* args */ Parameters[js.Function0[Double]] => js.Promise[ReturnType[js.Function0[Double]]]): Self = StObject.set(x, "getApplicationCacheStatus", js.Any.fromFunction1(value))
+    inline def setGetApplicationCacheStatus(value: /* args */ Parameters[js.Function0[Double]] => js.Promise[ReturnType[js.Function0[Double]]]): Self = StObject.set(x, "getApplicationCacheStatus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAvailableEngines(
+    inline def setGetAvailableEngines(
       value: /* args */ Parameters[js.Function0[js.Array[String]]] => js.Promise[ReturnType[js.Function0[js.Array[String]]]]
     ): Self = StObject.set(x, "getAvailableEngines", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetClipboard(
+    inline def setGetClipboard(
       value: /* args */ Parameters[js.Function1[/* contentType */ js.UndefOr[String], String]] => js.Promise[ReturnType[js.Function1[/* contentType */ js.UndefOr[String], String]]]
     ): Self = StObject.set(x, "getClipboard", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetContext(
+    inline def setGetContext(
       value: /* args */ Parameters[js.Function0[String | Null]] => js.Promise[ReturnType[js.Function0[String | Null]]]
     ): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetContexts(
+    inline def setGetContexts(
       value: /* args */ Parameters[js.Function0[js.Array[String]]] => js.Promise[ReturnType[js.Function0[js.Array[String]]]]
     ): Self = StObject.set(x, "getContexts", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCurrentActivity(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getCurrentActivity", js.Any.fromFunction1(value))
+    inline def setGetCurrentActivity(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getCurrentActivity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCurrentPackage(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getCurrentPackage", js.Any.fromFunction1(value))
+    inline def setGetCurrentPackage(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getCurrentPackage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDeviceTime(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getDeviceTime", js.Any.fromFunction1(value))
+    inline def setGetDeviceTime(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getDeviceTime", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDisplayDensity(value: /* args */ Parameters[js.Function0[js.Any]] => js.Promise[ReturnType[js.Function0[js.Any]]]): Self = StObject.set(x, "getDisplayDensity", js.Any.fromFunction1(value))
+    inline def setGetDisplayDensity(value: /* args */ Parameters[js.Function0[js.Any]] => js.Promise[ReturnType[js.Function0[js.Any]]]): Self = StObject.set(x, "getDisplayDensity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetElementAttribute(
+    inline def setGetElementAttribute(
       value: /* args */ Parameters[js.Function2[/* elementId */ String, /* name */ String, String]] => js.Promise[ReturnType[js.Function2[/* elementId */ String, /* name */ String, String]]]
     ): Self = StObject.set(x, "getElementAttribute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetElementCSSValue(
+    inline def setGetElementCSSValue(
       value: /* args */ Parameters[js.Function2[/* elementId */ String, /* propertyName */ String, String]] => js.Promise[
           ReturnType[js.Function2[/* elementId */ String, /* propertyName */ String, String]]
         ]
     ): Self = StObject.set(x, "getElementCSSValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetElementLocation(
+    inline def setGetElementLocation(
       value: /* args */ Parameters[js.Function1[/* elementId */ String, ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function1[/* elementId */ String, ProtocolCommandResponse]]]
     ): Self = StObject.set(x, "getElementLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetElementLocationInView(
+    inline def setGetElementLocationInView(
       value: /* args */ Parameters[js.Function1[/* elementId */ String, ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function1[/* elementId */ String, ProtocolCommandResponse]]]
     ): Self = StObject.set(x, "getElementLocationInView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetElementProperty(
+    inline def setGetElementProperty(
       value: /* args */ Parameters[js.Function2[/* elementId */ String, /* name */ String, String]] => js.Promise[ReturnType[js.Function2[/* elementId */ String, /* name */ String, String]]]
     ): Self = StObject.set(x, "getElementProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetElementRect(
+    inline def setGetElementRect(
       value: /* args */ Parameters[js.Function1[/* elementId */ String, RectReturn]] => js.Promise[ReturnType[js.Function1[/* elementId */ String, RectReturn]]]
     ): Self = StObject.set(x, "getElementRect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetElementSize(
+    inline def setGetElementSize(
       value: /* args */ Parameters[js.Function1[/* elementId */ String, ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function1[/* elementId */ String, ProtocolCommandResponse]]]
     ): Self = StObject.set(x, "getElementSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetElementTagName(
+    inline def setGetElementTagName(
       value: /* args */ Parameters[js.Function1[/* elementId */ String, String]] => js.Promise[ReturnType[js.Function1[/* elementId */ String, String]]]
     ): Self = StObject.set(x, "getElementTagName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetElementText(
+    inline def setGetElementText(
       value: /* args */ Parameters[js.Function1[/* elementId */ String, String]] => js.Promise[ReturnType[js.Function1[/* elementId */ String, String]]]
     ): Self = StObject.set(x, "getElementText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetElementValue(
+    inline def setGetElementValue(
       value: /* args */ Parameters[js.Function1[/* elementId */ String, String | Null]] => js.Promise[ReturnType[js.Function1[/* elementId */ String, String | Null]]]
     ): Self = StObject.set(x, "getElementValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetEvents(
+    inline def setGetEvents(
       value: /* args */ Parameters[js.Function1[/* type */ js.Array[String], ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function1[/* type */ js.Array[String], ProtocolCommandResponse]]]
     ): Self = StObject.set(x, "getEvents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetGeoLocation(
+    inline def setGetGeoLocation(
       value: /* args */ Parameters[js.Function0[ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function0[ProtocolCommandResponse]]]
     ): Self = StObject.set(x, "getGeoLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHubConfig(
+    inline def setGetHubConfig(
       value: /* args */ Parameters[js.Function0[ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function0[ProtocolCommandResponse]]]
     ): Self = StObject.set(x, "getHubConfig", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLocalStorage(
+    inline def setGetLocalStorage(
       value: /* args */ Parameters[js.Function0[js.Array[String]]] => js.Promise[ReturnType[js.Function0[js.Array[String]]]]
     ): Self = StObject.set(x, "getLocalStorage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLocalStorageItem(
+    inline def setGetLocalStorageItem(
       value: /* args */ Parameters[js.Function1[/* key */ String, String]] => js.Promise[ReturnType[js.Function1[/* key */ String, String]]]
     ): Self = StObject.set(x, "getLocalStorageItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLocalStorageSize(value: /* args */ Parameters[js.Function0[Double]] => js.Promise[ReturnType[js.Function0[Double]]]): Self = StObject.set(x, "getLocalStorageSize", js.Any.fromFunction1(value))
+    inline def setGetLocalStorageSize(value: /* args */ Parameters[js.Function0[Double]] => js.Promise[ReturnType[js.Function0[Double]]]): Self = StObject.set(x, "getLocalStorageSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLogTypes(
+    inline def setGetLogTypes(
       value: /* args */ Parameters[js.Function0[js.Array[String]]] => js.Promise[ReturnType[js.Function0[js.Array[String]]]]
     ): Self = StObject.set(x, "getLogTypes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLogs(
+    inline def setGetLogs(
       value: /* args */ Parameters[js.Function1[/* type */ String, js.Array[js.Object]]] => js.Promise[ReturnType[js.Function1[/* type */ String, js.Array[js.Object]]]]
     ): Self = StObject.set(x, "getLogs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMockCalls(
+    inline def setGetMockCalls(
       value: /* args */ Parameters[js.Function1[/* mockId */ String, ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function1[/* mockId */ String, ProtocolCommandResponse]]]
     ): Self = StObject.set(x, "getMockCalls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNamedCookie(
+    inline def setGetNamedCookie(
       value: /* args */ Parameters[js.Function1[/* name */ String, typings.webdriver.WebDriver.Cookie]] => js.Promise[ReturnType[js.Function1[/* name */ String, typings.webdriver.WebDriver.Cookie]]]
     ): Self = StObject.set(x, "getNamedCookie", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNetworkConditions(
+    inline def setGetNetworkConditions(
       value: /* args */ Parameters[js.Function0[ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function0[ProtocolCommandResponse]]]
     ): Self = StObject.set(x, "getNetworkConditions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNetworkConnection(value: /* args */ Parameters[js.Function0[Double]] => js.Promise[ReturnType[js.Function0[Double]]]): Self = StObject.set(x, "getNetworkConnection", js.Any.fromFunction1(value))
+    inline def setGetNetworkConnection(value: /* args */ Parameters[js.Function0[Double]] => js.Promise[ReturnType[js.Function0[Double]]]): Self = StObject.set(x, "getNetworkConnection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetOrientation(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getOrientation", js.Any.fromFunction1(value))
+    inline def setGetOrientation(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getOrientation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPageIndex(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getPageIndex", js.Any.fromFunction1(value))
+    inline def setGetPageIndex(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getPageIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPageLogs(
+    inline def setGetPageLogs(
       value: /* args */ Parameters[js.Function1[/* type */ String, ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function1[/* type */ String, ProtocolCommandResponse]]]
     ): Self = StObject.set(x, "getPageLogs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPageSource(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getPageSource", js.Any.fromFunction1(value))
+    inline def setGetPageSource(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getPageSource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPerformanceData(
+    inline def setGetPerformanceData(
       value: /* args */ Parameters[
           js.Function3[
             /* packageName */ String, 
@@ -3894,41 +3808,33 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "getPerformanceData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPerformanceDataTypes(
+    inline def setGetPerformanceDataTypes(
       value: /* args */ Parameters[js.Function0[js.Array[String]]] => js.Promise[ReturnType[js.Function0[js.Array[String]]]]
     ): Self = StObject.set(x, "getPerformanceDataTypes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSession(
+    inline def setGetSession(
       value: /* args */ Parameters[js.Function0[ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function0[ProtocolCommandResponse]]]
     ): Self = StObject.set(x, "getSession", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSessionStorage(
+    inline def setGetSessionStorage(
       value: /* args */ Parameters[js.Function0[js.Array[String]]] => js.Promise[ReturnType[js.Function0[js.Array[String]]]]
     ): Self = StObject.set(x, "getSessionStorage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSessionStorageItem(
+    inline def setGetSessionStorageItem(
       value: /* args */ Parameters[js.Function1[/* key */ String, String]] => js.Promise[ReturnType[js.Function1[/* key */ String, String]]]
     ): Self = StObject.set(x, "getSessionStorageItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSessionStorageSize(value: /* args */ Parameters[js.Function0[Double]] => js.Promise[ReturnType[js.Function0[Double]]]): Self = StObject.set(x, "getSessionStorageSize", js.Any.fromFunction1(value))
+    inline def setGetSessionStorageSize(value: /* args */ Parameters[js.Function0[Double]] => js.Promise[ReturnType[js.Function0[Double]]]): Self = StObject.set(x, "getSessionStorageSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSessions(
+    inline def setGetSessions(
       value: /* args */ Parameters[js.Function0[js.Array[js.Object]]] => js.Promise[ReturnType[js.Function0[js.Array[js.Object]]]]
     ): Self = StObject.set(x, "getSessions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSettings(
+    inline def setGetSettings(
       value: /* args */ Parameters[js.Function0[SettingsReturn]] => js.Promise[ReturnType[js.Function0[SettingsReturn]]]
     ): Self = StObject.set(x, "getSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetStrings(
+    inline def setGetStrings(
       value: /* args */ Parameters[
           js.Function2[
             /* language */ js.UndefOr[String], 
@@ -3946,57 +3852,45 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "getStrings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSystemBars(
+    inline def setGetSystemBars(
       value: /* args */ Parameters[js.Function0[js.Array[js.Object]]] => js.Promise[ReturnType[js.Function0[js.Array[js.Object]]]]
     ): Self = StObject.set(x, "getSystemBars", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTimeouts(
+    inline def setGetTimeouts(
       value: /* args */ Parameters[js.Function0[Timeouts]] => js.Promise[ReturnType[js.Function0[Timeouts]]]
     ): Self = StObject.set(x, "getTimeouts", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTitle(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getTitle", js.Any.fromFunction1(value))
+    inline def setGetTitle(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetUrl(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getUrl", js.Any.fromFunction1(value))
+    inline def setGetUrl(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWindowHandle(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getWindowHandle", js.Any.fromFunction1(value))
+    inline def setGetWindowHandle(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "getWindowHandle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWindowHandles(
+    inline def setGetWindowHandles(
       value: /* args */ Parameters[js.Function0[js.Array[String]]] => js.Promise[ReturnType[js.Function0[js.Array[String]]]]
     ): Self = StObject.set(x, "getWindowHandles", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWindowPosition(
+    inline def setGetWindowPosition(
       value: /* args */ Parameters[js.Function0[ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function0[ProtocolCommandResponse]]]
     ): Self = StObject.set(x, "getWindowPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWindowRect(
+    inline def setGetWindowRect(
       value: /* args */ Parameters[js.Function0[RectReturn]] => js.Promise[ReturnType[js.Function0[RectReturn]]]
     ): Self = StObject.set(x, "getWindowRect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGridProxyDetails(
+    inline def setGridProxyDetails(
       value: /* args */ Parameters[js.Function1[/* id */ String, ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function1[/* id */ String, ProtocolCommandResponse]]]
     ): Self = StObject.set(x, "gridProxyDetails", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGridTestSession(
+    inline def setGridTestSession(
       value: /* args */ Parameters[js.Function1[/* session */ String, ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function1[/* session */ String, ProtocolCommandResponse]]]
     ): Self = StObject.set(x, "gridTestSession", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGsmCall(
+    inline def setGsmCall(
       value: /* args */ Parameters[js.Function2[/* phoneNumber */ String, /* action */ String, Unit]] => js.Promise[ReturnType[js.Function2[/* phoneNumber */ String, /* action */ String, Unit]]]
     ): Self = StObject.set(x, "gsmCall", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGsmSignal(
+    inline def setGsmSignal(
       value: /* args */ Parameters[
           js.Function2[/* signalStrength */ String, /* signalStrengh */ js.UndefOr[String], Unit]
         ] => js.Promise[
@@ -4006,13 +3900,11 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "gsmSignal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGsmVoice(
+    inline def setGsmVoice(
       value: /* args */ Parameters[js.Function1[/* state */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* state */ String, Unit]]]
     ): Self = StObject.set(x, "gsmVoice", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHideKeyboard(
+    inline def setHideKeyboard(
       value: /* args */ Parameters[
           js.Function4[
             /* strategy */ js.UndefOr[String], 
@@ -4034,23 +3926,19 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "hideKeyboard", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInstallApp(
+    inline def setInstallApp(
       value: /* args */ Parameters[js.Function1[/* appPath */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* appPath */ String, Unit]]]
     ): Self = StObject.set(x, "installApp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInterceptRequest(
+    inline def setInterceptRequest(
       value: /* args */ Parameters[js.Function1[/* rule */ js.Object, Unit]] => js.Promise[ReturnType[js.Function1[/* rule */ js.Object, Unit]]]
     ): Self = StObject.set(x, "interceptRequest", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsAlertOpen(
+    inline def setIsAlertOpen(
       value: /* args */ Parameters[js.Function0[Boolean]] => js.Promise[ReturnType[js.Function0[Boolean]]]
     ): Self = StObject.set(x, "isAlertOpen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsAppInstalled(
+    inline def setIsAppInstalled(
       value: /* args */ Parameters[
           js.Function2[/* appId */ js.UndefOr[String], /* bundleId */ js.UndefOr[String], Boolean]
         ] => js.Promise[
@@ -4060,71 +3948,57 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "isAppInstalled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsAutoReporting(
+    inline def setIsAutoReporting(
       value: /* args */ Parameters[js.Function0[Boolean]] => js.Promise[ReturnType[js.Function0[Boolean]]]
     ): Self = StObject.set(x, "isAutoReporting", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsElementDisplayed(
+    inline def setIsElementDisplayed(
       value: /* args */ Parameters[js.Function1[/* elementId */ String, Boolean]] => js.Promise[ReturnType[js.Function1[/* elementId */ String, Boolean]]]
     ): Self = StObject.set(x, "isElementDisplayed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsElementEnabled(
+    inline def setIsElementEnabled(
       value: /* args */ Parameters[js.Function1[/* elementId */ String, Boolean]] => js.Promise[ReturnType[js.Function1[/* elementId */ String, Boolean]]]
     ): Self = StObject.set(x, "isElementEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsElementSelected(
+    inline def setIsElementSelected(
       value: /* args */ Parameters[js.Function1[/* elementId */ String, Boolean]] => js.Promise[ReturnType[js.Function1[/* elementId */ String, Boolean]]]
     ): Self = StObject.set(x, "isElementSelected", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsIMEActivated(
+    inline def setIsIMEActivated(
       value: /* args */ Parameters[js.Function0[Boolean]] => js.Promise[ReturnType[js.Function0[Boolean]]]
     ): Self = StObject.set(x, "isIMEActivated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsKeyboardShown(
+    inline def setIsKeyboardShown(
       value: /* args */ Parameters[js.Function0[Boolean]] => js.Promise[ReturnType[js.Function0[Boolean]]]
     ): Self = StObject.set(x, "isKeyboardShown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsLoading(
+    inline def setIsLoading(
       value: /* args */ Parameters[js.Function0[Boolean]] => js.Promise[ReturnType[js.Function0[Boolean]]]
     ): Self = StObject.set(x, "isLoading", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsLocked(
+    inline def setIsLocked(
       value: /* args */ Parameters[js.Function0[Boolean]] => js.Promise[ReturnType[js.Function0[Boolean]]]
     ): Self = StObject.set(x, "isLocked", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setJankinessCheck(
+    inline def setJankinessCheck(
       value: /* args */ Parameters[js.Function0[ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function0[ProtocolCommandResponse]]]
     ): Self = StObject.set(x, "jankinessCheck", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLaunchApp(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "launchApp", js.Any.fromFunction1(value))
+    inline def setLaunchApp(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "launchApp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLaunchChromeApp(
+    inline def setLaunchChromeApp(
       value: /* args */ Parameters[js.Function1[/* id */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* id */ String, Unit]]]
     ): Self = StObject.set(x, "launchChromeApp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLock(
+    inline def setLock(
       value: /* args */ Parameters[js.Function1[/* seconds */ js.UndefOr[Double], Unit]] => js.Promise[ReturnType[js.Function1[/* seconds */ js.UndefOr[Double], Unit]]]
     ): Self = StObject.set(x, "lock", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLogEvent(
+    inline def setLogEvent(
       value: /* args */ Parameters[js.Function2[/* vendor */ String, /* event */ String, Unit]] => js.Promise[ReturnType[js.Function2[/* vendor */ String, /* event */ String, Unit]]]
     ): Self = StObject.set(x, "logEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLongPressKeyCode(
+    inline def setLongPressKeyCode(
       value: /* args */ Parameters[
           js.Function3[
             /* keycode */ Double, 
@@ -4144,23 +4018,19 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "longPressKeyCode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setManageSeleniumHubLifecycle(
+    inline def setManageSeleniumHubLifecycle(
       value: /* args */ Parameters[js.Function1[/* action */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* action */ String, Unit]]]
     ): Self = StObject.set(x, "manageSeleniumHubLifecycle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMaximizeWindow(
+    inline def setMaximizeWindow(
       value: /* args */ Parameters[js.Function0[RectReturn]] => js.Promise[ReturnType[js.Function0[RectReturn]]]
     ): Self = StObject.set(x, "maximizeWindow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMinimizeWindow(
+    inline def setMinimizeWindow(
       value: /* args */ Parameters[js.Function0[RectReturn]] => js.Promise[ReturnType[js.Function0[RectReturn]]]
     ): Self = StObject.set(x, "minimizeWindow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMockRequest(
+    inline def setMockRequest(
       value: /* args */ Parameters[
           js.Function2[/* url */ String, /* filterOptions */ js.UndefOr[js.Object], ProtocolCommandResponse]
         ] => js.Promise[
@@ -4170,8 +4040,7 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "mockRequest", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMoveToElement(
+    inline def setMoveToElement(
       value: /* args */ Parameters[
           js.Function3[
             /* element */ js.UndefOr[String | Null], 
@@ -4191,49 +4060,39 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "moveToElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMultiTouchPerform(
+    inline def setMultiTouchPerform(
       value: /* args */ Parameters[js.Function1[/* actions */ js.Array[js.Object], Unit]] => js.Promise[ReturnType[js.Function1[/* actions */ js.Array[js.Object], Unit]]]
     ): Self = StObject.set(x, "multiTouchPerform", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNavigateTo(
+    inline def setNavigateTo(
       value: /* args */ Parameters[js.Function1[/* url */ String, String]] => js.Promise[ReturnType[js.Function1[/* url */ String, String]]]
     ): Self = StObject.set(x, "navigateTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNewSession(
+    inline def setNewSession(
       value: /* args */ Parameters[js.Function1[/* capabilities */ js.Object, SessionReturn]] => js.Promise[ReturnType[js.Function1[/* capabilities */ js.Object, SessionReturn]]]
     ): Self = StObject.set(x, "newSession", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpenNotifications(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "openNotifications", js.Any.fromFunction1(value))
+    inline def setOpenNotifications(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "openNotifications", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPerformActions(
+    inline def setPerformActions(
       value: /* args */ Parameters[js.Function1[/* actions */ js.Array[js.Object], Unit]] => js.Promise[ReturnType[js.Function1[/* actions */ js.Array[js.Object], Unit]]]
     ): Self = StObject.set(x, "performActions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPositionClick(
+    inline def setPositionClick(
       value: /* args */ Parameters[js.Function1[/* button */ js.UndefOr[Double], Unit]] => js.Promise[ReturnType[js.Function1[/* button */ js.UndefOr[Double], Unit]]]
     ): Self = StObject.set(x, "positionClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPositionDoubleClick(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "positionDoubleClick", js.Any.fromFunction1(value))
+    inline def setPositionDoubleClick(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "positionDoubleClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPowerAC(
+    inline def setPowerAC(
       value: /* args */ Parameters[js.Function1[/* state */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* state */ String, Unit]]]
     ): Self = StObject.set(x, "powerAC", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPowerCapacity(
+    inline def setPowerCapacity(
       value: /* args */ Parameters[js.Function1[/* percent */ Double, Unit]] => js.Promise[ReturnType[js.Function1[/* percent */ Double, Unit]]]
     ): Self = StObject.set(x, "powerCapacity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPressKeyCode(
+    inline def setPressKeyCode(
       value: /* args */ Parameters[
           js.Function3[
             /* keycode */ Double, 
@@ -4253,8 +4112,7 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "pressKeyCode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrintPage(
+    inline def setPrintPage(
       value: /* args */ Parameters[
           js.Function11[
             /* orientation */ js.UndefOr[String], 
@@ -4290,23 +4148,19 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "printPage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPullFile(
+    inline def setPullFile(
       value: /* args */ Parameters[js.Function1[/* path */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* path */ String, Unit]]]
     ): Self = StObject.set(x, "pullFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPullFolder(
+    inline def setPullFolder(
       value: /* args */ Parameters[js.Function1[/* path */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* path */ String, Unit]]]
     ): Self = StObject.set(x, "pullFolder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPushFile(
+    inline def setPushFile(
       value: /* args */ Parameters[js.Function2[/* path */ String, /* data */ String, Unit]] => js.Promise[ReturnType[js.Function2[/* path */ String, /* data */ String, Unit]]]
     ): Self = StObject.set(x, "pushFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryAppState(
+    inline def setQueryAppState(
       value: /* args */ Parameters[
           js.Function2[/* appId */ js.UndefOr[String], /* bundleId */ js.UndefOr[String], Double]
         ] => js.Promise[
@@ -4316,19 +4170,15 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "queryAppState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReceiveAsyncResponse(
+    inline def setReceiveAsyncResponse(
       value: /* args */ Parameters[js.Function1[/* response */ js.Object, Unit]] => js.Promise[ReturnType[js.Function1[/* response */ js.Object, Unit]]]
     ): Self = StObject.set(x, "receiveAsyncResponse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefresh(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
+    inline def setRefresh(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReleaseActions(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "releaseActions", js.Any.fromFunction1(value))
+    inline def setReleaseActions(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "releaseActions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveApp(
+    inline def setRemoveApp(
       value: /* args */ Parameters[
           js.Function2[/* appId */ js.UndefOr[String], /* bundleId */ js.UndefOr[String], Unit]
         ] => js.Promise[
@@ -4338,24 +4188,19 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "removeApp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceValue(
+    inline def setReplaceValue(
       value: /* args */ Parameters[js.Function2[/* elementId */ String, /* value */ String, Unit]] => js.Promise[ReturnType[js.Function2[/* elementId */ String, /* value */ String, Unit]]]
     ): Self = StObject.set(x, "replaceValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReset(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+    inline def setReset(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRespondMock(
+    inline def setRespondMock(
       value: /* args */ Parameters[js.Function2[/* mockId */ String, /* payload */ js.Object, Unit]] => js.Promise[ReturnType[js.Function2[/* mockId */ String, /* payload */ js.Object, Unit]]]
     ): Self = StObject.set(x, "respondMock", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResume(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "resume", js.Any.fromFunction1(value))
+    inline def setResume(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "resume", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRotateDevice(
+    inline def setRotateDevice(
       value: /* args */ Parameters[
           js.Function7[
             /* x */ Double, 
@@ -4383,50 +4228,41 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "rotateDevice", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendAlertText(
+    inline def setSendAlertText(
       value: /* args */ Parameters[js.Function1[/* text */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* text */ String, Unit]]]
     ): Self = StObject.set(x, "sendAlertText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendCommand(
+    inline def setSendCommand(
       value: /* args */ Parameters[js.Function2[/* cmd */ String, /* params */ js.Object, Unit]] => js.Promise[ReturnType[js.Function2[/* cmd */ String, /* params */ js.Object, Unit]]]
     ): Self = StObject.set(x, "sendCommand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendCommandAndGetResult(
+    inline def setSendCommandAndGetResult(
       value: /* args */ Parameters[js.Function2[/* cmd */ String, /* params */ js.Object, js.Any]] => js.Promise[ReturnType[js.Function2[/* cmd */ String, /* params */ js.Object, js.Any]]]
     ): Self = StObject.set(x, "sendCommandAndGetResult", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendKeyEvent(
+    inline def setSendKeyEvent(
       value: /* args */ Parameters[js.Function2[/* keycode */ String, /* metastate */ js.UndefOr[String], Unit]] => js.Promise[
           ReturnType[js.Function2[/* keycode */ String, /* metastate */ js.UndefOr[String], Unit]]
         ]
     ): Self = StObject.set(x, "sendKeyEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendKeys(
+    inline def setSendKeys(
       value: /* args */ Parameters[js.Function1[/* value */ js.Array[String], Unit]] => js.Promise[ReturnType[js.Function1[/* value */ js.Array[String], Unit]]]
     ): Self = StObject.set(x, "sendKeys", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendSms(
+    inline def setSendSms(
       value: /* args */ Parameters[js.Function2[/* phoneNumber */ String, /* message */ String, Unit]] => js.Promise[ReturnType[js.Function2[/* phoneNumber */ String, /* message */ String, Unit]]]
     ): Self = StObject.set(x, "sendSms", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAsyncTimeout(
+    inline def setSetAsyncTimeout(
       value: /* args */ Parameters[js.Function1[/* ms */ Double, Unit]] => js.Promise[ReturnType[js.Function1[/* ms */ Double, Unit]]]
     ): Self = StObject.set(x, "setAsyncTimeout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAutoReporting(
+    inline def setSetAutoReporting(
       value: /* args */ Parameters[js.Function1[/* enabled */ Boolean, js.Object | Null]] => js.Promise[ReturnType[js.Function1[/* enabled */ Boolean, js.Object | Null]]]
     ): Self = StObject.set(x, "setAutoReporting", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetClipboard(
+    inline def setSetClipboard(
       value: /* args */ Parameters[
           js.Function3[
             /* content */ String, 
@@ -4446,23 +4282,19 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "setClipboard", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGeoLocation(
+    inline def setSetGeoLocation(
       value: /* args */ Parameters[js.Function1[/* location */ js.Object, Unit]] => js.Promise[ReturnType[js.Function1[/* location */ js.Object, Unit]]]
     ): Self = StObject.set(x, "setGeoLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetImplicitTimeout(
+    inline def setSetImplicitTimeout(
       value: /* args */ Parameters[js.Function1[/* ms */ Double, Unit]] => js.Promise[ReturnType[js.Function1[/* ms */ Double, Unit]]]
     ): Self = StObject.set(x, "setImplicitTimeout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLocalStorage(
+    inline def setSetLocalStorage(
       value: /* args */ Parameters[js.Function2[/* key */ String, /* value */ String, Unit]] => js.Promise[ReturnType[js.Function2[/* key */ String, /* value */ String, Unit]]]
     ): Self = StObject.set(x, "setLocalStorage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNetworkConditions(
+    inline def setSetNetworkConditions(
       value: /* args */ Parameters[
           js.Function2[/* network_conditions */ js.Object, /* network_name */ js.UndefOr[String], Unit]
         ] => js.Promise[
@@ -4472,23 +4304,19 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "setNetworkConditions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNetworkConnection(
+    inline def setSetNetworkConnection(
       value: /* args */ Parameters[js.Function1[/* type */ Double, Unit]] => js.Promise[ReturnType[js.Function1[/* type */ Double, Unit]]]
     ): Self = StObject.set(x, "setNetworkConnection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOrientation(
+    inline def setSetOrientation(
       value: /* args */ Parameters[js.Function1[/* orientation */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* orientation */ String, Unit]]]
     ): Self = StObject.set(x, "setOrientation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSessionStorage(
+    inline def setSetSessionStorage(
       value: /* args */ Parameters[js.Function2[/* key */ String, /* value */ String, Unit]] => js.Promise[ReturnType[js.Function2[/* key */ String, /* value */ String, Unit]]]
     ): Self = StObject.set(x, "setSessionStorage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTimeouts(
+    inline def setSetTimeouts(
       value: /* args */ Parameters[
           js.Function3[
             /* implicit */ js.UndefOr[Double], 
@@ -4508,20 +4336,17 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "setTimeouts", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueImmediate(
+    inline def setSetValueImmediate(
       value: /* args */ Parameters[js.Function2[/* elementId */ String, /* value */ String, Unit]] => js.Promise[ReturnType[js.Function2[/* elementId */ String, /* value */ String, Unit]]]
     ): Self = StObject.set(x, "setValueImmediate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWindowPosition(
+    inline def setSetWindowPosition(
       value: /* args */ Parameters[js.Function2[/* x */ Double, /* y */ Double, ProtocolCommandResponse]] => js.Promise[
           ReturnType[js.Function2[/* x */ Double, /* y */ Double, ProtocolCommandResponse]]
         ]
     ): Self = StObject.set(x, "setWindowPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWindowRect(
+    inline def setSetWindowRect(
       value: /* args */ Parameters[
           js.Function4[
             /* x */ Double | Null, 
@@ -4543,14 +4368,11 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "setWindowRect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShake(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "shake", js.Any.fromFunction1(value))
+    inline def setShake(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "shake", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShutdown(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "shutdown", js.Any.fromFunction1(value))
+    inline def setShutdown(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "shutdown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartActivity(
+    inline def setStartActivity(
       value: /* args */ Parameters[
           js.Function9[
             /* appPackage */ String, 
@@ -4582,18 +4404,15 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "startActivity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartRecordingScreen(
+    inline def setStartRecordingScreen(
       value: /* args */ Parameters[js.Function1[/* options */ js.UndefOr[js.Object], Unit]] => js.Promise[ReturnType[js.Function1[/* options */ js.UndefOr[js.Object], Unit]]]
     ): Self = StObject.set(x, "startRecordingScreen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStatus(
+    inline def setStatus(
       value: /* args */ Parameters[js.Function0[StatusReturn]] => js.Promise[ReturnType[js.Function0[StatusReturn]]]
     ): Self = StObject.set(x, "status", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStopRecordingScreen(
+    inline def setStopRecordingScreen(
       value: /* args */ Parameters[
           js.Function4[
             /* remotePath */ js.UndefOr[String], 
@@ -4615,41 +4434,33 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "stopRecordingScreen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSwitchContext(
+    inline def setSwitchContext(
       value: /* args */ Parameters[js.Function1[/* name */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* name */ String, Unit]]]
     ): Self = StObject.set(x, "switchContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSwitchToFrame(
+    inline def setSwitchToFrame(
       value: /* args */ Parameters[js.Function1[/* id */ Double | js.Object | Null, Unit]] => js.Promise[ReturnType[js.Function1[/* id */ Double | js.Object | Null, Unit]]]
     ): Self = StObject.set(x, "switchToFrame", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSwitchToParentFrame(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "switchToParentFrame", js.Any.fromFunction1(value))
+    inline def setSwitchToParentFrame(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "switchToParentFrame", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSwitchToWindow(
+    inline def setSwitchToWindow(
       value: /* args */ Parameters[js.Function1[/* handle */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* handle */ String, Unit]]]
     ): Self = StObject.set(x, "switchToWindow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTakeElementScreenshot(
+    inline def setTakeElementScreenshot(
       value: /* args */ Parameters[js.Function2[/* elementId */ String, /* scroll */ js.UndefOr[Boolean], String]] => js.Promise[
           ReturnType[js.Function2[/* elementId */ String, /* scroll */ js.UndefOr[Boolean], String]]
         ]
     ): Self = StObject.set(x, "takeElementScreenshot", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTakeHeapSnapshot(
+    inline def setTakeHeapSnapshot(
       value: /* args */ Parameters[js.Function0[ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function0[ProtocolCommandResponse]]]
     ): Self = StObject.set(x, "takeHeapSnapshot", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTakeScreenshot(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "takeScreenshot", js.Any.fromFunction1(value))
+    inline def setTakeScreenshot(value: /* args */ Parameters[js.Function0[String]] => js.Promise[ReturnType[js.Function0[String]]]): Self = StObject.set(x, "takeScreenshot", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTerminateApp(
+    inline def setTerminateApp(
       value: /* args */ Parameters[
           js.Function2[/* appId */ js.UndefOr[String], /* bundleId */ js.UndefOr[String], Unit]
         ] => js.Promise[
@@ -4659,53 +4470,41 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "terminateApp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setThrottleCPU(
+    inline def setThrottleCPU(
       value: /* args */ Parameters[js.Function1[/* rate */ Double, Unit]] => js.Promise[ReturnType[js.Function1[/* rate */ Double, Unit]]]
     ): Self = StObject.set(x, "throttleCPU", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setThrottleNetwork(
+    inline def setThrottleNetwork(
       value: /* args */ Parameters[js.Function1[/* condition */ String | js.Object, Unit]] => js.Promise[ReturnType[js.Function1[/* condition */ String | js.Object, Unit]]]
     ): Self = StObject.set(x, "throttleNetwork", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleAirplaneMode(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "toggleAirplaneMode", js.Any.fromFunction1(value))
+    inline def setToggleAirplaneMode(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "toggleAirplaneMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleData(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "toggleData", js.Any.fromFunction1(value))
+    inline def setToggleData(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "toggleData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleEnrollTouchId(
+    inline def setToggleEnrollTouchId(
       value: /* args */ Parameters[js.Function1[/* enabled */ js.UndefOr[Boolean], Unit]] => js.Promise[ReturnType[js.Function1[/* enabled */ js.UndefOr[Boolean], Unit]]]
     ): Self = StObject.set(x, "toggleEnrollTouchId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleLocationServices(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "toggleLocationServices", js.Any.fromFunction1(value))
+    inline def setToggleLocationServices(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "toggleLocationServices", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleNetworkSpeed(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "toggleNetworkSpeed", js.Any.fromFunction1(value))
+    inline def setToggleNetworkSpeed(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "toggleNetworkSpeed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleWiFi(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "toggleWiFi", js.Any.fromFunction1(value))
+    inline def setToggleWiFi(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "toggleWiFi", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTouchClick(
+    inline def setTouchClick(
       value: /* args */ Parameters[js.Function1[/* element */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* element */ String, Unit]]]
     ): Self = StObject.set(x, "touchClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTouchDoubleClick(
+    inline def setTouchDoubleClick(
       value: /* args */ Parameters[js.Function1[/* element */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* element */ String, Unit]]]
     ): Self = StObject.set(x, "touchDoubleClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTouchDown(
+    inline def setTouchDown(
       value: /* args */ Parameters[js.Function2[/* x */ Double, /* y */ Double, Unit]] => js.Promise[ReturnType[js.Function2[/* x */ Double, /* y */ Double, Unit]]]
     ): Self = StObject.set(x, "touchDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTouchFlick(
+    inline def setTouchFlick(
       value: /* args */ Parameters[
           js.Function6[
             /* xoffset */ js.UndefOr[Double], 
@@ -4731,35 +4530,29 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "touchFlick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTouchId(
+    inline def setTouchId(
       value: /* args */ Parameters[js.Function1[/* match */ Boolean, Unit]] => js.Promise[ReturnType[js.Function1[/* match */ Boolean, Unit]]]
     ): Self = StObject.set(x, "touchId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTouchLongClick(
+    inline def setTouchLongClick(
       value: /* args */ Parameters[js.Function1[/* element */ String, Unit]] => js.Promise[ReturnType[js.Function1[/* element */ String, Unit]]]
     ): Self = StObject.set(x, "touchLongClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTouchMove(
+    inline def setTouchMove(
       value: /* args */ Parameters[js.Function2[/* x */ Double, /* y */ Double, Unit]] => js.Promise[ReturnType[js.Function2[/* x */ Double, /* y */ Double, Unit]]]
     ): Self = StObject.set(x, "touchMove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTouchPerform(
+    inline def setTouchPerform(
       value: /* args */ Parameters[js.Function1[/* actions */ js.Array[js.Object], Unit]] => js.Promise[ReturnType[js.Function1[/* actions */ js.Array[js.Object], Unit]]]
     ): Self = StObject.set(x, "touchPerform", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTouchPinch(
+    inline def setTouchPinch(
       value: /* args */ Parameters[js.Function3[/* x */ Double, /* y */ Double, /* scale */ Double, Unit]] => js.Promise[
           ReturnType[js.Function3[/* x */ Double, /* y */ Double, /* scale */ Double, Unit]]
         ]
     ): Self = StObject.set(x, "touchPinch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTouchScroll(
+    inline def setTouchScroll(
       value: /* args */ Parameters[
           js.Function3[/* xoffset */ Double, /* yoffset */ Double, /* element */ js.UndefOr[String], Unit]
         ] => js.Promise[
@@ -4769,26 +4562,21 @@ object AsyncClient {
         ]
     ): Self = StObject.set(x, "touchScroll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTouchUp(
+    inline def setTouchUp(
       value: /* args */ Parameters[js.Function2[/* x */ Double, /* y */ Double, Unit]] => js.Promise[ReturnType[js.Function2[/* x */ Double, /* y */ Double, Unit]]]
     ): Self = StObject.set(x, "touchUp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnlock(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "unlock", js.Any.fromFunction1(value))
+    inline def setUnlock(value: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]]): Self = StObject.set(x, "unlock", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateSettings(
+    inline def setUpdateSettings(
       value: /* args */ Parameters[js.Function1[/* settings */ js.Object, Unit]] => js.Promise[ReturnType[js.Function1[/* settings */ js.Object, Unit]]]
     ): Self = StObject.set(x, "updateSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_getWindowSize(
+    inline def set_getWindowSize(
       value: /* args */ Parameters[js.Function0[ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function0[ProtocolCommandResponse]]]
     ): Self = StObject.set(x, "_getWindowSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_setWindowSize(
+    inline def set_setWindowSize(
       value: /* args */ Parameters[js.Function2[/* width */ Double, /* height */ Double, Unit]] => js.Promise[ReturnType[js.Function2[/* width */ Double, /* height */ Double, Unit]]]
     ): Self = StObject.set(x, "_setWindowSize", js.Any.fromFunction1(value))
   }

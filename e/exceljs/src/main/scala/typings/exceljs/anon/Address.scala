@@ -16,25 +16,19 @@ trait Address extends StObject {
 }
 object Address {
   
-  @scala.inline
-  def apply(address: String, col: String, row: String, sheetName: String): Address = {
+  inline def apply(address: String, col: String, row: String, sheetName: String): Address = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], sheetName = sheetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }
   
-  @scala.inline
-  implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+  extension [Self <: Address](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCol(value: String): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+    inline def setCol(value: String): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
+    inline def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
   }
 }

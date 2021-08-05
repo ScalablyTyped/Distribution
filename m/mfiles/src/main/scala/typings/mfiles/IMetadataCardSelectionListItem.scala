@@ -18,28 +18,21 @@ trait IMetadataCardSelectionListItem extends StObject {
 }
 object IMetadataCardSelectionListItem {
   
-  @scala.inline
-  def apply(ChildItems: js.Any, HasParent: Boolean, ParentID: Double, Selectable: Boolean, Value: js.Any): IMetadataCardSelectionListItem = {
+  inline def apply(ChildItems: js.Any, HasParent: Boolean, ParentID: Double, Selectable: Boolean, Value: js.Any): IMetadataCardSelectionListItem = {
     val __obj = js.Dynamic.literal(ChildItems = ChildItems.asInstanceOf[js.Any], HasParent = HasParent.asInstanceOf[js.Any], ParentID = ParentID.asInstanceOf[js.Any], Selectable = Selectable.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMetadataCardSelectionListItem]
   }
   
-  @scala.inline
-  implicit class IMetadataCardSelectionListItemMutableBuilder[Self <: IMetadataCardSelectionListItem] (val x: Self) extends AnyVal {
+  extension [Self <: IMetadataCardSelectionListItem](x: Self) {
     
-    @scala.inline
-    def setChildItems(value: js.Any): Self = StObject.set(x, "ChildItems", value.asInstanceOf[js.Any])
+    inline def setChildItems(value: js.Any): Self = StObject.set(x, "ChildItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasParent(value: Boolean): Self = StObject.set(x, "HasParent", value.asInstanceOf[js.Any])
+    inline def setHasParent(value: Boolean): Self = StObject.set(x, "HasParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentID(value: Double): Self = StObject.set(x, "ParentID", value.asInstanceOf[js.Any])
+    inline def setParentID(value: Double): Self = StObject.set(x, "ParentID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectable(value: Boolean): Self = StObject.set(x, "Selectable", value.asInstanceOf[js.Any])
+    inline def setSelectable(value: Boolean): Self = StObject.set(x, "Selectable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

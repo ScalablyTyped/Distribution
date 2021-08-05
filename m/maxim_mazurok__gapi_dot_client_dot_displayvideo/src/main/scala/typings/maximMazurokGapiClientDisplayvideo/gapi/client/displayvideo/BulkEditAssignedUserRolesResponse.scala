@@ -11,22 +11,17 @@ trait BulkEditAssignedUserRolesResponse extends StObject {
 }
 object BulkEditAssignedUserRolesResponse {
   
-  @scala.inline
-  def apply(): BulkEditAssignedUserRolesResponse = {
+  inline def apply(): BulkEditAssignedUserRolesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkEditAssignedUserRolesResponse]
   }
   
-  @scala.inline
-  implicit class BulkEditAssignedUserRolesResponseMutableBuilder[Self <: BulkEditAssignedUserRolesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BulkEditAssignedUserRolesResponse](x: Self) {
     
-    @scala.inline
-    def setCreatedAssignedUserRoles(value: js.Array[AssignedUserRole]): Self = StObject.set(x, "createdAssignedUserRoles", value.asInstanceOf[js.Any])
+    inline def setCreatedAssignedUserRoles(value: js.Array[AssignedUserRole]): Self = StObject.set(x, "createdAssignedUserRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAssignedUserRolesUndefined: Self = StObject.set(x, "createdAssignedUserRoles", js.undefined)
+    inline def setCreatedAssignedUserRolesUndefined: Self = StObject.set(x, "createdAssignedUserRoles", js.undefined)
     
-    @scala.inline
-    def setCreatedAssignedUserRolesVarargs(value: AssignedUserRole*): Self = StObject.set(x, "createdAssignedUserRoles", js.Array(value :_*))
+    inline def setCreatedAssignedUserRolesVarargs(value: AssignedUserRole*): Self = StObject.set(x, "createdAssignedUserRoles", js.Array(value :_*))
   }
 }

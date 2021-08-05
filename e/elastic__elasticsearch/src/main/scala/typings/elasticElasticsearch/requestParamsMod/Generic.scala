@@ -20,52 +20,37 @@ trait Generic extends StObject {
 }
 object Generic {
   
-  @scala.inline
-  def apply(): Generic = {
+  inline def apply(): Generic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Generic]
   }
   
-  @scala.inline
-  implicit class GenericMutableBuilder[Self <: Generic] (val x: Self) extends AnyVal {
+  extension [Self <: Generic](x: Self) {
     
-    @scala.inline
-    def setError_trace(value: Boolean): Self = StObject.set(x, "error_trace", value.asInstanceOf[js.Any])
+    inline def setError_trace(value: Boolean): Self = StObject.set(x, "error_trace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError_traceUndefined: Self = StObject.set(x, "error_trace", js.undefined)
+    inline def setError_traceUndefined: Self = StObject.set(x, "error_trace", js.undefined)
     
-    @scala.inline
-    def setFilter_path(value: String | js.Array[String]): Self = StObject.set(x, "filter_path", value.asInstanceOf[js.Any])
+    inline def setFilter_path(value: String | js.Array[String]): Self = StObject.set(x, "filter_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter_pathUndefined: Self = StObject.set(x, "filter_path", js.undefined)
+    inline def setFilter_pathUndefined: Self = StObject.set(x, "filter_path", js.undefined)
     
-    @scala.inline
-    def setFilter_pathVarargs(value: String*): Self = StObject.set(x, "filter_path", js.Array(value :_*))
+    inline def setFilter_pathVarargs(value: String*): Self = StObject.set(x, "filter_path", js.Array(value :_*))
     
-    @scala.inline
-    def setHuman(value: Boolean): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
+    inline def setHuman(value: Boolean): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanUndefined: Self = StObject.set(x, "human", js.undefined)
+    inline def setHumanUndefined: Self = StObject.set(x, "human", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
+    inline def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
+    inline def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

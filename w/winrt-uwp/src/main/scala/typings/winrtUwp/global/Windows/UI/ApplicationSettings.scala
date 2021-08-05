@@ -36,13 +36,11 @@ object ApplicationSettings {
       * @return The account settings pane.
       */
     /* static member */
-    @scala.inline
-    def getForCurrentView(): typings.winrtUwp.Windows.UI.ApplicationSettings.AccountsSettingsPane = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.ApplicationSettings.AccountsSettingsPane]
+    inline def getForCurrentView(): typings.winrtUwp.Windows.UI.ApplicationSettings.AccountsSettingsPane = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.ApplicationSettings.AccountsSettingsPane]
     
     /** Displays the account settings pane. */
     /* static member */
-    @scala.inline
-    def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
+    inline def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
   }
   
   /** Provides data for the AccountCommandsRequested event. */
@@ -164,8 +162,7 @@ object ApplicationSettings {
     @JSGlobal("Windows.UI.ApplicationSettings.SettingsCommand.accountsCommand")
     @js.native
     def accountsCommand: typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsCommand = js.native
-    @scala.inline
-    def accountsCommand_=(x: typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsCommand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accountsCommand")(x.asInstanceOf[js.Any])
+    inline def accountsCommand_=(x: typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsCommand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accountsCommand")(x.asInstanceOf[js.Any])
   }
   
   /** Specifies the edge of the screen where the Settings charms appear. */
@@ -198,21 +195,18 @@ object ApplicationSettings {
     @JSGlobal("Windows.UI.ApplicationSettings.SettingsPane.edge")
     @js.native
     def edge: SettingsEdgeLocation = js.native
-    @scala.inline
-    def edge_=(x: SettingsEdgeLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("edge")(x.asInstanceOf[js.Any])
+    inline def edge_=(x: SettingsEdgeLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("edge")(x.asInstanceOf[js.Any])
     
     /**
       * Gets a SettingsPane object that is associated with the current app view (that is, with CoreWindow ).
       * @return The settings pane.
       */
     /* static member */
-    @scala.inline
-    def getForCurrentView(): typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsPane = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsPane]
+    inline def getForCurrentView(): typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsPane = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.ApplicationSettings.SettingsPane]
     
     /** Displays the Settings Charm pane to the user. */
     /* static member */
-    @scala.inline
-    def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
+    inline def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
   }
   
   /** Contains properties that are only available during the CommandsRequested event. */

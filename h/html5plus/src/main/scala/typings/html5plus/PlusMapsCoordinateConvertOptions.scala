@@ -30,19 +30,15 @@ trait PlusMapsCoordinateConvertOptions extends StObject {
 }
 object PlusMapsCoordinateConvertOptions {
   
-  @scala.inline
-  def apply(): PlusMapsCoordinateConvertOptions = {
+  inline def apply(): PlusMapsCoordinateConvertOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusMapsCoordinateConvertOptions]
   }
   
-  @scala.inline
-  implicit class PlusMapsCoordinateConvertOptionsMutableBuilder[Self <: PlusMapsCoordinateConvertOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusMapsCoordinateConvertOptions](x: Self) {
     
-    @scala.inline
-    def setCoordType(value: wgs84 | gcj02 | bd09 | bd09ll): Self = StObject.set(x, "coordType", value.asInstanceOf[js.Any])
+    inline def setCoordType(value: wgs84 | gcj02 | bd09 | bd09ll): Self = StObject.set(x, "coordType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordTypeUndefined: Self = StObject.set(x, "coordType", js.undefined)
+    inline def setCoordTypeUndefined: Self = StObject.set(x, "coordType", js.undefined)
   }
 }

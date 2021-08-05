@@ -28,26 +28,20 @@ object releaseNotesMod {
   }
   object ReleaseNotesProps {
     
-    @scala.inline
-    def apply(didHitMaxWaitTime: Boolean, isLoaded: Boolean, setLoaded: Boolean => Unit, version: String): ReleaseNotesProps = {
+    inline def apply(didHitMaxWaitTime: Boolean, isLoaded: Boolean, setLoaded: Boolean => Unit, version: String): ReleaseNotesProps = {
       val __obj = js.Dynamic.literal(didHitMaxWaitTime = didHitMaxWaitTime.asInstanceOf[js.Any], isLoaded = isLoaded.asInstanceOf[js.Any], setLoaded = js.Any.fromFunction1(setLoaded), version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReleaseNotesProps]
     }
     
-    @scala.inline
-    implicit class ReleaseNotesPropsMutableBuilder[Self <: ReleaseNotesProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReleaseNotesProps](x: Self) {
       
-      @scala.inline
-      def setDidHitMaxWaitTime(value: Boolean): Self = StObject.set(x, "didHitMaxWaitTime", value.asInstanceOf[js.Any])
+      inline def setDidHitMaxWaitTime(value: Boolean): Self = StObject.set(x, "didHitMaxWaitTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoaded(value: Boolean): Self = StObject.set(x, "isLoaded", value.asInstanceOf[js.Any])
+      inline def setIsLoaded(value: Boolean): Self = StObject.set(x, "isLoaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetLoaded(value: Boolean => Unit): Self = StObject.set(x, "setLoaded", js.Any.fromFunction1(value))
+      inline def setSetLoaded(value: Boolean => Unit): Self = StObject.set(x, "setLoaded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

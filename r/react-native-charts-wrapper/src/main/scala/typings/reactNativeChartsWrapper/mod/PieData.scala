@@ -10,22 +10,17 @@ trait PieData extends StObject {
 }
 object PieData {
   
-  @scala.inline
-  def apply(): PieData = {
+  inline def apply(): PieData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PieData]
   }
   
-  @scala.inline
-  implicit class PieDataMutableBuilder[Self <: PieData] (val x: Self) extends AnyVal {
+  extension [Self <: PieData](x: Self) {
     
-    @scala.inline
-    def setDataSets(value: js.Array[PieDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
+    inline def setDataSets(value: js.Array[PieDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
+    inline def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
     
-    @scala.inline
-    def setDataSetsVarargs(value: PieDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
+    inline def setDataSetsVarargs(value: PieDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
   }
 }

@@ -21,8 +21,7 @@ object comonadMod {
   }
   object Comonad {
     
-    @scala.inline
-    def apply[W](
+    inline def apply[W](
       URI: W,
       extend: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<W, A> */ js.Any, js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<W, A> */ /* wa */ js.Any, 
@@ -35,11 +34,9 @@ object comonadMod {
       __obj.asInstanceOf[Comonad[W]]
     }
     
-    @scala.inline
-    implicit class ComonadMutableBuilder[Self <: Comonad[?], W] (val x: Self & Comonad[W]) extends AnyVal {
+    extension [Self <: Comonad[?], W](x: Self & Comonad[W]) {
       
-      @scala.inline
-      def setExtract(
+      inline def setExtract(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<W, A> */ js.Any => js.Any
       ): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
     }
@@ -55,8 +52,7 @@ object comonadMod {
   }
   object Comonad1 {
     
-    @scala.inline
-    def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       URI: W,
       extend: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<W, A> */ js.Any, js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<W, A> */ /* wa */ js.Any, 
@@ -69,11 +65,9 @@ object comonadMod {
       __obj.asInstanceOf[Comonad1[W]]
     }
     
-    @scala.inline
-    implicit class Comonad1MutableBuilder[Self <: Comonad1[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & Comonad1[W]) extends AnyVal {
+    extension [Self <: Comonad1[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & Comonad1[W]) {
       
-      @scala.inline
-      def setExtract(
+      inline def setExtract(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<W, A> */ js.Any => js.Any
       ): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
     }
@@ -89,8 +83,7 @@ object comonadMod {
   }
   object Comonad2 {
     
-    @scala.inline
-    def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       URI: W,
       extend: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<W, E, A> */ js.Any, js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<W, E, A> */ /* wa */ js.Any, 
@@ -103,11 +96,9 @@ object comonadMod {
       __obj.asInstanceOf[Comonad2[W]]
     }
     
-    @scala.inline
-    implicit class Comonad2MutableBuilder[Self <: Comonad2[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & Comonad2[W]) extends AnyVal {
+    extension [Self <: Comonad2[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & Comonad2[W]) {
       
-      @scala.inline
-      def setExtract(
+      inline def setExtract(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<W, E, A> */ js.Any => js.Any
       ): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
     }
@@ -123,8 +114,7 @@ object comonadMod {
   }
   object Comonad2C {
     
-    @scala.inline
-    def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       URI: W,
       _E: E,
       extend: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<W, E, A> */ js.Any, js.Function1[
@@ -138,11 +128,9 @@ object comonadMod {
       __obj.asInstanceOf[Comonad2C[W, E]]
     }
     
-    @scala.inline
-    implicit class Comonad2CMutableBuilder[Self <: Comonad2C[?, ?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (Comonad2C[W, E])) extends AnyVal {
+    extension [Self <: Comonad2C[?, ?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (Comonad2C[W, E])) {
       
-      @scala.inline
-      def setExtract(
+      inline def setExtract(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<W, E, A> */ js.Any => js.Any
       ): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
     }
@@ -158,8 +146,7 @@ object comonadMod {
   }
   object Comonad3 {
     
-    @scala.inline
-    def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    inline def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
       URI: W,
       extend: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<W, R, E, A> */ js.Any, js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<W, R, E, A> */ /* wa */ js.Any, 
@@ -172,11 +159,9 @@ object comonadMod {
       __obj.asInstanceOf[Comonad3[W]]
     }
     
-    @scala.inline
-    implicit class Comonad3MutableBuilder[Self <: Comonad3[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & Comonad3[W]) extends AnyVal {
+    extension [Self <: Comonad3[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & Comonad3[W]) {
       
-      @scala.inline
-      def setExtract(
+      inline def setExtract(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<W, R, E, A> */ js.Any => js.Any
       ): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
     }

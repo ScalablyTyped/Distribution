@@ -23,31 +23,23 @@ trait ApprovalThresholdPolicy extends StObject {
 }
 object ApprovalThresholdPolicy {
   
-  @scala.inline
-  def apply(): ApprovalThresholdPolicy = {
+  inline def apply(): ApprovalThresholdPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApprovalThresholdPolicy]
   }
   
-  @scala.inline
-  implicit class ApprovalThresholdPolicyMutableBuilder[Self <: ApprovalThresholdPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ApprovalThresholdPolicy](x: Self) {
     
-    @scala.inline
-    def setProposalDurationInHours(value: ProposalDurationInt): Self = StObject.set(x, "ProposalDurationInHours", value.asInstanceOf[js.Any])
+    inline def setProposalDurationInHours(value: ProposalDurationInt): Self = StObject.set(x, "ProposalDurationInHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalDurationInHoursUndefined: Self = StObject.set(x, "ProposalDurationInHours", js.undefined)
+    inline def setProposalDurationInHoursUndefined: Self = StObject.set(x, "ProposalDurationInHours", js.undefined)
     
-    @scala.inline
-    def setThresholdComparator(value: ThresholdComparator): Self = StObject.set(x, "ThresholdComparator", value.asInstanceOf[js.Any])
+    inline def setThresholdComparator(value: ThresholdComparator): Self = StObject.set(x, "ThresholdComparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdComparatorUndefined: Self = StObject.set(x, "ThresholdComparator", js.undefined)
+    inline def setThresholdComparatorUndefined: Self = StObject.set(x, "ThresholdComparator", js.undefined)
     
-    @scala.inline
-    def setThresholdPercentage(value: ThresholdPercentageInt): Self = StObject.set(x, "ThresholdPercentage", value.asInstanceOf[js.Any])
+    inline def setThresholdPercentage(value: ThresholdPercentageInt): Self = StObject.set(x, "ThresholdPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdPercentageUndefined: Self = StObject.set(x, "ThresholdPercentage", js.undefined)
+    inline def setThresholdPercentageUndefined: Self = StObject.set(x, "ThresholdPercentage", js.undefined)
   }
 }

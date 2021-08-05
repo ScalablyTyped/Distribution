@@ -17,34 +17,25 @@ trait CreateTimeSeriesSummary extends StObject {
 }
 object CreateTimeSeriesSummary {
   
-  @scala.inline
-  def apply(): CreateTimeSeriesSummary = {
+  inline def apply(): CreateTimeSeriesSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTimeSeriesSummary]
   }
   
-  @scala.inline
-  implicit class CreateTimeSeriesSummaryMutableBuilder[Self <: CreateTimeSeriesSummary] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTimeSeriesSummary](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccessPointCount(value: Double): Self = StObject.set(x, "successPointCount", value.asInstanceOf[js.Any])
+    inline def setSuccessPointCount(value: Double): Self = StObject.set(x, "successPointCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessPointCountUndefined: Self = StObject.set(x, "successPointCount", js.undefined)
+    inline def setSuccessPointCountUndefined: Self = StObject.set(x, "successPointCount", js.undefined)
     
-    @scala.inline
-    def setTotalPointCount(value: Double): Self = StObject.set(x, "totalPointCount", value.asInstanceOf[js.Any])
+    inline def setTotalPointCount(value: Double): Self = StObject.set(x, "totalPointCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalPointCountUndefined: Self = StObject.set(x, "totalPointCount", js.undefined)
+    inline def setTotalPointCountUndefined: Self = StObject.set(x, "totalPointCount", js.undefined)
   }
 }

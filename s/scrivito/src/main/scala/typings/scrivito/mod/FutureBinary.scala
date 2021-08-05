@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("scrivito", "FutureBinary")
 @js.native
-class FutureBinary protected () extends StObject {
+/* private */ class FutureBinary () extends StObject {
   
   def into(target: Obj): js.Promise[Binary] = js.native
 }

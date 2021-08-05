@@ -11,10 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(axiosStatic: AxiosStatic): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(axiosStatic.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def default(axiosStatic: AxiosStatic, options: AxiosCancelOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(axiosStatic.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(axiosStatic: AxiosStatic): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(axiosStatic.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(axiosStatic: AxiosStatic, options: AxiosCancelOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(axiosStatic.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait AxiosCancelOptions extends StObject {
     
@@ -26,17 +24,14 @@ object mod {
   }
   object AxiosCancelOptions {
     
-    @scala.inline
-    def apply(debug: Boolean): AxiosCancelOptions = {
+    inline def apply(debug: Boolean): AxiosCancelOptions = {
       val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
       __obj.asInstanceOf[AxiosCancelOptions]
     }
     
-    @scala.inline
-    implicit class AxiosCancelOptionsMutableBuilder[Self <: AxiosCancelOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AxiosCancelOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,20 +44,16 @@ object mod {
     }
     object AxiosRequestConfig {
       
-      @scala.inline
-      def apply(): AxiosRequestConfig = {
+      inline def apply(): AxiosRequestConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AxiosRequestConfig]
       }
       
-      @scala.inline
-      implicit class AxiosRequestConfigMutableBuilder[Self <: AxiosRequestConfig] (val x: Self) extends AnyVal {
+      extension [Self <: AxiosRequestConfig](x: Self) {
         
-        @scala.inline
-        def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+        inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+        inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
       }
     }
     
@@ -74,20 +65,16 @@ object mod {
     }
     object AxiosStatic {
       
-      @scala.inline
-      def apply(cancel: String => Unit, cancelAll: () => Unit): typings.axiosCancel.mod.axiosAugmentingMod.AxiosStatic = {
+      inline def apply(cancel: String => Unit, cancelAll: () => Unit): typings.axiosCancel.mod.axiosAugmentingMod.AxiosStatic = {
         val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), cancelAll = js.Any.fromFunction0(cancelAll))
         __obj.asInstanceOf[typings.axiosCancel.mod.axiosAugmentingMod.AxiosStatic]
       }
       
-      @scala.inline
-      implicit class AxiosStaticMutableBuilder[Self <: typings.axiosCancel.mod.axiosAugmentingMod.AxiosStatic] (val x: Self) extends AnyVal {
+      extension [Self <: typings.axiosCancel.mod.axiosAugmentingMod.AxiosStatic](x: Self) {
         
-        @scala.inline
-        def setCancel(value: String => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+        inline def setCancel(value: String => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCancelAll(value: () => Unit): Self = StObject.set(x, "cancelAll", js.Any.fromFunction0(value))
+        inline def setCancelAll(value: () => Unit): Self = StObject.set(x, "cancelAll", js.Any.fromFunction0(value))
       }
     }
   }

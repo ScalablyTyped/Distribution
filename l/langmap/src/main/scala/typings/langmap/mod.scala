@@ -20,20 +20,16 @@ object mod extends Shortcut {
   }
   object Language {
     
-    @scala.inline
-    def apply(englishName: String, nativeName: String): Language = {
+    inline def apply(englishName: String, nativeName: String): Language = {
       val __obj = js.Dynamic.literal(englishName = englishName.asInstanceOf[js.Any], nativeName = nativeName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Language]
     }
     
-    @scala.inline
-    implicit class LanguageMutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
+    extension [Self <: Language](x: Self) {
       
-      @scala.inline
-      def setEnglishName(value: String): Self = StObject.set(x, "englishName", value.asInstanceOf[js.Any])
+      inline def setEnglishName(value: String): Self = StObject.set(x, "englishName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeName(value: String): Self = StObject.set(x, "nativeName", value.asInstanceOf[js.Any])
+      inline def setNativeName(value: String): Self = StObject.set(x, "nativeName", value.asInstanceOf[js.Any])
     }
   }
   

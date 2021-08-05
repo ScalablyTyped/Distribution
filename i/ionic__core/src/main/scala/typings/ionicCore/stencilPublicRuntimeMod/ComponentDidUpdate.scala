@@ -19,16 +19,13 @@ trait ComponentDidUpdate extends StObject {
 }
 object ComponentDidUpdate {
   
-  @scala.inline
-  def apply(componentDidUpdate: () => Unit): ComponentDidUpdate = {
+  inline def apply(componentDidUpdate: () => Unit): ComponentDidUpdate = {
     val __obj = js.Dynamic.literal(componentDidUpdate = js.Any.fromFunction0(componentDidUpdate))
     __obj.asInstanceOf[ComponentDidUpdate]
   }
   
-  @scala.inline
-  implicit class ComponentDidUpdateMutableBuilder[Self <: ComponentDidUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentDidUpdate](x: Self) {
     
-    @scala.inline
-    def setComponentDidUpdate(value: () => Unit): Self = StObject.set(x, "componentDidUpdate", js.Any.fromFunction0(value))
+    inline def setComponentDidUpdate(value: () => Unit): Self = StObject.set(x, "componentDidUpdate", js.Any.fromFunction0(value))
   }
 }

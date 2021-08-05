@@ -17,8 +17,7 @@ object statesConfigMod {
   
   object StatesConfig {
     
-    @scala.inline
-    def apply(hasRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleChildren: StatesConfigProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    inline def apply(hasRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleChildren: StatesConfigProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("@react-md/states/types/StatesConfig", "StatesConfig")
     @js.native
@@ -33,32 +32,27 @@ object statesConfigMod {
       @JSImport("@react-md/states/types/StatesConfig", "StatesConfig.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/states/types/StatesConfig", "StatesConfig.propTypes.disableProgrammaticRipple")
       @js.native
       def disableProgrammaticRipple: js.Any = js.native
-      @scala.inline
-      def disableProgrammaticRipple_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableProgrammaticRipple")(x.asInstanceOf[js.Any])
+      inline def disableProgrammaticRipple_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableProgrammaticRipple")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/states/types/StatesConfig", "StatesConfig.propTypes.disableRipple")
       @js.native
       def disableRipple: js.Any = js.native
-      @scala.inline
-      def disableRipple_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableRipple")(x.asInstanceOf[js.Any])
+      inline def disableRipple_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableRipple")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/states/types/StatesConfig", "StatesConfig.propTypes.rippleClassNames")
       @js.native
       def rippleClassNames: js.Any = js.native
-      @scala.inline
-      def rippleClassNames_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rippleClassNames")(x.asInstanceOf[js.Any])
+      inline def rippleClassNames_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rippleClassNames")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/states/types/StatesConfig", "StatesConfig.propTypes.rippleTimeout")
       @js.native
       def rippleTimeout: js.Any = js.native
-      @scala.inline
-      def rippleTimeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rippleTimeout")(x.asInstanceOf[js.Any])
+      inline def rippleTimeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rippleTimeout")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -66,8 +60,7 @@ object statesConfigMod {
   @js.native
   val StatesConfigContext: Context[StatesConfigContextType] = js.native
   
-  @scala.inline
-  def useStatesConfigContext(): StatesConfigContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("useStatesConfigContext")().asInstanceOf[StatesConfigContextType]
+  inline def useStatesConfigContext(): StatesConfigContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("useStatesConfigContext")().asInstanceOf[StatesConfigContextType]
   
   trait StatesConfigContextType extends StObject {
     
@@ -99,8 +92,7 @@ object statesConfigMod {
   }
   object StatesConfigContextType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disableProgrammaticRipple: Boolean,
       disableRipple: Boolean,
       rippleClassNames: CSSTransitionClassNames,
@@ -110,20 +102,15 @@ object statesConfigMod {
       __obj.asInstanceOf[StatesConfigContextType]
     }
     
-    @scala.inline
-    implicit class StatesConfigContextTypeMutableBuilder[Self <: StatesConfigContextType] (val x: Self) extends AnyVal {
+    extension [Self <: StatesConfigContextType](x: Self) {
       
-      @scala.inline
-      def setDisableProgrammaticRipple(value: Boolean): Self = StObject.set(x, "disableProgrammaticRipple", value.asInstanceOf[js.Any])
+      inline def setDisableProgrammaticRipple(value: Boolean): Self = StObject.set(x, "disableProgrammaticRipple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableRipple(value: Boolean): Self = StObject.set(x, "disableRipple", value.asInstanceOf[js.Any])
+      inline def setDisableRipple(value: Boolean): Self = StObject.set(x, "disableRipple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "rippleClassNames", value.asInstanceOf[js.Any])
+      inline def setRippleClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "rippleClassNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleTimeout(value: TransitionTimeout): Self = StObject.set(x, "rippleTimeout", value.asInstanceOf[js.Any])
+      inline def setRippleTimeout(value: TransitionTimeout): Self = StObject.set(x, "rippleTimeout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,44 +129,32 @@ object statesConfigMod {
   }
   object StatesConfigProps {
     
-    @scala.inline
-    def apply(): StatesConfigProps = {
+    inline def apply(): StatesConfigProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatesConfigProps]
     }
     
-    @scala.inline
-    implicit class StatesConfigPropsMutableBuilder[Self <: StatesConfigProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatesConfigProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDisableProgrammaticRipple(value: Boolean): Self = StObject.set(x, "disableProgrammaticRipple", value.asInstanceOf[js.Any])
+      inline def setDisableProgrammaticRipple(value: Boolean): Self = StObject.set(x, "disableProgrammaticRipple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableProgrammaticRippleUndefined: Self = StObject.set(x, "disableProgrammaticRipple", js.undefined)
+      inline def setDisableProgrammaticRippleUndefined: Self = StObject.set(x, "disableProgrammaticRipple", js.undefined)
       
-      @scala.inline
-      def setDisableRipple(value: Boolean): Self = StObject.set(x, "disableRipple", value.asInstanceOf[js.Any])
+      inline def setDisableRipple(value: Boolean): Self = StObject.set(x, "disableRipple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableRippleUndefined: Self = StObject.set(x, "disableRipple", js.undefined)
+      inline def setDisableRippleUndefined: Self = StObject.set(x, "disableRipple", js.undefined)
       
-      @scala.inline
-      def setRippleClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "rippleClassNames", value.asInstanceOf[js.Any])
+      inline def setRippleClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "rippleClassNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleClassNamesUndefined: Self = StObject.set(x, "rippleClassNames", js.undefined)
+      inline def setRippleClassNamesUndefined: Self = StObject.set(x, "rippleClassNames", js.undefined)
       
-      @scala.inline
-      def setRippleTimeout(value: TransitionTimeout): Self = StObject.set(x, "rippleTimeout", value.asInstanceOf[js.Any])
+      inline def setRippleTimeout(value: TransitionTimeout): Self = StObject.set(x, "rippleTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleTimeoutUndefined: Self = StObject.set(x, "rippleTimeout", js.undefined)
+      inline def setRippleTimeoutUndefined: Self = StObject.set(x, "rippleTimeout", js.undefined)
     }
   }
 }

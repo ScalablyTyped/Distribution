@@ -21,19 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object MessageInstance {
   
-  @scala.inline
-  def apply(delete: RestMethod, get: RestMethod, media: MessageMediaResource, post: RestMethod): MessageInstance = {
+  inline def apply(delete: RestMethod, get: RestMethod, media: MessageMediaResource, post: RestMethod): MessageInstance = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageInstance]
   }
   
-  @scala.inline
-  implicit class MessageInstanceMutableBuilder[Self <: MessageInstance] (val x: Self) extends AnyVal {
+  extension [Self <: MessageInstance](x: Self) {
     
-    @scala.inline
-    def setDelete(value: RestMethod): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: RestMethod): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia(value: MessageMediaResource): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: MessageMediaResource): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
   }
 }

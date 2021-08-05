@@ -10,6 +10,5 @@ object symbolMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def symbol(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def symbol(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

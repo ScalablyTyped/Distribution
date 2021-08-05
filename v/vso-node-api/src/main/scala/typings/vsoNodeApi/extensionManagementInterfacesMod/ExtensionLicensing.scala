@@ -13,19 +13,15 @@ trait ExtensionLicensing extends StObject {
 }
 object ExtensionLicensing {
   
-  @scala.inline
-  def apply(overrides: js.Array[LicensingOverride]): ExtensionLicensing = {
+  inline def apply(overrides: js.Array[LicensingOverride]): ExtensionLicensing = {
     val __obj = js.Dynamic.literal(overrides = overrides.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionLicensing]
   }
   
-  @scala.inline
-  implicit class ExtensionLicensingMutableBuilder[Self <: ExtensionLicensing] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionLicensing](x: Self) {
     
-    @scala.inline
-    def setOverrides(value: js.Array[LicensingOverride]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    inline def setOverrides(value: js.Array[LicensingOverride]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverridesVarargs(value: LicensingOverride*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: LicensingOverride*): Self = StObject.set(x, "overrides", js.Array(value :_*))
   }
 }

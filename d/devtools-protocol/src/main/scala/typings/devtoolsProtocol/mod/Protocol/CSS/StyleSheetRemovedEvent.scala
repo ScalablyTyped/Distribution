@@ -13,16 +13,13 @@ trait StyleSheetRemovedEvent extends StObject {
 }
 object StyleSheetRemovedEvent {
   
-  @scala.inline
-  def apply(styleSheetId: StyleSheetId): StyleSheetRemovedEvent = {
+  inline def apply(styleSheetId: StyleSheetId): StyleSheetRemovedEvent = {
     val __obj = js.Dynamic.literal(styleSheetId = styleSheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleSheetRemovedEvent]
   }
   
-  @scala.inline
-  implicit class StyleSheetRemovedEventMutableBuilder[Self <: StyleSheetRemovedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: StyleSheetRemovedEvent](x: Self) {
     
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
+    inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
   }
 }

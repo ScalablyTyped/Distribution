@@ -12,22 +12,17 @@ trait SerialPortFilter extends StObject {
 }
 object SerialPortFilter {
   
-  @scala.inline
-  def apply(usbVendorId: Double): SerialPortFilter = {
+  inline def apply(usbVendorId: Double): SerialPortFilter = {
     val __obj = js.Dynamic.literal(usbVendorId = usbVendorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerialPortFilter]
   }
   
-  @scala.inline
-  implicit class SerialPortFilterMutableBuilder[Self <: SerialPortFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SerialPortFilter](x: Self) {
     
-    @scala.inline
-    def setUsbProductId(value: Double): Self = StObject.set(x, "usbProductId", value.asInstanceOf[js.Any])
+    inline def setUsbProductId(value: Double): Self = StObject.set(x, "usbProductId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsbProductIdUndefined: Self = StObject.set(x, "usbProductId", js.undefined)
+    inline def setUsbProductIdUndefined: Self = StObject.set(x, "usbProductId", js.undefined)
     
-    @scala.inline
-    def setUsbVendorId(value: Double): Self = StObject.set(x, "usbVendorId", value.asInstanceOf[js.Any])
+    inline def setUsbVendorId(value: Double): Self = StObject.set(x, "usbVendorId", value.asInstanceOf[js.Any])
   }
 }

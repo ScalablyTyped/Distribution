@@ -21,20 +21,16 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def base36(input: Input): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base36")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def base36(input: Input): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base36")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @scala.inline
-  def base64(input: Input): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def base64(input: Input): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @scala.inline
-  def base64Url(input: Input): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Url")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def base64Url(input: Input): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Url")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @scala.inline
-  def hex(input: Input): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hex(input: Input): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
   trait FNV extends StObject {

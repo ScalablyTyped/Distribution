@@ -19,27 +19,21 @@ trait SpotFleetRequestLaunchTemplateConfig extends StObject {
 }
 object SpotFleetRequestLaunchTemplateConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     launchTemplateSpecification: Input[SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification]
   ): SpotFleetRequestLaunchTemplateConfig = {
     val __obj = js.Dynamic.literal(launchTemplateSpecification = launchTemplateSpecification.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotFleetRequestLaunchTemplateConfig]
   }
   
-  @scala.inline
-  implicit class SpotFleetRequestLaunchTemplateConfigMutableBuilder[Self <: SpotFleetRequestLaunchTemplateConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SpotFleetRequestLaunchTemplateConfig](x: Self) {
     
-    @scala.inline
-    def setLaunchTemplateSpecification(value: Input[SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification]): Self = StObject.set(x, "launchTemplateSpecification", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateSpecification(value: Input[SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification]): Self = StObject.set(x, "launchTemplateSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrides(value: Input[js.Array[Input[SpotFleetRequestLaunchTemplateConfigOverride]]]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    inline def setOverrides(value: Input[js.Array[Input[SpotFleetRequestLaunchTemplateConfigOverride]]]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+    inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    @scala.inline
-    def setOverridesVarargs(value: Input[SpotFleetRequestLaunchTemplateConfigOverride]*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: Input[SpotFleetRequestLaunchTemplateConfigOverride]*): Self = StObject.set(x, "overrides", js.Array(value :_*))
   }
 }

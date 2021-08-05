@@ -17,7 +17,7 @@ trait PictureEffect extends StObject {
   @JSName("EffectParameters")
   val EffectParameters_Original: EffectParameters
   
-  @JSName("Office.PictureEffect_typekey")
+  /* private */ @JSName("Office.PictureEffect_typekey")
   var OfficeDotPictureEffect_typekey: PictureEffect
   
   var Position: Double
@@ -28,8 +28,7 @@ trait PictureEffect extends StObject {
 }
 object PictureEffect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     Delete: () => Unit,
@@ -44,31 +43,22 @@ object PictureEffect {
     __obj.asInstanceOf[PictureEffect]
   }
   
-  @scala.inline
-  implicit class PictureEffectMutableBuilder[Self <: PictureEffect] (val x: Self) extends AnyVal {
+  extension [Self <: PictureEffect](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEffectParameters(value: EffectParameters): Self = StObject.set(x, "EffectParameters", value.asInstanceOf[js.Any])
+    inline def setEffectParameters(value: EffectParameters): Self = StObject.set(x, "EffectParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotPictureEffect_typekey(value: PictureEffect): Self = StObject.set(x, "Office.PictureEffect_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotPictureEffect_typekey(value: PictureEffect): Self = StObject.set(x, "Office.PictureEffect_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MsoPictureEffectType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MsoPictureEffectType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: MsoTriState): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: MsoTriState): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

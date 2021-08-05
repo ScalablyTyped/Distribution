@@ -34,43 +34,31 @@ trait PackFileSection extends StObject {
 }
 object PackFileSection {
   
-  @scala.inline
-  def apply(files: js.Array[FileConfig]): PackFileSection = {
+  inline def apply(files: js.Array[FileConfig]): PackFileSection = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackFileSection]
   }
   
-  @scala.inline
-  implicit class PackFileSectionMutableBuilder[Self <: PackFileSection] (val x: Self) extends AnyVal {
+  extension [Self <: PackFileSection](x: Self) {
     
-    @scala.inline
-    def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
+    inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
+    inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
     
-    @scala.inline
-    def setDefaultType(value: String): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
+    inline def setDefaultType(value: String): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
+    inline def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
     
-    @scala.inline
-    def setFiles(value: js.Array[FileConfig]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[FileConfig]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesVarargs(value: FileConfig*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: FileConfig*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

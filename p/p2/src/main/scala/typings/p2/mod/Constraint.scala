@@ -36,30 +36,25 @@ object Constraint {
   @JSImport("p2", "Constraint.DISTANCE")
   @js.native
   def DISTANCE: Double = js.native
-  @scala.inline
-  def DISTANCE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISTANCE")(x.asInstanceOf[js.Any])
+  inline def DISTANCE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISTANCE")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Constraint.GEAR")
   @js.native
   def GEAR: Double = js.native
-  @scala.inline
-  def GEAR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GEAR")(x.asInstanceOf[js.Any])
+  inline def GEAR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GEAR")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Constraint.LOCK")
   @js.native
   def LOCK: Double = js.native
-  @scala.inline
-  def LOCK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCK")(x.asInstanceOf[js.Any])
+  inline def LOCK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCK")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Constraint.PRISMATIC")
   @js.native
   def PRISMATIC: Double = js.native
-  @scala.inline
-  def PRISMATIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRISMATIC")(x.asInstanceOf[js.Any])
+  inline def PRISMATIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRISMATIC")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Constraint.REVOLUTE")
   @js.native
   def REVOLUTE: Double = js.native
-  @scala.inline
-  def REVOLUTE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REVOLUTE")(x.asInstanceOf[js.Any])
+  inline def REVOLUTE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REVOLUTE")(x.asInstanceOf[js.Any])
 }

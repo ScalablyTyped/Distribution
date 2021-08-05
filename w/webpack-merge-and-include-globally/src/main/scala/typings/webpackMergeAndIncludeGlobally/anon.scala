@@ -15,26 +15,20 @@ object anon {
   }
   object Dest {
     
-    @scala.inline
-    def apply(dest: String | (js.Function1[/* code */ String, StringDictionary[String]]), src: js.Array[String]): Dest = {
+    inline def apply(dest: String | (js.Function1[/* code */ String, StringDictionary[String]]), src: js.Array[String]): Dest = {
       val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dest]
     }
     
-    @scala.inline
-    implicit class DestMutableBuilder[Self <: Dest] (val x: Self) extends AnyVal {
+    extension [Self <: Dest](x: Self) {
       
-      @scala.inline
-      def setDest(value: String | (js.Function1[/* code */ String, StringDictionary[String]])): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+      inline def setDest(value: String | (js.Function1[/* code */ String, StringDictionary[String]])): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestFunction1(value: /* code */ String => StringDictionary[String]): Self = StObject.set(x, "dest", js.Any.fromFunction1(value))
+      inline def setDestFunction1(value: /* code */ String => StringDictionary[String]): Self = StObject.set(x, "dest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSrc(value: js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
     }
   }
 }

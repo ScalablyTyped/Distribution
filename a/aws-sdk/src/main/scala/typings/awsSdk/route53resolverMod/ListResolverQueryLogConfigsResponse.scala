@@ -28,40 +28,29 @@ trait ListResolverQueryLogConfigsResponse extends StObject {
 }
 object ListResolverQueryLogConfigsResponse {
   
-  @scala.inline
-  def apply(): ListResolverQueryLogConfigsResponse = {
+  inline def apply(): ListResolverQueryLogConfigsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListResolverQueryLogConfigsResponse]
   }
   
-  @scala.inline
-  implicit class ListResolverQueryLogConfigsResponseMutableBuilder[Self <: ListResolverQueryLogConfigsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListResolverQueryLogConfigsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResolverQueryLogConfigs(value: ResolverQueryLogConfigList): Self = StObject.set(x, "ResolverQueryLogConfigs", value.asInstanceOf[js.Any])
+    inline def setResolverQueryLogConfigs(value: ResolverQueryLogConfigList): Self = StObject.set(x, "ResolverQueryLogConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverQueryLogConfigsUndefined: Self = StObject.set(x, "ResolverQueryLogConfigs", js.undefined)
+    inline def setResolverQueryLogConfigsUndefined: Self = StObject.set(x, "ResolverQueryLogConfigs", js.undefined)
     
-    @scala.inline
-    def setResolverQueryLogConfigsVarargs(value: ResolverQueryLogConfig*): Self = StObject.set(x, "ResolverQueryLogConfigs", js.Array(value :_*))
+    inline def setResolverQueryLogConfigsVarargs(value: ResolverQueryLogConfig*): Self = StObject.set(x, "ResolverQueryLogConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalCount(value: Count): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Count): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
     
-    @scala.inline
-    def setTotalFilteredCount(value: Count): Self = StObject.set(x, "TotalFilteredCount", value.asInstanceOf[js.Any])
+    inline def setTotalFilteredCount(value: Count): Self = StObject.set(x, "TotalFilteredCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalFilteredCountUndefined: Self = StObject.set(x, "TotalFilteredCount", js.undefined)
+    inline def setTotalFilteredCountUndefined: Self = StObject.set(x, "TotalFilteredCount", js.undefined)
   }
 }

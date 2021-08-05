@@ -48,61 +48,43 @@ trait Workflow extends StObject {
 }
 object Workflow {
   
-  @scala.inline
-  def apply(): Workflow = {
+  inline def apply(): Workflow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Workflow]
   }
   
-  @scala.inline
-  implicit class WorkflowMutableBuilder[Self <: Workflow] (val x: Self) extends AnyVal {
+  extension [Self <: Workflow](x: Self) {
     
-    @scala.inline
-    def setCreatedOn(value: TimestampValue): Self = StObject.set(x, "CreatedOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: TimestampValue): Self = StObject.set(x, "CreatedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedOnUndefined: Self = StObject.set(x, "CreatedOn", js.undefined)
+    inline def setCreatedOnUndefined: Self = StObject.set(x, "CreatedOn", js.undefined)
     
-    @scala.inline
-    def setDefaultRunProperties(value: WorkflowRunProperties): Self = StObject.set(x, "DefaultRunProperties", value.asInstanceOf[js.Any])
+    inline def setDefaultRunProperties(value: WorkflowRunProperties): Self = StObject.set(x, "DefaultRunProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRunPropertiesUndefined: Self = StObject.set(x, "DefaultRunProperties", js.undefined)
+    inline def setDefaultRunPropertiesUndefined: Self = StObject.set(x, "DefaultRunProperties", js.undefined)
     
-    @scala.inline
-    def setDescription(value: GenericString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: GenericString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setGraph(value: WorkflowGraph): Self = StObject.set(x, "Graph", value.asInstanceOf[js.Any])
+    inline def setGraph(value: WorkflowGraph): Self = StObject.set(x, "Graph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphUndefined: Self = StObject.set(x, "Graph", js.undefined)
+    inline def setGraphUndefined: Self = StObject.set(x, "Graph", js.undefined)
     
-    @scala.inline
-    def setLastModifiedOn(value: TimestampValue): Self = StObject.set(x, "LastModifiedOn", value.asInstanceOf[js.Any])
+    inline def setLastModifiedOn(value: TimestampValue): Self = StObject.set(x, "LastModifiedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedOnUndefined: Self = StObject.set(x, "LastModifiedOn", js.undefined)
+    inline def setLastModifiedOnUndefined: Self = StObject.set(x, "LastModifiedOn", js.undefined)
     
-    @scala.inline
-    def setLastRun(value: WorkflowRun): Self = StObject.set(x, "LastRun", value.asInstanceOf[js.Any])
+    inline def setLastRun(value: WorkflowRun): Self = StObject.set(x, "LastRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRunUndefined: Self = StObject.set(x, "LastRun", js.undefined)
+    inline def setLastRunUndefined: Self = StObject.set(x, "LastRun", js.undefined)
     
-    @scala.inline
-    def setMaxConcurrentRuns(value: NullableInteger): Self = StObject.set(x, "MaxConcurrentRuns", value.asInstanceOf[js.Any])
+    inline def setMaxConcurrentRuns(value: NullableInteger): Self = StObject.set(x, "MaxConcurrentRuns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConcurrentRunsUndefined: Self = StObject.set(x, "MaxConcurrentRuns", js.undefined)
+    inline def setMaxConcurrentRunsUndefined: Self = StObject.set(x, "MaxConcurrentRuns", js.undefined)
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

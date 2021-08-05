@@ -8,21 +8,17 @@ object recoilStrings {
   
   @js.native
   sealed trait UnwrapRecoilValueLoadables extends StObject
-  @scala.inline
-  def UnwrapRecoilValueLoadables: UnwrapRecoilValueLoadables = "UnwrapRecoilValueLoadables".asInstanceOf[UnwrapRecoilValueLoadables]
+  inline def UnwrapRecoilValueLoadables: UnwrapRecoilValueLoadables = "UnwrapRecoilValueLoadables".asInstanceOf[UnwrapRecoilValueLoadables]
   
   @js.native
   sealed trait hasError extends StObject
-  @scala.inline
-  def hasError: hasError = "hasError".asInstanceOf[hasError]
+  inline def hasError: hasError = "hasError".asInstanceOf[hasError]
   
   @js.native
   sealed trait hasValue extends StObject
-  @scala.inline
-  def hasValue: hasValue = "hasValue".asInstanceOf[hasValue]
+  inline def hasValue: hasValue = "hasValue".asInstanceOf[hasValue]
   
   @js.native
   sealed trait loading extends StObject
-  @scala.inline
-  def loading: loading = "loading".asInstanceOf[loading]
+  inline def loading: loading = "loading".asInstanceOf[loading]
 }

@@ -12,16 +12,13 @@ trait InitPlatformOptions extends StObject {
 }
 object InitPlatformOptions {
   
-  @scala.inline
-  def apply(overrideCallback: /* arg */ PlatformProvider => js.Any): InitPlatformOptions = {
+  inline def apply(overrideCallback: /* arg */ PlatformProvider => js.Any): InitPlatformOptions = {
     val __obj = js.Dynamic.literal(overrideCallback = js.Any.fromFunction1(overrideCallback))
     __obj.asInstanceOf[InitPlatformOptions]
   }
   
-  @scala.inline
-  implicit class InitPlatformOptionsMutableBuilder[Self <: InitPlatformOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InitPlatformOptions](x: Self) {
     
-    @scala.inline
-    def setOverrideCallback(value: /* arg */ PlatformProvider => js.Any): Self = StObject.set(x, "overrideCallback", js.Any.fromFunction1(value))
+    inline def setOverrideCallback(value: /* arg */ PlatformProvider => js.Any): Self = StObject.set(x, "overrideCallback", js.Any.fromFunction1(value))
   }
 }

@@ -18,19 +18,15 @@ trait DatadogConnectorProfileCredentials extends StObject {
 }
 object DatadogConnectorProfileCredentials {
   
-  @scala.inline
-  def apply(apiKey: ApiKey, applicationKey: ApplicationKey): DatadogConnectorProfileCredentials = {
+  inline def apply(apiKey: ApiKey, applicationKey: ApplicationKey): DatadogConnectorProfileCredentials = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], applicationKey = applicationKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatadogConnectorProfileCredentials]
   }
   
-  @scala.inline
-  implicit class DatadogConnectorProfileCredentialsMutableBuilder[Self <: DatadogConnectorProfileCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: DatadogConnectorProfileCredentials](x: Self) {
     
-    @scala.inline
-    def setApiKey(value: ApiKey): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+    inline def setApiKey(value: ApiKey): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationKey(value: ApplicationKey): Self = StObject.set(x, "applicationKey", value.asInstanceOf[js.Any])
+    inline def setApplicationKey(value: ApplicationKey): Self = StObject.set(x, "applicationKey", value.asInstanceOf[js.Any])
   }
 }

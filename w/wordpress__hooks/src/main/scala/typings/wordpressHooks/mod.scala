@@ -17,24 +17,20 @@ object mod {
   @js.native
   val actions: HookMap[ActionCallback] = js.native
   
-  @scala.inline
-  def addAction(hookName: String, namespace: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAction")(hookName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addAction(
+  inline def addAction(hookName: String, namespace: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAction")(hookName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addAction(
     hookName: String,
     namespace: String,
     callback: js.Function1[/* repeated */ js.Any, Unit],
     priority: Double
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAction")(hookName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def addFilter[T](
+  inline def addFilter[T](
     hookName: String,
     namespace: String,
     callback: js.Function2[/* firstArg */ T, /* repeated */ js.Any, T]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addFilter")(hookName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addFilter[T](
+  inline def addFilter[T](
     hookName: String,
     namespace: String,
     callback: js.Function2[/* firstArg */ T, /* repeated */ js.Any, T],
@@ -45,8 +41,7 @@ object mod {
   @js.native
   val applyFilters: RunHook = js.native
   
-  @scala.inline
-  def createHooks(): Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("createHooks")().asInstanceOf[Actions]
+  inline def createHooks(): Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("createHooks")().asInstanceOf[Actions]
   
   @JSImport("@wordpress/hooks", "currentAction")
   @js.native
@@ -132,23 +127,18 @@ object mod {
   }
   object Hook {
     
-    @scala.inline
-    def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](handlers: js.Array[T], runs: Double): Hook[T] = {
+    inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](handlers: js.Array[T], runs: Double): Hook[T] = {
       val __obj = js.Dynamic.literal(handlers = handlers.asInstanceOf[js.Any], runs = runs.asInstanceOf[js.Any])
       __obj.asInstanceOf[Hook[T]]
     }
     
-    @scala.inline
-    implicit class HookMutableBuilder[Self <: Hook[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & Hook[T]) extends AnyVal {
+    extension [Self <: Hook[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & Hook[T]) {
       
-      @scala.inline
-      def setHandlers(value: js.Array[T]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: js.Array[T]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlersVarargs(value: T*): Self = StObject.set(x, "handlers", js.Array(value :_*))
+      inline def setHandlersVarargs(value: T*): Self = StObject.set(x, "handlers", js.Array(value :_*))
       
-      @scala.inline
-      def setRuns(value: Double): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
+      inline def setRuns(value: Double): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
     }
   }
   

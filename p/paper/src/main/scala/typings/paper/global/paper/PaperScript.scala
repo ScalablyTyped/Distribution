@@ -31,10 +31,8 @@ object PaperScript {
     *     into JavaScript code along with source-maps and other information.
     */
   /* static member */
-  @scala.inline
-  def compile(code: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(code.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  @scala.inline
-  def compile(code: String, options: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def compile(code: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(code.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def compile(code: String, options: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   /** 
     * Compiles the PaperScript code into a compiled function and executes it.
@@ -55,10 +53,8 @@ object PaperScript {
     * @return the exports defined in the executed code
     */
   /* static member */
-  @scala.inline
-  def execute(code: String, scope: typings.paper.paper.PaperScope): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def execute(code: String, scope: typings.paper.paper.PaperScope, options: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def execute(code: String, scope: typings.paper.paper.PaperScope): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def execute(code: String, scope: typings.paper.paper.PaperScope, options: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   /** 
     * Loads, compiles and executes PaperScript code in the HTML document. Note
@@ -77,8 +73,6 @@ object PaperScript {
     *     `undefined` of multiple scripts area loaded
     */
   /* static member */
-  @scala.inline
-  def load(): typings.paper.paper.PaperScope = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[typings.paper.paper.PaperScope]
-  @scala.inline
-  def load(script: HTMLScriptElement): typings.paper.paper.PaperScope = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(script.asInstanceOf[js.Any]).asInstanceOf[typings.paper.paper.PaperScope]
+  inline def load(): typings.paper.paper.PaperScope = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[typings.paper.paper.PaperScope]
+  inline def load(script: HTMLScriptElement): typings.paper.paper.PaperScope = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(script.asInstanceOf[js.Any]).asInstanceOf[typings.paper.paper.PaperScope]
 }

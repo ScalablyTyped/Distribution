@@ -18,25 +18,19 @@ trait CreateGeoMatchSetResponse extends StObject {
 }
 object CreateGeoMatchSetResponse {
   
-  @scala.inline
-  def apply(): CreateGeoMatchSetResponse = {
+  inline def apply(): CreateGeoMatchSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateGeoMatchSetResponse]
   }
   
-  @scala.inline
-  implicit class CreateGeoMatchSetResponseMutableBuilder[Self <: CreateGeoMatchSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGeoMatchSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
     
-    @scala.inline
-    def setGeoMatchSet(value: GeoMatchSet): Self = StObject.set(x, "GeoMatchSet", value.asInstanceOf[js.Any])
+    inline def setGeoMatchSet(value: GeoMatchSet): Self = StObject.set(x, "GeoMatchSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoMatchSetUndefined: Self = StObject.set(x, "GeoMatchSet", js.undefined)
+    inline def setGeoMatchSetUndefined: Self = StObject.set(x, "GeoMatchSet", js.undefined)
   }
 }

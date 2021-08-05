@@ -31,8 +31,7 @@ trait ITextSelection
 }
 object ITextSelection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canPaste: Double => Boolean,
     changeCase: LetterCase => Unit,
     character: String,
@@ -91,34 +90,24 @@ object ITextSelection {
     __obj.asInstanceOf[ITextSelection]
   }
   
-  @scala.inline
-  implicit class ITextSelectionMutableBuilder[Self <: ITextSelection] (val x: Self) extends AnyVal {
+  extension [Self <: ITextSelection](x: Self) {
     
-    @scala.inline
-    def setEndKey(value: (TextRangeUnit, Boolean) => Double): Self = StObject.set(x, "endKey", js.Any.fromFunction2(value))
+    inline def setEndKey(value: (TextRangeUnit, Boolean) => Double): Self = StObject.set(x, "endKey", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHomeKey(value: (TextRangeUnit, Boolean) => Double): Self = StObject.set(x, "homeKey", js.Any.fromFunction2(value))
+    inline def setHomeKey(value: (TextRangeUnit, Boolean) => Double): Self = StObject.set(x, "homeKey", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMoveDown(value: (TextRangeUnit, Double, Boolean) => Double): Self = StObject.set(x, "moveDown", js.Any.fromFunction3(value))
+    inline def setMoveDown(value: (TextRangeUnit, Double, Boolean) => Double): Self = StObject.set(x, "moveDown", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMoveLeft(value: (TextRangeUnit, Double, Boolean) => Double): Self = StObject.set(x, "moveLeft", js.Any.fromFunction3(value))
+    inline def setMoveLeft(value: (TextRangeUnit, Double, Boolean) => Double): Self = StObject.set(x, "moveLeft", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMoveRight(value: (TextRangeUnit, Double, Boolean) => Double): Self = StObject.set(x, "moveRight", js.Any.fromFunction3(value))
+    inline def setMoveRight(value: (TextRangeUnit, Double, Boolean) => Double): Self = StObject.set(x, "moveRight", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMoveUp(value: (TextRangeUnit, Double, Boolean) => Double): Self = StObject.set(x, "moveUp", js.Any.fromFunction3(value))
+    inline def setMoveUp(value: (TextRangeUnit, Double, Boolean) => Double): Self = StObject.set(x, "moveUp", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOptions(value: SelectionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SelectionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: SelectionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SelectionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeText(value: String => Unit): Self = StObject.set(x, "typeText", js.Any.fromFunction1(value))
+    inline def setTypeText(value: String => Unit): Self = StObject.set(x, "typeText", js.Any.fromFunction1(value))
   }
 }

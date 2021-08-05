@@ -26,8 +26,7 @@ trait XShapeCombiner
 }
 object XShapeCombiner {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     combine: XShapes => XShape,
     queryInterface: `type` => js.Any,
@@ -38,13 +37,10 @@ object XShapeCombiner {
     __obj.asInstanceOf[XShapeCombiner]
   }
   
-  @scala.inline
-  implicit class XShapeCombinerMutableBuilder[Self <: XShapeCombiner] (val x: Self) extends AnyVal {
+  extension [Self <: XShapeCombiner](x: Self) {
     
-    @scala.inline
-    def setCombine(value: XShapes => XShape): Self = StObject.set(x, "combine", js.Any.fromFunction1(value))
+    inline def setCombine(value: XShapes => XShape): Self = StObject.set(x, "combine", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSplit(value: XShape => Unit): Self = StObject.set(x, "split", js.Any.fromFunction1(value))
+    inline def setSplit(value: XShape => Unit): Self = StObject.set(x, "split", js.Any.fromFunction1(value))
   }
 }

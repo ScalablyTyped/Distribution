@@ -17,34 +17,25 @@ trait SetHeightConfig extends StObject {
 }
 object SetHeightConfig {
   
-  @scala.inline
-  def apply(height: Double): SetHeightConfig = {
+  inline def apply(height: Double): SetHeightConfig = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetHeightConfig]
   }
   
-  @scala.inline
-  implicit class SetHeightConfigMutableBuilder[Self <: SetHeightConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SetHeightConfig](x: Self) {
     
-    @scala.inline
-    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
+    inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
     
-    @scala.inline
-    def setFullViewport(value: Boolean): Self = StObject.set(x, "fullViewport", value.asInstanceOf[js.Any])
+    inline def setFullViewport(value: Boolean): Self = StObject.set(x, "fullViewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullViewportUndefined: Self = StObject.set(x, "fullViewport", js.undefined)
+    inline def setFullViewportUndefined: Self = StObject.set(x, "fullViewport", js.undefined)
     
-    @scala.inline
-    def setGrowOnly(value: Boolean): Self = StObject.set(x, "growOnly", value.asInstanceOf[js.Any])
+    inline def setGrowOnly(value: Boolean): Self = StObject.set(x, "growOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrowOnlyUndefined: Self = StObject.set(x, "growOnly", js.undefined)
+    inline def setGrowOnlyUndefined: Self = StObject.set(x, "growOnly", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
   }
 }

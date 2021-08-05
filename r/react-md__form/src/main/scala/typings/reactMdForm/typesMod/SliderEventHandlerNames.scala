@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SliderEventHandlerNames extends StObject
 object SliderEventHandlerNames {
   
-  @scala.inline
-  def onKeyDown: typings.reactMdForm.reactMdFormStrings.onKeyDown = "onKeyDown".asInstanceOf[typings.reactMdForm.reactMdFormStrings.onKeyDown]
+  inline def onKeyDown: typings.reactMdForm.reactMdFormStrings.onKeyDown = "onKeyDown".asInstanceOf[typings.reactMdForm.reactMdFormStrings.onKeyDown]
   
-  @scala.inline
-  def onKeyUp: typings.reactMdForm.reactMdFormStrings.onKeyUp = "onKeyUp".asInstanceOf[typings.reactMdForm.reactMdFormStrings.onKeyUp]
+  inline def onKeyUp: typings.reactMdForm.reactMdFormStrings.onKeyUp = "onKeyUp".asInstanceOf[typings.reactMdForm.reactMdFormStrings.onKeyUp]
   
-  @scala.inline
-  def onMouseDown: typings.reactMdForm.reactMdFormStrings.onMouseDown = "onMouseDown".asInstanceOf[typings.reactMdForm.reactMdFormStrings.onMouseDown]
+  inline def onMouseDown: typings.reactMdForm.reactMdFormStrings.onMouseDown = "onMouseDown".asInstanceOf[typings.reactMdForm.reactMdFormStrings.onMouseDown]
   
-  @scala.inline
-  def onTouchStart: typings.reactMdForm.reactMdFormStrings.onTouchStart = "onTouchStart".asInstanceOf[typings.reactMdForm.reactMdFormStrings.onTouchStart]
+  inline def onTouchStart: typings.reactMdForm.reactMdFormStrings.onTouchStart = "onTouchStart".asInstanceOf[typings.reactMdForm.reactMdFormStrings.onTouchStart]
 }

@@ -13,16 +13,13 @@ trait DescribeFleetPortSettingsInput extends StObject {
 }
 object DescribeFleetPortSettingsInput {
   
-  @scala.inline
-  def apply(FleetId: FleetIdOrArn): DescribeFleetPortSettingsInput = {
+  inline def apply(FleetId: FleetIdOrArn): DescribeFleetPortSettingsInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFleetPortSettingsInput]
   }
   
-  @scala.inline
-  implicit class DescribeFleetPortSettingsInputMutableBuilder[Self <: DescribeFleetPortSettingsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFleetPortSettingsInput](x: Self) {
     
-    @scala.inline
-    def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
   }
 }

@@ -16,31 +16,23 @@ trait DoubleLinkSelectors extends StObject {
 }
 object DoubleLinkSelectors {
   
-  @scala.inline
-  def apply(): DoubleLinkSelectors = {
+  inline def apply(): DoubleLinkSelectors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DoubleLinkSelectors]
   }
   
-  @scala.inline
-  implicit class DoubleLinkSelectorsMutableBuilder[Self <: DoubleLinkSelectors] (val x: Self) extends AnyVal {
+  extension [Self <: DoubleLinkSelectors](x: Self) {
     
-    @scala.inline
-    def setLine(value: SVGPathAttributes): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: SVGPathAttributes): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setOutline(value: SVGPathAttributes): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: SVGPathAttributes): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
-    @scala.inline
-    def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

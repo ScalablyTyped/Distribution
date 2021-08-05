@@ -36,14 +36,11 @@ object task {
   @js.native
   val URI: /* "Task" */ String = js.native
   
-  @scala.inline
-  def ap[A](fa: Task_[A]): js.Function1[/* fab */ Task_[js.Function1[/* a */ A, js.Any]], Task_[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Task_[js.Function1[/* a */ A, js.Any]], Task_[js.Any]]]
+  inline def ap[A](fa: Task_[A]): js.Function1[/* fab */ Task_[js.Function1[/* a */ A, js.Any]], Task_[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Task_[js.Function1[/* a */ A, js.Any]], Task_[js.Any]]]
   
-  @scala.inline
-  def apFirst[B](fb: Task_[B]): js.Function1[/* fa */ Task_[js.Any], Task_[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apFirst")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Task_[js.Any], Task_[js.Any]]]
+  inline def apFirst[B](fb: Task_[B]): js.Function1[/* fa */ Task_[js.Any], Task_[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apFirst")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Task_[js.Any], Task_[js.Any]]]
   
-  @scala.inline
-  def apS[A, N /* <: String */, B](name: Exclude[N, /* keyof A */ String], fb: Task_[B]): js.Function1[
+  inline def apS[A, N /* <: String */, B](name: Exclude[N, /* keyof A */ String], fb: Task_[B]): js.Function1[
     /* fa */ Task_[A], 
     Task_[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -59,11 +56,9 @@ object task {
     ]
   ]]
   
-  @scala.inline
-  def apSecond[B](fb: Task_[B]): js.Function1[/* fa */ Task_[js.Any], Task_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apSecond")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Task_[js.Any], Task_[B]]]
+  inline def apSecond[B](fb: Task_[B]): js.Function1[/* fa */ Task_[js.Any], Task_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apSecond")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Task_[js.Any], Task_[B]]]
   
-  @scala.inline
-  def bind[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, Task_[B]]): js.Function1[
+  inline def bind[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, Task_[B]]): js.Function1[
     /* fa */ Task_[A], 
     Task_[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -79,8 +74,7 @@ object task {
     ]
   ]]
   
-  @scala.inline
-  def bindTo[N /* <: String */](name: N): js.Function1[
+  inline def bindTo[N /* <: String */](name: N): js.Function1[
     /* fa */ Task_[js.Any], 
     Task_[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -96,26 +90,19 @@ object task {
     ]
   ]]
   
-  @scala.inline
-  def chain[A, B](f: js.Function1[/* a */ A, Task_[B]]): js.Function1[/* ma */ Task_[A], Task_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Task_[A], Task_[B]]]
+  inline def chain[A, B](f: js.Function1[/* a */ A, Task_[B]]): js.Function1[/* ma */ Task_[A], Task_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Task_[A], Task_[B]]]
   
-  @scala.inline
-  def chainFirst[A, B](f: js.Function1[/* a */ A, Task_[B]]): js.Function1[/* ma */ Task_[A], Task_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Task_[A], Task_[A]]]
+  inline def chainFirst[A, B](f: js.Function1[/* a */ A, Task_[B]]): js.Function1[/* ma */ Task_[A], Task_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Task_[A], Task_[A]]]
   
-  @scala.inline
-  def chainIOK[A, B](f: js.Function1[/* a */ A, IO_[B]]): js.Function1[/* ma */ Task_[A], Task_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainIOK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Task_[A], Task_[B]]]
+  inline def chainIOK[A, B](f: js.Function1[/* a */ A, IO_[B]]): js.Function1[/* ma */ Task_[A], Task_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainIOK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Task_[A], Task_[B]]]
   
-  @scala.inline
-  def delay(millis: Double): js.Function1[/* ma */ Task_[js.Any], Task_[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(millis.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Task_[js.Any], Task_[js.Any]]]
+  inline def delay(millis: Double): js.Function1[/* ma */ Task_[js.Any], Task_[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(millis.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Task_[js.Any], Task_[js.Any]]]
   
-  @scala.inline
-  def flatten[A](mma: Task_[Task_[A]]): Task_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[Task_[A]]
+  inline def flatten[A](mma: Task_[Task_[A]]): Task_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[Task_[A]]
   
-  @scala.inline
-  def fromIO[A](ma: IO_[A]): Task_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIO")(ma.asInstanceOf[js.Any]).asInstanceOf[Task_[A]]
+  inline def fromIO[A](ma: IO_[A]): Task_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIO")(ma.asInstanceOf[js.Any]).asInstanceOf[Task_[A]]
   
-  @scala.inline
-  def fromIOK[A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, IO_[B]]): js.Function1[/* a */ A, Task_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, Task_[B]]]
+  inline def fromIOK[A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, IO_[B]]): js.Function1[/* a */ A, Task_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, Task_[B]]]
   
   @JSImport("fp-ts", "task.fromTask")
   @js.native
@@ -124,17 +111,13 @@ object task {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ js.Any
   ] = js.native
   
-  @scala.inline
-  def getMonoid[A](M: Monoid[A]): Monoid[Task_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonoid")(M.asInstanceOf[js.Any]).asInstanceOf[Monoid[Task_[A]]]
+  inline def getMonoid[A](M: Monoid[A]): Monoid[Task_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonoid")(M.asInstanceOf[js.Any]).asInstanceOf[Monoid[Task_[A]]]
   
-  @scala.inline
-  def getRaceMonoid[A](): Monoid[Task_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRaceMonoid")().asInstanceOf[Monoid[Task_[A]]]
+  inline def getRaceMonoid[A](): Monoid[Task_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRaceMonoid")().asInstanceOf[Monoid[Task_[A]]]
   
-  @scala.inline
-  def getSemigroup[A](S: Semigroup[A]): Semigroup[Task_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSemigroup")(S.asInstanceOf[js.Any]).asInstanceOf[Semigroup[Task_[A]]]
+  inline def getSemigroup[A](S: Semigroup[A]): Semigroup[Task_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSemigroup")(S.asInstanceOf[js.Any]).asInstanceOf[Semigroup[Task_[A]]]
   
-  @scala.inline
-  def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Task_[A], Task_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Task_[A], Task_[B]]]
+  inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Task_[A], Task_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Task_[A], Task_[B]]]
   
   @JSImport("fp-ts", "task.never")
   @js.native

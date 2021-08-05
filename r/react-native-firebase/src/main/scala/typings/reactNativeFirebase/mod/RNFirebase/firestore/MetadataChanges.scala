@@ -10,16 +10,13 @@ trait MetadataChanges extends StObject {
 }
 object MetadataChanges {
   
-  @scala.inline
-  def apply(includeMetadataChanges: Boolean): MetadataChanges = {
+  inline def apply(includeMetadataChanges: Boolean): MetadataChanges = {
     val __obj = js.Dynamic.literal(includeMetadataChanges = includeMetadataChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataChanges]
   }
   
-  @scala.inline
-  implicit class MetadataChangesMutableBuilder[Self <: MetadataChanges] (val x: Self) extends AnyVal {
+  extension [Self <: MetadataChanges](x: Self) {
     
-    @scala.inline
-    def setIncludeMetadataChanges(value: Boolean): Self = StObject.set(x, "includeMetadataChanges", value.asInstanceOf[js.Any])
+    inline def setIncludeMetadataChanges(value: Boolean): Self = StObject.set(x, "includeMetadataChanges", value.asInstanceOf[js.Any])
   }
 }

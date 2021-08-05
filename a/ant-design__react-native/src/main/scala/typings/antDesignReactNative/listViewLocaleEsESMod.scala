@@ -15,37 +15,31 @@ object listViewLocaleEsESMod {
     @JSImport("@ant-design/react-native/lib/list-view/locale/es_ES", "default.done")
     @js.native
     def done: String = js.native
-    @scala.inline
-    def done_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("done")(x.asInstanceOf[js.Any])
+    inline def done_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("done")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/list-view/locale/es_ES", "default.loading")
     @js.native
     def loading: String = js.native
-    @scala.inline
-    def loading_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loading")(x.asInstanceOf[js.Any])
+    inline def loading_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loading")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/list-view/locale/es_ES", "default.noData")
     @js.native
     def noData: String = js.native
-    @scala.inline
-    def noData_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noData")(x.asInstanceOf[js.Any])
+    inline def noData_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noData")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/list-view/locale/es_ES", "default.refreshableTitlePull")
     @js.native
     def refreshableTitlePull: String = js.native
-    @scala.inline
-    def refreshableTitlePull_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("refreshableTitlePull")(x.asInstanceOf[js.Any])
+    inline def refreshableTitlePull_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("refreshableTitlePull")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/list-view/locale/es_ES", "default.refreshableTitleRefreshing")
     @js.native
     def refreshableTitleRefreshing: String = js.native
-    @scala.inline
-    def refreshableTitleRefreshing_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("refreshableTitleRefreshing")(x.asInstanceOf[js.Any])
+    inline def refreshableTitleRefreshing_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("refreshableTitleRefreshing")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/list-view/locale/es_ES", "default.refreshableTitleRelease")
     @js.native
     def refreshableTitleRelease: String = js.native
-    @scala.inline
-    def refreshableTitleRelease_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("refreshableTitleRelease")(x.asInstanceOf[js.Any])
+    inline def refreshableTitleRelease_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("refreshableTitleRelease")(x.asInstanceOf[js.Any])
   }
 }

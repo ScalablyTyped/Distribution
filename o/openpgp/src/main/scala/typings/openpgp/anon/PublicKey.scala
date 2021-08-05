@@ -12,19 +12,15 @@ trait PublicKey extends StObject {
 }
 object PublicKey {
   
-  @scala.inline
-  def apply(publicKey: typings.openpgp.mod.key.Key, publicKeyArmored: String): PublicKey = {
+  inline def apply(publicKey: typings.openpgp.mod.key.Key, publicKeyArmored: String): PublicKey = {
     val __obj = js.Dynamic.literal(publicKey = publicKey.asInstanceOf[js.Any], publicKeyArmored = publicKeyArmored.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKey]
   }
   
-  @scala.inline
-  implicit class PublicKeyMutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
+  extension [Self <: PublicKey](x: Self) {
     
-    @scala.inline
-    def setPublicKey(value: typings.openpgp.mod.key.Key): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: typings.openpgp.mod.key.Key): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyArmored(value: String): Self = StObject.set(x, "publicKeyArmored", value.asInstanceOf[js.Any])
+    inline def setPublicKeyArmored(value: String): Self = StObject.set(x, "publicKeyArmored", value.asInstanceOf[js.Any])
   }
 }

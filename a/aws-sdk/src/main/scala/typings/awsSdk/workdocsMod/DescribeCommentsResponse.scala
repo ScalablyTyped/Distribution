@@ -18,28 +18,21 @@ trait DescribeCommentsResponse extends StObject {
 }
 object DescribeCommentsResponse {
   
-  @scala.inline
-  def apply(): DescribeCommentsResponse = {
+  inline def apply(): DescribeCommentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCommentsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeCommentsResponseMutableBuilder[Self <: DescribeCommentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCommentsResponse](x: Self) {
     
-    @scala.inline
-    def setComments(value: CommentList): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: CommentList): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "Comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "Comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "Comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "Comments", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: MarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: MarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

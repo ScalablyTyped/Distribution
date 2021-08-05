@@ -10,16 +10,13 @@ trait Storystickerids extends StObject {
 }
 object Storystickerids {
   
-  @scala.inline
-  def apply(story_sticker_ids: js.Any): Storystickerids = {
+  inline def apply(story_sticker_ids: js.Any): Storystickerids = {
     val __obj = js.Dynamic.literal(story_sticker_ids = story_sticker_ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[Storystickerids]
   }
   
-  @scala.inline
-  implicit class StorystickeridsMutableBuilder[Self <: Storystickerids] (val x: Self) extends AnyVal {
+  extension [Self <: Storystickerids](x: Self) {
     
-    @scala.inline
-    def setStory_sticker_ids(value: js.Any): Self = StObject.set(x, "story_sticker_ids", value.asInstanceOf[js.Any])
+    inline def setStory_sticker_ids(value: js.Any): Self = StObject.set(x, "story_sticker_ids", value.asInstanceOf[js.Any])
   }
 }

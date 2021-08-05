@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.HPageBreak")
 @js.native
-class HPageBreak protected ()
+/* private */ class HPageBreak ()
   extends StObject
      with typings.activexExcel.Excel.HPageBreak {
   
@@ -27,7 +27,7 @@ class HPageBreak protected ()
   /* CompleteClass */
   override def DragOff(Direction: XlDirection, RegionIndex: Double): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.HPageBreak_typekey")
   var ExcelDotHPageBreak_typekey: typings.activexExcel.Excel.HPageBreak = js.native
   

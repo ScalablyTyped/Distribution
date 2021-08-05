@@ -13,19 +13,15 @@ trait LambdaInvokeOperation extends StObject {
 }
 object LambdaInvokeOperation {
   
-  @scala.inline
-  def apply(): LambdaInvokeOperation = {
+  inline def apply(): LambdaInvokeOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LambdaInvokeOperation]
   }
   
-  @scala.inline
-  implicit class LambdaInvokeOperationMutableBuilder[Self <: LambdaInvokeOperation] (val x: Self) extends AnyVal {
+  extension [Self <: LambdaInvokeOperation](x: Self) {
     
-    @scala.inline
-    def setFunctionArn(value: FunctionArnString): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
+    inline def setFunctionArn(value: FunctionArnString): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionArnUndefined: Self = StObject.set(x, "FunctionArn", js.undefined)
+    inline def setFunctionArnUndefined: Self = StObject.set(x, "FunctionArn", js.undefined)
   }
 }

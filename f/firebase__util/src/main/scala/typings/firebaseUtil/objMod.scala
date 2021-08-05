@@ -11,14 +11,11 @@ object objMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def contains[T /* <: js.Object */](obj: T, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def contains[T /* <: js.Object */](obj: T, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isEmpty(obj: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEmpty(obj: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def map[K /* <: String */, V, U](
+  inline def map[K /* <: String */, V, U](
     obj: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: V}
     */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[js.Any],
@@ -35,8 +32,7 @@ object objMod {
     */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: U}
     */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[js.Any]]
-  @scala.inline
-  def map[K /* <: String */, V, U](
+  inline def map[K /* <: String */, V, U](
     obj: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: V}
     */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[js.Any],
@@ -55,8 +51,7 @@ object objMod {
   {[ key in K ]: U}
     */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[js.Any]]
   
-  @scala.inline
-  def safeGet[T /* <: js.Object */, K /* <: /* keyof T */ String */](obj: T, key: K): js.UndefOr[
+  inline def safeGet[T /* <: js.Object */, K /* <: /* keyof T */ String */](obj: T, key: K): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeGet")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any

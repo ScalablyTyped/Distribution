@@ -32,37 +32,27 @@ trait SchemaAclEntry extends StObject {
 }
 object SchemaAclEntry {
   
-  @scala.inline
-  def apply(): SchemaAclEntry = {
+  inline def apply(): SchemaAclEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAclEntry]
   }
   
-  @scala.inline
-  implicit class SchemaAclEntryMutableBuilder[Self <: SchemaAclEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAclEntry](x: Self) {
     
-    @scala.inline
-    def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
+    inline def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

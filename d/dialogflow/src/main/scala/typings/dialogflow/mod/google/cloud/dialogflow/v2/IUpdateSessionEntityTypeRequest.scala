@@ -16,31 +16,23 @@ trait IUpdateSessionEntityTypeRequest extends StObject {
 }
 object IUpdateSessionEntityTypeRequest {
   
-  @scala.inline
-  def apply(): IUpdateSessionEntityTypeRequest = {
+  inline def apply(): IUpdateSessionEntityTypeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IUpdateSessionEntityTypeRequest]
   }
   
-  @scala.inline
-  implicit class IUpdateSessionEntityTypeRequestMutableBuilder[Self <: IUpdateSessionEntityTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IUpdateSessionEntityTypeRequest](x: Self) {
     
-    @scala.inline
-    def setSessionEntityType(value: ISessionEntityType): Self = StObject.set(x, "sessionEntityType", value.asInstanceOf[js.Any])
+    inline def setSessionEntityType(value: ISessionEntityType): Self = StObject.set(x, "sessionEntityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionEntityTypeNull: Self = StObject.set(x, "sessionEntityType", null)
+    inline def setSessionEntityTypeNull: Self = StObject.set(x, "sessionEntityType", null)
     
-    @scala.inline
-    def setSessionEntityTypeUndefined: Self = StObject.set(x, "sessionEntityType", js.undefined)
+    inline def setSessionEntityTypeUndefined: Self = StObject.set(x, "sessionEntityType", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: IFieldMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: IFieldMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

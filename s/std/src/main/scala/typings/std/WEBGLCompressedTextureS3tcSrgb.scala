@@ -16,8 +16,7 @@ trait WEBGLCompressedTextureS3tcSrgb extends StObject {
 }
 object WEBGLCompressedTextureS3tcSrgb {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT: GLenum,
     COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT: GLenum,
     COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT: GLenum,
@@ -27,19 +26,14 @@ object WEBGLCompressedTextureS3tcSrgb {
     __obj.asInstanceOf[WEBGLCompressedTextureS3tcSrgb]
   }
   
-  @scala.inline
-  implicit class WEBGLCompressedTextureS3tcSrgbMutableBuilder[Self <: WEBGLCompressedTextureS3tcSrgb] (val x: Self) extends AnyVal {
+  extension [Self <: WEBGLCompressedTextureS3tcSrgb](x: Self) {
     
-    @scala.inline
-    def setCOMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT(value: GLenum): Self = StObject.set(x, "COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT", value.asInstanceOf[js.Any])
+    inline def setCOMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT(value: GLenum): Self = StObject.set(x, "COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCOMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT(value: GLenum): Self = StObject.set(x, "COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT", value.asInstanceOf[js.Any])
+    inline def setCOMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT(value: GLenum): Self = StObject.set(x, "COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCOMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT(value: GLenum): Self = StObject.set(x, "COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT", value.asInstanceOf[js.Any])
+    inline def setCOMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT(value: GLenum): Self = StObject.set(x, "COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCOMPRESSED_SRGB_S3TC_DXT1_EXT(value: GLenum): Self = StObject.set(x, "COMPRESSED_SRGB_S3TC_DXT1_EXT", value.asInstanceOf[js.Any])
+    inline def setCOMPRESSED_SRGB_S3TC_DXT1_EXT(value: GLenum): Self = StObject.set(x, "COMPRESSED_SRGB_S3TC_DXT1_EXT", value.asInstanceOf[js.Any])
   }
 }

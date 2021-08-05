@@ -13,8 +13,7 @@ trait ModelTypeORMVerificationRequestModel extends StObject {
 }
 object ModelTypeORMVerificationRequestModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     model: TypeORMVerificationRequestModel,
     schema: typings.nextAuth.adaptersMod.Schema[TypeORMVerificationRequestModel]
   ): ModelTypeORMVerificationRequestModel = {
@@ -22,13 +21,10 @@ object ModelTypeORMVerificationRequestModel {
     __obj.asInstanceOf[ModelTypeORMVerificationRequestModel]
   }
   
-  @scala.inline
-  implicit class ModelTypeORMVerificationRequestModelMutableBuilder[Self <: ModelTypeORMVerificationRequestModel] (val x: Self) extends AnyVal {
+  extension [Self <: ModelTypeORMVerificationRequestModel](x: Self) {
     
-    @scala.inline
-    def setModel(value: TypeORMVerificationRequestModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: TypeORMVerificationRequestModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: typings.nextAuth.adaptersMod.Schema[TypeORMVerificationRequestModel]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: typings.nextAuth.adaptersMod.Schema[TypeORMVerificationRequestModel]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

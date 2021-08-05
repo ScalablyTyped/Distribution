@@ -38,52 +38,37 @@ trait AwsCertificateManagerCertificateDomainValidationOption extends StObject {
 }
 object AwsCertificateManagerCertificateDomainValidationOption {
   
-  @scala.inline
-  def apply(): AwsCertificateManagerCertificateDomainValidationOption = {
+  inline def apply(): AwsCertificateManagerCertificateDomainValidationOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCertificateManagerCertificateDomainValidationOption]
   }
   
-  @scala.inline
-  implicit class AwsCertificateManagerCertificateDomainValidationOptionMutableBuilder[Self <: AwsCertificateManagerCertificateDomainValidationOption] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCertificateManagerCertificateDomainValidationOption](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: NonEmptyString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: NonEmptyString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
-    @scala.inline
-    def setResourceRecord(value: AwsCertificateManagerCertificateResourceRecord): Self = StObject.set(x, "ResourceRecord", value.asInstanceOf[js.Any])
+    inline def setResourceRecord(value: AwsCertificateManagerCertificateResourceRecord): Self = StObject.set(x, "ResourceRecord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRecordUndefined: Self = StObject.set(x, "ResourceRecord", js.undefined)
+    inline def setResourceRecordUndefined: Self = StObject.set(x, "ResourceRecord", js.undefined)
     
-    @scala.inline
-    def setValidationDomain(value: NonEmptyString): Self = StObject.set(x, "ValidationDomain", value.asInstanceOf[js.Any])
+    inline def setValidationDomain(value: NonEmptyString): Self = StObject.set(x, "ValidationDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationDomainUndefined: Self = StObject.set(x, "ValidationDomain", js.undefined)
+    inline def setValidationDomainUndefined: Self = StObject.set(x, "ValidationDomain", js.undefined)
     
-    @scala.inline
-    def setValidationEmails(value: StringList): Self = StObject.set(x, "ValidationEmails", value.asInstanceOf[js.Any])
+    inline def setValidationEmails(value: StringList): Self = StObject.set(x, "ValidationEmails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationEmailsUndefined: Self = StObject.set(x, "ValidationEmails", js.undefined)
+    inline def setValidationEmailsUndefined: Self = StObject.set(x, "ValidationEmails", js.undefined)
     
-    @scala.inline
-    def setValidationEmailsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ValidationEmails", js.Array(value :_*))
+    inline def setValidationEmailsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ValidationEmails", js.Array(value :_*))
     
-    @scala.inline
-    def setValidationMethod(value: NonEmptyString): Self = StObject.set(x, "ValidationMethod", value.asInstanceOf[js.Any])
+    inline def setValidationMethod(value: NonEmptyString): Self = StObject.set(x, "ValidationMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationMethodUndefined: Self = StObject.set(x, "ValidationMethod", js.undefined)
+    inline def setValidationMethodUndefined: Self = StObject.set(x, "ValidationMethod", js.undefined)
     
-    @scala.inline
-    def setValidationStatus(value: NonEmptyString): Self = StObject.set(x, "ValidationStatus", value.asInstanceOf[js.Any])
+    inline def setValidationStatus(value: NonEmptyString): Self = StObject.set(x, "ValidationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationStatusUndefined: Self = StObject.set(x, "ValidationStatus", js.undefined)
+    inline def setValidationStatusUndefined: Self = StObject.set(x, "ValidationStatus", js.undefined)
   }
 }

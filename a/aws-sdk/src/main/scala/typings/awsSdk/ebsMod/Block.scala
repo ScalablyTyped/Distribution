@@ -18,25 +18,19 @@ trait Block extends StObject {
 }
 object Block {
   
-  @scala.inline
-  def apply(): Block = {
+  inline def apply(): Block = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Block]
   }
   
-  @scala.inline
-  implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+  extension [Self <: Block](x: Self) {
     
-    @scala.inline
-    def setBlockIndex(value: BlockIndex): Self = StObject.set(x, "BlockIndex", value.asInstanceOf[js.Any])
+    inline def setBlockIndex(value: BlockIndex): Self = StObject.set(x, "BlockIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockIndexUndefined: Self = StObject.set(x, "BlockIndex", js.undefined)
+    inline def setBlockIndexUndefined: Self = StObject.set(x, "BlockIndex", js.undefined)
     
-    @scala.inline
-    def setBlockToken(value: BlockToken): Self = StObject.set(x, "BlockToken", value.asInstanceOf[js.Any])
+    inline def setBlockToken(value: BlockToken): Self = StObject.set(x, "BlockToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockTokenUndefined: Self = StObject.set(x, "BlockToken", js.undefined)
+    inline def setBlockTokenUndefined: Self = StObject.set(x, "BlockToken", js.undefined)
   }
 }

@@ -20,16 +20,13 @@ trait uniqueValues extends StObject {
 }
 object uniqueValues {
   
-  @scala.inline
-  def apply(uniqueValues: uniqueValuesUniqueValuesParams => js.Promise[UniqueValuesResult]): uniqueValues = {
+  inline def apply(uniqueValues: uniqueValuesUniqueValuesParams => js.Promise[UniqueValuesResult]): uniqueValues = {
     val __obj = js.Dynamic.literal(uniqueValues = js.Any.fromFunction1(uniqueValues))
     __obj.asInstanceOf[uniqueValues]
   }
   
-  @scala.inline
-  implicit class uniqueValuesMutableBuilder[Self <: uniqueValues] (val x: Self) extends AnyVal {
+  extension [Self <: uniqueValues](x: Self) {
     
-    @scala.inline
-    def setUniqueValues(value: uniqueValuesUniqueValuesParams => js.Promise[UniqueValuesResult]): Self = StObject.set(x, "uniqueValues", js.Any.fromFunction1(value))
+    inline def setUniqueValues(value: uniqueValuesUniqueValuesParams => js.Promise[UniqueValuesResult]): Self = StObject.set(x, "uniqueValues", js.Any.fromFunction1(value))
   }
 }

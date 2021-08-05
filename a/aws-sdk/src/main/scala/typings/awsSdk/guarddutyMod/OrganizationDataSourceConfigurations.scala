@@ -13,19 +13,15 @@ trait OrganizationDataSourceConfigurations extends StObject {
 }
 object OrganizationDataSourceConfigurations {
   
-  @scala.inline
-  def apply(): OrganizationDataSourceConfigurations = {
+  inline def apply(): OrganizationDataSourceConfigurations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrganizationDataSourceConfigurations]
   }
   
-  @scala.inline
-  implicit class OrganizationDataSourceConfigurationsMutableBuilder[Self <: OrganizationDataSourceConfigurations] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizationDataSourceConfigurations](x: Self) {
     
-    @scala.inline
-    def setS3Logs(value: OrganizationS3LogsConfiguration): Self = StObject.set(x, "S3Logs", value.asInstanceOf[js.Any])
+    inline def setS3Logs(value: OrganizationS3LogsConfiguration): Self = StObject.set(x, "S3Logs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3LogsUndefined: Self = StObject.set(x, "S3Logs", js.undefined)
+    inline def setS3LogsUndefined: Self = StObject.set(x, "S3Logs", js.undefined)
   }
 }

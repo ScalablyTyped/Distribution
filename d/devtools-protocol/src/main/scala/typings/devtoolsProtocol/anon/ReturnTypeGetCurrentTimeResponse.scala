@@ -14,22 +14,17 @@ trait ReturnTypeGetCurrentTimeResponse extends StObject {
 }
 object ReturnTypeGetCurrentTimeResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[GetCurrentTimeRequest], returnType: GetCurrentTimeResponse): ReturnTypeGetCurrentTimeResponse = {
+  inline def apply(paramsType: js.Array[GetCurrentTimeRequest], returnType: GetCurrentTimeResponse): ReturnTypeGetCurrentTimeResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeGetCurrentTimeResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetCurrentTimeResponseMutableBuilder[Self <: ReturnTypeGetCurrentTimeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetCurrentTimeResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[GetCurrentTimeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[GetCurrentTimeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: GetCurrentTimeRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetCurrentTimeRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetCurrentTimeResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetCurrentTimeResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

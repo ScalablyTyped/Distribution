@@ -12,17 +12,14 @@ object anon {
   }
   object Midstream {
     
-    @scala.inline
-    def apply(midstream: Boolean): Midstream = {
+    inline def apply(midstream: Boolean): Midstream = {
       val __obj = js.Dynamic.literal(midstream = midstream.asInstanceOf[js.Any])
       __obj.asInstanceOf[Midstream]
     }
     
-    @scala.inline
-    implicit class MidstreamMutableBuilder[Self <: Midstream] (val x: Self) extends AnyVal {
+    extension [Self <: Midstream](x: Self) {
       
-      @scala.inline
-      def setMidstream(value: Boolean): Self = StObject.set(x, "midstream", value.asInstanceOf[js.Any])
+      inline def setMidstream(value: Boolean): Self = StObject.set(x, "midstream", value.asInstanceOf[js.Any])
     }
   }
 }

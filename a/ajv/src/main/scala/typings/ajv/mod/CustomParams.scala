@@ -12,16 +12,13 @@ trait CustomParams
 }
 object CustomParams {
   
-  @scala.inline
-  def apply(keyword: String): CustomParams = {
+  inline def apply(keyword: String): CustomParams = {
     val __obj = js.Dynamic.literal(keyword = keyword.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomParams]
   }
   
-  @scala.inline
-  implicit class CustomParamsMutableBuilder[Self <: CustomParams] (val x: Self) extends AnyVal {
+  extension [Self <: CustomParams](x: Self) {
     
-    @scala.inline
-    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+    inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
   }
 }

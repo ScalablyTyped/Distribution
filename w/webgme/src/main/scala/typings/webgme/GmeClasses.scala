@@ -148,23 +148,18 @@ object GmeClasses {
   }
   object Commit {
     
-    @scala.inline
-    def apply(branchName: String, commitHash: MetadataHash, status: String): Commit = {
+    inline def apply(branchName: String, commitHash: MetadataHash, status: String): Commit = {
       val __obj = js.Dynamic.literal(branchName = branchName.asInstanceOf[js.Any], commitHash = commitHash.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Commit]
     }
     
-    @scala.inline
-    implicit class CommitMutableBuilder[Self <: Commit] (val x: Self) extends AnyVal {
+    extension [Self <: Commit](x: Self) {
       
-      @scala.inline
-      def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+      inline def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitHash(value: MetadataHash): Self = StObject.set(x, "commitHash", value.asInstanceOf[js.Any])
+      inline def setCommitHash(value: MetadataHash): Self = StObject.set(x, "commitHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1927,23 +1922,18 @@ object GmeClasses {
   }
   object LibraryInfo {
     
-    @scala.inline
-    def apply(branchName: String, commitHash: String, projectId: String): LibraryInfo = {
+    inline def apply(branchName: String, commitHash: String, projectId: String): LibraryInfo = {
       val __obj = js.Dynamic.literal(branchName = branchName.asInstanceOf[js.Any], commitHash = commitHash.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
       __obj.asInstanceOf[LibraryInfo]
     }
     
-    @scala.inline
-    implicit class LibraryInfoMutableBuilder[Self <: LibraryInfo] (val x: Self) extends AnyVal {
+    extension [Self <: LibraryInfo](x: Self) {
       
-      @scala.inline
-      def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+      inline def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitHash(value: String): Self = StObject.set(x, "commitHash", value.asInstanceOf[js.Any])
+      inline def setCommitHash(value: String): Self = StObject.set(x, "commitHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1977,36 +1967,27 @@ object GmeClasses {
   }
   object MetaNodeParameters {
     
-    @scala.inline
-    def apply(`object`: Children): MetaNodeParameters = {
+    inline def apply(`object`: Children): MetaNodeParameters = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetaNodeParameters]
     }
     
-    @scala.inline
-    implicit class MetaNodeParametersMutableBuilder[Self <: MetaNodeParameters] (val x: Self) extends AnyVal {
+    extension [Self <: MetaNodeParameters](x: Self) {
       
-      @scala.inline
-      def setAspect(value: String): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
+      inline def setAspect(value: String): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAspectUndefined: Self = StObject.set(x, "aspect", js.undefined)
+      inline def setAspectUndefined: Self = StObject.set(x, "aspect", js.undefined)
       
-      @scala.inline
-      def setMultiplicity(value: Boolean): Self = StObject.set(x, "multiplicity", value.asInstanceOf[js.Any])
+      inline def setMultiplicity(value: Boolean): Self = StObject.set(x, "multiplicity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiplicityUndefined: Self = StObject.set(x, "multiplicity", js.undefined)
+      inline def setMultiplicityUndefined: Self = StObject.set(x, "multiplicity", js.undefined)
       
-      @scala.inline
-      def setObject(value: Children): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Children): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
+      inline def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
+      inline def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
     }
   }
   
@@ -2018,25 +1999,20 @@ object GmeClasses {
   }
   object MetaRule {
     
-    @scala.inline
-    def apply(`enum`: js.Array[String], `type`: String | Double | Boolean): MetaRule = {
+    inline def apply(`enum`: js.Array[String], `type`: String | Double | Boolean): MetaRule = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("enum")(`enum`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetaRule]
     }
     
-    @scala.inline
-    implicit class MetaRuleMutableBuilder[Self <: MetaRule] (val x: Self) extends AnyVal {
+    extension [Self <: MetaRule](x: Self) {
       
-      @scala.inline
-      def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+      inline def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String | Double | Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | Double | Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2063,30 +2039,23 @@ object GmeClasses {
   }
   object MetaSetParameters {
     
-    @scala.inline
-    def apply(`object`: Members): MetaSetParameters = {
+    inline def apply(`object`: Members): MetaSetParameters = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetaSetParameters]
     }
     
-    @scala.inline
-    implicit class MetaSetParametersMutableBuilder[Self <: MetaSetParameters] (val x: Self) extends AnyVal {
+    extension [Self <: MetaSetParameters](x: Self) {
       
-      @scala.inline
-      def setMultiplicity(value: Boolean): Self = StObject.set(x, "multiplicity", value.asInstanceOf[js.Any])
+      inline def setMultiplicity(value: Boolean): Self = StObject.set(x, "multiplicity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiplicityUndefined: Self = StObject.set(x, "multiplicity", js.undefined)
+      inline def setMultiplicityUndefined: Self = StObject.set(x, "multiplicity", js.undefined)
       
-      @scala.inline
-      def setObject(value: Members): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Members): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
+      inline def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
+      inline def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
     }
   }
   
@@ -2107,44 +2076,32 @@ object GmeClasses {
   }
   object NodeParameters {
     
-    @scala.inline
-    def apply(): NodeParameters = {
+    inline def apply(): NodeParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeParameters]
     }
     
-    @scala.inline
-    implicit class NodeParametersMutableBuilder[Self <: NodeParameters] (val x: Self) extends AnyVal {
+    extension [Self <: NodeParameters](x: Self) {
       
-      @scala.inline
-      def setBase(value: Node): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: Node): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseNull: Self = StObject.set(x, "base", null)
+      inline def setBaseNull: Self = StObject.set(x, "base", null)
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setGuid(value: GUID): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+      inline def setGuid(value: GUID): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
+      inline def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
       
-      @scala.inline
-      def setParent(value: Node): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Node): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentNull: Self = StObject.set(x, "parent", null)
+      inline def setParentNull: Self = StObject.set(x, "parent", null)
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setRelid(value: RelId): Self = StObject.set(x, "relid", value.asInstanceOf[js.Any])
+      inline def setRelid(value: RelId): Self = StObject.set(x, "relid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelidUndefined: Self = StObject.set(x, "relid", js.undefined)
+      inline def setRelidUndefined: Self = StObject.set(x, "relid", js.undefined)
     }
   }
   
@@ -2908,38 +2865,28 @@ object GmeClasses {
   }
   object TraversalOptions {
     
-    @scala.inline
-    def apply(): TraversalOptions = {
+    inline def apply(): TraversalOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TraversalOptions]
     }
     
-    @scala.inline
-    implicit class TraversalOptionsMutableBuilder[Self <: TraversalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TraversalOptions](x: Self) {
       
-      @scala.inline
-      def setExcludeRoot(value: Boolean): Self = StObject.set(x, "excludeRoot", value.asInstanceOf[js.Any])
+      inline def setExcludeRoot(value: Boolean): Self = StObject.set(x, "excludeRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeRootUndefined: Self = StObject.set(x, "excludeRoot", js.undefined)
+      inline def setExcludeRootUndefined: Self = StObject.set(x, "excludeRoot", js.undefined)
       
-      @scala.inline
-      def setMaxParallelLoad(value: Double): Self = StObject.set(x, "maxParallelLoad", value.asInstanceOf[js.Any])
+      inline def setMaxParallelLoad(value: Double): Self = StObject.set(x, "maxParallelLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxParallelLoadUndefined: Self = StObject.set(x, "maxParallelLoad", js.undefined)
+      inline def setMaxParallelLoadUndefined: Self = StObject.set(x, "maxParallelLoad", js.undefined)
       
-      @scala.inline
-      def setOrder(value: TraversalOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: TraversalOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setStopOnError(value: Boolean): Self = StObject.set(x, "stopOnError", value.asInstanceOf[js.Any])
+      inline def setStopOnError(value: Boolean): Self = StObject.set(x, "stopOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopOnErrorUndefined: Self = StObject.set(x, "stopOnError", js.undefined)
+      inline def setStopOnErrorUndefined: Self = StObject.set(x, "stopOnError", js.undefined)
     }
   }
 }

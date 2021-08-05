@@ -19,9 +19,9 @@ object inviteUserAgentServerMod {
     def this(core: UserAgentCore, message: IncomingRequestMessage, delegate: IncomingRequestDelegate) = this()
     
     /** The confirmed dialog, if any. */
-    var confirmedDialog: js.Any = js.native
+    /* private */ var confirmedDialog: js.Any = js.native
     
     /** The early dialog, if any. */
-    var earlyDialog: js.Any = js.native
+    /* private */ var earlyDialog: js.Any = js.native
   }
 }

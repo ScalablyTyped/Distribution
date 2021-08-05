@@ -27,33 +27,27 @@ trait MonitoredResourceMetadata extends StObject {
 }
 object MonitoredResourceMetadata {
   
-  @scala.inline
-  def apply(): MonitoredResourceMetadata = {
+  inline def apply(): MonitoredResourceMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MonitoredResourceMetadata]
   }
   
-  @scala.inline
-  implicit class MonitoredResourceMetadataMutableBuilder[Self <: MonitoredResourceMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoredResourceMetadata](x: Self) {
     
-    @scala.inline
-    def setSystemLabels(
+    inline def setSystemLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.MonitoredResourceMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "systemLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemLabelsUndefined: Self = StObject.set(x, "systemLabels", js.undefined)
+    inline def setSystemLabelsUndefined: Self = StObject.set(x, "systemLabels", js.undefined)
     
-    @scala.inline
-    def setUserLabels(
+    inline def setUserLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.MonitoredResourceMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)
+    inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)
   }
 }

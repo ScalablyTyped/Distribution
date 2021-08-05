@@ -22,20 +22,16 @@ object bonusGiftMod extends Shortcut {
   }
   object BonusGiftProps {
     
-    @scala.inline
-    def apply(): BonusGiftProps = {
+    inline def apply(): BonusGiftProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BonusGiftProps]
     }
     
-    @scala.inline
-    implicit class BonusGiftPropsMutableBuilder[Self <: BonusGiftProps] (val x: Self) extends AnyVal {
+    extension [Self <: BonusGiftProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

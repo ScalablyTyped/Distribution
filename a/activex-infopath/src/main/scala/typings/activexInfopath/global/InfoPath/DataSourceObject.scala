@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.DataSourceObject")
 @js.native
-class DataSourceObject protected ()
+/* private */ class DataSourceObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.DataSourceObject {
   
   /* CompleteClass */
   override val DOM: IXMLDOMDocument = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.DataSourceObject_typekey")
   var InfoPathDotDataSourceObject_typekey: typings.activexInfopath.InfoPath.DataSourceObject = js.native
   

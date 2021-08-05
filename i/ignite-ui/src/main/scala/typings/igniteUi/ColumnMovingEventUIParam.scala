@@ -28,37 +28,27 @@ trait ColumnMovingEventUIParam extends StObject {
 }
 object ColumnMovingEventUIParam {
   
-  @scala.inline
-  def apply(): ColumnMovingEventUIParam = {
+  inline def apply(): ColumnMovingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnMovingEventUIParam]
   }
   
-  @scala.inline
-  implicit class ColumnMovingEventUIParamMutableBuilder[Self <: ColumnMovingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnMovingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
-    @scala.inline
-    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setTargetIndex(value: Double): Self = StObject.set(x, "targetIndex", value.asInstanceOf[js.Any])
+    inline def setTargetIndex(value: Double): Self = StObject.set(x, "targetIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIndexUndefined: Self = StObject.set(x, "targetIndex", js.undefined)
+    inline def setTargetIndexUndefined: Self = StObject.set(x, "targetIndex", js.undefined)
   }
 }

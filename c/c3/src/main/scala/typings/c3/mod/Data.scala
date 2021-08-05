@@ -254,256 +254,177 @@ trait Data extends StObject {
 }
 object Data {
   
-  @scala.inline
-  def apply(): Data = {
+  inline def apply(): Data = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Data]
   }
   
-  @scala.inline
-  implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+  extension [Self <: Data](x: Self) {
     
-    @scala.inline
-    def setAxes(value: StringDictionary[AxisName]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+    inline def setAxes(value: StringDictionary[AxisName]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+    inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
-    @scala.inline
-    def setClasses(value: StringDictionary[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: StringDictionary[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setColor(
+    inline def setColor(
       value: (/* color */ String, /* d */ String | DataSeries | DataPoint) => String | RGBColor | HSLColor
     ): Self = StObject.set(x, "color", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColors(
+    inline def setColors(
       value: StringDictionary[
           String | RGBColor | HSLColor | (js.Function1[/* d */ String | DataSeries | DataPoint, String | RGBColor | HSLColor])
         ]
     ): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setColumns(value: js.Array[Array[String | Primitive]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[Array[String | Primitive]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: (Array[String | Primitive])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: (Array[String | Primitive])*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setEmpty(value: LabelText): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    inline def setEmpty(value: LabelText): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+    inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
-    @scala.inline
-    def setEpochs(value: String): Self = StObject.set(x, "epochs", value.asInstanceOf[js.Any])
+    inline def setEpochs(value: String): Self = StObject.set(x, "epochs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpochsUndefined: Self = StObject.set(x, "epochs", js.undefined)
+    inline def setEpochsUndefined: Self = StObject.set(x, "epochs", js.undefined)
     
-    @scala.inline
-    def setFilter(
+    inline def setFilter(
       value: (/* series */ DataSeries, /* index */ Double, /* allSeries */ js.Array[DataSeries]) => Boolean
     ): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setGroups(value: js.Array[js.Array[String]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[js.Array[String]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: js.Array[String]*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: js.Array[String]*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHide(value: Boolean | js.Array[String]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    inline def setHide(value: Boolean | js.Array[String]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    @scala.inline
-    def setHideVarargs(value: String*): Self = StObject.set(x, "hide", js.Array(value :_*))
+    inline def setHideVarargs(value: String*): Self = StObject.set(x, "hide", js.Array(value :_*))
     
-    @scala.inline
-    def setIdConverter(value: /* id */ String => String): Self = StObject.set(x, "idConverter", js.Any.fromFunction1(value))
+    inline def setIdConverter(value: /* id */ String => String): Self = StObject.set(x, "idConverter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIdConverterUndefined: Self = StObject.set(x, "idConverter", js.undefined)
+    inline def setIdConverterUndefined: Self = StObject.set(x, "idConverter", js.undefined)
     
-    @scala.inline
-    def setJson(value: (Record[String, PrimitiveArray]) | (js.Array[Record[String, Primitive]])): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    inline def setJson(value: (Record[String, PrimitiveArray]) | (js.Array[Record[String, Primitive]])): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+    inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     
-    @scala.inline
-    def setJsonVarargs(value: (Record[String, Primitive])*): Self = StObject.set(x, "json", js.Array(value :_*))
+    inline def setJsonVarargs(value: (Record[String, Primitive])*): Self = StObject.set(x, "json", js.Array(value :_*))
     
-    @scala.inline
-    def setKeys(value: Value): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: Value): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setLabels(value: Boolean | Format | `1`): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: Boolean | Format | `1`): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setNames(value: StringDictionary[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: StringDictionary[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    @scala.inline
-    def setOnclick(value: js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ SVGElement, Unit]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
+    inline def setOnclick(value: js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ SVGElement, Unit]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
+    inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
     
-    @scala.inline
-    def setOnmouseout(
+    inline def setOnmouseout(
       value: js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ js.UndefOr[SVGElement], Unit]
     ): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnmouseoutUndefined: Self = StObject.set(x, "onmouseout", js.undefined)
+    inline def setOnmouseoutUndefined: Self = StObject.set(x, "onmouseout", js.undefined)
     
-    @scala.inline
-    def setOnmouseover(
+    inline def setOnmouseover(
       value: js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ js.UndefOr[SVGElement], Unit]
     ): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnmouseoverUndefined: Self = StObject.set(x, "onmouseover", js.undefined)
+    inline def setOnmouseoverUndefined: Self = StObject.set(x, "onmouseover", js.undefined)
     
-    @scala.inline
-    def setOnselected(value: js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ SVGElement, Unit]): Self = StObject.set(x, "onselected", value.asInstanceOf[js.Any])
+    inline def setOnselected(value: js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ SVGElement, Unit]): Self = StObject.set(x, "onselected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnselectedUndefined: Self = StObject.set(x, "onselected", js.undefined)
+    inline def setOnselectedUndefined: Self = StObject.set(x, "onselected", js.undefined)
     
-    @scala.inline
-    def setOnunselected(value: js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ SVGElement, Unit]): Self = StObject.set(x, "onunselected", value.asInstanceOf[js.Any])
+    inline def setOnunselected(value: js.ThisFunction2[/* this */ ChartAPI, /* d */ DataPoint, /* element */ SVGElement, Unit]): Self = StObject.set(x, "onunselected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnunselectedUndefined: Self = StObject.set(x, "onunselected", js.undefined)
+    inline def setOnunselectedUndefined: Self = StObject.set(x, "onunselected", js.undefined)
     
-    @scala.inline
-    def setOrder(value: asc | desc | (js.Function1[/* repeated */ DataSeries, Double])): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: asc | desc | (js.Function1[/* repeated */ DataSeries, Double])): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderFunction1(value: /* repeated */ DataSeries => Double): Self = StObject.set(x, "order", js.Any.fromFunction1(value))
+    inline def setOrderFunction1(value: /* repeated */ DataSeries => Double): Self = StObject.set(x, "order", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOrderNull: Self = StObject.set(x, "order", null)
+    inline def setOrderNull: Self = StObject.set(x, "order", null)
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setRegions(value: StringDictionary[js.Array[RegionOptions]]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: StringDictionary[js.Array[RegionOptions]]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+    inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[PrimitiveArray]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[PrimitiveArray]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: PrimitiveArray*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: PrimitiveArray*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setSelection(value: Draggable): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: Draggable): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+    inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     
-    @scala.inline
-    def setStack(value: Normalize): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: Normalize): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
-    @scala.inline
-    def setType(value: ChartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setTypes(value: StringDictionary[ChartType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: StringDictionary[ChartType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXFormat(value: String): Self = StObject.set(x, "xFormat", value.asInstanceOf[js.Any])
+    inline def setXFormat(value: String): Self = StObject.set(x, "xFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXFormatUndefined: Self = StObject.set(x, "xFormat", js.undefined)
+    inline def setXFormatUndefined: Self = StObject.set(x, "xFormat", js.undefined)
     
-    @scala.inline
-    def setXLocaltime(value: Boolean): Self = StObject.set(x, "xLocaltime", value.asInstanceOf[js.Any])
+    inline def setXLocaltime(value: Boolean): Self = StObject.set(x, "xLocaltime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXLocaltimeUndefined: Self = StObject.set(x, "xLocaltime", js.undefined)
+    inline def setXLocaltimeUndefined: Self = StObject.set(x, "xLocaltime", js.undefined)
     
-    @scala.inline
-    def setXSort(value: Boolean): Self = StObject.set(x, "xSort", value.asInstanceOf[js.Any])
+    inline def setXSort(value: Boolean): Self = StObject.set(x, "xSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXSortUndefined: Self = StObject.set(x, "xSort", js.undefined)
+    inline def setXSortUndefined: Self = StObject.set(x, "xSort", js.undefined)
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setXs(value: StringDictionary[String]): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+    inline def setXs(value: StringDictionary[String]): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
+    inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
   }
 }

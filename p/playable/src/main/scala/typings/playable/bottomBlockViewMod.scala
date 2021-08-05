@@ -21,24 +21,24 @@ object bottomBlockViewMod {
   trait BottomBlockView
     extends typings.playable.viewMod.default[IBottomBlockViewStyles] {
     
-    @JSName("_$leftControllsContainer")
+    /* private */ @JSName("_$leftControllsContainer")
     var _$leftControllsContainer: js.Any = js.native
     
-    @JSName("_$rightControllsContainer")
+    /* private */ @JSName("_$rightControllsContainer")
     var _$rightControllsContainer: js.Any = js.native
     
-    @JSName("_$rootElement")
+    /* private */ @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
     
-    var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: js.Any = js.native
     
-    var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: js.Any = js.native
     
-    var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: js.Any = js.native
     
-    var _preventClickPropagation: js.Any = js.native
+    /* private */ var _preventClickPropagation: js.Any = js.native
     
-    var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: js.Any = js.native
     
     def addControl(key: String, element: HTMLElement): Unit = js.native
     @JSName("addControl")

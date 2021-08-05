@@ -34,6 +34,5 @@ object EncryptedEventBroker {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def supportsLoginFlow(loginFlows: Flows): js.UndefOr[TypeString] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsLoginFlow")(loginFlows.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[TypeString]]
+  inline def supportsLoginFlow(loginFlows: Flows): js.UndefOr[TypeString] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsLoginFlow")(loginFlows.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[TypeString]]
 }

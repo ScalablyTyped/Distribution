@@ -24,8 +24,7 @@ trait XMLBasicExporter
 }
 object XMLBasicExporter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     cancel: () => Unit,
     createWithHandler: XDocumentHandler => Unit,
@@ -38,10 +37,8 @@ object XMLBasicExporter {
     __obj.asInstanceOf[XMLBasicExporter]
   }
   
-  @scala.inline
-  implicit class XMLBasicExporterMutableBuilder[Self <: XMLBasicExporter] (val x: Self) extends AnyVal {
+  extension [Self <: XMLBasicExporter](x: Self) {
     
-    @scala.inline
-    def setCreateWithHandler(value: XDocumentHandler => Unit): Self = StObject.set(x, "createWithHandler", js.Any.fromFunction1(value))
+    inline def setCreateWithHandler(value: XDocumentHandler => Unit): Self = StObject.set(x, "createWithHandler", js.Any.fromFunction1(value))
   }
 }

@@ -18,23 +18,18 @@ trait BandScale
 }
 object BandScale {
   
-  @scala.inline
-  def apply(name: String): BandScale = {
+  inline def apply(name: String): BandScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("band")
     __obj.asInstanceOf[BandScale]
   }
   
-  @scala.inline
-  implicit class BandScaleMutableBuilder[Self <: BandScale] (val x: Self) extends AnyVal {
+  extension [Self <: BandScale](x: Self) {
     
-    @scala.inline
-    def setPaddingInner(value: Double | SignalRef): Self = StObject.set(x, "paddingInner", value.asInstanceOf[js.Any])
+    inline def setPaddingInner(value: Double | SignalRef): Self = StObject.set(x, "paddingInner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingInnerUndefined: Self = StObject.set(x, "paddingInner", js.undefined)
+    inline def setPaddingInnerUndefined: Self = StObject.set(x, "paddingInner", js.undefined)
     
-    @scala.inline
-    def setType(value: band): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: band): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

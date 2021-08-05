@@ -11,16 +11,13 @@ trait BigIntOptions extends StObject {
 }
 object BigIntOptions {
   
-  @scala.inline
-  def apply(): BigIntOptions = {
+  inline def apply(): BigIntOptions = {
     val __obj = js.Dynamic.literal(bigint = true)
     __obj.asInstanceOf[BigIntOptions]
   }
   
-  @scala.inline
-  implicit class BigIntOptionsMutableBuilder[Self <: BigIntOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BigIntOptions](x: Self) {
     
-    @scala.inline
-    def setBigint(value: `true`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
+    inline def setBigint(value: `true`): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
   }
 }

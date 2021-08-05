@@ -34,8 +34,7 @@ trait XPrinterServer
 }
 object XPrinterServer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PrinterNames: SafeArray[String],
     acquire: () => Unit,
     createInfoPrinter: String => XInfoPrinter,
@@ -48,19 +47,14 @@ object XPrinterServer {
     __obj.asInstanceOf[XPrinterServer]
   }
   
-  @scala.inline
-  implicit class XPrinterServerMutableBuilder[Self <: XPrinterServer] (val x: Self) extends AnyVal {
+  extension [Self <: XPrinterServer](x: Self) {
     
-    @scala.inline
-    def setCreateInfoPrinter(value: String => XInfoPrinter): Self = StObject.set(x, "createInfoPrinter", js.Any.fromFunction1(value))
+    inline def setCreateInfoPrinter(value: String => XInfoPrinter): Self = StObject.set(x, "createInfoPrinter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreatePrinter(value: String => XPrinter): Self = StObject.set(x, "createPrinter", js.Any.fromFunction1(value))
+    inline def setCreatePrinter(value: String => XPrinter): Self = StObject.set(x, "createPrinter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPrinterNames(value: () => SafeArray[String]): Self = StObject.set(x, "getPrinterNames", js.Any.fromFunction0(value))
+    inline def setGetPrinterNames(value: () => SafeArray[String]): Self = StObject.set(x, "getPrinterNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrinterNames(value: SafeArray[String]): Self = StObject.set(x, "PrinterNames", value.asInstanceOf[js.Any])
+    inline def setPrinterNames(value: SafeArray[String]): Self = StObject.set(x, "PrinterNames", value.asInstanceOf[js.Any])
   }
 }

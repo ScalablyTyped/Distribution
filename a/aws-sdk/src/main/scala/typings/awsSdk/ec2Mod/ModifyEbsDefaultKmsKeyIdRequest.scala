@@ -18,22 +18,17 @@ trait ModifyEbsDefaultKmsKeyIdRequest extends StObject {
 }
 object ModifyEbsDefaultKmsKeyIdRequest {
   
-  @scala.inline
-  def apply(KmsKeyId: KmsKeyId): ModifyEbsDefaultKmsKeyIdRequest = {
+  inline def apply(KmsKeyId: KmsKeyId): ModifyEbsDefaultKmsKeyIdRequest = {
     val __obj = js.Dynamic.literal(KmsKeyId = KmsKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyEbsDefaultKmsKeyIdRequest]
   }
   
-  @scala.inline
-  implicit class ModifyEbsDefaultKmsKeyIdRequestMutableBuilder[Self <: ModifyEbsDefaultKmsKeyIdRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyEbsDefaultKmsKeyIdRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
   }
 }

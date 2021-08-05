@@ -34,7 +34,7 @@ trait CalloutFormat extends StObject {
   
   val DropType: MsoCalloutDropType
   
-  @JSName("Excel.CalloutFormat_typekey")
+  /* private */ @JSName("Excel.CalloutFormat_typekey")
   var ExcelDotCalloutFormat_typekey: CalloutFormat
   
   var Gap: Double
@@ -49,8 +49,7 @@ trait CalloutFormat extends StObject {
 }
 object CalloutFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Accent: MsoTriState,
     Angle: MsoCalloutAngleType,
     Application: js.Any,
@@ -75,61 +74,42 @@ object CalloutFormat {
     __obj.asInstanceOf[CalloutFormat]
   }
   
-  @scala.inline
-  implicit class CalloutFormatMutableBuilder[Self <: CalloutFormat] (val x: Self) extends AnyVal {
+  extension [Self <: CalloutFormat](x: Self) {
     
-    @scala.inline
-    def setAccent(value: MsoTriState): Self = StObject.set(x, "Accent", value.asInstanceOf[js.Any])
+    inline def setAccent(value: MsoTriState): Self = StObject.set(x, "Accent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngle(value: MsoCalloutAngleType): Self = StObject.set(x, "Angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: MsoCalloutAngleType): Self = StObject.set(x, "Angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoAttach(value: MsoTriState): Self = StObject.set(x, "AutoAttach", value.asInstanceOf[js.Any])
+    inline def setAutoAttach(value: MsoTriState): Self = StObject.set(x, "AutoAttach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoLength(value: MsoTriState): Self = StObject.set(x, "AutoLength", value.asInstanceOf[js.Any])
+    inline def setAutoLength(value: MsoTriState): Self = StObject.set(x, "AutoLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticLength(value: () => Unit): Self = StObject.set(x, "AutomaticLength", js.Any.fromFunction0(value))
+    inline def setAutomaticLength(value: () => Unit): Self = StObject.set(x, "AutomaticLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBorder(value: MsoTriState): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: MsoTriState): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDrop(value: Double => Unit): Self = StObject.set(x, "CustomDrop", js.Any.fromFunction1(value))
+    inline def setCustomDrop(value: Double => Unit): Self = StObject.set(x, "CustomDrop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCustomLength(value: Double => Unit): Self = StObject.set(x, "CustomLength", js.Any.fromFunction1(value))
+    inline def setCustomLength(value: Double => Unit): Self = StObject.set(x, "CustomLength", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDrop(value: Double): Self = StObject.set(x, "Drop", value.asInstanceOf[js.Any])
+    inline def setDrop(value: Double): Self = StObject.set(x, "Drop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropType(value: MsoCalloutDropType): Self = StObject.set(x, "DropType", value.asInstanceOf[js.Any])
+    inline def setDropType(value: MsoCalloutDropType): Self = StObject.set(x, "DropType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotCalloutFormat_typekey(value: CalloutFormat): Self = StObject.set(x, "Excel.CalloutFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotCalloutFormat_typekey(value: CalloutFormat): Self = StObject.set(x, "Excel.CalloutFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGap(value: Double): Self = StObject.set(x, "Gap", value.asInstanceOf[js.Any])
+    inline def setGap(value: Double): Self = StObject.set(x, "Gap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetDrop(value: MsoCalloutDropType => Unit): Self = StObject.set(x, "PresetDrop", js.Any.fromFunction1(value))
+    inline def setPresetDrop(value: MsoCalloutDropType => Unit): Self = StObject.set(x, "PresetDrop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: MsoCalloutType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MsoCalloutType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

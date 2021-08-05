@@ -43,8 +43,7 @@ trait ASPxClientGridLookup
 }
 object ASPxClientGridLookup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     AdjustDropDownWindow: () => Unit,
     BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientGridLookup]],
@@ -111,25 +110,18 @@ object ASPxClientGridLookup {
     __obj.asInstanceOf[ASPxClientGridLookup]
   }
   
-  @scala.inline
-  implicit class ASPxClientGridLookupMutableBuilder[Self <: ASPxClientGridLookup] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGridLookup](x: Self) {
     
-    @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientGridLookup]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
+    inline def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientGridLookup]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmCurrentSelection(value: () => Unit): Self = StObject.set(x, "ConfirmCurrentSelection", js.Any.fromFunction0(value))
+    inline def setConfirmCurrentSelection(value: () => Unit): Self = StObject.set(x, "ConfirmCurrentSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientGridLookup]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
+    inline def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientGridLookup]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetGridView(value: () => ASPxClientGridView): Self = StObject.set(x, "GetGridView", js.Any.fromFunction0(value))
+    inline def setGetGridView(value: () => ASPxClientGridView): Self = StObject.set(x, "GetGridView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRollbackToLastConfirmedSelection(value: () => Unit): Self = StObject.set(x, "RollbackToLastConfirmedSelection", js.Any.fromFunction0(value))
+    inline def setRollbackToLastConfirmedSelection(value: () => Unit): Self = StObject.set(x, "RollbackToLastConfirmedSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRowClick(value: ASPxClientEvent[ASPxClientGridViewRowClickEventHandler[ASPxClientGridLookup]]): Self = StObject.set(x, "RowClick", value.asInstanceOf[js.Any])
+    inline def setRowClick(value: ASPxClientEvent[ASPxClientGridViewRowClickEventHandler[ASPxClientGridLookup]]): Self = StObject.set(x, "RowClick", value.asInstanceOf[js.Any])
   }
 }

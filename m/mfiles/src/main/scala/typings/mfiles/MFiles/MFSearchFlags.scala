@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFSearchFlags extends StObject
 object MFSearchFlags {
   
-  @scala.inline
-  def DisableRelevancyRanking: `16` = 16.asInstanceOf[`16`]
+  inline def DisableRelevancyRanking: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def LookAllObjectTypes: `4` = 4.asInstanceOf[`4`]
+  inline def LookAllObjectTypes: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def LookInAllVersions: `1` = 1.asInstanceOf[`1`]
+  inline def LookInAllVersions: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ReturnLatestVisibleVersion: `2` = 2.asInstanceOf[`2`]
+  inline def ReturnLatestVisibleVersion: `2` = 2.asInstanceOf[`2`]
 }

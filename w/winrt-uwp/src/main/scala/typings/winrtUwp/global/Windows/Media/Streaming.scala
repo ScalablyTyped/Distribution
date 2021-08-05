@@ -37,8 +37,7 @@ object Streaming {
         * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
         */
       /* static member */
-      @scala.inline
-      def createFromStreamAsync(stream: IInputStream, uri: Uri, contentType: String): IPromiseWithIAsyncOperation[
+      inline def createFromStreamAsync(stream: IInputStream, uri: Uri, contentType: String): IPromiseWithIAsyncOperation[
             typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceCreationResult
           ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromStreamAsync")(stream.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[
             typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceCreationResult
@@ -52,8 +51,7 @@ object Streaming {
         * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
         */
       /* static member */
-      @scala.inline
-      def createFromStreamAsync(stream: IInputStream, uri: Uri, contentType: String, httpClient: HttpClient): IPromiseWithIAsyncOperation[
+      inline def createFromStreamAsync(stream: IInputStream, uri: Uri, contentType: String, httpClient: HttpClient): IPromiseWithIAsyncOperation[
             typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceCreationResult
           ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromStreamAsync")(stream.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any], httpClient.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[
             typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceCreationResult
@@ -65,8 +63,7 @@ object Streaming {
         * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
         */
       /* static member */
-      @scala.inline
-      def createFromUriAsync(uri: Uri): IPromiseWithIAsyncOperation[
+      inline def createFromUriAsync(uri: Uri): IPromiseWithIAsyncOperation[
             typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceCreationResult
           ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromUriAsync")(uri.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[
             typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceCreationResult
@@ -78,8 +75,7 @@ object Streaming {
         * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
         */
       /* static member */
-      @scala.inline
-      def createFromUriAsync(uri: Uri, httpClient: HttpClient): IPromiseWithIAsyncOperation[
+      inline def createFromUriAsync(uri: Uri, httpClient: HttpClient): IPromiseWithIAsyncOperation[
             typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceCreationResult
           ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromUriAsync")(uri.asInstanceOf[js.Any], httpClient.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[
             typings.winrtUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceCreationResult
@@ -91,8 +87,7 @@ object Streaming {
         * @return Returns a value that indicates whether the content type of the source is supported. true if supported; otherwise, false.
         */
       /* static member */
-      @scala.inline
-      def isContentTypeSupported(contentType: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContentTypeSupported")(contentType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isContentTypeSupported(contentType: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContentTypeSupported")(contentType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     }
     
     @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceAdvancedSettings")

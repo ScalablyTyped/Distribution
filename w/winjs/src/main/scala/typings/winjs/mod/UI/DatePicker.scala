@@ -34,14 +34,10 @@ object DatePicker {
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
     **/
   /* static member */
-  @scala.inline
-  def getInformation(startDate: js.Any, endDate: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def getInformation(startDate: js.Any, endDate: js.Any, calendar: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendar.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def getInformation(startDate: js.Any, endDate: js.Any, calendar: js.Any, datePatterns: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendar.asInstanceOf[js.Any], datePatterns.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def getInformation(startDate: js.Any, endDate: js.Any, calendar: Unit, datePatterns: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendar.asInstanceOf[js.Any], datePatterns.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getInformation(startDate: js.Any, endDate: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getInformation(startDate: js.Any, endDate: js.Any, calendar: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendar.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getInformation(startDate: js.Any, endDate: js.Any, calendar: js.Any, datePatterns: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendar.asInstanceOf[js.Any], datePatterns.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getInformation(startDate: js.Any, endDate: js.Any, calendar: Unit, datePatterns: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendar.asInstanceOf[js.Any], datePatterns.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Indicates that the object is compatibile with declarative processing.
@@ -50,6 +46,5 @@ object DatePicker {
   @JSImport("winjs", "UI.DatePicker.supportedForProcessing")
   @js.native
   def supportedForProcessing: Boolean = js.native
-  @scala.inline
-  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

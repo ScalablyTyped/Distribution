@@ -12,19 +12,15 @@ trait ActionThreshold extends StObject {
 }
 object ActionThreshold {
   
-  @scala.inline
-  def apply(ActionThresholdType: ThresholdType, ActionThresholdValue: NotificationThreshold): ActionThreshold = {
+  inline def apply(ActionThresholdType: ThresholdType, ActionThresholdValue: NotificationThreshold): ActionThreshold = {
     val __obj = js.Dynamic.literal(ActionThresholdType = ActionThresholdType.asInstanceOf[js.Any], ActionThresholdValue = ActionThresholdValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionThreshold]
   }
   
-  @scala.inline
-  implicit class ActionThresholdMutableBuilder[Self <: ActionThreshold] (val x: Self) extends AnyVal {
+  extension [Self <: ActionThreshold](x: Self) {
     
-    @scala.inline
-    def setActionThresholdType(value: ThresholdType): Self = StObject.set(x, "ActionThresholdType", value.asInstanceOf[js.Any])
+    inline def setActionThresholdType(value: ThresholdType): Self = StObject.set(x, "ActionThresholdType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionThresholdValue(value: NotificationThreshold): Self = StObject.set(x, "ActionThresholdValue", value.asInstanceOf[js.Any])
+    inline def setActionThresholdValue(value: NotificationThreshold): Self = StObject.set(x, "ActionThresholdValue", value.asInstanceOf[js.Any])
   }
 }

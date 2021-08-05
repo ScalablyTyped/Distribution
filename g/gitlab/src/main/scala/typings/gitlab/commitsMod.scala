@@ -116,44 +116,32 @@ object commitsMod {
   }
   object CommitAction {
     
-    @scala.inline
-    def apply(action: create | delete | move | update, filePath: String): CommitAction = {
+    inline def apply(action: create | delete | move | update, filePath: String): CommitAction = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommitAction]
     }
     
-    @scala.inline
-    implicit class CommitActionMutableBuilder[Self <: CommitAction] (val x: Self) extends AnyVal {
+    extension [Self <: CommitAction](x: Self) {
       
-      @scala.inline
-      def setAction(value: create | delete | move | update): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: create | delete | move | update): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastCommitId(value: String): Self = StObject.set(x, "lastCommitId", value.asInstanceOf[js.Any])
+      inline def setLastCommitId(value: String): Self = StObject.set(x, "lastCommitId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastCommitIdUndefined: Self = StObject.set(x, "lastCommitId", js.undefined)
+      inline def setLastCommitIdUndefined: Self = StObject.set(x, "lastCommitId", js.undefined)
       
-      @scala.inline
-      def setPreviousPath(value: String): Self = StObject.set(x, "previousPath", value.asInstanceOf[js.Any])
+      inline def setPreviousPath(value: String): Self = StObject.set(x, "previousPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousPathUndefined: Self = StObject.set(x, "previousPath", js.undefined)
+      inline def setPreviousPathUndefined: Self = StObject.set(x, "previousPath", js.undefined)
     }
   }
   
@@ -185,8 +173,7 @@ object commitsMod {
   }
   object CommitSchema {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       author_email: String,
       author_name: String,
       created_at: Date,
@@ -199,62 +186,43 @@ object commitsMod {
       __obj.asInstanceOf[CommitSchema]
     }
     
-    @scala.inline
-    implicit class CommitSchemaMutableBuilder[Self <: CommitSchema] (val x: Self) extends AnyVal {
+    extension [Self <: CommitSchema](x: Self) {
       
-      @scala.inline
-      def setAuthor_email(value: String): Self = StObject.set(x, "author_email", value.asInstanceOf[js.Any])
+      inline def setAuthor_email(value: String): Self = StObject.set(x, "author_email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthor_name(value: String): Self = StObject.set(x, "author_name", value.asInstanceOf[js.Any])
+      inline def setAuthor_name(value: String): Self = StObject.set(x, "author_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthored_date(value: Date): Self = StObject.set(x, "authored_date", value.asInstanceOf[js.Any])
+      inline def setAuthored_date(value: Date): Self = StObject.set(x, "authored_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthored_dateUndefined: Self = StObject.set(x, "authored_date", js.undefined)
+      inline def setAuthored_dateUndefined: Self = StObject.set(x, "authored_date", js.undefined)
       
-      @scala.inline
-      def setCommitted_date(value: Date): Self = StObject.set(x, "committed_date", value.asInstanceOf[js.Any])
+      inline def setCommitted_date(value: Date): Self = StObject.set(x, "committed_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitted_dateUndefined: Self = StObject.set(x, "committed_date", js.undefined)
+      inline def setCommitted_dateUndefined: Self = StObject.set(x, "committed_date", js.undefined)
       
-      @scala.inline
-      def setCommitter_email(value: String): Self = StObject.set(x, "committer_email", value.asInstanceOf[js.Any])
+      inline def setCommitter_email(value: String): Self = StObject.set(x, "committer_email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitter_emailUndefined: Self = StObject.set(x, "committer_email", js.undefined)
+      inline def setCommitter_emailUndefined: Self = StObject.set(x, "committer_email", js.undefined)
       
-      @scala.inline
-      def setCommitter_name(value: String): Self = StObject.set(x, "committer_name", value.asInstanceOf[js.Any])
+      inline def setCommitter_name(value: String): Self = StObject.set(x, "committer_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitter_nameUndefined: Self = StObject.set(x, "committer_name", js.undefined)
+      inline def setCommitter_nameUndefined: Self = StObject.set(x, "committer_name", js.undefined)
       
-      @scala.inline
-      def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent_ids(value: js.Array[String]): Self = StObject.set(x, "parent_ids", value.asInstanceOf[js.Any])
+      inline def setParent_ids(value: js.Array[String]): Self = StObject.set(x, "parent_ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent_idsUndefined: Self = StObject.set(x, "parent_ids", js.undefined)
+      inline def setParent_idsUndefined: Self = StObject.set(x, "parent_ids", js.undefined)
       
-      @scala.inline
-      def setParent_idsVarargs(value: String*): Self = StObject.set(x, "parent_ids", js.Array(value :_*))
+      inline def setParent_idsVarargs(value: String*): Self = StObject.set(x, "parent_ids", js.Array(value :_*))
       
-      @scala.inline
-      def setShort_id(value: String): Self = StObject.set(x, "short_id", value.asInstanceOf[js.Any])
+      inline def setShort_id(value: String): Self = StObject.set(x, "short_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

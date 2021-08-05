@@ -40,16 +40,12 @@ object errorMod {
     @JSImport("tslint/lib/error", "FatalError.NAME")
     @js.native
     def NAME: String = js.native
-    @scala.inline
-    def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
+    inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def isError(possibleError: js.Any): /* is tslint.tslint/lib/error.Error */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(possibleError.asInstanceOf[js.Any]).asInstanceOf[/* is tslint.tslint/lib/error.Error */ Boolean]
+  inline def isError(possibleError: js.Any): /* is tslint.tslint/lib/error.Error */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(possibleError.asInstanceOf[js.Any]).asInstanceOf[/* is tslint.tslint/lib/error.Error */ Boolean]
   
-  @scala.inline
-  def showRuleCrashWarning(message: String, ruleName: String, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showRuleCrashWarning")(message.asInstanceOf[js.Any], ruleName.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def showRuleCrashWarning(message: String, ruleName: String, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showRuleCrashWarning")(message.asInstanceOf[js.Any], ruleName.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def showWarningOnce(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showWarningOnce")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def showWarningOnce(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showWarningOnce")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

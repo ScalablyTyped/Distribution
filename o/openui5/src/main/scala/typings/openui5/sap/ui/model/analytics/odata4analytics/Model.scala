@@ -36,8 +36,7 @@ trait Model extends StObject {
 }
 object Model {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     findQueryResultByName: String => QueryResult,
     getAllQueryResultNames: () => js.Array[String],
     getAllQueryResults: () => js.Any,
@@ -47,20 +46,15 @@ object Model {
     __obj.asInstanceOf[Model]
   }
   
-  @scala.inline
-  implicit class ModelMutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
+  extension [Self <: Model](x: Self) {
     
-    @scala.inline
-    def setFindQueryResultByName(value: String => QueryResult): Self = StObject.set(x, "findQueryResultByName", js.Any.fromFunction1(value))
+    inline def setFindQueryResultByName(value: String => QueryResult): Self = StObject.set(x, "findQueryResultByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAllQueryResultNames(value: () => js.Array[String]): Self = StObject.set(x, "getAllQueryResultNames", js.Any.fromFunction0(value))
+    inline def setGetAllQueryResultNames(value: () => js.Array[String]): Self = StObject.set(x, "getAllQueryResultNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAllQueryResults(value: () => js.Any): Self = StObject.set(x, "getAllQueryResults", js.Any.fromFunction0(value))
+    inline def setGetAllQueryResults(value: () => js.Any): Self = StObject.set(x, "getAllQueryResults", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetODataModel(value: () => js.Any): Self = StObject.set(x, "getODataModel", js.Any.fromFunction0(value))
+    inline def setGetODataModel(value: () => js.Any): Self = StObject.set(x, "getODataModel", js.Any.fromFunction0(value))
   }
   
   trait ReferenceByModel extends StObject

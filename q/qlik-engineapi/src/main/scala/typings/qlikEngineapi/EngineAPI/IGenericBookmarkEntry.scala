@@ -21,19 +21,15 @@ trait IGenericBookmarkEntry extends StObject {
 }
 object IGenericBookmarkEntry {
   
-  @scala.inline
-  def apply(qBookmark: INxBookmark, qProperties: IGenericBookmarkProperties): IGenericBookmarkEntry = {
+  inline def apply(qBookmark: INxBookmark, qProperties: IGenericBookmarkProperties): IGenericBookmarkEntry = {
     val __obj = js.Dynamic.literal(qBookmark = qBookmark.asInstanceOf[js.Any], qProperties = qProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericBookmarkEntry]
   }
   
-  @scala.inline
-  implicit class IGenericBookmarkEntryMutableBuilder[Self <: IGenericBookmarkEntry] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericBookmarkEntry](x: Self) {
     
-    @scala.inline
-    def setQBookmark(value: INxBookmark): Self = StObject.set(x, "qBookmark", value.asInstanceOf[js.Any])
+    inline def setQBookmark(value: INxBookmark): Self = StObject.set(x, "qBookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQProperties(value: IGenericBookmarkProperties): Self = StObject.set(x, "qProperties", value.asInstanceOf[js.Any])
+    inline def setQProperties(value: IGenericBookmarkProperties): Self = StObject.set(x, "qProperties", value.asInstanceOf[js.Any])
   }
 }

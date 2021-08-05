@@ -16,16 +16,13 @@ trait subscribeCompleteArgs
 }
 object subscribeCompleteArgs {
   
-  @scala.inline
-  def apply(client: client, clientId: String, isResubscribe: Boolean, meta: js.Any, timestamp: Date): subscribeCompleteArgs = {
+  inline def apply(client: client, clientId: String, isResubscribe: Boolean, meta: js.Any, timestamp: Date): subscribeCompleteArgs = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], isResubscribe = isResubscribe.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[subscribeCompleteArgs]
   }
   
-  @scala.inline
-  implicit class subscribeCompleteArgsMutableBuilder[Self <: subscribeCompleteArgs] (val x: Self) extends AnyVal {
+  extension [Self <: subscribeCompleteArgs](x: Self) {
     
-    @scala.inline
-    def setIsResubscribe(value: Boolean): Self = StObject.set(x, "isResubscribe", value.asInstanceOf[js.Any])
+    inline def setIsResubscribe(value: Boolean): Self = StObject.set(x, "isResubscribe", value.asInstanceOf[js.Any])
   }
 }

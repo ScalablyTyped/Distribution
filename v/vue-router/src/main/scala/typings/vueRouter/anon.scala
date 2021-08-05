@@ -23,29 +23,22 @@ object anon {
   }
   object Behavior {
     
-    @scala.inline
-    def apply(selector: String): Behavior = {
+    inline def apply(selector: String): Behavior = {
       val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
       __obj.asInstanceOf[Behavior]
     }
     
-    @scala.inline
-    implicit class BehaviorMutableBuilder[Self <: Behavior] (val x: Self) extends AnyVal {
+    extension [Self <: Behavior](x: Self) {
       
-      @scala.inline
-      def setBehavior(value: ScrollBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+      inline def setBehavior(value: ScrollBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+      inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Position): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Position): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,29 +57,22 @@ object anon {
   }
   object Href {
     
-    @scala.inline
-    def apply(href: String, location: Location, normalizedTo: Location, resolved: Route, route: Route): Href = {
+    inline def apply(href: String, location: Location, normalizedTo: Location, resolved: Route, route: Route): Href = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], normalizedTo = normalizedTo.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[Href]
     }
     
-    @scala.inline
-    implicit class HrefMutableBuilder[Self <: Href] (val x: Self) extends AnyVal {
+    extension [Self <: Href](x: Self) {
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizedTo(value: Location): Self = StObject.set(x, "normalizedTo", value.asInstanceOf[js.Any])
+      inline def setNormalizedTo(value: Location): Self = StObject.set(x, "normalizedTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolved(value: Route): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
+      inline def setResolved(value: Route): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute(value: Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
 }

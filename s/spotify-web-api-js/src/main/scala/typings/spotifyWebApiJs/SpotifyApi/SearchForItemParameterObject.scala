@@ -34,43 +34,31 @@ trait SearchForItemParameterObject extends StObject {
 }
 object SearchForItemParameterObject {
   
-  @scala.inline
-  def apply(): SearchForItemParameterObject = {
+  inline def apply(): SearchForItemParameterObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchForItemParameterObject]
   }
   
-  @scala.inline
-  implicit class SearchForItemParameterObjectMutableBuilder[Self <: SearchForItemParameterObject] (val x: Self) extends AnyVal {
+  extension [Self <: SearchForItemParameterObject](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setMarket(value: String): Self = StObject.set(x, "market", value.asInstanceOf[js.Any])
+    inline def setMarket(value: String): Self = StObject.set(x, "market", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarketUndefined: Self = StObject.set(x, "market", js.undefined)
+    inline def setMarketUndefined: Self = StObject.set(x, "market", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

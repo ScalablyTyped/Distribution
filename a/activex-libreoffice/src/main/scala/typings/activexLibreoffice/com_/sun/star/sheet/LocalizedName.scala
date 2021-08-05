@@ -19,19 +19,15 @@ trait LocalizedName extends StObject {
 }
 object LocalizedName {
   
-  @scala.inline
-  def apply(Locale: Locale, Name: String): LocalizedName = {
+  inline def apply(Locale: Locale, Name: String): LocalizedName = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalizedName]
   }
   
-  @scala.inline
-  implicit class LocalizedNameMutableBuilder[Self <: LocalizedName] (val x: Self) extends AnyVal {
+  extension [Self <: LocalizedName](x: Self) {
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

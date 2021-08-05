@@ -18,25 +18,19 @@ trait EditModeEnteringEventUIParam extends StObject {
 }
 object EditModeEnteringEventUIParam {
   
-  @scala.inline
-  def apply(): EditModeEnteringEventUIParam = {
+  inline def apply(): EditModeEnteringEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditModeEnteringEventUIParam]
   }
   
-  @scala.inline
-  implicit class EditModeEnteringEventUIParamMutableBuilder[Self <: EditModeEnteringEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: EditModeEnteringEventUIParam](x: Self) {
     
-    @scala.inline
-    def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+    inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

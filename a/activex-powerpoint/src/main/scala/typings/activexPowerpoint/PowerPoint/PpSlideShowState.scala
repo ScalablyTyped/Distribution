@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpSlideShowState extends StObject
 object PpSlideShowState {
   
-  @scala.inline
-  def ppSlideShowBlackScreen: `3` = 3.asInstanceOf[`3`]
+  inline def ppSlideShowBlackScreen: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppSlideShowDone: `5` = 5.asInstanceOf[`5`]
+  inline def ppSlideShowDone: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ppSlideShowPaused: `2` = 2.asInstanceOf[`2`]
+  inline def ppSlideShowPaused: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppSlideShowRunning: `1` = 1.asInstanceOf[`1`]
+  inline def ppSlideShowRunning: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppSlideShowWhiteScreen: `4` = 4.asInstanceOf[`4`]
+  inline def ppSlideShowWhiteScreen: `4` = 4.asInstanceOf[`4`]
 }

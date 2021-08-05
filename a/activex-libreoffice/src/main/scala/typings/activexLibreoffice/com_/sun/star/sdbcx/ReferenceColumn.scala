@@ -19,8 +19,7 @@ trait ReferenceColumn
 }
 object ReferenceColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultValue: String,
     Description: String,
     IsAutoIncrement: Boolean,
@@ -50,10 +49,8 @@ object ReferenceColumn {
     __obj.asInstanceOf[ReferenceColumn]
   }
   
-  @scala.inline
-  implicit class ReferenceColumnMutableBuilder[Self <: ReferenceColumn] (val x: Self) extends AnyVal {
+  extension [Self <: ReferenceColumn](x: Self) {
     
-    @scala.inline
-    def setReferencedColumn(value: String): Self = StObject.set(x, "ReferencedColumn", value.asInstanceOf[js.Any])
+    inline def setReferencedColumn(value: String): Self = StObject.set(x, "ReferencedColumn", value.asInstanceOf[js.Any])
   }
 }

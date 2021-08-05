@@ -35,37 +35,27 @@ trait SchemaAchievementResetResponse extends StObject {
 }
 object SchemaAchievementResetResponse {
   
-  @scala.inline
-  def apply(): SchemaAchievementResetResponse = {
+  inline def apply(): SchemaAchievementResetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAchievementResetResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAchievementResetResponseMutableBuilder[Self <: SchemaAchievementResetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAchievementResetResponse](x: Self) {
     
-    @scala.inline
-    def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
+    inline def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentStateUndefined: Self = StObject.set(x, "currentState", js.undefined)
+    inline def setCurrentStateUndefined: Self = StObject.set(x, "currentState", js.undefined)
     
-    @scala.inline
-    def setDefinitionId(value: String): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
+    inline def setDefinitionId(value: String): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionIdUndefined: Self = StObject.set(x, "definitionId", js.undefined)
+    inline def setDefinitionIdUndefined: Self = StObject.set(x, "definitionId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setUpdateOccurred(value: Boolean): Self = StObject.set(x, "updateOccurred", value.asInstanceOf[js.Any])
+    inline def setUpdateOccurred(value: Boolean): Self = StObject.set(x, "updateOccurred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateOccurredUndefined: Self = StObject.set(x, "updateOccurred", js.undefined)
+    inline def setUpdateOccurredUndefined: Self = StObject.set(x, "updateOccurred", js.undefined)
   }
 }

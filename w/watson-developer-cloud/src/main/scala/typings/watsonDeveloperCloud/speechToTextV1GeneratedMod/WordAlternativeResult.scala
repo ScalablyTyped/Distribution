@@ -15,19 +15,15 @@ trait WordAlternativeResult extends StObject {
 }
 object WordAlternativeResult {
   
-  @scala.inline
-  def apply(confidence: Double, word: String): WordAlternativeResult = {
+  inline def apply(confidence: Double, word: String): WordAlternativeResult = {
     val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], word = word.asInstanceOf[js.Any])
     __obj.asInstanceOf[WordAlternativeResult]
   }
   
-  @scala.inline
-  implicit class WordAlternativeResultMutableBuilder[Self <: WordAlternativeResult] (val x: Self) extends AnyVal {
+  extension [Self <: WordAlternativeResult](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+    inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
   }
 }

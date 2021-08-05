@@ -6,20 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `type` extends StObject {
   
-  var typekey: `type`
+  /* private */ var typekey: `type`
 }
 object `type` {
   
-  @scala.inline
-  def apply(typekey: `type`): `type` = {
+  inline def apply(typekey: `type`): `type` = {
     val __obj = js.Dynamic.literal(typekey = typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[`type`]
   }
   
-  @scala.inline
-  implicit class typeMutableBuilder[Self <: `type`] (val x: Self) extends AnyVal {
+  extension [Self <: `type`](x: Self) {
     
-    @scala.inline
-    def setTypekey(value: `type`): Self = StObject.set(x, "typekey", value.asInstanceOf[js.Any])
+    inline def setTypekey(value: `type`): Self = StObject.set(x, "typekey", value.asInstanceOf[js.Any])
   }
 }

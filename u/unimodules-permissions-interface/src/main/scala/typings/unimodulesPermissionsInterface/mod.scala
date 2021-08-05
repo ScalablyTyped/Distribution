@@ -49,26 +49,20 @@ object mod {
   }
   object PermissionResponse {
     
-    @scala.inline
-    def apply(canAskAgain: Boolean, expires: PermissionExpiration, granted: Boolean, status: PermissionStatus): PermissionResponse = {
+    inline def apply(canAskAgain: Boolean, expires: PermissionExpiration, granted: Boolean, status: PermissionStatus): PermissionResponse = {
       val __obj = js.Dynamic.literal(canAskAgain = canAskAgain.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], granted = granted.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[PermissionResponse]
     }
     
-    @scala.inline
-    implicit class PermissionResponseMutableBuilder[Self <: PermissionResponse] (val x: Self) extends AnyVal {
+    extension [Self <: PermissionResponse](x: Self) {
       
-      @scala.inline
-      def setCanAskAgain(value: Boolean): Self = StObject.set(x, "canAskAgain", value.asInstanceOf[js.Any])
+      inline def setCanAskAgain(value: Boolean): Self = StObject.set(x, "canAskAgain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires(value: PermissionExpiration): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: PermissionExpiration): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGranted(value: Boolean): Self = StObject.set(x, "granted", value.asInstanceOf[js.Any])
+      inline def setGranted(value: Boolean): Self = StObject.set(x, "granted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: PermissionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: PermissionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -26,43 +26,31 @@ trait MatchingJob extends StObject {
 }
 object MatchingJob {
   
-  @scala.inline
-  def apply(): MatchingJob = {
+  inline def apply(): MatchingJob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatchingJob]
   }
   
-  @scala.inline
-  implicit class MatchingJobMutableBuilder[Self <: MatchingJob] (val x: Self) extends AnyVal {
+  extension [Self <: MatchingJob](x: Self) {
     
-    @scala.inline
-    def setCommuteInfo(value: CommuteInfo): Self = StObject.set(x, "commuteInfo", value.asInstanceOf[js.Any])
+    inline def setCommuteInfo(value: CommuteInfo): Self = StObject.set(x, "commuteInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommuteInfoUndefined: Self = StObject.set(x, "commuteInfo", js.undefined)
+    inline def setCommuteInfoUndefined: Self = StObject.set(x, "commuteInfo", js.undefined)
     
-    @scala.inline
-    def setJob(value: Job): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: Job): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobSummary(value: String): Self = StObject.set(x, "jobSummary", value.asInstanceOf[js.Any])
+    inline def setJobSummary(value: String): Self = StObject.set(x, "jobSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobSummaryUndefined: Self = StObject.set(x, "jobSummary", js.undefined)
+    inline def setJobSummaryUndefined: Self = StObject.set(x, "jobSummary", js.undefined)
     
-    @scala.inline
-    def setJobTitleSnippet(value: String): Self = StObject.set(x, "jobTitleSnippet", value.asInstanceOf[js.Any])
+    inline def setJobTitleSnippet(value: String): Self = StObject.set(x, "jobTitleSnippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTitleSnippetUndefined: Self = StObject.set(x, "jobTitleSnippet", js.undefined)
+    inline def setJobTitleSnippetUndefined: Self = StObject.set(x, "jobTitleSnippet", js.undefined)
     
-    @scala.inline
-    def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
+    inline def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
     
-    @scala.inline
-    def setSearchTextSnippet(value: String): Self = StObject.set(x, "searchTextSnippet", value.asInstanceOf[js.Any])
+    inline def setSearchTextSnippet(value: String): Self = StObject.set(x, "searchTextSnippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchTextSnippetUndefined: Self = StObject.set(x, "searchTextSnippet", js.undefined)
+    inline def setSearchTextSnippetUndefined: Self = StObject.set(x, "searchTextSnippet", js.undefined)
   }
 }

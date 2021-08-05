@@ -40,8 +40,7 @@ object bodyMod extends Shortcut {
   }
   object BodyProps {
     
-    @scala.inline
-    def apply[RecordType](
+    inline def apply[RecordType](
       childrenColumnName: String,
       data: js.Array[RecordType],
       expandedKeys: Set[Key],
@@ -54,38 +53,27 @@ object bodyMod extends Shortcut {
       __obj.asInstanceOf[BodyProps[RecordType]]
     }
     
-    @scala.inline
-    implicit class BodyPropsMutableBuilder[Self <: BodyProps[?], RecordType] (val x: Self & BodyProps[RecordType]) extends AnyVal {
+    extension [Self <: BodyProps[?], RecordType](x: Self & BodyProps[RecordType]) {
       
-      @scala.inline
-      def setChildrenColumnName(value: String): Self = StObject.set(x, "childrenColumnName", value.asInstanceOf[js.Any])
+      inline def setChildrenColumnName(value: String): Self = StObject.set(x, "childrenColumnName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Array[RecordType]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[RecordType]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: RecordType*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: RecordType*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setEmptyNode(value: ReactNode): Self = StObject.set(x, "emptyNode", value.asInstanceOf[js.Any])
+      inline def setEmptyNode(value: ReactNode): Self = StObject.set(x, "emptyNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyNodeUndefined: Self = StObject.set(x, "emptyNode", js.undefined)
+      inline def setEmptyNodeUndefined: Self = StObject.set(x, "emptyNode", js.undefined)
       
-      @scala.inline
-      def setExpandedKeys(value: Set[Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
+      inline def setExpandedKeys(value: Set[Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetRowKey(value: (RecordType, /* index */ js.UndefOr[Double]) => Key): Self = StObject.set(x, "getRowKey", js.Any.fromFunction2(value))
+      inline def setGetRowKey(value: (RecordType, /* index */ js.UndefOr[Double]) => Key): Self = StObject.set(x, "getRowKey", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMeasureColumnWidth(value: Boolean): Self = StObject.set(x, "measureColumnWidth", value.asInstanceOf[js.Any])
+      inline def setMeasureColumnWidth(value: Boolean): Self = StObject.set(x, "measureColumnWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRow(value: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]): Self = StObject.set(x, "onRow", js.Any.fromFunction2(value))
+      inline def setOnRow(value: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]): Self = StObject.set(x, "onRow", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRowExpandable(value: RecordType => Boolean): Self = StObject.set(x, "rowExpandable", js.Any.fromFunction1(value))
+      inline def setRowExpandable(value: RecordType => Boolean): Self = StObject.set(x, "rowExpandable", js.Any.fromFunction1(value))
     }
   }
   

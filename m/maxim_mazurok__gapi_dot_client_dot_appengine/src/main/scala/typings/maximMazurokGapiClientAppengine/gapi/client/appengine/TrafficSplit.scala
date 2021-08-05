@@ -23,29 +23,23 @@ trait TrafficSplit extends StObject {
 }
 object TrafficSplit {
   
-  @scala.inline
-  def apply(): TrafficSplit = {
+  inline def apply(): TrafficSplit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrafficSplit]
   }
   
-  @scala.inline
-  implicit class TrafficSplitMutableBuilder[Self <: TrafficSplit] (val x: Self) extends AnyVal {
+  extension [Self <: TrafficSplit](x: Self) {
     
-    @scala.inline
-    def setAllocations(
+    inline def setAllocations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
       */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.TrafficSplit & TopLevel[js.Any]
     ): Self = StObject.set(x, "allocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocationsUndefined: Self = StObject.set(x, "allocations", js.undefined)
+    inline def setAllocationsUndefined: Self = StObject.set(x, "allocations", js.undefined)
     
-    @scala.inline
-    def setShardBy(value: String): Self = StObject.set(x, "shardBy", value.asInstanceOf[js.Any])
+    inline def setShardBy(value: String): Self = StObject.set(x, "shardBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardByUndefined: Self = StObject.set(x, "shardBy", js.undefined)
+    inline def setShardByUndefined: Self = StObject.set(x, "shardBy", js.undefined)
   }
 }

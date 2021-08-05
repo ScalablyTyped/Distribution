@@ -42,8 +42,7 @@ trait XCellCursor
 }
 object XCellCursor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getCellByPosition: (Double, Double) => XCell,
     getCellRangeByName: String => XCellRange,
@@ -60,22 +59,16 @@ object XCellCursor {
     __obj.asInstanceOf[XCellCursor]
   }
   
-  @scala.inline
-  implicit class XCellCursorMutableBuilder[Self <: XCellCursor] (val x: Self) extends AnyVal {
+  extension [Self <: XCellCursor](x: Self) {
     
-    @scala.inline
-    def setGotoEnd(value: () => Unit): Self = StObject.set(x, "gotoEnd", js.Any.fromFunction0(value))
+    inline def setGotoEnd(value: () => Unit): Self = StObject.set(x, "gotoEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGotoNext(value: () => Unit): Self = StObject.set(x, "gotoNext", js.Any.fromFunction0(value))
+    inline def setGotoNext(value: () => Unit): Self = StObject.set(x, "gotoNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGotoOffset(value: (Double, Double) => Unit): Self = StObject.set(x, "gotoOffset", js.Any.fromFunction2(value))
+    inline def setGotoOffset(value: (Double, Double) => Unit): Self = StObject.set(x, "gotoOffset", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGotoPrevious(value: () => Unit): Self = StObject.set(x, "gotoPrevious", js.Any.fromFunction0(value))
+    inline def setGotoPrevious(value: () => Unit): Self = StObject.set(x, "gotoPrevious", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGotoStart(value: () => Unit): Self = StObject.set(x, "gotoStart", js.Any.fromFunction0(value))
+    inline def setGotoStart(value: () => Unit): Self = StObject.set(x, "gotoStart", js.Any.fromFunction0(value))
   }
 }

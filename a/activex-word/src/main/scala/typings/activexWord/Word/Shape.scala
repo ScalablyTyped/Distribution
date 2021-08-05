@@ -199,7 +199,7 @@ trait Shape extends StObject {
   
   var WidthRelative: Double = js.native
   
-  @JSName("Word.Shape_typekey")
+  /* private */ @JSName("Word.Shape_typekey")
   var WordDotShape_typekey: Shape = js.native
   
   val WrapFormat: typings.activexWord.Word.WrapFormat = js.native

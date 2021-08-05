@@ -33,8 +33,7 @@ trait TaskOrchestrationPlan
 }
 object TaskOrchestrationPlan {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     artifactLocation: String,
     artifactUri: String,
     definition: TaskOrchestrationOwner,
@@ -59,40 +58,28 @@ object TaskOrchestrationPlan {
     __obj.asInstanceOf[TaskOrchestrationPlan]
   }
   
-  @scala.inline
-  implicit class TaskOrchestrationPlanMutableBuilder[Self <: TaskOrchestrationPlan] (val x: Self) extends AnyVal {
+  extension [Self <: TaskOrchestrationPlan](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: PlanEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: PlanEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplementation(value: TaskOrchestrationContainer): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+    inline def setImplementation(value: TaskOrchestrationContainer): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanGroup(value: String): Self = StObject.set(x, "planGroup", value.asInstanceOf[js.Any])
+    inline def setPlanGroup(value: String): Self = StObject.set(x, "planGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedById(value: String): Self = StObject.set(x, "requestedById", value.asInstanceOf[js.Any])
+    inline def setRequestedById(value: String): Self = StObject.set(x, "requestedById", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedForId(value: String): Self = StObject.set(x, "requestedForId", value.asInstanceOf[js.Any])
+    inline def setRequestedForId(value: String): Self = StObject.set(x, "requestedForId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: TaskResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: TaskResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultCode(value: String): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
+    inline def setResultCode(value: String): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: TaskOrchestrationPlanState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: TaskOrchestrationPlanState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeline(value: TimelineReference): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
+    inline def setTimeline(value: TimelineReference): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
   }
 }

@@ -20,49 +20,35 @@ trait SwitchOptions extends StObject {
 }
 object SwitchOptions {
   
-  @scala.inline
-  def apply(): SwitchOptions = {
+  inline def apply(): SwitchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SwitchOptions]
   }
   
-  @scala.inline
-  implicit class SwitchOptionsMutableBuilder[Self <: SwitchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SwitchOptions](x: Self) {
     
-    @scala.inline
-    def setChange(value: /* e */ SwitchChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    inline def setChange(value: /* e */ SwitchChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOffLabel(value: String): Self = StObject.set(x, "offLabel", value.asInstanceOf[js.Any])
+    inline def setOffLabel(value: String): Self = StObject.set(x, "offLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffLabelUndefined: Self = StObject.set(x, "offLabel", js.undefined)
+    inline def setOffLabelUndefined: Self = StObject.set(x, "offLabel", js.undefined)
     
-    @scala.inline
-    def setOnLabel(value: String): Self = StObject.set(x, "onLabel", value.asInstanceOf[js.Any])
+    inline def setOnLabel(value: String): Self = StObject.set(x, "onLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnLabelUndefined: Self = StObject.set(x, "onLabel", js.undefined)
+    inline def setOnLabelUndefined: Self = StObject.set(x, "onLabel", js.undefined)
   }
 }

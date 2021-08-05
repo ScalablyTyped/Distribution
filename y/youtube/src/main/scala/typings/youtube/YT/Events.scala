@@ -39,49 +39,35 @@ trait Events extends StObject {
 }
 object Events {
   
-  @scala.inline
-  def apply(): Events = {
+  inline def apply(): Events = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Events]
   }
   
-  @scala.inline
-  implicit class EventsMutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
+  extension [Self <: Events](x: Self) {
     
-    @scala.inline
-    def setOnApiChange(value: PlayerEvent => Unit): Self = StObject.set(x, "onApiChange", js.Any.fromFunction1(value))
+    inline def setOnApiChange(value: PlayerEvent => Unit): Self = StObject.set(x, "onApiChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnApiChangeUndefined: Self = StObject.set(x, "onApiChange", js.undefined)
+    inline def setOnApiChangeUndefined: Self = StObject.set(x, "onApiChange", js.undefined)
     
-    @scala.inline
-    def setOnError(value: OnErrorEvent => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: OnErrorEvent => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnPlaybackQualityChange(value: OnPlaybackQualityChangeEvent => Unit): Self = StObject.set(x, "onPlaybackQualityChange", js.Any.fromFunction1(value))
+    inline def setOnPlaybackQualityChange(value: OnPlaybackQualityChangeEvent => Unit): Self = StObject.set(x, "onPlaybackQualityChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPlaybackQualityChangeUndefined: Self = StObject.set(x, "onPlaybackQualityChange", js.undefined)
+    inline def setOnPlaybackQualityChangeUndefined: Self = StObject.set(x, "onPlaybackQualityChange", js.undefined)
     
-    @scala.inline
-    def setOnPlaybackRateChange(value: OnPlaybackRateChangeEvent => Unit): Self = StObject.set(x, "onPlaybackRateChange", js.Any.fromFunction1(value))
+    inline def setOnPlaybackRateChange(value: OnPlaybackRateChangeEvent => Unit): Self = StObject.set(x, "onPlaybackRateChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPlaybackRateChangeUndefined: Self = StObject.set(x, "onPlaybackRateChange", js.undefined)
+    inline def setOnPlaybackRateChangeUndefined: Self = StObject.set(x, "onPlaybackRateChange", js.undefined)
     
-    @scala.inline
-    def setOnReady(value: PlayerEvent => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
+    inline def setOnReady(value: PlayerEvent => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
+    inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
     
-    @scala.inline
-    def setOnStateChange(value: OnStateChangeEvent => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
+    inline def setOnStateChange(value: OnStateChangeEvent => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
+    inline def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
   }
 }

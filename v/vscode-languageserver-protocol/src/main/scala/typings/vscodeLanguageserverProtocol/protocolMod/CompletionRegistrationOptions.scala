@@ -10,8 +10,7 @@ trait CompletionRegistrationOptions
      with CompletionOptions
 object CompletionRegistrationOptions {
   
-  @scala.inline
-  def apply(): CompletionRegistrationOptions = {
+  inline def apply(): CompletionRegistrationOptions = {
     val __obj = js.Dynamic.literal(documentSelector = null)
     __obj.asInstanceOf[CompletionRegistrationOptions]
   }

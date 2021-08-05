@@ -17,17 +17,14 @@ object anon {
   }
   object PickAgentaddRequest {
     
-    @scala.inline
-    def apply(addRequest: (/* req */ ClientRequest, /* _opts */ RequestOptions) => Unit): PickAgentaddRequest = {
+    inline def apply(addRequest: (/* req */ ClientRequest, /* _opts */ RequestOptions) => Unit): PickAgentaddRequest = {
       val __obj = js.Dynamic.literal(addRequest = js.Any.fromFunction2(addRequest))
       __obj.asInstanceOf[PickAgentaddRequest]
     }
     
-    @scala.inline
-    implicit class PickAgentaddRequestMutableBuilder[Self <: PickAgentaddRequest] (val x: Self) extends AnyVal {
+    extension [Self <: PickAgentaddRequest](x: Self) {
       
-      @scala.inline
-      def setAddRequest(value: (/* req */ ClientRequest, /* _opts */ RequestOptions) => Unit): Self = StObject.set(x, "addRequest", js.Any.fromFunction2(value))
+      inline def setAddRequest(value: (/* req */ ClientRequest, /* _opts */ RequestOptions) => Unit): Self = StObject.set(x, "addRequest", js.Any.fromFunction2(value))
     }
   }
 }

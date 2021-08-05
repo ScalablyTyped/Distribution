@@ -11,19 +11,15 @@ trait Administrator extends StObject {
 }
 object Administrator {
   
-  @scala.inline
-  def apply(): Administrator = {
+  inline def apply(): Administrator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Administrator]
   }
   
-  @scala.inline
-  implicit class AdministratorMutableBuilder[Self <: Administrator] (val x: Self) extends AnyVal {
+  extension [Self <: Administrator](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
   }
 }

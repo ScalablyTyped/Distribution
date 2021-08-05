@@ -10,13 +10,11 @@ object numeralStrings {
   sealed trait format
     extends StObject
        with RegisterType
-  @scala.inline
-  def format: format = "format".asInstanceOf[format]
+  inline def format: format = "format".asInstanceOf[format]
   
   @js.native
   sealed trait locale
     extends StObject
        with RegisterType
-  @scala.inline
-  def locale: locale = "locale".asInstanceOf[locale]
+  inline def locale: locale = "locale".asInstanceOf[locale]
 }

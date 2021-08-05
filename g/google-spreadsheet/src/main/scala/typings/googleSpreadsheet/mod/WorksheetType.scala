@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorksheetType extends StObject
 object WorksheetType {
   
-  @scala.inline
-  def GRID: typings.googleSpreadsheet.googleSpreadsheetStrings.GRID = "GRID".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.GRID]
+  inline def GRID: typings.googleSpreadsheet.googleSpreadsheetStrings.GRID = "GRID".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.GRID]
   
-  @scala.inline
-  def OBJECT: typings.googleSpreadsheet.googleSpreadsheetStrings.OBJECT = "OBJECT".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.OBJECT]
+  inline def OBJECT: typings.googleSpreadsheet.googleSpreadsheetStrings.OBJECT = "OBJECT".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.OBJECT]
 }

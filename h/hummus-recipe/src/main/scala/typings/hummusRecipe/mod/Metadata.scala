@@ -13,16 +13,13 @@ trait Metadata
 }
 object Metadata {
   
-  @scala.inline
-  def apply(pages: Double): Metadata = {
+  inline def apply(pages: Double): Metadata = {
     val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }
   
-  @scala.inline
-  implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+  extension [Self <: Metadata](x: Self) {
     
-    @scala.inline
-    def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
   }
 }

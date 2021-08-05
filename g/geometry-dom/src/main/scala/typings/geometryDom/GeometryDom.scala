@@ -198,8 +198,7 @@ object GeometryDom {
        with DOMPointReadOnly
   object DOMPoint {
     
-    @scala.inline
-    def apply(matrixTransform: DOMMatrixReadOnly => DOMPoint, w: Double, x: Double, y: Double, z: Double): DOMPoint = {
+    inline def apply(matrixTransform: DOMMatrixReadOnly => DOMPoint, w: Double, x: Double, y: Double, z: Double): DOMPoint = {
       val __obj = js.Dynamic.literal(matrixTransform = js.Any.fromFunction1(matrixTransform), w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
       __obj.asInstanceOf[DOMPoint]
     }
@@ -235,29 +234,22 @@ object GeometryDom {
   }
   object DOMPointReadOnly {
     
-    @scala.inline
-    def apply(matrixTransform: DOMMatrixReadOnly => DOMPoint, w: Double, x: Double, y: Double, z: Double): DOMPointReadOnly = {
+    inline def apply(matrixTransform: DOMMatrixReadOnly => DOMPoint, w: Double, x: Double, y: Double, z: Double): DOMPointReadOnly = {
       val __obj = js.Dynamic.literal(matrixTransform = js.Any.fromFunction1(matrixTransform), w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
       __obj.asInstanceOf[DOMPointReadOnly]
     }
     
-    @scala.inline
-    implicit class DOMPointReadOnlyMutableBuilder[Self <: DOMPointReadOnly] (val x: Self) extends AnyVal {
+    extension [Self <: DOMPointReadOnly](x: Self) {
       
-      @scala.inline
-      def setMatrixTransform(value: DOMMatrixReadOnly => DOMPoint): Self = StObject.set(x, "matrixTransform", js.Any.fromFunction1(value))
+      inline def setMatrixTransform(value: DOMMatrixReadOnly => DOMPoint): Self = StObject.set(x, "matrixTransform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     }
   }
   
@@ -290,29 +282,22 @@ object GeometryDom {
   }
   object DOMQuad {
     
-    @scala.inline
-    def apply(bounds: DOMRectReadOnly, p1: DOMPoint, p2: DOMPoint, p3: DOMPoint, p4: DOMPoint): DOMQuad = {
+    inline def apply(bounds: DOMRectReadOnly, p1: DOMPoint, p2: DOMPoint, p3: DOMPoint, p4: DOMPoint): DOMQuad = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any], p3 = p3.asInstanceOf[js.Any], p4 = p4.asInstanceOf[js.Any])
       __obj.asInstanceOf[DOMQuad]
     }
     
-    @scala.inline
-    implicit class DOMQuadMutableBuilder[Self <: DOMQuad] (val x: Self) extends AnyVal {
+    extension [Self <: DOMQuad](x: Self) {
       
-      @scala.inline
-      def setBounds(value: DOMRectReadOnly): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: DOMRectReadOnly): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP1(value: DOMPoint): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
+      inline def setP1(value: DOMPoint): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP2(value: DOMPoint): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
+      inline def setP2(value: DOMPoint): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP3(value: DOMPoint): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
+      inline def setP3(value: DOMPoint): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP4(value: DOMPoint): Self = StObject.set(x, "p4", value.asInstanceOf[js.Any])
+      inline def setP4(value: DOMPoint): Self = StObject.set(x, "p4", value.asInstanceOf[js.Any])
     }
   }
   
@@ -321,8 +306,7 @@ object GeometryDom {
        with DOMRectReadOnly
   object DOMRect {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bottom: Double,
       height: Double,
       left: Double,
@@ -353,20 +337,16 @@ object GeometryDom {
   }
   object DOMRectList {
     
-    @scala.inline
-    def apply(item: Double => DOMRect, length: Double): typings.geometryDom.GeometryDom.DOMRectList = {
+    inline def apply(item: Double => DOMRect, length: Double): typings.geometryDom.GeometryDom.DOMRectList = {
       val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.geometryDom.GeometryDom.DOMRectList]
     }
     
-    @scala.inline
-    implicit class DOMRectListMutableBuilder[Self <: typings.geometryDom.GeometryDom.DOMRectList] (val x: Self) extends AnyVal {
+    extension [Self <: typings.geometryDom.GeometryDom.DOMRectList](x: Self) {
       
-      @scala.inline
-      def setItem(value: Double => DOMRect): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+      inline def setItem(value: Double => DOMRect): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -414,8 +394,7 @@ object GeometryDom {
   }
   object DOMRectReadOnly {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bottom: Double,
       height: Double,
       left: Double,
@@ -429,32 +408,23 @@ object GeometryDom {
       __obj.asInstanceOf[DOMRectReadOnly]
     }
     
-    @scala.inline
-    implicit class DOMRectReadOnlyMutableBuilder[Self <: DOMRectReadOnly] (val x: Self) extends AnyVal {
+    extension [Self <: DOMRectReadOnly](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

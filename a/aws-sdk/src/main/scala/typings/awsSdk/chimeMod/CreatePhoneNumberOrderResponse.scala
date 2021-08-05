@@ -13,19 +13,15 @@ trait CreatePhoneNumberOrderResponse extends StObject {
 }
 object CreatePhoneNumberOrderResponse {
   
-  @scala.inline
-  def apply(): CreatePhoneNumberOrderResponse = {
+  inline def apply(): CreatePhoneNumberOrderResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePhoneNumberOrderResponse]
   }
   
-  @scala.inline
-  implicit class CreatePhoneNumberOrderResponseMutableBuilder[Self <: CreatePhoneNumberOrderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePhoneNumberOrderResponse](x: Self) {
     
-    @scala.inline
-    def setPhoneNumberOrder(value: PhoneNumberOrder): Self = StObject.set(x, "PhoneNumberOrder", value.asInstanceOf[js.Any])
+    inline def setPhoneNumberOrder(value: PhoneNumberOrder): Self = StObject.set(x, "PhoneNumberOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberOrderUndefined: Self = StObject.set(x, "PhoneNumberOrder", js.undefined)
+    inline def setPhoneNumberOrderUndefined: Self = StObject.set(x, "PhoneNumberOrder", js.undefined)
   }
 }

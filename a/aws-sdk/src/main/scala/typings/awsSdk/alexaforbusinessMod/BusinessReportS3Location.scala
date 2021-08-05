@@ -18,25 +18,19 @@ trait BusinessReportS3Location extends StObject {
 }
 object BusinessReportS3Location {
   
-  @scala.inline
-  def apply(): BusinessReportS3Location = {
+  inline def apply(): BusinessReportS3Location = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BusinessReportS3Location]
   }
   
-  @scala.inline
-  implicit class BusinessReportS3LocationMutableBuilder[Self <: BusinessReportS3Location] (val x: Self) extends AnyVal {
+  extension [Self <: BusinessReportS3Location](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: CustomerS3BucketName): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: CustomerS3BucketName): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketNameUndefined: Self = StObject.set(x, "BucketName", js.undefined)
+    inline def setBucketNameUndefined: Self = StObject.set(x, "BucketName", js.undefined)
     
-    @scala.inline
-    def setPath(value: BusinessReportS3Path): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: BusinessReportS3Path): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
   }
 }

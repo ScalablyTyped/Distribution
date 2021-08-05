@@ -10,6 +10,5 @@ object isWellFormedUnitIdentifierMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def IsWellFormedUnitIdentifier(unit: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsWellFormedUnitIdentifier")(unit.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def IsWellFormedUnitIdentifier(unit: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsWellFormedUnitIdentifier")(unit.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

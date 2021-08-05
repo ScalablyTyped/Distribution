@@ -24,8 +24,7 @@ trait EventNewCandidatePairSele extends StObject {
 }
 object EventNewCandidatePairSele {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     candidatePair: IceCandidatePair,
     source: String,
     tags: js.Array[Tag],
@@ -37,28 +36,20 @@ object EventNewCandidatePairSele {
     __obj.asInstanceOf[EventNewCandidatePairSele]
   }
   
-  @scala.inline
-  implicit class EventNewCandidatePairSeleMutableBuilder[Self <: EventNewCandidatePairSele] (val x: Self) extends AnyVal {
+  extension [Self <: EventNewCandidatePairSele](x: Self) {
     
-    @scala.inline
-    def setCandidatePair(value: IceCandidatePair): Self = StObject.set(x, "candidatePair", value.asInstanceOf[js.Any])
+    inline def setCandidatePair(value: IceCandidatePair): Self = StObject.set(x, "candidatePair", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
+    inline def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: NewCandidatePairSelected): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NewCandidatePairSelected): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

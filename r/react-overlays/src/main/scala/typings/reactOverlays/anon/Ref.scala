@@ -15,19 +15,15 @@ trait Ref extends StObject {
 }
 object Ref {
   
-  @scala.inline
-  def apply(ref: /* instance */ HTMLElement | Null => Unit, style: CSSProperties): Ref = {
+  inline def apply(ref: /* instance */ HTMLElement | Null => Unit, style: CSSProperties): Ref = {
     val __obj = js.Dynamic.literal(ref = js.Any.fromFunction1(ref), style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ref]
   }
   
-  @scala.inline
-  implicit class RefMutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
+  extension [Self <: Ref](x: Self) {
     
-    @scala.inline
-    def setRef(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRef(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

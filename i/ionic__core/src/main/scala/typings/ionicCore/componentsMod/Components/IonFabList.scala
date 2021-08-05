@@ -22,19 +22,15 @@ trait IonFabList extends StObject {
 }
 object IonFabList {
   
-  @scala.inline
-  def apply(activated: Boolean, side: start | end | top | bottom): IonFabList = {
+  inline def apply(activated: Boolean, side: start | end | top | bottom): IonFabList = {
     val __obj = js.Dynamic.literal(activated = activated.asInstanceOf[js.Any], side = side.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonFabList]
   }
   
-  @scala.inline
-  implicit class IonFabListMutableBuilder[Self <: IonFabList] (val x: Self) extends AnyVal {
+  extension [Self <: IonFabList](x: Self) {
     
-    @scala.inline
-    def setActivated(value: Boolean): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
+    inline def setActivated(value: Boolean): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSide(value: start | end | top | bottom): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+    inline def setSide(value: start | end | top | bottom): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
   }
 }

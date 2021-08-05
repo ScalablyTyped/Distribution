@@ -38,8 +38,7 @@ object mod {
   @js.native
   val default: ComponentClass[TriggerProps, js.Any] = js.native
   
-  @scala.inline
-  def generateTrigger(PortalComponent: js.Any): ComponentClass[TriggerProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateTrigger")(PortalComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[TriggerProps, ComponentState]]
+  inline def generateTrigger(PortalComponent: js.Any): ComponentClass[TriggerProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateTrigger")(PortalComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[TriggerProps, ComponentState]]
   
   trait TriggerProps extends StObject {
     
@@ -137,263 +136,178 @@ object mod {
   }
   object TriggerProps {
     
-    @scala.inline
-    def apply(children: ReactElement): TriggerProps = {
+    inline def apply(children: ReactElement): TriggerProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[TriggerProps]
     }
     
-    @scala.inline
-    implicit class TriggerPropsMutableBuilder[Self <: TriggerProps] (val x: Self) extends AnyVal {
+    extension [Self <: TriggerProps](x: Self) {
       
-      @scala.inline
-      def setAction(value: ActionType | js.Array[ActionType]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: ActionType | js.Array[ActionType]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setActionVarargs(value: ActionType*): Self = StObject.set(x, "action", js.Array(value :_*))
+      inline def setActionVarargs(value: ActionType*): Self = StObject.set(x, "action", js.Array(value :_*))
       
-      @scala.inline
-      def setAfterPopupVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "afterPopupVisibleChange", js.Any.fromFunction1(value))
+      inline def setAfterPopupVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "afterPopupVisibleChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterPopupVisibleChangeUndefined: Self = StObject.set(x, "afterPopupVisibleChange", js.undefined)
+      inline def setAfterPopupVisibleChangeUndefined: Self = StObject.set(x, "afterPopupVisibleChange", js.undefined)
       
-      @scala.inline
-      def setAlignPoint(value: Boolean): Self = StObject.set(x, "alignPoint", value.asInstanceOf[js.Any])
+      inline def setAlignPoint(value: Boolean): Self = StObject.set(x, "alignPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignPointUndefined: Self = StObject.set(x, "alignPoint", js.undefined)
+      inline def setAlignPointUndefined: Self = StObject.set(x, "alignPoint", js.undefined)
       
-      @scala.inline
-      def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
+      inline def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
+      inline def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
       
-      @scala.inline
-      def setBlurDelay(value: Double): Self = StObject.set(x, "blurDelay", value.asInstanceOf[js.Any])
+      inline def setBlurDelay(value: Double): Self = StObject.set(x, "blurDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurDelayUndefined: Self = StObject.set(x, "blurDelay", js.undefined)
+      inline def setBlurDelayUndefined: Self = StObject.set(x, "blurDelay", js.undefined)
       
-      @scala.inline
-      def setBuiltinPlacements(value: BuildInPlacements): Self = StObject.set(x, "builtinPlacements", value.asInstanceOf[js.Any])
+      inline def setBuiltinPlacements(value: BuildInPlacements): Self = StObject.set(x, "builtinPlacements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuiltinPlacementsUndefined: Self = StObject.set(x, "builtinPlacements", js.undefined)
+      inline def setBuiltinPlacementsUndefined: Self = StObject.set(x, "builtinPlacements", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDefaultPopupVisible(value: Boolean): Self = StObject.set(x, "defaultPopupVisible", value.asInstanceOf[js.Any])
+      inline def setDefaultPopupVisible(value: Boolean): Self = StObject.set(x, "defaultPopupVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPopupVisibleUndefined: Self = StObject.set(x, "defaultPopupVisible", js.undefined)
+      inline def setDefaultPopupVisibleUndefined: Self = StObject.set(x, "defaultPopupVisible", js.undefined)
       
-      @scala.inline
-      def setDestroyPopupOnHide(value: Boolean): Self = StObject.set(x, "destroyPopupOnHide", value.asInstanceOf[js.Any])
+      inline def setDestroyPopupOnHide(value: Boolean): Self = StObject.set(x, "destroyPopupOnHide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroyPopupOnHideUndefined: Self = StObject.set(x, "destroyPopupOnHide", js.undefined)
+      inline def setDestroyPopupOnHideUndefined: Self = StObject.set(x, "destroyPopupOnHide", js.undefined)
       
-      @scala.inline
-      def setFocusDelay(value: Double): Self = StObject.set(x, "focusDelay", value.asInstanceOf[js.Any])
+      inline def setFocusDelay(value: Double): Self = StObject.set(x, "focusDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusDelayUndefined: Self = StObject.set(x, "focusDelay", js.undefined)
+      inline def setFocusDelayUndefined: Self = StObject.set(x, "focusDelay", js.undefined)
       
-      @scala.inline
-      def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
+      inline def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
+      inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
-      @scala.inline
-      def setGetDocument(value: () => HTMLDocument): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
+      inline def setGetDocument(value: () => HTMLDocument): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDocumentUndefined: Self = StObject.set(x, "getDocument", js.undefined)
+      inline def setGetDocumentUndefined: Self = StObject.set(x, "getDocument", js.undefined)
       
-      @scala.inline
-      def setGetPopupClassNameFromAlign(value: /* align */ AlignType => String): Self = StObject.set(x, "getPopupClassNameFromAlign", js.Any.fromFunction1(value))
+      inline def setGetPopupClassNameFromAlign(value: /* align */ AlignType => String): Self = StObject.set(x, "getPopupClassNameFromAlign", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPopupClassNameFromAlignUndefined: Self = StObject.set(x, "getPopupClassNameFromAlign", js.undefined)
+      inline def setGetPopupClassNameFromAlignUndefined: Self = StObject.set(x, "getPopupClassNameFromAlign", js.undefined)
       
-      @scala.inline
-      def setGetPopupContainer(value: /* node */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
+      inline def setGetPopupContainer(value: /* node */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
+      inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
       
-      @scala.inline
-      def setGetTriggerDOMNode(value: /* node */ ReactInstance => HTMLElement): Self = StObject.set(x, "getTriggerDOMNode", js.Any.fromFunction1(value))
+      inline def setGetTriggerDOMNode(value: /* node */ ReactInstance => HTMLElement): Self = StObject.set(x, "getTriggerDOMNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTriggerDOMNodeUndefined: Self = StObject.set(x, "getTriggerDOMNode", js.undefined)
+      inline def setGetTriggerDOMNodeUndefined: Self = StObject.set(x, "getTriggerDOMNode", js.undefined)
       
-      @scala.inline
-      def setHideAction(value: js.Array[ActionType]): Self = StObject.set(x, "hideAction", value.asInstanceOf[js.Any])
+      inline def setHideAction(value: js.Array[ActionType]): Self = StObject.set(x, "hideAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideActionUndefined: Self = StObject.set(x, "hideAction", js.undefined)
+      inline def setHideActionUndefined: Self = StObject.set(x, "hideAction", js.undefined)
       
-      @scala.inline
-      def setHideActionVarargs(value: ActionType*): Self = StObject.set(x, "hideAction", js.Array(value :_*))
+      inline def setHideActionVarargs(value: ActionType*): Self = StObject.set(x, "hideAction", js.Array(value :_*))
       
-      @scala.inline
-      def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskAnimation(value: String): Self = StObject.set(x, "maskAnimation", value.asInstanceOf[js.Any])
+      inline def setMaskAnimation(value: String): Self = StObject.set(x, "maskAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskAnimationUndefined: Self = StObject.set(x, "maskAnimation", js.undefined)
+      inline def setMaskAnimationUndefined: Self = StObject.set(x, "maskAnimation", js.undefined)
       
-      @scala.inline
-      def setMaskClosable(value: Boolean): Self = StObject.set(x, "maskClosable", value.asInstanceOf[js.Any])
+      inline def setMaskClosable(value: Boolean): Self = StObject.set(x, "maskClosable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskClosableUndefined: Self = StObject.set(x, "maskClosable", js.undefined)
+      inline def setMaskClosableUndefined: Self = StObject.set(x, "maskClosable", js.undefined)
       
-      @scala.inline
-      def setMaskMotion(value: CSSMotionProps): Self = StObject.set(x, "maskMotion", value.asInstanceOf[js.Any])
+      inline def setMaskMotion(value: CSSMotionProps): Self = StObject.set(x, "maskMotion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskMotionUndefined: Self = StObject.set(x, "maskMotion", js.undefined)
+      inline def setMaskMotionUndefined: Self = StObject.set(x, "maskMotion", js.undefined)
       
-      @scala.inline
-      def setMaskTransitionName(value: TransitionNameType): Self = StObject.set(x, "maskTransitionName", value.asInstanceOf[js.Any])
+      inline def setMaskTransitionName(value: TransitionNameType): Self = StObject.set(x, "maskTransitionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskTransitionNameUndefined: Self = StObject.set(x, "maskTransitionName", js.undefined)
+      inline def setMaskTransitionNameUndefined: Self = StObject.set(x, "maskTransitionName", js.undefined)
       
-      @scala.inline
-      def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
       
-      @scala.inline
-      def setMobile(value: MobileConfig): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+      inline def setMobile(value: MobileConfig): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
+      inline def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
       
-      @scala.inline
-      def setMouseEnterDelay(value: Double): Self = StObject.set(x, "mouseEnterDelay", value.asInstanceOf[js.Any])
+      inline def setMouseEnterDelay(value: Double): Self = StObject.set(x, "mouseEnterDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseEnterDelayUndefined: Self = StObject.set(x, "mouseEnterDelay", js.undefined)
+      inline def setMouseEnterDelayUndefined: Self = StObject.set(x, "mouseEnterDelay", js.undefined)
       
-      @scala.inline
-      def setMouseLeaveDelay(value: Double): Self = StObject.set(x, "mouseLeaveDelay", value.asInstanceOf[js.Any])
+      inline def setMouseLeaveDelay(value: Double): Self = StObject.set(x, "mouseLeaveDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseLeaveDelayUndefined: Self = StObject.set(x, "mouseLeaveDelay", js.undefined)
+      inline def setMouseLeaveDelayUndefined: Self = StObject.set(x, "mouseLeaveDelay", js.undefined)
       
-      @scala.inline
-      def setOnPopupAlign(value: (/* element */ HTMLElement, /* align */ AlignType) => Unit): Self = StObject.set(x, "onPopupAlign", js.Any.fromFunction2(value))
+      inline def setOnPopupAlign(value: (/* element */ HTMLElement, /* align */ AlignType) => Unit): Self = StObject.set(x, "onPopupAlign", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnPopupAlignUndefined: Self = StObject.set(x, "onPopupAlign", js.undefined)
+      inline def setOnPopupAlignUndefined: Self = StObject.set(x, "onPopupAlign", js.undefined)
       
-      @scala.inline
-      def setOnPopupVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onPopupVisibleChange", js.Any.fromFunction1(value))
+      inline def setOnPopupVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onPopupVisibleChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPopupVisibleChangeUndefined: Self = StObject.set(x, "onPopupVisibleChange", js.undefined)
+      inline def setOnPopupVisibleChangeUndefined: Self = StObject.set(x, "onPopupVisibleChange", js.undefined)
       
-      @scala.inline
-      def setPopup(value: ReactNode | js.Function0[ReactNode]): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+      inline def setPopup(value: ReactNode | js.Function0[ReactNode]): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupAlign(value: AlignType): Self = StObject.set(x, "popupAlign", value.asInstanceOf[js.Any])
+      inline def setPopupAlign(value: AlignType): Self = StObject.set(x, "popupAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupAlignUndefined: Self = StObject.set(x, "popupAlign", js.undefined)
+      inline def setPopupAlignUndefined: Self = StObject.set(x, "popupAlign", js.undefined)
       
-      @scala.inline
-      def setPopupAnimation(value: AnimationType): Self = StObject.set(x, "popupAnimation", value.asInstanceOf[js.Any])
+      inline def setPopupAnimation(value: AnimationType): Self = StObject.set(x, "popupAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupAnimationUndefined: Self = StObject.set(x, "popupAnimation", js.undefined)
+      inline def setPopupAnimationUndefined: Self = StObject.set(x, "popupAnimation", js.undefined)
       
-      @scala.inline
-      def setPopupClassName(value: String): Self = StObject.set(x, "popupClassName", value.asInstanceOf[js.Any])
+      inline def setPopupClassName(value: String): Self = StObject.set(x, "popupClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupClassNameUndefined: Self = StObject.set(x, "popupClassName", js.undefined)
+      inline def setPopupClassNameUndefined: Self = StObject.set(x, "popupClassName", js.undefined)
       
-      @scala.inline
-      def setPopupFunction0(value: () => ReactNode): Self = StObject.set(x, "popup", js.Any.fromFunction0(value))
+      inline def setPopupFunction0(value: () => ReactNode): Self = StObject.set(x, "popup", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPopupMotion(value: CSSMotionProps): Self = StObject.set(x, "popupMotion", value.asInstanceOf[js.Any])
+      inline def setPopupMotion(value: CSSMotionProps): Self = StObject.set(x, "popupMotion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupMotionUndefined: Self = StObject.set(x, "popupMotion", js.undefined)
+      inline def setPopupMotionUndefined: Self = StObject.set(x, "popupMotion", js.undefined)
       
-      @scala.inline
-      def setPopupPlacement(value: String): Self = StObject.set(x, "popupPlacement", value.asInstanceOf[js.Any])
+      inline def setPopupPlacement(value: String): Self = StObject.set(x, "popupPlacement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupPlacementUndefined: Self = StObject.set(x, "popupPlacement", js.undefined)
+      inline def setPopupPlacementUndefined: Self = StObject.set(x, "popupPlacement", js.undefined)
       
-      @scala.inline
-      def setPopupStyle(value: CSSProperties): Self = StObject.set(x, "popupStyle", value.asInstanceOf[js.Any])
+      inline def setPopupStyle(value: CSSProperties): Self = StObject.set(x, "popupStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupStyleUndefined: Self = StObject.set(x, "popupStyle", js.undefined)
+      inline def setPopupStyleUndefined: Self = StObject.set(x, "popupStyle", js.undefined)
       
-      @scala.inline
-      def setPopupTransitionName(value: TransitionNameType): Self = StObject.set(x, "popupTransitionName", value.asInstanceOf[js.Any])
+      inline def setPopupTransitionName(value: TransitionNameType): Self = StObject.set(x, "popupTransitionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupTransitionNameUndefined: Self = StObject.set(x, "popupTransitionName", js.undefined)
+      inline def setPopupTransitionNameUndefined: Self = StObject.set(x, "popupTransitionName", js.undefined)
       
-      @scala.inline
-      def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
+      inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
       
-      @scala.inline
-      def setPopupVisible(value: Boolean): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
+      inline def setPopupVisible(value: Boolean): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupVisibleUndefined: Self = StObject.set(x, "popupVisible", js.undefined)
+      inline def setPopupVisibleUndefined: Self = StObject.set(x, "popupVisible", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setShowAction(value: js.Array[ActionType]): Self = StObject.set(x, "showAction", value.asInstanceOf[js.Any])
+      inline def setShowAction(value: js.Array[ActionType]): Self = StObject.set(x, "showAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowActionUndefined: Self = StObject.set(x, "showAction", js.undefined)
+      inline def setShowActionUndefined: Self = StObject.set(x, "showAction", js.undefined)
       
-      @scala.inline
-      def setShowActionVarargs(value: ActionType*): Self = StObject.set(x, "showAction", js.Array(value :_*))
+      inline def setShowActionVarargs(value: ActionType*): Self = StObject.set(x, "showAction", js.Array(value :_*))
       
-      @scala.inline
-      def setStretch(value: String): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
+      inline def setStretch(value: String): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
+      inline def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
 }

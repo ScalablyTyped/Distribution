@@ -23,28 +23,21 @@ trait GetSlotTypeVersionsRequest extends StObject {
 }
 object GetSlotTypeVersionsRequest {
   
-  @scala.inline
-  def apply(name: SlotTypeName): GetSlotTypeVersionsRequest = {
+  inline def apply(name: SlotTypeName): GetSlotTypeVersionsRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSlotTypeVersionsRequest]
   }
   
-  @scala.inline
-  implicit class GetSlotTypeVersionsRequestMutableBuilder[Self <: GetSlotTypeVersionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSlotTypeVersionsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setName(value: SlotTypeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SlotTypeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

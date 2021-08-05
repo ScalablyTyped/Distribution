@@ -15,28 +15,21 @@ trait CollectionDefinition
 }
 object CollectionDefinition {
   
-  @scala.inline
-  def apply(): CollectionDefinition = {
+  inline def apply(): CollectionDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionDefinition]
   }
   
-  @scala.inline
-  implicit class CollectionDefinitionMutableBuilder[Self <: CollectionDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionDefinition](x: Self) {
     
-    @scala.inline
-    def setInfo(value: Id): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: Id): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
-    @scala.inline
-    def setVariable(value: js.Array[VariableDefinition]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+    inline def setVariable(value: js.Array[VariableDefinition]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+    inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
     
-    @scala.inline
-    def setVariableVarargs(value: VariableDefinition*): Self = StObject.set(x, "variable", js.Array(value :_*))
+    inline def setVariableVarargs(value: VariableDefinition*): Self = StObject.set(x, "variable", js.Array(value :_*))
   }
 }

@@ -11,8 +11,7 @@ object wonkaSourceFromListenerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromListener[E](
+  inline def fromListener[E](
     addListener: js.Function1[/* cb */ js.Function1[/* event */ E, Unit], Unit],
     removeListener: js.Function1[/* cb */ js.Function1[/* event */ E, Unit], Unit]
   ): Source[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromListener")(addListener.asInstanceOf[js.Any], removeListener.asInstanceOf[js.Any])).asInstanceOf[Source[E]]

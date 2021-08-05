@@ -13,19 +13,15 @@ trait TerminateSessionResponse extends StObject {
 }
 object TerminateSessionResponse {
   
-  @scala.inline
-  def apply(): TerminateSessionResponse = {
+  inline def apply(): TerminateSessionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TerminateSessionResponse]
   }
   
-  @scala.inline
-  implicit class TerminateSessionResponseMutableBuilder[Self <: TerminateSessionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TerminateSessionResponse](x: Self) {
     
-    @scala.inline
-    def setSessionId(value: SessionId): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: SessionId): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionIdUndefined: Self = StObject.set(x, "SessionId", js.undefined)
+    inline def setSessionIdUndefined: Self = StObject.set(x, "SessionId", js.undefined)
   }
 }

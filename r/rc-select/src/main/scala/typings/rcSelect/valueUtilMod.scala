@@ -18,27 +18,20 @@ object valueUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fillOptionsWithMissingValue(options: OptionsType, value: DefaultValueType, optionLabelProp: String, labelInValue: Boolean): OptionsType = (^.asInstanceOf[js.Dynamic].applyDynamic("fillOptionsWithMissingValue")(options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], optionLabelProp.asInstanceOf[js.Any], labelInValue.asInstanceOf[js.Any])).asInstanceOf[OptionsType]
+  inline def fillOptionsWithMissingValue(options: OptionsType, value: DefaultValueType, optionLabelProp: String, labelInValue: Boolean): OptionsType = (^.asInstanceOf[js.Dynamic].applyDynamic("fillOptionsWithMissingValue")(options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], optionLabelProp.asInstanceOf[js.Any], labelInValue.asInstanceOf[js.Any])).asInstanceOf[OptionsType]
   
-  @scala.inline
-  def filterOptions(searchValue: String, options: OptionsType, hasOptionFilterPropFilterOption: OptionFilterProp): OptionsType = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOptions")(searchValue.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasOptionFilterPropFilterOption.asInstanceOf[js.Any])).asInstanceOf[OptionsType]
+  inline def filterOptions(searchValue: String, options: OptionsType, hasOptionFilterPropFilterOption: OptionFilterProp): OptionsType = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOptions")(searchValue.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasOptionFilterPropFilterOption.asInstanceOf[js.Any])).asInstanceOf[OptionsType]
   
-  @scala.inline
-  def findValueOption(values: js.Array[RawValueType], options: js.Array[FlattenOptionData]): js.Array[OptionData] = (^.asInstanceOf[js.Dynamic].applyDynamic("findValueOption")(values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[OptionData]]
-  @scala.inline
-  def findValueOption(values: js.Array[RawValueType], options: js.Array[FlattenOptionData], hasPrevValueOptions: `1`): js.Array[OptionData] = (^.asInstanceOf[js.Dynamic].applyDynamic("findValueOption")(values.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasPrevValueOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[OptionData]]
+  inline def findValueOption(values: js.Array[RawValueType], options: js.Array[FlattenOptionData]): js.Array[OptionData] = (^.asInstanceOf[js.Dynamic].applyDynamic("findValueOption")(values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[OptionData]]
+  inline def findValueOption(values: js.Array[RawValueType], options: js.Array[FlattenOptionData], hasPrevValueOptions: `1`): js.Array[OptionData] = (^.asInstanceOf[js.Dynamic].applyDynamic("findValueOption")(values.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasPrevValueOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[OptionData]]
   
-  @scala.inline
-  def flattenOptions(options: OptionsType): js.Array[FlattenOptionData] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[FlattenOptionData]]
+  inline def flattenOptions(options: OptionsType): js.Array[FlattenOptionData] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[FlattenOptionData]]
   
   @JSImport("rc-select/lib/utils/valueUtil", "getLabeledValue")
   @js.native
   val getLabeledValue: GetLabeledValue[js.Array[FlattenOptionData]] = js.native
   
-  @scala.inline
-  def getSeparatedContent(text: String, tokens: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSeparatedContent")(text.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def getSeparatedContent(text: String, tokens: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSeparatedContent")(text.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def isValueDisabled(value: RawValueType, options: js.Array[FlattenOptionData]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValueDisabled")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValueDisabled(value: RawValueType, options: js.Array[FlattenOptionData]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValueDisabled")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

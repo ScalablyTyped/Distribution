@@ -14,31 +14,23 @@ trait DropDownListPopup extends StObject {
 }
 object DropDownListPopup {
   
-  @scala.inline
-  def apply(): DropDownListPopup = {
+  inline def apply(): DropDownListPopup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropDownListPopup]
   }
   
-  @scala.inline
-  implicit class DropDownListPopupMutableBuilder[Self <: DropDownListPopup] (val x: Self) extends AnyVal {
+  extension [Self <: DropDownListPopup](x: Self) {
     
-    @scala.inline
-    def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    inline def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+    inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

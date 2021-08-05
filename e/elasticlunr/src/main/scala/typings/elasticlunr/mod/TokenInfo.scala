@@ -12,19 +12,15 @@ trait TokenInfo extends StObject {
 }
 object TokenInfo {
   
-  @scala.inline
-  def apply(ref: Double | String, tf: Double): TokenInfo = {
+  inline def apply(ref: Double | String, tf: Double): TokenInfo = {
     val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any], tf = tf.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenInfo]
   }
   
-  @scala.inline
-  implicit class TokenInfoMutableBuilder[Self <: TokenInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TokenInfo](x: Self) {
     
-    @scala.inline
-    def setRef(value: Double | String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: Double | String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTf(value: Double): Self = StObject.set(x, "tf", value.asInstanceOf[js.Any])
+    inline def setTf(value: Double): Self = StObject.set(x, "tf", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait EnumValuesNeedsInvestigation extends StObject {
 }
 object EnumValuesNeedsInvestigation {
   
-  @scala.inline
-  def apply(enumValues: NeedsInvestigation): EnumValuesNeedsInvestigation = {
+  inline def apply(enumValues: NeedsInvestigation): EnumValuesNeedsInvestigation = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesNeedsInvestigation]
   }
   
-  @scala.inline
-  implicit class EnumValuesNeedsInvestigationMutableBuilder[Self <: EnumValuesNeedsInvestigation] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesNeedsInvestigation](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: NeedsInvestigation): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: NeedsInvestigation): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -14,6 +14,5 @@ object rendererToRenderer2UtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findRendererReferences(sourceFile: SourceFile, typeChecker: TypeChecker, rendererImportSpecifier: ImportSpecifier): ForwardRefs = (^.asInstanceOf[js.Dynamic].applyDynamic("findRendererReferences")(sourceFile.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any], rendererImportSpecifier.asInstanceOf[js.Any])).asInstanceOf[ForwardRefs]
+  inline def findRendererReferences(sourceFile: SourceFile, typeChecker: TypeChecker, rendererImportSpecifier: ImportSpecifier): ForwardRefs = (^.asInstanceOf[js.Dynamic].applyDynamic("findRendererReferences")(sourceFile.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any], rendererImportSpecifier.asInstanceOf[js.Any])).asInstanceOf[ForwardRefs]
 }

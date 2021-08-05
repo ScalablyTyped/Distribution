@@ -13,22 +13,17 @@ trait SketchMSSymbolContainers extends StObject {
 }
 object SketchMSSymbolContainers {
   
-  @scala.inline
-  def apply(objects: js.Array[js.Any]): SketchMSSymbolContainers = {
+  inline def apply(objects: js.Array[js.Any]): SketchMSSymbolContainers = {
     val __obj = js.Dynamic.literal(_class = "symbolContainer", objects = objects.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSSymbolContainers]
   }
   
-  @scala.inline
-  implicit class SketchMSSymbolContainersMutableBuilder[Self <: SketchMSSymbolContainers] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSSymbolContainers](x: Self) {
     
-    @scala.inline
-    def setObjects(value: js.Array[js.Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+    inline def setObjects(value: js.Array[js.Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
+    inline def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
     
-    @scala.inline
-    def set_class(value: symbolContainer): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: symbolContainer): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

@@ -15,8 +15,7 @@ trait TestResultsDetailsForGroup extends StObject {
 }
 object TestResultsDetailsForGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     groupByValue: js.Any,
     results: js.Array[TestCaseResult],
     resultsCountByOutcome: NumberDictionary[AggregatedResultsByOutcome]
@@ -25,19 +24,14 @@ object TestResultsDetailsForGroup {
     __obj.asInstanceOf[TestResultsDetailsForGroup]
   }
   
-  @scala.inline
-  implicit class TestResultsDetailsForGroupMutableBuilder[Self <: TestResultsDetailsForGroup] (val x: Self) extends AnyVal {
+  extension [Self <: TestResultsDetailsForGroup](x: Self) {
     
-    @scala.inline
-    def setGroupByValue(value: js.Any): Self = StObject.set(x, "groupByValue", value.asInstanceOf[js.Any])
+    inline def setGroupByValue(value: js.Any): Self = StObject.set(x, "groupByValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResults(value: js.Array[TestCaseResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[TestCaseResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsCountByOutcome(value: NumberDictionary[AggregatedResultsByOutcome]): Self = StObject.set(x, "resultsCountByOutcome", value.asInstanceOf[js.Any])
+    inline def setResultsCountByOutcome(value: NumberDictionary[AggregatedResultsByOutcome]): Self = StObject.set(x, "resultsCountByOutcome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: TestCaseResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: TestCaseResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

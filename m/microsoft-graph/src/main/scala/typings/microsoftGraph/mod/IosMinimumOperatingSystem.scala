@@ -26,49 +26,35 @@ trait IosMinimumOperatingSystem extends StObject {
 }
 object IosMinimumOperatingSystem {
   
-  @scala.inline
-  def apply(): IosMinimumOperatingSystem = {
+  inline def apply(): IosMinimumOperatingSystem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosMinimumOperatingSystem]
   }
   
-  @scala.inline
-  implicit class IosMinimumOperatingSystemMutableBuilder[Self <: IosMinimumOperatingSystem] (val x: Self) extends AnyVal {
+  extension [Self <: IosMinimumOperatingSystem](x: Self) {
     
-    @scala.inline
-    def setV10_0(value: Boolean): Self = StObject.set(x, "v10_0", value.asInstanceOf[js.Any])
+    inline def setV10_0(value: Boolean): Self = StObject.set(x, "v10_0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV10_0Undefined: Self = StObject.set(x, "v10_0", js.undefined)
+    inline def setV10_0Undefined: Self = StObject.set(x, "v10_0", js.undefined)
     
-    @scala.inline
-    def setV11_0(value: Boolean): Self = StObject.set(x, "v11_0", value.asInstanceOf[js.Any])
+    inline def setV11_0(value: Boolean): Self = StObject.set(x, "v11_0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV11_0Undefined: Self = StObject.set(x, "v11_0", js.undefined)
+    inline def setV11_0Undefined: Self = StObject.set(x, "v11_0", js.undefined)
     
-    @scala.inline
-    def setV12_0(value: Boolean): Self = StObject.set(x, "v12_0", value.asInstanceOf[js.Any])
+    inline def setV12_0(value: Boolean): Self = StObject.set(x, "v12_0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV12_0Undefined: Self = StObject.set(x, "v12_0", js.undefined)
+    inline def setV12_0Undefined: Self = StObject.set(x, "v12_0", js.undefined)
     
-    @scala.inline
-    def setV13_0(value: Boolean): Self = StObject.set(x, "v13_0", value.asInstanceOf[js.Any])
+    inline def setV13_0(value: Boolean): Self = StObject.set(x, "v13_0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV13_0Undefined: Self = StObject.set(x, "v13_0", js.undefined)
+    inline def setV13_0Undefined: Self = StObject.set(x, "v13_0", js.undefined)
     
-    @scala.inline
-    def setV8_0(value: Boolean): Self = StObject.set(x, "v8_0", value.asInstanceOf[js.Any])
+    inline def setV8_0(value: Boolean): Self = StObject.set(x, "v8_0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV8_0Undefined: Self = StObject.set(x, "v8_0", js.undefined)
+    inline def setV8_0Undefined: Self = StObject.set(x, "v8_0", js.undefined)
     
-    @scala.inline
-    def setV9_0(value: Boolean): Self = StObject.set(x, "v9_0", value.asInstanceOf[js.Any])
+    inline def setV9_0(value: Boolean): Self = StObject.set(x, "v9_0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV9_0Undefined: Self = StObject.set(x, "v9_0", js.undefined)
+    inline def setV9_0Undefined: Self = StObject.set(x, "v9_0", js.undefined)
   }
 }

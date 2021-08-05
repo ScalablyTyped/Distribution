@@ -10,16 +10,13 @@ trait UploadBeginCallbackResult extends StObject {
 }
 object UploadBeginCallbackResult {
   
-  @scala.inline
-  def apply(jobId: Double): UploadBeginCallbackResult = {
+  inline def apply(jobId: Double): UploadBeginCallbackResult = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadBeginCallbackResult]
   }
   
-  @scala.inline
-  implicit class UploadBeginCallbackResultMutableBuilder[Self <: UploadBeginCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: UploadBeginCallbackResult](x: Self) {
     
-    @scala.inline
-    def setJobId(value: Double): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: Double): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
   }
 }

@@ -73,8 +73,7 @@ object cloudfrontSignerMod {
     }
     object CannedPolicy {
       
-      @scala.inline
-      def apply(`CloudFront-Expires`: Double, `CloudFront-Key-Pair-Id`: String, `CloudFront-Signature`: String): CannedPolicy = {
+      inline def apply(`CloudFront-Expires`: Double, `CloudFront-Key-Pair-Id`: String, `CloudFront-Signature`: String): CannedPolicy = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("CloudFront-Expires")(`CloudFront-Expires`.asInstanceOf[js.Any])
         __obj.updateDynamic("CloudFront-Key-Pair-Id")(`CloudFront-Key-Pair-Id`.asInstanceOf[js.Any])
@@ -82,17 +81,13 @@ object cloudfrontSignerMod {
         __obj.asInstanceOf[CannedPolicy]
       }
       
-      @scala.inline
-      implicit class CannedPolicyMutableBuilder[Self <: CannedPolicy] (val x: Self) extends AnyVal {
+      extension [Self <: CannedPolicy](x: Self) {
         
-        @scala.inline
-        def `setCloudFront-Expires`(value: Double): Self = StObject.set(x, "CloudFront-Expires", value.asInstanceOf[js.Any])
+        inline def `setCloudFront-Expires`(value: Double): Self = StObject.set(x, "CloudFront-Expires", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setCloudFront-Key-Pair-Id`(value: String): Self = StObject.set(x, "CloudFront-Key-Pair-Id", value.asInstanceOf[js.Any])
+        inline def `setCloudFront-Key-Pair-Id`(value: String): Self = StObject.set(x, "CloudFront-Key-Pair-Id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setCloudFront-Signature`(value: String): Self = StObject.set(x, "CloudFront-Signature", value.asInstanceOf[js.Any])
+        inline def `setCloudFront-Signature`(value: String): Self = StObject.set(x, "CloudFront-Signature", value.asInstanceOf[js.Any])
       }
     }
     
@@ -106,8 +101,7 @@ object cloudfrontSignerMod {
     }
     object CustomPolicy {
       
-      @scala.inline
-      def apply(`CloudFront-Key-Pair-Id`: String, `CloudFront-Policy`: String, `CloudFront-Signature`: String): CustomPolicy = {
+      inline def apply(`CloudFront-Key-Pair-Id`: String, `CloudFront-Policy`: String, `CloudFront-Signature`: String): CustomPolicy = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("CloudFront-Key-Pair-Id")(`CloudFront-Key-Pair-Id`.asInstanceOf[js.Any])
         __obj.updateDynamic("CloudFront-Policy")(`CloudFront-Policy`.asInstanceOf[js.Any])
@@ -115,17 +109,13 @@ object cloudfrontSignerMod {
         __obj.asInstanceOf[CustomPolicy]
       }
       
-      @scala.inline
-      implicit class CustomPolicyMutableBuilder[Self <: CustomPolicy] (val x: Self) extends AnyVal {
+      extension [Self <: CustomPolicy](x: Self) {
         
-        @scala.inline
-        def `setCloudFront-Key-Pair-Id`(value: String): Self = StObject.set(x, "CloudFront-Key-Pair-Id", value.asInstanceOf[js.Any])
+        inline def `setCloudFront-Key-Pair-Id`(value: String): Self = StObject.set(x, "CloudFront-Key-Pair-Id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setCloudFront-Policy`(value: String): Self = StObject.set(x, "CloudFront-Policy", value.asInstanceOf[js.Any])
+        inline def `setCloudFront-Policy`(value: String): Self = StObject.set(x, "CloudFront-Policy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setCloudFront-Signature`(value: String): Self = StObject.set(x, "CloudFront-Signature", value.asInstanceOf[js.Any])
+        inline def `setCloudFront-Signature`(value: String): Self = StObject.set(x, "CloudFront-Signature", value.asInstanceOf[js.Any])
       }
     }
     
@@ -138,17 +128,14 @@ object cloudfrontSignerMod {
     }
     object SignerOptionsWithPolicy {
       
-      @scala.inline
-      def apply(policy: String): SignerOptionsWithPolicy = {
+      inline def apply(policy: String): SignerOptionsWithPolicy = {
         val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any])
         __obj.asInstanceOf[SignerOptionsWithPolicy]
       }
       
-      @scala.inline
-      implicit class SignerOptionsWithPolicyMutableBuilder[Self <: SignerOptionsWithPolicy] (val x: Self) extends AnyVal {
+      extension [Self <: SignerOptionsWithPolicy](x: Self) {
         
-        @scala.inline
-        def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+        inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       }
     }
     
@@ -166,20 +153,16 @@ object cloudfrontSignerMod {
     }
     object SignerOptionsWithoutPolicy {
       
-      @scala.inline
-      def apply(expires: Double, url: String): SignerOptionsWithoutPolicy = {
+      inline def apply(expires: Double, url: String): SignerOptionsWithoutPolicy = {
         val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[SignerOptionsWithoutPolicy]
       }
       
-      @scala.inline
-      implicit class SignerOptionsWithoutPolicyMutableBuilder[Self <: SignerOptionsWithoutPolicy] (val x: Self) extends AnyVal {
+      extension [Self <: SignerOptionsWithoutPolicy](x: Self) {
         
-        @scala.inline
-        def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+        inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
     }
   }

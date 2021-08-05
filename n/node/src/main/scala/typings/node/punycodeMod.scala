@@ -17,8 +17,7 @@ object punycodeMod {
     * Users currently depending on the punycode module should switch to using
     * the userland-provided Punycode.js module instead.
     */
-  @scala.inline
-  def decode(string: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(string.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  inline def decode(string: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(string.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   /**
     * @deprecated since v7.0.0
@@ -27,8 +26,7 @@ object punycodeMod {
     * Users currently depending on the punycode module should switch to using
     * the userland-provided Punycode.js module instead.
     */
-  @scala.inline
-  def encode(string: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(string.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  inline def encode(string: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(string.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   /**
     * @deprecated since v7.0.0
@@ -37,8 +35,7 @@ object punycodeMod {
     * Users currently depending on the punycode module should switch to using
     * the userland-provided Punycode.js module instead.
     */
-  @scala.inline
-  def toASCII(domain: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("toASCII")(domain.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  inline def toASCII(domain: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("toASCII")(domain.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   /**
     * @deprecated since v7.0.0
@@ -47,8 +44,7 @@ object punycodeMod {
     * Users currently depending on the punycode module should switch to using
     * the userland-provided Punycode.js module instead.
     */
-  @scala.inline
-  def toUnicode(domain: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUnicode")(domain.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  inline def toUnicode(domain: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUnicode")(domain.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   trait ucs2 extends StObject {
     
@@ -83,14 +79,11 @@ object punycodeMod {
     @js.native
     val ^ : ucs2 = js.native
     
-    @scala.inline
-    implicit class ucs2MutableBuilder[Self <: ucs2] (val x: Self) extends AnyVal {
+    extension [Self <: ucs2](x: Self) {
       
-      @scala.inline
-      def setDecode(value: java.lang.String => js.Array[Double]): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      inline def setDecode(value: java.lang.String => js.Array[Double]): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncode(value: js.Array[Double] => java.lang.String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: js.Array[Double] => java.lang.String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     }
   }
   

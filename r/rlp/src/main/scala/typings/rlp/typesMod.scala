@@ -18,23 +18,18 @@ object typesMod {
   }
   object Decoded {
     
-    @scala.inline
-    def apply(data: Buffer | js.Array[Buffer], remainder: Buffer): Decoded = {
+    inline def apply(data: Buffer | js.Array[Buffer], remainder: Buffer): Decoded = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], remainder = remainder.asInstanceOf[js.Any])
       __obj.asInstanceOf[Decoded]
     }
     
-    @scala.inline
-    implicit class DecodedMutableBuilder[Self <: Decoded] (val x: Self) extends AnyVal {
+    extension [Self <: Decoded](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer | js.Array[Buffer]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer | js.Array[Buffer]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: Buffer*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Buffer*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setRemainder(value: Buffer): Self = StObject.set(x, "remainder", value.asInstanceOf[js.Any])
+      inline def setRemainder(value: Buffer): Self = StObject.set(x, "remainder", value.asInstanceOf[js.Any])
     }
   }
   

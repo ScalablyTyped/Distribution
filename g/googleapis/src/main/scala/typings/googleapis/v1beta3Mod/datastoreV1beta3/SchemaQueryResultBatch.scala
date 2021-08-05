@@ -54,58 +54,41 @@ trait SchemaQueryResultBatch extends StObject {
 }
 object SchemaQueryResultBatch {
   
-  @scala.inline
-  def apply(): SchemaQueryResultBatch = {
+  inline def apply(): SchemaQueryResultBatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQueryResultBatch]
   }
   
-  @scala.inline
-  implicit class SchemaQueryResultBatchMutableBuilder[Self <: SchemaQueryResultBatch] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQueryResultBatch](x: Self) {
     
-    @scala.inline
-    def setEndCursor(value: String): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
+    inline def setEndCursor(value: String): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCursorUndefined: Self = StObject.set(x, "endCursor", js.undefined)
+    inline def setEndCursorUndefined: Self = StObject.set(x, "endCursor", js.undefined)
     
-    @scala.inline
-    def setEntityResultType(value: String): Self = StObject.set(x, "entityResultType", value.asInstanceOf[js.Any])
+    inline def setEntityResultType(value: String): Self = StObject.set(x, "entityResultType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityResultTypeUndefined: Self = StObject.set(x, "entityResultType", js.undefined)
+    inline def setEntityResultTypeUndefined: Self = StObject.set(x, "entityResultType", js.undefined)
     
-    @scala.inline
-    def setEntityResults(value: js.Array[SchemaEntityResult]): Self = StObject.set(x, "entityResults", value.asInstanceOf[js.Any])
+    inline def setEntityResults(value: js.Array[SchemaEntityResult]): Self = StObject.set(x, "entityResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityResultsUndefined: Self = StObject.set(x, "entityResults", js.undefined)
+    inline def setEntityResultsUndefined: Self = StObject.set(x, "entityResults", js.undefined)
     
-    @scala.inline
-    def setEntityResultsVarargs(value: SchemaEntityResult*): Self = StObject.set(x, "entityResults", js.Array(value :_*))
+    inline def setEntityResultsVarargs(value: SchemaEntityResult*): Self = StObject.set(x, "entityResults", js.Array(value :_*))
     
-    @scala.inline
-    def setMoreResults(value: String): Self = StObject.set(x, "moreResults", value.asInstanceOf[js.Any])
+    inline def setMoreResults(value: String): Self = StObject.set(x, "moreResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoreResultsUndefined: Self = StObject.set(x, "moreResults", js.undefined)
+    inline def setMoreResultsUndefined: Self = StObject.set(x, "moreResults", js.undefined)
     
-    @scala.inline
-    def setSkippedCursor(value: String): Self = StObject.set(x, "skippedCursor", value.asInstanceOf[js.Any])
+    inline def setSkippedCursor(value: String): Self = StObject.set(x, "skippedCursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkippedCursorUndefined: Self = StObject.set(x, "skippedCursor", js.undefined)
+    inline def setSkippedCursorUndefined: Self = StObject.set(x, "skippedCursor", js.undefined)
     
-    @scala.inline
-    def setSkippedResults(value: Double): Self = StObject.set(x, "skippedResults", value.asInstanceOf[js.Any])
+    inline def setSkippedResults(value: Double): Self = StObject.set(x, "skippedResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkippedResultsUndefined: Self = StObject.set(x, "skippedResults", js.undefined)
+    inline def setSkippedResultsUndefined: Self = StObject.set(x, "skippedResults", js.undefined)
     
-    @scala.inline
-    def setSnapshotVersion(value: String): Self = StObject.set(x, "snapshotVersion", value.asInstanceOf[js.Any])
+    inline def setSnapshotVersion(value: String): Self = StObject.set(x, "snapshotVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotVersionUndefined: Self = StObject.set(x, "snapshotVersion", js.undefined)
+    inline def setSnapshotVersionUndefined: Self = StObject.set(x, "snapshotVersion", js.undefined)
   }
 }

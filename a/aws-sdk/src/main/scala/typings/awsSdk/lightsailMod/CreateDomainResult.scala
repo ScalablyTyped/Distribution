@@ -13,19 +13,15 @@ trait CreateDomainResult extends StObject {
 }
 object CreateDomainResult {
   
-  @scala.inline
-  def apply(): CreateDomainResult = {
+  inline def apply(): CreateDomainResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDomainResult]
   }
   
-  @scala.inline
-  implicit class CreateDomainResultMutableBuilder[Self <: CreateDomainResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDomainResult](x: Self) {
     
-    @scala.inline
-    def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
   }
 }

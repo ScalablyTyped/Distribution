@@ -14,40 +14,29 @@ trait Conflicttarget extends StObject {
 }
 object Conflicttarget {
   
-  @scala.inline
-  def apply(): Conflicttarget = {
+  inline def apply(): Conflicttarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Conflicttarget]
   }
   
-  @scala.inline
-  implicit class ConflicttargetMutableBuilder[Self <: Conflicttarget] (val x: Self) extends AnyVal {
+  extension [Self <: Conflicttarget](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setConflict_target(value: String | js.Array[String]): Self = StObject.set(x, "conflict_target", value.asInstanceOf[js.Any])
+    inline def setConflict_target(value: String | js.Array[String]): Self = StObject.set(x, "conflict_target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflict_targetUndefined: Self = StObject.set(x, "conflict_target", js.undefined)
+    inline def setConflict_targetUndefined: Self = StObject.set(x, "conflict_target", js.undefined)
     
-    @scala.inline
-    def setConflict_targetVarargs(value: String*): Self = StObject.set(x, "conflict_target", js.Array(value :_*))
+    inline def setConflict_targetVarargs(value: String*): Self = StObject.set(x, "conflict_target", js.Array(value :_*))
     
-    @scala.inline
-    def setOverwrite(value: js.Array[String]): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: js.Array[String]): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
-    @scala.inline
-    def setOverwriteVarargs(value: String*): Self = StObject.set(x, "overwrite", js.Array(value :_*))
+    inline def setOverwriteVarargs(value: String*): Self = StObject.set(x, "overwrite", js.Array(value :_*))
   }
 }

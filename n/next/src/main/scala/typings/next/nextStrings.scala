@@ -10,66 +10,55 @@ object nextStrings {
   
   @js.native
   sealed trait blocking extends StObject
-  @scala.inline
-  def blocking: blocking = "blocking".asInstanceOf[blocking]
+  inline def blocking: blocking = "blocking".asInstanceOf[blocking]
   
   @js.native
   sealed trait development extends StObject
-  @scala.inline
-  def development: development = "development".asInstanceOf[development]
+  inline def development: development = "development".asInstanceOf[development]
   
   @js.native
   sealed trait header
     extends StObject
        with RouteType
-  @scala.inline
-  def header: header = "header".asInstanceOf[header]
+  inline def header: header = "header".asInstanceOf[header]
   
   @js.native
   sealed trait hybrid extends StObject
-  @scala.inline
-  def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
+  inline def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   
   @js.native
   sealed trait production extends StObject
-  @scala.inline
-  def production: production = "production".asInstanceOf[production]
+  inline def production: production = "production".asInstanceOf[production]
   
   @js.native
   sealed trait pushState
     extends StObject
        with HistoryMethod
-  @scala.inline
-  def pushState: pushState = "pushState".asInstanceOf[pushState]
+  inline def pushState: pushState = "pushState".asInstanceOf[pushState]
   
   @js.native
   sealed trait redirect
     extends StObject
        with RouteType
-  @scala.inline
-  def redirect: redirect = "redirect".asInstanceOf[redirect]
+  inline def redirect: redirect = "redirect".asInstanceOf[redirect]
   
   @js.native
   sealed trait replaceState
     extends StObject
        with HistoryMethod
-  @scala.inline
-  def replaceState: replaceState = "replaceState".asInstanceOf[replaceState]
+  inline def replaceState: replaceState = "replaceState".asInstanceOf[replaceState]
   
   @js.native
   sealed trait rewrite
     extends StObject
        with RouteType
-  @scala.inline
-  def rewrite: rewrite = "rewrite".asInstanceOf[rewrite]
+  inline def rewrite: rewrite = "rewrite".asInstanceOf[rewrite]
   
   @js.native
   sealed trait static extends StObject
-  @scala.inline
-  def static: static = "static".asInstanceOf[static]
+  inline def static: static = "static".asInstanceOf[static]
   
   @js.native
   sealed trait test extends StObject
-  @scala.inline
-  def test: test = "test".asInstanceOf[test]
+  inline def test: test = "test".asInstanceOf[test]
 }

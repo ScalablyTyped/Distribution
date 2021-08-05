@@ -13,7 +13,7 @@ object mod {
   @js.native
   class I2C () extends Peripheral {
     
-    var _devices: js.Any = js.native
+    /* private */ var _devices: js.Any = js.native
     
     /* private */ def _getDevice(address: js.Any): js.Any = js.native
     

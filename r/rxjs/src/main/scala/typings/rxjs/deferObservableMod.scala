@@ -18,8 +18,7 @@ object deferObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create[T](
+    inline def create[T](
       observableFactory: js.Function0[
           (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ js.Any) | Unit
         ]

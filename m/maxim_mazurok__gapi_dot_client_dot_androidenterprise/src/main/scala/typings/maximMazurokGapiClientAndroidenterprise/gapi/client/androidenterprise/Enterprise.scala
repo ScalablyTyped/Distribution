@@ -20,40 +20,29 @@ trait Enterprise extends StObject {
 }
 object Enterprise {
   
-  @scala.inline
-  def apply(): Enterprise = {
+  inline def apply(): Enterprise = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Enterprise]
   }
   
-  @scala.inline
-  implicit class EnterpriseMutableBuilder[Self <: Enterprise] (val x: Self) extends AnyVal {
+  extension [Self <: Enterprise](x: Self) {
     
-    @scala.inline
-    def setAdministrator(value: js.Array[Administrator]): Self = StObject.set(x, "administrator", value.asInstanceOf[js.Any])
+    inline def setAdministrator(value: js.Array[Administrator]): Self = StObject.set(x, "administrator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdministratorUndefined: Self = StObject.set(x, "administrator", js.undefined)
+    inline def setAdministratorUndefined: Self = StObject.set(x, "administrator", js.undefined)
     
-    @scala.inline
-    def setAdministratorVarargs(value: Administrator*): Self = StObject.set(x, "administrator", js.Array(value :_*))
+    inline def setAdministratorVarargs(value: Administrator*): Self = StObject.set(x, "administrator", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPrimaryDomain(value: String): Self = StObject.set(x, "primaryDomain", value.asInstanceOf[js.Any])
+    inline def setPrimaryDomain(value: String): Self = StObject.set(x, "primaryDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryDomainUndefined: Self = StObject.set(x, "primaryDomain", js.undefined)
+    inline def setPrimaryDomainUndefined: Self = StObject.set(x, "primaryDomain", js.undefined)
   }
 }

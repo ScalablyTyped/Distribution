@@ -13,19 +13,15 @@ trait DialogActionsProps
 }
 object DialogActionsProps {
   
-  @scala.inline
-  def apply(): DialogActionsProps = {
+  inline def apply(): DialogActionsProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogActionsProps]
   }
   
-  @scala.inline
-  implicit class DialogActionsPropsMutableBuilder[Self <: DialogActionsProps] (val x: Self) extends AnyVal {
+  extension [Self <: DialogActionsProps](x: Self) {
     
-    @scala.inline
-    def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+    inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+    inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
   }
 }

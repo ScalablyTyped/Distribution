@@ -25,25 +25,19 @@ trait SchemaCreateServiceAccountRequest extends StObject {
 }
 object SchemaCreateServiceAccountRequest {
   
-  @scala.inline
-  def apply(): SchemaCreateServiceAccountRequest = {
+  inline def apply(): SchemaCreateServiceAccountRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateServiceAccountRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCreateServiceAccountRequestMutableBuilder[Self <: SchemaCreateServiceAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateServiceAccountRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setServiceAccount(value: SchemaServiceAccount): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    inline def setServiceAccount(value: SchemaServiceAccount): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
   }
 }

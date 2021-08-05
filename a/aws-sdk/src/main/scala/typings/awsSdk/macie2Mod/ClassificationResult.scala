@@ -38,52 +38,37 @@ trait ClassificationResult extends StObject {
 }
 object ClassificationResult {
   
-  @scala.inline
-  def apply(): ClassificationResult = {
+  inline def apply(): ClassificationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassificationResult]
   }
   
-  @scala.inline
-  implicit class ClassificationResultMutableBuilder[Self <: ClassificationResult] (val x: Self) extends AnyVal {
+  extension [Self <: ClassificationResult](x: Self) {
     
-    @scala.inline
-    def setAdditionalOccurrences(value: boolean): Self = StObject.set(x, "additionalOccurrences", value.asInstanceOf[js.Any])
+    inline def setAdditionalOccurrences(value: boolean): Self = StObject.set(x, "additionalOccurrences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalOccurrencesUndefined: Self = StObject.set(x, "additionalOccurrences", js.undefined)
+    inline def setAdditionalOccurrencesUndefined: Self = StObject.set(x, "additionalOccurrences", js.undefined)
     
-    @scala.inline
-    def setCustomDataIdentifiers(value: CustomDataIdentifiers): Self = StObject.set(x, "customDataIdentifiers", value.asInstanceOf[js.Any])
+    inline def setCustomDataIdentifiers(value: CustomDataIdentifiers): Self = StObject.set(x, "customDataIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDataIdentifiersUndefined: Self = StObject.set(x, "customDataIdentifiers", js.undefined)
+    inline def setCustomDataIdentifiersUndefined: Self = StObject.set(x, "customDataIdentifiers", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: string): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: string): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setSensitiveData(value: SensitiveData): Self = StObject.set(x, "sensitiveData", value.asInstanceOf[js.Any])
+    inline def setSensitiveData(value: SensitiveData): Self = StObject.set(x, "sensitiveData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSensitiveDataUndefined: Self = StObject.set(x, "sensitiveData", js.undefined)
+    inline def setSensitiveDataUndefined: Self = StObject.set(x, "sensitiveData", js.undefined)
     
-    @scala.inline
-    def setSensitiveDataVarargs(value: SensitiveDataItem*): Self = StObject.set(x, "sensitiveData", js.Array(value :_*))
+    inline def setSensitiveDataVarargs(value: SensitiveDataItem*): Self = StObject.set(x, "sensitiveData", js.Array(value :_*))
     
-    @scala.inline
-    def setSizeClassified(value: long): Self = StObject.set(x, "sizeClassified", value.asInstanceOf[js.Any])
+    inline def setSizeClassified(value: long): Self = StObject.set(x, "sizeClassified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeClassifiedUndefined: Self = StObject.set(x, "sizeClassified", js.undefined)
+    inline def setSizeClassifiedUndefined: Self = StObject.set(x, "sizeClassified", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ClassificationResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ClassificationResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

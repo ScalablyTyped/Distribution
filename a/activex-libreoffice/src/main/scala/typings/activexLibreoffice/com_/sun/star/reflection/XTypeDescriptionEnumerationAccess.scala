@@ -33,8 +33,7 @@ trait XTypeDescriptionEnumerationAccess
 }
 object XTypeDescriptionEnumerationAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createTypeDescriptionEnumeration: (String, SeqEquiv[TypeClass], TypeDescriptionSearchDepth) => XTypeDescriptionEnumeration,
     queryInterface: `type` => js.Any,
@@ -44,10 +43,8 @@ object XTypeDescriptionEnumerationAccess {
     __obj.asInstanceOf[XTypeDescriptionEnumerationAccess]
   }
   
-  @scala.inline
-  implicit class XTypeDescriptionEnumerationAccessMutableBuilder[Self <: XTypeDescriptionEnumerationAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XTypeDescriptionEnumerationAccess](x: Self) {
     
-    @scala.inline
-    def setCreateTypeDescriptionEnumeration(value: (String, SeqEquiv[TypeClass], TypeDescriptionSearchDepth) => XTypeDescriptionEnumeration): Self = StObject.set(x, "createTypeDescriptionEnumeration", js.Any.fromFunction3(value))
+    inline def setCreateTypeDescriptionEnumeration(value: (String, SeqEquiv[TypeClass], TypeDescriptionSearchDepth) => XTypeDescriptionEnumeration): Self = StObject.set(x, "createTypeDescriptionEnumeration", js.Any.fromFunction3(value))
   }
 }

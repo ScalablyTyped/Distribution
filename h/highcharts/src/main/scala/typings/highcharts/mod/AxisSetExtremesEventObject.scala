@@ -19,8 +19,7 @@ trait AxisSetExtremesEventObject
 }
 object AxisSetExtremesEventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataMax: Double,
     dataMin: Double,
     max: Double,
@@ -36,19 +35,14 @@ object AxisSetExtremesEventObject {
     __obj.asInstanceOf[AxisSetExtremesEventObject]
   }
   
-  @scala.inline
-  implicit class AxisSetExtremesEventObjectMutableBuilder[Self <: AxisSetExtremesEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: AxisSetExtremesEventObject](x: Self) {
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: SVGElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: SVGElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrigger(value: String | AxisExtremesTriggerValue): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: String | AxisExtremesTriggerValue): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: setExtremes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: setExtremes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

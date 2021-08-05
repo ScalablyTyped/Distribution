@@ -14,8 +14,7 @@ trait IControlChannelTriggerResetEventDetails extends StObject {
 }
 object IControlChannelTriggerResetEventDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hardwareSlotReset: Boolean,
     resetReason: ControlChannelTriggerResetReason,
     softwareSlotReset: Boolean
@@ -24,16 +23,12 @@ object IControlChannelTriggerResetEventDetails {
     __obj.asInstanceOf[IControlChannelTriggerResetEventDetails]
   }
   
-  @scala.inline
-  implicit class IControlChannelTriggerResetEventDetailsMutableBuilder[Self <: IControlChannelTriggerResetEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IControlChannelTriggerResetEventDetails](x: Self) {
     
-    @scala.inline
-    def setHardwareSlotReset(value: Boolean): Self = StObject.set(x, "hardwareSlotReset", value.asInstanceOf[js.Any])
+    inline def setHardwareSlotReset(value: Boolean): Self = StObject.set(x, "hardwareSlotReset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetReason(value: ControlChannelTriggerResetReason): Self = StObject.set(x, "resetReason", value.asInstanceOf[js.Any])
+    inline def setResetReason(value: ControlChannelTriggerResetReason): Self = StObject.set(x, "resetReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareSlotReset(value: Boolean): Self = StObject.set(x, "softwareSlotReset", value.asInstanceOf[js.Any])
+    inline def setSoftwareSlotReset(value: Boolean): Self = StObject.set(x, "softwareSlotReset", value.asInstanceOf[js.Any])
   }
 }

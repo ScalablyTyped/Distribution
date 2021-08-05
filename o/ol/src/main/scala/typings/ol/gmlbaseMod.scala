@@ -24,9 +24,9 @@ object gmlbaseMod {
   trait GMLBase
     extends typings.ol.xmlfeatureMod.default {
     
-    var featureNS: StringDictionary[String] | String = js.native
+    /* protected */ var featureNS: StringDictionary[String] | String = js.native
     
-    var featureType: js.Array[String] | String = js.native
+    /* protected */ var featureType: js.Array[String] | String = js.native
     
     def lineStringMemberParser(node: Element, objectStack: js.Array[js.Any]): Unit = js.native
     
@@ -46,10 +46,10 @@ object gmlbaseMod {
     
     def readGeometryElement(node: Element, objectStack: js.Array[js.Any]): js.UndefOr[typings.ol.geometryMod.default | Extent] = js.native
     
-    @JSName("readGeometryFromNode")
-    /* protected */ def readGeometryFromNode_default(node: Element): typings.ol.geometryMod.default = js.native
-    @JSName("readGeometryFromNode")
-    /* protected */ def readGeometryFromNode_default(node: Element, opt_options: ReadOptions): typings.ol.geometryMod.default = js.native
+    /* protected */ @JSName("readGeometryFromNode")
+    def readGeometryFromNode_default(node: Element): typings.ol.geometryMod.default = js.native
+    /* protected */ @JSName("readGeometryFromNode")
+    def readGeometryFromNode_default(node: Element, opt_options: ReadOptions): typings.ol.geometryMod.default = js.native
     
     def readLineString(node: Element, objectStack: js.Array[js.Any]): js.UndefOr[typings.ol.lineStringMod.default] = js.native
     
@@ -65,9 +65,9 @@ object gmlbaseMod {
     
     def readPolygon(node: Element, objectStack: js.Array[js.Any]): js.UndefOr[typings.ol.polygonMod.default] = js.native
     
-    var schemaLocation: String = js.native
+    /* protected */ var schemaLocation: String = js.native
     
-    var srsName: String = js.native
+    /* protected */ var srsName: String = js.native
   }
   
   trait Options extends StObject {
@@ -92,68 +92,48 @@ object gmlbaseMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(srsName: String): Options = {
+    inline def apply(srsName: String): Options = {
       val __obj = js.Dynamic.literal(srsName = srsName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCurve(value: Boolean): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
+      inline def setCurve(value: Boolean): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
+      inline def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
       
-      @scala.inline
-      def setFeatureNS(value: StringDictionary[String] | String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
+      inline def setFeatureNS(value: StringDictionary[String] | String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureNSUndefined: Self = StObject.set(x, "featureNS", js.undefined)
+      inline def setFeatureNSUndefined: Self = StObject.set(x, "featureNS", js.undefined)
       
-      @scala.inline
-      def setFeatureType(value: js.Array[String] | String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
+      inline def setFeatureType(value: js.Array[String] | String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
+      inline def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
       
-      @scala.inline
-      def setFeatureTypeVarargs(value: String*): Self = StObject.set(x, "featureType", js.Array(value :_*))
+      inline def setFeatureTypeVarargs(value: String*): Self = StObject.set(x, "featureType", js.Array(value :_*))
       
-      @scala.inline
-      def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
+      inline def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
+      inline def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
       
-      @scala.inline
-      def setMultiCurve(value: Boolean): Self = StObject.set(x, "multiCurve", value.asInstanceOf[js.Any])
+      inline def setMultiCurve(value: Boolean): Self = StObject.set(x, "multiCurve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiCurveUndefined: Self = StObject.set(x, "multiCurve", js.undefined)
+      inline def setMultiCurveUndefined: Self = StObject.set(x, "multiCurve", js.undefined)
       
-      @scala.inline
-      def setMultiSurface(value: Boolean): Self = StObject.set(x, "multiSurface", value.asInstanceOf[js.Any])
+      inline def setMultiSurface(value: Boolean): Self = StObject.set(x, "multiSurface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiSurfaceUndefined: Self = StObject.set(x, "multiSurface", js.undefined)
+      inline def setMultiSurfaceUndefined: Self = StObject.set(x, "multiSurface", js.undefined)
       
-      @scala.inline
-      def setSchemaLocation(value: String): Self = StObject.set(x, "schemaLocation", value.asInstanceOf[js.Any])
+      inline def setSchemaLocation(value: String): Self = StObject.set(x, "schemaLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaLocationUndefined: Self = StObject.set(x, "schemaLocation", js.undefined)
+      inline def setSchemaLocationUndefined: Self = StObject.set(x, "schemaLocation", js.undefined)
       
-      @scala.inline
-      def setSrsName(value: String): Self = StObject.set(x, "srsName", value.asInstanceOf[js.Any])
+      inline def setSrsName(value: String): Self = StObject.set(x, "srsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSurface(value: Boolean): Self = StObject.set(x, "surface", value.asInstanceOf[js.Any])
+      inline def setSurface(value: Boolean): Self = StObject.set(x, "surface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSurfaceUndefined: Self = StObject.set(x, "surface", js.undefined)
+      inline def setSurfaceUndefined: Self = StObject.set(x, "surface", js.undefined)
     }
   }
 }

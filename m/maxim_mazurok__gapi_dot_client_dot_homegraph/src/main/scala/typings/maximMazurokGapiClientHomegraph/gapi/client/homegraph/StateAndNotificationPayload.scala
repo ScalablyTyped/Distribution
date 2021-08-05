@@ -11,19 +11,15 @@ trait StateAndNotificationPayload extends StObject {
 }
 object StateAndNotificationPayload {
   
-  @scala.inline
-  def apply(): StateAndNotificationPayload = {
+  inline def apply(): StateAndNotificationPayload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StateAndNotificationPayload]
   }
   
-  @scala.inline
-  implicit class StateAndNotificationPayloadMutableBuilder[Self <: StateAndNotificationPayload] (val x: Self) extends AnyVal {
+  extension [Self <: StateAndNotificationPayload](x: Self) {
     
-    @scala.inline
-    def setDevices(value: ReportStateAndNotificationDevice): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: ReportStateAndNotificationDevice): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
+    inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
   }
 }

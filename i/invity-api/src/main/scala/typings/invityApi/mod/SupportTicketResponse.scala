@@ -12,22 +12,17 @@ trait SupportTicketResponse extends StObject {
 }
 object SupportTicketResponse {
   
-  @scala.inline
-  def apply(statusCode: Double): SupportTicketResponse = {
+  inline def apply(statusCode: Double): SupportTicketResponse = {
     val __obj = js.Dynamic.literal(statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportTicketResponse]
   }
   
-  @scala.inline
-  implicit class SupportTicketResponseMutableBuilder[Self <: SupportTicketResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SupportTicketResponse](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

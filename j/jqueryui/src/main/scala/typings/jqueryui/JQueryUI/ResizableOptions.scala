@@ -54,127 +54,87 @@ trait ResizableOptions
 }
 object ResizableOptions {
   
-  @scala.inline
-  def apply(): ResizableOptions = {
+  inline def apply(): ResizableOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResizableOptions]
   }
   
-  @scala.inline
-  implicit class ResizableOptionsMutableBuilder[Self <: ResizableOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResizableOptions](x: Self) {
     
-    @scala.inline
-    def setAlsoResize(value: js.Any): Self = StObject.set(x, "alsoResize", value.asInstanceOf[js.Any])
+    inline def setAlsoResize(value: js.Any): Self = StObject.set(x, "alsoResize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlsoResizeUndefined: Self = StObject.set(x, "alsoResize", js.undefined)
+    inline def setAlsoResizeUndefined: Self = StObject.set(x, "alsoResize", js.undefined)
     
-    @scala.inline
-    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateDuration(value: js.Any): Self = StObject.set(x, "animateDuration", value.asInstanceOf[js.Any])
+    inline def setAnimateDuration(value: js.Any): Self = StObject.set(x, "animateDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateDurationUndefined: Self = StObject.set(x, "animateDuration", js.undefined)
+    inline def setAnimateDurationUndefined: Self = StObject.set(x, "animateDuration", js.undefined)
     
-    @scala.inline
-    def setAnimateEasing(value: String): Self = StObject.set(x, "animateEasing", value.asInstanceOf[js.Any])
+    inline def setAnimateEasing(value: String): Self = StObject.set(x, "animateEasing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateEasingUndefined: Self = StObject.set(x, "animateEasing", js.undefined)
+    inline def setAnimateEasingUndefined: Self = StObject.set(x, "animateEasing", js.undefined)
     
-    @scala.inline
-    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    @scala.inline
-    def setAspectRatio(value: js.Any): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+    inline def setAspectRatio(value: js.Any): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+    inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
     
-    @scala.inline
-    def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
+    inline def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
+    inline def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
     
-    @scala.inline
-    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setContainment(value: js.Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+    inline def setContainment(value: js.Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
+    inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setGhost(value: Boolean): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
+    inline def setGhost(value: Boolean): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGhostUndefined: Self = StObject.set(x, "ghost", js.undefined)
+    inline def setGhostUndefined: Self = StObject.set(x, "ghost", js.undefined)
     
-    @scala.inline
-    def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    @scala.inline
-    def setHandles(value: js.Any): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
+    inline def setHandles(value: js.Any): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
+    inline def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
     
-    @scala.inline
-    def setHelper(value: String): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+    inline def setHelper(value: String): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
+    inline def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
     
-    @scala.inline
-    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
-    @scala.inline
-    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
   }
 }

@@ -15,13 +15,10 @@ object youTubePlayerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def promisifyPlayer(playerAPIReady: js.Promise[YouTubePlayer]): YouTubePlayer = ^.asInstanceOf[js.Dynamic].applyDynamic("promisifyPlayer")(playerAPIReady.asInstanceOf[js.Any]).asInstanceOf[YouTubePlayer]
-    @scala.inline
-    def promisifyPlayer(playerAPIReady: js.Promise[YouTubePlayer], strictState: Boolean): YouTubePlayer = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyPlayer")(playerAPIReady.asInstanceOf[js.Any], strictState.asInstanceOf[js.Any])).asInstanceOf[YouTubePlayer]
+    inline def promisifyPlayer(playerAPIReady: js.Promise[YouTubePlayer]): YouTubePlayer = ^.asInstanceOf[js.Dynamic].applyDynamic("promisifyPlayer")(playerAPIReady.asInstanceOf[js.Any]).asInstanceOf[YouTubePlayer]
+    inline def promisifyPlayer(playerAPIReady: js.Promise[YouTubePlayer], strictState: Boolean): YouTubePlayer = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyPlayer")(playerAPIReady.asInstanceOf[js.Any], strictState.asInstanceOf[js.Any])).asInstanceOf[YouTubePlayer]
     
-    @scala.inline
-    def proxyEvents(emitter: EmitterType): EventHandlerMapType = ^.asInstanceOf[js.Dynamic].applyDynamic("proxyEvents")(emitter.asInstanceOf[js.Any]).asInstanceOf[EventHandlerMapType]
+    inline def proxyEvents(emitter: EmitterType): EventHandlerMapType = ^.asInstanceOf[js.Dynamic].applyDynamic("proxyEvents")(emitter.asInstanceOf[js.Any]).asInstanceOf[EventHandlerMapType]
   }
   
   type EventHandlerMapType = StringDictionary[js.Function1[/* event */ js.Object, Unit]]

@@ -20,37 +20,27 @@ trait ScreenviewData extends StObject {
 }
 object ScreenviewData {
   
-  @scala.inline
-  def apply(): ScreenviewData = {
+  inline def apply(): ScreenviewData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScreenviewData]
   }
   
-  @scala.inline
-  implicit class ScreenviewDataMutableBuilder[Self <: ScreenviewData] (val x: Self) extends AnyVal {
+  extension [Self <: ScreenviewData](x: Self) {
     
-    @scala.inline
-    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+    inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
+    inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
     
-    @scala.inline
-    def setMobileDeviceBranding(value: String): Self = StObject.set(x, "mobileDeviceBranding", value.asInstanceOf[js.Any])
+    inline def setMobileDeviceBranding(value: String): Self = StObject.set(x, "mobileDeviceBranding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileDeviceBrandingUndefined: Self = StObject.set(x, "mobileDeviceBranding", js.undefined)
+    inline def setMobileDeviceBrandingUndefined: Self = StObject.set(x, "mobileDeviceBranding", js.undefined)
     
-    @scala.inline
-    def setMobileDeviceModel(value: String): Self = StObject.set(x, "mobileDeviceModel", value.asInstanceOf[js.Any])
+    inline def setMobileDeviceModel(value: String): Self = StObject.set(x, "mobileDeviceModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileDeviceModelUndefined: Self = StObject.set(x, "mobileDeviceModel", js.undefined)
+    inline def setMobileDeviceModelUndefined: Self = StObject.set(x, "mobileDeviceModel", js.undefined)
     
-    @scala.inline
-    def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
+    inline def setScreenName(value: String): Self = StObject.set(x, "screenName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenNameUndefined: Self = StObject.set(x, "screenName", js.undefined)
+    inline def setScreenNameUndefined: Self = StObject.set(x, "screenName", js.undefined)
   }
 }

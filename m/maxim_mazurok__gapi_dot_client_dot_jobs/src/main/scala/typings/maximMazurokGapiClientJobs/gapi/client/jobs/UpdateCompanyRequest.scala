@@ -17,25 +17,19 @@ trait UpdateCompanyRequest extends StObject {
 }
 object UpdateCompanyRequest {
   
-  @scala.inline
-  def apply(): UpdateCompanyRequest = {
+  inline def apply(): UpdateCompanyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateCompanyRequest]
   }
   
-  @scala.inline
-  implicit class UpdateCompanyRequestMutableBuilder[Self <: UpdateCompanyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateCompanyRequest](x: Self) {
     
-    @scala.inline
-    def setCompany(value: Company): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+    inline def setCompany(value: Company): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
+    inline def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

@@ -14,19 +14,15 @@ trait GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest extends StObject {
 }
 object GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest {
   
-  @scala.inline
-  def apply(): GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest = {
+  inline def apply(): GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest]
   }
   
-  @scala.inline
-  implicit class GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequestMutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAppsCloudidentityDevicesV1BlockDeviceUserRequest](x: Self) {
     
-    @scala.inline
-    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
   }
 }

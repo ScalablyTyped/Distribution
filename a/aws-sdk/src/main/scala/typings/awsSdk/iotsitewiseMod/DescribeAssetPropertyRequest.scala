@@ -18,19 +18,15 @@ trait DescribeAssetPropertyRequest extends StObject {
 }
 object DescribeAssetPropertyRequest {
   
-  @scala.inline
-  def apply(assetId: ID, propertyId: ID): DescribeAssetPropertyRequest = {
+  inline def apply(assetId: ID, propertyId: ID): DescribeAssetPropertyRequest = {
     val __obj = js.Dynamic.literal(assetId = assetId.asInstanceOf[js.Any], propertyId = propertyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAssetPropertyRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAssetPropertyRequestMutableBuilder[Self <: DescribeAssetPropertyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAssetPropertyRequest](x: Self) {
     
-    @scala.inline
-    def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyId(value: ID): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
+    inline def setPropertyId(value: ID): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
   }
 }

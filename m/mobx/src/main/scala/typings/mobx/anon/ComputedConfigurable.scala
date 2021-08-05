@@ -36,61 +36,43 @@ trait ComputedConfigurable extends StObject {
 }
 object ComputedConfigurable {
   
-  @scala.inline
-  def apply(): ComputedConfigurable = {
+  inline def apply(): ComputedConfigurable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComputedConfigurable]
   }
   
-  @scala.inline
-  implicit class ComputedConfigurableMutableBuilder[Self <: ComputedConfigurable] (val x: Self) extends AnyVal {
+  extension [Self <: ComputedConfigurable](x: Self) {
     
-    @scala.inline
-    def setComputedConfigurable(value: Boolean): Self = StObject.set(x, "computedConfigurable", value.asInstanceOf[js.Any])
+    inline def setComputedConfigurable(value: Boolean): Self = StObject.set(x, "computedConfigurable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputedConfigurableUndefined: Self = StObject.set(x, "computedConfigurable", js.undefined)
+    inline def setComputedConfigurableUndefined: Self = StObject.set(x, "computedConfigurable", js.undefined)
     
-    @scala.inline
-    def setComputedRequiresReaction(value: Boolean): Self = StObject.set(x, "computedRequiresReaction", value.asInstanceOf[js.Any])
+    inline def setComputedRequiresReaction(value: Boolean): Self = StObject.set(x, "computedRequiresReaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputedRequiresReactionUndefined: Self = StObject.set(x, "computedRequiresReaction", js.undefined)
+    inline def setComputedRequiresReactionUndefined: Self = StObject.set(x, "computedRequiresReaction", js.undefined)
     
-    @scala.inline
-    def setDisableErrorBoundaries(value: Boolean): Self = StObject.set(x, "disableErrorBoundaries", value.asInstanceOf[js.Any])
+    inline def setDisableErrorBoundaries(value: Boolean): Self = StObject.set(x, "disableErrorBoundaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableErrorBoundariesUndefined: Self = StObject.set(x, "disableErrorBoundaries", js.undefined)
+    inline def setDisableErrorBoundariesUndefined: Self = StObject.set(x, "disableErrorBoundaries", js.undefined)
     
-    @scala.inline
-    def setEnforceActions(value: Boolean | strict | never | always | observed): Self = StObject.set(x, "enforceActions", value.asInstanceOf[js.Any])
+    inline def setEnforceActions(value: Boolean | strict | never | always | observed): Self = StObject.set(x, "enforceActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforceActionsUndefined: Self = StObject.set(x, "enforceActions", js.undefined)
+    inline def setEnforceActionsUndefined: Self = StObject.set(x, "enforceActions", js.undefined)
     
-    @scala.inline
-    def setIsolateGlobalState(value: Boolean): Self = StObject.set(x, "isolateGlobalState", value.asInstanceOf[js.Any])
+    inline def setIsolateGlobalState(value: Boolean): Self = StObject.set(x, "isolateGlobalState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsolateGlobalStateUndefined: Self = StObject.set(x, "isolateGlobalState", js.undefined)
+    inline def setIsolateGlobalStateUndefined: Self = StObject.set(x, "isolateGlobalState", js.undefined)
     
-    @scala.inline
-    def setObservableRequiresReaction(value: Boolean): Self = StObject.set(x, "observableRequiresReaction", value.asInstanceOf[js.Any])
+    inline def setObservableRequiresReaction(value: Boolean): Self = StObject.set(x, "observableRequiresReaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObservableRequiresReactionUndefined: Self = StObject.set(x, "observableRequiresReaction", js.undefined)
+    inline def setObservableRequiresReactionUndefined: Self = StObject.set(x, "observableRequiresReaction", js.undefined)
     
-    @scala.inline
-    def setReactionRequiresObservable(value: Boolean): Self = StObject.set(x, "reactionRequiresObservable", value.asInstanceOf[js.Any])
+    inline def setReactionRequiresObservable(value: Boolean): Self = StObject.set(x, "reactionRequiresObservable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactionRequiresObservableUndefined: Self = StObject.set(x, "reactionRequiresObservable", js.undefined)
+    inline def setReactionRequiresObservableUndefined: Self = StObject.set(x, "reactionRequiresObservable", js.undefined)
     
-    @scala.inline
-    def setReactionScheduler(value: /* f */ js.Function0[Unit] => Unit): Self = StObject.set(x, "reactionScheduler", js.Any.fromFunction1(value))
+    inline def setReactionScheduler(value: /* f */ js.Function0[Unit] => Unit): Self = StObject.set(x, "reactionScheduler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReactionSchedulerUndefined: Self = StObject.set(x, "reactionScheduler", js.undefined)
+    inline def setReactionSchedulerUndefined: Self = StObject.set(x, "reactionScheduler", js.undefined)
   }
 }

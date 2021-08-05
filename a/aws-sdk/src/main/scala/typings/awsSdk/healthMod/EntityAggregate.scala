@@ -18,25 +18,19 @@ trait EntityAggregate extends StObject {
 }
 object EntityAggregate {
   
-  @scala.inline
-  def apply(): EntityAggregate = {
+  inline def apply(): EntityAggregate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EntityAggregate]
   }
   
-  @scala.inline
-  implicit class EntityAggregateMutableBuilder[Self <: EntityAggregate] (val x: Self) extends AnyVal {
+  extension [Self <: EntityAggregate](x: Self) {
     
-    @scala.inline
-    def setCount(value: count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setEventArn(value: eventArn): Self = StObject.set(x, "eventArn", value.asInstanceOf[js.Any])
+    inline def setEventArn(value: eventArn): Self = StObject.set(x, "eventArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventArnUndefined: Self = StObject.set(x, "eventArn", js.undefined)
+    inline def setEventArnUndefined: Self = StObject.set(x, "eventArn", js.undefined)
   }
 }

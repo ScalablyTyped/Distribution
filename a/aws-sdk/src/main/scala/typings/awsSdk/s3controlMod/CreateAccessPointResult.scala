@@ -13,19 +13,15 @@ trait CreateAccessPointResult extends StObject {
 }
 object CreateAccessPointResult {
   
-  @scala.inline
-  def apply(): CreateAccessPointResult = {
+  inline def apply(): CreateAccessPointResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateAccessPointResult]
   }
   
-  @scala.inline
-  implicit class CreateAccessPointResultMutableBuilder[Self <: CreateAccessPointResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAccessPointResult](x: Self) {
     
-    @scala.inline
-    def setAccessPointArn(value: S3AccessPointArn): Self = StObject.set(x, "AccessPointArn", value.asInstanceOf[js.Any])
+    inline def setAccessPointArn(value: S3AccessPointArn): Self = StObject.set(x, "AccessPointArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPointArnUndefined: Self = StObject.set(x, "AccessPointArn", js.undefined)
+    inline def setAccessPointArnUndefined: Self = StObject.set(x, "AccessPointArn", js.undefined)
   }
 }

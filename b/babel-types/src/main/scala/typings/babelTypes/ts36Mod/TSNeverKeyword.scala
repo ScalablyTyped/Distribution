@@ -18,10 +18,8 @@ object TSNeverKeyword {
   @js.native
   def apply(): TSNeverKeyword = js.native
   
-  @scala.inline
-  implicit class TSNeverKeywordMutableBuilder[Self <: TSNeverKeyword] (val x: Self) extends AnyVal {
+  extension [Self <: TSNeverKeyword](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSNeverKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSNeverKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

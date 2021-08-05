@@ -23,31 +23,23 @@ trait ListServerCertificatesResponse extends StObject {
 }
 object ListServerCertificatesResponse {
   
-  @scala.inline
-  def apply(ServerCertificateMetadataList: serverCertificateMetadataListType): ListServerCertificatesResponse = {
+  inline def apply(ServerCertificateMetadataList: serverCertificateMetadataListType): ListServerCertificatesResponse = {
     val __obj = js.Dynamic.literal(ServerCertificateMetadataList = ServerCertificateMetadataList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListServerCertificatesResponse]
   }
   
-  @scala.inline
-  implicit class ListServerCertificatesResponseMutableBuilder[Self <: ListServerCertificatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListServerCertificatesResponse](x: Self) {
     
-    @scala.inline
-    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setServerCertificateMetadataList(value: serverCertificateMetadataListType): Self = StObject.set(x, "ServerCertificateMetadataList", value.asInstanceOf[js.Any])
+    inline def setServerCertificateMetadataList(value: serverCertificateMetadataListType): Self = StObject.set(x, "ServerCertificateMetadataList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCertificateMetadataListVarargs(value: ServerCertificateMetadata*): Self = StObject.set(x, "ServerCertificateMetadataList", js.Array(value :_*))
+    inline def setServerCertificateMetadataListVarargs(value: ServerCertificateMetadata*): Self = StObject.set(x, "ServerCertificateMetadataList", js.Array(value :_*))
   }
 }

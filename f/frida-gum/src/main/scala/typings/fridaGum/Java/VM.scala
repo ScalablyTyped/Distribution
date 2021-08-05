@@ -30,22 +30,17 @@ trait VM extends StObject {
 }
 object VM {
   
-  @scala.inline
-  def apply(getEnv: () => Env, perform: js.Function0[Unit] => Unit, tryGetEnv: () => Env | Null): VM = {
+  inline def apply(getEnv: () => Env, perform: js.Function0[Unit] => Unit, tryGetEnv: () => Env | Null): VM = {
     val __obj = js.Dynamic.literal(getEnv = js.Any.fromFunction0(getEnv), perform = js.Any.fromFunction1(perform), tryGetEnv = js.Any.fromFunction0(tryGetEnv))
     __obj.asInstanceOf[VM]
   }
   
-  @scala.inline
-  implicit class VMMutableBuilder[Self <: VM] (val x: Self) extends AnyVal {
+  extension [Self <: VM](x: Self) {
     
-    @scala.inline
-    def setGetEnv(value: () => Env): Self = StObject.set(x, "getEnv", js.Any.fromFunction0(value))
+    inline def setGetEnv(value: () => Env): Self = StObject.set(x, "getEnv", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPerform(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "perform", js.Any.fromFunction1(value))
+    inline def setPerform(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "perform", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTryGetEnv(value: () => Env | Null): Self = StObject.set(x, "tryGetEnv", js.Any.fromFunction0(value))
+    inline def setTryGetEnv(value: () => Env | Null): Self = StObject.set(x, "tryGetEnv", js.Any.fromFunction0(value))
   }
 }

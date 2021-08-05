@@ -20,8 +20,7 @@ object v1Mod {
        with /* index */ StringDictionary[JsonContainment]
   object JsonContainment {
     
-    @scala.inline
-    def apply(): JsonContainment = {
+    inline def apply(): JsonContainment = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsonContainment]
     }
@@ -47,8 +46,7 @@ object v1Mod {
   }
   object JsonNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: js.Any,
       base: String,
       constratints: js.Any,
@@ -62,32 +60,23 @@ object v1Mod {
       __obj.asInstanceOf[JsonNode]
     }
     
-    @scala.inline
-    implicit class JsonNodeMutableBuilder[Self <: JsonNode] (val x: Self) extends AnyVal {
+    extension [Self <: JsonNode](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstratints(value: js.Any): Self = StObject.set(x, "constratints", value.asInstanceOf[js.Any])
+      inline def setConstratints(value: js.Any): Self = StObject.set(x, "constratints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointers(value: js.Any): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
+      inline def setPointers(value: js.Any): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistry(value: js.Any): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+      inline def setRegistry(value: js.Any): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSets(value: js.Any): Self = StObject.set(x, "sets", value.asInstanceOf[js.Any])
+      inline def setSets(value: js.Any): Self = StObject.set(x, "sets", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,8 +98,7 @@ object v1Mod {
   }
   object JsonObj {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bases: js.Any,
       containment: JsonContainment,
       metaSheets: js.Any,
@@ -122,29 +110,21 @@ object v1Mod {
       __obj.asInstanceOf[JsonObj]
     }
     
-    @scala.inline
-    implicit class JsonObjMutableBuilder[Self <: JsonObj] (val x: Self) extends AnyVal {
+    extension [Self <: JsonObj](x: Self) {
       
-      @scala.inline
-      def setBases(value: js.Any): Self = StObject.set(x, "bases", value.asInstanceOf[js.Any])
+      inline def setBases(value: js.Any): Self = StObject.set(x, "bases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainment(value: JsonContainment): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+      inline def setContainment(value: JsonContainment): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaSheets(value: js.Any): Self = StObject.set(x, "metaSheets", value.asInstanceOf[js.Any])
+      inline def setMetaSheets(value: js.Any): Self = StObject.set(x, "metaSheets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodes(value: js.Any): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Any): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelids(value: js.Array[RelId]): Self = StObject.set(x, "relids", value.asInstanceOf[js.Any])
+      inline def setRelids(value: js.Array[RelId]): Self = StObject.set(x, "relids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelidsVarargs(value: RelId*): Self = StObject.set(x, "relids", js.Array(value :_*))
+      inline def setRelidsVarargs(value: RelId*): Self = StObject.set(x, "relids", js.Array(value :_*))
       
-      @scala.inline
-      def setRoot(value: Guid): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: Guid): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
 }

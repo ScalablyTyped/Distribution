@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: StringDictionary[js.Any] */](`object`: T): T = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def apply[T /* <: StringDictionary[js.Any] */](`object`: T): T = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
   
   @JSImport("known", JSImport.Namespace)
   @js.native

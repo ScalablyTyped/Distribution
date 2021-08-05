@@ -19,22 +19,17 @@ trait PageListRendererOptions extends StObject {
 }
 object PageListRendererOptions {
   
-  @scala.inline
-  def apply(onPageChange: (Double, Double) => Unit, pages: js.Array[Active]): PageListRendererOptions = {
+  inline def apply(onPageChange: (Double, Double) => Unit, pages: js.Array[Active]): PageListRendererOptions = {
     val __obj = js.Dynamic.literal(onPageChange = js.Any.fromFunction2(onPageChange), pages = pages.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageListRendererOptions]
   }
   
-  @scala.inline
-  implicit class PageListRendererOptionsMutableBuilder[Self <: PageListRendererOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PageListRendererOptions](x: Self) {
     
-    @scala.inline
-    def setOnPageChange(value: (Double, Double) => Unit): Self = StObject.set(x, "onPageChange", js.Any.fromFunction2(value))
+    inline def setOnPageChange(value: (Double, Double) => Unit): Self = StObject.set(x, "onPageChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPages(value: js.Array[Active]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: js.Array[Active]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesVarargs(value: Active*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: Active*): Self = StObject.set(x, "pages", js.Array(value :_*))
   }
 }

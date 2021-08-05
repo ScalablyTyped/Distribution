@@ -17,25 +17,19 @@ trait ScaleDataRefsortVgSortFie extends StObject {
 }
 object ScaleDataRefsortVgSortFie {
   
-  @scala.inline
-  def apply(data: String, field: ScaleField): ScaleDataRefsortVgSortFie = {
+  inline def apply(data: String, field: ScaleField): ScaleDataRefsortVgSortFie = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleDataRefsortVgSortFie]
   }
   
-  @scala.inline
-  implicit class ScaleDataRefsortVgSortFieMutableBuilder[Self <: ScaleDataRefsortVgSortFie] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleDataRefsortVgSortFie](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField(value: ScaleField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: ScaleField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSort(value: SortField): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: SortField): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

@@ -27,8 +27,7 @@ trait MovieMediaMetadata extends StObject {
 }
 object MovieMediaMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     images: js.Array[Image],
     metadataType: MetadataType,
     releaseDate: String,
@@ -43,34 +42,24 @@ object MovieMediaMetadata {
     __obj.asInstanceOf[MovieMediaMetadata]
   }
   
-  @scala.inline
-  implicit class MovieMediaMetadataMutableBuilder[Self <: MovieMediaMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: MovieMediaMetadata](x: Self) {
     
-    @scala.inline
-    def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setMetadataType(value: MetadataType): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
+    inline def setMetadataType(value: MetadataType): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDate(value: String): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
+    inline def setReleaseDate(value: String): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseYear(value: Double): Self = StObject.set(x, "releaseYear", value.asInstanceOf[js.Any])
+    inline def setReleaseYear(value: Double): Self = StObject.set(x, "releaseYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudio(value: String): Self = StObject.set(x, "studio", value.asInstanceOf[js.Any])
+    inline def setStudio(value: String): Self = StObject.set(x, "studio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MetadataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MetadataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

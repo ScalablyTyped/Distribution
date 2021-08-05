@@ -13,22 +13,17 @@ trait StartInstancesResult extends StObject {
 }
 object StartInstancesResult {
   
-  @scala.inline
-  def apply(): StartInstancesResult = {
+  inline def apply(): StartInstancesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartInstancesResult]
   }
   
-  @scala.inline
-  implicit class StartInstancesResultMutableBuilder[Self <: StartInstancesResult] (val x: Self) extends AnyVal {
+  extension [Self <: StartInstancesResult](x: Self) {
     
-    @scala.inline
-    def setStartingInstances(value: InstanceStateChangeList): Self = StObject.set(x, "StartingInstances", value.asInstanceOf[js.Any])
+    inline def setStartingInstances(value: InstanceStateChangeList): Self = StObject.set(x, "StartingInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartingInstancesUndefined: Self = StObject.set(x, "StartingInstances", js.undefined)
+    inline def setStartingInstancesUndefined: Self = StObject.set(x, "StartingInstances", js.undefined)
     
-    @scala.inline
-    def setStartingInstancesVarargs(value: InstanceStateChange*): Self = StObject.set(x, "StartingInstances", js.Array(value :_*))
+    inline def setStartingInstancesVarargs(value: InstanceStateChange*): Self = StObject.set(x, "StartingInstances", js.Array(value :_*))
   }
 }

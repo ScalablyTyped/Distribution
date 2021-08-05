@@ -15,8 +15,7 @@ object iconConstantsMod {
     @JSImport("@material/textfield/icon/constants", "cssClasses.ROOT")
     @js.native
     def ROOT: String = js.native
-    @scala.inline
-    def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
+    inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -50,13 +49,11 @@ object iconConstantsMod {
     @JSImport("@material/textfield/icon/constants", "strings.ICON_EVENT")
     @js.native
     def ICON_EVENT: String = js.native
-    @scala.inline
-    def ICON_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_EVENT")(x.asInstanceOf[js.Any])
+    inline def ICON_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_EVENT")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/textfield/icon/constants", "strings.ICON_ROLE")
     @js.native
     def ICON_ROLE: String = js.native
-    @scala.inline
-    def ICON_ROLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_ROLE")(x.asInstanceOf[js.Any])
+    inline def ICON_ROLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_ROLE")(x.asInstanceOf[js.Any])
   }
 }

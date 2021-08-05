@@ -20,25 +20,19 @@ trait LegendTitleOptions extends StObject {
 }
 object LegendTitleOptions {
   
-  @scala.inline
-  def apply(): LegendTitleOptions = {
+  inline def apply(): LegendTitleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LegendTitleOptions]
   }
   
-  @scala.inline
-  implicit class LegendTitleOptionsMutableBuilder[Self <: LegendTitleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LegendTitleOptions](x: Self) {
     
-    @scala.inline
-    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

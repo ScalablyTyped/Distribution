@@ -13,19 +13,15 @@ trait FormData extends StObject {
 }
 object FormData {
   
-  @scala.inline
-  def apply(formData: js.Any, xhr: XMLHttpRequest): FormData = {
+  inline def apply(formData: js.Any, xhr: XMLHttpRequest): FormData = {
     val __obj = js.Dynamic.literal(formData = formData.asInstanceOf[js.Any], xhr = xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormData]
   }
   
-  @scala.inline
-  implicit class FormDataMutableBuilder[Self <: FormData] (val x: Self) extends AnyVal {
+  extension [Self <: FormData](x: Self) {
     
-    @scala.inline
-    def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhr(value: XMLHttpRequest): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    inline def setXhr(value: XMLHttpRequest): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
   }
 }

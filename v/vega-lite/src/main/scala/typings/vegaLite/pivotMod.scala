@@ -17,6 +17,6 @@ object pivotMod {
     
     def assemble(): typings.vegaTypings.transformMod.PivotTransform = js.native
     
-    var transform: js.Any = js.native
+    /* private */ var transform: js.Any = js.native
   }
 }

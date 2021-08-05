@@ -12,16 +12,13 @@ trait CashDrawerClosedEventArgs extends StObject {
 }
 object CashDrawerClosedEventArgs {
   
-  @scala.inline
-  def apply(cashDrawer: CashDrawer): CashDrawerClosedEventArgs = {
+  inline def apply(cashDrawer: CashDrawer): CashDrawerClosedEventArgs = {
     val __obj = js.Dynamic.literal(cashDrawer = cashDrawer.asInstanceOf[js.Any])
     __obj.asInstanceOf[CashDrawerClosedEventArgs]
   }
   
-  @scala.inline
-  implicit class CashDrawerClosedEventArgsMutableBuilder[Self <: CashDrawerClosedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CashDrawerClosedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCashDrawer(value: CashDrawer): Self = StObject.set(x, "cashDrawer", value.asInstanceOf[js.Any])
+    inline def setCashDrawer(value: CashDrawer): Self = StObject.set(x, "cashDrawer", value.asInstanceOf[js.Any])
   }
 }

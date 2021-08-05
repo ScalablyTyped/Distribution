@@ -41,22 +41,19 @@ object mapevents {
     @JSGlobal("H.mapevents.Behavior.DBLTAPZOOM")
     @js.native
     def DBLTAPZOOM: Double = js.native
-    @scala.inline
-    def DBLTAPZOOM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DBLTAPZOOM")(x.asInstanceOf[js.Any])
+    inline def DBLTAPZOOM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DBLTAPZOOM")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("H.mapevents.Behavior.DRAGGING")
     @js.native
     def DRAGGING: Double = js.native
-    @scala.inline
-    def DRAGGING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DRAGGING")(x.asInstanceOf[js.Any])
+    inline def DRAGGING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DRAGGING")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("H.mapevents.Behavior.WHEELZOOM")
     @js.native
     def WHEELZOOM: Double = js.native
-    @scala.inline
-    def WHEELZOOM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHEELZOOM")(x.asInstanceOf[js.Any])
+    inline def WHEELZOOM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHEELZOOM")(x.asInstanceOf[js.Any])
   }
   
   /**

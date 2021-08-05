@@ -42,8 +42,7 @@ object mod {
   }
   object Pick {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: () => js.Promise[js.Any],
       directory: () => js.Promise[js.Any],
       file: () => js.Promise[js.Any]
@@ -52,17 +51,13 @@ object mod {
       __obj.asInstanceOf[Pick]
     }
     
-    @scala.inline
-    implicit class PickMutableBuilder[Self <: Pick] (val x: Self) extends AnyVal {
+    extension [Self <: Pick](x: Self) {
       
-      @scala.inline
-      def setData(value: () => js.Promise[js.Any]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      inline def setData(value: () => js.Promise[js.Any]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDirectory(value: () => js.Promise[js.Any]): Self = StObject.set(x, "directory", js.Any.fromFunction0(value))
+      inline def setDirectory(value: () => js.Promise[js.Any]): Self = StObject.set(x, "directory", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFile(value: () => js.Promise[js.Any]): Self = StObject.set(x, "file", js.Any.fromFunction0(value))
+      inline def setFile(value: () => js.Promise[js.Any]): Self = StObject.set(x, "file", js.Any.fromFunction0(value))
     }
   }
 }

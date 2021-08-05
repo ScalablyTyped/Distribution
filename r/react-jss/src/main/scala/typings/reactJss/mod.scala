@@ -30,8 +30,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[ClassNames /* <: String | Double | js.Symbol */, S /* <: Styles[ClassNames] | (js.Function1[/* theme */ js.Any, Styles[ClassNames]]) */](styles: S): js.Function1[
+  inline def default[ClassNames /* <: String | Double | js.Symbol */, S /* <: Styles[ClassNames] | (js.Function1[/* theme */ js.Any, Styles[ClassNames]]) */](styles: S): js.Function1[
     /* comp */ js.Any, 
     ComponentType[
       LibraryManagedAttributes[js.Any, (Omit[GetProps[js.Any], classes]) & Partial[WithStylesProps[S]] & InnerRef]
@@ -42,8 +41,7 @@ object mod {
       LibraryManagedAttributes[js.Any, (Omit[GetProps[js.Any], classes]) & Partial[WithStylesProps[S]] & InnerRef]
     ]
   ]]
-  @scala.inline
-  def default[ClassNames /* <: String | Double | js.Symbol */, S /* <: Styles[ClassNames] | (js.Function1[/* theme */ js.Any, Styles[ClassNames]]) */](styles: S, options: WithStylesOptions): js.Function1[
+  inline def default[ClassNames /* <: String | Double | js.Symbol */, S /* <: Styles[ClassNames] | (js.Function1[/* theme */ js.Any, Styles[ClassNames]]) */](styles: S, options: WithStylesOptions): js.Function1[
     /* comp */ js.Any, 
     ComponentType[
       LibraryManagedAttributes[js.Any, (Omit[GetProps[js.Any], classes]) & Partial[WithStylesProps[S]] & InnerRef]
@@ -76,17 +74,12 @@ object mod {
   @js.native
   val createGenerateId: CreateGenerateId_ = js.native
   
-  @scala.inline
-  def createTheming[Theme](context: Context[Theme]): Theming[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheming")(context.asInstanceOf[js.Any]).asInstanceOf[Theming[Theme]]
+  inline def createTheming[Theme](context: Context[Theme]): Theming[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheming")(context.asInstanceOf[js.Any]).asInstanceOf[Theming[Theme]]
   
-  @scala.inline
-  def createUseStyles[Theme, C /* <: String */](styles: js.Function1[/* theme */ Theme, Styles[C]]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]]]
-  @scala.inline
-  def createUseStyles[Theme, C /* <: String */](styles: js.Function1[/* theme */ Theme, Styles[C]], options: CreateUseStylesOptions[Theme]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]]]
-  @scala.inline
-  def createUseStyles[Theme, C /* <: String */](styles: Styles[C]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]]]
-  @scala.inline
-  def createUseStyles[Theme, C /* <: String */](styles: Styles[C], options: CreateUseStylesOptions[Theme]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]]]
+  inline def createUseStyles[Theme, C /* <: String */](styles: js.Function1[/* theme */ Theme, Styles[C]]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]]]
+  inline def createUseStyles[Theme, C /* <: String */](styles: js.Function1[/* theme */ Theme, Styles[C]], options: CreateUseStylesOptions[Theme]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]]]
+  inline def createUseStyles[Theme, C /* <: String */](styles: Styles[C]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]]]
+  inline def createUseStyles[Theme, C /* <: String */](styles: Styles[C], options: CreateUseStylesOptions[Theme]): js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUseStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* data */ js.UndefOr[js.Any], Classes[C]]]
   
   @JSImport("react-jss", "jss")
   @js.native
@@ -108,20 +101,16 @@ object mod {
   }
   object BaseOptions {
     
-    @scala.inline
-    def apply[Theme](): BaseOptions[Theme] = {
+    inline def apply[Theme](): BaseOptions[Theme] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseOptions[Theme]]
     }
     
-    @scala.inline
-    implicit class BaseOptionsMutableBuilder[Self <: BaseOptions[?], Theme] (val x: Self & BaseOptions[Theme]) extends AnyVal {
+    extension [Self <: BaseOptions[?], Theme](x: Self & BaseOptions[Theme]) {
       
-      @scala.inline
-      def setTheming(value: Theming[Theme]): Self = StObject.set(x, "theming", value.asInstanceOf[js.Any])
+      inline def setTheming(value: Theming[Theme]): Self = StObject.set(x, "theming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemingUndefined: Self = StObject.set(x, "theming", js.undefined)
+      inline def setThemingUndefined: Self = StObject.set(x, "theming", js.undefined)
     }
   }
   
@@ -133,20 +122,16 @@ object mod {
   }
   object CreateUseStylesOptions {
     
-    @scala.inline
-    def apply[Theme](): CreateUseStylesOptions[Theme] = {
+    inline def apply[Theme](): CreateUseStylesOptions[Theme] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateUseStylesOptions[Theme]]
     }
     
-    @scala.inline
-    implicit class CreateUseStylesOptionsMutableBuilder[Self <: CreateUseStylesOptions[?], Theme] (val x: Self & CreateUseStylesOptions[Theme]) extends AnyVal {
+    extension [Self <: CreateUseStylesOptions[?], Theme](x: Self & CreateUseStylesOptions[Theme]) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -171,26 +156,20 @@ object mod {
   }
   object WithStylesOptions {
     
-    @scala.inline
-    def apply(): WithStylesOptions = {
+    inline def apply(): WithStylesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WithStylesOptions]
     }
     
-    @scala.inline
-    implicit class WithStylesOptionsMutableBuilder[Self <: WithStylesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WithStylesOptions](x: Self) {
       
-      @scala.inline
-      def setInjectTheme(value: Boolean): Self = StObject.set(x, "injectTheme", value.asInstanceOf[js.Any])
+      inline def setInjectTheme(value: Boolean): Self = StObject.set(x, "injectTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectThemeUndefined: Self = StObject.set(x, "injectTheme", js.undefined)
+      inline def setInjectThemeUndefined: Self = StObject.set(x, "injectTheme", js.undefined)
       
-      @scala.inline
-      def setJss(value: Jss): Self = StObject.set(x, "jss", value.asInstanceOf[js.Any])
+      inline def setJss(value: Jss): Self = StObject.set(x, "jss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJssUndefined: Self = StObject.set(x, "jss", js.undefined)
+      inline def setJssUndefined: Self = StObject.set(x, "jss", js.undefined)
     }
   }
   
@@ -200,17 +179,14 @@ object mod {
   }
   object WithStylesProps {
     
-    @scala.inline
-    def apply[S /* <: Styles[String] | (js.Function1[/* theme */ js.Any, Styles[String]]) */](classes: Classes[/* keyof S */ String]): WithStylesProps[S] = {
+    inline def apply[S /* <: Styles[String] | (js.Function1[/* theme */ js.Any, Styles[String]]) */](classes: Classes[/* keyof S */ String]): WithStylesProps[S] = {
       val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any])
       __obj.asInstanceOf[WithStylesProps[S]]
     }
     
-    @scala.inline
-    implicit class WithStylesPropsMutableBuilder[Self <: WithStylesProps[?], S /* <: Styles[String] | (js.Function1[/* theme */ js.Any, Styles[String]]) */] (val x: Self & WithStylesProps[S]) extends AnyVal {
+    extension [Self <: WithStylesProps[?], S /* <: Styles[String] | (js.Function1[/* theme */ js.Any, Styles[String]]) */](x: Self & WithStylesProps[S]) {
       
-      @scala.inline
-      def setClasses(value: Classes[/* keyof S */ String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: Classes[/* keyof S */ String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     }
   }
 }

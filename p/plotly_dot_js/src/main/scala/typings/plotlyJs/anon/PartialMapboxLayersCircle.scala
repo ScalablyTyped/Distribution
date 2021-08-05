@@ -54,124 +54,85 @@ trait PartialMapboxLayersCircle extends StObject {
 }
 object PartialMapboxLayersCircle {
   
-  @scala.inline
-  def apply(): PartialMapboxLayersCircle = {
+  inline def apply(): PartialMapboxLayersCircle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialMapboxLayersCircle]
   }
   
-  @scala.inline
-  implicit class PartialMapboxLayersCircleMutableBuilder[Self <: PartialMapboxLayersCircle] (val x: Self) extends AnyVal {
+  extension [Self <: PartialMapboxLayersCircle](x: Self) {
     
-    @scala.inline
-    def setBelow(value: String): Self = StObject.set(x, "below", value.asInstanceOf[js.Any])
+    inline def setBelow(value: String): Self = StObject.set(x, "below", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBelowUndefined: Self = StObject.set(x, "below", js.undefined)
+    inline def setBelowUndefined: Self = StObject.set(x, "below", js.undefined)
     
-    @scala.inline
-    def setCircle(value: Radius): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: Radius): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+    inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
     
-    @scala.inline
-    def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setCoordinates(value: Double | String): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: Double | String): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
+    inline def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
-    @scala.inline
-    def setFill(value: Outlinecolor): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: Outlinecolor): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setLine(value: PartialShapeLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: PartialShapeLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setMaxzoom(value: Double): Self = StObject.set(x, "maxzoom", value.asInstanceOf[js.Any])
+    inline def setMaxzoom(value: Double): Self = StObject.set(x, "maxzoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxzoomUndefined: Self = StObject.set(x, "maxzoom", js.undefined)
+    inline def setMaxzoomUndefined: Self = StObject.set(x, "maxzoom", js.undefined)
     
-    @scala.inline
-    def setMinzoom(value: Double): Self = StObject.set(x, "minzoom", value.asInstanceOf[js.Any])
+    inline def setMinzoom(value: Double): Self = StObject.set(x, "minzoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinzoomUndefined: Self = StObject.set(x, "minzoom", js.undefined)
+    inline def setMinzoomUndefined: Self = StObject.set(x, "minzoom", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setSource(value: Double | String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Double | String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setSourceattribution(value: String): Self = StObject.set(x, "sourceattribution", value.asInstanceOf[js.Any])
+    inline def setSourceattribution(value: String): Self = StObject.set(x, "sourceattribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceattributionUndefined: Self = StObject.set(x, "sourceattribution", js.undefined)
+    inline def setSourceattributionUndefined: Self = StObject.set(x, "sourceattribution", js.undefined)
     
-    @scala.inline
-    def setSourcelayer(value: String): Self = StObject.set(x, "sourcelayer", value.asInstanceOf[js.Any])
+    inline def setSourcelayer(value: String): Self = StObject.set(x, "sourcelayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcelayerUndefined: Self = StObject.set(x, "sourcelayer", js.undefined)
+    inline def setSourcelayerUndefined: Self = StObject.set(x, "sourcelayer", js.undefined)
     
-    @scala.inline
-    def setSourcetype(value: geojson | vecotr | raster | image): Self = StObject.set(x, "sourcetype", value.asInstanceOf[js.Any])
+    inline def setSourcetype(value: geojson | vecotr | raster | image): Self = StObject.set(x, "sourcetype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcetypeUndefined: Self = StObject.set(x, "sourcetype", js.undefined)
+    inline def setSourcetypeUndefined: Self = StObject.set(x, "sourcetype", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: PartialMapboxSymbolIcon): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: PartialMapboxSymbolIcon): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
-    @scala.inline
-    def setTemplateitemname(value: String): Self = StObject.set(x, "templateitemname", value.asInstanceOf[js.Any])
+    inline def setTemplateitemname(value: String): Self = StObject.set(x, "templateitemname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateitemnameUndefined: Self = StObject.set(x, "templateitemname", js.undefined)
+    inline def setTemplateitemnameUndefined: Self = StObject.set(x, "templateitemname", js.undefined)
     
-    @scala.inline
-    def setType(value: circle | line | fill | symbol | raster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: circle | line | fill | symbol | raster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVisible(value: `true`): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: `true`): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

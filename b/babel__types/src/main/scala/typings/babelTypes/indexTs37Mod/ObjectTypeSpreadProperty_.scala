@@ -19,20 +19,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ObjectTypeSpreadProperty_ {
   
-  @scala.inline
-  def apply(argument: FlowType): ObjectTypeSpreadProperty_ = {
+  inline def apply(argument: FlowType): ObjectTypeSpreadProperty_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ObjectTypeSpreadProperty")
     __obj.asInstanceOf[ObjectTypeSpreadProperty_]
   }
   
-  @scala.inline
-  implicit class ObjectTypeSpreadProperty_MutableBuilder[Self <: ObjectTypeSpreadProperty_] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectTypeSpreadProperty_](x: Self) {
     
-    @scala.inline
-    def setArgument(value: FlowType): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: FlowType): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ObjectTypeSpreadProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ObjectTypeSpreadProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "open-wc__webpack-import-meta-loader"
-version := "0.4-dt-20200925Z-62430d"
+version := "0.4-dt-20200925Z-07fa83"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

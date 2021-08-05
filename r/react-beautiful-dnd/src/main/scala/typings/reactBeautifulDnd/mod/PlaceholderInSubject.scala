@@ -18,28 +18,21 @@ trait PlaceholderInSubject extends StObject {
 }
 object PlaceholderInSubject {
   
-  @scala.inline
-  def apply(placeholderSize: Position): PlaceholderInSubject = {
+  inline def apply(placeholderSize: Position): PlaceholderInSubject = {
     val __obj = js.Dynamic.literal(placeholderSize = placeholderSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceholderInSubject]
   }
   
-  @scala.inline
-  implicit class PlaceholderInSubjectMutableBuilder[Self <: PlaceholderInSubject] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceholderInSubject](x: Self) {
     
-    @scala.inline
-    def setIncreasedBy(value: Position): Self = StObject.set(x, "increasedBy", value.asInstanceOf[js.Any])
+    inline def setIncreasedBy(value: Position): Self = StObject.set(x, "increasedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncreasedByUndefined: Self = StObject.set(x, "increasedBy", js.undefined)
+    inline def setIncreasedByUndefined: Self = StObject.set(x, "increasedBy", js.undefined)
     
-    @scala.inline
-    def setOldFrameMaxScroll(value: Position): Self = StObject.set(x, "oldFrameMaxScroll", value.asInstanceOf[js.Any])
+    inline def setOldFrameMaxScroll(value: Position): Self = StObject.set(x, "oldFrameMaxScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldFrameMaxScrollUndefined: Self = StObject.set(x, "oldFrameMaxScroll", js.undefined)
+    inline def setOldFrameMaxScrollUndefined: Self = StObject.set(x, "oldFrameMaxScroll", js.undefined)
     
-    @scala.inline
-    def setPlaceholderSize(value: Position): Self = StObject.set(x, "placeholderSize", value.asInstanceOf[js.Any])
+    inline def setPlaceholderSize(value: Position): Self = StObject.set(x, "placeholderSize", value.asInstanceOf[js.Any])
   }
 }

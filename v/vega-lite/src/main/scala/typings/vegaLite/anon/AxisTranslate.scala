@@ -38,8 +38,7 @@ trait AxisTranslate extends StObject {
 }
 object AxisTranslate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisTranslate: Double | SignalRef,
     band: Double,
     channel: x | y | theta | radius,
@@ -53,43 +52,30 @@ object AxisTranslate {
     __obj.asInstanceOf[AxisTranslate]
   }
   
-  @scala.inline
-  implicit class AxisTranslateMutableBuilder[Self <: AxisTranslate] (val x: Self) extends AnyVal {
+  extension [Self <: AxisTranslate](x: Self) {
     
-    @scala.inline
-    def setAxisTranslate(value: Double | SignalRef): Self = StObject.set(x, "axisTranslate", value.asInstanceOf[js.Any])
+    inline def setAxisTranslate(value: Double | SignalRef): Self = StObject.set(x, "axisTranslate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+    inline def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannel(value: typings.vegaLite.vegaLiteStrings.x | y | theta | radius): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: typings.vegaLite.vegaLiteStrings.x | y | theta | radius): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfig(value: typings.vegaLite.srcConfigMod.Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: typings.vegaLite.srcConfigMod.Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldDef(value: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
+    inline def setFieldDef(value: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldDef2(value: Position2Def[String]): Self = StObject.set(x, "fieldDef2", value.asInstanceOf[js.Any])
+    inline def setFieldDef2(value: Position2Def[String]): Self = StObject.set(x, "fieldDef2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldDef2Undefined: Self = StObject.set(x, "fieldDef2", js.undefined)
+    inline def setFieldDef2Undefined: Self = StObject.set(x, "fieldDef2", js.undefined)
     
-    @scala.inline
-    def setMarkDef(value: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
+    inline def setMarkDef(value: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverse(value: Boolean | SignalRef): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: Boolean | SignalRef): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleName(value: String): Self = StObject.set(x, "scaleName", value.asInstanceOf[js.Any])
+    inline def setScaleName(value: String): Self = StObject.set(x, "scaleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
   }
 }

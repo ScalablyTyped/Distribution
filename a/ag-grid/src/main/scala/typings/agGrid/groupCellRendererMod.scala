@@ -32,13 +32,13 @@ object groupCellRendererMod {
     
     /* private */ def assignBlankValueToGroupFooterCell(params: js.Any): js.Any = js.native
     
-    var cellIsBlank: js.Any = js.native
+    /* private */ var cellIsBlank: js.Any = js.native
     
-    var cellRendererService: js.Any = js.native
+    /* private */ var cellRendererService: js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /* private */ def createFooterCell(): js.Any = js.native
     
@@ -46,32 +46,32 @@ object groupCellRendererMod {
     
     /* private */ def createLeafCell(): js.Any = js.native
     
-    var displayedGroup: js.Any = js.native
+    /* private */ var displayedGroup: js.Any = js.native
     
-    var draggedFromHideOpenParents: js.Any = js.native
+    /* private */ var draggedFromHideOpenParents: js.Any = js.native
     
-    var eCheckbox: js.Any = js.native
+    /* private */ var eCheckbox: js.Any = js.native
     
-    var eChildCount: js.Any = js.native
+    /* private */ var eChildCount: js.Any = js.native
     
-    var eContracted: js.Any = js.native
+    /* private */ var eContracted: js.Any = js.native
     
-    var eExpanded: js.Any = js.native
+    /* private */ var eExpanded: js.Any = js.native
     
-    var eValue: js.Any = js.native
+    /* private */ var eValue: js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var expressionService: js.Any = js.native
+    /* private */ var expressionService: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var indentClass: js.Any = js.native
+    /* private */ var indentClass: js.Any = js.native
     
     @JSName("init")
     def init_MGroupCellRenderer(params: GroupCellRendererParams): Unit = js.native
     
-    var innerCellRenderer: js.Any = js.native
+    /* private */ var innerCellRenderer: js.Any = js.native
     
     /* private */ def isEmbeddedRowMismatch(): js.Any = js.native
     
@@ -79,7 +79,7 @@ object groupCellRendererMod {
     
     /* private */ def isUserWantsSelected(): js.Any = js.native
     
-    var mouseEventService: js.Any = js.native
+    /* private */ var mouseEventService: js.Any = js.native
     
     /* private */ def onAllChildrenCountChanged(): js.Any = js.native
     
@@ -91,7 +91,7 @@ object groupCellRendererMod {
     
     /* private */ def onKeyDown(event: js.Any): js.Any = js.native
     
-    var params: js.Any = js.native
+    /* private */ var params: js.Any = js.native
     
     def refresh(): Boolean = js.native
     /** Get the cell to refresh. Return true if successful. Return false if not (or you don't have refresh logic),
@@ -111,7 +111,7 @@ object groupCellRendererMod {
     
     /* private */ def updateChildCount(): js.Any = js.native
     
-    var valueFormatterService: js.Any = js.native
+    /* private */ var valueFormatterService: js.Any = js.native
   }
   /* static members */
   object GroupCellRenderer {
@@ -123,8 +123,7 @@ object groupCellRendererMod {
     @JSImport("ag-grid/dist/lib/rendering/cellRenderers/groupCellRenderer", "GroupCellRenderer.TEMPLATE")
     @js.native
     def TEMPLATE: js.Any = js.native
-    @scala.inline
-    def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
+    inline def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
   trait GroupCellRendererParams
@@ -153,8 +152,7 @@ object groupCellRendererMod {
   }
   object GroupCellRendererParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $scope: js.Any,
       actualValue: String,
       addRenderedRowListener: (String, js.Function) => Unit,
@@ -188,38 +186,27 @@ object groupCellRendererMod {
       __obj.asInstanceOf[GroupCellRendererParams]
     }
     
-    @scala.inline
-    implicit class GroupCellRendererParamsMutableBuilder[Self <: GroupCellRendererParams] (val x: Self) extends AnyVal {
+    extension [Self <: GroupCellRendererParams](x: Self) {
       
-      @scala.inline
-      def setActualValue(value: String): Self = StObject.set(x, "actualValue", value.asInstanceOf[js.Any])
+      inline def setActualValue(value: String): Self = StObject.set(x, "actualValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckbox(value: js.Any): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
+      inline def setCheckbox(value: js.Any): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterValueGetter(value: js.Any): Self = StObject.set(x, "footerValueGetter", value.asInstanceOf[js.Any])
+      inline def setFooterValueGetter(value: js.Any): Self = StObject.set(x, "footerValueGetter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+      inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinned(value: String): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+      inline def setPinned(value: String): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressCount(value: Boolean): Self = StObject.set(x, "suppressCount", value.asInstanceOf[js.Any])
+      inline def setSuppressCount(value: Boolean): Self = StObject.set(x, "suppressCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressDoubleClickExpand(value: Boolean): Self = StObject.set(x, "suppressDoubleClickExpand", value.asInstanceOf[js.Any])
+      inline def setSuppressDoubleClickExpand(value: Boolean): Self = StObject.set(x, "suppressDoubleClickExpand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressPadding(value: Boolean): Self = StObject.set(x, "suppressPadding", value.asInstanceOf[js.Any])
+      inline def setSuppressPadding(value: Boolean): Self = StObject.set(x, "suppressPadding", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -8,16 +8,13 @@ object commanderStrings {
   
   @js.native
   sealed trait electron extends StObject
-  @scala.inline
-  def electron: electron = "electron".asInstanceOf[electron]
+  inline def electron: electron = "electron".asInstanceOf[electron]
   
   @js.native
   sealed trait node extends StObject
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
+  inline def node: node = "node".asInstanceOf[node]
   
   @js.native
   sealed trait user extends StObject
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
+  inline def user: user = "user".asInstanceOf[user]
 }

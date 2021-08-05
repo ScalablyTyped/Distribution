@@ -10,16 +10,13 @@ trait SafariPrivateBrowsing extends StObject {
 }
 object SafariPrivateBrowsing {
   
-  @scala.inline
-  def apply(enabled: Boolean): SafariPrivateBrowsing = {
+  inline def apply(enabled: Boolean): SafariPrivateBrowsing = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafariPrivateBrowsing]
   }
   
-  @scala.inline
-  implicit class SafariPrivateBrowsingMutableBuilder[Self <: SafariPrivateBrowsing] (val x: Self) extends AnyVal {
+  extension [Self <: SafariPrivateBrowsing](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

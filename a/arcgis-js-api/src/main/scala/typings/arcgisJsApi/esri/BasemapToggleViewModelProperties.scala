@@ -22,25 +22,19 @@ trait BasemapToggleViewModelProperties extends StObject {
 }
 object BasemapToggleViewModelProperties {
   
-  @scala.inline
-  def apply(): BasemapToggleViewModelProperties = {
+  inline def apply(): BasemapToggleViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BasemapToggleViewModelProperties]
   }
   
-  @scala.inline
-  implicit class BasemapToggleViewModelPropertiesMutableBuilder[Self <: BasemapToggleViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BasemapToggleViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setNextBasemap(value: BasemapProperties | String): Self = StObject.set(x, "nextBasemap", value.asInstanceOf[js.Any])
+    inline def setNextBasemap(value: BasemapProperties | String): Self = StObject.set(x, "nextBasemap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextBasemapUndefined: Self = StObject.set(x, "nextBasemap", js.undefined)
+    inline def setNextBasemapUndefined: Self = StObject.set(x, "nextBasemap", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

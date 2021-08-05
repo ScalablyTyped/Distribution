@@ -10,7 +10,7 @@ trait Comment extends StObject {
   
   var _start: Double
   
-  var _trivia: js.Any
+  /* private */ var _trivia: js.Any
   
   def end(): Double
   
@@ -26,8 +26,7 @@ trait Comment extends StObject {
 }
 object Comment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _end: Double,
     _start: Double,
     _trivia: js.Any,
@@ -42,34 +41,24 @@ object Comment {
     __obj.asInstanceOf[Comment]
   }
   
-  @scala.inline
-  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+  extension [Self <: Comment](x: Self) {
     
-    @scala.inline
-    def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+    inline def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndsLine(value: Boolean): Self = StObject.set(x, "endsLine", value.asInstanceOf[js.Any])
+    inline def setEndsLine(value: Boolean): Self = StObject.set(x, "endsLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullText(value: () => String): Self = StObject.set(x, "fullText", js.Any.fromFunction0(value))
+    inline def setFullText(value: () => String): Self = StObject.set(x, "fullText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKind(value: () => SyntaxKind): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
+    inline def setKind(value: () => SyntaxKind): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStructuralEquals(value: (Comment, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (Comment, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_end(value: Double): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
+    inline def set_end(value: Double): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_start(value: Double): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
+    inline def set_start(value: Double): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_trivia(value: js.Any): Self = StObject.set(x, "_trivia", value.asInstanceOf[js.Any])
+    inline def set_trivia(value: js.Any): Self = StObject.set(x, "_trivia", value.asInstanceOf[js.Any])
   }
 }

@@ -36,8 +36,7 @@ trait RewardedVideoAdOnErrorCallbackResult extends StObject {
 }
 object RewardedVideoAdOnErrorCallbackResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errCode: `1000` | `1001` | `1002` | `1003` | `1004` | `1005` | `1006` | `1007` | `1008`,
     errMsg: String
   ): RewardedVideoAdOnErrorCallbackResult = {
@@ -45,13 +44,10 @@ object RewardedVideoAdOnErrorCallbackResult {
     __obj.asInstanceOf[RewardedVideoAdOnErrorCallbackResult]
   }
   
-  @scala.inline
-  implicit class RewardedVideoAdOnErrorCallbackResultMutableBuilder[Self <: RewardedVideoAdOnErrorCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: RewardedVideoAdOnErrorCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: `1000` | `1001` | `1002` | `1003` | `1004` | `1005` | `1006` | `1007` | `1008`): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: `1000` | `1001` | `1002` | `1003` | `1004` | `1005` | `1006` | `1007` | `1008`): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

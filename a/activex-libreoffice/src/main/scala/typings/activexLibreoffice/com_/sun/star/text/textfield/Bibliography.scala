@@ -29,8 +29,7 @@ trait Bibliography
 }
 object Bibliography {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -63,10 +62,8 @@ object Bibliography {
     __obj.asInstanceOf[Bibliography]
   }
   
-  @scala.inline
-  implicit class BibliographyMutableBuilder[Self <: Bibliography] (val x: Self) extends AnyVal {
+  extension [Self <: Bibliography](x: Self) {
     
-    @scala.inline
-    def setFields(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
   }
 }

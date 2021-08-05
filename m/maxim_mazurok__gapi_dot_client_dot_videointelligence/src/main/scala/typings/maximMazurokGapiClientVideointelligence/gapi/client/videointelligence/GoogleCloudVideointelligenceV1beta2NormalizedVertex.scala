@@ -14,25 +14,19 @@ trait GoogleCloudVideointelligenceV1beta2NormalizedVertex extends StObject {
 }
 object GoogleCloudVideointelligenceV1beta2NormalizedVertex {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1beta2NormalizedVertex = {
+  inline def apply(): GoogleCloudVideointelligenceV1beta2NormalizedVertex = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2NormalizedVertex]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1beta2NormalizedVertexMutableBuilder[Self <: GoogleCloudVideointelligenceV1beta2NormalizedVertex] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1beta2NormalizedVertex](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

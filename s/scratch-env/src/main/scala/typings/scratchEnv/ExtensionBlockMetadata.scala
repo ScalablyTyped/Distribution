@@ -47,76 +47,53 @@ trait ExtensionBlockMetadata extends StObject {
 }
 object ExtensionBlockMetadata {
   
-  @scala.inline
-  def apply(blockType: ValueOf[BlockType], opcode: String, text: String): ExtensionBlockMetadata = {
+  inline def apply(blockType: ValueOf[BlockType], opcode: String, text: String): ExtensionBlockMetadata = {
     val __obj = js.Dynamic.literal(blockType = blockType.asInstanceOf[js.Any], opcode = opcode.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionBlockMetadata]
   }
   
-  @scala.inline
-  implicit class ExtensionBlockMetadataMutableBuilder[Self <: ExtensionBlockMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionBlockMetadata](x: Self) {
     
-    @scala.inline
-    def setArguments(value: Record[String, ExtensionArgumentMetadata]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: Record[String, ExtensionArgumentMetadata]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+    inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    @scala.inline
-    def setBlockType(value: ValueOf[BlockType]): Self = StObject.set(x, "blockType", value.asInstanceOf[js.Any])
+    inline def setBlockType(value: ValueOf[BlockType]): Self = StObject.set(x, "blockType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchCount(value: Double): Self = StObject.set(x, "branchCount", value.asInstanceOf[js.Any])
+    inline def setBranchCount(value: Double): Self = StObject.set(x, "branchCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchCountUndefined: Self = StObject.set(x, "branchCount", js.undefined)
+    inline def setBranchCountUndefined: Self = StObject.set(x, "branchCount", js.undefined)
     
-    @scala.inline
-    def setDisableMonitor(value: Boolean): Self = StObject.set(x, "disableMonitor", value.asInstanceOf[js.Any])
+    inline def setDisableMonitor(value: Boolean): Self = StObject.set(x, "disableMonitor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableMonitorUndefined: Self = StObject.set(x, "disableMonitor", js.undefined)
+    inline def setDisableMonitorUndefined: Self = StObject.set(x, "disableMonitor", js.undefined)
     
-    @scala.inline
-    def setFunc(value: String): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
+    inline def setFunc(value: String): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFuncUndefined: Self = StObject.set(x, "func", js.undefined)
+    inline def setFuncUndefined: Self = StObject.set(x, "func", js.undefined)
     
-    @scala.inline
-    def setHideFromPalette(value: Boolean): Self = StObject.set(x, "hideFromPalette", value.asInstanceOf[js.Any])
+    inline def setHideFromPalette(value: Boolean): Self = StObject.set(x, "hideFromPalette", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideFromPaletteUndefined: Self = StObject.set(x, "hideFromPalette", js.undefined)
+    inline def setHideFromPaletteUndefined: Self = StObject.set(x, "hideFromPalette", js.undefined)
     
-    @scala.inline
-    def setIsEdgeActivated(value: Boolean): Self = StObject.set(x, "isEdgeActivated", value.asInstanceOf[js.Any])
+    inline def setIsEdgeActivated(value: Boolean): Self = StObject.set(x, "isEdgeActivated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEdgeActivatedUndefined: Self = StObject.set(x, "isEdgeActivated", js.undefined)
+    inline def setIsEdgeActivatedUndefined: Self = StObject.set(x, "isEdgeActivated", js.undefined)
     
-    @scala.inline
-    def setIsTerminal(value: Boolean): Self = StObject.set(x, "isTerminal", value.asInstanceOf[js.Any])
+    inline def setIsTerminal(value: Boolean): Self = StObject.set(x, "isTerminal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTerminalUndefined: Self = StObject.set(x, "isTerminal", js.undefined)
+    inline def setIsTerminalUndefined: Self = StObject.set(x, "isTerminal", js.undefined)
     
-    @scala.inline
-    def setOpcode(value: String): Self = StObject.set(x, "opcode", value.asInstanceOf[js.Any])
+    inline def setOpcode(value: String): Self = StObject.set(x, "opcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReporterScope(value: ReporterScope): Self = StObject.set(x, "reporterScope", value.asInstanceOf[js.Any])
+    inline def setReporterScope(value: ReporterScope): Self = StObject.set(x, "reporterScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReporterScopeUndefined: Self = StObject.set(x, "reporterScope", js.undefined)
+    inline def setReporterScopeUndefined: Self = StObject.set(x, "reporterScope", js.undefined)
     
-    @scala.inline
-    def setShouldRestartExistingThreads(value: Boolean): Self = StObject.set(x, "shouldRestartExistingThreads", value.asInstanceOf[js.Any])
+    inline def setShouldRestartExistingThreads(value: Boolean): Self = StObject.set(x, "shouldRestartExistingThreads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldRestartExistingThreadsUndefined: Self = StObject.set(x, "shouldRestartExistingThreads", js.undefined)
+    inline def setShouldRestartExistingThreadsUndefined: Self = StObject.set(x, "shouldRestartExistingThreads", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

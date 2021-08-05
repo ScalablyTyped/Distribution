@@ -18,28 +18,21 @@ trait SearchTransitGatewayMulticastGroupsResult extends StObject {
 }
 object SearchTransitGatewayMulticastGroupsResult {
   
-  @scala.inline
-  def apply(): SearchTransitGatewayMulticastGroupsResult = {
+  inline def apply(): SearchTransitGatewayMulticastGroupsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchTransitGatewayMulticastGroupsResult]
   }
   
-  @scala.inline
-  implicit class SearchTransitGatewayMulticastGroupsResultMutableBuilder[Self <: SearchTransitGatewayMulticastGroupsResult] (val x: Self) extends AnyVal {
+  extension [Self <: SearchTransitGatewayMulticastGroupsResult](x: Self) {
     
-    @scala.inline
-    def setMulticastGroups(value: TransitGatewayMulticastGroupList): Self = StObject.set(x, "MulticastGroups", value.asInstanceOf[js.Any])
+    inline def setMulticastGroups(value: TransitGatewayMulticastGroupList): Self = StObject.set(x, "MulticastGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMulticastGroupsUndefined: Self = StObject.set(x, "MulticastGroups", js.undefined)
+    inline def setMulticastGroupsUndefined: Self = StObject.set(x, "MulticastGroups", js.undefined)
     
-    @scala.inline
-    def setMulticastGroupsVarargs(value: TransitGatewayMulticastGroup*): Self = StObject.set(x, "MulticastGroups", js.Array(value :_*))
+    inline def setMulticastGroupsVarargs(value: TransitGatewayMulticastGroup*): Self = StObject.set(x, "MulticastGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

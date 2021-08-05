@@ -9,8 +9,7 @@ trait DeviceWatcher
      with IDeviceWatcher
 object DeviceWatcher {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onadded: js.Any,
     onenumerationcompleted: js.Any,
     onremoved: js.Any,

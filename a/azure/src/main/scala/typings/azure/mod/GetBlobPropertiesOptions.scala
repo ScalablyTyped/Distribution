@@ -12,19 +12,15 @@ trait GetBlobPropertiesOptions
 }
 object GetBlobPropertiesOptions {
   
-  @scala.inline
-  def apply(): GetBlobPropertiesOptions = {
+  inline def apply(): GetBlobPropertiesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBlobPropertiesOptions]
   }
   
-  @scala.inline
-  implicit class GetBlobPropertiesOptionsMutableBuilder[Self <: GetBlobPropertiesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetBlobPropertiesOptions](x: Self) {
     
-    @scala.inline
-    def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait ReportFailure extends StObject {
 }
 object ReportFailure {
   
-  @scala.inline
-  def apply(): ReportFailure = {
+  inline def apply(): ReportFailure = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportFailure]
   }
   
-  @scala.inline
-  implicit class ReportFailureMutableBuilder[Self <: ReportFailure] (val x: Self) extends AnyVal {
+  extension [Self <: ReportFailure](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
   }
 }

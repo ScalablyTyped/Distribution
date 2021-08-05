@@ -22,20 +22,16 @@ object bookmarkMod extends Shortcut {
   }
   object BookmarkProps {
     
-    @scala.inline
-    def apply(): BookmarkProps = {
+    inline def apply(): BookmarkProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BookmarkProps]
     }
     
-    @scala.inline
-    implicit class BookmarkPropsMutableBuilder[Self <: BookmarkProps] (val x: Self) extends AnyVal {
+    extension [Self <: BookmarkProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

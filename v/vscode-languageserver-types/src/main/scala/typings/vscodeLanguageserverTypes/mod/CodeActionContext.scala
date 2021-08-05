@@ -25,8 +25,7 @@ trait CodeActionContext extends StObject {
 }
 object CodeActionContext {
   
-  @scala.inline
-  def apply(diagnostics: js.Array[Diagnostic]): CodeActionContext = {
+  inline def apply(diagnostics: js.Array[Diagnostic]): CodeActionContext = {
     val __obj = js.Dynamic.literal(diagnostics = diagnostics.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeActionContext]
   }
@@ -38,33 +37,24 @@ object CodeActionContext {
   /**
     * Creates a new CodeActionContext literal.
     */
-  @scala.inline
-  def create(diagnostics: js.Array[Diagnostic]): CodeActionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(diagnostics.asInstanceOf[js.Any]).asInstanceOf[CodeActionContext]
-  @scala.inline
-  def create(diagnostics: js.Array[Diagnostic], only: js.Array[CodeActionKind]): CodeActionContext = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(diagnostics.asInstanceOf[js.Any], only.asInstanceOf[js.Any])).asInstanceOf[CodeActionContext]
+  inline def create(diagnostics: js.Array[Diagnostic]): CodeActionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(diagnostics.asInstanceOf[js.Any]).asInstanceOf[CodeActionContext]
+  inline def create(diagnostics: js.Array[Diagnostic], only: js.Array[CodeActionKind]): CodeActionContext = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(diagnostics.asInstanceOf[js.Any], only.asInstanceOf[js.Any])).asInstanceOf[CodeActionContext]
   
   /**
     * Checks whether the given literal conforms to the [CodeActionContext](#CodeActionContext) interface.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeActionContext */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeActionContext */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeActionContext */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeActionContext */ Boolean]
   
-  @scala.inline
-  implicit class CodeActionContextMutableBuilder[Self <: CodeActionContext] (val x: Self) extends AnyVal {
+  extension [Self <: CodeActionContext](x: Self) {
     
-    @scala.inline
-    def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+    inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
-    @scala.inline
-    def setOnly(value: js.Array[CodeActionKind]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+    inline def setOnly(value: js.Array[CodeActionKind]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
+    inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
     
-    @scala.inline
-    def setOnlyVarargs(value: CodeActionKind*): Self = StObject.set(x, "only", js.Array(value :_*))
+    inline def setOnlyVarargs(value: CodeActionKind*): Self = StObject.set(x, "only", js.Array(value :_*))
   }
 }

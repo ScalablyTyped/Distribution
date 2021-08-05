@@ -52,8 +52,7 @@ trait PlacesService extends StObject {
 }
 object PlacesService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     findPlaceFromPhoneNumber: (FindPlaceFromPhoneNumberRequest, js.Function2[/* results */ js.Array[PlaceResult], /* status */ PlacesServiceStatus, Unit]) => Unit,
     findPlaceFromQuery: (FindPlaceFromQueryRequest, js.Function2[/* results */ js.Array[PlaceResult], /* status */ PlacesServiceStatus, Unit]) => Unit,
     getDetails: (PlaceDetailsRequest, js.Function2[/* result */ PlaceResult, /* status */ PlacesServiceStatus, Unit]) => Unit,
@@ -75,26 +74,21 @@ object PlacesService {
     __obj.asInstanceOf[PlacesService]
   }
   
-  @scala.inline
-  implicit class PlacesServiceMutableBuilder[Self <: PlacesService] (val x: Self) extends AnyVal {
+  extension [Self <: PlacesService](x: Self) {
     
-    @scala.inline
-    def setFindPlaceFromPhoneNumber(
+    inline def setFindPlaceFromPhoneNumber(
       value: (FindPlaceFromPhoneNumberRequest, js.Function2[/* results */ js.Array[PlaceResult], /* status */ PlacesServiceStatus, Unit]) => Unit
     ): Self = StObject.set(x, "findPlaceFromPhoneNumber", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFindPlaceFromQuery(
+    inline def setFindPlaceFromQuery(
       value: (FindPlaceFromQueryRequest, js.Function2[/* results */ js.Array[PlaceResult], /* status */ PlacesServiceStatus, Unit]) => Unit
     ): Self = StObject.set(x, "findPlaceFromQuery", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDetails(
+    inline def setGetDetails(
       value: (PlaceDetailsRequest, js.Function2[/* result */ PlaceResult, /* status */ PlacesServiceStatus, Unit]) => Unit
     ): Self = StObject.set(x, "getDetails", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNearbySearch(
+    inline def setNearbySearch(
       value: (PlaceSearchRequest, js.Function3[
           /* results */ js.Array[PlaceResult], 
           /* status */ PlacesServiceStatus, 
@@ -103,13 +97,11 @@ object PlacesService {
         ]) => Unit
     ): Self = StObject.set(x, "nearbySearch", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRadarSearch(
+    inline def setRadarSearch(
       value: (RadarSearchRequest, js.Function2[/* results */ js.Array[PlaceResult], /* status */ PlacesServiceStatus, Unit]) => Unit
     ): Self = StObject.set(x, "radarSearch", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTextSearch(
+    inline def setTextSearch(
       value: (TextSearchRequest, js.Function3[
           /* results */ js.Array[PlaceResult], 
           /* status */ PlacesServiceStatus, 

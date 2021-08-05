@@ -12,22 +12,17 @@ trait ItemTreeDto extends StObject {
 }
 object ItemTreeDto {
   
-  @scala.inline
-  def apply(header: String, tags: js.Array[String]): ItemTreeDto = {
+  inline def apply(header: String, tags: js.Array[String]): ItemTreeDto = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemTreeDto]
   }
   
-  @scala.inline
-  implicit class ItemTreeDtoMutableBuilder[Self <: ItemTreeDto] (val x: Self) extends AnyVal {
+  extension [Self <: ItemTreeDto](x: Self) {
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

@@ -15,55 +15,43 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def test(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ CustomTestResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def test(
+  inline def test(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ CustomTestResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def test(
     proxy: Proxy,
     options: TestOptions,
     cb: js.Function2[/* error */ js.Any, /* result */ CustomTestResult, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def testAll(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ AllResults, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAll")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def testAll(
+  inline def testAll(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ AllResults, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAll")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def testAll(
     proxy: Proxy,
     options: CoreOptions,
     cb: js.Function2[/* error */ js.Any, /* result */ AllResults, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAll")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def testAnonymityLevel(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAnonymityLevel")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def testAnonymityLevel(
+  inline def testAnonymityLevel(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAnonymityLevel")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def testAnonymityLevel(
     proxy: Proxy,
     options: CoreOptions,
     cb: js.Function2[/* error */ js.Any, /* result */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAnonymityLevel")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def testProtocol(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocol")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def testProtocol(
+  inline def testProtocol(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocol")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def testProtocol(
     proxy: Proxy,
     options: CoreOptions,
     cb: js.Function2[/* error */ js.Any, /* result */ Result, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocol")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def testProtocols(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ ProtocolResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocols")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def testProtocols(
+  inline def testProtocols(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ ProtocolResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocols")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def testProtocols(
     proxy: Proxy,
     options: CoreOptions,
     cb: js.Function2[/* error */ js.Any, /* result */ ProtocolResult, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocols")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def testTunnel(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testTunnel")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def testTunnel(
+  inline def testTunnel(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testTunnel")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def testTunnel(
     proxy: Proxy,
     options: CoreOptions,
     cb: js.Function2[/* error */ js.Any, /* result */ Result, Unit]
@@ -79,32 +67,24 @@ object mod {
   }
   object AllResults {
     
-    @scala.inline
-    def apply(): AllResults = {
+    inline def apply(): AllResults = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AllResults]
     }
     
-    @scala.inline
-    implicit class AllResultsMutableBuilder[Self <: AllResults] (val x: Self) extends AnyVal {
+    extension [Self <: AllResults](x: Self) {
       
-      @scala.inline
-      def setAnonymityLevel(value: AnonymityLevel): Self = StObject.set(x, "anonymityLevel", value.asInstanceOf[js.Any])
+      inline def setAnonymityLevel(value: AnonymityLevel): Self = StObject.set(x, "anonymityLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnonymityLevelUndefined: Self = StObject.set(x, "anonymityLevel", js.undefined)
+      inline def setAnonymityLevelUndefined: Self = StObject.set(x, "anonymityLevel", js.undefined)
       
-      @scala.inline
-      def setProtocols(value: ProtocolResult): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+      inline def setProtocols(value: ProtocolResult): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
+      inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
       
-      @scala.inline
-      def setTunnel(value: Result): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
+      inline def setTunnel(value: Result): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTunnelUndefined: Self = StObject.set(x, "tunnel", js.undefined)
+      inline def setTunnelUndefined: Self = StObject.set(x, "tunnel", js.undefined)
     }
   }
   
@@ -116,14 +96,11 @@ object mod {
   trait AnonymityLevel extends StObject
   object AnonymityLevel {
     
-    @scala.inline
-    def anonymous: typings.proxyVerifier.proxyVerifierStrings.anonymous = "anonymous".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.anonymous]
+    inline def anonymous: typings.proxyVerifier.proxyVerifierStrings.anonymous = "anonymous".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.anonymous]
     
-    @scala.inline
-    def elite: typings.proxyVerifier.proxyVerifierStrings.elite = "elite".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.elite]
+    inline def elite: typings.proxyVerifier.proxyVerifierStrings.elite = "elite".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.elite]
     
-    @scala.inline
-    def transparent: typings.proxyVerifier.proxyVerifierStrings.transparent = "transparent".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.transparent]
+    inline def transparent: typings.proxyVerifier.proxyVerifierStrings.transparent = "transparent".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.transparent]
   }
   
   trait CustomTestBaseResult extends StObject {
@@ -136,23 +113,18 @@ object mod {
   }
   object CustomTestBaseResult {
     
-    @scala.inline
-    def apply(data: String, headers: Headers, status: Double): CustomTestBaseResult = {
+    inline def apply(data: String, headers: Headers, status: Double): CustomTestBaseResult = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomTestBaseResult]
     }
     
-    @scala.inline
-    implicit class CustomTestBaseResultMutableBuilder[Self <: CustomTestBaseResult] (val x: Self) extends AnyVal {
+    extension [Self <: CustomTestBaseResult](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -167,20 +139,16 @@ object mod {
   }
   object CustomTestNotWorkingResult {
     
-    @scala.inline
-    def apply(data: String, error: Code, headers: Headers, status: Double): CustomTestNotWorkingResult = {
+    inline def apply(data: String, error: Code, headers: Headers, status: Double): CustomTestNotWorkingResult = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ok = false, status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomTestNotWorkingResult]
     }
     
-    @scala.inline
-    implicit class CustomTestNotWorkingResultMutableBuilder[Self <: CustomTestNotWorkingResult] (val x: Self) extends AnyVal {
+    extension [Self <: CustomTestNotWorkingResult](x: Self) {
       
-      @scala.inline
-      def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOk(value: `false`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: `false`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,14 +159,12 @@ object mod {
   trait CustomTestResult extends StObject
   object CustomTestResult {
     
-    @scala.inline
-    def CustomTestNotWorkingResult(data: String, error: Code, headers: Headers, status: Double): typings.proxyVerifier.mod.CustomTestNotWorkingResult = {
+    inline def CustomTestNotWorkingResult(data: String, error: Code, headers: Headers, status: Double): typings.proxyVerifier.mod.CustomTestNotWorkingResult = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ok = false, status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.proxyVerifier.mod.CustomTestNotWorkingResult]
     }
     
-    @scala.inline
-    def CustomTestWorkingResult(data: String, headers: Headers, status: Double): typings.proxyVerifier.mod.CustomTestWorkingResult = {
+    inline def CustomTestWorkingResult(data: String, headers: Headers, status: Double): typings.proxyVerifier.mod.CustomTestWorkingResult = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ok = true, status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.proxyVerifier.mod.CustomTestWorkingResult]
     }
@@ -213,17 +179,14 @@ object mod {
   }
   object CustomTestWorkingResult {
     
-    @scala.inline
-    def apply(data: String, headers: Headers, status: Double): CustomTestWorkingResult = {
+    inline def apply(data: String, headers: Headers, status: Double): CustomTestWorkingResult = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ok = true, status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomTestWorkingResult]
     }
     
-    @scala.inline
-    implicit class CustomTestWorkingResultMutableBuilder[Self <: CustomTestWorkingResult] (val x: Self) extends AnyVal {
+    extension [Self <: CustomTestWorkingResult](x: Self) {
       
-      @scala.inline
-      def setOk(value: `true`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: `true`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     }
   }
   
@@ -239,20 +202,16 @@ object mod {
   }
   object NotWorkingResult {
     
-    @scala.inline
-    def apply(error: Code): NotWorkingResult = {
+    inline def apply(error: Code): NotWorkingResult = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], ok = false)
       __obj.asInstanceOf[NotWorkingResult]
     }
     
-    @scala.inline
-    implicit class NotWorkingResultMutableBuilder[Self <: NotWorkingResult] (val x: Self) extends AnyVal {
+    extension [Self <: NotWorkingResult](x: Self) {
       
-      @scala.inline
-      def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOk(value: `false`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: `false`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     }
   }
   
@@ -265,17 +224,13 @@ object mod {
   trait Protocol extends StObject
   object Protocol {
     
-    @scala.inline
-    def http: typings.proxyVerifier.proxyVerifierStrings.http = "http".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.http]
+    inline def http: typings.proxyVerifier.proxyVerifierStrings.http = "http".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.http]
     
-    @scala.inline
-    def https: typings.proxyVerifier.proxyVerifierStrings.https = "https".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.https]
+    inline def https: typings.proxyVerifier.proxyVerifierStrings.https = "https".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.https]
     
-    @scala.inline
-    def socks4: typings.proxyVerifier.proxyVerifierStrings.socks4 = "socks4".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.socks4]
+    inline def socks4: typings.proxyVerifier.proxyVerifierStrings.socks4 = "socks4".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.socks4]
     
-    @scala.inline
-    def socks5: typings.proxyVerifier.proxyVerifierStrings.socks5 = "socks5".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.socks5]
+    inline def socks5: typings.proxyVerifier.proxyVerifierStrings.socks5 = "socks5".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.socks5]
   }
   
   type ProtocolResult = StringDictionary[Result]
@@ -297,41 +252,30 @@ object mod {
   }
   object Proxy {
     
-    @scala.inline
-    def apply(ipAddress: String, port: Double): Proxy = {
+    inline def apply(ipAddress: String, port: Double): Proxy = {
       val __obj = js.Dynamic.literal(ipAddress = ipAddress.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[Proxy]
     }
     
-    @scala.inline
-    implicit class ProxyMutableBuilder[Self <: Proxy] (val x: Self) extends AnyVal {
+    extension [Self <: Proxy](x: Self) {
       
-      @scala.inline
-      def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: Protocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: Protocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setProtocols(value: js.Array[Protocol]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+      inline def setProtocols(value: js.Array[Protocol]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
+      inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
       
-      @scala.inline
-      def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
     }
   }
   
@@ -342,14 +286,12 @@ object mod {
   trait Result extends StObject
   object Result {
     
-    @scala.inline
-    def NotWorkingResult(error: Code): typings.proxyVerifier.mod.NotWorkingResult = {
+    inline def NotWorkingResult(error: Code): typings.proxyVerifier.mod.NotWorkingResult = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], ok = false)
       __obj.asInstanceOf[typings.proxyVerifier.mod.NotWorkingResult]
     }
     
-    @scala.inline
-    def WorkingResult(): typings.proxyVerifier.mod.WorkingResult = {
+    inline def WorkingResult(): typings.proxyVerifier.mod.WorkingResult = {
       val __obj = js.Dynamic.literal(ok = true)
       __obj.asInstanceOf[typings.proxyVerifier.mod.WorkingResult]
     }
@@ -363,20 +305,16 @@ object mod {
   }
   object TestOptions {
     
-    @scala.inline
-    def apply(testFn: (String, Double, Headers) => Unit, testUrl: String): TestOptions = {
+    inline def apply(testFn: (String, Double, Headers) => Unit, testUrl: String): TestOptions = {
       val __obj = js.Dynamic.literal(testFn = js.Any.fromFunction3(testFn), testUrl = testUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestOptions]
     }
     
-    @scala.inline
-    implicit class TestOptionsMutableBuilder[Self <: TestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TestOptions](x: Self) {
       
-      @scala.inline
-      def setTestFn(value: (String, Double, Headers) => Unit): Self = StObject.set(x, "testFn", js.Any.fromFunction3(value))
+      inline def setTestFn(value: (String, Double, Headers) => Unit): Self = StObject.set(x, "testFn", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTestUrl(value: String): Self = StObject.set(x, "testUrl", value.asInstanceOf[js.Any])
+      inline def setTestUrl(value: String): Self = StObject.set(x, "testUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -388,17 +326,14 @@ object mod {
   }
   object WorkingResult {
     
-    @scala.inline
-    def apply(): WorkingResult = {
+    inline def apply(): WorkingResult = {
       val __obj = js.Dynamic.literal(ok = true)
       __obj.asInstanceOf[WorkingResult]
     }
     
-    @scala.inline
-    implicit class WorkingResultMutableBuilder[Self <: WorkingResult] (val x: Self) extends AnyVal {
+    extension [Self <: WorkingResult](x: Self) {
       
-      @scala.inline
-      def setOk(value: `true`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: `true`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     }
   }
 }

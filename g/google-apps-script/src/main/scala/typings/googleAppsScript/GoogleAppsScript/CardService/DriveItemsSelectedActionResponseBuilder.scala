@@ -15,8 +15,7 @@ trait DriveItemsSelectedActionResponseBuilder extends StObject {
 }
 object DriveItemsSelectedActionResponseBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     build: () => DriveItemsSelectedActionResponse,
     requestFileScope: String => DriveItemsSelectedActionResponseBuilder
   ): DriveItemsSelectedActionResponseBuilder = {
@@ -24,13 +23,10 @@ object DriveItemsSelectedActionResponseBuilder {
     __obj.asInstanceOf[DriveItemsSelectedActionResponseBuilder]
   }
   
-  @scala.inline
-  implicit class DriveItemsSelectedActionResponseBuilderMutableBuilder[Self <: DriveItemsSelectedActionResponseBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: DriveItemsSelectedActionResponseBuilder](x: Self) {
     
-    @scala.inline
-    def setBuild(value: () => DriveItemsSelectedActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => DriveItemsSelectedActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequestFileScope(value: String => DriveItemsSelectedActionResponseBuilder): Self = StObject.set(x, "requestFileScope", js.Any.fromFunction1(value))
+    inline def setRequestFileScope(value: String => DriveItemsSelectedActionResponseBuilder): Self = StObject.set(x, "requestFileScope", js.Any.fromFunction1(value))
   }
 }

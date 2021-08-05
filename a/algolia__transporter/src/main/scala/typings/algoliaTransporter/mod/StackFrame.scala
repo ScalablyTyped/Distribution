@@ -29,8 +29,7 @@ trait StackFrame extends StObject {
 }
 object StackFrame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     host: StatelessHost,
     request: typings.algoliaRequesterCommon.mod.Request,
     response: Response,
@@ -40,19 +39,14 @@ object StackFrame {
     __obj.asInstanceOf[StackFrame]
   }
   
-  @scala.inline
-  implicit class StackFrameMutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
+  extension [Self <: StackFrame](x: Self) {
     
-    @scala.inline
-    def setHost(value: StatelessHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: StatelessHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: typings.algoliaRequesterCommon.mod.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: typings.algoliaRequesterCommon.mod.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriesLeft(value: Double): Self = StObject.set(x, "triesLeft", value.asInstanceOf[js.Any])
+    inline def setTriesLeft(value: Double): Self = StObject.set(x, "triesLeft", value.asInstanceOf[js.Any])
   }
 }

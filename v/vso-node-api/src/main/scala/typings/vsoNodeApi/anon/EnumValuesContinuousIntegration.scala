@@ -10,16 +10,13 @@ trait EnumValuesContinuousIntegration extends StObject {
 }
 object EnumValuesContinuousIntegration {
   
-  @scala.inline
-  def apply(enumValues: ContinuousIntegration): EnumValuesContinuousIntegration = {
+  inline def apply(enumValues: ContinuousIntegration): EnumValuesContinuousIntegration = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesContinuousIntegration]
   }
   
-  @scala.inline
-  implicit class EnumValuesContinuousIntegrationMutableBuilder[Self <: EnumValuesContinuousIntegration] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesContinuousIntegration](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: ContinuousIntegration): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: ContinuousIntegration): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

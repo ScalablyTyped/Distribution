@@ -20,16 +20,13 @@ trait MediaStreamTrack extends StObject {
 }
 object MediaStreamTrack {
   
-  @scala.inline
-  def apply(kind: audio | video): MediaStreamTrack = {
+  inline def apply(kind: audio | video): MediaStreamTrack = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStreamTrack]
   }
   
-  @scala.inline
-  implicit class MediaStreamTrackMutableBuilder[Self <: MediaStreamTrack] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStreamTrack](x: Self) {
     
-    @scala.inline
-    def setKind(value: audio | video): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: audio | video): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait IgtvBrowseFeedResponseComposer extends StObject {
 }
 object IgtvBrowseFeedResponseComposer {
   
-  @scala.inline
-  def apply(aspect_ratio_finished: Boolean, nux_finished: Boolean): IgtvBrowseFeedResponseComposer = {
+  inline def apply(aspect_ratio_finished: Boolean, nux_finished: Boolean): IgtvBrowseFeedResponseComposer = {
     val __obj = js.Dynamic.literal(aspect_ratio_finished = aspect_ratio_finished.asInstanceOf[js.Any], nux_finished = nux_finished.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgtvBrowseFeedResponseComposer]
   }
   
-  @scala.inline
-  implicit class IgtvBrowseFeedResponseComposerMutableBuilder[Self <: IgtvBrowseFeedResponseComposer] (val x: Self) extends AnyVal {
+  extension [Self <: IgtvBrowseFeedResponseComposer](x: Self) {
     
-    @scala.inline
-    def setAspect_ratio_finished(value: Boolean): Self = StObject.set(x, "aspect_ratio_finished", value.asInstanceOf[js.Any])
+    inline def setAspect_ratio_finished(value: Boolean): Self = StObject.set(x, "aspect_ratio_finished", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNux_finished(value: Boolean): Self = StObject.set(x, "nux_finished", value.asInstanceOf[js.Any])
+    inline def setNux_finished(value: Boolean): Self = StObject.set(x, "nux_finished", value.asInstanceOf[js.Any])
   }
 }

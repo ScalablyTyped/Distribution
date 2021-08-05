@@ -14,31 +14,23 @@ trait ListJobsInput extends StObject {
 }
 object ListJobsInput {
   
-  @scala.inline
-  def apply(): ListJobsInput = {
+  inline def apply(): ListJobsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListJobsInput]
   }
   
-  @scala.inline
-  implicit class ListJobsInputMutableBuilder[Self <: ListJobsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListJobsInput](x: Self) {
     
-    @scala.inline
-    def setAPIVersion(value: APIVersion_): Self = StObject.set(x, "APIVersion", value.asInstanceOf[js.Any])
+    inline def setAPIVersion(value: APIVersion_): Self = StObject.set(x, "APIVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAPIVersionUndefined: Self = StObject.set(x, "APIVersion", js.undefined)
+    inline def setAPIVersionUndefined: Self = StObject.set(x, "APIVersion", js.undefined)
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxJobs(value: MaxJobs): Self = StObject.set(x, "MaxJobs", value.asInstanceOf[js.Any])
+    inline def setMaxJobs(value: MaxJobs): Self = StObject.set(x, "MaxJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxJobsUndefined: Self = StObject.set(x, "MaxJobs", js.undefined)
+    inline def setMaxJobsUndefined: Self = StObject.set(x, "MaxJobs", js.undefined)
   }
 }

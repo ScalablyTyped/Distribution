@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineCapType extends StObject
 object LineCapType {
   
-  @scala.inline
-  def butt: typings.weappApi.weappApiStrings.butt = "butt".asInstanceOf[typings.weappApi.weappApiStrings.butt]
+  inline def butt: typings.weappApi.weappApiStrings.butt = "butt".asInstanceOf[typings.weappApi.weappApiStrings.butt]
   
-  @scala.inline
-  def round: typings.weappApi.weappApiStrings.round = "round".asInstanceOf[typings.weappApi.weappApiStrings.round]
+  inline def round: typings.weappApi.weappApiStrings.round = "round".asInstanceOf[typings.weappApi.weappApiStrings.round]
   
-  @scala.inline
-  def square: typings.weappApi.weappApiStrings.square = "square".asInstanceOf[typings.weappApi.weappApiStrings.square]
+  inline def square: typings.weappApi.weappApiStrings.square = "square".asInstanceOf[typings.weappApi.weappApiStrings.square]
 }

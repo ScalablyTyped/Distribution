@@ -23,31 +23,23 @@ trait ArrayPropertiesDetail extends StObject {
 }
 object ArrayPropertiesDetail {
   
-  @scala.inline
-  def apply(): ArrayPropertiesDetail = {
+  inline def apply(): ArrayPropertiesDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArrayPropertiesDetail]
   }
   
-  @scala.inline
-  implicit class ArrayPropertiesDetailMutableBuilder[Self <: ArrayPropertiesDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayPropertiesDetail](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setSize(value: Integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStatusSummary(value: ArrayJobStatusSummary): Self = StObject.set(x, "statusSummary", value.asInstanceOf[js.Any])
+    inline def setStatusSummary(value: ArrayJobStatusSummary): Self = StObject.set(x, "statusSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusSummaryUndefined: Self = StObject.set(x, "statusSummary", js.undefined)
+    inline def setStatusSummaryUndefined: Self = StObject.set(x, "statusSummary", js.undefined)
   }
 }

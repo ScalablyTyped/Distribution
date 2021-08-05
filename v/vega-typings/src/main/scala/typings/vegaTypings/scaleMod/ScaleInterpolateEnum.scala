@@ -19,27 +19,19 @@ trait ScaleInterpolateEnum
      with ScaleInterpolate
 object ScaleInterpolateEnum {
   
-  @scala.inline
-  def cubehelix: typings.vegaTypings.vegaTypingsStrings.cubehelix = "cubehelix".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.cubehelix]
+  inline def cubehelix: typings.vegaTypings.vegaTypingsStrings.cubehelix = "cubehelix".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.cubehelix]
   
-  @scala.inline
-  def `cubehelix-long`: typings.vegaTypings.vegaTypingsStrings.`cubehelix-long` = "cubehelix-long".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`cubehelix-long`]
+  inline def `cubehelix-long`: typings.vegaTypings.vegaTypingsStrings.`cubehelix-long` = "cubehelix-long".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`cubehelix-long`]
   
-  @scala.inline
-  def hcl: typings.vegaTypings.vegaTypingsStrings.hcl = "hcl".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.hcl]
+  inline def hcl: typings.vegaTypings.vegaTypingsStrings.hcl = "hcl".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.hcl]
   
-  @scala.inline
-  def `hcl-long`: typings.vegaTypings.vegaTypingsStrings.`hcl-long` = "hcl-long".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`hcl-long`]
+  inline def `hcl-long`: typings.vegaTypings.vegaTypingsStrings.`hcl-long` = "hcl-long".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`hcl-long`]
   
-  @scala.inline
-  def hsl: typings.vegaTypings.vegaTypingsStrings.hsl = "hsl".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.hsl]
+  inline def hsl: typings.vegaTypings.vegaTypingsStrings.hsl = "hsl".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.hsl]
   
-  @scala.inline
-  def `hsl-long`: typings.vegaTypings.vegaTypingsStrings.`hsl-long` = "hsl-long".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`hsl-long`]
+  inline def `hsl-long`: typings.vegaTypings.vegaTypingsStrings.`hsl-long` = "hsl-long".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`hsl-long`]
   
-  @scala.inline
-  def lab: typings.vegaTypings.vegaTypingsStrings.lab = "lab".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.lab]
+  inline def lab: typings.vegaTypings.vegaTypingsStrings.lab = "lab".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.lab]
   
-  @scala.inline
-  def rgb: typings.vegaTypings.vegaTypingsStrings.rgb = "rgb".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.rgb]
+  inline def rgb: typings.vegaTypings.vegaTypingsStrings.rgb = "rgb".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.rgb]
 }

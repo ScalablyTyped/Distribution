@@ -22,7 +22,7 @@ trait Conflicts extends StObject {
   
   def Item(Index: js.Any): Conflict
   
-  @JSName("Outlook.Conflicts_typekey")
+  /* private */ @JSName("Outlook.Conflicts_typekey")
   var OutlookDotConflicts_typekey: Conflicts
   
   val Parent: js.Any
@@ -31,8 +31,7 @@ trait Conflicts extends StObject {
 }
 object Conflicts {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
@@ -50,40 +49,28 @@ object Conflicts {
     __obj.asInstanceOf[Conflicts]
   }
   
-  @scala.inline
-  implicit class ConflictsMutableBuilder[Self <: Conflicts] (val x: Self) extends AnyVal {
+  extension [Self <: Conflicts](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFirst(value: () => Conflict): Self = StObject.set(x, "GetFirst", js.Any.fromFunction0(value))
+    inline def setGetFirst(value: () => Conflict): Self = StObject.set(x, "GetFirst", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLast(value: () => Conflict): Self = StObject.set(x, "GetLast", js.Any.fromFunction0(value))
+    inline def setGetLast(value: () => Conflict): Self = StObject.set(x, "GetLast", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNext(value: () => Conflict): Self = StObject.set(x, "GetNext", js.Any.fromFunction0(value))
+    inline def setGetNext(value: () => Conflict): Self = StObject.set(x, "GetNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPrevious(value: () => Conflict): Self = StObject.set(x, "GetPrevious", js.Any.fromFunction0(value))
+    inline def setGetPrevious(value: () => Conflict): Self = StObject.set(x, "GetPrevious", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItem(value: js.Any => Conflict): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => Conflict): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutlookDotConflicts_typekey(value: Conflicts): Self = StObject.set(x, "Outlook.Conflicts_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotConflicts_typekey(value: Conflicts): Self = StObject.set(x, "Outlook.Conflicts_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

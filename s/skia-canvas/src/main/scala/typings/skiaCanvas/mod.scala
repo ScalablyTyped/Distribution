@@ -110,10 +110,8 @@ object mod {
   @js.native
   class Path2D () extends StObject
   
-  @scala.inline
-  def loadImage(src: String): js.Promise[Image] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Image]]
-  @scala.inline
-  def loadImage(src: Buffer): js.Promise[Image] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Image]]
+  inline def loadImage(src: String): js.Promise[Image] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Image]]
+  inline def loadImage(src: Buffer): js.Promise[Image] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(src.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Image]]
   
   trait FontFamily extends StObject {
     
@@ -127,35 +125,26 @@ object mod {
   }
   object FontFamily {
     
-    @scala.inline
-    def apply(family: String, styles: js.Array[String], weights: js.Array[Double], widths: js.Array[String]): FontFamily = {
+    inline def apply(family: String, styles: js.Array[String], weights: js.Array[Double], widths: js.Array[String]): FontFamily = {
       val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], weights = weights.asInstanceOf[js.Any], widths = widths.asInstanceOf[js.Any])
       __obj.asInstanceOf[FontFamily]
     }
     
-    @scala.inline
-    implicit class FontFamilyMutableBuilder[Self <: FontFamily] (val x: Self) extends AnyVal {
+    extension [Self <: FontFamily](x: Self) {
       
-      @scala.inline
-      def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
       
-      @scala.inline
-      def setWeights(value: js.Array[Double]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
+      inline def setWeights(value: js.Array[Double]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightsVarargs(value: Double*): Self = StObject.set(x, "weights", js.Array(value :_*))
+      inline def setWeightsVarargs(value: Double*): Self = StObject.set(x, "weights", js.Array(value :_*))
       
-      @scala.inline
-      def setWidths(value: js.Array[String]): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
+      inline def setWidths(value: js.Array[String]): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthsVarargs(value: String*): Self = StObject.set(x, "widths", js.Array(value :_*))
+      inline def setWidthsVarargs(value: String*): Self = StObject.set(x, "widths", js.Array(value :_*))
     }
   }
   
@@ -173,29 +162,22 @@ object mod {
   }
   object FontVariant {
     
-    @scala.inline
-    def apply(family: String, file: String, style: String, weight: Double, width: String): FontVariant = {
+    inline def apply(family: String, file: String, style: String, weight: Double, width: String): FontVariant = {
       val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[FontVariant]
     }
     
-    @scala.inline
-    implicit class FontVariantMutableBuilder[Self <: FontVariant] (val x: Self) extends AnyVal {
+    extension [Self <: FontVariant](x: Self) {
       
-      @scala.inline
-      def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -206,20 +188,16 @@ object mod {
   }
   object TextMetrics {
     
-    @scala.inline
-    def apply(lines: js.Array[TextMetricsLine]): TextMetrics = {
+    inline def apply(lines: js.Array[TextMetricsLine]): TextMetrics = {
       val __obj = js.Dynamic.literal(lines = lines.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextMetrics]
     }
     
-    @scala.inline
-    implicit class TextMetricsMutableBuilder[Self <: TextMetrics] (val x: Self) extends AnyVal {
+    extension [Self <: TextMetrics](x: Self) {
       
-      @scala.inline
-      def setLines(value: js.Array[TextMetricsLine]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: js.Array[TextMetricsLine]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesVarargs(value: TextMetricsLine*): Self = StObject.set(x, "lines", js.Array(value :_*))
+      inline def setLinesVarargs(value: TextMetricsLine*): Self = StObject.set(x, "lines", js.Array(value :_*))
     }
   }
   
@@ -239,32 +217,24 @@ object mod {
   }
   object TextMetricsLine {
     
-    @scala.inline
-    def apply(baseline: Double, endIndex: Double, height: Double, startIndex: Double, x: Double, y: Double): TextMetricsLine = {
+    inline def apply(baseline: Double, endIndex: Double, height: Double, startIndex: Double, x: Double, y: Double): TextMetricsLine = {
       val __obj = js.Dynamic.literal(baseline = baseline.asInstanceOf[js.Any], endIndex = endIndex.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextMetricsLine]
     }
     
-    @scala.inline
-    implicit class TextMetricsLineMutableBuilder[Self <: TextMetricsLine] (val x: Self) extends AnyVal {
+    extension [Self <: TextMetricsLine](x: Self) {
       
-      @scala.inline
-      def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+      inline def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+      inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+      inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

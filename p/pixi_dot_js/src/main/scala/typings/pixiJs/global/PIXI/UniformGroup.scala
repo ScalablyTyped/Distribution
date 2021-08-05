@@ -24,7 +24,7 @@ class UniformGroup ()
     * @protected
     * @member {number} PIXI.UniformGroup#dirtyId
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var dirtyId: Double = js.native
   
   /**
@@ -41,7 +41,7 @@ class UniformGroup ()
     * @protected
     * @member {number} PIXI.UniformGroup#id
     */
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var id: Double = js.native
   
   /**

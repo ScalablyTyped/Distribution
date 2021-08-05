@@ -19,10 +19,8 @@ object expoErrorRecoveryWebMod {
     @JSImport("expo-error-recovery/build/ExpoErrorRecovery.web", "default.recoveredProps")
     @js.native
     def recoveredProps: String | Null = js.native
-    @scala.inline
-    def recoveredProps_=(x: String | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recoveredProps")(x.asInstanceOf[js.Any])
+    inline def recoveredProps_=(x: String | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recoveredProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def saveRecoveryProps(props: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveRecoveryProps")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def saveRecoveryProps(props: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveRecoveryProps")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

@@ -13,22 +13,17 @@ trait DescribeUserProfilesResult extends StObject {
 }
 object DescribeUserProfilesResult {
   
-  @scala.inline
-  def apply(): DescribeUserProfilesResult = {
+  inline def apply(): DescribeUserProfilesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeUserProfilesResult]
   }
   
-  @scala.inline
-  implicit class DescribeUserProfilesResultMutableBuilder[Self <: DescribeUserProfilesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeUserProfilesResult](x: Self) {
     
-    @scala.inline
-    def setUserProfiles(value: UserProfiles): Self = StObject.set(x, "UserProfiles", value.asInstanceOf[js.Any])
+    inline def setUserProfiles(value: UserProfiles): Self = StObject.set(x, "UserProfiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProfilesUndefined: Self = StObject.set(x, "UserProfiles", js.undefined)
+    inline def setUserProfilesUndefined: Self = StObject.set(x, "UserProfiles", js.undefined)
     
-    @scala.inline
-    def setUserProfilesVarargs(value: UserProfile*): Self = StObject.set(x, "UserProfiles", js.Array(value :_*))
+    inline def setUserProfilesVarargs(value: UserProfile*): Self = StObject.set(x, "UserProfiles", js.Array(value :_*))
   }
 }

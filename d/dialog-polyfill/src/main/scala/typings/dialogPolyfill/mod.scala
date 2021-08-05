@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerDialog(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerDialog")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerDialog(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerDialog")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -13,20 +13,16 @@ trait GamepadHapticActuator extends StObject {
 }
 object GamepadHapticActuator {
   
-  @scala.inline
-  def apply(pulse: (Double, Double) => js.Promise[scala.Boolean], `type`: GamepadHapticActuatorType): GamepadHapticActuator = {
+  inline def apply(pulse: (Double, Double) => js.Promise[scala.Boolean], `type`: GamepadHapticActuatorType): GamepadHapticActuator = {
     val __obj = js.Dynamic.literal(pulse = js.Any.fromFunction2(pulse))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GamepadHapticActuator]
   }
   
-  @scala.inline
-  implicit class GamepadHapticActuatorMutableBuilder[Self <: GamepadHapticActuator] (val x: Self) extends AnyVal {
+  extension [Self <: GamepadHapticActuator](x: Self) {
     
-    @scala.inline
-    def setPulse(value: (Double, Double) => js.Promise[scala.Boolean]): Self = StObject.set(x, "pulse", js.Any.fromFunction2(value))
+    inline def setPulse(value: (Double, Double) => js.Promise[scala.Boolean]): Self = StObject.set(x, "pulse", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setType(value: GamepadHapticActuatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GamepadHapticActuatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait ModifyCacheSubnetGroupMessage extends StObject {
 }
 object ModifyCacheSubnetGroupMessage {
   
-  @scala.inline
-  def apply(CacheSubnetGroupName: String): ModifyCacheSubnetGroupMessage = {
+  inline def apply(CacheSubnetGroupName: String): ModifyCacheSubnetGroupMessage = {
     val __obj = js.Dynamic.literal(CacheSubnetGroupName = CacheSubnetGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyCacheSubnetGroupMessage]
   }
   
-  @scala.inline
-  implicit class ModifyCacheSubnetGroupMessageMutableBuilder[Self <: ModifyCacheSubnetGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyCacheSubnetGroupMessage](x: Self) {
     
-    @scala.inline
-    def setCacheSubnetGroupDescription(value: String): Self = StObject.set(x, "CacheSubnetGroupDescription", value.asInstanceOf[js.Any])
+    inline def setCacheSubnetGroupDescription(value: String): Self = StObject.set(x, "CacheSubnetGroupDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheSubnetGroupDescriptionUndefined: Self = StObject.set(x, "CacheSubnetGroupDescription", js.undefined)
+    inline def setCacheSubnetGroupDescriptionUndefined: Self = StObject.set(x, "CacheSubnetGroupDescription", js.undefined)
     
-    @scala.inline
-    def setCacheSubnetGroupName(value: String): Self = StObject.set(x, "CacheSubnetGroupName", value.asInstanceOf[js.Any])
+    inline def setCacheSubnetGroupName(value: String): Self = StObject.set(x, "CacheSubnetGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIds(value: SubnetIdentifierList): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
+    inline def setSubnetIds(value: SubnetIdentifierList): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
+    inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    @scala.inline
-    def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
   }
 }

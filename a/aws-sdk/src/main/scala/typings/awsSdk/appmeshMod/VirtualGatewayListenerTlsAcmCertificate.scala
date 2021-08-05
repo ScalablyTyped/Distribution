@@ -13,16 +13,13 @@ trait VirtualGatewayListenerTlsAcmCertificate extends StObject {
 }
 object VirtualGatewayListenerTlsAcmCertificate {
   
-  @scala.inline
-  def apply(certificateArn: Arn): VirtualGatewayListenerTlsAcmCertificate = {
+  inline def apply(certificateArn: Arn): VirtualGatewayListenerTlsAcmCertificate = {
     val __obj = js.Dynamic.literal(certificateArn = certificateArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualGatewayListenerTlsAcmCertificate]
   }
   
-  @scala.inline
-  implicit class VirtualGatewayListenerTlsAcmCertificateMutableBuilder[Self <: VirtualGatewayListenerTlsAcmCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewayListenerTlsAcmCertificate](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: Arn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: Arn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
   }
 }

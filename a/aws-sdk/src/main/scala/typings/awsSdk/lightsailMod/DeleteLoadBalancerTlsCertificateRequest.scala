@@ -23,25 +23,19 @@ trait DeleteLoadBalancerTlsCertificateRequest extends StObject {
 }
 object DeleteLoadBalancerTlsCertificateRequest {
   
-  @scala.inline
-  def apply(certificateName: ResourceName, loadBalancerName: ResourceName): DeleteLoadBalancerTlsCertificateRequest = {
+  inline def apply(certificateName: ResourceName, loadBalancerName: ResourceName): DeleteLoadBalancerTlsCertificateRequest = {
     val __obj = js.Dynamic.literal(certificateName = certificateName.asInstanceOf[js.Any], loadBalancerName = loadBalancerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLoadBalancerTlsCertificateRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLoadBalancerTlsCertificateRequestMutableBuilder[Self <: DeleteLoadBalancerTlsCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLoadBalancerTlsCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateName(value: ResourceName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
+    inline def setCertificateName(value: ResourceName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
   }
 }

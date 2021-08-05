@@ -36,37 +36,27 @@ trait SchemaTurnBasedAutoMatchingCriteria extends StObject {
 }
 object SchemaTurnBasedAutoMatchingCriteria {
   
-  @scala.inline
-  def apply(): SchemaTurnBasedAutoMatchingCriteria = {
+  inline def apply(): SchemaTurnBasedAutoMatchingCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTurnBasedAutoMatchingCriteria]
   }
   
-  @scala.inline
-  implicit class SchemaTurnBasedAutoMatchingCriteriaMutableBuilder[Self <: SchemaTurnBasedAutoMatchingCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTurnBasedAutoMatchingCriteria](x: Self) {
     
-    @scala.inline
-    def setExclusiveBitmask(value: String): Self = StObject.set(x, "exclusiveBitmask", value.asInstanceOf[js.Any])
+    inline def setExclusiveBitmask(value: String): Self = StObject.set(x, "exclusiveBitmask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveBitmaskUndefined: Self = StObject.set(x, "exclusiveBitmask", js.undefined)
+    inline def setExclusiveBitmaskUndefined: Self = StObject.set(x, "exclusiveBitmask", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMaxAutoMatchingPlayers(value: Double): Self = StObject.set(x, "maxAutoMatchingPlayers", value.asInstanceOf[js.Any])
+    inline def setMaxAutoMatchingPlayers(value: Double): Self = StObject.set(x, "maxAutoMatchingPlayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAutoMatchingPlayersUndefined: Self = StObject.set(x, "maxAutoMatchingPlayers", js.undefined)
+    inline def setMaxAutoMatchingPlayersUndefined: Self = StObject.set(x, "maxAutoMatchingPlayers", js.undefined)
     
-    @scala.inline
-    def setMinAutoMatchingPlayers(value: Double): Self = StObject.set(x, "minAutoMatchingPlayers", value.asInstanceOf[js.Any])
+    inline def setMinAutoMatchingPlayers(value: Double): Self = StObject.set(x, "minAutoMatchingPlayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinAutoMatchingPlayersUndefined: Self = StObject.set(x, "minAutoMatchingPlayers", js.undefined)
+    inline def setMinAutoMatchingPlayersUndefined: Self = StObject.set(x, "minAutoMatchingPlayers", js.undefined)
   }
 }

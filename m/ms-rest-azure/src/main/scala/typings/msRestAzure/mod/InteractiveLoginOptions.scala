@@ -15,19 +15,15 @@ trait InteractiveLoginOptions
 }
 object InteractiveLoginOptions {
   
-  @scala.inline
-  def apply(): InteractiveLoginOptions = {
+  inline def apply(): InteractiveLoginOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InteractiveLoginOptions]
   }
   
-  @scala.inline
-  implicit class InteractiveLoginOptionsMutableBuilder[Self <: InteractiveLoginOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InteractiveLoginOptions](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
   }
 }

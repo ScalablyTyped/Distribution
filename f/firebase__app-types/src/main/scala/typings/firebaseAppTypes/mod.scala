@@ -44,26 +44,20 @@ object mod {
   }
   object FirebaseAppConfig {
     
-    @scala.inline
-    def apply(): FirebaseAppConfig = {
+    inline def apply(): FirebaseAppConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FirebaseAppConfig]
     }
     
-    @scala.inline
-    implicit class FirebaseAppConfigMutableBuilder[Self <: FirebaseAppConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FirebaseAppConfig](x: Self) {
       
-      @scala.inline
-      def setAutomaticDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "automaticDataCollectionEnabled", value.asInstanceOf[js.Any])
+      inline def setAutomaticDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "automaticDataCollectionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomaticDataCollectionEnabledUndefined: Self = StObject.set(x, "automaticDataCollectionEnabled", js.undefined)
+      inline def setAutomaticDataCollectionEnabledUndefined: Self = StObject.set(x, "automaticDataCollectionEnabled", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -136,62 +130,44 @@ object mod {
   }
   object FirebaseOptions {
     
-    @scala.inline
-    def apply(): FirebaseOptions = {
+    inline def apply(): FirebaseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FirebaseOptions]
     }
     
-    @scala.inline
-    implicit class FirebaseOptionsMutableBuilder[Self <: FirebaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FirebaseOptions](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
+      inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+      inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
       
-      @scala.inline
-      def setAuthDomain(value: String): Self = StObject.set(x, "authDomain", value.asInstanceOf[js.Any])
+      inline def setAuthDomain(value: String): Self = StObject.set(x, "authDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthDomainUndefined: Self = StObject.set(x, "authDomain", js.undefined)
+      inline def setAuthDomainUndefined: Self = StObject.set(x, "authDomain", js.undefined)
       
-      @scala.inline
-      def setDatabaseURL(value: String): Self = StObject.set(x, "databaseURL", value.asInstanceOf[js.Any])
+      inline def setDatabaseURL(value: String): Self = StObject.set(x, "databaseURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseURLUndefined: Self = StObject.set(x, "databaseURL", js.undefined)
+      inline def setDatabaseURLUndefined: Self = StObject.set(x, "databaseURL", js.undefined)
       
-      @scala.inline
-      def setMeasurementId(value: String): Self = StObject.set(x, "measurementId", value.asInstanceOf[js.Any])
+      inline def setMeasurementId(value: String): Self = StObject.set(x, "measurementId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeasurementIdUndefined: Self = StObject.set(x, "measurementId", js.undefined)
+      inline def setMeasurementIdUndefined: Self = StObject.set(x, "measurementId", js.undefined)
       
-      @scala.inline
-      def setMessagingSenderId(value: String): Self = StObject.set(x, "messagingSenderId", value.asInstanceOf[js.Any])
+      inline def setMessagingSenderId(value: String): Self = StObject.set(x, "messagingSenderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagingSenderIdUndefined: Self = StObject.set(x, "messagingSenderId", js.undefined)
+      inline def setMessagingSenderIdUndefined: Self = StObject.set(x, "messagingSenderId", js.undefined)
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+      inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
       
-      @scala.inline
-      def setStorageBucket(value: String): Self = StObject.set(x, "storageBucket", value.asInstanceOf[js.Any])
+      inline def setStorageBucket(value: String): Self = StObject.set(x, "storageBucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageBucketUndefined: Self = StObject.set(x, "storageBucket", js.undefined)
+      inline def setStorageBucketUndefined: Self = StObject.set(x, "storageBucket", js.undefined)
     }
   }
   
@@ -203,20 +179,16 @@ object mod {
   }
   object VersionService {
     
-    @scala.inline
-    def apply(library: String, version: String): VersionService = {
+    inline def apply(library: String, version: String): VersionService = {
       val __obj = js.Dynamic.literal(library = library.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[VersionService]
     }
     
-    @scala.inline
-    implicit class VersionServiceMutableBuilder[Self <: VersionService] (val x: Self) extends AnyVal {
+    extension [Self <: VersionService](x: Self) {
       
-      @scala.inline
-      def setLibrary(value: String): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
+      inline def setLibrary(value: String): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -232,25 +204,20 @@ object mod {
     }
     object NameServiceMapping {
       
-      @scala.inline
-      def apply(app: FirebaseApp, `app-version`: VersionService, `platform-identifier`: VersionService): NameServiceMapping = {
+      inline def apply(app: FirebaseApp, `app-version`: VersionService, `platform-identifier`: VersionService): NameServiceMapping = {
         val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any])
         __obj.updateDynamic("app-version")(`app-version`.asInstanceOf[js.Any])
         __obj.updateDynamic("platform-identifier")(`platform-identifier`.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      @scala.inline
-      implicit class NameServiceMappingMutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
+      extension [Self <: NameServiceMapping](x: Self) {
         
-        @scala.inline
-        def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+        inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setApp-version`(value: VersionService): Self = StObject.set(x, "app-version", value.asInstanceOf[js.Any])
+        inline def `setApp-version`(value: VersionService): Self = StObject.set(x, "app-version", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setPlatform-identifier`(value: VersionService): Self = StObject.set(x, "platform-identifier", value.asInstanceOf[js.Any])
+        inline def `setPlatform-identifier`(value: VersionService): Self = StObject.set(x, "platform-identifier", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -13,19 +13,15 @@ trait MeshSpec extends StObject {
 }
 object MeshSpec {
   
-  @scala.inline
-  def apply(): MeshSpec = {
+  inline def apply(): MeshSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeshSpec]
   }
   
-  @scala.inline
-  implicit class MeshSpecMutableBuilder[Self <: MeshSpec] (val x: Self) extends AnyVal {
+  extension [Self <: MeshSpec](x: Self) {
     
-    @scala.inline
-    def setEgressFilter(value: MeshSpecEgressFilter): Self = StObject.set(x, "egressFilter", value.asInstanceOf[js.Any])
+    inline def setEgressFilter(value: MeshSpecEgressFilter): Self = StObject.set(x, "egressFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEgressFilterUndefined: Self = StObject.set(x, "egressFilter", js.undefined)
+    inline def setEgressFilterUndefined: Self = StObject.set(x, "egressFilter", js.undefined)
   }
 }

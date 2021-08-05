@@ -50,21 +50,16 @@ object logResourcePolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LogResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LogResourcePolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LogResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogResourcePolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LogResourcePolicyState): LogResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LogResourcePolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LogResourcePolicyState, opts: CustomResourceOptions): LogResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogResourcePolicy]
+    inline def get(name: String, id: Input[ID]): LogResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LogResourcePolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LogResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogResourcePolicy]
+    inline def get(name: String, id: Input[ID], state: LogResourcePolicyState): LogResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LogResourcePolicy]
+    inline def get(name: String, id: Input[ID], state: LogResourcePolicyState, opts: CustomResourceOptions): LogResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LogResourcePolicy]
     
     /**
       * Returns true if the given object is an instance of LogResourcePolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logResourcePolicy.LogResourcePolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/logResourcePolicy.LogResourcePolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logResourcePolicy.LogResourcePolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/logResourcePolicy.LogResourcePolicy */ Boolean]
   }
   
   trait LogResourcePolicyArgs extends StObject {
@@ -81,20 +76,16 @@ object logResourcePolicyMod {
   }
   object LogResourcePolicyArgs {
     
-    @scala.inline
-    def apply(policyDocument: Input[String], policyName: Input[String]): LogResourcePolicyArgs = {
+    inline def apply(policyDocument: Input[String], policyName: Input[String]): LogResourcePolicyArgs = {
       val __obj = js.Dynamic.literal(policyDocument = policyDocument.asInstanceOf[js.Any], policyName = policyName.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogResourcePolicyArgs]
     }
     
-    @scala.inline
-    implicit class LogResourcePolicyArgsMutableBuilder[Self <: LogResourcePolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LogResourcePolicyArgs](x: Self) {
       
-      @scala.inline
-      def setPolicyDocument(value: Input[String]): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
+      inline def setPolicyDocument(value: Input[String]): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyName(value: Input[String]): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
+      inline def setPolicyName(value: Input[String]): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object logResourcePolicyMod {
   }
   object LogResourcePolicyState {
     
-    @scala.inline
-    def apply(): LogResourcePolicyState = {
+    inline def apply(): LogResourcePolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LogResourcePolicyState]
     }
     
-    @scala.inline
-    implicit class LogResourcePolicyStateMutableBuilder[Self <: LogResourcePolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: LogResourcePolicyState](x: Self) {
       
-      @scala.inline
-      def setPolicyDocument(value: Input[String]): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
+      inline def setPolicyDocument(value: Input[String]): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyDocumentUndefined: Self = StObject.set(x, "policyDocument", js.undefined)
+      inline def setPolicyDocumentUndefined: Self = StObject.set(x, "policyDocument", js.undefined)
       
-      @scala.inline
-      def setPolicyName(value: Input[String]): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
+      inline def setPolicyName(value: Input[String]): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
+      inline def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
     }
   }
 }

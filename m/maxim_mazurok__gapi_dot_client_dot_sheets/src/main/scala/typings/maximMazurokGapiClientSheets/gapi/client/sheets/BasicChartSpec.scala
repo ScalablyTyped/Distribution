@@ -47,88 +47,61 @@ trait BasicChartSpec extends StObject {
 }
 object BasicChartSpec {
   
-  @scala.inline
-  def apply(): BasicChartSpec = {
+  inline def apply(): BasicChartSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BasicChartSpec]
   }
   
-  @scala.inline
-  implicit class BasicChartSpecMutableBuilder[Self <: BasicChartSpec] (val x: Self) extends AnyVal {
+  extension [Self <: BasicChartSpec](x: Self) {
     
-    @scala.inline
-    def setAxis(value: js.Array[BasicChartAxis]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: js.Array[BasicChartAxis]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    @scala.inline
-    def setAxisVarargs(value: BasicChartAxis*): Self = StObject.set(x, "axis", js.Array(value :_*))
+    inline def setAxisVarargs(value: BasicChartAxis*): Self = StObject.set(x, "axis", js.Array(value :_*))
     
-    @scala.inline
-    def setChartType(value: String): Self = StObject.set(x, "chartType", value.asInstanceOf[js.Any])
+    inline def setChartType(value: String): Self = StObject.set(x, "chartType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartTypeUndefined: Self = StObject.set(x, "chartType", js.undefined)
+    inline def setChartTypeUndefined: Self = StObject.set(x, "chartType", js.undefined)
     
-    @scala.inline
-    def setCompareMode(value: String): Self = StObject.set(x, "compareMode", value.asInstanceOf[js.Any])
+    inline def setCompareMode(value: String): Self = StObject.set(x, "compareMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompareModeUndefined: Self = StObject.set(x, "compareMode", js.undefined)
+    inline def setCompareModeUndefined: Self = StObject.set(x, "compareMode", js.undefined)
     
-    @scala.inline
-    def setDomains(value: js.Array[BasicChartDomain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+    inline def setDomains(value: js.Array[BasicChartDomain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
+    inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
-    @scala.inline
-    def setDomainsVarargs(value: BasicChartDomain*): Self = StObject.set(x, "domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: BasicChartDomain*): Self = StObject.set(x, "domains", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaderCount(value: Double): Self = StObject.set(x, "headerCount", value.asInstanceOf[js.Any])
+    inline def setHeaderCount(value: Double): Self = StObject.set(x, "headerCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderCountUndefined: Self = StObject.set(x, "headerCount", js.undefined)
+    inline def setHeaderCountUndefined: Self = StObject.set(x, "headerCount", js.undefined)
     
-    @scala.inline
-    def setInterpolateNulls(value: Boolean): Self = StObject.set(x, "interpolateNulls", value.asInstanceOf[js.Any])
+    inline def setInterpolateNulls(value: Boolean): Self = StObject.set(x, "interpolateNulls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolateNullsUndefined: Self = StObject.set(x, "interpolateNulls", js.undefined)
+    inline def setInterpolateNullsUndefined: Self = StObject.set(x, "interpolateNulls", js.undefined)
     
-    @scala.inline
-    def setLegendPosition(value: String): Self = StObject.set(x, "legendPosition", value.asInstanceOf[js.Any])
+    inline def setLegendPosition(value: String): Self = StObject.set(x, "legendPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendPositionUndefined: Self = StObject.set(x, "legendPosition", js.undefined)
+    inline def setLegendPositionUndefined: Self = StObject.set(x, "legendPosition", js.undefined)
     
-    @scala.inline
-    def setLineSmoothing(value: Boolean): Self = StObject.set(x, "lineSmoothing", value.asInstanceOf[js.Any])
+    inline def setLineSmoothing(value: Boolean): Self = StObject.set(x, "lineSmoothing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineSmoothingUndefined: Self = StObject.set(x, "lineSmoothing", js.undefined)
+    inline def setLineSmoothingUndefined: Self = StObject.set(x, "lineSmoothing", js.undefined)
     
-    @scala.inline
-    def setSeries(value: js.Array[BasicChartSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: js.Array[BasicChartSeries]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    @scala.inline
-    def setSeriesVarargs(value: BasicChartSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: BasicChartSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
     
-    @scala.inline
-    def setStackedType(value: String): Self = StObject.set(x, "stackedType", value.asInstanceOf[js.Any])
+    inline def setStackedType(value: String): Self = StObject.set(x, "stackedType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackedTypeUndefined: Self = StObject.set(x, "stackedType", js.undefined)
+    inline def setStackedTypeUndefined: Self = StObject.set(x, "stackedType", js.undefined)
     
-    @scala.inline
-    def setThreeDimensional(value: Boolean): Self = StObject.set(x, "threeDimensional", value.asInstanceOf[js.Any])
+    inline def setThreeDimensional(value: Boolean): Self = StObject.set(x, "threeDimensional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreeDimensionalUndefined: Self = StObject.set(x, "threeDimensional", js.undefined)
+    inline def setThreeDimensionalUndefined: Self = StObject.set(x, "threeDimensional", js.undefined)
   }
 }

@@ -14,23 +14,18 @@ trait SessionSdpEvent extends StObject {
 }
 object SessionSdpEvent {
   
-  @scala.inline
-  def apply(originator: String, sdp: String, `type`: String): SessionSdpEvent = {
+  inline def apply(originator: String, sdp: String, `type`: String): SessionSdpEvent = {
     val __obj = js.Dynamic.literal(originator = originator.asInstanceOf[js.Any], sdp = sdp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionSdpEvent]
   }
   
-  @scala.inline
-  implicit class SessionSdpEventMutableBuilder[Self <: SessionSdpEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SessionSdpEvent](x: Self) {
     
-    @scala.inline
-    def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
+    inline def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdp(value: String): Self = StObject.set(x, "sdp", value.asInstanceOf[js.Any])
+    inline def setSdp(value: String): Self = StObject.set(x, "sdp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

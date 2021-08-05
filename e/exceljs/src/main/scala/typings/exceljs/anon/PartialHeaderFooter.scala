@@ -25,61 +25,43 @@ trait PartialHeaderFooter extends StObject {
 }
 object PartialHeaderFooter {
   
-  @scala.inline
-  def apply(): PartialHeaderFooter = {
+  inline def apply(): PartialHeaderFooter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialHeaderFooter]
   }
   
-  @scala.inline
-  implicit class PartialHeaderFooterMutableBuilder[Self <: PartialHeaderFooter] (val x: Self) extends AnyVal {
+  extension [Self <: PartialHeaderFooter](x: Self) {
     
-    @scala.inline
-    def setDifferentFirst(value: Boolean): Self = StObject.set(x, "differentFirst", value.asInstanceOf[js.Any])
+    inline def setDifferentFirst(value: Boolean): Self = StObject.set(x, "differentFirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDifferentFirstUndefined: Self = StObject.set(x, "differentFirst", js.undefined)
+    inline def setDifferentFirstUndefined: Self = StObject.set(x, "differentFirst", js.undefined)
     
-    @scala.inline
-    def setDifferentOddEven(value: Boolean): Self = StObject.set(x, "differentOddEven", value.asInstanceOf[js.Any])
+    inline def setDifferentOddEven(value: Boolean): Self = StObject.set(x, "differentOddEven", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDifferentOddEvenUndefined: Self = StObject.set(x, "differentOddEven", js.undefined)
+    inline def setDifferentOddEvenUndefined: Self = StObject.set(x, "differentOddEven", js.undefined)
     
-    @scala.inline
-    def setEvenFooter(value: String): Self = StObject.set(x, "evenFooter", value.asInstanceOf[js.Any])
+    inline def setEvenFooter(value: String): Self = StObject.set(x, "evenFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvenFooterUndefined: Self = StObject.set(x, "evenFooter", js.undefined)
+    inline def setEvenFooterUndefined: Self = StObject.set(x, "evenFooter", js.undefined)
     
-    @scala.inline
-    def setEvenHeader(value: String): Self = StObject.set(x, "evenHeader", value.asInstanceOf[js.Any])
+    inline def setEvenHeader(value: String): Self = StObject.set(x, "evenHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvenHeaderUndefined: Self = StObject.set(x, "evenHeader", js.undefined)
+    inline def setEvenHeaderUndefined: Self = StObject.set(x, "evenHeader", js.undefined)
     
-    @scala.inline
-    def setFirstFooter(value: String): Self = StObject.set(x, "firstFooter", value.asInstanceOf[js.Any])
+    inline def setFirstFooter(value: String): Self = StObject.set(x, "firstFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstFooterUndefined: Self = StObject.set(x, "firstFooter", js.undefined)
+    inline def setFirstFooterUndefined: Self = StObject.set(x, "firstFooter", js.undefined)
     
-    @scala.inline
-    def setFirstHeader(value: String): Self = StObject.set(x, "firstHeader", value.asInstanceOf[js.Any])
+    inline def setFirstHeader(value: String): Self = StObject.set(x, "firstHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstHeaderUndefined: Self = StObject.set(x, "firstHeader", js.undefined)
+    inline def setFirstHeaderUndefined: Self = StObject.set(x, "firstHeader", js.undefined)
     
-    @scala.inline
-    def setOddFooter(value: String): Self = StObject.set(x, "oddFooter", value.asInstanceOf[js.Any])
+    inline def setOddFooter(value: String): Self = StObject.set(x, "oddFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOddFooterUndefined: Self = StObject.set(x, "oddFooter", js.undefined)
+    inline def setOddFooterUndefined: Self = StObject.set(x, "oddFooter", js.undefined)
     
-    @scala.inline
-    def setOddHeader(value: String): Self = StObject.set(x, "oddHeader", value.asInstanceOf[js.Any])
+    inline def setOddHeader(value: String): Self = StObject.set(x, "oddHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOddHeaderUndefined: Self = StObject.set(x, "oddHeader", js.undefined)
+    inline def setOddHeaderUndefined: Self = StObject.set(x, "oddHeader", js.undefined)
   }
 }

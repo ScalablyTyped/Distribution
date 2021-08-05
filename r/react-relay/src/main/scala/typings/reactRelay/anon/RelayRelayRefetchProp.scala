@@ -11,16 +11,13 @@ trait RelayRelayRefetchProp extends StObject {
 }
 object RelayRelayRefetchProp {
   
-  @scala.inline
-  def apply(relay: RelayRefetchProp): RelayRelayRefetchProp = {
+  inline def apply(relay: RelayRefetchProp): RelayRelayRefetchProp = {
     val __obj = js.Dynamic.literal(relay = relay.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelayRelayRefetchProp]
   }
   
-  @scala.inline
-  implicit class RelayRelayRefetchPropMutableBuilder[Self <: RelayRelayRefetchProp] (val x: Self) extends AnyVal {
+  extension [Self <: RelayRelayRefetchProp](x: Self) {
     
-    @scala.inline
-    def setRelay(value: RelayRefetchProp): Self = StObject.set(x, "relay", value.asInstanceOf[js.Any])
+    inline def setRelay(value: RelayRefetchProp): Self = StObject.set(x, "relay", value.asInstanceOf[js.Any])
   }
 }

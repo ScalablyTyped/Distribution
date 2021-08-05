@@ -18,31 +18,23 @@ trait ListJobsFilterCriteria extends StObject {
 }
 object ListJobsFilterCriteria {
   
-  @scala.inline
-  def apply(): ListJobsFilterCriteria = {
+  inline def apply(): ListJobsFilterCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListJobsFilterCriteria]
   }
   
-  @scala.inline
-  implicit class ListJobsFilterCriteriaMutableBuilder[Self <: ListJobsFilterCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: ListJobsFilterCriteria](x: Self) {
     
-    @scala.inline
-    def setExcludes(value: listOfListJobsFilterTerm): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
+    inline def setExcludes(value: listOfListJobsFilterTerm): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
+    inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
     
-    @scala.inline
-    def setExcludesVarargs(value: ListJobsFilterTerm*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+    inline def setExcludesVarargs(value: ListJobsFilterTerm*): Self = StObject.set(x, "excludes", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludes(value: listOfListJobsFilterTerm): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
+    inline def setIncludes(value: listOfListJobsFilterTerm): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludesUndefined: Self = StObject.set(x, "includes", js.undefined)
+    inline def setIncludesUndefined: Self = StObject.set(x, "includes", js.undefined)
     
-    @scala.inline
-    def setIncludesVarargs(value: ListJobsFilterTerm*): Self = StObject.set(x, "includes", js.Array(value :_*))
+    inline def setIncludesVarargs(value: ListJobsFilterTerm*): Self = StObject.set(x, "includes", js.Array(value :_*))
   }
 }

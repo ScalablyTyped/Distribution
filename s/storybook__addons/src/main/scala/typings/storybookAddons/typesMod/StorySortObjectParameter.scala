@@ -14,34 +14,25 @@ trait StorySortObjectParameter extends StObject {
 }
 object StorySortObjectParameter {
   
-  @scala.inline
-  def apply(): StorySortObjectParameter = {
+  inline def apply(): StorySortObjectParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StorySortObjectParameter]
   }
   
-  @scala.inline
-  implicit class StorySortObjectParameterMutableBuilder[Self <: StorySortObjectParameter] (val x: Self) extends AnyVal {
+  extension [Self <: StorySortObjectParameter](x: Self) {
     
-    @scala.inline
-    def setLocales(value: String): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+    inline def setLocales(value: String): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
+    inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
     
-    @scala.inline
-    def setMethod(value: StorySortMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: StorySortMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setOrder(value: js.Array[js.Any]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: js.Array[js.Any]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setOrderVarargs(value: js.Any*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: js.Any*): Self = StObject.set(x, "order", js.Array(value :_*))
   }
 }

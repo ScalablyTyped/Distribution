@@ -23,19 +23,15 @@ trait SingularSelection extends StObject {
 }
 object SingularSelection {
   
-  @scala.inline
-  def apply(selectable: () => Boolean, selected: () => Boolean): SingularSelection = {
+  inline def apply(selectable: () => Boolean, selected: () => Boolean): SingularSelection = {
     val __obj = js.Dynamic.literal(selectable = js.Any.fromFunction0(selectable), selected = js.Any.fromFunction0(selected))
     __obj.asInstanceOf[SingularSelection]
   }
   
-  @scala.inline
-  implicit class SingularSelectionMutableBuilder[Self <: SingularSelection] (val x: Self) extends AnyVal {
+  extension [Self <: SingularSelection](x: Self) {
     
-    @scala.inline
-    def setSelectable(value: () => Boolean): Self = StObject.set(x, "selectable", js.Any.fromFunction0(value))
+    inline def setSelectable(value: () => Boolean): Self = StObject.set(x, "selectable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelected(value: () => Boolean): Self = StObject.set(x, "selected", js.Any.fromFunction0(value))
+    inline def setSelected(value: () => Boolean): Self = StObject.set(x, "selected", js.Any.fromFunction0(value))
   }
 }

@@ -36,37 +36,27 @@ trait ParamsResourceDebuggerDebuggeesList
 }
 object ParamsResourceDebuggerDebuggeesList {
   
-  @scala.inline
-  def apply(): ParamsResourceDebuggerDebuggeesList = {
+  inline def apply(): ParamsResourceDebuggerDebuggeesList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceDebuggerDebuggeesList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceDebuggerDebuggeesListMutableBuilder[Self <: ParamsResourceDebuggerDebuggeesList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceDebuggerDebuggeesList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
+    inline def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientVersionUndefined: Self = StObject.set(x, "clientVersion", js.undefined)
+    inline def setClientVersionUndefined: Self = StObject.set(x, "clientVersion", js.undefined)
     
-    @scala.inline
-    def setIncludeInactive(value: Boolean): Self = StObject.set(x, "includeInactive", value.asInstanceOf[js.Any])
+    inline def setIncludeInactive(value: Boolean): Self = StObject.set(x, "includeInactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeInactiveUndefined: Self = StObject.set(x, "includeInactive", js.undefined)
+    inline def setIncludeInactiveUndefined: Self = StObject.set(x, "includeInactive", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
   }
 }

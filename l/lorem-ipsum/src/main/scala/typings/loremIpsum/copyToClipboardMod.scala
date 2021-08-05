@@ -10,6 +10,5 @@ object copyToClipboardMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(text: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def default(text: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }

@@ -10,16 +10,13 @@ trait NodeAPILibrary extends StObject {
 }
 object NodeAPILibrary {
   
-  @scala.inline
-  def apply(register: String => Unit): NodeAPILibrary = {
+  inline def apply(register: String => Unit): NodeAPILibrary = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction1(register))
     __obj.asInstanceOf[NodeAPILibrary]
   }
   
-  @scala.inline
-  implicit class NodeAPILibraryMutableBuilder[Self <: NodeAPILibrary] (val x: Self) extends AnyVal {
+  extension [Self <: NodeAPILibrary](x: Self) {
     
-    @scala.inline
-    def setRegister(value: String => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+    inline def setRegister(value: String => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
   }
 }

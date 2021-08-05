@@ -66,73 +66,51 @@ trait ComponentPropsGaeaEdit extends StObject {
 }
 object ComponentPropsGaeaEdit {
   
-  @scala.inline
-  def apply(editable: Boolean, editor: String, field: String, hideTool: Boolean, label: String): ComponentPropsGaeaEdit = {
+  inline def apply(editable: Boolean, editor: String, field: String, hideTool: Boolean, label: String): ComponentPropsGaeaEdit = {
     val __obj = js.Dynamic.literal(editable = editable.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hideTool = hideTool.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentPropsGaeaEdit]
   }
   
-  @scala.inline
-  implicit class ComponentPropsGaeaEditMutableBuilder[Self <: ComponentPropsGaeaEdit] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentPropsGaeaEdit](x: Self) {
     
-    @scala.inline
-    def setArray(value: js.Array[ComponentPropsOptionsArrayValue]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: js.Array[ComponentPropsOptionsArrayValue]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
+    inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
-    @scala.inline
-    def setArrayVarargs(value: ComponentPropsOptionsArrayValue*): Self = StObject.set(x, "array", js.Array(value :_*))
+    inline def setArrayVarargs(value: ComponentPropsOptionsArrayValue*): Self = StObject.set(x, "array", js.Array(value :_*))
     
-    @scala.inline
-    def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditor(value: String): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: String): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyValue(value: js.Any): Self = StObject.set(x, "emptyValue", value.asInstanceOf[js.Any])
+    inline def setEmptyValue(value: js.Any): Self = StObject.set(x, "emptyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyValueUndefined: Self = StObject.set(x, "emptyValue", js.undefined)
+    inline def setEmptyValueUndefined: Self = StObject.set(x, "emptyValue", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideTool(value: Boolean): Self = StObject.set(x, "hideTool", value.asInstanceOf[js.Any])
+    inline def setHideTool(value: Boolean): Self = StObject.set(x, "hideTool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstance(value: js.Array[StringDictionary[ComponentPropsOptionValue]]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: js.Array[StringDictionary[ComponentPropsOptionValue]]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    @scala.inline
-    def setInstanceVarargs(value: StringDictionary[ComponentPropsOptionValue]*): Self = StObject.set(x, "instance", js.Array(value :_*))
+    inline def setInstanceVarargs(value: StringDictionary[ComponentPropsOptionValue]*): Self = StObject.set(x, "instance", js.Array(value :_*))
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: CurrentUnit): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: CurrentUnit): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    @scala.inline
-    def setSelector(value: js.Array[ComponentPropsOptionsSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: js.Array[ComponentPropsOptionsSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setSelectorVarargs(value: ComponentPropsOptionsSelector*): Self = StObject.set(x, "selector", js.Array(value :_*))
+    inline def setSelectorVarargs(value: ComponentPropsOptionsSelector*): Self = StObject.set(x, "selector", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

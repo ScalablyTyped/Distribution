@@ -10,16 +10,13 @@ trait XSuite extends StObject {
 }
 object XSuite {
   
-  @scala.inline
-  def apply(execute: () => Unit): XSuite = {
+  inline def apply(execute: () => Unit): XSuite = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute))
     __obj.asInstanceOf[XSuite]
   }
   
-  @scala.inline
-  implicit class XSuiteMutableBuilder[Self <: XSuite] (val x: Self) extends AnyVal {
+  extension [Self <: XSuite](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

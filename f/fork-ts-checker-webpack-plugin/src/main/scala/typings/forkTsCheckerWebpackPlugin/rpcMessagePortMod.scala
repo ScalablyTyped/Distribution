@@ -33,8 +33,7 @@ object rpcMessagePortMod {
   }
   object RpcMessagePort {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addErrorListener: RpcErrorListener => Unit,
       addMessageListener: RpcMessageListener => Unit,
       close: () => js.Promise[Unit],
@@ -48,32 +47,23 @@ object rpcMessagePortMod {
       __obj.asInstanceOf[RpcMessagePort]
     }
     
-    @scala.inline
-    implicit class RpcMessagePortMutableBuilder[Self <: RpcMessagePort] (val x: Self) extends AnyVal {
+    extension [Self <: RpcMessagePort](x: Self) {
       
-      @scala.inline
-      def setAddErrorListener(value: RpcErrorListener => Unit): Self = StObject.set(x, "addErrorListener", js.Any.fromFunction1(value))
+      inline def setAddErrorListener(value: RpcErrorListener => Unit): Self = StObject.set(x, "addErrorListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddMessageListener(value: RpcMessageListener => Unit): Self = StObject.set(x, "addMessageListener", js.Any.fromFunction1(value))
+      inline def setAddMessageListener(value: RpcMessageListener => Unit): Self = StObject.set(x, "addMessageListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDispatchMessage(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "dispatchMessage", js.Any.fromFunction1(value))
+      inline def setDispatchMessage(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "dispatchMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
+      inline def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpen(value: () => js.Promise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+      inline def setOpen(value: () => js.Promise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveErrorListener(value: RpcErrorListener => Unit): Self = StObject.set(x, "removeErrorListener", js.Any.fromFunction1(value))
+      inline def setRemoveErrorListener(value: RpcErrorListener => Unit): Self = StObject.set(x, "removeErrorListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveMessageListener(value: RpcMessageListener => Unit): Self = StObject.set(x, "removeMessageListener", js.Any.fromFunction1(value))
+      inline def setRemoveMessageListener(value: RpcMessageListener => Unit): Self = StObject.set(x, "removeMessageListener", js.Any.fromFunction1(value))
     }
   }
 }

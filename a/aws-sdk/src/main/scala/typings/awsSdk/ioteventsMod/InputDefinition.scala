@@ -13,19 +13,15 @@ trait InputDefinition extends StObject {
 }
 object InputDefinition {
   
-  @scala.inline
-  def apply(attributes: Attributes): InputDefinition = {
+  inline def apply(attributes: Attributes): InputDefinition = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputDefinition]
   }
   
-  @scala.inline
-  implicit class InputDefinitionMutableBuilder[Self <: InputDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: InputDefinition](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
   }
 }

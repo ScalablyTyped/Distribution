@@ -38,52 +38,37 @@ trait GetBulkDeploymentStatusResponse extends StObject {
 }
 object GetBulkDeploymentStatusResponse {
   
-  @scala.inline
-  def apply(): GetBulkDeploymentStatusResponse = {
+  inline def apply(): GetBulkDeploymentStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBulkDeploymentStatusResponse]
   }
   
-  @scala.inline
-  implicit class GetBulkDeploymentStatusResponseMutableBuilder[Self <: GetBulkDeploymentStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetBulkDeploymentStatusResponse](x: Self) {
     
-    @scala.inline
-    def setBulkDeploymentMetrics(value: BulkDeploymentMetrics): Self = StObject.set(x, "BulkDeploymentMetrics", value.asInstanceOf[js.Any])
+    inline def setBulkDeploymentMetrics(value: BulkDeploymentMetrics): Self = StObject.set(x, "BulkDeploymentMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkDeploymentMetricsUndefined: Self = StObject.set(x, "BulkDeploymentMetrics", js.undefined)
+    inline def setBulkDeploymentMetricsUndefined: Self = StObject.set(x, "BulkDeploymentMetrics", js.undefined)
     
-    @scala.inline
-    def setBulkDeploymentStatus(value: BulkDeploymentStatus): Self = StObject.set(x, "BulkDeploymentStatus", value.asInstanceOf[js.Any])
+    inline def setBulkDeploymentStatus(value: BulkDeploymentStatus): Self = StObject.set(x, "BulkDeploymentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkDeploymentStatusUndefined: Self = StObject.set(x, "BulkDeploymentStatus", js.undefined)
+    inline def setBulkDeploymentStatusUndefined: Self = StObject.set(x, "BulkDeploymentStatus", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: string): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: string): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    @scala.inline
-    def setErrorDetails(value: ErrorDetails): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
+    inline def setErrorDetails(value: ErrorDetails): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "ErrorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "ErrorDetails", js.undefined)
     
-    @scala.inline
-    def setErrorDetailsVarargs(value: ErrorDetail*): Self = StObject.set(x, "ErrorDetails", js.Array(value :_*))
+    inline def setErrorDetailsVarargs(value: ErrorDetail*): Self = StObject.set(x, "ErrorDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setErrorMessage(value: string): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: string): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

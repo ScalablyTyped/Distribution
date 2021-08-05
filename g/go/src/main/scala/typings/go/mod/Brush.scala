@@ -77,36 +77,31 @@ object Brush {
   @JSImport("go", "Brush.Linear")
   @js.native
   def Linear: EnumValue = js.native
-  @scala.inline
-  def Linear_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Linear")(x.asInstanceOf[js.Any])
+  inline def Linear_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Linear")(x.asInstanceOf[js.Any])
   
   /**For pattern brushes, used as the value for Brush.type.*/
   /* static member */
   @JSImport("go", "Brush.Pattern")
   @js.native
   def Pattern: EnumValue = js.native
-  @scala.inline
-  def Pattern_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pattern")(x.asInstanceOf[js.Any])
+  inline def Pattern_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pattern")(x.asInstanceOf[js.Any])
   
   /**For radial gradient brushes, used as the value for Brush.type.*/
   /* static member */
   @JSImport("go", "Brush.Radial")
   @js.native
   def Radial: EnumValue = js.native
-  @scala.inline
-  def Radial_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Radial")(x.asInstanceOf[js.Any])
+  inline def Radial_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Radial")(x.asInstanceOf[js.Any])
   
   /**For simple, solid color brushes, used as the value for Brush.type.*/
   /* static member */
   @JSImport("go", "Brush.Solid")
   @js.native
   def Solid: EnumValue = js.native
-  @scala.inline
-  def Solid_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Solid")(x.asInstanceOf[js.Any])
+  inline def Solid_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Solid")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def isValidColor(color: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidColor")(color.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidColor(color: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidColor")(color.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * This static function can be used to generate a random color string.
@@ -114,12 +109,8 @@ object Brush {
     * @param {number=} max a number between zero and 255, defaults to 255.
     */
   /* static member */
-  @scala.inline
-  def randomColor(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomColor")().asInstanceOf[String]
-  @scala.inline
-  def randomColor(min: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomColor")(min.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def randomColor(min: Double, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomColor")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def randomColor(min: Unit, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomColor")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def randomColor(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomColor")().asInstanceOf[String]
+  inline def randomColor(min: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomColor")(min.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def randomColor(min: Double, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomColor")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def randomColor(min: Unit, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomColor")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
 }

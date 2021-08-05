@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdDocumentMedium extends StObject
 object WdDocumentMedium {
   
-  @scala.inline
-  def wdDocument: `1` = 1.asInstanceOf[`1`]
+  inline def wdDocument: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdEmailMessage: `0` = 0.asInstanceOf[`0`]
+  inline def wdEmailMessage: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdWebPage: `2` = 2.asInstanceOf[`2`]
+  inline def wdWebPage: `2` = 2.asInstanceOf[`2`]
 }

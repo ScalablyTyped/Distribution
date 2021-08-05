@@ -15,31 +15,23 @@ trait PartialPickImplkeyofImplEmbed extends StObject {
 }
 object PartialPickImplkeyofImplEmbed {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplEmbed = {
+  inline def apply(): PartialPickImplkeyofImplEmbed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplEmbed]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplEmbedMutableBuilder[Self <: PartialPickImplkeyofImplEmbed] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplEmbed](x: Self) {
     
-    @scala.inline
-    def setEmbed(value: String): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
+    inline def setEmbed(value: String): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedUndefined: Self = StObject.set(x, "embed", js.undefined)
+    inline def setEmbedUndefined: Self = StObject.set(x, "embed", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setPlay(value: String): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
+    inline def setPlay(value: String): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
+    inline def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
   }
 }

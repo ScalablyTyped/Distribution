@@ -65,21 +65,16 @@ object opsworksPermissionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Permission]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Permission]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PermissionState): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Permission]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PermissionState, opts: CustomResourceOptions): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Permission]
+    inline def get(name: String, id: Input[ID]): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Permission]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Permission]
+    inline def get(name: String, id: Input[ID], state: PermissionState): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Permission]
+    inline def get(name: String, id: Input[ID], state: PermissionState, opts: CustomResourceOptions): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Permission]
     
     /**
       * Returns true if the given object is an instance of Permission.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/permission.Permission */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/permission.Permission */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/permission.Permission */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/permission.Permission */ Boolean]
   }
   
   trait PermissionArgs extends StObject {
@@ -111,41 +106,30 @@ object opsworksPermissionMod {
   }
   object PermissionArgs {
     
-    @scala.inline
-    def apply(userArn: Input[String]): PermissionArgs = {
+    inline def apply(userArn: Input[String]): PermissionArgs = {
       val __obj = js.Dynamic.literal(userArn = userArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[PermissionArgs]
     }
     
-    @scala.inline
-    implicit class PermissionArgsMutableBuilder[Self <: PermissionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PermissionArgs](x: Self) {
       
-      @scala.inline
-      def setAllowSsh(value: Input[Boolean]): Self = StObject.set(x, "allowSsh", value.asInstanceOf[js.Any])
+      inline def setAllowSsh(value: Input[Boolean]): Self = StObject.set(x, "allowSsh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowSshUndefined: Self = StObject.set(x, "allowSsh", js.undefined)
+      inline def setAllowSshUndefined: Self = StObject.set(x, "allowSsh", js.undefined)
       
-      @scala.inline
-      def setAllowSudo(value: Input[Boolean]): Self = StObject.set(x, "allowSudo", value.asInstanceOf[js.Any])
+      inline def setAllowSudo(value: Input[Boolean]): Self = StObject.set(x, "allowSudo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowSudoUndefined: Self = StObject.set(x, "allowSudo", js.undefined)
+      inline def setAllowSudoUndefined: Self = StObject.set(x, "allowSudo", js.undefined)
       
-      @scala.inline
-      def setLevel(value: Input[String]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Input[String]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setStackId(value: Input[String]): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
+      inline def setStackId(value: Input[String]): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
+      inline def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
       
-      @scala.inline
-      def setUserArn(value: Input[String]): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
+      inline def setUserArn(value: Input[String]): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -178,44 +162,32 @@ object opsworksPermissionMod {
   }
   object PermissionState {
     
-    @scala.inline
-    def apply(): PermissionState = {
+    inline def apply(): PermissionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PermissionState]
     }
     
-    @scala.inline
-    implicit class PermissionStateMutableBuilder[Self <: PermissionState] (val x: Self) extends AnyVal {
+    extension [Self <: PermissionState](x: Self) {
       
-      @scala.inline
-      def setAllowSsh(value: Input[Boolean]): Self = StObject.set(x, "allowSsh", value.asInstanceOf[js.Any])
+      inline def setAllowSsh(value: Input[Boolean]): Self = StObject.set(x, "allowSsh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowSshUndefined: Self = StObject.set(x, "allowSsh", js.undefined)
+      inline def setAllowSshUndefined: Self = StObject.set(x, "allowSsh", js.undefined)
       
-      @scala.inline
-      def setAllowSudo(value: Input[Boolean]): Self = StObject.set(x, "allowSudo", value.asInstanceOf[js.Any])
+      inline def setAllowSudo(value: Input[Boolean]): Self = StObject.set(x, "allowSudo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowSudoUndefined: Self = StObject.set(x, "allowSudo", js.undefined)
+      inline def setAllowSudoUndefined: Self = StObject.set(x, "allowSudo", js.undefined)
       
-      @scala.inline
-      def setLevel(value: Input[String]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Input[String]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setStackId(value: Input[String]): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
+      inline def setStackId(value: Input[String]): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
+      inline def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
       
-      @scala.inline
-      def setUserArn(value: Input[String]): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
+      inline def setUserArn(value: Input[String]): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserArnUndefined: Self = StObject.set(x, "userArn", js.undefined)
+      inline def setUserArnUndefined: Self = StObject.set(x, "userArn", js.undefined)
     }
   }
 }

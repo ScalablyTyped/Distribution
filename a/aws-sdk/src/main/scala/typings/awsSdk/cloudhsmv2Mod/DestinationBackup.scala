@@ -28,37 +28,27 @@ trait DestinationBackup extends StObject {
 }
 object DestinationBackup {
   
-  @scala.inline
-  def apply(): DestinationBackup = {
+  inline def apply(): DestinationBackup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DestinationBackup]
   }
   
-  @scala.inline
-  implicit class DestinationBackupMutableBuilder[Self <: DestinationBackup] (val x: Self) extends AnyVal {
+  extension [Self <: DestinationBackup](x: Self) {
     
-    @scala.inline
-    def setCreateTimestamp(value: Timestamp): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreateTimestamp(value: Timestamp): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimestampUndefined: Self = StObject.set(x, "CreateTimestamp", js.undefined)
+    inline def setCreateTimestampUndefined: Self = StObject.set(x, "CreateTimestamp", js.undefined)
     
-    @scala.inline
-    def setSourceBackup(value: BackupId): Self = StObject.set(x, "SourceBackup", value.asInstanceOf[js.Any])
+    inline def setSourceBackup(value: BackupId): Self = StObject.set(x, "SourceBackup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBackupUndefined: Self = StObject.set(x, "SourceBackup", js.undefined)
+    inline def setSourceBackupUndefined: Self = StObject.set(x, "SourceBackup", js.undefined)
     
-    @scala.inline
-    def setSourceCluster(value: ClusterId): Self = StObject.set(x, "SourceCluster", value.asInstanceOf[js.Any])
+    inline def setSourceCluster(value: ClusterId): Self = StObject.set(x, "SourceCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceClusterUndefined: Self = StObject.set(x, "SourceCluster", js.undefined)
+    inline def setSourceClusterUndefined: Self = StObject.set(x, "SourceCluster", js.undefined)
     
-    @scala.inline
-    def setSourceRegion(value: Region): Self = StObject.set(x, "SourceRegion", value.asInstanceOf[js.Any])
+    inline def setSourceRegion(value: Region): Self = StObject.set(x, "SourceRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRegionUndefined: Self = StObject.set(x, "SourceRegion", js.undefined)
+    inline def setSourceRegionUndefined: Self = StObject.set(x, "SourceRegion", js.undefined)
   }
 }

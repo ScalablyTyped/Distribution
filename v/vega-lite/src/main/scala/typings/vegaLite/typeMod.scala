@@ -22,16 +22,14 @@ object typeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def scaleType(
+  inline def scaleType(
     specifiedScale: Scale[ExprRef | SignalRef],
     channel: Channel,
     fieldDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef],
     mark: Mark
   ): ScaleType = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleType")(specifiedScale.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any], mark.asInstanceOf[js.Any])).asInstanceOf[ScaleType]
   
-  @scala.inline
-  def scaleType_binned(
+  inline def scaleType_binned(
     specifiedScale: Scale[ExprRef | SignalRef],
     channel: Channel,
     fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null],

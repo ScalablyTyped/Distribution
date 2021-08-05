@@ -18,25 +18,19 @@ trait DescribeTaskDefinitionRequest extends StObject {
 }
 object DescribeTaskDefinitionRequest {
   
-  @scala.inline
-  def apply(taskDefinition: String): DescribeTaskDefinitionRequest = {
+  inline def apply(taskDefinition: String): DescribeTaskDefinitionRequest = {
     val __obj = js.Dynamic.literal(taskDefinition = taskDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTaskDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class DescribeTaskDefinitionRequestMutableBuilder[Self <: DescribeTaskDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTaskDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setInclude(value: TaskDefinitionFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: TaskDefinitionFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setIncludeVarargs(value: TaskDefinitionField*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: TaskDefinitionField*): Self = StObject.set(x, "include", js.Array(value :_*))
     
-    @scala.inline
-    def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
+    inline def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
   }
 }

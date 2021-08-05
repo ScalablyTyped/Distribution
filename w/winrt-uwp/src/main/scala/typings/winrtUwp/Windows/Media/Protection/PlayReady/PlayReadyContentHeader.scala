@@ -49,8 +49,7 @@ trait PlayReadyContentHeader extends StObject {
 }
 object PlayReadyContentHeader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customAttributes: String,
     decryptorSetup: PlayReadyDecryptorSetup,
     domainServiceId: String,
@@ -68,43 +67,30 @@ object PlayReadyContentHeader {
     __obj.asInstanceOf[PlayReadyContentHeader]
   }
   
-  @scala.inline
-  implicit class PlayReadyContentHeaderMutableBuilder[Self <: PlayReadyContentHeader] (val x: Self) extends AnyVal {
+  extension [Self <: PlayReadyContentHeader](x: Self) {
     
-    @scala.inline
-    def setCustomAttributes(value: String): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
+    inline def setCustomAttributes(value: String): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecryptorSetup(value: PlayReadyDecryptorSetup): Self = StObject.set(x, "decryptorSetup", value.asInstanceOf[js.Any])
+    inline def setDecryptorSetup(value: PlayReadyDecryptorSetup): Self = StObject.set(x, "decryptorSetup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainServiceId(value: String): Self = StObject.set(x, "domainServiceId", value.asInstanceOf[js.Any])
+    inline def setDomainServiceId(value: String): Self = StObject.set(x, "domainServiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionType(value: PlayReadyEncryptionAlgorithm): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
+    inline def setEncryptionType(value: PlayReadyEncryptionAlgorithm): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSerializedHeader(value: () => js.Array[Double]): Self = StObject.set(x, "getSerializedHeader", js.Any.fromFunction0(value))
+    inline def setGetSerializedHeader(value: () => js.Array[Double]): Self = StObject.set(x, "getSerializedHeader", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHeaderWithEmbeddedUpdates(value: PlayReadyContentHeader): Self = StObject.set(x, "headerWithEmbeddedUpdates", value.asInstanceOf[js.Any])
+    inline def setHeaderWithEmbeddedUpdates(value: PlayReadyContentHeader): Self = StObject.set(x, "headerWithEmbeddedUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdString(value: String): Self = StObject.set(x, "keyIdString", value.asInstanceOf[js.Any])
+    inline def setKeyIdString(value: String): Self = StObject.set(x, "keyIdString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdStrings(value: String): Self = StObject.set(x, "keyIdStrings", value.asInstanceOf[js.Any])
+    inline def setKeyIdStrings(value: String): Self = StObject.set(x, "keyIdStrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIds(value: String): Self = StObject.set(x, "keyIds", value.asInstanceOf[js.Any])
+    inline def setKeyIds(value: String): Self = StObject.set(x, "keyIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseAcquisitionUrl(value: Uri): Self = StObject.set(x, "licenseAcquisitionUrl", value.asInstanceOf[js.Any])
+    inline def setLicenseAcquisitionUrl(value: Uri): Self = StObject.set(x, "licenseAcquisitionUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseAcquisitionUserInterfaceUrl(value: Uri): Self = StObject.set(x, "licenseAcquisitionUserInterfaceUrl", value.asInstanceOf[js.Any])
+    inline def setLicenseAcquisitionUserInterfaceUrl(value: Uri): Self = StObject.set(x, "licenseAcquisitionUserInterfaceUrl", value.asInstanceOf[js.Any])
   }
 }

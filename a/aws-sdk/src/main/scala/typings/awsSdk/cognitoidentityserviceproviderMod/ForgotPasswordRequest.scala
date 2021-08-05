@@ -38,43 +38,31 @@ trait ForgotPasswordRequest extends StObject {
 }
 object ForgotPasswordRequest {
   
-  @scala.inline
-  def apply(ClientId: ClientIdType, Username: UsernameType): ForgotPasswordRequest = {
+  inline def apply(ClientId: ClientIdType, Username: UsernameType): ForgotPasswordRequest = {
     val __obj = js.Dynamic.literal(ClientId = ClientId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForgotPasswordRequest]
   }
   
-  @scala.inline
-  implicit class ForgotPasswordRequestMutableBuilder[Self <: ForgotPasswordRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ForgotPasswordRequest](x: Self) {
     
-    @scala.inline
-    def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
+    inline def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyticsMetadataUndefined: Self = StObject.set(x, "AnalyticsMetadata", js.undefined)
+    inline def setAnalyticsMetadataUndefined: Self = StObject.set(x, "AnalyticsMetadata", js.undefined)
     
-    @scala.inline
-    def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
+    inline def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
+    inline def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
     
-    @scala.inline
-    def setSecretHash(value: SecretHashType): Self = StObject.set(x, "SecretHash", value.asInstanceOf[js.Any])
+    inline def setSecretHash(value: SecretHashType): Self = StObject.set(x, "SecretHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretHashUndefined: Self = StObject.set(x, "SecretHash", js.undefined)
+    inline def setSecretHashUndefined: Self = StObject.set(x, "SecretHash", js.undefined)
     
-    @scala.inline
-    def setUserContextData(value: UserContextDataType): Self = StObject.set(x, "UserContextData", value.asInstanceOf[js.Any])
+    inline def setUserContextData(value: UserContextDataType): Self = StObject.set(x, "UserContextData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserContextDataUndefined: Self = StObject.set(x, "UserContextData", js.undefined)
+    inline def setUserContextDataUndefined: Self = StObject.set(x, "UserContextData", js.undefined)
     
-    @scala.inline
-    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }
 }

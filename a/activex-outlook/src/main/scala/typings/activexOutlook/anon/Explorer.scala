@@ -10,16 +10,13 @@ trait Explorer extends StObject {
 }
 object Explorer {
   
-  @scala.inline
-  def apply(Explorer: typings.activexOutlook.Outlook.Explorer): Explorer = {
+  inline def apply(Explorer: typings.activexOutlook.Outlook.Explorer): Explorer = {
     val __obj = js.Dynamic.literal(Explorer = Explorer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Explorer]
   }
   
-  @scala.inline
-  implicit class ExplorerMutableBuilder[Self <: Explorer] (val x: Self) extends AnyVal {
+  extension [Self <: Explorer](x: Self) {
     
-    @scala.inline
-    def setExplorer(value: typings.activexOutlook.Outlook.Explorer): Self = StObject.set(x, "Explorer", value.asInstanceOf[js.Any])
+    inline def setExplorer(value: typings.activexOutlook.Outlook.Explorer): Self = StObject.set(x, "Explorer", value.asInstanceOf[js.Any])
   }
 }

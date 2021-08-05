@@ -23,22 +23,17 @@ trait DocumentReferenceContent
 }
 object DocumentReferenceContent {
   
-  @scala.inline
-  def apply(attachment: Attachment): DocumentReferenceContent = {
+  inline def apply(attachment: Attachment): DocumentReferenceContent = {
     val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentReferenceContent]
   }
   
-  @scala.inline
-  implicit class DocumentReferenceContentMutableBuilder[Self <: DocumentReferenceContent] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentReferenceContent](x: Self) {
     
-    @scala.inline
-    def setAttachment(value: Attachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
+    inline def setAttachment(value: Attachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: Coding): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Coding): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

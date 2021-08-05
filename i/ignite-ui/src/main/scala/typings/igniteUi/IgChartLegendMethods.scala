@@ -17,22 +17,17 @@ trait IgChartLegendMethods extends StObject {
 }
 object IgChartLegendMethods {
   
-  @scala.inline
-  def apply(destroy: () => Unit, getLegend: () => Unit, id: () => String): IgChartLegendMethods = {
+  inline def apply(destroy: () => Unit, getLegend: () => Unit, id: () => String): IgChartLegendMethods = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getLegend = js.Any.fromFunction0(getLegend), id = js.Any.fromFunction0(id))
     __obj.asInstanceOf[IgChartLegendMethods]
   }
   
-  @scala.inline
-  implicit class IgChartLegendMethodsMutableBuilder[Self <: IgChartLegendMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgChartLegendMethods](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLegend(value: () => Unit): Self = StObject.set(x, "getLegend", js.Any.fromFunction0(value))
+    inline def setGetLegend(value: () => Unit): Self = StObject.set(x, "getLegend", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: () => String): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
+    inline def setId(value: () => String): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
   }
 }

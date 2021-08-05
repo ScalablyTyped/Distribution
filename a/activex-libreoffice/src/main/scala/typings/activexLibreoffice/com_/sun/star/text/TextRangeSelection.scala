@@ -12,19 +12,15 @@ trait TextRangeSelection extends StObject {
 }
 object TextRangeSelection {
   
-  @scala.inline
-  def apply(End: TextPosition, Start: TextPosition): TextRangeSelection = {
+  inline def apply(End: TextPosition, Start: TextPosition): TextRangeSelection = {
     val __obj = js.Dynamic.literal(End = End.asInstanceOf[js.Any], Start = Start.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextRangeSelection]
   }
   
-  @scala.inline
-  implicit class TextRangeSelectionMutableBuilder[Self <: TextRangeSelection] (val x: Self) extends AnyVal {
+  extension [Self <: TextRangeSelection](x: Self) {
     
-    @scala.inline
-    def setEnd(value: TextPosition): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: TextPosition): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: TextPosition): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: TextPosition): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
   }
 }

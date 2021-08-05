@@ -11,16 +11,13 @@ trait DocDocument extends StObject {
 }
 object DocDocument {
   
-  @scala.inline
-  def apply(Doc: Document): DocDocument = {
+  inline def apply(Doc: Document): DocDocument = {
     val __obj = js.Dynamic.literal(Doc = Doc.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocDocument]
   }
   
-  @scala.inline
-  implicit class DocDocumentMutableBuilder[Self <: DocDocument] (val x: Self) extends AnyVal {
+  extension [Self <: DocDocument](x: Self) {
     
-    @scala.inline
-    def setDoc(value: Document): Self = StObject.set(x, "Doc", value.asInstanceOf[js.Any])
+    inline def setDoc(value: Document): Self = StObject.set(x, "Doc", value.asInstanceOf[js.Any])
   }
 }

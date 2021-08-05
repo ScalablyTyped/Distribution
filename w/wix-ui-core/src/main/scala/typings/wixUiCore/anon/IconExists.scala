@@ -36,8 +36,7 @@ trait IconExists extends StObject {
 }
 object IconExists {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: () => js.Any,
     exists: () => Boolean,
     iconExists: () => Boolean,
@@ -57,49 +56,34 @@ object IconExists {
     __obj.asInstanceOf[IconExists]
   }
   
-  @scala.inline
-  implicit class IconExistsMutableBuilder[Self <: IconExists] (val x: Self) extends AnyVal {
+  extension [Self <: IconExists](x: Self) {
     
-    @scala.inline
-    def setClick(value: () => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+    inline def setClick(value: () => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIconExists(value: () => Boolean): Self = StObject.set(x, "iconExists", js.Any.fromFunction0(value))
+    inline def setIconExists(value: () => Boolean): Self = StObject.set(x, "iconExists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
+    inline def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+    inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsFocusVisible(value: () => Boolean): Self = StObject.set(x, "isFocusVisible", js.Any.fromFunction0(value))
+    inline def setIsFocusVisible(value: () => Boolean): Self = StObject.set(x, "isFocusVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsFocused(value: () => Boolean): Self = StObject.set(x, "isFocused", js.Any.fromFunction0(value))
+    inline def setIsFocused(value: () => Boolean): Self = StObject.set(x, "isFocused", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsInputFocused(value: () => Boolean): Self = StObject.set(x, "isInputFocused", js.Any.fromFunction0(value))
+    inline def setIsInputFocused(value: () => Boolean): Self = StObject.set(x, "isInputFocused", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsRequired(value: () => Boolean): Self = StObject.set(x, "isRequired", js.Any.fromFunction0(value))
+    inline def setIsRequired(value: () => Boolean): Self = StObject.set(x, "isRequired", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeyDown(value: String => js.Any): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
+    inline def setKeyDown(value: String => js.Any): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLabelExists(value: () => Boolean): Self = StObject.set(x, "labelExists", js.Any.fromFunction0(value))
+    inline def setLabelExists(value: () => Boolean): Self = StObject.set(x, "labelExists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: () => String): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
+    inline def setName(value: () => String): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelect(value: () => js.Any): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValue(value: () => String): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
+    inline def setValue(value: () => String): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
   }
 }

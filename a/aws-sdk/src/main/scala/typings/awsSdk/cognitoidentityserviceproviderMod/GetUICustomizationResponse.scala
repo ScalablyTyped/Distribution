@@ -13,16 +13,13 @@ trait GetUICustomizationResponse extends StObject {
 }
 object GetUICustomizationResponse {
   
-  @scala.inline
-  def apply(UICustomization: UICustomizationType): GetUICustomizationResponse = {
+  inline def apply(UICustomization: UICustomizationType): GetUICustomizationResponse = {
     val __obj = js.Dynamic.literal(UICustomization = UICustomization.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUICustomizationResponse]
   }
   
-  @scala.inline
-  implicit class GetUICustomizationResponseMutableBuilder[Self <: GetUICustomizationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetUICustomizationResponse](x: Self) {
     
-    @scala.inline
-    def setUICustomization(value: UICustomizationType): Self = StObject.set(x, "UICustomization", value.asInstanceOf[js.Any])
+    inline def setUICustomization(value: UICustomizationType): Self = StObject.set(x, "UICustomization", value.asInstanceOf[js.Any])
   }
 }

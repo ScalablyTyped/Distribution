@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorFormat extends StObject
 object ColorFormat {
   
-  @scala.inline
-  def hex: typings.devtoolsProtocol.devtoolsProtocolStrings.hex = "hex".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.hex]
+  inline def hex: typings.devtoolsProtocol.devtoolsProtocolStrings.hex = "hex".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.hex]
   
-  @scala.inline
-  def hsl: typings.devtoolsProtocol.devtoolsProtocolStrings.hsl = "hsl".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.hsl]
+  inline def hsl: typings.devtoolsProtocol.devtoolsProtocolStrings.hsl = "hsl".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.hsl]
   
-  @scala.inline
-  def rgb: typings.devtoolsProtocol.devtoolsProtocolStrings.rgb = "rgb".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.rgb]
+  inline def rgb: typings.devtoolsProtocol.devtoolsProtocolStrings.rgb = "rgb".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.rgb]
 }

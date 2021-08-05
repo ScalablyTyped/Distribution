@@ -16,20 +16,16 @@ trait AboveAverageRuleType
 }
 object AboveAverageRuleType {
   
-  @scala.inline
-  def apply(aboveAverage: Boolean, priority: Double): AboveAverageRuleType = {
+  inline def apply(aboveAverage: Boolean, priority: Double): AboveAverageRuleType = {
     val __obj = js.Dynamic.literal(aboveAverage = aboveAverage.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("aboveAverage")
     __obj.asInstanceOf[AboveAverageRuleType]
   }
   
-  @scala.inline
-  implicit class AboveAverageRuleTypeMutableBuilder[Self <: AboveAverageRuleType] (val x: Self) extends AnyVal {
+  extension [Self <: AboveAverageRuleType](x: Self) {
     
-    @scala.inline
-    def setAboveAverage(value: Boolean): Self = StObject.set(x, "aboveAverage", value.asInstanceOf[js.Any])
+    inline def setAboveAverage(value: Boolean): Self = StObject.set(x, "aboveAverage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: aboveAverage): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: aboveAverage): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

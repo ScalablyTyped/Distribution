@@ -122,20 +122,16 @@ object util {
   }
   object JSONRequest {
     
-    @scala.inline
-    def apply(send: js.Object => Unit, sendRPC: js.Object => Unit): JSONRequest = {
+    inline def apply(send: js.Object => Unit, sendRPC: js.Object => Unit): JSONRequest = {
       val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send), sendRPC = js.Any.fromFunction1(sendRPC))
       __obj.asInstanceOf[JSONRequest]
     }
     
-    @scala.inline
-    implicit class JSONRequestMutableBuilder[Self <: JSONRequest] (val x: Self) extends AnyVal {
+    extension [Self <: JSONRequest](x: Self) {
       
-      @scala.inline
-      def setSend(value: js.Object => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: js.Object => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSendRPC(value: js.Object => Unit): Self = StObject.set(x, "sendRPC", js.Any.fromFunction1(value))
+      inline def setSendRPC(value: js.Object => Unit): Self = StObject.set(x, "sendRPC", js.Any.fromFunction1(value))
     }
   }
   
@@ -155,8 +151,7 @@ object util {
   }
   object LocalStorage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear: () => Unit,
       getItem: String => String,
       key: Double => String,
@@ -168,26 +163,19 @@ object util {
       __obj.asInstanceOf[LocalStorage]
     }
     
-    @scala.inline
-    implicit class LocalStorageMutableBuilder[Self <: LocalStorage] (val x: Self) extends AnyVal {
+    extension [Self <: LocalStorage](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetItem(value: String => String): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+      inline def setGetItem(value: String => String): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKey(value: Double => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+      inline def setKey(value: Double => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveItem(value: String => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+      inline def setRemoveItem(value: String => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetItem(value: (String, String) => Unit): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+      inline def setSetItem(value: (String, String) => Unit): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
     }
   }
   
@@ -270,8 +258,7 @@ object util {
   }
   object i18n {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: (String, js.Array[js.Object]) => Unit,
       getCode: () => String,
       rtl: Boolean,
@@ -282,23 +269,17 @@ object util {
       __obj.asInstanceOf[i18n]
     }
     
-    @scala.inline
-    implicit class i18nMutableBuilder[Self <: i18n] (val x: Self) extends AnyVal {
+    extension [Self <: i18n](x: Self) {
       
-      @scala.inline
-      def setAdd(value: (String, js.Array[js.Object]) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (String, js.Array[js.Object]) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
+      inline def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetCode(value: String => Unit): Self = StObject.set(x, "setCode", js.Any.fromFunction1(value))
+      inline def setSetCode(value: String => Unit): Self = StObject.set(x, "setCode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTranslate(value: String => String): Self = StObject.set(x, "translate", js.Any.fromFunction1(value))
+      inline def setTranslate(value: String => String): Self = StObject.set(x, "translate", js.Any.fromFunction1(value))
     }
   }
 }

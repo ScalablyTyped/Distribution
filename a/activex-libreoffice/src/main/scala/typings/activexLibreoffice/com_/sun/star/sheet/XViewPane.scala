@@ -41,8 +41,7 @@ trait XViewPane
 }
 object XViewPane {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FirstVisibleColumn: Double,
     FirstVisibleRow: Double,
     VisibleRange: CellRangeAddress,
@@ -59,31 +58,22 @@ object XViewPane {
     __obj.asInstanceOf[XViewPane]
   }
   
-  @scala.inline
-  implicit class XViewPaneMutableBuilder[Self <: XViewPane] (val x: Self) extends AnyVal {
+  extension [Self <: XViewPane](x: Self) {
     
-    @scala.inline
-    def setFirstVisibleColumn(value: Double): Self = StObject.set(x, "FirstVisibleColumn", value.asInstanceOf[js.Any])
+    inline def setFirstVisibleColumn(value: Double): Self = StObject.set(x, "FirstVisibleColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstVisibleRow(value: Double): Self = StObject.set(x, "FirstVisibleRow", value.asInstanceOf[js.Any])
+    inline def setFirstVisibleRow(value: Double): Self = StObject.set(x, "FirstVisibleRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFirstVisibleColumn(value: () => Double): Self = StObject.set(x, "getFirstVisibleColumn", js.Any.fromFunction0(value))
+    inline def setGetFirstVisibleColumn(value: () => Double): Self = StObject.set(x, "getFirstVisibleColumn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFirstVisibleRow(value: () => Double): Self = StObject.set(x, "getFirstVisibleRow", js.Any.fromFunction0(value))
+    inline def setGetFirstVisibleRow(value: () => Double): Self = StObject.set(x, "getFirstVisibleRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVisibleRange(value: () => CellRangeAddress): Self = StObject.set(x, "getVisibleRange", js.Any.fromFunction0(value))
+    inline def setGetVisibleRange(value: () => CellRangeAddress): Self = StObject.set(x, "getVisibleRange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFirstVisibleColumn(value: Double => Unit): Self = StObject.set(x, "setFirstVisibleColumn", js.Any.fromFunction1(value))
+    inline def setSetFirstVisibleColumn(value: Double => Unit): Self = StObject.set(x, "setFirstVisibleColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFirstVisibleRow(value: Double => Unit): Self = StObject.set(x, "setFirstVisibleRow", js.Any.fromFunction1(value))
+    inline def setSetFirstVisibleRow(value: Double => Unit): Self = StObject.set(x, "setFirstVisibleRow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVisibleRange(value: CellRangeAddress): Self = StObject.set(x, "VisibleRange", value.asInstanceOf[js.Any])
+    inline def setVisibleRange(value: CellRangeAddress): Self = StObject.set(x, "VisibleRange", value.asInstanceOf[js.Any])
   }
 }

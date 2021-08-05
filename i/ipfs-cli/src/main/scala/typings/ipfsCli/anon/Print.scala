@@ -12,19 +12,15 @@ trait Print extends StObject {
 }
 object Print {
   
-  @scala.inline
-  def apply(ipfs: js.Any, print: js.Any): Print = {
+  inline def apply(ipfs: js.Any, print: js.Any): Print = {
     val __obj = js.Dynamic.literal(ipfs = ipfs.asInstanceOf[js.Any], print = print.asInstanceOf[js.Any])
     __obj.asInstanceOf[Print]
   }
   
-  @scala.inline
-  implicit class PrintMutableBuilder[Self <: Print] (val x: Self) extends AnyVal {
+  extension [Self <: Print](x: Self) {
     
-    @scala.inline
-    def setIpfs(value: js.Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
+    inline def setIpfs(value: js.Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrint(value: js.Any): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+    inline def setPrint(value: js.Any): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
   }
 }

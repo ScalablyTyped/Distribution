@@ -30,17 +30,14 @@ object mod {
   }
   object HttpProxyAgentOptions {
     
-    @scala.inline
-    def apply(proxy: String | URL_): HttpProxyAgentOptions = {
+    inline def apply(proxy: String | URL_): HttpProxyAgentOptions = {
       val __obj = js.Dynamic.literal(proxy = proxy.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpProxyAgentOptions]
     }
     
-    @scala.inline
-    implicit class HttpProxyAgentOptionsMutableBuilder[Self <: HttpProxyAgentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HttpProxyAgentOptions](x: Self) {
       
-      @scala.inline
-      def setProxy(value: String | URL_): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String | URL_): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,17 +49,14 @@ object mod {
   }
   object HttpsProxyAgentOptions {
     
-    @scala.inline
-    def apply(proxy: String | URL_): HttpsProxyAgentOptions = {
+    inline def apply(proxy: String | URL_): HttpsProxyAgentOptions = {
       val __obj = js.Dynamic.literal(proxy = proxy.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpsProxyAgentOptions]
     }
     
-    @scala.inline
-    implicit class HttpsProxyAgentOptionsMutableBuilder[Self <: HttpsProxyAgentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HttpsProxyAgentOptions](x: Self) {
       
-      @scala.inline
-      def setProxy(value: String | URL_): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String | URL_): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     }
   }
 }

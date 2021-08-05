@@ -19,22 +19,17 @@ trait ManipulationVelocities extends StObject {
 }
 object ManipulationVelocities {
   
-  @scala.inline
-  def apply(angular: Double, expansion: Double, linear: Point): ManipulationVelocities = {
+  inline def apply(angular: Double, expansion: Double, linear: Point): ManipulationVelocities = {
     val __obj = js.Dynamic.literal(angular = angular.asInstanceOf[js.Any], expansion = expansion.asInstanceOf[js.Any], linear = linear.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManipulationVelocities]
   }
   
-  @scala.inline
-  implicit class ManipulationVelocitiesMutableBuilder[Self <: ManipulationVelocities] (val x: Self) extends AnyVal {
+  extension [Self <: ManipulationVelocities](x: Self) {
     
-    @scala.inline
-    def setAngular(value: Double): Self = StObject.set(x, "angular", value.asInstanceOf[js.Any])
+    inline def setAngular(value: Double): Self = StObject.set(x, "angular", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpansion(value: Double): Self = StObject.set(x, "expansion", value.asInstanceOf[js.Any])
+    inline def setExpansion(value: Double): Self = StObject.set(x, "expansion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinear(value: Point): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
+    inline def setLinear(value: Point): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
   }
 }

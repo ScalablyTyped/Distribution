@@ -14,22 +14,17 @@ trait JSONEditorError extends StObject {
 }
 object JSONEditorError {
   
-  @scala.inline
-  def apply(message: String, path: String, property: String): JSONEditorError = {
+  inline def apply(message: String, path: String, property: String): JSONEditorError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONEditorError]
   }
   
-  @scala.inline
-  implicit class JSONEditorErrorMutableBuilder[Self <: JSONEditorError] (val x: Self) extends AnyVal {
+  extension [Self <: JSONEditorError](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }
 }

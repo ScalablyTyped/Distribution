@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLStyleSheet extends StObject {
   
-  @JSName("MSHTML.HTMLStyleSheet_typekey")
+  /* private */ @JSName("MSHTML.HTMLStyleSheet_typekey")
   var MSHTMLDotHTMLStyleSheet_typekey: HTMLStyleSheet = js.native
   
   /** @param lIndex [lIndex=-1] */

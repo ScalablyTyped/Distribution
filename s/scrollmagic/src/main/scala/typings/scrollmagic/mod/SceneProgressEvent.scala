@@ -17,8 +17,7 @@ trait SceneProgressEvent[T]
 }
 object SceneProgressEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     currentTarget: Scene,
     namespace: String,
     progress: Double,
@@ -34,16 +33,12 @@ object SceneProgressEvent {
     __obj.asInstanceOf[SceneProgressEvent[T]]
   }
   
-  @scala.inline
-  implicit class SceneProgressEventMutableBuilder[Self <: SceneProgressEvent[?], T] (val x: Self & SceneProgressEvent[T]) extends AnyVal {
+  extension [Self <: SceneProgressEvent[?], T](x: Self & SceneProgressEvent[T]) {
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollDirection(value: ScrollDirection): Self = StObject.set(x, "scrollDirection", value.asInstanceOf[js.Any])
+    inline def setScrollDirection(value: ScrollDirection): Self = StObject.set(x, "scrollDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: SceneState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: SceneState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

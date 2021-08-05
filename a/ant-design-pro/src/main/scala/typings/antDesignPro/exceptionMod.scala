@@ -45,74 +45,52 @@ object exceptionMod {
   }
   object ExceptionProps {
     
-    @scala.inline
-    def apply[L](): ExceptionProps[L] = {
+    inline def apply[L](): ExceptionProps[L] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExceptionProps[L]]
     }
     
-    @scala.inline
-    implicit class ExceptionPropsMutableBuilder[Self <: ExceptionProps[?], L] (val x: Self & ExceptionProps[L]) extends AnyVal {
+    extension [Self <: ExceptionProps[?], L](x: Self & ExceptionProps[L]) {
       
-      @scala.inline
-      def setActions(value: ReactNode): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: ReactNode): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setBackText(value: ReactNode): Self = StObject.set(x, "backText", value.asInstanceOf[js.Any])
+      inline def setBackText(value: ReactNode): Self = StObject.set(x, "backText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackTextUndefined: Self = StObject.set(x, "backText", js.undefined)
+      inline def setBackTextUndefined: Self = StObject.set(x, "backText", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDesc(value: ReactNode): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+      inline def setDesc(value: ReactNode): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
+      inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
       
-      @scala.inline
-      def setImg(value: String): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+      inline def setImg(value: String): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
+      inline def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
       
-      @scala.inline
-      def setLinkElement(value: String | ComponentType[L]): Self = StObject.set(x, "linkElement", value.asInstanceOf[js.Any])
+      inline def setLinkElement(value: String | ComponentType[L]): Self = StObject.set(x, "linkElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkElementUndefined: Self = StObject.set(x, "linkElement", js.undefined)
+      inline def setLinkElementUndefined: Self = StObject.set(x, "linkElement", js.undefined)
       
-      @scala.inline
-      def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+      inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setType(value: `403` | `404` | `500`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `403` | `404` | `500`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.GroupLevel")
 @js.native
-class GroupLevel protected ()
+/* private */ class GroupLevel ()
   extends StObject
      with typings.activexAccess.Access.GroupLevel {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.GroupLevel_typekey")
   var AccessDotGroupLevel_typekey: typings.activexAccess.Access.GroupLevel = js.native
   

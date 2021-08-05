@@ -38,46 +38,33 @@ trait ListTrainingJobsForHyperParameterTuningJobRequest extends StObject {
 }
 object ListTrainingJobsForHyperParameterTuningJobRequest {
   
-  @scala.inline
-  def apply(HyperParameterTuningJobName: HyperParameterTuningJobName): ListTrainingJobsForHyperParameterTuningJobRequest = {
+  inline def apply(HyperParameterTuningJobName: HyperParameterTuningJobName): ListTrainingJobsForHyperParameterTuningJobRequest = {
     val __obj = js.Dynamic.literal(HyperParameterTuningJobName = HyperParameterTuningJobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTrainingJobsForHyperParameterTuningJobRequest]
   }
   
-  @scala.inline
-  implicit class ListTrainingJobsForHyperParameterTuningJobRequestMutableBuilder[Self <: ListTrainingJobsForHyperParameterTuningJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTrainingJobsForHyperParameterTuningJobRequest](x: Self) {
     
-    @scala.inline
-    def setHyperParameterTuningJobName(value: HyperParameterTuningJobName): Self = StObject.set(x, "HyperParameterTuningJobName", value.asInstanceOf[js.Any])
+    inline def setHyperParameterTuningJobName(value: HyperParameterTuningJobName): Self = StObject.set(x, "HyperParameterTuningJobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: TrainingJobSortByOptions): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: TrainingJobSortByOptions): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
     
-    @scala.inline
-    def setStatusEquals(value: TrainingJobStatus): Self = StObject.set(x, "StatusEquals", value.asInstanceOf[js.Any])
+    inline def setStatusEquals(value: TrainingJobStatus): Self = StObject.set(x, "StatusEquals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusEqualsUndefined: Self = StObject.set(x, "StatusEquals", js.undefined)
+    inline def setStatusEqualsUndefined: Self = StObject.set(x, "StatusEquals", js.undefined)
   }
 }

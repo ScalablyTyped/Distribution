@@ -13,25 +13,19 @@ trait PreluInputs extends StObject {
 }
 object PreluInputs {
   
-  @scala.inline
-  def apply(): PreluInputs = {
+  inline def apply(): PreluInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PreluInputs]
   }
   
-  @scala.inline
-  implicit class PreluInputsMutableBuilder[Self <: PreluInputs] (val x: Self) extends AnyVal {
+  extension [Self <: PreluInputs](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: js.Any): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: js.Any): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait FailedCreateAssociation extends StObject {
 }
 object FailedCreateAssociation {
   
-  @scala.inline
-  def apply(): FailedCreateAssociation = {
+  inline def apply(): FailedCreateAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailedCreateAssociation]
   }
   
-  @scala.inline
-  implicit class FailedCreateAssociationMutableBuilder[Self <: FailedCreateAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: FailedCreateAssociation](x: Self) {
     
-    @scala.inline
-    def setEntry(value: CreateAssociationBatchRequestEntry): Self = StObject.set(x, "Entry", value.asInstanceOf[js.Any])
+    inline def setEntry(value: CreateAssociationBatchRequestEntry): Self = StObject.set(x, "Entry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryUndefined: Self = StObject.set(x, "Entry", js.undefined)
+    inline def setEntryUndefined: Self = StObject.set(x, "Entry", js.undefined)
     
-    @scala.inline
-    def setFault(value: Fault): Self = StObject.set(x, "Fault", value.asInstanceOf[js.Any])
+    inline def setFault(value: Fault): Self = StObject.set(x, "Fault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaultUndefined: Self = StObject.set(x, "Fault", js.undefined)
+    inline def setFaultUndefined: Self = StObject.set(x, "Fault", js.undefined)
     
-    @scala.inline
-    def setMessage(value: BatchErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: BatchErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

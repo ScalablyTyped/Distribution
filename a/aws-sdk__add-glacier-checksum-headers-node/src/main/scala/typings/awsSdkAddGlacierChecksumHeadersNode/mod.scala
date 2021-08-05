@@ -14,8 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addChecksumHeaders(Sha256: HashConstructor, fromUtf8: Decoder): js.Function1[
+  inline def addChecksumHeaders(Sha256: HashConstructor, fromUtf8: Decoder): js.Function1[
     /* next */ BuildHandler[js.Any, js.Any], 
     js.Function1[
       /* hasHasBodyHeadersRequestRestRest */ BuildHandlerArguments[js.Any], 

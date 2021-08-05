@@ -14,19 +14,15 @@ trait CardViewBatchEditTemplateCellFocusedEventArgs
 }
 object CardViewBatchEditTemplateCellFocusedEventArgs {
   
-  @scala.inline
-  def apply(column: BootstrapCardViewColumn, handled: Boolean, sender: Control): CardViewBatchEditTemplateCellFocusedEventArgs = {
+  inline def apply(column: BootstrapCardViewColumn, handled: Boolean, sender: Control): CardViewBatchEditTemplateCellFocusedEventArgs = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardViewBatchEditTemplateCellFocusedEventArgs]
   }
   
-  @scala.inline
-  implicit class CardViewBatchEditTemplateCellFocusedEventArgsMutableBuilder[Self <: CardViewBatchEditTemplateCellFocusedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CardViewBatchEditTemplateCellFocusedEventArgs](x: Self) {
     
-    @scala.inline
-    def setColumn(value: BootstrapCardViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: BootstrapCardViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
   }
 }

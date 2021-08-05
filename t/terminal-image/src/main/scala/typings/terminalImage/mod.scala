@@ -41,10 +41,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def buffer(imageBuffer: ReadonlyBuffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(imageBuffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def buffer(imageBuffer: ReadonlyBuffer, options: Readonlywidthstringnumber): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(imageBuffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def buffer(imageBuffer: ReadonlyBuffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(imageBuffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def buffer(imageBuffer: ReadonlyBuffer, options: Readonlywidthstringnumber): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(imageBuffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
   	Display images in the terminal. Please note that the image will always be scaled to fit the size of the terminal.
@@ -72,10 +70,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def file(filePath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def file(filePath: String, options: Readonlywidthstringnumber): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def file(filePath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def file(filePath: String, options: Readonlywidthstringnumber): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
   	Display GIFs in the terminal.
@@ -108,10 +104,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def gifBuffer(imageBuffer: ReadonlyBuffer): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("gifBuffer")(imageBuffer.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def gifBuffer(imageBuffer: ReadonlyBuffer, options: ReadonlywidthstringnumberHeight): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("gifBuffer")(imageBuffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def gifBuffer(imageBuffer: ReadonlyBuffer): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("gifBuffer")(imageBuffer.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def gifBuffer(imageBuffer: ReadonlyBuffer, options: ReadonlywidthstringnumberHeight): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("gifBuffer")(imageBuffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   /**
   	Display gifs in the terminal.
@@ -142,10 +136,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def gifFile(filePath: String): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("gifFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def gifFile(filePath: String, options: ReadonlywidthstringnumberHeight): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("gifFile")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def gifFile(filePath: String): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("gifFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def gifFile(filePath: String, options: ReadonlywidthstringnumberHeight): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("gifFile")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   @js.native
   trait RenderFrame extends StObject {

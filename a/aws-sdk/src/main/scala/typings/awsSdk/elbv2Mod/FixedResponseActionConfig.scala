@@ -23,28 +23,21 @@ trait FixedResponseActionConfig extends StObject {
 }
 object FixedResponseActionConfig {
   
-  @scala.inline
-  def apply(StatusCode: FixedResponseActionStatusCode): FixedResponseActionConfig = {
+  inline def apply(StatusCode: FixedResponseActionStatusCode): FixedResponseActionConfig = {
     val __obj = js.Dynamic.literal(StatusCode = StatusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FixedResponseActionConfig]
   }
   
-  @scala.inline
-  implicit class FixedResponseActionConfigMutableBuilder[Self <: FixedResponseActionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FixedResponseActionConfig](x: Self) {
     
-    @scala.inline
-    def setContentType(value: FixedResponseActionContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: FixedResponseActionContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    @scala.inline
-    def setMessageBody(value: FixedResponseActionMessage): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
+    inline def setMessageBody(value: FixedResponseActionMessage): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageBodyUndefined: Self = StObject.set(x, "MessageBody", js.undefined)
+    inline def setMessageBodyUndefined: Self = StObject.set(x, "MessageBody", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: FixedResponseActionStatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: FixedResponseActionStatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
   }
 }

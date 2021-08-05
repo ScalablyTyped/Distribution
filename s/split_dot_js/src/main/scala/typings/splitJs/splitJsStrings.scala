@@ -8,26 +8,21 @@ object splitJsStrings {
   
   @js.native
   sealed trait Partial extends StObject
-  @scala.inline
-  def Partial: Partial = "Partial".asInstanceOf[Partial]
+  inline def Partial: Partial = "Partial".asInstanceOf[Partial]
   
   @js.native
   sealed trait height extends StObject
-  @scala.inline
-  def height: height = "height".asInstanceOf[height]
+  inline def height: height = "height".asInstanceOf[height]
   
   @js.native
   sealed trait horizontal extends StObject
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait vertical extends StObject
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
   sealed trait width extends StObject
-  @scala.inline
-  def width: width = "width".asInstanceOf[width]
+  inline def width: width = "width".asInstanceOf[width]
 }

@@ -10,19 +10,15 @@ trait EditorDeserialization extends StObject {
 }
 object EditorDeserialization {
   
-  @scala.inline
-  def apply(): EditorDeserialization = {
+  inline def apply(): EditorDeserialization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditorDeserialization]
   }
   
-  @scala.inline
-  implicit class EditorDeserializationMutableBuilder[Self <: EditorDeserialization] (val x: Self) extends AnyVal {
+  extension [Self <: EditorDeserialization](x: Self) {
     
-    @scala.inline
-    def setCustom(value: js.Function): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: js.Function): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
   }
 }

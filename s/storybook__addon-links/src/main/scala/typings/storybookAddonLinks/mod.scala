@@ -10,21 +10,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def LinkTo_(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("LinkTo")().asInstanceOf[Null]
+  inline def LinkTo_(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("LinkTo")().asInstanceOf[Null]
   
-  @scala.inline
-  def hrefTo(kind: String, name: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hrefTo")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def hrefTo(kind: String, name: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hrefTo")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def linkTo(idOrKindInput: String): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkTo")(idOrKindInput.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
-  @scala.inline
-  def linkTo(idOrKindInput: String, storyInput: String): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("linkTo")(idOrKindInput.asInstanceOf[js.Any], storyInput.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
-  @scala.inline
-  def linkTo(idOrKindInput: String, storyInput: js.Function1[/* repeated */ js.Any, String]): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("linkTo")(idOrKindInput.asInstanceOf[js.Any], storyInput.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+  inline def linkTo(idOrKindInput: String): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkTo")(idOrKindInput.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+  inline def linkTo(idOrKindInput: String, storyInput: String): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("linkTo")(idOrKindInput.asInstanceOf[js.Any], storyInput.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+  inline def linkTo(idOrKindInput: String, storyInput: js.Function1[/* repeated */ js.Any, String]): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("linkTo")(idOrKindInput.asInstanceOf[js.Any], storyInput.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
   
-  @scala.inline
-  def withLinks(
+  inline def withLinks(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withLinks")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

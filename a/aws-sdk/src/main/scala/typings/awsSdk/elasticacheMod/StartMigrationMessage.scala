@@ -18,22 +18,17 @@ trait StartMigrationMessage extends StObject {
 }
 object StartMigrationMessage {
   
-  @scala.inline
-  def apply(CustomerNodeEndpointList: CustomerNodeEndpointList, ReplicationGroupId: String): StartMigrationMessage = {
+  inline def apply(CustomerNodeEndpointList: CustomerNodeEndpointList, ReplicationGroupId: String): StartMigrationMessage = {
     val __obj = js.Dynamic.literal(CustomerNodeEndpointList = CustomerNodeEndpointList.asInstanceOf[js.Any], ReplicationGroupId = ReplicationGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartMigrationMessage]
   }
   
-  @scala.inline
-  implicit class StartMigrationMessageMutableBuilder[Self <: StartMigrationMessage] (val x: Self) extends AnyVal {
+  extension [Self <: StartMigrationMessage](x: Self) {
     
-    @scala.inline
-    def setCustomerNodeEndpointList(value: CustomerNodeEndpointList): Self = StObject.set(x, "CustomerNodeEndpointList", value.asInstanceOf[js.Any])
+    inline def setCustomerNodeEndpointList(value: CustomerNodeEndpointList): Self = StObject.set(x, "CustomerNodeEndpointList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerNodeEndpointListVarargs(value: CustomerNodeEndpoint*): Self = StObject.set(x, "CustomerNodeEndpointList", js.Array(value :_*))
+    inline def setCustomerNodeEndpointListVarargs(value: CustomerNodeEndpoint*): Self = StObject.set(x, "CustomerNodeEndpointList", js.Array(value :_*))
     
-    @scala.inline
-    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
   }
 }

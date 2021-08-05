@@ -183,7 +183,7 @@ trait Chart extends StObject {
   
   var PlotVisibleOnly: Boolean = js.native
   
-  @JSName("PowerPoint.Chart_typekey")
+  /* private */ @JSName("PowerPoint.Chart_typekey")
   var PowerPointDotChart_typekey: Chart = js.native
   
   def RadarGroups(): js.Any = js.native

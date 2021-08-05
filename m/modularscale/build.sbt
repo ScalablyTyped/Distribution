@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "modularscale"
-version := "2.0-dt-20200514Z-cd36ef"
+version := "2.0-dt-20200514Z-1838e0"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

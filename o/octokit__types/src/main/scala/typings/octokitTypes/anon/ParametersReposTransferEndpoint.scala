@@ -18,8 +18,7 @@ trait ParametersReposTransferEndpoint extends StObject {
 }
 object ParametersReposTransferEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposTransferEndpoint,
     request: ReposTransferRequestOptions,
     response: OctokitResponse[ReposTransferResponseData]
@@ -28,16 +27,12 @@ object ParametersReposTransferEndpoint {
     __obj.asInstanceOf[ParametersReposTransferEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposTransferEndpointMutableBuilder[Self <: ParametersReposTransferEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposTransferEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposTransferEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposTransferEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposTransferRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposTransferRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposTransferResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposTransferResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

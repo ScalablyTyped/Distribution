@@ -14,22 +14,17 @@ trait ApiError extends StObject {
 }
 object ApiError {
   
-  @scala.inline
-  def apply(statusBody: js.Object, statusCode: Double, statusMessage: String): ApiError = {
+  inline def apply(statusBody: js.Object, statusCode: Double, statusMessage: String): ApiError = {
     val __obj = js.Dynamic.literal(statusBody = statusBody.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiError]
   }
   
-  @scala.inline
-  implicit class ApiErrorMutableBuilder[Self <: ApiError] (val x: Self) extends AnyVal {
+  extension [Self <: ApiError](x: Self) {
     
-    @scala.inline
-    def setStatusBody(value: js.Object): Self = StObject.set(x, "statusBody", value.asInstanceOf[js.Any])
+    inline def setStatusBody(value: js.Object): Self = StObject.set(x, "statusBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
   }
 }

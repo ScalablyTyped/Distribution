@@ -28,40 +28,29 @@ trait SearchSchemaSummary extends StObject {
 }
 object SearchSchemaSummary {
   
-  @scala.inline
-  def apply(): SearchSchemaSummary = {
+  inline def apply(): SearchSchemaSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchSchemaSummary]
   }
   
-  @scala.inline
-  implicit class SearchSchemaSummaryMutableBuilder[Self <: SearchSchemaSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SearchSchemaSummary](x: Self) {
     
-    @scala.inline
-    def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
+    inline def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
+    inline def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
     
-    @scala.inline
-    def setSchemaArn(value: string): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: string): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
+    inline def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
     
-    @scala.inline
-    def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaNameUndefined: Self = StObject.set(x, "SchemaName", js.undefined)
+    inline def setSchemaNameUndefined: Self = StObject.set(x, "SchemaName", js.undefined)
     
-    @scala.inline
-    def setSchemaVersions(value: listOfSearchSchemaVersionSummary): Self = StObject.set(x, "SchemaVersions", value.asInstanceOf[js.Any])
+    inline def setSchemaVersions(value: listOfSearchSchemaVersionSummary): Self = StObject.set(x, "SchemaVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionsUndefined: Self = StObject.set(x, "SchemaVersions", js.undefined)
+    inline def setSchemaVersionsUndefined: Self = StObject.set(x, "SchemaVersions", js.undefined)
     
-    @scala.inline
-    def setSchemaVersionsVarargs(value: SearchSchemaVersionSummary*): Self = StObject.set(x, "SchemaVersions", js.Array(value :_*))
+    inline def setSchemaVersionsVarargs(value: SearchSchemaVersionSummary*): Self = StObject.set(x, "SchemaVersions", js.Array(value :_*))
   }
 }

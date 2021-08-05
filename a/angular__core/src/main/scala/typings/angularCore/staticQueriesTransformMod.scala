@@ -13,10 +13,8 @@ object staticQueriesTransformMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTransformedQueryCallExpr(query: NgQueryDefinition, timing: Null, createTodo: Boolean): TransformedQueryResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransformedQueryCallExpr")(query.asInstanceOf[js.Any], timing.asInstanceOf[js.Any], createTodo.asInstanceOf[js.Any])).asInstanceOf[TransformedQueryResult]
-  @scala.inline
-  def getTransformedQueryCallExpr(query: NgQueryDefinition, timing: QueryTiming, createTodo: Boolean): TransformedQueryResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransformedQueryCallExpr")(query.asInstanceOf[js.Any], timing.asInstanceOf[js.Any], createTodo.asInstanceOf[js.Any])).asInstanceOf[TransformedQueryResult]
+  inline def getTransformedQueryCallExpr(query: NgQueryDefinition, timing: Null, createTodo: Boolean): TransformedQueryResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransformedQueryCallExpr")(query.asInstanceOf[js.Any], timing.asInstanceOf[js.Any], createTodo.asInstanceOf[js.Any])).asInstanceOf[TransformedQueryResult]
+  inline def getTransformedQueryCallExpr(query: NgQueryDefinition, timing: QueryTiming, createTodo: Boolean): TransformedQueryResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransformedQueryCallExpr")(query.asInstanceOf[js.Any], timing.asInstanceOf[js.Any], createTodo.asInstanceOf[js.Any])).asInstanceOf[TransformedQueryResult]
   
   type TransformedQueryResult = Null | FailureMessage
 }

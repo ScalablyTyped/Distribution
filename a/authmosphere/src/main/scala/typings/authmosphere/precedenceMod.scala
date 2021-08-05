@@ -30,19 +30,16 @@ object precedenceMod {
   }
   object PrecedenceOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       precedenceFunction: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction) => js.Promise[Boolean]
     ): PrecedenceOptions = {
       val __obj = js.Dynamic.literal(precedenceFunction = js.Any.fromFunction3(precedenceFunction))
       __obj.asInstanceOf[PrecedenceOptions]
     }
     
-    @scala.inline
-    implicit class PrecedenceOptionsMutableBuilder[Self <: PrecedenceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PrecedenceOptions](x: Self) {
       
-      @scala.inline
-      def setPrecedenceFunction(
+      inline def setPrecedenceFunction(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction) => js.Promise[Boolean]
       ): Self = StObject.set(x, "precedenceFunction", js.Any.fromFunction3(value))
     }

@@ -29,40 +29,29 @@ trait IssuesUpdateLabelEndpoint extends StObject {
 }
 object IssuesUpdateLabelEndpoint {
   
-  @scala.inline
-  def apply(name: String, owner: String, repo: String): IssuesUpdateLabelEndpoint = {
+  inline def apply(name: String, owner: String, repo: String): IssuesUpdateLabelEndpoint = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesUpdateLabelEndpoint]
   }
   
-  @scala.inline
-  implicit class IssuesUpdateLabelEndpointMutableBuilder[Self <: IssuesUpdateLabelEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: IssuesUpdateLabelEndpoint](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_name(value: String): Self = StObject.set(x, "new_name", value.asInstanceOf[js.Any])
+    inline def setNew_name(value: String): Self = StObject.set(x, "new_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_nameUndefined: Self = StObject.set(x, "new_name", js.undefined)
+    inline def setNew_nameUndefined: Self = StObject.set(x, "new_name", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

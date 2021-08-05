@@ -15,16 +15,13 @@ trait sql extends StObject {
 }
 object sql {
   
-  @scala.inline
-  def apply(parseWhereClause: (String, FieldsIndex) => js.Promise[WhereClause]): sql = {
+  inline def apply(parseWhereClause: (String, FieldsIndex) => js.Promise[WhereClause]): sql = {
     val __obj = js.Dynamic.literal(parseWhereClause = js.Any.fromFunction2(parseWhereClause))
     __obj.asInstanceOf[sql]
   }
   
-  @scala.inline
-  implicit class sqlMutableBuilder[Self <: sql] (val x: Self) extends AnyVal {
+  extension [Self <: sql](x: Self) {
     
-    @scala.inline
-    def setParseWhereClause(value: (String, FieldsIndex) => js.Promise[WhereClause]): Self = StObject.set(x, "parseWhereClause", js.Any.fromFunction2(value))
+    inline def setParseWhereClause(value: (String, FieldsIndex) => js.Promise[WhereClause]): Self = StObject.set(x, "parseWhereClause", js.Any.fromFunction2(value))
   }
 }

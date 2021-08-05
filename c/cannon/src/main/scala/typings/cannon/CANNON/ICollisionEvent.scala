@@ -12,17 +12,14 @@ trait ICollisionEvent
 }
 object ICollisionEvent {
   
-  @scala.inline
-  def apply(body: Body, contact: js.Any, `type`: String): ICollisionEvent = {
+  inline def apply(body: Body, contact: js.Any, `type`: String): ICollisionEvent = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], contact = contact.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICollisionEvent]
   }
   
-  @scala.inline
-  implicit class ICollisionEventMutableBuilder[Self <: ICollisionEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ICollisionEvent](x: Self) {
     
-    @scala.inline
-    def setContact(value: js.Any): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    inline def setContact(value: js.Any): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
   }
 }

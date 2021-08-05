@@ -13,19 +13,15 @@ trait CreateGameSessionOutput extends StObject {
 }
 object CreateGameSessionOutput {
   
-  @scala.inline
-  def apply(): CreateGameSessionOutput = {
+  inline def apply(): CreateGameSessionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateGameSessionOutput]
   }
   
-  @scala.inline
-  implicit class CreateGameSessionOutputMutableBuilder[Self <: CreateGameSessionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGameSessionOutput](x: Self) {
     
-    @scala.inline
-    def setGameSession(value: GameSession): Self = StObject.set(x, "GameSession", value.asInstanceOf[js.Any])
+    inline def setGameSession(value: GameSession): Self = StObject.set(x, "GameSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionUndefined: Self = StObject.set(x, "GameSession", js.undefined)
+    inline def setGameSessionUndefined: Self = StObject.set(x, "GameSession", js.undefined)
   }
 }

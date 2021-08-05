@@ -24,25 +24,19 @@ trait ParamsResourceJobsHistogram
 }
 object ParamsResourceJobsHistogram {
   
-  @scala.inline
-  def apply(): ParamsResourceJobsHistogram = {
+  inline def apply(): ParamsResourceJobsHistogram = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceJobsHistogram]
   }
   
-  @scala.inline
-  implicit class ParamsResourceJobsHistogramMutableBuilder[Self <: ParamsResourceJobsHistogram] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceJobsHistogram](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaGetHistogramRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaGetHistogramRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

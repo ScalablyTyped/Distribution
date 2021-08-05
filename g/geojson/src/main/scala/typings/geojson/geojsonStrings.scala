@@ -12,69 +12,60 @@ object geojsonStrings {
   sealed trait Feature
     extends StObject
        with GeoJsonTypes
-  @scala.inline
-  def Feature: Feature = "Feature".asInstanceOf[Feature]
+  inline def Feature: Feature = "Feature".asInstanceOf[Feature]
   
   @js.native
   sealed trait FeatureCollection
     extends StObject
        with GeoJsonTypes
-  @scala.inline
-  def FeatureCollection: FeatureCollection = "FeatureCollection".asInstanceOf[FeatureCollection]
+  inline def FeatureCollection: FeatureCollection = "FeatureCollection".asInstanceOf[FeatureCollection]
   
   @js.native
   sealed trait GeometryCollection
     extends StObject
        with GeoJsonGeometryTypes
        with GeoJsonTypes
-  @scala.inline
-  def GeometryCollection: GeometryCollection = "GeometryCollection".asInstanceOf[GeometryCollection]
+  inline def GeometryCollection: GeometryCollection = "GeometryCollection".asInstanceOf[GeometryCollection]
   
   @js.native
   sealed trait LineString
     extends StObject
        with GeoJsonGeometryTypes
        with GeoJsonTypes
-  @scala.inline
-  def LineString: LineString = "LineString".asInstanceOf[LineString]
+  inline def LineString: LineString = "LineString".asInstanceOf[LineString]
   
   @js.native
   sealed trait MultiLineString
     extends StObject
        with GeoJsonGeometryTypes
        with GeoJsonTypes
-  @scala.inline
-  def MultiLineString: MultiLineString = "MultiLineString".asInstanceOf[MultiLineString]
+  inline def MultiLineString: MultiLineString = "MultiLineString".asInstanceOf[MultiLineString]
   
   @js.native
   sealed trait MultiPoint
     extends StObject
        with GeoJsonGeometryTypes
        with GeoJsonTypes
-  @scala.inline
-  def MultiPoint: MultiPoint = "MultiPoint".asInstanceOf[MultiPoint]
+  inline def MultiPoint: MultiPoint = "MultiPoint".asInstanceOf[MultiPoint]
   
   @js.native
   sealed trait MultiPolygon
     extends StObject
        with GeoJsonGeometryTypes
        with GeoJsonTypes
-  @scala.inline
-  def MultiPolygon: MultiPolygon = "MultiPolygon".asInstanceOf[MultiPolygon]
+  inline def MultiPolygon: MultiPolygon = "MultiPolygon".asInstanceOf[MultiPolygon]
   
   @js.native
   sealed trait Point
     extends StObject
        with GeoJsonGeometryTypes
        with GeoJsonTypes
-  @scala.inline
-  def Point: Point = "Point".asInstanceOf[Point]
+  inline def Point: Point = "Point".asInstanceOf[Point]
   
   @js.native
   sealed trait Polygon
     extends StObject
        with GeoJsonGeometryTypes
        with GeoJsonTypes
-  @scala.inline
-  def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
+  inline def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
 }

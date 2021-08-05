@@ -14,22 +14,17 @@ trait ARIAHIDDEN extends StObject {
 }
 object ARIAHIDDEN {
   
-  @scala.inline
-  def apply(ARIA_HIDDEN: String, ROLE: String, ROOT_SELECTOR: String): ARIAHIDDEN = {
+  inline def apply(ARIA_HIDDEN: String, ROLE: String, ROOT_SELECTOR: String): ARIAHIDDEN = {
     val __obj = js.Dynamic.literal(ARIA_HIDDEN = ARIA_HIDDEN.asInstanceOf[js.Any], ROLE = ROLE.asInstanceOf[js.Any], ROOT_SELECTOR = ROOT_SELECTOR.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARIAHIDDEN]
   }
   
-  @scala.inline
-  implicit class ARIAHIDDENMutableBuilder[Self <: ARIAHIDDEN] (val x: Self) extends AnyVal {
+  extension [Self <: ARIAHIDDEN](x: Self) {
     
-    @scala.inline
-    def setARIA_HIDDEN(value: String): Self = StObject.set(x, "ARIA_HIDDEN", value.asInstanceOf[js.Any])
+    inline def setARIA_HIDDEN(value: String): Self = StObject.set(x, "ARIA_HIDDEN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setROLE(value: String): Self = StObject.set(x, "ROLE", value.asInstanceOf[js.Any])
+    inline def setROLE(value: String): Self = StObject.set(x, "ROLE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setROOT_SELECTOR(value: String): Self = StObject.set(x, "ROOT_SELECTOR", value.asInstanceOf[js.Any])
+    inline def setROOT_SELECTOR(value: String): Self = StObject.set(x, "ROOT_SELECTOR", value.asInstanceOf[js.Any])
   }
 }

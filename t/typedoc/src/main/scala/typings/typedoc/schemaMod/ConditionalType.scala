@@ -23,8 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ConditionalType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkType: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type,
     extendsType: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type,
     falseType: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type,
@@ -36,45 +35,34 @@ object ConditionalType {
     __obj.asInstanceOf[ConditionalType]
   }
   
-  @scala.inline
-  implicit class ConditionalTypeMutableBuilder[Self <: ConditionalType] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalType](x: Self) {
     
-    @scala.inline
-    def setCheckType(
+    inline def setCheckType(
       value: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type
     ): Self = StObject.set(x, "checkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "checkType", js.Array(value :_*))
+    inline def setCheckTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "checkType", js.Array(value :_*))
     
-    @scala.inline
-    def setExtendsType(
+    inline def setExtendsType(
       value: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type
     ): Self = StObject.set(x, "extendsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendsTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "extendsType", js.Array(value :_*))
+    inline def setExtendsTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "extendsType", js.Array(value :_*))
     
-    @scala.inline
-    def setFalseType(
+    inline def setFalseType(
       value: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type
     ): Self = StObject.set(x, "falseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFalseTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "falseType", js.Array(value :_*))
+    inline def setFalseTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "falseType", js.Array(value :_*))
     
-    @scala.inline
-    def setTrueType(
+    inline def setTrueType(
       value: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type
     ): Self = StObject.set(x, "trueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrueTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "trueType", js.Array(value :_*))
+    inline def setTrueTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "trueType", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

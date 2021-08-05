@@ -38,8 +38,7 @@ object mod extends Shortcut {
     }
     object PromiseConstructor {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         hash: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ P in keyof any ]: std.PromiseLike<any[P]> | any[P]}
         */ /* promiseHash */ typings.promiseHash.promiseHashStrings.PromiseHash & TopLevel[js.Any] => js.Promise[js.Any]
@@ -48,11 +47,9 @@ object mod extends Shortcut {
         __obj.asInstanceOf[PromiseConstructor]
       }
       
-      @scala.inline
-      implicit class PromiseConstructorMutableBuilder[Self <: PromiseConstructor] (val x: Self) extends AnyVal {
+      extension [Self <: PromiseConstructor](x: Self) {
         
-        @scala.inline
-        def setHash(
+        inline def setHash(
           value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in keyof any ]: std.PromiseLike<any[P]> | any[P]}
           */ /* promiseHash */ typings.promiseHash.promiseHashStrings.PromiseHash & TopLevel[js.Any] => js.Promise[js.Any]

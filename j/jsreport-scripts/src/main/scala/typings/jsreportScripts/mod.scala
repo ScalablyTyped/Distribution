@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
-  @scala.inline
-  def apply(cfg: Configuration): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(cfg.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
+  inline def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  inline def apply(cfg: Configuration): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(cfg.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
   
   @JSImport("jsreport-scripts", JSImport.Namespace)
   @js.native
@@ -23,23 +21,18 @@ object mod {
   }
   object Configuration {
     
-    @scala.inline
-    def apply(): Configuration = {
+    inline def apply(): Configuration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Configuration]
     }
     
-    @scala.inline
-    implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+    extension [Self <: Configuration](x: Self) {
       
-      @scala.inline
-      def setAllowedModules(value: js.Array[String] | Asterisk): Self = StObject.set(x, "allowedModules", value.asInstanceOf[js.Any])
+      inline def setAllowedModules(value: js.Array[String] | Asterisk): Self = StObject.set(x, "allowedModules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedModulesUndefined: Self = StObject.set(x, "allowedModules", js.undefined)
+      inline def setAllowedModulesUndefined: Self = StObject.set(x, "allowedModules", js.undefined)
       
-      @scala.inline
-      def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value :_*))
+      inline def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value :_*))
     }
   }
   
@@ -53,32 +46,24 @@ object mod {
   }
   object TemplateScript {
     
-    @scala.inline
-    def apply(): TemplateScript = {
+    inline def apply(): TemplateScript = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TemplateScript]
     }
     
-    @scala.inline
-    implicit class TemplateScriptMutableBuilder[Self <: TemplateScript] (val x: Self) extends AnyVal {
+    extension [Self <: TemplateScript](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setShortid(value: String): Self = StObject.set(x, "shortid", value.asInstanceOf[js.Any])
+      inline def setShortid(value: String): Self = StObject.set(x, "shortid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortidUndefined: Self = StObject.set(x, "shortid", js.undefined)
+      inline def setShortidUndefined: Self = StObject.set(x, "shortid", js.undefined)
     }
   }
   
@@ -91,23 +76,18 @@ object mod {
     }
     object Template {
       
-      @scala.inline
-      def apply(): Template = {
+      inline def apply(): Template = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Template]
       }
       
-      @scala.inline
-      implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
+      extension [Self <: Template](x: Self) {
         
-        @scala.inline
-        def setScripts(value: js.Array[TemplateScript]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+        inline def setScripts(value: js.Array[TemplateScript]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
+        inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
         
-        @scala.inline
-        def setScriptsVarargs(value: TemplateScript*): Self = StObject.set(x, "scripts", js.Array(value :_*))
+        inline def setScriptsVarargs(value: TemplateScript*): Self = StObject.set(x, "scripts", js.Array(value :_*))
       }
     }
   }

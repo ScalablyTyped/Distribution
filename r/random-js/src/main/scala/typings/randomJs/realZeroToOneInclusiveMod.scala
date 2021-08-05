@@ -11,6 +11,5 @@ object realZeroToOneInclusiveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def realZeroToOneInclusive(engine: Engine): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("realZeroToOneInclusive")(engine.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def realZeroToOneInclusive(engine: Engine): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("realZeroToOneInclusive")(engine.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

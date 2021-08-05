@@ -12,12 +12,9 @@ object toCidAndPathMod {
     * @param {string|Uint8Array|CID} string
     * @returns {{cid:CID, path?:string}}
     */
-  @scala.inline
-  def apply(string: String): Cid = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Cid]
-  @scala.inline
-  def apply(string: typings.cids.mod.^): Cid = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Cid]
-  @scala.inline
-  def apply(string: Uint8Array): Cid = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Cid]
+  inline def apply(string: String): Cid = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Cid]
+  inline def apply(string: typings.cids.mod.^): Cid = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Cid]
+  inline def apply(string: Uint8Array): Cid = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Cid]
   
   @JSImport("ipfs-core-utils/dist/src/to-cid-and-path", JSImport.Namespace)
   @js.native

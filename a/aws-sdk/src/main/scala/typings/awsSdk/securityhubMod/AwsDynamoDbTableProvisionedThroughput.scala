@@ -33,43 +33,31 @@ trait AwsDynamoDbTableProvisionedThroughput extends StObject {
 }
 object AwsDynamoDbTableProvisionedThroughput {
   
-  @scala.inline
-  def apply(): AwsDynamoDbTableProvisionedThroughput = {
+  inline def apply(): AwsDynamoDbTableProvisionedThroughput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsDynamoDbTableProvisionedThroughput]
   }
   
-  @scala.inline
-  implicit class AwsDynamoDbTableProvisionedThroughputMutableBuilder[Self <: AwsDynamoDbTableProvisionedThroughput] (val x: Self) extends AnyVal {
+  extension [Self <: AwsDynamoDbTableProvisionedThroughput](x: Self) {
     
-    @scala.inline
-    def setLastDecreaseDateTime(value: NonEmptyString): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
+    inline def setLastDecreaseDateTime(value: NonEmptyString): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastDecreaseDateTimeUndefined: Self = StObject.set(x, "LastDecreaseDateTime", js.undefined)
+    inline def setLastDecreaseDateTimeUndefined: Self = StObject.set(x, "LastDecreaseDateTime", js.undefined)
     
-    @scala.inline
-    def setLastIncreaseDateTime(value: NonEmptyString): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
+    inline def setLastIncreaseDateTime(value: NonEmptyString): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastIncreaseDateTimeUndefined: Self = StObject.set(x, "LastIncreaseDateTime", js.undefined)
+    inline def setLastIncreaseDateTimeUndefined: Self = StObject.set(x, "LastIncreaseDateTime", js.undefined)
     
-    @scala.inline
-    def setNumberOfDecreasesToday(value: Integer): Self = StObject.set(x, "NumberOfDecreasesToday", value.asInstanceOf[js.Any])
+    inline def setNumberOfDecreasesToday(value: Integer): Self = StObject.set(x, "NumberOfDecreasesToday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfDecreasesTodayUndefined: Self = StObject.set(x, "NumberOfDecreasesToday", js.undefined)
+    inline def setNumberOfDecreasesTodayUndefined: Self = StObject.set(x, "NumberOfDecreasesToday", js.undefined)
     
-    @scala.inline
-    def setReadCapacityUnits(value: Integer): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
+    inline def setReadCapacityUnits(value: Integer): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
+    inline def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
     
-    @scala.inline
-    def setWriteCapacityUnits(value: Integer): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
+    inline def setWriteCapacityUnits(value: Integer): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteCapacityUnitsUndefined: Self = StObject.set(x, "WriteCapacityUnits", js.undefined)
+    inline def setWriteCapacityUnitsUndefined: Self = StObject.set(x, "WriteCapacityUnits", js.undefined)
   }
 }

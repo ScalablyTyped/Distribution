@@ -14,40 +14,29 @@ trait Twitter extends StObject {
 }
 object Twitter {
   
-  @scala.inline
-  def apply(): Twitter = {
+  inline def apply(): Twitter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Twitter]
   }
   
-  @scala.inline
-  implicit class TwitterMutableBuilder[Self <: Twitter] (val x: Self) extends AnyVal {
+  extension [Self <: Twitter](x: Self) {
     
-    @scala.inline
-    def setTwitter_description(value: Nullable[String]): Self = StObject.set(x, "twitter_description", value.asInstanceOf[js.Any])
+    inline def setTwitter_description(value: Nullable[String]): Self = StObject.set(x, "twitter_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwitter_descriptionNull: Self = StObject.set(x, "twitter_description", null)
+    inline def setTwitter_descriptionNull: Self = StObject.set(x, "twitter_description", null)
     
-    @scala.inline
-    def setTwitter_descriptionUndefined: Self = StObject.set(x, "twitter_description", js.undefined)
+    inline def setTwitter_descriptionUndefined: Self = StObject.set(x, "twitter_description", js.undefined)
     
-    @scala.inline
-    def setTwitter_image(value: Nullable[String]): Self = StObject.set(x, "twitter_image", value.asInstanceOf[js.Any])
+    inline def setTwitter_image(value: Nullable[String]): Self = StObject.set(x, "twitter_image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwitter_imageNull: Self = StObject.set(x, "twitter_image", null)
+    inline def setTwitter_imageNull: Self = StObject.set(x, "twitter_image", null)
     
-    @scala.inline
-    def setTwitter_imageUndefined: Self = StObject.set(x, "twitter_image", js.undefined)
+    inline def setTwitter_imageUndefined: Self = StObject.set(x, "twitter_image", js.undefined)
     
-    @scala.inline
-    def setTwitter_title(value: Nullable[String]): Self = StObject.set(x, "twitter_title", value.asInstanceOf[js.Any])
+    inline def setTwitter_title(value: Nullable[String]): Self = StObject.set(x, "twitter_title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwitter_titleNull: Self = StObject.set(x, "twitter_title", null)
+    inline def setTwitter_titleNull: Self = StObject.set(x, "twitter_title", null)
     
-    @scala.inline
-    def setTwitter_titleUndefined: Self = StObject.set(x, "twitter_title", js.undefined)
+    inline def setTwitter_titleUndefined: Self = StObject.set(x, "twitter_title", js.undefined)
   }
 }

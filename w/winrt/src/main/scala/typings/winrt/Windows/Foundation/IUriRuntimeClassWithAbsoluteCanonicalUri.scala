@@ -12,19 +12,15 @@ trait IUriRuntimeClassWithAbsoluteCanonicalUri extends StObject {
 }
 object IUriRuntimeClassWithAbsoluteCanonicalUri {
   
-  @scala.inline
-  def apply(absoluteCanonicalUri: String, displayIri: String): IUriRuntimeClassWithAbsoluteCanonicalUri = {
+  inline def apply(absoluteCanonicalUri: String, displayIri: String): IUriRuntimeClassWithAbsoluteCanonicalUri = {
     val __obj = js.Dynamic.literal(absoluteCanonicalUri = absoluteCanonicalUri.asInstanceOf[js.Any], displayIri = displayIri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUriRuntimeClassWithAbsoluteCanonicalUri]
   }
   
-  @scala.inline
-  implicit class IUriRuntimeClassWithAbsoluteCanonicalUriMutableBuilder[Self <: IUriRuntimeClassWithAbsoluteCanonicalUri] (val x: Self) extends AnyVal {
+  extension [Self <: IUriRuntimeClassWithAbsoluteCanonicalUri](x: Self) {
     
-    @scala.inline
-    def setAbsoluteCanonicalUri(value: String): Self = StObject.set(x, "absoluteCanonicalUri", value.asInstanceOf[js.Any])
+    inline def setAbsoluteCanonicalUri(value: String): Self = StObject.set(x, "absoluteCanonicalUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayIri(value: String): Self = StObject.set(x, "displayIri", value.asInstanceOf[js.Any])
+    inline def setDisplayIri(value: String): Self = StObject.set(x, "displayIri", value.asInstanceOf[js.Any])
   }
 }

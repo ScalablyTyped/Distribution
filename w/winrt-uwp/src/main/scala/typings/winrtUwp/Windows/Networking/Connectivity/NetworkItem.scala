@@ -18,19 +18,15 @@ trait NetworkItem extends StObject {
 }
 object NetworkItem {
   
-  @scala.inline
-  def apply(getNetworkTypes: () => NetworkTypes, networkId: String): NetworkItem = {
+  inline def apply(getNetworkTypes: () => NetworkTypes, networkId: String): NetworkItem = {
     val __obj = js.Dynamic.literal(getNetworkTypes = js.Any.fromFunction0(getNetworkTypes), networkId = networkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkItem]
   }
   
-  @scala.inline
-  implicit class NetworkItemMutableBuilder[Self <: NetworkItem] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkItem](x: Self) {
     
-    @scala.inline
-    def setGetNetworkTypes(value: () => NetworkTypes): Self = StObject.set(x, "getNetworkTypes", js.Any.fromFunction0(value))
+    inline def setGetNetworkTypes(value: () => NetworkTypes): Self = StObject.set(x, "getNetworkTypes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNetworkId(value: String): Self = StObject.set(x, "networkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: String): Self = StObject.set(x, "networkId", value.asInstanceOf[js.Any])
   }
 }

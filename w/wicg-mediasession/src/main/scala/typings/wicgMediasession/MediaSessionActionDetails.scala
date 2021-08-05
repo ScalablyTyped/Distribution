@@ -20,34 +20,25 @@ trait MediaSessionActionDetails extends StObject {
 }
 object MediaSessionActionDetails {
   
-  @scala.inline
-  def apply(action: MediaSessionAction): MediaSessionActionDetails = {
+  inline def apply(action: MediaSessionAction): MediaSessionActionDetails = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaSessionActionDetails]
   }
   
-  @scala.inline
-  implicit class MediaSessionActionDetailsMutableBuilder[Self <: MediaSessionActionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MediaSessionActionDetails](x: Self) {
     
-    @scala.inline
-    def setAction(value: MediaSessionAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: MediaSessionAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFastSeek(value: Boolean): Self = StObject.set(x, "fastSeek", value.asInstanceOf[js.Any])
+    inline def setFastSeek(value: Boolean): Self = StObject.set(x, "fastSeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFastSeekUndefined: Self = StObject.set(x, "fastSeek", js.undefined)
+    inline def setFastSeekUndefined: Self = StObject.set(x, "fastSeek", js.undefined)
     
-    @scala.inline
-    def setSeekOffset(value: Double): Self = StObject.set(x, "seekOffset", value.asInstanceOf[js.Any])
+    inline def setSeekOffset(value: Double): Self = StObject.set(x, "seekOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeekOffsetUndefined: Self = StObject.set(x, "seekOffset", js.undefined)
+    inline def setSeekOffsetUndefined: Self = StObject.set(x, "seekOffset", js.undefined)
     
-    @scala.inline
-    def setSeekTime(value: Double): Self = StObject.set(x, "seekTime", value.asInstanceOf[js.Any])
+    inline def setSeekTime(value: Double): Self = StObject.set(x, "seekTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeekTimeUndefined: Self = StObject.set(x, "seekTime", js.undefined)
+    inline def setSeekTimeUndefined: Self = StObject.set(x, "seekTime", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def get(path: String, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def get(path: String, options: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
   object koaDocs {
     
@@ -34,41 +33,30 @@ object mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(groups: js.Array[Description], version: String): Options = {
+      inline def apply(groups: js.Array[Description], version: String): Options = {
         val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setGroups(value: js.Array[Description]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+        inline def setGroups(value: js.Array[Description]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupsVarargs(value: Description*): Self = StObject.set(x, "groups", js.Array(value :_*))
+        inline def setGroupsVarargs(value: Description*): Self = StObject.set(x, "groups", js.Array(value :_*))
         
-        @scala.inline
-        def setRouteHandlers(value: String): Self = StObject.set(x, "routeHandlers", value.asInstanceOf[js.Any])
+        inline def setRouteHandlers(value: String): Self = StObject.set(x, "routeHandlers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRouteHandlersUndefined: Self = StObject.set(x, "routeHandlers", js.undefined)
+        inline def setRouteHandlersUndefined: Self = StObject.set(x, "routeHandlers", js.undefined)
         
-        @scala.inline
-        def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+        inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+        inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         
-        @scala.inline
-        def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       }
     }
   }

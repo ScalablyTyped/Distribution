@@ -17,22 +17,17 @@ trait Middle extends StObject {
 }
 object Middle {
   
-  @scala.inline
-  def apply(): Middle = {
+  inline def apply(): Middle = {
     val __obj = js.Dynamic.literal(end = "end", middle = "middle", start = "start")
     __obj.asInstanceOf[Middle]
   }
   
-  @scala.inline
-  implicit class MiddleMutableBuilder[Self <: Middle] (val x: Self) extends AnyVal {
+  extension [Self <: Middle](x: Self) {
     
-    @scala.inline
-    def setEnd(value: end): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: end): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiddle(value: middle): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
+    inline def setMiddle(value: middle): Self = StObject.set(x, "middle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: start): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: start): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

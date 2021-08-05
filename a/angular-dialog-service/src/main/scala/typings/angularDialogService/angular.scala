@@ -58,50 +58,36 @@ object angular {
     }
     object IDialogOptions {
       
-      @scala.inline
-      def apply(): IDialogOptions = {
+      inline def apply(): IDialogOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IDialogOptions]
       }
       
-      @scala.inline
-      implicit class IDialogOptionsMutableBuilder[Self <: IDialogOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IDialogOptions](x: Self) {
         
-        @scala.inline
-        def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+        inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+        inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
         
-        @scala.inline
-        def setBackdrop(value: Boolean | String): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+        inline def setBackdrop(value: Boolean | String): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackdropClass(value: String): Self = StObject.set(x, "backdropClass", value.asInstanceOf[js.Any])
+        inline def setBackdropClass(value: String): Self = StObject.set(x, "backdropClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackdropClassUndefined: Self = StObject.set(x, "backdropClass", js.undefined)
+        inline def setBackdropClassUndefined: Self = StObject.set(x, "backdropClass", js.undefined)
         
-        @scala.inline
-        def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
+        inline def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
         
-        @scala.inline
-        def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+        inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+        inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
         
-        @scala.inline
-        def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+        inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+        inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
         
-        @scala.inline
-        def setWindowClass(value: String): Self = StObject.set(x, "windowClass", value.asInstanceOf[js.Any])
+        inline def setWindowClass(value: String): Self = StObject.set(x, "windowClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWindowClassUndefined: Self = StObject.set(x, "windowClass", js.undefined)
+        inline def setWindowClassUndefined: Self = StObject.set(x, "windowClass", js.undefined)
       }
     }
     

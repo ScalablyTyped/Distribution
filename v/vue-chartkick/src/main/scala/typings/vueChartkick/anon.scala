@@ -12,17 +12,14 @@ object anon {
   }
   object Adapter {
     
-    @scala.inline
-    def apply(adapter: js.Any): Adapter = {
+    inline def apply(adapter: js.Any): Adapter = {
       val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any])
       __obj.asInstanceOf[Adapter]
     }
     
-    @scala.inline
-    implicit class AdapterMutableBuilder[Self <: Adapter] (val x: Self) extends AnyVal {
+    extension [Self <: Adapter](x: Self) {
       
-      @scala.inline
-      def setAdapter(value: js.Any): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      inline def setAdapter(value: js.Any): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     }
   }
 }

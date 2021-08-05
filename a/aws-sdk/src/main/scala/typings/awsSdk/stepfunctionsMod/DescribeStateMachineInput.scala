@@ -13,16 +13,13 @@ trait DescribeStateMachineInput extends StObject {
 }
 object DescribeStateMachineInput {
   
-  @scala.inline
-  def apply(stateMachineArn: Arn): DescribeStateMachineInput = {
+  inline def apply(stateMachineArn: Arn): DescribeStateMachineInput = {
     val __obj = js.Dynamic.literal(stateMachineArn = stateMachineArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStateMachineInput]
   }
   
-  @scala.inline
-  implicit class DescribeStateMachineInputMutableBuilder[Self <: DescribeStateMachineInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStateMachineInput](x: Self) {
     
-    @scala.inline
-    def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
+    inline def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
   }
 }

@@ -17,22 +17,17 @@ trait ClockRate extends StObject {
 }
 object ClockRate {
   
-  @scala.inline
-  def apply(): ClockRate = {
+  inline def apply(): ClockRate = {
     val __obj = js.Dynamic.literal(clockRate = 90000, mediaType = "V", name = "H263")
     __obj.asInstanceOf[ClockRate]
   }
   
-  @scala.inline
-  implicit class ClockRateMutableBuilder[Self <: ClockRate] (val x: Self) extends AnyVal {
+  extension [Self <: ClockRate](x: Self) {
     
-    @scala.inline
-    def setClockRate(value: `90000`): Self = StObject.set(x, "clockRate", value.asInstanceOf[js.Any])
+    inline def setClockRate(value: `90000`): Self = StObject.set(x, "clockRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaType(value: V): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: V): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: H263): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: H263): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -16,37 +16,27 @@ trait NxPage extends StObject {
 }
 object NxPage {
   
-  @scala.inline
-  def apply(): NxPage = {
+  inline def apply(): NxPage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NxPage]
   }
   
-  @scala.inline
-  implicit class NxPageMutableBuilder[Self <: NxPage] (val x: Self) extends AnyVal {
+  extension [Self <: NxPage](x: Self) {
     
-    @scala.inline
-    def setQHeight(value: Double): Self = StObject.set(x, "qHeight", value.asInstanceOf[js.Any])
+    inline def setQHeight(value: Double): Self = StObject.set(x, "qHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQHeightUndefined: Self = StObject.set(x, "qHeight", js.undefined)
+    inline def setQHeightUndefined: Self = StObject.set(x, "qHeight", js.undefined)
     
-    @scala.inline
-    def setQLeft(value: Double): Self = StObject.set(x, "qLeft", value.asInstanceOf[js.Any])
+    inline def setQLeft(value: Double): Self = StObject.set(x, "qLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLeftUndefined: Self = StObject.set(x, "qLeft", js.undefined)
+    inline def setQLeftUndefined: Self = StObject.set(x, "qLeft", js.undefined)
     
-    @scala.inline
-    def setQTop(value: Double): Self = StObject.set(x, "qTop", value.asInstanceOf[js.Any])
+    inline def setQTop(value: Double): Self = StObject.set(x, "qTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTopUndefined: Self = StObject.set(x, "qTop", js.undefined)
+    inline def setQTopUndefined: Self = StObject.set(x, "qTop", js.undefined)
     
-    @scala.inline
-    def setQWidth(value: Double): Self = StObject.set(x, "qWidth", value.asInstanceOf[js.Any])
+    inline def setQWidth(value: Double): Self = StObject.set(x, "qWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQWidthUndefined: Self = StObject.set(x, "qWidth", js.undefined)
+    inline def setQWidthUndefined: Self = StObject.set(x, "qWidth", js.undefined)
   }
 }

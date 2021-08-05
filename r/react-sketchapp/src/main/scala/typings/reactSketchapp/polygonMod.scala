@@ -23,17 +23,14 @@ object polygonMod {
   }
   object PolygonProps {
     
-    @scala.inline
-    def apply(points: String): PolygonProps = {
+    inline def apply(points: String): PolygonProps = {
       val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolygonProps]
     }
     
-    @scala.inline
-    implicit class PolygonPropsMutableBuilder[Self <: PolygonProps] (val x: Self) extends AnyVal {
+    extension [Self <: PolygonProps](x: Self) {
       
-      @scala.inline
-      def setPoints(value: String): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      inline def setPoints(value: String): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     }
   }
 }

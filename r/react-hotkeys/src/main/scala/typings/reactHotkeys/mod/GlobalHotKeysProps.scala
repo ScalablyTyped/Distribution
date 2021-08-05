@@ -30,31 +30,23 @@ trait GlobalHotKeysProps
 }
 object GlobalHotKeysProps {
   
-  @scala.inline
-  def apply(): GlobalHotKeysProps = {
+  inline def apply(): GlobalHotKeysProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalHotKeysProps]
   }
   
-  @scala.inline
-  implicit class GlobalHotKeysPropsMutableBuilder[Self <: GlobalHotKeysProps] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalHotKeysProps](x: Self) {
     
-    @scala.inline
-    def setAllowChanges(value: Boolean): Self = StObject.set(x, "allowChanges", value.asInstanceOf[js.Any])
+    inline def setAllowChanges(value: Boolean): Self = StObject.set(x, "allowChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowChangesUndefined: Self = StObject.set(x, "allowChanges", js.undefined)
+    inline def setAllowChangesUndefined: Self = StObject.set(x, "allowChanges", js.undefined)
     
-    @scala.inline
-    def setHandlers(value: StringDictionary[js.Function1[/* keyEvent */ js.UndefOr[KeyboardEvent], Unit]]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+    inline def setHandlers(value: StringDictionary[js.Function1[/* keyEvent */ js.UndefOr[KeyboardEvent], Unit]]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
+    inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
     
-    @scala.inline
-    def setKeyMap(value: KeyMap): Self = StObject.set(x, "keyMap", value.asInstanceOf[js.Any])
+    inline def setKeyMap(value: KeyMap): Self = StObject.set(x, "keyMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyMapUndefined: Self = StObject.set(x, "keyMap", js.undefined)
+    inline def setKeyMapUndefined: Self = StObject.set(x, "keyMap", js.undefined)
   }
 }

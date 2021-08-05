@@ -11,19 +11,15 @@ trait SubscriptionPurchasesAcknowledgeRequest extends StObject {
 }
 object SubscriptionPurchasesAcknowledgeRequest {
   
-  @scala.inline
-  def apply(): SubscriptionPurchasesAcknowledgeRequest = {
+  inline def apply(): SubscriptionPurchasesAcknowledgeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubscriptionPurchasesAcknowledgeRequest]
   }
   
-  @scala.inline
-  implicit class SubscriptionPurchasesAcknowledgeRequestMutableBuilder[Self <: SubscriptionPurchasesAcknowledgeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionPurchasesAcknowledgeRequest](x: Self) {
     
-    @scala.inline
-    def setDeveloperPayload(value: String): Self = StObject.set(x, "developerPayload", value.asInstanceOf[js.Any])
+    inline def setDeveloperPayload(value: String): Self = StObject.set(x, "developerPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperPayloadUndefined: Self = StObject.set(x, "developerPayload", js.undefined)
+    inline def setDeveloperPayloadUndefined: Self = StObject.set(x, "developerPayload", js.undefined)
   }
 }

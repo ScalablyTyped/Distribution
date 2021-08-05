@@ -23,8 +23,7 @@ trait ProductInformationFilter extends StObject {
 }
 object ProductInformationFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ProductInformationFilterComparator: String,
     ProductInformationFilterName: String,
     ProductInformationFilterValue: StringList
@@ -33,19 +32,14 @@ object ProductInformationFilter {
     __obj.asInstanceOf[ProductInformationFilter]
   }
   
-  @scala.inline
-  implicit class ProductInformationFilterMutableBuilder[Self <: ProductInformationFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ProductInformationFilter](x: Self) {
     
-    @scala.inline
-    def setProductInformationFilterComparator(value: String): Self = StObject.set(x, "ProductInformationFilterComparator", value.asInstanceOf[js.Any])
+    inline def setProductInformationFilterComparator(value: String): Self = StObject.set(x, "ProductInformationFilterComparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductInformationFilterName(value: String): Self = StObject.set(x, "ProductInformationFilterName", value.asInstanceOf[js.Any])
+    inline def setProductInformationFilterName(value: String): Self = StObject.set(x, "ProductInformationFilterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductInformationFilterValue(value: StringList): Self = StObject.set(x, "ProductInformationFilterValue", value.asInstanceOf[js.Any])
+    inline def setProductInformationFilterValue(value: StringList): Self = StObject.set(x, "ProductInformationFilterValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductInformationFilterValueVarargs(value: String*): Self = StObject.set(x, "ProductInformationFilterValue", js.Array(value :_*))
+    inline def setProductInformationFilterValueVarargs(value: String*): Self = StObject.set(x, "ProductInformationFilterValue", js.Array(value :_*))
   }
 }

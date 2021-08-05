@@ -18,28 +18,21 @@ trait ListFunctionEventInvokeConfigsResponse extends StObject {
 }
 object ListFunctionEventInvokeConfigsResponse {
   
-  @scala.inline
-  def apply(): ListFunctionEventInvokeConfigsResponse = {
+  inline def apply(): ListFunctionEventInvokeConfigsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFunctionEventInvokeConfigsResponse]
   }
   
-  @scala.inline
-  implicit class ListFunctionEventInvokeConfigsResponseMutableBuilder[Self <: ListFunctionEventInvokeConfigsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListFunctionEventInvokeConfigsResponse](x: Self) {
     
-    @scala.inline
-    def setFunctionEventInvokeConfigs(value: FunctionEventInvokeConfigList): Self = StObject.set(x, "FunctionEventInvokeConfigs", value.asInstanceOf[js.Any])
+    inline def setFunctionEventInvokeConfigs(value: FunctionEventInvokeConfigList): Self = StObject.set(x, "FunctionEventInvokeConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionEventInvokeConfigsUndefined: Self = StObject.set(x, "FunctionEventInvokeConfigs", js.undefined)
+    inline def setFunctionEventInvokeConfigsUndefined: Self = StObject.set(x, "FunctionEventInvokeConfigs", js.undefined)
     
-    @scala.inline
-    def setFunctionEventInvokeConfigsVarargs(value: FunctionEventInvokeConfig*): Self = StObject.set(x, "FunctionEventInvokeConfigs", js.Array(value :_*))
+    inline def setFunctionEventInvokeConfigsVarargs(value: FunctionEventInvokeConfig*): Self = StObject.set(x, "FunctionEventInvokeConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

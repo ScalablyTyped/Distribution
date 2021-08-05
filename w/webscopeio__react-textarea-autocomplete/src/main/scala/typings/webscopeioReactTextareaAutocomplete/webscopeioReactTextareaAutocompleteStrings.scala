@@ -11,20 +11,17 @@ object webscopeioReactTextareaAutocompleteStrings {
   sealed trait end
     extends StObject
        with _CaretPositionType
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait next
     extends StObject
        with _CaretPositionType
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
+  inline def next: next = "next".asInstanceOf[next]
   
   @js.native
   sealed trait start
     extends StObject
        with _CaretPositionType
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
 }

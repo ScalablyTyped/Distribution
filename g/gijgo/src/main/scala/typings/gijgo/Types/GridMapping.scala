@@ -12,25 +12,19 @@ trait GridMapping extends StObject {
 }
 object GridMapping {
   
-  @scala.inline
-  def apply(): GridMapping = {
+  inline def apply(): GridMapping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridMapping]
   }
   
-  @scala.inline
-  implicit class GridMappingMutableBuilder[Self <: GridMapping] (val x: Self) extends AnyVal {
+  extension [Self <: GridMapping](x: Self) {
     
-    @scala.inline
-    def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
+    inline def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFieldUndefined: Self = StObject.set(x, "dataField", js.undefined)
+    inline def setDataFieldUndefined: Self = StObject.set(x, "dataField", js.undefined)
     
-    @scala.inline
-    def setTotalRecordsField(value: String): Self = StObject.set(x, "totalRecordsField", value.asInstanceOf[js.Any])
+    inline def setTotalRecordsField(value: String): Self = StObject.set(x, "totalRecordsField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalRecordsFieldUndefined: Self = StObject.set(x, "totalRecordsField", js.undefined)
+    inline def setTotalRecordsFieldUndefined: Self = StObject.set(x, "totalRecordsField", js.undefined)
   }
 }

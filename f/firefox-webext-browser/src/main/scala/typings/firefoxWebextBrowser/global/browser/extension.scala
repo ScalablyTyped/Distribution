@@ -21,8 +21,7 @@ object `extension` {
   /**
     * Returns the JavaScript 'window' object for the background page running inside the current extension. Returns null if the extension has no background page.
     */
-  @scala.inline
-  def getBackgroundPage(): Window | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundPage")().asInstanceOf[Window | Unit]
+  inline def getBackgroundPage(): Window | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundPage")().asInstanceOf[Window | Unit]
   
   /* extension functions */
   /**
@@ -30,17 +29,14 @@ object `extension` {
     * @param path A path to a resource within an extension expressed relative to its install directory.
     * @returns The fully-qualified URL to the resource.
     */
-  @scala.inline
-  def getURL(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getURL")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getURL(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getURL")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Returns an array of the JavaScript 'window' objects for each of the pages running inside the current extension.
     * @returns Array of global objects
     */
-  @scala.inline
-  def getViews(): js.Array[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getViews")().asInstanceOf[js.Array[Window]]
-  @scala.inline
-  def getViews(fetchProperties: GetViewsFetchProperties): js.Array[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getViews")(fetchProperties.asInstanceOf[js.Any]).asInstanceOf[js.Array[Window]]
+  inline def getViews(): js.Array[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getViews")().asInstanceOf[js.Array[Window]]
+  inline def getViews(fetchProperties: GetViewsFetchProperties): js.Array[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getViews")(fetchProperties.asInstanceOf[js.Any]).asInstanceOf[js.Array[Window]]
   
   /**
     * True for content scripts running inside incognito tabs, and for extension pages running inside an incognito process. The latter only applies to extensions with 'split' incognito_behavior.
@@ -52,14 +48,12 @@ object `extension` {
   /**
     * Retrieves the state of the extension's access to the 'file://' scheme (as determined by the user-controlled 'Allow access to File URLs' checkbox.
     */
-  @scala.inline
-  def isAllowedFileSchemeAccess(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAllowedFileSchemeAccess")().asInstanceOf[js.Promise[Boolean]]
+  inline def isAllowedFileSchemeAccess(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAllowedFileSchemeAccess")().asInstanceOf[js.Promise[Boolean]]
   
   /**
     * Retrieves the state of the extension's access to Incognito-mode (as determined by the user-controlled 'Allowed in Incognito' checkbox.
     */
-  @scala.inline
-  def isAllowedIncognitoAccess(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAllowedIncognitoAccess")().asInstanceOf[js.Promise[Boolean]]
+  inline def isAllowedIncognitoAccess(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAllowedIncognitoAccess")().asInstanceOf[js.Promise[Boolean]]
   
   /* extension properties */
   /**
@@ -112,6 +106,5 @@ object `extension` {
     * Sets the value of the ap CGI parameter used in the extension's update URL. This value is ignored for extensions that are hosted in the browser vendor's store.
     * @deprecated Unsupported on Firefox at this time.
     */
-  @scala.inline
-  def setUpdateUrlData(data: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpdateUrlData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setUpdateUrlData(data: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpdateUrlData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

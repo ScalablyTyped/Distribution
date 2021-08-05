@@ -28,31 +28,23 @@ trait MedicationPackageContent
 }
 object MedicationPackageContent {
   
-  @scala.inline
-  def apply(): MedicationPackageContent = {
+  inline def apply(): MedicationPackageContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MedicationPackageContent]
   }
   
-  @scala.inline
-  implicit class MedicationPackageContentMutableBuilder[Self <: MedicationPackageContent] (val x: Self) extends AnyVal {
+  extension [Self <: MedicationPackageContent](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Quantity): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Quantity): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setItemCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "itemCodeableConcept", value.asInstanceOf[js.Any])
+    inline def setItemCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "itemCodeableConcept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCodeableConceptUndefined: Self = StObject.set(x, "itemCodeableConcept", js.undefined)
+    inline def setItemCodeableConceptUndefined: Self = StObject.set(x, "itemCodeableConcept", js.undefined)
     
-    @scala.inline
-    def setItemReference(value: Reference): Self = StObject.set(x, "itemReference", value.asInstanceOf[js.Any])
+    inline def setItemReference(value: Reference): Self = StObject.set(x, "itemReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemReferenceUndefined: Self = StObject.set(x, "itemReference", js.undefined)
+    inline def setItemReferenceUndefined: Self = StObject.set(x, "itemReference", js.undefined)
   }
 }

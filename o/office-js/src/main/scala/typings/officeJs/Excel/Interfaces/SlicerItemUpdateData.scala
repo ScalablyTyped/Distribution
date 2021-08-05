@@ -19,19 +19,15 @@ trait SlicerItemUpdateData extends StObject {
 }
 object SlicerItemUpdateData {
   
-  @scala.inline
-  def apply(): SlicerItemUpdateData = {
+  inline def apply(): SlicerItemUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlicerItemUpdateData]
   }
   
-  @scala.inline
-  implicit class SlicerItemUpdateDataMutableBuilder[Self <: SlicerItemUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: SlicerItemUpdateData](x: Self) {
     
-    @scala.inline
-    def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+    inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
+    inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
   }
 }

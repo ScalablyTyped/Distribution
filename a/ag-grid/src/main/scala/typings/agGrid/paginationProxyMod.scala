@@ -17,11 +17,11 @@ object paginationProxyMod {
     
     /* private */ def checkPageSize(): js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var gridPanel: js.Any = js.native
+    /* private */ var gridPanel: js.Any = js.native
     
     /* private */ def notActive(): js.Any = js.native
     
@@ -31,7 +31,7 @@ object paginationProxyMod {
     
     def registerGridComp(gridPanel: GridPanel): Unit = js.native
     
-    var scrollVisibleService: js.Any = js.native
+    /* private */ var scrollVisibleService: js.Any = js.native
   }
   
   @JSImport("ag-grid/dist/lib/rowModels/paginationProxy", "PaginationProxy")
@@ -40,17 +40,17 @@ object paginationProxyMod {
     extends BeanStub
        with IRowModel {
     
-    var active: js.Any = js.native
+    /* private */ var active: js.Any = js.native
     
-    var bottomRowBounds: js.Any = js.native
+    /* private */ var bottomRowBounds: js.Any = js.native
     
-    var bottomRowIndex: js.Any = js.native
+    /* private */ var bottomRowIndex: js.Any = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var currentPage: js.Any = js.native
+    /* private */ var currentPage: js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
     /** Iterate through each node. What this does depends on the model type. For clientSide, goes through
       * all nodes. For pagination, goes through current page. For virtualPage, goes through what's loaded in memory. */
@@ -120,9 +120,9 @@ object paginationProxyMod {
     
     def goToPreviousPage(): Unit = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     /** Returns true if this model has no rows, regardless of model filter. EG if rows present, but filtered
       * out, this still returns false. If it returns true, then the grid shows the 'no rows' overlay - but we
@@ -151,24 +151,24 @@ object paginationProxyMod {
     
     /* private */ def onModelUpdated(modelUpdatedEvent: js.Any): js.Any = js.native
     
-    var pageSize: js.Any = js.native
+    /* private */ var pageSize: js.Any = js.native
     
-    var pixelOffset: js.Any = js.native
+    /* private */ var pixelOffset: js.Any = js.native
     
     /* private */ def postConstruct(): js.Any = js.native
     
-    var rowModel: js.Any = js.native
+    /* private */ var rowModel: js.Any = js.native
     
-    var selectionController: js.Any = js.native
+    /* private */ var selectionController: js.Any = js.native
     
     /* private */ def setIndexesAndBounds(): js.Any = js.native
     
     /* private */ def setPageSize(): js.Any = js.native
     
-    var topRowBounds: js.Any = js.native
+    /* private */ var topRowBounds: js.Any = js.native
     
-    var topRowIndex: js.Any = js.native
+    /* private */ var topRowIndex: js.Any = js.native
     
-    var totalPages: js.Any = js.native
+    /* private */ var totalPages: js.Any = js.native
   }
 }

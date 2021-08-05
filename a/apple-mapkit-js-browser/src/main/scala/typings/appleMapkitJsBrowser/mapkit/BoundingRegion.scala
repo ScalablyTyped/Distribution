@@ -42,8 +42,7 @@ trait BoundingRegion extends StObject {
 }
 object BoundingRegion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copy: () => BoundingRegion,
     eastLongitude: Double,
     northLatitude: Double,
@@ -55,25 +54,18 @@ object BoundingRegion {
     __obj.asInstanceOf[BoundingRegion]
   }
   
-  @scala.inline
-  implicit class BoundingRegionMutableBuilder[Self <: BoundingRegion] (val x: Self) extends AnyVal {
+  extension [Self <: BoundingRegion](x: Self) {
     
-    @scala.inline
-    def setCopy(value: () => BoundingRegion): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => BoundingRegion): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEastLongitude(value: Double): Self = StObject.set(x, "eastLongitude", value.asInstanceOf[js.Any])
+    inline def setEastLongitude(value: Double): Self = StObject.set(x, "eastLongitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNorthLatitude(value: Double): Self = StObject.set(x, "northLatitude", value.asInstanceOf[js.Any])
+    inline def setNorthLatitude(value: Double): Self = StObject.set(x, "northLatitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSouthLatitude(value: Double): Self = StObject.set(x, "southLatitude", value.asInstanceOf[js.Any])
+    inline def setSouthLatitude(value: Double): Self = StObject.set(x, "southLatitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToCoordinateRegion(value: () => CoordinateRegion): Self = StObject.set(x, "toCoordinateRegion", js.Any.fromFunction0(value))
+    inline def setToCoordinateRegion(value: () => CoordinateRegion): Self = StObject.set(x, "toCoordinateRegion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWestLongitude(value: Double): Self = StObject.set(x, "westLongitude", value.asInstanceOf[js.Any])
+    inline def setWestLongitude(value: Double): Self = StObject.set(x, "westLongitude", value.asInstanceOf[js.Any])
   }
 }

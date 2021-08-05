@@ -30,8 +30,7 @@ trait RequestRoute extends StObject {
 }
 object RequestRoute {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     auth: Access,
     fingerprint: String,
     method: HTTP_METHODS_PARTIAL,
@@ -43,34 +42,24 @@ object RequestRoute {
     __obj.asInstanceOf[RequestRoute]
   }
   
-  @scala.inline
-  implicit class RequestRouteMutableBuilder[Self <: RequestRoute] (val x: Self) extends AnyVal {
+  extension [Self <: RequestRoute](x: Self) {
     
-    @scala.inline
-    def setAuth(value: Access): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: Access): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: HTTP_METHODS_PARTIAL): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: HTTP_METHODS_PARTIAL): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealm(value: ServerRealm): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
+    inline def setRealm(value: ServerRealm): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettings(value: RouteSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: RouteSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVhost(value: String | js.Array[String]): Self = StObject.set(x, "vhost", value.asInstanceOf[js.Any])
+    inline def setVhost(value: String | js.Array[String]): Self = StObject.set(x, "vhost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVhostUndefined: Self = StObject.set(x, "vhost", js.undefined)
+    inline def setVhostUndefined: Self = StObject.set(x, "vhost", js.undefined)
     
-    @scala.inline
-    def setVhostVarargs(value: String*): Self = StObject.set(x, "vhost", js.Array(value :_*))
+    inline def setVhostVarargs(value: String*): Self = StObject.set(x, "vhost", js.Array(value :_*))
   }
 }

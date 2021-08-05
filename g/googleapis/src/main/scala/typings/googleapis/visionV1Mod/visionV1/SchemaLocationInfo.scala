@@ -16,19 +16,15 @@ trait SchemaLocationInfo extends StObject {
 }
 object SchemaLocationInfo {
   
-  @scala.inline
-  def apply(): SchemaLocationInfo = {
+  inline def apply(): SchemaLocationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLocationInfo]
   }
   
-  @scala.inline
-  implicit class SchemaLocationInfoMutableBuilder[Self <: SchemaLocationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLocationInfo](x: Self) {
     
-    @scala.inline
-    def setLatLng(value: SchemaLatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
+    inline def setLatLng(value: SchemaLatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
+    inline def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
   }
 }

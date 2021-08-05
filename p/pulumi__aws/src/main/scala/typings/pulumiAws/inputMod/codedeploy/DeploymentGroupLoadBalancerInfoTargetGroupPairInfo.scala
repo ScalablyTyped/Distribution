@@ -24,8 +24,7 @@ trait DeploymentGroupLoadBalancerInfoTargetGroupPairInfo extends StObject {
 }
 object DeploymentGroupLoadBalancerInfoTargetGroupPairInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     prodTrafficRoute: Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute],
     targetGroups: Input[js.Array[Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup]]]
   ): DeploymentGroupLoadBalancerInfoTargetGroupPairInfo = {
@@ -33,22 +32,16 @@ object DeploymentGroupLoadBalancerInfoTargetGroupPairInfo {
     __obj.asInstanceOf[DeploymentGroupLoadBalancerInfoTargetGroupPairInfo]
   }
   
-  @scala.inline
-  implicit class DeploymentGroupLoadBalancerInfoTargetGroupPairInfoMutableBuilder[Self <: DeploymentGroupLoadBalancerInfoTargetGroupPairInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentGroupLoadBalancerInfoTargetGroupPairInfo](x: Self) {
     
-    @scala.inline
-    def setProdTrafficRoute(value: Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute]): Self = StObject.set(x, "prodTrafficRoute", value.asInstanceOf[js.Any])
+    inline def setProdTrafficRoute(value: Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute]): Self = StObject.set(x, "prodTrafficRoute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroups(value: Input[js.Array[Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup]]]): Self = StObject.set(x, "targetGroups", value.asInstanceOf[js.Any])
+    inline def setTargetGroups(value: Input[js.Array[Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup]]]): Self = StObject.set(x, "targetGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupsVarargs(value: Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup]*): Self = StObject.set(x, "targetGroups", js.Array(value :_*))
+    inline def setTargetGroupsVarargs(value: Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup]*): Self = StObject.set(x, "targetGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setTestTrafficRoute(value: Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute]): Self = StObject.set(x, "testTrafficRoute", value.asInstanceOf[js.Any])
+    inline def setTestTrafficRoute(value: Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute]): Self = StObject.set(x, "testTrafficRoute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestTrafficRouteUndefined: Self = StObject.set(x, "testTrafficRoute", js.undefined)
+    inline def setTestTrafficRouteUndefined: Self = StObject.set(x, "testTrafficRoute", js.undefined)
   }
 }

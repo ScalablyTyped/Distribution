@@ -12,16 +12,13 @@ trait IfParams
 }
 object IfParams {
   
-  @scala.inline
-  def apply(failingKeyword: String): IfParams = {
+  inline def apply(failingKeyword: String): IfParams = {
     val __obj = js.Dynamic.literal(failingKeyword = failingKeyword.asInstanceOf[js.Any])
     __obj.asInstanceOf[IfParams]
   }
   
-  @scala.inline
-  implicit class IfParamsMutableBuilder[Self <: IfParams] (val x: Self) extends AnyVal {
+  extension [Self <: IfParams](x: Self) {
     
-    @scala.inline
-    def setFailingKeyword(value: String): Self = StObject.set(x, "failingKeyword", value.asInstanceOf[js.Any])
+    inline def setFailingKeyword(value: String): Self = StObject.set(x, "failingKeyword", value.asInstanceOf[js.Any])
   }
 }

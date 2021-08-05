@@ -20,20 +20,20 @@ object tokenMatcherMod {
     
     def _match_DocStringSeparator(token: typings.gherkin.tokenMod.default, separator: String, isOpen: Boolean): Boolean = js.native
     
-    var activeDocStringSeparator: js.Any = js.native
+    /* private */ var activeDocStringSeparator: js.Any = js.native
     
     def changeDialect(newDialectName: String): Unit = js.native
     def changeDialect(newDialectName: String, location: ILocation): Unit = js.native
     
-    val defaultDialectName: js.Any = js.native
+    /* private */ val defaultDialectName: js.Any = js.native
     
-    var dialect: js.Any = js.native
+    /* private */ var dialect: js.Any = js.native
     
-    var dialectName: js.Any = js.native
+    /* private */ var dialectName: js.Any = js.native
     
-    var indentToRemove: js.Any = js.native
+    /* private */ var indentToRemove: js.Any = js.native
     
-    var matchTitleLine: js.Any = js.native
+    /* private */ var matchTitleLine: js.Any = js.native
     
     def match_BackgroundLine(token: typings.gherkin.tokenMod.default): Boolean = js.native
     
@@ -65,8 +65,8 @@ object tokenMatcherMod {
     
     def reset(): Unit = js.native
     
-    var setTokenMatched: js.Any = js.native
+    /* private */ var setTokenMatched: js.Any = js.native
     
-    var unescapeDocString: js.Any = js.native
+    /* private */ var unescapeDocString: js.Any = js.native
   }
 }

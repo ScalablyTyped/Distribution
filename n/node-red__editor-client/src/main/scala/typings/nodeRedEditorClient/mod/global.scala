@@ -185,20 +185,16 @@ object global {
   }
   object JQuery {
     
-    @scala.inline
-    def apply[TElement](editableList: WidgetEditableList, typedInput: WidgetTypedInput): JQuery[TElement] = {
+    inline def apply[TElement](editableList: WidgetEditableList, typedInput: WidgetTypedInput): JQuery[TElement] = {
       val __obj = js.Dynamic.literal(editableList = editableList.asInstanceOf[js.Any], typedInput = typedInput.asInstanceOf[js.Any])
       __obj.asInstanceOf[JQuery[TElement]]
     }
     
-    @scala.inline
-    implicit class JQueryMutableBuilder[Self <: JQuery[?], TElement] (val x: Self & JQuery[TElement]) extends AnyVal {
+    extension [Self <: JQuery[?], TElement](x: Self & JQuery[TElement]) {
       
-      @scala.inline
-      def setEditableList(value: WidgetEditableList): Self = StObject.set(x, "editableList", value.asInstanceOf[js.Any])
+      inline def setEditableList(value: WidgetEditableList): Self = StObject.set(x, "editableList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypedInput(value: WidgetTypedInput): Self = StObject.set(x, "typedInput", value.asInstanceOf[js.Any])
+      inline def setTypedInput(value: WidgetTypedInput): Self = StObject.set(x, "typedInput", value.asInstanceOf[js.Any])
     }
   }
 }

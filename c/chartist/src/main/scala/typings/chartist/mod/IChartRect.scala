@@ -22,8 +22,7 @@ trait IChartRect extends StObject {
 }
 object IChartRect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     height: () => Unit,
     padding: IChartPadding,
     width: () => Unit,
@@ -36,28 +35,20 @@ object IChartRect {
     __obj.asInstanceOf[IChartRect]
   }
   
-  @scala.inline
-  implicit class IChartRectMutableBuilder[Self <: IChartRect] (val x: Self) extends AnyVal {
+  extension [Self <: IChartRect](x: Self) {
     
-    @scala.inline
-    def setHeight(value: () => Unit): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
+    inline def setHeight(value: () => Unit): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPadding(value: IChartPadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: IChartPadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: () => Unit): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
+    inline def setWidth(value: () => Unit): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+    inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+    inline def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+    inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
   }
 }

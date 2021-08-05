@@ -15,25 +15,19 @@ trait ParsedArguments
 }
 object ParsedArguments {
   
-  @scala.inline
-  def apply(argv: js.Array[String], rest: js.Array[String]): ParsedArguments = {
+  inline def apply(argv: js.Array[String], rest: js.Array[String]): ParsedArguments = {
     val __obj = js.Dynamic.literal(argv = argv.asInstanceOf[js.Any], rest = rest.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedArguments]
   }
   
-  @scala.inline
-  implicit class ParsedArgumentsMutableBuilder[Self <: ParsedArguments] (val x: Self) extends AnyVal {
+  extension [Self <: ParsedArguments](x: Self) {
     
-    @scala.inline
-    def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
+    inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+    inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
     
-    @scala.inline
-    def setRest(value: js.Array[String]): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
+    inline def setRest(value: js.Array[String]): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestVarargs(value: String*): Self = StObject.set(x, "rest", js.Array(value :_*))
+    inline def setRestVarargs(value: String*): Self = StObject.set(x, "rest", js.Array(value :_*))
   }
 }

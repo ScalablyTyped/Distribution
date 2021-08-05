@@ -20,8 +20,7 @@ trait IsToolshown extends StObject {
 }
 object IsToolshown {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isFullscreen: Boolean,
     isToolshown: Boolean,
     panelPosition: bottom | right,
@@ -32,22 +31,16 @@ object IsToolshown {
     __obj.asInstanceOf[IsToolshown]
   }
   
-  @scala.inline
-  implicit class IsToolshownMutableBuilder[Self <: IsToolshown] (val x: Self) extends AnyVal {
+  extension [Self <: IsToolshown](x: Self) {
     
-    @scala.inline
-    def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
+    inline def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsToolshown(value: Boolean): Self = StObject.set(x, "isToolshown", value.asInstanceOf[js.Any])
+    inline def setIsToolshown(value: Boolean): Self = StObject.set(x, "isToolshown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanelPosition(value: bottom | right): Self = StObject.set(x, "panelPosition", value.asInstanceOf[js.Any])
+    inline def setPanelPosition(value: bottom | right): Self = StObject.set(x, "panelPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowNav(value: Boolean): Self = StObject.set(x, "showNav", value.asInstanceOf[js.Any])
+    inline def setShowNav(value: Boolean): Self = StObject.set(x, "showNav", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPanel(value: Boolean): Self = StObject.set(x, "showPanel", value.asInstanceOf[js.Any])
+    inline def setShowPanel(value: Boolean): Self = StObject.set(x, "showPanel", value.asInstanceOf[js.Any])
   }
 }

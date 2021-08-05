@@ -18,22 +18,17 @@ trait DeleteGameServerGroupInput extends StObject {
 }
 object DeleteGameServerGroupInput {
   
-  @scala.inline
-  def apply(GameServerGroupName: GameServerGroupNameOrArn): DeleteGameServerGroupInput = {
+  inline def apply(GameServerGroupName: GameServerGroupNameOrArn): DeleteGameServerGroupInput = {
     val __obj = js.Dynamic.literal(GameServerGroupName = GameServerGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGameServerGroupInput]
   }
   
-  @scala.inline
-  implicit class DeleteGameServerGroupInputMutableBuilder[Self <: DeleteGameServerGroupInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGameServerGroupInput](x: Self) {
     
-    @scala.inline
-    def setDeleteOption(value: GameServerGroupDeleteOption): Self = StObject.set(x, "DeleteOption", value.asInstanceOf[js.Any])
+    inline def setDeleteOption(value: GameServerGroupDeleteOption): Self = StObject.set(x, "DeleteOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteOptionUndefined: Self = StObject.set(x, "DeleteOption", js.undefined)
+    inline def setDeleteOptionUndefined: Self = StObject.set(x, "DeleteOption", js.undefined)
     
-    @scala.inline
-    def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
+    inline def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
   }
 }

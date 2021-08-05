@@ -29,47 +29,34 @@ trait Station
 }
 object Station {
   
-  @scala.inline
-  def apply(artwork: Artwork, id: String, isLive: Boolean, name: String, url: String): Station = {
+  inline def apply(artwork: Artwork, id: String, isLive: Boolean, name: String, url: String): Station = {
     val __obj = js.Dynamic.literal(artwork = artwork.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isLive = isLive.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("stations")
     __obj.asInstanceOf[Station]
   }
   
-  @scala.inline
-  implicit class StationMutableBuilder[Self <: Station] (val x: Self) extends AnyVal {
+  extension [Self <: Station](x: Self) {
     
-    @scala.inline
-    def setArtwork(value: Artwork): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
+    inline def setArtwork(value: Artwork): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInMillis(value: Double): Self = StObject.set(x, "durationInMillis", value.asInstanceOf[js.Any])
+    inline def setDurationInMillis(value: Double): Self = StObject.set(x, "durationInMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInMillisUndefined: Self = StObject.set(x, "durationInMillis", js.undefined)
+    inline def setDurationInMillisUndefined: Self = StObject.set(x, "durationInMillis", js.undefined)
     
-    @scala.inline
-    def setEditorialNotes(value: EditorialNotes): Self = StObject.set(x, "editorialNotes", value.asInstanceOf[js.Any])
+    inline def setEditorialNotes(value: EditorialNotes): Self = StObject.set(x, "editorialNotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorialNotesUndefined: Self = StObject.set(x, "editorialNotes", js.undefined)
+    inline def setEditorialNotesUndefined: Self = StObject.set(x, "editorialNotes", js.undefined)
     
-    @scala.inline
-    def setEpisodeNumber(value: Double): Self = StObject.set(x, "episodeNumber", value.asInstanceOf[js.Any])
+    inline def setEpisodeNumber(value: Double): Self = StObject.set(x, "episodeNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpisodeNumberUndefined: Self = StObject.set(x, "episodeNumber", js.undefined)
+    inline def setEpisodeNumberUndefined: Self = StObject.set(x, "episodeNumber", js.undefined)
     
-    @scala.inline
-    def setIsLive(value: Boolean): Self = StObject.set(x, "isLive", value.asInstanceOf[js.Any])
+    inline def setIsLive(value: Boolean): Self = StObject.set(x, "isLive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: stations): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: stations): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

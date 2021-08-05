@@ -12,11 +12,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isError[Type /* <: String */, CustomError /* <: Error */, Meta](action: js.Any): /* is flux-standard-action.flux-standard-action.ErrorFluxStandardAction<Type, CustomError, Meta> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(action.asInstanceOf[js.Any]).asInstanceOf[/* is flux-standard-action.flux-standard-action.ErrorFluxStandardAction<Type, CustomError, Meta> */ Boolean]
+  inline def isError[Type /* <: String */, CustomError /* <: Error */, Meta](action: js.Any): /* is flux-standard-action.flux-standard-action.ErrorFluxStandardAction<Type, CustomError, Meta> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(action.asInstanceOf[js.Any]).asInstanceOf[/* is flux-standard-action.flux-standard-action.ErrorFluxStandardAction<Type, CustomError, Meta> */ Boolean]
   
-  @scala.inline
-  def isFSA[Type /* <: String */, Payload, Meta](action: js.Any): /* is flux-standard-action.flux-standard-action.FluxStandardAction<Type, Payload, Meta> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFSA")(action.asInstanceOf[js.Any]).asInstanceOf[/* is flux-standard-action.flux-standard-action.FluxStandardAction<Type, Payload, Meta> */ Boolean]
+  inline def isFSA[Type /* <: String */, Payload, Meta](action: js.Any): /* is flux-standard-action.flux-standard-action.FluxStandardAction<Type, Payload, Meta> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFSA")(action.asInstanceOf[js.Any]).asInstanceOf[/* is flux-standard-action.flux-standard-action.FluxStandardAction<Type, Payload, Meta> */ Boolean]
   
   type ErrorFSA[CustomError /* <: Error */, Meta, Type /* <: String */] = ErrorFluxStandardAction[Type, CustomError, Meta]
   
@@ -40,18 +38,15 @@ object mod {
   }
   object ErrorFluxStandardAction {
     
-    @scala.inline
-    def apply[Type /* <: String */, CustomError /* <: Error */, Meta](`type`: Type): ErrorFluxStandardAction[Type, CustomError, Meta] = {
+    inline def apply[Type /* <: String */, CustomError /* <: Error */, Meta](`type`: Type): ErrorFluxStandardAction[Type, CustomError, Meta] = {
       val __obj = js.Dynamic.literal(error = true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorFluxStandardAction[Type, CustomError, Meta]]
     }
     
-    @scala.inline
-    implicit class ErrorFluxStandardActionMutableBuilder[Self <: ErrorFluxStandardAction[?, ?, ?], Type /* <: String */, CustomError /* <: Error */, Meta] (val x: Self & (ErrorFluxStandardAction[Type, CustomError, Meta])) extends AnyVal {
+    extension [Self <: ErrorFluxStandardAction[?, ?, ?], Type /* <: String */, CustomError /* <: Error */, Meta](x: Self & (ErrorFluxStandardAction[Type, CustomError, Meta])) {
       
-      @scala.inline
-      def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,8 +60,7 @@ object mod {
        with ErrorFluxStandardAction[Type, CustomError, Meta]
   object ErrorFluxStandardActionWithMeta {
     
-    @scala.inline
-    def apply[Type /* <: String */, CustomError /* <: Error */, Meta](`type`: Type): ErrorFluxStandardActionWithMeta[Type, CustomError, Meta] = {
+    inline def apply[Type /* <: String */, CustomError /* <: Error */, Meta](`type`: Type): ErrorFluxStandardActionWithMeta[Type, CustomError, Meta] = {
       val __obj = js.Dynamic.literal(error = true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorFluxStandardActionWithMeta[Type, CustomError, Meta]]
@@ -81,8 +75,7 @@ object mod {
        with ErrorFluxStandardAction[Type, CustomError, Meta]
   object ErrorFluxStandardActionWithPayload {
     
-    @scala.inline
-    def apply[Type /* <: String */, CustomError /* <: Error */, Meta](`type`: Type): ErrorFluxStandardActionWithPayload[Type, CustomError, Meta] = {
+    inline def apply[Type /* <: String */, CustomError /* <: Error */, Meta](`type`: Type): ErrorFluxStandardActionWithPayload[Type, CustomError, Meta] = {
       val __obj = js.Dynamic.literal(error = true)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorFluxStandardActionWithPayload[Type, CustomError, Meta]]
@@ -136,36 +129,27 @@ object mod {
   }
   object FluxStandardAction {
     
-    @scala.inline
-    def apply[Type /* <: String */, Payload, Meta](`type`: Type): FluxStandardAction[Type, Payload, Meta] = {
+    inline def apply[Type /* <: String */, Payload, Meta](`type`: Type): FluxStandardAction[Type, Payload, Meta] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FluxStandardAction[Type, Payload, Meta]]
     }
     
-    @scala.inline
-    implicit class FluxStandardActionMutableBuilder[Self <: FluxStandardAction[?, ?, ?], Type /* <: String */, Payload, Meta] (val x: Self & (FluxStandardAction[Type, Payload, Meta])) extends AnyVal {
+    extension [Self <: FluxStandardAction[?, ?, ?], Type /* <: String */, Payload, Meta](x: Self & (FluxStandardAction[Type, Payload, Meta])) {
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -178,29 +162,25 @@ object mod {
   trait FluxStandardActionAuto[Type /* <: String */, Payload, Meta] extends StObject
   object FluxStandardActionAuto {
     
-    @scala.inline
-    def FluxStandardAction[Type /* <: String */, Payload, Meta](`type`: Type): typings.fluxStandardAction.mod.FluxStandardAction[Type, Payload, Meta] = {
+    inline def FluxStandardAction[Type /* <: String */, Payload, Meta](`type`: Type): typings.fluxStandardAction.mod.FluxStandardAction[Type, Payload, Meta] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.fluxStandardAction.mod.FluxStandardAction[Type, Payload, Meta]]
     }
     
-    @scala.inline
-    def FluxStandardActionWithMeta[Type /* <: String */, Payload, Meta](meta: Meta, `type`: Type): typings.fluxStandardAction.mod.FluxStandardActionWithMeta[Type, Payload, Meta] = {
+    inline def FluxStandardActionWithMeta[Type /* <: String */, Payload, Meta](meta: Meta, `type`: Type): typings.fluxStandardAction.mod.FluxStandardActionWithMeta[Type, Payload, Meta] = {
       val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.fluxStandardAction.mod.FluxStandardActionWithMeta[Type, Payload, Meta]]
     }
     
-    @scala.inline
-    def FluxStandardActionWithPayload[Type /* <: String */, Payload, Meta](payload: Payload, `type`: Type): typings.fluxStandardAction.mod.FluxStandardActionWithPayload[Type, Payload, Meta] = {
+    inline def FluxStandardActionWithPayload[Type /* <: String */, Payload, Meta](payload: Payload, `type`: Type): typings.fluxStandardAction.mod.FluxStandardActionWithPayload[Type, Payload, Meta] = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.fluxStandardAction.mod.FluxStandardActionWithPayload[Type, Payload, Meta]]
     }
     
-    @scala.inline
-    def FluxStandardActionWithPayloadAndMeta[Type /* <: String */, Payload, Meta](payload: Payload, `type`: Type): typings.fluxStandardAction.mod.FluxStandardActionWithPayloadAndMeta[Type, Payload, Meta] = {
+    inline def FluxStandardActionWithPayloadAndMeta[Type /* <: String */, Payload, Meta](payload: Payload, `type`: Type): typings.fluxStandardAction.mod.FluxStandardActionWithPayloadAndMeta[Type, Payload, Meta] = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.fluxStandardAction.mod.FluxStandardActionWithPayloadAndMeta[Type, Payload, Meta]]
@@ -221,18 +201,15 @@ object mod {
   }
   object FluxStandardActionWithMeta {
     
-    @scala.inline
-    def apply[Type /* <: String */, Payload, Meta](meta: Meta, `type`: Type): FluxStandardActionWithMeta[Type, Payload, Meta] = {
+    inline def apply[Type /* <: String */, Payload, Meta](meta: Meta, `type`: Type): FluxStandardActionWithMeta[Type, Payload, Meta] = {
       val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FluxStandardActionWithMeta[Type, Payload, Meta]]
     }
     
-    @scala.inline
-    implicit class FluxStandardActionWithMetaMutableBuilder[Self <: FluxStandardActionWithMeta[?, ?, ?], Type /* <: String */, Payload, Meta] (val x: Self & (FluxStandardActionWithMeta[Type, Payload, Meta])) extends AnyVal {
+    extension [Self <: FluxStandardActionWithMeta[?, ?, ?], Type /* <: String */, Payload, Meta](x: Self & (FluxStandardActionWithMeta[Type, Payload, Meta])) {
       
-      @scala.inline
-      def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
   
@@ -253,18 +230,15 @@ object mod {
   }
   object FluxStandardActionWithPayload {
     
-    @scala.inline
-    def apply[Type /* <: String */, Payload, Meta](payload: Payload, `type`: Type): FluxStandardActionWithPayload[Type, Payload, Meta] = {
+    inline def apply[Type /* <: String */, Payload, Meta](payload: Payload, `type`: Type): FluxStandardActionWithPayload[Type, Payload, Meta] = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FluxStandardActionWithPayload[Type, Payload, Meta]]
     }
     
-    @scala.inline
-    implicit class FluxStandardActionWithPayloadMutableBuilder[Self <: FluxStandardActionWithPayload[?, ?, ?], Type /* <: String */, Payload, Meta] (val x: Self & (FluxStandardActionWithPayload[Type, Payload, Meta])) extends AnyVal {
+    extension [Self <: FluxStandardActionWithPayload[?, ?, ?], Type /* <: String */, Payload, Meta](x: Self & (FluxStandardActionWithPayload[Type, Payload, Meta])) {
       
-      @scala.inline
-      def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
@@ -277,8 +251,7 @@ object mod {
        with FluxStandardActionWithPayload[Type, Payload, Meta]
   object FluxStandardActionWithPayloadAndMeta {
     
-    @scala.inline
-    def apply[Type /* <: String */, Payload, Meta](payload: Payload, `type`: Type): FluxStandardActionWithPayloadAndMeta[Type, Payload, Meta] = {
+    inline def apply[Type /* <: String */, Payload, Meta](payload: Payload, `type`: Type): FluxStandardActionWithPayloadAndMeta[Type, Payload, Meta] = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FluxStandardActionWithPayloadAndMeta[Type, Payload, Meta]]

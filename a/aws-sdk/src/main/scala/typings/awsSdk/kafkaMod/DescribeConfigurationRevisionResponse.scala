@@ -44,43 +44,31 @@ trait DescribeConfigurationRevisionResponse extends StObject {
 }
 object DescribeConfigurationRevisionResponse {
   
-  @scala.inline
-  def apply(): DescribeConfigurationRevisionResponse = {
+  inline def apply(): DescribeConfigurationRevisionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConfigurationRevisionResponse]
   }
   
-  @scala.inline
-  implicit class DescribeConfigurationRevisionResponseMutableBuilder[Self <: DescribeConfigurationRevisionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConfigurationRevisionResponse](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: timestampIso8601): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: timestampIso8601): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setRevision(value: long): Self = StObject.set(x, "Revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: long): Self = StObject.set(x, "Revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionUndefined: Self = StObject.set(x, "Revision", js.undefined)
+    inline def setRevisionUndefined: Self = StObject.set(x, "Revision", js.undefined)
     
-    @scala.inline
-    def setServerProperties(value: _Blob): Self = StObject.set(x, "ServerProperties", value.asInstanceOf[js.Any])
+    inline def setServerProperties(value: _Blob): Self = StObject.set(x, "ServerProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerPropertiesUndefined: Self = StObject.set(x, "ServerProperties", js.undefined)
+    inline def setServerPropertiesUndefined: Self = StObject.set(x, "ServerProperties", js.undefined)
   }
 }

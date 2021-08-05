@@ -22,16 +22,12 @@ object TSQualifiedName {
   @js.native
   def apply(left: TSEntityName, right: Identifier_): TSQualifiedName = js.native
   
-  @scala.inline
-  implicit class TSQualifiedNameMutableBuilder[Self <: TSQualifiedName] (val x: Self) extends AnyVal {
+  extension [Self <: TSQualifiedName](x: Self) {
     
-    @scala.inline
-    def setLeft(value: TSEntityName): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: TSEntityName): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Identifier_): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Identifier_): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSQualifiedName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSQualifiedName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

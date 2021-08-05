@@ -77,98 +77,68 @@ object ReactCodeMirror {
   }
   object ReactCodeMirrorProps {
     
-    @scala.inline
-    def apply(): ReactCodeMirrorProps = {
+    inline def apply(): ReactCodeMirrorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactCodeMirrorProps]
     }
     
-    @scala.inline
-    implicit class ReactCodeMirrorPropsMutableBuilder[Self <: ReactCodeMirrorProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactCodeMirrorProps](x: Self) {
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setAutoSave(value: Boolean): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
+      inline def setAutoSave(value: Boolean): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
+      inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCodeMirrorInstance(value: (/* host */ js.Any, /* options */ js.UndefOr[EditorConfiguration]) => Editor): Self = StObject.set(x, "codeMirrorInstance", js.Any.fromFunction2(value))
+      inline def setCodeMirrorInstance(value: (/* host */ js.Any, /* options */ js.UndefOr[EditorConfiguration]) => Editor): Self = StObject.set(x, "codeMirrorInstance", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCodeMirrorInstanceUndefined: Self = StObject.set(x, "codeMirrorInstance", js.undefined)
+      inline def setCodeMirrorInstanceUndefined: Self = StObject.set(x, "codeMirrorInstance", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* newValue */ String, /* change */ EditorChange) => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* newValue */ String, /* change */ EditorChange) => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnCursorActivity(value: /* codemirror */ Editor => js.Any): Self = StObject.set(x, "onCursorActivity", js.Any.fromFunction1(value))
+      inline def setOnCursorActivity(value: /* codemirror */ Editor => js.Any): Self = StObject.set(x, "onCursorActivity", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCursorActivityUndefined: Self = StObject.set(x, "onCursorActivity", js.undefined)
+      inline def setOnCursorActivityUndefined: Self = StObject.set(x, "onCursorActivity", js.undefined)
       
-      @scala.inline
-      def setOnFocusChange(value: /* focused */ Boolean => js.Any): Self = StObject.set(x, "onFocusChange", js.Any.fromFunction1(value))
+      inline def setOnFocusChange(value: /* focused */ Boolean => js.Any): Self = StObject.set(x, "onFocusChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusChangeUndefined: Self = StObject.set(x, "onFocusChange", js.undefined)
+      inline def setOnFocusChangeUndefined: Self = StObject.set(x, "onFocusChange", js.undefined)
       
-      @scala.inline
-      def setOnScroll(value: /* scrollInfo */ ScrollInfo => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: /* scrollInfo */ ScrollInfo => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+      inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      @scala.inline
-      def setOptions(value: EditorConfiguration): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: EditorConfiguration): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPreserveScrollPosition(value: Boolean): Self = StObject.set(x, "preserveScrollPosition", value.asInstanceOf[js.Any])
+      inline def setPreserveScrollPosition(value: Boolean): Self = StObject.set(x, "preserveScrollPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveScrollPositionUndefined: Self = StObject.set(x, "preserveScrollPosition", js.undefined)
+      inline def setPreserveScrollPositionUndefined: Self = StObject.set(x, "preserveScrollPosition", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

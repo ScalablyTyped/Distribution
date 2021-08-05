@@ -23,28 +23,21 @@ trait ListLoggerDefinitionVersionsRequest extends StObject {
 }
 object ListLoggerDefinitionVersionsRequest {
   
-  @scala.inline
-  def apply(LoggerDefinitionId: string): ListLoggerDefinitionVersionsRequest = {
+  inline def apply(LoggerDefinitionId: string): ListLoggerDefinitionVersionsRequest = {
     val __obj = js.Dynamic.literal(LoggerDefinitionId = LoggerDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLoggerDefinitionVersionsRequest]
   }
   
-  @scala.inline
-  implicit class ListLoggerDefinitionVersionsRequestMutableBuilder[Self <: ListLoggerDefinitionVersionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListLoggerDefinitionVersionsRequest](x: Self) {
     
-    @scala.inline
-    def setLoggerDefinitionId(value: string): Self = StObject.set(x, "LoggerDefinitionId", value.asInstanceOf[js.Any])
+    inline def setLoggerDefinitionId(value: string): Self = StObject.set(x, "LoggerDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

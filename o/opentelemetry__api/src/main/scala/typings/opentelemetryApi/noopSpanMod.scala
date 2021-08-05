@@ -19,6 +19,6 @@ object noopSpanMod {
        with Span {
     def this(_spanContext: SpanContext) = this()
     
-    val _spanContext: js.Any = js.native
+    /* private */ val _spanContext: js.Any = js.native
   }
 }

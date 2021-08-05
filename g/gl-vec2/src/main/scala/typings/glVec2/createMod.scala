@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object createMod {
   
-  @scala.inline
-  def apply(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[Double]]
+  inline def apply(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[Double]]
   
   @JSImport("gl-vec2/create", JSImport.Namespace)
   @js.native

@@ -56,8 +56,7 @@ trait XSessionManagerClient
 }
 object XSessionManagerClient {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addSessionManagerListener: XSessionManagerListener => Unit,
     cancelShutdown: () => Boolean,
@@ -72,25 +71,18 @@ object XSessionManagerClient {
     __obj.asInstanceOf[XSessionManagerClient]
   }
   
-  @scala.inline
-  implicit class XSessionManagerClientMutableBuilder[Self <: XSessionManagerClient] (val x: Self) extends AnyVal {
+  extension [Self <: XSessionManagerClient](x: Self) {
     
-    @scala.inline
-    def setAddSessionManagerListener(value: XSessionManagerListener => Unit): Self = StObject.set(x, "addSessionManagerListener", js.Any.fromFunction1(value))
+    inline def setAddSessionManagerListener(value: XSessionManagerListener => Unit): Self = StObject.set(x, "addSessionManagerListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCancelShutdown(value: () => Boolean): Self = StObject.set(x, "cancelShutdown", js.Any.fromFunction0(value))
+    inline def setCancelShutdown(value: () => Boolean): Self = StObject.set(x, "cancelShutdown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInteractionDone(value: XSessionManagerListener => Unit): Self = StObject.set(x, "interactionDone", js.Any.fromFunction1(value))
+    inline def setInteractionDone(value: XSessionManagerListener => Unit): Self = StObject.set(x, "interactionDone", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryInteraction(value: XSessionManagerListener => Unit): Self = StObject.set(x, "queryInteraction", js.Any.fromFunction1(value))
+    inline def setQueryInteraction(value: XSessionManagerListener => Unit): Self = StObject.set(x, "queryInteraction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveSessionManagerListener(value: XSessionManagerListener => Unit): Self = StObject.set(x, "removeSessionManagerListener", js.Any.fromFunction1(value))
+    inline def setRemoveSessionManagerListener(value: XSessionManagerListener => Unit): Self = StObject.set(x, "removeSessionManagerListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSaveDone(value: XSessionManagerListener => Unit): Self = StObject.set(x, "saveDone", js.Any.fromFunction1(value))
+    inline def setSaveDone(value: XSessionManagerListener => Unit): Self = StObject.set(x, "saveDone", js.Any.fromFunction1(value))
   }
 }

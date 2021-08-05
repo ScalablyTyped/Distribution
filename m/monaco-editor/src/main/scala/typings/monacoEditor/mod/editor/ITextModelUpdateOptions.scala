@@ -16,37 +16,27 @@ trait ITextModelUpdateOptions extends StObject {
 }
 object ITextModelUpdateOptions {
   
-  @scala.inline
-  def apply(): ITextModelUpdateOptions = {
+  inline def apply(): ITextModelUpdateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITextModelUpdateOptions]
   }
   
-  @scala.inline
-  implicit class ITextModelUpdateOptionsMutableBuilder[Self <: ITextModelUpdateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ITextModelUpdateOptions](x: Self) {
     
-    @scala.inline
-    def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
+    inline def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentSizeUndefined: Self = StObject.set(x, "indentSize", js.undefined)
+    inline def setIndentSizeUndefined: Self = StObject.set(x, "indentSize", js.undefined)
     
-    @scala.inline
-    def setInsertSpaces(value: Boolean): Self = StObject.set(x, "insertSpaces", value.asInstanceOf[js.Any])
+    inline def setInsertSpaces(value: Boolean): Self = StObject.set(x, "insertSpaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertSpacesUndefined: Self = StObject.set(x, "insertSpaces", js.undefined)
+    inline def setInsertSpacesUndefined: Self = StObject.set(x, "insertSpaces", js.undefined)
     
-    @scala.inline
-    def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
+    inline def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
+    inline def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
     
-    @scala.inline
-    def setTrimAutoWhitespace(value: Boolean): Self = StObject.set(x, "trimAutoWhitespace", value.asInstanceOf[js.Any])
+    inline def setTrimAutoWhitespace(value: Boolean): Self = StObject.set(x, "trimAutoWhitespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrimAutoWhitespaceUndefined: Self = StObject.set(x, "trimAutoWhitespace", js.undefined)
+    inline def setTrimAutoWhitespaceUndefined: Self = StObject.set(x, "trimAutoWhitespace", js.undefined)
   }
 }

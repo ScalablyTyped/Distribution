@@ -17,34 +17,25 @@ trait OmaSetting extends StObject {
 }
 object OmaSetting {
   
-  @scala.inline
-  def apply(): OmaSetting = {
+  inline def apply(): OmaSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OmaSetting]
   }
   
-  @scala.inline
-  implicit class OmaSettingMutableBuilder[Self <: OmaSetting] (val x: Self) extends AnyVal {
+  extension [Self <: OmaSetting](x: Self) {
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setOmaUri(value: String): Self = StObject.set(x, "omaUri", value.asInstanceOf[js.Any])
+    inline def setOmaUri(value: String): Self = StObject.set(x, "omaUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOmaUriUndefined: Self = StObject.set(x, "omaUri", js.undefined)
+    inline def setOmaUriUndefined: Self = StObject.set(x, "omaUri", js.undefined)
   }
 }

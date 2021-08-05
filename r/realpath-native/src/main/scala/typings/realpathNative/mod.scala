@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(filepath: String): String = ^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(filepath: String): String = ^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("realpath-native", JSImport.Namespace)
   @js.native
@@ -16,6 +15,5 @@ object mod {
   @JSImport("realpath-native", "sync")
   @js.native
   def sync: js.Function1[/* filepath */ String, String] = js.native
-  @scala.inline
-  def sync_=(x: js.Function1[/* filepath */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sync")(x.asInstanceOf[js.Any])
+  inline def sync_=(x: js.Function1[/* filepath */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sync")(x.asInstanceOf[js.Any])
 }

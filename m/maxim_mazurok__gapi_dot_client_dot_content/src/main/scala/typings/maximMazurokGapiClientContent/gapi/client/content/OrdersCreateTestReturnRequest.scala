@@ -11,22 +11,17 @@ trait OrdersCreateTestReturnRequest extends StObject {
 }
 object OrdersCreateTestReturnRequest {
   
-  @scala.inline
-  def apply(): OrdersCreateTestReturnRequest = {
+  inline def apply(): OrdersCreateTestReturnRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrdersCreateTestReturnRequest]
   }
   
-  @scala.inline
-  implicit class OrdersCreateTestReturnRequestMutableBuilder[Self <: OrdersCreateTestReturnRequest] (val x: Self) extends AnyVal {
+  extension [Self <: OrdersCreateTestReturnRequest](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[OrdersCustomBatchRequestEntryCreateTestReturnReturnItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[OrdersCustomBatchRequestEntryCreateTestReturnReturnItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: OrdersCustomBatchRequestEntryCreateTestReturnReturnItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: OrdersCustomBatchRequestEntryCreateTestReturnReturnItem*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

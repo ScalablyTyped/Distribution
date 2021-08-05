@@ -18,28 +18,21 @@ trait ListOriginEndpointsResponse extends StObject {
 }
 object ListOriginEndpointsResponse {
   
-  @scala.inline
-  def apply(): ListOriginEndpointsResponse = {
+  inline def apply(): ListOriginEndpointsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListOriginEndpointsResponse]
   }
   
-  @scala.inline
-  implicit class ListOriginEndpointsResponseMutableBuilder[Self <: ListOriginEndpointsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListOriginEndpointsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOriginEndpoints(value: listOfOriginEndpoint): Self = StObject.set(x, "OriginEndpoints", value.asInstanceOf[js.Any])
+    inline def setOriginEndpoints(value: listOfOriginEndpoint): Self = StObject.set(x, "OriginEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginEndpointsUndefined: Self = StObject.set(x, "OriginEndpoints", js.undefined)
+    inline def setOriginEndpointsUndefined: Self = StObject.set(x, "OriginEndpoints", js.undefined)
     
-    @scala.inline
-    def setOriginEndpointsVarargs(value: OriginEndpoint*): Self = StObject.set(x, "OriginEndpoints", js.Array(value :_*))
+    inline def setOriginEndpointsVarargs(value: OriginEndpoint*): Self = StObject.set(x, "OriginEndpoints", js.Array(value :_*))
   }
 }

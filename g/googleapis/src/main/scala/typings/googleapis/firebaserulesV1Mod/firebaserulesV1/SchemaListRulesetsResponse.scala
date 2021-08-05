@@ -22,28 +22,21 @@ trait SchemaListRulesetsResponse extends StObject {
 }
 object SchemaListRulesetsResponse {
   
-  @scala.inline
-  def apply(): SchemaListRulesetsResponse = {
+  inline def apply(): SchemaListRulesetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListRulesetsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListRulesetsResponseMutableBuilder[Self <: SchemaListRulesetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListRulesetsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRulesets(value: js.Array[SchemaRuleset]): Self = StObject.set(x, "rulesets", value.asInstanceOf[js.Any])
+    inline def setRulesets(value: js.Array[SchemaRuleset]): Self = StObject.set(x, "rulesets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesetsUndefined: Self = StObject.set(x, "rulesets", js.undefined)
+    inline def setRulesetsUndefined: Self = StObject.set(x, "rulesets", js.undefined)
     
-    @scala.inline
-    def setRulesetsVarargs(value: SchemaRuleset*): Self = StObject.set(x, "rulesets", js.Array(value :_*))
+    inline def setRulesetsVarargs(value: SchemaRuleset*): Self = StObject.set(x, "rulesets", js.Array(value :_*))
   }
 }

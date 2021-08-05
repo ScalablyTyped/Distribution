@@ -13,19 +13,15 @@ trait ServerResponse extends StObject {
 }
 object ServerResponse {
   
-  @scala.inline
-  def apply(error: Error, payload: HemeraMessagePayload): ServerResponse = {
+  inline def apply(error: Error, payload: HemeraMessagePayload): ServerResponse = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerResponse]
   }
   
-  @scala.inline
-  implicit class ServerResponseMutableBuilder[Self <: ServerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ServerResponse](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: HemeraMessagePayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: HemeraMessagePayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
   }
 }

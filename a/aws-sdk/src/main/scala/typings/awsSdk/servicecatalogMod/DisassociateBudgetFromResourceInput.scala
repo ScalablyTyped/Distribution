@@ -18,19 +18,15 @@ trait DisassociateBudgetFromResourceInput extends StObject {
 }
 object DisassociateBudgetFromResourceInput {
   
-  @scala.inline
-  def apply(BudgetName: BudgetName, ResourceId: Id): DisassociateBudgetFromResourceInput = {
+  inline def apply(BudgetName: BudgetName, ResourceId: Id): DisassociateBudgetFromResourceInput = {
     val __obj = js.Dynamic.literal(BudgetName = BudgetName.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateBudgetFromResourceInput]
   }
   
-  @scala.inline
-  implicit class DisassociateBudgetFromResourceInputMutableBuilder[Self <: DisassociateBudgetFromResourceInput] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateBudgetFromResourceInput](x: Self) {
     
-    @scala.inline
-    def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
+    inline def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: Id): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: Id): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

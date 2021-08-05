@@ -22,8 +22,7 @@ trait XTempFile
 }
 object XTempFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InputStream: XInputStream,
     Length: Double,
     OutputStream: XOutputStream,
@@ -44,16 +43,12 @@ object XTempFile {
     __obj.asInstanceOf[XTempFile]
   }
   
-  @scala.inline
-  implicit class XTempFileMutableBuilder[Self <: XTempFile] (val x: Self) extends AnyVal {
+  extension [Self <: XTempFile](x: Self) {
     
-    @scala.inline
-    def setRemoveFile(value: Boolean): Self = StObject.set(x, "RemoveFile", value.asInstanceOf[js.Any])
+    inline def setRemoveFile(value: Boolean): Self = StObject.set(x, "RemoveFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "Uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "Uri", value.asInstanceOf[js.Any])
   }
 }

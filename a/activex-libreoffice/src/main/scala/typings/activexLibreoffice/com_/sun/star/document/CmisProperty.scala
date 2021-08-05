@@ -36,8 +36,7 @@ trait CmisProperty extends StObject {
 }
 object CmisProperty {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Choices: js.Any,
     Id: String,
     MultiValued: Boolean,
@@ -52,34 +51,24 @@ object CmisProperty {
     __obj.asInstanceOf[CmisProperty]
   }
   
-  @scala.inline
-  implicit class CmisPropertyMutableBuilder[Self <: CmisProperty] (val x: Self) extends AnyVal {
+  extension [Self <: CmisProperty](x: Self) {
     
-    @scala.inline
-    def setChoices(value: js.Any): Self = StObject.set(x, "Choices", value.asInstanceOf[js.Any])
+    inline def setChoices(value: js.Any): Self = StObject.set(x, "Choices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiValued(value: Boolean): Self = StObject.set(x, "MultiValued", value.asInstanceOf[js.Any])
+    inline def setMultiValued(value: Boolean): Self = StObject.set(x, "MultiValued", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenChoice(value: Boolean): Self = StObject.set(x, "OpenChoice", value.asInstanceOf[js.Any])
+    inline def setOpenChoice(value: Boolean): Self = StObject.set(x, "OpenChoice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "Required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "Required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatable(value: Boolean): Self = StObject.set(x, "Updatable", value.asInstanceOf[js.Any])
+    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "Updatable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

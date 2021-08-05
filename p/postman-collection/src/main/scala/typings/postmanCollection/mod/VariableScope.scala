@@ -55,6 +55,5 @@ object VariableScope {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isVariableScope(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariableScope")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isVariableScope(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariableScope")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

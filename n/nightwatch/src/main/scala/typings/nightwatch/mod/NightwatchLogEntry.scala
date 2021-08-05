@@ -29,28 +29,21 @@ trait NightwatchLogEntry extends StObject {
 }
 object NightwatchLogEntry {
   
-  @scala.inline
-  def apply(level: SEVERE | WARNING | INFO | DEBUG, message: String, timestamp: Double): NightwatchLogEntry = {
+  inline def apply(level: SEVERE | WARNING | INFO | DEBUG, message: String, timestamp: Double): NightwatchLogEntry = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchLogEntry]
   }
   
-  @scala.inline
-  implicit class NightwatchLogEntryMutableBuilder[Self <: NightwatchLogEntry] (val x: Self) extends AnyVal {
+  extension [Self <: NightwatchLogEntry](x: Self) {
     
-    @scala.inline
-    def setLevel(value: SEVERE | WARNING | INFO | DEBUG): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: SEVERE | WARNING | INFO | DEBUG): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait VirtualNodeTcpConnectionPool extends StObject {
 }
 object VirtualNodeTcpConnectionPool {
   
-  @scala.inline
-  def apply(maxConnections: MaxConnections): VirtualNodeTcpConnectionPool = {
+  inline def apply(maxConnections: MaxConnections): VirtualNodeTcpConnectionPool = {
     val __obj = js.Dynamic.literal(maxConnections = maxConnections.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeTcpConnectionPool]
   }
   
-  @scala.inline
-  implicit class VirtualNodeTcpConnectionPoolMutableBuilder[Self <: VirtualNodeTcpConnectionPool] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeTcpConnectionPool](x: Self) {
     
-    @scala.inline
-    def setMaxConnections(value: MaxConnections): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
+    inline def setMaxConnections(value: MaxConnections): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
   }
 }

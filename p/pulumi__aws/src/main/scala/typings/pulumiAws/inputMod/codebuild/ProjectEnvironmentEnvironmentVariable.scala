@@ -24,25 +24,19 @@ trait ProjectEnvironmentEnvironmentVariable extends StObject {
 }
 object ProjectEnvironmentEnvironmentVariable {
   
-  @scala.inline
-  def apply(name: Input[String], value: Input[String]): ProjectEnvironmentEnvironmentVariable = {
+  inline def apply(name: Input[String], value: Input[String]): ProjectEnvironmentEnvironmentVariable = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectEnvironmentEnvironmentVariable]
   }
   
-  @scala.inline
-  implicit class ProjectEnvironmentEnvironmentVariableMutableBuilder[Self <: ProjectEnvironmentEnvironmentVariable] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectEnvironmentEnvironmentVariable](x: Self) {
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

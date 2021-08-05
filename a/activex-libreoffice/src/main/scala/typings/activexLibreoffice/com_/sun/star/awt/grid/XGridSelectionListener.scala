@@ -17,8 +17,7 @@ trait XGridSelectionListener
 }
 object XGridSelectionListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -29,10 +28,8 @@ object XGridSelectionListener {
     __obj.asInstanceOf[XGridSelectionListener]
   }
   
-  @scala.inline
-  implicit class XGridSelectionListenerMutableBuilder[Self <: XGridSelectionListener] (val x: Self) extends AnyVal {
+  extension [Self <: XGridSelectionListener](x: Self) {
     
-    @scala.inline
-    def setSelectionChanged(value: GridSelectionEvent => Unit): Self = StObject.set(x, "selectionChanged", js.Any.fromFunction1(value))
+    inline def setSelectionChanged(value: GridSelectionEvent => Unit): Self = StObject.set(x, "selectionChanged", js.Any.fromFunction1(value))
   }
 }

@@ -20,13 +20,12 @@ trait Zoom extends StObject {
   
   var Percentage: Double
   
-  @JSName("Word.Zoom_typekey")
+  /* private */ @JSName("Word.Zoom_typekey")
   var WordDotZoom_typekey: Zoom
 }
 object Zoom {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     PageColumns: Double,
@@ -41,31 +40,22 @@ object Zoom {
     __obj.asInstanceOf[Zoom]
   }
   
-  @scala.inline
-  implicit class ZoomMutableBuilder[Self <: Zoom] (val x: Self) extends AnyVal {
+  extension [Self <: Zoom](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageColumns(value: Double): Self = StObject.set(x, "PageColumns", value.asInstanceOf[js.Any])
+    inline def setPageColumns(value: Double): Self = StObject.set(x, "PageColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageFit(value: WdPageFit): Self = StObject.set(x, "PageFit", value.asInstanceOf[js.Any])
+    inline def setPageFit(value: WdPageFit): Self = StObject.set(x, "PageFit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageRows(value: Double): Self = StObject.set(x, "PageRows", value.asInstanceOf[js.Any])
+    inline def setPageRows(value: Double): Self = StObject.set(x, "PageRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentage(value: Double): Self = StObject.set(x, "Percentage", value.asInstanceOf[js.Any])
+    inline def setPercentage(value: Double): Self = StObject.set(x, "Percentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotZoom_typekey(value: Zoom): Self = StObject.set(x, "Word.Zoom_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotZoom_typekey(value: Zoom): Self = StObject.set(x, "Word.Zoom_typekey", value.asInstanceOf[js.Any])
   }
 }

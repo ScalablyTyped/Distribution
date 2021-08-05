@@ -18,25 +18,19 @@ trait GetSecurityConfigurationsRequest extends StObject {
 }
 object GetSecurityConfigurationsRequest {
   
-  @scala.inline
-  def apply(): GetSecurityConfigurationsRequest = {
+  inline def apply(): GetSecurityConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSecurityConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class GetSecurityConfigurationsRequestMutableBuilder[Self <: GetSecurityConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSecurityConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

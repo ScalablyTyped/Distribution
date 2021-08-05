@@ -7,24 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def apply(html: String): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def apply(
+  inline def apply(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function0[Unit]]
+  inline def apply(html: String): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def apply(
     html: String,
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ConstructorOptions */ js.Any
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def apply(
+  inline def apply(
     html: Unit,
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ConstructorOptions */ js.Any
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def apply(html: Buffer): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def apply(
+  inline def apply(html: Buffer): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def apply(
     html: Buffer,
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ConstructorOptions */ js.Any
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]

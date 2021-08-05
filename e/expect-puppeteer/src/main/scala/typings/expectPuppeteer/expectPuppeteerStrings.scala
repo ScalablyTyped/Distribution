@@ -9,30 +9,25 @@ object expectPuppeteerStrings {
   
   @js.native
   sealed trait left extends StObject
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait middle extends StObject
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
+  inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
   sealed trait mutation
     extends StObject
        with _ExpectPolling
-  @scala.inline
-  def mutation: mutation = "mutation".asInstanceOf[mutation]
+  inline def mutation: mutation = "mutation".asInstanceOf[mutation]
   
   @js.native
   sealed trait raf
     extends StObject
        with _ExpectPolling
-  @scala.inline
-  def raf: raf = "raf".asInstanceOf[raf]
+  inline def raf: raf = "raf".asInstanceOf[raf]
   
   @js.native
   sealed trait right extends StObject
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
 }

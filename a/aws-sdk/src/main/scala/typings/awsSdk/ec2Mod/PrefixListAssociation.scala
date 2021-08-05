@@ -18,25 +18,19 @@ trait PrefixListAssociation extends StObject {
 }
 object PrefixListAssociation {
   
-  @scala.inline
-  def apply(): PrefixListAssociation = {
+  inline def apply(): PrefixListAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrefixListAssociation]
   }
   
-  @scala.inline
-  implicit class PrefixListAssociationMutableBuilder[Self <: PrefixListAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: PrefixListAssociation](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setResourceOwner(value: String): Self = StObject.set(x, "ResourceOwner", value.asInstanceOf[js.Any])
+    inline def setResourceOwner(value: String): Self = StObject.set(x, "ResourceOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceOwnerUndefined: Self = StObject.set(x, "ResourceOwner", js.undefined)
+    inline def setResourceOwnerUndefined: Self = StObject.set(x, "ResourceOwner", js.undefined)
   }
 }

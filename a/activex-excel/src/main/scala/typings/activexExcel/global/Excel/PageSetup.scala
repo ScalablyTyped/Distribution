@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PageSetup")
 @js.native
-class PageSetup protected ()
+/* private */ class PageSetup ()
   extends StObject
      with typings.activexExcel.Excel.PageSetup {
   
@@ -67,7 +67,7 @@ class PageSetup protected ()
   /* CompleteClass */
   override val EvenPage: typings.activexExcel.Excel.Page = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.PageSetup_typekey")
   var ExcelDotPageSetup_typekey: typings.activexExcel.Excel.PageSetup = js.native
   

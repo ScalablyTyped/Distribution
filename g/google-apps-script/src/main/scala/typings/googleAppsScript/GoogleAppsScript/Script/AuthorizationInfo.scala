@@ -23,19 +23,15 @@ trait AuthorizationInfo extends StObject {
 }
 object AuthorizationInfo {
   
-  @scala.inline
-  def apply(getAuthorizationStatus: () => AuthorizationStatus, getAuthorizationUrl: () => String): AuthorizationInfo = {
+  inline def apply(getAuthorizationStatus: () => AuthorizationStatus, getAuthorizationUrl: () => String): AuthorizationInfo = {
     val __obj = js.Dynamic.literal(getAuthorizationStatus = js.Any.fromFunction0(getAuthorizationStatus), getAuthorizationUrl = js.Any.fromFunction0(getAuthorizationUrl))
     __obj.asInstanceOf[AuthorizationInfo]
   }
   
-  @scala.inline
-  implicit class AuthorizationInfoMutableBuilder[Self <: AuthorizationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizationInfo](x: Self) {
     
-    @scala.inline
-    def setGetAuthorizationStatus(value: () => AuthorizationStatus): Self = StObject.set(x, "getAuthorizationStatus", js.Any.fromFunction0(value))
+    inline def setGetAuthorizationStatus(value: () => AuthorizationStatus): Self = StObject.set(x, "getAuthorizationStatus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAuthorizationUrl(value: () => String): Self = StObject.set(x, "getAuthorizationUrl", js.Any.fromFunction0(value))
+    inline def setGetAuthorizationUrl(value: () => String): Self = StObject.set(x, "getAuthorizationUrl", js.Any.fromFunction0(value))
   }
 }

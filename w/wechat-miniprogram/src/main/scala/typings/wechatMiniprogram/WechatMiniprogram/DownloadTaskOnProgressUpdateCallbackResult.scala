@@ -17,22 +17,17 @@ trait DownloadTaskOnProgressUpdateCallbackResult extends StObject {
 }
 object DownloadTaskOnProgressUpdateCallbackResult {
   
-  @scala.inline
-  def apply(progress: Double, totalBytesExpectedToWrite: Double, totalBytesWritten: Double): DownloadTaskOnProgressUpdateCallbackResult = {
+  inline def apply(progress: Double, totalBytesExpectedToWrite: Double, totalBytesWritten: Double): DownloadTaskOnProgressUpdateCallbackResult = {
     val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any], totalBytesExpectedToWrite = totalBytesExpectedToWrite.asInstanceOf[js.Any], totalBytesWritten = totalBytesWritten.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadTaskOnProgressUpdateCallbackResult]
   }
   
-  @scala.inline
-  implicit class DownloadTaskOnProgressUpdateCallbackResultMutableBuilder[Self <: DownloadTaskOnProgressUpdateCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadTaskOnProgressUpdateCallbackResult](x: Self) {
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesExpectedToWrite(value: Double): Self = StObject.set(x, "totalBytesExpectedToWrite", value.asInstanceOf[js.Any])
+    inline def setTotalBytesExpectedToWrite(value: Double): Self = StObject.set(x, "totalBytesExpectedToWrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesWritten(value: Double): Self = StObject.set(x, "totalBytesWritten", value.asInstanceOf[js.Any])
+    inline def setTotalBytesWritten(value: Double): Self = StObject.set(x, "totalBytesWritten", value.asInstanceOf[js.Any])
   }
 }

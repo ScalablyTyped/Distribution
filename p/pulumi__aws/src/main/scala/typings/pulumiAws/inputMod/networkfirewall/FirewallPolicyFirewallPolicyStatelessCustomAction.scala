@@ -19,8 +19,7 @@ trait FirewallPolicyFirewallPolicyStatelessCustomAction extends StObject {
 }
 object FirewallPolicyFirewallPolicyStatelessCustomAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actionDefinition: Input[FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition],
     actionName: Input[String]
   ): FirewallPolicyFirewallPolicyStatelessCustomAction = {
@@ -28,13 +27,10 @@ object FirewallPolicyFirewallPolicyStatelessCustomAction {
     __obj.asInstanceOf[FirewallPolicyFirewallPolicyStatelessCustomAction]
   }
   
-  @scala.inline
-  implicit class FirewallPolicyFirewallPolicyStatelessCustomActionMutableBuilder[Self <: FirewallPolicyFirewallPolicyStatelessCustomAction] (val x: Self) extends AnyVal {
+  extension [Self <: FirewallPolicyFirewallPolicyStatelessCustomAction](x: Self) {
     
-    @scala.inline
-    def setActionDefinition(value: Input[FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition]): Self = StObject.set(x, "actionDefinition", value.asInstanceOf[js.Any])
+    inline def setActionDefinition(value: Input[FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition]): Self = StObject.set(x, "actionDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionName(value: Input[String]): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: Input[String]): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
   }
 }

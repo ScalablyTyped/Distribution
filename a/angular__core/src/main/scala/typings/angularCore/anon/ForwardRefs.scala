@@ -19,8 +19,7 @@ trait ForwardRefs extends StObject {
 }
 object ForwardRefs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     forwardRefs: Set[typings.typescript.mod.Identifier],
     methodCalls: Set[CallExpression],
     typedNodes: Set[ParameterDeclaration | AsExpression | PropertyDeclaration]
@@ -29,16 +28,12 @@ object ForwardRefs {
     __obj.asInstanceOf[ForwardRefs]
   }
   
-  @scala.inline
-  implicit class ForwardRefsMutableBuilder[Self <: ForwardRefs] (val x: Self) extends AnyVal {
+  extension [Self <: ForwardRefs](x: Self) {
     
-    @scala.inline
-    def setForwardRefs(value: Set[typings.typescript.mod.Identifier]): Self = StObject.set(x, "forwardRefs", value.asInstanceOf[js.Any])
+    inline def setForwardRefs(value: Set[typings.typescript.mod.Identifier]): Self = StObject.set(x, "forwardRefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodCalls(value: Set[CallExpression]): Self = StObject.set(x, "methodCalls", value.asInstanceOf[js.Any])
+    inline def setMethodCalls(value: Set[CallExpression]): Self = StObject.set(x, "methodCalls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypedNodes(value: Set[ParameterDeclaration | AsExpression | PropertyDeclaration]): Self = StObject.set(x, "typedNodes", value.asInstanceOf[js.Any])
+    inline def setTypedNodes(value: Set[ParameterDeclaration | AsExpression | PropertyDeclaration]): Self = StObject.set(x, "typedNodes", value.asInstanceOf[js.Any])
   }
 }

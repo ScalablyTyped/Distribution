@@ -14,22 +14,17 @@ trait IValidationContext[T] extends StObject {
 }
 object IValidationContext {
   
-  @scala.inline
-  def apply[T](Data: T, Key: String, Value: String): IValidationContext[T] = {
+  inline def apply[T](Data: T, Key: String, Value: String): IValidationContext[T] = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValidationContext[T]]
   }
   
-  @scala.inline
-  implicit class IValidationContextMutableBuilder[Self <: IValidationContext[?], T] (val x: Self & IValidationContext[T]) extends AnyVal {
+  extension [Self <: IValidationContext[?], T](x: Self & IValidationContext[T]) {
     
-    @scala.inline
-    def setData(value: T): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

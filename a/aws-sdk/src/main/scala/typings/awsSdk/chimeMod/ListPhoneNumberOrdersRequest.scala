@@ -18,25 +18,19 @@ trait ListPhoneNumberOrdersRequest extends StObject {
 }
 object ListPhoneNumberOrdersRequest {
   
-  @scala.inline
-  def apply(): ListPhoneNumberOrdersRequest = {
+  inline def apply(): ListPhoneNumberOrdersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPhoneNumberOrdersRequest]
   }
   
-  @scala.inline
-  implicit class ListPhoneNumberOrdersRequestMutableBuilder[Self <: ListPhoneNumberOrdersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListPhoneNumberOrdersRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: ResultMax): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ResultMax): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

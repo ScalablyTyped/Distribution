@@ -131,53 +131,38 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCharThreshold(value: Double): Self = StObject.set(x, "charThreshold", value.asInstanceOf[js.Any])
+      inline def setCharThreshold(value: Double): Self = StObject.set(x, "charThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharThresholdUndefined: Self = StObject.set(x, "charThreshold", js.undefined)
+      inline def setCharThresholdUndefined: Self = StObject.set(x, "charThreshold", js.undefined)
       
-      @scala.inline
-      def setClassesToPreserve(value: js.Array[String]): Self = StObject.set(x, "classesToPreserve", value.asInstanceOf[js.Any])
+      inline def setClassesToPreserve(value: js.Array[String]): Self = StObject.set(x, "classesToPreserve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesToPreserveUndefined: Self = StObject.set(x, "classesToPreserve", js.undefined)
+      inline def setClassesToPreserveUndefined: Self = StObject.set(x, "classesToPreserve", js.undefined)
       
-      @scala.inline
-      def setClassesToPreserveVarargs(value: String*): Self = StObject.set(x, "classesToPreserve", js.Array(value :_*))
+      inline def setClassesToPreserveVarargs(value: String*): Self = StObject.set(x, "classesToPreserve", js.Array(value :_*))
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setKeepClasses(value: Boolean): Self = StObject.set(x, "keepClasses", value.asInstanceOf[js.Any])
+      inline def setKeepClasses(value: Boolean): Self = StObject.set(x, "keepClasses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepClassesUndefined: Self = StObject.set(x, "keepClasses", js.undefined)
+      inline def setKeepClassesUndefined: Self = StObject.set(x, "keepClasses", js.undefined)
       
-      @scala.inline
-      def setMaxElemsToParse(value: Double): Self = StObject.set(x, "maxElemsToParse", value.asInstanceOf[js.Any])
+      inline def setMaxElemsToParse(value: Double): Self = StObject.set(x, "maxElemsToParse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxElemsToParseUndefined: Self = StObject.set(x, "maxElemsToParse", js.undefined)
+      inline def setMaxElemsToParseUndefined: Self = StObject.set(x, "maxElemsToParse", js.undefined)
       
-      @scala.inline
-      def setNbTopCandidates(value: Double): Self = StObject.set(x, "nbTopCandidates", value.asInstanceOf[js.Any])
+      inline def setNbTopCandidates(value: Double): Self = StObject.set(x, "nbTopCandidates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNbTopCandidatesUndefined: Self = StObject.set(x, "nbTopCandidates", js.undefined)
+      inline def setNbTopCandidatesUndefined: Self = StObject.set(x, "nbTopCandidates", js.undefined)
     }
   }
   
@@ -209,8 +194,7 @@ object mod {
   }
   object ParseResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       byline: String,
       content: String,
       dir: String,
@@ -224,32 +208,23 @@ object mod {
       __obj.asInstanceOf[ParseResult]
     }
     
-    @scala.inline
-    implicit class ParseResultMutableBuilder[Self <: ParseResult] (val x: Self) extends AnyVal {
+    extension [Self <: ParseResult](x: Self) {
       
-      @scala.inline
-      def setByline(value: String): Self = StObject.set(x, "byline", value.asInstanceOf[js.Any])
+      inline def setByline(value: String): Self = StObject.set(x, "byline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcerpt(value: String): Self = StObject.set(x, "excerpt", value.asInstanceOf[js.Any])
+      inline def setExcerpt(value: String): Self = StObject.set(x, "excerpt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSiteName(value: String): Self = StObject.set(x, "siteName", value.asInstanceOf[js.Any])
+      inline def setSiteName(value: String): Self = StObject.set(x, "siteName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
+      inline def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -289,17 +264,14 @@ object mod {
   }
   object Readability {
     
-    @scala.inline
-    def apply(parse: () => ParseResult | Null): Readability = {
+    inline def apply(parse: () => ParseResult | Null): Readability = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction0(parse))
       __obj.asInstanceOf[Readability]
     }
     
-    @scala.inline
-    implicit class ReadabilityMutableBuilder[Self <: Readability] (val x: Self) extends AnyVal {
+    extension [Self <: Readability](x: Self) {
       
-      @scala.inline
-      def setParse(value: () => ParseResult | Null): Self = StObject.set(x, "parse", js.Any.fromFunction0(value))
+      inline def setParse(value: () => ParseResult | Null): Self = StObject.set(x, "parse", js.Any.fromFunction0(value))
     }
   }
 }

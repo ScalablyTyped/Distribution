@@ -9,8 +9,7 @@ trait ListObjectVersionsInput
      with typings.awsSdkClientS3Node.typesListObjectVersionsInputMod.ListObjectVersionsInput
 object ListObjectVersionsInput {
   
-  @scala.inline
-  def apply(Bucket: String): ListObjectVersionsInput = {
+  inline def apply(Bucket: String): ListObjectVersionsInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListObjectVersionsInput]
   }

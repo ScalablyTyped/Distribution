@@ -33,8 +33,7 @@ trait DescribePublishingDestinationResponse extends StObject {
 }
 object DescribePublishingDestinationResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DestinationId: String,
     DestinationProperties: DestinationProperties,
     DestinationType: DestinationType,
@@ -45,22 +44,16 @@ object DescribePublishingDestinationResponse {
     __obj.asInstanceOf[DescribePublishingDestinationResponse]
   }
   
-  @scala.inline
-  implicit class DescribePublishingDestinationResponseMutableBuilder[Self <: DescribePublishingDestinationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePublishingDestinationResponse](x: Self) {
     
-    @scala.inline
-    def setDestinationId(value: String): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
+    inline def setDestinationId(value: String): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationProperties(value: DestinationProperties): Self = StObject.set(x, "DestinationProperties", value.asInstanceOf[js.Any])
+    inline def setDestinationProperties(value: DestinationProperties): Self = StObject.set(x, "DestinationProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationType(value: DestinationType): Self = StObject.set(x, "DestinationType", value.asInstanceOf[js.Any])
+    inline def setDestinationType(value: DestinationType): Self = StObject.set(x, "DestinationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishingFailureStartTimestamp(value: Long): Self = StObject.set(x, "PublishingFailureStartTimestamp", value.asInstanceOf[js.Any])
+    inline def setPublishingFailureStartTimestamp(value: Long): Self = StObject.set(x, "PublishingFailureStartTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: PublishingStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PublishingStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

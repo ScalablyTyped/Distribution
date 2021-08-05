@@ -33,8 +33,7 @@ trait OrganizationConformancePackStatus extends StObject {
 }
 object OrganizationConformancePackStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     OrganizationConformancePackName: OrganizationConformancePackName,
     Status: OrganizationResourceStatus
   ): OrganizationConformancePackStatus = {
@@ -42,31 +41,22 @@ object OrganizationConformancePackStatus {
     __obj.asInstanceOf[OrganizationConformancePackStatus]
   }
   
-  @scala.inline
-  implicit class OrganizationConformancePackStatusMutableBuilder[Self <: OrganizationConformancePackStatus] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizationConformancePackStatus](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setLastUpdateTime(value: Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     
-    @scala.inline
-    def setOrganizationConformancePackName(value: OrganizationConformancePackName): Self = StObject.set(x, "OrganizationConformancePackName", value.asInstanceOf[js.Any])
+    inline def setOrganizationConformancePackName(value: OrganizationConformancePackName): Self = StObject.set(x, "OrganizationConformancePackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: OrganizationResourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OrganizationResourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

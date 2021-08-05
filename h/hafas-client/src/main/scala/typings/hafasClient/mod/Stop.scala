@@ -39,95 +39,66 @@ trait Stop extends StObject {
 }
 object Stop {
   
-  @scala.inline
-  def apply(): Stop = {
+  inline def apply(): Stop = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("stop")
     __obj.asInstanceOf[Stop]
   }
   
-  @scala.inline
-  implicit class StopMutableBuilder[Self <: Stop] (val x: Self) extends AnyVal {
+  extension [Self <: Stop](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setEntrances(value: js.Array[Location]): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
+    inline def setEntrances(value: js.Array[Location]): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
+    inline def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
     
-    @scala.inline
-    def setEntrancesVarargs(value: Location*): Self = StObject.set(x, "entrances", js.Array(value :_*))
+    inline def setEntrancesVarargs(value: Location*): Self = StObject.set(x, "entrances", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIds(value: Ids): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: Ids): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    @scala.inline
-    def setIsMeta(value: Boolean): Self = StObject.set(x, "isMeta", value.asInstanceOf[js.Any])
+    inline def setIsMeta(value: Boolean): Self = StObject.set(x, "isMeta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMetaUndefined: Self = StObject.set(x, "isMeta", js.undefined)
+    inline def setIsMetaUndefined: Self = StObject.set(x, "isMeta", js.undefined)
     
-    @scala.inline
-    def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+    inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
-    @scala.inline
-    def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value :_*))
     
-    @scala.inline
-    def setLoadFactor(value: String): Self = StObject.set(x, "loadFactor", value.asInstanceOf[js.Any])
+    inline def setLoadFactor(value: String): Self = StObject.set(x, "loadFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadFactorUndefined: Self = StObject.set(x, "loadFactor", js.undefined)
+    inline def setLoadFactorUndefined: Self = StObject.set(x, "loadFactor", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProducts(value: Products): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
+    inline def setProducts(value: Products): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
+    inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
-    @scala.inline
-    def setReisezentrumOpeningHours(value: ReisezentrumOpeningHours): Self = StObject.set(x, "reisezentrumOpeningHours", value.asInstanceOf[js.Any])
+    inline def setReisezentrumOpeningHours(value: ReisezentrumOpeningHours): Self = StObject.set(x, "reisezentrumOpeningHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReisezentrumOpeningHoursUndefined: Self = StObject.set(x, "reisezentrumOpeningHours", js.undefined)
+    inline def setReisezentrumOpeningHoursUndefined: Self = StObject.set(x, "reisezentrumOpeningHours", js.undefined)
     
-    @scala.inline
-    def setTransitAuthority(value: String): Self = StObject.set(x, "transitAuthority", value.asInstanceOf[js.Any])
+    inline def setTransitAuthority(value: String): Self = StObject.set(x, "transitAuthority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitAuthorityUndefined: Self = StObject.set(x, "transitAuthority", js.undefined)
+    inline def setTransitAuthorityUndefined: Self = StObject.set(x, "transitAuthority", js.undefined)
     
-    @scala.inline
-    def setType(value: stop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: stop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

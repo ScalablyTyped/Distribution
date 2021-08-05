@@ -27,20 +27,16 @@ object signatureInputTitleTitleMod {
   }
   object TitleChildrenProps {
     
-    @scala.inline
-    def apply(): TitleChildrenProps = {
+    inline def apply(): TitleChildrenProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TitleChildrenProps]
     }
     
-    @scala.inline
-    implicit class TitleChildrenPropsMutableBuilder[Self <: TitleChildrenProps] (val x: Self) extends AnyVal {
+    extension [Self <: TitleChildrenProps](x: Self) {
       
-      @scala.inline
-      def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
+      inline def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
+      inline def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
     }
   }
   

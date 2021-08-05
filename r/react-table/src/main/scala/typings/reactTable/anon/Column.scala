@@ -11,16 +11,13 @@ trait Column[D /* <: js.Object */] extends StObject {
 }
 object Column {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](column: HeaderGroup[D]): Column[D] = {
+  inline def apply[D /* <: js.Object */](column: HeaderGroup[D]): Column[D] = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column[D]]
   }
   
-  @scala.inline
-  implicit class ColumnMutableBuilder[Self <: Column[?], D /* <: js.Object */] (val x: Self & Column[D]) extends AnyVal {
+  extension [Self <: Column[?], D /* <: js.Object */](x: Self & Column[D]) {
     
-    @scala.inline
-    def setColumn(value: HeaderGroup[D]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: HeaderGroup[D]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
   }
 }

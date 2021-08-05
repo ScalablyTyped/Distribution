@@ -9,8 +9,7 @@ trait GetBucketInventoryConfigurationInput
      with typings.awsSdkClientS3Node.typesGetBucketInventoryConfigurationInputMod.GetBucketInventoryConfigurationInput
 object GetBucketInventoryConfigurationInput {
   
-  @scala.inline
-  def apply(Bucket: String, Id: String): GetBucketInventoryConfigurationInput = {
+  inline def apply(Bucket: String, Id: String): GetBucketInventoryConfigurationInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketInventoryConfigurationInput]
   }

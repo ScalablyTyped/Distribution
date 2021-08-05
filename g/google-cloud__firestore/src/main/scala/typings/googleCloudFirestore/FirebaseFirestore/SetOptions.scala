@@ -25,28 +25,21 @@ trait SetOptions extends StObject {
 }
 object SetOptions {
   
-  @scala.inline
-  def apply(): SetOptions = {
+  inline def apply(): SetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetOptions]
   }
   
-  @scala.inline
-  implicit class SetOptionsMutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SetOptions](x: Self) {
     
-    @scala.inline
-    def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeFields(value: js.Array[String | FieldPath]): Self = StObject.set(x, "mergeFields", value.asInstanceOf[js.Any])
+    inline def setMergeFields(value: js.Array[String | FieldPath]): Self = StObject.set(x, "mergeFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeFieldsUndefined: Self = StObject.set(x, "mergeFields", js.undefined)
+    inline def setMergeFieldsUndefined: Self = StObject.set(x, "mergeFields", js.undefined)
     
-    @scala.inline
-    def setMergeFieldsVarargs(value: (String | FieldPath)*): Self = StObject.set(x, "mergeFields", js.Array(value :_*))
+    inline def setMergeFieldsVarargs(value: (String | FieldPath)*): Self = StObject.set(x, "mergeFields", js.Array(value :_*))
     
-    @scala.inline
-    def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
+    inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
   }
 }

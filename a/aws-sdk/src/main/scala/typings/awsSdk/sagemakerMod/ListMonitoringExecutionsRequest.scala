@@ -73,91 +73,63 @@ trait ListMonitoringExecutionsRequest extends StObject {
 }
 object ListMonitoringExecutionsRequest {
   
-  @scala.inline
-  def apply(): ListMonitoringExecutionsRequest = {
+  inline def apply(): ListMonitoringExecutionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMonitoringExecutionsRequest]
   }
   
-  @scala.inline
-  implicit class ListMonitoringExecutionsRequestMutableBuilder[Self <: ListMonitoringExecutionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListMonitoringExecutionsRequest](x: Self) {
     
-    @scala.inline
-    def setCreationTimeAfter(value: Timestamp): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
+    inline def setCreationTimeAfter(value: Timestamp): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
+    inline def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
     
-    @scala.inline
-    def setCreationTimeBefore(value: Timestamp): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
+    inline def setCreationTimeBefore(value: Timestamp): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
+    inline def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
     
-    @scala.inline
-    def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
+    inline def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointNameUndefined: Self = StObject.set(x, "EndpointName", js.undefined)
+    inline def setEndpointNameUndefined: Self = StObject.set(x, "EndpointName", js.undefined)
     
-    @scala.inline
-    def setLastModifiedTimeAfter(value: Timestamp): Self = StObject.set(x, "LastModifiedTimeAfter", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTimeAfter(value: Timestamp): Self = StObject.set(x, "LastModifiedTimeAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTimeAfterUndefined: Self = StObject.set(x, "LastModifiedTimeAfter", js.undefined)
+    inline def setLastModifiedTimeAfterUndefined: Self = StObject.set(x, "LastModifiedTimeAfter", js.undefined)
     
-    @scala.inline
-    def setLastModifiedTimeBefore(value: Timestamp): Self = StObject.set(x, "LastModifiedTimeBefore", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTimeBefore(value: Timestamp): Self = StObject.set(x, "LastModifiedTimeBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTimeBeforeUndefined: Self = StObject.set(x, "LastModifiedTimeBefore", js.undefined)
+    inline def setLastModifiedTimeBeforeUndefined: Self = StObject.set(x, "LastModifiedTimeBefore", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setMonitoringScheduleName(value: MonitoringScheduleName): Self = StObject.set(x, "MonitoringScheduleName", value.asInstanceOf[js.Any])
+    inline def setMonitoringScheduleName(value: MonitoringScheduleName): Self = StObject.set(x, "MonitoringScheduleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringScheduleNameUndefined: Self = StObject.set(x, "MonitoringScheduleName", js.undefined)
+    inline def setMonitoringScheduleNameUndefined: Self = StObject.set(x, "MonitoringScheduleName", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setScheduledTimeAfter(value: Timestamp): Self = StObject.set(x, "ScheduledTimeAfter", value.asInstanceOf[js.Any])
+    inline def setScheduledTimeAfter(value: Timestamp): Self = StObject.set(x, "ScheduledTimeAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledTimeAfterUndefined: Self = StObject.set(x, "ScheduledTimeAfter", js.undefined)
+    inline def setScheduledTimeAfterUndefined: Self = StObject.set(x, "ScheduledTimeAfter", js.undefined)
     
-    @scala.inline
-    def setScheduledTimeBefore(value: Timestamp): Self = StObject.set(x, "ScheduledTimeBefore", value.asInstanceOf[js.Any])
+    inline def setScheduledTimeBefore(value: Timestamp): Self = StObject.set(x, "ScheduledTimeBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledTimeBeforeUndefined: Self = StObject.set(x, "ScheduledTimeBefore", js.undefined)
+    inline def setScheduledTimeBeforeUndefined: Self = StObject.set(x, "ScheduledTimeBefore", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: MonitoringExecutionSortKey): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: MonitoringExecutionSortKey): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
     
-    @scala.inline
-    def setStatusEquals(value: ExecutionStatus): Self = StObject.set(x, "StatusEquals", value.asInstanceOf[js.Any])
+    inline def setStatusEquals(value: ExecutionStatus): Self = StObject.set(x, "StatusEquals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusEqualsUndefined: Self = StObject.set(x, "StatusEquals", js.undefined)
+    inline def setStatusEqualsUndefined: Self = StObject.set(x, "StatusEquals", js.undefined)
   }
 }

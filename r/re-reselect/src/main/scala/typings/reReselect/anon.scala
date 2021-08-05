@@ -26,8 +26,7 @@ object anon {
   }
   object Cache {
     
-    @scala.inline
-    def apply[S, R, C, D](
+    inline def apply[S, R, C, D](
       cache: ICacheObject,
       clearCache: () => Unit,
       getMatchingSelector: (S, /* repeated */ js.Any) => OutputSelector[S, R, C, D],
@@ -38,23 +37,17 @@ object anon {
       __obj.asInstanceOf[Cache[S, R, C, D]]
     }
     
-    @scala.inline
-    implicit class CacheMutableBuilder[Self <: Cache[?, ?, ?, ?], S, R, C, D] (val x: Self & (Cache[S, R, C, D])) extends AnyVal {
+    extension [Self <: Cache[?, ?, ?, ?], S, R, C, D](x: Self & (Cache[S, R, C, D])) {
       
-      @scala.inline
-      def setCache(value: ICacheObject): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: ICacheObject): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
+      inline def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMatchingSelector(value: (S, /* repeated */ js.Any) => OutputSelector[S, R, C, D]): Self = StObject.set(x, "getMatchingSelector", js.Any.fromFunction2(value))
+      inline def setGetMatchingSelector(value: (S, /* repeated */ js.Any) => OutputSelector[S, R, C, D]): Self = StObject.set(x, "getMatchingSelector", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeySelector(value: typings.reReselect.mod.KeySelector[S]): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
+      inline def setKeySelector(value: typings.reReselect.mod.KeySelector[S]): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveMatchingSelector(value: (S, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "removeMatchingSelector", js.Any.fromFunction2(value))
+      inline def setRemoveMatchingSelector(value: (S, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "removeMatchingSelector", js.Any.fromFunction2(value))
     }
   }
   
@@ -64,17 +57,14 @@ object anon {
   }
   object CacheSize {
     
-    @scala.inline
-    def apply(cacheSize: Double): CacheSize = {
+    inline def apply(cacheSize: Double): CacheSize = {
       val __obj = js.Dynamic.literal(cacheSize = cacheSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheSize]
     }
     
-    @scala.inline
-    implicit class CacheSizeMutableBuilder[Self <: CacheSize] (val x: Self) extends AnyVal {
+    extension [Self <: CacheSize](x: Self) {
       
-      @scala.inline
-      def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
+      inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,8 +84,7 @@ object anon {
   }
   object ClearCache {
     
-    @scala.inline
-    def apply[S, P, R, C, D](
+    inline def apply[S, P, R, C, D](
       cache: ICacheObject,
       clearCache: () => Unit,
       getMatchingSelector: (S, P, /* repeated */ js.Any) => OutputParametricSelector[S, P, R, C, D],
@@ -106,23 +95,17 @@ object anon {
       __obj.asInstanceOf[ClearCache[S, P, R, C, D]]
     }
     
-    @scala.inline
-    implicit class ClearCacheMutableBuilder[Self <: ClearCache[?, ?, ?, ?, ?], S, P, R, C, D] (val x: Self & (ClearCache[S, P, R, C, D])) extends AnyVal {
+    extension [Self <: ClearCache[?, ?, ?, ?, ?], S, P, R, C, D](x: Self & (ClearCache[S, P, R, C, D])) {
       
-      @scala.inline
-      def setCache(value: ICacheObject): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: ICacheObject): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
+      inline def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMatchingSelector(value: (S, P, /* repeated */ js.Any) => OutputParametricSelector[S, P, R, C, D]): Self = StObject.set(x, "getMatchingSelector", js.Any.fromFunction3(value))
+      inline def setGetMatchingSelector(value: (S, P, /* repeated */ js.Any) => OutputParametricSelector[S, P, R, C, D]): Self = StObject.set(x, "getMatchingSelector", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setKeySelector(value: ParametricKeySelector[S, P]): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
+      inline def setKeySelector(value: ParametricKeySelector[S, P]): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveMatchingSelector(value: (S, P, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "removeMatchingSelector", js.Any.fromFunction3(value))
+      inline def setRemoveMatchingSelector(value: (S, P, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "removeMatchingSelector", js.Any.fromFunction3(value))
     }
   }
   
@@ -138,23 +121,18 @@ object anon {
   }
   object InputSelectors {
     
-    @scala.inline
-    def apply[D, C, S](inputSelectors: D, keySelector: typings.reReselect.mod.KeySelector[S], resultFunc: C): InputSelectors[D, C, S] = {
+    inline def apply[D, C, S](inputSelectors: D, keySelector: typings.reReselect.mod.KeySelector[S], resultFunc: C): InputSelectors[D, C, S] = {
       val __obj = js.Dynamic.literal(inputSelectors = inputSelectors.asInstanceOf[js.Any], keySelector = keySelector.asInstanceOf[js.Any], resultFunc = resultFunc.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputSelectors[D, C, S]]
     }
     
-    @scala.inline
-    implicit class InputSelectorsMutableBuilder[Self <: InputSelectors[?, ?, ?], D, C, S] (val x: Self & (InputSelectors[D, C, S])) extends AnyVal {
+    extension [Self <: InputSelectors[?, ?, ?], D, C, S](x: Self & (InputSelectors[D, C, S])) {
       
-      @scala.inline
-      def setInputSelectors(value: D): Self = StObject.set(x, "inputSelectors", value.asInstanceOf[js.Any])
+      inline def setInputSelectors(value: D): Self = StObject.set(x, "inputSelectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySelector(value: typings.reReselect.mod.KeySelector[S]): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
+      inline def setKeySelector(value: typings.reReselect.mod.KeySelector[S]): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultFunc(value: C): Self = StObject.set(x, "resultFunc", value.asInstanceOf[js.Any])
+      inline def setResultFunc(value: C): Self = StObject.set(x, "resultFunc", value.asInstanceOf[js.Any])
     }
   }
   
@@ -170,23 +148,18 @@ object anon {
   }
   object KeySelector {
     
-    @scala.inline
-    def apply[D, C, S, P](inputSelectors: D, keySelector: ParametricKeySelector[S, P], resultFunc: C): KeySelector[D, C, S, P] = {
+    inline def apply[D, C, S, P](inputSelectors: D, keySelector: ParametricKeySelector[S, P], resultFunc: C): KeySelector[D, C, S, P] = {
       val __obj = js.Dynamic.literal(inputSelectors = inputSelectors.asInstanceOf[js.Any], keySelector = keySelector.asInstanceOf[js.Any], resultFunc = resultFunc.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeySelector[D, C, S, P]]
     }
     
-    @scala.inline
-    implicit class KeySelectorMutableBuilder[Self <: KeySelector[?, ?, ?, ?], D, C, S, P] (val x: Self & (KeySelector[D, C, S, P])) extends AnyVal {
+    extension [Self <: KeySelector[?, ?, ?, ?], D, C, S, P](x: Self & (KeySelector[D, C, S, P])) {
       
-      @scala.inline
-      def setInputSelectors(value: D): Self = StObject.set(x, "inputSelectors", value.asInstanceOf[js.Any])
+      inline def setInputSelectors(value: D): Self = StObject.set(x, "inputSelectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySelector(value: ParametricKeySelector[S, P]): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
+      inline def setKeySelector(value: ParametricKeySelector[S, P]): Self = StObject.set(x, "keySelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultFunc(value: C): Self = StObject.set(x, "resultFunc", value.asInstanceOf[js.Any])
+      inline def setResultFunc(value: C): Self = StObject.set(x, "resultFunc", value.asInstanceOf[js.Any])
     }
   }
 }

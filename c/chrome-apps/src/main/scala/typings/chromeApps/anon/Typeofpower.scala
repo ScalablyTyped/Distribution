@@ -37,8 +37,7 @@ trait Typeofpower extends StObject {
 }
 object Typeofpower {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Level: DISPLAY,
     releaseKeepAwake: () => Unit,
     requestKeepAwake: ToStringLiteral[
@@ -54,17 +53,13 @@ object Typeofpower {
     __obj.asInstanceOf[Typeofpower]
   }
   
-  @scala.inline
-  implicit class TypeofpowerMutableBuilder[Self <: Typeofpower] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofpower](x: Self) {
     
-    @scala.inline
-    def setLevel(value: DISPLAY): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: DISPLAY): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseKeepAwake(value: () => Unit): Self = StObject.set(x, "releaseKeepAwake", js.Any.fromFunction0(value))
+    inline def setReleaseKeepAwake(value: () => Unit): Self = StObject.set(x, "releaseKeepAwake", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequestKeepAwake(
+    inline def setRequestKeepAwake(
       value: ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof Level */ js.Any, 
           /* keyof typeof Level */ String, 

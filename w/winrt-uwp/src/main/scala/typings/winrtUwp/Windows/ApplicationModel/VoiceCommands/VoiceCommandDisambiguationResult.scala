@@ -12,16 +12,13 @@ trait VoiceCommandDisambiguationResult extends StObject {
 }
 object VoiceCommandDisambiguationResult {
   
-  @scala.inline
-  def apply(selectedItem: VoiceCommandContentTile): VoiceCommandDisambiguationResult = {
+  inline def apply(selectedItem: VoiceCommandContentTile): VoiceCommandDisambiguationResult = {
     val __obj = js.Dynamic.literal(selectedItem = selectedItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceCommandDisambiguationResult]
   }
   
-  @scala.inline
-  implicit class VoiceCommandDisambiguationResultMutableBuilder[Self <: VoiceCommandDisambiguationResult] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceCommandDisambiguationResult](x: Self) {
     
-    @scala.inline
-    def setSelectedItem(value: VoiceCommandContentTile): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+    inline def setSelectedItem(value: VoiceCommandContentTile): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
   }
 }

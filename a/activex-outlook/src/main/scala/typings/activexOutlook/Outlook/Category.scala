@@ -23,7 +23,7 @@ trait Category extends StObject {
   
   var Name: String
   
-  @JSName("Outlook.Category_typekey")
+  /* private */ @JSName("Outlook.Category_typekey")
   var OutlookDotCategory_typekey: Category
   
   val Parent: js.Any
@@ -34,8 +34,7 @@ trait Category extends StObject {
 }
 object Category {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     CategoryBorderColor: OLE_COLOR,
     CategoryGradientBottomColor: OLE_COLOR,
@@ -54,43 +53,30 @@ object Category {
     __obj.asInstanceOf[Category]
   }
   
-  @scala.inline
-  implicit class CategoryMutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
+  extension [Self <: Category](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryBorderColor(value: OLE_COLOR): Self = StObject.set(x, "CategoryBorderColor", value.asInstanceOf[js.Any])
+    inline def setCategoryBorderColor(value: OLE_COLOR): Self = StObject.set(x, "CategoryBorderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryGradientBottomColor(value: OLE_COLOR): Self = StObject.set(x, "CategoryGradientBottomColor", value.asInstanceOf[js.Any])
+    inline def setCategoryGradientBottomColor(value: OLE_COLOR): Self = StObject.set(x, "CategoryGradientBottomColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryGradientTopColor(value: OLE_COLOR): Self = StObject.set(x, "CategoryGradientTopColor", value.asInstanceOf[js.Any])
+    inline def setCategoryGradientTopColor(value: OLE_COLOR): Self = StObject.set(x, "CategoryGradientTopColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryID(value: String): Self = StObject.set(x, "CategoryID", value.asInstanceOf[js.Any])
+    inline def setCategoryID(value: String): Self = StObject.set(x, "CategoryID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: OlCategoryColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: OlCategoryColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotCategory_typekey(value: Category): Self = StObject.set(x, "Outlook.Category_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotCategory_typekey(value: Category): Self = StObject.set(x, "Outlook.Category_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortcutKey(value: OlCategoryShortcutKey): Self = StObject.set(x, "ShortcutKey", value.asInstanceOf[js.Any])
+    inline def setShortcutKey(value: OlCategoryShortcutKey): Self = StObject.set(x, "ShortcutKey", value.asInstanceOf[js.Any])
   }
 }

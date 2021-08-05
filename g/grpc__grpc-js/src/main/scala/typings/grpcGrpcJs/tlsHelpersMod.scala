@@ -15,6 +15,5 @@ object tlsHelpersMod {
   @js.native
   val CIPHER_SUITES: js.UndefOr[String] = js.native
   
-  @scala.inline
-  def getDefaultRootsData(): Buffer | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultRootsData")().asInstanceOf[Buffer | Null]
+  inline def getDefaultRootsData(): Buffer | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultRootsData")().asInstanceOf[Buffer | Null]
 }

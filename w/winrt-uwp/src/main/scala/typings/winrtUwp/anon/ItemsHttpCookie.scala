@@ -13,19 +13,15 @@ trait ItemsHttpCookie extends StObject {
 }
 object ItemsHttpCookie {
   
-  @scala.inline
-  def apply(items: HttpCookie, returnValue: Double): ItemsHttpCookie = {
+  inline def apply(items: HttpCookie, returnValue: Double): ItemsHttpCookie = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsHttpCookie]
   }
   
-  @scala.inline
-  implicit class ItemsHttpCookieMutableBuilder[Self <: ItemsHttpCookie] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsHttpCookie](x: Self) {
     
-    @scala.inline
-    def setItems(value: HttpCookie): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: HttpCookie): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait DvbTdtSettings extends StObject {
 }
 object DvbTdtSettings {
   
-  @scala.inline
-  def apply(): DvbTdtSettings = {
+  inline def apply(): DvbTdtSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DvbTdtSettings]
   }
   
-  @scala.inline
-  implicit class DvbTdtSettingsMutableBuilder[Self <: DvbTdtSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DvbTdtSettings](x: Self) {
     
-    @scala.inline
-    def setRepInterval(value: integerMin1000Max30000): Self = StObject.set(x, "RepInterval", value.asInstanceOf[js.Any])
+    inline def setRepInterval(value: integerMin1000Max30000): Self = StObject.set(x, "RepInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepIntervalUndefined: Self = StObject.set(x, "RepInterval", js.undefined)
+    inline def setRepIntervalUndefined: Self = StObject.set(x, "RepInterval", js.undefined)
   }
 }

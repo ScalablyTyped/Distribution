@@ -33,8 +33,7 @@ trait XSignatureCreationResultBroadcaster
 }
 object XSignatureCreationResultBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addSignatureCreationResultListener: XSignatureCreationResultListener => Unit,
     queryInterface: `type` => js.Any,
@@ -45,13 +44,10 @@ object XSignatureCreationResultBroadcaster {
     __obj.asInstanceOf[XSignatureCreationResultBroadcaster]
   }
   
-  @scala.inline
-  implicit class XSignatureCreationResultBroadcasterMutableBuilder[Self <: XSignatureCreationResultBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XSignatureCreationResultBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddSignatureCreationResultListener(value: XSignatureCreationResultListener => Unit): Self = StObject.set(x, "addSignatureCreationResultListener", js.Any.fromFunction1(value))
+    inline def setAddSignatureCreationResultListener(value: XSignatureCreationResultListener => Unit): Self = StObject.set(x, "addSignatureCreationResultListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveSignatureCreationResultListener(value: XSignatureCreationResultListener => Unit): Self = StObject.set(x, "removeSignatureCreationResultListener", js.Any.fromFunction1(value))
+    inline def setRemoveSignatureCreationResultListener(value: XSignatureCreationResultListener => Unit): Self = StObject.set(x, "removeSignatureCreationResultListener", js.Any.fromFunction1(value))
   }
 }

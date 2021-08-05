@@ -24,26 +24,20 @@ object structuredListSkeletonMod extends Shortcut {
   }
   object StructuredListSkeletonProps {
     
-    @scala.inline
-    def apply(): StructuredListSkeletonProps = {
+    inline def apply(): StructuredListSkeletonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StructuredListSkeletonProps]
     }
     
-    @scala.inline
-    implicit class StructuredListSkeletonPropsMutableBuilder[Self <: StructuredListSkeletonProps] (val x: Self) extends AnyVal {
+    extension [Self <: StructuredListSkeletonProps](x: Self) {
       
-      @scala.inline
-      def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      inline def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+      inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      @scala.inline
-      def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+      inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+      inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     }
   }
   

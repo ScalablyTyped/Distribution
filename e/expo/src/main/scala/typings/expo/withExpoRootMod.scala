@@ -12,6 +12,5 @@ object withExpoRootMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[P /* <: InitialProps */](AppRootComponent: ComponentType[P]): ComponentType[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(AppRootComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P]]
+  inline def default[P /* <: InitialProps */](AppRootComponent: ComponentType[P]): ComponentType[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(AppRootComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P]]
 }

@@ -18,22 +18,17 @@ trait DecimalParameter extends StObject {
 }
 object DecimalParameter {
   
-  @scala.inline
-  def apply(Name: NonEmptyString, Values: DoubleList): DecimalParameter = {
+  inline def apply(Name: NonEmptyString, Values: DoubleList): DecimalParameter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecimalParameter]
   }
   
-  @scala.inline
-  implicit class DecimalParameterMutableBuilder[Self <: DecimalParameter] (val x: Self) extends AnyVal {
+  extension [Self <: DecimalParameter](x: Self) {
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: DoubleList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: DoubleList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: Double*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

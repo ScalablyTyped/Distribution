@@ -39,103 +39,71 @@ trait SingleColumnMenuOptions extends StObject {
 }
 object SingleColumnMenuOptions {
   
-  @scala.inline
-  def apply(): SingleColumnMenuOptions = {
+  inline def apply(): SingleColumnMenuOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SingleColumnMenuOptions]
   }
   
-  @scala.inline
-  implicit class SingleColumnMenuOptionsMutableBuilder[Self <: SingleColumnMenuOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SingleColumnMenuOptions](x: Self) {
     
-    @scala.inline
-    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+    inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
     
-    @scala.inline
-    def setContinueOnSubmit(value: Boolean): Self = StObject.set(x, "continueOnSubmit", value.asInstanceOf[js.Any])
+    inline def setContinueOnSubmit(value: Boolean): Self = StObject.set(x, "continueOnSubmit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinueOnSubmitUndefined: Self = StObject.set(x, "continueOnSubmit", js.undefined)
+    inline def setContinueOnSubmitUndefined: Self = StObject.set(x, "continueOnSubmit", js.undefined)
     
-    @scala.inline
-    def setExitOnUnexpectedKey(value: Boolean): Self = StObject.set(x, "exitOnUnexpectedKey", value.asInstanceOf[js.Any])
+    inline def setExitOnUnexpectedKey(value: Boolean): Self = StObject.set(x, "exitOnUnexpectedKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitOnUnexpectedKeyUndefined: Self = StObject.set(x, "exitOnUnexpectedKey", js.undefined)
+    inline def setExitOnUnexpectedKeyUndefined: Self = StObject.set(x, "exitOnUnexpectedKey", js.undefined)
     
-    @scala.inline
-    def setExtraLines(value: Double): Self = StObject.set(x, "extraLines", value.asInstanceOf[js.Any])
+    inline def setExtraLines(value: Double): Self = StObject.set(x, "extraLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraLinesUndefined: Self = StObject.set(x, "extraLines", js.undefined)
+    inline def setExtraLinesUndefined: Self = StObject.set(x, "extraLines", js.undefined)
     
-    @scala.inline
-    def setItemMaxWidth(value: Double): Self = StObject.set(x, "itemMaxWidth", value.asInstanceOf[js.Any])
+    inline def setItemMaxWidth(value: Double): Self = StObject.set(x, "itemMaxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemMaxWidthUndefined: Self = StObject.set(x, "itemMaxWidth", js.undefined)
+    inline def setItemMaxWidthUndefined: Self = StObject.set(x, "itemMaxWidth", js.undefined)
     
-    @scala.inline
-    def setKeyBindings(value: StringDictionary[String]): Self = StObject.set(x, "keyBindings", value.asInstanceOf[js.Any])
+    inline def setKeyBindings(value: StringDictionary[String]): Self = StObject.set(x, "keyBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyBindingsUndefined: Self = StObject.set(x, "keyBindings", js.undefined)
+    inline def setKeyBindingsUndefined: Self = StObject.set(x, "keyBindings", js.undefined)
     
-    @scala.inline
-    def setLeftPadding(value: String): Self = StObject.set(x, "leftPadding", value.asInstanceOf[js.Any])
+    inline def setLeftPadding(value: String): Self = StObject.set(x, "leftPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftPaddingUndefined: Self = StObject.set(x, "leftPadding", js.undefined)
+    inline def setLeftPaddingUndefined: Self = StObject.set(x, "leftPadding", js.undefined)
     
-    @scala.inline
-    def setOneLineItem(value: Boolean): Self = StObject.set(x, "oneLineItem", value.asInstanceOf[js.Any])
+    inline def setOneLineItem(value: Boolean): Self = StObject.set(x, "oneLineItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneLineItemUndefined: Self = StObject.set(x, "oneLineItem", js.undefined)
+    inline def setOneLineItemUndefined: Self = StObject.set(x, "oneLineItem", js.undefined)
     
-    @scala.inline
-    def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+    inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
+    inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
     
-    @scala.inline
-    def setSelectedLeftPadding(value: String): Self = StObject.set(x, "selectedLeftPadding", value.asInstanceOf[js.Any])
+    inline def setSelectedLeftPadding(value: String): Self = StObject.set(x, "selectedLeftPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedLeftPaddingUndefined: Self = StObject.set(x, "selectedLeftPadding", js.undefined)
+    inline def setSelectedLeftPaddingUndefined: Self = StObject.set(x, "selectedLeftPadding", js.undefined)
     
-    @scala.inline
-    def setSelectedStyle(value: CTerminal): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
+    inline def setSelectedStyle(value: CTerminal): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
+    inline def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CTerminal): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CTerminal): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setSubmittedLeftPadding(value: String): Self = StObject.set(x, "submittedLeftPadding", value.asInstanceOf[js.Any])
+    inline def setSubmittedLeftPadding(value: String): Self = StObject.set(x, "submittedLeftPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmittedLeftPaddingUndefined: Self = StObject.set(x, "submittedLeftPadding", js.undefined)
+    inline def setSubmittedLeftPaddingUndefined: Self = StObject.set(x, "submittedLeftPadding", js.undefined)
     
-    @scala.inline
-    def setSubmittedStyle(value: CTerminal): Self = StObject.set(x, "submittedStyle", value.asInstanceOf[js.Any])
+    inline def setSubmittedStyle(value: CTerminal): Self = StObject.set(x, "submittedStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmittedStyleUndefined: Self = StObject.set(x, "submittedStyle", js.undefined)
+    inline def setSubmittedStyleUndefined: Self = StObject.set(x, "submittedStyle", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

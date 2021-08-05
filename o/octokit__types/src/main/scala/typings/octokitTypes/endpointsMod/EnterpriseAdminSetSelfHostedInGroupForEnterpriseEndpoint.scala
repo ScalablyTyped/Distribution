@@ -23,25 +23,19 @@ trait EnterpriseAdminSetSelfHostedInGroupForEnterpriseEndpoint extends StObject 
 }
 object EnterpriseAdminSetSelfHostedInGroupForEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(enterprise: String, runner_group_id: Double, runners: js.Array[Double]): EnterpriseAdminSetSelfHostedInGroupForEnterpriseEndpoint = {
+  inline def apply(enterprise: String, runner_group_id: Double, runners: js.Array[Double]): EnterpriseAdminSetSelfHostedInGroupForEnterpriseEndpoint = {
     val __obj = js.Dynamic.literal(enterprise = enterprise.asInstanceOf[js.Any], runner_group_id = runner_group_id.asInstanceOf[js.Any], runners = runners.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminSetSelfHostedInGroupForEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminSetSelfHostedInGroupForEnterpriseEndpointMutableBuilder[Self <: EnterpriseAdminSetSelfHostedInGroupForEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminSetSelfHostedInGroupForEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
+    inline def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunners(value: js.Array[Double]): Self = StObject.set(x, "runners", value.asInstanceOf[js.Any])
+    inline def setRunners(value: js.Array[Double]): Self = StObject.set(x, "runners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunnersVarargs(value: Double*): Self = StObject.set(x, "runners", js.Array(value :_*))
+    inline def setRunnersVarargs(value: Double*): Self = StObject.set(x, "runners", js.Array(value :_*))
   }
 }

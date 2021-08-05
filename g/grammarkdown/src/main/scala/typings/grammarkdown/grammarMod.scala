@@ -39,67 +39,67 @@ object grammarMod {
     def this(rootNames: Iterable[String], options: CompilerOptions, host: CoreSyncHost) = this()
     def this(rootNames: Iterable[String], options: CompilerOptions, host: Host) = this()
     
-    var _beginParsePossiblyAsync: js.Any = js.native
+    /* private */ var _beginParsePossiblyAsync: js.Any = js.native
     
-    var _bindPossiblyAsync: js.Any = js.native
+    /* private */ var _bindPossiblyAsync: js.Any = js.native
     
-    var _bindings: js.Any = js.native
+    /* private */ var _bindings: js.Any = js.native
     
-    var _checkPossiblyAsync: js.Any = js.native
+    /* private */ var _checkPossiblyAsync: js.Any = js.native
     
-    var _emitOnePossiblyAsync: js.Any = js.native
+    /* private */ var _emitOnePossiblyAsync: js.Any = js.native
     
-    var _emitPossiblyAsync: js.Any = js.native
+    /* private */ var _emitPossiblyAsync: js.Any = js.native
     
-    var _emitStringPossiblyAsync: js.Any = js.native
+    /* private */ var _emitStringPossiblyAsync: js.Any = js.native
     
-    var _endBind: js.Any = js.native
+    /* private */ var _endBind: js.Any = js.native
     
-    var _endCheck: js.Any = js.native
+    /* private */ var _endCheck: js.Any = js.native
     
-    var _endEmitPossiblyAsync: js.Any = js.native
+    /* private */ var _endEmitPossiblyAsync: js.Any = js.native
     
-    var _endParse: js.Any = js.native
+    /* private */ var _endParse: js.Any = js.native
     
-    var _endProcessFilePossiblyAsync: js.Any = js.native
+    /* private */ var _endProcessFilePossiblyAsync: js.Any = js.native
     
-    var _endProcessRootFile: js.Any = js.native
+    /* private */ var _endProcessRootFile: js.Any = js.native
     
-    var _getSourceFileNoResolve: js.Any = js.native
+    /* private */ var _getSourceFileNoResolve: js.Any = js.native
     
-    var _innerBinder: js.Any = js.native
+    /* private */ var _innerBinder: js.Any = js.native
     
-    var _innerChecker: js.Any = js.native
+    /* private */ var _innerChecker: js.Any = js.native
     
-    var _innerEmitter: js.Any = js.native
+    /* private */ var _innerEmitter: js.Any = js.native
     
-    var _innerResolver: js.Any = js.native
+    /* private */ var _innerResolver: js.Any = js.native
     
-    var _lineOffsetMap: js.Any = js.native
+    /* private */ var _lineOffsetMap: js.Any = js.native
     
-    var _normalizeFile: js.Any = js.native
+    /* private */ var _normalizeFile: js.Any = js.native
     
-    var _parsePossiblyAsync: js.Any = js.native
+    /* private */ var _parsePossiblyAsync: js.Any = js.native
     
-    var _parsePromise: js.Any = js.native
+    /* private */ var _parsePromise: js.Any = js.native
     
-    var _parseState: js.Any = js.native
+    /* private */ var _parseState: js.Any = js.native
     
-    var _processFilePossiblyAsync: js.Any = js.native
+    /* private */ var _processFilePossiblyAsync: js.Any = js.native
     
-    var _processImportsPossiblyAsync: js.Any = js.native
+    /* private */ var _processImportsPossiblyAsync: js.Any = js.native
     
-    var _processRootFilePossiblyAsync: js.Any = js.native
+    /* private */ var _processRootFilePossiblyAsync: js.Any = js.native
     
-    var _resolveFile: js.Any = js.native
+    /* private */ var _resolveFile: js.Any = js.native
     
-    var _rootNames: js.Any = js.native
+    /* private */ var _rootNames: js.Any = js.native
     
-    var _setSourceFileNoResolve: js.Any = js.native
+    /* private */ var _setSourceFileNoResolve: js.Any = js.native
     
-    var _writeFileFallback: js.Any = js.native
+    /* private */ var _writeFileFallback: js.Any = js.native
     
-    var _writeFileSyncFallback: js.Any = js.native
+    /* private */ var _writeFileSyncFallback: js.Any = js.native
     
     /**
       * Asynchronously binds each file in the grammar. Will also parse the grammar if it has not yet been parsed.
@@ -481,63 +481,39 @@ object grammarMod {
       * {@inheritDoc Grammar.(convert:1)}
       * @deprecated since 2.1.0 - `prex.CancellationToken` may no longer be accepted in future releases. Please use a token that implements `@esfx/cancelable.Cancelable`
       */
-    @scala.inline
-    def convert(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: Unit, hostFallback: Unit, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: Unit, hostFallback: Unit, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: Unit, hostFallback: CoreAsyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: Unit, hostFallback: CoreAsyncHost, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: Unit, hostFallback: CoreAsyncHost, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: Unit, hostFallback: CoreSyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: Unit, hostFallback: CoreSyncHost, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: Unit, hostFallback: CoreSyncHost, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: Unit, hostFallback: Host): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: Unit, hostFallback: Host, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: Unit, hostFallback: Host, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: CompilerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: CompilerOptions, hostFallback: Unit, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: CompilerOptions, hostFallback: Unit, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: CompilerOptions, hostFallback: CoreAsyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: CompilerOptions, hostFallback: CoreAsyncHost, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(
+    inline def convert(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def convert(content: String, options: Unit, hostFallback: Unit, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: Unit, hostFallback: Unit, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: Unit, hostFallback: CoreAsyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: Unit, hostFallback: CoreAsyncHost, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: Unit, hostFallback: CoreAsyncHost, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: Unit, hostFallback: CoreSyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: Unit, hostFallback: CoreSyncHost, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: Unit, hostFallback: CoreSyncHost, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: Unit, hostFallback: Host): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: Unit, hostFallback: Host, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: Unit, hostFallback: Host, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: CompilerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: CompilerOptions, hostFallback: Unit, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: CompilerOptions, hostFallback: Unit, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: CompilerOptions, hostFallback: CoreAsyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: CompilerOptions, hostFallback: CoreAsyncHost, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(
       content: String,
       options: CompilerOptions,
       hostFallback: CoreAsyncHost,
       cancelable: CancellationToken
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: CompilerOptions, hostFallback: CoreSyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: CompilerOptions, hostFallback: CoreSyncHost, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(
+    inline def convert(content: String, options: CompilerOptions, hostFallback: CoreSyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: CompilerOptions, hostFallback: CoreSyncHost, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(
       content: String,
       options: CompilerOptions,
       hostFallback: CoreSyncHost,
       cancelable: CancellationToken
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: CompilerOptions, hostFallback: Host): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: CompilerOptions, hostFallback: Host, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def convert(content: String, options: CompilerOptions, hostFallback: Host, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: CompilerOptions, hostFallback: Host): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: CompilerOptions, hostFallback: Host, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(content: String, options: CompilerOptions, hostFallback: Host, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

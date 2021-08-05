@@ -17,31 +17,23 @@ trait IShellRunOptions
 }
 object IShellRunOptions {
   
-  @scala.inline
-  def apply(): IShellRunOptions = {
+  inline def apply(): IShellRunOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IShellRunOptions]
   }
   
-  @scala.inline
-  implicit class IShellRunOptionsMutableBuilder[Self <: IShellRunOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IShellRunOptions](x: Self) {
     
-    @scala.inline
-    def setKillOnExit(value: Boolean): Self = StObject.set(x, "killOnExit", value.asInstanceOf[js.Any])
+    inline def setKillOnExit(value: Boolean): Self = StObject.set(x, "killOnExit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKillOnExitUndefined: Self = StObject.set(x, "killOnExit", js.undefined)
+    inline def setKillOnExitUndefined: Self = StObject.set(x, "killOnExit", js.undefined)
     
-    @scala.inline
-    def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     
-    @scala.inline
-    def setTruncateErrorOutput(value: Double): Self = StObject.set(x, "truncateErrorOutput", value.asInstanceOf[js.Any])
+    inline def setTruncateErrorOutput(value: Double): Self = StObject.set(x, "truncateErrorOutput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncateErrorOutputUndefined: Self = StObject.set(x, "truncateErrorOutput", js.undefined)
+    inline def setTruncateErrorOutputUndefined: Self = StObject.set(x, "truncateErrorOutput", js.undefined)
   }
 }

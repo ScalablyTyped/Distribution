@@ -21,17 +21,14 @@ object Sound {
   }
   object AudioSpriteSound {
     
-    @scala.inline
-    def apply(spritemap: js.Object): AudioSpriteSound = {
+    inline def apply(spritemap: js.Object): AudioSpriteSound = {
       val __obj = js.Dynamic.literal(spritemap = spritemap.asInstanceOf[js.Any])
       __obj.asInstanceOf[AudioSpriteSound]
     }
     
-    @scala.inline
-    implicit class AudioSpriteSoundMutableBuilder[Self <: AudioSpriteSound] (val x: Self) extends AnyVal {
+    extension [Self <: AudioSpriteSound](x: Self) {
       
-      @scala.inline
-      def setSpritemap(value: js.Object): Self = StObject.set(x, "spritemap", value.asInstanceOf[js.Any])
+      inline def setSpritemap(value: js.Object): Self = StObject.set(x, "spritemap", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,20 +52,16 @@ object Sound {
   }
   object DecodeAudioConfig {
     
-    @scala.inline
-    def apply(data: ArrayBuffer | String, key: String): DecodeAudioConfig = {
+    inline def apply(data: ArrayBuffer | String, key: String): DecodeAudioConfig = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecodeAudioConfig]
     }
     
-    @scala.inline
-    implicit class DecodeAudioConfigMutableBuilder[Self <: DecodeAudioConfig] (val x: Self) extends AnyVal {
+    extension [Self <: DecodeAudioConfig](x: Self) {
       
-      @scala.inline
-      def setData(value: ArrayBuffer | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ArrayBuffer | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,56 +115,40 @@ object Sound {
   }
   object SoundConfig {
     
-    @scala.inline
-    def apply(): SoundConfig = {
+    inline def apply(): SoundConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SoundConfig]
     }
     
-    @scala.inline
-    implicit class SoundConfigMutableBuilder[Self <: SoundConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SoundConfig](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDetune(value: Double): Self = StObject.set(x, "detune", value.asInstanceOf[js.Any])
+      inline def setDetune(value: Double): Self = StObject.set(x, "detune", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetuneUndefined: Self = StObject.set(x, "detune", js.undefined)
+      inline def setDetuneUndefined: Self = StObject.set(x, "detune", js.undefined)
       
-      @scala.inline
-      def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
+      inline def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuteUndefined: Self = StObject.set(x, "mute", js.undefined)
+      inline def setMuteUndefined: Self = StObject.set(x, "mute", js.undefined)
       
-      @scala.inline
-      def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+      inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
       
-      @scala.inline
-      def setSeek(value: Double): Self = StObject.set(x, "seek", value.asInstanceOf[js.Any])
+      inline def setSeek(value: Double): Self = StObject.set(x, "seek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeekUndefined: Self = StObject.set(x, "seek", js.undefined)
+      inline def setSeekUndefined: Self = StObject.set(x, "seek", js.undefined)
       
-      @scala.inline
-      def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+      inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+      inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
     }
   }
   
@@ -202,35 +179,26 @@ object Sound {
   }
   object SoundMarker {
     
-    @scala.inline
-    def apply(name: String): SoundMarker = {
+    inline def apply(name: String): SoundMarker = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[SoundMarker]
     }
     
-    @scala.inline
-    implicit class SoundMarkerMutableBuilder[Self <: SoundMarker] (val x: Self) extends AnyVal {
+    extension [Self <: SoundMarker](x: Self) {
       
-      @scala.inline
-      def setConfig(value: SoundConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: SoundConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
 }

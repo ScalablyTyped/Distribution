@@ -11,19 +11,15 @@ trait SensitiveCategoryTargetingOptionDetails extends StObject {
 }
 object SensitiveCategoryTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): SensitiveCategoryTargetingOptionDetails = {
+  inline def apply(): SensitiveCategoryTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SensitiveCategoryTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class SensitiveCategoryTargetingOptionDetailsMutableBuilder[Self <: SensitiveCategoryTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SensitiveCategoryTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setSensitiveCategory(value: String): Self = StObject.set(x, "sensitiveCategory", value.asInstanceOf[js.Any])
+    inline def setSensitiveCategory(value: String): Self = StObject.set(x, "sensitiveCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSensitiveCategoryUndefined: Self = StObject.set(x, "sensitiveCategory", js.undefined)
+    inline def setSensitiveCategoryUndefined: Self = StObject.set(x, "sensitiveCategory", js.undefined)
   }
 }

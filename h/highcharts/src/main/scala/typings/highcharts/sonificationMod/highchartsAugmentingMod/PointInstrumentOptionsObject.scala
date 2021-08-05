@@ -64,61 +64,43 @@ trait PointInstrumentOptionsObject extends StObject {
 }
 object PointInstrumentOptionsObject {
   
-  @scala.inline
-  def apply(): PointInstrumentOptionsObject = {
+  inline def apply(): PointInstrumentOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointInstrumentOptionsObject]
   }
   
-  @scala.inline
-  implicit class PointInstrumentOptionsObjectMutableBuilder[Self <: PointInstrumentOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: PointInstrumentOptionsObject](x: Self) {
     
-    @scala.inline
-    def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
+    inline def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
+    inline def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
     
-    @scala.inline
-    def setMaxFrequency(value: Double): Self = StObject.set(x, "maxFrequency", value.asInstanceOf[js.Any])
+    inline def setMaxFrequency(value: Double): Self = StObject.set(x, "maxFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFrequencyUndefined: Self = StObject.set(x, "maxFrequency", js.undefined)
+    inline def setMaxFrequencyUndefined: Self = StObject.set(x, "maxFrequency", js.undefined)
     
-    @scala.inline
-    def setMaxPan(value: Double): Self = StObject.set(x, "maxPan", value.asInstanceOf[js.Any])
+    inline def setMaxPan(value: Double): Self = StObject.set(x, "maxPan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPanUndefined: Self = StObject.set(x, "maxPan", js.undefined)
+    inline def setMaxPanUndefined: Self = StObject.set(x, "maxPan", js.undefined)
     
-    @scala.inline
-    def setMaxVolume(value: Double): Self = StObject.set(x, "maxVolume", value.asInstanceOf[js.Any])
+    inline def setMaxVolume(value: Double): Self = StObject.set(x, "maxVolume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxVolumeUndefined: Self = StObject.set(x, "maxVolume", js.undefined)
+    inline def setMaxVolumeUndefined: Self = StObject.set(x, "maxVolume", js.undefined)
     
-    @scala.inline
-    def setMinDuration(value: Double): Self = StObject.set(x, "minDuration", value.asInstanceOf[js.Any])
+    inline def setMinDuration(value: Double): Self = StObject.set(x, "minDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDurationUndefined: Self = StObject.set(x, "minDuration", js.undefined)
+    inline def setMinDurationUndefined: Self = StObject.set(x, "minDuration", js.undefined)
     
-    @scala.inline
-    def setMinFrequency(value: Double): Self = StObject.set(x, "minFrequency", value.asInstanceOf[js.Any])
+    inline def setMinFrequency(value: Double): Self = StObject.set(x, "minFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinFrequencyUndefined: Self = StObject.set(x, "minFrequency", js.undefined)
+    inline def setMinFrequencyUndefined: Self = StObject.set(x, "minFrequency", js.undefined)
     
-    @scala.inline
-    def setMinPan(value: Double): Self = StObject.set(x, "minPan", value.asInstanceOf[js.Any])
+    inline def setMinPan(value: Double): Self = StObject.set(x, "minPan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinPanUndefined: Self = StObject.set(x, "minPan", js.undefined)
+    inline def setMinPanUndefined: Self = StObject.set(x, "minPan", js.undefined)
     
-    @scala.inline
-    def setMinVolume(value: Double): Self = StObject.set(x, "minVolume", value.asInstanceOf[js.Any])
+    inline def setMinVolume(value: Double): Self = StObject.set(x, "minVolume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinVolumeUndefined: Self = StObject.set(x, "minVolume", js.undefined)
+    inline def setMinVolumeUndefined: Self = StObject.set(x, "minVolume", js.undefined)
   }
 }

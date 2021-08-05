@@ -70,17 +70,14 @@ object typesKmsinvalidstateexceptionMod {
   }
   object KMSInvalidStateException {
     
-    @scala.inline
-    def apply(): KMSInvalidStateException = {
+    inline def apply(): KMSInvalidStateException = {
       val __obj = js.Dynamic.literal(name = "KMSInvalidStateException")
       __obj.asInstanceOf[KMSInvalidStateException]
     }
     
-    @scala.inline
-    implicit class KMSInvalidStateExceptionMutableBuilder[Self <: KMSInvalidStateException] (val x: Self) extends AnyVal {
+    extension [Self <: KMSInvalidStateException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.KMSInvalidStateException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.KMSInvalidStateException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,20 +90,16 @@ object typesKmsinvalidstateexceptionMod {
   }
   object KMSInvalidStateExceptionDetails {
     
-    @scala.inline
-    def apply(): KMSInvalidStateExceptionDetails = {
+    inline def apply(): KMSInvalidStateExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KMSInvalidStateExceptionDetails]
     }
     
-    @scala.inline
-    implicit class KMSInvalidStateExceptionDetailsMutableBuilder[Self <: KMSInvalidStateExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: KMSInvalidStateExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

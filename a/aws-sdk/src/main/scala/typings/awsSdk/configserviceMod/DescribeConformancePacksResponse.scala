@@ -18,28 +18,21 @@ trait DescribeConformancePacksResponse extends StObject {
 }
 object DescribeConformancePacksResponse {
   
-  @scala.inline
-  def apply(): DescribeConformancePacksResponse = {
+  inline def apply(): DescribeConformancePacksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConformancePacksResponse]
   }
   
-  @scala.inline
-  implicit class DescribeConformancePacksResponseMutableBuilder[Self <: DescribeConformancePacksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConformancePacksResponse](x: Self) {
     
-    @scala.inline
-    def setConformancePackDetails(value: ConformancePackDetailList): Self = StObject.set(x, "ConformancePackDetails", value.asInstanceOf[js.Any])
+    inline def setConformancePackDetails(value: ConformancePackDetailList): Self = StObject.set(x, "ConformancePackDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformancePackDetailsUndefined: Self = StObject.set(x, "ConformancePackDetails", js.undefined)
+    inline def setConformancePackDetailsUndefined: Self = StObject.set(x, "ConformancePackDetails", js.undefined)
     
-    @scala.inline
-    def setConformancePackDetailsVarargs(value: ConformancePackDetail*): Self = StObject.set(x, "ConformancePackDetails", js.Array(value :_*))
+    inline def setConformancePackDetailsVarargs(value: ConformancePackDetail*): Self = StObject.set(x, "ConformancePackDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -17,16 +17,13 @@ trait SeriesSankeyDataLabelsFormatterContextObject
 }
 object SeriesSankeyDataLabelsFormatterContextObject {
   
-  @scala.inline
-  def apply(colorIndex: Double, percentage: Double, point: SankeyNodeObject, series: Series): SeriesSankeyDataLabelsFormatterContextObject = {
+  inline def apply(colorIndex: Double, percentage: Double, point: SankeyNodeObject, series: Series): SeriesSankeyDataLabelsFormatterContextObject = {
     val __obj = js.Dynamic.literal(colorIndex = colorIndex.asInstanceOf[js.Any], percentage = percentage.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesSankeyDataLabelsFormatterContextObject]
   }
   
-  @scala.inline
-  implicit class SeriesSankeyDataLabelsFormatterContextObjectMutableBuilder[Self <: SeriesSankeyDataLabelsFormatterContextObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesSankeyDataLabelsFormatterContextObject](x: Self) {
     
-    @scala.inline
-    def setPoint(value: SankeyNodeObject): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: SankeyNodeObject): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
   }
 }

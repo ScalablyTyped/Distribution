@@ -15,10 +15,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def scanCard(): js.Promise[CardDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("scanCard")().asInstanceOf[js.Promise[CardDetails]]
-    @scala.inline
-    def scanCard(config: CardIOModuleProps): js.Promise[CardDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("scanCard")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CardDetails]]
+    inline def scanCard(): js.Promise[CardDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("scanCard")().asInstanceOf[js.Promise[CardDetails]]
+    inline def scanCard(config: CardIOModuleProps): js.Promise[CardDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("scanCard")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CardDetails]]
   }
   
   object CardIOUtilities {
@@ -36,8 +34,7 @@ object mod {
     val DETECTION_MODE: CardIODetectionMode = js.native
     
     /**  iOS only - prepares card.io to launch faster. */
-    @scala.inline
-    def preload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preload")().asInstanceOf[Unit]
+    inline def preload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preload")().asInstanceOf[Unit]
   }
   
   @JSImport("react-native-awesome-card-io", "CardIOView")
@@ -83,8 +80,7 @@ object mod {
   }
   object CardDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cardNumber: String,
       cardType: String,
       cardholderName: String,
@@ -98,38 +94,27 @@ object mod {
       __obj.asInstanceOf[CardDetails]
     }
     
-    @scala.inline
-    implicit class CardDetailsMutableBuilder[Self <: CardDetails] (val x: Self) extends AnyVal {
+    extension [Self <: CardDetails](x: Self) {
       
-      @scala.inline
-      def setCardNumber(value: String): Self = StObject.set(x, "cardNumber", value.asInstanceOf[js.Any])
+      inline def setCardNumber(value: String): Self = StObject.set(x, "cardNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
+      inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardholderName(value: String): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
+      inline def setCardholderName(value: String): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCvv(value: String): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
+      inline def setCvv(value: String): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiryMonth(value: Double): Self = StObject.set(x, "expiryMonth", value.asInstanceOf[js.Any])
+      inline def setExpiryMonth(value: Double): Self = StObject.set(x, "expiryMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiryYear(value: Double): Self = StObject.set(x, "expiryYear", value.asInstanceOf[js.Any])
+      inline def setExpiryYear(value: Double): Self = StObject.set(x, "expiryYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+      inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedactedCardNumber(value: String): Self = StObject.set(x, "redactedCardNumber", value.asInstanceOf[js.Any])
+      inline def setRedactedCardNumber(value: String): Self = StObject.set(x, "redactedCardNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScanned(value: Boolean): Self = StObject.set(x, "scanned", value.asInstanceOf[js.Any])
+      inline def setScanned(value: Boolean): Self = StObject.set(x, "scanned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScannedUndefined: Self = StObject.set(x, "scanned", js.undefined)
+      inline def setScannedUndefined: Self = StObject.set(x, "scanned", js.undefined)
     }
   }
   
@@ -165,68 +150,48 @@ object mod {
   }
   object CardIOCommonProps {
     
-    @scala.inline
-    def apply(): CardIOCommonProps = {
+    inline def apply(): CardIOCommonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardIOCommonProps]
     }
     
-    @scala.inline
-    implicit class CardIOCommonPropsMutableBuilder[Self <: CardIOCommonProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardIOCommonProps](x: Self) {
       
-      @scala.inline
-      def setAllowFreelyRotatingCardGuide(value: Boolean): Self = StObject.set(x, "allowFreelyRotatingCardGuide", value.asInstanceOf[js.Any])
+      inline def setAllowFreelyRotatingCardGuide(value: Boolean): Self = StObject.set(x, "allowFreelyRotatingCardGuide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowFreelyRotatingCardGuideUndefined: Self = StObject.set(x, "allowFreelyRotatingCardGuide", js.undefined)
+      inline def setAllowFreelyRotatingCardGuideUndefined: Self = StObject.set(x, "allowFreelyRotatingCardGuide", js.undefined)
       
-      @scala.inline
-      def setDetectionMode(value: CardIODetectionMode): Self = StObject.set(x, "detectionMode", value.asInstanceOf[js.Any])
+      inline def setDetectionMode(value: CardIODetectionMode): Self = StObject.set(x, "detectionMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectionModeUndefined: Self = StObject.set(x, "detectionMode", js.undefined)
+      inline def setDetectionModeUndefined: Self = StObject.set(x, "detectionMode", js.undefined)
       
-      @scala.inline
-      def setGuideColor(value: String | Double): Self = StObject.set(x, "guideColor", value.asInstanceOf[js.Any])
+      inline def setGuideColor(value: String | Double): Self = StObject.set(x, "guideColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGuideColorUndefined: Self = StObject.set(x, "guideColor", js.undefined)
+      inline def setGuideColorUndefined: Self = StObject.set(x, "guideColor", js.undefined)
       
-      @scala.inline
-      def setHideCardIOLogo(value: Boolean): Self = StObject.set(x, "hideCardIOLogo", value.asInstanceOf[js.Any])
+      inline def setHideCardIOLogo(value: Boolean): Self = StObject.set(x, "hideCardIOLogo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideCardIOLogoUndefined: Self = StObject.set(x, "hideCardIOLogo", js.undefined)
+      inline def setHideCardIOLogoUndefined: Self = StObject.set(x, "hideCardIOLogo", js.undefined)
       
-      @scala.inline
-      def setLanguageOrLocale(value: String): Self = StObject.set(x, "languageOrLocale", value.asInstanceOf[js.Any])
+      inline def setLanguageOrLocale(value: String): Self = StObject.set(x, "languageOrLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageOrLocaleUndefined: Self = StObject.set(x, "languageOrLocale", js.undefined)
+      inline def setLanguageOrLocaleUndefined: Self = StObject.set(x, "languageOrLocale", js.undefined)
       
-      @scala.inline
-      def setScanExpiry(value: Boolean): Self = StObject.set(x, "scanExpiry", value.asInstanceOf[js.Any])
+      inline def setScanExpiry(value: Boolean): Self = StObject.set(x, "scanExpiry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScanExpiryUndefined: Self = StObject.set(x, "scanExpiry", js.undefined)
+      inline def setScanExpiryUndefined: Self = StObject.set(x, "scanExpiry", js.undefined)
       
-      @scala.inline
-      def setScanInstructions(value: String): Self = StObject.set(x, "scanInstructions", value.asInstanceOf[js.Any])
+      inline def setScanInstructions(value: String): Self = StObject.set(x, "scanInstructions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScanInstructionsUndefined: Self = StObject.set(x, "scanInstructions", js.undefined)
+      inline def setScanInstructionsUndefined: Self = StObject.set(x, "scanInstructions", js.undefined)
       
-      @scala.inline
-      def setScannedImageDuration(value: Double): Self = StObject.set(x, "scannedImageDuration", value.asInstanceOf[js.Any])
+      inline def setScannedImageDuration(value: Double): Self = StObject.set(x, "scannedImageDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScannedImageDurationUndefined: Self = StObject.set(x, "scannedImageDuration", js.undefined)
+      inline def setScannedImageDurationUndefined: Self = StObject.set(x, "scannedImageDuration", js.undefined)
       
-      @scala.inline
-      def setUseCardIOLogo(value: Boolean): Self = StObject.set(x, "useCardIOLogo", value.asInstanceOf[js.Any])
+      inline def setUseCardIOLogo(value: Boolean): Self = StObject.set(x, "useCardIOLogo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCardIOLogoUndefined: Self = StObject.set(x, "useCardIOLogo", js.undefined)
+      inline def setUseCardIOLogoUndefined: Self = StObject.set(x, "useCardIOLogo", js.undefined)
     }
   }
   
@@ -238,14 +203,11 @@ object mod {
   trait CardIODetectionMode extends StObject
   object CardIODetectionMode {
     
-    @scala.inline
-    def AUTOMATIC: typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.AUTOMATIC = "AUTOMATIC".asInstanceOf[typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.AUTOMATIC]
+    inline def AUTOMATIC: typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.AUTOMATIC = "AUTOMATIC".asInstanceOf[typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.AUTOMATIC]
     
-    @scala.inline
-    def IMAGE: typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.IMAGE = "IMAGE".asInstanceOf[typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.IMAGE]
+    inline def IMAGE: typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.IMAGE = "IMAGE".asInstanceOf[typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.IMAGE]
     
-    @scala.inline
-    def IMAGE_AND_NUMBER: typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.IMAGE_AND_NUMBER = "IMAGE_AND_NUMBER".asInstanceOf[typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.IMAGE_AND_NUMBER]
+    inline def IMAGE_AND_NUMBER: typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.IMAGE_AND_NUMBER = "IMAGE_AND_NUMBER".asInstanceOf[typings.reactNativeAwesomeCardIo.reactNativeAwesomeCardIoStrings.IMAGE_AND_NUMBER]
   }
   
   trait CardIOModuleProps
@@ -295,92 +257,64 @@ object mod {
   }
   object CardIOModuleProps {
     
-    @scala.inline
-    def apply(): CardIOModuleProps = {
+    inline def apply(): CardIOModuleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardIOModuleProps]
     }
     
-    @scala.inline
-    implicit class CardIOModulePropsMutableBuilder[Self <: CardIOModuleProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardIOModuleProps](x: Self) {
       
-      @scala.inline
-      def setDisableBlurWhenBackgrounding(value: Boolean): Self = StObject.set(x, "disableBlurWhenBackgrounding", value.asInstanceOf[js.Any])
+      inline def setDisableBlurWhenBackgrounding(value: Boolean): Self = StObject.set(x, "disableBlurWhenBackgrounding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableBlurWhenBackgroundingUndefined: Self = StObject.set(x, "disableBlurWhenBackgrounding", js.undefined)
+      inline def setDisableBlurWhenBackgroundingUndefined: Self = StObject.set(x, "disableBlurWhenBackgrounding", js.undefined)
       
-      @scala.inline
-      def setKeepStatusBarStyle(value: Boolean): Self = StObject.set(x, "keepStatusBarStyle", value.asInstanceOf[js.Any])
+      inline def setKeepStatusBarStyle(value: Boolean): Self = StObject.set(x, "keepStatusBarStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepStatusBarStyleUndefined: Self = StObject.set(x, "keepStatusBarStyle", js.undefined)
+      inline def setKeepStatusBarStyleUndefined: Self = StObject.set(x, "keepStatusBarStyle", js.undefined)
       
-      @scala.inline
-      def setNoCamera(value: Boolean): Self = StObject.set(x, "noCamera", value.asInstanceOf[js.Any])
+      inline def setNoCamera(value: Boolean): Self = StObject.set(x, "noCamera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoCameraUndefined: Self = StObject.set(x, "noCamera", js.undefined)
+      inline def setNoCameraUndefined: Self = StObject.set(x, "noCamera", js.undefined)
       
-      @scala.inline
-      def setRequireCVV(value: Boolean): Self = StObject.set(x, "requireCVV", value.asInstanceOf[js.Any])
+      inline def setRequireCVV(value: Boolean): Self = StObject.set(x, "requireCVV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireCVVUndefined: Self = StObject.set(x, "requireCVV", js.undefined)
+      inline def setRequireCVVUndefined: Self = StObject.set(x, "requireCVV", js.undefined)
       
-      @scala.inline
-      def setRequireCardholderName(value: Boolean): Self = StObject.set(x, "requireCardholderName", value.asInstanceOf[js.Any])
+      inline def setRequireCardholderName(value: Boolean): Self = StObject.set(x, "requireCardholderName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireCardholderNameUndefined: Self = StObject.set(x, "requireCardholderName", js.undefined)
+      inline def setRequireCardholderNameUndefined: Self = StObject.set(x, "requireCardholderName", js.undefined)
       
-      @scala.inline
-      def setRequireExpiry(value: Boolean): Self = StObject.set(x, "requireExpiry", value.asInstanceOf[js.Any])
+      inline def setRequireExpiry(value: Boolean): Self = StObject.set(x, "requireExpiry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireExpiryUndefined: Self = StObject.set(x, "requireExpiry", js.undefined)
+      inline def setRequireExpiryUndefined: Self = StObject.set(x, "requireExpiry", js.undefined)
       
-      @scala.inline
-      def setRequirePostalCode(value: Boolean): Self = StObject.set(x, "requirePostalCode", value.asInstanceOf[js.Any])
+      inline def setRequirePostalCode(value: Boolean): Self = StObject.set(x, "requirePostalCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequirePostalCodeUndefined: Self = StObject.set(x, "requirePostalCode", js.undefined)
+      inline def setRequirePostalCodeUndefined: Self = StObject.set(x, "requirePostalCode", js.undefined)
       
-      @scala.inline
-      def setRestrictPostalCodeToNumericOnly(value: Boolean): Self = StObject.set(x, "restrictPostalCodeToNumericOnly", value.asInstanceOf[js.Any])
+      inline def setRestrictPostalCodeToNumericOnly(value: Boolean): Self = StObject.set(x, "restrictPostalCodeToNumericOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestrictPostalCodeToNumericOnlyUndefined: Self = StObject.set(x, "restrictPostalCodeToNumericOnly", js.undefined)
+      inline def setRestrictPostalCodeToNumericOnlyUndefined: Self = StObject.set(x, "restrictPostalCodeToNumericOnly", js.undefined)
       
-      @scala.inline
-      def setSuppressConfirmation(value: Boolean): Self = StObject.set(x, "suppressConfirmation", value.asInstanceOf[js.Any])
+      inline def setSuppressConfirmation(value: Boolean): Self = StObject.set(x, "suppressConfirmation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressConfirmationUndefined: Self = StObject.set(x, "suppressConfirmation", js.undefined)
+      inline def setSuppressConfirmationUndefined: Self = StObject.set(x, "suppressConfirmation", js.undefined)
       
-      @scala.inline
-      def setSuppressManualEntry(value: Boolean): Self = StObject.set(x, "suppressManualEntry", value.asInstanceOf[js.Any])
+      inline def setSuppressManualEntry(value: Boolean): Self = StObject.set(x, "suppressManualEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressManualEntryUndefined: Self = StObject.set(x, "suppressManualEntry", js.undefined)
+      inline def setSuppressManualEntryUndefined: Self = StObject.set(x, "suppressManualEntry", js.undefined)
       
-      @scala.inline
-      def setSuppressScannedCardImage(value: Boolean): Self = StObject.set(x, "suppressScannedCardImage", value.asInstanceOf[js.Any])
+      inline def setSuppressScannedCardImage(value: Boolean): Self = StObject.set(x, "suppressScannedCardImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressScannedCardImageUndefined: Self = StObject.set(x, "suppressScannedCardImage", js.undefined)
+      inline def setSuppressScannedCardImageUndefined: Self = StObject.set(x, "suppressScannedCardImage", js.undefined)
       
-      @scala.inline
-      def setUnblurDigits(value: Double): Self = StObject.set(x, "unblurDigits", value.asInstanceOf[js.Any])
+      inline def setUnblurDigits(value: Double): Self = StObject.set(x, "unblurDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnblurDigitsUndefined: Self = StObject.set(x, "unblurDigits", js.undefined)
+      inline def setUnblurDigitsUndefined: Self = StObject.set(x, "unblurDigits", js.undefined)
       
-      @scala.inline
-      def setUsePaypalActionbarIcon(value: Boolean): Self = StObject.set(x, "usePaypalActionbarIcon", value.asInstanceOf[js.Any])
+      inline def setUsePaypalActionbarIcon(value: Boolean): Self = StObject.set(x, "usePaypalActionbarIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsePaypalActionbarIconUndefined: Self = StObject.set(x, "usePaypalActionbarIcon", js.undefined)
+      inline def setUsePaypalActionbarIconUndefined: Self = StObject.set(x, "usePaypalActionbarIcon", js.undefined)
     }
   }
   
@@ -396,26 +330,20 @@ object mod {
   }
   object CardIOViewProps {
     
-    @scala.inline
-    def apply(didScanCard: CardDetails => Unit): CardIOViewProps = {
+    inline def apply(didScanCard: CardDetails => Unit): CardIOViewProps = {
       val __obj = js.Dynamic.literal(didScanCard = js.Any.fromFunction1(didScanCard))
       __obj.asInstanceOf[CardIOViewProps]
     }
     
-    @scala.inline
-    implicit class CardIOViewPropsMutableBuilder[Self <: CardIOViewProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardIOViewProps](x: Self) {
       
-      @scala.inline
-      def setDidScanCard(value: CardDetails => Unit): Self = StObject.set(x, "didScanCard", js.Any.fromFunction1(value))
+      inline def setDidScanCard(value: CardDetails => Unit): Self = StObject.set(x, "didScanCard", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

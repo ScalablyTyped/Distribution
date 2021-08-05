@@ -28,37 +28,27 @@ trait SalesforceConnectorProfileCredentials extends StObject {
 }
 object SalesforceConnectorProfileCredentials {
   
-  @scala.inline
-  def apply(): SalesforceConnectorProfileCredentials = {
+  inline def apply(): SalesforceConnectorProfileCredentials = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SalesforceConnectorProfileCredentials]
   }
   
-  @scala.inline
-  implicit class SalesforceConnectorProfileCredentialsMutableBuilder[Self <: SalesforceConnectorProfileCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: SalesforceConnectorProfileCredentials](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: AccessToken): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: AccessToken): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
-    @scala.inline
-    def setClientCredentialsArn(value: ClientCredentialsArn): Self = StObject.set(x, "clientCredentialsArn", value.asInstanceOf[js.Any])
+    inline def setClientCredentialsArn(value: ClientCredentialsArn): Self = StObject.set(x, "clientCredentialsArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientCredentialsArnUndefined: Self = StObject.set(x, "clientCredentialsArn", js.undefined)
+    inline def setClientCredentialsArnUndefined: Self = StObject.set(x, "clientCredentialsArn", js.undefined)
     
-    @scala.inline
-    def setOAuthRequest(value: ConnectorOAuthRequest): Self = StObject.set(x, "oAuthRequest", value.asInstanceOf[js.Any])
+    inline def setOAuthRequest(value: ConnectorOAuthRequest): Self = StObject.set(x, "oAuthRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOAuthRequestUndefined: Self = StObject.set(x, "oAuthRequest", js.undefined)
+    inline def setOAuthRequestUndefined: Self = StObject.set(x, "oAuthRequest", js.undefined)
     
-    @scala.inline
-    def setRefreshToken(value: RefreshToken): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+    inline def setRefreshToken(value: RefreshToken): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
+    inline def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
   }
 }

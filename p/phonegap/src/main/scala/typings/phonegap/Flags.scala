@@ -12,22 +12,17 @@ trait Flags extends StObject {
 }
 object Flags {
   
-  @scala.inline
-  def apply(create: Boolean): Flags = {
+  inline def apply(create: Boolean): Flags = {
     val __obj = js.Dynamic.literal(create = create.asInstanceOf[js.Any])
     __obj.asInstanceOf[Flags]
   }
   
-  @scala.inline
-  implicit class FlagsMutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
+  extension [Self <: Flags](x: Self) {
     
-    @scala.inline
-    def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+    inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+    inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
   }
 }

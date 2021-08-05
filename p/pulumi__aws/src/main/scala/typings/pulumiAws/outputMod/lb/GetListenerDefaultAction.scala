@@ -22,8 +22,7 @@ trait GetListenerDefaultAction extends StObject {
 }
 object GetListenerDefaultAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authenticateCognitos: js.Array[GetListenerDefaultActionAuthenticateCognito],
     authenticateOidcs: js.Array[GetListenerDefaultActionAuthenticateOidc],
     fixedResponses: js.Array[GetListenerDefaultActionFixedResponse],
@@ -37,40 +36,28 @@ object GetListenerDefaultAction {
     __obj.asInstanceOf[GetListenerDefaultAction]
   }
   
-  @scala.inline
-  implicit class GetListenerDefaultActionMutableBuilder[Self <: GetListenerDefaultAction] (val x: Self) extends AnyVal {
+  extension [Self <: GetListenerDefaultAction](x: Self) {
     
-    @scala.inline
-    def setAuthenticateCognitos(value: js.Array[GetListenerDefaultActionAuthenticateCognito]): Self = StObject.set(x, "authenticateCognitos", value.asInstanceOf[js.Any])
+    inline def setAuthenticateCognitos(value: js.Array[GetListenerDefaultActionAuthenticateCognito]): Self = StObject.set(x, "authenticateCognitos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticateCognitosVarargs(value: GetListenerDefaultActionAuthenticateCognito*): Self = StObject.set(x, "authenticateCognitos", js.Array(value :_*))
+    inline def setAuthenticateCognitosVarargs(value: GetListenerDefaultActionAuthenticateCognito*): Self = StObject.set(x, "authenticateCognitos", js.Array(value :_*))
     
-    @scala.inline
-    def setAuthenticateOidcs(value: js.Array[GetListenerDefaultActionAuthenticateOidc]): Self = StObject.set(x, "authenticateOidcs", value.asInstanceOf[js.Any])
+    inline def setAuthenticateOidcs(value: js.Array[GetListenerDefaultActionAuthenticateOidc]): Self = StObject.set(x, "authenticateOidcs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticateOidcsVarargs(value: GetListenerDefaultActionAuthenticateOidc*): Self = StObject.set(x, "authenticateOidcs", js.Array(value :_*))
+    inline def setAuthenticateOidcsVarargs(value: GetListenerDefaultActionAuthenticateOidc*): Self = StObject.set(x, "authenticateOidcs", js.Array(value :_*))
     
-    @scala.inline
-    def setFixedResponses(value: js.Array[GetListenerDefaultActionFixedResponse]): Self = StObject.set(x, "fixedResponses", value.asInstanceOf[js.Any])
+    inline def setFixedResponses(value: js.Array[GetListenerDefaultActionFixedResponse]): Self = StObject.set(x, "fixedResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedResponsesVarargs(value: GetListenerDefaultActionFixedResponse*): Self = StObject.set(x, "fixedResponses", js.Array(value :_*))
+    inline def setFixedResponsesVarargs(value: GetListenerDefaultActionFixedResponse*): Self = StObject.set(x, "fixedResponses", js.Array(value :_*))
     
-    @scala.inline
-    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirects(value: js.Array[GetListenerDefaultActionRedirect]): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
+    inline def setRedirects(value: js.Array[GetListenerDefaultActionRedirect]): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectsVarargs(value: GetListenerDefaultActionRedirect*): Self = StObject.set(x, "redirects", js.Array(value :_*))
+    inline def setRedirectsVarargs(value: GetListenerDefaultActionRedirect*): Self = StObject.set(x, "redirects", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetGroupArn(value: String): Self = StObject.set(x, "targetGroupArn", value.asInstanceOf[js.Any])
+    inline def setTargetGroupArn(value: String): Self = StObject.set(x, "targetGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

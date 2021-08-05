@@ -18,28 +18,21 @@ trait ListDocumentVersionsResult extends StObject {
 }
 object ListDocumentVersionsResult {
   
-  @scala.inline
-  def apply(): ListDocumentVersionsResult = {
+  inline def apply(): ListDocumentVersionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDocumentVersionsResult]
   }
   
-  @scala.inline
-  implicit class ListDocumentVersionsResultMutableBuilder[Self <: ListDocumentVersionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListDocumentVersionsResult](x: Self) {
     
-    @scala.inline
-    def setDocumentVersions(value: DocumentVersionList): Self = StObject.set(x, "DocumentVersions", value.asInstanceOf[js.Any])
+    inline def setDocumentVersions(value: DocumentVersionList): Self = StObject.set(x, "DocumentVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentVersionsUndefined: Self = StObject.set(x, "DocumentVersions", js.undefined)
+    inline def setDocumentVersionsUndefined: Self = StObject.set(x, "DocumentVersions", js.undefined)
     
-    @scala.inline
-    def setDocumentVersionsVarargs(value: DocumentVersionInfo*): Self = StObject.set(x, "DocumentVersions", js.Array(value :_*))
+    inline def setDocumentVersionsVarargs(value: DocumentVersionInfo*): Self = StObject.set(x, "DocumentVersions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

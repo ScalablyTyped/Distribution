@@ -27,49 +27,35 @@ trait PartialRouterTypesRoute extends StObject {
 }
 object PartialRouterTypesRoute {
   
-  @scala.inline
-  def apply(): PartialRouterTypesRoute = {
+  inline def apply(): PartialRouterTypesRoute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialRouterTypesRoute]
   }
   
-  @scala.inline
-  implicit class PartialRouterTypesRouteMutableBuilder[Self <: PartialRouterTypesRoute] (val x: Self) extends AnyVal {
+  extension [Self <: PartialRouterTypesRoute](x: Self) {
     
-    @scala.inline
-    def setComputedMatch(value: `match`[Route]): Self = StObject.set(x, "computedMatch", value.asInstanceOf[js.Any])
+    inline def setComputedMatch(value: `match`[Route]): Self = StObject.set(x, "computedMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputedMatchUndefined: Self = StObject.set(x, "computedMatch", js.undefined)
+    inline def setComputedMatchUndefined: Self = StObject.set(x, "computedMatch", js.undefined)
     
-    @scala.inline
-    def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Location[LocationState] | Pathname): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location[LocationState] | Pathname): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setMatch(value: `match`[js.Object]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: `match`[js.Object]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
-    @scala.inline
-    def setRoute(value: Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
+    inline def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
     
-    @scala.inline
-    def setStaticContext(value: StaticContext): Self = StObject.set(x, "staticContext", value.asInstanceOf[js.Any])
+    inline def setStaticContext(value: StaticContext): Self = StObject.set(x, "staticContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticContextUndefined: Self = StObject.set(x, "staticContext", js.undefined)
+    inline def setStaticContextUndefined: Self = StObject.set(x, "staticContext", js.undefined)
   }
 }

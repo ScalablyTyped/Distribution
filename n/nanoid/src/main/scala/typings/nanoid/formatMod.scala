@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formatMod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     random: js.Function1[/* bytes */ Double, js.Promise[js.Array[Double]]],
     alphabet: String,
     size: Double

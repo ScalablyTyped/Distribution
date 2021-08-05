@@ -34,8 +34,7 @@ trait PersistentSettings extends StObject {
 }
 object PersistentSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     available: () => Boolean,
     delete: String => js.Promise[Unit],
     disableNodeSettings: js.Array[String] => Unit,
@@ -54,46 +53,32 @@ object PersistentSettings {
     __obj.asInstanceOf[PersistentSettings]
   }
   
-  @scala.inline
-  implicit class PersistentSettingsMutableBuilder[Self <: PersistentSettings] (val x: Self) extends AnyVal {
+  extension [Self <: PersistentSettings](x: Self) {
     
-    @scala.inline
-    def setAvailable(value: () => Boolean): Self = StObject.set(x, "available", js.Any.fromFunction0(value))
+    inline def setAvailable(value: () => Boolean): Self = StObject.set(x, "available", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisableNodeSettings(value: js.Array[String] => Unit): Self = StObject.set(x, "disableNodeSettings", js.Any.fromFunction1(value))
+    inline def setDisableNodeSettings(value: js.Array[String] => Unit): Self = StObject.set(x, "disableNodeSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnableNodeSettings(value: js.Array[String] => Unit): Self = StObject.set(x, "enableNodeSettings", js.Any.fromFunction1(value))
+    inline def setEnableNodeSettings(value: js.Array[String] => Unit): Self = StObject.set(x, "enableNodeSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExportNodeSettings(value: js.Object => js.Object): Self = StObject.set(x, "exportNodeSettings", js.Any.fromFunction1(value))
+    inline def setExportNodeSettings(value: js.Object => js.Object): Self = StObject.set(x, "exportNodeSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetUserSettings(value: String => js.Object): Self = StObject.set(x, "getUserSettings", js.Any.fromFunction1(value))
+    inline def setGetUserSettings(value: String => js.Object): Self = StObject.set(x, "getUserSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInit(value: LocalSettings => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: LocalSettings => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoad(value: StorageModule => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: StorageModule => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterNodeSettings(value: (String, js.Object) => Unit): Self = StObject.set(x, "registerNodeSettings", js.Any.fromFunction2(value))
+    inline def setRegisterNodeSettings(value: (String, js.Object) => Unit): Self = StObject.set(x, "registerNodeSettings", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: (String, js.Any) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (String, js.Any) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetUserSettings(value: (String, js.Object) => js.Promise[Unit]): Self = StObject.set(x, "setUserSettings", js.Any.fromFunction2(value))
+    inline def setSetUserSettings(value: (String, js.Object) => js.Promise[Unit]): Self = StObject.set(x, "setUserSettings", js.Any.fromFunction2(value))
   }
 }

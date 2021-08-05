@@ -18,28 +18,21 @@ trait DeletionTaskFailureReasonType extends StObject {
 }
 object DeletionTaskFailureReasonType {
   
-  @scala.inline
-  def apply(): DeletionTaskFailureReasonType = {
+  inline def apply(): DeletionTaskFailureReasonType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeletionTaskFailureReasonType]
   }
   
-  @scala.inline
-  implicit class DeletionTaskFailureReasonTypeMutableBuilder[Self <: DeletionTaskFailureReasonType] (val x: Self) extends AnyVal {
+  extension [Self <: DeletionTaskFailureReasonType](x: Self) {
     
-    @scala.inline
-    def setReason(value: ReasonType): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: ReasonType): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
     
-    @scala.inline
-    def setRoleUsageList(value: RoleUsageListType): Self = StObject.set(x, "RoleUsageList", value.asInstanceOf[js.Any])
+    inline def setRoleUsageList(value: RoleUsageListType): Self = StObject.set(x, "RoleUsageList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUsageListUndefined: Self = StObject.set(x, "RoleUsageList", js.undefined)
+    inline def setRoleUsageListUndefined: Self = StObject.set(x, "RoleUsageList", js.undefined)
     
-    @scala.inline
-    def setRoleUsageListVarargs(value: RoleUsageType*): Self = StObject.set(x, "RoleUsageList", js.Array(value :_*))
+    inline def setRoleUsageListVarargs(value: RoleUsageType*): Self = StObject.set(x, "RoleUsageList", js.Array(value :_*))
   }
 }

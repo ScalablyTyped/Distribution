@@ -38,8 +38,7 @@ trait XInteractionFilterSelect
 }
 object XInteractionFilterSelect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Filter: String,
     acquire: () => Unit,
     getFilter: () => String,
@@ -52,16 +51,12 @@ object XInteractionFilterSelect {
     __obj.asInstanceOf[XInteractionFilterSelect]
   }
   
-  @scala.inline
-  implicit class XInteractionFilterSelectMutableBuilder[Self <: XInteractionFilterSelect] (val x: Self) extends AnyVal {
+  extension [Self <: XInteractionFilterSelect](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFilter(value: () => String): Self = StObject.set(x, "getFilter", js.Any.fromFunction0(value))
+    inline def setGetFilter(value: () => String): Self = StObject.set(x, "getFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFilter(value: String => Unit): Self = StObject.set(x, "setFilter", js.Any.fromFunction1(value))
+    inline def setSetFilter(value: String => Unit): Self = StObject.set(x, "setFilter", js.Any.fromFunction1(value))
   }
 }

@@ -99,21 +99,16 @@ object clusterSnapshotMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ClusterSnapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ClusterSnapshot]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ClusterSnapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClusterSnapshot]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ClusterSnapshotState): ClusterSnapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ClusterSnapshot]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ClusterSnapshotState, opts: CustomResourceOptions): ClusterSnapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClusterSnapshot]
+    inline def get(name: String, id: Input[ID]): ClusterSnapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ClusterSnapshot]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ClusterSnapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClusterSnapshot]
+    inline def get(name: String, id: Input[ID], state: ClusterSnapshotState): ClusterSnapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ClusterSnapshot]
+    inline def get(name: String, id: Input[ID], state: ClusterSnapshotState, opts: CustomResourceOptions): ClusterSnapshot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClusterSnapshot]
     
     /**
       * Returns true if the given object is an instance of ClusterSnapshot.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/docdb/clusterSnapshot.ClusterSnapshot */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/docdb/clusterSnapshot.ClusterSnapshot */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/docdb/clusterSnapshot.ClusterSnapshot */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/docdb/clusterSnapshot.ClusterSnapshot */ Boolean]
   }
   
   trait ClusterSnapshotArgs extends StObject {
@@ -130,20 +125,16 @@ object clusterSnapshotMod {
   }
   object ClusterSnapshotArgs {
     
-    @scala.inline
-    def apply(dbClusterIdentifier: Input[String], dbClusterSnapshotIdentifier: Input[String]): ClusterSnapshotArgs = {
+    inline def apply(dbClusterIdentifier: Input[String], dbClusterSnapshotIdentifier: Input[String]): ClusterSnapshotArgs = {
       val __obj = js.Dynamic.literal(dbClusterIdentifier = dbClusterIdentifier.asInstanceOf[js.Any], dbClusterSnapshotIdentifier = dbClusterSnapshotIdentifier.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterSnapshotArgs]
     }
     
-    @scala.inline
-    implicit class ClusterSnapshotArgsMutableBuilder[Self <: ClusterSnapshotArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterSnapshotArgs](x: Self) {
       
-      @scala.inline
-      def setDbClusterIdentifier(value: Input[String]): Self = StObject.set(x, "dbClusterIdentifier", value.asInstanceOf[js.Any])
+      inline def setDbClusterIdentifier(value: Input[String]): Self = StObject.set(x, "dbClusterIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbClusterSnapshotIdentifier(value: Input[String]): Self = StObject.set(x, "dbClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
+      inline def setDbClusterSnapshotIdentifier(value: Input[String]): Self = StObject.set(x, "dbClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
     }
   }
   
@@ -210,95 +201,66 @@ object clusterSnapshotMod {
   }
   object ClusterSnapshotState {
     
-    @scala.inline
-    def apply(): ClusterSnapshotState = {
+    inline def apply(): ClusterSnapshotState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClusterSnapshotState]
     }
     
-    @scala.inline
-    implicit class ClusterSnapshotStateMutableBuilder[Self <: ClusterSnapshotState] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterSnapshotState](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
+      inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZonesVarargs(value: Input[String]*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
+      inline def setAvailabilityZonesVarargs(value: Input[String]*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
       
-      @scala.inline
-      def setDbClusterIdentifier(value: Input[String]): Self = StObject.set(x, "dbClusterIdentifier", value.asInstanceOf[js.Any])
+      inline def setDbClusterIdentifier(value: Input[String]): Self = StObject.set(x, "dbClusterIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbClusterIdentifierUndefined: Self = StObject.set(x, "dbClusterIdentifier", js.undefined)
+      inline def setDbClusterIdentifierUndefined: Self = StObject.set(x, "dbClusterIdentifier", js.undefined)
       
-      @scala.inline
-      def setDbClusterSnapshotArn(value: Input[String]): Self = StObject.set(x, "dbClusterSnapshotArn", value.asInstanceOf[js.Any])
+      inline def setDbClusterSnapshotArn(value: Input[String]): Self = StObject.set(x, "dbClusterSnapshotArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbClusterSnapshotArnUndefined: Self = StObject.set(x, "dbClusterSnapshotArn", js.undefined)
+      inline def setDbClusterSnapshotArnUndefined: Self = StObject.set(x, "dbClusterSnapshotArn", js.undefined)
       
-      @scala.inline
-      def setDbClusterSnapshotIdentifier(value: Input[String]): Self = StObject.set(x, "dbClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
+      inline def setDbClusterSnapshotIdentifier(value: Input[String]): Self = StObject.set(x, "dbClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbClusterSnapshotIdentifierUndefined: Self = StObject.set(x, "dbClusterSnapshotIdentifier", js.undefined)
+      inline def setDbClusterSnapshotIdentifierUndefined: Self = StObject.set(x, "dbClusterSnapshotIdentifier", js.undefined)
       
-      @scala.inline
-      def setEngine(value: Input[String]): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+      inline def setEngine(value: Input[String]): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+      inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
       
-      @scala.inline
-      def setEngineVersion(value: Input[String]): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
+      inline def setEngineVersion(value: Input[String]): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineVersionUndefined: Self = StObject.set(x, "engineVersion", js.undefined)
+      inline def setEngineVersionUndefined: Self = StObject.set(x, "engineVersion", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setSnapshotType(value: Input[String]): Self = StObject.set(x, "snapshotType", value.asInstanceOf[js.Any])
+      inline def setSnapshotType(value: Input[String]): Self = StObject.set(x, "snapshotType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotTypeUndefined: Self = StObject.set(x, "snapshotType", js.undefined)
+      inline def setSnapshotTypeUndefined: Self = StObject.set(x, "snapshotType", js.undefined)
       
-      @scala.inline
-      def setSourceDbClusterSnapshotArn(value: Input[String]): Self = StObject.set(x, "sourceDbClusterSnapshotArn", value.asInstanceOf[js.Any])
+      inline def setSourceDbClusterSnapshotArn(value: Input[String]): Self = StObject.set(x, "sourceDbClusterSnapshotArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceDbClusterSnapshotArnUndefined: Self = StObject.set(x, "sourceDbClusterSnapshotArn", js.undefined)
+      inline def setSourceDbClusterSnapshotArnUndefined: Self = StObject.set(x, "sourceDbClusterSnapshotArn", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setStorageEncrypted(value: Input[Boolean]): Self = StObject.set(x, "storageEncrypted", value.asInstanceOf[js.Any])
+      inline def setStorageEncrypted(value: Input[Boolean]): Self = StObject.set(x, "storageEncrypted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageEncryptedUndefined: Self = StObject.set(x, "storageEncrypted", js.undefined)
+      inline def setStorageEncryptedUndefined: Self = StObject.set(x, "storageEncrypted", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
 }

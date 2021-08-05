@@ -88,8 +88,7 @@ object colorsMod {
   }
   object Colors {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ancillary: ColorFunction,
       failure: ColorFunction,
       help: HelpColors,
@@ -103,32 +102,23 @@ object colorsMod {
       __obj.asInstanceOf[Colors]
     }
     
-    @scala.inline
-    implicit class ColorsMutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
+    extension [Self <: Colors](x: Self) {
       
-      @scala.inline
-      def setAncillary(value: ColorFunction): Self = StObject.set(x, "ancillary", value.asInstanceOf[js.Any])
+      inline def setAncillary(value: ColorFunction): Self = StObject.set(x, "ancillary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailure(value: ColorFunction): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
+      inline def setFailure(value: ColorFunction): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelp(value: HelpColors): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: HelpColors): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: ColorFunction): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: ColorFunction): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog(value: LoggerColors): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: LoggerColors): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrong(value: ColorFunction): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+      inline def setStrong(value: ColorFunction): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: ColorFunction): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: ColorFunction): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeak(value: ColorFunction): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
+      inline def setWeak(value: ColorFunction): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,20 +138,16 @@ object colorsMod {
   }
   object HelpColors {
     
-    @scala.inline
-    def apply(group: HelpGroupColors, title: ColorFunction): HelpColors = {
+    inline def apply(group: HelpGroupColors, title: ColorFunction): HelpColors = {
       val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[HelpColors]
     }
     
-    @scala.inline
-    implicit class HelpColorsMutableBuilder[Self <: HelpColors] (val x: Self) extends AnyVal {
+    extension [Self <: HelpColors](x: Self) {
       
-      @scala.inline
-      def setGroup(value: HelpGroupColors): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: HelpGroupColors): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: ColorFunction): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ColorFunction): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,26 +172,20 @@ object colorsMod {
   }
   object HelpGroupColors {
     
-    @scala.inline
-    def apply(beta: ColorFunction, deprecated: ColorFunction, experimental: ColorFunction, paid: ColorFunction): HelpGroupColors = {
+    inline def apply(beta: ColorFunction, deprecated: ColorFunction, experimental: ColorFunction, paid: ColorFunction): HelpGroupColors = {
       val __obj = js.Dynamic.literal(beta = beta.asInstanceOf[js.Any], deprecated = deprecated.asInstanceOf[js.Any], experimental = experimental.asInstanceOf[js.Any], paid = paid.asInstanceOf[js.Any])
       __obj.asInstanceOf[HelpGroupColors]
     }
     
-    @scala.inline
-    implicit class HelpGroupColorsMutableBuilder[Self <: HelpGroupColors] (val x: Self) extends AnyVal {
+    extension [Self <: HelpGroupColors](x: Self) {
       
-      @scala.inline
-      def setBeta(value: ColorFunction): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
+      inline def setBeta(value: ColorFunction): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecated(value: ColorFunction): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+      inline def setDeprecated(value: ColorFunction): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExperimental(value: ColorFunction): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+      inline def setExperimental(value: ColorFunction): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaid(value: ColorFunction): Self = StObject.set(x, "paid", value.asInstanceOf[js.Any])
+      inline def setPaid(value: ColorFunction): Self = StObject.set(x, "paid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -230,26 +210,20 @@ object colorsMod {
   }
   object LoggerColors {
     
-    @scala.inline
-    def apply(DEBUG: ColorFunction, ERROR: ColorFunction, INFO: ColorFunction, WARN: ColorFunction): LoggerColors = {
+    inline def apply(DEBUG: ColorFunction, ERROR: ColorFunction, INFO: ColorFunction, WARN: ColorFunction): LoggerColors = {
       val __obj = js.Dynamic.literal(DEBUG = DEBUG.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], WARN = WARN.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoggerColors]
     }
     
-    @scala.inline
-    implicit class LoggerColorsMutableBuilder[Self <: LoggerColors] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerColors](x: Self) {
       
-      @scala.inline
-      def setDEBUG(value: ColorFunction): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
+      inline def setDEBUG(value: ColorFunction): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setERROR(value: ColorFunction): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+      inline def setERROR(value: ColorFunction): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINFO(value: ColorFunction): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
+      inline def setINFO(value: ColorFunction): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWARN(value: ColorFunction): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
+      inline def setWARN(value: ColorFunction): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
     }
   }
 }

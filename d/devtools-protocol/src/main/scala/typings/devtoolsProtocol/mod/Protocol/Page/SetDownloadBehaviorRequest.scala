@@ -22,22 +22,17 @@ trait SetDownloadBehaviorRequest extends StObject {
 }
 object SetDownloadBehaviorRequest {
   
-  @scala.inline
-  def apply(behavior: deny | allow | default_): SetDownloadBehaviorRequest = {
+  inline def apply(behavior: deny | allow | default_): SetDownloadBehaviorRequest = {
     val __obj = js.Dynamic.literal(behavior = behavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetDownloadBehaviorRequest]
   }
   
-  @scala.inline
-  implicit class SetDownloadBehaviorRequestMutableBuilder[Self <: SetDownloadBehaviorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetDownloadBehaviorRequest](x: Self) {
     
-    @scala.inline
-    def setBehavior(value: deny | allow | default_): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    inline def setBehavior(value: deny | allow | default_): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadPath(value: String): Self = StObject.set(x, "downloadPath", value.asInstanceOf[js.Any])
+    inline def setDownloadPath(value: String): Self = StObject.set(x, "downloadPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadPathUndefined: Self = StObject.set(x, "downloadPath", js.undefined)
+    inline def setDownloadPathUndefined: Self = StObject.set(x, "downloadPath", js.undefined)
   }
 }

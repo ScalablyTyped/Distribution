@@ -23,8 +23,7 @@ object sourceMapMod {
   }
   object SourceMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       mappings: String,
       names: js.Array[String],
       sourceContent: js.Array[String],
@@ -35,41 +34,29 @@ object sourceMapMod {
       __obj.asInstanceOf[SourceMap]
     }
     
-    @scala.inline
-    implicit class SourceMapMutableBuilder[Self <: SourceMap] (val x: Self) extends AnyVal {
+    extension [Self <: SourceMap](x: Self) {
       
-      @scala.inline
-      def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
+      inline def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceContent(value: js.Array[String]): Self = StObject.set(x, "sourceContent", value.asInstanceOf[js.Any])
+      inline def setSourceContent(value: js.Array[String]): Self = StObject.set(x, "sourceContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceContentVarargs(value: String*): Self = StObject.set(x, "sourceContent", js.Array(value :_*))
+      inline def setSourceContentVarargs(value: String*): Self = StObject.set(x, "sourceContent", js.Array(value :_*))
       
-      @scala.inline
-      def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+      inline def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX_facebook_sources(value: js.Array[Mappings]): Self = StObject.set(x, "x_facebook_sources", value.asInstanceOf[js.Any])
+      inline def setX_facebook_sources(value: js.Array[Mappings]): Self = StObject.set(x, "x_facebook_sources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX_facebook_sourcesNull: Self = StObject.set(x, "x_facebook_sources", null)
+      inline def setX_facebook_sourcesNull: Self = StObject.set(x, "x_facebook_sources", null)
       
-      @scala.inline
-      def setX_facebook_sourcesVarargs(value: Mappings*): Self = StObject.set(x, "x_facebook_sources", js.Array(value :_*))
+      inline def setX_facebook_sourcesVarargs(value: Mappings*): Self = StObject.set(x, "x_facebook_sources", js.Array(value :_*))
     }
   }
 }

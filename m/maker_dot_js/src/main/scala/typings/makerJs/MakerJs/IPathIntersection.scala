@@ -30,37 +30,27 @@ trait IPathIntersection extends StObject {
 }
 object IPathIntersection {
   
-  @scala.inline
-  def apply(intersectionPoints: js.Array[IPoint]): IPathIntersection = {
+  inline def apply(intersectionPoints: js.Array[IPoint]): IPathIntersection = {
     val __obj = js.Dynamic.literal(intersectionPoints = intersectionPoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPathIntersection]
   }
   
-  @scala.inline
-  implicit class IPathIntersectionMutableBuilder[Self <: IPathIntersection] (val x: Self) extends AnyVal {
+  extension [Self <: IPathIntersection](x: Self) {
     
-    @scala.inline
-    def setIntersectionPoints(value: js.Array[IPoint]): Self = StObject.set(x, "intersectionPoints", value.asInstanceOf[js.Any])
+    inline def setIntersectionPoints(value: js.Array[IPoint]): Self = StObject.set(x, "intersectionPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersectionPointsVarargs(value: IPoint*): Self = StObject.set(x, "intersectionPoints", js.Array(value :_*))
+    inline def setIntersectionPointsVarargs(value: IPoint*): Self = StObject.set(x, "intersectionPoints", js.Array(value :_*))
     
-    @scala.inline
-    def setPath1Angles(value: js.Array[Double]): Self = StObject.set(x, "path1Angles", value.asInstanceOf[js.Any])
+    inline def setPath1Angles(value: js.Array[Double]): Self = StObject.set(x, "path1Angles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath1AnglesUndefined: Self = StObject.set(x, "path1Angles", js.undefined)
+    inline def setPath1AnglesUndefined: Self = StObject.set(x, "path1Angles", js.undefined)
     
-    @scala.inline
-    def setPath1AnglesVarargs(value: Double*): Self = StObject.set(x, "path1Angles", js.Array(value :_*))
+    inline def setPath1AnglesVarargs(value: Double*): Self = StObject.set(x, "path1Angles", js.Array(value :_*))
     
-    @scala.inline
-    def setPath2Angles(value: js.Array[Double]): Self = StObject.set(x, "path2Angles", value.asInstanceOf[js.Any])
+    inline def setPath2Angles(value: js.Array[Double]): Self = StObject.set(x, "path2Angles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath2AnglesUndefined: Self = StObject.set(x, "path2Angles", js.undefined)
+    inline def setPath2AnglesUndefined: Self = StObject.set(x, "path2Angles", js.undefined)
     
-    @scala.inline
-    def setPath2AnglesVarargs(value: Double*): Self = StObject.set(x, "path2Angles", js.Array(value :_*))
+    inline def setPath2AnglesVarargs(value: Double*): Self = StObject.set(x, "path2Angles", js.Array(value :_*))
   }
 }

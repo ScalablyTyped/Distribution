@@ -28,43 +28,31 @@ trait StartExportTaskRequest extends StObject {
 }
 object StartExportTaskRequest {
   
-  @scala.inline
-  def apply(): StartExportTaskRequest = {
+  inline def apply(): StartExportTaskRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartExportTaskRequest]
   }
   
-  @scala.inline
-  implicit class StartExportTaskRequestMutableBuilder[Self <: StartExportTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartExportTaskRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: TimeStamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: TimeStamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setExportDataFormat(value: ExportDataFormats): Self = StObject.set(x, "exportDataFormat", value.asInstanceOf[js.Any])
+    inline def setExportDataFormat(value: ExportDataFormats): Self = StObject.set(x, "exportDataFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportDataFormatUndefined: Self = StObject.set(x, "exportDataFormat", js.undefined)
+    inline def setExportDataFormatUndefined: Self = StObject.set(x, "exportDataFormat", js.undefined)
     
-    @scala.inline
-    def setExportDataFormatVarargs(value: ExportDataFormat*): Self = StObject.set(x, "exportDataFormat", js.Array(value :_*))
+    inline def setExportDataFormatVarargs(value: ExportDataFormat*): Self = StObject.set(x, "exportDataFormat", js.Array(value :_*))
     
-    @scala.inline
-    def setFilters(value: ExportFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: ExportFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: ExportFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: ExportFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTime(value: TimeStamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: TimeStamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

@@ -20,16 +20,13 @@ trait InteractiveAppException
 }
 object InteractiveAppException {
   
-  @scala.inline
-  def apply(Classification: InteractionClassification, Code: Double, Context: XInterface, Message: String): InteractiveAppException = {
+  inline def apply(Classification: InteractionClassification, Code: Double, Context: XInterface, Message: String): InteractiveAppException = {
     val __obj = js.Dynamic.literal(Classification = Classification.asInstanceOf[js.Any], Code = Code.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractiveAppException]
   }
   
-  @scala.inline
-  implicit class InteractiveAppExceptionMutableBuilder[Self <: InteractiveAppException] (val x: Self) extends AnyVal {
+  extension [Self <: InteractiveAppException](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
   }
 }

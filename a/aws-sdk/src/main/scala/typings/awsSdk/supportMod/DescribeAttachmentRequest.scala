@@ -13,16 +13,13 @@ trait DescribeAttachmentRequest extends StObject {
 }
 object DescribeAttachmentRequest {
   
-  @scala.inline
-  def apply(attachmentId: AttachmentId): DescribeAttachmentRequest = {
+  inline def apply(attachmentId: AttachmentId): DescribeAttachmentRequest = {
     val __obj = js.Dynamic.literal(attachmentId = attachmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAttachmentRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAttachmentRequestMutableBuilder[Self <: DescribeAttachmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAttachmentRequest](x: Self) {
     
-    @scala.inline
-    def setAttachmentId(value: AttachmentId): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
+    inline def setAttachmentId(value: AttachmentId): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
   }
 }

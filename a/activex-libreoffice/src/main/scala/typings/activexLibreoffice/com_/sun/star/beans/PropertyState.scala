@@ -31,8 +31,7 @@ object PropertyState {
     * must be available and of the specified type. If the Attribute field in the struct {@link Property} contains {@link PropertyAttribute.MAYBEVOID} , then
     * the value may be void.
     */
-  @scala.inline
-  def AMBIGUOUS_VALUE: `2` = 2.asInstanceOf[`2`]
+  inline def AMBIGUOUS_VALUE: `2` = 2.asInstanceOf[`2`]
   
   /**
     * The value of the property is available from a master (e.g., template). <p>The PropertyAttribute field in the struct
@@ -49,8 +48,7 @@ object PropertyState {
     *
     * value may be void. </p>
     */
-  @scala.inline
-  def DEFAULT_VALUE: `1` = 1.asInstanceOf[`1`]
+  inline def DEFAULT_VALUE: `1` = 1.asInstanceOf[`1`]
   
   /**
     * The value of the property is stored in the {@link PropertySet} itself. <p>The property value must be available and of the specified type.
@@ -61,6 +59,5 @@ object PropertyState {
     *
     * then the value may be void. </p>
     */
-  @scala.inline
-  def DIRECT_VALUE: `0` = 0.asInstanceOf[`0`]
+  inline def DIRECT_VALUE: `0` = 0.asInstanceOf[`0`]
 }

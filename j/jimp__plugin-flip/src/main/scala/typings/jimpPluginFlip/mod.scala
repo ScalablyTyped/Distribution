@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Flip = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Flip]
+  inline def default(): Flip = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Flip]
   
   @js.native
   trait Flip extends StObject {

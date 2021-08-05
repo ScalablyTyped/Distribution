@@ -36,41 +36,30 @@ object json {
   }
   object DiagnosticsOptions {
     
-    @scala.inline
-    def apply(): DiagnosticsOptions = {
+    inline def apply(): DiagnosticsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DiagnosticsOptions]
     }
     
-    @scala.inline
-    implicit class DiagnosticsOptionsMutableBuilder[Self <: DiagnosticsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DiagnosticsOptions](x: Self) {
       
-      @scala.inline
-      def setAllowComments(value: Boolean): Self = StObject.set(x, "allowComments", value.asInstanceOf[js.Any])
+      inline def setAllowComments(value: Boolean): Self = StObject.set(x, "allowComments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowCommentsUndefined: Self = StObject.set(x, "allowComments", js.undefined)
+      inline def setAllowCommentsUndefined: Self = StObject.set(x, "allowComments", js.undefined)
       
-      @scala.inline
-      def setEnableSchemaRequest(value: Boolean): Self = StObject.set(x, "enableSchemaRequest", value.asInstanceOf[js.Any])
+      inline def setEnableSchemaRequest(value: Boolean): Self = StObject.set(x, "enableSchemaRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSchemaRequestUndefined: Self = StObject.set(x, "enableSchemaRequest", js.undefined)
+      inline def setEnableSchemaRequestUndefined: Self = StObject.set(x, "enableSchemaRequest", js.undefined)
       
-      @scala.inline
-      def setSchemas(value: js.Array[FileMatch]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+      inline def setSchemas(value: js.Array[FileMatch]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
+      inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
       
-      @scala.inline
-      def setSchemasVarargs(value: FileMatch*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+      inline def setSchemasVarargs(value: FileMatch*): Self = StObject.set(x, "schemas", js.Array(value :_*))
       
-      @scala.inline
-      def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
   
@@ -145,74 +134,52 @@ object json {
   }
   object ModeConfiguration {
     
-    @scala.inline
-    def apply(): ModeConfiguration = {
+    inline def apply(): ModeConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModeConfiguration]
     }
     
-    @scala.inline
-    implicit class ModeConfigurationMutableBuilder[Self <: ModeConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: ModeConfiguration](x: Self) {
       
-      @scala.inline
-      def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setCompletionItems(value: Boolean): Self = StObject.set(x, "completionItems", value.asInstanceOf[js.Any])
+      inline def setCompletionItems(value: Boolean): Self = StObject.set(x, "completionItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompletionItemsUndefined: Self = StObject.set(x, "completionItems", js.undefined)
+      inline def setCompletionItemsUndefined: Self = StObject.set(x, "completionItems", js.undefined)
       
-      @scala.inline
-      def setDiagnostics(value: Boolean): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+      inline def setDiagnostics(value: Boolean): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
+      inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
       
-      @scala.inline
-      def setDocumentFormattingEdits(value: Boolean): Self = StObject.set(x, "documentFormattingEdits", value.asInstanceOf[js.Any])
+      inline def setDocumentFormattingEdits(value: Boolean): Self = StObject.set(x, "documentFormattingEdits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentFormattingEditsUndefined: Self = StObject.set(x, "documentFormattingEdits", js.undefined)
+      inline def setDocumentFormattingEditsUndefined: Self = StObject.set(x, "documentFormattingEdits", js.undefined)
       
-      @scala.inline
-      def setDocumentRangeFormattingEdits(value: Boolean): Self = StObject.set(x, "documentRangeFormattingEdits", value.asInstanceOf[js.Any])
+      inline def setDocumentRangeFormattingEdits(value: Boolean): Self = StObject.set(x, "documentRangeFormattingEdits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentRangeFormattingEditsUndefined: Self = StObject.set(x, "documentRangeFormattingEdits", js.undefined)
+      inline def setDocumentRangeFormattingEditsUndefined: Self = StObject.set(x, "documentRangeFormattingEdits", js.undefined)
       
-      @scala.inline
-      def setDocumentSymbols(value: Boolean): Self = StObject.set(x, "documentSymbols", value.asInstanceOf[js.Any])
+      inline def setDocumentSymbols(value: Boolean): Self = StObject.set(x, "documentSymbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentSymbolsUndefined: Self = StObject.set(x, "documentSymbols", js.undefined)
+      inline def setDocumentSymbolsUndefined: Self = StObject.set(x, "documentSymbols", js.undefined)
       
-      @scala.inline
-      def setFoldingRanges(value: Boolean): Self = StObject.set(x, "foldingRanges", value.asInstanceOf[js.Any])
+      inline def setFoldingRanges(value: Boolean): Self = StObject.set(x, "foldingRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFoldingRangesUndefined: Self = StObject.set(x, "foldingRanges", js.undefined)
+      inline def setFoldingRangesUndefined: Self = StObject.set(x, "foldingRanges", js.undefined)
       
-      @scala.inline
-      def setHovers(value: Boolean): Self = StObject.set(x, "hovers", value.asInstanceOf[js.Any])
+      inline def setHovers(value: Boolean): Self = StObject.set(x, "hovers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoversUndefined: Self = StObject.set(x, "hovers", js.undefined)
+      inline def setHoversUndefined: Self = StObject.set(x, "hovers", js.undefined)
       
-      @scala.inline
-      def setSelectionRanges(value: Boolean): Self = StObject.set(x, "selectionRanges", value.asInstanceOf[js.Any])
+      inline def setSelectionRanges(value: Boolean): Self = StObject.set(x, "selectionRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionRangesUndefined: Self = StObject.set(x, "selectionRanges", js.undefined)
+      inline def setSelectionRangesUndefined: Self = StObject.set(x, "selectionRanges", js.undefined)
       
-      @scala.inline
-      def setTokens(value: Boolean): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: Boolean): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
+      inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
     }
   }
 }

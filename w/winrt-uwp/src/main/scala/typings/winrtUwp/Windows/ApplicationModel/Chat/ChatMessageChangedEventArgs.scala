@@ -15,16 +15,13 @@ trait ChatMessageChangedEventArgs extends StObject {
 }
 object ChatMessageChangedEventArgs {
   
-  @scala.inline
-  def apply(getDeferral: () => ChatMessageChangedDeferral): ChatMessageChangedEventArgs = {
+  inline def apply(getDeferral: () => ChatMessageChangedDeferral): ChatMessageChangedEventArgs = {
     val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral))
     __obj.asInstanceOf[ChatMessageChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ChatMessageChangedEventArgsMutableBuilder[Self <: ChatMessageChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessageChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => ChatMessageChangedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => ChatMessageChangedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }
 }

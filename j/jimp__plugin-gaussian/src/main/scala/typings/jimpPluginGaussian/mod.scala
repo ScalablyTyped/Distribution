@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Gaussian = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Gaussian]
+  inline def default(): Gaussian = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Gaussian]
   
   @js.native
   trait Gaussian extends StObject {

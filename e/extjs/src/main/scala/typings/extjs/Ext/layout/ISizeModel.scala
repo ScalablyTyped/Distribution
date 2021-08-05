@@ -57,103 +57,71 @@ trait ISizeModel
 }
 object ISizeModel {
   
-  @scala.inline
-  def apply(): ISizeModel = {
+  inline def apply(): ISizeModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISizeModel]
   }
   
-  @scala.inline
-  implicit class ISizeModelMutableBuilder[Self <: ISizeModel] (val x: Self) extends AnyVal {
+  extension [Self <: ISizeModel](x: Self) {
     
-    @scala.inline
-    def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+    inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+    inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
     
-    @scala.inline
-    def setCalculated(value: Boolean): Self = StObject.set(x, "calculated", value.asInstanceOf[js.Any])
+    inline def setCalculated(value: Boolean): Self = StObject.set(x, "calculated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculatedFromConfigured(value: Boolean): Self = StObject.set(x, "calculatedFromConfigured", value.asInstanceOf[js.Any])
+    inline def setCalculatedFromConfigured(value: Boolean): Self = StObject.set(x, "calculatedFromConfigured", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculatedFromConfiguredUndefined: Self = StObject.set(x, "calculatedFromConfigured", js.undefined)
+    inline def setCalculatedFromConfiguredUndefined: Self = StObject.set(x, "calculatedFromConfigured", js.undefined)
     
-    @scala.inline
-    def setCalculatedFromNatural(value: Boolean): Self = StObject.set(x, "calculatedFromNatural", value.asInstanceOf[js.Any])
+    inline def setCalculatedFromNatural(value: Boolean): Self = StObject.set(x, "calculatedFromNatural", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculatedFromNaturalUndefined: Self = StObject.set(x, "calculatedFromNatural", js.undefined)
+    inline def setCalculatedFromNaturalUndefined: Self = StObject.set(x, "calculatedFromNatural", js.undefined)
     
-    @scala.inline
-    def setCalculatedFromShrinkWrap(value: Boolean): Self = StObject.set(x, "calculatedFromShrinkWrap", value.asInstanceOf[js.Any])
+    inline def setCalculatedFromShrinkWrap(value: Boolean): Self = StObject.set(x, "calculatedFromShrinkWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculatedFromShrinkWrapUndefined: Self = StObject.set(x, "calculatedFromShrinkWrap", js.undefined)
+    inline def setCalculatedFromShrinkWrapUndefined: Self = StObject.set(x, "calculatedFromShrinkWrap", js.undefined)
     
-    @scala.inline
-    def setCalculatedUndefined: Self = StObject.set(x, "calculated", js.undefined)
+    inline def setCalculatedUndefined: Self = StObject.set(x, "calculated", js.undefined)
     
-    @scala.inline
-    def setConfigured(value: Boolean): Self = StObject.set(x, "configured", value.asInstanceOf[js.Any])
+    inline def setConfigured(value: Boolean): Self = StObject.set(x, "configured", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfiguredUndefined: Self = StObject.set(x, "configured", js.undefined)
+    inline def setConfiguredUndefined: Self = StObject.set(x, "configured", js.undefined)
     
-    @scala.inline
-    def setConstrainedMax(value: Boolean): Self = StObject.set(x, "constrainedMax", value.asInstanceOf[js.Any])
+    inline def setConstrainedMax(value: Boolean): Self = StObject.set(x, "constrainedMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstrainedMaxUndefined: Self = StObject.set(x, "constrainedMax", js.undefined)
+    inline def setConstrainedMaxUndefined: Self = StObject.set(x, "constrainedMax", js.undefined)
     
-    @scala.inline
-    def setConstrainedMin(value: Boolean): Self = StObject.set(x, "constrainedMin", value.asInstanceOf[js.Any])
+    inline def setConstrainedMin(value: Boolean): Self = StObject.set(x, "constrainedMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstrainedMinUndefined: Self = StObject.set(x, "constrainedMin", js.undefined)
+    inline def setConstrainedMinUndefined: Self = StObject.set(x, "constrainedMin", js.undefined)
     
-    @scala.inline
-    def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+    inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNames(value: js.Any): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Any): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    @scala.inline
-    def setNatural(value: Boolean): Self = StObject.set(x, "natural", value.asInstanceOf[js.Any])
+    inline def setNatural(value: Boolean): Self = StObject.set(x, "natural", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNaturalUndefined: Self = StObject.set(x, "natural", js.undefined)
+    inline def setNaturalUndefined: Self = StObject.set(x, "natural", js.undefined)
     
-    @scala.inline
-    def setOrdinal(value: Double): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
+    inline def setOrdinal(value: Double): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
+    inline def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
     
-    @scala.inline
-    def setPairsByHeightOrdinal(value: Array): Self = StObject.set(x, "pairsByHeightOrdinal", value.asInstanceOf[js.Any])
+    inline def setPairsByHeightOrdinal(value: Array): Self = StObject.set(x, "pairsByHeightOrdinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPairsByHeightOrdinalUndefined: Self = StObject.set(x, "pairsByHeightOrdinal", js.undefined)
+    inline def setPairsByHeightOrdinalUndefined: Self = StObject.set(x, "pairsByHeightOrdinal", js.undefined)
     
-    @scala.inline
-    def setShrinkWrap(value: Boolean): Self = StObject.set(x, "shrinkWrap", value.asInstanceOf[js.Any])
+    inline def setShrinkWrap(value: Boolean): Self = StObject.set(x, "shrinkWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShrinkWrapUndefined: Self = StObject.set(x, "shrinkWrap", js.undefined)
+    inline def setShrinkWrapUndefined: Self = StObject.set(x, "shrinkWrap", js.undefined)
   }
 }

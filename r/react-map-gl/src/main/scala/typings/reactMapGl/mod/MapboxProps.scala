@@ -57,145 +57,99 @@ trait MapboxProps extends StObject {
 }
 object MapboxProps {
   
-  @scala.inline
-  def apply(height: Double | String, width: Double | String): MapboxProps = {
+  inline def apply(height: Double | String, width: Double | String): MapboxProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapboxProps]
   }
   
-  @scala.inline
-  implicit class MapboxPropsMutableBuilder[Self <: MapboxProps] (val x: Self) extends AnyVal {
+  extension [Self <: MapboxProps](x: Self) {
     
-    @scala.inline
-    def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
+    inline def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
-    @scala.inline
-    def setAttributionControl(value: Boolean): Self = StObject.set(x, "attributionControl", value.asInstanceOf[js.Any])
+    inline def setAttributionControl(value: Boolean): Self = StObject.set(x, "attributionControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributionControlUndefined: Self = StObject.set(x, "attributionControl", js.undefined)
+    inline def setAttributionControlUndefined: Self = StObject.set(x, "attributionControl", js.undefined)
     
-    @scala.inline
-    def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
+    inline def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBearingUndefined: Self = StObject.set(x, "bearing", js.undefined)
+    inline def setBearingUndefined: Self = StObject.set(x, "bearing", js.undefined)
     
-    @scala.inline
-    def setContainer(value: js.Object): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: js.Object): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setGl(value: js.Object): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
+    inline def setGl(value: js.Object): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlUndefined: Self = StObject.set(x, "gl", js.undefined)
+    inline def setGlUndefined: Self = StObject.set(x, "gl", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
+    inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
+    inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
     
-    @scala.inline
-    def setMapOptions(value: js.Object): Self = StObject.set(x, "mapOptions", value.asInstanceOf[js.Any])
+    inline def setMapOptions(value: js.Object): Self = StObject.set(x, "mapOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapOptionsUndefined: Self = StObject.set(x, "mapOptions", js.undefined)
+    inline def setMapOptionsUndefined: Self = StObject.set(x, "mapOptions", js.undefined)
     
-    @scala.inline
-    def setMapStyle(value: String | js.Object): Self = StObject.set(x, "mapStyle", value.asInstanceOf[js.Any])
+    inline def setMapStyle(value: String | js.Object): Self = StObject.set(x, "mapStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapStyleUndefined: Self = StObject.set(x, "mapStyle", js.undefined)
+    inline def setMapStyleUndefined: Self = StObject.set(x, "mapStyle", js.undefined)
     
-    @scala.inline
-    def setMapboxApiAccessToken(value: String): Self = StObject.set(x, "mapboxApiAccessToken", value.asInstanceOf[js.Any])
+    inline def setMapboxApiAccessToken(value: String): Self = StObject.set(x, "mapboxApiAccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapboxApiAccessTokenUndefined: Self = StObject.set(x, "mapboxApiAccessToken", js.undefined)
+    inline def setMapboxApiAccessTokenUndefined: Self = StObject.set(x, "mapboxApiAccessToken", js.undefined)
     
-    @scala.inline
-    def setMapboxApiUrl(value: String): Self = StObject.set(x, "mapboxApiUrl", value.asInstanceOf[js.Any])
+    inline def setMapboxApiUrl(value: String): Self = StObject.set(x, "mapboxApiUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapboxApiUrlUndefined: Self = StObject.set(x, "mapboxApiUrl", js.undefined)
+    inline def setMapboxApiUrlUndefined: Self = StObject.set(x, "mapboxApiUrl", js.undefined)
     
-    @scala.inline
-    def setOnError(value: /* e */ MapError => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* e */ MapError => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnLoad(value: /* event */ MapLoadEvent => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+    inline def setOnLoad(value: /* event */ MapLoadEvent => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+    inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
-    @scala.inline
-    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+    inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
+    inline def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
     
-    @scala.inline
-    def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
+    inline def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
+    inline def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
     
-    @scala.inline
-    def setReuseMap(value: Boolean): Self = StObject.set(x, "reuseMap", value.asInstanceOf[js.Any])
+    inline def setReuseMap(value: Boolean): Self = StObject.set(x, "reuseMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReuseMapUndefined: Self = StObject.set(x, "reuseMap", js.undefined)
+    inline def setReuseMapUndefined: Self = StObject.set(x, "reuseMap", js.undefined)
     
-    @scala.inline
-    def setReuseMaps(value: Boolean): Self = StObject.set(x, "reuseMaps", value.asInstanceOf[js.Any])
+    inline def setReuseMaps(value: Boolean): Self = StObject.set(x, "reuseMaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReuseMapsUndefined: Self = StObject.set(x, "reuseMaps", js.undefined)
+    inline def setReuseMapsUndefined: Self = StObject.set(x, "reuseMaps", js.undefined)
     
-    @scala.inline
-    def setTransformRequest(value: (/* url */ js.UndefOr[String], /* resourceType */ js.UndefOr[String]) => MapRequest): Self = StObject.set(x, "transformRequest", js.Any.fromFunction2(value))
+    inline def setTransformRequest(value: (/* url */ js.UndefOr[String], /* resourceType */ js.UndefOr[String]) => MapRequest): Self = StObject.set(x, "transformRequest", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTransformRequestUndefined: Self = StObject.set(x, "transformRequest", js.undefined)
+    inline def setTransformRequestUndefined: Self = StObject.set(x, "transformRequest", js.undefined)
     
-    @scala.inline
-    def setViewState(value: ViewState): Self = StObject.set(x, "viewState", value.asInstanceOf[js.Any])
+    inline def setViewState(value: ViewState): Self = StObject.set(x, "viewState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewStateUndefined: Self = StObject.set(x, "viewState", js.undefined)
+    inline def setViewStateUndefined: Self = StObject.set(x, "viewState", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

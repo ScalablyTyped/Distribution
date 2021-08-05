@@ -13,31 +13,22 @@ object metadataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addRef(metadata: Metadata, service: StorageService): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRef")(metadata.asInstanceOf[js.Any], service.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addRef(metadata: Metadata, service: StorageService): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRef")(metadata.asInstanceOf[js.Any], service.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def downloadUrlFromResourceString(metadata: Metadata, resourceString: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadUrlFromResourceString")(metadata.asInstanceOf[js.Any], resourceString.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def downloadUrlFromResourceString(metadata: Metadata, resourceString: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadUrlFromResourceString")(metadata.asInstanceOf[js.Any], resourceString.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @scala.inline
-  def fromResource(service: StorageService, resource: StringDictionary[js.Any], mappings: Mappings): Metadata = (^.asInstanceOf[js.Dynamic].applyDynamic("fromResource")(service.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], mappings.asInstanceOf[js.Any])).asInstanceOf[Metadata]
+  inline def fromResource(service: StorageService, resource: StringDictionary[js.Any], mappings: Mappings): Metadata = (^.asInstanceOf[js.Dynamic].applyDynamic("fromResource")(service.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], mappings.asInstanceOf[js.Any])).asInstanceOf[Metadata]
   
-  @scala.inline
-  def fromResourceString(service: StorageService, resourceString: String, mappings: Mappings): Metadata | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("fromResourceString")(service.asInstanceOf[js.Any], resourceString.asInstanceOf[js.Any], mappings.asInstanceOf[js.Any])).asInstanceOf[Metadata | Null]
+  inline def fromResourceString(service: StorageService, resourceString: String, mappings: Mappings): Metadata | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("fromResourceString")(service.asInstanceOf[js.Any], resourceString.asInstanceOf[js.Any], mappings.asInstanceOf[js.Any])).asInstanceOf[Metadata | Null]
   
-  @scala.inline
-  def getMappings(): Mappings = ^.asInstanceOf[js.Dynamic].applyDynamic("getMappings")().asInstanceOf[Mappings]
+  inline def getMappings(): Mappings = ^.asInstanceOf[js.Dynamic].applyDynamic("getMappings")().asInstanceOf[Mappings]
   
-  @scala.inline
-  def noXform[T](metadata: Metadata, value: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("noXform_")(metadata.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def noXform[T](metadata: Metadata, value: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("noXform_")(metadata.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def toResourceString(metadata: Metadata, mappings: Mappings): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toResourceString")(metadata.asInstanceOf[js.Any], mappings.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toResourceString(metadata: Metadata, mappings: Mappings): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toResourceString")(metadata.asInstanceOf[js.Any], mappings.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def xformPath(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("xformPath")().asInstanceOf[js.UndefOr[String]]
-  @scala.inline
-  def xformPath(fullPath: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("xformPath")(fullPath.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def xformPath(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("xformPath")().asInstanceOf[js.UndefOr[String]]
+  inline def xformPath(fullPath: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("xformPath")(fullPath.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   @js.native
   trait Mapping[T] extends StObject {

@@ -43,52 +43,37 @@ trait IntentSummary extends StObject {
 }
 object IntentSummary {
   
-  @scala.inline
-  def apply(dialogActionType: DialogActionType): IntentSummary = {
+  inline def apply(dialogActionType: DialogActionType): IntentSummary = {
     val __obj = js.Dynamic.literal(dialogActionType = dialogActionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntentSummary]
   }
   
-  @scala.inline
-  implicit class IntentSummaryMutableBuilder[Self <: IntentSummary] (val x: Self) extends AnyVal {
+  extension [Self <: IntentSummary](x: Self) {
     
-    @scala.inline
-    def setCheckpointLabel(value: IntentSummaryCheckpointLabel): Self = StObject.set(x, "checkpointLabel", value.asInstanceOf[js.Any])
+    inline def setCheckpointLabel(value: IntentSummaryCheckpointLabel): Self = StObject.set(x, "checkpointLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckpointLabelUndefined: Self = StObject.set(x, "checkpointLabel", js.undefined)
+    inline def setCheckpointLabelUndefined: Self = StObject.set(x, "checkpointLabel", js.undefined)
     
-    @scala.inline
-    def setConfirmationStatus(value: ConfirmationStatus): Self = StObject.set(x, "confirmationStatus", value.asInstanceOf[js.Any])
+    inline def setConfirmationStatus(value: ConfirmationStatus): Self = StObject.set(x, "confirmationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmationStatusUndefined: Self = StObject.set(x, "confirmationStatus", js.undefined)
+    inline def setConfirmationStatusUndefined: Self = StObject.set(x, "confirmationStatus", js.undefined)
     
-    @scala.inline
-    def setDialogActionType(value: DialogActionType): Self = StObject.set(x, "dialogActionType", value.asInstanceOf[js.Any])
+    inline def setDialogActionType(value: DialogActionType): Self = StObject.set(x, "dialogActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFulfillmentState(value: FulfillmentState): Self = StObject.set(x, "fulfillmentState", value.asInstanceOf[js.Any])
+    inline def setFulfillmentState(value: FulfillmentState): Self = StObject.set(x, "fulfillmentState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFulfillmentStateUndefined: Self = StObject.set(x, "fulfillmentState", js.undefined)
+    inline def setFulfillmentStateUndefined: Self = StObject.set(x, "fulfillmentState", js.undefined)
     
-    @scala.inline
-    def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
+    inline def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentNameUndefined: Self = StObject.set(x, "intentName", js.undefined)
+    inline def setIntentNameUndefined: Self = StObject.set(x, "intentName", js.undefined)
     
-    @scala.inline
-    def setSlotToElicit(value: String): Self = StObject.set(x, "slotToElicit", value.asInstanceOf[js.Any])
+    inline def setSlotToElicit(value: String): Self = StObject.set(x, "slotToElicit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotToElicitUndefined: Self = StObject.set(x, "slotToElicit", js.undefined)
+    inline def setSlotToElicitUndefined: Self = StObject.set(x, "slotToElicit", js.undefined)
     
-    @scala.inline
-    def setSlots(value: StringMap): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: StringMap): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
+    inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
   }
 }

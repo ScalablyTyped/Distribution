@@ -229,8 +229,7 @@ object Services {
         * @return An object that you can use to access and manage Windows Store-related data for the current user.
         */
       /* static member */
-      @scala.inline
-      def getDefault(): typings.winrtUwp.Windows.Services.Store.StoreContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Services.Store.StoreContext]
+      inline def getDefault(): typings.winrtUwp.Windows.Services.Store.StoreContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Services.Store.StoreContext]
       
       /**
         * Gets a StoreContext object that can be used to access and manage Windows Store-related data for the specified user in the context of the current app.
@@ -238,8 +237,7 @@ object Services {
         * @return An object that you can use to access and manage Windows Store-related data for the specified user.
         */
       /* static member */
-      @scala.inline
-      def getForUser(user: User): typings.winrtUwp.Windows.Services.Store.StoreContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getForUser")(user.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Services.Store.StoreContext]
+      inline def getForUser(user: User): typings.winrtUwp.Windows.Services.Store.StoreContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getForUser")(user.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Services.Store.StoreContext]
     }
     
     /** Defines values that represent the units of a trial period or billing period for a subscription. */
@@ -586,8 +584,7 @@ object Services {
         * @return An asynchronous operation that, on successful completion, returns a StoreSendRequestResult object that provides status and error info about the request.
         */
       /* static member */
-      @scala.inline
-      def sendRequestAsync(
+      inline def sendRequestAsync(
         context: typings.winrtUwp.Windows.Services.Store.StoreContext,
         requestKind: Double,
         parametersAsJson: String

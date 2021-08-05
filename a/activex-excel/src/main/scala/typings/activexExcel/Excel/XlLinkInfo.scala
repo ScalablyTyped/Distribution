@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlLinkInfo extends StObject
 object XlLinkInfo {
   
-  @scala.inline
-  def xlEditionDate: `2` = 2.asInstanceOf[`2`]
+  inline def xlEditionDate: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlLinkInfoStatus: `3` = 3.asInstanceOf[`3`]
+  inline def xlLinkInfoStatus: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlUpdateState: `1` = 1.asInstanceOf[`1`]
+  inline def xlUpdateState: `1` = 1.asInstanceOf[`1`]
 }

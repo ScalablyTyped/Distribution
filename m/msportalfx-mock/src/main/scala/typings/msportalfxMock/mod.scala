@@ -11,29 +11,24 @@ object mod {
   /**
     * Creates an Express application. The express() function is a top-level function exported by the express module.
     */
-  @scala.inline
-  def apply(): typings.msportalfxMock.expressServeStaticCoreMod.Express = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.msportalfxMock.expressServeStaticCoreMod.Express]
+  inline def apply(): typings.msportalfxMock.expressServeStaticCoreMod.Express = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.msportalfxMock.expressServeStaticCoreMod.Express]
   
   @JSImport("express", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Router(): typings.msportalfxMock.expressServeStaticCoreMod.Router = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")().asInstanceOf[typings.msportalfxMock.expressServeStaticCoreMod.Router]
-  @scala.inline
-  def Router(options: js.Any): typings.msportalfxMock.expressServeStaticCoreMod.Router = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")(options.asInstanceOf[js.Any]).asInstanceOf[typings.msportalfxMock.expressServeStaticCoreMod.Router]
+  inline def Router(): typings.msportalfxMock.expressServeStaticCoreMod.Router = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")().asInstanceOf[typings.msportalfxMock.expressServeStaticCoreMod.Router]
+  inline def Router(options: js.Any): typings.msportalfxMock.expressServeStaticCoreMod.Router = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")(options.asInstanceOf[js.Any]).asInstanceOf[typings.msportalfxMock.expressServeStaticCoreMod.Router]
   type Router = typings.msportalfxMock.expressServeStaticCoreMod.Router
   
   /**
     * This is the only built-in middleware function in Express. It serves static files and is based on serve-static.
     */
-  @scala.inline
-  def static[R /* <: ServerResponse */](root: String): typings.serveStatic.mod.RequestHandler[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("static")(root.asInstanceOf[js.Any]).asInstanceOf[typings.serveStatic.mod.RequestHandler[R]]
+  inline def static[R /* <: ServerResponse */](root: String): typings.serveStatic.mod.RequestHandler[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("static")(root.asInstanceOf[js.Any]).asInstanceOf[typings.serveStatic.mod.RequestHandler[R]]
   /**
     * This is the only built-in middleware function in Express. It serves static files and is based on serve-static.
     */
-  @scala.inline
-  def static[R /* <: ServerResponse */](root: String, options: ServeStaticOptions[R]): typings.serveStatic.mod.RequestHandler[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("static")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.serveStatic.mod.RequestHandler[R]]
+  inline def static[R /* <: ServerResponse */](root: String, options: ServeStaticOptions[R]): typings.serveStatic.mod.RequestHandler[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("static")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.serveStatic.mod.RequestHandler[R]]
   
   type Application = typings.msportalfxMock.expressServeStaticCoreMod.Application
   

@@ -13,16 +13,13 @@ trait FrameNavigatedEvent extends StObject {
 }
 object FrameNavigatedEvent {
   
-  @scala.inline
-  def apply(frame: Frame): FrameNavigatedEvent = {
+  inline def apply(frame: Frame): FrameNavigatedEvent = {
     val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameNavigatedEvent]
   }
   
-  @scala.inline
-  implicit class FrameNavigatedEventMutableBuilder[Self <: FrameNavigatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FrameNavigatedEvent](x: Self) {
     
-    @scala.inline
-    def setFrame(value: Frame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: Frame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
   }
 }

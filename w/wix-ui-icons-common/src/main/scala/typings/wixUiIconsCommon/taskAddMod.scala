@@ -22,20 +22,16 @@ object taskAddMod extends Shortcut {
   }
   object TaskAddProps {
     
-    @scala.inline
-    def apply(): TaskAddProps = {
+    inline def apply(): TaskAddProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TaskAddProps]
     }
     
-    @scala.inline
-    implicit class TaskAddPropsMutableBuilder[Self <: TaskAddProps] (val x: Self) extends AnyVal {
+    extension [Self <: TaskAddProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

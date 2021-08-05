@@ -44,37 +44,27 @@ trait ChartMapOptionsLoadOptions extends StObject {
 }
 object ChartMapOptionsLoadOptions {
   
-  @scala.inline
-  def apply(): ChartMapOptionsLoadOptions = {
+  inline def apply(): ChartMapOptionsLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartMapOptionsLoadOptions]
   }
   
-  @scala.inline
-  implicit class ChartMapOptionsLoadOptionsMutableBuilder[Self <: ChartMapOptionsLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartMapOptionsLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setLabelStrategy(value: Boolean): Self = StObject.set(x, "labelStrategy", value.asInstanceOf[js.Any])
+    inline def setLabelStrategy(value: Boolean): Self = StObject.set(x, "labelStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStrategyUndefined: Self = StObject.set(x, "labelStrategy", js.undefined)
+    inline def setLabelStrategyUndefined: Self = StObject.set(x, "labelStrategy", js.undefined)
     
-    @scala.inline
-    def setLevel(value: Boolean): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Boolean): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setProjectionType(value: Boolean): Self = StObject.set(x, "projectionType", value.asInstanceOf[js.Any])
+    inline def setProjectionType(value: Boolean): Self = StObject.set(x, "projectionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionTypeUndefined: Self = StObject.set(x, "projectionType", js.undefined)
+    inline def setProjectionTypeUndefined: Self = StObject.set(x, "projectionType", js.undefined)
   }
 }

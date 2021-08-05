@@ -12,19 +12,15 @@ trait TargetId extends StObject {
 }
 object TargetId {
   
-  @scala.inline
-  def apply(amount: Double, targetId: String): TargetId = {
+  inline def apply(amount: Double, targetId: String): TargetId = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetId]
   }
   
-  @scala.inline
-  implicit class TargetIdMutableBuilder[Self <: TargetId] (val x: Self) extends AnyVal {
+  extension [Self <: TargetId](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }
 }

@@ -13,22 +13,17 @@ trait BatchGrantPermissionsResponse extends StObject {
 }
 object BatchGrantPermissionsResponse {
   
-  @scala.inline
-  def apply(): BatchGrantPermissionsResponse = {
+  inline def apply(): BatchGrantPermissionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGrantPermissionsResponse]
   }
   
-  @scala.inline
-  implicit class BatchGrantPermissionsResponseMutableBuilder[Self <: BatchGrantPermissionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGrantPermissionsResponse](x: Self) {
     
-    @scala.inline
-    def setFailures(value: BatchPermissionsFailureList): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: BatchPermissionsFailureList): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailuresUndefined: Self = StObject.set(x, "Failures", js.undefined)
+    inline def setFailuresUndefined: Self = StObject.set(x, "Failures", js.undefined)
     
-    @scala.inline
-    def setFailuresVarargs(value: BatchPermissionsFailureEntry*): Self = StObject.set(x, "Failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: BatchPermissionsFailureEntry*): Self = StObject.set(x, "Failures", js.Array(value :_*))
   }
 }

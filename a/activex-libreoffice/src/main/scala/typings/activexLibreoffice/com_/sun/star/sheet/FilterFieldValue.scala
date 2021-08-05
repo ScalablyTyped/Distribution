@@ -18,22 +18,17 @@ trait FilterFieldValue extends StObject {
 }
 object FilterFieldValue {
   
-  @scala.inline
-  def apply(IsNumeric: Boolean, NumericValue: Double, StringValue: String): FilterFieldValue = {
+  inline def apply(IsNumeric: Boolean, NumericValue: Double, StringValue: String): FilterFieldValue = {
     val __obj = js.Dynamic.literal(IsNumeric = IsNumeric.asInstanceOf[js.Any], NumericValue = NumericValue.asInstanceOf[js.Any], StringValue = StringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterFieldValue]
   }
   
-  @scala.inline
-  implicit class FilterFieldValueMutableBuilder[Self <: FilterFieldValue] (val x: Self) extends AnyVal {
+  extension [Self <: FilterFieldValue](x: Self) {
     
-    @scala.inline
-    def setIsNumeric(value: Boolean): Self = StObject.set(x, "IsNumeric", value.asInstanceOf[js.Any])
+    inline def setIsNumeric(value: Boolean): Self = StObject.set(x, "IsNumeric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericValue(value: Double): Self = StObject.set(x, "NumericValue", value.asInstanceOf[js.Any])
+    inline def setNumericValue(value: Double): Self = StObject.set(x, "NumericValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
   }
 }

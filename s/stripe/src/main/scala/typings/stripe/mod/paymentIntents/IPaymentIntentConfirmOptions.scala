@@ -59,82 +59,57 @@ trait IPaymentIntentConfirmOptions extends StObject {
 }
 object IPaymentIntentConfirmOptions {
   
-  @scala.inline
-  def apply(): IPaymentIntentConfirmOptions = {
+  inline def apply(): IPaymentIntentConfirmOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPaymentIntentConfirmOptions]
   }
   
-  @scala.inline
-  implicit class IPaymentIntentConfirmOptionsMutableBuilder[Self <: IPaymentIntentConfirmOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPaymentIntentConfirmOptions](x: Self) {
     
-    @scala.inline
-    def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
+    inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_secretUndefined: Self = StObject.set(x, "client_secret", js.undefined)
+    inline def setClient_secretUndefined: Self = StObject.set(x, "client_secret", js.undefined)
     
-    @scala.inline
-    def setOff_session(value: Boolean): Self = StObject.set(x, "off_session", value.asInstanceOf[js.Any])
+    inline def setOff_session(value: Boolean): Self = StObject.set(x, "off_session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOff_sessionUndefined: Self = StObject.set(x, "off_session", js.undefined)
+    inline def setOff_sessionUndefined: Self = StObject.set(x, "off_session", js.undefined)
     
-    @scala.inline
-    def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
+    inline def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
+    inline def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
     
-    @scala.inline
-    def setPayment_method_options(value: IPaymentMethodOptions): Self = StObject.set(x, "payment_method_options", value.asInstanceOf[js.Any])
+    inline def setPayment_method_options(value: IPaymentMethodOptions): Self = StObject.set(x, "payment_method_options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment_method_optionsUndefined: Self = StObject.set(x, "payment_method_options", js.undefined)
+    inline def setPayment_method_optionsUndefined: Self = StObject.set(x, "payment_method_options", js.undefined)
     
-    @scala.inline
-    def setPayment_method_types(value: js.Array[PaymentIntentPaymentMethodType]): Self = StObject.set(x, "payment_method_types", value.asInstanceOf[js.Any])
+    inline def setPayment_method_types(value: js.Array[PaymentIntentPaymentMethodType]): Self = StObject.set(x, "payment_method_types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment_method_typesUndefined: Self = StObject.set(x, "payment_method_types", js.undefined)
+    inline def setPayment_method_typesUndefined: Self = StObject.set(x, "payment_method_types", js.undefined)
     
-    @scala.inline
-    def setPayment_method_typesVarargs(value: PaymentIntentPaymentMethodType*): Self = StObject.set(x, "payment_method_types", js.Array(value :_*))
+    inline def setPayment_method_typesVarargs(value: PaymentIntentPaymentMethodType*): Self = StObject.set(x, "payment_method_types", js.Array(value :_*))
     
-    @scala.inline
-    def setReceipt_email(value: String): Self = StObject.set(x, "receipt_email", value.asInstanceOf[js.Any])
+    inline def setReceipt_email(value: String): Self = StObject.set(x, "receipt_email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceipt_emailNull: Self = StObject.set(x, "receipt_email", null)
+    inline def setReceipt_emailNull: Self = StObject.set(x, "receipt_email", null)
     
-    @scala.inline
-    def setReceipt_emailUndefined: Self = StObject.set(x, "receipt_email", js.undefined)
+    inline def setReceipt_emailUndefined: Self = StObject.set(x, "receipt_email", js.undefined)
     
-    @scala.inline
-    def setReturn_url(value: String): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
+    inline def setReturn_url(value: String): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_urlUndefined: Self = StObject.set(x, "return_url", js.undefined)
+    inline def setReturn_urlUndefined: Self = StObject.set(x, "return_url", js.undefined)
     
-    @scala.inline
-    def setSave_payment_method(value: Boolean): Self = StObject.set(x, "save_payment_method", value.asInstanceOf[js.Any])
+    inline def setSave_payment_method(value: Boolean): Self = StObject.set(x, "save_payment_method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSave_payment_methodUndefined: Self = StObject.set(x, "save_payment_method", js.undefined)
+    inline def setSave_payment_methodUndefined: Self = StObject.set(x, "save_payment_method", js.undefined)
     
-    @scala.inline
-    def setSetup_future_usage(value: PaymentIntentFutureUsageType): Self = StObject.set(x, "setup_future_usage", value.asInstanceOf[js.Any])
+    inline def setSetup_future_usage(value: PaymentIntentFutureUsageType): Self = StObject.set(x, "setup_future_usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetup_future_usageUndefined: Self = StObject.set(x, "setup_future_usage", js.undefined)
+    inline def setSetup_future_usageUndefined: Self = StObject.set(x, "setup_future_usage", js.undefined)
     
-    @scala.inline
-    def setShipping(value: IShippingInformation): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
+    inline def setShipping(value: IShippingInformation): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingNull: Self = StObject.set(x, "shipping", null)
+    inline def setShippingNull: Self = StObject.set(x, "shipping", null)
     
-    @scala.inline
-    def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
+    inline def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
   }
 }

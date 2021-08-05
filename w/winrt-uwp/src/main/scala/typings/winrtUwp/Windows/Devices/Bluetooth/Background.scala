@@ -25,20 +25,16 @@ object Background {
   }
   object BluetoothLEAdvertisementPublisherTriggerDetails {
     
-    @scala.inline
-    def apply(error: BluetoothError, status: BluetoothLEAdvertisementPublisherStatus): BluetoothLEAdvertisementPublisherTriggerDetails = {
+    inline def apply(error: BluetoothError, status: BluetoothLEAdvertisementPublisherStatus): BluetoothLEAdvertisementPublisherTriggerDetails = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[BluetoothLEAdvertisementPublisherTriggerDetails]
     }
     
-    @scala.inline
-    implicit class BluetoothLEAdvertisementPublisherTriggerDetailsMutableBuilder[Self <: BluetoothLEAdvertisementPublisherTriggerDetails] (val x: Self) extends AnyVal {
+    extension [Self <: BluetoothLEAdvertisementPublisherTriggerDetails](x: Self) {
       
-      @scala.inline
-      def setError(value: BluetoothError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: BluetoothError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: BluetoothLEAdvertisementPublisherStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: BluetoothLEAdvertisementPublisherStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,8 +52,7 @@ object Background {
   }
   object BluetoothLEAdvertisementWatcherTriggerDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       advertisements: IVectorView[BluetoothLEAdvertisementReceivedEventArgs],
       error: BluetoothError,
       signalStrengthFilter: BluetoothSignalStrengthFilter
@@ -66,17 +61,13 @@ object Background {
       __obj.asInstanceOf[BluetoothLEAdvertisementWatcherTriggerDetails]
     }
     
-    @scala.inline
-    implicit class BluetoothLEAdvertisementWatcherTriggerDetailsMutableBuilder[Self <: BluetoothLEAdvertisementWatcherTriggerDetails] (val x: Self) extends AnyVal {
+    extension [Self <: BluetoothLEAdvertisementWatcherTriggerDetails](x: Self) {
       
-      @scala.inline
-      def setAdvertisements(value: IVectorView[BluetoothLEAdvertisementReceivedEventArgs]): Self = StObject.set(x, "advertisements", value.asInstanceOf[js.Any])
+      inline def setAdvertisements(value: IVectorView[BluetoothLEAdvertisementReceivedEventArgs]): Self = StObject.set(x, "advertisements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: BluetoothError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: BluetoothError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalStrengthFilter(value: BluetoothSignalStrengthFilter): Self = StObject.set(x, "signalStrengthFilter", value.asInstanceOf[js.Any])
+      inline def setSignalStrengthFilter(value: BluetoothSignalStrengthFilter): Self = StObject.set(x, "signalStrengthFilter", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,20 +82,16 @@ object Background {
   }
   object GattCharacteristicNotificationTriggerDetails {
     
-    @scala.inline
-    def apply(characteristic: GattCharacteristic, value: IBuffer): GattCharacteristicNotificationTriggerDetails = {
+    inline def apply(characteristic: GattCharacteristic, value: IBuffer): GattCharacteristicNotificationTriggerDetails = {
       val __obj = js.Dynamic.literal(characteristic = characteristic.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[GattCharacteristicNotificationTriggerDetails]
     }
     
-    @scala.inline
-    implicit class GattCharacteristicNotificationTriggerDetailsMutableBuilder[Self <: GattCharacteristicNotificationTriggerDetails] (val x: Self) extends AnyVal {
+    extension [Self <: GattCharacteristicNotificationTriggerDetails](x: Self) {
       
-      @scala.inline
-      def setCharacteristic(value: GattCharacteristic): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
+      inline def setCharacteristic(value: GattCharacteristic): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: IBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: IBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,23 +109,18 @@ object Background {
   }
   object RfcommConnectionTriggerDetails {
     
-    @scala.inline
-    def apply(incoming: Boolean, remoteDevice: BluetoothDevice, socket: StreamSocket): RfcommConnectionTriggerDetails = {
+    inline def apply(incoming: Boolean, remoteDevice: BluetoothDevice, socket: StreamSocket): RfcommConnectionTriggerDetails = {
       val __obj = js.Dynamic.literal(incoming = incoming.asInstanceOf[js.Any], remoteDevice = remoteDevice.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
       __obj.asInstanceOf[RfcommConnectionTriggerDetails]
     }
     
-    @scala.inline
-    implicit class RfcommConnectionTriggerDetailsMutableBuilder[Self <: RfcommConnectionTriggerDetails] (val x: Self) extends AnyVal {
+    extension [Self <: RfcommConnectionTriggerDetails](x: Self) {
       
-      @scala.inline
-      def setIncoming(value: Boolean): Self = StObject.set(x, "incoming", value.asInstanceOf[js.Any])
+      inline def setIncoming(value: Boolean): Self = StObject.set(x, "incoming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteDevice(value: BluetoothDevice): Self = StObject.set(x, "remoteDevice", value.asInstanceOf[js.Any])
+      inline def setRemoteDevice(value: BluetoothDevice): Self = StObject.set(x, "remoteDevice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocket(value: StreamSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: StreamSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     }
   }
   
@@ -156,8 +138,7 @@ object Background {
   }
   object RfcommInboundConnectionInformation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       localServiceId: RfcommServiceId,
       sdpRecord: IBuffer,
       serviceCapabilities: BluetoothServiceCapabilities
@@ -166,17 +147,13 @@ object Background {
       __obj.asInstanceOf[RfcommInboundConnectionInformation]
     }
     
-    @scala.inline
-    implicit class RfcommInboundConnectionInformationMutableBuilder[Self <: RfcommInboundConnectionInformation] (val x: Self) extends AnyVal {
+    extension [Self <: RfcommInboundConnectionInformation](x: Self) {
       
-      @scala.inline
-      def setLocalServiceId(value: RfcommServiceId): Self = StObject.set(x, "localServiceId", value.asInstanceOf[js.Any])
+      inline def setLocalServiceId(value: RfcommServiceId): Self = StObject.set(x, "localServiceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSdpRecord(value: IBuffer): Self = StObject.set(x, "sdpRecord", value.asInstanceOf[js.Any])
+      inline def setSdpRecord(value: IBuffer): Self = StObject.set(x, "sdpRecord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceCapabilities(value: BluetoothServiceCapabilities): Self = StObject.set(x, "serviceCapabilities", value.asInstanceOf[js.Any])
+      inline def setServiceCapabilities(value: BluetoothServiceCapabilities): Self = StObject.set(x, "serviceCapabilities", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,17 +165,14 @@ object Background {
   }
   object RfcommOutboundConnectionInformation {
     
-    @scala.inline
-    def apply(remoteServiceId: RfcommServiceId): RfcommOutboundConnectionInformation = {
+    inline def apply(remoteServiceId: RfcommServiceId): RfcommOutboundConnectionInformation = {
       val __obj = js.Dynamic.literal(remoteServiceId = remoteServiceId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RfcommOutboundConnectionInformation]
     }
     
-    @scala.inline
-    implicit class RfcommOutboundConnectionInformationMutableBuilder[Self <: RfcommOutboundConnectionInformation] (val x: Self) extends AnyVal {
+    extension [Self <: RfcommOutboundConnectionInformation](x: Self) {
       
-      @scala.inline
-      def setRemoteServiceId(value: RfcommServiceId): Self = StObject.set(x, "remoteServiceId", value.asInstanceOf[js.Any])
+      inline def setRemoteServiceId(value: RfcommServiceId): Self = StObject.set(x, "remoteServiceId", value.asInstanceOf[js.Any])
     }
   }
 }

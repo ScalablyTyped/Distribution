@@ -28,40 +28,29 @@ trait ListSecretVersionIdsResponse extends StObject {
 }
 object ListSecretVersionIdsResponse {
   
-  @scala.inline
-  def apply(): ListSecretVersionIdsResponse = {
+  inline def apply(): ListSecretVersionIdsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSecretVersionIdsResponse]
   }
   
-  @scala.inline
-  implicit class ListSecretVersionIdsResponseMutableBuilder[Self <: ListSecretVersionIdsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSecretVersionIdsResponse](x: Self) {
     
-    @scala.inline
-    def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
+    inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    @scala.inline
-    def setName(value: SecretNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SecretNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextTokenType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextTokenType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVersions(value: SecretVersionsListType): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: SecretVersionsListType): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
+    inline def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
     
-    @scala.inline
-    def setVersionsVarargs(value: SecretVersionsListEntry*): Self = StObject.set(x, "Versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: SecretVersionsListEntry*): Self = StObject.set(x, "Versions", js.Array(value :_*))
   }
 }

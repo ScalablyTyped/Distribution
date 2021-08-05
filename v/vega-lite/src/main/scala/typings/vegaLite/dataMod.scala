@@ -73,8 +73,7 @@ object dataMod {
   }
   object DataComponent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isFaceted: Boolean,
       outputNodeRefCounts: Dict[Double],
       outputNodes: Dict[OutputNode | FacetNode],
@@ -84,47 +83,33 @@ object dataMod {
       __obj.asInstanceOf[DataComponent]
     }
     
-    @scala.inline
-    implicit class DataComponentMutableBuilder[Self <: DataComponent] (val x: Self) extends AnyVal {
+    extension [Self <: DataComponent](x: Self) {
       
-      @scala.inline
-      def setAncestorParse(value: AncestorParse): Self = StObject.set(x, "ancestorParse", value.asInstanceOf[js.Any])
+      inline def setAncestorParse(value: AncestorParse): Self = StObject.set(x, "ancestorParse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAncestorParseUndefined: Self = StObject.set(x, "ancestorParse", js.undefined)
+      inline def setAncestorParseUndefined: Self = StObject.set(x, "ancestorParse", js.undefined)
       
-      @scala.inline
-      def setFacetRoot(value: FacetNode): Self = StObject.set(x, "facetRoot", value.asInstanceOf[js.Any])
+      inline def setFacetRoot(value: FacetNode): Self = StObject.set(x, "facetRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacetRootUndefined: Self = StObject.set(x, "facetRoot", js.undefined)
+      inline def setFacetRootUndefined: Self = StObject.set(x, "facetRoot", js.undefined)
       
-      @scala.inline
-      def setIsFaceted(value: Boolean): Self = StObject.set(x, "isFaceted", value.asInstanceOf[js.Any])
+      inline def setIsFaceted(value: Boolean): Self = StObject.set(x, "isFaceted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMain(value: OutputNode): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+      inline def setMain(value: OutputNode): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
+      inline def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
       
-      @scala.inline
-      def setOutputNodeRefCounts(value: Dict[Double]): Self = StObject.set(x, "outputNodeRefCounts", value.asInstanceOf[js.Any])
+      inline def setOutputNodeRefCounts(value: Dict[Double]): Self = StObject.set(x, "outputNodeRefCounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputNodes(value: Dict[OutputNode | FacetNode]): Self = StObject.set(x, "outputNodes", value.asInstanceOf[js.Any])
+      inline def setOutputNodes(value: Dict[OutputNode | FacetNode]): Self = StObject.set(x, "outputNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: OutputNode): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: OutputNode): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
-      @scala.inline
-      def setSources(value: js.Array[SourceNode]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+      inline def setSources(value: js.Array[SourceNode]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesVarargs(value: SourceNode*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: SourceNode*): Self = StObject.set(x, "sources", js.Array(value :_*))
     }
   }
 }

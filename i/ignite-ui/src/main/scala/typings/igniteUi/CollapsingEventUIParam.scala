@@ -13,19 +13,15 @@ trait CollapsingEventUIParam extends StObject {
 }
 object CollapsingEventUIParam {
   
-  @scala.inline
-  def apply(): CollapsingEventUIParam = {
+  inline def apply(): CollapsingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollapsingEventUIParam]
   }
   
-  @scala.inline
-  implicit class CollapsingEventUIParamMutableBuilder[Self <: CollapsingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: CollapsingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

@@ -8,21 +8,17 @@ object kBucketStrings {
   
   @js.native
   sealed trait added extends StObject
-  @scala.inline
-  def added: added = "added".asInstanceOf[added]
+  inline def added: added = "added".asInstanceOf[added]
   
   @js.native
   sealed trait ping extends StObject
-  @scala.inline
-  def ping: ping = "ping".asInstanceOf[ping]
+  inline def ping: ping = "ping".asInstanceOf[ping]
   
   @js.native
   sealed trait removed extends StObject
-  @scala.inline
-  def removed: removed = "removed".asInstanceOf[removed]
+  inline def removed: removed = "removed".asInstanceOf[removed]
   
   @js.native
   sealed trait updated extends StObject
-  @scala.inline
-  def updated: updated = "updated".asInstanceOf[updated]
+  inline def updated: updated = "updated".asInstanceOf[updated]
 }

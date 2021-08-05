@@ -23,31 +23,23 @@ trait StorageConnector extends StObject {
 }
 object StorageConnector {
   
-  @scala.inline
-  def apply(ConnectorType: StorageConnectorType): StorageConnector = {
+  inline def apply(ConnectorType: StorageConnectorType): StorageConnector = {
     val __obj = js.Dynamic.literal(ConnectorType = ConnectorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageConnector]
   }
   
-  @scala.inline
-  implicit class StorageConnectorMutableBuilder[Self <: StorageConnector] (val x: Self) extends AnyVal {
+  extension [Self <: StorageConnector](x: Self) {
     
-    @scala.inline
-    def setConnectorType(value: StorageConnectorType): Self = StObject.set(x, "ConnectorType", value.asInstanceOf[js.Any])
+    inline def setConnectorType(value: StorageConnectorType): Self = StObject.set(x, "ConnectorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomains(value: DomainList): Self = StObject.set(x, "Domains", value.asInstanceOf[js.Any])
+    inline def setDomains(value: DomainList): Self = StObject.set(x, "Domains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainsUndefined: Self = StObject.set(x, "Domains", js.undefined)
+    inline def setDomainsUndefined: Self = StObject.set(x, "Domains", js.undefined)
     
-    @scala.inline
-    def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "Domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "Domains", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceIdentifier(value: ResourceIdentifier): Self = StObject.set(x, "ResourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setResourceIdentifier(value: ResourceIdentifier): Self = StObject.set(x, "ResourceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdentifierUndefined: Self = StObject.set(x, "ResourceIdentifier", js.undefined)
+    inline def setResourceIdentifierUndefined: Self = StObject.set(x, "ResourceIdentifier", js.undefined)
   }
 }

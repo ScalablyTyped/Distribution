@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mtimeToObjectMod {
   
-  @scala.inline
-  def apply(mtime: js.Any): js.UndefOr[Nsecs] = ^.asInstanceOf[js.Dynamic].apply(mtime.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Nsecs]]
+  inline def apply(mtime: js.Any): js.UndefOr[Nsecs] = ^.asInstanceOf[js.Dynamic].apply(mtime.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Nsecs]]
   
   @JSImport("ipfs-http-client/dist/src/lib/mtime-to-object", JSImport.Namespace)
   @js.native

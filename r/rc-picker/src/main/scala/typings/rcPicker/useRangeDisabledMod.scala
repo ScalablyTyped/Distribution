@@ -11,8 +11,7 @@ object useRangeDisabledMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[DateType](
+  inline def default[DateType](
     hasPickerLocaleSelectedValueDisabledDateDisabledGenerateConfig: Disabled[DateType],
     disabledStart: Boolean,
     disabledEnd: Boolean

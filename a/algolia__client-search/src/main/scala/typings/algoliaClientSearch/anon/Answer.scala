@@ -10,19 +10,15 @@ trait Answer extends StObject {
 }
 object Answer {
   
-  @scala.inline
-  def apply(): Answer = {
+  inline def apply(): Answer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Answer]
   }
   
-  @scala.inline
-  implicit class AnswerMutableBuilder[Self <: Answer] (val x: Self) extends AnyVal {
+  extension [Self <: Answer](x: Self) {
     
-    @scala.inline
-    def set_answer(value: Extract): Self = StObject.set(x, "_answer", value.asInstanceOf[js.Any])
+    inline def set_answer(value: Extract): Self = StObject.set(x, "_answer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_answerUndefined: Self = StObject.set(x, "_answer", js.undefined)
+    inline def set_answerUndefined: Self = StObject.set(x, "_answer", js.undefined)
   }
 }

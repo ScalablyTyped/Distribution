@@ -19,8 +19,7 @@ trait ServiceRequestedEventArgs extends StObject {
 }
 object ServiceRequestedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     completion: MediaProtectionServiceCompletion,
     mediaPlaybackItem: MediaPlaybackItem,
     request: IMediaProtectionServiceRequest
@@ -29,16 +28,12 @@ object ServiceRequestedEventArgs {
     __obj.asInstanceOf[ServiceRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class ServiceRequestedEventArgsMutableBuilder[Self <: ServiceRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCompletion(value: MediaProtectionServiceCompletion): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
+    inline def setCompletion(value: MediaProtectionServiceCompletion): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaPlaybackItem(value: MediaPlaybackItem): Self = StObject.set(x, "mediaPlaybackItem", value.asInstanceOf[js.Any])
+    inline def setMediaPlaybackItem(value: MediaPlaybackItem): Self = StObject.set(x, "mediaPlaybackItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: IMediaProtectionServiceRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: IMediaProtectionServiceRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

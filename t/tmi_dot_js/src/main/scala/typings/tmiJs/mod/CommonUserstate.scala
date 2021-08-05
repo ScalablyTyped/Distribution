@@ -45,103 +45,71 @@ trait CommonUserstate
 }
 object CommonUserstate {
   
-  @scala.inline
-  def apply(): CommonUserstate = {
+  inline def apply(): CommonUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonUserstate]
   }
   
-  @scala.inline
-  implicit class CommonUserstateMutableBuilder[Self <: CommonUserstate] (val x: Self) extends AnyVal {
+  extension [Self <: CommonUserstate](x: Self) {
     
-    @scala.inline
-    def setBadges(value: Badges): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
+    inline def setBadges(value: Badges): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBadges-raw`(value: String): Self = StObject.set(x, "badges-raw", value.asInstanceOf[js.Any])
+    inline def `setBadges-raw`(value: String): Self = StObject.set(x, "badges-raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBadges-rawUndefined`: Self = StObject.set(x, "badges-raw", js.undefined)
+    inline def `setBadges-rawUndefined`: Self = StObject.set(x, "badges-raw", js.undefined)
     
-    @scala.inline
-    def setBadgesUndefined: Self = StObject.set(x, "badges", js.undefined)
+    inline def setBadgesUndefined: Self = StObject.set(x, "badges", js.undefined)
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def `setDisplay-name`(value: String): Self = StObject.set(x, "display-name", value.asInstanceOf[js.Any])
+    inline def `setDisplay-name`(value: String): Self = StObject.set(x, "display-name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDisplay-nameUndefined`: Self = StObject.set(x, "display-name", js.undefined)
+    inline def `setDisplay-nameUndefined`: Self = StObject.set(x, "display-name", js.undefined)
     
-    @scala.inline
-    def setEmotes(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "emotes", value.asInstanceOf[js.Any])
+    inline def setEmotes(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "emotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setEmotes-raw`(value: String): Self = StObject.set(x, "emotes-raw", value.asInstanceOf[js.Any])
+    inline def `setEmotes-raw`(value: String): Self = StObject.set(x, "emotes-raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setEmotes-rawUndefined`: Self = StObject.set(x, "emotes-raw", js.undefined)
+    inline def `setEmotes-rawUndefined`: Self = StObject.set(x, "emotes-raw", js.undefined)
     
-    @scala.inline
-    def setEmotesUndefined: Self = StObject.set(x, "emotes", js.undefined)
+    inline def setEmotesUndefined: Self = StObject.set(x, "emotes", js.undefined)
     
-    @scala.inline
-    def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMod(value: Boolean): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
+    inline def setMod(value: Boolean): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModUndefined: Self = StObject.set(x, "mod", js.undefined)
+    inline def setModUndefined: Self = StObject.set(x, "mod", js.undefined)
     
-    @scala.inline
-    def `setRoom-id`(value: String): Self = StObject.set(x, "room-id", value.asInstanceOf[js.Any])
+    inline def `setRoom-id`(value: String): Self = StObject.set(x, "room-id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRoom-idUndefined`: Self = StObject.set(x, "room-id", js.undefined)
+    inline def `setRoom-idUndefined`: Self = StObject.set(x, "room-id", js.undefined)
     
-    @scala.inline
-    def setSubscriber(value: Boolean): Self = StObject.set(x, "subscriber", value.asInstanceOf[js.Any])
+    inline def setSubscriber(value: Boolean): Self = StObject.set(x, "subscriber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriberUndefined: Self = StObject.set(x, "subscriber", js.undefined)
+    inline def setSubscriberUndefined: Self = StObject.set(x, "subscriber", js.undefined)
     
-    @scala.inline
-    def `setTmi-sent-ts`(value: String): Self = StObject.set(x, "tmi-sent-ts", value.asInstanceOf[js.Any])
+    inline def `setTmi-sent-ts`(value: String): Self = StObject.set(x, "tmi-sent-ts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTmi-sent-tsUndefined`: Self = StObject.set(x, "tmi-sent-ts", js.undefined)
+    inline def `setTmi-sent-tsUndefined`: Self = StObject.set(x, "tmi-sent-ts", js.undefined)
     
-    @scala.inline
-    def setTurbo(value: Boolean): Self = StObject.set(x, "turbo", value.asInstanceOf[js.Any])
+    inline def setTurbo(value: Boolean): Self = StObject.set(x, "turbo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTurboUndefined: Self = StObject.set(x, "turbo", js.undefined)
+    inline def setTurboUndefined: Self = StObject.set(x, "turbo", js.undefined)
     
-    @scala.inline
-    def `setUser-id`(value: String): Self = StObject.set(x, "user-id", value.asInstanceOf[js.Any])
+    inline def `setUser-id`(value: String): Self = StObject.set(x, "user-id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUser-idUndefined`: Self = StObject.set(x, "user-id", js.undefined)
+    inline def `setUser-idUndefined`: Self = StObject.set(x, "user-id", js.undefined)
     
-    @scala.inline
-    def `setUser-type`(value: _empty | typings.tmiJs.tmiJsStrings.mod | global_mod | admin | staff): Self = StObject.set(x, "user-type", value.asInstanceOf[js.Any])
+    inline def `setUser-type`(value: _empty | typings.tmiJs.tmiJsStrings.mod | global_mod | admin | staff): Self = StObject.set(x, "user-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUser-typeUndefined`: Self = StObject.set(x, "user-type", js.undefined)
+    inline def `setUser-typeUndefined`: Self = StObject.set(x, "user-type", js.undefined)
   }
 }

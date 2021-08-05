@@ -11,22 +11,17 @@ trait BatchUpdateIngressRulesResponse extends StObject {
 }
 object BatchUpdateIngressRulesResponse {
   
-  @scala.inline
-  def apply(): BatchUpdateIngressRulesResponse = {
+  inline def apply(): BatchUpdateIngressRulesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchUpdateIngressRulesResponse]
   }
   
-  @scala.inline
-  implicit class BatchUpdateIngressRulesResponseMutableBuilder[Self <: BatchUpdateIngressRulesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchUpdateIngressRulesResponse](x: Self) {
     
-    @scala.inline
-    def setIngressRules(value: js.Array[FirewallRule]): Self = StObject.set(x, "ingressRules", value.asInstanceOf[js.Any])
+    inline def setIngressRules(value: js.Array[FirewallRule]): Self = StObject.set(x, "ingressRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngressRulesUndefined: Self = StObject.set(x, "ingressRules", js.undefined)
+    inline def setIngressRulesUndefined: Self = StObject.set(x, "ingressRules", js.undefined)
     
-    @scala.inline
-    def setIngressRulesVarargs(value: FirewallRule*): Self = StObject.set(x, "ingressRules", js.Array(value :_*))
+    inline def setIngressRulesVarargs(value: FirewallRule*): Self = StObject.set(x, "ingressRules", js.Array(value :_*))
   }
 }

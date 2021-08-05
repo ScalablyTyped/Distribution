@@ -10,16 +10,13 @@ trait AntLocaleDatePicker extends StObject {
 }
 object AntLocaleDatePicker {
   
-  @scala.inline
-  def apply(antLocale: DatePicker): AntLocaleDatePicker = {
+  inline def apply(antLocale: DatePicker): AntLocaleDatePicker = {
     val __obj = js.Dynamic.literal(antLocale = antLocale.asInstanceOf[js.Any])
     __obj.asInstanceOf[AntLocaleDatePicker]
   }
   
-  @scala.inline
-  implicit class AntLocaleDatePickerMutableBuilder[Self <: AntLocaleDatePicker] (val x: Self) extends AnyVal {
+  extension [Self <: AntLocaleDatePicker](x: Self) {
     
-    @scala.inline
-    def setAntLocale(value: DatePicker): Self = StObject.set(x, "antLocale", value.asInstanceOf[js.Any])
+    inline def setAntLocale(value: DatePicker): Self = StObject.set(x, "antLocale", value.asInstanceOf[js.Any])
   }
 }

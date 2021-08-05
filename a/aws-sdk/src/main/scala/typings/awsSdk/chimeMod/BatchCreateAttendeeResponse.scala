@@ -18,31 +18,23 @@ trait BatchCreateAttendeeResponse extends StObject {
 }
 object BatchCreateAttendeeResponse {
   
-  @scala.inline
-  def apply(): BatchCreateAttendeeResponse = {
+  inline def apply(): BatchCreateAttendeeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchCreateAttendeeResponse]
   }
   
-  @scala.inline
-  implicit class BatchCreateAttendeeResponseMutableBuilder[Self <: BatchCreateAttendeeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchCreateAttendeeResponse](x: Self) {
     
-    @scala.inline
-    def setAttendees(value: AttendeeList): Self = StObject.set(x, "Attendees", value.asInstanceOf[js.Any])
+    inline def setAttendees(value: AttendeeList): Self = StObject.set(x, "Attendees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttendeesUndefined: Self = StObject.set(x, "Attendees", js.undefined)
+    inline def setAttendeesUndefined: Self = StObject.set(x, "Attendees", js.undefined)
     
-    @scala.inline
-    def setAttendeesVarargs(value: Attendee*): Self = StObject.set(x, "Attendees", js.Array(value :_*))
+    inline def setAttendeesVarargs(value: Attendee*): Self = StObject.set(x, "Attendees", js.Array(value :_*))
     
-    @scala.inline
-    def setErrors(value: BatchCreateAttendeeErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: BatchCreateAttendeeErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: CreateAttendeeError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: CreateAttendeeError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
   }
 }

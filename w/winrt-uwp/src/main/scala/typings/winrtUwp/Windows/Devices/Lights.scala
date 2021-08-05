@@ -57,17 +57,14 @@ object Lights {
   }
   object LampAvailabilityChangedEventArgs {
     
-    @scala.inline
-    def apply(isAvailable: Boolean): LampAvailabilityChangedEventArgs = {
+    inline def apply(isAvailable: Boolean): LampAvailabilityChangedEventArgs = {
       val __obj = js.Dynamic.literal(isAvailable = isAvailable.asInstanceOf[js.Any])
       __obj.asInstanceOf[LampAvailabilityChangedEventArgs]
     }
     
-    @scala.inline
-    implicit class LampAvailabilityChangedEventArgsMutableBuilder[Self <: LampAvailabilityChangedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LampAvailabilityChangedEventArgs](x: Self) {
       
-      @scala.inline
-      def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
+      inline def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
     }
   }
 }

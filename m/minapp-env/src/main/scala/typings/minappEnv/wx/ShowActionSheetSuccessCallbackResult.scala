@@ -11,16 +11,13 @@ trait ShowActionSheetSuccessCallbackResult extends StObject {
 }
 object ShowActionSheetSuccessCallbackResult {
   
-  @scala.inline
-  def apply(tapIndex: Double): ShowActionSheetSuccessCallbackResult = {
+  inline def apply(tapIndex: Double): ShowActionSheetSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(tapIndex = tapIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowActionSheetSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class ShowActionSheetSuccessCallbackResultMutableBuilder[Self <: ShowActionSheetSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: ShowActionSheetSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setTapIndex(value: Double): Self = StObject.set(x, "tapIndex", value.asInstanceOf[js.Any])
+    inline def setTapIndex(value: Double): Self = StObject.set(x, "tapIndex", value.asInstanceOf[js.Any])
   }
 }

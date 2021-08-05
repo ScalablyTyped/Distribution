@@ -17,37 +17,27 @@ trait GoogleCloudVisionV1p4beta1ProductSearchResultsGroupedResult extends StObje
 }
 object GoogleCloudVisionV1p4beta1ProductSearchResultsGroupedResult {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p4beta1ProductSearchResultsGroupedResult = {
+  inline def apply(): GoogleCloudVisionV1p4beta1ProductSearchResultsGroupedResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1ProductSearchResultsGroupedResult]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p4beta1ProductSearchResultsGroupedResultMutableBuilder[Self <: GoogleCloudVisionV1p4beta1ProductSearchResultsGroupedResult] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p4beta1ProductSearchResultsGroupedResult](x: Self) {
     
-    @scala.inline
-    def setBoundingPoly(value: GoogleCloudVisionV1p4beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
+    inline def setBoundingPoly(value: GoogleCloudVisionV1p4beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
+    inline def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
-    @scala.inline
-    def setObjectAnnotations(value: js.Array[GoogleCloudVisionV1p4beta1ProductSearchResultsObjectAnnotation]): Self = StObject.set(x, "objectAnnotations", value.asInstanceOf[js.Any])
+    inline def setObjectAnnotations(value: js.Array[GoogleCloudVisionV1p4beta1ProductSearchResultsObjectAnnotation]): Self = StObject.set(x, "objectAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectAnnotationsUndefined: Self = StObject.set(x, "objectAnnotations", js.undefined)
+    inline def setObjectAnnotationsUndefined: Self = StObject.set(x, "objectAnnotations", js.undefined)
     
-    @scala.inline
-    def setObjectAnnotationsVarargs(value: GoogleCloudVisionV1p4beta1ProductSearchResultsObjectAnnotation*): Self = StObject.set(x, "objectAnnotations", js.Array(value :_*))
+    inline def setObjectAnnotationsVarargs(value: GoogleCloudVisionV1p4beta1ProductSearchResultsObjectAnnotation*): Self = StObject.set(x, "objectAnnotations", js.Array(value :_*))
     
-    @scala.inline
-    def setResults(value: js.Array[GoogleCloudVisionV1p4beta1ProductSearchResultsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[GoogleCloudVisionV1p4beta1ProductSearchResultsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: GoogleCloudVisionV1p4beta1ProductSearchResultsResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: GoogleCloudVisionV1p4beta1ProductSearchResultsResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

@@ -23,31 +23,23 @@ trait InvideoTiming extends StObject {
 }
 object InvideoTiming {
   
-  @scala.inline
-  def apply(): InvideoTiming = {
+  inline def apply(): InvideoTiming = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InvideoTiming]
   }
   
-  @scala.inline
-  implicit class InvideoTimingMutableBuilder[Self <: InvideoTiming] (val x: Self) extends AnyVal {
+  extension [Self <: InvideoTiming](x: Self) {
     
-    @scala.inline
-    def setDurationMs(value: String): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
+    inline def setDurationMs(value: String): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationMsUndefined: Self = StObject.set(x, "durationMs", js.undefined)
+    inline def setDurationMsUndefined: Self = StObject.set(x, "durationMs", js.undefined)
     
-    @scala.inline
-    def setOffsetMs(value: String): Self = StObject.set(x, "offsetMs", value.asInstanceOf[js.Any])
+    inline def setOffsetMs(value: String): Self = StObject.set(x, "offsetMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetMsUndefined: Self = StObject.set(x, "offsetMs", js.undefined)
+    inline def setOffsetMsUndefined: Self = StObject.set(x, "offsetMs", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

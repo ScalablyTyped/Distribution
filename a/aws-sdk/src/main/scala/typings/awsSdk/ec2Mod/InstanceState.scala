@@ -18,25 +18,19 @@ trait InstanceState extends StObject {
 }
 object InstanceState {
   
-  @scala.inline
-  def apply(): InstanceState = {
+  inline def apply(): InstanceState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceState]
   }
   
-  @scala.inline
-  implicit class InstanceStateMutableBuilder[Self <: InstanceState] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceState](x: Self) {
     
-    @scala.inline
-    def setCode(value: Integer): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Integer): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
-    @scala.inline
-    def setName(value: InstanceStateName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: InstanceStateName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

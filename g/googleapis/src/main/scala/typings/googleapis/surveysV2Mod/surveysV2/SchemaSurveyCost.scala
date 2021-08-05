@@ -49,37 +49,27 @@ trait SchemaSurveyCost extends StObject {
 }
 object SchemaSurveyCost {
   
-  @scala.inline
-  def apply(): SchemaSurveyCost = {
+  inline def apply(): SchemaSurveyCost = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSurveyCost]
   }
   
-  @scala.inline
-  implicit class SchemaSurveyCostMutableBuilder[Self <: SchemaSurveyCost] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSurveyCost](x: Self) {
     
-    @scala.inline
-    def setCostPerResponseNanos(value: String): Self = StObject.set(x, "costPerResponseNanos", value.asInstanceOf[js.Any])
+    inline def setCostPerResponseNanos(value: String): Self = StObject.set(x, "costPerResponseNanos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostPerResponseNanosUndefined: Self = StObject.set(x, "costPerResponseNanos", js.undefined)
+    inline def setCostPerResponseNanosUndefined: Self = StObject.set(x, "costPerResponseNanos", js.undefined)
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
-    @scala.inline
-    def setMaxCostPerResponseNanos(value: String): Self = StObject.set(x, "maxCostPerResponseNanos", value.asInstanceOf[js.Any])
+    inline def setMaxCostPerResponseNanos(value: String): Self = StObject.set(x, "maxCostPerResponseNanos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCostPerResponseNanosUndefined: Self = StObject.set(x, "maxCostPerResponseNanos", js.undefined)
+    inline def setMaxCostPerResponseNanosUndefined: Self = StObject.set(x, "maxCostPerResponseNanos", js.undefined)
     
-    @scala.inline
-    def setNanos(value: String): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
+    inline def setNanos(value: String): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
+    inline def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
   }
 }

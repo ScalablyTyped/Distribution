@@ -18,25 +18,19 @@ trait SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption extends
 }
 object SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption {
   
-  @scala.inline
-  def apply(): SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption = {
+  inline def apply(): SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption]
   }
   
-  @scala.inline
-  implicit class SecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionMutableBuilder[Self <: SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption](x: Self) {
     
-    @scala.inline
-    def setJobBookmarksEncryptionMode(value: String): Self = StObject.set(x, "jobBookmarksEncryptionMode", value.asInstanceOf[js.Any])
+    inline def setJobBookmarksEncryptionMode(value: String): Self = StObject.set(x, "jobBookmarksEncryptionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobBookmarksEncryptionModeUndefined: Self = StObject.set(x, "jobBookmarksEncryptionMode", js.undefined)
+    inline def setJobBookmarksEncryptionModeUndefined: Self = StObject.set(x, "jobBookmarksEncryptionMode", js.undefined)
     
-    @scala.inline
-    def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+    inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
   }
 }

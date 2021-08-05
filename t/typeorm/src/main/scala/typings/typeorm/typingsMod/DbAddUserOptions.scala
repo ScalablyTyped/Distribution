@@ -33,46 +33,33 @@ trait DbAddUserOptions extends StObject {
 }
 object DbAddUserOptions {
   
-  @scala.inline
-  def apply(): DbAddUserOptions = {
+  inline def apply(): DbAddUserOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DbAddUserOptions]
   }
   
-  @scala.inline
-  implicit class DbAddUserOptionsMutableBuilder[Self <: DbAddUserOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DbAddUserOptions](x: Self) {
     
-    @scala.inline
-    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
+    inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
     
-    @scala.inline
-    def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
+    inline def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJUndefined: Self = StObject.set(x, "j", js.undefined)
+    inline def setJUndefined: Self = StObject.set(x, "j", js.undefined)
     
-    @scala.inline
-    def setRoles(value: js.Array[js.Object]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: js.Array[js.Object]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+    inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    @scala.inline
-    def setRolesVarargs(value: js.Object*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: js.Object*): Self = StObject.set(x, "roles", js.Array(value :_*))
     
-    @scala.inline
-    def setW(value: String | scala.Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: String | scala.Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
+    inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     
-    @scala.inline
-    def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
+    inline def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
+    inline def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
   }
 }

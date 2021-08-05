@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContainerType extends StObject
 object ContainerType {
   
-  @scala.inline
-  def brush: typings.victory.victoryStrings.brush = "brush".asInstanceOf[typings.victory.victoryStrings.brush]
+  inline def brush: typings.victory.victoryStrings.brush = "brush".asInstanceOf[typings.victory.victoryStrings.brush]
   
-  @scala.inline
-  def cursor: typings.victory.victoryStrings.cursor = "cursor".asInstanceOf[typings.victory.victoryStrings.cursor]
+  inline def cursor: typings.victory.victoryStrings.cursor = "cursor".asInstanceOf[typings.victory.victoryStrings.cursor]
   
-  @scala.inline
-  def selection: typings.victory.victoryStrings.selection = "selection".asInstanceOf[typings.victory.victoryStrings.selection]
+  inline def selection: typings.victory.victoryStrings.selection = "selection".asInstanceOf[typings.victory.victoryStrings.selection]
   
-  @scala.inline
-  def voronoi: typings.victory.victoryStrings.voronoi = "voronoi".asInstanceOf[typings.victory.victoryStrings.voronoi]
+  inline def voronoi: typings.victory.victoryStrings.voronoi = "voronoi".asInstanceOf[typings.victory.victoryStrings.voronoi]
   
-  @scala.inline
-  def zoom: typings.victory.victoryStrings.zoom = "zoom".asInstanceOf[typings.victory.victoryStrings.zoom]
+  inline def zoom: typings.victory.victoryStrings.zoom = "zoom".asInstanceOf[typings.victory.victoryStrings.zoom]
 }

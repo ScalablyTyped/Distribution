@@ -23,25 +23,19 @@ trait BundleInstanceRequest extends StObject {
 }
 object BundleInstanceRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId, Storage: Storage): BundleInstanceRequest = {
+  inline def apply(InstanceId: InstanceId, Storage: Storage): BundleInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], Storage = Storage.asInstanceOf[js.Any])
     __obj.asInstanceOf[BundleInstanceRequest]
   }
   
-  @scala.inline
-  implicit class BundleInstanceRequestMutableBuilder[Self <: BundleInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BundleInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorage(value: Storage): Self = StObject.set(x, "Storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: Storage): Self = StObject.set(x, "Storage", value.asInstanceOf[js.Any])
   }
 }

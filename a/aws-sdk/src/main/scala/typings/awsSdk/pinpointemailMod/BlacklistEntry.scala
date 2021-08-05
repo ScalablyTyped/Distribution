@@ -23,31 +23,23 @@ trait BlacklistEntry extends StObject {
 }
 object BlacklistEntry {
   
-  @scala.inline
-  def apply(): BlacklistEntry = {
+  inline def apply(): BlacklistEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlacklistEntry]
   }
   
-  @scala.inline
-  implicit class BlacklistEntryMutableBuilder[Self <: BlacklistEntry] (val x: Self) extends AnyVal {
+  extension [Self <: BlacklistEntry](x: Self) {
     
-    @scala.inline
-    def setDescription(value: BlacklistingDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: BlacklistingDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setListingTime(value: Timestamp): Self = StObject.set(x, "ListingTime", value.asInstanceOf[js.Any])
+    inline def setListingTime(value: Timestamp): Self = StObject.set(x, "ListingTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListingTimeUndefined: Self = StObject.set(x, "ListingTime", js.undefined)
+    inline def setListingTimeUndefined: Self = StObject.set(x, "ListingTime", js.undefined)
     
-    @scala.inline
-    def setRblName(value: RblName): Self = StObject.set(x, "RblName", value.asInstanceOf[js.Any])
+    inline def setRblName(value: RblName): Self = StObject.set(x, "RblName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRblNameUndefined: Self = StObject.set(x, "RblName", js.undefined)
+    inline def setRblNameUndefined: Self = StObject.set(x, "RblName", js.undefined)
   }
 }

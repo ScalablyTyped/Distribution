@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def inherits(childCtor: js.Function0[js.Any], parentCtor: js.Function0[js.Any]): scala.Unit = (typings.openlayers.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inherits")(childCtor.asInstanceOf[js.Any], parentCtor.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def inherits(childCtor: js.Function0[js.Any], parentCtor: js.Function0[js.Any]): scala.Unit = (typings.openlayers.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inherits")(childCtor.asInstanceOf[js.Any], parentCtor.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
 type AttributionLike = java.lang.String | (js.Array[typings.openlayers.mod.Attribution | java.lang.String]) | typings.openlayers.mod.Attribution
 

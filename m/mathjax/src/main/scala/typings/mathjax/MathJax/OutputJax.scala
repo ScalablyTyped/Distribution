@@ -87,8 +87,7 @@ trait OutputJax extends StObject {
 }
 object OutputJax {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Register: String => Unit,
     Remove: js.Any => Unit,
     Translate: (js.Any, js.Any) => ElementJax,
@@ -107,46 +106,32 @@ object OutputJax {
     __obj.asInstanceOf[OutputJax]
   }
   
-  @scala.inline
-  implicit class OutputJaxMutableBuilder[Self <: OutputJax] (val x: Self) extends AnyVal {
+  extension [Self <: OutputJax](x: Self) {
     
-    @scala.inline
-    def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+    inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontDir(value: String): Self = StObject.set(x, "fontDir", value.asInstanceOf[js.Any])
+    inline def setFontDir(value: String): Self = StObject.set(x, "fontDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetJaxFromMath(value: js.Any => ElementJax): Self = StObject.set(x, "getJaxFromMath", js.Any.fromFunction1(value))
+    inline def setGetJaxFromMath(value: js.Any => ElementJax): Self = StObject.set(x, "getJaxFromMath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageDir(value: String): Self = StObject.set(x, "imageDir", value.asInstanceOf[js.Any])
+    inline def setImageDir(value: String): Self = StObject.set(x, "imageDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostTranslate(value: js.Any => Unit): Self = StObject.set(x, "postTranslate", js.Any.fromFunction1(value))
+    inline def setPostTranslate(value: js.Any => Unit): Self = StObject.set(x, "postTranslate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPreProcess(value: js.Any => Unit): Self = StObject.set(x, "preProcess", js.Any.fromFunction1(value))
+    inline def setPreProcess(value: js.Any => Unit): Self = StObject.set(x, "preProcess", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPreTranslate(value: js.Any => Unit): Self = StObject.set(x, "preTranslate", js.Any.fromFunction1(value))
+    inline def setPreTranslate(value: js.Any => Unit): Self = StObject.set(x, "preTranslate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegister(value: String => Unit): Self = StObject.set(x, "Register", js.Any.fromFunction1(value))
+    inline def setRegister(value: String => Unit): Self = StObject.set(x, "Register", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTranslate(value: (js.Any, js.Any) => ElementJax): Self = StObject.set(x, "Translate", js.Any.fromFunction2(value))
+    inline def setTranslate(value: (js.Any, js.Any) => ElementJax): Self = StObject.set(x, "Translate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: (js.Any, js.Any, js.Any, Double, Double) => ZoomStruct): Self = StObject.set(x, "Zoom", js.Any.fromFunction5(value))
+    inline def setZoom(value: (js.Any, js.Any, js.Any, Double, Double) => ZoomStruct): Self = StObject.set(x, "Zoom", js.Any.fromFunction5(value))
   }
 }

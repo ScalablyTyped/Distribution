@@ -18,19 +18,15 @@ trait FederatedUser extends StObject {
 }
 object FederatedUser {
   
-  @scala.inline
-  def apply(Arn: arnType, FederatedUserId: federatedIdType): FederatedUser = {
+  inline def apply(Arn: arnType, FederatedUserId: federatedIdType): FederatedUser = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], FederatedUserId = FederatedUserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FederatedUser]
   }
   
-  @scala.inline
-  implicit class FederatedUserMutableBuilder[Self <: FederatedUser] (val x: Self) extends AnyVal {
+  extension [Self <: FederatedUser](x: Self) {
     
-    @scala.inline
-    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFederatedUserId(value: federatedIdType): Self = StObject.set(x, "FederatedUserId", value.asInstanceOf[js.Any])
+    inline def setFederatedUserId(value: federatedIdType): Self = StObject.set(x, "FederatedUserId", value.asInstanceOf[js.Any])
   }
 }

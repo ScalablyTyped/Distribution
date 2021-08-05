@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcLsMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function2[
+  inline def apply(clientOptions: ClientOptions): js.Function2[
     /* path */ js.Any, 
     /* options */ js.UndefOr[js.Object], 
     AsyncGenerator[Cid, Unit, js.Any]

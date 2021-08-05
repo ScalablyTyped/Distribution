@@ -16,25 +16,19 @@ trait CtxData extends StObject {
 }
 object CtxData {
   
-  @scala.inline
-  def apply(ctx: IpfsAny, data: js.Any, timeout: js.Any, topic: js.Any): CtxData = {
+  inline def apply(ctx: IpfsAny, data: js.Any, timeout: js.Any, topic: js.Any): CtxData = {
     val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[CtxData]
   }
   
-  @scala.inline
-  implicit class CtxDataMutableBuilder[Self <: CtxData] (val x: Self) extends AnyVal {
+  extension [Self <: CtxData](x: Self) {
     
-    @scala.inline
-    def setCtx(value: IpfsAny): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: IpfsAny): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopic(value: js.Any): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: js.Any): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

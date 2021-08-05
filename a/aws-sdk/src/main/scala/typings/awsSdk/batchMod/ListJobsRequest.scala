@@ -38,49 +38,35 @@ trait ListJobsRequest extends StObject {
 }
 object ListJobsRequest {
   
-  @scala.inline
-  def apply(): ListJobsRequest = {
+  inline def apply(): ListJobsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListJobsRequest]
   }
   
-  @scala.inline
-  implicit class ListJobsRequestMutableBuilder[Self <: ListJobsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListJobsRequest](x: Self) {
     
-    @scala.inline
-    def setArrayJobId(value: String): Self = StObject.set(x, "arrayJobId", value.asInstanceOf[js.Any])
+    inline def setArrayJobId(value: String): Self = StObject.set(x, "arrayJobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayJobIdUndefined: Self = StObject.set(x, "arrayJobId", js.undefined)
+    inline def setArrayJobIdUndefined: Self = StObject.set(x, "arrayJobId", js.undefined)
     
-    @scala.inline
-    def setJobQueue(value: String): Self = StObject.set(x, "jobQueue", value.asInstanceOf[js.Any])
+    inline def setJobQueue(value: String): Self = StObject.set(x, "jobQueue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobQueueUndefined: Self = StObject.set(x, "jobQueue", js.undefined)
+    inline def setJobQueueUndefined: Self = StObject.set(x, "jobQueue", js.undefined)
     
-    @scala.inline
-    def setJobStatus(value: JobStatus): Self = StObject.set(x, "jobStatus", value.asInstanceOf[js.Any])
+    inline def setJobStatus(value: JobStatus): Self = StObject.set(x, "jobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobStatusUndefined: Self = StObject.set(x, "jobStatus", js.undefined)
+    inline def setJobStatusUndefined: Self = StObject.set(x, "jobStatus", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setMultiNodeJobId(value: String): Self = StObject.set(x, "multiNodeJobId", value.asInstanceOf[js.Any])
+    inline def setMultiNodeJobId(value: String): Self = StObject.set(x, "multiNodeJobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiNodeJobIdUndefined: Self = StObject.set(x, "multiNodeJobId", js.undefined)
+    inline def setMultiNodeJobIdUndefined: Self = StObject.set(x, "multiNodeJobId", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait InputDestinationVpc extends StObject {
 }
 object InputDestinationVpc {
   
-  @scala.inline
-  def apply(): InputDestinationVpc = {
+  inline def apply(): InputDestinationVpc = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputDestinationVpc]
   }
   
-  @scala.inline
-  implicit class InputDestinationVpcMutableBuilder[Self <: InputDestinationVpc] (val x: Self) extends AnyVal {
+  extension [Self <: InputDestinationVpc](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: string): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: string): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setNetworkInterfaceId(value: string): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaceId(value: string): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
+    inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
   }
 }

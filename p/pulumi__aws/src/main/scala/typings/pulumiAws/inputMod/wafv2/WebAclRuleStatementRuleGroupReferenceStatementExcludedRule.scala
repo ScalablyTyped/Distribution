@@ -14,16 +14,13 @@ trait WebAclRuleStatementRuleGroupReferenceStatementExcludedRule extends StObjec
 }
 object WebAclRuleStatementRuleGroupReferenceStatementExcludedRule {
   
-  @scala.inline
-  def apply(name: Input[String]): WebAclRuleStatementRuleGroupReferenceStatementExcludedRule = {
+  inline def apply(name: Input[String]): WebAclRuleStatementRuleGroupReferenceStatementExcludedRule = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRuleStatementRuleGroupReferenceStatementExcludedRule]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleMutableBuilder[Self <: WebAclRuleStatementRuleGroupReferenceStatementExcludedRule] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementRuleGroupReferenceStatementExcludedRule](x: Self) {
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

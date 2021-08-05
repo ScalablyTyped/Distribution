@@ -23,8 +23,7 @@ trait AllocateTransitVirtualInterfaceRequest extends StObject {
 }
 object AllocateTransitVirtualInterfaceRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectionId: ConnectionId,
     newTransitVirtualInterfaceAllocation: NewTransitVirtualInterfaceAllocation,
     ownerAccount: OwnerAccount
@@ -33,16 +32,12 @@ object AllocateTransitVirtualInterfaceRequest {
     __obj.asInstanceOf[AllocateTransitVirtualInterfaceRequest]
   }
   
-  @scala.inline
-  implicit class AllocateTransitVirtualInterfaceRequestMutableBuilder[Self <: AllocateTransitVirtualInterfaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AllocateTransitVirtualInterfaceRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewTransitVirtualInterfaceAllocation(value: NewTransitVirtualInterfaceAllocation): Self = StObject.set(x, "newTransitVirtualInterfaceAllocation", value.asInstanceOf[js.Any])
+    inline def setNewTransitVirtualInterfaceAllocation(value: NewTransitVirtualInterfaceAllocation): Self = StObject.set(x, "newTransitVirtualInterfaceAllocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerAccount(value: OwnerAccount): Self = StObject.set(x, "ownerAccount", value.asInstanceOf[js.Any])
+    inline def setOwnerAccount(value: OwnerAccount): Self = StObject.set(x, "ownerAccount", value.asInstanceOf[js.Any])
   }
 }

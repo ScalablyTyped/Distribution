@@ -28,8 +28,7 @@ trait ModifyVpnTunnelOptionsRequest extends StObject {
 }
 object ModifyVpnTunnelOptionsRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TunnelOptions: ModifyVpnTunnelOptionsSpecification,
     VpnConnectionId: VpnConnectionId,
     VpnTunnelOutsideIpAddress: String
@@ -38,22 +37,16 @@ object ModifyVpnTunnelOptionsRequest {
     __obj.asInstanceOf[ModifyVpnTunnelOptionsRequest]
   }
   
-  @scala.inline
-  implicit class ModifyVpnTunnelOptionsRequestMutableBuilder[Self <: ModifyVpnTunnelOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyVpnTunnelOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setTunnelOptions(value: ModifyVpnTunnelOptionsSpecification): Self = StObject.set(x, "TunnelOptions", value.asInstanceOf[js.Any])
+    inline def setTunnelOptions(value: ModifyVpnTunnelOptionsSpecification): Self = StObject.set(x, "TunnelOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnConnectionId(value: VpnConnectionId): Self = StObject.set(x, "VpnConnectionId", value.asInstanceOf[js.Any])
+    inline def setVpnConnectionId(value: VpnConnectionId): Self = StObject.set(x, "VpnConnectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnTunnelOutsideIpAddress(value: String): Self = StObject.set(x, "VpnTunnelOutsideIpAddress", value.asInstanceOf[js.Any])
+    inline def setVpnTunnelOutsideIpAddress(value: String): Self = StObject.set(x, "VpnTunnelOutsideIpAddress", value.asInstanceOf[js.Any])
   }
 }

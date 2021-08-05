@@ -21,8 +21,7 @@ trait IntrospectionObjectType
 }
 object IntrospectionObjectType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fields: js.Array[IntrospectionField],
     interfaces: js.Array[IntrospectionNamedTypeRef],
     name: String
@@ -31,31 +30,22 @@ object IntrospectionObjectType {
     __obj.asInstanceOf[IntrospectionObjectType]
   }
   
-  @scala.inline
-  implicit class IntrospectionObjectTypeMutableBuilder[Self <: IntrospectionObjectType] (val x: Self) extends AnyVal {
+  extension [Self <: IntrospectionObjectType](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[IntrospectionField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[IntrospectionField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: IntrospectionField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: IntrospectionField*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setInterfaces(value: js.Array[IntrospectionNamedTypeRef]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
+    inline def setInterfaces(value: js.Array[IntrospectionNamedTypeRef]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfacesVarargs(value: IntrospectionNamedTypeRef*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
+    inline def setInterfacesVarargs(value: IntrospectionNamedTypeRef*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: OBJECT): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: OBJECT): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

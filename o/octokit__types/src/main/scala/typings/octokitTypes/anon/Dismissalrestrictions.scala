@@ -18,8 +18,7 @@ trait Dismissalrestrictions extends StObject {
 }
 object Dismissalrestrictions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dismiss_stale_reviews: Boolean,
     dismissal_restrictions: Teams,
     require_code_owner_reviews: Boolean,
@@ -30,22 +29,16 @@ object Dismissalrestrictions {
     __obj.asInstanceOf[Dismissalrestrictions]
   }
   
-  @scala.inline
-  implicit class DismissalrestrictionsMutableBuilder[Self <: Dismissalrestrictions] (val x: Self) extends AnyVal {
+  extension [Self <: Dismissalrestrictions](x: Self) {
     
-    @scala.inline
-    def setDismiss_stale_reviews(value: Boolean): Self = StObject.set(x, "dismiss_stale_reviews", value.asInstanceOf[js.Any])
+    inline def setDismiss_stale_reviews(value: Boolean): Self = StObject.set(x, "dismiss_stale_reviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDismissal_restrictions(value: Teams): Self = StObject.set(x, "dismissal_restrictions", value.asInstanceOf[js.Any])
+    inline def setDismissal_restrictions(value: Teams): Self = StObject.set(x, "dismissal_restrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequire_code_owner_reviews(value: Boolean): Self = StObject.set(x, "require_code_owner_reviews", value.asInstanceOf[js.Any])
+    inline def setRequire_code_owner_reviews(value: Boolean): Self = StObject.set(x, "require_code_owner_reviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired_approving_review_count(value: Double): Self = StObject.set(x, "required_approving_review_count", value.asInstanceOf[js.Any])
+    inline def setRequired_approving_review_count(value: Double): Self = StObject.set(x, "required_approving_review_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

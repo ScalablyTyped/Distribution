@@ -15,8 +15,7 @@ trait CompileTypeMetadata
 }
 object CompileTypeMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     diDeps: js.Array[CompileDiDependencyMetadata],
     lifecycleHooks: js.Array[LifecycleHooks],
     reference: js.Any
@@ -25,19 +24,14 @@ object CompileTypeMetadata {
     __obj.asInstanceOf[CompileTypeMetadata]
   }
   
-  @scala.inline
-  implicit class CompileTypeMetadataMutableBuilder[Self <: CompileTypeMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: CompileTypeMetadata](x: Self) {
     
-    @scala.inline
-    def setDiDeps(value: js.Array[CompileDiDependencyMetadata]): Self = StObject.set(x, "diDeps", value.asInstanceOf[js.Any])
+    inline def setDiDeps(value: js.Array[CompileDiDependencyMetadata]): Self = StObject.set(x, "diDeps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiDepsVarargs(value: CompileDiDependencyMetadata*): Self = StObject.set(x, "diDeps", js.Array(value :_*))
+    inline def setDiDepsVarargs(value: CompileDiDependencyMetadata*): Self = StObject.set(x, "diDeps", js.Array(value :_*))
     
-    @scala.inline
-    def setLifecycleHooks(value: js.Array[LifecycleHooks]): Self = StObject.set(x, "lifecycleHooks", value.asInstanceOf[js.Any])
+    inline def setLifecycleHooks(value: js.Array[LifecycleHooks]): Self = StObject.set(x, "lifecycleHooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleHooksVarargs(value: LifecycleHooks*): Self = StObject.set(x, "lifecycleHooks", js.Array(value :_*))
+    inline def setLifecycleHooksVarargs(value: LifecycleHooks*): Self = StObject.set(x, "lifecycleHooks", js.Array(value :_*))
   }
 }

@@ -18,28 +18,21 @@ trait DescribeExportImageTasksResult extends StObject {
 }
 object DescribeExportImageTasksResult {
   
-  @scala.inline
-  def apply(): DescribeExportImageTasksResult = {
+  inline def apply(): DescribeExportImageTasksResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeExportImageTasksResult]
   }
   
-  @scala.inline
-  implicit class DescribeExportImageTasksResultMutableBuilder[Self <: DescribeExportImageTasksResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeExportImageTasksResult](x: Self) {
     
-    @scala.inline
-    def setExportImageTasks(value: ExportImageTaskList): Self = StObject.set(x, "ExportImageTasks", value.asInstanceOf[js.Any])
+    inline def setExportImageTasks(value: ExportImageTaskList): Self = StObject.set(x, "ExportImageTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportImageTasksUndefined: Self = StObject.set(x, "ExportImageTasks", js.undefined)
+    inline def setExportImageTasksUndefined: Self = StObject.set(x, "ExportImageTasks", js.undefined)
     
-    @scala.inline
-    def setExportImageTasksVarargs(value: ExportImageTask*): Self = StObject.set(x, "ExportImageTasks", js.Array(value :_*))
+    inline def setExportImageTasksVarargs(value: ExportImageTask*): Self = StObject.set(x, "ExportImageTasks", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

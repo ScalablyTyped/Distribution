@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.SmartDocument")
 @js.native
-class SmartDocument protected ()
+/* private */ class SmartDocument ()
   extends StObject
      with typings.activexOffice.Office.SmartDocument

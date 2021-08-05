@@ -11,19 +11,15 @@ trait PartialSchedulerOptions extends StObject {
 }
 object PartialSchedulerOptions {
   
-  @scala.inline
-  def apply(): PartialSchedulerOptions = {
+  inline def apply(): PartialSchedulerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialSchedulerOptions]
   }
   
-  @scala.inline
-  implicit class PartialSchedulerOptionsMutableBuilder[Self <: PartialSchedulerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialSchedulerOptions](x: Self) {
     
-    @scala.inline
-    def setDeferEvents(value: Boolean): Self = StObject.set(x, "deferEvents", value.asInstanceOf[js.Any])
+    inline def setDeferEvents(value: Boolean): Self = StObject.set(x, "deferEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferEventsUndefined: Self = StObject.set(x, "deferEvents", js.undefined)
+    inline def setDeferEventsUndefined: Self = StObject.set(x, "deferEvents", js.undefined)
   }
 }

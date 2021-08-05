@@ -16,37 +16,27 @@ trait GridFilterableOperators extends StObject {
 }
 object GridFilterableOperators {
   
-  @scala.inline
-  def apply(): GridFilterableOperators = {
+  inline def apply(): GridFilterableOperators = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridFilterableOperators]
   }
   
-  @scala.inline
-  implicit class GridFilterableOperatorsMutableBuilder[Self <: GridFilterableOperators] (val x: Self) extends AnyVal {
+  extension [Self <: GridFilterableOperators](x: Self) {
     
-    @scala.inline
-    def setDate(value: GridFilterableOperatorsDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: GridFilterableOperatorsDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setEnums(value: GridFilterableOperatorsEnums): Self = StObject.set(x, "enums", value.asInstanceOf[js.Any])
+    inline def setEnums(value: GridFilterableOperatorsEnums): Self = StObject.set(x, "enums", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumsUndefined: Self = StObject.set(x, "enums", js.undefined)
+    inline def setEnumsUndefined: Self = StObject.set(x, "enums", js.undefined)
     
-    @scala.inline
-    def setNumber(value: GridFilterableOperatorsNumber): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: GridFilterableOperatorsNumber): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    @scala.inline
-    def setString(value: GridFilterableOperatorsString): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: GridFilterableOperatorsString): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+    inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
   }
 }

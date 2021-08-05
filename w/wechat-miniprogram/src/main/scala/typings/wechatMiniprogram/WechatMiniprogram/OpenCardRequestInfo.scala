@@ -15,19 +15,15 @@ trait OpenCardRequestInfo extends StObject {
 }
 object OpenCardRequestInfo {
   
-  @scala.inline
-  def apply(cardId: String, code: String): OpenCardRequestInfo = {
+  inline def apply(cardId: String, code: String): OpenCardRequestInfo = {
     val __obj = js.Dynamic.literal(cardId = cardId.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenCardRequestInfo]
   }
   
-  @scala.inline
-  implicit class OpenCardRequestInfoMutableBuilder[Self <: OpenCardRequestInfo] (val x: Self) extends AnyVal {
+  extension [Self <: OpenCardRequestInfo](x: Self) {
     
-    @scala.inline
-    def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
+    inline def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }
 }

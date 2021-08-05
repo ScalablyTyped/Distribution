@@ -10,16 +10,13 @@ trait EnumValuesAscending extends StObject {
 }
 object EnumValuesAscending {
   
-  @scala.inline
-  def apply(enumValues: Ascending): EnumValuesAscending = {
+  inline def apply(enumValues: Ascending): EnumValuesAscending = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAscending]
   }
   
-  @scala.inline
-  implicit class EnumValuesAscendingMutableBuilder[Self <: EnumValuesAscending] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAscending](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Ascending): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Ascending): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

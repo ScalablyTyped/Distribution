@@ -15,16 +15,13 @@ trait SetMembershipEvent[MembershipCustom /* <: ObjectCustom */]
 }
 object SetMembershipEvent {
   
-  @scala.inline
-  def apply[MembershipCustom /* <: ObjectCustom */](channel: String, message: DataChannel[MembershipCustom], timetoken: Double): SetMembershipEvent[MembershipCustom] = {
+  inline def apply[MembershipCustom /* <: ObjectCustom */](channel: String, message: DataChannel[MembershipCustom], timetoken: Double): SetMembershipEvent[MembershipCustom] = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any], subscription = null)
     __obj.asInstanceOf[SetMembershipEvent[MembershipCustom]]
   }
   
-  @scala.inline
-  implicit class SetMembershipEventMutableBuilder[Self <: SetMembershipEvent[?], MembershipCustom /* <: ObjectCustom */] (val x: Self & SetMembershipEvent[MembershipCustom]) extends AnyVal {
+  extension [Self <: SetMembershipEvent[?], MembershipCustom /* <: ObjectCustom */](x: Self & SetMembershipEvent[MembershipCustom]) {
     
-    @scala.inline
-    def setMessage(value: DataChannel[MembershipCustom]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: DataChannel[MembershipCustom]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

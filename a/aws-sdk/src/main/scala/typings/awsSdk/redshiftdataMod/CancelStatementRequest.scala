@@ -13,16 +13,13 @@ trait CancelStatementRequest extends StObject {
 }
 object CancelStatementRequest {
   
-  @scala.inline
-  def apply(Id: UUID): CancelStatementRequest = {
+  inline def apply(Id: UUID): CancelStatementRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelStatementRequest]
   }
   
-  @scala.inline
-  implicit class CancelStatementRequestMutableBuilder[Self <: CancelStatementRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelStatementRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: UUID): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: UUID): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

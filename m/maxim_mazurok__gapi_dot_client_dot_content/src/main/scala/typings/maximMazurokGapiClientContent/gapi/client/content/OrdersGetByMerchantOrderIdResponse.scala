@@ -14,25 +14,19 @@ trait OrdersGetByMerchantOrderIdResponse extends StObject {
 }
 object OrdersGetByMerchantOrderIdResponse {
   
-  @scala.inline
-  def apply(): OrdersGetByMerchantOrderIdResponse = {
+  inline def apply(): OrdersGetByMerchantOrderIdResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrdersGetByMerchantOrderIdResponse]
   }
   
-  @scala.inline
-  implicit class OrdersGetByMerchantOrderIdResponseMutableBuilder[Self <: OrdersGetByMerchantOrderIdResponse] (val x: Self) extends AnyVal {
+  extension [Self <: OrdersGetByMerchantOrderIdResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
   }
 }

@@ -28,8 +28,7 @@ trait Bridge
      with XComponent
 object Bridge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Description: String,
     Name: String,
     acquire: () => Unit,

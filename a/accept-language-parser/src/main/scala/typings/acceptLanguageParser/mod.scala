@@ -10,17 +10,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(acceptLanguage: String): js.Array[Language] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(acceptLanguage.asInstanceOf[js.Any]).asInstanceOf[js.Array[Language]]
+  inline def parse(acceptLanguage: String): js.Array[Language] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(acceptLanguage.asInstanceOf[js.Any]).asInstanceOf[js.Array[Language]]
   
-  @scala.inline
-  def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: String): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(supportedLanguages.asInstanceOf[js.Any], acceptLanguage.asInstanceOf[js.Any])).asInstanceOf[T | Null]
-  @scala.inline
-  def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: String, options: PickOptions): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(supportedLanguages.asInstanceOf[js.Any], acceptLanguage.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T | Null]
-  @scala.inline
-  def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: js.Array[Language]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(supportedLanguages.asInstanceOf[js.Any], acceptLanguage.asInstanceOf[js.Any])).asInstanceOf[T | Null]
-  @scala.inline
-  def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: js.Array[Language], options: PickOptions): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(supportedLanguages.asInstanceOf[js.Any], acceptLanguage.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  inline def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: String): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(supportedLanguages.asInstanceOf[js.Any], acceptLanguage.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  inline def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: String, options: PickOptions): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(supportedLanguages.asInstanceOf[js.Any], acceptLanguage.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  inline def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: js.Array[Language]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(supportedLanguages.asInstanceOf[js.Any], acceptLanguage.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  inline def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: js.Array[Language], options: PickOptions): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(supportedLanguages.asInstanceOf[js.Any], acceptLanguage.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T | Null]
   
   trait Language extends StObject {
     
@@ -34,35 +29,26 @@ object mod {
   }
   object Language {
     
-    @scala.inline
-    def apply(code: String, quality: Double): Language = {
+    inline def apply(code: String, quality: Double): Language = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], quality = quality.asInstanceOf[js.Any])
       __obj.asInstanceOf[Language]
     }
     
-    @scala.inline
-    implicit class LanguageMutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
+    extension [Self <: Language](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptNull: Self = StObject.set(x, "script", null)
+      inline def setScriptNull: Self = StObject.set(x, "script", null)
       
-      @scala.inline
-      def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+      inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
     }
   }
   
@@ -72,20 +58,16 @@ object mod {
   }
   object PickOptions {
     
-    @scala.inline
-    def apply(): PickOptions = {
+    inline def apply(): PickOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickOptions]
     }
     
-    @scala.inline
-    implicit class PickOptionsMutableBuilder[Self <: PickOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PickOptions](x: Self) {
       
-      @scala.inline
-      def setLoose(value: Boolean): Self = StObject.set(x, "loose", value.asInstanceOf[js.Any])
+      inline def setLoose(value: Boolean): Self = StObject.set(x, "loose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLooseUndefined: Self = StObject.set(x, "loose", js.undefined)
+      inline def setLooseUndefined: Self = StObject.set(x, "loose", js.undefined)
     }
   }
 }

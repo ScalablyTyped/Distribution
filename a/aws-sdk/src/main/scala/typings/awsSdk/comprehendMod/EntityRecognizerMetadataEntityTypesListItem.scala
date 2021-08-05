@@ -23,31 +23,23 @@ trait EntityRecognizerMetadataEntityTypesListItem extends StObject {
 }
 object EntityRecognizerMetadataEntityTypesListItem {
   
-  @scala.inline
-  def apply(): EntityRecognizerMetadataEntityTypesListItem = {
+  inline def apply(): EntityRecognizerMetadataEntityTypesListItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EntityRecognizerMetadataEntityTypesListItem]
   }
   
-  @scala.inline
-  implicit class EntityRecognizerMetadataEntityTypesListItemMutableBuilder[Self <: EntityRecognizerMetadataEntityTypesListItem] (val x: Self) extends AnyVal {
+  extension [Self <: EntityRecognizerMetadataEntityTypesListItem](x: Self) {
     
-    @scala.inline
-    def setEvaluationMetrics(value: EntityTypesEvaluationMetrics): Self = StObject.set(x, "EvaluationMetrics", value.asInstanceOf[js.Any])
+    inline def setEvaluationMetrics(value: EntityTypesEvaluationMetrics): Self = StObject.set(x, "EvaluationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationMetricsUndefined: Self = StObject.set(x, "EvaluationMetrics", js.undefined)
+    inline def setEvaluationMetricsUndefined: Self = StObject.set(x, "EvaluationMetrics", js.undefined)
     
-    @scala.inline
-    def setNumberOfTrainMentions(value: Integer): Self = StObject.set(x, "NumberOfTrainMentions", value.asInstanceOf[js.Any])
+    inline def setNumberOfTrainMentions(value: Integer): Self = StObject.set(x, "NumberOfTrainMentions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfTrainMentionsUndefined: Self = StObject.set(x, "NumberOfTrainMentions", js.undefined)
+    inline def setNumberOfTrainMentionsUndefined: Self = StObject.set(x, "NumberOfTrainMentions", js.undefined)
     
-    @scala.inline
-    def setType(value: AnyLengthString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: AnyLengthString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

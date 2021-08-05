@@ -77,91 +77,63 @@ trait SchemaPhoto extends StObject {
 }
 object SchemaPhoto {
   
-  @scala.inline
-  def apply(): SchemaPhoto = {
+  inline def apply(): SchemaPhoto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPhoto]
   }
   
-  @scala.inline
-  implicit class SchemaPhotoMutableBuilder[Self <: SchemaPhoto] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPhoto](x: Self) {
     
-    @scala.inline
-    def setCaptureTime(value: String): Self = StObject.set(x, "captureTime", value.asInstanceOf[js.Any])
+    inline def setCaptureTime(value: String): Self = StObject.set(x, "captureTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureTimeUndefined: Self = StObject.set(x, "captureTime", js.undefined)
+    inline def setCaptureTimeUndefined: Self = StObject.set(x, "captureTime", js.undefined)
     
-    @scala.inline
-    def setConnections(value: js.Array[SchemaConnection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
+    inline def setConnections(value: js.Array[SchemaConnection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
+    inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
-    @scala.inline
-    def setConnectionsVarargs(value: SchemaConnection*): Self = StObject.set(x, "connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: SchemaConnection*): Self = StObject.set(x, "connections", js.Array(value :_*))
     
-    @scala.inline
-    def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
+    inline def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
+    inline def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
     
-    @scala.inline
-    def setMapsPublishStatus(value: String): Self = StObject.set(x, "mapsPublishStatus", value.asInstanceOf[js.Any])
+    inline def setMapsPublishStatus(value: String): Self = StObject.set(x, "mapsPublishStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapsPublishStatusUndefined: Self = StObject.set(x, "mapsPublishStatus", js.undefined)
+    inline def setMapsPublishStatusUndefined: Self = StObject.set(x, "mapsPublishStatus", js.undefined)
     
-    @scala.inline
-    def setPhotoId(value: SchemaPhotoId): Self = StObject.set(x, "photoId", value.asInstanceOf[js.Any])
+    inline def setPhotoId(value: SchemaPhotoId): Self = StObject.set(x, "photoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoIdUndefined: Self = StObject.set(x, "photoId", js.undefined)
+    inline def setPhotoIdUndefined: Self = StObject.set(x, "photoId", js.undefined)
     
-    @scala.inline
-    def setPlaces(value: js.Array[SchemaPlace]): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
+    inline def setPlaces(value: js.Array[SchemaPlace]): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacesUndefined: Self = StObject.set(x, "places", js.undefined)
+    inline def setPlacesUndefined: Self = StObject.set(x, "places", js.undefined)
     
-    @scala.inline
-    def setPlacesVarargs(value: SchemaPlace*): Self = StObject.set(x, "places", js.Array(value :_*))
+    inline def setPlacesVarargs(value: SchemaPlace*): Self = StObject.set(x, "places", js.Array(value :_*))
     
-    @scala.inline
-    def setPose(value: SchemaPose): Self = StObject.set(x, "pose", value.asInstanceOf[js.Any])
+    inline def setPose(value: SchemaPose): Self = StObject.set(x, "pose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoseUndefined: Self = StObject.set(x, "pose", js.undefined)
+    inline def setPoseUndefined: Self = StObject.set(x, "pose", js.undefined)
     
-    @scala.inline
-    def setShareLink(value: String): Self = StObject.set(x, "shareLink", value.asInstanceOf[js.Any])
+    inline def setShareLink(value: String): Self = StObject.set(x, "shareLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareLinkUndefined: Self = StObject.set(x, "shareLink", js.undefined)
+    inline def setShareLinkUndefined: Self = StObject.set(x, "shareLink", js.undefined)
     
-    @scala.inline
-    def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
+    inline def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
+    inline def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
     
-    @scala.inline
-    def setTransferStatus(value: String): Self = StObject.set(x, "transferStatus", value.asInstanceOf[js.Any])
+    inline def setTransferStatus(value: String): Self = StObject.set(x, "transferStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferStatusUndefined: Self = StObject.set(x, "transferStatus", js.undefined)
+    inline def setTransferStatusUndefined: Self = StObject.set(x, "transferStatus", js.undefined)
     
-    @scala.inline
-    def setUploadReference(value: SchemaUploadRef): Self = StObject.set(x, "uploadReference", value.asInstanceOf[js.Any])
+    inline def setUploadReference(value: SchemaUploadRef): Self = StObject.set(x, "uploadReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadReferenceUndefined: Self = StObject.set(x, "uploadReference", js.undefined)
+    inline def setUploadReferenceUndefined: Self = StObject.set(x, "uploadReference", js.undefined)
     
-    @scala.inline
-    def setViewCount(value: String): Self = StObject.set(x, "viewCount", value.asInstanceOf[js.Any])
+    inline def setViewCount(value: String): Self = StObject.set(x, "viewCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewCountUndefined: Self = StObject.set(x, "viewCount", js.undefined)
+    inline def setViewCountUndefined: Self = StObject.set(x, "viewCount", js.undefined)
   }
 }

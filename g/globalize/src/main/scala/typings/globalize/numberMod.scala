@@ -51,8 +51,7 @@ object numberMod extends Shortcut {
          with NumberParserOptions
     object NumberFormatterOptions {
       
-      @scala.inline
-      def apply(): NumberFormatterOptions = {
+      inline def apply(): NumberFormatterOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[NumberFormatterOptions]
       }
@@ -67,20 +66,16 @@ object numberMod extends Shortcut {
     }
     object NumberParserOptions {
       
-      @scala.inline
-      def apply(): NumberParserOptions = {
+      inline def apply(): NumberParserOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[NumberParserOptions]
       }
       
-      @scala.inline
-      implicit class NumberParserOptionsMutableBuilder[Self <: NumberParserOptions] (val x: Self) extends AnyVal {
+      extension [Self <: NumberParserOptions](x: Self) {
         
-        @scala.inline
-        def setStyle(value: decimal | percent): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+        inline def setStyle(value: decimal | percent): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+        inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       }
     }
     

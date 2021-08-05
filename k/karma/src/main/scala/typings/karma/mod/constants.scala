@@ -26,8 +26,7 @@ object constants {
     @JSImport("karma", "constants.CONSOLE_APPENDER.layout")
     @js.native
     def layout: Pattern = js.native
-    @scala.inline
-    def layout_=(x: Pattern): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("layout")(x.asInstanceOf[js.Any])
+    inline def layout_=(x: Pattern): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("layout")(x.asInstanceOf[js.Any])
     
     @JSImport("karma", "constants.CONSOLE_APPENDER.type")
     @js.native

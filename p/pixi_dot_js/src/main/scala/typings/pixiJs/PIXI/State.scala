@@ -73,8 +73,7 @@ trait State extends StObject {
 }
 object State {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blend: Boolean,
     blendMode: Double,
     clockwiseFrontFace: Boolean,
@@ -87,28 +86,20 @@ object State {
     __obj.asInstanceOf[State]
   }
   
-  @scala.inline
-  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+  extension [Self <: State](x: Self) {
     
-    @scala.inline
-    def setBlend(value: Boolean): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
+    inline def setBlend(value: Boolean): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlendMode(value: Double): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
+    inline def setBlendMode(value: Double): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClockwiseFrontFace(value: Boolean): Self = StObject.set(x, "clockwiseFrontFace", value.asInstanceOf[js.Any])
+    inline def setClockwiseFrontFace(value: Boolean): Self = StObject.set(x, "clockwiseFrontFace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCulling(value: Boolean): Self = StObject.set(x, "culling", value.asInstanceOf[js.Any])
+    inline def setCulling(value: Boolean): Self = StObject.set(x, "culling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthTest(value: Boolean): Self = StObject.set(x, "depthTest", value.asInstanceOf[js.Any])
+    inline def setDepthTest(value: Boolean): Self = StObject.set(x, "depthTest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsets(value: Boolean): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
+    inline def setOffsets(value: Boolean): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonOffset(value: Double): Self = StObject.set(x, "polygonOffset", value.asInstanceOf[js.Any])
+    inline def setPolygonOffset(value: Double): Self = StObject.set(x, "polygonOffset", value.asInstanceOf[js.Any])
   }
 }

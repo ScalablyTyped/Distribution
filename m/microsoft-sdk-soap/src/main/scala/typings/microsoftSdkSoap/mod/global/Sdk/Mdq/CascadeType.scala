@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CascadeType extends StObject
 object CascadeType {
   
-  @scala.inline
-  def Active: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Active = "Active".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Active]
+  inline def Active: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Active = "Active".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Active]
   
-  @scala.inline
-  def Cascade: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Cascade = "Cascade".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Cascade]
+  inline def Cascade: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Cascade = "Cascade".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Cascade]
   
-  @scala.inline
-  def NoCascade: typings.microsoftSdkSoap.microsoftSdkSoapStrings.NoCascade = "NoCascade".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.NoCascade]
+  inline def NoCascade: typings.microsoftSdkSoap.microsoftSdkSoapStrings.NoCascade = "NoCascade".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.NoCascade]
   
-  @scala.inline
-  def UserOwned: typings.microsoftSdkSoap.microsoftSdkSoapStrings.UserOwned = "UserOwned".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.UserOwned]
+  inline def UserOwned: typings.microsoftSdkSoap.microsoftSdkSoapStrings.UserOwned = "UserOwned".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.UserOwned]
 }

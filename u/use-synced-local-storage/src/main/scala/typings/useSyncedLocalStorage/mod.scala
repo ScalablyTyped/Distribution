@@ -10,8 +10,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useSyncedLocalStorage[T](key: String): js.Tuple2[/* storage */ T, /* setStorage */ js.Function1[/* newValue */ T, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSyncedLocalStorage")(key.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[/* storage */ T, /* setStorage */ js.Function1[/* newValue */ T, Boolean]]]
-  @scala.inline
-  def useSyncedLocalStorage[T](key: String, initialValue: T): js.Tuple2[/* storage */ T, /* setStorage */ js.Function1[/* newValue */ T, Boolean]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useSyncedLocalStorage")(key.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[/* storage */ T, /* setStorage */ js.Function1[/* newValue */ T, Boolean]]]
+  inline def useSyncedLocalStorage[T](key: String): js.Tuple2[/* storage */ T, /* setStorage */ js.Function1[/* newValue */ T, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSyncedLocalStorage")(key.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[/* storage */ T, /* setStorage */ js.Function1[/* newValue */ T, Boolean]]]
+  inline def useSyncedLocalStorage[T](key: String, initialValue: T): js.Tuple2[/* storage */ T, /* setStorage */ js.Function1[/* newValue */ T, Boolean]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useSyncedLocalStorage")(key.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[/* storage */ T, /* setStorage */ js.Function1[/* newValue */ T, Boolean]]]
 }

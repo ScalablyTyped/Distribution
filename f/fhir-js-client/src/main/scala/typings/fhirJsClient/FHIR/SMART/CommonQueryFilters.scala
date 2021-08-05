@@ -29,31 +29,23 @@ trait CommonQueryFilters extends StObject {
 }
 object CommonQueryFilters {
   
-  @scala.inline
-  def apply(): CommonQueryFilters = {
+  inline def apply(): CommonQueryFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonQueryFilters]
   }
   
-  @scala.inline
-  implicit class CommonQueryFiltersMutableBuilder[Self <: CommonQueryFilters] (val x: Self) extends AnyVal {
+  extension [Self <: CommonQueryFilters](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setParams(value: DictpropName): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: DictpropName): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
   }
 }

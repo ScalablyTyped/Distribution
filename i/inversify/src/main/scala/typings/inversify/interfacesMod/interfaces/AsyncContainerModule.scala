@@ -14,8 +14,7 @@ trait AsyncContainerModule extends StObject {
 }
 object AsyncContainerModule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: Double,
     registry: (/* bind */ Bind, /* unbind */ Unbind, /* isBound */ IsBound, /* rebind */ Rebind) => js.Promise[Unit]
   ): AsyncContainerModule = {
@@ -23,14 +22,11 @@ object AsyncContainerModule {
     __obj.asInstanceOf[AsyncContainerModule]
   }
   
-  @scala.inline
-  implicit class AsyncContainerModuleMutableBuilder[Self <: AsyncContainerModule] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncContainerModule](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistry(
+    inline def setRegistry(
       value: (/* bind */ Bind, /* unbind */ Unbind, /* isBound */ IsBound, /* rebind */ Rebind) => js.Promise[Unit]
     ): Self = StObject.set(x, "registry", js.Any.fromFunction4(value))
   }

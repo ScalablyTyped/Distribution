@@ -13,8 +13,7 @@ object searchBarStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): SearchBarStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[SearchBarStyle]
+  inline def default(theme: Theme): SearchBarStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[SearchBarStyle]
   
   trait SearchBarStyle extends StObject {
     
@@ -32,8 +31,7 @@ object searchBarStyleMod {
   }
   object SearchBarStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancelText: TextStyle,
       cancelTextContainer: ViewStyle,
       input: TextStyle,
@@ -45,26 +43,19 @@ object searchBarStyleMod {
       __obj.asInstanceOf[SearchBarStyle]
     }
     
-    @scala.inline
-    implicit class SearchBarStyleMutableBuilder[Self <: SearchBarStyle] (val x: Self) extends AnyVal {
+    extension [Self <: SearchBarStyle](x: Self) {
       
-      @scala.inline
-      def setCancelText(value: TextStyle): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+      inline def setCancelText(value: TextStyle): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelTextContainer(value: ViewStyle): Self = StObject.set(x, "cancelTextContainer", value.asInstanceOf[js.Any])
+      inline def setCancelTextContainer(value: ViewStyle): Self = StObject.set(x, "cancelTextContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: TextStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: TextStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputWrapper(value: ViewStyle): Self = StObject.set(x, "inputWrapper", value.asInstanceOf[js.Any])
+      inline def setInputWrapper(value: ViewStyle): Self = StObject.set(x, "inputWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: TextStyle): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: TextStyle): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
 }

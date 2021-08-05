@@ -32,46 +32,33 @@ trait LoadURLOptions extends StObject {
 }
 object LoadURLOptions {
   
-  @scala.inline
-  def apply(): LoadURLOptions = {
+  inline def apply(): LoadURLOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadURLOptions]
   }
   
-  @scala.inline
-  implicit class LoadURLOptionsMutableBuilder[Self <: LoadURLOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoadURLOptions](x: Self) {
     
-    @scala.inline
-    def setBaseURLForDataURL(value: String): Self = StObject.set(x, "baseURLForDataURL", value.asInstanceOf[js.Any])
+    inline def setBaseURLForDataURL(value: String): Self = StObject.set(x, "baseURLForDataURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseURLForDataURLUndefined: Self = StObject.set(x, "baseURLForDataURL", js.undefined)
+    inline def setBaseURLForDataURLUndefined: Self = StObject.set(x, "baseURLForDataURL", js.undefined)
     
-    @scala.inline
-    def setExtraHeaders(value: String): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+    inline def setExtraHeaders(value: String): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+    inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
     
-    @scala.inline
-    def setHttpReferrer(value: String | Referrer): Self = StObject.set(x, "httpReferrer", value.asInstanceOf[js.Any])
+    inline def setHttpReferrer(value: String | Referrer): Self = StObject.set(x, "httpReferrer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpReferrerUndefined: Self = StObject.set(x, "httpReferrer", js.undefined)
+    inline def setHttpReferrerUndefined: Self = StObject.set(x, "httpReferrer", js.undefined)
     
-    @scala.inline
-    def setPostData(value: js.Array[UploadBlob | UploadFile | UploadRawData]): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
+    inline def setPostData(value: js.Array[UploadBlob | UploadFile | UploadRawData]): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
+    inline def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
     
-    @scala.inline
-    def setPostDataVarargs(value: (UploadBlob | UploadFile | UploadRawData)*): Self = StObject.set(x, "postData", js.Array(value :_*))
+    inline def setPostDataVarargs(value: (UploadBlob | UploadFile | UploadRawData)*): Self = StObject.set(x, "postData", js.Array(value :_*))
     
-    @scala.inline
-    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+    inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
   }
 }

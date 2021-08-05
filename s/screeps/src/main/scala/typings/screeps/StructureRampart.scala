@@ -32,8 +32,7 @@ trait StructureRampart
 }
 object StructureRampart {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => ScreepsReturnCode,
     effects: js.Array[RoomObjectEffect],
     hits: Double,
@@ -53,16 +52,12 @@ object StructureRampart {
     __obj.asInstanceOf[StructureRampart]
   }
   
-  @scala.inline
-  implicit class StructureRampartMutableBuilder[Self <: StructureRampart] (val x: Self) extends AnyVal {
+  extension [Self <: StructureRampart](x: Self) {
     
-    @scala.inline
-    def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
+    inline def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPublic(value: Boolean => Unit): Self = StObject.set(x, "setPublic", js.Any.fromFunction1(value))
+    inline def setSetPublic(value: Boolean => Unit): Self = StObject.set(x, "setPublic", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
+    inline def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
   }
 }

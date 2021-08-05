@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ListItemChildren {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapPropChildren: ListItemChildrenProps
   ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapPropChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
@@ -26,14 +25,12 @@ object ListItemChildren {
     @JSImport("react-md", "ListItemChildren.propTypes.children")
     @js.native
     def children: js.Any = js.native
-    @scala.inline
-    def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+    inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
     
     @JSImport("react-md", "ListItemChildren.propTypes.forceAddonWrap")
     @js.native
     def forceAddonWrap: js.Any = js.native
-    @scala.inline
-    def forceAddonWrap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceAddonWrap")(x.asInstanceOf[js.Any])
+    inline def forceAddonWrap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceAddonWrap")(x.asInstanceOf[js.Any])
     
     @JSImport("react-md", "ListItemChildren.propTypes.leftAddon")
     @js.native
@@ -42,23 +39,19 @@ object ListItemChildren {
     @JSImport("react-md", "ListItemChildren.propTypes.leftAddonPosition")
     @js.native
     def leftAddonPosition: js.Any = js.native
-    @scala.inline
-    def leftAddonPosition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftAddonPosition")(x.asInstanceOf[js.Any])
+    inline def leftAddonPosition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftAddonPosition")(x.asInstanceOf[js.Any])
     
     @JSImport("react-md", "ListItemChildren.propTypes.leftAddonType")
     @js.native
     def leftAddonType: js.Any = js.native
-    @scala.inline
-    def leftAddonType_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftAddonType")(x.asInstanceOf[js.Any])
+    inline def leftAddonType_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftAddonType")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def leftAddon_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftAddon")(x.asInstanceOf[js.Any])
+    inline def leftAddon_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftAddon")(x.asInstanceOf[js.Any])
     
     @JSImport("react-md", "ListItemChildren.propTypes.primaryText")
     @js.native
     def primaryText: js.Any = js.native
-    @scala.inline
-    def primaryText_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primaryText")(x.asInstanceOf[js.Any])
+    inline def primaryText_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primaryText")(x.asInstanceOf[js.Any])
     
     @JSImport("react-md", "ListItemChildren.propTypes.rightAddon")
     @js.native
@@ -67,17 +60,14 @@ object ListItemChildren {
     @JSImport("react-md", "ListItemChildren.propTypes.rightAddonPosition")
     @js.native
     def rightAddonPosition: js.Any = js.native
-    @scala.inline
-    def rightAddonPosition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightAddonPosition")(x.asInstanceOf[js.Any])
+    inline def rightAddonPosition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightAddonPosition")(x.asInstanceOf[js.Any])
     
     @JSImport("react-md", "ListItemChildren.propTypes.rightAddonType")
     @js.native
     def rightAddonType: js.Any = js.native
-    @scala.inline
-    def rightAddonType_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightAddonType")(x.asInstanceOf[js.Any])
+    inline def rightAddonType_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightAddonType")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def rightAddon_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightAddon")(x.asInstanceOf[js.Any])
+    inline def rightAddon_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightAddon")(x.asInstanceOf[js.Any])
     
     @JSImport("react-md", "ListItemChildren.propTypes.secondaryText")
     @js.native
@@ -86,22 +76,18 @@ object ListItemChildren {
     @JSImport("react-md", "ListItemChildren.propTypes.secondaryTextClassName")
     @js.native
     def secondaryTextClassName: js.Any = js.native
-    @scala.inline
-    def secondaryTextClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryTextClassName")(x.asInstanceOf[js.Any])
+    inline def secondaryTextClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryTextClassName")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def secondaryText_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryText")(x.asInstanceOf[js.Any])
+    inline def secondaryText_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryText")(x.asInstanceOf[js.Any])
     
     @JSImport("react-md", "ListItemChildren.propTypes.textChildren")
     @js.native
     def textChildren: js.Any = js.native
-    @scala.inline
-    def textChildren_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textChildren")(x.asInstanceOf[js.Any])
+    inline def textChildren_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textChildren")(x.asInstanceOf[js.Any])
     
     @JSImport("react-md", "ListItemChildren.propTypes.textClassName")
     @js.native
     def textClassName: js.Any = js.native
-    @scala.inline
-    def textClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textClassName")(x.asInstanceOf[js.Any])
+    inline def textClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textClassName")(x.asInstanceOf[js.Any])
   }
 }

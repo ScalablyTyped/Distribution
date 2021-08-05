@@ -57,49 +57,35 @@ trait GeneratedSecret extends StObject {
 }
 object GeneratedSecret {
   
-  @scala.inline
-  def apply(ascii: String, base32: String, google_auth_qr: String, hex: String): GeneratedSecret = {
+  inline def apply(ascii: String, base32: String, google_auth_qr: String, hex: String): GeneratedSecret = {
     val __obj = js.Dynamic.literal(ascii = ascii.asInstanceOf[js.Any], base32 = base32.asInstanceOf[js.Any], google_auth_qr = google_auth_qr.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneratedSecret]
   }
   
-  @scala.inline
-  implicit class GeneratedSecretMutableBuilder[Self <: GeneratedSecret] (val x: Self) extends AnyVal {
+  extension [Self <: GeneratedSecret](x: Self) {
     
-    @scala.inline
-    def setAscii(value: String): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
+    inline def setAscii(value: String): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBase32(value: String): Self = StObject.set(x, "base32", value.asInstanceOf[js.Any])
+    inline def setBase32(value: String): Self = StObject.set(x, "base32", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogle_auth_qr(value: String): Self = StObject.set(x, "google_auth_qr", value.asInstanceOf[js.Any])
+    inline def setGoogle_auth_qr(value: String): Self = StObject.set(x, "google_auth_qr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+    inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtpauth_url(value: String): Self = StObject.set(x, "otpauth_url", value.asInstanceOf[js.Any])
+    inline def setOtpauth_url(value: String): Self = StObject.set(x, "otpauth_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtpauth_urlUndefined: Self = StObject.set(x, "otpauth_url", js.undefined)
+    inline def setOtpauth_urlUndefined: Self = StObject.set(x, "otpauth_url", js.undefined)
     
-    @scala.inline
-    def setQr_code_ascii(value: String): Self = StObject.set(x, "qr_code_ascii", value.asInstanceOf[js.Any])
+    inline def setQr_code_ascii(value: String): Self = StObject.set(x, "qr_code_ascii", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQr_code_asciiUndefined: Self = StObject.set(x, "qr_code_ascii", js.undefined)
+    inline def setQr_code_asciiUndefined: Self = StObject.set(x, "qr_code_ascii", js.undefined)
     
-    @scala.inline
-    def setQr_code_base32(value: String): Self = StObject.set(x, "qr_code_base32", value.asInstanceOf[js.Any])
+    inline def setQr_code_base32(value: String): Self = StObject.set(x, "qr_code_base32", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQr_code_base32Undefined: Self = StObject.set(x, "qr_code_base32", js.undefined)
+    inline def setQr_code_base32Undefined: Self = StObject.set(x, "qr_code_base32", js.undefined)
     
-    @scala.inline
-    def setQr_code_hex(value: String): Self = StObject.set(x, "qr_code_hex", value.asInstanceOf[js.Any])
+    inline def setQr_code_hex(value: String): Self = StObject.set(x, "qr_code_hex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQr_code_hexUndefined: Self = StObject.set(x, "qr_code_hex", js.undefined)
+    inline def setQr_code_hexUndefined: Self = StObject.set(x, "qr_code_hex", js.undefined)
   }
 }

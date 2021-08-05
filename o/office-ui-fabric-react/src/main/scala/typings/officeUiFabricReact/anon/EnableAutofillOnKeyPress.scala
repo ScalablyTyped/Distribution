@@ -10,19 +10,15 @@ trait EnableAutofillOnKeyPress extends StObject {
 }
 object EnableAutofillOnKeyPress {
   
-  @scala.inline
-  def apply(enableAutofillOnKeyPress: js.Array[Double]): EnableAutofillOnKeyPress = {
+  inline def apply(enableAutofillOnKeyPress: js.Array[Double]): EnableAutofillOnKeyPress = {
     val __obj = js.Dynamic.literal(enableAutofillOnKeyPress = enableAutofillOnKeyPress.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableAutofillOnKeyPress]
   }
   
-  @scala.inline
-  implicit class EnableAutofillOnKeyPressMutableBuilder[Self <: EnableAutofillOnKeyPress] (val x: Self) extends AnyVal {
+  extension [Self <: EnableAutofillOnKeyPress](x: Self) {
     
-    @scala.inline
-    def setEnableAutofillOnKeyPress(value: js.Array[Double]): Self = StObject.set(x, "enableAutofillOnKeyPress", value.asInstanceOf[js.Any])
+    inline def setEnableAutofillOnKeyPress(value: js.Array[Double]): Self = StObject.set(x, "enableAutofillOnKeyPress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAutofillOnKeyPressVarargs(value: Double*): Self = StObject.set(x, "enableAutofillOnKeyPress", js.Array(value :_*))
+    inline def setEnableAutofillOnKeyPressVarargs(value: Double*): Self = StObject.set(x, "enableAutofillOnKeyPress", js.Array(value :_*))
   }
 }

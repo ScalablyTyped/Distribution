@@ -11,19 +11,15 @@ trait FlattenOptions extends StObject {
 }
 object FlattenOptions {
   
-  @scala.inline
-  def apply(): FlattenOptions = {
+  inline def apply(): FlattenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlattenOptions]
   }
   
-  @scala.inline
-  implicit class FlattenOptionsMutableBuilder[Self <: FlattenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FlattenOptions](x: Self) {
     
-    @scala.inline
-    def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
   }
 }

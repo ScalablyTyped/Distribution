@@ -11,77 +11,65 @@ object firebaseAnalyticsStrings {
   sealed trait `already-exists`
     extends StObject
        with AnalyticsError
-  @scala.inline
-  def `already-exists`: `already-exists` = "already-exists".asInstanceOf[`already-exists`]
+  inline def `already-exists`: `already-exists` = "already-exists".asInstanceOf[`already-exists`]
   
   @js.native
   sealed trait `already-initialized`
     extends StObject
        with AnalyticsError
-  @scala.inline
-  def `already-initialized`: `already-initialized` = "already-initialized".asInstanceOf[`already-initialized`]
+  inline def `already-initialized`: `already-initialized` = "already-initialized".asInstanceOf[`already-initialized`]
   
   @js.native
   sealed trait config extends StObject
-  @scala.inline
-  def config: config = "config".asInstanceOf[config]
+  inline def config: config = "config".asInstanceOf[config]
   
   @js.native
   sealed trait `config-fetch-failed`
     extends StObject
        with AnalyticsError
-  @scala.inline
-  def `config-fetch-failed`: `config-fetch-failed` = "config-fetch-failed".asInstanceOf[`config-fetch-failed`]
+  inline def `config-fetch-failed`: `config-fetch-failed` = "config-fetch-failed".asInstanceOf[`config-fetch-failed`]
   
   @js.native
   sealed trait event extends StObject
-  @scala.inline
-  def event: event = "event".asInstanceOf[event]
+  inline def event: event = "event".asInstanceOf[event]
   
   @js.native
   sealed trait `fetch-throttle`
     extends StObject
        with AnalyticsError
-  @scala.inline
-  def `fetch-throttle`: `fetch-throttle` = "fetch-throttle".asInstanceOf[`fetch-throttle`]
+  inline def `fetch-throttle`: `fetch-throttle` = "fetch-throttle".asInstanceOf[`fetch-throttle`]
   
   @js.native
   sealed trait `indexeddb-unavailable`
     extends StObject
        with AnalyticsError
-  @scala.inline
-  def `indexeddb-unavailable`: `indexeddb-unavailable` = "indexeddb-unavailable".asInstanceOf[`indexeddb-unavailable`]
+  inline def `indexeddb-unavailable`: `indexeddb-unavailable` = "indexeddb-unavailable".asInstanceOf[`indexeddb-unavailable`]
   
   @js.native
   sealed trait `interop-component-reg-failed`
     extends StObject
        with AnalyticsError
-  @scala.inline
-  def `interop-component-reg-failed`: `interop-component-reg-failed` = "interop-component-reg-failed".asInstanceOf[`interop-component-reg-failed`]
+  inline def `interop-component-reg-failed`: `interop-component-reg-failed` = "interop-component-reg-failed".asInstanceOf[`interop-component-reg-failed`]
   
   @js.native
   sealed trait `invalid-analytics-context`
     extends StObject
        with AnalyticsError
-  @scala.inline
-  def `invalid-analytics-context`: `invalid-analytics-context` = "invalid-analytics-context".asInstanceOf[`invalid-analytics-context`]
+  inline def `invalid-analytics-context`: `invalid-analytics-context` = "invalid-analytics-context".asInstanceOf[`invalid-analytics-context`]
   
   @js.native
   sealed trait `no-api-key`
     extends StObject
        with AnalyticsError
-  @scala.inline
-  def `no-api-key`: `no-api-key` = "no-api-key".asInstanceOf[`no-api-key`]
+  inline def `no-api-key`: `no-api-key` = "no-api-key".asInstanceOf[`no-api-key`]
   
   @js.native
   sealed trait `no-app-id`
     extends StObject
        with AnalyticsError
-  @scala.inline
-  def `no-app-id`: `no-app-id` = "no-app-id".asInstanceOf[`no-app-id`]
+  inline def `no-app-id`: `no-app-id` = "no-app-id".asInstanceOf[`no-app-id`]
   
   @js.native
   sealed trait set extends StObject
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
+  inline def set: set = "set".asInstanceOf[set]
 }

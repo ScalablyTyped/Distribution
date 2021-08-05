@@ -13,19 +13,15 @@ trait UpdateContainerAgentResponse extends StObject {
 }
 object UpdateContainerAgentResponse {
   
-  @scala.inline
-  def apply(): UpdateContainerAgentResponse = {
+  inline def apply(): UpdateContainerAgentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateContainerAgentResponse]
   }
   
-  @scala.inline
-  implicit class UpdateContainerAgentResponseMutableBuilder[Self <: UpdateContainerAgentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateContainerAgentResponse](x: Self) {
     
-    @scala.inline
-    def setContainerInstance(value: ContainerInstance): Self = StObject.set(x, "containerInstance", value.asInstanceOf[js.Any])
+    inline def setContainerInstance(value: ContainerInstance): Self = StObject.set(x, "containerInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerInstanceUndefined: Self = StObject.set(x, "containerInstance", js.undefined)
+    inline def setContainerInstanceUndefined: Self = StObject.set(x, "containerInstance", js.undefined)
   }
 }

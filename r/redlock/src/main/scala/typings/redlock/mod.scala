@@ -167,65 +167,46 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDriftFactor(value: Double): Self = StObject.set(x, "driftFactor", value.asInstanceOf[js.Any])
+      inline def setDriftFactor(value: Double): Self = StObject.set(x, "driftFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDriftFactorUndefined: Self = StObject.set(x, "driftFactor", js.undefined)
+      inline def setDriftFactorUndefined: Self = StObject.set(x, "driftFactor", js.undefined)
       
-      @scala.inline
-      def setExtendScript(value: ExtendScriptFunction | String): Self = StObject.set(x, "extendScript", value.asInstanceOf[js.Any])
+      inline def setExtendScript(value: ExtendScriptFunction | String): Self = StObject.set(x, "extendScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendScriptFunction1(value: /* origScript */ String => String): Self = StObject.set(x, "extendScript", js.Any.fromFunction1(value))
+      inline def setExtendScriptFunction1(value: /* origScript */ String => String): Self = StObject.set(x, "extendScript", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExtendScriptUndefined: Self = StObject.set(x, "extendScript", js.undefined)
+      inline def setExtendScriptUndefined: Self = StObject.set(x, "extendScript", js.undefined)
       
-      @scala.inline
-      def setLockScript(value: LockScriptFunction | String): Self = StObject.set(x, "lockScript", value.asInstanceOf[js.Any])
+      inline def setLockScript(value: LockScriptFunction | String): Self = StObject.set(x, "lockScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockScriptFunction1(value: /* origScript */ String => String): Self = StObject.set(x, "lockScript", js.Any.fromFunction1(value))
+      inline def setLockScriptFunction1(value: /* origScript */ String => String): Self = StObject.set(x, "lockScript", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLockScriptUndefined: Self = StObject.set(x, "lockScript", js.undefined)
+      inline def setLockScriptUndefined: Self = StObject.set(x, "lockScript", js.undefined)
       
-      @scala.inline
-      def setRetryCount(value: Double): Self = StObject.set(x, "retryCount", value.asInstanceOf[js.Any])
+      inline def setRetryCount(value: Double): Self = StObject.set(x, "retryCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryCountUndefined: Self = StObject.set(x, "retryCount", js.undefined)
+      inline def setRetryCountUndefined: Self = StObject.set(x, "retryCount", js.undefined)
       
-      @scala.inline
-      def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
+      inline def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
+      inline def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
       
-      @scala.inline
-      def setRetryJitter(value: Double): Self = StObject.set(x, "retryJitter", value.asInstanceOf[js.Any])
+      inline def setRetryJitter(value: Double): Self = StObject.set(x, "retryJitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryJitterUndefined: Self = StObject.set(x, "retryJitter", js.undefined)
+      inline def setRetryJitterUndefined: Self = StObject.set(x, "retryJitter", js.undefined)
       
-      @scala.inline
-      def setUnlockScript(value: UnlockScriptFunction | String): Self = StObject.set(x, "unlockScript", value.asInstanceOf[js.Any])
+      inline def setUnlockScript(value: UnlockScriptFunction | String): Self = StObject.set(x, "unlockScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnlockScriptFunction1(value: /* origScript */ String => String): Self = StObject.set(x, "unlockScript", js.Any.fromFunction1(value))
+      inline def setUnlockScriptFunction1(value: /* origScript */ String => String): Self = StObject.set(x, "unlockScript", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnlockScriptUndefined: Self = StObject.set(x, "unlockScript", js.undefined)
+      inline def setUnlockScriptUndefined: Self = StObject.set(x, "unlockScript", js.undefined)
     }
   }
   

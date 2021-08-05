@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.SmartTagAction")
 @js.native
-class SmartTagAction protected ()
+/* private */ class SmartTagAction ()
   extends StObject
      with typings.activexAccess.Access.SmartTagAction {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.SmartTagAction_typekey")
   var AccessDotSmartTagAction_typekey: typings.activexAccess.Access.SmartTagAction = js.native
   

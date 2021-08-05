@@ -16,32 +16,24 @@ object Group {
   }
   object GetGroupsParams {
     
-    @scala.inline
-    def apply(): GetGroupsParams = {
+    inline def apply(): GetGroupsParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetGroupsParams]
     }
     
-    @scala.inline
-    implicit class GetGroupsParamsMutableBuilder[Self <: GetGroupsParams] (val x: Self) extends AnyVal {
+    extension [Self <: GetGroupsParams](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
   
@@ -53,29 +45,22 @@ object Group {
   }
   object PatchGroupParams {
     
-    @scala.inline
-    def apply(): PatchGroupParams = {
+    inline def apply(): PatchGroupParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PatchGroupParams]
     }
     
-    @scala.inline
-    implicit class PatchGroupParamsMutableBuilder[Self <: PatchGroupParams] (val x: Self) extends AnyVal {
+    extension [Self <: PatchGroupParams](x: Self) {
       
-      @scala.inline
-      def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+      inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
       
-      @scala.inline
-      def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -87,26 +72,20 @@ object Group {
   }
   object PostGroupsParams {
     
-    @scala.inline
-    def apply(name: String): PostGroupsParams = {
+    inline def apply(name: String): PostGroupsParams = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PostGroupsParams]
     }
     
-    @scala.inline
-    implicit class PostGroupsParamsMutableBuilder[Self <: PostGroupsParams] (val x: Self) extends AnyVal {
+    extension [Self <: PostGroupsParams](x: Self) {
       
-      @scala.inline
-      def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+      inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
       
-      @scala.inline
-      def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

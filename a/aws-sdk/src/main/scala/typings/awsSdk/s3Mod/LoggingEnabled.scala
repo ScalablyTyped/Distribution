@@ -23,28 +23,21 @@ trait LoggingEnabled extends StObject {
 }
 object LoggingEnabled {
   
-  @scala.inline
-  def apply(TargetBucket: TargetBucket, TargetPrefix: TargetPrefix): LoggingEnabled = {
+  inline def apply(TargetBucket: TargetBucket, TargetPrefix: TargetPrefix): LoggingEnabled = {
     val __obj = js.Dynamic.literal(TargetBucket = TargetBucket.asInstanceOf[js.Any], TargetPrefix = TargetPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingEnabled]
   }
   
-  @scala.inline
-  implicit class LoggingEnabledMutableBuilder[Self <: LoggingEnabled] (val x: Self) extends AnyVal {
+  extension [Self <: LoggingEnabled](x: Self) {
     
-    @scala.inline
-    def setTargetBucket(value: TargetBucket): Self = StObject.set(x, "TargetBucket", value.asInstanceOf[js.Any])
+    inline def setTargetBucket(value: TargetBucket): Self = StObject.set(x, "TargetBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGrants(value: TargetGrants): Self = StObject.set(x, "TargetGrants", value.asInstanceOf[js.Any])
+    inline def setTargetGrants(value: TargetGrants): Self = StObject.set(x, "TargetGrants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGrantsUndefined: Self = StObject.set(x, "TargetGrants", js.undefined)
+    inline def setTargetGrantsUndefined: Self = StObject.set(x, "TargetGrants", js.undefined)
     
-    @scala.inline
-    def setTargetGrantsVarargs(value: TargetGrant*): Self = StObject.set(x, "TargetGrants", js.Array(value :_*))
+    inline def setTargetGrantsVarargs(value: TargetGrant*): Self = StObject.set(x, "TargetGrants", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetPrefix(value: TargetPrefix): Self = StObject.set(x, "TargetPrefix", value.asInstanceOf[js.Any])
+    inline def setTargetPrefix(value: TargetPrefix): Self = StObject.set(x, "TargetPrefix", value.asInstanceOf[js.Any])
   }
 }

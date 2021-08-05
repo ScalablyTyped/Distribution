@@ -12,8 +12,6 @@ object useStickyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(sticky: Boolean, prefixCls: String): Container = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sticky.asInstanceOf[js.Any], prefixCls.asInstanceOf[js.Any])).asInstanceOf[Container]
-  @scala.inline
-  def default(sticky: TableSticky, prefixCls: String): Container = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sticky.asInstanceOf[js.Any], prefixCls.asInstanceOf[js.Any])).asInstanceOf[Container]
+  inline def default(sticky: Boolean, prefixCls: String): Container = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sticky.asInstanceOf[js.Any], prefixCls.asInstanceOf[js.Any])).asInstanceOf[Container]
+  inline def default(sticky: TableSticky, prefixCls: String): Container = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sticky.asInstanceOf[js.Any], prefixCls.asInstanceOf[js.Any])).asInstanceOf[Container]
 }

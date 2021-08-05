@@ -31,22 +31,17 @@ trait StringContext extends StObject {
 }
 object StringContext {
   
-  @scala.inline
-  def apply(Length: Double, StartPosition: Double, Text: String): StringContext = {
+  inline def apply(Length: Double, StartPosition: Double, Text: String): StringContext = {
     val __obj = js.Dynamic.literal(Length = Length.asInstanceOf[js.Any], StartPosition = StartPosition.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringContext]
   }
   
-  @scala.inline
-  implicit class StringContextMutableBuilder[Self <: StringContext] (val x: Self) extends AnyVal {
+  extension [Self <: StringContext](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPosition(value: Double): Self = StObject.set(x, "StartPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: Double): Self = StObject.set(x, "StartPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

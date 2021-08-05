@@ -12,6 +12,5 @@ object messageBarStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IMessageBarStyleProps): IMessageBarStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IMessageBarStyles]
+  inline def getStyles(props: IMessageBarStyleProps): IMessageBarStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IMessageBarStyles]
 }

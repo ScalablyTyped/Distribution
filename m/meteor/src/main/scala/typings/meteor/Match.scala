@@ -20,17 +20,14 @@ object Match {
   }
   object Matcher {
     
-    @scala.inline
-    def apply[T](_meteorCheckMatcherBrand: Unit): Matcher[T] = {
+    inline def apply[T](_meteorCheckMatcherBrand: Unit): Matcher[T] = {
       val __obj = js.Dynamic.literal(_meteorCheckMatcherBrand = _meteorCheckMatcherBrand.asInstanceOf[js.Any])
       __obj.asInstanceOf[Matcher[T]]
     }
     
-    @scala.inline
-    implicit class MatcherMutableBuilder[Self <: Matcher[?], T] (val x: Self & Matcher[T]) extends AnyVal {
+    extension [Self <: Matcher[?], T](x: Self & Matcher[T]) {
       
-      @scala.inline
-      def set_meteorCheckMatcherBrand(value: Unit): Self = StObject.set(x, "_meteorCheckMatcherBrand", value.asInstanceOf[js.Any])
+      inline def set_meteorCheckMatcherBrand(value: Unit): Self = StObject.set(x, "_meteorCheckMatcherBrand", value.asInstanceOf[js.Any])
     }
   }
   

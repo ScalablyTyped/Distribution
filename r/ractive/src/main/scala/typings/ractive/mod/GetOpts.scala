@@ -18,25 +18,19 @@ trait GetOpts extends StObject {
 }
 object GetOpts {
   
-  @scala.inline
-  def apply(): GetOpts = {
+  inline def apply(): GetOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetOpts]
   }
   
-  @scala.inline
-  implicit class GetOptsMutableBuilder[Self <: GetOpts] (val x: Self) extends AnyVal {
+  extension [Self <: GetOpts](x: Self) {
     
-    @scala.inline
-    def setUnwrap(value: Boolean): Self = StObject.set(x, "unwrap", value.asInstanceOf[js.Any])
+    inline def setUnwrap(value: Boolean): Self = StObject.set(x, "unwrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnwrapUndefined: Self = StObject.set(x, "unwrap", js.undefined)
+    inline def setUnwrapUndefined: Self = StObject.set(x, "unwrap", js.undefined)
     
-    @scala.inline
-    def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
+    inline def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
+    inline def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
   }
 }

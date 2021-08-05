@@ -20,23 +20,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object MetaProperty_ {
   
-  @scala.inline
-  def apply(meta: Identifier_, property: Identifier_): MetaProperty_ = {
+  inline def apply(meta: Identifier_, property: Identifier_): MetaProperty_ = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("MetaProperty")
     __obj.asInstanceOf[MetaProperty_]
   }
   
-  @scala.inline
-  implicit class MetaProperty_MutableBuilder[Self <: MetaProperty_] (val x: Self) extends AnyVal {
+  extension [Self <: MetaProperty_](x: Self) {
     
-    @scala.inline
-    def setMeta(value: Identifier_): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Identifier_): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: Identifier_): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: Identifier_): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MetaProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MetaProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

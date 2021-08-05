@@ -22,34 +22,25 @@ trait SharedHist extends StObject {
 }
 object SharedHist {
   
-  @scala.inline
-  def apply(mode: js.Any): SharedHist = {
+  inline def apply(mode: js.Any): SharedHist = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedHist]
   }
   
-  @scala.inline
-  implicit class SharedHistMutableBuilder[Self <: SharedHist] (val x: Self) extends AnyVal {
+  extension [Self <: SharedHist](x: Self) {
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setMode(value: js.Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: js.Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedHist(value: Boolean): Self = StObject.set(x, "sharedHist", value.asInstanceOf[js.Any])
+    inline def setSharedHist(value: Boolean): Self = StObject.set(x, "sharedHist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedHistUndefined: Self = StObject.set(x, "sharedHist", js.undefined)
+    inline def setSharedHistUndefined: Self = StObject.set(x, "sharedHist", js.undefined)
     
-    @scala.inline
-    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

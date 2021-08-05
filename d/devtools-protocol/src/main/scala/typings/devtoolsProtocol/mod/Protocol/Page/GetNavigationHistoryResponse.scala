@@ -19,22 +19,17 @@ trait GetNavigationHistoryResponse extends StObject {
 }
 object GetNavigationHistoryResponse {
   
-  @scala.inline
-  def apply(currentIndex: integer, entries: js.Array[NavigationEntry]): GetNavigationHistoryResponse = {
+  inline def apply(currentIndex: integer, entries: js.Array[NavigationEntry]): GetNavigationHistoryResponse = {
     val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], entries = entries.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNavigationHistoryResponse]
   }
   
-  @scala.inline
-  implicit class GetNavigationHistoryResponseMutableBuilder[Self <: GetNavigationHistoryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetNavigationHistoryResponse](x: Self) {
     
-    @scala.inline
-    def setCurrentIndex(value: integer): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
+    inline def setCurrentIndex(value: integer): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntries(value: js.Array[NavigationEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[NavigationEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesVarargs(value: NavigationEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: NavigationEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

@@ -20,8 +20,7 @@ trait Filter extends StObject {
 }
 object Filter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getFieldAsync: () => js.Promise[Field],
     getFieldName: () => String,
     getFilterType: () => FilterType,
@@ -31,19 +30,14 @@ object Filter {
     __obj.asInstanceOf[Filter]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+  extension [Self <: Filter](x: Self) {
     
-    @scala.inline
-    def setGetFieldAsync(value: () => js.Promise[Field]): Self = StObject.set(x, "getFieldAsync", js.Any.fromFunction0(value))
+    inline def setGetFieldAsync(value: () => js.Promise[Field]): Self = StObject.set(x, "getFieldAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFieldName(value: () => String): Self = StObject.set(x, "getFieldName", js.Any.fromFunction0(value))
+    inline def setGetFieldName(value: () => String): Self = StObject.set(x, "getFieldName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFilterType(value: () => FilterType): Self = StObject.set(x, "getFilterType", js.Any.fromFunction0(value))
+    inline def setGetFilterType(value: () => FilterType): Self = StObject.set(x, "getFilterType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWorksheet(value: () => Worksheet): Self = StObject.set(x, "getWorksheet", js.Any.fromFunction0(value))
+    inline def setGetWorksheet(value: () => Worksheet): Self = StObject.set(x, "getWorksheet", js.Any.fromFunction0(value))
   }
 }

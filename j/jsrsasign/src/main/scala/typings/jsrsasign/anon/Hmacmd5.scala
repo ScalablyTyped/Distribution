@@ -84,8 +84,7 @@ trait Hmacmd5 extends StObject {
 }
 object Hmacmd5 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MD5withECDSA: String,
     MD5withRSA: String,
     MD5withRSAandMGF1: String,
@@ -129,121 +128,82 @@ object Hmacmd5 {
     __obj.asInstanceOf[Hmacmd5]
   }
   
-  @scala.inline
-  implicit class Hmacmd5MutableBuilder[Self <: Hmacmd5] (val x: Self) extends AnyVal {
+  extension [Self <: Hmacmd5](x: Self) {
     
-    @scala.inline
-    def setHmacmd5(value: String): Self = StObject.set(x, "hmacmd5", value.asInstanceOf[js.Any])
+    inline def setHmacmd5(value: String): Self = StObject.set(x, "hmacmd5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacripemd160(value: String): Self = StObject.set(x, "hmacripemd160", value.asInstanceOf[js.Any])
+    inline def setHmacripemd160(value: String): Self = StObject.set(x, "hmacripemd160", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacsha1(value: String): Self = StObject.set(x, "hmacsha1", value.asInstanceOf[js.Any])
+    inline def setHmacsha1(value: String): Self = StObject.set(x, "hmacsha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacsha224(value: String): Self = StObject.set(x, "hmacsha224", value.asInstanceOf[js.Any])
+    inline def setHmacsha224(value: String): Self = StObject.set(x, "hmacsha224", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacsha256(value: String): Self = StObject.set(x, "hmacsha256", value.asInstanceOf[js.Any])
+    inline def setHmacsha256(value: String): Self = StObject.set(x, "hmacsha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacsha384(value: String): Self = StObject.set(x, "hmacsha384", value.asInstanceOf[js.Any])
+    inline def setHmacsha384(value: String): Self = StObject.set(x, "hmacsha384", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacsha512(value: String): Self = StObject.set(x, "hmacsha512", value.asInstanceOf[js.Any])
+    inline def setHmacsha512(value: String): Self = StObject.set(x, "hmacsha512", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMD5withECDSA(value: String): Self = StObject.set(x, "MD5withECDSA", value.asInstanceOf[js.Any])
+    inline def setMD5withECDSA(value: String): Self = StObject.set(x, "MD5withECDSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMD5withRSA(value: String): Self = StObject.set(x, "MD5withRSA", value.asInstanceOf[js.Any])
+    inline def setMD5withRSA(value: String): Self = StObject.set(x, "MD5withRSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMD5withRSAandMGF1(value: String): Self = StObject.set(x, "MD5withRSAandMGF1", value.asInstanceOf[js.Any])
+    inline def setMD5withRSAandMGF1(value: String): Self = StObject.set(x, "MD5withRSAandMGF1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMd5(value: String): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
+    inline def setMd5(value: String): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRIPEMD160withECDSA(value: String): Self = StObject.set(x, "RIPEMD160withECDSA", value.asInstanceOf[js.Any])
+    inline def setRIPEMD160withECDSA(value: String): Self = StObject.set(x, "RIPEMD160withECDSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRIPEMD160withRSA(value: String): Self = StObject.set(x, "RIPEMD160withRSA", value.asInstanceOf[js.Any])
+    inline def setRIPEMD160withRSA(value: String): Self = StObject.set(x, "RIPEMD160withRSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRIPEMD160withRSAandMGF1(value: String): Self = StObject.set(x, "RIPEMD160withRSAandMGF1", value.asInstanceOf[js.Any])
+    inline def setRIPEMD160withRSAandMGF1(value: String): Self = StObject.set(x, "RIPEMD160withRSAandMGF1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRipemd160(value: String): Self = StObject.set(x, "ripemd160", value.asInstanceOf[js.Any])
+    inline def setRipemd160(value: String): Self = StObject.set(x, "ripemd160", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA1withDSA(value: String): Self = StObject.set(x, "SHA1withDSA", value.asInstanceOf[js.Any])
+    inline def setSHA1withDSA(value: String): Self = StObject.set(x, "SHA1withDSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA1withECDSA(value: String): Self = StObject.set(x, "SHA1withECDSA", value.asInstanceOf[js.Any])
+    inline def setSHA1withECDSA(value: String): Self = StObject.set(x, "SHA1withECDSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA1withRSA(value: String): Self = StObject.set(x, "SHA1withRSA", value.asInstanceOf[js.Any])
+    inline def setSHA1withRSA(value: String): Self = StObject.set(x, "SHA1withRSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA1withRSAandMGF1(value: String): Self = StObject.set(x, "SHA1withRSAandMGF1", value.asInstanceOf[js.Any])
+    inline def setSHA1withRSAandMGF1(value: String): Self = StObject.set(x, "SHA1withRSAandMGF1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA224withDSA(value: String): Self = StObject.set(x, "SHA224withDSA", value.asInstanceOf[js.Any])
+    inline def setSHA224withDSA(value: String): Self = StObject.set(x, "SHA224withDSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA224withECDSA(value: String): Self = StObject.set(x, "SHA224withECDSA", value.asInstanceOf[js.Any])
+    inline def setSHA224withECDSA(value: String): Self = StObject.set(x, "SHA224withECDSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA224withRSA(value: String): Self = StObject.set(x, "SHA224withRSA", value.asInstanceOf[js.Any])
+    inline def setSHA224withRSA(value: String): Self = StObject.set(x, "SHA224withRSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA224withRSAandMGF1(value: String): Self = StObject.set(x, "SHA224withRSAandMGF1", value.asInstanceOf[js.Any])
+    inline def setSHA224withRSAandMGF1(value: String): Self = StObject.set(x, "SHA224withRSAandMGF1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA256withDSA(value: String): Self = StObject.set(x, "SHA256withDSA", value.asInstanceOf[js.Any])
+    inline def setSHA256withDSA(value: String): Self = StObject.set(x, "SHA256withDSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA256withECDSA(value: String): Self = StObject.set(x, "SHA256withECDSA", value.asInstanceOf[js.Any])
+    inline def setSHA256withECDSA(value: String): Self = StObject.set(x, "SHA256withECDSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA256withRSA(value: String): Self = StObject.set(x, "SHA256withRSA", value.asInstanceOf[js.Any])
+    inline def setSHA256withRSA(value: String): Self = StObject.set(x, "SHA256withRSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA256withRSAandMGF1(value: String): Self = StObject.set(x, "SHA256withRSAandMGF1", value.asInstanceOf[js.Any])
+    inline def setSHA256withRSAandMGF1(value: String): Self = StObject.set(x, "SHA256withRSAandMGF1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA384withECDSA(value: String): Self = StObject.set(x, "SHA384withECDSA", value.asInstanceOf[js.Any])
+    inline def setSHA384withECDSA(value: String): Self = StObject.set(x, "SHA384withECDSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA384withRSA(value: String): Self = StObject.set(x, "SHA384withRSA", value.asInstanceOf[js.Any])
+    inline def setSHA384withRSA(value: String): Self = StObject.set(x, "SHA384withRSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA384withRSAandMGF1(value: String): Self = StObject.set(x, "SHA384withRSAandMGF1", value.asInstanceOf[js.Any])
+    inline def setSHA384withRSAandMGF1(value: String): Self = StObject.set(x, "SHA384withRSAandMGF1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA512withECDSA(value: String): Self = StObject.set(x, "SHA512withECDSA", value.asInstanceOf[js.Any])
+    inline def setSHA512withECDSA(value: String): Self = StObject.set(x, "SHA512withECDSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA512withRSA(value: String): Self = StObject.set(x, "SHA512withRSA", value.asInstanceOf[js.Any])
+    inline def setSHA512withRSA(value: String): Self = StObject.set(x, "SHA512withRSA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA512withRSAandMGF1(value: String): Self = StObject.set(x, "SHA512withRSAandMGF1", value.asInstanceOf[js.Any])
+    inline def setSHA512withRSAandMGF1(value: String): Self = StObject.set(x, "SHA512withRSAandMGF1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
+    inline def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha224(value: String): Self = StObject.set(x, "sha224", value.asInstanceOf[js.Any])
+    inline def setSha224(value: String): Self = StObject.set(x, "sha224", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+    inline def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha384(value: String): Self = StObject.set(x, "sha384", value.asInstanceOf[js.Any])
+    inline def setSha384(value: String): Self = StObject.set(x, "sha384", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha512(value: String): Self = StObject.set(x, "sha512", value.asInstanceOf[js.Any])
+    inline def setSha512(value: String): Self = StObject.set(x, "sha512", value.asInstanceOf[js.Any])
   }
 }

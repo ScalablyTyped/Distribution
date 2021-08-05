@@ -10,19 +10,15 @@ trait Req extends StObject {
 }
 object Req {
   
-  @scala.inline
-  def apply(): Req = {
+  inline def apply(): Req = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Req]
   }
   
-  @scala.inline
-  implicit class ReqMutableBuilder[Self <: Req] (val x: Self) extends AnyVal {
+  extension [Self <: Req](x: Self) {
     
-    @scala.inline
-    def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
+    inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
   }
 }

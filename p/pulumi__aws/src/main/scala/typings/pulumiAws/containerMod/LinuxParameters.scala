@@ -14,34 +14,25 @@ trait LinuxParameters extends StObject {
 }
 object LinuxParameters {
   
-  @scala.inline
-  def apply(): LinuxParameters = {
+  inline def apply(): LinuxParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinuxParameters]
   }
   
-  @scala.inline
-  implicit class LinuxParametersMutableBuilder[Self <: LinuxParameters] (val x: Self) extends AnyVal {
+  extension [Self <: LinuxParameters](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: KernelCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: KernelCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+    inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
-    @scala.inline
-    def setDevices(value: js.Array[Device]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: js.Array[Device]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
+    inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
     
-    @scala.inline
-    def setDevicesVarargs(value: Device*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: Device*): Self = StObject.set(x, "devices", js.Array(value :_*))
     
-    @scala.inline
-    def setInitProcessEnabled(value: Boolean): Self = StObject.set(x, "initProcessEnabled", value.asInstanceOf[js.Any])
+    inline def setInitProcessEnabled(value: Boolean): Self = StObject.set(x, "initProcessEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitProcessEnabledUndefined: Self = StObject.set(x, "initProcessEnabled", js.undefined)
+    inline def setInitProcessEnabledUndefined: Self = StObject.set(x, "initProcessEnabled", js.undefined)
   }
 }

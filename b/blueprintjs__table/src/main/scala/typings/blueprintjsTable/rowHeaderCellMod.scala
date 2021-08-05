@@ -45,32 +45,24 @@ object rowHeaderCellMod {
   }
   object IRowHeaderCellProps {
     
-    @scala.inline
-    def apply(): IRowHeaderCellProps = {
+    inline def apply(): IRowHeaderCellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRowHeaderCellProps]
     }
     
-    @scala.inline
-    implicit class IRowHeaderCellPropsMutableBuilder[Self <: IRowHeaderCellProps] (val x: Self) extends AnyVal {
+    extension [Self <: IRowHeaderCellProps](x: Self) {
       
-      @scala.inline
-      def setEnableRowReordering(value: Boolean): Self = StObject.set(x, "enableRowReordering", value.asInstanceOf[js.Any])
+      inline def setEnableRowReordering(value: Boolean): Self = StObject.set(x, "enableRowReordering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableRowReorderingUndefined: Self = StObject.set(x, "enableRowReordering", js.undefined)
+      inline def setEnableRowReorderingUndefined: Self = StObject.set(x, "enableRowReordering", js.undefined)
       
-      @scala.inline
-      def setIsRowSelected(value: Boolean): Self = StObject.set(x, "isRowSelected", value.asInstanceOf[js.Any])
+      inline def setIsRowSelected(value: Boolean): Self = StObject.set(x, "isRowSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRowSelectedUndefined: Self = StObject.set(x, "isRowSelected", js.undefined)
+      inline def setIsRowSelectedUndefined: Self = StObject.set(x, "isRowSelected", js.undefined)
       
-      @scala.inline
-      def setNameRenderer(value: (/* name */ String, /* index */ js.UndefOr[Double]) => ReactElement): Self = StObject.set(x, "nameRenderer", js.Any.fromFunction2(value))
+      inline def setNameRenderer(value: (/* name */ String, /* index */ js.UndefOr[Double]) => ReactElement): Self = StObject.set(x, "nameRenderer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNameRendererUndefined: Self = StObject.set(x, "nameRenderer", js.undefined)
+      inline def setNameRendererUndefined: Self = StObject.set(x, "nameRenderer", js.undefined)
     }
   }
 }

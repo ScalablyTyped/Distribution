@@ -32,50 +32,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LogEvent extends StObject
 object LogEvent {
   
-  @scala.inline
-  def Readonlynameentrypointroo(profilerContext: js.Any, rootModuleID: String): typings.relayRuntime.anon.Readonlynameentrypointroo = {
+  inline def Readonlynameentrypointroo(profilerContext: js.Any, rootModuleID: String): typings.relayRuntime.anon.Readonlynameentrypointroo = {
     val __obj = js.Dynamic.literal(name = "entrypoint.root.consume", profilerContext = profilerContext.asInstanceOf[js.Any], rootModuleID = rootModuleID.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.anon.Readonlynameentrypointroo]
   }
   
-  @scala.inline
-  def Readonlynameexecutecomple(transactionID: Double): typings.relayRuntime.anon.Readonlynameexecutecomple = {
+  inline def Readonlynameexecutecomple(transactionID: Double): typings.relayRuntime.anon.Readonlynameexecutecomple = {
     val __obj = js.Dynamic.literal(name = "execute.complete", transactionID = transactionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.anon.Readonlynameexecutecomple]
   }
   
-  @scala.inline
-  def Readonlynameexecuteerrort(error: Error, transactionID: Double): typings.relayRuntime.anon.Readonlynameexecuteerrort = {
+  inline def Readonlynameexecuteerrort(error: Error, transactionID: Double): typings.relayRuntime.anon.Readonlynameexecuteerrort = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], name = "execute.error", transactionID = transactionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.anon.Readonlynameexecuteerrort]
   }
   
-  @scala.inline
-  def Readonlynameexecuteinfotr(info: js.Any, transactionID: Double): typings.relayRuntime.anon.Readonlynameexecuteinfotr = {
+  inline def Readonlynameexecuteinfotr(info: js.Any, transactionID: Double): typings.relayRuntime.anon.Readonlynameexecuteinfotr = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], name = "execute.info", transactionID = transactionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.anon.Readonlynameexecuteinfotr]
   }
   
-  @scala.inline
-  def Readonlynameexecutenexttr(response: GraphQLResponse, transactionID: Double): typings.relayRuntime.anon.Readonlynameexecutenexttr = {
+  inline def Readonlynameexecutenexttr(response: GraphQLResponse, transactionID: Double): typings.relayRuntime.anon.Readonlynameexecutenexttr = {
     val __obj = js.Dynamic.literal(name = "execute.next", response = response.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.anon.Readonlynameexecutenexttr]
   }
   
-  @scala.inline
-  def Readonlynameexecutestartt(params: RequestParameters, transactionID: Double, variables: Variables): typings.relayRuntime.anon.Readonlynameexecutestartt = {
+  inline def Readonlynameexecutestartt(params: RequestParameters, transactionID: Double, variables: Variables): typings.relayRuntime.anon.Readonlynameexecutestartt = {
     val __obj = js.Dynamic.literal(name = "execute.start", params = params.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.anon.Readonlynameexecutestartt]
   }
   
-  @scala.inline
-  def Readonlynameexecuteunsubs(transactionID: Double): typings.relayRuntime.anon.Readonlynameexecuteunsubs = {
+  inline def Readonlynameexecuteunsubs(transactionID: Double): typings.relayRuntime.anon.Readonlynameexecuteunsubs = {
     val __obj = js.Dynamic.literal(name = "execute.unsubscribe", transactionID = transactionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.anon.Readonlynameexecuteunsubs]
   }
   
-  @scala.inline
-  def Readonlynamequeryresource(
+  inline def Readonlynamequeryresource(
     fetchPolicy: FetchPolicy,
     operation: OperationDescriptor,
     profilerContext: js.Any,
@@ -88,44 +80,37 @@ object LogEvent {
     __obj.asInstanceOf[typings.relayRuntime.anon.Readonlynamequeryresource]
   }
   
-  @scala.inline
-  def ReadonlynamequeryresourceName(profilerContext: js.Any, resourceID: Double): typings.relayRuntime.anon.ReadonlynamequeryresourceName = {
+  inline def ReadonlynamequeryresourceName(profilerContext: js.Any, resourceID: Double): typings.relayRuntime.anon.ReadonlynamequeryresourceName = {
     val __obj = js.Dynamic.literal(name = "queryresource.retain", profilerContext = profilerContext.asInstanceOf[js.Any], resourceID = resourceID.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.anon.ReadonlynamequeryresourceName]
   }
   
-  @scala.inline
-  def Readonlynamestoregcrefere(references: Set[DataID]): typings.relayRuntime.anon.Readonlynamestoregcrefere = {
+  inline def Readonlynamestoregcrefere(references: Set[DataID]): typings.relayRuntime.anon.Readonlynamestoregcrefere = {
     val __obj = js.Dynamic.literal(name = "store.gc", references = references.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.anon.Readonlynamestoregcrefere]
   }
   
-  @scala.inline
-  def Readonlynamestorenotifyco(invalidatedRecordIDs: Set[DataID], updatedRecordIDs: UpdatedRecords): typings.relayRuntime.anon.Readonlynamestorenotifyco = {
+  inline def Readonlynamestorenotifyco(invalidatedRecordIDs: Set[DataID], updatedRecordIDs: UpdatedRecords): typings.relayRuntime.anon.Readonlynamestorenotifyco = {
     val __obj = js.Dynamic.literal(invalidatedRecordIDs = invalidatedRecordIDs.asInstanceOf[js.Any], name = "store.notify.complete", updatedRecordIDs = updatedRecordIDs.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.anon.Readonlynamestorenotifyco]
   }
   
-  @scala.inline
-  def Readonlynamestorenotifyst(): typings.relayRuntime.anon.Readonlynamestorenotifyst = {
+  inline def Readonlynamestorenotifyst(): typings.relayRuntime.anon.Readonlynamestorenotifyst = {
     val __obj = js.Dynamic.literal(name = "store.notify.start")
     __obj.asInstanceOf[typings.relayRuntime.anon.Readonlynamestorenotifyst]
   }
   
-  @scala.inline
-  def Readonlynamestorepublishs(optimistic: Boolean, source: RecordSource): typings.relayRuntime.anon.Readonlynamestorepublishs = {
+  inline def Readonlynamestorepublishs(optimistic: Boolean, source: RecordSource): typings.relayRuntime.anon.Readonlynamestorepublishs = {
     val __obj = js.Dynamic.literal(name = "store.publish", optimistic = optimistic.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.anon.Readonlynamestorepublishs]
   }
   
-  @scala.inline
-  def Readonlynamestorerestore(): typings.relayRuntime.anon.Readonlynamestorerestore = {
+  inline def Readonlynamestorerestore(): typings.relayRuntime.anon.Readonlynamestorerestore = {
     val __obj = js.Dynamic.literal(name = "store.restore")
     __obj.asInstanceOf[typings.relayRuntime.anon.Readonlynamestorerestore]
   }
   
-  @scala.inline
-  def Readonlynamestoresnapshot(): typings.relayRuntime.anon.Readonlynamestoresnapshot = {
+  inline def Readonlynamestoresnapshot(): typings.relayRuntime.anon.Readonlynamestoresnapshot = {
     val __obj = js.Dynamic.literal(name = "store.snapshot")
     __obj.asInstanceOf[typings.relayRuntime.anon.Readonlynamestoresnapshot]
   }

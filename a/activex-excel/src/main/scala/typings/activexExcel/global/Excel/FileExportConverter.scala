@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.FileExportConverter")
 @js.native
-class FileExportConverter protected ()
+/* private */ class FileExportConverter ()
   extends StObject
      with typings.activexExcel.Excel.FileExportConverter {
   
@@ -20,7 +20,7 @@ class FileExportConverter protected ()
   /* CompleteClass */
   override val Description: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.FileExportConverter_typekey")
   var ExcelDotFileExportConverter_typekey: typings.activexExcel.Excel.FileExportConverter = js.native
   

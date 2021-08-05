@@ -19,8 +19,7 @@ trait ObjectSymbol3DLayerMaterialProperties
 }
 object ObjectSymbol3DLayerMaterialProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,16 +28,12 @@ object ObjectSymbol3DLayerMaterialProperties {
     __obj.asInstanceOf[ObjectSymbol3DLayerMaterialProperties]
   }
   
-  @scala.inline
-  implicit class ObjectSymbol3DLayerMaterialPropertiesMutableBuilder[Self <: ObjectSymbol3DLayerMaterialProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectSymbol3DLayerMaterialProperties](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
   }
 }

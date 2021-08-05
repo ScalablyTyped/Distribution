@@ -18,22 +18,17 @@ trait SigningImageFormat extends StObject {
 }
 object SigningImageFormat {
   
-  @scala.inline
-  def apply(defaultFormat: ImageFormat, supportedFormats: ImageFormats): SigningImageFormat = {
+  inline def apply(defaultFormat: ImageFormat, supportedFormats: ImageFormats): SigningImageFormat = {
     val __obj = js.Dynamic.literal(defaultFormat = defaultFormat.asInstanceOf[js.Any], supportedFormats = supportedFormats.asInstanceOf[js.Any])
     __obj.asInstanceOf[SigningImageFormat]
   }
   
-  @scala.inline
-  implicit class SigningImageFormatMutableBuilder[Self <: SigningImageFormat] (val x: Self) extends AnyVal {
+  extension [Self <: SigningImageFormat](x: Self) {
     
-    @scala.inline
-    def setDefaultFormat(value: ImageFormat): Self = StObject.set(x, "defaultFormat", value.asInstanceOf[js.Any])
+    inline def setDefaultFormat(value: ImageFormat): Self = StObject.set(x, "defaultFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedFormats(value: ImageFormats): Self = StObject.set(x, "supportedFormats", value.asInstanceOf[js.Any])
+    inline def setSupportedFormats(value: ImageFormats): Self = StObject.set(x, "supportedFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedFormatsVarargs(value: ImageFormat*): Self = StObject.set(x, "supportedFormats", js.Array(value :_*))
+    inline def setSupportedFormatsVarargs(value: ImageFormat*): Self = StObject.set(x, "supportedFormats", js.Array(value :_*))
   }
 }

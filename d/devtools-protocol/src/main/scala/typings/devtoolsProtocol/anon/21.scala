@@ -13,22 +13,17 @@ trait `21` extends StObject {
 }
 object `21` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[SetMaxCallStackSizeToCaptureRequest], returnType: Unit): `21` = {
+  inline def apply(paramsType: js.Array[SetMaxCallStackSizeToCaptureRequest], returnType: Unit): `21` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`21`]
   }
   
-  @scala.inline
-  implicit class `21MutableBuilder`[Self <: `21`] (val x: Self) extends AnyVal {
+  extension [Self <: `21`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[SetMaxCallStackSizeToCaptureRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[SetMaxCallStackSizeToCaptureRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: SetMaxCallStackSizeToCaptureRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SetMaxCallStackSizeToCaptureRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

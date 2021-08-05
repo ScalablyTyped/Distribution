@@ -11,16 +11,13 @@ trait Req extends StObject {
 }
 object Req {
   
-  @scala.inline
-  def apply(req: SuperAgentRequest): Req = {
+  inline def apply(req: SuperAgentRequest): Req = {
     val __obj = js.Dynamic.literal(req = req.asInstanceOf[js.Any])
     __obj.asInstanceOf[Req]
   }
   
-  @scala.inline
-  implicit class ReqMutableBuilder[Self <: Req] (val x: Self) extends AnyVal {
+  extension [Self <: Req](x: Self) {
     
-    @scala.inline
-    def setReq(value: SuperAgentRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: SuperAgentRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
   }
 }

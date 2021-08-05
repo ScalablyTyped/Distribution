@@ -33,34 +33,25 @@ trait AccountGuarantor
 }
 object AccountGuarantor {
   
-  @scala.inline
-  def apply(party: Reference): AccountGuarantor = {
+  inline def apply(party: Reference): AccountGuarantor = {
     val __obj = js.Dynamic.literal(party = party.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountGuarantor]
   }
   
-  @scala.inline
-  implicit class AccountGuarantorMutableBuilder[Self <: AccountGuarantor] (val x: Self) extends AnyVal {
+  extension [Self <: AccountGuarantor](x: Self) {
     
-    @scala.inline
-    def setOnHold(value: Boolean): Self = StObject.set(x, "onHold", value.asInstanceOf[js.Any])
+    inline def setOnHold(value: Boolean): Self = StObject.set(x, "onHold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnHoldUndefined: Self = StObject.set(x, "onHold", js.undefined)
+    inline def setOnHoldUndefined: Self = StObject.set(x, "onHold", js.undefined)
     
-    @scala.inline
-    def setParty(value: Reference): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
+    inline def setParty(value: Reference): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def set_onHold(value: Element): Self = StObject.set(x, "_onHold", value.asInstanceOf[js.Any])
+    inline def set_onHold(value: Element): Self = StObject.set(x, "_onHold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_onHoldUndefined: Self = StObject.set(x, "_onHold", js.undefined)
+    inline def set_onHoldUndefined: Self = StObject.set(x, "_onHold", js.undefined)
   }
 }

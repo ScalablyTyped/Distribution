@@ -8,6 +8,5 @@ object jsonqueryStrings {
   
   @js.native
   sealed trait QueryValue extends StObject
-  @scala.inline
-  def QueryValue: QueryValue = "QueryValue".asInstanceOf[QueryValue]
+  inline def QueryValue: QueryValue = "QueryValue".asInstanceOf[QueryValue]
 }

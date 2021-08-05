@@ -24,29 +24,22 @@ object typesItemCollectionMetricsMod {
   }
   object ItemCollectionMetrics {
     
-    @scala.inline
-    def apply(): ItemCollectionMetrics = {
+    inline def apply(): ItemCollectionMetrics = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ItemCollectionMetrics]
     }
     
-    @scala.inline
-    implicit class ItemCollectionMetricsMutableBuilder[Self <: ItemCollectionMetrics] (val x: Self) extends AnyVal {
+    extension [Self <: ItemCollectionMetrics](x: Self) {
       
-      @scala.inline
-      def setItemCollectionKey(value: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "ItemCollectionKey", value.asInstanceOf[js.Any])
+      inline def setItemCollectionKey(value: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "ItemCollectionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCollectionKeyUndefined: Self = StObject.set(x, "ItemCollectionKey", js.undefined)
+      inline def setItemCollectionKeyUndefined: Self = StObject.set(x, "ItemCollectionKey", js.undefined)
       
-      @scala.inline
-      def setSizeEstimateRangeGB(value: js.Array[Double] | Iterable[Double]): Self = StObject.set(x, "SizeEstimateRangeGB", value.asInstanceOf[js.Any])
+      inline def setSizeEstimateRangeGB(value: js.Array[Double] | Iterable[Double]): Self = StObject.set(x, "SizeEstimateRangeGB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeEstimateRangeGBUndefined: Self = StObject.set(x, "SizeEstimateRangeGB", js.undefined)
+      inline def setSizeEstimateRangeGBUndefined: Self = StObject.set(x, "SizeEstimateRangeGB", js.undefined)
       
-      @scala.inline
-      def setSizeEstimateRangeGBVarargs(value: Double*): Self = StObject.set(x, "SizeEstimateRangeGB", js.Array(value :_*))
+      inline def setSizeEstimateRangeGBVarargs(value: Double*): Self = StObject.set(x, "SizeEstimateRangeGB", js.Array(value :_*))
     }
   }
   
@@ -68,29 +61,22 @@ object typesItemCollectionMetricsMod {
   }
   object UnmarshalledItemCollectionMetrics {
     
-    @scala.inline
-    def apply(): UnmarshalledItemCollectionMetrics = {
+    inline def apply(): UnmarshalledItemCollectionMetrics = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledItemCollectionMetrics]
     }
     
-    @scala.inline
-    implicit class UnmarshalledItemCollectionMetricsMutableBuilder[Self <: UnmarshalledItemCollectionMetrics] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledItemCollectionMetrics](x: Self) {
       
-      @scala.inline
-      def setItemCollectionKey(value: StringDictionary[UnmarshalledAttributeValue]): Self = StObject.set(x, "ItemCollectionKey", value.asInstanceOf[js.Any])
+      inline def setItemCollectionKey(value: StringDictionary[UnmarshalledAttributeValue]): Self = StObject.set(x, "ItemCollectionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCollectionKeyUndefined: Self = StObject.set(x, "ItemCollectionKey", js.undefined)
+      inline def setItemCollectionKeyUndefined: Self = StObject.set(x, "ItemCollectionKey", js.undefined)
       
-      @scala.inline
-      def setSizeEstimateRangeGB(value: js.Array[Double]): Self = StObject.set(x, "SizeEstimateRangeGB", value.asInstanceOf[js.Any])
+      inline def setSizeEstimateRangeGB(value: js.Array[Double]): Self = StObject.set(x, "SizeEstimateRangeGB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeEstimateRangeGBUndefined: Self = StObject.set(x, "SizeEstimateRangeGB", js.undefined)
+      inline def setSizeEstimateRangeGBUndefined: Self = StObject.set(x, "SizeEstimateRangeGB", js.undefined)
       
-      @scala.inline
-      def setSizeEstimateRangeGBVarargs(value: Double*): Self = StObject.set(x, "SizeEstimateRangeGB", js.Array(value :_*))
+      inline def setSizeEstimateRangeGBVarargs(value: Double*): Self = StObject.set(x, "SizeEstimateRangeGB", js.Array(value :_*))
     }
   }
 }

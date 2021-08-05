@@ -11,6 +11,5 @@ object focusWithinMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(rootElement: Element, onFocusEnter: js.Function0[Unit], onFocusLeave: js.Function0[Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rootElement.asInstanceOf[js.Any], onFocusEnter.asInstanceOf[js.Any], onFocusLeave.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default(rootElement: Element, onFocusEnter: js.Function0[Unit], onFocusLeave: js.Function0[Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rootElement.asInstanceOf[js.Any], onFocusEnter.asInstanceOf[js.Any], onFocusLeave.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
 }

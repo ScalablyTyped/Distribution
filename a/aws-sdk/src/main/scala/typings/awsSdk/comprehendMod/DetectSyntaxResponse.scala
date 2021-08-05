@@ -13,22 +13,17 @@ trait DetectSyntaxResponse extends StObject {
 }
 object DetectSyntaxResponse {
   
-  @scala.inline
-  def apply(): DetectSyntaxResponse = {
+  inline def apply(): DetectSyntaxResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectSyntaxResponse]
   }
   
-  @scala.inline
-  implicit class DetectSyntaxResponseMutableBuilder[Self <: DetectSyntaxResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DetectSyntaxResponse](x: Self) {
     
-    @scala.inline
-    def setSyntaxTokens(value: ListOfSyntaxTokens): Self = StObject.set(x, "SyntaxTokens", value.asInstanceOf[js.Any])
+    inline def setSyntaxTokens(value: ListOfSyntaxTokens): Self = StObject.set(x, "SyntaxTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyntaxTokensUndefined: Self = StObject.set(x, "SyntaxTokens", js.undefined)
+    inline def setSyntaxTokensUndefined: Self = StObject.set(x, "SyntaxTokens", js.undefined)
     
-    @scala.inline
-    def setSyntaxTokensVarargs(value: SyntaxToken*): Self = StObject.set(x, "SyntaxTokens", js.Array(value :_*))
+    inline def setSyntaxTokensVarargs(value: SyntaxToken*): Self = StObject.set(x, "SyntaxTokens", js.Array(value :_*))
   }
 }

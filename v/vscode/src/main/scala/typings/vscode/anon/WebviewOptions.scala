@@ -13,19 +13,15 @@ trait WebviewOptions extends StObject {
 }
 object WebviewOptions {
   
-  @scala.inline
-  def apply(): WebviewOptions = {
+  inline def apply(): WebviewOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebviewOptions]
   }
   
-  @scala.inline
-  implicit class WebviewOptionsMutableBuilder[Self <: WebviewOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WebviewOptions](x: Self) {
     
-    @scala.inline
-    def setWebviewOptions(value: RetainContextWhenHidden): Self = StObject.set(x, "webviewOptions", value.asInstanceOf[js.Any])
+    inline def setWebviewOptions(value: RetainContextWhenHidden): Self = StObject.set(x, "webviewOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebviewOptionsUndefined: Self = StObject.set(x, "webviewOptions", js.undefined)
+    inline def setWebviewOptionsUndefined: Self = StObject.set(x, "webviewOptions", js.undefined)
   }
 }

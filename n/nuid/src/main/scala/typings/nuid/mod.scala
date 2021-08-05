@@ -10,11 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def next(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("next")().asInstanceOf[String]
+  inline def next(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("next")().asInstanceOf[String]
   
-  @scala.inline
-  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+  inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
   @JSImport("nuid", "version")
   @js.native

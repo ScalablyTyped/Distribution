@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CiEnv extends StObject
 object CiEnv {
   
-  @scala.inline
-  def AppveyorEnv(
+  inline def AppveyorEnv(
     branch: String,
     build: String,
     buildUrl: String,
@@ -27,32 +26,27 @@ object CiEnv {
     __obj.asInstanceOf[typings.envCi.mod.AppveyorEnv]
   }
   
-  @scala.inline
-  def BambooEnv(branch: String, build: String, buildUrl: String, commit: String, job: String, root: String): typings.envCi.mod.BambooEnv = {
+  inline def BambooEnv(branch: String, build: String, buildUrl: String, commit: String, job: String, root: String): typings.envCi.mod.BambooEnv = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, job = job.asInstanceOf[js.Any], name = "Bamboo", root = root.asInstanceOf[js.Any], service = "bamboo")
     __obj.asInstanceOf[typings.envCi.mod.BambooEnv]
   }
   
-  @scala.inline
-  def BitbucketEnv(branch: String, build: String, buildUrl: String, commit: String, root: String, slug: String): typings.envCi.mod.BitbucketEnv = {
+  inline def BitbucketEnv(branch: String, build: String, buildUrl: String, commit: String, root: String, slug: String): typings.envCi.mod.BitbucketEnv = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, name = "Bitbucket Pipelines", root = root.asInstanceOf[js.Any], service = "bitbucket", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.envCi.mod.BitbucketEnv]
   }
   
-  @scala.inline
-  def BitriseEnv(branch: String, build: String, buildUrl: String, commit: String, isPr: Boolean, slug: String): typings.envCi.mod.BitriseEnv = {
+  inline def BitriseEnv(branch: String, build: String, buildUrl: String, commit: String, isPr: Boolean, slug: String): typings.envCi.mod.BitriseEnv = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], name = "Bitrise", service = "bitrise", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.envCi.mod.BitriseEnv]
   }
   
-  @scala.inline
-  def BuddyEnv(build: String, buildUrl: String, commit: String, isPr: Boolean, slug: String): typings.envCi.mod.BuddyEnv = {
+  inline def BuddyEnv(build: String, buildUrl: String, commit: String, isPr: Boolean, slug: String): typings.envCi.mod.BuddyEnv = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], name = "Buddy", service = "buddy", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.envCi.mod.BuddyEnv]
   }
   
-  @scala.inline
-  def BuildkiteEnv(
+  inline def BuildkiteEnv(
     branch: String,
     build: String,
     buildUrl: String,
@@ -65,14 +59,12 @@ object CiEnv {
     __obj.asInstanceOf[typings.envCi.mod.BuildkiteEnv]
   }
   
-  @scala.inline
-  def CircleCiEnv(build: String, buildUrl: String, commit: String, isPr: Boolean, job: String, slug: String): typings.envCi.mod.CircleCiEnv = {
+  inline def CircleCiEnv(build: String, buildUrl: String, commit: String, isPr: Boolean, job: String, slug: String): typings.envCi.mod.CircleCiEnv = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], name = "CircleCI", service = "circleci", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.envCi.mod.CircleCiEnv]
   }
   
-  @scala.inline
-  def CirrusEnv(
+  inline def CirrusEnv(
     branch: String,
     build: String,
     buildUrl: String,
@@ -87,14 +79,12 @@ object CiEnv {
     __obj.asInstanceOf[typings.envCi.mod.CirrusEnv]
   }
   
-  @scala.inline
-  def CodeBuildEnv(branch: String, build: String, buildUrl: String, commit: String, root: String): typings.envCi.mod.CodeBuildEnv = {
+  inline def CodeBuildEnv(branch: String, build: String, buildUrl: String, commit: String, root: String): typings.envCi.mod.CodeBuildEnv = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, name = "AWS CodeBuild", root = root.asInstanceOf[js.Any], service = "codebuild")
     __obj.asInstanceOf[typings.envCi.mod.CodeBuildEnv]
   }
   
-  @scala.inline
-  def CodefreshEnv(
+  inline def CodefreshEnv(
     branch: String,
     build: String,
     buildUrl: String,
@@ -107,20 +97,17 @@ object CiEnv {
     __obj.asInstanceOf[typings.envCi.mod.CodefreshEnv]
   }
   
-  @scala.inline
-  def CodeshipEnv(branch: String, build: String, buildUrl: String, commit: String, slug: String): typings.envCi.mod.CodeshipEnv = {
+  inline def CodeshipEnv(branch: String, build: String, buildUrl: String, commit: String, slug: String): typings.envCi.mod.CodeshipEnv = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, name = "Codeship", service = "codeship", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.envCi.mod.CodeshipEnv]
   }
   
-  @scala.inline
-  def DroneEnv(branch: String, build: String, commit: String, isPr: Boolean, job: String, slug: String): typings.envCi.mod.DroneEnv = {
+  inline def DroneEnv(branch: String, build: String, commit: String, isPr: Boolean, job: String, slug: String): typings.envCi.mod.DroneEnv = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], name = "Drone", service = "drone", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.envCi.mod.DroneEnv]
   }
   
-  @scala.inline
-  def GitLabEnv(
+  inline def GitLabEnv(
     branch: String,
     build: String,
     buildUrl: String,
@@ -134,32 +121,27 @@ object CiEnv {
     __obj.asInstanceOf[typings.envCi.mod.GitLabEnv]
   }
   
-  @scala.inline
-  def JenkinsEnv(branch: String, build: String, buildUrl: String, commit: String, isPr: Boolean, root: String): typings.envCi.mod.JenkinsEnv = {
+  inline def JenkinsEnv(branch: String, build: String, buildUrl: String, commit: String, isPr: Boolean, root: String): typings.envCi.mod.JenkinsEnv = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], name = "Jenkins", root = root.asInstanceOf[js.Any], service = "jenkins")
     __obj.asInstanceOf[typings.envCi.mod.JenkinsEnv]
   }
   
-  @scala.inline
-  def NonCiEnv(): typings.envCi.mod.NonCiEnv = {
+  inline def NonCiEnv(): typings.envCi.mod.NonCiEnv = {
     val __obj = js.Dynamic.literal(isCi = false)
     __obj.asInstanceOf[typings.envCi.mod.NonCiEnv]
   }
   
-  @scala.inline
-  def SailEnv(commit: String, isPr: Boolean, root: String, slug: String): typings.envCi.mod.SailEnv = {
+  inline def SailEnv(commit: String, isPr: Boolean, root: String, slug: String): typings.envCi.mod.SailEnv = {
     val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], name = "Sail CI", root = root.asInstanceOf[js.Any], service = "sail", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.envCi.mod.SailEnv]
   }
   
-  @scala.inline
-  def SemaphoreEnv(build: String, commit: String, isPr: Boolean, root: String, slug: String): typings.envCi.mod.SemaphoreEnv = {
+  inline def SemaphoreEnv(build: String, commit: String, isPr: Boolean, root: String, slug: String): typings.envCi.mod.SemaphoreEnv = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], name = "Semaphore", root = root.asInstanceOf[js.Any], service = "semaphore", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.envCi.mod.SemaphoreEnv]
   }
   
-  @scala.inline
-  def ShippableEnv(
+  inline def ShippableEnv(
     branch: String,
     build: String,
     buildUrl: String,
@@ -173,14 +155,12 @@ object CiEnv {
     __obj.asInstanceOf[typings.envCi.mod.ShippableEnv]
   }
   
-  @scala.inline
-  def TeamCityEnv(build: String, commit: String, slug: String): typings.envCi.mod.TeamCityEnv = {
+  inline def TeamCityEnv(build: String, commit: String, slug: String): typings.envCi.mod.TeamCityEnv = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, name = "TeamCity", service = "teamcity", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.envCi.mod.TeamCityEnv]
   }
   
-  @scala.inline
-  def TravisEnv(
+  inline def TravisEnv(
     build: String,
     buildUrl: String,
     commit: String,
@@ -195,14 +175,12 @@ object CiEnv {
     __obj.asInstanceOf[typings.envCi.mod.TravisEnv]
   }
   
-  @scala.inline
-  def VstsEnv(branch: String, build: String, commit: String, isPr: Boolean, root: String): typings.envCi.mod.VstsEnv = {
+  inline def VstsEnv(branch: String, build: String, commit: String, isPr: Boolean, root: String): typings.envCi.mod.VstsEnv = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], name = "Visual Studio Team Services", root = root.asInstanceOf[js.Any], service = "vsts")
     __obj.asInstanceOf[typings.envCi.mod.VstsEnv]
   }
   
-  @scala.inline
-  def WerckerEnv(branch: String, build: String, buildUrl: String, commit: String, root: String, slug: String): typings.envCi.mod.WerckerEnv = {
+  inline def WerckerEnv(branch: String, build: String, buildUrl: String, commit: String, root: String, slug: String): typings.envCi.mod.WerckerEnv = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, name = "Wercker", root = root.asInstanceOf[js.Any], service = "wercker", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.envCi.mod.WerckerEnv]
   }

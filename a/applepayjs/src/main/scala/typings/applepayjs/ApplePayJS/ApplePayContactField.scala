@@ -17,18 +17,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplePayContactField extends StObject
 object ApplePayContactField {
   
-  @scala.inline
-  def email: typings.applepayjs.applepayjsStrings.email = "email".asInstanceOf[typings.applepayjs.applepayjsStrings.email]
+  inline def email: typings.applepayjs.applepayjsStrings.email = "email".asInstanceOf[typings.applepayjs.applepayjsStrings.email]
   
-  @scala.inline
-  def name: typings.applepayjs.applepayjsStrings.name = "name".asInstanceOf[typings.applepayjs.applepayjsStrings.name]
+  inline def name: typings.applepayjs.applepayjsStrings.name = "name".asInstanceOf[typings.applepayjs.applepayjsStrings.name]
   
-  @scala.inline
-  def phone: typings.applepayjs.applepayjsStrings.phone = "phone".asInstanceOf[typings.applepayjs.applepayjsStrings.phone]
+  inline def phone: typings.applepayjs.applepayjsStrings.phone = "phone".asInstanceOf[typings.applepayjs.applepayjsStrings.phone]
   
-  @scala.inline
-  def phoneticName: typings.applepayjs.applepayjsStrings.phoneticName = "phoneticName".asInstanceOf[typings.applepayjs.applepayjsStrings.phoneticName]
+  inline def phoneticName: typings.applepayjs.applepayjsStrings.phoneticName = "phoneticName".asInstanceOf[typings.applepayjs.applepayjsStrings.phoneticName]
   
-  @scala.inline
-  def postalAddress: typings.applepayjs.applepayjsStrings.postalAddress = "postalAddress".asInstanceOf[typings.applepayjs.applepayjsStrings.postalAddress]
+  inline def postalAddress: typings.applepayjs.applepayjsStrings.postalAddress = "postalAddress".asInstanceOf[typings.applepayjs.applepayjsStrings.postalAddress]
 }

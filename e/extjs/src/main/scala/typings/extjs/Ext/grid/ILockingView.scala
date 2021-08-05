@@ -14,19 +14,15 @@ trait ILockingView
 }
 object ILockingView {
   
-  @scala.inline
-  def apply(): ILockingView = {
+  inline def apply(): ILockingView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ILockingView]
   }
   
-  @scala.inline
-  implicit class ILockingViewMutableBuilder[Self <: ILockingView] (val x: Self) extends AnyVal {
+  extension [Self <: ILockingView](x: Self) {
     
-    @scala.inline
-    def setIsLockingView(value: Boolean): Self = StObject.set(x, "isLockingView", value.asInstanceOf[js.Any])
+    inline def setIsLockingView(value: Boolean): Self = StObject.set(x, "isLockingView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLockingViewUndefined: Self = StObject.set(x, "isLockingView", js.undefined)
+    inline def setIsLockingViewUndefined: Self = StObject.set(x, "isLockingView", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait ICoreWindowResizeManager extends StObject {
 }
 object ICoreWindowResizeManager {
   
-  @scala.inline
-  def apply(notifyLayoutCompleted: () => Unit): ICoreWindowResizeManager = {
+  inline def apply(notifyLayoutCompleted: () => Unit): ICoreWindowResizeManager = {
     val __obj = js.Dynamic.literal(notifyLayoutCompleted = js.Any.fromFunction0(notifyLayoutCompleted))
     __obj.asInstanceOf[ICoreWindowResizeManager]
   }
   
-  @scala.inline
-  implicit class ICoreWindowResizeManagerMutableBuilder[Self <: ICoreWindowResizeManager] (val x: Self) extends AnyVal {
+  extension [Self <: ICoreWindowResizeManager](x: Self) {
     
-    @scala.inline
-    def setNotifyLayoutCompleted(value: () => Unit): Self = StObject.set(x, "notifyLayoutCompleted", js.Any.fromFunction0(value))
+    inline def setNotifyLayoutCompleted(value: () => Unit): Self = StObject.set(x, "notifyLayoutCompleted", js.Any.fromFunction0(value))
   }
 }

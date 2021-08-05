@@ -22,20 +22,16 @@ object transferMod extends Shortcut {
   }
   object TransferProps {
     
-    @scala.inline
-    def apply(): TransferProps = {
+    inline def apply(): TransferProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransferProps]
     }
     
-    @scala.inline
-    implicit class TransferPropsMutableBuilder[Self <: TransferProps] (val x: Self) extends AnyVal {
+    extension [Self <: TransferProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

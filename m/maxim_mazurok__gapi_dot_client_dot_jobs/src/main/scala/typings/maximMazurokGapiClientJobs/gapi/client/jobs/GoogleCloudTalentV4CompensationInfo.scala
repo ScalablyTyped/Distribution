@@ -23,34 +23,25 @@ trait GoogleCloudTalentV4CompensationInfo extends StObject {
 }
 object GoogleCloudTalentV4CompensationInfo {
   
-  @scala.inline
-  def apply(): GoogleCloudTalentV4CompensationInfo = {
+  inline def apply(): GoogleCloudTalentV4CompensationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudTalentV4CompensationInfo]
   }
   
-  @scala.inline
-  implicit class GoogleCloudTalentV4CompensationInfoMutableBuilder[Self <: GoogleCloudTalentV4CompensationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudTalentV4CompensationInfo](x: Self) {
     
-    @scala.inline
-    def setAnnualizedBaseCompensationRange(value: GoogleCloudTalentV4CompensationInfoCompensationRange): Self = StObject.set(x, "annualizedBaseCompensationRange", value.asInstanceOf[js.Any])
+    inline def setAnnualizedBaseCompensationRange(value: GoogleCloudTalentV4CompensationInfoCompensationRange): Self = StObject.set(x, "annualizedBaseCompensationRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnualizedBaseCompensationRangeUndefined: Self = StObject.set(x, "annualizedBaseCompensationRange", js.undefined)
+    inline def setAnnualizedBaseCompensationRangeUndefined: Self = StObject.set(x, "annualizedBaseCompensationRange", js.undefined)
     
-    @scala.inline
-    def setAnnualizedTotalCompensationRange(value: GoogleCloudTalentV4CompensationInfoCompensationRange): Self = StObject.set(x, "annualizedTotalCompensationRange", value.asInstanceOf[js.Any])
+    inline def setAnnualizedTotalCompensationRange(value: GoogleCloudTalentV4CompensationInfoCompensationRange): Self = StObject.set(x, "annualizedTotalCompensationRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnualizedTotalCompensationRangeUndefined: Self = StObject.set(x, "annualizedTotalCompensationRange", js.undefined)
+    inline def setAnnualizedTotalCompensationRangeUndefined: Self = StObject.set(x, "annualizedTotalCompensationRange", js.undefined)
     
-    @scala.inline
-    def setEntries(value: js.Array[GoogleCloudTalentV4CompensationInfoCompensationEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[GoogleCloudTalentV4CompensationInfoCompensationEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: GoogleCloudTalentV4CompensationInfoCompensationEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: GoogleCloudTalentV4CompensationInfoCompensationEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

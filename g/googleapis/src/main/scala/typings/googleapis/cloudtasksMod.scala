@@ -38,8 +38,7 @@ object cloudtasksMod {
     @JSImport("googleapis/build/src/apis/cloudtasks", "VERSIONS.v2")
     @js.native
     def v2: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Cloudtasks] = js.native
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Cloudtasks]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2")(x.asInstanceOf[js.Any])
     
@@ -58,8 +57,7 @@ object cloudtasksMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.v2beta2Mod.cloudtasksV2beta2.Cloudtasks
       ] = js.native
-    @scala.inline
-    def v2beta2_=(
+    inline def v2beta2_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -82,8 +80,7 @@ object cloudtasksMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.v2beta3Mod.cloudtasksV2beta3.Cloudtasks
       ] = js.native
-    @scala.inline
-    def v2beta3_=(
+    inline def v2beta3_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -125,8 +122,7 @@ object cloudtasksMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -170,19 +166,13 @@ object cloudtasksMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def cloudtasks(options: Options): Cloudtasks = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtasks")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudtasks]
-  @scala.inline
-  def cloudtasks(options: typings.googleapis.v2beta2Mod.cloudtasksV2beta2.Options): typings.googleapis.v2beta2Mod.cloudtasksV2beta2.Cloudtasks = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtasks")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2beta2Mod.cloudtasksV2beta2.Cloudtasks]
-  @scala.inline
-  def cloudtasks(options: typings.googleapis.v2beta3Mod.cloudtasksV2beta3.Options): typings.googleapis.v2beta3Mod.cloudtasksV2beta3.Cloudtasks = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtasks")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2beta3Mod.cloudtasksV2beta3.Cloudtasks]
+  inline def cloudtasks(options: Options): Cloudtasks = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtasks")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudtasks]
+  inline def cloudtasks(options: typings.googleapis.v2beta2Mod.cloudtasksV2beta2.Options): typings.googleapis.v2beta2Mod.cloudtasksV2beta2.Cloudtasks = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtasks")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2beta2Mod.cloudtasksV2beta2.Cloudtasks]
+  inline def cloudtasks(options: typings.googleapis.v2beta3Mod.cloudtasksV2beta3.Options): typings.googleapis.v2beta3Mod.cloudtasksV2beta3.Cloudtasks = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtasks")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2beta3Mod.cloudtasksV2beta3.Cloudtasks]
   
-  @scala.inline
-  def cloudtasks_v2(version: v2): Cloudtasks = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtasks")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudtasks]
+  inline def cloudtasks_v2(version: v2): Cloudtasks = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtasks")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudtasks]
   
-  @scala.inline
-  def cloudtasks_v2beta2(version: v2beta2): typings.googleapis.v2beta2Mod.cloudtasksV2beta2.Cloudtasks = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtasks")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2beta2Mod.cloudtasksV2beta2.Cloudtasks]
+  inline def cloudtasks_v2beta2(version: v2beta2): typings.googleapis.v2beta2Mod.cloudtasksV2beta2.Cloudtasks = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtasks")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2beta2Mod.cloudtasksV2beta2.Cloudtasks]
   
-  @scala.inline
-  def cloudtasks_v2beta3(version: v2beta3): typings.googleapis.v2beta3Mod.cloudtasksV2beta3.Cloudtasks = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtasks")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2beta3Mod.cloudtasksV2beta3.Cloudtasks]
+  inline def cloudtasks_v2beta3(version: v2beta3): typings.googleapis.v2beta3Mod.cloudtasksV2beta3.Cloudtasks = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtasks")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v2beta3Mod.cloudtasksV2beta3.Cloudtasks]
 }

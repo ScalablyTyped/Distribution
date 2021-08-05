@@ -57,10 +57,8 @@ object Glyph {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def loadMetrics(font: IFont, code: String, cache: Boolean): Outline = (^.asInstanceOf[js.Dynamic].applyDynamic("loadMetrics")(font.asInstanceOf[js.Any], code.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[Outline]
+  inline def loadMetrics(font: IFont, code: String, cache: Boolean): Outline = (^.asInstanceOf[js.Dynamic].applyDynamic("loadMetrics")(font.asInstanceOf[js.Any], code.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[Outline]
   
   /* static member */
-  @scala.inline
-  def renderOutline(ctx: IRenderContext, outline: js.Array[Double], scale: Double, x_pos: Double, y_pos: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderOutline")(ctx.asInstanceOf[js.Any], outline.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], x_pos.asInstanceOf[js.Any], y_pos.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderOutline(ctx: IRenderContext, outline: js.Array[Double], scale: Double, x_pos: Double, y_pos: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderOutline")(ctx.asInstanceOf[js.Any], outline.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], x_pos.asInstanceOf[js.Any], y_pos.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

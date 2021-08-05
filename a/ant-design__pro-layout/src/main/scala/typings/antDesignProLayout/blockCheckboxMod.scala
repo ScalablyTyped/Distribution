@@ -27,35 +27,26 @@ object blockCheckboxMod extends Shortcut {
   }
   object BlockCheckboxProps {
     
-    @scala.inline
-    def apply(configType: String, onChange: String => Unit, prefixCls: String, value: String): BlockCheckboxProps = {
+    inline def apply(configType: String, onChange: String => Unit, prefixCls: String, value: String): BlockCheckboxProps = {
       val __obj = js.Dynamic.literal(configType = configType.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), prefixCls = prefixCls.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlockCheckboxProps]
     }
     
-    @scala.inline
-    implicit class BlockCheckboxPropsMutableBuilder[Self <: BlockCheckboxProps] (val x: Self) extends AnyVal {
+    extension [Self <: BlockCheckboxProps](x: Self) {
       
-      @scala.inline
-      def setConfigType(value: String): Self = StObject.set(x, "configType", value.asInstanceOf[js.Any])
+      inline def setConfigType(value: String): Self = StObject.set(x, "configType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setList(value: js.Array[Key]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: js.Array[Key]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+      inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      @scala.inline
-      def setListVarargs(value: Key*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: Key*): Self = StObject.set(x, "list", js.Array(value :_*))
       
-      @scala.inline
-      def setOnChange(value: String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

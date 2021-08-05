@@ -11,6 +11,5 @@ object wonkaOperatorTakeLastMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def takeLast[A](max: Double): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeLast")(max.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
+  inline def takeLast[A](max: Double): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeLast")(max.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
 }

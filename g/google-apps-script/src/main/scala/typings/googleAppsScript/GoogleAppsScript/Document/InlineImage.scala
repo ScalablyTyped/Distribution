@@ -42,8 +42,7 @@ trait InlineImage
 }
 object InlineImage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asBody: () => Body,
     asEquation: () => Equation,
     asEquationFunction: () => EquationFunction,
@@ -91,43 +90,30 @@ object InlineImage {
     __obj.asInstanceOf[InlineImage]
   }
   
-  @scala.inline
-  implicit class InlineImageMutableBuilder[Self <: InlineImage] (val x: Self) extends AnyVal {
+  extension [Self <: InlineImage](x: Self) {
     
-    @scala.inline
-    def setGetAltDescription(value: () => String): Self = StObject.set(x, "getAltDescription", js.Any.fromFunction0(value))
+    inline def setGetAltDescription(value: () => String): Self = StObject.set(x, "getAltDescription", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAltTitle(value: () => String): Self = StObject.set(x, "getAltTitle", js.Any.fromFunction0(value))
+    inline def setGetAltTitle(value: () => String): Self = StObject.set(x, "getAltTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
+    inline def setGetAs(value: String => Blob): Self = StObject.set(x, "getAs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBlob(value: () => Blob): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
+    inline def setGetBlob(value: () => Blob): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeight(value: () => Integer): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+    inline def setGetHeight(value: () => Integer): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLinkUrl(value: () => String): Self = StObject.set(x, "getLinkUrl", js.Any.fromFunction0(value))
+    inline def setGetLinkUrl(value: () => String): Self = StObject.set(x, "getLinkUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidth(value: () => Integer): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => Integer): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAltDescription(value: String => InlineImage): Self = StObject.set(x, "setAltDescription", js.Any.fromFunction1(value))
+    inline def setSetAltDescription(value: String => InlineImage): Self = StObject.set(x, "setAltDescription", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAltTitle(value: String => InlineImage): Self = StObject.set(x, "setAltTitle", js.Any.fromFunction1(value))
+    inline def setSetAltTitle(value: String => InlineImage): Self = StObject.set(x, "setAltTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHeight(value: Integer => InlineImage): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+    inline def setSetHeight(value: Integer => InlineImage): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLinkUrl(value: String => InlineImage): Self = StObject.set(x, "setLinkUrl", js.Any.fromFunction1(value))
+    inline def setSetLinkUrl(value: String => InlineImage): Self = StObject.set(x, "setLinkUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWidth(value: Integer => InlineImage): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+    inline def setSetWidth(value: Integer => InlineImage): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
   }
 }

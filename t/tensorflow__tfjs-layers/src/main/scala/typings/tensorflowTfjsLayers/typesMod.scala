@@ -20,20 +20,16 @@ object typesMod {
   }
   object BaseSerialization {
     
-    @scala.inline
-    def apply[N /* <: String */, T /* <: PyJson[Extract[/* keyof T */ String, String]] */](class_name: N, config: T): BaseSerialization[N, T] = {
+    inline def apply[N /* <: String */, T /* <: PyJson[Extract[/* keyof T */ String, String]] */](class_name: N, config: T): BaseSerialization[N, T] = {
       val __obj = js.Dynamic.literal(class_name = class_name.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseSerialization[N, T]]
     }
     
-    @scala.inline
-    implicit class BaseSerializationMutableBuilder[Self <: BaseSerialization[?, ?], N /* <: String */, T /* <: PyJson[Extract[/* keyof T */ String, String]] */] (val x: Self & (BaseSerialization[N, T])) extends AnyVal {
+    extension [Self <: BaseSerialization[?, ?], N /* <: String */, T /* <: PyJson[Extract[/* keyof T */ String, String]] */](x: Self & (BaseSerialization[N, T])) {
       
-      @scala.inline
-      def setClass_name(value: N): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
+      inline def setClass_name(value: N): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfig(value: T): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: T): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,8 +49,7 @@ object typesMod {
        with _PyJsonValue
   object PyJsonDict {
     
-    @scala.inline
-    def apply(): PyJsonDict = {
+    inline def apply(): PyJsonDict = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PyJsonDict]
     }

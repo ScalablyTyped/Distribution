@@ -28,40 +28,29 @@ trait AuthenticateOptions extends StObject {
 }
 object AuthenticateOptions {
   
-  @scala.inline
-  def apply(): AuthenticateOptions = {
+  inline def apply(): AuthenticateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthenticateOptions]
   }
   
-  @scala.inline
-  implicit class AuthenticateOptionsMutableBuilder[Self <: AuthenticateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticateOptions](x: Self) {
     
-    @scala.inline
-    def setAddAcceptedScopesHeader(value: Boolean): Self = StObject.set(x, "addAcceptedScopesHeader", value.asInstanceOf[js.Any])
+    inline def setAddAcceptedScopesHeader(value: Boolean): Self = StObject.set(x, "addAcceptedScopesHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddAcceptedScopesHeaderUndefined: Self = StObject.set(x, "addAcceptedScopesHeader", js.undefined)
+    inline def setAddAcceptedScopesHeaderUndefined: Self = StObject.set(x, "addAcceptedScopesHeader", js.undefined)
     
-    @scala.inline
-    def setAddAuthorizedScopesHeader(value: Boolean): Self = StObject.set(x, "addAuthorizedScopesHeader", value.asInstanceOf[js.Any])
+    inline def setAddAuthorizedScopesHeader(value: Boolean): Self = StObject.set(x, "addAuthorizedScopesHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddAuthorizedScopesHeaderUndefined: Self = StObject.set(x, "addAuthorizedScopesHeader", js.undefined)
+    inline def setAddAuthorizedScopesHeaderUndefined: Self = StObject.set(x, "addAuthorizedScopesHeader", js.undefined)
     
-    @scala.inline
-    def setAllowBearerTokensInQueryString(value: Boolean): Self = StObject.set(x, "allowBearerTokensInQueryString", value.asInstanceOf[js.Any])
+    inline def setAllowBearerTokensInQueryString(value: Boolean): Self = StObject.set(x, "allowBearerTokensInQueryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowBearerTokensInQueryStringUndefined: Self = StObject.set(x, "allowBearerTokensInQueryString", js.undefined)
+    inline def setAllowBearerTokensInQueryStringUndefined: Self = StObject.set(x, "allowBearerTokensInQueryString", js.undefined)
     
-    @scala.inline
-    def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
   }
 }

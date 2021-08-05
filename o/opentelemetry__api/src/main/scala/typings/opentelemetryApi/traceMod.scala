@@ -12,9 +12,9 @@ object traceMod {
   @JSImport("@opentelemetry/api/build/src/api/trace", "TraceAPI")
   @js.native
   /** Empty private constructor prevents end users from constructing a new instance of the API */
-  class TraceAPI protected () extends StObject {
+  /* private */ class TraceAPI () extends StObject {
     
-    var _proxyTracerProvider: js.Any = js.native
+    /* private */ var _proxyTracerProvider: js.Any = js.native
     
     /** Remove the global tracer provider */
     def disable(): Unit = js.native
@@ -49,11 +49,9 @@ object traceMod {
     @JSImport("@opentelemetry/api/build/src/api/trace", "TraceAPI._instance")
     @js.native
     def _instance: js.Any = js.native
-    @scala.inline
-    def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
+    inline def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
     
     /** Get the singleton instance of the Trace API */
-    @scala.inline
-    def getInstance(): TraceAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[TraceAPI]
+    inline def getInstance(): TraceAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[TraceAPI]
   }
 }

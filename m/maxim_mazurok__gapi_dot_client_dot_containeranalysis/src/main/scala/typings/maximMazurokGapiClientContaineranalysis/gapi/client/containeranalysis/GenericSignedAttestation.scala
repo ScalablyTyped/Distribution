@@ -23,34 +23,25 @@ trait GenericSignedAttestation extends StObject {
 }
 object GenericSignedAttestation {
   
-  @scala.inline
-  def apply(): GenericSignedAttestation = {
+  inline def apply(): GenericSignedAttestation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenericSignedAttestation]
   }
   
-  @scala.inline
-  implicit class GenericSignedAttestationMutableBuilder[Self <: GenericSignedAttestation] (val x: Self) extends AnyVal {
+  extension [Self <: GenericSignedAttestation](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setSerializedPayload(value: String): Self = StObject.set(x, "serializedPayload", value.asInstanceOf[js.Any])
+    inline def setSerializedPayload(value: String): Self = StObject.set(x, "serializedPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializedPayloadUndefined: Self = StObject.set(x, "serializedPayload", js.undefined)
+    inline def setSerializedPayloadUndefined: Self = StObject.set(x, "serializedPayload", js.undefined)
     
-    @scala.inline
-    def setSignatures(value: js.Array[Signature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
+    inline def setSignatures(value: js.Array[Signature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignaturesUndefined: Self = StObject.set(x, "signatures", js.undefined)
+    inline def setSignaturesUndefined: Self = StObject.set(x, "signatures", js.undefined)
     
-    @scala.inline
-    def setSignaturesVarargs(value: Signature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
+    inline def setSignaturesVarargs(value: Signature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
   }
 }

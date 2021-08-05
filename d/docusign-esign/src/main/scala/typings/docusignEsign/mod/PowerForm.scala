@@ -172,179 +172,125 @@ trait PowerForm extends StObject {
 }
 object PowerForm {
   
-  @scala.inline
-  def apply(): PowerForm = {
+  inline def apply(): PowerForm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PowerForm]
   }
   
-  @scala.inline
-  implicit class PowerFormMutableBuilder[Self <: PowerForm] (val x: Self) extends AnyVal {
+  extension [Self <: PowerForm](x: Self) {
     
-    @scala.inline
-    def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
+    inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
-    @scala.inline
-    def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
-    @scala.inline
-    def setEmailBody(value: String): Self = StObject.set(x, "emailBody", value.asInstanceOf[js.Any])
+    inline def setEmailBody(value: String): Self = StObject.set(x, "emailBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailBodyUndefined: Self = StObject.set(x, "emailBody", js.undefined)
+    inline def setEmailBodyUndefined: Self = StObject.set(x, "emailBody", js.undefined)
     
-    @scala.inline
-    def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
+    inline def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailSubjectUndefined: Self = StObject.set(x, "emailSubject", js.undefined)
+    inline def setEmailSubjectUndefined: Self = StObject.set(x, "emailSubject", js.undefined)
     
-    @scala.inline
-    def setEnvelopes(value: js.Array[Envelope]): Self = StObject.set(x, "envelopes", value.asInstanceOf[js.Any])
+    inline def setEnvelopes(value: js.Array[Envelope]): Self = StObject.set(x, "envelopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopesUndefined: Self = StObject.set(x, "envelopes", js.undefined)
+    inline def setEnvelopesUndefined: Self = StObject.set(x, "envelopes", js.undefined)
     
-    @scala.inline
-    def setEnvelopesVarargs(value: Envelope*): Self = StObject.set(x, "envelopes", js.Array(value :_*))
+    inline def setEnvelopesVarargs(value: Envelope*): Self = StObject.set(x, "envelopes", js.Array(value :_*))
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setInstructions(value: String): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
+    inline def setInstructions(value: String): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
+    inline def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
     
-    @scala.inline
-    def setIsActive(value: String): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: String): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+    inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     
-    @scala.inline
-    def setLastUsed(value: String): Self = StObject.set(x, "lastUsed", value.asInstanceOf[js.Any])
+    inline def setLastUsed(value: String): Self = StObject.set(x, "lastUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUsedUndefined: Self = StObject.set(x, "lastUsed", js.undefined)
+    inline def setLastUsedUndefined: Self = StObject.set(x, "lastUsed", js.undefined)
     
-    @scala.inline
-    def setLimitUseInterval(value: String): Self = StObject.set(x, "limitUseInterval", value.asInstanceOf[js.Any])
+    inline def setLimitUseInterval(value: String): Self = StObject.set(x, "limitUseInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUseIntervalEnabled(value: String): Self = StObject.set(x, "limitUseIntervalEnabled", value.asInstanceOf[js.Any])
+    inline def setLimitUseIntervalEnabled(value: String): Self = StObject.set(x, "limitUseIntervalEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUseIntervalEnabledUndefined: Self = StObject.set(x, "limitUseIntervalEnabled", js.undefined)
+    inline def setLimitUseIntervalEnabledUndefined: Self = StObject.set(x, "limitUseIntervalEnabled", js.undefined)
     
-    @scala.inline
-    def setLimitUseIntervalUndefined: Self = StObject.set(x, "limitUseInterval", js.undefined)
+    inline def setLimitUseIntervalUndefined: Self = StObject.set(x, "limitUseInterval", js.undefined)
     
-    @scala.inline
-    def setLimitUseIntervalUnits(value: String): Self = StObject.set(x, "limitUseIntervalUnits", value.asInstanceOf[js.Any])
+    inline def setLimitUseIntervalUnits(value: String): Self = StObject.set(x, "limitUseIntervalUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUseIntervalUnitsUndefined: Self = StObject.set(x, "limitUseIntervalUnits", js.undefined)
+    inline def setLimitUseIntervalUnitsUndefined: Self = StObject.set(x, "limitUseIntervalUnits", js.undefined)
     
-    @scala.inline
-    def setMaxUseEnabled(value: String): Self = StObject.set(x, "maxUseEnabled", value.asInstanceOf[js.Any])
+    inline def setMaxUseEnabled(value: String): Self = StObject.set(x, "maxUseEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUseEnabledUndefined: Self = StObject.set(x, "maxUseEnabled", js.undefined)
+    inline def setMaxUseEnabledUndefined: Self = StObject.set(x, "maxUseEnabled", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPowerFormId(value: String): Self = StObject.set(x, "powerFormId", value.asInstanceOf[js.Any])
+    inline def setPowerFormId(value: String): Self = StObject.set(x, "powerFormId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerFormIdUndefined: Self = StObject.set(x, "powerFormId", js.undefined)
+    inline def setPowerFormIdUndefined: Self = StObject.set(x, "powerFormId", js.undefined)
     
-    @scala.inline
-    def setPowerFormUrl(value: String): Self = StObject.set(x, "powerFormUrl", value.asInstanceOf[js.Any])
+    inline def setPowerFormUrl(value: String): Self = StObject.set(x, "powerFormUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerFormUrlUndefined: Self = StObject.set(x, "powerFormUrl", js.undefined)
+    inline def setPowerFormUrlUndefined: Self = StObject.set(x, "powerFormUrl", js.undefined)
     
-    @scala.inline
-    def setRecipients(
+    inline def setRecipients(
       value: js.Array[
           /* **Note**: For a self-service PowerForm on a website, you can specify the intended recipients generically (for example, use `Member` as the `Name`),
       and omit personal details such as `email`. */ PowerFormRecipient
         ]
     ): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
+    inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
-    @scala.inline
-    def setRecipientsVarargs(
+    inline def setRecipientsVarargs(
       value: (/* **Note**: For a self-service PowerForm on a website, you can specify the intended recipients generically (for example, use `Member` as the `Name`),
       and omit personal details such as `email`. */ PowerFormRecipient)*
     ): Self = StObject.set(x, "recipients", js.Array(value :_*))
     
-    @scala.inline
-    def setSenderName(value: String): Self = StObject.set(x, "senderName", value.asInstanceOf[js.Any])
+    inline def setSenderName(value: String): Self = StObject.set(x, "senderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderNameUndefined: Self = StObject.set(x, "senderName", js.undefined)
+    inline def setSenderNameUndefined: Self = StObject.set(x, "senderName", js.undefined)
     
-    @scala.inline
-    def setSenderUserId(value: String): Self = StObject.set(x, "senderUserId", value.asInstanceOf[js.Any])
+    inline def setSenderUserId(value: String): Self = StObject.set(x, "senderUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderUserIdUndefined: Self = StObject.set(x, "senderUserId", js.undefined)
+    inline def setSenderUserIdUndefined: Self = StObject.set(x, "senderUserId", js.undefined)
     
-    @scala.inline
-    def setSigningMode(value: String): Self = StObject.set(x, "signingMode", value.asInstanceOf[js.Any])
+    inline def setSigningMode(value: String): Self = StObject.set(x, "signingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningModeUndefined: Self = StObject.set(x, "signingMode", js.undefined)
+    inline def setSigningModeUndefined: Self = StObject.set(x, "signingMode", js.undefined)
     
-    @scala.inline
-    def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+    inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
     
-    @scala.inline
-    def setTemplateName(value: String): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: String): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateNameUndefined: Self = StObject.set(x, "templateName", js.undefined)
+    inline def setTemplateNameUndefined: Self = StObject.set(x, "templateName", js.undefined)
     
-    @scala.inline
-    def setTimesUsed(value: String): Self = StObject.set(x, "timesUsed", value.asInstanceOf[js.Any])
+    inline def setTimesUsed(value: String): Self = StObject.set(x, "timesUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimesUsedUndefined: Self = StObject.set(x, "timesUsed", js.undefined)
+    inline def setTimesUsedUndefined: Self = StObject.set(x, "timesUsed", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
-    @scala.inline
-    def setUsesRemaining(value: String): Self = StObject.set(x, "usesRemaining", value.asInstanceOf[js.Any])
+    inline def setUsesRemaining(value: String): Self = StObject.set(x, "usesRemaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsesRemainingUndefined: Self = StObject.set(x, "usesRemaining", js.undefined)
+    inline def setUsesRemainingUndefined: Self = StObject.set(x, "usesRemaining", js.undefined)
   }
 }

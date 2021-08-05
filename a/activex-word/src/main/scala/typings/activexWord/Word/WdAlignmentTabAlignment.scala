@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdAlignmentTabAlignment extends StObject
 object WdAlignmentTabAlignment {
   
-  @scala.inline
-  def wdCenter: `1` = 1.asInstanceOf[`1`]
+  inline def wdCenter: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdLeft: `0` = 0.asInstanceOf[`0`]
+  inline def wdLeft: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdRight: `2` = 2.asInstanceOf[`2`]
+  inline def wdRight: `2` = 2.asInstanceOf[`2`]
 }

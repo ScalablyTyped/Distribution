@@ -21,43 +21,31 @@ trait PartialObjectCommon extends StObject {
 }
 object PartialObjectCommon {
   
-  @scala.inline
-  def apply(): PartialObjectCommon = {
+  inline def apply(): PartialObjectCommon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialObjectCommon]
   }
   
-  @scala.inline
-  implicit class PartialObjectCommonMutableBuilder[Self <: PartialObjectCommon] (val x: Self) extends AnyVal {
+  extension [Self <: PartialObjectCommon](x: Self) {
     
-    @scala.inline
-    def setDontDelete(value: `true`): Self = StObject.set(x, "dontDelete", value.asInstanceOf[js.Any])
+    inline def setDontDelete(value: `true`): Self = StObject.set(x, "dontDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDontDeleteUndefined: Self = StObject.set(x, "dontDelete", js.undefined)
+    inline def setDontDeleteUndefined: Self = StObject.set(x, "dontDelete", js.undefined)
     
-    @scala.inline
-    def setExpert(value: `true`): Self = StObject.set(x, "expert", value.asInstanceOf[js.Any])
+    inline def setExpert(value: `true`): Self = StObject.set(x, "expert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpertUndefined: Self = StObject.set(x, "expert", js.undefined)
+    inline def setExpertUndefined: Self = StObject.set(x, "expert", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setName(value: StringOrTranslated): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: StringOrTranslated): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

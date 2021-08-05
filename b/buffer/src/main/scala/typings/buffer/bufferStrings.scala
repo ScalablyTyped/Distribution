@@ -8,6 +8,5 @@ object bufferStrings {
   
   @js.native
   sealed trait Buffer extends StObject
-  @scala.inline
-  def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
+  inline def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
 }

@@ -56,8 +56,7 @@ trait GoogleApiPageSpeedOnlineResource extends StObject {
 }
 object GoogleApiPageSpeedOnlineResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     formattedResults: Locale,
     id: String,
     invalidRules: js.Array[String],
@@ -72,37 +71,26 @@ object GoogleApiPageSpeedOnlineResource {
     __obj.asInstanceOf[GoogleApiPageSpeedOnlineResource]
   }
   
-  @scala.inline
-  implicit class GoogleApiPageSpeedOnlineResourceMutableBuilder[Self <: GoogleApiPageSpeedOnlineResource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiPageSpeedOnlineResource](x: Self) {
     
-    @scala.inline
-    def setFormattedResults(value: Locale): Self = StObject.set(x, "formattedResults", value.asInstanceOf[js.Any])
+    inline def setFormattedResults(value: Locale): Self = StObject.set(x, "formattedResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidRules(value: js.Array[String]): Self = StObject.set(x, "invalidRules", value.asInstanceOf[js.Any])
+    inline def setInvalidRules(value: js.Array[String]): Self = StObject.set(x, "invalidRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidRulesVarargs(value: String*): Self = StObject.set(x, "invalidRules", js.Array(value :_*))
+    inline def setInvalidRulesVarargs(value: String*): Self = StObject.set(x, "invalidRules", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageStats(value: CssResponsebytes): Self = StObject.set(x, "pageStats", value.asInstanceOf[js.Any])
+    inline def setPageStats(value: CssResponsebytes): Self = StObject.set(x, "pageStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCode(value: Double): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
+    inline def setResponseCode(value: Double): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Major): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Major): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

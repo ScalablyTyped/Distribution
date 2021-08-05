@@ -18,25 +18,19 @@ trait WorkspaceFolderPickOptions extends StObject {
 }
 object WorkspaceFolderPickOptions {
   
-  @scala.inline
-  def apply(): WorkspaceFolderPickOptions = {
+  inline def apply(): WorkspaceFolderPickOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceFolderPickOptions]
   }
   
-  @scala.inline
-  implicit class WorkspaceFolderPickOptionsMutableBuilder[Self <: WorkspaceFolderPickOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceFolderPickOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreFocusOut(value: Boolean): Self = StObject.set(x, "ignoreFocusOut", value.asInstanceOf[js.Any])
+    inline def setIgnoreFocusOut(value: Boolean): Self = StObject.set(x, "ignoreFocusOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreFocusOutUndefined: Self = StObject.set(x, "ignoreFocusOut", js.undefined)
+    inline def setIgnoreFocusOutUndefined: Self = StObject.set(x, "ignoreFocusOut", js.undefined)
     
-    @scala.inline
-    def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
+    inline def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
+    inline def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
   }
 }

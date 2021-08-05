@@ -95,127 +95,87 @@ trait DescribeGatewayInformationOutput extends StObject {
 }
 object DescribeGatewayInformationOutput {
   
-  @scala.inline
-  def apply(): DescribeGatewayInformationOutput = {
+  inline def apply(): DescribeGatewayInformationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeGatewayInformationOutput]
   }
   
-  @scala.inline
-  implicit class DescribeGatewayInformationOutputMutableBuilder[Self <: DescribeGatewayInformationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGatewayInformationOutput](x: Self) {
     
-    @scala.inline
-    def setCloudWatchLogGroupARN(value: CloudWatchLogGroupARN): Self = StObject.set(x, "CloudWatchLogGroupARN", value.asInstanceOf[js.Any])
+    inline def setCloudWatchLogGroupARN(value: CloudWatchLogGroupARN): Self = StObject.set(x, "CloudWatchLogGroupARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchLogGroupARNUndefined: Self = StObject.set(x, "CloudWatchLogGroupARN", js.undefined)
+    inline def setCloudWatchLogGroupARNUndefined: Self = StObject.set(x, "CloudWatchLogGroupARN", js.undefined)
     
-    @scala.inline
-    def setDeprecationDate(value: DeprecationDate): Self = StObject.set(x, "DeprecationDate", value.asInstanceOf[js.Any])
+    inline def setDeprecationDate(value: DeprecationDate): Self = StObject.set(x, "DeprecationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecationDateUndefined: Self = StObject.set(x, "DeprecationDate", js.undefined)
+    inline def setDeprecationDateUndefined: Self = StObject.set(x, "DeprecationDate", js.undefined)
     
-    @scala.inline
-    def setEc2InstanceId(value: Ec2InstanceId): Self = StObject.set(x, "Ec2InstanceId", value.asInstanceOf[js.Any])
+    inline def setEc2InstanceId(value: Ec2InstanceId): Self = StObject.set(x, "Ec2InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEc2InstanceIdUndefined: Self = StObject.set(x, "Ec2InstanceId", js.undefined)
+    inline def setEc2InstanceIdUndefined: Self = StObject.set(x, "Ec2InstanceId", js.undefined)
     
-    @scala.inline
-    def setEc2InstanceRegion(value: Ec2InstanceRegion): Self = StObject.set(x, "Ec2InstanceRegion", value.asInstanceOf[js.Any])
+    inline def setEc2InstanceRegion(value: Ec2InstanceRegion): Self = StObject.set(x, "Ec2InstanceRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEc2InstanceRegionUndefined: Self = StObject.set(x, "Ec2InstanceRegion", js.undefined)
+    inline def setEc2InstanceRegionUndefined: Self = StObject.set(x, "Ec2InstanceRegion", js.undefined)
     
-    @scala.inline
-    def setEndpointType(value: EndpointType): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
+    inline def setEndpointType(value: EndpointType): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
+    inline def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
-    @scala.inline
-    def setGatewayId(value: GatewayId): Self = StObject.set(x, "GatewayId", value.asInstanceOf[js.Any])
+    inline def setGatewayId(value: GatewayId): Self = StObject.set(x, "GatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayIdUndefined: Self = StObject.set(x, "GatewayId", js.undefined)
+    inline def setGatewayIdUndefined: Self = StObject.set(x, "GatewayId", js.undefined)
     
-    @scala.inline
-    def setGatewayName(value: String): Self = StObject.set(x, "GatewayName", value.asInstanceOf[js.Any])
+    inline def setGatewayName(value: String): Self = StObject.set(x, "GatewayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayNameUndefined: Self = StObject.set(x, "GatewayName", js.undefined)
+    inline def setGatewayNameUndefined: Self = StObject.set(x, "GatewayName", js.undefined)
     
-    @scala.inline
-    def setGatewayNetworkInterfaces(value: GatewayNetworkInterfaces): Self = StObject.set(x, "GatewayNetworkInterfaces", value.asInstanceOf[js.Any])
+    inline def setGatewayNetworkInterfaces(value: GatewayNetworkInterfaces): Self = StObject.set(x, "GatewayNetworkInterfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayNetworkInterfacesUndefined: Self = StObject.set(x, "GatewayNetworkInterfaces", js.undefined)
+    inline def setGatewayNetworkInterfacesUndefined: Self = StObject.set(x, "GatewayNetworkInterfaces", js.undefined)
     
-    @scala.inline
-    def setGatewayNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "GatewayNetworkInterfaces", js.Array(value :_*))
+    inline def setGatewayNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "GatewayNetworkInterfaces", js.Array(value :_*))
     
-    @scala.inline
-    def setGatewayState(value: GatewayState): Self = StObject.set(x, "GatewayState", value.asInstanceOf[js.Any])
+    inline def setGatewayState(value: GatewayState): Self = StObject.set(x, "GatewayState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayStateUndefined: Self = StObject.set(x, "GatewayState", js.undefined)
+    inline def setGatewayStateUndefined: Self = StObject.set(x, "GatewayState", js.undefined)
     
-    @scala.inline
-    def setGatewayTimezone(value: GatewayTimezone): Self = StObject.set(x, "GatewayTimezone", value.asInstanceOf[js.Any])
+    inline def setGatewayTimezone(value: GatewayTimezone): Self = StObject.set(x, "GatewayTimezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayTimezoneUndefined: Self = StObject.set(x, "GatewayTimezone", js.undefined)
+    inline def setGatewayTimezoneUndefined: Self = StObject.set(x, "GatewayTimezone", js.undefined)
     
-    @scala.inline
-    def setGatewayType(value: GatewayType): Self = StObject.set(x, "GatewayType", value.asInstanceOf[js.Any])
+    inline def setGatewayType(value: GatewayType): Self = StObject.set(x, "GatewayType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayTypeUndefined: Self = StObject.set(x, "GatewayType", js.undefined)
+    inline def setGatewayTypeUndefined: Self = StObject.set(x, "GatewayType", js.undefined)
     
-    @scala.inline
-    def setHostEnvironment(value: HostEnvironment): Self = StObject.set(x, "HostEnvironment", value.asInstanceOf[js.Any])
+    inline def setHostEnvironment(value: HostEnvironment): Self = StObject.set(x, "HostEnvironment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostEnvironmentUndefined: Self = StObject.set(x, "HostEnvironment", js.undefined)
+    inline def setHostEnvironmentUndefined: Self = StObject.set(x, "HostEnvironment", js.undefined)
     
-    @scala.inline
-    def setLastSoftwareUpdate(value: LastSoftwareUpdate): Self = StObject.set(x, "LastSoftwareUpdate", value.asInstanceOf[js.Any])
+    inline def setLastSoftwareUpdate(value: LastSoftwareUpdate): Self = StObject.set(x, "LastSoftwareUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSoftwareUpdateUndefined: Self = StObject.set(x, "LastSoftwareUpdate", js.undefined)
+    inline def setLastSoftwareUpdateUndefined: Self = StObject.set(x, "LastSoftwareUpdate", js.undefined)
     
-    @scala.inline
-    def setNextUpdateAvailabilityDate(value: NextUpdateAvailabilityDate): Self = StObject.set(x, "NextUpdateAvailabilityDate", value.asInstanceOf[js.Any])
+    inline def setNextUpdateAvailabilityDate(value: NextUpdateAvailabilityDate): Self = StObject.set(x, "NextUpdateAvailabilityDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUpdateAvailabilityDateUndefined: Self = StObject.set(x, "NextUpdateAvailabilityDate", js.undefined)
+    inline def setNextUpdateAvailabilityDateUndefined: Self = StObject.set(x, "NextUpdateAvailabilityDate", js.undefined)
     
-    @scala.inline
-    def setSoftwareUpdatesEndDate(value: SoftwareUpdatesEndDate): Self = StObject.set(x, "SoftwareUpdatesEndDate", value.asInstanceOf[js.Any])
+    inline def setSoftwareUpdatesEndDate(value: SoftwareUpdatesEndDate): Self = StObject.set(x, "SoftwareUpdatesEndDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareUpdatesEndDateUndefined: Self = StObject.set(x, "SoftwareUpdatesEndDate", js.undefined)
+    inline def setSoftwareUpdatesEndDateUndefined: Self = StObject.set(x, "SoftwareUpdatesEndDate", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVPCEndpoint(value: String): Self = StObject.set(x, "VPCEndpoint", value.asInstanceOf[js.Any])
+    inline def setVPCEndpoint(value: String): Self = StObject.set(x, "VPCEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPCEndpointUndefined: Self = StObject.set(x, "VPCEndpoint", js.undefined)
+    inline def setVPCEndpointUndefined: Self = StObject.set(x, "VPCEndpoint", js.undefined)
   }
 }

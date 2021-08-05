@@ -17,8 +17,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(V: VueConstructor[Vue]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(V.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(V: VueConstructor[Vue]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(V.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type Observables = Record[String, Observable_[js.Any]]
   
@@ -30,20 +29,16 @@ object mod {
   }
   object WatchObservable {
     
-    @scala.inline
-    def apply[T](newValue: T, oldValue: T): WatchObservable[T] = {
+    inline def apply[T](newValue: T, oldValue: T): WatchObservable[T] = {
       val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[WatchObservable[T]]
     }
     
-    @scala.inline
-    implicit class WatchObservableMutableBuilder[Self <: WatchObservable[?], T] (val x: Self & WatchObservable[T]) extends AnyVal {
+    extension [Self <: WatchObservable[?], T](x: Self & WatchObservable[T]) {
       
-      @scala.inline
-      def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,38 +54,28 @@ object mod {
     }
     object ComponentOptions {
       
-      @scala.inline
-      def apply[V /* <: Vue */](): ComponentOptions[V] = {
+      inline def apply[V /* <: Vue */](): ComponentOptions[V] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ComponentOptions[V]]
       }
       
-      @scala.inline
-      implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[?], V /* <: Vue */] (val x: Self & ComponentOptions[V]) extends AnyVal {
+      extension [Self <: ComponentOptions[?], V /* <: Vue */](x: Self & ComponentOptions[V]) {
         
-        @scala.inline
-        def setDomStreams(value: js.Array[String]): Self = StObject.set(x, "domStreams", value.asInstanceOf[js.Any])
+        inline def setDomStreams(value: js.Array[String]): Self = StObject.set(x, "domStreams", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDomStreamsUndefined: Self = StObject.set(x, "domStreams", js.undefined)
+        inline def setDomStreamsUndefined: Self = StObject.set(x, "domStreams", js.undefined)
         
-        @scala.inline
-        def setDomStreamsVarargs(value: String*): Self = StObject.set(x, "domStreams", js.Array(value :_*))
+        inline def setDomStreamsVarargs(value: String*): Self = StObject.set(x, "domStreams", js.Array(value :_*))
         
-        @scala.inline
-        def setObservableMethods(value: js.Array[String] | (Record[String, String])): Self = StObject.set(x, "observableMethods", value.asInstanceOf[js.Any])
+        inline def setObservableMethods(value: js.Array[String] | (Record[String, String])): Self = StObject.set(x, "observableMethods", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObservableMethodsUndefined: Self = StObject.set(x, "observableMethods", js.undefined)
+        inline def setObservableMethodsUndefined: Self = StObject.set(x, "observableMethods", js.undefined)
         
-        @scala.inline
-        def setObservableMethodsVarargs(value: String*): Self = StObject.set(x, "observableMethods", js.Array(value :_*))
+        inline def setObservableMethodsVarargs(value: String*): Self = StObject.set(x, "observableMethods", js.Array(value :_*))
         
-        @scala.inline
-        def setSubscriptions(value: Observables | (js.ThisFunction0[/* this */ V, Observables])): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+        inline def setSubscriptions(value: Observables | (js.ThisFunction0[/* this */ V, Observables])): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
+        inline def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
       }
     }
   }

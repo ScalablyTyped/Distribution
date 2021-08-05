@@ -28,31 +28,23 @@ trait SchemaInterpolationPoint extends StObject {
 }
 object SchemaInterpolationPoint {
   
-  @scala.inline
-  def apply(): SchemaInterpolationPoint = {
+  inline def apply(): SchemaInterpolationPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInterpolationPoint]
   }
   
-  @scala.inline
-  implicit class SchemaInterpolationPointMutableBuilder[Self <: SchemaInterpolationPoint] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInterpolationPoint](x: Self) {
     
-    @scala.inline
-    def setColor(value: SchemaColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: SchemaColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

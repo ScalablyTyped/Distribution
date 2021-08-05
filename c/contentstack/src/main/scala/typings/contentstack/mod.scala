@@ -163,23 +163,18 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(access_token: String, api_key: String, environment: String): Config = {
+    inline def apply(access_token: String, api_key: String, environment: String): Config = {
       val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], api_key = api_key.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+      inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
+      inline def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -34,20 +34,17 @@ object modalStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.body")
     @js.native
     def body: PaddingBottomPaddingHorizontal = js.native
-    @scala.inline
-    def body_=(x: PaddingBottomPaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("body")(x.asInstanceOf[js.Any])
+    inline def body_=(x: PaddingBottomPaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("body")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.buttonGroupH")
     @js.native
     def buttonGroupH: FlexDirectionFlexGrow = js.native
-    @scala.inline
-    def buttonGroupH_=(x: FlexDirectionFlexGrow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonGroupH")(x.asInstanceOf[js.Any])
+    inline def buttonGroupH_=(x: FlexDirectionFlexGrow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonGroupH")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.buttonGroupV")
     @js.native
     def buttonGroupV: FlexDirectionFlexGrow = js.native
-    @scala.inline
-    def buttonGroupV_=(x: FlexDirectionFlexGrow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonGroupV")(x.asInstanceOf[js.Any])
+    inline def buttonGroupV_=(x: FlexDirectionFlexGrow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonGroupV")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.buttonText")
     @js.native
@@ -56,23 +53,19 @@ object modalStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.buttonTextOperation")
     @js.native
     def buttonTextOperation: ColorPaddingHorizontal = js.native
-    @scala.inline
-    def buttonTextOperation_=(x: ColorPaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonTextOperation")(x.asInstanceOf[js.Any])
+    inline def buttonTextOperation_=(x: ColorPaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonTextOperation")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def buttonText_=(x: BackgroundColorColorFontSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonText")(x.asInstanceOf[js.Any])
+    inline def buttonText_=(x: BackgroundColorColorFontSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonText")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.buttonWrapH")
     @js.native
     def buttonWrapH: BorderColorBorderRightWidth = js.native
-    @scala.inline
-    def buttonWrapH_=(x: BorderColorBorderRightWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonWrapH")(x.asInstanceOf[js.Any])
+    inline def buttonWrapH_=(x: BorderColorBorderRightWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonWrapH")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.buttonWrapV")
     @js.native
     def buttonWrapV: BorderColorBorderTopWidth = js.native
-    @scala.inline
-    def buttonWrapV_=(x: BorderColorBorderTopWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonWrapV")(x.asInstanceOf[js.Any])
+    inline def buttonWrapV_=(x: BorderColorBorderTopWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonWrapV")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.close")
     @js.native
@@ -81,65 +74,54 @@ object modalStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.closeWrap")
     @js.native
     def closeWrap: LeftPosition = js.native
-    @scala.inline
-    def closeWrap_=(x: LeftPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeWrap")(x.asInstanceOf[js.Any])
+    inline def closeWrap_=(x: LeftPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeWrap")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def close_=(x: LineHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("close")(x.asInstanceOf[js.Any])
+    inline def close_=(x: LineHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("close")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.container")
     @js.native
     def container: ZIndex = js.native
-    @scala.inline
-    def container_=(x: ZIndex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("container")(x.asInstanceOf[js.Any])
+    inline def container_=(x: ZIndex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("container")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.footer")
     @js.native
     def footer: BorderBottomLeftRadius = js.native
-    @scala.inline
-    def footer_=(x: BorderBottomLeftRadius): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("footer")(x.asInstanceOf[js.Any])
+    inline def footer_=(x: BorderBottomLeftRadius): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("footer")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.header")
     @js.native
     def header: FontSizePaddingHorizontal = js.native
-    @scala.inline
-    def header_=(x: FontSizePaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("header")(x.asInstanceOf[js.Any])
+    inline def header_=(x: FontSizePaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("header")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.innerContainer")
     @js.native
     def innerContainer: OverflowPaddingTop = js.native
-    @scala.inline
-    def innerContainer_=(x: OverflowPaddingTop): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("innerContainer")(x.asInstanceOf[js.Any])
+    inline def innerContainer_=(x: OverflowPaddingTop): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("innerContainer")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.maskClosable")
     @js.native
     def maskClosable: BackgroundColorBottom = js.native
-    @scala.inline
-    def maskClosable_=(x: BackgroundColorBottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maskClosable")(x.asInstanceOf[js.Any])
+    inline def maskClosable_=(x: BackgroundColorBottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maskClosable")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.operationBody")
     @js.native
     def operationBody: PaddingBottomNumber = js.native
-    @scala.inline
-    def operationBody_=(x: PaddingBottomNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operationBody")(x.asInstanceOf[js.Any])
+    inline def operationBody_=(x: PaddingBottomNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operationBody")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.operationContainer")
     @js.native
     def operationContainer: PaddingTopNumber = js.native
-    @scala.inline
-    def operationContainer_=(x: PaddingTopNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operationContainer")(x.asInstanceOf[js.Any])
+    inline def operationContainer_=(x: PaddingTopNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operationContainer")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.popupSlideUp")
     @js.native
     def popupSlideUp: Left = js.native
-    @scala.inline
-    def popupSlideUp_=(x: Left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popupSlideUp")(x.asInstanceOf[js.Any])
+    inline def popupSlideUp_=(x: Left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popupSlideUp")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/modal/style/index.native", "default.wrap")
     @js.native
     def wrap: AlignItemsJustifyContent = js.native
-    @scala.inline
-    def wrap_=(x: AlignItemsJustifyContent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrap")(x.asInstanceOf[js.Any])
+    inline def wrap_=(x: AlignItemsJustifyContent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrap")(x.asInstanceOf[js.Any])
   }
   
   trait IModalStyle extends StObject {
@@ -182,8 +164,7 @@ object modalStyleIndexNativeMod {
   }
   object IModalStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: ViewStyle,
       buttonGroupH: ViewStyle,
       buttonGroupV: ViewStyle,
@@ -207,62 +188,43 @@ object modalStyleIndexNativeMod {
       __obj.asInstanceOf[IModalStyle]
     }
     
-    @scala.inline
-    implicit class IModalStyleMutableBuilder[Self <: IModalStyle] (val x: Self) extends AnyVal {
+    extension [Self <: IModalStyle](x: Self) {
       
-      @scala.inline
-      def setBody(value: ViewStyle): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: ViewStyle): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonGroupH(value: ViewStyle): Self = StObject.set(x, "buttonGroupH", value.asInstanceOf[js.Any])
+      inline def setButtonGroupH(value: ViewStyle): Self = StObject.set(x, "buttonGroupH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonGroupV(value: ViewStyle): Self = StObject.set(x, "buttonGroupV", value.asInstanceOf[js.Any])
+      inline def setButtonGroupV(value: ViewStyle): Self = StObject.set(x, "buttonGroupV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonText(value: TextStyle): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+      inline def setButtonText(value: TextStyle): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonTextOperation(value: TextStyle): Self = StObject.set(x, "buttonTextOperation", value.asInstanceOf[js.Any])
+      inline def setButtonTextOperation(value: TextStyle): Self = StObject.set(x, "buttonTextOperation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonWrapH(value: ViewStyle): Self = StObject.set(x, "buttonWrapH", value.asInstanceOf[js.Any])
+      inline def setButtonWrapH(value: ViewStyle): Self = StObject.set(x, "buttonWrapH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonWrapV(value: ViewStyle): Self = StObject.set(x, "buttonWrapV", value.asInstanceOf[js.Any])
+      inline def setButtonWrapV(value: ViewStyle): Self = StObject.set(x, "buttonWrapV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClose(value: TextStyle): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: TextStyle): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseWrap(value: ViewStyle): Self = StObject.set(x, "closeWrap", value.asInstanceOf[js.Any])
+      inline def setCloseWrap(value: ViewStyle): Self = StObject.set(x, "closeWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooter(value: ViewStyle): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: ViewStyle): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader(value: TextStyle): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: TextStyle): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerContainer(value: ViewStyle): Self = StObject.set(x, "innerContainer", value.asInstanceOf[js.Any])
+      inline def setInnerContainer(value: ViewStyle): Self = StObject.set(x, "innerContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskClosable(value: ViewStyle): Self = StObject.set(x, "maskClosable", value.asInstanceOf[js.Any])
+      inline def setMaskClosable(value: ViewStyle): Self = StObject.set(x, "maskClosable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationBody(value: ViewStyle): Self = StObject.set(x, "operationBody", value.asInstanceOf[js.Any])
+      inline def setOperationBody(value: ViewStyle): Self = StObject.set(x, "operationBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationContainer(value: ViewStyle): Self = StObject.set(x, "operationContainer", value.asInstanceOf[js.Any])
+      inline def setOperationContainer(value: ViewStyle): Self = StObject.set(x, "operationContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupContainer(value: ViewStyle): Self = StObject.set(x, "popupContainer", value.asInstanceOf[js.Any])
+      inline def setPopupContainer(value: ViewStyle): Self = StObject.set(x, "popupContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrap(value: ViewStyle): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: ViewStyle): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     }
   }
 }

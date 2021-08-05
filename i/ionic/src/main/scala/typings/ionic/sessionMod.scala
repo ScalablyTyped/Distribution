@@ -60,8 +60,7 @@ object sessionMod {
     override def tokenLogin(token: String): js.Promise[Unit] = js.native
   }
   
-  @scala.inline
-  def promptToLogin(env: IonicEnvironment): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("promptToLogin")(env.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def promptToLogin(env: IonicEnvironment): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("promptToLogin")(env.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   trait SessionDeps extends StObject {
     
@@ -71,20 +70,16 @@ object sessionMod {
   }
   object SessionDeps {
     
-    @scala.inline
-    def apply(client: IClient, config: IConfig): SessionDeps = {
+    inline def apply(client: IClient, config: IConfig): SessionDeps = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[SessionDeps]
     }
     
-    @scala.inline
-    implicit class SessionDepsMutableBuilder[Self <: SessionDeps] (val x: Self) extends AnyVal {
+    extension [Self <: SessionDeps](x: Self) {
       
-      @scala.inline
-      def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }
   }
 }

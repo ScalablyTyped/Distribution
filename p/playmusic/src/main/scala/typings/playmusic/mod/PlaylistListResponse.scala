@@ -12,25 +12,19 @@ trait PlaylistListResponse extends StObject {
 }
 object PlaylistListResponse {
   
-  @scala.inline
-  def apply(): PlaylistListResponse = {
+  inline def apply(): PlaylistListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlaylistListResponse]
   }
   
-  @scala.inline
-  implicit class PlaylistListResponseMutableBuilder[Self <: PlaylistListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PlaylistListResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: PlaylistListData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: PlaylistListData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait MapDataControlOptions extends StObject {
 }
 object MapDataControlOptions {
   
-  @scala.inline
-  def apply(position: Position): MapDataControlOptions = {
+  inline def apply(position: Position): MapDataControlOptions = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapDataControlOptions]
   }
   
-  @scala.inline
-  implicit class MapDataControlOptionsMutableBuilder[Self <: MapDataControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapDataControlOptions](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

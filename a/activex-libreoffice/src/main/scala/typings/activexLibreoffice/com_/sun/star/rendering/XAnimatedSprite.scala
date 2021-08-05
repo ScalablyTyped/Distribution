@@ -89,8 +89,7 @@ trait XAnimatedSprite
 }
 object XAnimatedSprite {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     clip: XPolyPolygon2D => Unit,
     hide: () => Unit,
@@ -112,25 +111,18 @@ object XAnimatedSprite {
     __obj.asInstanceOf[XAnimatedSprite]
   }
   
-  @scala.inline
-  implicit class XAnimatedSpriteMutableBuilder[Self <: XAnimatedSprite] (val x: Self) extends AnyVal {
+  extension [Self <: XAnimatedSprite](x: Self) {
     
-    @scala.inline
-    def setResetAnimation(value: () => Unit): Self = StObject.set(x, "resetAnimation", js.Any.fromFunction0(value))
+    inline def setResetAnimation(value: () => Unit): Self = StObject.set(x, "resetAnimation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAll(value: (RealPoint2D, ViewState, RenderState, Double, Boolean) => Unit): Self = StObject.set(x, "setAll", js.Any.fromFunction5(value))
+    inline def setSetAll(value: (RealPoint2D, ViewState, RenderState, Double, Boolean) => Unit): Self = StObject.set(x, "setAll", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setSetViewState(value: ViewState => Unit): Self = StObject.set(x, "setViewState", js.Any.fromFunction1(value))
+    inline def setSetViewState(value: ViewState => Unit): Self = StObject.set(x, "setViewState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartAnimation(value: Double => Unit): Self = StObject.set(x, "startAnimation", js.Any.fromFunction1(value))
+    inline def setStartAnimation(value: Double => Unit): Self = StObject.set(x, "startAnimation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStopAnimation(value: () => Unit): Self = StObject.set(x, "stopAnimation", js.Any.fromFunction0(value))
+    inline def setStopAnimation(value: () => Unit): Self = StObject.set(x, "stopAnimation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateAnimation(value: () => Unit): Self = StObject.set(x, "updateAnimation", js.Any.fromFunction0(value))
+    inline def setUpdateAnimation(value: () => Unit): Self = StObject.set(x, "updateAnimation", js.Any.fromFunction0(value))
   }
 }

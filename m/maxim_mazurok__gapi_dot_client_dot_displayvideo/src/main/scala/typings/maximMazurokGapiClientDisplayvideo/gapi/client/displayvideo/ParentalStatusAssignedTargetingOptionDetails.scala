@@ -14,25 +14,19 @@ trait ParentalStatusAssignedTargetingOptionDetails extends StObject {
 }
 object ParentalStatusAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): ParentalStatusAssignedTargetingOptionDetails = {
+  inline def apply(): ParentalStatusAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParentalStatusAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class ParentalStatusAssignedTargetingOptionDetailsMutableBuilder[Self <: ParentalStatusAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ParentalStatusAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setParentalStatus(value: String): Self = StObject.set(x, "parentalStatus", value.asInstanceOf[js.Any])
+    inline def setParentalStatus(value: String): Self = StObject.set(x, "parentalStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentalStatusUndefined: Self = StObject.set(x, "parentalStatus", js.undefined)
+    inline def setParentalStatusUndefined: Self = StObject.set(x, "parentalStatus", js.undefined)
     
-    @scala.inline
-    def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
+    inline def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
+    inline def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
   }
 }

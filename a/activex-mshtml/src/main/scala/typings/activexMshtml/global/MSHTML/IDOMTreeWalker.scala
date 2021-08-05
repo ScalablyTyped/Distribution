@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IDOMTreeWalker")
 @js.native
-class IDOMTreeWalker protected ()
+/* private */ class IDOMTreeWalker ()
   extends StObject
      with typings.activexMshtml.MSHTML.IDOMTreeWalker {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IDOMTreeWalker_typekey")
   var MSHTMLDotIDOMTreeWalker_typekey: typings.activexMshtml.MSHTML.IDOMTreeWalker = js.native
   

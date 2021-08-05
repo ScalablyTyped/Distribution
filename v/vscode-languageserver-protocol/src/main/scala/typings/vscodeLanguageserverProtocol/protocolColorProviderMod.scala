@@ -81,23 +81,18 @@ object protocolColorProviderMod {
   }
   object ColorPresentationParams {
     
-    @scala.inline
-    def apply(color: Color, range: Range, textDocument: TextDocumentIdentifier): ColorPresentationParams = {
+    inline def apply(color: Color, range: Range, textDocument: TextDocumentIdentifier): ColorPresentationParams = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColorPresentationParams]
     }
     
-    @scala.inline
-    implicit class ColorPresentationParamsMutableBuilder[Self <: ColorPresentationParams] (val x: Self) extends AnyVal {
+    extension [Self <: ColorPresentationParams](x: Self) {
       
-      @scala.inline
-      def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+      inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,20 +107,16 @@ object protocolColorProviderMod {
   }
   object DocumentColorClientCapabilities {
     
-    @scala.inline
-    def apply(): DocumentColorClientCapabilities = {
+    inline def apply(): DocumentColorClientCapabilities = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DocumentColorClientCapabilities]
     }
     
-    @scala.inline
-    implicit class DocumentColorClientCapabilitiesMutableBuilder[Self <: DocumentColorClientCapabilities] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentColorClientCapabilities](x: Self) {
       
-      @scala.inline
-      def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+      inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+      inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
     }
   }
   
@@ -143,17 +134,14 @@ object protocolColorProviderMod {
   }
   object DocumentColorParams {
     
-    @scala.inline
-    def apply(textDocument: TextDocumentIdentifier): DocumentColorParams = {
+    inline def apply(textDocument: TextDocumentIdentifier): DocumentColorParams = {
       val __obj = js.Dynamic.literal(textDocument = textDocument.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocumentColorParams]
     }
     
-    @scala.inline
-    implicit class DocumentColorParamsMutableBuilder[Self <: DocumentColorParams] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentColorParams](x: Self) {
       
-      @scala.inline
-      def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+      inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,8 +152,7 @@ object protocolColorProviderMod {
        with WorkDoneProgressOptions
   object DocumentColorRegistrationOptions {
     
-    @scala.inline
-    def apply(): DocumentColorRegistrationOptions = {
+    inline def apply(): DocumentColorRegistrationOptions = {
       val __obj = js.Dynamic.literal(documentSelector = null)
       __obj.asInstanceOf[DocumentColorRegistrationOptions]
     }

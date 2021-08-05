@@ -12,25 +12,19 @@ trait IStreamingPullResponse extends StObject {
 }
 object IStreamingPullResponse {
   
-  @scala.inline
-  def apply(): IStreamingPullResponse = {
+  inline def apply(): IStreamingPullResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IStreamingPullResponse]
   }
   
-  @scala.inline
-  implicit class IStreamingPullResponseMutableBuilder[Self <: IStreamingPullResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IStreamingPullResponse](x: Self) {
     
-    @scala.inline
-    def setReceivedMessages(value: js.Array[IReceivedMessage]): Self = StObject.set(x, "receivedMessages", value.asInstanceOf[js.Any])
+    inline def setReceivedMessages(value: js.Array[IReceivedMessage]): Self = StObject.set(x, "receivedMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedMessagesNull: Self = StObject.set(x, "receivedMessages", null)
+    inline def setReceivedMessagesNull: Self = StObject.set(x, "receivedMessages", null)
     
-    @scala.inline
-    def setReceivedMessagesUndefined: Self = StObject.set(x, "receivedMessages", js.undefined)
+    inline def setReceivedMessagesUndefined: Self = StObject.set(x, "receivedMessages", js.undefined)
     
-    @scala.inline
-    def setReceivedMessagesVarargs(value: IReceivedMessage*): Self = StObject.set(x, "receivedMessages", js.Array(value :_*))
+    inline def setReceivedMessagesVarargs(value: IReceivedMessage*): Self = StObject.set(x, "receivedMessages", js.Array(value :_*))
   }
 }

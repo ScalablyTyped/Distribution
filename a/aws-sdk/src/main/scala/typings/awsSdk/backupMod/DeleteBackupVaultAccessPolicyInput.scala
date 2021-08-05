@@ -13,16 +13,13 @@ trait DeleteBackupVaultAccessPolicyInput extends StObject {
 }
 object DeleteBackupVaultAccessPolicyInput {
   
-  @scala.inline
-  def apply(BackupVaultName: BackupVaultName): DeleteBackupVaultAccessPolicyInput = {
+  inline def apply(BackupVaultName: BackupVaultName): DeleteBackupVaultAccessPolicyInput = {
     val __obj = js.Dynamic.literal(BackupVaultName = BackupVaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBackupVaultAccessPolicyInput]
   }
   
-  @scala.inline
-  implicit class DeleteBackupVaultAccessPolicyInputMutableBuilder[Self <: DeleteBackupVaultAccessPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBackupVaultAccessPolicyInput](x: Self) {
     
-    @scala.inline
-    def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
+    inline def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
   }
 }

@@ -23,6 +23,6 @@ object inMemoryLRUCacheMod {
     
     def set(key: String, value: V, options: Ttl): js.Promise[Unit] = js.native
     
-    var store: js.Any = js.native
+    /* private */ var store: js.Any = js.native
   }
 }

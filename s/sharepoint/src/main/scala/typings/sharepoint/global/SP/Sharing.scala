@@ -19,16 +19,13 @@ object Sharing {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getRoleDefinition(context: typings.sharepoint.SP.ClientRuntimeContext, role: Role): typings.sharepoint.SP.RoleDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("getRoleDefinition")(context.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.RoleDefinition]
+    inline def getRoleDefinition(context: typings.sharepoint.SP.ClientRuntimeContext, role: Role): typings.sharepoint.SP.RoleDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("getRoleDefinition")(context.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.RoleDefinition]
     
     /* static member */
-    @scala.inline
-    def isDocumentSharingEnabled(context: typings.sharepoint.SP.ClientRuntimeContext, list: typings.sharepoint.SP.List[js.Any]): typings.sharepoint.SP.BooleanResult = (^.asInstanceOf[js.Dynamic].applyDynamic("isDocumentSharingEnabled")(context.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BooleanResult]
+    inline def isDocumentSharingEnabled(context: typings.sharepoint.SP.ClientRuntimeContext, list: typings.sharepoint.SP.List[js.Any]): typings.sharepoint.SP.BooleanResult = (^.asInstanceOf[js.Dynamic].applyDynamic("isDocumentSharingEnabled")(context.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.BooleanResult]
     
     /* static member */
-    @scala.inline
-    def updateDocumentSharingInfo(
+    inline def updateDocumentSharingInfo(
       context: typings.sharepoint.SP.ClientRuntimeContext,
       resourceAddress: String,
       userRoleAssignments: js.Array[typings.sharepoint.SP.Sharing.UserRoleAssignment],

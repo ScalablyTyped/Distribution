@@ -14,25 +14,19 @@ trait ScrollViewChangingEvent
 }
 object ScrollViewChangingEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ScrollView): ScrollViewChangingEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ScrollView): ScrollViewChangingEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewChangingEvent]
   }
   
-  @scala.inline
-  implicit class ScrollViewChangingEventMutableBuilder[Self <: ScrollViewChangingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollViewChangingEvent](x: Self) {
     
-    @scala.inline
-    def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+    inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
+    inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
     
-    @scala.inline
-    def setNextPage(value: Double): Self = StObject.set(x, "nextPage", value.asInstanceOf[js.Any])
+    inline def setNextPage(value: Double): Self = StObject.set(x, "nextPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageUndefined: Self = StObject.set(x, "nextPage", js.undefined)
+    inline def setNextPageUndefined: Self = StObject.set(x, "nextPage", js.undefined)
   }
 }

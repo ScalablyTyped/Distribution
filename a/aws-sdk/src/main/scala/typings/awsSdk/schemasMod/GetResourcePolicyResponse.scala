@@ -18,25 +18,19 @@ trait GetResourcePolicyResponse extends StObject {
 }
 object GetResourcePolicyResponse {
   
-  @scala.inline
-  def apply(): GetResourcePolicyResponse = {
+  inline def apply(): GetResourcePolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetResourcePolicyResponse]
   }
   
-  @scala.inline
-  implicit class GetResourcePolicyResponseMutableBuilder[Self <: GetResourcePolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourcePolicyResponse](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: string): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: string): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
     
-    @scala.inline
-    def setRevisionId(value: string): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: string): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait GetDisksResult extends StObject {
 }
 object GetDisksResult {
   
-  @scala.inline
-  def apply(): GetDisksResult = {
+  inline def apply(): GetDisksResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDisksResult]
   }
   
-  @scala.inline
-  implicit class GetDisksResultMutableBuilder[Self <: GetDisksResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetDisksResult](x: Self) {
     
-    @scala.inline
-    def setDisks(value: DiskList): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
+    inline def setDisks(value: DiskList): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
+    inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    @scala.inline
-    def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

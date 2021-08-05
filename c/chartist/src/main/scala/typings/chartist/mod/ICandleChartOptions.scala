@@ -75,91 +75,63 @@ trait ICandleChartOptions
 }
 object ICandleChartOptions {
   
-  @scala.inline
-  def apply(): ICandleChartOptions = {
+  inline def apply(): ICandleChartOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICandleChartOptions]
   }
   
-  @scala.inline
-  implicit class ICandleChartOptionsMutableBuilder[Self <: ICandleChartOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ICandleChartOptions](x: Self) {
     
-    @scala.inline
-    def setAxisX(value: ICandleChartAxis): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
+    inline def setAxisX(value: ICandleChartAxis): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisXUndefined: Self = StObject.set(x, "axisX", js.undefined)
+    inline def setAxisXUndefined: Self = StObject.set(x, "axisX", js.undefined)
     
-    @scala.inline
-    def setAxisY(value: ICandleChartAxis): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
+    inline def setAxisY(value: ICandleChartAxis): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisYUndefined: Self = StObject.set(x, "axisY", js.undefined)
+    inline def setAxisYUndefined: Self = StObject.set(x, "axisY", js.undefined)
     
-    @scala.inline
-    def setCandleWickWidth(value: Double | String): Self = StObject.set(x, "candleWickWidth", value.asInstanceOf[js.Any])
+    inline def setCandleWickWidth(value: Double | String): Self = StObject.set(x, "candleWickWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandleWickWidthUndefined: Self = StObject.set(x, "candleWickWidth", js.undefined)
+    inline def setCandleWickWidthUndefined: Self = StObject.set(x, "candleWickWidth", js.undefined)
     
-    @scala.inline
-    def setCandleWidth(value: Double | String): Self = StObject.set(x, "candleWidth", value.asInstanceOf[js.Any])
+    inline def setCandleWidth(value: Double | String): Self = StObject.set(x, "candleWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandleWidthUndefined: Self = StObject.set(x, "candleWidth", js.undefined)
+    inline def setCandleWidthUndefined: Self = StObject.set(x, "candleWidth", js.undefined)
     
-    @scala.inline
-    def setChartPadding(value: IChartPadding | Double): Self = StObject.set(x, "chartPadding", value.asInstanceOf[js.Any])
+    inline def setChartPadding(value: IChartPadding | Double): Self = StObject.set(x, "chartPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartPaddingUndefined: Self = StObject.set(x, "chartPadding", js.undefined)
+    inline def setChartPaddingUndefined: Self = StObject.set(x, "chartPadding", js.undefined)
     
-    @scala.inline
-    def setClassNames(value: ICandleChartClasses): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+    inline def setClassNames(value: ICandleChartClasses): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
+    inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
     
-    @scala.inline
-    def setFullWidth(value: Boolean | String): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+    inline def setFullWidth(value: Boolean | String): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+    inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHight(value: Double | String): Self = StObject.set(x, "hight", value.asInstanceOf[js.Any])
+    inline def setHight(value: Double | String): Self = StObject.set(x, "hight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHightUndefined: Self = StObject.set(x, "hight", js.undefined)
+    inline def setHightUndefined: Self = StObject.set(x, "hight", js.undefined)
     
-    @scala.inline
-    def setLow(value: Double | String): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
+    inline def setLow(value: Double | String): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowUndefined: Self = StObject.set(x, "low", js.undefined)
+    inline def setLowUndefined: Self = StObject.set(x, "low", js.undefined)
     
-    @scala.inline
-    def setUseOneThirdAsCandleWickWidth(value: Boolean | String): Self = StObject.set(x, "useOneThirdAsCandleWickWidth", value.asInstanceOf[js.Any])
+    inline def setUseOneThirdAsCandleWickWidth(value: Boolean | String): Self = StObject.set(x, "useOneThirdAsCandleWickWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseOneThirdAsCandleWickWidthUndefined: Self = StObject.set(x, "useOneThirdAsCandleWickWidth", js.undefined)
+    inline def setUseOneThirdAsCandleWickWidthUndefined: Self = StObject.set(x, "useOneThirdAsCandleWickWidth", js.undefined)
     
-    @scala.inline
-    def setUseStepLengthAsCandleWidth(value: Boolean | String): Self = StObject.set(x, "useStepLengthAsCandleWidth", value.asInstanceOf[js.Any])
+    inline def setUseStepLengthAsCandleWidth(value: Boolean | String): Self = StObject.set(x, "useStepLengthAsCandleWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseStepLengthAsCandleWidthUndefined: Self = StObject.set(x, "useStepLengthAsCandleWidth", js.undefined)
+    inline def setUseStepLengthAsCandleWidthUndefined: Self = StObject.set(x, "useStepLengthAsCandleWidth", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

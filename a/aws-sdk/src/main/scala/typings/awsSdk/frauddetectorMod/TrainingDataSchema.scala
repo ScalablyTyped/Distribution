@@ -15,22 +15,17 @@ trait TrainingDataSchema extends StObject {
 }
 object TrainingDataSchema {
   
-  @scala.inline
-  def apply(labelSchema: LabelSchema, modelVariables: ListOfStrings): TrainingDataSchema = {
+  inline def apply(labelSchema: LabelSchema, modelVariables: ListOfStrings): TrainingDataSchema = {
     val __obj = js.Dynamic.literal(labelSchema = labelSchema.asInstanceOf[js.Any], modelVariables = modelVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingDataSchema]
   }
   
-  @scala.inline
-  implicit class TrainingDataSchemaMutableBuilder[Self <: TrainingDataSchema] (val x: Self) extends AnyVal {
+  extension [Self <: TrainingDataSchema](x: Self) {
     
-    @scala.inline
-    def setLabelSchema(value: LabelSchema): Self = StObject.set(x, "labelSchema", value.asInstanceOf[js.Any])
+    inline def setLabelSchema(value: LabelSchema): Self = StObject.set(x, "labelSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelVariables(value: ListOfStrings): Self = StObject.set(x, "modelVariables", value.asInstanceOf[js.Any])
+    inline def setModelVariables(value: ListOfStrings): Self = StObject.set(x, "modelVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelVariablesVarargs(value: String*): Self = StObject.set(x, "modelVariables", js.Array(value :_*))
+    inline def setModelVariablesVarargs(value: String*): Self = StObject.set(x, "modelVariables", js.Array(value :_*))
   }
 }

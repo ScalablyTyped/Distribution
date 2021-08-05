@@ -63,11 +63,9 @@ object ledgerInfoPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): LedgerInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[LedgerInfo]
+    inline def deserializeBinary(bytes: Uint8Array): LedgerInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[LedgerInfo]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: LedgerInfo, reader: BinaryReader): LedgerInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[LedgerInfo]
+    inline def deserializeBinaryFromReader(message: LedgerInfo, reader: BinaryReader): LedgerInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[LedgerInfo]
     
     @JSImport("libra-core/lib/@/generated/ledger_info_pb", "LedgerInfo.extensions")
     @js.native
@@ -76,17 +74,13 @@ object ledgerInfoPbMod {
     @JSImport("libra-core/lib/@/generated/ledger_info_pb", "LedgerInfo.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: LedgerInfo, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: LedgerInfo, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: LedgerInfo): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: LedgerInfo): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -104,8 +98,7 @@ object ledgerInfoPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         consensusBlockId: Uint8Array | String,
         consensusDataHash: Uint8Array | String,
         epochNum: String,
@@ -117,26 +110,19 @@ object ledgerInfoPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setConsensusBlockId(value: Uint8Array | String): Self = StObject.set(x, "consensusBlockId", value.asInstanceOf[js.Any])
+        inline def setConsensusBlockId(value: Uint8Array | String): Self = StObject.set(x, "consensusBlockId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConsensusDataHash(value: Uint8Array | String): Self = StObject.set(x, "consensusDataHash", value.asInstanceOf[js.Any])
+        inline def setConsensusDataHash(value: Uint8Array | String): Self = StObject.set(x, "consensusDataHash", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEpochNum(value: String): Self = StObject.set(x, "epochNum", value.asInstanceOf[js.Any])
+        inline def setEpochNum(value: String): Self = StObject.set(x, "epochNum", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimestampUsecs(value: String): Self = StObject.set(x, "timestampUsecs", value.asInstanceOf[js.Any])
+        inline def setTimestampUsecs(value: String): Self = StObject.set(x, "timestampUsecs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransactionAccumulatorHash(value: Uint8Array | String): Self = StObject.set(x, "transactionAccumulatorHash", value.asInstanceOf[js.Any])
+        inline def setTransactionAccumulatorHash(value: Uint8Array | String): Self = StObject.set(x, "transactionAccumulatorHash", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -172,11 +158,9 @@ object ledgerInfoPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): LedgerInfoWithSignatures = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[LedgerInfoWithSignatures]
+    inline def deserializeBinary(bytes: Uint8Array): LedgerInfoWithSignatures = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[LedgerInfoWithSignatures]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: LedgerInfoWithSignatures, reader: BinaryReader): LedgerInfoWithSignatures = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[LedgerInfoWithSignatures]
+    inline def deserializeBinaryFromReader(message: LedgerInfoWithSignatures, reader: BinaryReader): LedgerInfoWithSignatures = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[LedgerInfoWithSignatures]
     
     @JSImport("libra-core/lib/@/generated/ledger_info_pb", "LedgerInfoWithSignatures.extensions")
     @js.native
@@ -185,17 +169,13 @@ object ledgerInfoPbMod {
     @JSImport("libra-core/lib/@/generated/ledger_info_pb", "LedgerInfoWithSignatures.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: LedgerInfoWithSignatures, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: LedgerInfoWithSignatures, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: LedgerInfoWithSignatures): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: LedgerInfoWithSignatures): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -205,26 +185,20 @@ object ledgerInfoPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(signaturesList: js.Array[typings.libraCore.ledgerInfoPbMod.ValidatorSignature.AsObject]): AsObject = {
+      inline def apply(signaturesList: js.Array[typings.libraCore.ledgerInfoPbMod.ValidatorSignature.AsObject]): AsObject = {
         val __obj = js.Dynamic.literal(signaturesList = signaturesList.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setLedgerInfo(value: typings.libraCore.ledgerInfoPbMod.LedgerInfo.AsObject): Self = StObject.set(x, "ledgerInfo", value.asInstanceOf[js.Any])
+        inline def setLedgerInfo(value: typings.libraCore.ledgerInfoPbMod.LedgerInfo.AsObject): Self = StObject.set(x, "ledgerInfo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLedgerInfoUndefined: Self = StObject.set(x, "ledgerInfo", js.undefined)
+        inline def setLedgerInfoUndefined: Self = StObject.set(x, "ledgerInfo", js.undefined)
         
-        @scala.inline
-        def setSignaturesList(value: js.Array[typings.libraCore.ledgerInfoPbMod.ValidatorSignature.AsObject]): Self = StObject.set(x, "signaturesList", value.asInstanceOf[js.Any])
+        inline def setSignaturesList(value: js.Array[typings.libraCore.ledgerInfoPbMod.ValidatorSignature.AsObject]): Self = StObject.set(x, "signaturesList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSignaturesListVarargs(value: typings.libraCore.ledgerInfoPbMod.ValidatorSignature.AsObject*): Self = StObject.set(x, "signaturesList", js.Array(value :_*))
+        inline def setSignaturesListVarargs(value: typings.libraCore.ledgerInfoPbMod.ValidatorSignature.AsObject*): Self = StObject.set(x, "signaturesList", js.Array(value :_*))
       }
     }
   }
@@ -258,11 +232,9 @@ object ledgerInfoPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): ValidatorSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ValidatorSignature]
+    inline def deserializeBinary(bytes: Uint8Array): ValidatorSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ValidatorSignature]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: ValidatorSignature, reader: BinaryReader): ValidatorSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ValidatorSignature]
+    inline def deserializeBinaryFromReader(message: ValidatorSignature, reader: BinaryReader): ValidatorSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ValidatorSignature]
     
     @JSImport("libra-core/lib/@/generated/ledger_info_pb", "ValidatorSignature.extensions")
     @js.native
@@ -271,17 +243,13 @@ object ledgerInfoPbMod {
     @JSImport("libra-core/lib/@/generated/ledger_info_pb", "ValidatorSignature.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: ValidatorSignature, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: ValidatorSignature, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: ValidatorSignature): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: ValidatorSignature): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -291,20 +259,16 @@ object ledgerInfoPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(signature: Uint8Array | String, validatorId: Uint8Array | String): AsObject = {
+      inline def apply(signature: Uint8Array | String, validatorId: Uint8Array | String): AsObject = {
         val __obj = js.Dynamic.literal(signature = signature.asInstanceOf[js.Any], validatorId = validatorId.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setSignature(value: Uint8Array | String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+        inline def setSignature(value: Uint8Array | String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValidatorId(value: Uint8Array | String): Self = StObject.set(x, "validatorId", value.asInstanceOf[js.Any])
+        inline def setValidatorId(value: Uint8Array | String): Self = StObject.set(x, "validatorId", value.asInstanceOf[js.Any])
       }
     }
   }

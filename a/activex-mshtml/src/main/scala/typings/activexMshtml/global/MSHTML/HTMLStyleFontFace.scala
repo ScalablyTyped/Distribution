@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLStyleFontFace")
 @js.native
-class HTMLStyleFontFace protected ()
+/* private */ class HTMLStyleFontFace ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLStyleFontFace {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTMLStyleFontFace_typekey")
   var MSHTMLDotHTMLStyleFontFace_typekey: typings.activexMshtml.MSHTML.HTMLStyleFontFace = js.native
   

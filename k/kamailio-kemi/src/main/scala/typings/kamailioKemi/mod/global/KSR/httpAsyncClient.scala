@@ -10,6 +10,5 @@ object httpAsyncClient {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def query(sdata: String, rn: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(sdata.asInstanceOf[js.Any], rn.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def query(sdata: String, rn: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(sdata.asInstanceOf[js.Any], rn.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -38,52 +38,37 @@ trait DescribeHostReservationOfferingsRequest extends StObject {
 }
 object DescribeHostReservationOfferingsRequest {
   
-  @scala.inline
-  def apply(): DescribeHostReservationOfferingsRequest = {
+  inline def apply(): DescribeHostReservationOfferingsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeHostReservationOfferingsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeHostReservationOfferingsRequestMutableBuilder[Self <: DescribeHostReservationOfferingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeHostReservationOfferingsRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: FilterList): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: FilterList): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setFilterVarargs(value: Filter*): Self = StObject.set(x, "Filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: Filter*): Self = StObject.set(x, "Filter", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxDuration(value: Integer): Self = StObject.set(x, "MaxDuration", value.asInstanceOf[js.Any])
+    inline def setMaxDuration(value: Integer): Self = StObject.set(x, "MaxDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDurationUndefined: Self = StObject.set(x, "MaxDuration", js.undefined)
+    inline def setMaxDurationUndefined: Self = StObject.set(x, "MaxDuration", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: DescribeHostReservationsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: DescribeHostReservationsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setMinDuration(value: Integer): Self = StObject.set(x, "MinDuration", value.asInstanceOf[js.Any])
+    inline def setMinDuration(value: Integer): Self = StObject.set(x, "MinDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDurationUndefined: Self = StObject.set(x, "MinDuration", js.undefined)
+    inline def setMinDurationUndefined: Self = StObject.set(x, "MinDuration", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOfferingId(value: OfferingId): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
+    inline def setOfferingId(value: OfferingId): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingIdUndefined: Self = StObject.set(x, "OfferingId", js.undefined)
+    inline def setOfferingIdUndefined: Self = StObject.set(x, "OfferingId", js.undefined)
   }
 }

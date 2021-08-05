@@ -11,19 +11,15 @@ trait InputsArray extends StObject {
 }
 object InputsArray {
   
-  @scala.inline
-  def apply(inputs: js.Array[TransactionObject]): InputsArray = {
+  inline def apply(inputs: js.Array[TransactionObject]): InputsArray = {
     val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputsArray]
   }
   
-  @scala.inline
-  implicit class InputsArrayMutableBuilder[Self <: InputsArray] (val x: Self) extends AnyVal {
+  extension [Self <: InputsArray](x: Self) {
     
-    @scala.inline
-    def setInputs(value: js.Array[TransactionObject]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[TransactionObject]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsVarargs(value: TransactionObject*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: TransactionObject*): Self = StObject.set(x, "inputs", js.Array(value :_*))
   }
 }

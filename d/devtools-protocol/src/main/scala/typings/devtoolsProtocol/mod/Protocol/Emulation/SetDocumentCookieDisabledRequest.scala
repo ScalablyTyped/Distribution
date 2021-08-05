@@ -13,16 +13,13 @@ trait SetDocumentCookieDisabledRequest extends StObject {
 }
 object SetDocumentCookieDisabledRequest {
   
-  @scala.inline
-  def apply(disabled: Boolean): SetDocumentCookieDisabledRequest = {
+  inline def apply(disabled: Boolean): SetDocumentCookieDisabledRequest = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetDocumentCookieDisabledRequest]
   }
   
-  @scala.inline
-  implicit class SetDocumentCookieDisabledRequestMutableBuilder[Self <: SetDocumentCookieDisabledRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetDocumentCookieDisabledRequest](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
   }
 }

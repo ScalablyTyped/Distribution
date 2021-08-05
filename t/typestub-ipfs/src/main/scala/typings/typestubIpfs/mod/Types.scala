@@ -20,8 +20,7 @@ trait Types extends StObject {
 }
 object Types {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Buffer: js.Any,
     CID: CID,
     PeerId: String | js.Any,
@@ -33,25 +32,18 @@ object Types {
     __obj.asInstanceOf[Types]
   }
   
-  @scala.inline
-  implicit class TypesMutableBuilder[Self <: Types] (val x: Self) extends AnyVal {
+  extension [Self <: Types](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: js.Any): Self = StObject.set(x, "Buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: js.Any): Self = StObject.set(x, "Buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCID(value: CID): Self = StObject.set(x, "CID", value.asInstanceOf[js.Any])
+    inline def setCID(value: CID): Self = StObject.set(x, "CID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiaddr(value: Multiaddr): Self = StObject.set(x, "multiaddr", value.asInstanceOf[js.Any])
+    inline def setMultiaddr(value: Multiaddr): Self = StObject.set(x, "multiaddr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultihash(value: Multihash): Self = StObject.set(x, "multihash", value.asInstanceOf[js.Any])
+    inline def setMultihash(value: Multihash): Self = StObject.set(x, "multihash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerId(value: String | js.Any): Self = StObject.set(x, "PeerId", value.asInstanceOf[js.Any])
+    inline def setPeerId(value: String | js.Any): Self = StObject.set(x, "PeerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerInfo(value: js.Any): Self = StObject.set(x, "PeerInfo", value.asInstanceOf[js.Any])
+    inline def setPeerInfo(value: js.Any): Self = StObject.set(x, "PeerInfo", value.asInstanceOf[js.Any])
   }
 }

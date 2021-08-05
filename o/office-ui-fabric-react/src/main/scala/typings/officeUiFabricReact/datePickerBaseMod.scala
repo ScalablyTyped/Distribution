@@ -20,52 +20,52 @@ object datePickerBaseMod {
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MDatePickerBase(nextProps: IDatePickerProps): Unit = js.native
     
-    var _calendar: js.Any = js.native
+    /* private */ var _calendar: js.Any = js.native
     
     /**
       * Callback for closing the calendar callout
       */
-    var _calendarDismissed: js.Any = js.native
+    /* private */ var _calendarDismissed: js.Any = js.native
     
-    var _datePickerDiv: js.Any = js.native
+    /* private */ var _datePickerDiv: js.Any = js.native
     
-    var _dismissDatePickerPopup: js.Any = js.native
+    /* private */ var _dismissDatePickerPopup: js.Any = js.native
     
-    var _getDefaultState: js.Any = js.native
+    /* private */ var _getDefaultState: js.Any = js.native
     
-    var _getErrorMessage: js.Any = js.native
+    /* private */ var _getErrorMessage: js.Any = js.native
     
-    var _handleEscKey: js.Any = js.native
+    /* private */ var _handleEscKey: js.Any = js.native
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
     
-    var _isDateOutOfBounds: js.Any = js.native
+    /* private */ var _isDateOutOfBounds: js.Any = js.native
     
-    var _onCalloutPositioned: js.Any = js.native
+    /* private */ var _onCalloutPositioned: js.Any = js.native
     
-    var _onIconClick: js.Any = js.native
+    /* private */ var _onIconClick: js.Any = js.native
     
-    var _onSelectDate: js.Any = js.native
+    /* private */ var _onSelectDate: js.Any = js.native
     
-    var _onTextFieldBlur: js.Any = js.native
+    /* private */ var _onTextFieldBlur: js.Any = js.native
     
-    var _onTextFieldChanged: js.Any = js.native
+    /* private */ var _onTextFieldChanged: js.Any = js.native
     
-    var _onTextFieldClick: js.Any = js.native
+    /* private */ var _onTextFieldClick: js.Any = js.native
     
-    var _onTextFieldFocus: js.Any = js.native
+    /* private */ var _onTextFieldFocus: js.Any = js.native
     
-    var _onTextFieldKeyDown: js.Any = js.native
+    /* private */ var _onTextFieldKeyDown: js.Any = js.native
     
-    var _preventFocusOpeningPicker: js.Any = js.native
+    /* private */ var _preventFocusOpeningPicker: js.Any = js.native
     
-    var _setErrorMessage: js.Any = js.native
+    /* private */ var _setErrorMessage: js.Any = js.native
     
-    var _showDatePickerPopup: js.Any = js.native
+    /* private */ var _showDatePickerPopup: js.Any = js.native
     
-    var _textField: js.Any = js.native
+    /* private */ var _textField: js.Any = js.native
     
-    var _validateTextInput: js.Any = js.native
+    /* private */ var _validateTextInput: js.Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MDatePickerBase(prevProps: IDatePickerProps, prevState: IDatePickerState): Unit = js.native
@@ -88,8 +88,7 @@ object datePickerBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/DatePicker/DatePicker.base", "DatePickerBase.defaultProps")
     @js.native
     def defaultProps: IDatePickerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IDatePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IDatePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IDatePickerState extends StObject {
@@ -104,38 +103,28 @@ object datePickerBaseMod {
   }
   object IDatePickerState {
     
-    @scala.inline
-    def apply(): IDatePickerState = {
+    inline def apply(): IDatePickerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDatePickerState]
     }
     
-    @scala.inline
-    implicit class IDatePickerStateMutableBuilder[Self <: IDatePickerState] (val x: Self) extends AnyVal {
+    extension [Self <: IDatePickerState](x: Self) {
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      @scala.inline
-      def setFormattedDate(value: String): Self = StObject.set(x, "formattedDate", value.asInstanceOf[js.Any])
+      inline def setFormattedDate(value: String): Self = StObject.set(x, "formattedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormattedDateUndefined: Self = StObject.set(x, "formattedDate", js.undefined)
+      inline def setFormattedDateUndefined: Self = StObject.set(x, "formattedDate", js.undefined)
       
-      @scala.inline
-      def setIsDatePickerShown(value: Boolean): Self = StObject.set(x, "isDatePickerShown", value.asInstanceOf[js.Any])
+      inline def setIsDatePickerShown(value: Boolean): Self = StObject.set(x, "isDatePickerShown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDatePickerShownUndefined: Self = StObject.set(x, "isDatePickerShown", js.undefined)
+      inline def setIsDatePickerShownUndefined: Self = StObject.set(x, "isDatePickerShown", js.undefined)
       
-      @scala.inline
-      def setSelectedDate(value: Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
+      inline def setSelectedDate(value: Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedDateUndefined: Self = StObject.set(x, "selectedDate", js.undefined)
+      inline def setSelectedDateUndefined: Self = StObject.set(x, "selectedDate", js.undefined)
     }
   }
 }

@@ -18,22 +18,17 @@ trait ListDeploymentGroupsInput extends StObject {
 }
 object ListDeploymentGroupsInput {
   
-  @scala.inline
-  def apply(applicationName: ApplicationName): ListDeploymentGroupsInput = {
+  inline def apply(applicationName: ApplicationName): ListDeploymentGroupsInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeploymentGroupsInput]
   }
   
-  @scala.inline
-  implicit class ListDeploymentGroupsInputMutableBuilder[Self <: ListDeploymentGroupsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListDeploymentGroupsInput](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

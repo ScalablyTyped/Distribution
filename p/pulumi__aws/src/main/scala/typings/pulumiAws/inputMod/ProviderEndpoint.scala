@@ -301,889 +301,595 @@ trait ProviderEndpoint extends StObject {
 }
 object ProviderEndpoint {
   
-  @scala.inline
-  def apply(): ProviderEndpoint = {
+  inline def apply(): ProviderEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProviderEndpoint]
   }
   
-  @scala.inline
-  implicit class ProviderEndpointMutableBuilder[Self <: ProviderEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderEndpoint](x: Self) {
     
-    @scala.inline
-    def setAccessanalyzer(value: Input[String]): Self = StObject.set(x, "accessanalyzer", value.asInstanceOf[js.Any])
+    inline def setAccessanalyzer(value: Input[String]): Self = StObject.set(x, "accessanalyzer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessanalyzerUndefined: Self = StObject.set(x, "accessanalyzer", js.undefined)
+    inline def setAccessanalyzerUndefined: Self = StObject.set(x, "accessanalyzer", js.undefined)
     
-    @scala.inline
-    def setAcm(value: Input[String]): Self = StObject.set(x, "acm", value.asInstanceOf[js.Any])
+    inline def setAcm(value: Input[String]): Self = StObject.set(x, "acm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcmUndefined: Self = StObject.set(x, "acm", js.undefined)
+    inline def setAcmUndefined: Self = StObject.set(x, "acm", js.undefined)
     
-    @scala.inline
-    def setAcmpca(value: Input[String]): Self = StObject.set(x, "acmpca", value.asInstanceOf[js.Any])
+    inline def setAcmpca(value: Input[String]): Self = StObject.set(x, "acmpca", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcmpcaUndefined: Self = StObject.set(x, "acmpca", js.undefined)
+    inline def setAcmpcaUndefined: Self = StObject.set(x, "acmpca", js.undefined)
     
-    @scala.inline
-    def setAmplify(value: Input[String]): Self = StObject.set(x, "amplify", value.asInstanceOf[js.Any])
+    inline def setAmplify(value: Input[String]): Self = StObject.set(x, "amplify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmplifyUndefined: Self = StObject.set(x, "amplify", js.undefined)
+    inline def setAmplifyUndefined: Self = StObject.set(x, "amplify", js.undefined)
     
-    @scala.inline
-    def setApigateway(value: Input[String]): Self = StObject.set(x, "apigateway", value.asInstanceOf[js.Any])
+    inline def setApigateway(value: Input[String]): Self = StObject.set(x, "apigateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApigatewayUndefined: Self = StObject.set(x, "apigateway", js.undefined)
+    inline def setApigatewayUndefined: Self = StObject.set(x, "apigateway", js.undefined)
     
-    @scala.inline
-    def setApplicationautoscaling(value: Input[String]): Self = StObject.set(x, "applicationautoscaling", value.asInstanceOf[js.Any])
+    inline def setApplicationautoscaling(value: Input[String]): Self = StObject.set(x, "applicationautoscaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationautoscalingUndefined: Self = StObject.set(x, "applicationautoscaling", js.undefined)
+    inline def setApplicationautoscalingUndefined: Self = StObject.set(x, "applicationautoscaling", js.undefined)
     
-    @scala.inline
-    def setApplicationinsights(value: Input[String]): Self = StObject.set(x, "applicationinsights", value.asInstanceOf[js.Any])
+    inline def setApplicationinsights(value: Input[String]): Self = StObject.set(x, "applicationinsights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationinsightsUndefined: Self = StObject.set(x, "applicationinsights", js.undefined)
+    inline def setApplicationinsightsUndefined: Self = StObject.set(x, "applicationinsights", js.undefined)
     
-    @scala.inline
-    def setAppmesh(value: Input[String]): Self = StObject.set(x, "appmesh", value.asInstanceOf[js.Any])
+    inline def setAppmesh(value: Input[String]): Self = StObject.set(x, "appmesh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppmeshUndefined: Self = StObject.set(x, "appmesh", js.undefined)
+    inline def setAppmeshUndefined: Self = StObject.set(x, "appmesh", js.undefined)
     
-    @scala.inline
-    def setAppstream(value: Input[String]): Self = StObject.set(x, "appstream", value.asInstanceOf[js.Any])
+    inline def setAppstream(value: Input[String]): Self = StObject.set(x, "appstream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppstreamUndefined: Self = StObject.set(x, "appstream", js.undefined)
+    inline def setAppstreamUndefined: Self = StObject.set(x, "appstream", js.undefined)
     
-    @scala.inline
-    def setAppsync(value: Input[String]): Self = StObject.set(x, "appsync", value.asInstanceOf[js.Any])
+    inline def setAppsync(value: Input[String]): Self = StObject.set(x, "appsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppsyncUndefined: Self = StObject.set(x, "appsync", js.undefined)
+    inline def setAppsyncUndefined: Self = StObject.set(x, "appsync", js.undefined)
     
-    @scala.inline
-    def setAthena(value: Input[String]): Self = StObject.set(x, "athena", value.asInstanceOf[js.Any])
+    inline def setAthena(value: Input[String]): Self = StObject.set(x, "athena", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAthenaUndefined: Self = StObject.set(x, "athena", js.undefined)
+    inline def setAthenaUndefined: Self = StObject.set(x, "athena", js.undefined)
     
-    @scala.inline
-    def setAutoscaling(value: Input[String]): Self = StObject.set(x, "autoscaling", value.asInstanceOf[js.Any])
+    inline def setAutoscaling(value: Input[String]): Self = StObject.set(x, "autoscaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscalingUndefined: Self = StObject.set(x, "autoscaling", js.undefined)
+    inline def setAutoscalingUndefined: Self = StObject.set(x, "autoscaling", js.undefined)
     
-    @scala.inline
-    def setAutoscalingplans(value: Input[String]): Self = StObject.set(x, "autoscalingplans", value.asInstanceOf[js.Any])
+    inline def setAutoscalingplans(value: Input[String]): Self = StObject.set(x, "autoscalingplans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscalingplansUndefined: Self = StObject.set(x, "autoscalingplans", js.undefined)
+    inline def setAutoscalingplansUndefined: Self = StObject.set(x, "autoscalingplans", js.undefined)
     
-    @scala.inline
-    def setBackup(value: Input[String]): Self = StObject.set(x, "backup", value.asInstanceOf[js.Any])
+    inline def setBackup(value: Input[String]): Self = StObject.set(x, "backup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupUndefined: Self = StObject.set(x, "backup", js.undefined)
+    inline def setBackupUndefined: Self = StObject.set(x, "backup", js.undefined)
     
-    @scala.inline
-    def setBatch(value: Input[String]): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
+    inline def setBatch(value: Input[String]): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
+    inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
-    @scala.inline
-    def setBudgets(value: Input[String]): Self = StObject.set(x, "budgets", value.asInstanceOf[js.Any])
+    inline def setBudgets(value: Input[String]): Self = StObject.set(x, "budgets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetsUndefined: Self = StObject.set(x, "budgets", js.undefined)
+    inline def setBudgetsUndefined: Self = StObject.set(x, "budgets", js.undefined)
     
-    @scala.inline
-    def setCloud9(value: Input[String]): Self = StObject.set(x, "cloud9", value.asInstanceOf[js.Any])
+    inline def setCloud9(value: Input[String]): Self = StObject.set(x, "cloud9", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloud9Undefined: Self = StObject.set(x, "cloud9", js.undefined)
+    inline def setCloud9Undefined: Self = StObject.set(x, "cloud9", js.undefined)
     
-    @scala.inline
-    def setCloudformation(value: Input[String]): Self = StObject.set(x, "cloudformation", value.asInstanceOf[js.Any])
+    inline def setCloudformation(value: Input[String]): Self = StObject.set(x, "cloudformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudformationUndefined: Self = StObject.set(x, "cloudformation", js.undefined)
+    inline def setCloudformationUndefined: Self = StObject.set(x, "cloudformation", js.undefined)
     
-    @scala.inline
-    def setCloudfront(value: Input[String]): Self = StObject.set(x, "cloudfront", value.asInstanceOf[js.Any])
+    inline def setCloudfront(value: Input[String]): Self = StObject.set(x, "cloudfront", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudfrontUndefined: Self = StObject.set(x, "cloudfront", js.undefined)
+    inline def setCloudfrontUndefined: Self = StObject.set(x, "cloudfront", js.undefined)
     
-    @scala.inline
-    def setCloudhsm(value: Input[String]): Self = StObject.set(x, "cloudhsm", value.asInstanceOf[js.Any])
+    inline def setCloudhsm(value: Input[String]): Self = StObject.set(x, "cloudhsm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudhsmUndefined: Self = StObject.set(x, "cloudhsm", js.undefined)
+    inline def setCloudhsmUndefined: Self = StObject.set(x, "cloudhsm", js.undefined)
     
-    @scala.inline
-    def setCloudsearch(value: Input[String]): Self = StObject.set(x, "cloudsearch", value.asInstanceOf[js.Any])
+    inline def setCloudsearch(value: Input[String]): Self = StObject.set(x, "cloudsearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudsearchUndefined: Self = StObject.set(x, "cloudsearch", js.undefined)
+    inline def setCloudsearchUndefined: Self = StObject.set(x, "cloudsearch", js.undefined)
     
-    @scala.inline
-    def setCloudtrail(value: Input[String]): Self = StObject.set(x, "cloudtrail", value.asInstanceOf[js.Any])
+    inline def setCloudtrail(value: Input[String]): Self = StObject.set(x, "cloudtrail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudtrailUndefined: Self = StObject.set(x, "cloudtrail", js.undefined)
+    inline def setCloudtrailUndefined: Self = StObject.set(x, "cloudtrail", js.undefined)
     
-    @scala.inline
-    def setCloudwatch(value: Input[String]): Self = StObject.set(x, "cloudwatch", value.asInstanceOf[js.Any])
+    inline def setCloudwatch(value: Input[String]): Self = StObject.set(x, "cloudwatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudwatchUndefined: Self = StObject.set(x, "cloudwatch", js.undefined)
+    inline def setCloudwatchUndefined: Self = StObject.set(x, "cloudwatch", js.undefined)
     
-    @scala.inline
-    def setCloudwatchevents(value: Input[String]): Self = StObject.set(x, "cloudwatchevents", value.asInstanceOf[js.Any])
+    inline def setCloudwatchevents(value: Input[String]): Self = StObject.set(x, "cloudwatchevents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudwatcheventsUndefined: Self = StObject.set(x, "cloudwatchevents", js.undefined)
+    inline def setCloudwatcheventsUndefined: Self = StObject.set(x, "cloudwatchevents", js.undefined)
     
-    @scala.inline
-    def setCloudwatchlogs(value: Input[String]): Self = StObject.set(x, "cloudwatchlogs", value.asInstanceOf[js.Any])
+    inline def setCloudwatchlogs(value: Input[String]): Self = StObject.set(x, "cloudwatchlogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudwatchlogsUndefined: Self = StObject.set(x, "cloudwatchlogs", js.undefined)
+    inline def setCloudwatchlogsUndefined: Self = StObject.set(x, "cloudwatchlogs", js.undefined)
     
-    @scala.inline
-    def setCodeartifact(value: Input[String]): Self = StObject.set(x, "codeartifact", value.asInstanceOf[js.Any])
+    inline def setCodeartifact(value: Input[String]): Self = StObject.set(x, "codeartifact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeartifactUndefined: Self = StObject.set(x, "codeartifact", js.undefined)
+    inline def setCodeartifactUndefined: Self = StObject.set(x, "codeartifact", js.undefined)
     
-    @scala.inline
-    def setCodebuild(value: Input[String]): Self = StObject.set(x, "codebuild", value.asInstanceOf[js.Any])
+    inline def setCodebuild(value: Input[String]): Self = StObject.set(x, "codebuild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodebuildUndefined: Self = StObject.set(x, "codebuild", js.undefined)
+    inline def setCodebuildUndefined: Self = StObject.set(x, "codebuild", js.undefined)
     
-    @scala.inline
-    def setCodecommit(value: Input[String]): Self = StObject.set(x, "codecommit", value.asInstanceOf[js.Any])
+    inline def setCodecommit(value: Input[String]): Self = StObject.set(x, "codecommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecommitUndefined: Self = StObject.set(x, "codecommit", js.undefined)
+    inline def setCodecommitUndefined: Self = StObject.set(x, "codecommit", js.undefined)
     
-    @scala.inline
-    def setCodedeploy(value: Input[String]): Self = StObject.set(x, "codedeploy", value.asInstanceOf[js.Any])
+    inline def setCodedeploy(value: Input[String]): Self = StObject.set(x, "codedeploy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodedeployUndefined: Self = StObject.set(x, "codedeploy", js.undefined)
+    inline def setCodedeployUndefined: Self = StObject.set(x, "codedeploy", js.undefined)
     
-    @scala.inline
-    def setCodepipeline(value: Input[String]): Self = StObject.set(x, "codepipeline", value.asInstanceOf[js.Any])
+    inline def setCodepipeline(value: Input[String]): Self = StObject.set(x, "codepipeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodepipelineUndefined: Self = StObject.set(x, "codepipeline", js.undefined)
+    inline def setCodepipelineUndefined: Self = StObject.set(x, "codepipeline", js.undefined)
     
-    @scala.inline
-    def setCodestarconnections(value: Input[String]): Self = StObject.set(x, "codestarconnections", value.asInstanceOf[js.Any])
+    inline def setCodestarconnections(value: Input[String]): Self = StObject.set(x, "codestarconnections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodestarconnectionsUndefined: Self = StObject.set(x, "codestarconnections", js.undefined)
+    inline def setCodestarconnectionsUndefined: Self = StObject.set(x, "codestarconnections", js.undefined)
     
-    @scala.inline
-    def setCognitoidentity(value: Input[String]): Self = StObject.set(x, "cognitoidentity", value.asInstanceOf[js.Any])
+    inline def setCognitoidentity(value: Input[String]): Self = StObject.set(x, "cognitoidentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCognitoidentityUndefined: Self = StObject.set(x, "cognitoidentity", js.undefined)
+    inline def setCognitoidentityUndefined: Self = StObject.set(x, "cognitoidentity", js.undefined)
     
-    @scala.inline
-    def setCognitoidp(value: Input[String]): Self = StObject.set(x, "cognitoidp", value.asInstanceOf[js.Any])
+    inline def setCognitoidp(value: Input[String]): Self = StObject.set(x, "cognitoidp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCognitoidpUndefined: Self = StObject.set(x, "cognitoidp", js.undefined)
+    inline def setCognitoidpUndefined: Self = StObject.set(x, "cognitoidp", js.undefined)
     
-    @scala.inline
-    def setConfigservice(value: Input[String]): Self = StObject.set(x, "configservice", value.asInstanceOf[js.Any])
+    inline def setConfigservice(value: Input[String]): Self = StObject.set(x, "configservice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigserviceUndefined: Self = StObject.set(x, "configservice", js.undefined)
+    inline def setConfigserviceUndefined: Self = StObject.set(x, "configservice", js.undefined)
     
-    @scala.inline
-    def setCur(value: Input[String]): Self = StObject.set(x, "cur", value.asInstanceOf[js.Any])
+    inline def setCur(value: Input[String]): Self = StObject.set(x, "cur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurUndefined: Self = StObject.set(x, "cur", js.undefined)
+    inline def setCurUndefined: Self = StObject.set(x, "cur", js.undefined)
     
-    @scala.inline
-    def setDataexchange(value: Input[String]): Self = StObject.set(x, "dataexchange", value.asInstanceOf[js.Any])
+    inline def setDataexchange(value: Input[String]): Self = StObject.set(x, "dataexchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataexchangeUndefined: Self = StObject.set(x, "dataexchange", js.undefined)
+    inline def setDataexchangeUndefined: Self = StObject.set(x, "dataexchange", js.undefined)
     
-    @scala.inline
-    def setDatapipeline(value: Input[String]): Self = StObject.set(x, "datapipeline", value.asInstanceOf[js.Any])
+    inline def setDatapipeline(value: Input[String]): Self = StObject.set(x, "datapipeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatapipelineUndefined: Self = StObject.set(x, "datapipeline", js.undefined)
+    inline def setDatapipelineUndefined: Self = StObject.set(x, "datapipeline", js.undefined)
     
-    @scala.inline
-    def setDatasync(value: Input[String]): Self = StObject.set(x, "datasync", value.asInstanceOf[js.Any])
+    inline def setDatasync(value: Input[String]): Self = StObject.set(x, "datasync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasyncUndefined: Self = StObject.set(x, "datasync", js.undefined)
+    inline def setDatasyncUndefined: Self = StObject.set(x, "datasync", js.undefined)
     
-    @scala.inline
-    def setDax(value: Input[String]): Self = StObject.set(x, "dax", value.asInstanceOf[js.Any])
+    inline def setDax(value: Input[String]): Self = StObject.set(x, "dax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaxUndefined: Self = StObject.set(x, "dax", js.undefined)
+    inline def setDaxUndefined: Self = StObject.set(x, "dax", js.undefined)
     
-    @scala.inline
-    def setDevicefarm(value: Input[String]): Self = StObject.set(x, "devicefarm", value.asInstanceOf[js.Any])
+    inline def setDevicefarm(value: Input[String]): Self = StObject.set(x, "devicefarm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicefarmUndefined: Self = StObject.set(x, "devicefarm", js.undefined)
+    inline def setDevicefarmUndefined: Self = StObject.set(x, "devicefarm", js.undefined)
     
-    @scala.inline
-    def setDirectconnect(value: Input[String]): Self = StObject.set(x, "directconnect", value.asInstanceOf[js.Any])
+    inline def setDirectconnect(value: Input[String]): Self = StObject.set(x, "directconnect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectconnectUndefined: Self = StObject.set(x, "directconnect", js.undefined)
+    inline def setDirectconnectUndefined: Self = StObject.set(x, "directconnect", js.undefined)
     
-    @scala.inline
-    def setDlm(value: Input[String]): Self = StObject.set(x, "dlm", value.asInstanceOf[js.Any])
+    inline def setDlm(value: Input[String]): Self = StObject.set(x, "dlm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDlmUndefined: Self = StObject.set(x, "dlm", js.undefined)
+    inline def setDlmUndefined: Self = StObject.set(x, "dlm", js.undefined)
     
-    @scala.inline
-    def setDms(value: Input[String]): Self = StObject.set(x, "dms", value.asInstanceOf[js.Any])
+    inline def setDms(value: Input[String]): Self = StObject.set(x, "dms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDmsUndefined: Self = StObject.set(x, "dms", js.undefined)
+    inline def setDmsUndefined: Self = StObject.set(x, "dms", js.undefined)
     
-    @scala.inline
-    def setDocdb(value: Input[String]): Self = StObject.set(x, "docdb", value.asInstanceOf[js.Any])
+    inline def setDocdb(value: Input[String]): Self = StObject.set(x, "docdb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocdbUndefined: Self = StObject.set(x, "docdb", js.undefined)
+    inline def setDocdbUndefined: Self = StObject.set(x, "docdb", js.undefined)
     
-    @scala.inline
-    def setDs(value: Input[String]): Self = StObject.set(x, "ds", value.asInstanceOf[js.Any])
+    inline def setDs(value: Input[String]): Self = StObject.set(x, "ds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDsUndefined: Self = StObject.set(x, "ds", js.undefined)
+    inline def setDsUndefined: Self = StObject.set(x, "ds", js.undefined)
     
-    @scala.inline
-    def setDynamodb(value: Input[String]): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
+    inline def setDynamodb(value: Input[String]): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
+    inline def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
     
-    @scala.inline
-    def setEc2(value: Input[String]): Self = StObject.set(x, "ec2", value.asInstanceOf[js.Any])
+    inline def setEc2(value: Input[String]): Self = StObject.set(x, "ec2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEc2Undefined: Self = StObject.set(x, "ec2", js.undefined)
+    inline def setEc2Undefined: Self = StObject.set(x, "ec2", js.undefined)
     
-    @scala.inline
-    def setEcr(value: Input[String]): Self = StObject.set(x, "ecr", value.asInstanceOf[js.Any])
+    inline def setEcr(value: Input[String]): Self = StObject.set(x, "ecr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcrUndefined: Self = StObject.set(x, "ecr", js.undefined)
+    inline def setEcrUndefined: Self = StObject.set(x, "ecr", js.undefined)
     
-    @scala.inline
-    def setEcs(value: Input[String]): Self = StObject.set(x, "ecs", value.asInstanceOf[js.Any])
+    inline def setEcs(value: Input[String]): Self = StObject.set(x, "ecs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcsUndefined: Self = StObject.set(x, "ecs", js.undefined)
+    inline def setEcsUndefined: Self = StObject.set(x, "ecs", js.undefined)
     
-    @scala.inline
-    def setEfs(value: Input[String]): Self = StObject.set(x, "efs", value.asInstanceOf[js.Any])
+    inline def setEfs(value: Input[String]): Self = StObject.set(x, "efs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEfsUndefined: Self = StObject.set(x, "efs", js.undefined)
+    inline def setEfsUndefined: Self = StObject.set(x, "efs", js.undefined)
     
-    @scala.inline
-    def setEks(value: Input[String]): Self = StObject.set(x, "eks", value.asInstanceOf[js.Any])
+    inline def setEks(value: Input[String]): Self = StObject.set(x, "eks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEksUndefined: Self = StObject.set(x, "eks", js.undefined)
+    inline def setEksUndefined: Self = StObject.set(x, "eks", js.undefined)
     
-    @scala.inline
-    def setElasticache(value: Input[String]): Self = StObject.set(x, "elasticache", value.asInstanceOf[js.Any])
+    inline def setElasticache(value: Input[String]): Self = StObject.set(x, "elasticache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticacheUndefined: Self = StObject.set(x, "elasticache", js.undefined)
+    inline def setElasticacheUndefined: Self = StObject.set(x, "elasticache", js.undefined)
     
-    @scala.inline
-    def setElasticbeanstalk(value: Input[String]): Self = StObject.set(x, "elasticbeanstalk", value.asInstanceOf[js.Any])
+    inline def setElasticbeanstalk(value: Input[String]): Self = StObject.set(x, "elasticbeanstalk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticbeanstalkUndefined: Self = StObject.set(x, "elasticbeanstalk", js.undefined)
+    inline def setElasticbeanstalkUndefined: Self = StObject.set(x, "elasticbeanstalk", js.undefined)
     
-    @scala.inline
-    def setElastictranscoder(value: Input[String]): Self = StObject.set(x, "elastictranscoder", value.asInstanceOf[js.Any])
+    inline def setElastictranscoder(value: Input[String]): Self = StObject.set(x, "elastictranscoder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElastictranscoderUndefined: Self = StObject.set(x, "elastictranscoder", js.undefined)
+    inline def setElastictranscoderUndefined: Self = StObject.set(x, "elastictranscoder", js.undefined)
     
-    @scala.inline
-    def setElb(value: Input[String]): Self = StObject.set(x, "elb", value.asInstanceOf[js.Any])
+    inline def setElb(value: Input[String]): Self = StObject.set(x, "elb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElbUndefined: Self = StObject.set(x, "elb", js.undefined)
+    inline def setElbUndefined: Self = StObject.set(x, "elb", js.undefined)
     
-    @scala.inline
-    def setEmr(value: Input[String]): Self = StObject.set(x, "emr", value.asInstanceOf[js.Any])
+    inline def setEmr(value: Input[String]): Self = StObject.set(x, "emr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmrUndefined: Self = StObject.set(x, "emr", js.undefined)
+    inline def setEmrUndefined: Self = StObject.set(x, "emr", js.undefined)
     
-    @scala.inline
-    def setEs(value: Input[String]): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
+    inline def setEs(value: Input[String]): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEsUndefined: Self = StObject.set(x, "es", js.undefined)
+    inline def setEsUndefined: Self = StObject.set(x, "es", js.undefined)
     
-    @scala.inline
-    def setFirehose(value: Input[String]): Self = StObject.set(x, "firehose", value.asInstanceOf[js.Any])
+    inline def setFirehose(value: Input[String]): Self = StObject.set(x, "firehose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirehoseUndefined: Self = StObject.set(x, "firehose", js.undefined)
+    inline def setFirehoseUndefined: Self = StObject.set(x, "firehose", js.undefined)
     
-    @scala.inline
-    def setFms(value: Input[String]): Self = StObject.set(x, "fms", value.asInstanceOf[js.Any])
+    inline def setFms(value: Input[String]): Self = StObject.set(x, "fms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFmsUndefined: Self = StObject.set(x, "fms", js.undefined)
+    inline def setFmsUndefined: Self = StObject.set(x, "fms", js.undefined)
     
-    @scala.inline
-    def setForecast(value: Input[String]): Self = StObject.set(x, "forecast", value.asInstanceOf[js.Any])
+    inline def setForecast(value: Input[String]): Self = StObject.set(x, "forecast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecastUndefined: Self = StObject.set(x, "forecast", js.undefined)
+    inline def setForecastUndefined: Self = StObject.set(x, "forecast", js.undefined)
     
-    @scala.inline
-    def setFsx(value: Input[String]): Self = StObject.set(x, "fsx", value.asInstanceOf[js.Any])
+    inline def setFsx(value: Input[String]): Self = StObject.set(x, "fsx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsxUndefined: Self = StObject.set(x, "fsx", js.undefined)
+    inline def setFsxUndefined: Self = StObject.set(x, "fsx", js.undefined)
     
-    @scala.inline
-    def setGamelift(value: Input[String]): Self = StObject.set(x, "gamelift", value.asInstanceOf[js.Any])
+    inline def setGamelift(value: Input[String]): Self = StObject.set(x, "gamelift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameliftUndefined: Self = StObject.set(x, "gamelift", js.undefined)
+    inline def setGameliftUndefined: Self = StObject.set(x, "gamelift", js.undefined)
     
-    @scala.inline
-    def setGlacier(value: Input[String]): Self = StObject.set(x, "glacier", value.asInstanceOf[js.Any])
+    inline def setGlacier(value: Input[String]): Self = StObject.set(x, "glacier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlacierUndefined: Self = StObject.set(x, "glacier", js.undefined)
+    inline def setGlacierUndefined: Self = StObject.set(x, "glacier", js.undefined)
     
-    @scala.inline
-    def setGlobalaccelerator(value: Input[String]): Self = StObject.set(x, "globalaccelerator", value.asInstanceOf[js.Any])
+    inline def setGlobalaccelerator(value: Input[String]): Self = StObject.set(x, "globalaccelerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalacceleratorUndefined: Self = StObject.set(x, "globalaccelerator", js.undefined)
+    inline def setGlobalacceleratorUndefined: Self = StObject.set(x, "globalaccelerator", js.undefined)
     
-    @scala.inline
-    def setGlue(value: Input[String]): Self = StObject.set(x, "glue", value.asInstanceOf[js.Any])
+    inline def setGlue(value: Input[String]): Self = StObject.set(x, "glue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlueUndefined: Self = StObject.set(x, "glue", js.undefined)
+    inline def setGlueUndefined: Self = StObject.set(x, "glue", js.undefined)
     
-    @scala.inline
-    def setGreengrass(value: Input[String]): Self = StObject.set(x, "greengrass", value.asInstanceOf[js.Any])
+    inline def setGreengrass(value: Input[String]): Self = StObject.set(x, "greengrass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreengrassUndefined: Self = StObject.set(x, "greengrass", js.undefined)
+    inline def setGreengrassUndefined: Self = StObject.set(x, "greengrass", js.undefined)
     
-    @scala.inline
-    def setGuardduty(value: Input[String]): Self = StObject.set(x, "guardduty", value.asInstanceOf[js.Any])
+    inline def setGuardduty(value: Input[String]): Self = StObject.set(x, "guardduty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuarddutyUndefined: Self = StObject.set(x, "guardduty", js.undefined)
+    inline def setGuarddutyUndefined: Self = StObject.set(x, "guardduty", js.undefined)
     
-    @scala.inline
-    def setIam(value: Input[String]): Self = StObject.set(x, "iam", value.asInstanceOf[js.Any])
+    inline def setIam(value: Input[String]): Self = StObject.set(x, "iam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamUndefined: Self = StObject.set(x, "iam", js.undefined)
+    inline def setIamUndefined: Self = StObject.set(x, "iam", js.undefined)
     
-    @scala.inline
-    def setIdentitystore(value: Input[String]): Self = StObject.set(x, "identitystore", value.asInstanceOf[js.Any])
+    inline def setIdentitystore(value: Input[String]): Self = StObject.set(x, "identitystore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentitystoreUndefined: Self = StObject.set(x, "identitystore", js.undefined)
+    inline def setIdentitystoreUndefined: Self = StObject.set(x, "identitystore", js.undefined)
     
-    @scala.inline
-    def setImagebuilder(value: Input[String]): Self = StObject.set(x, "imagebuilder", value.asInstanceOf[js.Any])
+    inline def setImagebuilder(value: Input[String]): Self = StObject.set(x, "imagebuilder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagebuilderUndefined: Self = StObject.set(x, "imagebuilder", js.undefined)
+    inline def setImagebuilderUndefined: Self = StObject.set(x, "imagebuilder", js.undefined)
     
-    @scala.inline
-    def setInspector(value: Input[String]): Self = StObject.set(x, "inspector", value.asInstanceOf[js.Any])
+    inline def setInspector(value: Input[String]): Self = StObject.set(x, "inspector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectorUndefined: Self = StObject.set(x, "inspector", js.undefined)
+    inline def setInspectorUndefined: Self = StObject.set(x, "inspector", js.undefined)
     
-    @scala.inline
-    def setIot(value: Input[String]): Self = StObject.set(x, "iot", value.asInstanceOf[js.Any])
+    inline def setIot(value: Input[String]): Self = StObject.set(x, "iot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIotUndefined: Self = StObject.set(x, "iot", js.undefined)
+    inline def setIotUndefined: Self = StObject.set(x, "iot", js.undefined)
     
-    @scala.inline
-    def setIotanalytics(value: Input[String]): Self = StObject.set(x, "iotanalytics", value.asInstanceOf[js.Any])
+    inline def setIotanalytics(value: Input[String]): Self = StObject.set(x, "iotanalytics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIotanalyticsUndefined: Self = StObject.set(x, "iotanalytics", js.undefined)
+    inline def setIotanalyticsUndefined: Self = StObject.set(x, "iotanalytics", js.undefined)
     
-    @scala.inline
-    def setIotevents(value: Input[String]): Self = StObject.set(x, "iotevents", value.asInstanceOf[js.Any])
+    inline def setIotevents(value: Input[String]): Self = StObject.set(x, "iotevents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIoteventsUndefined: Self = StObject.set(x, "iotevents", js.undefined)
+    inline def setIoteventsUndefined: Self = StObject.set(x, "iotevents", js.undefined)
     
-    @scala.inline
-    def setKafka(value: Input[String]): Self = StObject.set(x, "kafka", value.asInstanceOf[js.Any])
+    inline def setKafka(value: Input[String]): Self = StObject.set(x, "kafka", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKafkaUndefined: Self = StObject.set(x, "kafka", js.undefined)
+    inline def setKafkaUndefined: Self = StObject.set(x, "kafka", js.undefined)
     
-    @scala.inline
-    def setKinesis(value: Input[String]): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
+    inline def setKinesis(value: Input[String]): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisUndefined: Self = StObject.set(x, "kinesis", js.undefined)
+    inline def setKinesisUndefined: Self = StObject.set(x, "kinesis", js.undefined)
     
-    @scala.inline
-    def setKinesisanalytics(value: Input[String]): Self = StObject.set(x, "kinesisanalytics", value.asInstanceOf[js.Any])
+    inline def setKinesisanalytics(value: Input[String]): Self = StObject.set(x, "kinesisanalytics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisanalyticsUndefined: Self = StObject.set(x, "kinesisanalytics", js.undefined)
+    inline def setKinesisanalyticsUndefined: Self = StObject.set(x, "kinesisanalytics", js.undefined)
     
-    @scala.inline
-    def setKinesisanalyticsv2(value: Input[String]): Self = StObject.set(x, "kinesisanalyticsv2", value.asInstanceOf[js.Any])
+    inline def setKinesisanalyticsv2(value: Input[String]): Self = StObject.set(x, "kinesisanalyticsv2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisanalyticsv2Undefined: Self = StObject.set(x, "kinesisanalyticsv2", js.undefined)
+    inline def setKinesisanalyticsv2Undefined: Self = StObject.set(x, "kinesisanalyticsv2", js.undefined)
     
-    @scala.inline
-    def setKinesisvideo(value: Input[String]): Self = StObject.set(x, "kinesisvideo", value.asInstanceOf[js.Any])
+    inline def setKinesisvideo(value: Input[String]): Self = StObject.set(x, "kinesisvideo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisvideoUndefined: Self = StObject.set(x, "kinesisvideo", js.undefined)
+    inline def setKinesisvideoUndefined: Self = StObject.set(x, "kinesisvideo", js.undefined)
     
-    @scala.inline
-    def setKms(value: Input[String]): Self = StObject.set(x, "kms", value.asInstanceOf[js.Any])
+    inline def setKms(value: Input[String]): Self = StObject.set(x, "kms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsUndefined: Self = StObject.set(x, "kms", js.undefined)
+    inline def setKmsUndefined: Self = StObject.set(x, "kms", js.undefined)
     
-    @scala.inline
-    def setLakeformation(value: Input[String]): Self = StObject.set(x, "lakeformation", value.asInstanceOf[js.Any])
+    inline def setLakeformation(value: Input[String]): Self = StObject.set(x, "lakeformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLakeformationUndefined: Self = StObject.set(x, "lakeformation", js.undefined)
+    inline def setLakeformationUndefined: Self = StObject.set(x, "lakeformation", js.undefined)
     
-    @scala.inline
-    def setLambda(value: Input[String]): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
+    inline def setLambda(value: Input[String]): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
+    inline def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
     
-    @scala.inline
-    def setLexmodels(value: Input[String]): Self = StObject.set(x, "lexmodels", value.asInstanceOf[js.Any])
+    inline def setLexmodels(value: Input[String]): Self = StObject.set(x, "lexmodels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLexmodelsUndefined: Self = StObject.set(x, "lexmodels", js.undefined)
+    inline def setLexmodelsUndefined: Self = StObject.set(x, "lexmodels", js.undefined)
     
-    @scala.inline
-    def setLicensemanager(value: Input[String]): Self = StObject.set(x, "licensemanager", value.asInstanceOf[js.Any])
+    inline def setLicensemanager(value: Input[String]): Self = StObject.set(x, "licensemanager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicensemanagerUndefined: Self = StObject.set(x, "licensemanager", js.undefined)
+    inline def setLicensemanagerUndefined: Self = StObject.set(x, "licensemanager", js.undefined)
     
-    @scala.inline
-    def setLightsail(value: Input[String]): Self = StObject.set(x, "lightsail", value.asInstanceOf[js.Any])
+    inline def setLightsail(value: Input[String]): Self = StObject.set(x, "lightsail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightsailUndefined: Self = StObject.set(x, "lightsail", js.undefined)
+    inline def setLightsailUndefined: Self = StObject.set(x, "lightsail", js.undefined)
     
-    @scala.inline
-    def setMacie(value: Input[String]): Self = StObject.set(x, "macie", value.asInstanceOf[js.Any])
+    inline def setMacie(value: Input[String]): Self = StObject.set(x, "macie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacie2(value: Input[String]): Self = StObject.set(x, "macie2", value.asInstanceOf[js.Any])
+    inline def setMacie2(value: Input[String]): Self = StObject.set(x, "macie2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacie2Undefined: Self = StObject.set(x, "macie2", js.undefined)
+    inline def setMacie2Undefined: Self = StObject.set(x, "macie2", js.undefined)
     
-    @scala.inline
-    def setMacieUndefined: Self = StObject.set(x, "macie", js.undefined)
+    inline def setMacieUndefined: Self = StObject.set(x, "macie", js.undefined)
     
-    @scala.inline
-    def setManagedblockchain(value: Input[String]): Self = StObject.set(x, "managedblockchain", value.asInstanceOf[js.Any])
+    inline def setManagedblockchain(value: Input[String]): Self = StObject.set(x, "managedblockchain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedblockchainUndefined: Self = StObject.set(x, "managedblockchain", js.undefined)
+    inline def setManagedblockchainUndefined: Self = StObject.set(x, "managedblockchain", js.undefined)
     
-    @scala.inline
-    def setMarketplacecatalog(value: Input[String]): Self = StObject.set(x, "marketplacecatalog", value.asInstanceOf[js.Any])
+    inline def setMarketplacecatalog(value: Input[String]): Self = StObject.set(x, "marketplacecatalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarketplacecatalogUndefined: Self = StObject.set(x, "marketplacecatalog", js.undefined)
+    inline def setMarketplacecatalogUndefined: Self = StObject.set(x, "marketplacecatalog", js.undefined)
     
-    @scala.inline
-    def setMediaconnect(value: Input[String]): Self = StObject.set(x, "mediaconnect", value.asInstanceOf[js.Any])
+    inline def setMediaconnect(value: Input[String]): Self = StObject.set(x, "mediaconnect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaconnectUndefined: Self = StObject.set(x, "mediaconnect", js.undefined)
+    inline def setMediaconnectUndefined: Self = StObject.set(x, "mediaconnect", js.undefined)
     
-    @scala.inline
-    def setMediaconvert(value: Input[String]): Self = StObject.set(x, "mediaconvert", value.asInstanceOf[js.Any])
+    inline def setMediaconvert(value: Input[String]): Self = StObject.set(x, "mediaconvert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaconvertUndefined: Self = StObject.set(x, "mediaconvert", js.undefined)
+    inline def setMediaconvertUndefined: Self = StObject.set(x, "mediaconvert", js.undefined)
     
-    @scala.inline
-    def setMedialive(value: Input[String]): Self = StObject.set(x, "medialive", value.asInstanceOf[js.Any])
+    inline def setMedialive(value: Input[String]): Self = StObject.set(x, "medialive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedialiveUndefined: Self = StObject.set(x, "medialive", js.undefined)
+    inline def setMedialiveUndefined: Self = StObject.set(x, "medialive", js.undefined)
     
-    @scala.inline
-    def setMediapackage(value: Input[String]): Self = StObject.set(x, "mediapackage", value.asInstanceOf[js.Any])
+    inline def setMediapackage(value: Input[String]): Self = StObject.set(x, "mediapackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediapackageUndefined: Self = StObject.set(x, "mediapackage", js.undefined)
+    inline def setMediapackageUndefined: Self = StObject.set(x, "mediapackage", js.undefined)
     
-    @scala.inline
-    def setMediastore(value: Input[String]): Self = StObject.set(x, "mediastore", value.asInstanceOf[js.Any])
+    inline def setMediastore(value: Input[String]): Self = StObject.set(x, "mediastore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediastoreUndefined: Self = StObject.set(x, "mediastore", js.undefined)
+    inline def setMediastoreUndefined: Self = StObject.set(x, "mediastore", js.undefined)
     
-    @scala.inline
-    def setMediastoredata(value: Input[String]): Self = StObject.set(x, "mediastoredata", value.asInstanceOf[js.Any])
+    inline def setMediastoredata(value: Input[String]): Self = StObject.set(x, "mediastoredata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediastoredataUndefined: Self = StObject.set(x, "mediastoredata", js.undefined)
+    inline def setMediastoredataUndefined: Self = StObject.set(x, "mediastoredata", js.undefined)
     
-    @scala.inline
-    def setMq(value: Input[String]): Self = StObject.set(x, "mq", value.asInstanceOf[js.Any])
+    inline def setMq(value: Input[String]): Self = StObject.set(x, "mq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMqUndefined: Self = StObject.set(x, "mq", js.undefined)
+    inline def setMqUndefined: Self = StObject.set(x, "mq", js.undefined)
     
-    @scala.inline
-    def setNeptune(value: Input[String]): Self = StObject.set(x, "neptune", value.asInstanceOf[js.Any])
+    inline def setNeptune(value: Input[String]): Self = StObject.set(x, "neptune", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeptuneUndefined: Self = StObject.set(x, "neptune", js.undefined)
+    inline def setNeptuneUndefined: Self = StObject.set(x, "neptune", js.undefined)
     
-    @scala.inline
-    def setNetworkfirewall(value: Input[String]): Self = StObject.set(x, "networkfirewall", value.asInstanceOf[js.Any])
+    inline def setNetworkfirewall(value: Input[String]): Self = StObject.set(x, "networkfirewall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkfirewallUndefined: Self = StObject.set(x, "networkfirewall", js.undefined)
+    inline def setNetworkfirewallUndefined: Self = StObject.set(x, "networkfirewall", js.undefined)
     
-    @scala.inline
-    def setNetworkmanager(value: Input[String]): Self = StObject.set(x, "networkmanager", value.asInstanceOf[js.Any])
+    inline def setNetworkmanager(value: Input[String]): Self = StObject.set(x, "networkmanager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkmanagerUndefined: Self = StObject.set(x, "networkmanager", js.undefined)
+    inline def setNetworkmanagerUndefined: Self = StObject.set(x, "networkmanager", js.undefined)
     
-    @scala.inline
-    def setOpsworks(value: Input[String]): Self = StObject.set(x, "opsworks", value.asInstanceOf[js.Any])
+    inline def setOpsworks(value: Input[String]): Self = StObject.set(x, "opsworks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpsworksUndefined: Self = StObject.set(x, "opsworks", js.undefined)
+    inline def setOpsworksUndefined: Self = StObject.set(x, "opsworks", js.undefined)
     
-    @scala.inline
-    def setOrganizations(value: Input[String]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
+    inline def setOrganizations(value: Input[String]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationsUndefined: Self = StObject.set(x, "organizations", js.undefined)
+    inline def setOrganizationsUndefined: Self = StObject.set(x, "organizations", js.undefined)
     
-    @scala.inline
-    def setOutposts(value: Input[String]): Self = StObject.set(x, "outposts", value.asInstanceOf[js.Any])
+    inline def setOutposts(value: Input[String]): Self = StObject.set(x, "outposts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutpostsUndefined: Self = StObject.set(x, "outposts", js.undefined)
+    inline def setOutpostsUndefined: Self = StObject.set(x, "outposts", js.undefined)
     
-    @scala.inline
-    def setPersonalize(value: Input[String]): Self = StObject.set(x, "personalize", value.asInstanceOf[js.Any])
+    inline def setPersonalize(value: Input[String]): Self = StObject.set(x, "personalize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonalizeUndefined: Self = StObject.set(x, "personalize", js.undefined)
+    inline def setPersonalizeUndefined: Self = StObject.set(x, "personalize", js.undefined)
     
-    @scala.inline
-    def setPinpoint(value: Input[String]): Self = StObject.set(x, "pinpoint", value.asInstanceOf[js.Any])
+    inline def setPinpoint(value: Input[String]): Self = StObject.set(x, "pinpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinpointUndefined: Self = StObject.set(x, "pinpoint", js.undefined)
+    inline def setPinpointUndefined: Self = StObject.set(x, "pinpoint", js.undefined)
     
-    @scala.inline
-    def setPricing(value: Input[String]): Self = StObject.set(x, "pricing", value.asInstanceOf[js.Any])
+    inline def setPricing(value: Input[String]): Self = StObject.set(x, "pricing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricingUndefined: Self = StObject.set(x, "pricing", js.undefined)
+    inline def setPricingUndefined: Self = StObject.set(x, "pricing", js.undefined)
     
-    @scala.inline
-    def setQldb(value: Input[String]): Self = StObject.set(x, "qldb", value.asInstanceOf[js.Any])
+    inline def setQldb(value: Input[String]): Self = StObject.set(x, "qldb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQldbUndefined: Self = StObject.set(x, "qldb", js.undefined)
+    inline def setQldbUndefined: Self = StObject.set(x, "qldb", js.undefined)
     
-    @scala.inline
-    def setQuicksight(value: Input[String]): Self = StObject.set(x, "quicksight", value.asInstanceOf[js.Any])
+    inline def setQuicksight(value: Input[String]): Self = StObject.set(x, "quicksight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuicksightUndefined: Self = StObject.set(x, "quicksight", js.undefined)
+    inline def setQuicksightUndefined: Self = StObject.set(x, "quicksight", js.undefined)
     
-    @scala.inline
-    def setRam(value: Input[String]): Self = StObject.set(x, "ram", value.asInstanceOf[js.Any])
+    inline def setRam(value: Input[String]): Self = StObject.set(x, "ram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRamUndefined: Self = StObject.set(x, "ram", js.undefined)
+    inline def setRamUndefined: Self = StObject.set(x, "ram", js.undefined)
     
-    @scala.inline
-    def setRds(value: Input[String]): Self = StObject.set(x, "rds", value.asInstanceOf[js.Any])
+    inline def setRds(value: Input[String]): Self = StObject.set(x, "rds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdsUndefined: Self = StObject.set(x, "rds", js.undefined)
+    inline def setRdsUndefined: Self = StObject.set(x, "rds", js.undefined)
     
-    @scala.inline
-    def setRedshift(value: Input[String]): Self = StObject.set(x, "redshift", value.asInstanceOf[js.Any])
+    inline def setRedshift(value: Input[String]): Self = StObject.set(x, "redshift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedshiftUndefined: Self = StObject.set(x, "redshift", js.undefined)
+    inline def setRedshiftUndefined: Self = StObject.set(x, "redshift", js.undefined)
     
-    @scala.inline
-    def setResourcegroups(value: Input[String]): Self = StObject.set(x, "resourcegroups", value.asInstanceOf[js.Any])
+    inline def setResourcegroups(value: Input[String]): Self = StObject.set(x, "resourcegroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcegroupsUndefined: Self = StObject.set(x, "resourcegroups", js.undefined)
+    inline def setResourcegroupsUndefined: Self = StObject.set(x, "resourcegroups", js.undefined)
     
-    @scala.inline
-    def setResourcegroupstaggingapi(value: Input[String]): Self = StObject.set(x, "resourcegroupstaggingapi", value.asInstanceOf[js.Any])
+    inline def setResourcegroupstaggingapi(value: Input[String]): Self = StObject.set(x, "resourcegroupstaggingapi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcegroupstaggingapiUndefined: Self = StObject.set(x, "resourcegroupstaggingapi", js.undefined)
+    inline def setResourcegroupstaggingapiUndefined: Self = StObject.set(x, "resourcegroupstaggingapi", js.undefined)
     
-    @scala.inline
-    def setRoute53(value: Input[String]): Self = StObject.set(x, "route53", value.asInstanceOf[js.Any])
+    inline def setRoute53(value: Input[String]): Self = StObject.set(x, "route53", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoute53Undefined: Self = StObject.set(x, "route53", js.undefined)
+    inline def setRoute53Undefined: Self = StObject.set(x, "route53", js.undefined)
     
-    @scala.inline
-    def setRoute53domains(value: Input[String]): Self = StObject.set(x, "route53domains", value.asInstanceOf[js.Any])
+    inline def setRoute53domains(value: Input[String]): Self = StObject.set(x, "route53domains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoute53domainsUndefined: Self = StObject.set(x, "route53domains", js.undefined)
+    inline def setRoute53domainsUndefined: Self = StObject.set(x, "route53domains", js.undefined)
     
-    @scala.inline
-    def setRoute53resolver(value: Input[String]): Self = StObject.set(x, "route53resolver", value.asInstanceOf[js.Any])
+    inline def setRoute53resolver(value: Input[String]): Self = StObject.set(x, "route53resolver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoute53resolverUndefined: Self = StObject.set(x, "route53resolver", js.undefined)
+    inline def setRoute53resolverUndefined: Self = StObject.set(x, "route53resolver", js.undefined)
     
-    @scala.inline
-    def setS3(value: Input[String]): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+    inline def setS3(value: Input[String]): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
+    inline def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
     
-    @scala.inline
-    def setS3control(value: Input[String]): Self = StObject.set(x, "s3control", value.asInstanceOf[js.Any])
+    inline def setS3control(value: Input[String]): Self = StObject.set(x, "s3control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3controlUndefined: Self = StObject.set(x, "s3control", js.undefined)
+    inline def setS3controlUndefined: Self = StObject.set(x, "s3control", js.undefined)
     
-    @scala.inline
-    def setS3outposts(value: Input[String]): Self = StObject.set(x, "s3outposts", value.asInstanceOf[js.Any])
+    inline def setS3outposts(value: Input[String]): Self = StObject.set(x, "s3outposts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3outpostsUndefined: Self = StObject.set(x, "s3outposts", js.undefined)
+    inline def setS3outpostsUndefined: Self = StObject.set(x, "s3outposts", js.undefined)
     
-    @scala.inline
-    def setSagemaker(value: Input[String]): Self = StObject.set(x, "sagemaker", value.asInstanceOf[js.Any])
+    inline def setSagemaker(value: Input[String]): Self = StObject.set(x, "sagemaker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSagemakerUndefined: Self = StObject.set(x, "sagemaker", js.undefined)
+    inline def setSagemakerUndefined: Self = StObject.set(x, "sagemaker", js.undefined)
     
-    @scala.inline
-    def setSdb(value: Input[String]): Self = StObject.set(x, "sdb", value.asInstanceOf[js.Any])
+    inline def setSdb(value: Input[String]): Self = StObject.set(x, "sdb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdbUndefined: Self = StObject.set(x, "sdb", js.undefined)
+    inline def setSdbUndefined: Self = StObject.set(x, "sdb", js.undefined)
     
-    @scala.inline
-    def setSecretsmanager(value: Input[String]): Self = StObject.set(x, "secretsmanager", value.asInstanceOf[js.Any])
+    inline def setSecretsmanager(value: Input[String]): Self = StObject.set(x, "secretsmanager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretsmanagerUndefined: Self = StObject.set(x, "secretsmanager", js.undefined)
+    inline def setSecretsmanagerUndefined: Self = StObject.set(x, "secretsmanager", js.undefined)
     
-    @scala.inline
-    def setSecurityhub(value: Input[String]): Self = StObject.set(x, "securityhub", value.asInstanceOf[js.Any])
+    inline def setSecurityhub(value: Input[String]): Self = StObject.set(x, "securityhub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityhubUndefined: Self = StObject.set(x, "securityhub", js.undefined)
+    inline def setSecurityhubUndefined: Self = StObject.set(x, "securityhub", js.undefined)
     
-    @scala.inline
-    def setServerlessrepo(value: Input[String]): Self = StObject.set(x, "serverlessrepo", value.asInstanceOf[js.Any])
+    inline def setServerlessrepo(value: Input[String]): Self = StObject.set(x, "serverlessrepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerlessrepoUndefined: Self = StObject.set(x, "serverlessrepo", js.undefined)
+    inline def setServerlessrepoUndefined: Self = StObject.set(x, "serverlessrepo", js.undefined)
     
-    @scala.inline
-    def setServicecatalog(value: Input[String]): Self = StObject.set(x, "servicecatalog", value.asInstanceOf[js.Any])
+    inline def setServicecatalog(value: Input[String]): Self = StObject.set(x, "servicecatalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicecatalogUndefined: Self = StObject.set(x, "servicecatalog", js.undefined)
+    inline def setServicecatalogUndefined: Self = StObject.set(x, "servicecatalog", js.undefined)
     
-    @scala.inline
-    def setServicediscovery(value: Input[String]): Self = StObject.set(x, "servicediscovery", value.asInstanceOf[js.Any])
+    inline def setServicediscovery(value: Input[String]): Self = StObject.set(x, "servicediscovery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicediscoveryUndefined: Self = StObject.set(x, "servicediscovery", js.undefined)
+    inline def setServicediscoveryUndefined: Self = StObject.set(x, "servicediscovery", js.undefined)
     
-    @scala.inline
-    def setServicequotas(value: Input[String]): Self = StObject.set(x, "servicequotas", value.asInstanceOf[js.Any])
+    inline def setServicequotas(value: Input[String]): Self = StObject.set(x, "servicequotas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicequotasUndefined: Self = StObject.set(x, "servicequotas", js.undefined)
+    inline def setServicequotasUndefined: Self = StObject.set(x, "servicequotas", js.undefined)
     
-    @scala.inline
-    def setSes(value: Input[String]): Self = StObject.set(x, "ses", value.asInstanceOf[js.Any])
+    inline def setSes(value: Input[String]): Self = StObject.set(x, "ses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSesUndefined: Self = StObject.set(x, "ses", js.undefined)
+    inline def setSesUndefined: Self = StObject.set(x, "ses", js.undefined)
     
-    @scala.inline
-    def setShield(value: Input[String]): Self = StObject.set(x, "shield", value.asInstanceOf[js.Any])
+    inline def setShield(value: Input[String]): Self = StObject.set(x, "shield", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShieldUndefined: Self = StObject.set(x, "shield", js.undefined)
+    inline def setShieldUndefined: Self = StObject.set(x, "shield", js.undefined)
     
-    @scala.inline
-    def setSns(value: Input[String]): Self = StObject.set(x, "sns", value.asInstanceOf[js.Any])
+    inline def setSns(value: Input[String]): Self = StObject.set(x, "sns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsUndefined: Self = StObject.set(x, "sns", js.undefined)
+    inline def setSnsUndefined: Self = StObject.set(x, "sns", js.undefined)
     
-    @scala.inline
-    def setSqs(value: Input[String]): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
+    inline def setSqs(value: Input[String]): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
+    inline def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
     
-    @scala.inline
-    def setSsm(value: Input[String]): Self = StObject.set(x, "ssm", value.asInstanceOf[js.Any])
+    inline def setSsm(value: Input[String]): Self = StObject.set(x, "ssm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsmUndefined: Self = StObject.set(x, "ssm", js.undefined)
+    inline def setSsmUndefined: Self = StObject.set(x, "ssm", js.undefined)
     
-    @scala.inline
-    def setSsoadmin(value: Input[String]): Self = StObject.set(x, "ssoadmin", value.asInstanceOf[js.Any])
+    inline def setSsoadmin(value: Input[String]): Self = StObject.set(x, "ssoadmin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsoadminUndefined: Self = StObject.set(x, "ssoadmin", js.undefined)
+    inline def setSsoadminUndefined: Self = StObject.set(x, "ssoadmin", js.undefined)
     
-    @scala.inline
-    def setStepfunctions(value: Input[String]): Self = StObject.set(x, "stepfunctions", value.asInstanceOf[js.Any])
+    inline def setStepfunctions(value: Input[String]): Self = StObject.set(x, "stepfunctions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepfunctionsUndefined: Self = StObject.set(x, "stepfunctions", js.undefined)
+    inline def setStepfunctionsUndefined: Self = StObject.set(x, "stepfunctions", js.undefined)
     
-    @scala.inline
-    def setStoragegateway(value: Input[String]): Self = StObject.set(x, "storagegateway", value.asInstanceOf[js.Any])
+    inline def setStoragegateway(value: Input[String]): Self = StObject.set(x, "storagegateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoragegatewayUndefined: Self = StObject.set(x, "storagegateway", js.undefined)
+    inline def setStoragegatewayUndefined: Self = StObject.set(x, "storagegateway", js.undefined)
     
-    @scala.inline
-    def setSts(value: Input[String]): Self = StObject.set(x, "sts", value.asInstanceOf[js.Any])
+    inline def setSts(value: Input[String]): Self = StObject.set(x, "sts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStsUndefined: Self = StObject.set(x, "sts", js.undefined)
+    inline def setStsUndefined: Self = StObject.set(x, "sts", js.undefined)
     
-    @scala.inline
-    def setSwf(value: Input[String]): Self = StObject.set(x, "swf", value.asInstanceOf[js.Any])
+    inline def setSwf(value: Input[String]): Self = StObject.set(x, "swf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwfUndefined: Self = StObject.set(x, "swf", js.undefined)
+    inline def setSwfUndefined: Self = StObject.set(x, "swf", js.undefined)
     
-    @scala.inline
-    def setSynthetics(value: Input[String]): Self = StObject.set(x, "synthetics", value.asInstanceOf[js.Any])
+    inline def setSynthetics(value: Input[String]): Self = StObject.set(x, "synthetics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyntheticsUndefined: Self = StObject.set(x, "synthetics", js.undefined)
+    inline def setSyntheticsUndefined: Self = StObject.set(x, "synthetics", js.undefined)
     
-    @scala.inline
-    def setTimestreamwrite(value: Input[String]): Self = StObject.set(x, "timestreamwrite", value.asInstanceOf[js.Any])
+    inline def setTimestreamwrite(value: Input[String]): Self = StObject.set(x, "timestreamwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestreamwriteUndefined: Self = StObject.set(x, "timestreamwrite", js.undefined)
+    inline def setTimestreamwriteUndefined: Self = StObject.set(x, "timestreamwrite", js.undefined)
     
-    @scala.inline
-    def setTransfer(value: Input[String]): Self = StObject.set(x, "transfer", value.asInstanceOf[js.Any])
+    inline def setTransfer(value: Input[String]): Self = StObject.set(x, "transfer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferUndefined: Self = StObject.set(x, "transfer", js.undefined)
+    inline def setTransferUndefined: Self = StObject.set(x, "transfer", js.undefined)
     
-    @scala.inline
-    def setWaf(value: Input[String]): Self = StObject.set(x, "waf", value.asInstanceOf[js.Any])
+    inline def setWaf(value: Input[String]): Self = StObject.set(x, "waf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWafUndefined: Self = StObject.set(x, "waf", js.undefined)
+    inline def setWafUndefined: Self = StObject.set(x, "waf", js.undefined)
     
-    @scala.inline
-    def setWafregional(value: Input[String]): Self = StObject.set(x, "wafregional", value.asInstanceOf[js.Any])
+    inline def setWafregional(value: Input[String]): Self = StObject.set(x, "wafregional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWafregionalUndefined: Self = StObject.set(x, "wafregional", js.undefined)
+    inline def setWafregionalUndefined: Self = StObject.set(x, "wafregional", js.undefined)
     
-    @scala.inline
-    def setWafv2(value: Input[String]): Self = StObject.set(x, "wafv2", value.asInstanceOf[js.Any])
+    inline def setWafv2(value: Input[String]): Self = StObject.set(x, "wafv2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWafv2Undefined: Self = StObject.set(x, "wafv2", js.undefined)
+    inline def setWafv2Undefined: Self = StObject.set(x, "wafv2", js.undefined)
     
-    @scala.inline
-    def setWorklink(value: Input[String]): Self = StObject.set(x, "worklink", value.asInstanceOf[js.Any])
+    inline def setWorklink(value: Input[String]): Self = StObject.set(x, "worklink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorklinkUndefined: Self = StObject.set(x, "worklink", js.undefined)
+    inline def setWorklinkUndefined: Self = StObject.set(x, "worklink", js.undefined)
     
-    @scala.inline
-    def setWorkmail(value: Input[String]): Self = StObject.set(x, "workmail", value.asInstanceOf[js.Any])
+    inline def setWorkmail(value: Input[String]): Self = StObject.set(x, "workmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkmailUndefined: Self = StObject.set(x, "workmail", js.undefined)
+    inline def setWorkmailUndefined: Self = StObject.set(x, "workmail", js.undefined)
     
-    @scala.inline
-    def setWorkspaces(value: Input[String]): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
+    inline def setWorkspaces(value: Input[String]): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspacesUndefined: Self = StObject.set(x, "workspaces", js.undefined)
+    inline def setWorkspacesUndefined: Self = StObject.set(x, "workspaces", js.undefined)
     
-    @scala.inline
-    def setXray(value: Input[String]): Self = StObject.set(x, "xray", value.asInstanceOf[js.Any])
+    inline def setXray(value: Input[String]): Self = StObject.set(x, "xray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXrayUndefined: Self = StObject.set(x, "xray", js.undefined)
+    inline def setXrayUndefined: Self = StObject.set(x, "xray", js.undefined)
   }
 }

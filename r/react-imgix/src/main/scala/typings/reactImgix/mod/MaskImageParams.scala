@@ -12,25 +12,19 @@ trait MaskImageParams extends StObject {
 }
 object MaskImageParams {
   
-  @scala.inline
-  def apply(): MaskImageParams = {
+  inline def apply(): MaskImageParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaskImageParams]
   }
   
-  @scala.inline
-  implicit class MaskImageParamsMutableBuilder[Self <: MaskImageParams] (val x: Self) extends AnyVal {
+  extension [Self <: MaskImageParams](x: Self) {
     
-    @scala.inline
-    def `setCorner-radius`(value: ImgixParamType): Self = StObject.set(x, "corner-radius", value.asInstanceOf[js.Any])
+    inline def `setCorner-radius`(value: ImgixParamType): Self = StObject.set(x, "corner-radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCorner-radiusUndefined`: Self = StObject.set(x, "corner-radius", js.undefined)
+    inline def `setCorner-radiusUndefined`: Self = StObject.set(x, "corner-radius", js.undefined)
     
-    @scala.inline
-    def setMask(value: ImgixParamType): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: ImgixParamType): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
   }
 }

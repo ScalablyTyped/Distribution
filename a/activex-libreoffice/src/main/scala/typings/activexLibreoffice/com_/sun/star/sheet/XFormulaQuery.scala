@@ -37,8 +37,7 @@ trait XFormulaQuery
 }
 object XFormulaQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryDependents: Boolean => XSheetCellRanges,
     queryInterface: `type` => js.Any,
@@ -49,13 +48,10 @@ object XFormulaQuery {
     __obj.asInstanceOf[XFormulaQuery]
   }
   
-  @scala.inline
-  implicit class XFormulaQueryMutableBuilder[Self <: XFormulaQuery] (val x: Self) extends AnyVal {
+  extension [Self <: XFormulaQuery](x: Self) {
     
-    @scala.inline
-    def setQueryDependents(value: Boolean => XSheetCellRanges): Self = StObject.set(x, "queryDependents", js.Any.fromFunction1(value))
+    inline def setQueryDependents(value: Boolean => XSheetCellRanges): Self = StObject.set(x, "queryDependents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryPrecedents(value: Boolean => XSheetCellRanges): Self = StObject.set(x, "queryPrecedents", js.Any.fromFunction1(value))
+    inline def setQueryPrecedents(value: Boolean => XSheetCellRanges): Self = StObject.set(x, "queryPrecedents", js.Any.fromFunction1(value))
   }
 }

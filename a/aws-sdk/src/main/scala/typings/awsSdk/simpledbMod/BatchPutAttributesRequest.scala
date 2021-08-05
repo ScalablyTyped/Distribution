@@ -18,22 +18,17 @@ trait BatchPutAttributesRequest extends StObject {
 }
 object BatchPutAttributesRequest {
   
-  @scala.inline
-  def apply(DomainName: String, Items: ReplaceableItemList): BatchPutAttributesRequest = {
+  inline def apply(DomainName: String, Items: ReplaceableItemList): BatchPutAttributesRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], Items = Items.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchPutAttributesRequest]
   }
   
-  @scala.inline
-  implicit class BatchPutAttributesRequestMutableBuilder[Self <: BatchPutAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchPutAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: ReplaceableItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: ReplaceableItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ReplaceableItem*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ReplaceableItem*): Self = StObject.set(x, "Items", js.Array(value :_*))
   }
 }

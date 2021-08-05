@@ -13,25 +13,19 @@ trait ConfirmPool extends StObject {
 }
 object ConfirmPool {
   
-  @scala.inline
-  def apply(): ConfirmPool = {
+  inline def apply(): ConfirmPool = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfirmPool]
   }
   
-  @scala.inline
-  implicit class ConfirmPoolMutableBuilder[Self <: ConfirmPool] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmPool](x: Self) {
     
-    @scala.inline
-    def setConfirmPool(value: ChannelPoolConfig): Self = StObject.set(x, "confirmPool", value.asInstanceOf[js.Any])
+    inline def setConfirmPool(value: ChannelPoolConfig): Self = StObject.set(x, "confirmPool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmPoolUndefined: Self = StObject.set(x, "confirmPool", js.undefined)
+    inline def setConfirmPoolUndefined: Self = StObject.set(x, "confirmPool", js.undefined)
     
-    @scala.inline
-    def setRegularPool(value: ChannelPoolConfig): Self = StObject.set(x, "regularPool", value.asInstanceOf[js.Any])
+    inline def setRegularPool(value: ChannelPoolConfig): Self = StObject.set(x, "regularPool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegularPoolUndefined: Self = StObject.set(x, "regularPool", js.undefined)
+    inline def setRegularPoolUndefined: Self = StObject.set(x, "regularPool", js.undefined)
   }
 }

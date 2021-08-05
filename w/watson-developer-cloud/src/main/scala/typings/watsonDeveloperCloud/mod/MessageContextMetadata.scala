@@ -15,25 +15,19 @@ trait MessageContextMetadata extends StObject {
 }
 object MessageContextMetadata {
   
-  @scala.inline
-  def apply(): MessageContextMetadata = {
+  inline def apply(): MessageContextMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageContextMetadata]
   }
   
-  @scala.inline
-  implicit class MessageContextMetadataMutableBuilder[Self <: MessageContextMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: MessageContextMetadata](x: Self) {
     
-    @scala.inline
-    def setDeployment(value: String): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
+    inline def setDeployment(value: String): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
+    inline def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
     
-    @scala.inline
-    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
+    inline def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
   }
 }

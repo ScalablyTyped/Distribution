@@ -9,11 +9,11 @@ trait PullContainerSymbol
   extends StObject
      with PullTypeSymbol {
   
-  var assignedContainer: js.Any = js.native
+  /* private */ var assignedContainer: js.Any = js.native
   
-  var assignedType: js.Any = js.native
+  /* private */ var assignedType: js.Any = js.native
   
-  var assignedValue: js.Any = js.native
+  /* private */ var assignedValue: js.Any = js.native
   
   def getExportAssignedContainerSymbol(): PullContainerSymbol = js.native
   

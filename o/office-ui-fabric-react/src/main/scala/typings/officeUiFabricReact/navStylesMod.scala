@@ -17,6 +17,5 @@ object navStylesMod {
   @js.native
   val buttonStyles: IButtonStyles = js.native
   
-  @scala.inline
-  def getStyles(props: INavStyleProps): INavStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[INavStyles]
+  inline def getStyles(props: INavStyleProps): INavStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[INavStyles]
 }

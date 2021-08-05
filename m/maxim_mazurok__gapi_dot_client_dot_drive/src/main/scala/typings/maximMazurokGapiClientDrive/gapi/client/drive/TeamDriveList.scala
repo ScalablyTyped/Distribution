@@ -20,34 +20,25 @@ trait TeamDriveList extends StObject {
 }
 object TeamDriveList {
   
-  @scala.inline
-  def apply(): TeamDriveList = {
+  inline def apply(): TeamDriveList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TeamDriveList]
   }
   
-  @scala.inline
-  implicit class TeamDriveListMutableBuilder[Self <: TeamDriveList] (val x: Self) extends AnyVal {
+  extension [Self <: TeamDriveList](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTeamDrives(value: js.Array[TeamDrive]): Self = StObject.set(x, "teamDrives", value.asInstanceOf[js.Any])
+    inline def setTeamDrives(value: js.Array[TeamDrive]): Self = StObject.set(x, "teamDrives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamDrivesUndefined: Self = StObject.set(x, "teamDrives", js.undefined)
+    inline def setTeamDrivesUndefined: Self = StObject.set(x, "teamDrives", js.undefined)
     
-    @scala.inline
-    def setTeamDrivesVarargs(value: TeamDrive*): Self = StObject.set(x, "teamDrives", js.Array(value :_*))
+    inline def setTeamDrivesVarargs(value: TeamDrive*): Self = StObject.set(x, "teamDrives", js.Array(value :_*))
   }
 }

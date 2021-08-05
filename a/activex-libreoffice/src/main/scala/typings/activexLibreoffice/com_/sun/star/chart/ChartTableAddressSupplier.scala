@@ -33,8 +33,7 @@ trait ChartTableAddressSupplier extends StObject {
 }
 object ChartTableAddressSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CategoriesRangeAddress: String,
     MainTitleAddress: String,
     SeriesAddresses: SafeArray[ChartSeriesAddress],
@@ -44,19 +43,14 @@ object ChartTableAddressSupplier {
     __obj.asInstanceOf[ChartTableAddressSupplier]
   }
   
-  @scala.inline
-  implicit class ChartTableAddressSupplierMutableBuilder[Self <: ChartTableAddressSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: ChartTableAddressSupplier](x: Self) {
     
-    @scala.inline
-    def setCategoriesRangeAddress(value: String): Self = StObject.set(x, "CategoriesRangeAddress", value.asInstanceOf[js.Any])
+    inline def setCategoriesRangeAddress(value: String): Self = StObject.set(x, "CategoriesRangeAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainTitleAddress(value: String): Self = StObject.set(x, "MainTitleAddress", value.asInstanceOf[js.Any])
+    inline def setMainTitleAddress(value: String): Self = StObject.set(x, "MainTitleAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesAddresses(value: SafeArray[ChartSeriesAddress]): Self = StObject.set(x, "SeriesAddresses", value.asInstanceOf[js.Any])
+    inline def setSeriesAddresses(value: SafeArray[ChartSeriesAddress]): Self = StObject.set(x, "SeriesAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTitleAddress(value: String): Self = StObject.set(x, "SubTitleAddress", value.asInstanceOf[js.Any])
+    inline def setSubTitleAddress(value: String): Self = StObject.set(x, "SubTitleAddress", value.asInstanceOf[js.Any])
   }
 }

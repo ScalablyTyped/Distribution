@@ -11,45 +11,37 @@ object angularCompilerStrings {
   sealed trait desc
     extends StObject
        with JSDocTagName
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
   sealed trait directiveInject extends StObject
-  @scala.inline
-  def directiveInject: directiveInject = "directiveInject".asInstanceOf[directiveInject]
+  inline def directiveInject: directiveInject = "directiveInject".asInstanceOf[directiveInject]
   
   @js.native
   sealed trait id
     extends StObject
        with JSDocTagName
-  @scala.inline
-  def id: id = "id".asInstanceOf[id]
+  inline def id: id = "id".asInstanceOf[id]
   
   @js.native
   sealed trait inject extends StObject
-  @scala.inline
-  def inject: inject = "inject".asInstanceOf[inject]
+  inline def inject: inject = "inject".asInstanceOf[inject]
   
   @js.native
   sealed trait invalid extends StObject
-  @scala.inline
-  def invalid: invalid = "invalid".asInstanceOf[invalid]
+  inline def invalid: invalid = "invalid".asInstanceOf[invalid]
   
   @js.native
   sealed trait meaning
     extends StObject
        with JSDocTagName
-  @scala.inline
-  def meaning: meaning = "meaning".asInstanceOf[meaning]
+  inline def meaning: meaning = "meaning".asInstanceOf[meaning]
   
   @js.native
   sealed trait ngtsc extends StObject
-  @scala.inline
-  def ngtsc: ngtsc = "ngtsc".asInstanceOf[ngtsc]
+  inline def ngtsc: ngtsc = "ngtsc".asInstanceOf[ngtsc]
   
   @js.native
   sealed trait root extends StObject
-  @scala.inline
-  def root: root = "root".asInstanceOf[root]
+  inline def root: root = "root".asInstanceOf[root]
 }

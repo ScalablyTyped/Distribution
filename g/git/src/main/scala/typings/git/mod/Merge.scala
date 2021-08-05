@@ -25,18 +25,15 @@ object Merge {
   @JSImport("git", "Merge.STATUS_BOTH")
   @js.native
   def STATUS_BOTH: String = js.native
-  @scala.inline
-  def STATUS_BOTH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATUS_BOTH")(x.asInstanceOf[js.Any])
+  inline def STATUS_BOTH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATUS_BOTH")(x.asInstanceOf[js.Any])
   
   @JSImport("git", "Merge.STATUS_OURS")
   @js.native
   def STATUS_OURS: String = js.native
-  @scala.inline
-  def STATUS_OURS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATUS_OURS")(x.asInstanceOf[js.Any])
+  inline def STATUS_OURS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATUS_OURS")(x.asInstanceOf[js.Any])
   
   @JSImport("git", "Merge.STATUS_THEIRS")
   @js.native
   def STATUS_THEIRS: String = js.native
-  @scala.inline
-  def STATUS_THEIRS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATUS_THEIRS")(x.asInstanceOf[js.Any])
+  inline def STATUS_THEIRS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATUS_THEIRS")(x.asInstanceOf[js.Any])
 }

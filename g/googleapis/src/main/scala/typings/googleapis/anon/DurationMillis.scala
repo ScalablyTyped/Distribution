@@ -14,31 +14,23 @@ trait DurationMillis extends StObject {
 }
 object DurationMillis {
   
-  @scala.inline
-  def apply(): DurationMillis = {
+  inline def apply(): DurationMillis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DurationMillis]
   }
   
-  @scala.inline
-  implicit class DurationMillisMutableBuilder[Self <: DurationMillis] (val x: Self) extends AnyVal {
+  extension [Self <: DurationMillis](x: Self) {
     
-    @scala.inline
-    def setDurationMillis(value: String): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
+    inline def setDurationMillis(value: String): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationMillisUndefined: Self = StObject.set(x, "durationMillis", js.undefined)
+    inline def setDurationMillisUndefined: Self = StObject.set(x, "durationMillis", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

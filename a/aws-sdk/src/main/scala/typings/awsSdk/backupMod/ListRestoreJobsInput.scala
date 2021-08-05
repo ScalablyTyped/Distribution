@@ -38,49 +38,35 @@ trait ListRestoreJobsInput extends StObject {
 }
 object ListRestoreJobsInput {
   
-  @scala.inline
-  def apply(): ListRestoreJobsInput = {
+  inline def apply(): ListRestoreJobsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRestoreJobsInput]
   }
   
-  @scala.inline
-  implicit class ListRestoreJobsInputMutableBuilder[Self <: ListRestoreJobsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListRestoreJobsInput](x: Self) {
     
-    @scala.inline
-    def setByAccountId(value: AccountId): Self = StObject.set(x, "ByAccountId", value.asInstanceOf[js.Any])
+    inline def setByAccountId(value: AccountId): Self = StObject.set(x, "ByAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByAccountIdUndefined: Self = StObject.set(x, "ByAccountId", js.undefined)
+    inline def setByAccountIdUndefined: Self = StObject.set(x, "ByAccountId", js.undefined)
     
-    @scala.inline
-    def setByCreatedAfter(value: timestamp): Self = StObject.set(x, "ByCreatedAfter", value.asInstanceOf[js.Any])
+    inline def setByCreatedAfter(value: timestamp): Self = StObject.set(x, "ByCreatedAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByCreatedAfterUndefined: Self = StObject.set(x, "ByCreatedAfter", js.undefined)
+    inline def setByCreatedAfterUndefined: Self = StObject.set(x, "ByCreatedAfter", js.undefined)
     
-    @scala.inline
-    def setByCreatedBefore(value: timestamp): Self = StObject.set(x, "ByCreatedBefore", value.asInstanceOf[js.Any])
+    inline def setByCreatedBefore(value: timestamp): Self = StObject.set(x, "ByCreatedBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByCreatedBeforeUndefined: Self = StObject.set(x, "ByCreatedBefore", js.undefined)
+    inline def setByCreatedBeforeUndefined: Self = StObject.set(x, "ByCreatedBefore", js.undefined)
     
-    @scala.inline
-    def setByStatus(value: RestoreJobStatus): Self = StObject.set(x, "ByStatus", value.asInstanceOf[js.Any])
+    inline def setByStatus(value: RestoreJobStatus): Self = StObject.set(x, "ByStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByStatusUndefined: Self = StObject.set(x, "ByStatus", js.undefined)
+    inline def setByStatusUndefined: Self = StObject.set(x, "ByStatus", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

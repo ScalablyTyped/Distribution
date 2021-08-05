@@ -28,37 +28,27 @@ trait DatasetGroupSummary extends StObject {
 }
 object DatasetGroupSummary {
   
-  @scala.inline
-  def apply(): DatasetGroupSummary = {
+  inline def apply(): DatasetGroupSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatasetGroupSummary]
   }
   
-  @scala.inline
-  implicit class DatasetGroupSummaryMutableBuilder[Self <: DatasetGroupSummary] (val x: Self) extends AnyVal {
+  extension [Self <: DatasetGroupSummary](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "DatasetGroupArn", value.asInstanceOf[js.Any])
+    inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "DatasetGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetGroupArnUndefined: Self = StObject.set(x, "DatasetGroupArn", js.undefined)
+    inline def setDatasetGroupArnUndefined: Self = StObject.set(x, "DatasetGroupArn", js.undefined)
     
-    @scala.inline
-    def setDatasetGroupName(value: Name): Self = StObject.set(x, "DatasetGroupName", value.asInstanceOf[js.Any])
+    inline def setDatasetGroupName(value: Name): Self = StObject.set(x, "DatasetGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetGroupNameUndefined: Self = StObject.set(x, "DatasetGroupName", js.undefined)
+    inline def setDatasetGroupNameUndefined: Self = StObject.set(x, "DatasetGroupName", js.undefined)
     
-    @scala.inline
-    def setLastModificationTime(value: Timestamp): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
+    inline def setLastModificationTime(value: Timestamp): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModificationTimeUndefined: Self = StObject.set(x, "LastModificationTime", js.undefined)
+    inline def setLastModificationTimeUndefined: Self = StObject.set(x, "LastModificationTime", js.undefined)
   }
 }

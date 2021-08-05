@@ -23,34 +23,25 @@ trait GetSampledRequestsResponse extends StObject {
 }
 object GetSampledRequestsResponse {
   
-  @scala.inline
-  def apply(): GetSampledRequestsResponse = {
+  inline def apply(): GetSampledRequestsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSampledRequestsResponse]
   }
   
-  @scala.inline
-  implicit class GetSampledRequestsResponseMutableBuilder[Self <: GetSampledRequestsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSampledRequestsResponse](x: Self) {
     
-    @scala.inline
-    def setPopulationSize(value: PopulationSize): Self = StObject.set(x, "PopulationSize", value.asInstanceOf[js.Any])
+    inline def setPopulationSize(value: PopulationSize): Self = StObject.set(x, "PopulationSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopulationSizeUndefined: Self = StObject.set(x, "PopulationSize", js.undefined)
+    inline def setPopulationSizeUndefined: Self = StObject.set(x, "PopulationSize", js.undefined)
     
-    @scala.inline
-    def setSampledRequests(value: SampledHTTPRequests): Self = StObject.set(x, "SampledRequests", value.asInstanceOf[js.Any])
+    inline def setSampledRequests(value: SampledHTTPRequests): Self = StObject.set(x, "SampledRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampledRequestsUndefined: Self = StObject.set(x, "SampledRequests", js.undefined)
+    inline def setSampledRequestsUndefined: Self = StObject.set(x, "SampledRequests", js.undefined)
     
-    @scala.inline
-    def setSampledRequestsVarargs(value: SampledHTTPRequest*): Self = StObject.set(x, "SampledRequests", js.Array(value :_*))
+    inline def setSampledRequestsVarargs(value: SampledHTTPRequest*): Self = StObject.set(x, "SampledRequests", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeWindow(value: TimeWindow): Self = StObject.set(x, "TimeWindow", value.asInstanceOf[js.Any])
+    inline def setTimeWindow(value: TimeWindow): Self = StObject.set(x, "TimeWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeWindowUndefined: Self = StObject.set(x, "TimeWindow", js.undefined)
+    inline def setTimeWindowUndefined: Self = StObject.set(x, "TimeWindow", js.undefined)
   }
 }

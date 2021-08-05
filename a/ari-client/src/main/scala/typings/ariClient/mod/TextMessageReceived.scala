@@ -21,23 +21,18 @@ trait TextMessageReceived
 }
 object TextMessageReceived {
   
-  @scala.inline
-  def apply(application: String, message: TextMessage, timestamp: Date, `type`: String): TextMessageReceived = {
+  inline def apply(application: String, message: TextMessage, timestamp: Date, `type`: String): TextMessageReceived = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextMessageReceived]
   }
   
-  @scala.inline
-  implicit class TextMessageReceivedMutableBuilder[Self <: TextMessageReceived] (val x: Self) extends AnyVal {
+  extension [Self <: TextMessageReceived](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: Endpoint): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: Endpoint): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
-    @scala.inline
-    def setMessage(value: TextMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: TextMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

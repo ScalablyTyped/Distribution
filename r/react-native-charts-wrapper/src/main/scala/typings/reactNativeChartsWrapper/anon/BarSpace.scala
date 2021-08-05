@@ -14,22 +14,17 @@ trait BarSpace extends StObject {
 }
 object BarSpace {
   
-  @scala.inline
-  def apply(barSpace: Double, fromX: Double, groupSpace: Double): BarSpace = {
+  inline def apply(barSpace: Double, fromX: Double, groupSpace: Double): BarSpace = {
     val __obj = js.Dynamic.literal(barSpace = barSpace.asInstanceOf[js.Any], fromX = fromX.asInstanceOf[js.Any], groupSpace = groupSpace.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarSpace]
   }
   
-  @scala.inline
-  implicit class BarSpaceMutableBuilder[Self <: BarSpace] (val x: Self) extends AnyVal {
+  extension [Self <: BarSpace](x: Self) {
     
-    @scala.inline
-    def setBarSpace(value: Double): Self = StObject.set(x, "barSpace", value.asInstanceOf[js.Any])
+    inline def setBarSpace(value: Double): Self = StObject.set(x, "barSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromX(value: Double): Self = StObject.set(x, "fromX", value.asInstanceOf[js.Any])
+    inline def setFromX(value: Double): Self = StObject.set(x, "fromX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupSpace(value: Double): Self = StObject.set(x, "groupSpace", value.asInstanceOf[js.Any])
+    inline def setGroupSpace(value: Double): Self = StObject.set(x, "groupSpace", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait QueueParameterObject extends StObject {
 }
 object QueueParameterObject {
   
-  @scala.inline
-  def apply(): QueueParameterObject = {
+  inline def apply(): QueueParameterObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueueParameterObject]
   }
   
-  @scala.inline
-  implicit class QueueParameterObjectMutableBuilder[Self <: QueueParameterObject] (val x: Self) extends AnyVal {
+  extension [Self <: QueueParameterObject](x: Self) {
     
-    @scala.inline
-    def setDevice_id(value: String): Self = StObject.set(x, "device_id", value.asInstanceOf[js.Any])
+    inline def setDevice_id(value: String): Self = StObject.set(x, "device_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevice_idUndefined: Self = StObject.set(x, "device_id", js.undefined)
+    inline def setDevice_idUndefined: Self = StObject.set(x, "device_id", js.undefined)
   }
 }

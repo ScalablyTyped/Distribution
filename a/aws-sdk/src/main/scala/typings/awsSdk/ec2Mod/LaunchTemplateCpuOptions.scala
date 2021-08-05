@@ -18,25 +18,19 @@ trait LaunchTemplateCpuOptions extends StObject {
 }
 object LaunchTemplateCpuOptions {
   
-  @scala.inline
-  def apply(): LaunchTemplateCpuOptions = {
+  inline def apply(): LaunchTemplateCpuOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplateCpuOptions]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateCpuOptionsMutableBuilder[Self <: LaunchTemplateCpuOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplateCpuOptions](x: Self) {
     
-    @scala.inline
-    def setCoreCount(value: Integer): Self = StObject.set(x, "CoreCount", value.asInstanceOf[js.Any])
+    inline def setCoreCount(value: Integer): Self = StObject.set(x, "CoreCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoreCountUndefined: Self = StObject.set(x, "CoreCount", js.undefined)
+    inline def setCoreCountUndefined: Self = StObject.set(x, "CoreCount", js.undefined)
     
-    @scala.inline
-    def setThreadsPerCore(value: Integer): Self = StObject.set(x, "ThreadsPerCore", value.asInstanceOf[js.Any])
+    inline def setThreadsPerCore(value: Integer): Self = StObject.set(x, "ThreadsPerCore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadsPerCoreUndefined: Self = StObject.set(x, "ThreadsPerCore", js.undefined)
+    inline def setThreadsPerCoreUndefined: Self = StObject.set(x, "ThreadsPerCore", js.undefined)
   }
 }

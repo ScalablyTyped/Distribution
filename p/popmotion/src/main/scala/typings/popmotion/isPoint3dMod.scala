@@ -11,6 +11,5 @@ object isPoint3dMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isPoint3D(point: Point): /* is popmotion.popmotion/lib/types.Point3D */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPoint3D")(point.asInstanceOf[js.Any]).asInstanceOf[/* is popmotion.popmotion/lib/types.Point3D */ Boolean]
+  inline def isPoint3D(point: Point): /* is popmotion.popmotion/lib/types.Point3D */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPoint3D")(point.asInstanceOf[js.Any]).asInstanceOf[/* is popmotion.popmotion/lib/types.Point3D */ Boolean]
 }

@@ -21,20 +21,17 @@ object TextAlign {
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.TextAlign.Center")
   @js.native
   def Center: TextAlign = js.native
-  @scala.inline
-  def Center_=(x: TextAlign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Center")(x.asInstanceOf[js.Any])
+  inline def Center_=(x: TextAlign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Center")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.TextAlign.Left")
   @js.native
   def Left: TextAlign = js.native
-  @scala.inline
-  def Left_=(x: TextAlign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Left")(x.asInstanceOf[js.Any])
+  inline def Left_=(x: TextAlign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Left")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.TextAlign.Right")
   @js.native
   def Right: TextAlign = js.native
-  @scala.inline
-  def Right_=(x: TextAlign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Right")(x.asInstanceOf[js.Any])
+  inline def Right_=(x: TextAlign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Right")(x.asInstanceOf[js.Any])
 }

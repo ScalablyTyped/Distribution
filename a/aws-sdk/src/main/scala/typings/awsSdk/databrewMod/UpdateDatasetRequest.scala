@@ -17,25 +17,19 @@ trait UpdateDatasetRequest extends StObject {
 }
 object UpdateDatasetRequest {
   
-  @scala.inline
-  def apply(Input: Input, Name: DatasetName): UpdateDatasetRequest = {
+  inline def apply(Input: Input, Name: DatasetName): UpdateDatasetRequest = {
     val __obj = js.Dynamic.literal(Input = Input.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDatasetRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDatasetRequestMutableBuilder[Self <: UpdateDatasetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDatasetRequest](x: Self) {
     
-    @scala.inline
-    def setFormatOptions(value: FormatOptions): Self = StObject.set(x, "FormatOptions", value.asInstanceOf[js.Any])
+    inline def setFormatOptions(value: FormatOptions): Self = StObject.set(x, "FormatOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatOptionsUndefined: Self = StObject.set(x, "FormatOptions", js.undefined)
+    inline def setFormatOptionsUndefined: Self = StObject.set(x, "FormatOptions", js.undefined)
     
-    @scala.inline
-    def setInput(value: Input): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Input): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: DatasetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DatasetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

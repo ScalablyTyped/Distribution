@@ -13,19 +13,15 @@ trait LaunchTemplateHibernationOptions extends StObject {
 }
 object LaunchTemplateHibernationOptions {
   
-  @scala.inline
-  def apply(): LaunchTemplateHibernationOptions = {
+  inline def apply(): LaunchTemplateHibernationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplateHibernationOptions]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateHibernationOptionsMutableBuilder[Self <: LaunchTemplateHibernationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplateHibernationOptions](x: Self) {
     
-    @scala.inline
-    def setConfigured(value: Boolean): Self = StObject.set(x, "Configured", value.asInstanceOf[js.Any])
+    inline def setConfigured(value: Boolean): Self = StObject.set(x, "Configured", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfiguredUndefined: Self = StObject.set(x, "Configured", js.undefined)
+    inline def setConfiguredUndefined: Self = StObject.set(x, "Configured", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ object mod {
   	// unicorns
   	```
   	*/
-  @scala.inline
-  def apply(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[String]]
+  inline def apply(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[String]]
   
   @JSImport("get-stdin", JSImport.Namespace)
   @js.native
@@ -33,6 +32,5 @@ object mod {
   	Get [`stdin`](https://nodejs.org/api/process.html#process_process_stdin) as a `Buffer`.
   	@returns A promise that is resolved when the `end` event fires on the `stdin` stream, indicating that there is no more data to be read. In a TTY context, an empty `Buffer` is returned.
   	*/
-  @scala.inline
-  def buffer(): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")().asInstanceOf[js.Promise[Buffer]]
+  inline def buffer(): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")().asInstanceOf[js.Promise[Buffer]]
 }

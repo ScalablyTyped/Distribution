@@ -13,22 +13,17 @@ trait Set extends StObject {
 }
 object Set {
   
-  @scala.inline
-  def apply(removed: js.Array[String], set: StringDictionary[String]): Set = {
+  inline def apply(removed: js.Array[String], set: StringDictionary[String]): Set = {
     val __obj = js.Dynamic.literal(removed = removed.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[Set]
   }
   
-  @scala.inline
-  implicit class SetMutableBuilder[Self <: Set] (val x: Self) extends AnyVal {
+  extension [Self <: Set](x: Self) {
     
-    @scala.inline
-    def setRemoved(value: js.Array[String]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: js.Array[String]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedVarargs(value: String*): Self = StObject.set(x, "removed", js.Array(value :_*))
+    inline def setRemovedVarargs(value: String*): Self = StObject.set(x, "removed", js.Array(value :_*))
     
-    @scala.inline
-    def setSet(value: StringDictionary[String]): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+    inline def setSet(value: StringDictionary[String]): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
   }
 }

@@ -40,37 +40,27 @@ trait ParamsResourceProjectsAgentIntentsGet
 }
 object ParamsResourceProjectsAgentIntentsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsAgentIntentsGet = {
+  inline def apply(): ParamsResourceProjectsAgentIntentsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsAgentIntentsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsAgentIntentsGetMutableBuilder[Self <: ParamsResourceProjectsAgentIntentsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsAgentIntentsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setIntentView(value: String): Self = StObject.set(x, "intentView", value.asInstanceOf[js.Any])
+    inline def setIntentView(value: String): Self = StObject.set(x, "intentView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentViewUndefined: Self = StObject.set(x, "intentView", js.undefined)
+    inline def setIntentViewUndefined: Self = StObject.set(x, "intentView", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

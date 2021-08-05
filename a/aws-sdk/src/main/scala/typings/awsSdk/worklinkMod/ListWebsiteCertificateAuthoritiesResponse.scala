@@ -18,28 +18,21 @@ trait ListWebsiteCertificateAuthoritiesResponse extends StObject {
 }
 object ListWebsiteCertificateAuthoritiesResponse {
   
-  @scala.inline
-  def apply(): ListWebsiteCertificateAuthoritiesResponse = {
+  inline def apply(): ListWebsiteCertificateAuthoritiesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListWebsiteCertificateAuthoritiesResponse]
   }
   
-  @scala.inline
-  implicit class ListWebsiteCertificateAuthoritiesResponseMutableBuilder[Self <: ListWebsiteCertificateAuthoritiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListWebsiteCertificateAuthoritiesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setWebsiteCertificateAuthorities(value: WebsiteCaSummaryList): Self = StObject.set(x, "WebsiteCertificateAuthorities", value.asInstanceOf[js.Any])
+    inline def setWebsiteCertificateAuthorities(value: WebsiteCaSummaryList): Self = StObject.set(x, "WebsiteCertificateAuthorities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsiteCertificateAuthoritiesUndefined: Self = StObject.set(x, "WebsiteCertificateAuthorities", js.undefined)
+    inline def setWebsiteCertificateAuthoritiesUndefined: Self = StObject.set(x, "WebsiteCertificateAuthorities", js.undefined)
     
-    @scala.inline
-    def setWebsiteCertificateAuthoritiesVarargs(value: WebsiteCaSummary*): Self = StObject.set(x, "WebsiteCertificateAuthorities", js.Array(value :_*))
+    inline def setWebsiteCertificateAuthoritiesVarargs(value: WebsiteCaSummary*): Self = StObject.set(x, "WebsiteCertificateAuthorities", js.Array(value :_*))
   }
 }

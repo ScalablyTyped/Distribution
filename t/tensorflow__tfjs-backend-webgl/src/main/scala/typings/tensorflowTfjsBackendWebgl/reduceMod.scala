@@ -13,8 +13,7 @@ object reduceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def reduce(x: TensorInfo, dtype: DataType, reductionType: ReduceTypes, backend: MathBackendWebGL): TensorInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], reductionType.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[TensorInfo]
+  inline def reduce(x: TensorInfo, dtype: DataType, reductionType: ReduceTypes, backend: MathBackendWebGL): TensorInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], reductionType.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[TensorInfo]
   
   /* Rewritten from type alias, can be one of: 
     - typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.all
@@ -28,25 +27,18 @@ object reduceMod {
   trait ReduceTypes extends StObject
   object ReduceTypes {
     
-    @scala.inline
-    def all: typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.all = "all".asInstanceOf[typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.all]
+    inline def all: typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.all = "all".asInstanceOf[typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.all]
     
-    @scala.inline
-    def any: typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.any = "any".asInstanceOf[typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.any]
+    inline def any: typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.any = "any".asInstanceOf[typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.any]
     
-    @scala.inline
-    def max: typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.max = "max".asInstanceOf[typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.max]
+    inline def max: typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.max = "max".asInstanceOf[typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.max]
     
-    @scala.inline
-    def mean: typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.mean = "mean".asInstanceOf[typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.mean]
+    inline def mean: typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.mean = "mean".asInstanceOf[typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.mean]
     
-    @scala.inline
-    def min: typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.min = "min".asInstanceOf[typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.min]
+    inline def min: typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.min = "min".asInstanceOf[typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.min]
     
-    @scala.inline
-    def prod: typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.prod = "prod".asInstanceOf[typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.prod]
+    inline def prod: typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.prod = "prod".asInstanceOf[typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.prod]
     
-    @scala.inline
-    def sum: typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.sum = "sum".asInstanceOf[typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.sum]
+    inline def sum: typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.sum = "sum".asInstanceOf[typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.sum]
   }
 }

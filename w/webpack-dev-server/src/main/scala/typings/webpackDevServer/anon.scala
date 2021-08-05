@@ -16,20 +16,16 @@ object anon {
   }
   object Client {
     
-    @scala.inline
-    def apply(client: js.Object): Client = {
+    inline def apply(client: js.Object): Client = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], server = "ws")
       __obj.asInstanceOf[Client]
     }
     
-    @scala.inline
-    implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
+    extension [Self <: Client](x: Self) {
       
-      @scala.inline
-      def setClient(value: js.Object): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: js.Object): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServer(value: ws): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: ws): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,20 +37,16 @@ object anon {
   }
   object ClientServer {
     
-    @scala.inline
-    def apply(client: js.Object, server: js.Object): ClientServer = {
+    inline def apply(client: js.Object, server: js.Object): ClientServer = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientServer]
     }
     
-    @scala.inline
-    implicit class ClientServerMutableBuilder[Self <: ClientServer] (val x: Self) extends AnyVal {
+    extension [Self <: ClientServer](x: Self) {
       
-      @scala.inline
-      def setClient(value: js.Object): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: js.Object): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServer(value: js.Object): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: js.Object): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,17 +58,14 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(force: Boolean): Dictkey = {
+    inline def apply(force: Boolean): Dictkey = {
       val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,26 +77,20 @@ object anon {
   }
   object Errors {
     
-    @scala.inline
-    def apply(): Errors = {
+    inline def apply(): Errors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Errors]
     }
     
-    @scala.inline
-    implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
+    extension [Self <: Errors](x: Self) {
       
-      @scala.inline
-      def setErrors(value: Boolean): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: Boolean): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setWarnings(value: Boolean): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: Boolean): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+      inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     }
   }
   
@@ -117,20 +100,16 @@ object anon {
   }
   object Port {
     
-    @scala.inline
-    def apply(): Port = {
+    inline def apply(): Port = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Port]
     }
     
-    @scala.inline
-    implicit class PortMutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
+    extension [Self <: Port](x: Self) {
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
   
@@ -142,20 +121,16 @@ object anon {
   }
   object Server {
     
-    @scala.inline
-    def apply(server: js.Object): Server = {
+    inline def apply(server: js.Object): Server = {
       val __obj = js.Dynamic.literal(client = "ws", server = server.asInstanceOf[js.Any])
       __obj.asInstanceOf[Server]
     }
     
-    @scala.inline
-    implicit class ServerMutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
+    extension [Self <: Server](x: Self) {
       
-      @scala.inline
-      def setClient(value: ws): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: ws): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServer(value: js.Object): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: js.Object): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,20 +140,16 @@ object anon {
   }
   object TypeMap {
     
-    @scala.inline
-    def apply(): TypeMap = {
+    inline def apply(): TypeMap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypeMap]
     }
     
-    @scala.inline
-    implicit class TypeMapMutableBuilder[Self <: TypeMap] (val x: Self) extends AnyVal {
+    extension [Self <: TypeMap](x: Self) {
       
-      @scala.inline
-      def setTypeMap(value: Dictkey): Self = StObject.set(x, "typeMap", value.asInstanceOf[js.Any])
+      inline def setTypeMap(value: Dictkey): Self = StObject.set(x, "typeMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeMapUndefined: Self = StObject.set(x, "typeMap", js.undefined)
+      inline def setTypeMapUndefined: Self = StObject.set(x, "typeMap", js.undefined)
     }
   }
 }

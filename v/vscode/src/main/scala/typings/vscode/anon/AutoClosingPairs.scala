@@ -10,19 +10,15 @@ trait AutoClosingPairs extends StObject {
 }
 object AutoClosingPairs {
   
-  @scala.inline
-  def apply(autoClosingPairs: js.Array[NotIn]): AutoClosingPairs = {
+  inline def apply(autoClosingPairs: js.Array[NotIn]): AutoClosingPairs = {
     val __obj = js.Dynamic.literal(autoClosingPairs = autoClosingPairs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoClosingPairs]
   }
   
-  @scala.inline
-  implicit class AutoClosingPairsMutableBuilder[Self <: AutoClosingPairs] (val x: Self) extends AnyVal {
+  extension [Self <: AutoClosingPairs](x: Self) {
     
-    @scala.inline
-    def setAutoClosingPairs(value: js.Array[NotIn]): Self = StObject.set(x, "autoClosingPairs", value.asInstanceOf[js.Any])
+    inline def setAutoClosingPairs(value: js.Array[NotIn]): Self = StObject.set(x, "autoClosingPairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoClosingPairsVarargs(value: NotIn*): Self = StObject.set(x, "autoClosingPairs", js.Array(value :_*))
+    inline def setAutoClosingPairsVarargs(value: NotIn*): Self = StObject.set(x, "autoClosingPairs", js.Array(value :_*))
   }
 }

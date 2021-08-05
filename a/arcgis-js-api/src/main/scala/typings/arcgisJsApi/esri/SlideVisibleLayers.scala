@@ -26,8 +26,7 @@ trait SlideVisibleLayers
 }
 object SlideVisibleLayers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     id: String,
@@ -39,16 +38,12 @@ object SlideVisibleLayers {
     __obj.asInstanceOf[SlideVisibleLayers]
   }
   
-  @scala.inline
-  implicit class SlideVisibleLayersMutableBuilder[Self <: SlideVisibleLayers] (val x: Self) extends AnyVal {
+  extension [Self <: SlideVisibleLayers](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSublayerIds(value: js.Array[Double]): Self = StObject.set(x, "sublayerIds", value.asInstanceOf[js.Any])
+    inline def setSublayerIds(value: js.Array[Double]): Self = StObject.set(x, "sublayerIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSublayerIdsVarargs(value: Double*): Self = StObject.set(x, "sublayerIds", js.Array(value :_*))
+    inline def setSublayerIdsVarargs(value: Double*): Self = StObject.set(x, "sublayerIds", js.Array(value :_*))
   }
 }

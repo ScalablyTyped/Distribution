@@ -11,22 +11,17 @@ trait Recipient extends StObject {
 }
 object Recipient {
   
-  @scala.inline
-  def apply(): Recipient = {
+  inline def apply(): Recipient = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Recipient]
   }
   
-  @scala.inline
-  implicit class RecipientMutableBuilder[Self <: Recipient] (val x: Self) extends AnyVal {
+  extension [Self <: Recipient](x: Self) {
     
-    @scala.inline
-    def setEmailAddress(value: NullableOption[EmailAddress]): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: NullableOption[EmailAddress]): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressNull: Self = StObject.set(x, "emailAddress", null)
+    inline def setEmailAddressNull: Self = StObject.set(x, "emailAddress", null)
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
   }
 }

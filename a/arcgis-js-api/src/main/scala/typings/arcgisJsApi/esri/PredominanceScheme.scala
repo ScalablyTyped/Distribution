@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PredominanceScheme extends StObject
 object PredominanceScheme {
   
-  @scala.inline
-  def PredominanceSchemeForMesh(
+  inline def PredominanceSchemeForMesh(
     colors: js.Array[Color_],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -29,8 +28,7 @@ object PredominanceScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.PredominanceSchemeForMesh]
   }
   
-  @scala.inline
-  def PredominanceSchemeForPoint(
+  inline def PredominanceSchemeForPoint(
     colors: js.Array[Color_],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -46,8 +44,7 @@ object PredominanceScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.PredominanceSchemeForPoint]
   }
   
-  @scala.inline
-  def PredominanceSchemeForPolygon(
+  inline def PredominanceSchemeForPolygon(
     colors: js.Array[Color_],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -63,8 +60,7 @@ object PredominanceScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.PredominanceSchemeForPolygon]
   }
   
-  @scala.inline
-  def PredominanceSchemeForPolyline(
+  inline def PredominanceSchemeForPolyline(
     colors: js.Array[Color_],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,

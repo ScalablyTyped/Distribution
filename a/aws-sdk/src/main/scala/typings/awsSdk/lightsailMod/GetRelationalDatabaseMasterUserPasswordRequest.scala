@@ -18,22 +18,17 @@ trait GetRelationalDatabaseMasterUserPasswordRequest extends StObject {
 }
 object GetRelationalDatabaseMasterUserPasswordRequest {
   
-  @scala.inline
-  def apply(relationalDatabaseName: ResourceName): GetRelationalDatabaseMasterUserPasswordRequest = {
+  inline def apply(relationalDatabaseName: ResourceName): GetRelationalDatabaseMasterUserPasswordRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRelationalDatabaseMasterUserPasswordRequest]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabaseMasterUserPasswordRequestMutableBuilder[Self <: GetRelationalDatabaseMasterUserPasswordRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabaseMasterUserPasswordRequest](x: Self) {
     
-    @scala.inline
-    def setPasswordVersion(value: RelationalDatabasePasswordVersion): Self = StObject.set(x, "passwordVersion", value.asInstanceOf[js.Any])
+    inline def setPasswordVersion(value: RelationalDatabasePasswordVersion): Self = StObject.set(x, "passwordVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordVersionUndefined: Self = StObject.set(x, "passwordVersion", js.undefined)
+    inline def setPasswordVersionUndefined: Self = StObject.set(x, "passwordVersion", js.undefined)
     
-    @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
   }
 }

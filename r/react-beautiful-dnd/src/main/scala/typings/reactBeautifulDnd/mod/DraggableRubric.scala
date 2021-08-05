@@ -14,22 +14,17 @@ trait DraggableRubric extends StObject {
 }
 object DraggableRubric {
   
-  @scala.inline
-  def apply(draggableId: DraggableId, mode: MovementMode, source: DraggableLocation): DraggableRubric = {
+  inline def apply(draggableId: DraggableId, mode: MovementMode, source: DraggableLocation): DraggableRubric = {
     val __obj = js.Dynamic.literal(draggableId = draggableId.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableRubric]
   }
   
-  @scala.inline
-  implicit class DraggableRubricMutableBuilder[Self <: DraggableRubric] (val x: Self) extends AnyVal {
+  extension [Self <: DraggableRubric](x: Self) {
     
-    @scala.inline
-    def setDraggableId(value: DraggableId): Self = StObject.set(x, "draggableId", value.asInstanceOf[js.Any])
+    inline def setDraggableId(value: DraggableId): Self = StObject.set(x, "draggableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: MovementMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: MovementMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: DraggableLocation): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: DraggableLocation): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

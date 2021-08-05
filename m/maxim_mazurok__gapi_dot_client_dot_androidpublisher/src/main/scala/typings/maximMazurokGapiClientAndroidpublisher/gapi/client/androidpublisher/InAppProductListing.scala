@@ -17,34 +17,25 @@ trait InAppProductListing extends StObject {
 }
 object InAppProductListing {
   
-  @scala.inline
-  def apply(): InAppProductListing = {
+  inline def apply(): InAppProductListing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InAppProductListing]
   }
   
-  @scala.inline
-  implicit class InAppProductListingMutableBuilder[Self <: InAppProductListing] (val x: Self) extends AnyVal {
+  extension [Self <: InAppProductListing](x: Self) {
     
-    @scala.inline
-    def setBenefits(value: js.Array[String]): Self = StObject.set(x, "benefits", value.asInstanceOf[js.Any])
+    inline def setBenefits(value: js.Array[String]): Self = StObject.set(x, "benefits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBenefitsUndefined: Self = StObject.set(x, "benefits", js.undefined)
+    inline def setBenefitsUndefined: Self = StObject.set(x, "benefits", js.undefined)
     
-    @scala.inline
-    def setBenefitsVarargs(value: String*): Self = StObject.set(x, "benefits", js.Array(value :_*))
+    inline def setBenefitsVarargs(value: String*): Self = StObject.set(x, "benefits", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

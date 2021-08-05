@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object MFBuiltInMetadataStructureItemID {
   
-  @scala.inline
-  def All: `-1000000` = -1000000.asInstanceOf[`-1000000`]
+  inline def All: `-1000000` = -1000000.asInstanceOf[`-1000000`]
 }

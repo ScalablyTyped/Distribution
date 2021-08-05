@@ -22,8 +22,7 @@ trait BatchUpdateException
 }
 object BatchUpdateException {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Context: XInterface,
     ErrorCode: Double,
     Message: String,
@@ -35,10 +34,8 @@ object BatchUpdateException {
     __obj.asInstanceOf[BatchUpdateException]
   }
   
-  @scala.inline
-  implicit class BatchUpdateExceptionMutableBuilder[Self <: BatchUpdateException] (val x: Self) extends AnyVal {
+  extension [Self <: BatchUpdateException](x: Self) {
     
-    @scala.inline
-    def setUpdateCounts(value: SafeArray[Double]): Self = StObject.set(x, "UpdateCounts", value.asInstanceOf[js.Any])
+    inline def setUpdateCounts(value: SafeArray[Double]): Self = StObject.set(x, "UpdateCounts", value.asInstanceOf[js.Any])
   }
 }

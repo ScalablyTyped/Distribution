@@ -23,38 +23,28 @@ object submoduleUpdateOptionsMod {
   }
   object SubmoduleUpdateOptions {
     
-    @scala.inline
-    def apply(): SubmoduleUpdateOptions = {
+    inline def apply(): SubmoduleUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SubmoduleUpdateOptions]
     }
     
-    @scala.inline
-    implicit class SubmoduleUpdateOptionsMutableBuilder[Self <: SubmoduleUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SubmoduleUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setCheckoutOpts(value: CheckoutOptions): Self = StObject.set(x, "checkoutOpts", value.asInstanceOf[js.Any])
+      inline def setCheckoutOpts(value: CheckoutOptions): Self = StObject.set(x, "checkoutOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckoutOptsUndefined: Self = StObject.set(x, "checkoutOpts", js.undefined)
+      inline def setCheckoutOptsUndefined: Self = StObject.set(x, "checkoutOpts", js.undefined)
       
-      @scala.inline
-      def setCloneCheckoutStrategy(value: Double): Self = StObject.set(x, "cloneCheckoutStrategy", value.asInstanceOf[js.Any])
+      inline def setCloneCheckoutStrategy(value: Double): Self = StObject.set(x, "cloneCheckoutStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloneCheckoutStrategyUndefined: Self = StObject.set(x, "cloneCheckoutStrategy", js.undefined)
+      inline def setCloneCheckoutStrategyUndefined: Self = StObject.set(x, "cloneCheckoutStrategy", js.undefined)
       
-      @scala.inline
-      def setFetchOpts(value: FetchOptions): Self = StObject.set(x, "fetchOpts", value.asInstanceOf[js.Any])
+      inline def setFetchOpts(value: FetchOptions): Self = StObject.set(x, "fetchOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchOptsUndefined: Self = StObject.set(x, "fetchOpts", js.undefined)
+      inline def setFetchOptsUndefined: Self = StObject.set(x, "fetchOpts", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

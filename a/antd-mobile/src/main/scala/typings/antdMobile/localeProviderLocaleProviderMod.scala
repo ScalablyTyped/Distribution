@@ -24,14 +24,12 @@ object localeProviderLocaleProviderMod {
     @JSImport("antd-mobile/lib/locale-provider/locale-provider", "default.childContextTypes")
     @js.native
     def childContextTypes: AntLocale = js.native
-    @scala.inline
-    def childContextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+    inline def childContextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/lib/locale-provider/locale-provider", "default.propTypes")
     @js.native
     def propTypes: Locale = js.native
-    @scala.inline
-    def propTypes_=(x: Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -47,17 +45,14 @@ object localeProviderLocaleProviderMod {
   }
   object LocaleProviderProps {
     
-    @scala.inline
-    def apply(locale: DatePicker): LocaleProviderProps = {
+    inline def apply(locale: DatePicker): LocaleProviderProps = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocaleProviderProps]
     }
     
-    @scala.inline
-    implicit class LocaleProviderPropsMutableBuilder[Self <: LocaleProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: LocaleProviderProps](x: Self) {
       
-      @scala.inline
-      def setLocale(value: DatePicker): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: DatePicker): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     }
   }
 }

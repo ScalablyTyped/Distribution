@@ -69,62 +69,44 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBasic(value: Boolean): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
+      inline def setBasic(value: Boolean): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
+      inline def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setFancy(value: Boolean): Self = StObject.set(x, "fancy", value.asInstanceOf[js.Any])
+      inline def setFancy(value: Boolean): Self = StObject.set(x, "fancy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFancyUndefined: Self = StObject.set(x, "fancy", js.undefined)
+      inline def setFancyUndefined: Self = StObject.set(x, "fancy", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProfile(value: Boolean): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: Boolean): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      @scala.inline
-      def setReporter(value: Reporter): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+      inline def setReporter(value: Reporter): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReporterNull: Self = StObject.set(x, "reporter", null)
+      inline def setReporterNull: Self = StObject.set(x, "reporter", null)
       
-      @scala.inline
-      def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+      inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
       
-      @scala.inline
-      def setReporters(value: js.Array[String]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
+      inline def setReporters(value: js.Array[String]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
+      inline def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
       
-      @scala.inline
-      def setReportersVarargs(value: String*): Self = StObject.set(x, "reporters", js.Array(value :_*))
+      inline def setReportersVarargs(value: String*): Self = StObject.set(x, "reporters", js.Array(value :_*))
     }
   }
   
@@ -172,62 +154,44 @@ object mod {
   }
   object Reporter {
     
-    @scala.inline
-    def apply(): Reporter = {
+    inline def apply(): Reporter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Reporter]
     }
     
-    @scala.inline
-    implicit class ReporterMutableBuilder[Self <: Reporter] (val x: Self) extends AnyVal {
+    extension [Self <: Reporter](x: Self) {
       
-      @scala.inline
-      def setAfterAllDone(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "afterAllDone", js.Any.fromFunction1(value))
+      inline def setAfterAllDone(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "afterAllDone", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterAllDoneUndefined: Self = StObject.set(x, "afterAllDone", js.undefined)
+      inline def setAfterAllDoneUndefined: Self = StObject.set(x, "afterAllDone", js.undefined)
       
-      @scala.inline
-      def setAllDone(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "allDone", js.Any.fromFunction1(value))
+      inline def setAllDone(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "allDone", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAllDoneUndefined: Self = StObject.set(x, "allDone", js.undefined)
+      inline def setAllDoneUndefined: Self = StObject.set(x, "allDone", js.undefined)
       
-      @scala.inline
-      def setBeforeAllDone(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "beforeAllDone", js.Any.fromFunction1(value))
+      inline def setBeforeAllDone(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "beforeAllDone", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeAllDoneUndefined: Self = StObject.set(x, "beforeAllDone", js.undefined)
+      inline def setBeforeAllDoneUndefined: Self = StObject.set(x, "beforeAllDone", js.undefined)
       
-      @scala.inline
-      def setChange(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+      inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
-      @scala.inline
-      def setDone(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
+      inline def setDone(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+      inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
       
-      @scala.inline
-      def setProgress(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
+      inline def setProgress(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+      inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
-      @scala.inline
-      def setStart(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+      inline def setStart(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
   
@@ -264,8 +228,7 @@ object mod {
   }
   object Status {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       color: String,
       details: js.Array[String],
       done: Boolean,
@@ -278,44 +241,31 @@ object mod {
       __obj.asInstanceOf[Status]
     }
     
-    @scala.inline
-    implicit class StatusMutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
+    extension [Self <: Status](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetails(value: js.Array[String]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: js.Array[String]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsVarargs(value: String*): Self = StObject.set(x, "details", js.Array(value :_*))
+      inline def setDetailsVarargs(value: String*): Self = StObject.set(x, "details", js.Array(value :_*))
       
-      @scala.inline
-      def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasErrors(value: Boolean): Self = StObject.set(x, "hasErrors", value.asInstanceOf[js.Any])
+      inline def setHasErrors(value: Boolean): Self = StObject.set(x, "hasErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: File): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: File): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestNull: Self = StObject.set(x, "request", null)
+      inline def setRequestNull: Self = StObject.set(x, "request", null)
       
-      @scala.inline
-      def setStart(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartNull: Self = StObject.set(x, "start", null)
+      inline def setStartNull: Self = StObject.set(x, "start", null)
     }
   }
   
@@ -329,17 +279,14 @@ object mod {
   }
   object WebpackBar {
     
-    @scala.inline
-    def apply(state: Status): WebpackBar = {
+    inline def apply(state: Status): WebpackBar = {
       val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebpackBar]
     }
     
-    @scala.inline
-    implicit class WebpackBarMutableBuilder[Self <: WebpackBar] (val x: Self) extends AnyVal {
+    extension [Self <: WebpackBar](x: Self) {
       
-      @scala.inline
-      def setState(value: Status): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Status): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

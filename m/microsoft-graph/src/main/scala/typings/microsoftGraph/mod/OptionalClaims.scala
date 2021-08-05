@@ -17,49 +17,35 @@ trait OptionalClaims extends StObject {
 }
 object OptionalClaims {
   
-  @scala.inline
-  def apply(): OptionalClaims = {
+  inline def apply(): OptionalClaims = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionalClaims]
   }
   
-  @scala.inline
-  implicit class OptionalClaimsMutableBuilder[Self <: OptionalClaims] (val x: Self) extends AnyVal {
+  extension [Self <: OptionalClaims](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: NullableOption[js.Array[OptionalClaim]]): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: NullableOption[js.Array[OptionalClaim]]): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenNull: Self = StObject.set(x, "accessToken", null)
+    inline def setAccessTokenNull: Self = StObject.set(x, "accessToken", null)
     
-    @scala.inline
-    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
-    @scala.inline
-    def setAccessTokenVarargs(value: OptionalClaim*): Self = StObject.set(x, "accessToken", js.Array(value :_*))
+    inline def setAccessTokenVarargs(value: OptionalClaim*): Self = StObject.set(x, "accessToken", js.Array(value :_*))
     
-    @scala.inline
-    def setIdToken(value: NullableOption[js.Array[OptionalClaim]]): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+    inline def setIdToken(value: NullableOption[js.Array[OptionalClaim]]): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdTokenNull: Self = StObject.set(x, "idToken", null)
+    inline def setIdTokenNull: Self = StObject.set(x, "idToken", null)
     
-    @scala.inline
-    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
+    inline def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
     
-    @scala.inline
-    def setIdTokenVarargs(value: OptionalClaim*): Self = StObject.set(x, "idToken", js.Array(value :_*))
+    inline def setIdTokenVarargs(value: OptionalClaim*): Self = StObject.set(x, "idToken", js.Array(value :_*))
     
-    @scala.inline
-    def setSaml2Token(value: NullableOption[js.Array[OptionalClaim]]): Self = StObject.set(x, "saml2Token", value.asInstanceOf[js.Any])
+    inline def setSaml2Token(value: NullableOption[js.Array[OptionalClaim]]): Self = StObject.set(x, "saml2Token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaml2TokenNull: Self = StObject.set(x, "saml2Token", null)
+    inline def setSaml2TokenNull: Self = StObject.set(x, "saml2Token", null)
     
-    @scala.inline
-    def setSaml2TokenUndefined: Self = StObject.set(x, "saml2Token", js.undefined)
+    inline def setSaml2TokenUndefined: Self = StObject.set(x, "saml2Token", js.undefined)
     
-    @scala.inline
-    def setSaml2TokenVarargs(value: OptionalClaim*): Self = StObject.set(x, "saml2Token", js.Array(value :_*))
+    inline def setSaml2TokenVarargs(value: OptionalClaim*): Self = StObject.set(x, "saml2Token", js.Array(value :_*))
   }
 }

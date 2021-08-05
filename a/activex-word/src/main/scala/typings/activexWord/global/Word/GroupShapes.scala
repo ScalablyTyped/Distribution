@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.GroupShapes")
 @js.native
-class GroupShapes protected ()
+/* private */ class GroupShapes ()
   extends StObject
      with typings.activexWord.Word.GroupShapes {
   
@@ -28,7 +28,7 @@ class GroupShapes protected ()
   /* CompleteClass */
   override def Range(Index: js.Any): typings.activexWord.Word.ShapeRange = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.GroupShapes_typekey")
   var WordDotGroupShapes_typekey: typings.activexWord.Word.GroupShapes = js.native
 }

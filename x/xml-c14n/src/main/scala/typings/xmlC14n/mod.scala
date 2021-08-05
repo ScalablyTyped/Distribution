@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): CanonizationFactory = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[CanonizationFactory]
+  inline def apply(): CanonizationFactory = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[CanonizationFactory]
   
   @JSImport("xml-c14n", JSImport.Namespace)
   @js.native
@@ -24,23 +23,18 @@ object mod {
   }
   object Canonicalize {
     
-    @scala.inline
-    def apply(_processInner: Node => String, canonicalise: (Node, canonicaliseCb) => Unit, name: () => String): Canonicalize = {
+    inline def apply(_processInner: Node => String, canonicalise: (Node, canonicaliseCb) => Unit, name: () => String): Canonicalize = {
       val __obj = js.Dynamic.literal(_processInner = js.Any.fromFunction1(_processInner), canonicalise = js.Any.fromFunction2(canonicalise), name = js.Any.fromFunction0(name))
       __obj.asInstanceOf[Canonicalize]
     }
     
-    @scala.inline
-    implicit class CanonicalizeMutableBuilder[Self <: Canonicalize] (val x: Self) extends AnyVal {
+    extension [Self <: Canonicalize](x: Self) {
       
-      @scala.inline
-      def setCanonicalise(value: (Node, canonicaliseCb) => Unit): Self = StObject.set(x, "canonicalise", js.Any.fromFunction2(value))
+      inline def setCanonicalise(value: (Node, canonicaliseCb) => Unit): Self = StObject.set(x, "canonicalise", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setName(value: () => String): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
+      inline def setName(value: () => String): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_processInner(value: Node => String): Self = StObject.set(x, "_processInner", js.Any.fromFunction1(value))
+      inline def set_processInner(value: Node => String): Self = StObject.set(x, "_processInner", js.Any.fromFunction1(value))
     }
   }
   
@@ -63,26 +57,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIncludeComments(value: Boolean): Self = StObject.set(x, "includeComments", value.asInstanceOf[js.Any])
+      inline def setIncludeComments(value: Boolean): Self = StObject.set(x, "includeComments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeCommentsUndefined: Self = StObject.set(x, "includeComments", js.undefined)
+      inline def setIncludeCommentsUndefined: Self = StObject.set(x, "includeComments", js.undefined)
       
-      @scala.inline
-      def setInclusiveNamespaces(value: Boolean): Self = StObject.set(x, "inclusiveNamespaces", value.asInstanceOf[js.Any])
+      inline def setInclusiveNamespaces(value: Boolean): Self = StObject.set(x, "inclusiveNamespaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclusiveNamespacesUndefined: Self = StObject.set(x, "inclusiveNamespaces", js.undefined)
+      inline def setInclusiveNamespacesUndefined: Self = StObject.set(x, "inclusiveNamespaces", js.undefined)
     }
   }
   

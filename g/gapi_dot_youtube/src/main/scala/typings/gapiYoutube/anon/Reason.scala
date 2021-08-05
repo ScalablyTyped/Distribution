@@ -23,22 +23,17 @@ trait Reason extends StObject {
 }
 object Reason {
   
-  @scala.inline
-  def apply(reason: String, resourceId: ChannelIdKind, seedResourceId: KindPlaylistId): Reason = {
+  inline def apply(reason: String, resourceId: ChannelIdKind, seedResourceId: KindPlaylistId): Reason = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], seedResourceId = seedResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reason]
   }
   
-  @scala.inline
-  implicit class ReasonMutableBuilder[Self <: Reason] (val x: Self) extends AnyVal {
+  extension [Self <: Reason](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: ChannelIdKind): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ChannelIdKind): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedResourceId(value: KindPlaylistId): Self = StObject.set(x, "seedResourceId", value.asInstanceOf[js.Any])
+    inline def setSeedResourceId(value: KindPlaylistId): Self = StObject.set(x, "seedResourceId", value.asInstanceOf[js.Any])
   }
 }

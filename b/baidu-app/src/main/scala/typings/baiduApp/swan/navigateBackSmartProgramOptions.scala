@@ -19,19 +19,15 @@ trait navigateBackSmartProgramOptions
 }
 object navigateBackSmartProgramOptions {
   
-  @scala.inline
-  def apply(): navigateBackSmartProgramOptions = {
+  inline def apply(): navigateBackSmartProgramOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[navigateBackSmartProgramOptions]
   }
   
-  @scala.inline
-  implicit class navigateBackSmartProgramOptionsMutableBuilder[Self <: navigateBackSmartProgramOptions] (val x: Self) extends AnyVal {
+  extension [Self <: navigateBackSmartProgramOptions](x: Self) {
     
-    @scala.inline
-    def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
+    inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
   }
 }

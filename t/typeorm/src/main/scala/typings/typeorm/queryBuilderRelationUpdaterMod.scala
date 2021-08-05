@@ -13,9 +13,9 @@ object queryBuilderRelationUpdaterMod {
   class RelationUpdater protected () extends StObject {
     def this(queryBuilder: QueryBuilder[js.Any], expressionMap: QueryExpressionMap) = this()
     
-    var expressionMap: QueryExpressionMap = js.native
+    /* protected */ var expressionMap: QueryExpressionMap = js.native
     
-    var queryBuilder: QueryBuilder[js.Any] = js.native
+    /* protected */ var queryBuilder: QueryBuilder[js.Any] = js.native
     
     /**
       * Performs set or add operation on a relation.

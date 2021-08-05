@@ -26,17 +26,14 @@ object libIslotsMod {
   }
   object IDefaultSlotProps {
     
-    @scala.inline
-    def apply[TSlots](_defaultStyles: IComponentStyles[TSlots]): IDefaultSlotProps[TSlots] = {
+    inline def apply[TSlots](_defaultStyles: IComponentStyles[TSlots]): IDefaultSlotProps[TSlots] = {
       val __obj = js.Dynamic.literal(_defaultStyles = _defaultStyles.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDefaultSlotProps[TSlots]]
     }
     
-    @scala.inline
-    implicit class IDefaultSlotPropsMutableBuilder[Self <: IDefaultSlotProps[?], TSlots] (val x: Self & IDefaultSlotProps[TSlots]) extends AnyVal {
+    extension [Self <: IDefaultSlotProps[?], TSlots](x: Self & IDefaultSlotProps[TSlots]) {
       
-      @scala.inline
-      def set_defaultStyles(value: IComponentStyles[TSlots]): Self = StObject.set(x, "_defaultStyles", value.asInstanceOf[js.Any])
+      inline def set_defaultStyles(value: IComponentStyles[TSlots]): Self = StObject.set(x, "_defaultStyles", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,20 +43,16 @@ object libIslotsMod {
   }
   object IProcessedSlotProps {
     
-    @scala.inline
-    def apply(): IProcessedSlotProps = {
+    inline def apply(): IProcessedSlotProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IProcessedSlotProps]
     }
     
-    @scala.inline
-    implicit class IProcessedSlotPropsMutableBuilder[Self <: IProcessedSlotProps] (val x: Self) extends AnyVal {
+    extension [Self <: IProcessedSlotProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
   
@@ -78,22 +71,18 @@ object libIslotsMod {
   }
   object ISlotCreator {
     
-    @scala.inline
-    def apply[TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */](): ISlotCreator[TProps, TShorthandProp] = {
+    inline def apply[TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */](): ISlotCreator[TProps, TShorthandProp] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISlotCreator[TProps, TShorthandProp]]
     }
     
-    @scala.inline
-    implicit class ISlotCreatorMutableBuilder[Self <: ISlotCreator[?, ?], TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */] (val x: Self & (ISlotCreator[TProps, TShorthandProp])) extends AnyVal {
+    extension [Self <: ISlotCreator[?, ?], TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */](x: Self & (ISlotCreator[TProps, TShorthandProp])) {
       
-      @scala.inline
-      def setCreate(
+      inline def setCreate(
         value: (/* componentProps */ TProps & IProcessedSlotProps, /* userProps */ ISlotProp[TProps, TShorthandProp], /* slotOptions */ js.UndefOr[ISlotOptions[TProps]], /* defaultStyles */ IStyle, /* theme */ js.UndefOr[ITheme]) => ReturnType[FunctionComponent[TProps]]
       ): Self = StObject.set(x, "create", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     }
   }
   
@@ -118,28 +107,22 @@ object libIslotsMod {
   }
   object ISlotOptions {
     
-    @scala.inline
-    def apply[TProps](): ISlotOptions[TProps] = {
+    inline def apply[TProps](): ISlotOptions[TProps] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISlotOptions[TProps]]
     }
     
-    @scala.inline
-    implicit class ISlotOptionsMutableBuilder[Self <: ISlotOptions[?], TProps] (val x: Self & ISlotOptions[TProps]) extends AnyVal {
+    extension [Self <: ISlotOptions[?], TProps](x: Self & ISlotOptions[TProps]) {
       
-      @scala.inline
-      def setComponent(value: ElementType[TProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[TProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setRender(
+      inline def setRender(
         value: (/* props */ PropsWithChildren[TProps], /* defaultComponent */ ComponentType[TProps]) => ReturnType[FunctionComponent[TProps]]
       ): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
   }
   

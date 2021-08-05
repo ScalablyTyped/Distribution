@@ -18,25 +18,19 @@ trait CompositingReasonsResponse extends StObject {
 }
 object CompositingReasonsResponse {
   
-  @scala.inline
-  def apply(compositingReasonIds: js.Array[String], compositingReasons: js.Array[String]): CompositingReasonsResponse = {
+  inline def apply(compositingReasonIds: js.Array[String], compositingReasons: js.Array[String]): CompositingReasonsResponse = {
     val __obj = js.Dynamic.literal(compositingReasonIds = compositingReasonIds.asInstanceOf[js.Any], compositingReasons = compositingReasons.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositingReasonsResponse]
   }
   
-  @scala.inline
-  implicit class CompositingReasonsResponseMutableBuilder[Self <: CompositingReasonsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CompositingReasonsResponse](x: Self) {
     
-    @scala.inline
-    def setCompositingReasonIds(value: js.Array[String]): Self = StObject.set(x, "compositingReasonIds", value.asInstanceOf[js.Any])
+    inline def setCompositingReasonIds(value: js.Array[String]): Self = StObject.set(x, "compositingReasonIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositingReasonIdsVarargs(value: String*): Self = StObject.set(x, "compositingReasonIds", js.Array(value :_*))
+    inline def setCompositingReasonIdsVarargs(value: String*): Self = StObject.set(x, "compositingReasonIds", js.Array(value :_*))
     
-    @scala.inline
-    def setCompositingReasons(value: js.Array[String]): Self = StObject.set(x, "compositingReasons", value.asInstanceOf[js.Any])
+    inline def setCompositingReasons(value: js.Array[String]): Self = StObject.set(x, "compositingReasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositingReasonsVarargs(value: String*): Self = StObject.set(x, "compositingReasons", js.Array(value :_*))
+    inline def setCompositingReasonsVarargs(value: String*): Self = StObject.set(x, "compositingReasons", js.Array(value :_*))
   }
 }

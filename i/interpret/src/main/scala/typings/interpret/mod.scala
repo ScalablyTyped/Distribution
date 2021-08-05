@@ -30,20 +30,16 @@ object mod {
   }
   object ExtensionDescriptor {
     
-    @scala.inline
-    def apply(module: String, register: /* hook */ Hook => Unit): ExtensionDescriptor = {
+    inline def apply(module: String, register: /* hook */ Hook => Unit): ExtensionDescriptor = {
       val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any], register = js.Any.fromFunction1(register))
       __obj.asInstanceOf[ExtensionDescriptor]
     }
     
-    @scala.inline
-    implicit class ExtensionDescriptorMutableBuilder[Self <: ExtensionDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: ExtensionDescriptor](x: Self) {
       
-      @scala.inline
-      def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegister(value: /* hook */ Hook => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+      inline def setRegister(value: /* hook */ Hook => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     }
   }
   

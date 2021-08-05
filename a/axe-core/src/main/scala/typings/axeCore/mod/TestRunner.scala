@@ -10,16 +10,13 @@ trait TestRunner extends StObject {
 }
 object TestRunner {
   
-  @scala.inline
-  def apply(name: String): TestRunner = {
+  inline def apply(name: String): TestRunner = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestRunner]
   }
   
-  @scala.inline
-  implicit class TestRunnerMutableBuilder[Self <: TestRunner] (val x: Self) extends AnyVal {
+  extension [Self <: TestRunner](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

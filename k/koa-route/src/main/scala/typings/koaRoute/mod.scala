@@ -398,8 +398,7 @@ object mod extends Shortcut {
     }
     object Routes {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         acl: Method,
         all: Method,
         bind: Method,
@@ -441,113 +440,77 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Routes]
       }
       
-      @scala.inline
-      implicit class RoutesMutableBuilder[Self <: Routes] (val x: Self) extends AnyVal {
+      extension [Self <: Routes](x: Self) {
         
-        @scala.inline
-        def setAcl(value: Method): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+        inline def setAcl(value: Method): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAll(value: Method): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+        inline def setAll(value: Method): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBind(value: Method): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+        inline def setBind(value: Method): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCheckout(value: Method): Self = StObject.set(x, "checkout", value.asInstanceOf[js.Any])
+        inline def setCheckout(value: Method): Self = StObject.set(x, "checkout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConnect(value: Method): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+        inline def setConnect(value: Method): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCopy(value: Method): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+        inline def setCopy(value: Method): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDel(value: Method): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
+        inline def setDel(value: Method): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelete(value: Method): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+        inline def setDelete(value: Method): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGet(value: Method): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+        inline def setGet(value: Method): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHead(value: Method): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+        inline def setHead(value: Method): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLink(value: Method): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+        inline def setLink(value: Method): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLock(value: Method): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+        inline def setLock(value: Method): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMerge(value: Method): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+        inline def setMerge(value: Method): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMkactivity(value: Method): Self = StObject.set(x, "mkactivity", value.asInstanceOf[js.Any])
+        inline def setMkactivity(value: Method): Self = StObject.set(x, "mkactivity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMkcalendar(value: Method): Self = StObject.set(x, "mkcalendar", value.asInstanceOf[js.Any])
+        inline def setMkcalendar(value: Method): Self = StObject.set(x, "mkcalendar", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMkcol(value: Method): Self = StObject.set(x, "mkcol", value.asInstanceOf[js.Any])
+        inline def setMkcol(value: Method): Self = StObject.set(x, "mkcol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMove(value: Method): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+        inline def setMove(value: Method): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMsearch(value: Method): Self = StObject.set(x, "msearch", value.asInstanceOf[js.Any])
+        inline def setMsearch(value: Method): Self = StObject.set(x, "msearch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotify_(value: Method): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
+        inline def setNotify_(value: Method): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptions(value: Method): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: Method): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPatch(value: Method): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+        inline def setPatch(value: Method): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPost(value: Method): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+        inline def setPost(value: Method): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPropfind(value: Method): Self = StObject.set(x, "propfind", value.asInstanceOf[js.Any])
+        inline def setPropfind(value: Method): Self = StObject.set(x, "propfind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProppatch(value: Method): Self = StObject.set(x, "proppatch", value.asInstanceOf[js.Any])
+        inline def setProppatch(value: Method): Self = StObject.set(x, "proppatch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPurge(value: Method): Self = StObject.set(x, "purge", value.asInstanceOf[js.Any])
+        inline def setPurge(value: Method): Self = StObject.set(x, "purge", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPut(value: Method): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+        inline def setPut(value: Method): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRebind(value: Method): Self = StObject.set(x, "rebind", value.asInstanceOf[js.Any])
+        inline def setRebind(value: Method): Self = StObject.set(x, "rebind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReport(value: Method): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
+        inline def setReport(value: Method): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSearch(value: Method): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+        inline def setSearch(value: Method): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubscribe(value: Method): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
+        inline def setSubscribe(value: Method): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrace(value: Method): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+        inline def setTrace(value: Method): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnbind(value: Method): Self = StObject.set(x, "unbind", value.asInstanceOf[js.Any])
+        inline def setUnbind(value: Method): Self = StObject.set(x, "unbind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnlink(value: Method): Self = StObject.set(x, "unlink", value.asInstanceOf[js.Any])
+        inline def setUnlink(value: Method): Self = StObject.set(x, "unlink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnlock(value: Method): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
+        inline def setUnlock(value: Method): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnsubscribe(value: Method): Self = StObject.set(x, "unsubscribe", value.asInstanceOf[js.Any])
+        inline def setUnsubscribe(value: Method): Self = StObject.set(x, "unsubscribe", value.asInstanceOf[js.Any])
       }
     }
   }

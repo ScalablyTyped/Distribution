@@ -10,19 +10,15 @@ trait GridSearch extends StObject {
 }
 object GridSearch {
   
-  @scala.inline
-  def apply(): GridSearch = {
+  inline def apply(): GridSearch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridSearch]
   }
   
-  @scala.inline
-  implicit class GridSearchMutableBuilder[Self <: GridSearch] (val x: Self) extends AnyVal {
+  extension [Self <: GridSearch](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
   }
 }

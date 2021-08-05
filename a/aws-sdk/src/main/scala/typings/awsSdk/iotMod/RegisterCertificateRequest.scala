@@ -28,34 +28,25 @@ trait RegisterCertificateRequest extends StObject {
 }
 object RegisterCertificateRequest {
   
-  @scala.inline
-  def apply(certificatePem: CertificatePem): RegisterCertificateRequest = {
+  inline def apply(certificatePem: CertificatePem): RegisterCertificateRequest = {
     val __obj = js.Dynamic.literal(certificatePem = certificatePem.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterCertificateRequest]
   }
   
-  @scala.inline
-  implicit class RegisterCertificateRequestMutableBuilder[Self <: RegisterCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCaCertificatePem(value: CertificatePem): Self = StObject.set(x, "caCertificatePem", value.asInstanceOf[js.Any])
+    inline def setCaCertificatePem(value: CertificatePem): Self = StObject.set(x, "caCertificatePem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaCertificatePemUndefined: Self = StObject.set(x, "caCertificatePem", js.undefined)
+    inline def setCaCertificatePemUndefined: Self = StObject.set(x, "caCertificatePem", js.undefined)
     
-    @scala.inline
-    def setCertificatePem(value: CertificatePem): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
+    inline def setCertificatePem(value: CertificatePem): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAsActive(value: SetAsActiveFlag): Self = StObject.set(x, "setAsActive", value.asInstanceOf[js.Any])
+    inline def setSetAsActive(value: SetAsActiveFlag): Self = StObject.set(x, "setAsActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAsActiveUndefined: Self = StObject.set(x, "setAsActive", js.undefined)
+    inline def setSetAsActiveUndefined: Self = StObject.set(x, "setAsActive", js.undefined)
     
-    @scala.inline
-    def setStatus(value: CertificateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: CertificateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

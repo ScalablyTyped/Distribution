@@ -19,19 +19,15 @@ trait SchemaCreateCustomerRequest extends StObject {
 }
 object SchemaCreateCustomerRequest {
   
-  @scala.inline
-  def apply(): SchemaCreateCustomerRequest = {
+  inline def apply(): SchemaCreateCustomerRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateCustomerRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCreateCustomerRequestMutableBuilder[Self <: SchemaCreateCustomerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateCustomerRequest](x: Self) {
     
-    @scala.inline
-    def setCustomer(value: SchemaCompany): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: SchemaCompany): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
   }
 }

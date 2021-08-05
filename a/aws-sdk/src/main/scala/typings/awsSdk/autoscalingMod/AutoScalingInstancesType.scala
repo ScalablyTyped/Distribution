@@ -18,28 +18,21 @@ trait AutoScalingInstancesType extends StObject {
 }
 object AutoScalingInstancesType {
   
-  @scala.inline
-  def apply(): AutoScalingInstancesType = {
+  inline def apply(): AutoScalingInstancesType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoScalingInstancesType]
   }
   
-  @scala.inline
-  implicit class AutoScalingInstancesTypeMutableBuilder[Self <: AutoScalingInstancesType] (val x: Self) extends AnyVal {
+  extension [Self <: AutoScalingInstancesType](x: Self) {
     
-    @scala.inline
-    def setAutoScalingInstances(value: AutoScalingInstances): Self = StObject.set(x, "AutoScalingInstances", value.asInstanceOf[js.Any])
+    inline def setAutoScalingInstances(value: AutoScalingInstances): Self = StObject.set(x, "AutoScalingInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingInstancesUndefined: Self = StObject.set(x, "AutoScalingInstances", js.undefined)
+    inline def setAutoScalingInstancesUndefined: Self = StObject.set(x, "AutoScalingInstances", js.undefined)
     
-    @scala.inline
-    def setAutoScalingInstancesVarargs(value: AutoScalingInstanceDetails*): Self = StObject.set(x, "AutoScalingInstances", js.Array(value :_*))
+    inline def setAutoScalingInstancesVarargs(value: AutoScalingInstanceDetails*): Self = StObject.set(x, "AutoScalingInstances", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -8,11 +8,9 @@ object obsoleteWebStrings {
   
   @js.native
   sealed trait afterbeing extends StObject
-  @scala.inline
-  def afterbeing: afterbeing = "afterbeing".asInstanceOf[afterbeing]
+  inline def afterbeing: afterbeing = "afterbeing".asInstanceOf[afterbeing]
   
   @js.native
   sealed trait beforened extends StObject
-  @scala.inline
-  def beforened: beforened = "beforened".asInstanceOf[beforened]
+  inline def beforened: beforened = "beforened".asInstanceOf[beforened]
 }

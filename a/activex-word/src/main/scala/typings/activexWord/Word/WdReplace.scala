@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdReplace extends StObject
 object WdReplace {
   
-  @scala.inline
-  def wdReplaceAll: `2` = 2.asInstanceOf[`2`]
+  inline def wdReplaceAll: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdReplaceNone: `0` = 0.asInstanceOf[`0`]
+  inline def wdReplaceNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdReplaceOne: `1` = 1.asInstanceOf[`1`]
+  inline def wdReplaceOne: `1` = 1.asInstanceOf[`1`]
 }

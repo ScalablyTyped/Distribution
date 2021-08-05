@@ -22,28 +22,21 @@ trait GitCreateBlobEndpoint extends StObject {
 }
 object GitCreateBlobEndpoint {
   
-  @scala.inline
-  def apply(content: String, owner: String, repo: String): GitCreateBlobEndpoint = {
+  inline def apply(content: String, owner: String, repo: String): GitCreateBlobEndpoint = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitCreateBlobEndpoint]
   }
   
-  @scala.inline
-  implicit class GitCreateBlobEndpointMutableBuilder[Self <: GitCreateBlobEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: GitCreateBlobEndpoint](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

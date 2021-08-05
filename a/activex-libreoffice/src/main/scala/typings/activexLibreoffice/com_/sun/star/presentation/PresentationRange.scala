@@ -17,14 +17,11 @@ trait PresentationRange extends StObject
 object PresentationRange {
   
   /** use all slides. */
-  @scala.inline
-  def PRESENTATIONRANGE_ALL: `0` = 0.asInstanceOf[`0`]
+  inline def PRESENTATIONRANGE_ALL: `0` = 0.asInstanceOf[`0`]
   
   /** use only the active slide. */
-  @scala.inline
-  def PRESENTATIONRANGE_FROM_PAGE: `1` = 1.asInstanceOf[`1`]
+  inline def PRESENTATIONRANGE_FROM_PAGE: `1` = 1.asInstanceOf[`1`]
   
   /** use an individual choice of slides. */
-  @scala.inline
-  def PRESENTATIONRANGE_INDIVIDUAL: `2` = 2.asInstanceOf[`2`]
+  inline def PRESENTATIONRANGE_INDIVIDUAL: `2` = 2.asInstanceOf[`2`]
 }

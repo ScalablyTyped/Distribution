@@ -18,22 +18,17 @@ trait CreateDefaultSubnetRequest extends StObject {
 }
 object CreateDefaultSubnetRequest {
   
-  @scala.inline
-  def apply(AvailabilityZone: String): CreateDefaultSubnetRequest = {
+  inline def apply(AvailabilityZone: String): CreateDefaultSubnetRequest = {
     val __obj = js.Dynamic.literal(AvailabilityZone = AvailabilityZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDefaultSubnetRequest]
   }
   
-  @scala.inline
-  implicit class CreateDefaultSubnetRequestMutableBuilder[Self <: CreateDefaultSubnetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDefaultSubnetRequest](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

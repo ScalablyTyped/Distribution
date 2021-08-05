@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TXT_ALIGN extends StObject
 object TXT_ALIGN {
   
-  @scala.inline
-  def CT: typings.escpos.escposStrings.CT = "CT".asInstanceOf[typings.escpos.escposStrings.CT]
+  inline def CT: typings.escpos.escposStrings.CT = "CT".asInstanceOf[typings.escpos.escposStrings.CT]
   
-  @scala.inline
-  def LT: typings.escpos.escposStrings.LT = "LT".asInstanceOf[typings.escpos.escposStrings.LT]
+  inline def LT: typings.escpos.escposStrings.LT = "LT".asInstanceOf[typings.escpos.escposStrings.LT]
   
-  @scala.inline
-  def RT: typings.escpos.escposStrings.RT = "RT".asInstanceOf[typings.escpos.escposStrings.RT]
+  inline def RT: typings.escpos.escposStrings.RT = "RT".asInstanceOf[typings.escpos.escposStrings.RT]
 }

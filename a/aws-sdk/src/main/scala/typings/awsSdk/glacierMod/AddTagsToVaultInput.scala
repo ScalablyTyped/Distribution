@@ -23,25 +23,19 @@ trait AddTagsToVaultInput extends StObject {
 }
 object AddTagsToVaultInput {
   
-  @scala.inline
-  def apply(accountId: String, vaultName: String): AddTagsToVaultInput = {
+  inline def apply(accountId: String, vaultName: String): AddTagsToVaultInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddTagsToVaultInput]
   }
   
-  @scala.inline
-  implicit class AddTagsToVaultInputMutableBuilder[Self <: AddTagsToVaultInput] (val x: Self) extends AnyVal {
+  extension [Self <: AddTagsToVaultInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+    inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

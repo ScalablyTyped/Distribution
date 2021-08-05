@@ -24,25 +24,19 @@ trait HomeViewModelProperties
 }
 object HomeViewModelProperties {
   
-  @scala.inline
-  def apply(): HomeViewModelProperties = {
+  inline def apply(): HomeViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HomeViewModelProperties]
   }
   
-  @scala.inline
-  implicit class HomeViewModelPropertiesMutableBuilder[Self <: HomeViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: HomeViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
-    @scala.inline
-    def setViewpoint(value: ViewpointProperties): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
+    inline def setViewpoint(value: ViewpointProperties): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
+    inline def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
   }
 }

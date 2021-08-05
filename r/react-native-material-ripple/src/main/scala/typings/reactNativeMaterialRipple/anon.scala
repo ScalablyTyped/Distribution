@@ -237,743 +237,520 @@ object anon {
   }
   object AnimatedPropsViewProps {
     
-    @scala.inline
-    def apply(): AnimatedPropsViewProps = {
+    inline def apply(): AnimatedPropsViewProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnimatedPropsViewProps]
     }
     
-    @scala.inline
-    implicit class AnimatedPropsViewPropsMutableBuilder[Self <: AnimatedPropsViewProps] (val x: Self) extends AnyVal {
+    extension [Self <: AnimatedPropsViewProps](x: Self) {
       
-      @scala.inline
-      def setAccessibilityActions(
+      inline def setAccessibilityActions(
         value: WithAnimatedValue[js.UndefOr[js.Array[AccessibilityActionInfo]]] | js.Array[AccessibilityActionInfo] | TAugmentRef[js.UndefOr[js.Array[AccessibilityActionInfo]]]
       ): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityActionsFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityActions", js.Any.fromFunction1(value))
+      inline def setAccessibilityActionsFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityActions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAccessibilityActionsNull: Self = StObject.set(x, "accessibilityActions", null)
+      inline def setAccessibilityActionsNull: Self = StObject.set(x, "accessibilityActions", null)
       
-      @scala.inline
-      def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
+      inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
       
-      @scala.inline
-      def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
+      inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
       
-      @scala.inline
-      def setAccessibilityComponentType(
+      inline def setAccessibilityComponentType(
         value: (WithAnimatedValue[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]]) | none | button | radiobutton_checked | radiobutton_unchecked | (TAugmentRef[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]])
       ): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityComponentTypeFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityComponentType", js.Any.fromFunction1(value))
+      inline def setAccessibilityComponentTypeFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityComponentType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAccessibilityComponentTypeNull: Self = StObject.set(x, "accessibilityComponentType", null)
+      inline def setAccessibilityComponentTypeNull: Self = StObject.set(x, "accessibilityComponentType", null)
       
-      @scala.inline
-      def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
+      inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
       
-      @scala.inline
-      def setAccessibilityElementsHidden(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
+      inline def setAccessibilityElementsHidden(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityElementsHiddenFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityElementsHidden", js.Any.fromFunction1(value))
+      inline def setAccessibilityElementsHiddenFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityElementsHidden", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAccessibilityElementsHiddenNull: Self = StObject.set(x, "accessibilityElementsHidden", null)
+      inline def setAccessibilityElementsHiddenNull: Self = StObject.set(x, "accessibilityElementsHidden", null)
       
-      @scala.inline
-      def setAccessibilityElementsHiddenUndefined: Self = StObject.set(x, "accessibilityElementsHidden", js.undefined)
+      inline def setAccessibilityElementsHiddenUndefined: Self = StObject.set(x, "accessibilityElementsHidden", js.undefined)
       
-      @scala.inline
-      def setAccessibilityHint(value: WithAnimatedValue[js.UndefOr[String]] | String | TAugmentRef[js.UndefOr[String]]): Self = StObject.set(x, "accessibilityHint", value.asInstanceOf[js.Any])
+      inline def setAccessibilityHint(value: WithAnimatedValue[js.UndefOr[String]] | String | TAugmentRef[js.UndefOr[String]]): Self = StObject.set(x, "accessibilityHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityHintFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityHint", js.Any.fromFunction1(value))
+      inline def setAccessibilityHintFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityHint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAccessibilityHintNull: Self = StObject.set(x, "accessibilityHint", null)
+      inline def setAccessibilityHintNull: Self = StObject.set(x, "accessibilityHint", null)
       
-      @scala.inline
-      def setAccessibilityHintUndefined: Self = StObject.set(x, "accessibilityHint", js.undefined)
+      inline def setAccessibilityHintUndefined: Self = StObject.set(x, "accessibilityHint", js.undefined)
       
-      @scala.inline
-      def setAccessibilityIgnoresInvertColors(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
+      inline def setAccessibilityIgnoresInvertColors(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityIgnoresInvertColorsFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityIgnoresInvertColors", js.Any.fromFunction1(value))
+      inline def setAccessibilityIgnoresInvertColorsFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityIgnoresInvertColors", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAccessibilityIgnoresInvertColorsNull: Self = StObject.set(x, "accessibilityIgnoresInvertColors", null)
+      inline def setAccessibilityIgnoresInvertColorsNull: Self = StObject.set(x, "accessibilityIgnoresInvertColors", null)
       
-      @scala.inline
-      def setAccessibilityIgnoresInvertColorsUndefined: Self = StObject.set(x, "accessibilityIgnoresInvertColors", js.undefined)
+      inline def setAccessibilityIgnoresInvertColorsUndefined: Self = StObject.set(x, "accessibilityIgnoresInvertColors", js.undefined)
       
-      @scala.inline
-      def setAccessibilityLabel(value: WithAnimatedValue[js.UndefOr[String]] | String | TAugmentRef[js.UndefOr[String]]): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+      inline def setAccessibilityLabel(value: WithAnimatedValue[js.UndefOr[String]] | String | TAugmentRef[js.UndefOr[String]]): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityLabelFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityLabel", js.Any.fromFunction1(value))
+      inline def setAccessibilityLabelFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAccessibilityLabelNull: Self = StObject.set(x, "accessibilityLabel", null)
+      inline def setAccessibilityLabelNull: Self = StObject.set(x, "accessibilityLabel", null)
       
-      @scala.inline
-      def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
+      inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
       
-      @scala.inline
-      def setAccessibilityLiveRegion(
+      inline def setAccessibilityLiveRegion(
         value: (WithAnimatedValue[js.UndefOr[none | polite | assertive]]) | none | polite | assertive | (TAugmentRef[js.UndefOr[none | polite | assertive]])
       ): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityLiveRegionFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityLiveRegion", js.Any.fromFunction1(value))
+      inline def setAccessibilityLiveRegionFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityLiveRegion", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAccessibilityLiveRegionNull: Self = StObject.set(x, "accessibilityLiveRegion", null)
+      inline def setAccessibilityLiveRegionNull: Self = StObject.set(x, "accessibilityLiveRegion", null)
       
-      @scala.inline
-      def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
+      inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
       
-      @scala.inline
-      def setAccessibilityRole(
+      inline def setAccessibilityRole(
         value: WithAnimatedValue[js.UndefOr[AccessibilityRole]] | AccessibilityRole | TAugmentRef[js.UndefOr[AccessibilityRole]]
       ): Self = StObject.set(x, "accessibilityRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityRoleFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityRole", js.Any.fromFunction1(value))
+      inline def setAccessibilityRoleFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityRole", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAccessibilityRoleNull: Self = StObject.set(x, "accessibilityRole", null)
+      inline def setAccessibilityRoleNull: Self = StObject.set(x, "accessibilityRole", null)
       
-      @scala.inline
-      def setAccessibilityRoleUndefined: Self = StObject.set(x, "accessibilityRole", js.undefined)
+      inline def setAccessibilityRoleUndefined: Self = StObject.set(x, "accessibilityRole", js.undefined)
       
-      @scala.inline
-      def setAccessibilityState(
+      inline def setAccessibilityState(
         value: WithAnimatedValue[js.UndefOr[AccessibilityState]] | AccessibilityState | TAugmentRef[js.UndefOr[AccessibilityState]]
       ): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityStateFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityState", js.Any.fromFunction1(value))
+      inline def setAccessibilityStateFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAccessibilityStateNull: Self = StObject.set(x, "accessibilityState", null)
+      inline def setAccessibilityStateNull: Self = StObject.set(x, "accessibilityState", null)
       
-      @scala.inline
-      def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
+      inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
       
-      @scala.inline
-      def setAccessibilityTraits(
+      inline def setAccessibilityTraits(
         value: (WithAnimatedValue[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]) | AccessibilityTrait | js.Array[AccessibilityTrait] | (TAugmentRef[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]])
       ): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityTraitsFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityTraits", js.Any.fromFunction1(value))
+      inline def setAccessibilityTraitsFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityTraits", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAccessibilityTraitsNull: Self = StObject.set(x, "accessibilityTraits", null)
+      inline def setAccessibilityTraitsNull: Self = StObject.set(x, "accessibilityTraits", null)
       
-      @scala.inline
-      def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
+      inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
       
-      @scala.inline
-      def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
+      inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
       
-      @scala.inline
-      def setAccessibilityValue(
+      inline def setAccessibilityValue(
         value: WithAnimatedValue[js.UndefOr[AccessibilityValue]] | AccessibilityValue | TAugmentRef[js.UndefOr[AccessibilityValue]]
       ): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityValueFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityValue", js.Any.fromFunction1(value))
+      inline def setAccessibilityValueFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAccessibilityValueNull: Self = StObject.set(x, "accessibilityValue", null)
+      inline def setAccessibilityValueNull: Self = StObject.set(x, "accessibilityValue", null)
       
-      @scala.inline
-      def setAccessibilityValueUndefined: Self = StObject.set(x, "accessibilityValue", js.undefined)
+      inline def setAccessibilityValueUndefined: Self = StObject.set(x, "accessibilityValue", js.undefined)
       
-      @scala.inline
-      def setAccessibilityViewIsModal(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityViewIsModal", value.asInstanceOf[js.Any])
+      inline def setAccessibilityViewIsModal(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessibilityViewIsModal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityViewIsModalFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityViewIsModal", js.Any.fromFunction1(value))
+      inline def setAccessibilityViewIsModalFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessibilityViewIsModal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAccessibilityViewIsModalNull: Self = StObject.set(x, "accessibilityViewIsModal", null)
+      inline def setAccessibilityViewIsModalNull: Self = StObject.set(x, "accessibilityViewIsModal", null)
       
-      @scala.inline
-      def setAccessibilityViewIsModalUndefined: Self = StObject.set(x, "accessibilityViewIsModal", js.undefined)
+      inline def setAccessibilityViewIsModalUndefined: Self = StObject.set(x, "accessibilityViewIsModal", js.undefined)
       
-      @scala.inline
-      def setAccessible(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
+      inline def setAccessible(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibleFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessible", js.Any.fromFunction1(value))
+      inline def setAccessibleFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "accessible", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAccessibleNull: Self = StObject.set(x, "accessible", null)
+      inline def setAccessibleNull: Self = StObject.set(x, "accessible", null)
       
-      @scala.inline
-      def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
+      inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
       
-      @scala.inline
-      def setCollapsable(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
+      inline def setCollapsable(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsableFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "collapsable", js.Any.fromFunction1(value))
+      inline def setCollapsableFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "collapsable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCollapsableNull: Self = StObject.set(x, "collapsable", null)
+      inline def setCollapsableNull: Self = StObject.set(x, "collapsable", null)
       
-      @scala.inline
-      def setCollapsableUndefined: Self = StObject.set(x, "collapsable", js.undefined)
+      inline def setCollapsableUndefined: Self = StObject.set(x, "collapsable", js.undefined)
       
-      @scala.inline
-      def setFocusable(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+      inline def setFocusable(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusableFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "focusable", js.Any.fromFunction1(value))
+      inline def setFocusableFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "focusable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFocusableNull: Self = StObject.set(x, "focusable", null)
+      inline def setFocusableNull: Self = StObject.set(x, "focusable", null)
       
-      @scala.inline
-      def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
+      inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
       
-      @scala.inline
-      def setHasTVPreferredFocus(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
+      inline def setHasTVPreferredFocus(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasTVPreferredFocusFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "hasTVPreferredFocus", js.Any.fromFunction1(value))
+      inline def setHasTVPreferredFocusFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "hasTVPreferredFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasTVPreferredFocusNull: Self = StObject.set(x, "hasTVPreferredFocus", null)
+      inline def setHasTVPreferredFocusNull: Self = StObject.set(x, "hasTVPreferredFocus", null)
       
-      @scala.inline
-      def setHasTVPreferredFocusUndefined: Self = StObject.set(x, "hasTVPreferredFocus", js.undefined)
+      inline def setHasTVPreferredFocusUndefined: Self = StObject.set(x, "hasTVPreferredFocus", js.undefined)
       
-      @scala.inline
-      def setHitSlop(value: WithAnimatedValue[js.UndefOr[Insets]] | Insets | TAugmentRef[js.UndefOr[Insets]]): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
+      inline def setHitSlop(value: WithAnimatedValue[js.UndefOr[Insets]] | Insets | TAugmentRef[js.UndefOr[Insets]]): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHitSlopFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "hitSlop", js.Any.fromFunction1(value))
+      inline def setHitSlopFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "hitSlop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHitSlopNull: Self = StObject.set(x, "hitSlop", null)
+      inline def setHitSlopNull: Self = StObject.set(x, "hitSlop", null)
       
-      @scala.inline
-      def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
+      inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
       
-      @scala.inline
-      def setImportantForAccessibility(
+      inline def setImportantForAccessibility(
         value: (WithAnimatedValue[js.UndefOr[auto | yes | no | `no-hide-descendants`]]) | auto | yes | no | `no-hide-descendants` | (TAugmentRef[js.UndefOr[auto | yes | no | `no-hide-descendants`]])
       ): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportantForAccessibilityFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "importantForAccessibility", js.Any.fromFunction1(value))
+      inline def setImportantForAccessibilityFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "importantForAccessibility", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setImportantForAccessibilityNull: Self = StObject.set(x, "importantForAccessibility", null)
+      inline def setImportantForAccessibilityNull: Self = StObject.set(x, "importantForAccessibility", null)
       
-      @scala.inline
-      def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
+      inline def setImportantForAccessibilityUndefined: Self = StObject.set(x, "importantForAccessibility", js.undefined)
       
-      @scala.inline
-      def setIsTVSelectable(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "isTVSelectable", value.asInstanceOf[js.Any])
+      inline def setIsTVSelectable(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "isTVSelectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTVSelectableFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "isTVSelectable", js.Any.fromFunction1(value))
+      inline def setIsTVSelectableFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "isTVSelectable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsTVSelectableNull: Self = StObject.set(x, "isTVSelectable", null)
+      inline def setIsTVSelectableNull: Self = StObject.set(x, "isTVSelectable", null)
       
-      @scala.inline
-      def setIsTVSelectableUndefined: Self = StObject.set(x, "isTVSelectable", js.undefined)
+      inline def setIsTVSelectableUndefined: Self = StObject.set(x, "isTVSelectable", js.undefined)
       
-      @scala.inline
-      def setNativeID(value: WithAnimatedValue[js.UndefOr[String]] | String | TAugmentRef[js.UndefOr[String]]): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
+      inline def setNativeID(value: WithAnimatedValue[js.UndefOr[String]] | String | TAugmentRef[js.UndefOr[String]]): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeIDFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "nativeID", js.Any.fromFunction1(value))
+      inline def setNativeIDFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "nativeID", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNativeIDNull: Self = StObject.set(x, "nativeID", null)
+      inline def setNativeIDNull: Self = StObject.set(x, "nativeID", null)
       
-      @scala.inline
-      def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
+      inline def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
       
-      @scala.inline
-      def setNeedsOffscreenAlphaCompositing(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "needsOffscreenAlphaCompositing", value.asInstanceOf[js.Any])
+      inline def setNeedsOffscreenAlphaCompositing(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "needsOffscreenAlphaCompositing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedsOffscreenAlphaCompositingFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "needsOffscreenAlphaCompositing", js.Any.fromFunction1(value))
+      inline def setNeedsOffscreenAlphaCompositingFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "needsOffscreenAlphaCompositing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNeedsOffscreenAlphaCompositingNull: Self = StObject.set(x, "needsOffscreenAlphaCompositing", null)
+      inline def setNeedsOffscreenAlphaCompositingNull: Self = StObject.set(x, "needsOffscreenAlphaCompositing", null)
       
-      @scala.inline
-      def setNeedsOffscreenAlphaCompositingUndefined: Self = StObject.set(x, "needsOffscreenAlphaCompositing", js.undefined)
+      inline def setNeedsOffscreenAlphaCompositingUndefined: Self = StObject.set(x, "needsOffscreenAlphaCompositing", js.undefined)
       
-      @scala.inline
-      def setOnAccessibilityAction(
+      inline def setOnAccessibilityAction(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]]) | (js.Function1[/* event */ AccessibilityActionEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]])
       ): Self = StObject.set(x, "onAccessibilityAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnAccessibilityActionFunction1(value: (/* event */ AccessibilityActionEvent) | js.Any | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onAccessibilityAction", js.Any.fromFunction1(value))
+      inline def setOnAccessibilityActionFunction1(value: (/* event */ AccessibilityActionEvent) | js.Any | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onAccessibilityAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAccessibilityActionNull: Self = StObject.set(x, "onAccessibilityAction", null)
+      inline def setOnAccessibilityActionNull: Self = StObject.set(x, "onAccessibilityAction", null)
       
-      @scala.inline
-      def setOnAccessibilityActionUndefined: Self = StObject.set(x, "onAccessibilityAction", js.undefined)
+      inline def setOnAccessibilityActionUndefined: Self = StObject.set(x, "onAccessibilityAction", js.undefined)
       
-      @scala.inline
-      def setOnAccessibilityEscape(
+      inline def setOnAccessibilityEscape(
         value: WithAnimatedValue[js.UndefOr[js.Function0[Unit]]] | js.Function0[Unit] | TAugmentRef[js.UndefOr[js.Function0[Unit]]]
       ): Self = StObject.set(x, "onAccessibilityEscape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnAccessibilityEscapeFunction0(value: () => Unit): Self = StObject.set(x, "onAccessibilityEscape", js.Any.fromFunction0(value))
+      inline def setOnAccessibilityEscapeFunction0(value: () => Unit): Self = StObject.set(x, "onAccessibilityEscape", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnAccessibilityEscapeFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "onAccessibilityEscape", js.Any.fromFunction1(value))
+      inline def setOnAccessibilityEscapeFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "onAccessibilityEscape", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAccessibilityEscapeNull: Self = StObject.set(x, "onAccessibilityEscape", null)
+      inline def setOnAccessibilityEscapeNull: Self = StObject.set(x, "onAccessibilityEscape", null)
       
-      @scala.inline
-      def setOnAccessibilityEscapeUndefined: Self = StObject.set(x, "onAccessibilityEscape", js.undefined)
+      inline def setOnAccessibilityEscapeUndefined: Self = StObject.set(x, "onAccessibilityEscape", js.undefined)
       
-      @scala.inline
-      def setOnAccessibilityTap(
+      inline def setOnAccessibilityTap(
         value: WithAnimatedValue[js.UndefOr[js.Function0[Unit]]] | js.Function0[Unit] | TAugmentRef[js.UndefOr[js.Function0[Unit]]]
       ): Self = StObject.set(x, "onAccessibilityTap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnAccessibilityTapFunction0(value: () => Unit): Self = StObject.set(x, "onAccessibilityTap", js.Any.fromFunction0(value))
+      inline def setOnAccessibilityTapFunction0(value: () => Unit): Self = StObject.set(x, "onAccessibilityTap", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnAccessibilityTapFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "onAccessibilityTap", js.Any.fromFunction1(value))
+      inline def setOnAccessibilityTapFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "onAccessibilityTap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAccessibilityTapNull: Self = StObject.set(x, "onAccessibilityTap", null)
+      inline def setOnAccessibilityTapNull: Self = StObject.set(x, "onAccessibilityTap", null)
       
-      @scala.inline
-      def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
+      inline def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
       
-      @scala.inline
-      def setOnLayout(
+      inline def setOnLayout(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]]) | (js.Function1[/* event */ LayoutChangeEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]])
       ): Self = StObject.set(x, "onLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnLayoutFunction1(value: js.Any | (/* event */ LayoutChangeEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
+      inline def setOnLayoutFunction1(value: js.Any | (/* event */ LayoutChangeEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLayoutNull: Self = StObject.set(x, "onLayout", null)
+      inline def setOnLayoutNull: Self = StObject.set(x, "onLayout", null)
       
-      @scala.inline
-      def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
+      inline def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
       
-      @scala.inline
-      def setOnMagicTap(
+      inline def setOnMagicTap(
         value: WithAnimatedValue[js.UndefOr[js.Function0[Unit]]] | js.Function0[Unit] | TAugmentRef[js.UndefOr[js.Function0[Unit]]]
       ): Self = StObject.set(x, "onMagicTap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnMagicTapFunction0(value: () => Unit): Self = StObject.set(x, "onMagicTap", js.Any.fromFunction0(value))
+      inline def setOnMagicTapFunction0(value: () => Unit): Self = StObject.set(x, "onMagicTap", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnMagicTapFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "onMagicTap", js.Any.fromFunction1(value))
+      inline def setOnMagicTapFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "onMagicTap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMagicTapNull: Self = StObject.set(x, "onMagicTap", null)
+      inline def setOnMagicTapNull: Self = StObject.set(x, "onMagicTap", null)
       
-      @scala.inline
-      def setOnMagicTapUndefined: Self = StObject.set(x, "onMagicTap", js.undefined)
+      inline def setOnMagicTapUndefined: Self = StObject.set(x, "onMagicTap", js.undefined)
       
-      @scala.inline
-      def setOnMoveShouldSetResponder(
+      inline def setOnMoveShouldSetResponder(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]) | (js.Function1[/* event */ GestureResponderEvent, Boolean]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]])
       ): Self = StObject.set(x, "onMoveShouldSetResponder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnMoveShouldSetResponderCapture(
+      inline def setOnMoveShouldSetResponderCapture(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]) | (js.Function1[/* event */ GestureResponderEvent, Boolean]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]])
       ): Self = StObject.set(x, "onMoveShouldSetResponderCapture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnMoveShouldSetResponderCaptureFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Boolean | Unit): Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.Any.fromFunction1(value))
+      inline def setOnMoveShouldSetResponderCaptureFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Boolean | Unit): Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMoveShouldSetResponderCaptureNull: Self = StObject.set(x, "onMoveShouldSetResponderCapture", null)
+      inline def setOnMoveShouldSetResponderCaptureNull: Self = StObject.set(x, "onMoveShouldSetResponderCapture", null)
       
-      @scala.inline
-      def setOnMoveShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.undefined)
+      inline def setOnMoveShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.undefined)
       
-      @scala.inline
-      def setOnMoveShouldSetResponderFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Boolean | Unit): Self = StObject.set(x, "onMoveShouldSetResponder", js.Any.fromFunction1(value))
+      inline def setOnMoveShouldSetResponderFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Boolean | Unit): Self = StObject.set(x, "onMoveShouldSetResponder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMoveShouldSetResponderNull: Self = StObject.set(x, "onMoveShouldSetResponder", null)
+      inline def setOnMoveShouldSetResponderNull: Self = StObject.set(x, "onMoveShouldSetResponder", null)
       
-      @scala.inline
-      def setOnMoveShouldSetResponderUndefined: Self = StObject.set(x, "onMoveShouldSetResponder", js.undefined)
+      inline def setOnMoveShouldSetResponderUndefined: Self = StObject.set(x, "onMoveShouldSetResponder", js.undefined)
       
-      @scala.inline
-      def setOnResponderEnd(
+      inline def setOnResponderEnd(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
       ): Self = StObject.set(x, "onResponderEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnResponderEndFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onResponderEnd", js.Any.fromFunction1(value))
+      inline def setOnResponderEndFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onResponderEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResponderEndNull: Self = StObject.set(x, "onResponderEnd", null)
+      inline def setOnResponderEndNull: Self = StObject.set(x, "onResponderEnd", null)
       
-      @scala.inline
-      def setOnResponderEndUndefined: Self = StObject.set(x, "onResponderEnd", js.undefined)
+      inline def setOnResponderEndUndefined: Self = StObject.set(x, "onResponderEnd", js.undefined)
       
-      @scala.inline
-      def setOnResponderGrant(
+      inline def setOnResponderGrant(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
       ): Self = StObject.set(x, "onResponderGrant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnResponderGrantFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onResponderGrant", js.Any.fromFunction1(value))
+      inline def setOnResponderGrantFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onResponderGrant", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResponderGrantNull: Self = StObject.set(x, "onResponderGrant", null)
+      inline def setOnResponderGrantNull: Self = StObject.set(x, "onResponderGrant", null)
       
-      @scala.inline
-      def setOnResponderGrantUndefined: Self = StObject.set(x, "onResponderGrant", js.undefined)
+      inline def setOnResponderGrantUndefined: Self = StObject.set(x, "onResponderGrant", js.undefined)
       
-      @scala.inline
-      def setOnResponderMove(
+      inline def setOnResponderMove(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
       ): Self = StObject.set(x, "onResponderMove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnResponderMoveFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onResponderMove", js.Any.fromFunction1(value))
+      inline def setOnResponderMoveFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onResponderMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResponderMoveNull: Self = StObject.set(x, "onResponderMove", null)
+      inline def setOnResponderMoveNull: Self = StObject.set(x, "onResponderMove", null)
       
-      @scala.inline
-      def setOnResponderMoveUndefined: Self = StObject.set(x, "onResponderMove", js.undefined)
+      inline def setOnResponderMoveUndefined: Self = StObject.set(x, "onResponderMove", js.undefined)
       
-      @scala.inline
-      def setOnResponderReject(
+      inline def setOnResponderReject(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
       ): Self = StObject.set(x, "onResponderReject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnResponderRejectFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onResponderReject", js.Any.fromFunction1(value))
+      inline def setOnResponderRejectFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onResponderReject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResponderRejectNull: Self = StObject.set(x, "onResponderReject", null)
+      inline def setOnResponderRejectNull: Self = StObject.set(x, "onResponderReject", null)
       
-      @scala.inline
-      def setOnResponderRejectUndefined: Self = StObject.set(x, "onResponderReject", js.undefined)
+      inline def setOnResponderRejectUndefined: Self = StObject.set(x, "onResponderReject", js.undefined)
       
-      @scala.inline
-      def setOnResponderRelease(
+      inline def setOnResponderRelease(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
       ): Self = StObject.set(x, "onResponderRelease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnResponderReleaseFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onResponderRelease", js.Any.fromFunction1(value))
+      inline def setOnResponderReleaseFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onResponderRelease", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResponderReleaseNull: Self = StObject.set(x, "onResponderRelease", null)
+      inline def setOnResponderReleaseNull: Self = StObject.set(x, "onResponderRelease", null)
       
-      @scala.inline
-      def setOnResponderReleaseUndefined: Self = StObject.set(x, "onResponderRelease", js.undefined)
+      inline def setOnResponderReleaseUndefined: Self = StObject.set(x, "onResponderRelease", js.undefined)
       
-      @scala.inline
-      def setOnResponderStart(
+      inline def setOnResponderStart(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
       ): Self = StObject.set(x, "onResponderStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnResponderStartFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onResponderStart", js.Any.fromFunction1(value))
+      inline def setOnResponderStartFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onResponderStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResponderStartNull: Self = StObject.set(x, "onResponderStart", null)
+      inline def setOnResponderStartNull: Self = StObject.set(x, "onResponderStart", null)
       
-      @scala.inline
-      def setOnResponderStartUndefined: Self = StObject.set(x, "onResponderStart", js.undefined)
+      inline def setOnResponderStartUndefined: Self = StObject.set(x, "onResponderStart", js.undefined)
       
-      @scala.inline
-      def setOnResponderTerminate(
+      inline def setOnResponderTerminate(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
       ): Self = StObject.set(x, "onResponderTerminate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnResponderTerminateFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onResponderTerminate", js.Any.fromFunction1(value))
+      inline def setOnResponderTerminateFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onResponderTerminate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResponderTerminateNull: Self = StObject.set(x, "onResponderTerminate", null)
+      inline def setOnResponderTerminateNull: Self = StObject.set(x, "onResponderTerminate", null)
       
-      @scala.inline
-      def setOnResponderTerminateUndefined: Self = StObject.set(x, "onResponderTerminate", js.undefined)
+      inline def setOnResponderTerminateUndefined: Self = StObject.set(x, "onResponderTerminate", js.undefined)
       
-      @scala.inline
-      def setOnResponderTerminationRequest(
+      inline def setOnResponderTerminationRequest(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]) | (js.Function1[/* event */ GestureResponderEvent, Boolean]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]])
       ): Self = StObject.set(x, "onResponderTerminationRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnResponderTerminationRequestFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Boolean | Unit): Self = StObject.set(x, "onResponderTerminationRequest", js.Any.fromFunction1(value))
+      inline def setOnResponderTerminationRequestFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Boolean | Unit): Self = StObject.set(x, "onResponderTerminationRequest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResponderTerminationRequestNull: Self = StObject.set(x, "onResponderTerminationRequest", null)
+      inline def setOnResponderTerminationRequestNull: Self = StObject.set(x, "onResponderTerminationRequest", null)
       
-      @scala.inline
-      def setOnResponderTerminationRequestUndefined: Self = StObject.set(x, "onResponderTerminationRequest", js.undefined)
+      inline def setOnResponderTerminationRequestUndefined: Self = StObject.set(x, "onResponderTerminationRequest", js.undefined)
       
-      @scala.inline
-      def setOnStartShouldSetResponder(
+      inline def setOnStartShouldSetResponder(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]) | (js.Function1[/* event */ GestureResponderEvent, Boolean]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]])
       ): Self = StObject.set(x, "onStartShouldSetResponder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStartShouldSetResponderCapture(
+      inline def setOnStartShouldSetResponderCapture(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]]) | (js.Function1[/* event */ GestureResponderEvent, Boolean]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]]])
       ): Self = StObject.set(x, "onStartShouldSetResponderCapture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStartShouldSetResponderCaptureFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Boolean | Unit): Self = StObject.set(x, "onStartShouldSetResponderCapture", js.Any.fromFunction1(value))
+      inline def setOnStartShouldSetResponderCaptureFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Boolean | Unit): Self = StObject.set(x, "onStartShouldSetResponderCapture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStartShouldSetResponderCaptureNull: Self = StObject.set(x, "onStartShouldSetResponderCapture", null)
+      inline def setOnStartShouldSetResponderCaptureNull: Self = StObject.set(x, "onStartShouldSetResponderCapture", null)
       
-      @scala.inline
-      def setOnStartShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onStartShouldSetResponderCapture", js.undefined)
+      inline def setOnStartShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onStartShouldSetResponderCapture", js.undefined)
       
-      @scala.inline
-      def setOnStartShouldSetResponderFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Boolean | Unit): Self = StObject.set(x, "onStartShouldSetResponder", js.Any.fromFunction1(value))
+      inline def setOnStartShouldSetResponderFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Boolean | Unit): Self = StObject.set(x, "onStartShouldSetResponder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStartShouldSetResponderNull: Self = StObject.set(x, "onStartShouldSetResponder", null)
+      inline def setOnStartShouldSetResponderNull: Self = StObject.set(x, "onStartShouldSetResponder", null)
       
-      @scala.inline
-      def setOnStartShouldSetResponderUndefined: Self = StObject.set(x, "onStartShouldSetResponder", js.undefined)
+      inline def setOnStartShouldSetResponderUndefined: Self = StObject.set(x, "onStartShouldSetResponder", js.undefined)
       
-      @scala.inline
-      def setOnTouchCancel(
+      inline def setOnTouchCancel(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
       ): Self = StObject.set(x, "onTouchCancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnTouchCancelFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
+      inline def setOnTouchCancelFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchCancelNull: Self = StObject.set(x, "onTouchCancel", null)
+      inline def setOnTouchCancelNull: Self = StObject.set(x, "onTouchCancel", null)
       
-      @scala.inline
-      def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
+      inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
       
-      @scala.inline
-      def setOnTouchEnd(
+      inline def setOnTouchEnd(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
       ): Self = StObject.set(x, "onTouchEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnTouchEndCapture(
+      inline def setOnTouchEndCapture(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
       ): Self = StObject.set(x, "onTouchEndCapture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnTouchEndCaptureFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onTouchEndCapture", js.Any.fromFunction1(value))
+      inline def setOnTouchEndCaptureFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onTouchEndCapture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchEndCaptureNull: Self = StObject.set(x, "onTouchEndCapture", null)
+      inline def setOnTouchEndCaptureNull: Self = StObject.set(x, "onTouchEndCapture", null)
       
-      @scala.inline
-      def setOnTouchEndCaptureUndefined: Self = StObject.set(x, "onTouchEndCapture", js.undefined)
+      inline def setOnTouchEndCaptureUndefined: Self = StObject.set(x, "onTouchEndCapture", js.undefined)
       
-      @scala.inline
-      def setOnTouchEndFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+      inline def setOnTouchEndFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchEndNull: Self = StObject.set(x, "onTouchEnd", null)
+      inline def setOnTouchEndNull: Self = StObject.set(x, "onTouchEnd", null)
       
-      @scala.inline
-      def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
+      inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
       
-      @scala.inline
-      def setOnTouchMove(
+      inline def setOnTouchMove(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
       ): Self = StObject.set(x, "onTouchMove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnTouchMoveFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+      inline def setOnTouchMoveFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchMoveNull: Self = StObject.set(x, "onTouchMove", null)
+      inline def setOnTouchMoveNull: Self = StObject.set(x, "onTouchMove", null)
       
-      @scala.inline
-      def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
+      inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
       
-      @scala.inline
-      def setOnTouchStart(
+      inline def setOnTouchStart(
         value: (WithAnimatedValue[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]]) | (js.Function1[/* event */ GestureResponderEvent, Unit]) | (TAugmentRef[js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]])
       ): Self = StObject.set(x, "onTouchStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnTouchStartFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      inline def setOnTouchStartFunction1(value: js.Any | (/* event */ GestureResponderEvent) | LegacyRef[js.Any] | Null => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchStartNull: Self = StObject.set(x, "onTouchStart", null)
+      inline def setOnTouchStartNull: Self = StObject.set(x, "onTouchStart", null)
       
-      @scala.inline
-      def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+      inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
       
-      @scala.inline
-      def setPointerEvents(
+      inline def setPointerEvents(
         value: (WithAnimatedValue[js.UndefOr[`box-none` | none | `box-only` | auto]]) | `box-none` | none | `box-only` | auto | (TAugmentRef[js.UndefOr[`box-none` | none | `box-only` | auto]])
       ): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerEventsFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "pointerEvents", js.Any.fromFunction1(value))
+      inline def setPointerEventsFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "pointerEvents", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPointerEventsNull: Self = StObject.set(x, "pointerEvents", null)
+      inline def setPointerEventsNull: Self = StObject.set(x, "pointerEvents", null)
       
-      @scala.inline
-      def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
+      inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
       
-      @scala.inline
-      def setRemoveClippedSubviews(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "removeClippedSubviews", value.asInstanceOf[js.Any])
+      inline def setRemoveClippedSubviews(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "removeClippedSubviews", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveClippedSubviewsFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "removeClippedSubviews", js.Any.fromFunction1(value))
+      inline def setRemoveClippedSubviewsFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "removeClippedSubviews", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClippedSubviewsNull: Self = StObject.set(x, "removeClippedSubviews", null)
+      inline def setRemoveClippedSubviewsNull: Self = StObject.set(x, "removeClippedSubviews", null)
       
-      @scala.inline
-      def setRemoveClippedSubviewsUndefined: Self = StObject.set(x, "removeClippedSubviews", js.undefined)
+      inline def setRemoveClippedSubviewsUndefined: Self = StObject.set(x, "removeClippedSubviews", js.undefined)
       
-      @scala.inline
-      def setRenderToHardwareTextureAndroid(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "renderToHardwareTextureAndroid", value.asInstanceOf[js.Any])
+      inline def setRenderToHardwareTextureAndroid(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "renderToHardwareTextureAndroid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderToHardwareTextureAndroidFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "renderToHardwareTextureAndroid", js.Any.fromFunction1(value))
+      inline def setRenderToHardwareTextureAndroidFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "renderToHardwareTextureAndroid", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderToHardwareTextureAndroidNull: Self = StObject.set(x, "renderToHardwareTextureAndroid", null)
+      inline def setRenderToHardwareTextureAndroidNull: Self = StObject.set(x, "renderToHardwareTextureAndroid", null)
       
-      @scala.inline
-      def setRenderToHardwareTextureAndroidUndefined: Self = StObject.set(x, "renderToHardwareTextureAndroid", js.undefined)
+      inline def setRenderToHardwareTextureAndroidUndefined: Self = StObject.set(x, "renderToHardwareTextureAndroid", js.undefined)
       
-      @scala.inline
-      def setShouldRasterizeIOS(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])
+      inline def setShouldRasterizeIOS(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldRasterizeIOSFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "shouldRasterizeIOS", js.Any.fromFunction1(value))
+      inline def setShouldRasterizeIOSFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "shouldRasterizeIOS", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldRasterizeIOSNull: Self = StObject.set(x, "shouldRasterizeIOS", null)
+      inline def setShouldRasterizeIOSNull: Self = StObject.set(x, "shouldRasterizeIOS", null)
       
-      @scala.inline
-      def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
+      inline def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
       
-      @scala.inline
-      def setStyle(
+      inline def setStyle(
         value: WithAnimatedValue[js.UndefOr[StyleProp[ViewStyle]]] | StyleProp[ViewStyle] | TAugmentRef[js.UndefOr[StyleProp[ViewStyle]]]
       ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "style", js.Any.fromFunction1(value))
+      inline def setStyleFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "style", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTestID(value: WithAnimatedValue[js.UndefOr[String]] | String | TAugmentRef[js.UndefOr[String]]): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
+      inline def setTestID(value: WithAnimatedValue[js.UndefOr[String]] | String | TAugmentRef[js.UndefOr[String]]): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestIDFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "testID", js.Any.fromFunction1(value))
+      inline def setTestIDFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "testID", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTestIDNull: Self = StObject.set(x, "testID", null)
+      inline def setTestIDNull: Self = StObject.set(x, "testID", null)
       
-      @scala.inline
-      def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+      inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
       
-      @scala.inline
-      def setTvParallaxMagnification(value: WithAnimatedValue[js.UndefOr[Double]] | Double | TAugmentRef[js.UndefOr[Double]]): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
+      inline def setTvParallaxMagnification(value: WithAnimatedValue[js.UndefOr[Double]] | Double | TAugmentRef[js.UndefOr[Double]]): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTvParallaxMagnificationFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "tvParallaxMagnification", js.Any.fromFunction1(value))
+      inline def setTvParallaxMagnificationFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "tvParallaxMagnification", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTvParallaxMagnificationNull: Self = StObject.set(x, "tvParallaxMagnification", null)
+      inline def setTvParallaxMagnificationNull: Self = StObject.set(x, "tvParallaxMagnification", null)
       
-      @scala.inline
-      def setTvParallaxMagnificationUndefined: Self = StObject.set(x, "tvParallaxMagnification", js.undefined)
+      inline def setTvParallaxMagnificationUndefined: Self = StObject.set(x, "tvParallaxMagnification", js.undefined)
       
-      @scala.inline
-      def setTvParallaxProperties(
+      inline def setTvParallaxProperties(
         value: WithAnimatedValue[js.UndefOr[TVParallaxProperties]] | TVParallaxProperties | TAugmentRef[js.UndefOr[TVParallaxProperties]]
       ): Self = StObject.set(x, "tvParallaxProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTvParallaxPropertiesFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "tvParallaxProperties", js.Any.fromFunction1(value))
+      inline def setTvParallaxPropertiesFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "tvParallaxProperties", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTvParallaxPropertiesNull: Self = StObject.set(x, "tvParallaxProperties", null)
+      inline def setTvParallaxPropertiesNull: Self = StObject.set(x, "tvParallaxProperties", null)
       
-      @scala.inline
-      def setTvParallaxPropertiesUndefined: Self = StObject.set(x, "tvParallaxProperties", js.undefined)
+      inline def setTvParallaxPropertiesUndefined: Self = StObject.set(x, "tvParallaxProperties", js.undefined)
       
-      @scala.inline
-      def setTvParallaxShiftDistanceX(value: WithAnimatedValue[js.UndefOr[Double]] | Double | TAugmentRef[js.UndefOr[Double]]): Self = StObject.set(x, "tvParallaxShiftDistanceX", value.asInstanceOf[js.Any])
+      inline def setTvParallaxShiftDistanceX(value: WithAnimatedValue[js.UndefOr[Double]] | Double | TAugmentRef[js.UndefOr[Double]]): Self = StObject.set(x, "tvParallaxShiftDistanceX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTvParallaxShiftDistanceXFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "tvParallaxShiftDistanceX", js.Any.fromFunction1(value))
+      inline def setTvParallaxShiftDistanceXFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "tvParallaxShiftDistanceX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTvParallaxShiftDistanceXNull: Self = StObject.set(x, "tvParallaxShiftDistanceX", null)
+      inline def setTvParallaxShiftDistanceXNull: Self = StObject.set(x, "tvParallaxShiftDistanceX", null)
       
-      @scala.inline
-      def setTvParallaxShiftDistanceXUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceX", js.undefined)
+      inline def setTvParallaxShiftDistanceXUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceX", js.undefined)
       
-      @scala.inline
-      def setTvParallaxShiftDistanceY(value: WithAnimatedValue[js.UndefOr[Double]] | Double | TAugmentRef[js.UndefOr[Double]]): Self = StObject.set(x, "tvParallaxShiftDistanceY", value.asInstanceOf[js.Any])
+      inline def setTvParallaxShiftDistanceY(value: WithAnimatedValue[js.UndefOr[Double]] | Double | TAugmentRef[js.UndefOr[Double]]): Self = StObject.set(x, "tvParallaxShiftDistanceY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTvParallaxShiftDistanceYFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "tvParallaxShiftDistanceY", js.Any.fromFunction1(value))
+      inline def setTvParallaxShiftDistanceYFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "tvParallaxShiftDistanceY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTvParallaxShiftDistanceYNull: Self = StObject.set(x, "tvParallaxShiftDistanceY", null)
+      inline def setTvParallaxShiftDistanceYNull: Self = StObject.set(x, "tvParallaxShiftDistanceY", null)
       
-      @scala.inline
-      def setTvParallaxShiftDistanceYUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceY", js.undefined)
+      inline def setTvParallaxShiftDistanceYUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceY", js.undefined)
       
-      @scala.inline
-      def setTvParallaxTiltAngle(value: WithAnimatedValue[js.UndefOr[Double]] | Double | TAugmentRef[js.UndefOr[Double]]): Self = StObject.set(x, "tvParallaxTiltAngle", value.asInstanceOf[js.Any])
+      inline def setTvParallaxTiltAngle(value: WithAnimatedValue[js.UndefOr[Double]] | Double | TAugmentRef[js.UndefOr[Double]]): Self = StObject.set(x, "tvParallaxTiltAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTvParallaxTiltAngleFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "tvParallaxTiltAngle", js.Any.fromFunction1(value))
+      inline def setTvParallaxTiltAngleFunction1(value: /* instance */ (js.Any | LegacyRef[js.Any]) | Null => Unit): Self = StObject.set(x, "tvParallaxTiltAngle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTvParallaxTiltAngleNull: Self = StObject.set(x, "tvParallaxTiltAngle", null)
+      inline def setTvParallaxTiltAngleNull: Self = StObject.set(x, "tvParallaxTiltAngle", null)
       
-      @scala.inline
-      def setTvParallaxTiltAngleUndefined: Self = StObject.set(x, "tvParallaxTiltAngle", js.undefined)
+      inline def setTvParallaxTiltAngleUndefined: Self = StObject.set(x, "tvParallaxTiltAngle", js.undefined)
     }
   }
   
@@ -1003,74 +780,52 @@ object anon {
   }
   object Disabled {
     
-    @scala.inline
-    def apply(): Disabled = {
+    inline def apply(): Disabled = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Disabled]
     }
     
-    @scala.inline
-    implicit class DisabledMutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
+    extension [Self <: Disabled](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnRippleAnimation(value: (/* animation */ CompositeAnimation, /* callback */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "onRippleAnimation", js.Any.fromFunction2(value))
+      inline def setOnRippleAnimation(value: (/* animation */ CompositeAnimation, /* callback */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "onRippleAnimation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRippleAnimationUndefined: Self = StObject.set(x, "onRippleAnimation", js.undefined)
+      inline def setOnRippleAnimationUndefined: Self = StObject.set(x, "onRippleAnimation", js.undefined)
       
-      @scala.inline
-      def setRippleCentered(value: Boolean): Self = StObject.set(x, "rippleCentered", value.asInstanceOf[js.Any])
+      inline def setRippleCentered(value: Boolean): Self = StObject.set(x, "rippleCentered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleCenteredUndefined: Self = StObject.set(x, "rippleCentered", js.undefined)
+      inline def setRippleCenteredUndefined: Self = StObject.set(x, "rippleCentered", js.undefined)
       
-      @scala.inline
-      def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
+      inline def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
+      inline def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
       
-      @scala.inline
-      def setRippleContainerBorderRadius(value: Double): Self = StObject.set(x, "rippleContainerBorderRadius", value.asInstanceOf[js.Any])
+      inline def setRippleContainerBorderRadius(value: Double): Self = StObject.set(x, "rippleContainerBorderRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleContainerBorderRadiusUndefined: Self = StObject.set(x, "rippleContainerBorderRadius", js.undefined)
+      inline def setRippleContainerBorderRadiusUndefined: Self = StObject.set(x, "rippleContainerBorderRadius", js.undefined)
       
-      @scala.inline
-      def setRippleDuration(value: Double): Self = StObject.set(x, "rippleDuration", value.asInstanceOf[js.Any])
+      inline def setRippleDuration(value: Double): Self = StObject.set(x, "rippleDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleDurationUndefined: Self = StObject.set(x, "rippleDuration", js.undefined)
+      inline def setRippleDurationUndefined: Self = StObject.set(x, "rippleDuration", js.undefined)
       
-      @scala.inline
-      def setRippleFades(value: Boolean): Self = StObject.set(x, "rippleFades", value.asInstanceOf[js.Any])
+      inline def setRippleFades(value: Boolean): Self = StObject.set(x, "rippleFades", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleFadesUndefined: Self = StObject.set(x, "rippleFades", js.undefined)
+      inline def setRippleFadesUndefined: Self = StObject.set(x, "rippleFades", js.undefined)
       
-      @scala.inline
-      def setRippleOpacity(value: Double): Self = StObject.set(x, "rippleOpacity", value.asInstanceOf[js.Any])
+      inline def setRippleOpacity(value: Double): Self = StObject.set(x, "rippleOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleOpacityUndefined: Self = StObject.set(x, "rippleOpacity", js.undefined)
+      inline def setRippleOpacityUndefined: Self = StObject.set(x, "rippleOpacity", js.undefined)
       
-      @scala.inline
-      def setRippleSequential(value: Boolean): Self = StObject.set(x, "rippleSequential", value.asInstanceOf[js.Any])
+      inline def setRippleSequential(value: Boolean): Self = StObject.set(x, "rippleSequential", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleSequentialUndefined: Self = StObject.set(x, "rippleSequential", js.undefined)
+      inline def setRippleSequentialUndefined: Self = StObject.set(x, "rippleSequential", js.undefined)
       
-      @scala.inline
-      def setRippleSize(value: Double): Self = StObject.set(x, "rippleSize", value.asInstanceOf[js.Any])
+      inline def setRippleSize(value: Double): Self = StObject.set(x, "rippleSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleSizeUndefined: Self = StObject.set(x, "rippleSize", js.undefined)
+      inline def setRippleSizeUndefined: Self = StObject.set(x, "rippleSize", js.undefined)
     }
   }
 }

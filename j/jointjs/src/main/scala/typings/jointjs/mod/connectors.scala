@@ -23,26 +23,22 @@ object connectors {
   @JSImport("jointjs", "connectors.jumpover")
   @js.native
   def jumpover: GenericConnector[typings.jointjs.jointjsStrings.jumpover] = js.native
-  @scala.inline
-  def jumpover_=(x: GenericConnector[jumpover]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jumpover")(x.asInstanceOf[js.Any])
+  inline def jumpover_=(x: GenericConnector[jumpover]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jumpover")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "connectors.normal")
   @js.native
   def normal: GenericConnector[typings.jointjs.jointjsStrings.normal] = js.native
-  @scala.inline
-  def normal_=(x: GenericConnector[normal]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal")(x.asInstanceOf[js.Any])
+  inline def normal_=(x: GenericConnector[normal]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "connectors.rounded")
   @js.native
   def rounded: GenericConnector[typings.jointjs.jointjsStrings.rounded] = js.native
-  @scala.inline
-  def rounded_=(x: GenericConnector[rounded]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rounded")(x.asInstanceOf[js.Any])
+  inline def rounded_=(x: GenericConnector[rounded]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rounded")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "connectors.smooth")
   @js.native
   def smooth: GenericConnector[typings.jointjs.jointjsStrings.smooth] = js.native
-  @scala.inline
-  def smooth_=(x: GenericConnector[smooth]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smooth")(x.asInstanceOf[js.Any])
+  inline def smooth_=(x: GenericConnector[smooth]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smooth")(x.asInstanceOf[js.Any])
   
   type Connector = GenericConnector[ConnectorType]
   
@@ -56,17 +52,13 @@ object connectors {
   trait ConnectorArguments extends StObject
   object ConnectorArguments {
     
-    @scala.inline
-    def jump: typings.jointjs.jointjsStrings.jump = "jump".asInstanceOf[typings.jointjs.jointjsStrings.jump]
+    inline def jump: typings.jointjs.jointjsStrings.jump = "jump".asInstanceOf[typings.jointjs.jointjsStrings.jump]
     
-    @scala.inline
-    def radius: typings.jointjs.jointjsStrings.radius = "radius".asInstanceOf[typings.jointjs.jointjsStrings.radius]
+    inline def radius: typings.jointjs.jointjsStrings.radius = "radius".asInstanceOf[typings.jointjs.jointjsStrings.radius]
     
-    @scala.inline
-    def raw: typings.jointjs.jointjsStrings.raw = "raw".asInstanceOf[typings.jointjs.jointjsStrings.raw]
+    inline def raw: typings.jointjs.jointjsStrings.raw = "raw".asInstanceOf[typings.jointjs.jointjsStrings.raw]
     
-    @scala.inline
-    def size: typings.jointjs.jointjsStrings.size = "size".asInstanceOf[typings.jointjs.jointjsStrings.size]
+    inline def size: typings.jointjs.jointjsStrings.size = "size".asInstanceOf[typings.jointjs.jointjsStrings.size]
   }
   
   trait ConnectorArgumentsMap
@@ -83,8 +75,7 @@ object connectors {
   }
   object ConnectorArgumentsMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       jumpover: JumpOverConnectorArguments,
       normal: NormalConnectorArguments,
       rounded: RoundedConnectorArguments,
@@ -94,20 +85,15 @@ object connectors {
       __obj.asInstanceOf[ConnectorArgumentsMap]
     }
     
-    @scala.inline
-    implicit class ConnectorArgumentsMapMutableBuilder[Self <: ConnectorArgumentsMap] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectorArgumentsMap](x: Self) {
       
-      @scala.inline
-      def setJumpover(value: JumpOverConnectorArguments): Self = StObject.set(x, "jumpover", value.asInstanceOf[js.Any])
+      inline def setJumpover(value: JumpOverConnectorArguments): Self = StObject.set(x, "jumpover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormal(value: NormalConnectorArguments): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+      inline def setNormal(value: NormalConnectorArguments): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRounded(value: RoundedConnectorArguments): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+      inline def setRounded(value: RoundedConnectorArguments): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmooth(value: SmoothConnectorArguments): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+      inline def setSmooth(value: SmoothConnectorArguments): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,23 +125,18 @@ object connectors {
   }
   object GenericConnectorJSON {
     
-    @scala.inline
-    def apply[K /* <: ConnectorType */](name: K): GenericConnectorJSON[K] = {
+    inline def apply[K /* <: ConnectorType */](name: K): GenericConnectorJSON[K] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericConnectorJSON[K]]
     }
     
-    @scala.inline
-    implicit class GenericConnectorJSONMutableBuilder[Self <: GenericConnectorJSON[?], K /* <: ConnectorType */] (val x: Self & GenericConnectorJSON[K]) extends AnyVal {
+    extension [Self <: GenericConnectorJSON[?], K /* <: ConnectorType */](x: Self & GenericConnectorJSON[K]) {
       
-      @scala.inline
-      def setArgs(value: GenericConnectorArguments[K]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: GenericConnectorArguments[K]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,38 +152,28 @@ object connectors {
   }
   object JumpOverConnectorArguments {
     
-    @scala.inline
-    def apply(): JumpOverConnectorArguments = {
+    inline def apply(): JumpOverConnectorArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JumpOverConnectorArguments]
     }
     
-    @scala.inline
-    implicit class JumpOverConnectorArgumentsMutableBuilder[Self <: JumpOverConnectorArguments] (val x: Self) extends AnyVal {
+    extension [Self <: JumpOverConnectorArguments](x: Self) {
       
-      @scala.inline
-      def setJump(value: arc | gap | cubic): Self = StObject.set(x, "jump", value.asInstanceOf[js.Any])
+      inline def setJump(value: arc | gap | cubic): Self = StObject.set(x, "jump", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJumpUndefined: Self = StObject.set(x, "jump", js.undefined)
+      inline def setJumpUndefined: Self = StObject.set(x, "jump", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -212,20 +183,16 @@ object connectors {
   }
   object NormalConnectorArguments {
     
-    @scala.inline
-    def apply(): NormalConnectorArguments = {
+    inline def apply(): NormalConnectorArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NormalConnectorArguments]
     }
     
-    @scala.inline
-    implicit class NormalConnectorArgumentsMutableBuilder[Self <: NormalConnectorArguments] (val x: Self) extends AnyVal {
+    extension [Self <: NormalConnectorArguments](x: Self) {
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     }
   }
   
@@ -237,26 +204,20 @@ object connectors {
   }
   object RoundedConnectorArguments {
     
-    @scala.inline
-    def apply(): RoundedConnectorArguments = {
+    inline def apply(): RoundedConnectorArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RoundedConnectorArguments]
     }
     
-    @scala.inline
-    implicit class RoundedConnectorArgumentsMutableBuilder[Self <: RoundedConnectorArguments] (val x: Self) extends AnyVal {
+    extension [Self <: RoundedConnectorArguments](x: Self) {
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     }
   }
   
@@ -266,20 +227,16 @@ object connectors {
   }
   object SmoothConnectorArguments {
     
-    @scala.inline
-    def apply(): SmoothConnectorArguments = {
+    inline def apply(): SmoothConnectorArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SmoothConnectorArguments]
     }
     
-    @scala.inline
-    implicit class SmoothConnectorArgumentsMutableBuilder[Self <: SmoothConnectorArguments] (val x: Self) extends AnyVal {
+    extension [Self <: SmoothConnectorArguments](x: Self) {
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     }
   }
 }

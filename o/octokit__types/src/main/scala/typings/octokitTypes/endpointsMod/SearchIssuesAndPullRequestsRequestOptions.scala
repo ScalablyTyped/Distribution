@@ -20,25 +20,19 @@ trait SearchIssuesAndPullRequestsRequestOptions extends StObject {
 }
 object SearchIssuesAndPullRequestsRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): SearchIssuesAndPullRequestsRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): SearchIssuesAndPullRequestsRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/search/issues")
     __obj.asInstanceOf[SearchIssuesAndPullRequestsRequestOptions]
   }
   
-  @scala.inline
-  implicit class SearchIssuesAndPullRequestsRequestOptionsMutableBuilder[Self <: SearchIssuesAndPullRequestsRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchIssuesAndPullRequestsRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashsearchSlashissues): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashsearchSlashissues): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

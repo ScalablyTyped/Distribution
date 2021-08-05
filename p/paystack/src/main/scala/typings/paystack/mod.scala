@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(secret_key: String): Object = ^.asInstanceOf[js.Dynamic].apply(secret_key.asInstanceOf[js.Any]).asInstanceOf[Object]
+  inline def apply(secret_key: String): Object = ^.asInstanceOf[js.Dynamic].apply(secret_key.asInstanceOf[js.Any]).asInstanceOf[Object]
   
   @JSImport("paystack", JSImport.Namespace)
   @js.native
@@ -39,8 +38,7 @@ object mod {
   }
   object Object {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       customer: Create,
       misc: Listbanks,
       page: Get,
@@ -53,29 +51,21 @@ object mod {
       __obj.asInstanceOf[Object]
     }
     
-    @scala.inline
-    implicit class ObjectMutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
+    extension [Self <: Object](x: Self) {
       
-      @scala.inline
-      def setCustomer(value: Create): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+      inline def setCustomer(value: Create): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMisc(value: Listbanks): Self = StObject.set(x, "misc", value.asInstanceOf[js.Any])
+      inline def setMisc(value: Listbanks): Self = StObject.set(x, "misc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage(value: Get): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Get): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlan(value: List): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      inline def setPlan(value: List): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubaccount(value: Update): Self = StObject.set(x, "subaccount", value.asInstanceOf[js.Any])
+      inline def setSubaccount(value: Update): Self = StObject.set(x, "subaccount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscription(value: Disable): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+      inline def setSubscription(value: Disable): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransaction(value: Charge): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+      inline def setTransaction(value: Charge): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,26 +82,20 @@ object mod {
   }
   object Response {
     
-    @scala.inline
-    def apply(message: String, status: Boolean): Response = {
+    inline def apply(message: String, status: Boolean): Response = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

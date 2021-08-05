@@ -25,23 +25,18 @@ object mod {
   }
   object LocationBase {
     
-    @scala.inline
-    def apply(action: PUSH | String): LocationBase = {
+    inline def apply(action: PUSH | String): LocationBase = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocationBase]
     }
     
-    @scala.inline
-    implicit class LocationBaseMutableBuilder[Self <: LocationBase] (val x: Self) extends AnyVal {
+    extension [Self <: LocationBase](x: Self) {
       
-      @scala.inline
-      def setAction(value: PUSH | String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: PUSH | String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     }
   }
   
@@ -83,8 +78,7 @@ object mod {
   }
   object ScrollBehaviorOptions {
     
-    @scala.inline
-    def apply[TLocation /* <: LocationBase */, TContext](
+    inline def apply[TLocation /* <: LocationBase */, TContext](
       addTransitionHook: TransitionHook => js.Function0[Unit],
       getCurrentLocation: () => TLocation,
       stateStorage: Read[TLocation]
@@ -93,23 +87,17 @@ object mod {
       __obj.asInstanceOf[ScrollBehaviorOptions[TLocation, TContext]]
     }
     
-    @scala.inline
-    implicit class ScrollBehaviorOptionsMutableBuilder[Self <: ScrollBehaviorOptions[?, ?], TLocation /* <: LocationBase */, TContext] (val x: Self & (ScrollBehaviorOptions[TLocation, TContext])) extends AnyVal {
+    extension [Self <: ScrollBehaviorOptions[?, ?], TLocation /* <: LocationBase */, TContext](x: Self & (ScrollBehaviorOptions[TLocation, TContext])) {
       
-      @scala.inline
-      def setAddTransitionHook(value: TransitionHook => js.Function0[Unit]): Self = StObject.set(x, "addTransitionHook", js.Any.fromFunction1(value))
+      inline def setAddTransitionHook(value: TransitionHook => js.Function0[Unit]): Self = StObject.set(x, "addTransitionHook", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCurrentLocation(value: () => TLocation): Self = StObject.set(x, "getCurrentLocation", js.Any.fromFunction0(value))
+      inline def setGetCurrentLocation(value: () => TLocation): Self = StObject.set(x, "getCurrentLocation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShouldUpdateScroll(value: (/* prevContext */ TContext | Null, TContext) => ScrollTarget): Self = StObject.set(x, "shouldUpdateScroll", js.Any.fromFunction2(value))
+      inline def setShouldUpdateScroll(value: (/* prevContext */ TContext | Null, TContext) => ScrollTarget): Self = StObject.set(x, "shouldUpdateScroll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShouldUpdateScrollUndefined: Self = StObject.set(x, "shouldUpdateScroll", js.undefined)
+      inline def setShouldUpdateScrollUndefined: Self = StObject.set(x, "shouldUpdateScroll", js.undefined)
       
-      @scala.inline
-      def setStateStorage(value: Read[TLocation]): Self = StObject.set(x, "stateStorage", value.asInstanceOf[js.Any])
+      inline def setStateStorage(value: Read[TLocation]): Self = StObject.set(x, "stateStorage", value.asInstanceOf[js.Any])
     }
   }
   

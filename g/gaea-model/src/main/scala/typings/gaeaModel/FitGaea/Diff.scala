@@ -56,8 +56,7 @@ trait Diff extends StObject {
 }
 object Diff {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     mapUniqueKey: String,
     `type`: add | move | remove | exchange | update | paste | reset | addCombo | addSource
   ): Diff = {
@@ -66,67 +65,46 @@ object Diff {
     __obj.asInstanceOf[Diff]
   }
   
-  @scala.inline
-  implicit class DiffMutableBuilder[Self <: Diff] (val x: Self) extends AnyVal {
+  extension [Self <: Diff](x: Self) {
     
-    @scala.inline
-    def setAdd(value: Index): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: Index): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddCombo(value: ComponentInfo): Self = StObject.set(x, "addCombo", value.asInstanceOf[js.Any])
+    inline def setAddCombo(value: ComponentInfo): Self = StObject.set(x, "addCombo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddComboUndefined: Self = StObject.set(x, "addCombo", js.undefined)
+    inline def setAddComboUndefined: Self = StObject.set(x, "addCombo", js.undefined)
     
-    @scala.inline
-    def setAddSource(value: ComponentInfo): Self = StObject.set(x, "addSource", value.asInstanceOf[js.Any])
+    inline def setAddSource(value: ComponentInfo): Self = StObject.set(x, "addSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddSourceUndefined: Self = StObject.set(x, "addSource", js.undefined)
+    inline def setAddSourceUndefined: Self = StObject.set(x, "addSource", js.undefined)
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setExchange(value: NewIndex): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
+    inline def setExchange(value: NewIndex): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExchangeUndefined: Self = StObject.set(x, "exchange", js.undefined)
+    inline def setExchangeUndefined: Self = StObject.set(x, "exchange", js.undefined)
     
-    @scala.inline
-    def setMapUniqueKey(value: String): Self = StObject.set(x, "mapUniqueKey", value.asInstanceOf[js.Any])
+    inline def setMapUniqueKey(value: String): Self = StObject.set(x, "mapUniqueKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMove(value: SourceIndex): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+    inline def setMove(value: SourceIndex): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
+    inline def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
     
-    @scala.inline
-    def setPaste(value: DiffRemove): Self = StObject.set(x, "paste", value.asInstanceOf[js.Any])
+    inline def setPaste(value: DiffRemove): Self = StObject.set(x, "paste", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
+    inline def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
     
-    @scala.inline
-    def setRemove(value: DiffRemove): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: DiffRemove): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    @scala.inline
-    def setReset(value: BeforeName): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    inline def setReset(value: BeforeName): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
-    @scala.inline
-    def setType(value: add | move | remove | exchange | update | paste | reset | addCombo | addSource): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: add | move | remove | exchange | update | paste | reset | addCombo | addSource): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: NewValue): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: NewValue): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

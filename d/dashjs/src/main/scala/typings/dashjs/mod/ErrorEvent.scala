@@ -21,36 +21,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ErrorEvent extends StObject
 object ErrorEvent {
   
-  @scala.inline
-  def DownloadErrorEvent(event: Id): typings.dashjs.mod.DownloadErrorEvent = {
+  inline def DownloadErrorEvent(event: Id): typings.dashjs.mod.DownloadErrorEvent = {
     val __obj = js.Dynamic.literal(error = "download", event = event.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[typings.dashjs.mod.DownloadErrorEvent]
   }
   
-  @scala.inline
-  def GenericErrorEvent(error: capability | mediasource | key_session | key_message, event: String): typings.dashjs.mod.GenericErrorEvent = {
+  inline def GenericErrorEvent(error: capability | mediasource | key_session | key_message, event: String): typings.dashjs.mod.GenericErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[typings.dashjs.mod.GenericErrorEvent]
   }
   
-  @scala.inline
-  def ManifestErrorEvent(event: typings.dashjs.anon.Event): typings.dashjs.mod.ManifestErrorEvent = {
+  inline def ManifestErrorEvent(event: typings.dashjs.anon.Event): typings.dashjs.mod.ManifestErrorEvent = {
     val __obj = js.Dynamic.literal(error = "manifestError", event = event.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[typings.dashjs.mod.ManifestErrorEvent]
   }
   
-  @scala.inline
-  def MediaPlayerErrorEvent(error: Code): typings.dashjs.mod.MediaPlayerErrorEvent = {
+  inline def MediaPlayerErrorEvent(error: Code): typings.dashjs.mod.MediaPlayerErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[typings.dashjs.mod.MediaPlayerErrorEvent]
   }
   
-  @scala.inline
-  def TimedTextErrorEvent(event: Cc): typings.dashjs.mod.TimedTextErrorEvent = {
+  inline def TimedTextErrorEvent(event: Cc): typings.dashjs.mod.TimedTextErrorEvent = {
     val __obj = js.Dynamic.literal(error = "cc", event = event.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[typings.dashjs.mod.TimedTextErrorEvent]

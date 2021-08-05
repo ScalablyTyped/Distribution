@@ -43,58 +43,41 @@ trait StartImportResponse extends StObject {
 }
 object StartImportResponse {
   
-  @scala.inline
-  def apply(): StartImportResponse = {
+  inline def apply(): StartImportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartImportResponse]
   }
   
-  @scala.inline
-  implicit class StartImportResponseMutableBuilder[Self <: StartImportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartImportResponse](x: Self) {
     
-    @scala.inline
-    def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
-    @scala.inline
-    def setImportId(value: String): Self = StObject.set(x, "importId", value.asInstanceOf[js.Any])
+    inline def setImportId(value: String): Self = StObject.set(x, "importId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportIdUndefined: Self = StObject.set(x, "importId", js.undefined)
+    inline def setImportIdUndefined: Self = StObject.set(x, "importId", js.undefined)
     
-    @scala.inline
-    def setImportStatus(value: ImportStatus): Self = StObject.set(x, "importStatus", value.asInstanceOf[js.Any])
+    inline def setImportStatus(value: ImportStatus): Self = StObject.set(x, "importStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportStatusUndefined: Self = StObject.set(x, "importStatus", js.undefined)
+    inline def setImportStatusUndefined: Self = StObject.set(x, "importStatus", js.undefined)
     
-    @scala.inline
-    def setMergeStrategy(value: MergeStrategy): Self = StObject.set(x, "mergeStrategy", value.asInstanceOf[js.Any])
+    inline def setMergeStrategy(value: MergeStrategy): Self = StObject.set(x, "mergeStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeStrategyUndefined: Self = StObject.set(x, "mergeStrategy", js.undefined)
+    inline def setMergeStrategyUndefined: Self = StObject.set(x, "mergeStrategy", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

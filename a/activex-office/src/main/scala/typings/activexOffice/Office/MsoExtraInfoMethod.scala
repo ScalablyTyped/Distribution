@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoExtraInfoMethod extends StObject
 object MsoExtraInfoMethod {
   
-  @scala.inline
-  def msoMethodGet: `0` = 0.asInstanceOf[`0`]
+  inline def msoMethodGet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoMethodPost: `1` = 1.asInstanceOf[`1`]
+  inline def msoMethodPost: `1` = 1.asInstanceOf[`1`]
 }

@@ -222,10 +222,8 @@ object cms {
       *   }]
       * });
       */
-    @scala.inline
-    def SignedData(): typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = ^.asInstanceOf[js.Dynamic].applyDynamic("SignedData")().asInstanceOf[typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData]
-    @scala.inline
-    def SignedData(param: Certs): typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = ^.asInstanceOf[js.Dynamic].applyDynamic("SignedData")(param.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData]
+    inline def SignedData(): typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = ^.asInstanceOf[js.Dynamic].applyDynamic("SignedData")().asInstanceOf[typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData]
+    inline def SignedData(param: Certs): typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = ^.asInstanceOf[js.Dynamic].applyDynamic("SignedData")(param.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData]
     
     /**
       * verify SignedData specified by JSON parameters
@@ -251,10 +249,8 @@ object cms {
       *   ]
       * }
       */
-    @scala.inline
-    def verifySignedData(): IsValid = ^.asInstanceOf[js.Dynamic].applyDynamic("verifySignedData")().asInstanceOf[IsValid]
-    @scala.inline
-    def verifySignedData(param: Cms): IsValid = ^.asInstanceOf[js.Dynamic].applyDynamic("verifySignedData")(param.asInstanceOf[js.Any]).asInstanceOf[IsValid]
+    inline def verifySignedData(): IsValid = ^.asInstanceOf[js.Dynamic].applyDynamic("verifySignedData")().asInstanceOf[IsValid]
+    inline def verifySignedData(param: Cms): IsValid = ^.asInstanceOf[js.Dynamic].applyDynamic("verifySignedData")(param.asInstanceOf[js.Any]).asInstanceOf[IsValid]
   }
   
   /**

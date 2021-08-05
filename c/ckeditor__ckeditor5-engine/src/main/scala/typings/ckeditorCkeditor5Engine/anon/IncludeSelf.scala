@@ -12,19 +12,15 @@ trait IncludeSelf extends StObject {
 }
 object IncludeSelf {
   
-  @scala.inline
-  def apply(includeSelf: Boolean, parentFirst: Boolean): IncludeSelf = {
+  inline def apply(includeSelf: Boolean, parentFirst: Boolean): IncludeSelf = {
     val __obj = js.Dynamic.literal(includeSelf = includeSelf.asInstanceOf[js.Any], parentFirst = parentFirst.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludeSelf]
   }
   
-  @scala.inline
-  implicit class IncludeSelfMutableBuilder[Self <: IncludeSelf] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeSelf](x: Self) {
     
-    @scala.inline
-    def setIncludeSelf(value: Boolean): Self = StObject.set(x, "includeSelf", value.asInstanceOf[js.Any])
+    inline def setIncludeSelf(value: Boolean): Self = StObject.set(x, "includeSelf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentFirst(value: Boolean): Self = StObject.set(x, "parentFirst", value.asInstanceOf[js.Any])
+    inline def setParentFirst(value: Boolean): Self = StObject.set(x, "parentFirst", value.asInstanceOf[js.Any])
   }
 }

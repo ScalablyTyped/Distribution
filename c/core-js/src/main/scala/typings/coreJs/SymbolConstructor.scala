@@ -18,19 +18,15 @@ trait SymbolConstructor extends StObject {
 }
 object SymbolConstructor {
   
-  @scala.inline
-  def apply(useSimple: () => Unit, userSetter: () => Unit): SymbolConstructor = {
+  inline def apply(useSimple: () => Unit, userSetter: () => Unit): SymbolConstructor = {
     val __obj = js.Dynamic.literal(useSimple = js.Any.fromFunction0(useSimple), userSetter = js.Any.fromFunction0(userSetter))
     __obj.asInstanceOf[SymbolConstructor]
   }
   
-  @scala.inline
-  implicit class SymbolConstructorMutableBuilder[Self <: SymbolConstructor] (val x: Self) extends AnyVal {
+  extension [Self <: SymbolConstructor](x: Self) {
     
-    @scala.inline
-    def setUseSimple(value: () => Unit): Self = StObject.set(x, "useSimple", js.Any.fromFunction0(value))
+    inline def setUseSimple(value: () => Unit): Self = StObject.set(x, "useSimple", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUserSetter(value: () => Unit): Self = StObject.set(x, "userSetter", js.Any.fromFunction0(value))
+    inline def setUserSetter(value: () => Unit): Self = StObject.set(x, "userSetter", js.Any.fromFunction0(value))
   }
 }

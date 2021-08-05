@@ -43,44 +43,32 @@ object gridRowMod extends Shortcut {
   }
   object RowProps {
     
-    @scala.inline
-    def apply(): RowProps = {
+    inline def apply(): RowProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RowProps]
     }
     
-    @scala.inline
-    implicit class RowPropsMutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
+    extension [Self <: RowProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: top | middle | bottom | stretch): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: top | middle | bottom | stretch): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setGutter(value: Gutter | (js.Tuple2[Gutter, Gutter])): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+      inline def setGutter(value: Gutter | (js.Tuple2[Gutter, Gutter])): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
+      inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
       
-      @scala.inline
-      def setJustify(value: start | end | center | `space-around` | `space-between`): Self = StObject.set(x, "justify", value.asInstanceOf[js.Any])
+      inline def setJustify(value: start | end | center | `space-around` | `space-between`): Self = StObject.set(x, "justify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJustifyUndefined: Self = StObject.set(x, "justify", js.undefined)
+      inline def setJustifyUndefined: Self = StObject.set(x, "justify", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   

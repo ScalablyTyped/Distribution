@@ -28,37 +28,27 @@ trait IQuickTip
 }
 object IQuickTip {
   
-  @scala.inline
-  def apply(): IQuickTip = {
+  inline def apply(): IQuickTip = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IQuickTip]
   }
   
-  @scala.inline
-  implicit class IQuickTipMutableBuilder[Self <: IQuickTip] (val x: Self) extends AnyVal {
+  extension [Self <: IQuickTip](x: Self) {
     
-    @scala.inline
-    def setCancelShow(value: /* el */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "cancelShow", js.Any.fromFunction1(value))
+    inline def setCancelShow(value: /* el */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "cancelShow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCancelShowUndefined: Self = StObject.set(x, "cancelShow", js.undefined)
+    inline def setCancelShowUndefined: Self = StObject.set(x, "cancelShow", js.undefined)
     
-    @scala.inline
-    def setInterceptTitles(value: Boolean): Self = StObject.set(x, "interceptTitles", value.asInstanceOf[js.Any])
+    inline def setInterceptTitles(value: Boolean): Self = StObject.set(x, "interceptTitles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterceptTitlesUndefined: Self = StObject.set(x, "interceptTitles", js.undefined)
+    inline def setInterceptTitlesUndefined: Self = StObject.set(x, "interceptTitles", js.undefined)
     
-    @scala.inline
-    def setRegister(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+    inline def setRegister(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
+    inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
     
-    @scala.inline
-    def setUnregister(value: /* el */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
+    inline def setUnregister(value: /* el */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnregisterUndefined: Self = StObject.set(x, "unregister", js.undefined)
+    inline def setUnregisterUndefined: Self = StObject.set(x, "unregister", js.undefined)
   }
 }

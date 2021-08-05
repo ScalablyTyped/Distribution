@@ -11,19 +11,15 @@ trait TopicPartitions extends StObject {
 }
 object TopicPartitions {
   
-  @scala.inline
-  def apply(): TopicPartitions = {
+  inline def apply(): TopicPartitions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopicPartitions]
   }
   
-  @scala.inline
-  implicit class TopicPartitionsMutableBuilder[Self <: TopicPartitions] (val x: Self) extends AnyVal {
+  extension [Self <: TopicPartitions](x: Self) {
     
-    @scala.inline
-    def setPartitionCount(value: String): Self = StObject.set(x, "partitionCount", value.asInstanceOf[js.Any])
+    inline def setPartitionCount(value: String): Self = StObject.set(x, "partitionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionCountUndefined: Self = StObject.set(x, "partitionCount", js.undefined)
+    inline def setPartitionCountUndefined: Self = StObject.set(x, "partitionCount", js.undefined)
   }
 }

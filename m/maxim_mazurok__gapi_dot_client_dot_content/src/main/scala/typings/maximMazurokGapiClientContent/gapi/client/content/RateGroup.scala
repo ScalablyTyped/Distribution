@@ -29,58 +29,41 @@ trait RateGroup extends StObject {
 }
 object RateGroup {
   
-  @scala.inline
-  def apply(): RateGroup = {
+  inline def apply(): RateGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RateGroup]
   }
   
-  @scala.inline
-  implicit class RateGroupMutableBuilder[Self <: RateGroup] (val x: Self) extends AnyVal {
+  extension [Self <: RateGroup](x: Self) {
     
-    @scala.inline
-    def setApplicableShippingLabels(value: js.Array[String]): Self = StObject.set(x, "applicableShippingLabels", value.asInstanceOf[js.Any])
+    inline def setApplicableShippingLabels(value: js.Array[String]): Self = StObject.set(x, "applicableShippingLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicableShippingLabelsUndefined: Self = StObject.set(x, "applicableShippingLabels", js.undefined)
+    inline def setApplicableShippingLabelsUndefined: Self = StObject.set(x, "applicableShippingLabels", js.undefined)
     
-    @scala.inline
-    def setApplicableShippingLabelsVarargs(value: String*): Self = StObject.set(x, "applicableShippingLabels", js.Array(value :_*))
+    inline def setApplicableShippingLabelsVarargs(value: String*): Self = StObject.set(x, "applicableShippingLabels", js.Array(value :_*))
     
-    @scala.inline
-    def setCarrierRates(value: js.Array[CarrierRate]): Self = StObject.set(x, "carrierRates", value.asInstanceOf[js.Any])
+    inline def setCarrierRates(value: js.Array[CarrierRate]): Self = StObject.set(x, "carrierRates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierRatesUndefined: Self = StObject.set(x, "carrierRates", js.undefined)
+    inline def setCarrierRatesUndefined: Self = StObject.set(x, "carrierRates", js.undefined)
     
-    @scala.inline
-    def setCarrierRatesVarargs(value: CarrierRate*): Self = StObject.set(x, "carrierRates", js.Array(value :_*))
+    inline def setCarrierRatesVarargs(value: CarrierRate*): Self = StObject.set(x, "carrierRates", js.Array(value :_*))
     
-    @scala.inline
-    def setMainTable(value: Table): Self = StObject.set(x, "mainTable", value.asInstanceOf[js.Any])
+    inline def setMainTable(value: Table): Self = StObject.set(x, "mainTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainTableUndefined: Self = StObject.set(x, "mainTable", js.undefined)
+    inline def setMainTableUndefined: Self = StObject.set(x, "mainTable", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSingleValue(value: Value): Self = StObject.set(x, "singleValue", value.asInstanceOf[js.Any])
+    inline def setSingleValue(value: Value): Self = StObject.set(x, "singleValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleValueUndefined: Self = StObject.set(x, "singleValue", js.undefined)
+    inline def setSingleValueUndefined: Self = StObject.set(x, "singleValue", js.undefined)
     
-    @scala.inline
-    def setSubtables(value: js.Array[Table]): Self = StObject.set(x, "subtables", value.asInstanceOf[js.Any])
+    inline def setSubtables(value: js.Array[Table]): Self = StObject.set(x, "subtables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtablesUndefined: Self = StObject.set(x, "subtables", js.undefined)
+    inline def setSubtablesUndefined: Self = StObject.set(x, "subtables", js.undefined)
     
-    @scala.inline
-    def setSubtablesVarargs(value: Table*): Self = StObject.set(x, "subtables", js.Array(value :_*))
+    inline def setSubtablesVarargs(value: Table*): Self = StObject.set(x, "subtables", js.Array(value :_*))
   }
 }

@@ -34,8 +34,7 @@ trait BaseLayerView2DRenderRenderParameters
 }
 object BaseLayerView2DRenderRenderParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     context: CanvasRenderingContext2D,
     hasOwnProperty: PropertyKey => Boolean,
@@ -47,16 +46,12 @@ object BaseLayerView2DRenderRenderParameters {
     __obj.asInstanceOf[BaseLayerView2DRenderRenderParameters]
   }
   
-  @scala.inline
-  implicit class BaseLayerView2DRenderRenderParametersMutableBuilder[Self <: BaseLayerView2DRenderRenderParameters] (val x: Self) extends AnyVal {
+  extension [Self <: BaseLayerView2DRenderRenderParameters](x: Self) {
     
-    @scala.inline
-    def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: ViewState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ViewState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStationary(value: Boolean): Self = StObject.set(x, "stationary", value.asInstanceOf[js.Any])
+    inline def setStationary(value: Boolean): Self = StObject.set(x, "stationary", value.asInstanceOf[js.Any])
   }
 }

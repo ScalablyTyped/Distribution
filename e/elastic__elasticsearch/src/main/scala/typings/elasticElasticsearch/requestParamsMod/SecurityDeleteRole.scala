@@ -15,22 +15,17 @@ trait SecurityDeleteRole
 }
 object SecurityDeleteRole {
   
-  @scala.inline
-  def apply(name: String): SecurityDeleteRole = {
+  inline def apply(name: String): SecurityDeleteRole = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityDeleteRole]
   }
   
-  @scala.inline
-  implicit class SecurityDeleteRoleMutableBuilder[Self <: SecurityDeleteRole] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityDeleteRole](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    inline def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+    inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
   }
 }

@@ -20,37 +20,27 @@ trait LongRunningRecognizeMetadata extends StObject {
 }
 object LongRunningRecognizeMetadata {
   
-  @scala.inline
-  def apply(): LongRunningRecognizeMetadata = {
+  inline def apply(): LongRunningRecognizeMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LongRunningRecognizeMetadata]
   }
   
-  @scala.inline
-  implicit class LongRunningRecognizeMetadataMutableBuilder[Self <: LongRunningRecognizeMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: LongRunningRecognizeMetadata](x: Self) {
     
-    @scala.inline
-    def setLastUpdateTime(value: String): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: String): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
-    @scala.inline
-    def setProgressPercent(value: Double): Self = StObject.set(x, "progressPercent", value.asInstanceOf[js.Any])
+    inline def setProgressPercent(value: Double): Self = StObject.set(x, "progressPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressPercentUndefined: Self = StObject.set(x, "progressPercent", js.undefined)
+    inline def setProgressPercentUndefined: Self = StObject.set(x, "progressPercent", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

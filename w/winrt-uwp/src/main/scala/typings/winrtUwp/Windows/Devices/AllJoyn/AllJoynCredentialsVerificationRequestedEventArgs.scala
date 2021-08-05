@@ -41,8 +41,7 @@ trait AllJoynCredentialsVerificationRequestedEventArgs extends StObject {
 }
 object AllJoynCredentialsVerificationRequestedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accept: () => Unit,
     authenticationMechanism: AllJoynAuthenticationMechanism,
     getDeferral: () => Deferral,
@@ -56,31 +55,22 @@ object AllJoynCredentialsVerificationRequestedEventArgs {
     __obj.asInstanceOf[AllJoynCredentialsVerificationRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class AllJoynCredentialsVerificationRequestedEventArgsMutableBuilder[Self <: AllJoynCredentialsVerificationRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AllJoynCredentialsVerificationRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setAccept(value: () => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
+    inline def setAccept(value: () => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAuthenticationMechanism(value: AllJoynAuthenticationMechanism): Self = StObject.set(x, "authenticationMechanism", value.asInstanceOf[js.Any])
+    inline def setAuthenticationMechanism(value: AllJoynAuthenticationMechanism): Self = StObject.set(x, "authenticationMechanism", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPeerCertificate(value: Certificate): Self = StObject.set(x, "peerCertificate", value.asInstanceOf[js.Any])
+    inline def setPeerCertificate(value: Certificate): Self = StObject.set(x, "peerCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerCertificateErrorSeverity(value: SocketSslErrorSeverity): Self = StObject.set(x, "peerCertificateErrorSeverity", value.asInstanceOf[js.Any])
+    inline def setPeerCertificateErrorSeverity(value: SocketSslErrorSeverity): Self = StObject.set(x, "peerCertificateErrorSeverity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerCertificateErrors(value: IVectorView[ChainValidationResult]): Self = StObject.set(x, "peerCertificateErrors", value.asInstanceOf[js.Any])
+    inline def setPeerCertificateErrors(value: IVectorView[ChainValidationResult]): Self = StObject.set(x, "peerCertificateErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerIntermediateCertificates(value: IVectorView[Certificate]): Self = StObject.set(x, "peerIntermediateCertificates", value.asInstanceOf[js.Any])
+    inline def setPeerIntermediateCertificates(value: IVectorView[Certificate]): Self = StObject.set(x, "peerIntermediateCertificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerUniqueName(value: String): Self = StObject.set(x, "peerUniqueName", value.asInstanceOf[js.Any])
+    inline def setPeerUniqueName(value: String): Self = StObject.set(x, "peerUniqueName", value.asInstanceOf[js.Any])
   }
 }

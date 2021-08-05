@@ -27,34 +27,25 @@ trait SchemaProjectsListResponse extends StObject {
 }
 object SchemaProjectsListResponse {
   
-  @scala.inline
-  def apply(): SchemaProjectsListResponse = {
+  inline def apply(): SchemaProjectsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProjectsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaProjectsListResponseMutableBuilder[Self <: SchemaProjectsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProjectsListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setProjects(value: js.Array[SchemaProject]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+    inline def setProjects(value: js.Array[SchemaProject]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
+    inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
     
-    @scala.inline
-    def setProjectsVarargs(value: SchemaProject*): Self = StObject.set(x, "projects", js.Array(value :_*))
+    inline def setProjectsVarargs(value: SchemaProject*): Self = StObject.set(x, "projects", js.Array(value :_*))
   }
 }

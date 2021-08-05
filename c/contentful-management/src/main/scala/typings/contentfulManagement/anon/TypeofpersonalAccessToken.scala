@@ -17,8 +17,7 @@ trait TypeofpersonalAccessToken extends StObject {
 }
 object TypeofpersonalAccessToken {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapPersonalAccessToken: (AxiosInstance, PersonalAccessTokenProp) => PersonalAccessToken,
     wrapPersonalAccessTokenCollection: (AxiosInstance, CollectionProp[PersonalAccessTokenProp]) => Collection[PersonalAccessToken, PersonalAccessTokenProp]
   ): TypeofpersonalAccessToken = {
@@ -26,14 +25,11 @@ object TypeofpersonalAccessToken {
     __obj.asInstanceOf[TypeofpersonalAccessToken]
   }
   
-  @scala.inline
-  implicit class TypeofpersonalAccessTokenMutableBuilder[Self <: TypeofpersonalAccessToken] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofpersonalAccessToken](x: Self) {
     
-    @scala.inline
-    def setWrapPersonalAccessToken(value: (AxiosInstance, PersonalAccessTokenProp) => PersonalAccessToken): Self = StObject.set(x, "wrapPersonalAccessToken", js.Any.fromFunction2(value))
+    inline def setWrapPersonalAccessToken(value: (AxiosInstance, PersonalAccessTokenProp) => PersonalAccessToken): Self = StObject.set(x, "wrapPersonalAccessToken", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapPersonalAccessTokenCollection(
+    inline def setWrapPersonalAccessTokenCollection(
       value: (AxiosInstance, CollectionProp[PersonalAccessTokenProp]) => Collection[PersonalAccessToken, PersonalAccessTokenProp]
     ): Self = StObject.set(x, "wrapPersonalAccessTokenCollection", js.Any.fromFunction2(value))
   }

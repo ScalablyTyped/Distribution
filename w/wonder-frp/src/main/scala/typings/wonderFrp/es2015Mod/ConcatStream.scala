@@ -17,6 +17,5 @@ object ConcatStream {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(sources: js.Array[typings.wonderFrp.coreStreamMod.Stream]): typings.wonderFrp.streamConcatStreamMod.ConcatStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(sources.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.streamConcatStreamMod.ConcatStream]
+  inline def create(sources: js.Array[typings.wonderFrp.coreStreamMod.Stream]): typings.wonderFrp.streamConcatStreamMod.ConcatStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(sources.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.streamConcatStreamMod.ConcatStream]
 }

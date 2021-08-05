@@ -11,19 +11,15 @@ trait GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings extends StOb
 }
 object GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings {
   
-  @scala.inline
-  def apply(): GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings = {
+  inline def apply(): GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings]
   }
   
-  @scala.inline
-  implicit class GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettingsMutableBuilder[Self <: GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudAssuredworkloadsV1beta1WorkloadFedrampHighSettings](x: Self) {
     
-    @scala.inline
-    def setKmsSettings(value: GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings): Self = StObject.set(x, "kmsSettings", value.asInstanceOf[js.Any])
+    inline def setKmsSettings(value: GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings): Self = StObject.set(x, "kmsSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsSettingsUndefined: Self = StObject.set(x, "kmsSettings", js.undefined)
+    inline def setKmsSettingsUndefined: Self = StObject.set(x, "kmsSettings", js.undefined)
   }
 }

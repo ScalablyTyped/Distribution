@@ -19,29 +19,22 @@ trait SceneViewKeyUpEvent extends StObject {
 }
 object SceneViewKeyUpEvent {
   
-  @scala.inline
-  def apply(key: String, native: js.Any, stopPropagation: js.Function, timestamp: Double): SceneViewKeyUpEvent = {
+  inline def apply(key: String, native: js.Any, stopPropagation: js.Function, timestamp: Double): SceneViewKeyUpEvent = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("key-up")
     __obj.asInstanceOf[SceneViewKeyUpEvent]
   }
   
-  @scala.inline
-  implicit class SceneViewKeyUpEventMutableBuilder[Self <: SceneViewKeyUpEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SceneViewKeyUpEvent](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopPropagation(value: js.Function): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+    inline def setStopPropagation(value: js.Function): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `key-up`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `key-up`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

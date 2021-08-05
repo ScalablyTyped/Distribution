@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Ruler")
 @js.native
-class Ruler protected ()
+/* private */ class Ruler ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Ruler {
   
@@ -19,7 +19,7 @@ class Ruler protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Ruler_typekey")
   var PowerPointDotRuler_typekey: typings.activexPowerpoint.PowerPoint.Ruler = js.native
   

@@ -23,22 +23,17 @@ trait CalculatedColumn extends StObject {
 }
 object CalculatedColumn {
   
-  @scala.inline
-  def apply(ColumnId: ColumnId, ColumnName: ColumnName, Expression: Expression): CalculatedColumn = {
+  inline def apply(ColumnId: ColumnId, ColumnName: ColumnName, Expression: Expression): CalculatedColumn = {
     val __obj = js.Dynamic.literal(ColumnId = ColumnId.asInstanceOf[js.Any], ColumnName = ColumnName.asInstanceOf[js.Any], Expression = Expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalculatedColumn]
   }
   
-  @scala.inline
-  implicit class CalculatedColumnMutableBuilder[Self <: CalculatedColumn] (val x: Self) extends AnyVal {
+  extension [Self <: CalculatedColumn](x: Self) {
     
-    @scala.inline
-    def setColumnId(value: ColumnId): Self = StObject.set(x, "ColumnId", value.asInstanceOf[js.Any])
+    inline def setColumnId(value: ColumnId): Self = StObject.set(x, "ColumnId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnName(value: ColumnName): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
+    inline def setColumnName(value: ColumnName): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait PutScalingPolicyResponse extends StObject {
 }
 object PutScalingPolicyResponse {
   
-  @scala.inline
-  def apply(PolicyARN: ResourceIdMaxLen1600): PutScalingPolicyResponse = {
+  inline def apply(PolicyARN: ResourceIdMaxLen1600): PutScalingPolicyResponse = {
     val __obj = js.Dynamic.literal(PolicyARN = PolicyARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutScalingPolicyResponse]
   }
   
-  @scala.inline
-  implicit class PutScalingPolicyResponseMutableBuilder[Self <: PutScalingPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutScalingPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setAlarms(value: Alarms): Self = StObject.set(x, "Alarms", value.asInstanceOf[js.Any])
+    inline def setAlarms(value: Alarms): Self = StObject.set(x, "Alarms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmsUndefined: Self = StObject.set(x, "Alarms", js.undefined)
+    inline def setAlarmsUndefined: Self = StObject.set(x, "Alarms", js.undefined)
     
-    @scala.inline
-    def setAlarmsVarargs(value: Alarm*): Self = StObject.set(x, "Alarms", js.Array(value :_*))
+    inline def setAlarmsVarargs(value: Alarm*): Self = StObject.set(x, "Alarms", js.Array(value :_*))
     
-    @scala.inline
-    def setPolicyARN(value: ResourceIdMaxLen1600): Self = StObject.set(x, "PolicyARN", value.asInstanceOf[js.Any])
+    inline def setPolicyARN(value: ResourceIdMaxLen1600): Self = StObject.set(x, "PolicyARN", value.asInstanceOf[js.Any])
   }
 }

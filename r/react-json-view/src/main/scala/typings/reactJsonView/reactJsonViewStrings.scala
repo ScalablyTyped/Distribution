@@ -11,283 +11,241 @@ object reactJsonViewStrings {
   sealed trait apathy
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def apathy: apathy = "apathy".asInstanceOf[apathy]
+  inline def apathy: apathy = "apathy".asInstanceOf[apathy]
   
   @js.native
   sealed trait apathyColoninverted
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def apathyColoninverted: apathyColoninverted = "apathy:inverted".asInstanceOf[apathyColoninverted]
+  inline def apathyColoninverted: apathyColoninverted = "apathy:inverted".asInstanceOf[apathyColoninverted]
   
   @js.native
   sealed trait array extends StObject
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
   sealed trait ashes
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def ashes: ashes = "ashes".asInstanceOf[ashes]
+  inline def ashes: ashes = "ashes".asInstanceOf[ashes]
   
   @js.native
   sealed trait bespin
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def bespin: bespin = "bespin".asInstanceOf[bespin]
+  inline def bespin: bespin = "bespin".asInstanceOf[bespin]
   
   @js.native
   sealed trait brewer
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def brewer: brewer = "brewer".asInstanceOf[brewer]
+  inline def brewer: brewer = "brewer".asInstanceOf[brewer]
   
   @js.native
   sealed trait bright
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def bright: bright = "bright".asInstanceOf[bright]
+  inline def bright: bright = "bright".asInstanceOf[bright]
   
   @js.native
   sealed trait brightColoninverted
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def brightColoninverted: brightColoninverted = "bright:inverted".asInstanceOf[brightColoninverted]
+  inline def brightColoninverted: brightColoninverted = "bright:inverted".asInstanceOf[brightColoninverted]
   
   @js.native
   sealed trait chalk
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def chalk: chalk = "chalk".asInstanceOf[chalk]
+  inline def chalk: chalk = "chalk".asInstanceOf[chalk]
   
   @js.native
   sealed trait circle extends StObject
-  @scala.inline
-  def circle: circle = "circle".asInstanceOf[circle]
+  inline def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
   sealed trait codeschool
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def codeschool: codeschool = "codeschool".asInstanceOf[codeschool]
+  inline def codeschool: codeschool = "codeschool".asInstanceOf[codeschool]
   
   @js.native
   sealed trait colors
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def colors: colors = "colors".asInstanceOf[colors]
+  inline def colors: colors = "colors".asInstanceOf[colors]
   
   @js.native
   sealed trait eighties
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def eighties: eighties = "eighties".asInstanceOf[eighties]
+  inline def eighties: eighties = "eighties".asInstanceOf[eighties]
   
   @js.native
   sealed trait embers
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def embers: embers = "embers".asInstanceOf[embers]
+  inline def embers: embers = "embers".asInstanceOf[embers]
   
   @js.native
   sealed trait flat
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def flat: flat = "flat".asInstanceOf[flat]
+  inline def flat: flat = "flat".asInstanceOf[flat]
   
   @js.native
   sealed trait google
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def google: google = "google".asInstanceOf[google]
+  inline def google: google = "google".asInstanceOf[google]
   
   @js.native
   sealed trait grayscale
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def grayscale: grayscale = "grayscale".asInstanceOf[grayscale]
+  inline def grayscale: grayscale = "grayscale".asInstanceOf[grayscale]
   
   @js.native
   sealed trait grayscaleColoninverted
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def grayscaleColoninverted: grayscaleColoninverted = "grayscale:inverted".asInstanceOf[grayscaleColoninverted]
+  inline def grayscaleColoninverted: grayscaleColoninverted = "grayscale:inverted".asInstanceOf[grayscaleColoninverted]
   
   @js.native
   sealed trait greenscreen
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def greenscreen: greenscreen = "greenscreen".asInstanceOf[greenscreen]
+  inline def greenscreen: greenscreen = "greenscreen".asInstanceOf[greenscreen]
   
   @js.native
   sealed trait harmonic
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def harmonic: harmonic = "harmonic".asInstanceOf[harmonic]
+  inline def harmonic: harmonic = "harmonic".asInstanceOf[harmonic]
   
   @js.native
   sealed trait hopscotch
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def hopscotch: hopscotch = "hopscotch".asInstanceOf[hopscotch]
+  inline def hopscotch: hopscotch = "hopscotch".asInstanceOf[hopscotch]
   
   @js.native
   sealed trait isotope
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def isotope: isotope = "isotope".asInstanceOf[isotope]
+  inline def isotope: isotope = "isotope".asInstanceOf[isotope]
   
   @js.native
   sealed trait marrakesh
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def marrakesh: marrakesh = "marrakesh".asInstanceOf[marrakesh]
+  inline def marrakesh: marrakesh = "marrakesh".asInstanceOf[marrakesh]
   
   @js.native
   sealed trait mocha
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def mocha: mocha = "mocha".asInstanceOf[mocha]
+  inline def mocha: mocha = "mocha".asInstanceOf[mocha]
   
   @js.native
   sealed trait monokai
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def monokai: monokai = "monokai".asInstanceOf[monokai]
+  inline def monokai: monokai = "monokai".asInstanceOf[monokai]
   
   @js.native
   sealed trait `object` extends StObject
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
   sealed trait ocean
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def ocean: ocean = "ocean".asInstanceOf[ocean]
+  inline def ocean: ocean = "ocean".asInstanceOf[ocean]
   
   @js.native
   sealed trait paraiso
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def paraiso: paraiso = "paraiso".asInstanceOf[paraiso]
+  inline def paraiso: paraiso = "paraiso".asInstanceOf[paraiso]
   
   @js.native
   sealed trait pop
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def pop: pop = "pop".asInstanceOf[pop]
+  inline def pop: pop = "pop".asInstanceOf[pop]
   
   @js.native
   sealed trait railscasts
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def railscasts: railscasts = "railscasts".asInstanceOf[railscasts]
+  inline def railscasts: railscasts = "railscasts".asInstanceOf[railscasts]
   
   @js.native
   sealed trait `rjv-default`
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def `rjv-default`: `rjv-default` = "rjv-default".asInstanceOf[`rjv-default`]
+  inline def `rjv-default`: `rjv-default` = "rjv-default".asInstanceOf[`rjv-default`]
   
   @js.native
   sealed trait shapeshifter
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def shapeshifter: shapeshifter = "shapeshifter".asInstanceOf[shapeshifter]
+  inline def shapeshifter: shapeshifter = "shapeshifter".asInstanceOf[shapeshifter]
   
   @js.native
   sealed trait shapeshifterColoninverted
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def shapeshifterColoninverted: shapeshifterColoninverted = "shapeshifter:inverted".asInstanceOf[shapeshifterColoninverted]
+  inline def shapeshifterColoninverted: shapeshifterColoninverted = "shapeshifter:inverted".asInstanceOf[shapeshifterColoninverted]
   
   @js.native
   sealed trait solarized
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def solarized: solarized = "solarized".asInstanceOf[solarized]
+  inline def solarized: solarized = "solarized".asInstanceOf[solarized]
   
   @js.native
   sealed trait square extends StObject
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
+  inline def square: square = "square".asInstanceOf[square]
   
   @js.native
   sealed trait summerfruit
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def summerfruit: summerfruit = "summerfruit".asInstanceOf[summerfruit]
+  inline def summerfruit: summerfruit = "summerfruit".asInstanceOf[summerfruit]
   
   @js.native
   sealed trait summerfruitColoninverted
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def summerfruitColoninverted: summerfruitColoninverted = "summerfruit:inverted".asInstanceOf[summerfruitColoninverted]
+  inline def summerfruitColoninverted: summerfruitColoninverted = "summerfruit:inverted".asInstanceOf[summerfruitColoninverted]
   
   @js.native
   sealed trait threezerotwofour
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def threezerotwofour: threezerotwofour = "threezerotwofour".asInstanceOf[threezerotwofour]
+  inline def threezerotwofour: threezerotwofour = "threezerotwofour".asInstanceOf[threezerotwofour]
   
   @js.native
   sealed trait tomorrow
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def tomorrow: tomorrow = "tomorrow".asInstanceOf[tomorrow]
+  inline def tomorrow: tomorrow = "tomorrow".asInstanceOf[tomorrow]
   
   @js.native
   sealed trait triangle extends StObject
-  @scala.inline
-  def triangle: triangle = "triangle".asInstanceOf[triangle]
+  inline def triangle: triangle = "triangle".asInstanceOf[triangle]
   
   @js.native
   sealed trait tube
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def tube: tube = "tube".asInstanceOf[tube]
+  inline def tube: tube = "tube".asInstanceOf[tube]
   
   @js.native
   sealed trait twilight
     extends StObject
        with ThemeKeys
-  @scala.inline
-  def twilight: twilight = "twilight".asInstanceOf[twilight]
+  inline def twilight: twilight = "twilight".asInstanceOf[twilight]
 }

@@ -18,8 +18,7 @@ trait IncludeInheritedDefinitionsOnly extends StObject {
 }
 object IncludeInheritedDefinitionsOnly {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     includeInheritedDefinitionsOnly: scala.Double,
     includeLastUserAccess: scala.Double,
     includeNonInheritedDefinitionsOnly: scala.Double,
@@ -30,22 +29,16 @@ object IncludeInheritedDefinitionsOnly {
     __obj.asInstanceOf[IncludeInheritedDefinitionsOnly]
   }
   
-  @scala.inline
-  implicit class IncludeInheritedDefinitionsOnlyMutableBuilder[Self <: IncludeInheritedDefinitionsOnly] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeInheritedDefinitionsOnly](x: Self) {
     
-    @scala.inline
-    def setIncludeInheritedDefinitionsOnly(value: scala.Double): Self = StObject.set(x, "includeInheritedDefinitionsOnly", value.asInstanceOf[js.Any])
+    inline def setIncludeInheritedDefinitionsOnly(value: scala.Double): Self = StObject.set(x, "includeInheritedDefinitionsOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeLastUserAccess(value: scala.Double): Self = StObject.set(x, "includeLastUserAccess", value.asInstanceOf[js.Any])
+    inline def setIncludeLastUserAccess(value: scala.Double): Self = StObject.set(x, "includeLastUserAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeNonInheritedDefinitionsOnly(value: scala.Double): Self = StObject.set(x, "includeNonInheritedDefinitionsOnly", value.asInstanceOf[js.Any])
+    inline def setIncludeNonInheritedDefinitionsOnly(value: scala.Double): Self = StObject.set(x, "includeNonInheritedDefinitionsOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeServices(value: scala.Double): Self = StObject.set(x, "includeServices", value.asInstanceOf[js.Any])
+    inline def setIncludeServices(value: scala.Double): Self = StObject.set(x, "includeServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait DescribeStepOutput extends StObject {
 }
 object DescribeStepOutput {
   
-  @scala.inline
-  def apply(): DescribeStepOutput = {
+  inline def apply(): DescribeStepOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeStepOutput]
   }
   
-  @scala.inline
-  implicit class DescribeStepOutputMutableBuilder[Self <: DescribeStepOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStepOutput](x: Self) {
     
-    @scala.inline
-    def setStep(value: Step): Self = StObject.set(x, "Step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Step): Self = StObject.set(x, "Step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "Step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "Step", js.undefined)
   }
 }

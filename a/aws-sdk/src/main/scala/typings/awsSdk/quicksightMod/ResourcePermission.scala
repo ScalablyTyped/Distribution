@@ -18,22 +18,17 @@ trait ResourcePermission extends StObject {
 }
 object ResourcePermission {
   
-  @scala.inline
-  def apply(Actions: ActionList, Principal: Principal): ResourcePermission = {
+  inline def apply(Actions: ActionList, Principal: Principal): ResourcePermission = {
     val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], Principal = Principal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourcePermission]
   }
   
-  @scala.inline
-  implicit class ResourcePermissionMutableBuilder[Self <: ResourcePermission] (val x: Self) extends AnyVal {
+  extension [Self <: ResourcePermission](x: Self) {
     
-    @scala.inline
-    def setActions(value: ActionList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: ActionList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: String*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
-    @scala.inline
-    def setPrincipal(value: Principal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: Principal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
   }
 }

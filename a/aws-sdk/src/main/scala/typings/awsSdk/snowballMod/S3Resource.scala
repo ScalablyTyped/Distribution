@@ -18,25 +18,19 @@ trait S3Resource extends StObject {
 }
 object S3Resource {
   
-  @scala.inline
-  def apply(): S3Resource = {
+  inline def apply(): S3Resource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3Resource]
   }
   
-  @scala.inline
-  implicit class S3ResourceMutableBuilder[Self <: S3Resource] (val x: Self) extends AnyVal {
+  extension [Self <: S3Resource](x: Self) {
     
-    @scala.inline
-    def setBucketArn(value: ResourceARN): Self = StObject.set(x, "BucketArn", value.asInstanceOf[js.Any])
+    inline def setBucketArn(value: ResourceARN): Self = StObject.set(x, "BucketArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketArnUndefined: Self = StObject.set(x, "BucketArn", js.undefined)
+    inline def setBucketArnUndefined: Self = StObject.set(x, "BucketArn", js.undefined)
     
-    @scala.inline
-    def setKeyRange(value: KeyRange): Self = StObject.set(x, "KeyRange", value.asInstanceOf[js.Any])
+    inline def setKeyRange(value: KeyRange): Self = StObject.set(x, "KeyRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyRangeUndefined: Self = StObject.set(x, "KeyRange", js.undefined)
+    inline def setKeyRangeUndefined: Self = StObject.set(x, "KeyRange", js.undefined)
   }
 }

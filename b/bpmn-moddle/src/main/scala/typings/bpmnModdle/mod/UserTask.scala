@@ -14,8 +14,7 @@ trait UserTask
 }
 object UserTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -45,16 +44,12 @@ object UserTask {
     __obj.asInstanceOf[UserTask]
   }
   
-  @scala.inline
-  implicit class UserTaskMutableBuilder[Self <: UserTask] (val x: Self) extends AnyVal {
+  extension [Self <: UserTask](x: Self) {
     
-    @scala.inline
-    def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+    inline def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderings(value: js.Array[Rendering]): Self = StObject.set(x, "renderings", value.asInstanceOf[js.Any])
+    inline def setRenderings(value: js.Array[Rendering]): Self = StObject.set(x, "renderings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderingsVarargs(value: Rendering*): Self = StObject.set(x, "renderings", js.Array(value :_*))
+    inline def setRenderingsVarargs(value: Rendering*): Self = StObject.set(x, "renderings", js.Array(value :_*))
   }
 }

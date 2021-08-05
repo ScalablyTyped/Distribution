@@ -23,25 +23,19 @@ trait ADMChannelRequest extends StObject {
 }
 object ADMChannelRequest {
   
-  @scala.inline
-  def apply(ClientId: string, ClientSecret: string): ADMChannelRequest = {
+  inline def apply(ClientId: string, ClientSecret: string): ADMChannelRequest = {
     val __obj = js.Dynamic.literal(ClientId = ClientId.asInstanceOf[js.Any], ClientSecret = ClientSecret.asInstanceOf[js.Any])
     __obj.asInstanceOf[ADMChannelRequest]
   }
   
-  @scala.inline
-  implicit class ADMChannelRequestMutableBuilder[Self <: ADMChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ADMChannelRequest](x: Self) {
     
-    @scala.inline
-    def setClientId(value: string): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: string): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecret(value: string): Self = StObject.set(x, "ClientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: string): Self = StObject.set(x, "ClientSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

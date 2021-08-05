@@ -20,8 +20,7 @@ trait XContentTransmitter
 }
 object XContentTransmitter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -31,10 +30,8 @@ object XContentTransmitter {
     __obj.asInstanceOf[XContentTransmitter]
   }
   
-  @scala.inline
-  implicit class XContentTransmitterMutableBuilder[Self <: XContentTransmitter] (val x: Self) extends AnyVal {
+  extension [Self <: XContentTransmitter](x: Self) {
     
-    @scala.inline
-    def setTransmit(value: (String, String, Double) => Unit): Self = StObject.set(x, "transmit", js.Any.fromFunction3(value))
+    inline def setTransmit(value: (String, String, Double) => Unit): Self = StObject.set(x, "transmit", js.Any.fromFunction3(value))
   }
 }

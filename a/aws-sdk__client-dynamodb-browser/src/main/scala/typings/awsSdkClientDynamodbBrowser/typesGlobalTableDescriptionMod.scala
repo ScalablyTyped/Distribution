@@ -43,47 +43,34 @@ object typesGlobalTableDescriptionMod {
   }
   object GlobalTableDescription {
     
-    @scala.inline
-    def apply(): GlobalTableDescription = {
+    inline def apply(): GlobalTableDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalTableDescription]
     }
     
-    @scala.inline
-    implicit class GlobalTableDescriptionMutableBuilder[Self <: GlobalTableDescription] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalTableDescription](x: Self) {
       
-      @scala.inline
-      def setCreationDateTime(value: Date | String | Double): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+      inline def setCreationDateTime(value: Date | String | Double): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
+      inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
       
-      @scala.inline
-      def setGlobalTableArn(value: String): Self = StObject.set(x, "GlobalTableArn", value.asInstanceOf[js.Any])
+      inline def setGlobalTableArn(value: String): Self = StObject.set(x, "GlobalTableArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableArnUndefined: Self = StObject.set(x, "GlobalTableArn", js.undefined)
+      inline def setGlobalTableArnUndefined: Self = StObject.set(x, "GlobalTableArn", js.undefined)
       
-      @scala.inline
-      def setGlobalTableName(value: String): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
+      inline def setGlobalTableName(value: String): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
+      inline def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
       
-      @scala.inline
-      def setGlobalTableStatus(value: CREATING | ACTIVE | DELETING | UPDATING | String): Self = StObject.set(x, "GlobalTableStatus", value.asInstanceOf[js.Any])
+      inline def setGlobalTableStatus(value: CREATING | ACTIVE | DELETING | UPDATING | String): Self = StObject.set(x, "GlobalTableStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableStatusUndefined: Self = StObject.set(x, "GlobalTableStatus", js.undefined)
+      inline def setGlobalTableStatusUndefined: Self = StObject.set(x, "GlobalTableStatus", js.undefined)
       
-      @scala.inline
-      def setReplicationGroup(value: js.Array[ReplicaDescription] | Iterable[ReplicaDescription]): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
+      inline def setReplicationGroup(value: js.Array[ReplicaDescription] | Iterable[ReplicaDescription]): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
+      inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
       
-      @scala.inline
-      def setReplicationGroupVarargs(value: ReplicaDescription*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+      inline def setReplicationGroupVarargs(value: ReplicaDescription*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
     }
   }
   
@@ -105,29 +92,22 @@ object typesGlobalTableDescriptionMod {
   }
   object UnmarshalledGlobalTableDescription {
     
-    @scala.inline
-    def apply(): UnmarshalledGlobalTableDescription = {
+    inline def apply(): UnmarshalledGlobalTableDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledGlobalTableDescription]
     }
     
-    @scala.inline
-    implicit class UnmarshalledGlobalTableDescriptionMutableBuilder[Self <: UnmarshalledGlobalTableDescription] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledGlobalTableDescription](x: Self) {
       
-      @scala.inline
-      def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+      inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
+      inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
       
-      @scala.inline
-      def setReplicationGroup(value: js.Array[UnmarshalledReplicaDescription]): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
+      inline def setReplicationGroup(value: js.Array[UnmarshalledReplicaDescription]): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
+      inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
       
-      @scala.inline
-      def setReplicationGroupVarargs(value: UnmarshalledReplicaDescription*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+      inline def setReplicationGroupVarargs(value: UnmarshalledReplicaDescription*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
     }
   }
 }

@@ -13,22 +13,17 @@ trait GetLifecyclePoliciesResponse extends StObject {
 }
 object GetLifecyclePoliciesResponse {
   
-  @scala.inline
-  def apply(): GetLifecyclePoliciesResponse = {
+  inline def apply(): GetLifecyclePoliciesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLifecyclePoliciesResponse]
   }
   
-  @scala.inline
-  implicit class GetLifecyclePoliciesResponseMutableBuilder[Self <: GetLifecyclePoliciesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetLifecyclePoliciesResponse](x: Self) {
     
-    @scala.inline
-    def setPolicies(value: LifecyclePolicySummaryList): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
+    inline def setPolicies(value: LifecyclePolicySummaryList): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
+    inline def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
     
-    @scala.inline
-    def setPoliciesVarargs(value: LifecyclePolicySummary*): Self = StObject.set(x, "Policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: LifecyclePolicySummary*): Self = StObject.set(x, "Policies", js.Array(value :_*))
   }
 }

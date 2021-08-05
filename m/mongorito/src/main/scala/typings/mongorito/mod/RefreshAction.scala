@@ -13,17 +13,14 @@ trait RefreshAction
 }
 object RefreshAction {
   
-  @scala.inline
-  def apply(`type`: REFRESH): RefreshAction = {
+  inline def apply(`type`: REFRESH): RefreshAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshAction]
   }
   
-  @scala.inline
-  implicit class RefreshActionMutableBuilder[Self <: RefreshAction] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshAction](x: Self) {
     
-    @scala.inline
-    def setType(value: REFRESH): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: REFRESH): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

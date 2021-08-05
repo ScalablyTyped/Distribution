@@ -11,30 +11,18 @@ object diffMod {
   /**
     * Returns difference between two versions by the release type (major, premajor, minor, preminor, patch, prepatch, or prerelease), or null if the versions are the same.
     */
-  @scala.inline
-  def apply(v1: String, v2: String): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
-  @scala.inline
-  def apply(v1: String, v2: String, optionsOrLoose: Boolean): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
-  @scala.inline
-  def apply(v1: String, v2: String, optionsOrLoose: Options): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
-  @scala.inline
-  def apply(v1: String, v2: typings.semver.semverMod.^): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
-  @scala.inline
-  def apply(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
-  @scala.inline
-  def apply(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Options): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
-  @scala.inline
-  def apply(v1: typings.semver.semverMod.^, v2: String): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
-  @scala.inline
-  def apply(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Boolean): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
-  @scala.inline
-  def apply(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Options): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
-  @scala.inline
-  def apply(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
-  @scala.inline
-  def apply(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
-  @scala.inline
-  def apply(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Options): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  inline def apply(v1: String, v2: String): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  inline def apply(v1: String, v2: String, optionsOrLoose: Boolean): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  inline def apply(v1: String, v2: String, optionsOrLoose: Options): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  inline def apply(v1: String, v2: typings.semver.semverMod.^): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  inline def apply(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  inline def apply(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Options): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  inline def apply(v1: typings.semver.semverMod.^, v2: String): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  inline def apply(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Boolean): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  inline def apply(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Options): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  inline def apply(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  inline def apply(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  inline def apply(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Options): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].apply(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
   
   @JSImport("semver/functions/diff", JSImport.Namespace)
   @js.native

@@ -32,27 +32,21 @@ trait GPMessageProperties extends StObject {
 }
 object GPMessageProperties {
   
-  @scala.inline
-  def apply(): GPMessageProperties = {
+  inline def apply(): GPMessageProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GPMessageProperties]
   }
   
-  @scala.inline
-  implicit class GPMessagePropertiesMutableBuilder[Self <: GPMessageProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GPMessageProperties](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: informative | `process-definition` | `process-start` | `process-stop` | warning | error | empty | abort
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

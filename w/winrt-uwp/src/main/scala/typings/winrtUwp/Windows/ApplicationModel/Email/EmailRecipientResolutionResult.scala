@@ -17,19 +17,15 @@ trait EmailRecipientResolutionResult extends StObject {
 }
 object EmailRecipientResolutionResult {
   
-  @scala.inline
-  def apply(publicKeys: IVectorView[Certificate], status: EmailRecipientResolutionStatus): EmailRecipientResolutionResult = {
+  inline def apply(publicKeys: IVectorView[Certificate], status: EmailRecipientResolutionStatus): EmailRecipientResolutionResult = {
     val __obj = js.Dynamic.literal(publicKeys = publicKeys.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailRecipientResolutionResult]
   }
   
-  @scala.inline
-  implicit class EmailRecipientResolutionResultMutableBuilder[Self <: EmailRecipientResolutionResult] (val x: Self) extends AnyVal {
+  extension [Self <: EmailRecipientResolutionResult](x: Self) {
     
-    @scala.inline
-    def setPublicKeys(value: IVectorView[Certificate]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
+    inline def setPublicKeys(value: IVectorView[Certificate]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: EmailRecipientResolutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: EmailRecipientResolutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

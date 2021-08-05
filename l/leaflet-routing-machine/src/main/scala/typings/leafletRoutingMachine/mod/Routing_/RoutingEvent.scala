@@ -11,19 +11,15 @@ trait RoutingEvent extends StObject {
 }
 object RoutingEvent {
   
-  @scala.inline
-  def apply(waypoints: js.Array[Waypoint_]): RoutingEvent = {
+  inline def apply(waypoints: js.Array[Waypoint_]): RoutingEvent = {
     val __obj = js.Dynamic.literal(waypoints = waypoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoutingEvent]
   }
   
-  @scala.inline
-  implicit class RoutingEventMutableBuilder[Self <: RoutingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RoutingEvent](x: Self) {
     
-    @scala.inline
-    def setWaypoints(value: js.Array[Waypoint_]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
+    inline def setWaypoints(value: js.Array[Waypoint_]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypointsVarargs(value: Waypoint_ *): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+    inline def setWaypointsVarargs(value: Waypoint_ *): Self = StObject.set(x, "waypoints", js.Array(value :_*))
   }
 }

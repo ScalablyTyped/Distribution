@@ -18,22 +18,17 @@ trait TelemetryConfiguration extends StObject {
 }
 object TelemetryConfiguration {
   
-  @scala.inline
-  def apply(Telemetry: Telemetry): TelemetryConfiguration = {
+  inline def apply(Telemetry: Telemetry): TelemetryConfiguration = {
     val __obj = js.Dynamic.literal(Telemetry = Telemetry.asInstanceOf[js.Any])
     __obj.asInstanceOf[TelemetryConfiguration]
   }
   
-  @scala.inline
-  implicit class TelemetryConfigurationMutableBuilder[Self <: TelemetryConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: TelemetryConfiguration](x: Self) {
     
-    @scala.inline
-    def setConfigurationSyncStatus(value: ConfigurationSyncStatus): Self = StObject.set(x, "ConfigurationSyncStatus", value.asInstanceOf[js.Any])
+    inline def setConfigurationSyncStatus(value: ConfigurationSyncStatus): Self = StObject.set(x, "ConfigurationSyncStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationSyncStatusUndefined: Self = StObject.set(x, "ConfigurationSyncStatus", js.undefined)
+    inline def setConfigurationSyncStatusUndefined: Self = StObject.set(x, "ConfigurationSyncStatus", js.undefined)
     
-    @scala.inline
-    def setTelemetry(value: Telemetry): Self = StObject.set(x, "Telemetry", value.asInstanceOf[js.Any])
+    inline def setTelemetry(value: Telemetry): Self = StObject.set(x, "Telemetry", value.asInstanceOf[js.Any])
   }
 }

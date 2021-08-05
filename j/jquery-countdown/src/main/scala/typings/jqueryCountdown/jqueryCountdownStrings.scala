@@ -12,48 +12,41 @@ object jqueryCountdownStrings {
   sealed trait finishDotcountdown
     extends StObject
        with Methods
-  @scala.inline
-  def finishDotcountdown: finishDotcountdown = "finish.countdown".asInstanceOf[finishDotcountdown]
+  inline def finishDotcountdown: finishDotcountdown = "finish.countdown".asInstanceOf[finishDotcountdown]
   
   @js.native
   sealed trait pause
     extends StObject
        with Controls
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
+  inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
   sealed trait resume
     extends StObject
        with Controls
-  @scala.inline
-  def resume: resume = "resume".asInstanceOf[resume]
+  inline def resume: resume = "resume".asInstanceOf[resume]
   
   @js.native
   sealed trait start
     extends StObject
        with Controls
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait stop
     extends StObject
        with Controls
-  @scala.inline
-  def stop: stop = "stop".asInstanceOf[stop]
+  inline def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
   sealed trait stopDotcountdown
     extends StObject
        with Methods
-  @scala.inline
-  def stopDotcountdown: stopDotcountdown = "stop.countdown".asInstanceOf[stopDotcountdown]
+  inline def stopDotcountdown: stopDotcountdown = "stop.countdown".asInstanceOf[stopDotcountdown]
   
   @js.native
   sealed trait updateDotcountdown
     extends StObject
        with Methods
-  @scala.inline
-  def updateDotcountdown: updateDotcountdown = "update.countdown".asInstanceOf[updateDotcountdown]
+  inline def updateDotcountdown: updateDotcountdown = "update.countdown".asInstanceOf[updateDotcountdown]
 }

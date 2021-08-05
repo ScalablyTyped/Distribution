@@ -49,8 +49,7 @@ trait OpenBezierShape
      with RotationDescriptor
 object OpenBezierShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BorderDistance: Double,
     BottomBorder: BorderLine,
     BottomBorderDistance: Double,

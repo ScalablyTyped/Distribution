@@ -1390,32 +1390,24 @@ object mod extends Shortcut {
   }
   object StyledOptions {
     
-    @scala.inline
-    def apply(): StyledOptions = {
+    inline def apply(): StyledOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StyledOptions]
     }
     
-    @scala.inline
-    implicit class StyledOptionsMutableBuilder[Self <: StyledOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StyledOptions](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setShouldForwardProp(value: /* propName */ String => Boolean): Self = StObject.set(x, "shouldForwardProp", js.Any.fromFunction1(value))
+      inline def setShouldForwardProp(value: /* propName */ String => Boolean): Self = StObject.set(x, "shouldForwardProp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldForwardPropUndefined: Self = StObject.set(x, "shouldForwardProp", js.undefined)
+      inline def setShouldForwardPropUndefined: Self = StObject.set(x, "shouldForwardProp", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   

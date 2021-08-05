@@ -13,16 +13,13 @@ trait DeleteReusableDelegationSetRequest extends StObject {
 }
 object DeleteReusableDelegationSetRequest {
   
-  @scala.inline
-  def apply(Id: ResourceId): DeleteReusableDelegationSetRequest = {
+  inline def apply(Id: ResourceId): DeleteReusableDelegationSetRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteReusableDelegationSetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteReusableDelegationSetRequestMutableBuilder[Self <: DeleteReusableDelegationSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteReusableDelegationSetRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

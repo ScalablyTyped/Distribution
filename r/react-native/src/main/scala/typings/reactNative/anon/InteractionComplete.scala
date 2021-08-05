@@ -12,19 +12,15 @@ trait InteractionComplete extends StObject {
 }
 object InteractionComplete {
   
-  @scala.inline
-  def apply(interactionComplete: String, interactionStart: String): InteractionComplete = {
+  inline def apply(interactionComplete: String, interactionStart: String): InteractionComplete = {
     val __obj = js.Dynamic.literal(interactionComplete = interactionComplete.asInstanceOf[js.Any], interactionStart = interactionStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractionComplete]
   }
   
-  @scala.inline
-  implicit class InteractionCompleteMutableBuilder[Self <: InteractionComplete] (val x: Self) extends AnyVal {
+  extension [Self <: InteractionComplete](x: Self) {
     
-    @scala.inline
-    def setInteractionComplete(value: String): Self = StObject.set(x, "interactionComplete", value.asInstanceOf[js.Any])
+    inline def setInteractionComplete(value: String): Self = StObject.set(x, "interactionComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractionStart(value: String): Self = StObject.set(x, "interactionStart", value.asInstanceOf[js.Any])
+    inline def setInteractionStart(value: String): Self = StObject.set(x, "interactionStart", value.asInstanceOf[js.Any])
   }
 }

@@ -17,20 +17,16 @@ object dialogHeaderMod {
   }
   object DialogHeaderProps {
     
-    @scala.inline
-    def apply(): DialogHeaderProps = {
+    inline def apply(): DialogHeaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DialogHeaderProps]
     }
     
-    @scala.inline
-    implicit class DialogHeaderPropsMutableBuilder[Self <: DialogHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: DialogHeaderProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
 }

@@ -18,19 +18,15 @@ trait AttachGroupPolicyRequest extends StObject {
 }
 object AttachGroupPolicyRequest {
   
-  @scala.inline
-  def apply(GroupName: groupNameType, PolicyArn: arnType): AttachGroupPolicyRequest = {
+  inline def apply(GroupName: groupNameType, PolicyArn: arnType): AttachGroupPolicyRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any], PolicyArn = PolicyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachGroupPolicyRequest]
   }
   
-  @scala.inline
-  implicit class AttachGroupPolicyRequestMutableBuilder[Self <: AttachGroupPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AttachGroupPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyArn(value: arnType): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
+    inline def setPolicyArn(value: arnType): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
   }
 }

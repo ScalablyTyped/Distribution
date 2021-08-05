@@ -15,8 +15,7 @@ trait GetStyle extends StObject {
 }
 object GetStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     focus: () => js.Promise[Unit],
     getStyle: () => js.Promise[CSSStyleDeclaration],
     mouseLeave: () => js.Promise[Unit]
@@ -25,16 +24,12 @@ object GetStyle {
     __obj.asInstanceOf[GetStyle]
   }
   
-  @scala.inline
-  implicit class GetStyleMutableBuilder[Self <: GetStyle] (val x: Self) extends AnyVal {
+  extension [Self <: GetStyle](x: Self) {
     
-    @scala.inline
-    def setFocus(value: () => js.Promise[Unit]): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => js.Promise[Unit]): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStyle(value: () => js.Promise[CSSStyleDeclaration]): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
+    inline def setGetStyle(value: () => js.Promise[CSSStyleDeclaration]): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMouseLeave(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
+    inline def setMouseLeave(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
   }
 }

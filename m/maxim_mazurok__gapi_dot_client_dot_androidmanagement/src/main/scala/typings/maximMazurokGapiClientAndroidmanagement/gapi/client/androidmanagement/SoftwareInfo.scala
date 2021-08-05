@@ -44,79 +44,55 @@ trait SoftwareInfo extends StObject {
 }
 object SoftwareInfo {
   
-  @scala.inline
-  def apply(): SoftwareInfo = {
+  inline def apply(): SoftwareInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SoftwareInfo]
   }
   
-  @scala.inline
-  implicit class SoftwareInfoMutableBuilder[Self <: SoftwareInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SoftwareInfo](x: Self) {
     
-    @scala.inline
-    def setAndroidBuildNumber(value: String): Self = StObject.set(x, "androidBuildNumber", value.asInstanceOf[js.Any])
+    inline def setAndroidBuildNumber(value: String): Self = StObject.set(x, "androidBuildNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidBuildNumberUndefined: Self = StObject.set(x, "androidBuildNumber", js.undefined)
+    inline def setAndroidBuildNumberUndefined: Self = StObject.set(x, "androidBuildNumber", js.undefined)
     
-    @scala.inline
-    def setAndroidBuildTime(value: String): Self = StObject.set(x, "androidBuildTime", value.asInstanceOf[js.Any])
+    inline def setAndroidBuildTime(value: String): Self = StObject.set(x, "androidBuildTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidBuildTimeUndefined: Self = StObject.set(x, "androidBuildTime", js.undefined)
+    inline def setAndroidBuildTimeUndefined: Self = StObject.set(x, "androidBuildTime", js.undefined)
     
-    @scala.inline
-    def setAndroidDevicePolicyVersionCode(value: Double): Self = StObject.set(x, "androidDevicePolicyVersionCode", value.asInstanceOf[js.Any])
+    inline def setAndroidDevicePolicyVersionCode(value: Double): Self = StObject.set(x, "androidDevicePolicyVersionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDevicePolicyVersionCodeUndefined: Self = StObject.set(x, "androidDevicePolicyVersionCode", js.undefined)
+    inline def setAndroidDevicePolicyVersionCodeUndefined: Self = StObject.set(x, "androidDevicePolicyVersionCode", js.undefined)
     
-    @scala.inline
-    def setAndroidDevicePolicyVersionName(value: String): Self = StObject.set(x, "androidDevicePolicyVersionName", value.asInstanceOf[js.Any])
+    inline def setAndroidDevicePolicyVersionName(value: String): Self = StObject.set(x, "androidDevicePolicyVersionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDevicePolicyVersionNameUndefined: Self = StObject.set(x, "androidDevicePolicyVersionName", js.undefined)
+    inline def setAndroidDevicePolicyVersionNameUndefined: Self = StObject.set(x, "androidDevicePolicyVersionName", js.undefined)
     
-    @scala.inline
-    def setAndroidVersion(value: String): Self = StObject.set(x, "androidVersion", value.asInstanceOf[js.Any])
+    inline def setAndroidVersion(value: String): Self = StObject.set(x, "androidVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidVersionUndefined: Self = StObject.set(x, "androidVersion", js.undefined)
+    inline def setAndroidVersionUndefined: Self = StObject.set(x, "androidVersion", js.undefined)
     
-    @scala.inline
-    def setBootloaderVersion(value: String): Self = StObject.set(x, "bootloaderVersion", value.asInstanceOf[js.Any])
+    inline def setBootloaderVersion(value: String): Self = StObject.set(x, "bootloaderVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootloaderVersionUndefined: Self = StObject.set(x, "bootloaderVersion", js.undefined)
+    inline def setBootloaderVersionUndefined: Self = StObject.set(x, "bootloaderVersion", js.undefined)
     
-    @scala.inline
-    def setDeviceBuildSignature(value: String): Self = StObject.set(x, "deviceBuildSignature", value.asInstanceOf[js.Any])
+    inline def setDeviceBuildSignature(value: String): Self = StObject.set(x, "deviceBuildSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceBuildSignatureUndefined: Self = StObject.set(x, "deviceBuildSignature", js.undefined)
+    inline def setDeviceBuildSignatureUndefined: Self = StObject.set(x, "deviceBuildSignature", js.undefined)
     
-    @scala.inline
-    def setDeviceKernelVersion(value: String): Self = StObject.set(x, "deviceKernelVersion", value.asInstanceOf[js.Any])
+    inline def setDeviceKernelVersion(value: String): Self = StObject.set(x, "deviceKernelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceKernelVersionUndefined: Self = StObject.set(x, "deviceKernelVersion", js.undefined)
+    inline def setDeviceKernelVersionUndefined: Self = StObject.set(x, "deviceKernelVersion", js.undefined)
     
-    @scala.inline
-    def setPrimaryLanguageCode(value: String): Self = StObject.set(x, "primaryLanguageCode", value.asInstanceOf[js.Any])
+    inline def setPrimaryLanguageCode(value: String): Self = StObject.set(x, "primaryLanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryLanguageCodeUndefined: Self = StObject.set(x, "primaryLanguageCode", js.undefined)
+    inline def setPrimaryLanguageCodeUndefined: Self = StObject.set(x, "primaryLanguageCode", js.undefined)
     
-    @scala.inline
-    def setSecurityPatchLevel(value: String): Self = StObject.set(x, "securityPatchLevel", value.asInstanceOf[js.Any])
+    inline def setSecurityPatchLevel(value: String): Self = StObject.set(x, "securityPatchLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityPatchLevelUndefined: Self = StObject.set(x, "securityPatchLevel", js.undefined)
+    inline def setSecurityPatchLevelUndefined: Self = StObject.set(x, "securityPatchLevel", js.undefined)
     
-    @scala.inline
-    def setSystemUpdateInfo(value: SystemUpdateInfo): Self = StObject.set(x, "systemUpdateInfo", value.asInstanceOf[js.Any])
+    inline def setSystemUpdateInfo(value: SystemUpdateInfo): Self = StObject.set(x, "systemUpdateInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemUpdateInfoUndefined: Self = StObject.set(x, "systemUpdateInfo", js.undefined)
+    inline def setSystemUpdateInfoUndefined: Self = StObject.set(x, "systemUpdateInfo", js.undefined)
   }
 }

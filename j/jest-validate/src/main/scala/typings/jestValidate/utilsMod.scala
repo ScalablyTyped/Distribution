@@ -38,17 +38,12 @@ object utilsMod {
   @js.native
   val WARNING: String = js.native
   
-  @scala.inline
-  def createDidYouMeanMessage(unrecognized: String, allowedOptions: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createDidYouMeanMessage")(unrecognized.asInstanceOf[js.Any], allowedOptions.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createDidYouMeanMessage(unrecognized: String, allowedOptions: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createDidYouMeanMessage")(unrecognized.asInstanceOf[js.Any], allowedOptions.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def format(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def format(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def formatPrettyObject(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatPrettyObject")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatPrettyObject(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatPrettyObject")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def logValidationWarning(name: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logValidationWarning")(name.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logValidationWarning(name: String, message: String, comment: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logValidationWarning")(name.asInstanceOf[js.Any], message.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logValidationWarning(name: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logValidationWarning")(name.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logValidationWarning(name: String, message: String, comment: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logValidationWarning")(name.asInstanceOf[js.Any], message.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

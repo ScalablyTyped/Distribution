@@ -10,7 +10,7 @@ class Database () extends StObject {
   
   var __logColorFuncs: js.Array[js.Function] = js.native
   
-  var _useLogColor: js.Any = js.native
+  /* private */ var _useLogColor: js.Any = js.native
   
   var adapter: js.Any = js.native
   

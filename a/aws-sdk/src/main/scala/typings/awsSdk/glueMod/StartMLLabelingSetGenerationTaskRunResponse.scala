@@ -13,19 +13,15 @@ trait StartMLLabelingSetGenerationTaskRunResponse extends StObject {
 }
 object StartMLLabelingSetGenerationTaskRunResponse {
   
-  @scala.inline
-  def apply(): StartMLLabelingSetGenerationTaskRunResponse = {
+  inline def apply(): StartMLLabelingSetGenerationTaskRunResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartMLLabelingSetGenerationTaskRunResponse]
   }
   
-  @scala.inline
-  implicit class StartMLLabelingSetGenerationTaskRunResponseMutableBuilder[Self <: StartMLLabelingSetGenerationTaskRunResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartMLLabelingSetGenerationTaskRunResponse](x: Self) {
     
-    @scala.inline
-    def setTaskRunId(value: HashString): Self = StObject.set(x, "TaskRunId", value.asInstanceOf[js.Any])
+    inline def setTaskRunId(value: HashString): Self = StObject.set(x, "TaskRunId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskRunIdUndefined: Self = StObject.set(x, "TaskRunId", js.undefined)
+    inline def setTaskRunIdUndefined: Self = StObject.set(x, "TaskRunId", js.undefined)
   }
 }

@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoParagraphAlignment extends StObject
 object MsoParagraphAlignment {
   
-  @scala.inline
-  def msoAlignCenter: `2` = 2.asInstanceOf[`2`]
+  inline def msoAlignCenter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoAlignDistribute: `5` = 5.asInstanceOf[`5`]
+  inline def msoAlignDistribute: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoAlignJustify: `4` = 4.asInstanceOf[`4`]
+  inline def msoAlignJustify: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoAlignJustifyLow: `7` = 7.asInstanceOf[`7`]
+  inline def msoAlignJustifyLow: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def msoAlignLeft: `1` = 1.asInstanceOf[`1`]
+  inline def msoAlignLeft: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoAlignMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoAlignMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoAlignRight: `3` = 3.asInstanceOf[`3`]
+  inline def msoAlignRight: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoAlignThaiDistribute: `6` = 6.asInstanceOf[`6`]
+  inline def msoAlignThaiDistribute: `6` = 6.asInstanceOf[`6`]
 }

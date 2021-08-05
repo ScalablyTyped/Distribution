@@ -15,11 +15,9 @@ object predicateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def toPredicate[V](f: PredicateOrBoolean[V]): Predicate[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPredicate")(f.asInstanceOf[js.Any]).asInstanceOf[Predicate[V]]
+  inline def toPredicate[V](f: PredicateOrBoolean[V]): Predicate[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPredicate")(f.asInstanceOf[js.Any]).asInstanceOf[Predicate[V]]
   
-  @scala.inline
-  def withPredicate[V](
+  inline def withPredicate[V](
     src: default[V],
     f: PredicateOrProperty[V],
     predicateTransformer: Predicate2Transformer[V],

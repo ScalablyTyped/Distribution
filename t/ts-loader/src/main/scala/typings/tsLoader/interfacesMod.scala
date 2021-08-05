@@ -73,8 +73,7 @@ object interfacesMod {
   }
   object ErrorInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       character: Double,
       code: Double,
       content: String,
@@ -87,29 +86,21 @@ object interfacesMod {
       __obj.asInstanceOf[ErrorInfo]
     }
     
-    @scala.inline
-    implicit class ErrorInfoMutableBuilder[Self <: ErrorInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorInfo](x: Self) {
       
-      @scala.inline
-      def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+      inline def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeverity(value: Severity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      inline def setSeverity(value: Severity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -121,20 +112,16 @@ object interfacesMod {
   }
   object FileLocation {
     
-    @scala.inline
-    def apply(character: Double, line: Double): FileLocation = {
+    inline def apply(character: Double, line: Double): FileLocation = {
       val __obj = js.Dynamic.literal(character = character.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileLocation]
     }
     
-    @scala.inline
-    implicit class FileLocationMutableBuilder[Self <: FileLocation] (val x: Self) extends AnyVal {
+    extension [Self <: FileLocation](x: Self) {
       
-      @scala.inline
-      def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+      inline def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
   
@@ -206,8 +193,7 @@ object interfacesMod {
   }
   object LoaderOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowTsInNodeModules: Boolean,
       appendTsSuffixTo: js.Array[RegExp],
       appendTsxSuffixTo: js.Array[RegExp],
@@ -237,99 +223,69 @@ object interfacesMod {
       __obj.asInstanceOf[LoaderOptions]
     }
     
-    @scala.inline
-    implicit class LoaderOptionsMutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoaderOptions](x: Self) {
       
-      @scala.inline
-      def setAllowTsInNodeModules(value: Boolean): Self = StObject.set(x, "allowTsInNodeModules", value.asInstanceOf[js.Any])
+      inline def setAllowTsInNodeModules(value: Boolean): Self = StObject.set(x, "allowTsInNodeModules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendTsSuffixTo(value: js.Array[RegExp]): Self = StObject.set(x, "appendTsSuffixTo", value.asInstanceOf[js.Any])
+      inline def setAppendTsSuffixTo(value: js.Array[RegExp]): Self = StObject.set(x, "appendTsSuffixTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendTsSuffixToVarargs(value: RegExp*): Self = StObject.set(x, "appendTsSuffixTo", js.Array(value :_*))
+      inline def setAppendTsSuffixToVarargs(value: RegExp*): Self = StObject.set(x, "appendTsSuffixTo", js.Array(value :_*))
       
-      @scala.inline
-      def setAppendTsxSuffixTo(value: js.Array[RegExp]): Self = StObject.set(x, "appendTsxSuffixTo", value.asInstanceOf[js.Any])
+      inline def setAppendTsxSuffixTo(value: js.Array[RegExp]): Self = StObject.set(x, "appendTsxSuffixTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendTsxSuffixToVarargs(value: RegExp*): Self = StObject.set(x, "appendTsxSuffixTo", js.Array(value :_*))
+      inline def setAppendTsxSuffixToVarargs(value: RegExp*): Self = StObject.set(x, "appendTsxSuffixTo", js.Array(value :_*))
       
-      @scala.inline
-      def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompiler(value: String): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+      inline def setCompiler(value: String): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
+      inline def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
+      inline def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorFormatter(value: (ErrorInfo, Chalk) => String): Self = StObject.set(x, "errorFormatter", js.Any.fromFunction2(value))
+      inline def setErrorFormatter(value: (ErrorInfo, Chalk) => String): Self = StObject.set(x, "errorFormatter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExperimentalFileCaching(value: Boolean): Self = StObject.set(x, "experimentalFileCaching", value.asInstanceOf[js.Any])
+      inline def setExperimentalFileCaching(value: Boolean): Self = StObject.set(x, "experimentalFileCaching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExperimentalWatchApi(value: Boolean): Self = StObject.set(x, "experimentalWatchApi", value.asInstanceOf[js.Any])
+      inline def setExperimentalWatchApi(value: Boolean): Self = StObject.set(x, "experimentalWatchApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetCustomTransformers(value: String | (js.Function1[/* program */ Program, js.UndefOr[CustomTransformers]])): Self = StObject.set(x, "getCustomTransformers", value.asInstanceOf[js.Any])
+      inline def setGetCustomTransformers(value: String | (js.Function1[/* program */ Program, js.UndefOr[CustomTransformers]])): Self = StObject.set(x, "getCustomTransformers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetCustomTransformersFunction1(value: /* program */ Program => js.UndefOr[CustomTransformers]): Self = StObject.set(x, "getCustomTransformers", js.Any.fromFunction1(value))
+      inline def setGetCustomTransformersFunction1(value: /* program */ Program => js.UndefOr[CustomTransformers]): Self = StObject.set(x, "getCustomTransformers", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHappyPackMode(value: Boolean): Self = StObject.set(x, "happyPackMode", value.asInstanceOf[js.Any])
+      inline def setHappyPackMode(value: Boolean): Self = StObject.set(x, "happyPackMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDiagnostics(value: js.Array[Double]): Self = StObject.set(x, "ignoreDiagnostics", value.asInstanceOf[js.Any])
+      inline def setIgnoreDiagnostics(value: js.Array[Double]): Self = StObject.set(x, "ignoreDiagnostics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDiagnosticsVarargs(value: Double*): Self = StObject.set(x, "ignoreDiagnostics", js.Array(value :_*))
+      inline def setIgnoreDiagnosticsVarargs(value: Double*): Self = StObject.set(x, "ignoreDiagnostics", js.Array(value :_*))
       
-      @scala.inline
-      def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogInfoToStdOut(value: Boolean): Self = StObject.set(x, "logInfoToStdOut", value.asInstanceOf[js.Any])
+      inline def setLogInfoToStdOut(value: Boolean): Self = StObject.set(x, "logInfoToStdOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyCompileBundledFiles(value: Boolean): Self = StObject.set(x, "onlyCompileBundledFiles", value.asInstanceOf[js.Any])
+      inline def setOnlyCompileBundledFiles(value: Boolean): Self = StObject.set(x, "onlyCompileBundledFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectReferences(value: Boolean): Self = StObject.set(x, "projectReferences", value.asInstanceOf[js.Any])
+      inline def setProjectReferences(value: Boolean): Self = StObject.set(x, "projectReferences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportFiles(value: js.Array[String]): Self = StObject.set(x, "reportFiles", value.asInstanceOf[js.Any])
+      inline def setReportFiles(value: js.Array[String]): Self = StObject.set(x, "reportFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportFilesVarargs(value: String*): Self = StObject.set(x, "reportFiles", js.Array(value :_*))
+      inline def setReportFilesVarargs(value: String*): Self = StObject.set(x, "reportFiles", js.Array(value :_*))
       
-      @scala.inline
-      def setResolveModuleName(
+      inline def setResolveModuleName(
         value: (/* moduleName */ String, /* containingFile */ String, /* compilerOptions */ CompilerOptions, /* moduleResolutionHost */ ModuleResolutionHost, /* parentResolver */ ResolveModuleName) => ResolvedModuleWithFailedLookupLocations
       ): Self = StObject.set(x, "resolveModuleName", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setResolveTypeReferenceDirective(
+      inline def setResolveTypeReferenceDirective(
         value: (/* typeDirectiveName */ String, /* containingFile */ String, /* compilerOptions */ CompilerOptions, /* moduleResolutionHost */ ModuleResolutionHost, /* parentResolver */ FnCall) => ResolvedTypeReferenceDirectiveWithFailedLookupLocations
       ): Self = StObject.set(x, "resolveTypeReferenceDirective", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranspileOnly(value: Boolean): Self = StObject.set(x, "transpileOnly", value.asInstanceOf[js.Any])
+      inline def setTranspileOnly(value: Boolean): Self = StObject.set(x, "transpileOnly", value.asInstanceOf[js.Any])
     }
   }
   
@@ -343,14 +299,11 @@ object interfacesMod {
   trait LogLevel extends StObject
   object LogLevel {
     
-    @scala.inline
-    def ERROR: typings.tsLoader.tsLoaderStrings.ERROR = "ERROR".asInstanceOf[typings.tsLoader.tsLoaderStrings.ERROR]
+    inline def ERROR: typings.tsLoader.tsLoaderStrings.ERROR = "ERROR".asInstanceOf[typings.tsLoader.tsLoaderStrings.ERROR]
     
-    @scala.inline
-    def INFO: typings.tsLoader.tsLoaderStrings.INFO = "INFO".asInstanceOf[typings.tsLoader.tsLoaderStrings.INFO]
+    inline def INFO: typings.tsLoader.tsLoaderStrings.INFO = "INFO".asInstanceOf[typings.tsLoader.tsLoaderStrings.INFO]
     
-    @scala.inline
-    def WARN: typings.tsLoader.tsLoaderStrings.WARN = "WARN".asInstanceOf[typings.tsLoader.tsLoaderStrings.WARN]
+    inline def WARN: typings.tsLoader.tsLoaderStrings.WARN = "WARN".asInstanceOf[typings.tsLoader.tsLoaderStrings.WARN]
   }
   
   type ResolveModuleName = js.Function4[
@@ -375,32 +328,24 @@ object interfacesMod {
   }
   object ResolvedModule {
     
-    @scala.inline
-    def apply(originalFileName: String, resolvedFileName: String): ResolvedModule = {
+    inline def apply(originalFileName: String, resolvedFileName: String): ResolvedModule = {
       val __obj = js.Dynamic.literal(originalFileName = originalFileName.asInstanceOf[js.Any], resolvedFileName = resolvedFileName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolvedModule]
     }
     
-    @scala.inline
-    implicit class ResolvedModuleMutableBuilder[Self <: ResolvedModule] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvedModule](x: Self) {
       
-      @scala.inline
-      def setIsExternalLibraryImport(value: Boolean): Self = StObject.set(x, "isExternalLibraryImport", value.asInstanceOf[js.Any])
+      inline def setIsExternalLibraryImport(value: Boolean): Self = StObject.set(x, "isExternalLibraryImport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExternalLibraryImportUndefined: Self = StObject.set(x, "isExternalLibraryImport", js.undefined)
+      inline def setIsExternalLibraryImportUndefined: Self = StObject.set(x, "isExternalLibraryImport", js.undefined)
       
-      @scala.inline
-      def setOriginalFileName(value: String): Self = StObject.set(x, "originalFileName", value.asInstanceOf[js.Any])
+      inline def setOriginalFileName(value: String): Self = StObject.set(x, "originalFileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolvedFileName(value: String): Self = StObject.set(x, "resolvedFileName", value.asInstanceOf[js.Any])
+      inline def setResolvedFileName(value: String): Self = StObject.set(x, "resolvedFileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolvedModule(value: ResolvedModule): Self = StObject.set(x, "resolvedModule", value.asInstanceOf[js.Any])
+      inline def setResolvedModule(value: ResolvedModule): Self = StObject.set(x, "resolvedModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolvedModuleUndefined: Self = StObject.set(x, "resolvedModule", js.undefined)
+      inline def setResolvedModuleUndefined: Self = StObject.set(x, "resolvedModule", js.undefined)
     }
   }
   
@@ -413,11 +358,9 @@ object interfacesMod {
   trait Severity extends StObject
   object Severity {
     
-    @scala.inline
-    def error: error_ = "error".asInstanceOf[error_]
+    inline def error: error_ = "error".asInstanceOf[error_]
     
-    @scala.inline
-    def warning: typings.tsLoader.tsLoaderStrings.warning = "warning".asInstanceOf[typings.tsLoader.tsLoaderStrings.warning]
+    inline def warning: typings.tsLoader.tsLoaderStrings.warning = "warning".asInstanceOf[typings.tsLoader.tsLoaderStrings.warning]
   }
   
   @js.native
@@ -459,8 +402,7 @@ object interfacesMod {
   }
   object SolutionDiagnostics {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       global: js.Array[Diagnostic],
       perFile: Map[String, js.Array[Diagnostic]],
       transpileErrors: js.Array[js.Tuple2[js.UndefOr[String], js.Array[Diagnostic]]]
@@ -469,23 +411,17 @@ object interfacesMod {
       __obj.asInstanceOf[SolutionDiagnostics]
     }
     
-    @scala.inline
-    implicit class SolutionDiagnosticsMutableBuilder[Self <: SolutionDiagnostics] (val x: Self) extends AnyVal {
+    extension [Self <: SolutionDiagnostics](x: Self) {
       
-      @scala.inline
-      def setGlobal(value: js.Array[Diagnostic]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: js.Array[Diagnostic]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalVarargs(value: Diagnostic*): Self = StObject.set(x, "global", js.Array(value :_*))
+      inline def setGlobalVarargs(value: Diagnostic*): Self = StObject.set(x, "global", js.Array(value :_*))
       
-      @scala.inline
-      def setPerFile(value: Map[String, js.Array[Diagnostic]]): Self = StObject.set(x, "perFile", value.asInstanceOf[js.Any])
+      inline def setPerFile(value: Map[String, js.Array[Diagnostic]]): Self = StObject.set(x, "perFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranspileErrors(value: js.Array[js.Tuple2[js.UndefOr[String], js.Array[Diagnostic]]]): Self = StObject.set(x, "transpileErrors", value.asInstanceOf[js.Any])
+      inline def setTranspileErrors(value: js.Array[js.Tuple2[js.UndefOr[String], js.Array[Diagnostic]]]): Self = StObject.set(x, "transpileErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranspileErrorsVarargs(value: (js.Tuple2[js.UndefOr[String], js.Array[Diagnostic]])*): Self = StObject.set(x, "transpileErrors", js.Array(value :_*))
+      inline def setTranspileErrorsVarargs(value: (js.Tuple2[js.UndefOr[String], js.Array[Diagnostic]])*): Self = StObject.set(x, "transpileErrors", js.Array(value :_*))
     }
   }
   
@@ -499,29 +435,22 @@ object interfacesMod {
   }
   object TSFile {
     
-    @scala.inline
-    def apply(version: Double): TSFile = {
+    inline def apply(version: Double): TSFile = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[TSFile]
     }
     
-    @scala.inline
-    implicit class TSFileMutableBuilder[Self <: TSFile] (val x: Self) extends AnyVal {
+    extension [Self <: TSFile](x: Self) {
       
-      @scala.inline
-      def setProjectReference(value: OutputFileName): Self = StObject.set(x, "projectReference", value.asInstanceOf[js.Any])
+      inline def setProjectReference(value: OutputFileName): Self = StObject.set(x, "projectReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectReferenceUndefined: Self = StObject.set(x, "projectReference", js.undefined)
+      inline def setProjectReferenceUndefined: Self = StObject.set(x, "projectReference", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -614,8 +543,7 @@ object interfacesMod {
   }
   object TSInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appendTsTsxSuffixesIfRequired: String => String,
       colors: Chalk,
       compiler: Typeoftypescript,
@@ -632,128 +560,87 @@ object interfacesMod {
       __obj.asInstanceOf[TSInstance]
     }
     
-    @scala.inline
-    implicit class TSInstanceMutableBuilder[Self <: TSInstance] (val x: Self) extends AnyVal {
+    extension [Self <: TSInstance](x: Self) {
       
-      @scala.inline
-      def setAppendTsTsxSuffixesIfRequired(value: String => String): Self = StObject.set(x, "appendTsTsxSuffixesIfRequired", js.Any.fromFunction1(value))
+      inline def setAppendTsTsxSuffixesIfRequired(value: String => String): Self = StObject.set(x, "appendTsTsxSuffixesIfRequired", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBuilderProgram(value: EmitAndSemanticDiagnosticsBuilderProgram): Self = StObject.set(x, "builderProgram", value.asInstanceOf[js.Any])
+      inline def setBuilderProgram(value: EmitAndSemanticDiagnosticsBuilderProgram): Self = StObject.set(x, "builderProgram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuilderProgramUndefined: Self = StObject.set(x, "builderProgram", js.undefined)
+      inline def setBuilderProgramUndefined: Self = StObject.set(x, "builderProgram", js.undefined)
       
-      @scala.inline
-      def setChangedFilesList(value: Boolean): Self = StObject.set(x, "changedFilesList", value.asInstanceOf[js.Any])
+      inline def setChangedFilesList(value: Boolean): Self = StObject.set(x, "changedFilesList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedFilesListUndefined: Self = StObject.set(x, "changedFilesList", js.undefined)
+      inline def setChangedFilesListUndefined: Self = StObject.set(x, "changedFilesList", js.undefined)
       
-      @scala.inline
-      def setColors(value: Chalk): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Chalk): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompiler(value: Typeoftypescript): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+      inline def setCompiler(value: Typeoftypescript): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
+      inline def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigFilePath(value: String): Self = StObject.set(x, "configFilePath", value.asInstanceOf[js.Any])
+      inline def setConfigFilePath(value: String): Self = StObject.set(x, "configFilePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigFilePathUndefined: Self = StObject.set(x, "configFilePath", js.undefined)
+      inline def setConfigFilePathUndefined: Self = StObject.set(x, "configFilePath", js.undefined)
       
-      @scala.inline
-      def setDependencyGraph(value: DependencyGraph): Self = StObject.set(x, "dependencyGraph", value.asInstanceOf[js.Any])
+      inline def setDependencyGraph(value: DependencyGraph): Self = StObject.set(x, "dependencyGraph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiles(value: TSFiles): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: TSFiles): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesWithErrors(value: TSFiles): Self = StObject.set(x, "filesWithErrors", value.asInstanceOf[js.Any])
+      inline def setFilesWithErrors(value: TSFiles): Self = StObject.set(x, "filesWithErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesWithErrorsUndefined: Self = StObject.set(x, "filesWithErrors", js.undefined)
+      inline def setFilesWithErrorsUndefined: Self = StObject.set(x, "filesWithErrors", js.undefined)
       
-      @scala.inline
-      def setHasUnaccountedModifiedFiles(value: Boolean): Self = StObject.set(x, "hasUnaccountedModifiedFiles", value.asInstanceOf[js.Any])
+      inline def setHasUnaccountedModifiedFiles(value: Boolean): Self = StObject.set(x, "hasUnaccountedModifiedFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasUnaccountedModifiedFilesUndefined: Self = StObject.set(x, "hasUnaccountedModifiedFiles", js.undefined)
+      inline def setHasUnaccountedModifiedFilesUndefined: Self = StObject.set(x, "hasUnaccountedModifiedFiles", js.undefined)
       
-      @scala.inline
-      def setLanguageService(value: LanguageService): Self = StObject.set(x, "languageService", value.asInstanceOf[js.Any])
+      inline def setLanguageService(value: LanguageService): Self = StObject.set(x, "languageService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageServiceNull: Self = StObject.set(x, "languageService", null)
+      inline def setLanguageServiceNull: Self = StObject.set(x, "languageService", null)
       
-      @scala.inline
-      def setLanguageServiceUndefined: Self = StObject.set(x, "languageService", js.undefined)
+      inline def setLanguageServiceUndefined: Self = StObject.set(x, "languageService", js.undefined)
       
-      @scala.inline
-      def setLoaderOptions(value: LoaderOptions): Self = StObject.set(x, "loaderOptions", value.asInstanceOf[js.Any])
+      inline def setLoaderOptions(value: LoaderOptions): Self = StObject.set(x, "loaderOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedFiles(value: TSFiles): Self = StObject.set(x, "modifiedFiles", value.asInstanceOf[js.Any])
+      inline def setModifiedFiles(value: TSFiles): Self = StObject.set(x, "modifiedFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedFilesUndefined: Self = StObject.set(x, "modifiedFiles", js.undefined)
+      inline def setModifiedFilesUndefined: Self = StObject.set(x, "modifiedFiles", js.undefined)
       
-      @scala.inline
-      def setOtherFiles(value: TSFiles): Self = StObject.set(x, "otherFiles", value.asInstanceOf[js.Any])
+      inline def setOtherFiles(value: TSFiles): Self = StObject.set(x, "otherFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgram(value: Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
+      inline def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
       
-      @scala.inline
-      def setProjectsMissingSourceMaps(value: Set[String]): Self = StObject.set(x, "projectsMissingSourceMaps", value.asInstanceOf[js.Any])
+      inline def setProjectsMissingSourceMaps(value: Set[String]): Self = StObject.set(x, "projectsMissingSourceMaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectsMissingSourceMapsUndefined: Self = StObject.set(x, "projectsMissingSourceMaps", js.undefined)
+      inline def setProjectsMissingSourceMapsUndefined: Self = StObject.set(x, "projectsMissingSourceMaps", js.undefined)
       
-      @scala.inline
-      def setReverseDependencyGraph(value: ReverseDependencyGraph): Self = StObject.set(x, "reverseDependencyGraph", value.asInstanceOf[js.Any])
+      inline def setReverseDependencyGraph(value: ReverseDependencyGraph): Self = StObject.set(x, "reverseDependencyGraph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootFileNames(value: Set[String]): Self = StObject.set(x, "rootFileNames", value.asInstanceOf[js.Any])
+      inline def setRootFileNames(value: Set[String]): Self = StObject.set(x, "rootFileNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSolutionBuilder(value: SolutionBuilder[EmitAndSemanticDiagnosticsBuilderProgram]): Self = StObject.set(x, "solutionBuilder", value.asInstanceOf[js.Any])
+      inline def setSolutionBuilder(value: SolutionBuilder[EmitAndSemanticDiagnosticsBuilderProgram]): Self = StObject.set(x, "solutionBuilder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSolutionBuilderHost(value: SolutionBuilderWithWatchHost): Self = StObject.set(x, "solutionBuilderHost", value.asInstanceOf[js.Any])
+      inline def setSolutionBuilderHost(value: SolutionBuilderWithWatchHost): Self = StObject.set(x, "solutionBuilderHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSolutionBuilderHostUndefined: Self = StObject.set(x, "solutionBuilderHost", js.undefined)
+      inline def setSolutionBuilderHostUndefined: Self = StObject.set(x, "solutionBuilderHost", js.undefined)
       
-      @scala.inline
-      def setSolutionBuilderUndefined: Self = StObject.set(x, "solutionBuilder", js.undefined)
+      inline def setSolutionBuilderUndefined: Self = StObject.set(x, "solutionBuilder", js.undefined)
       
-      @scala.inline
-      def setTransformers(value: CustomTransformers): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
+      inline def setTransformers(value: CustomTransformers): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       
-      @scala.inline
-      def setWatchHost(value: WatchHost): Self = StObject.set(x, "watchHost", value.asInstanceOf[js.Any])
+      inline def setWatchHost(value: WatchHost): Self = StObject.set(x, "watchHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchHostUndefined: Self = StObject.set(x, "watchHost", js.undefined)
+      inline def setWatchHostUndefined: Self = StObject.set(x, "watchHost", js.undefined)
       
-      @scala.inline
-      def setWatchOfFilesAndCompilerOptions(value: WatchOfFilesAndCompilerOptions[EmitAndSemanticDiagnosticsBuilderProgram]): Self = StObject.set(x, "watchOfFilesAndCompilerOptions", value.asInstanceOf[js.Any])
+      inline def setWatchOfFilesAndCompilerOptions(value: WatchOfFilesAndCompilerOptions[EmitAndSemanticDiagnosticsBuilderProgram]): Self = StObject.set(x, "watchOfFilesAndCompilerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchOfFilesAndCompilerOptionsUndefined: Self = StObject.set(x, "watchOfFilesAndCompilerOptions", js.undefined)
+      inline def setWatchOfFilesAndCompilerOptionsUndefined: Self = StObject.set(x, "watchOfFilesAndCompilerOptions", js.undefined)
     }
   }
   
@@ -817,38 +704,28 @@ object interfacesMod {
   }
   object WebpackError {
     
-    @scala.inline
-    def apply(loaderSource: String, message: String): WebpackError = {
+    inline def apply(loaderSource: String, message: String): WebpackError = {
       val __obj = js.Dynamic.literal(loaderSource = loaderSource.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebpackError]
     }
     
-    @scala.inline
-    implicit class WebpackErrorMutableBuilder[Self <: WebpackError] (val x: Self) extends AnyVal {
+    extension [Self <: WebpackError](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setLoaderSource(value: String): Self = StObject.set(x, "loaderSource", value.asInstanceOf[js.Any])
+      inline def setLoaderSource(value: String): Self = StObject.set(x, "loaderSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: FileLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: FileLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModule(value: js.Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: js.Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+      inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
     }
   }
   
@@ -862,26 +739,20 @@ object interfacesMod {
   }
   object WebpackModule {
     
-    @scala.inline
-    def apply(buildMeta: TsLoaderDefinitionFileVersions, errors: js.Array[WebpackError], resource: String): WebpackModule = {
+    inline def apply(buildMeta: TsLoaderDefinitionFileVersions, errors: js.Array[WebpackError], resource: String): WebpackModule = {
       val __obj = js.Dynamic.literal(buildMeta = buildMeta.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebpackModule]
     }
     
-    @scala.inline
-    implicit class WebpackModuleMutableBuilder[Self <: WebpackModule] (val x: Self) extends AnyVal {
+    extension [Self <: WebpackModule](x: Self) {
       
-      @scala.inline
-      def setBuildMeta(value: TsLoaderDefinitionFileVersions): Self = StObject.set(x, "buildMeta", value.asInstanceOf[js.Any])
+      inline def setBuildMeta(value: TsLoaderDefinitionFileVersions): Self = StObject.set(x, "buildMeta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrors(value: js.Array[WebpackError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[WebpackError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: WebpackError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: WebpackError*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     }
   }
 }

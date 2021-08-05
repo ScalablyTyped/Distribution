@@ -15,16 +15,13 @@ trait CallOptionsWithPagination
 }
 object CallOptionsWithPagination {
   
-  @scala.inline
-  def apply(): CallOptionsWithPagination = {
+  inline def apply(): CallOptionsWithPagination = {
     val __obj = js.Dynamic.literal(autoPaginate = false)
     __obj.asInstanceOf[CallOptionsWithPagination]
   }
   
-  @scala.inline
-  implicit class CallOptionsWithPaginationMutableBuilder[Self <: CallOptionsWithPagination] (val x: Self) extends AnyVal {
+  extension [Self <: CallOptionsWithPagination](x: Self) {
     
-    @scala.inline
-    def setAutoPaginate(value: `false`): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
+    inline def setAutoPaginate(value: `false`): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
   }
 }

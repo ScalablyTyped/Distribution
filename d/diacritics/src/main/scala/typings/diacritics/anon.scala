@@ -14,20 +14,16 @@ object anon {
   }
   object Base {
     
-    @scala.inline
-    def apply(base: String, chars: String): Base = {
+    inline def apply(base: String, chars: String): Base = {
       val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], chars = chars.asInstanceOf[js.Any])
       __obj.asInstanceOf[Base]
     }
     
-    @scala.inline
-    implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
+    extension [Self <: Base](x: Self) {
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChars(value: String): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
+      inline def setChars(value: String): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
     }
   }
 }

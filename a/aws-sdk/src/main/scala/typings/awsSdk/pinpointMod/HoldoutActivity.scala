@@ -18,22 +18,17 @@ trait HoldoutActivity extends StObject {
 }
 object HoldoutActivity {
   
-  @scala.inline
-  def apply(Percentage: integer): HoldoutActivity = {
+  inline def apply(Percentage: integer): HoldoutActivity = {
     val __obj = js.Dynamic.literal(Percentage = Percentage.asInstanceOf[js.Any])
     __obj.asInstanceOf[HoldoutActivity]
   }
   
-  @scala.inline
-  implicit class HoldoutActivityMutableBuilder[Self <: HoldoutActivity] (val x: Self) extends AnyVal {
+  extension [Self <: HoldoutActivity](x: Self) {
     
-    @scala.inline
-    def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
+    inline def setNextActivity(value: string): Self = StObject.set(x, "NextActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextActivityUndefined: Self = StObject.set(x, "NextActivity", js.undefined)
+    inline def setNextActivityUndefined: Self = StObject.set(x, "NextActivity", js.undefined)
     
-    @scala.inline
-    def setPercentage(value: integer): Self = StObject.set(x, "Percentage", value.asInstanceOf[js.Any])
+    inline def setPercentage(value: integer): Self = StObject.set(x, "Percentage", value.asInstanceOf[js.Any])
   }
 }

@@ -30,8 +30,7 @@ object Notification {
     * @see https://docs.scriptable.app/notification/#alldelivered
     */
   /* static member */
-  @scala.inline
-  def allDelivered(): js.Promise[js.Array[typings.scriptableIos.Notification]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDelivered")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Notification]]]
+  inline def allDelivered(): js.Promise[js.Array[typings.scriptableIos.Notification]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDelivered")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Notification]]]
   
   /**
     * _All pending notifications._
@@ -40,8 +39,7 @@ object Notification {
     * @see https://docs.scriptable.app/notification/#allpending
     */
   /* static member */
-  @scala.inline
-  def allPending(): js.Promise[js.Array[typings.scriptableIos.Notification]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allPending")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Notification]]]
+  inline def allPending(): js.Promise[js.Array[typings.scriptableIos.Notification]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allPending")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Notification]]]
   
   /**
     * _Removes all delivered notifications._
@@ -50,8 +48,7 @@ object Notification {
     * @see https://docs.scriptable.app/notification/#removealldelivered
     */
   /* static member */
-  @scala.inline
-  def removeAllDelivered(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllDelivered")().asInstanceOf[js.Promise[Unit]]
+  inline def removeAllDelivered(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllDelivered")().asInstanceOf[js.Promise[Unit]]
   
   /**
     * _Removes all pending notifications._
@@ -62,8 +59,7 @@ object Notification {
     * @see https://docs.scriptable.app/notification/#removeallpending
     */
   /* static member */
-  @scala.inline
-  def removeAllPending(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllPending")().asInstanceOf[js.Promise[Unit]]
+  inline def removeAllPending(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllPending")().asInstanceOf[js.Promise[Unit]]
   
   /**
     * _Removes delivered notifications._
@@ -73,8 +69,7 @@ object Notification {
     * @see https://docs.scriptable.app/notification/#removedelivered
     */
   /* static member */
-  @scala.inline
-  def removeDelivered(identifiers: js.Array[String]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDelivered")(identifiers.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def removeDelivered(identifiers: js.Array[String]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDelivered")(identifiers.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * _Removes pending notifications._
@@ -84,8 +79,7 @@ object Notification {
     * @see https://docs.scriptable.app/notification/#removepending
     */
   /* static member */
-  @scala.inline
-  def removePending(identifiers: js.Array[String]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removePending")(identifiers.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def removePending(identifiers: js.Array[String]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removePending")(identifiers.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * _Resets the current notification._
@@ -97,6 +91,5 @@ object Notification {
     * @see https://docs.scriptable.app/notification/#resetcurrent
     */
   /* static member */
-  @scala.inline
-  def resetCurrent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetCurrent")().asInstanceOf[Unit]
+  inline def resetCurrent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetCurrent")().asInstanceOf[Unit]
 }

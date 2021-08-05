@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcLayoutType extends StObject
 object AcLayoutType {
   
-  @scala.inline
-  def acLayoutNone: `0` = 0.asInstanceOf[`0`]
+  inline def acLayoutNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acLayoutStacked: `2` = 2.asInstanceOf[`2`]
+  inline def acLayoutStacked: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acLayoutTabular: `1` = 1.asInstanceOf[`1`]
+  inline def acLayoutTabular: `1` = 1.asInstanceOf[`1`]
 }

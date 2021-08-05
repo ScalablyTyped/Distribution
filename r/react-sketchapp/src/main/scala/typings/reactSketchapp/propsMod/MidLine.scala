@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MidLine extends StObject
 object MidLine {
   
-  @scala.inline
-  def sharp: typings.reactSketchapp.reactSketchappStrings.sharp = "sharp".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.sharp]
+  inline def sharp: typings.reactSketchapp.reactSketchappStrings.sharp = "sharp".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.sharp]
   
-  @scala.inline
-  def smooth: typings.reactSketchapp.reactSketchappStrings.smooth = "smooth".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.smooth]
+  inline def smooth: typings.reactSketchapp.reactSketchappStrings.smooth = "smooth".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.smooth]
 }

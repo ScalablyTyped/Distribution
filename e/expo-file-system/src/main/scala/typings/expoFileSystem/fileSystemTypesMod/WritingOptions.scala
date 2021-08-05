@@ -12,19 +12,15 @@ trait WritingOptions extends StObject {
 }
 object WritingOptions {
   
-  @scala.inline
-  def apply(): WritingOptions = {
+  inline def apply(): WritingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WritingOptions]
   }
   
-  @scala.inline
-  implicit class WritingOptionsMutableBuilder[Self <: WritingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WritingOptions](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: EncodingType | utf8 | base64): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: EncodingType | utf8 | base64): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
   }
 }

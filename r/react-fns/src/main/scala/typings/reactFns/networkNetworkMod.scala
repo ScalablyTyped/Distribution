@@ -39,23 +39,18 @@ object networkNetworkMod {
   }
   object NetworkProps {
     
-    @scala.inline
-    def apply(online: Boolean): NetworkProps = {
+    inline def apply(online: Boolean): NetworkProps = {
       val __obj = js.Dynamic.literal(online = online.asInstanceOf[js.Any])
       __obj.asInstanceOf[NetworkProps]
     }
     
-    @scala.inline
-    implicit class NetworkPropsMutableBuilder[Self <: NetworkProps] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkProps](x: Self) {
       
-      @scala.inline
-      def setOfflineAt(value: Date): Self = StObject.set(x, "offlineAt", value.asInstanceOf[js.Any])
+      inline def setOfflineAt(value: Date): Self = StObject.set(x, "offlineAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOfflineAtUndefined: Self = StObject.set(x, "offlineAt", js.undefined)
+      inline def setOfflineAtUndefined: Self = StObject.set(x, "offlineAt", js.undefined)
       
-      @scala.inline
-      def setOnline(value: Boolean): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
+      inline def setOnline(value: Boolean): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
     }
   }
 }

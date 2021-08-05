@@ -12,20 +12,16 @@ trait TimelineCriteriaStatus extends StObject {
 }
 object TimelineCriteriaStatus {
   
-  @scala.inline
-  def apply(message: String, `type`: TimelineCriteriaStatusCode): TimelineCriteriaStatus = {
+  inline def apply(message: String, `type`: TimelineCriteriaStatusCode): TimelineCriteriaStatus = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineCriteriaStatus]
   }
   
-  @scala.inline
-  implicit class TimelineCriteriaStatusMutableBuilder[Self <: TimelineCriteriaStatus] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineCriteriaStatus](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TimelineCriteriaStatusCode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TimelineCriteriaStatusCode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

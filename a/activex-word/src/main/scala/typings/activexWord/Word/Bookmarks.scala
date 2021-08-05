@@ -27,6 +27,6 @@ trait Bookmarks extends StObject {
   
   var ShowHidden: Boolean = js.native
   
-  @JSName("Word.Bookmarks_typekey")
+  /* private */ @JSName("Word.Bookmarks_typekey")
   var WordDotBookmarks_typekey: Bookmarks = js.native
 }

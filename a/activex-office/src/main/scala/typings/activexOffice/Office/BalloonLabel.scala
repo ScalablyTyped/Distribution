@@ -14,7 +14,7 @@ trait BalloonLabel extends StObject {
   
   val Name: String
   
-  @JSName("Office.BalloonLabel_typekey")
+  /* private */ @JSName("Office.BalloonLabel_typekey")
   var OfficeDotBalloonLabel_typekey: BalloonLabel
   
   val Parent: js.Any
@@ -23,8 +23,7 @@ trait BalloonLabel extends StObject {
 }
 object BalloonLabel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     Item: String,
@@ -38,28 +37,20 @@ object BalloonLabel {
     __obj.asInstanceOf[BalloonLabel]
   }
   
-  @scala.inline
-  implicit class BalloonLabelMutableBuilder[Self <: BalloonLabel] (val x: Self) extends AnyVal {
+  extension [Self <: BalloonLabel](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: String): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    inline def setItem(value: String): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotBalloonLabel_typekey(value: BalloonLabel): Self = StObject.set(x, "Office.BalloonLabel_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotBalloonLabel_typekey(value: BalloonLabel): Self = StObject.set(x, "Office.BalloonLabel_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait RebootInstanceRequest extends StObject {
 }
 object RebootInstanceRequest {
   
-  @scala.inline
-  def apply(instanceName: ResourceName): RebootInstanceRequest = {
+  inline def apply(instanceName: ResourceName): RebootInstanceRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RebootInstanceRequest]
   }
   
-  @scala.inline
-  implicit class RebootInstanceRequestMutableBuilder[Self <: RebootInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RebootInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
   }
 }

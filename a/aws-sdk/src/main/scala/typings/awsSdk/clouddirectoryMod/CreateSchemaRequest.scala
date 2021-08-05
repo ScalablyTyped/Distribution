@@ -13,16 +13,13 @@ trait CreateSchemaRequest extends StObject {
 }
 object CreateSchemaRequest {
   
-  @scala.inline
-  def apply(Name: SchemaName): CreateSchemaRequest = {
+  inline def apply(Name: SchemaName): CreateSchemaRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSchemaRequest]
   }
   
-  @scala.inline
-  implicit class CreateSchemaRequestMutableBuilder[Self <: CreateSchemaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSchemaRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: SchemaName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SchemaName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

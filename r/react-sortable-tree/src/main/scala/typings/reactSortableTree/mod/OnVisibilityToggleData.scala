@@ -13,16 +13,13 @@ trait OnVisibilityToggleData
 }
 object OnVisibilityToggleData {
   
-  @scala.inline
-  def apply(expanded: Boolean, node: TreeItem, treeData: js.Array[TreeItem]): OnVisibilityToggleData = {
+  inline def apply(expanded: Boolean, node: TreeItem, treeData: js.Array[TreeItem]): OnVisibilityToggleData = {
     val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], treeData = treeData.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnVisibilityToggleData]
   }
   
-  @scala.inline
-  implicit class OnVisibilityToggleDataMutableBuilder[Self <: OnVisibilityToggleData] (val x: Self) extends AnyVal {
+  extension [Self <: OnVisibilityToggleData](x: Self) {
     
-    @scala.inline
-    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
   }
 }

@@ -24,29 +24,22 @@ trait CIMGeometricEffectOffsetHatch
 }
 object CIMGeometricEffectOffsetHatch {
   
-  @scala.inline
-  def apply(): CIMGeometricEffectOffsetHatch = {
+  inline def apply(): CIMGeometricEffectOffsetHatch = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMGeometricEffectOffsetHatch")
     __obj.asInstanceOf[CIMGeometricEffectOffsetHatch]
   }
   
-  @scala.inline
-  implicit class CIMGeometricEffectOffsetHatchMutableBuilder[Self <: CIMGeometricEffectOffsetHatch] (val x: Self) extends AnyVal {
+  extension [Self <: CIMGeometricEffectOffsetHatch](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffsetHatch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffsetHatch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

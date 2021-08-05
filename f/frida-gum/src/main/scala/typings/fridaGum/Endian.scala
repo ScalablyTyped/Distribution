@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Endian extends StObject
 object Endian {
   
-  @scala.inline
-  def be: typings.fridaGum.fridaGumStrings.be = "be".asInstanceOf[typings.fridaGum.fridaGumStrings.be]
+  inline def be: typings.fridaGum.fridaGumStrings.be = "be".asInstanceOf[typings.fridaGum.fridaGumStrings.be]
   
-  @scala.inline
-  def le: typings.fridaGum.fridaGumStrings.le = "le".asInstanceOf[typings.fridaGum.fridaGumStrings.le]
+  inline def le: typings.fridaGum.fridaGumStrings.le = "le".asInstanceOf[typings.fridaGum.fridaGumStrings.le]
 }

@@ -405,6 +405,5 @@ object ASPxClientDropDownEdit {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  @scala.inline
-  def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientDropDownEdit = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientDropDownEdit]
+  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientDropDownEdit = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientDropDownEdit]
 }

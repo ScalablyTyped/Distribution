@@ -49,8 +49,7 @@ trait XContentProviderManager
 }
 object XContentProviderManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     deregisterContentProvider: (XContentProvider, String) => Unit,
     queryContentProvider: String => XContentProvider,
@@ -63,19 +62,14 @@ object XContentProviderManager {
     __obj.asInstanceOf[XContentProviderManager]
   }
   
-  @scala.inline
-  implicit class XContentProviderManagerMutableBuilder[Self <: XContentProviderManager] (val x: Self) extends AnyVal {
+  extension [Self <: XContentProviderManager](x: Self) {
     
-    @scala.inline
-    def setDeregisterContentProvider(value: (XContentProvider, String) => Unit): Self = StObject.set(x, "deregisterContentProvider", js.Any.fromFunction2(value))
+    inline def setDeregisterContentProvider(value: (XContentProvider, String) => Unit): Self = StObject.set(x, "deregisterContentProvider", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setQueryContentProvider(value: String => XContentProvider): Self = StObject.set(x, "queryContentProvider", js.Any.fromFunction1(value))
+    inline def setQueryContentProvider(value: String => XContentProvider): Self = StObject.set(x, "queryContentProvider", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryContentProviders(value: () => SafeArray[ContentProviderInfo]): Self = StObject.set(x, "queryContentProviders", js.Any.fromFunction0(value))
+    inline def setQueryContentProviders(value: () => SafeArray[ContentProviderInfo]): Self = StObject.set(x, "queryContentProviders", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRegisterContentProvider(value: (XContentProvider, String, Boolean) => XContentProvider): Self = StObject.set(x, "registerContentProvider", js.Any.fromFunction3(value))
+    inline def setRegisterContentProvider(value: (XContentProvider, String, Boolean) => XContentProvider): Self = StObject.set(x, "registerContentProvider", js.Any.fromFunction3(value))
   }
 }

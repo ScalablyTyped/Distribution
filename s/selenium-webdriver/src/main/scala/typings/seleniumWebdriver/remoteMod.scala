@@ -203,59 +203,42 @@ object remoteMod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setArgs(value: js.Array[String] | js.Promise[js.Array[String]]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        inline def setArgs(value: js.Array[String] | js.Promise[js.Array[String]]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+        inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
         
-        @scala.inline
-        def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+        inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
         
-        @scala.inline
-        def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+        inline def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+        inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
         
-        @scala.inline
-        def setJvmArgs(value: js.Array[String] | js.Promise[js.Array[String]]): Self = StObject.set(x, "jvmArgs", value.asInstanceOf[js.Any])
+        inline def setJvmArgs(value: js.Array[String] | js.Promise[js.Array[String]]): Self = StObject.set(x, "jvmArgs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setJvmArgsUndefined: Self = StObject.set(x, "jvmArgs", js.undefined)
+        inline def setJvmArgsUndefined: Self = StObject.set(x, "jvmArgs", js.undefined)
         
-        @scala.inline
-        def setJvmArgsVarargs(value: String*): Self = StObject.set(x, "jvmArgs", js.Array(value :_*))
+        inline def setJvmArgsVarargs(value: String*): Self = StObject.set(x, "jvmArgs", js.Array(value :_*))
         
-        @scala.inline
-        def setLoopback(value: Boolean): Self = StObject.set(x, "loopback", value.asInstanceOf[js.Any])
+        inline def setLoopback(value: Boolean): Self = StObject.set(x, "loopback", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLoopbackUndefined: Self = StObject.set(x, "loopback", js.undefined)
+        inline def setLoopbackUndefined: Self = StObject.set(x, "loopback", js.undefined)
         
-        @scala.inline
-        def setPort(value: Double | js.Promise[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+        inline def setPort(value: Double | js.Promise[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+        inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
         
-        @scala.inline
-        def setStdio(value: String | (js.Array[String | Double])): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
+        inline def setStdio(value: String | (js.Array[String | Double])): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
+        inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
         
-        @scala.inline
-        def setStdioVarargs(value: (String | Double)*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+        inline def setStdioVarargs(value: (String | Double)*): Self = StObject.set(x, "stdio", js.Array(value :_*))
       }
     }
   }

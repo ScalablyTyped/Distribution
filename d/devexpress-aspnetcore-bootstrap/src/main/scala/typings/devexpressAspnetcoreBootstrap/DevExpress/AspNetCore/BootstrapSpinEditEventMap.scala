@@ -24,8 +24,7 @@ trait BootstrapSpinEditEventMap
 }
 object BootstrapSpinEditEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buttonClick: ButtonEditClickEventArgs,
     gotFocus: EventArgs,
     init: EventArgs,
@@ -43,28 +42,20 @@ object BootstrapSpinEditEventMap {
     __obj.asInstanceOf[BootstrapSpinEditEventMap]
   }
   
-  @scala.inline
-  implicit class BootstrapSpinEditEventMapMutableBuilder[Self <: BootstrapSpinEditEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapSpinEditEventMap](x: Self) {
     
-    @scala.inline
-    def setButtonClick(value: ButtonEditClickEventArgs): Self = StObject.set(x, "buttonClick", value.asInstanceOf[js.Any])
+    inline def setButtonClick(value: ButtonEditClickEventArgs): Self = StObject.set(x, "buttonClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyDown(value: EditKeyEventArgs): Self = StObject.set(x, "keyDown", value.asInstanceOf[js.Any])
+    inline def setKeyDown(value: EditKeyEventArgs): Self = StObject.set(x, "keyDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPress(value: EditKeyEventArgs): Self = StObject.set(x, "keyPress", value.asInstanceOf[js.Any])
+    inline def setKeyPress(value: EditKeyEventArgs): Self = StObject.set(x, "keyPress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUp(value: EditKeyEventArgs): Self = StObject.set(x, "keyUp", value.asInstanceOf[js.Any])
+    inline def setKeyUp(value: EditKeyEventArgs): Self = StObject.set(x, "keyUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "numberChanged", value.asInstanceOf[js.Any])
+    inline def setNumberChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "numberChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "textChanged", value.asInstanceOf[js.Any])
+    inline def setTextChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "textChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInput(value: EventArgs): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
+    inline def setUserInput(value: EventArgs): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
   }
 }

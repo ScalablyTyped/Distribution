@@ -11,14 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[StateT, CustomT](app: typings.koa.mod.^[StateT, CustomT]): App[StateT, CustomT] = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[App[StateT, CustomT]]
-  @scala.inline
-  def apply[StateT, CustomT](app: typings.koa.mod.^[StateT, CustomT], wsOptions: Unit, httpsOptions: ServerOptions): App[StateT, CustomT] = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], wsOptions.asInstanceOf[js.Any], httpsOptions.asInstanceOf[js.Any])).asInstanceOf[App[StateT, CustomT]]
-  @scala.inline
-  def apply[StateT, CustomT](app: typings.koa.mod.^[StateT, CustomT], wsOptions: typings.ws.mod.ServerOptions): App[StateT, CustomT] = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], wsOptions.asInstanceOf[js.Any])).asInstanceOf[App[StateT, CustomT]]
-  @scala.inline
-  def apply[StateT, CustomT](
+  inline def apply[StateT, CustomT](app: typings.koa.mod.^[StateT, CustomT]): App[StateT, CustomT] = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[App[StateT, CustomT]]
+  inline def apply[StateT, CustomT](app: typings.koa.mod.^[StateT, CustomT], wsOptions: Unit, httpsOptions: ServerOptions): App[StateT, CustomT] = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], wsOptions.asInstanceOf[js.Any], httpsOptions.asInstanceOf[js.Any])).asInstanceOf[App[StateT, CustomT]]
+  inline def apply[StateT, CustomT](app: typings.koa.mod.^[StateT, CustomT], wsOptions: typings.ws.mod.ServerOptions): App[StateT, CustomT] = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], wsOptions.asInstanceOf[js.Any])).asInstanceOf[App[StateT, CustomT]]
+  inline def apply[StateT, CustomT](
     app: typings.koa.mod.^[StateT, CustomT],
     wsOptions: typings.ws.mod.ServerOptions,
     httpsOptions: ServerOptions
@@ -80,20 +76,16 @@ object mod {
     }
     object Context {
       
-      @scala.inline
-      def apply(path: String, websocket: typings.ws.mod.^): typings.koaWebsocket.mod.koaAugmentingMod.Context = {
+      inline def apply(path: String, websocket: typings.ws.mod.^): typings.koaWebsocket.mod.koaAugmentingMod.Context = {
         val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], websocket = websocket.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.koaWebsocket.mod.koaAugmentingMod.Context]
       }
       
-      @scala.inline
-      implicit class ContextMutableBuilder[Self <: typings.koaWebsocket.mod.koaAugmentingMod.Context] (val x: Self) extends AnyVal {
+      extension [Self <: typings.koaWebsocket.mod.koaAugmentingMod.Context](x: Self) {
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebsocket(value: typings.ws.mod.^): Self = StObject.set(x, "websocket", value.asInstanceOf[js.Any])
+        inline def setWebsocket(value: typings.ws.mod.^): Self = StObject.set(x, "websocket", value.asInstanceOf[js.Any])
       }
     }
   }

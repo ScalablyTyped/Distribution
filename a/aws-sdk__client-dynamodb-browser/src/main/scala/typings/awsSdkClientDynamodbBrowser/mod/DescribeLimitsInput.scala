@@ -9,8 +9,7 @@ trait DescribeLimitsInput
      with typings.awsSdkClientDynamodbBrowser.typesDescribeLimitsInputMod.DescribeLimitsInput
 object DescribeLimitsInput {
   
-  @scala.inline
-  def apply(): DescribeLimitsInput = {
+  inline def apply(): DescribeLimitsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLimitsInput]
   }

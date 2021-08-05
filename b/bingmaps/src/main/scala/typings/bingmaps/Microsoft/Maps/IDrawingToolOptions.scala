@@ -12,19 +12,15 @@ trait IDrawingToolOptions extends StObject {
 }
 object IDrawingToolOptions {
   
-  @scala.inline
-  def apply(): IDrawingToolOptions = {
+  inline def apply(): IDrawingToolOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDrawingToolOptions]
   }
   
-  @scala.inline
-  implicit class IDrawingToolOptionsMutableBuilder[Self <: IDrawingToolOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDrawingToolOptions](x: Self) {
     
-    @scala.inline
-    def setDrawingBarActions(value: DrawingBarAction): Self = StObject.set(x, "drawingBarActions", value.asInstanceOf[js.Any])
+    inline def setDrawingBarActions(value: DrawingBarAction): Self = StObject.set(x, "drawingBarActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawingBarActionsUndefined: Self = StObject.set(x, "drawingBarActions", js.undefined)
+    inline def setDrawingBarActionsUndefined: Self = StObject.set(x, "drawingBarActions", js.undefined)
   }
 }

@@ -11,9 +11,7 @@ object globalTracerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def globalTracer(): default = ^.asInstanceOf[js.Dynamic].applyDynamic("globalTracer")().asInstanceOf[default]
+  inline def globalTracer(): default = ^.asInstanceOf[js.Dynamic].applyDynamic("globalTracer")().asInstanceOf[default]
   
-  @scala.inline
-  def initGlobalTracer(tracer: default): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initGlobalTracer")(tracer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initGlobalTracer(tracer: default): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initGlobalTracer")(tracer.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

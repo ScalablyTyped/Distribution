@@ -33,8 +33,7 @@ object nodeMod {
       *
       * @param domNode - DOM node to convert.
       */
-    @scala.inline
-    def fromDOM(domNode: Node): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDOM")(domNode.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def fromDOM(domNode: Node): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDOM")(domNode.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     /**
       * Given a single node and a node type (e.g. `'br'`), returns `true` if the node
@@ -43,8 +42,7 @@ object nodeMod {
       * @param node - Block node to test
       * @param type - Node to type to test against.
       */
-    @scala.inline
-    def isNodeOfType_type(
+    inline def isNodeOfType_type(
       node: Element,
       `type`: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ReactElement['type'] */ js.Any
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNodeOfType")(node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -56,16 +54,14 @@ object nodeMod {
       * @param selector - DOM selector.
       */
     /* was `typeof children.matcher` */
-    @scala.inline
-    def matcher(selector: String): js.Function1[/* domNode */ Node & ParentNode, js.Array[ReactChild]] = ^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* domNode */ Node & ParentNode, js.Array[ReactChild]]]
+    inline def matcher(selector: String): js.Function1[/* domNode */ Node & ParentNode, js.Array[ReactChild]] = ^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* domNode */ Node & ParentNode, js.Array[ReactChild]]]
     
     /**
       * Given a block node, returns its HTML string representation.
       *
       * @param node - Block node to convert to string.
       */
-    @scala.inline
-    def toHTML(node: ReactChild): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTML")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toHTML(node: ReactChild): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTML")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /**

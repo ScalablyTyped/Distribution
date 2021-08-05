@@ -17,22 +17,17 @@ trait SlotBindingData
 }
 object SlotBindingData {
   
-  @scala.inline
-  def apply(bindings: BindingData, html: String, id: String): SlotBindingData = {
+  inline def apply(bindings: BindingData, html: String, id: String): SlotBindingData = {
     val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlotBindingData]
   }
   
-  @scala.inline
-  implicit class SlotBindingDataMutableBuilder[Self <: SlotBindingData] (val x: Self) extends AnyVal {
+  extension [Self <: SlotBindingData](x: Self) {
     
-    @scala.inline
-    def setBindings(value: BindingData): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    inline def setBindings(value: BindingData): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

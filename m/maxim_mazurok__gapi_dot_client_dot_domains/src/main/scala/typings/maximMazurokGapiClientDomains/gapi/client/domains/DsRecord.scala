@@ -20,37 +20,27 @@ trait DsRecord extends StObject {
 }
 object DsRecord {
   
-  @scala.inline
-  def apply(): DsRecord = {
+  inline def apply(): DsRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DsRecord]
   }
   
-  @scala.inline
-  implicit class DsRecordMutableBuilder[Self <: DsRecord] (val x: Self) extends AnyVal {
+  extension [Self <: DsRecord](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    @scala.inline
-    def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestType(value: String): Self = StObject.set(x, "digestType", value.asInstanceOf[js.Any])
+    inline def setDigestType(value: String): Self = StObject.set(x, "digestType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestTypeUndefined: Self = StObject.set(x, "digestType", js.undefined)
+    inline def setDigestTypeUndefined: Self = StObject.set(x, "digestType", js.undefined)
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setKeyTag(value: Double): Self = StObject.set(x, "keyTag", value.asInstanceOf[js.Any])
+    inline def setKeyTag(value: Double): Self = StObject.set(x, "keyTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyTagUndefined: Self = StObject.set(x, "keyTag", js.undefined)
+    inline def setKeyTagUndefined: Self = StObject.set(x, "keyTag", js.undefined)
   }
 }

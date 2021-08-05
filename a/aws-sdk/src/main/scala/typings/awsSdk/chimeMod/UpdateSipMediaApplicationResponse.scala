@@ -13,19 +13,15 @@ trait UpdateSipMediaApplicationResponse extends StObject {
 }
 object UpdateSipMediaApplicationResponse {
   
-  @scala.inline
-  def apply(): UpdateSipMediaApplicationResponse = {
+  inline def apply(): UpdateSipMediaApplicationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateSipMediaApplicationResponse]
   }
   
-  @scala.inline
-  implicit class UpdateSipMediaApplicationResponseMutableBuilder[Self <: UpdateSipMediaApplicationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSipMediaApplicationResponse](x: Self) {
     
-    @scala.inline
-    def setSipMediaApplication(value: SipMediaApplication): Self = StObject.set(x, "SipMediaApplication", value.asInstanceOf[js.Any])
+    inline def setSipMediaApplication(value: SipMediaApplication): Self = StObject.set(x, "SipMediaApplication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSipMediaApplicationUndefined: Self = StObject.set(x, "SipMediaApplication", js.undefined)
+    inline def setSipMediaApplicationUndefined: Self = StObject.set(x, "SipMediaApplication", js.undefined)
   }
 }

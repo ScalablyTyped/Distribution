@@ -38,55 +38,39 @@ trait ErrorRootCauseService extends StObject {
 }
 object ErrorRootCauseService {
   
-  @scala.inline
-  def apply(): ErrorRootCauseService = {
+  inline def apply(): ErrorRootCauseService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorRootCauseService]
   }
   
-  @scala.inline
-  implicit class ErrorRootCauseServiceMutableBuilder[Self <: ErrorRootCauseService] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorRootCauseService](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setEntityPath(value: ErrorRootCauseEntityPath): Self = StObject.set(x, "EntityPath", value.asInstanceOf[js.Any])
+    inline def setEntityPath(value: ErrorRootCauseEntityPath): Self = StObject.set(x, "EntityPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityPathUndefined: Self = StObject.set(x, "EntityPath", js.undefined)
+    inline def setEntityPathUndefined: Self = StObject.set(x, "EntityPath", js.undefined)
     
-    @scala.inline
-    def setEntityPathVarargs(value: ErrorRootCauseEntity*): Self = StObject.set(x, "EntityPath", js.Array(value :_*))
+    inline def setEntityPathVarargs(value: ErrorRootCauseEntity*): Self = StObject.set(x, "EntityPath", js.Array(value :_*))
     
-    @scala.inline
-    def setInferred(value: NullableBoolean): Self = StObject.set(x, "Inferred", value.asInstanceOf[js.Any])
+    inline def setInferred(value: NullableBoolean): Self = StObject.set(x, "Inferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInferredUndefined: Self = StObject.set(x, "Inferred", js.undefined)
+    inline def setInferredUndefined: Self = StObject.set(x, "Inferred", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setNames(value: ServiceNames): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
+    inline def setNames(value: ServiceNames): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -12,8 +12,7 @@ object matchContainerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def MatchContainer[TProps, TFallback](props: MatchContainerProps[TProps, TFallback]): ElementType[TProps] | TFallback | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MatchContainer")(props.asInstanceOf[js.Any]).asInstanceOf[ElementType[TProps] | TFallback | Null]
+  inline def MatchContainer[TProps, TFallback](props: MatchContainerProps[TProps, TFallback]): ElementType[TProps] | TFallback | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MatchContainer")(props.asInstanceOf[js.Any]).asInstanceOf[ElementType[TProps] | TFallback | Null]
   
   /* Inlined std.Readonly<{  fallback :TFallback | null | undefined, loader (module : unknown): react.react.ComponentType<TProps>,   match :react-relay.react-relay/lib/relay-experimental/MatchContainer.MatchPointer | react-relay.react-relay/lib/relay-experimental/MatchContainer.TypenameOnlyPointer | null | undefined,   props :TProps | undefined}> */
   trait MatchContainerProps[TProps, TFallback] extends StObject {
@@ -28,41 +27,30 @@ object matchContainerMod {
   }
   object MatchContainerProps {
     
-    @scala.inline
-    def apply[TProps, TFallback](loader: /* module */ js.Any => ComponentType[TProps]): MatchContainerProps[TProps, TFallback] = {
+    inline def apply[TProps, TFallback](loader: /* module */ js.Any => ComponentType[TProps]): MatchContainerProps[TProps, TFallback] = {
       val __obj = js.Dynamic.literal(loader = js.Any.fromFunction1(loader))
       __obj.asInstanceOf[MatchContainerProps[TProps, TFallback]]
     }
     
-    @scala.inline
-    implicit class MatchContainerPropsMutableBuilder[Self <: MatchContainerProps[?, ?], TProps, TFallback] (val x: Self & (MatchContainerProps[TProps, TFallback])) extends AnyVal {
+    extension [Self <: MatchContainerProps[?, ?], TProps, TFallback](x: Self & (MatchContainerProps[TProps, TFallback])) {
       
-      @scala.inline
-      def setFallback(value: TFallback): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: TFallback): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackNull: Self = StObject.set(x, "fallback", null)
+      inline def setFallbackNull: Self = StObject.set(x, "fallback", null)
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setLoader(value: /* module */ js.Any => ComponentType[TProps]): Self = StObject.set(x, "loader", js.Any.fromFunction1(value))
+      inline def setLoader(value: /* module */ js.Any => ComponentType[TProps]): Self = StObject.set(x, "loader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMatch(value: MatchPointer | TypenameOnlyPointer): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: MatchPointer | TypenameOnlyPointer): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchNull: Self = StObject.set(x, "match", null)
+      inline def setMatchNull: Self = StObject.set(x, "match", null)
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      @scala.inline
-      def setProps(value: TProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: TProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     }
   }
   
@@ -78,33 +66,25 @@ object matchContainerMod {
   }
   object MatchPointer {
     
-    @scala.inline
-    def apply(Space$fragmentRefs: js.Any): MatchPointer = {
+    inline def apply(Space$fragmentRefs: js.Any): MatchPointer = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic(" $fragmentRefs")(Space$fragmentRefs.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatchPointer]
     }
     
-    @scala.inline
-    implicit class MatchPointerMutableBuilder[Self <: MatchPointer] (val x: Self) extends AnyVal {
+    extension [Self <: MatchPointer](x: Self) {
       
-      @scala.inline
-      def setSpace$fragmentRefs(value: js.Any): Self = StObject.set(x, " $fragmentRefs", value.asInstanceOf[js.Any])
+      inline def setSpace$fragmentRefs(value: js.Any): Self = StObject.set(x, " $fragmentRefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__fragmentPropName(value: String): Self = StObject.set(x, "__fragmentPropName", value.asInstanceOf[js.Any])
+      inline def set__fragmentPropName(value: String): Self = StObject.set(x, "__fragmentPropName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__fragmentPropNameNull: Self = StObject.set(x, "__fragmentPropName", null)
+      inline def set__fragmentPropNameNull: Self = StObject.set(x, "__fragmentPropName", null)
       
-      @scala.inline
-      def set__fragmentPropNameUndefined: Self = StObject.set(x, "__fragmentPropName", js.undefined)
+      inline def set__fragmentPropNameUndefined: Self = StObject.set(x, "__fragmentPropName", js.undefined)
       
-      @scala.inline
-      def set__module_component(value: js.Any): Self = StObject.set(x, "__module_component", value.asInstanceOf[js.Any])
+      inline def set__module_component(value: js.Any): Self = StObject.set(x, "__module_component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__module_componentUndefined: Self = StObject.set(x, "__module_component", js.undefined)
+      inline def set__module_componentUndefined: Self = StObject.set(x, "__module_component", js.undefined)
     }
   }
   
@@ -182,17 +162,14 @@ object matchContainerMod {
   }
   object TypenameOnlyPointer {
     
-    @scala.inline
-    def apply(__typename: String): TypenameOnlyPointer = {
+    inline def apply(__typename: String): TypenameOnlyPointer = {
       val __obj = js.Dynamic.literal(__typename = __typename.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypenameOnlyPointer]
     }
     
-    @scala.inline
-    implicit class TypenameOnlyPointerMutableBuilder[Self <: TypenameOnlyPointer] (val x: Self) extends AnyVal {
+    extension [Self <: TypenameOnlyPointer](x: Self) {
       
-      @scala.inline
-      def set__typename(value: String): Self = StObject.set(x, "__typename", value.asInstanceOf[js.Any])
+      inline def set__typename(value: String): Self = StObject.set(x, "__typename", value.asInstanceOf[js.Any])
     }
   }
 }

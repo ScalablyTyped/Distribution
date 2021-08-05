@@ -20,8 +20,7 @@ object fabricPerformanceMod {
     @JSImport("@uifabric/utilities/lib/FabricPerformance", "FabricPerformance._timeoutId")
     @js.native
     def _timeoutId: js.Any = js.native
-    @scala.inline
-    def _timeoutId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_timeoutId")(x.asInstanceOf[js.Any])
+    inline def _timeoutId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_timeoutId")(x.asInstanceOf[js.Any])
     
     /**
       * Measures execution time of the given syncronous function. If the same logic is executed multiple times,
@@ -29,20 +28,16 @@ object fabricPerformanceMod {
       * @param name - The name of this measurement
       * @param func - The logic to be measured for execution time
       */
-    @scala.inline
-    def measure(name: String, func: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measure")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def measure(name: String, func: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measure")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+    inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
     
-    @scala.inline
-    def setPeriodicReset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPeriodicReset")().asInstanceOf[Unit]
+    inline def setPeriodicReset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPeriodicReset")().asInstanceOf[Unit]
     
     @JSImport("@uifabric/utilities/lib/FabricPerformance", "FabricPerformance.summary")
     @js.native
     def summary: IPerfSummary = js.native
-    @scala.inline
-    def summary_=(x: IPerfSummary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("summary")(x.asInstanceOf[js.Any])
+    inline def summary_=(x: IPerfSummary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("summary")(x.asInstanceOf[js.Any])
   }
   
   trait IPerfData extends StObject {
@@ -53,20 +48,16 @@ object fabricPerformanceMod {
   }
   object IPerfData {
     
-    @scala.inline
-    def apply(duration: Double, timeStamp: Double): IPerfData = {
+    inline def apply(duration: Double, timeStamp: Double): IPerfData = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPerfData]
     }
     
-    @scala.inline
-    implicit class IPerfDataMutableBuilder[Self <: IPerfData] (val x: Self) extends AnyVal {
+    extension [Self <: IPerfData](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,26 +71,20 @@ object fabricPerformanceMod {
   }
   object IPerfMeasurement {
     
-    @scala.inline
-    def apply(all: js.Array[IPerfData], count: Double, totalDuration: Double): IPerfMeasurement = {
+    inline def apply(all: js.Array[IPerfData], count: Double, totalDuration: Double): IPerfMeasurement = {
       val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], totalDuration = totalDuration.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPerfMeasurement]
     }
     
-    @scala.inline
-    implicit class IPerfMeasurementMutableBuilder[Self <: IPerfMeasurement] (val x: Self) extends AnyVal {
+    extension [Self <: IPerfMeasurement](x: Self) {
       
-      @scala.inline
-      def setAll(value: js.Array[IPerfData]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: js.Array[IPerfData]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllVarargs(value: IPerfData*): Self = StObject.set(x, "all", js.Array(value :_*))
+      inline def setAllVarargs(value: IPerfData*): Self = StObject.set(x, "all", js.Array(value :_*))
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalDuration(value: Double): Self = StObject.set(x, "totalDuration", value.asInstanceOf[js.Any])
+      inline def setTotalDuration(value: Double): Self = StObject.set(x, "totalDuration", value.asInstanceOf[js.Any])
     }
   }
   

@@ -8,6 +8,5 @@ object browserslistStrings {
   
   @js.native
   sealed trait `my stats` extends StObject
-  @scala.inline
-  def `my stats`: `my stats` = ("my stats").asInstanceOf[`my stats`]
+  inline def `my stats`: `my stats` = ("my stats").asInstanceOf[`my stats`]
 }

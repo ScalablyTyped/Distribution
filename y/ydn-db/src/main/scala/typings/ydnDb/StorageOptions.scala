@@ -18,46 +18,33 @@ trait StorageOptions extends StObject {
 }
 object StorageOptions {
   
-  @scala.inline
-  def apply(): StorageOptions = {
+  inline def apply(): StorageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StorageOptions]
   }
   
-  @scala.inline
-  implicit class StorageOptionsMutableBuilder[Self <: StorageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StorageOptions](x: Self) {
     
-    @scala.inline
-    def setAutoSchema(value: Boolean): Self = StObject.set(x, "autoSchema", value.asInstanceOf[js.Any])
+    inline def setAutoSchema(value: Boolean): Self = StObject.set(x, "autoSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoSchemaUndefined: Self = StObject.set(x, "autoSchema", js.undefined)
+    inline def setAutoSchemaUndefined: Self = StObject.set(x, "autoSchema", js.undefined)
     
-    @scala.inline
-    def setIsSerial(value: Boolean): Self = StObject.set(x, "isSerial", value.asInstanceOf[js.Any])
+    inline def setIsSerial(value: Boolean): Self = StObject.set(x, "isSerial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSerialUndefined: Self = StObject.set(x, "isSerial", js.undefined)
+    inline def setIsSerialUndefined: Self = StObject.set(x, "isSerial", js.undefined)
     
-    @scala.inline
-    def setMechanisms(value: js.Array[String]): Self = StObject.set(x, "mechanisms", value.asInstanceOf[js.Any])
+    inline def setMechanisms(value: js.Array[String]): Self = StObject.set(x, "mechanisms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMechanismsUndefined: Self = StObject.set(x, "mechanisms", js.undefined)
+    inline def setMechanismsUndefined: Self = StObject.set(x, "mechanisms", js.undefined)
     
-    @scala.inline
-    def setMechanismsVarargs(value: String*): Self = StObject.set(x, "mechanisms", js.Array(value :_*))
+    inline def setMechanismsVarargs(value: String*): Self = StObject.set(x, "mechanisms", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
+    inline def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
+    inline def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

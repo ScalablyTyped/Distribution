@@ -35,8 +35,7 @@ trait XDocumentIndexMark
 }
 object XDocumentIndexMark {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     MarkEntry: String,
     acquire: () => Unit,
@@ -54,16 +53,12 @@ object XDocumentIndexMark {
     __obj.asInstanceOf[XDocumentIndexMark]
   }
   
-  @scala.inline
-  implicit class XDocumentIndexMarkMutableBuilder[Self <: XDocumentIndexMark] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentIndexMark](x: Self) {
     
-    @scala.inline
-    def setGetMarkEntry(value: () => String): Self = StObject.set(x, "getMarkEntry", js.Any.fromFunction0(value))
+    inline def setGetMarkEntry(value: () => String): Self = StObject.set(x, "getMarkEntry", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMarkEntry(value: String): Self = StObject.set(x, "MarkEntry", value.asInstanceOf[js.Any])
+    inline def setMarkEntry(value: String): Self = StObject.set(x, "MarkEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetMarkEntry(value: String => Unit): Self = StObject.set(x, "setMarkEntry", js.Any.fromFunction1(value))
+    inline def setSetMarkEntry(value: String => Unit): Self = StObject.set(x, "setMarkEntry", js.Any.fromFunction1(value))
   }
 }

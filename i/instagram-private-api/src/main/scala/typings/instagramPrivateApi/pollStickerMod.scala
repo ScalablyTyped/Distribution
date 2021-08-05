@@ -11,7 +11,7 @@ object pollStickerMod {
   @js.native
   class PollSticker () extends InstaSticker {
     
-    var _tallies: js.Any = js.native
+    /* private */ var _tallies: js.Any = js.native
     
     var finished: js.UndefOr[Boolean] = js.native
     
@@ -35,23 +35,18 @@ object pollStickerMod {
   }
   object PollStickerTallie {
     
-    @scala.inline
-    def apply(text: String): PollStickerTallie = {
+    inline def apply(text: String): PollStickerTallie = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[PollStickerTallie]
     }
     
-    @scala.inline
-    implicit class PollStickerTallieMutableBuilder[Self <: PollStickerTallie] (val x: Self) extends AnyVal {
+    extension [Self <: PollStickerTallie](x: Self) {
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   

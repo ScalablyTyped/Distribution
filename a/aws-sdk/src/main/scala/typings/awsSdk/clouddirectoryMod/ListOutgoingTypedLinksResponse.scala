@@ -18,28 +18,21 @@ trait ListOutgoingTypedLinksResponse extends StObject {
 }
 object ListOutgoingTypedLinksResponse {
   
-  @scala.inline
-  def apply(): ListOutgoingTypedLinksResponse = {
+  inline def apply(): ListOutgoingTypedLinksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListOutgoingTypedLinksResponse]
   }
   
-  @scala.inline
-  implicit class ListOutgoingTypedLinksResponseMutableBuilder[Self <: ListOutgoingTypedLinksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListOutgoingTypedLinksResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTypedLinkSpecifiers(value: TypedLinkSpecifierList): Self = StObject.set(x, "TypedLinkSpecifiers", value.asInstanceOf[js.Any])
+    inline def setTypedLinkSpecifiers(value: TypedLinkSpecifierList): Self = StObject.set(x, "TypedLinkSpecifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypedLinkSpecifiersUndefined: Self = StObject.set(x, "TypedLinkSpecifiers", js.undefined)
+    inline def setTypedLinkSpecifiersUndefined: Self = StObject.set(x, "TypedLinkSpecifiers", js.undefined)
     
-    @scala.inline
-    def setTypedLinkSpecifiersVarargs(value: TypedLinkSpecifier*): Self = StObject.set(x, "TypedLinkSpecifiers", js.Array(value :_*))
+    inline def setTypedLinkSpecifiersVarargs(value: TypedLinkSpecifier*): Self = StObject.set(x, "TypedLinkSpecifiers", js.Array(value :_*))
   }
 }

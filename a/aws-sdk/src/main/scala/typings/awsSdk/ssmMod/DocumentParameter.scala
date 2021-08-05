@@ -28,37 +28,27 @@ trait DocumentParameter extends StObject {
 }
 object DocumentParameter {
   
-  @scala.inline
-  def apply(): DocumentParameter = {
+  inline def apply(): DocumentParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentParameter]
   }
   
-  @scala.inline
-  implicit class DocumentParameterMutableBuilder[Self <: DocumentParameter] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentParameter](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: DocumentParameterDefaultValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: DocumentParameterDefaultValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
-    @scala.inline
-    def setDescription(value: DocumentParameterDescrption): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DocumentParameterDescrption): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: DocumentParameterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DocumentParameterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setType(value: DocumentParameterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: DocumentParameterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

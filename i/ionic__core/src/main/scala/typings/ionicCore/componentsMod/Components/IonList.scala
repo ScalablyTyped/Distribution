@@ -33,31 +33,23 @@ trait IonList extends StObject {
 }
 object IonList {
   
-  @scala.inline
-  def apply(closeSlidingItems: () => js.Promise[Boolean], inset: Boolean): IonList = {
+  inline def apply(closeSlidingItems: () => js.Promise[Boolean], inset: Boolean): IonList = {
     val __obj = js.Dynamic.literal(closeSlidingItems = js.Any.fromFunction0(closeSlidingItems), inset = inset.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonList]
   }
   
-  @scala.inline
-  implicit class IonListMutableBuilder[Self <: IonList] (val x: Self) extends AnyVal {
+  extension [Self <: IonList](x: Self) {
     
-    @scala.inline
-    def setCloseSlidingItems(value: () => js.Promise[Boolean]): Self = StObject.set(x, "closeSlidingItems", js.Any.fromFunction0(value))
+    inline def setCloseSlidingItems(value: () => js.Promise[Boolean]): Self = StObject.set(x, "closeSlidingItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLines(value: full | inset | none): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: full | inset | none): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+    inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

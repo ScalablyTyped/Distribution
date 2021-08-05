@@ -12,8 +12,7 @@ trait Notifications extends StObject {
 }
 object Notifications {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearNotification: String => Unit,
     notifications: js.Array[typings.storybookApi.notificationsMod.Notification]
   ): Notifications = {
@@ -21,16 +20,12 @@ object Notifications {
     __obj.asInstanceOf[Notifications]
   }
   
-  @scala.inline
-  implicit class NotificationsMutableBuilder[Self <: Notifications] (val x: Self) extends AnyVal {
+  extension [Self <: Notifications](x: Self) {
     
-    @scala.inline
-    def setClearNotification(value: String => Unit): Self = StObject.set(x, "clearNotification", js.Any.fromFunction1(value))
+    inline def setClearNotification(value: String => Unit): Self = StObject.set(x, "clearNotification", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNotifications(value: js.Array[typings.storybookApi.notificationsMod.Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+    inline def setNotifications(value: js.Array[typings.storybookApi.notificationsMod.Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationsVarargs(value: typings.storybookApi.notificationsMod.Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+    inline def setNotificationsVarargs(value: typings.storybookApi.notificationsMod.Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
   }
 }

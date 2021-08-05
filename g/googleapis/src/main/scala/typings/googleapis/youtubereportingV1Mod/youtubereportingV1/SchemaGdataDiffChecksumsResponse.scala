@@ -36,43 +36,31 @@ trait SchemaGdataDiffChecksumsResponse extends StObject {
 }
 object SchemaGdataDiffChecksumsResponse {
   
-  @scala.inline
-  def apply(): SchemaGdataDiffChecksumsResponse = {
+  inline def apply(): SchemaGdataDiffChecksumsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGdataDiffChecksumsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGdataDiffChecksumsResponseMutableBuilder[Self <: SchemaGdataDiffChecksumsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGdataDiffChecksumsResponse](x: Self) {
     
-    @scala.inline
-    def setChecksumsLocation(value: SchemaGdataCompositeMedia): Self = StObject.set(x, "checksumsLocation", value.asInstanceOf[js.Any])
+    inline def setChecksumsLocation(value: SchemaGdataCompositeMedia): Self = StObject.set(x, "checksumsLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumsLocationUndefined: Self = StObject.set(x, "checksumsLocation", js.undefined)
+    inline def setChecksumsLocationUndefined: Self = StObject.set(x, "checksumsLocation", js.undefined)
     
-    @scala.inline
-    def setChunkSizeBytes(value: String): Self = StObject.set(x, "chunkSizeBytes", value.asInstanceOf[js.Any])
+    inline def setChunkSizeBytes(value: String): Self = StObject.set(x, "chunkSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkSizeBytesUndefined: Self = StObject.set(x, "chunkSizeBytes", js.undefined)
+    inline def setChunkSizeBytesUndefined: Self = StObject.set(x, "chunkSizeBytes", js.undefined)
     
-    @scala.inline
-    def setObjectLocation(value: SchemaGdataCompositeMedia): Self = StObject.set(x, "objectLocation", value.asInstanceOf[js.Any])
+    inline def setObjectLocation(value: SchemaGdataCompositeMedia): Self = StObject.set(x, "objectLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectLocationUndefined: Self = StObject.set(x, "objectLocation", js.undefined)
+    inline def setObjectLocationUndefined: Self = StObject.set(x, "objectLocation", js.undefined)
     
-    @scala.inline
-    def setObjectSizeBytes(value: String): Self = StObject.set(x, "objectSizeBytes", value.asInstanceOf[js.Any])
+    inline def setObjectSizeBytes(value: String): Self = StObject.set(x, "objectSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectSizeBytesUndefined: Self = StObject.set(x, "objectSizeBytes", js.undefined)
+    inline def setObjectSizeBytesUndefined: Self = StObject.set(x, "objectSizeBytes", js.undefined)
     
-    @scala.inline
-    def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
+    inline def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
+    inline def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
   }
 }

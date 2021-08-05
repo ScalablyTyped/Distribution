@@ -94,24 +94,15 @@ object firefoxMod {
       *     configured to use the legacy FirefoxDriver from the Selenium project.
       * @return {!Driver} A new driver instance.
       */
-    @scala.inline
-    def createSession(): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")().asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: Unit, opt_executor: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: Unit, opt_executor: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: Options): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: Options, opt_executor: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: Options, opt_executor: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: Capabilities): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: Capabilities, opt_executor: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: Capabilities, opt_executor: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    inline def createSession(): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")().asInstanceOf[Driver]
+    inline def createSession(opt_config: Unit, opt_executor: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    inline def createSession(opt_config: Unit, opt_executor: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    inline def createSession(opt_config: Options): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
+    inline def createSession(opt_config: Options, opt_executor: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    inline def createSession(opt_config: Options, opt_executor: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    inline def createSession(opt_config: Capabilities): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
+    inline def createSession(opt_config: Capabilities, opt_executor: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    inline def createSession(opt_config: Capabilities, opt_executor: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_executor.asInstanceOf[js.Any])).asInstanceOf[Driver]
   }
   
   @JSImport("selenium-webdriver/firefox", "Options")
@@ -231,16 +222,11 @@ object firefoxMod {
     def setFirefoxBinary(binary: String): this.type = js.native
   }
   
-  @scala.inline
-  def createWiresService(binary: String): DriverService = ^.asInstanceOf[js.Dynamic].applyDynamic("createWiresService")(binary.asInstanceOf[js.Any]).asInstanceOf[DriverService]
-  @scala.inline
-  def createWiresService(binary: js.Any): DriverService = ^.asInstanceOf[js.Dynamic].applyDynamic("createWiresService")(binary.asInstanceOf[js.Any]).asInstanceOf[DriverService]
+  inline def createWiresService(binary: String): DriverService = ^.asInstanceOf[js.Dynamic].applyDynamic("createWiresService")(binary.asInstanceOf[js.Any]).asInstanceOf[DriverService]
+  inline def createWiresService(binary: js.Any): DriverService = ^.asInstanceOf[js.Dynamic].applyDynamic("createWiresService")(binary.asInstanceOf[js.Any]).asInstanceOf[DriverService]
   
-  @scala.inline
-  def findWires(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("findWires")().asInstanceOf[String]
+  inline def findWires(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("findWires")().asInstanceOf[String]
   
-  @scala.inline
-  def prepareProfile(profile: String, port: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareProfile")(profile.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def prepareProfile(profile: js.Any, port: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareProfile")(profile.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def prepareProfile(profile: String, port: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareProfile")(profile.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def prepareProfile(profile: js.Any, port: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareProfile")(profile.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

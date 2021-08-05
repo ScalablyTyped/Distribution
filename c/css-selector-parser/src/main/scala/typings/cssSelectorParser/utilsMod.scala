@@ -10,18 +10,13 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def escapeIdentifier(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeIdentifier")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeIdentifier(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeIdentifier")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def escapeStr(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeStr")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeStr(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeStr")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isHex(c: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHex")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isHex(c: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHex")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isIdent(c: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdent")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isIdent(c: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdent")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isIdentStart(c: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentStart")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isIdentStart(c: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentStart")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

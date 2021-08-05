@@ -38,49 +38,35 @@ trait ScrollingEventUIParam extends StObject {
 }
 object ScrollingEventUIParam {
   
-  @scala.inline
-  def apply(): ScrollingEventUIParam = {
+  inline def apply(): ScrollingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScrollingEventUIParam]
   }
   
-  @scala.inline
-  implicit class ScrollingEventUIParamMutableBuilder[Self <: ScrollingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setBigIncrement(value: Double): Self = StObject.set(x, "bigIncrement", value.asInstanceOf[js.Any])
+    inline def setBigIncrement(value: Double): Self = StObject.set(x, "bigIncrement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigIncrementUndefined: Self = StObject.set(x, "bigIncrement", js.undefined)
+    inline def setBigIncrementUndefined: Self = StObject.set(x, "bigIncrement", js.undefined)
     
-    @scala.inline
-    def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+    inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setSmallIncrement(value: Double): Self = StObject.set(x, "smallIncrement", value.asInstanceOf[js.Any])
+    inline def setSmallIncrement(value: Double): Self = StObject.set(x, "smallIncrement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallIncrementUndefined: Self = StObject.set(x, "smallIncrement", js.undefined)
+    inline def setSmallIncrementUndefined: Self = StObject.set(x, "smallIncrement", js.undefined)
     
-    @scala.inline
-    def setStepX(value: Double): Self = StObject.set(x, "stepX", value.asInstanceOf[js.Any])
+    inline def setStepX(value: Double): Self = StObject.set(x, "stepX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepXUndefined: Self = StObject.set(x, "stepX", js.undefined)
+    inline def setStepXUndefined: Self = StObject.set(x, "stepX", js.undefined)
     
-    @scala.inline
-    def setStepY(value: Double): Self = StObject.set(x, "stepY", value.asInstanceOf[js.Any])
+    inline def setStepY(value: Double): Self = StObject.set(x, "stepY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepYUndefined: Self = StObject.set(x, "stepY", js.undefined)
+    inline def setStepYUndefined: Self = StObject.set(x, "stepY", js.undefined)
   }
 }

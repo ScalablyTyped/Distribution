@@ -10,19 +10,15 @@ trait ProcessingState extends StObject {
 }
 object ProcessingState {
   
-  @scala.inline
-  def apply(): ProcessingState = {
+  inline def apply(): ProcessingState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProcessingState]
   }
   
-  @scala.inline
-  implicit class ProcessingStateMutableBuilder[Self <: ProcessingState] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessingState](x: Self) {
     
-    @scala.inline
-    def setProcessingState(value: String): Self = StObject.set(x, "processingState", value.asInstanceOf[js.Any])
+    inline def setProcessingState(value: String): Self = StObject.set(x, "processingState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingStateUndefined: Self = StObject.set(x, "processingState", js.undefined)
+    inline def setProcessingStateUndefined: Self = StObject.set(x, "processingState", js.undefined)
   }
 }

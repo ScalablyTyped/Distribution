@@ -34,33 +34,33 @@ object mod {
           ]
         ] {
     
-    var _containsReservedKey: js.Any = js.native
+    /* private */ var _containsReservedKey: js.Any = js.native
     
-    val _deserialize: js.Any = js.native
+    /* private */ val _deserialize: js.Any = js.native
     
-    var _encryptData: js.Any = js.native
+    /* private */ var _encryptData: js.Any = js.native
     
-    var _ensureDirectory: js.Any = js.native
+    /* private */ var _ensureDirectory: js.Any = js.native
     
-    var _get: js.Any = js.native
+    /* private */ var _get: js.Any = js.native
     
-    var _handleChange: js.Any = js.native
+    /* private */ var _handleChange: js.Any = js.native
     
-    var _isVersionInRangeFormat: js.Any = js.native
+    /* private */ var _isVersionInRangeFormat: js.Any = js.native
     
-    var _migrate: js.Any = js.native
+    /* private */ var _migrate: js.Any = js.native
     
-    val _serialize: js.Any = js.native
+    /* private */ val _serialize: js.Any = js.native
     
-    var _set: js.Any = js.native
+    /* private */ var _set: js.Any = js.native
     
-    var _shouldPerformMigration: js.Any = js.native
+    /* private */ var _shouldPerformMigration: js.Any = js.native
     
-    var _validate: js.Any = js.native
+    /* private */ var _validate: js.Any = js.native
     
-    var _watch: js.Any = js.native
+    /* private */ var _watch: js.Any = js.native
     
-    var _write: js.Any = js.native
+    /* private */ var _write: js.Any = js.native
     
     /**
       Delete all items.
@@ -127,7 +127,7 @@ object mod {
     
     val path: String = js.native
     
-    var `private`: js.Any = js.native
+    /* private */ var `private`: js.Any = js.native
     
     /**
       Reset items to their default values, as defined by the `defaults` or `schema` option.

@@ -31,8 +31,7 @@ trait MachineOptions[TContext, TEvent /* <: EventObject */] extends StObject {
 }
 object MachineOptions {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  inline def apply[TContext, TEvent /* <: EventObject */](
     actions: ActionFunctionMap[TContext, TEvent],
     activities: Record[String, ActivityConfig[TContext, TEvent]],
     delays: DelayFunctionMap[TContext, TEvent],
@@ -43,34 +42,24 @@ object MachineOptions {
     __obj.asInstanceOf[MachineOptions[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class MachineOptionsMutableBuilder[Self <: MachineOptions[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (MachineOptions[TContext, TEvent])) extends AnyVal {
+  extension [Self <: MachineOptions[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (MachineOptions[TContext, TEvent])) {
     
-    @scala.inline
-    def setActions(value: ActionFunctionMap[TContext, TEvent]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: ActionFunctionMap[TContext, TEvent]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivities(value: Record[String, ActivityConfig[TContext, TEvent]]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
+    inline def setActivities(value: Record[String, ActivityConfig[TContext, TEvent]]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelays(value: DelayFunctionMap[TContext, TEvent]): Self = StObject.set(x, "delays", value.asInstanceOf[js.Any])
+    inline def setDelays(value: DelayFunctionMap[TContext, TEvent]): Self = StObject.set(x, "delays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuards(value: Record[String, ConditionPredicate[TContext, TEvent]]): Self = StObject.set(x, "guards", value.asInstanceOf[js.Any])
+    inline def setGuards(value: Record[String, ConditionPredicate[TContext, TEvent]]): Self = StObject.set(x, "guards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServices(value: Record[String, ServiceConfig[TContext, TEvent]]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: Record[String, ServiceConfig[TContext, TEvent]]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_key(value: String): Self = StObject.set(x, "_key", value.asInstanceOf[js.Any])
+    inline def set_key(value: String): Self = StObject.set(x, "_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_keyUndefined: Self = StObject.set(x, "_key", js.undefined)
+    inline def set_keyUndefined: Self = StObject.set(x, "_key", js.undefined)
     
-    @scala.inline
-    def set_parent(value: StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]): Self = StObject.set(x, "_parent", value.asInstanceOf[js.Any])
+    inline def set_parent(value: StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]): Self = StObject.set(x, "_parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_parentUndefined: Self = StObject.set(x, "_parent", js.undefined)
+    inline def set_parentUndefined: Self = StObject.set(x, "_parent", js.undefined)
   }
 }

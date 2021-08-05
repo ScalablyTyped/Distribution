@@ -134,145 +134,99 @@ trait TextDocumentClientCapabilities extends StObject {
 }
 object TextDocumentClientCapabilities {
   
-  @scala.inline
-  def apply(): TextDocumentClientCapabilities = {
+  inline def apply(): TextDocumentClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextDocumentClientCapabilities]
   }
   
-  @scala.inline
-  implicit class TextDocumentClientCapabilitiesMutableBuilder[Self <: TextDocumentClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: TextDocumentClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setCodeAction(value: CodeActionClientCapabilities): Self = StObject.set(x, "codeAction", value.asInstanceOf[js.Any])
+    inline def setCodeAction(value: CodeActionClientCapabilities): Self = StObject.set(x, "codeAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeActionUndefined: Self = StObject.set(x, "codeAction", js.undefined)
+    inline def setCodeActionUndefined: Self = StObject.set(x, "codeAction", js.undefined)
     
-    @scala.inline
-    def setCodeLens(value: CodeLensClientCapabilities): Self = StObject.set(x, "codeLens", value.asInstanceOf[js.Any])
+    inline def setCodeLens(value: CodeLensClientCapabilities): Self = StObject.set(x, "codeLens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeLensUndefined: Self = StObject.set(x, "codeLens", js.undefined)
+    inline def setCodeLensUndefined: Self = StObject.set(x, "codeLens", js.undefined)
     
-    @scala.inline
-    def setColorProvider(value: DocumentColorClientCapabilities): Self = StObject.set(x, "colorProvider", value.asInstanceOf[js.Any])
+    inline def setColorProvider(value: DocumentColorClientCapabilities): Self = StObject.set(x, "colorProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorProviderUndefined: Self = StObject.set(x, "colorProvider", js.undefined)
+    inline def setColorProviderUndefined: Self = StObject.set(x, "colorProvider", js.undefined)
     
-    @scala.inline
-    def setCompletion(value: CompletionClientCapabilities): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
+    inline def setCompletion(value: CompletionClientCapabilities): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionUndefined: Self = StObject.set(x, "completion", js.undefined)
+    inline def setCompletionUndefined: Self = StObject.set(x, "completion", js.undefined)
     
-    @scala.inline
-    def setDeclaration(value: DeclarationClientCapabilities): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
+    inline def setDeclaration(value: DeclarationClientCapabilities): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclarationUndefined: Self = StObject.set(x, "declaration", js.undefined)
+    inline def setDeclarationUndefined: Self = StObject.set(x, "declaration", js.undefined)
     
-    @scala.inline
-    def setDefinition(value: DefinitionClientCapabilities): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: DefinitionClientCapabilities): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
+    inline def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
-    @scala.inline
-    def setDocumentHighlight(value: DocumentHighlightClientCapabilities): Self = StObject.set(x, "documentHighlight", value.asInstanceOf[js.Any])
+    inline def setDocumentHighlight(value: DocumentHighlightClientCapabilities): Self = StObject.set(x, "documentHighlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentHighlightUndefined: Self = StObject.set(x, "documentHighlight", js.undefined)
+    inline def setDocumentHighlightUndefined: Self = StObject.set(x, "documentHighlight", js.undefined)
     
-    @scala.inline
-    def setDocumentLink(value: DocumentLinkClientCapabilities): Self = StObject.set(x, "documentLink", value.asInstanceOf[js.Any])
+    inline def setDocumentLink(value: DocumentLinkClientCapabilities): Self = StObject.set(x, "documentLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentLinkUndefined: Self = StObject.set(x, "documentLink", js.undefined)
+    inline def setDocumentLinkUndefined: Self = StObject.set(x, "documentLink", js.undefined)
     
-    @scala.inline
-    def setDocumentSymbol(value: DocumentSymbolClientCapabilities): Self = StObject.set(x, "documentSymbol", value.asInstanceOf[js.Any])
+    inline def setDocumentSymbol(value: DocumentSymbolClientCapabilities): Self = StObject.set(x, "documentSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentSymbolUndefined: Self = StObject.set(x, "documentSymbol", js.undefined)
+    inline def setDocumentSymbolUndefined: Self = StObject.set(x, "documentSymbol", js.undefined)
     
-    @scala.inline
-    def setFoldingRange(value: FoldingRangeClientCapabilities): Self = StObject.set(x, "foldingRange", value.asInstanceOf[js.Any])
+    inline def setFoldingRange(value: FoldingRangeClientCapabilities): Self = StObject.set(x, "foldingRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFoldingRangeUndefined: Self = StObject.set(x, "foldingRange", js.undefined)
+    inline def setFoldingRangeUndefined: Self = StObject.set(x, "foldingRange", js.undefined)
     
-    @scala.inline
-    def setFormatting(value: DocumentFormattingClientCapabilities): Self = StObject.set(x, "formatting", value.asInstanceOf[js.Any])
+    inline def setFormatting(value: DocumentFormattingClientCapabilities): Self = StObject.set(x, "formatting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattingUndefined: Self = StObject.set(x, "formatting", js.undefined)
+    inline def setFormattingUndefined: Self = StObject.set(x, "formatting", js.undefined)
     
-    @scala.inline
-    def setHover(value: HoverClientCapabilities): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: HoverClientCapabilities): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    @scala.inline
-    def setImplementation(value: ImplementationClientCapabilities): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+    inline def setImplementation(value: ImplementationClientCapabilities): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
+    inline def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
     
-    @scala.inline
-    def setOnTypeFormatting(value: DocumentOnTypeFormattingClientCapabilities): Self = StObject.set(x, "onTypeFormatting", value.asInstanceOf[js.Any])
+    inline def setOnTypeFormatting(value: DocumentOnTypeFormattingClientCapabilities): Self = StObject.set(x, "onTypeFormatting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnTypeFormattingUndefined: Self = StObject.set(x, "onTypeFormatting", js.undefined)
+    inline def setOnTypeFormattingUndefined: Self = StObject.set(x, "onTypeFormatting", js.undefined)
     
-    @scala.inline
-    def setPublishDiagnostics(value: PublishDiagnosticsClientCapabilities): Self = StObject.set(x, "publishDiagnostics", value.asInstanceOf[js.Any])
+    inline def setPublishDiagnostics(value: PublishDiagnosticsClientCapabilities): Self = StObject.set(x, "publishDiagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishDiagnosticsUndefined: Self = StObject.set(x, "publishDiagnostics", js.undefined)
+    inline def setPublishDiagnosticsUndefined: Self = StObject.set(x, "publishDiagnostics", js.undefined)
     
-    @scala.inline
-    def setRangeFormatting(value: DocumentRangeFormattingClientCapabilities): Self = StObject.set(x, "rangeFormatting", value.asInstanceOf[js.Any])
+    inline def setRangeFormatting(value: DocumentRangeFormattingClientCapabilities): Self = StObject.set(x, "rangeFormatting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeFormattingUndefined: Self = StObject.set(x, "rangeFormatting", js.undefined)
+    inline def setRangeFormattingUndefined: Self = StObject.set(x, "rangeFormatting", js.undefined)
     
-    @scala.inline
-    def setReferences(value: ReferenceClientCapabilities): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+    inline def setReferences(value: ReferenceClientCapabilities): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
+    inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
     
-    @scala.inline
-    def setRename(value: RenameClientCapabilities): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
+    inline def setRename(value: RenameClientCapabilities): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
+    inline def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
     
-    @scala.inline
-    def setSelectionRange(value: SelectionRangeClientCapabilities): Self = StObject.set(x, "selectionRange", value.asInstanceOf[js.Any])
+    inline def setSelectionRange(value: SelectionRangeClientCapabilities): Self = StObject.set(x, "selectionRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionRangeUndefined: Self = StObject.set(x, "selectionRange", js.undefined)
+    inline def setSelectionRangeUndefined: Self = StObject.set(x, "selectionRange", js.undefined)
     
-    @scala.inline
-    def setSignatureHelp(value: SignatureHelpClientCapabilities): Self = StObject.set(x, "signatureHelp", value.asInstanceOf[js.Any])
+    inline def setSignatureHelp(value: SignatureHelpClientCapabilities): Self = StObject.set(x, "signatureHelp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureHelpUndefined: Self = StObject.set(x, "signatureHelp", js.undefined)
+    inline def setSignatureHelpUndefined: Self = StObject.set(x, "signatureHelp", js.undefined)
     
-    @scala.inline
-    def setSynchronization(value: TextDocumentSyncClientCapabilities): Self = StObject.set(x, "synchronization", value.asInstanceOf[js.Any])
+    inline def setSynchronization(value: TextDocumentSyncClientCapabilities): Self = StObject.set(x, "synchronization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynchronizationUndefined: Self = StObject.set(x, "synchronization", js.undefined)
+    inline def setSynchronizationUndefined: Self = StObject.set(x, "synchronization", js.undefined)
     
-    @scala.inline
-    def setTypeDefinition(value: TypeDefinitionClientCapabilities): Self = StObject.set(x, "typeDefinition", value.asInstanceOf[js.Any])
+    inline def setTypeDefinition(value: TypeDefinitionClientCapabilities): Self = StObject.set(x, "typeDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeDefinitionUndefined: Self = StObject.set(x, "typeDefinition", js.undefined)
+    inline def setTypeDefinitionUndefined: Self = StObject.set(x, "typeDefinition", js.undefined)
   }
 }

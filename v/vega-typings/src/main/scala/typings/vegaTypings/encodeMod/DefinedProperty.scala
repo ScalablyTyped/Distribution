@@ -11,22 +11,17 @@ trait DefinedProperty extends StObject {
 }
 object DefinedProperty {
   
-  @scala.inline
-  def apply(): DefinedProperty = {
+  inline def apply(): DefinedProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefinedProperty]
   }
   
-  @scala.inline
-  implicit class DefinedPropertyMutableBuilder[Self <: DefinedProperty] (val x: Self) extends AnyVal {
+  extension [Self <: DefinedProperty](x: Self) {
     
-    @scala.inline
-    def setDefined(value: ProductionRule[BooleanValueRef]): Self = StObject.set(x, "defined", value.asInstanceOf[js.Any])
+    inline def setDefined(value: ProductionRule[BooleanValueRef]): Self = StObject.set(x, "defined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinedUndefined: Self = StObject.set(x, "defined", js.undefined)
+    inline def setDefinedUndefined: Self = StObject.set(x, "defined", js.undefined)
     
-    @scala.inline
-    def setDefinedVarargs(value: (Test & BooleanValueRef)*): Self = StObject.set(x, "defined", js.Array(value :_*))
+    inline def setDefinedVarargs(value: (Test & BooleanValueRef)*): Self = StObject.set(x, "defined", js.Array(value :_*))
   }
 }

@@ -14,8 +14,7 @@ trait ESMap[K, V]
 }
 object ESMap {
   
-  @scala.inline
-  def apply[K, V](
+  inline def apply[K, V](
     clear: () => Unit,
     delete: K => Boolean,
     entries: () => Iterator[js.Tuple2[K, V]],
@@ -31,10 +30,8 @@ object ESMap {
     __obj.asInstanceOf[ESMap[K, V]]
   }
   
-  @scala.inline
-  implicit class ESMapMutableBuilder[Self <: ESMap[?, ?], K, V] (val x: Self & (ESMap[K, V])) extends AnyVal {
+  extension [Self <: ESMap[?, ?], K, V](x: Self & (ESMap[K, V])) {
     
-    @scala.inline
-    def setSet(value: (K, V) => ESMap[K, V]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (K, V) => ESMap[K, V]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

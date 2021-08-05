@@ -16,25 +16,19 @@ trait ScaledSize extends StObject {
 }
 object ScaledSize {
   
-  @scala.inline
-  def apply(fontScale: Double, height: Double, scale: Double, width: Double): ScaledSize = {
+  inline def apply(fontScale: Double, height: Double, scale: Double, width: Double): ScaledSize = {
     val __obj = js.Dynamic.literal(fontScale = fontScale.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaledSize]
   }
   
-  @scala.inline
-  implicit class ScaledSizeMutableBuilder[Self <: ScaledSize] (val x: Self) extends AnyVal {
+  extension [Self <: ScaledSize](x: Self) {
     
-    @scala.inline
-    def setFontScale(value: Double): Self = StObject.set(x, "fontScale", value.asInstanceOf[js.Any])
+    inline def setFontScale(value: Double): Self = StObject.set(x, "fontScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

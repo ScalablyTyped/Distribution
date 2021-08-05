@@ -8,11 +8,9 @@ object glStrings {
   
   @js.native
   sealed trait STACKGL_destroy_context extends StObject
-  @scala.inline
-  def STACKGL_destroy_context: STACKGL_destroy_context = "STACKGL_destroy_context".asInstanceOf[STACKGL_destroy_context]
+  inline def STACKGL_destroy_context: STACKGL_destroy_context = "STACKGL_destroy_context".asInstanceOf[STACKGL_destroy_context]
   
   @js.native
   sealed trait STACKGL_resize_drawingbuffer extends StObject
-  @scala.inline
-  def STACKGL_resize_drawingbuffer: STACKGL_resize_drawingbuffer = "STACKGL_resize_drawingbuffer".asInstanceOf[STACKGL_resize_drawingbuffer]
+  inline def STACKGL_resize_drawingbuffer: STACKGL_resize_drawingbuffer = "STACKGL_resize_drawingbuffer".asInstanceOf[STACKGL_resize_drawingbuffer]
 }

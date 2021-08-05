@@ -21,31 +21,25 @@ trait FontStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StOb
 }
 object FontStyleProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): FontStyleProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): FontStyleProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontStyleProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class FontStylePropsMutableBuilder[Self <: FontStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & FontStyleProps[ThemeType]) extends AnyVal {
+  extension [Self <: FontStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & FontStyleProps[ThemeType]) {
     
-    @scala.inline
-    def setFontStyle(
+    inline def setFontStyle(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontStyleNull: Self = StObject.set(x, "fontStyle", null)
+    inline def setFontStyleNull: Self = StObject.set(x, "fontStyle", null)
     
-    @scala.inline
-    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+    inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
-    @scala.inline
-    def setFontStyleVarargs(
+    inline def setFontStyleVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any) | Null)*
     ): Self = StObject.set(x, "fontStyle", js.Array(value :_*))
   }

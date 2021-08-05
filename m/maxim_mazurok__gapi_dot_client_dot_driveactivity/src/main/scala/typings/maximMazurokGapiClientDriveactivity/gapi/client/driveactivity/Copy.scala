@@ -11,19 +11,15 @@ trait Copy extends StObject {
 }
 object Copy {
   
-  @scala.inline
-  def apply(): Copy = {
+  inline def apply(): Copy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Copy]
   }
   
-  @scala.inline
-  implicit class CopyMutableBuilder[Self <: Copy] (val x: Self) extends AnyVal {
+  extension [Self <: Copy](x: Self) {
     
-    @scala.inline
-    def setOriginalObject(value: TargetReference): Self = StObject.set(x, "originalObject", value.asInstanceOf[js.Any])
+    inline def setOriginalObject(value: TargetReference): Self = StObject.set(x, "originalObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalObjectUndefined: Self = StObject.set(x, "originalObject", js.undefined)
+    inline def setOriginalObjectUndefined: Self = StObject.set(x, "originalObject", js.undefined)
   }
 }

@@ -32,73 +32,51 @@ trait MultipartUploadOptions extends StObject {
 }
 object MultipartUploadOptions {
   
-  @scala.inline
-  def apply(): MultipartUploadOptions = {
+  inline def apply(): MultipartUploadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultipartUploadOptions]
   }
   
-  @scala.inline
-  implicit class MultipartUploadOptionsMutableBuilder[Self <: MultipartUploadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MultipartUploadOptions](x: Self) {
     
-    @scala.inline
-    def setCallback(value: ObjectCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: ObjectCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setCheckpoint(value: Checkpoint): Self = StObject.set(x, "checkpoint", value.asInstanceOf[js.Any])
+    inline def setCheckpoint(value: Checkpoint): Self = StObject.set(x, "checkpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckpointUndefined: Self = StObject.set(x, "checkpoint", js.undefined)
+    inline def setCheckpointUndefined: Self = StObject.set(x, "checkpoint", js.undefined)
     
-    @scala.inline
-    def setCopyheaders(value: js.Object): Self = StObject.set(x, "copyheaders", value.asInstanceOf[js.Any])
+    inline def setCopyheaders(value: js.Object): Self = StObject.set(x, "copyheaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyheadersUndefined: Self = StObject.set(x, "copyheaders", js.undefined)
+    inline def setCopyheadersUndefined: Self = StObject.set(x, "copyheaders", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setMeta(value: UserMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: UserMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    @scala.inline
-    def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+    inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+    inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
-    @scala.inline
-    def setParallel(value: Double): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
+    inline def setParallel(value: Double): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
+    inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
     
-    @scala.inline
-    def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
+    inline def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
+    inline def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
     
-    @scala.inline
-    def setProgress(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
+    inline def setProgress(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

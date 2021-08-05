@@ -17,34 +17,25 @@ trait SVGDefinitionObject
 }
 object SVGDefinitionObject {
   
-  @scala.inline
-  def apply(): SVGDefinitionObject = {
+  inline def apply(): SVGDefinitionObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SVGDefinitionObject]
   }
   
-  @scala.inline
-  implicit class SVGDefinitionObjectMutableBuilder[Self <: SVGDefinitionObject] (val x: Self) extends AnyVal {
+  extension [Self <: SVGDefinitionObject](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[SVGDefinitionObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[SVGDefinitionObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: SVGDefinitionObject*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: SVGDefinitionObject*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+    inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     
-    @scala.inline
-    def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
+    inline def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextContentUndefined: Self = StObject.set(x, "textContent", js.undefined)
+    inline def setTextContentUndefined: Self = StObject.set(x, "textContent", js.undefined)
   }
 }

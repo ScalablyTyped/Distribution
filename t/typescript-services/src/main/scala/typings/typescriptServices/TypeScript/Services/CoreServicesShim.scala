@@ -28,8 +28,7 @@ trait CoreServicesShim
 }
 object CoreServicesShim {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dispose: js.Any => Unit,
     dumpMemory: js.Any => String,
     factory: js.Any,
@@ -45,31 +44,22 @@ object CoreServicesShim {
     __obj.asInstanceOf[CoreServicesShim]
   }
   
-  @scala.inline
-  implicit class CoreServicesShimMutableBuilder[Self <: CoreServicesShim] (val x: Self) extends AnyVal {
+  extension [Self <: CoreServicesShim](x: Self) {
     
-    @scala.inline
-    def setDumpMemory(value: js.Any => String): Self = StObject.set(x, "dumpMemory", js.Any.fromFunction1(value))
+    inline def setDumpMemory(value: js.Any => String): Self = StObject.set(x, "dumpMemory", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForwardJSONCall(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "forwardJSONCall", js.Any.fromFunction2(value))
+    inline def setForwardJSONCall(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "forwardJSONCall", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDefaultCompilationSettings(value: () => String): Self = StObject.set(x, "getDefaultCompilationSettings", js.Any.fromFunction0(value))
+    inline def setGetDefaultCompilationSettings(value: () => String): Self = StObject.set(x, "getDefaultCompilationSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMemoryInfo(value: js.Any => String): Self = StObject.set(x, "getMemoryInfo", js.Any.fromFunction1(value))
+    inline def setGetMemoryInfo(value: js.Any => String): Self = StObject.set(x, "getMemoryInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPreProcessedFileInfo(value: (String, IScriptSnapshot) => String): Self = StObject.set(x, "getPreProcessedFileInfo", js.Any.fromFunction2(value))
+    inline def setGetPreProcessedFileInfo(value: (String, IScriptSnapshot) => String): Self = StObject.set(x, "getPreProcessedFileInfo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHost(value: ICoreServicesHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: ICoreServicesHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogger(value: ILogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: ILogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServices(value: CoreServices): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: CoreServices): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
   }
 }

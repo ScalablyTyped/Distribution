@@ -59,8 +59,7 @@ trait BoundsFactory extends StObject {
 }
 object BoundsFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contains: (IBound, Vector) => Boolean,
     create: Vertices => IBound,
     overlaps: (IBound, IBound) => Boolean,
@@ -72,25 +71,18 @@ object BoundsFactory {
     __obj.asInstanceOf[BoundsFactory]
   }
   
-  @scala.inline
-  implicit class BoundsFactoryMutableBuilder[Self <: BoundsFactory] (val x: Self) extends AnyVal {
+  extension [Self <: BoundsFactory](x: Self) {
     
-    @scala.inline
-    def setContains(value: (IBound, Vector) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
+    inline def setContains(value: (IBound, Vector) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreate(value: Vertices => IBound): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: Vertices => IBound): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOverlaps(value: (IBound, IBound) => Boolean): Self = StObject.set(x, "overlaps", js.Any.fromFunction2(value))
+    inline def setOverlaps(value: (IBound, IBound) => Boolean): Self = StObject.set(x, "overlaps", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShift(value: (IBound, Vector) => Unit): Self = StObject.set(x, "shift", js.Any.fromFunction2(value))
+    inline def setShift(value: (IBound, Vector) => Unit): Self = StObject.set(x, "shift", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTranslate(value: (IBound, Vector) => Unit): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
+    inline def setTranslate(value: (IBound, Vector) => Unit): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdate(value: (IBound, Vertices, Vector) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+    inline def setUpdate(value: (IBound, Vertices, Vector) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
   }
 }

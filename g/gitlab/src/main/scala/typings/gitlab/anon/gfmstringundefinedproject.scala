@@ -15,31 +15,23 @@ trait gfmstringundefinedproject extends StObject {
 }
 object gfmstringundefinedproject {
   
-  @scala.inline
-  def apply(): gfmstringundefinedproject = {
+  inline def apply(): gfmstringundefinedproject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[gfmstringundefinedproject]
   }
   
-  @scala.inline
-  implicit class gfmstringundefinedprojectMutableBuilder[Self <: gfmstringundefinedproject] (val x: Self) extends AnyVal {
+  extension [Self <: gfmstringundefinedproject](x: Self) {
     
-    @scala.inline
-    def setGfm(value: String): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
+    inline def setGfm(value: String): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGfmUndefined: Self = StObject.set(x, "gfm", js.undefined)
+    inline def setGfmUndefined: Self = StObject.set(x, "gfm", js.undefined)
     
-    @scala.inline
-    def setProject(value: String | Double): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String | Double): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
-    @scala.inline
-    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
+    inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
+    inline def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
   }
 }

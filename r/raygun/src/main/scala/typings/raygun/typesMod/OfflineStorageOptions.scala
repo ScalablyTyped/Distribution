@@ -12,22 +12,17 @@ trait OfflineStorageOptions extends StObject {
 }
 object OfflineStorageOptions {
   
-  @scala.inline
-  def apply(cachePath: String): OfflineStorageOptions = {
+  inline def apply(cachePath: String): OfflineStorageOptions = {
     val __obj = js.Dynamic.literal(cachePath = cachePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[OfflineStorageOptions]
   }
   
-  @scala.inline
-  implicit class OfflineStorageOptionsMutableBuilder[Self <: OfflineStorageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OfflineStorageOptions](x: Self) {
     
-    @scala.inline
-    def setCacheLimit(value: Double): Self = StObject.set(x, "cacheLimit", value.asInstanceOf[js.Any])
+    inline def setCacheLimit(value: Double): Self = StObject.set(x, "cacheLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheLimitUndefined: Self = StObject.set(x, "cacheLimit", js.undefined)
+    inline def setCacheLimitUndefined: Self = StObject.set(x, "cacheLimit", js.undefined)
     
-    @scala.inline
-    def setCachePath(value: String): Self = StObject.set(x, "cachePath", value.asInstanceOf[js.Any])
+    inline def setCachePath(value: String): Self = StObject.set(x, "cachePath", value.asInstanceOf[js.Any])
   }
 }

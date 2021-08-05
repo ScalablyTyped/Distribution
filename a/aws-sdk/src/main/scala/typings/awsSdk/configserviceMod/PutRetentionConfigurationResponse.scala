@@ -13,19 +13,15 @@ trait PutRetentionConfigurationResponse extends StObject {
 }
 object PutRetentionConfigurationResponse {
   
-  @scala.inline
-  def apply(): PutRetentionConfigurationResponse = {
+  inline def apply(): PutRetentionConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutRetentionConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class PutRetentionConfigurationResponseMutableBuilder[Self <: PutRetentionConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutRetentionConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setRetentionConfiguration(value: RetentionConfiguration): Self = StObject.set(x, "RetentionConfiguration", value.asInstanceOf[js.Any])
+    inline def setRetentionConfiguration(value: RetentionConfiguration): Self = StObject.set(x, "RetentionConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionConfigurationUndefined: Self = StObject.set(x, "RetentionConfiguration", js.undefined)
+    inline def setRetentionConfigurationUndefined: Self = StObject.set(x, "RetentionConfiguration", js.undefined)
   }
 }

@@ -27,26 +27,20 @@ object typesMod {
   }
   object IOHandler {
     
-    @scala.inline
-    def apply(): IOHandler = {
+    inline def apply(): IOHandler = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOHandler]
     }
     
-    @scala.inline
-    implicit class IOHandlerMutableBuilder[Self <: IOHandler] (val x: Self) extends AnyVal {
+    extension [Self <: IOHandler](x: Self) {
       
-      @scala.inline
-      def setLoad(value: () => js.Promise[ModelArtifacts]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
+      inline def setLoad(value: () => js.Promise[ModelArtifacts]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+      inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
       
-      @scala.inline
-      def setSave(value: /* modelArtifact */ ModelArtifacts => js.Promise[SaveResult]): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+      inline def setSave(value: /* modelArtifact */ ModelArtifacts => js.Promise[SaveResult]): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+      inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     }
   }
   
@@ -124,56 +118,40 @@ object typesMod {
   }
   object LoadOptions {
     
-    @scala.inline
-    def apply(): LoadOptions = {
+    inline def apply(): LoadOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoadOptions]
     }
     
-    @scala.inline
-    implicit class LoadOptionsMutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoadOptions](x: Self) {
       
-      @scala.inline
-      def setFetchFunc(value: js.Function): Self = StObject.set(x, "fetchFunc", value.asInstanceOf[js.Any])
+      inline def setFetchFunc(value: js.Function): Self = StObject.set(x, "fetchFunc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchFuncUndefined: Self = StObject.set(x, "fetchFunc", js.undefined)
+      inline def setFetchFuncUndefined: Self = StObject.set(x, "fetchFunc", js.undefined)
       
-      @scala.inline
-      def setFromTFHub(value: Boolean): Self = StObject.set(x, "fromTFHub", value.asInstanceOf[js.Any])
+      inline def setFromTFHub(value: Boolean): Self = StObject.set(x, "fromTFHub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromTFHubUndefined: Self = StObject.set(x, "fromTFHub", js.undefined)
+      inline def setFromTFHubUndefined: Self = StObject.set(x, "fromTFHub", js.undefined)
       
-      @scala.inline
-      def setOnProgress(value: /* fraction */ Double => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+      inline def setOnProgress(value: /* fraction */ Double => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+      inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
       
-      @scala.inline
-      def setRequestInit(value: RequestInit): Self = StObject.set(x, "requestInit", value.asInstanceOf[js.Any])
+      inline def setRequestInit(value: RequestInit): Self = StObject.set(x, "requestInit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestInitUndefined: Self = StObject.set(x, "requestInit", js.undefined)
+      inline def setRequestInitUndefined: Self = StObject.set(x, "requestInit", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setWeightPathPrefix(value: String): Self = StObject.set(x, "weightPathPrefix", value.asInstanceOf[js.Any])
+      inline def setWeightPathPrefix(value: String): Self = StObject.set(x, "weightPathPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightPathPrefixUndefined: Self = StObject.set(x, "weightPathPrefix", js.undefined)
+      inline def setWeightPathPrefixUndefined: Self = StObject.set(x, "weightPathPrefix", js.undefined)
       
-      @scala.inline
-      def setWeightUrlConverter(value: /* weightFileName */ String => js.Promise[String]): Self = StObject.set(x, "weightUrlConverter", js.Any.fromFunction1(value))
+      inline def setWeightUrlConverter(value: /* weightFileName */ String => js.Promise[String]): Self = StObject.set(x, "weightUrlConverter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWeightUrlConverterUndefined: Self = StObject.set(x, "weightUrlConverter", js.undefined)
+      inline def setWeightUrlConverterUndefined: Self = StObject.set(x, "weightUrlConverter", js.undefined)
     }
   }
   
@@ -243,74 +221,52 @@ object typesMod {
   }
   object ModelArtifacts {
     
-    @scala.inline
-    def apply(): ModelArtifacts = {
+    inline def apply(): ModelArtifacts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModelArtifacts]
     }
     
-    @scala.inline
-    implicit class ModelArtifactsMutableBuilder[Self <: ModelArtifacts] (val x: Self) extends AnyVal {
+    extension [Self <: ModelArtifacts](x: Self) {
       
-      @scala.inline
-      def setConvertedBy(value: String): Self = StObject.set(x, "convertedBy", value.asInstanceOf[js.Any])
+      inline def setConvertedBy(value: String): Self = StObject.set(x, "convertedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConvertedByNull: Self = StObject.set(x, "convertedBy", null)
+      inline def setConvertedByNull: Self = StObject.set(x, "convertedBy", null)
       
-      @scala.inline
-      def setConvertedByUndefined: Self = StObject.set(x, "convertedBy", js.undefined)
+      inline def setConvertedByUndefined: Self = StObject.set(x, "convertedBy", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setGeneratedBy(value: String): Self = StObject.set(x, "generatedBy", value.asInstanceOf[js.Any])
+      inline def setGeneratedBy(value: String): Self = StObject.set(x, "generatedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneratedByUndefined: Self = StObject.set(x, "generatedBy", js.undefined)
+      inline def setGeneratedByUndefined: Self = StObject.set(x, "generatedBy", js.undefined)
       
-      @scala.inline
-      def setModelInitializer(value: js.Object): Self = StObject.set(x, "modelInitializer", value.asInstanceOf[js.Any])
+      inline def setModelInitializer(value: js.Object): Self = StObject.set(x, "modelInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelInitializerUndefined: Self = StObject.set(x, "modelInitializer", js.undefined)
+      inline def setModelInitializerUndefined: Self = StObject.set(x, "modelInitializer", js.undefined)
       
-      @scala.inline
-      def setModelTopology(value: js.Object | ArrayBuffer): Self = StObject.set(x, "modelTopology", value.asInstanceOf[js.Any])
+      inline def setModelTopology(value: js.Object | ArrayBuffer): Self = StObject.set(x, "modelTopology", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelTopologyUndefined: Self = StObject.set(x, "modelTopology", js.undefined)
+      inline def setModelTopologyUndefined: Self = StObject.set(x, "modelTopology", js.undefined)
       
-      @scala.inline
-      def setTrainingConfig(value: TrainingConfig): Self = StObject.set(x, "trainingConfig", value.asInstanceOf[js.Any])
+      inline def setTrainingConfig(value: TrainingConfig): Self = StObject.set(x, "trainingConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrainingConfigUndefined: Self = StObject.set(x, "trainingConfig", js.undefined)
+      inline def setTrainingConfigUndefined: Self = StObject.set(x, "trainingConfig", js.undefined)
       
-      @scala.inline
-      def setUserDefinedMetadata(value: js.Object): Self = StObject.set(x, "userDefinedMetadata", value.asInstanceOf[js.Any])
+      inline def setUserDefinedMetadata(value: js.Object): Self = StObject.set(x, "userDefinedMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserDefinedMetadataUndefined: Self = StObject.set(x, "userDefinedMetadata", js.undefined)
+      inline def setUserDefinedMetadataUndefined: Self = StObject.set(x, "userDefinedMetadata", js.undefined)
       
-      @scala.inline
-      def setWeightData(value: ArrayBuffer): Self = StObject.set(x, "weightData", value.asInstanceOf[js.Any])
+      inline def setWeightData(value: ArrayBuffer): Self = StObject.set(x, "weightData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightDataUndefined: Self = StObject.set(x, "weightData", js.undefined)
+      inline def setWeightDataUndefined: Self = StObject.set(x, "weightData", js.undefined)
       
-      @scala.inline
-      def setWeightSpecs(value: js.Array[WeightsManifestEntry]): Self = StObject.set(x, "weightSpecs", value.asInstanceOf[js.Any])
+      inline def setWeightSpecs(value: js.Array[WeightsManifestEntry]): Self = StObject.set(x, "weightSpecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightSpecsUndefined: Self = StObject.set(x, "weightSpecs", js.undefined)
+      inline def setWeightSpecsUndefined: Self = StObject.set(x, "weightSpecs", js.undefined)
       
-      @scala.inline
-      def setWeightSpecsVarargs(value: WeightsManifestEntry*): Self = StObject.set(x, "weightSpecs", js.Array(value :_*))
+      inline def setWeightSpecsVarargs(value: WeightsManifestEntry*): Self = StObject.set(x, "weightSpecs", js.Array(value :_*))
     }
   }
   
@@ -356,38 +312,28 @@ object typesMod {
   }
   object ModelArtifactsInfo {
     
-    @scala.inline
-    def apply(dateSaved: Date, modelTopologyType: JSON | GraphDef): ModelArtifactsInfo = {
+    inline def apply(dateSaved: Date, modelTopologyType: JSON | GraphDef): ModelArtifactsInfo = {
       val __obj = js.Dynamic.literal(dateSaved = dateSaved.asInstanceOf[js.Any], modelTopologyType = modelTopologyType.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelArtifactsInfo]
     }
     
-    @scala.inline
-    implicit class ModelArtifactsInfoMutableBuilder[Self <: ModelArtifactsInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ModelArtifactsInfo](x: Self) {
       
-      @scala.inline
-      def setDateSaved(value: Date): Self = StObject.set(x, "dateSaved", value.asInstanceOf[js.Any])
+      inline def setDateSaved(value: Date): Self = StObject.set(x, "dateSaved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelTopologyBytes(value: Double): Self = StObject.set(x, "modelTopologyBytes", value.asInstanceOf[js.Any])
+      inline def setModelTopologyBytes(value: Double): Self = StObject.set(x, "modelTopologyBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelTopologyBytesUndefined: Self = StObject.set(x, "modelTopologyBytes", js.undefined)
+      inline def setModelTopologyBytesUndefined: Self = StObject.set(x, "modelTopologyBytes", js.undefined)
       
-      @scala.inline
-      def setModelTopologyType(value: JSON | GraphDef): Self = StObject.set(x, "modelTopologyType", value.asInstanceOf[js.Any])
+      inline def setModelTopologyType(value: JSON | GraphDef): Self = StObject.set(x, "modelTopologyType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightDataBytes(value: Double): Self = StObject.set(x, "weightDataBytes", value.asInstanceOf[js.Any])
+      inline def setWeightDataBytes(value: Double): Self = StObject.set(x, "weightDataBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightDataBytesUndefined: Self = StObject.set(x, "weightDataBytes", js.undefined)
+      inline def setWeightDataBytesUndefined: Self = StObject.set(x, "weightDataBytes", js.undefined)
       
-      @scala.inline
-      def setWeightSpecsBytes(value: Double): Self = StObject.set(x, "weightSpecsBytes", value.asInstanceOf[js.Any])
+      inline def setWeightSpecsBytes(value: Double): Self = StObject.set(x, "weightSpecsBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightSpecsBytesUndefined: Self = StObject.set(x, "weightSpecsBytes", js.undefined)
+      inline def setWeightSpecsBytesUndefined: Self = StObject.set(x, "weightSpecsBytes", js.undefined)
     }
   }
   
@@ -443,59 +389,42 @@ object typesMod {
   }
   object ModelJSON {
     
-    @scala.inline
-    def apply(weightsManifest: WeightsManifestConfig): ModelJSON = {
+    inline def apply(weightsManifest: WeightsManifestConfig): ModelJSON = {
       val __obj = js.Dynamic.literal(weightsManifest = weightsManifest.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelJSON]
     }
     
-    @scala.inline
-    implicit class ModelJSONMutableBuilder[Self <: ModelJSON] (val x: Self) extends AnyVal {
+    extension [Self <: ModelJSON](x: Self) {
       
-      @scala.inline
-      def setConvertedBy(value: String): Self = StObject.set(x, "convertedBy", value.asInstanceOf[js.Any])
+      inline def setConvertedBy(value: String): Self = StObject.set(x, "convertedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConvertedByNull: Self = StObject.set(x, "convertedBy", null)
+      inline def setConvertedByNull: Self = StObject.set(x, "convertedBy", null)
       
-      @scala.inline
-      def setConvertedByUndefined: Self = StObject.set(x, "convertedBy", js.undefined)
+      inline def setConvertedByUndefined: Self = StObject.set(x, "convertedBy", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setGeneratedBy(value: String): Self = StObject.set(x, "generatedBy", value.asInstanceOf[js.Any])
+      inline def setGeneratedBy(value: String): Self = StObject.set(x, "generatedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneratedByUndefined: Self = StObject.set(x, "generatedBy", js.undefined)
+      inline def setGeneratedByUndefined: Self = StObject.set(x, "generatedBy", js.undefined)
       
-      @scala.inline
-      def setModelInitializer(value: js.Object): Self = StObject.set(x, "modelInitializer", value.asInstanceOf[js.Any])
+      inline def setModelInitializer(value: js.Object): Self = StObject.set(x, "modelInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelInitializerUndefined: Self = StObject.set(x, "modelInitializer", js.undefined)
+      inline def setModelInitializerUndefined: Self = StObject.set(x, "modelInitializer", js.undefined)
       
-      @scala.inline
-      def setTrainingConfig(value: TrainingConfig): Self = StObject.set(x, "trainingConfig", value.asInstanceOf[js.Any])
+      inline def setTrainingConfig(value: TrainingConfig): Self = StObject.set(x, "trainingConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrainingConfigUndefined: Self = StObject.set(x, "trainingConfig", js.undefined)
+      inline def setTrainingConfigUndefined: Self = StObject.set(x, "trainingConfig", js.undefined)
       
-      @scala.inline
-      def setUserDefinedMetadata(value: js.Object): Self = StObject.set(x, "userDefinedMetadata", value.asInstanceOf[js.Any])
+      inline def setUserDefinedMetadata(value: js.Object): Self = StObject.set(x, "userDefinedMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserDefinedMetadataUndefined: Self = StObject.set(x, "userDefinedMetadata", js.undefined)
+      inline def setUserDefinedMetadataUndefined: Self = StObject.set(x, "userDefinedMetadata", js.undefined)
       
-      @scala.inline
-      def setWeightsManifest(value: WeightsManifestConfig): Self = StObject.set(x, "weightsManifest", value.asInstanceOf[js.Any])
+      inline def setWeightsManifest(value: WeightsManifestConfig): Self = StObject.set(x, "weightsManifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightsManifestVarargs(value: WeightsManifestGroupConfig*): Self = StObject.set(x, "weightsManifest", js.Array(value :_*))
+      inline def setWeightsManifestVarargs(value: WeightsManifestGroupConfig*): Self = StObject.set(x, "weightsManifest", js.Array(value :_*))
     }
   }
   
@@ -522,8 +451,7 @@ object typesMod {
   }
   object ModelStoreManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       listModels: () => js.Promise[StringDictionary[ModelArtifactsInfo]],
       removeModel: String => js.Promise[ModelArtifactsInfo]
     ): ModelStoreManager = {
@@ -531,14 +459,11 @@ object typesMod {
       __obj.asInstanceOf[ModelStoreManager]
     }
     
-    @scala.inline
-    implicit class ModelStoreManagerMutableBuilder[Self <: ModelStoreManager] (val x: Self) extends AnyVal {
+    extension [Self <: ModelStoreManager](x: Self) {
       
-      @scala.inline
-      def setListModels(value: () => js.Promise[StringDictionary[ModelArtifactsInfo]]): Self = StObject.set(x, "listModels", js.Any.fromFunction0(value))
+      inline def setListModels(value: () => js.Promise[StringDictionary[ModelArtifactsInfo]]): Self = StObject.set(x, "listModels", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveModel(value: String => js.Promise[ModelArtifactsInfo]): Self = StObject.set(x, "removeModel", js.Any.fromFunction1(value))
+      inline def setRemoveModel(value: String => js.Promise[ModelArtifactsInfo]): Self = StObject.set(x, "removeModel", js.Any.fromFunction1(value))
     }
   }
   
@@ -553,20 +478,16 @@ object typesMod {
   }
   object RequestDetails {
     
-    @scala.inline
-    def apply(): RequestDetails = {
+    inline def apply(): RequestDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestDetails]
     }
     
-    @scala.inline
-    implicit class RequestDetailsMutableBuilder[Self <: RequestDetails] (val x: Self) extends AnyVal {
+    extension [Self <: RequestDetails](x: Self) {
       
-      @scala.inline
-      def setIsBinary(value: Boolean): Self = StObject.set(x, "isBinary", value.asInstanceOf[js.Any])
+      inline def setIsBinary(value: Boolean): Self = StObject.set(x, "isBinary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBinaryUndefined: Self = StObject.set(x, "isBinary", js.undefined)
+      inline def setIsBinaryUndefined: Self = StObject.set(x, "isBinary", js.undefined)
     }
   }
   
@@ -587,26 +508,20 @@ object typesMod {
   }
   object SaveConfig {
     
-    @scala.inline
-    def apply(): SaveConfig = {
+    inline def apply(): SaveConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SaveConfig]
     }
     
-    @scala.inline
-    implicit class SaveConfigMutableBuilder[Self <: SaveConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SaveConfig](x: Self) {
       
-      @scala.inline
-      def setIncludeOptimizer(value: Boolean): Self = StObject.set(x, "includeOptimizer", value.asInstanceOf[js.Any])
+      inline def setIncludeOptimizer(value: Boolean): Self = StObject.set(x, "includeOptimizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeOptimizerUndefined: Self = StObject.set(x, "includeOptimizer", js.undefined)
+      inline def setIncludeOptimizerUndefined: Self = StObject.set(x, "includeOptimizer", js.undefined)
       
-      @scala.inline
-      def setTrainableOnly(value: Boolean): Self = StObject.set(x, "trainableOnly", value.asInstanceOf[js.Any])
+      inline def setTrainableOnly(value: Boolean): Self = StObject.set(x, "trainableOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrainableOnlyUndefined: Self = StObject.set(x, "trainableOnly", js.undefined)
+      inline def setTrainableOnlyUndefined: Self = StObject.set(x, "trainableOnly", js.undefined)
     }
   }
   
@@ -632,35 +547,26 @@ object typesMod {
   }
   object SaveResult {
     
-    @scala.inline
-    def apply(modelArtifactsInfo: ModelArtifactsInfo): SaveResult = {
+    inline def apply(modelArtifactsInfo: ModelArtifactsInfo): SaveResult = {
       val __obj = js.Dynamic.literal(modelArtifactsInfo = modelArtifactsInfo.asInstanceOf[js.Any])
       __obj.asInstanceOf[SaveResult]
     }
     
-    @scala.inline
-    implicit class SaveResultMutableBuilder[Self <: SaveResult] (val x: Self) extends AnyVal {
+    extension [Self <: SaveResult](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[js.Object | String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[js.Object | String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setErrorsVarargs(value: (js.Object | String)*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: (js.Object | String)*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setModelArtifactsInfo(value: ModelArtifactsInfo): Self = StObject.set(x, "modelArtifactsInfo", value.asInstanceOf[js.Any])
+      inline def setModelArtifactsInfo(value: ModelArtifactsInfo): Self = StObject.set(x, "modelArtifactsInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponses(value: js.Array[Response]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+      inline def setResponses(value: js.Array[Response]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
+      inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
       
-      @scala.inline
-      def setResponsesVarargs(value: Response*): Self = StObject.set(x, "responses", js.Array(value :_*))
+      inline def setResponsesVarargs(value: Response*): Self = StObject.set(x, "responses", js.Array(value :_*))
     }
   }
   
@@ -680,53 +586,38 @@ object typesMod {
   }
   object TrainingConfig {
     
-    @scala.inline
-    def apply(loss: String | js.Array[String] | StringDictionary[String]): TrainingConfig = {
+    inline def apply(loss: String | js.Array[String] | StringDictionary[String]): TrainingConfig = {
       val __obj = js.Dynamic.literal(loss = loss.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrainingConfig]
     }
     
-    @scala.inline
-    implicit class TrainingConfigMutableBuilder[Self <: TrainingConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TrainingConfig](x: Self) {
       
-      @scala.inline
-      def setLoss(value: String | js.Array[String] | StringDictionary[String]): Self = StObject.set(x, "loss", value.asInstanceOf[js.Any])
+      inline def setLoss(value: String | js.Array[String] | StringDictionary[String]): Self = StObject.set(x, "loss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLossVarargs(value: String*): Self = StObject.set(x, "loss", js.Array(value :_*))
+      inline def setLossVarargs(value: String*): Self = StObject.set(x, "loss", js.Array(value :_*))
       
-      @scala.inline
-      def setLoss_weights(value: js.Array[Double] | StringDictionary[Double]): Self = StObject.set(x, "loss_weights", value.asInstanceOf[js.Any])
+      inline def setLoss_weights(value: js.Array[Double] | StringDictionary[Double]): Self = StObject.set(x, "loss_weights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoss_weightsUndefined: Self = StObject.set(x, "loss_weights", js.undefined)
+      inline def setLoss_weightsUndefined: Self = StObject.set(x, "loss_weights", js.undefined)
       
-      @scala.inline
-      def setLoss_weightsVarargs(value: Double*): Self = StObject.set(x, "loss_weights", js.Array(value :_*))
+      inline def setLoss_weightsVarargs(value: Double*): Self = StObject.set(x, "loss_weights", js.Array(value :_*))
       
-      @scala.inline
-      def setMetrics(value: js.Array[String] | StringDictionary[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: js.Array[String] | StringDictionary[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+      inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
       
-      @scala.inline
-      def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+      inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
       
-      @scala.inline
-      def setSample_weight_mode(value: String): Self = StObject.set(x, "sample_weight_mode", value.asInstanceOf[js.Any])
+      inline def setSample_weight_mode(value: String): Self = StObject.set(x, "sample_weight_mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSample_weight_modeUndefined: Self = StObject.set(x, "sample_weight_mode", js.undefined)
+      inline def setSample_weight_modeUndefined: Self = StObject.set(x, "sample_weight_mode", js.undefined)
       
-      @scala.inline
-      def setWeighted_metrics(value: js.Array[String]): Self = StObject.set(x, "weighted_metrics", value.asInstanceOf[js.Any])
+      inline def setWeighted_metrics(value: js.Array[String]): Self = StObject.set(x, "weighted_metrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeighted_metricsUndefined: Self = StObject.set(x, "weighted_metrics", js.undefined)
+      inline def setWeighted_metricsUndefined: Self = StObject.set(x, "weighted_metrics", js.undefined)
       
-      @scala.inline
-      def setWeighted_metricsVarargs(value: String*): Self = StObject.set(x, "weighted_metrics", js.Array(value :_*))
+      inline def setWeighted_metricsVarargs(value: String*): Self = StObject.set(x, "weighted_metrics", js.Array(value :_*))
     }
   }
   
@@ -737,11 +628,9 @@ object typesMod {
   trait WeightGroup extends StObject
   object WeightGroup {
     
-    @scala.inline
-    def model: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.model = "model".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.model]
+    inline def model: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.model = "model".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.model]
     
-    @scala.inline
-    def optimizer: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.optimizer = "optimizer".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.optimizer]
+    inline def optimizer: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.optimizer = "optimizer".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.optimizer]
   }
   
   type WeightsManifestConfig = js.Array[WeightsManifestGroupConfig]
@@ -780,38 +669,28 @@ object typesMod {
   }
   object WeightsManifestEntry {
     
-    @scala.inline
-    def apply(dtype: float32 | int32 | bool | string | complex64, name: String, shape: js.Array[Double]): WeightsManifestEntry = {
+    inline def apply(dtype: float32 | int32 | bool | string | complex64, name: String, shape: js.Array[Double]): WeightsManifestEntry = {
       val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
       __obj.asInstanceOf[WeightsManifestEntry]
     }
     
-    @scala.inline
-    implicit class WeightsManifestEntryMutableBuilder[Self <: WeightsManifestEntry] (val x: Self) extends AnyVal {
+    extension [Self <: WeightsManifestEntry](x: Self) {
       
-      @scala.inline
-      def setDtype(value: float32 | int32 | bool | string | complex64): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: float32 | int32 | bool | string | complex64): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroup(value: WeightGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: WeightGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantization(value: Dtype): Self = StObject.set(x, "quantization", value.asInstanceOf[js.Any])
+      inline def setQuantization(value: Dtype): Self = StObject.set(x, "quantization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantizationUndefined: Self = StObject.set(x, "quantization", js.undefined)
+      inline def setQuantizationUndefined: Self = StObject.set(x, "quantization", js.undefined)
       
-      @scala.inline
-      def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
     }
   }
   
@@ -832,26 +711,20 @@ object typesMod {
   }
   object WeightsManifestGroupConfig {
     
-    @scala.inline
-    def apply(paths: js.Array[String], weights: js.Array[WeightsManifestEntry]): WeightsManifestGroupConfig = {
+    inline def apply(paths: js.Array[String], weights: js.Array[WeightsManifestEntry]): WeightsManifestGroupConfig = {
       val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any], weights = weights.asInstanceOf[js.Any])
       __obj.asInstanceOf[WeightsManifestGroupConfig]
     }
     
-    @scala.inline
-    implicit class WeightsManifestGroupConfigMutableBuilder[Self <: WeightsManifestGroupConfig] (val x: Self) extends AnyVal {
+    extension [Self <: WeightsManifestGroupConfig](x: Self) {
       
-      @scala.inline
-      def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
       
-      @scala.inline
-      def setWeights(value: js.Array[WeightsManifestEntry]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
+      inline def setWeights(value: js.Array[WeightsManifestEntry]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightsVarargs(value: WeightsManifestEntry*): Self = StObject.set(x, "weights", js.Array(value :_*))
+      inline def setWeightsVarargs(value: WeightsManifestEntry*): Self = StObject.set(x, "weights", js.Array(value :_*))
     }
   }
 }

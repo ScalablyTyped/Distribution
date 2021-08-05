@@ -31,38 +31,28 @@ object typesCredentialsMod {
   }
   object Credentials {
     
-    @scala.inline
-    def apply(): Credentials = {
+    inline def apply(): Credentials = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Credentials]
     }
     
-    @scala.inline
-    implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
+    extension [Self <: Credentials](x: Self) {
       
-      @scala.inline
-      def setAccessKeyId(value: String): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
+      inline def setAccessKeyId(value: String): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessKeyIdUndefined: Self = StObject.set(x, "AccessKeyId", js.undefined)
+      inline def setAccessKeyIdUndefined: Self = StObject.set(x, "AccessKeyId", js.undefined)
       
-      @scala.inline
-      def setExpiration(value: Date | String | Double): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
+      inline def setExpiration(value: Date | String | Double): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
+      inline def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
       
-      @scala.inline
-      def setSecretKey(value: String): Self = StObject.set(x, "SecretKey", value.asInstanceOf[js.Any])
+      inline def setSecretKey(value: String): Self = StObject.set(x, "SecretKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretKeyUndefined: Self = StObject.set(x, "SecretKey", js.undefined)
+      inline def setSecretKeyUndefined: Self = StObject.set(x, "SecretKey", js.undefined)
       
-      @scala.inline
-      def setSessionToken(value: String): Self = StObject.set(x, "SessionToken", value.asInstanceOf[js.Any])
+      inline def setSessionToken(value: String): Self = StObject.set(x, "SessionToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionTokenUndefined: Self = StObject.set(x, "SessionToken", js.undefined)
+      inline def setSessionTokenUndefined: Self = StObject.set(x, "SessionToken", js.undefined)
     }
   }
   
@@ -78,20 +68,16 @@ object typesCredentialsMod {
   }
   object UnmarshalledCredentials {
     
-    @scala.inline
-    def apply(): UnmarshalledCredentials = {
+    inline def apply(): UnmarshalledCredentials = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledCredentials]
     }
     
-    @scala.inline
-    implicit class UnmarshalledCredentialsMutableBuilder[Self <: UnmarshalledCredentials] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledCredentials](x: Self) {
       
-      @scala.inline
-      def setExpiration(value: Date): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
+      inline def setExpiration(value: Date): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
+      inline def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
     }
   }
 }

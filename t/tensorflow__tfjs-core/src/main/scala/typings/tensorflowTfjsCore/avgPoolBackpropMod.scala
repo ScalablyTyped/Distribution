@@ -15,82 +15,70 @@ object avgPoolBackpropMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
+  inline def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
     dy: T | TensorLike,
     input: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
     strides: js.Tuple2[Double, Double],
     pad: Double
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(dy.asInstanceOf[js.Any], input.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
+  inline def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
     dy: T | TensorLike,
     input: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
     strides: js.Tuple2[Double, Double],
     pad: same_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(dy.asInstanceOf[js.Any], input.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
+  inline def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
     dy: T | TensorLike,
     input: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
     strides: js.Tuple2[Double, Double],
     pad: valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(dy.asInstanceOf[js.Any], input.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
+  inline def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
     dy: T | TensorLike,
     input: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
     strides: Double,
     pad: Double
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(dy.asInstanceOf[js.Any], input.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
+  inline def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
     dy: T | TensorLike,
     input: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
     strides: Double,
     pad: same_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(dy.asInstanceOf[js.Any], input.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
+  inline def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
     dy: T | TensorLike,
     input: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
     strides: Double,
     pad: valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(dy.asInstanceOf[js.Any], input.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
+  inline def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
     dy: T | TensorLike,
     input: T | TensorLike,
     filterSize: Double,
     strides: js.Tuple2[Double, Double],
     pad: Double
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(dy.asInstanceOf[js.Any], input.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
+  inline def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
     dy: T | TensorLike,
     input: T | TensorLike,
     filterSize: Double,
     strides: js.Tuple2[Double, Double],
     pad: same_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(dy.asInstanceOf[js.Any], input.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
+  inline def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](
     dy: T | TensorLike,
     input: T | TensorLike,
     filterSize: Double,
     strides: js.Tuple2[Double, Double],
     pad: valid_
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(dy.asInstanceOf[js.Any], input.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](dy: T | TensorLike, input: T | TensorLike, filterSize: Double, strides: Double, pad: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(dy.asInstanceOf[js.Any], input.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](dy: T | TensorLike, input: T | TensorLike, filterSize: Double, strides: Double, pad: same_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(dy.asInstanceOf[js.Any], input.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](dy: T | TensorLike, input: T | TensorLike, filterSize: Double, strides: Double, pad: valid_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(dy.asInstanceOf[js.Any], input.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](dy: T | TensorLike, input: T | TensorLike, filterSize: Double, strides: Double, pad: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(dy.asInstanceOf[js.Any], input.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](dy: T | TensorLike, input: T | TensorLike, filterSize: Double, strides: Double, pad: same_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(dy.asInstanceOf[js.Any], input.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def avgPoolBackprop[T /* <: Tensor3D | Tensor4D */](dy: T | TensorLike, input: T | TensorLike, filterSize: Double, strides: Double, pad: valid_): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPoolBackprop")(dy.asInstanceOf[js.Any], input.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
 }

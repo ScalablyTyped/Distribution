@@ -17,19 +17,15 @@ trait AnimationFitOptions extends StObject {
 }
 object AnimationFitOptions {
   
-  @scala.inline
-  def apply(eles: CollectionArgument | Selector, padding: Double): AnimationFitOptions = {
+  inline def apply(eles: CollectionArgument | Selector, padding: Double): AnimationFitOptions = {
     val __obj = js.Dynamic.literal(eles = eles.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationFitOptions]
   }
   
-  @scala.inline
-  implicit class AnimationFitOptionsMutableBuilder[Self <: AnimationFitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationFitOptions](x: Self) {
     
-    @scala.inline
-    def setEles(value: CollectionArgument | Selector): Self = StObject.set(x, "eles", value.asInstanceOf[js.Any])
+    inline def setEles(value: CollectionArgument | Selector): Self = StObject.set(x, "eles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
   }
 }

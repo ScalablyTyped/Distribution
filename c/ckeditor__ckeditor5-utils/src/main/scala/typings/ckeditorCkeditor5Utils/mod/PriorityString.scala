@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PriorityString extends StObject
 object PriorityString {
   
-  @scala.inline
-  def high: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.high = "high".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.high]
+  inline def high: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.high = "high".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.high]
   
-  @scala.inline
-  def highest: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.highest = "highest".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.highest]
+  inline def highest: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.highest = "highest".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.highest]
   
-  @scala.inline
-  def low: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.low = "low".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.low]
+  inline def low: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.low = "low".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.low]
   
-  @scala.inline
-  def lowest: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.lowest = "lowest".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.lowest]
+  inline def lowest: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.lowest = "lowest".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.lowest]
   
-  @scala.inline
-  def normal: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.normal = "normal".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.normal]
+  inline def normal: typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.normal = "normal".asInstanceOf[typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.normal]
 }

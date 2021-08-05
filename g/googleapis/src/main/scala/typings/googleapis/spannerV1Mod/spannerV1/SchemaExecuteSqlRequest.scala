@@ -89,61 +89,43 @@ trait SchemaExecuteSqlRequest extends StObject {
 }
 object SchemaExecuteSqlRequest {
   
-  @scala.inline
-  def apply(): SchemaExecuteSqlRequest = {
+  inline def apply(): SchemaExecuteSqlRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExecuteSqlRequest]
   }
   
-  @scala.inline
-  implicit class SchemaExecuteSqlRequestMutableBuilder[Self <: SchemaExecuteSqlRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExecuteSqlRequest](x: Self) {
     
-    @scala.inline
-    def setParamTypes(value: StringDictionary[SchemaType]): Self = StObject.set(x, "paramTypes", value.asInstanceOf[js.Any])
+    inline def setParamTypes(value: StringDictionary[SchemaType]): Self = StObject.set(x, "paramTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamTypesUndefined: Self = StObject.set(x, "paramTypes", js.undefined)
+    inline def setParamTypesUndefined: Self = StObject.set(x, "paramTypes", js.undefined)
     
-    @scala.inline
-    def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setPartitionToken(value: String): Self = StObject.set(x, "partitionToken", value.asInstanceOf[js.Any])
+    inline def setPartitionToken(value: String): Self = StObject.set(x, "partitionToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionTokenUndefined: Self = StObject.set(x, "partitionToken", js.undefined)
+    inline def setPartitionTokenUndefined: Self = StObject.set(x, "partitionToken", js.undefined)
     
-    @scala.inline
-    def setQueryMode(value: String): Self = StObject.set(x, "queryMode", value.asInstanceOf[js.Any])
+    inline def setQueryMode(value: String): Self = StObject.set(x, "queryMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryModeUndefined: Self = StObject.set(x, "queryMode", js.undefined)
+    inline def setQueryModeUndefined: Self = StObject.set(x, "queryMode", js.undefined)
     
-    @scala.inline
-    def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
+    inline def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
+    inline def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
     
-    @scala.inline
-    def setSeqno(value: String): Self = StObject.set(x, "seqno", value.asInstanceOf[js.Any])
+    inline def setSeqno(value: String): Self = StObject.set(x, "seqno", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeqnoUndefined: Self = StObject.set(x, "seqno", js.undefined)
+    inline def setSeqnoUndefined: Self = StObject.set(x, "seqno", js.undefined)
     
-    @scala.inline
-    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
+    inline def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
     
-    @scala.inline
-    def setTransaction(value: SchemaTransactionSelector): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: SchemaTransactionSelector): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

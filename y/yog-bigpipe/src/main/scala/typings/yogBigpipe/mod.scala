@@ -17,10 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(option: BigPipeOption): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(option.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(option: BigPipeOption): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(option.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("yog-bigpipe", JSImport.Namespace)
   @js.native
@@ -148,14 +146,11 @@ object mod {
     trait mode extends StObject
     object mode {
       
-      @scala.inline
-      def async: typings.yogBigpipe.yogBigpipeStrings.async = "async".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.async]
+      inline def async: typings.yogBigpipe.yogBigpipeStrings.async = "async".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.async]
       
-      @scala.inline
-      def pipeline: typings.yogBigpipe.yogBigpipeStrings.pipeline = "pipeline".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.pipeline]
+      inline def pipeline: typings.yogBigpipe.yogBigpipeStrings.pipeline = "pipeline".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.pipeline]
       
-      @scala.inline
-      def quickling: typings.yogBigpipe.yogBigpipeStrings.quickling = "quickling".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.quickling]
+      inline def quickling: typings.yogBigpipe.yogBigpipeStrings.quickling = "quickling".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.quickling]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -167,17 +162,13 @@ object mod {
     trait status extends StObject
     object status {
       
-      @scala.inline
-      def failed: typings.yogBigpipe.yogBigpipeStrings.failed = "failed".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.failed]
+      inline def failed: typings.yogBigpipe.yogBigpipeStrings.failed = "failed".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.failed]
       
-      @scala.inline
-      def fulfilled: typings.yogBigpipe.yogBigpipeStrings.fulfilled = "fulfilled".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.fulfilled]
+      inline def fulfilled: typings.yogBigpipe.yogBigpipeStrings.fulfilled = "fulfilled".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.fulfilled]
       
-      @scala.inline
-      def pending: typings.yogBigpipe.yogBigpipeStrings.pending = "pending".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.pending]
+      inline def pending: typings.yogBigpipe.yogBigpipeStrings.pending = "pending".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.pending]
       
-      @scala.inline
-      def rendering: typings.yogBigpipe.yogBigpipeStrings.rendering = "rendering".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.rendering]
+      inline def rendering: typings.yogBigpipe.yogBigpipeStrings.rendering = "rendering".asInstanceOf[typings.yogBigpipe.yogBigpipeStrings.rendering]
     }
   }
   
@@ -191,29 +182,22 @@ object mod {
   }
   object AddPageletConfig {
     
-    @scala.inline
-    def apply(id: String): AddPageletConfig = {
+    inline def apply(id: String): AddPageletConfig = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddPageletConfig]
     }
     
-    @scala.inline
-    implicit class AddPageletConfigMutableBuilder[Self <: AddPageletConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AddPageletConfig](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
       
-      @scala.inline
-      def setMode(value: mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     }
   }
   
@@ -225,26 +209,20 @@ object mod {
   }
   object BigPipeOption {
     
-    @scala.inline
-    def apply(): BigPipeOption = {
+    inline def apply(): BigPipeOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BigPipeOption]
     }
     
-    @scala.inline
-    implicit class BigPipeOptionMutableBuilder[Self <: BigPipeOption] (val x: Self) extends AnyVal {
+    extension [Self <: BigPipeOption](x: Self) {
       
-      @scala.inline
-      def setSkipAnalysis(value: Boolean): Self = StObject.set(x, "skipAnalysis", value.asInstanceOf[js.Any])
+      inline def setSkipAnalysis(value: Boolean): Self = StObject.set(x, "skipAnalysis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipAnalysisUndefined: Self = StObject.set(x, "skipAnalysis", js.undefined)
+      inline def setSkipAnalysisUndefined: Self = StObject.set(x, "skipAnalysis", js.undefined)
       
-      @scala.inline
-      def setTpl(value: Default): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+      inline def setTpl(value: Default): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
+      inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
     }
   }
   
@@ -273,8 +251,7 @@ object mod {
   }
   object PageletData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       container: String,
       css: js.Array[String],
       html: String,
@@ -289,44 +266,31 @@ object mod {
       __obj.asInstanceOf[PageletData]
     }
     
-    @scala.inline
-    implicit class PageletDataMutableBuilder[Self <: PageletData] (val x: Self) extends AnyVal {
+    extension [Self <: PageletData](x: Self) {
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCss(value: js.Array[String]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: js.Array[String]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value :_*))
+      inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value :_*))
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJs_(value: js.Array[String]): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
+      inline def setJs_(value: js.Array[String]): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJs_Varargs(value: String*): Self = StObject.set(x, "js", js.Array(value :_*))
+      inline def setJs_Varargs(value: String*): Self = StObject.set(x, "js", js.Array(value :_*))
       
-      @scala.inline
-      def setReqID(value: String): Self = StObject.set(x, "reqID", value.asInstanceOf[js.Any])
+      inline def setReqID(value: String): Self = StObject.set(x, "reqID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScripts(value: js.Array[String]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+      inline def setScripts(value: js.Array[String]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptsVarargs(value: String*): Self = StObject.set(x, "scripts", js.Array(value :_*))
+      inline def setScriptsVarargs(value: String*): Self = StObject.set(x, "scripts", js.Array(value :_*))
       
-      @scala.inline
-      def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
     }
   }
   
@@ -352,59 +316,42 @@ object mod {
   }
   object PageletOption {
     
-    @scala.inline
-    def apply(id: String, reqID: String, skipAnalysis: Boolean): PageletOption = {
+    inline def apply(id: String, reqID: String, skipAnalysis: Boolean): PageletOption = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], reqID = reqID.asInstanceOf[js.Any], skipAnalysis = skipAnalysis.asInstanceOf[js.Any])
       __obj.asInstanceOf[PageletOption]
     }
     
-    @scala.inline
-    implicit class PageletOptionMutableBuilder[Self <: PageletOption] (val x: Self) extends AnyVal {
+    extension [Self <: PageletOption](x: Self) {
       
-      @scala.inline
-      def setCompiled(value: Boolean): Self = StObject.set(x, "compiled", value.asInstanceOf[js.Any])
+      inline def setCompiled(value: Boolean): Self = StObject.set(x, "compiled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompiledUndefined: Self = StObject.set(x, "compiled", js.undefined)
+      inline def setCompiledUndefined: Self = StObject.set(x, "compiled", js.undefined)
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
+      inline def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForUndefined: Self = StObject.set(x, "for", js.undefined)
+      inline def setForUndefined: Self = StObject.set(x, "for", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
       
-      @scala.inline
-      def setLocals(value: js.Object): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+      inline def setLocals(value: js.Object): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
+      inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
       
-      @scala.inline
-      def setMode(value: mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setReqID(value: String): Self = StObject.set(x, "reqID", value.asInstanceOf[js.Any])
+      inline def setReqID(value: String): Self = StObject.set(x, "reqID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipAnalysis(value: Boolean): Self = StObject.set(x, "skipAnalysis", value.asInstanceOf[js.Any])
+      inline def setSkipAnalysis(value: Boolean): Self = StObject.set(x, "skipAnalysis", value.asInstanceOf[js.Any])
     }
   }
 }

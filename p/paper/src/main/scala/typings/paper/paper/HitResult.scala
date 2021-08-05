@@ -55,38 +55,28 @@ trait HitResult extends StObject {
 }
 object HitResult {
   
-  @scala.inline
-  def apply(item: Item, location: CurveLocation, name: String, point: Point, segment: Segment, `type`: String): HitResult = {
+  inline def apply(item: Item, location: CurveLocation, name: String, point: Point, segment: Segment, `type`: String): HitResult = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], segment = segment.asInstanceOf[js.Any], color = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HitResult]
   }
   
-  @scala.inline
-  implicit class HitResultMutableBuilder[Self <: HitResult] (val x: Self) extends AnyVal {
+  extension [Self <: HitResult](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorNull: Self = StObject.set(x, "color", null)
+    inline def setColorNull: Self = StObject.set(x, "color", null)
     
-    @scala.inline
-    def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: CurveLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: CurveLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegment(value: Segment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+    inline def setSegment(value: Segment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

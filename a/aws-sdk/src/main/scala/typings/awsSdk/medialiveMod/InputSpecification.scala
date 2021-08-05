@@ -23,31 +23,23 @@ trait InputSpecification extends StObject {
 }
 object InputSpecification {
   
-  @scala.inline
-  def apply(): InputSpecification = {
+  inline def apply(): InputSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputSpecification]
   }
   
-  @scala.inline
-  implicit class InputSpecificationMutableBuilder[Self <: InputSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: InputSpecification](x: Self) {
     
-    @scala.inline
-    def setCodec(value: InputCodec): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: InputCodec): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
+    inline def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
     
-    @scala.inline
-    def setMaximumBitrate(value: InputMaximumBitrate): Self = StObject.set(x, "MaximumBitrate", value.asInstanceOf[js.Any])
+    inline def setMaximumBitrate(value: InputMaximumBitrate): Self = StObject.set(x, "MaximumBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumBitrateUndefined: Self = StObject.set(x, "MaximumBitrate", js.undefined)
+    inline def setMaximumBitrateUndefined: Self = StObject.set(x, "MaximumBitrate", js.undefined)
     
-    @scala.inline
-    def setResolution(value: InputResolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: InputResolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
+    inline def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
   }
 }

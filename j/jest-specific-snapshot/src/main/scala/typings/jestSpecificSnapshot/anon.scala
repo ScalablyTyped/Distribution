@@ -14,20 +14,16 @@ object anon {
   }
   object Message {
     
-    @scala.inline
-    def apply(message: () => String, pass: Boolean): Message = {
+    inline def apply(message: () => String, pass: Boolean): Message = {
       val __obj = js.Dynamic.literal(message = js.Any.fromFunction0(message), pass = pass.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setMessage(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
+      inline def setMessage(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
     }
   }
 }

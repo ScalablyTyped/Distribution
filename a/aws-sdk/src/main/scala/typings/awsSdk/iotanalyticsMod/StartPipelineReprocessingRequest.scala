@@ -23,28 +23,21 @@ trait StartPipelineReprocessingRequest extends StObject {
 }
 object StartPipelineReprocessingRequest {
   
-  @scala.inline
-  def apply(pipelineName: PipelineName): StartPipelineReprocessingRequest = {
+  inline def apply(pipelineName: PipelineName): StartPipelineReprocessingRequest = {
     val __obj = js.Dynamic.literal(pipelineName = pipelineName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartPipelineReprocessingRequest]
   }
   
-  @scala.inline
-  implicit class StartPipelineReprocessingRequestMutableBuilder[Self <: StartPipelineReprocessingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartPipelineReprocessingRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: EndTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: EndTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: StartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: StartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

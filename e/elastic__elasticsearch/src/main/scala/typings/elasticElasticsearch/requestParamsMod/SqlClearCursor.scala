@@ -12,16 +12,13 @@ trait SqlClearCursor[T]
 }
 object SqlClearCursor {
   
-  @scala.inline
-  def apply[T](body: T): SqlClearCursor[T] = {
+  inline def apply[T](body: T): SqlClearCursor[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlClearCursor[T]]
   }
   
-  @scala.inline
-  implicit class SqlClearCursorMutableBuilder[Self <: SqlClearCursor[?], T] (val x: Self & SqlClearCursor[T]) extends AnyVal {
+  extension [Self <: SqlClearCursor[?], T](x: Self & SqlClearCursor[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

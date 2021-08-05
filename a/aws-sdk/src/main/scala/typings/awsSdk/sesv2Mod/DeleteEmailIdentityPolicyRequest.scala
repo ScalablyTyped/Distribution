@@ -18,19 +18,15 @@ trait DeleteEmailIdentityPolicyRequest extends StObject {
 }
 object DeleteEmailIdentityPolicyRequest {
   
-  @scala.inline
-  def apply(EmailIdentity: Identity, PolicyName: PolicyName): DeleteEmailIdentityPolicyRequest = {
+  inline def apply(EmailIdentity: Identity, PolicyName: PolicyName): DeleteEmailIdentityPolicyRequest = {
     val __obj = js.Dynamic.literal(EmailIdentity = EmailIdentity.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEmailIdentityPolicyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteEmailIdentityPolicyRequestMutableBuilder[Self <: DeleteEmailIdentityPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEmailIdentityPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
+    inline def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
   }
 }

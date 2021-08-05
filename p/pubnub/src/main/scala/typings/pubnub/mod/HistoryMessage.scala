@@ -14,28 +14,21 @@ trait HistoryMessage extends StObject {
 }
 object HistoryMessage {
   
-  @scala.inline
-  def apply(entry: js.Any): HistoryMessage = {
+  inline def apply(entry: js.Any): HistoryMessage = {
     val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryMessage]
   }
   
-  @scala.inline
-  implicit class HistoryMessageMutableBuilder[Self <: HistoryMessage] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryMessage](x: Self) {
     
-    @scala.inline
-    def setEntry(value: js.Any): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    inline def setEntry(value: js.Any): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    @scala.inline
-    def setTimetoken(value: String | Double): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
+    inline def setTimetoken(value: String | Double): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimetokenUndefined: Self = StObject.set(x, "timetoken", js.undefined)
+    inline def setTimetokenUndefined: Self = StObject.set(x, "timetoken", js.undefined)
   }
 }

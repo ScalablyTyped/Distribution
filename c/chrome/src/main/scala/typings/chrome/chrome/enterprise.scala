@@ -42,29 +42,22 @@ object enterprise {
     }
     object NetworkDetails {
       
-      @scala.inline
-      def apply(macAddress: String): NetworkDetails = {
+      inline def apply(macAddress: String): NetworkDetails = {
         val __obj = js.Dynamic.literal(macAddress = macAddress.asInstanceOf[js.Any])
         __obj.asInstanceOf[NetworkDetails]
       }
       
-      @scala.inline
-      implicit class NetworkDetailsMutableBuilder[Self <: NetworkDetails] (val x: Self) extends AnyVal {
+      extension [Self <: NetworkDetails](x: Self) {
         
-        @scala.inline
-        def setIpv4(value: String): Self = StObject.set(x, "ipv4", value.asInstanceOf[js.Any])
+        inline def setIpv4(value: String): Self = StObject.set(x, "ipv4", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIpv4Undefined: Self = StObject.set(x, "ipv4", js.undefined)
+        inline def setIpv4Undefined: Self = StObject.set(x, "ipv4", js.undefined)
         
-        @scala.inline
-        def setIpv6(value: String): Self = StObject.set(x, "ipv6", value.asInstanceOf[js.Any])
+        inline def setIpv6(value: String): Self = StObject.set(x, "ipv6", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIpv6Undefined: Self = StObject.set(x, "ipv6", js.undefined)
+        inline def setIpv6Undefined: Self = StObject.set(x, "ipv6", js.undefined)
         
-        @scala.inline
-        def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
+        inline def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -98,20 +91,16 @@ object enterprise {
     }
     object Token {
       
-      @scala.inline
-      def apply(id: String, subtleCrypto: SubtleCrypto): Token = {
+      inline def apply(id: String, subtleCrypto: SubtleCrypto): Token = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], subtleCrypto = subtleCrypto.asInstanceOf[js.Any])
         __obj.asInstanceOf[Token]
       }
       
-      @scala.inline
-      implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+      extension [Self <: Token](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubtleCrypto(value: SubtleCrypto): Self = StObject.set(x, "subtleCrypto", value.asInstanceOf[js.Any])
+        inline def setSubtleCrypto(value: SubtleCrypto): Self = StObject.set(x, "subtleCrypto", value.asInstanceOf[js.Any])
       }
     }
   }

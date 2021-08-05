@@ -21,8 +21,7 @@ trait GridProperties
 }
 object GridProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LineCap: LineCap,
     LineColor: Color,
     LineDash: LineDash,
@@ -45,10 +44,8 @@ object GridProperties {
     __obj.asInstanceOf[GridProperties]
   }
   
-  @scala.inline
-  implicit class GridPropertiesMutableBuilder[Self <: GridProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GridProperties](x: Self) {
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "Show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "Show", value.asInstanceOf[js.Any])
   }
 }

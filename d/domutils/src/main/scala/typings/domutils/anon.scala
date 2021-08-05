@@ -14,26 +14,20 @@ object anon {
   }
   object DecodeEntities {
     
-    @scala.inline
-    def apply(): DecodeEntities = {
+    inline def apply(): DecodeEntities = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DecodeEntities]
     }
     
-    @scala.inline
-    implicit class DecodeEntitiesMutableBuilder[Self <: DecodeEntities] (val x: Self) extends AnyVal {
+    extension [Self <: DecodeEntities](x: Self) {
       
-      @scala.inline
-      def setDecodeEntities(value: Boolean): Self = StObject.set(x, "decodeEntities", value.asInstanceOf[js.Any])
+      inline def setDecodeEntities(value: Boolean): Self = StObject.set(x, "decodeEntities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeEntitiesUndefined: Self = StObject.set(x, "decodeEntities", js.undefined)
+      inline def setDecodeEntitiesUndefined: Self = StObject.set(x, "decodeEntities", js.undefined)
       
-      @scala.inline
-      def setXmlMode(value: Boolean): Self = StObject.set(x, "xmlMode", value.asInstanceOf[js.Any])
+      inline def setXmlMode(value: Boolean): Self = StObject.set(x, "xmlMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmlModeUndefined: Self = StObject.set(x, "xmlMode", js.undefined)
+      inline def setXmlModeUndefined: Self = StObject.set(x, "xmlMode", js.undefined)
     }
   }
 }

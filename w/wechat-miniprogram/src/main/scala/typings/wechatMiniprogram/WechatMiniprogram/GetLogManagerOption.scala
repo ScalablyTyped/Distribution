@@ -13,19 +13,15 @@ trait GetLogManagerOption extends StObject {
 }
 object GetLogManagerOption {
   
-  @scala.inline
-  def apply(): GetLogManagerOption = {
+  inline def apply(): GetLogManagerOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLogManagerOption]
   }
   
-  @scala.inline
-  implicit class GetLogManagerOptionMutableBuilder[Self <: GetLogManagerOption] (val x: Self) extends AnyVal {
+  extension [Self <: GetLogManagerOption](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

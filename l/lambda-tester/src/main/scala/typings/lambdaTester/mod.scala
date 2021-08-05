@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: Handler[js.Any, js.Any] */](handler: T): LambdaTester[T] = ^.asInstanceOf[js.Dynamic].apply(handler.asInstanceOf[js.Any]).asInstanceOf[LambdaTester[T]]
+  inline def apply[T /* <: Handler[js.Any, js.Any] */](handler: T): LambdaTester[T] = ^.asInstanceOf[js.Dynamic].apply(handler.asInstanceOf[js.Any]).asInstanceOf[LambdaTester[T]]
   
   @JSImport("lambda-tester", JSImport.Namespace)
   @js.native

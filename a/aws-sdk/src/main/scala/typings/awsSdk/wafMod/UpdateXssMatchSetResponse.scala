@@ -13,19 +13,15 @@ trait UpdateXssMatchSetResponse extends StObject {
 }
 object UpdateXssMatchSetResponse {
   
-  @scala.inline
-  def apply(): UpdateXssMatchSetResponse = {
+  inline def apply(): UpdateXssMatchSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateXssMatchSetResponse]
   }
   
-  @scala.inline
-  implicit class UpdateXssMatchSetResponseMutableBuilder[Self <: UpdateXssMatchSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateXssMatchSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
   }
 }

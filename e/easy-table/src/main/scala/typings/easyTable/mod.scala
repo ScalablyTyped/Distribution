@@ -23,8 +23,7 @@ object mod {
   @JSImport("easy-table", "aggr")
   @js.native
   def aggr: Aggregators = js.native
-  @scala.inline
-  def aggr_=(x: Aggregators): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aggr")(x.asInstanceOf[js.Any])
+  inline def aggr_=(x: Aggregators): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aggr")(x.asInstanceOf[js.Any])
   
   /**
     * Create a printer which right aligns the content by padding with `ch` on the left
@@ -33,37 +32,24 @@ object mod {
     * @returns {Function}
     */
   /* static member */
-  @scala.inline
-  def leftPadder[T](ch: String): CellPrinter[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftPadder")(ch.asInstanceOf[js.Any]).asInstanceOf[CellPrinter[T]]
+  inline def leftPadder[T](ch: String): CellPrinter[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftPadder")(ch.asInstanceOf[js.Any]).asInstanceOf[CellPrinter[T]]
   
   /**
     * Same as `Table.print()` but yields the result to `console.log()`
     */
   /* static member */
-  @scala.inline
-  def log[T](obj: T): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def log[T](obj: T, format: Unit, cb: TablePostProcessing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def log[T](obj: T, format: FormatFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def log[T](obj: T, format: FormatFunction[T], cb: TablePostProcessing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def log[T](obj: T, format: FormatObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def log[T](obj: T, format: FormatObject, cb: TablePostProcessing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def log[T](obj: js.Array[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def log[T](obj: js.Array[T], format: Unit, cb: TablePostProcessing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def log[T](obj: js.Array[T], format: FormatFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def log[T](obj: js.Array[T], format: FormatFunction[T], cb: TablePostProcessing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def log[T](obj: js.Array[T], format: FormatObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def log[T](obj: js.Array[T], format: FormatObject, cb: TablePostProcessing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def log[T](obj: T): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def log[T](obj: T, format: Unit, cb: TablePostProcessing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def log[T](obj: T, format: FormatFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def log[T](obj: T, format: FormatFunction[T], cb: TablePostProcessing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def log[T](obj: T, format: FormatObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def log[T](obj: T, format: FormatObject, cb: TablePostProcessing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def log[T](obj: js.Array[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def log[T](obj: js.Array[T], format: Unit, cb: TablePostProcessing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def log[T](obj: js.Array[T], format: FormatFunction[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def log[T](obj: js.Array[T], format: FormatFunction[T], cb: TablePostProcessing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def log[T](obj: js.Array[T], format: FormatObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def log[T](obj: js.Array[T], format: FormatObject, cb: TablePostProcessing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   // public static padRight: CellPrinter<string>;
   /**
@@ -75,17 +61,14 @@ object mod {
     * @returns {Function}
     */
   /* static member */
-  @scala.inline
-  def number(): CellPrinter[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("number")().asInstanceOf[CellPrinter[Double]]
-  @scala.inline
-  def number(digits: Double): CellPrinter[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(digits.asInstanceOf[js.Any]).asInstanceOf[CellPrinter[Double]]
+  inline def number(): CellPrinter[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("number")().asInstanceOf[CellPrinter[Double]]
+  inline def number(digits: Double): CellPrinter[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(digits.asInstanceOf[js.Any]).asInstanceOf[CellPrinter[Double]]
   
   /* static member */
   @JSImport("easy-table", "padLeft")
   @js.native
   def padLeft: CellPrinter[String] = js.native
-  @scala.inline
-  def padLeft_=(x: CellPrinter[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("padLeft")(x.asInstanceOf[js.Any])
+  inline def padLeft_=(x: CellPrinter[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("padLeft")(x.asInstanceOf[js.Any])
   
   /**
     * Print the array or object
@@ -96,30 +79,18 @@ object mod {
     * @returns {String}
     */
   /* static member */
-  @scala.inline
-  def print[T](obj: T): String = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def print[T](obj: T, format: Unit, cb: TablePostProcessing): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def print[T](obj: T, format: FormatFunction[T]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def print[T](obj: T, format: FormatFunction[T], cb: TablePostProcessing): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def print[T](obj: T, format: FormatObject): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def print[T](obj: T, format: FormatObject, cb: TablePostProcessing): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def print[T](obj: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def print[T](obj: js.Array[T], format: Unit, cb: TablePostProcessing): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def print[T](obj: js.Array[T], format: FormatFunction[T]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def print[T](obj: js.Array[T], format: FormatFunction[T], cb: TablePostProcessing): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def print[T](obj: js.Array[T], format: FormatObject): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def print[T](obj: js.Array[T], format: FormatObject, cb: TablePostProcessing): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def print[T](obj: T): String = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def print[T](obj: T, format: Unit, cb: TablePostProcessing): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def print[T](obj: T, format: FormatFunction[T]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def print[T](obj: T, format: FormatFunction[T], cb: TablePostProcessing): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def print[T](obj: T, format: FormatObject): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def print[T](obj: T, format: FormatObject, cb: TablePostProcessing): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def print[T](obj: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def print[T](obj: js.Array[T], format: Unit, cb: TablePostProcessing): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def print[T](obj: js.Array[T], format: FormatFunction[T]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def print[T](obj: js.Array[T], format: FormatFunction[T], cb: TablePostProcessing): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def print[T](obj: js.Array[T], format: FormatObject): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def print[T](obj: js.Array[T], format: FormatObject, cb: TablePostProcessing): String = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(obj.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Create a printer which pads with `ch` on the right
@@ -128,15 +99,13 @@ object mod {
     * @returns {Function}
     */
   /* static member */
-  @scala.inline
-  def rightPadder[T](ch: String): CellPrinter[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightPadder")(ch.asInstanceOf[js.Any]).asInstanceOf[CellPrinter[T]]
+  inline def rightPadder[T](ch: String): CellPrinter[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightPadder")(ch.asInstanceOf[js.Any]).asInstanceOf[CellPrinter[T]]
   
   /**
     * Default printer
     */
   /* static member */
-  @scala.inline
-  def string(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def string(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait Aggregators extends StObject {
     
@@ -162,23 +131,18 @@ object mod {
   }
   object Aggregators {
     
-    @scala.inline
-    def apply(avg: js.Any, printer: (String, CellPrinter[js.Any]) => CellPrinter[js.Any], sum: js.Any): Aggregators = {
+    inline def apply(avg: js.Any, printer: (String, CellPrinter[js.Any]) => CellPrinter[js.Any], sum: js.Any): Aggregators = {
       val __obj = js.Dynamic.literal(avg = avg.asInstanceOf[js.Any], printer = js.Any.fromFunction2(printer), sum = sum.asInstanceOf[js.Any])
       __obj.asInstanceOf[Aggregators]
     }
     
-    @scala.inline
-    implicit class AggregatorsMutableBuilder[Self <: Aggregators] (val x: Self) extends AnyVal {
+    extension [Self <: Aggregators](x: Self) {
       
-      @scala.inline
-      def setAvg(value: js.Any): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
+      inline def setAvg(value: js.Any): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrinter(value: (String, CellPrinter[js.Any]) => CellPrinter[js.Any]): Self = StObject.set(x, "printer", js.Any.fromFunction2(value))
+      inline def setPrinter(value: (String, CellPrinter[js.Any]) => CellPrinter[js.Any]): Self = StObject.set(x, "printer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSum(value: js.Any): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+      inline def setSum(value: js.Any): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     }
   }
   
@@ -192,26 +156,20 @@ object mod {
   }
   object ColumnFormat {
     
-    @scala.inline
-    def apply[T](): ColumnFormat[T] = {
+    inline def apply[T](): ColumnFormat[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColumnFormat[T]]
     }
     
-    @scala.inline
-    implicit class ColumnFormatMutableBuilder[Self <: ColumnFormat[?], T] (val x: Self & ColumnFormat[T]) extends AnyVal {
+    extension [Self <: ColumnFormat[?], T](x: Self & ColumnFormat[T]) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPrinter(value: (T, /* width */ Double) => String): Self = StObject.set(x, "printer", js.Any.fromFunction2(value))
+      inline def setPrinter(value: (T, /* width */ Double) => String): Self = StObject.set(x, "printer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrinterUndefined: Self = StObject.set(x, "printer", js.undefined)
+      inline def setPrinterUndefined: Self = StObject.set(x, "printer", js.undefined)
     }
   }
   
@@ -338,26 +296,20 @@ object mod {
   }
   object PrintColumnOptions {
     
-    @scala.inline
-    def apply[T](): PrintColumnOptions[T] = {
+    inline def apply[T](): PrintColumnOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PrintColumnOptions[T]]
     }
     
-    @scala.inline
-    implicit class PrintColumnOptionsMutableBuilder[Self <: PrintColumnOptions[?], T] (val x: Self & PrintColumnOptions[T]) extends AnyVal {
+    extension [Self <: PrintColumnOptions[?], T](x: Self & PrintColumnOptions[T]) {
       
-      @scala.inline
-      def setNamePrinter(value: (T, /* width */ Double) => String): Self = StObject.set(x, "namePrinter", js.Any.fromFunction2(value))
+      inline def setNamePrinter(value: (T, /* width */ Double) => String): Self = StObject.set(x, "namePrinter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNamePrinterUndefined: Self = StObject.set(x, "namePrinter", js.undefined)
+      inline def setNamePrinterUndefined: Self = StObject.set(x, "namePrinter", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     }
   }
   
@@ -384,32 +336,24 @@ object mod {
   }
   object TotalOptions {
     
-    @scala.inline
-    def apply[T](): TotalOptions[T] = {
+    inline def apply[T](): TotalOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TotalOptions[T]]
     }
     
-    @scala.inline
-    implicit class TotalOptionsMutableBuilder[Self <: TotalOptions[?], T] (val x: Self & TotalOptions[T]) extends AnyVal {
+    extension [Self <: TotalOptions[?], T](x: Self & TotalOptions[T]) {
       
-      @scala.inline
-      def setInit(value: T): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+      inline def setInit(value: T): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      @scala.inline
-      def setPrinter(value: (T, /* width */ Double) => String): Self = StObject.set(x, "printer", js.Any.fromFunction2(value))
+      inline def setPrinter(value: (T, /* width */ Double) => String): Self = StObject.set(x, "printer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrinterUndefined: Self = StObject.set(x, "printer", js.undefined)
+      inline def setPrinterUndefined: Self = StObject.set(x, "printer", js.undefined)
       
-      @scala.inline
-      def setReduce(value: (T, T, /* idx */ Double, /* length */ Double) => T): Self = StObject.set(x, "reduce", js.Any.fromFunction4(value))
+      inline def setReduce(value: (T, T, /* idx */ Double, /* length */ Double) => T): Self = StObject.set(x, "reduce", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setReduceUndefined: Self = StObject.set(x, "reduce", js.undefined)
+      inline def setReduceUndefined: Self = StObject.set(x, "reduce", js.undefined)
     }
   }
 }

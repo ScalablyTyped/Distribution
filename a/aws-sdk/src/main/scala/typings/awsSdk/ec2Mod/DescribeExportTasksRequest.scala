@@ -18,31 +18,23 @@ trait DescribeExportTasksRequest extends StObject {
 }
 object DescribeExportTasksRequest {
   
-  @scala.inline
-  def apply(): DescribeExportTasksRequest = {
+  inline def apply(): DescribeExportTasksRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeExportTasksRequest]
   }
   
-  @scala.inline
-  implicit class DescribeExportTasksRequestMutableBuilder[Self <: DescribeExportTasksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeExportTasksRequest](x: Self) {
     
-    @scala.inline
-    def setExportTaskIds(value: ExportTaskIdStringList): Self = StObject.set(x, "ExportTaskIds", value.asInstanceOf[js.Any])
+    inline def setExportTaskIds(value: ExportTaskIdStringList): Self = StObject.set(x, "ExportTaskIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportTaskIdsUndefined: Self = StObject.set(x, "ExportTaskIds", js.undefined)
+    inline def setExportTaskIdsUndefined: Self = StObject.set(x, "ExportTaskIds", js.undefined)
     
-    @scala.inline
-    def setExportTaskIdsVarargs(value: ExportTaskId*): Self = StObject.set(x, "ExportTaskIds", js.Array(value :_*))
+    inline def setExportTaskIdsVarargs(value: ExportTaskId*): Self = StObject.set(x, "ExportTaskIds", js.Array(value :_*))
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
   }
 }

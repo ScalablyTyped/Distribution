@@ -10,8 +10,6 @@ object pathToolsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def urlToList(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlToList")().asInstanceOf[js.Array[String]]
-  @scala.inline
-  def urlToList(url: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlToList")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def urlToList(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlToList")().asInstanceOf[js.Array[String]]
+  inline def urlToList(url: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlToList")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

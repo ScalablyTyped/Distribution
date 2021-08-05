@@ -31,14 +31,12 @@ object searchBarIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/search-bar/index.native", "default.contextTypes")
     @js.native
     def contextTypes: AntLocale = js.native
-    @scala.inline
-    def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/search-bar/index.native", "default.defaultProps")
     @js.native
     def defaultProps: OnBlur = js.native
-    @scala.inline
-    def defaultProps_=(x: OnBlur): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: OnBlur): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -76,38 +74,28 @@ object searchBarIndexNativeMod {
   }
   object SearchBarNativeProps {
     
-    @scala.inline
-    def apply(styles: ISearchBarStyle): SearchBarNativeProps = {
+    inline def apply(styles: ISearchBarStyle): SearchBarNativeProps = {
       val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchBarNativeProps]
     }
     
-    @scala.inline
-    implicit class SearchBarNativePropsMutableBuilder[Self <: SearchBarNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: SearchBarNativeProps](x: Self) {
       
-      @scala.inline
-      def setOnChangeText(value: /* text */ String => Unit): Self = StObject.set(x, "onChangeText", js.Any.fromFunction1(value))
+      inline def setOnChangeText(value: /* text */ String => Unit): Self = StObject.set(x, "onChangeText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeTextUndefined: Self = StObject.set(x, "onChangeText", js.undefined)
+      inline def setOnChangeTextUndefined: Self = StObject.set(x, "onChangeText", js.undefined)
       
-      @scala.inline
-      def setOnSubmitEditing(value: /* event */ NativeEvent => Unit): Self = StObject.set(x, "onSubmitEditing", js.Any.fromFunction1(value))
+      inline def setOnSubmitEditing(value: /* event */ NativeEvent => Unit): Self = StObject.set(x, "onSubmitEditing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSubmitEditingUndefined: Self = StObject.set(x, "onSubmitEditing", js.undefined)
+      inline def setOnSubmitEditingUndefined: Self = StObject.set(x, "onSubmitEditing", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setStyles(value: ISearchBarStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: ISearchBarStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     }
   }
 }

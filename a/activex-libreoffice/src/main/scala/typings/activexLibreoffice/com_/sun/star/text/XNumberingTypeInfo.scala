@@ -43,8 +43,7 @@ trait XNumberingTypeInfo
 }
 object XNumberingTypeInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SupportedNumberingTypes: SafeArray[Double],
     acquire: () => Unit,
     getNumberingIdentifier: Double => String,
@@ -58,22 +57,16 @@ object XNumberingTypeInfo {
     __obj.asInstanceOf[XNumberingTypeInfo]
   }
   
-  @scala.inline
-  implicit class XNumberingTypeInfoMutableBuilder[Self <: XNumberingTypeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: XNumberingTypeInfo](x: Self) {
     
-    @scala.inline
-    def setGetNumberingIdentifier(value: Double => String): Self = StObject.set(x, "getNumberingIdentifier", js.Any.fromFunction1(value))
+    inline def setGetNumberingIdentifier(value: Double => String): Self = StObject.set(x, "getNumberingIdentifier", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNumberingType(value: String => Double): Self = StObject.set(x, "getNumberingType", js.Any.fromFunction1(value))
+    inline def setGetNumberingType(value: String => Double): Self = StObject.set(x, "getNumberingType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSupportedNumberingTypes(value: () => SafeArray[Double]): Self = StObject.set(x, "getSupportedNumberingTypes", js.Any.fromFunction0(value))
+    inline def setGetSupportedNumberingTypes(value: () => SafeArray[Double]): Self = StObject.set(x, "getSupportedNumberingTypes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasNumberingType(value: String => Boolean): Self = StObject.set(x, "hasNumberingType", js.Any.fromFunction1(value))
+    inline def setHasNumberingType(value: String => Boolean): Self = StObject.set(x, "hasNumberingType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSupportedNumberingTypes(value: SafeArray[Double]): Self = StObject.set(x, "SupportedNumberingTypes", value.asInstanceOf[js.Any])
+    inline def setSupportedNumberingTypes(value: SafeArray[Double]): Self = StObject.set(x, "SupportedNumberingTypes", value.asInstanceOf[js.Any])
   }
 }

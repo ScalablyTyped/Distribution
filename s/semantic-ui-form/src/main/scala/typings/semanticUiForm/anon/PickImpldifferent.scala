@@ -11,16 +11,13 @@ trait PickImpldifferent extends StObject {
 }
 object PickImpldifferent {
   
-  @scala.inline
-  def apply(different: String): PickImpldifferent = {
+  inline def apply(different: String): PickImpldifferent = {
     val __obj = js.Dynamic.literal(different = different.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldifferent]
   }
   
-  @scala.inline
-  implicit class PickImpldifferentMutableBuilder[Self <: PickImpldifferent] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldifferent](x: Self) {
     
-    @scala.inline
-    def setDifferent(value: String): Self = StObject.set(x, "different", value.asInstanceOf[js.Any])
+    inline def setDifferent(value: String): Self = StObject.set(x, "different", value.asInstanceOf[js.Any])
   }
 }

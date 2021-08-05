@@ -18,19 +18,15 @@ trait DeletePendingAggregationRequestRequest extends StObject {
 }
 object DeletePendingAggregationRequestRequest {
   
-  @scala.inline
-  def apply(RequesterAccountId: AccountId, RequesterAwsRegion: AwsRegion): DeletePendingAggregationRequestRequest = {
+  inline def apply(RequesterAccountId: AccountId, RequesterAwsRegion: AwsRegion): DeletePendingAggregationRequestRequest = {
     val __obj = js.Dynamic.literal(RequesterAccountId = RequesterAccountId.asInstanceOf[js.Any], RequesterAwsRegion = RequesterAwsRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePendingAggregationRequestRequest]
   }
   
-  @scala.inline
-  implicit class DeletePendingAggregationRequestRequestMutableBuilder[Self <: DeletePendingAggregationRequestRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePendingAggregationRequestRequest](x: Self) {
     
-    @scala.inline
-    def setRequesterAccountId(value: AccountId): Self = StObject.set(x, "RequesterAccountId", value.asInstanceOf[js.Any])
+    inline def setRequesterAccountId(value: AccountId): Self = StObject.set(x, "RequesterAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequesterAwsRegion(value: AwsRegion): Self = StObject.set(x, "RequesterAwsRegion", value.asInstanceOf[js.Any])
+    inline def setRequesterAwsRegion(value: AwsRegion): Self = StObject.set(x, "RequesterAwsRegion", value.asInstanceOf[js.Any])
   }
 }

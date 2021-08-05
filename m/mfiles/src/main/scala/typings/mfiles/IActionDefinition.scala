@@ -17,8 +17,7 @@ trait IActionDefinition extends StObject {
 }
 object IActionDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActionCreateSeparateAssignment: IActionCreateAssignment,
     ActionType: MFActionType,
     Clear: () => Unit,
@@ -28,19 +27,14 @@ object IActionDefinition {
     __obj.asInstanceOf[IActionDefinition]
   }
   
-  @scala.inline
-  implicit class IActionDefinitionMutableBuilder[Self <: IActionDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: IActionDefinition](x: Self) {
     
-    @scala.inline
-    def setActionCreateSeparateAssignment(value: IActionCreateAssignment): Self = StObject.set(x, "ActionCreateSeparateAssignment", value.asInstanceOf[js.Any])
+    inline def setActionCreateSeparateAssignment(value: IActionCreateAssignment): Self = StObject.set(x, "ActionCreateSeparateAssignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionType(value: MFActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: MFActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClone(value: () => IActionDefinition): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IActionDefinition): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
   }
 }

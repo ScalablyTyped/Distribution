@@ -14,31 +14,23 @@ trait ColorPaletteParams extends StObject {
 }
 object ColorPaletteParams {
   
-  @scala.inline
-  def apply(): ColorPaletteParams = {
+  inline def apply(): ColorPaletteParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorPaletteParams]
   }
   
-  @scala.inline
-  implicit class ColorPaletteParamsMutableBuilder[Self <: ColorPaletteParams] (val x: Self) extends AnyVal {
+  extension [Self <: ColorPaletteParams](x: Self) {
     
-    @scala.inline
-    def setColors(value: ImgixParamType): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: ImgixParamType): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setPalette(value: ImgixParamType): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: ImgixParamType): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
+    inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: ImgixParamType): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: ImgixParamType): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

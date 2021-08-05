@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EscrowStatus extends StObject
 object EscrowStatus {
   
-  @scala.inline
-  def held: typings.braintree.braintreeStrings.held = "held".asInstanceOf[typings.braintree.braintreeStrings.held]
+  inline def held: typings.braintree.braintreeStrings.held = "held".asInstanceOf[typings.braintree.braintreeStrings.held]
   
-  @scala.inline
-  def hold_pending: typings.braintree.braintreeStrings.hold_pending = "hold_pending".asInstanceOf[typings.braintree.braintreeStrings.hold_pending]
+  inline def hold_pending: typings.braintree.braintreeStrings.hold_pending = "hold_pending".asInstanceOf[typings.braintree.braintreeStrings.hold_pending]
   
-  @scala.inline
-  def refunded: typings.braintree.braintreeStrings.refunded = "refunded".asInstanceOf[typings.braintree.braintreeStrings.refunded]
+  inline def refunded: typings.braintree.braintreeStrings.refunded = "refunded".asInstanceOf[typings.braintree.braintreeStrings.refunded]
   
-  @scala.inline
-  def release_pending: typings.braintree.braintreeStrings.release_pending = "release_pending".asInstanceOf[typings.braintree.braintreeStrings.release_pending]
+  inline def release_pending: typings.braintree.braintreeStrings.release_pending = "release_pending".asInstanceOf[typings.braintree.braintreeStrings.release_pending]
   
-  @scala.inline
-  def released: typings.braintree.braintreeStrings.released = "released".asInstanceOf[typings.braintree.braintreeStrings.released]
+  inline def released: typings.braintree.braintreeStrings.released = "released".asInstanceOf[typings.braintree.braintreeStrings.released]
 }

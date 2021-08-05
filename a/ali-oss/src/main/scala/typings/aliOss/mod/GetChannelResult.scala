@@ -20,43 +20,31 @@ trait GetChannelResult extends StObject {
 }
 object GetChannelResult {
   
-  @scala.inline
-  def apply(Status: String, res: NormalSuccessResponse): GetChannelResult = {
+  inline def apply(Status: String, res: NormalSuccessResponse): GetChannelResult = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetChannelResult]
   }
   
-  @scala.inline
-  implicit class GetChannelResultMutableBuilder[Self <: GetChannelResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetChannelResult](x: Self) {
     
-    @scala.inline
-    def setAudio(value: js.Object): Self = StObject.set(x, "Audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: js.Object): Self = StObject.set(x, "Audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioUndefined: Self = StObject.set(x, "Audio", js.undefined)
+    inline def setAudioUndefined: Self = StObject.set(x, "Audio", js.undefined)
     
-    @scala.inline
-    def setConnectedTime(value: String): Self = StObject.set(x, "ConnectedTime", value.asInstanceOf[js.Any])
+    inline def setConnectedTime(value: String): Self = StObject.set(x, "ConnectedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectedTimeUndefined: Self = StObject.set(x, "ConnectedTime", js.undefined)
+    inline def setConnectedTimeUndefined: Self = StObject.set(x, "ConnectedTime", js.undefined)
     
-    @scala.inline
-    def setRemoteAddr(value: String): Self = StObject.set(x, "RemoteAddr", value.asInstanceOf[js.Any])
+    inline def setRemoteAddr(value: String): Self = StObject.set(x, "RemoteAddr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteAddrUndefined: Self = StObject.set(x, "RemoteAddr", js.undefined)
+    inline def setRemoteAddrUndefined: Self = StObject.set(x, "RemoteAddr", js.undefined)
     
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo(value: js.Object): Self = StObject.set(x, "Video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: js.Object): Self = StObject.set(x, "Video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoUndefined: Self = StObject.set(x, "Video", js.undefined)
+    inline def setVideoUndefined: Self = StObject.set(x, "Video", js.undefined)
   }
 }

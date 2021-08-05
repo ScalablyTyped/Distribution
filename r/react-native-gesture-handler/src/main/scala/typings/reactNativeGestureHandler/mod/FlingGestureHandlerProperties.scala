@@ -18,37 +18,27 @@ trait FlingGestureHandlerProperties
 }
 object FlingGestureHandlerProperties {
   
-  @scala.inline
-  def apply(): FlingGestureHandlerProperties = {
+  inline def apply(): FlingGestureHandlerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlingGestureHandlerProperties]
   }
   
-  @scala.inline
-  implicit class FlingGestureHandlerPropertiesMutableBuilder[Self <: FlingGestureHandlerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FlingGestureHandlerProperties](x: Self) {
     
-    @scala.inline
-    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setNumberOfPointers(value: Double): Self = StObject.set(x, "numberOfPointers", value.asInstanceOf[js.Any])
+    inline def setNumberOfPointers(value: Double): Self = StObject.set(x, "numberOfPointers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfPointersUndefined: Self = StObject.set(x, "numberOfPointers", js.undefined)
+    inline def setNumberOfPointersUndefined: Self = StObject.set(x, "numberOfPointers", js.undefined)
     
-    @scala.inline
-    def setOnGestureEvent(value: /* event */ FlingGestureHandlerGestureEvent => Unit): Self = StObject.set(x, "onGestureEvent", js.Any.fromFunction1(value))
+    inline def setOnGestureEvent(value: /* event */ FlingGestureHandlerGestureEvent => Unit): Self = StObject.set(x, "onGestureEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnGestureEventUndefined: Self = StObject.set(x, "onGestureEvent", js.undefined)
+    inline def setOnGestureEventUndefined: Self = StObject.set(x, "onGestureEvent", js.undefined)
     
-    @scala.inline
-    def setOnHandlerStateChange(value: /* event */ FlingGestureHandlerStateChangeEvent => Unit): Self = StObject.set(x, "onHandlerStateChange", js.Any.fromFunction1(value))
+    inline def setOnHandlerStateChange(value: /* event */ FlingGestureHandlerStateChangeEvent => Unit): Self = StObject.set(x, "onHandlerStateChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnHandlerStateChangeUndefined: Self = StObject.set(x, "onHandlerStateChange", js.undefined)
+    inline def setOnHandlerStateChangeUndefined: Self = StObject.set(x, "onHandlerStateChange", js.undefined)
   }
 }

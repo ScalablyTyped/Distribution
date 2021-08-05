@@ -11,83 +11,47 @@ object JWA {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decrypt(alg: String, key: String, cdata: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def decrypt(alg: String, key: String, cdata: String, props: DecryptEncryptOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def decrypt(alg: String, key: String, cdata: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def decrypt(alg: String, key: String, cdata: Buffer, props: DecryptEncryptOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def decrypt(alg: String, key: Buffer, cdata: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def decrypt(alg: String, key: Buffer, cdata: String, props: DecryptEncryptOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def decrypt(alg: String, key: Buffer, cdata: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def decrypt(alg: String, key: Buffer, cdata: Buffer, props: DecryptEncryptOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def decrypt(alg: String, key: String, cdata: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def decrypt(alg: String, key: String, cdata: String, props: DecryptEncryptOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def decrypt(alg: String, key: String, cdata: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def decrypt(alg: String, key: String, cdata: Buffer, props: DecryptEncryptOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def decrypt(alg: String, key: Buffer, cdata: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def decrypt(alg: String, key: Buffer, cdata: String, props: DecryptEncryptOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def decrypt(alg: String, key: Buffer, cdata: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def decrypt(alg: String, key: Buffer, cdata: Buffer, props: DecryptEncryptOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
-  @scala.inline
-  def derive(alg: String, key: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("derive")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def derive(alg: String, key: String, props: DeriveOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("derive")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def derive(alg: String, key: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("derive")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def derive(alg: String, key: Buffer, props: DeriveOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("derive")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def derive(alg: String, key: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("derive")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def derive(alg: String, key: String, props: DeriveOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("derive")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def derive(alg: String, key: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("derive")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def derive(alg: String, key: Buffer, props: DeriveOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("derive")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
-  @scala.inline
-  def digest(alg: String, data: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def digest(alg: String, data: String, props: js.Any): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def digest(alg: String, data: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def digest(alg: String, data: Buffer, props: js.Any): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def digest(alg: String, data: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def digest(alg: String, data: String, props: js.Any): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def digest(alg: String, data: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def digest(alg: String, data: Buffer, props: js.Any): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(alg.asInstanceOf[js.Any], data.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
-  @scala.inline
-  def encrypt(alg: String, key: String, pdata: String): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
-  @scala.inline
-  def encrypt(alg: String, key: String, pdata: String, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
-  @scala.inline
-  def encrypt(alg: String, key: String, pdata: Buffer): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
-  @scala.inline
-  def encrypt(alg: String, key: String, pdata: Buffer, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
-  @scala.inline
-  def encrypt(alg: String, key: Buffer, pdata: String): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
-  @scala.inline
-  def encrypt(alg: String, key: Buffer, pdata: String, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
-  @scala.inline
-  def encrypt(alg: String, key: Buffer, pdata: Buffer): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
-  @scala.inline
-  def encrypt(alg: String, key: Buffer, pdata: Buffer, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
+  inline def encrypt(alg: String, key: String, pdata: String): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
+  inline def encrypt(alg: String, key: String, pdata: String, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
+  inline def encrypt(alg: String, key: String, pdata: Buffer): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
+  inline def encrypt(alg: String, key: String, pdata: Buffer, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
+  inline def encrypt(alg: String, key: Buffer, pdata: String): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
+  inline def encrypt(alg: String, key: Buffer, pdata: String, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
+  inline def encrypt(alg: String, key: Buffer, pdata: Buffer): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
+  inline def encrypt(alg: String, key: Buffer, pdata: Buffer, props: DecryptEncryptOptions): js.Promise[EncryptReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EncryptReturn]]
   
-  @scala.inline
-  def sign(alg: String, key: String, pdata: String, props: SignVerifyOptions): js.Promise[SignReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignReturn]]
-  @scala.inline
-  def sign(alg: String, key: String, pdata: Buffer, props: SignVerifyOptions): js.Promise[SignReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignReturn]]
-  @scala.inline
-  def sign(alg: String, key: Buffer, pdata: String, props: SignVerifyOptions): js.Promise[SignReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignReturn]]
-  @scala.inline
-  def sign(alg: String, key: Buffer, pdata: Buffer, props: SignVerifyOptions): js.Promise[SignReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignReturn]]
+  inline def sign(alg: String, key: String, pdata: String, props: SignVerifyOptions): js.Promise[SignReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignReturn]]
+  inline def sign(alg: String, key: String, pdata: Buffer, props: SignVerifyOptions): js.Promise[SignReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignReturn]]
+  inline def sign(alg: String, key: Buffer, pdata: String, props: SignVerifyOptions): js.Promise[SignReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignReturn]]
+  inline def sign(alg: String, key: Buffer, pdata: Buffer, props: SignVerifyOptions): js.Promise[SignReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignReturn]]
   
-  @scala.inline
-  def verify(alg: String, key: String, pdata: String, mac: String, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
-  @scala.inline
-  def verify(alg: String, key: String, pdata: String, mac: Buffer, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
-  @scala.inline
-  def verify(alg: String, key: String, pdata: Buffer, mac: String, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
-  @scala.inline
-  def verify(alg: String, key: String, pdata: Buffer, mac: Buffer, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
-  @scala.inline
-  def verify(alg: String, key: Buffer, pdata: String, mac: String, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
-  @scala.inline
-  def verify(alg: String, key: Buffer, pdata: String, mac: Buffer, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
-  @scala.inline
-  def verify(alg: String, key: Buffer, pdata: Buffer, mac: String, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
-  @scala.inline
-  def verify(alg: String, key: Buffer, pdata: Buffer, mac: Buffer, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
+  inline def verify(alg: String, key: String, pdata: String, mac: String, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
+  inline def verify(alg: String, key: String, pdata: String, mac: Buffer, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
+  inline def verify(alg: String, key: String, pdata: Buffer, mac: String, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
+  inline def verify(alg: String, key: String, pdata: Buffer, mac: Buffer, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
+  inline def verify(alg: String, key: Buffer, pdata: String, mac: String, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
+  inline def verify(alg: String, key: Buffer, pdata: String, mac: Buffer, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
+  inline def verify(alg: String, key: Buffer, pdata: Buffer, mac: String, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
+  inline def verify(alg: String, key: Buffer, pdata: Buffer, mac: Buffer, props: SignVerifyOptions): js.Promise[VerifyReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(alg.asInstanceOf[js.Any], key.asInstanceOf[js.Any], pdata.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VerifyReturn]]
   
   trait DecryptEncryptOptions extends StObject {
     
@@ -133,104 +97,72 @@ object JWA {
   }
   object DecryptEncryptOptions {
     
-    @scala.inline
-    def apply(): DecryptEncryptOptions = {
+    inline def apply(): DecryptEncryptOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DecryptEncryptOptions]
     }
     
-    @scala.inline
-    implicit class DecryptEncryptOptionsMutableBuilder[Self <: DecryptEncryptOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DecryptEncryptOptions](x: Self) {
       
-      @scala.inline
-      def setAad(value: Buffer): Self = StObject.set(x, "aad", value.asInstanceOf[js.Any])
+      inline def setAad(value: Buffer): Self = StObject.set(x, "aad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAadUndefined: Self = StObject.set(x, "aad", js.undefined)
+      inline def setAadUndefined: Self = StObject.set(x, "aad", js.undefined)
       
-      @scala.inline
-      def setAdata(value: Buffer): Self = StObject.set(x, "adata", value.asInstanceOf[js.Any])
+      inline def setAdata(value: Buffer): Self = StObject.set(x, "adata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdataUndefined: Self = StObject.set(x, "adata", js.undefined)
+      inline def setAdataUndefined: Self = StObject.set(x, "adata", js.undefined)
       
-      @scala.inline
-      def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+      inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
+      inline def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
       
-      @scala.inline
-      def setApu(value: Buffer): Self = StObject.set(x, "apu", value.asInstanceOf[js.Any])
+      inline def setApu(value: Buffer): Self = StObject.set(x, "apu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApuUndefined: Self = StObject.set(x, "apu", js.undefined)
+      inline def setApuUndefined: Self = StObject.set(x, "apu", js.undefined)
       
-      @scala.inline
-      def setApv(value: Buffer): Self = StObject.set(x, "apv", value.asInstanceOf[js.Any])
+      inline def setApv(value: Buffer): Self = StObject.set(x, "apv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApvUndefined: Self = StObject.set(x, "apv", js.undefined)
+      inline def setApvUndefined: Self = StObject.set(x, "apv", js.undefined)
       
-      @scala.inline
-      def setEnc(value: String): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
+      inline def setEnc(value: String): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncUndefined: Self = StObject.set(x, "enc", js.undefined)
+      inline def setEncUndefined: Self = StObject.set(x, "enc", js.undefined)
       
-      @scala.inline
-      def setEpk(value: Buffer): Self = StObject.set(x, "epk", value.asInstanceOf[js.Any])
+      inline def setEpk(value: Buffer): Self = StObject.set(x, "epk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEpkUndefined: Self = StObject.set(x, "epk", js.undefined)
+      inline def setEpkUndefined: Self = StObject.set(x, "epk", js.undefined)
       
-      @scala.inline
-      def setEpu(value: Buffer): Self = StObject.set(x, "epu", value.asInstanceOf[js.Any])
+      inline def setEpu(value: Buffer): Self = StObject.set(x, "epu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEpuUndefined: Self = StObject.set(x, "epu", js.undefined)
+      inline def setEpuUndefined: Self = StObject.set(x, "epu", js.undefined)
       
-      @scala.inline
-      def setEpv(value: Buffer): Self = StObject.set(x, "epv", value.asInstanceOf[js.Any])
+      inline def setEpv(value: Buffer): Self = StObject.set(x, "epv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEpvUndefined: Self = StObject.set(x, "epv", js.undefined)
+      inline def setEpvUndefined: Self = StObject.set(x, "epv", js.undefined)
       
-      @scala.inline
-      def setIv(value: Buffer): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+      inline def setIv(value: Buffer): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+      inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
       
-      @scala.inline
-      def setKdata(value: Buffer): Self = StObject.set(x, "kdata", value.asInstanceOf[js.Any])
+      inline def setKdata(value: Buffer): Self = StObject.set(x, "kdata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKdataUndefined: Self = StObject.set(x, "kdata", js.undefined)
+      inline def setKdataUndefined: Self = StObject.set(x, "kdata", js.undefined)
       
-      @scala.inline
-      def setMac(value: Buffer): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+      inline def setMac(value: Buffer): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
+      inline def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
       
-      @scala.inline
-      def setP2c(value: Double): Self = StObject.set(x, "p2c", value.asInstanceOf[js.Any])
+      inline def setP2c(value: Double): Self = StObject.set(x, "p2c", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP2cUndefined: Self = StObject.set(x, "p2c", js.undefined)
+      inline def setP2cUndefined: Self = StObject.set(x, "p2c", js.undefined)
       
-      @scala.inline
-      def setP2s(value: Buffer): Self = StObject.set(x, "p2s", value.asInstanceOf[js.Any])
+      inline def setP2s(value: Buffer): Self = StObject.set(x, "p2s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP2sUndefined: Self = StObject.set(x, "p2s", js.undefined)
+      inline def setP2sUndefined: Self = StObject.set(x, "p2s", js.undefined)
       
-      @scala.inline
-      def setTag(value: Buffer): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: Buffer): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
   
@@ -255,50 +187,36 @@ object JWA {
   }
   object DeriveOptions {
     
-    @scala.inline
-    def apply(): DeriveOptions = {
+    inline def apply(): DeriveOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeriveOptions]
     }
     
-    @scala.inline
-    implicit class DeriveOptionsMutableBuilder[Self <: DeriveOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DeriveOptions](x: Self) {
       
-      @scala.inline
-      def setHash(value: Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setInfo(value: Buffer): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Buffer): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setOtherInfo(value: Buffer): Self = StObject.set(x, "otherInfo", value.asInstanceOf[js.Any])
+      inline def setOtherInfo(value: Buffer): Self = StObject.set(x, "otherInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherInfoUndefined: Self = StObject.set(x, "otherInfo", js.undefined)
+      inline def setOtherInfoUndefined: Self = StObject.set(x, "otherInfo", js.undefined)
       
-      @scala.inline
-      def setPublic(value: Buffer): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: Buffer): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+      inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
       
-      @scala.inline
-      def setSalt(value: Buffer): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: Buffer): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
+      inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
     }
   }
   
@@ -311,23 +229,18 @@ object JWA {
   }
   object EncryptReturn {
     
-    @scala.inline
-    def apply(data: Buffer): EncryptReturn = {
+    inline def apply(data: Buffer): EncryptReturn = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[EncryptReturn]
     }
     
-    @scala.inline
-    implicit class EncryptReturnMutableBuilder[Self <: EncryptReturn] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptReturn](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: Buffer): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: Buffer): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
   
@@ -340,20 +253,16 @@ object JWA {
   }
   object SignReturn {
     
-    @scala.inline
-    def apply(data: Buffer, mac: Buffer): SignReturn = {
+    inline def apply(data: Buffer, mac: Buffer): SignReturn = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignReturn]
     }
     
-    @scala.inline
-    implicit class SignReturnMutableBuilder[Self <: SignReturn] (val x: Self) extends AnyVal {
+    extension [Self <: SignReturn](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMac(value: Buffer): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+      inline def setMac(value: Buffer): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     }
   }
   
@@ -363,20 +272,16 @@ object JWA {
   }
   object SignVerifyOptions {
     
-    @scala.inline
-    def apply(): SignVerifyOptions = {
+    inline def apply(): SignVerifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SignVerifyOptions]
     }
     
-    @scala.inline
-    implicit class SignVerifyOptionsMutableBuilder[Self <: SignVerifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SignVerifyOptions](x: Self) {
       
-      @scala.inline
-      def setLoose(value: Boolean): Self = StObject.set(x, "loose", value.asInstanceOf[js.Any])
+      inline def setLoose(value: Boolean): Self = StObject.set(x, "loose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLooseUndefined: Self = StObject.set(x, "loose", js.undefined)
+      inline def setLooseUndefined: Self = StObject.set(x, "loose", js.undefined)
     }
   }
   
@@ -392,23 +297,18 @@ object JWA {
   }
   object VerifyReturn {
     
-    @scala.inline
-    def apply(data: Buffer, mac: Buffer, valid: Boolean): VerifyReturn = {
+    inline def apply(data: Buffer, mac: Buffer, valid: Boolean): VerifyReturn = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyReturn]
     }
     
-    @scala.inline
-    implicit class VerifyReturnMutableBuilder[Self <: VerifyReturn] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyReturn](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMac(value: Buffer): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+      inline def setMac(value: Buffer): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,19 +12,15 @@ trait Meta extends StObject {
 }
 object Meta {
   
-  @scala.inline
-  def apply(): Meta = {
+  inline def apply(): Meta = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Meta]
   }
   
-  @scala.inline
-  implicit class MetaMutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
+  extension [Self <: Meta](x: Self) {
     
-    @scala.inline
-    def set$meta(value: MetaSortOperators): Self = StObject.set(x, "$meta", value.asInstanceOf[js.Any])
+    inline def set$meta(value: MetaSortOperators): Self = StObject.set(x, "$meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$metaUndefined: Self = StObject.set(x, "$meta", js.undefined)
+    inline def set$metaUndefined: Self = StObject.set(x, "$meta", js.undefined)
   }
 }

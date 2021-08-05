@@ -16,37 +16,27 @@ trait OverviewMapControlOptions extends StObject {
 }
 object OverviewMapControlOptions {
   
-  @scala.inline
-  def apply(): OverviewMapControlOptions = {
+  inline def apply(): OverviewMapControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OverviewMapControlOptions]
   }
   
-  @scala.inline
-  implicit class OverviewMapControlOptionsMutableBuilder[Self <: OverviewMapControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OverviewMapControlOptions](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+    inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+    inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

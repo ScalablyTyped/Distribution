@@ -51,21 +51,16 @@ object bucketOwnershipControlsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BucketOwnershipControls]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketOwnershipControls]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketOwnershipControlsState): BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BucketOwnershipControls]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketOwnershipControlsState, opts: CustomResourceOptions): BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketOwnershipControls]
+    inline def get(name: String, id: Input[ID]): BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BucketOwnershipControls]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketOwnershipControls]
+    inline def get(name: String, id: Input[ID], state: BucketOwnershipControlsState): BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BucketOwnershipControls]
+    inline def get(name: String, id: Input[ID], state: BucketOwnershipControlsState, opts: CustomResourceOptions): BucketOwnershipControls = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketOwnershipControls]
     
     /**
       * Returns true if the given object is an instance of BucketOwnershipControls.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketOwnershipControls.BucketOwnershipControls */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketOwnershipControls.BucketOwnershipControls */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketOwnershipControls.BucketOwnershipControls */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketOwnershipControls.BucketOwnershipControls */ Boolean]
   }
   
   trait BucketOwnershipControlsArgs extends StObject {
@@ -82,20 +77,16 @@ object bucketOwnershipControlsMod {
   }
   object BucketOwnershipControlsArgs {
     
-    @scala.inline
-    def apply(bucket: Input[String], rule: Input[typings.pulumiAws.inputMod.s3.BucketOwnershipControlsRule]): BucketOwnershipControlsArgs = {
+    inline def apply(bucket: Input[String], rule: Input[typings.pulumiAws.inputMod.s3.BucketOwnershipControlsRule]): BucketOwnershipControlsArgs = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
       __obj.asInstanceOf[BucketOwnershipControlsArgs]
     }
     
-    @scala.inline
-    implicit class BucketOwnershipControlsArgsMutableBuilder[Self <: BucketOwnershipControlsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BucketOwnershipControlsArgs](x: Self) {
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRule(value: Input[typings.pulumiAws.inputMod.s3.BucketOwnershipControlsRule]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+      inline def setRule(value: Input[typings.pulumiAws.inputMod.s3.BucketOwnershipControlsRule]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,26 +104,20 @@ object bucketOwnershipControlsMod {
   }
   object BucketOwnershipControlsState {
     
-    @scala.inline
-    def apply(): BucketOwnershipControlsState = {
+    inline def apply(): BucketOwnershipControlsState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BucketOwnershipControlsState]
     }
     
-    @scala.inline
-    implicit class BucketOwnershipControlsStateMutableBuilder[Self <: BucketOwnershipControlsState] (val x: Self) extends AnyVal {
+    extension [Self <: BucketOwnershipControlsState](x: Self) {
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+      inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
       
-      @scala.inline
-      def setRule(value: Input[typings.pulumiAws.inputMod.s3.BucketOwnershipControlsRule]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+      inline def setRule(value: Input[typings.pulumiAws.inputMod.s3.BucketOwnershipControlsRule]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+      inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     }
   }
 }

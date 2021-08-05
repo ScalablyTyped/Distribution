@@ -21,7 +21,7 @@ object wrappedLabelMod {
     def this(displayText: String, angle: Double) = this()
     def this(displayText: Unit, angle: Double) = this()
     
-    var _maxLines: Double = js.native
+    /* protected */ var _maxLines: Double = js.native
     
     /**
       * Get the label max number of wrapped lines.

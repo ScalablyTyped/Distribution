@@ -15,22 +15,17 @@ trait Row extends StObject {
 }
 object Row {
   
-  @scala.inline
-  def apply(): Row = {
+  inline def apply(): Row = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Row]
   }
   
-  @scala.inline
-  implicit class RowMutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
+  extension [Self <: Row](x: Self) {
     
-    @scala.inline
-    def setAltitudeDiffs(value: js.Array[Double]): Self = StObject.set(x, "altitudeDiffs", value.asInstanceOf[js.Any])
+    inline def setAltitudeDiffs(value: js.Array[Double]): Self = StObject.set(x, "altitudeDiffs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitudeDiffsUndefined: Self = StObject.set(x, "altitudeDiffs", js.undefined)
+    inline def setAltitudeDiffsUndefined: Self = StObject.set(x, "altitudeDiffs", js.undefined)
     
-    @scala.inline
-    def setAltitudeDiffsVarargs(value: Double*): Self = StObject.set(x, "altitudeDiffs", js.Array(value :_*))
+    inline def setAltitudeDiffsVarargs(value: Double*): Self = StObject.set(x, "altitudeDiffs", js.Array(value :_*))
   }
 }

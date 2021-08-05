@@ -18,31 +18,23 @@ trait DeleteProjectResult extends StObject {
 }
 object DeleteProjectResult {
   
-  @scala.inline
-  def apply(): DeleteProjectResult = {
+  inline def apply(): DeleteProjectResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteProjectResult]
   }
   
-  @scala.inline
-  implicit class DeleteProjectResultMutableBuilder[Self <: DeleteProjectResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteProjectResult](x: Self) {
     
-    @scala.inline
-    def setDeletedResources(value: Resources): Self = StObject.set(x, "deletedResources", value.asInstanceOf[js.Any])
+    inline def setDeletedResources(value: Resources): Self = StObject.set(x, "deletedResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedResourcesUndefined: Self = StObject.set(x, "deletedResources", js.undefined)
+    inline def setDeletedResourcesUndefined: Self = StObject.set(x, "deletedResources", js.undefined)
     
-    @scala.inline
-    def setDeletedResourcesVarargs(value: Resource*): Self = StObject.set(x, "deletedResources", js.Array(value :_*))
+    inline def setDeletedResourcesVarargs(value: Resource*): Self = StObject.set(x, "deletedResources", js.Array(value :_*))
     
-    @scala.inline
-    def setOrphanedResources(value: Resources): Self = StObject.set(x, "orphanedResources", value.asInstanceOf[js.Any])
+    inline def setOrphanedResources(value: Resources): Self = StObject.set(x, "orphanedResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrphanedResourcesUndefined: Self = StObject.set(x, "orphanedResources", js.undefined)
+    inline def setOrphanedResourcesUndefined: Self = StObject.set(x, "orphanedResources", js.undefined)
     
-    @scala.inline
-    def setOrphanedResourcesVarargs(value: Resource*): Self = StObject.set(x, "orphanedResources", js.Array(value :_*))
+    inline def setOrphanedResourcesVarargs(value: Resource*): Self = StObject.set(x, "orphanedResources", js.Array(value :_*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLDOMTextNode extends StObject {
   
-  @JSName("MSHTML.HTMLDOMTextNode_typekey")
+  /* private */ @JSName("MSHTML.HTMLDOMTextNode_typekey")
   var MSHTMLDotHTMLDOMTextNode_typekey: HTMLDOMTextNode = js.native
   
   def addEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit = js.native

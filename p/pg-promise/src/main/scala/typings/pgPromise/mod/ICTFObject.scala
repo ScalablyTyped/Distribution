@@ -12,16 +12,13 @@ trait ICTFObject extends StObject {
 }
 object ICTFObject {
   
-  @scala.inline
-  def apply(toPostgres: js.Any => js.Any): ICTFObject = {
+  inline def apply(toPostgres: js.Any => js.Any): ICTFObject = {
     val __obj = js.Dynamic.literal(toPostgres = js.Any.fromFunction1(toPostgres))
     __obj.asInstanceOf[ICTFObject]
   }
   
-  @scala.inline
-  implicit class ICTFObjectMutableBuilder[Self <: ICTFObject] (val x: Self) extends AnyVal {
+  extension [Self <: ICTFObject](x: Self) {
     
-    @scala.inline
-    def setToPostgres(value: js.Any => js.Any): Self = StObject.set(x, "toPostgres", js.Any.fromFunction1(value))
+    inline def setToPostgres(value: js.Any => js.Any): Self = StObject.set(x, "toPostgres", js.Any.fromFunction1(value))
   }
 }

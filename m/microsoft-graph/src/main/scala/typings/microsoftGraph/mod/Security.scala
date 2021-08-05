@@ -17,49 +17,35 @@ trait Security
 }
 object Security {
   
-  @scala.inline
-  def apply(): Security = {
+  inline def apply(): Security = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Security]
   }
   
-  @scala.inline
-  implicit class SecurityMutableBuilder[Self <: Security] (val x: Self) extends AnyVal {
+  extension [Self <: Security](x: Self) {
     
-    @scala.inline
-    def setAlerts(value: NullableOption[js.Array[Alert]]): Self = StObject.set(x, "alerts", value.asInstanceOf[js.Any])
+    inline def setAlerts(value: NullableOption[js.Array[Alert]]): Self = StObject.set(x, "alerts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlertsNull: Self = StObject.set(x, "alerts", null)
+    inline def setAlertsNull: Self = StObject.set(x, "alerts", null)
     
-    @scala.inline
-    def setAlertsUndefined: Self = StObject.set(x, "alerts", js.undefined)
+    inline def setAlertsUndefined: Self = StObject.set(x, "alerts", js.undefined)
     
-    @scala.inline
-    def setAlertsVarargs(value: Alert*): Self = StObject.set(x, "alerts", js.Array(value :_*))
+    inline def setAlertsVarargs(value: Alert*): Self = StObject.set(x, "alerts", js.Array(value :_*))
     
-    @scala.inline
-    def setSecureScoreControlProfiles(value: NullableOption[js.Array[SecureScoreControlProfile]]): Self = StObject.set(x, "secureScoreControlProfiles", value.asInstanceOf[js.Any])
+    inline def setSecureScoreControlProfiles(value: NullableOption[js.Array[SecureScoreControlProfile]]): Self = StObject.set(x, "secureScoreControlProfiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureScoreControlProfilesNull: Self = StObject.set(x, "secureScoreControlProfiles", null)
+    inline def setSecureScoreControlProfilesNull: Self = StObject.set(x, "secureScoreControlProfiles", null)
     
-    @scala.inline
-    def setSecureScoreControlProfilesUndefined: Self = StObject.set(x, "secureScoreControlProfiles", js.undefined)
+    inline def setSecureScoreControlProfilesUndefined: Self = StObject.set(x, "secureScoreControlProfiles", js.undefined)
     
-    @scala.inline
-    def setSecureScoreControlProfilesVarargs(value: SecureScoreControlProfile*): Self = StObject.set(x, "secureScoreControlProfiles", js.Array(value :_*))
+    inline def setSecureScoreControlProfilesVarargs(value: SecureScoreControlProfile*): Self = StObject.set(x, "secureScoreControlProfiles", js.Array(value :_*))
     
-    @scala.inline
-    def setSecureScores(value: NullableOption[js.Array[SecureScore]]): Self = StObject.set(x, "secureScores", value.asInstanceOf[js.Any])
+    inline def setSecureScores(value: NullableOption[js.Array[SecureScore]]): Self = StObject.set(x, "secureScores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureScoresNull: Self = StObject.set(x, "secureScores", null)
+    inline def setSecureScoresNull: Self = StObject.set(x, "secureScores", null)
     
-    @scala.inline
-    def setSecureScoresUndefined: Self = StObject.set(x, "secureScores", js.undefined)
+    inline def setSecureScoresUndefined: Self = StObject.set(x, "secureScores", js.undefined)
     
-    @scala.inline
-    def setSecureScoresVarargs(value: SecureScore*): Self = StObject.set(x, "secureScores", js.Array(value :_*))
+    inline def setSecureScoresVarargs(value: SecureScore*): Self = StObject.set(x, "secureScores", js.Array(value :_*))
   }
 }

@@ -18,28 +18,21 @@ trait ScheduledActionsType extends StObject {
 }
 object ScheduledActionsType {
   
-  @scala.inline
-  def apply(): ScheduledActionsType = {
+  inline def apply(): ScheduledActionsType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScheduledActionsType]
   }
   
-  @scala.inline
-  implicit class ScheduledActionsTypeMutableBuilder[Self <: ScheduledActionsType] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduledActionsType](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setScheduledUpdateGroupActions(value: ScheduledUpdateGroupActions): Self = StObject.set(x, "ScheduledUpdateGroupActions", value.asInstanceOf[js.Any])
+    inline def setScheduledUpdateGroupActions(value: ScheduledUpdateGroupActions): Self = StObject.set(x, "ScheduledUpdateGroupActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledUpdateGroupActionsUndefined: Self = StObject.set(x, "ScheduledUpdateGroupActions", js.undefined)
+    inline def setScheduledUpdateGroupActionsUndefined: Self = StObject.set(x, "ScheduledUpdateGroupActions", js.undefined)
     
-    @scala.inline
-    def setScheduledUpdateGroupActionsVarargs(value: ScheduledUpdateGroupAction*): Self = StObject.set(x, "ScheduledUpdateGroupActions", js.Array(value :_*))
+    inline def setScheduledUpdateGroupActionsVarargs(value: ScheduledUpdateGroupAction*): Self = StObject.set(x, "ScheduledUpdateGroupActions", js.Array(value :_*))
   }
 }

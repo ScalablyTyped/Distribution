@@ -75,8 +75,7 @@ trait IsReadyToPayRequest extends StObject {
 }
 object IsReadyToPayRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowedPaymentMethods: js.Array[IsReadyToPayPaymentMethodSpecification],
     apiVersion: Double,
     apiVersionMinor: Double
@@ -85,25 +84,18 @@ object IsReadyToPayRequest {
     __obj.asInstanceOf[IsReadyToPayRequest]
   }
   
-  @scala.inline
-  implicit class IsReadyToPayRequestMutableBuilder[Self <: IsReadyToPayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IsReadyToPayRequest](x: Self) {
     
-    @scala.inline
-    def setAllowedPaymentMethods(value: js.Array[IsReadyToPayPaymentMethodSpecification]): Self = StObject.set(x, "allowedPaymentMethods", value.asInstanceOf[js.Any])
+    inline def setAllowedPaymentMethods(value: js.Array[IsReadyToPayPaymentMethodSpecification]): Self = StObject.set(x, "allowedPaymentMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedPaymentMethodsVarargs(value: IsReadyToPayPaymentMethodSpecification*): Self = StObject.set(x, "allowedPaymentMethods", js.Array(value :_*))
+    inline def setAllowedPaymentMethodsVarargs(value: IsReadyToPayPaymentMethodSpecification*): Self = StObject.set(x, "allowedPaymentMethods", js.Array(value :_*))
     
-    @scala.inline
-    def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionMinor(value: Double): Self = StObject.set(x, "apiVersionMinor", value.asInstanceOf[js.Any])
+    inline def setApiVersionMinor(value: Double): Self = StObject.set(x, "apiVersionMinor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistingPaymentMethodRequired(value: `false` | `true`): Self = StObject.set(x, "existingPaymentMethodRequired", value.asInstanceOf[js.Any])
+    inline def setExistingPaymentMethodRequired(value: `false` | `true`): Self = StObject.set(x, "existingPaymentMethodRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistingPaymentMethodRequiredUndefined: Self = StObject.set(x, "existingPaymentMethodRequired", js.undefined)
+    inline def setExistingPaymentMethodRequiredUndefined: Self = StObject.set(x, "existingPaymentMethodRequired", js.undefined)
   }
 }

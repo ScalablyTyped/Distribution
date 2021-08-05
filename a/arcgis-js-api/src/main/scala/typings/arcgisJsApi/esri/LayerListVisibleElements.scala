@@ -19,8 +19,7 @@ trait LayerListVisibleElements
 }
 object LayerListVisibleElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object LayerListVisibleElements {
     __obj.asInstanceOf[LayerListVisibleElements]
   }
   
-  @scala.inline
-  implicit class LayerListVisibleElementsMutableBuilder[Self <: LayerListVisibleElements] (val x: Self) extends AnyVal {
+  extension [Self <: LayerListVisibleElements](x: Self) {
     
-    @scala.inline
-    def setStatusIndicators(value: Boolean): Self = StObject.set(x, "statusIndicators", value.asInstanceOf[js.Any])
+    inline def setStatusIndicators(value: Boolean): Self = StObject.set(x, "statusIndicators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusIndicatorsUndefined: Self = StObject.set(x, "statusIndicators", js.undefined)
+    inline def setStatusIndicatorsUndefined: Self = StObject.set(x, "statusIndicators", js.undefined)
   }
 }

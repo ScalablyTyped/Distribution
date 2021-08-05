@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLDlgBorder extends StObject
 object HTMLDlgBorder {
   
-  @scala.inline
-  def HTMLDlgBorderThick: `262144` = 262144.asInstanceOf[`262144`]
+  inline def HTMLDlgBorderThick: `262144` = 262144.asInstanceOf[`262144`]
   
-  @scala.inline
-  def HTMLDlgBorderThin: `0` = 0.asInstanceOf[`0`]
+  inline def HTMLDlgBorderThin: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def HTMLDlgBorder_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def HTMLDlgBorder_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

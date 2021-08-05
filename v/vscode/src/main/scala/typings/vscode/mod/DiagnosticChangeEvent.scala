@@ -13,19 +13,15 @@ trait DiagnosticChangeEvent extends StObject {
 }
 object DiagnosticChangeEvent {
   
-  @scala.inline
-  def apply(uris: js.Array[Uri]): DiagnosticChangeEvent = {
+  inline def apply(uris: js.Array[Uri]): DiagnosticChangeEvent = {
     val __obj = js.Dynamic.literal(uris = uris.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagnosticChangeEvent]
   }
   
-  @scala.inline
-  implicit class DiagnosticChangeEventMutableBuilder[Self <: DiagnosticChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DiagnosticChangeEvent](x: Self) {
     
-    @scala.inline
-    def setUris(value: js.Array[Uri]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
+    inline def setUris(value: js.Array[Uri]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrisVarargs(value: Uri*): Self = StObject.set(x, "uris", js.Array(value :_*))
+    inline def setUrisVarargs(value: Uri*): Self = StObject.set(x, "uris", js.Array(value :_*))
   }
 }

@@ -177,8 +177,7 @@ object mod {
     def this(converterOptions: ConverterOptions) = this()
   }
   
-  @scala.inline
-  def Converter_=(x: ConverterStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Converter")(x.asInstanceOf[js.Any])
+  inline def Converter_=(x: ConverterStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Converter")(x.asInstanceOf[js.Any])
   
   /**
     * Get a registered extension.
@@ -188,10 +187,8 @@ object mod {
     * @throws Throws if `name` is not of type string.
     * @throws Throws if the extension is not exists.
     */
-  @scala.inline
-  def `extension`(name: String): js.Array[ShowdownExtension] = ^.asInstanceOf[js.Dynamic].applyDynamic("extension")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[ShowdownExtension]]
-  @scala.inline
-  def `extension`(name: String, ext: js.Array[ShowdownExtension]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extension")(name.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def `extension`(name: String): js.Array[ShowdownExtension] = ^.asInstanceOf[js.Dynamic].applyDynamic("extension")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[ShowdownExtension]]
+  inline def `extension`(name: String, ext: js.Array[ShowdownExtension]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extension")(name.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Register a extension.
     *
@@ -199,10 +196,8 @@ object mod {
     * @param ext - The extension.
     * @throws Throws if `name` is not of type string.
     */
-  @scala.inline
-  def `extension`(name: String, ext: js.Function0[js.Array[ShowdownExtension] | ShowdownExtension]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extension")(name.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def `extension`(name: String, ext: ShowdownExtension): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extension")(name.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def `extension`(name: String, ext: js.Function0[js.Array[ShowdownExtension] | ShowdownExtension]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extension")(name.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def `extension`(name: String, ext: ShowdownExtension): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extension")(name.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Showdown extensions.
@@ -210,16 +205,14 @@ object mod {
   @JSImport("showdown", "extensions")
   @js.native
   def extensions: ShowdownExtensions = js.native
-  @scala.inline
-  def extensions_=(x: ShowdownExtensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: ShowdownExtensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
   /**
     * Get the "global" extensions.
     *
     * @return Returns all extensions.
     */
-  @scala.inline
-  def getAllExtensions(): ShowdownExtensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllExtensions")().asInstanceOf[ShowdownExtensions]
+  inline def getAllExtensions(): ShowdownExtensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllExtensions")().asInstanceOf[ShowdownExtensions]
   
   /**
     * Get the default options.
@@ -227,18 +220,15 @@ object mod {
     * @param [simple=true] - If to returns the default showdown options or the showdown options schema.
     * @returns Returns the options schema if `simple` is `false`, otherwise the default showdown options.
     */
-  @scala.inline
-  def getDefaultOptions(): ShowdownOptionsSchema | ShowdownOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ShowdownOptionsSchema | ShowdownOptions]
-  @scala.inline
-  def getDefaultOptions(simple: Boolean): ShowdownOptionsSchema | ShowdownOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(simple.asInstanceOf[js.Any]).asInstanceOf[ShowdownOptionsSchema | ShowdownOptions]
+  inline def getDefaultOptions(): ShowdownOptionsSchema | ShowdownOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")().asInstanceOf[ShowdownOptionsSchema | ShowdownOptions]
+  inline def getDefaultOptions(simple: Boolean): ShowdownOptionsSchema | ShowdownOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultOptions")(simple.asInstanceOf[js.Any]).asInstanceOf[ShowdownOptionsSchema | ShowdownOptions]
   
   /**
     * Get the "global" currently set flavor.
     *
     * @returns Returns string flavor name.
     */
-  @scala.inline
-  def getFlavor(): Flavor = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlavor")().asInstanceOf[Flavor]
+  inline def getFlavor(): Flavor = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlavor")().asInstanceOf[Flavor]
   
   /**
     * Get the options of a specified flavor. Returns undefined if the flavor was not found.
@@ -246,8 +236,7 @@ object mod {
     * @param name - Name of the flavor.
     * @returns Returns options object of the given flavor `name`.
     */
-  @scala.inline
-  def getFlavorOptions(name: Flavor): js.UndefOr[ShowdownOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlavorOptions")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ShowdownOptions]]
+  inline def getFlavorOptions(name: Flavor): js.UndefOr[ShowdownOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlavorOptions")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ShowdownOptions]]
   
   /**
     * Get a "global" option.
@@ -255,16 +244,14 @@ object mod {
     * @param key - the option key.
     * @returns Returns the value of the given `key`.
     */
-  @scala.inline
-  def getOption(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOption")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getOption(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOption")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Get the "global" options.
     *
     * @returns Returns a options object.
     */
-  @scala.inline
-  def getOptions(): ShowdownOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptions")().asInstanceOf[ShowdownOptions]
+  inline def getOptions(): ShowdownOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptions")().asInstanceOf[ShowdownOptions]
   
   /**
     * Showdown helper.
@@ -272,36 +259,31 @@ object mod {
   @JSImport("showdown", "helper")
   @js.native
   def helper: Helper_ = js.native
-  @scala.inline
-  def helper_=(x: Helper_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("helper")(x.asInstanceOf[js.Any])
+  inline def helper_=(x: Helper_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("helper")(x.asInstanceOf[js.Any])
   
   /**
     * Remove an extension.
     *
     * @param name - The extension name.
     */
-  @scala.inline
-  def removeExtension(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeExtension")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeExtension(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeExtension")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Removes all extensions.
     */
-  @scala.inline
-  def resetExtensions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetExtensions")().asInstanceOf[Unit]
+  inline def resetExtensions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetExtensions")().asInstanceOf[Unit]
   
   /**
     * Reset "global" options to the default values.
     */
-  @scala.inline
-  def resetOptions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetOptions")().asInstanceOf[Unit]
+  inline def resetOptions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetOptions")().asInstanceOf[Unit]
   
   /**
     * Setting a "global" flavor affects all instances of showdown.
     *
     * @param name - The flavor name.
     */
-  @scala.inline
-  def setFlavor(name: Flavor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFlavor")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setFlavor(name: Flavor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFlavor")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Setting a "global" option affects all instances of showdown.
@@ -309,8 +291,7 @@ object mod {
     * @param key - the option key.
     * @param value - the option value.
     */
-  @scala.inline
-  def setOption(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def setOption(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Get a registered subParser.
@@ -320,8 +301,7 @@ object mod {
     * @throws Throws if `name` is not of type string.
     * @throws Throws if the parser is not exists.
     */
-  @scala.inline
-  def subParser(name: String): SubParser_ = ^.asInstanceOf[js.Dynamic].applyDynamic("subParser")(name.asInstanceOf[js.Any]).asInstanceOf[SubParser_]
+  inline def subParser(name: String): SubParser_ = ^.asInstanceOf[js.Dynamic].applyDynamic("subParser")(name.asInstanceOf[js.Any]).asInstanceOf[SubParser_]
   /**
     * Register a subParser.
     *
@@ -329,8 +309,7 @@ object mod {
     * @param func - The handler function of the new parser.
     * @throws Throws if `name` is not of type string.
     */
-  @scala.inline
-  def subParser(name: String, func: SubParser_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("subParser")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def subParser(name: String, func: SubParser_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("subParser")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Checks if the given `ext` is a valid showdown extension.
@@ -338,10 +317,8 @@ object mod {
     * @param ext - The extension to checks.
     * @returns Returns `true` if the extension is valid showdown extension, otherwise `false`.
     */
-  @scala.inline
-  def validateExtension(ext: js.Array[ShowdownExtension]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateExtension")(ext.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def validateExtension(ext: ShowdownExtension): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateExtension")(ext.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def validateExtension(ext: js.Array[ShowdownExtension]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateExtension")(ext.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def validateExtension(ext: ShowdownExtension): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateExtension")(ext.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Showdown converter extensions store object.
@@ -354,26 +331,20 @@ object mod {
   }
   object ConverterExtensions {
     
-    @scala.inline
-    def apply(language: js.Array[ShowdownExtension], output: js.Array[ShowdownExtension]): ConverterExtensions = {
+    inline def apply(language: js.Array[ShowdownExtension], output: js.Array[ShowdownExtension]): ConverterExtensions = {
       val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConverterExtensions]
     }
     
-    @scala.inline
-    implicit class ConverterExtensionsMutableBuilder[Self <: ConverterExtensions] (val x: Self) extends AnyVal {
+    extension [Self <: ConverterExtensions](x: Self) {
       
-      @scala.inline
-      def setLanguage(value: js.Array[ShowdownExtension]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: js.Array[ShowdownExtension]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageVarargs(value: ShowdownExtension*): Self = StObject.set(x, "language", js.Array(value :_*))
+      inline def setLanguageVarargs(value: ShowdownExtension*): Self = StObject.set(x, "language", js.Array(value :_*))
       
-      @scala.inline
-      def setOutput(value: js.Array[ShowdownExtension]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: js.Array[ShowdownExtension]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputVarargs(value: ShowdownExtension*): Self = StObject.set(x, "output", js.Array(value :_*))
+      inline def setOutputVarargs(value: ShowdownExtension*): Self = StObject.set(x, "output", js.Array(value :_*))
     }
   }
   
@@ -407,110 +378,76 @@ object mod {
   }
   object ConverterGlobals {
     
-    @scala.inline
-    def apply(): ConverterGlobals = {
+    inline def apply(): ConverterGlobals = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConverterGlobals]
     }
     
-    @scala.inline
-    implicit class ConverterGlobalsMutableBuilder[Self <: ConverterGlobals] (val x: Self) extends AnyVal {
+    extension [Self <: ConverterGlobals](x: Self) {
       
-      @scala.inline
-      def setConverter(value: Converter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+      inline def setConverter(value: Converter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConverterUndefined: Self = StObject.set(x, "converter", js.undefined)
+      inline def setConverterUndefined: Self = StObject.set(x, "converter", js.undefined)
       
-      @scala.inline
-      def setGDimensions(value: Height): Self = StObject.set(x, "gDimensions", value.asInstanceOf[js.Any])
+      inline def setGDimensions(value: Height): Self = StObject.set(x, "gDimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGDimensionsUndefined: Self = StObject.set(x, "gDimensions", js.undefined)
+      inline def setGDimensionsUndefined: Self = StObject.set(x, "gDimensions", js.undefined)
       
-      @scala.inline
-      def setGHtmlBlocks(value: js.Array[String]): Self = StObject.set(x, "gHtmlBlocks", value.asInstanceOf[js.Any])
+      inline def setGHtmlBlocks(value: js.Array[String]): Self = StObject.set(x, "gHtmlBlocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGHtmlBlocksUndefined: Self = StObject.set(x, "gHtmlBlocks", js.undefined)
+      inline def setGHtmlBlocksUndefined: Self = StObject.set(x, "gHtmlBlocks", js.undefined)
       
-      @scala.inline
-      def setGHtmlBlocksVarargs(value: String*): Self = StObject.set(x, "gHtmlBlocks", js.Array(value :_*))
+      inline def setGHtmlBlocksVarargs(value: String*): Self = StObject.set(x, "gHtmlBlocks", js.Array(value :_*))
       
-      @scala.inline
-      def setGHtmlMdBlocks(value: js.Array[String]): Self = StObject.set(x, "gHtmlMdBlocks", value.asInstanceOf[js.Any])
+      inline def setGHtmlMdBlocks(value: js.Array[String]): Self = StObject.set(x, "gHtmlMdBlocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGHtmlMdBlocksUndefined: Self = StObject.set(x, "gHtmlMdBlocks", js.undefined)
+      inline def setGHtmlMdBlocksUndefined: Self = StObject.set(x, "gHtmlMdBlocks", js.undefined)
       
-      @scala.inline
-      def setGHtmlMdBlocksVarargs(value: String*): Self = StObject.set(x, "gHtmlMdBlocks", js.Array(value :_*))
+      inline def setGHtmlMdBlocksVarargs(value: String*): Self = StObject.set(x, "gHtmlMdBlocks", js.Array(value :_*))
       
-      @scala.inline
-      def setGHtmlSpans(value: js.Array[String]): Self = StObject.set(x, "gHtmlSpans", value.asInstanceOf[js.Any])
+      inline def setGHtmlSpans(value: js.Array[String]): Self = StObject.set(x, "gHtmlSpans", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGHtmlSpansUndefined: Self = StObject.set(x, "gHtmlSpans", js.undefined)
+      inline def setGHtmlSpansUndefined: Self = StObject.set(x, "gHtmlSpans", js.undefined)
       
-      @scala.inline
-      def setGHtmlSpansVarargs(value: String*): Self = StObject.set(x, "gHtmlSpans", js.Array(value :_*))
+      inline def setGHtmlSpansVarargs(value: String*): Self = StObject.set(x, "gHtmlSpans", js.Array(value :_*))
       
-      @scala.inline
-      def setGListLevel(value: Double): Self = StObject.set(x, "gListLevel", value.asInstanceOf[js.Any])
+      inline def setGListLevel(value: Double): Self = StObject.set(x, "gListLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGListLevelUndefined: Self = StObject.set(x, "gListLevel", js.undefined)
+      inline def setGListLevelUndefined: Self = StObject.set(x, "gListLevel", js.undefined)
       
-      @scala.inline
-      def setGTitles(value: StringDictionary[String]): Self = StObject.set(x, "gTitles", value.asInstanceOf[js.Any])
+      inline def setGTitles(value: StringDictionary[String]): Self = StObject.set(x, "gTitles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGTitlesUndefined: Self = StObject.set(x, "gTitles", js.undefined)
+      inline def setGTitlesUndefined: Self = StObject.set(x, "gTitles", js.undefined)
       
-      @scala.inline
-      def setGUrls(value: StringDictionary[String]): Self = StObject.set(x, "gUrls", value.asInstanceOf[js.Any])
+      inline def setGUrls(value: StringDictionary[String]): Self = StObject.set(x, "gUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGUrlsUndefined: Self = StObject.set(x, "gUrls", js.undefined)
+      inline def setGUrlsUndefined: Self = StObject.set(x, "gUrls", js.undefined)
       
-      @scala.inline
-      def setGhCodeBlocks(value: js.Array[Codeblock]): Self = StObject.set(x, "ghCodeBlocks", value.asInstanceOf[js.Any])
+      inline def setGhCodeBlocks(value: js.Array[Codeblock]): Self = StObject.set(x, "ghCodeBlocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGhCodeBlocksUndefined: Self = StObject.set(x, "ghCodeBlocks", js.undefined)
+      inline def setGhCodeBlocksUndefined: Self = StObject.set(x, "ghCodeBlocks", js.undefined)
       
-      @scala.inline
-      def setGhCodeBlocksVarargs(value: Codeblock*): Self = StObject.set(x, "ghCodeBlocks", js.Array(value :_*))
+      inline def setGhCodeBlocksVarargs(value: Codeblock*): Self = StObject.set(x, "ghCodeBlocks", js.Array(value :_*))
       
-      @scala.inline
-      def setHashLinkCounts(value: StringDictionary[Double]): Self = StObject.set(x, "hashLinkCounts", value.asInstanceOf[js.Any])
+      inline def setHashLinkCounts(value: StringDictionary[Double]): Self = StObject.set(x, "hashLinkCounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashLinkCountsUndefined: Self = StObject.set(x, "hashLinkCounts", js.undefined)
+      inline def setHashLinkCountsUndefined: Self = StObject.set(x, "hashLinkCounts", js.undefined)
       
-      @scala.inline
-      def setLangExtensions(value: js.Array[ShowdownExtension]): Self = StObject.set(x, "langExtensions", value.asInstanceOf[js.Any])
+      inline def setLangExtensions(value: js.Array[ShowdownExtension]): Self = StObject.set(x, "langExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangExtensionsUndefined: Self = StObject.set(x, "langExtensions", js.undefined)
+      inline def setLangExtensionsUndefined: Self = StObject.set(x, "langExtensions", js.undefined)
       
-      @scala.inline
-      def setLangExtensionsVarargs(value: ShowdownExtension*): Self = StObject.set(x, "langExtensions", js.Array(value :_*))
+      inline def setLangExtensionsVarargs(value: ShowdownExtension*): Self = StObject.set(x, "langExtensions", js.Array(value :_*))
       
-      @scala.inline
-      def setMetadata(value: Format): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Format): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setOutputModifiers(value: js.Array[ShowdownExtension]): Self = StObject.set(x, "outputModifiers", value.asInstanceOf[js.Any])
+      inline def setOutputModifiers(value: js.Array[ShowdownExtension]): Self = StObject.set(x, "outputModifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputModifiersUndefined: Self = StObject.set(x, "outputModifiers", js.undefined)
+      inline def setOutputModifiersUndefined: Self = StObject.set(x, "outputModifiers", js.undefined)
       
-      @scala.inline
-      def setOutputModifiersVarargs(value: ShowdownExtension*): Self = StObject.set(x, "outputModifiers", js.Array(value :_*))
+      inline def setOutputModifiersVarargs(value: ShowdownExtension*): Self = StObject.set(x, "outputModifiers", js.Array(value :_*))
     }
   }
   
@@ -529,27 +466,22 @@ object mod {
   }
   object ConverterOptions {
     
-    @scala.inline
-    def apply(): ConverterOptions = {
+    inline def apply(): ConverterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConverterOptions]
     }
     
-    @scala.inline
-    implicit class ConverterOptionsMutableBuilder[Self <: ConverterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConverterOptions](x: Self) {
       
-      @scala.inline
-      def setExtensions(
+      inline def setExtensions(
         value: js.Array[
               (js.Function0[js.Array[ShowdownExtension] | ShowdownExtension]) | js.Array[ShowdownExtension] | ShowdownExtension | String
             ]
       ): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(
+      inline def setExtensionsVarargs(
         value: ((js.Function0[js.Array[ShowdownExtension] | ShowdownExtension]) | js.Array[ShowdownExtension] | ShowdownExtension | String)*
       ): Self = StObject.set(x, "extensions", js.Array(value :_*))
     }
@@ -595,24 +527,19 @@ object mod {
   }
   object Extension_ {
     
-    @scala.inline
-    def apply(`type`: String): Extension_ = {
+    inline def apply(`type`: String): Extension_ = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Extension_]
     }
     
-    @scala.inline
-    implicit class Extension_MutableBuilder[Self <: Extension_] (val x: Self) extends AnyVal {
+    extension [Self <: Extension_](x: Self) {
       
-      @scala.inline
-      def setListeners(value: StringDictionary[EventListener]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: StringDictionary[EventListener]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
+      inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -643,23 +570,19 @@ object mod {
   }
   object FilterExtension {
     
-    @scala.inline
-    def apply(`type`: String): FilterExtension = {
+    inline def apply(`type`: String): FilterExtension = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilterExtension]
     }
     
-    @scala.inline
-    implicit class FilterExtensionMutableBuilder[Self <: FilterExtension] (val x: Self) extends AnyVal {
+    extension [Self <: FilterExtension](x: Self) {
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: (/* text */ String, /* converter */ Converter, /* options */ js.UndefOr[ConverterOptions]) => String
       ): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     }
   }
   
@@ -676,20 +599,15 @@ object mod {
   trait Flavor extends StObject
   object Flavor {
     
-    @scala.inline
-    def allOn: typings.showdown.showdownStrings.allOn = "allOn".asInstanceOf[typings.showdown.showdownStrings.allOn]
+    inline def allOn: typings.showdown.showdownStrings.allOn = "allOn".asInstanceOf[typings.showdown.showdownStrings.allOn]
     
-    @scala.inline
-    def ghost: typings.showdown.showdownStrings.ghost = "ghost".asInstanceOf[typings.showdown.showdownStrings.ghost]
+    inline def ghost: typings.showdown.showdownStrings.ghost = "ghost".asInstanceOf[typings.showdown.showdownStrings.ghost]
     
-    @scala.inline
-    def github: typings.showdown.showdownStrings.github = "github".asInstanceOf[typings.showdown.showdownStrings.github]
+    inline def github: typings.showdown.showdownStrings.github = "github".asInstanceOf[typings.showdown.showdownStrings.github]
     
-    @scala.inline
-    def original: typings.showdown.showdownStrings.original = "original".asInstanceOf[typings.showdown.showdownStrings.original]
+    inline def original: typings.showdown.showdownStrings.original = "original".asInstanceOf[typings.showdown.showdownStrings.original]
     
-    @scala.inline
-    def vanilla: typings.showdown.showdownStrings.vanilla = "vanilla".asInstanceOf[typings.showdown.showdownStrings.vanilla]
+    inline def vanilla: typings.showdown.showdownStrings.vanilla = "vanilla".asInstanceOf[typings.showdown.showdownStrings.vanilla]
   }
   
   /** 
@@ -703,17 +621,14 @@ object mod {
   }
   object Helper_ {
     
-    @scala.inline
-    def apply(replaceRecursiveRegExp: /* repeated */ js.Any => String): Helper_ = {
+    inline def apply(replaceRecursiveRegExp: /* repeated */ js.Any => String): Helper_ = {
       val __obj = js.Dynamic.literal(replaceRecursiveRegExp = js.Any.fromFunction1(replaceRecursiveRegExp))
       __obj.asInstanceOf[Helper_]
     }
     
-    @scala.inline
-    implicit class Helper_MutableBuilder[Self <: Helper_] (val x: Self) extends AnyVal {
+    extension [Self <: Helper_](x: Self) {
       
-      @scala.inline
-      def setReplaceRecursiveRegExp(value: /* repeated */ js.Any => String): Self = StObject.set(x, "replaceRecursiveRegExp", js.Any.fromFunction1(value))
+      inline def setReplaceRecursiveRegExp(value: /* repeated */ js.Any => String): Self = StObject.set(x, "replaceRecursiveRegExp", js.Any.fromFunction1(value))
     }
   }
   
@@ -753,27 +668,21 @@ object mod {
   }
   object RegexReplaceExtension {
     
-    @scala.inline
-    def apply(`type`: String): RegexReplaceExtension = {
+    inline def apply(`type`: String): RegexReplaceExtension = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegexReplaceExtension]
     }
     
-    @scala.inline
-    implicit class RegexReplaceExtensionMutableBuilder[Self <: RegexReplaceExtension] (val x: Self) extends AnyVal {
+    extension [Self <: RegexReplaceExtension](x: Self) {
       
-      @scala.inline
-      def setRegex(value: String | RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: String | RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+      inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
       
-      @scala.inline
-      def setReplace(value: js.Any): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      inline def setReplace(value: js.Any): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     }
   }
   
@@ -822,23 +731,19 @@ object mod {
   }
   object ShowdownExtension {
     
-    @scala.inline
-    def apply(`type`: String): ShowdownExtension = {
+    inline def apply(`type`: String): ShowdownExtension = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShowdownExtension]
     }
     
-    @scala.inline
-    implicit class ShowdownExtensionMutableBuilder[Self <: ShowdownExtension] (val x: Self) extends AnyVal {
+    extension [Self <: ShowdownExtension](x: Self) {
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: (/* text */ String, /* converter */ Converter, /* options */ js.UndefOr[ConverterOptions]) => String
       ): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     }
   }
   
@@ -869,32 +774,24 @@ object mod {
   }
   object ShowdownOptionDescription {
     
-    @scala.inline
-    def apply(): ShowdownOptionDescription = {
+    inline def apply(): ShowdownOptionDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShowdownOptionDescription]
     }
     
-    @scala.inline
-    implicit class ShowdownOptionDescriptionMutableBuilder[Self <: ShowdownOptionDescription] (val x: Self) extends AnyVal {
+    extension [Self <: ShowdownOptionDescription](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setType(value: boolean | string | integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: boolean | string | integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -1588,206 +1485,140 @@ object mod {
   }
   object ShowdownOptions {
     
-    @scala.inline
-    def apply(): ShowdownOptions = {
+    inline def apply(): ShowdownOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShowdownOptions]
     }
     
-    @scala.inline
-    implicit class ShowdownOptionsMutableBuilder[Self <: ShowdownOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ShowdownOptions](x: Self) {
       
-      @scala.inline
-      def setBackslashEscapesHTMLTags(value: Boolean): Self = StObject.set(x, "backslashEscapesHTMLTags", value.asInstanceOf[js.Any])
+      inline def setBackslashEscapesHTMLTags(value: Boolean): Self = StObject.set(x, "backslashEscapesHTMLTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackslashEscapesHTMLTagsUndefined: Self = StObject.set(x, "backslashEscapesHTMLTags", js.undefined)
+      inline def setBackslashEscapesHTMLTagsUndefined: Self = StObject.set(x, "backslashEscapesHTMLTags", js.undefined)
       
-      @scala.inline
-      def setCompleteHTMLDocument(value: Boolean): Self = StObject.set(x, "completeHTMLDocument", value.asInstanceOf[js.Any])
+      inline def setCompleteHTMLDocument(value: Boolean): Self = StObject.set(x, "completeHTMLDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteHTMLDocumentUndefined: Self = StObject.set(x, "completeHTMLDocument", js.undefined)
+      inline def setCompleteHTMLDocumentUndefined: Self = StObject.set(x, "completeHTMLDocument", js.undefined)
       
-      @scala.inline
-      def setCustomizedHeaderId(value: Boolean): Self = StObject.set(x, "customizedHeaderId", value.asInstanceOf[js.Any])
+      inline def setCustomizedHeaderId(value: Boolean): Self = StObject.set(x, "customizedHeaderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomizedHeaderIdUndefined: Self = StObject.set(x, "customizedHeaderId", js.undefined)
+      inline def setCustomizedHeaderIdUndefined: Self = StObject.set(x, "customizedHeaderId", js.undefined)
       
-      @scala.inline
-      def setDisableForced4SpacesIndentedSublists(value: Boolean): Self = StObject.set(x, "disableForced4SpacesIndentedSublists", value.asInstanceOf[js.Any])
+      inline def setDisableForced4SpacesIndentedSublists(value: Boolean): Self = StObject.set(x, "disableForced4SpacesIndentedSublists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableForced4SpacesIndentedSublistsUndefined: Self = StObject.set(x, "disableForced4SpacesIndentedSublists", js.undefined)
+      inline def setDisableForced4SpacesIndentedSublistsUndefined: Self = StObject.set(x, "disableForced4SpacesIndentedSublists", js.undefined)
       
-      @scala.inline
-      def setEmoji(value: Boolean): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
+      inline def setEmoji(value: Boolean): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmojiUndefined: Self = StObject.set(x, "emoji", js.undefined)
+      inline def setEmojiUndefined: Self = StObject.set(x, "emoji", js.undefined)
       
-      @scala.inline
-      def setEncodeEmails(value: Boolean): Self = StObject.set(x, "encodeEmails", value.asInstanceOf[js.Any])
+      inline def setEncodeEmails(value: Boolean): Self = StObject.set(x, "encodeEmails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodeEmailsUndefined: Self = StObject.set(x, "encodeEmails", js.undefined)
+      inline def setEncodeEmailsUndefined: Self = StObject.set(x, "encodeEmails", js.undefined)
       
-      @scala.inline
-      def setExcludeTrailingPunctuationFromURLs(value: Boolean): Self = StObject.set(x, "excludeTrailingPunctuationFromURLs", value.asInstanceOf[js.Any])
+      inline def setExcludeTrailingPunctuationFromURLs(value: Boolean): Self = StObject.set(x, "excludeTrailingPunctuationFromURLs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeTrailingPunctuationFromURLsUndefined: Self = StObject.set(x, "excludeTrailingPunctuationFromURLs", js.undefined)
+      inline def setExcludeTrailingPunctuationFromURLsUndefined: Self = StObject.set(x, "excludeTrailingPunctuationFromURLs", js.undefined)
       
-      @scala.inline
-      def setGhCodeBlocks(value: Boolean): Self = StObject.set(x, "ghCodeBlocks", value.asInstanceOf[js.Any])
+      inline def setGhCodeBlocks(value: Boolean): Self = StObject.set(x, "ghCodeBlocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGhCodeBlocksUndefined: Self = StObject.set(x, "ghCodeBlocks", js.undefined)
+      inline def setGhCodeBlocksUndefined: Self = StObject.set(x, "ghCodeBlocks", js.undefined)
       
-      @scala.inline
-      def setGhCompatibleHeaderId(value: Boolean): Self = StObject.set(x, "ghCompatibleHeaderId", value.asInstanceOf[js.Any])
+      inline def setGhCompatibleHeaderId(value: Boolean): Self = StObject.set(x, "ghCompatibleHeaderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGhCompatibleHeaderIdUndefined: Self = StObject.set(x, "ghCompatibleHeaderId", js.undefined)
+      inline def setGhCompatibleHeaderIdUndefined: Self = StObject.set(x, "ghCompatibleHeaderId", js.undefined)
       
-      @scala.inline
-      def setGhMentions(value: Boolean): Self = StObject.set(x, "ghMentions", value.asInstanceOf[js.Any])
+      inline def setGhMentions(value: Boolean): Self = StObject.set(x, "ghMentions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGhMentionsLink(value: String): Self = StObject.set(x, "ghMentionsLink", value.asInstanceOf[js.Any])
+      inline def setGhMentionsLink(value: String): Self = StObject.set(x, "ghMentionsLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGhMentionsLinkUndefined: Self = StObject.set(x, "ghMentionsLink", js.undefined)
+      inline def setGhMentionsLinkUndefined: Self = StObject.set(x, "ghMentionsLink", js.undefined)
       
-      @scala.inline
-      def setGhMentionsUndefined: Self = StObject.set(x, "ghMentions", js.undefined)
+      inline def setGhMentionsUndefined: Self = StObject.set(x, "ghMentions", js.undefined)
       
-      @scala.inline
-      def setHeaderLevelStart(value: Double): Self = StObject.set(x, "headerLevelStart", value.asInstanceOf[js.Any])
+      inline def setHeaderLevelStart(value: Double): Self = StObject.set(x, "headerLevelStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderLevelStartUndefined: Self = StObject.set(x, "headerLevelStart", js.undefined)
+      inline def setHeaderLevelStartUndefined: Self = StObject.set(x, "headerLevelStart", js.undefined)
       
-      @scala.inline
-      def setLiteralMidWordUnderscores(value: Boolean): Self = StObject.set(x, "literalMidWordUnderscores", value.asInstanceOf[js.Any])
+      inline def setLiteralMidWordUnderscores(value: Boolean): Self = StObject.set(x, "literalMidWordUnderscores", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiteralMidWordUnderscoresUndefined: Self = StObject.set(x, "literalMidWordUnderscores", js.undefined)
+      inline def setLiteralMidWordUnderscoresUndefined: Self = StObject.set(x, "literalMidWordUnderscores", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Boolean): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Boolean): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setNoHeaderId(value: Boolean): Self = StObject.set(x, "noHeaderId", value.asInstanceOf[js.Any])
+      inline def setNoHeaderId(value: Boolean): Self = StObject.set(x, "noHeaderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoHeaderIdUndefined: Self = StObject.set(x, "noHeaderId", js.undefined)
+      inline def setNoHeaderIdUndefined: Self = StObject.set(x, "noHeaderId", js.undefined)
       
-      @scala.inline
-      def setOmitExtraWLInCodeBlocks(value: Boolean): Self = StObject.set(x, "omitExtraWLInCodeBlocks", value.asInstanceOf[js.Any])
+      inline def setOmitExtraWLInCodeBlocks(value: Boolean): Self = StObject.set(x, "omitExtraWLInCodeBlocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOmitExtraWLInCodeBlocksUndefined: Self = StObject.set(x, "omitExtraWLInCodeBlocks", js.undefined)
+      inline def setOmitExtraWLInCodeBlocksUndefined: Self = StObject.set(x, "omitExtraWLInCodeBlocks", js.undefined)
       
-      @scala.inline
-      def setOpenLinksInNewWindow(value: Boolean): Self = StObject.set(x, "openLinksInNewWindow", value.asInstanceOf[js.Any])
+      inline def setOpenLinksInNewWindow(value: Boolean): Self = StObject.set(x, "openLinksInNewWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenLinksInNewWindowUndefined: Self = StObject.set(x, "openLinksInNewWindow", js.undefined)
+      inline def setOpenLinksInNewWindowUndefined: Self = StObject.set(x, "openLinksInNewWindow", js.undefined)
       
-      @scala.inline
-      def setParseImgDimensions(value: Boolean): Self = StObject.set(x, "parseImgDimensions", value.asInstanceOf[js.Any])
+      inline def setParseImgDimensions(value: Boolean): Self = StObject.set(x, "parseImgDimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseImgDimensionsUndefined: Self = StObject.set(x, "parseImgDimensions", js.undefined)
+      inline def setParseImgDimensionsUndefined: Self = StObject.set(x, "parseImgDimensions", js.undefined)
       
-      @scala.inline
-      def setPrefixHeaderId(value: String | Boolean): Self = StObject.set(x, "prefixHeaderId", value.asInstanceOf[js.Any])
+      inline def setPrefixHeaderId(value: String | Boolean): Self = StObject.set(x, "prefixHeaderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixHeaderIdUndefined: Self = StObject.set(x, "prefixHeaderId", js.undefined)
+      inline def setPrefixHeaderIdUndefined: Self = StObject.set(x, "prefixHeaderId", js.undefined)
       
-      @scala.inline
-      def setRawHeaderId(value: Boolean): Self = StObject.set(x, "rawHeaderId", value.asInstanceOf[js.Any])
+      inline def setRawHeaderId(value: Boolean): Self = StObject.set(x, "rawHeaderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawHeaderIdUndefined: Self = StObject.set(x, "rawHeaderId", js.undefined)
+      inline def setRawHeaderIdUndefined: Self = StObject.set(x, "rawHeaderId", js.undefined)
       
-      @scala.inline
-      def setRawPrefixHeaderId(value: Boolean): Self = StObject.set(x, "rawPrefixHeaderId", value.asInstanceOf[js.Any])
+      inline def setRawPrefixHeaderId(value: Boolean): Self = StObject.set(x, "rawPrefixHeaderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawPrefixHeaderIdUndefined: Self = StObject.set(x, "rawPrefixHeaderId", js.undefined)
+      inline def setRawPrefixHeaderIdUndefined: Self = StObject.set(x, "rawPrefixHeaderId", js.undefined)
       
-      @scala.inline
-      def setRequireSpaceBeforeHeadingText(value: Boolean): Self = StObject.set(x, "requireSpaceBeforeHeadingText", value.asInstanceOf[js.Any])
+      inline def setRequireSpaceBeforeHeadingText(value: Boolean): Self = StObject.set(x, "requireSpaceBeforeHeadingText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireSpaceBeforeHeadingTextUndefined: Self = StObject.set(x, "requireSpaceBeforeHeadingText", js.undefined)
+      inline def setRequireSpaceBeforeHeadingTextUndefined: Self = StObject.set(x, "requireSpaceBeforeHeadingText", js.undefined)
       
-      @scala.inline
-      def setSimpleLineBreaks(value: Boolean): Self = StObject.set(x, "simpleLineBreaks", value.asInstanceOf[js.Any])
+      inline def setSimpleLineBreaks(value: Boolean): Self = StObject.set(x, "simpleLineBreaks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimpleLineBreaksUndefined: Self = StObject.set(x, "simpleLineBreaks", js.undefined)
+      inline def setSimpleLineBreaksUndefined: Self = StObject.set(x, "simpleLineBreaks", js.undefined)
       
-      @scala.inline
-      def setSimplifiedAutoLink(value: Boolean): Self = StObject.set(x, "simplifiedAutoLink", value.asInstanceOf[js.Any])
+      inline def setSimplifiedAutoLink(value: Boolean): Self = StObject.set(x, "simplifiedAutoLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimplifiedAutoLinkUndefined: Self = StObject.set(x, "simplifiedAutoLink", js.undefined)
+      inline def setSimplifiedAutoLinkUndefined: Self = StObject.set(x, "simplifiedAutoLink", js.undefined)
       
-      @scala.inline
-      def setSmartIndentationFix(value: Boolean): Self = StObject.set(x, "smartIndentationFix", value.asInstanceOf[js.Any])
+      inline def setSmartIndentationFix(value: Boolean): Self = StObject.set(x, "smartIndentationFix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmartIndentationFixUndefined: Self = StObject.set(x, "smartIndentationFix", js.undefined)
+      inline def setSmartIndentationFixUndefined: Self = StObject.set(x, "smartIndentationFix", js.undefined)
       
-      @scala.inline
-      def setSmoothLivePreview(value: Boolean): Self = StObject.set(x, "smoothLivePreview", value.asInstanceOf[js.Any])
+      inline def setSmoothLivePreview(value: Boolean): Self = StObject.set(x, "smoothLivePreview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmoothLivePreviewUndefined: Self = StObject.set(x, "smoothLivePreview", js.undefined)
+      inline def setSmoothLivePreviewUndefined: Self = StObject.set(x, "smoothLivePreview", js.undefined)
       
-      @scala.inline
-      def setSplitAdjacentBlockquotes(value: Boolean): Self = StObject.set(x, "splitAdjacentBlockquotes", value.asInstanceOf[js.Any])
+      inline def setSplitAdjacentBlockquotes(value: Boolean): Self = StObject.set(x, "splitAdjacentBlockquotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitAdjacentBlockquotesUndefined: Self = StObject.set(x, "splitAdjacentBlockquotes", js.undefined)
+      inline def setSplitAdjacentBlockquotesUndefined: Self = StObject.set(x, "splitAdjacentBlockquotes", js.undefined)
       
-      @scala.inline
-      def setStrikethrough(value: Boolean): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
+      inline def setStrikethrough(value: Boolean): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrikethroughUndefined: Self = StObject.set(x, "strikethrough", js.undefined)
+      inline def setStrikethroughUndefined: Self = StObject.set(x, "strikethrough", js.undefined)
       
-      @scala.inline
-      def setTables(value: Boolean): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+      inline def setTables(value: Boolean): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTablesHeaderId(value: Boolean): Self = StObject.set(x, "tablesHeaderId", value.asInstanceOf[js.Any])
+      inline def setTablesHeaderId(value: Boolean): Self = StObject.set(x, "tablesHeaderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTablesHeaderIdUndefined: Self = StObject.set(x, "tablesHeaderId", js.undefined)
+      inline def setTablesHeaderIdUndefined: Self = StObject.set(x, "tablesHeaderId", js.undefined)
       
-      @scala.inline
-      def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
+      inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
       
-      @scala.inline
-      def setTasklists(value: Boolean): Self = StObject.set(x, "tasklists", value.asInstanceOf[js.Any])
+      inline def setTasklists(value: Boolean): Self = StObject.set(x, "tasklists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTasklistsUndefined: Self = StObject.set(x, "tasklists", js.undefined)
+      inline def setTasklistsUndefined: Self = StObject.set(x, "tasklists", js.undefined)
       
-      @scala.inline
-      def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+      inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+      inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
     }
   }
   

@@ -30,31 +30,23 @@ trait ListClustersRequest extends StObject {
 }
 object ListClustersRequest {
   
-  @scala.inline
-  def apply(): ListClustersRequest = {
+  inline def apply(): ListClustersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListClustersRequest]
   }
   
-  @scala.inline
-  implicit class ListClustersRequestMutableBuilder[Self <: ListClustersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListClustersRequest](x: Self) {
     
-    @scala.inline
-    def setClusterNameFilter(value: string): Self = StObject.set(x, "ClusterNameFilter", value.asInstanceOf[js.Any])
+    inline def setClusterNameFilter(value: string): Self = StObject.set(x, "ClusterNameFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterNameFilterUndefined: Self = StObject.set(x, "ClusterNameFilter", js.undefined)
+    inline def setClusterNameFilterUndefined: Self = StObject.set(x, "ClusterNameFilter", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

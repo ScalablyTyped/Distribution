@@ -9,8 +9,7 @@ trait VolumeChangeRequestedEventArgs
      with IVolumeChangeRequestedEventArgs
 object VolumeChangeRequestedEventArgs {
   
-  @scala.inline
-  def apply(volume: Double): VolumeChangeRequestedEventArgs = {
+  inline def apply(volume: Double): VolumeChangeRequestedEventArgs = {
     val __obj = js.Dynamic.literal(volume = volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeChangeRequestedEventArgs]
   }

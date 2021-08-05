@@ -16,5 +16,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @method use
   * @param ...plugin {Function} The plugin(s) to install on `base` (multi-argument).
   */
-@scala.inline
-def use(plugins: (typings.phaser.MatterJS.Plugin | java.lang.String)*): scala.Unit = typings.phaser.global.MatterJS.^.asInstanceOf[js.Dynamic].applyDynamic("use")(plugins.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def use(plugins: (typings.phaser.MatterJS.Plugin | java.lang.String)*): scala.Unit = typings.phaser.global.MatterJS.^.asInstanceOf[js.Dynamic].applyDynamic("use")(plugins.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]

@@ -15,34 +15,25 @@ trait ISearchAgentsResponse extends StObject {
 }
 object ISearchAgentsResponse {
   
-  @scala.inline
-  def apply(): ISearchAgentsResponse = {
+  inline def apply(): ISearchAgentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISearchAgentsResponse]
   }
   
-  @scala.inline
-  implicit class ISearchAgentsResponseMutableBuilder[Self <: ISearchAgentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchAgentsResponse](x: Self) {
     
-    @scala.inline
-    def setAgents(value: js.Array[IAgent]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
+    inline def setAgents(value: js.Array[IAgent]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentsNull: Self = StObject.set(x, "agents", null)
+    inline def setAgentsNull: Self = StObject.set(x, "agents", null)
     
-    @scala.inline
-    def setAgentsUndefined: Self = StObject.set(x, "agents", js.undefined)
+    inline def setAgentsUndefined: Self = StObject.set(x, "agents", js.undefined)
     
-    @scala.inline
-    def setAgentsVarargs(value: IAgent*): Self = StObject.set(x, "agents", js.Array(value :_*))
+    inline def setAgentsVarargs(value: IAgent*): Self = StObject.set(x, "agents", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

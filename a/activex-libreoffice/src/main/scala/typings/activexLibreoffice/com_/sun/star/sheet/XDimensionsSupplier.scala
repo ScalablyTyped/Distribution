@@ -29,8 +29,7 @@ trait XDimensionsSupplier
 }
 object XDimensionsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Dimensions: XNameAccess,
     acquire: () => Unit,
     getDimensions: () => XNameAccess,
@@ -41,13 +40,10 @@ object XDimensionsSupplier {
     __obj.asInstanceOf[XDimensionsSupplier]
   }
   
-  @scala.inline
-  implicit class XDimensionsSupplierMutableBuilder[Self <: XDimensionsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XDimensionsSupplier](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: XNameAccess): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: XNameAccess): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDimensions(value: () => XNameAccess): Self = StObject.set(x, "getDimensions", js.Any.fromFunction0(value))
+    inline def setGetDimensions(value: () => XNameAccess): Self = StObject.set(x, "getDimensions", js.Any.fromFunction0(value))
   }
 }

@@ -14,34 +14,25 @@ trait Accept extends StObject {
 }
 object Accept {
   
-  @scala.inline
-  def apply(): Accept = {
+  inline def apply(): Accept = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Accept]
   }
   
-  @scala.inline
-  implicit class AcceptMutableBuilder[Self <: Accept] (val x: Self) extends AnyVal {
+  extension [Self <: Accept](x: Self) {
     
-    @scala.inline
-    def setAccept(value: js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+    inline def setAccept(value: js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+    inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     
-    @scala.inline
-    def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value :_*))
+    inline def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxSize(value: String): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: String): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
-    @scala.inline
-    def setProtocols(value: Resumable): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+    inline def setProtocols(value: Resumable): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
+    inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
   }
 }

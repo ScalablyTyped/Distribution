@@ -28,7 +28,6 @@ object perspectiveCameraMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): PerspectiveCamera = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PerspectiveCamera]
+    inline def create(): PerspectiveCamera = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PerspectiveCamera]
   }
 }

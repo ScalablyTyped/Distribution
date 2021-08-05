@@ -181,8 +181,7 @@ object mod {
   }
   object VM {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _common: typings.ethereumjsCommon.mod.default,
       _emit: (String, js.Any) => js.Promise[Unit],
       _opcodes: OpcodeList,
@@ -202,50 +201,35 @@ object mod {
       __obj.asInstanceOf[VM]
     }
     
-    @scala.inline
-    implicit class VMMutableBuilder[Self <: VM] (val x: Self) extends AnyVal {
+    extension [Self <: VM](x: Self) {
       
-      @scala.inline
-      def setAllowUnlimitedContractSize(value: Boolean): Self = StObject.set(x, "allowUnlimitedContractSize", value.asInstanceOf[js.Any])
+      inline def setAllowUnlimitedContractSize(value: Boolean): Self = StObject.set(x, "allowUnlimitedContractSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockchain(value: typings.ethereumjsBlockchain.mod.default): Self = StObject.set(x, "blockchain", value.asInstanceOf[js.Any])
+      inline def setBlockchain(value: typings.ethereumjsBlockchain.mod.default): Self = StObject.set(x, "blockchain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopy(value: () => VM): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+      inline def setCopy(value: () => VM): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpts(value: VMOpts): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: VMOpts): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPStateManager(value: typings.ethereumjsVm.promisifiedMod.default): Self = StObject.set(x, "pStateManager", value.asInstanceOf[js.Any])
+      inline def setPStateManager(value: typings.ethereumjsVm.promisifiedMod.default): Self = StObject.set(x, "pStateManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunBlock(value: RunBlockOpts => js.Promise[RunBlockResult]): Self = StObject.set(x, "runBlock", js.Any.fromFunction1(value))
+      inline def setRunBlock(value: RunBlockOpts => js.Promise[RunBlockResult]): Self = StObject.set(x, "runBlock", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRunBlockchain(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "runBlockchain", js.Any.fromFunction1(value))
+      inline def setRunBlockchain(value: js.Any => js.Promise[Unit]): Self = StObject.set(x, "runBlockchain", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRunCall(value: RunCallOpts => js.Promise[EVMResult]): Self = StObject.set(x, "runCall", js.Any.fromFunction1(value))
+      inline def setRunCall(value: RunCallOpts => js.Promise[EVMResult]): Self = StObject.set(x, "runCall", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRunCode(value: RunCodeOpts => js.Promise[ExecResult]): Self = StObject.set(x, "runCode", js.Any.fromFunction1(value))
+      inline def setRunCode(value: RunCodeOpts => js.Promise[ExecResult]): Self = StObject.set(x, "runCode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRunTx(value: RunTxOpts => js.Promise[RunTxResult]): Self = StObject.set(x, "runTx", js.Any.fromFunction1(value))
+      inline def setRunTx(value: RunTxOpts => js.Promise[RunTxResult]): Self = StObject.set(x, "runTx", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStateManager(value: StateManager): Self = StObject.set(x, "stateManager", value.asInstanceOf[js.Any])
+      inline def setStateManager(value: StateManager): Self = StObject.set(x, "stateManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_common(value: typings.ethereumjsCommon.mod.default): Self = StObject.set(x, "_common", value.asInstanceOf[js.Any])
+      inline def set_common(value: typings.ethereumjsCommon.mod.default): Self = StObject.set(x, "_common", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_emit(value: (String, js.Any) => js.Promise[Unit]): Self = StObject.set(x, "_emit", js.Any.fromFunction2(value))
+      inline def set_emit(value: (String, js.Any) => js.Promise[Unit]): Self = StObject.set(x, "_emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_opcodes(value: OpcodeList): Self = StObject.set(x, "_opcodes", value.asInstanceOf[js.Any])
+      inline def set_opcodes(value: OpcodeList): Self = StObject.set(x, "_opcodes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -298,62 +282,44 @@ object mod {
   }
   object VMOpts {
     
-    @scala.inline
-    def apply(): VMOpts = {
+    inline def apply(): VMOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VMOpts]
     }
     
-    @scala.inline
-    implicit class VMOptsMutableBuilder[Self <: VMOpts] (val x: Self) extends AnyVal {
+    extension [Self <: VMOpts](x: Self) {
       
-      @scala.inline
-      def setActivatePrecompiles(value: Boolean): Self = StObject.set(x, "activatePrecompiles", value.asInstanceOf[js.Any])
+      inline def setActivatePrecompiles(value: Boolean): Self = StObject.set(x, "activatePrecompiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivatePrecompilesUndefined: Self = StObject.set(x, "activatePrecompiles", js.undefined)
+      inline def setActivatePrecompilesUndefined: Self = StObject.set(x, "activatePrecompiles", js.undefined)
       
-      @scala.inline
-      def setAllowUnlimitedContractSize(value: Boolean): Self = StObject.set(x, "allowUnlimitedContractSize", value.asInstanceOf[js.Any])
+      inline def setAllowUnlimitedContractSize(value: Boolean): Self = StObject.set(x, "allowUnlimitedContractSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUnlimitedContractSizeUndefined: Self = StObject.set(x, "allowUnlimitedContractSize", js.undefined)
+      inline def setAllowUnlimitedContractSizeUndefined: Self = StObject.set(x, "allowUnlimitedContractSize", js.undefined)
       
-      @scala.inline
-      def setBlockchain(value: typings.ethereumjsBlockchain.mod.default): Self = StObject.set(x, "blockchain", value.asInstanceOf[js.Any])
+      inline def setBlockchain(value: typings.ethereumjsBlockchain.mod.default): Self = StObject.set(x, "blockchain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockchainUndefined: Self = StObject.set(x, "blockchain", js.undefined)
+      inline def setBlockchainUndefined: Self = StObject.set(x, "blockchain", js.undefined)
       
-      @scala.inline
-      def setChain(value: String): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
+      inline def setChain(value: String): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChainUndefined: Self = StObject.set(x, "chain", js.undefined)
+      inline def setChainUndefined: Self = StObject.set(x, "chain", js.undefined)
       
-      @scala.inline
-      def setCommon(value: typings.ethereumjsCommon.mod.default): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+      inline def setCommon(value: typings.ethereumjsCommon.mod.default): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
+      inline def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
       
-      @scala.inline
-      def setHardfork(value: String): Self = StObject.set(x, "hardfork", value.asInstanceOf[js.Any])
+      inline def setHardfork(value: String): Self = StObject.set(x, "hardfork", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHardforkUndefined: Self = StObject.set(x, "hardfork", js.undefined)
+      inline def setHardforkUndefined: Self = StObject.set(x, "hardfork", js.undefined)
       
-      @scala.inline
-      def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateManager(value: StateManager): Self = StObject.set(x, "stateManager", value.asInstanceOf[js.Any])
+      inline def setStateManager(value: StateManager): Self = StObject.set(x, "stateManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateManagerUndefined: Self = StObject.set(x, "stateManager", js.undefined)
+      inline def setStateManagerUndefined: Self = StObject.set(x, "stateManager", js.undefined)
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
 }

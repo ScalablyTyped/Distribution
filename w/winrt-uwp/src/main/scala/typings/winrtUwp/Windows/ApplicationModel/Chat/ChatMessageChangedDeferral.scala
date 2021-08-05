@@ -12,16 +12,13 @@ trait ChatMessageChangedDeferral extends StObject {
 }
 object ChatMessageChangedDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): ChatMessageChangedDeferral = {
+  inline def apply(complete: () => Unit): ChatMessageChangedDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[ChatMessageChangedDeferral]
   }
   
-  @scala.inline
-  implicit class ChatMessageChangedDeferralMutableBuilder[Self <: ChatMessageChangedDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessageChangedDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

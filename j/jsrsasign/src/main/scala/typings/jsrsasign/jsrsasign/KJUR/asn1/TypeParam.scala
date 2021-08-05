@@ -10,17 +10,14 @@ trait TypeParam extends StObject {
 }
 object TypeParam {
   
-  @scala.inline
-  def apply(`type`: String): TypeParam = {
+  inline def apply(`type`: String): TypeParam = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeParam]
   }
   
-  @scala.inline
-  implicit class TypeParamMutableBuilder[Self <: TypeParam] (val x: Self) extends AnyVal {
+  extension [Self <: TypeParam](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

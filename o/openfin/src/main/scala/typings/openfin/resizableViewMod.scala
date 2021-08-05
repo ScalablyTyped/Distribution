@@ -22,7 +22,7 @@ object resizableViewMod {
     
     def createOrAttachView(): js.Promise[Unit] = js.native
     
-    var fin: js.Any = js.native
+    /* private */ var fin: js.Any = js.native
     
     var ofView: View = js.native
     
@@ -40,8 +40,7 @@ object resizableViewMod {
        with ViewCreationOptions
   object ViewState {
     
-    @scala.inline
-    def apply(name: String, target: typings.openfin.identityMod.Identity, url: String): ViewState = {
+    inline def apply(name: String, target: typings.openfin.identityMod.Identity, url: String): ViewState = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ViewState]
     }

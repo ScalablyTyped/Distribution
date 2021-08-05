@@ -80,48 +80,48 @@ object periodMod {
       * Weeks are converted back to days.
       * @throws nothing
       */
-    var _calcInternalValues: js.Any = js.native
+    /* private */ var _calcInternalValues: js.Any = js.native
     
     /**
       * Corrects the difference between _reference and _intReference.
       * @throws nothing
       */
-    var _correctDay: js.Any = js.native
+    /* private */ var _correctDay: js.Any = js.native
     
     /**
       * DST handling
       */
-    var _dst: js.Any = js.native
+    /* private */ var _dst: js.Any = js.native
     
     /**
       * Returns true if DST handling is relevant for us.
       * (i.e. if the reference time zone has DST)
       * @throws nothing
       */
-    var _dstRelevant: js.Any = js.native
+    /* private */ var _dstRelevant: js.Any = js.native
     
     /**
       * Normalized internal DST handling. If DST handling is irrelevant
       * (because the reference time zone does not have DST)
       * then it is set to RegularInterval
       */
-    var _intDst: js.Any = js.native
+    /* private */ var _intDst: js.Any = js.native
     
     /**
       * Normalized interval
       */
-    var _intInterval: js.Any = js.native
+    /* private */ var _intInterval: js.Any = js.native
     
     /**
       * Normalized reference date, has day-of-month <= 28 for Monthly
       * period, or for Yearly period if month is February
       */
-    var _intReference: js.Any = js.native
+    /* private */ var _intReference: js.Any = js.native
     
     /**
       * Interval
       */
-    var _interval: js.Any = js.native
+    /* private */ var _interval: js.Any = js.native
     
     /**
       * If this._internalUnit in [Month, Year], normalizes the day-of-month
@@ -129,12 +129,12 @@ object periodMod {
       * @return a new date if different, otherwise the exact same object (no clone!)
       * @throws nothing
       */
-    var _normalizeDay: js.Any = js.native
+    /* private */ var _normalizeDay: js.Any = js.native
     
     /**
       * Reference moment of period
       */
-    var _reference: js.Any = js.native
+    /* private */ var _reference: js.Any = js.native
     
     /**
       * The amount of units of the interval
@@ -315,20 +315,15 @@ object periodMod {
     /* 1 */ val RegularLocalTime: typings.timezonecomplete.periodMod.PeriodDst.RegularLocalTime & Double = js.native
   }
   
-  @scala.inline
-  def isPeriod(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPeriod")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean]
+  inline def isPeriod(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPeriod")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean]
   
-  @scala.inline
-  def isValidPeriodJson(json: PeriodJson): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPeriodJson")(json.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidPeriodJson(json: PeriodJson): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPeriodJson")(json.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def periodDstToString(p: PeriodDst): String = ^.asInstanceOf[js.Dynamic].applyDynamic("periodDstToString")(p.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def periodDstToString(p: PeriodDst): String = ^.asInstanceOf[js.Dynamic].applyDynamic("periodDstToString")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def timestampOnWeekTimeGreaterThanOrEqualTo(opts: WeekTimeOpts): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampOnWeekTimeGreaterThanOrEqualTo")(opts.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  inline def timestampOnWeekTimeGreaterThanOrEqualTo(opts: WeekTimeOpts): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampOnWeekTimeGreaterThanOrEqualTo")(opts.asInstanceOf[js.Any]).asInstanceOf[DateTime]
   
-  @scala.inline
-  def timestampOnWeekTimeLessThan(opts: WeekTimeOpts): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampOnWeekTimeLessThan")(opts.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  inline def timestampOnWeekTimeLessThan(opts: WeekTimeOpts): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampOnWeekTimeLessThan")(opts.asInstanceOf[js.Any]).asInstanceOf[DateTime]
   
   /* Rewritten from type alias, can be one of: 
     - typings.timezonecomplete.timezonecompleteStrings.regular
@@ -337,11 +332,9 @@ object periodMod {
   trait PeriodDstJson extends StObject
   object PeriodDstJson {
     
-    @scala.inline
-    def local: typings.timezonecomplete.timezonecompleteStrings.local = "local".asInstanceOf[typings.timezonecomplete.timezonecompleteStrings.local]
+    inline def local: typings.timezonecomplete.timezonecompleteStrings.local = "local".asInstanceOf[typings.timezonecomplete.timezonecompleteStrings.local]
     
-    @scala.inline
-    def regular: typings.timezonecomplete.timezonecompleteStrings.regular = "regular".asInstanceOf[typings.timezonecomplete.timezonecompleteStrings.regular]
+    inline def regular: typings.timezonecomplete.timezonecompleteStrings.regular = "regular".asInstanceOf[typings.timezonecomplete.timezonecompleteStrings.regular]
   }
   
   trait PeriodJson extends StObject {
@@ -363,23 +356,18 @@ object periodMod {
   }
   object PeriodJson {
     
-    @scala.inline
-    def apply(duration: String, periodDst: PeriodDstJson, reference: String): PeriodJson = {
+    inline def apply(duration: String, periodDst: PeriodDstJson, reference: String): PeriodJson = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], periodDst = periodDst.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
       __obj.asInstanceOf[PeriodJson]
     }
     
-    @scala.inline
-    implicit class PeriodJsonMutableBuilder[Self <: PeriodJson] (val x: Self) extends AnyVal {
+    extension [Self <: PeriodJson](x: Self) {
       
-      @scala.inline
-      def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriodDst(value: PeriodDstJson): Self = StObject.set(x, "periodDst", value.asInstanceOf[js.Any])
+      inline def setPeriodDst(value: PeriodDstJson): Self = StObject.set(x, "periodDst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+      inline def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     }
   }
   
@@ -417,41 +405,30 @@ object periodMod {
   }
   object WeekTimeOpts {
     
-    @scala.inline
-    def apply(hour: Double, reference: DateTime, weekday: WeekDay): WeekTimeOpts = {
+    inline def apply(hour: Double, reference: DateTime, weekday: WeekDay): WeekTimeOpts = {
       val __obj = js.Dynamic.literal(hour = hour.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any], weekday = weekday.asInstanceOf[js.Any])
       __obj.asInstanceOf[WeekTimeOpts]
     }
     
-    @scala.inline
-    implicit class WeekTimeOptsMutableBuilder[Self <: WeekTimeOpts] (val x: Self) extends AnyVal {
+    extension [Self <: WeekTimeOpts](x: Self) {
       
-      @scala.inline
-      def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMillisecond(value: Double): Self = StObject.set(x, "millisecond", value.asInstanceOf[js.Any])
+      inline def setMillisecond(value: Double): Self = StObject.set(x, "millisecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMillisecondUndefined: Self = StObject.set(x, "millisecond", js.undefined)
+      inline def setMillisecondUndefined: Self = StObject.set(x, "millisecond", js.undefined)
       
-      @scala.inline
-      def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
+      inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
       
-      @scala.inline
-      def setReference(value: DateTime): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+      inline def setReference(value: DateTime): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+      inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
       
-      @scala.inline
-      def setWeekday(value: WeekDay): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+      inline def setWeekday(value: WeekDay): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,31 +14,23 @@ trait ConditionalAccessLocations extends StObject {
 }
 object ConditionalAccessLocations {
   
-  @scala.inline
-  def apply(): ConditionalAccessLocations = {
+  inline def apply(): ConditionalAccessLocations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalAccessLocations]
   }
   
-  @scala.inline
-  implicit class ConditionalAccessLocationsMutableBuilder[Self <: ConditionalAccessLocations] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalAccessLocations](x: Self) {
     
-    @scala.inline
-    def setExcludeLocations(value: js.Array[String]): Self = StObject.set(x, "excludeLocations", value.asInstanceOf[js.Any])
+    inline def setExcludeLocations(value: js.Array[String]): Self = StObject.set(x, "excludeLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeLocationsUndefined: Self = StObject.set(x, "excludeLocations", js.undefined)
+    inline def setExcludeLocationsUndefined: Self = StObject.set(x, "excludeLocations", js.undefined)
     
-    @scala.inline
-    def setExcludeLocationsVarargs(value: String*): Self = StObject.set(x, "excludeLocations", js.Array(value :_*))
+    inline def setExcludeLocationsVarargs(value: String*): Self = StObject.set(x, "excludeLocations", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeLocations(value: js.Array[String]): Self = StObject.set(x, "includeLocations", value.asInstanceOf[js.Any])
+    inline def setIncludeLocations(value: js.Array[String]): Self = StObject.set(x, "includeLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeLocationsUndefined: Self = StObject.set(x, "includeLocations", js.undefined)
+    inline def setIncludeLocationsUndefined: Self = StObject.set(x, "includeLocations", js.undefined)
     
-    @scala.inline
-    def setIncludeLocationsVarargs(value: String*): Self = StObject.set(x, "includeLocations", js.Array(value :_*))
+    inline def setIncludeLocationsVarargs(value: String*): Self = StObject.set(x, "includeLocations", js.Array(value :_*))
   }
 }

@@ -56,53 +56,38 @@ object fileUploaderDropContainerMod extends Shortcut {
   }
   object FileUploaderDropContainerProps {
     
-    @scala.inline
-    def apply(): FileUploaderDropContainerProps = {
+    inline def apply(): FileUploaderDropContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileUploaderDropContainerProps]
     }
     
-    @scala.inline
-    implicit class FileUploaderDropContainerPropsMutableBuilder[Self <: FileUploaderDropContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: FileUploaderDropContainerProps](x: Self) {
       
-      @scala.inline
-      def setAccept(value: js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+      inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      @scala.inline
-      def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value :_*))
+      inline def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value :_*))
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setLabelText(value: String): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
+      inline def setLabelText(value: String): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelTextUndefined: Self = StObject.set(x, "labelText", js.undefined)
+      inline def setLabelTextUndefined: Self = StObject.set(x, "labelText", js.undefined)
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnAddFiles(value: (/* event */ DragEvent[HTMLElement], /* content */ AddedFiles) => Unit): Self = StObject.set(x, "onAddFiles", js.Any.fromFunction2(value))
+      inline def setOnAddFiles(value: (/* event */ DragEvent[HTMLElement], /* content */ AddedFiles) => Unit): Self = StObject.set(x, "onAddFiles", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnAddFilesUndefined: Self = StObject.set(x, "onAddFiles", js.undefined)
+      inline def setOnAddFilesUndefined: Self = StObject.set(x, "onAddFiles", js.undefined)
     }
   }
   

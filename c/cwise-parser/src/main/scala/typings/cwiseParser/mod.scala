@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T](func: js.Function2[/* a */ Double, /* repeated */ T, js.Any]): CompiledRoutine = ^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any]).asInstanceOf[CompiledRoutine]
+  inline def apply[T](func: js.Function2[/* a */ Double, /* repeated */ T, js.Any]): CompiledRoutine = ^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any]).asInstanceOf[CompiledRoutine]
   
   @JSImport("cwise-parser", JSImport.Namespace)
   @js.native
@@ -25,26 +24,20 @@ object mod {
   }
   object CompiledArgument {
     
-    @scala.inline
-    def apply(count: Double, lvalue: Boolean, name: String, rvalue: Boolean): CompiledArgument = {
+    inline def apply(count: Double, lvalue: Boolean, name: String, rvalue: Boolean): CompiledArgument = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], lvalue = lvalue.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rvalue = rvalue.asInstanceOf[js.Any])
       __obj.asInstanceOf[CompiledArgument]
     }
     
-    @scala.inline
-    implicit class CompiledArgumentMutableBuilder[Self <: CompiledArgument] (val x: Self) extends AnyVal {
+    extension [Self <: CompiledArgument](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLvalue(value: Boolean): Self = StObject.set(x, "lvalue", value.asInstanceOf[js.Any])
+      inline def setLvalue(value: Boolean): Self = StObject.set(x, "lvalue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRvalue(value: Boolean): Self = StObject.set(x, "rvalue", value.asInstanceOf[js.Any])
+      inline def setRvalue(value: Boolean): Self = StObject.set(x, "rvalue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,8 +53,7 @@ object mod {
   }
   object CompiledRoutine {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       args: js.Array[CompiledArgument],
       body: String,
       localVars: js.Array[String],
@@ -71,29 +63,21 @@ object mod {
       __obj.asInstanceOf[CompiledRoutine]
     }
     
-    @scala.inline
-    implicit class CompiledRoutineMutableBuilder[Self <: CompiledRoutine] (val x: Self) extends AnyVal {
+    extension [Self <: CompiledRoutine](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[CompiledArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[CompiledArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: CompiledArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: CompiledArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalVars(value: js.Array[String]): Self = StObject.set(x, "localVars", value.asInstanceOf[js.Any])
+      inline def setLocalVars(value: js.Array[String]): Self = StObject.set(x, "localVars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalVarsVarargs(value: String*): Self = StObject.set(x, "localVars", js.Array(value :_*))
+      inline def setLocalVarsVarargs(value: String*): Self = StObject.set(x, "localVars", js.Array(value :_*))
       
-      @scala.inline
-      def setThisVars(value: js.Array[String]): Self = StObject.set(x, "thisVars", value.asInstanceOf[js.Any])
+      inline def setThisVars(value: js.Array[String]): Self = StObject.set(x, "thisVars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThisVarsVarargs(value: String*): Self = StObject.set(x, "thisVars", js.Array(value :_*))
+      inline def setThisVarsVarargs(value: String*): Self = StObject.set(x, "thisVars", js.Array(value :_*))
     }
   }
 }

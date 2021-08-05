@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xml-escape"
-version := "1.1-dt-20190514Z-8e8b38"
+version := "1.1-dt-20190514Z-04afbf"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

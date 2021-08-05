@@ -35,26 +35,20 @@ object Chai {
   }
   object ArrayAssertion {
     
-    @scala.inline
-    def apply(all: Assertion, contain: ArrayInclude, include: ArrayInclude, not: ArrayAssertion): ArrayAssertion = {
+    inline def apply(all: Assertion, contain: ArrayInclude, include: ArrayInclude, not: ArrayAssertion): ArrayAssertion = {
       val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], contain = contain.asInstanceOf[js.Any], include = include.asInstanceOf[js.Any], not = not.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArrayAssertion]
     }
     
-    @scala.inline
-    implicit class ArrayAssertionMutableBuilder[Self <: ArrayAssertion] (val x: Self) extends AnyVal {
+    extension [Self <: ArrayAssertion](x: Self) {
       
-      @scala.inline
-      def setAll(value: Assertion): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: Assertion): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContain(value: ArrayInclude): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
+      inline def setContain(value: ArrayInclude): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclude(value: ArrayInclude): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: ArrayInclude): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNot(value: ArrayAssertion): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+      inline def setNot(value: ArrayAssertion): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,18 +95,15 @@ object Chai {
   }
   object Deep {
     
-    @scala.inline
-    def apply(equals_ : (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Deep = {
+    inline def apply(equals_ : (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Deep = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("equals")(js.Any.fromFunction2(equals_))
       __obj.asInstanceOf[Deep]
     }
     
-    @scala.inline
-    implicit class DeepMutableBuilder[Self <: Deep] (val x: Self) extends AnyVal {
+    extension [Self <: Deep](x: Self) {
       
-      @scala.inline
-      def setEquals_(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      inline def setEquals_(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
     }
   }
   
@@ -160,20 +151,16 @@ object Chai {
   }
   object Item {
     
-    @scala.inline
-    def apply(item: Something, thing: Something): Item = {
+    inline def apply(item: Something, thing: Something): Item = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], thing = thing.asInstanceOf[js.Any])
       __obj.asInstanceOf[Item]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+    extension [Self <: Item](x: Self) {
       
-      @scala.inline
-      def setItem(value: Something): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Something): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThing(value: Something): Self = StObject.set(x, "thing", value.asInstanceOf[js.Any])
+      inline def setThing(value: Something): Self = StObject.set(x, "thing", value.asInstanceOf[js.Any])
     }
   }
   

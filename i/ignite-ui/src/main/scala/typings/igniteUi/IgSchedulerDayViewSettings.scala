@@ -32,31 +32,23 @@ trait IgSchedulerDayViewSettings
 }
 object IgSchedulerDayViewSettings {
   
-  @scala.inline
-  def apply(): IgSchedulerDayViewSettings = {
+  inline def apply(): IgSchedulerDayViewSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgSchedulerDayViewSettings]
   }
   
-  @scala.inline
-  implicit class IgSchedulerDayViewSettingsMutableBuilder[Self <: IgSchedulerDayViewSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IgSchedulerDayViewSettings](x: Self) {
     
-    @scala.inline
-    def setDayViewNumberOfDays(value: Double): Self = StObject.set(x, "dayViewNumberOfDays", value.asInstanceOf[js.Any])
+    inline def setDayViewNumberOfDays(value: Double): Self = StObject.set(x, "dayViewNumberOfDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayViewNumberOfDaysUndefined: Self = StObject.set(x, "dayViewNumberOfDays", js.undefined)
+    inline def setDayViewNumberOfDaysUndefined: Self = StObject.set(x, "dayViewNumberOfDays", js.undefined)
     
-    @scala.inline
-    def setTimeSlotInterval(value: String): Self = StObject.set(x, "timeSlotInterval", value.asInstanceOf[js.Any])
+    inline def setTimeSlotInterval(value: String): Self = StObject.set(x, "timeSlotInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSlotIntervalUndefined: Self = StObject.set(x, "timeSlotInterval", js.undefined)
+    inline def setTimeSlotIntervalUndefined: Self = StObject.set(x, "timeSlotInterval", js.undefined)
     
-    @scala.inline
-    def setWorkingHoursDisplayMode(value: String): Self = StObject.set(x, "workingHoursDisplayMode", value.asInstanceOf[js.Any])
+    inline def setWorkingHoursDisplayMode(value: String): Self = StObject.set(x, "workingHoursDisplayMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkingHoursDisplayModeUndefined: Self = StObject.set(x, "workingHoursDisplayMode", js.undefined)
+    inline def setWorkingHoursDisplayModeUndefined: Self = StObject.set(x, "workingHoursDisplayMode", js.undefined)
   }
 }

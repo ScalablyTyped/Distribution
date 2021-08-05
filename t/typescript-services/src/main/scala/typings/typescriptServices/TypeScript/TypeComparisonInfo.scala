@@ -10,7 +10,7 @@ trait TypeComparisonInfo extends StObject {
   
   var flags: TypeRelationshipFlags
   
-  var indent: js.Any
+  /* private */ var indent: js.Any
   
   /* private */ def indentString(): js.Any
   
@@ -22,8 +22,7 @@ trait TypeComparisonInfo extends StObject {
 }
 object TypeComparisonInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addMessage: String => Unit,
     flags: TypeRelationshipFlags,
     indent: js.Any,
@@ -36,28 +35,20 @@ object TypeComparisonInfo {
     __obj.asInstanceOf[TypeComparisonInfo]
   }
   
-  @scala.inline
-  implicit class TypeComparisonInfoMutableBuilder[Self <: TypeComparisonInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TypeComparisonInfo](x: Self) {
     
-    @scala.inline
-    def setAddMessage(value: String => Unit): Self = StObject.set(x, "addMessage", js.Any.fromFunction1(value))
+    inline def setAddMessage(value: String => Unit): Self = StObject.set(x, "addMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFlags(value: TypeRelationshipFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: TypeRelationshipFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndent(value: js.Any): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    inline def setIndent(value: js.Any): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentString(value: () => js.Any): Self = StObject.set(x, "indentString", js.Any.fromFunction0(value))
+    inline def setIndentString(value: () => js.Any): Self = StObject.set(x, "indentString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyCaptureFirstError(value: Boolean): Self = StObject.set(x, "onlyCaptureFirstError", value.asInstanceOf[js.Any])
+    inline def setOnlyCaptureFirstError(value: Boolean): Self = StObject.set(x, "onlyCaptureFirstError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringConstantVal(value: AST): Self = StObject.set(x, "stringConstantVal", value.asInstanceOf[js.Any])
+    inline def setStringConstantVal(value: AST): Self = StObject.set(x, "stringConstantVal", value.asInstanceOf[js.Any])
   }
 }

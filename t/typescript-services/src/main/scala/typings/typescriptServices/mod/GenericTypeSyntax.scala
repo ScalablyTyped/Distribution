@@ -94,6 +94,5 @@ object GenericTypeSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(name: INameSyntax): typings.typescriptServices.TypeScript.GenericTypeSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(name.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.GenericTypeSyntax]
+  inline def create1(name: INameSyntax): typings.typescriptServices.TypeScript.GenericTypeSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(name.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.GenericTypeSyntax]
 }

@@ -36,8 +36,7 @@ trait Schedule extends StObject {
 }
 object Schedule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: String,
     mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking,
     route: String,
@@ -49,31 +48,22 @@ object Schedule {
     __obj.asInstanceOf[Schedule]
   }
   
-  @scala.inline
-  implicit class ScheduleMutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
+  extension [Self <: Schedule](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequence(value: js.Array[ArrivalDeparture]): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+    inline def setSequence(value: js.Array[ArrivalDeparture]): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceVarargs(value: ArrivalDeparture*): Self = StObject.set(x, "sequence", js.Array(value :_*))
+    inline def setSequenceVarargs(value: ArrivalDeparture*): Self = StObject.set(x, "sequence", js.Array(value :_*))
     
-    @scala.inline
-    def setStarts(value: js.Array[String]): Self = StObject.set(x, "starts", value.asInstanceOf[js.Any])
+    inline def setStarts(value: js.Array[String]): Self = StObject.set(x, "starts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartsVarargs(value: String*): Self = StObject.set(x, "starts", js.Array(value :_*))
+    inline def setStartsVarargs(value: String*): Self = StObject.set(x, "starts", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: schedule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: schedule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

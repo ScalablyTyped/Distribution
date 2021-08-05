@@ -22,25 +22,19 @@ trait LoginWithUsernamePasswordOptions
 }
 object LoginWithUsernamePasswordOptions {
   
-  @scala.inline
-  def apply(): LoginWithUsernamePasswordOptions = {
+  inline def apply(): LoginWithUsernamePasswordOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoginWithUsernamePasswordOptions]
   }
   
-  @scala.inline
-  implicit class LoginWithUsernamePasswordOptionsMutableBuilder[Self <: LoginWithUsernamePasswordOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoginWithUsernamePasswordOptions](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
   }
 }

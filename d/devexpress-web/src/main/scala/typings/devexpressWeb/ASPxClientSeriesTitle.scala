@@ -18,8 +18,7 @@ trait ASPxClientSeriesTitle
 }
 object ASPxClientSeriesTitle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignment: String,
     chart: ASPxClientWebChart,
     dock: String,
@@ -30,10 +29,8 @@ object ASPxClientSeriesTitle {
     __obj.asInstanceOf[ASPxClientSeriesTitle]
   }
   
-  @scala.inline
-  implicit class ASPxClientSeriesTitleMutableBuilder[Self <: ASPxClientSeriesTitle] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSeriesTitle](x: Self) {
     
-    @scala.inline
-    def setSeries(value: ASPxClientSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: ASPxClientSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
   }
 }

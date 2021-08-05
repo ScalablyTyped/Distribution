@@ -20,28 +20,21 @@ trait SchemaRoutersScopedList extends StObject {
 }
 object SchemaRoutersScopedList {
   
-  @scala.inline
-  def apply(): SchemaRoutersScopedList = {
+  inline def apply(): SchemaRoutersScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRoutersScopedList]
   }
   
-  @scala.inline
-  implicit class SchemaRoutersScopedListMutableBuilder[Self <: SchemaRoutersScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRoutersScopedList](x: Self) {
     
-    @scala.inline
-    def setRouters(value: js.Array[SchemaRouter]): Self = StObject.set(x, "routers", value.asInstanceOf[js.Any])
+    inline def setRouters(value: js.Array[SchemaRouter]): Self = StObject.set(x, "routers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutersUndefined: Self = StObject.set(x, "routers", js.undefined)
+    inline def setRoutersUndefined: Self = StObject.set(x, "routers", js.undefined)
     
-    @scala.inline
-    def setRoutersVarargs(value: SchemaRouter*): Self = StObject.set(x, "routers", js.Array(value :_*))
+    inline def setRoutersVarargs(value: SchemaRouter*): Self = StObject.set(x, "routers", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

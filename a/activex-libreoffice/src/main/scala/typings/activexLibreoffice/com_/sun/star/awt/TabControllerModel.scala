@@ -17,8 +17,7 @@ trait TabControllerModel
      with XPersistObject
 object TabControllerModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ControlModels: SafeArray[XControlModel],
     GroupControl: Boolean,
     GroupCount: Double,

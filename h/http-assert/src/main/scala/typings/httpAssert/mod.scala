@@ -6,26 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(value: js.Any, status: Double): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(value: js.Any, status: Double, msg: String): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(value: js.Any, status: Double, msg: String, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(value: js.Any, status: Double, msg: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(value: js.Any, status: Double, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(value: js.Any, status: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(value: js.Any, status: Unit, msg: String, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(value: js.Any, status: Unit, msg: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(value: js.Any, status: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(value: js.Any, status: Double): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(value: js.Any, status: Double, msg: String): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(value: js.Any, status: Double, msg: String, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(value: js.Any, status: Double, msg: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(value: js.Any, status: Double, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(value: js.Any, status: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(value: js.Any, status: Unit, msg: String, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(value: js.Any, status: Unit, msg: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(value: js.Any, status: Unit, opts: js.Object): Unit = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], status.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("http-assert", JSImport.Namespace)
   @js.native

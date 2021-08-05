@@ -11,8 +11,7 @@ object mod {
     * @param name name of the blackhole Logger
     * @return A bunyan logger .
     */
-  @scala.inline
-  def apply(name: String): typings.bunyan.mod.^ = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[typings.bunyan.mod.^]
+  inline def apply(name: String): typings.bunyan.mod.^ = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[typings.bunyan.mod.^]
   
   @JSImport("bunyan-blackhole", JSImport.Namespace)
   @js.native

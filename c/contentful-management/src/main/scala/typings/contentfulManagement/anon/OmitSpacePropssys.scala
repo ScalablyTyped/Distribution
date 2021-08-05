@@ -11,16 +11,13 @@ trait OmitSpacePropssys extends StObject {
 }
 object OmitSpacePropssys {
   
-  @scala.inline
-  def apply(name: String): OmitSpacePropssys = {
+  inline def apply(name: String): OmitSpacePropssys = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitSpacePropssys]
   }
   
-  @scala.inline
-  implicit class OmitSpacePropssysMutableBuilder[Self <: OmitSpacePropssys] (val x: Self) extends AnyVal {
+  extension [Self <: OmitSpacePropssys](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

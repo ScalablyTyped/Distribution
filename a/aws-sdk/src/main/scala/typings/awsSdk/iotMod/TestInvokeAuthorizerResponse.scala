@@ -33,46 +33,33 @@ trait TestInvokeAuthorizerResponse extends StObject {
 }
 object TestInvokeAuthorizerResponse {
   
-  @scala.inline
-  def apply(): TestInvokeAuthorizerResponse = {
+  inline def apply(): TestInvokeAuthorizerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestInvokeAuthorizerResponse]
   }
   
-  @scala.inline
-  implicit class TestInvokeAuthorizerResponseMutableBuilder[Self <: TestInvokeAuthorizerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TestInvokeAuthorizerResponse](x: Self) {
     
-    @scala.inline
-    def setDisconnectAfterInSeconds(value: Seconds): Self = StObject.set(x, "disconnectAfterInSeconds", value.asInstanceOf[js.Any])
+    inline def setDisconnectAfterInSeconds(value: Seconds): Self = StObject.set(x, "disconnectAfterInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisconnectAfterInSecondsUndefined: Self = StObject.set(x, "disconnectAfterInSeconds", js.undefined)
+    inline def setDisconnectAfterInSecondsUndefined: Self = StObject.set(x, "disconnectAfterInSeconds", js.undefined)
     
-    @scala.inline
-    def setIsAuthenticated(value: IsAuthenticated): Self = StObject.set(x, "isAuthenticated", value.asInstanceOf[js.Any])
+    inline def setIsAuthenticated(value: IsAuthenticated): Self = StObject.set(x, "isAuthenticated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAuthenticatedUndefined: Self = StObject.set(x, "isAuthenticated", js.undefined)
+    inline def setIsAuthenticatedUndefined: Self = StObject.set(x, "isAuthenticated", js.undefined)
     
-    @scala.inline
-    def setPolicyDocuments(value: PolicyDocuments): Self = StObject.set(x, "policyDocuments", value.asInstanceOf[js.Any])
+    inline def setPolicyDocuments(value: PolicyDocuments): Self = StObject.set(x, "policyDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyDocumentsUndefined: Self = StObject.set(x, "policyDocuments", js.undefined)
+    inline def setPolicyDocumentsUndefined: Self = StObject.set(x, "policyDocuments", js.undefined)
     
-    @scala.inline
-    def setPolicyDocumentsVarargs(value: PolicyDocument*): Self = StObject.set(x, "policyDocuments", js.Array(value :_*))
+    inline def setPolicyDocumentsVarargs(value: PolicyDocument*): Self = StObject.set(x, "policyDocuments", js.Array(value :_*))
     
-    @scala.inline
-    def setPrincipalId(value: PrincipalId): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
+    inline def setPrincipalId(value: PrincipalId): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
+    inline def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
     
-    @scala.inline
-    def setRefreshAfterInSeconds(value: Seconds): Self = StObject.set(x, "refreshAfterInSeconds", value.asInstanceOf[js.Any])
+    inline def setRefreshAfterInSeconds(value: Seconds): Self = StObject.set(x, "refreshAfterInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshAfterInSecondsUndefined: Self = StObject.set(x, "refreshAfterInSeconds", js.undefined)
+    inline def setRefreshAfterInSecondsUndefined: Self = StObject.set(x, "refreshAfterInSeconds", js.undefined)
   }
 }

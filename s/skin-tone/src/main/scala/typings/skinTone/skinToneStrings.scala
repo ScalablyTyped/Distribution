@@ -11,41 +11,35 @@ object skinToneStrings {
   sealed trait brown
     extends StObject
        with Tone
-  @scala.inline
-  def brown: brown = "brown".asInstanceOf[brown]
+  inline def brown: brown = "brown".asInstanceOf[brown]
   
   @js.native
   sealed trait creamWhite
     extends StObject
        with Tone
-  @scala.inline
-  def creamWhite: creamWhite = "creamWhite".asInstanceOf[creamWhite]
+  inline def creamWhite: creamWhite = "creamWhite".asInstanceOf[creamWhite]
   
   @js.native
   sealed trait darkBrown
     extends StObject
        with Tone
-  @scala.inline
-  def darkBrown: darkBrown = "darkBrown".asInstanceOf[darkBrown]
+  inline def darkBrown: darkBrown = "darkBrown".asInstanceOf[darkBrown]
   
   @js.native
   sealed trait lightBrown
     extends StObject
        with Tone
-  @scala.inline
-  def lightBrown: lightBrown = "lightBrown".asInstanceOf[lightBrown]
+  inline def lightBrown: lightBrown = "lightBrown".asInstanceOf[lightBrown]
   
   @js.native
   sealed trait none
     extends StObject
        with Tone
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait white
     extends StObject
        with Tone
-  @scala.inline
-  def white: white = "white".asInstanceOf[white]
+  inline def white: white = "white".asInstanceOf[white]
 }

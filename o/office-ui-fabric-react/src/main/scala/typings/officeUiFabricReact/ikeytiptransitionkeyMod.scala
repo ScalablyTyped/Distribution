@@ -10,11 +10,9 @@ object ikeytiptransitionkeyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def transitionKeysAreEqual(key1: IKeytipTransitionKey, key2: IKeytipTransitionKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("transitionKeysAreEqual")(key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def transitionKeysAreEqual(key1: IKeytipTransitionKey, key2: IKeytipTransitionKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("transitionKeysAreEqual")(key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def transitionKeysContain(keys: js.Array[IKeytipTransitionKey], key: IKeytipTransitionKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("transitionKeysContain")(keys.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def transitionKeysContain(keys: js.Array[IKeytipTransitionKey], key: IKeytipTransitionKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("transitionKeysContain")(keys.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait IKeytipTransitionKey extends StObject {
     
@@ -24,26 +22,20 @@ object ikeytiptransitionkeyMod {
   }
   object IKeytipTransitionKey {
     
-    @scala.inline
-    def apply(key: String): IKeytipTransitionKey = {
+    inline def apply(key: String): IKeytipTransitionKey = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[IKeytipTransitionKey]
     }
     
-    @scala.inline
-    implicit class IKeytipTransitionKeyMutableBuilder[Self <: IKeytipTransitionKey] (val x: Self) extends AnyVal {
+    extension [Self <: IKeytipTransitionKey](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifierKeys(value: js.Array[KeytipTransitionModifier]): Self = StObject.set(x, "modifierKeys", value.asInstanceOf[js.Any])
+      inline def setModifierKeys(value: js.Array[KeytipTransitionModifier]): Self = StObject.set(x, "modifierKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifierKeysUndefined: Self = StObject.set(x, "modifierKeys", js.undefined)
+      inline def setModifierKeysUndefined: Self = StObject.set(x, "modifierKeys", js.undefined)
       
-      @scala.inline
-      def setModifierKeysVarargs(value: KeytipTransitionModifier*): Self = StObject.set(x, "modifierKeys", js.Array(value :_*))
+      inline def setModifierKeysVarargs(value: KeytipTransitionModifier*): Self = StObject.set(x, "modifierKeys", js.Array(value :_*))
     }
   }
   
@@ -56,16 +48,12 @@ object ikeytiptransitionkeyMod {
   trait KeytipTransitionModifier extends StObject
   object KeytipTransitionModifier {
     
-    @scala.inline
-    def `16`: typings.officeUiFabricReact.officeUiFabricReactNumbers.`16` = 16.asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactNumbers.`16`]
+    inline def `16`: typings.officeUiFabricReact.officeUiFabricReactNumbers.`16` = 16.asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactNumbers.`16`]
     
-    @scala.inline
-    def `17`: typings.officeUiFabricReact.officeUiFabricReactNumbers.`17` = 17.asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactNumbers.`17`]
+    inline def `17`: typings.officeUiFabricReact.officeUiFabricReactNumbers.`17` = 17.asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactNumbers.`17`]
     
-    @scala.inline
-    def `18`: typings.officeUiFabricReact.officeUiFabricReactNumbers.`18` = 18.asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactNumbers.`18`]
+    inline def `18`: typings.officeUiFabricReact.officeUiFabricReactNumbers.`18` = 18.asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactNumbers.`18`]
     
-    @scala.inline
-    def `91`: typings.officeUiFabricReact.officeUiFabricReactNumbers.`91` = 91.asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactNumbers.`91`]
+    inline def `91`: typings.officeUiFabricReact.officeUiFabricReactNumbers.`91` = 91.asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactNumbers.`91`]
   }
 }

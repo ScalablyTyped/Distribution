@@ -14,22 +14,17 @@ trait OmitAssetPropssys extends StObject {
 }
 object OmitAssetPropssys {
   
-  @scala.inline
-  def apply(fields: Description): OmitAssetPropssys = {
+  inline def apply(fields: Description): OmitAssetPropssys = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitAssetPropssys]
   }
   
-  @scala.inline
-  implicit class OmitAssetPropssysMutableBuilder[Self <: OmitAssetPropssys] (val x: Self) extends AnyVal {
+  extension [Self <: OmitAssetPropssys](x: Self) {
     
-    @scala.inline
-    def setFields(value: Description): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: Description): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: MetadataProps): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: MetadataProps): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

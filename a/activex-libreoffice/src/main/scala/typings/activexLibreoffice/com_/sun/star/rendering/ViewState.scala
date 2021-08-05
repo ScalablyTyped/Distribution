@@ -33,19 +33,15 @@ trait ViewState extends StObject {
 }
 object ViewState {
   
-  @scala.inline
-  def apply(AffineTransform: AffineMatrix2D, Clip: XPolyPolygon2D): ViewState = {
+  inline def apply(AffineTransform: AffineMatrix2D, Clip: XPolyPolygon2D): ViewState = {
     val __obj = js.Dynamic.literal(AffineTransform = AffineTransform.asInstanceOf[js.Any], Clip = Clip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewState]
   }
   
-  @scala.inline
-  implicit class ViewStateMutableBuilder[Self <: ViewState] (val x: Self) extends AnyVal {
+  extension [Self <: ViewState](x: Self) {
     
-    @scala.inline
-    def setAffineTransform(value: AffineMatrix2D): Self = StObject.set(x, "AffineTransform", value.asInstanceOf[js.Any])
+    inline def setAffineTransform(value: AffineMatrix2D): Self = StObject.set(x, "AffineTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClip(value: XPolyPolygon2D): Self = StObject.set(x, "Clip", value.asInstanceOf[js.Any])
+    inline def setClip(value: XPolyPolygon2D): Self = StObject.set(x, "Clip", value.asInstanceOf[js.Any])
   }
 }

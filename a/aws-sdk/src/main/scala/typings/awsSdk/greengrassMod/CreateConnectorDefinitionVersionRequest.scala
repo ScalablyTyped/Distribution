@@ -23,31 +23,23 @@ trait CreateConnectorDefinitionVersionRequest extends StObject {
 }
 object CreateConnectorDefinitionVersionRequest {
   
-  @scala.inline
-  def apply(ConnectorDefinitionId: string): CreateConnectorDefinitionVersionRequest = {
+  inline def apply(ConnectorDefinitionId: string): CreateConnectorDefinitionVersionRequest = {
     val __obj = js.Dynamic.literal(ConnectorDefinitionId = ConnectorDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConnectorDefinitionVersionRequest]
   }
   
-  @scala.inline
-  implicit class CreateConnectorDefinitionVersionRequestMutableBuilder[Self <: CreateConnectorDefinitionVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateConnectorDefinitionVersionRequest](x: Self) {
     
-    @scala.inline
-    def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
+    inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
+    inline def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
     
-    @scala.inline
-    def setConnectorDefinitionId(value: string): Self = StObject.set(x, "ConnectorDefinitionId", value.asInstanceOf[js.Any])
+    inline def setConnectorDefinitionId(value: string): Self = StObject.set(x, "ConnectorDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectors(value: listOfConnector): Self = StObject.set(x, "Connectors", value.asInstanceOf[js.Any])
+    inline def setConnectors(value: listOfConnector): Self = StObject.set(x, "Connectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorsUndefined: Self = StObject.set(x, "Connectors", js.undefined)
+    inline def setConnectorsUndefined: Self = StObject.set(x, "Connectors", js.undefined)
     
-    @scala.inline
-    def setConnectorsVarargs(value: Connector*): Self = StObject.set(x, "Connectors", js.Array(value :_*))
+    inline def setConnectorsVarargs(value: Connector*): Self = StObject.set(x, "Connectors", js.Array(value :_*))
   }
 }

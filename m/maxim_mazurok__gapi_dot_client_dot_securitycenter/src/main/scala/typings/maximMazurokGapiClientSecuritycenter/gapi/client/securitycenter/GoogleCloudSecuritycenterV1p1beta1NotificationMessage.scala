@@ -17,31 +17,23 @@ trait GoogleCloudSecuritycenterV1p1beta1NotificationMessage extends StObject {
 }
 object GoogleCloudSecuritycenterV1p1beta1NotificationMessage {
   
-  @scala.inline
-  def apply(): GoogleCloudSecuritycenterV1p1beta1NotificationMessage = {
+  inline def apply(): GoogleCloudSecuritycenterV1p1beta1NotificationMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudSecuritycenterV1p1beta1NotificationMessage]
   }
   
-  @scala.inline
-  implicit class GoogleCloudSecuritycenterV1p1beta1NotificationMessageMutableBuilder[Self <: GoogleCloudSecuritycenterV1p1beta1NotificationMessage] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudSecuritycenterV1p1beta1NotificationMessage](x: Self) {
     
-    @scala.inline
-    def setFinding(value: GoogleCloudSecuritycenterV1p1beta1Finding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
+    inline def setFinding(value: GoogleCloudSecuritycenterV1p1beta1Finding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
+    inline def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
     
-    @scala.inline
-    def setNotificationConfigName(value: String): Self = StObject.set(x, "notificationConfigName", value.asInstanceOf[js.Any])
+    inline def setNotificationConfigName(value: String): Self = StObject.set(x, "notificationConfigName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationConfigNameUndefined: Self = StObject.set(x, "notificationConfigName", js.undefined)
+    inline def setNotificationConfigNameUndefined: Self = StObject.set(x, "notificationConfigName", js.undefined)
     
-    @scala.inline
-    def setResource(value: GoogleCloudSecuritycenterV1p1beta1Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GoogleCloudSecuritycenterV1p1beta1Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

@@ -166,21 +166,16 @@ object metricAlarmMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): MetricAlarm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MetricAlarm]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MetricAlarm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MetricAlarm]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MetricAlarmState): MetricAlarm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MetricAlarm]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MetricAlarmState, opts: CustomResourceOptions): MetricAlarm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MetricAlarm]
+    inline def get(name: String, id: Input[ID]): MetricAlarm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MetricAlarm]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MetricAlarm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MetricAlarm]
+    inline def get(name: String, id: Input[ID], state: MetricAlarmState): MetricAlarm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MetricAlarm]
+    inline def get(name: String, id: Input[ID], state: MetricAlarmState, opts: CustomResourceOptions): MetricAlarm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MetricAlarm]
     
     /**
       * Returns true if the given object is an instance of MetricAlarm.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/metricAlarm.MetricAlarm */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/metricAlarm.MetricAlarm */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/metricAlarm.MetricAlarm */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/metricAlarm.MetricAlarm */ Boolean]
   }
   
   trait MetricAlarmArgs extends StObject {
@@ -307,152 +302,104 @@ object metricAlarmMod {
   }
   object MetricAlarmArgs {
     
-    @scala.inline
-    def apply(comparisonOperator: Input[String], evaluationPeriods: Input[Double]): MetricAlarmArgs = {
+    inline def apply(comparisonOperator: Input[String], evaluationPeriods: Input[Double]): MetricAlarmArgs = {
       val __obj = js.Dynamic.literal(comparisonOperator = comparisonOperator.asInstanceOf[js.Any], evaluationPeriods = evaluationPeriods.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetricAlarmArgs]
     }
     
-    @scala.inline
-    implicit class MetricAlarmArgsMutableBuilder[Self <: MetricAlarmArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MetricAlarmArgs](x: Self) {
       
-      @scala.inline
-      def setActionsEnabled(value: Input[Boolean]): Self = StObject.set(x, "actionsEnabled", value.asInstanceOf[js.Any])
+      inline def setActionsEnabled(value: Input[Boolean]): Self = StObject.set(x, "actionsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsEnabledUndefined: Self = StObject.set(x, "actionsEnabled", js.undefined)
+      inline def setActionsEnabledUndefined: Self = StObject.set(x, "actionsEnabled", js.undefined)
       
-      @scala.inline
-      def setAlarmActions(value: Input[js.Array[Input[String | Topic]]]): Self = StObject.set(x, "alarmActions", value.asInstanceOf[js.Any])
+      inline def setAlarmActions(value: Input[js.Array[Input[String | Topic]]]): Self = StObject.set(x, "alarmActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlarmActionsUndefined: Self = StObject.set(x, "alarmActions", js.undefined)
+      inline def setAlarmActionsUndefined: Self = StObject.set(x, "alarmActions", js.undefined)
       
-      @scala.inline
-      def setAlarmActionsVarargs(value: (Input[String | Topic])*): Self = StObject.set(x, "alarmActions", js.Array(value :_*))
+      inline def setAlarmActionsVarargs(value: (Input[String | Topic])*): Self = StObject.set(x, "alarmActions", js.Array(value :_*))
       
-      @scala.inline
-      def setAlarmDescription(value: Input[String]): Self = StObject.set(x, "alarmDescription", value.asInstanceOf[js.Any])
+      inline def setAlarmDescription(value: Input[String]): Self = StObject.set(x, "alarmDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlarmDescriptionUndefined: Self = StObject.set(x, "alarmDescription", js.undefined)
+      inline def setAlarmDescriptionUndefined: Self = StObject.set(x, "alarmDescription", js.undefined)
       
-      @scala.inline
-      def setComparisonOperator(value: Input[String]): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
+      inline def setComparisonOperator(value: Input[String]): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatapointsToAlarm(value: Input[Double]): Self = StObject.set(x, "datapointsToAlarm", value.asInstanceOf[js.Any])
+      inline def setDatapointsToAlarm(value: Input[Double]): Self = StObject.set(x, "datapointsToAlarm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatapointsToAlarmUndefined: Self = StObject.set(x, "datapointsToAlarm", js.undefined)
+      inline def setDatapointsToAlarmUndefined: Self = StObject.set(x, "datapointsToAlarm", js.undefined)
       
-      @scala.inline
-      def setDimensions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+      inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      @scala.inline
-      def setEvaluateLowSampleCountPercentiles(value: Input[String]): Self = StObject.set(x, "evaluateLowSampleCountPercentiles", value.asInstanceOf[js.Any])
+      inline def setEvaluateLowSampleCountPercentiles(value: Input[String]): Self = StObject.set(x, "evaluateLowSampleCountPercentiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvaluateLowSampleCountPercentilesUndefined: Self = StObject.set(x, "evaluateLowSampleCountPercentiles", js.undefined)
+      inline def setEvaluateLowSampleCountPercentilesUndefined: Self = StObject.set(x, "evaluateLowSampleCountPercentiles", js.undefined)
       
-      @scala.inline
-      def setEvaluationPeriods(value: Input[Double]): Self = StObject.set(x, "evaluationPeriods", value.asInstanceOf[js.Any])
+      inline def setEvaluationPeriods(value: Input[Double]): Self = StObject.set(x, "evaluationPeriods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedStatistic(value: Input[String]): Self = StObject.set(x, "extendedStatistic", value.asInstanceOf[js.Any])
+      inline def setExtendedStatistic(value: Input[String]): Self = StObject.set(x, "extendedStatistic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedStatisticUndefined: Self = StObject.set(x, "extendedStatistic", js.undefined)
+      inline def setExtendedStatisticUndefined: Self = StObject.set(x, "extendedStatistic", js.undefined)
       
-      @scala.inline
-      def setInsufficientDataActions(value: Input[js.Array[Input[String | Topic]]]): Self = StObject.set(x, "insufficientDataActions", value.asInstanceOf[js.Any])
+      inline def setInsufficientDataActions(value: Input[js.Array[Input[String | Topic]]]): Self = StObject.set(x, "insufficientDataActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsufficientDataActionsUndefined: Self = StObject.set(x, "insufficientDataActions", js.undefined)
+      inline def setInsufficientDataActionsUndefined: Self = StObject.set(x, "insufficientDataActions", js.undefined)
       
-      @scala.inline
-      def setInsufficientDataActionsVarargs(value: (Input[String | Topic])*): Self = StObject.set(x, "insufficientDataActions", js.Array(value :_*))
+      inline def setInsufficientDataActionsVarargs(value: (Input[String | Topic])*): Self = StObject.set(x, "insufficientDataActions", js.Array(value :_*))
       
-      @scala.inline
-      def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+      inline def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+      inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
       
-      @scala.inline
-      def setMetricQueries(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudwatch.MetricAlarmMetricQuery]]]): Self = StObject.set(x, "metricQueries", value.asInstanceOf[js.Any])
+      inline def setMetricQueries(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudwatch.MetricAlarmMetricQuery]]]): Self = StObject.set(x, "metricQueries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricQueriesUndefined: Self = StObject.set(x, "metricQueries", js.undefined)
+      inline def setMetricQueriesUndefined: Self = StObject.set(x, "metricQueries", js.undefined)
       
-      @scala.inline
-      def setMetricQueriesVarargs(value: Input[typings.pulumiAws.inputMod.cloudwatch.MetricAlarmMetricQuery]*): Self = StObject.set(x, "metricQueries", js.Array(value :_*))
+      inline def setMetricQueriesVarargs(value: Input[typings.pulumiAws.inputMod.cloudwatch.MetricAlarmMetricQuery]*): Self = StObject.set(x, "metricQueries", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setOkActions(value: Input[js.Array[Input[String | Topic]]]): Self = StObject.set(x, "okActions", value.asInstanceOf[js.Any])
+      inline def setOkActions(value: Input[js.Array[Input[String | Topic]]]): Self = StObject.set(x, "okActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOkActionsUndefined: Self = StObject.set(x, "okActions", js.undefined)
+      inline def setOkActionsUndefined: Self = StObject.set(x, "okActions", js.undefined)
       
-      @scala.inline
-      def setOkActionsVarargs(value: (Input[String | Topic])*): Self = StObject.set(x, "okActions", js.Array(value :_*))
+      inline def setOkActionsVarargs(value: (Input[String | Topic])*): Self = StObject.set(x, "okActions", js.Array(value :_*))
       
-      @scala.inline
-      def setPeriod(value: Input[Double]): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+      inline def setPeriod(value: Input[Double]): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+      inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
       
-      @scala.inline
-      def setStatistic(value: Input[String]): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
+      inline def setStatistic(value: Input[String]): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatisticUndefined: Self = StObject.set(x, "statistic", js.undefined)
+      inline def setStatisticUndefined: Self = StObject.set(x, "statistic", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Input[Double]): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Input[Double]): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdMetricId(value: Input[String]): Self = StObject.set(x, "thresholdMetricId", value.asInstanceOf[js.Any])
+      inline def setThresholdMetricId(value: Input[String]): Self = StObject.set(x, "thresholdMetricId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdMetricIdUndefined: Self = StObject.set(x, "thresholdMetricId", js.undefined)
+      inline def setThresholdMetricIdUndefined: Self = StObject.set(x, "thresholdMetricId", js.undefined)
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
       
-      @scala.inline
-      def setTreatMissingData(value: Input[String]): Self = StObject.set(x, "treatMissingData", value.asInstanceOf[js.Any])
+      inline def setTreatMissingData(value: Input[String]): Self = StObject.set(x, "treatMissingData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreatMissingDataUndefined: Self = StObject.set(x, "treatMissingData", js.undefined)
+      inline def setTreatMissingDataUndefined: Self = StObject.set(x, "treatMissingData", js.undefined)
       
-      @scala.inline
-      def setUnit(value: Input[String]): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: Input[String]): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+      inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     }
   }
   
@@ -585,164 +532,112 @@ object metricAlarmMod {
   }
   object MetricAlarmState {
     
-    @scala.inline
-    def apply(): MetricAlarmState = {
+    inline def apply(): MetricAlarmState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MetricAlarmState]
     }
     
-    @scala.inline
-    implicit class MetricAlarmStateMutableBuilder[Self <: MetricAlarmState] (val x: Self) extends AnyVal {
+    extension [Self <: MetricAlarmState](x: Self) {
       
-      @scala.inline
-      def setActionsEnabled(value: Input[Boolean]): Self = StObject.set(x, "actionsEnabled", value.asInstanceOf[js.Any])
+      inline def setActionsEnabled(value: Input[Boolean]): Self = StObject.set(x, "actionsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsEnabledUndefined: Self = StObject.set(x, "actionsEnabled", js.undefined)
+      inline def setActionsEnabledUndefined: Self = StObject.set(x, "actionsEnabled", js.undefined)
       
-      @scala.inline
-      def setAlarmActions(value: Input[js.Array[Input[String | Topic]]]): Self = StObject.set(x, "alarmActions", value.asInstanceOf[js.Any])
+      inline def setAlarmActions(value: Input[js.Array[Input[String | Topic]]]): Self = StObject.set(x, "alarmActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlarmActionsUndefined: Self = StObject.set(x, "alarmActions", js.undefined)
+      inline def setAlarmActionsUndefined: Self = StObject.set(x, "alarmActions", js.undefined)
       
-      @scala.inline
-      def setAlarmActionsVarargs(value: (Input[String | Topic])*): Self = StObject.set(x, "alarmActions", js.Array(value :_*))
+      inline def setAlarmActionsVarargs(value: (Input[String | Topic])*): Self = StObject.set(x, "alarmActions", js.Array(value :_*))
       
-      @scala.inline
-      def setAlarmDescription(value: Input[String]): Self = StObject.set(x, "alarmDescription", value.asInstanceOf[js.Any])
+      inline def setAlarmDescription(value: Input[String]): Self = StObject.set(x, "alarmDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlarmDescriptionUndefined: Self = StObject.set(x, "alarmDescription", js.undefined)
+      inline def setAlarmDescriptionUndefined: Self = StObject.set(x, "alarmDescription", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setComparisonOperator(value: Input[String]): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
+      inline def setComparisonOperator(value: Input[String]): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparisonOperatorUndefined: Self = StObject.set(x, "comparisonOperator", js.undefined)
+      inline def setComparisonOperatorUndefined: Self = StObject.set(x, "comparisonOperator", js.undefined)
       
-      @scala.inline
-      def setDatapointsToAlarm(value: Input[Double]): Self = StObject.set(x, "datapointsToAlarm", value.asInstanceOf[js.Any])
+      inline def setDatapointsToAlarm(value: Input[Double]): Self = StObject.set(x, "datapointsToAlarm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatapointsToAlarmUndefined: Self = StObject.set(x, "datapointsToAlarm", js.undefined)
+      inline def setDatapointsToAlarmUndefined: Self = StObject.set(x, "datapointsToAlarm", js.undefined)
       
-      @scala.inline
-      def setDimensions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+      inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      @scala.inline
-      def setEvaluateLowSampleCountPercentiles(value: Input[String]): Self = StObject.set(x, "evaluateLowSampleCountPercentiles", value.asInstanceOf[js.Any])
+      inline def setEvaluateLowSampleCountPercentiles(value: Input[String]): Self = StObject.set(x, "evaluateLowSampleCountPercentiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvaluateLowSampleCountPercentilesUndefined: Self = StObject.set(x, "evaluateLowSampleCountPercentiles", js.undefined)
+      inline def setEvaluateLowSampleCountPercentilesUndefined: Self = StObject.set(x, "evaluateLowSampleCountPercentiles", js.undefined)
       
-      @scala.inline
-      def setEvaluationPeriods(value: Input[Double]): Self = StObject.set(x, "evaluationPeriods", value.asInstanceOf[js.Any])
+      inline def setEvaluationPeriods(value: Input[Double]): Self = StObject.set(x, "evaluationPeriods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvaluationPeriodsUndefined: Self = StObject.set(x, "evaluationPeriods", js.undefined)
+      inline def setEvaluationPeriodsUndefined: Self = StObject.set(x, "evaluationPeriods", js.undefined)
       
-      @scala.inline
-      def setExtendedStatistic(value: Input[String]): Self = StObject.set(x, "extendedStatistic", value.asInstanceOf[js.Any])
+      inline def setExtendedStatistic(value: Input[String]): Self = StObject.set(x, "extendedStatistic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedStatisticUndefined: Self = StObject.set(x, "extendedStatistic", js.undefined)
+      inline def setExtendedStatisticUndefined: Self = StObject.set(x, "extendedStatistic", js.undefined)
       
-      @scala.inline
-      def setInsufficientDataActions(value: Input[js.Array[Input[String | Topic]]]): Self = StObject.set(x, "insufficientDataActions", value.asInstanceOf[js.Any])
+      inline def setInsufficientDataActions(value: Input[js.Array[Input[String | Topic]]]): Self = StObject.set(x, "insufficientDataActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsufficientDataActionsUndefined: Self = StObject.set(x, "insufficientDataActions", js.undefined)
+      inline def setInsufficientDataActionsUndefined: Self = StObject.set(x, "insufficientDataActions", js.undefined)
       
-      @scala.inline
-      def setInsufficientDataActionsVarargs(value: (Input[String | Topic])*): Self = StObject.set(x, "insufficientDataActions", js.Array(value :_*))
+      inline def setInsufficientDataActionsVarargs(value: (Input[String | Topic])*): Self = StObject.set(x, "insufficientDataActions", js.Array(value :_*))
       
-      @scala.inline
-      def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+      inline def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+      inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
       
-      @scala.inline
-      def setMetricQueries(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudwatch.MetricAlarmMetricQuery]]]): Self = StObject.set(x, "metricQueries", value.asInstanceOf[js.Any])
+      inline def setMetricQueries(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudwatch.MetricAlarmMetricQuery]]]): Self = StObject.set(x, "metricQueries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricQueriesUndefined: Self = StObject.set(x, "metricQueries", js.undefined)
+      inline def setMetricQueriesUndefined: Self = StObject.set(x, "metricQueries", js.undefined)
       
-      @scala.inline
-      def setMetricQueriesVarargs(value: Input[typings.pulumiAws.inputMod.cloudwatch.MetricAlarmMetricQuery]*): Self = StObject.set(x, "metricQueries", js.Array(value :_*))
+      inline def setMetricQueriesVarargs(value: Input[typings.pulumiAws.inputMod.cloudwatch.MetricAlarmMetricQuery]*): Self = StObject.set(x, "metricQueries", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setOkActions(value: Input[js.Array[Input[String | Topic]]]): Self = StObject.set(x, "okActions", value.asInstanceOf[js.Any])
+      inline def setOkActions(value: Input[js.Array[Input[String | Topic]]]): Self = StObject.set(x, "okActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOkActionsUndefined: Self = StObject.set(x, "okActions", js.undefined)
+      inline def setOkActionsUndefined: Self = StObject.set(x, "okActions", js.undefined)
       
-      @scala.inline
-      def setOkActionsVarargs(value: (Input[String | Topic])*): Self = StObject.set(x, "okActions", js.Array(value :_*))
+      inline def setOkActionsVarargs(value: (Input[String | Topic])*): Self = StObject.set(x, "okActions", js.Array(value :_*))
       
-      @scala.inline
-      def setPeriod(value: Input[Double]): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+      inline def setPeriod(value: Input[Double]): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+      inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
       
-      @scala.inline
-      def setStatistic(value: Input[String]): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
+      inline def setStatistic(value: Input[String]): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatisticUndefined: Self = StObject.set(x, "statistic", js.undefined)
+      inline def setStatisticUndefined: Self = StObject.set(x, "statistic", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Input[Double]): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Input[Double]): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdMetricId(value: Input[String]): Self = StObject.set(x, "thresholdMetricId", value.asInstanceOf[js.Any])
+      inline def setThresholdMetricId(value: Input[String]): Self = StObject.set(x, "thresholdMetricId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdMetricIdUndefined: Self = StObject.set(x, "thresholdMetricId", js.undefined)
+      inline def setThresholdMetricIdUndefined: Self = StObject.set(x, "thresholdMetricId", js.undefined)
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
       
-      @scala.inline
-      def setTreatMissingData(value: Input[String]): Self = StObject.set(x, "treatMissingData", value.asInstanceOf[js.Any])
+      inline def setTreatMissingData(value: Input[String]): Self = StObject.set(x, "treatMissingData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreatMissingDataUndefined: Self = StObject.set(x, "treatMissingData", js.undefined)
+      inline def setTreatMissingDataUndefined: Self = StObject.set(x, "treatMissingData", js.undefined)
       
-      @scala.inline
-      def setUnit(value: Input[String]): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: Input[String]): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+      inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     }
   }
 }

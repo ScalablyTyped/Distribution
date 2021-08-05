@@ -25,25 +25,19 @@ trait ParamsResourceProjectsMetricsDelete
 }
 object ParamsResourceProjectsMetricsDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsMetricsDelete = {
+  inline def apply(): ParamsResourceProjectsMetricsDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsMetricsDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsMetricsDeleteMutableBuilder[Self <: ParamsResourceProjectsMetricsDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsMetricsDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
   }
 }

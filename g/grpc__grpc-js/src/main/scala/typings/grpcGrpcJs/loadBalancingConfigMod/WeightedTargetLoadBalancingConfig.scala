@@ -15,19 +15,15 @@ trait WeightedTargetLoadBalancingConfig
 }
 object WeightedTargetLoadBalancingConfig {
   
-  @scala.inline
-  def apply(weighted_target: WeightedTargetLbConfig): WeightedTargetLoadBalancingConfig = {
+  inline def apply(weighted_target: WeightedTargetLbConfig): WeightedTargetLoadBalancingConfig = {
     val __obj = js.Dynamic.literal(name = "weighted_target", weighted_target = weighted_target.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeightedTargetLoadBalancingConfig]
   }
   
-  @scala.inline
-  implicit class WeightedTargetLoadBalancingConfigMutableBuilder[Self <: WeightedTargetLoadBalancingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: WeightedTargetLoadBalancingConfig](x: Self) {
     
-    @scala.inline
-    def setName(value: weighted_target): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: weighted_target): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeighted_target(value: WeightedTargetLbConfig): Self = StObject.set(x, "weighted_target", value.asInstanceOf[js.Any])
+    inline def setWeighted_target(value: WeightedTargetLbConfig): Self = StObject.set(x, "weighted_target", value.asInstanceOf[js.Any])
   }
 }

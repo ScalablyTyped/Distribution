@@ -13,19 +13,15 @@ trait StartDataCollectionByAgentIdsRequest extends StObject {
 }
 object StartDataCollectionByAgentIdsRequest {
   
-  @scala.inline
-  def apply(agentIds: AgentIds): StartDataCollectionByAgentIdsRequest = {
+  inline def apply(agentIds: AgentIds): StartDataCollectionByAgentIdsRequest = {
     val __obj = js.Dynamic.literal(agentIds = agentIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartDataCollectionByAgentIdsRequest]
   }
   
-  @scala.inline
-  implicit class StartDataCollectionByAgentIdsRequestMutableBuilder[Self <: StartDataCollectionByAgentIdsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartDataCollectionByAgentIdsRequest](x: Self) {
     
-    @scala.inline
-    def setAgentIds(value: AgentIds): Self = StObject.set(x, "agentIds", value.asInstanceOf[js.Any])
+    inline def setAgentIds(value: AgentIds): Self = StObject.set(x, "agentIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentIdsVarargs(value: AgentId*): Self = StObject.set(x, "agentIds", js.Array(value :_*))
+    inline def setAgentIdsVarargs(value: AgentId*): Self = StObject.set(x, "agentIds", js.Array(value :_*))
   }
 }

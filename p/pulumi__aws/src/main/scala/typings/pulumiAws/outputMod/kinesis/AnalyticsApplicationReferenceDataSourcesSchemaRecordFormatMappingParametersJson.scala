@@ -13,16 +13,13 @@ trait AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameter
 }
 object AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson {
   
-  @scala.inline
-  def apply(recordRowPath: String): AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson = {
+  inline def apply(recordRowPath: String): AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson = {
     val __obj = js.Dynamic.literal(recordRowPath = recordRowPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJsonMutableBuilder[Self <: AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson](x: Self) {
     
-    @scala.inline
-    def setRecordRowPath(value: String): Self = StObject.set(x, "recordRowPath", value.asInstanceOf[js.Any])
+    inline def setRecordRowPath(value: String): Self = StObject.set(x, "recordRowPath", value.asInstanceOf[js.Any])
   }
 }

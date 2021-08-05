@@ -11,16 +11,13 @@ trait Global extends StObject {
 }
 object Global {
   
-  @scala.inline
-  def apply(global: StringDictionary[Double]): Global = {
+  inline def apply(global: StringDictionary[Double]): Global = {
     val __obj = js.Dynamic.literal(global = global.asInstanceOf[js.Any])
     __obj.asInstanceOf[Global]
   }
   
-  @scala.inline
-  implicit class GlobalMutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
+  extension [Self <: Global](x: Self) {
     
-    @scala.inline
-    def setGlobal(value: StringDictionary[Double]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: StringDictionary[Double]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
   }
 }

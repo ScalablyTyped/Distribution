@@ -29,8 +29,7 @@ object MMO {
   }
   object MMORoomSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultAOI: Vec3D,
       mapLimits: MapLimits,
       proximityListUpdateMillis: Double,
@@ -41,23 +40,17 @@ object MMO {
       __obj.asInstanceOf[MMORoomSettings]
     }
     
-    @scala.inline
-    implicit class MMORoomSettingsMutableBuilder[Self <: MMORoomSettings] (val x: Self) extends AnyVal {
+    extension [Self <: MMORoomSettings](x: Self) {
       
-      @scala.inline
-      def setDefaultAOI(value: Vec3D): Self = StObject.set(x, "defaultAOI", value.asInstanceOf[js.Any])
+      inline def setDefaultAOI(value: Vec3D): Self = StObject.set(x, "defaultAOI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapLimits(value: MapLimits): Self = StObject.set(x, "mapLimits", value.asInstanceOf[js.Any])
+      inline def setMapLimits(value: MapLimits): Self = StObject.set(x, "mapLimits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProximityListUpdateMillis(value: Double): Self = StObject.set(x, "proximityListUpdateMillis", value.asInstanceOf[js.Any])
+      inline def setProximityListUpdateMillis(value: Double): Self = StObject.set(x, "proximityListUpdateMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendAOIEntryPoint(value: Boolean): Self = StObject.set(x, "sendAOIEntryPoint", value.asInstanceOf[js.Any])
+      inline def setSendAOIEntryPoint(value: Boolean): Self = StObject.set(x, "sendAOIEntryPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserMaxLimboSeconds(value: Double): Self = StObject.set(x, "userMaxLimboSeconds", value.asInstanceOf[js.Any])
+      inline def setUserMaxLimboSeconds(value: Double): Self = StObject.set(x, "userMaxLimboSeconds", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,20 +64,16 @@ object MMO {
   }
   object MapLimits {
     
-    @scala.inline
-    def apply(higherLimit: Vec3D, lowerLimit: Vec3D): MapLimits = {
+    inline def apply(higherLimit: Vec3D, lowerLimit: Vec3D): MapLimits = {
       val __obj = js.Dynamic.literal(higherLimit = higherLimit.asInstanceOf[js.Any], lowerLimit = lowerLimit.asInstanceOf[js.Any])
       __obj.asInstanceOf[MapLimits]
     }
     
-    @scala.inline
-    implicit class MapLimitsMutableBuilder[Self <: MapLimits] (val x: Self) extends AnyVal {
+    extension [Self <: MapLimits](x: Self) {
       
-      @scala.inline
-      def setHigherLimit(value: Vec3D): Self = StObject.set(x, "higherLimit", value.asInstanceOf[js.Any])
+      inline def setHigherLimit(value: Vec3D): Self = StObject.set(x, "higherLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowerLimit(value: Vec3D): Self = StObject.set(x, "lowerLimit", value.asInstanceOf[js.Any])
+      inline def setLowerLimit(value: Vec3D): Self = StObject.set(x, "lowerLimit", value.asInstanceOf[js.Any])
     }
   }
   

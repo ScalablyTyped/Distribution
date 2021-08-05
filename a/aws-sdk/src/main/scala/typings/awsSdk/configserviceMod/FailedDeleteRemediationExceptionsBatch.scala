@@ -18,28 +18,21 @@ trait FailedDeleteRemediationExceptionsBatch extends StObject {
 }
 object FailedDeleteRemediationExceptionsBatch {
   
-  @scala.inline
-  def apply(): FailedDeleteRemediationExceptionsBatch = {
+  inline def apply(): FailedDeleteRemediationExceptionsBatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailedDeleteRemediationExceptionsBatch]
   }
   
-  @scala.inline
-  implicit class FailedDeleteRemediationExceptionsBatchMutableBuilder[Self <: FailedDeleteRemediationExceptionsBatch] (val x: Self) extends AnyVal {
+  extension [Self <: FailedDeleteRemediationExceptionsBatch](x: Self) {
     
-    @scala.inline
-    def setFailedItems(value: RemediationExceptionResourceKeys): Self = StObject.set(x, "FailedItems", value.asInstanceOf[js.Any])
+    inline def setFailedItems(value: RemediationExceptionResourceKeys): Self = StObject.set(x, "FailedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedItemsUndefined: Self = StObject.set(x, "FailedItems", js.undefined)
+    inline def setFailedItemsUndefined: Self = StObject.set(x, "FailedItems", js.undefined)
     
-    @scala.inline
-    def setFailedItemsVarargs(value: RemediationExceptionResourceKey*): Self = StObject.set(x, "FailedItems", js.Array(value :_*))
+    inline def setFailedItemsVarargs(value: RemediationExceptionResourceKey*): Self = StObject.set(x, "FailedItems", js.Array(value :_*))
     
-    @scala.inline
-    def setFailureMessage(value: String): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
+    inline def setFailureMessage(value: String): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureMessageUndefined: Self = StObject.set(x, "FailureMessage", js.undefined)
+    inline def setFailureMessageUndefined: Self = StObject.set(x, "FailureMessage", js.undefined)
   }
 }

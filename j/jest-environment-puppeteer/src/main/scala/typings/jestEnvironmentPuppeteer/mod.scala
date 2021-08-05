@@ -89,8 +89,7 @@ object mod {
   }
   object Global_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Array: () => js.Array[js.Any],
       ArrayBuffer: ArrayBufferConstructor,
       Boolean: () => Boolean,
@@ -177,20 +176,15 @@ object mod {
       __obj.asInstanceOf[Global_]
     }
     
-    @scala.inline
-    implicit class Global_MutableBuilder[Self <: Global_] (val x: Self) extends AnyVal {
+    extension [Self <: Global_](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: Browser): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: Browser): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJestPuppeteer(value: JestPuppeteer): Self = StObject.set(x, "jestPuppeteer", value.asInstanceOf[js.Any])
+      inline def setJestPuppeteer(value: JestPuppeteer): Self = StObject.set(x, "jestPuppeteer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Page): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     }
   }
   
@@ -233,8 +227,7 @@ object mod {
   }
   object JestPuppeteer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: () => js.Promise[Unit],
       resetBrowser: () => js.Promise[Unit],
       resetPage: () => js.Promise[Unit]
@@ -243,17 +236,13 @@ object mod {
       __obj.asInstanceOf[JestPuppeteer]
     }
     
-    @scala.inline
-    implicit class JestPuppeteerMutableBuilder[Self <: JestPuppeteer] (val x: Self) extends AnyVal {
+    extension [Self <: JestPuppeteer](x: Self) {
       
-      @scala.inline
-      def setDebug(value: () => js.Promise[Unit]): Self = StObject.set(x, "debug", js.Any.fromFunction0(value))
+      inline def setDebug(value: () => js.Promise[Unit]): Self = StObject.set(x, "debug", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResetBrowser(value: () => js.Promise[Unit]): Self = StObject.set(x, "resetBrowser", js.Any.fromFunction0(value))
+      inline def setResetBrowser(value: () => js.Promise[Unit]): Self = StObject.set(x, "resetBrowser", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResetPage(value: () => js.Promise[Unit]): Self = StObject.set(x, "resetPage", js.Any.fromFunction0(value))
+      inline def setResetPage(value: () => js.Promise[Unit]): Self = StObject.set(x, "resetPage", js.Any.fromFunction0(value))
     }
   }
   

@@ -11,22 +11,17 @@ trait ListScreenshotClustersResponse extends StObject {
 }
 object ListScreenshotClustersResponse {
   
-  @scala.inline
-  def apply(): ListScreenshotClustersResponse = {
+  inline def apply(): ListScreenshotClustersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListScreenshotClustersResponse]
   }
   
-  @scala.inline
-  implicit class ListScreenshotClustersResponseMutableBuilder[Self <: ListScreenshotClustersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListScreenshotClustersResponse](x: Self) {
     
-    @scala.inline
-    def setClusters(value: js.Array[ScreenshotCluster]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
+    inline def setClusters(value: js.Array[ScreenshotCluster]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
+    inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
-    @scala.inline
-    def setClustersVarargs(value: ScreenshotCluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: ScreenshotCluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
   }
 }

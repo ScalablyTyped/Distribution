@@ -17,8 +17,7 @@ trait IAcceleratorKeyEventArgs
 }
 object IAcceleratorKeyEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     eventType: CoreAcceleratorKeyEventType,
     handled: Boolean,
     keyStatus: CorePhysicalKeyStatus,
@@ -28,16 +27,12 @@ object IAcceleratorKeyEventArgs {
     __obj.asInstanceOf[IAcceleratorKeyEventArgs]
   }
   
-  @scala.inline
-  implicit class IAcceleratorKeyEventArgsMutableBuilder[Self <: IAcceleratorKeyEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IAcceleratorKeyEventArgs](x: Self) {
     
-    @scala.inline
-    def setEventType(value: CoreAcceleratorKeyEventType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: CoreAcceleratorKeyEventType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyStatus(value: CorePhysicalKeyStatus): Self = StObject.set(x, "keyStatus", value.asInstanceOf[js.Any])
+    inline def setKeyStatus(value: CorePhysicalKeyStatus): Self = StObject.set(x, "keyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualKey(value: VirtualKey): Self = StObject.set(x, "virtualKey", value.asInstanceOf[js.Any])
+    inline def setVirtualKey(value: VirtualKey): Self = StObject.set(x, "virtualKey", value.asInstanceOf[js.Any])
   }
 }

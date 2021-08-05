@@ -28,22 +28,17 @@ trait ASPxClientRichEditAutoCorrectEventArgs
 }
 object ASPxClientRichEditAutoCorrectEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean, interval: Interval, text: String): ASPxClientRichEditAutoCorrectEventArgs = {
+  inline def apply(handled: Boolean, interval: Interval, text: String): ASPxClientRichEditAutoCorrectEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRichEditAutoCorrectEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientRichEditAutoCorrectEventArgsMutableBuilder[Self <: ASPxClientRichEditAutoCorrectEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRichEditAutoCorrectEventArgs](x: Self) {
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

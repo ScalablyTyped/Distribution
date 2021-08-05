@@ -15,17 +15,14 @@ object typesChangeMessageVisibilityBatchResultEntryMod {
   }
   object ChangeMessageVisibilityBatchResultEntry {
     
-    @scala.inline
-    def apply(Id: String): ChangeMessageVisibilityBatchResultEntry = {
+    inline def apply(Id: String): ChangeMessageVisibilityBatchResultEntry = {
       val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChangeMessageVisibilityBatchResultEntry]
     }
     
-    @scala.inline
-    implicit class ChangeMessageVisibilityBatchResultEntryMutableBuilder[Self <: ChangeMessageVisibilityBatchResultEntry] (val x: Self) extends AnyVal {
+    extension [Self <: ChangeMessageVisibilityBatchResultEntry](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     }
   }
   

@@ -21,25 +21,19 @@ trait ReposReplaceAllTopicsEndpoint
 }
 object ReposReplaceAllTopicsEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[mercy], names: js.Array[String], owner: String, repo: String): ReposReplaceAllTopicsEndpoint = {
+  inline def apply(mediaType: `0`[mercy], names: js.Array[String], owner: String, repo: String): ReposReplaceAllTopicsEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposReplaceAllTopicsEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposReplaceAllTopicsEndpointMutableBuilder[Self <: ReposReplaceAllTopicsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposReplaceAllTopicsEndpoint](x: Self) {
     
-    @scala.inline
-    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

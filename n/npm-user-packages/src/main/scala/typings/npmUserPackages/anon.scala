@@ -18,35 +18,26 @@ object anon {
   }
   object Bugs {
     
-    @scala.inline
-    def apply(npm: String): Bugs = {
+    inline def apply(npm: String): Bugs = {
       val __obj = js.Dynamic.literal(npm = npm.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bugs]
     }
     
-    @scala.inline
-    implicit class BugsMutableBuilder[Self <: Bugs] (val x: Self) extends AnyVal {
+    extension [Self <: Bugs](x: Self) {
       
-      @scala.inline
-      def setBugs(value: String): Self = StObject.set(x, "bugs", value.asInstanceOf[js.Any])
+      inline def setBugs(value: String): Self = StObject.set(x, "bugs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBugsUndefined: Self = StObject.set(x, "bugs", js.undefined)
+      inline def setBugsUndefined: Self = StObject.set(x, "bugs", js.undefined)
       
-      @scala.inline
-      def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
+      inline def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
+      inline def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
       
-      @scala.inline
-      def setNpm(value: String): Self = StObject.set(x, "npm", value.asInstanceOf[js.Any])
+      inline def setNpm(value: String): Self = StObject.set(x, "npm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+      inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+      inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
     }
   }
   
@@ -62,35 +53,26 @@ object anon {
   }
   object Email {
     
-    @scala.inline
-    def apply(name: String): Email = {
+    inline def apply(name: String): Email = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Email]
     }
     
-    @scala.inline
-    implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
+    extension [Self <: Email](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
@@ -102,20 +84,16 @@ object anon {
   }
   object Username {
     
-    @scala.inline
-    def apply(email: String, username: String): Username = {
+    inline def apply(email: String, username: String): Username = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[Username]
     }
     
-    @scala.inline
-    implicit class UsernameMutableBuilder[Self <: Username] (val x: Self) extends AnyVal {
+    extension [Self <: Username](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

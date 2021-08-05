@@ -10,16 +10,13 @@ trait Add extends StObject {
 }
 object Add {
   
-  @scala.inline
-  def apply(add: () => Unit): Add = {
+  inline def apply(add: () => Unit): Add = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction0(add))
     __obj.asInstanceOf[Add]
   }
   
-  @scala.inline
-  implicit class AddMutableBuilder[Self <: Add] (val x: Self) extends AnyVal {
+  extension [Self <: Add](x: Self) {
     
-    @scala.inline
-    def setAdd(value: () => Unit): Self = StObject.set(x, "add", js.Any.fromFunction0(value))
+    inline def setAdd(value: () => Unit): Self = StObject.set(x, "add", js.Any.fromFunction0(value))
   }
 }

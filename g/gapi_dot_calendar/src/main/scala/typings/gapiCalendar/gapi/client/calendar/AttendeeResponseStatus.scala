@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttendeeResponseStatus extends StObject
 object AttendeeResponseStatus {
   
-  @scala.inline
-  def accepted: typings.gapiCalendar.gapiCalendarStrings.accepted = "accepted".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.accepted]
+  inline def accepted: typings.gapiCalendar.gapiCalendarStrings.accepted = "accepted".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.accepted]
   
-  @scala.inline
-  def declined: typings.gapiCalendar.gapiCalendarStrings.declined = "declined".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.declined]
+  inline def declined: typings.gapiCalendar.gapiCalendarStrings.declined = "declined".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.declined]
   
-  @scala.inline
-  def needsAction: typings.gapiCalendar.gapiCalendarStrings.needsAction = "needsAction".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.needsAction]
+  inline def needsAction: typings.gapiCalendar.gapiCalendarStrings.needsAction = "needsAction".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.needsAction]
   
-  @scala.inline
-  def tentative: typings.gapiCalendar.gapiCalendarStrings.tentative = "tentative".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.tentative]
+  inline def tentative: typings.gapiCalendar.gapiCalendarStrings.tentative = "tentative".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.tentative]
 }

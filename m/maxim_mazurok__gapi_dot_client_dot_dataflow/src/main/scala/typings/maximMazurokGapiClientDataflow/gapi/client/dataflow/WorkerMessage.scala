@@ -38,59 +38,43 @@ trait WorkerMessage extends StObject {
 }
 object WorkerMessage {
   
-  @scala.inline
-  def apply(): WorkerMessage = {
+  inline def apply(): WorkerMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkerMessage]
   }
   
-  @scala.inline
-  implicit class WorkerMessageMutableBuilder[Self <: WorkerMessage] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerMessage](x: Self) {
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerMessage & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
-    @scala.inline
-    def setWorkerHealthReport(value: WorkerHealthReport): Self = StObject.set(x, "workerHealthReport", value.asInstanceOf[js.Any])
+    inline def setWorkerHealthReport(value: WorkerHealthReport): Self = StObject.set(x, "workerHealthReport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerHealthReportUndefined: Self = StObject.set(x, "workerHealthReport", js.undefined)
+    inline def setWorkerHealthReportUndefined: Self = StObject.set(x, "workerHealthReport", js.undefined)
     
-    @scala.inline
-    def setWorkerLifecycleEvent(value: WorkerLifecycleEvent): Self = StObject.set(x, "workerLifecycleEvent", value.asInstanceOf[js.Any])
+    inline def setWorkerLifecycleEvent(value: WorkerLifecycleEvent): Self = StObject.set(x, "workerLifecycleEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerLifecycleEventUndefined: Self = StObject.set(x, "workerLifecycleEvent", js.undefined)
+    inline def setWorkerLifecycleEventUndefined: Self = StObject.set(x, "workerLifecycleEvent", js.undefined)
     
-    @scala.inline
-    def setWorkerMessageCode(value: WorkerMessageCode): Self = StObject.set(x, "workerMessageCode", value.asInstanceOf[js.Any])
+    inline def setWorkerMessageCode(value: WorkerMessageCode): Self = StObject.set(x, "workerMessageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerMessageCodeUndefined: Self = StObject.set(x, "workerMessageCode", js.undefined)
+    inline def setWorkerMessageCodeUndefined: Self = StObject.set(x, "workerMessageCode", js.undefined)
     
-    @scala.inline
-    def setWorkerMetrics(value: ResourceUtilizationReport): Self = StObject.set(x, "workerMetrics", value.asInstanceOf[js.Any])
+    inline def setWorkerMetrics(value: ResourceUtilizationReport): Self = StObject.set(x, "workerMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerMetricsUndefined: Self = StObject.set(x, "workerMetrics", js.undefined)
+    inline def setWorkerMetricsUndefined: Self = StObject.set(x, "workerMetrics", js.undefined)
     
-    @scala.inline
-    def setWorkerShutdownNotice(value: WorkerShutdownNotice): Self = StObject.set(x, "workerShutdownNotice", value.asInstanceOf[js.Any])
+    inline def setWorkerShutdownNotice(value: WorkerShutdownNotice): Self = StObject.set(x, "workerShutdownNotice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerShutdownNoticeUndefined: Self = StObject.set(x, "workerShutdownNotice", js.undefined)
+    inline def setWorkerShutdownNoticeUndefined: Self = StObject.set(x, "workerShutdownNotice", js.undefined)
   }
 }

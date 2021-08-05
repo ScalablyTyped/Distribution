@@ -29,8 +29,7 @@ trait FieldsToEvaluate extends StObject {
 }
 object FieldsToEvaluate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fieldUpdates: StringDictionary[js.Any],
     fieldValues: StringDictionary[js.Any],
     fields: js.Array[String],
@@ -40,25 +39,18 @@ object FieldsToEvaluate {
     __obj.asInstanceOf[FieldsToEvaluate]
   }
   
-  @scala.inline
-  implicit class FieldsToEvaluateMutableBuilder[Self <: FieldsToEvaluate] (val x: Self) extends AnyVal {
+  extension [Self <: FieldsToEvaluate](x: Self) {
     
-    @scala.inline
-    def setFieldUpdates(value: StringDictionary[js.Any]): Self = StObject.set(x, "fieldUpdates", value.asInstanceOf[js.Any])
+    inline def setFieldUpdates(value: StringDictionary[js.Any]): Self = StObject.set(x, "fieldUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "fieldValues", value.asInstanceOf[js.Any])
+    inline def setFieldValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "fieldValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setRulesFrom(value: js.Array[String]): Self = StObject.set(x, "rulesFrom", value.asInstanceOf[js.Any])
+    inline def setRulesFrom(value: js.Array[String]): Self = StObject.set(x, "rulesFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesFromVarargs(value: String*): Self = StObject.set(x, "rulesFrom", js.Array(value :_*))
+    inline def setRulesFromVarargs(value: String*): Self = StObject.set(x, "rulesFrom", js.Array(value :_*))
   }
 }

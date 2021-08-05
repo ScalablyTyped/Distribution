@@ -12,19 +12,15 @@ trait Typeofoptions13 extends StObject {
 }
 object Typeofoptions13 {
   
-  @scala.inline
-  def apply(allowUnknown_6: Boolean, stripUnknown_6: Boolean): Typeofoptions13 = {
+  inline def apply(allowUnknown_6: Boolean, stripUnknown_6: Boolean): Typeofoptions13 = {
     val __obj = js.Dynamic.literal(allowUnknown_6 = allowUnknown_6.asInstanceOf[js.Any], stripUnknown_6 = stripUnknown_6.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofoptions13]
   }
   
-  @scala.inline
-  implicit class Typeofoptions13MutableBuilder[Self <: Typeofoptions13] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofoptions13](x: Self) {
     
-    @scala.inline
-    def setAllowUnknown_6(value: Boolean): Self = StObject.set(x, "allowUnknown_6", value.asInstanceOf[js.Any])
+    inline def setAllowUnknown_6(value: Boolean): Self = StObject.set(x, "allowUnknown_6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripUnknown_6(value: Boolean): Self = StObject.set(x, "stripUnknown_6", value.asInstanceOf[js.Any])
+    inline def setStripUnknown_6(value: Boolean): Self = StObject.set(x, "stripUnknown_6", value.asInstanceOf[js.Any])
   }
 }

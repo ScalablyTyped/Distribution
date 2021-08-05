@@ -15,22 +15,17 @@ trait Attr extends StObject {
 }
 object Attr {
   
-  @scala.inline
-  def apply(attr: Double | Attributes, transparencyChar: String, transparencyType: Double): Attr = {
+  inline def apply(attr: Double | Attributes, transparencyChar: String, transparencyType: Double): Attr = {
     val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], transparencyChar = transparencyChar.asInstanceOf[js.Any], transparencyType = transparencyType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attr]
   }
   
-  @scala.inline
-  implicit class AttrMutableBuilder[Self <: Attr] (val x: Self) extends AnyVal {
+  extension [Self <: Attr](x: Self) {
     
-    @scala.inline
-    def setAttr(value: Double | Attributes): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: Double | Attributes): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparencyChar(value: String): Self = StObject.set(x, "transparencyChar", value.asInstanceOf[js.Any])
+    inline def setTransparencyChar(value: String): Self = StObject.set(x, "transparencyChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparencyType(value: Double): Self = StObject.set(x, "transparencyType", value.asInstanceOf[js.Any])
+    inline def setTransparencyType(value: Double): Self = StObject.set(x, "transparencyType", value.asInstanceOf[js.Any])
   }
 }

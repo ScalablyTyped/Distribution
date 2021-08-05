@@ -16,22 +16,17 @@ trait UploadFileSuccessCallbackResult extends StObject {
 }
 object UploadFileSuccessCallbackResult {
   
-  @scala.inline
-  def apply(data: String, errMsg: String, statusCode: Double): UploadFileSuccessCallbackResult = {
+  inline def apply(data: String, errMsg: String, statusCode: Double): UploadFileSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadFileSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class UploadFileSuccessCallbackResultMutableBuilder[Self <: UploadFileSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: UploadFileSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

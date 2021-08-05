@@ -15,11 +15,11 @@ object networkMod {
   class Network protected () extends StObject {
     def this(config: Configuration, transport: Transport) = this()
     
-    var backoffConfig: js.Any = js.native
+    /* private */ var backoffConfig: js.Any = js.native
     
-    val config: js.Any = js.native
+    /* private */ val config: js.Any = js.native
     
-    var executeWithRetry: js.Any = js.native
+    /* private */ var executeWithRetry: js.Any = js.native
     
     def get(url: String): js.Promise[js.Any] = js.native
     
@@ -30,8 +30,8 @@ object networkMod {
     def post(url: String, media: FormData): js.Promise[js.Any] = js.native
     def post(url: String, media: FormData, contentType: String): js.Promise[js.Any] = js.native
     
-    var retryWhenThrottled: js.Any = js.native
+    /* private */ var retryWhenThrottled: js.Any = js.native
     
-    val transport: js.Any = js.native
+    /* private */ val transport: js.Any = js.native
   }
 }

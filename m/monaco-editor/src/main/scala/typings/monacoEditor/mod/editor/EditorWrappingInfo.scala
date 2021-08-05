@@ -16,8 +16,7 @@ trait EditorWrappingInfo extends StObject {
 }
 object EditorWrappingInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isDominatedByLongLines: Boolean,
     isViewportWrapping: Boolean,
     isWordWrapMinified: Boolean,
@@ -27,19 +26,14 @@ object EditorWrappingInfo {
     __obj.asInstanceOf[EditorWrappingInfo]
   }
   
-  @scala.inline
-  implicit class EditorWrappingInfoMutableBuilder[Self <: EditorWrappingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: EditorWrappingInfo](x: Self) {
     
-    @scala.inline
-    def setIsDominatedByLongLines(value: Boolean): Self = StObject.set(x, "isDominatedByLongLines", value.asInstanceOf[js.Any])
+    inline def setIsDominatedByLongLines(value: Boolean): Self = StObject.set(x, "isDominatedByLongLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsViewportWrapping(value: Boolean): Self = StObject.set(x, "isViewportWrapping", value.asInstanceOf[js.Any])
+    inline def setIsViewportWrapping(value: Boolean): Self = StObject.set(x, "isViewportWrapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWordWrapMinified(value: Boolean): Self = StObject.set(x, "isWordWrapMinified", value.asInstanceOf[js.Any])
+    inline def setIsWordWrapMinified(value: Boolean): Self = StObject.set(x, "isWordWrapMinified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrappingColumn(value: Double): Self = StObject.set(x, "wrappingColumn", value.asInstanceOf[js.Any])
+    inline def setWrappingColumn(value: Double): Self = StObject.set(x, "wrappingColumn", value.asInstanceOf[js.Any])
   }
 }

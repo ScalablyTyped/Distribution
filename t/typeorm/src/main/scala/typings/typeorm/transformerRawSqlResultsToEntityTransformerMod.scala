@@ -32,24 +32,24 @@ object transformerRawSqlResultsToEntityTransformerMod {
       queryRunner: QueryRunner
     ) = this()
     
-    var createValueMapFromJoinColumns: js.Any = js.native
+    /* private */ var createValueMapFromJoinColumns: js.Any = js.native
     
-    var driver: Driver = js.native
+    /* protected */ var driver: Driver = js.native
     
-    var expressionMap: QueryExpressionMap = js.native
+    /* protected */ var expressionMap: QueryExpressionMap = js.native
     
-    var extractEntityPrimaryIds: js.Any = js.native
+    /* private */ var extractEntityPrimaryIds: js.Any = js.native
     
     /**
       * Groups given raw results by ids of given alias.
       */
     /* protected */ def group(rawResults: js.Array[js.Any], alias: Alias): Map[String, js.Array[js.Any]] = js.native
     
-    var queryRunner: js.UndefOr[QueryRunner] = js.native
+    /* protected */ var queryRunner: js.UndefOr[QueryRunner] = js.native
     
-    var rawRelationCountResults: js.Array[RelationCountLoadResult] = js.native
+    /* protected */ var rawRelationCountResults: js.Array[RelationCountLoadResult] = js.native
     
-    var rawRelationIdResults: js.Array[RelationIdLoadResult] = js.native
+    /* protected */ var rawRelationIdResults: js.Array[RelationIdLoadResult] = js.native
     
     /**
       * Since db returns a duplicated rows of the data where accuracies of the same object can be duplicated

@@ -66,79 +66,55 @@ trait MapReduceOptions extends StObject {
 }
 object MapReduceOptions {
   
-  @scala.inline
-  def apply(): MapReduceOptions = {
+  inline def apply(): MapReduceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapReduceOptions]
   }
   
-  @scala.inline
-  implicit class MapReduceOptionsMutableBuilder[Self <: MapReduceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapReduceOptions](x: Self) {
     
-    @scala.inline
-    def setBypassDocumentValidation(value: Boolean): Self = StObject.set(x, "bypassDocumentValidation", value.asInstanceOf[js.Any])
+    inline def setBypassDocumentValidation(value: Boolean): Self = StObject.set(x, "bypassDocumentValidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBypassDocumentValidationUndefined: Self = StObject.set(x, "bypassDocumentValidation", js.undefined)
+    inline def setBypassDocumentValidationUndefined: Self = StObject.set(x, "bypassDocumentValidation", js.undefined)
     
-    @scala.inline
-    def setFinalize_(value: js.Function | String): Self = StObject.set(x, "finalize", value.asInstanceOf[js.Any])
+    inline def setFinalize_(value: js.Function | String): Self = StObject.set(x, "finalize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalize_Undefined: Self = StObject.set(x, "finalize", js.undefined)
+    inline def setFinalize_Undefined: Self = StObject.set(x, "finalize", js.undefined)
     
-    @scala.inline
-    def setJsMode(value: Boolean): Self = StObject.set(x, "jsMode", value.asInstanceOf[js.Any])
+    inline def setJsMode(value: Boolean): Self = StObject.set(x, "jsMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsModeUndefined: Self = StObject.set(x, "jsMode", js.undefined)
+    inline def setJsModeUndefined: Self = StObject.set(x, "jsMode", js.undefined)
     
-    @scala.inline
-    def setKeeptemp(value: Boolean): Self = StObject.set(x, "keeptemp", value.asInstanceOf[js.Any])
+    inline def setKeeptemp(value: Boolean): Self = StObject.set(x, "keeptemp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeeptempUndefined: Self = StObject.set(x, "keeptemp", js.undefined)
+    inline def setKeeptempUndefined: Self = StObject.set(x, "keeptemp", js.undefined)
     
-    @scala.inline
-    def setLimit(value: scala.Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: scala.Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setOut(value: js.Object): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
+    inline def setOut(value: js.Object): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
+    inline def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
     
-    @scala.inline
-    def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
-    @scala.inline
-    def setScope(value: js.Object): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Object): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setSort(value: js.Object): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: js.Object): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+    inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
   }
 }

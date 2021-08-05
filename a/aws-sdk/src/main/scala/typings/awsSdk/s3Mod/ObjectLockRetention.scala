@@ -18,25 +18,19 @@ trait ObjectLockRetention extends StObject {
 }
 object ObjectLockRetention {
   
-  @scala.inline
-  def apply(): ObjectLockRetention = {
+  inline def apply(): ObjectLockRetention = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectLockRetention]
   }
   
-  @scala.inline
-  implicit class ObjectLockRetentionMutableBuilder[Self <: ObjectLockRetention] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectLockRetention](x: Self) {
     
-    @scala.inline
-    def setMode(value: ObjectLockRetentionMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ObjectLockRetentionMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
-    @scala.inline
-    def setRetainUntilDate(value: Date): Self = StObject.set(x, "RetainUntilDate", value.asInstanceOf[js.Any])
+    inline def setRetainUntilDate(value: Date): Self = StObject.set(x, "RetainUntilDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainUntilDateUndefined: Self = StObject.set(x, "RetainUntilDate", js.undefined)
+    inline def setRetainUntilDateUndefined: Self = StObject.set(x, "RetainUntilDate", js.undefined)
   }
 }

@@ -59,10 +59,8 @@ object apiGlobalHotkeyMod {
   trait nonHotkeyEvents extends StObject
   object nonHotkeyEvents {
     
-    @scala.inline
-    def REGISTERED: registered = "registered".asInstanceOf[registered]
+    inline def REGISTERED: registered = "registered".asInstanceOf[registered]
     
-    @scala.inline
-    def UNREGISTERED: unregistered = "unregistered".asInstanceOf[unregistered]
+    inline def UNREGISTERED: unregistered = "unregistered".asInstanceOf[unregistered]
   }
 }

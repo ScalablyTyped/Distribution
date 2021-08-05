@@ -88,8 +88,7 @@ trait IgLinearGaugeMethods extends StObject {
 }
 object IgLinearGaugeMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addRange: js.Object => Unit,
     changeGlobalLanguage: () => Unit,
     changeGlobalRegional: () => Unit,
@@ -108,46 +107,32 @@ object IgLinearGaugeMethods {
     __obj.asInstanceOf[IgLinearGaugeMethods]
   }
   
-  @scala.inline
-  implicit class IgLinearGaugeMethodsMutableBuilder[Self <: IgLinearGaugeMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgLinearGaugeMethods](x: Self) {
     
-    @scala.inline
-    def setAddRange(value: js.Object => Unit): Self = StObject.set(x, "addRange", js.Any.fromFunction1(value))
+    inline def setAddRange(value: js.Object => Unit): Self = StObject.set(x, "addRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
+    inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
+    inline def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeLocale(value: js.Object => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction1(value))
+    inline def setChangeLocale(value: js.Object => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExportVisualData(value: () => js.Object): Self = StObject.set(x, "exportVisualData", js.Any.fromFunction0(value))
+    inline def setExportVisualData(value: () => js.Object): Self = StObject.set(x, "exportVisualData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+    inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRangeNames(value: () => String): Self = StObject.set(x, "getRangeNames", js.Any.fromFunction0(value))
+    inline def setGetRangeNames(value: () => String): Self = StObject.set(x, "getRangeNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValueForPoint(value: (js.Object, js.Object) => Double): Self = StObject.set(x, "getValueForPoint", js.Any.fromFunction2(value))
+    inline def setGetValueForPoint(value: (js.Object, js.Object) => Double): Self = StObject.set(x, "getValueForPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNeedleContainsPoint(value: (Double, Double) => Boolean): Self = StObject.set(x, "needleContainsPoint", js.Any.fromFunction2(value))
+    inline def setNeedleContainsPoint(value: (Double, Double) => Boolean): Self = StObject.set(x, "needleContainsPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveRange(value: js.Object => Unit): Self = StObject.set(x, "removeRange", js.Any.fromFunction1(value))
+    inline def setRemoveRange(value: js.Object => Unit): Self = StObject.set(x, "removeRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStyleUpdated(value: () => Unit): Self = StObject.set(x, "styleUpdated", js.Any.fromFunction0(value))
+    inline def setStyleUpdated(value: () => Unit): Self = StObject.set(x, "styleUpdated", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateRange(value: js.Object => Unit): Self = StObject.set(x, "updateRange", js.Any.fromFunction1(value))
+    inline def setUpdateRange(value: js.Object => Unit): Self = StObject.set(x, "updateRange", js.Any.fromFunction1(value))
   }
 }

@@ -45,8 +45,7 @@ trait IElement
 }
 object IElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearErrors: () => js.Any,
     clearIncorrectValues: () => js.Any,
     containsErrors: Boolean,
@@ -81,64 +80,44 @@ object IElement {
     __obj.asInstanceOf[IElement]
   }
   
-  @scala.inline
-  implicit class IElementMutableBuilder[Self <: IElement] (val x: Self) extends AnyVal {
+  extension [Self <: IElement](x: Self) {
     
-    @scala.inline
-    def setClearErrors(value: () => js.Any): Self = StObject.set(x, "clearErrors", js.Any.fromFunction0(value))
+    inline def setClearErrors(value: () => js.Any): Self = StObject.set(x, "clearErrors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearIncorrectValues(value: () => js.Any): Self = StObject.set(x, "clearIncorrectValues", js.Any.fromFunction0(value))
+    inline def setClearIncorrectValues(value: () => js.Any): Self = StObject.set(x, "clearIncorrectValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLayoutType(value: () => String): Self = StObject.set(x, "getLayoutType", js.Any.fromFunction0(value))
+    inline def setGetLayoutType(value: () => String): Self = StObject.set(x, "getLayoutType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPanel(value: () => IPanel): Self = StObject.set(x, "getPanel", js.Any.fromFunction0(value))
+    inline def setGetPanel(value: () => IPanel): Self = StObject.set(x, "getPanel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLayoutTypeSupported(value: String => Boolean): Self = StObject.set(x, "isLayoutTypeSupported", js.Any.fromFunction1(value))
+    inline def setIsLayoutTypeSupported(value: String => Boolean): Self = StObject.set(x, "isLayoutTypeSupported", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMaxWidth(value: String): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: String): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setMinWidth(value: String): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: String): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    @scala.inline
-    def setOnAnyValueChanged(value: String => js.Any): Self = StObject.set(x, "onAnyValueChanged", js.Any.fromFunction1(value))
+    inline def setOnAnyValueChanged(value: String => js.Any): Self = StObject.set(x, "onAnyValueChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: IPanel): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: IPanel): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveElement(value: IElement => Boolean): Self = StObject.set(x, "removeElement", js.Any.fromFunction1(value))
+    inline def setRemoveElement(value: IElement => Boolean): Self = StObject.set(x, "removeElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderWidth(value: String): Self = StObject.set(x, "renderWidth", value.asInstanceOf[js.Any])
+    inline def setRenderWidth(value: String): Self = StObject.set(x, "renderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightIndent(value: Double): Self = StObject.set(x, "rightIndent", value.asInstanceOf[js.Any])
+    inline def setRightIndent(value: Double): Self = StObject.set(x, "rightIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartWithNewLine(value: Boolean): Self = StObject.set(x, "startWithNewLine", value.asInstanceOf[js.Any])
+    inline def setStartWithNewLine(value: Boolean): Self = StObject.set(x, "startWithNewLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateCustomWidgets(value: () => js.Any): Self = StObject.set(x, "updateCustomWidgets", js.Any.fromFunction0(value))
+    inline def setUpdateCustomWidgets(value: () => js.Any): Self = StObject.set(x, "updateCustomWidgets", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

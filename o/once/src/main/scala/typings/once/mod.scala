@@ -19,23 +19,18 @@ object mod extends Shortcut {
   }
   object FnProps {
     
-    @scala.inline
-    def apply[R](called: Boolean): FnProps[R] = {
+    inline def apply[R](called: Boolean): FnProps[R] = {
       val __obj = js.Dynamic.literal(called = called.asInstanceOf[js.Any])
       __obj.asInstanceOf[FnProps[R]]
     }
     
-    @scala.inline
-    implicit class FnPropsMutableBuilder[Self <: FnProps[?], R] (val x: Self & FnProps[R]) extends AnyVal {
+    extension [Self <: FnProps[?], R](x: Self & FnProps[R]) {
       
-      @scala.inline
-      def setCalled(value: Boolean): Self = StObject.set(x, "called", value.asInstanceOf[js.Any])
+      inline def setCalled(value: Boolean): Self = StObject.set(x, "called", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: R): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: R): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   

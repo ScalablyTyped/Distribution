@@ -25,25 +25,19 @@ trait SchemaCheckInResponse extends StObject {
 }
 object SchemaCheckInResponse {
   
-  @scala.inline
-  def apply(): SchemaCheckInResponse = {
+  inline def apply(): SchemaCheckInResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCheckInResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCheckInResponseMutableBuilder[Self <: SchemaCheckInResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCheckInResponse](x: Self) {
     
-    @scala.inline
-    def setDeadline(value: String): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: String): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeadlineUndefined: Self = StObject.set(x, "deadline", js.undefined)
+    inline def setDeadlineUndefined: Self = StObject.set(x, "deadline", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

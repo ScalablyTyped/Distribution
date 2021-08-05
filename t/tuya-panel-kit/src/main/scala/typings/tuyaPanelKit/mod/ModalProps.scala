@@ -31,67 +31,47 @@ trait ModalProps
 }
 object ModalProps {
   
-  @scala.inline
-  def apply(): ModalProps = {
+  inline def apply(): ModalProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalProps]
   }
   
-  @scala.inline
-  implicit class ModalPropsMutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
+  extension [Self <: ModalProps](x: Self) {
     
-    @scala.inline
-    def setActiveIdx(value: Double): Self = StObject.set(x, "activeIdx", value.asInstanceOf[js.Any])
+    inline def setActiveIdx(value: Double): Self = StObject.set(x, "activeIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveIdxUndefined: Self = StObject.set(x, "activeIdx", js.undefined)
+    inline def setActiveIdxUndefined: Self = StObject.set(x, "activeIdx", js.undefined)
     
-    @scala.inline
-    def setAlignContainer(value: top | center | bottom): Self = StObject.set(x, "alignContainer", value.asInstanceOf[js.Any])
+    inline def setAlignContainer(value: top | center | bottom): Self = StObject.set(x, "alignContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignContainerUndefined: Self = StObject.set(x, "alignContainer", js.undefined)
+    inline def setAlignContainerUndefined: Self = StObject.set(x, "alignContainer", js.undefined)
     
-    @scala.inline
-    def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "maskStyle", value.asInstanceOf[js.Any])
+    inline def setMaskStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "maskStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskStyleNull: Self = StObject.set(x, "maskStyle", null)
+    inline def setMaskStyleNull: Self = StObject.set(x, "maskStyle", null)
     
-    @scala.inline
-    def setMaskStyleUndefined: Self = StObject.set(x, "maskStyle", js.undefined)
+    inline def setMaskStyleUndefined: Self = StObject.set(x, "maskStyle", js.undefined)
     
-    @scala.inline
-    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
-    @scala.inline
-    def setModalChildStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "modalChildStyle", value.asInstanceOf[js.Any])
+    inline def setModalChildStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "modalChildStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalChildStyleNull: Self = StObject.set(x, "modalChildStyle", null)
+    inline def setModalChildStyleNull: Self = StObject.set(x, "modalChildStyle", null)
     
-    @scala.inline
-    def setModalChildStyleUndefined: Self = StObject.set(x, "modalChildStyle", js.undefined)
+    inline def setModalChildStyleUndefined: Self = StObject.set(x, "modalChildStyle", js.undefined)
     
-    @scala.inline
-    def setOnMaskPress(value: () => Unit): Self = StObject.set(x, "onMaskPress", js.Any.fromFunction0(value))
+    inline def setOnMaskPress(value: () => Unit): Self = StObject.set(x, "onMaskPress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnMaskPressUndefined: Self = StObject.set(x, "onMaskPress", js.undefined)
+    inline def setOnMaskPressUndefined: Self = StObject.set(x, "onMaskPress", js.undefined)
     
-    @scala.inline
-    def setOnlyLastModalVisible(value: Boolean): Self = StObject.set(x, "onlyLastModalVisible", value.asInstanceOf[js.Any])
+    inline def setOnlyLastModalVisible(value: Boolean): Self = StObject.set(x, "onlyLastModalVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyLastModalVisibleUndefined: Self = StObject.set(x, "onlyLastModalVisible", js.undefined)
+    inline def setOnlyLastModalVisibleUndefined: Self = StObject.set(x, "onlyLastModalVisible", js.undefined)
     
-    @scala.inline
-    def setUseKeyboardView(value: Boolean): Self = StObject.set(x, "useKeyboardView", value.asInstanceOf[js.Any])
+    inline def setUseKeyboardView(value: Boolean): Self = StObject.set(x, "useKeyboardView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseKeyboardViewUndefined: Self = StObject.set(x, "useKeyboardView", js.undefined)
+    inline def setUseKeyboardViewUndefined: Self = StObject.set(x, "useKeyboardView", js.undefined)
   }
 }

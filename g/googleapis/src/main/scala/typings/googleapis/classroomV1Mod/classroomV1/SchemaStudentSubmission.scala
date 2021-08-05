@@ -112,118 +112,81 @@ trait SchemaStudentSubmission extends StObject {
 }
 object SchemaStudentSubmission {
   
-  @scala.inline
-  def apply(): SchemaStudentSubmission = {
+  inline def apply(): SchemaStudentSubmission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStudentSubmission]
   }
   
-  @scala.inline
-  implicit class SchemaStudentSubmissionMutableBuilder[Self <: SchemaStudentSubmission] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStudentSubmission](x: Self) {
     
-    @scala.inline
-    def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
+    inline def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternateLinkUndefined: Self = StObject.set(x, "alternateLink", js.undefined)
+    inline def setAlternateLinkUndefined: Self = StObject.set(x, "alternateLink", js.undefined)
     
-    @scala.inline
-    def setAssignedGrade(value: Double): Self = StObject.set(x, "assignedGrade", value.asInstanceOf[js.Any])
+    inline def setAssignedGrade(value: Double): Self = StObject.set(x, "assignedGrade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedGradeUndefined: Self = StObject.set(x, "assignedGrade", js.undefined)
+    inline def setAssignedGradeUndefined: Self = StObject.set(x, "assignedGrade", js.undefined)
     
-    @scala.inline
-    def setAssignmentSubmission(value: SchemaAssignmentSubmission): Self = StObject.set(x, "assignmentSubmission", value.asInstanceOf[js.Any])
+    inline def setAssignmentSubmission(value: SchemaAssignmentSubmission): Self = StObject.set(x, "assignmentSubmission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentSubmissionUndefined: Self = StObject.set(x, "assignmentSubmission", js.undefined)
+    inline def setAssignmentSubmissionUndefined: Self = StObject.set(x, "assignmentSubmission", js.undefined)
     
-    @scala.inline
-    def setAssociatedWithDeveloper(value: Boolean): Self = StObject.set(x, "associatedWithDeveloper", value.asInstanceOf[js.Any])
+    inline def setAssociatedWithDeveloper(value: Boolean): Self = StObject.set(x, "associatedWithDeveloper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedWithDeveloperUndefined: Self = StObject.set(x, "associatedWithDeveloper", js.undefined)
+    inline def setAssociatedWithDeveloperUndefined: Self = StObject.set(x, "associatedWithDeveloper", js.undefined)
     
-    @scala.inline
-    def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
+    inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
+    inline def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
     
-    @scala.inline
-    def setCourseWorkId(value: String): Self = StObject.set(x, "courseWorkId", value.asInstanceOf[js.Any])
+    inline def setCourseWorkId(value: String): Self = StObject.set(x, "courseWorkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCourseWorkIdUndefined: Self = StObject.set(x, "courseWorkId", js.undefined)
+    inline def setCourseWorkIdUndefined: Self = StObject.set(x, "courseWorkId", js.undefined)
     
-    @scala.inline
-    def setCourseWorkType(value: String): Self = StObject.set(x, "courseWorkType", value.asInstanceOf[js.Any])
+    inline def setCourseWorkType(value: String): Self = StObject.set(x, "courseWorkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCourseWorkTypeUndefined: Self = StObject.set(x, "courseWorkType", js.undefined)
+    inline def setCourseWorkTypeUndefined: Self = StObject.set(x, "courseWorkType", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setDraftGrade(value: Double): Self = StObject.set(x, "draftGrade", value.asInstanceOf[js.Any])
+    inline def setDraftGrade(value: Double): Self = StObject.set(x, "draftGrade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraftGradeUndefined: Self = StObject.set(x, "draftGrade", js.undefined)
+    inline def setDraftGradeUndefined: Self = StObject.set(x, "draftGrade", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLate(value: Boolean): Self = StObject.set(x, "late", value.asInstanceOf[js.Any])
+    inline def setLate(value: Boolean): Self = StObject.set(x, "late", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLateUndefined: Self = StObject.set(x, "late", js.undefined)
+    inline def setLateUndefined: Self = StObject.set(x, "late", js.undefined)
     
-    @scala.inline
-    def setMultipleChoiceSubmission(value: SchemaMultipleChoiceSubmission): Self = StObject.set(x, "multipleChoiceSubmission", value.asInstanceOf[js.Any])
+    inline def setMultipleChoiceSubmission(value: SchemaMultipleChoiceSubmission): Self = StObject.set(x, "multipleChoiceSubmission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleChoiceSubmissionUndefined: Self = StObject.set(x, "multipleChoiceSubmission", js.undefined)
+    inline def setMultipleChoiceSubmissionUndefined: Self = StObject.set(x, "multipleChoiceSubmission", js.undefined)
     
-    @scala.inline
-    def setShortAnswerSubmission(value: SchemaShortAnswerSubmission): Self = StObject.set(x, "shortAnswerSubmission", value.asInstanceOf[js.Any])
+    inline def setShortAnswerSubmission(value: SchemaShortAnswerSubmission): Self = StObject.set(x, "shortAnswerSubmission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortAnswerSubmissionUndefined: Self = StObject.set(x, "shortAnswerSubmission", js.undefined)
+    inline def setShortAnswerSubmissionUndefined: Self = StObject.set(x, "shortAnswerSubmission", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setSubmissionHistory(value: js.Array[SchemaSubmissionHistory]): Self = StObject.set(x, "submissionHistory", value.asInstanceOf[js.Any])
+    inline def setSubmissionHistory(value: js.Array[SchemaSubmissionHistory]): Self = StObject.set(x, "submissionHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmissionHistoryUndefined: Self = StObject.set(x, "submissionHistory", js.undefined)
+    inline def setSubmissionHistoryUndefined: Self = StObject.set(x, "submissionHistory", js.undefined)
     
-    @scala.inline
-    def setSubmissionHistoryVarargs(value: SchemaSubmissionHistory*): Self = StObject.set(x, "submissionHistory", js.Array(value :_*))
+    inline def setSubmissionHistoryVarargs(value: SchemaSubmissionHistory*): Self = StObject.set(x, "submissionHistory", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

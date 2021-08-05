@@ -14,28 +14,21 @@ trait ListTagsResponse extends StObject {
 }
 object ListTagsResponse {
   
-  @scala.inline
-  def apply(): ListTagsResponse = {
+  inline def apply(): ListTagsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTagsResponse]
   }
   
-  @scala.inline
-  implicit class ListTagsResponseMutableBuilder[Self <: ListTagsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTag(value: js.Array[Tag]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: js.Array[Tag]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    @scala.inline
-    def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value :_*))
+    inline def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value :_*))
   }
 }

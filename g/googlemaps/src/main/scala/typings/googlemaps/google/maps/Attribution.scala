@@ -15,31 +15,23 @@ trait Attribution extends StObject {
 }
 object Attribution {
   
-  @scala.inline
-  def apply(): Attribution = {
+  inline def apply(): Attribution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Attribution]
   }
   
-  @scala.inline
-  implicit class AttributionMutableBuilder[Self <: Attribution] (val x: Self) extends AnyVal {
+  extension [Self <: Attribution](x: Self) {
     
-    @scala.inline
-    def setIosDeepLinkId(value: String): Self = StObject.set(x, "iosDeepLinkId", value.asInstanceOf[js.Any])
+    inline def setIosDeepLinkId(value: String): Self = StObject.set(x, "iosDeepLinkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosDeepLinkIdUndefined: Self = StObject.set(x, "iosDeepLinkId", js.undefined)
+    inline def setIosDeepLinkIdUndefined: Self = StObject.set(x, "iosDeepLinkId", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setWebUrl(value: String): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
+    inline def setWebUrl(value: String): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
+    inline def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
   }
 }

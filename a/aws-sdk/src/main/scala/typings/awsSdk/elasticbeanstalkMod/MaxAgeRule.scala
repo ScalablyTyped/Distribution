@@ -23,28 +23,21 @@ trait MaxAgeRule extends StObject {
 }
 object MaxAgeRule {
   
-  @scala.inline
-  def apply(Enabled: BoxedBoolean): MaxAgeRule = {
+  inline def apply(Enabled: BoxedBoolean): MaxAgeRule = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxAgeRule]
   }
   
-  @scala.inline
-  implicit class MaxAgeRuleMutableBuilder[Self <: MaxAgeRule] (val x: Self) extends AnyVal {
+  extension [Self <: MaxAgeRule](x: Self) {
     
-    @scala.inline
-    def setDeleteSourceFromS3(value: BoxedBoolean): Self = StObject.set(x, "DeleteSourceFromS3", value.asInstanceOf[js.Any])
+    inline def setDeleteSourceFromS3(value: BoxedBoolean): Self = StObject.set(x, "DeleteSourceFromS3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteSourceFromS3Undefined: Self = StObject.set(x, "DeleteSourceFromS3", js.undefined)
+    inline def setDeleteSourceFromS3Undefined: Self = StObject.set(x, "DeleteSourceFromS3", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: BoxedBoolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: BoxedBoolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAgeInDays(value: BoxedInt): Self = StObject.set(x, "MaxAgeInDays", value.asInstanceOf[js.Any])
+    inline def setMaxAgeInDays(value: BoxedInt): Self = StObject.set(x, "MaxAgeInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAgeInDaysUndefined: Self = StObject.set(x, "MaxAgeInDays", js.undefined)
+    inline def setMaxAgeInDaysUndefined: Self = StObject.set(x, "MaxAgeInDays", js.undefined)
   }
 }

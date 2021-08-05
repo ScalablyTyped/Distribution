@@ -11,14 +11,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def around[T](index: KDBush[T], longitude: Double, latitude: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def around[T](index: KDBush[T], longitude: Double, latitude: Double, maxResults: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def around[T](index: KDBush[T], longitude: Double, latitude: Double, maxResults: Double, maxDistance: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def around[T](
+  inline def around[T](index: KDBush[T], longitude: Double, latitude: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def around[T](index: KDBush[T], longitude: Double, latitude: Double, maxResults: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def around[T](index: KDBush[T], longitude: Double, latitude: Double, maxResults: Double, maxDistance: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def around[T](
     index: KDBush[T],
     longitude: Double,
     latitude: Double,
@@ -26,8 +22,7 @@ object mod {
     maxDistance: Double,
     filterFn: js.Any
   ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any], filterFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def around[T](
+  inline def around[T](
     index: KDBush[T],
     longitude: Double,
     latitude: Double,
@@ -35,10 +30,8 @@ object mod {
     maxDistance: Unit,
     filterFn: js.Any
   ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any], filterFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def around[T](index: KDBush[T], longitude: Double, latitude: Double, maxResults: Unit, maxDistance: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def around[T](
+  inline def around[T](index: KDBush[T], longitude: Double, latitude: Double, maxResults: Unit, maxDistance: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def around[T](
     index: KDBush[T],
     longitude: Double,
     latitude: Double,
@@ -46,8 +39,7 @@ object mod {
     maxDistance: Double,
     filterFn: js.Any
   ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any], filterFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def around[T](
+  inline def around[T](
     index: KDBush[T],
     longitude: Double,
     latitude: Double,
@@ -56,6 +48,5 @@ object mod {
     filterFn: js.Any
   ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any], filterFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @scala.inline
-  def distance(longitude1: Double, latitude1: Double, longitude2: Double, latitude2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(longitude1.asInstanceOf[js.Any], latitude1.asInstanceOf[js.Any], longitude2.asInstanceOf[js.Any], latitude2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def distance(longitude1: Double, latitude1: Double, longitude2: Double, latitude2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(longitude1.asInstanceOf[js.Any], latitude1.asInstanceOf[js.Any], longitude2.asInstanceOf[js.Any], latitude2.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

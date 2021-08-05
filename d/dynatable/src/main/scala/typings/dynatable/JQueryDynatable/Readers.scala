@@ -44,25 +44,19 @@ trait Readers extends StObject {
 }
 object Readers {
   
-  @scala.inline
-  def apply(): Readers = {
+  inline def apply(): Readers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Readers]
   }
   
-  @scala.inline
-  implicit class ReadersMutableBuilder[Self <: Readers] (val x: Self) extends AnyVal {
+  extension [Self <: Readers](x: Self) {
     
-    @scala.inline
-    def set_attributeReader(value: (/* cell */ Element, /* record */ js.Any) => js.Any): Self = StObject.set(x, "_attributeReader", js.Any.fromFunction2(value))
+    inline def set_attributeReader(value: (/* cell */ Element, /* record */ js.Any) => js.Any): Self = StObject.set(x, "_attributeReader", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_attributeReaderUndefined: Self = StObject.set(x, "_attributeReader", js.undefined)
+    inline def set_attributeReaderUndefined: Self = StObject.set(x, "_attributeReader", js.undefined)
     
-    @scala.inline
-    def set_rowReader(value: (/* index */ Double, /* thisRef */ js.Any, /* record */ js.Any) => js.Any): Self = StObject.set(x, "_rowReader", js.Any.fromFunction3(value))
+    inline def set_rowReader(value: (/* index */ Double, /* thisRef */ js.Any, /* record */ js.Any) => js.Any): Self = StObject.set(x, "_rowReader", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def set_rowReaderUndefined: Self = StObject.set(x, "_rowReader", js.undefined)
+    inline def set_rowReaderUndefined: Self = StObject.set(x, "_rowReader", js.undefined)
   }
 }

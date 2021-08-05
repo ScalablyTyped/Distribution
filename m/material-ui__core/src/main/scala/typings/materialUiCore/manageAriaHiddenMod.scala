@@ -12,9 +12,7 @@ object manageAriaHiddenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ariaHidden(node: Node, show: Boolean): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("ariaHidden")(node.asInstanceOf[js.Any], show.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  inline def ariaHidden(node: Node, show: Boolean): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("ariaHidden")(node.asInstanceOf[js.Any], show.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
   
-  @scala.inline
-  def ariaHiddenSiblings(container: Element, mountNode: Node, currentNode: Node, show: Boolean): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("ariaHiddenSiblings")(container.asInstanceOf[js.Any], mountNode.asInstanceOf[js.Any], currentNode.asInstanceOf[js.Any], show.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  inline def ariaHiddenSiblings(container: Element, mountNode: Node, currentNode: Node, show: Boolean): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("ariaHiddenSiblings")(container.asInstanceOf[js.Any], mountNode.asInstanceOf[js.Any], currentNode.asInstanceOf[js.Any], show.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
 }

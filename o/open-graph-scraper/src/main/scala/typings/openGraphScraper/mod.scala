@@ -12,10 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: Options): js.Promise[SuccessResult | ErrorResult] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SuccessResult | ErrorResult]]
-  @scala.inline
-  def apply(
+  inline def apply(options: Options): js.Promise[SuccessResult | ErrorResult] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SuccessResult | ErrorResult]]
+  inline def apply(
     options: Options,
     callback: js.Function3[
       /* error */ Boolean, 
@@ -37,20 +35,16 @@ object mod {
   }
   object ErrorResult {
     
-    @scala.inline
-    def apply(result: Error): ErrorResult = {
+    inline def apply(result: Error): ErrorResult = {
       val __obj = js.Dynamic.literal(error = true, result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorResult]
     }
     
-    @scala.inline
-    implicit class ErrorResultMutableBuilder[Self <: ErrorResult] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorResult](x: Self) {
       
-      @scala.inline
-      def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: Error): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Error): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,113 +100,78 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(url: String): Options = {
+    inline def apply(url: String): Options = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllMedia(value: Boolean): Self = StObject.set(x, "allMedia", value.asInstanceOf[js.Any])
+      inline def setAllMedia(value: Boolean): Self = StObject.set(x, "allMedia", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllMediaUndefined: Self = StObject.set(x, "allMedia", js.undefined)
+      inline def setAllMediaUndefined: Self = StObject.set(x, "allMedia", js.undefined)
       
-      @scala.inline
-      def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+      inline def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+      inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
-      @scala.inline
-      def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
+      inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
       
-      @scala.inline
-      def setDecompress(value: Boolean): Self = StObject.set(x, "decompress", value.asInstanceOf[js.Any])
+      inline def setDecompress(value: Boolean): Self = StObject.set(x, "decompress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecompressUndefined: Self = StObject.set(x, "decompress", js.undefined)
+      inline def setDecompressUndefined: Self = StObject.set(x, "decompress", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingNull: Self = StObject.set(x, "encoding", null)
+      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFollowRedirect(value: Boolean): Self = StObject.set(x, "followRedirect", value.asInstanceOf[js.Any])
+      inline def setFollowRedirect(value: Boolean): Self = StObject.set(x, "followRedirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowRedirectUndefined: Self = StObject.set(x, "followRedirect", js.undefined)
+      inline def setFollowRedirectUndefined: Self = StObject.set(x, "followRedirect", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
+      inline def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
+      inline def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
       
-      @scala.inline
-      def setOgImageFallback(value: Boolean): Self = StObject.set(x, "ogImageFallback", value.asInstanceOf[js.Any])
+      inline def setOgImageFallback(value: Boolean): Self = StObject.set(x, "ogImageFallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgImageFallbackUndefined: Self = StObject.set(x, "ogImageFallback", js.undefined)
+      inline def setOgImageFallbackUndefined: Self = StObject.set(x, "ogImageFallback", js.undefined)
       
-      @scala.inline
-      def setOnlyGetOpenGraphInfo(value: Boolean): Self = StObject.set(x, "onlyGetOpenGraphInfo", value.asInstanceOf[js.Any])
+      inline def setOnlyGetOpenGraphInfo(value: Boolean): Self = StObject.set(x, "onlyGetOpenGraphInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyGetOpenGraphInfoUndefined: Self = StObject.set(x, "onlyGetOpenGraphInfo", js.undefined)
+      inline def setOnlyGetOpenGraphInfoUndefined: Self = StObject.set(x, "onlyGetOpenGraphInfo", js.undefined)
       
-      @scala.inline
-      def setPeekSize(value: Double): Self = StObject.set(x, "peekSize", value.asInstanceOf[js.Any])
+      inline def setPeekSize(value: Double): Self = StObject.set(x, "peekSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeekSizeUndefined: Self = StObject.set(x, "peekSize", js.undefined)
+      inline def setPeekSizeUndefined: Self = StObject.set(x, "peekSize", js.undefined)
       
-      @scala.inline
-      def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      inline def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+      inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
       
-      @scala.inline
-      def setRunChar(value: Boolean): Self = StObject.set(x, "runChar", value.asInstanceOf[js.Any])
+      inline def setRunChar(value: Boolean): Self = StObject.set(x, "runChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunCharUndefined: Self = StObject.set(x, "runChar", js.undefined)
+      inline def setRunCharUndefined: Self = StObject.set(x, "runChar", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCharset(value: Boolean): Self = StObject.set(x, "withCharset", value.asInstanceOf[js.Any])
+      inline def setWithCharset(value: Boolean): Self = StObject.set(x, "withCharset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCharsetUndefined: Self = StObject.set(x, "withCharset", js.undefined)
+      inline def setWithCharsetUndefined: Self = StObject.set(x, "withCharset", js.undefined)
     }
   }
   
@@ -226,23 +185,18 @@ object mod {
   }
   object SuccessResult {
     
-    @scala.inline
-    def apply(response: PassThrough, result: OgDescription): SuccessResult = {
+    inline def apply(response: PassThrough, result: OgDescription): SuccessResult = {
       val __obj = js.Dynamic.literal(error = false, response = response.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[SuccessResult]
     }
     
-    @scala.inline
-    implicit class SuccessResultMutableBuilder[Self <: SuccessResult] (val x: Self) extends AnyVal {
+    extension [Self <: SuccessResult](x: Self) {
       
-      @scala.inline
-      def setError(value: `false`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: `false`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: PassThrough): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: PassThrough): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: OgDescription): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: OgDescription): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
 }

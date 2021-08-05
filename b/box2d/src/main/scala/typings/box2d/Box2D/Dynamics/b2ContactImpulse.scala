@@ -19,19 +19,15 @@ trait b2ContactImpulse extends StObject {
 }
 object b2ContactImpulse {
   
-  @scala.inline
-  def apply(normalImpulses: b2Vec2, tangentImpulses: b2Vec2): b2ContactImpulse = {
+  inline def apply(normalImpulses: b2Vec2, tangentImpulses: b2Vec2): b2ContactImpulse = {
     val __obj = js.Dynamic.literal(normalImpulses = normalImpulses.asInstanceOf[js.Any], tangentImpulses = tangentImpulses.asInstanceOf[js.Any])
     __obj.asInstanceOf[b2ContactImpulse]
   }
   
-  @scala.inline
-  implicit class b2ContactImpulseMutableBuilder[Self <: b2ContactImpulse] (val x: Self) extends AnyVal {
+  extension [Self <: b2ContactImpulse](x: Self) {
     
-    @scala.inline
-    def setNormalImpulses(value: b2Vec2): Self = StObject.set(x, "normalImpulses", value.asInstanceOf[js.Any])
+    inline def setNormalImpulses(value: b2Vec2): Self = StObject.set(x, "normalImpulses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTangentImpulses(value: b2Vec2): Self = StObject.set(x, "tangentImpulses", value.asInstanceOf[js.Any])
+    inline def setTangentImpulses(value: b2Vec2): Self = StObject.set(x, "tangentImpulses", value.asInstanceOf[js.Any])
   }
 }

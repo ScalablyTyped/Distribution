@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RenderMonthProps extends StObject
 object RenderMonthProps {
   
-  @scala.inline
-  def RenderMonthElement(): typings.reactDates.anon.RenderMonthElement = {
+  inline def RenderMonthElement(): typings.reactDates.anon.RenderMonthElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.reactDates.anon.RenderMonthElement]
   }
   
-  @scala.inline
-  def RenderMonthText(): typings.reactDates.anon.RenderMonthText = {
+  inline def RenderMonthText(): typings.reactDates.anon.RenderMonthText = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.reactDates.anon.RenderMonthText]
   }

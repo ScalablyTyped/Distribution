@@ -18,25 +18,19 @@ trait CustomErrorResponses extends StObject {
 }
 object CustomErrorResponses {
   
-  @scala.inline
-  def apply(Quantity: integer): CustomErrorResponses = {
+  inline def apply(Quantity: integer): CustomErrorResponses = {
     val __obj = js.Dynamic.literal(Quantity = Quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomErrorResponses]
   }
   
-  @scala.inline
-  implicit class CustomErrorResponsesMutableBuilder[Self <: CustomErrorResponses] (val x: Self) extends AnyVal {
+  extension [Self <: CustomErrorResponses](x: Self) {
     
-    @scala.inline
-    def setItems(value: CustomErrorResponseList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: CustomErrorResponseList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: CustomErrorResponse*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: CustomErrorResponse*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }
 }

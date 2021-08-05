@@ -60,68 +60,48 @@ object JQueryDotDotDot {
   }
   object IDotDotDotOptions {
     
-    @scala.inline
-    def apply(): IDotDotDotOptions = {
+    inline def apply(): IDotDotDotOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDotDotDotOptions]
     }
     
-    @scala.inline
-    implicit class IDotDotDotOptionsMutableBuilder[Self <: IDotDotDotOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IDotDotDotOptions](x: Self) {
       
-      @scala.inline
-      def setAfter(value: String | JQuery): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: String | JQuery): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setCallback(value: (/* isTruncated */ Boolean, /* orgContent */ js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* isTruncated */ Boolean, /* orgContent */ js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setEllipsis(value: String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+      inline def setEllipsis(value: String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+      inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
       
-      @scala.inline
-      def setFallbackToLetter(value: Boolean): Self = StObject.set(x, "fallbackToLetter", value.asInstanceOf[js.Any])
+      inline def setFallbackToLetter(value: Boolean): Self = StObject.set(x, "fallbackToLetter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackToLetterUndefined: Self = StObject.set(x, "fallbackToLetter", js.undefined)
+      inline def setFallbackToLetterUndefined: Self = StObject.set(x, "fallbackToLetter", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLastCharacter(value: IDotDotDotOptionsLastCharacter): Self = StObject.set(x, "lastCharacter", value.asInstanceOf[js.Any])
+      inline def setLastCharacter(value: IDotDotDotOptionsLastCharacter): Self = StObject.set(x, "lastCharacter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastCharacterUndefined: Self = StObject.set(x, "lastCharacter", js.undefined)
+      inline def setLastCharacterUndefined: Self = StObject.set(x, "lastCharacter", js.undefined)
       
-      @scala.inline
-      def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+      inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
+      inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
       
-      @scala.inline
-      def setWatch(value: Boolean | window): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+      inline def setWatch(value: Boolean | window): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+      inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
       
-      @scala.inline
-      def setWrap(value: String): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: String): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   
@@ -140,32 +120,24 @@ object JQueryDotDotDot {
   }
   object IDotDotDotOptionsLastCharacter {
     
-    @scala.inline
-    def apply(): IDotDotDotOptionsLastCharacter = {
+    inline def apply(): IDotDotDotOptionsLastCharacter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDotDotDotOptionsLastCharacter]
     }
     
-    @scala.inline
-    implicit class IDotDotDotOptionsLastCharacterMutableBuilder[Self <: IDotDotDotOptionsLastCharacter] (val x: Self) extends AnyVal {
+    extension [Self <: IDotDotDotOptionsLastCharacter](x: Self) {
       
-      @scala.inline
-      def setNoEllipsis(value: js.Array[String]): Self = StObject.set(x, "noEllipsis", value.asInstanceOf[js.Any])
+      inline def setNoEllipsis(value: js.Array[String]): Self = StObject.set(x, "noEllipsis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoEllipsisUndefined: Self = StObject.set(x, "noEllipsis", js.undefined)
+      inline def setNoEllipsisUndefined: Self = StObject.set(x, "noEllipsis", js.undefined)
       
-      @scala.inline
-      def setNoEllipsisVarargs(value: String*): Self = StObject.set(x, "noEllipsis", js.Array(value :_*))
+      inline def setNoEllipsisVarargs(value: String*): Self = StObject.set(x, "noEllipsis", js.Array(value :_*))
       
-      @scala.inline
-      def setRemove(value: js.Array[String]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: js.Array[String]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      @scala.inline
-      def setRemoveVarargs(value: String*): Self = StObject.set(x, "remove", js.Array(value :_*))
+      inline def setRemoveVarargs(value: String*): Self = StObject.set(x, "remove", js.Array(value :_*))
     }
   }
 }

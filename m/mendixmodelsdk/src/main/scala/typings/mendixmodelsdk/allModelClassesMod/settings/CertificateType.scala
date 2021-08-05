@@ -21,13 +21,11 @@ object CertificateType {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.CertificateType.Authority")
   @js.native
   def Authority: typings.mendixmodelsdk.settingsMod.settings.CertificateType = js.native
-  @scala.inline
-  def Authority_=(x: typings.mendixmodelsdk.settingsMod.settings.CertificateType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Authority")(x.asInstanceOf[js.Any])
+  inline def Authority_=(x: typings.mendixmodelsdk.settingsMod.settings.CertificateType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Authority")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.CertificateType.Client")
   @js.native
   def Client: typings.mendixmodelsdk.settingsMod.settings.CertificateType = js.native
-  @scala.inline
-  def Client_=(x: typings.mendixmodelsdk.settingsMod.settings.CertificateType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Client")(x.asInstanceOf[js.Any])
+  inline def Client_=(x: typings.mendixmodelsdk.settingsMod.settings.CertificateType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Client")(x.asInstanceOf[js.Any])
 }

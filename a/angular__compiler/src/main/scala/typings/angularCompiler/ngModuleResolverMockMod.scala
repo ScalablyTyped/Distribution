@@ -15,7 +15,7 @@ object ngModuleResolverMockMod {
   class MockNgModuleResolver protected () extends NgModuleResolver {
     def this(reflector: CompileReflector) = this()
     
-    var _ngModules: js.Any = js.native
+    /* private */ var _ngModules: js.Any = js.native
     
     /**
       * Overrides the {@link NgModule} for a module.

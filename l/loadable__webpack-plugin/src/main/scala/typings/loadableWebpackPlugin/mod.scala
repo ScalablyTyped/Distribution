@@ -39,32 +39,24 @@ object mod {
   }
   object PluginOptions {
     
-    @scala.inline
-    def apply(): PluginOptions = {
+    inline def apply(): PluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PluginOptions]
     }
     
-    @scala.inline
-    implicit class PluginOptionsMutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PluginOptions](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setOutputAsset(value: Boolean): Self = StObject.set(x, "outputAsset", value.asInstanceOf[js.Any])
+      inline def setOutputAsset(value: Boolean): Self = StObject.set(x, "outputAsset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputAssetUndefined: Self = StObject.set(x, "outputAsset", js.undefined)
+      inline def setOutputAssetUndefined: Self = StObject.set(x, "outputAsset", js.undefined)
       
-      @scala.inline
-      def setWriteToDisk(value: Boolean | Filename): Self = StObject.set(x, "writeToDisk", value.asInstanceOf[js.Any])
+      inline def setWriteToDisk(value: Boolean | Filename): Self = StObject.set(x, "writeToDisk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteToDiskUndefined: Self = StObject.set(x, "writeToDisk", js.undefined)
+      inline def setWriteToDiskUndefined: Self = StObject.set(x, "writeToDisk", js.undefined)
     }
   }
 }

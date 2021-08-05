@@ -19,12 +19,10 @@ trait CellOrientation extends StObject
 object CellOrientation {
   
   /** contents are printed from bottom to top. */
-  @scala.inline
-  def BOTTOMTOP: `2` = 2.asInstanceOf[`2`]
+  inline def BOTTOMTOP: `2` = 2.asInstanceOf[`2`]
   
   /** contents are printed from top to bottom with individual characters in normal (horizontal) orientation. */
-  @scala.inline
-  def STACKED: `3` = 3.asInstanceOf[`3`]
+  inline def STACKED: `3` = 3.asInstanceOf[`3`]
   
   /**
     * default alignment is used (left for numbers, right for text).
@@ -33,10 +31,8 @@ object CellOrientation {
     *
     * default alignment is used.
     */
-  @scala.inline
-  def STANDARD: `0` = 0.asInstanceOf[`0`]
+  inline def STANDARD: `0` = 0.asInstanceOf[`0`]
   
   /** contents are printed from top to bottom. */
-  @scala.inline
-  def TOPBOTTOM: `1` = 1.asInstanceOf[`1`]
+  inline def TOPBOTTOM: `1` = 1.asInstanceOf[`1`]
 }

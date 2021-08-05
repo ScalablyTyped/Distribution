@@ -28,9 +28,9 @@ object infiniteScrollDirectiveMod {
     
     def destroyScroller(): Unit = js.native
     
-    var disposeScroller: js.Any = js.native
+    /* private */ var disposeScroller: js.Any = js.native
     
-    var element: js.Any = js.native
+    /* private */ var element: js.Any = js.native
     
     var fromRoot: Boolean = js.native
     
@@ -84,6 +84,6 @@ object infiniteScrollDirectiveMod {
     
     def setup(): Unit = js.native
     
-    var zone: js.Any = js.native
+    /* private */ var zone: js.Any = js.native
   }
 }

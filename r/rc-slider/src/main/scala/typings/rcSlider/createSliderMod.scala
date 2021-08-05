@@ -14,6 +14,5 @@ object createSliderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[Props /* <: GenericSliderProps */, State /* <: GenericSliderState */](Component: GenericSlider[Props, State]): ComponentClass[Props, State] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Props, State]]
+  inline def default[Props /* <: GenericSliderProps */, State /* <: GenericSliderState */](Component: GenericSlider[Props, State]): ComponentClass[Props, State] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Props, State]]
 }

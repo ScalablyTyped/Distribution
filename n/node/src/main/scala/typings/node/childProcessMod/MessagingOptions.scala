@@ -14,19 +14,15 @@ trait MessagingOptions extends StObject {
 }
 object MessagingOptions {
   
-  @scala.inline
-  def apply(): MessagingOptions = {
+  inline def apply(): MessagingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessagingOptions]
   }
   
-  @scala.inline
-  implicit class MessagingOptionsMutableBuilder[Self <: MessagingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MessagingOptions](x: Self) {
     
-    @scala.inline
-    def setSerialization(value: SerializationType): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
+    inline def setSerialization(value: SerializationType): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
+    inline def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
   }
 }

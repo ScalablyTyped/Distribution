@@ -11,16 +11,13 @@ trait PickImplbeginsWith extends StObject {
 }
 object PickImplbeginsWith {
   
-  @scala.inline
-  def apply(beginsWith: String): PickImplbeginsWith = {
+  inline def apply(beginsWith: String): PickImplbeginsWith = {
     val __obj = js.Dynamic.literal(beginsWith = beginsWith.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplbeginsWith]
   }
   
-  @scala.inline
-  implicit class PickImplbeginsWithMutableBuilder[Self <: PickImplbeginsWith] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplbeginsWith](x: Self) {
     
-    @scala.inline
-    def setBeginsWith(value: String): Self = StObject.set(x, "beginsWith", value.asInstanceOf[js.Any])
+    inline def setBeginsWith(value: String): Self = StObject.set(x, "beginsWith", value.asInstanceOf[js.Any])
   }
 }

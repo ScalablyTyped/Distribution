@@ -14,16 +14,13 @@ trait ElementStylesheetCSS
 }
 object ElementStylesheetCSS {
   
-  @scala.inline
-  def apply(css: Node | Edge | typings.cytoscape.mod.Css.Core, json: () => js.Any, selector: String): ElementStylesheetCSS = {
+  inline def apply(css: Node | Edge | typings.cytoscape.mod.Css.Core, json: () => js.Any, selector: String): ElementStylesheetCSS = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), selector = selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementStylesheetCSS]
   }
   
-  @scala.inline
-  implicit class ElementStylesheetCSSMutableBuilder[Self <: ElementStylesheetCSS] (val x: Self) extends AnyVal {
+  extension [Self <: ElementStylesheetCSS](x: Self) {
     
-    @scala.inline
-    def setJson(value: () => js.Any): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+    inline def setJson(value: () => js.Any): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
   }
 }

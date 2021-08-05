@@ -60,8 +60,7 @@ object commonMod {
   }
   object Context {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cookie: StringDictionary[String],
       data: js.Any,
       error: Error,
@@ -85,71 +84,49 @@ object commonMod {
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setCookie(value: StringDictionary[String]): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: StringDictionary[String]): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiles(value: Files): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Files): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIps(value: js.Array[String]): Self = StObject.set(x, "ips", value.asInstanceOf[js.Any])
+      inline def setIps(value: js.Array[String]): Self = StObject.set(x, "ips", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpsUndefined: Self = StObject.set(x, "ips", js.undefined)
+      inline def setIpsUndefined: Self = StObject.set(x, "ips", js.undefined)
       
-      @scala.inline
-      def setIpsVarargs(value: String*): Self = StObject.set(x, "ips", js.Array(value :_*))
+      inline def setIpsVarargs(value: String*): Self = StObject.set(x, "ips", js.Array(value :_*))
       
-      @scala.inline
-      def setLog(value: keyinLogLevelLogFn): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: keyinLogLevelLogFn): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReq(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRes(value: Response_[js.Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: Response_[js.Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: js.Object): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: js.Object): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhr(value: Boolean): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Boolean): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     }
   }
   
@@ -172,29 +149,21 @@ object commonMod {
   trait LogLevel extends StObject
   object LogLevel {
     
-    @scala.inline
-    def alert: typings.server.serverStrings.alert = "alert".asInstanceOf[typings.server.serverStrings.alert]
+    inline def alert: typings.server.serverStrings.alert = "alert".asInstanceOf[typings.server.serverStrings.alert]
     
-    @scala.inline
-    def critical: typings.server.serverStrings.critical = "critical".asInstanceOf[typings.server.serverStrings.critical]
+    inline def critical: typings.server.serverStrings.critical = "critical".asInstanceOf[typings.server.serverStrings.critical]
     
-    @scala.inline
-    def debug: typings.server.serverStrings.debug = "debug".asInstanceOf[typings.server.serverStrings.debug]
+    inline def debug: typings.server.serverStrings.debug = "debug".asInstanceOf[typings.server.serverStrings.debug]
     
-    @scala.inline
-    def emergency: typings.server.serverStrings.emergency = "emergency".asInstanceOf[typings.server.serverStrings.emergency]
+    inline def emergency: typings.server.serverStrings.emergency = "emergency".asInstanceOf[typings.server.serverStrings.emergency]
     
-    @scala.inline
-    def error: typings.server.serverStrings.error = "error".asInstanceOf[typings.server.serverStrings.error]
+    inline def error: typings.server.serverStrings.error = "error".asInstanceOf[typings.server.serverStrings.error]
     
-    @scala.inline
-    def info: typings.server.serverStrings.info = "info".asInstanceOf[typings.server.serverStrings.info]
+    inline def info: typings.server.serverStrings.info = "info".asInstanceOf[typings.server.serverStrings.info]
     
-    @scala.inline
-    def notice: typings.server.serverStrings.notice = "notice".asInstanceOf[typings.server.serverStrings.notice]
+    inline def notice: typings.server.serverStrings.notice = "notice".asInstanceOf[typings.server.serverStrings.notice]
     
-    @scala.inline
-    def warning: typings.server.serverStrings.warning = "warning".asInstanceOf[typings.server.serverStrings.warning]
+    inline def warning: typings.server.serverStrings.warning = "warning".asInstanceOf[typings.server.serverStrings.warning]
   }
   
   type Middleware = js.Function1[/* ctx */ Context, Reply | BasicType | Unit]

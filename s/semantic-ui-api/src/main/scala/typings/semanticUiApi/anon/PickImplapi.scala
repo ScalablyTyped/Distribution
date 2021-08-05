@@ -12,16 +12,13 @@ trait PickImplapi extends StObject {
 }
 object PickImplapi {
   
-  @scala.inline
-  def apply(api: StringDictionary[String]): PickImplapi = {
+  inline def apply(api: StringDictionary[String]): PickImplapi = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplapi]
   }
   
-  @scala.inline
-  implicit class PickImplapiMutableBuilder[Self <: PickImplapi] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplapi](x: Self) {
     
-    @scala.inline
-    def setApi(value: StringDictionary[String]): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: StringDictionary[String]): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
   }
 }

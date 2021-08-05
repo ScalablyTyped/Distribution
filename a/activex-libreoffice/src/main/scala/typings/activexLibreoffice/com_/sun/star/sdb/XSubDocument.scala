@@ -42,25 +42,19 @@ trait XSubDocument extends StObject {
 }
 object XSubDocument {
   
-  @scala.inline
-  def apply(close: () => Boolean, open: () => XComponent, openDesign: () => XComponent, store: () => Unit): XSubDocument = {
+  inline def apply(close: () => Boolean, open: () => XComponent, openDesign: () => XComponent, store: () => Unit): XSubDocument = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), open = js.Any.fromFunction0(open), openDesign = js.Any.fromFunction0(openDesign), store = js.Any.fromFunction0(store))
     __obj.asInstanceOf[XSubDocument]
   }
   
-  @scala.inline
-  implicit class XSubDocumentMutableBuilder[Self <: XSubDocument] (val x: Self) extends AnyVal {
+  extension [Self <: XSubDocument](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Boolean): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Boolean): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpen(value: () => XComponent): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => XComponent): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpenDesign(value: () => XComponent): Self = StObject.set(x, "openDesign", js.Any.fromFunction0(value))
+    inline def setOpenDesign(value: () => XComponent): Self = StObject.set(x, "openDesign", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStore(value: () => Unit): Self = StObject.set(x, "store", js.Any.fromFunction0(value))
+    inline def setStore(value: () => Unit): Self = StObject.set(x, "store", js.Any.fromFunction0(value))
   }
 }

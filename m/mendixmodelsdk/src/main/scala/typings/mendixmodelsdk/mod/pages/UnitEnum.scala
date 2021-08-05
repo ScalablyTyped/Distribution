@@ -21,13 +21,11 @@ object UnitEnum {
   @JSImport("mendixmodelsdk", "pages.UnitEnum.Pixels")
   @js.native
   def Pixels: typings.mendixmodelsdk.pagesMod.pages.UnitEnum = js.native
-  @scala.inline
-  def Pixels_=(x: typings.mendixmodelsdk.pagesMod.pages.UnitEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pixels")(x.asInstanceOf[js.Any])
+  inline def Pixels_=(x: typings.mendixmodelsdk.pagesMod.pages.UnitEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pixels")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.UnitEnum.Weight")
   @js.native
   def Weight: typings.mendixmodelsdk.pagesMod.pages.UnitEnum = js.native
-  @scala.inline
-  def Weight_=(x: typings.mendixmodelsdk.pagesMod.pages.UnitEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Weight")(x.asInstanceOf[js.Any])
+  inline def Weight_=(x: typings.mendixmodelsdk.pagesMod.pages.UnitEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Weight")(x.asInstanceOf[js.Any])
 }

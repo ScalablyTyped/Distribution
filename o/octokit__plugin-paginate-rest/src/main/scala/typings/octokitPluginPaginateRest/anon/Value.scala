@@ -13,19 +13,15 @@ trait Value extends StObject {
 }
 object Value {
   
-  @scala.inline
-  def apply(done: Unit, value: OctokitResponse[js.Any]): Value = {
+  inline def apply(done: Unit, value: OctokitResponse[js.Any]): Value = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
   
-  @scala.inline
-  implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+  extension [Self <: Value](x: Self) {
     
-    @scala.inline
-    def setDone(value: Unit): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: Unit): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: OctokitResponse[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: OctokitResponse[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

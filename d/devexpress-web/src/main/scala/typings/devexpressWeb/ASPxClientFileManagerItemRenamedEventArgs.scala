@@ -18,16 +18,13 @@ trait ASPxClientFileManagerItemRenamedEventArgs
 }
 object ASPxClientFileManagerItemRenamedEventArgs {
   
-  @scala.inline
-  def apply(fullName: String, isFolder: Boolean, name: String, oldName: String): ASPxClientFileManagerItemRenamedEventArgs = {
+  inline def apply(fullName: String, isFolder: Boolean, name: String, oldName: String): ASPxClientFileManagerItemRenamedEventArgs = {
     val __obj = js.Dynamic.literal(fullName = fullName.asInstanceOf[js.Any], isFolder = isFolder.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], oldName = oldName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFileManagerItemRenamedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientFileManagerItemRenamedEventArgsMutableBuilder[Self <: ASPxClientFileManagerItemRenamedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFileManagerItemRenamedEventArgs](x: Self) {
     
-    @scala.inline
-    def setOldName(value: String): Self = StObject.set(x, "oldName", value.asInstanceOf[js.Any])
+    inline def setOldName(value: String): Self = StObject.set(x, "oldName", value.asInstanceOf[js.Any])
   }
 }

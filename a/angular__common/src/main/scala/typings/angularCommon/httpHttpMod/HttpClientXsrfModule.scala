@@ -19,8 +19,7 @@ object HttpClientXsrfModule {
   /**
     * Disable the default XSRF protection.
     */
-  @scala.inline
-  def disable(): ModuleWithProviders[HttpClientXsrfModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[ModuleWithProviders[HttpClientXsrfModule]]
+  inline def disable(): ModuleWithProviders[HttpClientXsrfModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[ModuleWithProviders[HttpClientXsrfModule]]
   
   /**
     * Configure XSRF protection.
@@ -30,8 +29,6 @@ object HttpClientXsrfModule {
     * - Header name default is `X-XSRF-TOKEN`.
     *
     */
-  @scala.inline
-  def withOptions(): ModuleWithProviders[HttpClientXsrfModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withOptions")().asInstanceOf[ModuleWithProviders[HttpClientXsrfModule]]
-  @scala.inline
-  def withOptions(options: CookieName): ModuleWithProviders[HttpClientXsrfModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[HttpClientXsrfModule]]
+  inline def withOptions(): ModuleWithProviders[HttpClientXsrfModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withOptions")().asInstanceOf[ModuleWithProviders[HttpClientXsrfModule]]
+  inline def withOptions(options: CookieName): ModuleWithProviders[HttpClientXsrfModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[HttpClientXsrfModule]]
 }

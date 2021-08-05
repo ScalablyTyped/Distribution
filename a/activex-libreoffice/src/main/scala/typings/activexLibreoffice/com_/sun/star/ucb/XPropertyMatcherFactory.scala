@@ -21,8 +21,7 @@ trait XPropertyMatcherFactory
 }
 object XPropertyMatcherFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createPropertyMatcher: SeqEquiv[SearchCriterium] => XPropertyMatcher,
     queryInterface: `type` => js.Any,
@@ -32,10 +31,8 @@ object XPropertyMatcherFactory {
     __obj.asInstanceOf[XPropertyMatcherFactory]
   }
   
-  @scala.inline
-  implicit class XPropertyMatcherFactoryMutableBuilder[Self <: XPropertyMatcherFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertyMatcherFactory](x: Self) {
     
-    @scala.inline
-    def setCreatePropertyMatcher(value: SeqEquiv[SearchCriterium] => XPropertyMatcher): Self = StObject.set(x, "createPropertyMatcher", js.Any.fromFunction1(value))
+    inline def setCreatePropertyMatcher(value: SeqEquiv[SearchCriterium] => XPropertyMatcher): Self = StObject.set(x, "createPropertyMatcher", js.Any.fromFunction1(value))
   }
 }

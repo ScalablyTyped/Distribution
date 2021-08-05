@@ -11,19 +11,15 @@ trait CreateFootnoteResponse extends StObject {
 }
 object CreateFootnoteResponse {
   
-  @scala.inline
-  def apply(): CreateFootnoteResponse = {
+  inline def apply(): CreateFootnoteResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateFootnoteResponse]
   }
   
-  @scala.inline
-  implicit class CreateFootnoteResponseMutableBuilder[Self <: CreateFootnoteResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFootnoteResponse](x: Self) {
     
-    @scala.inline
-    def setFootnoteId(value: String): Self = StObject.set(x, "footnoteId", value.asInstanceOf[js.Any])
+    inline def setFootnoteId(value: String): Self = StObject.set(x, "footnoteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteIdUndefined: Self = StObject.set(x, "footnoteId", js.undefined)
+    inline def setFootnoteIdUndefined: Self = StObject.set(x, "footnoteId", js.undefined)
   }
 }

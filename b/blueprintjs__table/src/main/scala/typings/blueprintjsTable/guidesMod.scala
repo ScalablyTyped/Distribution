@@ -19,9 +19,9 @@ object guidesMod {
       */
     def this(props: IGuideLayerProps, context: js.Any) = this()
     
-    var renderHorizontalGuide: js.Any = js.native
+    /* private */ var renderHorizontalGuide: js.Any = js.native
     
-    var renderVerticalGuide: js.Any = js.native
+    /* private */ var renderVerticalGuide: js.Any = js.native
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MGuideLayer(nextProps: IGuideLayerProps): Boolean = js.native
@@ -43,32 +43,24 @@ object guidesMod {
   }
   object IGuideLayerProps {
     
-    @scala.inline
-    def apply(): IGuideLayerProps = {
+    inline def apply(): IGuideLayerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGuideLayerProps]
     }
     
-    @scala.inline
-    implicit class IGuideLayerPropsMutableBuilder[Self <: IGuideLayerProps] (val x: Self) extends AnyVal {
+    extension [Self <: IGuideLayerProps](x: Self) {
       
-      @scala.inline
-      def setHorizontalGuides(value: js.Array[Double]): Self = StObject.set(x, "horizontalGuides", value.asInstanceOf[js.Any])
+      inline def setHorizontalGuides(value: js.Array[Double]): Self = StObject.set(x, "horizontalGuides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalGuidesUndefined: Self = StObject.set(x, "horizontalGuides", js.undefined)
+      inline def setHorizontalGuidesUndefined: Self = StObject.set(x, "horizontalGuides", js.undefined)
       
-      @scala.inline
-      def setHorizontalGuidesVarargs(value: Double*): Self = StObject.set(x, "horizontalGuides", js.Array(value :_*))
+      inline def setHorizontalGuidesVarargs(value: Double*): Self = StObject.set(x, "horizontalGuides", js.Array(value :_*))
       
-      @scala.inline
-      def setVerticalGuides(value: js.Array[Double]): Self = StObject.set(x, "verticalGuides", value.asInstanceOf[js.Any])
+      inline def setVerticalGuides(value: js.Array[Double]): Self = StObject.set(x, "verticalGuides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalGuidesUndefined: Self = StObject.set(x, "verticalGuides", js.undefined)
+      inline def setVerticalGuidesUndefined: Self = StObject.set(x, "verticalGuides", js.undefined)
       
-      @scala.inline
-      def setVerticalGuidesVarargs(value: Double*): Self = StObject.set(x, "verticalGuides", js.Array(value :_*))
+      inline def setVerticalGuidesVarargs(value: Double*): Self = StObject.set(x, "verticalGuides", js.Array(value :_*))
     }
   }
 }

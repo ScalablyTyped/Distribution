@@ -13,19 +13,15 @@ trait SketchMSTextStyle extends StObject {
 }
 object SketchMSTextStyle {
   
-  @scala.inline
-  def apply(encodedAttributes: SketchMSAttributes): SketchMSTextStyle = {
+  inline def apply(encodedAttributes: SketchMSAttributes): SketchMSTextStyle = {
     val __obj = js.Dynamic.literal(_class = "textStyle", encodedAttributes = encodedAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSTextStyle]
   }
   
-  @scala.inline
-  implicit class SketchMSTextStyleMutableBuilder[Self <: SketchMSTextStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSTextStyle](x: Self) {
     
-    @scala.inline
-    def setEncodedAttributes(value: SketchMSAttributes): Self = StObject.set(x, "encodedAttributes", value.asInstanceOf[js.Any])
+    inline def setEncodedAttributes(value: SketchMSAttributes): Self = StObject.set(x, "encodedAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: textStyle): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: textStyle): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

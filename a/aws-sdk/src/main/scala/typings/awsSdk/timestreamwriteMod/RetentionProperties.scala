@@ -18,8 +18,7 @@ trait RetentionProperties extends StObject {
 }
 object RetentionProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MagneticStoreRetentionPeriodInDays: MagneticStoreRetentionPeriodInDays,
     MemoryStoreRetentionPeriodInHours: MemoryStoreRetentionPeriodInHours
   ): RetentionProperties = {
@@ -27,13 +26,10 @@ object RetentionProperties {
     __obj.asInstanceOf[RetentionProperties]
   }
   
-  @scala.inline
-  implicit class RetentionPropertiesMutableBuilder[Self <: RetentionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RetentionProperties](x: Self) {
     
-    @scala.inline
-    def setMagneticStoreRetentionPeriodInDays(value: MagneticStoreRetentionPeriodInDays): Self = StObject.set(x, "MagneticStoreRetentionPeriodInDays", value.asInstanceOf[js.Any])
+    inline def setMagneticStoreRetentionPeriodInDays(value: MagneticStoreRetentionPeriodInDays): Self = StObject.set(x, "MagneticStoreRetentionPeriodInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryStoreRetentionPeriodInHours(value: MemoryStoreRetentionPeriodInHours): Self = StObject.set(x, "MemoryStoreRetentionPeriodInHours", value.asInstanceOf[js.Any])
+    inline def setMemoryStoreRetentionPeriodInHours(value: MemoryStoreRetentionPeriodInHours): Self = StObject.set(x, "MemoryStoreRetentionPeriodInHours", value.asInstanceOf[js.Any])
   }
 }

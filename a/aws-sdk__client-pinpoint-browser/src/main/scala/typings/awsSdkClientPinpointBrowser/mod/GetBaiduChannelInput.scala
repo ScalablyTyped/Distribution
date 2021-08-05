@@ -9,8 +9,7 @@ trait GetBaiduChannelInput
      with typings.awsSdkClientPinpointBrowser.typesGetBaiduChannelInputMod.GetBaiduChannelInput
 object GetBaiduChannelInput {
   
-  @scala.inline
-  def apply(ApplicationId: String): GetBaiduChannelInput = {
+  inline def apply(ApplicationId: String): GetBaiduChannelInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBaiduChannelInput]
   }

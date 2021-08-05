@@ -80,96 +80,67 @@ trait NavigationOptions extends StObject {
 }
 object NavigationOptions {
   
-  @scala.inline
-  def apply(): NavigationOptions = {
+  inline def apply(): NavigationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationOptions]
   }
   
-  @scala.inline
-  implicit class NavigationOptionsMutableBuilder[Self <: NavigationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationOptions](x: Self) {
     
-    @scala.inline
-    def setBackground(
+    inline def setBackground(
       value: Double | String | Uri | RadialGradientBackground | (LinearGradientBackground & LinearGradientBackgroundOffset)
     ): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
+    inline def setBackgroundStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundStyleNull: Self = StObject.set(x, "backgroundStyle", null)
+    inline def setBackgroundStyleNull: Self = StObject.set(x, "backgroundStyle", null)
     
-    @scala.inline
-    def setBackgroundStyleUndefined: Self = StObject.set(x, "backgroundStyle", js.undefined)
+    inline def setBackgroundStyleUndefined: Self = StObject.set(x, "backgroundStyle", js.undefined)
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setEnablePopGesture(value: Boolean): Self = StObject.set(x, "enablePopGesture", value.asInstanceOf[js.Any])
+    inline def setEnablePopGesture(value: Boolean): Self = StObject.set(x, "enablePopGesture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePopGestureUndefined: Self = StObject.set(x, "enablePopGesture", js.undefined)
+    inline def setEnablePopGestureUndefined: Self = StObject.set(x, "enablePopGesture", js.undefined)
     
-    @scala.inline
-    def setGesture(value: Boolean): Self = StObject.set(x, "gesture", value.asInstanceOf[js.Any])
+    inline def setGesture(value: Boolean): Self = StObject.set(x, "gesture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGestureUndefined: Self = StObject.set(x, "gesture", js.undefined)
+    inline def setGestureUndefined: Self = StObject.set(x, "gesture", js.undefined)
     
-    @scala.inline
-    def setHideTopbar(value: Boolean): Self = StObject.set(x, "hideTopbar", value.asInstanceOf[js.Any])
+    inline def setHideTopbar(value: Boolean): Self = StObject.set(x, "hideTopbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideTopbarUndefined: Self = StObject.set(x, "hideTopbar", js.undefined)
+    inline def setHideTopbarUndefined: Self = StObject.set(x, "hideTopbar", js.undefined)
     
-    @scala.inline
-    def setIsBleOfflineOverlay(value: Boolean): Self = StObject.set(x, "isBleOfflineOverlay", value.asInstanceOf[js.Any])
+    inline def setIsBleOfflineOverlay(value: Boolean): Self = StObject.set(x, "isBleOfflineOverlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBleOfflineOverlayUndefined: Self = StObject.set(x, "isBleOfflineOverlay", js.undefined)
+    inline def setIsBleOfflineOverlayUndefined: Self = StObject.set(x, "isBleOfflineOverlay", js.undefined)
     
-    @scala.inline
-    def setRenderStatusBar(value: () => Element): Self = StObject.set(x, "renderStatusBar", js.Any.fromFunction0(value))
+    inline def setRenderStatusBar(value: () => Element): Self = StObject.set(x, "renderStatusBar", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderStatusBarUndefined: Self = StObject.set(x, "renderStatusBar", js.undefined)
+    inline def setRenderStatusBarUndefined: Self = StObject.set(x, "renderStatusBar", js.undefined)
     
-    @scala.inline
-    def setRenderTopBar(value: () => Element): Self = StObject.set(x, "renderTopBar", js.Any.fromFunction0(value))
+    inline def setRenderTopBar(value: () => Element): Self = StObject.set(x, "renderTopBar", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderTopBarUndefined: Self = StObject.set(x, "renderTopBar", js.undefined)
+    inline def setRenderTopBarUndefined: Self = StObject.set(x, "renderTopBar", js.undefined)
     
-    @scala.inline
-    def setShowOfflineView(value: Boolean): Self = StObject.set(x, "showOfflineView", value.asInstanceOf[js.Any])
+    inline def setShowOfflineView(value: Boolean): Self = StObject.set(x, "showOfflineView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowOfflineViewUndefined: Self = StObject.set(x, "showOfflineView", js.undefined)
+    inline def setShowOfflineViewUndefined: Self = StObject.set(x, "showOfflineView", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTopbarStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "topbarStyle", value.asInstanceOf[js.Any])
+    inline def setTopbarStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "topbarStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopbarStyleNull: Self = StObject.set(x, "topbarStyle", null)
+    inline def setTopbarStyleNull: Self = StObject.set(x, "topbarStyle", null)
     
-    @scala.inline
-    def setTopbarStyleUndefined: Self = StObject.set(x, "topbarStyle", js.undefined)
+    inline def setTopbarStyleUndefined: Self = StObject.set(x, "topbarStyle", js.undefined)
     
-    @scala.inline
-    def setTopbarTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "topbarTextStyle", value.asInstanceOf[js.Any])
+    inline def setTopbarTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "topbarTextStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopbarTextStyleNull: Self = StObject.set(x, "topbarTextStyle", null)
+    inline def setTopbarTextStyleNull: Self = StObject.set(x, "topbarTextStyle", null)
     
-    @scala.inline
-    def setTopbarTextStyleUndefined: Self = StObject.set(x, "topbarTextStyle", js.undefined)
+    inline def setTopbarTextStyleUndefined: Self = StObject.set(x, "topbarTextStyle", js.undefined)
   }
 }

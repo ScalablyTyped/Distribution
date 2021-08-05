@@ -23,8 +23,7 @@ trait CURRENT extends StObject {
 }
 object CURRENT {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CURRENT: FileSystemBitField,
     END: FileSystemBitField,
     F_OK: FileSystemBitField,
@@ -37,28 +36,20 @@ object CURRENT {
     __obj.asInstanceOf[CURRENT]
   }
   
-  @scala.inline
-  implicit class CURRENTMutableBuilder[Self <: CURRENT] (val x: Self) extends AnyVal {
+  extension [Self <: CURRENT](x: Self) {
     
-    @scala.inline
-    def setCURRENT(value: FileSystemBitField): Self = StObject.set(x, "CURRENT", value.asInstanceOf[js.Any])
+    inline def setCURRENT(value: FileSystemBitField): Self = StObject.set(x, "CURRENT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEND(value: FileSystemBitField): Self = StObject.set(x, "END", value.asInstanceOf[js.Any])
+    inline def setEND(value: FileSystemBitField): Self = StObject.set(x, "END", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF_OK(value: FileSystemBitField): Self = StObject.set(x, "F_OK", value.asInstanceOf[js.Any])
+    inline def setF_OK(value: FileSystemBitField): Self = StObject.set(x, "F_OK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR_OK(value: FileSystemBitField): Self = StObject.set(x, "R_OK", value.asInstanceOf[js.Any])
+    inline def setR_OK(value: FileSystemBitField): Self = StObject.set(x, "R_OK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSTART(value: FileSystemBitField): Self = StObject.set(x, "START", value.asInstanceOf[js.Any])
+    inline def setSTART(value: FileSystemBitField): Self = StObject.set(x, "START", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setW_OK(value: FileSystemBitField): Self = StObject.set(x, "W_OK", value.asInstanceOf[js.Any])
+    inline def setW_OK(value: FileSystemBitField): Self = StObject.set(x, "W_OK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX_OK(value: FileSystemBitField): Self = StObject.set(x, "X_OK", value.asInstanceOf[js.Any])
+    inline def setX_OK(value: FileSystemBitField): Self = StObject.set(x, "X_OK", value.asInstanceOf[js.Any])
   }
 }

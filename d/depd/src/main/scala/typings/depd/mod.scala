@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(namespace: String): Deprecate = ^.asInstanceOf[js.Dynamic].apply(namespace.asInstanceOf[js.Any]).asInstanceOf[Deprecate]
+  inline def apply(namespace: String): Deprecate = ^.asInstanceOf[js.Dynamic].apply(namespace.asInstanceOf[js.Any]).asInstanceOf[Deprecate]
   
   @JSImport("depd", JSImport.Namespace)
   @js.native
@@ -41,23 +40,18 @@ object mod {
   }
   object DeprecationError {
     
-    @scala.inline
-    def apply(message: String, namespace: String, stack: String): DeprecationError = {
+    inline def apply(message: String, namespace: String, stack: String): DeprecationError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "DeprecationError", namespace = namespace.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeprecationError]
     }
     
-    @scala.inline
-    implicit class DeprecationErrorMutableBuilder[Self <: DeprecationError] (val x: Self) extends AnyVal {
+    extension [Self <: DeprecationError](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.depd.depdStrings.DeprecationError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.depd.depdStrings.DeprecationError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,8 +84,7 @@ object mod {
       }
       object Process {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           addListener: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process,
           emit: (deprecation, DeprecationError) => Boolean,
           listeners: deprecation => js.Array[DeprecationError],
@@ -104,29 +97,21 @@ object mod {
           __obj.asInstanceOf[Process]
         }
         
-        @scala.inline
-        implicit class ProcessMutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
+        extension [Self <: Process](x: Self) {
           
-          @scala.inline
-          def setAddListener(value: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+          inline def setAddListener(value: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setEmit(value: (deprecation, DeprecationError) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+          inline def setEmit(value: (deprecation, DeprecationError) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setListeners(value: deprecation => js.Array[DeprecationError]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
+          inline def setListeners(value: deprecation => js.Array[DeprecationError]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setOn(value: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+          inline def setOn(value: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setOnce(value: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+          inline def setOnce(value: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setPrependListener(value: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
+          inline def setPrependListener(value: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setPrependOnceListener(value: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
+          inline def setPrependOnceListener(value: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
         }
       }
     }

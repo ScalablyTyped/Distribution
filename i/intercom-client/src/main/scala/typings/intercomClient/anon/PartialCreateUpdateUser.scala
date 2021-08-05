@@ -53,163 +53,111 @@ trait PartialCreateUpdateUser extends StObject {
 }
 object PartialCreateUpdateUser {
   
-  @scala.inline
-  def apply(): PartialCreateUpdateUser = {
+  inline def apply(): PartialCreateUpdateUser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialCreateUpdateUser]
   }
   
-  @scala.inline
-  implicit class PartialCreateUpdateUserMutableBuilder[Self <: PartialCreateUpdateUser] (val x: Self) extends AnyVal {
+  extension [Self <: PartialCreateUpdateUser](x: Self) {
     
-    @scala.inline
-    def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
+    inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
+    inline def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
     
-    @scala.inline
-    def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
+    inline def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApp_idUndefined: Self = StObject.set(x, "app_id", js.undefined)
+    inline def setApp_idUndefined: Self = StObject.set(x, "app_id", js.undefined)
     
-    @scala.inline
-    def setAvatar(value: Avatar): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+    inline def setAvatar(value: Avatar): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
+    inline def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
     
-    @scala.inline
-    def setCompanies(value: js.Array[PartialCompanyremoveboole]): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
+    inline def setCompanies(value: js.Array[PartialCompanyremoveboole]): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompaniesUndefined: Self = StObject.set(x, "companies", js.undefined)
+    inline def setCompaniesUndefined: Self = StObject.set(x, "companies", js.undefined)
     
-    @scala.inline
-    def setCompaniesVarargs(value: PartialCompanyremoveboole*): Self = StObject.set(x, "companies", js.Array(value :_*))
+    inline def setCompaniesVarargs(value: PartialCompanyremoveboole*): Self = StObject.set(x, "companies", js.Array(value :_*))
     
-    @scala.inline
-    def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
+    inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
     
-    @scala.inline
-    def setCustom_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
+    inline def setCustom_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustom_attributesUndefined: Self = StObject.set(x, "custom_attributes", js.undefined)
+    inline def setCustom_attributesUndefined: Self = StObject.set(x, "custom_attributes", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailNull: Self = StObject.set(x, "email", null)
+    inline def setEmailNull: Self = StObject.set(x, "email", null)
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLast_request_at(value: Double): Self = StObject.set(x, "last_request_at", value.asInstanceOf[js.Any])
+    inline def setLast_request_at(value: Double): Self = StObject.set(x, "last_request_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_request_atNull: Self = StObject.set(x, "last_request_at", null)
+    inline def setLast_request_atNull: Self = StObject.set(x, "last_request_at", null)
     
-    @scala.inline
-    def setLast_request_atUndefined: Self = StObject.set(x, "last_request_at", js.undefined)
+    inline def setLast_request_atUndefined: Self = StObject.set(x, "last_request_at", js.undefined)
     
-    @scala.inline
-    def setLast_seen_ip(value: String): Self = StObject.set(x, "last_seen_ip", value.asInstanceOf[js.Any])
+    inline def setLast_seen_ip(value: String): Self = StObject.set(x, "last_seen_ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_seen_ipNull: Self = StObject.set(x, "last_seen_ip", null)
+    inline def setLast_seen_ipNull: Self = StObject.set(x, "last_seen_ip", null)
     
-    @scala.inline
-    def setLast_seen_ipUndefined: Self = StObject.set(x, "last_seen_ip", js.undefined)
+    inline def setLast_seen_ipUndefined: Self = StObject.set(x, "last_seen_ip", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNull: Self = StObject.set(x, "phone", null)
+    inline def setPhoneNull: Self = StObject.set(x, "phone", null)
     
-    @scala.inline
-    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+    inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
-    @scala.inline
-    def setPseudonym(value: String): Self = StObject.set(x, "pseudonym", value.asInstanceOf[js.Any])
+    inline def setPseudonym(value: String): Self = StObject.set(x, "pseudonym", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPseudonymNull: Self = StObject.set(x, "pseudonym", null)
+    inline def setPseudonymNull: Self = StObject.set(x, "pseudonym", null)
     
-    @scala.inline
-    def setPseudonymUndefined: Self = StObject.set(x, "pseudonym", js.undefined)
+    inline def setPseudonymUndefined: Self = StObject.set(x, "pseudonym", js.undefined)
     
-    @scala.inline
-    def setSession_count(value: Double): Self = StObject.set(x, "session_count", value.asInstanceOf[js.Any])
+    inline def setSession_count(value: Double): Self = StObject.set(x, "session_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession_countUndefined: Self = StObject.set(x, "session_count", js.undefined)
+    inline def setSession_countUndefined: Self = StObject.set(x, "session_count", js.undefined)
     
-    @scala.inline
-    def setSigned_up_at(value: Double): Self = StObject.set(x, "signed_up_at", value.asInstanceOf[js.Any])
+    inline def setSigned_up_at(value: Double): Self = StObject.set(x, "signed_up_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigned_up_atNull: Self = StObject.set(x, "signed_up_at", null)
+    inline def setSigned_up_atNull: Self = StObject.set(x, "signed_up_at", null)
     
-    @scala.inline
-    def setSigned_up_atUndefined: Self = StObject.set(x, "signed_up_at", js.undefined)
+    inline def setSigned_up_atUndefined: Self = StObject.set(x, "signed_up_at", js.undefined)
     
-    @scala.inline
-    def setType(value: user | contact): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: user | contact): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUnsubscribed_from_emails(value: Boolean): Self = StObject.set(x, "unsubscribed_from_emails", value.asInstanceOf[js.Any])
+    inline def setUnsubscribed_from_emails(value: Boolean): Self = StObject.set(x, "unsubscribed_from_emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsubscribed_from_emailsUndefined: Self = StObject.set(x, "unsubscribed_from_emails", js.undefined)
+    inline def setUnsubscribed_from_emailsUndefined: Self = StObject.set(x, "unsubscribed_from_emails", js.undefined)
     
-    @scala.inline
-    def setUpdated_at(value: Double): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    inline def setUpdated_at(value: Double): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated_atUndefined: Self = StObject.set(x, "updated_at", js.undefined)
+    inline def setUpdated_atUndefined: Self = StObject.set(x, "updated_at", js.undefined)
     
-    @scala.inline
-    def setUser_agent_data(value: String): Self = StObject.set(x, "user_agent_data", value.asInstanceOf[js.Any])
+    inline def setUser_agent_data(value: String): Self = StObject.set(x, "user_agent_data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_agent_dataNull: Self = StObject.set(x, "user_agent_data", null)
+    inline def setUser_agent_dataNull: Self = StObject.set(x, "user_agent_data", null)
     
-    @scala.inline
-    def setUser_agent_dataUndefined: Self = StObject.set(x, "user_agent_data", js.undefined)
+    inline def setUser_agent_dataUndefined: Self = StObject.set(x, "user_agent_data", js.undefined)
     
-    @scala.inline
-    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_idNull: Self = StObject.set(x, "user_id", null)
+    inline def setUser_idNull: Self = StObject.set(x, "user_id", null)
     
-    @scala.inline
-    def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
+    inline def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
   }
 }

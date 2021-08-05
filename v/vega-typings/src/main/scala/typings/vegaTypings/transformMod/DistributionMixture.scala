@@ -20,37 +20,27 @@ trait DistributionMixture
 }
 object DistributionMixture {
   
-  @scala.inline
-  def apply(field: String | TransformField): DistributionMixture = {
+  inline def apply(field: String | TransformField): DistributionMixture = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], function = "mixture")
     __obj.asInstanceOf[DistributionMixture]
   }
   
-  @scala.inline
-  implicit class DistributionMixtureMutableBuilder[Self <: DistributionMixture] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionMixture](x: Self) {
     
-    @scala.inline
-    def setDistributions(value: (js.Array[Distribution | SignalRef]) | SignalRef): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
+    inline def setDistributions(value: (js.Array[Distribution | SignalRef]) | SignalRef): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionsUndefined: Self = StObject.set(x, "distributions", js.undefined)
+    inline def setDistributionsUndefined: Self = StObject.set(x, "distributions", js.undefined)
     
-    @scala.inline
-    def setDistributionsVarargs(value: (Distribution | SignalRef)*): Self = StObject.set(x, "distributions", js.Array(value :_*))
+    inline def setDistributionsVarargs(value: (Distribution | SignalRef)*): Self = StObject.set(x, "distributions", js.Array(value :_*))
     
-    @scala.inline
-    def setField(value: String | TransformField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String | TransformField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunction(value: mixture): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: mixture): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeights(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
+    inline def setWeights(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
+    inline def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
     
-    @scala.inline
-    def setWeightsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "weights", js.Array(value :_*))
+    inline def setWeightsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "weights", js.Array(value :_*))
   }
 }

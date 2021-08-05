@@ -18,7 +18,7 @@ trait Connection extends StObject {
   def CreateQueryDef(Name: String, SQLText: String): QueryDef = js.native
   def CreateQueryDef(Name: Unit, SQLText: String): QueryDef = js.native
   
-  @JSName("DAO.Connection_typekey")
+  /* private */ @JSName("DAO.Connection_typekey")
   var DAODotConnection_typekey: Connection = js.native
   
   val Database: typings.activexDao.DAO.Database = js.native

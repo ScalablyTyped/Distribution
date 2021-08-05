@@ -23,22 +23,17 @@ trait PutProvisionedConcurrencyConfigRequest extends StObject {
 }
 object PutProvisionedConcurrencyConfigRequest {
   
-  @scala.inline
-  def apply(FunctionName: FunctionName, ProvisionedConcurrentExecutions: PositiveInteger, Qualifier: Qualifier): PutProvisionedConcurrencyConfigRequest = {
+  inline def apply(FunctionName: FunctionName, ProvisionedConcurrentExecutions: PositiveInteger, Qualifier: Qualifier): PutProvisionedConcurrencyConfigRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], ProvisionedConcurrentExecutions = ProvisionedConcurrentExecutions.asInstanceOf[js.Any], Qualifier = Qualifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutProvisionedConcurrencyConfigRequest]
   }
   
-  @scala.inline
-  implicit class PutProvisionedConcurrencyConfigRequestMutableBuilder[Self <: PutProvisionedConcurrencyConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutProvisionedConcurrencyConfigRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedConcurrentExecutions(value: PositiveInteger): Self = StObject.set(x, "ProvisionedConcurrentExecutions", value.asInstanceOf[js.Any])
+    inline def setProvisionedConcurrentExecutions(value: PositiveInteger): Self = StObject.set(x, "ProvisionedConcurrentExecutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
+    inline def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait SchemaRegionDisksResizeRequest extends StObject {
 }
 object SchemaRegionDisksResizeRequest {
   
-  @scala.inline
-  def apply(): SchemaRegionDisksResizeRequest = {
+  inline def apply(): SchemaRegionDisksResizeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRegionDisksResizeRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRegionDisksResizeRequestMutableBuilder[Self <: SchemaRegionDisksResizeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRegionDisksResizeRequest](x: Self) {
     
-    @scala.inline
-    def setSizeGb(value: String): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
+    inline def setSizeGb(value: String): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeGbUndefined: Self = StObject.set(x, "sizeGb", js.undefined)
+    inline def setSizeGbUndefined: Self = StObject.set(x, "sizeGb", js.undefined)
   }
 }

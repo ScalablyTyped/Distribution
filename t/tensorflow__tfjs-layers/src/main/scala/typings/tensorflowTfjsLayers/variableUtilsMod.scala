@@ -11,6 +11,5 @@ object variableUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def countParamsInWeights(weights: js.Array[LayerVariable]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countParamsInWeights")(weights.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def countParamsInWeights(weights: js.Array[LayerVariable]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countParamsInWeights")(weights.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

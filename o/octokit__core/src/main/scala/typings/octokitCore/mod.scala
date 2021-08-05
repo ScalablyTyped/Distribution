@@ -111,13 +111,10 @@ object mod {
     @JSImport("@octokit/core", "Octokit.VERSION")
     @js.native
     def VERSION: String = js.native
-    @scala.inline
-    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+    inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def defaults[S /* <: Constructor[js.Any] */](defaults: js.Function): Instantiable & S = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(defaults.asInstanceOf[js.Any]).asInstanceOf[Instantiable & S]
-    @scala.inline
-    def defaults[S /* <: Constructor[js.Any] */](defaults: OctokitOptions): Instantiable & S = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(defaults.asInstanceOf[js.Any]).asInstanceOf[Instantiable & S]
+    inline def defaults[S /* <: Constructor[js.Any] */](defaults: js.Function): Instantiable & S = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(defaults.asInstanceOf[js.Any]).asInstanceOf[Instantiable & S]
+    inline def defaults[S /* <: Constructor[js.Any] */](defaults: OctokitOptions): Instantiable & S = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(defaults.asInstanceOf[js.Any]).asInstanceOf[Instantiable & S]
     
     /**
       * Attach a plugin (or many) to your Octokit instance.
@@ -125,15 +122,13 @@ object mod {
       * @example
       * const API = Octokit.plugin(plugin1, plugin2, plugin3, ...)
       */
-    @scala.inline
-    def plugin[S /* <: Constructor[js.Any] & Plugins */, T /* <: js.Array[OctokitPlugin] */](
+    inline def plugin[S /* <: Constructor[js.Any] & Plugins */, T /* <: js.Array[OctokitPlugin] */](
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param newPlugins because its type T is not an array type */ newPlugins: T
     ): InstantiablePlugins & S & Constructor[UnionToIntersection[ReturnTypeOf[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(newPlugins.asInstanceOf[js.Any]).asInstanceOf[InstantiablePlugins & S & Constructor[UnionToIntersection[ReturnTypeOf[T]]]]
     
     @JSImport("@octokit/core", "Octokit.plugins")
     @js.native
     def plugins: js.Array[OctokitPlugin] = js.native
-    @scala.inline
-    def plugins_=(x: js.Array[OctokitPlugin]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugins")(x.asInstanceOf[js.Any])
+    inline def plugins_=(x: js.Array[OctokitPlugin]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugins")(x.asInstanceOf[js.Any])
   }
 }

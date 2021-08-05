@@ -11,8 +11,7 @@ trait SVGElementEventMap
      with DocumentAndElementEventHandlersEventMap
 object SVGElementEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,

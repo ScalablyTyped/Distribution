@@ -27,25 +27,19 @@ trait SchemaExportResourcesRequest extends StObject {
 }
 object SchemaExportResourcesRequest {
   
-  @scala.inline
-  def apply(): SchemaExportResourcesRequest = {
+  inline def apply(): SchemaExportResourcesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExportResourcesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaExportResourcesRequestMutableBuilder[Self <: SchemaExportResourcesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExportResourcesRequest](x: Self) {
     
-    @scala.inline
-    def setBigqueryDestination(value: SchemaGoogleCloudHealthcareV1alpha2FhirBigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
+    inline def setBigqueryDestination(value: SchemaGoogleCloudHealthcareV1alpha2FhirBigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigqueryDestinationUndefined: Self = StObject.set(x, "bigqueryDestination", js.undefined)
+    inline def setBigqueryDestinationUndefined: Self = StObject.set(x, "bigqueryDestination", js.undefined)
     
-    @scala.inline
-    def setGcsDestination(value: SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
+    inline def setGcsDestination(value: SchemaGoogleCloudHealthcareV1alpha2FhirRestGcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
+    inline def setGcsDestinationUndefined: Self = StObject.set(x, "gcsDestination", js.undefined)
   }
 }

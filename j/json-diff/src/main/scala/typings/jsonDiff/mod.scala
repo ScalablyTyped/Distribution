@@ -10,9 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def diff(obj1: js.Any, obj2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(obj1.asInstanceOf[js.Any], obj2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def diff(obj1: js.Any, obj2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(obj1.asInstanceOf[js.Any], obj2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def diffString(obj1: js.Any, obj2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("diffString")(obj1.asInstanceOf[js.Any], obj2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def diffString(obj1: js.Any, obj2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("diffString")(obj1.asInstanceOf[js.Any], obj2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

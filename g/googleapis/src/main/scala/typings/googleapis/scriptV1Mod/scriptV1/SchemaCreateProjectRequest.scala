@@ -23,25 +23,19 @@ trait SchemaCreateProjectRequest extends StObject {
 }
 object SchemaCreateProjectRequest {
   
-  @scala.inline
-  def apply(): SchemaCreateProjectRequest = {
+  inline def apply(): SchemaCreateProjectRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateProjectRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCreateProjectRequestMutableBuilder[Self <: SchemaCreateProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateProjectRequest](x: Self) {
     
-    @scala.inline
-    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+    inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

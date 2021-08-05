@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "simple-xml"
-version := "0.10-dt-20200515Z-027ae8"
+version := "0.10-dt-20200515Z-d4df32"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

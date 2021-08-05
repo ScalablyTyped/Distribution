@@ -32,6 +32,5 @@ object Item {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isItem(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isItem")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isItem(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isItem")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

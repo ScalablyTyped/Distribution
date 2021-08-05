@@ -24,7 +24,7 @@ object accountFollowingFeedMod {
     
     var includesHashtags: Boolean = js.native
     
-    var nextMaxId: js.Any = js.native
+    /* private */ var nextMaxId: js.Any = js.native
     
     var order: js.UndefOr[default | date_followed_latest | date_followed_earliest] = js.native
     

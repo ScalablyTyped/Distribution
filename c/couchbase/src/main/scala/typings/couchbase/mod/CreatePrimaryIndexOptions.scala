@@ -23,31 +23,23 @@ trait CreatePrimaryIndexOptions extends StObject {
 }
 object CreatePrimaryIndexOptions {
   
-  @scala.inline
-  def apply(): CreatePrimaryIndexOptions = {
+  inline def apply(): CreatePrimaryIndexOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePrimaryIndexOptions]
   }
   
-  @scala.inline
-  implicit class CreatePrimaryIndexOptionsMutableBuilder[Self <: CreatePrimaryIndexOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePrimaryIndexOptions](x: Self) {
     
-    @scala.inline
-    def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
+    inline def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
+    inline def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
     
-    @scala.inline
-    def setIgnoreIfExists(value: Boolean): Self = StObject.set(x, "ignoreIfExists", value.asInstanceOf[js.Any])
+    inline def setIgnoreIfExists(value: Boolean): Self = StObject.set(x, "ignoreIfExists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreIfExistsUndefined: Self = StObject.set(x, "ignoreIfExists", js.undefined)
+    inline def setIgnoreIfExistsUndefined: Self = StObject.set(x, "ignoreIfExists", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

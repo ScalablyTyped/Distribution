@@ -55,8 +55,7 @@ trait SceneViewPerformanceInfo extends StObject {
 }
 object SceneViewPerformanceInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     edgesMemory: Double,
     layerPerformanceInfos: js.Array[LayerPerformanceInfo],
     quality: Double,
@@ -68,28 +67,20 @@ object SceneViewPerformanceInfo {
     __obj.asInstanceOf[SceneViewPerformanceInfo]
   }
   
-  @scala.inline
-  implicit class SceneViewPerformanceInfoMutableBuilder[Self <: SceneViewPerformanceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SceneViewPerformanceInfo](x: Self) {
     
-    @scala.inline
-    def setEdgesMemory(value: Double): Self = StObject.set(x, "edgesMemory", value.asInstanceOf[js.Any])
+    inline def setEdgesMemory(value: Double): Self = StObject.set(x, "edgesMemory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerPerformanceInfos(value: js.Array[LayerPerformanceInfo]): Self = StObject.set(x, "layerPerformanceInfos", value.asInstanceOf[js.Any])
+    inline def setLayerPerformanceInfos(value: js.Array[LayerPerformanceInfo]): Self = StObject.set(x, "layerPerformanceInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerPerformanceInfosVarargs(value: LayerPerformanceInfo*): Self = StObject.set(x, "layerPerformanceInfos", js.Array(value :_*))
+    inline def setLayerPerformanceInfosVarargs(value: LayerPerformanceInfo*): Self = StObject.set(x, "layerPerformanceInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerrainMemory(value: Double): Self = StObject.set(x, "terrainMemory", value.asInstanceOf[js.Any])
+    inline def setTerrainMemory(value: Double): Self = StObject.set(x, "terrainMemory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalMemory(value: Double): Self = StObject.set(x, "totalMemory", value.asInstanceOf[js.Any])
+    inline def setTotalMemory(value: Double): Self = StObject.set(x, "totalMemory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedMemory(value: Double): Self = StObject.set(x, "usedMemory", value.asInstanceOf[js.Any])
+    inline def setUsedMemory(value: Double): Self = StObject.set(x, "usedMemory", value.asInstanceOf[js.Any])
   }
 }

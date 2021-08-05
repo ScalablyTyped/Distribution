@@ -23,8 +23,7 @@ trait Repository
 }
 object Repository {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GraphNames: SafeArray[XURI],
     create: () => Unit,
     createBlankNode: () => XBlankNode,
@@ -43,10 +42,8 @@ object Repository {
     __obj.asInstanceOf[Repository]
   }
   
-  @scala.inline
-  implicit class RepositoryMutableBuilder[Self <: Repository] (val x: Self) extends AnyVal {
+  extension [Self <: Repository](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
   }
 }

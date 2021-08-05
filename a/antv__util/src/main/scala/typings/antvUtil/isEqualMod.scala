@@ -10,6 +10,5 @@ object isEqualMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(value: js.Any, other: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(value: js.Any, other: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -31,17 +31,14 @@ object providerMod {
   }
   object ProviderProps {
     
-    @scala.inline
-    def apply(store: Store[js.Object]): ProviderProps = {
+    inline def apply(store: Store[js.Object]): ProviderProps = {
       val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProviderProps]
     }
     
-    @scala.inline
-    implicit class ProviderPropsMutableBuilder[Self <: ProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ProviderProps](x: Self) {
       
-      @scala.inline
-      def setStore(value: Store[js.Object]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Store[js.Object]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     }
   }
 }

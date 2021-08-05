@@ -12,25 +12,19 @@ trait UIkitScrollOptions extends StObject {
 }
 object UIkitScrollOptions {
   
-  @scala.inline
-  def apply(): UIkitScrollOptions = {
+  inline def apply(): UIkitScrollOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UIkitScrollOptions]
   }
   
-  @scala.inline
-  implicit class UIkitScrollOptionsMutableBuilder[Self <: UIkitScrollOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitScrollOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

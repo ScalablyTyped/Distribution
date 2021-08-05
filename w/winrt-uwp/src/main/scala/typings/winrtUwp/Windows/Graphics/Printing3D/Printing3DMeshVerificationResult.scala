@@ -19,8 +19,7 @@ trait Printing3DMeshVerificationResult extends StObject {
 }
 object Printing3DMeshVerificationResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isValid: Boolean,
     nonmanifoldTriangles: IVectorView[Double],
     reversedNormalTriangles: IVectorView[Double]
@@ -29,16 +28,12 @@ object Printing3DMeshVerificationResult {
     __obj.asInstanceOf[Printing3DMeshVerificationResult]
   }
   
-  @scala.inline
-  implicit class Printing3DMeshVerificationResultMutableBuilder[Self <: Printing3DMeshVerificationResult] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DMeshVerificationResult](x: Self) {
     
-    @scala.inline
-    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+    inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonmanifoldTriangles(value: IVectorView[Double]): Self = StObject.set(x, "nonmanifoldTriangles", value.asInstanceOf[js.Any])
+    inline def setNonmanifoldTriangles(value: IVectorView[Double]): Self = StObject.set(x, "nonmanifoldTriangles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReversedNormalTriangles(value: IVectorView[Double]): Self = StObject.set(x, "reversedNormalTriangles", value.asInstanceOf[js.Any])
+    inline def setReversedNormalTriangles(value: IVectorView[Double]): Self = StObject.set(x, "reversedNormalTriangles", value.asInstanceOf[js.Any])
   }
 }

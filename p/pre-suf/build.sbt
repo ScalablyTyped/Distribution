@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pre-suf"
-version := "1.1-dt-20200413Z-419bc6"
+version := "1.1-dt-20200413Z-f6ee7d"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

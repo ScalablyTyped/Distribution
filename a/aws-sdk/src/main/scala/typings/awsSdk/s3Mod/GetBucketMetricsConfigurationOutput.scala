@@ -13,19 +13,15 @@ trait GetBucketMetricsConfigurationOutput extends StObject {
 }
 object GetBucketMetricsConfigurationOutput {
   
-  @scala.inline
-  def apply(): GetBucketMetricsConfigurationOutput = {
+  inline def apply(): GetBucketMetricsConfigurationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBucketMetricsConfigurationOutput]
   }
   
-  @scala.inline
-  implicit class GetBucketMetricsConfigurationOutputMutableBuilder[Self <: GetBucketMetricsConfigurationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketMetricsConfigurationOutput](x: Self) {
     
-    @scala.inline
-    def setMetricsConfiguration(value: MetricsConfiguration): Self = StObject.set(x, "MetricsConfiguration", value.asInstanceOf[js.Any])
+    inline def setMetricsConfiguration(value: MetricsConfiguration): Self = StObject.set(x, "MetricsConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsConfigurationUndefined: Self = StObject.set(x, "MetricsConfiguration", js.undefined)
+    inline def setMetricsConfigurationUndefined: Self = StObject.set(x, "MetricsConfiguration", js.undefined)
   }
 }

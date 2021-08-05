@@ -49,8 +49,7 @@ trait SetElement
      with XTemplateInstance
 object SetElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AsProperty: Property,
     DefaultAsProperty: XInterface,
     HierarchicalName: String,

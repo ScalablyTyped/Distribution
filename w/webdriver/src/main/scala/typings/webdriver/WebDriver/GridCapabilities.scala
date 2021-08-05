@@ -15,31 +15,23 @@ trait GridCapabilities extends StObject {
 }
 object GridCapabilities {
   
-  @scala.inline
-  def apply(): GridCapabilities = {
+  inline def apply(): GridCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridCapabilities]
   }
   
-  @scala.inline
-  implicit class GridCapabilitiesMutableBuilder[Self <: GridCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: GridCapabilities](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setMaxInstances(value: Double): Self = StObject.set(x, "maxInstances", value.asInstanceOf[js.Any])
+    inline def setMaxInstances(value: Double): Self = StObject.set(x, "maxInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxInstancesUndefined: Self = StObject.set(x, "maxInstances", js.undefined)
+    inline def setMaxInstancesUndefined: Self = StObject.set(x, "maxInstances", js.undefined)
     
-    @scala.inline
-    def setSeleniumProtocol(value: String): Self = StObject.set(x, "seleniumProtocol", value.asInstanceOf[js.Any])
+    inline def setSeleniumProtocol(value: String): Self = StObject.set(x, "seleniumProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeleniumProtocolUndefined: Self = StObject.set(x, "seleniumProtocol", js.undefined)
+    inline def setSeleniumProtocolUndefined: Self = StObject.set(x, "seleniumProtocol", js.undefined)
   }
 }

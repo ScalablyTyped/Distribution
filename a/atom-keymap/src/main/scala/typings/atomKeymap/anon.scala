@@ -20,32 +20,24 @@ object anon {
   }
   object Command {
     
-    @scala.inline
-    def apply(): Command = {
+    inline def apply(): Command = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Command]
     }
     
-    @scala.inline
-    implicit class CommandMutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
+    extension [Self <: Command](x: Self) {
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+      inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
       
-      @scala.inline
-      def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
+      inline def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeystrokesUndefined: Self = StObject.set(x, "keystrokes", js.undefined)
+      inline def setKeystrokesUndefined: Self = StObject.set(x, "keystrokes", js.undefined)
       
-      @scala.inline
-      def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -55,20 +47,16 @@ object anon {
   }
   object DefaultTarget {
     
-    @scala.inline
-    def apply(): DefaultTarget = {
+    inline def apply(): DefaultTarget = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultTarget]
     }
     
-    @scala.inline
-    implicit class DefaultTargetMutableBuilder[Self <: DefaultTarget] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultTarget](x: Self) {
       
-      @scala.inline
-      def setDefaultTarget(value: HTMLElement): Self = StObject.set(x, "defaultTarget", value.asInstanceOf[js.Any])
+      inline def setDefaultTarget(value: HTMLElement): Self = StObject.set(x, "defaultTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultTargetUndefined: Self = StObject.set(x, "defaultTarget", js.undefined)
+      inline def setDefaultTargetUndefined: Self = StObject.set(x, "defaultTarget", js.undefined)
     }
   }
   
@@ -80,26 +68,20 @@ object anon {
   }
   object Priority {
     
-    @scala.inline
-    def apply(): Priority = {
+    inline def apply(): Priority = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Priority]
     }
     
-    @scala.inline
-    implicit class PriorityMutableBuilder[Self <: Priority] (val x: Self) extends AnyVal {
+    extension [Self <: Priority](x: Self) {
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+      inline def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+      inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
     }
   }
   
@@ -109,17 +91,14 @@ object anon {
   }
   object PriorityNumber {
     
-    @scala.inline
-    def apply(priority: Double): PriorityNumber = {
+    inline def apply(priority: Double): PriorityNumber = {
       val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
       __obj.asInstanceOf[PriorityNumber]
     }
     
-    @scala.inline
-    implicit class PriorityNumberMutableBuilder[Self <: PriorityNumber] (val x: Self) extends AnyVal {
+    extension [Self <: PriorityNumber](x: Self) {
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -36,22 +36,17 @@ trait XLockable extends StObject {
 }
 object XLockable {
   
-  @scala.inline
-  def apply(isLocked: () => Boolean, lock: () => Unit, unlock: () => Unit): XLockable = {
+  inline def apply(isLocked: () => Boolean, lock: () => Unit, unlock: () => Unit): XLockable = {
     val __obj = js.Dynamic.literal(isLocked = js.Any.fromFunction0(isLocked), lock = js.Any.fromFunction0(lock), unlock = js.Any.fromFunction0(unlock))
     __obj.asInstanceOf[XLockable]
   }
   
-  @scala.inline
-  implicit class XLockableMutableBuilder[Self <: XLockable] (val x: Self) extends AnyVal {
+  extension [Self <: XLockable](x: Self) {
     
-    @scala.inline
-    def setIsLocked(value: () => Boolean): Self = StObject.set(x, "isLocked", js.Any.fromFunction0(value))
+    inline def setIsLocked(value: () => Boolean): Self = StObject.set(x, "isLocked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLock(value: () => Unit): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
+    inline def setLock(value: () => Unit): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
+    inline def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
   }
 }

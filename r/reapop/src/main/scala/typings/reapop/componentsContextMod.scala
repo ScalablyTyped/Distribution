@@ -30,34 +30,26 @@ object componentsContextMod {
   }
   object ComponentContextType {
     
-    @scala.inline
-    def apply(): ComponentContextType = {
+    inline def apply(): ComponentContextType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComponentContextType]
     }
     
-    @scala.inline
-    implicit class ComponentContextTypeMutableBuilder[Self <: ComponentContextType] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentContextType](x: Self) {
       
-      @scala.inline
-      def setNotification(value: /* props */ Props => Element): Self = StObject.set(x, "Notification", js.Any.fromFunction1(value))
+      inline def setNotification(value: /* props */ Props => Element): Self = StObject.set(x, "Notification", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotificationIcon(value: /* props */ typings.reapop.notificationIconMod.Props => Element | Null): Self = StObject.set(x, "NotificationIcon", js.Any.fromFunction1(value))
+      inline def setNotificationIcon(value: /* props */ typings.reapop.notificationIconMod.Props => Element | Null): Self = StObject.set(x, "NotificationIcon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotificationIconUndefined: Self = StObject.set(x, "NotificationIcon", js.undefined)
+      inline def setNotificationIconUndefined: Self = StObject.set(x, "NotificationIcon", js.undefined)
       
-      @scala.inline
-      def setNotificationUndefined: Self = StObject.set(x, "Notification", js.undefined)
+      inline def setNotificationUndefined: Self = StObject.set(x, "Notification", js.undefined)
       
-      @scala.inline
-      def setTransition(
+      inline def setTransition(
         value: (/* props */ typings.reapop.slideTransitionMod.Props) | (/* props */ typings.reapop.growTransitionMod.Props) | (/* props */ typings.reapop.fadeTransitionMod.Props) => Element
       ): Self = StObject.set(x, "Transition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "Transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "Transition", js.undefined)
     }
   }
 }

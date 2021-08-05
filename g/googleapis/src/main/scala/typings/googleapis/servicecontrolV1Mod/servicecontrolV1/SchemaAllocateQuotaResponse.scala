@@ -44,49 +44,35 @@ trait SchemaAllocateQuotaResponse extends StObject {
 }
 object SchemaAllocateQuotaResponse {
   
-  @scala.inline
-  def apply(): SchemaAllocateQuotaResponse = {
+  inline def apply(): SchemaAllocateQuotaResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAllocateQuotaResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAllocateQuotaResponseMutableBuilder[Self <: SchemaAllocateQuotaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAllocateQuotaResponse](x: Self) {
     
-    @scala.inline
-    def setAllocateErrors(value: js.Array[SchemaQuotaError]): Self = StObject.set(x, "allocateErrors", value.asInstanceOf[js.Any])
+    inline def setAllocateErrors(value: js.Array[SchemaQuotaError]): Self = StObject.set(x, "allocateErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocateErrorsUndefined: Self = StObject.set(x, "allocateErrors", js.undefined)
+    inline def setAllocateErrorsUndefined: Self = StObject.set(x, "allocateErrors", js.undefined)
     
-    @scala.inline
-    def setAllocateErrorsVarargs(value: SchemaQuotaError*): Self = StObject.set(x, "allocateErrors", js.Array(value :_*))
+    inline def setAllocateErrorsVarargs(value: SchemaQuotaError*): Self = StObject.set(x, "allocateErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setAllocateInfo(value: SchemaAllocateInfo): Self = StObject.set(x, "allocateInfo", value.asInstanceOf[js.Any])
+    inline def setAllocateInfo(value: SchemaAllocateInfo): Self = StObject.set(x, "allocateInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocateInfoUndefined: Self = StObject.set(x, "allocateInfo", js.undefined)
+    inline def setAllocateInfoUndefined: Self = StObject.set(x, "allocateInfo", js.undefined)
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
-    @scala.inline
-    def setQuotaMetrics(value: js.Array[SchemaMetricValueSet]): Self = StObject.set(x, "quotaMetrics", value.asInstanceOf[js.Any])
+    inline def setQuotaMetrics(value: js.Array[SchemaMetricValueSet]): Self = StObject.set(x, "quotaMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaMetricsUndefined: Self = StObject.set(x, "quotaMetrics", js.undefined)
+    inline def setQuotaMetricsUndefined: Self = StObject.set(x, "quotaMetrics", js.undefined)
     
-    @scala.inline
-    def setQuotaMetricsVarargs(value: SchemaMetricValueSet*): Self = StObject.set(x, "quotaMetrics", js.Array(value :_*))
+    inline def setQuotaMetricsVarargs(value: SchemaMetricValueSet*): Self = StObject.set(x, "quotaMetrics", js.Array(value :_*))
     
-    @scala.inline
-    def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
+    inline def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
+    inline def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
   }
 }

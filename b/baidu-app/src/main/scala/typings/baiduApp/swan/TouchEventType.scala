@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TouchEventType extends StObject
 object TouchEventType {
   
-  @scala.inline
-  def tap: typings.baiduApp.baiduAppStrings.tap = "tap".asInstanceOf[typings.baiduApp.baiduAppStrings.tap]
+  inline def tap: typings.baiduApp.baiduAppStrings.tap = "tap".asInstanceOf[typings.baiduApp.baiduAppStrings.tap]
   
-  @scala.inline
-  def touchcancel: typings.baiduApp.baiduAppStrings.touchcancel = "touchcancel".asInstanceOf[typings.baiduApp.baiduAppStrings.touchcancel]
+  inline def touchcancel: typings.baiduApp.baiduAppStrings.touchcancel = "touchcancel".asInstanceOf[typings.baiduApp.baiduAppStrings.touchcancel]
   
-  @scala.inline
-  def touchend: typings.baiduApp.baiduAppStrings.touchend = "touchend".asInstanceOf[typings.baiduApp.baiduAppStrings.touchend]
+  inline def touchend: typings.baiduApp.baiduAppStrings.touchend = "touchend".asInstanceOf[typings.baiduApp.baiduAppStrings.touchend]
   
-  @scala.inline
-  def touchforcechange: typings.baiduApp.baiduAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typings.baiduApp.baiduAppStrings.touchforcechange]
+  inline def touchforcechange: typings.baiduApp.baiduAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typings.baiduApp.baiduAppStrings.touchforcechange]
   
-  @scala.inline
-  def touchmove: typings.baiduApp.baiduAppStrings.touchmove = "touchmove".asInstanceOf[typings.baiduApp.baiduAppStrings.touchmove]
+  inline def touchmove: typings.baiduApp.baiduAppStrings.touchmove = "touchmove".asInstanceOf[typings.baiduApp.baiduAppStrings.touchmove]
   
-  @scala.inline
-  def touchstart: typings.baiduApp.baiduAppStrings.touchstart = "touchstart".asInstanceOf[typings.baiduApp.baiduAppStrings.touchstart]
+  inline def touchstart: typings.baiduApp.baiduAppStrings.touchstart = "touchstart".asInstanceOf[typings.baiduApp.baiduAppStrings.touchstart]
 }

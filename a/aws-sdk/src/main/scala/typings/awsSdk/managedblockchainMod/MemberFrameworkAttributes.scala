@@ -13,19 +13,15 @@ trait MemberFrameworkAttributes extends StObject {
 }
 object MemberFrameworkAttributes {
   
-  @scala.inline
-  def apply(): MemberFrameworkAttributes = {
+  inline def apply(): MemberFrameworkAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MemberFrameworkAttributes]
   }
   
-  @scala.inline
-  implicit class MemberFrameworkAttributesMutableBuilder[Self <: MemberFrameworkAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: MemberFrameworkAttributes](x: Self) {
     
-    @scala.inline
-    def setFabric(value: MemberFabricAttributes): Self = StObject.set(x, "Fabric", value.asInstanceOf[js.Any])
+    inline def setFabric(value: MemberFabricAttributes): Self = StObject.set(x, "Fabric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFabricUndefined: Self = StObject.set(x, "Fabric", js.undefined)
+    inline def setFabricUndefined: Self = StObject.set(x, "Fabric", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait ListVoiceConnectorsResponse extends StObject {
 }
 object ListVoiceConnectorsResponse {
   
-  @scala.inline
-  def apply(): ListVoiceConnectorsResponse = {
+  inline def apply(): ListVoiceConnectorsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListVoiceConnectorsResponse]
   }
   
-  @scala.inline
-  implicit class ListVoiceConnectorsResponseMutableBuilder[Self <: ListVoiceConnectorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListVoiceConnectorsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVoiceConnectors(value: VoiceConnectorList): Self = StObject.set(x, "VoiceConnectors", value.asInstanceOf[js.Any])
+    inline def setVoiceConnectors(value: VoiceConnectorList): Self = StObject.set(x, "VoiceConnectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceConnectorsUndefined: Self = StObject.set(x, "VoiceConnectors", js.undefined)
+    inline def setVoiceConnectorsUndefined: Self = StObject.set(x, "VoiceConnectors", js.undefined)
     
-    @scala.inline
-    def setVoiceConnectorsVarargs(value: VoiceConnector*): Self = StObject.set(x, "VoiceConnectors", js.Array(value :_*))
+    inline def setVoiceConnectorsVarargs(value: VoiceConnector*): Self = StObject.set(x, "VoiceConnectors", js.Array(value :_*))
   }
 }

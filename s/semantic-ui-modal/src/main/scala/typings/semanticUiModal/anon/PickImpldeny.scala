@@ -11,16 +11,13 @@ trait PickImpldeny extends StObject {
 }
 object PickImpldeny {
   
-  @scala.inline
-  def apply(deny: String): PickImpldeny = {
+  inline def apply(deny: String): PickImpldeny = {
     val __obj = js.Dynamic.literal(deny = deny.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldeny]
   }
   
-  @scala.inline
-  implicit class PickImpldenyMutableBuilder[Self <: PickImpldeny] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldeny](x: Self) {
     
-    @scala.inline
-    def setDeny(value: String): Self = StObject.set(x, "deny", value.asInstanceOf[js.Any])
+    inline def setDeny(value: String): Self = StObject.set(x, "deny", value.asInstanceOf[js.Any])
   }
 }

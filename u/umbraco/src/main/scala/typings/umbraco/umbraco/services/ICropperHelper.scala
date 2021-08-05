@@ -24,16 +24,13 @@ trait ICropperHelper extends StObject {
 }
 object ICropperHelper {
   
-  @scala.inline
-  def apply(configuration: String => js.Any): ICropperHelper = {
+  inline def apply(configuration: String => js.Any): ICropperHelper = {
     val __obj = js.Dynamic.literal(configuration = js.Any.fromFunction1(configuration))
     __obj.asInstanceOf[ICropperHelper]
   }
   
-  @scala.inline
-  implicit class ICropperHelperMutableBuilder[Self <: ICropperHelper] (val x: Self) extends AnyVal {
+  extension [Self <: ICropperHelper](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: String => js.Any): Self = StObject.set(x, "configuration", js.Any.fromFunction1(value))
+    inline def setConfiguration(value: String => js.Any): Self = StObject.set(x, "configuration", js.Any.fromFunction1(value))
   }
 }

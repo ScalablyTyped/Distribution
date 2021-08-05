@@ -28,37 +28,27 @@ trait TemplateConfiguration extends StObject {
 }
 object TemplateConfiguration {
   
-  @scala.inline
-  def apply(): TemplateConfiguration = {
+  inline def apply(): TemplateConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateConfiguration]
   }
   
-  @scala.inline
-  implicit class TemplateConfigurationMutableBuilder[Self <: TemplateConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateConfiguration](x: Self) {
     
-    @scala.inline
-    def setEmailTemplate(value: Template): Self = StObject.set(x, "EmailTemplate", value.asInstanceOf[js.Any])
+    inline def setEmailTemplate(value: Template): Self = StObject.set(x, "EmailTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailTemplateUndefined: Self = StObject.set(x, "EmailTemplate", js.undefined)
+    inline def setEmailTemplateUndefined: Self = StObject.set(x, "EmailTemplate", js.undefined)
     
-    @scala.inline
-    def setPushTemplate(value: Template): Self = StObject.set(x, "PushTemplate", value.asInstanceOf[js.Any])
+    inline def setPushTemplate(value: Template): Self = StObject.set(x, "PushTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushTemplateUndefined: Self = StObject.set(x, "PushTemplate", js.undefined)
+    inline def setPushTemplateUndefined: Self = StObject.set(x, "PushTemplate", js.undefined)
     
-    @scala.inline
-    def setSMSTemplate(value: Template): Self = StObject.set(x, "SMSTemplate", value.asInstanceOf[js.Any])
+    inline def setSMSTemplate(value: Template): Self = StObject.set(x, "SMSTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSMSTemplateUndefined: Self = StObject.set(x, "SMSTemplate", js.undefined)
+    inline def setSMSTemplateUndefined: Self = StObject.set(x, "SMSTemplate", js.undefined)
     
-    @scala.inline
-    def setVoiceTemplate(value: Template): Self = StObject.set(x, "VoiceTemplate", value.asInstanceOf[js.Any])
+    inline def setVoiceTemplate(value: Template): Self = StObject.set(x, "VoiceTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceTemplateUndefined: Self = StObject.set(x, "VoiceTemplate", js.undefined)
+    inline def setVoiceTemplateUndefined: Self = StObject.set(x, "VoiceTemplate", js.undefined)
   }
 }

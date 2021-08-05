@@ -53,39 +53,29 @@ trait ClusterOptions extends StObject {
 }
 object ClusterOptions {
   
-  @scala.inline
-  def apply(): ClusterOptions = {
+  inline def apply(): ClusterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterOptions]
   }
   
-  @scala.inline
-  implicit class ClusterOptionsMutableBuilder[Self <: ClusterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterOptions](x: Self) {
     
-    @scala.inline
-    def setClusterEdgeProperties(value: EdgeOptions): Self = StObject.set(x, "clusterEdgeProperties", value.asInstanceOf[js.Any])
+    inline def setClusterEdgeProperties(value: EdgeOptions): Self = StObject.set(x, "clusterEdgeProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterEdgePropertiesUndefined: Self = StObject.set(x, "clusterEdgeProperties", js.undefined)
+    inline def setClusterEdgePropertiesUndefined: Self = StObject.set(x, "clusterEdgeProperties", js.undefined)
     
-    @scala.inline
-    def setClusterNodeProperties(value: NodeOptions): Self = StObject.set(x, "clusterNodeProperties", value.asInstanceOf[js.Any])
+    inline def setClusterNodeProperties(value: NodeOptions): Self = StObject.set(x, "clusterNodeProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterNodePropertiesUndefined: Self = StObject.set(x, "clusterNodeProperties", js.undefined)
+    inline def setClusterNodePropertiesUndefined: Self = StObject.set(x, "clusterNodeProperties", js.undefined)
     
-    @scala.inline
-    def setJoinCondition(value: /* nodeOptions */ js.Any => Boolean): Self = StObject.set(x, "joinCondition", js.Any.fromFunction1(value))
+    inline def setJoinCondition(value: /* nodeOptions */ js.Any => Boolean): Self = StObject.set(x, "joinCondition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setJoinConditionUndefined: Self = StObject.set(x, "joinCondition", js.undefined)
+    inline def setJoinConditionUndefined: Self = StObject.set(x, "joinCondition", js.undefined)
     
-    @scala.inline
-    def setProcessProperties(
+    inline def setProcessProperties(
       value: (/* clusterOptions */ js.Any, /* childNodesOptions */ js.Array[js.Any], /* childEdgesOptions */ js.Array[js.Any]) => js.Any
     ): Self = StObject.set(x, "processProperties", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setProcessPropertiesUndefined: Self = StObject.set(x, "processProperties", js.undefined)
+    inline def setProcessPropertiesUndefined: Self = StObject.set(x, "processProperties", js.undefined)
   }
 }

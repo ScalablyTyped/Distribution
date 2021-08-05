@@ -39,14 +39,12 @@ object pagerMod {
     @JSImport("react-native-tab-view/lib/typescript/src/Pager", "default.contextType")
     @js.native
     def contextType: Context[js.Object] = js.native
-    @scala.inline
-    def contextType_=(x: Context[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    inline def contextType_=(x: Context[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-tab-view/lib/typescript/src/Pager", "default.defaultProps")
     @js.native
     def defaultProps: SpringVelocityScale = js.native
-    @scala.inline
-    def defaultProps_=(x: SpringVelocityScale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: SpringVelocityScale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait ComponentState extends StObject {
@@ -57,23 +55,18 @@ object pagerMod {
   }
   object ComponentState {
     
-    @scala.inline
-    def apply(childPanGestureHandlerRefs: js.Array[RefObject[PanGestureHandler]], enabled: Boolean): ComponentState = {
+    inline def apply(childPanGestureHandlerRefs: js.Array[RefObject[PanGestureHandler]], enabled: Boolean): ComponentState = {
       val __obj = js.Dynamic.literal(childPanGestureHandlerRefs = childPanGestureHandlerRefs.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentState]
     }
     
-    @scala.inline
-    implicit class ComponentStateMutableBuilder[Self <: ComponentState] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentState](x: Self) {
       
-      @scala.inline
-      def setChildPanGestureHandlerRefs(value: js.Array[RefObject[PanGestureHandler]]): Self = StObject.set(x, "childPanGestureHandlerRefs", value.asInstanceOf[js.Any])
+      inline def setChildPanGestureHandlerRefs(value: js.Array[RefObject[PanGestureHandler]]): Self = StObject.set(x, "childPanGestureHandlerRefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildPanGestureHandlerRefsVarargs(value: RefObject[PanGestureHandler]*): Self = StObject.set(x, "childPanGestureHandlerRefs", js.Array(value :_*))
+      inline def setChildPanGestureHandlerRefsVarargs(value: RefObject[PanGestureHandler]*): Self = StObject.set(x, "childPanGestureHandlerRefs", js.Array(value :_*))
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,9 +74,9 @@ object pagerMod {
   trait Pager[T /* <: Route */]
     extends Component[Props[T], ComponentState, js.Any] {
     
-    var addListener: js.Any = js.native
+    /* private */ var addListener: js.Any = js.native
     
-    var clock: js.Any = js.native
+    /* private */ var clock: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MPager(): Unit = js.native
@@ -94,86 +87,86 @@ object pagerMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MPager(): Unit = js.native
     
-    var currentIndexValue: js.Any = js.native
+    /* private */ var currentIndexValue: js.Any = js.native
     
-    var enterListeners: js.Any = js.native
+    /* private */ var enterListeners: js.Any = js.native
     
-    var extrapolatedPosition: js.Any = js.native
+    /* private */ var extrapolatedPosition: js.Any = js.native
     
-    var gestureHandlerRef: js.Any = js.native
+    /* private */ var gestureHandlerRef: js.Any = js.native
     
-    var gestureState: js.Any = js.native
+    /* private */ var gestureState: js.Any = js.native
     
-    var gestureX: js.Any = js.native
+    /* private */ var gestureX: js.Any = js.native
     
-    var gesturesEnabled: js.Any = js.native
+    /* private */ var gesturesEnabled: js.Any = js.native
     
-    var getTranslateX: js.Any = js.native
+    /* private */ var getTranslateX: js.Any = js.native
     
-    var handleEnteredIndexChange: js.Any = js.native
+    /* private */ var handleEnteredIndexChange: js.Any = js.native
     
-    var handleGestureEvent: js.Any = js.native
+    /* private */ var handleGestureEvent: js.Any = js.native
     
-    var index: js.Any = js.native
+    /* private */ var index: js.Any = js.native
     
-    var indexAtSwipeEnd: js.Any = js.native
+    /* private */ var indexAtSwipeEnd: js.Any = js.native
     
-    var initialVelocityForSpring: js.Any = js.native
+    /* private */ var initialVelocityForSpring: js.Any = js.native
     
-    var interactionHandle: js.Any = js.native
+    /* private */ var interactionHandle: js.Any = js.native
     
-    var isSwipeGesture: js.Any = js.native
+    /* private */ var isSwipeGesture: js.Any = js.native
     
-    var isSwiping: js.Any = js.native
+    /* private */ var isSwiping: js.Any = js.native
     
-    var jumpTo: js.Any = js.native
+    /* private */ var jumpTo: js.Any = js.native
     
-    var jumpToIndex: js.Any = js.native
+    /* private */ var jumpToIndex: js.Any = js.native
     
-    var lastEnteredIndex: js.Any = js.native
+    /* private */ var lastEnteredIndex: js.Any = js.native
     
-    var layoutWidth: js.Any = js.native
+    /* private */ var layoutWidth: js.Any = js.native
     
-    var maybeCancel: js.Any = js.native
+    /* private */ var maybeCancel: js.Any = js.native
     
     var mounted: Boolean = js.native
     
-    var nextIndex: js.Any = js.native
+    /* private */ var nextIndex: js.Any = js.native
     
-    var offsetX: js.Any = js.native
+    /* private */ var offsetX: js.Any = js.native
     
-    var pendingIndexValue: js.Any = js.native
+    /* private */ var pendingIndexValue: js.Any = js.native
     
-    var position: js.Any = js.native
+    /* private */ var position: js.Any = js.native
     
-    var previouslyFocusedTextInput: js.Any = js.native
+    /* private */ var previouslyFocusedTextInput: js.Any = js.native
     
-    var progress: js.Any = js.native
+    /* private */ var progress: js.Any = js.native
     
-    var providerVal: js.Any = js.native
+    /* private */ var providerVal: js.Any = js.native
     
-    var removeListener: js.Any = js.native
+    /* private */ var removeListener: js.Any = js.native
     
-    var routesLength: js.Any = js.native
+    /* private */ var routesLength: js.Any = js.native
     
-    var springConfig: js.Any = js.native
+    /* private */ var springConfig: js.Any = js.native
     
-    var springVelocityScale: js.Any = js.native
+    /* private */ var springVelocityScale: js.Any = js.native
     
     @JSName("state")
     var state_Pager: ChildPanGestureHandlerRefs = js.native
     
-    var swipeVelocityImpact: js.Any = js.native
+    /* private */ var swipeVelocityImpact: js.Any = js.native
     
-    var timingConfig: js.Any = js.native
+    /* private */ var timingConfig: js.Any = js.native
     
-    var toggleEnabled: js.Any = js.native
+    /* private */ var toggleEnabled: js.Any = js.native
     
-    var transitionTo: js.Any = js.native
+    /* private */ var transitionTo: js.Any = js.native
     
-    var translateX: js.Any = js.native
+    /* private */ var translateX: js.Any = js.native
     
-    var velocityX: js.Any = js.native
+    /* private */ var velocityX: js.Any = js.native
   }
   
   trait Props[T /* <: Route */]
@@ -194,8 +187,7 @@ object pagerMod {
   }
   object Props {
     
-    @scala.inline
-    def apply[T /* <: Route */](
+    inline def apply[T /* <: Route */](
       children: EventEmitterPropsposition => ReactNode,
       gestureHandlerProps: ComponentProps[Instantiable1[/* props */ ReadonlyPanGestureHandler, PanGestureHandler]],
       keyboardDismissMode: none | `on-drag` | auto,
@@ -210,29 +202,21 @@ object pagerMod {
       __obj.asInstanceOf[Props[T]]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[?], T /* <: Route */] (val x: Self & Props[T]) extends AnyVal {
+    extension [Self <: Props[?], T /* <: Route */](x: Self & Props[T]) {
       
-      @scala.inline
-      def setChildren(value: EventEmitterPropsposition => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: EventEmitterPropsposition => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGestureHandlerProps(value: ComponentProps[Instantiable1[/* props */ ReadonlyPanGestureHandler, PanGestureHandler]]): Self = StObject.set(x, "gestureHandlerProps", value.asInstanceOf[js.Any])
+      inline def setGestureHandlerProps(value: ComponentProps[Instantiable1[/* props */ ReadonlyPanGestureHandler, PanGestureHandler]]): Self = StObject.set(x, "gestureHandlerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigationState(value: NavigationState[T]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
+      inline def setNavigationState(value: NavigationState[T]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnIndexChange(value: Double => Unit): Self = StObject.set(x, "onIndexChange", js.Any.fromFunction1(value))
+      inline def setOnIndexChange(value: Double => Unit): Self = StObject.set(x, "onIndexChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClippedSubviews(value: Boolean): Self = StObject.set(x, "removeClippedSubviews", value.asInstanceOf[js.Any])
+      inline def setRemoveClippedSubviews(value: Boolean): Self = StObject.set(x, "removeClippedSubviews", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveClippedSubviewsUndefined: Self = StObject.set(x, "removeClippedSubviews", js.undefined)
+      inline def setRemoveClippedSubviewsUndefined: Self = StObject.set(x, "removeClippedSubviews", js.undefined)
     }
   }
 }

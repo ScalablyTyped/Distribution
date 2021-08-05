@@ -20,8 +20,7 @@ trait XDrawPageDuplicator
 }
 object XDrawPageDuplicator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     duplicate: XDrawPage => XDrawPage,
     queryInterface: `type` => js.Any,
@@ -31,10 +30,8 @@ object XDrawPageDuplicator {
     __obj.asInstanceOf[XDrawPageDuplicator]
   }
   
-  @scala.inline
-  implicit class XDrawPageDuplicatorMutableBuilder[Self <: XDrawPageDuplicator] (val x: Self) extends AnyVal {
+  extension [Self <: XDrawPageDuplicator](x: Self) {
     
-    @scala.inline
-    def setDuplicate(value: XDrawPage => XDrawPage): Self = StObject.set(x, "duplicate", js.Any.fromFunction1(value))
+    inline def setDuplicate(value: XDrawPage => XDrawPage): Self = StObject.set(x, "duplicate", js.Any.fromFunction1(value))
   }
 }

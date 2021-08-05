@@ -10,16 +10,13 @@ trait PopupListTheme extends StObject {
 }
 object PopupListTheme {
   
-  @scala.inline
-  def apply(cellFontColor: String): PopupListTheme = {
+  inline def apply(cellFontColor: String): PopupListTheme = {
     val __obj = js.Dynamic.literal(cellFontColor = cellFontColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupListTheme]
   }
   
-  @scala.inline
-  implicit class PopupListThemeMutableBuilder[Self <: PopupListTheme] (val x: Self) extends AnyVal {
+  extension [Self <: PopupListTheme](x: Self) {
     
-    @scala.inline
-    def setCellFontColor(value: String): Self = StObject.set(x, "cellFontColor", value.asInstanceOf[js.Any])
+    inline def setCellFontColor(value: String): Self = StObject.set(x, "cellFontColor", value.asInstanceOf[js.Any])
   }
 }

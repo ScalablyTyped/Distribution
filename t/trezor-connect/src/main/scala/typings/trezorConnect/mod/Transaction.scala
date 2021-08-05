@@ -16,28 +16,21 @@ trait Transaction extends StObject {
 }
 object Transaction {
   
-  @scala.inline
-  def apply(serializedTx: String, signatures: js.Array[String]): Transaction = {
+  inline def apply(serializedTx: String, signatures: js.Array[String]): Transaction = {
     val __obj = js.Dynamic.literal(serializedTx = serializedTx.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transaction]
   }
   
-  @scala.inline
-  implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
+  extension [Self <: Transaction](x: Self) {
     
-    @scala.inline
-    def setSerializedTx(value: String): Self = StObject.set(x, "serializedTx", value.asInstanceOf[js.Any])
+    inline def setSerializedTx(value: String): Self = StObject.set(x, "serializedTx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatures(value: js.Array[String]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
+    inline def setSignatures(value: js.Array[String]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignaturesVarargs(value: String*): Self = StObject.set(x, "signatures", js.Array(value :_*))
+    inline def setSignaturesVarargs(value: String*): Self = StObject.set(x, "signatures", js.Array(value :_*))
     
-    @scala.inline
-    def setTxid(value: String): Self = StObject.set(x, "txid", value.asInstanceOf[js.Any])
+    inline def setTxid(value: String): Self = StObject.set(x, "txid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTxidUndefined: Self = StObject.set(x, "txid", js.undefined)
+    inline def setTxidUndefined: Self = StObject.set(x, "txid", js.undefined)
   }
 }

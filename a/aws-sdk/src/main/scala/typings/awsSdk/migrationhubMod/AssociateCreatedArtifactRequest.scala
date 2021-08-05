@@ -28,8 +28,7 @@ trait AssociateCreatedArtifactRequest extends StObject {
 }
 object AssociateCreatedArtifactRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreatedArtifact: CreatedArtifact,
     MigrationTaskName: MigrationTaskName,
     ProgressUpdateStream: ProgressUpdateStream
@@ -38,22 +37,16 @@ object AssociateCreatedArtifactRequest {
     __obj.asInstanceOf[AssociateCreatedArtifactRequest]
   }
   
-  @scala.inline
-  implicit class AssociateCreatedArtifactRequestMutableBuilder[Self <: AssociateCreatedArtifactRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateCreatedArtifactRequest](x: Self) {
     
-    @scala.inline
-    def setCreatedArtifact(value: CreatedArtifact): Self = StObject.set(x, "CreatedArtifact", value.asInstanceOf[js.Any])
+    inline def setCreatedArtifact(value: CreatedArtifact): Self = StObject.set(x, "CreatedArtifact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setMigrationTaskName(value: MigrationTaskName): Self = StObject.set(x, "MigrationTaskName", value.asInstanceOf[js.Any])
+    inline def setMigrationTaskName(value: MigrationTaskName): Self = StObject.set(x, "MigrationTaskName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUpdateStream(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStream", value.asInstanceOf[js.Any])
+    inline def setProgressUpdateStream(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStream", value.asInstanceOf[js.Any])
   }
 }

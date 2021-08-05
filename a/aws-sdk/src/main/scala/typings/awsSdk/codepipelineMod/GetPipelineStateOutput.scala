@@ -33,46 +33,33 @@ trait GetPipelineStateOutput extends StObject {
 }
 object GetPipelineStateOutput {
   
-  @scala.inline
-  def apply(): GetPipelineStateOutput = {
+  inline def apply(): GetPipelineStateOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPipelineStateOutput]
   }
   
-  @scala.inline
-  implicit class GetPipelineStateOutputMutableBuilder[Self <: GetPipelineStateOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetPipelineStateOutput](x: Self) {
     
-    @scala.inline
-    def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineNameUndefined: Self = StObject.set(x, "pipelineName", js.undefined)
+    inline def setPipelineNameUndefined: Self = StObject.set(x, "pipelineName", js.undefined)
     
-    @scala.inline
-    def setPipelineVersion(value: PipelineVersion): Self = StObject.set(x, "pipelineVersion", value.asInstanceOf[js.Any])
+    inline def setPipelineVersion(value: PipelineVersion): Self = StObject.set(x, "pipelineVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineVersionUndefined: Self = StObject.set(x, "pipelineVersion", js.undefined)
+    inline def setPipelineVersionUndefined: Self = StObject.set(x, "pipelineVersion", js.undefined)
     
-    @scala.inline
-    def setStageStates(value: StageStateList): Self = StObject.set(x, "stageStates", value.asInstanceOf[js.Any])
+    inline def setStageStates(value: StageStateList): Self = StObject.set(x, "stageStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageStatesUndefined: Self = StObject.set(x, "stageStates", js.undefined)
+    inline def setStageStatesUndefined: Self = StObject.set(x, "stageStates", js.undefined)
     
-    @scala.inline
-    def setStageStatesVarargs(value: StageState*): Self = StObject.set(x, "stageStates", js.Array(value :_*))
+    inline def setStageStatesVarargs(value: StageState*): Self = StObject.set(x, "stageStates", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdated(value: Timestamp): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: Timestamp): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

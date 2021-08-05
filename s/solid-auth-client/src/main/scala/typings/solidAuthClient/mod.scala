@@ -26,8 +26,7 @@ object mod extends Shortcut {
   }
   object AsyncStorage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getItem: String => js.Promise[js.UndefOr[String]],
       removeItem: String => js.Promise[Unit],
       setItem: (String, String) => js.Promise[Unit]
@@ -36,17 +35,13 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AsyncStorage]
     }
     
-    @scala.inline
-    implicit class AsyncStorageMutableBuilder[Self <: AsyncStorage] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncStorage](x: Self) {
       
-      @scala.inline
-      def setGetItem(value: String => js.Promise[js.UndefOr[String]]): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+      inline def setGetItem(value: String => js.Promise[js.UndefOr[String]]): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveItem(value: String => js.Promise[Unit]): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+      inline def setRemoveItem(value: String => js.Promise[Unit]): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetItem(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+      inline def setSetItem(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
     }
   }
   
@@ -60,32 +55,24 @@ object mod extends Shortcut {
   }
   object LoginOptions {
     
-    @scala.inline
-    def apply(): LoginOptions = {
+    inline def apply(): LoginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoginOptions]
     }
     
-    @scala.inline
-    implicit class LoginOptionsMutableBuilder[Self <: LoginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoginOptions](x: Self) {
       
-      @scala.inline
-      def setCallbackUri(value: String): Self = StObject.set(x, "callbackUri", value.asInstanceOf[js.Any])
+      inline def setCallbackUri(value: String): Self = StObject.set(x, "callbackUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackUriUndefined: Self = StObject.set(x, "callbackUri", js.undefined)
+      inline def setCallbackUriUndefined: Self = StObject.set(x, "callbackUri", js.undefined)
       
-      @scala.inline
-      def setPopupUri(value: String): Self = StObject.set(x, "popupUri", value.asInstanceOf[js.Any])
+      inline def setPopupUri(value: String): Self = StObject.set(x, "popupUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupUriUndefined: Self = StObject.set(x, "popupUri", js.undefined)
+      inline def setPopupUriUndefined: Self = StObject.set(x, "popupUri", js.undefined)
       
-      @scala.inline
-      def setStorage(value: Storage | AsyncStorage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: Storage | AsyncStorage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+      inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
     }
   }
   
@@ -95,17 +82,14 @@ object mod extends Shortcut {
   }
   object Session {
     
-    @scala.inline
-    def apply(webId: String): Session = {
+    inline def apply(webId: String): Session = {
       val __obj = js.Dynamic.literal(webId = webId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Session]
     }
     
-    @scala.inline
-    implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
+    extension [Self <: Session](x: Self) {
       
-      @scala.inline
-      def setWebId(value: String): Self = StObject.set(x, "webId", value.asInstanceOf[js.Any])
+      inline def setWebId(value: String): Self = StObject.set(x, "webId", value.asInstanceOf[js.Any])
     }
   }
   

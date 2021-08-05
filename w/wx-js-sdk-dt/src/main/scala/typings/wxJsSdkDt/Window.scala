@@ -13,19 +13,15 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(): Window = {
+  inline def apply(): Window = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def set__wxjs_is_wkwebview(value: Boolean): Self = StObject.set(x, "__wxjs_is_wkwebview", value.asInstanceOf[js.Any])
+    inline def set__wxjs_is_wkwebview(value: Boolean): Self = StObject.set(x, "__wxjs_is_wkwebview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__wxjs_is_wkwebviewUndefined: Self = StObject.set(x, "__wxjs_is_wkwebview", js.undefined)
+    inline def set__wxjs_is_wkwebviewUndefined: Self = StObject.set(x, "__wxjs_is_wkwebview", js.undefined)
   }
 }

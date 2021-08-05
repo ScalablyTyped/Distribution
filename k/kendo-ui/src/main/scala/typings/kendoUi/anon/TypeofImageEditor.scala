@@ -15,19 +15,15 @@ trait TypeofImageEditor extends StObject {
 }
 object TypeofImageEditor {
   
-  @scala.inline
-  def apply(extend: js.Object => ImageEditor, fn: ImageEditor): TypeofImageEditor = {
+  inline def apply(extend: js.Object => ImageEditor, fn: ImageEditor): TypeofImageEditor = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofImageEditor]
   }
   
-  @scala.inline
-  implicit class TypeofImageEditorMutableBuilder[Self <: TypeofImageEditor] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofImageEditor](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => ImageEditor): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => ImageEditor): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: ImageEditor): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: ImageEditor): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

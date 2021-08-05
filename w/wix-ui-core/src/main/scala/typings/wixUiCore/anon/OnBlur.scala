@@ -16,25 +16,19 @@ trait OnBlur extends StObject {
 }
 object OnBlur {
   
-  @scala.inline
-  def apply(onBlur: () => js.Any, onChange: () => js.Any, onHover: () => js.Any, onKeyDown: () => js.Any): OnBlur = {
+  inline def apply(onBlur: () => js.Any, onChange: () => js.Any, onHover: () => js.Any, onKeyDown: () => js.Any): OnBlur = {
     val __obj = js.Dynamic.literal(onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onHover = js.Any.fromFunction0(onHover), onKeyDown = js.Any.fromFunction0(onKeyDown))
     __obj.asInstanceOf[OnBlur]
   }
   
-  @scala.inline
-  implicit class OnBlurMutableBuilder[Self <: OnBlur] (val x: Self) extends AnyVal {
+  extension [Self <: OnBlur](x: Self) {
     
-    @scala.inline
-    def setOnBlur(value: () => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
+    inline def setOnBlur(value: () => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnChange(value: () => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
+    inline def setOnChange(value: () => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnHover(value: () => js.Any): Self = StObject.set(x, "onHover", js.Any.fromFunction0(value))
+    inline def setOnHover(value: () => js.Any): Self = StObject.set(x, "onHover", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnKeyDown(value: () => js.Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction0(value))
+    inline def setOnKeyDown(value: () => js.Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction0(value))
   }
 }

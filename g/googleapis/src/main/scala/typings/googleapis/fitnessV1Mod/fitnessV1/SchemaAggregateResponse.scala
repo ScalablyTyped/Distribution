@@ -13,22 +13,17 @@ trait SchemaAggregateResponse extends StObject {
 }
 object SchemaAggregateResponse {
   
-  @scala.inline
-  def apply(): SchemaAggregateResponse = {
+  inline def apply(): SchemaAggregateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAggregateResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAggregateResponseMutableBuilder[Self <: SchemaAggregateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAggregateResponse](x: Self) {
     
-    @scala.inline
-    def setBucket(value: js.Array[SchemaAggregateBucket]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: js.Array[SchemaAggregateBucket]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
-    @scala.inline
-    def setBucketVarargs(value: SchemaAggregateBucket*): Self = StObject.set(x, "bucket", js.Array(value :_*))
+    inline def setBucketVarargs(value: SchemaAggregateBucket*): Self = StObject.set(x, "bucket", js.Array(value :_*))
   }
 }

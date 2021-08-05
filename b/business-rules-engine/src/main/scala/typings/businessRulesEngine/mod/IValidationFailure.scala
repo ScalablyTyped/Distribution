@@ -14,19 +14,15 @@ trait IValidationFailure
 }
 object IValidationFailure {
   
-  @scala.inline
-  def apply(Error: IError, ErrorMessage: String, HasError: Boolean, IsAsync: Boolean): IValidationFailure = {
+  inline def apply(Error: IError, ErrorMessage: String, HasError: Boolean, IsAsync: Boolean): IValidationFailure = {
     val __obj = js.Dynamic.literal(Error = Error.asInstanceOf[js.Any], ErrorMessage = ErrorMessage.asInstanceOf[js.Any], HasError = HasError.asInstanceOf[js.Any], IsAsync = IsAsync.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValidationFailure]
   }
   
-  @scala.inline
-  implicit class IValidationFailureMutableBuilder[Self <: IValidationFailure] (val x: Self) extends AnyVal {
+  extension [Self <: IValidationFailure](x: Self) {
     
-    @scala.inline
-    def setError(value: IError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: IError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAsync(value: Boolean): Self = StObject.set(x, "IsAsync", value.asInstanceOf[js.Any])
+    inline def setIsAsync(value: Boolean): Self = StObject.set(x, "IsAsync", value.asInstanceOf[js.Any])
   }
 }

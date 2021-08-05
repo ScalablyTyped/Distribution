@@ -26,31 +26,23 @@ trait SchemaSourceConfig extends StObject {
 }
 object SchemaSourceConfig {
   
-  @scala.inline
-  def apply(): SchemaSourceConfig = {
+  inline def apply(): SchemaSourceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSourceConfig]
   }
   
-  @scala.inline
-  implicit class SchemaSourceConfigMutableBuilder[Self <: SchemaSourceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSourceConfig](x: Self) {
     
-    @scala.inline
-    def setCrowdingConfig(value: SchemaSourceCrowdingConfig): Self = StObject.set(x, "crowdingConfig", value.asInstanceOf[js.Any])
+    inline def setCrowdingConfig(value: SchemaSourceCrowdingConfig): Self = StObject.set(x, "crowdingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrowdingConfigUndefined: Self = StObject.set(x, "crowdingConfig", js.undefined)
+    inline def setCrowdingConfigUndefined: Self = StObject.set(x, "crowdingConfig", js.undefined)
     
-    @scala.inline
-    def setScoringConfig(value: SchemaSourceScoringConfig): Self = StObject.set(x, "scoringConfig", value.asInstanceOf[js.Any])
+    inline def setScoringConfig(value: SchemaSourceScoringConfig): Self = StObject.set(x, "scoringConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoringConfigUndefined: Self = StObject.set(x, "scoringConfig", js.undefined)
+    inline def setScoringConfigUndefined: Self = StObject.set(x, "scoringConfig", js.undefined)
     
-    @scala.inline
-    def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

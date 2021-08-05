@@ -148,8 +148,7 @@ object mod {
     def setDataMin(number: Double): this.type = js.native
   }
   
-  @scala.inline
-  def create[V /* <: String */, X /* <: String */, Y /* <: String */](configObject: HeatmapConfiguration[V, X, Y]): Heatmap[V, X, Y] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(configObject.asInstanceOf[js.Any]).asInstanceOf[Heatmap[V, X, Y]]
+  inline def create[V /* <: String */, X /* <: String */, Y /* <: String */](configObject: HeatmapConfiguration[V, X, Y]): Heatmap[V, X, Y] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(configObject.asInstanceOf[js.Any]).asInstanceOf[Heatmap[V, X, Y]]
   
   object global {
     
@@ -190,8 +189,7 @@ object mod {
     }
   }
   
-  @scala.inline
-  def register(pluginKey: String, plugin: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(pluginKey.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def register(pluginKey: String, plugin: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(pluginKey.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait BaseHeatmapConfiguration[V /* <: String */] extends StObject {
     
@@ -264,80 +262,56 @@ object mod {
   }
   object BaseHeatmapConfiguration {
     
-    @scala.inline
-    def apply[V /* <: String */](): BaseHeatmapConfiguration[V] = {
+    inline def apply[V /* <: String */](): BaseHeatmapConfiguration[V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseHeatmapConfiguration[V]]
     }
     
-    @scala.inline
-    implicit class BaseHeatmapConfigurationMutableBuilder[Self <: BaseHeatmapConfiguration[?], V /* <: String */] (val x: Self & BaseHeatmapConfiguration[V]) extends AnyVal {
+    extension [Self <: BaseHeatmapConfiguration[?], V /* <: String */](x: Self & BaseHeatmapConfiguration[V]) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+      inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+      inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
       
-      @scala.inline
-      def setGradient(value: StringDictionary[String]): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+      inline def setGradient(value: StringDictionary[String]): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
+      inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
       
-      @scala.inline
-      def setMaxOpacity(value: Double): Self = StObject.set(x, "maxOpacity", value.asInstanceOf[js.Any])
+      inline def setMaxOpacity(value: Double): Self = StObject.set(x, "maxOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxOpacityUndefined: Self = StObject.set(x, "maxOpacity", js.undefined)
+      inline def setMaxOpacityUndefined: Self = StObject.set(x, "maxOpacity", js.undefined)
       
-      @scala.inline
-      def setMinOpacity(value: Double): Self = StObject.set(x, "minOpacity", value.asInstanceOf[js.Any])
+      inline def setMinOpacity(value: Double): Self = StObject.set(x, "minOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinOpacityUndefined: Self = StObject.set(x, "minOpacity", js.undefined)
+      inline def setMinOpacityUndefined: Self = StObject.set(x, "minOpacity", js.undefined)
       
-      @scala.inline
-      def setOnExtremaChange(value: () => Unit): Self = StObject.set(x, "onExtremaChange", js.Any.fromFunction0(value))
+      inline def setOnExtremaChange(value: () => Unit): Self = StObject.set(x, "onExtremaChange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnExtremaChangeUndefined: Self = StObject.set(x, "onExtremaChange", js.undefined)
+      inline def setOnExtremaChangeUndefined: Self = StObject.set(x, "onExtremaChange", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      @scala.inline
-      def setScaleRadius(value: Boolean): Self = StObject.set(x, "scaleRadius", value.asInstanceOf[js.Any])
+      inline def setScaleRadius(value: Boolean): Self = StObject.set(x, "scaleRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleRadiusUndefined: Self = StObject.set(x, "scaleRadius", js.undefined)
+      inline def setScaleRadiusUndefined: Self = StObject.set(x, "scaleRadius", js.undefined)
       
-      @scala.inline
-      def setUseLocalExtrema(value: Boolean): Self = StObject.set(x, "useLocalExtrema", value.asInstanceOf[js.Any])
+      inline def setUseLocalExtrema(value: Boolean): Self = StObject.set(x, "useLocalExtrema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseLocalExtremaUndefined: Self = StObject.set(x, "useLocalExtrema", js.undefined)
+      inline def setUseLocalExtremaUndefined: Self = StObject.set(x, "useLocalExtrema", js.undefined)
       
-      @scala.inline
-      def setValueField(value: V): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
+      inline def setValueField(value: V): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueFieldUndefined: Self = StObject.set(x, "valueField", js.undefined)
+      inline def setValueFieldUndefined: Self = StObject.set(x, "valueField", js.undefined)
     }
   }
   
@@ -353,26 +327,20 @@ object mod {
   }
   object DataCircle {
     
-    @scala.inline
-    def apply(radius: Double, value: Double, x: Double, y: Double): DataCircle = {
+    inline def apply(radius: Double, value: Double, x: Double, y: Double): DataCircle = {
       val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataCircle]
     }
     
-    @scala.inline
-    implicit class DataCircleMutableBuilder[Self <: DataCircle] (val x: Self) extends AnyVal {
+    extension [Self <: DataCircle](x: Self) {
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -402,29 +370,22 @@ object mod {
   }
   object HeatmapConfiguration {
     
-    @scala.inline
-    def apply[V /* <: String */, X /* <: String */, Y /* <: String */](container: HTMLElement): HeatmapConfiguration[V, X, Y] = {
+    inline def apply[V /* <: String */, X /* <: String */, Y /* <: String */](container: HTMLElement): HeatmapConfiguration[V, X, Y] = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeatmapConfiguration[V, X, Y]]
     }
     
-    @scala.inline
-    implicit class HeatmapConfigurationMutableBuilder[Self <: HeatmapConfiguration[?, ?, ?], V /* <: String */, X /* <: String */, Y /* <: String */] (val x: Self & (HeatmapConfiguration[V, X, Y])) extends AnyVal {
+    extension [Self <: HeatmapConfiguration[?, ?, ?], V /* <: String */, X /* <: String */, Y /* <: String */](x: Self & (HeatmapConfiguration[V, X, Y])) {
       
-      @scala.inline
-      def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXField(value: X): Self = StObject.set(x, "xField", value.asInstanceOf[js.Any])
+      inline def setXField(value: X): Self = StObject.set(x, "xField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXFieldUndefined: Self = StObject.set(x, "xField", js.undefined)
+      inline def setXFieldUndefined: Self = StObject.set(x, "xField", js.undefined)
       
-      @scala.inline
-      def setYField(value: Y): Self = StObject.set(x, "yField", value.asInstanceOf[js.Any])
+      inline def setYField(value: Y): Self = StObject.set(x, "yField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYFieldUndefined: Self = StObject.set(x, "yField", js.undefined)
+      inline def setYFieldUndefined: Self = StObject.set(x, "yField", js.undefined)
     }
   }
   
@@ -447,26 +408,20 @@ object mod {
   }
   object HeatmapData {
     
-    @scala.inline
-    def apply[T](data: js.Array[T], max: Double, min: Double): HeatmapData[T] = {
+    inline def apply[T](data: js.Array[T], max: Double, min: Double): HeatmapData[T] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeatmapData[T]]
     }
     
-    @scala.inline
-    implicit class HeatmapDataMutableBuilder[Self <: HeatmapData[?], T] (val x: Self & HeatmapData[T]) extends AnyVal {
+    extension [Self <: HeatmapData[?], T](x: Self & HeatmapData[T]) {
       
-      @scala.inline
-      def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     }
   }
   
@@ -488,26 +443,20 @@ object mod {
   }
   object HeatmapOverlayConfiguration {
     
-    @scala.inline
-    def apply[V /* <: String */, TLat /* <: String */, TLong /* <: String */](): HeatmapOverlayConfiguration[V, TLat, TLong] = {
+    inline def apply[V /* <: String */, TLat /* <: String */, TLong /* <: String */](): HeatmapOverlayConfiguration[V, TLat, TLong] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeatmapOverlayConfiguration[V, TLat, TLong]]
     }
     
-    @scala.inline
-    implicit class HeatmapOverlayConfigurationMutableBuilder[Self <: HeatmapOverlayConfiguration[?, ?, ?], V /* <: String */, TLat /* <: String */, TLong /* <: String */] (val x: Self & (HeatmapOverlayConfiguration[V, TLat, TLong])) extends AnyVal {
+    extension [Self <: HeatmapOverlayConfiguration[?, ?, ?], V /* <: String */, TLat /* <: String */, TLong /* <: String */](x: Self & (HeatmapOverlayConfiguration[V, TLat, TLong])) {
       
-      @scala.inline
-      def setLatField(value: TLat): Self = StObject.set(x, "latField", value.asInstanceOf[js.Any])
+      inline def setLatField(value: TLat): Self = StObject.set(x, "latField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatFieldUndefined: Self = StObject.set(x, "latField", js.undefined)
+      inline def setLatFieldUndefined: Self = StObject.set(x, "latField", js.undefined)
       
-      @scala.inline
-      def setLngField(value: TLong): Self = StObject.set(x, "lngField", value.asInstanceOf[js.Any])
+      inline def setLngField(value: TLong): Self = StObject.set(x, "lngField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLngFieldUndefined: Self = StObject.set(x, "lngField", js.undefined)
+      inline def setLngFieldUndefined: Self = StObject.set(x, "lngField", js.undefined)
     }
   }
 }

@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReturnValue extends StObject
 object ReturnValue {
   
-  @scala.inline
-  def Boolean(getValue: () => scala.Boolean): typings.nodeSass.mod.types.Boolean = {
+  inline def Boolean(getValue: () => scala.Boolean): typings.nodeSass.mod.types.Boolean = {
     val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue))
     __obj.asInstanceOf[typings.nodeSass.mod.types.Boolean]
   }
   
-  @scala.inline
-  def Color(
+  inline def Color(
     getA: () => Double,
     getB: () => Double,
     getG: () => Double,
@@ -32,14 +30,12 @@ object ReturnValue {
     __obj.asInstanceOf[typings.nodeSass.mod.types.Color]
   }
   
-  @scala.inline
-  def Error(___SASS_ERROR___ : js.Symbol): typings.nodeSass.mod.types.Error = {
+  inline def Error(___SASS_ERROR___ : js.Symbol): typings.nodeSass.mod.types.Error = {
     val __obj = js.Dynamic.literal(___SASS_ERROR___ = ___SASS_ERROR___.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.nodeSass.mod.types.Error]
   }
   
-  @scala.inline
-  def List(
+  inline def List(
     getLength: () => Double,
     getSeparator: () => scala.Boolean,
     getValue: Double => Value,
@@ -50,8 +46,7 @@ object ReturnValue {
     __obj.asInstanceOf[typings.nodeSass.mod.types.List]
   }
   
-  @scala.inline
-  def Map(
+  inline def Map(
     getKey: Double => Value,
     getLength: () => Double,
     getValue: Double => Value,
@@ -62,14 +57,12 @@ object ReturnValue {
     __obj.asInstanceOf[typings.nodeSass.mod.types.Map]
   }
   
-  @scala.inline
-  def Null(___NULL___ : js.Symbol): typings.nodeSass.mod.types.Null = {
+  inline def Null(___NULL___ : js.Symbol): typings.nodeSass.mod.types.Null = {
     val __obj = js.Dynamic.literal(___NULL___ = ___NULL___.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.nodeSass.mod.types.Null]
   }
   
-  @scala.inline
-  def Number(
+  inline def Number(
     getUnit: () => java.lang.String,
     getValue: () => Double,
     setUnit: java.lang.String => Unit,
@@ -79,8 +72,7 @@ object ReturnValue {
     __obj.asInstanceOf[typings.nodeSass.mod.types.Number]
   }
   
-  @scala.inline
-  def String(getValue: () => java.lang.String, setValue: java.lang.String => Unit): typings.nodeSass.mod.types.String = {
+  inline def String(getValue: () => java.lang.String, setValue: java.lang.String => Unit): typings.nodeSass.mod.types.String = {
     val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction0(getValue), setValue = js.Any.fromFunction1(setValue))
     __obj.asInstanceOf[typings.nodeSass.mod.types.String]
   }

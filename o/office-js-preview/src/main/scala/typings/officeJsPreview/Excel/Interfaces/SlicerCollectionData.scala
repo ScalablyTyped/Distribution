@@ -11,22 +11,17 @@ trait SlicerCollectionData extends StObject {
 }
 object SlicerCollectionData {
   
-  @scala.inline
-  def apply(): SlicerCollectionData = {
+  inline def apply(): SlicerCollectionData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlicerCollectionData]
   }
   
-  @scala.inline
-  implicit class SlicerCollectionDataMutableBuilder[Self <: SlicerCollectionData] (val x: Self) extends AnyVal {
+  extension [Self <: SlicerCollectionData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[SlicerData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SlicerData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: SlicerData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SlicerData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

@@ -16,31 +16,23 @@ trait Indices extends StObject {
 }
 object Indices {
   
-  @scala.inline
-  def apply(indices: BackendValues, outputShape: js.Array[Double], outputValues: BackendValues): Indices = {
+  inline def apply(indices: BackendValues, outputShape: js.Array[Double], outputValues: BackendValues): Indices = {
     val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], outputShape = outputShape.asInstanceOf[js.Any], outputValues = outputValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[Indices]
   }
   
-  @scala.inline
-  implicit class IndicesMutableBuilder[Self <: Indices] (val x: Self) extends AnyVal {
+  extension [Self <: Indices](x: Self) {
     
-    @scala.inline
-    def setIndices(value: BackendValues): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: BackendValues): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicesVarargs(value: Uint8Array*): Self = StObject.set(x, "indices", js.Array(value :_*))
+    inline def setIndicesVarargs(value: Uint8Array*): Self = StObject.set(x, "indices", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputShape(value: js.Array[Double]): Self = StObject.set(x, "outputShape", value.asInstanceOf[js.Any])
+    inline def setOutputShape(value: js.Array[Double]): Self = StObject.set(x, "outputShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputShapeVarargs(value: Double*): Self = StObject.set(x, "outputShape", js.Array(value :_*))
+    inline def setOutputShapeVarargs(value: Double*): Self = StObject.set(x, "outputShape", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputValues(value: BackendValues): Self = StObject.set(x, "outputValues", value.asInstanceOf[js.Any])
+    inline def setOutputValues(value: BackendValues): Self = StObject.set(x, "outputValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputValuesVarargs(value: Uint8Array*): Self = StObject.set(x, "outputValues", js.Array(value :_*))
+    inline def setOutputValuesVarargs(value: Uint8Array*): Self = StObject.set(x, "outputValues", js.Array(value :_*))
   }
 }

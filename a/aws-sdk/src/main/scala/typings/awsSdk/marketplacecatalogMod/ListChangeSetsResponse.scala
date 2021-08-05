@@ -18,28 +18,21 @@ trait ListChangeSetsResponse extends StObject {
 }
 object ListChangeSetsResponse {
   
-  @scala.inline
-  def apply(): ListChangeSetsResponse = {
+  inline def apply(): ListChangeSetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListChangeSetsResponse]
   }
   
-  @scala.inline
-  implicit class ListChangeSetsResponseMutableBuilder[Self <: ListChangeSetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListChangeSetsResponse](x: Self) {
     
-    @scala.inline
-    def setChangeSetSummaryList(value: ChangeSetSummaryList): Self = StObject.set(x, "ChangeSetSummaryList", value.asInstanceOf[js.Any])
+    inline def setChangeSetSummaryList(value: ChangeSetSummaryList): Self = StObject.set(x, "ChangeSetSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSetSummaryListUndefined: Self = StObject.set(x, "ChangeSetSummaryList", js.undefined)
+    inline def setChangeSetSummaryListUndefined: Self = StObject.set(x, "ChangeSetSummaryList", js.undefined)
     
-    @scala.inline
-    def setChangeSetSummaryListVarargs(value: ChangeSetSummaryListItem*): Self = StObject.set(x, "ChangeSetSummaryList", js.Array(value :_*))
+    inline def setChangeSetSummaryListVarargs(value: ChangeSetSummaryListItem*): Self = StObject.set(x, "ChangeSetSummaryList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

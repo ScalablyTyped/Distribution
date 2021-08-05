@@ -13,16 +13,13 @@ trait RouteStatus extends StObject {
 }
 object RouteStatus {
   
-  @scala.inline
-  def apply(status: RouteStatusCode): RouteStatus = {
+  inline def apply(status: RouteStatusCode): RouteStatus = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteStatus]
   }
   
-  @scala.inline
-  implicit class RouteStatusMutableBuilder[Self <: RouteStatus] (val x: Self) extends AnyVal {
+  extension [Self <: RouteStatus](x: Self) {
     
-    @scala.inline
-    def setStatus(value: RouteStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: RouteStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -11,16 +11,13 @@ trait GeolocationError extends StObject {
 }
 object GeolocationError {
   
-  @scala.inline
-  def apply(error: Code): GeolocationError = {
+  inline def apply(error: Code): GeolocationError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocationError]
   }
   
-  @scala.inline
-  implicit class GeolocationErrorMutableBuilder[Self <: GeolocationError] (val x: Self) extends AnyVal {
+  extension [Self <: GeolocationError](x: Self) {
     
-    @scala.inline
-    def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

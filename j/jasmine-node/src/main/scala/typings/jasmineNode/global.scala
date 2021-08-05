@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  @scala.inline
-  def it(
+  inline def it(
     expectation: String,
     assertion: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
   ): Unit = (js.Dynamic.global.applyDynamic("it")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def it(
+  inline def it(
     expectation: String,
     assertion: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit],
     timeout: Double

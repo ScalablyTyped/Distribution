@@ -10,19 +10,15 @@ trait WKTOptions extends StObject {
 }
 object WKTOptions {
   
-  @scala.inline
-  def apply(): WKTOptions = {
+  inline def apply(): WKTOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WKTOptions]
   }
   
-  @scala.inline
-  implicit class WKTOptionsMutableBuilder[Self <: WKTOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WKTOptions](x: Self) {
     
-    @scala.inline
-    def setSplitCollection(value: Boolean): Self = StObject.set(x, "splitCollection", value.asInstanceOf[js.Any])
+    inline def setSplitCollection(value: Boolean): Self = StObject.set(x, "splitCollection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitCollectionUndefined: Self = StObject.set(x, "splitCollection", js.undefined)
+    inline def setSplitCollectionUndefined: Self = StObject.set(x, "splitCollection", js.undefined)
   }
 }

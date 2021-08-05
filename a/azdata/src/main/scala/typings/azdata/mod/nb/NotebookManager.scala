@@ -28,25 +28,19 @@ trait NotebookManager extends StObject {
 }
 object NotebookManager {
   
-  @scala.inline
-  def apply(contentManager: ContentManager, sessionManager: SessionManager): NotebookManager = {
+  inline def apply(contentManager: ContentManager, sessionManager: SessionManager): NotebookManager = {
     val __obj = js.Dynamic.literal(contentManager = contentManager.asInstanceOf[js.Any], sessionManager = sessionManager.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotebookManager]
   }
   
-  @scala.inline
-  implicit class NotebookManagerMutableBuilder[Self <: NotebookManager] (val x: Self) extends AnyVal {
+  extension [Self <: NotebookManager](x: Self) {
     
-    @scala.inline
-    def setContentManager(value: ContentManager): Self = StObject.set(x, "contentManager", value.asInstanceOf[js.Any])
+    inline def setContentManager(value: ContentManager): Self = StObject.set(x, "contentManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerManager(value: ServerManager): Self = StObject.set(x, "serverManager", value.asInstanceOf[js.Any])
+    inline def setServerManager(value: ServerManager): Self = StObject.set(x, "serverManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerManagerUndefined: Self = StObject.set(x, "serverManager", js.undefined)
+    inline def setServerManagerUndefined: Self = StObject.set(x, "serverManager", js.undefined)
     
-    @scala.inline
-    def setSessionManager(value: SessionManager): Self = StObject.set(x, "sessionManager", value.asInstanceOf[js.Any])
+    inline def setSessionManager(value: SessionManager): Self = StObject.set(x, "sessionManager", value.asInstanceOf[js.Any])
   }
 }

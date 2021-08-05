@@ -14,19 +14,15 @@ trait EncoderResult extends StObject {
 }
 object EncoderResult {
   
-  @scala.inline
-  def apply(error: Error, value: String | Buffer): EncoderResult = {
+  inline def apply(error: Error, value: String | Buffer): EncoderResult = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncoderResult]
   }
   
-  @scala.inline
-  implicit class EncoderResultMutableBuilder[Self <: EncoderResult] (val x: Self) extends AnyVal {
+  extension [Self <: EncoderResult](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String | Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

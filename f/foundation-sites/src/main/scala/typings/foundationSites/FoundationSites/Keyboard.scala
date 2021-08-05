@@ -14,8 +14,7 @@ trait Keyboard extends StObject {
 }
 object Keyboard {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     findFocusable: js.Object => js.Object,
     handleKey: (js.Any, js.Any, js.Any) => Unit,
     parseKey: js.Any => String
@@ -24,16 +23,12 @@ object Keyboard {
     __obj.asInstanceOf[Keyboard]
   }
   
-  @scala.inline
-  implicit class KeyboardMutableBuilder[Self <: Keyboard] (val x: Self) extends AnyVal {
+  extension [Self <: Keyboard](x: Self) {
     
-    @scala.inline
-    def setFindFocusable(value: js.Object => js.Object): Self = StObject.set(x, "findFocusable", js.Any.fromFunction1(value))
+    inline def setFindFocusable(value: js.Object => js.Object): Self = StObject.set(x, "findFocusable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandleKey(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "handleKey", js.Any.fromFunction3(value))
+    inline def setHandleKey(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "handleKey", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setParseKey(value: js.Any => String): Self = StObject.set(x, "parseKey", js.Any.fromFunction1(value))
+    inline def setParseKey(value: js.Any => String): Self = StObject.set(x, "parseKey", js.Any.fromFunction1(value))
   }
 }

@@ -20,8 +20,7 @@ trait IntrospectionField extends StObject {
 }
 object IntrospectionField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     args: js.Array[IntrospectionInputValue],
     isDeprecated: Boolean,
     name: String,
@@ -32,34 +31,24 @@ object IntrospectionField {
     __obj.asInstanceOf[IntrospectionField]
   }
   
-  @scala.inline
-  implicit class IntrospectionFieldMutableBuilder[Self <: IntrospectionField] (val x: Self) extends AnyVal {
+  extension [Self <: IntrospectionField](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[IntrospectionInputValue]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[IntrospectionInputValue]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: IntrospectionInputValue*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: IntrospectionInputValue*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setDeprecationReason(value: String): Self = StObject.set(x, "deprecationReason", value.asInstanceOf[js.Any])
+    inline def setDeprecationReason(value: String): Self = StObject.set(x, "deprecationReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecationReasonUndefined: Self = StObject.set(x, "deprecationReason", js.undefined)
+    inline def setDeprecationReasonUndefined: Self = StObject.set(x, "deprecationReason", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setIsDeprecated(value: Boolean): Self = StObject.set(x, "isDeprecated", value.asInstanceOf[js.Any])
+    inline def setIsDeprecated(value: Boolean): Self = StObject.set(x, "isDeprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: IntrospectionTypeRef): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IntrospectionTypeRef): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

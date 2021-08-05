@@ -23,28 +23,21 @@ trait Failurereason extends StObject {
 }
 object Failurereason {
   
-  @scala.inline
-  def apply(return_url: String, status: pending | succeeded | not_required | failed, url: String): Failurereason = {
+  inline def apply(return_url: String, status: pending | succeeded | not_required | failed, url: String): Failurereason = {
     val __obj = js.Dynamic.literal(return_url = return_url.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Failurereason]
   }
   
-  @scala.inline
-  implicit class FailurereasonMutableBuilder[Self <: Failurereason] (val x: Self) extends AnyVal {
+  extension [Self <: Failurereason](x: Self) {
     
-    @scala.inline
-    def setFailure_reason(value: user_abort | declined | processing_error): Self = StObject.set(x, "failure_reason", value.asInstanceOf[js.Any])
+    inline def setFailure_reason(value: user_abort | declined | processing_error): Self = StObject.set(x, "failure_reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailure_reasonUndefined: Self = StObject.set(x, "failure_reason", js.undefined)
+    inline def setFailure_reasonUndefined: Self = StObject.set(x, "failure_reason", js.undefined)
     
-    @scala.inline
-    def setReturn_url(value: String): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
+    inline def setReturn_url(value: String): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: pending | succeeded | not_required | failed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: pending | succeeded | not_required | failed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

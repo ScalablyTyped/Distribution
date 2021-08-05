@@ -12,16 +12,13 @@ trait AesKeyAlgorithm
 }
 object AesKeyAlgorithm {
   
-  @scala.inline
-  def apply(length: Double, name: java.lang.String): AesKeyAlgorithm = {
+  inline def apply(length: Double, name: java.lang.String): AesKeyAlgorithm = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AesKeyAlgorithm]
   }
   
-  @scala.inline
-  implicit class AesKeyAlgorithmMutableBuilder[Self <: AesKeyAlgorithm] (val x: Self) extends AnyVal {
+  extension [Self <: AesKeyAlgorithm](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

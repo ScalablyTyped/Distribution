@@ -12,19 +12,15 @@ trait WorkItem extends StObject {
 }
 object WorkItem {
   
-  @scala.inline
-  def apply(workItem: scala.Double, workItemLink: scala.Double): WorkItem = {
+  inline def apply(workItem: scala.Double, workItemLink: scala.Double): WorkItem = {
     val __obj = js.Dynamic.literal(workItem = workItem.asInstanceOf[js.Any], workItemLink = workItemLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItem]
   }
   
-  @scala.inline
-  implicit class WorkItemMutableBuilder[Self <: WorkItem] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItem](x: Self) {
     
-    @scala.inline
-    def setWorkItem(value: scala.Double): Self = StObject.set(x, "workItem", value.asInstanceOf[js.Any])
+    inline def setWorkItem(value: scala.Double): Self = StObject.set(x, "workItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemLink(value: scala.Double): Self = StObject.set(x, "workItemLink", value.asInstanceOf[js.Any])
+    inline def setWorkItemLink(value: scala.Double): Self = StObject.set(x, "workItemLink", value.asInstanceOf[js.Any])
   }
 }

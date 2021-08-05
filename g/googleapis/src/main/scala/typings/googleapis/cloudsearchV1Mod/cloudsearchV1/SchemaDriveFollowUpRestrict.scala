@@ -13,19 +13,15 @@ trait SchemaDriveFollowUpRestrict extends StObject {
 }
 object SchemaDriveFollowUpRestrict {
   
-  @scala.inline
-  def apply(): SchemaDriveFollowUpRestrict = {
+  inline def apply(): SchemaDriveFollowUpRestrict = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDriveFollowUpRestrict]
   }
   
-  @scala.inline
-  implicit class SchemaDriveFollowUpRestrictMutableBuilder[Self <: SchemaDriveFollowUpRestrict] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDriveFollowUpRestrict](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

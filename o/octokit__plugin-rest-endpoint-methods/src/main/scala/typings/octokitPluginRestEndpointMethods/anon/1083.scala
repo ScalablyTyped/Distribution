@@ -20,8 +20,7 @@ trait `1083` extends StObject {
 }
 object `1083` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[UsersGetPublicSshKeyForAuthenticatedEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[UsersGetPublicSshKeyForAuthenticatedResponseData]
   ): `1083` = {
@@ -29,15 +28,12 @@ object `1083` {
     __obj.asInstanceOf[`1083`]
   }
   
-  @scala.inline
-  implicit class `1083MutableBuilder`[Self <: `1083`] (val x: Self) extends AnyVal {
+  extension [Self <: `1083`](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: RequestParameters & (Omit[UsersGetPublicSshKeyForAuthenticatedEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[UsersGetPublicSshKeyForAuthenticatedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[UsersGetPublicSshKeyForAuthenticatedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

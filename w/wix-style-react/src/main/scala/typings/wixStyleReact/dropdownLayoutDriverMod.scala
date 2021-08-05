@@ -115,8 +115,7 @@ object dropdownLayoutDriverMod {
   }
   object DropdownLayoutOptionDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => Unit,
       content: () => String,
       element: () => HTMLElement,
@@ -132,38 +131,27 @@ object dropdownLayoutDriverMod {
       __obj.asInstanceOf[DropdownLayoutOptionDriver]
     }
     
-    @scala.inline
-    implicit class DropdownLayoutOptionDriverMutableBuilder[Self <: DropdownLayoutOptionDriver] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownLayoutOptionDriver](x: Self) {
       
-      @scala.inline
-      def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+      inline def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContent(value: () => String): Self = StObject.set(x, "content", js.Any.fromFunction0(value))
+      inline def setContent(value: () => String): Self = StObject.set(x, "content", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setElement(value: () => HTMLElement): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+      inline def setElement(value: () => HTMLElement): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDivider(value: () => Boolean): Self = StObject.set(x, "isDivider", js.Any.fromFunction0(value))
+      inline def setIsDivider(value: () => Boolean): Self = StObject.set(x, "isDivider", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsHovered(value: () => Boolean): Self = StObject.set(x, "isHovered", js.Any.fromFunction0(value))
+      inline def setIsHovered(value: () => Boolean): Self = StObject.set(x, "isHovered", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLink(value: () => Boolean): Self = StObject.set(x, "isLink", js.Any.fromFunction0(value))
+      inline def setIsLink(value: () => Boolean): Self = StObject.set(x, "isLink", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSelected(value: () => Boolean): Self = StObject.set(x, "isSelected", js.Any.fromFunction0(value))
+      inline def setIsSelected(value: () => Boolean): Self = StObject.set(x, "isSelected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMouseEnter(value: () => Unit): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
+      inline def setMouseEnter(value: () => Unit): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMouseLeave(value: () => Unit): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
+      inline def setMouseLeave(value: () => Unit): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
     }
   }
 }

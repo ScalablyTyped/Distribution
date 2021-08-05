@@ -48,35 +48,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathNull: Self = StObject.set(x, "basePath", null)
+      inline def setBasePathNull: Self = StObject.set(x, "basePath", null)
       
-      @scala.inline
-      def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+      inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      @scala.inline
-      def setForceDelete(value: Boolean): Self = StObject.set(x, "forceDelete", value.asInstanceOf[js.Any])
+      inline def setForceDelete(value: Boolean): Self = StObject.set(x, "forceDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDeleteUndefined: Self = StObject.set(x, "forceDelete", js.undefined)
+      inline def setForceDeleteUndefined: Self = StObject.set(x, "forceDelete", js.undefined)
       
-      @scala.inline
-      def setRemoveMaps(value: Boolean): Self = StObject.set(x, "removeMaps", value.asInstanceOf[js.Any])
+      inline def setRemoveMaps(value: Boolean): Self = StObject.set(x, "removeMaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveMapsUndefined: Self = StObject.set(x, "removeMaps", js.undefined)
+      inline def setRemoveMapsUndefined: Self = StObject.set(x, "removeMaps", js.undefined)
     }
   }
   

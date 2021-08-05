@@ -14,31 +14,23 @@ trait SpreadsheetToolbar extends StObject {
 }
 object SpreadsheetToolbar {
   
-  @scala.inline
-  def apply(): SpreadsheetToolbar = {
+  inline def apply(): SpreadsheetToolbar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpreadsheetToolbar]
   }
   
-  @scala.inline
-  implicit class SpreadsheetToolbarMutableBuilder[Self <: SpreadsheetToolbar] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadsheetToolbar](x: Self) {
     
-    @scala.inline
-    def setData(value: Boolean | js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Boolean | js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setHome(value: Boolean | js.Any): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
+    inline def setHome(value: Boolean | js.Any): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomeUndefined: Self = StObject.set(x, "home", js.undefined)
+    inline def setHomeUndefined: Self = StObject.set(x, "home", js.undefined)
     
-    @scala.inline
-    def setInsert(value: Boolean | js.Any): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+    inline def setInsert(value: Boolean | js.Any): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+    inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
   }
 }

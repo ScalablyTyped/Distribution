@@ -10,19 +10,15 @@ trait IncludeNewline extends StObject {
 }
 object IncludeNewline {
   
-  @scala.inline
-  def apply(): IncludeNewline = {
+  inline def apply(): IncludeNewline = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncludeNewline]
   }
   
-  @scala.inline
-  implicit class IncludeNewlineMutableBuilder[Self <: IncludeNewline] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeNewline](x: Self) {
     
-    @scala.inline
-    def setIncludeNewline(value: Boolean): Self = StObject.set(x, "includeNewline", value.asInstanceOf[js.Any])
+    inline def setIncludeNewline(value: Boolean): Self = StObject.set(x, "includeNewline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeNewlineUndefined: Self = StObject.set(x, "includeNewline", js.undefined)
+    inline def setIncludeNewlineUndefined: Self = StObject.set(x, "includeNewline", js.undefined)
   }
 }

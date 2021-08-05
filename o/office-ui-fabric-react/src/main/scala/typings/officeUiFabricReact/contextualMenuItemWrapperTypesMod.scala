@@ -197,8 +197,7 @@ object contextualMenuItemWrapperTypesMod {
   }
   object IContextualMenuItemWrapperProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       classNames: IMenuItemClassNames,
       focusableElementIndex: Double,
       index: Double,
@@ -209,150 +208,107 @@ object contextualMenuItemWrapperTypesMod {
       __obj.asInstanceOf[IContextualMenuItemWrapperProps]
     }
     
-    @scala.inline
-    implicit class IContextualMenuItemWrapperPropsMutableBuilder[Self <: IContextualMenuItemWrapperProps] (val x: Self) extends AnyVal {
+    extension [Self <: IContextualMenuItemWrapperProps](x: Self) {
       
-      @scala.inline
-      def setClassNames(value: IMenuItemClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      inline def setClassNames(value: IMenuItemClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[ContextualMenuItemWrapper]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[ContextualMenuItemWrapper]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ ContextualMenuItemWrapper | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ ContextualMenuItemWrapper | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setContextualMenuItemAs(
+      inline def setContextualMenuItemAs(
         value: (ComponentClass[IContextualMenuItemProps, ComponentState]) | FunctionComponent[IContextualMenuItemProps]
       ): Self = StObject.set(x, "contextualMenuItemAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextualMenuItemAsUndefined: Self = StObject.set(x, "contextualMenuItemAs", js.undefined)
+      inline def setContextualMenuItemAsUndefined: Self = StObject.set(x, "contextualMenuItemAs", js.undefined)
       
-      @scala.inline
-      def setDismissMenu(value: (/* ev */ js.UndefOr[js.Any], /* dismissAll */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "dismissMenu", js.Any.fromFunction2(value))
+      inline def setDismissMenu(value: (/* ev */ js.UndefOr[js.Any], /* dismissAll */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "dismissMenu", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDismissMenuUndefined: Self = StObject.set(x, "dismissMenu", js.undefined)
+      inline def setDismissMenuUndefined: Self = StObject.set(x, "dismissMenu", js.undefined)
       
-      @scala.inline
-      def setDismissSubMenu(value: () => Unit): Self = StObject.set(x, "dismissSubMenu", js.Any.fromFunction0(value))
+      inline def setDismissSubMenu(value: () => Unit): Self = StObject.set(x, "dismissSubMenu", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDismissSubMenuUndefined: Self = StObject.set(x, "dismissSubMenu", js.undefined)
+      inline def setDismissSubMenuUndefined: Self = StObject.set(x, "dismissSubMenu", js.undefined)
       
-      @scala.inline
-      def setExecuteItemClick(
+      inline def setExecuteItemClick(
         value: (/* item */ IContextualMenuItem, /* ev */ (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]) => Unit
       ): Self = StObject.set(x, "executeItemClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExecuteItemClickUndefined: Self = StObject.set(x, "executeItemClick", js.undefined)
+      inline def setExecuteItemClickUndefined: Self = StObject.set(x, "executeItemClick", js.undefined)
       
-      @scala.inline
-      def setExpandedMenuItemKey(value: String): Self = StObject.set(x, "expandedMenuItemKey", value.asInstanceOf[js.Any])
+      inline def setExpandedMenuItemKey(value: String): Self = StObject.set(x, "expandedMenuItemKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedMenuItemKeyUndefined: Self = StObject.set(x, "expandedMenuItemKey", js.undefined)
+      inline def setExpandedMenuItemKeyUndefined: Self = StObject.set(x, "expandedMenuItemKey", js.undefined)
       
-      @scala.inline
-      def setFocusableElementIndex(value: Double): Self = StObject.set(x, "focusableElementIndex", value.asInstanceOf[js.Any])
+      inline def setFocusableElementIndex(value: Double): Self = StObject.set(x, "focusableElementIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetSubMenuId(value: /* item */ IContextualMenuItem => js.UndefOr[String]): Self = StObject.set(x, "getSubMenuId", js.Any.fromFunction1(value))
+      inline def setGetSubMenuId(value: /* item */ IContextualMenuItem => js.UndefOr[String]): Self = StObject.set(x, "getSubMenuId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSubMenuIdUndefined: Self = StObject.set(x, "getSubMenuId", js.undefined)
+      inline def setGetSubMenuIdUndefined: Self = StObject.set(x, "getSubMenuId", js.undefined)
       
-      @scala.inline
-      def setHasCheckmarks(value: Boolean): Self = StObject.set(x, "hasCheckmarks", value.asInstanceOf[js.Any])
+      inline def setHasCheckmarks(value: Boolean): Self = StObject.set(x, "hasCheckmarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasCheckmarksUndefined: Self = StObject.set(x, "hasCheckmarks", js.undefined)
+      inline def setHasCheckmarksUndefined: Self = StObject.set(x, "hasCheckmarks", js.undefined)
       
-      @scala.inline
-      def setHasIcons(value: Boolean): Self = StObject.set(x, "hasIcons", value.asInstanceOf[js.Any])
+      inline def setHasIcons(value: Boolean): Self = StObject.set(x, "hasIcons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasIconsUndefined: Self = StObject.set(x, "hasIcons", js.undefined)
+      inline def setHasIconsUndefined: Self = StObject.set(x, "hasIcons", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: IContextualMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: IContextualMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnItemClick(
+      inline def setOnItemClick(
         value: (/* item */ IContextualMenuItem, /* ev */ (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]) => Unit
       ): Self = StObject.set(x, "onItemClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnItemClickBase(
+      inline def setOnItemClickBase(
         value: (/* item */ IContextualMenuItem, /* ev */ (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement], /* target */ HTMLElement) => Unit
       ): Self = StObject.set(x, "onItemClickBase", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnItemClickBaseUndefined: Self = StObject.set(x, "onItemClickBase", js.undefined)
+      inline def setOnItemClickBaseUndefined: Self = StObject.set(x, "onItemClickBase", js.undefined)
       
-      @scala.inline
-      def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
+      inline def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
       
-      @scala.inline
-      def setOnItemKeyDown(value: (/* item */ IContextualMenuItem, /* ev */ KeyboardEvent[HTMLElement]) => Unit): Self = StObject.set(x, "onItemKeyDown", js.Any.fromFunction2(value))
+      inline def setOnItemKeyDown(value: (/* item */ IContextualMenuItem, /* ev */ KeyboardEvent[HTMLElement]) => Unit): Self = StObject.set(x, "onItemKeyDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnItemKeyDownUndefined: Self = StObject.set(x, "onItemKeyDown", js.undefined)
+      inline def setOnItemKeyDownUndefined: Self = StObject.set(x, "onItemKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnItemMouseDown(
+      inline def setOnItemMouseDown(
         value: (/* item */ IContextualMenuItem, /* ev */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
       ): Self = StObject.set(x, "onItemMouseDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnItemMouseDownUndefined: Self = StObject.set(x, "onItemMouseDown", js.undefined)
+      inline def setOnItemMouseDownUndefined: Self = StObject.set(x, "onItemMouseDown", js.undefined)
       
-      @scala.inline
-      def setOnItemMouseEnter(
+      inline def setOnItemMouseEnter(
         value: (/* item */ IContextualMenuItem, /* ev */ MouseEvent[HTMLElement, NativeMouseEvent], /* target */ HTMLElement) => Boolean | Unit
       ): Self = StObject.set(x, "onItemMouseEnter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnItemMouseEnterUndefined: Self = StObject.set(x, "onItemMouseEnter", js.undefined)
+      inline def setOnItemMouseEnterUndefined: Self = StObject.set(x, "onItemMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnItemMouseLeave(
+      inline def setOnItemMouseLeave(
         value: (/* item */ IContextualMenuItem, /* ev */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
       ): Self = StObject.set(x, "onItemMouseLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnItemMouseLeaveUndefined: Self = StObject.set(x, "onItemMouseLeave", js.undefined)
+      inline def setOnItemMouseLeaveUndefined: Self = StObject.set(x, "onItemMouseLeave", js.undefined)
       
-      @scala.inline
-      def setOnItemMouseMove(
+      inline def setOnItemMouseMove(
         value: (/* item */ IContextualMenuItem, /* ev */ MouseEvent[HTMLElement, NativeMouseEvent], /* target */ HTMLElement) => Unit
       ): Self = StObject.set(x, "onItemMouseMove", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnItemMouseMoveUndefined: Self = StObject.set(x, "onItemMouseMove", js.undefined)
+      inline def setOnItemMouseMoveUndefined: Self = StObject.set(x, "onItemMouseMove", js.undefined)
       
-      @scala.inline
-      def setOnTap(value: /* ev */ TouchEvent[HTMLElement] | PointerEvent => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
+      inline def setOnTap(value: /* ev */ TouchEvent[HTMLElement] | PointerEvent => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
+      inline def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
       
-      @scala.inline
-      def setOpenSubMenu(value: (/* item */ js.Any, /* target */ HTMLElement) => Unit): Self = StObject.set(x, "openSubMenu", js.Any.fromFunction2(value))
+      inline def setOpenSubMenu(value: (/* item */ js.Any, /* target */ HTMLElement) => Unit): Self = StObject.set(x, "openSubMenu", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOpenSubMenuUndefined: Self = StObject.set(x, "openSubMenu", js.undefined)
+      inline def setOpenSubMenuUndefined: Self = StObject.set(x, "openSubMenu", js.undefined)
       
-      @scala.inline
-      def setTotalItemCount(value: Double): Self = StObject.set(x, "totalItemCount", value.asInstanceOf[js.Any])
+      inline def setTotalItemCount(value: Double): Self = StObject.set(x, "totalItemCount", value.asInstanceOf[js.Any])
     }
   }
 }

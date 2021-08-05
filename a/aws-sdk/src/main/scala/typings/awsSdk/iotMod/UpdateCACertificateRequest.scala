@@ -33,40 +33,29 @@ trait UpdateCACertificateRequest extends StObject {
 }
 object UpdateCACertificateRequest {
   
-  @scala.inline
-  def apply(certificateId: CertificateId): UpdateCACertificateRequest = {
+  inline def apply(certificateId: CertificateId): UpdateCACertificateRequest = {
     val __obj = js.Dynamic.literal(certificateId = certificateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCACertificateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateCACertificateRequestMutableBuilder[Self <: UpdateCACertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateCACertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewAutoRegistrationStatus(value: AutoRegistrationStatus): Self = StObject.set(x, "newAutoRegistrationStatus", value.asInstanceOf[js.Any])
+    inline def setNewAutoRegistrationStatus(value: AutoRegistrationStatus): Self = StObject.set(x, "newAutoRegistrationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewAutoRegistrationStatusUndefined: Self = StObject.set(x, "newAutoRegistrationStatus", js.undefined)
+    inline def setNewAutoRegistrationStatusUndefined: Self = StObject.set(x, "newAutoRegistrationStatus", js.undefined)
     
-    @scala.inline
-    def setNewStatus(value: CACertificateStatus): Self = StObject.set(x, "newStatus", value.asInstanceOf[js.Any])
+    inline def setNewStatus(value: CACertificateStatus): Self = StObject.set(x, "newStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewStatusUndefined: Self = StObject.set(x, "newStatus", js.undefined)
+    inline def setNewStatusUndefined: Self = StObject.set(x, "newStatus", js.undefined)
     
-    @scala.inline
-    def setRegistrationConfig(value: RegistrationConfig): Self = StObject.set(x, "registrationConfig", value.asInstanceOf[js.Any])
+    inline def setRegistrationConfig(value: RegistrationConfig): Self = StObject.set(x, "registrationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationConfigUndefined: Self = StObject.set(x, "registrationConfig", js.undefined)
+    inline def setRegistrationConfigUndefined: Self = StObject.set(x, "registrationConfig", js.undefined)
     
-    @scala.inline
-    def setRemoveAutoRegistration(value: RemoveAutoRegistration): Self = StObject.set(x, "removeAutoRegistration", value.asInstanceOf[js.Any])
+    inline def setRemoveAutoRegistration(value: RemoveAutoRegistration): Self = StObject.set(x, "removeAutoRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveAutoRegistrationUndefined: Self = StObject.set(x, "removeAutoRegistration", js.undefined)
+    inline def setRemoveAutoRegistrationUndefined: Self = StObject.set(x, "removeAutoRegistration", js.undefined)
   }
 }

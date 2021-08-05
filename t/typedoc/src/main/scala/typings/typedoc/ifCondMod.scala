@@ -10,6 +10,5 @@ object ifCondMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ifCond(v1: js.Any, operator: js.Any, v2: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ifCond")(v1.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def ifCond(v1: js.Any, operator: js.Any, v2: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("ifCond")(v1.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

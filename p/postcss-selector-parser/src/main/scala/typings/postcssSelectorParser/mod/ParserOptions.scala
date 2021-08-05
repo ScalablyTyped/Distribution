@@ -15,22 +15,17 @@ trait ParserOptions extends StObject {
 }
 object ParserOptions {
   
-  @scala.inline
-  def apply(css: String, error: (String, ErrorOptions) => Error, options: Options): ParserOptions = {
+  inline def apply(css: String, error: (String, ErrorOptions) => Error, options: Options): ParserOptions = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], error = js.Any.fromFunction2(error), options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptions]
   }
   
-  @scala.inline
-  implicit class ParserOptionsMutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ParserOptions](x: Self) {
     
-    @scala.inline
-    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: (String, ErrorOptions) => Error): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+    inline def setError(value: (String, ErrorOptions) => Error): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait OpsItemNotification extends StObject {
 }
 object OpsItemNotification {
   
-  @scala.inline
-  def apply(): OpsItemNotification = {
+  inline def apply(): OpsItemNotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpsItemNotification]
   }
   
-  @scala.inline
-  implicit class OpsItemNotificationMutableBuilder[Self <: OpsItemNotification] (val x: Self) extends AnyVal {
+  extension [Self <: OpsItemNotification](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
   }
 }

@@ -27,7 +27,7 @@ trait Control extends StObject {
   
   var Left: Double = js.native
   
-  @JSName("MSForms.Control_typekey")
+  /* private */ @JSName("MSForms.Control_typekey")
   var MSFormsDotControl_typekey: Control = js.native
   
   def Move(): Unit = js.native

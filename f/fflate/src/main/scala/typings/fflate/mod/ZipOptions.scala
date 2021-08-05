@@ -54,31 +54,23 @@ trait ZipOptions extends StObject {
 }
 object ZipOptions {
   
-  @scala.inline
-  def apply(): ZipOptions = {
+  inline def apply(): ZipOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZipOptions]
   }
   
-  @scala.inline
-  implicit class ZipOptionsMutableBuilder[Self <: ZipOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ZipOptions](x: Self) {
     
-    @scala.inline
-    def setLevel(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setMem(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12`): Self = StObject.set(x, "mem", value.asInstanceOf[js.Any])
+    inline def setMem(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12`): Self = StObject.set(x, "mem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemUndefined: Self = StObject.set(x, "mem", js.undefined)
+    inline def setMemUndefined: Self = StObject.set(x, "mem", js.undefined)
     
-    @scala.inline
-    def setMtime(value: Date | String | Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: Date | String | Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+    inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
   }
 }

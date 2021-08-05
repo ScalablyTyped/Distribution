@@ -18,8 +18,7 @@ trait DoStatement
 }
 object DoStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -48,19 +47,14 @@ object DoStatement {
     __obj.asInstanceOf[DoStatement]
   }
   
-  @scala.inline
-  implicit class DoStatementMutableBuilder[Self <: DoStatement] (val x: Self) extends AnyVal {
+  extension [Self <: DoStatement](x: Self) {
     
-    @scala.inline
-    def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatement(value: AST): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
+    inline def setStatement(value: AST): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (DoStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (DoStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWhileKeyword(value: ASTSpan): Self = StObject.set(x, "whileKeyword", value.asInstanceOf[js.Any])
+    inline def setWhileKeyword(value: ASTSpan): Self = StObject.set(x, "whileKeyword", value.asInstanceOf[js.Any])
   }
 }

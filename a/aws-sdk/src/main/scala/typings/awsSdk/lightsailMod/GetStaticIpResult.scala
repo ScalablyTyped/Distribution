@@ -13,19 +13,15 @@ trait GetStaticIpResult extends StObject {
 }
 object GetStaticIpResult {
   
-  @scala.inline
-  def apply(): GetStaticIpResult = {
+  inline def apply(): GetStaticIpResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetStaticIpResult]
   }
   
-  @scala.inline
-  implicit class GetStaticIpResultMutableBuilder[Self <: GetStaticIpResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetStaticIpResult](x: Self) {
     
-    @scala.inline
-    def setStaticIp(value: StaticIp): Self = StObject.set(x, "staticIp", value.asInstanceOf[js.Any])
+    inline def setStaticIp(value: StaticIp): Self = StObject.set(x, "staticIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticIpUndefined: Self = StObject.set(x, "staticIp", js.undefined)
+    inline def setStaticIpUndefined: Self = StObject.set(x, "staticIp", js.undefined)
   }
 }

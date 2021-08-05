@@ -29,52 +29,37 @@ trait BootstrapTableRef[T /* <: js.Object */] extends StObject {
 }
 object BootstrapTableRef {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](table: Props[T]): BootstrapTableRef[T] = {
+  inline def apply[T /* <: js.Object */](table: Props[T]): BootstrapTableRef[T] = {
     val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapTableRef[T]]
   }
   
-  @scala.inline
-  implicit class BootstrapTableRefMutableBuilder[Self <: BootstrapTableRef[?], T /* <: js.Object */] (val x: Self & BootstrapTableRef[T]) extends AnyVal {
+  extension [Self <: BootstrapTableRef[?], T /* <: js.Object */](x: Self & BootstrapTableRef[T]) {
     
-    @scala.inline
-    def setCellEditContext(value: StartEditing): Self = StObject.set(x, "cellEditContext", value.asInstanceOf[js.Any])
+    inline def setCellEditContext(value: StartEditing): Self = StObject.set(x, "cellEditContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellEditContextUndefined: Self = StObject.set(x, "cellEditContext", js.undefined)
+    inline def setCellEditContextUndefined: Self = StObject.set(x, "cellEditContext", js.undefined)
     
-    @scala.inline
-    def setFilterContext(value: CurrFilters): Self = StObject.set(x, "filterContext", value.asInstanceOf[js.Any])
+    inline def setFilterContext(value: CurrFilters): Self = StObject.set(x, "filterContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterContextUndefined: Self = StObject.set(x, "filterContext", js.undefined)
+    inline def setFilterContextUndefined: Self = StObject.set(x, "filterContext", js.undefined)
     
-    @scala.inline
-    def setPaginationContext(value: CurrPage): Self = StObject.set(x, "paginationContext", value.asInstanceOf[js.Any])
+    inline def setPaginationContext(value: CurrPage): Self = StObject.set(x, "paginationContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationContextUndefined: Self = StObject.set(x, "paginationContext", js.undefined)
+    inline def setPaginationContextUndefined: Self = StObject.set(x, "paginationContext", js.undefined)
     
-    @scala.inline
-    def setRowExpandContext(value: State): Self = StObject.set(x, "rowExpandContext", value.asInstanceOf[js.Any])
+    inline def setRowExpandContext(value: State): Self = StObject.set(x, "rowExpandContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowExpandContextUndefined: Self = StObject.set(x, "rowExpandContext", js.undefined)
+    inline def setRowExpandContextUndefined: Self = StObject.set(x, "rowExpandContext", js.undefined)
     
-    @scala.inline
-    def setSelectionContext(value: Selected): Self = StObject.set(x, "selectionContext", value.asInstanceOf[js.Any])
+    inline def setSelectionContext(value: Selected): Self = StObject.set(x, "selectionContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionContextUndefined: Self = StObject.set(x, "selectionContext", js.undefined)
+    inline def setSelectionContextUndefined: Self = StObject.set(x, "selectionContext", js.undefined)
     
-    @scala.inline
-    def setSortContext(value: StateSortColumn[T]): Self = StObject.set(x, "sortContext", value.asInstanceOf[js.Any])
+    inline def setSortContext(value: StateSortColumn[T]): Self = StObject.set(x, "sortContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortContextUndefined: Self = StObject.set(x, "sortContext", js.undefined)
+    inline def setSortContextUndefined: Self = StObject.set(x, "sortContext", js.undefined)
     
-    @scala.inline
-    def setTable(value: Props[T]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: Props[T]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
   }
 }

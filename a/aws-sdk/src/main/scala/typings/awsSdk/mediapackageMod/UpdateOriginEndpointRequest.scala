@@ -57,85 +57,59 @@ trait UpdateOriginEndpointRequest extends StObject {
 }
 object UpdateOriginEndpointRequest {
   
-  @scala.inline
-  def apply(Id: string): UpdateOriginEndpointRequest = {
+  inline def apply(Id: string): UpdateOriginEndpointRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateOriginEndpointRequest]
   }
   
-  @scala.inline
-  implicit class UpdateOriginEndpointRequestMutableBuilder[Self <: UpdateOriginEndpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateOriginEndpointRequest](x: Self) {
     
-    @scala.inline
-    def setAuthorization(value: Authorization): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
+    inline def setAuthorization(value: Authorization): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationUndefined: Self = StObject.set(x, "Authorization", js.undefined)
+    inline def setAuthorizationUndefined: Self = StObject.set(x, "Authorization", js.undefined)
     
-    @scala.inline
-    def setCmafPackage(value: CmafPackageCreateOrUpdateParameters): Self = StObject.set(x, "CmafPackage", value.asInstanceOf[js.Any])
+    inline def setCmafPackage(value: CmafPackageCreateOrUpdateParameters): Self = StObject.set(x, "CmafPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmafPackageUndefined: Self = StObject.set(x, "CmafPackage", js.undefined)
+    inline def setCmafPackageUndefined: Self = StObject.set(x, "CmafPackage", js.undefined)
     
-    @scala.inline
-    def setDashPackage(value: DashPackage): Self = StObject.set(x, "DashPackage", value.asInstanceOf[js.Any])
+    inline def setDashPackage(value: DashPackage): Self = StObject.set(x, "DashPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashPackageUndefined: Self = StObject.set(x, "DashPackage", js.undefined)
+    inline def setDashPackageUndefined: Self = StObject.set(x, "DashPackage", js.undefined)
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setHlsPackage(value: HlsPackage): Self = StObject.set(x, "HlsPackage", value.asInstanceOf[js.Any])
+    inline def setHlsPackage(value: HlsPackage): Self = StObject.set(x, "HlsPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlsPackageUndefined: Self = StObject.set(x, "HlsPackage", js.undefined)
+    inline def setHlsPackageUndefined: Self = StObject.set(x, "HlsPackage", js.undefined)
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestName(value: string): Self = StObject.set(x, "ManifestName", value.asInstanceOf[js.Any])
+    inline def setManifestName(value: string): Self = StObject.set(x, "ManifestName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestNameUndefined: Self = StObject.set(x, "ManifestName", js.undefined)
+    inline def setManifestNameUndefined: Self = StObject.set(x, "ManifestName", js.undefined)
     
-    @scala.inline
-    def setMssPackage(value: MssPackage): Self = StObject.set(x, "MssPackage", value.asInstanceOf[js.Any])
+    inline def setMssPackage(value: MssPackage): Self = StObject.set(x, "MssPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMssPackageUndefined: Self = StObject.set(x, "MssPackage", js.undefined)
+    inline def setMssPackageUndefined: Self = StObject.set(x, "MssPackage", js.undefined)
     
-    @scala.inline
-    def setOrigination(value: Origination): Self = StObject.set(x, "Origination", value.asInstanceOf[js.Any])
+    inline def setOrigination(value: Origination): Self = StObject.set(x, "Origination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginationUndefined: Self = StObject.set(x, "Origination", js.undefined)
+    inline def setOriginationUndefined: Self = StObject.set(x, "Origination", js.undefined)
     
-    @scala.inline
-    def setStartoverWindowSeconds(value: integer): Self = StObject.set(x, "StartoverWindowSeconds", value.asInstanceOf[js.Any])
+    inline def setStartoverWindowSeconds(value: integer): Self = StObject.set(x, "StartoverWindowSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartoverWindowSecondsUndefined: Self = StObject.set(x, "StartoverWindowSeconds", js.undefined)
+    inline def setStartoverWindowSecondsUndefined: Self = StObject.set(x, "StartoverWindowSeconds", js.undefined)
     
-    @scala.inline
-    def setTimeDelaySeconds(value: integer): Self = StObject.set(x, "TimeDelaySeconds", value.asInstanceOf[js.Any])
+    inline def setTimeDelaySeconds(value: integer): Self = StObject.set(x, "TimeDelaySeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeDelaySecondsUndefined: Self = StObject.set(x, "TimeDelaySeconds", js.undefined)
+    inline def setTimeDelaySecondsUndefined: Self = StObject.set(x, "TimeDelaySeconds", js.undefined)
     
-    @scala.inline
-    def setWhitelist(value: listOfString): Self = StObject.set(x, "Whitelist", value.asInstanceOf[js.Any])
+    inline def setWhitelist(value: listOfString): Self = StObject.set(x, "Whitelist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitelistUndefined: Self = StObject.set(x, "Whitelist", js.undefined)
+    inline def setWhitelistUndefined: Self = StObject.set(x, "Whitelist", js.undefined)
     
-    @scala.inline
-    def setWhitelistVarargs(value: string*): Self = StObject.set(x, "Whitelist", js.Array(value :_*))
+    inline def setWhitelistVarargs(value: string*): Self = StObject.set(x, "Whitelist", js.Array(value :_*))
   }
 }

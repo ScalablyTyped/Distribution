@@ -26,48 +26,38 @@ object sidebarStoriesMod {
     @JSImport("@storybook/ui/dist/components/sidebar/Sidebar.stories", "default.component")
     @js.native
     def component: FunctionComponent[SidebarProps] = js.native
-    @scala.inline
-    def component_=(x: FunctionComponent[SidebarProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
+    inline def component_=(x: FunctionComponent[SidebarProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/sidebar/Sidebar.stories", "default.decorators")
     @js.native
     def decorators: js.Array[js.Function1[/* storyFn */ js.Any, Element]] = js.native
-    @scala.inline
-    def decorators_=(x: js.Array[js.Function1[/* storyFn */ js.Any, Element]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
+    inline def decorators_=(x: js.Array[js.Function1[/* storyFn */ js.Any, Element]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/sidebar/Sidebar.stories", "default.excludeStories")
     @js.native
     def excludeStories: RegExp = js.native
-    @scala.inline
-    def excludeStories_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("excludeStories")(x.asInstanceOf[js.Any])
+    inline def excludeStories_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("excludeStories")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/sidebar/Sidebar.stories", "default.parameters")
     @js.native
     def parameters: Layout = js.native
-    @scala.inline
-    def parameters_=(x: Layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameters")(x.asInstanceOf[js.Any])
+    inline def parameters_=(x: Layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameters")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/sidebar/Sidebar.stories", "default.title")
     @js.native
     def title: String = js.native
-    @scala.inline
-    def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
+    inline def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def Empty(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Empty")().asInstanceOf[Element]
+  inline def Empty(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Empty")().asInstanceOf[Element]
   
-  @scala.inline
-  def Loading(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Loading")().asInstanceOf[Element]
+  inline def Loading(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Loading")().asInstanceOf[Element]
   
-  @scala.inline
-  def LoadingWithRefs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadingWithRefs")().asInstanceOf[Element]
+  inline def LoadingWithRefs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadingWithRefs")().asInstanceOf[Element]
   
-  @scala.inline
-  def Simple(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Simple")().asInstanceOf[Element]
+  inline def Simple(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Simple")().asInstanceOf[Element]
   
-  @scala.inline
-  def WithRefs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("WithRefs")().asInstanceOf[Element]
+  inline def WithRefs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("WithRefs")().asInstanceOf[Element]
   
   object loadingData {
     
@@ -78,8 +68,7 @@ object sidebarStoriesMod {
     @JSImport("@storybook/ui/dist/components/sidebar/Sidebar.stories", "loadingData.menu")
     @js.native
     def menu: js.Array[Id] = js.native
-    @scala.inline
-    def menu_=(x: js.Array[Id]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("menu")(x.asInstanceOf[js.Any])
+    inline def menu_=(x: js.Array[Id]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("menu")(x.asInstanceOf[js.Any])
   }
   
   object simpleData {
@@ -91,19 +80,16 @@ object sidebarStoriesMod {
     @JSImport("@storybook/ui/dist/components/sidebar/Sidebar.stories", "simpleData.menu")
     @js.native
     def menu: js.Array[Id] = js.native
-    @scala.inline
-    def menu_=(x: js.Array[Id]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("menu")(x.asInstanceOf[js.Any])
+    inline def menu_=(x: js.Array[Id]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("menu")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/sidebar/Sidebar.stories", "simpleData.stories")
     @js.native
     def stories: StoriesHash = js.native
-    @scala.inline
-    def stories_=(x: StoriesHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stories")(x.asInstanceOf[js.Any])
+    inline def stories_=(x: StoriesHash): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stories")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/sidebar/Sidebar.stories", "simpleData.storyId")
     @js.native
     def storyId: String = js.native
-    @scala.inline
-    def storyId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storyId")(x.asInstanceOf[js.Any])
+    inline def storyId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storyId")(x.asInstanceOf[js.Any])
   }
 }

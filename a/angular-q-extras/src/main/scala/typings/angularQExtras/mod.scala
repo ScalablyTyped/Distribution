@@ -181,11 +181,9 @@ object mod extends Shortcut {
     trait PromiseState extends StObject
     object PromiseState {
       
-      @scala.inline
-      def fulfilled: typings.angularQExtras.angularQExtrasStrings.fulfilled = "fulfilled".asInstanceOf[typings.angularQExtras.angularQExtrasStrings.fulfilled]
+      inline def fulfilled: typings.angularQExtras.angularQExtrasStrings.fulfilled = "fulfilled".asInstanceOf[typings.angularQExtras.angularQExtrasStrings.fulfilled]
       
-      @scala.inline
-      def rejected: typings.angularQExtras.angularQExtrasStrings.rejected = "rejected".asInstanceOf[typings.angularQExtras.angularQExtrasStrings.rejected]
+      inline def rejected: typings.angularQExtras.angularQExtrasStrings.rejected = "rejected".asInstanceOf[typings.angularQExtras.angularQExtrasStrings.rejected]
     }
     
     trait PromiseValue[T] extends StObject {
@@ -198,29 +196,22 @@ object mod extends Shortcut {
     }
     object PromiseValue {
       
-      @scala.inline
-      def apply[T](state: PromiseState): PromiseValue[T] = {
+      inline def apply[T](state: PromiseState): PromiseValue[T] = {
         val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
         __obj.asInstanceOf[PromiseValue[T]]
       }
       
-      @scala.inline
-      implicit class PromiseValueMutableBuilder[Self <: PromiseValue[?], T] (val x: Self & PromiseValue[T]) extends AnyVal {
+      extension [Self <: PromiseValue[?], T](x: Self & PromiseValue[T]) {
         
-        @scala.inline
-        def setReason(value: js.Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+        inline def setReason(value: js.Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+        inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
         
-        @scala.inline
-        def setState(value: PromiseState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+        inline def setState(value: PromiseState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
   }

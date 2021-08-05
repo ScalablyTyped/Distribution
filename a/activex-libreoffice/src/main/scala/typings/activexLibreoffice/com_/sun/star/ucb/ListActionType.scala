@@ -25,25 +25,18 @@ object ListActionType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CLEARED: `23` = 23.asInstanceOf[`23`]
+    inline def CLEARED: `23` = 23.asInstanceOf[`23`]
     
-    @scala.inline
-    def COMPLETED: `27` = 27.asInstanceOf[`27`]
+    inline def COMPLETED: `27` = 27.asInstanceOf[`27`]
     
-    @scala.inline
-    def INSERTED: `21` = 21.asInstanceOf[`21`]
+    inline def INSERTED: `21` = 21.asInstanceOf[`21`]
     
-    @scala.inline
-    def MOVED: `24` = 24.asInstanceOf[`24`]
+    inline def MOVED: `24` = 24.asInstanceOf[`24`]
     
-    @scala.inline
-    def PROPERTIES_CHANGED: `25` = 25.asInstanceOf[`25`]
+    inline def PROPERTIES_CHANGED: `25` = 25.asInstanceOf[`25`]
     
-    @scala.inline
-    def REMOVED: `22` = 22.asInstanceOf[`22`]
+    inline def REMOVED: `22` = 22.asInstanceOf[`22`]
     
-    @scala.inline
-    def WELCOME: `20` = 20.asInstanceOf[`20`]
+    inline def WELCOME: `20` = 20.asInstanceOf[`20`]
   }
 }

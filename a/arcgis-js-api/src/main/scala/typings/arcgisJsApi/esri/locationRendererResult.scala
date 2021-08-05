@@ -40,8 +40,7 @@ trait locationRendererResult
 }
 object locationRendererResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     basemapId: String,
     basemapTheme: String,
     constructor: js.Function,
@@ -54,19 +53,14 @@ object locationRendererResult {
     __obj.asInstanceOf[locationRendererResult]
   }
   
-  @scala.inline
-  implicit class locationRendererResultMutableBuilder[Self <: locationRendererResult] (val x: Self) extends AnyVal {
+  extension [Self <: locationRendererResult](x: Self) {
     
-    @scala.inline
-    def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
+    inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
+    inline def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationScheme(value: LocationScheme): Self = StObject.set(x, "locationScheme", value.asInstanceOf[js.Any])
+    inline def setLocationScheme(value: LocationScheme): Self = StObject.set(x, "locationScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderer(value: SimpleRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: SimpleRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
   }
 }

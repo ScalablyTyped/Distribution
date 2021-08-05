@@ -25,17 +25,14 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(onFile: (String, ReadableStream, String, String, String) => Unit): Options = {
+    inline def apply(onFile: (String, ReadableStream, String, String, String) => Unit): Options = {
       val __obj = js.Dynamic.literal(onFile = js.Any.fromFunction5(onFile))
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOnFile(value: (String, ReadableStream, String, String, String) => Unit): Self = StObject.set(x, "onFile", js.Any.fromFunction5(value))
+      inline def setOnFile(value: (String, ReadableStream, String, String, String) => Unit): Self = StObject.set(x, "onFile", js.Any.fromFunction5(value))
     }
   }
   

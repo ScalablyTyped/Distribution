@@ -68,85 +68,59 @@ trait ConfigRuleEvaluationStatus extends StObject {
 }
 object ConfigRuleEvaluationStatus {
   
-  @scala.inline
-  def apply(): ConfigRuleEvaluationStatus = {
+  inline def apply(): ConfigRuleEvaluationStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigRuleEvaluationStatus]
   }
   
-  @scala.inline
-  implicit class ConfigRuleEvaluationStatusMutableBuilder[Self <: ConfigRuleEvaluationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigRuleEvaluationStatus](x: Self) {
     
-    @scala.inline
-    def setConfigRuleArn(value: String): Self = StObject.set(x, "ConfigRuleArn", value.asInstanceOf[js.Any])
+    inline def setConfigRuleArn(value: String): Self = StObject.set(x, "ConfigRuleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRuleArnUndefined: Self = StObject.set(x, "ConfigRuleArn", js.undefined)
+    inline def setConfigRuleArnUndefined: Self = StObject.set(x, "ConfigRuleArn", js.undefined)
     
-    @scala.inline
-    def setConfigRuleId(value: String): Self = StObject.set(x, "ConfigRuleId", value.asInstanceOf[js.Any])
+    inline def setConfigRuleId(value: String): Self = StObject.set(x, "ConfigRuleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRuleIdUndefined: Self = StObject.set(x, "ConfigRuleId", js.undefined)
+    inline def setConfigRuleIdUndefined: Self = StObject.set(x, "ConfigRuleId", js.undefined)
     
-    @scala.inline
-    def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
+    inline def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRuleNameUndefined: Self = StObject.set(x, "ConfigRuleName", js.undefined)
+    inline def setConfigRuleNameUndefined: Self = StObject.set(x, "ConfigRuleName", js.undefined)
     
-    @scala.inline
-    def setFirstActivatedTime(value: Date): Self = StObject.set(x, "FirstActivatedTime", value.asInstanceOf[js.Any])
+    inline def setFirstActivatedTime(value: Date): Self = StObject.set(x, "FirstActivatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstActivatedTimeUndefined: Self = StObject.set(x, "FirstActivatedTime", js.undefined)
+    inline def setFirstActivatedTimeUndefined: Self = StObject.set(x, "FirstActivatedTime", js.undefined)
     
-    @scala.inline
-    def setFirstEvaluationStarted(value: Boolean): Self = StObject.set(x, "FirstEvaluationStarted", value.asInstanceOf[js.Any])
+    inline def setFirstEvaluationStarted(value: Boolean): Self = StObject.set(x, "FirstEvaluationStarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstEvaluationStartedUndefined: Self = StObject.set(x, "FirstEvaluationStarted", js.undefined)
+    inline def setFirstEvaluationStartedUndefined: Self = StObject.set(x, "FirstEvaluationStarted", js.undefined)
     
-    @scala.inline
-    def setLastDeactivatedTime(value: Date): Self = StObject.set(x, "LastDeactivatedTime", value.asInstanceOf[js.Any])
+    inline def setLastDeactivatedTime(value: Date): Self = StObject.set(x, "LastDeactivatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastDeactivatedTimeUndefined: Self = StObject.set(x, "LastDeactivatedTime", js.undefined)
+    inline def setLastDeactivatedTimeUndefined: Self = StObject.set(x, "LastDeactivatedTime", js.undefined)
     
-    @scala.inline
-    def setLastErrorCode(value: String): Self = StObject.set(x, "LastErrorCode", value.asInstanceOf[js.Any])
+    inline def setLastErrorCode(value: String): Self = StObject.set(x, "LastErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastErrorCodeUndefined: Self = StObject.set(x, "LastErrorCode", js.undefined)
+    inline def setLastErrorCodeUndefined: Self = StObject.set(x, "LastErrorCode", js.undefined)
     
-    @scala.inline
-    def setLastErrorMessage(value: String): Self = StObject.set(x, "LastErrorMessage", value.asInstanceOf[js.Any])
+    inline def setLastErrorMessage(value: String): Self = StObject.set(x, "LastErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastErrorMessageUndefined: Self = StObject.set(x, "LastErrorMessage", js.undefined)
+    inline def setLastErrorMessageUndefined: Self = StObject.set(x, "LastErrorMessage", js.undefined)
     
-    @scala.inline
-    def setLastFailedEvaluationTime(value: Date): Self = StObject.set(x, "LastFailedEvaluationTime", value.asInstanceOf[js.Any])
+    inline def setLastFailedEvaluationTime(value: Date): Self = StObject.set(x, "LastFailedEvaluationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastFailedEvaluationTimeUndefined: Self = StObject.set(x, "LastFailedEvaluationTime", js.undefined)
+    inline def setLastFailedEvaluationTimeUndefined: Self = StObject.set(x, "LastFailedEvaluationTime", js.undefined)
     
-    @scala.inline
-    def setLastFailedInvocationTime(value: Date): Self = StObject.set(x, "LastFailedInvocationTime", value.asInstanceOf[js.Any])
+    inline def setLastFailedInvocationTime(value: Date): Self = StObject.set(x, "LastFailedInvocationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastFailedInvocationTimeUndefined: Self = StObject.set(x, "LastFailedInvocationTime", js.undefined)
+    inline def setLastFailedInvocationTimeUndefined: Self = StObject.set(x, "LastFailedInvocationTime", js.undefined)
     
-    @scala.inline
-    def setLastSuccessfulEvaluationTime(value: Date): Self = StObject.set(x, "LastSuccessfulEvaluationTime", value.asInstanceOf[js.Any])
+    inline def setLastSuccessfulEvaluationTime(value: Date): Self = StObject.set(x, "LastSuccessfulEvaluationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSuccessfulEvaluationTimeUndefined: Self = StObject.set(x, "LastSuccessfulEvaluationTime", js.undefined)
+    inline def setLastSuccessfulEvaluationTimeUndefined: Self = StObject.set(x, "LastSuccessfulEvaluationTime", js.undefined)
     
-    @scala.inline
-    def setLastSuccessfulInvocationTime(value: Date): Self = StObject.set(x, "LastSuccessfulInvocationTime", value.asInstanceOf[js.Any])
+    inline def setLastSuccessfulInvocationTime(value: Date): Self = StObject.set(x, "LastSuccessfulInvocationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSuccessfulInvocationTimeUndefined: Self = StObject.set(x, "LastSuccessfulInvocationTime", js.undefined)
+    inline def setLastSuccessfulInvocationTimeUndefined: Self = StObject.set(x, "LastSuccessfulInvocationTime", js.undefined)
   }
 }

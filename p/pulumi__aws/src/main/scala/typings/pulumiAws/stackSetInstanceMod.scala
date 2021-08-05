@@ -71,21 +71,16 @@ object stackSetInstanceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): StackSetInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[StackSetInstance]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): StackSetInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StackSetInstance]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: StackSetInstanceState): StackSetInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[StackSetInstance]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: StackSetInstanceState, opts: CustomResourceOptions): StackSetInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StackSetInstance]
+    inline def get(name: String, id: Input[ID]): StackSetInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[StackSetInstance]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): StackSetInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StackSetInstance]
+    inline def get(name: String, id: Input[ID], state: StackSetInstanceState): StackSetInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[StackSetInstance]
+    inline def get(name: String, id: Input[ID], state: StackSetInstanceState, opts: CustomResourceOptions): StackSetInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StackSetInstance]
     
     /**
       * Returns true if the given object is an instance of StackSetInstance.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudformation/stackSetInstance.StackSetInstance */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudformation/stackSetInstance.StackSetInstance */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudformation/stackSetInstance.StackSetInstance */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudformation/stackSetInstance.StackSetInstance */ Boolean]
   }
   
   trait StackSetInstanceArgs extends StObject {
@@ -117,41 +112,30 @@ object stackSetInstanceMod {
   }
   object StackSetInstanceArgs {
     
-    @scala.inline
-    def apply(stackSetName: Input[String]): StackSetInstanceArgs = {
+    inline def apply(stackSetName: Input[String]): StackSetInstanceArgs = {
       val __obj = js.Dynamic.literal(stackSetName = stackSetName.asInstanceOf[js.Any])
       __obj.asInstanceOf[StackSetInstanceArgs]
     }
     
-    @scala.inline
-    implicit class StackSetInstanceArgsMutableBuilder[Self <: StackSetInstanceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: StackSetInstanceArgs](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+      inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
       
-      @scala.inline
-      def setParameterOverrides(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameterOverrides", value.asInstanceOf[js.Any])
+      inline def setParameterOverrides(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameterOverrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameterOverridesUndefined: Self = StObject.set(x, "parameterOverrides", js.undefined)
+      inline def setParameterOverridesUndefined: Self = StObject.set(x, "parameterOverrides", js.undefined)
       
-      @scala.inline
-      def setRegion(value: Input[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: Input[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setRetainStack(value: Input[Boolean]): Self = StObject.set(x, "retainStack", value.asInstanceOf[js.Any])
+      inline def setRetainStack(value: Input[Boolean]): Self = StObject.set(x, "retainStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetainStackUndefined: Self = StObject.set(x, "retainStack", js.undefined)
+      inline def setRetainStackUndefined: Self = StObject.set(x, "retainStack", js.undefined)
       
-      @scala.inline
-      def setStackSetName(value: Input[String]): Self = StObject.set(x, "stackSetName", value.asInstanceOf[js.Any])
+      inline def setStackSetName(value: Input[String]): Self = StObject.set(x, "stackSetName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -189,50 +173,36 @@ object stackSetInstanceMod {
   }
   object StackSetInstanceState {
     
-    @scala.inline
-    def apply(): StackSetInstanceState = {
+    inline def apply(): StackSetInstanceState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StackSetInstanceState]
     }
     
-    @scala.inline
-    implicit class StackSetInstanceStateMutableBuilder[Self <: StackSetInstanceState] (val x: Self) extends AnyVal {
+    extension [Self <: StackSetInstanceState](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+      inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
       
-      @scala.inline
-      def setParameterOverrides(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameterOverrides", value.asInstanceOf[js.Any])
+      inline def setParameterOverrides(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameterOverrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameterOverridesUndefined: Self = StObject.set(x, "parameterOverrides", js.undefined)
+      inline def setParameterOverridesUndefined: Self = StObject.set(x, "parameterOverrides", js.undefined)
       
-      @scala.inline
-      def setRegion(value: Input[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: Input[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setRetainStack(value: Input[Boolean]): Self = StObject.set(x, "retainStack", value.asInstanceOf[js.Any])
+      inline def setRetainStack(value: Input[Boolean]): Self = StObject.set(x, "retainStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetainStackUndefined: Self = StObject.set(x, "retainStack", js.undefined)
+      inline def setRetainStackUndefined: Self = StObject.set(x, "retainStack", js.undefined)
       
-      @scala.inline
-      def setStackId(value: Input[String]): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
+      inline def setStackId(value: Input[String]): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
+      inline def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
       
-      @scala.inline
-      def setStackSetName(value: Input[String]): Self = StObject.set(x, "stackSetName", value.asInstanceOf[js.Any])
+      inline def setStackSetName(value: Input[String]): Self = StObject.set(x, "stackSetName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackSetNameUndefined: Self = StObject.set(x, "stackSetName", js.undefined)
+      inline def setStackSetNameUndefined: Self = StObject.set(x, "stackSetName", js.undefined)
     }
   }
 }

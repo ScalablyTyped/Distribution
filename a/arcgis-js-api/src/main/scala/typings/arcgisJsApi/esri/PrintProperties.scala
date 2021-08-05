@@ -59,61 +59,43 @@ trait PrintProperties
 }
 object PrintProperties {
   
-  @scala.inline
-  def apply(): PrintProperties = {
+  inline def apply(): PrintProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrintProperties]
   }
   
-  @scala.inline
-  implicit class PrintPropertiesMutableBuilder[Self <: PrintProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PrintProperties](x: Self) {
     
-    @scala.inline
-    def setAllowedFormats(value: String | js.Array[String]): Self = StObject.set(x, "allowedFormats", value.asInstanceOf[js.Any])
+    inline def setAllowedFormats(value: String | js.Array[String]): Self = StObject.set(x, "allowedFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedFormatsUndefined: Self = StObject.set(x, "allowedFormats", js.undefined)
+    inline def setAllowedFormatsUndefined: Self = StObject.set(x, "allowedFormats", js.undefined)
     
-    @scala.inline
-    def setAllowedFormatsVarargs(value: String*): Self = StObject.set(x, "allowedFormats", js.Array(value :_*))
+    inline def setAllowedFormatsVarargs(value: String*): Self = StObject.set(x, "allowedFormats", js.Array(value :_*))
     
-    @scala.inline
-    def setAllowedLayouts(value: String | js.Array[String]): Self = StObject.set(x, "allowedLayouts", value.asInstanceOf[js.Any])
+    inline def setAllowedLayouts(value: String | js.Array[String]): Self = StObject.set(x, "allowedLayouts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedLayoutsUndefined: Self = StObject.set(x, "allowedLayouts", js.undefined)
+    inline def setAllowedLayoutsUndefined: Self = StObject.set(x, "allowedLayouts", js.undefined)
     
-    @scala.inline
-    def setAllowedLayoutsVarargs(value: String*): Self = StObject.set(x, "allowedLayouts", js.Array(value :_*))
+    inline def setAllowedLayoutsVarargs(value: String*): Self = StObject.set(x, "allowedLayouts", js.Array(value :_*))
     
-    @scala.inline
-    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
-    @scala.inline
-    def setPrintServiceUrl(value: String): Self = StObject.set(x, "printServiceUrl", value.asInstanceOf[js.Any])
+    inline def setPrintServiceUrl(value: String): Self = StObject.set(x, "printServiceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintServiceUrlUndefined: Self = StObject.set(x, "printServiceUrl", js.undefined)
+    inline def setPrintServiceUrlUndefined: Self = StObject.set(x, "printServiceUrl", js.undefined)
     
-    @scala.inline
-    def setTemplateOptions(value: TemplateOptionsProperties): Self = StObject.set(x, "templateOptions", value.asInstanceOf[js.Any])
+    inline def setTemplateOptions(value: TemplateOptionsProperties): Self = StObject.set(x, "templateOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateOptionsUndefined: Self = StObject.set(x, "templateOptions", js.undefined)
+    inline def setTemplateOptionsUndefined: Self = StObject.set(x, "templateOptions", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModel(value: PrintViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: PrintViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

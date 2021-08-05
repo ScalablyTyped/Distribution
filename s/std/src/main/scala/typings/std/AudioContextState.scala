@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AudioContextState extends StObject
 object AudioContextState {
   
-  @scala.inline
-  def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
+  inline def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
   
-  @scala.inline
-  def running: typings.std.stdStrings.running = "running".asInstanceOf[typings.std.stdStrings.running]
+  inline def running: typings.std.stdStrings.running = "running".asInstanceOf[typings.std.stdStrings.running]
   
-  @scala.inline
-  def suspended: typings.std.stdStrings.suspended = "suspended".asInstanceOf[typings.std.stdStrings.suspended]
+  inline def suspended: typings.std.stdStrings.suspended = "suspended".asInstanceOf[typings.std.stdStrings.suspended]
 }

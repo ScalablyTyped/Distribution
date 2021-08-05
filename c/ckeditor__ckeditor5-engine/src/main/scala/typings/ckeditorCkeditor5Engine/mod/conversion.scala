@@ -119,37 +119,27 @@ object conversion {
   class ViewConsumable () extends StObject
   
   // engine/conversion/downcast-selection-converters
-  @scala.inline
-  def clearAttributes(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAttributes")().asInstanceOf[js.Function]
+  inline def clearAttributes(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAttributes")().asInstanceOf[js.Function]
   
-  @scala.inline
-  def convertCollapsedSelection(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("convertCollapsedSelection")().asInstanceOf[js.Function]
+  inline def convertCollapsedSelection(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("convertCollapsedSelection")().asInstanceOf[js.Function]
   
-  @scala.inline
-  def convertRangeSelection(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("convertRangeSelection")().asInstanceOf[js.Function]
+  inline def convertRangeSelection(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("convertRangeSelection")().asInstanceOf[js.Function]
   
   // engine/conversion/upcast-selection-converters
-  @scala.inline
-  def convertSelectionChange(model: typings.ckeditorCkeditor5Engine.mod.model.Model, mapper: Mapper): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("convertSelectionChange")(model.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def convertSelectionChange(model: typings.ckeditorCkeditor5Engine.mod.model.Model, mapper: Mapper): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("convertSelectionChange")(model.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
   // engine/conversion/upcast-converters
-  @scala.inline
-  def convertText(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("convertText")().asInstanceOf[js.Function]
+  inline def convertText(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("convertText")().asInstanceOf[js.Function]
   
-  @scala.inline
-  def convertToModelFragment(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToModelFragment")().asInstanceOf[js.Function]
+  inline def convertToModelFragment(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToModelFragment")().asInstanceOf[js.Function]
   
-  @scala.inline
-  def upcastAttributeToAttribute(config: ConverterPriority): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("upcastAttributeToAttribute")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def upcastAttributeToAttribute(config: ConverterPriority): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("upcastAttributeToAttribute")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @scala.inline
-  def upcastElementToAttribute(config: View): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("upcastElementToAttribute")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def upcastElementToAttribute(config: View): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("upcastElementToAttribute")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @scala.inline
-  def upcastElementToElement(config: ConverterPriorityModel): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("upcastElementToElement")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def upcastElementToElement(config: ConverterPriorityModel): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("upcastElementToElement")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @scala.inline
-  def upcastElementToMarker(config: ModelView): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("upcastElementToMarker")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def upcastElementToMarker(config: ModelView): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("upcastElementToMarker")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
   trait ConverterDefinition extends StObject {
     
@@ -163,8 +153,7 @@ object conversion {
   }
   object ConverterDefinition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       converterPriority: PriorityString,
       model: js.Any,
       upcastAlso: MatcherPattern | js.Array[MatcherPattern],
@@ -174,26 +163,19 @@ object conversion {
       __obj.asInstanceOf[ConverterDefinition]
     }
     
-    @scala.inline
-    implicit class ConverterDefinitionMutableBuilder[Self <: ConverterDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: ConverterDefinition](x: Self) {
       
-      @scala.inline
-      def setConverterPriority(value: PriorityString): Self = StObject.set(x, "converterPriority", value.asInstanceOf[js.Any])
+      inline def setConverterPriority(value: PriorityString): Self = StObject.set(x, "converterPriority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpcastAlso(value: MatcherPattern | js.Array[MatcherPattern]): Self = StObject.set(x, "upcastAlso", value.asInstanceOf[js.Any])
+      inline def setUpcastAlso(value: MatcherPattern | js.Array[MatcherPattern]): Self = StObject.set(x, "upcastAlso", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpcastAlsoFunction1(value: /* element */ Element => Null | Attribute): Self = StObject.set(x, "upcastAlso", js.Any.fromFunction1(value))
+      inline def setUpcastAlsoFunction1(value: /* element */ Element => Null | Attribute): Self = StObject.set(x, "upcastAlso", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpcastAlsoVarargs(value: MatcherPattern*): Self = StObject.set(x, "upcastAlso", js.Array(value :_*))
+      inline def setUpcastAlsoVarargs(value: MatcherPattern*): Self = StObject.set(x, "upcastAlso", js.Array(value :_*))
       
-      @scala.inline
-      def setView(value: ElementDefinition | js.Object): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: ElementDefinition | js.Object): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }
   }
   
@@ -210,29 +192,22 @@ object conversion {
   }
   object HighlightDescriptor {
     
-    @scala.inline
-    def apply(attributes: js.Object, classes: String | js.Array[String], id: String, priority: Double): HighlightDescriptor = {
+    inline def apply(attributes: js.Object, classes: String | js.Array[String], id: String, priority: Double): HighlightDescriptor = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
       __obj.asInstanceOf[HighlightDescriptor]
     }
     
-    @scala.inline
-    implicit class HighlightDescriptorMutableBuilder[Self <: HighlightDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: HighlightDescriptor](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClasses(value: String | js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: String | js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
+      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     }
   }
   

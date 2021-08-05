@@ -43,52 +43,37 @@ trait GetDocumentationPartsRequest extends StObject {
 }
 object GetDocumentationPartsRequest {
   
-  @scala.inline
-  def apply(restApiId: String): GetDocumentationPartsRequest = {
+  inline def apply(restApiId: String): GetDocumentationPartsRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDocumentationPartsRequest]
   }
   
-  @scala.inline
-  implicit class GetDocumentationPartsRequestMutableBuilder[Self <: GetDocumentationPartsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDocumentationPartsRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setLocationStatus(value: LocationStatusType): Self = StObject.set(x, "locationStatus", value.asInstanceOf[js.Any])
+    inline def setLocationStatus(value: LocationStatusType): Self = StObject.set(x, "locationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationStatusUndefined: Self = StObject.set(x, "locationStatus", js.undefined)
+    inline def setLocationStatusUndefined: Self = StObject.set(x, "locationStatus", js.undefined)
     
-    @scala.inline
-    def setNameQuery(value: String): Self = StObject.set(x, "nameQuery", value.asInstanceOf[js.Any])
+    inline def setNameQuery(value: String): Self = StObject.set(x, "nameQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameQueryUndefined: Self = StObject.set(x, "nameQuery", js.undefined)
+    inline def setNameQueryUndefined: Self = StObject.set(x, "nameQuery", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DocumentationPartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DocumentationPartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

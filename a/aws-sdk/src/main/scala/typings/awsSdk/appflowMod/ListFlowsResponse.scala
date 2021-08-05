@@ -18,28 +18,21 @@ trait ListFlowsResponse extends StObject {
 }
 object ListFlowsResponse {
   
-  @scala.inline
-  def apply(): ListFlowsResponse = {
+  inline def apply(): ListFlowsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFlowsResponse]
   }
   
-  @scala.inline
-  implicit class ListFlowsResponseMutableBuilder[Self <: ListFlowsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListFlowsResponse](x: Self) {
     
-    @scala.inline
-    def setFlows(value: FlowList): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
+    inline def setFlows(value: FlowList): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowsUndefined: Self = StObject.set(x, "flows", js.undefined)
+    inline def setFlowsUndefined: Self = StObject.set(x, "flows", js.undefined)
     
-    @scala.inline
-    def setFlowsVarargs(value: FlowDefinition*): Self = StObject.set(x, "flows", js.Array(value :_*))
+    inline def setFlowsVarargs(value: FlowDefinition*): Self = StObject.set(x, "flows", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -37,8 +37,7 @@ trait IExportContentJob extends StObject {
 }
 object IExportContentJob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IExportContentJob,
     ExportContent: Boolean,
     ExportStructureItems: Boolean,
@@ -58,49 +57,34 @@ object IExportContentJob {
     __obj.asInstanceOf[IExportContentJob]
   }
   
-  @scala.inline
-  implicit class IExportContentJobMutableBuilder[Self <: IExportContentJob] (val x: Self) extends AnyVal {
+  extension [Self <: IExportContentJob](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IExportContentJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IExportContentJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExportContent(value: Boolean): Self = StObject.set(x, "ExportContent", value.asInstanceOf[js.Any])
+    inline def setExportContent(value: Boolean): Self = StObject.set(x, "ExportContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportStructureItems(value: Boolean): Self = StObject.set(x, "ExportStructureItems", value.asInstanceOf[js.Any])
+    inline def setExportStructureItems(value: Boolean): Self = StObject.set(x, "ExportStructureItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: MFExportContentFlag): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: MFExportContentFlag): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreChangesBefore(value: ITimestamp): Self = StObject.set(x, "IgnoreChangesBefore", value.asInstanceOf[js.Any])
+    inline def setIgnoreChangesBefore(value: ITimestamp): Self = StObject.set(x, "IgnoreChangesBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpersonation(value: IImpersonation): Self = StObject.set(x, "Impersonation", value.asInstanceOf[js.Any])
+    inline def setImpersonation(value: IImpersonation): Self = StObject.set(x, "Impersonation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludePrivateUISettingsWithStructure(value: Boolean): Self = StObject.set(x, "IncludePrivateUISettingsWithStructure", value.asInstanceOf[js.Any])
+    inline def setIncludePrivateUISettingsWithStructure(value: Boolean): Self = StObject.set(x, "IncludePrivateUISettingsWithStructure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeValueListItemsWithStructure(value: Boolean): Self = StObject.set(x, "IncludeValueListItemsWithStructure", value.asInstanceOf[js.Any])
+    inline def setIncludeValueListItemsWithStructure(value: Boolean): Self = StObject.set(x, "IncludeValueListItemsWithStructure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchConditions(value: ISearchConditions): Self = StObject.set(x, "SearchConditions", value.asInstanceOf[js.Any])
+    inline def setSearchConditions(value: ISearchConditions): Self = StObject.set(x, "SearchConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetExportAllStructureItems(value: Boolean => Unit): Self = StObject.set(x, "SetExportAllStructureItems", js.Any.fromFunction1(value))
+    inline def setSetExportAllStructureItems(value: Boolean => Unit): Self = StObject.set(x, "SetExportAllStructureItems", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStructureItems(value: IExportStructureItems): Self = StObject.set(x, "StructureItems", value.asInstanceOf[js.Any])
+    inline def setStructureItems(value: IExportStructureItems): Self = StObject.set(x, "StructureItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetLocation(value: String): Self = StObject.set(x, "TargetLocation", value.asInstanceOf[js.Any])
+    inline def setTargetLocation(value: String): Self = StObject.set(x, "TargetLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseIgnoreChangesBefore(value: Boolean): Self = StObject.set(x, "UseIgnoreChangesBefore", value.asInstanceOf[js.Any])
+    inline def setUseIgnoreChangesBefore(value: Boolean): Self = StObject.set(x, "UseIgnoreChangesBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSearchConditions(value: Boolean): Self = StObject.set(x, "UseSearchConditions", value.asInstanceOf[js.Any])
+    inline def setUseSearchConditions(value: Boolean): Self = StObject.set(x, "UseSearchConditions", value.asInstanceOf[js.Any])
   }
 }

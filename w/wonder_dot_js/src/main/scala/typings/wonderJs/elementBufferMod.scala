@@ -34,13 +34,9 @@ object elementBufferMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(data: js.Array[Double]): ElementBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[ElementBuffer]
-    @scala.inline
-    def create(data: js.Array[Double], `type`: Unit, usage: EBufferUsage): ElementBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[ElementBuffer]
-    @scala.inline
-    def create(data: js.Array[Double], `type`: EBufferType): ElementBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ElementBuffer]
-    @scala.inline
-    def create(data: js.Array[Double], `type`: EBufferType, usage: EBufferUsage): ElementBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[ElementBuffer]
+    inline def create(data: js.Array[Double]): ElementBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[ElementBuffer]
+    inline def create(data: js.Array[Double], `type`: Unit, usage: EBufferUsage): ElementBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[ElementBuffer]
+    inline def create(data: js.Array[Double], `type`: EBufferType): ElementBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ElementBuffer]
+    inline def create(data: js.Array[Double], `type`: EBufferType, usage: EBufferUsage): ElementBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[ElementBuffer]
   }
 }

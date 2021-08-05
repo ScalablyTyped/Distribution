@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IndentationNodeContext extends StObject {
   
-  var _childIndentationAmountDelta: js.Any
+  /* private */ var _childIndentationAmountDelta: js.Any
   
-  var _depth: js.Any
+  /* private */ var _depth: js.Any
   
-  var _fullStart: js.Any
+  /* private */ var _fullStart: js.Any
   
-  var _hasSkippedOrMissingTokenChild: js.Any
+  /* private */ var _hasSkippedOrMissingTokenChild: js.Any
   
-  var _indentationAmount: js.Any
+  /* private */ var _indentationAmount: js.Any
   
-  var _node: js.Any
+  /* private */ var _node: js.Any
   
-  var _parent: js.Any
+  /* private */ var _parent: js.Any
   
   def childIndentationAmountDelta(): Double
   
@@ -56,8 +56,7 @@ trait IndentationNodeContext extends StObject {
 }
 object IndentationNodeContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _childIndentationAmountDelta: js.Any,
     _depth: js.Any,
     _fullStart: js.Any,
@@ -84,67 +83,46 @@ object IndentationNodeContext {
     __obj.asInstanceOf[IndentationNodeContext]
   }
   
-  @scala.inline
-  implicit class IndentationNodeContextMutableBuilder[Self <: IndentationNodeContext] (val x: Self) extends AnyVal {
+  extension [Self <: IndentationNodeContext](x: Self) {
     
-    @scala.inline
-    def setChildIndentationAmountDelta(value: () => Double): Self = StObject.set(x, "childIndentationAmountDelta", js.Any.fromFunction0(value))
+    inline def setChildIndentationAmountDelta(value: () => Double): Self = StObject.set(x, "childIndentationAmountDelta", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClone_(value: IndentationNodeContextPool => IndentationNodeContext): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
+    inline def setClone_(value: IndentationNodeContextPool => IndentationNodeContext): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDepth(value: () => Double): Self = StObject.set(x, "depth", js.Any.fromFunction0(value))
+    inline def setDepth(value: () => Double): Self = StObject.set(x, "depth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+    inline def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFullStart(value: () => Double): Self = StObject.set(x, "fullStart", js.Any.fromFunction0(value))
+    inline def setFullStart(value: () => Double): Self = StObject.set(x, "fullStart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFullWidth(value: () => Double): Self = StObject.set(x, "fullWidth", js.Any.fromFunction0(value))
+    inline def setFullWidth(value: () => Double): Self = StObject.set(x, "fullWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasSkippedOrMissingTokenChild(value: () => Boolean): Self = StObject.set(x, "hasSkippedOrMissingTokenChild", js.Any.fromFunction0(value))
+    inline def setHasSkippedOrMissingTokenChild(value: () => Boolean): Self = StObject.set(x, "hasSkippedOrMissingTokenChild", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndentationAmount(value: () => Double): Self = StObject.set(x, "indentationAmount", js.Any.fromFunction0(value))
+    inline def setIndentationAmount(value: () => Double): Self = StObject.set(x, "indentationAmount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKind(value: () => SyntaxKind): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
+    inline def setKind(value: () => SyntaxKind): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNode(value: () => SyntaxNode): Self = StObject.set(x, "node", js.Any.fromFunction0(value))
+    inline def setNode(value: () => SyntaxNode): Self = StObject.set(x, "node", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: () => IndentationNodeContext): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
+    inline def setParent(value: () => IndentationNodeContext): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdate(value: (IndentationNodeContext, SyntaxNode, Double, Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction5(value))
+    inline def setUpdate(value: (IndentationNodeContext, SyntaxNode, Double, Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def set_childIndentationAmountDelta(value: js.Any): Self = StObject.set(x, "_childIndentationAmountDelta", value.asInstanceOf[js.Any])
+    inline def set_childIndentationAmountDelta(value: js.Any): Self = StObject.set(x, "_childIndentationAmountDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_depth(value: js.Any): Self = StObject.set(x, "_depth", value.asInstanceOf[js.Any])
+    inline def set_depth(value: js.Any): Self = StObject.set(x, "_depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_fullStart(value: js.Any): Self = StObject.set(x, "_fullStart", value.asInstanceOf[js.Any])
+    inline def set_fullStart(value: js.Any): Self = StObject.set(x, "_fullStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_hasSkippedOrMissingTokenChild(value: js.Any): Self = StObject.set(x, "_hasSkippedOrMissingTokenChild", value.asInstanceOf[js.Any])
+    inline def set_hasSkippedOrMissingTokenChild(value: js.Any): Self = StObject.set(x, "_hasSkippedOrMissingTokenChild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_indentationAmount(value: js.Any): Self = StObject.set(x, "_indentationAmount", value.asInstanceOf[js.Any])
+    inline def set_indentationAmount(value: js.Any): Self = StObject.set(x, "_indentationAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_node(value: js.Any): Self = StObject.set(x, "_node", value.asInstanceOf[js.Any])
+    inline def set_node(value: js.Any): Self = StObject.set(x, "_node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_parent(value: js.Any): Self = StObject.set(x, "_parent", value.asInstanceOf[js.Any])
+    inline def set_parent(value: js.Any): Self = StObject.set(x, "_parent", value.asInstanceOf[js.Any])
   }
 }

@@ -14,31 +14,23 @@ trait ShakeEffect extends StObject {
 }
 object ShakeEffect {
   
-  @scala.inline
-  def apply(): ShakeEffect = {
+  inline def apply(): ShakeEffect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShakeEffect]
   }
   
-  @scala.inline
-  implicit class ShakeEffectMutableBuilder[Self <: ShakeEffect] (val x: Self) extends AnyVal {
+  extension [Self <: ShakeEffect](x: Self) {
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setTimes(value: Double): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
+    inline def setTimes(value: Double): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
+    inline def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
   }
 }

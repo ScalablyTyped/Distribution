@@ -38,8 +38,7 @@ trait StartChildWorkflowExecutionFailedEventAttributes extends StObject {
 }
 object StartChildWorkflowExecutionFailedEventAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cause: StartChildWorkflowExecutionFailedCause,
     decisionTaskCompletedEventId: EventId,
     initiatedEventId: EventId,
@@ -50,28 +49,20 @@ object StartChildWorkflowExecutionFailedEventAttributes {
     __obj.asInstanceOf[StartChildWorkflowExecutionFailedEventAttributes]
   }
   
-  @scala.inline
-  implicit class StartChildWorkflowExecutionFailedEventAttributesMutableBuilder[Self <: StartChildWorkflowExecutionFailedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: StartChildWorkflowExecutionFailedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setCause(value: StartChildWorkflowExecutionFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: StartChildWorkflowExecutionFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
+    inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
-    @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    inline def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitiatedEventId(value: EventId): Self = StObject.set(x, "initiatedEventId", value.asInstanceOf[js.Any])
+    inline def setInitiatedEventId(value: EventId): Self = StObject.set(x, "initiatedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
+    inline def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
+    inline def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
   }
 }

@@ -38,37 +38,27 @@ trait IgGridColumnFixingLocale
 }
 object IgGridColumnFixingLocale {
   
-  @scala.inline
-  def apply(): IgGridColumnFixingLocale = {
+  inline def apply(): IgGridColumnFixingLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridColumnFixingLocale]
   }
   
-  @scala.inline
-  implicit class IgGridColumnFixingLocaleMutableBuilder[Self <: IgGridColumnFixingLocale] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridColumnFixingLocale](x: Self) {
     
-    @scala.inline
-    def setFeatureChooserTextFixedColumn(value: String): Self = StObject.set(x, "featureChooserTextFixedColumn", value.asInstanceOf[js.Any])
+    inline def setFeatureChooserTextFixedColumn(value: String): Self = StObject.set(x, "featureChooserTextFixedColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureChooserTextFixedColumnUndefined: Self = StObject.set(x, "featureChooserTextFixedColumn", js.undefined)
+    inline def setFeatureChooserTextFixedColumnUndefined: Self = StObject.set(x, "featureChooserTextFixedColumn", js.undefined)
     
-    @scala.inline
-    def setFeatureChooserTextUnfixedColumn(value: String): Self = StObject.set(x, "featureChooserTextUnfixedColumn", value.asInstanceOf[js.Any])
+    inline def setFeatureChooserTextUnfixedColumn(value: String): Self = StObject.set(x, "featureChooserTextUnfixedColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureChooserTextUnfixedColumnUndefined: Self = StObject.set(x, "featureChooserTextUnfixedColumn", js.undefined)
+    inline def setFeatureChooserTextUnfixedColumnUndefined: Self = StObject.set(x, "featureChooserTextUnfixedColumn", js.undefined)
     
-    @scala.inline
-    def setHeaderFixButtonText(value: String): Self = StObject.set(x, "headerFixButtonText", value.asInstanceOf[js.Any])
+    inline def setHeaderFixButtonText(value: String): Self = StObject.set(x, "headerFixButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderFixButtonTextUndefined: Self = StObject.set(x, "headerFixButtonText", js.undefined)
+    inline def setHeaderFixButtonTextUndefined: Self = StObject.set(x, "headerFixButtonText", js.undefined)
     
-    @scala.inline
-    def setHeaderUnfixButtonText(value: String): Self = StObject.set(x, "headerUnfixButtonText", value.asInstanceOf[js.Any])
+    inline def setHeaderUnfixButtonText(value: String): Self = StObject.set(x, "headerUnfixButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUnfixButtonTextUndefined: Self = StObject.set(x, "headerUnfixButtonText", js.undefined)
+    inline def setHeaderUnfixButtonTextUndefined: Self = StObject.set(x, "headerUnfixButtonText", js.undefined)
   }
 }

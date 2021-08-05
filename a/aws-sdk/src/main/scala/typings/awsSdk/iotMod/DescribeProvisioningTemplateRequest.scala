@@ -13,16 +13,13 @@ trait DescribeProvisioningTemplateRequest extends StObject {
 }
 object DescribeProvisioningTemplateRequest {
   
-  @scala.inline
-  def apply(templateName: TemplateName): DescribeProvisioningTemplateRequest = {
+  inline def apply(templateName: TemplateName): DescribeProvisioningTemplateRequest = {
     val __obj = js.Dynamic.literal(templateName = templateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeProvisioningTemplateRequest]
   }
   
-  @scala.inline
-  implicit class DescribeProvisioningTemplateRequestMutableBuilder[Self <: DescribeProvisioningTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProvisioningTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
   }
 }

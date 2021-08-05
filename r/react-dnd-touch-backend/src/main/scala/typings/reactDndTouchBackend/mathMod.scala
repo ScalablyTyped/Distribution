@@ -11,11 +11,8 @@ object mathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def distance(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def distance(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def inAngleRanges(x1: Double, y1: Double, x2: Double, y2: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inAngleRanges")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def inAngleRanges(x1: Double, y1: Double, x2: Double, y2: Double, angleRanges: js.Array[AngleRange]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inAngleRanges")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], angleRanges.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def inAngleRanges(x1: Double, y1: Double, x2: Double, y2: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inAngleRanges")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def inAngleRanges(x1: Double, y1: Double, x2: Double, y2: Double, angleRanges: js.Array[AngleRange]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inAngleRanges")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], angleRanges.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -18,28 +18,21 @@ trait SavingsPlanOfferingRateFilterElement extends StObject {
 }
 object SavingsPlanOfferingRateFilterElement {
   
-  @scala.inline
-  def apply(): SavingsPlanOfferingRateFilterElement = {
+  inline def apply(): SavingsPlanOfferingRateFilterElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SavingsPlanOfferingRateFilterElement]
   }
   
-  @scala.inline
-  implicit class SavingsPlanOfferingRateFilterElementMutableBuilder[Self <: SavingsPlanOfferingRateFilterElement] (val x: Self) extends AnyVal {
+  extension [Self <: SavingsPlanOfferingRateFilterElement](x: Self) {
     
-    @scala.inline
-    def setName(value: SavingsPlanRateFilterAttribute): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SavingsPlanRateFilterAttribute): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValues(value: FilterValuesList): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: FilterValuesList): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: JsonSafeFilterValueString*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: JsonSafeFilterValueString*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

@@ -12,16 +12,13 @@ trait OptimisticUpdateFunction
 }
 object OptimisticUpdateFunction {
   
-  @scala.inline
-  def apply(storeUpdater: RecordSourceProxy => Unit): OptimisticUpdateFunction = {
+  inline def apply(storeUpdater: RecordSourceProxy => Unit): OptimisticUpdateFunction = {
     val __obj = js.Dynamic.literal(storeUpdater = js.Any.fromFunction1(storeUpdater))
     __obj.asInstanceOf[OptimisticUpdateFunction]
   }
   
-  @scala.inline
-  implicit class OptimisticUpdateFunctionMutableBuilder[Self <: OptimisticUpdateFunction] (val x: Self) extends AnyVal {
+  extension [Self <: OptimisticUpdateFunction](x: Self) {
     
-    @scala.inline
-    def setStoreUpdater(value: RecordSourceProxy => Unit): Self = StObject.set(x, "storeUpdater", js.Any.fromFunction1(value))
+    inline def setStoreUpdater(value: RecordSourceProxy => Unit): Self = StObject.set(x, "storeUpdater", js.Any.fromFunction1(value))
   }
 }

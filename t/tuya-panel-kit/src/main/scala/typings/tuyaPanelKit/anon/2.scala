@@ -10,19 +10,15 @@ trait `2`[Data] extends StObject {
 }
 object `2` {
   
-  @scala.inline
-  def apply[Data](): `2`[Data] = {
+  inline def apply[Data](): `2`[Data] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`2`[Data]]
   }
   
-  @scala.inline
-  implicit class `2MutableBuilder`[Self <: `2`[?], Data] (val x: Self & `2`[Data]) extends AnyVal {
+  extension [Self <: `2`[?], Data](x: Self & `2`[Data]) {
     
-    @scala.inline
-    def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

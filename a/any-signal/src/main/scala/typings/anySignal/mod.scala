@@ -11,9 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(signals: js.Array[AbortSignal]): AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(signals.asInstanceOf[js.Any]).asInstanceOf[AbortSignal]
+  inline def default(signals: js.Array[AbortSignal]): AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(signals.asInstanceOf[js.Any]).asInstanceOf[AbortSignal]
   
-  @scala.inline
-  def anySignal(signals: js.Array[AbortSignal]): AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("anySignal")(signals.asInstanceOf[js.Any]).asInstanceOf[AbortSignal]
+  inline def anySignal(signals: js.Array[AbortSignal]): AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("anySignal")(signals.asInstanceOf[js.Any]).asInstanceOf[AbortSignal]
 }

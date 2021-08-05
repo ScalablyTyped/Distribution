@@ -60,23 +60,18 @@ object fogMod {
   }
   object IFog {
     
-    @scala.inline
-    def apply(color: Color, name: String, toJSON: () => js.Any): IFog = {
+    inline def apply(color: Color, name: String, toJSON: () => js.Any): IFog = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
       __obj.asInstanceOf[IFog]
     }
     
-    @scala.inline
-    implicit class IFogMutableBuilder[Self <: IFog] (val x: Self) extends AnyVal {
+    extension [Self <: IFog](x: Self) {
       
-      @scala.inline
-      def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
   }
 }

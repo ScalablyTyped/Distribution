@@ -14,19 +14,15 @@ trait LoginChallenge
 }
 object LoginChallenge {
   
-  @scala.inline
-  def apply(challengeHidden: String, challengeVisual: String): LoginChallenge = {
+  inline def apply(challengeHidden: String, challengeVisual: String): LoginChallenge = {
     val __obj = js.Dynamic.literal(challengeHidden = challengeHidden.asInstanceOf[js.Any], challengeVisual = challengeVisual.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginChallenge]
   }
   
-  @scala.inline
-  implicit class LoginChallengeMutableBuilder[Self <: LoginChallenge] (val x: Self) extends AnyVal {
+  extension [Self <: LoginChallenge](x: Self) {
     
-    @scala.inline
-    def setChallengeHidden(value: String): Self = StObject.set(x, "challengeHidden", value.asInstanceOf[js.Any])
+    inline def setChallengeHidden(value: String): Self = StObject.set(x, "challengeHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChallengeVisual(value: String): Self = StObject.set(x, "challengeVisual", value.asInstanceOf[js.Any])
+    inline def setChallengeVisual(value: String): Self = StObject.set(x, "challengeVisual", value.asInstanceOf[js.Any])
   }
 }

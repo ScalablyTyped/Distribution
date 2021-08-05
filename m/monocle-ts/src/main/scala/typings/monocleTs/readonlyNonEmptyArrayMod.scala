@@ -12,8 +12,7 @@ object readonlyNonEmptyArrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def indexReadonlyNonEmptyArray[A](): Index_[ReadonlyNonEmptyArray[A], Double, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexReadonlyNonEmptyArray")().asInstanceOf[Index_[ReadonlyNonEmptyArray[A], Double, A]]
+  inline def indexReadonlyNonEmptyArray[A](): Index_[ReadonlyNonEmptyArray[A], Double, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexReadonlyNonEmptyArray")().asInstanceOf[Index_[ReadonlyNonEmptyArray[A], Double, A]]
   
   @js.native
   trait ReadonlyNonEmptyArray[A]

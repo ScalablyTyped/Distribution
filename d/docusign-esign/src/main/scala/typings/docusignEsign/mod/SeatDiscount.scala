@@ -25,31 +25,23 @@ trait SeatDiscount extends StObject {
 }
 object SeatDiscount {
   
-  @scala.inline
-  def apply(): SeatDiscount = {
+  inline def apply(): SeatDiscount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeatDiscount]
   }
   
-  @scala.inline
-  implicit class SeatDiscountMutableBuilder[Self <: SeatDiscount] (val x: Self) extends AnyVal {
+  extension [Self <: SeatDiscount](x: Self) {
     
-    @scala.inline
-    def setBeginSeatCount(value: String): Self = StObject.set(x, "beginSeatCount", value.asInstanceOf[js.Any])
+    inline def setBeginSeatCount(value: String): Self = StObject.set(x, "beginSeatCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginSeatCountUndefined: Self = StObject.set(x, "beginSeatCount", js.undefined)
+    inline def setBeginSeatCountUndefined: Self = StObject.set(x, "beginSeatCount", js.undefined)
     
-    @scala.inline
-    def setDiscountPercent(value: String): Self = StObject.set(x, "discountPercent", value.asInstanceOf[js.Any])
+    inline def setDiscountPercent(value: String): Self = StObject.set(x, "discountPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscountPercentUndefined: Self = StObject.set(x, "discountPercent", js.undefined)
+    inline def setDiscountPercentUndefined: Self = StObject.set(x, "discountPercent", js.undefined)
     
-    @scala.inline
-    def setEndSeatCount(value: String): Self = StObject.set(x, "endSeatCount", value.asInstanceOf[js.Any])
+    inline def setEndSeatCount(value: String): Self = StObject.set(x, "endSeatCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndSeatCountUndefined: Self = StObject.set(x, "endSeatCount", js.undefined)
+    inline def setEndSeatCountUndefined: Self = StObject.set(x, "endSeatCount", js.undefined)
   }
 }

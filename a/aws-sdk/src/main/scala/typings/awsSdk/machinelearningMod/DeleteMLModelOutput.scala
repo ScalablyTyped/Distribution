@@ -13,19 +13,15 @@ trait DeleteMLModelOutput extends StObject {
 }
 object DeleteMLModelOutput {
   
-  @scala.inline
-  def apply(): DeleteMLModelOutput = {
+  inline def apply(): DeleteMLModelOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteMLModelOutput]
   }
   
-  @scala.inline
-  implicit class DeleteMLModelOutputMutableBuilder[Self <: DeleteMLModelOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMLModelOutput](x: Self) {
     
-    @scala.inline
-    def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
+    inline def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMLModelIdUndefined: Self = StObject.set(x, "MLModelId", js.undefined)
+    inline def setMLModelIdUndefined: Self = StObject.set(x, "MLModelId", js.undefined)
   }
 }

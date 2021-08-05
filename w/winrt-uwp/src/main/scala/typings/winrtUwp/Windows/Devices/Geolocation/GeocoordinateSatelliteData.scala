@@ -18,8 +18,7 @@ trait GeocoordinateSatelliteData extends StObject {
 }
 object GeocoordinateSatelliteData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     horizontalDilutionOfPrecision: Double,
     positionDilutionOfPrecision: Double,
     verticalDilutionOfPrecision: Double
@@ -28,16 +27,12 @@ object GeocoordinateSatelliteData {
     __obj.asInstanceOf[GeocoordinateSatelliteData]
   }
   
-  @scala.inline
-  implicit class GeocoordinateSatelliteDataMutableBuilder[Self <: GeocoordinateSatelliteData] (val x: Self) extends AnyVal {
+  extension [Self <: GeocoordinateSatelliteData](x: Self) {
     
-    @scala.inline
-    def setHorizontalDilutionOfPrecision(value: Double): Self = StObject.set(x, "horizontalDilutionOfPrecision", value.asInstanceOf[js.Any])
+    inline def setHorizontalDilutionOfPrecision(value: Double): Self = StObject.set(x, "horizontalDilutionOfPrecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionDilutionOfPrecision(value: Double): Self = StObject.set(x, "positionDilutionOfPrecision", value.asInstanceOf[js.Any])
+    inline def setPositionDilutionOfPrecision(value: Double): Self = StObject.set(x, "positionDilutionOfPrecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalDilutionOfPrecision(value: Double): Self = StObject.set(x, "verticalDilutionOfPrecision", value.asInstanceOf[js.Any])
+    inline def setVerticalDilutionOfPrecision(value: Double): Self = StObject.set(x, "verticalDilutionOfPrecision", value.asInstanceOf[js.Any])
   }
 }

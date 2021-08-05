@@ -8,236 +8,189 @@ object awsSdkClientKmsNodeStrings {
   
   @js.native
   sealed trait AES_128 extends StObject
-  @scala.inline
-  def AES_128: AES_128 = "AES_128".asInstanceOf[AES_128]
+  inline def AES_128: AES_128 = "AES_128".asInstanceOf[AES_128]
   
   @js.native
   sealed trait AES_256 extends StObject
-  @scala.inline
-  def AES_256: AES_256 = "AES_256".asInstanceOf[AES_256]
+  inline def AES_256: AES_256 = "AES_256".asInstanceOf[AES_256]
   
   @js.native
   sealed trait AWS extends StObject
-  @scala.inline
-  def AWS: AWS = "AWS".asInstanceOf[AWS]
+  inline def AWS: AWS = "AWS".asInstanceOf[AWS]
   
   @js.native
   sealed trait AWS_KMS extends StObject
-  @scala.inline
-  def AWS_KMS: AWS_KMS = "AWS_KMS".asInstanceOf[AWS_KMS]
+  inline def AWS_KMS: AWS_KMS = "AWS_KMS".asInstanceOf[AWS_KMS]
   
   @js.native
   sealed trait AlreadyExistsException extends StObject
-  @scala.inline
-  def AlreadyExistsException: AlreadyExistsException = "AlreadyExistsException".asInstanceOf[AlreadyExistsException]
+  inline def AlreadyExistsException: AlreadyExistsException = "AlreadyExistsException".asInstanceOf[AlreadyExistsException]
   
   @js.native
   sealed trait CUSTOMER extends StObject
-  @scala.inline
-  def CUSTOMER: CUSTOMER = "CUSTOMER".asInstanceOf[CUSTOMER]
+  inline def CUSTOMER: CUSTOMER = "CUSTOMER".asInstanceOf[CUSTOMER]
   
   @js.native
   sealed trait CreateGrant extends StObject
-  @scala.inline
-  def CreateGrant: CreateGrant = "CreateGrant".asInstanceOf[CreateGrant]
+  inline def CreateGrant: CreateGrant = "CreateGrant".asInstanceOf[CreateGrant]
   
   @js.native
   sealed trait Decrypt extends StObject
-  @scala.inline
-  def Decrypt: Decrypt = "Decrypt".asInstanceOf[Decrypt]
+  inline def Decrypt: Decrypt = "Decrypt".asInstanceOf[Decrypt]
   
   @js.native
   sealed trait DependencyTimeoutException extends StObject
-  @scala.inline
-  def DependencyTimeoutException: DependencyTimeoutException = "DependencyTimeoutException".asInstanceOf[DependencyTimeoutException]
+  inline def DependencyTimeoutException: DependencyTimeoutException = "DependencyTimeoutException".asInstanceOf[DependencyTimeoutException]
   
   @js.native
   sealed trait DescribeKey extends StObject
-  @scala.inline
-  def DescribeKey: DescribeKey = "DescribeKey".asInstanceOf[DescribeKey]
+  inline def DescribeKey: DescribeKey = "DescribeKey".asInstanceOf[DescribeKey]
   
   @js.native
   sealed trait Disabled extends StObject
-  @scala.inline
-  def Disabled: Disabled = "Disabled".asInstanceOf[Disabled]
+  inline def Disabled: Disabled = "Disabled".asInstanceOf[Disabled]
   
   @js.native
   sealed trait DisabledException extends StObject
-  @scala.inline
-  def DisabledException: DisabledException = "DisabledException".asInstanceOf[DisabledException]
+  inline def DisabledException: DisabledException = "DisabledException".asInstanceOf[DisabledException]
   
   @js.native
   sealed trait ENCRYPT_DECRYPT extends StObject
-  @scala.inline
-  def ENCRYPT_DECRYPT: ENCRYPT_DECRYPT = "ENCRYPT_DECRYPT".asInstanceOf[ENCRYPT_DECRYPT]
+  inline def ENCRYPT_DECRYPT: ENCRYPT_DECRYPT = "ENCRYPT_DECRYPT".asInstanceOf[ENCRYPT_DECRYPT]
   
   @js.native
   sealed trait EXTERNAL extends StObject
-  @scala.inline
-  def EXTERNAL: EXTERNAL = "EXTERNAL".asInstanceOf[EXTERNAL]
+  inline def EXTERNAL: EXTERNAL = "EXTERNAL".asInstanceOf[EXTERNAL]
   
   @js.native
   sealed trait Enabled extends StObject
-  @scala.inline
-  def Enabled: Enabled = "Enabled".asInstanceOf[Enabled]
+  inline def Enabled: Enabled = "Enabled".asInstanceOf[Enabled]
   
   @js.native
   sealed trait Encrypt extends StObject
-  @scala.inline
-  def Encrypt: Encrypt = "Encrypt".asInstanceOf[Encrypt]
+  inline def Encrypt: Encrypt = "Encrypt".asInstanceOf[Encrypt]
   
   @js.native
   sealed trait ExpiredImportTokenException extends StObject
-  @scala.inline
-  def ExpiredImportTokenException: ExpiredImportTokenException = "ExpiredImportTokenException".asInstanceOf[ExpiredImportTokenException]
+  inline def ExpiredImportTokenException: ExpiredImportTokenException = "ExpiredImportTokenException".asInstanceOf[ExpiredImportTokenException]
   
   @js.native
   sealed trait GenerateDataKey extends StObject
-  @scala.inline
-  def GenerateDataKey: GenerateDataKey = "GenerateDataKey".asInstanceOf[GenerateDataKey]
+  inline def GenerateDataKey: GenerateDataKey = "GenerateDataKey".asInstanceOf[GenerateDataKey]
   
   @js.native
   sealed trait GenerateDataKeyWithoutPlaintext extends StObject
-  @scala.inline
-  def GenerateDataKeyWithoutPlaintext: GenerateDataKeyWithoutPlaintext = "GenerateDataKeyWithoutPlaintext".asInstanceOf[GenerateDataKeyWithoutPlaintext]
+  inline def GenerateDataKeyWithoutPlaintext: GenerateDataKeyWithoutPlaintext = "GenerateDataKeyWithoutPlaintext".asInstanceOf[GenerateDataKeyWithoutPlaintext]
   
   @js.native
   sealed trait IncorrectKeyMaterialException extends StObject
-  @scala.inline
-  def IncorrectKeyMaterialException: IncorrectKeyMaterialException = "IncorrectKeyMaterialException".asInstanceOf[IncorrectKeyMaterialException]
+  inline def IncorrectKeyMaterialException: IncorrectKeyMaterialException = "IncorrectKeyMaterialException".asInstanceOf[IncorrectKeyMaterialException]
   
   @js.native
   sealed trait InvalidAliasNameException extends StObject
-  @scala.inline
-  def InvalidAliasNameException: InvalidAliasNameException = "InvalidAliasNameException".asInstanceOf[InvalidAliasNameException]
+  inline def InvalidAliasNameException: InvalidAliasNameException = "InvalidAliasNameException".asInstanceOf[InvalidAliasNameException]
   
   @js.native
   sealed trait InvalidArnException extends StObject
-  @scala.inline
-  def InvalidArnException: InvalidArnException = "InvalidArnException".asInstanceOf[InvalidArnException]
+  inline def InvalidArnException: InvalidArnException = "InvalidArnException".asInstanceOf[InvalidArnException]
   
   @js.native
   sealed trait InvalidCiphertextException extends StObject
-  @scala.inline
-  def InvalidCiphertextException: InvalidCiphertextException = "InvalidCiphertextException".asInstanceOf[InvalidCiphertextException]
+  inline def InvalidCiphertextException: InvalidCiphertextException = "InvalidCiphertextException".asInstanceOf[InvalidCiphertextException]
   
   @js.native
   sealed trait InvalidGrantIdException extends StObject
-  @scala.inline
-  def InvalidGrantIdException: InvalidGrantIdException = "InvalidGrantIdException".asInstanceOf[InvalidGrantIdException]
+  inline def InvalidGrantIdException: InvalidGrantIdException = "InvalidGrantIdException".asInstanceOf[InvalidGrantIdException]
   
   @js.native
   sealed trait InvalidGrantTokenException extends StObject
-  @scala.inline
-  def InvalidGrantTokenException: InvalidGrantTokenException = "InvalidGrantTokenException".asInstanceOf[InvalidGrantTokenException]
+  inline def InvalidGrantTokenException: InvalidGrantTokenException = "InvalidGrantTokenException".asInstanceOf[InvalidGrantTokenException]
   
   @js.native
   sealed trait InvalidImportTokenException extends StObject
-  @scala.inline
-  def InvalidImportTokenException: InvalidImportTokenException = "InvalidImportTokenException".asInstanceOf[InvalidImportTokenException]
+  inline def InvalidImportTokenException: InvalidImportTokenException = "InvalidImportTokenException".asInstanceOf[InvalidImportTokenException]
   
   @js.native
   sealed trait InvalidKeyUsageException extends StObject
-  @scala.inline
-  def InvalidKeyUsageException: InvalidKeyUsageException = "InvalidKeyUsageException".asInstanceOf[InvalidKeyUsageException]
+  inline def InvalidKeyUsageException: InvalidKeyUsageException = "InvalidKeyUsageException".asInstanceOf[InvalidKeyUsageException]
   
   @js.native
   sealed trait InvalidMarkerException extends StObject
-  @scala.inline
-  def InvalidMarkerException: InvalidMarkerException = "InvalidMarkerException".asInstanceOf[InvalidMarkerException]
+  inline def InvalidMarkerException: InvalidMarkerException = "InvalidMarkerException".asInstanceOf[InvalidMarkerException]
   
   @js.native
   sealed trait KEY_MATERIAL_DOES_NOT_EXPIRE extends StObject
-  @scala.inline
-  def KEY_MATERIAL_DOES_NOT_EXPIRE: KEY_MATERIAL_DOES_NOT_EXPIRE = "KEY_MATERIAL_DOES_NOT_EXPIRE".asInstanceOf[KEY_MATERIAL_DOES_NOT_EXPIRE]
+  inline def KEY_MATERIAL_DOES_NOT_EXPIRE: KEY_MATERIAL_DOES_NOT_EXPIRE = "KEY_MATERIAL_DOES_NOT_EXPIRE".asInstanceOf[KEY_MATERIAL_DOES_NOT_EXPIRE]
   
   @js.native
   sealed trait KEY_MATERIAL_EXPIRES extends StObject
-  @scala.inline
-  def KEY_MATERIAL_EXPIRES: KEY_MATERIAL_EXPIRES = "KEY_MATERIAL_EXPIRES".asInstanceOf[KEY_MATERIAL_EXPIRES]
+  inline def KEY_MATERIAL_EXPIRES: KEY_MATERIAL_EXPIRES = "KEY_MATERIAL_EXPIRES".asInstanceOf[KEY_MATERIAL_EXPIRES]
   
   @js.native
   sealed trait KMSInternalException extends StObject
-  @scala.inline
-  def KMSInternalException: KMSInternalException = "KMSInternalException".asInstanceOf[KMSInternalException]
+  inline def KMSInternalException: KMSInternalException = "KMSInternalException".asInstanceOf[KMSInternalException]
   
   @js.native
   sealed trait KMSInvalidStateException extends StObject
-  @scala.inline
-  def KMSInvalidStateException: KMSInvalidStateException = "KMSInvalidStateException".asInstanceOf[KMSInvalidStateException]
+  inline def KMSInvalidStateException: KMSInvalidStateException = "KMSInvalidStateException".asInstanceOf[KMSInvalidStateException]
   
   @js.native
   sealed trait KeyUnavailableException extends StObject
-  @scala.inline
-  def KeyUnavailableException: KeyUnavailableException = "KeyUnavailableException".asInstanceOf[KeyUnavailableException]
+  inline def KeyUnavailableException: KeyUnavailableException = "KeyUnavailableException".asInstanceOf[KeyUnavailableException]
   
   @js.native
   sealed trait LimitExceededException extends StObject
-  @scala.inline
-  def LimitExceededException: LimitExceededException = "LimitExceededException".asInstanceOf[LimitExceededException]
+  inline def LimitExceededException: LimitExceededException = "LimitExceededException".asInstanceOf[LimitExceededException]
   
   @js.native
   sealed trait MalformedPolicyDocumentException extends StObject
-  @scala.inline
-  def MalformedPolicyDocumentException: MalformedPolicyDocumentException = "MalformedPolicyDocumentException".asInstanceOf[MalformedPolicyDocumentException]
+  inline def MalformedPolicyDocumentException: MalformedPolicyDocumentException = "MalformedPolicyDocumentException".asInstanceOf[MalformedPolicyDocumentException]
   
   @js.native
   sealed trait NotFoundException extends StObject
-  @scala.inline
-  def NotFoundException: NotFoundException = "NotFoundException".asInstanceOf[NotFoundException]
+  inline def NotFoundException: NotFoundException = "NotFoundException".asInstanceOf[NotFoundException]
   
   @js.native
   sealed trait PendingDeletion extends StObject
-  @scala.inline
-  def PendingDeletion: PendingDeletion = "PendingDeletion".asInstanceOf[PendingDeletion]
+  inline def PendingDeletion: PendingDeletion = "PendingDeletion".asInstanceOf[PendingDeletion]
   
   @js.native
   sealed trait PendingImport extends StObject
-  @scala.inline
-  def PendingImport: PendingImport = "PendingImport".asInstanceOf[PendingImport]
+  inline def PendingImport: PendingImport = "PendingImport".asInstanceOf[PendingImport]
   
   @js.native
   sealed trait RSAES_OAEP_SHA_1 extends StObject
-  @scala.inline
-  def RSAES_OAEP_SHA_1: RSAES_OAEP_SHA_1 = "RSAES_OAEP_SHA_1".asInstanceOf[RSAES_OAEP_SHA_1]
+  inline def RSAES_OAEP_SHA_1: RSAES_OAEP_SHA_1 = "RSAES_OAEP_SHA_1".asInstanceOf[RSAES_OAEP_SHA_1]
   
   @js.native
   sealed trait RSAES_OAEP_SHA_256 extends StObject
-  @scala.inline
-  def RSAES_OAEP_SHA_256: RSAES_OAEP_SHA_256 = "RSAES_OAEP_SHA_256".asInstanceOf[RSAES_OAEP_SHA_256]
+  inline def RSAES_OAEP_SHA_256: RSAES_OAEP_SHA_256 = "RSAES_OAEP_SHA_256".asInstanceOf[RSAES_OAEP_SHA_256]
   
   @js.native
   sealed trait RSAES_PKCS1_V1_5 extends StObject
-  @scala.inline
-  def RSAES_PKCS1_V1_5: RSAES_PKCS1_V1_5 = "RSAES_PKCS1_V1_5".asInstanceOf[RSAES_PKCS1_V1_5]
+  inline def RSAES_PKCS1_V1_5: RSAES_PKCS1_V1_5 = "RSAES_PKCS1_V1_5".asInstanceOf[RSAES_PKCS1_V1_5]
   
   @js.native
   sealed trait RSA_2048 extends StObject
-  @scala.inline
-  def RSA_2048: RSA_2048 = "RSA_2048".asInstanceOf[RSA_2048]
+  inline def RSA_2048: RSA_2048 = "RSA_2048".asInstanceOf[RSA_2048]
   
   @js.native
   sealed trait ReEncryptFrom extends StObject
-  @scala.inline
-  def ReEncryptFrom: ReEncryptFrom = "ReEncryptFrom".asInstanceOf[ReEncryptFrom]
+  inline def ReEncryptFrom: ReEncryptFrom = "ReEncryptFrom".asInstanceOf[ReEncryptFrom]
   
   @js.native
   sealed trait ReEncryptTo extends StObject
-  @scala.inline
-  def ReEncryptTo: ReEncryptTo = "ReEncryptTo".asInstanceOf[ReEncryptTo]
+  inline def ReEncryptTo: ReEncryptTo = "ReEncryptTo".asInstanceOf[ReEncryptTo]
   
   @js.native
   sealed trait RetireGrant extends StObject
-  @scala.inline
-  def RetireGrant: RetireGrant = "RetireGrant".asInstanceOf[RetireGrant]
+  inline def RetireGrant: RetireGrant = "RetireGrant".asInstanceOf[RetireGrant]
   
   @js.native
   sealed trait TagException extends StObject
-  @scala.inline
-  def TagException: TagException = "TagException".asInstanceOf[TagException]
+  inline def TagException: TagException = "TagException".asInstanceOf[TagException]
   
   @js.native
   sealed trait UnsupportedOperationException extends StObject
-  @scala.inline
-  def UnsupportedOperationException: UnsupportedOperationException = "UnsupportedOperationException".asInstanceOf[UnsupportedOperationException]
+  inline def UnsupportedOperationException: UnsupportedOperationException = "UnsupportedOperationException".asInstanceOf[UnsupportedOperationException]
 }

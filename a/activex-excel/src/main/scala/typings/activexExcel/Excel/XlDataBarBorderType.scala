@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlDataBarBorderType extends StObject
 object XlDataBarBorderType {
   
-  @scala.inline
-  def xlDataBarBorderNone: `0` = 0.asInstanceOf[`0`]
+  inline def xlDataBarBorderNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlDataBarBorderSolid: `1` = 1.asInstanceOf[`1`]
+  inline def xlDataBarBorderSolid: `1` = 1.asInstanceOf[`1`]
 }

@@ -23,31 +23,23 @@ trait FirehoseDeliveryStreamServerSideEncryption extends StObject {
 }
 object FirehoseDeliveryStreamServerSideEncryption {
   
-  @scala.inline
-  def apply(): FirehoseDeliveryStreamServerSideEncryption = {
+  inline def apply(): FirehoseDeliveryStreamServerSideEncryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirehoseDeliveryStreamServerSideEncryption]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamServerSideEncryptionMutableBuilder[Self <: FirehoseDeliveryStreamServerSideEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamServerSideEncryption](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setKeyArn(value: String): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
+    inline def setKeyArn(value: String): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyArnUndefined: Self = StObject.set(x, "keyArn", js.undefined)
+    inline def setKeyArnUndefined: Self = StObject.set(x, "keyArn", js.undefined)
     
-    @scala.inline
-    def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+    inline def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
+    inline def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait IPROXIMITY_LIST_UPDATE extends StObject {
 }
 object IPROXIMITY_LIST_UPDATE {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addedItems: js.Array[MMOItem],
     addedUsers: js.Array[SFSUser],
     removedItems: js.Array[MMOItem],
@@ -29,31 +28,22 @@ object IPROXIMITY_LIST_UPDATE {
     __obj.asInstanceOf[IPROXIMITY_LIST_UPDATE]
   }
   
-  @scala.inline
-  implicit class IPROXIMITY_LIST_UPDATEMutableBuilder[Self <: IPROXIMITY_LIST_UPDATE] (val x: Self) extends AnyVal {
+  extension [Self <: IPROXIMITY_LIST_UPDATE](x: Self) {
     
-    @scala.inline
-    def setAddedItems(value: js.Array[MMOItem]): Self = StObject.set(x, "addedItems", value.asInstanceOf[js.Any])
+    inline def setAddedItems(value: js.Array[MMOItem]): Self = StObject.set(x, "addedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedItemsVarargs(value: MMOItem*): Self = StObject.set(x, "addedItems", js.Array(value :_*))
+    inline def setAddedItemsVarargs(value: MMOItem*): Self = StObject.set(x, "addedItems", js.Array(value :_*))
     
-    @scala.inline
-    def setAddedUsers(value: js.Array[SFSUser]): Self = StObject.set(x, "addedUsers", value.asInstanceOf[js.Any])
+    inline def setAddedUsers(value: js.Array[SFSUser]): Self = StObject.set(x, "addedUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedUsersVarargs(value: SFSUser*): Self = StObject.set(x, "addedUsers", js.Array(value :_*))
+    inline def setAddedUsersVarargs(value: SFSUser*): Self = StObject.set(x, "addedUsers", js.Array(value :_*))
     
-    @scala.inline
-    def setRemovedItems(value: js.Array[MMOItem]): Self = StObject.set(x, "removedItems", value.asInstanceOf[js.Any])
+    inline def setRemovedItems(value: js.Array[MMOItem]): Self = StObject.set(x, "removedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedItemsVarargs(value: MMOItem*): Self = StObject.set(x, "removedItems", js.Array(value :_*))
+    inline def setRemovedItemsVarargs(value: MMOItem*): Self = StObject.set(x, "removedItems", js.Array(value :_*))
     
-    @scala.inline
-    def setRemovedUsers(value: js.Array[SFSUser]): Self = StObject.set(x, "removedUsers", value.asInstanceOf[js.Any])
+    inline def setRemovedUsers(value: js.Array[SFSUser]): Self = StObject.set(x, "removedUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedUsersVarargs(value: SFSUser*): Self = StObject.set(x, "removedUsers", js.Array(value :_*))
+    inline def setRemovedUsersVarargs(value: SFSUser*): Self = StObject.set(x, "removedUsers", js.Array(value :_*))
   }
 }

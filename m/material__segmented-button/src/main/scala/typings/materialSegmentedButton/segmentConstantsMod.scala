@@ -15,20 +15,17 @@ object segmentConstantsMod {
     @JSImport("@material/segmented-button/segment/constants", "attributes.ARIA_CHECKED")
     @js.native
     def ARIA_CHECKED: String = js.native
-    @scala.inline
-    def ARIA_CHECKED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_CHECKED")(x.asInstanceOf[js.Any])
+    inline def ARIA_CHECKED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_CHECKED")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/segmented-button/segment/constants", "attributes.ARIA_PRESSED")
     @js.native
     def ARIA_PRESSED: String = js.native
-    @scala.inline
-    def ARIA_PRESSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_PRESSED")(x.asInstanceOf[js.Any])
+    inline def ARIA_PRESSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_PRESSED")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/segmented-button/segment/constants", "attributes.DATA_SEGMENT_ID")
     @js.native
     def DATA_SEGMENT_ID: String = js.native
-    @scala.inline
-    def DATA_SEGMENT_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_SEGMENT_ID")(x.asInstanceOf[js.Any])
+    inline def DATA_SEGMENT_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_SEGMENT_ID")(x.asInstanceOf[js.Any])
   }
   
   object booleans {
@@ -40,14 +37,12 @@ object segmentConstantsMod {
     @JSImport("@material/segmented-button/segment/constants", "booleans.FALSE")
     @js.native
     def FALSE: String = js.native
-    @scala.inline
-    def FALSE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FALSE")(x.asInstanceOf[js.Any])
+    inline def FALSE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FALSE")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/segmented-button/segment/constants", "booleans.TRUE")
     @js.native
     def TRUE: String = js.native
-    @scala.inline
-    def TRUE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRUE")(x.asInstanceOf[js.Any])
+    inline def TRUE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRUE")(x.asInstanceOf[js.Any])
   }
   
   object cssClasses {
@@ -59,8 +54,7 @@ object segmentConstantsMod {
     @JSImport("@material/segmented-button/segment/constants", "cssClasses.SELECTED")
     @js.native
     def SELECTED: String = js.native
-    @scala.inline
-    def SELECTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECTED")(x.asInstanceOf[js.Any])
+    inline def SELECTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECTED")(x.asInstanceOf[js.Any])
   }
   
   object events {
@@ -72,13 +66,11 @@ object segmentConstantsMod {
     @JSImport("@material/segmented-button/segment/constants", "events.CLICK")
     @js.native
     def CLICK: String = js.native
-    @scala.inline
-    def CLICK_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLICK")(x.asInstanceOf[js.Any])
+    inline def CLICK_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLICK")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/segmented-button/segment/constants", "events.SELECTED")
     @js.native
     def SELECTED: String = js.native
-    @scala.inline
-    def SELECTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECTED")(x.asInstanceOf[js.Any])
+    inline def SELECTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECTED")(x.asInstanceOf[js.Any])
   }
 }

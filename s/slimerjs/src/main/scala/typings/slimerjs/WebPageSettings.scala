@@ -26,8 +26,7 @@ trait WebPageSettings extends StObject {
 }
 object WebPageSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     XSSAuditingEnabled: Boolean,
     javascriptEnabled: Boolean,
     loadImages: Boolean,
@@ -42,34 +41,24 @@ object WebPageSettings {
     __obj.asInstanceOf[WebPageSettings]
   }
   
-  @scala.inline
-  implicit class WebPageSettingsMutableBuilder[Self <: WebPageSettings] (val x: Self) extends AnyVal {
+  extension [Self <: WebPageSettings](x: Self) {
     
-    @scala.inline
-    def setJavascriptEnabled(value: Boolean): Self = StObject.set(x, "javascriptEnabled", value.asInstanceOf[js.Any])
+    inline def setJavascriptEnabled(value: Boolean): Self = StObject.set(x, "javascriptEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadImages(value: Boolean): Self = StObject.set(x, "loadImages", value.asInstanceOf[js.Any])
+    inline def setLoadImages(value: Boolean): Self = StObject.set(x, "loadImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalToRemoteUrlAccessEnabled(value: Boolean): Self = StObject.set(x, "localToRemoteUrlAccessEnabled", value.asInstanceOf[js.Any])
+    inline def setLocalToRemoteUrlAccessEnabled(value: Boolean): Self = StObject.set(x, "localToRemoteUrlAccessEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTimeout(value: Double): Self = StObject.set(x, "resourceTimeout", value.asInstanceOf[js.Any])
+    inline def setResourceTimeout(value: Double): Self = StObject.set(x, "resourceTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebSecurityEnabled(value: Boolean): Self = StObject.set(x, "webSecurityEnabled", value.asInstanceOf[js.Any])
+    inline def setWebSecurityEnabled(value: Boolean): Self = StObject.set(x, "webSecurityEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXSSAuditingEnabled(value: Boolean): Self = StObject.set(x, "XSSAuditingEnabled", value.asInstanceOf[js.Any])
+    inline def setXSSAuditingEnabled(value: Boolean): Self = StObject.set(x, "XSSAuditingEnabled", value.asInstanceOf[js.Any])
   }
 }

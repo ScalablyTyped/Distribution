@@ -14,19 +14,15 @@ trait LoginOptions
 }
 object LoginOptions {
   
-  @scala.inline
-  def apply(): LoginOptions = {
+  inline def apply(): LoginOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoginOptions]
   }
   
-  @scala.inline
-  implicit class LoginOptionsMutableBuilder[Self <: LoginOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoginOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ LoginResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ LoginResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

@@ -193,243 +193,165 @@ trait IBasicForm
 }
 object IBasicForm {
   
-  @scala.inline
-  def apply(): IBasicForm = {
+  inline def apply(): IBasicForm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBasicForm]
   }
   
-  @scala.inline
-  implicit class IBasicFormMutableBuilder[Self <: IBasicForm] (val x: Self) extends AnyVal {
+  extension [Self <: IBasicForm](x: Self) {
     
-    @scala.inline
-    def setApi(value: js.Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: js.Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
+    inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
-    @scala.inline
-    def setApplyIfToFields(value: /* obj */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "applyIfToFields", js.Any.fromFunction1(value))
+    inline def setApplyIfToFields(value: /* obj */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "applyIfToFields", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplyIfToFieldsUndefined: Self = StObject.set(x, "applyIfToFields", js.undefined)
+    inline def setApplyIfToFieldsUndefined: Self = StObject.set(x, "applyIfToFields", js.undefined)
     
-    @scala.inline
-    def setApplyToFields(value: /* obj */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "applyToFields", js.Any.fromFunction1(value))
+    inline def setApplyToFields(value: /* obj */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "applyToFields", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplyToFieldsUndefined: Self = StObject.set(x, "applyToFields", js.undefined)
+    inline def setApplyToFieldsUndefined: Self = StObject.set(x, "applyToFields", js.undefined)
     
-    @scala.inline
-    def setBaseParams(value: js.Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
+    inline def setBaseParams(value: js.Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseParamsUndefined: Self = StObject.set(x, "baseParams", js.undefined)
+    inline def setBaseParamsUndefined: Self = StObject.set(x, "baseParams", js.undefined)
     
-    @scala.inline
-    def setCheckDirty(value: () => Unit): Self = StObject.set(x, "checkDirty", js.Any.fromFunction0(value))
+    inline def setCheckDirty(value: () => Unit): Self = StObject.set(x, "checkDirty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCheckDirtyUndefined: Self = StObject.set(x, "checkDirty", js.undefined)
+    inline def setCheckDirtyUndefined: Self = StObject.set(x, "checkDirty", js.undefined)
     
-    @scala.inline
-    def setCheckValidity(value: () => Unit): Self = StObject.set(x, "checkValidity", js.Any.fromFunction0(value))
+    inline def setCheckValidity(value: () => Unit): Self = StObject.set(x, "checkValidity", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCheckValidityUndefined: Self = StObject.set(x, "checkValidity", js.undefined)
+    inline def setCheckValidityUndefined: Self = StObject.set(x, "checkValidity", js.undefined)
     
-    @scala.inline
-    def setClearInvalid(value: () => IBasic): Self = StObject.set(x, "clearInvalid", js.Any.fromFunction0(value))
+    inline def setClearInvalid(value: () => IBasic): Self = StObject.set(x, "clearInvalid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearInvalidUndefined: Self = StObject.set(x, "clearInvalid", js.undefined)
+    inline def setClearInvalidUndefined: Self = StObject.set(x, "clearInvalid", js.undefined)
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setDoAction(value: (/* action */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => IBasic): Self = StObject.set(x, "doAction", js.Any.fromFunction2(value))
+    inline def setDoAction(value: (/* action */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => IBasic): Self = StObject.set(x, "doAction", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDoActionUndefined: Self = StObject.set(x, "doAction", js.undefined)
+    inline def setDoActionUndefined: Self = StObject.set(x, "doAction", js.undefined)
     
-    @scala.inline
-    def setErrorReader(value: js.Any): Self = StObject.set(x, "errorReader", value.asInstanceOf[js.Any])
+    inline def setErrorReader(value: js.Any): Self = StObject.set(x, "errorReader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorReaderUndefined: Self = StObject.set(x, "errorReader", js.undefined)
+    inline def setErrorReaderUndefined: Self = StObject.set(x, "errorReader", js.undefined)
     
-    @scala.inline
-    def setFindField(value: /* id */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "findField", js.Any.fromFunction1(value))
+    inline def setFindField(value: /* id */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "findField", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindFieldUndefined: Self = StObject.set(x, "findField", js.undefined)
+    inline def setFindFieldUndefined: Self = StObject.set(x, "findField", js.undefined)
     
-    @scala.inline
-    def setGetFieldValues(value: /* dirtyOnly */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "getFieldValues", js.Any.fromFunction1(value))
+    inline def setGetFieldValues(value: /* dirtyOnly */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "getFieldValues", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFieldValuesUndefined: Self = StObject.set(x, "getFieldValues", js.undefined)
+    inline def setGetFieldValuesUndefined: Self = StObject.set(x, "getFieldValues", js.undefined)
     
-    @scala.inline
-    def setGetFields(value: () => IMixedCollection): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
+    inline def setGetFields(value: () => IMixedCollection): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFieldsUndefined: Self = StObject.set(x, "getFields", js.undefined)
+    inline def setGetFieldsUndefined: Self = StObject.set(x, "getFields", js.undefined)
     
-    @scala.inline
-    def setGetRecord(value: () => IModel): Self = StObject.set(x, "getRecord", js.Any.fromFunction0(value))
+    inline def setGetRecord(value: () => IModel): Self = StObject.set(x, "getRecord", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRecordUndefined: Self = StObject.set(x, "getRecord", js.undefined)
+    inline def setGetRecordUndefined: Self = StObject.set(x, "getRecord", js.undefined)
     
-    @scala.inline
-    def setGetValues(
+    inline def setGetValues(
       value: (/* asString */ js.UndefOr[Boolean], /* dirtyOnly */ js.UndefOr[Boolean], /* includeEmptyText */ js.UndefOr[Boolean], /* useDataValues */ js.UndefOr[Boolean]) => js.Any
     ): Self = StObject.set(x, "getValues", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
+    inline def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
     
-    @scala.inline
-    def setHasInvalidField(value: () => Unit): Self = StObject.set(x, "hasInvalidField", js.Any.fromFunction0(value))
+    inline def setHasInvalidField(value: () => Unit): Self = StObject.set(x, "hasInvalidField", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasInvalidFieldUndefined: Self = StObject.set(x, "hasInvalidField", js.undefined)
+    inline def setHasInvalidFieldUndefined: Self = StObject.set(x, "hasInvalidField", js.undefined)
     
-    @scala.inline
-    def setHasUpload(value: () => Boolean): Self = StObject.set(x, "hasUpload", js.Any.fromFunction0(value))
+    inline def setHasUpload(value: () => Boolean): Self = StObject.set(x, "hasUpload", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasUploadUndefined: Self = StObject.set(x, "hasUpload", js.undefined)
+    inline def setHasUploadUndefined: Self = StObject.set(x, "hasUpload", js.undefined)
     
-    @scala.inline
-    def setIsDirty(value: () => Boolean): Self = StObject.set(x, "isDirty", js.Any.fromFunction0(value))
+    inline def setIsDirty(value: () => Boolean): Self = StObject.set(x, "isDirty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDirtyUndefined: Self = StObject.set(x, "isDirty", js.undefined)
+    inline def setIsDirtyUndefined: Self = StObject.set(x, "isDirty", js.undefined)
     
-    @scala.inline
-    def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+    inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
+    inline def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
     
-    @scala.inline
-    def setJsonSubmit(value: Boolean): Self = StObject.set(x, "jsonSubmit", value.asInstanceOf[js.Any])
+    inline def setJsonSubmit(value: Boolean): Self = StObject.set(x, "jsonSubmit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonSubmitUndefined: Self = StObject.set(x, "jsonSubmit", js.undefined)
+    inline def setJsonSubmitUndefined: Self = StObject.set(x, "jsonSubmit", js.undefined)
     
-    @scala.inline
-    def setLoad(value: /* options */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: /* options */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadRecord(value: /* record */ js.UndefOr[IModel] => IBasic): Self = StObject.set(x, "loadRecord", js.Any.fromFunction1(value))
+    inline def setLoadRecord(value: /* record */ js.UndefOr[IModel] => IBasic): Self = StObject.set(x, "loadRecord", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadRecordUndefined: Self = StObject.set(x, "loadRecord", js.undefined)
+    inline def setLoadRecordUndefined: Self = StObject.set(x, "loadRecord", js.undefined)
     
-    @scala.inline
-    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    @scala.inline
-    def setMarkInvalid(value: /* errors */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "markInvalid", js.Any.fromFunction1(value))
+    inline def setMarkInvalid(value: /* errors */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "markInvalid", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMarkInvalidUndefined: Self = StObject.set(x, "markInvalid", js.undefined)
+    inline def setMarkInvalidUndefined: Self = StObject.set(x, "markInvalid", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setOwner(value: IContainer): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: IContainer): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setParamOrder(value: js.Any): Self = StObject.set(x, "paramOrder", value.asInstanceOf[js.Any])
+    inline def setParamOrder(value: js.Any): Self = StObject.set(x, "paramOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamOrderUndefined: Self = StObject.set(x, "paramOrder", js.undefined)
+    inline def setParamOrderUndefined: Self = StObject.set(x, "paramOrder", js.undefined)
     
-    @scala.inline
-    def setParamsAsHash(value: Boolean): Self = StObject.set(x, "paramsAsHash", value.asInstanceOf[js.Any])
+    inline def setParamsAsHash(value: Boolean): Self = StObject.set(x, "paramsAsHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsAsHashUndefined: Self = StObject.set(x, "paramsAsHash", js.undefined)
+    inline def setParamsAsHashUndefined: Self = StObject.set(x, "paramsAsHash", js.undefined)
     
-    @scala.inline
-    def setReader(value: js.Any): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
+    inline def setReader(value: js.Any): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReaderUndefined: Self = StObject.set(x, "reader", js.undefined)
+    inline def setReaderUndefined: Self = StObject.set(x, "reader", js.undefined)
     
-    @scala.inline
-    def setReset(value: /* resetRecord */ js.UndefOr[Boolean] => IBasic): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+    inline def setReset(value: /* resetRecord */ js.UndefOr[Boolean] => IBasic): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
-    @scala.inline
-    def setSetValues(value: /* values */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "setValues", js.Any.fromFunction1(value))
+    inline def setSetValues(value: /* values */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "setValues", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValuesUndefined: Self = StObject.set(x, "setValues", js.undefined)
+    inline def setSetValuesUndefined: Self = StObject.set(x, "setValues", js.undefined)
     
-    @scala.inline
-    def setStandardSubmit(value: Boolean): Self = StObject.set(x, "standardSubmit", value.asInstanceOf[js.Any])
+    inline def setStandardSubmit(value: Boolean): Self = StObject.set(x, "standardSubmit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardSubmitUndefined: Self = StObject.set(x, "standardSubmit", js.undefined)
+    inline def setStandardSubmitUndefined: Self = StObject.set(x, "standardSubmit", js.undefined)
     
-    @scala.inline
-    def setSubmit(value: /* options */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
+    inline def setSubmit(value: /* options */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
+    inline def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setTrackResetOnLoad(value: Boolean): Self = StObject.set(x, "trackResetOnLoad", value.asInstanceOf[js.Any])
+    inline def setTrackResetOnLoad(value: Boolean): Self = StObject.set(x, "trackResetOnLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackResetOnLoadUndefined: Self = StObject.set(x, "trackResetOnLoad", js.undefined)
+    inline def setTrackResetOnLoadUndefined: Self = StObject.set(x, "trackResetOnLoad", js.undefined)
     
-    @scala.inline
-    def setUpdateRecord(value: /* record */ js.UndefOr[IModel] => IBasic): Self = StObject.set(x, "updateRecord", js.Any.fromFunction1(value))
+    inline def setUpdateRecord(value: /* record */ js.UndefOr[IModel] => IBasic): Self = StObject.set(x, "updateRecord", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateRecordUndefined: Self = StObject.set(x, "updateRecord", js.undefined)
+    inline def setUpdateRecordUndefined: Self = StObject.set(x, "updateRecord", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setWaitMsgTarget(value: js.Any): Self = StObject.set(x, "waitMsgTarget", value.asInstanceOf[js.Any])
+    inline def setWaitMsgTarget(value: js.Any): Self = StObject.set(x, "waitMsgTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitMsgTargetUndefined: Self = StObject.set(x, "waitMsgTarget", js.undefined)
+    inline def setWaitMsgTargetUndefined: Self = StObject.set(x, "waitMsgTarget", js.undefined)
     
-    @scala.inline
-    def setWaitTitle(value: String): Self = StObject.set(x, "waitTitle", value.asInstanceOf[js.Any])
+    inline def setWaitTitle(value: String): Self = StObject.set(x, "waitTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitTitleUndefined: Self = StObject.set(x, "waitTitle", js.undefined)
+    inline def setWaitTitleUndefined: Self = StObject.set(x, "waitTitle", js.undefined)
   }
 }

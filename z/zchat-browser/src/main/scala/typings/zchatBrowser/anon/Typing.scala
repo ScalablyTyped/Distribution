@@ -18,23 +18,18 @@ trait Typing
 }
 object Typing {
   
-  @scala.inline
-  def apply(nick: String, typing: Boolean): Typing = {
+  inline def apply(nick: String, typing: Boolean): Typing = {
     val __obj = js.Dynamic.literal(nick = nick.asInstanceOf[js.Any], typing = typing.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("typing")
     __obj.asInstanceOf[Typing]
   }
   
-  @scala.inline
-  implicit class TypingMutableBuilder[Self <: Typing] (val x: Self) extends AnyVal {
+  extension [Self <: Typing](x: Self) {
     
-    @scala.inline
-    def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
+    inline def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typing): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typing): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTyping(value: Boolean): Self = StObject.set(x, "typing", value.asInstanceOf[js.Any])
+    inline def setTyping(value: Boolean): Self = StObject.set(x, "typing", value.asInstanceOf[js.Any])
   }
 }

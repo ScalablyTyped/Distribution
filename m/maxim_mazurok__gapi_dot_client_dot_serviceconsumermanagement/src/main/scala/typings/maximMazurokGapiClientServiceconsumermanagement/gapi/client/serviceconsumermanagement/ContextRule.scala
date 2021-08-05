@@ -23,55 +23,39 @@ trait ContextRule extends StObject {
 }
 object ContextRule {
   
-  @scala.inline
-  def apply(): ContextRule = {
+  inline def apply(): ContextRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContextRule]
   }
   
-  @scala.inline
-  implicit class ContextRuleMutableBuilder[Self <: ContextRule] (val x: Self) extends AnyVal {
+  extension [Self <: ContextRule](x: Self) {
     
-    @scala.inline
-    def setAllowedRequestExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedRequestExtensions", value.asInstanceOf[js.Any])
+    inline def setAllowedRequestExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedRequestExtensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedRequestExtensionsUndefined: Self = StObject.set(x, "allowedRequestExtensions", js.undefined)
+    inline def setAllowedRequestExtensionsUndefined: Self = StObject.set(x, "allowedRequestExtensions", js.undefined)
     
-    @scala.inline
-    def setAllowedRequestExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedRequestExtensions", js.Array(value :_*))
+    inline def setAllowedRequestExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedRequestExtensions", js.Array(value :_*))
     
-    @scala.inline
-    def setAllowedResponseExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedResponseExtensions", value.asInstanceOf[js.Any])
+    inline def setAllowedResponseExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedResponseExtensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedResponseExtensionsUndefined: Self = StObject.set(x, "allowedResponseExtensions", js.undefined)
+    inline def setAllowedResponseExtensionsUndefined: Self = StObject.set(x, "allowedResponseExtensions", js.undefined)
     
-    @scala.inline
-    def setAllowedResponseExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedResponseExtensions", js.Array(value :_*))
+    inline def setAllowedResponseExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedResponseExtensions", js.Array(value :_*))
     
-    @scala.inline
-    def setProvided(value: js.Array[String]): Self = StObject.set(x, "provided", value.asInstanceOf[js.Any])
+    inline def setProvided(value: js.Array[String]): Self = StObject.set(x, "provided", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidedUndefined: Self = StObject.set(x, "provided", js.undefined)
+    inline def setProvidedUndefined: Self = StObject.set(x, "provided", js.undefined)
     
-    @scala.inline
-    def setProvidedVarargs(value: String*): Self = StObject.set(x, "provided", js.Array(value :_*))
+    inline def setProvidedVarargs(value: String*): Self = StObject.set(x, "provided", js.Array(value :_*))
     
-    @scala.inline
-    def setRequested(value: js.Array[String]): Self = StObject.set(x, "requested", value.asInstanceOf[js.Any])
+    inline def setRequested(value: js.Array[String]): Self = StObject.set(x, "requested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedUndefined: Self = StObject.set(x, "requested", js.undefined)
+    inline def setRequestedUndefined: Self = StObject.set(x, "requested", js.undefined)
     
-    @scala.inline
-    def setRequestedVarargs(value: String*): Self = StObject.set(x, "requested", js.Array(value :_*))
+    inline def setRequestedVarargs(value: String*): Self = StObject.set(x, "requested", js.Array(value :_*))
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

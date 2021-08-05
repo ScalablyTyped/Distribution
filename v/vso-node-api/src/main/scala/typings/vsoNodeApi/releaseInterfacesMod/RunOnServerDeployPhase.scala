@@ -12,8 +12,7 @@ trait RunOnServerDeployPhase
 }
 object RunOnServerDeployPhase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deploymentInput: ServerDeploymentInput,
     name: String,
     phaseType: DeployPhaseTypes,
@@ -24,10 +23,8 @@ object RunOnServerDeployPhase {
     __obj.asInstanceOf[RunOnServerDeployPhase]
   }
   
-  @scala.inline
-  implicit class RunOnServerDeployPhaseMutableBuilder[Self <: RunOnServerDeployPhase] (val x: Self) extends AnyVal {
+  extension [Self <: RunOnServerDeployPhase](x: Self) {
     
-    @scala.inline
-    def setDeploymentInput(value: ServerDeploymentInput): Self = StObject.set(x, "deploymentInput", value.asInstanceOf[js.Any])
+    inline def setDeploymentInput(value: ServerDeploymentInput): Self = StObject.set(x, "deploymentInput", value.asInstanceOf[js.Any])
   }
 }

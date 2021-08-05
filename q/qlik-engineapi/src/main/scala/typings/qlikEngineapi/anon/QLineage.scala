@@ -10,19 +10,15 @@ trait QLineage extends StObject {
 }
 object QLineage {
   
-  @scala.inline
-  def apply(qLineage: js.Array[QDiscriminator]): QLineage = {
+  inline def apply(qLineage: js.Array[QDiscriminator]): QLineage = {
     val __obj = js.Dynamic.literal(qLineage = qLineage.asInstanceOf[js.Any])
     __obj.asInstanceOf[QLineage]
   }
   
-  @scala.inline
-  implicit class QLineageMutableBuilder[Self <: QLineage] (val x: Self) extends AnyVal {
+  extension [Self <: QLineage](x: Self) {
     
-    @scala.inline
-    def setQLineage(value: js.Array[QDiscriminator]): Self = StObject.set(x, "qLineage", value.asInstanceOf[js.Any])
+    inline def setQLineage(value: js.Array[QDiscriminator]): Self = StObject.set(x, "qLineage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLineageVarargs(value: QDiscriminator*): Self = StObject.set(x, "qLineage", js.Array(value :_*))
+    inline def setQLineageVarargs(value: QDiscriminator*): Self = StObject.set(x, "qLineage", js.Array(value :_*))
   }
 }

@@ -15,19 +15,15 @@ trait ServeAfterHookInput
 }
 object ServeAfterHookInput {
   
-  @scala.inline
-  def apply(serve: (AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions) & ServeDetails): ServeAfterHookInput = {
+  inline def apply(serve: (AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions) & ServeDetails): ServeAfterHookInput = {
     val __obj = js.Dynamic.literal(name = "serve:after", serve = serve.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServeAfterHookInput]
   }
   
-  @scala.inline
-  implicit class ServeAfterHookInputMutableBuilder[Self <: ServeAfterHookInput] (val x: Self) extends AnyVal {
+  extension [Self <: ServeAfterHookInput](x: Self) {
     
-    @scala.inline
-    def setName(value: serveColonafter): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: serveColonafter): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServe(value: (AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions) & ServeDetails): Self = StObject.set(x, "serve", value.asInstanceOf[js.Any])
+    inline def setServe(value: (AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions) & ServeDetails): Self = StObject.set(x, "serve", value.asInstanceOf[js.Any])
   }
 }

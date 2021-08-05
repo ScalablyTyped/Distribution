@@ -23,31 +23,23 @@ trait AccountAttribute extends StObject {
 }
 object AccountAttribute {
   
-  @scala.inline
-  def apply(): AccountAttribute = {
+  inline def apply(): AccountAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountAttribute]
   }
   
-  @scala.inline
-  implicit class AccountAttributeMutableBuilder[Self <: AccountAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: AccountAttribute](x: Self) {
     
-    @scala.inline
-    def setMaximum(value: Integer): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: Integer): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumUndefined: Self = StObject.set(x, "Maximum", js.undefined)
+    inline def setMaximumUndefined: Self = StObject.set(x, "Maximum", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setUsed(value: Integer): Self = StObject.set(x, "Used", value.asInstanceOf[js.Any])
+    inline def setUsed(value: Integer): Self = StObject.set(x, "Used", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedUndefined: Self = StObject.set(x, "Used", js.undefined)
+    inline def setUsedUndefined: Self = StObject.set(x, "Used", js.undefined)
   }
 }

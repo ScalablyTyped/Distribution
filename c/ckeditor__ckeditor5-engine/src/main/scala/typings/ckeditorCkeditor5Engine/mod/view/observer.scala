@@ -143,33 +143,25 @@ object observer {
   }
   object MutatedChildren {
     
-    @scala.inline
-    def apply(newChildren: js.Array[Node], node: Element, oldChildren: js.Array[Node], `type`: String): MutatedChildren = {
+    inline def apply(newChildren: js.Array[Node], node: Element, oldChildren: js.Array[Node], `type`: String): MutatedChildren = {
       val __obj = js.Dynamic.literal(newChildren = newChildren.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], oldChildren = oldChildren.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MutatedChildren]
     }
     
-    @scala.inline
-    implicit class MutatedChildrenMutableBuilder[Self <: MutatedChildren] (val x: Self) extends AnyVal {
+    extension [Self <: MutatedChildren](x: Self) {
       
-      @scala.inline
-      def setNewChildren(value: js.Array[Node]): Self = StObject.set(x, "newChildren", value.asInstanceOf[js.Any])
+      inline def setNewChildren(value: js.Array[Node]): Self = StObject.set(x, "newChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewChildrenVarargs(value: Node*): Self = StObject.set(x, "newChildren", js.Array(value :_*))
+      inline def setNewChildrenVarargs(value: Node*): Self = StObject.set(x, "newChildren", js.Array(value :_*))
       
-      @scala.inline
-      def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldChildren(value: js.Array[Node]): Self = StObject.set(x, "oldChildren", value.asInstanceOf[js.Any])
+      inline def setOldChildren(value: js.Array[Node]): Self = StObject.set(x, "oldChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldChildrenVarargs(value: Node*): Self = StObject.set(x, "oldChildren", js.Array(value :_*))
+      inline def setOldChildrenVarargs(value: Node*): Self = StObject.set(x, "oldChildren", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -185,27 +177,21 @@ object observer {
   }
   object MutatedText {
     
-    @scala.inline
-    def apply(newText: String, node: Text, oldText: String, `type`: String): MutatedText = {
+    inline def apply(newText: String, node: Text, oldText: String, `type`: String): MutatedText = {
       val __obj = js.Dynamic.literal(newText = newText.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], oldText = oldText.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MutatedText]
     }
     
-    @scala.inline
-    implicit class MutatedTextMutableBuilder[Self <: MutatedText] (val x: Self) extends AnyVal {
+    extension [Self <: MutatedText](x: Self) {
       
-      @scala.inline
-      def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
+      inline def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: Text): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Text): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldText(value: String): Self = StObject.set(x, "oldText", value.asInstanceOf[js.Any])
+      inline def setOldText(value: String): Self = StObject.set(x, "oldText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

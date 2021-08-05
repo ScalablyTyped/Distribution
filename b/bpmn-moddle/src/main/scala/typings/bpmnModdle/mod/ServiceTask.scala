@@ -14,8 +14,7 @@ trait ServiceTask
 }
 object ServiceTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -45,13 +44,10 @@ object ServiceTask {
     __obj.asInstanceOf[ServiceTask]
   }
   
-  @scala.inline
-  implicit class ServiceTaskMutableBuilder[Self <: ServiceTask] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceTask](x: Self) {
     
-    @scala.inline
-    def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+    inline def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationRef(value: Operation): Self = StObject.set(x, "operationRef", value.asInstanceOf[js.Any])
+    inline def setOperationRef(value: Operation): Self = StObject.set(x, "operationRef", value.asInstanceOf[js.Any])
   }
 }

@@ -211,8 +211,7 @@ object subtagMod {
   }
   object Subtag {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       added: () => String,
       comments: () => js.Array[String],
       deprecated: () => String | Null,
@@ -228,35 +227,25 @@ object subtagMod {
       __obj.asInstanceOf[Subtag]
     }
     
-    @scala.inline
-    implicit class SubtagMutableBuilder[Self <: Subtag] (val x: Self) extends AnyVal {
+    extension [Self <: Subtag](x: Self) {
       
-      @scala.inline
-      def setAdded(value: () => String): Self = StObject.set(x, "added", js.Any.fromFunction0(value))
+      inline def setAdded(value: () => String): Self = StObject.set(x, "added", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setComments(value: () => js.Array[String]): Self = StObject.set(x, "comments", js.Any.fromFunction0(value))
+      inline def setComments(value: () => js.Array[String]): Self = StObject.set(x, "comments", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeprecated(value: () => String | Null): Self = StObject.set(x, "deprecated", js.Any.fromFunction0(value))
+      inline def setDeprecated(value: () => String | Null): Self = StObject.set(x, "deprecated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDescriptions(value: () => js.Array[String]): Self = StObject.set(x, "descriptions", js.Any.fromFunction0(value))
+      inline def setDescriptions(value: () => js.Array[String]): Self = StObject.set(x, "descriptions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFormat(value: () => String): Self = StObject.set(x, "format", js.Any.fromFunction0(value))
+      inline def setFormat(value: () => String): Self = StObject.set(x, "format", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreferred(value: () => Subtag | Null): Self = StObject.set(x, "preferred", js.Any.fromFunction0(value))
+      inline def setPreferred(value: () => Subtag | Null): Self = StObject.set(x, "preferred", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setScope(value: () => String | Null): Self = StObject.set(x, "scope", js.Any.fromFunction0(value))
+      inline def setScope(value: () => String | Null): Self = StObject.set(x, "scope", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setScript(value: () => Subtag | Null): Self = StObject.set(x, "script", js.Any.fromFunction0(value))
+      inline def setScript(value: () => Subtag | Null): Self = StObject.set(x, "script", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setType(value: () => language | extlang | script | region | variant): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+      inline def setType(value: () => language | extlang | script | region | variant): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
     }
   }
 }

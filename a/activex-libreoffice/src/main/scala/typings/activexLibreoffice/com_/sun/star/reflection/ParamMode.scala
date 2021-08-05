@@ -17,14 +17,11 @@ trait ParamMode extends StObject
 object ParamMode {
   
   /** parameter serves as pure input for a called method */
-  @scala.inline
-  def IN: `0` = 0.asInstanceOf[`0`]
+  inline def IN: `0` = 0.asInstanceOf[`0`]
   
   /** parameter serves as input as well as output; data can transferred in both directions */
-  @scala.inline
-  def INOUT: `2` = 2.asInstanceOf[`2`]
+  inline def INOUT: `2` = 2.asInstanceOf[`2`]
   
   /** parameter serves as pure output for the callee (in addition to the return value) */
-  @scala.inline
-  def OUT: `1` = 1.asInstanceOf[`1`]
+  inline def OUT: `1` = 1.asInstanceOf[`1`]
 }

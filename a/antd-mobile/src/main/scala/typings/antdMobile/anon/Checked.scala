@@ -10,16 +10,13 @@ trait Checked extends StObject {
 }
 object Checked {
   
-  @scala.inline
-  def apply(checked: Boolean): Checked = {
+  inline def apply(checked: Boolean): Checked = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any])
     __obj.asInstanceOf[Checked]
   }
   
-  @scala.inline
-  implicit class CheckedMutableBuilder[Self <: Checked] (val x: Self) extends AnyVal {
+  extension [Self <: Checked](x: Self) {
     
-    @scala.inline
-    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
   }
 }

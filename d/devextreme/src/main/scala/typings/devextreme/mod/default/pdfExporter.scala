@@ -13,6 +13,5 @@ object pdfExporter {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def exportDataGrid(options: PdfExportDataGridProps): Promise[Unit] & JQueryPromise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportDataGrid")(options.asInstanceOf[js.Any]).asInstanceOf[Promise[Unit] & JQueryPromise[Unit]]
+  inline def exportDataGrid(options: PdfExportDataGridProps): Promise[Unit] & JQueryPromise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportDataGrid")(options.asInstanceOf[js.Any]).asInstanceOf[Promise[Unit] & JQueryPromise[Unit]]
 }

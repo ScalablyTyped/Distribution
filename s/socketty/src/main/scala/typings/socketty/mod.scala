@@ -30,8 +30,7 @@ object mod extends Shortcut {
   }
   object Socketty {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connect: (String, js.Function1[/* socket */ SockettySocket, Unit]) => SockettySocket,
       createServer: js.Any => SockettyServer
     ): Socketty = {
@@ -39,14 +38,11 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Socketty]
     }
     
-    @scala.inline
-    implicit class SockettyMutableBuilder[Self <: Socketty] (val x: Self) extends AnyVal {
+    extension [Self <: Socketty](x: Self) {
       
-      @scala.inline
-      def setConnect(value: (String, js.Function1[/* socket */ SockettySocket, Unit]) => SockettySocket): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
+      inline def setConnect(value: (String, js.Function1[/* socket */ SockettySocket, Unit]) => SockettySocket): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateServer(value: js.Any => SockettyServer): Self = StObject.set(x, "createServer", js.Any.fromFunction1(value))
+      inline def setCreateServer(value: js.Any => SockettyServer): Self = StObject.set(x, "createServer", js.Any.fromFunction1(value))
     }
   }
   
@@ -60,17 +56,14 @@ object mod extends Shortcut {
   }
   object SockettyServer {
     
-    @scala.inline
-    def apply(connection: js.Function1[/* socket */ SockettySocket, Unit] => Unit): SockettyServer = {
+    inline def apply(connection: js.Function1[/* socket */ SockettySocket, Unit] => Unit): SockettyServer = {
       val __obj = js.Dynamic.literal(connection = js.Any.fromFunction1(connection))
       __obj.asInstanceOf[SockettyServer]
     }
     
-    @scala.inline
-    implicit class SockettyServerMutableBuilder[Self <: SockettyServer] (val x: Self) extends AnyVal {
+    extension [Self <: SockettyServer](x: Self) {
       
-      @scala.inline
-      def setConnection(value: js.Function1[/* socket */ SockettySocket, Unit] => Unit): Self = StObject.set(x, "connection", js.Any.fromFunction1(value))
+      inline def setConnection(value: js.Function1[/* socket */ SockettySocket, Unit] => Unit): Self = StObject.set(x, "connection", js.Any.fromFunction1(value))
     }
   }
   

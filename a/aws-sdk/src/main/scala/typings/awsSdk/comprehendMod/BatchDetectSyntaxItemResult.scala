@@ -18,28 +18,21 @@ trait BatchDetectSyntaxItemResult extends StObject {
 }
 object BatchDetectSyntaxItemResult {
   
-  @scala.inline
-  def apply(): BatchDetectSyntaxItemResult = {
+  inline def apply(): BatchDetectSyntaxItemResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDetectSyntaxItemResult]
   }
   
-  @scala.inline
-  implicit class BatchDetectSyntaxItemResultMutableBuilder[Self <: BatchDetectSyntaxItemResult] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDetectSyntaxItemResult](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
     
-    @scala.inline
-    def setSyntaxTokens(value: ListOfSyntaxTokens): Self = StObject.set(x, "SyntaxTokens", value.asInstanceOf[js.Any])
+    inline def setSyntaxTokens(value: ListOfSyntaxTokens): Self = StObject.set(x, "SyntaxTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyntaxTokensUndefined: Self = StObject.set(x, "SyntaxTokens", js.undefined)
+    inline def setSyntaxTokensUndefined: Self = StObject.set(x, "SyntaxTokens", js.undefined)
     
-    @scala.inline
-    def setSyntaxTokensVarargs(value: SyntaxToken*): Self = StObject.set(x, "SyntaxTokens", js.Array(value :_*))
+    inline def setSyntaxTokensVarargs(value: SyntaxToken*): Self = StObject.set(x, "SyntaxTokens", js.Array(value :_*))
   }
 }

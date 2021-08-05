@@ -20,37 +20,27 @@ trait BuildBazelRemoteExecutionV2ExecuteOperationMetadata extends StObject {
 }
 object BuildBazelRemoteExecutionV2ExecuteOperationMetadata {
   
-  @scala.inline
-  def apply(): BuildBazelRemoteExecutionV2ExecuteOperationMetadata = {
+  inline def apply(): BuildBazelRemoteExecutionV2ExecuteOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2ExecuteOperationMetadata]
   }
   
-  @scala.inline
-  implicit class BuildBazelRemoteExecutionV2ExecuteOperationMetadataMutableBuilder[Self <: BuildBazelRemoteExecutionV2ExecuteOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBazelRemoteExecutionV2ExecuteOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setActionDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "actionDigest", value.asInstanceOf[js.Any])
+    inline def setActionDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "actionDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionDigestUndefined: Self = StObject.set(x, "actionDigest", js.undefined)
+    inline def setActionDigestUndefined: Self = StObject.set(x, "actionDigest", js.undefined)
     
-    @scala.inline
-    def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
+    inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
     
-    @scala.inline
-    def setStderrStreamName(value: String): Self = StObject.set(x, "stderrStreamName", value.asInstanceOf[js.Any])
+    inline def setStderrStreamName(value: String): Self = StObject.set(x, "stderrStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStderrStreamNameUndefined: Self = StObject.set(x, "stderrStreamName", js.undefined)
+    inline def setStderrStreamNameUndefined: Self = StObject.set(x, "stderrStreamName", js.undefined)
     
-    @scala.inline
-    def setStdoutStreamName(value: String): Self = StObject.set(x, "stdoutStreamName", value.asInstanceOf[js.Any])
+    inline def setStdoutStreamName(value: String): Self = StObject.set(x, "stdoutStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdoutStreamNameUndefined: Self = StObject.set(x, "stdoutStreamName", js.undefined)
+    inline def setStdoutStreamNameUndefined: Self = StObject.set(x, "stdoutStreamName", js.undefined)
   }
 }

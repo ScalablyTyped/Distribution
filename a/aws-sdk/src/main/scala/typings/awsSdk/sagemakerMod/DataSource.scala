@@ -18,25 +18,19 @@ trait DataSource extends StObject {
 }
 object DataSource {
   
-  @scala.inline
-  def apply(): DataSource = {
+  inline def apply(): DataSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSource]
   }
   
-  @scala.inline
-  implicit class DataSourceMutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
+  extension [Self <: DataSource](x: Self) {
     
-    @scala.inline
-    def setFileSystemDataSource(value: FileSystemDataSource): Self = StObject.set(x, "FileSystemDataSource", value.asInstanceOf[js.Any])
+    inline def setFileSystemDataSource(value: FileSystemDataSource): Self = StObject.set(x, "FileSystemDataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSystemDataSourceUndefined: Self = StObject.set(x, "FileSystemDataSource", js.undefined)
+    inline def setFileSystemDataSourceUndefined: Self = StObject.set(x, "FileSystemDataSource", js.undefined)
     
-    @scala.inline
-    def setS3DataSource(value: S3DataSource): Self = StObject.set(x, "S3DataSource", value.asInstanceOf[js.Any])
+    inline def setS3DataSource(value: S3DataSource): Self = StObject.set(x, "S3DataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3DataSourceUndefined: Self = StObject.set(x, "S3DataSource", js.undefined)
+    inline def setS3DataSourceUndefined: Self = StObject.set(x, "S3DataSource", js.undefined)
   }
 }

@@ -68,82 +68,57 @@ trait WriteJourneyRequest extends StObject {
 }
 object WriteJourneyRequest {
   
-  @scala.inline
-  def apply(Name: string): WriteJourneyRequest = {
+  inline def apply(Name: string): WriteJourneyRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteJourneyRequest]
   }
   
-  @scala.inline
-  implicit class WriteJourneyRequestMutableBuilder[Self <: WriteJourneyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: WriteJourneyRequest](x: Self) {
     
-    @scala.inline
-    def setActivities(value: MapOfActivity): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
+    inline def setActivities(value: MapOfActivity): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivitiesUndefined: Self = StObject.set(x, "Activities", js.undefined)
+    inline def setActivitiesUndefined: Self = StObject.set(x, "Activities", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: string): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: string): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDate(value: string): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: string): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setLimits(value: JourneyLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: JourneyLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
+    inline def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
     
-    @scala.inline
-    def setLocalTime(value: boolean): Self = StObject.set(x, "LocalTime", value.asInstanceOf[js.Any])
+    inline def setLocalTime(value: boolean): Self = StObject.set(x, "LocalTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalTimeUndefined: Self = StObject.set(x, "LocalTime", js.undefined)
+    inline def setLocalTimeUndefined: Self = StObject.set(x, "LocalTime", js.undefined)
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuietTime(value: QuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
+    inline def setQuietTime(value: QuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
+    inline def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
     
-    @scala.inline
-    def setRefreshFrequency(value: string): Self = StObject.set(x, "RefreshFrequency", value.asInstanceOf[js.Any])
+    inline def setRefreshFrequency(value: string): Self = StObject.set(x, "RefreshFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshFrequencyUndefined: Self = StObject.set(x, "RefreshFrequency", js.undefined)
+    inline def setRefreshFrequencyUndefined: Self = StObject.set(x, "RefreshFrequency", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: JourneySchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: JourneySchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
     
-    @scala.inline
-    def setStartActivity(value: string): Self = StObject.set(x, "StartActivity", value.asInstanceOf[js.Any])
+    inline def setStartActivity(value: string): Self = StObject.set(x, "StartActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartActivityUndefined: Self = StObject.set(x, "StartActivity", js.undefined)
+    inline def setStartActivityUndefined: Self = StObject.set(x, "StartActivity", js.undefined)
     
-    @scala.inline
-    def setStartCondition(value: StartCondition): Self = StObject.set(x, "StartCondition", value.asInstanceOf[js.Any])
+    inline def setStartCondition(value: StartCondition): Self = StObject.set(x, "StartCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartConditionUndefined: Self = StObject.set(x, "StartCondition", js.undefined)
+    inline def setStartConditionUndefined: Self = StObject.set(x, "StartCondition", js.undefined)
     
-    @scala.inline
-    def setState(value: State): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: State): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

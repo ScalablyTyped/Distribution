@@ -24,24 +24,23 @@ object libTelemetryMod {
        with ITelemetry {
     def this(hasConfigClientGetInfoCtxProjectSession: TelemetryDeps) = this()
     
-    val client: IClient = js.native
+    /* protected */ val client: IClient = js.native
     
-    val config: IConfig = js.native
+    /* protected */ val config: IConfig = js.native
     
-    val ctx: IonicContext = js.native
+    /* protected */ val ctx: IonicContext = js.native
     
     /* protected */ def getInfo(): js.Promise[js.Array[InfoItem]] = js.native
     
-    val project: js.UndefOr[IProject] = js.native
+    /* protected */ val project: js.UndefOr[IProject] = js.native
     
     /* CompleteClass */
     override def sendCommand(command: String, args: js.Array[String]): js.Promise[Unit] = js.native
     
-    val session: ISession = js.native
+    /* protected */ val session: ISession = js.native
   }
   
-  @scala.inline
-  def sendCommand(hasConfigClientGetInfoCtxSessionProject: TelemetryDeps, command: String, args: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendCommand")(hasConfigClientGetInfoCtxSessionProject.asInstanceOf[js.Any], command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def sendCommand(hasConfigClientGetInfoCtxSessionProject: TelemetryDeps, command: String, args: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendCommand")(hasConfigClientGetInfoCtxSessionProject.asInstanceOf[js.Any], command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait TelemetryDeps extends StObject {
     
@@ -59,8 +58,7 @@ object libTelemetryMod {
   }
   object TelemetryDeps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       client: IClient,
       config: IConfig,
       ctx: IonicContext,
@@ -71,29 +69,21 @@ object libTelemetryMod {
       __obj.asInstanceOf[TelemetryDeps]
     }
     
-    @scala.inline
-    implicit class TelemetryDepsMutableBuilder[Self <: TelemetryDeps] (val x: Self) extends AnyVal {
+    extension [Self <: TelemetryDeps](x: Self) {
       
-      @scala.inline
-      def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtx(value: IonicContext): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      inline def setCtx(value: IonicContext): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetInfo(value: () => js.Promise[js.Array[InfoItem]]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
+      inline def setGetInfo(value: () => js.Promise[js.Array[InfoItem]]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
-      @scala.inline
-      def setSession(value: ISession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: ISession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     }
   }
 }

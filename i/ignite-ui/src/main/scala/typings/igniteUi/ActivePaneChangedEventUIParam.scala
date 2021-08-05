@@ -33,43 +33,31 @@ trait ActivePaneChangedEventUIParam extends StObject {
 }
 object ActivePaneChangedEventUIParam {
   
-  @scala.inline
-  def apply(): ActivePaneChangedEventUIParam = {
+  inline def apply(): ActivePaneChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActivePaneChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class ActivePaneChangedEventUIParamMutableBuilder[Self <: ActivePaneChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ActivePaneChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setActiveCell(value: String): Self = StObject.set(x, "activeCell", value.asInstanceOf[js.Any])
+    inline def setActiveCell(value: String): Self = StObject.set(x, "activeCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveCellUndefined: Self = StObject.set(x, "activeCell", js.undefined)
+    inline def setActiveCellUndefined: Self = StObject.set(x, "activeCell", js.undefined)
     
-    @scala.inline
-    def setNewActivePane(value: js.Any): Self = StObject.set(x, "newActivePane", value.asInstanceOf[js.Any])
+    inline def setNewActivePane(value: js.Any): Self = StObject.set(x, "newActivePane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewActivePaneUndefined: Self = StObject.set(x, "newActivePane", js.undefined)
+    inline def setNewActivePaneUndefined: Self = StObject.set(x, "newActivePane", js.undefined)
     
-    @scala.inline
-    def setOldActivePane(value: js.Any): Self = StObject.set(x, "oldActivePane", value.asInstanceOf[js.Any])
+    inline def setOldActivePane(value: js.Any): Self = StObject.set(x, "oldActivePane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldActivePaneUndefined: Self = StObject.set(x, "oldActivePane", js.undefined)
+    inline def setOldActivePaneUndefined: Self = StObject.set(x, "oldActivePane", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setVisibleRange(value: String): Self = StObject.set(x, "visibleRange", value.asInstanceOf[js.Any])
+    inline def setVisibleRange(value: String): Self = StObject.set(x, "visibleRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleRangeUndefined: Self = StObject.set(x, "visibleRange", js.undefined)
+    inline def setVisibleRangeUndefined: Self = StObject.set(x, "visibleRange", js.undefined)
   }
 }

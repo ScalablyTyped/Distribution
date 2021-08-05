@@ -11,16 +11,13 @@ trait Sticky extends StObject {
 }
 object Sticky {
   
-  @scala.inline
-  def apply(destroy: () => Unit): Sticky = {
+  inline def apply(destroy: () => Unit): Sticky = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
     __obj.asInstanceOf[Sticky]
   }
   
-  @scala.inline
-  implicit class StickyMutableBuilder[Self <: Sticky] (val x: Self) extends AnyVal {
+  extension [Self <: Sticky](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }
 }

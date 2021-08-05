@@ -17,19 +17,15 @@ trait IEquippableComponent extends StObject {
 }
 object IEquippableComponent {
   
-  @scala.inline
-  def apply(slots: js.Array[Accepteditems]): IEquippableComponent = {
+  inline def apply(slots: js.Array[Accepteditems]): IEquippableComponent = {
     val __obj = js.Dynamic.literal(slots = slots.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEquippableComponent]
   }
   
-  @scala.inline
-  implicit class IEquippableComponentMutableBuilder[Self <: IEquippableComponent] (val x: Self) extends AnyVal {
+  extension [Self <: IEquippableComponent](x: Self) {
     
-    @scala.inline
-    def setSlots(value: js.Array[Accepteditems]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: js.Array[Accepteditems]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotsVarargs(value: Accepteditems*): Self = StObject.set(x, "slots", js.Array(value :_*))
+    inline def setSlotsVarargs(value: Accepteditems*): Self = StObject.set(x, "slots", js.Array(value :_*))
   }
 }

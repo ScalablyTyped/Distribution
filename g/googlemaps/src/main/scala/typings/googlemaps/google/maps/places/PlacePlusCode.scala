@@ -12,22 +12,17 @@ trait PlacePlusCode extends StObject {
 }
 object PlacePlusCode {
   
-  @scala.inline
-  def apply(global_code: String): PlacePlusCode = {
+  inline def apply(global_code: String): PlacePlusCode = {
     val __obj = js.Dynamic.literal(global_code = global_code.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacePlusCode]
   }
   
-  @scala.inline
-  implicit class PlacePlusCodeMutableBuilder[Self <: PlacePlusCode] (val x: Self) extends AnyVal {
+  extension [Self <: PlacePlusCode](x: Self) {
     
-    @scala.inline
-    def setCompound_code(value: String): Self = StObject.set(x, "compound_code", value.asInstanceOf[js.Any])
+    inline def setCompound_code(value: String): Self = StObject.set(x, "compound_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompound_codeUndefined: Self = StObject.set(x, "compound_code", js.undefined)
+    inline def setCompound_codeUndefined: Self = StObject.set(x, "compound_code", js.undefined)
     
-    @scala.inline
-    def setGlobal_code(value: String): Self = StObject.set(x, "global_code", value.asInstanceOf[js.Any])
+    inline def setGlobal_code(value: String): Self = StObject.set(x, "global_code", value.asInstanceOf[js.Any])
   }
 }

@@ -143,8 +143,7 @@ trait NodeInstanceNodePropertie extends StObject {
 }
 object NodeInstanceNodePropertie {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _underscore: (/* id */ String, /* tplStrs */ js.UndefOr[Record[String, String | Double]]) => String
   ): NodeInstanceNodePropertie = {
     val __obj = js.Dynamic.literal()
@@ -152,22 +151,16 @@ object NodeInstanceNodePropertie {
     __obj.asInstanceOf[NodeInstanceNodePropertie]
   }
   
-  @scala.inline
-  implicit class NodeInstanceNodePropertieMutableBuilder[Self <: NodeInstanceNodePropertie] (val x: Self) extends AnyVal {
+  extension [Self <: NodeInstanceNodePropertie](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOutputs(value: Double): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: Double): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
-    @scala.inline
-    def set_underscore(value: (/* id */ String, /* tplStrs */ js.UndefOr[Record[String, String | Double]]) => String): Self = StObject.set(x, "_", js.Any.fromFunction2(value))
+    inline def set_underscore(value: (/* id */ String, /* tplStrs */ js.UndefOr[Record[String, String | Double]]) => String): Self = StObject.set(x, "_", js.Any.fromFunction2(value))
   }
 }

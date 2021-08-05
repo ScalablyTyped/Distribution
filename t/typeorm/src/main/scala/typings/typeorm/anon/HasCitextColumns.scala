@@ -24,8 +24,7 @@ trait HasCitextColumns extends StObject {
 }
 object HasCitextColumns {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasCitextColumns: Boolean,
     hasCubeColumns: Boolean,
     hasExclusionConstraints: Boolean,
@@ -39,31 +38,22 @@ object HasCitextColumns {
     __obj.asInstanceOf[HasCitextColumns]
   }
   
-  @scala.inline
-  implicit class HasCitextColumnsMutableBuilder[Self <: HasCitextColumns] (val x: Self) extends AnyVal {
+  extension [Self <: HasCitextColumns](x: Self) {
     
-    @scala.inline
-    def setHasCitextColumns(value: Boolean): Self = StObject.set(x, "hasCitextColumns", value.asInstanceOf[js.Any])
+    inline def setHasCitextColumns(value: Boolean): Self = StObject.set(x, "hasCitextColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasCubeColumns(value: Boolean): Self = StObject.set(x, "hasCubeColumns", value.asInstanceOf[js.Any])
+    inline def setHasCubeColumns(value: Boolean): Self = StObject.set(x, "hasCubeColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasExclusionConstraints(value: Boolean): Self = StObject.set(x, "hasExclusionConstraints", value.asInstanceOf[js.Any])
+    inline def setHasExclusionConstraints(value: Boolean): Self = StObject.set(x, "hasExclusionConstraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasExtensions(value: Boolean): Self = StObject.set(x, "hasExtensions", value.asInstanceOf[js.Any])
+    inline def setHasExtensions(value: Boolean): Self = StObject.set(x, "hasExtensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasGeometryColumns(value: Boolean): Self = StObject.set(x, "hasGeometryColumns", value.asInstanceOf[js.Any])
+    inline def setHasGeometryColumns(value: Boolean): Self = StObject.set(x, "hasGeometryColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasHstoreColumns(value: Boolean): Self = StObject.set(x, "hasHstoreColumns", value.asInstanceOf[js.Any])
+    inline def setHasHstoreColumns(value: Boolean): Self = StObject.set(x, "hasHstoreColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasLtreeColumns(value: Boolean): Self = StObject.set(x, "hasLtreeColumns", value.asInstanceOf[js.Any])
+    inline def setHasLtreeColumns(value: Boolean): Self = StObject.set(x, "hasLtreeColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasUuidColumns(value: Boolean): Self = StObject.set(x, "hasUuidColumns", value.asInstanceOf[js.Any])
+    inline def setHasUuidColumns(value: Boolean): Self = StObject.set(x, "hasUuidColumns", value.asInstanceOf[js.Any])
   }
 }

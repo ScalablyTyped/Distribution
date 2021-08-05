@@ -12,22 +12,17 @@ trait SDPGroup extends StObject {
 }
 object SDPGroup {
   
-  @scala.inline
-  def apply(mids: js.Array[String], semantics: String): SDPGroup = {
+  inline def apply(mids: js.Array[String], semantics: String): SDPGroup = {
     val __obj = js.Dynamic.literal(mids = mids.asInstanceOf[js.Any], semantics = semantics.asInstanceOf[js.Any])
     __obj.asInstanceOf[SDPGroup]
   }
   
-  @scala.inline
-  implicit class SDPGroupMutableBuilder[Self <: SDPGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SDPGroup](x: Self) {
     
-    @scala.inline
-    def setMids(value: js.Array[String]): Self = StObject.set(x, "mids", value.asInstanceOf[js.Any])
+    inline def setMids(value: js.Array[String]): Self = StObject.set(x, "mids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMidsVarargs(value: String*): Self = StObject.set(x, "mids", js.Array(value :_*))
+    inline def setMidsVarargs(value: String*): Self = StObject.set(x, "mids", js.Array(value :_*))
     
-    @scala.inline
-    def setSemantics(value: String): Self = StObject.set(x, "semantics", value.asInstanceOf[js.Any])
+    inline def setSemantics(value: String): Self = StObject.set(x, "semantics", value.asInstanceOf[js.Any])
   }
 }

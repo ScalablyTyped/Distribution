@@ -35,10 +35,8 @@ object auth {
     * ```
     * @param app
     */
-  @scala.inline
-  def apply(): Auth = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Auth]
-  @scala.inline
-  def apply(app: App): Auth = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Auth]
+  inline def apply(): Auth = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Auth]
+  inline def apply(app: App): Auth = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Auth]
   
   @JSImport("firebase", "default.auth")
   @js.native
@@ -61,8 +59,7 @@ object auth {
       @JSImport("firebase", "default.auth.ActionCodeInfo.Operation.EMAIL_SIGNIN")
       @js.native
       def EMAIL_SIGNIN: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation = js.native
-      @scala.inline
-      def EMAIL_SIGNIN_=(x: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_SIGNIN")(x.asInstanceOf[js.Any])
+      inline def EMAIL_SIGNIN_=(x: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_SIGNIN")(x.asInstanceOf[js.Any])
       
       /**
         * The password reset action.
@@ -70,8 +67,7 @@ object auth {
       @JSImport("firebase", "default.auth.ActionCodeInfo.Operation.PASSWORD_RESET")
       @js.native
       def PASSWORD_RESET: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation = js.native
-      @scala.inline
-      def PASSWORD_RESET_=(x: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PASSWORD_RESET")(x.asInstanceOf[js.Any])
+      inline def PASSWORD_RESET_=(x: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PASSWORD_RESET")(x.asInstanceOf[js.Any])
       
       /**
         * The email revocation action.
@@ -79,8 +75,7 @@ object auth {
       @JSImport("firebase", "default.auth.ActionCodeInfo.Operation.RECOVER_EMAIL")
       @js.native
       def RECOVER_EMAIL: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation = js.native
-      @scala.inline
-      def RECOVER_EMAIL_=(x: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RECOVER_EMAIL")(x.asInstanceOf[js.Any])
+      inline def RECOVER_EMAIL_=(x: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RECOVER_EMAIL")(x.asInstanceOf[js.Any])
       
       /**
         * The revert second factor addition email action.
@@ -88,8 +83,7 @@ object auth {
       @JSImport("firebase", "default.auth.ActionCodeInfo.Operation.REVERT_SECOND_FACTOR_ADDITION")
       @js.native
       def REVERT_SECOND_FACTOR_ADDITION: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation = js.native
-      @scala.inline
-      def REVERT_SECOND_FACTOR_ADDITION_=(x: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REVERT_SECOND_FACTOR_ADDITION")(x.asInstanceOf[js.Any])
+      inline def REVERT_SECOND_FACTOR_ADDITION_=(x: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REVERT_SECOND_FACTOR_ADDITION")(x.asInstanceOf[js.Any])
       
       /**
         * The verify and update email action.
@@ -97,8 +91,7 @@ object auth {
       @JSImport("firebase", "default.auth.ActionCodeInfo.Operation.VERIFY_AND_CHANGE_EMAIL")
       @js.native
       def VERIFY_AND_CHANGE_EMAIL: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation = js.native
-      @scala.inline
-      def VERIFY_AND_CHANGE_EMAIL_=(x: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERIFY_AND_CHANGE_EMAIL")(x.asInstanceOf[js.Any])
+      inline def VERIFY_AND_CHANGE_EMAIL_=(x: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERIFY_AND_CHANGE_EMAIL")(x.asInstanceOf[js.Any])
       
       /**
         * The email verification action.
@@ -106,8 +99,7 @@ object auth {
       @JSImport("firebase", "default.auth.ActionCodeInfo.Operation.VERIFY_EMAIL")
       @js.native
       def VERIFY_EMAIL: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation = js.native
-      @scala.inline
-      def VERIFY_EMAIL_=(x: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERIFY_EMAIL")(x.asInstanceOf[js.Any])
+      inline def VERIFY_EMAIL_=(x: typings.firebase.mod.firebase.auth.ActionCodeInfo.Operation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERIFY_EMAIL")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -116,7 +108,7 @@ object auth {
     */
   @JSImport("firebase", "default.auth.ActionCodeURL")
   @js.native
-  class ActionCodeURL protected ()
+  /* private */ class ActionCodeURL ()
     extends StObject
        with typings.firebase.mod.firebase.auth.ActionCodeURL {
     
@@ -172,8 +164,7 @@ object auth {
       * @return The ActionCodeURL object, or null if the link is invalid.
       */
     /* static member */
-    @scala.inline
-    def parseLink(link: String): typings.firebase.mod.firebase.auth.ActionCodeURL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLink")(link.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.ActionCodeURL | Null]
+    inline def parseLink(link: String): typings.firebase.mod.firebase.auth.ActionCodeURL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLink")(link.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.ActionCodeURL | Null]
   }
   
   object Auth {
@@ -194,8 +185,7 @@ object auth {
       @JSImport("firebase", "default.auth.Auth.Persistence.LOCAL")
       @js.native
       def LOCAL: typings.firebase.mod.firebase.auth.Auth.Persistence = js.native
-      @scala.inline
-      def LOCAL_=(x: typings.firebase.mod.firebase.auth.Auth.Persistence): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCAL")(x.asInstanceOf[js.Any])
+      inline def LOCAL_=(x: typings.firebase.mod.firebase.auth.Auth.Persistence): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCAL")(x.asInstanceOf[js.Any])
       
       /**
         * Indicates that the state will only be stored in memory and will be cleared
@@ -204,8 +194,7 @@ object auth {
       @JSImport("firebase", "default.auth.Auth.Persistence.NONE")
       @js.native
       def NONE: typings.firebase.mod.firebase.auth.Auth.Persistence = js.native
-      @scala.inline
-      def NONE_=(x: typings.firebase.mod.firebase.auth.Auth.Persistence): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
+      inline def NONE_=(x: typings.firebase.mod.firebase.auth.Auth.Persistence): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
       
       /**
         * Indicates that the state will only persist in current session/tab, relevant
@@ -214,8 +203,7 @@ object auth {
       @JSImport("firebase", "default.auth.Auth.Persistence.SESSION")
       @js.native
       def SESSION: typings.firebase.mod.firebase.auth.Auth.Persistence = js.native
-      @scala.inline
-      def SESSION_=(x: typings.firebase.mod.firebase.auth.Auth.Persistence): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SESSION")(x.asInstanceOf[js.Any])
+      inline def SESSION_=(x: typings.firebase.mod.firebase.auth.Auth.Persistence): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SESSION")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -259,8 +247,7 @@ object auth {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromJSON(json: String): typings.firebase.mod.firebase.auth.AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.AuthCredential | Null]
+    inline def fromJSON(json: String): typings.firebase.mod.firebase.auth.AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.AuthCredential | Null]
     /**
       * Static method to deserialize a JSON representation of an object into an
       * {@link firebase.auth.AuthCredential}. Input can be either Object or the
@@ -271,8 +258,7 @@ object auth {
       *     AuthCredential.
       */
     /* static member */
-    @scala.inline
-    def fromJSON(json: js.Object): typings.firebase.mod.firebase.auth.AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.AuthCredential | Null]
+    inline def fromJSON(json: js.Object): typings.firebase.mod.firebase.auth.AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.AuthCredential | Null]
   }
   
   /**
@@ -304,8 +290,7 @@ object auth {
     @JSImport("firebase", "default.auth.EmailAuthProvider.EMAIL_LINK_SIGN_IN_METHOD")
     @js.native
     def EMAIL_LINK_SIGN_IN_METHOD: String = js.native
-    @scala.inline
-    def EMAIL_LINK_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_LINK_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
+    inline def EMAIL_LINK_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_LINK_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
     
     /**
       * This corresponds to the sign-in method identifier as returned in
@@ -315,15 +300,13 @@ object auth {
     @JSImport("firebase", "default.auth.EmailAuthProvider.EMAIL_PASSWORD_SIGN_IN_METHOD")
     @js.native
     def EMAIL_PASSWORD_SIGN_IN_METHOD: String = js.native
-    @scala.inline
-    def EMAIL_PASSWORD_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_PASSWORD_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
+    inline def EMAIL_PASSWORD_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMAIL_PASSWORD_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("firebase", "default.auth.EmailAuthProvider.PROVIDER_ID")
     @js.native
     def PROVIDER_ID: String = js.native
-    @scala.inline
-    def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
+    inline def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
     
     /**
       * @example
@@ -339,8 +322,7 @@ object auth {
       * @return The auth provider credential.
       */
     /* static member */
-    @scala.inline
-    def credential(email: String, password: String): typings.firebase.mod.firebase.auth.AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(email.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.AuthCredential]
+    inline def credential(email: String, password: String): typings.firebase.mod.firebase.auth.AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(email.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.AuthCredential]
     
     /**
       * Initialize an `EmailAuthProvider` credential using an email and an email link
@@ -359,8 +341,7 @@ object auth {
       * @return The auth provider credential.
       */
     /* static member */
-    @scala.inline
-    def credentialWithLink(email: String, emailLink: String): typings.firebase.mod.firebase.auth.AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credentialWithLink")(email.asInstanceOf[js.Any], emailLink.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.AuthCredential]
+    inline def credentialWithLink(email: String, emailLink: String): typings.firebase.mod.firebase.auth.AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credentialWithLink")(email.asInstanceOf[js.Any], emailLink.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.AuthCredential]
   }
   
   /**
@@ -457,15 +438,13 @@ object auth {
     @JSImport("firebase", "default.auth.FacebookAuthProvider.FACEBOOK_SIGN_IN_METHOD")
     @js.native
     def FACEBOOK_SIGN_IN_METHOD: String = js.native
-    @scala.inline
-    def FACEBOOK_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACEBOOK_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
+    inline def FACEBOOK_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACEBOOK_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("firebase", "default.auth.FacebookAuthProvider.PROVIDER_ID")
     @js.native
     def PROVIDER_ID: String = js.native
-    @scala.inline
-    def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
+    inline def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
     
     /**
       * @example
@@ -479,8 +458,7 @@ object auth {
       * @param token Facebook access token.
       */
     /* static member */
-    @scala.inline
-    def credential(token: String): typings.firebase.mod.firebase.auth.OAuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")(token.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
+    inline def credential(token: String): typings.firebase.mod.firebase.auth.OAuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")(token.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
   }
   
   /**
@@ -631,15 +609,13 @@ object auth {
     @JSImport("firebase", "default.auth.GithubAuthProvider.GITHUB_SIGN_IN_METHOD")
     @js.native
     def GITHUB_SIGN_IN_METHOD: String = js.native
-    @scala.inline
-    def GITHUB_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GITHUB_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
+    inline def GITHUB_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GITHUB_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("firebase", "default.auth.GithubAuthProvider.PROVIDER_ID")
     @js.native
     def PROVIDER_ID: String = js.native
-    @scala.inline
-    def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
+    inline def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
     
     /**
       * @example
@@ -654,8 +630,7 @@ object auth {
       * @return {!firebase.auth.OAuthCredential} The auth provider credential.
       */
     /* static member */
-    @scala.inline
-    def credential(token: String): typings.firebase.mod.firebase.auth.OAuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")(token.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
+    inline def credential(token: String): typings.firebase.mod.firebase.auth.OAuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")(token.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
   }
   
   /**
@@ -778,15 +753,13 @@ object auth {
     @JSImport("firebase", "default.auth.GoogleAuthProvider.GOOGLE_SIGN_IN_METHOD")
     @js.native
     def GOOGLE_SIGN_IN_METHOD: String = js.native
-    @scala.inline
-    def GOOGLE_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOOGLE_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
+    inline def GOOGLE_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOOGLE_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("firebase", "default.auth.GoogleAuthProvider.PROVIDER_ID")
     @js.native
     def PROVIDER_ID: String = js.native
-    @scala.inline
-    def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
+    inline def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
     
     /**
       * Creates a credential for Google. At least one of ID token and access token
@@ -804,16 +777,11 @@ object auth {
       * @return The auth provider credential.
       */
     /* static member */
-    @scala.inline
-    def credential(): typings.firebase.mod.firebase.auth.OAuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")().asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
-    @scala.inline
-    def credential(idToken: String): typings.firebase.mod.firebase.auth.OAuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
-    @scala.inline
-    def credential(idToken: String, accessToken: String): typings.firebase.mod.firebase.auth.OAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
-    @scala.inline
-    def credential(idToken: Null, accessToken: String): typings.firebase.mod.firebase.auth.OAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
-    @scala.inline
-    def credential(idToken: Unit, accessToken: String): typings.firebase.mod.firebase.auth.OAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
+    inline def credential(): typings.firebase.mod.firebase.auth.OAuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")().asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
+    inline def credential(idToken: String): typings.firebase.mod.firebase.auth.OAuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
+    inline def credential(idToken: String, accessToken: String): typings.firebase.mod.firebase.auth.OAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
+    inline def credential(idToken: Null, accessToken: String): typings.firebase.mod.firebase.auth.OAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
+    inline def credential(idToken: Unit, accessToken: String): typings.firebase.mod.firebase.auth.OAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
   }
   
   /**
@@ -925,7 +893,7 @@ object auth {
     */
   @JSImport("firebase", "default.auth.MultiFactorResolver")
   @js.native
-  class MultiFactorResolver protected ()
+  /* private */ class MultiFactorResolver ()
     extends StObject
        with typings.firebase.mod.firebase.auth.MultiFactorResolver {
     
@@ -989,7 +957,7 @@ object auth {
     */
   @JSImport("firebase", "default.auth.MultiFactorSession")
   @js.native
-  class MultiFactorSession protected ()
+  /* private */ class MultiFactorSession ()
     extends StObject
        with typings.firebase.mod.firebase.auth.MultiFactorSession
   
@@ -1001,7 +969,7 @@ object auth {
     */
   @JSImport("firebase", "default.auth.OAuthCredential")
   @js.native
-  class OAuthCredential protected ()
+  /* private */ class OAuthCredential ()
     extends StObject
        with typings.firebase.mod.firebase.auth.OAuthCredential {
     
@@ -1084,7 +1052,7 @@ object auth {
     */
   @JSImport("firebase", "default.auth.PhoneAuthCredential")
   @js.native
-  class PhoneAuthCredential protected ()
+  /* private */ class PhoneAuthCredential ()
     extends StObject
        with typings.firebase.mod.firebase.auth.AuthCredential {
     
@@ -1157,15 +1125,13 @@ object auth {
     @JSImport("firebase", "default.auth.PhoneAuthProvider.PHONE_SIGN_IN_METHOD")
     @js.native
     def PHONE_SIGN_IN_METHOD: String = js.native
-    @scala.inline
-    def PHONE_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PHONE_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
+    inline def PHONE_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PHONE_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("firebase", "default.auth.PhoneAuthProvider.PROVIDER_ID")
     @js.native
     def PROVIDER_ID: String = js.native
-    @scala.inline
-    def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
+    inline def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
     
     /**
       * Creates a phone auth credential, given the verification ID from
@@ -1187,8 +1153,7 @@ object auth {
       * @return The auth provider credential.
       */
     /* static member */
-    @scala.inline
-    def credential(verificationId: String, verificationCode: String): typings.firebase.mod.firebase.auth.AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(verificationId.asInstanceOf[js.Any], verificationCode.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.AuthCredential]
+    inline def credential(verificationId: String, verificationCode: String): typings.firebase.mod.firebase.auth.AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(verificationId.asInstanceOf[js.Any], verificationCode.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.AuthCredential]
   }
   
   /**
@@ -1210,7 +1175,7 @@ object auth {
     */
   @JSImport("firebase", "default.auth.PhoneMultiFactorAssertion")
   @js.native
-  class PhoneMultiFactorAssertion protected ()
+  /* private */ class PhoneMultiFactorAssertion ()
     extends StObject
        with typings.firebase.mod.firebase.auth.MultiFactorAssertion {
     
@@ -1226,7 +1191,7 @@ object auth {
     */
   @JSImport("firebase", "default.auth.PhoneMultiFactorGenerator")
   @js.native
-  class PhoneMultiFactorGenerator protected ()
+  /* private */ class PhoneMultiFactorGenerator ()
     extends StObject
        with typings.firebase.mod.firebase.auth.PhoneMultiFactorGenerator
   object PhoneMultiFactorGenerator {
@@ -1242,16 +1207,14 @@ object auth {
     @JSImport("firebase", "default.auth.PhoneMultiFactorGenerator.FACTOR_ID")
     @js.native
     def FACTOR_ID: String = js.native
-    @scala.inline
-    def FACTOR_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACTOR_ID")(x.asInstanceOf[js.Any])
+    inline def FACTOR_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACTOR_ID")(x.asInstanceOf[js.Any])
     
     /**
       * Initializes the {@link firebase.auth.PhoneMultiFactorAssertion} to confirm ownership
       * of the phone second factor.
       */
     /* static member */
-    @scala.inline
-    def assertion(phoneAuthCredential: typings.firebase.mod.firebase.auth.PhoneAuthCredential): typings.firebase.mod.firebase.auth.PhoneMultiFactorAssertion = ^.asInstanceOf[js.Dynamic].applyDynamic("assertion")(phoneAuthCredential.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.PhoneMultiFactorAssertion]
+    inline def assertion(phoneAuthCredential: typings.firebase.mod.firebase.auth.PhoneAuthCredential): typings.firebase.mod.firebase.auth.PhoneMultiFactorAssertion = ^.asInstanceOf[js.Dynamic].applyDynamic("assertion")(phoneAuthCredential.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.auth.PhoneMultiFactorAssertion]
   }
   
   /**
@@ -1437,8 +1400,7 @@ object auth {
     @JSImport("firebase", "default.auth.TwitterAuthProvider.PROVIDER_ID")
     @js.native
     def PROVIDER_ID: String = js.native
-    @scala.inline
-    def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
+    inline def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
     
     /**
       * This corresponds to the sign-in method identifier as returned in
@@ -1449,8 +1411,7 @@ object auth {
     @JSImport("firebase", "default.auth.TwitterAuthProvider.TWITTER_SIGN_IN_METHOD")
     @js.native
     def TWITTER_SIGN_IN_METHOD: String = js.native
-    @scala.inline
-    def TWITTER_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWITTER_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
+    inline def TWITTER_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWITTER_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
     
     /**
       * @param token Twitter access token.
@@ -1458,8 +1419,7 @@ object auth {
       * @return The auth provider credential.
       */
     /* static member */
-    @scala.inline
-    def credential(token: String, secret: String): typings.firebase.mod.firebase.auth.OAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
+    inline def credential(token: String, secret: String): typings.firebase.mod.firebase.auth.OAuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.auth.OAuthCredential]
   }
   
   /**

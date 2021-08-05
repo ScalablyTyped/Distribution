@@ -44,8 +44,7 @@ object activexFaxcomexlibNumbers {
        with FAX_SERVER_APIVERSION_ENUM
        with FAX_SERVER_EVENTS_TYPE_ENUM
        with FAX_SMTP_AUTHENTICATION_TYPE_ENUM
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
+  inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
   sealed trait `1`
@@ -68,44 +67,38 @@ object activexFaxcomexlibNumbers {
        with FAX_SCHEDULE_TYPE_ENUM
        with FAX_SERVER_EVENTS_TYPE_ENUM
        with FAX_SMTP_AUTHENTICATION_TYPE_ENUM
-  @scala.inline
-  def `1`: `1` = 1.asInstanceOf[`1`]
+  inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
   sealed trait `10`
     extends StObject
        with FAX_JOB_EXTENDED_STATUS_ENUM
-  @scala.inline
-  def `10`: `10` = 10.asInstanceOf[`10`]
+  inline def `10`: `10` = 10.asInstanceOf[`10`]
   
   @js.native
   sealed trait `100`
     extends StObject
        with FaxConstants
-  @scala.inline
-  def `100`: `100` = 100.asInstanceOf[`100`]
+  inline def `100`: `100` = 100.asInstanceOf[`100`]
   
   @js.native
   sealed trait `1024`
     extends StObject
        with FAX_ACCESS_RIGHTS_ENUM
        with FAX_JOB_STATUS_ENUM
-  @scala.inline
-  def `1024`: `1024` = 1024.asInstanceOf[`1024`]
+  inline def `1024`: `1024` = 1024.asInstanceOf[`1024`]
   
   @js.native
   sealed trait `11`
     extends StObject
        with FAX_JOB_EXTENDED_STATUS_ENUM
-  @scala.inline
-  def `11`: `11` = 11.asInstanceOf[`11`]
+  inline def `11`: `11` = 11.asInstanceOf[`11`]
   
   @js.native
   sealed trait `12`
     extends StObject
        with FAX_JOB_EXTENDED_STATUS_ENUM
-  @scala.inline
-  def `12`: `12` = 12.asInstanceOf[`12`]
+  inline def `12`: `12` = 12.asInstanceOf[`12`]
   
   @js.native
   sealed trait `128`
@@ -114,36 +107,31 @@ object activexFaxcomexlibNumbers {
        with FAX_ACCESS_RIGHTS_ENUM_2
        with FAX_JOB_STATUS_ENUM
        with FAX_SERVER_EVENTS_TYPE_ENUM
-  @scala.inline
-  def `128`: `128` = 128.asInstanceOf[`128`]
+  inline def `128`: `128` = 128.asInstanceOf[`128`]
   
   @js.native
   sealed trait `13`
     extends StObject
        with FAX_JOB_EXTENDED_STATUS_ENUM
-  @scala.inline
-  def `13`: `13` = 13.asInstanceOf[`13`]
+  inline def `13`: `13` = 13.asInstanceOf[`13`]
   
   @js.native
   sealed trait `131072`
     extends StObject
        with FAX_SERVER_APIVERSION_ENUM
-  @scala.inline
-  def `131072`: `131072` = 131072.asInstanceOf[`131072`]
+  inline def `131072`: `131072` = 131072.asInstanceOf[`131072`]
   
   @js.native
   sealed trait `14`
     extends StObject
        with FAX_JOB_EXTENDED_STATUS_ENUM
-  @scala.inline
-  def `14`: `14` = 14.asInstanceOf[`14`]
+  inline def `14`: `14` = 14.asInstanceOf[`14`]
   
   @js.native
   sealed trait `15`
     extends StObject
        with FAX_JOB_EXTENDED_STATUS_ENUM
-  @scala.inline
-  def `15`: `15` = 15.asInstanceOf[`15`]
+  inline def `15`: `15` = 15.asInstanceOf[`15`]
   
   @js.native
   sealed trait `16`
@@ -155,43 +143,37 @@ object activexFaxcomexlibNumbers {
        with FAX_JOB_OPERATIONS_ENUM
        with FAX_JOB_STATUS_ENUM
        with FAX_SERVER_EVENTS_TYPE_ENUM
-  @scala.inline
-  def `16`: `16` = 16.asInstanceOf[`16`]
+  inline def `16`: `16` = 16.asInstanceOf[`16`]
   
   @js.native
   sealed trait `16777216`
     extends StObject
        with FAX_JOB_EXTENDED_STATUS_ENUM
-  @scala.inline
-  def `16777216`: `16777216` = 16777216.asInstanceOf[`16777216`]
+  inline def `16777216`: `16777216` = 16777216.asInstanceOf[`16777216`]
   
   @js.native
   sealed trait `17`
     extends StObject
        with FAX_JOB_EXTENDED_STATUS_ENUM
-  @scala.inline
-  def `17`: `17` = 17.asInstanceOf[`17`]
+  inline def `17`: `17` = 17.asInstanceOf[`17`]
   
   @js.native
   sealed trait `18`
     extends StObject
        with FAX_JOB_EXTENDED_STATUS_ENUM
-  @scala.inline
-  def `18`: `18` = 18.asInstanceOf[`18`]
+  inline def `18`: `18` = 18.asInstanceOf[`18`]
   
   @js.native
   sealed trait `19`
     extends StObject
        with FAX_JOB_EXTENDED_STATUS_ENUM
-  @scala.inline
-  def `19`: `19` = 19.asInstanceOf[`19`]
+  inline def `19`: `19` = 19.asInstanceOf[`19`]
   
   @js.native
   sealed trait `196608`
     extends StObject
        with FAX_SERVER_APIVERSION_ENUM
-  @scala.inline
-  def `196608`: `196608` = 196608.asInstanceOf[`196608`]
+  inline def `196608`: `196608` = 196608.asInstanceOf[`196608`]
   
   @js.native
   sealed trait `2`
@@ -213,15 +195,13 @@ object activexFaxcomexlibNumbers {
        with FAX_SCHEDULE_TYPE_ENUM
        with FAX_SERVER_EVENTS_TYPE_ENUM
        with FAX_SMTP_AUTHENTICATION_TYPE_ENUM
-  @scala.inline
-  def `2`: `2` = 2.asInstanceOf[`2`]
+  inline def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
   sealed trait `2048`
     extends StObject
        with FAX_JOB_STATUS_ENUM
-  @scala.inline
-  def `2048`: `2048` = 2048.asInstanceOf[`2048`]
+  inline def `2048`: `2048` = 2048.asInstanceOf[`2048`]
   
   @js.native
   sealed trait `256`
@@ -230,8 +210,7 @@ object activexFaxcomexlibNumbers {
        with FAX_ACCESS_RIGHTS_ENUM_2
        with FAX_JOB_STATUS_ENUM
        with FAX_SERVER_EVENTS_TYPE_ENUM
-  @scala.inline
-  def `256`: `256` = 256.asInstanceOf[`256`]
+  inline def `256`: `256` = 256.asInstanceOf[`256`]
   
   @js.native
   sealed trait `3`
@@ -241,8 +220,7 @@ object activexFaxcomexlibNumbers {
        with FAX_LOG_LEVEL_ENUM
        with FAX_PROVIDER_STATUS_ENUM
        with FAX_RULE_STATUS_ENUM
-  @scala.inline
-  def `3`: `3` = 3.asInstanceOf[`3`]
+  inline def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
   sealed trait `32`
@@ -252,8 +230,7 @@ object activexFaxcomexlibNumbers {
        with FAX_JOB_OPERATIONS_ENUM
        with FAX_JOB_STATUS_ENUM
        with FAX_SERVER_EVENTS_TYPE_ENUM
-  @scala.inline
-  def `32`: `32` = 32.asInstanceOf[`32`]
+  inline def `32`: `32` = 32.asInstanceOf[`32`]
   
   @js.native
   sealed trait `4`
@@ -267,16 +244,14 @@ object activexFaxcomexlibNumbers {
        with FAX_RECEIPT_TYPE_ENUM
        with FAX_RULE_STATUS_ENUM
        with FAX_SERVER_EVENTS_TYPE_ENUM
-  @scala.inline
-  def `4`: `4` = 4.asInstanceOf[`4`]
+  inline def `4`: `4` = 4.asInstanceOf[`4`]
   
   @js.native
   sealed trait `5`
     extends StObject
        with FAX_JOB_EXTENDED_STATUS_ENUM
        with FAX_PROVIDER_STATUS_ENUM
-  @scala.inline
-  def `5`: `5` = 5.asInstanceOf[`5`]
+  inline def `5`: `5` = 5.asInstanceOf[`5`]
   
   @js.native
   sealed trait `512`
@@ -285,23 +260,20 @@ object activexFaxcomexlibNumbers {
        with FAX_ACCESS_RIGHTS_ENUM_2
        with FAX_JOB_STATUS_ENUM
        with FAX_SERVER_EVENTS_TYPE_ENUM
-  @scala.inline
-  def `512`: `512` = 512.asInstanceOf[`512`]
+  inline def `512`: `512` = 512.asInstanceOf[`512`]
   
   @js.native
   sealed trait `59`
     extends StObject
        with FaxConstants
-  @scala.inline
-  def `59`: `59` = 59.asInstanceOf[`59`]
+  inline def `59`: `59` = 59.asInstanceOf[`59`]
   
   @js.native
   sealed trait `6`
     extends StObject
        with FAX_JOB_EXTENDED_STATUS_ENUM
        with FAX_PROVIDER_STATUS_ENUM
-  @scala.inline
-  def `6`: `6` = 6.asInstanceOf[`6`]
+  inline def `6`: `6` = 6.asInstanceOf[`6`]
   
   @js.native
   sealed trait `64`
@@ -311,22 +283,19 @@ object activexFaxcomexlibNumbers {
        with FAX_JOB_OPERATIONS_ENUM
        with FAX_JOB_STATUS_ENUM
        with FAX_SERVER_EVENTS_TYPE_ENUM
-  @scala.inline
-  def `64`: `64` = 64.asInstanceOf[`64`]
+  inline def `64`: `64` = 64.asInstanceOf[`64`]
   
   @js.native
   sealed trait `65536`
     extends StObject
        with FAX_SERVER_APIVERSION_ENUM
-  @scala.inline
-  def `65536`: `65536` = 65536.asInstanceOf[`65536`]
+  inline def `65536`: `65536` = 65536.asInstanceOf[`65536`]
   
   @js.native
   sealed trait `7`
     extends StObject
        with FAX_JOB_EXTENDED_STATUS_ENUM
-  @scala.inline
-  def `7`: `7` = 7.asInstanceOf[`7`]
+  inline def `7`: `7` = 7.asInstanceOf[`7`]
   
   @js.native
   sealed trait `8`
@@ -338,13 +307,11 @@ object activexFaxcomexlibNumbers {
        with FAX_JOB_OPERATIONS_ENUM
        with FAX_JOB_STATUS_ENUM
        with FAX_SERVER_EVENTS_TYPE_ENUM
-  @scala.inline
-  def `8`: `8` = 8.asInstanceOf[`8`]
+  inline def `8`: `8` = 8.asInstanceOf[`8`]
   
   @js.native
   sealed trait `9`
     extends StObject
        with FAX_JOB_EXTENDED_STATUS_ENUM
-  @scala.inline
-  def `9`: `9` = 9.asInstanceOf[`9`]
+  inline def `9`: `9` = 9.asInstanceOf[`9`]
 }

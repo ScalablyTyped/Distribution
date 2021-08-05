@@ -12,19 +12,15 @@ trait TileIndex extends StObject {
 }
 object TileIndex {
   
-  @scala.inline
-  def apply(xIndex: Double, yIndex: Double): TileIndex = {
+  inline def apply(xIndex: Double, yIndex: Double): TileIndex = {
     val __obj = js.Dynamic.literal(xIndex = xIndex.asInstanceOf[js.Any], yIndex = yIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileIndex]
   }
   
-  @scala.inline
-  implicit class TileIndexMutableBuilder[Self <: TileIndex] (val x: Self) extends AnyVal {
+  extension [Self <: TileIndex](x: Self) {
     
-    @scala.inline
-    def setXIndex(value: Double): Self = StObject.set(x, "xIndex", value.asInstanceOf[js.Any])
+    inline def setXIndex(value: Double): Self = StObject.set(x, "xIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYIndex(value: Double): Self = StObject.set(x, "yIndex", value.asInstanceOf[js.Any])
+    inline def setYIndex(value: Double): Self = StObject.set(x, "yIndex", value.asInstanceOf[js.Any])
   }
 }

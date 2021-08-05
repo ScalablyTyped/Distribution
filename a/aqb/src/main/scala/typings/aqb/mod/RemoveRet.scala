@@ -20,8 +20,7 @@ trait RemoveRet extends StObject {
 }
 object RemoveRet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     in: /* collection */ js.Any => RemoveExpression,
     in_ : /* collection */ js.Any => RemoveExpression,
     into: js.Any => RemoveExpression
@@ -30,16 +29,12 @@ object RemoveRet {
     __obj.asInstanceOf[RemoveRet]
   }
   
-  @scala.inline
-  implicit class RemoveRetMutableBuilder[Self <: RemoveRet] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveRet](x: Self) {
     
-    @scala.inline
-    def setIn(value: /* collection */ js.Any => RemoveExpression): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    inline def setIn(value: /* collection */ js.Any => RemoveExpression): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIn_(value: /* collection */ js.Any => RemoveExpression): Self = StObject.set(x, "in_", js.Any.fromFunction1(value))
+    inline def setIn_(value: /* collection */ js.Any => RemoveExpression): Self = StObject.set(x, "in_", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInto(value: js.Any => RemoveExpression): Self = StObject.set(x, "into", js.Any.fromFunction1(value))
+    inline def setInto(value: js.Any => RemoveExpression): Self = StObject.set(x, "into", js.Any.fromFunction1(value))
   }
 }

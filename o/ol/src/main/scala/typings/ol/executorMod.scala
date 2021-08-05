@@ -35,7 +35,7 @@ object executorMod {
   @js.native
   trait Executor extends StObject {
     
-    var coordinates: js.Array[Double] = js.native
+    /* protected */ var coordinates: js.Array[Double] = js.native
     
     def createLabel(text: String, textKey: String, fillKey: String, strokeKey: String): Label = js.native
     
@@ -69,13 +69,13 @@ object executorMod {
       opt_hitExtent: Extent
     ): js.UndefOr[T] = js.native
     
-    var hitDetectionInstructions: js.Array[js.Any] = js.native
+    /* protected */ var hitDetectionInstructions: js.Array[js.Any] = js.native
     
-    var instructions: js.Array[js.Any] = js.native
+    /* protected */ var instructions: js.Array[js.Any] = js.native
     
-    var overlaps: Boolean = js.native
+    /* protected */ var overlaps: Boolean = js.native
     
-    var pixelRatio: Double = js.native
+    /* protected */ var pixelRatio: Double = js.native
     
     def renderDeclutter(declutterGroup: DeclutterGroup, feature: FeatureLike, opacity: Double, declutterTree: js.Any): js.Any = js.native
     
@@ -90,7 +90,7 @@ object executorMod {
       declutter: Boolean
     ): Unit = js.native
     
-    var resolution: Double = js.native
+    /* protected */ var resolution: Double = js.native
   }
   
   trait SerializableInstructions extends StObject {
@@ -109,8 +109,7 @@ object executorMod {
   }
   object SerializableInstructions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       coordinates: js.Array[Double],
       fillStates: StringDictionary[FillState],
       hitDetectionInstructions: js.Array[js.Any],
@@ -122,35 +121,25 @@ object executorMod {
       __obj.asInstanceOf[SerializableInstructions]
     }
     
-    @scala.inline
-    implicit class SerializableInstructionsMutableBuilder[Self <: SerializableInstructions] (val x: Self) extends AnyVal {
+    extension [Self <: SerializableInstructions](x: Self) {
       
-      @scala.inline
-      def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      inline def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+      inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
       
-      @scala.inline
-      def setFillStates(value: StringDictionary[FillState]): Self = StObject.set(x, "fillStates", value.asInstanceOf[js.Any])
+      inline def setFillStates(value: StringDictionary[FillState]): Self = StObject.set(x, "fillStates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHitDetectionInstructions(value: js.Array[js.Any]): Self = StObject.set(x, "hitDetectionInstructions", value.asInstanceOf[js.Any])
+      inline def setHitDetectionInstructions(value: js.Array[js.Any]): Self = StObject.set(x, "hitDetectionInstructions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHitDetectionInstructionsVarargs(value: js.Any*): Self = StObject.set(x, "hitDetectionInstructions", js.Array(value :_*))
+      inline def setHitDetectionInstructionsVarargs(value: js.Any*): Self = StObject.set(x, "hitDetectionInstructions", js.Array(value :_*))
       
-      @scala.inline
-      def setInstructions(value: js.Array[js.Any]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
+      inline def setInstructions(value: js.Array[js.Any]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstructionsVarargs(value: js.Any*): Self = StObject.set(x, "instructions", js.Array(value :_*))
+      inline def setInstructionsVarargs(value: js.Any*): Self = StObject.set(x, "instructions", js.Array(value :_*))
       
-      @scala.inline
-      def setStrokeStates(value: StringDictionary[StrokeState]): Self = StObject.set(x, "strokeStates", value.asInstanceOf[js.Any])
+      inline def setStrokeStates(value: StringDictionary[StrokeState]): Self = StObject.set(x, "strokeStates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStates(value: StringDictionary[TextState]): Self = StObject.set(x, "textStates", value.asInstanceOf[js.Any])
+      inline def setTextStates(value: StringDictionary[TextState]): Self = StObject.set(x, "textStates", value.asInstanceOf[js.Any])
     }
   }
 }

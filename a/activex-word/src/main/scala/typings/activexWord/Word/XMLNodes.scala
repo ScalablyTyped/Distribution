@@ -20,6 +20,6 @@ trait XMLNodes extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.XMLNodes_typekey")
+  /* private */ @JSName("Word.XMLNodes_typekey")
   var WordDotXMLNodes_typekey: XMLNodes = js.native
 }

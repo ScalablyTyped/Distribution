@@ -20,52 +20,37 @@ trait ITpRegisterRequest extends StObject {
 }
 object ITpRegisterRequest {
   
-  @scala.inline
-  def apply(): ITpRegisterRequest = {
+  inline def apply(): ITpRegisterRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITpRegisterRequest]
   }
   
-  @scala.inline
-  implicit class ITpRegisterRequestMutableBuilder[Self <: ITpRegisterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ITpRegisterRequest](x: Self) {
     
-    @scala.inline
-    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyNull: Self = StObject.set(x, "family", null)
+    inline def setFamilyNull: Self = StObject.set(x, "family", null)
     
-    @scala.inline
-    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+    inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
-    @scala.inline
-    def setMaxOccupancy(value: Double): Self = StObject.set(x, "maxOccupancy", value.asInstanceOf[js.Any])
+    inline def setMaxOccupancy(value: Double): Self = StObject.set(x, "maxOccupancy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxOccupancyNull: Self = StObject.set(x, "maxOccupancy", null)
+    inline def setMaxOccupancyNull: Self = StObject.set(x, "maxOccupancy", null)
     
-    @scala.inline
-    def setMaxOccupancyUndefined: Self = StObject.set(x, "maxOccupancy", js.undefined)
+    inline def setMaxOccupancyUndefined: Self = StObject.set(x, "maxOccupancy", js.undefined)
     
-    @scala.inline
-    def setNamespaces(value: js.Array[String]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
+    inline def setNamespaces(value: js.Array[String]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespacesNull: Self = StObject.set(x, "namespaces", null)
+    inline def setNamespacesNull: Self = StObject.set(x, "namespaces", null)
     
-    @scala.inline
-    def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
+    inline def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
     
-    @scala.inline
-    def setNamespacesVarargs(value: String*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
+    inline def setNamespacesVarargs(value: String*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNull: Self = StObject.set(x, "version", null)
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -27,44 +27,32 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildCount(value: Double): Self = StObject.set(x, "childCount", value.asInstanceOf[js.Any])
+      inline def setChildCount(value: Double): Self = StObject.set(x, "childCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildCountUndefined: Self = StObject.set(x, "childCount", js.undefined)
+      inline def setChildCountUndefined: Self = StObject.set(x, "childCount", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setStyle(value: Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSwipeOptions(value: SwipeOptions): Self = StObject.set(x, "swipeOptions", value.asInstanceOf[js.Any])
+      inline def setSwipeOptions(value: SwipeOptions): Self = StObject.set(x, "swipeOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeOptionsUndefined: Self = StObject.set(x, "swipeOptions", js.undefined)
+      inline def setSwipeOptionsUndefined: Self = StObject.set(x, "swipeOptions", js.undefined)
     }
   }
   
@@ -93,23 +81,18 @@ object mod {
   }
   object Style {
     
-    @scala.inline
-    def apply(child: CSSProperties, container: CSSProperties, wrapper: CSSProperties): Style = {
+    inline def apply(child: CSSProperties, container: CSSProperties, wrapper: CSSProperties): Style = {
       val __obj = js.Dynamic.literal(child = child.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
       __obj.asInstanceOf[Style]
     }
     
-    @scala.inline
-    implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
+    extension [Self <: Style](x: Self) {
       
-      @scala.inline
-      def setChild(value: CSSProperties): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
+      inline def setChild(value: CSSProperties): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: CSSProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: CSSProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapper(value: CSSProperties): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: CSSProperties): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
 }

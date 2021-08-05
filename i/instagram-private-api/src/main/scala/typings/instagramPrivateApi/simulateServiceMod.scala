@@ -13,7 +13,7 @@ object simulateServiceMod {
   class SimulateService protected () extends Repository {
     def this(client: IgApiClient) = this()
     
-    var facebookOta: js.Any = js.native
+    /* private */ var facebookOta: js.Any = js.native
     
     def postLoginFlow(): js.Promise[Unit] = js.native
     def postLoginFlow(concurrency: Double): js.Promise[Unit] = js.native
@@ -39,7 +39,6 @@ object simulateServiceMod {
     @JSImport("instagram-private-api/dist/services/simulate.service", "SimulateService.executeRequestsFlow")
     @js.native
     def executeRequestsFlow: js.Any = js.native
-    @scala.inline
-    def executeRequestsFlow_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("executeRequestsFlow")(x.asInstanceOf[js.Any])
+    inline def executeRequestsFlow_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("executeRequestsFlow")(x.asInstanceOf[js.Any])
   }
 }

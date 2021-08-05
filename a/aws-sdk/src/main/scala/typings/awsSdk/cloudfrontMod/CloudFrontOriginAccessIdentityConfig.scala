@@ -18,19 +18,15 @@ trait CloudFrontOriginAccessIdentityConfig extends StObject {
 }
 object CloudFrontOriginAccessIdentityConfig {
   
-  @scala.inline
-  def apply(CallerReference: String, Comment: String): CloudFrontOriginAccessIdentityConfig = {
+  inline def apply(CallerReference: String, Comment: String): CloudFrontOriginAccessIdentityConfig = {
     val __obj = js.Dynamic.literal(CallerReference = CallerReference.asInstanceOf[js.Any], Comment = Comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudFrontOriginAccessIdentityConfig]
   }
   
-  @scala.inline
-  implicit class CloudFrontOriginAccessIdentityConfigMutableBuilder[Self <: CloudFrontOriginAccessIdentityConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CloudFrontOriginAccessIdentityConfig](x: Self) {
     
-    @scala.inline
-    def setCallerReference(value: String): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
+    inline def setCallerReference(value: String): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
   }
 }

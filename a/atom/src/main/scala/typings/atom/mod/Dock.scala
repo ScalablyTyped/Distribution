@@ -123,8 +123,7 @@ trait Dock extends StObject {
 }
 object Dock {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activate: () => Unit,
     activateNextPane: () => Boolean,
     activatePreviousPane: () => Boolean,
@@ -157,88 +156,60 @@ object Dock {
     __obj.asInstanceOf[Dock]
   }
   
-  @scala.inline
-  implicit class DockMutableBuilder[Self <: Dock] (val x: Self) extends AnyVal {
+  extension [Self <: Dock](x: Self) {
     
-    @scala.inline
-    def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
+    inline def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setActivateNextPane(value: () => Boolean): Self = StObject.set(x, "activateNextPane", js.Any.fromFunction0(value))
+    inline def setActivateNextPane(value: () => Boolean): Self = StObject.set(x, "activateNextPane", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setActivatePreviousPane(value: () => Boolean): Self = StObject.set(x, "activatePreviousPane", js.Any.fromFunction0(value))
+    inline def setActivatePreviousPane(value: () => Boolean): Self = StObject.set(x, "activatePreviousPane", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActivePane(value: () => Pane): Self = StObject.set(x, "getActivePane", js.Any.fromFunction0(value))
+    inline def setGetActivePane(value: () => Pane): Self = StObject.set(x, "getActivePane", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActivePaneItem(value: () => js.Object): Self = StObject.set(x, "getActivePaneItem", js.Any.fromFunction0(value))
+    inline def setGetActivePaneItem(value: () => js.Object): Self = StObject.set(x, "getActivePaneItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPaneItems(value: () => js.Array[js.Object]): Self = StObject.set(x, "getPaneItems", js.Any.fromFunction0(value))
+    inline def setGetPaneItems(value: () => js.Array[js.Object]): Self = StObject.set(x, "getPaneItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPanes(value: () => js.Array[Pane]): Self = StObject.set(x, "getPanes", js.Any.fromFunction0(value))
+    inline def setGetPanes(value: () => js.Array[Pane]): Self = StObject.set(x, "getPanes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+    inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setObserveActivePane(value: js.Function1[/* pane */ Pane, Unit] => Disposable): Self = StObject.set(x, "observeActivePane", js.Any.fromFunction1(value))
+    inline def setObserveActivePane(value: js.Function1[/* pane */ Pane, Unit] => Disposable): Self = StObject.set(x, "observeActivePane", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setObserveActivePaneItem(value: js.Function1[/* item */ js.Object, Unit] => Disposable): Self = StObject.set(x, "observeActivePaneItem", js.Any.fromFunction1(value))
+    inline def setObserveActivePaneItem(value: js.Function1[/* item */ js.Object, Unit] => Disposable): Self = StObject.set(x, "observeActivePaneItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setObservePaneItems(value: js.Function1[/* item */ js.Object, Unit] => Disposable): Self = StObject.set(x, "observePaneItems", js.Any.fromFunction1(value))
+    inline def setObservePaneItems(value: js.Function1[/* item */ js.Object, Unit] => Disposable): Self = StObject.set(x, "observePaneItems", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setObservePanes(value: js.Function1[/* pane */ Pane, Unit] => Disposable): Self = StObject.set(x, "observePanes", js.Any.fromFunction1(value))
+    inline def setObservePanes(value: js.Function1[/* pane */ Pane, Unit] => Disposable): Self = StObject.set(x, "observePanes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setObserveVisible(value: js.Function1[/* visible */ Boolean, Unit] => Disposable): Self = StObject.set(x, "observeVisible", js.Any.fromFunction1(value))
+    inline def setObserveVisible(value: js.Function1[/* visible */ Boolean, Unit] => Disposable): Self = StObject.set(x, "observeVisible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidAddPane(value: js.Function1[/* event */ typings.atom.anon.Pane, Unit] => Disposable): Self = StObject.set(x, "onDidAddPane", js.Any.fromFunction1(value))
+    inline def setOnDidAddPane(value: js.Function1[/* event */ typings.atom.anon.Pane, Unit] => Disposable): Self = StObject.set(x, "onDidAddPane", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidAddPaneItem(value: js.Function1[/* event */ PaneItemObservedEvent, Unit] => Disposable): Self = StObject.set(x, "onDidAddPaneItem", js.Any.fromFunction1(value))
+    inline def setOnDidAddPaneItem(value: js.Function1[/* event */ PaneItemObservedEvent, Unit] => Disposable): Self = StObject.set(x, "onDidAddPaneItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidChangeActivePane(value: js.Function1[/* pane */ Pane, Unit] => Disposable): Self = StObject.set(x, "onDidChangeActivePane", js.Any.fromFunction1(value))
+    inline def setOnDidChangeActivePane(value: js.Function1[/* pane */ Pane, Unit] => Disposable): Self = StObject.set(x, "onDidChangeActivePane", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidChangeActivePaneItem(value: js.Function1[/* item */ js.Object, Unit] => Disposable): Self = StObject.set(x, "onDidChangeActivePaneItem", js.Any.fromFunction1(value))
+    inline def setOnDidChangeActivePaneItem(value: js.Function1[/* item */ js.Object, Unit] => Disposable): Self = StObject.set(x, "onDidChangeActivePaneItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidChangeHovered(value: js.Function1[/* hovered */ Boolean, Unit] => Disposable): Self = StObject.set(x, "onDidChangeHovered", js.Any.fromFunction1(value))
+    inline def setOnDidChangeHovered(value: js.Function1[/* hovered */ Boolean, Unit] => Disposable): Self = StObject.set(x, "onDidChangeHovered", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidChangeVisible(value: js.Function1[/* visible */ Boolean, Unit] => Disposable): Self = StObject.set(x, "onDidChangeVisible", js.Any.fromFunction1(value))
+    inline def setOnDidChangeVisible(value: js.Function1[/* visible */ Boolean, Unit] => Disposable): Self = StObject.set(x, "onDidChangeVisible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidDestroyPane(value: js.Function1[/* event */ typings.atom.anon.Pane, Unit] => Disposable): Self = StObject.set(x, "onDidDestroyPane", js.Any.fromFunction1(value))
+    inline def setOnDidDestroyPane(value: js.Function1[/* event */ typings.atom.anon.Pane, Unit] => Disposable): Self = StObject.set(x, "onDidDestroyPane", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidDestroyPaneItem(value: js.Function1[/* event */ PaneItemObservedEvent, Unit] => Disposable): Self = StObject.set(x, "onDidDestroyPaneItem", js.Any.fromFunction1(value))
+    inline def setOnDidDestroyPaneItem(value: js.Function1[/* event */ PaneItemObservedEvent, Unit] => Disposable): Self = StObject.set(x, "onDidDestroyPaneItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidStopChangingActivePaneItem(value: js.Function1[/* item */ js.Object, Unit] => Disposable): Self = StObject.set(x, "onDidStopChangingActivePaneItem", js.Any.fromFunction1(value))
+    inline def setOnDidStopChangingActivePaneItem(value: js.Function1[/* item */ js.Object, Unit] => Disposable): Self = StObject.set(x, "onDidStopChangingActivePaneItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnWillDestroyPane(value: js.Function1[/* event */ typings.atom.anon.Pane, Unit] => Disposable): Self = StObject.set(x, "onWillDestroyPane", js.Any.fromFunction1(value))
+    inline def setOnWillDestroyPane(value: js.Function1[/* event */ typings.atom.anon.Pane, Unit] => Disposable): Self = StObject.set(x, "onWillDestroyPane", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnWillDestroyPaneItem(value: js.Function1[/* event */ PaneItemObservedEvent, Unit | js.Promise[Unit]] => Disposable): Self = StObject.set(x, "onWillDestroyPaneItem", js.Any.fromFunction1(value))
+    inline def setOnWillDestroyPaneItem(value: js.Function1[/* event */ PaneItemObservedEvent, Unit | js.Promise[Unit]] => Disposable): Self = StObject.set(x, "onWillDestroyPaneItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+    inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
   }
 }

@@ -12,25 +12,19 @@ trait Radius extends StObject {
 }
 object Radius {
   
-  @scala.inline
-  def apply(): Radius = {
+  inline def apply(): Radius = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Radius]
   }
   
-  @scala.inline
-  implicit class RadiusMutableBuilder[Self <: Radius] (val x: Self) extends AnyVal {
+  extension [Self <: Radius](x: Self) {
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setSegments(value: Double): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: Double): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
+    inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
   }
 }

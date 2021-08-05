@@ -22,8 +22,7 @@ object constantsMod {
     @JSImport("devtools/build/constants", "BROWSER_ERROR_MESSAGES.firefoxNightly")
     @js.native
     def firefoxNightly: String = js.native
-    @scala.inline
-    def firefoxNightly_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("firefoxNightly")(x.asInstanceOf[js.Any])
+    inline def firefoxNightly_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("firefoxNightly")(x.asInstanceOf[js.Any])
   }
   
   object BROWSER_TYPE {
@@ -35,20 +34,17 @@ object constantsMod {
     @JSImport("devtools/build/constants", "BROWSER_TYPE.chrome")
     @js.native
     def chrome: typings.devtools.devtoolsStrings.chrome = js.native
-    @scala.inline
-    def chrome_=(x: chrome): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chrome")(x.asInstanceOf[js.Any])
+    inline def chrome_=(x: chrome): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chrome")(x.asInstanceOf[js.Any])
     
     @JSImport("devtools/build/constants", "BROWSER_TYPE.edge")
     @js.native
     def edge: typings.devtools.devtoolsStrings.edge = js.native
-    @scala.inline
-    def edge_=(x: edge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("edge")(x.asInstanceOf[js.Any])
+    inline def edge_=(x: edge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("edge")(x.asInstanceOf[js.Any])
     
     @JSImport("devtools/build/constants", "BROWSER_TYPE.firefox")
     @js.native
     def firefox: typings.devtools.devtoolsStrings.firefox = js.native
-    @scala.inline
-    def firefox_=(x: firefox): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("firefox")(x.asInstanceOf[js.Any])
+    inline def firefox_=(x: firefox): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("firefox")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("devtools/build/constants", "CHANNEL_FIREFOX_NIGHTLY")
@@ -116,8 +112,7 @@ object constantsMod {
     @JSImport("devtools/build/constants", "ERROR_MESSAGES.staleElement")
     @js.native
     def staleElement: MessageName = js.native
-    @scala.inline
-    def staleElement_=(x: MessageName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("staleElement")(x.asInstanceOf[js.Any])
+    inline def staleElement_=(x: MessageName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("staleElement")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("devtools/build/constants", "FIREFOX_NAMES")
@@ -153,19 +148,16 @@ object constantsMod {
     @JSImport("devtools/build/constants", "VENDOR_PREFIX.chrome")
     @js.native
     def chrome: googColonchromeOptions = js.native
-    @scala.inline
-    def chrome_=(x: googColonchromeOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chrome")(x.asInstanceOf[js.Any])
+    inline def chrome_=(x: googColonchromeOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chrome")(x.asInstanceOf[js.Any])
     
     @JSImport("devtools/build/constants", "VENDOR_PREFIX.edge")
     @js.native
     def edge: msColonedgeOptions = js.native
-    @scala.inline
-    def edge_=(x: msColonedgeOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("edge")(x.asInstanceOf[js.Any])
+    inline def edge_=(x: msColonedgeOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("edge")(x.asInstanceOf[js.Any])
     
     @JSImport("devtools/build/constants", "VENDOR_PREFIX.firefox")
     @js.native
     def firefox: mozColonfirefoxOptions = js.native
-    @scala.inline
-    def firefox_=(x: mozColonfirefoxOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("firefox")(x.asInstanceOf[js.Any])
+    inline def firefox_=(x: mozColonfirefoxOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("firefox")(x.asInstanceOf[js.Any])
   }
 }

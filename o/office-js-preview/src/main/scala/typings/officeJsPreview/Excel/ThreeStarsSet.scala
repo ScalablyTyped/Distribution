@@ -17,22 +17,17 @@ trait ThreeStarsSet
 }
 object ThreeStarsSet {
   
-  @scala.inline
-  def apply(goldStar: Icon, halfGoldStar: Icon, silverStar: Icon): ThreeStarsSet = {
+  inline def apply(goldStar: Icon, halfGoldStar: Icon, silverStar: Icon): ThreeStarsSet = {
     val __obj = js.Dynamic.literal(goldStar = goldStar.asInstanceOf[js.Any], halfGoldStar = halfGoldStar.asInstanceOf[js.Any], silverStar = silverStar.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreeStarsSet]
   }
   
-  @scala.inline
-  implicit class ThreeStarsSetMutableBuilder[Self <: ThreeStarsSet] (val x: Self) extends AnyVal {
+  extension [Self <: ThreeStarsSet](x: Self) {
     
-    @scala.inline
-    def setGoldStar(value: Icon): Self = StObject.set(x, "goldStar", value.asInstanceOf[js.Any])
+    inline def setGoldStar(value: Icon): Self = StObject.set(x, "goldStar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHalfGoldStar(value: Icon): Self = StObject.set(x, "halfGoldStar", value.asInstanceOf[js.Any])
+    inline def setHalfGoldStar(value: Icon): Self = StObject.set(x, "halfGoldStar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilverStar(value: Icon): Self = StObject.set(x, "silverStar", value.asInstanceOf[js.Any])
+    inline def setSilverStar(value: Icon): Self = StObject.set(x, "silverStar", value.asInstanceOf[js.Any])
   }
 }

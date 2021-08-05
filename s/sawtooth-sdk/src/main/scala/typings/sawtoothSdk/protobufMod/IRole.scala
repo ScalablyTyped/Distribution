@@ -14,31 +14,23 @@ trait IRole extends StObject {
 }
 object IRole {
   
-  @scala.inline
-  def apply(): IRole = {
+  inline def apply(): IRole = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRole]
   }
   
-  @scala.inline
-  implicit class IRoleMutableBuilder[Self <: IRole] (val x: Self) extends AnyVal {
+  extension [Self <: IRole](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPolicyName(value: String): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: String): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNameNull: Self = StObject.set(x, "policyName", null)
+    inline def setPolicyNameNull: Self = StObject.set(x, "policyName", null)
     
-    @scala.inline
-    def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
+    inline def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
   }
 }

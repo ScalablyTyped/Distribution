@@ -21,40 +21,29 @@ trait paypalCreateOptions extends StObject {
 }
 object paypalCreateOptions {
   
-  @scala.inline
-  def apply(flow: checkout | vault): paypalCreateOptions = {
+  inline def apply(flow: checkout | vault): paypalCreateOptions = {
     val __obj = js.Dynamic.literal(flow = flow.asInstanceOf[js.Any])
     __obj.asInstanceOf[paypalCreateOptions]
   }
   
-  @scala.inline
-  implicit class paypalCreateOptionsMutableBuilder[Self <: paypalCreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: paypalCreateOptions](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String | Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String | Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setButtonStyle(value: PartialButtonStyle): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
+    inline def setButtonStyle(value: PartialButtonStyle): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
+    inline def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
     
-    @scala.inline
-    def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
+    inline def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+    inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
-    @scala.inline
-    def setFlow(value: checkout | vault): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
+    inline def setFlow(value: checkout | vault): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
   }
 }

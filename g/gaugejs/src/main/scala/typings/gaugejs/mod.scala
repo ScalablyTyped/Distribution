@@ -87,8 +87,7 @@ object mod {
   }
   object BaseOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       angle: Double,
       colorStart: String,
       colorStop: String,
@@ -105,41 +104,29 @@ object mod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    @scala.inline
-    implicit class BaseOptionsMutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseOptions](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorStart(value: String): Self = StObject.set(x, "colorStart", value.asInstanceOf[js.Any])
+      inline def setColorStart(value: String): Self = StObject.set(x, "colorStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorStop(value: String): Self = StObject.set(x, "colorStop", value.asInstanceOf[js.Any])
+      inline def setColorStop(value: String): Self = StObject.set(x, "colorStop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateGradient(value: Boolean): Self = StObject.set(x, "generateGradient", value.asInstanceOf[js.Any])
+      inline def setGenerateGradient(value: Boolean): Self = StObject.set(x, "generateGradient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighDpiSupport(value: Boolean): Self = StObject.set(x, "highDpiSupport", value.asInstanceOf[js.Any])
+      inline def setHighDpiSupport(value: Boolean): Self = StObject.set(x, "highDpiSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitMax(value: Boolean): Self = StObject.set(x, "limitMax", value.asInstanceOf[js.Any])
+      inline def setLimitMax(value: Boolean): Self = StObject.set(x, "limitMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitMin(value: Boolean): Self = StObject.set(x, "limitMin", value.asInstanceOf[js.Any])
+      inline def setLimitMin(value: Boolean): Self = StObject.set(x, "limitMin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+      inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointer(value: PointerOptions): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
+      inline def setPointer(value: PointerOptions): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusScale(value: Double): Self = StObject.set(x, "radiusScale", value.asInstanceOf[js.Any])
+      inline def setRadiusScale(value: Double): Self = StObject.set(x, "radiusScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+      inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -160,8 +147,7 @@ object mod {
   }
   object GaugeOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       angle: Double,
       colorStart: String,
       colorStop: String,
@@ -178,41 +164,29 @@ object mod {
       __obj.asInstanceOf[GaugeOptions]
     }
     
-    @scala.inline
-    implicit class GaugeOptionsMutableBuilder[Self <: GaugeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GaugeOptions](x: Self) {
       
-      @scala.inline
-      def setPercentColors(value: js.Array[js.Tuple2[Double, String]]): Self = StObject.set(x, "percentColors", value.asInstanceOf[js.Any])
+      inline def setPercentColors(value: js.Array[js.Tuple2[Double, String]]): Self = StObject.set(x, "percentColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentColorsUndefined: Self = StObject.set(x, "percentColors", js.undefined)
+      inline def setPercentColorsUndefined: Self = StObject.set(x, "percentColors", js.undefined)
       
-      @scala.inline
-      def setPercentColorsVarargs(value: (js.Tuple2[Double, String])*): Self = StObject.set(x, "percentColors", js.Array(value :_*))
+      inline def setPercentColorsVarargs(value: (js.Tuple2[Double, String])*): Self = StObject.set(x, "percentColors", js.Array(value :_*))
       
-      @scala.inline
-      def setPointer(value: PointerOptionsiconPathstr): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
+      inline def setPointer(value: PointerOptionsiconPathstr): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderTicks(value: DivColor): Self = StObject.set(x, "renderTicks", value.asInstanceOf[js.Any])
+      inline def setRenderTicks(value: DivColor): Self = StObject.set(x, "renderTicks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderTicksUndefined: Self = StObject.set(x, "renderTicks", js.undefined)
+      inline def setRenderTicksUndefined: Self = StObject.set(x, "renderTicks", js.undefined)
       
-      @scala.inline
-      def setStaticLabels(value: Color): Self = StObject.set(x, "staticLabels", value.asInstanceOf[js.Any])
+      inline def setStaticLabels(value: Color): Self = StObject.set(x, "staticLabels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticLabelsUndefined: Self = StObject.set(x, "staticLabels", js.undefined)
+      inline def setStaticLabelsUndefined: Self = StObject.set(x, "staticLabels", js.undefined)
       
-      @scala.inline
-      def setStaticZones(value: js.Array[StaticZoneOptions | StaticZoneOptionsheightnu]): Self = StObject.set(x, "staticZones", value.asInstanceOf[js.Any])
+      inline def setStaticZones(value: js.Array[StaticZoneOptions | StaticZoneOptionsheightnu]): Self = StObject.set(x, "staticZones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticZonesUndefined: Self = StObject.set(x, "staticZones", js.undefined)
+      inline def setStaticZonesUndefined: Self = StObject.set(x, "staticZones", js.undefined)
       
-      @scala.inline
-      def setStaticZonesVarargs(value: (StaticZoneOptions | StaticZoneOptionsheightnu)*): Self = StObject.set(x, "staticZones", js.Array(value :_*))
+      inline def setStaticZonesVarargs(value: (StaticZoneOptions | StaticZoneOptionsheightnu)*): Self = StObject.set(x, "staticZones", js.Array(value :_*))
     }
   }
   
@@ -226,23 +200,18 @@ object mod {
   }
   object PointerOptions {
     
-    @scala.inline
-    def apply(color: String, length: Double, strokeWidth: Double): PointerOptions = {
+    inline def apply(color: String, length: Double, strokeWidth: Double): PointerOptions = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any])
       __obj.asInstanceOf[PointerOptions]
     }
     
-    @scala.inline
-    implicit class PointerOptionsMutableBuilder[Self <: PointerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PointerOptions](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -256,23 +225,18 @@ object mod {
   }
   object StaticZoneOptions {
     
-    @scala.inline
-    def apply(max: Double, min: Double, strokeStyle: String): StaticZoneOptions = {
+    inline def apply(max: Double, min: Double, strokeStyle: String): StaticZoneOptions = {
       val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], strokeStyle = strokeStyle.asInstanceOf[js.Any])
       __obj.asInstanceOf[StaticZoneOptions]
     }
     
-    @scala.inline
-    implicit class StaticZoneOptionsMutableBuilder[Self <: StaticZoneOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StaticZoneOptions](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeStyle(value: String): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
+      inline def setStrokeStyle(value: String): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
     }
   }
   
@@ -282,17 +246,14 @@ object mod {
   }
   object TextRenderer {
     
-    @scala.inline
-    def apply(render: Gauge => String): TextRenderer = {
+    inline def apply(render: Gauge => String): TextRenderer = {
       val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
       __obj.asInstanceOf[TextRenderer]
     }
     
-    @scala.inline
-    implicit class TextRendererMutableBuilder[Self <: TextRenderer] (val x: Self) extends AnyVal {
+    extension [Self <: TextRenderer](x: Self) {
       
-      @scala.inline
-      def setRender(value: Gauge => String): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: Gauge => String): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     }
   }
   
@@ -304,20 +265,16 @@ object mod {
   }
   object TextRendererElement {
     
-    @scala.inline
-    def apply(innerHTML: String, style: FontSize): TextRendererElement = {
+    inline def apply(innerHTML: String, style: FontSize): TextRendererElement = {
       val __obj = js.Dynamic.literal(innerHTML = innerHTML.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextRendererElement]
     }
     
-    @scala.inline
-    implicit class TextRendererElementMutableBuilder[Self <: TextRendererElement] (val x: Self) extends AnyVal {
+    extension [Self <: TextRendererElement](x: Self) {
       
-      @scala.inline
-      def setInnerHTML(value: String): Self = StObject.set(x, "innerHTML", value.asInstanceOf[js.Any])
+      inline def setInnerHTML(value: String): Self = StObject.set(x, "innerHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: FontSize): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: FontSize): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   

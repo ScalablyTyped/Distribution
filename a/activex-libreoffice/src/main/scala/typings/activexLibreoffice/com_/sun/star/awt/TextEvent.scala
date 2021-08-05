@@ -16,16 +16,13 @@ trait TextEvent
 }
 object TextEvent {
   
-  @scala.inline
-  def apply(Source: XInterface, dummy1: Double): TextEvent = {
+  inline def apply(Source: XInterface, dummy1: Double): TextEvent = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], dummy1 = dummy1.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextEvent]
   }
   
-  @scala.inline
-  implicit class TextEventMutableBuilder[Self <: TextEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TextEvent](x: Self) {
     
-    @scala.inline
-    def setDummy1(value: Double): Self = StObject.set(x, "dummy1", value.asInstanceOf[js.Any])
+    inline def setDummy1(value: Double): Self = StObject.set(x, "dummy1", value.asInstanceOf[js.Any])
   }
 }

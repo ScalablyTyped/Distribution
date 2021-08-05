@@ -18,22 +18,17 @@ trait StepExecutionFilter extends StObject {
 }
 object StepExecutionFilter {
   
-  @scala.inline
-  def apply(Key: StepExecutionFilterKey, Values: StepExecutionFilterValueList): StepExecutionFilter = {
+  inline def apply(Key: StepExecutionFilterKey, Values: StepExecutionFilterValueList): StepExecutionFilter = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepExecutionFilter]
   }
   
-  @scala.inline
-  implicit class StepExecutionFilterMutableBuilder[Self <: StepExecutionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: StepExecutionFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: StepExecutionFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: StepExecutionFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: StepExecutionFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: StepExecutionFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: StepExecutionFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: StepExecutionFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

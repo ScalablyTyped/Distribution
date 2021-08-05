@@ -28,37 +28,27 @@ trait PutTelemetryRecordsRequest extends StObject {
 }
 object PutTelemetryRecordsRequest {
   
-  @scala.inline
-  def apply(TelemetryRecords: TelemetryRecordList): PutTelemetryRecordsRequest = {
+  inline def apply(TelemetryRecords: TelemetryRecordList): PutTelemetryRecordsRequest = {
     val __obj = js.Dynamic.literal(TelemetryRecords = TelemetryRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutTelemetryRecordsRequest]
   }
   
-  @scala.inline
-  implicit class PutTelemetryRecordsRequestMutableBuilder[Self <: PutTelemetryRecordsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutTelemetryRecordsRequest](x: Self) {
     
-    @scala.inline
-    def setEC2InstanceId(value: EC2InstanceId): Self = StObject.set(x, "EC2InstanceId", value.asInstanceOf[js.Any])
+    inline def setEC2InstanceId(value: EC2InstanceId): Self = StObject.set(x, "EC2InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEC2InstanceIdUndefined: Self = StObject.set(x, "EC2InstanceId", js.undefined)
+    inline def setEC2InstanceIdUndefined: Self = StObject.set(x, "EC2InstanceId", js.undefined)
     
-    @scala.inline
-    def setHostname(value: Hostname): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: Hostname): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnameUndefined: Self = StObject.set(x, "Hostname", js.undefined)
+    inline def setHostnameUndefined: Self = StObject.set(x, "Hostname", js.undefined)
     
-    @scala.inline
-    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
+    inline def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
+    inline def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
     
-    @scala.inline
-    def setTelemetryRecords(value: TelemetryRecordList): Self = StObject.set(x, "TelemetryRecords", value.asInstanceOf[js.Any])
+    inline def setTelemetryRecords(value: TelemetryRecordList): Self = StObject.set(x, "TelemetryRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelemetryRecordsVarargs(value: TelemetryRecord*): Self = StObject.set(x, "TelemetryRecords", js.Array(value :_*))
+    inline def setTelemetryRecordsVarargs(value: TelemetryRecord*): Self = StObject.set(x, "TelemetryRecords", js.Array(value :_*))
   }
 }

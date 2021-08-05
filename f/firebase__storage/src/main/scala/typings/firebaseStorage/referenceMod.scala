@@ -21,9 +21,9 @@ object referenceMod {
        with Reference {
     def this(_delegate: typings.firebaseStorage.srcReferenceMod.Reference, storage: StorageServiceCompat) = this()
     
-    val _delegate: js.Any = js.native
+    /* private */ val _delegate: js.Any = js.native
     
-    var _throwIfRoot: js.Any = js.native
+    /* private */ var _throwIfRoot: js.Any = js.native
     
     @JSName("bucket")
     def bucket_MReferenceCompat: String = js.native

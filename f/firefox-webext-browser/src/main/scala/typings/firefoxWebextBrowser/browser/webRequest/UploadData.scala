@@ -15,25 +15,19 @@ trait UploadData extends StObject {
 }
 object UploadData {
   
-  @scala.inline
-  def apply(): UploadData = {
+  inline def apply(): UploadData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadData]
   }
   
-  @scala.inline
-  implicit class UploadDataMutableBuilder[Self <: UploadData] (val x: Self) extends AnyVal {
+  extension [Self <: UploadData](x: Self) {
     
-    @scala.inline
-    def setBytes(value: js.Any): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+    inline def setBytes(value: js.Any): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
+    inline def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
   }
 }

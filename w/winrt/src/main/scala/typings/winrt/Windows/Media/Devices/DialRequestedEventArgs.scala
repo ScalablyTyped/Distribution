@@ -9,8 +9,7 @@ trait DialRequestedEventArgs
      with IDialRequestedEventArgs
 object DialRequestedEventArgs {
   
-  @scala.inline
-  def apply(contact: js.Any, handled: () => Unit): DialRequestedEventArgs = {
+  inline def apply(contact: js.Any, handled: () => Unit): DialRequestedEventArgs = {
     val __obj = js.Dynamic.literal(contact = contact.asInstanceOf[js.Any], handled = js.Any.fromFunction0(handled))
     __obj.asInstanceOf[DialRequestedEventArgs]
   }

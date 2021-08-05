@@ -43,8 +43,7 @@ trait UpdateDetectorVersionRequest extends StObject {
 }
 object UpdateDetectorVersionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     detectorId: identifier,
     detectorVersionId: wholeNumberVersionString,
     externalModelEndpoints: ListOfStrings,
@@ -54,46 +53,32 @@ object UpdateDetectorVersionRequest {
     __obj.asInstanceOf[UpdateDetectorVersionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDetectorVersionRequestMutableBuilder[Self <: UpdateDetectorVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDetectorVersionRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorVersionId(value: wholeNumberVersionString): Self = StObject.set(x, "detectorVersionId", value.asInstanceOf[js.Any])
+    inline def setDetectorVersionId(value: wholeNumberVersionString): Self = StObject.set(x, "detectorVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalModelEndpoints(value: ListOfStrings): Self = StObject.set(x, "externalModelEndpoints", value.asInstanceOf[js.Any])
+    inline def setExternalModelEndpoints(value: ListOfStrings): Self = StObject.set(x, "externalModelEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalModelEndpointsVarargs(value: String*): Self = StObject.set(x, "externalModelEndpoints", js.Array(value :_*))
+    inline def setExternalModelEndpointsVarargs(value: String*): Self = StObject.set(x, "externalModelEndpoints", js.Array(value :_*))
     
-    @scala.inline
-    def setModelVersions(value: ListOfModelVersions): Self = StObject.set(x, "modelVersions", value.asInstanceOf[js.Any])
+    inline def setModelVersions(value: ListOfModelVersions): Self = StObject.set(x, "modelVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelVersionsUndefined: Self = StObject.set(x, "modelVersions", js.undefined)
+    inline def setModelVersionsUndefined: Self = StObject.set(x, "modelVersions", js.undefined)
     
-    @scala.inline
-    def setModelVersionsVarargs(value: ModelVersion*): Self = StObject.set(x, "modelVersions", js.Array(value :_*))
+    inline def setModelVersionsVarargs(value: ModelVersion*): Self = StObject.set(x, "modelVersions", js.Array(value :_*))
     
-    @scala.inline
-    def setRuleExecutionMode(value: RuleExecutionMode): Self = StObject.set(x, "ruleExecutionMode", value.asInstanceOf[js.Any])
+    inline def setRuleExecutionMode(value: RuleExecutionMode): Self = StObject.set(x, "ruleExecutionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleExecutionModeUndefined: Self = StObject.set(x, "ruleExecutionMode", js.undefined)
+    inline def setRuleExecutionModeUndefined: Self = StObject.set(x, "ruleExecutionMode", js.undefined)
     
-    @scala.inline
-    def setRules(value: RuleList): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: RuleList): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

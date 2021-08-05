@@ -31,46 +31,33 @@ trait SchemaIosDeviceCatalog extends StObject {
 }
 object SchemaIosDeviceCatalog {
   
-  @scala.inline
-  def apply(): SchemaIosDeviceCatalog = {
+  inline def apply(): SchemaIosDeviceCatalog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIosDeviceCatalog]
   }
   
-  @scala.inline
-  implicit class SchemaIosDeviceCatalogMutableBuilder[Self <: SchemaIosDeviceCatalog] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIosDeviceCatalog](x: Self) {
     
-    @scala.inline
-    def setModels(value: js.Array[SchemaIosModel]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setModels(value: js.Array[SchemaIosModel]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
+    inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
-    @scala.inline
-    def setModelsVarargs(value: SchemaIosModel*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: SchemaIosModel*): Self = StObject.set(x, "models", js.Array(value :_*))
     
-    @scala.inline
-    def setRuntimeConfiguration(value: SchemaIosRuntimeConfiguration): Self = StObject.set(x, "runtimeConfiguration", value.asInstanceOf[js.Any])
+    inline def setRuntimeConfiguration(value: SchemaIosRuntimeConfiguration): Self = StObject.set(x, "runtimeConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeConfigurationUndefined: Self = StObject.set(x, "runtimeConfiguration", js.undefined)
+    inline def setRuntimeConfigurationUndefined: Self = StObject.set(x, "runtimeConfiguration", js.undefined)
     
-    @scala.inline
-    def setVersions(value: js.Array[SchemaIosVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: js.Array[SchemaIosVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
+    inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    @scala.inline
-    def setVersionsVarargs(value: SchemaIosVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: SchemaIosVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
     
-    @scala.inline
-    def setXcodeVersions(value: js.Array[SchemaXcodeVersion]): Self = StObject.set(x, "xcodeVersions", value.asInstanceOf[js.Any])
+    inline def setXcodeVersions(value: js.Array[SchemaXcodeVersion]): Self = StObject.set(x, "xcodeVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXcodeVersionsUndefined: Self = StObject.set(x, "xcodeVersions", js.undefined)
+    inline def setXcodeVersionsUndefined: Self = StObject.set(x, "xcodeVersions", js.undefined)
     
-    @scala.inline
-    def setXcodeVersionsVarargs(value: SchemaXcodeVersion*): Self = StObject.set(x, "xcodeVersions", js.Array(value :_*))
+    inline def setXcodeVersionsVarargs(value: SchemaXcodeVersion*): Self = StObject.set(x, "xcodeVersions", js.Array(value :_*))
   }
 }

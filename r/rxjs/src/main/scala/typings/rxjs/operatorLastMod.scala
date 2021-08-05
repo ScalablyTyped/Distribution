@@ -10,10 +10,8 @@ object operatorLastMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def last[T, D](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("last")().asInstanceOf[js.Any]
-  @scala.inline
-  def last[T, S /* <: T */](
+  inline def last[T, D](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("last")().asInstanceOf[js.Any]
+  inline def last[T, S /* <: T */](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
@@ -21,8 +19,7 @@ object operatorLastMod {
       /* is S */ Boolean
     ]
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def last[T, S /* <: T */](
+  inline def last[T, S /* <: T */](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
@@ -31,13 +28,10 @@ object operatorLastMod {
     ],
     defaultValue: S
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def last[T, D](predicate: Null, defaultValue: D): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def last[T, D](predicate: Unit, defaultValue: D): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def last[T, D](predicate: Null, defaultValue: D): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def last[T, D](predicate: Unit, defaultValue: D): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def last_TD[T, D](
+  inline def last_TD[T, D](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
@@ -45,8 +39,7 @@ object operatorLastMod {
       Boolean
     ]
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def last_TD[T, D](
+  inline def last_TD[T, D](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 

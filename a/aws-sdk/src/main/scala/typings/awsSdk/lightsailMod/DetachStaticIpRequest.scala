@@ -13,16 +13,13 @@ trait DetachStaticIpRequest extends StObject {
 }
 object DetachStaticIpRequest {
   
-  @scala.inline
-  def apply(staticIpName: ResourceName): DetachStaticIpRequest = {
+  inline def apply(staticIpName: ResourceName): DetachStaticIpRequest = {
     val __obj = js.Dynamic.literal(staticIpName = staticIpName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachStaticIpRequest]
   }
   
-  @scala.inline
-  implicit class DetachStaticIpRequestMutableBuilder[Self <: DetachStaticIpRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetachStaticIpRequest](x: Self) {
     
-    @scala.inline
-    def setStaticIpName(value: ResourceName): Self = StObject.set(x, "staticIpName", value.asInstanceOf[js.Any])
+    inline def setStaticIpName(value: ResourceName): Self = StObject.set(x, "staticIpName", value.asInstanceOf[js.Any])
   }
 }

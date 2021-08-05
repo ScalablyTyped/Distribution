@@ -22,8 +22,7 @@ trait BigInteger extends StObject {
 }
 object BigInteger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abs: () => BigInteger,
     bitLength: () => Double,
     compareTo: BigInteger => Double,
@@ -37,28 +36,20 @@ object BigInteger {
     __obj.asInstanceOf[BigInteger]
   }
   
-  @scala.inline
-  implicit class BigIntegerMutableBuilder[Self <: BigInteger] (val x: Self) extends AnyVal {
+  extension [Self <: BigInteger](x: Self) {
     
-    @scala.inline
-    def setAbs(value: () => BigInteger): Self = StObject.set(x, "abs", js.Any.fromFunction0(value))
+    inline def setAbs(value: () => BigInteger): Self = StObject.set(x, "abs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBitLength(value: () => Double): Self = StObject.set(x, "bitLength", js.Any.fromFunction0(value))
+    inline def setBitLength(value: () => Double): Self = StObject.set(x, "bitLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompareTo(value: BigInteger => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
+    inline def setCompareTo(value: BigInteger => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMod(value: BigInteger => BigInteger): Self = StObject.set(x, "mod", js.Any.fromFunction1(value))
+    inline def setMod(value: BigInteger => BigInteger): Self = StObject.set(x, "mod", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setModPowInt(value: (Double, BigInteger) => BigInteger): Self = StObject.set(x, "modPowInt", js.Any.fromFunction2(value))
+    inline def setModPowInt(value: (Double, BigInteger) => BigInteger): Self = StObject.set(x, "modPowInt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNegate(value: () => BigInteger): Self = StObject.set(x, "negate", js.Any.fromFunction0(value))
+    inline def setNegate(value: () => BigInteger): Self = StObject.set(x, "negate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToString_(value: Double => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
+    inline def setToString_(value: Double => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
   }
 }

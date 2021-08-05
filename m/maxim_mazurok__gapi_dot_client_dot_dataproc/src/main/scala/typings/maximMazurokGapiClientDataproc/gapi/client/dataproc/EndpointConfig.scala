@@ -19,29 +19,23 @@ trait EndpointConfig extends StObject {
 }
 object EndpointConfig {
   
-  @scala.inline
-  def apply(): EndpointConfig = {
+  inline def apply(): EndpointConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndpointConfig]
   }
   
-  @scala.inline
-  implicit class EndpointConfigMutableBuilder[Self <: EndpointConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointConfig](x: Self) {
     
-    @scala.inline
-    def setEnableHttpPortAccess(value: Boolean): Self = StObject.set(x, "enableHttpPortAccess", value.asInstanceOf[js.Any])
+    inline def setEnableHttpPortAccess(value: Boolean): Self = StObject.set(x, "enableHttpPortAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableHttpPortAccessUndefined: Self = StObject.set(x, "enableHttpPortAccess", js.undefined)
+    inline def setEnableHttpPortAccessUndefined: Self = StObject.set(x, "enableHttpPortAccess", js.undefined)
     
-    @scala.inline
-    def setHttpPorts(
+    inline def setHttpPorts(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.EndpointConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "httpPorts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpPortsUndefined: Self = StObject.set(x, "httpPorts", js.undefined)
+    inline def setHttpPortsUndefined: Self = StObject.set(x, "httpPorts", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait IsLinked extends StObject {
 }
 object IsLinked {
   
-  @scala.inline
-  def apply(isLinked: Boolean, privacyStatus: String): IsLinked = {
+  inline def apply(isLinked: Boolean, privacyStatus: String): IsLinked = {
     val __obj = js.Dynamic.literal(isLinked = isLinked.asInstanceOf[js.Any], privacyStatus = privacyStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsLinked]
   }
   
-  @scala.inline
-  implicit class IsLinkedMutableBuilder[Self <: IsLinked] (val x: Self) extends AnyVal {
+  extension [Self <: IsLinked](x: Self) {
     
-    @scala.inline
-    def setIsLinked(value: Boolean): Self = StObject.set(x, "isLinked", value.asInstanceOf[js.Any])
+    inline def setIsLinked(value: Boolean): Self = StObject.set(x, "isLinked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
+    inline def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
   }
 }

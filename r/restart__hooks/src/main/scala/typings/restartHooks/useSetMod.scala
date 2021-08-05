@@ -31,10 +31,8 @@ object useSetMod {
     *
     * @param init initial Set values
     */
-  @scala.inline
-  def default[V](): ObservableSet[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ObservableSet[V]]
-  @scala.inline
-  def default[V](init: Iterable[V]): ObservableSet[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(init.asInstanceOf[js.Any]).asInstanceOf[ObservableSet[V]]
+  inline def default[V](): ObservableSet[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ObservableSet[V]]
+  inline def default[V](init: Iterable[V]): ObservableSet[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(init.asInstanceOf[js.Any]).asInstanceOf[ObservableSet[V]]
   
   @JSImport("@restart/hooks/cjs/useSet", "ObservableSet")
   @js.native
@@ -44,6 +42,6 @@ object useSetMod {
     def this(listener: js.Function1[/* map */ ObservableSet[V], Unit]) = this()
     def this(listener: js.Function1[/* map */ ObservableSet[V], Unit], init: Iterable[V]) = this()
     
-    val listener: js.Any = js.native
+    /* private */ val listener: js.Any = js.native
   }
 }

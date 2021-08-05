@@ -8,11 +8,9 @@ object jestEnvironmentStrings {
   
   @js.native
   sealed trait legacy extends StObject
-  @scala.inline
-  def legacy: legacy = "legacy".asInstanceOf[legacy]
+  inline def legacy: legacy = "legacy".asInstanceOf[legacy]
   
   @js.native
   sealed trait modern extends StObject
-  @scala.inline
-  def modern: modern = "modern".asInstanceOf[modern]
+  inline def modern: modern = "modern".asInstanceOf[modern]
 }

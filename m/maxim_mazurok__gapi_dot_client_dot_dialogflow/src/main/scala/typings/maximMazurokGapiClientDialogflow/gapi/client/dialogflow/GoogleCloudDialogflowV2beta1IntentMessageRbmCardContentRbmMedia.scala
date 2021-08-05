@@ -26,31 +26,23 @@ trait GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia extends St
 }
 object GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia = {
+  inline def apply(): GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMediaMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmCardContentRbmMedia](x: Self) {
     
-    @scala.inline
-    def setFileUri(value: String): Self = StObject.set(x, "fileUri", value.asInstanceOf[js.Any])
+    inline def setFileUri(value: String): Self = StObject.set(x, "fileUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUriUndefined: Self = StObject.set(x, "fileUri", js.undefined)
+    inline def setFileUriUndefined: Self = StObject.set(x, "fileUri", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setThumbnailUri(value: String): Self = StObject.set(x, "thumbnailUri", value.asInstanceOf[js.Any])
+    inline def setThumbnailUri(value: String): Self = StObject.set(x, "thumbnailUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUriUndefined: Self = StObject.set(x, "thumbnailUri", js.undefined)
+    inline def setThumbnailUriUndefined: Self = StObject.set(x, "thumbnailUri", js.undefined)
   }
 }

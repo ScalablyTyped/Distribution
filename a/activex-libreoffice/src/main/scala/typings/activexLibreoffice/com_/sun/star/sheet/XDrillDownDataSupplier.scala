@@ -32,8 +32,7 @@ trait XDrillDownDataSupplier
 }
 object XDrillDownDataSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getDrillDownData: SeqEquiv[DataPilotFieldFilter] => SafeArray[SafeArray[js.Any]],
     queryInterface: `type` => js.Any,
@@ -43,10 +42,8 @@ object XDrillDownDataSupplier {
     __obj.asInstanceOf[XDrillDownDataSupplier]
   }
   
-  @scala.inline
-  implicit class XDrillDownDataSupplierMutableBuilder[Self <: XDrillDownDataSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XDrillDownDataSupplier](x: Self) {
     
-    @scala.inline
-    def setGetDrillDownData(value: SeqEquiv[DataPilotFieldFilter] => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getDrillDownData", js.Any.fromFunction1(value))
+    inline def setGetDrillDownData(value: SeqEquiv[DataPilotFieldFilter] => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getDrillDownData", js.Any.fromFunction1(value))
   }
 }

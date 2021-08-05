@@ -22,25 +22,19 @@ trait SchemaTextFormatRun extends StObject {
 }
 object SchemaTextFormatRun {
   
-  @scala.inline
-  def apply(): SchemaTextFormatRun = {
+  inline def apply(): SchemaTextFormatRun = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTextFormatRun]
   }
   
-  @scala.inline
-  implicit class SchemaTextFormatRunMutableBuilder[Self <: SchemaTextFormatRun] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTextFormatRun](x: Self) {
     
-    @scala.inline
-    def setFormat(value: SchemaTextFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: SchemaTextFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait DomainAdvancedSecurityOptionsMasterUserOptions extends StObject {
 }
 object DomainAdvancedSecurityOptionsMasterUserOptions {
   
-  @scala.inline
-  def apply(): DomainAdvancedSecurityOptionsMasterUserOptions = {
+  inline def apply(): DomainAdvancedSecurityOptionsMasterUserOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainAdvancedSecurityOptionsMasterUserOptions]
   }
   
-  @scala.inline
-  implicit class DomainAdvancedSecurityOptionsMasterUserOptionsMutableBuilder[Self <: DomainAdvancedSecurityOptionsMasterUserOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DomainAdvancedSecurityOptionsMasterUserOptions](x: Self) {
     
-    @scala.inline
-    def setMasterUserArn(value: String): Self = StObject.set(x, "masterUserArn", value.asInstanceOf[js.Any])
+    inline def setMasterUserArn(value: String): Self = StObject.set(x, "masterUserArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterUserArnUndefined: Self = StObject.set(x, "masterUserArn", js.undefined)
+    inline def setMasterUserArnUndefined: Self = StObject.set(x, "masterUserArn", js.undefined)
     
-    @scala.inline
-    def setMasterUserName(value: String): Self = StObject.set(x, "masterUserName", value.asInstanceOf[js.Any])
+    inline def setMasterUserName(value: String): Self = StObject.set(x, "masterUserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterUserNameUndefined: Self = StObject.set(x, "masterUserName", js.undefined)
+    inline def setMasterUserNameUndefined: Self = StObject.set(x, "masterUserName", js.undefined)
     
-    @scala.inline
-    def setMasterUserPassword(value: String): Self = StObject.set(x, "masterUserPassword", value.asInstanceOf[js.Any])
+    inline def setMasterUserPassword(value: String): Self = StObject.set(x, "masterUserPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterUserPasswordUndefined: Self = StObject.set(x, "masterUserPassword", js.undefined)
+    inline def setMasterUserPasswordUndefined: Self = StObject.set(x, "masterUserPassword", js.undefined)
   }
 }

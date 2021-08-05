@@ -11,10 +11,8 @@ object mod {
   /**
     * Returns a boolean of whether input is a GIF image.
     */
-  @scala.inline
-  def apply(input: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(input: Uint8Array): Boolean = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(input: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(input: Uint8Array): Boolean = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("is-gif", JSImport.Namespace)
   @js.native

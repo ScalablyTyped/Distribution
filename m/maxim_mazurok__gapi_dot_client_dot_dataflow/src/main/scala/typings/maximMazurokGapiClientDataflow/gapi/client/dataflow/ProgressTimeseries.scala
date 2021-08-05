@@ -14,28 +14,21 @@ trait ProgressTimeseries extends StObject {
 }
 object ProgressTimeseries {
   
-  @scala.inline
-  def apply(): ProgressTimeseries = {
+  inline def apply(): ProgressTimeseries = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProgressTimeseries]
   }
   
-  @scala.inline
-  implicit class ProgressTimeseriesMutableBuilder[Self <: ProgressTimeseries] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressTimeseries](x: Self) {
     
-    @scala.inline
-    def setCurrentProgress(value: Double): Self = StObject.set(x, "currentProgress", value.asInstanceOf[js.Any])
+    inline def setCurrentProgress(value: Double): Self = StObject.set(x, "currentProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentProgressUndefined: Self = StObject.set(x, "currentProgress", js.undefined)
+    inline def setCurrentProgressUndefined: Self = StObject.set(x, "currentProgress", js.undefined)
     
-    @scala.inline
-    def setDataPoints(value: js.Array[Point]): Self = StObject.set(x, "dataPoints", value.asInstanceOf[js.Any])
+    inline def setDataPoints(value: js.Array[Point]): Self = StObject.set(x, "dataPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataPointsUndefined: Self = StObject.set(x, "dataPoints", js.undefined)
+    inline def setDataPointsUndefined: Self = StObject.set(x, "dataPoints", js.undefined)
     
-    @scala.inline
-    def setDataPointsVarargs(value: Point*): Self = StObject.set(x, "dataPoints", js.Array(value :_*))
+    inline def setDataPointsVarargs(value: Point*): Self = StObject.set(x, "dataPoints", js.Array(value :_*))
   }
 }

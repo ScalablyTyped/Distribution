@@ -10,19 +10,15 @@ trait FailoverDBClusterResult extends StObject {
 }
 object FailoverDBClusterResult {
   
-  @scala.inline
-  def apply(): FailoverDBClusterResult = {
+  inline def apply(): FailoverDBClusterResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailoverDBClusterResult]
   }
   
-  @scala.inline
-  implicit class FailoverDBClusterResultMutableBuilder[Self <: FailoverDBClusterResult] (val x: Self) extends AnyVal {
+  extension [Self <: FailoverDBClusterResult](x: Self) {
     
-    @scala.inline
-    def setDBCluster(value: DBCluster): Self = StObject.set(x, "DBCluster", value.asInstanceOf[js.Any])
+    inline def setDBCluster(value: DBCluster): Self = StObject.set(x, "DBCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterUndefined: Self = StObject.set(x, "DBCluster", js.undefined)
+    inline def setDBClusterUndefined: Self = StObject.set(x, "DBCluster", js.undefined)
   }
 }

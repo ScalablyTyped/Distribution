@@ -15,22 +15,17 @@ trait DeletedRange extends StObject {
 }
 object DeletedRange {
   
-  @scala.inline
-  def apply(DeletedRange: Range, InUndoRedo: Boolean, OldXMLNode: typings.activexWord.Word.XMLNode): DeletedRange = {
+  inline def apply(DeletedRange: Range, InUndoRedo: Boolean, OldXMLNode: typings.activexWord.Word.XMLNode): DeletedRange = {
     val __obj = js.Dynamic.literal(DeletedRange = DeletedRange.asInstanceOf[js.Any], InUndoRedo = InUndoRedo.asInstanceOf[js.Any], OldXMLNode = OldXMLNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletedRange]
   }
   
-  @scala.inline
-  implicit class DeletedRangeMutableBuilder[Self <: DeletedRange] (val x: Self) extends AnyVal {
+  extension [Self <: DeletedRange](x: Self) {
     
-    @scala.inline
-    def setDeletedRange(value: Range): Self = StObject.set(x, "DeletedRange", value.asInstanceOf[js.Any])
+    inline def setDeletedRange(value: Range): Self = StObject.set(x, "DeletedRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInUndoRedo(value: Boolean): Self = StObject.set(x, "InUndoRedo", value.asInstanceOf[js.Any])
+    inline def setInUndoRedo(value: Boolean): Self = StObject.set(x, "InUndoRedo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldXMLNode(value: typings.activexWord.Word.XMLNode): Self = StObject.set(x, "OldXMLNode", value.asInstanceOf[js.Any])
+    inline def setOldXMLNode(value: typings.activexWord.Word.XMLNode): Self = StObject.set(x, "OldXMLNode", value.asInstanceOf[js.Any])
   }
 }

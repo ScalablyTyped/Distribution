@@ -8,41 +8,33 @@ object webBluetoothStrings {
   
   @js.native
   sealed trait BluetoothServiceDataFilter extends StObject
-  @scala.inline
-  def BluetoothServiceDataFilter: BluetoothServiceDataFilter = "BluetoothServiceDataFilter".asInstanceOf[BluetoothServiceDataFilter]
+  inline def BluetoothServiceDataFilter: BluetoothServiceDataFilter = "BluetoothServiceDataFilter".asInstanceOf[BluetoothServiceDataFilter]
   
   @js.native
   sealed trait advertisementreceived extends StObject
-  @scala.inline
-  def advertisementreceived: advertisementreceived = "advertisementreceived".asInstanceOf[advertisementreceived]
+  inline def advertisementreceived: advertisementreceived = "advertisementreceived".asInstanceOf[advertisementreceived]
   
   @js.native
   sealed trait availabilitychanged extends StObject
-  @scala.inline
-  def availabilitychanged: availabilitychanged = "availabilitychanged".asInstanceOf[availabilitychanged]
+  inline def availabilitychanged: availabilitychanged = "availabilitychanged".asInstanceOf[availabilitychanged]
   
   @js.native
   sealed trait characteristicvaluechanged extends StObject
-  @scala.inline
-  def characteristicvaluechanged: characteristicvaluechanged = "characteristicvaluechanged".asInstanceOf[characteristicvaluechanged]
+  inline def characteristicvaluechanged: characteristicvaluechanged = "characteristicvaluechanged".asInstanceOf[characteristicvaluechanged]
   
   @js.native
   sealed trait gattserverdisconnected extends StObject
-  @scala.inline
-  def gattserverdisconnected: gattserverdisconnected = "gattserverdisconnected".asInstanceOf[gattserverdisconnected]
+  inline def gattserverdisconnected: gattserverdisconnected = "gattserverdisconnected".asInstanceOf[gattserverdisconnected]
   
   @js.native
   sealed trait serviceadded extends StObject
-  @scala.inline
-  def serviceadded: serviceadded = "serviceadded".asInstanceOf[serviceadded]
+  inline def serviceadded: serviceadded = "serviceadded".asInstanceOf[serviceadded]
   
   @js.native
   sealed trait servicechanged extends StObject
-  @scala.inline
-  def servicechanged: servicechanged = "servicechanged".asInstanceOf[servicechanged]
+  inline def servicechanged: servicechanged = "servicechanged".asInstanceOf[servicechanged]
   
   @js.native
   sealed trait serviceremoved extends StObject
-  @scala.inline
-  def serviceremoved: serviceremoved = "serviceremoved".asInstanceOf[serviceremoved]
+  inline def serviceremoved: serviceremoved = "serviceremoved".asInstanceOf[serviceremoved]
 }

@@ -23,34 +23,25 @@ trait CreateNotebookInstanceLifecycleConfigInput extends StObject {
 }
 object CreateNotebookInstanceLifecycleConfigInput {
   
-  @scala.inline
-  def apply(NotebookInstanceLifecycleConfigName: NotebookInstanceLifecycleConfigName): CreateNotebookInstanceLifecycleConfigInput = {
+  inline def apply(NotebookInstanceLifecycleConfigName: NotebookInstanceLifecycleConfigName): CreateNotebookInstanceLifecycleConfigInput = {
     val __obj = js.Dynamic.literal(NotebookInstanceLifecycleConfigName = NotebookInstanceLifecycleConfigName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNotebookInstanceLifecycleConfigInput]
   }
   
-  @scala.inline
-  implicit class CreateNotebookInstanceLifecycleConfigInputMutableBuilder[Self <: CreateNotebookInstanceLifecycleConfigInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNotebookInstanceLifecycleConfigInput](x: Self) {
     
-    @scala.inline
-    def setNotebookInstanceLifecycleConfigName(value: NotebookInstanceLifecycleConfigName): Self = StObject.set(x, "NotebookInstanceLifecycleConfigName", value.asInstanceOf[js.Any])
+    inline def setNotebookInstanceLifecycleConfigName(value: NotebookInstanceLifecycleConfigName): Self = StObject.set(x, "NotebookInstanceLifecycleConfigName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCreate(value: NotebookInstanceLifecycleConfigList): Self = StObject.set(x, "OnCreate", value.asInstanceOf[js.Any])
+    inline def setOnCreate(value: NotebookInstanceLifecycleConfigList): Self = StObject.set(x, "OnCreate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCreateUndefined: Self = StObject.set(x, "OnCreate", js.undefined)
+    inline def setOnCreateUndefined: Self = StObject.set(x, "OnCreate", js.undefined)
     
-    @scala.inline
-    def setOnCreateVarargs(value: NotebookInstanceLifecycleHook*): Self = StObject.set(x, "OnCreate", js.Array(value :_*))
+    inline def setOnCreateVarargs(value: NotebookInstanceLifecycleHook*): Self = StObject.set(x, "OnCreate", js.Array(value :_*))
     
-    @scala.inline
-    def setOnStart(value: NotebookInstanceLifecycleConfigList): Self = StObject.set(x, "OnStart", value.asInstanceOf[js.Any])
+    inline def setOnStart(value: NotebookInstanceLifecycleConfigList): Self = StObject.set(x, "OnStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnStartUndefined: Self = StObject.set(x, "OnStart", js.undefined)
+    inline def setOnStartUndefined: Self = StObject.set(x, "OnStart", js.undefined)
     
-    @scala.inline
-    def setOnStartVarargs(value: NotebookInstanceLifecycleHook*): Self = StObject.set(x, "OnStart", js.Array(value :_*))
+    inline def setOnStartVarargs(value: NotebookInstanceLifecycleHook*): Self = StObject.set(x, "OnStart", js.Array(value :_*))
   }
 }

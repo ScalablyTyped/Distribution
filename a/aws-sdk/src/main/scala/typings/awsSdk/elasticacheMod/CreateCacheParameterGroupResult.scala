@@ -10,19 +10,15 @@ trait CreateCacheParameterGroupResult extends StObject {
 }
 object CreateCacheParameterGroupResult {
   
-  @scala.inline
-  def apply(): CreateCacheParameterGroupResult = {
+  inline def apply(): CreateCacheParameterGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCacheParameterGroupResult]
   }
   
-  @scala.inline
-  implicit class CreateCacheParameterGroupResultMutableBuilder[Self <: CreateCacheParameterGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCacheParameterGroupResult](x: Self) {
     
-    @scala.inline
-    def setCacheParameterGroup(value: CacheParameterGroup): Self = StObject.set(x, "CacheParameterGroup", value.asInstanceOf[js.Any])
+    inline def setCacheParameterGroup(value: CacheParameterGroup): Self = StObject.set(x, "CacheParameterGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheParameterGroupUndefined: Self = StObject.set(x, "CacheParameterGroup", js.undefined)
+    inline def setCacheParameterGroupUndefined: Self = StObject.set(x, "CacheParameterGroup", js.undefined)
   }
 }

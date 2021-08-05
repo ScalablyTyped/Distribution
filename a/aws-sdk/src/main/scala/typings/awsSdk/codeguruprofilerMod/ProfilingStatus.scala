@@ -23,31 +23,23 @@ trait ProfilingStatus extends StObject {
 }
 object ProfilingStatus {
   
-  @scala.inline
-  def apply(): ProfilingStatus = {
+  inline def apply(): ProfilingStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProfilingStatus]
   }
   
-  @scala.inline
-  implicit class ProfilingStatusMutableBuilder[Self <: ProfilingStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ProfilingStatus](x: Self) {
     
-    @scala.inline
-    def setLatestAgentOrchestratedAt(value: Timestamp): Self = StObject.set(x, "latestAgentOrchestratedAt", value.asInstanceOf[js.Any])
+    inline def setLatestAgentOrchestratedAt(value: Timestamp): Self = StObject.set(x, "latestAgentOrchestratedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestAgentOrchestratedAtUndefined: Self = StObject.set(x, "latestAgentOrchestratedAt", js.undefined)
+    inline def setLatestAgentOrchestratedAtUndefined: Self = StObject.set(x, "latestAgentOrchestratedAt", js.undefined)
     
-    @scala.inline
-    def setLatestAgentProfileReportedAt(value: Timestamp): Self = StObject.set(x, "latestAgentProfileReportedAt", value.asInstanceOf[js.Any])
+    inline def setLatestAgentProfileReportedAt(value: Timestamp): Self = StObject.set(x, "latestAgentProfileReportedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestAgentProfileReportedAtUndefined: Self = StObject.set(x, "latestAgentProfileReportedAt", js.undefined)
+    inline def setLatestAgentProfileReportedAtUndefined: Self = StObject.set(x, "latestAgentProfileReportedAt", js.undefined)
     
-    @scala.inline
-    def setLatestAggregatedProfile(value: AggregatedProfileTime): Self = StObject.set(x, "latestAggregatedProfile", value.asInstanceOf[js.Any])
+    inline def setLatestAggregatedProfile(value: AggregatedProfileTime): Self = StObject.set(x, "latestAggregatedProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestAggregatedProfileUndefined: Self = StObject.set(x, "latestAggregatedProfile", js.undefined)
+    inline def setLatestAggregatedProfileUndefined: Self = StObject.set(x, "latestAggregatedProfile", js.undefined)
   }
 }

@@ -28,34 +28,25 @@ trait UpdateWorldTemplateRequest extends StObject {
 }
 object UpdateWorldTemplateRequest {
   
-  @scala.inline
-  def apply(template: Arn): UpdateWorldTemplateRequest = {
+  inline def apply(template: Arn): UpdateWorldTemplateRequest = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateWorldTemplateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateWorldTemplateRequestMutableBuilder[Self <: UpdateWorldTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateWorldTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: TemplateName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: TemplateName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: Arn): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Arn): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateBody(value: Json): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
+    inline def setTemplateBody(value: Json): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
+    inline def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
     
-    @scala.inline
-    def setTemplateLocation(value: TemplateLocation): Self = StObject.set(x, "templateLocation", value.asInstanceOf[js.Any])
+    inline def setTemplateLocation(value: TemplateLocation): Self = StObject.set(x, "templateLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateLocationUndefined: Self = StObject.set(x, "templateLocation", js.undefined)
+    inline def setTemplateLocationUndefined: Self = StObject.set(x, "templateLocation", js.undefined)
   }
 }

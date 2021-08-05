@@ -10,16 +10,13 @@ trait BatchSizeNumber extends StObject {
 }
 object BatchSizeNumber {
   
-  @scala.inline
-  def apply(batchSize: Double): BatchSizeNumber = {
+  inline def apply(batchSize: Double): BatchSizeNumber = {
     val __obj = js.Dynamic.literal(batchSize = batchSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchSizeNumber]
   }
   
-  @scala.inline
-  implicit class BatchSizeNumberMutableBuilder[Self <: BatchSizeNumber] (val x: Self) extends AnyVal {
+  extension [Self <: BatchSizeNumber](x: Self) {
     
-    @scala.inline
-    def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+    inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
   }
 }

@@ -15,22 +15,17 @@ trait ColorBackgroundProperties extends StObject {
 }
 object ColorBackgroundProperties {
   
-  @scala.inline
-  def apply(): ColorBackgroundProperties = {
+  inline def apply(): ColorBackgroundProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorBackgroundProperties]
   }
   
-  @scala.inline
-  implicit class ColorBackgroundPropertiesMutableBuilder[Self <: ColorBackgroundProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ColorBackgroundProperties](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
   }
 }

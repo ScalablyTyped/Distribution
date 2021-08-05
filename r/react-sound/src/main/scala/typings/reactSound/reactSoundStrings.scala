@@ -8,16 +8,13 @@ object reactSoundStrings {
   
   @js.native
   sealed trait PAUSED extends StObject
-  @scala.inline
-  def PAUSED: PAUSED = "PAUSED".asInstanceOf[PAUSED]
+  inline def PAUSED: PAUSED = "PAUSED".asInstanceOf[PAUSED]
   
   @js.native
   sealed trait PLAYING extends StObject
-  @scala.inline
-  def PLAYING: PLAYING = "PLAYING".asInstanceOf[PLAYING]
+  inline def PLAYING: PLAYING = "PLAYING".asInstanceOf[PLAYING]
   
   @js.native
   sealed trait STOPPED extends StObject
-  @scala.inline
-  def STOPPED: STOPPED = "STOPPED".asInstanceOf[STOPPED]
+  inline def STOPPED: STOPPED = "STOPPED".asInstanceOf[STOPPED]
 }

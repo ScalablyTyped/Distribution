@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[KeyType /* <: String | Double */, ValueType /* <: String | Double | js.Symbol */](
+  inline def apply[KeyType /* <: String | Double */, ValueType /* <: String | Double | js.Symbol */](
     `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in KeyType ]: ValueType}
     */ typings.invertKv.invertKvStrings.^ & TopLevel[js.Any]

@@ -38,52 +38,37 @@ trait QuerySchemaVersionMetadataInput extends StObject {
 }
 object QuerySchemaVersionMetadataInput {
   
-  @scala.inline
-  def apply(): QuerySchemaVersionMetadataInput = {
+  inline def apply(): QuerySchemaVersionMetadataInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QuerySchemaVersionMetadataInput]
   }
   
-  @scala.inline
-  implicit class QuerySchemaVersionMetadataInputMutableBuilder[Self <: QuerySchemaVersionMetadataInput] (val x: Self) extends AnyVal {
+  extension [Self <: QuerySchemaVersionMetadataInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: QuerySchemaVersionMetadataMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: QuerySchemaVersionMetadataMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setMetadataList(value: MetadataList): Self = StObject.set(x, "MetadataList", value.asInstanceOf[js.Any])
+    inline def setMetadataList(value: MetadataList): Self = StObject.set(x, "MetadataList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataListUndefined: Self = StObject.set(x, "MetadataList", js.undefined)
+    inline def setMetadataListUndefined: Self = StObject.set(x, "MetadataList", js.undefined)
     
-    @scala.inline
-    def setMetadataListVarargs(value: MetadataKeyValuePair*): Self = StObject.set(x, "MetadataList", js.Array(value :_*))
+    inline def setMetadataListVarargs(value: MetadataKeyValuePair*): Self = StObject.set(x, "MetadataList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: SchemaRegistryTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: SchemaRegistryTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
+    inline def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaIdUndefined: Self = StObject.set(x, "SchemaId", js.undefined)
+    inline def setSchemaIdUndefined: Self = StObject.set(x, "SchemaId", js.undefined)
     
-    @scala.inline
-    def setSchemaVersionId(value: SchemaVersionIdString): Self = StObject.set(x, "SchemaVersionId", value.asInstanceOf[js.Any])
+    inline def setSchemaVersionId(value: SchemaVersionIdString): Self = StObject.set(x, "SchemaVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionIdUndefined: Self = StObject.set(x, "SchemaVersionId", js.undefined)
+    inline def setSchemaVersionIdUndefined: Self = StObject.set(x, "SchemaVersionId", js.undefined)
     
-    @scala.inline
-    def setSchemaVersionNumber(value: SchemaVersionNumber): Self = StObject.set(x, "SchemaVersionNumber", value.asInstanceOf[js.Any])
+    inline def setSchemaVersionNumber(value: SchemaVersionNumber): Self = StObject.set(x, "SchemaVersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionNumberUndefined: Self = StObject.set(x, "SchemaVersionNumber", js.undefined)
+    inline def setSchemaVersionNumberUndefined: Self = StObject.set(x, "SchemaVersionNumber", js.undefined)
   }
 }

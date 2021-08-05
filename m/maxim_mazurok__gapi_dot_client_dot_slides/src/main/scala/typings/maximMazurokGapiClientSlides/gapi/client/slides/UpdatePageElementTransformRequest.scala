@@ -17,31 +17,23 @@ trait UpdatePageElementTransformRequest extends StObject {
 }
 object UpdatePageElementTransformRequest {
   
-  @scala.inline
-  def apply(): UpdatePageElementTransformRequest = {
+  inline def apply(): UpdatePageElementTransformRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdatePageElementTransformRequest]
   }
   
-  @scala.inline
-  implicit class UpdatePageElementTransformRequestMutableBuilder[Self <: UpdatePageElementTransformRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePageElementTransformRequest](x: Self) {
     
-    @scala.inline
-    def setApplyMode(value: String): Self = StObject.set(x, "applyMode", value.asInstanceOf[js.Any])
+    inline def setApplyMode(value: String): Self = StObject.set(x, "applyMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyModeUndefined: Self = StObject.set(x, "applyMode", js.undefined)
+    inline def setApplyModeUndefined: Self = StObject.set(x, "applyMode", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setTransform(value: AffineTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: AffineTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

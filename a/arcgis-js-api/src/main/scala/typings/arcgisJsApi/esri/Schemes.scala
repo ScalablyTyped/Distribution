@@ -26,8 +26,7 @@ trait Schemes
 }
 object Schemes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     primaryScheme: Scheme,
@@ -38,16 +37,12 @@ object Schemes {
     __obj.asInstanceOf[Schemes]
   }
   
-  @scala.inline
-  implicit class SchemesMutableBuilder[Self <: Schemes] (val x: Self) extends AnyVal {
+  extension [Self <: Schemes](x: Self) {
     
-    @scala.inline
-    def setPrimaryScheme(value: Scheme): Self = StObject.set(x, "primaryScheme", value.asInstanceOf[js.Any])
+    inline def setPrimaryScheme(value: Scheme): Self = StObject.set(x, "primaryScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondarySchemes(value: js.Array[Scheme]): Self = StObject.set(x, "secondarySchemes", value.asInstanceOf[js.Any])
+    inline def setSecondarySchemes(value: js.Array[Scheme]): Self = StObject.set(x, "secondarySchemes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondarySchemesVarargs(value: Scheme*): Self = StObject.set(x, "secondarySchemes", js.Array(value :_*))
+    inline def setSecondarySchemesVarargs(value: Scheme*): Self = StObject.set(x, "secondarySchemes", js.Array(value :_*))
   }
 }

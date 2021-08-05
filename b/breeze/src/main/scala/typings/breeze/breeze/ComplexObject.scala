@@ -12,19 +12,15 @@ trait ComplexObject extends StObject {
 }
 object ComplexObject {
   
-  @scala.inline
-  def apply(complexAspect: ComplexAspect, complexType: ComplexType): ComplexObject = {
+  inline def apply(complexAspect: ComplexAspect, complexType: ComplexType): ComplexObject = {
     val __obj = js.Dynamic.literal(complexAspect = complexAspect.asInstanceOf[js.Any], complexType = complexType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComplexObject]
   }
   
-  @scala.inline
-  implicit class ComplexObjectMutableBuilder[Self <: ComplexObject] (val x: Self) extends AnyVal {
+  extension [Self <: ComplexObject](x: Self) {
     
-    @scala.inline
-    def setComplexAspect(value: ComplexAspect): Self = StObject.set(x, "complexAspect", value.asInstanceOf[js.Any])
+    inline def setComplexAspect(value: ComplexAspect): Self = StObject.set(x, "complexAspect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplexType(value: ComplexType): Self = StObject.set(x, "complexType", value.asInstanceOf[js.Any])
+    inline def setComplexType(value: ComplexType): Self = StObject.set(x, "complexType", value.asInstanceOf[js.Any])
   }
 }

@@ -17,7 +17,7 @@ class IonImg protected ()
      with typings.ionicCore.componentsMod.Components.IonImg {
   def this(c: ChangeDetectorRef, r: ElementRef[js.Any], z: NgZone) = this()
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   var ionError: EventEmitter[CustomEvent[js.Any]] = js.native
   
@@ -25,5 +25,5 @@ class IonImg protected ()
   
   var ionImgWillLoad: EventEmitter[CustomEvent[js.Any]] = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

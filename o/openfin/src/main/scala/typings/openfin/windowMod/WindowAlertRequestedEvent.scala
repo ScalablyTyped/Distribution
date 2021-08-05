@@ -15,20 +15,16 @@ trait WindowAlertRequestedEvent[Topic, Type]
 }
 object WindowAlertRequestedEvent {
   
-  @scala.inline
-  def apply[Topic, Type](message: String, name: String, topic: Topic, `type`: Type, url: String, uuid: String): WindowAlertRequestedEvent[Topic, Type] = {
+  inline def apply[Topic, Type](message: String, name: String, topic: Topic, `type`: Type, url: String, uuid: String): WindowAlertRequestedEvent[Topic, Type] = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowAlertRequestedEvent[Topic, Type]]
   }
   
-  @scala.inline
-  implicit class WindowAlertRequestedEventMutableBuilder[Self <: WindowAlertRequestedEvent[?, ?], Topic, Type] (val x: Self & (WindowAlertRequestedEvent[Topic, Type])) extends AnyVal {
+  extension [Self <: WindowAlertRequestedEvent[?, ?], Topic, Type](x: Self & (WindowAlertRequestedEvent[Topic, Type])) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

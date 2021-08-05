@@ -18,28 +18,21 @@ trait GetTransitGatewayAttachmentPropagationsResult extends StObject {
 }
 object GetTransitGatewayAttachmentPropagationsResult {
   
-  @scala.inline
-  def apply(): GetTransitGatewayAttachmentPropagationsResult = {
+  inline def apply(): GetTransitGatewayAttachmentPropagationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTransitGatewayAttachmentPropagationsResult]
   }
   
-  @scala.inline
-  implicit class GetTransitGatewayAttachmentPropagationsResultMutableBuilder[Self <: GetTransitGatewayAttachmentPropagationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetTransitGatewayAttachmentPropagationsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayAttachmentPropagations(value: TransitGatewayAttachmentPropagationList): Self = StObject.set(x, "TransitGatewayAttachmentPropagations", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayAttachmentPropagations(value: TransitGatewayAttachmentPropagationList): Self = StObject.set(x, "TransitGatewayAttachmentPropagations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayAttachmentPropagationsUndefined: Self = StObject.set(x, "TransitGatewayAttachmentPropagations", js.undefined)
+    inline def setTransitGatewayAttachmentPropagationsUndefined: Self = StObject.set(x, "TransitGatewayAttachmentPropagations", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayAttachmentPropagationsVarargs(value: TransitGatewayAttachmentPropagation*): Self = StObject.set(x, "TransitGatewayAttachmentPropagations", js.Array(value :_*))
+    inline def setTransitGatewayAttachmentPropagationsVarargs(value: TransitGatewayAttachmentPropagation*): Self = StObject.set(x, "TransitGatewayAttachmentPropagations", js.Array(value :_*))
   }
 }

@@ -26,8 +26,7 @@ trait HTMLTextureFile
      with File
 object HTMLTextureFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     bytesLoaded: Double,
     bytesTotal: Double,

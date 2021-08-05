@@ -13,22 +13,17 @@ trait SharedAccessPolicy extends StObject {
 }
 object SharedAccessPolicy {
   
-  @scala.inline
-  def apply(AccessPolicy: Expiry): SharedAccessPolicy = {
+  inline def apply(AccessPolicy: Expiry): SharedAccessPolicy = {
     val __obj = js.Dynamic.literal(AccessPolicy = AccessPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedAccessPolicy]
   }
   
-  @scala.inline
-  implicit class SharedAccessPolicyMutableBuilder[Self <: SharedAccessPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SharedAccessPolicy](x: Self) {
     
-    @scala.inline
-    def setAccessPolicy(value: Expiry): Self = StObject.set(x, "AccessPolicy", value.asInstanceOf[js.Any])
+    inline def setAccessPolicy(value: Expiry): Self = StObject.set(x, "AccessPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
   }
 }

@@ -55,8 +55,7 @@ object WsdlDescription {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WsdlDescription]
+  inline def create(model: IModel): WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WsdlDescription]
   
   /**
     * Creates and returns a new WsdlDescription instance in the SDK and on the server.
@@ -64,8 +63,7 @@ object WsdlDescription {
     * of the parent ImportedWebService element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInImportedWebServiceUnderWsdlDescription(container: ImportedWebService): WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportedWebServiceUnderWsdlDescription")(container.asInstanceOf[js.Any]).asInstanceOf[WsdlDescription]
+  inline def createInImportedWebServiceUnderWsdlDescription(container: ImportedWebService): WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportedWebServiceUnderWsdlDescription")(container.asInstanceOf[js.Any]).asInstanceOf[WsdlDescription]
   
   /**
     * Creates and returns a new WsdlDescription instance in the SDK and on the server.
@@ -73,20 +71,17 @@ object WsdlDescription {
     * of the parent appservices.Msd element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInMsdUnderWsdlDescription(container: Msd): WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMsdUnderWsdlDescription")(container.asInstanceOf[js.Any]).asInstanceOf[WsdlDescription]
+  inline def createInMsdUnderWsdlDescription(container: Msd): WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMsdUnderWsdlDescription")(container.asInstanceOf[js.Any]).asInstanceOf[WsdlDescription]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.WsdlDescription.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.WsdlDescription.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

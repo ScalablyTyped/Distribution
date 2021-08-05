@@ -17,20 +17,16 @@ object angular {
     }
     object IAngularLoadService {
       
-      @scala.inline
-      def apply(loadCSS: String => IPromise[js.Any], loadScript: String => IPromise[js.Any]): IAngularLoadService = {
+      inline def apply(loadCSS: String => IPromise[js.Any], loadScript: String => IPromise[js.Any]): IAngularLoadService = {
         val __obj = js.Dynamic.literal(loadCSS = js.Any.fromFunction1(loadCSS), loadScript = js.Any.fromFunction1(loadScript))
         __obj.asInstanceOf[IAngularLoadService]
       }
       
-      @scala.inline
-      implicit class IAngularLoadServiceMutableBuilder[Self <: IAngularLoadService] (val x: Self) extends AnyVal {
+      extension [Self <: IAngularLoadService](x: Self) {
         
-        @scala.inline
-        def setLoadCSS(value: String => IPromise[js.Any]): Self = StObject.set(x, "loadCSS", js.Any.fromFunction1(value))
+        inline def setLoadCSS(value: String => IPromise[js.Any]): Self = StObject.set(x, "loadCSS", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setLoadScript(value: String => IPromise[js.Any]): Self = StObject.set(x, "loadScript", js.Any.fromFunction1(value))
+        inline def setLoadScript(value: String => IPromise[js.Any]): Self = StObject.set(x, "loadScript", js.Any.fromFunction1(value))
       }
     }
   }

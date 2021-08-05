@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "Month")
 @js.native
-class Month protected () extends Temporal {
+/* private */ class Month () extends Temporal {
   
   def adjustInto(temporal: Temporal): Temporal = js.native
   
@@ -50,99 +50,83 @@ object Month {
   @JSImport("js-joda", "Month.APRIL")
   @js.native
   def APRIL: Month = js.native
-  @scala.inline
-  def APRIL_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("APRIL")(x.asInstanceOf[js.Any])
+  inline def APRIL_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("APRIL")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "Month.AUGUST")
   @js.native
   def AUGUST: Month = js.native
-  @scala.inline
-  def AUGUST_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUGUST")(x.asInstanceOf[js.Any])
+  inline def AUGUST_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUGUST")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "Month.DECEMBER")
   @js.native
   def DECEMBER: Month = js.native
-  @scala.inline
-  def DECEMBER_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DECEMBER")(x.asInstanceOf[js.Any])
+  inline def DECEMBER_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DECEMBER")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "Month.FEBRUARY")
   @js.native
   def FEBRUARY: Month = js.native
-  @scala.inline
-  def FEBRUARY_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FEBRUARY")(x.asInstanceOf[js.Any])
+  inline def FEBRUARY_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FEBRUARY")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "Month.JANUARY")
   @js.native
   def JANUARY: Month = js.native
-  @scala.inline
-  def JANUARY_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JANUARY")(x.asInstanceOf[js.Any])
+  inline def JANUARY_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JANUARY")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "Month.JULY")
   @js.native
   def JULY: Month = js.native
-  @scala.inline
-  def JULY_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JULY")(x.asInstanceOf[js.Any])
+  inline def JULY_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JULY")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "Month.JUNE")
   @js.native
   def JUNE: Month = js.native
-  @scala.inline
-  def JUNE_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JUNE")(x.asInstanceOf[js.Any])
+  inline def JUNE_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JUNE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "Month.MARCH")
   @js.native
   def MARCH: Month = js.native
-  @scala.inline
-  def MARCH_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MARCH")(x.asInstanceOf[js.Any])
+  inline def MARCH_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MARCH")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "Month.MAY")
   @js.native
   def MAY: Month = js.native
-  @scala.inline
-  def MAY_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAY")(x.asInstanceOf[js.Any])
+  inline def MAY_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAY")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "Month.NOVEMBER")
   @js.native
   def NOVEMBER: Month = js.native
-  @scala.inline
-  def NOVEMBER_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOVEMBER")(x.asInstanceOf[js.Any])
+  inline def NOVEMBER_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOVEMBER")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "Month.OCTOBER")
   @js.native
   def OCTOBER: Month = js.native
-  @scala.inline
-  def OCTOBER_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCTOBER")(x.asInstanceOf[js.Any])
+  inline def OCTOBER_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCTOBER")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("js-joda", "Month.SEPTEMBER")
   @js.native
   def SEPTEMBER: Month = js.native
-  @scala.inline
-  def SEPTEMBER_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPTEMBER")(x.asInstanceOf[js.Any])
+  inline def SEPTEMBER_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPTEMBER")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def from(temporal: TemporalAccessor): Month = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[Month]
+  inline def from(temporal: TemporalAccessor): Month = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[Month]
   
   /* static member */
-  @scala.inline
-  def of(month: Double): Month = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(month.asInstanceOf[js.Any]).asInstanceOf[Month]
+  inline def of(month: Double): Month = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(month.asInstanceOf[js.Any]).asInstanceOf[Month]
   
   /* static member */
-  @scala.inline
-  def valueOf_(name: String): Month = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(name.asInstanceOf[js.Any]).asInstanceOf[Month]
+  inline def valueOf_(name: String): Month = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(name.asInstanceOf[js.Any]).asInstanceOf[Month]
   
   /* static member */
-  @scala.inline
-  def values(): js.Array[Month] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")().asInstanceOf[js.Array[Month]]
+  inline def values(): js.Array[Month] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")().asInstanceOf[js.Array[Month]]
 }

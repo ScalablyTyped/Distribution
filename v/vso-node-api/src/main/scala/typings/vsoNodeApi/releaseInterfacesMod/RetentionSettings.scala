@@ -14,8 +14,7 @@ trait RetentionSettings extends StObject {
 }
 object RetentionSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     daysToKeepDeletedReleases: Double,
     defaultEnvironmentRetentionPolicy: EnvironmentRetentionPolicy,
     maximumEnvironmentRetentionPolicy: EnvironmentRetentionPolicy
@@ -24,16 +23,12 @@ object RetentionSettings {
     __obj.asInstanceOf[RetentionSettings]
   }
   
-  @scala.inline
-  implicit class RetentionSettingsMutableBuilder[Self <: RetentionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: RetentionSettings](x: Self) {
     
-    @scala.inline
-    def setDaysToKeepDeletedReleases(value: Double): Self = StObject.set(x, "daysToKeepDeletedReleases", value.asInstanceOf[js.Any])
+    inline def setDaysToKeepDeletedReleases(value: Double): Self = StObject.set(x, "daysToKeepDeletedReleases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultEnvironmentRetentionPolicy(value: EnvironmentRetentionPolicy): Self = StObject.set(x, "defaultEnvironmentRetentionPolicy", value.asInstanceOf[js.Any])
+    inline def setDefaultEnvironmentRetentionPolicy(value: EnvironmentRetentionPolicy): Self = StObject.set(x, "defaultEnvironmentRetentionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumEnvironmentRetentionPolicy(value: EnvironmentRetentionPolicy): Self = StObject.set(x, "maximumEnvironmentRetentionPolicy", value.asInstanceOf[js.Any])
+    inline def setMaximumEnvironmentRetentionPolicy(value: EnvironmentRetentionPolicy): Self = StObject.set(x, "maximumEnvironmentRetentionPolicy", value.asInstanceOf[js.Any])
   }
 }

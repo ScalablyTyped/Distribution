@@ -14,22 +14,17 @@ trait ObjFacetValue extends StObject {
 }
 object ObjFacetValue {
   
-  @scala.inline
-  def apply(count: () => Double, includedObjs: () => js.Array[Obj], name: () => String): ObjFacetValue = {
+  inline def apply(count: () => Double, includedObjs: () => js.Array[Obj], name: () => String): ObjFacetValue = {
     val __obj = js.Dynamic.literal(count = js.Any.fromFunction0(count), includedObjs = js.Any.fromFunction0(includedObjs), name = js.Any.fromFunction0(name))
     __obj.asInstanceOf[ObjFacetValue]
   }
   
-  @scala.inline
-  implicit class ObjFacetValueMutableBuilder[Self <: ObjFacetValue] (val x: Self) extends AnyVal {
+  extension [Self <: ObjFacetValue](x: Self) {
     
-    @scala.inline
-    def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
+    inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIncludedObjs(value: () => js.Array[Obj]): Self = StObject.set(x, "includedObjs", js.Any.fromFunction0(value))
+    inline def setIncludedObjs(value: () => js.Array[Obj]): Self = StObject.set(x, "includedObjs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: () => String): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
+    inline def setName(value: () => String): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
   }
 }

@@ -13,22 +13,17 @@ trait SchemaResultDisplayLine extends StObject {
 }
 object SchemaResultDisplayLine {
   
-  @scala.inline
-  def apply(): SchemaResultDisplayLine = {
+  inline def apply(): SchemaResultDisplayLine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResultDisplayLine]
   }
   
-  @scala.inline
-  implicit class SchemaResultDisplayLineMutableBuilder[Self <: SchemaResultDisplayLine] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResultDisplayLine](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[SchemaResultDisplayField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[SchemaResultDisplayField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: SchemaResultDisplayField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: SchemaResultDisplayField*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

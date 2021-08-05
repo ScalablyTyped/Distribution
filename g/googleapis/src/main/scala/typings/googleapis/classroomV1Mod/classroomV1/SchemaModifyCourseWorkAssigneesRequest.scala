@@ -23,25 +23,19 @@ trait SchemaModifyCourseWorkAssigneesRequest extends StObject {
 }
 object SchemaModifyCourseWorkAssigneesRequest {
   
-  @scala.inline
-  def apply(): SchemaModifyCourseWorkAssigneesRequest = {
+  inline def apply(): SchemaModifyCourseWorkAssigneesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaModifyCourseWorkAssigneesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaModifyCourseWorkAssigneesRequestMutableBuilder[Self <: SchemaModifyCourseWorkAssigneesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaModifyCourseWorkAssigneesRequest](x: Self) {
     
-    @scala.inline
-    def setAssigneeMode(value: String): Self = StObject.set(x, "assigneeMode", value.asInstanceOf[js.Any])
+    inline def setAssigneeMode(value: String): Self = StObject.set(x, "assigneeMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssigneeModeUndefined: Self = StObject.set(x, "assigneeMode", js.undefined)
+    inline def setAssigneeModeUndefined: Self = StObject.set(x, "assigneeMode", js.undefined)
     
-    @scala.inline
-    def setModifyIndividualStudentsOptions(value: SchemaModifyIndividualStudentsOptions): Self = StObject.set(x, "modifyIndividualStudentsOptions", value.asInstanceOf[js.Any])
+    inline def setModifyIndividualStudentsOptions(value: SchemaModifyIndividualStudentsOptions): Self = StObject.set(x, "modifyIndividualStudentsOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifyIndividualStudentsOptionsUndefined: Self = StObject.set(x, "modifyIndividualStudentsOptions", js.undefined)
+    inline def setModifyIndividualStudentsOptionsUndefined: Self = StObject.set(x, "modifyIndividualStudentsOptions", js.undefined)
   }
 }

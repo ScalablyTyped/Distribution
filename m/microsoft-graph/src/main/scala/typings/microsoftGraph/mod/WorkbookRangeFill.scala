@@ -16,22 +16,17 @@ trait WorkbookRangeFill
 }
 object WorkbookRangeFill {
   
-  @scala.inline
-  def apply(): WorkbookRangeFill = {
+  inline def apply(): WorkbookRangeFill = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookRangeFill]
   }
   
-  @scala.inline
-  implicit class WorkbookRangeFillMutableBuilder[Self <: WorkbookRangeFill] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookRangeFill](x: Self) {
     
-    @scala.inline
-    def setColor(value: NullableOption[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: NullableOption[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorNull: Self = StObject.set(x, "color", null)
+    inline def setColorNull: Self = StObject.set(x, "color", null)
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait ItemsHttpContentCodingHeaderValue extends StObject {
 }
 object ItemsHttpContentCodingHeaderValue {
   
-  @scala.inline
-  def apply(items: HttpContentCodingHeaderValue, returnValue: Double): ItemsHttpContentCodingHeaderValue = {
+  inline def apply(items: HttpContentCodingHeaderValue, returnValue: Double): ItemsHttpContentCodingHeaderValue = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsHttpContentCodingHeaderValue]
   }
   
-  @scala.inline
-  implicit class ItemsHttpContentCodingHeaderValueMutableBuilder[Self <: ItemsHttpContentCodingHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsHttpContentCodingHeaderValue](x: Self) {
     
-    @scala.inline
-    def setItems(value: HttpContentCodingHeaderValue): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: HttpContentCodingHeaderValue): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

@@ -23,25 +23,19 @@ trait S3Config extends StObject {
 }
 object S3Config {
   
-  @scala.inline
-  def apply(Path: S3Path, RoleArn: Arn): S3Config = {
+  inline def apply(Path: S3Path, RoleArn: Arn): S3Config = {
     val __obj = js.Dynamic.literal(Path = Path.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Config]
   }
   
-  @scala.inline
-  implicit class S3ConfigMutableBuilder[Self <: S3Config] (val x: Self) extends AnyVal {
+  extension [Self <: S3Config](x: Self) {
     
-    @scala.inline
-    def setKMSKeyArn(value: KMSKeyArn): Self = StObject.set(x, "KMSKeyArn", value.asInstanceOf[js.Any])
+    inline def setKMSKeyArn(value: KMSKeyArn): Self = StObject.set(x, "KMSKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKMSKeyArnUndefined: Self = StObject.set(x, "KMSKeyArn", js.undefined)
+    inline def setKMSKeyArnUndefined: Self = StObject.set(x, "KMSKeyArn", js.undefined)
     
-    @scala.inline
-    def setPath(value: S3Path): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: S3Path): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
   }
 }

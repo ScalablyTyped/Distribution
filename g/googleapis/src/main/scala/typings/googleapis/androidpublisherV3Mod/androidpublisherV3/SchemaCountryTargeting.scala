@@ -12,28 +12,21 @@ trait SchemaCountryTargeting extends StObject {
 }
 object SchemaCountryTargeting {
   
-  @scala.inline
-  def apply(): SchemaCountryTargeting = {
+  inline def apply(): SchemaCountryTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCountryTargeting]
   }
   
-  @scala.inline
-  implicit class SchemaCountryTargetingMutableBuilder[Self <: SchemaCountryTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCountryTargeting](x: Self) {
     
-    @scala.inline
-    def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
+    inline def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
+    inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
     
-    @scala.inline
-    def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
+    inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeRestOfWorld(value: Boolean): Self = StObject.set(x, "includeRestOfWorld", value.asInstanceOf[js.Any])
+    inline def setIncludeRestOfWorld(value: Boolean): Self = StObject.set(x, "includeRestOfWorld", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeRestOfWorldUndefined: Self = StObject.set(x, "includeRestOfWorld", js.undefined)
+    inline def setIncludeRestOfWorldUndefined: Self = StObject.set(x, "includeRestOfWorld", js.undefined)
   }
 }

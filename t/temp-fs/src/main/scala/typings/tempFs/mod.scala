@@ -15,16 +15,13 @@ object mod {
   /**
     * Remove all tracked files and directories asynchronously.
     */
-  @scala.inline
-  def clear(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[js.Any]
-  @scala.inline
-  def clear(callback: js.Function0[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def clear(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[js.Any]
+  inline def clear(callback: js.Function0[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Remove all tracked files and directories synchronously.
     */
-  @scala.inline
-  def clearSync(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clearSync")().asInstanceOf[js.Any]
+  inline def clearSync(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clearSync")().asInstanceOf[js.Any]
   
   /**
     * A tempdir.
@@ -77,32 +74,24 @@ object mod {
     *                 <code>null</code>, <code>dir</code> has the properties of
     *                 {@link dir}.
     */
-  @scala.inline
-  def mkdir(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")().asInstanceOf[js.Any]
-  @scala.inline
-  def mkdir(options: Unit, callback: js.Function2[/* err */ js.Any, /* dir */ dir, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def mkdir(options: options): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def mkdir(options: options, callback: js.Function2[/* err */ js.Any, /* dir */ dir, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mkdir(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")().asInstanceOf[js.Any]
+  inline def mkdir(options: Unit, callback: js.Function2[/* err */ js.Any, /* dir */ dir, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mkdir(options: options): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def mkdir(options: options, callback: js.Function2[/* err */ js.Any, /* dir */ dir, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * The synchronous version of {@link mkdir}.
     *
     * @throws when an error happens.
     */
-  @scala.inline
-  def mkdirSync(): dir = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")().asInstanceOf[dir]
-  @scala.inline
-  def mkdirSync(options: options): dir = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(options.asInstanceOf[js.Any]).asInstanceOf[dir]
+  inline def mkdirSync(): dir = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")().asInstanceOf[dir]
+  inline def mkdirSync(options: options): dir = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(options.asInstanceOf[js.Any]).asInstanceOf[dir]
   
   /**
     * Return a customized/random filename/dirname.
     */
-  @scala.inline
-  def name(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name")().asInstanceOf[String]
-  @scala.inline
-  def name(options: options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def name(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name")().asInstanceOf[String]
+  inline def name(options: options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Try to open a unique tempfile asynchronously.
@@ -112,26 +101,19 @@ object mod {
     *                 <code>null</code>, <code>file</code> has the properties
     *                 of {@link file}.
     */
-  @scala.inline
-  def open(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[js.Any]
-  @scala.inline
-  def open(callback: js.Function2[/* err */ js.Any, /* file */ file, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def open(options: Unit, callback: js.Function2[/* err */ js.Any, /* file */ file, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def open(options: options): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def open(options: options, callback: js.Function2[/* err */ js.Any, /* file */ file, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def open(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[js.Any]
+  inline def open(callback: js.Function2[/* err */ js.Any, /* file */ file, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def open(options: Unit, callback: js.Function2[/* err */ js.Any, /* file */ file, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def open(options: options): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def open(options: options, callback: js.Function2[/* err */ js.Any, /* file */ file, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * The synchronous version of {@link open}.
     *
     * @throws when an error happens.
     */
-  @scala.inline
-  def openSync(): file = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")().asInstanceOf[file]
-  @scala.inline
-  def openSync(options: options): file = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(options.asInstanceOf[js.Any]).asInstanceOf[file]
+  inline def openSync(): file = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")().asInstanceOf[file]
+  inline def openSync(options: options): file = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(options.asInstanceOf[js.Any]).asInstanceOf[file]
   
   /**
     * Use it to switch global files/directories tracking on or off.
@@ -146,10 +128,8 @@ object mod {
     * <b>Note: When an uncaught exception occurs, all tracked temporary files
     * and directories will be removed no matter it is on or off.</b>
     */
-  @scala.inline
-  def track(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("track")().asInstanceOf[Unit]
-  @scala.inline
-  def track(on: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("track")(on.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def track(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("track")().asInstanceOf[Unit]
+  inline def track(on: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("track")(on.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * A tempfile.
@@ -250,68 +230,48 @@ object mod {
   }
   object options {
     
-    @scala.inline
-    def apply(): options = {
+    inline def apply(): options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[options]
     }
     
-    @scala.inline
-    implicit class optionsMutableBuilder[Self <: options] (val x: Self) extends AnyVal {
+    extension [Self <: options](x: Self) {
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Number): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Number): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setMode(value: Number): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Number): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+      inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+      inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      @scala.inline
-      def setTrack(value: Boolean): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+      inline def setTrack(value: Boolean): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+      inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     }
   }
 }

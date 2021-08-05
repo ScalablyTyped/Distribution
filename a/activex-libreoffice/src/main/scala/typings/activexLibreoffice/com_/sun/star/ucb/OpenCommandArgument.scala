@@ -41,25 +41,19 @@ trait OpenCommandArgument extends StObject {
 }
 object OpenCommandArgument {
   
-  @scala.inline
-  def apply(Mode: Double, Priority: Double, Properties: SafeArray[Property], Sink: XInterface): OpenCommandArgument = {
+  inline def apply(Mode: Double, Priority: Double, Properties: SafeArray[Property], Sink: XInterface): OpenCommandArgument = {
     val __obj = js.Dynamic.literal(Mode = Mode.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], Sink = Sink.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenCommandArgument]
   }
   
-  @scala.inline
-  implicit class OpenCommandArgumentMutableBuilder[Self <: OpenCommandArgument] (val x: Self) extends AnyVal {
+  extension [Self <: OpenCommandArgument](x: Self) {
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: SafeArray[Property]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SafeArray[Property]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSink(value: XInterface): Self = StObject.set(x, "Sink", value.asInstanceOf[js.Any])
+    inline def setSink(value: XInterface): Self = StObject.set(x, "Sink", value.asInstanceOf[js.Any])
   }
 }

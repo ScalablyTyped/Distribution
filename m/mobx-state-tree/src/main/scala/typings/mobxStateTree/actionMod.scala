@@ -13,15 +13,11 @@ object actionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addMiddleware(target: IAnyStateTreeNode, handler: IMiddlewareHandler): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("addMiddleware")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
-  @scala.inline
-  def addMiddleware(target: IAnyStateTreeNode, handler: IMiddlewareHandler, includeHooks: Boolean): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("addMiddleware")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], includeHooks.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
+  inline def addMiddleware(target: IAnyStateTreeNode, handler: IMiddlewareHandler): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("addMiddleware")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
+  inline def addMiddleware(target: IAnyStateTreeNode, handler: IMiddlewareHandler, includeHooks: Boolean): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("addMiddleware")(target.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], includeHooks.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
   
-  @scala.inline
-  def decorate[T /* <: js.Function */](handler: IMiddlewareHandler, fn: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(handler.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def decorate[T /* <: js.Function */](handler: IMiddlewareHandler, fn: T, includeHooks: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(handler.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], includeHooks.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def decorate[T /* <: js.Function */](handler: IMiddlewareHandler, fn: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(handler.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def decorate[T /* <: js.Function */](handler: IMiddlewareHandler, fn: T, includeHooks: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(handler.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], includeHooks.asInstanceOf[js.Any])).asInstanceOf[T]
   
   trait IMiddlewareEvent
     extends StObject
@@ -44,8 +40,7 @@ object actionMod {
   }
   object IMiddlewareEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allParentIds: js.Array[Double],
       args: js.Array[js.Any],
       context: IAnyStateTreeNode,
@@ -61,29 +56,21 @@ object actionMod {
       __obj.asInstanceOf[IMiddlewareEvent]
     }
     
-    @scala.inline
-    implicit class IMiddlewareEventMutableBuilder[Self <: IMiddlewareEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IMiddlewareEvent](x: Self) {
       
-      @scala.inline
-      def setAllParentIds(value: js.Array[Double]): Self = StObject.set(x, "allParentIds", value.asInstanceOf[js.Any])
+      inline def setAllParentIds(value: js.Array[Double]): Self = StObject.set(x, "allParentIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllParentIdsVarargs(value: Double*): Self = StObject.set(x, "allParentIds", js.Array(value :_*))
+      inline def setAllParentIdsVarargs(value: Double*): Self = StObject.set(x, "allParentIds", js.Array(value :_*))
       
-      @scala.inline
-      def setParentEvent(value: IMiddlewareEvent): Self = StObject.set(x, "parentEvent", value.asInstanceOf[js.Any])
+      inline def setParentEvent(value: IMiddlewareEvent): Self = StObject.set(x, "parentEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentEventUndefined: Self = StObject.set(x, "parentEvent", js.undefined)
+      inline def setParentEventUndefined: Self = StObject.set(x, "parentEvent", js.undefined)
       
-      @scala.inline
-      def setParentId(value: Double): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: Double): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootId(value: Double): Self = StObject.set(x, "rootId", value.asInstanceOf[js.Any])
+      inline def setRootId(value: Double): Self = StObject.set(x, "rootId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: IMiddlewareEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: IMiddlewareEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,23 +85,17 @@ object actionMod {
   trait IMiddlewareEventType extends StObject
   object IMiddlewareEventType {
     
-    @scala.inline
-    def action: typings.mobxStateTree.mobxStateTreeStrings.action = "action".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.action]
+    inline def action: typings.mobxStateTree.mobxStateTreeStrings.action = "action".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.action]
     
-    @scala.inline
-    def flow_resume: typings.mobxStateTree.mobxStateTreeStrings.flow_resume = "flow_resume".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.flow_resume]
+    inline def flow_resume: typings.mobxStateTree.mobxStateTreeStrings.flow_resume = "flow_resume".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.flow_resume]
     
-    @scala.inline
-    def flow_resume_error: typings.mobxStateTree.mobxStateTreeStrings.flow_resume_error = "flow_resume_error".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.flow_resume_error]
+    inline def flow_resume_error: typings.mobxStateTree.mobxStateTreeStrings.flow_resume_error = "flow_resume_error".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.flow_resume_error]
     
-    @scala.inline
-    def flow_return: typings.mobxStateTree.mobxStateTreeStrings.flow_return = "flow_return".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.flow_return]
+    inline def flow_return: typings.mobxStateTree.mobxStateTreeStrings.flow_return = "flow_return".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.flow_return]
     
-    @scala.inline
-    def flow_spawn: typings.mobxStateTree.mobxStateTreeStrings.flow_spawn = "flow_spawn".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.flow_spawn]
+    inline def flow_spawn: typings.mobxStateTree.mobxStateTreeStrings.flow_spawn = "flow_spawn".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.flow_spawn]
     
-    @scala.inline
-    def flow_throw: typings.mobxStateTree.mobxStateTreeStrings.flow_throw = "flow_throw".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.flow_throw]
+    inline def flow_throw: typings.mobxStateTree.mobxStateTreeStrings.flow_throw = "flow_throw".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.flow_throw]
   }
   
   type IMiddlewareHandler = js.Function3[

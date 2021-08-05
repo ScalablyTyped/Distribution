@@ -20,31 +20,23 @@ trait Author extends StObject {
 }
 object Author {
   
-  @scala.inline
-  def apply(author: Email, committer: Email, id: String, message: String, timestamp: String, tree_id: String): Author = {
+  inline def apply(author: Email, committer: Email, id: String, message: String, timestamp: String, tree_id: String): Author = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], committer = committer.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], tree_id = tree_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Author]
   }
   
-  @scala.inline
-  implicit class AuthorMutableBuilder[Self <: Author] (val x: Self) extends AnyVal {
+  extension [Self <: Author](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: Email): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Email): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitter(value: Email): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+    inline def setCommitter(value: Email): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTree_id(value: String): Self = StObject.set(x, "tree_id", value.asInstanceOf[js.Any])
+    inline def setTree_id(value: String): Self = StObject.set(x, "tree_id", value.asInstanceOf[js.Any])
   }
 }

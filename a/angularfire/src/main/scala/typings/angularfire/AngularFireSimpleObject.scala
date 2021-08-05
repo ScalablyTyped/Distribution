@@ -20,22 +20,17 @@ trait AngularFireSimpleObject
 }
 object AngularFireSimpleObject {
   
-  @scala.inline
-  def apply($id: String, $priority: Double, $value: js.Any): AngularFireSimpleObject = {
+  inline def apply($id: String, $priority: Double, $value: js.Any): AngularFireSimpleObject = {
     val __obj = js.Dynamic.literal($id = $id.asInstanceOf[js.Any], $priority = $priority.asInstanceOf[js.Any], $value = $value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AngularFireSimpleObject]
   }
   
-  @scala.inline
-  implicit class AngularFireSimpleObjectMutableBuilder[Self <: AngularFireSimpleObject] (val x: Self) extends AnyVal {
+  extension [Self <: AngularFireSimpleObject](x: Self) {
     
-    @scala.inline
-    def set$id(value: String): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
+    inline def set$id(value: String): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$priority(value: Double): Self = StObject.set(x, "$priority", value.asInstanceOf[js.Any])
+    inline def set$priority(value: Double): Self = StObject.set(x, "$priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$value(value: js.Any): Self = StObject.set(x, "$value", value.asInstanceOf[js.Any])
+    inline def set$value(value: js.Any): Self = StObject.set(x, "$value", value.asInstanceOf[js.Any])
   }
 }

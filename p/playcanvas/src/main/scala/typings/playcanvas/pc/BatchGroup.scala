@@ -52,34 +52,25 @@ trait BatchGroup extends StObject {
 }
 object BatchGroup {
   
-  @scala.inline
-  def apply(dynamic: Boolean, id: Double, maxAabbSize: Double, name: String): BatchGroup = {
+  inline def apply(dynamic: Boolean, id: Double, maxAabbSize: Double, name: String): BatchGroup = {
     val __obj = js.Dynamic.literal(dynamic = dynamic.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], maxAabbSize = maxAabbSize.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGroup]
   }
   
-  @scala.inline
-  implicit class BatchGroupMutableBuilder[Self <: BatchGroup] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGroup](x: Self) {
     
-    @scala.inline
-    def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
+    inline def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayers(value: js.Array[Double]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: js.Array[Double]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: Double*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: Double*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxAabbSize(value: Double): Self = StObject.set(x, "maxAabbSize", value.asInstanceOf[js.Any])
+    inline def setMaxAabbSize(value: Double): Self = StObject.set(x, "maxAabbSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

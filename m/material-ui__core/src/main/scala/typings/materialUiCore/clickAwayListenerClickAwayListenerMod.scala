@@ -32,35 +32,26 @@ object clickAwayListenerClickAwayListenerMod extends Shortcut {
   }
   object ClickAwayListenerProps {
     
-    @scala.inline
-    def apply(onClickAway: ChangeEvent[js.Object] => Unit): ClickAwayListenerProps = {
+    inline def apply(onClickAway: ChangeEvent[js.Object] => Unit): ClickAwayListenerProps = {
       val __obj = js.Dynamic.literal(onClickAway = js.Any.fromFunction1(onClickAway))
       __obj.asInstanceOf[ClickAwayListenerProps]
     }
     
-    @scala.inline
-    implicit class ClickAwayListenerPropsMutableBuilder[Self <: ClickAwayListenerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ClickAwayListenerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setMouseEvent(value: onClick | onMouseDown | onMouseUp | `false`): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
+      inline def setMouseEvent(value: onClick | onMouseDown | onMouseUp | `false`): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseEventUndefined: Self = StObject.set(x, "mouseEvent", js.undefined)
+      inline def setMouseEventUndefined: Self = StObject.set(x, "mouseEvent", js.undefined)
       
-      @scala.inline
-      def setOnClickAway(value: ChangeEvent[js.Object] => Unit): Self = StObject.set(x, "onClickAway", js.Any.fromFunction1(value))
+      inline def setOnClickAway(value: ChangeEvent[js.Object] => Unit): Self = StObject.set(x, "onClickAway", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTouchEvent(value: onTouchStart | onTouchEnd | `false`): Self = StObject.set(x, "touchEvent", value.asInstanceOf[js.Any])
+      inline def setTouchEvent(value: onTouchStart | onTouchEnd | `false`): Self = StObject.set(x, "touchEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchEventUndefined: Self = StObject.set(x, "touchEvent", js.undefined)
+      inline def setTouchEventUndefined: Self = StObject.set(x, "touchEvent", js.undefined)
     }
   }
   

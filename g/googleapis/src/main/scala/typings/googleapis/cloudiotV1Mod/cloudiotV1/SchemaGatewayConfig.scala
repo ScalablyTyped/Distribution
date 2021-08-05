@@ -33,37 +33,27 @@ trait SchemaGatewayConfig extends StObject {
 }
 object SchemaGatewayConfig {
   
-  @scala.inline
-  def apply(): SchemaGatewayConfig = {
+  inline def apply(): SchemaGatewayConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGatewayConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGatewayConfigMutableBuilder[Self <: SchemaGatewayConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGatewayConfig](x: Self) {
     
-    @scala.inline
-    def setGatewayAuthMethod(value: String): Self = StObject.set(x, "gatewayAuthMethod", value.asInstanceOf[js.Any])
+    inline def setGatewayAuthMethod(value: String): Self = StObject.set(x, "gatewayAuthMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayAuthMethodUndefined: Self = StObject.set(x, "gatewayAuthMethod", js.undefined)
+    inline def setGatewayAuthMethodUndefined: Self = StObject.set(x, "gatewayAuthMethod", js.undefined)
     
-    @scala.inline
-    def setGatewayType(value: String): Self = StObject.set(x, "gatewayType", value.asInstanceOf[js.Any])
+    inline def setGatewayType(value: String): Self = StObject.set(x, "gatewayType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayTypeUndefined: Self = StObject.set(x, "gatewayType", js.undefined)
+    inline def setGatewayTypeUndefined: Self = StObject.set(x, "gatewayType", js.undefined)
     
-    @scala.inline
-    def setLastAccessedGatewayId(value: String): Self = StObject.set(x, "lastAccessedGatewayId", value.asInstanceOf[js.Any])
+    inline def setLastAccessedGatewayId(value: String): Self = StObject.set(x, "lastAccessedGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAccessedGatewayIdUndefined: Self = StObject.set(x, "lastAccessedGatewayId", js.undefined)
+    inline def setLastAccessedGatewayIdUndefined: Self = StObject.set(x, "lastAccessedGatewayId", js.undefined)
     
-    @scala.inline
-    def setLastAccessedGatewayTime(value: String): Self = StObject.set(x, "lastAccessedGatewayTime", value.asInstanceOf[js.Any])
+    inline def setLastAccessedGatewayTime(value: String): Self = StObject.set(x, "lastAccessedGatewayTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAccessedGatewayTimeUndefined: Self = StObject.set(x, "lastAccessedGatewayTime", js.undefined)
+    inline def setLastAccessedGatewayTimeUndefined: Self = StObject.set(x, "lastAccessedGatewayTime", js.undefined)
   }
 }

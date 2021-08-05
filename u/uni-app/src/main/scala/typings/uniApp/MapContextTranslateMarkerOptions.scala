@@ -43,55 +43,39 @@ trait MapContextTranslateMarkerOptions extends StObject {
 }
 object MapContextTranslateMarkerOptions {
   
-  @scala.inline
-  def apply(): MapContextTranslateMarkerOptions = {
+  inline def apply(): MapContextTranslateMarkerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapContextTranslateMarkerOptions]
   }
   
-  @scala.inline
-  implicit class MapContextTranslateMarkerOptionsMutableBuilder[Self <: MapContextTranslateMarkerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapContextTranslateMarkerOptions](x: Self) {
     
-    @scala.inline
-    def setAnimationEnd(value: () => Unit): Self = StObject.set(x, "animationEnd", js.Any.fromFunction0(value))
+    inline def setAnimationEnd(value: () => Unit): Self = StObject.set(x, "animationEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAnimationEndUndefined: Self = StObject.set(x, "animationEnd", js.undefined)
+    inline def setAnimationEndUndefined: Self = StObject.set(x, "animationEnd", js.undefined)
     
-    @scala.inline
-    def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
+    inline def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRotateUndefined: Self = StObject.set(x, "autoRotate", js.undefined)
+    inline def setAutoRotateUndefined: Self = StObject.set(x, "autoRotate", js.undefined)
     
-    @scala.inline
-    def setDestination(value: LocationObject): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: LocationObject): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+    inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setMarkerId(value: Double): Self = StObject.set(x, "markerId", value.asInstanceOf[js.Any])
+    inline def setMarkerId(value: Double): Self = StObject.set(x, "markerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerIdUndefined: Self = StObject.set(x, "markerId", js.undefined)
+    inline def setMarkerIdUndefined: Self = StObject.set(x, "markerId", js.undefined)
     
-    @scala.inline
-    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
   }
 }

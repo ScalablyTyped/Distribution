@@ -34,8 +34,7 @@ object cssMod {
   @js.native
   val CLASS_UNSUPPORTED: String = js.native
   
-  @scala.inline
-  def getFontParameters(fontSpec: String): FontParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontParameters")(fontSpec.asInstanceOf[js.Any]).asInstanceOf[FontParameters]
+  inline def getFontParameters(fontSpec: String): FontParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontParameters")(fontSpec.asInstanceOf[js.Any]).asInstanceOf[FontParameters]
   
   trait FontParameters extends StObject {
     
@@ -55,8 +54,7 @@ object cssMod {
   }
   object FontParameters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       families: js.Array[String],
       family: String,
       lineHeight: String,
@@ -69,32 +67,23 @@ object cssMod {
       __obj.asInstanceOf[FontParameters]
     }
     
-    @scala.inline
-    implicit class FontParametersMutableBuilder[Self <: FontParameters] (val x: Self) extends AnyVal {
+    extension [Self <: FontParameters](x: Self) {
       
-      @scala.inline
-      def setFamilies(value: js.Array[String]): Self = StObject.set(x, "families", value.asInstanceOf[js.Any])
+      inline def setFamilies(value: js.Array[String]): Self = StObject.set(x, "families", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value :_*))
+      inline def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value :_*))
       
-      @scala.inline
-      def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+      inline def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     }
   }
 }

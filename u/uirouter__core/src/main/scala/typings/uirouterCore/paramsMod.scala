@@ -56,14 +56,10 @@ object paramsMod {
       *
       * @returns any Param objects whose values were different between values1 and values2
       */
-    @scala.inline
-    def changed(params: js.Array[typings.uirouterCore.paramMod.Param]): js.Array[typings.uirouterCore.paramMod.Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("changed")(params.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
-    @scala.inline
-    def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: Unit, values2: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = (^.asInstanceOf[js.Dynamic].applyDynamic("changed")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any], values2.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
-    @scala.inline
-    def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = (^.asInstanceOf[js.Dynamic].applyDynamic("changed")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
-    @scala.inline
-    def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams, values2: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = (^.asInstanceOf[js.Dynamic].applyDynamic("changed")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any], values2.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
+    inline def changed(params: js.Array[typings.uirouterCore.paramMod.Param]): js.Array[typings.uirouterCore.paramMod.Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("changed")(params.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
+    inline def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: Unit, values2: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = (^.asInstanceOf[js.Dynamic].applyDynamic("changed")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any], values2.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
+    inline def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = (^.asInstanceOf[js.Dynamic].applyDynamic("changed")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
+    inline def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams, values2: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = (^.asInstanceOf[js.Dynamic].applyDynamic("changed")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any], values2.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
     
     /**
       * Checks if two param value objects are equal (for a set of [[Param]] objects)
@@ -74,25 +70,17 @@ object paramsMod {
       *
       * @returns true if the param values in values1 and values2 are equal
       */
-    @scala.inline
-    def equals(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(params.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object, values2: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any], values2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: Unit, values2: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any], values2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equals(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(params.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object, values2: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any], values2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: Unit, values2: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any], values2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /** Returns true if a the parameter values are valid, according to the Param definitions */
-    @scala.inline
-    def validates(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validates")(params.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def validates(params: js.Array[typings.uirouterCore.paramMod.Param], values: RawParams): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validates")(params.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def validates(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validates")(params.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def validates(params: js.Array[typings.uirouterCore.paramMod.Param], values: RawParams): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validates")(params.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def values(params: js.Array[typings.uirouterCore.paramMod.Param]): RawParams = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(params.asInstanceOf[js.Any]).asInstanceOf[RawParams]
-    @scala.inline
-    def values(params: js.Array[typings.uirouterCore.paramMod.Param], values: RawParams): RawParams = (^.asInstanceOf[js.Dynamic].applyDynamic("values")(params.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[RawParams]
+    inline def values(params: js.Array[typings.uirouterCore.paramMod.Param]): RawParams = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(params.asInstanceOf[js.Any]).asInstanceOf[RawParams]
+    inline def values(params: js.Array[typings.uirouterCore.paramMod.Param], values: RawParams): RawParams = (^.asInstanceOf[js.Dynamic].applyDynamic("values")(params.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[RawParams]
   }
   
   @JSImport("@uirouter/core/lib/params", "ParamType")
@@ -143,8 +131,7 @@ object paramsMod {
     @JSImport("@uirouter/core/lib/params", "ParamTypes.any")
     @js.native
     def any: ParamTypeDefinition = js.native
-    @scala.inline
-    def any_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("any")(x.asInstanceOf[js.Any])
+    inline def any_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("any")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `bool`
@@ -169,8 +156,7 @@ object paramsMod {
     @JSImport("@uirouter/core/lib/params", "ParamTypes.bool")
     @js.native
     def bool: ParamTypeDefinition = js.native
-    @scala.inline
-    def bool_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bool")(x.asInstanceOf[js.Any])
+    inline def bool_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bool")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `date`
@@ -199,8 +185,7 @@ object paramsMod {
     @JSImport("@uirouter/core/lib/params", "ParamTypes.date")
     @js.native
     def date: ParamTypeDefinition = js.native
-    @scala.inline
-    def date_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("date")(x.asInstanceOf[js.Any])
+    inline def date_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("date")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `hash`
@@ -211,8 +196,7 @@ object paramsMod {
     @JSImport("@uirouter/core/lib/params", "ParamTypes.hash")
     @js.native
     def hash: ParamTypeDefinition = js.native
-    @scala.inline
-    def hash_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hash")(x.asInstanceOf[js.Any])
+    inline def hash_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hash")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `int`
@@ -237,8 +221,7 @@ object paramsMod {
     @JSImport("@uirouter/core/lib/params", "ParamTypes.int")
     @js.native
     def int: ParamTypeDefinition = js.native
-    @scala.inline
-    def int_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int")(x.asInstanceOf[js.Any])
+    inline def int_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `json`
@@ -262,8 +245,7 @@ object paramsMod {
     @JSImport("@uirouter/core/lib/params", "ParamTypes.json")
     @js.native
     def json: ParamTypeDefinition = js.native
-    @scala.inline
-    def json_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("json")(x.asInstanceOf[js.Any])
+    inline def json_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("json")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `path`
@@ -283,8 +265,7 @@ object paramsMod {
     @JSImport("@uirouter/core/lib/params", "ParamTypes.path")
     @js.native
     def path: ParamTypeDefinition = js.native
-    @scala.inline
-    def path_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
+    inline def path_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `query`
@@ -299,8 +280,7 @@ object paramsMod {
     @JSImport("@uirouter/core/lib/params", "ParamTypes.query")
     @js.native
     def query: ParamTypeDefinition = js.native
-    @scala.inline
-    def query_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("query")(x.asInstanceOf[js.Any])
+    inline def query_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("query")(x.asInstanceOf[js.Any])
     
     /**
       * Built-in parameter type: `string`
@@ -311,8 +291,7 @@ object paramsMod {
     @JSImport("@uirouter/core/lib/params", "ParamTypes.string")
     @js.native
     def string: ParamTypeDefinition = js.native
-    @scala.inline
-    def string_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("string")(x.asInstanceOf[js.Any])
+    inline def string_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("string")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@uirouter/core/lib/params", "StateParams")

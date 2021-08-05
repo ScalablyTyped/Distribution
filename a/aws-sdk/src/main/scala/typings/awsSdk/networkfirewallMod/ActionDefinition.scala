@@ -13,19 +13,15 @@ trait ActionDefinition extends StObject {
 }
 object ActionDefinition {
   
-  @scala.inline
-  def apply(): ActionDefinition = {
+  inline def apply(): ActionDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActionDefinition]
   }
   
-  @scala.inline
-  implicit class ActionDefinitionMutableBuilder[Self <: ActionDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ActionDefinition](x: Self) {
     
-    @scala.inline
-    def setPublishMetricAction(value: PublishMetricAction): Self = StObject.set(x, "PublishMetricAction", value.asInstanceOf[js.Any])
+    inline def setPublishMetricAction(value: PublishMetricAction): Self = StObject.set(x, "PublishMetricAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishMetricActionUndefined: Self = StObject.set(x, "PublishMetricAction", js.undefined)
+    inline def setPublishMetricActionUndefined: Self = StObject.set(x, "PublishMetricAction", js.undefined)
   }
 }

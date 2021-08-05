@@ -30,43 +30,31 @@ trait Usage extends StObject {
 }
 object Usage {
   
-  @scala.inline
-  def apply(): Usage = {
+  inline def apply(): Usage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Usage]
   }
   
-  @scala.inline
-  implicit class UsageMutableBuilder[Self <: Usage] (val x: Self) extends AnyVal {
+  extension [Self <: Usage](x: Self) {
     
-    @scala.inline
-    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setItems(value: MapOfKeyUsages): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: MapOfKeyUsages): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
-    @scala.inline
-    def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
+    inline def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsagePlanIdUndefined: Self = StObject.set(x, "usagePlanId", js.undefined)
+    inline def setUsagePlanIdUndefined: Self = StObject.set(x, "usagePlanId", js.undefined)
   }
 }

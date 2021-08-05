@@ -12,8 +12,7 @@ object cssTransitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cssTransition(hasEnterExitDurationAppendPositionCollapseCollapseDuration: CSSTransitionProps): js.Function1[
+  inline def cssTransition(hasEnterExitDurationAppendPositionCollapseCollapseDuration: CSSTransitionProps): js.Function1[
     /* hasChildrenPositionPreventExitTransitionDoneProps */ ToastTransitionProps, 
     Element
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssTransition")(hasEnterExitDurationAppendPositionCollapseCollapseDuration.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -61,44 +60,32 @@ object cssTransitionMod {
   }
   object CSSTransitionProps {
     
-    @scala.inline
-    def apply(enter: String, exit: String): CSSTransitionProps = {
+    inline def apply(enter: String, exit: String): CSSTransitionProps = {
       val __obj = js.Dynamic.literal(enter = enter.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any])
       __obj.asInstanceOf[CSSTransitionProps]
     }
     
-    @scala.inline
-    implicit class CSSTransitionPropsMutableBuilder[Self <: CSSTransitionProps] (val x: Self) extends AnyVal {
+    extension [Self <: CSSTransitionProps](x: Self) {
       
-      @scala.inline
-      def setAppendPosition(value: Boolean): Self = StObject.set(x, "appendPosition", value.asInstanceOf[js.Any])
+      inline def setAppendPosition(value: Boolean): Self = StObject.set(x, "appendPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendPositionUndefined: Self = StObject.set(x, "appendPosition", js.undefined)
+      inline def setAppendPositionUndefined: Self = StObject.set(x, "appendPosition", js.undefined)
       
-      @scala.inline
-      def setCollapse(value: Boolean): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
+      inline def setCollapse(value: Boolean): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseDuration(value: Double): Self = StObject.set(x, "collapseDuration", value.asInstanceOf[js.Any])
+      inline def setCollapseDuration(value: Double): Self = StObject.set(x, "collapseDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseDurationUndefined: Self = StObject.set(x, "collapseDuration", js.undefined)
+      inline def setCollapseDurationUndefined: Self = StObject.set(x, "collapseDuration", js.undefined)
       
-      @scala.inline
-      def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+      inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEnter(value: String): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+      inline def setEnter(value: String): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExit(value: String): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: String): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     }
   }
 }

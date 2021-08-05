@@ -18,19 +18,15 @@ trait DeregisterFromWorkMailRequest extends StObject {
 }
 object DeregisterFromWorkMailRequest {
   
-  @scala.inline
-  def apply(EntityId: WorkMailIdentifier, OrganizationId: OrganizationId): DeregisterFromWorkMailRequest = {
+  inline def apply(EntityId: WorkMailIdentifier, OrganizationId: OrganizationId): DeregisterFromWorkMailRequest = {
     val __obj = js.Dynamic.literal(EntityId = EntityId.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterFromWorkMailRequest]
   }
   
-  @scala.inline
-  implicit class DeregisterFromWorkMailRequestMutableBuilder[Self <: DeregisterFromWorkMailRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterFromWorkMailRequest](x: Self) {
     
-    @scala.inline
-    def setEntityId(value: WorkMailIdentifier): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
+    inline def setEntityId(value: WorkMailIdentifier): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
   }
 }

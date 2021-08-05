@@ -17,31 +17,23 @@ trait ComponentTransform extends StObject {
 }
 object ComponentTransform {
   
-  @scala.inline
-  def apply(): ComponentTransform = {
+  inline def apply(): ComponentTransform = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComponentTransform]
   }
   
-  @scala.inline
-  implicit class ComponentTransformMutableBuilder[Self <: ComponentTransform] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentTransform](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOriginalTransform(value: String): Self = StObject.set(x, "originalTransform", value.asInstanceOf[js.Any])
+    inline def setOriginalTransform(value: String): Self = StObject.set(x, "originalTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalTransformUndefined: Self = StObject.set(x, "originalTransform", js.undefined)
+    inline def setOriginalTransformUndefined: Self = StObject.set(x, "originalTransform", js.undefined)
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
   }
 }

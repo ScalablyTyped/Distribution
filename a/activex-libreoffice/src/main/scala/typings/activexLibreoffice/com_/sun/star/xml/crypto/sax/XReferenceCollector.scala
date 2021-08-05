@@ -29,8 +29,7 @@ trait XReferenceCollector
 }
 object XReferenceCollector {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -41,13 +40,10 @@ object XReferenceCollector {
     __obj.asInstanceOf[XReferenceCollector]
   }
   
-  @scala.inline
-  implicit class XReferenceCollectorMutableBuilder[Self <: XReferenceCollector] (val x: Self) extends AnyVal {
+  extension [Self <: XReferenceCollector](x: Self) {
     
-    @scala.inline
-    def setSetReferenceCount(value: Double => Unit): Self = StObject.set(x, "setReferenceCount", js.Any.fromFunction1(value))
+    inline def setSetReferenceCount(value: Double => Unit): Self = StObject.set(x, "setReferenceCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetReferenceId(value: Double => Unit): Self = StObject.set(x, "setReferenceId", js.Any.fromFunction1(value))
+    inline def setSetReferenceId(value: Double => Unit): Self = StObject.set(x, "setReferenceId", js.Any.fromFunction1(value))
   }
 }

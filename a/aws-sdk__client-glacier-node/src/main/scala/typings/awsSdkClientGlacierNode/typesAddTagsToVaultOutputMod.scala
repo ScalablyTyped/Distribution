@@ -20,17 +20,14 @@ object typesAddTagsToVaultOutputMod {
   }
   object AddTagsToVaultOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): AddTagsToVaultOutput = {
+    inline def apply($metadata: ResponseMetadata): AddTagsToVaultOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddTagsToVaultOutput]
     }
     
-    @scala.inline
-    implicit class AddTagsToVaultOutputMutableBuilder[Self <: AddTagsToVaultOutput] (val x: Self) extends AnyVal {
+    extension [Self <: AddTagsToVaultOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

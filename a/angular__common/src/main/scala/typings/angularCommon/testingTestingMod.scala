@@ -157,7 +157,7 @@ object testingTestingMod {
     def flush(body: Blob): Unit = js.native
     def flush(body: Blob, opts: StatusText): Unit = js.native
     
-    var observer: js.Any = js.native
+    /* private */ var observer: js.Any = js.native
     
     var request: HttpRequest[js.Any] = js.native
   }
@@ -170,9 +170,9 @@ object testingTestingMod {
     /**
       * Helper function to search for requests in the list of open requests.
       */
-    var _match: js.Any = js.native
+    /* private */ var _match: js.Any = js.native
     
-    var descriptionFromMatcher: js.Any = js.native
+    /* private */ var descriptionFromMatcher: js.Any = js.native
     
     /**
       * Expect that no outstanding requests match the given matcher, and throw an error
@@ -270,7 +270,7 @@ object testingTestingMod {
     /**
       * List of pending requests which have not yet been expected.
       */
-    var open: js.Any = js.native
+    /* private */ var open: js.Any = js.native
     
     /**
       * Validate that there are no outstanding requests.
@@ -296,26 +296,20 @@ object testingTestingMod {
   }
   object RequestMatch {
     
-    @scala.inline
-    def apply(): RequestMatch = {
+    inline def apply(): RequestMatch = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestMatch]
     }
     
-    @scala.inline
-    implicit class RequestMatchMutableBuilder[Self <: RequestMatch] (val x: Self) extends AnyVal {
+    extension [Self <: RequestMatch](x: Self) {
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

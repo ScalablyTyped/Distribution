@@ -90,21 +90,16 @@ object proxyTargetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ProxyTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ProxyTarget]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ProxyTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyTarget]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ProxyTargetState): ProxyTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ProxyTarget]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ProxyTargetState, opts: CustomResourceOptions): ProxyTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyTarget]
+    inline def get(name: String, id: Input[ID]): ProxyTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ProxyTarget]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ProxyTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyTarget]
+    inline def get(name: String, id: Input[ID], state: ProxyTargetState): ProxyTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ProxyTarget]
+    inline def get(name: String, id: Input[ID], state: ProxyTargetState, opts: CustomResourceOptions): ProxyTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyTarget]
     
     /**
       * Returns true if the given object is an instance of ProxyTarget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/proxyTarget.ProxyTarget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/rds/proxyTarget.ProxyTarget */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/proxyTarget.ProxyTarget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/rds/proxyTarget.ProxyTarget */ Boolean]
   }
   
   trait ProxyTargetArgs extends StObject {
@@ -131,32 +126,24 @@ object proxyTargetMod {
   }
   object ProxyTargetArgs {
     
-    @scala.inline
-    def apply(dbProxyName: Input[String], targetGroupName: Input[String]): ProxyTargetArgs = {
+    inline def apply(dbProxyName: Input[String], targetGroupName: Input[String]): ProxyTargetArgs = {
       val __obj = js.Dynamic.literal(dbProxyName = dbProxyName.asInstanceOf[js.Any], targetGroupName = targetGroupName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProxyTargetArgs]
     }
     
-    @scala.inline
-    implicit class ProxyTargetArgsMutableBuilder[Self <: ProxyTargetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyTargetArgs](x: Self) {
       
-      @scala.inline
-      def setDbClusterIdentifier(value: Input[String]): Self = StObject.set(x, "dbClusterIdentifier", value.asInstanceOf[js.Any])
+      inline def setDbClusterIdentifier(value: Input[String]): Self = StObject.set(x, "dbClusterIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbClusterIdentifierUndefined: Self = StObject.set(x, "dbClusterIdentifier", js.undefined)
+      inline def setDbClusterIdentifierUndefined: Self = StObject.set(x, "dbClusterIdentifier", js.undefined)
       
-      @scala.inline
-      def setDbInstanceIdentifier(value: Input[String]): Self = StObject.set(x, "dbInstanceIdentifier", value.asInstanceOf[js.Any])
+      inline def setDbInstanceIdentifier(value: Input[String]): Self = StObject.set(x, "dbInstanceIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbInstanceIdentifierUndefined: Self = StObject.set(x, "dbInstanceIdentifier", js.undefined)
+      inline def setDbInstanceIdentifierUndefined: Self = StObject.set(x, "dbInstanceIdentifier", js.undefined)
       
-      @scala.inline
-      def setDbProxyName(value: Input[String]): Self = StObject.set(x, "dbProxyName", value.asInstanceOf[js.Any])
+      inline def setDbProxyName(value: Input[String]): Self = StObject.set(x, "dbProxyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetGroupName(value: Input[String]): Self = StObject.set(x, "targetGroupName", value.asInstanceOf[js.Any])
+      inline def setTargetGroupName(value: Input[String]): Self = StObject.set(x, "targetGroupName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -214,74 +201,52 @@ object proxyTargetMod {
   }
   object ProxyTargetState {
     
-    @scala.inline
-    def apply(): ProxyTargetState = {
+    inline def apply(): ProxyTargetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProxyTargetState]
     }
     
-    @scala.inline
-    implicit class ProxyTargetStateMutableBuilder[Self <: ProxyTargetState] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyTargetState](x: Self) {
       
-      @scala.inline
-      def setDbClusterIdentifier(value: Input[String]): Self = StObject.set(x, "dbClusterIdentifier", value.asInstanceOf[js.Any])
+      inline def setDbClusterIdentifier(value: Input[String]): Self = StObject.set(x, "dbClusterIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbClusterIdentifierUndefined: Self = StObject.set(x, "dbClusterIdentifier", js.undefined)
+      inline def setDbClusterIdentifierUndefined: Self = StObject.set(x, "dbClusterIdentifier", js.undefined)
       
-      @scala.inline
-      def setDbInstanceIdentifier(value: Input[String]): Self = StObject.set(x, "dbInstanceIdentifier", value.asInstanceOf[js.Any])
+      inline def setDbInstanceIdentifier(value: Input[String]): Self = StObject.set(x, "dbInstanceIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbInstanceIdentifierUndefined: Self = StObject.set(x, "dbInstanceIdentifier", js.undefined)
+      inline def setDbInstanceIdentifierUndefined: Self = StObject.set(x, "dbInstanceIdentifier", js.undefined)
       
-      @scala.inline
-      def setDbProxyName(value: Input[String]): Self = StObject.set(x, "dbProxyName", value.asInstanceOf[js.Any])
+      inline def setDbProxyName(value: Input[String]): Self = StObject.set(x, "dbProxyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbProxyNameUndefined: Self = StObject.set(x, "dbProxyName", js.undefined)
+      inline def setDbProxyNameUndefined: Self = StObject.set(x, "dbProxyName", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setRdsResourceId(value: Input[String]): Self = StObject.set(x, "rdsResourceId", value.asInstanceOf[js.Any])
+      inline def setRdsResourceId(value: Input[String]): Self = StObject.set(x, "rdsResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRdsResourceIdUndefined: Self = StObject.set(x, "rdsResourceId", js.undefined)
+      inline def setRdsResourceIdUndefined: Self = StObject.set(x, "rdsResourceId", js.undefined)
       
-      @scala.inline
-      def setTargetArn(value: Input[String]): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
+      inline def setTargetArn(value: Input[String]): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetArnUndefined: Self = StObject.set(x, "targetArn", js.undefined)
+      inline def setTargetArnUndefined: Self = StObject.set(x, "targetArn", js.undefined)
       
-      @scala.inline
-      def setTargetGroupName(value: Input[String]): Self = StObject.set(x, "targetGroupName", value.asInstanceOf[js.Any])
+      inline def setTargetGroupName(value: Input[String]): Self = StObject.set(x, "targetGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetGroupNameUndefined: Self = StObject.set(x, "targetGroupName", js.undefined)
+      inline def setTargetGroupNameUndefined: Self = StObject.set(x, "targetGroupName", js.undefined)
       
-      @scala.inline
-      def setTrackedClusterId(value: Input[String]): Self = StObject.set(x, "trackedClusterId", value.asInstanceOf[js.Any])
+      inline def setTrackedClusterId(value: Input[String]): Self = StObject.set(x, "trackedClusterId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackedClusterIdUndefined: Self = StObject.set(x, "trackedClusterId", js.undefined)
+      inline def setTrackedClusterIdUndefined: Self = StObject.set(x, "trackedClusterId", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

@@ -28,34 +28,25 @@ trait QueryRequest extends StObject {
 }
 object QueryRequest {
   
-  @scala.inline
-  def apply(QueryString: QueryString): QueryRequest = {
+  inline def apply(QueryString: QueryString): QueryRequest = {
     val __obj = js.Dynamic.literal(QueryString = QueryString.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRequest]
   }
   
-  @scala.inline
-  implicit class QueryRequestMutableBuilder[Self <: QueryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: QueryRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: ClientRequestToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientRequestToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setMaxRows(value: MaxQueryResults): Self = StObject.set(x, "MaxRows", value.asInstanceOf[js.Any])
+    inline def setMaxRows(value: MaxQueryResults): Self = StObject.set(x, "MaxRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRowsUndefined: Self = StObject.set(x, "MaxRows", js.undefined)
+    inline def setMaxRowsUndefined: Self = StObject.set(x, "MaxRows", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setQueryString(value: QueryString): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: QueryString): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
   }
 }

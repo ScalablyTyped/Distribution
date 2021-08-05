@@ -14,28 +14,21 @@ trait GoogleCloudMlV1ListVersionsResponse extends StObject {
 }
 object GoogleCloudMlV1ListVersionsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1ListVersionsResponse = {
+  inline def apply(): GoogleCloudMlV1ListVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1ListVersionsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1ListVersionsResponseMutableBuilder[Self <: GoogleCloudMlV1ListVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1ListVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setVersions(value: js.Array[GoogleCloudMlV1Version]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: js.Array[GoogleCloudMlV1Version]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
+    inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    @scala.inline
-    def setVersionsVarargs(value: GoogleCloudMlV1Version*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: GoogleCloudMlV1Version*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

@@ -32,8 +32,7 @@ object anon {
   }
   object ADDEVENTLISTENERSTR {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ADD_EVENT_LISTENER_STR: String,
       FALSE_STR: String,
       REMOVE_EVENT_LISTENER_STR: String,
@@ -50,44 +49,31 @@ object anon {
       __obj.asInstanceOf[ADDEVENTLISTENERSTR]
     }
     
-    @scala.inline
-    implicit class ADDEVENTLISTENERSTRMutableBuilder[Self <: ADDEVENTLISTENERSTR] (val x: Self) extends AnyVal {
+    extension [Self <: ADDEVENTLISTENERSTR](x: Self) {
       
-      @scala.inline
-      def setADD_EVENT_LISTENER_STR(value: String): Self = StObject.set(x, "ADD_EVENT_LISTENER_STR", value.asInstanceOf[js.Any])
+      inline def setADD_EVENT_LISTENER_STR(value: String): Self = StObject.set(x, "ADD_EVENT_LISTENER_STR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventNames(value: js.Array[String]): Self = StObject.set(x, "eventNames", value.asInstanceOf[js.Any])
+      inline def setEventNames(value: js.Array[String]): Self = StObject.set(x, "eventNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventNamesVarargs(value: String*): Self = StObject.set(x, "eventNames", js.Array(value :_*))
+      inline def setEventNamesVarargs(value: String*): Self = StObject.set(x, "eventNames", js.Array(value :_*))
       
-      @scala.inline
-      def setFALSE_STR(value: String): Self = StObject.set(x, "FALSE_STR", value.asInstanceOf[js.Any])
+      inline def setFALSE_STR(value: String): Self = StObject.set(x, "FALSE_STR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSources(value: js.Any): Self = StObject.set(x, "globalSources", value.asInstanceOf[js.Any])
+      inline def setGlobalSources(value: js.Any): Self = StObject.set(x, "globalSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBrowser(value: Boolean): Self = StObject.set(x, "isBrowser", value.asInstanceOf[js.Any])
+      inline def setIsBrowser(value: Boolean): Self = StObject.set(x, "isBrowser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMix(value: Boolean): Self = StObject.set(x, "isMix", value.asInstanceOf[js.Any])
+      inline def setIsMix(value: Boolean): Self = StObject.set(x, "isMix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNode(value: Boolean): Self = StObject.set(x, "isNode", value.asInstanceOf[js.Any])
+      inline def setIsNode(value: Boolean): Self = StObject.set(x, "isNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREMOVE_EVENT_LISTENER_STR(value: String): Self = StObject.set(x, "REMOVE_EVENT_LISTENER_STR", value.asInstanceOf[js.Any])
+      inline def setREMOVE_EVENT_LISTENER_STR(value: String): Self = StObject.set(x, "REMOVE_EVENT_LISTENER_STR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRUE_STR(value: String): Self = StObject.set(x, "TRUE_STR", value.asInstanceOf[js.Any])
+      inline def setTRUE_STR(value: String): Self = StObject.set(x, "TRUE_STR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZONE_SYMBOL_PREFIX(value: String): Self = StObject.set(x, "ZONE_SYMBOL_PREFIX", value.asInstanceOf[js.Any])
+      inline def setZONE_SYMBOL_PREFIX(value: String): Self = StObject.set(x, "ZONE_SYMBOL_PREFIX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneSymbolEventNames(value: js.Any): Self = StObject.set(x, "zoneSymbolEventNames", value.asInstanceOf[js.Any])
+      inline def setZoneSymbolEventNames(value: js.Any): Self = StObject.set(x, "zoneSymbolEventNames", value.asInstanceOf[js.Any])
     }
   }
 }

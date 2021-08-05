@@ -13,6 +13,5 @@ object expandAliasesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: StringDictionary[BoxPropValue]): Map[String, BoxPropValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Map[String, BoxPropValue]]
+  inline def default(props: StringDictionary[BoxPropValue]): Map[String, BoxPropValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Map[String, BoxPropValue]]
 }

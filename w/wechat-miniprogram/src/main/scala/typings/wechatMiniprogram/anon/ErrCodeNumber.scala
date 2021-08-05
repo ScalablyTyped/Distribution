@@ -23,16 +23,13 @@ trait ErrCodeNumber extends StObject {
 }
 object ErrCodeNumber {
   
-  @scala.inline
-  def apply(errCode: Double): ErrCodeNumber = {
+  inline def apply(errCode: Double): ErrCodeNumber = {
     val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrCodeNumber]
   }
   
-  @scala.inline
-  implicit class ErrCodeNumberMutableBuilder[Self <: ErrCodeNumber] (val x: Self) extends AnyVal {
+  extension [Self <: ErrCodeNumber](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
   }
 }

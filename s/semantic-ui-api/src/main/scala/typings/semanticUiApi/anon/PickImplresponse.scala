@@ -12,16 +12,13 @@ trait PickImplresponse extends StObject {
 }
 object PickImplresponse {
   
-  @scala.inline
-  def apply(response: js.Any | `false`): PickImplresponse = {
+  inline def apply(response: js.Any | `false`): PickImplresponse = {
     val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplresponse]
   }
   
-  @scala.inline
-  implicit class PickImplresponseMutableBuilder[Self <: PickImplresponse] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplresponse](x: Self) {
     
-    @scala.inline
-    def setResponse(value: js.Any | `false`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: js.Any | `false`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -26,20 +26,16 @@ object layoutCloseNavigationButtonMod {
   }
   object LayoutCloseNavigationButtonProps {
     
-    @scala.inline
-    def apply(): LayoutCloseNavigationButtonProps = {
+    inline def apply(): LayoutCloseNavigationButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutCloseNavigationButtonProps]
     }
     
-    @scala.inline
-    implicit class LayoutCloseNavigationButtonPropsMutableBuilder[Self <: LayoutCloseNavigationButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutCloseNavigationButtonProps](x: Self) {
       
-      @scala.inline
-      def setRendered(value: Boolean): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
+      inline def setRendered(value: Boolean): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
+      inline def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
     }
   }
 }

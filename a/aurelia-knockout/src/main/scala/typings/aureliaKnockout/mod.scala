@@ -42,8 +42,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
+    inline def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
   }
   
   @JSImport("aurelia-knockout", "RequirePolyfill")
@@ -53,6 +52,5 @@ object mod {
     def this(loader: Loader) = this()
   }
   
-  @scala.inline
-  def configure(frameworkConfig: typings.aureliaKnockout.anon.Container): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(frameworkConfig.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configure(frameworkConfig: typings.aureliaKnockout.anon.Container): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(frameworkConfig.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

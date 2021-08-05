@@ -17,31 +17,23 @@ trait Artifact extends StObject {
 }
 object Artifact {
   
-  @scala.inline
-  def apply(): Artifact = {
+  inline def apply(): Artifact = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Artifact]
   }
   
-  @scala.inline
-  implicit class ArtifactMutableBuilder[Self <: Artifact] (val x: Self) extends AnyVal {
+  extension [Self <: Artifact](x: Self) {
     
-    @scala.inline
-    def setContainerSpec(value: ContainerSpec): Self = StObject.set(x, "containerSpec", value.asInstanceOf[js.Any])
+    inline def setContainerSpec(value: ContainerSpec): Self = StObject.set(x, "containerSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerSpecUndefined: Self = StObject.set(x, "containerSpec", js.undefined)
+    inline def setContainerSpecUndefined: Self = StObject.set(x, "containerSpec", js.undefined)
     
-    @scala.inline
-    def setJobGraphGcsPath(value: String): Self = StObject.set(x, "jobGraphGcsPath", value.asInstanceOf[js.Any])
+    inline def setJobGraphGcsPath(value: String): Self = StObject.set(x, "jobGraphGcsPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobGraphGcsPathUndefined: Self = StObject.set(x, "jobGraphGcsPath", js.undefined)
+    inline def setJobGraphGcsPathUndefined: Self = StObject.set(x, "jobGraphGcsPath", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: TemplateMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: TemplateMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

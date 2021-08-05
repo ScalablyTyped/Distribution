@@ -39,8 +39,7 @@ trait XDispatchHelper
 }
 object XDispatchHelper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     executeDispatch: (XDispatchProvider, String, String, Double, SeqEquiv[PropertyValue]) => js.Any,
     queryInterface: `type` => js.Any,
@@ -50,10 +49,8 @@ object XDispatchHelper {
     __obj.asInstanceOf[XDispatchHelper]
   }
   
-  @scala.inline
-  implicit class XDispatchHelperMutableBuilder[Self <: XDispatchHelper] (val x: Self) extends AnyVal {
+  extension [Self <: XDispatchHelper](x: Self) {
     
-    @scala.inline
-    def setExecuteDispatch(value: (XDispatchProvider, String, String, Double, SeqEquiv[PropertyValue]) => js.Any): Self = StObject.set(x, "executeDispatch", js.Any.fromFunction5(value))
+    inline def setExecuteDispatch(value: (XDispatchProvider, String, String, Double, SeqEquiv[PropertyValue]) => js.Any): Self = StObject.set(x, "executeDispatch", js.Any.fromFunction5(value))
   }
 }

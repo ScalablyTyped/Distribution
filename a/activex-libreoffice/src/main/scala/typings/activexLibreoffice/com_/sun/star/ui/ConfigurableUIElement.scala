@@ -35,8 +35,7 @@ trait ConfigurableUIElement
 }
 object ConfigurableUIElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConfigurationSource: XUIConfigurationManager,
     Frame: XFrame,
     Persistent: Boolean,
@@ -60,13 +59,10 @@ object ConfigurableUIElement {
     __obj.asInstanceOf[ConfigurableUIElement]
   }
   
-  @scala.inline
-  implicit class ConfigurableUIElementMutableBuilder[Self <: ConfigurableUIElement] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurableUIElement](x: Self) {
     
-    @scala.inline
-    def setConfigurationSource(value: XUIConfigurationManager): Self = StObject.set(x, "ConfigurationSource", value.asInstanceOf[js.Any])
+    inline def setConfigurationSource(value: XUIConfigurationManager): Self = StObject.set(x, "ConfigurationSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistent(value: Boolean): Self = StObject.set(x, "Persistent", value.asInstanceOf[js.Any])
+    inline def setPersistent(value: Boolean): Self = StObject.set(x, "Persistent", value.asInstanceOf[js.Any])
   }
 }

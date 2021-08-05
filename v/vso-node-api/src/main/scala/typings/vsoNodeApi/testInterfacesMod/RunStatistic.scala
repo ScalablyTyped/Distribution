@@ -16,25 +16,19 @@ trait RunStatistic extends StObject {
 }
 object RunStatistic {
   
-  @scala.inline
-  def apply(count: Double, outcome: String, resolutionState: TestResolutionState, state: String): RunStatistic = {
+  inline def apply(count: Double, outcome: String, resolutionState: TestResolutionState, state: String): RunStatistic = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], resolutionState = resolutionState.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunStatistic]
   }
   
-  @scala.inline
-  implicit class RunStatisticMutableBuilder[Self <: RunStatistic] (val x: Self) extends AnyVal {
+  extension [Self <: RunStatistic](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
+    inline def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionState(value: TestResolutionState): Self = StObject.set(x, "resolutionState", value.asInstanceOf[js.Any])
+    inline def setResolutionState(value: TestResolutionState): Self = StObject.set(x, "resolutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

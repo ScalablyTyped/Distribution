@@ -47,116 +47,80 @@ object responseHeadersMod {
   }
   object ResponseHeaders {
     
-    @scala.inline
-    def apply(): ResponseHeaders = {
+    inline def apply(): ResponseHeaders = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResponseHeaders]
     }
     
-    @scala.inline
-    implicit class ResponseHeadersMutableBuilder[Self <: ResponseHeaders] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseHeaders](x: Self) {
       
-      @scala.inline
-      def `setCache-control`(value: String): Self = StObject.set(x, "cache-control", value.asInstanceOf[js.Any])
+      inline def `setCache-control`(value: String): Self = StObject.set(x, "cache-control", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCache-controlUndefined`: Self = StObject.set(x, "cache-control", js.undefined)
+      inline def `setCache-controlUndefined`: Self = StObject.set(x, "cache-control", js.undefined)
       
-      @scala.inline
-      def `setContent-length`(value: Double): Self = StObject.set(x, "content-length", value.asInstanceOf[js.Any])
+      inline def `setContent-length`(value: Double): Self = StObject.set(x, "content-length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setContent-lengthUndefined`: Self = StObject.set(x, "content-length", js.undefined)
+      inline def `setContent-lengthUndefined`: Self = StObject.set(x, "content-length", js.undefined)
       
-      @scala.inline
-      def `setContent-type`(value: String): Self = StObject.set(x, "content-type", value.asInstanceOf[js.Any])
+      inline def `setContent-type`(value: String): Self = StObject.set(x, "content-type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setContent-typeUndefined`: Self = StObject.set(x, "content-type", js.undefined)
+      inline def `setContent-typeUndefined`: Self = StObject.set(x, "content-type", js.undefined)
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+      inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
       
-      @scala.inline
-      def `setLast-modified`(value: String): Self = StObject.set(x, "last-modified", value.asInstanceOf[js.Any])
+      inline def `setLast-modified`(value: String): Self = StObject.set(x, "last-modified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLast-modifiedUndefined`: Self = StObject.set(x, "last-modified", js.undefined)
+      inline def `setLast-modifiedUndefined`: Self = StObject.set(x, "last-modified", js.undefined)
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+      inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setVary(value: String): Self = StObject.set(x, "vary", value.asInstanceOf[js.Any])
+      inline def setVary(value: String): Self = StObject.set(x, "vary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVaryUndefined: Self = StObject.set(x, "vary", js.undefined)
+      inline def setVaryUndefined: Self = StObject.set(x, "vary", js.undefined)
       
-      @scala.inline
-      def `setX-github-mediatype`(value: String): Self = StObject.set(x, "x-github-mediatype", value.asInstanceOf[js.Any])
+      inline def `setX-github-mediatype`(value: String): Self = StObject.set(x, "x-github-mediatype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-github-mediatypeUndefined`: Self = StObject.set(x, "x-github-mediatype", js.undefined)
+      inline def `setX-github-mediatypeUndefined`: Self = StObject.set(x, "x-github-mediatype", js.undefined)
       
-      @scala.inline
-      def `setX-github-request-id`(value: String): Self = StObject.set(x, "x-github-request-id", value.asInstanceOf[js.Any])
+      inline def `setX-github-request-id`(value: String): Self = StObject.set(x, "x-github-request-id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-github-request-idUndefined`: Self = StObject.set(x, "x-github-request-id", js.undefined)
+      inline def `setX-github-request-idUndefined`: Self = StObject.set(x, "x-github-request-id", js.undefined)
       
-      @scala.inline
-      def `setX-oauth-scopes`(value: String): Self = StObject.set(x, "x-oauth-scopes", value.asInstanceOf[js.Any])
+      inline def `setX-oauth-scopes`(value: String): Self = StObject.set(x, "x-oauth-scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-oauth-scopesUndefined`: Self = StObject.set(x, "x-oauth-scopes", js.undefined)
+      inline def `setX-oauth-scopesUndefined`: Self = StObject.set(x, "x-oauth-scopes", js.undefined)
       
-      @scala.inline
-      def `setX-ratelimit-limit`(value: String): Self = StObject.set(x, "x-ratelimit-limit", value.asInstanceOf[js.Any])
+      inline def `setX-ratelimit-limit`(value: String): Self = StObject.set(x, "x-ratelimit-limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-ratelimit-limitUndefined`: Self = StObject.set(x, "x-ratelimit-limit", js.undefined)
+      inline def `setX-ratelimit-limitUndefined`: Self = StObject.set(x, "x-ratelimit-limit", js.undefined)
       
-      @scala.inline
-      def `setX-ratelimit-remaining`(value: String): Self = StObject.set(x, "x-ratelimit-remaining", value.asInstanceOf[js.Any])
+      inline def `setX-ratelimit-remaining`(value: String): Self = StObject.set(x, "x-ratelimit-remaining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-ratelimit-remainingUndefined`: Self = StObject.set(x, "x-ratelimit-remaining", js.undefined)
+      inline def `setX-ratelimit-remainingUndefined`: Self = StObject.set(x, "x-ratelimit-remaining", js.undefined)
       
-      @scala.inline
-      def `setX-ratelimit-reset`(value: String): Self = StObject.set(x, "x-ratelimit-reset", value.asInstanceOf[js.Any])
+      inline def `setX-ratelimit-reset`(value: String): Self = StObject.set(x, "x-ratelimit-reset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-ratelimit-resetUndefined`: Self = StObject.set(x, "x-ratelimit-reset", js.undefined)
+      inline def `setX-ratelimit-resetUndefined`: Self = StObject.set(x, "x-ratelimit-reset", js.undefined)
     }
   }
 }

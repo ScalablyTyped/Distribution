@@ -14,14 +14,10 @@ object getBundleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBundle(): js.Promise[GetBundleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBundle")().asInstanceOf[js.Promise[GetBundleResult]]
-  @scala.inline
-  def getBundle(args: Unit, opts: InvokeOptions): js.Promise[GetBundleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBundle")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBundleResult]]
-  @scala.inline
-  def getBundle(args: GetBundleArgs): js.Promise[GetBundleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBundle")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBundleResult]]
-  @scala.inline
-  def getBundle(args: GetBundleArgs, opts: InvokeOptions): js.Promise[GetBundleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBundle")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBundleResult]]
+  inline def getBundle(): js.Promise[GetBundleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBundle")().asInstanceOf[js.Promise[GetBundleResult]]
+  inline def getBundle(args: Unit, opts: InvokeOptions): js.Promise[GetBundleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBundle")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBundleResult]]
+  inline def getBundle(args: GetBundleArgs): js.Promise[GetBundleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBundle")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBundleResult]]
+  inline def getBundle(args: GetBundleArgs, opts: InvokeOptions): js.Promise[GetBundleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBundle")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBundleResult]]
   
   trait GetBundleArgs extends StObject {
     
@@ -42,32 +38,24 @@ object getBundleMod {
   }
   object GetBundleArgs {
     
-    @scala.inline
-    def apply(): GetBundleArgs = {
+    inline def apply(): GetBundleArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetBundleArgs]
     }
     
-    @scala.inline
-    implicit class GetBundleArgsMutableBuilder[Self <: GetBundleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetBundleArgs](x: Self) {
       
-      @scala.inline
-      def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+      inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+      inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+      inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     }
   }
   
@@ -115,8 +103,7 @@ object getBundleMod {
   }
   object GetBundleResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       computeTypes: js.Array[GetBundleComputeType],
       description: String,
       id: String,
@@ -127,50 +114,35 @@ object getBundleMod {
       __obj.asInstanceOf[GetBundleResult]
     }
     
-    @scala.inline
-    implicit class GetBundleResultMutableBuilder[Self <: GetBundleResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetBundleResult](x: Self) {
       
-      @scala.inline
-      def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+      inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+      inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
       
-      @scala.inline
-      def setComputeTypes(value: js.Array[GetBundleComputeType]): Self = StObject.set(x, "computeTypes", value.asInstanceOf[js.Any])
+      inline def setComputeTypes(value: js.Array[GetBundleComputeType]): Self = StObject.set(x, "computeTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeTypesVarargs(value: GetBundleComputeType*): Self = StObject.set(x, "computeTypes", js.Array(value :_*))
+      inline def setComputeTypesVarargs(value: GetBundleComputeType*): Self = StObject.set(x, "computeTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+      inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
       
-      @scala.inline
-      def setRootStorages(value: js.Array[GetBundleRootStorage]): Self = StObject.set(x, "rootStorages", value.asInstanceOf[js.Any])
+      inline def setRootStorages(value: js.Array[GetBundleRootStorage]): Self = StObject.set(x, "rootStorages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootStoragesVarargs(value: GetBundleRootStorage*): Self = StObject.set(x, "rootStorages", js.Array(value :_*))
+      inline def setRootStoragesVarargs(value: GetBundleRootStorage*): Self = StObject.set(x, "rootStorages", js.Array(value :_*))
       
-      @scala.inline
-      def setUserStorages(value: js.Array[GetBundleUserStorage]): Self = StObject.set(x, "userStorages", value.asInstanceOf[js.Any])
+      inline def setUserStorages(value: js.Array[GetBundleUserStorage]): Self = StObject.set(x, "userStorages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserStoragesVarargs(value: GetBundleUserStorage*): Self = StObject.set(x, "userStorages", js.Array(value :_*))
+      inline def setUserStoragesVarargs(value: GetBundleUserStorage*): Self = StObject.set(x, "userStorages", js.Array(value :_*))
     }
   }
 }

@@ -14,19 +14,15 @@ trait AttrsFillAttrs extends StObject {
 }
 object AttrsFillAttrs {
   
-  @scala.inline
-  def apply(attrs: FillAttrs, backend: MathBackendCPU): AttrsFillAttrs = {
+  inline def apply(attrs: FillAttrs, backend: MathBackendCPU): AttrsFillAttrs = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttrsFillAttrs]
   }
   
-  @scala.inline
-  implicit class AttrsFillAttrsMutableBuilder[Self <: AttrsFillAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: AttrsFillAttrs](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: FillAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: FillAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
   }
 }

@@ -28,12 +28,10 @@ object FocusableTag {
   @JSImport("wix-ui-core/src", "FocusableTag.displayName")
   @js.native
   def displayName: DisplayNames = js.native
-  @scala.inline
-  def displayName_=(x: DisplayNames): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: DisplayNames): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-ui-core/src", "FocusableTag.propTypes")
   @js.native
   def propTypes: Checked = js.native
-  @scala.inline
-  def propTypes_=(x: Checked): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  inline def propTypes_=(x: Checked): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
 }

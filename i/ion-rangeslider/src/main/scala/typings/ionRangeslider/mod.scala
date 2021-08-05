@@ -58,8 +58,7 @@ object mod {
   }
   object IonRangeSliderEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       from: Double,
       from_percent: Double,
       from_pretty: String,
@@ -79,50 +78,35 @@ object mod {
       __obj.asInstanceOf[IonRangeSliderEvent]
     }
     
-    @scala.inline
-    implicit class IonRangeSliderEventMutableBuilder[Self <: IonRangeSliderEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IonRangeSliderEvent](x: Self) {
       
-      @scala.inline
-      def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom_percent(value: Double): Self = StObject.set(x, "from_percent", value.asInstanceOf[js.Any])
+      inline def setFrom_percent(value: Double): Self = StObject.set(x, "from_percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom_pretty(value: String): Self = StObject.set(x, "from_pretty", value.asInstanceOf[js.Any])
+      inline def setFrom_pretty(value: String): Self = StObject.set(x, "from_pretty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom_value(value: Double): Self = StObject.set(x, "from_value", value.asInstanceOf[js.Any])
+      inline def setFrom_value(value: Double): Self = StObject.set(x, "from_value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: JQuery): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: JQuery): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_pretty(value: String): Self = StObject.set(x, "max_pretty", value.asInstanceOf[js.Any])
+      inline def setMax_pretty(value: String): Self = StObject.set(x, "max_pretty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin_pretty(value: String): Self = StObject.set(x, "min_pretty", value.asInstanceOf[js.Any])
+      inline def setMin_pretty(value: String): Self = StObject.set(x, "min_pretty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlider(value: JQuery): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
+      inline def setSlider(value: JQuery): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo_percent(value: Double): Self = StObject.set(x, "to_percent", value.asInstanceOf[js.Any])
+      inline def setTo_percent(value: Double): Self = StObject.set(x, "to_percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo_pretty(value: String): Self = StObject.set(x, "to_pretty", value.asInstanceOf[js.Any])
+      inline def setTo_pretty(value: String): Self = StObject.set(x, "to_pretty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo_value(value: Double): Self = StObject.set(x, "to_value", value.asInstanceOf[js.Any])
+      inline def setTo_value(value: Double): Self = StObject.set(x, "to_value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -261,281 +245,190 @@ object mod {
   }
   object IonRangeSliderOptions {
     
-    @scala.inline
-    def apply(): IonRangeSliderOptions = {
+    inline def apply(): IonRangeSliderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IonRangeSliderOptions]
     }
     
-    @scala.inline
-    implicit class IonRangeSliderOptionsMutableBuilder[Self <: IonRangeSliderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IonRangeSliderOptions](x: Self) {
       
-      @scala.inline
-      def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+      inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
       
-      @scala.inline
-      def setDecorate_both(value: Boolean): Self = StObject.set(x, "decorate_both", value.asInstanceOf[js.Any])
+      inline def setDecorate_both(value: Boolean): Self = StObject.set(x, "decorate_both", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecorate_bothUndefined: Self = StObject.set(x, "decorate_both", js.undefined)
+      inline def setDecorate_bothUndefined: Self = StObject.set(x, "decorate_both", js.undefined)
       
-      @scala.inline
-      def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+      inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+      inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      @scala.inline
-      def setDrag_interval(value: Boolean): Self = StObject.set(x, "drag_interval", value.asInstanceOf[js.Any])
+      inline def setDrag_interval(value: Boolean): Self = StObject.set(x, "drag_interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrag_intervalUndefined: Self = StObject.set(x, "drag_interval", js.undefined)
+      inline def setDrag_intervalUndefined: Self = StObject.set(x, "drag_interval", js.undefined)
       
-      @scala.inline
-      def setExtra_classes(value: String): Self = StObject.set(x, "extra_classes", value.asInstanceOf[js.Any])
+      inline def setExtra_classes(value: String): Self = StObject.set(x, "extra_classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtra_classesUndefined: Self = StObject.set(x, "extra_classes", js.undefined)
+      inline def setExtra_classesUndefined: Self = StObject.set(x, "extra_classes", js.undefined)
       
-      @scala.inline
-      def setForce_edges(value: Boolean): Self = StObject.set(x, "force_edges", value.asInstanceOf[js.Any])
+      inline def setForce_edges(value: Boolean): Self = StObject.set(x, "force_edges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForce_edgesUndefined: Self = StObject.set(x, "force_edges", js.undefined)
+      inline def setForce_edgesUndefined: Self = StObject.set(x, "force_edges", js.undefined)
       
-      @scala.inline
-      def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setFrom_fixed(value: Boolean): Self = StObject.set(x, "from_fixed", value.asInstanceOf[js.Any])
+      inline def setFrom_fixed(value: Boolean): Self = StObject.set(x, "from_fixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom_fixedUndefined: Self = StObject.set(x, "from_fixed", js.undefined)
+      inline def setFrom_fixedUndefined: Self = StObject.set(x, "from_fixed", js.undefined)
       
-      @scala.inline
-      def setFrom_max(value: Double): Self = StObject.set(x, "from_max", value.asInstanceOf[js.Any])
+      inline def setFrom_max(value: Double): Self = StObject.set(x, "from_max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom_maxUndefined: Self = StObject.set(x, "from_max", js.undefined)
+      inline def setFrom_maxUndefined: Self = StObject.set(x, "from_max", js.undefined)
       
-      @scala.inline
-      def setFrom_min(value: Double): Self = StObject.set(x, "from_min", value.asInstanceOf[js.Any])
+      inline def setFrom_min(value: Double): Self = StObject.set(x, "from_min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom_minUndefined: Self = StObject.set(x, "from_min", js.undefined)
+      inline def setFrom_minUndefined: Self = StObject.set(x, "from_min", js.undefined)
       
-      @scala.inline
-      def setFrom_shadow(value: Boolean): Self = StObject.set(x, "from_shadow", value.asInstanceOf[js.Any])
+      inline def setFrom_shadow(value: Boolean): Self = StObject.set(x, "from_shadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom_shadowUndefined: Self = StObject.set(x, "from_shadow", js.undefined)
+      inline def setFrom_shadowUndefined: Self = StObject.set(x, "from_shadow", js.undefined)
       
-      @scala.inline
-      def setGrid(value: Boolean): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: Boolean): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+      inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
-      @scala.inline
-      def setGrid_margin(value: Boolean): Self = StObject.set(x, "grid_margin", value.asInstanceOf[js.Any])
+      inline def setGrid_margin(value: Boolean): Self = StObject.set(x, "grid_margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrid_marginUndefined: Self = StObject.set(x, "grid_margin", js.undefined)
+      inline def setGrid_marginUndefined: Self = StObject.set(x, "grid_margin", js.undefined)
       
-      @scala.inline
-      def setGrid_num(value: Double): Self = StObject.set(x, "grid_num", value.asInstanceOf[js.Any])
+      inline def setGrid_num(value: Double): Self = StObject.set(x, "grid_num", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrid_numUndefined: Self = StObject.set(x, "grid_num", js.undefined)
+      inline def setGrid_numUndefined: Self = StObject.set(x, "grid_num", js.undefined)
       
-      @scala.inline
-      def setGrid_snap(value: Boolean): Self = StObject.set(x, "grid_snap", value.asInstanceOf[js.Any])
+      inline def setGrid_snap(value: Boolean): Self = StObject.set(x, "grid_snap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrid_snapUndefined: Self = StObject.set(x, "grid_snap", js.undefined)
+      inline def setGrid_snapUndefined: Self = StObject.set(x, "grid_snap", js.undefined)
       
-      @scala.inline
-      def setHide_from_to(value: Boolean): Self = StObject.set(x, "hide_from_to", value.asInstanceOf[js.Any])
+      inline def setHide_from_to(value: Boolean): Self = StObject.set(x, "hide_from_to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide_from_toUndefined: Self = StObject.set(x, "hide_from_to", js.undefined)
+      inline def setHide_from_toUndefined: Self = StObject.set(x, "hide_from_to", js.undefined)
       
-      @scala.inline
-      def setHide_min_max(value: Boolean): Self = StObject.set(x, "hide_min_max", value.asInstanceOf[js.Any])
+      inline def setHide_min_max(value: Boolean): Self = StObject.set(x, "hide_min_max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide_min_maxUndefined: Self = StObject.set(x, "hide_min_max", js.undefined)
+      inline def setHide_min_maxUndefined: Self = StObject.set(x, "hide_min_max", js.undefined)
       
-      @scala.inline
-      def setInput_values_separator(value: String): Self = StObject.set(x, "input_values_separator", value.asInstanceOf[js.Any])
+      inline def setInput_values_separator(value: String): Self = StObject.set(x, "input_values_separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput_values_separatorUndefined: Self = StObject.set(x, "input_values_separator", js.undefined)
+      inline def setInput_values_separatorUndefined: Self = StObject.set(x, "input_values_separator", js.undefined)
       
-      @scala.inline
-      def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+      inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+      inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMax_interval(value: Double): Self = StObject.set(x, "max_interval", value.asInstanceOf[js.Any])
+      inline def setMax_interval(value: Double): Self = StObject.set(x, "max_interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_intervalUndefined: Self = StObject.set(x, "max_interval", js.undefined)
+      inline def setMax_intervalUndefined: Self = StObject.set(x, "max_interval", js.undefined)
       
-      @scala.inline
-      def setMax_postfix(value: String): Self = StObject.set(x, "max_postfix", value.asInstanceOf[js.Any])
+      inline def setMax_postfix(value: String): Self = StObject.set(x, "max_postfix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_postfixUndefined: Self = StObject.set(x, "max_postfix", js.undefined)
+      inline def setMax_postfixUndefined: Self = StObject.set(x, "max_postfix", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setMin_interval(value: Double): Self = StObject.set(x, "min_interval", value.asInstanceOf[js.Any])
+      inline def setMin_interval(value: Double): Self = StObject.set(x, "min_interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin_intervalUndefined: Self = StObject.set(x, "min_interval", js.undefined)
+      inline def setMin_intervalUndefined: Self = StObject.set(x, "min_interval", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* obj */ IonRangeSliderEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* obj */ IonRangeSliderEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnFinish(value: /* obj */ IonRangeSliderEvent => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction1(value))
+      inline def setOnFinish(value: /* obj */ IonRangeSliderEvent => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
+      inline def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: /* obj */ IonRangeSliderEvent => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      inline def setOnStart(value: /* obj */ IonRangeSliderEvent => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: /* obj */ IonRangeSliderEvent => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+      inline def setOnUpdate(value: /* obj */ IonRangeSliderEvent => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setPostfix(value: String): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
+      inline def setPostfix(value: String): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostfixUndefined: Self = StObject.set(x, "postfix", js.undefined)
+      inline def setPostfixUndefined: Self = StObject.set(x, "postfix", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setPrettify(value: /* num */ Double => String): Self = StObject.set(x, "prettify", js.Any.fromFunction1(value))
+      inline def setPrettify(value: /* num */ Double => String): Self = StObject.set(x, "prettify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrettifyUndefined: Self = StObject.set(x, "prettify", js.undefined)
+      inline def setPrettifyUndefined: Self = StObject.set(x, "prettify", js.undefined)
       
-      @scala.inline
-      def setPrettify_enabled(value: Boolean): Self = StObject.set(x, "prettify_enabled", value.asInstanceOf[js.Any])
+      inline def setPrettify_enabled(value: Boolean): Self = StObject.set(x, "prettify_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettify_enabledUndefined: Self = StObject.set(x, "prettify_enabled", js.undefined)
+      inline def setPrettify_enabledUndefined: Self = StObject.set(x, "prettify_enabled", js.undefined)
       
-      @scala.inline
-      def setPrettify_separator(value: String): Self = StObject.set(x, "prettify_separator", value.asInstanceOf[js.Any])
+      inline def setPrettify_separator(value: String): Self = StObject.set(x, "prettify_separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettify_separatorUndefined: Self = StObject.set(x, "prettify_separator", js.undefined)
+      inline def setPrettify_separatorUndefined: Self = StObject.set(x, "prettify_separator", js.undefined)
       
-      @scala.inline
-      def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setSkin(value: flat | big | modern | round | sharp | square): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: flat | big | modern | round | sharp | square): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
       
-      @scala.inline
-      def setTo_fixed(value: Boolean): Self = StObject.set(x, "to_fixed", value.asInstanceOf[js.Any])
+      inline def setTo_fixed(value: Boolean): Self = StObject.set(x, "to_fixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo_fixedUndefined: Self = StObject.set(x, "to_fixed", js.undefined)
+      inline def setTo_fixedUndefined: Self = StObject.set(x, "to_fixed", js.undefined)
       
-      @scala.inline
-      def setTo_max(value: Double): Self = StObject.set(x, "to_max", value.asInstanceOf[js.Any])
+      inline def setTo_max(value: Double): Self = StObject.set(x, "to_max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo_maxUndefined: Self = StObject.set(x, "to_max", js.undefined)
+      inline def setTo_maxUndefined: Self = StObject.set(x, "to_max", js.undefined)
       
-      @scala.inline
-      def setTo_min(value: Double): Self = StObject.set(x, "to_min", value.asInstanceOf[js.Any])
+      inline def setTo_min(value: Double): Self = StObject.set(x, "to_min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo_minUndefined: Self = StObject.set(x, "to_min", js.undefined)
+      inline def setTo_minUndefined: Self = StObject.set(x, "to_min", js.undefined)
       
-      @scala.inline
-      def setTo_shadow(value: Boolean): Self = StObject.set(x, "to_shadow", value.asInstanceOf[js.Any])
+      inline def setTo_shadow(value: Boolean): Self = StObject.set(x, "to_shadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo_shadowUndefined: Self = StObject.set(x, "to_shadow", js.undefined)
+      inline def setTo_shadowUndefined: Self = StObject.set(x, "to_shadow", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      @scala.inline
-      def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
       
-      @scala.inline
-      def setValues_separator(value: String): Self = StObject.set(x, "values_separator", value.asInstanceOf[js.Any])
+      inline def setValues_separator(value: String): Self = StObject.set(x, "values_separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues_separatorUndefined: Self = StObject.set(x, "values_separator", js.undefined)
+      inline def setValues_separatorUndefined: Self = StObject.set(x, "values_separator", js.undefined)
     }
   }
   

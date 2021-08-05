@@ -15,28 +15,21 @@ trait PacketMirroringsScopedList extends StObject {
 }
 object PacketMirroringsScopedList {
   
-  @scala.inline
-  def apply(): PacketMirroringsScopedList = {
+  inline def apply(): PacketMirroringsScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PacketMirroringsScopedList]
   }
   
-  @scala.inline
-  implicit class PacketMirroringsScopedListMutableBuilder[Self <: PacketMirroringsScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: PacketMirroringsScopedList](x: Self) {
     
-    @scala.inline
-    def setPacketMirrorings(value: js.Array[PacketMirroring]): Self = StObject.set(x, "packetMirrorings", value.asInstanceOf[js.Any])
+    inline def setPacketMirrorings(value: js.Array[PacketMirroring]): Self = StObject.set(x, "packetMirrorings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacketMirroringsUndefined: Self = StObject.set(x, "packetMirrorings", js.undefined)
+    inline def setPacketMirroringsUndefined: Self = StObject.set(x, "packetMirrorings", js.undefined)
     
-    @scala.inline
-    def setPacketMirroringsVarargs(value: PacketMirroring*): Self = StObject.set(x, "packetMirrorings", js.Array(value :_*))
+    inline def setPacketMirroringsVarargs(value: PacketMirroring*): Self = StObject.set(x, "packetMirrorings", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

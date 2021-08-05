@@ -15,6 +15,5 @@ object GameObjectScene {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.gameObjectSceneMod.GameObjectScene = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.gameObjectSceneMod.GameObjectScene]
+  inline def create(): typings.wonderJs.gameObjectSceneMod.GameObjectScene = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.gameObjectSceneMod.GameObjectScene]
 }

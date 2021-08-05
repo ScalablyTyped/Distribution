@@ -17,37 +17,27 @@ trait Leading extends StObject {
 }
 object Leading {
   
-  @scala.inline
-  def apply(value: String): Leading = {
+  inline def apply(value: String): Leading = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Leading]
   }
   
-  @scala.inline
-  implicit class LeadingMutableBuilder[Self <: Leading] (val x: Self) extends AnyVal {
+  extension [Self <: Leading](x: Self) {
     
-    @scala.inline
-    def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+    inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+    inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
     
-    @scala.inline
-    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocNull: Self = StObject.set(x, "loc", null)
+    inline def setLocNull: Self = StObject.set(x, "loc", null)
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
-    @scala.inline
-    def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+    inline def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
+    inline def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

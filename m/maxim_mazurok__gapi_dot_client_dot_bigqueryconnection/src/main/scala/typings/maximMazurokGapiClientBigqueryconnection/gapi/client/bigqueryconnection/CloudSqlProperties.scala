@@ -20,37 +20,27 @@ trait CloudSqlProperties extends StObject {
 }
 object CloudSqlProperties {
   
-  @scala.inline
-  def apply(): CloudSqlProperties = {
+  inline def apply(): CloudSqlProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudSqlProperties]
   }
   
-  @scala.inline
-  implicit class CloudSqlPropertiesMutableBuilder[Self <: CloudSqlProperties] (val x: Self) extends AnyVal {
+  extension [Self <: CloudSqlProperties](x: Self) {
     
-    @scala.inline
-    def setCredential(value: CloudSqlCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+    inline def setCredential(value: CloudSqlCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
+    inline def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

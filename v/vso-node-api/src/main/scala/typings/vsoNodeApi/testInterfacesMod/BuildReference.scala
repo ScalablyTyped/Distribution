@@ -22,8 +22,7 @@ trait BuildReference extends StObject {
 }
 object BuildReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     branchName: String,
     buildSystem: String,
     definitionId: Double,
@@ -36,28 +35,20 @@ object BuildReference {
     __obj.asInstanceOf[BuildReference]
   }
   
-  @scala.inline
-  implicit class BuildReferenceMutableBuilder[Self <: BuildReference] (val x: Self) extends AnyVal {
+  extension [Self <: BuildReference](x: Self) {
     
-    @scala.inline
-    def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildSystem(value: String): Self = StObject.set(x, "buildSystem", value.asInstanceOf[js.Any])
+    inline def setBuildSystem(value: String): Self = StObject.set(x, "buildSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionId(value: Double): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
+    inline def setDefinitionId(value: Double): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
+    inline def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

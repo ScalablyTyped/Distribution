@@ -18,25 +18,19 @@ trait AwsRedshiftClusterEndpoint extends StObject {
 }
 object AwsRedshiftClusterEndpoint {
   
-  @scala.inline
-  def apply(): AwsRedshiftClusterEndpoint = {
+  inline def apply(): AwsRedshiftClusterEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRedshiftClusterEndpoint]
   }
   
-  @scala.inline
-  implicit class AwsRedshiftClusterEndpointMutableBuilder[Self <: AwsRedshiftClusterEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRedshiftClusterEndpoint](x: Self) {
     
-    @scala.inline
-    def setAddress(value: NonEmptyString): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: NonEmptyString): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
     
-    @scala.inline
-    def setPort(value: Integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
   }
 }

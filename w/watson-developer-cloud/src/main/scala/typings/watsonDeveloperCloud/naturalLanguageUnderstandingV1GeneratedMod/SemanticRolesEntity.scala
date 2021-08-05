@@ -15,25 +15,19 @@ trait SemanticRolesEntity extends StObject {
 }
 object SemanticRolesEntity {
   
-  @scala.inline
-  def apply(): SemanticRolesEntity = {
+  inline def apply(): SemanticRolesEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SemanticRolesEntity]
   }
   
-  @scala.inline
-  implicit class SemanticRolesEntityMutableBuilder[Self <: SemanticRolesEntity] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticRolesEntity](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

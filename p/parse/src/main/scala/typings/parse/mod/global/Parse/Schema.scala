@@ -163,8 +163,7 @@ object Schema {
     * the query completes.
     */
   /* static member */
-  @scala.inline
-  def all(): js.Promise[js.Array[Schema[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Promise[js.Array[Schema[js.Any]]]]
+  inline def all(): js.Promise[js.Array[Schema[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Promise[js.Array[Schema[js.Any]]]]
   
   type AttrType[T /* <: Object[Attributes] */, V] = Extract[
     /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T['attributes'] ]: T['attributes'][K] extends V? K : never}[keyof T['attributes']] */ js.Any, 
@@ -195,74 +194,52 @@ object Schema {
   }
   object CLP {
     
-    @scala.inline
-    def apply(): CLP = {
+    inline def apply(): CLP = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CLP]
     }
     
-    @scala.inline
-    implicit class CLPMutableBuilder[Self <: CLP] (val x: Self) extends AnyVal {
+    extension [Self <: CLP](x: Self) {
       
-      @scala.inline
-      def setAddField(value: CLPField): Self = StObject.set(x, "addField", value.asInstanceOf[js.Any])
+      inline def setAddField(value: CLPField): Self = StObject.set(x, "addField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddFieldUndefined: Self = StObject.set(x, "addField", js.undefined)
+      inline def setAddFieldUndefined: Self = StObject.set(x, "addField", js.undefined)
       
-      @scala.inline
-      def setCount(value: CLPField): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: CLPField): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setCreate(value: CLPField): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: CLPField): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      @scala.inline
-      def setDelete(value: CLPField): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: CLPField): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+      inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
       
-      @scala.inline
-      def setFind(value: CLPField): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
+      inline def setFind(value: CLPField): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
+      inline def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
       
-      @scala.inline
-      def setGet(value: CLPField): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+      inline def setGet(value: CLPField): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+      inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
       
-      @scala.inline
-      def setReadUserFields(value: js.Array[String]): Self = StObject.set(x, "readUserFields", value.asInstanceOf[js.Any])
+      inline def setReadUserFields(value: js.Array[String]): Self = StObject.set(x, "readUserFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadUserFieldsUndefined: Self = StObject.set(x, "readUserFields", js.undefined)
+      inline def setReadUserFieldsUndefined: Self = StObject.set(x, "readUserFields", js.undefined)
       
-      @scala.inline
-      def setReadUserFieldsVarargs(value: String*): Self = StObject.set(x, "readUserFields", js.Array(value :_*))
+      inline def setReadUserFieldsVarargs(value: String*): Self = StObject.set(x, "readUserFields", js.Array(value :_*))
       
-      @scala.inline
-      def setUpdate(value: CLPField): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: CLPField): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
       
-      @scala.inline
-      def setWriteUserFields(value: js.Array[String]): Self = StObject.set(x, "writeUserFields", value.asInstanceOf[js.Any])
+      inline def setWriteUserFields(value: js.Array[String]): Self = StObject.set(x, "writeUserFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteUserFieldsUndefined: Self = StObject.set(x, "writeUserFields", js.undefined)
+      inline def setWriteUserFieldsUndefined: Self = StObject.set(x, "writeUserFields", js.undefined)
       
-      @scala.inline
-      def setWriteUserFieldsVarargs(value: String*): Self = StObject.set(x, "writeUserFields", js.Array(value :_*))
+      inline def setWriteUserFieldsVarargs(value: String*): Self = StObject.set(x, "writeUserFields", js.Array(value :_*))
     }
   }
   
@@ -286,26 +263,20 @@ object Schema {
   }
   object CLPField {
     
-    @scala.inline
-    def apply(): CLPField = {
+    inline def apply(): CLPField = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CLPField]
     }
     
-    @scala.inline
-    implicit class CLPFieldMutableBuilder[Self <: CLPField] (val x: Self) extends AnyVal {
+    extension [Self <: CLPField](x: Self) {
       
-      @scala.inline
-      def setAsterisk(value: Boolean): Self = StObject.set(x, "*", value.asInstanceOf[js.Any])
+      inline def setAsterisk(value: Boolean): Self = StObject.set(x, "*", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsteriskUndefined: Self = StObject.set(x, "*", js.undefined)
+      inline def setAsteriskUndefined: Self = StObject.set(x, "*", js.undefined)
       
-      @scala.inline
-      def setRequiresAuthentication(value: Boolean): Self = StObject.set(x, "requiresAuthentication", value.asInstanceOf[js.Any])
+      inline def setRequiresAuthentication(value: Boolean): Self = StObject.set(x, "requiresAuthentication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiresAuthenticationUndefined: Self = StObject.set(x, "requiresAuthentication", js.undefined)
+      inline def setRequiresAuthenticationUndefined: Self = StObject.set(x, "requiresAuthentication", js.undefined)
     }
   }
   
@@ -317,26 +288,20 @@ object Schema {
   }
   object FieldOptions {
     
-    @scala.inline
-    def apply[T /* <: String | Double | Boolean | Date | File | GeoPoint | Polygon | js.Array[js.Any] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */](): FieldOptions[T] = {
+    inline def apply[T /* <: String | Double | Boolean | Date | File | GeoPoint | Polygon | js.Array[js.Any] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */](): FieldOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FieldOptions[T]]
     }
     
-    @scala.inline
-    implicit class FieldOptionsMutableBuilder[Self <: FieldOptions[?], T /* <: String | Double | Boolean | Date | File | GeoPoint | Polygon | js.Array[js.Any] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */] (val x: Self & FieldOptions[T]) extends AnyVal {
+    extension [Self <: FieldOptions[?], T /* <: String | Double | Boolean | Date | File | GeoPoint | Polygon | js.Array[js.Any] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */](x: Self & FieldOptions[T]) {
       
-      @scala.inline
-      def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     }
   }
   
@@ -375,38 +340,27 @@ object Schema {
   trait TYPE extends StObject
   object TYPE {
     
-    @scala.inline
-    def Array: typings.parse.parseStrings.Array = "Array".asInstanceOf[typings.parse.parseStrings.Array]
+    inline def Array: typings.parse.parseStrings.Array = "Array".asInstanceOf[typings.parse.parseStrings.Array]
     
-    @scala.inline
-    def Boolean: typings.parse.parseStrings.Boolean = "Boolean".asInstanceOf[typings.parse.parseStrings.Boolean]
+    inline def Boolean: typings.parse.parseStrings.Boolean = "Boolean".asInstanceOf[typings.parse.parseStrings.Boolean]
     
-    @scala.inline
-    def Date: typings.parse.parseStrings.Date = "Date".asInstanceOf[typings.parse.parseStrings.Date]
+    inline def Date: typings.parse.parseStrings.Date = "Date".asInstanceOf[typings.parse.parseStrings.Date]
     
-    @scala.inline
-    def File: typings.parse.parseStrings.File = "File".asInstanceOf[typings.parse.parseStrings.File]
+    inline def File: typings.parse.parseStrings.File = "File".asInstanceOf[typings.parse.parseStrings.File]
     
-    @scala.inline
-    def GeoPoint: typings.parse.parseStrings.GeoPoint = "GeoPoint".asInstanceOf[typings.parse.parseStrings.GeoPoint]
+    inline def GeoPoint: typings.parse.parseStrings.GeoPoint = "GeoPoint".asInstanceOf[typings.parse.parseStrings.GeoPoint]
     
-    @scala.inline
-    def Number: typings.parse.parseStrings.Number = "Number".asInstanceOf[typings.parse.parseStrings.Number]
+    inline def Number: typings.parse.parseStrings.Number = "Number".asInstanceOf[typings.parse.parseStrings.Number]
     
-    @scala.inline
-    def Object: typings.parse.parseStrings.Object = "Object".asInstanceOf[typings.parse.parseStrings.Object]
+    inline def Object: typings.parse.parseStrings.Object = "Object".asInstanceOf[typings.parse.parseStrings.Object]
     
-    @scala.inline
-    def Pointer: typings.parse.parseStrings.Pointer = "Pointer".asInstanceOf[typings.parse.parseStrings.Pointer]
+    inline def Pointer: typings.parse.parseStrings.Pointer = "Pointer".asInstanceOf[typings.parse.parseStrings.Pointer]
     
-    @scala.inline
-    def Polygon: typings.parse.parseStrings.Polygon = "Polygon".asInstanceOf[typings.parse.parseStrings.Polygon]
+    inline def Polygon: typings.parse.parseStrings.Polygon = "Polygon".asInstanceOf[typings.parse.parseStrings.Polygon]
     
-    @scala.inline
-    def Relation: typings.parse.parseStrings.Relation = "Relation".asInstanceOf[typings.parse.parseStrings.Relation]
+    inline def Relation: typings.parse.parseStrings.Relation = "Relation".asInstanceOf[typings.parse.parseStrings.Relation]
     
-    @scala.inline
-    def String: typings.parse.parseStrings.String = "String".asInstanceOf[typings.parse.parseStrings.String]
+    inline def String: typings.parse.parseStrings.String = "String".asInstanceOf[typings.parse.parseStrings.String]
   }
   
   trait _FieldType extends StObject

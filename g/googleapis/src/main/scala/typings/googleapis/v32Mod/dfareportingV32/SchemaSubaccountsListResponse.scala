@@ -27,34 +27,25 @@ trait SchemaSubaccountsListResponse extends StObject {
 }
 object SchemaSubaccountsListResponse {
   
-  @scala.inline
-  def apply(): SchemaSubaccountsListResponse = {
+  inline def apply(): SchemaSubaccountsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSubaccountsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaSubaccountsListResponseMutableBuilder[Self <: SchemaSubaccountsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSubaccountsListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSubaccounts(value: js.Array[SchemaSubaccount]): Self = StObject.set(x, "subaccounts", value.asInstanceOf[js.Any])
+    inline def setSubaccounts(value: js.Array[SchemaSubaccount]): Self = StObject.set(x, "subaccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubaccountsUndefined: Self = StObject.set(x, "subaccounts", js.undefined)
+    inline def setSubaccountsUndefined: Self = StObject.set(x, "subaccounts", js.undefined)
     
-    @scala.inline
-    def setSubaccountsVarargs(value: SchemaSubaccount*): Self = StObject.set(x, "subaccounts", js.Array(value :_*))
+    inline def setSubaccountsVarargs(value: SchemaSubaccount*): Self = StObject.set(x, "subaccounts", js.Array(value :_*))
   }
 }

@@ -28,37 +28,27 @@ trait Directory extends StObject {
 }
 object Directory {
   
-  @scala.inline
-  def apply(): Directory = {
+  inline def apply(): Directory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Directory]
   }
   
-  @scala.inline
-  implicit class DirectoryMutableBuilder[Self <: Directory] (val x: Self) extends AnyVal {
+  extension [Self <: Directory](x: Self) {
     
-    @scala.inline
-    def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
+    inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
     
-    @scala.inline
-    def setDirectoryArn(value: DirectoryArn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
+    inline def setDirectoryArn(value: DirectoryArn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryArnUndefined: Self = StObject.set(x, "DirectoryArn", js.undefined)
+    inline def setDirectoryArnUndefined: Self = StObject.set(x, "DirectoryArn", js.undefined)
     
-    @scala.inline
-    def setName(value: DirectoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DirectoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setState(value: DirectoryState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: DirectoryState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

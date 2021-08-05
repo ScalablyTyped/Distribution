@@ -18,8 +18,7 @@ trait QueryExecuteSubsetParams extends StObject {
 }
 object QueryExecuteSubsetParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     batchIndex: Double,
     ownerUri: String,
     resultSetIndex: Double,
@@ -30,22 +29,16 @@ object QueryExecuteSubsetParams {
     __obj.asInstanceOf[QueryExecuteSubsetParams]
   }
   
-  @scala.inline
-  implicit class QueryExecuteSubsetParamsMutableBuilder[Self <: QueryExecuteSubsetParams] (val x: Self) extends AnyVal {
+  extension [Self <: QueryExecuteSubsetParams](x: Self) {
     
-    @scala.inline
-    def setBatchIndex(value: Double): Self = StObject.set(x, "batchIndex", value.asInstanceOf[js.Any])
+    inline def setBatchIndex(value: Double): Self = StObject.set(x, "batchIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
+    inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetIndex(value: Double): Self = StObject.set(x, "resultSetIndex", value.asInstanceOf[js.Any])
+    inline def setResultSetIndex(value: Double): Self = StObject.set(x, "resultSetIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsCount(value: Double): Self = StObject.set(x, "rowsCount", value.asInstanceOf[js.Any])
+    inline def setRowsCount(value: Double): Self = StObject.set(x, "rowsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsStartIndex(value: Double): Self = StObject.set(x, "rowsStartIndex", value.asInstanceOf[js.Any])
+    inline def setRowsStartIndex(value: Double): Self = StObject.set(x, "rowsStartIndex", value.asInstanceOf[js.Any])
   }
 }

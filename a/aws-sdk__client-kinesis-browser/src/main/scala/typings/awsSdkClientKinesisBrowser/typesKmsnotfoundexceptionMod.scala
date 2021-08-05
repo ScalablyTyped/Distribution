@@ -22,17 +22,14 @@ object typesKmsnotfoundexceptionMod {
   }
   object KMSNotFoundException {
     
-    @scala.inline
-    def apply(): KMSNotFoundException = {
+    inline def apply(): KMSNotFoundException = {
       val __obj = js.Dynamic.literal(name = "KMSNotFoundException")
       __obj.asInstanceOf[KMSNotFoundException]
     }
     
-    @scala.inline
-    implicit class KMSNotFoundExceptionMutableBuilder[Self <: KMSNotFoundException] (val x: Self) extends AnyVal {
+    extension [Self <: KMSNotFoundException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSNotFoundException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSNotFoundException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,20 +42,16 @@ object typesKmsnotfoundexceptionMod {
   }
   object KMSNotFoundExceptionDetails {
     
-    @scala.inline
-    def apply(): KMSNotFoundExceptionDetails = {
+    inline def apply(): KMSNotFoundExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KMSNotFoundExceptionDetails]
     }
     
-    @scala.inline
-    implicit class KMSNotFoundExceptionDetailsMutableBuilder[Self <: KMSNotFoundExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: KMSNotFoundExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

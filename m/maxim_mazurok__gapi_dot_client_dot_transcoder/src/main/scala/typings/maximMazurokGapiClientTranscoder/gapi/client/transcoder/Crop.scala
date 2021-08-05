@@ -20,37 +20,27 @@ trait Crop extends StObject {
 }
 object Crop {
   
-  @scala.inline
-  def apply(): Crop = {
+  inline def apply(): Crop = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Crop]
   }
   
-  @scala.inline
-  implicit class CropMutableBuilder[Self <: Crop] (val x: Self) extends AnyVal {
+  extension [Self <: Crop](x: Self) {
     
-    @scala.inline
-    def setBottomPixels(value: Double): Self = StObject.set(x, "bottomPixels", value.asInstanceOf[js.Any])
+    inline def setBottomPixels(value: Double): Self = StObject.set(x, "bottomPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomPixelsUndefined: Self = StObject.set(x, "bottomPixels", js.undefined)
+    inline def setBottomPixelsUndefined: Self = StObject.set(x, "bottomPixels", js.undefined)
     
-    @scala.inline
-    def setLeftPixels(value: Double): Self = StObject.set(x, "leftPixels", value.asInstanceOf[js.Any])
+    inline def setLeftPixels(value: Double): Self = StObject.set(x, "leftPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftPixelsUndefined: Self = StObject.set(x, "leftPixels", js.undefined)
+    inline def setLeftPixelsUndefined: Self = StObject.set(x, "leftPixels", js.undefined)
     
-    @scala.inline
-    def setRightPixels(value: Double): Self = StObject.set(x, "rightPixels", value.asInstanceOf[js.Any])
+    inline def setRightPixels(value: Double): Self = StObject.set(x, "rightPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightPixelsUndefined: Self = StObject.set(x, "rightPixels", js.undefined)
+    inline def setRightPixelsUndefined: Self = StObject.set(x, "rightPixels", js.undefined)
     
-    @scala.inline
-    def setTopPixels(value: Double): Self = StObject.set(x, "topPixels", value.asInstanceOf[js.Any])
+    inline def setTopPixels(value: Double): Self = StObject.set(x, "topPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopPixelsUndefined: Self = StObject.set(x, "topPixels", js.undefined)
+    inline def setTopPixelsUndefined: Self = StObject.set(x, "topPixels", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait Phone extends StObject {
 }
 object Phone {
   
-  @scala.inline
-  def apply(device: Boolean, phone: Boolean, tablet: Boolean): Phone = {
+  inline def apply(device: Boolean, phone: Boolean, tablet: Boolean): Phone = {
     val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], tablet = tablet.asInstanceOf[js.Any])
     __obj.asInstanceOf[Phone]
   }
   
-  @scala.inline
-  implicit class PhoneMutableBuilder[Self <: Phone] (val x: Self) extends AnyVal {
+  extension [Self <: Phone](x: Self) {
     
-    @scala.inline
-    def setDevice(value: Boolean): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: Boolean): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone(value: Boolean): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: Boolean): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablet(value: Boolean): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
+    inline def setTablet(value: Boolean): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
   }
 }

@@ -45,23 +45,23 @@ class RouterLinkActive protected ()
     linkWithHref: RouterLinkWithHref
   ) = this()
   
-  val cdr: js.Any = js.native
+  /* private */ val cdr: js.Any = js.native
   
-  var classes: js.Any = js.native
+  /* private */ var classes: js.Any = js.native
   
-  var element: js.Any = js.native
+  /* private */ var element: js.Any = js.native
   
-  var hasActiveLinks: js.Any = js.native
+  /* private */ var hasActiveLinks: js.Any = js.native
   
   val isActive: Boolean = js.native
   
-  var isLinkActive: js.Any = js.native
+  /* private */ var isLinkActive: js.Any = js.native
   
-  var link: js.Any = js.native
+  /* private */ var link: js.Any = js.native
   
-  var linkInputChangesSubscription: js.Any = js.native
+  /* private */ var linkInputChangesSubscription: js.Any = js.native
   
-  var linkWithHref: js.Any = js.native
+  /* private */ var linkWithHref: js.Any = js.native
   
   var links: QueryList[RouterLink] = js.native
   
@@ -93,17 +93,17 @@ class RouterLinkActive protected ()
   /* CompleteClass */
   override def ngOnDestroy(): Unit = js.native
   
-  var renderer: js.Any = js.native
+  /* private */ var renderer: js.Any = js.native
   
-  var router: js.Any = js.native
+  /* private */ var router: js.Any = js.native
   
-  var routerEventsSubscription: js.Any = js.native
+  /* private */ var routerEventsSubscription: js.Any = js.native
   
   var routerLinkActiveOptions: Exact = js.native
   
   def routerLinkActive_=(data: js.Array[String] | String): Unit = js.native
   
-  var subscribeToEachLinkOnChanges: js.Any = js.native
+  /* private */ var subscribeToEachLinkOnChanges: js.Any = js.native
   
-  var update: js.Any = js.native
+  /* private */ var update: js.Any = js.native
 }

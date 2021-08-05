@@ -32,22 +32,17 @@ trait GetPropertyTolerantResult extends StObject {
 }
 object GetPropertyTolerantResult {
   
-  @scala.inline
-  def apply(Result: Double, State: PropertyState, Value: js.Any): GetPropertyTolerantResult = {
+  inline def apply(Result: Double, State: PropertyState, Value: js.Any): GetPropertyTolerantResult = {
     val __obj = js.Dynamic.literal(Result = Result.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPropertyTolerantResult]
   }
   
-  @scala.inline
-  implicit class GetPropertyTolerantResultMutableBuilder[Self <: GetPropertyTolerantResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetPropertyTolerantResult](x: Self) {
     
-    @scala.inline
-    def setResult(value: Double): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Double): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: PropertyState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: PropertyState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

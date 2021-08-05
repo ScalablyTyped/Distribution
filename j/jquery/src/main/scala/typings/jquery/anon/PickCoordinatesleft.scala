@@ -14,16 +14,13 @@ trait PickCoordinatesleft
 }
 object PickCoordinatesleft {
   
-  @scala.inline
-  def apply(left: Double): PickCoordinatesleft = {
+  inline def apply(left: Double): PickCoordinatesleft = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickCoordinatesleft]
   }
   
-  @scala.inline
-  implicit class PickCoordinatesleftMutableBuilder[Self <: PickCoordinatesleft] (val x: Self) extends AnyVal {
+  extension [Self <: PickCoordinatesleft](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
   }
 }

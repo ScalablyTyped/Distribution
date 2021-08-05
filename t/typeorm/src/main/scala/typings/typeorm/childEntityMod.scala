@@ -11,8 +11,6 @@ object childEntityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ChildEntity(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ChildEntity")().asInstanceOf[ClassDecorator]
-  @scala.inline
-  def ChildEntity(discriminatorValue: js.Any): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ChildEntity")(discriminatorValue.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def ChildEntity(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ChildEntity")().asInstanceOf[ClassDecorator]
+  inline def ChildEntity(discriminatorValue: js.Any): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ChildEntity")(discriminatorValue.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
 }

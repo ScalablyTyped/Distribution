@@ -19,8 +19,7 @@ trait `809` extends StObject {
 }
 object `809` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[OrgsPingWebhookEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[js.Any]
   ): `809` = {
@@ -28,13 +27,10 @@ object `809` {
     __obj.asInstanceOf[`809`]
   }
   
-  @scala.inline
-  implicit class `809MutableBuilder`[Self <: `809`] (val x: Self) extends AnyVal {
+  extension [Self <: `809`](x: Self) {
     
-    @scala.inline
-    def setParameters(value: RequestParameters & (Omit[OrgsPingWebhookEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: RequestParameters & (Omit[OrgsPingWebhookEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -27,25 +27,18 @@ object Util {
   @js.native
   val ^ : Util = js.native
   
-  @scala.inline
-  implicit class UtilMutableBuilder[Self <: Util] (val x: Self) extends AnyVal {
+  extension [Self <: Util](x: Self) {
     
-    @scala.inline
-    def setEach(value: lodashFn): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
+    inline def setEach(value: lodashFn): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFunction(value: lodashFn): Self = StObject.set(x, "isFunction", value.asInstanceOf[js.Any])
+    inline def setIsFunction(value: lodashFn): Self = StObject.set(x, "isFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNumber(value: lodashFn): Self = StObject.set(x, "isNumber", value.asInstanceOf[js.Any])
+    inline def setIsNumber(value: lodashFn): Self = StObject.set(x, "isNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsObject(value: lodashFn): Self = StObject.set(x, "isObject", value.asInstanceOf[js.Any])
+    inline def setIsObject(value: lodashFn): Self = StObject.set(x, "isObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsString(value: lodashFn): Self = StObject.set(x, "isString", value.asInstanceOf[js.Any])
+    inline def setIsString(value: lodashFn): Self = StObject.set(x, "isString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: lodashFn): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: lodashFn): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
   }
 }

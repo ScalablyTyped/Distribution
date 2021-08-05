@@ -510,53 +510,38 @@ object mod {
   }
   object CognitoAuthOptions {
     
-    @scala.inline
-    def apply(AppWebDomain: String, ClientId: String, RedirectUriSignIn: String, RedirectUriSignOut: String): CognitoAuthOptions = {
+    inline def apply(AppWebDomain: String, ClientId: String, RedirectUriSignIn: String, RedirectUriSignOut: String): CognitoAuthOptions = {
       val __obj = js.Dynamic.literal(AppWebDomain = AppWebDomain.asInstanceOf[js.Any], ClientId = ClientId.asInstanceOf[js.Any], RedirectUriSignIn = RedirectUriSignIn.asInstanceOf[js.Any], RedirectUriSignOut = RedirectUriSignOut.asInstanceOf[js.Any])
       __obj.asInstanceOf[CognitoAuthOptions]
     }
     
-    @scala.inline
-    implicit class CognitoAuthOptionsMutableBuilder[Self <: CognitoAuthOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CognitoAuthOptions](x: Self) {
       
-      @scala.inline
-      def setAdvancedSecurityDataCollectionFlag(value: Boolean): Self = StObject.set(x, "AdvancedSecurityDataCollectionFlag", value.asInstanceOf[js.Any])
+      inline def setAdvancedSecurityDataCollectionFlag(value: Boolean): Self = StObject.set(x, "AdvancedSecurityDataCollectionFlag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdvancedSecurityDataCollectionFlagUndefined: Self = StObject.set(x, "AdvancedSecurityDataCollectionFlag", js.undefined)
+      inline def setAdvancedSecurityDataCollectionFlagUndefined: Self = StObject.set(x, "AdvancedSecurityDataCollectionFlag", js.undefined)
       
-      @scala.inline
-      def setAppWebDomain(value: String): Self = StObject.set(x, "AppWebDomain", value.asInstanceOf[js.Any])
+      inline def setAppWebDomain(value: String): Self = StObject.set(x, "AppWebDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityProvider(value: String): Self = StObject.set(x, "IdentityProvider", value.asInstanceOf[js.Any])
+      inline def setIdentityProvider(value: String): Self = StObject.set(x, "IdentityProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityProviderUndefined: Self = StObject.set(x, "IdentityProvider", js.undefined)
+      inline def setIdentityProviderUndefined: Self = StObject.set(x, "IdentityProvider", js.undefined)
       
-      @scala.inline
-      def setRedirectUriSignIn(value: String): Self = StObject.set(x, "RedirectUriSignIn", value.asInstanceOf[js.Any])
+      inline def setRedirectUriSignIn(value: String): Self = StObject.set(x, "RedirectUriSignIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUriSignOut(value: String): Self = StObject.set(x, "RedirectUriSignOut", value.asInstanceOf[js.Any])
+      inline def setRedirectUriSignOut(value: String): Self = StObject.set(x, "RedirectUriSignOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenScopesArray(value: js.Array[String]): Self = StObject.set(x, "TokenScopesArray", value.asInstanceOf[js.Any])
+      inline def setTokenScopesArray(value: js.Array[String]): Self = StObject.set(x, "TokenScopesArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenScopesArrayUndefined: Self = StObject.set(x, "TokenScopesArray", js.undefined)
+      inline def setTokenScopesArrayUndefined: Self = StObject.set(x, "TokenScopesArray", js.undefined)
       
-      @scala.inline
-      def setTokenScopesArrayVarargs(value: String*): Self = StObject.set(x, "TokenScopesArray", js.Array(value :_*))
+      inline def setTokenScopesArrayVarargs(value: String*): Self = StObject.set(x, "TokenScopesArray", js.Array(value :_*))
       
-      @scala.inline
-      def setUserPoolId(value: String): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+      inline def setUserPoolId(value: String): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
+      inline def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
     }
   }
   
@@ -568,20 +553,16 @@ object mod {
   }
   object CognitoAuthUserHandler {
     
-    @scala.inline
-    def apply(onFailure: js.Any => Unit, onSuccess: CognitoAuthSession => Unit): CognitoAuthUserHandler = {
+    inline def apply(onFailure: js.Any => Unit, onSuccess: CognitoAuthSession => Unit): CognitoAuthUserHandler = {
       val __obj = js.Dynamic.literal(onFailure = js.Any.fromFunction1(onFailure), onSuccess = js.Any.fromFunction1(onSuccess))
       __obj.asInstanceOf[CognitoAuthUserHandler]
     }
     
-    @scala.inline
-    implicit class CognitoAuthUserHandlerMutableBuilder[Self <: CognitoAuthUserHandler] (val x: Self) extends AnyVal {
+    extension [Self <: CognitoAuthUserHandler](x: Self) {
       
-      @scala.inline
-      def setOnFailure(value: js.Any => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
+      inline def setOnFailure(value: js.Any => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSuccess(value: CognitoAuthSession => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
+      inline def setOnSuccess(value: CognitoAuthSession => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
     }
   }
   
@@ -673,8 +654,7 @@ object mod {
   }
   object CognitoConstants {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ACCESSTOKEN: String,
       AMPERSAND: String,
       AUTHORIZATIONCODE: String,
@@ -722,134 +702,91 @@ object mod {
       __obj.asInstanceOf[CognitoConstants]
     }
     
-    @scala.inline
-    implicit class CognitoConstantsMutableBuilder[Self <: CognitoConstants] (val x: Self) extends AnyVal {
+    extension [Self <: CognitoConstants](x: Self) {
       
-      @scala.inline
-      def setACCESSTOKEN(value: String): Self = StObject.set(x, "ACCESSTOKEN", value.asInstanceOf[js.Any])
+      inline def setACCESSTOKEN(value: String): Self = StObject.set(x, "ACCESSTOKEN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAMPERSAND(value: String): Self = StObject.set(x, "AMPERSAND", value.asInstanceOf[js.Any])
+      inline def setAMPERSAND(value: String): Self = StObject.set(x, "AMPERSAND", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAUTHORIZATIONCODE(value: String): Self = StObject.set(x, "AUTHORIZATIONCODE", value.asInstanceOf[js.Any])
+      inline def setAUTHORIZATIONCODE(value: String): Self = StObject.set(x, "AUTHORIZATIONCODE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLIENT_ID(value: String): Self = StObject.set(x, "CLIENT_ID", value.asInstanceOf[js.Any])
+      inline def setCLIENT_ID(value: String): Self = StObject.set(x, "CLIENT_ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCODE(value: String): Self = StObject.set(x, "CODE", value.asInstanceOf[js.Any])
+      inline def setCODE(value: String): Self = StObject.set(x, "CODE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCOLONDOUBLESLASH(value: String): Self = StObject.set(x, "COLONDOUBLESLASH", value.asInstanceOf[js.Any])
+      inline def setCOLONDOUBLESLASH(value: String): Self = StObject.set(x, "COLONDOUBLESLASH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONTENTTYPE(value: String): Self = StObject.set(x, "CONTENTTYPE", value.asInstanceOf[js.Any])
+      inline def setCONTENTTYPE(value: String): Self = StObject.set(x, "CONTENTTYPE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONTENTTYPEVALUE(value: String): Self = StObject.set(x, "CONTENTTYPEVALUE", value.asInstanceOf[js.Any])
+      inline def setCONTENTTYPEVALUE(value: String): Self = StObject.set(x, "CONTENTTYPEVALUE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOMAIN_PATH_SIGNIN(value: String): Self = StObject.set(x, "DOMAIN_PATH_SIGNIN", value.asInstanceOf[js.Any])
+      inline def setDOMAIN_PATH_SIGNIN(value: String): Self = StObject.set(x, "DOMAIN_PATH_SIGNIN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOMAIN_PATH_SIGNOUT(value: String): Self = StObject.set(x, "DOMAIN_PATH_SIGNOUT", value.asInstanceOf[js.Any])
+      inline def setDOMAIN_PATH_SIGNOUT(value: String): Self = StObject.set(x, "DOMAIN_PATH_SIGNOUT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOMAIN_PATH_TOKEN(value: String): Self = StObject.set(x, "DOMAIN_PATH_TOKEN", value.asInstanceOf[js.Any])
+      inline def setDOMAIN_PATH_TOKEN(value: String): Self = StObject.set(x, "DOMAIN_PATH_TOKEN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOMAIN_QUERY_PARAM_IDENTITY_PROVIDER(value: String): Self = StObject.set(x, "DOMAIN_QUERY_PARAM_IDENTITY_PROVIDER", value.asInstanceOf[js.Any])
+      inline def setDOMAIN_QUERY_PARAM_IDENTITY_PROVIDER(value: String): Self = StObject.set(x, "DOMAIN_QUERY_PARAM_IDENTITY_PROVIDER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOMAIN_QUERY_PARAM_REDIRECT_URI(value: String): Self = StObject.set(x, "DOMAIN_QUERY_PARAM_REDIRECT_URI", value.asInstanceOf[js.Any])
+      inline def setDOMAIN_QUERY_PARAM_REDIRECT_URI(value: String): Self = StObject.set(x, "DOMAIN_QUERY_PARAM_REDIRECT_URI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOMAIN_QUERY_PARAM_RESPONSE_TYPE(value: String): Self = StObject.set(x, "DOMAIN_QUERY_PARAM_RESPONSE_TYPE", value.asInstanceOf[js.Any])
+      inline def setDOMAIN_QUERY_PARAM_RESPONSE_TYPE(value: String): Self = StObject.set(x, "DOMAIN_QUERY_PARAM_RESPONSE_TYPE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOMAIN_QUERY_PARAM_SIGNOUT_URI(value: String): Self = StObject.set(x, "DOMAIN_QUERY_PARAM_SIGNOUT_URI", value.asInstanceOf[js.Any])
+      inline def setDOMAIN_QUERY_PARAM_SIGNOUT_URI(value: String): Self = StObject.set(x, "DOMAIN_QUERY_PARAM_SIGNOUT_URI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOMAIN_QUERY_PARAM_USERCONTEXTDATA(value: String): Self = StObject.set(x, "DOMAIN_QUERY_PARAM_USERCONTEXTDATA", value.asInstanceOf[js.Any])
+      inline def setDOMAIN_QUERY_PARAM_USERCONTEXTDATA(value: String): Self = StObject.set(x, "DOMAIN_QUERY_PARAM_USERCONTEXTDATA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOMAIN_SCHEME(value: String): Self = StObject.set(x, "DOMAIN_SCHEME", value.asInstanceOf[js.Any])
+      inline def setDOMAIN_SCHEME(value: String): Self = StObject.set(x, "DOMAIN_SCHEME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEQUALSIGN(value: String): Self = StObject.set(x, "EQUALSIGN", value.asInstanceOf[js.Any])
+      inline def setEQUALSIGN(value: String): Self = StObject.set(x, "EQUALSIGN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setERROR(value: String): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+      inline def setERROR(value: String): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setERROR_DESCRIPTION(value: String): Self = StObject.set(x, "ERROR_DESCRIPTION", value.asInstanceOf[js.Any])
+      inline def setERROR_DESCRIPTION(value: String): Self = StObject.set(x, "ERROR_DESCRIPTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHEADER(value: ContentType): Self = StObject.set(x, "HEADER", value.asInstanceOf[js.Any])
+      inline def setHEADER(value: ContentType): Self = StObject.set(x, "HEADER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHOSTNAMEREGEX(value: RegExp): Self = StObject.set(x, "HOSTNAMEREGEX", value.asInstanceOf[js.Any])
+      inline def setHOSTNAMEREGEX(value: RegExp): Self = StObject.set(x, "HOSTNAMEREGEX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIDTOKEN(value: String): Self = StObject.set(x, "IDTOKEN", value.asInstanceOf[js.Any])
+      inline def setIDTOKEN(value: String): Self = StObject.set(x, "IDTOKEN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPARAMETERERROR(value: String): Self = StObject.set(x, "PARAMETERERROR", value.asInstanceOf[js.Any])
+      inline def setPARAMETERERROR(value: String): Self = StObject.set(x, "PARAMETERERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOST(value: String): Self = StObject.set(x, "POST", value.asInstanceOf[js.Any])
+      inline def setPOST(value: String): Self = StObject.set(x, "POST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOUNDSIGN(value: String): Self = StObject.set(x, "POUNDSIGN", value.asInstanceOf[js.Any])
+      inline def setPOUNDSIGN(value: String): Self = StObject.set(x, "POUNDSIGN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQUERYPARAMETERREGEX1(value: RegExp): Self = StObject.set(x, "QUERYPARAMETERREGEX1", value.asInstanceOf[js.Any])
+      inline def setQUERYPARAMETERREGEX1(value: RegExp): Self = StObject.set(x, "QUERYPARAMETERREGEX1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQUERYPARAMETERREGEX2(value: RegExp): Self = StObject.set(x, "QUERYPARAMETERREGEX2", value.asInstanceOf[js.Any])
+      inline def setQUERYPARAMETERREGEX2(value: RegExp): Self = StObject.set(x, "QUERYPARAMETERREGEX2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQUESTIONMARK(value: String): Self = StObject.set(x, "QUESTIONMARK", value.asInstanceOf[js.Any])
+      inline def setQUESTIONMARK(value: String): Self = StObject.set(x, "QUESTIONMARK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREFRESHTOKEN(value: String): Self = StObject.set(x, "REFRESHTOKEN", value.asInstanceOf[js.Any])
+      inline def setREFRESHTOKEN(value: String): Self = StObject.set(x, "REFRESHTOKEN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSCOPE(value: String): Self = StObject.set(x, "SCOPE", value.asInstanceOf[js.Any])
+      inline def setSCOPE(value: String): Self = StObject.set(x, "SCOPE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSCOPETYPEERROR(value: String): Self = StObject.set(x, "SCOPETYPEERROR", value.asInstanceOf[js.Any])
+      inline def setSCOPETYPEERROR(value: String): Self = StObject.set(x, "SCOPETYPEERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSELF(value: String): Self = StObject.set(x, "SELF", value.asInstanceOf[js.Any])
+      inline def setSELF(value: String): Self = StObject.set(x, "SELF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSLASH(value: String): Self = StObject.set(x, "SLASH", value.asInstanceOf[js.Any])
+      inline def setSLASH(value: String): Self = StObject.set(x, "SLASH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSPACE(value: String): Self = StObject.set(x, "SPACE", value.asInstanceOf[js.Any])
+      inline def setSPACE(value: String): Self = StObject.set(x, "SPACE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTATE(value: String): Self = StObject.set(x, "STATE", value.asInstanceOf[js.Any])
+      inline def setSTATE(value: String): Self = StObject.set(x, "STATE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTATELENGTH(value: Double): Self = StObject.set(x, "STATELENGTH", value.asInstanceOf[js.Any])
+      inline def setSTATELENGTH(value: Double): Self = StObject.set(x, "STATELENGTH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTATEORIGINSTRING(value: String): Self = StObject.set(x, "STATEORIGINSTRING", value.asInstanceOf[js.Any])
+      inline def setSTATEORIGINSTRING(value: String): Self = StObject.set(x, "STATEORIGINSTRING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTRINGTYPE(value: String): Self = StObject.set(x, "STRINGTYPE", value.asInstanceOf[js.Any])
+      inline def setSTRINGTYPE(value: String): Self = StObject.set(x, "STRINGTYPE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOKEN(value: String): Self = StObject.set(x, "TOKEN", value.asInstanceOf[js.Any])
+      inline def setTOKEN(value: String): Self = StObject.set(x, "TOKEN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNDEFINED(value: String): Self = StObject.set(x, "UNDEFINED", value.asInstanceOf[js.Any])
+      inline def setUNDEFINED(value: String): Self = StObject.set(x, "UNDEFINED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWITHCREDENTIALS(value: String): Self = StObject.set(x, "WITHCREDENTIALS", value.asInstanceOf[js.Any])
+      inline def setWITHCREDENTIALS(value: String): Self = StObject.set(x, "WITHCREDENTIALS", value.asInstanceOf[js.Any])
     }
   }
   
@@ -882,44 +819,32 @@ object mod {
   }
   object CognitoSessionData {
     
-    @scala.inline
-    def apply(): CognitoSessionData = {
+    inline def apply(): CognitoSessionData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CognitoSessionData]
     }
     
-    @scala.inline
-    implicit class CognitoSessionDataMutableBuilder[Self <: CognitoSessionData] (val x: Self) extends AnyVal {
+    extension [Self <: CognitoSessionData](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: CognitoAccessToken): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: CognitoAccessToken): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessTokenUndefined: Self = StObject.set(x, "AccessToken", js.undefined)
+      inline def setAccessTokenUndefined: Self = StObject.set(x, "AccessToken", js.undefined)
       
-      @scala.inline
-      def setIdToken(value: CognitoIdToken): Self = StObject.set(x, "IdToken", value.asInstanceOf[js.Any])
+      inline def setIdToken(value: CognitoIdToken): Self = StObject.set(x, "IdToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdTokenUndefined: Self = StObject.set(x, "IdToken", js.undefined)
+      inline def setIdTokenUndefined: Self = StObject.set(x, "IdToken", js.undefined)
       
-      @scala.inline
-      def setRefreshToken(value: CognitoRefreshToken): Self = StObject.set(x, "RefreshToken", value.asInstanceOf[js.Any])
+      inline def setRefreshToken(value: CognitoRefreshToken): Self = StObject.set(x, "RefreshToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshTokenUndefined: Self = StObject.set(x, "RefreshToken", js.undefined)
+      inline def setRefreshTokenUndefined: Self = StObject.set(x, "RefreshToken", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
       
-      @scala.inline
-      def setTokenScopes(value: CognitoTokenScopes): Self = StObject.set(x, "TokenScopes", value.asInstanceOf[js.Any])
+      inline def setTokenScopes(value: CognitoTokenScopes): Self = StObject.set(x, "TokenScopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenScopesUndefined: Self = StObject.set(x, "TokenScopes", js.undefined)
+      inline def setTokenScopesUndefined: Self = StObject.set(x, "TokenScopes", js.undefined)
     }
   }
   
@@ -945,8 +870,7 @@ object mod {
   }
   object XDomainRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: () => Unit,
       onerror: () => Unit,
       onload: () => Unit,
@@ -961,35 +885,25 @@ object mod {
       __obj.asInstanceOf[XDomainRequest]
     }
     
-    @scala.inline
-    implicit class XDomainRequestMutableBuilder[Self <: XDomainRequest] (val x: Self) extends AnyVal {
+    extension [Self <: XDomainRequest](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnerror(value: () => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction0(value))
+      inline def setOnerror(value: () => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnload(value: () => Unit): Self = StObject.set(x, "onload", js.Any.fromFunction0(value))
+      inline def setOnload(value: () => Unit): Self = StObject.set(x, "onload", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnprogress(value: () => Unit): Self = StObject.set(x, "onprogress", js.Any.fromFunction0(value))
+      inline def setOnprogress(value: () => Unit): Self = StObject.set(x, "onprogress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOntimeout(value: () => Unit): Self = StObject.set(x, "ontimeout", js.Any.fromFunction0(value))
+      inline def setOntimeout(value: () => Unit): Self = StObject.set(x, "ontimeout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpen(value: (String, String) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction2(value))
+      inline def setOpen(value: (String, String) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
+      inline def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSend(value: String => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: String => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
   }
 }

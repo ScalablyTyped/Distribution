@@ -15,31 +15,23 @@ trait PartialClassNameMapStepCoLast extends StObject {
 }
 object PartialClassNameMapStepCoLast {
   
-  @scala.inline
-  def apply(): PartialClassNameMapStepCoLast = {
+  inline def apply(): PartialClassNameMapStepCoLast = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapStepCoLast]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapStepCoLastMutableBuilder[Self <: PartialClassNameMapStepCoLast] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapStepCoLast](x: Self) {
     
-    @scala.inline
-    def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+    inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
   }
 }

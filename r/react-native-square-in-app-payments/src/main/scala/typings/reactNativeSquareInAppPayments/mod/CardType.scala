@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CardType extends StObject
 object CardType {
   
-  @scala.inline
-  def CREDIT: typings.reactNativeSquareInAppPayments.reactNativeSquareInAppPaymentsStrings.CREDIT = "CREDIT".asInstanceOf[typings.reactNativeSquareInAppPayments.reactNativeSquareInAppPaymentsStrings.CREDIT]
+  inline def CREDIT: typings.reactNativeSquareInAppPayments.reactNativeSquareInAppPaymentsStrings.CREDIT = "CREDIT".asInstanceOf[typings.reactNativeSquareInAppPayments.reactNativeSquareInAppPaymentsStrings.CREDIT]
   
-  @scala.inline
-  def DEBIT: typings.reactNativeSquareInAppPayments.reactNativeSquareInAppPaymentsStrings.DEBIT = "DEBIT".asInstanceOf[typings.reactNativeSquareInAppPayments.reactNativeSquareInAppPaymentsStrings.DEBIT]
+  inline def DEBIT: typings.reactNativeSquareInAppPayments.reactNativeSquareInAppPaymentsStrings.DEBIT = "DEBIT".asInstanceOf[typings.reactNativeSquareInAppPayments.reactNativeSquareInAppPaymentsStrings.DEBIT]
   
-  @scala.inline
-  def UNKNOWN: typings.reactNativeSquareInAppPayments.reactNativeSquareInAppPaymentsStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.reactNativeSquareInAppPayments.reactNativeSquareInAppPaymentsStrings.UNKNOWN]
+  inline def UNKNOWN: typings.reactNativeSquareInAppPayments.reactNativeSquareInAppPaymentsStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.reactNativeSquareInAppPayments.reactNativeSquareInAppPaymentsStrings.UNKNOWN]
 }

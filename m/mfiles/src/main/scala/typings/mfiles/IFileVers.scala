@@ -18,8 +18,7 @@ trait IFileVers extends StObject {
 }
 object IFileVers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (Double, IFileVer) => Unit,
     Clone: () => IFileVers,
     Count: Double,
@@ -30,22 +29,16 @@ object IFileVers {
     __obj.asInstanceOf[IFileVers]
   }
   
-  @scala.inline
-  implicit class IFileVersMutableBuilder[Self <: IFileVers] (val x: Self) extends AnyVal {
+  extension [Self <: IFileVers](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Double, IFileVer) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Double, IFileVer) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClone(value: () => IFileVers): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IFileVers): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => IFileVer): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IFileVer): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

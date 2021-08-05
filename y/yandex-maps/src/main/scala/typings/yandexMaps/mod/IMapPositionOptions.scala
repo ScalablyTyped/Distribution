@@ -12,19 +12,15 @@ trait IMapPositionOptions
 }
 object IMapPositionOptions {
   
-  @scala.inline
-  def apply(): IMapPositionOptions = {
+  inline def apply(): IMapPositionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMapPositionOptions]
   }
   
-  @scala.inline
-  implicit class IMapPositionOptionsMutableBuilder[Self <: IMapPositionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IMapPositionOptions](x: Self) {
     
-    @scala.inline
-    def setTimingFunction(value: String): Self = StObject.set(x, "timingFunction", value.asInstanceOf[js.Any])
+    inline def setTimingFunction(value: String): Self = StObject.set(x, "timingFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimingFunctionUndefined: Self = StObject.set(x, "timingFunction", js.undefined)
+    inline def setTimingFunctionUndefined: Self = StObject.set(x, "timingFunction", js.undefined)
   }
 }

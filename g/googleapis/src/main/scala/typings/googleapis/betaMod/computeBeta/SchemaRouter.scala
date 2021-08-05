@@ -85,94 +85,65 @@ trait SchemaRouter extends StObject {
 }
 object SchemaRouter {
   
-  @scala.inline
-  def apply(): SchemaRouter = {
+  inline def apply(): SchemaRouter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRouter]
   }
   
-  @scala.inline
-  implicit class SchemaRouterMutableBuilder[Self <: SchemaRouter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRouter](x: Self) {
     
-    @scala.inline
-    def setBgp(value: SchemaRouterBgp): Self = StObject.set(x, "bgp", value.asInstanceOf[js.Any])
+    inline def setBgp(value: SchemaRouterBgp): Self = StObject.set(x, "bgp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgpPeers(value: js.Array[SchemaRouterBgpPeer]): Self = StObject.set(x, "bgpPeers", value.asInstanceOf[js.Any])
+    inline def setBgpPeers(value: js.Array[SchemaRouterBgpPeer]): Self = StObject.set(x, "bgpPeers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgpPeersUndefined: Self = StObject.set(x, "bgpPeers", js.undefined)
+    inline def setBgpPeersUndefined: Self = StObject.set(x, "bgpPeers", js.undefined)
     
-    @scala.inline
-    def setBgpPeersVarargs(value: SchemaRouterBgpPeer*): Self = StObject.set(x, "bgpPeers", js.Array(value :_*))
+    inline def setBgpPeersVarargs(value: SchemaRouterBgpPeer*): Self = StObject.set(x, "bgpPeers", js.Array(value :_*))
     
-    @scala.inline
-    def setBgpUndefined: Self = StObject.set(x, "bgp", js.undefined)
+    inline def setBgpUndefined: Self = StObject.set(x, "bgp", js.undefined)
     
-    @scala.inline
-    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
+    inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInterfaces(value: js.Array[SchemaRouterInterface]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
+    inline def setInterfaces(value: js.Array[SchemaRouterInterface]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfacesUndefined: Self = StObject.set(x, "interfaces", js.undefined)
+    inline def setInterfacesUndefined: Self = StObject.set(x, "interfaces", js.undefined)
     
-    @scala.inline
-    def setInterfacesVarargs(value: SchemaRouterInterface*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
+    inline def setInterfacesVarargs(value: SchemaRouterInterface*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNats(value: js.Array[SchemaRouterNat]): Self = StObject.set(x, "nats", value.asInstanceOf[js.Any])
+    inline def setNats(value: js.Array[SchemaRouterNat]): Self = StObject.set(x, "nats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNatsUndefined: Self = StObject.set(x, "nats", js.undefined)
+    inline def setNatsUndefined: Self = StObject.set(x, "nats", js.undefined)
     
-    @scala.inline
-    def setNatsVarargs(value: SchemaRouterNat*): Self = StObject.set(x, "nats", js.Array(value :_*))
+    inline def setNatsVarargs(value: SchemaRouterNat*): Self = StObject.set(x, "nats", js.Array(value :_*))
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
   }
 }

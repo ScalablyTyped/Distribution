@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.SharedWorkspaceLink")
 @js.native
-class SharedWorkspaceLink protected ()
+/* private */ class SharedWorkspaceLink ()
   extends StObject
      with typings.activexOffice.Office.SharedWorkspaceLink {
   
@@ -38,7 +38,7 @@ class SharedWorkspaceLink protected ()
   /* CompleteClass */
   var Notes: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.SharedWorkspaceLink_typekey")
   var OfficeDotSharedWorkspaceLink_typekey: typings.activexOffice.Office.SharedWorkspaceLink = js.native
   

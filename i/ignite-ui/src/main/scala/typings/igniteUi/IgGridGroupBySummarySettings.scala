@@ -26,25 +26,19 @@ trait IgGridGroupBySummarySettings
 }
 object IgGridGroupBySummarySettings {
   
-  @scala.inline
-  def apply(): IgGridGroupBySummarySettings = {
+  inline def apply(): IgGridGroupBySummarySettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridGroupBySummarySettings]
   }
   
-  @scala.inline
-  implicit class IgGridGroupBySummarySettingsMutableBuilder[Self <: IgGridGroupBySummarySettings] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridGroupBySummarySettings](x: Self) {
     
-    @scala.inline
-    def setMultiSummaryDelimiter(value: String): Self = StObject.set(x, "multiSummaryDelimiter", value.asInstanceOf[js.Any])
+    inline def setMultiSummaryDelimiter(value: String): Self = StObject.set(x, "multiSummaryDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiSummaryDelimiterUndefined: Self = StObject.set(x, "multiSummaryDelimiter", js.undefined)
+    inline def setMultiSummaryDelimiterUndefined: Self = StObject.set(x, "multiSummaryDelimiter", js.undefined)
     
-    @scala.inline
-    def setSummaryFormat(value: String): Self = StObject.set(x, "summaryFormat", value.asInstanceOf[js.Any])
+    inline def setSummaryFormat(value: String): Self = StObject.set(x, "summaryFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryFormatUndefined: Self = StObject.set(x, "summaryFormat", js.undefined)
+    inline def setSummaryFormatUndefined: Self = StObject.set(x, "summaryFormat", js.undefined)
   }
 }

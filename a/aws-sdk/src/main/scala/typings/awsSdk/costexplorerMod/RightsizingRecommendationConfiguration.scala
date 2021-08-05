@@ -18,19 +18,15 @@ trait RightsizingRecommendationConfiguration extends StObject {
 }
 object RightsizingRecommendationConfiguration {
   
-  @scala.inline
-  def apply(BenefitsConsidered: GenericBoolean, RecommendationTarget: RecommendationTarget): RightsizingRecommendationConfiguration = {
+  inline def apply(BenefitsConsidered: GenericBoolean, RecommendationTarget: RecommendationTarget): RightsizingRecommendationConfiguration = {
     val __obj = js.Dynamic.literal(BenefitsConsidered = BenefitsConsidered.asInstanceOf[js.Any], RecommendationTarget = RecommendationTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[RightsizingRecommendationConfiguration]
   }
   
-  @scala.inline
-  implicit class RightsizingRecommendationConfigurationMutableBuilder[Self <: RightsizingRecommendationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: RightsizingRecommendationConfiguration](x: Self) {
     
-    @scala.inline
-    def setBenefitsConsidered(value: GenericBoolean): Self = StObject.set(x, "BenefitsConsidered", value.asInstanceOf[js.Any])
+    inline def setBenefitsConsidered(value: GenericBoolean): Self = StObject.set(x, "BenefitsConsidered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationTarget(value: RecommendationTarget): Self = StObject.set(x, "RecommendationTarget", value.asInstanceOf[js.Any])
+    inline def setRecommendationTarget(value: RecommendationTarget): Self = StObject.set(x, "RecommendationTarget", value.asInstanceOf[js.Any])
   }
 }

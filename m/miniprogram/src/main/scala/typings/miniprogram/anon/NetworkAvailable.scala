@@ -15,19 +15,15 @@ trait NetworkAvailable extends StObject {
 }
 object NetworkAvailable {
   
-  @scala.inline
-  def apply(networkAvailable: Boolean, networkType: String): NetworkAvailable = {
+  inline def apply(networkAvailable: Boolean, networkType: String): NetworkAvailable = {
     val __obj = js.Dynamic.literal(networkAvailable = networkAvailable.asInstanceOf[js.Any], networkType = networkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkAvailable]
   }
   
-  @scala.inline
-  implicit class NetworkAvailableMutableBuilder[Self <: NetworkAvailable] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkAvailable](x: Self) {
     
-    @scala.inline
-    def setNetworkAvailable(value: Boolean): Self = StObject.set(x, "networkAvailable", value.asInstanceOf[js.Any])
+    inline def setNetworkAvailable(value: Boolean): Self = StObject.set(x, "networkAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkType(value: String): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
+    inline def setNetworkType(value: String): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
   }
 }

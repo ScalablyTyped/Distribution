@@ -40,55 +40,39 @@ trait LogGroup extends StObject {
 }
 object LogGroup {
   
-  @scala.inline
-  def apply(): LogGroup = {
+  inline def apply(): LogGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogGroup]
   }
   
-  @scala.inline
-  implicit class LogGroupMutableBuilder[Self <: LogGroup] (val x: Self) extends AnyVal {
+  extension [Self <: LogGroup](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
+    inline def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
     
-    @scala.inline
-    def setMetricFilterCount(value: FilterCount): Self = StObject.set(x, "metricFilterCount", value.asInstanceOf[js.Any])
+    inline def setMetricFilterCount(value: FilterCount): Self = StObject.set(x, "metricFilterCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricFilterCountUndefined: Self = StObject.set(x, "metricFilterCount", js.undefined)
+    inline def setMetricFilterCountUndefined: Self = StObject.set(x, "metricFilterCount", js.undefined)
     
-    @scala.inline
-    def setRetentionInDays(value: Days): Self = StObject.set(x, "retentionInDays", value.asInstanceOf[js.Any])
+    inline def setRetentionInDays(value: Days): Self = StObject.set(x, "retentionInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionInDaysUndefined: Self = StObject.set(x, "retentionInDays", js.undefined)
+    inline def setRetentionInDaysUndefined: Self = StObject.set(x, "retentionInDays", js.undefined)
     
-    @scala.inline
-    def setStoredBytes(value: StoredBytes): Self = StObject.set(x, "storedBytes", value.asInstanceOf[js.Any])
+    inline def setStoredBytes(value: StoredBytes): Self = StObject.set(x, "storedBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoredBytesUndefined: Self = StObject.set(x, "storedBytes", js.undefined)
+    inline def setStoredBytesUndefined: Self = StObject.set(x, "storedBytes", js.undefined)
   }
 }

@@ -55,35 +55,27 @@ trait ILabel
 }
 object ILabel {
   
-  @scala.inline
-  def apply(): ILabel = {
+  inline def apply(): ILabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ILabel]
   }
   
-  @scala.inline
-  implicit class ILabelMutableBuilder[Self <: ILabel] (val x: Self) extends AnyVal {
+  extension [Self <: ILabel](x: Self) {
     
-    @scala.inline
-    def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setOnCreateLabel(
+    inline def setOnCreateLabel(
       value: (/* storeItem */ js.UndefOr[IModel], /* item */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], /* display */ js.UndefOr[String]) => ISprite
     ): Self = StObject.set(x, "onCreateLabel", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnCreateLabelUndefined: Self = StObject.set(x, "onCreateLabel", js.undefined)
+    inline def setOnCreateLabelUndefined: Self = StObject.set(x, "onCreateLabel", js.undefined)
     
-    @scala.inline
-    def setOnPlaceLabel(
+    inline def setOnPlaceLabel(
       value: (/* label */ js.UndefOr[ISprite], /* storeItem */ js.UndefOr[IModel], /* item */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], /* display */ js.UndefOr[String], /* animate */ js.UndefOr[Boolean], /* index */ js.UndefOr[Double]) => Unit
     ): Self = StObject.set(x, "onPlaceLabel", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setOnPlaceLabelUndefined: Self = StObject.set(x, "onPlaceLabel", js.undefined)
+    inline def setOnPlaceLabelUndefined: Self = StObject.set(x, "onPlaceLabel", js.undefined)
   }
 }

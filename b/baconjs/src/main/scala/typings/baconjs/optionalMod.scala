@@ -17,42 +17,32 @@ object optionalMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def filter(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")().asInstanceOf[js.Any]
+    inline def filter(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")().asInstanceOf[js.Any]
     
-    @scala.inline
-    def forEach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forEach")().asInstanceOf[Unit]
+    inline def forEach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forEach")().asInstanceOf[Unit]
     
-    @scala.inline
-    def get(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[scala.Nothing]
+    inline def get(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[scala.Nothing]
     
-    @scala.inline
-    def getOrElse[V](value: V): V = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(value.asInstanceOf[js.Any]).asInstanceOf[V]
+    inline def getOrElse[V](value: V): V = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(value.asInstanceOf[js.Any]).asInstanceOf[V]
     
-    @scala.inline
-    def inspect(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inspect")().asInstanceOf[String]
+    inline def inspect(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inspect")().asInstanceOf[String]
     
     @JSImport("baconjs/types/optional", "None.isDefined")
     @js.native
     def isDefined: Boolean = js.native
-    @scala.inline
-    def isDefined_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDefined")(x.asInstanceOf[js.Any])
+    inline def isDefined_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDefined")(x.asInstanceOf[js.Any])
     
     @JSImport("baconjs/types/optional", "None._isNone")
     @js.native
     def isNone: Boolean = js.native
     
-    @scala.inline
-    def isNone_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isNone")(x.asInstanceOf[js.Any])
+    inline def isNone_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isNone")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def map(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("map")().asInstanceOf[js.Any]
+    inline def map(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("map")().asInstanceOf[js.Any]
     
-    @scala.inline
-    def toArray(): js.Array[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")().asInstanceOf[js.Array[scala.Nothing]]
+    inline def toArray(): js.Array[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")().asInstanceOf[js.Array[scala.Nothing]]
     
-    @scala.inline
-    def toString_(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[String]
+    inline def toString_(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[String]
   }
   
   /** @hidden */
@@ -92,16 +82,12 @@ object optionalMod {
     var value: V = js.native
   }
   
-  @scala.inline
-  def isNone(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNone(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def none[T](): Option[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("none")().asInstanceOf[Option[T]]
+  inline def none[T](): Option[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("none")().asInstanceOf[Option[T]]
   
-  @scala.inline
-  def toOption[V](v: V): Option[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("toOption")(v.asInstanceOf[js.Any]).asInstanceOf[Option[V]]
-  @scala.inline
-  def toOption[V](v: Option[V]): Option[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("toOption")(v.asInstanceOf[js.Any]).asInstanceOf[Option[V]]
+  inline def toOption[V](v: V): Option[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("toOption")(v.asInstanceOf[js.Any]).asInstanceOf[Option[V]]
+  inline def toOption[V](v: Option[V]): Option[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("toOption")(v.asInstanceOf[js.Any]).asInstanceOf[Option[V]]
   
   trait Option[V] extends StObject {
     
@@ -123,8 +109,7 @@ object optionalMod {
   }
   object Option {
     
-    @scala.inline
-    def apply[V](
+    inline def apply[V](
       filter: js.Function1[/* value */ V, Boolean] => Option[V],
       forEach: js.Function1[/* value */ V, js.Any] => Unit,
       get: () => V,
@@ -138,32 +123,23 @@ object optionalMod {
       __obj.asInstanceOf[Option[V]]
     }
     
-    @scala.inline
-    implicit class OptionMutableBuilder[Self <: Option[?], V] (val x: Self & Option[V]) extends AnyVal {
+    extension [Self <: Option[?], V](x: Self & Option[V]) {
       
-      @scala.inline
-      def setFilter(value: js.Function1[/* value */ V, Boolean] => Option[V]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: js.Function1[/* value */ V, Boolean] => Option[V]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForEach(value: js.Function1[/* value */ V, js.Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: js.Function1[/* value */ V, js.Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: () => V): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => V): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOrElse(value: V => V): Self = StObject.set(x, "getOrElse", js.Any.fromFunction1(value))
+      inline def setGetOrElse(value: V => V): Self = StObject.set(x, "getOrElse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
+      inline def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDefined(value: Boolean): Self = StObject.set(x, "isDefined", value.asInstanceOf[js.Any])
+      inline def setIsDefined(value: Boolean): Self = StObject.set(x, "isDefined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: js.Function1[/* value */ V, js.Any] => Option[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Function1[/* value */ V, js.Any] => Option[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToArray(value: () => js.Array[V]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+      inline def setToArray(value: () => js.Array[V]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
     }
   }
 }

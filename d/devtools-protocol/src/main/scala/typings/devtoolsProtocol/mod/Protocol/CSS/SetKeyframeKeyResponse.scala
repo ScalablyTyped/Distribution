@@ -13,16 +13,13 @@ trait SetKeyframeKeyResponse extends StObject {
 }
 object SetKeyframeKeyResponse {
   
-  @scala.inline
-  def apply(keyText: Value): SetKeyframeKeyResponse = {
+  inline def apply(keyText: Value): SetKeyframeKeyResponse = {
     val __obj = js.Dynamic.literal(keyText = keyText.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetKeyframeKeyResponse]
   }
   
-  @scala.inline
-  implicit class SetKeyframeKeyResponseMutableBuilder[Self <: SetKeyframeKeyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SetKeyframeKeyResponse](x: Self) {
     
-    @scala.inline
-    def setKeyText(value: Value): Self = StObject.set(x, "keyText", value.asInstanceOf[js.Any])
+    inline def setKeyText(value: Value): Self = StObject.set(x, "keyText", value.asInstanceOf[js.Any])
   }
 }

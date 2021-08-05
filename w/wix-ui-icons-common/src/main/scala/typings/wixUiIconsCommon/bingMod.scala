@@ -22,20 +22,16 @@ object bingMod extends Shortcut {
   }
   object BingProps {
     
-    @scala.inline
-    def apply(): BingProps = {
+    inline def apply(): BingProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BingProps]
     }
     
-    @scala.inline
-    implicit class BingPropsMutableBuilder[Self <: BingProps] (val x: Self) extends AnyVal {
+    extension [Self <: BingProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

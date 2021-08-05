@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "Period")
 @js.native
-class Period protected () extends TemporalAmount {
+/* private */ class Period () extends TemporalAmount {
   
   def chronology(): IsoChronology = js.native
   
@@ -64,42 +64,32 @@ object Period {
   @JSImport("js-joda", "Period.ZERO")
   @js.native
   def ZERO: Period = js.native
-  @scala.inline
-  def ZERO_=(x: Period): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+  inline def ZERO_=(x: Period): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def between(startDate: LocalDate, endDate: LocalDate): Period = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[Period]
+  inline def between(startDate: LocalDate, endDate: LocalDate): Period = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[Period]
   
   /* static member */
-  @scala.inline
-  def create(years: Double, months: Double, days: Double): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(years.asInstanceOf[js.Any], months.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Duration]
+  inline def create(years: Double, months: Double, days: Double): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(years.asInstanceOf[js.Any], months.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Duration]
   
   /* static member */
-  @scala.inline
-  def from(amount: TemporalAmount): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(amount.asInstanceOf[js.Any]).asInstanceOf[Period]
+  inline def from(amount: TemporalAmount): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(amount.asInstanceOf[js.Any]).asInstanceOf[Period]
   
   /* static member */
-  @scala.inline
-  def of(years: Double, months: Double, days: Double): Period = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(years.asInstanceOf[js.Any], months.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Period]
+  inline def of(years: Double, months: Double, days: Double): Period = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(years.asInstanceOf[js.Any], months.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Period]
   
   /* static member */
-  @scala.inline
-  def ofDays(days: Double): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("ofDays")(days.asInstanceOf[js.Any]).asInstanceOf[Period]
+  inline def ofDays(days: Double): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("ofDays")(days.asInstanceOf[js.Any]).asInstanceOf[Period]
   
   /* static member */
-  @scala.inline
-  def ofMonths(months: Double): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("ofMonths")(months.asInstanceOf[js.Any]).asInstanceOf[Period]
+  inline def ofMonths(months: Double): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("ofMonths")(months.asInstanceOf[js.Any]).asInstanceOf[Period]
   
   /* static member */
-  @scala.inline
-  def ofWeeks(weeks: Double): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("ofWeeks")(weeks.asInstanceOf[js.Any]).asInstanceOf[Period]
+  inline def ofWeeks(weeks: Double): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("ofWeeks")(weeks.asInstanceOf[js.Any]).asInstanceOf[Period]
   
   /* static member */
-  @scala.inline
-  def ofYears(years: Double): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("ofYears")(years.asInstanceOf[js.Any]).asInstanceOf[Period]
+  inline def ofYears(years: Double): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("ofYears")(years.asInstanceOf[js.Any]).asInstanceOf[Period]
   
   /* static member */
-  @scala.inline
-  def parse(text: String): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Period]
+  inline def parse(text: String): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Period]
 }

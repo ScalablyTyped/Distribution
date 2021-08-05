@@ -18,28 +18,21 @@ trait OpsEntityItem extends StObject {
 }
 object OpsEntityItem {
   
-  @scala.inline
-  def apply(): OpsEntityItem = {
+  inline def apply(): OpsEntityItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpsEntityItem]
   }
   
-  @scala.inline
-  implicit class OpsEntityItemMutableBuilder[Self <: OpsEntityItem] (val x: Self) extends AnyVal {
+  extension [Self <: OpsEntityItem](x: Self) {
     
-    @scala.inline
-    def setCaptureTime(value: OpsEntityItemCaptureTime): Self = StObject.set(x, "CaptureTime", value.asInstanceOf[js.Any])
+    inline def setCaptureTime(value: OpsEntityItemCaptureTime): Self = StObject.set(x, "CaptureTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureTimeUndefined: Self = StObject.set(x, "CaptureTime", js.undefined)
+    inline def setCaptureTimeUndefined: Self = StObject.set(x, "CaptureTime", js.undefined)
     
-    @scala.inline
-    def setContent(value: OpsEntityItemEntryList): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: OpsEntityItemEntryList): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
-    @scala.inline
-    def setContentVarargs(value: OpsEntityItemEntry*): Self = StObject.set(x, "Content", js.Array(value :_*))
+    inline def setContentVarargs(value: OpsEntityItemEntry*): Self = StObject.set(x, "Content", js.Array(value :_*))
   }
 }

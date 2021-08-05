@@ -39,8 +39,7 @@ trait PickStyledComponentBaseanDefaultProps
 }
 object PickStyledComponentBaseanDefaultProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DollarDollartypeof: js.Symbol,
     withComponent: /* component */ AnyStyledComponent => StyledComponent[
       StyledComponentInnerComponent[AnyStyledComponent], 
@@ -54,32 +53,23 @@ object PickStyledComponentBaseanDefaultProps {
     __obj.asInstanceOf[PickStyledComponentBaseanDefaultProps]
   }
   
-  @scala.inline
-  implicit class PickStyledComponentBaseanDefaultPropsMutableBuilder[Self <: PickStyledComponentBaseanDefaultProps] (val x: Self) extends AnyVal {
+  extension [Self <: PickStyledComponentBaseanDefaultProps](x: Self) {
     
-    @scala.inline
-    def setDefaultProps(value: Partial[StyledComponentProps[js.Any, js.Any, js.Any, scala.Nothing]]): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: Partial[StyledComponentProps[js.Any, js.Any, js.Any, scala.Nothing]]): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
+    inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setDollarDollartypeof(value: js.Symbol): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
+    inline def setDollarDollartypeof(value: js.Symbol): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropTypes(value: WeakValidationMap[StyledComponentProps[js.Any, js.Any, js.Any, scala.Nothing]]): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
+    inline def setPropTypes(value: WeakValidationMap[StyledComponentProps[js.Any, js.Any, js.Any, scala.Nothing]]): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropTypesUndefined: Self = StObject.set(x, "propTypes", js.undefined)
+    inline def setPropTypesUndefined: Self = StObject.set(x, "propTypes", js.undefined)
     
-    @scala.inline
-    def setWithComponent(
+    inline def setWithComponent(
       value: /* component */ AnyStyledComponent => StyledComponent[
           StyledComponentInnerComponent[AnyStyledComponent], 
           js.Any, 

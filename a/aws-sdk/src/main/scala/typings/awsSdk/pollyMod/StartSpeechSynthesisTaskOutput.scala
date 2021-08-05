@@ -13,19 +13,15 @@ trait StartSpeechSynthesisTaskOutput extends StObject {
 }
 object StartSpeechSynthesisTaskOutput {
   
-  @scala.inline
-  def apply(): StartSpeechSynthesisTaskOutput = {
+  inline def apply(): StartSpeechSynthesisTaskOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartSpeechSynthesisTaskOutput]
   }
   
-  @scala.inline
-  implicit class StartSpeechSynthesisTaskOutputMutableBuilder[Self <: StartSpeechSynthesisTaskOutput] (val x: Self) extends AnyVal {
+  extension [Self <: StartSpeechSynthesisTaskOutput](x: Self) {
     
-    @scala.inline
-    def setSynthesisTask(value: SynthesisTask): Self = StObject.set(x, "SynthesisTask", value.asInstanceOf[js.Any])
+    inline def setSynthesisTask(value: SynthesisTask): Self = StObject.set(x, "SynthesisTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynthesisTaskUndefined: Self = StObject.set(x, "SynthesisTask", js.undefined)
+    inline def setSynthesisTaskUndefined: Self = StObject.set(x, "SynthesisTask", js.undefined)
   }
 }

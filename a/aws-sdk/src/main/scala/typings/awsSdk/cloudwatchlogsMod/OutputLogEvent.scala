@@ -23,31 +23,23 @@ trait OutputLogEvent extends StObject {
 }
 object OutputLogEvent {
   
-  @scala.inline
-  def apply(): OutputLogEvent = {
+  inline def apply(): OutputLogEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputLogEvent]
   }
   
-  @scala.inline
-  implicit class OutputLogEventMutableBuilder[Self <: OutputLogEvent] (val x: Self) extends AnyVal {
+  extension [Self <: OutputLogEvent](x: Self) {
     
-    @scala.inline
-    def setIngestionTime(value: Timestamp): Self = StObject.set(x, "ingestionTime", value.asInstanceOf[js.Any])
+    inline def setIngestionTime(value: Timestamp): Self = StObject.set(x, "ingestionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngestionTimeUndefined: Self = StObject.set(x, "ingestionTime", js.undefined)
+    inline def setIngestionTimeUndefined: Self = StObject.set(x, "ingestionTime", js.undefined)
     
-    @scala.inline
-    def setMessage(value: EventMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: EventMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

@@ -19,59 +19,46 @@ object checkMod {
     @JSImport("meteor/check", "Match.Any")
     @js.native
     def Any: js.Any = js.native
-    @scala.inline
-    def Any_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Any")(x.asInstanceOf[js.Any])
+    inline def Any_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Any")(x.asInstanceOf[js.Any])
     
     @JSImport("meteor/check", "Match.Boolean")
     @js.native
     def Boolean: js.Any = js.native
-    @scala.inline
-    def Boolean_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
+    inline def Boolean_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
     
     @JSImport("meteor/check", "Match.Integer")
     @js.native
     def Integer: js.Any = js.native
-    @scala.inline
-    def Integer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
+    inline def Integer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Maybe(pattern: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Maybe")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def Maybe(pattern: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Maybe")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("meteor/check", "Match.Object")
     @js.native
     def Object: js.Any = js.native
     
-    @scala.inline
-    def ObjectIncluding(dico: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ObjectIncluding")(dico.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def ObjectIncluding(dico: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ObjectIncluding")(dico.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def Object_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
+    inline def Object_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def OneOf(patterns: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("OneOf")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def OneOf(patterns: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("OneOf")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def Optional(pattern: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Optional")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def Optional(pattern: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Optional")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("meteor/check", "Match.String")
     @js.native
     def String: js.Any = js.native
-    @scala.inline
-    def String_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
+    inline def String_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Where(condition: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Where")(condition.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def Where(condition: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Where")(condition.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def test(value: js.Any, pattern: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def test(value: js.Any, pattern: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("meteor/check", "Match.undefined")
     @js.native
     def undefined: js.Any = js.native
-    @scala.inline
-    def undefined_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefined")(x.asInstanceOf[js.Any])
+    inline def undefined_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefined")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def check(value: js.Any, pattern: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def check(value: js.Any, pattern: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

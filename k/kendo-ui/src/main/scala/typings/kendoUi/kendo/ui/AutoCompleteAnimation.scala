@@ -12,25 +12,19 @@ trait AutoCompleteAnimation extends StObject {
 }
 object AutoCompleteAnimation {
   
-  @scala.inline
-  def apply(): AutoCompleteAnimation = {
+  inline def apply(): AutoCompleteAnimation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoCompleteAnimation]
   }
   
-  @scala.inline
-  implicit class AutoCompleteAnimationMutableBuilder[Self <: AutoCompleteAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: AutoCompleteAnimation](x: Self) {
     
-    @scala.inline
-    def setClose(value: AutoCompleteAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: AutoCompleteAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setOpen(value: AutoCompleteAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: AutoCompleteAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

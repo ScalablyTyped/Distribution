@@ -58,38 +58,29 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def of[T](elem: T): typings.streamjs.Stream.Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.streamjs.Stream.Optional[T]]
+      inline def of[T](elem: T): typings.streamjs.Stream.Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.streamjs.Stream.Optional[T]]
       
-      @scala.inline
-      def ofNullable[T](elem: T): typings.streamjs.Stream.Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.streamjs.Stream.Optional[T]]
+      inline def ofNullable[T](elem: T): typings.streamjs.Stream.Optional[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofNullable")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.streamjs.Stream.Optional[T]]
     }
     
     /* static member */
-    @scala.inline
-    def from(str: String): typings.streamjs.Stream[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(str.asInstanceOf[js.Any]).asInstanceOf[typings.streamjs.Stream[String]]
+    inline def from(str: String): typings.streamjs.Stream[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(str.asInstanceOf[js.Any]).asInstanceOf[typings.streamjs.Stream[String]]
     /* static member */
-    @scala.inline
-    def from[T](elems: js.Array[T]): typings.streamjs.Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(elems.asInstanceOf[js.Any]).asInstanceOf[typings.streamjs.Stream[T]]
+    inline def from[T](elems: js.Array[T]): typings.streamjs.Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(elems.asInstanceOf[js.Any]).asInstanceOf[typings.streamjs.Stream[T]]
     
     /* static member */
-    @scala.inline
-    def generate[T](supplier: Supplier[T]): typings.streamjs.Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(supplier.asInstanceOf[js.Any]).asInstanceOf[typings.streamjs.Stream[T]]
+    inline def generate[T](supplier: Supplier[T]): typings.streamjs.Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(supplier.asInstanceOf[js.Any]).asInstanceOf[typings.streamjs.Stream[T]]
     
     /* static member */
-    @scala.inline
-    def iterate[T](seed: T, fn: js.Function): typings.streamjs.Stream[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(seed.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.streamjs.Stream[T]]
+    inline def iterate[T](seed: T, fn: js.Function): typings.streamjs.Stream[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(seed.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.streamjs.Stream[T]]
     
     /* static member */
-    @scala.inline
-    def of[T](elems: T*): typings.streamjs.Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(elems.asInstanceOf[js.Any]).asInstanceOf[typings.streamjs.Stream[T]]
+    inline def of[T](elems: T*): typings.streamjs.Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(elems.asInstanceOf[js.Any]).asInstanceOf[typings.streamjs.Stream[T]]
     
     /* static member */
-    @scala.inline
-    def range(startInclusive: Double, endExclusive: Double): typings.streamjs.Stream[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(startInclusive.asInstanceOf[js.Any], endExclusive.asInstanceOf[js.Any])).asInstanceOf[typings.streamjs.Stream[Double]]
+    inline def range(startInclusive: Double, endExclusive: Double): typings.streamjs.Stream[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(startInclusive.asInstanceOf[js.Any], endExclusive.asInstanceOf[js.Any])).asInstanceOf[typings.streamjs.Stream[Double]]
     
     /* static member */
-    @scala.inline
-    def rangeClosed(startInclusive: Double, endInclusive: Double): typings.streamjs.Stream[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeClosed")(startInclusive.asInstanceOf[js.Any], endInclusive.asInstanceOf[js.Any])).asInstanceOf[typings.streamjs.Stream[Double]]
+    inline def rangeClosed(startInclusive: Double, endInclusive: Double): typings.streamjs.Stream[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rangeClosed")(startInclusive.asInstanceOf[js.Any], endInclusive.asInstanceOf[js.Any])).asInstanceOf[typings.streamjs.Stream[Double]]
   }
 }

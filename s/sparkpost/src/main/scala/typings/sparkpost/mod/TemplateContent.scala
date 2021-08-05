@@ -30,37 +30,27 @@ trait TemplateContent extends StObject {
 }
 object TemplateContent {
   
-  @scala.inline
-  def apply(from: Address | String, html: String, subject: String, text: String): TemplateContent = {
+  inline def apply(from: Address | String, html: String, subject: String, text: String): TemplateContent = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateContent]
   }
   
-  @scala.inline
-  implicit class TemplateContentMutableBuilder[Self <: TemplateContent] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateContent](x: Self) {
     
-    @scala.inline
-    def setFrom(value: Address | String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Address | String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReply_to(value: String): Self = StObject.set(x, "reply_to", value.asInstanceOf[js.Any])
+    inline def setReply_to(value: String): Self = StObject.set(x, "reply_to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReply_toUndefined: Self = StObject.set(x, "reply_to", js.undefined)
+    inline def setReply_toUndefined: Self = StObject.set(x, "reply_to", js.undefined)
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

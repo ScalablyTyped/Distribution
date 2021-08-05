@@ -18,19 +18,15 @@ trait DeleteSubscriptionFilterRequest extends StObject {
 }
 object DeleteSubscriptionFilterRequest {
   
-  @scala.inline
-  def apply(filterName: FilterName, logGroupName: LogGroupName): DeleteSubscriptionFilterRequest = {
+  inline def apply(filterName: FilterName, logGroupName: LogGroupName): DeleteSubscriptionFilterRequest = {
     val __obj = js.Dynamic.literal(filterName = filterName.asInstanceOf[js.Any], logGroupName = logGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSubscriptionFilterRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSubscriptionFilterRequestMutableBuilder[Self <: DeleteSubscriptionFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSubscriptionFilterRequest](x: Self) {
     
-    @scala.inline
-    def setFilterName(value: FilterName): Self = StObject.set(x, "filterName", value.asInstanceOf[js.Any])
+    inline def setFilterName(value: FilterName): Self = StObject.set(x, "filterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
   }
 }

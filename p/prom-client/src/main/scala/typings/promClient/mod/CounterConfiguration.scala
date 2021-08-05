@@ -18,43 +18,31 @@ trait CounterConfiguration[T /* <: String */] extends StObject {
 }
 object CounterConfiguration {
   
-  @scala.inline
-  def apply[T /* <: String */](help: String, name: String): CounterConfiguration[T] = {
+  inline def apply[T /* <: String */](help: String, name: String): CounterConfiguration[T] = {
     val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CounterConfiguration[T]]
   }
   
-  @scala.inline
-  implicit class CounterConfigurationMutableBuilder[Self <: CounterConfiguration[?], T /* <: String */] (val x: Self & CounterConfiguration[T]) extends AnyVal {
+  extension [Self <: CounterConfiguration[?], T /* <: String */](x: Self & CounterConfiguration[T]) {
     
-    @scala.inline
-    def setAggregator(value: Aggregator): Self = StObject.set(x, "aggregator", value.asInstanceOf[js.Any])
+    inline def setAggregator(value: Aggregator): Self = StObject.set(x, "aggregator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregatorUndefined: Self = StObject.set(x, "aggregator", js.undefined)
+    inline def setAggregatorUndefined: Self = StObject.set(x, "aggregator", js.undefined)
     
-    @scala.inline
-    def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+    inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelNames(value: js.Array[T]): Self = StObject.set(x, "labelNames", value.asInstanceOf[js.Any])
+    inline def setLabelNames(value: js.Array[T]): Self = StObject.set(x, "labelNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelNamesUndefined: Self = StObject.set(x, "labelNames", js.undefined)
+    inline def setLabelNamesUndefined: Self = StObject.set(x, "labelNames", js.undefined)
     
-    @scala.inline
-    def setLabelNamesVarargs(value: T*): Self = StObject.set(x, "labelNames", js.Array(value :_*))
+    inline def setLabelNamesVarargs(value: T*): Self = StObject.set(x, "labelNames", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisters(value: js.Array[Registry]): Self = StObject.set(x, "registers", value.asInstanceOf[js.Any])
+    inline def setRegisters(value: js.Array[Registry]): Self = StObject.set(x, "registers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistersUndefined: Self = StObject.set(x, "registers", js.undefined)
+    inline def setRegistersUndefined: Self = StObject.set(x, "registers", js.undefined)
     
-    @scala.inline
-    def setRegistersVarargs(value: Registry*): Self = StObject.set(x, "registers", js.Array(value :_*))
+    inline def setRegistersVarargs(value: Registry*): Self = StObject.set(x, "registers", js.Array(value :_*))
   }
 }

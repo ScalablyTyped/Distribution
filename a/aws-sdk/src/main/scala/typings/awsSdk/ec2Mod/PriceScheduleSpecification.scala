@@ -23,31 +23,23 @@ trait PriceScheduleSpecification extends StObject {
 }
 object PriceScheduleSpecification {
   
-  @scala.inline
-  def apply(): PriceScheduleSpecification = {
+  inline def apply(): PriceScheduleSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PriceScheduleSpecification]
   }
   
-  @scala.inline
-  implicit class PriceScheduleSpecificationMutableBuilder[Self <: PriceScheduleSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: PriceScheduleSpecification](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: CurrencyCodeValues): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: CurrencyCodeValues): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
-    @scala.inline
-    def setPrice(value: Double): Self = StObject.set(x, "Price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: Double): Self = StObject.set(x, "Price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceUndefined: Self = StObject.set(x, "Price", js.undefined)
+    inline def setPriceUndefined: Self = StObject.set(x, "Price", js.undefined)
     
-    @scala.inline
-    def setTerm(value: Long): Self = StObject.set(x, "Term", value.asInstanceOf[js.Any])
+    inline def setTerm(value: Long): Self = StObject.set(x, "Term", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermUndefined: Self = StObject.set(x, "Term", js.undefined)
+    inline def setTermUndefined: Self = StObject.set(x, "Term", js.undefined)
   }
 }

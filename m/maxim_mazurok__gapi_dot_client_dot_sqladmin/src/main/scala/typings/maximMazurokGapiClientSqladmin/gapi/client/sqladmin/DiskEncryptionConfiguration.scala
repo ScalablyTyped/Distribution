@@ -14,25 +14,19 @@ trait DiskEncryptionConfiguration extends StObject {
 }
 object DiskEncryptionConfiguration {
   
-  @scala.inline
-  def apply(): DiskEncryptionConfiguration = {
+  inline def apply(): DiskEncryptionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiskEncryptionConfiguration]
   }
   
-  @scala.inline
-  implicit class DiskEncryptionConfigurationMutableBuilder[Self <: DiskEncryptionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DiskEncryptionConfiguration](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
+    inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
+    inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
   }
 }

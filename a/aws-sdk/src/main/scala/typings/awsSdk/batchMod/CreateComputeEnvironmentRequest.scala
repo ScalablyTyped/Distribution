@@ -38,41 +38,30 @@ trait CreateComputeEnvironmentRequest extends StObject {
 }
 object CreateComputeEnvironmentRequest {
   
-  @scala.inline
-  def apply(computeEnvironmentName: String, serviceRole: String, `type`: CEType): CreateComputeEnvironmentRequest = {
+  inline def apply(computeEnvironmentName: String, serviceRole: String, `type`: CEType): CreateComputeEnvironmentRequest = {
     val __obj = js.Dynamic.literal(computeEnvironmentName = computeEnvironmentName.asInstanceOf[js.Any], serviceRole = serviceRole.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateComputeEnvironmentRequest]
   }
   
-  @scala.inline
-  implicit class CreateComputeEnvironmentRequestMutableBuilder[Self <: CreateComputeEnvironmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateComputeEnvironmentRequest](x: Self) {
     
-    @scala.inline
-    def setComputeEnvironmentName(value: String): Self = StObject.set(x, "computeEnvironmentName", value.asInstanceOf[js.Any])
+    inline def setComputeEnvironmentName(value: String): Self = StObject.set(x, "computeEnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeResources(value: ComputeResource): Self = StObject.set(x, "computeResources", value.asInstanceOf[js.Any])
+    inline def setComputeResources(value: ComputeResource): Self = StObject.set(x, "computeResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeResourcesUndefined: Self = StObject.set(x, "computeResources", js.undefined)
+    inline def setComputeResourcesUndefined: Self = StObject.set(x, "computeResources", js.undefined)
     
-    @scala.inline
-    def setServiceRole(value: String): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
+    inline def setServiceRole(value: String): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: CEState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: CEState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagrisTagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagrisTagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setType(value: CEType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CEType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

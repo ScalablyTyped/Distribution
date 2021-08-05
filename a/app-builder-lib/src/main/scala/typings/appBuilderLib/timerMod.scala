@@ -22,13 +22,12 @@ object timerMod {
     
     def endAndGet(): String = js.native
     
-    val label: js.Any = js.native
+    /* private */ val label: js.Any = js.native
     
-    var start: js.Any = js.native
+    /* private */ var start: js.Any = js.native
   }
   
-  @scala.inline
-  def time(label: String): Timer = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(label.asInstanceOf[js.Any]).asInstanceOf[Timer]
+  inline def time(label: String): Timer = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(label.asInstanceOf[js.Any]).asInstanceOf[Timer]
   
   trait Timer extends StObject {
     
@@ -36,17 +35,14 @@ object timerMod {
   }
   object Timer {
     
-    @scala.inline
-    def apply(end: () => Unit): Timer = {
+    inline def apply(end: () => Unit): Timer = {
       val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end))
       __obj.asInstanceOf[Timer]
     }
     
-    @scala.inline
-    implicit class TimerMutableBuilder[Self <: Timer] (val x: Self) extends AnyVal {
+    extension [Self <: Timer](x: Self) {
       
-      @scala.inline
-      def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     }
   }
 }

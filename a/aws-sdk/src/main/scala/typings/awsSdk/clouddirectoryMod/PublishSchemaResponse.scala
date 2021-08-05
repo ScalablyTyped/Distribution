@@ -13,19 +13,15 @@ trait PublishSchemaResponse extends StObject {
 }
 object PublishSchemaResponse {
   
-  @scala.inline
-  def apply(): PublishSchemaResponse = {
+  inline def apply(): PublishSchemaResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublishSchemaResponse]
   }
   
-  @scala.inline
-  implicit class PublishSchemaResponseMutableBuilder[Self <: PublishSchemaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PublishSchemaResponse](x: Self) {
     
-    @scala.inline
-    def setPublishedSchemaArn(value: Arn): Self = StObject.set(x, "PublishedSchemaArn", value.asInstanceOf[js.Any])
+    inline def setPublishedSchemaArn(value: Arn): Self = StObject.set(x, "PublishedSchemaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedSchemaArnUndefined: Self = StObject.set(x, "PublishedSchemaArn", js.undefined)
+    inline def setPublishedSchemaArnUndefined: Self = StObject.set(x, "PublishedSchemaArn", js.undefined)
   }
 }

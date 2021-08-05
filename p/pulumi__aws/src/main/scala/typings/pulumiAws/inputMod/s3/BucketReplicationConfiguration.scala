@@ -19,22 +19,17 @@ trait BucketReplicationConfiguration extends StObject {
 }
 object BucketReplicationConfiguration {
   
-  @scala.inline
-  def apply(role: Input[String], rules: Input[js.Array[Input[BucketReplicationConfigurationRule]]]): BucketReplicationConfiguration = {
+  inline def apply(role: Input[String], rules: Input[js.Array[Input[BucketReplicationConfigurationRule]]]): BucketReplicationConfiguration = {
     val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketReplicationConfiguration]
   }
   
-  @scala.inline
-  implicit class BucketReplicationConfigurationMutableBuilder[Self <: BucketReplicationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: BucketReplicationConfiguration](x: Self) {
     
-    @scala.inline
-    def setRole(value: Input[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: Input[String]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRules(value: Input[js.Array[Input[BucketReplicationConfigurationRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: Input[js.Array[Input[BucketReplicationConfigurationRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesVarargs(value: Input[BucketReplicationConfigurationRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Input[BucketReplicationConfigurationRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

@@ -26,8 +26,7 @@ object styledStyledMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[Component /* <: ElementType[js.Any] */](Component: Component): ComponentCreator[Component] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentCreator[Component]]
+  inline def default[Component /* <: ElementType[js.Any] */](Component: Component): ComponentCreator[Component] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentCreator[Component]]
   
   type ComponentCreator[Component /* <: ElementType[js.Any] */] = js.Function2[
     /* styles */ CreateCSSProperties[ComponentPropsWithoutRef[Component]] | (js.Function1[
@@ -51,17 +50,14 @@ object styledStyledMod {
   }
   object StyledProps {
     
-    @scala.inline
-    def apply(className: String): StyledProps = {
+    inline def apply(className: String): StyledProps = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
       __obj.asInstanceOf[StyledProps]
     }
     
-    @scala.inline
-    implicit class StyledPropsMutableBuilder[Self <: StyledProps] (val x: Self) extends AnyVal {
+    extension [Self <: StyledProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     }
   }
 }

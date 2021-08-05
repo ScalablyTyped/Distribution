@@ -10,16 +10,13 @@ trait DeleteAutomaticTapeCreationPolicyInput extends StObject {
 }
 object DeleteAutomaticTapeCreationPolicyInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN): DeleteAutomaticTapeCreationPolicyInput = {
+  inline def apply(GatewayARN: GatewayARN): DeleteAutomaticTapeCreationPolicyInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAutomaticTapeCreationPolicyInput]
   }
   
-  @scala.inline
-  implicit class DeleteAutomaticTapeCreationPolicyInputMutableBuilder[Self <: DeleteAutomaticTapeCreationPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAutomaticTapeCreationPolicyInput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
   }
 }

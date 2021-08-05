@@ -9,10 +9,8 @@ object closestToIndexMod {
   
   object default {
     
-    @scala.inline
-    def apply(dateToCompare: Double, datesArray: js.Array[Date | Double]): Date = (^.asInstanceOf[js.Dynamic].apply(dateToCompare.asInstanceOf[js.Any], datesArray.asInstanceOf[js.Any])).asInstanceOf[Date]
-    @scala.inline
-    def apply(dateToCompare: Date, datesArray: js.Array[Date | Double]): Date = (^.asInstanceOf[js.Dynamic].apply(dateToCompare.asInstanceOf[js.Any], datesArray.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(dateToCompare: Double, datesArray: js.Array[Date | Double]): Date = (^.asInstanceOf[js.Dynamic].apply(dateToCompare.asInstanceOf[js.Any], datesArray.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(dateToCompare: Date, datesArray: js.Array[Date | Double]): Date = (^.asInstanceOf[js.Dynamic].apply(dateToCompare.asInstanceOf[js.Any], datesArray.asInstanceOf[js.Any])).asInstanceOf[Date]
     
     @JSImport("date-fns/closestTo/index", JSImport.Default)
     @js.native

@@ -16,19 +16,15 @@ trait LoadingOptions
 }
 object LoadingOptions {
   
-  @scala.inline
-  def apply(mask: Boolean, title: String): LoadingOptions = {
+  inline def apply(mask: Boolean, title: String): LoadingOptions = {
     val __obj = js.Dynamic.literal(mask = mask.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadingOptions]
   }
   
-  @scala.inline
-  implicit class LoadingOptionsMutableBuilder[Self <: LoadingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoadingOptions](x: Self) {
     
-    @scala.inline
-    def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait Back
 }
 object Back {
   
-  @scala.inline
-  def apply(config: Double => Elastic, getRatio: Double => Double): Back = {
+  inline def apply(config: Double => Elastic, getRatio: Double => Double): Back = {
     val __obj = js.Dynamic.literal(config = js.Any.fromFunction1(config), getRatio = js.Any.fromFunction1(getRatio))
     __obj.asInstanceOf[Back]
   }
   
-  @scala.inline
-  implicit class BackMutableBuilder[Self <: Back] (val x: Self) extends AnyVal {
+  extension [Self <: Back](x: Self) {
     
-    @scala.inline
-    def setConfig(value: Double => Elastic): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
+    inline def setConfig(value: Double => Elastic): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
   }
 }

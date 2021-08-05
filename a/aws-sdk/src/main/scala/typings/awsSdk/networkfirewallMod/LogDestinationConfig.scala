@@ -23,22 +23,17 @@ trait LogDestinationConfig extends StObject {
 }
 object LogDestinationConfig {
   
-  @scala.inline
-  def apply(LogDestination: LogDestinationMap, LogDestinationType: LogDestinationType, LogType: LogType): LogDestinationConfig = {
+  inline def apply(LogDestination: LogDestinationMap, LogDestinationType: LogDestinationType, LogType: LogType): LogDestinationConfig = {
     val __obj = js.Dynamic.literal(LogDestination = LogDestination.asInstanceOf[js.Any], LogDestinationType = LogDestinationType.asInstanceOf[js.Any], LogType = LogType.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogDestinationConfig]
   }
   
-  @scala.inline
-  implicit class LogDestinationConfigMutableBuilder[Self <: LogDestinationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LogDestinationConfig](x: Self) {
     
-    @scala.inline
-    def setLogDestination(value: LogDestinationMap): Self = StObject.set(x, "LogDestination", value.asInstanceOf[js.Any])
+    inline def setLogDestination(value: LogDestinationMap): Self = StObject.set(x, "LogDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogDestinationType(value: LogDestinationType): Self = StObject.set(x, "LogDestinationType", value.asInstanceOf[js.Any])
+    inline def setLogDestinationType(value: LogDestinationType): Self = StObject.set(x, "LogDestinationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogType(value: LogType): Self = StObject.set(x, "LogType", value.asInstanceOf[js.Any])
+    inline def setLogType(value: LogType): Self = StObject.set(x, "LogType", value.asInstanceOf[js.Any])
   }
 }

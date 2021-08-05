@@ -12,8 +12,7 @@ object reducerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function2[
+  inline def default(): js.Function2[
     /* state */ js.UndefOr[js.Array[Notification]], 
     /* action */ NotificationActions | InitReduxAction, 
     js.Array[Notification]
@@ -29,18 +28,15 @@ object reducerMod {
   }
   object InitReduxAction {
     
-    @scala.inline
-    def apply(`type`: String): InitReduxAction = {
+    inline def apply(`type`: String): InitReduxAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitReduxAction]
     }
     
-    @scala.inline
-    implicit class InitReduxActionMutableBuilder[Self <: InitReduxAction] (val x: Self) extends AnyVal {
+    extension [Self <: InitReduxAction](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

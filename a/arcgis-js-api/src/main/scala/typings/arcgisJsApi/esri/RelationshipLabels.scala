@@ -40,8 +40,7 @@ trait RelationshipLabels
 }
 object RelationshipLabels {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bottom: String,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -54,19 +53,14 @@ object RelationshipLabels {
     __obj.asInstanceOf[RelationshipLabels]
   }
   
-  @scala.inline
-  implicit class RelationshipLabelsMutableBuilder[Self <: RelationshipLabels] (val x: Self) extends AnyVal {
+  extension [Self <: RelationshipLabels](x: Self) {
     
-    @scala.inline
-    def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

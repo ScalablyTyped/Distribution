@@ -26,8 +26,7 @@ trait ContainerState extends StObject {
 }
 object ContainerState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     running: ContainerStateRunning,
     terminated: ContainerStateTerminated,
     waiting: ContainerStateWaiting
@@ -36,16 +35,12 @@ object ContainerState {
     __obj.asInstanceOf[ContainerState]
   }
   
-  @scala.inline
-  implicit class ContainerStateMutableBuilder[Self <: ContainerState] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerState](x: Self) {
     
-    @scala.inline
-    def setRunning(value: ContainerStateRunning): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+    inline def setRunning(value: ContainerStateRunning): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminated(value: ContainerStateTerminated): Self = StObject.set(x, "terminated", value.asInstanceOf[js.Any])
+    inline def setTerminated(value: ContainerStateTerminated): Self = StObject.set(x, "terminated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaiting(value: ContainerStateWaiting): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
+    inline def setWaiting(value: ContainerStateWaiting): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
   }
 }

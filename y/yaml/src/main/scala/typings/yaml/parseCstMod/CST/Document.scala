@@ -27,8 +27,7 @@ trait Document
 }
 object Document {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     anchor: Null,
     comment: Null,
     contents: js.Array[BlankLine | Comment | ContentNode],
@@ -46,31 +45,22 @@ object Document {
     __obj.asInstanceOf[Document]
   }
   
-  @scala.inline
-  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+  extension [Self <: Document](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: Null): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: Null): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: Null): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: Null): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContents(value: js.Array[BlankLine | Comment | ContentNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: js.Array[BlankLine | Comment | ContentNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentsVarargs(value: (BlankLine | Comment | ContentNode)*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: (BlankLine | Comment | ContentNode)*): Self = StObject.set(x, "contents", js.Array(value :_*))
     
-    @scala.inline
-    def setDirectives(value: js.Array[BlankLine | Comment | Directive]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    inline def setDirectives(value: js.Array[BlankLine | Comment | Directive]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectivesVarargs(value: (BlankLine | Comment | Directive)*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: (BlankLine | Comment | Directive)*): Self = StObject.set(x, "directives", js.Array(value :_*))
     
-    @scala.inline
-    def setTag(value: Null): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Null): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DOCUMENT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DOCUMENT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

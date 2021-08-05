@@ -30,23 +30,18 @@ object transformMod extends Shortcut {
   }
   object Props {
     
-    @scala.inline
-    def apply(transform: String => String): Props = {
+    inline def apply(transform: String => String): Props = {
       val __obj = js.Dynamic.literal(transform = js.Any.fromFunction1(transform))
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setTransform(value: String => String): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: String => String): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     }
   }
   

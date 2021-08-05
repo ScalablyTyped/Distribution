@@ -10,10 +10,8 @@ object parseRadiusMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(radius: js.Array[Double]): RadiusType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(radius.asInstanceOf[js.Any]).asInstanceOf[RadiusType]
-  @scala.inline
-  def default(radius: Double): RadiusType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(radius.asInstanceOf[js.Any]).asInstanceOf[RadiusType]
+  inline def default(radius: js.Array[Double]): RadiusType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(radius.asInstanceOf[js.Any]).asInstanceOf[RadiusType]
+  inline def default(radius: Double): RadiusType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(radius.asInstanceOf[js.Any]).asInstanceOf[RadiusType]
   
   trait RadiusType extends StObject {
     
@@ -27,26 +25,20 @@ object parseRadiusMod {
   }
   object RadiusType {
     
-    @scala.inline
-    def apply(r1: Double, r2: Double, r3: Double, r4: Double): RadiusType = {
+    inline def apply(r1: Double, r2: Double, r3: Double, r4: Double): RadiusType = {
       val __obj = js.Dynamic.literal(r1 = r1.asInstanceOf[js.Any], r2 = r2.asInstanceOf[js.Any], r3 = r3.asInstanceOf[js.Any], r4 = r4.asInstanceOf[js.Any])
       __obj.asInstanceOf[RadiusType]
     }
     
-    @scala.inline
-    implicit class RadiusTypeMutableBuilder[Self <: RadiusType] (val x: Self) extends AnyVal {
+    extension [Self <: RadiusType](x: Self) {
       
-      @scala.inline
-      def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
+      inline def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
+      inline def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR3(value: Double): Self = StObject.set(x, "r3", value.asInstanceOf[js.Any])
+      inline def setR3(value: Double): Self = StObject.set(x, "r3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR4(value: Double): Self = StObject.set(x, "r4", value.asInstanceOf[js.Any])
+      inline def setR4(value: Double): Self = StObject.set(x, "r4", value.asInstanceOf[js.Any])
     }
   }
 }

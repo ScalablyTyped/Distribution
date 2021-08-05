@@ -95,10 +95,8 @@ object ObjectTypeSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(openBraceToken: ISyntaxToken, closeBraceToken: ISyntaxToken): typings.typescriptServices.TypeScript.ObjectTypeSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(openBraceToken.asInstanceOf[js.Any], closeBraceToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ObjectTypeSyntax]
+  inline def create(openBraceToken: ISyntaxToken, closeBraceToken: ISyntaxToken): typings.typescriptServices.TypeScript.ObjectTypeSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(openBraceToken.asInstanceOf[js.Any], closeBraceToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ObjectTypeSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.ObjectTypeSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.ObjectTypeSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.ObjectTypeSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.ObjectTypeSyntax]
 }

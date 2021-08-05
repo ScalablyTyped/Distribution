@@ -12,22 +12,17 @@ trait Templateid extends StObject {
 }
 object Templateid {
   
-  @scala.inline
-  def apply(template_id: String): Templateid = {
+  inline def apply(template_id: String): Templateid = {
     val __obj = js.Dynamic.literal(template_id = template_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Templateid]
   }
   
-  @scala.inline
-  implicit class TemplateidMutableBuilder[Self <: Templateid] (val x: Self) extends AnyVal {
+  extension [Self <: Templateid](x: Self) {
     
-    @scala.inline
-    def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
+    inline def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse_draft_template(value: Boolean): Self = StObject.set(x, "use_draft_template", value.asInstanceOf[js.Any])
+    inline def setUse_draft_template(value: Boolean): Self = StObject.set(x, "use_draft_template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse_draft_templateUndefined: Self = StObject.set(x, "use_draft_template", js.undefined)
+    inline def setUse_draft_templateUndefined: Self = StObject.set(x, "use_draft_template", js.undefined)
   }
 }

@@ -43,55 +43,39 @@ trait SeriesMouseLeaveEventUIParam extends StObject {
 }
 object SeriesMouseLeaveEventUIParam {
   
-  @scala.inline
-  def apply(): SeriesMouseLeaveEventUIParam = {
+  inline def apply(): SeriesMouseLeaveEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesMouseLeaveEventUIParam]
   }
   
-  @scala.inline
-  implicit class SeriesMouseLeaveEventUIParamMutableBuilder[Self <: SeriesMouseLeaveEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesMouseLeaveEventUIParam](x: Self) {
     
-    @scala.inline
-    def setActualItemBrush(value: js.Any): Self = StObject.set(x, "actualItemBrush", value.asInstanceOf[js.Any])
+    inline def setActualItemBrush(value: js.Any): Self = StObject.set(x, "actualItemBrush", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActualItemBrushUndefined: Self = StObject.set(x, "actualItemBrush", js.undefined)
+    inline def setActualItemBrushUndefined: Self = StObject.set(x, "actualItemBrush", js.undefined)
     
-    @scala.inline
-    def setActualSeriesBrush(value: js.Any): Self = StObject.set(x, "actualSeriesBrush", value.asInstanceOf[js.Any])
+    inline def setActualSeriesBrush(value: js.Any): Self = StObject.set(x, "actualSeriesBrush", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActualSeriesBrushUndefined: Self = StObject.set(x, "actualSeriesBrush", js.undefined)
+    inline def setActualSeriesBrushUndefined: Self = StObject.set(x, "actualSeriesBrush", js.undefined)
     
-    @scala.inline
-    def setChart(value: js.Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: js.Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
+    inline def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
     
-    @scala.inline
-    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setPositionX(value: js.Any): Self = StObject.set(x, "positionX", value.asInstanceOf[js.Any])
+    inline def setPositionX(value: js.Any): Self = StObject.set(x, "positionX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionXUndefined: Self = StObject.set(x, "positionX", js.undefined)
+    inline def setPositionXUndefined: Self = StObject.set(x, "positionX", js.undefined)
     
-    @scala.inline
-    def setPositionY(value: js.Any): Self = StObject.set(x, "positionY", value.asInstanceOf[js.Any])
+    inline def setPositionY(value: js.Any): Self = StObject.set(x, "positionY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionYUndefined: Self = StObject.set(x, "positionY", js.undefined)
+    inline def setPositionYUndefined: Self = StObject.set(x, "positionY", js.undefined)
     
-    @scala.inline
-    def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
   }
 }

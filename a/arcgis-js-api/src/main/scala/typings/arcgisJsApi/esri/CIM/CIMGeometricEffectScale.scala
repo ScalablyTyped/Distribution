@@ -24,29 +24,22 @@ trait CIMGeometricEffectScale
 }
 object CIMGeometricEffectScale {
   
-  @scala.inline
-  def apply(): CIMGeometricEffectScale = {
+  inline def apply(): CIMGeometricEffectScale = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMGeometricEffectScale")
     __obj.asInstanceOf[CIMGeometricEffectScale]
   }
   
-  @scala.inline
-  implicit class CIMGeometricEffectScaleMutableBuilder[Self <: CIMGeometricEffectScale] (val x: Self) extends AnyVal {
+  extension [Self <: CIMGeometricEffectScale](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectScale): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectScale): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXScaleFactor(value: Double): Self = StObject.set(x, "XScaleFactor", value.asInstanceOf[js.Any])
+    inline def setXScaleFactor(value: Double): Self = StObject.set(x, "XScaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXScaleFactorUndefined: Self = StObject.set(x, "XScaleFactor", js.undefined)
+    inline def setXScaleFactorUndefined: Self = StObject.set(x, "XScaleFactor", js.undefined)
     
-    @scala.inline
-    def setYScaleFactor(value: Double): Self = StObject.set(x, "YScaleFactor", value.asInstanceOf[js.Any])
+    inline def setYScaleFactor(value: Double): Self = StObject.set(x, "YScaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYScaleFactorUndefined: Self = StObject.set(x, "YScaleFactor", js.undefined)
+    inline def setYScaleFactorUndefined: Self = StObject.set(x, "YScaleFactor", js.undefined)
   }
 }

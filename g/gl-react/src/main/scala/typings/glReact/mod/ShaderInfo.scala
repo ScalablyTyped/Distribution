@@ -12,19 +12,15 @@ trait ShaderInfo extends StObject {
 }
 object ShaderInfo {
   
-  @scala.inline
-  def apply(frag: String, vert: String): ShaderInfo = {
+  inline def apply(frag: String, vert: String): ShaderInfo = {
     val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any], vert = vert.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShaderInfo]
   }
   
-  @scala.inline
-  implicit class ShaderInfoMutableBuilder[Self <: ShaderInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ShaderInfo](x: Self) {
     
-    @scala.inline
-    def setFrag(value: String): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
+    inline def setFrag(value: String): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVert(value: String): Self = StObject.set(x, "vert", value.asInstanceOf[js.Any])
+    inline def setVert(value: String): Self = StObject.set(x, "vert", value.asInstanceOf[js.Any])
   }
 }

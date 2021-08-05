@@ -30,32 +30,24 @@ object typesDifferenceMod {
   }
   object Difference {
     
-    @scala.inline
-    def apply(): Difference = {
+    inline def apply(): Difference = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Difference]
     }
     
-    @scala.inline
-    implicit class DifferenceMutableBuilder[Self <: Difference] (val x: Self) extends AnyVal {
+    extension [Self <: Difference](x: Self) {
       
-      @scala.inline
-      def setAfterBlob(value: BlobMetadata): Self = StObject.set(x, "afterBlob", value.asInstanceOf[js.Any])
+      inline def setAfterBlob(value: BlobMetadata): Self = StObject.set(x, "afterBlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterBlobUndefined: Self = StObject.set(x, "afterBlob", js.undefined)
+      inline def setAfterBlobUndefined: Self = StObject.set(x, "afterBlob", js.undefined)
       
-      @scala.inline
-      def setBeforeBlob(value: BlobMetadata): Self = StObject.set(x, "beforeBlob", value.asInstanceOf[js.Any])
+      inline def setBeforeBlob(value: BlobMetadata): Self = StObject.set(x, "beforeBlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeBlobUndefined: Self = StObject.set(x, "beforeBlob", js.undefined)
+      inline def setBeforeBlobUndefined: Self = StObject.set(x, "beforeBlob", js.undefined)
       
-      @scala.inline
-      def setChangeType(value: A | M | D | String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+      inline def setChangeType(value: A | M | D | String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
+      inline def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
     }
   }
   
@@ -77,26 +69,20 @@ object typesDifferenceMod {
   }
   object UnmarshalledDifference {
     
-    @scala.inline
-    def apply(): UnmarshalledDifference = {
+    inline def apply(): UnmarshalledDifference = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledDifference]
     }
     
-    @scala.inline
-    implicit class UnmarshalledDifferenceMutableBuilder[Self <: UnmarshalledDifference] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledDifference](x: Self) {
       
-      @scala.inline
-      def setAfterBlob(value: UnmarshalledBlobMetadata): Self = StObject.set(x, "afterBlob", value.asInstanceOf[js.Any])
+      inline def setAfterBlob(value: UnmarshalledBlobMetadata): Self = StObject.set(x, "afterBlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterBlobUndefined: Self = StObject.set(x, "afterBlob", js.undefined)
+      inline def setAfterBlobUndefined: Self = StObject.set(x, "afterBlob", js.undefined)
       
-      @scala.inline
-      def setBeforeBlob(value: UnmarshalledBlobMetadata): Self = StObject.set(x, "beforeBlob", value.asInstanceOf[js.Any])
+      inline def setBeforeBlob(value: UnmarshalledBlobMetadata): Self = StObject.set(x, "beforeBlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeBlobUndefined: Self = StObject.set(x, "beforeBlob", js.undefined)
+      inline def setBeforeBlobUndefined: Self = StObject.set(x, "beforeBlob", js.undefined)
     }
   }
 }

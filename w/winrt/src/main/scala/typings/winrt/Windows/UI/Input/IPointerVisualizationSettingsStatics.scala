@@ -10,16 +10,13 @@ trait IPointerVisualizationSettingsStatics extends StObject {
 }
 object IPointerVisualizationSettingsStatics {
   
-  @scala.inline
-  def apply(getForCurrentView: () => PointerVisualizationSettings): IPointerVisualizationSettingsStatics = {
+  inline def apply(getForCurrentView: () => PointerVisualizationSettings): IPointerVisualizationSettingsStatics = {
     val __obj = js.Dynamic.literal(getForCurrentView = js.Any.fromFunction0(getForCurrentView))
     __obj.asInstanceOf[IPointerVisualizationSettingsStatics]
   }
   
-  @scala.inline
-  implicit class IPointerVisualizationSettingsStaticsMutableBuilder[Self <: IPointerVisualizationSettingsStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IPointerVisualizationSettingsStatics](x: Self) {
     
-    @scala.inline
-    def setGetForCurrentView(value: () => PointerVisualizationSettings): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
+    inline def setGetForCurrentView(value: () => PointerVisualizationSettings): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
   }
 }

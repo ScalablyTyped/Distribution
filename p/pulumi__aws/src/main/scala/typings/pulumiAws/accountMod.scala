@@ -53,21 +53,16 @@ object accountMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Account = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Account]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Account = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Account]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AccountState): Account = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Account]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AccountState, opts: CustomResourceOptions): Account = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Account]
+    inline def get(name: String, id: Input[ID]): Account = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Account]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Account = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Account]
+    inline def get(name: String, id: Input[ID], state: AccountState): Account = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Account]
+    inline def get(name: String, id: Input[ID], state: AccountState, opts: CustomResourceOptions): Account = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Account]
     
     /**
       * Returns true if the given object is an instance of Account.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/account.Account */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/account.Account */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/account.Account */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/account.Account */ Boolean]
   }
   
   trait AccountArgs extends StObject {
@@ -79,20 +74,16 @@ object accountMod {
   }
   object AccountArgs {
     
-    @scala.inline
-    def apply(): AccountArgs = {
+    inline def apply(): AccountArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccountArgs]
     }
     
-    @scala.inline
-    implicit class AccountArgsMutableBuilder[Self <: AccountArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AccountArgs](x: Self) {
       
-      @scala.inline
-      def setCloudwatchRoleArn(value: Input[String]): Self = StObject.set(x, "cloudwatchRoleArn", value.asInstanceOf[js.Any])
+      inline def setCloudwatchRoleArn(value: Input[String]): Self = StObject.set(x, "cloudwatchRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchRoleArnUndefined: Self = StObject.set(x, "cloudwatchRoleArn", js.undefined)
+      inline def setCloudwatchRoleArnUndefined: Self = StObject.set(x, "cloudwatchRoleArn", js.undefined)
     }
   }
   
@@ -110,26 +101,20 @@ object accountMod {
   }
   object AccountState {
     
-    @scala.inline
-    def apply(): AccountState = {
+    inline def apply(): AccountState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccountState]
     }
     
-    @scala.inline
-    implicit class AccountStateMutableBuilder[Self <: AccountState] (val x: Self) extends AnyVal {
+    extension [Self <: AccountState](x: Self) {
       
-      @scala.inline
-      def setCloudwatchRoleArn(value: Input[String]): Self = StObject.set(x, "cloudwatchRoleArn", value.asInstanceOf[js.Any])
+      inline def setCloudwatchRoleArn(value: Input[String]): Self = StObject.set(x, "cloudwatchRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchRoleArnUndefined: Self = StObject.set(x, "cloudwatchRoleArn", js.undefined)
+      inline def setCloudwatchRoleArnUndefined: Self = StObject.set(x, "cloudwatchRoleArn", js.undefined)
       
-      @scala.inline
-      def setThrottleSettings(value: Input[typings.pulumiAws.inputMod.apigateway.AccountThrottleSettings]): Self = StObject.set(x, "throttleSettings", value.asInstanceOf[js.Any])
+      inline def setThrottleSettings(value: Input[typings.pulumiAws.inputMod.apigateway.AccountThrottleSettings]): Self = StObject.set(x, "throttleSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottleSettingsUndefined: Self = StObject.set(x, "throttleSettings", js.undefined)
+      inline def setThrottleSettingsUndefined: Self = StObject.set(x, "throttleSettings", js.undefined)
     }
   }
 }

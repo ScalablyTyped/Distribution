@@ -15,25 +15,19 @@ trait Delta extends StObject {
 }
 object Delta {
   
-  @scala.inline
-  def apply(delta: js.Array[js.Any], html: String, text: String): Delta = {
+  inline def apply(delta: js.Array[js.Any], html: String, text: String): Delta = {
     val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delta]
   }
   
-  @scala.inline
-  implicit class DeltaMutableBuilder[Self <: Delta] (val x: Self) extends AnyVal {
+  extension [Self <: Delta](x: Self) {
     
-    @scala.inline
-    def setDelta(value: js.Array[js.Any]): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    inline def setDelta(value: js.Array[js.Any]): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaVarargs(value: js.Any*): Self = StObject.set(x, "delta", js.Array(value :_*))
+    inline def setDeltaVarargs(value: js.Any*): Self = StObject.set(x, "delta", js.Array(value :_*))
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

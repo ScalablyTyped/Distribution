@@ -14,19 +14,15 @@ trait WorkerHealthReportResponse extends StObject {
 }
 object WorkerHealthReportResponse {
   
-  @scala.inline
-  def apply(): WorkerHealthReportResponse = {
+  inline def apply(): WorkerHealthReportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkerHealthReportResponse]
   }
   
-  @scala.inline
-  implicit class WorkerHealthReportResponseMutableBuilder[Self <: WorkerHealthReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerHealthReportResponse](x: Self) {
     
-    @scala.inline
-    def setReportInterval(value: String): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
+    inline def setReportInterval(value: String): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportIntervalUndefined: Self = StObject.set(x, "reportInterval", js.undefined)
+    inline def setReportIntervalUndefined: Self = StObject.set(x, "reportInterval", js.undefined)
   }
 }

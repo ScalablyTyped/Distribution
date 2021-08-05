@@ -18,8 +18,7 @@ trait Cpus extends StObject {
 }
 object Cpus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cpus: ReturnType[js.Function0[js.Array[CpuInfo]]],
     networkInterfaces: ReturnType[js.Function0[Dict[js.Array[NetworkInterfaceInfo]]]],
     totalmem: ReturnType[js.Function0[Double]]
@@ -28,16 +27,12 @@ object Cpus {
     __obj.asInstanceOf[Cpus]
   }
   
-  @scala.inline
-  implicit class CpusMutableBuilder[Self <: Cpus] (val x: Self) extends AnyVal {
+  extension [Self <: Cpus](x: Self) {
     
-    @scala.inline
-    def setCpus(value: ReturnType[js.Function0[js.Array[CpuInfo]]]): Self = StObject.set(x, "cpus", value.asInstanceOf[js.Any])
+    inline def setCpus(value: ReturnType[js.Function0[js.Array[CpuInfo]]]): Self = StObject.set(x, "cpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInterfaces(value: ReturnType[js.Function0[Dict[js.Array[NetworkInterfaceInfo]]]]): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaces(value: ReturnType[js.Function0[Dict[js.Array[NetworkInterfaceInfo]]]]): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalmem(value: ReturnType[js.Function0[Double]]): Self = StObject.set(x, "totalmem", value.asInstanceOf[js.Any])
+    inline def setTotalmem(value: ReturnType[js.Function0[Double]]): Self = StObject.set(x, "totalmem", value.asInstanceOf[js.Any])
   }
 }

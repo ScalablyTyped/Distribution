@@ -11,8 +11,7 @@ trait FeedbackButton
      with CreatedButton
 object FeedbackButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     hide: () => Unit,
     image: String,

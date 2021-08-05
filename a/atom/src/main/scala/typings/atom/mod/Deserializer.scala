@@ -12,19 +12,15 @@ trait Deserializer extends StObject {
 }
 object Deserializer {
   
-  @scala.inline
-  def apply(deserialize: js.Object => js.Object, name: String): Deserializer = {
+  inline def apply(deserialize: js.Object => js.Object, name: String): Deserializer = {
     val __obj = js.Dynamic.literal(deserialize = js.Any.fromFunction1(deserialize), name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deserializer]
   }
   
-  @scala.inline
-  implicit class DeserializerMutableBuilder[Self <: Deserializer] (val x: Self) extends AnyVal {
+  extension [Self <: Deserializer](x: Self) {
     
-    @scala.inline
-    def setDeserialize(value: js.Object => js.Object): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+    inline def setDeserialize(value: js.Object => js.Object): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

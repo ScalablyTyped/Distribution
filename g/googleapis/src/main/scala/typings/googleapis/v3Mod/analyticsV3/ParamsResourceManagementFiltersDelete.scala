@@ -29,31 +29,23 @@ trait ParamsResourceManagementFiltersDelete
 }
 object ParamsResourceManagementFiltersDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceManagementFiltersDelete = {
+  inline def apply(): ParamsResourceManagementFiltersDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceManagementFiltersDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceManagementFiltersDeleteMutableBuilder[Self <: ParamsResourceManagementFiltersDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceManagementFiltersDelete](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setFilterId(value: String): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
+    inline def setFilterId(value: String): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
+    inline def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
   }
 }

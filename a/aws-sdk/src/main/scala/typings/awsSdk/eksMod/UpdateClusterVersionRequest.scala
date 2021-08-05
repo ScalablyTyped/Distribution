@@ -23,25 +23,19 @@ trait UpdateClusterVersionRequest extends StObject {
 }
 object UpdateClusterVersionRequest {
   
-  @scala.inline
-  def apply(name: String, version: String): UpdateClusterVersionRequest = {
+  inline def apply(name: String, version: String): UpdateClusterVersionRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateClusterVersionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateClusterVersionRequestMutableBuilder[Self <: UpdateClusterVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateClusterVersionRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

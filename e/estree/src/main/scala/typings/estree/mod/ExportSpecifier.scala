@@ -16,20 +16,16 @@ trait ExportSpecifier
 }
 object ExportSpecifier {
   
-  @scala.inline
-  def apply(exported: Identifier, local: Identifier): ExportSpecifier = {
+  inline def apply(exported: Identifier, local: Identifier): ExportSpecifier = {
     val __obj = js.Dynamic.literal(exported = exported.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExportSpecifier")
     __obj.asInstanceOf[ExportSpecifier]
   }
   
-  @scala.inline
-  implicit class ExportSpecifierMutableBuilder[Self <: ExportSpecifier] (val x: Self) extends AnyVal {
+  extension [Self <: ExportSpecifier](x: Self) {
     
-    @scala.inline
-    def setExported(value: Identifier): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
+    inline def setExported(value: Identifier): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.ExportSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.ExportSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

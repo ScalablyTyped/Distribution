@@ -181,115 +181,79 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
 }
 object PlusWebviewWebviewTitleNViewStyles {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewTitleNViewStyles = {
+  inline def apply(): PlusWebviewWebviewTitleNViewStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewTitleNViewStyles]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewTitleNViewStylesMutableBuilder[Self <: PlusWebviewWebviewTitleNViewStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewTitleNViewStyles](x: Self) {
     
-    @scala.inline
-    def setAutoBackButton(value: Boolean): Self = StObject.set(x, "autoBackButton", value.asInstanceOf[js.Any])
+    inline def setAutoBackButton(value: Boolean): Self = StObject.set(x, "autoBackButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoBackButtonUndefined: Self = StObject.set(x, "autoBackButton", js.undefined)
+    inline def setAutoBackButtonUndefined: Self = StObject.set(x, "autoBackButton", js.undefined)
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setButtons(value: js.Array[PlusWebview]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[PlusWebview]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: PlusWebview*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: PlusWebview*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setCoverage(value: String): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
+    inline def setCoverage(value: String): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
+    inline def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
     
-    @scala.inline
-    def setHomeButton(value: Boolean): Self = StObject.set(x, "homeButton", value.asInstanceOf[js.Any])
+    inline def setHomeButton(value: Boolean): Self = StObject.set(x, "homeButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomeButtonUndefined: Self = StObject.set(x, "homeButton", js.undefined)
+    inline def setHomeButtonUndefined: Self = StObject.set(x, "homeButton", js.undefined)
     
-    @scala.inline
-    def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPadding-left`(value: String): Self = StObject.set(x, "padding-left", value.asInstanceOf[js.Any])
+    inline def `setPadding-left`(value: String): Self = StObject.set(x, "padding-left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPadding-leftUndefined`: Self = StObject.set(x, "padding-left", js.undefined)
+    inline def `setPadding-leftUndefined`: Self = StObject.set(x, "padding-left", js.undefined)
     
-    @scala.inline
-    def `setPadding-right`(value: String): Self = StObject.set(x, "padding-right", value.asInstanceOf[js.Any])
+    inline def `setPadding-right`(value: String): Self = StObject.set(x, "padding-right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPadding-rightUndefined`: Self = StObject.set(x, "padding-right", js.undefined)
+    inline def `setPadding-rightUndefined`: Self = StObject.set(x, "padding-right", js.undefined)
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setProgress(value: PlusWebviewWebviewProgressStyles): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: PlusWebviewWebviewProgressStyles): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setSplitLine(value: PlusWebviewWebviewSplitLineStyles): Self = StObject.set(x, "splitLine", value.asInstanceOf[js.Any])
+    inline def setSplitLine(value: PlusWebviewWebviewSplitLineStyles): Self = StObject.set(x, "splitLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitLineUndefined: Self = StObject.set(x, "splitLine", js.undefined)
+    inline def setSplitLineUndefined: Self = StObject.set(x, "splitLine", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
+    inline def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
+    inline def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
     
-    @scala.inline
-    def setTitleOverflow(value: String): Self = StObject.set(x, "titleOverflow", value.asInstanceOf[js.Any])
+    inline def setTitleOverflow(value: String): Self = StObject.set(x, "titleOverflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleOverflowUndefined: Self = StObject.set(x, "titleOverflow", js.undefined)
+    inline def setTitleOverflowUndefined: Self = StObject.set(x, "titleOverflow", js.undefined)
     
-    @scala.inline
-    def setTitleSize(value: String): Self = StObject.set(x, "titleSize", value.asInstanceOf[js.Any])
+    inline def setTitleSize(value: String): Self = StObject.set(x, "titleSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleSizeUndefined: Self = StObject.set(x, "titleSize", js.undefined)
+    inline def setTitleSizeUndefined: Self = StObject.set(x, "titleSize", js.undefined)
     
-    @scala.inline
-    def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
+    inline def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleTextUndefined: Self = StObject.set(x, "titleText", js.undefined)
+    inline def setTitleTextUndefined: Self = StObject.set(x, "titleText", js.undefined)
     
-    @scala.inline
-    def setType(value: default | transparent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: default | transparent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -30,35 +30,26 @@ object typesAutoScalingTargetTrackingScalingPolicyConfigurationUpdateMod {
   }
   object AutoScalingTargetTrackingScalingPolicyConfigurationUpdate {
     
-    @scala.inline
-    def apply(TargetValue: Double): AutoScalingTargetTrackingScalingPolicyConfigurationUpdate = {
+    inline def apply(TargetValue: Double): AutoScalingTargetTrackingScalingPolicyConfigurationUpdate = {
       val __obj = js.Dynamic.literal(TargetValue = TargetValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutoScalingTargetTrackingScalingPolicyConfigurationUpdate]
     }
     
-    @scala.inline
-    implicit class AutoScalingTargetTrackingScalingPolicyConfigurationUpdateMutableBuilder[Self <: AutoScalingTargetTrackingScalingPolicyConfigurationUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: AutoScalingTargetTrackingScalingPolicyConfigurationUpdate](x: Self) {
       
-      @scala.inline
-      def setDisableScaleIn(value: Boolean): Self = StObject.set(x, "DisableScaleIn", value.asInstanceOf[js.Any])
+      inline def setDisableScaleIn(value: Boolean): Self = StObject.set(x, "DisableScaleIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableScaleInUndefined: Self = StObject.set(x, "DisableScaleIn", js.undefined)
+      inline def setDisableScaleInUndefined: Self = StObject.set(x, "DisableScaleIn", js.undefined)
       
-      @scala.inline
-      def setScaleInCooldown(value: Double): Self = StObject.set(x, "ScaleInCooldown", value.asInstanceOf[js.Any])
+      inline def setScaleInCooldown(value: Double): Self = StObject.set(x, "ScaleInCooldown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleInCooldownUndefined: Self = StObject.set(x, "ScaleInCooldown", js.undefined)
+      inline def setScaleInCooldownUndefined: Self = StObject.set(x, "ScaleInCooldown", js.undefined)
       
-      @scala.inline
-      def setScaleOutCooldown(value: Double): Self = StObject.set(x, "ScaleOutCooldown", value.asInstanceOf[js.Any])
+      inline def setScaleOutCooldown(value: Double): Self = StObject.set(x, "ScaleOutCooldown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleOutCooldownUndefined: Self = StObject.set(x, "ScaleOutCooldown", js.undefined)
+      inline def setScaleOutCooldownUndefined: Self = StObject.set(x, "ScaleOutCooldown", js.undefined)
       
-      @scala.inline
-      def setTargetValue(value: Double): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
+      inline def setTargetValue(value: Double): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
     }
   }
   

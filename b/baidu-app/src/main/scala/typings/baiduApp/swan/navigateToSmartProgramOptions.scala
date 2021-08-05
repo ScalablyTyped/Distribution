@@ -29,28 +29,21 @@ trait navigateToSmartProgramOptions
 }
 object navigateToSmartProgramOptions {
   
-  @scala.inline
-  def apply(appKey: String): navigateToSmartProgramOptions = {
+  inline def apply(appKey: String): navigateToSmartProgramOptions = {
     val __obj = js.Dynamic.literal(appKey = appKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[navigateToSmartProgramOptions]
   }
   
-  @scala.inline
-  implicit class navigateToSmartProgramOptionsMutableBuilder[Self <: navigateToSmartProgramOptions] (val x: Self) extends AnyVal {
+  extension [Self <: navigateToSmartProgramOptions](x: Self) {
     
-    @scala.inline
-    def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
+    inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
+    inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

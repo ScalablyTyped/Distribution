@@ -15,10 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(options: ExpressFormidableOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: ExpressFormidableOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("express-formidable", JSImport.Namespace)
   @js.native
@@ -46,68 +44,48 @@ object mod {
   }
   object ExpressFormidableOptions {
     
-    @scala.inline
-    def apply(): ExpressFormidableOptions = {
+    inline def apply(): ExpressFormidableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpressFormidableOptions]
     }
     
-    @scala.inline
-    implicit class ExpressFormidableOptionsMutableBuilder[Self <: ExpressFormidableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExpressFormidableOptions](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setHash(value: Boolean | sha1 | md5): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Boolean | sha1 | md5): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setKeepExtensions(value: Boolean): Self = StObject.set(x, "keepExtensions", value.asInstanceOf[js.Any])
+      inline def setKeepExtensions(value: Boolean): Self = StObject.set(x, "keepExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepExtensionsUndefined: Self = StObject.set(x, "keepExtensions", js.undefined)
+      inline def setKeepExtensionsUndefined: Self = StObject.set(x, "keepExtensions", js.undefined)
       
-      @scala.inline
-      def setMaxFields(value: Double): Self = StObject.set(x, "maxFields", value.asInstanceOf[js.Any])
+      inline def setMaxFields(value: Double): Self = StObject.set(x, "maxFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFieldsSize(value: Double): Self = StObject.set(x, "maxFieldsSize", value.asInstanceOf[js.Any])
+      inline def setMaxFieldsSize(value: Double): Self = StObject.set(x, "maxFieldsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFieldsSizeUndefined: Self = StObject.set(x, "maxFieldsSize", js.undefined)
+      inline def setMaxFieldsSizeUndefined: Self = StObject.set(x, "maxFieldsSize", js.undefined)
       
-      @scala.inline
-      def setMaxFieldsUndefined: Self = StObject.set(x, "maxFields", js.undefined)
+      inline def setMaxFieldsUndefined: Self = StObject.set(x, "maxFields", js.undefined)
       
-      @scala.inline
-      def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
+      inline def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
+      inline def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
       
-      @scala.inline
-      def setMultiples(value: Boolean): Self = StObject.set(x, "multiples", value.asInstanceOf[js.Any])
+      inline def setMultiples(value: Boolean): Self = StObject.set(x, "multiples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiplesUndefined: Self = StObject.set(x, "multiples", js.undefined)
+      inline def setMultiplesUndefined: Self = StObject.set(x, "multiples", js.undefined)
       
-      @scala.inline
-      def setType(value: multipart | urlencoded): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: multipart | urlencoded): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUploadDir(value: String): Self = StObject.set(x, "uploadDir", value.asInstanceOf[js.Any])
+      inline def setUploadDir(value: String): Self = StObject.set(x, "uploadDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadDirUndefined: Self = StObject.set(x, "uploadDir", js.undefined)
+      inline def setUploadDirUndefined: Self = StObject.set(x, "uploadDir", js.undefined)
     }
   }
   
@@ -124,26 +102,20 @@ object mod {
       }
       object Request {
         
-        @scala.inline
-        def apply(): Request = {
+        inline def apply(): Request = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Request]
         }
         
-        @scala.inline
-        implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+        extension [Self <: Request](x: Self) {
           
-          @scala.inline
-          def setFields(value: Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+          inline def setFields(value: Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+          inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
           
-          @scala.inline
-          def setFiles(value: Files): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+          inline def setFiles(value: Files): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+          inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
         }
       }
     }

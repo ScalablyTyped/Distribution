@@ -14,15 +14,15 @@ object dialogBaseMod {
     extends Component[IDialogProps, js.Object, js.Any] {
     def this(props: IDialogProps) = this()
     
-    var _defaultSubTextId: js.Any = js.native
+    /* private */ var _defaultSubTextId: js.Any = js.native
     
-    var _defaultTitleTextId: js.Any = js.native
+    /* private */ var _defaultTitleTextId: js.Any = js.native
     
-    var _getSubTextId: js.Any = js.native
+    /* private */ var _getSubTextId: js.Any = js.native
     
-    var _getTitleTextId: js.Any = js.native
+    /* private */ var _getTitleTextId: js.Any = js.native
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
   }
   /* static members */
   object DialogBase {
@@ -34,7 +34,6 @@ object dialogBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/Dialog/Dialog.base", "DialogBase.defaultProps")
     @js.native
     def defaultProps: IDialogProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IDialogProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IDialogProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

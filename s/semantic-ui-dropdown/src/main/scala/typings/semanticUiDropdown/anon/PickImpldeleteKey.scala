@@ -11,16 +11,13 @@ trait PickImpldeleteKey extends StObject {
 }
 object PickImpldeleteKey {
   
-  @scala.inline
-  def apply(deleteKey: Double): PickImpldeleteKey = {
+  inline def apply(deleteKey: Double): PickImpldeleteKey = {
     val __obj = js.Dynamic.literal(deleteKey = deleteKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldeleteKey]
   }
   
-  @scala.inline
-  implicit class PickImpldeleteKeyMutableBuilder[Self <: PickImpldeleteKey] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldeleteKey](x: Self) {
     
-    @scala.inline
-    def setDeleteKey(value: Double): Self = StObject.set(x, "deleteKey", value.asInstanceOf[js.Any])
+    inline def setDeleteKey(value: Double): Self = StObject.set(x, "deleteKey", value.asInstanceOf[js.Any])
   }
 }

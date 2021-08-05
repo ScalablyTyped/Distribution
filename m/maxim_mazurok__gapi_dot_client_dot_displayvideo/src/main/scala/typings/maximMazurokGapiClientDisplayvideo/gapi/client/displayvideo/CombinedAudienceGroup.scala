@@ -14,22 +14,17 @@ trait CombinedAudienceGroup extends StObject {
 }
 object CombinedAudienceGroup {
   
-  @scala.inline
-  def apply(): CombinedAudienceGroup = {
+  inline def apply(): CombinedAudienceGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CombinedAudienceGroup]
   }
   
-  @scala.inline
-  implicit class CombinedAudienceGroupMutableBuilder[Self <: CombinedAudienceGroup] (val x: Self) extends AnyVal {
+  extension [Self <: CombinedAudienceGroup](x: Self) {
     
-    @scala.inline
-    def setSettings(value: js.Array[CombinedAudienceTargetingSetting]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: js.Array[CombinedAudienceTargetingSetting]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    @scala.inline
-    def setSettingsVarargs(value: CombinedAudienceTargetingSetting*): Self = StObject.set(x, "settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: CombinedAudienceTargetingSetting*): Self = StObject.set(x, "settings", js.Array(value :_*))
   }
 }

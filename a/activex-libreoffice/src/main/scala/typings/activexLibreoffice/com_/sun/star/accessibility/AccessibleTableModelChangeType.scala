@@ -17,13 +17,10 @@ object AccessibleTableModelChangeType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def DELETE: `2` = 2.asInstanceOf[`2`]
+    inline def DELETE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def INSERT: `1` = 1.asInstanceOf[`1`]
+    inline def INSERT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def UPDATE: `3` = 3.asInstanceOf[`3`]
+    inline def UPDATE: `3` = 3.asInstanceOf[`3`]
   }
 }

@@ -14,31 +14,23 @@ trait Cycle extends StObject {
 }
 object Cycle {
   
-  @scala.inline
-  def apply(): Cycle = {
+  inline def apply(): Cycle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cycle]
   }
   
-  @scala.inline
-  implicit class CycleMutableBuilder[Self <: Cycle] (val x: Self) extends AnyVal {
+  extension [Self <: Cycle](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setNr(value: Double): Self = StObject.set(x, "nr", value.asInstanceOf[js.Any])
+    inline def setNr(value: Double): Self = StObject.set(x, "nr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNrUndefined: Self = StObject.set(x, "nr", js.undefined)
+    inline def setNrUndefined: Self = StObject.set(x, "nr", js.undefined)
   }
 }

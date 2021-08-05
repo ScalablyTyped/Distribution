@@ -12,6 +12,5 @@ object pureMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[TProps](component: ComponentType[TProps]): ComponentType[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[TProps]]
+  inline def default[TProps](component: ComponentType[TProps]): ComponentType[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[TProps]]
 }

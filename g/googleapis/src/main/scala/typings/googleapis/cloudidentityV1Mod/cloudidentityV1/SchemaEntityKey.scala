@@ -28,25 +28,19 @@ trait SchemaEntityKey extends StObject {
 }
 object SchemaEntityKey {
   
-  @scala.inline
-  def apply(): SchemaEntityKey = {
+  inline def apply(): SchemaEntityKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEntityKey]
   }
   
-  @scala.inline
-  implicit class SchemaEntityKeyMutableBuilder[Self <: SchemaEntityKey] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEntityKey](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
   }
 }

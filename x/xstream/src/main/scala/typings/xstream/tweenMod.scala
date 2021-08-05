@@ -31,8 +31,7 @@ object tweenMod extends Shortcut {
   }
   object Easings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       easeIn: (/* x */ Double, /* from */ Double, /* to */ Double) => Double,
       easeInOut: (/* x */ Double, /* from */ Double, /* to */ Double) => Double,
       easeOut: (/* x */ Double, /* from */ Double, /* to */ Double) => Double
@@ -41,17 +40,13 @@ object tweenMod extends Shortcut {
       __obj.asInstanceOf[Easings]
     }
     
-    @scala.inline
-    implicit class EasingsMutableBuilder[Self <: Easings] (val x: Self) extends AnyVal {
+    extension [Self <: Easings](x: Self) {
       
-      @scala.inline
-      def setEaseIn(value: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Self = StObject.set(x, "easeIn", js.Any.fromFunction3(value))
+      inline def setEaseIn(value: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Self = StObject.set(x, "easeIn", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setEaseInOut(value: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Self = StObject.set(x, "easeInOut", js.Any.fromFunction3(value))
+      inline def setEaseInOut(value: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Self = StObject.set(x, "easeInOut", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setEaseOut(value: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Self = StObject.set(x, "easeOut", js.Any.fromFunction3(value))
+      inline def setEaseOut(value: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Self = StObject.set(x, "easeOut", js.Any.fromFunction3(value))
     }
   }
   
@@ -71,35 +66,26 @@ object tweenMod extends Shortcut {
   }
   object TweenConfig {
     
-    @scala.inline
-    def apply(duration: Double, from: Double, to: Double): TweenConfig = {
+    inline def apply(duration: Double, from: Double, to: Double): TweenConfig = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[TweenConfig]
     }
     
-    @scala.inline
-    implicit class TweenConfigMutableBuilder[Self <: TweenConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TweenConfig](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEase(value: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Self = StObject.set(x, "ease", js.Any.fromFunction3(value))
+      inline def setEase(value: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Self = StObject.set(x, "ease", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
+      inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
-      @scala.inline
-      def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   

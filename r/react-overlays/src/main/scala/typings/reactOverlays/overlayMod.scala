@@ -65,107 +65,74 @@ object overlayMod extends Shortcut {
   }
   object OverlayProps {
     
-    @scala.inline
-    def apply(children: ArrowProps => ReactNode): OverlayProps = {
+    inline def apply(children: ArrowProps => ReactNode): OverlayProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), target = null)
       __obj.asInstanceOf[OverlayProps]
     }
     
-    @scala.inline
-    implicit class OverlayPropsMutableBuilder[Self <: OverlayProps] (val x: Self) extends AnyVal {
+    extension [Self <: OverlayProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ArrowProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: ArrowProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContainer(value: DOMContainer[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: DOMContainer[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerFunction0(value: () => HTMLElement | RefObject[HTMLElement] | Null): Self = StObject.set(x, "container", js.Any.fromFunction0(value))
+      inline def setContainerFunction0(value: () => HTMLElement | RefObject[HTMLElement] | Null): Self = StObject.set(x, "container", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContainerNull: Self = StObject.set(x, "container", null)
+      inline def setContainerNull: Self = StObject.set(x, "container", null)
       
-      @scala.inline
-      def setContainerPadding(value: Double): Self = StObject.set(x, "containerPadding", value.asInstanceOf[js.Any])
+      inline def setContainerPadding(value: Double): Self = StObject.set(x, "containerPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerPaddingUndefined: Self = StObject.set(x, "containerPadding", js.undefined)
+      inline def setContainerPaddingUndefined: Self = StObject.set(x, "containerPadding", js.undefined)
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+      inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+      inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetFunction1(value: /* details */ typings.reactOverlays.anon.Placement => OffsetValue): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
+      inline def setOffsetFunction1(value: /* details */ typings.reactOverlays.anon.Placement => OffsetValue): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOnHide(value: /* e */ Event => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
+      inline def setOnHide(value: /* e */ Event => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+      inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setPopperConfig(value: OmitUsePopperOptionsplace): Self = StObject.set(x, "popperConfig", value.asInstanceOf[js.Any])
+      inline def setPopperConfig(value: OmitUsePopperOptionsplace): Self = StObject.set(x, "popperConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopperConfigUndefined: Self = StObject.set(x, "popperConfig", js.undefined)
+      inline def setPopperConfigUndefined: Self = StObject.set(x, "popperConfig", js.undefined)
       
-      @scala.inline
-      def setRootClose(value: Boolean): Self = StObject.set(x, "rootClose", value.asInstanceOf[js.Any])
+      inline def setRootClose(value: Boolean): Self = StObject.set(x, "rootClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootCloseDisabled(value: Boolean): Self = StObject.set(x, "rootCloseDisabled", value.asInstanceOf[js.Any])
+      inline def setRootCloseDisabled(value: Boolean): Self = StObject.set(x, "rootCloseDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootCloseDisabledUndefined: Self = StObject.set(x, "rootCloseDisabled", js.undefined)
+      inline def setRootCloseDisabledUndefined: Self = StObject.set(x, "rootCloseDisabled", js.undefined)
       
-      @scala.inline
-      def setRootCloseEvent(value: MouseEvents): Self = StObject.set(x, "rootCloseEvent", value.asInstanceOf[js.Any])
+      inline def setRootCloseEvent(value: MouseEvents): Self = StObject.set(x, "rootCloseEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootCloseEventUndefined: Self = StObject.set(x, "rootCloseEvent", js.undefined)
+      inline def setRootCloseEventUndefined: Self = StObject.set(x, "rootCloseEvent", js.undefined)
       
-      @scala.inline
-      def setRootCloseUndefined: Self = StObject.set(x, "rootClose", js.undefined)
+      inline def setRootCloseUndefined: Self = StObject.set(x, "rootClose", js.undefined)
       
-      @scala.inline
-      def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
-      @scala.inline
-      def setTarget(value: DOMContainer[HTMLElement]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: DOMContainer[HTMLElement]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetFunction0(value: () => HTMLElement | RefObject[HTMLElement] | Null): Self = StObject.set(x, "target", js.Any.fromFunction0(value))
+      inline def setTargetFunction0(value: () => HTMLElement | RefObject[HTMLElement] | Null): Self = StObject.set(x, "target", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTargetNull: Self = StObject.set(x, "target", null)
+      inline def setTargetNull: Self = StObject.set(x, "target", null)
       
-      @scala.inline
-      def setTransition(value: ComponentType[inbooleanundefinedappearb]): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: ComponentType[inbooleanundefinedappearb]): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     }
   }
   

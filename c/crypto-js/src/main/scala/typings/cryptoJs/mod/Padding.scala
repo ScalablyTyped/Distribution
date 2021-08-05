@@ -34,19 +34,15 @@ trait Padding extends StObject {
 }
 object Padding {
   
-  @scala.inline
-  def apply(pad: (WordArray, Double) => Unit, unpad: WordArray => Unit): Padding = {
+  inline def apply(pad: (WordArray, Double) => Unit, unpad: WordArray => Unit): Padding = {
     val __obj = js.Dynamic.literal(pad = js.Any.fromFunction2(pad), unpad = js.Any.fromFunction1(unpad))
     __obj.asInstanceOf[Padding]
   }
   
-  @scala.inline
-  implicit class PaddingMutableBuilder[Self <: Padding] (val x: Self) extends AnyVal {
+  extension [Self <: Padding](x: Self) {
     
-    @scala.inline
-    def setPad(value: (WordArray, Double) => Unit): Self = StObject.set(x, "pad", js.Any.fromFunction2(value))
+    inline def setPad(value: (WordArray, Double) => Unit): Self = StObject.set(x, "pad", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnpad(value: WordArray => Unit): Self = StObject.set(x, "unpad", js.Any.fromFunction1(value))
+    inline def setUnpad(value: WordArray => Unit): Self = StObject.set(x, "unpad", js.Any.fromFunction1(value))
   }
 }

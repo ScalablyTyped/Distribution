@@ -38,7 +38,7 @@ object modelSdkClientImplMod {
       errorCallback: IErrorCallback
     ): Unit = js.native
     
-    var client: js.Any = js.native
+    /* private */ var client: js.Any = js.native
     
     def commitToTeamServer(workingCopyId: String, options: ICommitToTeamServerOptions): js.Promise[Unit] = js.native
     /**
@@ -51,7 +51,7 @@ object modelSdkClientImplMod {
       errorCallback: IErrorCallback
     ): Unit = js.native
     
-    var connectionConfig: js.Any = js.native
+    /* private */ var connectionConfig: js.Any = js.native
     
     def createAndOpenWorkingCopy(workingCopyParameters: ICreateWorkingCopyParameters): js.Promise[IT] = js.native
     /**
@@ -188,7 +188,7 @@ object modelSdkClientImplMod {
       errorCallback: IErrorCallback
     ): Unit = js.native
     
-    var modelConstructor: js.Any = js.native
+    /* private */ var modelConstructor: js.Any = js.native
     
     def openWorkingCopy(workingCopyId: String): js.Promise[IT] = js.native
     /**

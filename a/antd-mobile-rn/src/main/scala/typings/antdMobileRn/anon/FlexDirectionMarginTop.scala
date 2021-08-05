@@ -12,19 +12,15 @@ trait FlexDirectionMarginTop extends StObject {
 }
 object FlexDirectionMarginTop {
   
-  @scala.inline
-  def apply(flexDirection: String, marginTop: Double): FlexDirectionMarginTop = {
+  inline def apply(flexDirection: String, marginTop: Double): FlexDirectionMarginTop = {
     val __obj = js.Dynamic.literal(flexDirection = flexDirection.asInstanceOf[js.Any], marginTop = marginTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexDirectionMarginTop]
   }
   
-  @scala.inline
-  implicit class FlexDirectionMarginTopMutableBuilder[Self <: FlexDirectionMarginTop] (val x: Self) extends AnyVal {
+  extension [Self <: FlexDirectionMarginTop](x: Self) {
     
-    @scala.inline
-    def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+    inline def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
   }
 }

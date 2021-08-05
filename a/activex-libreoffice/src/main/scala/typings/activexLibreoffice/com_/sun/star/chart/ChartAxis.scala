@@ -164,8 +164,7 @@ trait ChartAxis
 }
 object ChartAxis {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ArrangeOrder: ChartAxisArrangeOrderType,
     AutoMax: Boolean,
     AutoMin: Boolean,
@@ -299,97 +298,66 @@ object ChartAxis {
     __obj.asInstanceOf[ChartAxis]
   }
   
-  @scala.inline
-  implicit class ChartAxisMutableBuilder[Self <: ChartAxis] (val x: Self) extends AnyVal {
+  extension [Self <: ChartAxis](x: Self) {
     
-    @scala.inline
-    def setArrangeOrder(value: ChartAxisArrangeOrderType): Self = StObject.set(x, "ArrangeOrder", value.asInstanceOf[js.Any])
+    inline def setArrangeOrder(value: ChartAxisArrangeOrderType): Self = StObject.set(x, "ArrangeOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoMax(value: Boolean): Self = StObject.set(x, "AutoMax", value.asInstanceOf[js.Any])
+    inline def setAutoMax(value: Boolean): Self = StObject.set(x, "AutoMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoMin(value: Boolean): Self = StObject.set(x, "AutoMin", value.asInstanceOf[js.Any])
+    inline def setAutoMin(value: Boolean): Self = StObject.set(x, "AutoMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoOrigin(value: Boolean): Self = StObject.set(x, "AutoOrigin", value.asInstanceOf[js.Any])
+    inline def setAutoOrigin(value: Boolean): Self = StObject.set(x, "AutoOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoStepHelp(value: Boolean): Self = StObject.set(x, "AutoStepHelp", value.asInstanceOf[js.Any])
+    inline def setAutoStepHelp(value: Boolean): Self = StObject.set(x, "AutoStepHelp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoStepMain(value: Boolean): Self = StObject.set(x, "AutoStepMain", value.asInstanceOf[js.Any])
+    inline def setAutoStepMain(value: Boolean): Self = StObject.set(x, "AutoStepMain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisType(value: Double): Self = StObject.set(x, "AxisType", value.asInstanceOf[js.Any])
+    inline def setAxisType(value: Double): Self = StObject.set(x, "AxisType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossoverPosition(value: ChartAxisPosition): Self = StObject.set(x, "CrossoverPosition", value.asInstanceOf[js.Any])
+    inline def setCrossoverPosition(value: ChartAxisPosition): Self = StObject.set(x, "CrossoverPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossoverValue(value: Double): Self = StObject.set(x, "CrossoverValue", value.asInstanceOf[js.Any])
+    inline def setCrossoverValue(value: Double): Self = StObject.set(x, "CrossoverValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayLabels(value: Boolean): Self = StObject.set(x, "DisplayLabels", value.asInstanceOf[js.Any])
+    inline def setDisplayLabels(value: Boolean): Self = StObject.set(x, "DisplayLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGapWidth(value: Double): Self = StObject.set(x, "GapWidth", value.asInstanceOf[js.Any])
+    inline def setGapWidth(value: Double): Self = StObject.set(x, "GapWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpMarks(value: Double): Self = StObject.set(x, "HelpMarks", value.asInstanceOf[js.Any])
+    inline def setHelpMarks(value: Double): Self = StObject.set(x, "HelpMarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelPosition(value: ChartAxisLabelPosition): Self = StObject.set(x, "LabelPosition", value.asInstanceOf[js.Any])
+    inline def setLabelPosition(value: ChartAxisLabelPosition): Self = StObject.set(x, "LabelPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkNumberFormatToSource(value: Boolean): Self = StObject.set(x, "LinkNumberFormatToSource", value.asInstanceOf[js.Any])
+    inline def setLinkNumberFormatToSource(value: Boolean): Self = StObject.set(x, "LinkNumberFormatToSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogarithmic(value: Boolean): Self = StObject.set(x, "Logarithmic", value.asInstanceOf[js.Any])
+    inline def setLogarithmic(value: Boolean): Self = StObject.set(x, "Logarithmic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkPosition(value: ChartAxisMarkPosition): Self = StObject.set(x, "MarkPosition", value.asInstanceOf[js.Any])
+    inline def setMarkPosition(value: ChartAxisMarkPosition): Self = StObject.set(x, "MarkPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarks(value: Double): Self = StObject.set(x, "Marks", value.asInstanceOf[js.Any])
+    inline def setMarks(value: Double): Self = StObject.set(x, "Marks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "Min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "Min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: Double): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Double): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlap(value: Double): Self = StObject.set(x, "Overlap", value.asInstanceOf[js.Any])
+    inline def setOverlap(value: Double): Self = StObject.set(x, "Overlap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseDirection(value: Boolean): Self = StObject.set(x, "ReverseDirection", value.asInstanceOf[js.Any])
+    inline def setReverseDirection(value: Boolean): Self = StObject.set(x, "ReverseDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepHelp(value: Double): Self = StObject.set(x, "StepHelp", value.asInstanceOf[js.Any])
+    inline def setStepHelp(value: Double): Self = StObject.set(x, "StepHelp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepHelpCount(value: Double): Self = StObject.set(x, "StepHelpCount", value.asInstanceOf[js.Any])
+    inline def setStepHelpCount(value: Double): Self = StObject.set(x, "StepHelpCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepMain(value: Double): Self = StObject.set(x, "StepMain", value.asInstanceOf[js.Any])
+    inline def setStepMain(value: Double): Self = StObject.set(x, "StepMain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextBreak(value: Boolean): Self = StObject.set(x, "TextBreak", value.asInstanceOf[js.Any])
+    inline def setTextBreak(value: Boolean): Self = StObject.set(x, "TextBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextCanOverlap(value: Boolean): Self = StObject.set(x, "TextCanOverlap", value.asInstanceOf[js.Any])
+    inline def setTextCanOverlap(value: Boolean): Self = StObject.set(x, "TextCanOverlap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextRotation(value: Double): Self = StObject.set(x, "TextRotation", value.asInstanceOf[js.Any])
+    inline def setTextRotation(value: Double): Self = StObject.set(x, "TextRotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeIncrement(value: TimeIncrement): Self = StObject.set(x, "TimeIncrement", value.asInstanceOf[js.Any])
+    inline def setTimeIncrement(value: TimeIncrement): Self = StObject.set(x, "TimeIncrement", value.asInstanceOf[js.Any])
   }
 }

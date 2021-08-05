@@ -14,22 +14,17 @@ trait Visibilities extends StObject {
 }
 object Visibilities {
   
-  @scala.inline
-  def apply(overloads: Type, tags: Properties, visibilities: Enum): Visibilities = {
+  inline def apply(overloads: Type, tags: Properties, visibilities: Enum): Visibilities = {
     val __obj = js.Dynamic.literal(overloads = overloads.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], visibilities = visibilities.asInstanceOf[js.Any])
     __obj.asInstanceOf[Visibilities]
   }
   
-  @scala.inline
-  implicit class VisibilitiesMutableBuilder[Self <: Visibilities] (val x: Self) extends AnyVal {
+  extension [Self <: Visibilities](x: Self) {
     
-    @scala.inline
-    def setOverloads(value: Type): Self = StObject.set(x, "overloads", value.asInstanceOf[js.Any])
+    inline def setOverloads(value: Type): Self = StObject.set(x, "overloads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Properties): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Properties): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilities(value: Enum): Self = StObject.set(x, "visibilities", value.asInstanceOf[js.Any])
+    inline def setVisibilities(value: Enum): Self = StObject.set(x, "visibilities", value.asInstanceOf[js.Any])
   }
 }

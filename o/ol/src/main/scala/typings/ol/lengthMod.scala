@@ -10,9 +10,7 @@ object lengthMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def lineStringLength(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lineStringLength")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def lineStringLength(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lineStringLength")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def linearRingLength(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("linearRingLength")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def linearRingLength(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("linearRingLength")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

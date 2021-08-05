@@ -10,6 +10,5 @@ object hasFlagMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(country: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(country.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(country: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(country.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -18,8 +18,7 @@ object hierarchyMod {
   }
   object HierarchyApi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getAllEdges: () => js.Array[js.Any],
       getAllLinks: () => js.Array[js.Any],
       getAllNodes: () => js.Array[js.Any]
@@ -28,23 +27,17 @@ object hierarchyMod {
       __obj.asInstanceOf[HierarchyApi]
     }
     
-    @scala.inline
-    implicit class HierarchyApiMutableBuilder[Self <: HierarchyApi] (val x: Self) extends AnyVal {
+    extension [Self <: HierarchyApi](x: Self) {
       
-      @scala.inline
-      def setGetAllEdges(value: () => js.Array[js.Any]): Self = StObject.set(x, "getAllEdges", js.Any.fromFunction0(value))
+      inline def setGetAllEdges(value: () => js.Array[js.Any]): Self = StObject.set(x, "getAllEdges", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAllLinks(value: () => js.Array[js.Any]): Self = StObject.set(x, "getAllLinks", js.Any.fromFunction0(value))
+      inline def setGetAllLinks(value: () => js.Array[js.Any]): Self = StObject.set(x, "getAllLinks", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAllNodes(value: () => js.Array[js.Any]): Self = StObject.set(x, "getAllNodes", js.Any.fromFunction0(value))
+      inline def setGetAllNodes(value: () => js.Array[js.Any]): Self = StObject.set(x, "getAllNodes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

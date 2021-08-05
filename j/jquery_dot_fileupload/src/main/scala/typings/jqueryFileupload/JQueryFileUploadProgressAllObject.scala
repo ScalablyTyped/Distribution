@@ -14,31 +14,23 @@ trait JQueryFileUploadProgressAllObject extends StObject {
 }
 object JQueryFileUploadProgressAllObject {
   
-  @scala.inline
-  def apply(): JQueryFileUploadProgressAllObject = {
+  inline def apply(): JQueryFileUploadProgressAllObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQueryFileUploadProgressAllObject]
   }
   
-  @scala.inline
-  implicit class JQueryFileUploadProgressAllObjectMutableBuilder[Self <: JQueryFileUploadProgressAllObject] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryFileUploadProgressAllObject](x: Self) {
     
-    @scala.inline
-    def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
+    inline def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
     
-    @scala.inline
-    def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+    inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

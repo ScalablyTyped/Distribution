@@ -17,8 +17,7 @@ trait TextAreaField
 }
 object TextAreaField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     cols: Double,
@@ -48,13 +47,10 @@ object TextAreaField {
     __obj.asInstanceOf[TextAreaField]
   }
   
-  @scala.inline
-  implicit class TextAreaFieldMutableBuilder[Self <: TextAreaField] (val x: Self) extends AnyVal {
+  extension [Self <: TextAreaField](x: Self) {
     
-    @scala.inline
-    def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
   }
 }

@@ -42,40 +42,29 @@ trait WebTileLayerProperties
 }
 object WebTileLayerProperties {
   
-  @scala.inline
-  def apply(): WebTileLayerProperties = {
+  inline def apply(): WebTileLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebTileLayerProperties]
   }
   
-  @scala.inline
-  implicit class WebTileLayerPropertiesMutableBuilder[Self <: WebTileLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: WebTileLayerProperties](x: Self) {
     
-    @scala.inline
-    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
-    @scala.inline
-    def setSubDomains(value: js.Array[String]): Self = StObject.set(x, "subDomains", value.asInstanceOf[js.Any])
+    inline def setSubDomains(value: js.Array[String]): Self = StObject.set(x, "subDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubDomainsUndefined: Self = StObject.set(x, "subDomains", js.undefined)
+    inline def setSubDomainsUndefined: Self = StObject.set(x, "subDomains", js.undefined)
     
-    @scala.inline
-    def setSubDomainsVarargs(value: String*): Self = StObject.set(x, "subDomains", js.Array(value :_*))
+    inline def setSubDomainsVarargs(value: String*): Self = StObject.set(x, "subDomains", js.Array(value :_*))
     
-    @scala.inline
-    def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
+    inline def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
+    inline def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
     
-    @scala.inline
-    def setUrlTemplate(value: String): Self = StObject.set(x, "urlTemplate", value.asInstanceOf[js.Any])
+    inline def setUrlTemplate(value: String): Self = StObject.set(x, "urlTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlTemplateUndefined: Self = StObject.set(x, "urlTemplate", js.undefined)
+    inline def setUrlTemplateUndefined: Self = StObject.set(x, "urlTemplate", js.undefined)
   }
 }

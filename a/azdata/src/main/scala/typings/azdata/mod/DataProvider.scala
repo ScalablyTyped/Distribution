@@ -12,22 +12,17 @@ trait DataProvider extends StObject {
 }
 object DataProvider {
   
-  @scala.inline
-  def apply(providerId: String): DataProvider = {
+  inline def apply(providerId: String): DataProvider = {
     val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataProvider]
   }
   
-  @scala.inline
-  implicit class DataProviderMutableBuilder[Self <: DataProvider] (val x: Self) extends AnyVal {
+  extension [Self <: DataProvider](x: Self) {
     
-    @scala.inline
-    def setHandle(value: Double): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: Double): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+    inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScrollDirection extends StObject
 object ScrollDirection {
   
-  @scala.inline
-  def backward: typings.reactWindow.reactWindowStrings.backward = "backward".asInstanceOf[typings.reactWindow.reactWindowStrings.backward]
+  inline def backward: typings.reactWindow.reactWindowStrings.backward = "backward".asInstanceOf[typings.reactWindow.reactWindowStrings.backward]
   
-  @scala.inline
-  def forward: typings.reactWindow.reactWindowStrings.forward = "forward".asInstanceOf[typings.reactWindow.reactWindowStrings.forward]
+  inline def forward: typings.reactWindow.reactWindowStrings.forward = "forward".asInstanceOf[typings.reactWindow.reactWindowStrings.forward]
 }

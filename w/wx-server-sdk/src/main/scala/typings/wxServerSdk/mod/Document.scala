@@ -20,8 +20,7 @@ trait Document extends StObject {
 }
 object Document {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: () => js.Promise[DataAny],
     remove: () => js.Promise[Stats1],
     set: CommonOption[js.Any] => js.Promise[Id],
@@ -31,19 +30,14 @@ object Document {
     __obj.asInstanceOf[Document]
   }
   
-  @scala.inline
-  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+  extension [Self <: Document](x: Self) {
     
-    @scala.inline
-    def setGet(value: () => js.Promise[DataAny]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => js.Promise[DataAny]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => js.Promise[Stats1]): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => js.Promise[Stats1]): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: CommonOption[js.Any] => js.Promise[Id]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: CommonOption[js.Any] => js.Promise[Id]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdate(value: CommonOption[js.Any] => js.Promise[Stats]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: CommonOption[js.Any] => js.Promise[Stats]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

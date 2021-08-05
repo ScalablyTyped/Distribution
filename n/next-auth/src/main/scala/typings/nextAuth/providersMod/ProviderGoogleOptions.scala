@@ -14,25 +14,19 @@ trait ProviderGoogleOptions extends StObject {
 }
 object ProviderGoogleOptions {
   
-  @scala.inline
-  def apply(clientId: String, clientSecret: String): ProviderGoogleOptions = {
+  inline def apply(clientId: String, clientSecret: String): ProviderGoogleOptions = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderGoogleOptions]
   }
   
-  @scala.inline
-  implicit class ProviderGoogleOptionsMutableBuilder[Self <: ProviderGoogleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderGoogleOptions](x: Self) {
     
-    @scala.inline
-    def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
+    inline def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationUrlUndefined: Self = StObject.set(x, "authorizationUrl", js.undefined)
+    inline def setAuthorizationUrlUndefined: Self = StObject.set(x, "authorizationUrl", js.undefined)
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
   }
 }

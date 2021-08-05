@@ -47,8 +47,7 @@ trait TickFormatStop extends StObject {
 }
 object TickFormatStop {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dtickrange: js.Tuple2[DTickValue | Null, DTickValue | Null],
     enabled: Boolean,
     name: String,
@@ -59,22 +58,16 @@ object TickFormatStop {
     __obj.asInstanceOf[TickFormatStop]
   }
   
-  @scala.inline
-  implicit class TickFormatStopMutableBuilder[Self <: TickFormatStop] (val x: Self) extends AnyVal {
+  extension [Self <: TickFormatStop](x: Self) {
     
-    @scala.inline
-    def setDtickrange(value: js.Tuple2[DTickValue | Null, DTickValue | Null]): Self = StObject.set(x, "dtickrange", value.asInstanceOf[js.Any])
+    inline def setDtickrange(value: js.Tuple2[DTickValue | Null, DTickValue | Null]): Self = StObject.set(x, "dtickrange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateitemname(value: String): Self = StObject.set(x, "templateitemname", value.asInstanceOf[js.Any])
+    inline def setTemplateitemname(value: String): Self = StObject.set(x, "templateitemname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

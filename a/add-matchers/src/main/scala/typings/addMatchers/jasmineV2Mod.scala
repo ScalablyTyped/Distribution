@@ -13,8 +13,7 @@ object jasmineV2Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getJasmineV2Adapter(scope: BeforeEach): js.Function2[
+  inline def getJasmineV2Adapter(scope: BeforeEach): js.Function2[
     /* name */ String, 
     /* matcher */ CustomMatcher, 
     StringDictionary[

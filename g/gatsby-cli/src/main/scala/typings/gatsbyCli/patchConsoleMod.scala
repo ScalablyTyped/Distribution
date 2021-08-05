@@ -11,6 +11,5 @@ object patchConsoleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def patchConsole(reporter: Reporter_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("patchConsole")(reporter.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def patchConsole(reporter: Reporter_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("patchConsole")(reporter.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

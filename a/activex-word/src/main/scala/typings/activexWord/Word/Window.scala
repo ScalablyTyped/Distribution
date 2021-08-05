@@ -215,6 +215,6 @@ trait Window extends StObject {
   
   var WindowState: WdWindowState = js.native
   
-  @JSName("Word.Window_typekey")
+  /* private */ @JSName("Word.Window_typekey")
   var WordDotWindow_typekey: Window = js.native
 }

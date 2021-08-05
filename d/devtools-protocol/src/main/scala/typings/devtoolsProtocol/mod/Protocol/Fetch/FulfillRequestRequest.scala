@@ -43,46 +43,33 @@ trait FulfillRequestRequest extends StObject {
 }
 object FulfillRequestRequest {
   
-  @scala.inline
-  def apply(requestId: RequestId, responseCode: integer): FulfillRequestRequest = {
+  inline def apply(requestId: RequestId, responseCode: integer): FulfillRequestRequest = {
     val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any], responseCode = responseCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FulfillRequestRequest]
   }
   
-  @scala.inline
-  implicit class FulfillRequestRequestMutableBuilder[Self <: FulfillRequestRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FulfillRequestRequest](x: Self) {
     
-    @scala.inline
-    def setBinaryResponseHeaders(value: String): Self = StObject.set(x, "binaryResponseHeaders", value.asInstanceOf[js.Any])
+    inline def setBinaryResponseHeaders(value: String): Self = StObject.set(x, "binaryResponseHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryResponseHeadersUndefined: Self = StObject.set(x, "binaryResponseHeaders", js.undefined)
+    inline def setBinaryResponseHeadersUndefined: Self = StObject.set(x, "binaryResponseHeaders", js.undefined)
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCode(value: integer): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
+    inline def setResponseCode(value: integer): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseHeaders(value: js.Array[HeaderEntry]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+    inline def setResponseHeaders(value: js.Array[HeaderEntry]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
+    inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    @scala.inline
-    def setResponseHeadersVarargs(value: HeaderEntry*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+    inline def setResponseHeadersVarargs(value: HeaderEntry*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setResponsePhrase(value: String): Self = StObject.set(x, "responsePhrase", value.asInstanceOf[js.Any])
+    inline def setResponsePhrase(value: String): Self = StObject.set(x, "responsePhrase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsePhraseUndefined: Self = StObject.set(x, "responsePhrase", js.undefined)
+    inline def setResponsePhraseUndefined: Self = StObject.set(x, "responsePhrase", js.undefined)
   }
 }

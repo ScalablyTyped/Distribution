@@ -8,31 +8,25 @@ object jqueryTypeaheadStrings {
   
   @js.native
   sealed trait any extends StObject
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
   sealed trait asc extends StObject
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
   sealed trait desc extends StObject
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
   sealed trait localStorage extends StObject
-  @scala.inline
-  def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
+  inline def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
   
   @js.native
   sealed trait sessionStorage extends StObject
-  @scala.inline
-  def sessionStorage: sessionStorage = "sessionStorage".asInstanceOf[sessionStorage]
+  inline def sessionStorage: sessionStorage = "sessionStorage".asInstanceOf[sessionStorage]
   
   @js.native
   sealed trait string extends StObject
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
 }

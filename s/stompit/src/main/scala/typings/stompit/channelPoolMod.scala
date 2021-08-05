@@ -31,8 +31,7 @@ object channelPoolMod {
   }
   object ChannelPool {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       channel: js.Function2[/* err */ Error | Null, /* channel */ typings.stompit.channelMod.^, Unit] => Unit,
       close: () => Unit
     ): ChannelPool = {
@@ -40,16 +39,13 @@ object channelPoolMod {
       __obj.asInstanceOf[ChannelPool]
     }
     
-    @scala.inline
-    implicit class ChannelPoolMutableBuilder[Self <: ChannelPool] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelPool](x: Self) {
       
-      @scala.inline
-      def setChannel(
+      inline def setChannel(
         value: js.Function2[/* err */ Error | Null, /* channel */ typings.stompit.channelMod.^, Unit] => Unit
       ): Self = StObject.set(x, "channel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     }
   }
   
@@ -69,50 +65,36 @@ object channelPoolMod {
   }
   object ChannelPoolOptions {
     
-    @scala.inline
-    def apply(): ChannelPoolOptions = {
+    inline def apply(): ChannelPoolOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChannelPoolOptions]
     }
     
-    @scala.inline
-    implicit class ChannelPoolOptionsMutableBuilder[Self <: ChannelPoolOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelPoolOptions](x: Self) {
       
-      @scala.inline
-      def setChannelOptions(value: ChannelOptions): Self = StObject.set(x, "channelOptions", value.asInstanceOf[js.Any])
+      inline def setChannelOptions(value: ChannelOptions): Self = StObject.set(x, "channelOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelOptionsUndefined: Self = StObject.set(x, "channelOptions", js.undefined)
+      inline def setChannelOptionsUndefined: Self = StObject.set(x, "channelOptions", js.undefined)
       
-      @scala.inline
-      def setFreeExcessTimeout(value: Double): Self = StObject.set(x, "freeExcessTimeout", value.asInstanceOf[js.Any])
+      inline def setFreeExcessTimeout(value: Double): Self = StObject.set(x, "freeExcessTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreeExcessTimeoutUndefined: Self = StObject.set(x, "freeExcessTimeout", js.undefined)
+      inline def setFreeExcessTimeoutUndefined: Self = StObject.set(x, "freeExcessTimeout", js.undefined)
       
-      @scala.inline
-      def setMaxChannels(value: Double): Self = StObject.set(x, "maxChannels", value.asInstanceOf[js.Any])
+      inline def setMaxChannels(value: Double): Self = StObject.set(x, "maxChannels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxChannelsUndefined: Self = StObject.set(x, "maxChannels", js.undefined)
+      inline def setMaxChannelsUndefined: Self = StObject.set(x, "maxChannels", js.undefined)
       
-      @scala.inline
-      def setMinChannels(value: Double): Self = StObject.set(x, "minChannels", value.asInstanceOf[js.Any])
+      inline def setMinChannels(value: Double): Self = StObject.set(x, "minChannels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinChannelsUndefined: Self = StObject.set(x, "minChannels", js.undefined)
+      inline def setMinChannelsUndefined: Self = StObject.set(x, "minChannels", js.undefined)
       
-      @scala.inline
-      def setMinFreeChannels(value: Double): Self = StObject.set(x, "minFreeChannels", value.asInstanceOf[js.Any])
+      inline def setMinFreeChannels(value: Double): Self = StObject.set(x, "minFreeChannels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinFreeChannelsUndefined: Self = StObject.set(x, "minFreeChannels", js.undefined)
+      inline def setMinFreeChannelsUndefined: Self = StObject.set(x, "minFreeChannels", js.undefined)
       
-      @scala.inline
-      def setRequestChannelTimeout(value: Double): Self = StObject.set(x, "requestChannelTimeout", value.asInstanceOf[js.Any])
+      inline def setRequestChannelTimeout(value: Double): Self = StObject.set(x, "requestChannelTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestChannelTimeoutUndefined: Self = StObject.set(x, "requestChannelTimeout", js.undefined)
+      inline def setRequestChannelTimeoutUndefined: Self = StObject.set(x, "requestChannelTimeout", js.undefined)
     }
   }
 }

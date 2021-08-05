@@ -16,8 +16,7 @@ trait WorkItemRelationType
 }
 object WorkItemRelationType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     attributes: StringDictionary[js.Any],
     name: String,
@@ -28,10 +27,8 @@ object WorkItemRelationType {
     __obj.asInstanceOf[WorkItemRelationType]
   }
   
-  @scala.inline
-  implicit class WorkItemRelationTypeMutableBuilder[Self <: WorkItemRelationType] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemRelationType](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
   }
 }

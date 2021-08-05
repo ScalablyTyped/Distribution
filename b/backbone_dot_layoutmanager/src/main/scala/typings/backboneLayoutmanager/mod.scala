@@ -68,21 +68,15 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def cache(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def cache(path: String, contents: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cache")(path.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def cache(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def cache(path: String, contents: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cache")(path.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def cleanViews(views: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanViews")(views.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def cleanViews(views: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanViews")(views.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def configure(options: LayoutManagerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def configure(options: LayoutManagerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def setupView(views: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupView")(views.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def setupView(views: js.Any, options: LayoutOptions[Model[js.Any, ModelSetOptions, js.Object]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupView")(views.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setupView(views: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupView")(views.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setupView(views: js.Any, options: LayoutOptions[Model[js.Any, ModelSetOptions, js.Object]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupView")(views.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   trait LayoutManagerOptions extends StObject {
@@ -93,26 +87,20 @@ object mod {
   }
   object LayoutManagerOptions {
     
-    @scala.inline
-    def apply(): LayoutManagerOptions = {
+    inline def apply(): LayoutManagerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutManagerOptions]
     }
     
-    @scala.inline
-    implicit class LayoutManagerOptionsMutableBuilder[Self <: LayoutManagerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutManagerOptions](x: Self) {
       
-      @scala.inline
-      def setEl(value: Boolean): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+      inline def setEl(value: Boolean): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElUndefined: Self = StObject.set(x, "el", js.undefined)
+      inline def setElUndefined: Self = StObject.set(x, "el", js.undefined)
       
-      @scala.inline
-      def setManage(value: Boolean): Self = StObject.set(x, "manage", value.asInstanceOf[js.Any])
+      inline def setManage(value: Boolean): Self = StObject.set(x, "manage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManageUndefined: Self = StObject.set(x, "manage", js.undefined)
+      inline def setManageUndefined: Self = StObject.set(x, "manage", js.undefined)
     }
   }
   
@@ -126,26 +114,20 @@ object mod {
   }
   object LayoutOptions {
     
-    @scala.inline
-    def apply[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](): LayoutOptions[TModel] = {
+    inline def apply[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](): LayoutOptions[TModel] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutOptions[TModel]]
     }
     
-    @scala.inline
-    implicit class LayoutOptionsMutableBuilder[Self <: LayoutOptions[?], TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] (val x: Self & LayoutOptions[TModel]) extends AnyVal {
+    extension [Self <: LayoutOptions[?], TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](x: Self & LayoutOptions[TModel]) {
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      @scala.inline
-      def setViews(value: StringDictionary[View[TModel]]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      inline def setViews(value: StringDictionary[View[TModel]]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     }
   }
 }

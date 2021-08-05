@@ -46,23 +46,18 @@ object mod {
   }
   object BreadcrumbProps {
     
-    @scala.inline
-    def apply(data: LocationDescriptor[LocationState] & Title): BreadcrumbProps = {
+    inline def apply(data: LocationDescriptor[LocationState] & Title): BreadcrumbProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[BreadcrumbProps]
     }
     
-    @scala.inline
-    implicit class BreadcrumbPropsMutableBuilder[Self <: BreadcrumbProps] (val x: Self) extends AnyVal {
+    extension [Self <: BreadcrumbProps](x: Self) {
       
-      @scala.inline
-      def setData(value: LocationDescriptor[LocationState] & Title): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: LocationDescriptor[LocationState] & Title): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     }
   }
   
@@ -80,44 +75,32 @@ object mod {
   }
   object BreadcrumbsProps {
     
-    @scala.inline
-    def apply(): BreadcrumbsProps = {
+    inline def apply(): BreadcrumbsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BreadcrumbsProps]
     }
     
-    @scala.inline
-    implicit class BreadcrumbsPropsMutableBuilder[Self <: BreadcrumbsProps] (val x: Self) extends AnyVal {
+    extension [Self <: BreadcrumbsProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: ReactNode): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: ReactNode): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setSetCrumbs(value: /* crumbs */ Crumbs => ReactNode): Self = StObject.set(x, "setCrumbs", js.Any.fromFunction1(value))
+      inline def setSetCrumbs(value: /* crumbs */ Crumbs => ReactNode): Self = StObject.set(x, "setCrumbs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetCrumbsUndefined: Self = StObject.set(x, "setCrumbs", js.undefined)
+      inline def setSetCrumbsUndefined: Self = StObject.set(x, "setCrumbs", js.undefined)
       
-      @scala.inline
-      def setWrapper(value: StatelessComponent[js.Object] | (ComponentClass[js.Object, ComponentState])): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: StatelessComponent[js.Object] | (ComponentClass[js.Object, ComponentState])): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+      inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     }
   }
   

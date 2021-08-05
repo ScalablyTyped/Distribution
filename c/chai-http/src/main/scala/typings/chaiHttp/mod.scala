@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(chai: js.Any, utils: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(chai.asInstanceOf[js.Any], utils.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(chai: js.Any, utils: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(chai.asInstanceOf[js.Any], utils.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("chai-http", JSImport.Namespace)
   @js.native
@@ -71,17 +70,14 @@ object mod {
       }
       object ChaiStatic {
         
-        @scala.inline
-        def apply(request: ChaiHttpRequest): ChaiStatic = {
+        inline def apply(request: ChaiHttpRequest): ChaiStatic = {
           val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
           __obj.asInstanceOf[ChaiStatic]
         }
         
-        @scala.inline
-        implicit class ChaiStaticMutableBuilder[Self <: ChaiStatic] (val x: Self) extends AnyVal {
+        extension [Self <: ChaiStatic](x: Self) {
           
-          @scala.inline
-          def setRequest(value: ChaiHttpRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+          inline def setRequest(value: ChaiHttpRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         }
       }
       
@@ -91,17 +87,14 @@ object mod {
       }
       object TypeComparison {
         
-        @scala.inline
-        def apply(ip: Assertion): TypeComparison = {
+        inline def apply(ip: Assertion): TypeComparison = {
           val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any])
           __obj.asInstanceOf[TypeComparison]
         }
         
-        @scala.inline
-        implicit class TypeComparisonMutableBuilder[Self <: TypeComparison] (val x: Self) extends AnyVal {
+        extension [Self <: TypeComparison](x: Self) {
           
-          @scala.inline
-          def setIp(value: Assertion): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+          inline def setIp(value: Assertion): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
         }
       }
     }

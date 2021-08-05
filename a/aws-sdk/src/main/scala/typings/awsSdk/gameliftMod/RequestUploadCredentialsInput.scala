@@ -13,16 +13,13 @@ trait RequestUploadCredentialsInput extends StObject {
 }
 object RequestUploadCredentialsInput {
   
-  @scala.inline
-  def apply(BuildId: BuildIdOrArn): RequestUploadCredentialsInput = {
+  inline def apply(BuildId: BuildIdOrArn): RequestUploadCredentialsInput = {
     val __obj = js.Dynamic.literal(BuildId = BuildId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestUploadCredentialsInput]
   }
   
-  @scala.inline
-  implicit class RequestUploadCredentialsInputMutableBuilder[Self <: RequestUploadCredentialsInput] (val x: Self) extends AnyVal {
+  extension [Self <: RequestUploadCredentialsInput](x: Self) {
     
-    @scala.inline
-    def setBuildId(value: BuildIdOrArn): Self = StObject.set(x, "BuildId", value.asInstanceOf[js.Any])
+    inline def setBuildId(value: BuildIdOrArn): Self = StObject.set(x, "BuildId", value.asInstanceOf[js.Any])
   }
 }

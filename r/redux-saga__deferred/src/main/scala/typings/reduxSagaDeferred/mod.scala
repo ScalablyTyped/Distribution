@@ -10,11 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[R](): Deferred[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Deferred[R]]
+  inline def default[R](): Deferred[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Deferred[R]]
   
-  @scala.inline
-  def arrayOfDeferred[R](length: Double): js.Array[Deferred[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfDeferred")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[Deferred[R]]]
+  inline def arrayOfDeferred[R](length: Double): js.Array[Deferred[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfDeferred")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[Deferred[R]]]
   
   trait Deferred[R] extends StObject {
     
@@ -26,23 +24,18 @@ object mod {
   }
   object Deferred {
     
-    @scala.inline
-    def apply[R](promise: js.Promise[R], reject: js.Any => Unit, resolve: R => Unit): Deferred[R] = {
+    inline def apply[R](promise: js.Promise[R], reject: js.Any => Unit, resolve: R => Unit): Deferred[R] = {
       val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reject = js.Any.fromFunction1(reject), resolve = js.Any.fromFunction1(resolve))
       __obj.asInstanceOf[Deferred[R]]
     }
     
-    @scala.inline
-    implicit class DeferredMutableBuilder[Self <: Deferred[?], R] (val x: Self & Deferred[R]) extends AnyVal {
+    extension [Self <: Deferred[?], R](x: Self & Deferred[R]) {
       
-      @scala.inline
-      def setPromise(value: js.Promise[R]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Promise[R]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReject(value: js.Any => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+      inline def setReject(value: js.Any => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolve(value: R => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: R => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
   }
 }

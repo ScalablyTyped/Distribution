@@ -11,16 +11,13 @@ trait PickImplwarningWarning extends StObject {
 }
 object PickImplwarningWarning {
   
-  @scala.inline
-  def apply(warning: String): PickImplwarningWarning = {
+  inline def apply(warning: String): PickImplwarningWarning = {
     val __obj = js.Dynamic.literal(warning = warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplwarningWarning]
   }
   
-  @scala.inline
-  implicit class PickImplwarningWarningMutableBuilder[Self <: PickImplwarningWarning] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplwarningWarning](x: Self) {
     
-    @scala.inline
-    def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
   }
 }

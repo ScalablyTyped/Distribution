@@ -34,26 +34,20 @@ object linkModelsMod {
   }
   object Operation {
     
-    @scala.inline
-    def apply(): Operation = {
+    inline def apply(): Operation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Operation]
     }
     
-    @scala.inline
-    implicit class OperationMutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
+    extension [Self <: Operation](x: Self) {
       
-      @scala.inline
-      def setDisplay(value: OperationDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: OperationDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -81,38 +75,28 @@ object linkModelsMod {
   }
   object OperationDisplay {
     
-    @scala.inline
-    def apply(): OperationDisplay = {
+    inline def apply(): OperationDisplay = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OperationDisplay]
     }
     
-    @scala.inline
-    implicit class OperationDisplayMutableBuilder[Self <: OperationDisplay] (val x: Self) extends AnyVal {
+    extension [Self <: OperationDisplay](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+      inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+      inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
       
-      @scala.inline
-      def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+      inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     }
   }
   
@@ -161,17 +145,14 @@ object linkModelsMod {
   }
   object ResourceLinkFilter {
     
-    @scala.inline
-    def apply(targetId: String): ResourceLinkFilter = {
+    inline def apply(targetId: String): ResourceLinkFilter = {
       val __obj = js.Dynamic.literal(targetId = targetId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceLinkFilter]
     }
     
-    @scala.inline
-    implicit class ResourceLinkFilterMutableBuilder[Self <: ResourceLinkFilter] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceLinkFilter](x: Self) {
       
-      @scala.inline
-      def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+      inline def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,29 +175,22 @@ object linkModelsMod {
   }
   object ResourceLinkProperties {
     
-    @scala.inline
-    def apply(targetId: String): ResourceLinkProperties = {
+    inline def apply(targetId: String): ResourceLinkProperties = {
       val __obj = js.Dynamic.literal(targetId = targetId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceLinkProperties]
     }
     
-    @scala.inline
-    implicit class ResourceLinkPropertiesMutableBuilder[Self <: ResourceLinkProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceLinkProperties](x: Self) {
       
-      @scala.inline
-      def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+      inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+      inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
       
-      @scala.inline
-      def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
+      inline def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceIdUndefined: Self = StObject.set(x, "sourceId", js.undefined)
+      inline def setSourceIdUndefined: Self = StObject.set(x, "sourceId", js.undefined)
       
-      @scala.inline
-      def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+      inline def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     }
   }
   

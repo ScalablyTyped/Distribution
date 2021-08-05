@@ -10,19 +10,15 @@ trait TextEncodeOptions extends StObject {
 }
 object TextEncodeOptions {
   
-  @scala.inline
-  def apply(): TextEncodeOptions = {
+  inline def apply(): TextEncodeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextEncodeOptions]
   }
   
-  @scala.inline
-  implicit class TextEncodeOptionsMutableBuilder[Self <: TextEncodeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextEncodeOptions](x: Self) {
     
-    @scala.inline
-    def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
   }
 }

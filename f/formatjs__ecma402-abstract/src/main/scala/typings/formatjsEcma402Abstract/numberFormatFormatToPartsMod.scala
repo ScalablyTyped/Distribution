@@ -17,8 +17,7 @@ object numberFormatFormatToPartsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     numberResult: NumberResult,
     data: NumberFormatLocaleInternalData,
     pl: PluralRules,
@@ -39,8 +38,7 @@ object numberFormatFormatToPartsMod {
   }
   object NumberResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exponent: Double,
       formattedString: String,
       magnitude: Double,
@@ -51,23 +49,17 @@ object numberFormatFormatToPartsMod {
       __obj.asInstanceOf[NumberResult]
     }
     
-    @scala.inline
-    implicit class NumberResultMutableBuilder[Self <: NumberResult] (val x: Self) extends AnyVal {
+    extension [Self <: NumberResult](x: Self) {
       
-      @scala.inline
-      def setExponent(value: Double): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
+      inline def setExponent(value: Double): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormattedString(value: String): Self = StObject.set(x, "formattedString", value.asInstanceOf[js.Any])
+      inline def setFormattedString(value: String): Self = StObject.set(x, "formattedString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
+      inline def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundedNumber(value: Double): Self = StObject.set(x, "roundedNumber", value.asInstanceOf[js.Any])
+      inline def setRoundedNumber(value: Double): Self = StObject.set(x, "roundedNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSign(value: `-1` | `0` | `1`): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
+      inline def setSign(value: `-1` | `0` | `1`): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -74,157 +74,107 @@ trait PartialMDCTextFieldAdapte extends StObject {
 }
 object PartialMDCTextFieldAdapte {
   
-  @scala.inline
-  def apply(): PartialMDCTextFieldAdapte = {
+  inline def apply(): PartialMDCTextFieldAdapte = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialMDCTextFieldAdapte]
   }
   
-  @scala.inline
-  implicit class PartialMDCTextFieldAdapteMutableBuilder[Self <: PartialMDCTextFieldAdapte] (val x: Self) extends AnyVal {
+  extension [Self <: PartialMDCTextFieldAdapte](x: Self) {
     
-    @scala.inline
-    def setActivateLineRipple(value: () => Unit): Self = StObject.set(x, "activateLineRipple", js.Any.fromFunction0(value))
+    inline def setActivateLineRipple(value: () => Unit): Self = StObject.set(x, "activateLineRipple", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setActivateLineRippleUndefined: Self = StObject.set(x, "activateLineRipple", js.undefined)
+    inline def setActivateLineRippleUndefined: Self = StObject.set(x, "activateLineRipple", js.undefined)
     
-    @scala.inline
-    def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+    inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
+    inline def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
     
-    @scala.inline
-    def setCloseOutline(value: () => Unit): Self = StObject.set(x, "closeOutline", js.Any.fromFunction0(value))
+    inline def setCloseOutline(value: () => Unit): Self = StObject.set(x, "closeOutline", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCloseOutlineUndefined: Self = StObject.set(x, "closeOutline", js.undefined)
+    inline def setCloseOutlineUndefined: Self = StObject.set(x, "closeOutline", js.undefined)
     
-    @scala.inline
-    def setDeactivateLineRipple(value: () => Unit): Self = StObject.set(x, "deactivateLineRipple", js.Any.fromFunction0(value))
+    inline def setDeactivateLineRipple(value: () => Unit): Self = StObject.set(x, "deactivateLineRipple", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeactivateLineRippleUndefined: Self = StObject.set(x, "deactivateLineRipple", js.undefined)
+    inline def setDeactivateLineRippleUndefined: Self = StObject.set(x, "deactivateLineRipple", js.undefined)
     
-    @scala.inline
-    def setDeregisterInputInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterInputInteractionHandler", js.Any.fromFunction2(value))
+    inline def setDeregisterInputInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterInputInteractionHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDeregisterInputInteractionHandlerUndefined: Self = StObject.set(x, "deregisterInputInteractionHandler", js.undefined)
+    inline def setDeregisterInputInteractionHandlerUndefined: Self = StObject.set(x, "deregisterInputInteractionHandler", js.undefined)
     
-    @scala.inline
-    def setDeregisterTextFieldInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterTextFieldInteractionHandler", js.Any.fromFunction2(value))
+    inline def setDeregisterTextFieldInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterTextFieldInteractionHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDeregisterTextFieldInteractionHandlerUndefined: Self = StObject.set(x, "deregisterTextFieldInteractionHandler", js.undefined)
+    inline def setDeregisterTextFieldInteractionHandlerUndefined: Self = StObject.set(x, "deregisterTextFieldInteractionHandler", js.undefined)
     
-    @scala.inline
-    def setDeregisterValidationAttributeChangeHandler(value: /* observer */ MutationObserver => Unit): Self = StObject.set(x, "deregisterValidationAttributeChangeHandler", js.Any.fromFunction1(value))
+    inline def setDeregisterValidationAttributeChangeHandler(value: /* observer */ MutationObserver => Unit): Self = StObject.set(x, "deregisterValidationAttributeChangeHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeregisterValidationAttributeChangeHandlerUndefined: Self = StObject.set(x, "deregisterValidationAttributeChangeHandler", js.undefined)
+    inline def setDeregisterValidationAttributeChangeHandlerUndefined: Self = StObject.set(x, "deregisterValidationAttributeChangeHandler", js.undefined)
     
-    @scala.inline
-    def setFloatLabel(value: /* shouldFloat */ Boolean => Unit): Self = StObject.set(x, "floatLabel", js.Any.fromFunction1(value))
+    inline def setFloatLabel(value: /* shouldFloat */ Boolean => Unit): Self = StObject.set(x, "floatLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFloatLabelUndefined: Self = StObject.set(x, "floatLabel", js.undefined)
+    inline def setFloatLabelUndefined: Self = StObject.set(x, "floatLabel", js.undefined)
     
-    @scala.inline
-    def setGetLabelWidth(value: () => Double): Self = StObject.set(x, "getLabelWidth", js.Any.fromFunction0(value))
+    inline def setGetLabelWidth(value: () => Double): Self = StObject.set(x, "getLabelWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLabelWidthUndefined: Self = StObject.set(x, "getLabelWidth", js.undefined)
+    inline def setGetLabelWidthUndefined: Self = StObject.set(x, "getLabelWidth", js.undefined)
     
-    @scala.inline
-    def setGetNativeInput(value: () => MDCTextFieldNativeInputElement | Null): Self = StObject.set(x, "getNativeInput", js.Any.fromFunction0(value))
+    inline def setGetNativeInput(value: () => MDCTextFieldNativeInputElement | Null): Self = StObject.set(x, "getNativeInput", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNativeInputUndefined: Self = StObject.set(x, "getNativeInput", js.undefined)
+    inline def setGetNativeInputUndefined: Self = StObject.set(x, "getNativeInput", js.undefined)
     
-    @scala.inline
-    def setHasClass(value: /* className */ String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+    inline def setHasClass(value: /* className */ String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasClassUndefined: Self = StObject.set(x, "hasClass", js.undefined)
+    inline def setHasClassUndefined: Self = StObject.set(x, "hasClass", js.undefined)
     
-    @scala.inline
-    def setHasLabel(value: () => Boolean): Self = StObject.set(x, "hasLabel", js.Any.fromFunction0(value))
+    inline def setHasLabel(value: () => Boolean): Self = StObject.set(x, "hasLabel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasLabelUndefined: Self = StObject.set(x, "hasLabel", js.undefined)
+    inline def setHasLabelUndefined: Self = StObject.set(x, "hasLabel", js.undefined)
     
-    @scala.inline
-    def setHasOutline(value: () => Boolean): Self = StObject.set(x, "hasOutline", js.Any.fromFunction0(value))
+    inline def setHasOutline(value: () => Boolean): Self = StObject.set(x, "hasOutline", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasOutlineUndefined: Self = StObject.set(x, "hasOutline", js.undefined)
+    inline def setHasOutlineUndefined: Self = StObject.set(x, "hasOutline", js.undefined)
     
-    @scala.inline
-    def setIsFocused(value: () => Boolean): Self = StObject.set(x, "isFocused", js.Any.fromFunction0(value))
+    inline def setIsFocused(value: () => Boolean): Self = StObject.set(x, "isFocused", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
+    inline def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
     
-    @scala.inline
-    def setNotchOutline(value: /* labelWidth */ Double => Unit): Self = StObject.set(x, "notchOutline", js.Any.fromFunction1(value))
+    inline def setNotchOutline(value: /* labelWidth */ Double => Unit): Self = StObject.set(x, "notchOutline", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNotchOutlineUndefined: Self = StObject.set(x, "notchOutline", js.undefined)
+    inline def setNotchOutlineUndefined: Self = StObject.set(x, "notchOutline", js.undefined)
     
-    @scala.inline
-    def setRegisterInputInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "registerInputInteractionHandler", js.Any.fromFunction2(value))
+    inline def setRegisterInputInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "registerInputInteractionHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterInputInteractionHandlerUndefined: Self = StObject.set(x, "registerInputInteractionHandler", js.undefined)
+    inline def setRegisterInputInteractionHandlerUndefined: Self = StObject.set(x, "registerInputInteractionHandler", js.undefined)
     
-    @scala.inline
-    def setRegisterTextFieldInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "registerTextFieldInteractionHandler", js.Any.fromFunction2(value))
+    inline def setRegisterTextFieldInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "registerTextFieldInteractionHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterTextFieldInteractionHandlerUndefined: Self = StObject.set(x, "registerTextFieldInteractionHandler", js.undefined)
+    inline def setRegisterTextFieldInteractionHandlerUndefined: Self = StObject.set(x, "registerTextFieldInteractionHandler", js.undefined)
     
-    @scala.inline
-    def setRegisterValidationAttributeChangeHandler(value: /* handler */ js.Function1[/* attributeNames */ js.Array[String], Unit] => MutationObserver): Self = StObject.set(x, "registerValidationAttributeChangeHandler", js.Any.fromFunction1(value))
+    inline def setRegisterValidationAttributeChangeHandler(value: /* handler */ js.Function1[/* attributeNames */ js.Array[String], Unit] => MutationObserver): Self = StObject.set(x, "registerValidationAttributeChangeHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterValidationAttributeChangeHandlerUndefined: Self = StObject.set(x, "registerValidationAttributeChangeHandler", js.undefined)
+    inline def setRegisterValidationAttributeChangeHandlerUndefined: Self = StObject.set(x, "registerValidationAttributeChangeHandler", js.undefined)
     
-    @scala.inline
-    def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+    inline def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
+    inline def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
     
-    @scala.inline
-    def setRemoveInputAttr(value: /* attr */ String => Unit): Self = StObject.set(x, "removeInputAttr", js.Any.fromFunction1(value))
+    inline def setRemoveInputAttr(value: /* attr */ String => Unit): Self = StObject.set(x, "removeInputAttr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveInputAttrUndefined: Self = StObject.set(x, "removeInputAttr", js.undefined)
+    inline def setRemoveInputAttrUndefined: Self = StObject.set(x, "removeInputAttr", js.undefined)
     
-    @scala.inline
-    def setSetInputAttr(value: (/* attr */ String, /* value */ String) => Unit): Self = StObject.set(x, "setInputAttr", js.Any.fromFunction2(value))
+    inline def setSetInputAttr(value: (/* attr */ String, /* value */ String) => Unit): Self = StObject.set(x, "setInputAttr", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetInputAttrUndefined: Self = StObject.set(x, "setInputAttr", js.undefined)
+    inline def setSetInputAttrUndefined: Self = StObject.set(x, "setInputAttr", js.undefined)
     
-    @scala.inline
-    def setSetLabelRequired(value: /* isRequired */ Boolean => Unit): Self = StObject.set(x, "setLabelRequired", js.Any.fromFunction1(value))
+    inline def setSetLabelRequired(value: /* isRequired */ Boolean => Unit): Self = StObject.set(x, "setLabelRequired", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLabelRequiredUndefined: Self = StObject.set(x, "setLabelRequired", js.undefined)
+    inline def setSetLabelRequiredUndefined: Self = StObject.set(x, "setLabelRequired", js.undefined)
     
-    @scala.inline
-    def setSetLineRippleTransformOrigin(value: /* normalizedX */ Double => Unit): Self = StObject.set(x, "setLineRippleTransformOrigin", js.Any.fromFunction1(value))
+    inline def setSetLineRippleTransformOrigin(value: /* normalizedX */ Double => Unit): Self = StObject.set(x, "setLineRippleTransformOrigin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLineRippleTransformOriginUndefined: Self = StObject.set(x, "setLineRippleTransformOrigin", js.undefined)
+    inline def setSetLineRippleTransformOriginUndefined: Self = StObject.set(x, "setLineRippleTransformOrigin", js.undefined)
     
-    @scala.inline
-    def setShakeLabel(value: /* shouldShake */ Boolean => Unit): Self = StObject.set(x, "shakeLabel", js.Any.fromFunction1(value))
+    inline def setShakeLabel(value: /* shouldShake */ Boolean => Unit): Self = StObject.set(x, "shakeLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShakeLabelUndefined: Self = StObject.set(x, "shakeLabel", js.undefined)
+    inline def setShakeLabelUndefined: Self = StObject.set(x, "shakeLabel", js.undefined)
   }
 }

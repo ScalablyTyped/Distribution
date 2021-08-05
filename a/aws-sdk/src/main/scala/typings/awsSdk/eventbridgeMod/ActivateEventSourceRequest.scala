@@ -13,16 +13,13 @@ trait ActivateEventSourceRequest extends StObject {
 }
 object ActivateEventSourceRequest {
   
-  @scala.inline
-  def apply(Name: EventSourceName): ActivateEventSourceRequest = {
+  inline def apply(Name: EventSourceName): ActivateEventSourceRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivateEventSourceRequest]
   }
   
-  @scala.inline
-  implicit class ActivateEventSourceRequestMutableBuilder[Self <: ActivateEventSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ActivateEventSourceRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: EventSourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EventSourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

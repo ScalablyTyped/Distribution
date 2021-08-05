@@ -13,19 +13,15 @@ trait GetMasterAccountResponse extends StObject {
 }
 object GetMasterAccountResponse {
   
-  @scala.inline
-  def apply(): GetMasterAccountResponse = {
+  inline def apply(): GetMasterAccountResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetMasterAccountResponse]
   }
   
-  @scala.inline
-  implicit class GetMasterAccountResponseMutableBuilder[Self <: GetMasterAccountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetMasterAccountResponse](x: Self) {
     
-    @scala.inline
-    def setMaster(value: Invitation): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
+    inline def setMaster(value: Invitation): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterUndefined: Self = StObject.set(x, "master", js.undefined)
+    inline def setMasterUndefined: Self = StObject.set(x, "master", js.undefined)
   }
 }

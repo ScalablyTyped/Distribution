@@ -18,23 +18,18 @@ object anon {
   }
   object DictenvName {
     
-    @scala.inline
-    def apply(common: js.Any): DictenvName = {
+    inline def apply(common: js.Any): DictenvName = {
       val __obj = js.Dynamic.literal(common = common.asInstanceOf[js.Any])
       __obj.asInstanceOf[DictenvName]
     }
     
-    @scala.inline
-    implicit class DictenvNameMutableBuilder[Self <: DictenvName] (val x: Self) extends AnyVal {
+    extension [Self <: DictenvName](x: Self) {
       
-      @scala.inline
-      def setCommon(value: js.Any): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+      inline def setCommon(value: js.Any): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceEnv(value: String): Self = StObject.set(x, "forceEnv", value.asInstanceOf[js.Any])
+      inline def setForceEnv(value: String): Self = StObject.set(x, "forceEnv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceEnvUndefined: Self = StObject.set(x, "forceEnv", js.undefined)
+      inline def setForceEnvUndefined: Self = StObject.set(x, "forceEnv", js.undefined)
     }
   }
 }

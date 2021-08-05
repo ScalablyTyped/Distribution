@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlLegendPosition extends StObject
 object XlLegendPosition {
   
-  @scala.inline
-  def xlLegendPositionBottom: `-4107` = -4107.asInstanceOf[`-4107`]
+  inline def xlLegendPositionBottom: `-4107` = -4107.asInstanceOf[`-4107`]
   
-  @scala.inline
-  def xlLegendPositionCorner: `2` = 2.asInstanceOf[`2`]
+  inline def xlLegendPositionCorner: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlLegendPositionCustom: `-4161` = -4161.asInstanceOf[`-4161`]
+  inline def xlLegendPositionCustom: `-4161` = -4161.asInstanceOf[`-4161`]
   
-  @scala.inline
-  def xlLegendPositionLeft: `-4131` = -4131.asInstanceOf[`-4131`]
+  inline def xlLegendPositionLeft: `-4131` = -4131.asInstanceOf[`-4131`]
   
-  @scala.inline
-  def xlLegendPositionRight: `-4152` = -4152.asInstanceOf[`-4152`]
+  inline def xlLegendPositionRight: `-4152` = -4152.asInstanceOf[`-4152`]
   
-  @scala.inline
-  def xlLegendPositionTop: `-4160` = -4160.asInstanceOf[`-4160`]
+  inline def xlLegendPositionTop: `-4160` = -4160.asInstanceOf[`-4160`]
 }

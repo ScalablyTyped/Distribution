@@ -18,8 +18,7 @@ object avgPoolMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def avgPool[T /* <: Tensor3D | Tensor4D */](
+  inline def avgPool[T /* <: Tensor3D | Tensor4D */](
     x: T | TensorLike,
     filterSize: (js.Tuple2[Double, Double]) | Double,
     strides: (js.Tuple2[Double, Double]) | Double,

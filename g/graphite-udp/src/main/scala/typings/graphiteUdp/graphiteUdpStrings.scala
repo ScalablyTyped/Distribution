@@ -8,11 +8,9 @@ object graphiteUdpStrings {
   
   @js.native
   sealed trait udp4 extends StObject
-  @scala.inline
-  def udp4: udp4 = "udp4".asInstanceOf[udp4]
+  inline def udp4: udp4 = "udp4".asInstanceOf[udp4]
   
   @js.native
   sealed trait udp6 extends StObject
-  @scala.inline
-  def udp6: udp6 = "udp6".asInstanceOf[udp6]
+  inline def udp6: udp6 = "udp6".asInstanceOf[udp6]
 }

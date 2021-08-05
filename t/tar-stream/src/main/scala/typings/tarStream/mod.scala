@@ -31,15 +31,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def extract(): Extract_ = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")().asInstanceOf[Extract_]
-  @scala.inline
-  def extract(opts: WritableOptions): Extract_ = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(opts.asInstanceOf[js.Any]).asInstanceOf[Extract_]
+  inline def extract(): Extract_ = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")().asInstanceOf[Extract_]
+  inline def extract(opts: WritableOptions): Extract_ = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(opts.asInstanceOf[js.Any]).asInstanceOf[Extract_]
   
-  @scala.inline
-  def pack(): Pack_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")().asInstanceOf[Pack_]
-  @scala.inline
-  def pack(opts: ReadableOptions): Pack_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(opts.asInstanceOf[js.Any]).asInstanceOf[Pack_]
+  inline def pack(): Pack_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")().asInstanceOf[Pack_]
+  inline def pack(opts: ReadableOptions): Pack_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(opts.asInstanceOf[js.Any]).asInstanceOf[Pack_]
   
   type Callback = js.Function1[/* err */ js.UndefOr[Error | Null], js.Any]
   
@@ -83,91 +79,64 @@ object mod {
   }
   object Headers {
     
-    @scala.inline
-    def apply(name: String): Headers = {
+    inline def apply(name: String): Headers = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Headers]
     }
     
-    @scala.inline
-    implicit class HeadersMutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
+    extension [Self <: Headers](x: Self) {
       
-      @scala.inline
-      def setDevmajor(value: Double): Self = StObject.set(x, "devmajor", value.asInstanceOf[js.Any])
+      inline def setDevmajor(value: Double): Self = StObject.set(x, "devmajor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevmajorUndefined: Self = StObject.set(x, "devmajor", js.undefined)
+      inline def setDevmajorUndefined: Self = StObject.set(x, "devmajor", js.undefined)
       
-      @scala.inline
-      def setDevminor(value: Double): Self = StObject.set(x, "devminor", value.asInstanceOf[js.Any])
+      inline def setDevminor(value: Double): Self = StObject.set(x, "devminor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevminorUndefined: Self = StObject.set(x, "devminor", js.undefined)
+      inline def setDevminorUndefined: Self = StObject.set(x, "devminor", js.undefined)
       
-      @scala.inline
-      def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
+      inline def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
       
-      @scala.inline
-      def setGname(value: String): Self = StObject.set(x, "gname", value.asInstanceOf[js.Any])
+      inline def setGname(value: String): Self = StObject.set(x, "gname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGnameUndefined: Self = StObject.set(x, "gname", js.undefined)
+      inline def setGnameUndefined: Self = StObject.set(x, "gname", js.undefined)
       
-      @scala.inline
-      def setLinkname(value: String): Self = StObject.set(x, "linkname", value.asInstanceOf[js.Any])
+      inline def setLinkname(value: String): Self = StObject.set(x, "linkname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinknameNull: Self = StObject.set(x, "linkname", null)
+      inline def setLinknameNull: Self = StObject.set(x, "linkname", null)
       
-      @scala.inline
-      def setLinknameUndefined: Self = StObject.set(x, "linkname", js.undefined)
+      inline def setLinknameUndefined: Self = StObject.set(x, "linkname", js.undefined)
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: file | link | symlink | `character-device` | `block-device` | directory | fifo | `contiguous-file` | `pax-header` | `pax-global-header` | `gnu-long-link-path` | `gnu-long-path`
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeNull: Self = StObject.set(x, "type", null)
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+      inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
       
-      @scala.inline
-      def setUname(value: String): Self = StObject.set(x, "uname", value.asInstanceOf[js.Any])
+      inline def setUname(value: String): Self = StObject.set(x, "uname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnameUndefined: Self = StObject.set(x, "uname", js.undefined)
+      inline def setUnameUndefined: Self = StObject.set(x, "uname", js.undefined)
     }
   }
   

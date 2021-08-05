@@ -45,49 +45,35 @@ trait SchemaSourceOperationRequest extends StObject {
 }
 object SchemaSourceOperationRequest {
   
-  @scala.inline
-  def apply(): SchemaSourceOperationRequest = {
+  inline def apply(): SchemaSourceOperationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSourceOperationRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSourceOperationRequestMutableBuilder[Self <: SchemaSourceOperationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSourceOperationRequest](x: Self) {
     
-    @scala.inline
-    def setGetMetadata(value: SchemaSourceGetMetadataRequest): Self = StObject.set(x, "getMetadata", value.asInstanceOf[js.Any])
+    inline def setGetMetadata(value: SchemaSourceGetMetadataRequest): Self = StObject.set(x, "getMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMetadataUndefined: Self = StObject.set(x, "getMetadata", js.undefined)
+    inline def setGetMetadataUndefined: Self = StObject.set(x, "getMetadata", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
+    inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
+    inline def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
     
-    @scala.inline
-    def setSplit(value: SchemaSourceSplitRequest): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+    inline def setSplit(value: SchemaSourceSplitRequest): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
+    inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
     
-    @scala.inline
-    def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
+    inline def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
     
-    @scala.inline
-    def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
+    inline def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
+    inline def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
   }
 }

@@ -20,25 +20,19 @@ trait ReposGetTopReferrersRequestOptions extends StObject {
 }
 object ReposGetTopReferrersRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposGetTopReferrersRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposGetTopReferrersRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/traffic/popular/referrers")
     __obj.asInstanceOf[ReposGetTopReferrersRequestOptions]
   }
   
-  @scala.inline
-  implicit class ReposGetTopReferrersRequestOptionsMutableBuilder[Self <: ReposGetTopReferrersRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetTopReferrersRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashtrafficSlashpopularSlashreferrers): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashtrafficSlashpopularSlashreferrers): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -15,12 +15,9 @@ object dynamicQueriesUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def identifyDynamicQueryNodes(typeChecker: TypeChecker, sourceFile: SourceFile): RemoveParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("identifyDynamicQueryNodes")(typeChecker.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[RemoveParameter]
+  inline def identifyDynamicQueryNodes(typeChecker: TypeChecker, sourceFile: SourceFile): RemoveParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("identifyDynamicQueryNodes")(typeChecker.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[RemoveParameter]
   
-  @scala.inline
-  def removeOptionsParameter(node: CallExpression): CallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("removeOptionsParameter")(node.asInstanceOf[js.Any]).asInstanceOf[CallExpression]
+  inline def removeOptionsParameter(node: CallExpression): CallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("removeOptionsParameter")(node.asInstanceOf[js.Any]).asInstanceOf[CallExpression]
   
-  @scala.inline
-  def removeStaticFlag(node: ObjectLiteralExpression): ObjectLiteralExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStaticFlag")(node.asInstanceOf[js.Any]).asInstanceOf[ObjectLiteralExpression]
+  inline def removeStaticFlag(node: ObjectLiteralExpression): ObjectLiteralExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStaticFlag")(node.asInstanceOf[js.Any]).asInstanceOf[ObjectLiteralExpression]
 }

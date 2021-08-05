@@ -14,34 +14,25 @@ trait DeliveryControl extends StObject {
 }
 object DeliveryControl {
   
-  @scala.inline
-  def apply(): DeliveryControl = {
+  inline def apply(): DeliveryControl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeliveryControl]
   }
   
-  @scala.inline
-  implicit class DeliveryControlMutableBuilder[Self <: DeliveryControl] (val x: Self) extends AnyVal {
+  extension [Self <: DeliveryControl](x: Self) {
     
-    @scala.inline
-    def setCreativeBlockingLevel(value: String): Self = StObject.set(x, "creativeBlockingLevel", value.asInstanceOf[js.Any])
+    inline def setCreativeBlockingLevel(value: String): Self = StObject.set(x, "creativeBlockingLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeBlockingLevelUndefined: Self = StObject.set(x, "creativeBlockingLevel", js.undefined)
+    inline def setCreativeBlockingLevelUndefined: Self = StObject.set(x, "creativeBlockingLevel", js.undefined)
     
-    @scala.inline
-    def setDeliveryRateType(value: String): Self = StObject.set(x, "deliveryRateType", value.asInstanceOf[js.Any])
+    inline def setDeliveryRateType(value: String): Self = StObject.set(x, "deliveryRateType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryRateTypeUndefined: Self = StObject.set(x, "deliveryRateType", js.undefined)
+    inline def setDeliveryRateTypeUndefined: Self = StObject.set(x, "deliveryRateType", js.undefined)
     
-    @scala.inline
-    def setFrequencyCaps(value: js.Array[DeliveryControlFrequencyCap]): Self = StObject.set(x, "frequencyCaps", value.asInstanceOf[js.Any])
+    inline def setFrequencyCaps(value: js.Array[DeliveryControlFrequencyCap]): Self = StObject.set(x, "frequencyCaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyCapsUndefined: Self = StObject.set(x, "frequencyCaps", js.undefined)
+    inline def setFrequencyCapsUndefined: Self = StObject.set(x, "frequencyCaps", js.undefined)
     
-    @scala.inline
-    def setFrequencyCapsVarargs(value: DeliveryControlFrequencyCap*): Self = StObject.set(x, "frequencyCaps", js.Array(value :_*))
+    inline def setFrequencyCapsVarargs(value: DeliveryControlFrequencyCap*): Self = StObject.set(x, "frequencyCaps", js.Array(value :_*))
   }
 }

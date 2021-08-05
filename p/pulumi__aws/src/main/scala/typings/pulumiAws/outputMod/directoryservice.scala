@@ -37,8 +37,7 @@ object directoryservice {
   }
   object DirectoryConnectSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       availabilityZones: js.Array[String],
       connectIps: js.Array[String],
       customerDnsIps: js.Array[String],
@@ -50,38 +49,27 @@ object directoryservice {
       __obj.asInstanceOf[DirectoryConnectSettings]
     }
     
-    @scala.inline
-    implicit class DirectoryConnectSettingsMutableBuilder[Self <: DirectoryConnectSettings] (val x: Self) extends AnyVal {
+    extension [Self <: DirectoryConnectSettings](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZones(value: js.Array[String]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZones(value: js.Array[String]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
+      inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
       
-      @scala.inline
-      def setConnectIps(value: js.Array[String]): Self = StObject.set(x, "connectIps", value.asInstanceOf[js.Any])
+      inline def setConnectIps(value: js.Array[String]): Self = StObject.set(x, "connectIps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectIpsVarargs(value: String*): Self = StObject.set(x, "connectIps", js.Array(value :_*))
+      inline def setConnectIpsVarargs(value: String*): Self = StObject.set(x, "connectIps", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomerDnsIps(value: js.Array[String]): Self = StObject.set(x, "customerDnsIps", value.asInstanceOf[js.Any])
+      inline def setCustomerDnsIps(value: js.Array[String]): Self = StObject.set(x, "customerDnsIps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerDnsIpsVarargs(value: String*): Self = StObject.set(x, "customerDnsIps", js.Array(value :_*))
+      inline def setCustomerDnsIpsVarargs(value: String*): Self = StObject.set(x, "customerDnsIps", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomerUsername(value: String): Self = StObject.set(x, "customerUsername", value.asInstanceOf[js.Any])
+      inline def setCustomerUsername(value: String): Self = StObject.set(x, "customerUsername", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIds(value: js.Array[String]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: js.Array[String]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,29 +89,22 @@ object directoryservice {
   }
   object DirectoryVpcSettings {
     
-    @scala.inline
-    def apply(availabilityZones: js.Array[String], subnetIds: js.Array[String], vpcId: String): DirectoryVpcSettings = {
+    inline def apply(availabilityZones: js.Array[String], subnetIds: js.Array[String], vpcId: String): DirectoryVpcSettings = {
       val __obj = js.Dynamic.literal(availabilityZones = availabilityZones.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectoryVpcSettings]
     }
     
-    @scala.inline
-    implicit class DirectoryVpcSettingsMutableBuilder[Self <: DirectoryVpcSettings] (val x: Self) extends AnyVal {
+    extension [Self <: DirectoryVpcSettings](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZones(value: js.Array[String]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZones(value: js.Array[String]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
+      inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
       
-      @scala.inline
-      def setSubnetIds(value: js.Array[String]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: js.Array[String]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,8 +139,7 @@ object directoryservice {
   }
   object GetDirectoryConnectSetting {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       availabilityZones: js.Array[String],
       connectIps: js.Array[String],
       customerDnsIps: js.Array[String],
@@ -171,38 +151,27 @@ object directoryservice {
       __obj.asInstanceOf[GetDirectoryConnectSetting]
     }
     
-    @scala.inline
-    implicit class GetDirectoryConnectSettingMutableBuilder[Self <: GetDirectoryConnectSetting] (val x: Self) extends AnyVal {
+    extension [Self <: GetDirectoryConnectSetting](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZones(value: js.Array[String]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZones(value: js.Array[String]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
+      inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
       
-      @scala.inline
-      def setConnectIps(value: js.Array[String]): Self = StObject.set(x, "connectIps", value.asInstanceOf[js.Any])
+      inline def setConnectIps(value: js.Array[String]): Self = StObject.set(x, "connectIps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectIpsVarargs(value: String*): Self = StObject.set(x, "connectIps", js.Array(value :_*))
+      inline def setConnectIpsVarargs(value: String*): Self = StObject.set(x, "connectIps", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomerDnsIps(value: js.Array[String]): Self = StObject.set(x, "customerDnsIps", value.asInstanceOf[js.Any])
+      inline def setCustomerDnsIps(value: js.Array[String]): Self = StObject.set(x, "customerDnsIps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerDnsIpsVarargs(value: String*): Self = StObject.set(x, "customerDnsIps", js.Array(value :_*))
+      inline def setCustomerDnsIpsVarargs(value: String*): Self = StObject.set(x, "customerDnsIps", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomerUsername(value: String): Self = StObject.set(x, "customerUsername", value.asInstanceOf[js.Any])
+      inline def setCustomerUsername(value: String): Self = StObject.set(x, "customerUsername", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIds(value: js.Array[String]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: js.Array[String]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -222,29 +191,22 @@ object directoryservice {
   }
   object GetDirectoryVpcSetting {
     
-    @scala.inline
-    def apply(availabilityZones: js.Array[String], subnetIds: js.Array[String], vpcId: String): GetDirectoryVpcSetting = {
+    inline def apply(availabilityZones: js.Array[String], subnetIds: js.Array[String], vpcId: String): GetDirectoryVpcSetting = {
       val __obj = js.Dynamic.literal(availabilityZones = availabilityZones.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetDirectoryVpcSetting]
     }
     
-    @scala.inline
-    implicit class GetDirectoryVpcSettingMutableBuilder[Self <: GetDirectoryVpcSetting] (val x: Self) extends AnyVal {
+    extension [Self <: GetDirectoryVpcSetting](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZones(value: js.Array[String]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZones(value: js.Array[String]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
+      inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
       
-      @scala.inline
-      def setSubnetIds(value: js.Array[String]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: js.Array[String]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
 }

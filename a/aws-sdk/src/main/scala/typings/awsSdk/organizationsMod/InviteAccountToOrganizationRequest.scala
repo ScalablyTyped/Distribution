@@ -23,31 +23,23 @@ trait InviteAccountToOrganizationRequest extends StObject {
 }
 object InviteAccountToOrganizationRequest {
   
-  @scala.inline
-  def apply(Target: HandshakeParty): InviteAccountToOrganizationRequest = {
+  inline def apply(Target: HandshakeParty): InviteAccountToOrganizationRequest = {
     val __obj = js.Dynamic.literal(Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[InviteAccountToOrganizationRequest]
   }
   
-  @scala.inline
-  implicit class InviteAccountToOrganizationRequestMutableBuilder[Self <: InviteAccountToOrganizationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InviteAccountToOrganizationRequest](x: Self) {
     
-    @scala.inline
-    def setNotes(value: HandshakeNotes): Self = StObject.set(x, "Notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: HandshakeNotes): Self = StObject.set(x, "Notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "Notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "Notes", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTarget(value: HandshakeParty): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: HandshakeParty): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

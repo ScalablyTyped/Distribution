@@ -12,19 +12,15 @@ trait CreateTime extends StObject {
 }
 object CreateTime {
   
-  @scala.inline
-  def apply(createTime: Double, size: Double): CreateTime = {
+  inline def apply(createTime: Double, size: Double): CreateTime = {
     val __obj = js.Dynamic.literal(createTime = createTime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTime]
   }
   
-  @scala.inline
-  implicit class CreateTimeMutableBuilder[Self <: CreateTime] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTime](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

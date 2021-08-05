@@ -10,16 +10,13 @@ trait WebGLProgram extends StObject {
 }
 object WebGLProgram {
   
-  @scala.inline
-  def apply(__WebGLProgram: Unit): WebGLProgram = {
+  inline def apply(__WebGLProgram: Unit): WebGLProgram = {
     val __obj = js.Dynamic.literal(__WebGLProgram = __WebGLProgram.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLProgram]
   }
   
-  @scala.inline
-  implicit class WebGLProgramMutableBuilder[Self <: WebGLProgram] (val x: Self) extends AnyVal {
+  extension [Self <: WebGLProgram](x: Self) {
     
-    @scala.inline
-    def set__WebGLProgram(value: Unit): Self = StObject.set(x, "__WebGLProgram", value.asInstanceOf[js.Any])
+    inline def set__WebGLProgram(value: Unit): Self = StObject.set(x, "__WebGLProgram", value.asInstanceOf[js.Any])
   }
 }

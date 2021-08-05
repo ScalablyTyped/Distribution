@@ -13,6 +13,5 @@ class CompleteCertificateRefs ()
   extends typings.xadesjs.xmlMod.CompleteCertificateRefs
 object CompleteCertificateRefs {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.CompleteCertificateRefs] = ^.asInstanceOf[js.Dynamic].selectDynamic("CompleteCertificateRefs").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CompleteCertificateRefs]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.CompleteCertificateRefs] = ^.asInstanceOf[js.Dynamic].selectDynamic("CompleteCertificateRefs").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CompleteCertificateRefs]]
 }

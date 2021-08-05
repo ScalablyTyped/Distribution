@@ -14,20 +14,17 @@ object getShardIteratorExceptionsUnionMod {
   trait GetShardIteratorExceptionsUnion extends StObject
   object GetShardIteratorExceptionsUnion {
     
-    @scala.inline
-    def InvalidArgumentException(): typings.awsSdkClientKinesisBrowser.typesInvalidArgumentExceptionMod.InvalidArgumentException = {
+    inline def InvalidArgumentException(): typings.awsSdkClientKinesisBrowser.typesInvalidArgumentExceptionMod.InvalidArgumentException = {
       val __obj = js.Dynamic.literal(name = "InvalidArgumentException")
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesInvalidArgumentExceptionMod.InvalidArgumentException]
     }
     
-    @scala.inline
-    def ProvisionedThroughputExceededException(): typings.awsSdkClientKinesisBrowser.typesProvisionedThroughputExceededExceptionMod.ProvisionedThroughputExceededException = {
+    inline def ProvisionedThroughputExceededException(): typings.awsSdkClientKinesisBrowser.typesProvisionedThroughputExceededExceptionMod.ProvisionedThroughputExceededException = {
       val __obj = js.Dynamic.literal(name = "ProvisionedThroughputExceededException")
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesProvisionedThroughputExceededExceptionMod.ProvisionedThroughputExceededException]
     }
     
-    @scala.inline
-    def ResourceNotFoundException(): typings.awsSdkClientKinesisBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException = {
+    inline def ResourceNotFoundException(): typings.awsSdkClientKinesisBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException = {
       val __obj = js.Dynamic.literal(name = "ResourceNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException]
     }

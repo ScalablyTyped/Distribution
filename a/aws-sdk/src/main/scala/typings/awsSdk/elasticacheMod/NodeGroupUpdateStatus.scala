@@ -18,28 +18,21 @@ trait NodeGroupUpdateStatus extends StObject {
 }
 object NodeGroupUpdateStatus {
   
-  @scala.inline
-  def apply(): NodeGroupUpdateStatus = {
+  inline def apply(): NodeGroupUpdateStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeGroupUpdateStatus]
   }
   
-  @scala.inline
-  implicit class NodeGroupUpdateStatusMutableBuilder[Self <: NodeGroupUpdateStatus] (val x: Self) extends AnyVal {
+  extension [Self <: NodeGroupUpdateStatus](x: Self) {
     
-    @scala.inline
-    def setNodeGroupId(value: String): Self = StObject.set(x, "NodeGroupId", value.asInstanceOf[js.Any])
+    inline def setNodeGroupId(value: String): Self = StObject.set(x, "NodeGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeGroupIdUndefined: Self = StObject.set(x, "NodeGroupId", js.undefined)
+    inline def setNodeGroupIdUndefined: Self = StObject.set(x, "NodeGroupId", js.undefined)
     
-    @scala.inline
-    def setNodeGroupMemberUpdateStatus(value: NodeGroupMemberUpdateStatusList): Self = StObject.set(x, "NodeGroupMemberUpdateStatus", value.asInstanceOf[js.Any])
+    inline def setNodeGroupMemberUpdateStatus(value: NodeGroupMemberUpdateStatusList): Self = StObject.set(x, "NodeGroupMemberUpdateStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeGroupMemberUpdateStatusUndefined: Self = StObject.set(x, "NodeGroupMemberUpdateStatus", js.undefined)
+    inline def setNodeGroupMemberUpdateStatusUndefined: Self = StObject.set(x, "NodeGroupMemberUpdateStatus", js.undefined)
     
-    @scala.inline
-    def setNodeGroupMemberUpdateStatusVarargs(value: NodeGroupMemberUpdateStatus*): Self = StObject.set(x, "NodeGroupMemberUpdateStatus", js.Array(value :_*))
+    inline def setNodeGroupMemberUpdateStatusVarargs(value: NodeGroupMemberUpdateStatus*): Self = StObject.set(x, "NodeGroupMemberUpdateStatus", js.Array(value :_*))
   }
 }

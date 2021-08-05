@@ -614,10 +614,8 @@ object makeMod {
     val cat: CatFunction = js.native
     
     /* was `typeof shelljs.cd` */
-    @scala.inline
-    def cd(): typings.shelljs.mod.ShellString = js.Dynamic.global.applyDynamic("cd")().asInstanceOf[typings.shelljs.mod.ShellString]
-    @scala.inline
-    def cd(dir: String): typings.shelljs.mod.ShellString = js.Dynamic.global.applyDynamic("cd")(dir.asInstanceOf[js.Any]).asInstanceOf[typings.shelljs.mod.ShellString]
+    inline def cd(): typings.shelljs.mod.ShellString = js.Dynamic.global.applyDynamic("cd")().asInstanceOf[typings.shelljs.mod.ShellString]
+    inline def cd(dir: String): typings.shelljs.mod.ShellString = js.Dynamic.global.applyDynamic("cd")(dir.asInstanceOf[js.Any]).asInstanceOf[typings.shelljs.mod.ShellString]
     
     /* was `typeof shelljs.chmod` */
     @JSGlobal("chmod")
@@ -650,8 +648,7 @@ object makeMod {
     val env: ProcessEnv = js.native
     
     /* was `typeof shelljs.error` */
-    @scala.inline
-    def error(): typings.shelljs.mod.ShellString = js.Dynamic.global.applyDynamic("error")().asInstanceOf[typings.shelljs.mod.ShellString]
+    inline def error(): typings.shelljs.mod.ShellString = js.Dynamic.global.applyDynamic("error")().asInstanceOf[typings.shelljs.mod.ShellString]
     
     /* was `typeof shelljs.exec` */
     @JSGlobal("exec")
@@ -659,10 +656,8 @@ object makeMod {
     val exec: ExecFunction = js.native
     
     /* was `typeof shelljs.exit` */
-    @scala.inline
-    def exit(): scala.Nothing = js.Dynamic.global.applyDynamic("exit")().asInstanceOf[scala.Nothing]
-    @scala.inline
-    def exit(code: Double): scala.Nothing = js.Dynamic.global.applyDynamic("exit")(code.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+    inline def exit(): scala.Nothing = js.Dynamic.global.applyDynamic("exit")().asInstanceOf[scala.Nothing]
+    inline def exit(code: Double): scala.Nothing = js.Dynamic.global.applyDynamic("exit")(code.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
     
     /* was `typeof shelljs.find` */
     @JSGlobal("find")
@@ -710,8 +705,7 @@ object makeMod {
     val pushd: PushDirFunction = js.native
     
     /* was `typeof shelljs.pwd` */
-    @scala.inline
-    def pwd(): typings.shelljs.mod.ShellString = js.Dynamic.global.applyDynamic("pwd")().asInstanceOf[typings.shelljs.mod.ShellString]
+    inline def pwd(): typings.shelljs.mod.ShellString = js.Dynamic.global.applyDynamic("pwd")().asInstanceOf[typings.shelljs.mod.ShellString]
     
     /* was `typeof shelljs.rm` */
     @JSGlobal("rm")
@@ -724,8 +718,7 @@ object makeMod {
     val sed: SedFunction = js.native
     
     /* was `typeof shelljs.set` */
-    @scala.inline
-    def set(options: String): Unit = js.Dynamic.global.applyDynamic("set")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def set(options: String): Unit = js.Dynamic.global.applyDynamic("set")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* was `typeof shelljs.sort` */
     @JSGlobal("sort")
@@ -746,13 +739,11 @@ object makeMod {
       @JSGlobal("target.all")
       @js.native
       def all: js.UndefOr[Target_] = js.native
-      @scala.inline
-      def all_=(x: js.UndefOr[Target_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("all")(x.asInstanceOf[js.Any])
+      inline def all_=(x: js.UndefOr[Target_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("all")(x.asInstanceOf[js.Any])
     }
     
     /* was `typeof shelljs.tempdir` */
-    @scala.inline
-    def tempdir(): typings.shelljs.mod.ShellString = js.Dynamic.global.applyDynamic("tempdir")().asInstanceOf[typings.shelljs.mod.ShellString]
+    inline def tempdir(): typings.shelljs.mod.ShellString = js.Dynamic.global.applyDynamic("tempdir")().asInstanceOf[typings.shelljs.mod.ShellString]
     
     /* was `typeof shelljs.touch` */
     @JSGlobal("touch")

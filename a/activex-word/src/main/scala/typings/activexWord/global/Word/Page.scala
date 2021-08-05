@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Page")
 @js.native
-class Page protected ()
+/* private */ class Page ()
   extends StObject
      with typings.activexWord.Word.Page {
   
@@ -40,7 +40,7 @@ class Page protected ()
   /* CompleteClass */
   override val Width: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Page_typekey")
   var WordDotPage_typekey: typings.activexWord.Word.Page = js.native
 }

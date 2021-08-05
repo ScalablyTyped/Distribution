@@ -13,16 +13,13 @@ trait CreateThreatIntelSetResponse extends StObject {
 }
 object CreateThreatIntelSetResponse {
   
-  @scala.inline
-  def apply(ThreatIntelSetId: String): CreateThreatIntelSetResponse = {
+  inline def apply(ThreatIntelSetId: String): CreateThreatIntelSetResponse = {
     val __obj = js.Dynamic.literal(ThreatIntelSetId = ThreatIntelSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateThreatIntelSetResponse]
   }
   
-  @scala.inline
-  implicit class CreateThreatIntelSetResponseMutableBuilder[Self <: CreateThreatIntelSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateThreatIntelSetResponse](x: Self) {
     
-    @scala.inline
-    def setThreatIntelSetId(value: String): Self = StObject.set(x, "ThreatIntelSetId", value.asInstanceOf[js.Any])
+    inline def setThreatIntelSetId(value: String): Self = StObject.set(x, "ThreatIntelSetId", value.asInstanceOf[js.Any])
   }
 }

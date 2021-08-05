@@ -23,8 +23,7 @@ trait ExtentInfo
 }
 object ExtentInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DateTime: ExtentInfoValue,
     ExposureBiasValue: ExtentInfoValue,
     ExposureTime: ExtentInfoValue,
@@ -36,25 +35,18 @@ object ExtentInfo {
     __obj.asInstanceOf[ExtentInfo]
   }
   
-  @scala.inline
-  implicit class ExtentInfoMutableBuilder[Self <: ExtentInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ExtentInfo](x: Self) {
     
-    @scala.inline
-    def setDateTime(value: ExtentInfoValue): Self = StObject.set(x, "DateTime", value.asInstanceOf[js.Any])
+    inline def setDateTime(value: ExtentInfoValue): Self = StObject.set(x, "DateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExposureBiasValue(value: ExtentInfoValue): Self = StObject.set(x, "ExposureBiasValue", value.asInstanceOf[js.Any])
+    inline def setExposureBiasValue(value: ExtentInfoValue): Self = StObject.set(x, "ExposureBiasValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExposureTime(value: ExtentInfoValue): Self = StObject.set(x, "ExposureTime", value.asInstanceOf[js.Any])
+    inline def setExposureTime(value: ExtentInfoValue): Self = StObject.set(x, "ExposureTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setISOSpeedRatings(value: ExtentInfoValue): Self = StObject.set(x, "ISOSpeedRatings", value.asInstanceOf[js.Any])
+    inline def setISOSpeedRatings(value: ExtentInfoValue): Self = StObject.set(x, "ISOSpeedRatings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: ExtentInfoValue): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+    inline def setModel(value: ExtentInfoValue): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionUnit(value: ExtentInfoValue): Self = StObject.set(x, "ResolutionUnit", value.asInstanceOf[js.Any])
+    inline def setResolutionUnit(value: ExtentInfoValue): Self = StObject.set(x, "ResolutionUnit", value.asInstanceOf[js.Any])
   }
 }

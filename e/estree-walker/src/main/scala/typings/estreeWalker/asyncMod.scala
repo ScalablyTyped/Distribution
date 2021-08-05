@@ -14,9 +14,9 @@ object asyncMod {
   class AsyncWalkerClass protected () extends WalkerBase {
     def this(walker: AsyncWalker) = this()
     
-    var enter: js.UndefOr[AsyncWalkerHandler] = js.native
+    /* protected */ var enter: js.UndefOr[AsyncWalkerHandler] = js.native
     
-    var leave: js.UndefOr[AsyncWalkerHandler] = js.native
+    /* protected */ var leave: js.UndefOr[AsyncWalkerHandler] = js.native
     
     def visit(node: BaseNode, parent: BaseNode, enter: AsyncWalkerHandler, leave: AsyncWalkerHandler): js.Promise[BaseNode] = js.native
     def visit(
@@ -52,26 +52,20 @@ object asyncMod {
   }
   object AsyncWalker {
     
-    @scala.inline
-    def apply(): AsyncWalker = {
+    inline def apply(): AsyncWalker = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsyncWalker]
     }
     
-    @scala.inline
-    implicit class AsyncWalkerMutableBuilder[Self <: AsyncWalker] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncWalker](x: Self) {
       
-      @scala.inline
-      def setEnter(value: AsyncWalkerHandler): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+      inline def setEnter(value: AsyncWalkerHandler): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+      inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
-      @scala.inline
-      def setLeave(value: AsyncWalkerHandler): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
+      inline def setLeave(value: AsyncWalkerHandler): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
+      inline def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
     }
   }
   

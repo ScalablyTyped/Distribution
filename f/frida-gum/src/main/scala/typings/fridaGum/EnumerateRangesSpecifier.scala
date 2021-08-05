@@ -18,19 +18,15 @@ trait EnumerateRangesSpecifier extends StObject {
 }
 object EnumerateRangesSpecifier {
   
-  @scala.inline
-  def apply(coalesce: Boolean, protection: PageProtection): EnumerateRangesSpecifier = {
+  inline def apply(coalesce: Boolean, protection: PageProtection): EnumerateRangesSpecifier = {
     val __obj = js.Dynamic.literal(coalesce = coalesce.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumerateRangesSpecifier]
   }
   
-  @scala.inline
-  implicit class EnumerateRangesSpecifierMutableBuilder[Self <: EnumerateRangesSpecifier] (val x: Self) extends AnyVal {
+  extension [Self <: EnumerateRangesSpecifier](x: Self) {
     
-    @scala.inline
-    def setCoalesce(value: Boolean): Self = StObject.set(x, "coalesce", value.asInstanceOf[js.Any])
+    inline def setCoalesce(value: Boolean): Self = StObject.set(x, "coalesce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtection(value: PageProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
+    inline def setProtection(value: PageProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
   }
 }

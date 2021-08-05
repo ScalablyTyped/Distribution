@@ -23,28 +23,21 @@ trait NamespaceFilter extends StObject {
 }
 object NamespaceFilter {
   
-  @scala.inline
-  def apply(Name: NamespaceFilterName, Values: FilterValues): NamespaceFilter = {
+  inline def apply(Name: NamespaceFilterName, Values: FilterValues): NamespaceFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamespaceFilter]
   }
   
-  @scala.inline
-  implicit class NamespaceFilterMutableBuilder[Self <: NamespaceFilter] (val x: Self) extends AnyVal {
+  extension [Self <: NamespaceFilter](x: Self) {
     
-    @scala.inline
-    def setCondition(value: FilterCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: FilterCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
     
-    @scala.inline
-    def setName(value: NamespaceFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NamespaceFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: FilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: FilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

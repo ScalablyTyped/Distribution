@@ -20,32 +20,24 @@ object anon {
   }
   object Appear {
     
-    @scala.inline
-    def apply(): Appear = {
+    inline def apply(): Appear = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Appear]
     }
     
-    @scala.inline
-    implicit class AppearMutableBuilder[Self <: Appear] (val x: Self) extends AnyVal {
+    extension [Self <: Appear](x: Self) {
       
-      @scala.inline
-      def setAppear(value: Double): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
+      inline def setAppear(value: Double): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
+      inline def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
       
-      @scala.inline
-      def setEnter(value: Double): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+      inline def setEnter(value: Double): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+      inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
-      @scala.inline
-      def setExit(value: Double): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: Double): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
+      inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     }
   }
   
@@ -78,20 +70,16 @@ object anon {
   }
   object ClassNames {
     
-    @scala.inline
-    def apply(): ClassNames = {
+    inline def apply(): ClassNames = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClassNames]
     }
     
-    @scala.inline
-    implicit class ClassNamesMutableBuilder[Self <: ClassNames] (val x: Self) extends AnyVal {
+    extension [Self <: ClassNames](x: Self) {
       
-      @scala.inline
-      def setClassNames(value: String | CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      inline def setClassNames(value: String | CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
+      inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
     }
   }
   
@@ -105,29 +93,22 @@ object anon {
   }
   object Dictprop {
     
-    @scala.inline
-    def apply(): Dictprop = {
+    inline def apply(): Dictprop = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dictprop]
     }
     
-    @scala.inline
-    implicit class DictpropMutableBuilder[Self <: Dictprop] (val x: Self) extends AnyVal {
+    extension [Self <: Dictprop](x: Self) {
       
-      @scala.inline
-      def setChildFactory(value: /* child */ ReactElement => ReactElement): Self = StObject.set(x, "childFactory", js.Any.fromFunction1(value))
+      inline def setChildFactory(value: /* child */ ReactElement => ReactElement): Self = StObject.set(x, "childFactory", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildFactoryUndefined: Self = StObject.set(x, "childFactory", js.undefined)
+      inline def setChildFactoryUndefined: Self = StObject.set(x, "childFactory", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
     }
   }
   
@@ -139,21 +120,17 @@ object anon {
   }
   object Explicit {
     
-    @scala.inline
-    def apply[ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ js.Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ js.Any, Unit] */](explicit: ExplicitRefHandler, `implicit`: ImplicitRefHandler): Explicit[ImplicitRefHandler, ExplicitRefHandler] = {
+    inline def apply[ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ js.Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ js.Any, Unit] */](explicit: ExplicitRefHandler, `implicit`: ImplicitRefHandler): Explicit[ImplicitRefHandler, ExplicitRefHandler] = {
       val __obj = js.Dynamic.literal(explicit = explicit.asInstanceOf[js.Any])
       __obj.updateDynamic("implicit")(`implicit`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Explicit[ImplicitRefHandler, ExplicitRefHandler]]
     }
     
-    @scala.inline
-    implicit class ExplicitMutableBuilder[Self <: Explicit[?, ?], ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ js.Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ js.Any, Unit] */] (val x: Self & (Explicit[ImplicitRefHandler, ExplicitRefHandler])) extends AnyVal {
+    extension [Self <: Explicit[?, ?], ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ js.Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ js.Any, Unit] */](x: Self & (Explicit[ImplicitRefHandler, ExplicitRefHandler])) {
       
-      @scala.inline
-      def setExplicit(value: ExplicitRefHandler): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
+      inline def setExplicit(value: ExplicitRefHandler): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImplicit(value: ImplicitRefHandler): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
+      inline def setImplicit(value: ImplicitRefHandler): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
     }
   }
 }

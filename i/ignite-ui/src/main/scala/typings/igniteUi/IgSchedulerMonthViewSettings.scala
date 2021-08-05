@@ -82,73 +82,51 @@ trait IgSchedulerMonthViewSettings
 }
 object IgSchedulerMonthViewSettings {
   
-  @scala.inline
-  def apply(): IgSchedulerMonthViewSettings = {
+  inline def apply(): IgSchedulerMonthViewSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgSchedulerMonthViewSettings]
   }
   
-  @scala.inline
-  implicit class IgSchedulerMonthViewSettingsMutableBuilder[Self <: IgSchedulerMonthViewSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IgSchedulerMonthViewSettings](x: Self) {
     
-    @scala.inline
-    def setAgendaVisibilityType(value: String): Self = StObject.set(x, "agendaVisibilityType", value.asInstanceOf[js.Any])
+    inline def setAgendaVisibilityType(value: String): Self = StObject.set(x, "agendaVisibilityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgendaVisibilityTypeUndefined: Self = StObject.set(x, "agendaVisibilityType", js.undefined)
+    inline def setAgendaVisibilityTypeUndefined: Self = StObject.set(x, "agendaVisibilityType", js.undefined)
     
-    @scala.inline
-    def setAppointmentMode(value: String): Self = StObject.set(x, "appointmentMode", value.asInstanceOf[js.Any])
+    inline def setAppointmentMode(value: String): Self = StObject.set(x, "appointmentMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentModeUndefined: Self = StObject.set(x, "appointmentMode", js.undefined)
+    inline def setAppointmentModeUndefined: Self = StObject.set(x, "appointmentMode", js.undefined)
     
-    @scala.inline
-    def setIsAgendaVisible(value: Boolean): Self = StObject.set(x, "isAgendaVisible", value.asInstanceOf[js.Any])
+    inline def setIsAgendaVisible(value: Boolean): Self = StObject.set(x, "isAgendaVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAgendaVisibleUndefined: Self = StObject.set(x, "isAgendaVisible", js.undefined)
+    inline def setIsAgendaVisibleUndefined: Self = StObject.set(x, "isAgendaVisible", js.undefined)
     
-    @scala.inline
-    def setIsHorizontalSeparatorVisibile(value: Boolean): Self = StObject.set(x, "isHorizontalSeparatorVisibile", value.asInstanceOf[js.Any])
+    inline def setIsHorizontalSeparatorVisibile(value: Boolean): Self = StObject.set(x, "isHorizontalSeparatorVisibile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHorizontalSeparatorVisibileUndefined: Self = StObject.set(x, "isHorizontalSeparatorVisibile", js.undefined)
+    inline def setIsHorizontalSeparatorVisibileUndefined: Self = StObject.set(x, "isHorizontalSeparatorVisibile", js.undefined)
     
-    @scala.inline
-    def setIsNextMonthShown(value: Boolean): Self = StObject.set(x, "isNextMonthShown", value.asInstanceOf[js.Any])
+    inline def setIsNextMonthShown(value: Boolean): Self = StObject.set(x, "isNextMonthShown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNextMonthShownUndefined: Self = StObject.set(x, "isNextMonthShown", js.undefined)
+    inline def setIsNextMonthShownUndefined: Self = StObject.set(x, "isNextMonthShown", js.undefined)
     
-    @scala.inline
-    def setIsPreviousMonthShown(value: Boolean): Self = StObject.set(x, "isPreviousMonthShown", value.asInstanceOf[js.Any])
+    inline def setIsPreviousMonthShown(value: Boolean): Self = StObject.set(x, "isPreviousMonthShown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPreviousMonthShownUndefined: Self = StObject.set(x, "isPreviousMonthShown", js.undefined)
+    inline def setIsPreviousMonthShownUndefined: Self = StObject.set(x, "isPreviousMonthShown", js.undefined)
     
-    @scala.inline
-    def setIsVerticalSeparatorVisibile(value: Boolean): Self = StObject.set(x, "isVerticalSeparatorVisibile", value.asInstanceOf[js.Any])
+    inline def setIsVerticalSeparatorVisibile(value: Boolean): Self = StObject.set(x, "isVerticalSeparatorVisibile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVerticalSeparatorVisibileUndefined: Self = StObject.set(x, "isVerticalSeparatorVisibile", js.undefined)
+    inline def setIsVerticalSeparatorVisibileUndefined: Self = StObject.set(x, "isVerticalSeparatorVisibile", js.undefined)
     
-    @scala.inline
-    def setIsWeekNumberVisible(value: Boolean): Self = StObject.set(x, "isWeekNumberVisible", value.asInstanceOf[js.Any])
+    inline def setIsWeekNumberVisible(value: Boolean): Self = StObject.set(x, "isWeekNumberVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWeekNumberVisibleUndefined: Self = StObject.set(x, "isWeekNumberVisible", js.undefined)
+    inline def setIsWeekNumberVisibleUndefined: Self = StObject.set(x, "isWeekNumberVisible", js.undefined)
     
-    @scala.inline
-    def setIsWeekdayVisible(value: Boolean): Self = StObject.set(x, "isWeekdayVisible", value.asInstanceOf[js.Any])
+    inline def setIsWeekdayVisible(value: Boolean): Self = StObject.set(x, "isWeekdayVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWeekdayVisibleUndefined: Self = StObject.set(x, "isWeekdayVisible", js.undefined)
+    inline def setIsWeekdayVisibleUndefined: Self = StObject.set(x, "isWeekdayVisible", js.undefined)
     
-    @scala.inline
-    def setViewSplitOrientation(value: String): Self = StObject.set(x, "viewSplitOrientation", value.asInstanceOf[js.Any])
+    inline def setViewSplitOrientation(value: String): Self = StObject.set(x, "viewSplitOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewSplitOrientationUndefined: Self = StObject.set(x, "viewSplitOrientation", js.undefined)
+    inline def setViewSplitOrientationUndefined: Self = StObject.set(x, "viewSplitOrientation", js.undefined)
   }
 }

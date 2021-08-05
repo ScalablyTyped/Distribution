@@ -88,15 +88,13 @@ object projectsMod {
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.Document.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.Document.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -138,22 +136,19 @@ object projectsMod {
         * Expects one argument, the IFolderBase in which this unit is contained.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: IFolderBase): Folder = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Folder]
+      inline def createIn(container: IFolderBase): Folder = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Folder]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.Folder.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.Folder.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -205,15 +200,13 @@ object projectsMod {
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.FolderBase.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.FolderBase.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -331,22 +324,19 @@ object projectsMod {
         * Expects one argument, the IProject in which this unit is contained.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: IProject): Module = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Module]
+      inline def createIn(container: IProject): Module = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Module]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.Module.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.Module.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -391,15 +381,13 @@ object projectsMod {
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.ModuleDocument.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.ModuleDocument.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/projects", "projects.OneTimeConversionMarker")
@@ -431,8 +419,7 @@ object projectsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): OneTimeConversionMarker = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[OneTimeConversionMarker]
+      inline def create(model: IModel): OneTimeConversionMarker = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[OneTimeConversionMarker]
       
       /**
         * Creates and returns a new OneTimeConversionMarker instance in the SDK and on the server.
@@ -440,22 +427,19 @@ object projectsMod {
         * of the parent ProjectConversion element passed as argument.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: ProjectConversion): OneTimeConversionMarker = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[OneTimeConversionMarker]
+      inline def createIn(container: ProjectConversion): OneTimeConversionMarker = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[OneTimeConversionMarker]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.OneTimeConversionMarker.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.OneTimeConversionMarker.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -508,15 +492,13 @@ object projectsMod {
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.Project.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.Project.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -553,22 +535,19 @@ object projectsMod {
         * Expects one argument, the IProject in which this unit is contained.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: IProject): ProjectConversion = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ProjectConversion]
+      inline def createIn(container: IProject): ProjectConversion = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ProjectConversion]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.ProjectConversion.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.ProjectConversion.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -605,15 +584,13 @@ object projectsMod {
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.ProjectDocument.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/projects", "projects.ProjectDocument.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @js.native
@@ -636,8 +613,7 @@ object projectsMod {
     }
     object IFolder {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         allProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
         container: IStructuralUnit,
         containerAsFolderBase: IFolderBase,
@@ -664,11 +640,9 @@ object projectsMod {
         __obj.asInstanceOf[IFolder]
       }
       
-      @scala.inline
-      implicit class IFolderMutableBuilder[Self <: IFolder] (val x: Self) extends AnyVal {
+      extension [Self <: IFolder](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
     
@@ -689,8 +663,7 @@ object projectsMod {
     }
     object IFolderBase {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         allProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
         container: IStructuralUnit,
         containerAsFolderBase: IFolderBase,
@@ -716,23 +689,17 @@ object projectsMod {
         __obj.asInstanceOf[IFolderBase]
       }
       
-      @scala.inline
-      implicit class IFolderBaseMutableBuilder[Self <: IFolderBase] (val x: Self) extends AnyVal {
+      extension [Self <: IFolderBase](x: Self) {
         
-        @scala.inline
-        def setContainerAsFolderBase(value: IFolderBase): Self = StObject.set(x, "containerAsFolderBase", value.asInstanceOf[js.Any])
+        inline def setContainerAsFolderBase(value: IFolderBase): Self = StObject.set(x, "containerAsFolderBase", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerAsProject(value: IProject): Self = StObject.set(x, "containerAsProject", value.asInstanceOf[js.Any])
+        inline def setContainerAsProject(value: IProject): Self = StObject.set(x, "containerAsProject", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDocuments(value: IList[IDocument]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
+        inline def setDocuments(value: IList[IDocument]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFolders(value: IList[IFolder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
+        inline def setFolders(value: IList[IFolder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+        inline def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       }
     }
     
@@ -783,8 +750,7 @@ object projectsMod {
     }
     object IModule {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         allProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
         appStoreGuid: String,
         appStorePackageId: Double,
@@ -820,38 +786,27 @@ object projectsMod {
         __obj.asInstanceOf[IModule]
       }
       
-      @scala.inline
-      implicit class IModuleMutableBuilder[Self <: IModule] (val x: Self) extends AnyVal {
+      extension [Self <: IModule](x: Self) {
         
-        @scala.inline
-        def setAppStoreGuid(value: String): Self = StObject.set(x, "appStoreGuid", value.asInstanceOf[js.Any])
+        inline def setAppStoreGuid(value: String): Self = StObject.set(x, "appStoreGuid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAppStorePackageId(value: Double): Self = StObject.set(x, "appStorePackageId", value.asInstanceOf[js.Any])
+        inline def setAppStorePackageId(value: Double): Self = StObject.set(x, "appStorePackageId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAppStoreVersion(value: String): Self = StObject.set(x, "appStoreVersion", value.asInstanceOf[js.Any])
+        inline def setAppStoreVersion(value: String): Self = StObject.set(x, "appStoreVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAppStoreVersionGuid(value: String): Self = StObject.set(x, "appStoreVersionGuid", value.asInstanceOf[js.Any])
+        inline def setAppStoreVersionGuid(value: String): Self = StObject.set(x, "appStoreVersionGuid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDomainModel(value: IDomainModel): Self = StObject.set(x, "domainModel", value.asInstanceOf[js.Any])
+        inline def setDomainModel(value: IDomainModel): Self = StObject.set(x, "domainModel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFromAppStore(value: Boolean): Self = StObject.set(x, "fromAppStore", value.asInstanceOf[js.Any])
+        inline def setFromAppStore(value: Boolean): Self = StObject.set(x, "fromAppStore", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsReusableComponent(value: Boolean): Self = StObject.set(x, "isReusableComponent", value.asInstanceOf[js.Any])
+        inline def setIsReusableComponent(value: Boolean): Self = StObject.set(x, "isReusableComponent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModuleSecurity(value: IModuleSecurity): Self = StObject.set(x, "moduleSecurity", value.asInstanceOf[js.Any])
+        inline def setModuleSecurity(value: IModuleSecurity): Self = StObject.set(x, "moduleSecurity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSortIndex(value: Double): Self = StObject.set(x, "sortIndex", value.asInstanceOf[js.Any])
+        inline def setSortIndex(value: Double): Self = StObject.set(x, "sortIndex", value.asInstanceOf[js.Any])
       }
     }
     
@@ -894,8 +849,7 @@ object projectsMod {
     }
     object IProject {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         allProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
         container: IStructuralUnit,
         delete: () => Unit,
@@ -921,23 +875,17 @@ object projectsMod {
         __obj.asInstanceOf[IProject]
       }
       
-      @scala.inline
-      implicit class IProjectMutableBuilder[Self <: IProject] (val x: Self) extends AnyVal {
+      extension [Self <: IProject](x: Self) {
         
-        @scala.inline
-        def setIsSystemProject(value: Boolean): Self = StObject.set(x, "isSystemProject", value.asInstanceOf[js.Any])
+        inline def setIsSystemProject(value: Boolean): Self = StObject.set(x, "isSystemProject", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+        inline def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModules(value: IList[IModule]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+        inline def setModules(value: IList[IModule]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProjectConversion(value: IProjectConversion): Self = StObject.set(x, "projectConversion", value.asInstanceOf[js.Any])
+        inline def setProjectConversion(value: IProjectConversion): Self = StObject.set(x, "projectConversion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProjectDocuments(value: IList[IProjectDocument]): Self = StObject.set(x, "projectDocuments", value.asInstanceOf[js.Any])
+        inline def setProjectDocuments(value: IList[IProjectDocument]): Self = StObject.set(x, "projectDocuments", value.asInstanceOf[js.Any])
       }
     }
     

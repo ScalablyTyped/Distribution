@@ -16,22 +16,17 @@ trait SchemaRowData extends StObject {
 }
 object SchemaRowData {
   
-  @scala.inline
-  def apply(): SchemaRowData = {
+  inline def apply(): SchemaRowData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRowData]
   }
   
-  @scala.inline
-  implicit class SchemaRowDataMutableBuilder[Self <: SchemaRowData] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRowData](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[SchemaCellData]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[SchemaCellData]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: SchemaCellData*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: SchemaCellData*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

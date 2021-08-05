@@ -23,22 +23,17 @@ trait EncryptionEntity extends StObject {
 }
 object EncryptionEntity {
   
-  @scala.inline
-  def apply(FieldPatterns: FieldPatterns, ProviderId: String, PublicKeyId: String): EncryptionEntity = {
+  inline def apply(FieldPatterns: FieldPatterns, ProviderId: String, PublicKeyId: String): EncryptionEntity = {
     val __obj = js.Dynamic.literal(FieldPatterns = FieldPatterns.asInstanceOf[js.Any], ProviderId = ProviderId.asInstanceOf[js.Any], PublicKeyId = PublicKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionEntity]
   }
   
-  @scala.inline
-  implicit class EncryptionEntityMutableBuilder[Self <: EncryptionEntity] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionEntity](x: Self) {
     
-    @scala.inline
-    def setFieldPatterns(value: FieldPatterns): Self = StObject.set(x, "FieldPatterns", value.asInstanceOf[js.Any])
+    inline def setFieldPatterns(value: FieldPatterns): Self = StObject.set(x, "FieldPatterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "ProviderId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "ProviderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyId(value: String): Self = StObject.set(x, "PublicKeyId", value.asInstanceOf[js.Any])
+    inline def setPublicKeyId(value: String): Self = StObject.set(x, "PublicKeyId", value.asInstanceOf[js.Any])
   }
 }

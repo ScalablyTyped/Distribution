@@ -30,8 +30,7 @@ trait XPresentationPage
 }
 object XPresentationPage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     NotesPage: XDrawPage,
@@ -50,13 +49,10 @@ object XPresentationPage {
     __obj.asInstanceOf[XPresentationPage]
   }
   
-  @scala.inline
-  implicit class XPresentationPageMutableBuilder[Self <: XPresentationPage] (val x: Self) extends AnyVal {
+  extension [Self <: XPresentationPage](x: Self) {
     
-    @scala.inline
-    def setGetNotesPage(value: () => XDrawPage): Self = StObject.set(x, "getNotesPage", js.Any.fromFunction0(value))
+    inline def setGetNotesPage(value: () => XDrawPage): Self = StObject.set(x, "getNotesPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNotesPage(value: XDrawPage): Self = StObject.set(x, "NotesPage", value.asInstanceOf[js.Any])
+    inline def setNotesPage(value: XDrawPage): Self = StObject.set(x, "NotesPage", value.asInstanceOf[js.Any])
   }
 }

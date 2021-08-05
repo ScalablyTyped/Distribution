@@ -14,34 +14,25 @@ trait SeparatorSheets extends StObject {
 }
 object SeparatorSheets {
   
-  @scala.inline
-  def apply(): SeparatorSheets = {
+  inline def apply(): SeparatorSheets = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeparatorSheets]
   }
   
-  @scala.inline
-  implicit class SeparatorSheetsMutableBuilder[Self <: SeparatorSheets] (val x: Self) extends AnyVal {
+  extension [Self <: SeparatorSheets](x: Self) {
     
-    @scala.inline
-    def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMedia-col`(value: MediaInterface): Self = StObject.set(x, "media-col", value.asInstanceOf[js.Any])
+    inline def `setMedia-col`(value: MediaInterface): Self = StObject.set(x, "media-col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMedia-colUndefined`: Self = StObject.set(x, "media-col", js.undefined)
+    inline def `setMedia-colUndefined`: Self = StObject.set(x, "media-col", js.undefined)
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    @scala.inline
-    def `setSeparator-sheets-type`(value: js.Array[SeparatorSheetsType]): Self = StObject.set(x, "separator-sheets-type", value.asInstanceOf[js.Any])
+    inline def `setSeparator-sheets-type`(value: js.Array[SeparatorSheetsType]): Self = StObject.set(x, "separator-sheets-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSeparator-sheets-typeUndefined`: Self = StObject.set(x, "separator-sheets-type", js.undefined)
+    inline def `setSeparator-sheets-typeUndefined`: Self = StObject.set(x, "separator-sheets-type", js.undefined)
     
-    @scala.inline
-    def `setSeparator-sheets-typeVarargs`(value: SeparatorSheetsType*): Self = StObject.set(x, "separator-sheets-type", js.Array(value :_*))
+    inline def `setSeparator-sheets-typeVarargs`(value: SeparatorSheetsType*): Self = StObject.set(x, "separator-sheets-type", js.Array(value :_*))
   }
 }

@@ -22,8 +22,7 @@ object anon {
   }
   object ReadonlyPromiseAddABTestR {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `catch`: () => js.Promise[AddABTestResponse | js.Any],
       `finally`: () => js.Promise[AddABTestResponse],
       `then`: () => js.Promise[js.Any | js.Any]
@@ -35,17 +34,13 @@ object anon {
       __obj.asInstanceOf[ReadonlyPromiseAddABTestR]
     }
     
-    @scala.inline
-    implicit class ReadonlyPromiseAddABTestRMutableBuilder[Self <: ReadonlyPromiseAddABTestR] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyPromiseAddABTestR](x: Self) {
       
-      @scala.inline
-      def setCatch(value: () => js.Promise[AddABTestResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+      inline def setCatch(value: () => js.Promise[AddABTestResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinally(value: () => js.Promise[AddABTestResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+      inline def setFinally(value: () => js.Promise[AddABTestResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+      inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     }
   }
   
@@ -60,8 +55,7 @@ object anon {
   }
   object ReadonlyPromiseDeleteABTe {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `catch`: () => js.Promise[DeleteABTestResponse | js.Any],
       `finally`: () => js.Promise[DeleteABTestResponse],
       `then`: () => js.Promise[js.Any | js.Any]
@@ -73,17 +67,13 @@ object anon {
       __obj.asInstanceOf[ReadonlyPromiseDeleteABTe]
     }
     
-    @scala.inline
-    implicit class ReadonlyPromiseDeleteABTeMutableBuilder[Self <: ReadonlyPromiseDeleteABTe] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyPromiseDeleteABTe](x: Self) {
       
-      @scala.inline
-      def setCatch(value: () => js.Promise[DeleteABTestResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+      inline def setCatch(value: () => js.Promise[DeleteABTestResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinally(value: () => js.Promise[DeleteABTestResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+      inline def setFinally(value: () => js.Promise[DeleteABTestResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+      inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     }
   }
   
@@ -98,8 +88,7 @@ object anon {
   }
   object ReadonlyPromiseGetABTestR {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `catch`: () => js.Promise[GetABTestResponse | js.Any],
       `finally`: () => js.Promise[GetABTestResponse],
       `then`: () => js.Promise[js.Any | js.Any]
@@ -111,17 +100,13 @@ object anon {
       __obj.asInstanceOf[ReadonlyPromiseGetABTestR]
     }
     
-    @scala.inline
-    implicit class ReadonlyPromiseGetABTestRMutableBuilder[Self <: ReadonlyPromiseGetABTestR] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyPromiseGetABTestR](x: Self) {
       
-      @scala.inline
-      def setCatch(value: () => js.Promise[GetABTestResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+      inline def setCatch(value: () => js.Promise[GetABTestResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinally(value: () => js.Promise[GetABTestResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+      inline def setFinally(value: () => js.Promise[GetABTestResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+      inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     }
   }
   
@@ -136,8 +121,7 @@ object anon {
   }
   object ReadonlyPromiseGetABTests {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `catch`: () => js.Promise[GetABTestsResponse | js.Any],
       `finally`: () => js.Promise[GetABTestsResponse],
       `then`: () => js.Promise[js.Any | js.Any]
@@ -149,17 +133,13 @@ object anon {
       __obj.asInstanceOf[ReadonlyPromiseGetABTests]
     }
     
-    @scala.inline
-    implicit class ReadonlyPromiseGetABTestsMutableBuilder[Self <: ReadonlyPromiseGetABTests] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyPromiseGetABTests](x: Self) {
       
-      @scala.inline
-      def setCatch(value: () => js.Promise[GetABTestsResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+      inline def setCatch(value: () => js.Promise[GetABTestsResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinally(value: () => js.Promise[GetABTestsResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+      inline def setFinally(value: () => js.Promise[GetABTestsResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+      inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     }
   }
   
@@ -174,8 +154,7 @@ object anon {
   }
   object ReadonlyPromiseStopABTest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `catch`: () => js.Promise[StopABTestResponse | js.Any],
       `finally`: () => js.Promise[StopABTestResponse],
       `then`: () => js.Promise[js.Any | js.Any]
@@ -187,17 +166,13 @@ object anon {
       __obj.asInstanceOf[ReadonlyPromiseStopABTest]
     }
     
-    @scala.inline
-    implicit class ReadonlyPromiseStopABTestMutableBuilder[Self <: ReadonlyPromiseStopABTest] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyPromiseStopABTest](x: Self) {
       
-      @scala.inline
-      def setCatch(value: () => js.Promise[StopABTestResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+      inline def setCatch(value: () => js.Promise[StopABTestResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinally(value: () => js.Promise[StopABTestResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+      inline def setFinally(value: () => js.Promise[StopABTestResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+      inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     }
   }
 }

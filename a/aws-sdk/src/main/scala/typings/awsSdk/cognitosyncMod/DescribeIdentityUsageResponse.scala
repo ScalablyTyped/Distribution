@@ -13,19 +13,15 @@ trait DescribeIdentityUsageResponse extends StObject {
 }
 object DescribeIdentityUsageResponse {
   
-  @scala.inline
-  def apply(): DescribeIdentityUsageResponse = {
+  inline def apply(): DescribeIdentityUsageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeIdentityUsageResponse]
   }
   
-  @scala.inline
-  implicit class DescribeIdentityUsageResponseMutableBuilder[Self <: DescribeIdentityUsageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIdentityUsageResponse](x: Self) {
     
-    @scala.inline
-    def setIdentityUsage(value: IdentityUsage): Self = StObject.set(x, "IdentityUsage", value.asInstanceOf[js.Any])
+    inline def setIdentityUsage(value: IdentityUsage): Self = StObject.set(x, "IdentityUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityUsageUndefined: Self = StObject.set(x, "IdentityUsage", js.undefined)
+    inline def setIdentityUsageUndefined: Self = StObject.set(x, "IdentityUsage", js.undefined)
   }
 }

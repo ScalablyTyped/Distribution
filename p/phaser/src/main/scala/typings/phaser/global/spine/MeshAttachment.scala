@@ -58,7 +58,7 @@ class MeshAttachment protected ()
   /* CompleteClass */
   override def newLinkedMesh(): typings.phaser.spine.MeshAttachment = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var parentMesh: js.Any = js.native
   
   /* CompleteClass */

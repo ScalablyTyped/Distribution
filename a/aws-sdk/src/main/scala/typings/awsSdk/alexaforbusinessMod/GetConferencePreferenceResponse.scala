@@ -13,19 +13,15 @@ trait GetConferencePreferenceResponse extends StObject {
 }
 object GetConferencePreferenceResponse {
   
-  @scala.inline
-  def apply(): GetConferencePreferenceResponse = {
+  inline def apply(): GetConferencePreferenceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetConferencePreferenceResponse]
   }
   
-  @scala.inline
-  implicit class GetConferencePreferenceResponseMutableBuilder[Self <: GetConferencePreferenceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetConferencePreferenceResponse](x: Self) {
     
-    @scala.inline
-    def setPreference(value: ConferencePreference): Self = StObject.set(x, "Preference", value.asInstanceOf[js.Any])
+    inline def setPreference(value: ConferencePreference): Self = StObject.set(x, "Preference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferenceUndefined: Self = StObject.set(x, "Preference", js.undefined)
+    inline def setPreferenceUndefined: Self = StObject.set(x, "Preference", js.undefined)
   }
 }

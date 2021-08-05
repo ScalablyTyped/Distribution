@@ -12,16 +12,13 @@ trait TypeofSwirlEffect extends StObject {
 }
 object TypeofSwirlEffect {
   
-  @scala.inline
-  def apply(interpolation: PowOut): TypeofSwirlEffect = {
+  inline def apply(interpolation: PowOut): TypeofSwirlEffect = {
     val __obj = js.Dynamic.literal(interpolation = interpolation.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSwirlEffect]
   }
   
-  @scala.inline
-  implicit class TypeofSwirlEffectMutableBuilder[Self <: TypeofSwirlEffect] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSwirlEffect](x: Self) {
     
-    @scala.inline
-    def setInterpolation(value: PowOut): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+    inline def setInterpolation(value: PowOut): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
   }
 }

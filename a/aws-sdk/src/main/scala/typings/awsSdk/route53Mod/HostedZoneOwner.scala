@@ -18,25 +18,19 @@ trait HostedZoneOwner extends StObject {
 }
 object HostedZoneOwner {
   
-  @scala.inline
-  def apply(): HostedZoneOwner = {
+  inline def apply(): HostedZoneOwner = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HostedZoneOwner]
   }
   
-  @scala.inline
-  implicit class HostedZoneOwnerMutableBuilder[Self <: HostedZoneOwner] (val x: Self) extends AnyVal {
+  extension [Self <: HostedZoneOwner](x: Self) {
     
-    @scala.inline
-    def setOwningAccount(value: AWSAccountID): Self = StObject.set(x, "OwningAccount", value.asInstanceOf[js.Any])
+    inline def setOwningAccount(value: AWSAccountID): Self = StObject.set(x, "OwningAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwningAccountUndefined: Self = StObject.set(x, "OwningAccount", js.undefined)
+    inline def setOwningAccountUndefined: Self = StObject.set(x, "OwningAccount", js.undefined)
     
-    @scala.inline
-    def setOwningService(value: HostedZoneOwningService): Self = StObject.set(x, "OwningService", value.asInstanceOf[js.Any])
+    inline def setOwningService(value: HostedZoneOwningService): Self = StObject.set(x, "OwningService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwningServiceUndefined: Self = StObject.set(x, "OwningService", js.undefined)
+    inline def setOwningServiceUndefined: Self = StObject.set(x, "OwningService", js.undefined)
   }
 }

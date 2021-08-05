@@ -12,25 +12,19 @@ trait CreateErrorOptions extends StObject {
 }
 object CreateErrorOptions {
   
-  @scala.inline
-  def apply(): CreateErrorOptions = {
+  inline def apply(): CreateErrorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateErrorOptions]
   }
   
-  @scala.inline
-  implicit class CreateErrorOptionsMutableBuilder[Self <: CreateErrorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateErrorOptions](x: Self) {
     
-    @scala.inline
-    def setFlags(value: Boolean): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Boolean): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
-    @scala.inline
-    def setMessages(value: LanguageMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: LanguageMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
   }
 }

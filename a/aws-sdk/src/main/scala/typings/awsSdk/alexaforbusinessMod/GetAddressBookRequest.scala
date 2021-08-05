@@ -13,16 +13,13 @@ trait GetAddressBookRequest extends StObject {
 }
 object GetAddressBookRequest {
   
-  @scala.inline
-  def apply(AddressBookArn: Arn): GetAddressBookRequest = {
+  inline def apply(AddressBookArn: Arn): GetAddressBookRequest = {
     val __obj = js.Dynamic.literal(AddressBookArn = AddressBookArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAddressBookRequest]
   }
   
-  @scala.inline
-  implicit class GetAddressBookRequestMutableBuilder[Self <: GetAddressBookRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAddressBookRequest](x: Self) {
     
-    @scala.inline
-    def setAddressBookArn(value: Arn): Self = StObject.set(x, "AddressBookArn", value.asInstanceOf[js.Any])
+    inline def setAddressBookArn(value: Arn): Self = StObject.set(x, "AddressBookArn", value.asInstanceOf[js.Any])
   }
 }

@@ -11,49 +11,41 @@ object reactourStrings {
   sealed trait bottom
     extends StObject
        with ReactourStepPosition
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait center
     extends StObject
        with ReactourStepPosition
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait div extends StObject
-  @scala.inline
-  def div: div = "div".asInstanceOf[div]
+  inline def div: div = "div".asInstanceOf[div]
   
   @js.native
   sealed trait esc extends StObject
-  @scala.inline
-  def esc: esc = "esc".asInstanceOf[esc]
+  inline def esc: esc = "esc".asInstanceOf[esc]
   
   @js.native
   sealed trait left
     extends StObject
        with ReactourStepPosition
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait nav extends StObject
-  @scala.inline
-  def nav: nav = "nav".asInstanceOf[nav]
+  inline def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
   sealed trait right
     extends StObject
        with ReactourStepPosition
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait top
     extends StObject
        with ReactourStepPosition
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  inline def top: top = "top".asInstanceOf[top]
 }

@@ -13,16 +13,13 @@ trait GetCustomVerificationEmailTemplateRequest extends StObject {
 }
 object GetCustomVerificationEmailTemplateRequest {
   
-  @scala.inline
-  def apply(TemplateName: EmailTemplateName): GetCustomVerificationEmailTemplateRequest = {
+  inline def apply(TemplateName: EmailTemplateName): GetCustomVerificationEmailTemplateRequest = {
     val __obj = js.Dynamic.literal(TemplateName = TemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCustomVerificationEmailTemplateRequest]
   }
   
-  @scala.inline
-  implicit class GetCustomVerificationEmailTemplateRequestMutableBuilder[Self <: GetCustomVerificationEmailTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCustomVerificationEmailTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setTemplateName(value: EmailTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: EmailTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
   }
 }

@@ -21,18 +21,13 @@ object inputTypeMod {
   @js.native
   val UNIQUEKEY: /* "_EGJS_AXES_INPUTTYPE_" */ String = js.native
   
-  @scala.inline
-  def convertInputType(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convertInputType")().asInstanceOf[js.Any]
-  @scala.inline
-  def convertInputType(inputType: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convertInputType")(inputType.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def convertInputType(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convertInputType")().asInstanceOf[js.Any]
+  inline def convertInputType(inputType: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convertInputType")(inputType.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def createHammer(element: HTMLElement, recognizers: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createHammer")(element.asInstanceOf[js.Any], recognizers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def createHammer(element: HTMLElement, recognizers: js.Any, inputClass: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createHammer")(element.asInstanceOf[js.Any], recognizers.asInstanceOf[js.Any], inputClass.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createHammer(element: HTMLElement, recognizers: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createHammer")(element.asInstanceOf[js.Any], recognizers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createHammer(element: HTMLElement, recognizers: js.Any, inputClass: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createHammer")(element.asInstanceOf[js.Any], recognizers.asInstanceOf[js.Any], inputClass.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def toAxis(source: js.Array[String], offset: js.Array[Double]): Axis = (^.asInstanceOf[js.Dynamic].applyDynamic("toAxis")(source.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Axis]
+  inline def toAxis(source: js.Array[String], offset: js.Array[Double]): Axis = (^.asInstanceOf[js.Dynamic].applyDynamic("toAxis")(source.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Axis]
   
   trait IInputType extends StObject {
     
@@ -58,8 +53,7 @@ object inputTypeMod {
   }
   object IInputType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       axes: js.Array[String],
       connect: IInputTypeObserver => IInputType,
       destroy: () => js.Any,
@@ -71,53 +65,37 @@ object inputTypeMod {
       __obj.asInstanceOf[IInputType]
     }
     
-    @scala.inline
-    implicit class IInputTypeMutableBuilder[Self <: IInputType] (val x: Self) extends AnyVal {
+    extension [Self <: IInputType](x: Self) {
       
-      @scala.inline
-      def setAxes(value: js.Array[String]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      inline def setAxes(value: js.Array[String]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxesVarargs(value: String*): Self = StObject.set(x, "axes", js.Array(value :_*))
+      inline def setAxesVarargs(value: String*): Self = StObject.set(x, "axes", js.Array(value :_*))
       
-      @scala.inline
-      def setConnect(value: IInputTypeObserver => IInputType): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
+      inline def setConnect(value: IInputTypeObserver => IInputType): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroy(value: () => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisable(value: () => js.Any): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      inline def setDisable(value: () => js.Any): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+      inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      @scala.inline
-      def setDisconnect(value: () => js.Any): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+      inline def setDisconnect(value: () => js.Any): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnable(value: () => js.Any): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      inline def setEnable(value: () => js.Any): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+      inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
-      @scala.inline
-      def setHammer(value: js.Any): Self = StObject.set(x, "hammer", value.asInstanceOf[js.Any])
+      inline def setHammer(value: js.Any): Self = StObject.set(x, "hammer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHammerUndefined: Self = StObject.set(x, "hammer", js.undefined)
+      inline def setHammerUndefined: Self = StObject.set(x, "hammer", js.undefined)
       
-      @scala.inline
-      def setIsEnable(value: () => Boolean): Self = StObject.set(x, "isEnable", js.Any.fromFunction0(value))
+      inline def setIsEnable(value: () => Boolean): Self = StObject.set(x, "isEnable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEnableUndefined: Self = StObject.set(x, "isEnable", js.undefined)
+      inline def setIsEnableUndefined: Self = StObject.set(x, "isEnable", js.undefined)
       
-      @scala.inline
-      def setMapAxes(value: js.Array[String] => js.Any): Self = StObject.set(x, "mapAxes", js.Any.fromFunction1(value))
+      inline def setMapAxes(value: js.Array[String] => js.Any): Self = StObject.set(x, "mapAxes", js.Any.fromFunction1(value))
     }
   }
   

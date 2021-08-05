@@ -22,23 +22,18 @@ trait SeparatorOptions extends StObject {
 }
 object SeparatorOptions {
   
-  @scala.inline
-  def apply(): SeparatorOptions = {
+  inline def apply(): SeparatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("separator")
     __obj.asInstanceOf[SeparatorOptions]
   }
   
-  @scala.inline
-  implicit class SeparatorOptionsMutableBuilder[Self <: SeparatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SeparatorOptions](x: Self) {
     
-    @scala.inline
-    def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setType(value: separator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: separator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -12,6 +12,5 @@ object colorSliderStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IColorSliderStyleProps): IColorSliderStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IColorSliderStyles]
+  inline def getStyles(props: IColorSliderStyleProps): IColorSliderStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IColorSliderStyles]
 }

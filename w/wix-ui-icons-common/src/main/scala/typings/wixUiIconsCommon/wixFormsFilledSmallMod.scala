@@ -22,20 +22,16 @@ object wixFormsFilledSmallMod extends Shortcut {
   }
   object WixFormsFilledSmallProps {
     
-    @scala.inline
-    def apply(): WixFormsFilledSmallProps = {
+    inline def apply(): WixFormsFilledSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WixFormsFilledSmallProps]
     }
     
-    @scala.inline
-    implicit class WixFormsFilledSmallPropsMutableBuilder[Self <: WixFormsFilledSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: WixFormsFilledSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

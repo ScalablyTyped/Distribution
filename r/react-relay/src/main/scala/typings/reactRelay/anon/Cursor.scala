@@ -12,25 +12,19 @@ trait Cursor extends StObject {
 }
 object Cursor {
   
-  @scala.inline
-  def apply(hasMore: Boolean): Cursor = {
+  inline def apply(hasMore: Boolean): Cursor = {
     val __obj = js.Dynamic.literal(hasMore = hasMore.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cursor]
   }
   
-  @scala.inline
-  implicit class CursorMutableBuilder[Self <: Cursor] (val x: Self) extends AnyVal {
+  extension [Self <: Cursor](x: Self) {
     
-    @scala.inline
-    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorNull: Self = StObject.set(x, "cursor", null)
+    inline def setCursorNull: Self = StObject.set(x, "cursor", null)
     
-    @scala.inline
-    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    @scala.inline
-    def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
+    inline def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
   }
 }

@@ -33,6 +33,5 @@ object TableQuery {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def select(fields: String*): TableQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(fields.asInstanceOf[js.Any]).asInstanceOf[TableQuery]
+  inline def select(fields: String*): TableQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(fields.asInstanceOf[js.Any]).asInstanceOf[TableQuery]
 }

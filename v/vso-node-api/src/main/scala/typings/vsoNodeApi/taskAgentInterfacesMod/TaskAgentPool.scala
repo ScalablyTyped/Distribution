@@ -54,8 +54,7 @@ trait TaskAgentPool
 }
 object TaskAgentPool {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     administratorsGroup: IdentityRef,
     autoProvision: Boolean,
     createdBy: IdentityRef,
@@ -75,34 +74,24 @@ object TaskAgentPool {
     __obj.asInstanceOf[TaskAgentPool]
   }
   
-  @scala.inline
-  implicit class TaskAgentPoolMutableBuilder[Self <: TaskAgentPool] (val x: Self) extends AnyVal {
+  extension [Self <: TaskAgentPool](x: Self) {
     
-    @scala.inline
-    def setAdministratorsGroup(value: IdentityRef): Self = StObject.set(x, "administratorsGroup", value.asInstanceOf[js.Any])
+    inline def setAdministratorsGroup(value: IdentityRef): Self = StObject.set(x, "administratorsGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoProvision(value: Boolean): Self = StObject.set(x, "autoProvision", value.asInstanceOf[js.Any])
+    inline def setAutoProvision(value: Boolean): Self = StObject.set(x, "autoProvision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupScopeId(value: String): Self = StObject.set(x, "groupScopeId", value.asInstanceOf[js.Any])
+    inline def setGroupScopeId(value: String): Self = StObject.set(x, "groupScopeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioned(value: Boolean): Self = StObject.set(x, "provisioned", value.asInstanceOf[js.Any])
+    inline def setProvisioned(value: Boolean): Self = StObject.set(x, "provisioned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountsGroup(value: IdentityRef): Self = StObject.set(x, "serviceAccountsGroup", value.asInstanceOf[js.Any])
+    inline def setServiceAccountsGroup(value: IdentityRef): Self = StObject.set(x, "serviceAccountsGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

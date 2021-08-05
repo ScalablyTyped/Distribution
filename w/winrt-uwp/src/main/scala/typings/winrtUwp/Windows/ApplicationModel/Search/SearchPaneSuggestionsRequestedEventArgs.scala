@@ -21,8 +21,7 @@ trait SearchPaneSuggestionsRequestedEventArgs extends StObject {
 }
 object SearchPaneSuggestionsRequestedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     language: String,
     linguisticDetails: SearchPaneQueryLinguisticDetails,
     queryText: String,
@@ -32,19 +31,14 @@ object SearchPaneSuggestionsRequestedEventArgs {
     __obj.asInstanceOf[SearchPaneSuggestionsRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class SearchPaneSuggestionsRequestedEventArgsMutableBuilder[Self <: SearchPaneSuggestionsRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SearchPaneSuggestionsRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinguisticDetails(value: SearchPaneQueryLinguisticDetails): Self = StObject.set(x, "linguisticDetails", value.asInstanceOf[js.Any])
+    inline def setLinguisticDetails(value: SearchPaneQueryLinguisticDetails): Self = StObject.set(x, "linguisticDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryText(value: String): Self = StObject.set(x, "queryText", value.asInstanceOf[js.Any])
+    inline def setQueryText(value: String): Self = StObject.set(x, "queryText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: SearchPaneSuggestionsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: SearchPaneSuggestionsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

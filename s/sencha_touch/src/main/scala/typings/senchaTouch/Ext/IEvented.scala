@@ -21,19 +21,15 @@ trait IEvented
 }
 object IEvented {
   
-  @scala.inline
-  def apply(): IEvented = {
+  inline def apply(): IEvented = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEvented]
   }
   
-  @scala.inline
-  implicit class IEventedMutableBuilder[Self <: IEvented] (val x: Self) extends AnyVal {
+  extension [Self <: IEvented](x: Self) {
     
-    @scala.inline
-    def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+    inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
+    inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
   }
 }

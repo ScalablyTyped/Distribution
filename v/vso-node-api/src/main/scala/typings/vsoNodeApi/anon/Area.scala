@@ -12,19 +12,15 @@ trait Area extends StObject {
 }
 object Area {
   
-  @scala.inline
-  def apply(area: scala.Double, iteration: scala.Double): Area = {
+  inline def apply(area: scala.Double, iteration: scala.Double): Area = {
     val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], iteration = iteration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Area]
   }
   
-  @scala.inline
-  implicit class AreaMutableBuilder[Self <: Area] (val x: Self) extends AnyVal {
+  extension [Self <: Area](x: Self) {
     
-    @scala.inline
-    def setArea(value: scala.Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: scala.Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIteration(value: scala.Double): Self = StObject.set(x, "iteration", value.asInstanceOf[js.Any])
+    inline def setIteration(value: scala.Double): Self = StObject.set(x, "iteration", value.asInstanceOf[js.Any])
   }
 }

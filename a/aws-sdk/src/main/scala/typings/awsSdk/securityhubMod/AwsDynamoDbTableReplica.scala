@@ -38,52 +38,37 @@ trait AwsDynamoDbTableReplica extends StObject {
 }
 object AwsDynamoDbTableReplica {
   
-  @scala.inline
-  def apply(): AwsDynamoDbTableReplica = {
+  inline def apply(): AwsDynamoDbTableReplica = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsDynamoDbTableReplica]
   }
   
-  @scala.inline
-  implicit class AwsDynamoDbTableReplicaMutableBuilder[Self <: AwsDynamoDbTableReplica] (val x: Self) extends AnyVal {
+  extension [Self <: AwsDynamoDbTableReplica](x: Self) {
     
-    @scala.inline
-    def setGlobalSecondaryIndexes(value: AwsDynamoDbTableReplicaGlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+    inline def setGlobalSecondaryIndexes(value: AwsDynamoDbTableReplicaGlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
+    inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
     
-    @scala.inline
-    def setGlobalSecondaryIndexesVarargs(value: AwsDynamoDbTableReplicaGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
+    inline def setGlobalSecondaryIndexesVarargs(value: AwsDynamoDbTableReplicaGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
     
-    @scala.inline
-    def setKmsMasterKeyId(value: NonEmptyString): Self = StObject.set(x, "KmsMasterKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsMasterKeyId(value: NonEmptyString): Self = StObject.set(x, "KmsMasterKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "KmsMasterKeyId", js.undefined)
+    inline def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "KmsMasterKeyId", js.undefined)
     
-    @scala.inline
-    def setProvisionedThroughputOverride(value: AwsDynamoDbTableProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
+    inline def setProvisionedThroughputOverride(value: AwsDynamoDbTableProvisionedThroughputOverride): Self = StObject.set(x, "ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
+    inline def setProvisionedThroughputOverrideUndefined: Self = StObject.set(x, "ProvisionedThroughputOverride", js.undefined)
     
-    @scala.inline
-    def setRegionName(value: NonEmptyString): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+    inline def setRegionName(value: NonEmptyString): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
+    inline def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
     
-    @scala.inline
-    def setReplicaStatus(value: NonEmptyString): Self = StObject.set(x, "ReplicaStatus", value.asInstanceOf[js.Any])
+    inline def setReplicaStatus(value: NonEmptyString): Self = StObject.set(x, "ReplicaStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicaStatusDescription(value: NonEmptyString): Self = StObject.set(x, "ReplicaStatusDescription", value.asInstanceOf[js.Any])
+    inline def setReplicaStatusDescription(value: NonEmptyString): Self = StObject.set(x, "ReplicaStatusDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicaStatusDescriptionUndefined: Self = StObject.set(x, "ReplicaStatusDescription", js.undefined)
+    inline def setReplicaStatusDescriptionUndefined: Self = StObject.set(x, "ReplicaStatusDescription", js.undefined)
     
-    @scala.inline
-    def setReplicaStatusUndefined: Self = StObject.set(x, "ReplicaStatus", js.undefined)
+    inline def setReplicaStatusUndefined: Self = StObject.set(x, "ReplicaStatus", js.undefined)
   }
 }

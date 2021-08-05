@@ -18,13 +18,9 @@ object PopoverMenu {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Divider(): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Divider")().asInstanceOf[ReactElement]
-  @scala.inline
-  def Divider(props: PopoverMenuDividerProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Divider")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def Divider(): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Divider")().asInstanceOf[ReactElement]
+  inline def Divider(props: PopoverMenuDividerProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Divider")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def MenuItem(): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuItem")().asInstanceOf[ReactElement]
-  @scala.inline
-  def MenuItem(props: PopoverMenuItemProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuItem")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def MenuItem(): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuItem")().asInstanceOf[ReactElement]
+  inline def MenuItem(props: PopoverMenuItemProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuItem")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
 }

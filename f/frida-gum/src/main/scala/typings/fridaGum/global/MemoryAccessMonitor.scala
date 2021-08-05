@@ -24,11 +24,9 @@ object MemoryAccessMonitor {
     * Stops monitoring the remaining memory ranges passed to
     * `MemoryAccessMonitor.enable()`.
     */
-  @scala.inline
-  def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
+  inline def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
   
-  @scala.inline
-  def enable(ranges: js.Array[MemoryAccessRange], callbacks: MemoryAccessCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enable")(ranges.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def enable(ranges: js.Array[MemoryAccessRange], callbacks: MemoryAccessCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enable")(ranges.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Starts monitoring one or more memory ranges for access, and notifies on
     * the first access of each contained memory page.
@@ -36,6 +34,5 @@ object MemoryAccessMonitor {
     * @param ranges One or more ranges to monitor.
     * @param callbacks Callbacks to be notified on access.
     */
-  @scala.inline
-  def enable(ranges: MemoryAccessRange, callbacks: MemoryAccessCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enable")(ranges.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def enable(ranges: MemoryAccessRange, callbacks: MemoryAccessCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enable")(ranges.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

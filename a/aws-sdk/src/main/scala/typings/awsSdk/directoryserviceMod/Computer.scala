@@ -23,34 +23,25 @@ trait Computer extends StObject {
 }
 object Computer {
   
-  @scala.inline
-  def apply(): Computer = {
+  inline def apply(): Computer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Computer]
   }
   
-  @scala.inline
-  implicit class ComputerMutableBuilder[Self <: Computer] (val x: Self) extends AnyVal {
+  extension [Self <: Computer](x: Self) {
     
-    @scala.inline
-    def setComputerAttributes(value: Attributes): Self = StObject.set(x, "ComputerAttributes", value.asInstanceOf[js.Any])
+    inline def setComputerAttributes(value: Attributes): Self = StObject.set(x, "ComputerAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputerAttributesUndefined: Self = StObject.set(x, "ComputerAttributes", js.undefined)
+    inline def setComputerAttributesUndefined: Self = StObject.set(x, "ComputerAttributes", js.undefined)
     
-    @scala.inline
-    def setComputerAttributesVarargs(value: Attribute*): Self = StObject.set(x, "ComputerAttributes", js.Array(value :_*))
+    inline def setComputerAttributesVarargs(value: Attribute*): Self = StObject.set(x, "ComputerAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setComputerId(value: SID): Self = StObject.set(x, "ComputerId", value.asInstanceOf[js.Any])
+    inline def setComputerId(value: SID): Self = StObject.set(x, "ComputerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputerIdUndefined: Self = StObject.set(x, "ComputerId", js.undefined)
+    inline def setComputerIdUndefined: Self = StObject.set(x, "ComputerId", js.undefined)
     
-    @scala.inline
-    def setComputerName(value: ComputerName): Self = StObject.set(x, "ComputerName", value.asInstanceOf[js.Any])
+    inline def setComputerName(value: ComputerName): Self = StObject.set(x, "ComputerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputerNameUndefined: Self = StObject.set(x, "ComputerName", js.undefined)
+    inline def setComputerNameUndefined: Self = StObject.set(x, "ComputerName", js.undefined)
   }
 }

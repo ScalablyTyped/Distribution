@@ -21,19 +21,15 @@ trait PasswordQuestionOptions[T /* <: Answers */]
 }
 object PasswordQuestionOptions {
   
-  @scala.inline
-  def apply[T /* <: Answers */](): PasswordQuestionOptions[T] = {
+  inline def apply[T /* <: Answers */](): PasswordQuestionOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PasswordQuestionOptions[T]]
   }
   
-  @scala.inline
-  implicit class PasswordQuestionOptionsMutableBuilder[Self <: PasswordQuestionOptions[?], T /* <: Answers */] (val x: Self & PasswordQuestionOptions[T]) extends AnyVal {
+  extension [Self <: PasswordQuestionOptions[?], T /* <: Answers */](x: Self & PasswordQuestionOptions[T]) {
     
-    @scala.inline
-    def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
   }
 }

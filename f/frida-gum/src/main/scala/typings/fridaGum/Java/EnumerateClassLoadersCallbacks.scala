@@ -19,19 +19,15 @@ trait EnumerateClassLoadersCallbacks extends StObject {
 }
 object EnumerateClassLoadersCallbacks {
   
-  @scala.inline
-  def apply(onComplete: () => Unit, onMatch: typings.fridaGum.anon.Wrapper => Unit): EnumerateClassLoadersCallbacks = {
+  inline def apply(onComplete: () => Unit, onMatch: typings.fridaGum.anon.Wrapper => Unit): EnumerateClassLoadersCallbacks = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction0(onComplete), onMatch = js.Any.fromFunction1(onMatch))
     __obj.asInstanceOf[EnumerateClassLoadersCallbacks]
   }
   
-  @scala.inline
-  implicit class EnumerateClassLoadersCallbacksMutableBuilder[Self <: EnumerateClassLoadersCallbacks] (val x: Self) extends AnyVal {
+  extension [Self <: EnumerateClassLoadersCallbacks](x: Self) {
     
-    @scala.inline
-    def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
+    inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnMatch(value: typings.fridaGum.anon.Wrapper => Unit): Self = StObject.set(x, "onMatch", js.Any.fromFunction1(value))
+    inline def setOnMatch(value: typings.fridaGum.anon.Wrapper => Unit): Self = StObject.set(x, "onMatch", js.Any.fromFunction1(value))
   }
 }

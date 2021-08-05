@@ -12,22 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MockResult[T] extends StObject
 object MockResult {
   
-  @scala.inline
-  def MockResultIncomplete(value: Unit): typings.jest.mod.jest.MockResultIncomplete = {
+  inline def MockResultIncomplete(value: Unit): typings.jest.mod.jest.MockResultIncomplete = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("incomplete")
     __obj.asInstanceOf[typings.jest.mod.jest.MockResultIncomplete]
   }
   
-  @scala.inline
-  def MockResultReturn[T](value: T): typings.jest.mod.jest.MockResultReturn[T] = {
+  inline def MockResultReturn[T](value: T): typings.jest.mod.jest.MockResultReturn[T] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("return")
     __obj.asInstanceOf[typings.jest.mod.jest.MockResultReturn[T]]
   }
   
-  @scala.inline
-  def MockResultThrow(value: js.Any): typings.jest.mod.jest.MockResultThrow = {
+  inline def MockResultThrow(value: js.Any): typings.jest.mod.jest.MockResultThrow = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("throw")
     __obj.asInstanceOf[typings.jest.mod.jest.MockResultThrow]

@@ -12,22 +12,17 @@ trait CancelJobInput extends StObject {
 }
 object CancelJobInput {
   
-  @scala.inline
-  def apply(JobId: JobId): CancelJobInput = {
+  inline def apply(JobId: JobId): CancelJobInput = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelJobInput]
   }
   
-  @scala.inline
-  implicit class CancelJobInputMutableBuilder[Self <: CancelJobInput] (val x: Self) extends AnyVal {
+  extension [Self <: CancelJobInput](x: Self) {
     
-    @scala.inline
-    def setAPIVersion(value: APIVersion_): Self = StObject.set(x, "APIVersion", value.asInstanceOf[js.Any])
+    inline def setAPIVersion(value: APIVersion_): Self = StObject.set(x, "APIVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAPIVersionUndefined: Self = StObject.set(x, "APIVersion", js.undefined)
+    inline def setAPIVersionUndefined: Self = StObject.set(x, "APIVersion", js.undefined)
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }
 }

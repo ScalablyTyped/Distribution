@@ -10,8 +10,7 @@ trait ListTablesOutput
      with typings.awsSdkClientDynamodbBrowser.typesListTablesOutputMod.ListTablesOutput
 object ListTablesOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ListTablesOutput = {
+  inline def apply($metadata: ResponseMetadata): ListTablesOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTablesOutput]
   }

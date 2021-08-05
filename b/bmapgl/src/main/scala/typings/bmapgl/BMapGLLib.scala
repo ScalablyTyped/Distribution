@@ -25,8 +25,7 @@ object BMapGLLib {
   }
   object DistanceTool {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addEventListener: (String, Callback) => Unit,
       close: () => Unit,
       open: () => Unit,
@@ -36,20 +35,15 @@ object BMapGLLib {
       __obj.asInstanceOf[DistanceTool]
     }
     
-    @scala.inline
-    implicit class DistanceToolMutableBuilder[Self <: DistanceTool] (val x: Self) extends AnyVal {
+    extension [Self <: DistanceTool](x: Self) {
       
-      @scala.inline
-      def setAddEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+      inline def setAddEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+      inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
+      inline def setRemoveEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     }
   }
   
@@ -73,8 +67,7 @@ object BMapGLLib {
   }
   object DrawingManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addEventListener: (String, Callback) => Unit,
       close: () => Unit,
       disableCalculate: () => Unit,
@@ -88,32 +81,23 @@ object BMapGLLib {
       __obj.asInstanceOf[DrawingManager]
     }
     
-    @scala.inline
-    implicit class DrawingManagerMutableBuilder[Self <: DrawingManager] (val x: Self) extends AnyVal {
+    extension [Self <: DrawingManager](x: Self) {
       
-      @scala.inline
-      def setAddEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+      inline def setAddEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisableCalculate(value: () => Unit): Self = StObject.set(x, "disableCalculate", js.Any.fromFunction0(value))
+      inline def setDisableCalculate(value: () => Unit): Self = StObject.set(x, "disableCalculate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableCalculate(value: () => Unit): Self = StObject.set(x, "enableCalculate", js.Any.fromFunction0(value))
+      inline def setEnableCalculate(value: () => Unit): Self = StObject.set(x, "enableCalculate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDrawingMode(value: () => DrawingType): Self = StObject.set(x, "getDrawingMode", js.Any.fromFunction0(value))
+      inline def setGetDrawingMode(value: () => DrawingType): Self = StObject.set(x, "getDrawingMode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+      inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
+      inline def setRemoveEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetDrawingMode(value: DrawingType => Unit): Self = StObject.set(x, "setDrawingMode", js.Any.fromFunction1(value))
+      inline def setSetDrawingMode(value: DrawingType => Unit): Self = StObject.set(x, "setDrawingMode", js.Any.fromFunction1(value))
     }
   }
 }

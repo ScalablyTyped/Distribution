@@ -22,8 +22,7 @@ trait RequestDetails extends StObject {
 }
 object RequestDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     form: js.Object,
     headers: js.Object,
     hostName: String,
@@ -36,28 +35,20 @@ object RequestDetails {
     __obj.asInstanceOf[RequestDetails]
   }
   
-  @scala.inline
-  implicit class RequestDetailsMutableBuilder[Self <: RequestDetails] (val x: Self) extends AnyVal {
+  extension [Self <: RequestDetails](x: Self) {
     
-    @scala.inline
-    def setForm(value: js.Object): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: js.Object): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
+    inline def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+    inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryString(value: js.Object): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: js.Object): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

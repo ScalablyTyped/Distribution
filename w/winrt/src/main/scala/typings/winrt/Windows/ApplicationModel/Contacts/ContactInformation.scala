@@ -12,8 +12,7 @@ trait ContactInformation
      with IContactInformation
 object ContactInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFields: IVectorView[ContactField],
     emails: IVectorView[ContactField],
     getThumbnailAsync: () => IAsyncOperation[IRandomAccessStreamWithContentType],

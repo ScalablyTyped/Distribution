@@ -18,25 +18,19 @@ trait TableVersion extends StObject {
 }
 object TableVersion {
   
-  @scala.inline
-  def apply(): TableVersion = {
+  inline def apply(): TableVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableVersion]
   }
   
-  @scala.inline
-  implicit class TableVersionMutableBuilder[Self <: TableVersion] (val x: Self) extends AnyVal {
+  extension [Self <: TableVersion](x: Self) {
     
-    @scala.inline
-    def setTable(value: Table): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
+    inline def setTable(value: Table): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
     
-    @scala.inline
-    def setVersionId(value: VersionString): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: VersionString): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

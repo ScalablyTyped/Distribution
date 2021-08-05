@@ -18,8 +18,7 @@ trait OnAndEmit[T, T2] extends StObject {
 }
 object OnAndEmit {
   
-  @scala.inline
-  def apply[T, T2](
+  inline def apply[T, T2](
     emit: (/* eventType */ String, /* value */ js.UndefOr[T2]) => Unit,
     on: (/* eventType */ String, /* handler */ js.Function1[T, Unit]) => Unit
   ): OnAndEmit[T, T2] = {
@@ -27,13 +26,10 @@ object OnAndEmit {
     __obj.asInstanceOf[OnAndEmit[T, T2]]
   }
   
-  @scala.inline
-  implicit class OnAndEmitMutableBuilder[Self <: OnAndEmit[?, ?], T, T2] (val x: Self & (OnAndEmit[T, T2])) extends AnyVal {
+  extension [Self <: OnAndEmit[?, ?], T, T2](x: Self & (OnAndEmit[T, T2])) {
     
-    @scala.inline
-    def setEmit(value: (/* eventType */ String, /* value */ js.UndefOr[T2]) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+    inline def setEmit(value: (/* eventType */ String, /* value */ js.UndefOr[T2]) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOn(value: (/* eventType */ String, /* handler */ js.Function1[T, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (/* eventType */ String, /* handler */ js.Function1[T, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

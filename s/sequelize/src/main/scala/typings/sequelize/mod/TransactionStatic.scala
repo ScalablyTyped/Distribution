@@ -122,22 +122,17 @@ trait TransactionStatic extends StObject {
 }
 object TransactionStatic {
   
-  @scala.inline
-  def apply(ISOLATION_LEVELS: TransactionIsolationLevels, LOCK: TransactionLock, TYPES: TransactionTypes): TransactionStatic = {
+  inline def apply(ISOLATION_LEVELS: TransactionIsolationLevels, LOCK: TransactionLock, TYPES: TransactionTypes): TransactionStatic = {
     val __obj = js.Dynamic.literal(ISOLATION_LEVELS = ISOLATION_LEVELS.asInstanceOf[js.Any], LOCK = LOCK.asInstanceOf[js.Any], TYPES = TYPES.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionStatic]
   }
   
-  @scala.inline
-  implicit class TransactionStaticMutableBuilder[Self <: TransactionStatic] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionStatic](x: Self) {
     
-    @scala.inline
-    def setISOLATION_LEVELS(value: TransactionIsolationLevels): Self = StObject.set(x, "ISOLATION_LEVELS", value.asInstanceOf[js.Any])
+    inline def setISOLATION_LEVELS(value: TransactionIsolationLevels): Self = StObject.set(x, "ISOLATION_LEVELS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLOCK(value: TransactionLock): Self = StObject.set(x, "LOCK", value.asInstanceOf[js.Any])
+    inline def setLOCK(value: TransactionLock): Self = StObject.set(x, "LOCK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTYPES(value: TransactionTypes): Self = StObject.set(x, "TYPES", value.asInstanceOf[js.Any])
+    inline def setTYPES(value: TransactionTypes): Self = StObject.set(x, "TYPES", value.asInstanceOf[js.Any])
   }
 }

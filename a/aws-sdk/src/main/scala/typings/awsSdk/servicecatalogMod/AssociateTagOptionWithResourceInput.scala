@@ -18,19 +18,15 @@ trait AssociateTagOptionWithResourceInput extends StObject {
 }
 object AssociateTagOptionWithResourceInput {
   
-  @scala.inline
-  def apply(ResourceId: ResourceId, TagOptionId: TagOptionId): AssociateTagOptionWithResourceInput = {
+  inline def apply(ResourceId: ResourceId, TagOptionId: TagOptionId): AssociateTagOptionWithResourceInput = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], TagOptionId = TagOptionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateTagOptionWithResourceInput]
   }
   
-  @scala.inline
-  implicit class AssociateTagOptionWithResourceInputMutableBuilder[Self <: AssociateTagOptionWithResourceInput] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateTagOptionWithResourceInput](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagOptionId(value: TagOptionId): Self = StObject.set(x, "TagOptionId", value.asInstanceOf[js.Any])
+    inline def setTagOptionId(value: TagOptionId): Self = StObject.set(x, "TagOptionId", value.asInstanceOf[js.Any])
   }
 }

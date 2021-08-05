@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait uCurrent extends StObject
 object uCurrent {
   
-  @scala.inline
-  def A: typings.convertUnits.convertUnitsStrings.A = "A".asInstanceOf[typings.convertUnits.convertUnitsStrings.A]
+  inline def A: typings.convertUnits.convertUnitsStrings.A = "A".asInstanceOf[typings.convertUnits.convertUnitsStrings.A]
   
-  @scala.inline
-  def kA: typings.convertUnits.convertUnitsStrings.kA = "kA".asInstanceOf[typings.convertUnits.convertUnitsStrings.kA]
+  inline def kA: typings.convertUnits.convertUnitsStrings.kA = "kA".asInstanceOf[typings.convertUnits.convertUnitsStrings.kA]
   
-  @scala.inline
-  def mA: typings.convertUnits.convertUnitsStrings.mA = "mA".asInstanceOf[typings.convertUnits.convertUnitsStrings.mA]
+  inline def mA: typings.convertUnits.convertUnitsStrings.mA = "mA".asInstanceOf[typings.convertUnits.convertUnitsStrings.mA]
 }

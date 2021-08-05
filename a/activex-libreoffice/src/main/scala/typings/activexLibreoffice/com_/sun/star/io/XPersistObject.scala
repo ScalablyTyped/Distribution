@@ -63,8 +63,7 @@ trait XPersistObject
 }
 object XPersistObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ServiceName: String,
     acquire: () => Unit,
     getServiceName: () => String,
@@ -77,19 +76,14 @@ object XPersistObject {
     __obj.asInstanceOf[XPersistObject]
   }
   
-  @scala.inline
-  implicit class XPersistObjectMutableBuilder[Self <: XPersistObject] (val x: Self) extends AnyVal {
+  extension [Self <: XPersistObject](x: Self) {
     
-    @scala.inline
-    def setGetServiceName(value: () => String): Self = StObject.set(x, "getServiceName", js.Any.fromFunction0(value))
+    inline def setGetServiceName(value: () => String): Self = StObject.set(x, "getServiceName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRead(value: XObjectInputStream => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    inline def setRead(value: XObjectInputStream => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrite(value: XObjectOutputStream => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    inline def setWrite(value: XObjectOutputStream => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

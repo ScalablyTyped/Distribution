@@ -32,35 +32,26 @@ object mod {
   }
   object CountriesListItem {
     
-    @scala.inline
-    def apply(dialCode: String, iso2: String, name: String, priority: Double): CountriesListItem = {
+    inline def apply(dialCode: String, iso2: String, name: String, priority: Double): CountriesListItem = {
       val __obj = js.Dynamic.literal(dialCode = dialCode.asInstanceOf[js.Any], iso2 = iso2.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], areaCodes = null)
       __obj.asInstanceOf[CountriesListItem]
     }
     
-    @scala.inline
-    implicit class CountriesListItemMutableBuilder[Self <: CountriesListItem] (val x: Self) extends AnyVal {
+    extension [Self <: CountriesListItem](x: Self) {
       
-      @scala.inline
-      def setAreaCodes(value: js.Array[String]): Self = StObject.set(x, "areaCodes", value.asInstanceOf[js.Any])
+      inline def setAreaCodes(value: js.Array[String]): Self = StObject.set(x, "areaCodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAreaCodesNull: Self = StObject.set(x, "areaCodes", null)
+      inline def setAreaCodesNull: Self = StObject.set(x, "areaCodes", null)
       
-      @scala.inline
-      def setAreaCodesVarargs(value: String*): Self = StObject.set(x, "areaCodes", js.Array(value :_*))
+      inline def setAreaCodesVarargs(value: String*): Self = StObject.set(x, "areaCodes", js.Array(value :_*))
       
-      @scala.inline
-      def setDialCode(value: String): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
+      inline def setDialCode(value: String): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
+      inline def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,29 +69,22 @@ object mod {
   }
   object PickerData {
     
-    @scala.inline
-    def apply(dialCode: String, image: ImageRequireSource, iso2: String, key: Double, label: String): PickerData = {
+    inline def apply(dialCode: String, image: ImageRequireSource, iso2: String, key: Double, label: String): PickerData = {
       val __obj = js.Dynamic.literal(dialCode = dialCode.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], iso2 = iso2.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickerData]
     }
     
-    @scala.inline
-    implicit class PickerDataMutableBuilder[Self <: PickerData] (val x: Self) extends AnyVal {
+    extension [Self <: PickerData](x: Self) {
       
-      @scala.inline
-      def setDialCode(value: String): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
+      inline def setDialCode(value: String): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: ImageRequireSource): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: ImageRequireSource): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
+      inline def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
   }
   
@@ -280,164 +264,112 @@ object mod {
   }
   object ReactNativePhoneInputProps {
     
-    @scala.inline
-    def apply[TextComponentType /* <: ComponentType[js.Object] */](): ReactNativePhoneInputProps[TextComponentType] = {
+    inline def apply[TextComponentType /* <: ComponentType[js.Object] */](): ReactNativePhoneInputProps[TextComponentType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactNativePhoneInputProps[TextComponentType]]
     }
     
-    @scala.inline
-    implicit class ReactNativePhoneInputPropsMutableBuilder[Self <: ReactNativePhoneInputProps[?], TextComponentType /* <: ComponentType[js.Object] */] (val x: Self & ReactNativePhoneInputProps[TextComponentType]) extends AnyVal {
+    extension [Self <: ReactNativePhoneInputProps[?], TextComponentType /* <: ComponentType[js.Object] */](x: Self & ReactNativePhoneInputProps[TextComponentType]) {
       
-      @scala.inline
-      def setAllowZeroAfterCountryCode(value: Boolean): Self = StObject.set(x, "allowZeroAfterCountryCode", value.asInstanceOf[js.Any])
+      inline def setAllowZeroAfterCountryCode(value: Boolean): Self = StObject.set(x, "allowZeroAfterCountryCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowZeroAfterCountryCodeUndefined: Self = StObject.set(x, "allowZeroAfterCountryCode", js.undefined)
+      inline def setAllowZeroAfterCountryCodeUndefined: Self = StObject.set(x, "allowZeroAfterCountryCode", js.undefined)
       
-      @scala.inline
-      def setButtonTextStyle(value: TextStyle): Self = StObject.set(x, "buttonTextStyle", value.asInstanceOf[js.Any])
+      inline def setButtonTextStyle(value: TextStyle): Self = StObject.set(x, "buttonTextStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonTextStyleNull: Self = StObject.set(x, "buttonTextStyle", null)
+      inline def setButtonTextStyleNull: Self = StObject.set(x, "buttonTextStyle", null)
       
-      @scala.inline
-      def setButtonTextStyleUndefined: Self = StObject.set(x, "buttonTextStyle", js.undefined)
+      inline def setButtonTextStyleUndefined: Self = StObject.set(x, "buttonTextStyle", js.undefined)
       
-      @scala.inline
-      def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+      inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
+      inline def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
       
-      @scala.inline
-      def setConfirmText(value: String): Self = StObject.set(x, "confirmText", value.asInstanceOf[js.Any])
+      inline def setConfirmText(value: String): Self = StObject.set(x, "confirmText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmTextUndefined: Self = StObject.set(x, "confirmText", js.undefined)
+      inline def setConfirmTextUndefined: Self = StObject.set(x, "confirmText", js.undefined)
       
-      @scala.inline
-      def setCountriesList(value: js.Array[CountriesListItem]): Self = StObject.set(x, "countriesList", value.asInstanceOf[js.Any])
+      inline def setCountriesList(value: js.Array[CountriesListItem]): Self = StObject.set(x, "countriesList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountriesListUndefined: Self = StObject.set(x, "countriesList", js.undefined)
+      inline def setCountriesListUndefined: Self = StObject.set(x, "countriesList", js.undefined)
       
-      @scala.inline
-      def setCountriesListVarargs(value: CountriesListItem*): Self = StObject.set(x, "countriesList", js.Array(value :_*))
+      inline def setCountriesListVarargs(value: CountriesListItem*): Self = StObject.set(x, "countriesList", js.Array(value :_*))
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setFlagStyle(value: ViewStyle): Self = StObject.set(x, "flagStyle", value.asInstanceOf[js.Any])
+      inline def setFlagStyle(value: ViewStyle): Self = StObject.set(x, "flagStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagStyleNull: Self = StObject.set(x, "flagStyle", null)
+      inline def setFlagStyleNull: Self = StObject.set(x, "flagStyle", null)
       
-      @scala.inline
-      def setFlagStyleUndefined: Self = StObject.set(x, "flagStyle", js.undefined)
+      inline def setFlagStyleUndefined: Self = StObject.set(x, "flagStyle", js.undefined)
       
-      @scala.inline
-      def setInitialCountry(value: String): Self = StObject.set(x, "initialCountry", value.asInstanceOf[js.Any])
+      inline def setInitialCountry(value: String): Self = StObject.set(x, "initialCountry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialCountryUndefined: Self = StObject.set(x, "initialCountry", js.undefined)
+      inline def setInitialCountryUndefined: Self = StObject.set(x, "initialCountry", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOnChangePhoneNumber(value: /* number */ String => Unit): Self = StObject.set(x, "onChangePhoneNumber", js.Any.fromFunction1(value))
+      inline def setOnChangePhoneNumber(value: /* number */ String => Unit): Self = StObject.set(x, "onChangePhoneNumber", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangePhoneNumberUndefined: Self = StObject.set(x, "onChangePhoneNumber", js.undefined)
+      inline def setOnChangePhoneNumberUndefined: Self = StObject.set(x, "onChangePhoneNumber", js.undefined)
       
-      @scala.inline
-      def setOnPressCancel(value: () => Unit): Self = StObject.set(x, "onPressCancel", js.Any.fromFunction0(value))
+      inline def setOnPressCancel(value: () => Unit): Self = StObject.set(x, "onPressCancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPressCancelUndefined: Self = StObject.set(x, "onPressCancel", js.undefined)
+      inline def setOnPressCancelUndefined: Self = StObject.set(x, "onPressCancel", js.undefined)
       
-      @scala.inline
-      def setOnPressConfirm(value: () => Unit): Self = StObject.set(x, "onPressConfirm", js.Any.fromFunction0(value))
+      inline def setOnPressConfirm(value: () => Unit): Self = StObject.set(x, "onPressConfirm", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPressConfirmUndefined: Self = StObject.set(x, "onPressConfirm", js.undefined)
+      inline def setOnPressConfirmUndefined: Self = StObject.set(x, "onPressConfirm", js.undefined)
       
-      @scala.inline
-      def setOnPressFlag(value: () => Unit): Self = StObject.set(x, "onPressFlag", js.Any.fromFunction0(value))
+      inline def setOnPressFlag(value: () => Unit): Self = StObject.set(x, "onPressFlag", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPressFlagUndefined: Self = StObject.set(x, "onPressFlag", js.undefined)
+      inline def setOnPressFlagUndefined: Self = StObject.set(x, "onPressFlag", js.undefined)
       
-      @scala.inline
-      def setOnSelectCountry(value: /* iso2 */ String => Unit): Self = StObject.set(x, "onSelectCountry", js.Any.fromFunction1(value))
+      inline def setOnSelectCountry(value: /* iso2 */ String => Unit): Self = StObject.set(x, "onSelectCountry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectCountryUndefined: Self = StObject.set(x, "onSelectCountry", js.undefined)
+      inline def setOnSelectCountryUndefined: Self = StObject.set(x, "onSelectCountry", js.undefined)
       
-      @scala.inline
-      def setPickerBackgroundColor(value: String): Self = StObject.set(x, "pickerBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setPickerBackgroundColor(value: String): Self = StObject.set(x, "pickerBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPickerBackgroundColorUndefined: Self = StObject.set(x, "pickerBackgroundColor", js.undefined)
+      inline def setPickerBackgroundColorUndefined: Self = StObject.set(x, "pickerBackgroundColor", js.undefined)
       
-      @scala.inline
-      def setPickerButtonColor(value: String): Self = StObject.set(x, "pickerButtonColor", value.asInstanceOf[js.Any])
+      inline def setPickerButtonColor(value: String): Self = StObject.set(x, "pickerButtonColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPickerButtonColorUndefined: Self = StObject.set(x, "pickerButtonColor", js.undefined)
+      inline def setPickerButtonColorUndefined: Self = StObject.set(x, "pickerButtonColor", js.undefined)
       
-      @scala.inline
-      def setPickerItemStyle(value: ViewStyle): Self = StObject.set(x, "pickerItemStyle", value.asInstanceOf[js.Any])
+      inline def setPickerItemStyle(value: ViewStyle): Self = StObject.set(x, "pickerItemStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPickerItemStyleNull: Self = StObject.set(x, "pickerItemStyle", null)
+      inline def setPickerItemStyleNull: Self = StObject.set(x, "pickerItemStyle", null)
       
-      @scala.inline
-      def setPickerItemStyleUndefined: Self = StObject.set(x, "pickerItemStyle", js.undefined)
+      inline def setPickerItemStyleUndefined: Self = StObject.set(x, "pickerItemStyle", js.undefined)
       
-      @scala.inline
-      def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTextComponent(value: TextComponentType): Self = StObject.set(x, "textComponent", value.asInstanceOf[js.Any])
+      inline def setTextComponent(value: TextComponentType): Self = StObject.set(x, "textComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextComponentUndefined: Self = StObject.set(x, "textComponent", js.undefined)
+      inline def setTextComponentUndefined: Self = StObject.set(x, "textComponent", js.undefined)
       
-      @scala.inline
-      def setTextProps(value: ComponentProps[TextComponentType]): Self = StObject.set(x, "textProps", value.asInstanceOf[js.Any])
+      inline def setTextProps(value: ComponentProps[TextComponentType]): Self = StObject.set(x, "textProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextPropsUndefined: Self = StObject.set(x, "textProps", js.undefined)
+      inline def setTextPropsUndefined: Self = StObject.set(x, "textProps", js.undefined)
       
-      @scala.inline
-      def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
+      inline def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
       
-      @scala.inline
-      def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+      inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   

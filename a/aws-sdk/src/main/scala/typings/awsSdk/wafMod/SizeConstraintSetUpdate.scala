@@ -18,19 +18,15 @@ trait SizeConstraintSetUpdate extends StObject {
 }
 object SizeConstraintSetUpdate {
   
-  @scala.inline
-  def apply(Action: ChangeAction, SizeConstraint: SizeConstraint): SizeConstraintSetUpdate = {
+  inline def apply(Action: ChangeAction, SizeConstraint: SizeConstraint): SizeConstraintSetUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], SizeConstraint = SizeConstraint.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeConstraintSetUpdate]
   }
   
-  @scala.inline
-  implicit class SizeConstraintSetUpdateMutableBuilder[Self <: SizeConstraintSetUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: SizeConstraintSetUpdate](x: Self) {
     
-    @scala.inline
-    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeConstraint(value: SizeConstraint): Self = StObject.set(x, "SizeConstraint", value.asInstanceOf[js.Any])
+    inline def setSizeConstraint(value: SizeConstraint): Self = StObject.set(x, "SizeConstraint", value.asInstanceOf[js.Any])
   }
 }

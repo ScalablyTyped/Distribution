@@ -40,8 +40,7 @@ trait ASPxClientControl
 }
 object ASPxClientControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     GetClientVisible: () => Boolean,
     GetHeight: () => Double,
@@ -62,22 +61,16 @@ object ASPxClientControl {
     __obj.asInstanceOf[ASPxClientControl]
   }
   
-  @scala.inline
-  implicit class ASPxClientControlMutableBuilder[Self <: ASPxClientControl] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientControl](x: Self) {
     
-    @scala.inline
-    def setAdjustControl(value: () => Unit): Self = StObject.set(x, "AdjustControl", js.Any.fromFunction0(value))
+    inline def setAdjustControl(value: () => Unit): Self = StObject.set(x, "AdjustControl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeight(value: () => Double): Self = StObject.set(x, "GetHeight", js.Any.fromFunction0(value))
+    inline def setGetHeight(value: () => Double): Self = StObject.set(x, "GetHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidth(value: () => Double): Self = StObject.set(x, "GetWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => Double): Self = StObject.set(x, "GetWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetHeight(value: Double => Unit): Self = StObject.set(x, "SetHeight", js.Any.fromFunction1(value))
+    inline def setSetHeight(value: Double => Unit): Self = StObject.set(x, "SetHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWidth(value: Double => Unit): Self = StObject.set(x, "SetWidth", js.Any.fromFunction1(value))
+    inline def setSetWidth(value: Double => Unit): Self = StObject.set(x, "SetWidth", js.Any.fromFunction1(value))
   }
 }

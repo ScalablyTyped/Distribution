@@ -14,22 +14,17 @@ trait InvalidFilterClause extends StObject {
 }
 object InvalidFilterClause {
   
-  @scala.inline
-  def apply(invalidFilterClause: scala.Double, oK: scala.Double, unknown: scala.Double): InvalidFilterClause = {
+  inline def apply(invalidFilterClause: scala.Double, oK: scala.Double, unknown: scala.Double): InvalidFilterClause = {
     val __obj = js.Dynamic.literal(invalidFilterClause = invalidFilterClause.asInstanceOf[js.Any], oK = oK.asInstanceOf[js.Any], unknown = unknown.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidFilterClause]
   }
   
-  @scala.inline
-  implicit class InvalidFilterClauseMutableBuilder[Self <: InvalidFilterClause] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidFilterClause](x: Self) {
     
-    @scala.inline
-    def setInvalidFilterClause(value: scala.Double): Self = StObject.set(x, "invalidFilterClause", value.asInstanceOf[js.Any])
+    inline def setInvalidFilterClause(value: scala.Double): Self = StObject.set(x, "invalidFilterClause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOK(value: scala.Double): Self = StObject.set(x, "oK", value.asInstanceOf[js.Any])
+    inline def setOK(value: scala.Double): Self = StObject.set(x, "oK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
+    inline def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
   }
 }

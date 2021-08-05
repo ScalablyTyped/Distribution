@@ -16,19 +16,15 @@ trait MarkdownRenderRawEndpoint extends StObject {
 }
 object MarkdownRenderRawEndpoint {
   
-  @scala.inline
-  def apply(data: String, headers: Contenttype): MarkdownRenderRawEndpoint = {
+  inline def apply(data: String, headers: Contenttype): MarkdownRenderRawEndpoint = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkdownRenderRawEndpoint]
   }
   
-  @scala.inline
-  implicit class MarkdownRenderRawEndpointMutableBuilder[Self <: MarkdownRenderRawEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: MarkdownRenderRawEndpoint](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: Contenttype): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Contenttype): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }
 }

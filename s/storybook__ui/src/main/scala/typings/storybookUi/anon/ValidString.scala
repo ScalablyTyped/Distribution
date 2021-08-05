@@ -10,16 +10,13 @@ trait ValidString extends StObject {
 }
 object ValidString {
   
-  @scala.inline
-  def apply(valid: String): ValidString = {
+  inline def apply(valid: String): ValidString = {
     val __obj = js.Dynamic.literal(valid = valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidString]
   }
   
-  @scala.inline
-  implicit class ValidStringMutableBuilder[Self <: ValidString] (val x: Self) extends AnyVal {
+  extension [Self <: ValidString](x: Self) {
     
-    @scala.inline
-    def setValid(value: String): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+    inline def setValid(value: String): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
   }
 }

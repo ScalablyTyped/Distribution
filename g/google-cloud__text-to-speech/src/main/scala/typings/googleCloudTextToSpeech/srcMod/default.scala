@@ -60,18 +60,15 @@ object default {
     def this(opts: ClientOptions) = this()
   }
   
-  @scala.inline
-  def TextToSpeechClient_=(x: TypeofTextToSpeechClient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextToSpeechClient")(x.asInstanceOf[js.Any])
+  inline def TextToSpeechClient_=(x: TypeofTextToSpeechClient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextToSpeechClient")(x.asInstanceOf[js.Any])
   
   @JSImport("@google-cloud/text-to-speech/build/src", "default.v1")
   @js.native
   def v1: Typeofv1 = js.native
-  @scala.inline
-  def v1_=(x: Typeofv1): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
+  inline def v1_=(x: Typeofv1): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   
   @JSImport("@google-cloud/text-to-speech/build/src", "default.v1beta1")
   @js.native
   def v1beta1: Typeofv1beta1 = js.native
-  @scala.inline
-  def v1beta1_=(x: Typeofv1beta1): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1beta1")(x.asInstanceOf[js.Any])
+  inline def v1beta1_=(x: Typeofv1beta1): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1beta1")(x.asInstanceOf[js.Any])
 }

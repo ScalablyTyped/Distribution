@@ -21,40 +21,29 @@ trait SpeechRecognitionAlternative extends StObject {
 }
 object SpeechRecognitionAlternative {
   
-  @scala.inline
-  def apply(transcript: String): SpeechRecognitionAlternative = {
+  inline def apply(transcript: String): SpeechRecognitionAlternative = {
     val __obj = js.Dynamic.literal(transcript = transcript.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognitionAlternative]
   }
   
-  @scala.inline
-  implicit class SpeechRecognitionAlternativeMutableBuilder[Self <: SpeechRecognitionAlternative] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechRecognitionAlternative](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setTimestamps(value: js.Array[String]): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
+    inline def setTimestamps(value: js.Array[String]): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
+    inline def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
     
-    @scala.inline
-    def setTimestampsVarargs(value: String*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
+    inline def setTimestampsVarargs(value: String*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
     
-    @scala.inline
-    def setTranscript(value: String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
+    inline def setTranscript(value: String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWord_confidence(value: js.Array[String]): Self = StObject.set(x, "word_confidence", value.asInstanceOf[js.Any])
+    inline def setWord_confidence(value: js.Array[String]): Self = StObject.set(x, "word_confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWord_confidenceUndefined: Self = StObject.set(x, "word_confidence", js.undefined)
+    inline def setWord_confidenceUndefined: Self = StObject.set(x, "word_confidence", js.undefined)
     
-    @scala.inline
-    def setWord_confidenceVarargs(value: String*): Self = StObject.set(x, "word_confidence", js.Array(value :_*))
+    inline def setWord_confidenceVarargs(value: String*): Self = StObject.set(x, "word_confidence", js.Array(value :_*))
   }
 }

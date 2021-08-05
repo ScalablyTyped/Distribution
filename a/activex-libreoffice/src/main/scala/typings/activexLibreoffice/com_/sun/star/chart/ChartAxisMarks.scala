@@ -17,13 +17,10 @@ object ChartAxisMarks {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def INNER: `1` = 1.asInstanceOf[`1`]
+    inline def INNER: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def OUTER: `2` = 2.asInstanceOf[`2`]
+    inline def OUTER: `2` = 2.asInstanceOf[`2`]
   }
 }

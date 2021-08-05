@@ -23,34 +23,25 @@ trait DescribeSSLPoliciesInput extends StObject {
 }
 object DescribeSSLPoliciesInput {
   
-  @scala.inline
-  def apply(): DescribeSSLPoliciesInput = {
+  inline def apply(): DescribeSSLPoliciesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSSLPoliciesInput]
   }
   
-  @scala.inline
-  implicit class DescribeSSLPoliciesInputMutableBuilder[Self <: DescribeSSLPoliciesInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSSLPoliciesInput](x: Self) {
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setNames(value: SslPolicyNames): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
+    inline def setNames(value: SslPolicyNames): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    @scala.inline
-    def setNamesVarargs(value: SslPolicyName*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: SslPolicyName*): Self = StObject.set(x, "Names", js.Array(value :_*))
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
   }
 }

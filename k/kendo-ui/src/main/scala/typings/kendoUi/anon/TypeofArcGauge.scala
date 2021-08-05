@@ -15,19 +15,15 @@ trait TypeofArcGauge extends StObject {
 }
 object TypeofArcGauge {
   
-  @scala.inline
-  def apply(extend: js.Object => ArcGauge, fn: ArcGauge): TypeofArcGauge = {
+  inline def apply(extend: js.Object => ArcGauge, fn: ArcGauge): TypeofArcGauge = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofArcGauge]
   }
   
-  @scala.inline
-  implicit class TypeofArcGaugeMutableBuilder[Self <: TypeofArcGauge] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofArcGauge](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => ArcGauge): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => ArcGauge): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: ArcGauge): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: ArcGauge): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

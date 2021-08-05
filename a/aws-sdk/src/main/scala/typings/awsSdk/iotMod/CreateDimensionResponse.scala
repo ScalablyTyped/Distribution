@@ -18,25 +18,19 @@ trait CreateDimensionResponse extends StObject {
 }
 object CreateDimensionResponse {
   
-  @scala.inline
-  def apply(): CreateDimensionResponse = {
+  inline def apply(): CreateDimensionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDimensionResponse]
   }
   
-  @scala.inline
-  implicit class CreateDimensionResponseMutableBuilder[Self <: CreateDimensionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDimensionResponse](x: Self) {
     
-    @scala.inline
-    def setArn(value: DimensionArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: DimensionArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setName(value: DimensionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: DimensionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

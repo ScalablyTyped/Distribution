@@ -10,16 +10,13 @@ trait Change extends StObject {
 }
 object Change {
   
-  @scala.inline
-  def apply(change: Boolean): Change = {
+  inline def apply(change: Boolean): Change = {
     val __obj = js.Dynamic.literal(change = change.asInstanceOf[js.Any])
     __obj.asInstanceOf[Change]
   }
   
-  @scala.inline
-  implicit class ChangeMutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
+  extension [Self <: Change](x: Self) {
     
-    @scala.inline
-    def setChange(value: Boolean): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+    inline def setChange(value: Boolean): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
   }
 }

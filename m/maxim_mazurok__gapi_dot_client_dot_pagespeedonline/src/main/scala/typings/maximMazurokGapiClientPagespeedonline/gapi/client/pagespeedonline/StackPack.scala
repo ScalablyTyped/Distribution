@@ -25,41 +25,31 @@ trait StackPack extends StObject {
 }
 object StackPack {
   
-  @scala.inline
-  def apply(): StackPack = {
+  inline def apply(): StackPack = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackPack]
   }
   
-  @scala.inline
-  implicit class StackPackMutableBuilder[Self <: StackPack] (val x: Self) extends AnyVal {
+  extension [Self <: StackPack](x: Self) {
     
-    @scala.inline
-    def setDescriptions(
+    inline def setDescriptions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.StackPack & TopLevel[js.Any]
     ): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionsUndefined: Self = StObject.set(x, "descriptions", js.undefined)
+    inline def setDescriptionsUndefined: Self = StObject.set(x, "descriptions", js.undefined)
     
-    @scala.inline
-    def setIconDataURL(value: String): Self = StObject.set(x, "iconDataURL", value.asInstanceOf[js.Any])
+    inline def setIconDataURL(value: String): Self = StObject.set(x, "iconDataURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconDataURLUndefined: Self = StObject.set(x, "iconDataURL", js.undefined)
+    inline def setIconDataURLUndefined: Self = StObject.set(x, "iconDataURL", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

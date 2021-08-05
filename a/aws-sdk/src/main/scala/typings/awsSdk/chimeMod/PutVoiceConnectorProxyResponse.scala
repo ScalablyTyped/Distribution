@@ -13,19 +13,15 @@ trait PutVoiceConnectorProxyResponse extends StObject {
 }
 object PutVoiceConnectorProxyResponse {
   
-  @scala.inline
-  def apply(): PutVoiceConnectorProxyResponse = {
+  inline def apply(): PutVoiceConnectorProxyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutVoiceConnectorProxyResponse]
   }
   
-  @scala.inline
-  implicit class PutVoiceConnectorProxyResponseMutableBuilder[Self <: PutVoiceConnectorProxyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutVoiceConnectorProxyResponse](x: Self) {
     
-    @scala.inline
-    def setProxy(value: Proxy): Self = StObject.set(x, "Proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: Proxy): Self = StObject.set(x, "Proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUndefined: Self = StObject.set(x, "Proxy", js.undefined)
+    inline def setProxyUndefined: Self = StObject.set(x, "Proxy", js.undefined)
   }
 }

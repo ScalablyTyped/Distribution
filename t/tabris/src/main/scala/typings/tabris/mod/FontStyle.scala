@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FontStyle extends StObject
 object FontStyle {
   
-  @scala.inline
-  def italic: typings.tabris.tabrisStrings.italic = "italic".asInstanceOf[typings.tabris.tabrisStrings.italic]
+  inline def italic: typings.tabris.tabrisStrings.italic = "italic".asInstanceOf[typings.tabris.tabrisStrings.italic]
   
-  @scala.inline
-  def normal: typings.tabris.tabrisStrings.normal = "normal".asInstanceOf[typings.tabris.tabrisStrings.normal]
+  inline def normal: typings.tabris.tabrisStrings.normal = "normal".asInstanceOf[typings.tabris.tabrisStrings.normal]
 }

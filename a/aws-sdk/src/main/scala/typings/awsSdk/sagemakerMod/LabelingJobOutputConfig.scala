@@ -23,28 +23,21 @@ trait LabelingJobOutputConfig extends StObject {
 }
 object LabelingJobOutputConfig {
   
-  @scala.inline
-  def apply(S3OutputPath: S3Uri): LabelingJobOutputConfig = {
+  inline def apply(S3OutputPath: S3Uri): LabelingJobOutputConfig = {
     val __obj = js.Dynamic.literal(S3OutputPath = S3OutputPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelingJobOutputConfig]
   }
   
-  @scala.inline
-  implicit class LabelingJobOutputConfigMutableBuilder[Self <: LabelingJobOutputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LabelingJobOutputConfig](x: Self) {
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setS3OutputPath(value: S3Uri): Self = StObject.set(x, "S3OutputPath", value.asInstanceOf[js.Any])
+    inline def setS3OutputPath(value: S3Uri): Self = StObject.set(x, "S3OutputPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsTopicArn(value: SnsTopicArn): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
+    inline def setSnsTopicArn(value: SnsTopicArn): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsTopicArnUndefined: Self = StObject.set(x, "SnsTopicArn", js.undefined)
+    inline def setSnsTopicArnUndefined: Self = StObject.set(x, "SnsTopicArn", js.undefined)
   }
 }

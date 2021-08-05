@@ -17,25 +17,19 @@ trait InfixPrefix extends StObject {
 }
 object InfixPrefix {
   
-  @scala.inline
-  def apply(infix: FNotation, prefix: NotationPrecedence): InfixPrefix = {
+  inline def apply(infix: FNotation, prefix: NotationPrecedence): InfixPrefix = {
     val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], regSymbol = "-", symbol = "-")
     __obj.asInstanceOf[InfixPrefix]
   }
   
-  @scala.inline
-  implicit class InfixPrefixMutableBuilder[Self <: InfixPrefix] (val x: Self) extends AnyVal {
+  extension [Self <: InfixPrefix](x: Self) {
     
-    @scala.inline
-    def setInfix(value: FNotation): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
+    inline def setInfix(value: FNotation): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: NotationPrecedence): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: NotationPrecedence): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegSymbol(value: `-_`): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: `-_`): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: `-_`): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: `-_`): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

@@ -11,16 +11,13 @@ trait PickImplrecursion extends StObject {
 }
 object PickImplrecursion {
   
-  @scala.inline
-  def apply(recursion: String): PickImplrecursion = {
+  inline def apply(recursion: String): PickImplrecursion = {
     val __obj = js.Dynamic.literal(recursion = recursion.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplrecursion]
   }
   
-  @scala.inline
-  implicit class PickImplrecursionMutableBuilder[Self <: PickImplrecursion] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplrecursion](x: Self) {
     
-    @scala.inline
-    def setRecursion(value: String): Self = StObject.set(x, "recursion", value.asInstanceOf[js.Any])
+    inline def setRecursion(value: String): Self = StObject.set(x, "recursion", value.asInstanceOf[js.Any])
   }
 }

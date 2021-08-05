@@ -14,25 +14,19 @@ trait TasksGetParams
 }
 object TasksGetParams {
   
-  @scala.inline
-  def apply(): TasksGetParams = {
+  inline def apply(): TasksGetParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TasksGetParams]
   }
   
-  @scala.inline
-  implicit class TasksGetParamsMutableBuilder[Self <: TasksGetParams] (val x: Self) extends AnyVal {
+  extension [Self <: TasksGetParams](x: Self) {
     
-    @scala.inline
-    def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
+    inline def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
     
-    @scala.inline
-    def setWaitForCompletion(value: Boolean): Self = StObject.set(x, "waitForCompletion", value.asInstanceOf[js.Any])
+    inline def setWaitForCompletion(value: Boolean): Self = StObject.set(x, "waitForCompletion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForCompletionUndefined: Self = StObject.set(x, "waitForCompletion", js.undefined)
+    inline def setWaitForCompletionUndefined: Self = StObject.set(x, "waitForCompletion", js.undefined)
   }
 }

@@ -10,6 +10,5 @@ object tagStringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def tagString(literals: js.Array[String], substitutions: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tagString")(literals.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def tagString(literals: js.Array[String], substitutions: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tagString")(literals.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[String]
 }

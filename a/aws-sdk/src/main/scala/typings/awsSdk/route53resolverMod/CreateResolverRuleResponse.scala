@@ -13,19 +13,15 @@ trait CreateResolverRuleResponse extends StObject {
 }
 object CreateResolverRuleResponse {
   
-  @scala.inline
-  def apply(): CreateResolverRuleResponse = {
+  inline def apply(): CreateResolverRuleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateResolverRuleResponse]
   }
   
-  @scala.inline
-  implicit class CreateResolverRuleResponseMutableBuilder[Self <: CreateResolverRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateResolverRuleResponse](x: Self) {
     
-    @scala.inline
-    def setResolverRule(value: ResolverRule): Self = StObject.set(x, "ResolverRule", value.asInstanceOf[js.Any])
+    inline def setResolverRule(value: ResolverRule): Self = StObject.set(x, "ResolverRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverRuleUndefined: Self = StObject.set(x, "ResolverRule", js.undefined)
+    inline def setResolverRuleUndefined: Self = StObject.set(x, "ResolverRule", js.undefined)
   }
 }

@@ -39,8 +39,7 @@ trait Template extends StObject {
 }
 object Template {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     content: TemplateContent | Emailrfc822,
     description: String,
     id: String,
@@ -53,34 +52,24 @@ object Template {
     __obj.asInstanceOf[Template]
   }
   
-  @scala.inline
-  implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
+  extension [Self <: Template](x: Self) {
     
-    @scala.inline
-    def setContent(value: TemplateContent | Emailrfc822): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: TemplateContent | Emailrfc822): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_update_time(value: String): Self = StObject.set(x, "last_update_time", value.asInstanceOf[js.Any])
+    inline def setLast_update_time(value: String): Self = StObject.set(x, "last_update_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_use(value: String): Self = StObject.set(x, "last_use", value.asInstanceOf[js.Any])
+    inline def setLast_use(value: String): Self = StObject.set(x, "last_use", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_useUndefined: Self = StObject.set(x, "last_use", js.undefined)
+    inline def setLast_useUndefined: Self = StObject.set(x, "last_use", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: TemplateOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: TemplateOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublished(value: Boolean): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
+    inline def setPublished(value: Boolean): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
   }
 }

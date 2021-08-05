@@ -23,31 +23,23 @@ trait GetGroupCertificateAuthorityResponse extends StObject {
 }
 object GetGroupCertificateAuthorityResponse {
   
-  @scala.inline
-  def apply(): GetGroupCertificateAuthorityResponse = {
+  inline def apply(): GetGroupCertificateAuthorityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetGroupCertificateAuthorityResponse]
   }
   
-  @scala.inline
-  implicit class GetGroupCertificateAuthorityResponseMutableBuilder[Self <: GetGroupCertificateAuthorityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetGroupCertificateAuthorityResponse](x: Self) {
     
-    @scala.inline
-    def setGroupCertificateAuthorityArn(value: string): Self = StObject.set(x, "GroupCertificateAuthorityArn", value.asInstanceOf[js.Any])
+    inline def setGroupCertificateAuthorityArn(value: string): Self = StObject.set(x, "GroupCertificateAuthorityArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupCertificateAuthorityArnUndefined: Self = StObject.set(x, "GroupCertificateAuthorityArn", js.undefined)
+    inline def setGroupCertificateAuthorityArnUndefined: Self = StObject.set(x, "GroupCertificateAuthorityArn", js.undefined)
     
-    @scala.inline
-    def setGroupCertificateAuthorityId(value: string): Self = StObject.set(x, "GroupCertificateAuthorityId", value.asInstanceOf[js.Any])
+    inline def setGroupCertificateAuthorityId(value: string): Self = StObject.set(x, "GroupCertificateAuthorityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupCertificateAuthorityIdUndefined: Self = StObject.set(x, "GroupCertificateAuthorityId", js.undefined)
+    inline def setGroupCertificateAuthorityIdUndefined: Self = StObject.set(x, "GroupCertificateAuthorityId", js.undefined)
     
-    @scala.inline
-    def setPemEncodedCertificate(value: string): Self = StObject.set(x, "PemEncodedCertificate", value.asInstanceOf[js.Any])
+    inline def setPemEncodedCertificate(value: string): Self = StObject.set(x, "PemEncodedCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPemEncodedCertificateUndefined: Self = StObject.set(x, "PemEncodedCertificate", js.undefined)
+    inline def setPemEncodedCertificateUndefined: Self = StObject.set(x, "PemEncodedCertificate", js.undefined)
   }
 }

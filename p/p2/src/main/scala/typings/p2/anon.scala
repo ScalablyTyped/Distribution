@@ -17,21 +17,17 @@ object anon {
   }
   object Body {
     
-    @scala.inline
-    def apply(body: typings.p2.mod.Body, `type`: String): Body = {
+    inline def apply(body: typings.p2.mod.Body, `type`: String): Body = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Body]
     }
     
-    @scala.inline
-    implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+    extension [Self <: Body](x: Self) {
       
-      @scala.inline
-      def setBody(value: typings.p2.mod.Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: typings.p2.mod.Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -51,8 +47,7 @@ object anon {
   }
   object BodyA {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bodyA: typings.p2.mod.Body,
       bodyB: typings.p2.mod.Body,
       contactEquation: ContactEquation,
@@ -65,26 +60,19 @@ object anon {
       __obj.asInstanceOf[BodyA]
     }
     
-    @scala.inline
-    implicit class BodyAMutableBuilder[Self <: BodyA] (val x: Self) extends AnyVal {
+    extension [Self <: BodyA](x: Self) {
       
-      @scala.inline
-      def setBodyA(value: typings.p2.mod.Body): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
+      inline def setBodyA(value: typings.p2.mod.Body): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyB(value: typings.p2.mod.Body): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
+      inline def setBodyB(value: typings.p2.mod.Body): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContactEquation(value: ContactEquation): Self = StObject.set(x, "contactEquation", value.asInstanceOf[js.Any])
+      inline def setContactEquation(value: ContactEquation): Self = StObject.set(x, "contactEquation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeA(value: Shape): Self = StObject.set(x, "shapeA", value.asInstanceOf[js.Any])
+      inline def setShapeA(value: Shape): Self = StObject.set(x, "shapeA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeB(value: Shape): Self = StObject.set(x, "shapeB", value.asInstanceOf[js.Any])
+      inline def setShapeB(value: Shape): Self = StObject.set(x, "shapeB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,8 +92,7 @@ object anon {
   }
   object BodyB {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bodyA: typings.p2.mod.Body,
       bodyB: typings.p2.mod.Body,
       contactEquations: js.Array[ContactEquation],
@@ -118,29 +105,21 @@ object anon {
       __obj.asInstanceOf[BodyB]
     }
     
-    @scala.inline
-    implicit class BodyBMutableBuilder[Self <: BodyB] (val x: Self) extends AnyVal {
+    extension [Self <: BodyB](x: Self) {
       
-      @scala.inline
-      def setBodyA(value: typings.p2.mod.Body): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
+      inline def setBodyA(value: typings.p2.mod.Body): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyB(value: typings.p2.mod.Body): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
+      inline def setBodyB(value: typings.p2.mod.Body): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContactEquations(value: js.Array[ContactEquation]): Self = StObject.set(x, "contactEquations", value.asInstanceOf[js.Any])
+      inline def setContactEquations(value: js.Array[ContactEquation]): Self = StObject.set(x, "contactEquations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContactEquationsVarargs(value: ContactEquation*): Self = StObject.set(x, "contactEquations", js.Array(value :_*))
+      inline def setContactEquationsVarargs(value: ContactEquation*): Self = StObject.set(x, "contactEquations", js.Array(value :_*))
       
-      @scala.inline
-      def setShapeA(value: Shape): Self = StObject.set(x, "shapeA", value.asInstanceOf[js.Any])
+      inline def setShapeA(value: Shape): Self = StObject.set(x, "shapeA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeB(value: Shape): Self = StObject.set(x, "shapeB", value.asInstanceOf[js.Any])
+      inline def setShapeB(value: Shape): Self = StObject.set(x, "shapeB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,8 +133,7 @@ object anon {
   }
   object ContactEquations {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       contactEquations: js.Array[ContactEquation],
       frictionEquations: js.Array[FrictionEquation],
       `type`: String
@@ -165,23 +143,17 @@ object anon {
       __obj.asInstanceOf[ContactEquations]
     }
     
-    @scala.inline
-    implicit class ContactEquationsMutableBuilder[Self <: ContactEquations] (val x: Self) extends AnyVal {
+    extension [Self <: ContactEquations](x: Self) {
       
-      @scala.inline
-      def setContactEquations(value: js.Array[ContactEquation]): Self = StObject.set(x, "contactEquations", value.asInstanceOf[js.Any])
+      inline def setContactEquations(value: js.Array[ContactEquation]): Self = StObject.set(x, "contactEquations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContactEquationsVarargs(value: ContactEquation*): Self = StObject.set(x, "contactEquations", js.Array(value :_*))
+      inline def setContactEquationsVarargs(value: ContactEquation*): Self = StObject.set(x, "contactEquations", js.Array(value :_*))
       
-      @scala.inline
-      def setFrictionEquations(value: js.Array[FrictionEquation]): Self = StObject.set(x, "frictionEquations", value.asInstanceOf[js.Any])
+      inline def setFrictionEquations(value: js.Array[FrictionEquation]): Self = StObject.set(x, "frictionEquations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrictionEquationsVarargs(value: FrictionEquation*): Self = StObject.set(x, "frictionEquations", js.Array(value :_*))
+      inline def setFrictionEquationsVarargs(value: FrictionEquation*): Self = StObject.set(x, "frictionEquations", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,32 +167,24 @@ object anon {
   }
   object OptimalDecomp {
     
-    @scala.inline
-    def apply(): OptimalDecomp = {
+    inline def apply(): OptimalDecomp = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptimalDecomp]
     }
     
-    @scala.inline
-    implicit class OptimalDecompMutableBuilder[Self <: OptimalDecomp] (val x: Self) extends AnyVal {
+    extension [Self <: OptimalDecomp](x: Self) {
       
-      @scala.inline
-      def setOptimalDecomp(value: Boolean): Self = StObject.set(x, "optimalDecomp", value.asInstanceOf[js.Any])
+      inline def setOptimalDecomp(value: Boolean): Self = StObject.set(x, "optimalDecomp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimalDecompUndefined: Self = StObject.set(x, "optimalDecomp", js.undefined)
+      inline def setOptimalDecompUndefined: Self = StObject.set(x, "optimalDecomp", js.undefined)
       
-      @scala.inline
-      def setRemoveCollinearPoints(value: Boolean | Double): Self = StObject.set(x, "removeCollinearPoints", value.asInstanceOf[js.Any])
+      inline def setRemoveCollinearPoints(value: Boolean | Double): Self = StObject.set(x, "removeCollinearPoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveCollinearPointsUndefined: Self = StObject.set(x, "removeCollinearPoints", js.undefined)
+      inline def setRemoveCollinearPointsUndefined: Self = StObject.set(x, "removeCollinearPoints", js.undefined)
       
-      @scala.inline
-      def setSkipSimpleCheck(value: Boolean): Self = StObject.set(x, "skipSimpleCheck", value.asInstanceOf[js.Any])
+      inline def setSkipSimpleCheck(value: Boolean): Self = StObject.set(x, "skipSimpleCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipSimpleCheckUndefined: Self = StObject.set(x, "skipSimpleCheck", js.undefined)
+      inline def setSkipSimpleCheckUndefined: Self = StObject.set(x, "skipSimpleCheck", js.undefined)
     }
   }
   
@@ -232,24 +196,19 @@ object anon {
   }
   object Pairs {
     
-    @scala.inline
-    def apply(pairs: js.Array[typings.p2.mod.Body], `type`: String): Pairs = {
+    inline def apply(pairs: js.Array[typings.p2.mod.Body], `type`: String): Pairs = {
       val __obj = js.Dynamic.literal(pairs = pairs.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pairs]
     }
     
-    @scala.inline
-    implicit class PairsMutableBuilder[Self <: Pairs] (val x: Self) extends AnyVal {
+    extension [Self <: Pairs](x: Self) {
       
-      @scala.inline
-      def setPairs(value: js.Array[typings.p2.mod.Body]): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
+      inline def setPairs(value: js.Array[typings.p2.mod.Body]): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPairsVarargs(value: typings.p2.mod.Body*): Self = StObject.set(x, "pairs", js.Array(value :_*))
+      inline def setPairsVarargs(value: typings.p2.mod.Body*): Self = StObject.set(x, "pairs", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -261,26 +220,20 @@ object anon {
   }
   object Relaxation {
     
-    @scala.inline
-    def apply(): Relaxation = {
+    inline def apply(): Relaxation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Relaxation]
     }
     
-    @scala.inline
-    implicit class RelaxationMutableBuilder[Self <: Relaxation] (val x: Self) extends AnyVal {
+    extension [Self <: Relaxation](x: Self) {
       
-      @scala.inline
-      def setRelaxation(value: Double): Self = StObject.set(x, "relaxation", value.asInstanceOf[js.Any])
+      inline def setRelaxation(value: Double): Self = StObject.set(x, "relaxation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelaxationUndefined: Self = StObject.set(x, "relaxation", js.undefined)
+      inline def setRelaxationUndefined: Self = StObject.set(x, "relaxation", js.undefined)
       
-      @scala.inline
-      def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
+      inline def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
+      inline def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
     }
   }
   
@@ -298,8 +251,7 @@ object anon {
   }
   object ShapeA {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bodyA: typings.p2.mod.Body,
       bodyB: typings.p2.mod.Body,
       shapeA: Shape,
@@ -311,23 +263,17 @@ object anon {
       __obj.asInstanceOf[ShapeA]
     }
     
-    @scala.inline
-    implicit class ShapeAMutableBuilder[Self <: ShapeA] (val x: Self) extends AnyVal {
+    extension [Self <: ShapeA](x: Self) {
       
-      @scala.inline
-      def setBodyA(value: typings.p2.mod.Body): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
+      inline def setBodyA(value: typings.p2.mod.Body): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyB(value: typings.p2.mod.Body): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
+      inline def setBodyB(value: typings.p2.mod.Body): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeA(value: Shape): Self = StObject.set(x, "shapeA", value.asInstanceOf[js.Any])
+      inline def setShapeA(value: Shape): Self = StObject.set(x, "shapeA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeB(value: Shape): Self = StObject.set(x, "shapeB", value.asInstanceOf[js.Any])
+      inline def setShapeB(value: Shape): Self = StObject.set(x, "shapeB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -339,21 +285,17 @@ object anon {
   }
   object Spring {
     
-    @scala.inline
-    def apply(spring: typings.p2.mod.Spring, `type`: String): Spring = {
+    inline def apply(spring: typings.p2.mod.Spring, `type`: String): Spring = {
       val __obj = js.Dynamic.literal(spring = spring.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Spring]
     }
     
-    @scala.inline
-    implicit class SpringMutableBuilder[Self <: Spring] (val x: Self) extends AnyVal {
+    extension [Self <: Spring](x: Self) {
       
-      @scala.inline
-      def setSpring(value: typings.p2.mod.Spring): Self = StObject.set(x, "spring", value.asInstanceOf[js.Any])
+      inline def setSpring(value: typings.p2.mod.Spring): Self = StObject.set(x, "spring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -363,18 +305,15 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(`type`: String): Type = {
+    inline def apply(`type`: String): Type = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

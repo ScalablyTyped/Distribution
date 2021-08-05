@@ -99,20 +99,16 @@ object pluginDurationMod extends Shortcut {
     }
     object Dayjs {
       
-      @scala.inline
-      def apply(add: Duration => Dayjs, subtract: Duration => Dayjs): Dayjs = {
+      inline def apply(add: Duration => Dayjs, subtract: Duration => Dayjs): Dayjs = {
         val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), subtract = js.Any.fromFunction1(subtract))
         __obj.asInstanceOf[Dayjs]
       }
       
-      @scala.inline
-      implicit class DayjsMutableBuilder[Self <: Dayjs] (val x: Self) extends AnyVal {
+      extension [Self <: Dayjs](x: Self) {
         
-        @scala.inline
-        def setAdd(value: Duration => Dayjs): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+        inline def setAdd(value: Duration => Dayjs): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSubtract(value: Duration => Dayjs): Self = StObject.set(x, "subtract", js.Any.fromFunction1(value))
+        inline def setSubtract(value: Duration => Dayjs): Self = StObject.set(x, "subtract", js.Any.fromFunction1(value))
       }
     }
   }

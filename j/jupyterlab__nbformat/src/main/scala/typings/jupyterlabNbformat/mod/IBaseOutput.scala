@@ -16,16 +16,13 @@ trait IBaseOutput
 }
 object IBaseOutput {
   
-  @scala.inline
-  def apply(output_type: String): IBaseOutput = {
+  inline def apply(output_type: String): IBaseOutput = {
     val __obj = js.Dynamic.literal(output_type = output_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBaseOutput]
   }
   
-  @scala.inline
-  implicit class IBaseOutputMutableBuilder[Self <: IBaseOutput] (val x: Self) extends AnyVal {
+  extension [Self <: IBaseOutput](x: Self) {
     
-    @scala.inline
-    def setOutput_type(value: String): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
+    inline def setOutput_type(value: String): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
   }
 }

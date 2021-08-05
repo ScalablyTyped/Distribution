@@ -11,16 +11,13 @@ trait TabWindowInfo extends StObject {
 }
 object TabWindowInfo {
   
-  @scala.inline
-  def apply(windowId: Double): TabWindowInfo = {
+  inline def apply(windowId: Double): TabWindowInfo = {
     val __obj = js.Dynamic.literal(windowId = windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabWindowInfo]
   }
   
-  @scala.inline
-  implicit class TabWindowInfoMutableBuilder[Self <: TabWindowInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TabWindowInfo](x: Self) {
     
-    @scala.inline
-    def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+    inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
   }
 }

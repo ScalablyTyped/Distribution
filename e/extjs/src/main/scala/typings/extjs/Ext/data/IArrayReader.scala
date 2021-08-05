@@ -10,8 +10,7 @@ trait IArrayReader
      with IJson
 object IArrayReader {
   
-  @scala.inline
-  def apply(): IArrayReader = {
+  inline def apply(): IArrayReader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IArrayReader]
   }

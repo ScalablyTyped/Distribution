@@ -11,16 +11,13 @@ trait CSRHexResult extends StObject {
 }
 object CSRHexResult {
   
-  @scala.inline
-  def apply(p8pubkeyhex: String): CSRHexResult = {
+  inline def apply(p8pubkeyhex: String): CSRHexResult = {
     val __obj = js.Dynamic.literal(p8pubkeyhex = p8pubkeyhex.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSRHexResult]
   }
   
-  @scala.inline
-  implicit class CSRHexResultMutableBuilder[Self <: CSRHexResult] (val x: Self) extends AnyVal {
+  extension [Self <: CSRHexResult](x: Self) {
     
-    @scala.inline
-    def setP8pubkeyhex(value: String): Self = StObject.set(x, "p8pubkeyhex", value.asInstanceOf[js.Any])
+    inline def setP8pubkeyhex(value: String): Self = StObject.set(x, "p8pubkeyhex", value.asInstanceOf[js.Any])
   }
 }

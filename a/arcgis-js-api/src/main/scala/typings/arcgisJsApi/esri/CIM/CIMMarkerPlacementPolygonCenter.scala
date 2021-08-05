@@ -36,43 +36,32 @@ trait CIMMarkerPlacementPolygonCenter
 }
 object CIMMarkerPlacementPolygonCenter {
   
-  @scala.inline
-  def apply(): CIMMarkerPlacementPolygonCenter = {
+  inline def apply(): CIMMarkerPlacementPolygonCenter = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMMarkerPlacementPolygonCenter")
     __obj.asInstanceOf[CIMMarkerPlacementPolygonCenter]
   }
   
-  @scala.inline
-  implicit class CIMMarkerPlacementPolygonCenterMutableBuilder[Self <: CIMMarkerPlacementPolygonCenter] (val x: Self) extends AnyVal {
+  extension [Self <: CIMMarkerPlacementPolygonCenter](x: Self) {
     
-    @scala.inline
-    def setClipAtBoundary(value: Boolean): Self = StObject.set(x, "clipAtBoundary", value.asInstanceOf[js.Any])
+    inline def setClipAtBoundary(value: Boolean): Self = StObject.set(x, "clipAtBoundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipAtBoundaryUndefined: Self = StObject.set(x, "clipAtBoundary", js.undefined)
+    inline def setClipAtBoundaryUndefined: Self = StObject.set(x, "clipAtBoundary", js.undefined)
     
-    @scala.inline
-    def setMethod(
+    inline def setMethod(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementPolygonCenterMethod * / any */ String
     ): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+    inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+    inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementPolygonCenter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementPolygonCenter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

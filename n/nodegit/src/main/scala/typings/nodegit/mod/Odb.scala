@@ -15,6 +15,5 @@ object Odb {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def open(objectsDir: String): js.Promise[typings.nodegit.odbMod.Odb] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(objectsDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodegit.odbMod.Odb]]
+  inline def open(objectsDir: String): js.Promise[typings.nodegit.odbMod.Odb] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(objectsDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodegit.odbMod.Odb]]
 }

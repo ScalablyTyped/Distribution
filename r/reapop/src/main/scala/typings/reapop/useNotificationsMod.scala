@@ -11,6 +11,5 @@ object useNotificationsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useNotifications(): DismissNotification = ^.asInstanceOf[js.Dynamic].applyDynamic("useNotifications")().asInstanceOf[DismissNotification]
+  inline def useNotifications(): DismissNotification = ^.asInstanceOf[js.Dynamic].applyDynamic("useNotifications")().asInstanceOf[DismissNotification]
 }

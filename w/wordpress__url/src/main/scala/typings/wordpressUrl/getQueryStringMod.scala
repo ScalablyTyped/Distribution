@@ -10,6 +10,5 @@ object getQueryStringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getQueryString(url: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryString")(url.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
+  inline def getQueryString(url: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryString")(url.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
 }

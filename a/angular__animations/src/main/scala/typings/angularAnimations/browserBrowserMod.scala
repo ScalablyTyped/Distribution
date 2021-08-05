@@ -136,8 +136,7 @@ object browserBrowserMod {
     @JSImport("@angular/animations/browser/browser", "AnimationDriver.NOOP")
     @js.native
     def NOOP: AnimationDriver = js.native
-    @scala.inline
-    def NOOP_=(x: AnimationDriver): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOOP")(x.asInstanceOf[js.Any])
+    inline def NOOP_=(x: AnimationDriver): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOOP")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@angular/animations/browser/browser", "\u0275Animation")
@@ -146,9 +145,9 @@ object browserBrowserMod {
     def this(_driver: AnimationDriver, input: js.Array[AnimationMetadata]) = this()
     def this(_driver: AnimationDriver, input: AnimationMetadata) = this()
     
-    var _animationAst: js.Any = js.native
+    /* private */ var _animationAst: js.Any = js.native
     
-    var _driver: js.Any = js.native
+    /* private */ var _driver: js.Any = js.native
     
     def buildTimelines(
       element: js.Any,
@@ -209,15 +208,15 @@ object browserBrowserMod {
   class ɵAnimationEngine protected () extends StObject {
     def this(bodyNode: js.Any, _driver: AnimationDriver, normalizer: ɵAnimationStyleNormalizer) = this()
     
-    var _driver: js.Any = js.native
+    /* private */ var _driver: js.Any = js.native
     
-    var _timelineEngine: js.Any = js.native
+    /* private */ var _timelineEngine: js.Any = js.native
     
-    var _transitionEngine: js.Any = js.native
+    /* private */ var _transitionEngine: js.Any = js.native
     
-    var _triggerCache: js.Any = js.native
+    /* private */ var _triggerCache: js.Any = js.native
     
-    var bodyNode: js.Any = js.native
+    /* private */ var bodyNode: js.Any = js.native
     
     def destroy(namespaceId: String, context: js.Any): Unit = js.native
     
@@ -272,13 +271,13 @@ object browserBrowserMod {
   @js.native
   class ɵCssKeyframesDriver () extends AnimationDriver {
     
-    var _count: js.Any = js.native
+    /* private */ var _count: js.Any = js.native
     
-    val _head: js.Any = js.native
+    /* private */ val _head: js.Any = js.native
     
-    var _notifyFaultyScrubber: js.Any = js.native
+    /* private */ var _notifyFaultyScrubber: js.Any = js.native
     
-    var _warningIssued: js.Any = js.native
+    /* private */ var _warningIssued: js.Any = js.native
     
     def buildKeyframeElement(element: js.Any, name: String, keyframes: js.Array[StringDictionary[js.Any]]): js.Any = js.native
   }
@@ -308,31 +307,31 @@ object browserBrowserMod {
       _specialStyles: ɵangularPackagesAnimationsBrowserBrowserA
     ) = this()
     
-    var _buildStyler: js.Any = js.native
+    /* private */ var _buildStyler: js.Any = js.native
     
-    val _delay: js.Any = js.native
+    /* private */ val _delay: js.Any = js.native
     
-    val _duration: js.Any = js.native
+    /* private */ val _duration: js.Any = js.native
     
-    val _finalStyles: js.Any = js.native
+    /* private */ val _finalStyles: js.Any = js.native
     
-    var _flushDoneFns: js.Any = js.native
+    /* private */ var _flushDoneFns: js.Any = js.native
     
-    var _flushStartFns: js.Any = js.native
+    /* private */ var _flushStartFns: js.Any = js.native
     
-    var _onDestroyFns: js.Any = js.native
+    /* private */ var _onDestroyFns: js.Any = js.native
     
-    var _onDoneFns: js.Any = js.native
+    /* private */ var _onDoneFns: js.Any = js.native
     
-    var _onStartFns: js.Any = js.native
+    /* private */ var _onStartFns: js.Any = js.native
     
-    val _specialStyles: js.Any = js.native
+    /* private */ val _specialStyles: js.Any = js.native
     
-    var _started: js.Any = js.native
+    /* private */ var _started: js.Any = js.native
     
-    var _state: js.Any = js.native
+    /* private */ var _state: js.Any = js.native
     
-    var _styler: js.Any = js.native
+    /* private */ var _styler: js.Any = js.native
     
     val animationName: String = js.native
     
@@ -470,9 +469,9 @@ object browserBrowserMod {
   @js.native
   class ɵWebAnimationsDriver () extends AnimationDriver {
     
-    var _cssKeyframesDriver: js.Any = js.native
+    /* private */ var _cssKeyframesDriver: js.Any = js.native
     
-    var _isNativeImpl: js.Any = js.native
+    /* private */ var _isNativeImpl: js.Any = js.native
     
     def overrideWebAnimationsSupport(supported: Boolean): Unit = js.native
   }
@@ -494,35 +493,35 @@ object browserBrowserMod {
       _specialStyles: ɵangularPackagesAnimationsBrowserBrowserA
     ) = this()
     
-    var _buildPlayer: js.Any = js.native
+    /* private */ var _buildPlayer: js.Any = js.native
     
-    var _delay: js.Any = js.native
+    /* private */ var _delay: js.Any = js.native
     
-    var _destroyed: js.Any = js.native
+    /* private */ var _destroyed: js.Any = js.native
     
-    var _duration: js.Any = js.native
+    /* private */ var _duration: js.Any = js.native
     
-    var _finalKeyframe: js.Any = js.native
+    /* private */ var _finalKeyframe: js.Any = js.native
     
-    var _finished: js.Any = js.native
+    /* private */ var _finished: js.Any = js.native
     
-    var _initialized: js.Any = js.native
+    /* private */ var _initialized: js.Any = js.native
     
-    var _onDestroyFns: js.Any = js.native
+    /* private */ var _onDestroyFns: js.Any = js.native
     
-    var _onDoneFns: js.Any = js.native
+    /* private */ var _onDoneFns: js.Any = js.native
     
-    var _onFinish: js.Any = js.native
+    /* private */ var _onFinish: js.Any = js.native
     
-    var _onStartFns: js.Any = js.native
+    /* private */ var _onStartFns: js.Any = js.native
     
-    var _preparePlayerBeforeStart: js.Any = js.native
+    /* private */ var _preparePlayerBeforeStart: js.Any = js.native
     
-    var _resetDomPlayerState: js.Any = js.native
+    /* private */ var _resetDomPlayerState: js.Any = js.native
     
-    var _specialStyles: js.Any = js.native
+    /* private */ var _specialStyles: js.Any = js.native
     
-    var _started: js.Any = js.native
+    /* private */ var _started: js.Any = js.native
     
     @JSName("beforeDestroy")
     def beforeDestroy_MɵWebAnimationsPlayer(): Unit = js.native
@@ -648,8 +647,7 @@ object browserBrowserMod {
   @js.native
   class ɵWebAnimationsStyleNormalizer () extends ɵAnimationStyleNormalizer
   
-  @scala.inline
-  def ɵallowPreviousPlayerStylesMerge(duration: Double, delay: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowPreviousPlayerStylesMerge")(duration.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ɵallowPreviousPlayerStylesMerge(duration: Double, delay: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowPreviousPlayerStylesMerge")(duration.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("@angular/animations/browser/browser", "\u0275angular_packages_animations_browser_browser_a")
   @js.native
@@ -659,15 +657,15 @@ object browserBrowserMod {
     def this(_element: js.Any, _startStyles: StringDictionary[js.Any], _endStyles: StringDictionary[js.Any]) = this()
     def this(_element: js.Any, _startStyles: Null, _endStyles: StringDictionary[js.Any]) = this()
     
-    var _element: js.Any = js.native
+    /* private */ var _element: js.Any = js.native
     
-    var _endStyles: js.Any = js.native
+    /* private */ var _endStyles: js.Any = js.native
     
-    var _initialStyles: js.Any = js.native
+    /* private */ var _initialStyles: js.Any = js.native
     
-    var _startStyles: js.Any = js.native
+    /* private */ var _startStyles: js.Any = js.native
     
-    var _state: js.Any = js.native
+    /* private */ var _state: js.Any = js.native
     
     def destroy(): Unit = js.native
     
@@ -685,24 +683,18 @@ object browserBrowserMod {
     @JSImport("@angular/animations/browser/browser", "\u0275angular_packages_animations_browser_browser_a.initialStylesByElement")
     @js.native
     def initialStylesByElement: WeakMap[js.Any, StringDictionary[js.Any]] = js.native
-    @scala.inline
-    def initialStylesByElement_=(x: WeakMap[js.Any, StringDictionary[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("initialStylesByElement")(x.asInstanceOf[js.Any])
+    inline def initialStylesByElement_=(x: WeakMap[js.Any, StringDictionary[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("initialStylesByElement")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def ɵcontainsElement(elm1: js.Any, elm2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275containsElement")(elm1.asInstanceOf[js.Any], elm2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ɵcontainsElement(elm1: js.Any, elm2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275containsElement")(elm1.asInstanceOf[js.Any], elm2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def ɵinvokeQuery(element: js.Any, selector: String, multi: Boolean): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275invokeQuery")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], multi.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def ɵinvokeQuery(element: js.Any, selector: String, multi: Boolean): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275invokeQuery")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], multi.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def ɵmatchesElement(element: js.Any, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275matchesElement")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ɵmatchesElement(element: js.Any, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275matchesElement")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def ɵsupportsWebAnimations(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275supportsWebAnimations")().asInstanceOf[Boolean]
+  inline def ɵsupportsWebAnimations(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275supportsWebAnimations")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def ɵvalidateStyleProperty(prop: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275validateStyleProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def ɵvalidateStyleProperty(prop: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275validateStyleProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait AnimationEngineInstruction extends StObject {
     
@@ -710,18 +702,15 @@ object browserBrowserMod {
   }
   object AnimationEngineInstruction {
     
-    @scala.inline
-    def apply(`type`: AnimationTransitionInstructionType): AnimationEngineInstruction = {
+    inline def apply(`type`: AnimationTransitionInstructionType): AnimationEngineInstruction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnimationEngineInstruction]
     }
     
-    @scala.inline
-    implicit class AnimationEngineInstructionMutableBuilder[Self <: AnimationEngineInstruction] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationEngineInstruction](x: Self) {
       
-      @scala.inline
-      def setType(value: AnimationTransitionInstructionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: AnimationTransitionInstructionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -751,8 +740,7 @@ object browserBrowserMod {
   }
   object AnimationTimelineInstruction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delay: Double,
       duration: Double,
       element: js.Any,
@@ -768,53 +756,37 @@ object browserBrowserMod {
       __obj.asInstanceOf[AnimationTimelineInstruction]
     }
     
-    @scala.inline
-    implicit class AnimationTimelineInstructionMutableBuilder[Self <: AnimationTimelineInstruction] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationTimelineInstruction](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingNull: Self = StObject.set(x, "easing", null)
+      inline def setEasingNull: Self = StObject.set(x, "easing", null)
       
-      @scala.inline
-      def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyframes(value: js.Array[ɵStyleData]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
+      inline def setKeyframes(value: js.Array[ɵStyleData]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyframesVarargs(value: ɵStyleData*): Self = StObject.set(x, "keyframes", js.Array(value :_*))
+      inline def setKeyframesVarargs(value: ɵStyleData*): Self = StObject.set(x, "keyframes", js.Array(value :_*))
       
-      @scala.inline
-      def setPostStyleProps(value: js.Array[String]): Self = StObject.set(x, "postStyleProps", value.asInstanceOf[js.Any])
+      inline def setPostStyleProps(value: js.Array[String]): Self = StObject.set(x, "postStyleProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostStylePropsVarargs(value: String*): Self = StObject.set(x, "postStyleProps", js.Array(value :_*))
+      inline def setPostStylePropsVarargs(value: String*): Self = StObject.set(x, "postStyleProps", js.Array(value :_*))
       
-      @scala.inline
-      def setPreStyleProps(value: js.Array[String]): Self = StObject.set(x, "preStyleProps", value.asInstanceOf[js.Any])
+      inline def setPreStyleProps(value: js.Array[String]): Self = StObject.set(x, "preStyleProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreStylePropsVarargs(value: String*): Self = StObject.set(x, "preStyleProps", js.Array(value :_*))
+      inline def setPreStylePropsVarargs(value: String*): Self = StObject.set(x, "preStyleProps", js.Array(value :_*))
       
-      @scala.inline
-      def setStretchStartingKeyframe(value: Boolean): Self = StObject.set(x, "stretchStartingKeyframe", value.asInstanceOf[js.Any])
+      inline def setStretchStartingKeyframe(value: Boolean): Self = StObject.set(x, "stretchStartingKeyframe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStretchStartingKeyframeUndefined: Self = StObject.set(x, "stretchStartingKeyframe", js.undefined)
+      inline def setStretchStartingKeyframeUndefined: Self = StObject.set(x, "stretchStartingKeyframe", js.undefined)
       
-      @scala.inline
-      def setSubTimeline(value: Boolean): Self = StObject.set(x, "subTimeline", value.asInstanceOf[js.Any])
+      inline def setSubTimeline(value: Boolean): Self = StObject.set(x, "subTimeline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalTime(value: Double): Self = StObject.set(x, "totalTime", value.asInstanceOf[js.Any])
+      inline def setTotalTime(value: Double): Self = StObject.set(x, "totalTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -825,11 +797,9 @@ object browserBrowserMod {
   trait AnimationTransitionInstructionType extends StObject
   object AnimationTransitionInstructionType {
     
-    @scala.inline
-    def TimelineAnimation: `1` = 1.asInstanceOf[`1`]
+    inline def TimelineAnimation: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def TransitionAnimation: `0` = 0.asInstanceOf[`0`]
+    inline def TransitionAnimation: `0` = 0.asInstanceOf[`0`]
   }
   
   /**
@@ -862,8 +832,7 @@ object browserBrowserMod {
   }
   object DOMAnimation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addEventListener: (String, js.Function1[/* event */ js.Any, js.Any]) => js.Any,
       cancel: () => Unit,
       currentTime: Double,
@@ -878,41 +847,31 @@ object browserBrowserMod {
       __obj.asInstanceOf[DOMAnimation]
     }
     
-    @scala.inline
-    implicit class DOMAnimationMutableBuilder[Self <: DOMAnimation] (val x: Self) extends AnyVal {
+    extension [Self <: DOMAnimation](x: Self) {
       
-      @scala.inline
-      def setAddEventListener(value: (String, js.Function1[/* event */ js.Any, js.Any]) => js.Any): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+      inline def setAddEventListener(value: (String, js.Function1[/* event */ js.Any, js.Any]) => js.Any): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+      inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispatchEvent(value: String => js.Any): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
+      inline def setDispatchEvent(value: String => js.Any): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFinish(value: () => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
+      inline def setFinish(value: () => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnfinish(value: js.Function): Self = StObject.set(x, "onfinish", value.asInstanceOf[js.Any])
+      inline def setOnfinish(value: js.Function): Self = StObject.set(x, "onfinish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
+      inline def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
   
   trait ElementInstructionMap extends StObject {
     
-    var _map: js.Any
+    /* private */ var _map: js.Any
     
     def append(element: js.Any, instructions: js.Array[AnimationTimelineInstruction]): Unit
     
@@ -924,8 +883,7 @@ object browserBrowserMod {
   }
   object ElementInstructionMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _map: js.Any,
       append: (js.Any, js.Array[AnimationTimelineInstruction]) => Unit,
       clear: () => Unit,
@@ -936,23 +894,17 @@ object browserBrowserMod {
       __obj.asInstanceOf[ElementInstructionMap]
     }
     
-    @scala.inline
-    implicit class ElementInstructionMapMutableBuilder[Self <: ElementInstructionMap] (val x: Self) extends AnyVal {
+    extension [Self <: ElementInstructionMap](x: Self) {
       
-      @scala.inline
-      def setAppend(value: (js.Any, js.Array[AnimationTimelineInstruction]) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
+      inline def setAppend(value: (js.Any, js.Array[AnimationTimelineInstruction]) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConsume(value: js.Any => js.Array[AnimationTimelineInstruction]): Self = StObject.set(x, "consume", js.Any.fromFunction1(value))
+      inline def setConsume(value: js.Any => js.Array[AnimationTimelineInstruction]): Self = StObject.set(x, "consume", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: js.Any => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: js.Any => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_map(value: js.Any): Self = StObject.set(x, "_map", value.asInstanceOf[js.Any])
+      inline def set_map(value: js.Any): Self = StObject.set(x, "_map", value.asInstanceOf[js.Any])
     }
   }
 }

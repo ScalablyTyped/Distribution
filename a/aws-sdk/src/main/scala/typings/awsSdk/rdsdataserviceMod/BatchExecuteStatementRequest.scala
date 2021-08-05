@@ -43,49 +43,35 @@ trait BatchExecuteStatementRequest extends StObject {
 }
 object BatchExecuteStatementRequest {
   
-  @scala.inline
-  def apply(resourceArn: Arn, secretArn: Arn, sql: SqlStatement): BatchExecuteStatementRequest = {
+  inline def apply(resourceArn: Arn, secretArn: Arn, sql: SqlStatement): BatchExecuteStatementRequest = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], secretArn = secretArn.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchExecuteStatementRequest]
   }
   
-  @scala.inline
-  implicit class BatchExecuteStatementRequestMutableBuilder[Self <: BatchExecuteStatementRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchExecuteStatementRequest](x: Self) {
     
-    @scala.inline
-    def setDatabase(value: DbName): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: DbName): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
-    @scala.inline
-    def setParameterSets(value: SqlParameterSets): Self = StObject.set(x, "parameterSets", value.asInstanceOf[js.Any])
+    inline def setParameterSets(value: SqlParameterSets): Self = StObject.set(x, "parameterSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterSetsUndefined: Self = StObject.set(x, "parameterSets", js.undefined)
+    inline def setParameterSetsUndefined: Self = StObject.set(x, "parameterSets", js.undefined)
     
-    @scala.inline
-    def setParameterSetsVarargs(value: SqlParametersList*): Self = StObject.set(x, "parameterSets", js.Array(value :_*))
+    inline def setParameterSetsVarargs(value: SqlParametersList*): Self = StObject.set(x, "parameterSets", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: DbName): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: DbName): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setSecretArn(value: Arn): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
+    inline def setSecretArn(value: Arn): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSql(value: SqlStatement): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: SqlStatement): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionId(value: Id): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: Id): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
   }
 }

@@ -14,31 +14,23 @@ trait RegistrationOptions extends StObject {
 }
 object RegistrationOptions {
   
-  @scala.inline
-  def apply(): RegistrationOptions = {
+  inline def apply(): RegistrationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegistrationOptions]
   }
   
-  @scala.inline
-  implicit class RegistrationOptionsMutableBuilder[Self <: RegistrationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RegistrationOptions](x: Self) {
     
-    @scala.inline
-    def setScope(value: java.lang.String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: java.lang.String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setType(value: WorkerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: WorkerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUpdateViaCache(value: ServiceWorkerUpdateViaCache): Self = StObject.set(x, "updateViaCache", value.asInstanceOf[js.Any])
+    inline def setUpdateViaCache(value: ServiceWorkerUpdateViaCache): Self = StObject.set(x, "updateViaCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateViaCacheUndefined: Self = StObject.set(x, "updateViaCache", js.undefined)
+    inline def setUpdateViaCacheUndefined: Self = StObject.set(x, "updateViaCache", js.undefined)
   }
 }

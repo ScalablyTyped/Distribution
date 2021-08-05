@@ -11,8 +11,7 @@ trait InkRecognitionResult
      with IInkRecognitionResult
 object InkRecognitionResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boundingRect: Rect,
     getStrokes: () => IVectorView[InkStroke],
     getTextCandidates: () => IVectorView[String]

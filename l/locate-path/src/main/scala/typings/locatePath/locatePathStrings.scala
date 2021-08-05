@@ -8,11 +8,9 @@ object locatePathStrings {
   
   @js.native
   sealed trait directory extends StObject
-  @scala.inline
-  def directory: directory = "directory".asInstanceOf[directory]
+  inline def directory: directory = "directory".asInstanceOf[directory]
   
   @js.native
   sealed trait file extends StObject
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
+  inline def file: file = "file".asInstanceOf[file]
 }

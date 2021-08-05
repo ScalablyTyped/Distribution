@@ -13,19 +13,15 @@ trait ProvisionedThroughputOverride extends StObject {
 }
 object ProvisionedThroughputOverride {
   
-  @scala.inline
-  def apply(): ProvisionedThroughputOverride = {
+  inline def apply(): ProvisionedThroughputOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProvisionedThroughputOverride]
   }
   
-  @scala.inline
-  implicit class ProvisionedThroughputOverrideMutableBuilder[Self <: ProvisionedThroughputOverride] (val x: Self) extends AnyVal {
+  extension [Self <: ProvisionedThroughputOverride](x: Self) {
     
-    @scala.inline
-    def setReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
+    inline def setReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
+    inline def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
   }
 }

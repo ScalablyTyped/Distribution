@@ -14,22 +14,17 @@ trait JSONRPCResponsePayload extends StObject {
 }
 object JSONRPCResponsePayload {
   
-  @scala.inline
-  def apply(id: Double, jsonrpc: String, result: js.Any): JSONRPCResponsePayload = {
+  inline def apply(id: Double, jsonrpc: String, result: js.Any): JSONRPCResponsePayload = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONRPCResponsePayload]
   }
   
-  @scala.inline
-  implicit class JSONRPCResponsePayloadMutableBuilder[Self <: JSONRPCResponsePayload] (val x: Self) extends AnyVal {
+  extension [Self <: JSONRPCResponsePayload](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonrpc(value: String): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
+    inline def setJsonrpc(value: String): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

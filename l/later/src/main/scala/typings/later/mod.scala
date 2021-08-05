@@ -91,8 +91,7 @@ object mod extends Shortcut {
   }
   object DateProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       UTC: () => Unit,
       localTime: () => Unit,
       next: (js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double]) => Date,
@@ -104,30 +103,23 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DateProvider]
     }
     
-    @scala.inline
-    implicit class DateProviderMutableBuilder[Self <: DateProvider] (val x: Self) extends AnyVal {
+    extension [Self <: DateProvider](x: Self) {
       
-      @scala.inline
-      def setLocalTime(value: () => Unit): Self = StObject.set(x, "localTime", js.Any.fromFunction0(value))
+      inline def setLocalTime(value: () => Unit): Self = StObject.set(x, "localTime", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNext(
+      inline def setNext(
         value: (js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double]) => Date
       ): Self = StObject.set(x, "next", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setNextRollover(value: (Date, Double, Modifier, TimePeriod) => Date): Self = StObject.set(x, "nextRollover", js.Any.fromFunction4(value))
+      inline def setNextRollover(value: (Date, Double, Modifier, TimePeriod) => Date): Self = StObject.set(x, "nextRollover", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setPrev(
+      inline def setPrev(
         value: (js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double]) => Date
       ): Self = StObject.set(x, "prev", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setPrevRollover(value: (Date, Double, Modifier, TimePeriod) => Date): Self = StObject.set(x, "prevRollover", js.Any.fromFunction4(value))
+      inline def setPrevRollover(value: (Date, Double, Modifier, TimePeriod) => Date): Self = StObject.set(x, "prevRollover", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setUTC(value: () => Unit): Self = StObject.set(x, "UTC", js.Any.fromFunction0(value))
+      inline def setUTC(value: () => Unit): Self = StObject.set(x, "UTC", js.Any.fromFunction0(value))
     }
   }
   
@@ -181,20 +173,16 @@ object mod extends Shortcut {
   }
   object ModifierStatic {
     
-    @scala.inline
-    def apply(after: Modifier, before: Modifier): ModifierStatic = {
+    inline def apply(after: Modifier, before: Modifier): ModifierStatic = {
       val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModifierStatic]
     }
     
-    @scala.inline
-    implicit class ModifierStaticMutableBuilder[Self <: ModifierStatic] (val x: Self) extends AnyVal {
+    extension [Self <: ModifierStatic](x: Self) {
       
-      @scala.inline
-      def setAfter(value: Modifier): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: Modifier): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBefore(value: Modifier): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: Modifier): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     }
   }
   
@@ -345,311 +333,210 @@ object mod extends Shortcut {
   }
   object Recurrence {
     
-    @scala.inline
-    def apply(): Recurrence = {
+    inline def apply(): Recurrence = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Recurrence]
     }
     
-    @scala.inline
-    implicit class RecurrenceMutableBuilder[Self <: Recurrence] (val x: Self) extends AnyVal {
+    extension [Self <: Recurrence](x: Self) {
       
-      @scala.inline
-      def setD(value: js.Array[Double]): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
+      inline def setD(value: js.Array[Double]): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDUndefined: Self = StObject.set(x, "D", js.undefined)
+      inline def setDUndefined: Self = StObject.set(x, "D", js.undefined)
       
-      @scala.inline
-      def setDVarargs(value: Double*): Self = StObject.set(x, "D", js.Array(value :_*))
+      inline def setDVarargs(value: Double*): Self = StObject.set(x, "D", js.Array(value :_*))
       
-      @scala.inline
-      def setD_a(value: js.Array[Double]): Self = StObject.set(x, "D_a", value.asInstanceOf[js.Any])
+      inline def setD_a(value: js.Array[Double]): Self = StObject.set(x, "D_a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setD_aUndefined: Self = StObject.set(x, "D_a", js.undefined)
+      inline def setD_aUndefined: Self = StObject.set(x, "D_a", js.undefined)
       
-      @scala.inline
-      def setD_aVarargs(value: Double*): Self = StObject.set(x, "D_a", js.Array(value :_*))
+      inline def setD_aVarargs(value: Double*): Self = StObject.set(x, "D_a", js.Array(value :_*))
       
-      @scala.inline
-      def setD_b(value: js.Array[Double]): Self = StObject.set(x, "D_b", value.asInstanceOf[js.Any])
+      inline def setD_b(value: js.Array[Double]): Self = StObject.set(x, "D_b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setD_bUndefined: Self = StObject.set(x, "D_b", js.undefined)
+      inline def setD_bUndefined: Self = StObject.set(x, "D_b", js.undefined)
       
-      @scala.inline
-      def setD_bVarargs(value: Double*): Self = StObject.set(x, "D_b", js.Array(value :_*))
+      inline def setD_bVarargs(value: Double*): Self = StObject.set(x, "D_b", js.Array(value :_*))
       
-      @scala.inline
-      def setDc(value: js.Array[Double]): Self = StObject.set(x, "dc", value.asInstanceOf[js.Any])
+      inline def setDc(value: js.Array[Double]): Self = StObject.set(x, "dc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDcUndefined: Self = StObject.set(x, "dc", js.undefined)
+      inline def setDcUndefined: Self = StObject.set(x, "dc", js.undefined)
       
-      @scala.inline
-      def setDcVarargs(value: Double*): Self = StObject.set(x, "dc", js.Array(value :_*))
+      inline def setDcVarargs(value: Double*): Self = StObject.set(x, "dc", js.Array(value :_*))
       
-      @scala.inline
-      def setDc_a(value: js.Array[Double]): Self = StObject.set(x, "dc_a", value.asInstanceOf[js.Any])
+      inline def setDc_a(value: js.Array[Double]): Self = StObject.set(x, "dc_a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDc_aUndefined: Self = StObject.set(x, "dc_a", js.undefined)
+      inline def setDc_aUndefined: Self = StObject.set(x, "dc_a", js.undefined)
       
-      @scala.inline
-      def setDc_aVarargs(value: Double*): Self = StObject.set(x, "dc_a", js.Array(value :_*))
+      inline def setDc_aVarargs(value: Double*): Self = StObject.set(x, "dc_a", js.Array(value :_*))
       
-      @scala.inline
-      def setDc_b(value: js.Array[Double]): Self = StObject.set(x, "dc_b", value.asInstanceOf[js.Any])
+      inline def setDc_b(value: js.Array[Double]): Self = StObject.set(x, "dc_b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDc_bUndefined: Self = StObject.set(x, "dc_b", js.undefined)
+      inline def setDc_bUndefined: Self = StObject.set(x, "dc_b", js.undefined)
       
-      @scala.inline
-      def setDc_bVarargs(value: Double*): Self = StObject.set(x, "dc_b", js.Array(value :_*))
+      inline def setDc_bVarargs(value: Double*): Self = StObject.set(x, "dc_b", js.Array(value :_*))
       
-      @scala.inline
-      def setDw(value: js.Array[Double]): Self = StObject.set(x, "dw", value.asInstanceOf[js.Any])
+      inline def setDw(value: js.Array[Double]): Self = StObject.set(x, "dw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDwUndefined: Self = StObject.set(x, "dw", js.undefined)
+      inline def setDwUndefined: Self = StObject.set(x, "dw", js.undefined)
       
-      @scala.inline
-      def setDwVarargs(value: Double*): Self = StObject.set(x, "dw", js.Array(value :_*))
+      inline def setDwVarargs(value: Double*): Self = StObject.set(x, "dw", js.Array(value :_*))
       
-      @scala.inline
-      def setDw_a(value: js.Array[Double]): Self = StObject.set(x, "dw_a", value.asInstanceOf[js.Any])
+      inline def setDw_a(value: js.Array[Double]): Self = StObject.set(x, "dw_a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDw_aUndefined: Self = StObject.set(x, "dw_a", js.undefined)
+      inline def setDw_aUndefined: Self = StObject.set(x, "dw_a", js.undefined)
       
-      @scala.inline
-      def setDw_aVarargs(value: Double*): Self = StObject.set(x, "dw_a", js.Array(value :_*))
+      inline def setDw_aVarargs(value: Double*): Self = StObject.set(x, "dw_a", js.Array(value :_*))
       
-      @scala.inline
-      def setDw_b(value: js.Array[Double]): Self = StObject.set(x, "dw_b", value.asInstanceOf[js.Any])
+      inline def setDw_b(value: js.Array[Double]): Self = StObject.set(x, "dw_b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDw_bUndefined: Self = StObject.set(x, "dw_b", js.undefined)
+      inline def setDw_bUndefined: Self = StObject.set(x, "dw_b", js.undefined)
       
-      @scala.inline
-      def setDw_bVarargs(value: Double*): Self = StObject.set(x, "dw_b", js.Array(value :_*))
+      inline def setDw_bVarargs(value: Double*): Self = StObject.set(x, "dw_b", js.Array(value :_*))
       
-      @scala.inline
-      def setDy(value: js.Array[Double]): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+      inline def setDy(value: js.Array[Double]): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
+      inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
       
-      @scala.inline
-      def setDyVarargs(value: Double*): Self = StObject.set(x, "dy", js.Array(value :_*))
+      inline def setDyVarargs(value: Double*): Self = StObject.set(x, "dy", js.Array(value :_*))
       
-      @scala.inline
-      def setDy_a(value: js.Array[Double]): Self = StObject.set(x, "dy_a", value.asInstanceOf[js.Any])
+      inline def setDy_a(value: js.Array[Double]): Self = StObject.set(x, "dy_a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDy_aUndefined: Self = StObject.set(x, "dy_a", js.undefined)
+      inline def setDy_aUndefined: Self = StObject.set(x, "dy_a", js.undefined)
       
-      @scala.inline
-      def setDy_aVarargs(value: Double*): Self = StObject.set(x, "dy_a", js.Array(value :_*))
+      inline def setDy_aVarargs(value: Double*): Self = StObject.set(x, "dy_a", js.Array(value :_*))
       
-      @scala.inline
-      def setDy_b(value: js.Array[Double]): Self = StObject.set(x, "dy_b", value.asInstanceOf[js.Any])
+      inline def setDy_b(value: js.Array[Double]): Self = StObject.set(x, "dy_b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDy_bUndefined: Self = StObject.set(x, "dy_b", js.undefined)
+      inline def setDy_bUndefined: Self = StObject.set(x, "dy_b", js.undefined)
       
-      @scala.inline
-      def setDy_bVarargs(value: Double*): Self = StObject.set(x, "dy_b", js.Array(value :_*))
+      inline def setDy_bVarargs(value: Double*): Self = StObject.set(x, "dy_b", js.Array(value :_*))
       
-      @scala.inline
-      def setH(value: js.Array[Double]): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: js.Array[Double]): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+      inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
       
-      @scala.inline
-      def setHVarargs(value: Double*): Self = StObject.set(x, "h", js.Array(value :_*))
+      inline def setHVarargs(value: Double*): Self = StObject.set(x, "h", js.Array(value :_*))
       
-      @scala.inline
-      def setH_a(value: js.Array[Double]): Self = StObject.set(x, "h_a", value.asInstanceOf[js.Any])
+      inline def setH_a(value: js.Array[Double]): Self = StObject.set(x, "h_a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH_aUndefined: Self = StObject.set(x, "h_a", js.undefined)
+      inline def setH_aUndefined: Self = StObject.set(x, "h_a", js.undefined)
       
-      @scala.inline
-      def setH_aVarargs(value: Double*): Self = StObject.set(x, "h_a", js.Array(value :_*))
+      inline def setH_aVarargs(value: Double*): Self = StObject.set(x, "h_a", js.Array(value :_*))
       
-      @scala.inline
-      def setH_b(value: js.Array[Double]): Self = StObject.set(x, "h_b", value.asInstanceOf[js.Any])
+      inline def setH_b(value: js.Array[Double]): Self = StObject.set(x, "h_b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH_bUndefined: Self = StObject.set(x, "h_b", js.undefined)
+      inline def setH_bUndefined: Self = StObject.set(x, "h_b", js.undefined)
       
-      @scala.inline
-      def setH_bVarargs(value: Double*): Self = StObject.set(x, "h_b", js.Array(value :_*))
+      inline def setH_bVarargs(value: Double*): Self = StObject.set(x, "h_b", js.Array(value :_*))
       
-      @scala.inline
-      def setM(value: js.Array[Double]): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
+      inline def setM(value: js.Array[Double]): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMUndefined: Self = StObject.set(x, "M", js.undefined)
+      inline def setMUndefined: Self = StObject.set(x, "M", js.undefined)
       
-      @scala.inline
-      def setMVarargs(value: Double*): Self = StObject.set(x, "M", js.Array(value :_*))
+      inline def setMVarargs(value: Double*): Self = StObject.set(x, "M", js.Array(value :_*))
       
-      @scala.inline
-      def setM_a(value: js.Array[Double]): Self = StObject.set(x, "M_a", value.asInstanceOf[js.Any])
+      inline def setM_a(value: js.Array[Double]): Self = StObject.set(x, "M_a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM_aUndefined: Self = StObject.set(x, "M_a", js.undefined)
+      inline def setM_aUndefined: Self = StObject.set(x, "M_a", js.undefined)
       
-      @scala.inline
-      def setM_aVarargs(value: Double*): Self = StObject.set(x, "M_a", js.Array(value :_*))
+      inline def setM_aVarargs(value: Double*): Self = StObject.set(x, "M_a", js.Array(value :_*))
       
-      @scala.inline
-      def setM_b(value: js.Array[Double]): Self = StObject.set(x, "M_b", value.asInstanceOf[js.Any])
+      inline def setM_b(value: js.Array[Double]): Self = StObject.set(x, "M_b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM_bUndefined: Self = StObject.set(x, "M_b", js.undefined)
+      inline def setM_bUndefined: Self = StObject.set(x, "M_b", js.undefined)
       
-      @scala.inline
-      def setM_bVarargs(value: Double*): Self = StObject.set(x, "M_b", js.Array(value :_*))
+      inline def setM_bVarargs(value: Double*): Self = StObject.set(x, "M_b", js.Array(value :_*))
       
-      @scala.inline
-      def setS(value: js.Array[Double]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: js.Array[Double]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSUndefined: Self = StObject.set(x, "s", js.undefined)
+      inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
       
-      @scala.inline
-      def setSVarargs(value: Double*): Self = StObject.set(x, "s", js.Array(value :_*))
+      inline def setSVarargs(value: Double*): Self = StObject.set(x, "s", js.Array(value :_*))
       
-      @scala.inline
-      def setS_a(value: js.Array[Double]): Self = StObject.set(x, "s_a", value.asInstanceOf[js.Any])
+      inline def setS_a(value: js.Array[Double]): Self = StObject.set(x, "s_a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_aUndefined: Self = StObject.set(x, "s_a", js.undefined)
+      inline def setS_aUndefined: Self = StObject.set(x, "s_a", js.undefined)
       
-      @scala.inline
-      def setS_aVarargs(value: Double*): Self = StObject.set(x, "s_a", js.Array(value :_*))
+      inline def setS_aVarargs(value: Double*): Self = StObject.set(x, "s_a", js.Array(value :_*))
       
-      @scala.inline
-      def setS_b(value: js.Array[Double]): Self = StObject.set(x, "s_b", value.asInstanceOf[js.Any])
+      inline def setS_b(value: js.Array[Double]): Self = StObject.set(x, "s_b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS_bUndefined: Self = StObject.set(x, "s_b", js.undefined)
+      inline def setS_bUndefined: Self = StObject.set(x, "s_b", js.undefined)
       
-      @scala.inline
-      def setS_bVarargs(value: Double*): Self = StObject.set(x, "s_b", js.Array(value :_*))
+      inline def setS_bVarargs(value: Double*): Self = StObject.set(x, "s_b", js.Array(value :_*))
       
-      @scala.inline
-      def setT(value: js.Array[Double]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(value: js.Array[Double]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTUndefined: Self = StObject.set(x, "t", js.undefined)
+      inline def setTUndefined: Self = StObject.set(x, "t", js.undefined)
       
-      @scala.inline
-      def setTVarargs(value: Double*): Self = StObject.set(x, "t", js.Array(value :_*))
+      inline def setTVarargs(value: Double*): Self = StObject.set(x, "t", js.Array(value :_*))
       
-      @scala.inline
-      def setT_a(value: js.Array[Double]): Self = StObject.set(x, "t_a", value.asInstanceOf[js.Any])
+      inline def setT_a(value: js.Array[Double]): Self = StObject.set(x, "t_a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setT_aUndefined: Self = StObject.set(x, "t_a", js.undefined)
+      inline def setT_aUndefined: Self = StObject.set(x, "t_a", js.undefined)
       
-      @scala.inline
-      def setT_aVarargs(value: Double*): Self = StObject.set(x, "t_a", js.Array(value :_*))
+      inline def setT_aVarargs(value: Double*): Self = StObject.set(x, "t_a", js.Array(value :_*))
       
-      @scala.inline
-      def setT_b(value: js.Array[Double]): Self = StObject.set(x, "t_b", value.asInstanceOf[js.Any])
+      inline def setT_b(value: js.Array[Double]): Self = StObject.set(x, "t_b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setT_bUndefined: Self = StObject.set(x, "t_b", js.undefined)
+      inline def setT_bUndefined: Self = StObject.set(x, "t_b", js.undefined)
       
-      @scala.inline
-      def setT_bVarargs(value: Double*): Self = StObject.set(x, "t_b", js.Array(value :_*))
+      inline def setT_bVarargs(value: Double*): Self = StObject.set(x, "t_b", js.Array(value :_*))
       
-      @scala.inline
-      def setWm(value: js.Array[Double]): Self = StObject.set(x, "wm", value.asInstanceOf[js.Any])
+      inline def setWm(value: js.Array[Double]): Self = StObject.set(x, "wm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWmUndefined: Self = StObject.set(x, "wm", js.undefined)
+      inline def setWmUndefined: Self = StObject.set(x, "wm", js.undefined)
       
-      @scala.inline
-      def setWmVarargs(value: Double*): Self = StObject.set(x, "wm", js.Array(value :_*))
+      inline def setWmVarargs(value: Double*): Self = StObject.set(x, "wm", js.Array(value :_*))
       
-      @scala.inline
-      def setWm_a(value: js.Array[Double]): Self = StObject.set(x, "wm_a", value.asInstanceOf[js.Any])
+      inline def setWm_a(value: js.Array[Double]): Self = StObject.set(x, "wm_a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWm_aUndefined: Self = StObject.set(x, "wm_a", js.undefined)
+      inline def setWm_aUndefined: Self = StObject.set(x, "wm_a", js.undefined)
       
-      @scala.inline
-      def setWm_aVarargs(value: Double*): Self = StObject.set(x, "wm_a", js.Array(value :_*))
+      inline def setWm_aVarargs(value: Double*): Self = StObject.set(x, "wm_a", js.Array(value :_*))
       
-      @scala.inline
-      def setWm_b(value: js.Array[Double]): Self = StObject.set(x, "wm_b", value.asInstanceOf[js.Any])
+      inline def setWm_b(value: js.Array[Double]): Self = StObject.set(x, "wm_b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWm_bUndefined: Self = StObject.set(x, "wm_b", js.undefined)
+      inline def setWm_bUndefined: Self = StObject.set(x, "wm_b", js.undefined)
       
-      @scala.inline
-      def setWm_bVarargs(value: Double*): Self = StObject.set(x, "wm_b", js.Array(value :_*))
+      inline def setWm_bVarargs(value: Double*): Self = StObject.set(x, "wm_b", js.Array(value :_*))
       
-      @scala.inline
-      def setWy(value: js.Array[Double]): Self = StObject.set(x, "wy", value.asInstanceOf[js.Any])
+      inline def setWy(value: js.Array[Double]): Self = StObject.set(x, "wy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWyUndefined: Self = StObject.set(x, "wy", js.undefined)
+      inline def setWyUndefined: Self = StObject.set(x, "wy", js.undefined)
       
-      @scala.inline
-      def setWyVarargs(value: Double*): Self = StObject.set(x, "wy", js.Array(value :_*))
+      inline def setWyVarargs(value: Double*): Self = StObject.set(x, "wy", js.Array(value :_*))
       
-      @scala.inline
-      def setWy_a(value: js.Array[Double]): Self = StObject.set(x, "wy_a", value.asInstanceOf[js.Any])
+      inline def setWy_a(value: js.Array[Double]): Self = StObject.set(x, "wy_a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWy_aUndefined: Self = StObject.set(x, "wy_a", js.undefined)
+      inline def setWy_aUndefined: Self = StObject.set(x, "wy_a", js.undefined)
       
-      @scala.inline
-      def setWy_aVarargs(value: Double*): Self = StObject.set(x, "wy_a", js.Array(value :_*))
+      inline def setWy_aVarargs(value: Double*): Self = StObject.set(x, "wy_a", js.Array(value :_*))
       
-      @scala.inline
-      def setWy_b(value: js.Array[Double]): Self = StObject.set(x, "wy_b", value.asInstanceOf[js.Any])
+      inline def setWy_b(value: js.Array[Double]): Self = StObject.set(x, "wy_b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWy_bUndefined: Self = StObject.set(x, "wy_b", js.undefined)
+      inline def setWy_bUndefined: Self = StObject.set(x, "wy_b", js.undefined)
       
-      @scala.inline
-      def setWy_bVarargs(value: Double*): Self = StObject.set(x, "wy_b", js.Array(value :_*))
+      inline def setWy_bVarargs(value: Double*): Self = StObject.set(x, "wy_b", js.Array(value :_*))
       
-      @scala.inline
-      def setY(value: js.Array[Double]): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+      inline def setY(value: js.Array[Double]): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "Y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "Y", js.undefined)
       
-      @scala.inline
-      def setYVarargs(value: Double*): Self = StObject.set(x, "Y", js.Array(value :_*))
+      inline def setYVarargs(value: Double*): Self = StObject.set(x, "Y", js.Array(value :_*))
       
-      @scala.inline
-      def setY_a(value: js.Array[Double]): Self = StObject.set(x, "Y_a", value.asInstanceOf[js.Any])
+      inline def setY_a(value: js.Array[Double]): Self = StObject.set(x, "Y_a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY_aUndefined: Self = StObject.set(x, "Y_a", js.undefined)
+      inline def setY_aUndefined: Self = StObject.set(x, "Y_a", js.undefined)
       
-      @scala.inline
-      def setY_aVarargs(value: Double*): Self = StObject.set(x, "Y_a", js.Array(value :_*))
+      inline def setY_aVarargs(value: Double*): Self = StObject.set(x, "Y_a", js.Array(value :_*))
       
-      @scala.inline
-      def setY_b(value: js.Array[Double]): Self = StObject.set(x, "Y_b", value.asInstanceOf[js.Any])
+      inline def setY_b(value: js.Array[Double]): Self = StObject.set(x, "Y_b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY_bUndefined: Self = StObject.set(x, "Y_b", js.undefined)
+      inline def setY_bUndefined: Self = StObject.set(x, "Y_b", js.undefined)
       
-      @scala.inline
-      def setY_bVarargs(value: Double*): Self = StObject.set(x, "Y_b", js.Array(value :_*))
+      inline def setY_bVarargs(value: Double*): Self = StObject.set(x, "Y_b", js.Array(value :_*))
     }
   }
   
@@ -888,29 +775,22 @@ object mod extends Shortcut {
   }
   object ScheduleData {
     
-    @scala.inline
-    def apply(error: Double, exceptions: js.Array[Recurrence], schedules: js.Array[Recurrence]): ScheduleData = {
+    inline def apply(error: Double, exceptions: js.Array[Recurrence], schedules: js.Array[Recurrence]): ScheduleData = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], exceptions = exceptions.asInstanceOf[js.Any], schedules = schedules.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScheduleData]
     }
     
-    @scala.inline
-    implicit class ScheduleDataMutableBuilder[Self <: ScheduleData] (val x: Self) extends AnyVal {
+    extension [Self <: ScheduleData](x: Self) {
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExceptions(value: js.Array[Recurrence]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
+      inline def setExceptions(value: js.Array[Recurrence]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExceptionsVarargs(value: Recurrence*): Self = StObject.set(x, "exceptions", js.Array(value :_*))
+      inline def setExceptionsVarargs(value: Recurrence*): Self = StObject.set(x, "exceptions", js.Array(value :_*))
       
-      @scala.inline
-      def setSchedules(value: js.Array[Recurrence]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
+      inline def setSchedules(value: js.Array[Recurrence]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchedulesVarargs(value: Recurrence*): Self = StObject.set(x, "schedules", js.Array(value :_*))
+      inline def setSchedulesVarargs(value: Recurrence*): Self = StObject.set(x, "schedules", js.Array(value :_*))
     }
   }
   
@@ -1023,8 +903,7 @@ object mod extends Shortcut {
   }
   object Static {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       date: DateProvider,
       day: TimePeriod,
       dayOfWeek: TimePeriod,
@@ -1048,62 +927,43 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Static]
     }
     
-    @scala.inline
-    implicit class StaticMutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
+    extension [Self <: Static](x: Self) {
       
-      @scala.inline
-      def setDate(value: DateProvider): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: DateProvider): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDay(value: TimePeriod): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: TimePeriod): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayOfWeek(value: TimePeriod): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
+      inline def setDayOfWeek(value: TimePeriod): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayOfWeekCount(value: TimePeriod): Self = StObject.set(x, "dayOfWeekCount", value.asInstanceOf[js.Any])
+      inline def setDayOfWeekCount(value: TimePeriod): Self = StObject.set(x, "dayOfWeekCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayOfYear(value: TimePeriod): Self = StObject.set(x, "dayOfYear", value.asInstanceOf[js.Any])
+      inline def setDayOfYear(value: TimePeriod): Self = StObject.set(x, "dayOfYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHour(value: TimePeriod): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: TimePeriod): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinute(value: TimePeriod): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: TimePeriod): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifier(value: ModifierStatic): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+      inline def setModifier(value: ModifierStatic): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: TimePeriod): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: TimePeriod): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParse(value: ParseStatic): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      inline def setParse(value: ParseStatic): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchedule(value: js.Any => Schedule): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
+      inline def setSchedule(value: js.Any => Schedule): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSecond(value: TimePeriod): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: TimePeriod): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetInterval(value: (js.Function0[Unit], ScheduleData) => Timer): Self = StObject.set(x, "setInterval", js.Any.fromFunction2(value))
+      inline def setSetInterval(value: (js.Function0[Unit], ScheduleData) => Timer): Self = StObject.set(x, "setInterval", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetTimeout(value: (js.Function0[Unit], ScheduleData) => Timer): Self = StObject.set(x, "setTimeout", js.Any.fromFunction2(value))
+      inline def setSetTimeout(value: (js.Function0[Unit], ScheduleData) => Timer): Self = StObject.set(x, "setTimeout", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTime(value: TimePeriod): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: TimePeriod): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekOfMonth(value: TimePeriod): Self = StObject.set(x, "weekOfMonth", value.asInstanceOf[js.Any])
+      inline def setWeekOfMonth(value: TimePeriod): Self = StObject.set(x, "weekOfMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekOfYear(value: TimePeriod): Self = StObject.set(x, "weekOfYear", value.asInstanceOf[js.Any])
+      inline def setWeekOfYear(value: TimePeriod): Self = StObject.set(x, "weekOfYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYear(value: TimePeriod): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: TimePeriod): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1189,17 +1049,14 @@ object mod extends Shortcut {
   }
   object Timer {
     
-    @scala.inline
-    def apply(clear: () => Unit): Timer = {
+    inline def apply(clear: () => Unit): Timer = {
       val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear))
       __obj.asInstanceOf[Timer]
     }
     
-    @scala.inline
-    implicit class TimerMutableBuilder[Self <: Timer] (val x: Self) extends AnyVal {
+    extension [Self <: Timer](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     }
   }
   

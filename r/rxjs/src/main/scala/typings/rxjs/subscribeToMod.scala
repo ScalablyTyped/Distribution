@@ -13,6 +13,5 @@ object subscribeToMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def subscribeTo[T](result: ObservableInput[T]): js.Function1[/* subscriber */ Subscriber[T], Unit | Subscription] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribeTo")(result.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* subscriber */ Subscriber[T], Unit | Subscription]]
+  inline def subscribeTo[T](result: ObservableInput[T]): js.Function1[/* subscriber */ Subscriber[T], Unit | Subscription] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribeTo")(result.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* subscriber */ Subscriber[T], Unit | Subscription]]
 }

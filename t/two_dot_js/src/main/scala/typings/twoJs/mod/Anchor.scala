@@ -26,6 +26,5 @@ object Anchor {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def AppendCurveProperties(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AppendCurveProperties")().asInstanceOf[Unit]
+  inline def AppendCurveProperties(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AppendCurveProperties")().asInstanceOf[Unit]
 }

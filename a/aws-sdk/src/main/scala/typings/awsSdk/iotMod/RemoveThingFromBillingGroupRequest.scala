@@ -28,37 +28,27 @@ trait RemoveThingFromBillingGroupRequest extends StObject {
 }
 object RemoveThingFromBillingGroupRequest {
   
-  @scala.inline
-  def apply(): RemoveThingFromBillingGroupRequest = {
+  inline def apply(): RemoveThingFromBillingGroupRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveThingFromBillingGroupRequest]
   }
   
-  @scala.inline
-  implicit class RemoveThingFromBillingGroupRequestMutableBuilder[Self <: RemoveThingFromBillingGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveThingFromBillingGroupRequest](x: Self) {
     
-    @scala.inline
-    def setBillingGroupArn(value: BillingGroupArn): Self = StObject.set(x, "billingGroupArn", value.asInstanceOf[js.Any])
+    inline def setBillingGroupArn(value: BillingGroupArn): Self = StObject.set(x, "billingGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingGroupArnUndefined: Self = StObject.set(x, "billingGroupArn", js.undefined)
+    inline def setBillingGroupArnUndefined: Self = StObject.set(x, "billingGroupArn", js.undefined)
     
-    @scala.inline
-    def setBillingGroupName(value: BillingGroupName): Self = StObject.set(x, "billingGroupName", value.asInstanceOf[js.Any])
+    inline def setBillingGroupName(value: BillingGroupName): Self = StObject.set(x, "billingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingGroupNameUndefined: Self = StObject.set(x, "billingGroupName", js.undefined)
+    inline def setBillingGroupNameUndefined: Self = StObject.set(x, "billingGroupName", js.undefined)
     
-    @scala.inline
-    def setThingArn(value: ThingArn): Self = StObject.set(x, "thingArn", value.asInstanceOf[js.Any])
+    inline def setThingArn(value: ThingArn): Self = StObject.set(x, "thingArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingArnUndefined: Self = StObject.set(x, "thingArn", js.undefined)
+    inline def setThingArnUndefined: Self = StObject.set(x, "thingArn", js.undefined)
     
-    @scala.inline
-    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
+    inline def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
   }
 }

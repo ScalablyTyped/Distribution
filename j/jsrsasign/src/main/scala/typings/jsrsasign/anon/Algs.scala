@@ -22,8 +22,7 @@ trait Algs extends StObject {
 }
 object Algs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     algs: String,
     certs: String,
     obj: SignedData,
@@ -35,28 +34,20 @@ object Algs {
     __obj.asInstanceOf[Algs]
   }
   
-  @scala.inline
-  implicit class AlgsMutableBuilder[Self <: Algs] (val x: Self) extends AnyVal {
+  extension [Self <: Algs](x: Self) {
     
-    @scala.inline
-    def setAlgs(value: String): Self = StObject.set(x, "algs", value.asInstanceOf[js.Any])
+    inline def setAlgs(value: String): Self = StObject.set(x, "algs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCerts(value: String): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
+    inline def setCerts(value: String): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObj(value: SignedData): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
+    inline def setObj(value: SignedData): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevs(value: String): Self = StObject.set(x, "revs", value.asInstanceOf[js.Any])
+    inline def setRevs(value: String): Self = StObject.set(x, "revs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSi(value: js.Array[SignerInfo]): Self = StObject.set(x, "si", value.asInstanceOf[js.Any])
+    inline def setSi(value: js.Array[SignerInfo]): Self = StObject.set(x, "si", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiVarargs(value: SignerInfo*): Self = StObject.set(x, "si", js.Array(value :_*))
+    inline def setSiVarargs(value: SignerInfo*): Self = StObject.set(x, "si", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,7 @@ object overlayTypesMod {
   }
   object IOverlay {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -36,23 +35,17 @@ object overlayTypesMod {
       __obj.asInstanceOf[IOverlay]
     }
     
-    @scala.inline
-    implicit class IOverlayMutableBuilder[Self <: IOverlay] (val x: Self) extends AnyVal {
+    extension [Self <: IOverlay](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetPoster(value: String => Unit): Self = StObject.set(x, "setPoster", js.Any.fromFunction1(value))
+      inline def setSetPoster(value: String => Unit): Self = StObject.set(x, "setPoster", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -66,32 +59,24 @@ object overlayTypesMod {
   }
   object IOverlayAPI {
     
-    @scala.inline
-    def apply(): IOverlayAPI = {
+    inline def apply(): IOverlayAPI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOverlayAPI]
     }
     
-    @scala.inline
-    implicit class IOverlayAPIMutableBuilder[Self <: IOverlayAPI] (val x: Self) extends AnyVal {
+    extension [Self <: IOverlayAPI](x: Self) {
       
-      @scala.inline
-      def setHideOverlay(value: () => Unit): Self = StObject.set(x, "hideOverlay", js.Any.fromFunction0(value))
+      inline def setHideOverlay(value: () => Unit): Self = StObject.set(x, "hideOverlay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHideOverlayUndefined: Self = StObject.set(x, "hideOverlay", js.undefined)
+      inline def setHideOverlayUndefined: Self = StObject.set(x, "hideOverlay", js.undefined)
       
-      @scala.inline
-      def setSetPoster(value: /* src */ String => Unit): Self = StObject.set(x, "setPoster", js.Any.fromFunction1(value))
+      inline def setSetPoster(value: /* src */ String => Unit): Self = StObject.set(x, "setPoster", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPosterUndefined: Self = StObject.set(x, "setPoster", js.undefined)
+      inline def setSetPosterUndefined: Self = StObject.set(x, "setPoster", js.undefined)
       
-      @scala.inline
-      def setShowOverlay(value: () => Unit): Self = StObject.set(x, "showOverlay", js.Any.fromFunction0(value))
+      inline def setShowOverlay(value: () => Unit): Self = StObject.set(x, "showOverlay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowOverlayUndefined: Self = StObject.set(x, "showOverlay", js.undefined)
+      inline def setShowOverlayUndefined: Self = StObject.set(x, "showOverlay", js.undefined)
     }
   }
   
@@ -101,20 +86,16 @@ object overlayTypesMod {
   }
   object IOverlayViewCallbacks {
     
-    @scala.inline
-    def apply(onPlayClick: EventListenerOrEventListenerObject): IOverlayViewCallbacks = {
+    inline def apply(onPlayClick: EventListenerOrEventListenerObject): IOverlayViewCallbacks = {
       val __obj = js.Dynamic.literal(onPlayClick = onPlayClick.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOverlayViewCallbacks]
     }
     
-    @scala.inline
-    implicit class IOverlayViewCallbacksMutableBuilder[Self <: IOverlayViewCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: IOverlayViewCallbacks](x: Self) {
       
-      @scala.inline
-      def setOnPlayClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onPlayClick", value.asInstanceOf[js.Any])
+      inline def setOnPlayClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onPlayClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnPlayClickFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onPlayClick", js.Any.fromFunction1(value))
+      inline def setOnPlayClickFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onPlayClick", js.Any.fromFunction1(value))
     }
   }
   
@@ -126,20 +107,16 @@ object overlayTypesMod {
   }
   object IOverlayViewConfig {
     
-    @scala.inline
-    def apply(callbacks: IOverlayViewCallbacks, theme: IThemeService): IOverlayViewConfig = {
+    inline def apply(callbacks: IOverlayViewCallbacks, theme: IThemeService): IOverlayViewConfig = {
       val __obj = js.Dynamic.literal(callbacks = callbacks.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOverlayViewConfig]
     }
     
-    @scala.inline
-    implicit class IOverlayViewConfigMutableBuilder[Self <: IOverlayViewConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IOverlayViewConfig](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: IOverlayViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: IOverlayViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,29 +134,22 @@ object overlayTypesMod {
   }
   object IOverlayViewStyles {
     
-    @scala.inline
-    def apply(active: String, hidden: String, overlay: String, poster: String, transparency: String): IOverlayViewStyles = {
+    inline def apply(active: String, hidden: String, overlay: String, poster: String, transparency: String): IOverlayViewStyles = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], overlay = overlay.asInstanceOf[js.Any], poster = poster.asInstanceOf[js.Any], transparency = transparency.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOverlayViewStyles]
     }
     
-    @scala.inline
-    implicit class IOverlayViewStylesMutableBuilder[Self <: IOverlayViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IOverlayViewStyles](x: Self) {
       
-      @scala.inline
-      def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlay(value: String): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: String): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
+      inline def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransparency(value: String): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
+      inline def setTransparency(value: String): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
     }
   }
 }

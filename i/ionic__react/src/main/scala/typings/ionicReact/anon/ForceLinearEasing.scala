@@ -12,22 +12,17 @@ trait ForceLinearEasing extends StObject {
 }
 object ForceLinearEasing {
   
-  @scala.inline
-  def apply(forceLinearEasing: Boolean): ForceLinearEasing = {
+  inline def apply(forceLinearEasing: Boolean): ForceLinearEasing = {
     val __obj = js.Dynamic.literal(forceLinearEasing = forceLinearEasing.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForceLinearEasing]
   }
   
-  @scala.inline
-  implicit class ForceLinearEasingMutableBuilder[Self <: ForceLinearEasing] (val x: Self) extends AnyVal {
+  extension [Self <: ForceLinearEasing](x: Self) {
     
-    @scala.inline
-    def setForceLinearEasing(value: Boolean): Self = StObject.set(x, "forceLinearEasing", value.asInstanceOf[js.Any])
+    inline def setForceLinearEasing(value: Boolean): Self = StObject.set(x, "forceLinearEasing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

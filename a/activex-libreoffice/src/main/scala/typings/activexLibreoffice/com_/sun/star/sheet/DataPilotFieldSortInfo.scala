@@ -21,22 +21,17 @@ trait DataPilotFieldSortInfo extends StObject {
 }
 object DataPilotFieldSortInfo {
   
-  @scala.inline
-  def apply(Field: String, IsAscending: Boolean, Mode: Double): DataPilotFieldSortInfo = {
+  inline def apply(Field: String, IsAscending: Boolean, Mode: Double): DataPilotFieldSortInfo = {
     val __obj = js.Dynamic.literal(Field = Field.asInstanceOf[js.Any], IsAscending = IsAscending.asInstanceOf[js.Any], Mode = Mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPilotFieldSortInfo]
   }
   
-  @scala.inline
-  implicit class DataPilotFieldSortInfoMutableBuilder[Self <: DataPilotFieldSortInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DataPilotFieldSortInfo](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAscending(value: Boolean): Self = StObject.set(x, "IsAscending", value.asInstanceOf[js.Any])
+    inline def setIsAscending(value: Boolean): Self = StObject.set(x, "IsAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
   }
 }

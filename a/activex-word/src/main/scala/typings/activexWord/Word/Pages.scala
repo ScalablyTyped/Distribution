@@ -16,13 +16,12 @@ trait Pages extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.Pages_typekey")
+  /* private */ @JSName("Word.Pages_typekey")
   var WordDotPages_typekey: Pages
 }
 object Pages {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Creator: Double,
@@ -35,25 +34,18 @@ object Pages {
     __obj.asInstanceOf[Pages]
   }
   
-  @scala.inline
-  implicit class PagesMutableBuilder[Self <: Pages] (val x: Self) extends AnyVal {
+  extension [Self <: Pages](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => Page): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => Page): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotPages_typekey(value: Pages): Self = StObject.set(x, "Word.Pages_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotPages_typekey(value: Pages): Self = StObject.set(x, "Word.Pages_typekey", value.asInstanceOf[js.Any])
   }
 }

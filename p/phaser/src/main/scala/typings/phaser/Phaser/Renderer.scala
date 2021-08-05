@@ -359,8 +359,7 @@ object Renderer {
       }
       object BitmapMaskPipeline {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           active: Boolean,
           addAttribute: (String, integer, integer, Boolean, integer) => BitmapMaskPipeline,
           attributes: js.Object,
@@ -417,23 +416,17 @@ object Renderer {
           __obj.asInstanceOf[BitmapMaskPipeline]
         }
         
-        @scala.inline
-        implicit class BitmapMaskPipelineMutableBuilder[Self <: BitmapMaskPipeline] (val x: Self) extends AnyVal {
+        extension [Self <: BitmapMaskPipeline](x: Self) {
           
-          @scala.inline
-          def setBeginMask(value: (GameObject, GameObject, Camera) => Unit): Self = StObject.set(x, "beginMask", js.Any.fromFunction3(value))
+          inline def setBeginMask(value: (GameObject, GameObject, Camera) => Unit): Self = StObject.set(x, "beginMask", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setEndMask(value: GameObject => Unit): Self = StObject.set(x, "endMask", js.Any.fromFunction1(value))
+          inline def setEndMask(value: GameObject => Unit): Self = StObject.set(x, "endMask", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setMaxQuads(value: Double): Self = StObject.set(x, "maxQuads", value.asInstanceOf[js.Any])
+          inline def setMaxQuads(value: Double): Self = StObject.set(x, "maxQuads", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResolutionDirty(value: Boolean): Self = StObject.set(x, "resolutionDirty", value.asInstanceOf[js.Any])
+          inline def setResolutionDirty(value: Boolean): Self = StObject.set(x, "resolutionDirty", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVertexViewF32(value: Float32Array): Self = StObject.set(x, "vertexViewF32", value.asInstanceOf[js.Any])
+          inline def setVertexViewF32(value: Float32Array): Self = StObject.set(x, "vertexViewF32", value.asInstanceOf[js.Any])
         }
       }
       
@@ -690,8 +683,7 @@ object Renderer {
       }
       object ModelViewProjection {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           modelIdentity: () => Unit,
           modelMatrix: Float32Array,
           modelMatrixDirty: Boolean,
@@ -722,83 +714,57 @@ object Renderer {
           __obj.asInstanceOf[ModelViewProjection]
         }
         
-        @scala.inline
-        implicit class ModelViewProjectionMutableBuilder[Self <: ModelViewProjection] (val x: Self) extends AnyVal {
+        extension [Self <: ModelViewProjection](x: Self) {
           
-          @scala.inline
-          def setModelIdentity(value: () => Unit): Self = StObject.set(x, "modelIdentity", js.Any.fromFunction0(value))
+          inline def setModelIdentity(value: () => Unit): Self = StObject.set(x, "modelIdentity", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setModelMatrix(value: Float32Array): Self = StObject.set(x, "modelMatrix", value.asInstanceOf[js.Any])
+          inline def setModelMatrix(value: Float32Array): Self = StObject.set(x, "modelMatrix", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setModelMatrixDirty(value: Boolean): Self = StObject.set(x, "modelMatrixDirty", value.asInstanceOf[js.Any])
+          inline def setModelMatrixDirty(value: Boolean): Self = StObject.set(x, "modelMatrixDirty", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setModelRotateX(value: Double => ModelViewProjection): Self = StObject.set(x, "modelRotateX", js.Any.fromFunction1(value))
+          inline def setModelRotateX(value: Double => ModelViewProjection): Self = StObject.set(x, "modelRotateX", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setModelRotateY(value: Double => ModelViewProjection): Self = StObject.set(x, "modelRotateY", js.Any.fromFunction1(value))
+          inline def setModelRotateY(value: Double => ModelViewProjection): Self = StObject.set(x, "modelRotateY", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setModelRotateZ(value: Double => ModelViewProjection): Self = StObject.set(x, "modelRotateZ", js.Any.fromFunction1(value))
+          inline def setModelRotateZ(value: Double => ModelViewProjection): Self = StObject.set(x, "modelRotateZ", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setModelScale(value: (Double, Double, Double) => ModelViewProjection): Self = StObject.set(x, "modelScale", js.Any.fromFunction3(value))
+          inline def setModelScale(value: (Double, Double, Double) => ModelViewProjection): Self = StObject.set(x, "modelScale", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setModelTranslate(value: (Double, Double, Double) => ModelViewProjection): Self = StObject.set(x, "modelTranslate", js.Any.fromFunction3(value))
+          inline def setModelTranslate(value: (Double, Double, Double) => ModelViewProjection): Self = StObject.set(x, "modelTranslate", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setMvpInit(value: () => Unit): Self = StObject.set(x, "mvpInit", js.Any.fromFunction0(value))
+          inline def setMvpInit(value: () => Unit): Self = StObject.set(x, "mvpInit", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setMvpUpdate(value: () => Unit): Self = StObject.set(x, "mvpUpdate", js.Any.fromFunction0(value))
+          inline def setMvpUpdate(value: () => Unit): Self = StObject.set(x, "mvpUpdate", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setProjIdentity(value: () => ModelViewProjection): Self = StObject.set(x, "projIdentity", js.Any.fromFunction0(value))
+          inline def setProjIdentity(value: () => ModelViewProjection): Self = StObject.set(x, "projIdentity", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setProjOrtho(value: (Double, Double, Double, Double, Double, Double) => ModelViewProjection): Self = StObject.set(x, "projOrtho", js.Any.fromFunction6(value))
+          inline def setProjOrtho(value: (Double, Double, Double, Double, Double, Double) => ModelViewProjection): Self = StObject.set(x, "projOrtho", js.Any.fromFunction6(value))
           
-          @scala.inline
-          def setProjPersp(value: (Double, Double, Double, Double) => ModelViewProjection): Self = StObject.set(x, "projPersp", js.Any.fromFunction4(value))
+          inline def setProjPersp(value: (Double, Double, Double, Double) => ModelViewProjection): Self = StObject.set(x, "projPersp", js.Any.fromFunction4(value))
           
-          @scala.inline
-          def setProjectionMatrix(value: Float32Array): Self = StObject.set(x, "projectionMatrix", value.asInstanceOf[js.Any])
+          inline def setProjectionMatrix(value: Float32Array): Self = StObject.set(x, "projectionMatrix", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setProjectionMatrixDirty(value: Boolean): Self = StObject.set(x, "projectionMatrixDirty", value.asInstanceOf[js.Any])
+          inline def setProjectionMatrixDirty(value: Boolean): Self = StObject.set(x, "projectionMatrixDirty", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setViewIdentity(value: () => ModelViewProjection): Self = StObject.set(x, "viewIdentity", js.Any.fromFunction0(value))
+          inline def setViewIdentity(value: () => ModelViewProjection): Self = StObject.set(x, "viewIdentity", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setViewLoad(value: Float32Array => ModelViewProjection): Self = StObject.set(x, "viewLoad", js.Any.fromFunction1(value))
+          inline def setViewLoad(value: Float32Array => ModelViewProjection): Self = StObject.set(x, "viewLoad", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setViewLoad2D(value: Float32Array => ModelViewProjection): Self = StObject.set(x, "viewLoad2D", js.Any.fromFunction1(value))
+          inline def setViewLoad2D(value: Float32Array => ModelViewProjection): Self = StObject.set(x, "viewLoad2D", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setViewMatrix(value: Float32Array): Self = StObject.set(x, "viewMatrix", value.asInstanceOf[js.Any])
+          inline def setViewMatrix(value: Float32Array): Self = StObject.set(x, "viewMatrix", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setViewMatrixDirty(value: Boolean): Self = StObject.set(x, "viewMatrixDirty", value.asInstanceOf[js.Any])
+          inline def setViewMatrixDirty(value: Boolean): Self = StObject.set(x, "viewMatrixDirty", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setViewRotateX(value: Double => ModelViewProjection): Self = StObject.set(x, "viewRotateX", js.Any.fromFunction1(value))
+          inline def setViewRotateX(value: Double => ModelViewProjection): Self = StObject.set(x, "viewRotateX", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setViewRotateY(value: Double => ModelViewProjection): Self = StObject.set(x, "viewRotateY", js.Any.fromFunction1(value))
+          inline def setViewRotateY(value: Double => ModelViewProjection): Self = StObject.set(x, "viewRotateY", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setViewRotateZ(value: Double => ModelViewProjection): Self = StObject.set(x, "viewRotateZ", js.Any.fromFunction1(value))
+          inline def setViewRotateZ(value: Double => ModelViewProjection): Self = StObject.set(x, "viewRotateZ", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setViewScale(value: (Double, Double, Double) => ModelViewProjection): Self = StObject.set(x, "viewScale", js.Any.fromFunction3(value))
+          inline def setViewScale(value: (Double, Double, Double) => ModelViewProjection): Self = StObject.set(x, "viewScale", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setViewTranslate(value: (Double, Double, Double) => ModelViewProjection): Self = StObject.set(x, "viewTranslate", js.Any.fromFunction3(value))
+          inline def setViewTranslate(value: (Double, Double, Double) => ModelViewProjection): Self = StObject.set(x, "viewTranslate", js.Any.fromFunction3(value))
         }
       }
       
@@ -1866,8 +1832,7 @@ object Renderer {
     }
     object WebGLPipeline {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         active: Boolean,
         addAttribute: (String, integer, integer, Boolean, integer) => WebGLPipeline,
         attributes: js.Object,
@@ -1919,146 +1884,99 @@ object Renderer {
         __obj.asInstanceOf[WebGLPipeline]
       }
       
-      @scala.inline
-      implicit class WebGLPipelineMutableBuilder[Self <: WebGLPipeline] (val x: Self) extends AnyVal {
+      extension [Self <: WebGLPipeline](x: Self) {
         
-        @scala.inline
-        def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+        inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddAttribute(value: (String, integer, integer, Boolean, integer) => WebGLPipeline): Self = StObject.set(x, "addAttribute", js.Any.fromFunction5(value))
+        inline def setAddAttribute(value: (String, integer, integer, Boolean, integer) => WebGLPipeline): Self = StObject.set(x, "addAttribute", js.Any.fromFunction5(value))
         
-        @scala.inline
-        def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+        inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBind(value: () => WebGLPipeline): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
+        inline def setBind(value: () => WebGLPipeline): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setBoot(value: () => Unit): Self = StObject.set(x, "boot", js.Any.fromFunction0(value))
+        inline def setBoot(value: () => Unit): Self = StObject.set(x, "boot", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setBytes(value: Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+        inline def setBytes(value: Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDestroy(value: () => WebGLPipeline): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+        inline def setDestroy(value: () => WebGLPipeline): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setFlush(value: () => WebGLPipeline): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+        inline def setFlush(value: () => WebGLPipeline): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setFlushLocked(value: Boolean): Self = StObject.set(x, "flushLocked", value.asInstanceOf[js.Any])
+        inline def setFlushLocked(value: Boolean): Self = StObject.set(x, "flushLocked", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGame(value: Game): Self = StObject.set(x, "game", value.asInstanceOf[js.Any])
+        inline def setGame(value: Game): Self = StObject.set(x, "game", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGl(value: WebGLRenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
+        inline def setGl(value: WebGLRenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnBind(value: () => WebGLPipeline): Self = StObject.set(x, "onBind", js.Any.fromFunction0(value))
+        inline def setOnBind(value: () => WebGLPipeline): Self = StObject.set(x, "onBind", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnPostRender(value: () => WebGLPipeline): Self = StObject.set(x, "onPostRender", js.Any.fromFunction0(value))
+        inline def setOnPostRender(value: () => WebGLPipeline): Self = StObject.set(x, "onPostRender", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnPreRender(value: () => WebGLPipeline): Self = StObject.set(x, "onPreRender", js.Any.fromFunction0(value))
+        inline def setOnPreRender(value: () => WebGLPipeline): Self = StObject.set(x, "onPreRender", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnRender(value: (Scene, Camera) => WebGLPipeline): Self = StObject.set(x, "onRender", js.Any.fromFunction2(value))
+        inline def setOnRender(value: (Scene, Camera) => WebGLPipeline): Self = StObject.set(x, "onRender", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setProgram(value: WebGLProgram): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+        inline def setProgram(value: WebGLProgram): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderer(value: WebGLRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: WebGLRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResize(value: (Double, Double, Double) => WebGLPipeline): Self = StObject.set(x, "resize", js.Any.fromFunction3(value))
+        inline def setResize(value: (Double, Double, Double) => WebGLPipeline): Self = StObject.set(x, "resize", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+        inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSetFloat1(value: (String, Double) => WebGLPipeline): Self = StObject.set(x, "setFloat1", js.Any.fromFunction2(value))
+        inline def setSetFloat1(value: (String, Double) => WebGLPipeline): Self = StObject.set(x, "setFloat1", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setSetFloat1v(value: (String, Float32Array) => WebGLPipeline): Self = StObject.set(x, "setFloat1v", js.Any.fromFunction2(value))
+        inline def setSetFloat1v(value: (String, Float32Array) => WebGLPipeline): Self = StObject.set(x, "setFloat1v", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setSetFloat2(value: (String, Double, Double) => WebGLPipeline): Self = StObject.set(x, "setFloat2", js.Any.fromFunction3(value))
+        inline def setSetFloat2(value: (String, Double, Double) => WebGLPipeline): Self = StObject.set(x, "setFloat2", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setSetFloat2v(value: (String, Float32Array) => WebGLPipeline): Self = StObject.set(x, "setFloat2v", js.Any.fromFunction2(value))
+        inline def setSetFloat2v(value: (String, Float32Array) => WebGLPipeline): Self = StObject.set(x, "setFloat2v", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setSetFloat3(value: (String, Double, Double, Double) => WebGLPipeline): Self = StObject.set(x, "setFloat3", js.Any.fromFunction4(value))
+        inline def setSetFloat3(value: (String, Double, Double, Double) => WebGLPipeline): Self = StObject.set(x, "setFloat3", js.Any.fromFunction4(value))
         
-        @scala.inline
-        def setSetFloat3v(value: (String, Float32Array) => WebGLPipeline): Self = StObject.set(x, "setFloat3v", js.Any.fromFunction2(value))
+        inline def setSetFloat3v(value: (String, Float32Array) => WebGLPipeline): Self = StObject.set(x, "setFloat3v", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setSetFloat4(value: (String, Double, Double, Double, Double) => WebGLPipeline): Self = StObject.set(x, "setFloat4", js.Any.fromFunction5(value))
+        inline def setSetFloat4(value: (String, Double, Double, Double, Double) => WebGLPipeline): Self = StObject.set(x, "setFloat4", js.Any.fromFunction5(value))
         
-        @scala.inline
-        def setSetFloat4v(value: (String, Float32Array) => WebGLPipeline): Self = StObject.set(x, "setFloat4v", js.Any.fromFunction2(value))
+        inline def setSetFloat4v(value: (String, Float32Array) => WebGLPipeline): Self = StObject.set(x, "setFloat4v", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setSetInt1(value: (String, integer) => WebGLPipeline): Self = StObject.set(x, "setInt1", js.Any.fromFunction2(value))
+        inline def setSetInt1(value: (String, integer) => WebGLPipeline): Self = StObject.set(x, "setInt1", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setSetInt2(value: (String, integer, integer) => WebGLPipeline): Self = StObject.set(x, "setInt2", js.Any.fromFunction3(value))
+        inline def setSetInt2(value: (String, integer, integer) => WebGLPipeline): Self = StObject.set(x, "setInt2", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setSetInt3(value: (String, integer, integer, integer) => WebGLPipeline): Self = StObject.set(x, "setInt3", js.Any.fromFunction4(value))
+        inline def setSetInt3(value: (String, integer, integer, integer) => WebGLPipeline): Self = StObject.set(x, "setInt3", js.Any.fromFunction4(value))
         
-        @scala.inline
-        def setSetInt4(value: (String, integer, integer, integer, integer) => WebGLPipeline): Self = StObject.set(x, "setInt4", js.Any.fromFunction5(value))
+        inline def setSetInt4(value: (String, integer, integer, integer, integer) => WebGLPipeline): Self = StObject.set(x, "setInt4", js.Any.fromFunction5(value))
         
-        @scala.inline
-        def setSetMatrix2(value: (String, Boolean, Float32Array) => WebGLPipeline): Self = StObject.set(x, "setMatrix2", js.Any.fromFunction3(value))
+        inline def setSetMatrix2(value: (String, Boolean, Float32Array) => WebGLPipeline): Self = StObject.set(x, "setMatrix2", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setSetMatrix3(value: (String, Boolean, Float32Array) => WebGLPipeline): Self = StObject.set(x, "setMatrix3", js.Any.fromFunction3(value))
+        inline def setSetMatrix3(value: (String, Boolean, Float32Array) => WebGLPipeline): Self = StObject.set(x, "setMatrix3", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setSetMatrix4(value: (String, Boolean, Float32Array) => WebGLPipeline): Self = StObject.set(x, "setMatrix4", js.Any.fromFunction3(value))
+        inline def setSetMatrix4(value: (String, Boolean, Float32Array) => WebGLPipeline): Self = StObject.set(x, "setMatrix4", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setShouldFlush(value: () => Boolean): Self = StObject.set(x, "shouldFlush", js.Any.fromFunction0(value))
+        inline def setShouldFlush(value: () => Boolean): Self = StObject.set(x, "shouldFlush", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setTopology(value: integer): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
+        inline def setTopology(value: integer): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVertexBuffer(value: WebGLBuffer): Self = StObject.set(x, "vertexBuffer", value.asInstanceOf[js.Any])
+        inline def setVertexBuffer(value: WebGLBuffer): Self = StObject.set(x, "vertexBuffer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVertexCapacity(value: integer): Self = StObject.set(x, "vertexCapacity", value.asInstanceOf[js.Any])
+        inline def setVertexCapacity(value: integer): Self = StObject.set(x, "vertexCapacity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVertexComponentCount(value: integer): Self = StObject.set(x, "vertexComponentCount", value.asInstanceOf[js.Any])
+        inline def setVertexComponentCount(value: integer): Self = StObject.set(x, "vertexComponentCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVertexCount(value: Double): Self = StObject.set(x, "vertexCount", value.asInstanceOf[js.Any])
+        inline def setVertexCount(value: Double): Self = StObject.set(x, "vertexCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVertexData(value: ArrayBuffer): Self = StObject.set(x, "vertexData", value.asInstanceOf[js.Any])
+        inline def setVertexData(value: ArrayBuffer): Self = StObject.set(x, "vertexData", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVertexSize(value: integer): Self = StObject.set(x, "vertexSize", value.asInstanceOf[js.Any])
+        inline def setVertexSize(value: integer): Self = StObject.set(x, "vertexSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setView(value: HTMLCanvasElement): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+        inline def setView(value: HTMLCanvasElement): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       }
     }
     

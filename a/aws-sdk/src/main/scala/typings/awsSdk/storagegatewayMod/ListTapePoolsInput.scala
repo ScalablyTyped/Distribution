@@ -23,34 +23,25 @@ trait ListTapePoolsInput extends StObject {
 }
 object ListTapePoolsInput {
   
-  @scala.inline
-  def apply(): ListTapePoolsInput = {
+  inline def apply(): ListTapePoolsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTapePoolsInput]
   }
   
-  @scala.inline
-  implicit class ListTapePoolsInputMutableBuilder[Self <: ListTapePoolsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTapePoolsInput](x: Self) {
     
-    @scala.inline
-    def setLimit(value: PositiveIntObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PositiveIntObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setPoolARNs(value: PoolARNs): Self = StObject.set(x, "PoolARNs", value.asInstanceOf[js.Any])
+    inline def setPoolARNs(value: PoolARNs): Self = StObject.set(x, "PoolARNs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolARNsUndefined: Self = StObject.set(x, "PoolARNs", js.undefined)
+    inline def setPoolARNsUndefined: Self = StObject.set(x, "PoolARNs", js.undefined)
     
-    @scala.inline
-    def setPoolARNsVarargs(value: PoolARN*): Self = StObject.set(x, "PoolARNs", js.Array(value :_*))
+    inline def setPoolARNsVarargs(value: PoolARN*): Self = StObject.set(x, "PoolARNs", js.Array(value :_*))
   }
 }

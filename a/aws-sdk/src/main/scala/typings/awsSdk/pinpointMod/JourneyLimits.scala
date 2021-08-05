@@ -23,31 +23,23 @@ trait JourneyLimits extends StObject {
 }
 object JourneyLimits {
   
-  @scala.inline
-  def apply(): JourneyLimits = {
+  inline def apply(): JourneyLimits = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JourneyLimits]
   }
   
-  @scala.inline
-  implicit class JourneyLimitsMutableBuilder[Self <: JourneyLimits] (val x: Self) extends AnyVal {
+  extension [Self <: JourneyLimits](x: Self) {
     
-    @scala.inline
-    def setDailyCap(value: integer): Self = StObject.set(x, "DailyCap", value.asInstanceOf[js.Any])
+    inline def setDailyCap(value: integer): Self = StObject.set(x, "DailyCap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDailyCapUndefined: Self = StObject.set(x, "DailyCap", js.undefined)
+    inline def setDailyCapUndefined: Self = StObject.set(x, "DailyCap", js.undefined)
     
-    @scala.inline
-    def setEndpointReentryCap(value: integer): Self = StObject.set(x, "EndpointReentryCap", value.asInstanceOf[js.Any])
+    inline def setEndpointReentryCap(value: integer): Self = StObject.set(x, "EndpointReentryCap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointReentryCapUndefined: Self = StObject.set(x, "EndpointReentryCap", js.undefined)
+    inline def setEndpointReentryCapUndefined: Self = StObject.set(x, "EndpointReentryCap", js.undefined)
     
-    @scala.inline
-    def setMessagesPerSecond(value: integer): Self = StObject.set(x, "MessagesPerSecond", value.asInstanceOf[js.Any])
+    inline def setMessagesPerSecond(value: integer): Self = StObject.set(x, "MessagesPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesPerSecondUndefined: Self = StObject.set(x, "MessagesPerSecond", js.undefined)
+    inline def setMessagesPerSecondUndefined: Self = StObject.set(x, "MessagesPerSecond", js.undefined)
   }
 }

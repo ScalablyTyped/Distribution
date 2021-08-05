@@ -13,22 +13,17 @@ trait BatchDeletePhoneNumberResponse extends StObject {
 }
 object BatchDeletePhoneNumberResponse {
   
-  @scala.inline
-  def apply(): BatchDeletePhoneNumberResponse = {
+  inline def apply(): BatchDeletePhoneNumberResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDeletePhoneNumberResponse]
   }
   
-  @scala.inline
-  implicit class BatchDeletePhoneNumberResponseMutableBuilder[Self <: BatchDeletePhoneNumberResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeletePhoneNumberResponse](x: Self) {
     
-    @scala.inline
-    def setPhoneNumberErrors(value: PhoneNumberErrorList): Self = StObject.set(x, "PhoneNumberErrors", value.asInstanceOf[js.Any])
+    inline def setPhoneNumberErrors(value: PhoneNumberErrorList): Self = StObject.set(x, "PhoneNumberErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberErrorsUndefined: Self = StObject.set(x, "PhoneNumberErrors", js.undefined)
+    inline def setPhoneNumberErrorsUndefined: Self = StObject.set(x, "PhoneNumberErrors", js.undefined)
     
-    @scala.inline
-    def setPhoneNumberErrorsVarargs(value: PhoneNumberError*): Self = StObject.set(x, "PhoneNumberErrors", js.Array(value :_*))
+    inline def setPhoneNumberErrorsVarargs(value: PhoneNumberError*): Self = StObject.set(x, "PhoneNumberErrors", js.Array(value :_*))
   }
 }

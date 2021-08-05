@@ -18,16 +18,13 @@ trait ASPxClientMenuItemEventArgs
 }
 object ASPxClientMenuItemEventArgs {
   
-  @scala.inline
-  def apply(item: ASPxClientMenuItem): ASPxClientMenuItemEventArgs = {
+  inline def apply(item: ASPxClientMenuItem): ASPxClientMenuItemEventArgs = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientMenuItemEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientMenuItemEventArgsMutableBuilder[Self <: ASPxClientMenuItemEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientMenuItemEventArgs](x: Self) {
     
-    @scala.inline
-    def setItem(value: ASPxClientMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: ASPxClientMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

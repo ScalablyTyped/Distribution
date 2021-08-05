@@ -11,19 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object DeclareFunction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any
   ): DeclareFunction = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeclareFunction]
   }
   
-  @scala.inline
-  implicit class DeclareFunctionMutableBuilder[Self <: DeclareFunction] (val x: Self) extends AnyVal {
+  extension [Self <: DeclareFunction](x: Self) {
     
-    @scala.inline
-    def setId(
+    inline def setId(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any
     ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

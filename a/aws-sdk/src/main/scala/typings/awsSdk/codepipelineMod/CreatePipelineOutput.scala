@@ -18,28 +18,21 @@ trait CreatePipelineOutput extends StObject {
 }
 object CreatePipelineOutput {
   
-  @scala.inline
-  def apply(): CreatePipelineOutput = {
+  inline def apply(): CreatePipelineOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePipelineOutput]
   }
   
-  @scala.inline
-  implicit class CreatePipelineOutputMutableBuilder[Self <: CreatePipelineOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePipelineOutput](x: Self) {
     
-    @scala.inline
-    def setPipeline(value: PipelineDeclaration): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
+    inline def setPipeline(value: PipelineDeclaration): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)
+    inline def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

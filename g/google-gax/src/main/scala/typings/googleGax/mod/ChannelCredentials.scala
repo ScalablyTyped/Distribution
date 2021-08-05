@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-gax", "ChannelCredentials")
 @js.native
-abstract class ChannelCredentials protected ()
+/* protected */ abstract class ChannelCredentials ()
   extends typings.grpcGrpcJs.mod.ChannelCredentials {
-  protected def this(callCredentials: CallCredentials) = this()
+  /* protected */ def this(callCredentials: CallCredentials) = this()
 }
 /* static members */
 object ChannelCredentials {
@@ -23,8 +23,7 @@ object ChannelCredentials {
   /**
     * Return a new ChannelCredentials instance with no credentials.
     */
-  @scala.inline
-  def createInsecure(): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials]
+  inline def createInsecure(): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials]
   
   /**
     * Return a new ChannelCredentials instance with a given set of credentials.
@@ -34,8 +33,7 @@ object ChannelCredentials {
     * @param privateKey The client certificate private key, if available.
     * @param certChain The client certificate key chain, if available.
     */
-  @scala.inline
-  def createSsl(
+  inline def createSsl(
     rootCerts: js.UndefOr[Buffer | Null],
     privateKey: js.UndefOr[Buffer | Null],
     certChain: js.UndefOr[Buffer | Null],

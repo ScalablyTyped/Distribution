@@ -13,19 +13,15 @@ trait DeleteProjectVersionResponse extends StObject {
 }
 object DeleteProjectVersionResponse {
   
-  @scala.inline
-  def apply(): DeleteProjectVersionResponse = {
+  inline def apply(): DeleteProjectVersionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteProjectVersionResponse]
   }
   
-  @scala.inline
-  implicit class DeleteProjectVersionResponseMutableBuilder[Self <: DeleteProjectVersionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteProjectVersionResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: ProjectVersionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ProjectVersionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

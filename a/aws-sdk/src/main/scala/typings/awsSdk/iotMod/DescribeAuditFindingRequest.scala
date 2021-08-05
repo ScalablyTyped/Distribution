@@ -13,16 +13,13 @@ trait DescribeAuditFindingRequest extends StObject {
 }
 object DescribeAuditFindingRequest {
   
-  @scala.inline
-  def apply(findingId: FindingId): DescribeAuditFindingRequest = {
+  inline def apply(findingId: FindingId): DescribeAuditFindingRequest = {
     val __obj = js.Dynamic.literal(findingId = findingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAuditFindingRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAuditFindingRequestMutableBuilder[Self <: DescribeAuditFindingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAuditFindingRequest](x: Self) {
     
-    @scala.inline
-    def setFindingId(value: FindingId): Self = StObject.set(x, "findingId", value.asInstanceOf[js.Any])
+    inline def setFindingId(value: FindingId): Self = StObject.set(x, "findingId", value.asInstanceOf[js.Any])
   }
 }

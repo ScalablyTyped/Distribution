@@ -12,19 +12,15 @@ trait WindowCloseEvent
 }
 object WindowCloseEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Window): WindowCloseEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Window): WindowCloseEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowCloseEvent]
   }
   
-  @scala.inline
-  implicit class WindowCloseEventMutableBuilder[Self <: WindowCloseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WindowCloseEvent](x: Self) {
     
-    @scala.inline
-    def setUserTriggered(value: Boolean): Self = StObject.set(x, "userTriggered", value.asInstanceOf[js.Any])
+    inline def setUserTriggered(value: Boolean): Self = StObject.set(x, "userTriggered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserTriggeredUndefined: Self = StObject.set(x, "userTriggered", js.undefined)
+    inline def setUserTriggeredUndefined: Self = StObject.set(x, "userTriggered", js.undefined)
   }
 }

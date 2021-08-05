@@ -22,8 +22,7 @@ trait NotDeployed extends StObject {
 }
 object NotDeployed {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: scala.Double,
     failed: scala.Double,
     inProgress: scala.Double,
@@ -36,28 +35,20 @@ object NotDeployed {
     __obj.asInstanceOf[NotDeployed]
   }
   
-  @scala.inline
-  implicit class NotDeployedMutableBuilder[Self <: NotDeployed] (val x: Self) extends AnyVal {
+  extension [Self <: NotDeployed](x: Self) {
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
+    inline def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotDeployed(value: scala.Double): Self = StObject.set(x, "notDeployed", value.asInstanceOf[js.Any])
+    inline def setNotDeployed(value: scala.Double): Self = StObject.set(x, "notDeployed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartiallySucceeded(value: scala.Double): Self = StObject.set(x, "partiallySucceeded", value.asInstanceOf[js.Any])
+    inline def setPartiallySucceeded(value: scala.Double): Self = StObject.set(x, "partiallySucceeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+    inline def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
   }
 }

@@ -14,20 +14,16 @@ trait Auth0LockFlashMessageOptions extends StObject {
 }
 object Auth0LockFlashMessageOptions {
   
-  @scala.inline
-  def apply(text: String, `type`: success | error): Auth0LockFlashMessageOptions = {
+  inline def apply(text: String, `type`: success | error): Auth0LockFlashMessageOptions = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0LockFlashMessageOptions]
   }
   
-  @scala.inline
-  implicit class Auth0LockFlashMessageOptionsMutableBuilder[Self <: Auth0LockFlashMessageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: Auth0LockFlashMessageOptions](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: success | error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: success | error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -30,23 +30,18 @@ object typesDescribeLimitsOutputMod {
   }
   object DescribeLimitsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, OpenShardCount: Double, ShardLimit: Double): DescribeLimitsOutput = {
+    inline def apply($metadata: ResponseMetadata, OpenShardCount: Double, ShardLimit: Double): DescribeLimitsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], OpenShardCount = OpenShardCount.asInstanceOf[js.Any], ShardLimit = ShardLimit.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeLimitsOutput]
     }
     
-    @scala.inline
-    implicit class DescribeLimitsOutputMutableBuilder[Self <: DescribeLimitsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeLimitsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenShardCount(value: Double): Self = StObject.set(x, "OpenShardCount", value.asInstanceOf[js.Any])
+      inline def setOpenShardCount(value: Double): Self = StObject.set(x, "OpenShardCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardLimit(value: Double): Self = StObject.set(x, "ShardLimit", value.asInstanceOf[js.Any])
+      inline def setShardLimit(value: Double): Self = StObject.set(x, "ShardLimit", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -27,8 +27,7 @@ trait BaseReplicationReplicaInfo extends StObject {
 }
 object BaseReplicationReplicaInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connected_slaves: String,
     master_host: String,
     master_last_io_seconds_ago: String,
@@ -42,34 +41,24 @@ object BaseReplicationReplicaInfo {
     __obj.asInstanceOf[BaseReplicationReplicaInfo]
   }
   
-  @scala.inline
-  implicit class BaseReplicationReplicaInfoMutableBuilder[Self <: BaseReplicationReplicaInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BaseReplicationReplicaInfo](x: Self) {
     
-    @scala.inline
-    def setConnected_slaves(value: String): Self = StObject.set(x, "connected_slaves", value.asInstanceOf[js.Any])
+    inline def setConnected_slaves(value: String): Self = StObject.set(x, "connected_slaves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_host(value: String): Self = StObject.set(x, "master_host", value.asInstanceOf[js.Any])
+    inline def setMaster_host(value: String): Self = StObject.set(x, "master_host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_last_io_seconds_ago(value: String): Self = StObject.set(x, "master_last_io_seconds_ago", value.asInstanceOf[js.Any])
+    inline def setMaster_last_io_seconds_ago(value: String): Self = StObject.set(x, "master_last_io_seconds_ago", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_port(value: String): Self = StObject.set(x, "master_port", value.asInstanceOf[js.Any])
+    inline def setMaster_port(value: String): Self = StObject.set(x, "master_port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin_slaves_good_slaves(value: String): Self = StObject.set(x, "min_slaves_good_slaves", value.asInstanceOf[js.Any])
+    inline def setMin_slaves_good_slaves(value: String): Self = StObject.set(x, "min_slaves_good_slaves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: slave): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: slave): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlave_priority(value: String): Self = StObject.set(x, "slave_priority", value.asInstanceOf[js.Any])
+    inline def setSlave_priority(value: String): Self = StObject.set(x, "slave_priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlave_read_only(value: Flag): Self = StObject.set(x, "slave_read_only", value.asInstanceOf[js.Any])
+    inline def setSlave_read_only(value: Flag): Self = StObject.set(x, "slave_read_only", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlave_repl_offset(value: String): Self = StObject.set(x, "slave_repl_offset", value.asInstanceOf[js.Any])
+    inline def setSlave_repl_offset(value: String): Self = StObject.set(x, "slave_repl_offset", value.asInstanceOf[js.Any])
   }
 }

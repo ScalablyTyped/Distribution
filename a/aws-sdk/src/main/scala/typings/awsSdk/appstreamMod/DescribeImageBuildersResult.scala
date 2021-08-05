@@ -18,28 +18,21 @@ trait DescribeImageBuildersResult extends StObject {
 }
 object DescribeImageBuildersResult {
   
-  @scala.inline
-  def apply(): DescribeImageBuildersResult = {
+  inline def apply(): DescribeImageBuildersResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeImageBuildersResult]
   }
   
-  @scala.inline
-  implicit class DescribeImageBuildersResultMutableBuilder[Self <: DescribeImageBuildersResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeImageBuildersResult](x: Self) {
     
-    @scala.inline
-    def setImageBuilders(value: ImageBuilderList): Self = StObject.set(x, "ImageBuilders", value.asInstanceOf[js.Any])
+    inline def setImageBuilders(value: ImageBuilderList): Self = StObject.set(x, "ImageBuilders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageBuildersUndefined: Self = StObject.set(x, "ImageBuilders", js.undefined)
+    inline def setImageBuildersUndefined: Self = StObject.set(x, "ImageBuilders", js.undefined)
     
-    @scala.inline
-    def setImageBuildersVarargs(value: ImageBuilder*): Self = StObject.set(x, "ImageBuilders", js.Array(value :_*))
+    inline def setImageBuildersVarargs(value: ImageBuilder*): Self = StObject.set(x, "ImageBuilders", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlTabPosition extends StObject
 object XlTabPosition {
   
-  @scala.inline
-  def xlTabPositionFirst: `0` = 0.asInstanceOf[`0`]
+  inline def xlTabPositionFirst: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlTabPositionLast: `1` = 1.asInstanceOf[`1`]
+  inline def xlTabPositionLast: `1` = 1.asInstanceOf[`1`]
 }

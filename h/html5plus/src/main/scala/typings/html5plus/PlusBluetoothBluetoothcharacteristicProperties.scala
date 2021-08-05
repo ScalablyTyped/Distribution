@@ -42,37 +42,27 @@ trait PlusBluetoothBluetoothcharacteristicProperties extends StObject {
 }
 object PlusBluetoothBluetoothcharacteristicProperties {
   
-  @scala.inline
-  def apply(): PlusBluetoothBluetoothcharacteristicProperties = {
+  inline def apply(): PlusBluetoothBluetoothcharacteristicProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusBluetoothBluetoothcharacteristicProperties]
   }
   
-  @scala.inline
-  implicit class PlusBluetoothBluetoothcharacteristicPropertiesMutableBuilder[Self <: PlusBluetoothBluetoothcharacteristicProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PlusBluetoothBluetoothcharacteristicProperties](x: Self) {
     
-    @scala.inline
-    def setIndicate(value: Boolean): Self = StObject.set(x, "indicate", value.asInstanceOf[js.Any])
+    inline def setIndicate(value: Boolean): Self = StObject.set(x, "indicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicateUndefined: Self = StObject.set(x, "indicate", js.undefined)
+    inline def setIndicateUndefined: Self = StObject.set(x, "indicate", js.undefined)
     
-    @scala.inline
-    def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
+    inline def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
+    inline def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
     
-    @scala.inline
-    def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
-    @scala.inline
-    def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+    inline def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+    inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }
 }

@@ -20,19 +20,15 @@ trait IopenProductSpecificView
 }
 object IopenProductSpecificView {
   
-  @scala.inline
-  def apply(productId: String, viewType: `0` | `1` | `2`): IopenProductSpecificView = {
+  inline def apply(productId: String, viewType: `0` | `1` | `2`): IopenProductSpecificView = {
     val __obj = js.Dynamic.literal(productId = productId.asInstanceOf[js.Any], viewType = viewType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IopenProductSpecificView]
   }
   
-  @scala.inline
-  implicit class IopenProductSpecificViewMutableBuilder[Self <: IopenProductSpecificView] (val x: Self) extends AnyVal {
+  extension [Self <: IopenProductSpecificView](x: Self) {
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewType(value: `0` | `1` | `2`): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
+    inline def setViewType(value: `0` | `1` | `2`): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
   }
 }

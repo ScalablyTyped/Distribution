@@ -28,37 +28,27 @@ trait SubmitFeedbackRequest extends StObject {
 }
 object SubmitFeedbackRequest {
   
-  @scala.inline
-  def apply(IndexId: IndexId, QueryId: QueryId): SubmitFeedbackRequest = {
+  inline def apply(IndexId: IndexId, QueryId: QueryId): SubmitFeedbackRequest = {
     val __obj = js.Dynamic.literal(IndexId = IndexId.asInstanceOf[js.Any], QueryId = QueryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmitFeedbackRequest]
   }
   
-  @scala.inline
-  implicit class SubmitFeedbackRequestMutableBuilder[Self <: SubmitFeedbackRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SubmitFeedbackRequest](x: Self) {
     
-    @scala.inline
-    def setClickFeedbackItems(value: ClickFeedbackList): Self = StObject.set(x, "ClickFeedbackItems", value.asInstanceOf[js.Any])
+    inline def setClickFeedbackItems(value: ClickFeedbackList): Self = StObject.set(x, "ClickFeedbackItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickFeedbackItemsUndefined: Self = StObject.set(x, "ClickFeedbackItems", js.undefined)
+    inline def setClickFeedbackItemsUndefined: Self = StObject.set(x, "ClickFeedbackItems", js.undefined)
     
-    @scala.inline
-    def setClickFeedbackItemsVarargs(value: ClickFeedback*): Self = StObject.set(x, "ClickFeedbackItems", js.Array(value :_*))
+    inline def setClickFeedbackItemsVarargs(value: ClickFeedback*): Self = StObject.set(x, "ClickFeedbackItems", js.Array(value :_*))
     
-    @scala.inline
-    def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
+    inline def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryId(value: QueryId): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
+    inline def setQueryId(value: QueryId): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevanceFeedbackItems(value: RelevanceFeedbackList): Self = StObject.set(x, "RelevanceFeedbackItems", value.asInstanceOf[js.Any])
+    inline def setRelevanceFeedbackItems(value: RelevanceFeedbackList): Self = StObject.set(x, "RelevanceFeedbackItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevanceFeedbackItemsUndefined: Self = StObject.set(x, "RelevanceFeedbackItems", js.undefined)
+    inline def setRelevanceFeedbackItemsUndefined: Self = StObject.set(x, "RelevanceFeedbackItems", js.undefined)
     
-    @scala.inline
-    def setRelevanceFeedbackItemsVarargs(value: RelevanceFeedback*): Self = StObject.set(x, "RelevanceFeedbackItems", js.Array(value :_*))
+    inline def setRelevanceFeedbackItemsVarargs(value: RelevanceFeedback*): Self = StObject.set(x, "RelevanceFeedbackItems", js.Array(value :_*))
   }
 }

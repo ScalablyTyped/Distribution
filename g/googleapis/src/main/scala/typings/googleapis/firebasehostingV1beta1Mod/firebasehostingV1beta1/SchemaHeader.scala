@@ -25,25 +25,19 @@ trait SchemaHeader extends StObject {
 }
 object SchemaHeader {
   
-  @scala.inline
-  def apply(): SchemaHeader = {
+  inline def apply(): SchemaHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHeader]
   }
   
-  @scala.inline
-  implicit class SchemaHeaderMutableBuilder[Self <: SchemaHeader] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHeader](x: Self) {
     
-    @scala.inline
-    def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
+    inline def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
+    inline def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
   }
 }

@@ -52,6 +52,6 @@ trait System extends StObject {
   
   val VerticalResolution: Double = js.native
   
-  @JSName("Word.System_typekey")
+  /* private */ @JSName("Word.System_typekey")
   var WordDotSystem_typekey: System = js.native
 }

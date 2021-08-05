@@ -24,46 +24,33 @@ trait QueryEvidence extends StObject {
 }
 object QueryEvidence {
   
-  @scala.inline
-  def apply(): QueryEvidence = {
+  inline def apply(): QueryEvidence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryEvidence]
   }
   
-  @scala.inline
-  implicit class QueryEvidenceMutableBuilder[Self <: QueryEvidence] (val x: Self) extends AnyVal {
+  extension [Self <: QueryEvidence](x: Self) {
     
-    @scala.inline
-    def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
+    inline def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument_idUndefined: Self = StObject.set(x, "document_id", js.undefined)
+    inline def setDocument_idUndefined: Self = StObject.set(x, "document_id", js.undefined)
     
-    @scala.inline
-    def setEnd_offset(value: Double): Self = StObject.set(x, "end_offset", value.asInstanceOf[js.Any])
+    inline def setEnd_offset(value: Double): Self = StObject.set(x, "end_offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_offsetUndefined: Self = StObject.set(x, "end_offset", js.undefined)
+    inline def setEnd_offsetUndefined: Self = StObject.set(x, "end_offset", js.undefined)
     
-    @scala.inline
-    def setEntities(value: js.Array[QueryEvidenceEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[QueryEvidenceEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setEntitiesVarargs(value: QueryEvidenceEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: QueryEvidenceEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setStart_offset(value: Double): Self = StObject.set(x, "start_offset", value.asInstanceOf[js.Any])
+    inline def setStart_offset(value: Double): Self = StObject.set(x, "start_offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_offsetUndefined: Self = StObject.set(x, "start_offset", js.undefined)
+    inline def setStart_offsetUndefined: Self = StObject.set(x, "start_offset", js.undefined)
   }
 }

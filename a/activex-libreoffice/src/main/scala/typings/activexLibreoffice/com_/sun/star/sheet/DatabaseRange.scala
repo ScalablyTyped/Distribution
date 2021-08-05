@@ -100,8 +100,7 @@ trait DatabaseRange
 }
 object DatabaseRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoFilter: Boolean,
     ContainsHeader: Boolean,
     DataArea: CellRangeAddress,
@@ -148,43 +147,30 @@ object DatabaseRange {
     __obj.asInstanceOf[DatabaseRange]
   }
   
-  @scala.inline
-  implicit class DatabaseRangeMutableBuilder[Self <: DatabaseRange] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseRange](x: Self) {
     
-    @scala.inline
-    def setAutoFilter(value: Boolean): Self = StObject.set(x, "AutoFilter", value.asInstanceOf[js.Any])
+    inline def setAutoFilter(value: Boolean): Self = StObject.set(x, "AutoFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
+    inline def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterCriteriaSource(value: CellRangeAddress): Self = StObject.set(x, "FilterCriteriaSource", value.asInstanceOf[js.Any])
+    inline def setFilterCriteriaSource(value: CellRangeAddress): Self = StObject.set(x, "FilterCriteriaSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromSelection(value: Boolean): Self = StObject.set(x, "FromSelection", value.asInstanceOf[js.Any])
+    inline def setFromSelection(value: Boolean): Self = StObject.set(x, "FromSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepFormats(value: Boolean): Self = StObject.set(x, "KeepFormats", value.asInstanceOf[js.Any])
+    inline def setKeepFormats(value: Boolean): Self = StObject.set(x, "KeepFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveCells(value: Boolean): Self = StObject.set(x, "MoveCells", value.asInstanceOf[js.Any])
+    inline def setMoveCells(value: Boolean): Self = StObject.set(x, "MoveCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefreshPeriod(value: Double): Self = StObject.set(x, "RefreshPeriod", value.asInstanceOf[js.Any])
+    inline def setRefreshPeriod(value: Double): Self = StObject.set(x, "RefreshPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripData(value: Boolean): Self = StObject.set(x, "StripData", value.asInstanceOf[js.Any])
+    inline def setStripData(value: Boolean): Self = StObject.set(x, "StripData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenIndex(value: Double): Self = StObject.set(x, "TokenIndex", value.asInstanceOf[js.Any])
+    inline def setTokenIndex(value: Double): Self = StObject.set(x, "TokenIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalsRow(value: Boolean): Self = StObject.set(x, "TotalsRow", value.asInstanceOf[js.Any])
+    inline def setTotalsRow(value: Boolean): Self = StObject.set(x, "TotalsRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseFilterCriteriaSource(value: Boolean): Self = StObject.set(x, "UseFilterCriteriaSource", value.asInstanceOf[js.Any])
+    inline def setUseFilterCriteriaSource(value: Boolean): Self = StObject.set(x, "UseFilterCriteriaSource", value.asInstanceOf[js.Any])
   }
 }

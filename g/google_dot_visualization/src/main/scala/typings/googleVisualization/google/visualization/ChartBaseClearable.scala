@@ -13,8 +13,7 @@ trait ChartBaseClearable
 }
 object ChartBaseClearable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearChart: () => Unit,
     getContainer: () => Element,
     getSelection: () => js.Array[VisualizationSelectionArray],
@@ -24,10 +23,8 @@ object ChartBaseClearable {
     __obj.asInstanceOf[ChartBaseClearable]
   }
   
-  @scala.inline
-  implicit class ChartBaseClearableMutableBuilder[Self <: ChartBaseClearable] (val x: Self) extends AnyVal {
+  extension [Self <: ChartBaseClearable](x: Self) {
     
-    @scala.inline
-    def setClearChart(value: () => Unit): Self = StObject.set(x, "clearChart", js.Any.fromFunction0(value))
+    inline def setClearChart(value: () => Unit): Self = StObject.set(x, "clearChart", js.Any.fromFunction0(value))
   }
 }

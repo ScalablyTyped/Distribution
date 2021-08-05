@@ -16,8 +16,7 @@ trait TypeofBufferGeometryUtils extends StObject {
 }
 object TypeofBufferGeometryUtils {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     computeTangents: BufferGeometry => Null,
     mergeBufferAttributes: js.Array[BufferAttribute] => BufferAttribute,
     mergeBufferGeometries: js.Array[BufferGeometry] => BufferGeometry
@@ -26,16 +25,12 @@ object TypeofBufferGeometryUtils {
     __obj.asInstanceOf[TypeofBufferGeometryUtils]
   }
   
-  @scala.inline
-  implicit class TypeofBufferGeometryUtilsMutableBuilder[Self <: TypeofBufferGeometryUtils] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofBufferGeometryUtils](x: Self) {
     
-    @scala.inline
-    def setComputeTangents(value: BufferGeometry => Null): Self = StObject.set(x, "computeTangents", js.Any.fromFunction1(value))
+    inline def setComputeTangents(value: BufferGeometry => Null): Self = StObject.set(x, "computeTangents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMergeBufferAttributes(value: js.Array[BufferAttribute] => BufferAttribute): Self = StObject.set(x, "mergeBufferAttributes", js.Any.fromFunction1(value))
+    inline def setMergeBufferAttributes(value: js.Array[BufferAttribute] => BufferAttribute): Self = StObject.set(x, "mergeBufferAttributes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMergeBufferGeometries(value: js.Array[BufferGeometry] => BufferGeometry): Self = StObject.set(x, "mergeBufferGeometries", js.Any.fromFunction1(value))
+    inline def setMergeBufferGeometries(value: js.Array[BufferGeometry] => BufferGeometry): Self = StObject.set(x, "mergeBufferGeometries", js.Any.fromFunction1(value))
   }
 }

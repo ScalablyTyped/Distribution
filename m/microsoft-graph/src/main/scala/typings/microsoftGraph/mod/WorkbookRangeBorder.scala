@@ -31,49 +31,35 @@ trait WorkbookRangeBorder
 }
 object WorkbookRangeBorder {
   
-  @scala.inline
-  def apply(): WorkbookRangeBorder = {
+  inline def apply(): WorkbookRangeBorder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookRangeBorder]
   }
   
-  @scala.inline
-  implicit class WorkbookRangeBorderMutableBuilder[Self <: WorkbookRangeBorder] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookRangeBorder](x: Self) {
     
-    @scala.inline
-    def setColor(value: NullableOption[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: NullableOption[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorNull: Self = StObject.set(x, "color", null)
+    inline def setColorNull: Self = StObject.set(x, "color", null)
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setSideIndex(value: NullableOption[String]): Self = StObject.set(x, "sideIndex", value.asInstanceOf[js.Any])
+    inline def setSideIndex(value: NullableOption[String]): Self = StObject.set(x, "sideIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideIndexNull: Self = StObject.set(x, "sideIndex", null)
+    inline def setSideIndexNull: Self = StObject.set(x, "sideIndex", null)
     
-    @scala.inline
-    def setSideIndexUndefined: Self = StObject.set(x, "sideIndex", js.undefined)
+    inline def setSideIndexUndefined: Self = StObject.set(x, "sideIndex", js.undefined)
     
-    @scala.inline
-    def setStyle(value: NullableOption[String]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: NullableOption[String]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNull: Self = StObject.set(x, "style", null)
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setWeight(value: NullableOption[String]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: NullableOption[String]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightNull: Self = StObject.set(x, "weight", null)
+    inline def setWeightNull: Self = StObject.set(x, "weight", null)
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

@@ -17,8 +17,7 @@ object mod {
   class default[DateType] ()
     extends typings.rcPicker.pickerMod.default[DateType]
   
-  @scala.inline
-  def PickerPanel[DateType](props: PickerPanelProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PickerPanel")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PickerPanel[DateType](props: PickerPanelProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PickerPanel")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("rc-picker", "RangePicker")
   @js.native

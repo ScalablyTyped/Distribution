@@ -10,16 +10,13 @@ trait ActivityDeleteThreadSubscriptionEndpoint extends StObject {
 }
 object ActivityDeleteThreadSubscriptionEndpoint {
   
-  @scala.inline
-  def apply(thread_id: Double): ActivityDeleteThreadSubscriptionEndpoint = {
+  inline def apply(thread_id: Double): ActivityDeleteThreadSubscriptionEndpoint = {
     val __obj = js.Dynamic.literal(thread_id = thread_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityDeleteThreadSubscriptionEndpoint]
   }
   
-  @scala.inline
-  implicit class ActivityDeleteThreadSubscriptionEndpointMutableBuilder[Self <: ActivityDeleteThreadSubscriptionEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityDeleteThreadSubscriptionEndpoint](x: Self) {
     
-    @scala.inline
-    def setThread_id(value: Double): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
+    inline def setThread_id(value: Double): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
   }
 }

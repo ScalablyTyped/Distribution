@@ -23,19 +23,15 @@ trait MVCxClientSchedulerToolTipDisplayingEventArgs
 }
 object MVCxClientSchedulerToolTipDisplayingEventArgs {
   
-  @scala.inline
-  def apply(data: ASPxClientSchedulerToolTipData, toolTip: MVCxClientSchedulerTemplateToolTip): MVCxClientSchedulerToolTipDisplayingEventArgs = {
+  inline def apply(data: ASPxClientSchedulerToolTipData, toolTip: MVCxClientSchedulerTemplateToolTip): MVCxClientSchedulerToolTipDisplayingEventArgs = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], toolTip = toolTip.asInstanceOf[js.Any])
     __obj.asInstanceOf[MVCxClientSchedulerToolTipDisplayingEventArgs]
   }
   
-  @scala.inline
-  implicit class MVCxClientSchedulerToolTipDisplayingEventArgsMutableBuilder[Self <: MVCxClientSchedulerToolTipDisplayingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MVCxClientSchedulerToolTipDisplayingEventArgs](x: Self) {
     
-    @scala.inline
-    def setData(value: ASPxClientSchedulerToolTipData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ASPxClientSchedulerToolTipData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolTip(value: MVCxClientSchedulerTemplateToolTip): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
+    inline def setToolTip(value: MVCxClientSchedulerTemplateToolTip): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
   }
 }

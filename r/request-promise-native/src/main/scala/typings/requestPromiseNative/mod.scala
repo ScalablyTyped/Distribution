@@ -28,14 +28,12 @@ object mod extends Shortcut {
   trait Options extends StObject
   object Options {
     
-    @scala.inline
-    def OptionsWithUri(uri: String | Url): typings.requestPromiseNative.mod.OptionsWithUri = {
+    inline def OptionsWithUri(uri: String | Url): typings.requestPromiseNative.mod.OptionsWithUri = {
       val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.requestPromiseNative.mod.OptionsWithUri]
     }
     
-    @scala.inline
-    def OptionsWithUrl(url: String | Url): typings.requestPromiseNative.mod.OptionsWithUrl = {
+    inline def OptionsWithUrl(url: String | Url): typings.requestPromiseNative.mod.OptionsWithUrl = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.requestPromiseNative.mod.OptionsWithUrl]
     }
@@ -48,8 +46,7 @@ object mod extends Shortcut {
        with Options
   object OptionsWithUri {
     
-    @scala.inline
-    def apply(uri: String | Url): OptionsWithUri = {
+    inline def apply(uri: String | Url): OptionsWithUri = {
       val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsWithUri]
     }
@@ -62,8 +59,7 @@ object mod extends Shortcut {
        with Options
   object OptionsWithUrl {
     
-    @scala.inline
-    def apply(url: String | Url): OptionsWithUrl = {
+    inline def apply(url: String | Url): OptionsWithUrl = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsWithUrl]
     }
@@ -118,40 +114,30 @@ object mod extends Shortcut {
   }
   object RequestPromiseOptions {
     
-    @scala.inline
-    def apply(): RequestPromiseOptions = {
+    inline def apply(): RequestPromiseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestPromiseOptions]
     }
     
-    @scala.inline
-    implicit class RequestPromiseOptionsMutableBuilder[Self <: RequestPromiseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestPromiseOptions](x: Self) {
       
-      @scala.inline
-      def setResolveWithFullResponse(value: Boolean): Self = StObject.set(x, "resolveWithFullResponse", value.asInstanceOf[js.Any])
+      inline def setResolveWithFullResponse(value: Boolean): Self = StObject.set(x, "resolveWithFullResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveWithFullResponseUndefined: Self = StObject.set(x, "resolveWithFullResponse", js.undefined)
+      inline def setResolveWithFullResponseUndefined: Self = StObject.set(x, "resolveWithFullResponse", js.undefined)
       
-      @scala.inline
-      def setSimple(value: Boolean): Self = StObject.set(x, "simple", value.asInstanceOf[js.Any])
+      inline def setSimple(value: Boolean): Self = StObject.set(x, "simple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimpleUndefined: Self = StObject.set(x, "simple", js.undefined)
+      inline def setSimpleUndefined: Self = StObject.set(x, "simple", js.undefined)
       
-      @scala.inline
-      def setTransform(
+      inline def setTransform(
         value: (/* body */ js.Any, /* response */ Response, /* resolveWithFullResponse */ js.UndefOr[Boolean]) => js.Any
       ): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTransform2xxOnly(value: Boolean): Self = StObject.set(x, "transform2xxOnly", value.asInstanceOf[js.Any])
+      inline def setTransform2xxOnly(value: Boolean): Self = StObject.set(x, "transform2xxOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform2xxOnlyUndefined: Self = StObject.set(x, "transform2xxOnly", js.undefined)
+      inline def setTransform2xxOnlyUndefined: Self = StObject.set(x, "transform2xxOnly", js.undefined)
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   

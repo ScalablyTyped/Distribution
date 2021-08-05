@@ -12,22 +12,17 @@ trait Args extends StObject {
 }
 object Args {
   
-  @scala.inline
-  def apply(args: js.Array[String], command: String): Args = {
+  inline def apply(args: js.Array[String], command: String): Args = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
     __obj.asInstanceOf[Args]
   }
   
-  @scala.inline
-  implicit class ArgsMutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
+  extension [Self <: Args](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
   }
 }

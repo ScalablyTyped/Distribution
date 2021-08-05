@@ -10,19 +10,15 @@ trait CopyDBClusterParameterGroupResult extends StObject {
 }
 object CopyDBClusterParameterGroupResult {
   
-  @scala.inline
-  def apply(): CopyDBClusterParameterGroupResult = {
+  inline def apply(): CopyDBClusterParameterGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyDBClusterParameterGroupResult]
   }
   
-  @scala.inline
-  implicit class CopyDBClusterParameterGroupResultMutableBuilder[Self <: CopyDBClusterParameterGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: CopyDBClusterParameterGroupResult](x: Self) {
     
-    @scala.inline
-    def setDBClusterParameterGroup(value: DBClusterParameterGroup): Self = StObject.set(x, "DBClusterParameterGroup", value.asInstanceOf[js.Any])
+    inline def setDBClusterParameterGroup(value: DBClusterParameterGroup): Self = StObject.set(x, "DBClusterParameterGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterParameterGroupUndefined: Self = StObject.set(x, "DBClusterParameterGroup", js.undefined)
+    inline def setDBClusterParameterGroupUndefined: Self = StObject.set(x, "DBClusterParameterGroup", js.undefined)
   }
 }

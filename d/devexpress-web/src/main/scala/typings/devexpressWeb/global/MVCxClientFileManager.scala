@@ -121,6 +121,5 @@ object MVCxClientFileManager {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  @scala.inline
-  def Cast(obj: js.Any): typings.devexpressWeb.MVCxClientFileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.MVCxClientFileManager]
+  inline def Cast(obj: js.Any): typings.devexpressWeb.MVCxClientFileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.MVCxClientFileManager]
 }

@@ -44,17 +44,14 @@ object rTreeSplitStrategiesMod {
   }
   object IRTreeSplitStrategy {
     
-    @scala.inline
-    def apply(split: (js.Array[RTreeNode[js.Any]], NodePair[js.Any]) => Unit): IRTreeSplitStrategy = {
+    inline def apply(split: (js.Array[RTreeNode[js.Any]], NodePair[js.Any]) => Unit): IRTreeSplitStrategy = {
       val __obj = js.Dynamic.literal(split = js.Any.fromFunction2(split))
       __obj.asInstanceOf[IRTreeSplitStrategy]
     }
     
-    @scala.inline
-    implicit class IRTreeSplitStrategyMutableBuilder[Self <: IRTreeSplitStrategy] (val x: Self) extends AnyVal {
+    extension [Self <: IRTreeSplitStrategy](x: Self) {
       
-      @scala.inline
-      def setSplit(value: (js.Array[RTreeNode[js.Any]], NodePair[js.Any]) => Unit): Self = StObject.set(x, "split", js.Any.fromFunction2(value))
+      inline def setSplit(value: (js.Array[RTreeNode[js.Any]], NodePair[js.Any]) => Unit): Self = StObject.set(x, "split", js.Any.fromFunction2(value))
     }
   }
   

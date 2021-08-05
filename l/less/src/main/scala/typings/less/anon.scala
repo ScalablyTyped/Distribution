@@ -12,17 +12,14 @@ object anon {
   }
   object PluginManager {
     
-    @scala.inline
-    def apply(pluginManager: typings.less.Less.PluginManager): PluginManager = {
+    inline def apply(pluginManager: typings.less.Less.PluginManager): PluginManager = {
       val __obj = js.Dynamic.literal(pluginManager = pluginManager.asInstanceOf[js.Any])
       __obj.asInstanceOf[PluginManager]
     }
     
-    @scala.inline
-    implicit class PluginManagerMutableBuilder[Self <: PluginManager] (val x: Self) extends AnyVal {
+    extension [Self <: PluginManager](x: Self) {
       
-      @scala.inline
-      def setPluginManager(value: typings.less.Less.PluginManager): Self = StObject.set(x, "pluginManager", value.asInstanceOf[js.Any])
+      inline def setPluginManager(value: typings.less.Less.PluginManager): Self = StObject.set(x, "pluginManager", value.asInstanceOf[js.Any])
     }
   }
 }

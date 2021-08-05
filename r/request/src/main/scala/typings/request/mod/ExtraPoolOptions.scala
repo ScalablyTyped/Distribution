@@ -12,19 +12,15 @@ trait ExtraPoolOptions
 }
 object ExtraPoolOptions {
   
-  @scala.inline
-  def apply(): ExtraPoolOptions = {
+  inline def apply(): ExtraPoolOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExtraPoolOptions]
   }
   
-  @scala.inline
-  implicit class ExtraPoolOptionsMutableBuilder[Self <: ExtraPoolOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExtraPoolOptions](x: Self) {
     
-    @scala.inline
-    def setMaxSockets(value: Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
+    inline def setMaxSockets(value: Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSocketsUndefined: Self = StObject.set(x, "maxSockets", js.undefined)
+    inline def setMaxSocketsUndefined: Self = StObject.set(x, "maxSockets", js.undefined)
   }
 }

@@ -33,49 +33,35 @@ trait Termination extends StObject {
 }
 object Termination {
   
-  @scala.inline
-  def apply(): Termination = {
+  inline def apply(): Termination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Termination]
   }
   
-  @scala.inline
-  implicit class TerminationMutableBuilder[Self <: Termination] (val x: Self) extends AnyVal {
+  extension [Self <: Termination](x: Self) {
     
-    @scala.inline
-    def setCallingRegions(value: CallingRegionList): Self = StObject.set(x, "CallingRegions", value.asInstanceOf[js.Any])
+    inline def setCallingRegions(value: CallingRegionList): Self = StObject.set(x, "CallingRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallingRegionsUndefined: Self = StObject.set(x, "CallingRegions", js.undefined)
+    inline def setCallingRegionsUndefined: Self = StObject.set(x, "CallingRegions", js.undefined)
     
-    @scala.inline
-    def setCallingRegionsVarargs(value: CallingRegion*): Self = StObject.set(x, "CallingRegions", js.Array(value :_*))
+    inline def setCallingRegionsVarargs(value: CallingRegion*): Self = StObject.set(x, "CallingRegions", js.Array(value :_*))
     
-    @scala.inline
-    def setCidrAllowedList(value: StringList): Self = StObject.set(x, "CidrAllowedList", value.asInstanceOf[js.Any])
+    inline def setCidrAllowedList(value: StringList): Self = StObject.set(x, "CidrAllowedList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrAllowedListUndefined: Self = StObject.set(x, "CidrAllowedList", js.undefined)
+    inline def setCidrAllowedListUndefined: Self = StObject.set(x, "CidrAllowedList", js.undefined)
     
-    @scala.inline
-    def setCidrAllowedListVarargs(value: String*): Self = StObject.set(x, "CidrAllowedList", js.Array(value :_*))
+    inline def setCidrAllowedListVarargs(value: String*): Self = StObject.set(x, "CidrAllowedList", js.Array(value :_*))
     
-    @scala.inline
-    def setCpsLimit(value: CpsLimit): Self = StObject.set(x, "CpsLimit", value.asInstanceOf[js.Any])
+    inline def setCpsLimit(value: CpsLimit): Self = StObject.set(x, "CpsLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpsLimitUndefined: Self = StObject.set(x, "CpsLimit", js.undefined)
+    inline def setCpsLimitUndefined: Self = StObject.set(x, "CpsLimit", js.undefined)
     
-    @scala.inline
-    def setDefaultPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "DefaultPhoneNumber", value.asInstanceOf[js.Any])
+    inline def setDefaultPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "DefaultPhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPhoneNumberUndefined: Self = StObject.set(x, "DefaultPhoneNumber", js.undefined)
+    inline def setDefaultPhoneNumberUndefined: Self = StObject.set(x, "DefaultPhoneNumber", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
   }
 }

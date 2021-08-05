@@ -29,31 +29,23 @@ trait SchemaTurnBasedMatchRematch extends StObject {
 }
 object SchemaTurnBasedMatchRematch {
   
-  @scala.inline
-  def apply(): SchemaTurnBasedMatchRematch = {
+  inline def apply(): SchemaTurnBasedMatchRematch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTurnBasedMatchRematch]
   }
   
-  @scala.inline
-  implicit class SchemaTurnBasedMatchRematchMutableBuilder[Self <: SchemaTurnBasedMatchRematch] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTurnBasedMatchRematch](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPreviousMatch(value: SchemaTurnBasedMatch): Self = StObject.set(x, "previousMatch", value.asInstanceOf[js.Any])
+    inline def setPreviousMatch(value: SchemaTurnBasedMatch): Self = StObject.set(x, "previousMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousMatchUndefined: Self = StObject.set(x, "previousMatch", js.undefined)
+    inline def setPreviousMatchUndefined: Self = StObject.set(x, "previousMatch", js.undefined)
     
-    @scala.inline
-    def setRematch(value: SchemaTurnBasedMatch): Self = StObject.set(x, "rematch", value.asInstanceOf[js.Any])
+    inline def setRematch(value: SchemaTurnBasedMatch): Self = StObject.set(x, "rematch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRematchUndefined: Self = StObject.set(x, "rematch", js.undefined)
+    inline def setRematchUndefined: Self = StObject.set(x, "rematch", js.undefined)
   }
 }

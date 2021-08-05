@@ -12,54 +12,45 @@ object elasticlunrStrings {
   sealed trait AND
     extends StObject
        with Bool
-  @scala.inline
-  def AND: AND = "AND".asInstanceOf[AND]
+  inline def AND: AND = "AND".asInstanceOf[AND]
   
   @js.native
   sealed trait FieldSearchConfig extends StObject
-  @scala.inline
-  def FieldSearchConfig: FieldSearchConfig = "FieldSearchConfig".asInstanceOf[FieldSearchConfig]
+  inline def FieldSearchConfig: FieldSearchConfig = "FieldSearchConfig".asInstanceOf[FieldSearchConfig]
   
   @js.native
   sealed trait Index extends StObject
-  @scala.inline
-  def Index: Index = "Index".asInstanceOf[Index]
+  inline def Index: Index = "Index".asInstanceOf[Index]
   
   @js.native
   sealed trait OR
     extends StObject
        with Bool
-  @scala.inline
-  def OR: OR = "OR".asInstanceOf[OR]
+  inline def OR: OR = "OR".asInstanceOf[OR]
   
   @js.native
   sealed trait SerialisedDocumentStore extends StObject
-  @scala.inline
-  def SerialisedDocumentStore: SerialisedDocumentStore = "SerialisedDocumentStore".asInstanceOf[SerialisedDocumentStore]
+  inline def SerialisedDocumentStore: SerialisedDocumentStore = "SerialisedDocumentStore".asInstanceOf[SerialisedDocumentStore]
   
   @js.native
   sealed trait SerialisedIndexData extends StObject
-  @scala.inline
-  def SerialisedIndexData: SerialisedIndexData = "SerialisedIndexData".asInstanceOf[SerialisedIndexData]
+  inline def SerialisedIndexData: SerialisedIndexData = "SerialisedIndexData".asInstanceOf[SerialisedIndexData]
   
   @js.native
   sealed trait add
     extends StObject
        with EventType
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
+  inline def add: add = "add".asInstanceOf[add]
   
   @js.native
   sealed trait remove
     extends StObject
        with EventType
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
   sealed trait update
     extends StObject
        with EventType
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
+  inline def update: update = "update".asInstanceOf[update]
 }

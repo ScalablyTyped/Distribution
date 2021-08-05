@@ -33,8 +33,7 @@ trait IArchiveOldVersionsJob extends StObject {
 }
 object IArchiveOldVersionsJob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AtLeastNDaysOlder: Double,
     AtLeastNVersionsOlder: Double,
     CheckedInBefore: ITimestamp,
@@ -52,43 +51,30 @@ object IArchiveOldVersionsJob {
     __obj.asInstanceOf[IArchiveOldVersionsJob]
   }
   
-  @scala.inline
-  implicit class IArchiveOldVersionsJobMutableBuilder[Self <: IArchiveOldVersionsJob] (val x: Self) extends AnyVal {
+  extension [Self <: IArchiveOldVersionsJob](x: Self) {
     
-    @scala.inline
-    def setAtLeastNDaysOlder(value: Double): Self = StObject.set(x, "AtLeastNDaysOlder", value.asInstanceOf[js.Any])
+    inline def setAtLeastNDaysOlder(value: Double): Self = StObject.set(x, "AtLeastNDaysOlder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtLeastNVersionsOlder(value: Double): Self = StObject.set(x, "AtLeastNVersionsOlder", value.asInstanceOf[js.Any])
+    inline def setAtLeastNVersionsOlder(value: Double): Self = StObject.set(x, "AtLeastNVersionsOlder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedInBefore(value: ITimestamp): Self = StObject.set(x, "CheckedInBefore", value.asInstanceOf[js.Any])
+    inline def setCheckedInBefore(value: ITimestamp): Self = StObject.set(x, "CheckedInBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IArchiveOldVersionsJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IArchiveOldVersionsJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFlags(value: MFExportContentFlag): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: MFExportContentFlag): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpersonation(value: IImpersonation): Self = StObject.set(x, "Impersonation", value.asInstanceOf[js.Any])
+    inline def setImpersonation(value: IImpersonation): Self = StObject.set(x, "Impersonation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkedForArchiving(value: Boolean): Self = StObject.set(x, "MarkedForArchiving", value.asInstanceOf[js.Any])
+    inline def setMarkedForArchiving(value: Boolean): Self = StObject.set(x, "MarkedForArchiving", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoVersionTag(value: Boolean): Self = StObject.set(x, "NoVersionTag", value.asInstanceOf[js.Any])
+    inline def setNoVersionTag(value: Boolean): Self = StObject.set(x, "NoVersionTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetLocation(value: String): Self = StObject.set(x, "TargetLocation", value.asInstanceOf[js.Any])
+    inline def setTargetLocation(value: String): Self = StObject.set(x, "TargetLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseAtLeastNDaysOlder(value: Boolean): Self = StObject.set(x, "UseAtLeastNDaysOlder", value.asInstanceOf[js.Any])
+    inline def setUseAtLeastNDaysOlder(value: Boolean): Self = StObject.set(x, "UseAtLeastNDaysOlder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseAtLeastNVersionsOlder(value: Boolean): Self = StObject.set(x, "UseAtLeastNVersionsOlder", value.asInstanceOf[js.Any])
+    inline def setUseAtLeastNVersionsOlder(value: Boolean): Self = StObject.set(x, "UseAtLeastNVersionsOlder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseCheckedInBefore(value: Boolean): Self = StObject.set(x, "UseCheckedInBefore", value.asInstanceOf[js.Any])
+    inline def setUseCheckedInBefore(value: Boolean): Self = StObject.set(x, "UseCheckedInBefore", value.asInstanceOf[js.Any])
   }
 }

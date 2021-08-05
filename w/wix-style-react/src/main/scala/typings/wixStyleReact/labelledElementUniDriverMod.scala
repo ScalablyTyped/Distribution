@@ -21,8 +21,7 @@ object labelledElementUniDriverMod {
   }
   object LabelledElementUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -35,20 +34,15 @@ object labelledElementUniDriverMod {
       __obj.asInstanceOf[LabelledElementUniDriver]
     }
     
-    @scala.inline
-    implicit class LabelledElementUniDriverMutableBuilder[Self <: LabelledElementUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: LabelledElementUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetChildrenDriver(value: () => BaseUniDriver): Self = StObject.set(x, "getChildrenDriver", js.Any.fromFunction0(value))
+      inline def setGetChildrenDriver(value: () => BaseUniDriver): Self = StObject.set(x, "getChildrenDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabelForAttribute(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelForAttribute", js.Any.fromFunction0(value))
+      inline def setGetLabelForAttribute(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelForAttribute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabelText(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
+      inline def setGetLabelText(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLabelAtTop(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLabelAtTop", js.Any.fromFunction0(value))
+      inline def setIsLabelAtTop(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLabelAtTop", js.Any.fromFunction0(value))
     }
   }
 }

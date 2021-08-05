@@ -25,23 +25,18 @@ trait MaintenanceWindowTaskTaskInvocationParametersAutomationParameters extends 
 }
 object MaintenanceWindowTaskTaskInvocationParametersAutomationParameters {
   
-  @scala.inline
-  def apply(): MaintenanceWindowTaskTaskInvocationParametersAutomationParameters = {
+  inline def apply(): MaintenanceWindowTaskTaskInvocationParametersAutomationParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaintenanceWindowTaskTaskInvocationParametersAutomationParameters]
   }
   
-  @scala.inline
-  implicit class MaintenanceWindowTaskTaskInvocationParametersAutomationParametersMutableBuilder[Self <: MaintenanceWindowTaskTaskInvocationParametersAutomationParameters] (val x: Self) extends AnyVal {
+  extension [Self <: MaintenanceWindowTaskTaskInvocationParametersAutomationParameters](x: Self) {
     
-    @scala.inline
-    def setDocumentVersion(value: Input[String]): Self = StObject.set(x, "documentVersion", value.asInstanceOf[js.Any])
+    inline def setDocumentVersion(value: Input[String]): Self = StObject.set(x, "documentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentVersionUndefined: Self = StObject.set(x, "documentVersion", js.undefined)
+    inline def setDocumentVersionUndefined: Self = StObject.set(x, "documentVersion", js.undefined)
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: Input[
           js.Array[
             Input[MaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter]
@@ -49,10 +44,8 @@ object MaintenanceWindowTaskTaskInvocationParametersAutomationParameters {
         ]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: Input[MaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter]*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: Input[MaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter]*): Self = StObject.set(x, "parameters", js.Array(value :_*))
   }
 }

@@ -8,16 +8,13 @@ object maximMazurokGapiClientToolresultsStrings {
   
   @js.native
   sealed trait Status extends StObject
-  @scala.inline
-  def Status: Status = "Status".asInstanceOf[Status]
+  inline def Status: Status = "Status".asInstanceOf[Status]
   
   @js.native
   sealed trait toolresults extends StObject
-  @scala.inline
-  def toolresults: toolresults = "toolresults".asInstanceOf[toolresults]
+  inline def toolresults: toolresults = "toolresults".asInstanceOf[toolresults]
   
   @js.native
   sealed trait v1beta3 extends StObject
-  @scala.inline
-  def v1beta3: v1beta3 = "v1beta3".asInstanceOf[v1beta3]
+  inline def v1beta3: v1beta3 = "v1beta3".asInstanceOf[v1beta3]
 }

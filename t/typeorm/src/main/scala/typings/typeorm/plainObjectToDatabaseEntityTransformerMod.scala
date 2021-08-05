@@ -14,7 +14,7 @@ object plainObjectToDatabaseEntityTransformerMod {
   class PlainObjectToDatabaseEntityTransformer protected () extends StObject {
     def this(manager: EntityManager) = this()
     
-    var manager: js.Any = js.native
+    /* private */ var manager: js.Any = js.native
     
     def transform(plainObject: ObjectLiteral, metadata: EntityMetadata): js.Promise[js.UndefOr[ObjectLiteral]] = js.native
   }

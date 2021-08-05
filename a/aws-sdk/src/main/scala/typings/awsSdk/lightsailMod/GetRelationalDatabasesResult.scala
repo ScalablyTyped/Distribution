@@ -18,28 +18,21 @@ trait GetRelationalDatabasesResult extends StObject {
 }
 object GetRelationalDatabasesResult {
   
-  @scala.inline
-  def apply(): GetRelationalDatabasesResult = {
+  inline def apply(): GetRelationalDatabasesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRelationalDatabasesResult]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabasesResultMutableBuilder[Self <: GetRelationalDatabasesResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabasesResult](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRelationalDatabases(value: RelationalDatabaseList): Self = StObject.set(x, "relationalDatabases", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabases(value: RelationalDatabaseList): Self = StObject.set(x, "relationalDatabases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationalDatabasesUndefined: Self = StObject.set(x, "relationalDatabases", js.undefined)
+    inline def setRelationalDatabasesUndefined: Self = StObject.set(x, "relationalDatabases", js.undefined)
     
-    @scala.inline
-    def setRelationalDatabasesVarargs(value: RelationalDatabase*): Self = StObject.set(x, "relationalDatabases", js.Array(value :_*))
+    inline def setRelationalDatabasesVarargs(value: RelationalDatabase*): Self = StObject.set(x, "relationalDatabases", js.Array(value :_*))
   }
 }

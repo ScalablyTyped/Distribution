@@ -23,8 +23,7 @@ object addItemDriverMod {
   }
   object AddItemDriver {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       click: () => Unit,
       element: () => T,
       exists: () => Boolean,
@@ -36,23 +35,17 @@ object addItemDriverMod {
       __obj.asInstanceOf[AddItemDriver[T]]
     }
     
-    @scala.inline
-    implicit class AddItemDriverMutableBuilder[Self <: AddItemDriver[?], T] (val x: Self & AddItemDriver[T]) extends AnyVal {
+    extension [Self <: AddItemDriver[?], T](x: Self & AddItemDriver[T]) {
       
-      @scala.inline
-      def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+      inline def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setElement(value: () => T): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+      inline def setElement(value: () => T): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTooltipContent(value: () => String): Self = StObject.set(x, "getTooltipContent", js.Any.fromFunction0(value))
+      inline def setGetTooltipContent(value: () => String): Self = StObject.set(x, "getTooltipContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTextExists(value: () => Boolean): Self = StObject.set(x, "textExists", js.Any.fromFunction0(value))
+      inline def setTextExists(value: () => Boolean): Self = StObject.set(x, "textExists", js.Any.fromFunction0(value))
     }
   }
 }

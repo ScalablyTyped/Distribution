@@ -73,91 +73,63 @@ trait ScheduledInstanceAvailability extends StObject {
 }
 object ScheduledInstanceAvailability {
   
-  @scala.inline
-  def apply(): ScheduledInstanceAvailability = {
+  inline def apply(): ScheduledInstanceAvailability = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScheduledInstanceAvailability]
   }
   
-  @scala.inline
-  implicit class ScheduledInstanceAvailabilityMutableBuilder[Self <: ScheduledInstanceAvailability] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduledInstanceAvailability](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setAvailableInstanceCount(value: Integer): Self = StObject.set(x, "AvailableInstanceCount", value.asInstanceOf[js.Any])
+    inline def setAvailableInstanceCount(value: Integer): Self = StObject.set(x, "AvailableInstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableInstanceCountUndefined: Self = StObject.set(x, "AvailableInstanceCount", js.undefined)
+    inline def setAvailableInstanceCountUndefined: Self = StObject.set(x, "AvailableInstanceCount", js.undefined)
     
-    @scala.inline
-    def setFirstSlotStartTime(value: DateTime): Self = StObject.set(x, "FirstSlotStartTime", value.asInstanceOf[js.Any])
+    inline def setFirstSlotStartTime(value: DateTime): Self = StObject.set(x, "FirstSlotStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstSlotStartTimeUndefined: Self = StObject.set(x, "FirstSlotStartTime", js.undefined)
+    inline def setFirstSlotStartTimeUndefined: Self = StObject.set(x, "FirstSlotStartTime", js.undefined)
     
-    @scala.inline
-    def setHourlyPrice(value: String): Self = StObject.set(x, "HourlyPrice", value.asInstanceOf[js.Any])
+    inline def setHourlyPrice(value: String): Self = StObject.set(x, "HourlyPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourlyPriceUndefined: Self = StObject.set(x, "HourlyPrice", js.undefined)
+    inline def setHourlyPriceUndefined: Self = StObject.set(x, "HourlyPrice", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setMaxTermDurationInDays(value: Integer): Self = StObject.set(x, "MaxTermDurationInDays", value.asInstanceOf[js.Any])
+    inline def setMaxTermDurationInDays(value: Integer): Self = StObject.set(x, "MaxTermDurationInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTermDurationInDaysUndefined: Self = StObject.set(x, "MaxTermDurationInDays", js.undefined)
+    inline def setMaxTermDurationInDaysUndefined: Self = StObject.set(x, "MaxTermDurationInDays", js.undefined)
     
-    @scala.inline
-    def setMinTermDurationInDays(value: Integer): Self = StObject.set(x, "MinTermDurationInDays", value.asInstanceOf[js.Any])
+    inline def setMinTermDurationInDays(value: Integer): Self = StObject.set(x, "MinTermDurationInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinTermDurationInDaysUndefined: Self = StObject.set(x, "MinTermDurationInDays", js.undefined)
+    inline def setMinTermDurationInDaysUndefined: Self = StObject.set(x, "MinTermDurationInDays", js.undefined)
     
-    @scala.inline
-    def setNetworkPlatform(value: String): Self = StObject.set(x, "NetworkPlatform", value.asInstanceOf[js.Any])
+    inline def setNetworkPlatform(value: String): Self = StObject.set(x, "NetworkPlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkPlatformUndefined: Self = StObject.set(x, "NetworkPlatform", js.undefined)
+    inline def setNetworkPlatformUndefined: Self = StObject.set(x, "NetworkPlatform", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
     
-    @scala.inline
-    def setPurchaseToken(value: String): Self = StObject.set(x, "PurchaseToken", value.asInstanceOf[js.Any])
+    inline def setPurchaseToken(value: String): Self = StObject.set(x, "PurchaseToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseTokenUndefined: Self = StObject.set(x, "PurchaseToken", js.undefined)
+    inline def setPurchaseTokenUndefined: Self = StObject.set(x, "PurchaseToken", js.undefined)
     
-    @scala.inline
-    def setRecurrence(value: ScheduledInstanceRecurrence): Self = StObject.set(x, "Recurrence", value.asInstanceOf[js.Any])
+    inline def setRecurrence(value: ScheduledInstanceRecurrence): Self = StObject.set(x, "Recurrence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurrenceUndefined: Self = StObject.set(x, "Recurrence", js.undefined)
+    inline def setRecurrenceUndefined: Self = StObject.set(x, "Recurrence", js.undefined)
     
-    @scala.inline
-    def setSlotDurationInHours(value: Integer): Self = StObject.set(x, "SlotDurationInHours", value.asInstanceOf[js.Any])
+    inline def setSlotDurationInHours(value: Integer): Self = StObject.set(x, "SlotDurationInHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotDurationInHoursUndefined: Self = StObject.set(x, "SlotDurationInHours", js.undefined)
+    inline def setSlotDurationInHoursUndefined: Self = StObject.set(x, "SlotDurationInHours", js.undefined)
     
-    @scala.inline
-    def setTotalScheduledInstanceHours(value: Integer): Self = StObject.set(x, "TotalScheduledInstanceHours", value.asInstanceOf[js.Any])
+    inline def setTotalScheduledInstanceHours(value: Integer): Self = StObject.set(x, "TotalScheduledInstanceHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalScheduledInstanceHoursUndefined: Self = StObject.set(x, "TotalScheduledInstanceHours", js.undefined)
+    inline def setTotalScheduledInstanceHoursUndefined: Self = StObject.set(x, "TotalScheduledInstanceHours", js.undefined)
   }
 }

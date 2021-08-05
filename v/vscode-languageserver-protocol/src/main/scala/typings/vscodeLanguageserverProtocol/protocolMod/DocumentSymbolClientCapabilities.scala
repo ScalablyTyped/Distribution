@@ -24,31 +24,23 @@ trait DocumentSymbolClientCapabilities extends StObject {
 }
 object DocumentSymbolClientCapabilities {
   
-  @scala.inline
-  def apply(): DocumentSymbolClientCapabilities = {
+  inline def apply(): DocumentSymbolClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentSymbolClientCapabilities]
   }
   
-  @scala.inline
-  implicit class DocumentSymbolClientCapabilitiesMutableBuilder[Self <: DocumentSymbolClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentSymbolClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+    inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
     
-    @scala.inline
-    def setHierarchicalDocumentSymbolSupport(value: Boolean): Self = StObject.set(x, "hierarchicalDocumentSymbolSupport", value.asInstanceOf[js.Any])
+    inline def setHierarchicalDocumentSymbolSupport(value: Boolean): Self = StObject.set(x, "hierarchicalDocumentSymbolSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchicalDocumentSymbolSupportUndefined: Self = StObject.set(x, "hierarchicalDocumentSymbolSupport", js.undefined)
+    inline def setHierarchicalDocumentSymbolSupportUndefined: Self = StObject.set(x, "hierarchicalDocumentSymbolSupport", js.undefined)
     
-    @scala.inline
-    def setSymbolKind(value: `1`): Self = StObject.set(x, "symbolKind", value.asInstanceOf[js.Any])
+    inline def setSymbolKind(value: `1`): Self = StObject.set(x, "symbolKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolKindUndefined: Self = StObject.set(x, "symbolKind", js.undefined)
+    inline def setSymbolKindUndefined: Self = StObject.set(x, "symbolKind", js.undefined)
   }
 }

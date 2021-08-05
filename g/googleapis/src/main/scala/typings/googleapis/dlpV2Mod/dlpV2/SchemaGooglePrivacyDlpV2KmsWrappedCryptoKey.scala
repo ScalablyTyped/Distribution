@@ -24,25 +24,19 @@ trait SchemaGooglePrivacyDlpV2KmsWrappedCryptoKey extends StObject {
 }
 object SchemaGooglePrivacyDlpV2KmsWrappedCryptoKey {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2KmsWrappedCryptoKey = {
+  inline def apply(): SchemaGooglePrivacyDlpV2KmsWrappedCryptoKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2KmsWrappedCryptoKey]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2KmsWrappedCryptoKeyMutableBuilder[Self <: SchemaGooglePrivacyDlpV2KmsWrappedCryptoKey] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2KmsWrappedCryptoKey](x: Self) {
     
-    @scala.inline
-    def setCryptoKeyName(value: String): Self = StObject.set(x, "cryptoKeyName", value.asInstanceOf[js.Any])
+    inline def setCryptoKeyName(value: String): Self = StObject.set(x, "cryptoKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCryptoKeyNameUndefined: Self = StObject.set(x, "cryptoKeyName", js.undefined)
+    inline def setCryptoKeyNameUndefined: Self = StObject.set(x, "cryptoKeyName", js.undefined)
     
-    @scala.inline
-    def setWrappedKey(value: String): Self = StObject.set(x, "wrappedKey", value.asInstanceOf[js.Any])
+    inline def setWrappedKey(value: String): Self = StObject.set(x, "wrappedKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrappedKeyUndefined: Self = StObject.set(x, "wrappedKey", js.undefined)
+    inline def setWrappedKeyUndefined: Self = StObject.set(x, "wrappedKey", js.undefined)
   }
 }

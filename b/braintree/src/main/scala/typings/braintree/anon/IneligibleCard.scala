@@ -14,22 +14,17 @@ trait IneligibleCard extends StObject {
 }
 object IneligibleCard {
   
-  @scala.inline
-  def apply(IneligibleCard: String, InsufficientPoints: String, Success: String): IneligibleCard = {
+  inline def apply(IneligibleCard: String, InsufficientPoints: String, Success: String): IneligibleCard = {
     val __obj = js.Dynamic.literal(IneligibleCard = IneligibleCard.asInstanceOf[js.Any], InsufficientPoints = InsufficientPoints.asInstanceOf[js.Any], Success = Success.asInstanceOf[js.Any])
     __obj.asInstanceOf[IneligibleCard]
   }
   
-  @scala.inline
-  implicit class IneligibleCardMutableBuilder[Self <: IneligibleCard] (val x: Self) extends AnyVal {
+  extension [Self <: IneligibleCard](x: Self) {
     
-    @scala.inline
-    def setIneligibleCard(value: String): Self = StObject.set(x, "IneligibleCard", value.asInstanceOf[js.Any])
+    inline def setIneligibleCard(value: String): Self = StObject.set(x, "IneligibleCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsufficientPoints(value: String): Self = StObject.set(x, "InsufficientPoints", value.asInstanceOf[js.Any])
+    inline def setInsufficientPoints(value: String): Self = StObject.set(x, "InsufficientPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: String): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: String): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
   }
 }

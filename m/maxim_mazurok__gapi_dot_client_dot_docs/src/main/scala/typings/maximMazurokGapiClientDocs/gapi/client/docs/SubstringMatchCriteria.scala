@@ -14,25 +14,19 @@ trait SubstringMatchCriteria extends StObject {
 }
 object SubstringMatchCriteria {
   
-  @scala.inline
-  def apply(): SubstringMatchCriteria = {
+  inline def apply(): SubstringMatchCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubstringMatchCriteria]
   }
   
-  @scala.inline
-  implicit class SubstringMatchCriteriaMutableBuilder[Self <: SubstringMatchCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: SubstringMatchCriteria](x: Self) {
     
-    @scala.inline
-    def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
+    inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
+    inline def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -15,8 +15,8 @@ object arcMod {
   trait ArcAnnotation
     extends typings.antvComponent.groupComponentMod.default[ArcAnnotationCfg] {
     
-    var getArcPath: js.Any = js.native
+    /* private */ var getArcPath: js.Any = js.native
     
-    var renderArc: js.Any = js.native
+    /* private */ var renderArc: js.Any = js.native
   }
 }

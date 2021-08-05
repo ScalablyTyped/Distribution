@@ -10,16 +10,13 @@ trait SessionConnectingEvent extends StObject {
 }
 object SessionConnectingEvent {
   
-  @scala.inline
-  def apply(request: IncomingRequest | OutgoingRequest): SessionConnectingEvent = {
+  inline def apply(request: IncomingRequest | OutgoingRequest): SessionConnectingEvent = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionConnectingEvent]
   }
   
-  @scala.inline
-  implicit class SessionConnectingEventMutableBuilder[Self <: SessionConnectingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SessionConnectingEvent](x: Self) {
     
-    @scala.inline
-    def setRequest(value: IncomingRequest | OutgoingRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: IncomingRequest | OutgoingRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

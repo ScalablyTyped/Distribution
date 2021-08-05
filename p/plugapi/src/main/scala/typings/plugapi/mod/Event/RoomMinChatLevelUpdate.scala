@@ -15,22 +15,17 @@ trait RoomMinChatLevelUpdate extends StObject {
 }
 object RoomMinChatLevelUpdate {
   
-  @scala.inline
-  def apply(id: Double, level: Double, user: User): RoomMinChatLevelUpdate = {
+  inline def apply(id: Double, level: Double, user: User): RoomMinChatLevelUpdate = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomMinChatLevelUpdate]
   }
   
-  @scala.inline
-  implicit class RoomMinChatLevelUpdateMutableBuilder[Self <: RoomMinChatLevelUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: RoomMinChatLevelUpdate](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

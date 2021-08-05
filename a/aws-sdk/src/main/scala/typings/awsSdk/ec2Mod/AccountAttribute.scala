@@ -18,28 +18,21 @@ trait AccountAttribute extends StObject {
 }
 object AccountAttribute {
   
-  @scala.inline
-  def apply(): AccountAttribute = {
+  inline def apply(): AccountAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountAttribute]
   }
   
-  @scala.inline
-  implicit class AccountAttributeMutableBuilder[Self <: AccountAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: AccountAttribute](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
-    @scala.inline
-    def setAttributeValues(value: AccountAttributeValueList): Self = StObject.set(x, "AttributeValues", value.asInstanceOf[js.Any])
+    inline def setAttributeValues(value: AccountAttributeValueList): Self = StObject.set(x, "AttributeValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValuesUndefined: Self = StObject.set(x, "AttributeValues", js.undefined)
+    inline def setAttributeValuesUndefined: Self = StObject.set(x, "AttributeValues", js.undefined)
     
-    @scala.inline
-    def setAttributeValuesVarargs(value: AccountAttributeValue*): Self = StObject.set(x, "AttributeValues", js.Array(value :_*))
+    inline def setAttributeValuesVarargs(value: AccountAttributeValue*): Self = StObject.set(x, "AttributeValues", js.Array(value :_*))
   }
 }

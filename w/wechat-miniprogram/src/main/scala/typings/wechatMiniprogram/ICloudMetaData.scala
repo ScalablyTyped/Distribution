@@ -10,16 +10,13 @@ trait ICloudMetaData extends StObject {
 }
 object ICloudMetaData {
   
-  @scala.inline
-  def apply(session_id: String): ICloudMetaData = {
+  inline def apply(session_id: String): ICloudMetaData = {
     val __obj = js.Dynamic.literal(session_id = session_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICloudMetaData]
   }
   
-  @scala.inline
-  implicit class ICloudMetaDataMutableBuilder[Self <: ICloudMetaData] (val x: Self) extends AnyVal {
+  extension [Self <: ICloudMetaData](x: Self) {
     
-    @scala.inline
-    def setSession_id(value: String): Self = StObject.set(x, "session_id", value.asInstanceOf[js.Any])
+    inline def setSession_id(value: String): Self = StObject.set(x, "session_id", value.asInstanceOf[js.Any])
   }
 }

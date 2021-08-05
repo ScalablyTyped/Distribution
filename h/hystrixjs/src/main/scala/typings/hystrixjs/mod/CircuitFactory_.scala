@@ -14,8 +14,7 @@ trait CircuitFactory_ extends StObject {
 }
 object CircuitFactory_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCache: () => js.Array[CircuitBreaker],
     getOrCreate: CirctuiBreakerConfig => CircuitBreaker,
     resetCache: () => Unit
@@ -24,16 +23,12 @@ object CircuitFactory_ {
     __obj.asInstanceOf[CircuitFactory_]
   }
   
-  @scala.inline
-  implicit class CircuitFactory_MutableBuilder[Self <: CircuitFactory_] (val x: Self) extends AnyVal {
+  extension [Self <: CircuitFactory_](x: Self) {
     
-    @scala.inline
-    def setGetCache(value: () => js.Array[CircuitBreaker]): Self = StObject.set(x, "getCache", js.Any.fromFunction0(value))
+    inline def setGetCache(value: () => js.Array[CircuitBreaker]): Self = StObject.set(x, "getCache", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOrCreate(value: CirctuiBreakerConfig => CircuitBreaker): Self = StObject.set(x, "getOrCreate", js.Any.fromFunction1(value))
+    inline def setGetOrCreate(value: CirctuiBreakerConfig => CircuitBreaker): Self = StObject.set(x, "getOrCreate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResetCache(value: () => Unit): Self = StObject.set(x, "resetCache", js.Any.fromFunction0(value))
+    inline def setResetCache(value: () => Unit): Self = StObject.set(x, "resetCache", js.Any.fromFunction0(value))
   }
 }

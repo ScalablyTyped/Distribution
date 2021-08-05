@@ -10,19 +10,15 @@ trait OpenStreetMapProviderOptionsOutputFormat extends StObject {
 }
 object OpenStreetMapProviderOptionsOutputFormat {
   
-  @scala.inline
-  def apply(): OpenStreetMapProviderOptionsOutputFormat = {
+  inline def apply(): OpenStreetMapProviderOptionsOutputFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenStreetMapProviderOptionsOutputFormat]
   }
   
-  @scala.inline
-  implicit class OpenStreetMapProviderOptionsOutputFormatMutableBuilder[Self <: OpenStreetMapProviderOptionsOutputFormat] (val x: Self) extends AnyVal {
+  extension [Self <: OpenStreetMapProviderOptionsOutputFormat](x: Self) {
     
-    @scala.inline
-    def setJson_callback(value: String): Self = StObject.set(x, "json_callback", value.asInstanceOf[js.Any])
+    inline def setJson_callback(value: String): Self = StObject.set(x, "json_callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJson_callbackUndefined: Self = StObject.set(x, "json_callback", js.undefined)
+    inline def setJson_callbackUndefined: Self = StObject.set(x, "json_callback", js.undefined)
   }
 }

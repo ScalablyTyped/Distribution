@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DoCmd extends StObject {
   
-  @JSName("Access.DoCmd_typekey")
+  /* private */ @JSName("Access.DoCmd_typekey")
   var AccessDotDoCmd_typekey: DoCmd = js.native
   
   def AddMenu(MenuName: String, MenuMacroName: String): Unit = js.native

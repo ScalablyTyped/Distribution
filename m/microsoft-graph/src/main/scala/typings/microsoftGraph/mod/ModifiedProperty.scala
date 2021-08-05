@@ -17,40 +17,29 @@ trait ModifiedProperty extends StObject {
 }
 object ModifiedProperty {
   
-  @scala.inline
-  def apply(): ModifiedProperty = {
+  inline def apply(): ModifiedProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifiedProperty]
   }
   
-  @scala.inline
-  implicit class ModifiedPropertyMutableBuilder[Self <: ModifiedProperty] (val x: Self) extends AnyVal {
+  extension [Self <: ModifiedProperty](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setNewValue(value: NullableOption[String]): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: NullableOption[String]): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValueNull: Self = StObject.set(x, "newValue", null)
+    inline def setNewValueNull: Self = StObject.set(x, "newValue", null)
     
-    @scala.inline
-    def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
     
-    @scala.inline
-    def setOldValue(value: NullableOption[String]): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: NullableOption[String]): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueNull: Self = StObject.set(x, "oldValue", null)
+    inline def setOldValueNull: Self = StObject.set(x, "oldValue", null)
     
-    @scala.inline
-    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
   }
 }

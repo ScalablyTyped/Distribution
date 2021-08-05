@@ -13,19 +13,15 @@ trait IOBJECT_MESSAGE extends StObject {
 }
 object IOBJECT_MESSAGE {
   
-  @scala.inline
-  def apply(message: String, sender: SFSUser): IOBJECT_MESSAGE = {
+  inline def apply(message: String, sender: SFSUser): IOBJECT_MESSAGE = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOBJECT_MESSAGE]
   }
   
-  @scala.inline
-  implicit class IOBJECT_MESSAGEMutableBuilder[Self <: IOBJECT_MESSAGE] (val x: Self) extends AnyVal {
+  extension [Self <: IOBJECT_MESSAGE](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: SFSUser): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: SFSUser): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

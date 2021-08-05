@@ -22,20 +22,16 @@ object statusAlertMod extends Shortcut {
   }
   object StatusAlertProps {
     
-    @scala.inline
-    def apply(): StatusAlertProps = {
+    inline def apply(): StatusAlertProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatusAlertProps]
     }
     
-    @scala.inline
-    implicit class StatusAlertPropsMutableBuilder[Self <: StatusAlertProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatusAlertProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

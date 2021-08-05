@@ -13,16 +13,13 @@ trait Parse
 }
 object Parse {
   
-  @scala.inline
-  def apply(parse: typings.vegaTypings.dataMod.Parse): Parse = {
+  inline def apply(parse: typings.vegaTypings.dataMod.Parse): Parse = {
     val __obj = js.Dynamic.literal(parse = parse.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parse]
   }
   
-  @scala.inline
-  implicit class ParseMutableBuilder[Self <: Parse] (val x: Self) extends AnyVal {
+  extension [Self <: Parse](x: Self) {
     
-    @scala.inline
-    def setParse(value: typings.vegaTypings.dataMod.Parse): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    inline def setParse(value: typings.vegaTypings.dataMod.Parse): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
   }
 }

@@ -15,19 +15,15 @@ trait CreateAudioFileOutputNodeResult extends StObject {
 }
 object CreateAudioFileOutputNodeResult {
   
-  @scala.inline
-  def apply(fileOutputNode: AudioFileOutputNode, status: AudioFileNodeCreationStatus): CreateAudioFileOutputNodeResult = {
+  inline def apply(fileOutputNode: AudioFileOutputNode, status: AudioFileNodeCreationStatus): CreateAudioFileOutputNodeResult = {
     val __obj = js.Dynamic.literal(fileOutputNode = fileOutputNode.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAudioFileOutputNodeResult]
   }
   
-  @scala.inline
-  implicit class CreateAudioFileOutputNodeResultMutableBuilder[Self <: CreateAudioFileOutputNodeResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAudioFileOutputNodeResult](x: Self) {
     
-    @scala.inline
-    def setFileOutputNode(value: AudioFileOutputNode): Self = StObject.set(x, "fileOutputNode", value.asInstanceOf[js.Any])
+    inline def setFileOutputNode(value: AudioFileOutputNode): Self = StObject.set(x, "fileOutputNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: AudioFileNodeCreationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AudioFileNodeCreationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

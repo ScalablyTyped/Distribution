@@ -16,25 +16,19 @@ trait ArtifactInstanceData extends StObject {
 }
 object ArtifactInstanceData {
   
-  @scala.inline
-  def apply(accountName: String, authenticationToken: String, tfsUrl: String, version: String): ArtifactInstanceData = {
+  inline def apply(accountName: String, authenticationToken: String, tfsUrl: String, version: String): ArtifactInstanceData = {
     val __obj = js.Dynamic.literal(accountName = accountName.asInstanceOf[js.Any], authenticationToken = authenticationToken.asInstanceOf[js.Any], tfsUrl = tfsUrl.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactInstanceData]
   }
   
-  @scala.inline
-  implicit class ArtifactInstanceDataMutableBuilder[Self <: ArtifactInstanceData] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactInstanceData](x: Self) {
     
-    @scala.inline
-    def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationToken(value: String): Self = StObject.set(x, "authenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: String): Self = StObject.set(x, "authenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTfsUrl(value: String): Self = StObject.set(x, "tfsUrl", value.asInstanceOf[js.Any])
+    inline def setTfsUrl(value: String): Self = StObject.set(x, "tfsUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

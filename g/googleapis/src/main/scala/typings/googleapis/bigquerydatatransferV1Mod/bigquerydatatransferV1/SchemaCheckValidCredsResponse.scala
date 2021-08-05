@@ -16,19 +16,15 @@ trait SchemaCheckValidCredsResponse extends StObject {
 }
 object SchemaCheckValidCredsResponse {
   
-  @scala.inline
-  def apply(): SchemaCheckValidCredsResponse = {
+  inline def apply(): SchemaCheckValidCredsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCheckValidCredsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCheckValidCredsResponseMutableBuilder[Self <: SchemaCheckValidCredsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCheckValidCredsResponse](x: Self) {
     
-    @scala.inline
-    def setHasValidCreds(value: Boolean): Self = StObject.set(x, "hasValidCreds", value.asInstanceOf[js.Any])
+    inline def setHasValidCreds(value: Boolean): Self = StObject.set(x, "hasValidCreds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasValidCredsUndefined: Self = StObject.set(x, "hasValidCreds", js.undefined)
+    inline def setHasValidCredsUndefined: Self = StObject.set(x, "hasValidCreds", js.undefined)
   }
 }

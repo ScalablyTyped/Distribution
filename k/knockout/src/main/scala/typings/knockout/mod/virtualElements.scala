@@ -15,24 +15,17 @@ object virtualElements {
   @js.native
   val allowedBindings: VirtualElementsAllowedBindings = js.native
   
-  @scala.inline
-  def childNodes(node: Node): js.Array[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("childNodes")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Node]]
+  inline def childNodes(node: Node): js.Array[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("childNodes")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Node]]
   
-  @scala.inline
-  def emptyNode(node: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyNode")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def emptyNode(node: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyNode")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def firstChild(node: Node): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("firstChild")(node.asInstanceOf[js.Any]).asInstanceOf[Node]
+  inline def firstChild(node: Node): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("firstChild")(node.asInstanceOf[js.Any]).asInstanceOf[Node]
   
-  @scala.inline
-  def insertAfter(node: Node, nodeToInsert: Node, insertAfterNode: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(node.asInstanceOf[js.Any], nodeToInsert.asInstanceOf[js.Any], insertAfterNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertAfter(node: Node, nodeToInsert: Node, insertAfterNode: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(node.asInstanceOf[js.Any], nodeToInsert.asInstanceOf[js.Any], insertAfterNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def nextSibling(node: Node): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("nextSibling")(node.asInstanceOf[js.Any]).asInstanceOf[Node]
+  inline def nextSibling(node: Node): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("nextSibling")(node.asInstanceOf[js.Any]).asInstanceOf[Node]
   
-  @scala.inline
-  def prepend(node: Node, nodeToPrepend: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(node.asInstanceOf[js.Any], nodeToPrepend.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def prepend(node: Node, nodeToPrepend: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(node.asInstanceOf[js.Any], nodeToPrepend.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setDomNodeChildren(node: Node, childNodes: js.Array[Node]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDomNodeChildren")(node.asInstanceOf[js.Any], childNodes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setDomNodeChildren(node: Node, childNodes: js.Array[Node]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDomNodeChildren")(node.asInstanceOf[js.Any], childNodes.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

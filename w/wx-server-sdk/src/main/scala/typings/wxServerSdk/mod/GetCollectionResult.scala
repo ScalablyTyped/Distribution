@@ -10,19 +10,15 @@ trait GetCollectionResult extends StObject {
 }
 object GetCollectionResult {
   
-  @scala.inline
-  def apply(data: js.Array[js.Any]): GetCollectionResult = {
+  inline def apply(data: js.Array[js.Any]): GetCollectionResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCollectionResult]
   }
   
-  @scala.inline
-  implicit class GetCollectionResultMutableBuilder[Self <: GetCollectionResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetCollectionResult](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

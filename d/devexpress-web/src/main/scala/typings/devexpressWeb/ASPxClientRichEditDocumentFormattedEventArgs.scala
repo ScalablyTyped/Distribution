@@ -18,16 +18,13 @@ trait ASPxClientRichEditDocumentFormattedEventArgs
 }
 object ASPxClientRichEditDocumentFormattedEventArgs {
   
-  @scala.inline
-  def apply(pageCount: Double): ASPxClientRichEditDocumentFormattedEventArgs = {
+  inline def apply(pageCount: Double): ASPxClientRichEditDocumentFormattedEventArgs = {
     val __obj = js.Dynamic.literal(pageCount = pageCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRichEditDocumentFormattedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientRichEditDocumentFormattedEventArgsMutableBuilder[Self <: ASPxClientRichEditDocumentFormattedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRichEditDocumentFormattedEventArgs](x: Self) {
     
-    @scala.inline
-    def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
+    inline def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
   }
 }

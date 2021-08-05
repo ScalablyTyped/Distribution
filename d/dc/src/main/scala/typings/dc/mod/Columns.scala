@@ -15,19 +15,15 @@ trait Columns extends StObject {
 }
 object Columns {
   
-  @scala.inline
-  def apply(format: (js.Any, /* index */ js.UndefOr[Double]) => String, label: String): Columns = {
+  inline def apply(format: (js.Any, /* index */ js.UndefOr[Double]) => String, label: String): Columns = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Columns]
   }
   
-  @scala.inline
-  implicit class ColumnsMutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
+  extension [Self <: Columns](x: Self) {
     
-    @scala.inline
-    def setFormat(value: (js.Any, /* index */ js.UndefOr[Double]) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+    inline def setFormat(value: (js.Any, /* index */ js.UndefOr[Double]) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

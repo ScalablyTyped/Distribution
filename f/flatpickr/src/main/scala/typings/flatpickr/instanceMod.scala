@@ -127,8 +127,7 @@ object instanceMod {
   }
   object Elements {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _hideNextMonthArrow: Boolean,
       _hidePrevMonthArrow: Boolean,
       _input: HTMLInputElement,
@@ -152,161 +151,109 @@ object instanceMod {
       __obj.asInstanceOf[Elements]
     }
     
-    @scala.inline
-    implicit class ElementsMutableBuilder[Self <: Elements] (val x: Self) extends AnyVal {
+    extension [Self <: Elements](x: Self) {
       
-      @scala.inline
-      def setAltInput(value: HTMLInputElement): Self = StObject.set(x, "altInput", value.asInstanceOf[js.Any])
+      inline def setAltInput(value: HTMLInputElement): Self = StObject.set(x, "altInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltInputUndefined: Self = StObject.set(x, "altInput", js.undefined)
+      inline def setAltInputUndefined: Self = StObject.set(x, "altInput", js.undefined)
       
-      @scala.inline
-      def setAmPM(value: HTMLSpanElement): Self = StObject.set(x, "amPM", value.asInstanceOf[js.Any])
+      inline def setAmPM(value: HTMLSpanElement): Self = StObject.set(x, "amPM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmPMUndefined: Self = StObject.set(x, "amPM", js.undefined)
+      inline def setAmPMUndefined: Self = StObject.set(x, "amPM", js.undefined)
       
-      @scala.inline
-      def setCalendarContainer(value: HTMLDivElement): Self = StObject.set(x, "calendarContainer", value.asInstanceOf[js.Any])
+      inline def setCalendarContainer(value: HTMLDivElement): Self = StObject.set(x, "calendarContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentMonthElement(value: HTMLSpanElement): Self = StObject.set(x, "currentMonthElement", value.asInstanceOf[js.Any])
+      inline def setCurrentMonthElement(value: HTMLSpanElement): Self = StObject.set(x, "currentMonthElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentYearElement(value: HTMLInputElement): Self = StObject.set(x, "currentYearElement", value.asInstanceOf[js.Any])
+      inline def setCurrentYearElement(value: HTMLInputElement): Self = StObject.set(x, "currentYearElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDays(value: HTMLDivElement): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+      inline def setDays(value: HTMLDivElement): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysContainer(value: HTMLDivElement): Self = StObject.set(x, "daysContainer", value.asInstanceOf[js.Any])
+      inline def setDaysContainer(value: HTMLDivElement): Self = StObject.set(x, "daysContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysContainerUndefined: Self = StObject.set(x, "daysContainer", js.undefined)
+      inline def setDaysContainerUndefined: Self = StObject.set(x, "daysContainer", js.undefined)
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourElement(value: HTMLInputElement): Self = StObject.set(x, "hourElement", value.asInstanceOf[js.Any])
+      inline def setHourElement(value: HTMLInputElement): Self = StObject.set(x, "hourElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourElementUndefined: Self = StObject.set(x, "hourElement", js.undefined)
+      inline def setHourElementUndefined: Self = StObject.set(x, "hourElement", js.undefined)
       
-      @scala.inline
-      def setInnerContainer(value: HTMLDivElement): Self = StObject.set(x, "innerContainer", value.asInstanceOf[js.Any])
+      inline def setInnerContainer(value: HTMLDivElement): Self = StObject.set(x, "innerContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerContainerUndefined: Self = StObject.set(x, "innerContainer", js.undefined)
+      inline def setInnerContainerUndefined: Self = StObject.set(x, "innerContainer", js.undefined)
       
-      @scala.inline
-      def setInput(value: HTMLInputElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: HTMLInputElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteElement(value: HTMLInputElement): Self = StObject.set(x, "minuteElement", value.asInstanceOf[js.Any])
+      inline def setMinuteElement(value: HTMLInputElement): Self = StObject.set(x, "minuteElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteElementUndefined: Self = StObject.set(x, "minuteElement", js.undefined)
+      inline def setMinuteElementUndefined: Self = StObject.set(x, "minuteElement", js.undefined)
       
-      @scala.inline
-      def setMobileFormatStr(value: String): Self = StObject.set(x, "mobileFormatStr", value.asInstanceOf[js.Any])
+      inline def setMobileFormatStr(value: String): Self = StObject.set(x, "mobileFormatStr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobileFormatStrUndefined: Self = StObject.set(x, "mobileFormatStr", js.undefined)
+      inline def setMobileFormatStrUndefined: Self = StObject.set(x, "mobileFormatStr", js.undefined)
       
-      @scala.inline
-      def setMobileInput(value: HTMLInputElement): Self = StObject.set(x, "mobileInput", value.asInstanceOf[js.Any])
+      inline def setMobileInput(value: HTMLInputElement): Self = StObject.set(x, "mobileInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobileInputUndefined: Self = StObject.set(x, "mobileInput", js.undefined)
+      inline def setMobileInputUndefined: Self = StObject.set(x, "mobileInput", js.undefined)
       
-      @scala.inline
-      def setMonthElements(value: js.Array[HTMLSpanElement]): Self = StObject.set(x, "monthElements", value.asInstanceOf[js.Any])
+      inline def setMonthElements(value: js.Array[HTMLSpanElement]): Self = StObject.set(x, "monthElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthElementsVarargs(value: HTMLSpanElement*): Self = StObject.set(x, "monthElements", js.Array(value :_*))
+      inline def setMonthElementsVarargs(value: HTMLSpanElement*): Self = StObject.set(x, "monthElements", js.Array(value :_*))
       
-      @scala.inline
-      def setMonthNav(value: HTMLDivElement): Self = StObject.set(x, "monthNav", value.asInstanceOf[js.Any])
+      inline def setMonthNav(value: HTMLDivElement): Self = StObject.set(x, "monthNav", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthsDropdownContainer(value: HTMLSelectElement): Self = StObject.set(x, "monthsDropdownContainer", value.asInstanceOf[js.Any])
+      inline def setMonthsDropdownContainer(value: HTMLSelectElement): Self = StObject.set(x, "monthsDropdownContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextMonthNav(value: HTMLElement): Self = StObject.set(x, "nextMonthNav", value.asInstanceOf[js.Any])
+      inline def setNextMonthNav(value: HTMLElement): Self = StObject.set(x, "nextMonthNav", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginElements(value: js.Array[Node]): Self = StObject.set(x, "pluginElements", value.asInstanceOf[js.Any])
+      inline def setPluginElements(value: js.Array[Node]): Self = StObject.set(x, "pluginElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginElementsVarargs(value: Node*): Self = StObject.set(x, "pluginElements", js.Array(value :_*))
+      inline def setPluginElementsVarargs(value: Node*): Self = StObject.set(x, "pluginElements", js.Array(value :_*))
       
-      @scala.inline
-      def setPrevMonthNav(value: HTMLElement): Self = StObject.set(x, "prevMonthNav", value.asInstanceOf[js.Any])
+      inline def setPrevMonthNav(value: HTMLElement): Self = StObject.set(x, "prevMonthNav", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRContainer(value: HTMLDivElement): Self = StObject.set(x, "rContainer", value.asInstanceOf[js.Any])
+      inline def setRContainer(value: HTMLDivElement): Self = StObject.set(x, "rContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRContainerUndefined: Self = StObject.set(x, "rContainer", js.undefined)
+      inline def setRContainerUndefined: Self = StObject.set(x, "rContainer", js.undefined)
       
-      @scala.inline
-      def setSecondElement(value: HTMLInputElement): Self = StObject.set(x, "secondElement", value.asInstanceOf[js.Any])
+      inline def setSecondElement(value: HTMLInputElement): Self = StObject.set(x, "secondElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondElementUndefined: Self = StObject.set(x, "secondElement", js.undefined)
+      inline def setSecondElementUndefined: Self = StObject.set(x, "secondElement", js.undefined)
       
-      @scala.inline
-      def setSelectedDateElem(value: DayElement): Self = StObject.set(x, "selectedDateElem", value.asInstanceOf[js.Any])
+      inline def setSelectedDateElem(value: DayElement): Self = StObject.set(x, "selectedDateElem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedDateElemUndefined: Self = StObject.set(x, "selectedDateElem", js.undefined)
+      inline def setSelectedDateElemUndefined: Self = StObject.set(x, "selectedDateElem", js.undefined)
       
-      @scala.inline
-      def setTimeContainer(value: HTMLDivElement): Self = StObject.set(x, "timeContainer", value.asInstanceOf[js.Any])
+      inline def setTimeContainer(value: HTMLDivElement): Self = StObject.set(x, "timeContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeContainerUndefined: Self = StObject.set(x, "timeContainer", js.undefined)
+      inline def setTimeContainerUndefined: Self = StObject.set(x, "timeContainer", js.undefined)
       
-      @scala.inline
-      def setTodayDateElem(value: DayElement): Self = StObject.set(x, "todayDateElem", value.asInstanceOf[js.Any])
+      inline def setTodayDateElem(value: DayElement): Self = StObject.set(x, "todayDateElem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTodayDateElemUndefined: Self = StObject.set(x, "todayDateElem", js.undefined)
+      inline def setTodayDateElemUndefined: Self = StObject.set(x, "todayDateElem", js.undefined)
       
-      @scala.inline
-      def setWeekNumbers(value: HTMLDivElement): Self = StObject.set(x, "weekNumbers", value.asInstanceOf[js.Any])
+      inline def setWeekNumbers(value: HTMLDivElement): Self = StObject.set(x, "weekNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekNumbersUndefined: Self = StObject.set(x, "weekNumbers", js.undefined)
+      inline def setWeekNumbersUndefined: Self = StObject.set(x, "weekNumbers", js.undefined)
       
-      @scala.inline
-      def setWeekWrapper(value: HTMLDivElement): Self = StObject.set(x, "weekWrapper", value.asInstanceOf[js.Any])
+      inline def setWeekWrapper(value: HTMLDivElement): Self = StObject.set(x, "weekWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekWrapperUndefined: Self = StObject.set(x, "weekWrapper", js.undefined)
+      inline def setWeekWrapperUndefined: Self = StObject.set(x, "weekWrapper", js.undefined)
       
-      @scala.inline
-      def setWeekdayContainer(value: HTMLDivElement): Self = StObject.set(x, "weekdayContainer", value.asInstanceOf[js.Any])
+      inline def setWeekdayContainer(value: HTMLDivElement): Self = StObject.set(x, "weekdayContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearElements(value: js.Array[HTMLInputElement]): Self = StObject.set(x, "yearElements", value.asInstanceOf[js.Any])
+      inline def setYearElements(value: js.Array[HTMLInputElement]): Self = StObject.set(x, "yearElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearElementsVarargs(value: HTMLInputElement*): Self = StObject.set(x, "yearElements", js.Array(value :_*))
+      inline def setYearElementsVarargs(value: HTMLInputElement*): Self = StObject.set(x, "yearElements", js.Array(value :_*))
       
-      @scala.inline
-      def set_hideNextMonthArrow(value: Boolean): Self = StObject.set(x, "_hideNextMonthArrow", value.asInstanceOf[js.Any])
+      inline def set_hideNextMonthArrow(value: Boolean): Self = StObject.set(x, "_hideNextMonthArrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_hidePrevMonthArrow(value: Boolean): Self = StObject.set(x, "_hidePrevMonthArrow", value.asInstanceOf[js.Any])
+      inline def set_hidePrevMonthArrow(value: Boolean): Self = StObject.set(x, "_hidePrevMonthArrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_input(value: HTMLInputElement): Self = StObject.set(x, "_input", value.asInstanceOf[js.Any])
+      inline def set_input(value: HTMLInputElement): Self = StObject.set(x, "_input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_positionElement(value: HTMLElement): Self = StObject.set(x, "_positionElement", value.asInstanceOf[js.Any])
+      inline def set_positionElement(value: HTMLElement): Self = StObject.set(x, "_positionElement", value.asInstanceOf[js.Any])
     }
   }
   
@@ -349,23 +296,18 @@ object instanceMod {
   }
   object Formatting {
     
-    @scala.inline
-    def apply(formats: Formats_, revFormat: RevFormat_, tokenRegex: TokenRegex_): Formatting = {
+    inline def apply(formats: Formats_, revFormat: RevFormat_, tokenRegex: TokenRegex_): Formatting = {
       val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any], revFormat = revFormat.asInstanceOf[js.Any], tokenRegex = tokenRegex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Formatting]
     }
     
-    @scala.inline
-    implicit class FormattingMutableBuilder[Self <: Formatting] (val x: Self) extends AnyVal {
+    extension [Self <: Formatting](x: Self) {
       
-      @scala.inline
-      def setFormats(value: Formats_): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: Formats_): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevFormat(value: RevFormat_): Self = StObject.set(x, "revFormat", value.asInstanceOf[js.Any])
+      inline def setRevFormat(value: RevFormat_): Self = StObject.set(x, "revFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenRegex(value: TokenRegex_): Self = StObject.set(x, "tokenRegex", value.asInstanceOf[js.Any])
+      inline def setTokenRegex(value: TokenRegex_): Self = StObject.set(x, "tokenRegex", value.asInstanceOf[js.Any])
     }
   }
   

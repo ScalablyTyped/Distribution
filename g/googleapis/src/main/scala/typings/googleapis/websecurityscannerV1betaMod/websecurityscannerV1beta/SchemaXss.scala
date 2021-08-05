@@ -21,28 +21,21 @@ trait SchemaXss extends StObject {
 }
 object SchemaXss {
   
-  @scala.inline
-  def apply(): SchemaXss = {
+  inline def apply(): SchemaXss = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaXss]
   }
   
-  @scala.inline
-  implicit class SchemaXssMutableBuilder[Self <: SchemaXss] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaXss](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setStackTraces(value: js.Array[String]): Self = StObject.set(x, "stackTraces", value.asInstanceOf[js.Any])
+    inline def setStackTraces(value: js.Array[String]): Self = StObject.set(x, "stackTraces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackTracesUndefined: Self = StObject.set(x, "stackTraces", js.undefined)
+    inline def setStackTracesUndefined: Self = StObject.set(x, "stackTraces", js.undefined)
     
-    @scala.inline
-    def setStackTracesVarargs(value: String*): Self = StObject.set(x, "stackTraces", js.Array(value :_*))
+    inline def setStackTracesVarargs(value: String*): Self = StObject.set(x, "stackTraces", js.Array(value :_*))
   }
 }

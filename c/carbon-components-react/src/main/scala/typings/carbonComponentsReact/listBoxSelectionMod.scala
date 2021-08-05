@@ -49,11 +49,9 @@ object listBoxSelectionMod extends Shortcut {
        with _CarbonTranslationKey
   object ListBoxSelectionTranslationKey {
     
-    @scala.inline
-    def clearDotall: typings.carbonComponentsReact.carbonComponentsReactStrings.clearDotall = "clear.all".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.clearDotall]
+    inline def clearDotall: typings.carbonComponentsReact.carbonComponentsReactStrings.clearDotall = "clear.all".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.clearDotall]
     
-    @scala.inline
-    def clearDotselection: typings.carbonComponentsReact.carbonComponentsReactStrings.clearDotselection = "clear.selection".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.clearDotselection]
+    inline def clearDotselection: typings.carbonComponentsReact.carbonComponentsReactStrings.clearDotselection = "clear.selection".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.clearDotselection]
   }
   
   type _To = ListBoxSelectionComponent

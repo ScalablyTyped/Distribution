@@ -12,25 +12,19 @@ trait Snackbar extends StObject {
 }
 object Snackbar {
   
-  @scala.inline
-  def apply(): Snackbar = {
+  inline def apply(): Snackbar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Snackbar]
   }
   
-  @scala.inline
-  implicit class SnackbarMutableBuilder[Self <: Snackbar] (val x: Self) extends AnyVal {
+  extension [Self <: Snackbar](x: Self) {
     
-    @scala.inline
-    def setButton(value: js.Object): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: js.Object): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setSnackbar(value: js.Object): Self = StObject.set(x, "snackbar", value.asInstanceOf[js.Any])
+    inline def setSnackbar(value: js.Object): Self = StObject.set(x, "snackbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnackbarUndefined: Self = StObject.set(x, "snackbar", js.undefined)
+    inline def setSnackbarUndefined: Self = StObject.set(x, "snackbar", js.undefined)
   }
 }

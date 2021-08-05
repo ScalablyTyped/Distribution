@@ -13,19 +13,15 @@ trait CreateVpcResult extends StObject {
 }
 object CreateVpcResult {
   
-  @scala.inline
-  def apply(): CreateVpcResult = {
+  inline def apply(): CreateVpcResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateVpcResult]
   }
   
-  @scala.inline
-  implicit class CreateVpcResultMutableBuilder[Self <: CreateVpcResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVpcResult](x: Self) {
     
-    @scala.inline
-    def setVpc(value: Vpc): Self = StObject.set(x, "Vpc", value.asInstanceOf[js.Any])
+    inline def setVpc(value: Vpc): Self = StObject.set(x, "Vpc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcUndefined: Self = StObject.set(x, "Vpc", js.undefined)
+    inline def setVpcUndefined: Self = StObject.set(x, "Vpc", js.undefined)
   }
 }

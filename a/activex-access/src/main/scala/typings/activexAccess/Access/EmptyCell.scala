@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EmptyCell extends StObject {
   
-  @JSName("Access.EmptyCell_typekey")
+  /* private */ @JSName("Access.EmptyCell_typekey")
   var AccessDotEmptyCell_typekey: EmptyCell = js.native
   
   val Application: typings.activexAccess.Access.Application = js.native

@@ -18,28 +18,21 @@ trait DescribeDirectConnectGatewayAttachmentsResult extends StObject {
 }
 object DescribeDirectConnectGatewayAttachmentsResult {
   
-  @scala.inline
-  def apply(): DescribeDirectConnectGatewayAttachmentsResult = {
+  inline def apply(): DescribeDirectConnectGatewayAttachmentsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDirectConnectGatewayAttachmentsResult]
   }
   
-  @scala.inline
-  implicit class DescribeDirectConnectGatewayAttachmentsResultMutableBuilder[Self <: DescribeDirectConnectGatewayAttachmentsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDirectConnectGatewayAttachmentsResult](x: Self) {
     
-    @scala.inline
-    def setDirectConnectGatewayAttachments(value: DirectConnectGatewayAttachmentList): Self = StObject.set(x, "directConnectGatewayAttachments", value.asInstanceOf[js.Any])
+    inline def setDirectConnectGatewayAttachments(value: DirectConnectGatewayAttachmentList): Self = StObject.set(x, "directConnectGatewayAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectConnectGatewayAttachmentsUndefined: Self = StObject.set(x, "directConnectGatewayAttachments", js.undefined)
+    inline def setDirectConnectGatewayAttachmentsUndefined: Self = StObject.set(x, "directConnectGatewayAttachments", js.undefined)
     
-    @scala.inline
-    def setDirectConnectGatewayAttachmentsVarargs(value: DirectConnectGatewayAttachment*): Self = StObject.set(x, "directConnectGatewayAttachments", js.Array(value :_*))
+    inline def setDirectConnectGatewayAttachmentsVarargs(value: DirectConnectGatewayAttachment*): Self = StObject.set(x, "directConnectGatewayAttachments", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

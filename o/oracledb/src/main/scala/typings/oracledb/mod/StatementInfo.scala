@@ -20,37 +20,27 @@ trait StatementInfo[T] extends StObject {
 }
 object StatementInfo {
   
-  @scala.inline
-  def apply[T](): StatementInfo[T] = {
+  inline def apply[T](): StatementInfo[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatementInfo[T]]
   }
   
-  @scala.inline
-  implicit class StatementInfoMutableBuilder[Self <: StatementInfo[?], T] (val x: Self & StatementInfo[T]) extends AnyVal {
+  extension [Self <: StatementInfo[?], T](x: Self & StatementInfo[T]) {
     
-    @scala.inline
-    def setBindNames(value: js.Array[String]): Self = StObject.set(x, "bindNames", value.asInstanceOf[js.Any])
+    inline def setBindNames(value: js.Array[String]): Self = StObject.set(x, "bindNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindNamesUndefined: Self = StObject.set(x, "bindNames", js.undefined)
+    inline def setBindNamesUndefined: Self = StObject.set(x, "bindNames", js.undefined)
     
-    @scala.inline
-    def setBindNamesVarargs(value: String*): Self = StObject.set(x, "bindNames", js.Array(value :_*))
+    inline def setBindNamesVarargs(value: String*): Self = StObject.set(x, "bindNames", js.Array(value :_*))
     
-    @scala.inline
-    def setMetaData(value: js.Array[Metadata[T]]): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
+    inline def setMetaData(value: js.Array[Metadata[T]]): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
+    inline def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
     
-    @scala.inline
-    def setMetaDataVarargs(value: Metadata[T]*): Self = StObject.set(x, "metaData", js.Array(value :_*))
+    inline def setMetaDataVarargs(value: Metadata[T]*): Self = StObject.set(x, "metaData", js.Array(value :_*))
     
-    @scala.inline
-    def setStatementType(value: Double): Self = StObject.set(x, "statementType", value.asInstanceOf[js.Any])
+    inline def setStatementType(value: Double): Self = StObject.set(x, "statementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementTypeUndefined: Self = StObject.set(x, "statementType", js.undefined)
+    inline def setStatementTypeUndefined: Self = StObject.set(x, "statementType", js.undefined)
   }
 }

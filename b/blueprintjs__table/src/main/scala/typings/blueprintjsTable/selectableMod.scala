@@ -24,48 +24,48 @@ object selectableMod {
       */
     def this(props: IDragSelectableProps, context: js.Any) = this()
     
-    var didExpandSelectionOnActivate: js.Any = js.native
+    /* private */ var didExpandSelectionOnActivate: js.Any = js.native
     
     /**
       * Expands the last-selected region to the new region, and replaces the
       * last-selected region with the expanded region. If a focused cell is provided,
       * the focused cell will serve as an anchor for the expansion.
       */
-    var expandSelectedRegions: js.Any = js.native
+    /* private */ var expandSelectedRegions: js.Any = js.native
     
-    var finishInteraction: js.Any = js.native
+    /* private */ var finishInteraction: js.Any = js.native
     
-    var getDraggableProps: js.Any = js.native
+    /* private */ var getDraggableProps: js.Any = js.native
     
-    var handleActivate: js.Any = js.native
+    /* private */ var handleActivate: js.Any = js.native
     
-    var handleAddDisjointSelection: js.Any = js.native
+    /* private */ var handleAddDisjointSelection: js.Any = js.native
     
-    var handleClearAllSelectionsNotAtIndex: js.Any = js.native
+    /* private */ var handleClearAllSelectionsNotAtIndex: js.Any = js.native
     
-    var handleClearSelectionAtIndex: js.Any = js.native
+    /* private */ var handleClearSelectionAtIndex: js.Any = js.native
     
-    var handleClick: js.Any = js.native
+    /* private */ var handleClick: js.Any = js.native
     
-    var handleDragEnd: js.Any = js.native
+    /* private */ var handleDragEnd: js.Any = js.native
     
-    var handleDragMove: js.Any = js.native
+    /* private */ var handleDragMove: js.Any = js.native
     
-    var handleExpandSelection: js.Any = js.native
+    /* private */ var handleExpandSelection: js.Any = js.native
     
-    var handleReplaceSelection: js.Any = js.native
+    /* private */ var handleReplaceSelection: js.Any = js.native
     
-    var invokeOnFocusCallbackForRegion: js.Any = js.native
+    /* private */ var invokeOnFocusCallbackForRegion: js.Any = js.native
     
-    var lastEmittedSelectedRegions: js.Any = js.native
+    /* private */ var lastEmittedSelectedRegions: js.Any = js.native
     
-    var maybeInvokeSelectionCallback: js.Any = js.native
+    /* private */ var maybeInvokeSelectionCallback: js.Any = js.native
     
-    var shouldAddDisjointSelection: js.Any = js.native
+    /* private */ var shouldAddDisjointSelection: js.Any = js.native
     
-    var shouldExpandSelection: js.Any = js.native
+    /* private */ var shouldExpandSelection: js.Any = js.native
     
-    var shouldIgnoreMouseDown: js.Any = js.native
+    /* private */ var shouldIgnoreMouseDown: js.Any = js.native
   }
   /* static members */
   object DragSelectable {
@@ -77,8 +77,7 @@ object selectableMod {
     @JSImport("@blueprintjs/table/lib/esm/interactions/selectable", "DragSelectable.defaultProps")
     @js.native
     def defaultProps: PartialIDragSelectablePro = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialIDragSelectablePro): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialIDragSelectablePro): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -166,55 +165,40 @@ object selectableMod {
   }
   object ISelectableProps {
     
-    @scala.inline
-    def apply(onFocusedCell: IFocusedCellCoordinates => Unit, onSelection: js.Array[IRegion] => Unit): ISelectableProps = {
+    inline def apply(onFocusedCell: IFocusedCellCoordinates => Unit, onSelection: js.Array[IRegion] => Unit): ISelectableProps = {
       val __obj = js.Dynamic.literal(onFocusedCell = js.Any.fromFunction1(onFocusedCell), onSelection = js.Any.fromFunction1(onSelection))
       __obj.asInstanceOf[ISelectableProps]
     }
     
-    @scala.inline
-    implicit class ISelectablePropsMutableBuilder[Self <: ISelectableProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISelectableProps](x: Self) {
       
-      @scala.inline
-      def setEnableMultipleSelection(value: Boolean): Self = StObject.set(x, "enableMultipleSelection", value.asInstanceOf[js.Any])
+      inline def setEnableMultipleSelection(value: Boolean): Self = StObject.set(x, "enableMultipleSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableMultipleSelectionUndefined: Self = StObject.set(x, "enableMultipleSelection", js.undefined)
+      inline def setEnableMultipleSelectionUndefined: Self = StObject.set(x, "enableMultipleSelection", js.undefined)
       
-      @scala.inline
-      def setFocusedCell(value: IFocusedCellCoordinates): Self = StObject.set(x, "focusedCell", value.asInstanceOf[js.Any])
+      inline def setFocusedCell(value: IFocusedCellCoordinates): Self = StObject.set(x, "focusedCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedCellUndefined: Self = StObject.set(x, "focusedCell", js.undefined)
+      inline def setFocusedCellUndefined: Self = StObject.set(x, "focusedCell", js.undefined)
       
-      @scala.inline
-      def setOnFocusedCell(value: IFocusedCellCoordinates => Unit): Self = StObject.set(x, "onFocusedCell", js.Any.fromFunction1(value))
+      inline def setOnFocusedCell(value: IFocusedCellCoordinates => Unit): Self = StObject.set(x, "onFocusedCell", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelection(value: js.Array[IRegion] => Unit): Self = StObject.set(x, "onSelection", js.Any.fromFunction1(value))
+      inline def setOnSelection(value: js.Array[IRegion] => Unit): Self = StObject.set(x, "onSelection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectionEnd(value: /* regions */ js.Array[IRegion] => Unit): Self = StObject.set(x, "onSelectionEnd", js.Any.fromFunction1(value))
+      inline def setOnSelectionEnd(value: /* regions */ js.Array[IRegion] => Unit): Self = StObject.set(x, "onSelectionEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectionEndUndefined: Self = StObject.set(x, "onSelectionEnd", js.undefined)
+      inline def setOnSelectionEndUndefined: Self = StObject.set(x, "onSelectionEnd", js.undefined)
       
-      @scala.inline
-      def setSelectedRegionTransform(
+      inline def setSelectedRegionTransform(
         value: (/* region */ IRegion, /* event */ MouseEvent | KeyboardEvent, /* coords */ js.UndefOr[ICoordinateData]) => IRegion
       ): Self = StObject.set(x, "selectedRegionTransform", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSelectedRegionTransformUndefined: Self = StObject.set(x, "selectedRegionTransform", js.undefined)
+      inline def setSelectedRegionTransformUndefined: Self = StObject.set(x, "selectedRegionTransform", js.undefined)
       
-      @scala.inline
-      def setSelectedRegions(value: js.Array[IRegion]): Self = StObject.set(x, "selectedRegions", value.asInstanceOf[js.Any])
+      inline def setSelectedRegions(value: js.Array[IRegion]): Self = StObject.set(x, "selectedRegions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedRegionsUndefined: Self = StObject.set(x, "selectedRegions", js.undefined)
+      inline def setSelectedRegionsUndefined: Self = StObject.set(x, "selectedRegions", js.undefined)
       
-      @scala.inline
-      def setSelectedRegionsVarargs(value: IRegion*): Self = StObject.set(x, "selectedRegions", js.Array(value :_*))
+      inline def setSelectedRegionsVarargs(value: IRegion*): Self = StObject.set(x, "selectedRegions", js.Array(value :_*))
     }
   }
   

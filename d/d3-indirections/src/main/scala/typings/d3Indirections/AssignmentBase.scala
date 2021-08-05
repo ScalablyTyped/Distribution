@@ -14,16 +14,13 @@ trait AssignmentBase extends StObject {
 }
 object AssignmentBase {
   
-  @scala.inline
-  def apply(uid: String): AssignmentBase = {
+  inline def apply(uid: String): AssignmentBase = {
     val __obj = js.Dynamic.literal(uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignmentBase]
   }
   
-  @scala.inline
-  implicit class AssignmentBaseMutableBuilder[Self <: AssignmentBase] (val x: Self) extends AnyVal {
+  extension [Self <: AssignmentBase](x: Self) {
     
-    @scala.inline
-    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

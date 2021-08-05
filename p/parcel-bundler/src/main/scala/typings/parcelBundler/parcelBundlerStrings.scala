@@ -8,36 +8,29 @@ object parcelBundlerStrings {
   
   @js.native
   sealed trait browser extends StObject
-  @scala.inline
-  def browser: browser = "browser".asInstanceOf[browser]
+  inline def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
   sealed trait buildEnd extends StObject
-  @scala.inline
-  def buildEnd: buildEnd = "buildEnd".asInstanceOf[buildEnd]
+  inline def buildEnd: buildEnd = "buildEnd".asInstanceOf[buildEnd]
   
   @js.native
   sealed trait buildError extends StObject
-  @scala.inline
-  def buildError: buildError = "buildError".asInstanceOf[buildError]
+  inline def buildError: buildError = "buildError".asInstanceOf[buildError]
   
   @js.native
   sealed trait buildStart extends StObject
-  @scala.inline
-  def buildStart: buildStart = "buildStart".asInstanceOf[buildStart]
+  inline def buildStart: buildStart = "buildStart".asInstanceOf[buildStart]
   
   @js.native
   sealed trait bundled extends StObject
-  @scala.inline
-  def bundled: bundled = "bundled".asInstanceOf[bundled]
+  inline def bundled: bundled = "bundled".asInstanceOf[bundled]
   
   @js.native
   sealed trait electron extends StObject
-  @scala.inline
-  def electron: electron = "electron".asInstanceOf[electron]
+  inline def electron: electron = "electron".asInstanceOf[electron]
   
   @js.native
   sealed trait node extends StObject
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
+  inline def node: node = "node".asInstanceOf[node]
 }

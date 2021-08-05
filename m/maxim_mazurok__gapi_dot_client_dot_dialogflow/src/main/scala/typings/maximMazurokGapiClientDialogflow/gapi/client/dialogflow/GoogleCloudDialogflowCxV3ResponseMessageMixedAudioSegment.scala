@@ -17,31 +17,23 @@ trait GoogleCloudDialogflowCxV3ResponseMessageMixedAudioSegment extends StObject
 }
 object GoogleCloudDialogflowCxV3ResponseMessageMixedAudioSegment {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowCxV3ResponseMessageMixedAudioSegment = {
+  inline def apply(): GoogleCloudDialogflowCxV3ResponseMessageMixedAudioSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ResponseMessageMixedAudioSegment]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowCxV3ResponseMessageMixedAudioSegmentMutableBuilder[Self <: GoogleCloudDialogflowCxV3ResponseMessageMixedAudioSegment] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowCxV3ResponseMessageMixedAudioSegment](x: Self) {
     
-    @scala.inline
-    def setAllowPlaybackInterruption(value: Boolean): Self = StObject.set(x, "allowPlaybackInterruption", value.asInstanceOf[js.Any])
+    inline def setAllowPlaybackInterruption(value: Boolean): Self = StObject.set(x, "allowPlaybackInterruption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPlaybackInterruptionUndefined: Self = StObject.set(x, "allowPlaybackInterruption", js.undefined)
+    inline def setAllowPlaybackInterruptionUndefined: Self = StObject.set(x, "allowPlaybackInterruption", js.undefined)
     
-    @scala.inline
-    def setAudio(value: String): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: String): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+    inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

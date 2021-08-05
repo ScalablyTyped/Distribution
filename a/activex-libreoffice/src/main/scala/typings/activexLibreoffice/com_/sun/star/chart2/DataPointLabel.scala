@@ -27,8 +27,7 @@ trait DataPointLabel extends StObject {
 }
 object DataPointLabel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ShowCategoryName: Boolean,
     ShowLegendSymbol: Boolean,
     ShowNumber: Boolean,
@@ -38,19 +37,14 @@ object DataPointLabel {
     __obj.asInstanceOf[DataPointLabel]
   }
   
-  @scala.inline
-  implicit class DataPointLabelMutableBuilder[Self <: DataPointLabel] (val x: Self) extends AnyVal {
+  extension [Self <: DataPointLabel](x: Self) {
     
-    @scala.inline
-    def setShowCategoryName(value: Boolean): Self = StObject.set(x, "ShowCategoryName", value.asInstanceOf[js.Any])
+    inline def setShowCategoryName(value: Boolean): Self = StObject.set(x, "ShowCategoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowLegendSymbol(value: Boolean): Self = StObject.set(x, "ShowLegendSymbol", value.asInstanceOf[js.Any])
+    inline def setShowLegendSymbol(value: Boolean): Self = StObject.set(x, "ShowLegendSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowNumber(value: Boolean): Self = StObject.set(x, "ShowNumber", value.asInstanceOf[js.Any])
+    inline def setShowNumber(value: Boolean): Self = StObject.set(x, "ShowNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowNumberInPercent(value: Boolean): Self = StObject.set(x, "ShowNumberInPercent", value.asInstanceOf[js.Any])
+    inline def setShowNumberInPercent(value: Boolean): Self = StObject.set(x, "ShowNumberInPercent", value.asInstanceOf[js.Any])
   }
 }

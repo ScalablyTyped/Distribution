@@ -11,8 +11,7 @@ object mongodbCorePubMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+  inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
   @JSImport("diagnostic-channel-publishers/dist/src/mongodb-core.pub", "mongoCore")
   @js.native

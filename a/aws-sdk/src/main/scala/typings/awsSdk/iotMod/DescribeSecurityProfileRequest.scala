@@ -13,16 +13,13 @@ trait DescribeSecurityProfileRequest extends StObject {
 }
 object DescribeSecurityProfileRequest {
   
-  @scala.inline
-  def apply(securityProfileName: SecurityProfileName): DescribeSecurityProfileRequest = {
+  inline def apply(securityProfileName: SecurityProfileName): DescribeSecurityProfileRequest = {
     val __obj = js.Dynamic.literal(securityProfileName = securityProfileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSecurityProfileRequest]
   }
   
-  @scala.inline
-  implicit class DescribeSecurityProfileRequestMutableBuilder[Self <: DescribeSecurityProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSecurityProfileRequest](x: Self) {
     
-    @scala.inline
-    def setSecurityProfileName(value: SecurityProfileName): Self = StObject.set(x, "securityProfileName", value.asInstanceOf[js.Any])
+    inline def setSecurityProfileName(value: SecurityProfileName): Self = StObject.set(x, "securityProfileName", value.asInstanceOf[js.Any])
   }
 }

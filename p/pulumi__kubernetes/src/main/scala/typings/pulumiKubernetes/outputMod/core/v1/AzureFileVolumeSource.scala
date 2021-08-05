@@ -26,22 +26,17 @@ trait AzureFileVolumeSource extends StObject {
 }
 object AzureFileVolumeSource {
   
-  @scala.inline
-  def apply(readOnly: Boolean, secretName: String, shareName: String): AzureFileVolumeSource = {
+  inline def apply(readOnly: Boolean, secretName: String, shareName: String): AzureFileVolumeSource = {
     val __obj = js.Dynamic.literal(readOnly = readOnly.asInstanceOf[js.Any], secretName = secretName.asInstanceOf[js.Any], shareName = shareName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureFileVolumeSource]
   }
   
-  @scala.inline
-  implicit class AzureFileVolumeSourceMutableBuilder[Self <: AzureFileVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: AzureFileVolumeSource](x: Self) {
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretName(value: String): Self = StObject.set(x, "secretName", value.asInstanceOf[js.Any])
+    inline def setSecretName(value: String): Self = StObject.set(x, "secretName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareName(value: String): Self = StObject.set(x, "shareName", value.asInstanceOf[js.Any])
+    inline def setShareName(value: String): Self = StObject.set(x, "shareName", value.asInstanceOf[js.Any])
   }
 }

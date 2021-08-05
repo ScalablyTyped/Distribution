@@ -49,12 +49,10 @@ object UrlMatchPattern {
   @JSImport("postman-collection", "UrlMatchPattern.MATCH_ALL_URLS")
   @js.native
   def MATCH_ALL_URLS: String = js.native
-  @scala.inline
-  def MATCH_ALL_URLS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MATCH_ALL_URLS")(x.asInstanceOf[js.Any])
+  inline def MATCH_ALL_URLS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MATCH_ALL_URLS")(x.asInstanceOf[js.Any])
   
   @JSImport("postman-collection", "UrlMatchPattern.PROTOCOL_DELIMITER")
   @js.native
   def PROTOCOL_DELIMITER: String = js.native
-  @scala.inline
-  def PROTOCOL_DELIMITER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROTOCOL_DELIMITER")(x.asInstanceOf[js.Any])
+  inline def PROTOCOL_DELIMITER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROTOCOL_DELIMITER")(x.asInstanceOf[js.Any])
 }

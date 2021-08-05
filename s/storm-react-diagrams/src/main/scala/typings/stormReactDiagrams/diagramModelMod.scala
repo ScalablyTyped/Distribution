@@ -107,44 +107,32 @@ object diagramModelMod {
   }
   object DiagramListener {
     
-    @scala.inline
-    def apply(): DiagramListener = {
+    inline def apply(): DiagramListener = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DiagramListener]
     }
     
-    @scala.inline
-    implicit class DiagramListenerMutableBuilder[Self <: DiagramListener] (val x: Self) extends AnyVal {
+    extension [Self <: DiagramListener](x: Self) {
       
-      @scala.inline
-      def setGridUpdated(value: /* event */ BaseEventDiagramModelsize => Unit): Self = StObject.set(x, "gridUpdated", js.Any.fromFunction1(value))
+      inline def setGridUpdated(value: /* event */ BaseEventDiagramModelsize => Unit): Self = StObject.set(x, "gridUpdated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGridUpdatedUndefined: Self = StObject.set(x, "gridUpdated", js.undefined)
+      inline def setGridUpdatedUndefined: Self = StObject.set(x, "gridUpdated", js.undefined)
       
-      @scala.inline
-      def setLinksUpdated(value: /* event */ BaseEventanylinkLinkModel => Unit): Self = StObject.set(x, "linksUpdated", js.Any.fromFunction1(value))
+      inline def setLinksUpdated(value: /* event */ BaseEventanylinkLinkModel => Unit): Self = StObject.set(x, "linksUpdated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLinksUpdatedUndefined: Self = StObject.set(x, "linksUpdated", js.undefined)
+      inline def setLinksUpdatedUndefined: Self = StObject.set(x, "linksUpdated", js.undefined)
       
-      @scala.inline
-      def setNodesUpdated(value: /* event */ BaseEventanynodeNodeModel => Unit): Self = StObject.set(x, "nodesUpdated", js.Any.fromFunction1(value))
+      inline def setNodesUpdated(value: /* event */ BaseEventanynodeNodeModel => Unit): Self = StObject.set(x, "nodesUpdated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNodesUpdatedUndefined: Self = StObject.set(x, "nodesUpdated", js.undefined)
+      inline def setNodesUpdatedUndefined: Self = StObject.set(x, "nodesUpdated", js.undefined)
       
-      @scala.inline
-      def setOffsetUpdated(value: /* event */ BaseEventDiagramModeloffs => Unit): Self = StObject.set(x, "offsetUpdated", js.Any.fromFunction1(value))
+      inline def setOffsetUpdated(value: /* event */ BaseEventDiagramModeloffs => Unit): Self = StObject.set(x, "offsetUpdated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOffsetUpdatedUndefined: Self = StObject.set(x, "offsetUpdated", js.undefined)
+      inline def setOffsetUpdatedUndefined: Self = StObject.set(x, "offsetUpdated", js.undefined)
       
-      @scala.inline
-      def setZoomUpdated(value: /* event */ BaseEventDiagramModelzoom => Unit): Self = StObject.set(x, "zoomUpdated", js.Any.fromFunction1(value))
+      inline def setZoomUpdated(value: /* event */ BaseEventDiagramModelzoom => Unit): Self = StObject.set(x, "zoomUpdated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setZoomUpdatedUndefined: Self = StObject.set(x, "zoomUpdated", js.undefined)
+      inline def setZoomUpdatedUndefined: Self = StObject.set(x, "zoomUpdated", js.undefined)
     }
   }
 }

@@ -17,7 +17,7 @@ object buttonGridBaseMod {
        with IButtonGrid {
     def this(props: IButtonGridProps) = this()
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

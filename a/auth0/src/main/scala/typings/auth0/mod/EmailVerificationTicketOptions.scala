@@ -12,19 +12,15 @@ trait EmailVerificationTicketOptions extends StObject {
 }
 object EmailVerificationTicketOptions {
   
-  @scala.inline
-  def apply(result_url: String, user_id: String): EmailVerificationTicketOptions = {
+  inline def apply(result_url: String, user_id: String): EmailVerificationTicketOptions = {
     val __obj = js.Dynamic.literal(result_url = result_url.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailVerificationTicketOptions]
   }
   
-  @scala.inline
-  implicit class EmailVerificationTicketOptionsMutableBuilder[Self <: EmailVerificationTicketOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EmailVerificationTicketOptions](x: Self) {
     
-    @scala.inline
-    def setResult_url(value: String): Self = StObject.set(x, "result_url", value.asInstanceOf[js.Any])
+    inline def setResult_url(value: String): Self = StObject.set(x, "result_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
   }
 }

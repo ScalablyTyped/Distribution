@@ -34,34 +34,25 @@ trait AutoFilterData extends StObject {
 }
 object AutoFilterData {
   
-  @scala.inline
-  def apply(): AutoFilterData = {
+  inline def apply(): AutoFilterData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoFilterData]
   }
   
-  @scala.inline
-  implicit class AutoFilterDataMutableBuilder[Self <: AutoFilterData] (val x: Self) extends AnyVal {
+  extension [Self <: AutoFilterData](x: Self) {
     
-    @scala.inline
-    def setCriteria(value: js.Array[FilterCriteria]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: js.Array[FilterCriteria]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    @scala.inline
-    def setCriteriaVarargs(value: FilterCriteria*): Self = StObject.set(x, "criteria", js.Array(value :_*))
+    inline def setCriteriaVarargs(value: FilterCriteria*): Self = StObject.set(x, "criteria", js.Array(value :_*))
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setIsDataFiltered(value: Boolean): Self = StObject.set(x, "isDataFiltered", value.asInstanceOf[js.Any])
+    inline def setIsDataFiltered(value: Boolean): Self = StObject.set(x, "isDataFiltered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDataFilteredUndefined: Self = StObject.set(x, "isDataFiltered", js.undefined)
+    inline def setIsDataFilteredUndefined: Self = StObject.set(x, "isDataFiltered", js.undefined)
   }
 }

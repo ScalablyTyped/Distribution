@@ -27,32 +27,24 @@ object filenameMod extends Shortcut {
   }
   object FilenameIconProps {
     
-    @scala.inline
-    def apply(): FilenameIconProps = {
+    inline def apply(): FilenameIconProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FilenameIconProps]
     }
     
-    @scala.inline
-    implicit class FilenameIconPropsMutableBuilder[Self <: FilenameIconProps] (val x: Self) extends AnyVal {
+    extension [Self <: FilenameIconProps](x: Self) {
       
-      @scala.inline
-      def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
+      inline def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconDescriptionUndefined: Self = StObject.set(x, "iconDescription", js.undefined)
+      inline def setIconDescriptionUndefined: Self = StObject.set(x, "iconDescription", js.undefined)
       
-      @scala.inline
-      def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+      inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
       
-      @scala.inline
-      def setStatus(value: FileStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: FileStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   

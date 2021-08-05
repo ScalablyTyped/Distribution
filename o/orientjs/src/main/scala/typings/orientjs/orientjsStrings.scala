@@ -11,280 +11,233 @@ object orientjsStrings {
   sealed trait Binary
     extends StObject
        with PropertyType
-  @scala.inline
-  def Binary: Binary = "Binary".asInstanceOf[Binary]
+  inline def Binary: Binary = "Binary".asInstanceOf[Binary]
   
   @js.native
   sealed trait Boolean
     extends StObject
        with PropertyType
-  @scala.inline
-  def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
+  inline def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
   
   @js.native
   sealed trait Byte
     extends StObject
        with PropertyType
-  @scala.inline
-  def Byte: Byte = "Byte".asInstanceOf[Byte]
+  inline def Byte: Byte = "Byte".asInstanceOf[Byte]
   
   @js.native
   sealed trait CACHED extends StObject
-  @scala.inline
-  def CACHED: CACHED = "CACHED".asInstanceOf[CACHED]
+  inline def CACHED: CACHED = "CACHED".asInstanceOf[CACHED]
   
   @js.native
   sealed trait COLA extends StObject
-  @scala.inline
-  def COLA: COLA = "COLA".asInstanceOf[COLA]
+  inline def COLA: COLA = "COLA".asInstanceOf[COLA]
   
   @js.native
   sealed trait Custom
     extends StObject
        with PropertyType
-  @scala.inline
-  def Custom: Custom = "Custom".asInstanceOf[Custom]
+  inline def Custom: Custom = "Custom".asInstanceOf[Custom]
   
   @js.native
   sealed trait DICTIONARY extends StObject
-  @scala.inline
-  def DICTIONARY: DICTIONARY = "DICTIONARY".asInstanceOf[DICTIONARY]
+  inline def DICTIONARY: DICTIONARY = "DICTIONARY".asInstanceOf[DICTIONARY]
   
   @js.native
   sealed trait DICTIONARY_HASH_INDEX extends StObject
-  @scala.inline
-  def DICTIONARY_HASH_INDEX: DICTIONARY_HASH_INDEX = "DICTIONARY_HASH_INDEX".asInstanceOf[DICTIONARY_HASH_INDEX]
+  inline def DICTIONARY_HASH_INDEX: DICTIONARY_HASH_INDEX = "DICTIONARY_HASH_INDEX".asInstanceOf[DICTIONARY_HASH_INDEX]
   
   @js.native
   sealed trait Date
     extends StObject
        with PropertyType
-  @scala.inline
-  def Date: Date = "Date".asInstanceOf[Date]
+  inline def Date: Date = "Date".asInstanceOf[Date]
   
   @js.native
   sealed trait DateTime
     extends StObject
        with PropertyType
-  @scala.inline
-  def DateTime: DateTime = "DateTime".asInstanceOf[DateTime]
+  inline def DateTime: DateTime = "DateTime".asInstanceOf[DateTime]
   
   @js.native
   sealed trait Decimal
     extends StObject
        with PropertyType
-  @scala.inline
-  def Decimal: Decimal = "Decimal".asInstanceOf[Decimal]
+  inline def Decimal: Decimal = "Decimal".asInstanceOf[Decimal]
   
   @js.native
   sealed trait Double
     extends StObject
        with PropertyType
-  @scala.inline
-  def Double: Double = "Double".asInstanceOf[Double]
+  inline def Double: Double = "Double".asInstanceOf[Double]
   
   @js.native
   sealed trait Embedded
     extends StObject
        with PropertyType
-  @scala.inline
-  def Embedded: Embedded = "Embedded".asInstanceOf[Embedded]
+  inline def Embedded: Embedded = "Embedded".asInstanceOf[Embedded]
   
   @js.native
   sealed trait EmbeddedList
     extends StObject
        with PropertyType
-  @scala.inline
-  def EmbeddedList: EmbeddedList = "EmbeddedList".asInstanceOf[EmbeddedList]
+  inline def EmbeddedList: EmbeddedList = "EmbeddedList".asInstanceOf[EmbeddedList]
   
   @js.native
   sealed trait EmbeddedMap
     extends StObject
        with PropertyType
-  @scala.inline
-  def EmbeddedMap: EmbeddedMap = "EmbeddedMap".asInstanceOf[EmbeddedMap]
+  inline def EmbeddedMap: EmbeddedMap = "EmbeddedMap".asInstanceOf[EmbeddedMap]
   
   @js.native
   sealed trait EmbeddedSet
     extends StObject
        with PropertyType
-  @scala.inline
-  def EmbeddedSet: EmbeddedSet = "EmbeddedSet".asInstanceOf[EmbeddedSet]
+  inline def EmbeddedSet: EmbeddedSet = "EmbeddedSet".asInstanceOf[EmbeddedSet]
   
   @js.native
   sealed trait FULLTEXT extends StObject
-  @scala.inline
-  def FULLTEXT: FULLTEXT = "FULLTEXT".asInstanceOf[FULLTEXT]
+  inline def FULLTEXT: FULLTEXT = "FULLTEXT".asInstanceOf[FULLTEXT]
   
   @js.native
   sealed trait FULLTEXT_HASH_INDEX extends StObject
-  @scala.inline
-  def FULLTEXT_HASH_INDEX: FULLTEXT_HASH_INDEX = "FULLTEXT_HASH_INDEX".asInstanceOf[FULLTEXT_HASH_INDEX]
+  inline def FULLTEXT_HASH_INDEX: FULLTEXT_HASH_INDEX = "FULLTEXT_HASH_INDEX".asInstanceOf[FULLTEXT_HASH_INDEX]
   
   @js.native
   sealed trait Float
     extends StObject
        with PropertyType
-  @scala.inline
-  def Float: Float = "Float".asInstanceOf[Float]
+  inline def Float: Float = "Float".asInstanceOf[Float]
   
   @js.native
   sealed trait Integer
     extends StObject
        with PropertyType
-  @scala.inline
-  def Integer: Integer = "Integer".asInstanceOf[Integer]
+  inline def Integer: Integer = "Integer".asInstanceOf[Integer]
   
   @js.native
   sealed trait Javascript extends StObject
-  @scala.inline
-  def Javascript: Javascript = "Javascript".asInstanceOf[Javascript]
+  inline def Javascript: Javascript = "Javascript".asInstanceOf[Javascript]
   
   @js.native
   sealed trait LUCENE extends StObject
-  @scala.inline
-  def LUCENE: LUCENE = "LUCENE".asInstanceOf[LUCENE]
+  inline def LUCENE: LUCENE = "LUCENE".asInstanceOf[LUCENE]
   
   @js.native
   sealed trait Link
     extends StObject
        with PropertyType
-  @scala.inline
-  def Link: Link = "Link".asInstanceOf[Link]
+  inline def Link: Link = "Link".asInstanceOf[Link]
   
   @js.native
   sealed trait LinkBag
     extends StObject
        with PropertyType
-  @scala.inline
-  def LinkBag: LinkBag = "LinkBag".asInstanceOf[LinkBag]
+  inline def LinkBag: LinkBag = "LinkBag".asInstanceOf[LinkBag]
   
   @js.native
   sealed trait LinkList
     extends StObject
        with PropertyType
-  @scala.inline
-  def LinkList: LinkList = "LinkList".asInstanceOf[LinkList]
+  inline def LinkList: LinkList = "LinkList".asInstanceOf[LinkList]
   
   @js.native
   sealed trait LinkMap
     extends StObject
        with PropertyType
-  @scala.inline
-  def LinkMap: LinkMap = "LinkMap".asInstanceOf[LinkMap]
+  inline def LinkMap: LinkMap = "LinkMap".asInstanceOf[LinkMap]
   
   @js.native
   sealed trait LinkSet
     extends StObject
        with PropertyType
-  @scala.inline
-  def LinkSet: LinkSet = "LinkSet".asInstanceOf[LinkSet]
+  inline def LinkSet: LinkSet = "LinkSet".asInstanceOf[LinkSet]
   
   @js.native
   sealed trait Long
     extends StObject
        with PropertyType
-  @scala.inline
-  def Long: Long = "Long".asInstanceOf[Long]
+  inline def Long: Long = "Long".asInstanceOf[Long]
   
   @js.native
   sealed trait NOTUNIQUE extends StObject
-  @scala.inline
-  def NOTUNIQUE: NOTUNIQUE = "NOTUNIQUE".asInstanceOf[NOTUNIQUE]
+  inline def NOTUNIQUE: NOTUNIQUE = "NOTUNIQUE".asInstanceOf[NOTUNIQUE]
   
   @js.native
   sealed trait NOTUNIQUE_HASH_INDEX extends StObject
-  @scala.inline
-  def NOTUNIQUE_HASH_INDEX: NOTUNIQUE_HASH_INDEX = "NOTUNIQUE_HASH_INDEX".asInstanceOf[NOTUNIQUE_HASH_INDEX]
+  inline def NOTUNIQUE_HASH_INDEX: NOTUNIQUE_HASH_INDEX = "NOTUNIQUE_HASH_INDEX".asInstanceOf[NOTUNIQUE_HASH_INDEX]
   
   @js.native
   sealed trait ORDERED extends StObject
-  @scala.inline
-  def ORDERED: ORDERED = "ORDERED".asInstanceOf[ORDERED]
+  inline def ORDERED: ORDERED = "ORDERED".asInstanceOf[ORDERED]
   
   @js.native
   sealed trait SPATIAL extends StObject
-  @scala.inline
-  def SPATIAL: SPATIAL = "SPATIAL".asInstanceOf[SPATIAL]
+  inline def SPATIAL: SPATIAL = "SPATIAL".asInstanceOf[SPATIAL]
   
   @js.native
   sealed trait SQL extends StObject
-  @scala.inline
-  def SQL: SQL = "SQL".asInstanceOf[SQL]
+  inline def SQL: SQL = "SQL".asInstanceOf[SQL]
   
   @js.native
   sealed trait Short
     extends StObject
        with PropertyType
-  @scala.inline
-  def Short: Short = "Short".asInstanceOf[Short]
+  inline def Short: Short = "Short".asInstanceOf[Short]
   
   @js.native
   sealed trait String
     extends StObject
        with PropertyType
-  @scala.inline
-  def String: String = "String".asInstanceOf[String]
+  inline def String: String = "String".asInstanceOf[String]
   
   @js.native
   sealed trait Transient
     extends StObject
        with PropertyType
-  @scala.inline
-  def Transient: Transient = "Transient".asInstanceOf[Transient]
+  inline def Transient: Transient = "Transient".asInstanceOf[Transient]
   
   @js.native
   sealed trait UNIQUE extends StObject
-  @scala.inline
-  def UNIQUE: UNIQUE = "UNIQUE".asInstanceOf[UNIQUE]
+  inline def UNIQUE: UNIQUE = "UNIQUE".asInstanceOf[UNIQUE]
   
   @js.native
   sealed trait UNIQUE_HASH_INDEX extends StObject
-  @scala.inline
-  def UNIQUE_HASH_INDEX: UNIQUE_HASH_INDEX = "UNIQUE_HASH_INDEX".asInstanceOf[UNIQUE_HASH_INDEX]
+  inline def UNIQUE_HASH_INDEX: UNIQUE_HASH_INDEX = "UNIQUE_HASH_INDEX".asInstanceOf[UNIQUE_HASH_INDEX]
   
   @js.native
   sealed trait a extends StObject
-  @scala.inline
-  def a: a = "a".asInstanceOf[a]
+  inline def a: a = "a".asInstanceOf[a]
   
   @js.native
   sealed trait b extends StObject
-  @scala.inline
-  def b: b = "b".asInstanceOf[b]
+  inline def b: b = "b".asInstanceOf[b]
   
   @js.native
   sealed trait d extends StObject
-  @scala.inline
-  def d: d = "d".asInstanceOf[d]
+  inline def d: d = "d".asInstanceOf[d]
   
   @js.native
   sealed trait document extends StObject
-  @scala.inline
-  def document: document = "document".asInstanceOf[document]
+  inline def document: document = "document".asInstanceOf[document]
   
   @js.native
   sealed trait graph extends StObject
-  @scala.inline
-  def graph: graph = "graph".asInstanceOf[graph]
+  inline def graph: graph = "graph".asInstanceOf[graph]
   
   @js.native
   sealed trait l extends StObject
-  @scala.inline
-  def l: l = "l".asInstanceOf[l]
+  inline def l: l = "l".asInstanceOf[l]
   
   @js.native
   sealed trait memory extends StObject
-  @scala.inline
-  def memory: memory = "memory".asInstanceOf[memory]
+  inline def memory: memory = "memory".asInstanceOf[memory]
   
   @js.native
   sealed trait plocal extends StObject
-  @scala.inline
-  def plocal: plocal = "plocal".asInstanceOf[plocal]
+  inline def plocal: plocal = "plocal".asInstanceOf[plocal]
   
   @js.native
   sealed trait s extends StObject
-  @scala.inline
-  def s: s = "s".asInstanceOf[s]
+  inline def s: s = "s".asInstanceOf[s]
 }

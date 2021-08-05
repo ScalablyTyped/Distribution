@@ -13,22 +13,17 @@ trait DescribeNFSFileSharesOutput extends StObject {
 }
 object DescribeNFSFileSharesOutput {
   
-  @scala.inline
-  def apply(): DescribeNFSFileSharesOutput = {
+  inline def apply(): DescribeNFSFileSharesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeNFSFileSharesOutput]
   }
   
-  @scala.inline
-  implicit class DescribeNFSFileSharesOutputMutableBuilder[Self <: DescribeNFSFileSharesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNFSFileSharesOutput](x: Self) {
     
-    @scala.inline
-    def setNFSFileShareInfoList(value: NFSFileShareInfoList): Self = StObject.set(x, "NFSFileShareInfoList", value.asInstanceOf[js.Any])
+    inline def setNFSFileShareInfoList(value: NFSFileShareInfoList): Self = StObject.set(x, "NFSFileShareInfoList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNFSFileShareInfoListUndefined: Self = StObject.set(x, "NFSFileShareInfoList", js.undefined)
+    inline def setNFSFileShareInfoListUndefined: Self = StObject.set(x, "NFSFileShareInfoList", js.undefined)
     
-    @scala.inline
-    def setNFSFileShareInfoListVarargs(value: NFSFileShareInfo*): Self = StObject.set(x, "NFSFileShareInfoList", js.Array(value :_*))
+    inline def setNFSFileShareInfoListVarargs(value: NFSFileShareInfo*): Self = StObject.set(x, "NFSFileShareInfoList", js.Array(value :_*))
   }
 }

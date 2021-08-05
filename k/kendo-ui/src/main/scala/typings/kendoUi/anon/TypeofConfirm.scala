@@ -15,19 +15,15 @@ trait TypeofConfirm extends StObject {
 }
 object TypeofConfirm {
   
-  @scala.inline
-  def apply(extend: js.Object => Confirm, fn: Confirm): TypeofConfirm = {
+  inline def apply(extend: js.Object => Confirm, fn: Confirm): TypeofConfirm = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofConfirm]
   }
   
-  @scala.inline
-  implicit class TypeofConfirmMutableBuilder[Self <: TypeofConfirm] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofConfirm](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Confirm): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Confirm): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Confirm): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Confirm): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

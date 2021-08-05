@@ -66,8 +66,7 @@ trait b2LineJointDef
 }
 object b2LineJointDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Initialize: (b2Body, b2Body, b2Vec2, b2Vec2) => Unit,
     bodyA: b2Body,
     bodyB: b2Body,
@@ -89,37 +88,26 @@ object b2LineJointDef {
     __obj.asInstanceOf[b2LineJointDef]
   }
   
-  @scala.inline
-  implicit class b2LineJointDefMutableBuilder[Self <: b2LineJointDef] (val x: Self) extends AnyVal {
+  extension [Self <: b2LineJointDef](x: Self) {
     
-    @scala.inline
-    def setEnableLimit(value: Boolean): Self = StObject.set(x, "enableLimit", value.asInstanceOf[js.Any])
+    inline def setEnableLimit(value: Boolean): Self = StObject.set(x, "enableLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableMotor(value: Boolean): Self = StObject.set(x, "enableMotor", value.asInstanceOf[js.Any])
+    inline def setEnableMotor(value: Boolean): Self = StObject.set(x, "enableMotor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialize(value: (b2Body, b2Body, b2Vec2, b2Vec2) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction4(value))
+    inline def setInitialize(value: (b2Body, b2Body, b2Vec2, b2Vec2) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setLocalAnchorA(value: b2Vec2): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
+    inline def setLocalAnchorA(value: b2Vec2): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalAnchorB(value: b2Vec2): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
+    inline def setLocalAnchorB(value: b2Vec2): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalAxisA(value: b2Vec2): Self = StObject.set(x, "localAxisA", value.asInstanceOf[js.Any])
+    inline def setLocalAxisA(value: b2Vec2): Self = StObject.set(x, "localAxisA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerTranslation(value: Double): Self = StObject.set(x, "lowerTranslation", value.asInstanceOf[js.Any])
+    inline def setLowerTranslation(value: Double): Self = StObject.set(x, "lowerTranslation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMotorForce(value: Double): Self = StObject.set(x, "maxMotorForce", value.asInstanceOf[js.Any])
+    inline def setMaxMotorForce(value: Double): Self = StObject.set(x, "maxMotorForce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMotorSpeed(value: Double): Self = StObject.set(x, "motorSpeed", value.asInstanceOf[js.Any])
+    inline def setMotorSpeed(value: Double): Self = StObject.set(x, "motorSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperTranslation(value: Double): Self = StObject.set(x, "upperTranslation", value.asInstanceOf[js.Any])
+    inline def setUpperTranslation(value: Double): Self = StObject.set(x, "upperTranslation", value.asInstanceOf[js.Any])
   }
 }

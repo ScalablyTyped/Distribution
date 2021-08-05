@@ -15,20 +15,16 @@ object anon {
   }
   object PickIntlListFormatOptions {
     
-    @scala.inline
-    def apply(): PickIntlListFormatOptions = {
+    inline def apply(): PickIntlListFormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickIntlListFormatOptions]
     }
     
-    @scala.inline
-    implicit class PickIntlListFormatOptionsMutableBuilder[Self <: PickIntlListFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PickIntlListFormatOptions](x: Self) {
       
-      @scala.inline
-      def setLocaleMatcher(value: (`best fit`) | lookup): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+      inline def setLocaleMatcher(value: (`best fit`) | lookup): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+      inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
     }
   }
 }

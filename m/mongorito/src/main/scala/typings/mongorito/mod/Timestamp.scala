@@ -40,23 +40,18 @@ object Timestamp {
     * @param lowBits The low 32-bits.
     * @param highBits The high 32-bits.
     */
-  @scala.inline
-  def fromBits(lowBits: Double, highBits: Double): typings.bson.mod.Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[typings.bson.mod.Timestamp]
+  inline def fromBits(lowBits: Double, highBits: Double): typings.bson.mod.Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[typings.bson.mod.Timestamp]
   
   /** Returns a Timestamp represented by the given (32-bit) integer value */
-  @scala.inline
-  def fromInt(value: Double): typings.bson.mod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Timestamp]
+  inline def fromInt(value: Double): typings.bson.mod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Timestamp]
   
   /** Returns a Timestamp representing the given number value, provided that it is a finite number. */
-  @scala.inline
-  def fromNumber(value: Double): typings.bson.mod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Timestamp]
+  inline def fromNumber(value: Double): typings.bson.mod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Timestamp]
   
   /**
     * Returns a Timestamp from the given string.
     * @param opt_radix The radix in which the text is written. {default:10}
     */
-  @scala.inline
-  def fromString(str: String): typings.bson.mod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Timestamp]
-  @scala.inline
-  def fromString(str: String, opt_radix: Double): typings.bson.mod.Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], opt_radix.asInstanceOf[js.Any])).asInstanceOf[typings.bson.mod.Timestamp]
+  inline def fromString(str: String): typings.bson.mod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Timestamp]
+  inline def fromString(str: String, opt_radix: Double): typings.bson.mod.Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], opt_radix.asInstanceOf[js.Any])).asInstanceOf[typings.bson.mod.Timestamp]
 }

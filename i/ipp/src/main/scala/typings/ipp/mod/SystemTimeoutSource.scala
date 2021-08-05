@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SystemTimeoutSource extends StObject
 object SystemTimeoutSource {
   
-  @scala.inline
-  def dhcp: typings.ipp.ippStrings.dhcp = "dhcp".asInstanceOf[typings.ipp.ippStrings.dhcp]
+  inline def dhcp: typings.ipp.ippStrings.dhcp = "dhcp".asInstanceOf[typings.ipp.ippStrings.dhcp]
   
-  @scala.inline
-  def ntp: typings.ipp.ippStrings.ntp = "ntp".asInstanceOf[typings.ipp.ippStrings.ntp]
+  inline def ntp: typings.ipp.ippStrings.ntp = "ntp".asInstanceOf[typings.ipp.ippStrings.ntp]
   
-  @scala.inline
-  def onboard: typings.ipp.ippStrings.onboard = "onboard".asInstanceOf[typings.ipp.ippStrings.onboard]
+  inline def onboard: typings.ipp.ippStrings.onboard = "onboard".asInstanceOf[typings.ipp.ippStrings.onboard]
   
-  @scala.inline
-  def sntp: typings.ipp.ippStrings.sntp = "sntp".asInstanceOf[typings.ipp.ippStrings.sntp]
+  inline def sntp: typings.ipp.ippStrings.sntp = "sntp".asInstanceOf[typings.ipp.ippStrings.sntp]
 }

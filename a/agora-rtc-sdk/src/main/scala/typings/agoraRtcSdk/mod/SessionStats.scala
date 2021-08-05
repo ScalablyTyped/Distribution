@@ -38,49 +38,35 @@ trait SessionStats extends StObject {
 }
 object SessionStats {
   
-  @scala.inline
-  def apply(): SessionStats = {
+  inline def apply(): SessionStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SessionStats]
   }
   
-  @scala.inline
-  implicit class SessionStatsMutableBuilder[Self <: SessionStats] (val x: Self) extends AnyVal {
+  extension [Self <: SessionStats](x: Self) {
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    @scala.inline
-    def setRecvBitrate(value: String): Self = StObject.set(x, "RecvBitrate", value.asInstanceOf[js.Any])
+    inline def setRecvBitrate(value: String): Self = StObject.set(x, "RecvBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecvBitrateUndefined: Self = StObject.set(x, "RecvBitrate", js.undefined)
+    inline def setRecvBitrateUndefined: Self = StObject.set(x, "RecvBitrate", js.undefined)
     
-    @scala.inline
-    def setRecvBytes(value: String): Self = StObject.set(x, "RecvBytes", value.asInstanceOf[js.Any])
+    inline def setRecvBytes(value: String): Self = StObject.set(x, "RecvBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecvBytesUndefined: Self = StObject.set(x, "RecvBytes", js.undefined)
+    inline def setRecvBytesUndefined: Self = StObject.set(x, "RecvBytes", js.undefined)
     
-    @scala.inline
-    def setSendBitrate(value: String): Self = StObject.set(x, "SendBitrate", value.asInstanceOf[js.Any])
+    inline def setSendBitrate(value: String): Self = StObject.set(x, "SendBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendBitrateUndefined: Self = StObject.set(x, "SendBitrate", js.undefined)
+    inline def setSendBitrateUndefined: Self = StObject.set(x, "SendBitrate", js.undefined)
     
-    @scala.inline
-    def setSendBytes(value: String): Self = StObject.set(x, "SendBytes", value.asInstanceOf[js.Any])
+    inline def setSendBytes(value: String): Self = StObject.set(x, "SendBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendBytesUndefined: Self = StObject.set(x, "SendBytes", js.undefined)
+    inline def setSendBytesUndefined: Self = StObject.set(x, "SendBytes", js.undefined)
     
-    @scala.inline
-    def setUserCount(value: String): Self = StObject.set(x, "UserCount", value.asInstanceOf[js.Any])
+    inline def setUserCount(value: String): Self = StObject.set(x, "UserCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserCountUndefined: Self = StObject.set(x, "UserCount", js.undefined)
+    inline def setUserCountUndefined: Self = StObject.set(x, "UserCount", js.undefined)
   }
 }

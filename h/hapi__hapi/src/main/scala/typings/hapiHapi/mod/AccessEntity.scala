@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccessEntity extends StObject
 object AccessEntity {
   
-  @scala.inline
-  def any: typings.hapiHapi.hapiHapiStrings.any = "any".asInstanceOf[typings.hapiHapi.hapiHapiStrings.any]
+  inline def any: typings.hapiHapi.hapiHapiStrings.any = "any".asInstanceOf[typings.hapiHapi.hapiHapiStrings.any]
   
-  @scala.inline
-  def app: typings.hapiHapi.hapiHapiStrings.app = "app".asInstanceOf[typings.hapiHapi.hapiHapiStrings.app]
+  inline def app: typings.hapiHapi.hapiHapiStrings.app = "app".asInstanceOf[typings.hapiHapi.hapiHapiStrings.app]
   
-  @scala.inline
-  def user: typings.hapiHapi.hapiHapiStrings.user = "user".asInstanceOf[typings.hapiHapi.hapiHapiStrings.user]
+  inline def user: typings.hapiHapi.hapiHapiStrings.user = "user".asInstanceOf[typings.hapiHapi.hapiHapiStrings.user]
 }

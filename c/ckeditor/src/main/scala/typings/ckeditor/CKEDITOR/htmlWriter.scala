@@ -24,8 +24,7 @@ trait htmlWriter
 }
 object htmlWriter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attribute: (String, String) => Unit,
     closeTag: String => Unit,
     comment: String => Unit,
@@ -46,25 +45,18 @@ object htmlWriter {
     __obj.asInstanceOf[htmlWriter]
   }
   
-  @scala.inline
-  implicit class htmlWriterMutableBuilder[Self <: htmlWriter] (val x: Self) extends AnyVal {
+  extension [Self <: htmlWriter](x: Self) {
     
-    @scala.inline
-    def setIndentation(value: () => Unit): Self = StObject.set(x, "indentation", js.Any.fromFunction0(value))
+    inline def setIndentation(value: () => Unit): Self = StObject.set(x, "indentation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndentationChars(value: String): Self = StObject.set(x, "indentationChars", value.asInstanceOf[js.Any])
+    inline def setIndentationChars(value: String): Self = StObject.set(x, "indentationChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineBreak(value: () => Unit): Self = StObject.set(x, "lineBreak", js.Any.fromFunction0(value))
+    inline def setLineBreak(value: () => Unit): Self = StObject.set(x, "lineBreak", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLineBreakChars(value: String): Self = StObject.set(x, "lineBreakChars", value.asInstanceOf[js.Any])
+    inline def setLineBreakChars(value: String): Self = StObject.set(x, "lineBreakChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfClosingEnd(value: String): Self = StObject.set(x, "selfClosingEnd", value.asInstanceOf[js.Any])
+    inline def setSelfClosingEnd(value: String): Self = StObject.set(x, "selfClosingEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetRules(value: (String, StringDictionary[js.Any]) => Unit): Self = StObject.set(x, "setRules", js.Any.fromFunction2(value))
+    inline def setSetRules(value: (String, StringDictionary[js.Any]) => Unit): Self = StObject.set(x, "setRules", js.Any.fromFunction2(value))
   }
 }

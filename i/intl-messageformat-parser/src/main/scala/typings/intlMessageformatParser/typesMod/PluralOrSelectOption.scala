@@ -12,25 +12,19 @@ trait PluralOrSelectOption extends StObject {
 }
 object PluralOrSelectOption {
   
-  @scala.inline
-  def apply(value: js.Array[MessageFormatElement]): PluralOrSelectOption = {
+  inline def apply(value: js.Array[MessageFormatElement]): PluralOrSelectOption = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluralOrSelectOption]
   }
   
-  @scala.inline
-  implicit class PluralOrSelectOptionMutableBuilder[Self <: PluralOrSelectOption] (val x: Self) extends AnyVal {
+  extension [Self <: PluralOrSelectOption](x: Self) {
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Array[MessageFormatElement]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[MessageFormatElement]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: MessageFormatElement*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: MessageFormatElement*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

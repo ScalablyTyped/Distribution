@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlVerticalLayout extends StObject
 object OlVerticalLayout {
   
-  @scala.inline
-  def olVerticalLayoutAlignBottom: `2` = 2.asInstanceOf[`2`]
+  inline def olVerticalLayoutAlignBottom: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olVerticalLayoutAlignMiddle: `1` = 1.asInstanceOf[`1`]
+  inline def olVerticalLayoutAlignMiddle: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olVerticalLayoutAlignTop: `0` = 0.asInstanceOf[`0`]
+  inline def olVerticalLayoutAlignTop: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olVerticalLayoutGrow: `3` = 3.asInstanceOf[`3`]
+  inline def olVerticalLayoutGrow: `3` = 3.asInstanceOf[`3`]
 }

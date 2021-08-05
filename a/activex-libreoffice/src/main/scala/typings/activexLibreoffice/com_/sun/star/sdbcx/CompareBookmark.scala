@@ -21,19 +21,14 @@ object CompareBookmark {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def EQUAL: `0` = 0.asInstanceOf[`0`]
+    inline def EQUAL: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def GREATER: `1` = 1.asInstanceOf[`1`]
+    inline def GREATER: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def LESS: `-1` = -1.asInstanceOf[`-1`]
+    inline def LESS: `-1` = -1.asInstanceOf[`-1`]
     
-    @scala.inline
-    def NOT_COMPARABLE: `3` = 3.asInstanceOf[`3`]
+    inline def NOT_COMPARABLE: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def NOT_EQUAL: `2` = 2.asInstanceOf[`2`]
+    inline def NOT_EQUAL: `2` = 2.asInstanceOf[`2`]
   }
 }

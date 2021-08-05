@@ -14,25 +14,19 @@ trait MessageFields
 }
 object MessageFields {
   
-  @scala.inline
-  def apply(deliveryTag: Double, exchange: String, redelivered: Boolean, routingKey: String): MessageFields = {
+  inline def apply(deliveryTag: Double, exchange: String, redelivered: Boolean, routingKey: String): MessageFields = {
     val __obj = js.Dynamic.literal(deliveryTag = deliveryTag.asInstanceOf[js.Any], exchange = exchange.asInstanceOf[js.Any], redelivered = redelivered.asInstanceOf[js.Any], routingKey = routingKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageFields]
   }
   
-  @scala.inline
-  implicit class MessageFieldsMutableBuilder[Self <: MessageFields] (val x: Self) extends AnyVal {
+  extension [Self <: MessageFields](x: Self) {
     
-    @scala.inline
-    def setConsumerTag(value: String): Self = StObject.set(x, "consumerTag", value.asInstanceOf[js.Any])
+    inline def setConsumerTag(value: String): Self = StObject.set(x, "consumerTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerTagUndefined: Self = StObject.set(x, "consumerTag", js.undefined)
+    inline def setConsumerTagUndefined: Self = StObject.set(x, "consumerTag", js.undefined)
     
-    @scala.inline
-    def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
+    inline def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageCountUndefined: Self = StObject.set(x, "messageCount", js.undefined)
+    inline def setMessageCountUndefined: Self = StObject.set(x, "messageCount", js.undefined)
   }
 }

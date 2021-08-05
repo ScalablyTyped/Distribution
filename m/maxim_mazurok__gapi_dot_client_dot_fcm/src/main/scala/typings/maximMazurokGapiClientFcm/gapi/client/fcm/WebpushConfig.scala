@@ -37,49 +37,39 @@ trait WebpushConfig extends StObject {
 }
 object WebpushConfig {
   
-  @scala.inline
-  def apply(): WebpushConfig = {
+  inline def apply(): WebpushConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebpushConfig]
   }
   
-  @scala.inline
-  implicit class WebpushConfigMutableBuilder[Self <: WebpushConfig] (val x: Self) extends AnyVal {
+  extension [Self <: WebpushConfig](x: Self) {
     
-    @scala.inline
-    def setData(
+    inline def setData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setFcmOptions(value: WebpushFcmOptions): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
+    inline def setFcmOptions(value: WebpushFcmOptions): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFcmOptionsUndefined: Self = StObject.set(x, "fcmOptions", js.undefined)
+    inline def setFcmOptionsUndefined: Self = StObject.set(x, "fcmOptions", js.undefined)
     
-    @scala.inline
-    def setHeaders(
+    inline def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setNotification(
+    inline def setNotification(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
   }
 }

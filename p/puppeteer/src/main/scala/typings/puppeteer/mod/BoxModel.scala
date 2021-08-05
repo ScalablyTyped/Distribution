@@ -24,8 +24,7 @@ trait BoxModel extends StObject {
 }
 object BoxModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     border: js.Array[Box],
     content: js.Array[Box],
     height: Double,
@@ -37,37 +36,26 @@ object BoxModel {
     __obj.asInstanceOf[BoxModel]
   }
   
-  @scala.inline
-  implicit class BoxModelMutableBuilder[Self <: BoxModel] (val x: Self) extends AnyVal {
+  extension [Self <: BoxModel](x: Self) {
     
-    @scala.inline
-    def setBorder(value: js.Array[Box]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: js.Array[Box]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderVarargs(value: Box*): Self = StObject.set(x, "border", js.Array(value :_*))
+    inline def setBorderVarargs(value: Box*): Self = StObject.set(x, "border", js.Array(value :_*))
     
-    @scala.inline
-    def setContent(value: js.Array[Box]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Array[Box]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentVarargs(value: Box*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: Box*): Self = StObject.set(x, "content", js.Array(value :_*))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMargin(value: js.Array[Box]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: js.Array[Box]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginVarargs(value: Box*): Self = StObject.set(x, "margin", js.Array(value :_*))
+    inline def setMarginVarargs(value: Box*): Self = StObject.set(x, "margin", js.Array(value :_*))
     
-    @scala.inline
-    def setPadding(value: js.Array[Box]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: js.Array[Box]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingVarargs(value: Box*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Box*): Self = StObject.set(x, "padding", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

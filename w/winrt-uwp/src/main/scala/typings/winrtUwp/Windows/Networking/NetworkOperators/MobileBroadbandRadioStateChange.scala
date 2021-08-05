@@ -15,19 +15,15 @@ trait MobileBroadbandRadioStateChange extends StObject {
 }
 object MobileBroadbandRadioStateChange {
   
-  @scala.inline
-  def apply(deviceId: String, radioState: MobileBroadbandRadioState): MobileBroadbandRadioStateChange = {
+  inline def apply(deviceId: String, radioState: MobileBroadbandRadioState): MobileBroadbandRadioStateChange = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], radioState = radioState.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandRadioStateChange]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandRadioStateChangeMutableBuilder[Self <: MobileBroadbandRadioStateChange] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandRadioStateChange](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadioState(value: MobileBroadbandRadioState): Self = StObject.set(x, "radioState", value.asInstanceOf[js.Any])
+    inline def setRadioState(value: MobileBroadbandRadioState): Self = StObject.set(x, "radioState", value.asInstanceOf[js.Any])
   }
 }

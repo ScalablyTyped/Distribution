@@ -12,16 +12,13 @@ trait AccordionGroupEventArgs
 }
 object AccordionGroupEventArgs {
   
-  @scala.inline
-  def apply(group: BootstrapAccordionGroup, sender: Control): AccordionGroupEventArgs = {
+  inline def apply(group: BootstrapAccordionGroup, sender: Control): AccordionGroupEventArgs = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccordionGroupEventArgs]
   }
   
-  @scala.inline
-  implicit class AccordionGroupEventArgsMutableBuilder[Self <: AccordionGroupEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AccordionGroupEventArgs](x: Self) {
     
-    @scala.inline
-    def setGroup(value: BootstrapAccordionGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: BootstrapAccordionGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
   }
 }

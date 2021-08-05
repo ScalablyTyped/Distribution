@@ -40,20 +40,16 @@ object readerMod {
   }
   object MetadataConstructorOptions {
     
-    @scala.inline
-    def apply(authnRequestBinding: String, throwExceptions: Boolean): MetadataConstructorOptions = {
+    inline def apply(authnRequestBinding: String, throwExceptions: Boolean): MetadataConstructorOptions = {
       val __obj = js.Dynamic.literal(authnRequestBinding = authnRequestBinding.asInstanceOf[js.Any], throwExceptions = throwExceptions.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetadataConstructorOptions]
     }
     
-    @scala.inline
-    implicit class MetadataConstructorOptionsMutableBuilder[Self <: MetadataConstructorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MetadataConstructorOptions](x: Self) {
       
-      @scala.inline
-      def setAuthnRequestBinding(value: String): Self = StObject.set(x, "authnRequestBinding", value.asInstanceOf[js.Any])
+      inline def setAuthnRequestBinding(value: String): Self = StObject.set(x, "authnRequestBinding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowExceptions(value: Boolean): Self = StObject.set(x, "throwExceptions", value.asInstanceOf[js.Any])
+      inline def setThrowExceptions(value: Boolean): Self = StObject.set(x, "throwExceptions", value.asInstanceOf[js.Any])
     }
   }
 }

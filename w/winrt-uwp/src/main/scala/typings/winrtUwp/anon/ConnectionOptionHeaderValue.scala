@@ -13,19 +13,15 @@ trait ConnectionOptionHeaderValue extends StObject {
 }
 object ConnectionOptionHeaderValue {
   
-  @scala.inline
-  def apply(connectionOptionHeaderValue: HttpConnectionOptionHeaderValue, returnValue: Boolean): ConnectionOptionHeaderValue = {
+  inline def apply(connectionOptionHeaderValue: HttpConnectionOptionHeaderValue, returnValue: Boolean): ConnectionOptionHeaderValue = {
     val __obj = js.Dynamic.literal(connectionOptionHeaderValue = connectionOptionHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptionHeaderValue]
   }
   
-  @scala.inline
-  implicit class ConnectionOptionHeaderValueMutableBuilder[Self <: ConnectionOptionHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionOptionHeaderValue](x: Self) {
     
-    @scala.inline
-    def setConnectionOptionHeaderValue(value: HttpConnectionOptionHeaderValue): Self = StObject.set(x, "connectionOptionHeaderValue", value.asInstanceOf[js.Any])
+    inline def setConnectionOptionHeaderValue(value: HttpConnectionOptionHeaderValue): Self = StObject.set(x, "connectionOptionHeaderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

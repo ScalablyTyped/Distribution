@@ -21,25 +21,19 @@ trait SchemaIntegerMean extends StObject {
 }
 object SchemaIntegerMean {
   
-  @scala.inline
-  def apply(): SchemaIntegerMean = {
+  inline def apply(): SchemaIntegerMean = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIntegerMean]
   }
   
-  @scala.inline
-  implicit class SchemaIntegerMeanMutableBuilder[Self <: SchemaIntegerMean] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIntegerMean](x: Self) {
     
-    @scala.inline
-    def setCount(value: SchemaSplitInt64): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: SchemaSplitInt64): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setSum(value: SchemaSplitInt64): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: SchemaSplitInt64): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
+    inline def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
   }
 }

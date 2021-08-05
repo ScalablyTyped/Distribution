@@ -20,34 +20,25 @@ trait ListNotificationChannelsResponse extends StObject {
 }
 object ListNotificationChannelsResponse {
   
-  @scala.inline
-  def apply(): ListNotificationChannelsResponse = {
+  inline def apply(): ListNotificationChannelsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListNotificationChannelsResponse]
   }
   
-  @scala.inline
-  implicit class ListNotificationChannelsResponseMutableBuilder[Self <: ListNotificationChannelsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListNotificationChannelsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setNotificationChannels(value: js.Array[NotificationChannel]): Self = StObject.set(x, "notificationChannels", value.asInstanceOf[js.Any])
+    inline def setNotificationChannels(value: js.Array[NotificationChannel]): Self = StObject.set(x, "notificationChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationChannelsUndefined: Self = StObject.set(x, "notificationChannels", js.undefined)
+    inline def setNotificationChannelsUndefined: Self = StObject.set(x, "notificationChannels", js.undefined)
     
-    @scala.inline
-    def setNotificationChannelsVarargs(value: NotificationChannel*): Self = StObject.set(x, "notificationChannels", js.Array(value :_*))
+    inline def setNotificationChannelsVarargs(value: NotificationChannel*): Self = StObject.set(x, "notificationChannels", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
+    inline def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }
 }

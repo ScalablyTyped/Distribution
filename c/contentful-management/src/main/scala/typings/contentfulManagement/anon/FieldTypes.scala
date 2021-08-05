@@ -34,37 +34,27 @@ trait FieldTypes extends StObject {
 }
 object FieldTypes {
   
-  @scala.inline
-  def apply(fieldTypes: js.Array[EntryFields], name: String, sidebar: Boolean): FieldTypes = {
+  inline def apply(fieldTypes: js.Array[EntryFields], name: String, sidebar: Boolean): FieldTypes = {
     val __obj = js.Dynamic.literal(fieldTypes = fieldTypes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sidebar = sidebar.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldTypes]
   }
   
-  @scala.inline
-  implicit class FieldTypesMutableBuilder[Self <: FieldTypes] (val x: Self) extends AnyVal {
+  extension [Self <: FieldTypes](x: Self) {
     
-    @scala.inline
-    def setFieldTypes(value: js.Array[EntryFields]): Self = StObject.set(x, "fieldTypes", value.asInstanceOf[js.Any])
+    inline def setFieldTypes(value: js.Array[EntryFields]): Self = StObject.set(x, "fieldTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldTypesVarargs(value: EntryFields*): Self = StObject.set(x, "fieldTypes", js.Array(value :_*))
+    inline def setFieldTypesVarargs(value: EntryFields*): Self = StObject.set(x, "fieldTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSidebar(value: Boolean): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
+    inline def setSidebar(value: Boolean): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
-    @scala.inline
-    def setSrcdoc(value: String): Self = StObject.set(x, "srcdoc", value.asInstanceOf[js.Any])
+    inline def setSrcdoc(value: String): Self = StObject.set(x, "srcdoc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcdocUndefined: Self = StObject.set(x, "srcdoc", js.undefined)
+    inline def setSrcdocUndefined: Self = StObject.set(x, "srcdoc", js.undefined)
   }
 }

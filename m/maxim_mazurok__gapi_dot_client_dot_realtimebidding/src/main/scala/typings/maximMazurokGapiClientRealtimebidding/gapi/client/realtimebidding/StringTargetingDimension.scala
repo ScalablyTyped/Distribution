@@ -14,28 +14,21 @@ trait StringTargetingDimension extends StObject {
 }
 object StringTargetingDimension {
   
-  @scala.inline
-  def apply(): StringTargetingDimension = {
+  inline def apply(): StringTargetingDimension = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StringTargetingDimension]
   }
   
-  @scala.inline
-  implicit class StringTargetingDimensionMutableBuilder[Self <: StringTargetingDimension] (val x: Self) extends AnyVal {
+  extension [Self <: StringTargetingDimension](x: Self) {
     
-    @scala.inline
-    def setTargetingMode(value: String): Self = StObject.set(x, "targetingMode", value.asInstanceOf[js.Any])
+    inline def setTargetingMode(value: String): Self = StObject.set(x, "targetingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingModeUndefined: Self = StObject.set(x, "targetingMode", js.undefined)
+    inline def setTargetingModeUndefined: Self = StObject.set(x, "targetingMode", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[A](fn: RetryFunction[A]): js.Promise[A] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[A]]
-  @scala.inline
-  def apply[A](fn: RetryFunction[A], opts: Options): js.Promise[A] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[A]]
+  inline def apply[A](fn: RetryFunction[A]): js.Promise[A] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[A]]
+  inline def apply[A](fn: RetryFunction[A], opts: Options): js.Promise[A] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[A]]
   
   @JSImport("async-retry", JSImport.Namespace)
   @js.native
@@ -25,20 +23,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOnRetry(value: (/* e */ Error, /* attempt */ Double) => js.Any): Self = StObject.set(x, "onRetry", js.Any.fromFunction2(value))
+      inline def setOnRetry(value: (/* e */ Error, /* attempt */ Double) => js.Any): Self = StObject.set(x, "onRetry", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRetryUndefined: Self = StObject.set(x, "onRetry", js.undefined)
+      inline def setOnRetryUndefined: Self = StObject.set(x, "onRetry", js.undefined)
     }
   }
   

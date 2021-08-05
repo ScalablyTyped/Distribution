@@ -20,15 +20,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FrequencyModeType extends StObject
 object FrequencyModeType {
   
-  @scala.inline
-  def NX_FREQUENCY_NONE: typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_NONE = "NX_FREQUENCY_NONE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_NONE]
+  inline def NX_FREQUENCY_NONE: typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_NONE = "NX_FREQUENCY_NONE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_NONE]
   
-  @scala.inline
-  def NX_FREQUENCY_PERCENT: typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_PERCENT = "NX_FREQUENCY_PERCENT".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_PERCENT]
+  inline def NX_FREQUENCY_PERCENT: typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_PERCENT = "NX_FREQUENCY_PERCENT".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_PERCENT]
   
-  @scala.inline
-  def NX_FREQUENCY_RELATIVE: typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_RELATIVE = "NX_FREQUENCY_RELATIVE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_RELATIVE]
+  inline def NX_FREQUENCY_RELATIVE: typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_RELATIVE = "NX_FREQUENCY_RELATIVE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_RELATIVE]
   
-  @scala.inline
-  def NX_FREQUENCY_VALUE: typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_VALUE = "NX_FREQUENCY_VALUE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_VALUE]
+  inline def NX_FREQUENCY_VALUE: typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_VALUE = "NX_FREQUENCY_VALUE".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_VALUE]
 }

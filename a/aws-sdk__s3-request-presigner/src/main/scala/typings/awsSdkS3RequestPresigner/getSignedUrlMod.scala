@@ -14,13 +14,11 @@ object getSignedUrlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSignedUrl[InputTypesUnion /* <: js.Object */, InputType /* <: InputTypesUnion */, OutputType /* <: MetadataBearer */](
+  inline def getSignedUrl[InputTypesUnion /* <: js.Object */, InputType /* <: InputTypesUnion */, OutputType /* <: MetadataBearer */](
     client: Client[js.Any, InputTypesUnion, MetadataBearer, js.Any],
     command: Command[InputType, OutputType, js.Any, InputTypesUnion, MetadataBearer]
   ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignedUrl")(client.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def getSignedUrl[InputTypesUnion /* <: js.Object */, InputType /* <: InputTypesUnion */, OutputType /* <: MetadataBearer */](
+  inline def getSignedUrl[InputTypesUnion /* <: js.Object */, InputType /* <: InputTypesUnion */, OutputType /* <: MetadataBearer */](
     client: Client[js.Any, InputTypesUnion, MetadataBearer, js.Any],
     command: Command[InputType, OutputType, js.Any, InputTypesUnion, MetadataBearer],
     options: RequestPresigningArguments

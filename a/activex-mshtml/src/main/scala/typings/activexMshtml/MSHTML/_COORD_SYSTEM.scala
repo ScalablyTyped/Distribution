@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _COORD_SYSTEM extends StObject
 object _COORD_SYSTEM {
   
-  @scala.inline
-  def COORD_SYSTEM_CLIENT: `5` = 5.asInstanceOf[`5`]
+  inline def COORD_SYSTEM_CLIENT: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def COORD_SYSTEM_CONTAINER: `2` = 2.asInstanceOf[`2`]
+  inline def COORD_SYSTEM_CONTAINER: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def COORD_SYSTEM_CONTENT: `3` = 3.asInstanceOf[`3`]
+  inline def COORD_SYSTEM_CONTENT: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def COORD_SYSTEM_FRAME: `4` = 4.asInstanceOf[`4`]
+  inline def COORD_SYSTEM_FRAME: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def COORD_SYSTEM_GLOBAL: `0` = 0.asInstanceOf[`0`]
+  inline def COORD_SYSTEM_GLOBAL: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def COORD_SYSTEM_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def COORD_SYSTEM_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   
-  @scala.inline
-  def COORD_SYSTEM_PARENT: `1` = 1.asInstanceOf[`1`]
+  inline def COORD_SYSTEM_PARENT: `1` = 1.asInstanceOf[`1`]
 }

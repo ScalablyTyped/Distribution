@@ -34,34 +34,25 @@ trait SchemaChoosePrivateKeyRule extends StObject {
 }
 object SchemaChoosePrivateKeyRule {
   
-  @scala.inline
-  def apply(): SchemaChoosePrivateKeyRule = {
+  inline def apply(): SchemaChoosePrivateKeyRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChoosePrivateKeyRule]
   }
   
-  @scala.inline
-  implicit class SchemaChoosePrivateKeyRuleMutableBuilder[Self <: SchemaChoosePrivateKeyRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChoosePrivateKeyRule](x: Self) {
     
-    @scala.inline
-    def setPackageNames(value: js.Array[String]): Self = StObject.set(x, "packageNames", value.asInstanceOf[js.Any])
+    inline def setPackageNames(value: js.Array[String]): Self = StObject.set(x, "packageNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNamesUndefined: Self = StObject.set(x, "packageNames", js.undefined)
+    inline def setPackageNamesUndefined: Self = StObject.set(x, "packageNames", js.undefined)
     
-    @scala.inline
-    def setPackageNamesVarargs(value: String*): Self = StObject.set(x, "packageNames", js.Array(value :_*))
+    inline def setPackageNamesVarargs(value: String*): Self = StObject.set(x, "packageNames", js.Array(value :_*))
     
-    @scala.inline
-    def setPrivateKeyAlias(value: String): Self = StObject.set(x, "privateKeyAlias", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyAlias(value: String): Self = StObject.set(x, "privateKeyAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyAliasUndefined: Self = StObject.set(x, "privateKeyAlias", js.undefined)
+    inline def setPrivateKeyAliasUndefined: Self = StObject.set(x, "privateKeyAlias", js.undefined)
     
-    @scala.inline
-    def setUrlPattern(value: String): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
+    inline def setUrlPattern(value: String): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlPatternUndefined: Self = StObject.set(x, "urlPattern", js.undefined)
+    inline def setUrlPatternUndefined: Self = StObject.set(x, "urlPattern", js.undefined)
   }
 }

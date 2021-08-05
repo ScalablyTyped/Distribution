@@ -28,34 +28,25 @@ trait DescribeConformancePackComplianceRequest extends StObject {
 }
 object DescribeConformancePackComplianceRequest {
   
-  @scala.inline
-  def apply(ConformancePackName: ConformancePackName): DescribeConformancePackComplianceRequest = {
+  inline def apply(ConformancePackName: ConformancePackName): DescribeConformancePackComplianceRequest = {
     val __obj = js.Dynamic.literal(ConformancePackName = ConformancePackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConformancePackComplianceRequest]
   }
   
-  @scala.inline
-  implicit class DescribeConformancePackComplianceRequestMutableBuilder[Self <: DescribeConformancePackComplianceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConformancePackComplianceRequest](x: Self) {
     
-    @scala.inline
-    def setConformancePackName(value: ConformancePackName): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
+    inline def setConformancePackName(value: ConformancePackName): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilters(value: ConformancePackComplianceFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: ConformancePackComplianceFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setLimit(value: DescribeConformancePackComplianceLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: DescribeConformancePackComplianceLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -11,6 +11,5 @@ object isOverflowingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(container: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(container: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -12,22 +12,17 @@ trait IConsensusFinalizeBlockRequest extends StObject {
 }
 object IConsensusFinalizeBlockRequest {
   
-  @scala.inline
-  def apply(): IConsensusFinalizeBlockRequest = {
+  inline def apply(): IConsensusFinalizeBlockRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusFinalizeBlockRequest]
   }
   
-  @scala.inline
-  implicit class IConsensusFinalizeBlockRequestMutableBuilder[Self <: IConsensusFinalizeBlockRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusFinalizeBlockRequest](x: Self) {
     
-    @scala.inline
-    def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataNull: Self = StObject.set(x, "data", null)
+    inline def setDataNull: Self = StObject.set(x, "data", null)
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

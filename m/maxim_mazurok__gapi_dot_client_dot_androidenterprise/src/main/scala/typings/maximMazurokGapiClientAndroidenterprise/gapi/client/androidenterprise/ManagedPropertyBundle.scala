@@ -11,22 +11,17 @@ trait ManagedPropertyBundle extends StObject {
 }
 object ManagedPropertyBundle {
   
-  @scala.inline
-  def apply(): ManagedPropertyBundle = {
+  inline def apply(): ManagedPropertyBundle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedPropertyBundle]
   }
   
-  @scala.inline
-  implicit class ManagedPropertyBundleMutableBuilder[Self <: ManagedPropertyBundle] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedPropertyBundle](x: Self) {
     
-    @scala.inline
-    def setManagedProperty(value: js.Array[ManagedProperty]): Self = StObject.set(x, "managedProperty", value.asInstanceOf[js.Any])
+    inline def setManagedProperty(value: js.Array[ManagedProperty]): Self = StObject.set(x, "managedProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedPropertyUndefined: Self = StObject.set(x, "managedProperty", js.undefined)
+    inline def setManagedPropertyUndefined: Self = StObject.set(x, "managedProperty", js.undefined)
     
-    @scala.inline
-    def setManagedPropertyVarargs(value: ManagedProperty*): Self = StObject.set(x, "managedProperty", js.Array(value :_*))
+    inline def setManagedPropertyVarargs(value: ManagedProperty*): Self = StObject.set(x, "managedProperty", js.Array(value :_*))
   }
 }

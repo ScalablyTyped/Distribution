@@ -13,6 +13,5 @@ class Include ()
   extends typings.xadesjs.xmlMod.Include
 object Include {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.Include] = ^.asInstanceOf[js.Dynamic].selectDynamic("Include").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.Include]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.Include] = ^.asInstanceOf[js.Dynamic].selectDynamic("Include").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.Include]]
 }

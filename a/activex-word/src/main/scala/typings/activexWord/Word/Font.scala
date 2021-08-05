@@ -122,13 +122,12 @@ trait Font extends StObject {
   
   var UnderlineColor: WdColor
   
-  @JSName("Word.Font_typekey")
+  /* private */ @JSName("Word.Font_typekey")
   var WordDotFont_typekey: Font
 }
 object Font {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllCaps: Boolean | `9999999` | `9999998`,
     Animation: WdAnimation,
     Application: Application,
@@ -193,181 +192,122 @@ object Font {
     __obj.asInstanceOf[Font]
   }
   
-  @scala.inline
-  implicit class FontMutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
+  extension [Self <: Font](x: Self) {
     
-    @scala.inline
-    def setAllCaps(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "AllCaps", value.asInstanceOf[js.Any])
+    inline def setAllCaps(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "AllCaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimation(value: WdAnimation): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: WdAnimation): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBold(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
+    inline def setBold(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoldBi(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "BoldBi", value.asInstanceOf[js.Any])
+    inline def setBoldBi(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "BoldBi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
+    inline def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: WdColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: WdColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorIndex(value: WdColorIndex): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
+    inline def setColorIndex(value: WdColorIndex): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorIndexBi(value: WdColorIndex): Self = StObject.set(x, "ColorIndexBi", value.asInstanceOf[js.Any])
+    inline def setColorIndexBi(value: WdColorIndex): Self = StObject.set(x, "ColorIndexBi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextualAlternates(value: Double): Self = StObject.set(x, "ContextualAlternates", value.asInstanceOf[js.Any])
+    inline def setContextualAlternates(value: Double): Self = StObject.set(x, "ContextualAlternates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiacriticColor(value: WdColor): Self = StObject.set(x, "DiacriticColor", value.asInstanceOf[js.Any])
+    inline def setDiacriticColor(value: WdColor): Self = StObject.set(x, "DiacriticColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableCharacterSpaceGrid(value: Boolean): Self = StObject.set(x, "DisableCharacterSpaceGrid", value.asInstanceOf[js.Any])
+    inline def setDisableCharacterSpaceGrid(value: Boolean): Self = StObject.set(x, "DisableCharacterSpaceGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleStrikeThrough(value: Double): Self = StObject.set(x, "DoubleStrikeThrough", value.asInstanceOf[js.Any])
+    inline def setDoubleStrikeThrough(value: Double): Self = StObject.set(x, "DoubleStrikeThrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuplicate(value: Font): Self = StObject.set(x, "Duplicate", value.asInstanceOf[js.Any])
+    inline def setDuplicate(value: Font): Self = StObject.set(x, "Duplicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmboss(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "Emboss", value.asInstanceOf[js.Any])
+    inline def setEmboss(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "Emboss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmphasisMark(value: WdEmphasisMark): Self = StObject.set(x, "EmphasisMark", value.asInstanceOf[js.Any])
+    inline def setEmphasisMark(value: WdEmphasisMark): Self = StObject.set(x, "EmphasisMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngrave(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "Engrave", value.asInstanceOf[js.Any])
+    inline def setEngrave(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "Engrave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill(value: FillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: FillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlow(value: GlowFormat): Self = StObject.set(x, "Glow", value.asInstanceOf[js.Any])
+    inline def setGlow(value: GlowFormat): Self = StObject.set(x, "Glow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrow(value: () => Unit): Self = StObject.set(x, "Grow", js.Any.fromFunction0(value))
+    inline def setGrow(value: () => Unit): Self = StObject.set(x, "Grow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHidden(value: Double): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Double): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItalic(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
+    inline def setItalic(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItalicBi(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "ItalicBi", value.asInstanceOf[js.Any])
+    inline def setItalicBi(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "ItalicBi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKerning(value: Double): Self = StObject.set(x, "Kerning", value.asInstanceOf[js.Any])
+    inline def setKerning(value: Double): Self = StObject.set(x, "Kerning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLigatures(value: WdLigatures): Self = StObject.set(x, "Ligatures", value.asInstanceOf[js.Any])
+    inline def setLigatures(value: WdLigatures): Self = StObject.set(x, "Ligatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: LineFormat): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
+    inline def setLine(value: LineFormat): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameAscii(value: String): Self = StObject.set(x, "NameAscii", value.asInstanceOf[js.Any])
+    inline def setNameAscii(value: String): Self = StObject.set(x, "NameAscii", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameBi(value: String): Self = StObject.set(x, "NameBi", value.asInstanceOf[js.Any])
+    inline def setNameBi(value: String): Self = StObject.set(x, "NameBi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameFarEast(value: String): Self = StObject.set(x, "NameFarEast", value.asInstanceOf[js.Any])
+    inline def setNameFarEast(value: String): Self = StObject.set(x, "NameFarEast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameOther(value: String): Self = StObject.set(x, "NameOther", value.asInstanceOf[js.Any])
+    inline def setNameOther(value: String): Self = StObject.set(x, "NameOther", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberForm(value: WdNumberForm): Self = StObject.set(x, "NumberForm", value.asInstanceOf[js.Any])
+    inline def setNumberForm(value: WdNumberForm): Self = StObject.set(x, "NumberForm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberSpacing(value: WdNumberSpacing): Self = StObject.set(x, "NumberSpacing", value.asInstanceOf[js.Any])
+    inline def setNumberSpacing(value: WdNumberSpacing): Self = StObject.set(x, "NumberSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutline(value: Double): Self = StObject.set(x, "Outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: Double): Self = StObject.set(x, "Outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReflection(value: ReflectionFormat): Self = StObject.set(x, "Reflection", value.asInstanceOf[js.Any])
+    inline def setReflection(value: ReflectionFormat): Self = StObject.set(x, "Reflection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScaling(value: Double): Self = StObject.set(x, "Scaling", value.asInstanceOf[js.Any])
+    inline def setScaling(value: Double): Self = StObject.set(x, "Scaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAsTemplateDefault(value: () => Unit): Self = StObject.set(x, "SetAsTemplateDefault", js.Any.fromFunction0(value))
+    inline def setSetAsTemplateDefault(value: () => Unit): Self = StObject.set(x, "SetAsTemplateDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShading(value: Shading): Self = StObject.set(x, "Shading", value.asInstanceOf[js.Any])
+    inline def setShading(value: Shading): Self = StObject.set(x, "Shading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadow(value: Double): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Double): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShrink(value: () => Unit): Self = StObject.set(x, "Shrink", js.Any.fromFunction0(value))
+    inline def setShrink(value: () => Unit): Self = StObject.set(x, "Shrink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeBi(value: Double): Self = StObject.set(x, "SizeBi", value.asInstanceOf[js.Any])
+    inline def setSizeBi(value: Double): Self = StObject.set(x, "SizeBi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallCaps(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "SmallCaps", value.asInstanceOf[js.Any])
+    inline def setSmallCaps(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "SmallCaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacing(value: Double): Self = StObject.set(x, "Spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "Spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrikeThrough(value: Double): Self = StObject.set(x, "StrikeThrough", value.asInstanceOf[js.Any])
+    inline def setStrikeThrough(value: Double): Self = StObject.set(x, "StrikeThrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylisticSet(value: WdStylisticSet): Self = StObject.set(x, "StylisticSet", value.asInstanceOf[js.Any])
+    inline def setStylisticSet(value: WdStylisticSet): Self = StObject.set(x, "StylisticSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscript(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "Subscript", value.asInstanceOf[js.Any])
+    inline def setSubscript(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "Subscript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperscript(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "Superscript", value.asInstanceOf[js.Any])
+    inline def setSuperscript(value: Boolean | `9999999` | `9999998`): Self = StObject.set(x, "Superscript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColor(value: ColorFormat): Self = StObject.set(x, "TextColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: ColorFormat): Self = StObject.set(x, "TextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextShadow(value: ShadowFormat): Self = StObject.set(x, "TextShadow", value.asInstanceOf[js.Any])
+    inline def setTextShadow(value: ShadowFormat): Self = StObject.set(x, "TextShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreeD(value: ThreeDFormat): Self = StObject.set(x, "ThreeD", value.asInstanceOf[js.Any])
+    inline def setThreeD(value: ThreeDFormat): Self = StObject.set(x, "ThreeD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderline(value: WdUnderline): Self = StObject.set(x, "Underline", value.asInstanceOf[js.Any])
+    inline def setUnderline(value: WdUnderline): Self = StObject.set(x, "Underline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineColor(value: WdColor): Self = StObject.set(x, "UnderlineColor", value.asInstanceOf[js.Any])
+    inline def setUnderlineColor(value: WdColor): Self = StObject.set(x, "UnderlineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotFont_typekey(value: Font): Self = StObject.set(x, "Word.Font_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotFont_typekey(value: Font): Self = StObject.set(x, "Word.Font_typekey", value.asInstanceOf[js.Any])
   }
 }

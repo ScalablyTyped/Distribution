@@ -14,19 +14,15 @@ trait OnClickEventArgs[T /* <: SlickData */]
 }
 object OnClickEventArgs {
   
-  @scala.inline
-  def apply[T /* <: SlickData */](cell: Double, grid: Grid[T], row: Double): OnClickEventArgs[T] = {
+  inline def apply[T /* <: SlickData */](cell: Double, grid: Grid[T], row: Double): OnClickEventArgs[T] = {
     val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnClickEventArgs[T]]
   }
   
-  @scala.inline
-  implicit class OnClickEventArgsMutableBuilder[Self <: OnClickEventArgs[?], T /* <: SlickData */] (val x: Self & OnClickEventArgs[T]) extends AnyVal {
+  extension [Self <: OnClickEventArgs[?], T /* <: SlickData */](x: Self & OnClickEventArgs[T]) {
     
-    @scala.inline
-    def setCell(value: Double): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: Double): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

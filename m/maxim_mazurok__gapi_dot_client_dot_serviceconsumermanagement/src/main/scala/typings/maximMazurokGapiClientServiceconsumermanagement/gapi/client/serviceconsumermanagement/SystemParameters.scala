@@ -16,22 +16,17 @@ trait SystemParameters extends StObject {
 }
 object SystemParameters {
   
-  @scala.inline
-  def apply(): SystemParameters = {
+  inline def apply(): SystemParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SystemParameters]
   }
   
-  @scala.inline
-  implicit class SystemParametersMutableBuilder[Self <: SystemParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SystemParameters](x: Self) {
     
-    @scala.inline
-    def setRules(value: js.Array[SystemParameterRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[SystemParameterRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: SystemParameterRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: SystemParameterRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

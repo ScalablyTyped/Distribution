@@ -26,30 +26,23 @@ trait VoiceListeningState extends StObject {
 }
 object VoiceListeningState {
   
-  @scala.inline
-  def apply(isSpeechFinal: Boolean, status: Status, transcript: String): VoiceListeningState = {
+  inline def apply(isSpeechFinal: Boolean, status: Status, transcript: String): VoiceListeningState = {
     val __obj = js.Dynamic.literal(isSpeechFinal = isSpeechFinal.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], transcript = transcript.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceListeningState]
   }
   
-  @scala.inline
-  implicit class VoiceListeningStateMutableBuilder[Self <: VoiceListeningState] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceListeningState](x: Self) {
     
-    @scala.inline
-    def setErrorCode(
+    inline def setErrorCode(
       value: `no-speech` | aborted | `audio-capture` | network | `not-allowed` | `service-not-allowed` | `bad-grammar` | `language-not-supported`
     ): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setIsSpeechFinal(value: Boolean): Self = StObject.set(x, "isSpeechFinal", value.asInstanceOf[js.Any])
+    inline def setIsSpeechFinal(value: Boolean): Self = StObject.set(x, "isSpeechFinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscript(value: String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
+    inline def setTranscript(value: String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
   }
 }

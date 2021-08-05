@@ -15,22 +15,17 @@ trait ShareSharedAction
 }
 object ShareSharedAction {
   
-  @scala.inline
-  def apply(): ShareSharedAction = {
+  inline def apply(): ShareSharedAction = {
     val __obj = js.Dynamic.literal(action = "sharedAction")
     __obj.asInstanceOf[ShareSharedAction]
   }
   
-  @scala.inline
-  implicit class ShareSharedActionMutableBuilder[Self <: ShareSharedAction] (val x: Self) extends AnyVal {
+  extension [Self <: ShareSharedAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: sharedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: sharedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityType(value: String): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
+    inline def setActivityType(value: String): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
+    inline def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
   }
 }

@@ -14,19 +14,15 @@ trait GooglePrivacyDlpV2InfoType extends StObject {
 }
 object GooglePrivacyDlpV2InfoType {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2InfoType = {
+  inline def apply(): GooglePrivacyDlpV2InfoType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2InfoType]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2InfoTypeMutableBuilder[Self <: GooglePrivacyDlpV2InfoType] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2InfoType](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

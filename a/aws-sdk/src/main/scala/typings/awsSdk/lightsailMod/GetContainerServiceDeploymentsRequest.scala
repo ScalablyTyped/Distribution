@@ -13,16 +13,13 @@ trait GetContainerServiceDeploymentsRequest extends StObject {
 }
 object GetContainerServiceDeploymentsRequest {
   
-  @scala.inline
-  def apply(serviceName: ContainerServiceName): GetContainerServiceDeploymentsRequest = {
+  inline def apply(serviceName: ContainerServiceName): GetContainerServiceDeploymentsRequest = {
     val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetContainerServiceDeploymentsRequest]
   }
   
-  @scala.inline
-  implicit class GetContainerServiceDeploymentsRequestMutableBuilder[Self <: GetContainerServiceDeploymentsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetContainerServiceDeploymentsRequest](x: Self) {
     
-    @scala.inline
-    def setServiceName(value: ContainerServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: ContainerServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
   }
 }

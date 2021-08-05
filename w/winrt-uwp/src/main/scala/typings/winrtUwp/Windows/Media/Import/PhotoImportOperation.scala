@@ -25,8 +25,7 @@ trait PhotoImportOperation extends StObject {
 }
 object PhotoImportOperation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     continueDeletingImportedItemsFromSourceAsync: IAsyncOperationWithProgress[PhotoImportDeleteImportedItemsFromSourceResult, Double],
     continueFindingItemsAsync: IAsyncOperationWithProgress[PhotoImportFindItemsResult, Double],
     continueImportingItemsAsync: IAsyncOperationWithProgress[PhotoImportImportItemsResult, PhotoImportProgress],
@@ -37,22 +36,16 @@ object PhotoImportOperation {
     __obj.asInstanceOf[PhotoImportOperation]
   }
   
-  @scala.inline
-  implicit class PhotoImportOperationMutableBuilder[Self <: PhotoImportOperation] (val x: Self) extends AnyVal {
+  extension [Self <: PhotoImportOperation](x: Self) {
     
-    @scala.inline
-    def setContinueDeletingImportedItemsFromSourceAsync(value: IAsyncOperationWithProgress[PhotoImportDeleteImportedItemsFromSourceResult, Double]): Self = StObject.set(x, "continueDeletingImportedItemsFromSourceAsync", value.asInstanceOf[js.Any])
+    inline def setContinueDeletingImportedItemsFromSourceAsync(value: IAsyncOperationWithProgress[PhotoImportDeleteImportedItemsFromSourceResult, Double]): Self = StObject.set(x, "continueDeletingImportedItemsFromSourceAsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinueFindingItemsAsync(value: IAsyncOperationWithProgress[PhotoImportFindItemsResult, Double]): Self = StObject.set(x, "continueFindingItemsAsync", value.asInstanceOf[js.Any])
+    inline def setContinueFindingItemsAsync(value: IAsyncOperationWithProgress[PhotoImportFindItemsResult, Double]): Self = StObject.set(x, "continueFindingItemsAsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinueImportingItemsAsync(value: IAsyncOperationWithProgress[PhotoImportImportItemsResult, PhotoImportProgress]): Self = StObject.set(x, "continueImportingItemsAsync", value.asInstanceOf[js.Any])
+    inline def setContinueImportingItemsAsync(value: IAsyncOperationWithProgress[PhotoImportImportItemsResult, PhotoImportProgress]): Self = StObject.set(x, "continueImportingItemsAsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: PhotoImportSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: PhotoImportSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStage(value: PhotoImportStage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: PhotoImportStage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
   }
 }

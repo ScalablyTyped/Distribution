@@ -17,19 +17,15 @@ trait WiFiNetworkReport extends StObject {
 }
 object WiFiNetworkReport {
   
-  @scala.inline
-  def apply(availableNetworks: IVectorView[WiFiAvailableNetwork], timestamp: Date): WiFiNetworkReport = {
+  inline def apply(availableNetworks: IVectorView[WiFiAvailableNetwork], timestamp: Date): WiFiNetworkReport = {
     val __obj = js.Dynamic.literal(availableNetworks = availableNetworks.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiFiNetworkReport]
   }
   
-  @scala.inline
-  implicit class WiFiNetworkReportMutableBuilder[Self <: WiFiNetworkReport] (val x: Self) extends AnyVal {
+  extension [Self <: WiFiNetworkReport](x: Self) {
     
-    @scala.inline
-    def setAvailableNetworks(value: IVectorView[WiFiAvailableNetwork]): Self = StObject.set(x, "availableNetworks", value.asInstanceOf[js.Any])
+    inline def setAvailableNetworks(value: IVectorView[WiFiAvailableNetwork]): Self = StObject.set(x, "availableNetworks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

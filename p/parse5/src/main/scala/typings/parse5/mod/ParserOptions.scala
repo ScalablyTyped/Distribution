@@ -35,31 +35,23 @@ trait ParserOptions extends StObject {
 }
 object ParserOptions {
   
-  @scala.inline
-  def apply(): ParserOptions = {
+  inline def apply(): ParserOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParserOptions]
   }
   
-  @scala.inline
-  implicit class ParserOptionsMutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ParserOptions](x: Self) {
     
-    @scala.inline
-    def setScriptingEnabled(value: Boolean): Self = StObject.set(x, "scriptingEnabled", value.asInstanceOf[js.Any])
+    inline def setScriptingEnabled(value: Boolean): Self = StObject.set(x, "scriptingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptingEnabledUndefined: Self = StObject.set(x, "scriptingEnabled", js.undefined)
+    inline def setScriptingEnabledUndefined: Self = StObject.set(x, "scriptingEnabled", js.undefined)
     
-    @scala.inline
-    def setSourceCodeLocationInfo(value: Boolean): Self = StObject.set(x, "sourceCodeLocationInfo", value.asInstanceOf[js.Any])
+    inline def setSourceCodeLocationInfo(value: Boolean): Self = StObject.set(x, "sourceCodeLocationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCodeLocationInfoUndefined: Self = StObject.set(x, "sourceCodeLocationInfo", js.undefined)
+    inline def setSourceCodeLocationInfoUndefined: Self = StObject.set(x, "sourceCodeLocationInfo", js.undefined)
     
-    @scala.inline
-    def setTreeAdapter(value: TreeAdapter): Self = StObject.set(x, "treeAdapter", value.asInstanceOf[js.Any])
+    inline def setTreeAdapter(value: TreeAdapter): Self = StObject.set(x, "treeAdapter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeAdapterUndefined: Self = StObject.set(x, "treeAdapter", js.undefined)
+    inline def setTreeAdapterUndefined: Self = StObject.set(x, "treeAdapter", js.undefined)
   }
 }

@@ -10,22 +10,17 @@ trait TimestampValues extends StObject {
 }
 object TimestampValues {
   
-  @scala.inline
-  def apply(): TimestampValues = {
+  inline def apply(): TimestampValues = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimestampValues]
   }
   
-  @scala.inline
-  implicit class TimestampValuesMutableBuilder[Self <: TimestampValues] (val x: Self) extends AnyVal {
+  extension [Self <: TimestampValues](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

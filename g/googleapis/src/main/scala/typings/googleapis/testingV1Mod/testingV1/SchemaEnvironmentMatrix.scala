@@ -27,31 +27,23 @@ trait SchemaEnvironmentMatrix extends StObject {
 }
 object SchemaEnvironmentMatrix {
   
-  @scala.inline
-  def apply(): SchemaEnvironmentMatrix = {
+  inline def apply(): SchemaEnvironmentMatrix = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEnvironmentMatrix]
   }
   
-  @scala.inline
-  implicit class SchemaEnvironmentMatrixMutableBuilder[Self <: SchemaEnvironmentMatrix] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEnvironmentMatrix](x: Self) {
     
-    @scala.inline
-    def setAndroidDeviceList(value: SchemaAndroidDeviceList): Self = StObject.set(x, "androidDeviceList", value.asInstanceOf[js.Any])
+    inline def setAndroidDeviceList(value: SchemaAndroidDeviceList): Self = StObject.set(x, "androidDeviceList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDeviceListUndefined: Self = StObject.set(x, "androidDeviceList", js.undefined)
+    inline def setAndroidDeviceListUndefined: Self = StObject.set(x, "androidDeviceList", js.undefined)
     
-    @scala.inline
-    def setAndroidMatrix(value: SchemaAndroidMatrix): Self = StObject.set(x, "androidMatrix", value.asInstanceOf[js.Any])
+    inline def setAndroidMatrix(value: SchemaAndroidMatrix): Self = StObject.set(x, "androidMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidMatrixUndefined: Self = StObject.set(x, "androidMatrix", js.undefined)
+    inline def setAndroidMatrixUndefined: Self = StObject.set(x, "androidMatrix", js.undefined)
     
-    @scala.inline
-    def setIosDeviceList(value: SchemaIosDeviceList): Self = StObject.set(x, "iosDeviceList", value.asInstanceOf[js.Any])
+    inline def setIosDeviceList(value: SchemaIosDeviceList): Self = StObject.set(x, "iosDeviceList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosDeviceListUndefined: Self = StObject.set(x, "iosDeviceList", js.undefined)
+    inline def setIosDeviceListUndefined: Self = StObject.set(x, "iosDeviceList", js.undefined)
   }
 }

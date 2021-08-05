@@ -22,30 +22,24 @@ trait FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessor 
 }
 object FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessor {
   
-  @scala.inline
-  def apply(`type`: String): FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessor = {
+  inline def apply(`type`: String): FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessor = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessor]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorMutableBuilder[Self <: FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessor] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessor](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: js.Array[
           FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorParameter
         ]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

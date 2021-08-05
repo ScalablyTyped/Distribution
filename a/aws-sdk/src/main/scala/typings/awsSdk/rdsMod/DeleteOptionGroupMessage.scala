@@ -13,16 +13,13 @@ trait DeleteOptionGroupMessage extends StObject {
 }
 object DeleteOptionGroupMessage {
   
-  @scala.inline
-  def apply(OptionGroupName: String): DeleteOptionGroupMessage = {
+  inline def apply(OptionGroupName: String): DeleteOptionGroupMessage = {
     val __obj = js.Dynamic.literal(OptionGroupName = OptionGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteOptionGroupMessage]
   }
   
-  @scala.inline
-  implicit class DeleteOptionGroupMessageMutableBuilder[Self <: DeleteOptionGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteOptionGroupMessage](x: Self) {
     
-    @scala.inline
-    def setOptionGroupName(value: String): Self = StObject.set(x, "OptionGroupName", value.asInstanceOf[js.Any])
+    inline def setOptionGroupName(value: String): Self = StObject.set(x, "OptionGroupName", value.asInstanceOf[js.Any])
   }
 }

@@ -10,10 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, shape: js.Tuple2[Double, Double]): FrameBuffer = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[FrameBuffer]
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, shape: js.Tuple2[Double, Double], options: FrameBufferOptions): FrameBuffer = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FrameBuffer]
+  inline def apply(gl: WebGLRenderingContext, shape: js.Tuple2[Double, Double]): FrameBuffer = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[FrameBuffer]
+  inline def apply(gl: WebGLRenderingContext, shape: js.Tuple2[Double, Double], options: FrameBufferOptions): FrameBuffer = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FrameBuffer]
   
   @JSImport("gl-fbo", JSImport.Namespace)
   @js.native
@@ -37,8 +35,7 @@ object mod {
   }
   object FrameBuffer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bind: () => Unit,
       color: js.Array[Texture],
       dispose: () => Unit,
@@ -50,35 +47,25 @@ object mod {
       __obj.asInstanceOf[FrameBuffer]
     }
     
-    @scala.inline
-    implicit class FrameBufferMutableBuilder[Self <: FrameBuffer] (val x: Self) extends AnyVal {
+    extension [Self <: FrameBuffer](x: Self) {
       
-      @scala.inline
-      def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
+      inline def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setColor(value: js.Array[Texture]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: js.Array[Texture]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorVarargs(value: Texture*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: Texture*): Self = StObject.set(x, "color", js.Array(value :_*))
       
-      @scala.inline
-      def setDepth(value: Texture): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Texture): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthNull: Self = StObject.set(x, "depth", null)
+      inline def setDepthNull: Self = StObject.set(x, "depth", null)
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGl(value: WebGLRenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
+      inline def setGl(value: WebGLRenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandle(value: WebGLFramebuffer): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: WebGLFramebuffer): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShape(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,44 +83,32 @@ object mod {
   }
   object FrameBufferOptions {
     
-    @scala.inline
-    def apply(): FrameBufferOptions = {
+    inline def apply(): FrameBufferOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FrameBufferOptions]
     }
     
-    @scala.inline
-    implicit class FrameBufferOptionsMutableBuilder[Self <: FrameBufferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FrameBufferOptions](x: Self) {
       
-      @scala.inline
-      def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDepth(value: Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      @scala.inline
-      def setFloat(value: Boolean): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+      inline def setFloat(value: Boolean): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
+      inline def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
       
-      @scala.inline
-      def setPreferFloat(value: Boolean): Self = StObject.set(x, "preferFloat", value.asInstanceOf[js.Any])
+      inline def setPreferFloat(value: Boolean): Self = StObject.set(x, "preferFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferFloatUndefined: Self = StObject.set(x, "preferFloat", js.undefined)
+      inline def setPreferFloatUndefined: Self = StObject.set(x, "preferFloat", js.undefined)
       
-      @scala.inline
-      def setStencil(value: Boolean): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
+      inline def setStencil(value: Boolean): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStencilUndefined: Self = StObject.set(x, "stencil", js.undefined)
+      inline def setStencilUndefined: Self = StObject.set(x, "stencil", js.undefined)
     }
   }
   

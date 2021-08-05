@@ -43,12 +43,12 @@ object dequeCollectionMod {
     /**
       * @hidden
       */
-    var _Notify_erase: js.Any = js.native
+    /* private */ var _Notify_erase: js.Any = js.native
     
     /**
       * @hidden
       */
-    var _Notify_insert: js.Any = js.native
+    /* private */ var _Notify_insert: js.Any = js.native
     
     /* CompleteClass */
     override def addEventListener(
@@ -87,7 +87,7 @@ object dequeCollectionMod {
     /**
       * @hidden
       */
-    var dispatcher_ : js.Any = js.native
+    /* private */ var dispatcher_ : js.Any = js.native
     
     /* CompleteClass */
     override def hasEventListener(`type`: Type): Boolean = js.native

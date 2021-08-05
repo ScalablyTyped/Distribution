@@ -14,25 +14,19 @@ trait SessionEndedEvent extends StObject {
 }
 object SessionEndedEvent {
   
-  @scala.inline
-  def apply(cause: String, originator: String): SessionEndedEvent = {
+  inline def apply(cause: String, originator: String): SessionEndedEvent = {
     val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], originator = originator.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionEndedEvent]
   }
   
-  @scala.inline
-  implicit class SessionEndedEventMutableBuilder[Self <: SessionEndedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SessionEndedEvent](x: Self) {
     
-    @scala.inline
-    def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: IncomingResponse): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: IncomingResponse): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
+    inline def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
   }
 }

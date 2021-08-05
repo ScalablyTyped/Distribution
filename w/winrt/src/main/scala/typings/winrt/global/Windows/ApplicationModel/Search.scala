@@ -42,8 +42,7 @@ object Search {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getForCurrentView(): typings.winrt.Windows.ApplicationModel.Search.SearchPane = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.ApplicationModel.Search.SearchPane]
+    inline def getForCurrentView(): typings.winrt.Windows.ApplicationModel.Search.SearchPane = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.ApplicationModel.Search.SearchPane]
   }
   
   @JSGlobal("Windows.ApplicationModel.Search.SearchPaneQueryChangedEventArgs")

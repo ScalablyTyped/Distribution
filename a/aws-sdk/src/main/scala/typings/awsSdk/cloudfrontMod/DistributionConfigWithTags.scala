@@ -18,19 +18,15 @@ trait DistributionConfigWithTags extends StObject {
 }
 object DistributionConfigWithTags {
   
-  @scala.inline
-  def apply(DistributionConfig: DistributionConfig, Tags: Tags): DistributionConfigWithTags = {
+  inline def apply(DistributionConfig: DistributionConfig, Tags: Tags): DistributionConfigWithTags = {
     val __obj = js.Dynamic.literal(DistributionConfig = DistributionConfig.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionConfigWithTags]
   }
   
-  @scala.inline
-  implicit class DistributionConfigWithTagsMutableBuilder[Self <: DistributionConfigWithTags] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionConfigWithTags](x: Self) {
     
-    @scala.inline
-    def setDistributionConfig(value: DistributionConfig): Self = StObject.set(x, "DistributionConfig", value.asInstanceOf[js.Any])
+    inline def setDistributionConfig(value: DistributionConfig): Self = StObject.set(x, "DistributionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
   }
 }

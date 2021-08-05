@@ -28,37 +28,27 @@ trait UpdateProvisionedProductPropertiesOutput extends StObject {
 }
 object UpdateProvisionedProductPropertiesOutput {
   
-  @scala.inline
-  def apply(): UpdateProvisionedProductPropertiesOutput = {
+  inline def apply(): UpdateProvisionedProductPropertiesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateProvisionedProductPropertiesOutput]
   }
   
-  @scala.inline
-  implicit class UpdateProvisionedProductPropertiesOutputMutableBuilder[Self <: UpdateProvisionedProductPropertiesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateProvisionedProductPropertiesOutput](x: Self) {
     
-    @scala.inline
-    def setProvisionedProductId(value: Id): Self = StObject.set(x, "ProvisionedProductId", value.asInstanceOf[js.Any])
+    inline def setProvisionedProductId(value: Id): Self = StObject.set(x, "ProvisionedProductId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedProductIdUndefined: Self = StObject.set(x, "ProvisionedProductId", js.undefined)
+    inline def setProvisionedProductIdUndefined: Self = StObject.set(x, "ProvisionedProductId", js.undefined)
     
-    @scala.inline
-    def setProvisionedProductProperties(value: ProvisionedProductProperties): Self = StObject.set(x, "ProvisionedProductProperties", value.asInstanceOf[js.Any])
+    inline def setProvisionedProductProperties(value: ProvisionedProductProperties): Self = StObject.set(x, "ProvisionedProductProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedProductPropertiesUndefined: Self = StObject.set(x, "ProvisionedProductProperties", js.undefined)
+    inline def setProvisionedProductPropertiesUndefined: Self = StObject.set(x, "ProvisionedProductProperties", js.undefined)
     
-    @scala.inline
-    def setRecordId(value: Id): Self = StObject.set(x, "RecordId", value.asInstanceOf[js.Any])
+    inline def setRecordId(value: Id): Self = StObject.set(x, "RecordId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordIdUndefined: Self = StObject.set(x, "RecordId", js.undefined)
+    inline def setRecordIdUndefined: Self = StObject.set(x, "RecordId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: RecordStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: RecordStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

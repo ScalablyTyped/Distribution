@@ -22,25 +22,19 @@ trait SchemaPopSettings extends StObject {
 }
 object SchemaPopSettings {
   
-  @scala.inline
-  def apply(): SchemaPopSettings = {
+  inline def apply(): SchemaPopSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPopSettings]
   }
   
-  @scala.inline
-  implicit class SchemaPopSettingsMutableBuilder[Self <: SchemaPopSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPopSettings](x: Self) {
     
-    @scala.inline
-    def setAccessWindow(value: String): Self = StObject.set(x, "accessWindow", value.asInstanceOf[js.Any])
+    inline def setAccessWindow(value: String): Self = StObject.set(x, "accessWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessWindowUndefined: Self = StObject.set(x, "accessWindow", js.undefined)
+    inline def setAccessWindowUndefined: Self = StObject.set(x, "accessWindow", js.undefined)
     
-    @scala.inline
-    def setDisposition(value: String): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
+    inline def setDisposition(value: String): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDispositionUndefined: Self = StObject.set(x, "disposition", js.undefined)
+    inline def setDispositionUndefined: Self = StObject.set(x, "disposition", js.undefined)
   }
 }

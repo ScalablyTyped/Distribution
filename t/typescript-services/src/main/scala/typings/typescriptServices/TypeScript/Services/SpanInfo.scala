@@ -14,22 +14,17 @@ trait SpanInfo extends StObject {
 }
 object SpanInfo {
   
-  @scala.inline
-  def apply(limChar: Double, minChar: Double, text: String): SpanInfo = {
+  inline def apply(limChar: Double, minChar: Double, text: String): SpanInfo = {
     val __obj = js.Dynamic.literal(limChar = limChar.asInstanceOf[js.Any], minChar = minChar.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpanInfo]
   }
   
-  @scala.inline
-  implicit class SpanInfoMutableBuilder[Self <: SpanInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SpanInfo](x: Self) {
     
-    @scala.inline
-    def setLimChar(value: Double): Self = StObject.set(x, "limChar", value.asInstanceOf[js.Any])
+    inline def setLimChar(value: Double): Self = StObject.set(x, "limChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinChar(value: Double): Self = StObject.set(x, "minChar", value.asInstanceOf[js.Any])
+    inline def setMinChar(value: Double): Self = StObject.set(x, "minChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

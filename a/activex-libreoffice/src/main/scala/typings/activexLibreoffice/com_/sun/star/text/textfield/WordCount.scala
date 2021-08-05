@@ -27,8 +27,7 @@ trait WordCount
 }
 object WordCount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -58,10 +57,8 @@ object WordCount {
     __obj.asInstanceOf[WordCount]
   }
   
-  @scala.inline
-  implicit class WordCountMutableBuilder[Self <: WordCount] (val x: Self) extends AnyVal {
+  extension [Self <: WordCount](x: Self) {
     
-    @scala.inline
-    def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
+    inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
   }
 }

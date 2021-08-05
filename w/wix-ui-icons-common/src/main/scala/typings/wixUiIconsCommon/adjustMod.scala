@@ -22,20 +22,16 @@ object adjustMod extends Shortcut {
   }
   object AdjustProps {
     
-    @scala.inline
-    def apply(): AdjustProps = {
+    inline def apply(): AdjustProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AdjustProps]
     }
     
-    @scala.inline
-    implicit class AdjustPropsMutableBuilder[Self <: AdjustProps] (val x: Self) extends AnyVal {
+    extension [Self <: AdjustProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

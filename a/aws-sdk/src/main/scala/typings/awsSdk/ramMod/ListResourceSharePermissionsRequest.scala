@@ -23,28 +23,21 @@ trait ListResourceSharePermissionsRequest extends StObject {
 }
 object ListResourceSharePermissionsRequest {
   
-  @scala.inline
-  def apply(resourceShareArn: String): ListResourceSharePermissionsRequest = {
+  inline def apply(resourceShareArn: String): ListResourceSharePermissionsRequest = {
     val __obj = js.Dynamic.literal(resourceShareArn = resourceShareArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourceSharePermissionsRequest]
   }
   
-  @scala.inline
-  implicit class ListResourceSharePermissionsRequestMutableBuilder[Self <: ListResourceSharePermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListResourceSharePermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
+    inline def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
   }
 }

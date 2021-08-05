@@ -10,7 +10,7 @@ trait ThemeColor extends StObject {
   
   val Creator: Double
   
-  @JSName("Office.ThemeColor_typekey")
+  /* private */ @JSName("Office.ThemeColor_typekey")
   var OfficeDotThemeColor_typekey: ThemeColor
   
   val Parent: js.Any
@@ -21,8 +21,7 @@ trait ThemeColor extends StObject {
 }
 object ThemeColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     OfficeDotThemeColor_typekey: ThemeColor,
@@ -35,25 +34,18 @@ object ThemeColor {
     __obj.asInstanceOf[ThemeColor]
   }
   
-  @scala.inline
-  implicit class ThemeColorMutableBuilder[Self <: ThemeColor] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeColor](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotThemeColor_typekey(value: ThemeColor): Self = StObject.set(x, "Office.ThemeColor_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotThemeColor_typekey(value: ThemeColor): Self = StObject.set(x, "Office.ThemeColor_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRGB(value: Double): Self = StObject.set(x, "RGB", value.asInstanceOf[js.Any])
+    inline def setRGB(value: Double): Self = StObject.set(x, "RGB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeColorSchemeIndex(value: MsoThemeColorSchemeIndex): Self = StObject.set(x, "ThemeColorSchemeIndex", value.asInstanceOf[js.Any])
+    inline def setThemeColorSchemeIndex(value: MsoThemeColorSchemeIndex): Self = StObject.set(x, "ThemeColorSchemeIndex", value.asInstanceOf[js.Any])
   }
 }

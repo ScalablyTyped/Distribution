@@ -18,19 +18,15 @@ trait UpdateGlobalSettingsRequest extends StObject {
 }
 object UpdateGlobalSettingsRequest {
   
-  @scala.inline
-  def apply(BusinessCalling: BusinessCallingSettings, VoiceConnector: VoiceConnectorSettings): UpdateGlobalSettingsRequest = {
+  inline def apply(BusinessCalling: BusinessCallingSettings, VoiceConnector: VoiceConnectorSettings): UpdateGlobalSettingsRequest = {
     val __obj = js.Dynamic.literal(BusinessCalling = BusinessCalling.asInstanceOf[js.Any], VoiceConnector = VoiceConnector.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGlobalSettingsRequest]
   }
   
-  @scala.inline
-  implicit class UpdateGlobalSettingsRequestMutableBuilder[Self <: UpdateGlobalSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGlobalSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setBusinessCalling(value: BusinessCallingSettings): Self = StObject.set(x, "BusinessCalling", value.asInstanceOf[js.Any])
+    inline def setBusinessCalling(value: BusinessCallingSettings): Self = StObject.set(x, "BusinessCalling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceConnector(value: VoiceConnectorSettings): Self = StObject.set(x, "VoiceConnector", value.asInstanceOf[js.Any])
+    inline def setVoiceConnector(value: VoiceConnectorSettings): Self = StObject.set(x, "VoiceConnector", value.asInstanceOf[js.Any])
   }
 }

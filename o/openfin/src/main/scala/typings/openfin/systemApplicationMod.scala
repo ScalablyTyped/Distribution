@@ -16,26 +16,20 @@ object systemApplicationMod {
   }
   object ApplicationInfo {
     
-    @scala.inline
-    def apply(isRunning: Boolean, uuid: String): ApplicationInfo = {
+    inline def apply(isRunning: Boolean, uuid: String): ApplicationInfo = {
       val __obj = js.Dynamic.literal(isRunning = isRunning.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplicationInfo]
     }
     
-    @scala.inline
-    implicit class ApplicationInfoMutableBuilder[Self <: ApplicationInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationInfo](x: Self) {
       
-      @scala.inline
-      def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
+      inline def setIsRunning(value: Boolean): Self = StObject.set(x, "isRunning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUuid(value: String): Self = StObject.set(x, "parentUuid", value.asInstanceOf[js.Any])
+      inline def setParentUuid(value: String): Self = StObject.set(x, "parentUuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUuidUndefined: Self = StObject.set(x, "parentUuid", js.undefined)
+      inline def setParentUuidUndefined: Self = StObject.set(x, "parentUuid", js.undefined)
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
 }

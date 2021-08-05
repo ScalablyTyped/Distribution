@@ -13,19 +13,15 @@ trait CreateColumnsOperation extends StObject {
 }
 object CreateColumnsOperation {
   
-  @scala.inline
-  def apply(Columns: CalculatedColumnList): CreateColumnsOperation = {
+  inline def apply(Columns: CalculatedColumnList): CreateColumnsOperation = {
     val __obj = js.Dynamic.literal(Columns = Columns.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateColumnsOperation]
   }
   
-  @scala.inline
-  implicit class CreateColumnsOperationMutableBuilder[Self <: CreateColumnsOperation] (val x: Self) extends AnyVal {
+  extension [Self <: CreateColumnsOperation](x: Self) {
     
-    @scala.inline
-    def setColumns(value: CalculatedColumnList): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: CalculatedColumnList): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: CalculatedColumn*): Self = StObject.set(x, "Columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: CalculatedColumn*): Self = StObject.set(x, "Columns", js.Array(value :_*))
   }
 }

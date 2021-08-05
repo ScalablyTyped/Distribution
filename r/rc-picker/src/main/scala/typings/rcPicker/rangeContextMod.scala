@@ -33,44 +33,32 @@ object rangeContextMod extends Shortcut {
   }
   object RangeContextProps {
     
-    @scala.inline
-    def apply(): RangeContextProps = {
+    inline def apply(): RangeContextProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RangeContextProps]
     }
     
-    @scala.inline
-    implicit class RangeContextPropsMutableBuilder[Self <: RangeContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: RangeContextProps](x: Self) {
       
-      @scala.inline
-      def setHoverRangedValue(value: RangeValue[js.Any]): Self = StObject.set(x, "hoverRangedValue", value.asInstanceOf[js.Any])
+      inline def setHoverRangedValue(value: RangeValue[js.Any]): Self = StObject.set(x, "hoverRangedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverRangedValueNull: Self = StObject.set(x, "hoverRangedValue", null)
+      inline def setHoverRangedValueNull: Self = StObject.set(x, "hoverRangedValue", null)
       
-      @scala.inline
-      def setHoverRangedValueUndefined: Self = StObject.set(x, "hoverRangedValue", js.undefined)
+      inline def setHoverRangedValueUndefined: Self = StObject.set(x, "hoverRangedValue", js.undefined)
       
-      @scala.inline
-      def setInRange(value: Boolean): Self = StObject.set(x, "inRange", value.asInstanceOf[js.Any])
+      inline def setInRange(value: Boolean): Self = StObject.set(x, "inRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInRangeUndefined: Self = StObject.set(x, "inRange", js.undefined)
+      inline def setInRangeUndefined: Self = StObject.set(x, "inRange", js.undefined)
       
-      @scala.inline
-      def setPanelPosition(value: left | right | `false`): Self = StObject.set(x, "panelPosition", value.asInstanceOf[js.Any])
+      inline def setPanelPosition(value: left | right | `false`): Self = StObject.set(x, "panelPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelPositionUndefined: Self = StObject.set(x, "panelPosition", js.undefined)
+      inline def setPanelPositionUndefined: Self = StObject.set(x, "panelPosition", js.undefined)
       
-      @scala.inline
-      def setRangedValue(value: js.Tuple2[NullableDateType[js.Any], NullableDateType[js.Any]]): Self = StObject.set(x, "rangedValue", value.asInstanceOf[js.Any])
+      inline def setRangedValue(value: js.Tuple2[NullableDateType[js.Any], NullableDateType[js.Any]]): Self = StObject.set(x, "rangedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangedValueNull: Self = StObject.set(x, "rangedValue", null)
+      inline def setRangedValueNull: Self = StObject.set(x, "rangedValue", null)
       
-      @scala.inline
-      def setRangedValueUndefined: Self = StObject.set(x, "rangedValue", js.undefined)
+      inline def setRangedValueUndefined: Self = StObject.set(x, "rangedValue", js.undefined)
     }
   }
   

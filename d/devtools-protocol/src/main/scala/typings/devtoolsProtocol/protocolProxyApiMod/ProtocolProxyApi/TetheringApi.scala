@@ -28,8 +28,7 @@ trait TetheringApi extends StObject {
 }
 object TetheringApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bind: BindRequest => js.Promise[Unit],
     on: (accepted, js.Function1[/* params */ AcceptedEvent, Unit]) => Unit,
     unbind: UnbindRequest => js.Promise[Unit]
@@ -38,16 +37,12 @@ object TetheringApi {
     __obj.asInstanceOf[TetheringApi]
   }
   
-  @scala.inline
-  implicit class TetheringApiMutableBuilder[Self <: TetheringApi] (val x: Self) extends AnyVal {
+  extension [Self <: TetheringApi](x: Self) {
     
-    @scala.inline
-    def setBind(value: BindRequest => js.Promise[Unit]): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
+    inline def setBind(value: BindRequest => js.Promise[Unit]): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOn(value: (accepted, js.Function1[/* params */ AcceptedEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (accepted, js.Function1[/* params */ AcceptedEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnbind(value: UnbindRequest => js.Promise[Unit]): Self = StObject.set(x, "unbind", js.Any.fromFunction1(value))
+    inline def setUnbind(value: UnbindRequest => js.Promise[Unit]): Self = StObject.set(x, "unbind", js.Any.fromFunction1(value))
   }
 }

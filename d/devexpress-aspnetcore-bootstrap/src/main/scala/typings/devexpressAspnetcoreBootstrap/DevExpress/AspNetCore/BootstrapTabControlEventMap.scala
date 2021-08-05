@@ -22,8 +22,7 @@ trait BootstrapTabControlEventMap
 }
 object BootstrapTabControlEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeTabChanged: TabControlTabEventArgs,
     activeTabChanging: TabControlTabCancelEventArgs,
     beginCallback: BeginCallbackEventArgs,
@@ -36,25 +35,18 @@ object BootstrapTabControlEventMap {
     __obj.asInstanceOf[BootstrapTabControlEventMap]
   }
   
-  @scala.inline
-  implicit class BootstrapTabControlEventMapMutableBuilder[Self <: BootstrapTabControlEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapTabControlEventMap](x: Self) {
     
-    @scala.inline
-    def setActiveTabChanged(value: TabControlTabEventArgs): Self = StObject.set(x, "activeTabChanged", value.asInstanceOf[js.Any])
+    inline def setActiveTabChanged(value: TabControlTabEventArgs): Self = StObject.set(x, "activeTabChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveTabChanging(value: TabControlTabCancelEventArgs): Self = StObject.set(x, "activeTabChanging", value.asInstanceOf[js.Any])
+    inline def setActiveTabChanging(value: TabControlTabCancelEventArgs): Self = StObject.set(x, "activeTabChanging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
+    inline def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
+    inline def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
+    inline def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabClick(value: TabControlTabClickEventArgs): Self = StObject.set(x, "tabClick", value.asInstanceOf[js.Any])
+    inline def setTabClick(value: TabControlTabClickEventArgs): Self = StObject.set(x, "tabClick", value.asInstanceOf[js.Any])
   }
 }

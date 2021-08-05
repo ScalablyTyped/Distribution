@@ -12,19 +12,15 @@ trait ScriptingResult extends StObject {
 }
 object ScriptingResult {
   
-  @scala.inline
-  def apply(operationId: String, script: String): ScriptingResult = {
+  inline def apply(operationId: String, script: String): ScriptingResult = {
     val __obj = js.Dynamic.literal(operationId = operationId.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptingResult]
   }
   
-  @scala.inline
-  implicit class ScriptingResultMutableBuilder[Self <: ScriptingResult] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptingResult](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
   }
 }

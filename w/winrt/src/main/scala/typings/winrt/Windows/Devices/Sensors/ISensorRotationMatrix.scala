@@ -26,8 +26,7 @@ trait ISensorRotationMatrix extends StObject {
 }
 object ISensorRotationMatrix {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     m11: Double,
     m12: Double,
     m13: Double,
@@ -42,34 +41,24 @@ object ISensorRotationMatrix {
     __obj.asInstanceOf[ISensorRotationMatrix]
   }
   
-  @scala.inline
-  implicit class ISensorRotationMatrixMutableBuilder[Self <: ISensorRotationMatrix] (val x: Self) extends AnyVal {
+  extension [Self <: ISensorRotationMatrix](x: Self) {
     
-    @scala.inline
-    def setM11(value: Double): Self = StObject.set(x, "m11", value.asInstanceOf[js.Any])
+    inline def setM11(value: Double): Self = StObject.set(x, "m11", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM12(value: Double): Self = StObject.set(x, "m12", value.asInstanceOf[js.Any])
+    inline def setM12(value: Double): Self = StObject.set(x, "m12", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM13(value: Double): Self = StObject.set(x, "m13", value.asInstanceOf[js.Any])
+    inline def setM13(value: Double): Self = StObject.set(x, "m13", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM21(value: Double): Self = StObject.set(x, "m21", value.asInstanceOf[js.Any])
+    inline def setM21(value: Double): Self = StObject.set(x, "m21", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM22(value: Double): Self = StObject.set(x, "m22", value.asInstanceOf[js.Any])
+    inline def setM22(value: Double): Self = StObject.set(x, "m22", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM23(value: Double): Self = StObject.set(x, "m23", value.asInstanceOf[js.Any])
+    inline def setM23(value: Double): Self = StObject.set(x, "m23", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM31(value: Double): Self = StObject.set(x, "m31", value.asInstanceOf[js.Any])
+    inline def setM31(value: Double): Self = StObject.set(x, "m31", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM32(value: Double): Self = StObject.set(x, "m32", value.asInstanceOf[js.Any])
+    inline def setM32(value: Double): Self = StObject.set(x, "m32", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM33(value: Double): Self = StObject.set(x, "m33", value.asInstanceOf[js.Any])
+    inline def setM33(value: Double): Self = StObject.set(x, "m33", value.asInstanceOf[js.Any])
   }
 }

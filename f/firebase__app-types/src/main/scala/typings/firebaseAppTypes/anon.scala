@@ -128,17 +128,14 @@ object anon {
   }
   object Global {
     
-    @scala.inline
-    def apply(global: Boolean): Global = {
+    inline def apply(global: Boolean): Global = {
       val __obj = js.Dynamic.literal(global = global.asInstanceOf[js.Any])
       __obj.asInstanceOf[Global]
     }
     
-    @scala.inline
-    implicit class GlobalMutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
+    extension [Self <: Global](x: Self) {
       
-      @scala.inline
-      def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     }
   }
   

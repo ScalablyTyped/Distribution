@@ -14,37 +14,27 @@ trait CpuTemperatureInfo extends StObject {
 }
 object CpuTemperatureInfo {
   
-  @scala.inline
-  def apply(): CpuTemperatureInfo = {
+  inline def apply(): CpuTemperatureInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CpuTemperatureInfo]
   }
   
-  @scala.inline
-  implicit class CpuTemperatureInfoMutableBuilder[Self <: CpuTemperatureInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CpuTemperatureInfo](x: Self) {
     
-    @scala.inline
-    def setCpuTemperatureInfo(value: js.Array[Label]): Self = StObject.set(x, "cpuTemperatureInfo", value.asInstanceOf[js.Any])
+    inline def setCpuTemperatureInfo(value: js.Array[Label]): Self = StObject.set(x, "cpuTemperatureInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuTemperatureInfoUndefined: Self = StObject.set(x, "cpuTemperatureInfo", js.undefined)
+    inline def setCpuTemperatureInfoUndefined: Self = StObject.set(x, "cpuTemperatureInfo", js.undefined)
     
-    @scala.inline
-    def setCpuTemperatureInfoVarargs(value: Label*): Self = StObject.set(x, "cpuTemperatureInfo", js.Array(value :_*))
+    inline def setCpuTemperatureInfoVarargs(value: Label*): Self = StObject.set(x, "cpuTemperatureInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setCpuUtilizationPercentageInfo(value: js.Array[Double]): Self = StObject.set(x, "cpuUtilizationPercentageInfo", value.asInstanceOf[js.Any])
+    inline def setCpuUtilizationPercentageInfo(value: js.Array[Double]): Self = StObject.set(x, "cpuUtilizationPercentageInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuUtilizationPercentageInfoUndefined: Self = StObject.set(x, "cpuUtilizationPercentageInfo", js.undefined)
+    inline def setCpuUtilizationPercentageInfoUndefined: Self = StObject.set(x, "cpuUtilizationPercentageInfo", js.undefined)
     
-    @scala.inline
-    def setCpuUtilizationPercentageInfoVarargs(value: Double*): Self = StObject.set(x, "cpuUtilizationPercentageInfo", js.Array(value :_*))
+    inline def setCpuUtilizationPercentageInfoVarargs(value: Double*): Self = StObject.set(x, "cpuUtilizationPercentageInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setReportTime(value: String): Self = StObject.set(x, "reportTime", value.asInstanceOf[js.Any])
+    inline def setReportTime(value: String): Self = StObject.set(x, "reportTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportTimeUndefined: Self = StObject.set(x, "reportTime", js.undefined)
+    inline def setReportTimeUndefined: Self = StObject.set(x, "reportTime", js.undefined)
   }
 }

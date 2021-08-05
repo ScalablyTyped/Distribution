@@ -13,20 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): FfmpegCommand = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FfmpegCommand]
-  @scala.inline
-  def apply(input: String): FfmpegCommand = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
-  @scala.inline
-  def apply(input: String, options: FfmpegCommandOptions): FfmpegCommand = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FfmpegCommand]
-  @scala.inline
-  def apply(input: Unit, options: FfmpegCommandOptions): FfmpegCommand = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FfmpegCommand]
-  @scala.inline
-  def apply(input: Readable): FfmpegCommand = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
-  @scala.inline
-  def apply(input: Readable, options: FfmpegCommandOptions): FfmpegCommand = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FfmpegCommand]
-  @scala.inline
-  def apply(options: FfmpegCommandOptions): FfmpegCommand = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
+  inline def apply(): FfmpegCommand = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FfmpegCommand]
+  inline def apply(input: String): FfmpegCommand = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
+  inline def apply(input: String, options: FfmpegCommandOptions): FfmpegCommand = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FfmpegCommand]
+  inline def apply(input: Unit, options: FfmpegCommandOptions): FfmpegCommand = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FfmpegCommand]
+  inline def apply(input: Readable): FfmpegCommand = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
+  inline def apply(input: Readable, options: FfmpegCommandOptions): FfmpegCommand = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FfmpegCommand]
+  inline def apply(options: FfmpegCommandOptions): FfmpegCommand = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
   
   @JSImport("fluent-ffmpeg", JSImport.Namespace)
   @js.native
@@ -491,62 +484,47 @@ object mod {
     def writeToStream(stream: Writable, options: End): Writable = js.native
   }
   
-  @scala.inline
-  def availableCodecs(callback: CodecsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("availableCodecs")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def availableCodecs(callback: CodecsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("availableCodecs")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def availableEncoders(callback: EncodersCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("availableEncoders")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def availableEncoders(callback: EncodersCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("availableEncoders")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def availableFilters(callback: FiltersCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("availableFilters")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def availableFilters(callback: FiltersCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("availableFilters")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def availableFormats(callback: FormatsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("availableFormats")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def availableFormats(callback: FormatsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("availableFormats")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def ffprobe(file: String, callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ffprobe")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def ffprobe(
+  inline def ffprobe(file: String, callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ffprobe")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ffprobe(
     file: String,
     index: Double,
     callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ffprobe")(file.asInstanceOf[js.Any], index.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   // tslint:disable-line unified-signatures
-  @scala.inline
-  def ffprobe(
+  inline def ffprobe(
     file: String,
     index: Double,
     options: js.Array[String],
     callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ffprobe")(file.asInstanceOf[js.Any], index.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def ffprobe(
+  inline def ffprobe(
     file: String,
     options: js.Array[String],
     callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ffprobe")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getAvailableCodecs(callback: CodecsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableCodecs")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getAvailableCodecs(callback: CodecsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableCodecs")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getAvailableEncoders(callback: EncodersCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableEncoders")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getAvailableEncoders(callback: EncodersCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableEncoders")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getAvailableFilters(callback: FiltersCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableFilters")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getAvailableFilters(callback: FiltersCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableFilters")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getAvailableFormats(callback: FormatsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableFormats")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getAvailableFormats(callback: FormatsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableFormats")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // static methods
-  @scala.inline
-  def setFfmpegPath(path: String): FfmpegCommand = ^.asInstanceOf[js.Dynamic].applyDynamic("setFfmpegPath")(path.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
+  inline def setFfmpegPath(path: String): FfmpegCommand = ^.asInstanceOf[js.Dynamic].applyDynamic("setFfmpegPath")(path.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
   
-  @scala.inline
-  def setFfprobePath(path: String): FfmpegCommand = ^.asInstanceOf[js.Dynamic].applyDynamic("setFfprobePath")(path.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
+  inline def setFfprobePath(path: String): FfmpegCommand = ^.asInstanceOf[js.Dynamic].applyDynamic("setFfprobePath")(path.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
   
-  @scala.inline
-  def setFlvtoolPath(path: String): FfmpegCommand = ^.asInstanceOf[js.Dynamic].applyDynamic("setFlvtoolPath")(path.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
+  inline def setFlvtoolPath(path: String): FfmpegCommand = ^.asInstanceOf[js.Dynamic].applyDynamic("setFlvtoolPath")(path.asInstanceOf[js.Any]).asInstanceOf[FfmpegCommand]
   
   trait AudioVideoFilter extends StObject {
     
@@ -556,23 +534,18 @@ object mod {
   }
   object AudioVideoFilter {
     
-    @scala.inline
-    def apply(filter: String, options: String | js.Array[String] | js.Object): AudioVideoFilter = {
+    inline def apply(filter: String, options: String | js.Array[String] | js.Object): AudioVideoFilter = {
       val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[AudioVideoFilter]
     }
     
-    @scala.inline
-    implicit class AudioVideoFilterMutableBuilder[Self <: AudioVideoFilter] (val x: Self) extends AnyVal {
+    extension [Self <: AudioVideoFilter](x: Self) {
       
-      @scala.inline
-      def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: String | js.Array[String] | js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: String | js.Array[String] | js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
     }
   }
   
@@ -600,63 +573,45 @@ object mod {
   }
   object Codec {
     
-    @scala.inline
-    def apply(canDecode: Boolean, canEncode: Boolean, description: String, `type`: String): Codec = {
+    inline def apply(canDecode: Boolean, canEncode: Boolean, description: String, `type`: String): Codec = {
       val __obj = js.Dynamic.literal(canDecode = canDecode.asInstanceOf[js.Any], canEncode = canEncode.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Codec]
     }
     
-    @scala.inline
-    implicit class CodecMutableBuilder[Self <: Codec] (val x: Self) extends AnyVal {
+    extension [Self <: Codec](x: Self) {
       
-      @scala.inline
-      def setCanDecode(value: Boolean): Self = StObject.set(x, "canDecode", value.asInstanceOf[js.Any])
+      inline def setCanDecode(value: Boolean): Self = StObject.set(x, "canDecode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanEncode(value: Boolean): Self = StObject.set(x, "canEncode", value.asInstanceOf[js.Any])
+      inline def setCanEncode(value: Boolean): Self = StObject.set(x, "canEncode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectRendering(value: Boolean): Self = StObject.set(x, "directRendering", value.asInstanceOf[js.Any])
+      inline def setDirectRendering(value: Boolean): Self = StObject.set(x, "directRendering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectRenderingUndefined: Self = StObject.set(x, "directRendering", js.undefined)
+      inline def setDirectRenderingUndefined: Self = StObject.set(x, "directRendering", js.undefined)
       
-      @scala.inline
-      def setDrawHorizBand(value: Boolean): Self = StObject.set(x, "drawHorizBand", value.asInstanceOf[js.Any])
+      inline def setDrawHorizBand(value: Boolean): Self = StObject.set(x, "drawHorizBand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawHorizBandUndefined: Self = StObject.set(x, "drawHorizBand", js.undefined)
+      inline def setDrawHorizBandUndefined: Self = StObject.set(x, "drawHorizBand", js.undefined)
       
-      @scala.inline
-      def setIntraFrameOnly(value: Boolean): Self = StObject.set(x, "intraFrameOnly", value.asInstanceOf[js.Any])
+      inline def setIntraFrameOnly(value: Boolean): Self = StObject.set(x, "intraFrameOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntraFrameOnlyUndefined: Self = StObject.set(x, "intraFrameOnly", js.undefined)
+      inline def setIntraFrameOnlyUndefined: Self = StObject.set(x, "intraFrameOnly", js.undefined)
       
-      @scala.inline
-      def setIsLossless(value: Boolean): Self = StObject.set(x, "isLossless", value.asInstanceOf[js.Any])
+      inline def setIsLossless(value: Boolean): Self = StObject.set(x, "isLossless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLosslessUndefined: Self = StObject.set(x, "isLossless", js.undefined)
+      inline def setIsLosslessUndefined: Self = StObject.set(x, "isLossless", js.undefined)
       
-      @scala.inline
-      def setIsLossy(value: Boolean): Self = StObject.set(x, "isLossy", value.asInstanceOf[js.Any])
+      inline def setIsLossy(value: Boolean): Self = StObject.set(x, "isLossy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLossyUndefined: Self = StObject.set(x, "isLossy", js.undefined)
+      inline def setIsLossyUndefined: Self = StObject.set(x, "isLossy", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeirdFrameTruncation(value: Boolean): Self = StObject.set(x, "weirdFrameTruncation", value.asInstanceOf[js.Any])
+      inline def setWeirdFrameTruncation(value: Boolean): Self = StObject.set(x, "weirdFrameTruncation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeirdFrameTruncationUndefined: Self = StObject.set(x, "weirdFrameTruncation", js.undefined)
+      inline def setWeirdFrameTruncationUndefined: Self = StObject.set(x, "weirdFrameTruncation", js.undefined)
     }
   }
   
@@ -682,8 +637,7 @@ object mod {
   }
   object Encoder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       directRendering: Boolean,
       drawHorizBand: Boolean,
@@ -697,29 +651,21 @@ object mod {
       __obj.asInstanceOf[Encoder]
     }
     
-    @scala.inline
-    implicit class EncoderMutableBuilder[Self <: Encoder] (val x: Self) extends AnyVal {
+    extension [Self <: Encoder](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectRendering(value: Boolean): Self = StObject.set(x, "directRendering", value.asInstanceOf[js.Any])
+      inline def setDirectRendering(value: Boolean): Self = StObject.set(x, "directRendering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawHorizBand(value: Boolean): Self = StObject.set(x, "drawHorizBand", value.asInstanceOf[js.Any])
+      inline def setDrawHorizBand(value: Boolean): Self = StObject.set(x, "drawHorizBand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExperimental(value: Boolean): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+      inline def setExperimental(value: Boolean): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameMT(value: Boolean): Self = StObject.set(x, "frameMT", value.asInstanceOf[js.Any])
+      inline def setFrameMT(value: Boolean): Self = StObject.set(x, "frameMT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliceMT(value: Boolean): Self = StObject.set(x, "sliceMT", value.asInstanceOf[js.Any])
+      inline def setSliceMT(value: Boolean): Self = StObject.set(x, "sliceMT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -739,8 +685,7 @@ object mod {
   }
   object FfmpegCommandLogger {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: /* repeated */ js.Any => Unit,
       error: /* repeated */ js.Any => Unit,
       info: /* repeated */ js.Any => Unit,
@@ -750,20 +695,15 @@ object mod {
       __obj.asInstanceOf[FfmpegCommandLogger]
     }
     
-    @scala.inline
-    implicit class FfmpegCommandLoggerMutableBuilder[Self <: FfmpegCommandLogger] (val x: Self) extends AnyVal {
+    extension [Self <: FfmpegCommandLogger](x: Self) {
       
-      @scala.inline
-      def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
   
@@ -789,68 +729,48 @@ object mod {
   }
   object FfmpegCommandOptions {
     
-    @scala.inline
-    def apply(): FfmpegCommandOptions = {
+    inline def apply(): FfmpegCommandOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FfmpegCommandOptions]
     }
     
-    @scala.inline
-    implicit class FfmpegCommandOptionsMutableBuilder[Self <: FfmpegCommandOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FfmpegCommandOptions](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setLogger(value: FfmpegCommandLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: FfmpegCommandLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setNiceness(value: Double): Self = StObject.set(x, "niceness", value.asInstanceOf[js.Any])
+      inline def setNiceness(value: Double): Self = StObject.set(x, "niceness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNicenessUndefined: Self = StObject.set(x, "niceness", js.undefined)
+      inline def setNicenessUndefined: Self = StObject.set(x, "niceness", js.undefined)
       
-      @scala.inline
-      def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+      inline def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+      inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
       
-      @scala.inline
-      def setPresets(value: String): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
+      inline def setPresets(value: String): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
+      inline def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setSource(value: String | Readable): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String | Readable): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setStdoutLines(value: Double): Self = StObject.set(x, "stdoutLines", value.asInstanceOf[js.Any])
+      inline def setStdoutLines(value: Double): Self = StObject.set(x, "stdoutLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdoutLinesUndefined: Self = StObject.set(x, "stdoutLines", js.undefined)
+      inline def setStdoutLinesUndefined: Self = StObject.set(x, "stdoutLines", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -864,29 +784,22 @@ object mod {
   }
   object FfprobeData {
     
-    @scala.inline
-    def apply(chapters: js.Array[js.Any], format: FfprobeFormat, streams: js.Array[FfprobeStream]): FfprobeData = {
+    inline def apply(chapters: js.Array[js.Any], format: FfprobeFormat, streams: js.Array[FfprobeStream]): FfprobeData = {
       val __obj = js.Dynamic.literal(chapters = chapters.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], streams = streams.asInstanceOf[js.Any])
       __obj.asInstanceOf[FfprobeData]
     }
     
-    @scala.inline
-    implicit class FfprobeDataMutableBuilder[Self <: FfprobeData] (val x: Self) extends AnyVal {
+    extension [Self <: FfprobeData](x: Self) {
       
-      @scala.inline
-      def setChapters(value: js.Array[js.Any]): Self = StObject.set(x, "chapters", value.asInstanceOf[js.Any])
+      inline def setChapters(value: js.Array[js.Any]): Self = StObject.set(x, "chapters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChaptersVarargs(value: js.Any*): Self = StObject.set(x, "chapters", js.Array(value :_*))
+      inline def setChaptersVarargs(value: js.Any*): Self = StObject.set(x, "chapters", js.Array(value :_*))
       
-      @scala.inline
-      def setFormat(value: FfprobeFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: FfprobeFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreams(value: js.Array[FfprobeStream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
+      inline def setStreams(value: js.Array[FfprobeStream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamsVarargs(value: FfprobeStream*): Self = StObject.set(x, "streams", js.Array(value :_*))
+      inline def setStreamsVarargs(value: FfprobeStream*): Self = StObject.set(x, "streams", js.Array(value :_*))
     }
   }
   
@@ -918,83 +831,58 @@ object mod {
   }
   object FfprobeFormat {
     
-    @scala.inline
-    def apply(): FfprobeFormat = {
+    inline def apply(): FfprobeFormat = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FfprobeFormat]
     }
     
-    @scala.inline
-    implicit class FfprobeFormatMutableBuilder[Self <: FfprobeFormat] (val x: Self) extends AnyVal {
+    extension [Self <: FfprobeFormat](x: Self) {
       
-      @scala.inline
-      def setBit_rate(value: Double): Self = StObject.set(x, "bit_rate", value.asInstanceOf[js.Any])
+      inline def setBit_rate(value: Double): Self = StObject.set(x, "bit_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBit_rateUndefined: Self = StObject.set(x, "bit_rate", js.undefined)
+      inline def setBit_rateUndefined: Self = StObject.set(x, "bit_rate", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setFormat_long_name(value: String): Self = StObject.set(x, "format_long_name", value.asInstanceOf[js.Any])
+      inline def setFormat_long_name(value: String): Self = StObject.set(x, "format_long_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat_long_nameUndefined: Self = StObject.set(x, "format_long_name", js.undefined)
+      inline def setFormat_long_nameUndefined: Self = StObject.set(x, "format_long_name", js.undefined)
       
-      @scala.inline
-      def setFormat_name(value: String): Self = StObject.set(x, "format_name", value.asInstanceOf[js.Any])
+      inline def setFormat_name(value: String): Self = StObject.set(x, "format_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat_nameUndefined: Self = StObject.set(x, "format_name", js.undefined)
+      inline def setFormat_nameUndefined: Self = StObject.set(x, "format_name", js.undefined)
       
-      @scala.inline
-      def setNb_programs(value: Double): Self = StObject.set(x, "nb_programs", value.asInstanceOf[js.Any])
+      inline def setNb_programs(value: Double): Self = StObject.set(x, "nb_programs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNb_programsUndefined: Self = StObject.set(x, "nb_programs", js.undefined)
+      inline def setNb_programsUndefined: Self = StObject.set(x, "nb_programs", js.undefined)
       
-      @scala.inline
-      def setNb_streams(value: Double): Self = StObject.set(x, "nb_streams", value.asInstanceOf[js.Any])
+      inline def setNb_streams(value: Double): Self = StObject.set(x, "nb_streams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNb_streamsUndefined: Self = StObject.set(x, "nb_streams", js.undefined)
+      inline def setNb_streamsUndefined: Self = StObject.set(x, "nb_streams", js.undefined)
       
-      @scala.inline
-      def setProbe_score(value: Double): Self = StObject.set(x, "probe_score", value.asInstanceOf[js.Any])
+      inline def setProbe_score(value: Double): Self = StObject.set(x, "probe_score", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProbe_scoreUndefined: Self = StObject.set(x, "probe_score", js.undefined)
+      inline def setProbe_scoreUndefined: Self = StObject.set(x, "probe_score", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStart_time(value: Double): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
+      inline def setStart_time(value: Double): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
+      inline def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
   
@@ -1094,281 +982,190 @@ object mod {
   }
   object FfprobeStream {
     
-    @scala.inline
-    def apply(index: Double): FfprobeStream = {
+    inline def apply(index: Double): FfprobeStream = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[FfprobeStream]
     }
     
-    @scala.inline
-    implicit class FfprobeStreamMutableBuilder[Self <: FfprobeStream] (val x: Self) extends AnyVal {
+    extension [Self <: FfprobeStream](x: Self) {
       
-      @scala.inline
-      def setAvg_frame_rate(value: String): Self = StObject.set(x, "avg_frame_rate", value.asInstanceOf[js.Any])
+      inline def setAvg_frame_rate(value: String): Self = StObject.set(x, "avg_frame_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvg_frame_rateUndefined: Self = StObject.set(x, "avg_frame_rate", js.undefined)
+      inline def setAvg_frame_rateUndefined: Self = StObject.set(x, "avg_frame_rate", js.undefined)
       
-      @scala.inline
-      def setBit_rate(value: String): Self = StObject.set(x, "bit_rate", value.asInstanceOf[js.Any])
+      inline def setBit_rate(value: String): Self = StObject.set(x, "bit_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBit_rateUndefined: Self = StObject.set(x, "bit_rate", js.undefined)
+      inline def setBit_rateUndefined: Self = StObject.set(x, "bit_rate", js.undefined)
       
-      @scala.inline
-      def setBits_per_raw_sample(value: String): Self = StObject.set(x, "bits_per_raw_sample", value.asInstanceOf[js.Any])
+      inline def setBits_per_raw_sample(value: String): Self = StObject.set(x, "bits_per_raw_sample", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBits_per_raw_sampleUndefined: Self = StObject.set(x, "bits_per_raw_sample", js.undefined)
+      inline def setBits_per_raw_sampleUndefined: Self = StObject.set(x, "bits_per_raw_sample", js.undefined)
       
-      @scala.inline
-      def setBits_per_sample(value: Double): Self = StObject.set(x, "bits_per_sample", value.asInstanceOf[js.Any])
+      inline def setBits_per_sample(value: Double): Self = StObject.set(x, "bits_per_sample", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBits_per_sampleUndefined: Self = StObject.set(x, "bits_per_sample", js.undefined)
+      inline def setBits_per_sampleUndefined: Self = StObject.set(x, "bits_per_sample", js.undefined)
       
-      @scala.inline
-      def setChannel_layout(value: String): Self = StObject.set(x, "channel_layout", value.asInstanceOf[js.Any])
+      inline def setChannel_layout(value: String): Self = StObject.set(x, "channel_layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannel_layoutUndefined: Self = StObject.set(x, "channel_layout", js.undefined)
+      inline def setChannel_layoutUndefined: Self = StObject.set(x, "channel_layout", js.undefined)
       
-      @scala.inline
-      def setChannels(value: Double): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+      inline def setChannels(value: Double): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+      inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
       
-      @scala.inline
-      def setChroma_location(value: String): Self = StObject.set(x, "chroma_location", value.asInstanceOf[js.Any])
+      inline def setChroma_location(value: String): Self = StObject.set(x, "chroma_location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChroma_locationUndefined: Self = StObject.set(x, "chroma_location", js.undefined)
+      inline def setChroma_locationUndefined: Self = StObject.set(x, "chroma_location", js.undefined)
       
-      @scala.inline
-      def setCodec_long_name(value: String): Self = StObject.set(x, "codec_long_name", value.asInstanceOf[js.Any])
+      inline def setCodec_long_name(value: String): Self = StObject.set(x, "codec_long_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodec_long_nameUndefined: Self = StObject.set(x, "codec_long_name", js.undefined)
+      inline def setCodec_long_nameUndefined: Self = StObject.set(x, "codec_long_name", js.undefined)
       
-      @scala.inline
-      def setCodec_name(value: String): Self = StObject.set(x, "codec_name", value.asInstanceOf[js.Any])
+      inline def setCodec_name(value: String): Self = StObject.set(x, "codec_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodec_nameUndefined: Self = StObject.set(x, "codec_name", js.undefined)
+      inline def setCodec_nameUndefined: Self = StObject.set(x, "codec_name", js.undefined)
       
-      @scala.inline
-      def setCodec_tag(value: String): Self = StObject.set(x, "codec_tag", value.asInstanceOf[js.Any])
+      inline def setCodec_tag(value: String): Self = StObject.set(x, "codec_tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodec_tagUndefined: Self = StObject.set(x, "codec_tag", js.undefined)
+      inline def setCodec_tagUndefined: Self = StObject.set(x, "codec_tag", js.undefined)
       
-      @scala.inline
-      def setCodec_tag_string(value: String): Self = StObject.set(x, "codec_tag_string", value.asInstanceOf[js.Any])
+      inline def setCodec_tag_string(value: String): Self = StObject.set(x, "codec_tag_string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodec_tag_stringUndefined: Self = StObject.set(x, "codec_tag_string", js.undefined)
+      inline def setCodec_tag_stringUndefined: Self = StObject.set(x, "codec_tag_string", js.undefined)
       
-      @scala.inline
-      def setCodec_time_base(value: String): Self = StObject.set(x, "codec_time_base", value.asInstanceOf[js.Any])
+      inline def setCodec_time_base(value: String): Self = StObject.set(x, "codec_time_base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodec_time_baseUndefined: Self = StObject.set(x, "codec_time_base", js.undefined)
+      inline def setCodec_time_baseUndefined: Self = StObject.set(x, "codec_time_base", js.undefined)
       
-      @scala.inline
-      def setCodec_type(value: String): Self = StObject.set(x, "codec_type", value.asInstanceOf[js.Any])
+      inline def setCodec_type(value: String): Self = StObject.set(x, "codec_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodec_typeUndefined: Self = StObject.set(x, "codec_type", js.undefined)
+      inline def setCodec_typeUndefined: Self = StObject.set(x, "codec_type", js.undefined)
       
-      @scala.inline
-      def setCoded_height(value: Double): Self = StObject.set(x, "coded_height", value.asInstanceOf[js.Any])
+      inline def setCoded_height(value: Double): Self = StObject.set(x, "coded_height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoded_heightUndefined: Self = StObject.set(x, "coded_height", js.undefined)
+      inline def setCoded_heightUndefined: Self = StObject.set(x, "coded_height", js.undefined)
       
-      @scala.inline
-      def setCoded_width(value: Double): Self = StObject.set(x, "coded_width", value.asInstanceOf[js.Any])
+      inline def setCoded_width(value: Double): Self = StObject.set(x, "coded_width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoded_widthUndefined: Self = StObject.set(x, "coded_width", js.undefined)
+      inline def setCoded_widthUndefined: Self = StObject.set(x, "coded_width", js.undefined)
       
-      @scala.inline
-      def setColor_primaries(value: String): Self = StObject.set(x, "color_primaries", value.asInstanceOf[js.Any])
+      inline def setColor_primaries(value: String): Self = StObject.set(x, "color_primaries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor_primariesUndefined: Self = StObject.set(x, "color_primaries", js.undefined)
+      inline def setColor_primariesUndefined: Self = StObject.set(x, "color_primaries", js.undefined)
       
-      @scala.inline
-      def setColor_range(value: String): Self = StObject.set(x, "color_range", value.asInstanceOf[js.Any])
+      inline def setColor_range(value: String): Self = StObject.set(x, "color_range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor_rangeUndefined: Self = StObject.set(x, "color_range", js.undefined)
+      inline def setColor_rangeUndefined: Self = StObject.set(x, "color_range", js.undefined)
       
-      @scala.inline
-      def setColor_space(value: String): Self = StObject.set(x, "color_space", value.asInstanceOf[js.Any])
+      inline def setColor_space(value: String): Self = StObject.set(x, "color_space", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor_spaceUndefined: Self = StObject.set(x, "color_space", js.undefined)
+      inline def setColor_spaceUndefined: Self = StObject.set(x, "color_space", js.undefined)
       
-      @scala.inline
-      def setColor_transfer(value: String): Self = StObject.set(x, "color_transfer", value.asInstanceOf[js.Any])
+      inline def setColor_transfer(value: String): Self = StObject.set(x, "color_transfer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor_transferUndefined: Self = StObject.set(x, "color_transfer", js.undefined)
+      inline def setColor_transferUndefined: Self = StObject.set(x, "color_transfer", js.undefined)
       
-      @scala.inline
-      def setDisplay_aspect_ratio(value: String): Self = StObject.set(x, "display_aspect_ratio", value.asInstanceOf[js.Any])
+      inline def setDisplay_aspect_ratio(value: String): Self = StObject.set(x, "display_aspect_ratio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplay_aspect_ratioUndefined: Self = StObject.set(x, "display_aspect_ratio", js.undefined)
+      inline def setDisplay_aspect_ratioUndefined: Self = StObject.set(x, "display_aspect_ratio", js.undefined)
       
-      @scala.inline
-      def setDisposition(value: FfprobeStreamDisposition): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
+      inline def setDisposition(value: FfprobeStreamDisposition): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispositionUndefined: Self = StObject.set(x, "disposition", js.undefined)
+      inline def setDispositionUndefined: Self = StObject.set(x, "disposition", js.undefined)
       
-      @scala.inline
-      def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setDuration_ts(value: String): Self = StObject.set(x, "duration_ts", value.asInstanceOf[js.Any])
+      inline def setDuration_ts(value: String): Self = StObject.set(x, "duration_ts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration_tsUndefined: Self = StObject.set(x, "duration_ts", js.undefined)
+      inline def setDuration_tsUndefined: Self = StObject.set(x, "duration_ts", js.undefined)
       
-      @scala.inline
-      def setField_order(value: String): Self = StObject.set(x, "field_order", value.asInstanceOf[js.Any])
+      inline def setField_order(value: String): Self = StObject.set(x, "field_order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setField_orderUndefined: Self = StObject.set(x, "field_order", js.undefined)
+      inline def setField_orderUndefined: Self = StObject.set(x, "field_order", js.undefined)
       
-      @scala.inline
-      def setHas_b_frames(value: Double): Self = StObject.set(x, "has_b_frames", value.asInstanceOf[js.Any])
+      inline def setHas_b_frames(value: Double): Self = StObject.set(x, "has_b_frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_b_framesUndefined: Self = StObject.set(x, "has_b_frames", js.undefined)
+      inline def setHas_b_framesUndefined: Self = StObject.set(x, "has_b_frames", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setMax_bit_rate(value: String): Self = StObject.set(x, "max_bit_rate", value.asInstanceOf[js.Any])
+      inline def setMax_bit_rate(value: String): Self = StObject.set(x, "max_bit_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_bit_rateUndefined: Self = StObject.set(x, "max_bit_rate", js.undefined)
+      inline def setMax_bit_rateUndefined: Self = StObject.set(x, "max_bit_rate", js.undefined)
       
-      @scala.inline
-      def setNb_frames(value: String): Self = StObject.set(x, "nb_frames", value.asInstanceOf[js.Any])
+      inline def setNb_frames(value: String): Self = StObject.set(x, "nb_frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNb_framesUndefined: Self = StObject.set(x, "nb_frames", js.undefined)
+      inline def setNb_framesUndefined: Self = StObject.set(x, "nb_frames", js.undefined)
       
-      @scala.inline
-      def setNb_read_frames(value: String): Self = StObject.set(x, "nb_read_frames", value.asInstanceOf[js.Any])
+      inline def setNb_read_frames(value: String): Self = StObject.set(x, "nb_read_frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNb_read_framesUndefined: Self = StObject.set(x, "nb_read_frames", js.undefined)
+      inline def setNb_read_framesUndefined: Self = StObject.set(x, "nb_read_frames", js.undefined)
       
-      @scala.inline
-      def setNb_read_packets(value: String): Self = StObject.set(x, "nb_read_packets", value.asInstanceOf[js.Any])
+      inline def setNb_read_packets(value: String): Self = StObject.set(x, "nb_read_packets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNb_read_packetsUndefined: Self = StObject.set(x, "nb_read_packets", js.undefined)
+      inline def setNb_read_packetsUndefined: Self = StObject.set(x, "nb_read_packets", js.undefined)
       
-      @scala.inline
-      def setPix_fmt(value: String): Self = StObject.set(x, "pix_fmt", value.asInstanceOf[js.Any])
+      inline def setPix_fmt(value: String): Self = StObject.set(x, "pix_fmt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPix_fmtUndefined: Self = StObject.set(x, "pix_fmt", js.undefined)
+      inline def setPix_fmtUndefined: Self = StObject.set(x, "pix_fmt", js.undefined)
       
-      @scala.inline
-      def setProfile(value: Double): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: Double): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      @scala.inline
-      def setR_frame_rate(value: String): Self = StObject.set(x, "r_frame_rate", value.asInstanceOf[js.Any])
+      inline def setR_frame_rate(value: String): Self = StObject.set(x, "r_frame_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR_frame_rateUndefined: Self = StObject.set(x, "r_frame_rate", js.undefined)
+      inline def setR_frame_rateUndefined: Self = StObject.set(x, "r_frame_rate", js.undefined)
       
-      @scala.inline
-      def setRefs(value: Double): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+      inline def setRefs(value: Double): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefsUndefined: Self = StObject.set(x, "refs", js.undefined)
+      inline def setRefsUndefined: Self = StObject.set(x, "refs", js.undefined)
       
-      @scala.inline
-      def setSample_aspect_ratio(value: String): Self = StObject.set(x, "sample_aspect_ratio", value.asInstanceOf[js.Any])
+      inline def setSample_aspect_ratio(value: String): Self = StObject.set(x, "sample_aspect_ratio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSample_aspect_ratioUndefined: Self = StObject.set(x, "sample_aspect_ratio", js.undefined)
+      inline def setSample_aspect_ratioUndefined: Self = StObject.set(x, "sample_aspect_ratio", js.undefined)
       
-      @scala.inline
-      def setSample_fmt(value: String): Self = StObject.set(x, "sample_fmt", value.asInstanceOf[js.Any])
+      inline def setSample_fmt(value: String): Self = StObject.set(x, "sample_fmt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSample_fmtUndefined: Self = StObject.set(x, "sample_fmt", js.undefined)
+      inline def setSample_fmtUndefined: Self = StObject.set(x, "sample_fmt", js.undefined)
       
-      @scala.inline
-      def setSample_rate(value: Double): Self = StObject.set(x, "sample_rate", value.asInstanceOf[js.Any])
+      inline def setSample_rate(value: Double): Self = StObject.set(x, "sample_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSample_rateUndefined: Self = StObject.set(x, "sample_rate", js.undefined)
+      inline def setSample_rateUndefined: Self = StObject.set(x, "sample_rate", js.undefined)
       
-      @scala.inline
-      def setStart_pts(value: Double): Self = StObject.set(x, "start_pts", value.asInstanceOf[js.Any])
+      inline def setStart_pts(value: Double): Self = StObject.set(x, "start_pts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart_ptsUndefined: Self = StObject.set(x, "start_pts", js.undefined)
+      inline def setStart_ptsUndefined: Self = StObject.set(x, "start_pts", js.undefined)
       
-      @scala.inline
-      def setStart_time(value: Double): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
+      inline def setStart_time(value: Double): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
+      inline def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
       
-      @scala.inline
-      def setTime_base(value: String): Self = StObject.set(x, "time_base", value.asInstanceOf[js.Any])
+      inline def setTime_base(value: String): Self = StObject.set(x, "time_base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime_baseUndefined: Self = StObject.set(x, "time_base", js.undefined)
+      inline def setTime_baseUndefined: Self = StObject.set(x, "time_base", js.undefined)
       
-      @scala.inline
-      def setTimecode(value: String): Self = StObject.set(x, "timecode", value.asInstanceOf[js.Any])
+      inline def setTimecode(value: String): Self = StObject.set(x, "timecode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimecodeUndefined: Self = StObject.set(x, "timecode", js.undefined)
+      inline def setTimecodeUndefined: Self = StObject.set(x, "timecode", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -1402,86 +1199,60 @@ object mod {
   }
   object FfprobeStreamDisposition {
     
-    @scala.inline
-    def apply(): FfprobeStreamDisposition = {
+    inline def apply(): FfprobeStreamDisposition = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FfprobeStreamDisposition]
     }
     
-    @scala.inline
-    implicit class FfprobeStreamDispositionMutableBuilder[Self <: FfprobeStreamDisposition] (val x: Self) extends AnyVal {
+    extension [Self <: FfprobeStreamDisposition](x: Self) {
       
-      @scala.inline
-      def setAttached_pic(value: Double): Self = StObject.set(x, "attached_pic", value.asInstanceOf[js.Any])
+      inline def setAttached_pic(value: Double): Self = StObject.set(x, "attached_pic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttached_picUndefined: Self = StObject.set(x, "attached_pic", js.undefined)
+      inline def setAttached_picUndefined: Self = StObject.set(x, "attached_pic", js.undefined)
       
-      @scala.inline
-      def setClean_effects(value: Double): Self = StObject.set(x, "clean_effects", value.asInstanceOf[js.Any])
+      inline def setClean_effects(value: Double): Self = StObject.set(x, "clean_effects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClean_effectsUndefined: Self = StObject.set(x, "clean_effects", js.undefined)
+      inline def setClean_effectsUndefined: Self = StObject.set(x, "clean_effects", js.undefined)
       
-      @scala.inline
-      def setComment(value: Double): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Double): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDub(value: Double): Self = StObject.set(x, "dub", value.asInstanceOf[js.Any])
+      inline def setDub(value: Double): Self = StObject.set(x, "dub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDubUndefined: Self = StObject.set(x, "dub", js.undefined)
+      inline def setDubUndefined: Self = StObject.set(x, "dub", js.undefined)
       
-      @scala.inline
-      def setForced(value: Double): Self = StObject.set(x, "forced", value.asInstanceOf[js.Any])
+      inline def setForced(value: Double): Self = StObject.set(x, "forced", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForcedUndefined: Self = StObject.set(x, "forced", js.undefined)
+      inline def setForcedUndefined: Self = StObject.set(x, "forced", js.undefined)
       
-      @scala.inline
-      def setHearing_impaired(value: Double): Self = StObject.set(x, "hearing_impaired", value.asInstanceOf[js.Any])
+      inline def setHearing_impaired(value: Double): Self = StObject.set(x, "hearing_impaired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHearing_impairedUndefined: Self = StObject.set(x, "hearing_impaired", js.undefined)
+      inline def setHearing_impairedUndefined: Self = StObject.set(x, "hearing_impaired", js.undefined)
       
-      @scala.inline
-      def setKaraoke(value: Double): Self = StObject.set(x, "karaoke", value.asInstanceOf[js.Any])
+      inline def setKaraoke(value: Double): Self = StObject.set(x, "karaoke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKaraokeUndefined: Self = StObject.set(x, "karaoke", js.undefined)
+      inline def setKaraokeUndefined: Self = StObject.set(x, "karaoke", js.undefined)
       
-      @scala.inline
-      def setLyrics(value: Double): Self = StObject.set(x, "lyrics", value.asInstanceOf[js.Any])
+      inline def setLyrics(value: Double): Self = StObject.set(x, "lyrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLyricsUndefined: Self = StObject.set(x, "lyrics", js.undefined)
+      inline def setLyricsUndefined: Self = StObject.set(x, "lyrics", js.undefined)
       
-      @scala.inline
-      def setOriginal(value: Double): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+      inline def setOriginal(value: Double): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
+      inline def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
       
-      @scala.inline
-      def setTimed_thumbnails(value: Double): Self = StObject.set(x, "timed_thumbnails", value.asInstanceOf[js.Any])
+      inline def setTimed_thumbnails(value: Double): Self = StObject.set(x, "timed_thumbnails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimed_thumbnailsUndefined: Self = StObject.set(x, "timed_thumbnails", js.undefined)
+      inline def setTimed_thumbnailsUndefined: Self = StObject.set(x, "timed_thumbnails", js.undefined)
       
-      @scala.inline
-      def setVisual_impaired(value: Double): Self = StObject.set(x, "visual_impaired", value.asInstanceOf[js.Any])
+      inline def setVisual_impaired(value: Double): Self = StObject.set(x, "visual_impaired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisual_impairedUndefined: Self = StObject.set(x, "visual_impaired", js.undefined)
+      inline def setVisual_impairedUndefined: Self = StObject.set(x, "visual_impaired", js.undefined)
     }
   }
   
@@ -1499,8 +1270,7 @@ object mod {
   }
   object Filter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       input: String,
       multipleInputs: Boolean,
@@ -1511,23 +1281,17 @@ object mod {
       __obj.asInstanceOf[Filter]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+    extension [Self <: Filter](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleInputs(value: Boolean): Self = StObject.set(x, "multipleInputs", value.asInstanceOf[js.Any])
+      inline def setMultipleInputs(value: Boolean): Self = StObject.set(x, "multipleInputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleOutputs(value: Boolean): Self = StObject.set(x, "multipleOutputs", value.asInstanceOf[js.Any])
+      inline def setMultipleOutputs(value: Boolean): Self = StObject.set(x, "multipleOutputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1543,44 +1307,32 @@ object mod {
   }
   object FilterSpecification {
     
-    @scala.inline
-    def apply(filter: String): FilterSpecification = {
+    inline def apply(filter: String): FilterSpecification = {
       val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilterSpecification]
     }
     
-    @scala.inline
-    implicit class FilterSpecificationMutableBuilder[Self <: FilterSpecification] (val x: Self) extends AnyVal {
+    extension [Self <: FilterSpecification](x: Self) {
       
-      @scala.inline
-      def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputs(value: String | js.Array[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: String | js.Array[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+      inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
       
-      @scala.inline
-      def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: js.Any | String | js.Array[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any | String | js.Array[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOptionsVarargs(value: js.Any*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: js.Any*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setOutputs(value: String | js.Array[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      inline def setOutputs(value: String | js.Array[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+      inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
       
-      @scala.inline
-      def setOutputsVarargs(value: String*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: String*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     }
   }
   
@@ -1598,23 +1350,18 @@ object mod {
   }
   object Format {
     
-    @scala.inline
-    def apply(canDemux: Boolean, canMux: Boolean, description: String): Format = {
+    inline def apply(canDemux: Boolean, canMux: Boolean, description: String): Format = {
       val __obj = js.Dynamic.literal(canDemux = canDemux.asInstanceOf[js.Any], canMux = canMux.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
       __obj.asInstanceOf[Format]
     }
     
-    @scala.inline
-    implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+    extension [Self <: Format](x: Self) {
       
-      @scala.inline
-      def setCanDemux(value: Boolean): Self = StObject.set(x, "canDemux", value.asInstanceOf[js.Any])
+      inline def setCanDemux(value: Boolean): Self = StObject.set(x, "canDemux", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanMux(value: Boolean): Self = StObject.set(x, "canMux", value.asInstanceOf[js.Any])
+      inline def setCanMux(value: Boolean): Self = StObject.set(x, "canMux", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1642,62 +1389,44 @@ object mod {
   }
   object ScreenshotsConfig {
     
-    @scala.inline
-    def apply(): ScreenshotsConfig = {
+    inline def apply(): ScreenshotsConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScreenshotsConfig]
     }
     
-    @scala.inline
-    implicit class ScreenshotsConfigMutableBuilder[Self <: ScreenshotsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ScreenshotsConfig](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setFastSeek(value: Boolean): Self = StObject.set(x, "fastSeek", value.asInstanceOf[js.Any])
+      inline def setFastSeek(value: Boolean): Self = StObject.set(x, "fastSeek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFastSeekUndefined: Self = StObject.set(x, "fastSeek", js.undefined)
+      inline def setFastSeekUndefined: Self = StObject.set(x, "fastSeek", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+      inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTimemarks(value: js.Array[Double | String]): Self = StObject.set(x, "timemarks", value.asInstanceOf[js.Any])
+      inline def setTimemarks(value: js.Array[Double | String]): Self = StObject.set(x, "timemarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimemarksUndefined: Self = StObject.set(x, "timemarks", js.undefined)
+      inline def setTimemarksUndefined: Self = StObject.set(x, "timemarks", js.undefined)
       
-      @scala.inline
-      def setTimemarksVarargs(value: (Double | String)*): Self = StObject.set(x, "timemarks", js.Array(value :_*))
+      inline def setTimemarksVarargs(value: (Double | String)*): Self = StObject.set(x, "timemarks", js.Array(value :_*))
       
-      @scala.inline
-      def setTimestamps(value: js.Array[Double | String]): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
+      inline def setTimestamps(value: js.Array[Double | String]): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
+      inline def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
       
-      @scala.inline
-      def setTimestampsVarargs(value: (Double | String)*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
+      inline def setTimestampsVarargs(value: (Double | String)*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
     }
   }
 }

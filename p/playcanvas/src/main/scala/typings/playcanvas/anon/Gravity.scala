@@ -10,19 +10,15 @@ trait Gravity extends StObject {
 }
 object Gravity {
   
-  @scala.inline
-  def apply(gravity: js.Array[Double]): Gravity = {
+  inline def apply(gravity: js.Array[Double]): Gravity = {
     val __obj = js.Dynamic.literal(gravity = gravity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Gravity]
   }
   
-  @scala.inline
-  implicit class GravityMutableBuilder[Self <: Gravity] (val x: Self) extends AnyVal {
+  extension [Self <: Gravity](x: Self) {
     
-    @scala.inline
-    def setGravity(value: js.Array[Double]): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    inline def setGravity(value: js.Array[Double]): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGravityVarargs(value: Double*): Self = StObject.set(x, "gravity", js.Array(value :_*))
+    inline def setGravityVarargs(value: Double*): Self = StObject.set(x, "gravity", js.Array(value :_*))
   }
 }

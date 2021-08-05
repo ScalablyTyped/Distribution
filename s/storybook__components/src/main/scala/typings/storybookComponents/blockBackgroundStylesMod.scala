@@ -11,6 +11,5 @@ object blockBackgroundStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBlockBackgroundStyle(theme: Theme): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockBackgroundStyle")(theme.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def getBlockBackgroundStyle(theme: Theme): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockBackgroundStyle")(theme.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

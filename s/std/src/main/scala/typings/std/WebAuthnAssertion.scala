@@ -16,8 +16,7 @@ trait WebAuthnAssertion extends StObject {
 }
 object WebAuthnAssertion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authenticatorData: ArrayBuffer,
     clientData: ArrayBuffer,
     credential: ScopedCredential,
@@ -27,19 +26,14 @@ object WebAuthnAssertion {
     __obj.asInstanceOf[WebAuthnAssertion]
   }
   
-  @scala.inline
-  implicit class WebAuthnAssertionMutableBuilder[Self <: WebAuthnAssertion] (val x: Self) extends AnyVal {
+  extension [Self <: WebAuthnAssertion](x: Self) {
     
-    @scala.inline
-    def setAuthenticatorData(value: ArrayBuffer): Self = StObject.set(x, "authenticatorData", value.asInstanceOf[js.Any])
+    inline def setAuthenticatorData(value: ArrayBuffer): Self = StObject.set(x, "authenticatorData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientData(value: ArrayBuffer): Self = StObject.set(x, "clientData", value.asInstanceOf[js.Any])
+    inline def setClientData(value: ArrayBuffer): Self = StObject.set(x, "clientData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredential(value: ScopedCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+    inline def setCredential(value: ScopedCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignature(value: ArrayBuffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: ArrayBuffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }
 }

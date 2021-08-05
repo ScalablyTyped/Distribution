@@ -12,6 +12,5 @@ object rectToClientRectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(rect: Rect): ClientRectObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(rect.asInstanceOf[js.Any]).asInstanceOf[ClientRectObject]
+  inline def default(rect: Rect): ClientRectObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(rect.asInstanceOf[js.Any]).asInstanceOf[ClientRectObject]
 }

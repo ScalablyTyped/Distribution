@@ -13,19 +13,15 @@ trait StockToolsGuiDefinitionsSimpleShapesCircleOptions extends StObject {
 }
 object StockToolsGuiDefinitionsSimpleShapesCircleOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsSimpleShapesCircleOptions = {
+  inline def apply(): StockToolsGuiDefinitionsSimpleShapesCircleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsSimpleShapesCircleOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsSimpleShapesCircleOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsSimpleShapesCircleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsSimpleShapesCircleOptions](x: Self) {
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

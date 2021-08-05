@@ -18,31 +18,23 @@ trait GetDevicePoolCompatibilityResult extends StObject {
 }
 object GetDevicePoolCompatibilityResult {
   
-  @scala.inline
-  def apply(): GetDevicePoolCompatibilityResult = {
+  inline def apply(): GetDevicePoolCompatibilityResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDevicePoolCompatibilityResult]
   }
   
-  @scala.inline
-  implicit class GetDevicePoolCompatibilityResultMutableBuilder[Self <: GetDevicePoolCompatibilityResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetDevicePoolCompatibilityResult](x: Self) {
     
-    @scala.inline
-    def setCompatibleDevices(value: DevicePoolCompatibilityResults): Self = StObject.set(x, "compatibleDevices", value.asInstanceOf[js.Any])
+    inline def setCompatibleDevices(value: DevicePoolCompatibilityResults): Self = StObject.set(x, "compatibleDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibleDevicesUndefined: Self = StObject.set(x, "compatibleDevices", js.undefined)
+    inline def setCompatibleDevicesUndefined: Self = StObject.set(x, "compatibleDevices", js.undefined)
     
-    @scala.inline
-    def setCompatibleDevicesVarargs(value: DevicePoolCompatibilityResult*): Self = StObject.set(x, "compatibleDevices", js.Array(value :_*))
+    inline def setCompatibleDevicesVarargs(value: DevicePoolCompatibilityResult*): Self = StObject.set(x, "compatibleDevices", js.Array(value :_*))
     
-    @scala.inline
-    def setIncompatibleDevices(value: DevicePoolCompatibilityResults): Self = StObject.set(x, "incompatibleDevices", value.asInstanceOf[js.Any])
+    inline def setIncompatibleDevices(value: DevicePoolCompatibilityResults): Self = StObject.set(x, "incompatibleDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncompatibleDevicesUndefined: Self = StObject.set(x, "incompatibleDevices", js.undefined)
+    inline def setIncompatibleDevicesUndefined: Self = StObject.set(x, "incompatibleDevices", js.undefined)
     
-    @scala.inline
-    def setIncompatibleDevicesVarargs(value: DevicePoolCompatibilityResult*): Self = StObject.set(x, "incompatibleDevices", js.Array(value :_*))
+    inline def setIncompatibleDevicesVarargs(value: DevicePoolCompatibilityResult*): Self = StObject.set(x, "incompatibleDevices", js.Array(value :_*))
   }
 }

@@ -155,30 +155,19 @@ object mod {
     def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any, options: IWSSecurityCertOptions) = this()
   }
   
-  @scala.inline
-  def createClient(url: String, callback: CreateClientCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def createClient(url: String, callback: CreateClientCallback, endpoint: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def createClient(url: String, options: IOptions, callback: CreateClientCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def createClient(url: String, options: IOptions, callback: CreateClientCallback, endpoint: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createClient(url: String, callback: CreateClientCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createClient(url: String, callback: CreateClientCallback, endpoint: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createClient(url: String, options: IOptions, callback: CreateClientCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createClient(url: String, options: IOptions, callback: CreateClientCallback, endpoint: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def createClientAsync(url: String): js.Promise[typings.soap.clientMod.Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("createClientAsync")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.soap.clientMod.Client]]
-  @scala.inline
-  def createClientAsync(url: String, options: Unit, endpoint: String): js.Promise[typings.soap.clientMod.Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientAsync")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.soap.clientMod.Client]]
-  @scala.inline
-  def createClientAsync(url: String, options: IOptions): js.Promise[typings.soap.clientMod.Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientAsync")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.soap.clientMod.Client]]
-  @scala.inline
-  def createClientAsync(url: String, options: IOptions, endpoint: String): js.Promise[typings.soap.clientMod.Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientAsync")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.soap.clientMod.Client]]
+  inline def createClientAsync(url: String): js.Promise[typings.soap.clientMod.Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("createClientAsync")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.soap.clientMod.Client]]
+  inline def createClientAsync(url: String, options: Unit, endpoint: String): js.Promise[typings.soap.clientMod.Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientAsync")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.soap.clientMod.Client]]
+  inline def createClientAsync(url: String, options: IOptions): js.Promise[typings.soap.clientMod.Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientAsync")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.soap.clientMod.Client]]
+  inline def createClientAsync(url: String, options: IOptions, endpoint: String): js.Promise[typings.soap.clientMod.Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientAsync")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.soap.clientMod.Client]]
   
-  @scala.inline
-  def listen(server: ServerType, options: IServerOptions): typings.soap.serverMod.Server = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.soap.serverMod.Server]
-  @scala.inline
-  def listen(server: ServerType, path: String, services: IServices, wsdl: String): typings.soap.serverMod.Server = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], path.asInstanceOf[js.Any], services.asInstanceOf[js.Any], wsdl.asInstanceOf[js.Any])).asInstanceOf[typings.soap.serverMod.Server]
-  @scala.inline
-  def listen(
+  inline def listen(server: ServerType, options: IServerOptions): typings.soap.serverMod.Server = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.soap.serverMod.Server]
+  inline def listen(server: ServerType, path: String, services: IServices, wsdl: String): typings.soap.serverMod.Server = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], path.asInstanceOf[js.Any], services.asInstanceOf[js.Any], wsdl.asInstanceOf[js.Any])).asInstanceOf[typings.soap.serverMod.Server]
+  inline def listen(
     server: ServerType,
     path: String,
     services: IServices,
@@ -186,8 +175,7 @@ object mod {
     callback: js.Function2[/* err */ js.Any, /* res */ js.Any, Unit]
   ): typings.soap.serverMod.Server = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], path.asInstanceOf[js.Any], services.asInstanceOf[js.Any], wsdl.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.soap.serverMod.Server]
   
-  @scala.inline
-  def passwordDigest(nonce: String, created: String, password: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("passwordDigest")(nonce.asInstanceOf[js.Any], created.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def passwordDigest(nonce: String, created: String, password: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("passwordDigest")(nonce.asInstanceOf[js.Any], created.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
   
   object security {
     
@@ -213,8 +201,7 @@ object mod {
       def this(username: String, password: String, defaults: js.Any) = this()
     }
     
-    @scala.inline
-    def BasicAuthSecurity_=(
+    inline def BasicAuthSecurity_=(
       x: Instantiable3[
           /* username */ String, 
           /* password */ String, 
@@ -240,8 +227,7 @@ object mod {
       def this(token: String, defaults: js.Any) = this()
     }
     
-    @scala.inline
-    def BearerSecurity_=(
+    inline def BearerSecurity_=(
       x: Instantiable2[
           /* token */ String, 
           /* defaults */ js.UndefOr[js.Any], 
@@ -325,8 +311,7 @@ object mod {
       def this(pfx: Buffer, defaults: js.Any) = this()
     }
     
-    @scala.inline
-    def ClientSSLSecurityPFX_=(
+    inline def ClientSSLSecurityPFX_=(
       x: Instantiable2[
           /* pfx */ String | Buffer, 
           /* defaults */ js.UndefOr[js.Any], 
@@ -334,8 +319,7 @@ object mod {
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClientSSLSecurityPFX")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def ClientSSLSecurity_=(
+    inline def ClientSSLSecurity_=(
       x: Instantiable4[
           /* key */ String | Buffer, 
           /* cert */ String | Buffer, 
@@ -357,8 +341,7 @@ object mod {
       def this(defaults: js.Any) = this()
     }
     
-    @scala.inline
-    def NTLMSecurity_=(x: Instantiable1[/* defaults */ js.Any, typings.soap.securityMod.NTLMSecurity]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NTLMSecurity")(x.asInstanceOf[js.Any])
+    inline def NTLMSecurity_=(x: Instantiable1[/* defaults */ js.Any, typings.soap.securityMod.NTLMSecurity]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NTLMSecurity")(x.asInstanceOf[js.Any])
     
     @JSImport("soap", "security.WSSecurity")
     @js.native
@@ -388,8 +371,7 @@ object mod {
       def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any, options: IWSSecurityCertOptions) = this()
     }
     
-    @scala.inline
-    def WSSecurityCert_=(
+    inline def WSSecurityCert_=(
       x: Instantiable4[
           /* privatePEM */ js.Any, 
           /* publicP12PEM */ js.Any, 
@@ -409,8 +391,7 @@ object mod {
       def this(username: String, password: String, options: IWSSecurityOptions) = this()
     }
     
-    @scala.inline
-    def WSSecurity_=(
+    inline def WSSecurity_=(
       x: Instantiable3[
           /* username */ String, 
           /* password */ String, 

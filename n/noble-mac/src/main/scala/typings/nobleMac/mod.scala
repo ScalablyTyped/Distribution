@@ -231,66 +231,46 @@ object mod {
     var uuid: String = js.native
   }
   
-  @scala.inline
-  def on(event: String, listener: js.Function): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  inline def on(event: String, listener: js.Function): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
-  @scala.inline
-  def on_discover(event: discover, listener: js.Function1[/* peripheral */ Peripheral, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  inline def on_discover(event: discover, listener: js.Function1[/* peripheral */ Peripheral, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
-  @scala.inline
-  def on_scanStart(event: scanStart, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  inline def on_scanStart(event: scanStart, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
-  @scala.inline
-  def on_scanStop(event: scanStop, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  inline def on_scanStop(event: scanStop, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
-  @scala.inline
-  def on_stateChange(event: stateChange, listener: js.Function1[/* state */ String, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  inline def on_stateChange(event: stateChange, listener: js.Function1[/* state */ String, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
-  @scala.inline
-  def removeAllListeners(): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")().asInstanceOf[EventEmitter]
-  @scala.inline
-  def removeAllListeners(event: String): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
+  inline def removeAllListeners(): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")().asInstanceOf[EventEmitter]
+  inline def removeAllListeners(event: String): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
   
-  @scala.inline
-  def removeListener(event: String, listener: js.Function): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  inline def removeListener(event: String, listener: js.Function): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
-  @scala.inline
-  def removeListener_discover(event: discover, listener: js.Function1[/* peripheral */ Peripheral, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  inline def removeListener_discover(event: discover, listener: js.Function1[/* peripheral */ Peripheral, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
-  @scala.inline
-  def removeListener_scanStart(event: scanStart, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  inline def removeListener_scanStart(event: scanStart, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
-  @scala.inline
-  def removeListener_scanStop(event: scanStop, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  inline def removeListener_scanStop(event: scanStop, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
-  @scala.inline
-  def removeListener_stateChange(event: stateChange, listener: js.Function1[/* state */ String, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  inline def removeListener_stateChange(event: stateChange, listener: js.Function1[/* state */ String, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
-  @scala.inline
-  def startScanning(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")().asInstanceOf[Unit]
-  @scala.inline
-  def startScanning(callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def startScanning(serviceUUIDs: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(serviceUUIDs.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def startScanning(serviceUUIDs: js.Array[String], allowDuplicates: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(serviceUUIDs.asInstanceOf[js.Any], allowDuplicates.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def startScanning(
+  inline def startScanning(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")().asInstanceOf[Unit]
+  inline def startScanning(callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def startScanning(serviceUUIDs: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(serviceUUIDs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def startScanning(serviceUUIDs: js.Array[String], allowDuplicates: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(serviceUUIDs.asInstanceOf[js.Any], allowDuplicates.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def startScanning(
     serviceUUIDs: js.Array[String],
     allowDuplicates: Boolean,
     callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(serviceUUIDs.asInstanceOf[js.Any], allowDuplicates.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def startScanning(serviceUUIDs: js.Array[String], callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(serviceUUIDs.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def startScanning(serviceUUIDs: js.Array[String], callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(serviceUUIDs.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("noble-mac", "state")
   @js.native
   val state: String = js.native
   
-  @scala.inline
-  def stopScanning(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopScanning")().asInstanceOf[Unit]
-  @scala.inline
-  def stopScanning(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopScanning")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def stopScanning(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopScanning")().asInstanceOf[Unit]
+  inline def stopScanning(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopScanning")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Advertisement extends StObject {
     
@@ -306,8 +286,7 @@ object mod {
   }
   object Advertisement {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       localName: String,
       manufacturerData: Buffer,
       serviceData: Data,
@@ -318,26 +297,19 @@ object mod {
       __obj.asInstanceOf[Advertisement]
     }
     
-    @scala.inline
-    implicit class AdvertisementMutableBuilder[Self <: Advertisement] (val x: Self) extends AnyVal {
+    extension [Self <: Advertisement](x: Self) {
       
-      @scala.inline
-      def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
+      inline def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManufacturerData(value: Buffer): Self = StObject.set(x, "manufacturerData", value.asInstanceOf[js.Any])
+      inline def setManufacturerData(value: Buffer): Self = StObject.set(x, "manufacturerData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceData(value: Data): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
+      inline def setServiceData(value: Data): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceUuids(value: js.Array[String]): Self = StObject.set(x, "serviceUuids", value.asInstanceOf[js.Any])
+      inline def setServiceUuids(value: js.Array[String]): Self = StObject.set(x, "serviceUuids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceUuidsVarargs(value: String*): Self = StObject.set(x, "serviceUuids", js.Array(value :_*))
+      inline def setServiceUuidsVarargs(value: String*): Self = StObject.set(x, "serviceUuids", js.Array(value :_*))
       
-      @scala.inline
-      def setTxPowerLevel(value: Double): Self = StObject.set(x, "txPowerLevel", value.asInstanceOf[js.Any])
+      inline def setTxPowerLevel(value: Double): Self = StObject.set(x, "txPowerLevel", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,19 +14,15 @@ trait Canvas extends StObject {
 }
 object Canvas {
   
-  @scala.inline
-  def apply(): Canvas = {
+  inline def apply(): Canvas = {
     val __obj = js.Dynamic.literal(canvas = "canvas", svg = "svg")
     __obj.asInstanceOf[Canvas]
   }
   
-  @scala.inline
-  implicit class CanvasMutableBuilder[Self <: Canvas] (val x: Self) extends AnyVal {
+  extension [Self <: Canvas](x: Self) {
     
-    @scala.inline
-    def setCanvas(value: canvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+    inline def setCanvas(value: canvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvg(value: svg): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+    inline def setSvg(value: svg): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
   }
 }

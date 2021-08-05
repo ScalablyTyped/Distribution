@@ -14,25 +14,19 @@ trait CommandsBodyObject extends StObject {
 }
 object CommandsBodyObject {
   
-  @scala.inline
-  def apply(data: CommandsBodyObjectData, jsonapi: JsonApiVersionJsonapi): CommandsBodyObject = {
+  inline def apply(data: CommandsBodyObjectData, jsonapi: JsonApiVersionJsonapi): CommandsBodyObject = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], jsonapi = jsonapi.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandsBodyObject]
   }
   
-  @scala.inline
-  implicit class CommandsBodyObjectMutableBuilder[Self <: CommandsBodyObject] (val x: Self) extends AnyVal {
+  extension [Self <: CommandsBodyObject](x: Self) {
     
-    @scala.inline
-    def setData(value: CommandsBodyObjectData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: CommandsBodyObjectData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncluded(value: js.Object): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
+    inline def setIncluded(value: js.Object): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
+    inline def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
     
-    @scala.inline
-    def setJsonapi(value: JsonApiVersionJsonapi): Self = StObject.set(x, "jsonapi", value.asInstanceOf[js.Any])
+    inline def setJsonapi(value: JsonApiVersionJsonapi): Self = StObject.set(x, "jsonapi", value.asInstanceOf[js.Any])
   }
 }

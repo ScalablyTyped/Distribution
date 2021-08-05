@@ -16,28 +16,21 @@ trait DomainDnsMxRecord
 }
 object DomainDnsMxRecord {
   
-  @scala.inline
-  def apply(): DomainDnsMxRecord = {
+  inline def apply(): DomainDnsMxRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainDnsMxRecord]
   }
   
-  @scala.inline
-  implicit class DomainDnsMxRecordMutableBuilder[Self <: DomainDnsMxRecord] (val x: Self) extends AnyVal {
+  extension [Self <: DomainDnsMxRecord](x: Self) {
     
-    @scala.inline
-    def setMailExchange(value: String): Self = StObject.set(x, "mailExchange", value.asInstanceOf[js.Any])
+    inline def setMailExchange(value: String): Self = StObject.set(x, "mailExchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailExchangeUndefined: Self = StObject.set(x, "mailExchange", js.undefined)
+    inline def setMailExchangeUndefined: Self = StObject.set(x, "mailExchange", js.undefined)
     
-    @scala.inline
-    def setPreference(value: NullableOption[Double]): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
+    inline def setPreference(value: NullableOption[Double]): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferenceNull: Self = StObject.set(x, "preference", null)
+    inline def setPreferenceNull: Self = StObject.set(x, "preference", null)
     
-    @scala.inline
-    def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
+    inline def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
   }
 }

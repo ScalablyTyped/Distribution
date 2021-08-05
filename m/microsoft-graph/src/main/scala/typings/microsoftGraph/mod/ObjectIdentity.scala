@@ -33,40 +33,29 @@ trait ObjectIdentity extends StObject {
 }
 object ObjectIdentity {
   
-  @scala.inline
-  def apply(): ObjectIdentity = {
+  inline def apply(): ObjectIdentity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectIdentity]
   }
   
-  @scala.inline
-  implicit class ObjectIdentityMutableBuilder[Self <: ObjectIdentity] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectIdentity](x: Self) {
     
-    @scala.inline
-    def setIssuer(value: NullableOption[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: NullableOption[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerAssignedId(value: NullableOption[String]): Self = StObject.set(x, "issuerAssignedId", value.asInstanceOf[js.Any])
+    inline def setIssuerAssignedId(value: NullableOption[String]): Self = StObject.set(x, "issuerAssignedId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerAssignedIdNull: Self = StObject.set(x, "issuerAssignedId", null)
+    inline def setIssuerAssignedIdNull: Self = StObject.set(x, "issuerAssignedId", null)
     
-    @scala.inline
-    def setIssuerAssignedIdUndefined: Self = StObject.set(x, "issuerAssignedId", js.undefined)
+    inline def setIssuerAssignedIdUndefined: Self = StObject.set(x, "issuerAssignedId", js.undefined)
     
-    @scala.inline
-    def setIssuerNull: Self = StObject.set(x, "issuer", null)
+    inline def setIssuerNull: Self = StObject.set(x, "issuer", null)
     
-    @scala.inline
-    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+    inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
-    @scala.inline
-    def setSignInType(value: NullableOption[String]): Self = StObject.set(x, "signInType", value.asInstanceOf[js.Any])
+    inline def setSignInType(value: NullableOption[String]): Self = StObject.set(x, "signInType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignInTypeNull: Self = StObject.set(x, "signInType", null)
+    inline def setSignInTypeNull: Self = StObject.set(x, "signInType", null)
     
-    @scala.inline
-    def setSignInTypeUndefined: Self = StObject.set(x, "signInType", js.undefined)
+    inline def setSignInTypeUndefined: Self = StObject.set(x, "signInType", js.undefined)
   }
 }

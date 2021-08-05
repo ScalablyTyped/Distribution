@@ -26,9 +26,9 @@ object enumerateMod {
       */
     def this(source: IIterator[T], start: Double) = this()
     
-    var _index: js.Any = js.native
+    /* private */ var _index: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -63,8 +63,6 @@ object enumerateMod {
     override def next(): js.UndefOr[js.Tuple2[Double, T]] = js.native
   }
   
-  @scala.inline
-  def enumerate[T](`object`: IterableOrArrayLike[T]): IIterator[js.Tuple2[Double, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerate")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[js.Tuple2[Double, T]]]
-  @scala.inline
-  def enumerate[T](`object`: IterableOrArrayLike[T], start: Double): IIterator[js.Tuple2[Double, T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("enumerate")(`object`.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[IIterator[js.Tuple2[Double, T]]]
+  inline def enumerate[T](`object`: IterableOrArrayLike[T]): IIterator[js.Tuple2[Double, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerate")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[js.Tuple2[Double, T]]]
+  inline def enumerate[T](`object`: IterableOrArrayLike[T], start: Double): IIterator[js.Tuple2[Double, T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("enumerate")(`object`.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[IIterator[js.Tuple2[Double, T]]]
 }

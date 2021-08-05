@@ -21,17 +21,17 @@ object webServerMod {
     /**
       * @hidden
       */
-    var _Fetch_session_id: js.Any = js.native
+    /* private */ var _Fetch_session_id: js.Any = js.native
     
     /**
       * @hidden
       */
-    var _Handle_request: js.Any = js.native
+    /* private */ var _Handle_request: js.Any = js.native
     
     /**
       * @hidden
       */
-    var _Issue_session_id: js.Any = js.native
+    /* private */ var _Issue_session_id: js.Any = js.native
     
     /**
       * Add a newly connected remote client.
@@ -69,12 +69,12 @@ object webServerMod {
     /**
       * @hidden
       */
-    var http_server_ : js.Any = js.native
+    /* private */ var http_server_ : js.Any = js.native
     
     /**
       * @hidden
       */
-    var my_port_ : js.Any = js.native
+    /* private */ var my_port_ : js.Any = js.native
     
     /**
       * Open server.
@@ -87,6 +87,6 @@ object webServerMod {
     /**
       * @hidden
       */
-    var sequence_ : js.Any = js.native
+    /* private */ var sequence_ : js.Any = js.native
   }
 }

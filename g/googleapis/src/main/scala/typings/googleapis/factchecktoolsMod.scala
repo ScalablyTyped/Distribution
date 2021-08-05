@@ -40,8 +40,7 @@ object factchecktoolsMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Factchecktools
       ] = js.native
-    @scala.inline
-    def v1alpha1_=(
+    inline def v1alpha1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object factchecktoolsMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object factchecktoolsMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def factchecktools(options: Options): Factchecktools = ^.asInstanceOf[js.Dynamic].applyDynamic("factchecktools")(options.asInstanceOf[js.Any]).asInstanceOf[Factchecktools]
+  inline def factchecktools(options: Options): Factchecktools = ^.asInstanceOf[js.Dynamic].applyDynamic("factchecktools")(options.asInstanceOf[js.Any]).asInstanceOf[Factchecktools]
   
-  @scala.inline
-  def factchecktools_v1alpha1(version: v1alpha1): Factchecktools = ^.asInstanceOf[js.Dynamic].applyDynamic("factchecktools")(version.asInstanceOf[js.Any]).asInstanceOf[Factchecktools]
+  inline def factchecktools_v1alpha1(version: v1alpha1): Factchecktools = ^.asInstanceOf[js.Dynamic].applyDynamic("factchecktools")(version.asInstanceOf[js.Any]).asInstanceOf[Factchecktools]
 }

@@ -34,8 +34,7 @@ object typesMod {
   }
   object CircularProgressbarDefaultProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       background: Boolean,
       backgroundPadding: Double,
       circleRatio: Double,
@@ -52,41 +51,29 @@ object typesMod {
       __obj.asInstanceOf[CircularProgressbarDefaultProps]
     }
     
-    @scala.inline
-    implicit class CircularProgressbarDefaultPropsMutableBuilder[Self <: CircularProgressbarDefaultProps] (val x: Self) extends AnyVal {
+    extension [Self <: CircularProgressbarDefaultProps](x: Self) {
       
-      @scala.inline
-      def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundPadding(value: Double): Self = StObject.set(x, "backgroundPadding", value.asInstanceOf[js.Any])
+      inline def setBackgroundPadding(value: Double): Self = StObject.set(x, "backgroundPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircleRatio(value: Double): Self = StObject.set(x, "circleRatio", value.asInstanceOf[js.Any])
+      inline def setCircleRatio(value: Double): Self = StObject.set(x, "circleRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClasses(value: Background): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: Background): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCounterClockwise(value: Boolean): Self = StObject.set(x, "counterClockwise", value.asInstanceOf[js.Any])
+      inline def setCounterClockwise(value: Boolean): Self = StObject.set(x, "counterClockwise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+      inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+      inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyles(value: CircularProgressbarStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: CircularProgressbarStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,8 +85,7 @@ object typesMod {
   }
   object CircularProgressbarProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       background: Boolean,
       backgroundPadding: Double,
       circleRatio: Double,
@@ -117,11 +103,9 @@ object typesMod {
       __obj.asInstanceOf[CircularProgressbarProps]
     }
     
-    @scala.inline
-    implicit class CircularProgressbarPropsMutableBuilder[Self <: CircularProgressbarProps] (val x: Self) extends AnyVal {
+    extension [Self <: CircularProgressbarProps](x: Self) {
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,44 +123,32 @@ object typesMod {
   }
   object CircularProgressbarStyles {
     
-    @scala.inline
-    def apply(): CircularProgressbarStyles = {
+    inline def apply(): CircularProgressbarStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CircularProgressbarStyles]
     }
     
-    @scala.inline
-    implicit class CircularProgressbarStylesMutableBuilder[Self <: CircularProgressbarStyles] (val x: Self) extends AnyVal {
+    extension [Self <: CircularProgressbarStyles](x: Self) {
       
-      @scala.inline
-      def setBackground(value: CSSProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: CSSProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setPath(value: CSSProperties): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: CSSProperties): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setText(value: CSSProperties): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: CSSProperties): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTrail(value: CSSProperties): Self = StObject.set(x, "trail", value.asInstanceOf[js.Any])
+      inline def setTrail(value: CSSProperties): Self = StObject.set(x, "trail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailUndefined: Self = StObject.set(x, "trail", js.undefined)
+      inline def setTrailUndefined: Self = StObject.set(x, "trail", js.undefined)
     }
   }
   
@@ -208,83 +180,58 @@ object typesMod {
   }
   object CircularProgressbarWrapperProps {
     
-    @scala.inline
-    def apply(value: Double): CircularProgressbarWrapperProps = {
+    inline def apply(value: Double): CircularProgressbarWrapperProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[CircularProgressbarWrapperProps]
     }
     
-    @scala.inline
-    implicit class CircularProgressbarWrapperPropsMutableBuilder[Self <: CircularProgressbarWrapperProps] (val x: Self) extends AnyVal {
+    extension [Self <: CircularProgressbarWrapperProps](x: Self) {
       
-      @scala.inline
-      def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundPadding(value: Double): Self = StObject.set(x, "backgroundPadding", value.asInstanceOf[js.Any])
+      inline def setBackgroundPadding(value: Double): Self = StObject.set(x, "backgroundPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundPaddingUndefined: Self = StObject.set(x, "backgroundPadding", js.undefined)
+      inline def setBackgroundPaddingUndefined: Self = StObject.set(x, "backgroundPadding", js.undefined)
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setCircleRatio(value: Double): Self = StObject.set(x, "circleRatio", value.asInstanceOf[js.Any])
+      inline def setCircleRatio(value: Double): Self = StObject.set(x, "circleRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircleRatioUndefined: Self = StObject.set(x, "circleRatio", js.undefined)
+      inline def setCircleRatioUndefined: Self = StObject.set(x, "circleRatio", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClasses(value: Background): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: Background): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      @scala.inline
-      def setCounterClockwise(value: Boolean): Self = StObject.set(x, "counterClockwise", value.asInstanceOf[js.Any])
+      inline def setCounterClockwise(value: Boolean): Self = StObject.set(x, "counterClockwise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCounterClockwiseUndefined: Self = StObject.set(x, "counterClockwise", js.undefined)
+      inline def setCounterClockwiseUndefined: Self = StObject.set(x, "counterClockwise", js.undefined)
       
-      @scala.inline
-      def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+      inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+      inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
       
-      @scala.inline
-      def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+      inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+      inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
-      @scala.inline
-      def setStyles(value: CircularProgressbarStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: CircularProgressbarStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

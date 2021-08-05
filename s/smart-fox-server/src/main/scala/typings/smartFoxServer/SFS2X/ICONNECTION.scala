@@ -10,16 +10,13 @@ trait ICONNECTION extends StObject {
 }
 object ICONNECTION {
   
-  @scala.inline
-  def apply(success: Boolean): ICONNECTION = {
+  inline def apply(success: Boolean): ICONNECTION = {
     val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICONNECTION]
   }
   
-  @scala.inline
-  implicit class ICONNECTIONMutableBuilder[Self <: ICONNECTION] (val x: Self) extends AnyVal {
+  extension [Self <: ICONNECTION](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

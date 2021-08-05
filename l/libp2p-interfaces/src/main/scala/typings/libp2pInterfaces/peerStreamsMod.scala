@@ -48,8 +48,7 @@ object peerStreamsMod {
   }
   object DuplexIterableStream {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       sink: /* source */ Uint8Array => js.Promise[Uint8Array],
       source: () => AsyncIterator[Uint8Array, js.Any, Unit]
     ): DuplexIterableStream = {
@@ -57,14 +56,11 @@ object peerStreamsMod {
       __obj.asInstanceOf[DuplexIterableStream]
     }
     
-    @scala.inline
-    implicit class DuplexIterableStreamMutableBuilder[Self <: DuplexIterableStream] (val x: Self) extends AnyVal {
+    extension [Self <: DuplexIterableStream](x: Self) {
       
-      @scala.inline
-      def setSink(value: /* source */ Uint8Array => js.Promise[Uint8Array]): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
+      inline def setSink(value: /* source */ Uint8Array => js.Promise[Uint8Array]): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSource(value: () => AsyncIterator[Uint8Array, js.Any, Unit]): Self = StObject.set(x, "source", js.Any.fromFunction0(value))
+      inline def setSource(value: () => AsyncIterator[Uint8Array, js.Any, Unit]): Self = StObject.set(x, "source", js.Any.fromFunction0(value))
     }
   }
   

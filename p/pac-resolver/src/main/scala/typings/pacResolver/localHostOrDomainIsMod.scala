@@ -10,6 +10,5 @@ object localHostOrDomainIsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(host: String, hostdom: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(host.asInstanceOf[js.Any], hostdom.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(host: String, hostdom: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(host.asInstanceOf[js.Any], hostdom.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

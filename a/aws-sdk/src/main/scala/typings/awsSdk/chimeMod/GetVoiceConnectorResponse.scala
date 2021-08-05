@@ -13,19 +13,15 @@ trait GetVoiceConnectorResponse extends StObject {
 }
 object GetVoiceConnectorResponse {
   
-  @scala.inline
-  def apply(): GetVoiceConnectorResponse = {
+  inline def apply(): GetVoiceConnectorResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetVoiceConnectorResponse]
   }
   
-  @scala.inline
-  implicit class GetVoiceConnectorResponseMutableBuilder[Self <: GetVoiceConnectorResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetVoiceConnectorResponse](x: Self) {
     
-    @scala.inline
-    def setVoiceConnector(value: VoiceConnector): Self = StObject.set(x, "VoiceConnector", value.asInstanceOf[js.Any])
+    inline def setVoiceConnector(value: VoiceConnector): Self = StObject.set(x, "VoiceConnector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceConnectorUndefined: Self = StObject.set(x, "VoiceConnector", js.undefined)
+    inline def setVoiceConnectorUndefined: Self = StObject.set(x, "VoiceConnector", js.undefined)
   }
 }

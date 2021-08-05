@@ -18,22 +18,17 @@ trait SelectorList extends StObject {
 }
 object SelectorList {
   
-  @scala.inline
-  def apply(selectors: js.Array[Value], text: String): SelectorList = {
+  inline def apply(selectors: js.Array[Value], text: String): SelectorList = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectorList]
   }
   
-  @scala.inline
-  implicit class SelectorListMutableBuilder[Self <: SelectorList] (val x: Self) extends AnyVal {
+  extension [Self <: SelectorList](x: Self) {
     
-    @scala.inline
-    def setSelectors(value: js.Array[Value]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+    inline def setSelectors(value: js.Array[Value]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorsVarargs(value: Value*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: Value*): Self = StObject.set(x, "selectors", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

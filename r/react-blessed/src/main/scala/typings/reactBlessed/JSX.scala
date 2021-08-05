@@ -68,8 +68,7 @@ object JSX {
   }
   object IntrinsicElements {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `blessed-bigtext`: js.Any,
       `blessed-box`: js.Any,
       `blessed-button`: js.Any,
@@ -133,95 +132,65 @@ object JSX {
       __obj.asInstanceOf[IntrinsicElements]
     }
     
-    @scala.inline
-    implicit class IntrinsicElementsMutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
+    extension [Self <: IntrinsicElements](x: Self) {
       
-      @scala.inline
-      def `setBlessed-bigtext`(value: js.Any): Self = StObject.set(x, "blessed-bigtext", value.asInstanceOf[js.Any])
+      inline def `setBlessed-bigtext`(value: js.Any): Self = StObject.set(x, "blessed-bigtext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-box`(value: js.Any): Self = StObject.set(x, "blessed-box", value.asInstanceOf[js.Any])
+      inline def `setBlessed-box`(value: js.Any): Self = StObject.set(x, "blessed-box", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-button`(value: js.Any): Self = StObject.set(x, "blessed-button", value.asInstanceOf[js.Any])
+      inline def `setBlessed-button`(value: js.Any): Self = StObject.set(x, "blessed-button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-checkbox`(value: js.Any): Self = StObject.set(x, "blessed-checkbox", value.asInstanceOf[js.Any])
+      inline def `setBlessed-checkbox`(value: js.Any): Self = StObject.set(x, "blessed-checkbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-escape`(value: js.Any): Self = StObject.set(x, "blessed-escape", value.asInstanceOf[js.Any])
+      inline def `setBlessed-escape`(value: js.Any): Self = StObject.set(x, "blessed-escape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-filemanager`(value: js.Any): Self = StObject.set(x, "blessed-filemanager", value.asInstanceOf[js.Any])
+      inline def `setBlessed-filemanager`(value: js.Any): Self = StObject.set(x, "blessed-filemanager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-form`(value: js.Any): Self = StObject.set(x, "blessed-form", value.asInstanceOf[js.Any])
+      inline def `setBlessed-form`(value: js.Any): Self = StObject.set(x, "blessed-form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-input`(value: js.Any): Self = StObject.set(x, "blessed-input", value.asInstanceOf[js.Any])
+      inline def `setBlessed-input`(value: js.Any): Self = StObject.set(x, "blessed-input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-layout`(value: js.Any): Self = StObject.set(x, "blessed-layout", value.asInstanceOf[js.Any])
+      inline def `setBlessed-layout`(value: js.Any): Self = StObject.set(x, "blessed-layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-line`(value: js.Any): Self = StObject.set(x, "blessed-line", value.asInstanceOf[js.Any])
+      inline def `setBlessed-line`(value: js.Any): Self = StObject.set(x, "blessed-line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-list`(value: js.Any): Self = StObject.set(x, "blessed-list", value.asInstanceOf[js.Any])
+      inline def `setBlessed-list`(value: js.Any): Self = StObject.set(x, "blessed-list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-listbar`(value: js.Any): Self = StObject.set(x, "blessed-listbar", value.asInstanceOf[js.Any])
+      inline def `setBlessed-listbar`(value: js.Any): Self = StObject.set(x, "blessed-listbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-listtable`(value: js.Any): Self = StObject.set(x, "blessed-listtable", value.asInstanceOf[js.Any])
+      inline def `setBlessed-listtable`(value: js.Any): Self = StObject.set(x, "blessed-listtable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-loading`(value: js.Any): Self = StObject.set(x, "blessed-loading", value.asInstanceOf[js.Any])
+      inline def `setBlessed-loading`(value: js.Any): Self = StObject.set(x, "blessed-loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-log`(value: js.Any): Self = StObject.set(x, "blessed-log", value.asInstanceOf[js.Any])
+      inline def `setBlessed-log`(value: js.Any): Self = StObject.set(x, "blessed-log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-message`(value: js.Any): Self = StObject.set(x, "blessed-message", value.asInstanceOf[js.Any])
+      inline def `setBlessed-message`(value: js.Any): Self = StObject.set(x, "blessed-message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-program`(value: js.Any): Self = StObject.set(x, "blessed-program", value.asInstanceOf[js.Any])
+      inline def `setBlessed-program`(value: js.Any): Self = StObject.set(x, "blessed-program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-progressbar`(value: js.Any): Self = StObject.set(x, "blessed-progressbar", value.asInstanceOf[js.Any])
+      inline def `setBlessed-progressbar`(value: js.Any): Self = StObject.set(x, "blessed-progressbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-prompt`(value: js.Any): Self = StObject.set(x, "blessed-prompt", value.asInstanceOf[js.Any])
+      inline def `setBlessed-prompt`(value: js.Any): Self = StObject.set(x, "blessed-prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-question`(value: js.Any): Self = StObject.set(x, "blessed-question", value.asInstanceOf[js.Any])
+      inline def `setBlessed-question`(value: js.Any): Self = StObject.set(x, "blessed-question", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-radiobutton`(value: js.Any): Self = StObject.set(x, "blessed-radiobutton", value.asInstanceOf[js.Any])
+      inline def `setBlessed-radiobutton`(value: js.Any): Self = StObject.set(x, "blessed-radiobutton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-radioset`(value: js.Any): Self = StObject.set(x, "blessed-radioset", value.asInstanceOf[js.Any])
+      inline def `setBlessed-radioset`(value: js.Any): Self = StObject.set(x, "blessed-radioset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-scrollablebox`(value: js.Any): Self = StObject.set(x, "blessed-scrollablebox", value.asInstanceOf[js.Any])
+      inline def `setBlessed-scrollablebox`(value: js.Any): Self = StObject.set(x, "blessed-scrollablebox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-scrollabletext`(value: js.Any): Self = StObject.set(x, "blessed-scrollabletext", value.asInstanceOf[js.Any])
+      inline def `setBlessed-scrollabletext`(value: js.Any): Self = StObject.set(x, "blessed-scrollabletext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-table`(value: js.Any): Self = StObject.set(x, "blessed-table", value.asInstanceOf[js.Any])
+      inline def `setBlessed-table`(value: js.Any): Self = StObject.set(x, "blessed-table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-terminal`(value: js.Any): Self = StObject.set(x, "blessed-terminal", value.asInstanceOf[js.Any])
+      inline def `setBlessed-terminal`(value: js.Any): Self = StObject.set(x, "blessed-terminal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-text`(value: js.Any): Self = StObject.set(x, "blessed-text", value.asInstanceOf[js.Any])
+      inline def `setBlessed-text`(value: js.Any): Self = StObject.set(x, "blessed-text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-textarea`(value: js.Any): Self = StObject.set(x, "blessed-textarea", value.asInstanceOf[js.Any])
+      inline def `setBlessed-textarea`(value: js.Any): Self = StObject.set(x, "blessed-textarea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlessed-textbox`(value: js.Any): Self = StObject.set(x, "blessed-textbox", value.asInstanceOf[js.Any])
+      inline def `setBlessed-textbox`(value: js.Any): Self = StObject.set(x, "blessed-textbox", value.asInstanceOf[js.Any])
     }
   }
 }

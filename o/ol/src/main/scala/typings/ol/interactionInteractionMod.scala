@@ -21,19 +21,13 @@ object interactionInteractionMod {
     def this(opt_options: InteractionOptions) = this()
   }
   
-  @scala.inline
-  def pan(view: typings.ol.viewMod.default, delta: Coordinate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pan")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def pan(view: typings.ol.viewMod.default, delta: Coordinate, opt_duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pan")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], opt_duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def pan(view: typings.ol.viewMod.default, delta: Coordinate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pan")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def pan(view: typings.ol.viewMod.default, delta: Coordinate, opt_duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pan")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], opt_duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def zoomByDelta(view: typings.ol.viewMod.default, delta: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomByDelta")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def zoomByDelta(view: typings.ol.viewMod.default, delta: Double, opt_anchor: Unit, opt_duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomByDelta")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], opt_anchor.asInstanceOf[js.Any], opt_duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def zoomByDelta(view: typings.ol.viewMod.default, delta: Double, opt_anchor: Coordinate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomByDelta")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], opt_anchor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def zoomByDelta(view: typings.ol.viewMod.default, delta: Double, opt_anchor: Coordinate, opt_duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomByDelta")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], opt_anchor.asInstanceOf[js.Any], opt_duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def zoomByDelta(view: typings.ol.viewMod.default, delta: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomByDelta")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def zoomByDelta(view: typings.ol.viewMod.default, delta: Double, opt_anchor: Unit, opt_duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomByDelta")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], opt_anchor.asInstanceOf[js.Any], opt_duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def zoomByDelta(view: typings.ol.viewMod.default, delta: Double, opt_anchor: Coordinate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomByDelta")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], opt_anchor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def zoomByDelta(view: typings.ol.viewMod.default, delta: Double, opt_anchor: Coordinate, opt_duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomByDelta")(view.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], opt_anchor.asInstanceOf[js.Any], opt_duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait Interaction
@@ -82,17 +76,14 @@ object interactionInteractionMod {
   }
   object InteractionOptions {
     
-    @scala.inline
-    def apply(handleEvent: typings.ol.mapBrowserEventMod.default[UIEvent] => Boolean): InteractionOptions = {
+    inline def apply(handleEvent: typings.ol.mapBrowserEventMod.default[UIEvent] => Boolean): InteractionOptions = {
       val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
       __obj.asInstanceOf[InteractionOptions]
     }
     
-    @scala.inline
-    implicit class InteractionOptionsMutableBuilder[Self <: InteractionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InteractionOptions](x: Self) {
       
-      @scala.inline
-      def setHandleEvent(value: typings.ol.mapBrowserEventMod.default[UIEvent] => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+      inline def setHandleEvent(value: typings.ol.mapBrowserEventMod.default[UIEvent] => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }
   }
 }

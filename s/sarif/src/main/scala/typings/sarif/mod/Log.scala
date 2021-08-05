@@ -36,44 +36,32 @@ trait Log extends StObject {
 }
 object Log {
   
-  @scala.inline
-  def apply(runs: js.Array[Run], version: version): Log = {
+  inline def apply(runs: js.Array[Run], version: version): Log = {
     val __obj = js.Dynamic.literal(runs = runs.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Log]
   }
   
-  @scala.inline
-  implicit class LogMutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
+  extension [Self <: Log](x: Self) {
     
-    @scala.inline
-    def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
+    inline def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$schemaUndefined: Self = StObject.set(x, "$schema", js.undefined)
+    inline def set$schemaUndefined: Self = StObject.set(x, "$schema", js.undefined)
     
-    @scala.inline
-    def setInlineExternalProperties(value: js.Array[ExternalProperties]): Self = StObject.set(x, "inlineExternalProperties", value.asInstanceOf[js.Any])
+    inline def setInlineExternalProperties(value: js.Array[ExternalProperties]): Self = StObject.set(x, "inlineExternalProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineExternalPropertiesUndefined: Self = StObject.set(x, "inlineExternalProperties", js.undefined)
+    inline def setInlineExternalPropertiesUndefined: Self = StObject.set(x, "inlineExternalProperties", js.undefined)
     
-    @scala.inline
-    def setInlineExternalPropertiesVarargs(value: ExternalProperties*): Self = StObject.set(x, "inlineExternalProperties", js.Array(value :_*))
+    inline def setInlineExternalPropertiesVarargs(value: ExternalProperties*): Self = StObject.set(x, "inlineExternalProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setRuns(value: js.Array[Run]): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
+    inline def setRuns(value: js.Array[Run]): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunsVarargs(value: Run*): Self = StObject.set(x, "runs", js.Array(value :_*))
+    inline def setRunsVarargs(value: Run*): Self = StObject.set(x, "runs", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
   
   type version = `2Dot1Dot0`

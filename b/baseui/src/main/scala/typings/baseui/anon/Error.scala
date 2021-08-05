@@ -38,8 +38,7 @@ trait Error extends StObject {
 }
 object Error {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $error: Boolean,
     $isLoading: Boolean,
     $multi: Boolean,
@@ -53,31 +52,22 @@ object Error {
     __obj.asInstanceOf[Error]
   }
   
-  @scala.inline
-  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+  extension [Self <: Error](x: Self) {
     
-    @scala.inline
-    def set$error(value: Boolean): Self = StObject.set(x, "$error", value.asInstanceOf[js.Any])
+    inline def set$error(value: Boolean): Self = StObject.set(x, "$error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$isLoading(value: Boolean): Self = StObject.set(x, "$isLoading", value.asInstanceOf[js.Any])
+    inline def set$isLoading(value: Boolean): Self = StObject.set(x, "$isLoading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$multi(value: Boolean): Self = StObject.set(x, "$multi", value.asInstanceOf[js.Any])
+    inline def set$multi(value: Boolean): Self = StObject.set(x, "$multi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$required(value: Boolean): Self = StObject.set(x, "$required", value.asInstanceOf[js.Any])
+    inline def set$required(value: Boolean): Self = StObject.set(x, "$required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$searchable(value: Boolean): Self = StObject.set(x, "$searchable", value.asInstanceOf[js.Any])
+    inline def set$searchable(value: Boolean): Self = StObject.set(x, "$searchable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$size(value: mini | default_ | compact | large_): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
+    inline def set$size(value: mini | default_ | compact | large_): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$type(value: select | search): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
+    inline def set$type(value: select | search): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$width(value: Double): Self = StObject.set(x, "$width", value.asInstanceOf[js.Any])
+    inline def set$width(value: Double): Self = StObject.set(x, "$width", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait TypedError
 }
 object TypedError {
   
-  @scala.inline
-  def apply(errorType: String, message: String, name: String): TypedError = {
+  inline def apply(errorType: String, message: String, name: String): TypedError = {
     val __obj = js.Dynamic.literal(errorType = errorType.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypedError]
   }
   
-  @scala.inline
-  implicit class TypedErrorMutableBuilder[Self <: TypedError] (val x: Self) extends AnyVal {
+  extension [Self <: TypedError](x: Self) {
     
-    @scala.inline
-    def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
+    inline def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
   }
 }

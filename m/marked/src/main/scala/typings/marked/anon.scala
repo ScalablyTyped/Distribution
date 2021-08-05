@@ -27,23 +27,18 @@ object anon {
   }
   object Align {
     
-    @scala.inline
-    def apply(header: Boolean): Align = {
+    inline def apply(header: Boolean): Align = {
       val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], align = null)
       __obj.asInstanceOf[Align]
     }
     
-    @scala.inline
-    implicit class AlignMutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
+    extension [Self <: Align](x: Self) {
       
-      @scala.inline
-      def setAlign(value: center | left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: center | left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignNull: Self = StObject.set(x, "align", null)
+      inline def setAlignNull: Self = StObject.set(x, "align", null)
       
-      @scala.inline
-      def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,26 +50,20 @@ object anon {
   }
   object Href {
     
-    @scala.inline
-    def apply(): Href = {
+    inline def apply(): Href = {
       val __obj = js.Dynamic.literal(href = null, title = null)
       __obj.asInstanceOf[Href]
     }
     
-    @scala.inline
-    implicit class HrefMutableBuilder[Self <: Href] (val x: Self) extends AnyVal {
+    extension [Self <: Href](x: Self) {
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefNull: Self = StObject.set(x, "href", null)
+      inline def setHrefNull: Self = StObject.set(x, "href", null)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleNull: Self = StObject.set(x, "title", null)
+      inline def setTitleNull: Self = StObject.set(x, "title", null)
     }
   }
   

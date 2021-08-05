@@ -69,9 +69,9 @@ object distIssueMod {
     /* CompleteClass */
     override val number: Double = js.native
     
-    var repository: js.Any = js.native
+    /* private */ var repository: js.Any = js.native
     
-    var repositoryUri: js.Any = js.native
+    /* private */ var repositoryUri: js.Any = js.native
     
     /* CompleteClass */
     var state: open | closed = js.native

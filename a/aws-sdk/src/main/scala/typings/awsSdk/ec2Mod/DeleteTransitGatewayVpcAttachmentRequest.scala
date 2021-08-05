@@ -18,22 +18,17 @@ trait DeleteTransitGatewayVpcAttachmentRequest extends StObject {
 }
 object DeleteTransitGatewayVpcAttachmentRequest {
   
-  @scala.inline
-  def apply(TransitGatewayAttachmentId: TransitGatewayAttachmentId): DeleteTransitGatewayVpcAttachmentRequest = {
+  inline def apply(TransitGatewayAttachmentId: TransitGatewayAttachmentId): DeleteTransitGatewayVpcAttachmentRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayAttachmentId = TransitGatewayAttachmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTransitGatewayVpcAttachmentRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTransitGatewayVpcAttachmentRequestMutableBuilder[Self <: DeleteTransitGatewayVpcAttachmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTransitGatewayVpcAttachmentRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayAttachmentId(value: TransitGatewayAttachmentId): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayAttachmentId(value: TransitGatewayAttachmentId): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
   }
 }

@@ -22,37 +22,27 @@ trait DataSourceTransportWithFunctionOperations
 }
 object DataSourceTransportWithFunctionOperations {
   
-  @scala.inline
-  def apply(): DataSourceTransportWithFunctionOperations = {
+  inline def apply(): DataSourceTransportWithFunctionOperations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceTransportWithFunctionOperations]
   }
   
-  @scala.inline
-  implicit class DataSourceTransportWithFunctionOperationsMutableBuilder[Self <: DataSourceTransportWithFunctionOperations] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceTransportWithFunctionOperations](x: Self) {
     
-    @scala.inline
-    def setCreate(value: /* options */ DataSourceTransportOptions => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: /* options */ DataSourceTransportOptions => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setDestroy(value: /* options */ DataSourceTransportOptions => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+    inline def setDestroy(value: /* options */ DataSourceTransportOptions => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setRead(value: /* options */ DataSourceTransportReadOptions => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    inline def setRead(value: /* options */ DataSourceTransportReadOptions => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: /* options */ DataSourceTransportOptions => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: /* options */ DataSourceTransportOptions => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

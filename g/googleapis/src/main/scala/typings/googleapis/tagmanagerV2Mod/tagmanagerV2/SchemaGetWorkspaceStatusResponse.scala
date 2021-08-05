@@ -22,31 +22,23 @@ trait SchemaGetWorkspaceStatusResponse extends StObject {
 }
 object SchemaGetWorkspaceStatusResponse {
   
-  @scala.inline
-  def apply(): SchemaGetWorkspaceStatusResponse = {
+  inline def apply(): SchemaGetWorkspaceStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetWorkspaceStatusResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGetWorkspaceStatusResponseMutableBuilder[Self <: SchemaGetWorkspaceStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetWorkspaceStatusResponse](x: Self) {
     
-    @scala.inline
-    def setMergeConflict(value: js.Array[SchemaMergeConflict]): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
+    inline def setMergeConflict(value: js.Array[SchemaMergeConflict]): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
+    inline def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
     
-    @scala.inline
-    def setMergeConflictVarargs(value: SchemaMergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
+    inline def setMergeConflictVarargs(value: SchemaMergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkspaceChange(value: js.Array[SchemaEntity]): Self = StObject.set(x, "workspaceChange", value.asInstanceOf[js.Any])
+    inline def setWorkspaceChange(value: js.Array[SchemaEntity]): Self = StObject.set(x, "workspaceChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceChangeUndefined: Self = StObject.set(x, "workspaceChange", js.undefined)
+    inline def setWorkspaceChangeUndefined: Self = StObject.set(x, "workspaceChange", js.undefined)
     
-    @scala.inline
-    def setWorkspaceChangeVarargs(value: SchemaEntity*): Self = StObject.set(x, "workspaceChange", js.Array(value :_*))
+    inline def setWorkspaceChangeVarargs(value: SchemaEntity*): Self = StObject.set(x, "workspaceChange", js.Array(value :_*))
   }
 }

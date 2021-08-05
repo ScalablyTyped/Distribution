@@ -104,103 +104,71 @@ trait IgGridSortingLocale
 }
 object IgGridSortingLocale {
   
-  @scala.inline
-  def apply(): IgGridSortingLocale = {
+  inline def apply(): IgGridSortingLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridSortingLocale]
   }
   
-  @scala.inline
-  implicit class IgGridSortingLocaleMutableBuilder[Self <: IgGridSortingLocale] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridSortingLocale](x: Self) {
     
-    @scala.inline
-    def setAscending(value: String): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
+    inline def setAscending(value: String): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
+    inline def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
     
-    @scala.inline
-    def setDescending(value: String): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
+    inline def setDescending(value: String): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescendingUndefined: Self = StObject.set(x, "descending", js.undefined)
+    inline def setDescendingUndefined: Self = StObject.set(x, "descending", js.undefined)
     
-    @scala.inline
-    def setFeatureChooserSortAsc(value: String): Self = StObject.set(x, "featureChooserSortAsc", value.asInstanceOf[js.Any])
+    inline def setFeatureChooserSortAsc(value: String): Self = StObject.set(x, "featureChooserSortAsc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureChooserSortAscUndefined: Self = StObject.set(x, "featureChooserSortAsc", js.undefined)
+    inline def setFeatureChooserSortAscUndefined: Self = StObject.set(x, "featureChooserSortAsc", js.undefined)
     
-    @scala.inline
-    def setFeatureChooserSortDesc(value: String): Self = StObject.set(x, "featureChooserSortDesc", value.asInstanceOf[js.Any])
+    inline def setFeatureChooserSortDesc(value: String): Self = StObject.set(x, "featureChooserSortDesc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureChooserSortDescUndefined: Self = StObject.set(x, "featureChooserSortDesc", js.undefined)
+    inline def setFeatureChooserSortDescUndefined: Self = StObject.set(x, "featureChooserSortDesc", js.undefined)
     
-    @scala.inline
-    def setFeatureChooserText(value: String): Self = StObject.set(x, "featureChooserText", value.asInstanceOf[js.Any])
+    inline def setFeatureChooserText(value: String): Self = StObject.set(x, "featureChooserText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureChooserTextUndefined: Self = StObject.set(x, "featureChooserText", js.undefined)
+    inline def setFeatureChooserTextUndefined: Self = StObject.set(x, "featureChooserText", js.undefined)
     
-    @scala.inline
-    def setModalDialogButtonApplyText(value: String): Self = StObject.set(x, "modalDialogButtonApplyText", value.asInstanceOf[js.Any])
+    inline def setModalDialogButtonApplyText(value: String): Self = StObject.set(x, "modalDialogButtonApplyText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogButtonApplyTextUndefined: Self = StObject.set(x, "modalDialogButtonApplyText", js.undefined)
+    inline def setModalDialogButtonApplyTextUndefined: Self = StObject.set(x, "modalDialogButtonApplyText", js.undefined)
     
-    @scala.inline
-    def setModalDialogButtonCancelText(value: String): Self = StObject.set(x, "modalDialogButtonCancelText", value.asInstanceOf[js.Any])
+    inline def setModalDialogButtonCancelText(value: String): Self = StObject.set(x, "modalDialogButtonCancelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogButtonCancelTextUndefined: Self = StObject.set(x, "modalDialogButtonCancelText", js.undefined)
+    inline def setModalDialogButtonCancelTextUndefined: Self = StObject.set(x, "modalDialogButtonCancelText", js.undefined)
     
-    @scala.inline
-    def setModalDialogCaptionButtonAsc(value: String): Self = StObject.set(x, "modalDialogCaptionButtonAsc", value.asInstanceOf[js.Any])
+    inline def setModalDialogCaptionButtonAsc(value: String): Self = StObject.set(x, "modalDialogCaptionButtonAsc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogCaptionButtonAscUndefined: Self = StObject.set(x, "modalDialogCaptionButtonAsc", js.undefined)
+    inline def setModalDialogCaptionButtonAscUndefined: Self = StObject.set(x, "modalDialogCaptionButtonAsc", js.undefined)
     
-    @scala.inline
-    def setModalDialogCaptionButtonDesc(value: String): Self = StObject.set(x, "modalDialogCaptionButtonDesc", value.asInstanceOf[js.Any])
+    inline def setModalDialogCaptionButtonDesc(value: String): Self = StObject.set(x, "modalDialogCaptionButtonDesc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogCaptionButtonDescUndefined: Self = StObject.set(x, "modalDialogCaptionButtonDesc", js.undefined)
+    inline def setModalDialogCaptionButtonDescUndefined: Self = StObject.set(x, "modalDialogCaptionButtonDesc", js.undefined)
     
-    @scala.inline
-    def setModalDialogCaptionButtonUnsort(value: String): Self = StObject.set(x, "modalDialogCaptionButtonUnsort", value.asInstanceOf[js.Any])
+    inline def setModalDialogCaptionButtonUnsort(value: String): Self = StObject.set(x, "modalDialogCaptionButtonUnsort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogCaptionButtonUnsortUndefined: Self = StObject.set(x, "modalDialogCaptionButtonUnsort", js.undefined)
+    inline def setModalDialogCaptionButtonUnsortUndefined: Self = StObject.set(x, "modalDialogCaptionButtonUnsort", js.undefined)
     
-    @scala.inline
-    def setModalDialogCaptionText(value: String): Self = StObject.set(x, "modalDialogCaptionText", value.asInstanceOf[js.Any])
+    inline def setModalDialogCaptionText(value: String): Self = StObject.set(x, "modalDialogCaptionText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogCaptionTextUndefined: Self = StObject.set(x, "modalDialogCaptionText", js.undefined)
+    inline def setModalDialogCaptionTextUndefined: Self = StObject.set(x, "modalDialogCaptionText", js.undefined)
     
-    @scala.inline
-    def setModalDialogResetButton(value: String): Self = StObject.set(x, "modalDialogResetButton", value.asInstanceOf[js.Any])
+    inline def setModalDialogResetButton(value: String): Self = StObject.set(x, "modalDialogResetButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogResetButtonUndefined: Self = StObject.set(x, "modalDialogResetButton", js.undefined)
+    inline def setModalDialogResetButtonUndefined: Self = StObject.set(x, "modalDialogResetButton", js.undefined)
     
-    @scala.inline
-    def setModalDialogSortByButtonText(value: String): Self = StObject.set(x, "modalDialogSortByButtonText", value.asInstanceOf[js.Any])
+    inline def setModalDialogSortByButtonText(value: String): Self = StObject.set(x, "modalDialogSortByButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogSortByButtonTextUndefined: Self = StObject.set(x, "modalDialogSortByButtonText", js.undefined)
+    inline def setModalDialogSortByButtonTextUndefined: Self = StObject.set(x, "modalDialogSortByButtonText", js.undefined)
     
-    @scala.inline
-    def setSortedColumnTooltip(value: String): Self = StObject.set(x, "sortedColumnTooltip", value.asInstanceOf[js.Any])
+    inline def setSortedColumnTooltip(value: String): Self = StObject.set(x, "sortedColumnTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortedColumnTooltipUndefined: Self = StObject.set(x, "sortedColumnTooltip", js.undefined)
+    inline def setSortedColumnTooltipUndefined: Self = StObject.set(x, "sortedColumnTooltip", js.undefined)
     
-    @scala.inline
-    def setUnsortedColumnTooltip(value: String): Self = StObject.set(x, "unsortedColumnTooltip", value.asInstanceOf[js.Any])
+    inline def setUnsortedColumnTooltip(value: String): Self = StObject.set(x, "unsortedColumnTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsortedColumnTooltipUndefined: Self = StObject.set(x, "unsortedColumnTooltip", js.undefined)
+    inline def setUnsortedColumnTooltipUndefined: Self = StObject.set(x, "unsortedColumnTooltip", js.undefined)
   }
 }

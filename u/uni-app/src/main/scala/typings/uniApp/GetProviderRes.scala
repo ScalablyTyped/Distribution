@@ -26,28 +26,21 @@ trait GetProviderRes extends StObject {
 }
 object GetProviderRes {
   
-  @scala.inline
-  def apply(): GetProviderRes = {
+  inline def apply(): GetProviderRes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetProviderRes]
   }
   
-  @scala.inline
-  implicit class GetProviderResMutableBuilder[Self <: GetProviderRes] (val x: Self) extends AnyVal {
+  extension [Self <: GetProviderRes](x: Self) {
     
-    @scala.inline
-    def setProvider(value: js.Array[js.Any]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: js.Array[js.Any]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    @scala.inline
-    def setProviderVarargs(value: js.Any*): Self = StObject.set(x, "provider", js.Array(value :_*))
+    inline def setProviderVarargs(value: js.Any*): Self = StObject.set(x, "provider", js.Array(value :_*))
     
-    @scala.inline
-    def setService(value: oauth | share | payment | push): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: oauth | share | payment | push): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

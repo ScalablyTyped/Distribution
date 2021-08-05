@@ -16,19 +16,15 @@ trait ValidNonKioskManifest
 }
 object ValidNonKioskManifest {
   
-  @scala.inline
-  def apply(app: Background, externally_connectable: Accepttlschannelid, name: String, version: String): ValidNonKioskManifest = {
+  inline def apply(app: Background, externally_connectable: Accepttlschannelid, name: String, version: String): ValidNonKioskManifest = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], externally_connectable = externally_connectable.asInstanceOf[js.Any], manifest_version = 2, name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidNonKioskManifest]
   }
   
-  @scala.inline
-  implicit class ValidNonKioskManifestMutableBuilder[Self <: ValidNonKioskManifest] (val x: Self) extends AnyVal {
+  extension [Self <: ValidNonKioskManifest](x: Self) {
     
-    @scala.inline
-    def setKiosk_enabled(value: `false`): Self = StObject.set(x, "kiosk_enabled", value.asInstanceOf[js.Any])
+    inline def setKiosk_enabled(value: `false`): Self = StObject.set(x, "kiosk_enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKiosk_enabledUndefined: Self = StObject.set(x, "kiosk_enabled", js.undefined)
+    inline def setKiosk_enabledUndefined: Self = StObject.set(x, "kiosk_enabled", js.undefined)
   }
 }

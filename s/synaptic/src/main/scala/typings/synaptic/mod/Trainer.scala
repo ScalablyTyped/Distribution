@@ -110,83 +110,58 @@ object Trainer {
   }
   object DSROptions {
     
-    @scala.inline
-    def apply(): DSROptions = {
+    inline def apply(): DSROptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DSROptions]
     }
     
-    @scala.inline
-    implicit class DSROptionsMutableBuilder[Self <: DSROptions] (val x: Self) extends AnyVal {
+    extension [Self <: DSROptions](x: Self) {
       
-      @scala.inline
-      def setCost(value: (/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double]) => Double): Self = StObject.set(x, "cost", js.Any.fromFunction2(value))
+      inline def setCost(value: (/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double]) => Double): Self = StObject.set(x, "cost", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
+      inline def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
       
-      @scala.inline
-      def setDistractors(value: js.Array[Double]): Self = StObject.set(x, "distractors", value.asInstanceOf[js.Any])
+      inline def setDistractors(value: js.Array[Double]): Self = StObject.set(x, "distractors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistractorsUndefined: Self = StObject.set(x, "distractors", js.undefined)
+      inline def setDistractorsUndefined: Self = StObject.set(x, "distractors", js.undefined)
       
-      @scala.inline
-      def setDistractorsVarargs(value: Double*): Self = StObject.set(x, "distractors", js.Array(value :_*))
+      inline def setDistractorsVarargs(value: Double*): Self = StObject.set(x, "distractors", js.Array(value :_*))
       
-      @scala.inline
-      def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+      inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setLog(value: Double): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Double): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setPrompts(value: js.Array[Double]): Self = StObject.set(x, "prompts", value.asInstanceOf[js.Any])
+      inline def setPrompts(value: js.Array[Double]): Self = StObject.set(x, "prompts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptsUndefined: Self = StObject.set(x, "prompts", js.undefined)
+      inline def setPromptsUndefined: Self = StObject.set(x, "prompts", js.undefined)
       
-      @scala.inline
-      def setPromptsVarargs(value: Double*): Self = StObject.set(x, "prompts", js.Array(value :_*))
+      inline def setPromptsVarargs(value: Double*): Self = StObject.set(x, "prompts", js.Array(value :_*))
       
-      @scala.inline
-      def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+      inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
       
-      @scala.inline
-      def setSchedule(value: TrainingScheduleOptions): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: TrainingScheduleOptions): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+      inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: Double): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Double): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
-      @scala.inline
-      def setTargets(value: js.Array[Double]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: js.Array[Double]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+      inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      @scala.inline
-      def setTargetsVarargs(value: Double*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: Double*): Self = StObject.set(x, "targets", js.Array(value :_*))
     }
   }
   
@@ -202,26 +177,20 @@ object Trainer {
   }
   object DSRTrainingResult {
     
-    @scala.inline
-    def apply(error: Double, iterations: Double, success: js.Any, time: Double): DSRTrainingResult = {
+    inline def apply(error: Double, iterations: Double, success: js.Any, time: Double): DSRTrainingResult = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[DSRTrainingResult]
     }
     
-    @scala.inline
-    implicit class DSRTrainingResultMutableBuilder[Self <: DSRTrainingResult] (val x: Self) extends AnyVal {
+    extension [Self <: DSRTrainingResult](x: Self) {
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: js.Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: js.Any): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -239,44 +208,32 @@ object Trainer {
   }
   object ERGOptions {
     
-    @scala.inline
-    def apply(): ERGOptions = {
+    inline def apply(): ERGOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ERGOptions]
     }
     
-    @scala.inline
-    implicit class ERGOptionsMutableBuilder[Self <: ERGOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ERGOptions](x: Self) {
       
-      @scala.inline
-      def setCost(value: (/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double]) => Double): Self = StObject.set(x, "cost", js.Any.fromFunction2(value))
+      inline def setCost(value: (/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double]) => Double): Self = StObject.set(x, "cost", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
+      inline def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+      inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
       
-      @scala.inline
-      def setLog(value: Double): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Double): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+      inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
     }
   }
   
@@ -294,29 +251,22 @@ object Trainer {
   }
   object ERGTrainingResult {
     
-    @scala.inline
-    def apply(error: Double, generate: js.Any, iterations: Double, test: js.Any, time: Double): ERGTrainingResult = {
+    inline def apply(error: Double, generate: js.Any, iterations: Double, test: js.Any, time: Double): ERGTrainingResult = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], generate = generate.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[ERGTrainingResult]
     }
     
-    @scala.inline
-    implicit class ERGTrainingResultMutableBuilder[Self <: ERGTrainingResult] (val x: Self) extends AnyVal {
+    extension [Self <: ERGTrainingResult](x: Self) {
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerate(value: js.Any): Self = StObject.set(x, "generate", value.asInstanceOf[js.Any])
+      inline def setGenerate(value: js.Any): Self = StObject.set(x, "generate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTest(value: js.Any): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: js.Any): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -361,64 +311,46 @@ object Trainer {
   }
   object TrainingOptions {
     
-    @scala.inline
-    def apply(): TrainingOptions = {
+    inline def apply(): TrainingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TrainingOptions]
     }
     
-    @scala.inline
-    implicit class TrainingOptionsMutableBuilder[Self <: TrainingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TrainingOptions](x: Self) {
       
-      @scala.inline
-      def setCost(value: (/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double]) => Double): Self = StObject.set(x, "cost", js.Any.fromFunction2(value))
+      inline def setCost(value: (/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double]) => Double): Self = StObject.set(x, "cost", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
+      inline def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+      inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
       
-      @scala.inline
-      def setLog(value: Double): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Double): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setRate(
+      inline def setRate(
         value: Double | js.Array[Double] | (js.Function2[/* iterations */ Double, /* error */ Double, Double])
       ): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateFunction2(value: (/* iterations */ Double, /* error */ Double) => Double): Self = StObject.set(x, "rate", js.Any.fromFunction2(value))
+      inline def setRateFunction2(value: (/* iterations */ Double, /* error */ Double) => Double): Self = StObject.set(x, "rate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+      inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
       
-      @scala.inline
-      def setRateVarargs(value: Double*): Self = StObject.set(x, "rate", js.Array(value :_*))
+      inline def setRateVarargs(value: Double*): Self = StObject.set(x, "rate", js.Array(value :_*))
       
-      @scala.inline
-      def setSchedule(value: TrainingScheduleOptions): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: TrainingScheduleOptions): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+      inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
       
-      @scala.inline
-      def setShuffle(value: Boolean): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
+      inline def setShuffle(value: Boolean): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShuffleUndefined: Self = StObject.set(x, "shuffle", js.undefined)
+      inline def setShuffleUndefined: Self = StObject.set(x, "shuffle", js.undefined)
     }
   }
   
@@ -430,26 +362,20 @@ object Trainer {
   }
   object TrainingPair {
     
-    @scala.inline
-    def apply(input: js.Array[Double], output: js.Array[Double]): TrainingPair = {
+    inline def apply(input: js.Array[Double], output: js.Array[Double]): TrainingPair = {
       val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrainingPair]
     }
     
-    @scala.inline
-    implicit class TrainingPairMutableBuilder[Self <: TrainingPair] (val x: Self) extends AnyVal {
+    extension [Self <: TrainingPair](x: Self) {
       
-      @scala.inline
-      def setInput(value: js.Array[Double]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: js.Array[Double]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputVarargs(value: Double*): Self = StObject.set(x, "input", js.Array(value :_*))
+      inline def setInputVarargs(value: Double*): Self = StObject.set(x, "input", js.Array(value :_*))
       
-      @scala.inline
-      def setOutput(value: js.Array[Double]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: js.Array[Double]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputVarargs(value: Double*): Self = StObject.set(x, "output", js.Array(value :_*))
+      inline def setOutputVarargs(value: Double*): Self = StObject.set(x, "output", js.Array(value :_*))
     }
   }
   
@@ -463,23 +389,18 @@ object Trainer {
   }
   object TrainingResult {
     
-    @scala.inline
-    def apply(error: Double, iterations: Double, time: Double): TrainingResult = {
+    inline def apply(error: Double, iterations: Double, time: Double): TrainingResult = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrainingResult]
     }
     
-    @scala.inline
-    implicit class TrainingResultMutableBuilder[Self <: TrainingResult] (val x: Self) extends AnyVal {
+    extension [Self <: TrainingResult](x: Self) {
       
-      @scala.inline
-      def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -496,23 +417,18 @@ object Trainer {
   }
   object TrainingScheduleDoData {
     
-    @scala.inline
-    def apply(error: js.Any, iterations: js.Any, rate: js.Any): TrainingScheduleDoData = {
+    inline def apply(error: js.Any, iterations: js.Any, rate: js.Any): TrainingScheduleDoData = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], rate = rate.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrainingScheduleDoData]
     }
     
-    @scala.inline
-    implicit class TrainingScheduleDoDataMutableBuilder[Self <: TrainingScheduleDoData] (val x: Self) extends AnyVal {
+    extension [Self <: TrainingScheduleDoData](x: Self) {
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterations(value: js.Any): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: js.Any): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRate(value: js.Any): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: js.Any): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -524,21 +440,17 @@ object Trainer {
   }
   object TrainingScheduleOptions {
     
-    @scala.inline
-    def apply(`do`: TrainingScheduleDoData => Boolean | Unit, every: Double): TrainingScheduleOptions = {
+    inline def apply(`do`: TrainingScheduleDoData => Boolean | Unit, every: Double): TrainingScheduleOptions = {
       val __obj = js.Dynamic.literal(every = every.asInstanceOf[js.Any])
       __obj.updateDynamic("do")(js.Any.fromFunction1(`do`))
       __obj.asInstanceOf[TrainingScheduleOptions]
     }
     
-    @scala.inline
-    implicit class TrainingScheduleOptionsMutableBuilder[Self <: TrainingScheduleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TrainingScheduleOptions](x: Self) {
       
-      @scala.inline
-      def setDo(value: TrainingScheduleDoData => Boolean | Unit): Self = StObject.set(x, "do", js.Any.fromFunction1(value))
+      inline def setDo(value: TrainingScheduleDoData => Boolean | Unit): Self = StObject.set(x, "do", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEvery(value: Double): Self = StObject.set(x, "every", value.asInstanceOf[js.Any])
+      inline def setEvery(value: Double): Self = StObject.set(x, "every", value.asInstanceOf[js.Any])
     }
   }
   
@@ -556,38 +468,28 @@ object Trainer {
   }
   object XOROptions {
     
-    @scala.inline
-    def apply(): XOROptions = {
+    inline def apply(): XOROptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XOROptions]
     }
     
-    @scala.inline
-    implicit class XOROptionsMutableBuilder[Self <: XOROptions] (val x: Self) extends AnyVal {
+    extension [Self <: XOROptions](x: Self) {
       
-      @scala.inline
-      def setCost(value: (/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double]) => Double): Self = StObject.set(x, "cost", js.Any.fromFunction2(value))
+      inline def setCost(value: (/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double]) => Double): Self = StObject.set(x, "cost", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
+      inline def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
       
-      @scala.inline
-      def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+      inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
       
-      @scala.inline
-      def setLog(value: Double): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Double): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setShuffle(value: Boolean): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
+      inline def setShuffle(value: Boolean): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShuffleUndefined: Self = StObject.set(x, "shuffle", js.undefined)
+      inline def setShuffleUndefined: Self = StObject.set(x, "shuffle", js.undefined)
     }
   }
 }

@@ -18,16 +18,13 @@ trait ASPxClientRatingControlItemMouseEventArgs
 }
 object ASPxClientRatingControlItemMouseEventArgs {
   
-  @scala.inline
-  def apply(index: Double): ASPxClientRatingControlItemMouseEventArgs = {
+  inline def apply(index: Double): ASPxClientRatingControlItemMouseEventArgs = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRatingControlItemMouseEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientRatingControlItemMouseEventArgsMutableBuilder[Self <: ASPxClientRatingControlItemMouseEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRatingControlItemMouseEventArgs](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

@@ -18,23 +18,18 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply(children: PaginationProps => ReactElement | Null): Children = {
+    inline def apply(children: PaginationProps => ReactElement | Null): Children = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[Children]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+    extension [Self <: Children](x: Self) {
       
-      @scala.inline
-      def setChildren(value: PaginationProps => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: PaginationProps => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPagination(value: PaginationCtxOptions): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+      inline def setPagination(value: PaginationCtxOptions): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
+      inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
     }
   }
   
@@ -46,20 +41,16 @@ object anon {
   }
   object PaginationProps {
     
-    @scala.inline
-    def apply(paginationProps: PaginationChildProps, paginationTableProps: BootstrapTableProps[js.Any, Double]): PaginationProps = {
+    inline def apply(paginationProps: PaginationChildProps, paginationTableProps: BootstrapTableProps[js.Any, Double]): PaginationProps = {
       val __obj = js.Dynamic.literal(paginationProps = paginationProps.asInstanceOf[js.Any], paginationTableProps = paginationTableProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationProps]
     }
     
-    @scala.inline
-    implicit class PaginationPropsMutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
+    extension [Self <: PaginationProps](x: Self) {
       
-      @scala.inline
-      def setPaginationProps(value: PaginationChildProps): Self = StObject.set(x, "paginationProps", value.asInstanceOf[js.Any])
+      inline def setPaginationProps(value: PaginationChildProps): Self = StObject.set(x, "paginationProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationTableProps(value: BootstrapTableProps[js.Any, Double]): Self = StObject.set(x, "paginationTableProps", value.asInstanceOf[js.Any])
+      inline def setPaginationTableProps(value: BootstrapTableProps[js.Any, Double]): Self = StObject.set(x, "paginationTableProps", value.asInstanceOf[js.Any])
     }
   }
 }

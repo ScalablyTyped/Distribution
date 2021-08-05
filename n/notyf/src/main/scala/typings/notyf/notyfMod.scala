@@ -23,9 +23,9 @@ object notyfMod {
   @js.native
   trait Notyf extends StObject {
     
-    var _pushNotification: js.Any = js.native
+    /* private */ var _pushNotification: js.Any = js.native
     
-    var _removeNotification: js.Any = js.native
+    /* private */ var _removeNotification: js.Any = js.native
     
     /**
       * Assigns properties to a config object based on two rules:
@@ -38,7 +38,7 @@ object notyfMod {
       * @param props - properties to be assigned to the config object
       * @param config - object whose properties need to be set
       */
-    var assignProps: js.Any = js.native
+    /* private */ var assignProps: js.Any = js.native
     
     def dismiss(notification: NotyfNotification): Unit = js.native
     
@@ -47,7 +47,7 @@ object notyfMod {
     def error(payload: String): NotyfNotification = js.native
     def error(payload: PartialINotyfNotification): NotyfNotification = js.native
     
-    var normalizeOptions: js.Any = js.native
+    /* private */ var normalizeOptions: js.Any = js.native
     
     var notifications: NotyfArray[NotyfNotification] = js.native
     
@@ -55,11 +55,11 @@ object notyfMod {
     
     var options: INotyfOptions = js.native
     
-    var registerTypes: js.Any = js.native
+    /* private */ var registerTypes: js.Any = js.native
     
     def success(payload: String): NotyfNotification = js.native
     def success(payload: PartialINotyfNotification): NotyfNotification = js.native
     
-    var view: js.Any = js.native
+    /* private */ var view: js.Any = js.native
   }
 }

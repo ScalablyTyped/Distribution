@@ -16,17 +16,14 @@ object typesFileContentRequiredExceptionMod {
   }
   object FileContentRequiredException {
     
-    @scala.inline
-    def apply(): FileContentRequiredException = {
+    inline def apply(): FileContentRequiredException = {
       val __obj = js.Dynamic.literal(name = "FileContentRequiredException")
       __obj.asInstanceOf[FileContentRequiredException]
     }
     
-    @scala.inline
-    implicit class FileContentRequiredExceptionMutableBuilder[Self <: FileContentRequiredException] (val x: Self) extends AnyVal {
+    extension [Self <: FileContentRequiredException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileContentRequiredException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -23,25 +23,19 @@ trait NodeProperties extends StObject {
 }
 object NodeProperties {
   
-  @scala.inline
-  def apply(mainNode: Integer, nodeRangeProperties: NodeRangeProperties, numNodes: Integer): NodeProperties = {
+  inline def apply(mainNode: Integer, nodeRangeProperties: NodeRangeProperties, numNodes: Integer): NodeProperties = {
     val __obj = js.Dynamic.literal(mainNode = mainNode.asInstanceOf[js.Any], nodeRangeProperties = nodeRangeProperties.asInstanceOf[js.Any], numNodes = numNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeProperties]
   }
   
-  @scala.inline
-  implicit class NodePropertiesMutableBuilder[Self <: NodeProperties] (val x: Self) extends AnyVal {
+  extension [Self <: NodeProperties](x: Self) {
     
-    @scala.inline
-    def setMainNode(value: Integer): Self = StObject.set(x, "mainNode", value.asInstanceOf[js.Any])
+    inline def setMainNode(value: Integer): Self = StObject.set(x, "mainNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeRangeProperties(value: NodeRangeProperties): Self = StObject.set(x, "nodeRangeProperties", value.asInstanceOf[js.Any])
+    inline def setNodeRangeProperties(value: NodeRangeProperties): Self = StObject.set(x, "nodeRangeProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeRangePropertiesVarargs(value: NodeRangeProperty*): Self = StObject.set(x, "nodeRangeProperties", js.Array(value :_*))
+    inline def setNodeRangePropertiesVarargs(value: NodeRangeProperty*): Self = StObject.set(x, "nodeRangeProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setNumNodes(value: Integer): Self = StObject.set(x, "numNodes", value.asInstanceOf[js.Any])
+    inline def setNumNodes(value: Integer): Self = StObject.set(x, "numNodes", value.asInstanceOf[js.Any])
   }
 }

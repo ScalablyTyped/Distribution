@@ -96,17 +96,14 @@ object Bend {
   @JSGlobal("Vex.Flow.Bend.DOWN")
   @js.native
   def DOWN: Double = js.native
-  @scala.inline
-  def DOWN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOWN")(x.asInstanceOf[js.Any])
+  inline def DOWN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOWN")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("Vex.Flow.Bend.UP")
   @js.native
   def UP: Double = js.native
-  @scala.inline
-  def UP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UP")(x.asInstanceOf[js.Any])
+  inline def UP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UP")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def format(bends: js.Array[typings.vexflow.Vex.Flow.Bend], state: Leftshift): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(bends.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def format(bends: js.Array[typings.vexflow.Vex.Flow.Bend], state: Leftshift): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(bends.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -13,22 +13,17 @@ trait DescribeFleetPortSettingsOutput extends StObject {
 }
 object DescribeFleetPortSettingsOutput {
   
-  @scala.inline
-  def apply(): DescribeFleetPortSettingsOutput = {
+  inline def apply(): DescribeFleetPortSettingsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeFleetPortSettingsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeFleetPortSettingsOutputMutableBuilder[Self <: DescribeFleetPortSettingsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFleetPortSettingsOutput](x: Self) {
     
-    @scala.inline
-    def setInboundPermissions(value: IpPermissionsList): Self = StObject.set(x, "InboundPermissions", value.asInstanceOf[js.Any])
+    inline def setInboundPermissions(value: IpPermissionsList): Self = StObject.set(x, "InboundPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundPermissionsUndefined: Self = StObject.set(x, "InboundPermissions", js.undefined)
+    inline def setInboundPermissionsUndefined: Self = StObject.set(x, "InboundPermissions", js.undefined)
     
-    @scala.inline
-    def setInboundPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "InboundPermissions", js.Array(value :_*))
+    inline def setInboundPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "InboundPermissions", js.Array(value :_*))
   }
 }

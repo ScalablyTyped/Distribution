@@ -27,31 +27,23 @@ trait SchemaConsistentHashLoadBalancerSettingsHttpCookie extends StObject {
 }
 object SchemaConsistentHashLoadBalancerSettingsHttpCookie {
   
-  @scala.inline
-  def apply(): SchemaConsistentHashLoadBalancerSettingsHttpCookie = {
+  inline def apply(): SchemaConsistentHashLoadBalancerSettingsHttpCookie = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConsistentHashLoadBalancerSettingsHttpCookie]
   }
   
-  @scala.inline
-  implicit class SchemaConsistentHashLoadBalancerSettingsHttpCookieMutableBuilder[Self <: SchemaConsistentHashLoadBalancerSettingsHttpCookie] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConsistentHashLoadBalancerSettingsHttpCookie](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setTtl(value: SchemaDuration): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: SchemaDuration): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

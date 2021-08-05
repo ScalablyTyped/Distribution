@@ -14,22 +14,17 @@ trait AvAudioInfo extends StObject {
 }
 object AvAudioInfo {
   
-  @scala.inline
-  def apply(audio: AudioInfo, format: AvFormat, video: VideoInfo): AvAudioInfo = {
+  inline def apply(audio: AudioInfo, format: AvFormat, video: VideoInfo): AvAudioInfo = {
     val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvAudioInfo]
   }
   
-  @scala.inline
-  implicit class AvAudioInfoMutableBuilder[Self <: AvAudioInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AvAudioInfo](x: Self) {
     
-    @scala.inline
-    def setAudio(value: AudioInfo): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: AudioInfo): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: AvFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: AvFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo(value: VideoInfo): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: VideoInfo): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait TargetTrackingConfiguration extends StObject {
 }
 object TargetTrackingConfiguration {
   
-  @scala.inline
-  def apply(TargetValue: NonNegativeDouble): TargetTrackingConfiguration = {
+  inline def apply(TargetValue: NonNegativeDouble): TargetTrackingConfiguration = {
     val __obj = js.Dynamic.literal(TargetValue = TargetValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetTrackingConfiguration]
   }
   
-  @scala.inline
-  implicit class TargetTrackingConfigurationMutableBuilder[Self <: TargetTrackingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: TargetTrackingConfiguration](x: Self) {
     
-    @scala.inline
-    def setTargetValue(value: NonNegativeDouble): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
+    inline def setTargetValue(value: NonNegativeDouble): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
   }
 }

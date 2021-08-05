@@ -13,6 +13,5 @@ object appInitializeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def appInitialize(config: Config, doc: Document, zone: NgZone): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("appInitialize")(config.asInstanceOf[js.Any], doc.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
+  inline def appInitialize(config: Config, doc: Document, zone: NgZone): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("appInitialize")(config.asInstanceOf[js.Any], doc.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
 }

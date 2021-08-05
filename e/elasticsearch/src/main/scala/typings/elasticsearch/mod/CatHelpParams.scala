@@ -12,19 +12,15 @@ trait CatHelpParams
 }
 object CatHelpParams {
   
-  @scala.inline
-  def apply(): CatHelpParams = {
+  inline def apply(): CatHelpParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CatHelpParams]
   }
   
-  @scala.inline
-  implicit class CatHelpParamsMutableBuilder[Self <: CatHelpParams] (val x: Self) extends AnyVal {
+  extension [Self <: CatHelpParams](x: Self) {
     
-    @scala.inline
-    def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+    inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+    inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
   }
 }

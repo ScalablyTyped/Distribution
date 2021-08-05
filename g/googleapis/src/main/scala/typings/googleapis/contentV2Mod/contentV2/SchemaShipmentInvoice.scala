@@ -25,34 +25,25 @@ trait SchemaShipmentInvoice extends StObject {
 }
 object SchemaShipmentInvoice {
   
-  @scala.inline
-  def apply(): SchemaShipmentInvoice = {
+  inline def apply(): SchemaShipmentInvoice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaShipmentInvoice]
   }
   
-  @scala.inline
-  implicit class SchemaShipmentInvoiceMutableBuilder[Self <: SchemaShipmentInvoice] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaShipmentInvoice](x: Self) {
     
-    @scala.inline
-    def setInvoiceSummary(value: SchemaInvoiceSummary): Self = StObject.set(x, "invoiceSummary", value.asInstanceOf[js.Any])
+    inline def setInvoiceSummary(value: SchemaInvoiceSummary): Self = StObject.set(x, "invoiceSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoiceSummaryUndefined: Self = StObject.set(x, "invoiceSummary", js.undefined)
+    inline def setInvoiceSummaryUndefined: Self = StObject.set(x, "invoiceSummary", js.undefined)
     
-    @scala.inline
-    def setLineItemInvoices(value: js.Array[SchemaShipmentInvoiceLineItemInvoice]): Self = StObject.set(x, "lineItemInvoices", value.asInstanceOf[js.Any])
+    inline def setLineItemInvoices(value: js.Array[SchemaShipmentInvoiceLineItemInvoice]): Self = StObject.set(x, "lineItemInvoices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemInvoicesUndefined: Self = StObject.set(x, "lineItemInvoices", js.undefined)
+    inline def setLineItemInvoicesUndefined: Self = StObject.set(x, "lineItemInvoices", js.undefined)
     
-    @scala.inline
-    def setLineItemInvoicesVarargs(value: SchemaShipmentInvoiceLineItemInvoice*): Self = StObject.set(x, "lineItemInvoices", js.Array(value :_*))
+    inline def setLineItemInvoicesVarargs(value: SchemaShipmentInvoiceLineItemInvoice*): Self = StObject.set(x, "lineItemInvoices", js.Array(value :_*))
     
-    @scala.inline
-    def setShipmentGroupId(value: String): Self = StObject.set(x, "shipmentGroupId", value.asInstanceOf[js.Any])
+    inline def setShipmentGroupId(value: String): Self = StObject.set(x, "shipmentGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShipmentGroupIdUndefined: Self = StObject.set(x, "shipmentGroupId", js.undefined)
+    inline def setShipmentGroupIdUndefined: Self = StObject.set(x, "shipmentGroupId", js.undefined)
   }
 }

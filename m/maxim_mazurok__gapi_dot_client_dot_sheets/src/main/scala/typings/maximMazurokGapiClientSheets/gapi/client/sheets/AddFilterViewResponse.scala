@@ -11,19 +11,15 @@ trait AddFilterViewResponse extends StObject {
 }
 object AddFilterViewResponse {
   
-  @scala.inline
-  def apply(): AddFilterViewResponse = {
+  inline def apply(): AddFilterViewResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddFilterViewResponse]
   }
   
-  @scala.inline
-  implicit class AddFilterViewResponseMutableBuilder[Self <: AddFilterViewResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddFilterViewResponse](x: Self) {
     
-    @scala.inline
-    def setFilter(value: FilterView): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: FilterView): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** W3C-DOM XML Document 6.0 (Free threaded) */
 trait FreeThreadedDOMDocument60 extends StObject {
   
-  @JSName("MSXML2.FreeThreadedDOMDocument60_typekey")
+  /* private */ @JSName("MSXML2.FreeThreadedDOMDocument60_typekey")
   var MSXML2DotFreeThreadedDOMDocument60_typekey: FreeThreadedDOMDocument60
   
   /** abort an asynchronous download */
@@ -223,8 +223,7 @@ trait FreeThreadedDOMDocument60 extends StObject {
 }
 object FreeThreadedDOMDocument60 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSXML2DotFreeThreadedDOMDocument60_typekey: FreeThreadedDOMDocument60,
     abort: () => Unit,
     appendChild: IXMLDOMNode => IXMLDOMNode,
@@ -299,211 +298,142 @@ object FreeThreadedDOMDocument60 {
     __obj.asInstanceOf[FreeThreadedDOMDocument60]
   }
   
-  @scala.inline
-  implicit class FreeThreadedDOMDocument60MutableBuilder[Self <: FreeThreadedDOMDocument60] (val x: Self) extends AnyVal {
+  extension [Self <: FreeThreadedDOMDocument60](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAppendChild(value: IXMLDOMNode => IXMLDOMNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
+    inline def setAppendChild(value: IXMLDOMNode => IXMLDOMNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributes(value: IXMLDOMNamedNodeMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: IXMLDOMNamedNodeMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseName(value: String): Self = StObject.set(x, "baseName", value.asInstanceOf[js.Any])
+    inline def setBaseName(value: String): Self = StObject.set(x, "baseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildNodes(value: IXMLDOMNodeList): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
+    inline def setChildNodes(value: IXMLDOMNodeList): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloneNode(value: Boolean => IXMLDOMNode): Self = StObject.set(x, "cloneNode", js.Any.fromFunction1(value))
+    inline def setCloneNode(value: Boolean => IXMLDOMNode): Self = StObject.set(x, "cloneNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateAttribute(value: String => IXMLDOMAttribute): Self = StObject.set(x, "createAttribute", js.Any.fromFunction1(value))
+    inline def setCreateAttribute(value: String => IXMLDOMAttribute): Self = StObject.set(x, "createAttribute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateCDATASection(value: String => IXMLDOMCDATASection): Self = StObject.set(x, "createCDATASection", js.Any.fromFunction1(value))
+    inline def setCreateCDATASection(value: String => IXMLDOMCDATASection): Self = StObject.set(x, "createCDATASection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateComment(value: String => IXMLDOMComment): Self = StObject.set(x, "createComment", js.Any.fromFunction1(value))
+    inline def setCreateComment(value: String => IXMLDOMComment): Self = StObject.set(x, "createComment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateDocumentFragment(value: () => IXMLDOMDocumentFragment): Self = StObject.set(x, "createDocumentFragment", js.Any.fromFunction0(value))
+    inline def setCreateDocumentFragment(value: () => IXMLDOMDocumentFragment): Self = StObject.set(x, "createDocumentFragment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateElement(value: String => IXMLDOMElement): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
+    inline def setCreateElement(value: String => IXMLDOMElement): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateEntityReference(value: String => IXMLDOMEntityReference): Self = StObject.set(x, "createEntityReference", js.Any.fromFunction1(value))
+    inline def setCreateEntityReference(value: String => IXMLDOMEntityReference): Self = StObject.set(x, "createEntityReference", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateNode(value: (js.Any, String, String) => IXMLDOMNode): Self = StObject.set(x, "createNode", js.Any.fromFunction3(value))
+    inline def setCreateNode(value: (js.Any, String, String) => IXMLDOMNode): Self = StObject.set(x, "createNode", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateProcessingInstruction(value: (String, String) => IXMLDOMProcessingInstruction): Self = StObject.set(x, "createProcessingInstruction", js.Any.fromFunction2(value))
+    inline def setCreateProcessingInstruction(value: (String, String) => IXMLDOMProcessingInstruction): Self = StObject.set(x, "createProcessingInstruction", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateTextNode(value: String => IXMLDOMText): Self = StObject.set(x, "createTextNode", js.Any.fromFunction1(value))
+    inline def setCreateTextNode(value: String => IXMLDOMText): Self = StObject.set(x, "createTextNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDataType(value: js.Any): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: js.Any): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinition(value: IXMLDOMNode): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: IXMLDOMNode): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoctype(value: IXMLDOMDocumentType): Self = StObject.set(x, "doctype", value.asInstanceOf[js.Any])
+    inline def setDoctype(value: IXMLDOMDocumentType): Self = StObject.set(x, "doctype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentElement(value: IXMLDOMElement): Self = StObject.set(x, "documentElement", value.asInstanceOf[js.Any])
+    inline def setDocumentElement(value: IXMLDOMElement): Self = StObject.set(x, "documentElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstChild(value: IXMLDOMNode): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
+    inline def setFirstChild(value: IXMLDOMNode): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetElementsByTagName(value: String => IXMLDOMNodeList): Self = StObject.set(x, "getElementsByTagName", js.Any.fromFunction1(value))
+    inline def setGetElementsByTagName(value: String => IXMLDOMNodeList): Self = StObject.set(x, "getElementsByTagName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetProperty(value: String => js.Any): Self = StObject.set(x, "getProperty", js.Any.fromFunction1(value))
+    inline def setGetProperty(value: String => js.Any): Self = StObject.set(x, "getProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasChildNodes(value: () => Boolean): Self = StObject.set(x, "hasChildNodes", js.Any.fromFunction0(value))
+    inline def setHasChildNodes(value: () => Boolean): Self = StObject.set(x, "hasChildNodes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImplementation(value: IXMLDOMImplementation): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+    inline def setImplementation(value: IXMLDOMImplementation): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportNode(value: (IXMLDOMNode, Boolean) => IXMLDOMNode): Self = StObject.set(x, "importNode", js.Any.fromFunction2(value))
+    inline def setImportNode(value: (IXMLDOMNode, Boolean) => IXMLDOMNode): Self = StObject.set(x, "importNode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsertBefore(value: (IXMLDOMNode, js.Any) => IXMLDOMNode): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
+    inline def setInsertBefore(value: (IXMLDOMNode, js.Any) => IXMLDOMNode): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLastChild(value: IXMLDOMNode): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
+    inline def setLastChild(value: IXMLDOMNode): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoad(value: js.Any => Boolean): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: js.Any => Boolean): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadXML(value: String => Boolean): Self = StObject.set(x, "loadXML", js.Any.fromFunction1(value))
+    inline def setLoadXML(value: String => Boolean): Self = StObject.set(x, "loadXML", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMSXML2DotFreeThreadedDOMDocument60_typekey(value: FreeThreadedDOMDocument60): Self = StObject.set(x, "MSXML2.FreeThreadedDOMDocument60_typekey", value.asInstanceOf[js.Any])
+    inline def setMSXML2DotFreeThreadedDOMDocument60_typekey(value: FreeThreadedDOMDocument60): Self = StObject.set(x, "MSXML2.FreeThreadedDOMDocument60_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceURI(value: String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
+    inline def setNamespaceURI(value: String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaces(value: IXMLDOMSchemaCollection): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
+    inline def setNamespaces(value: IXMLDOMSchemaCollection): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextSibling(value: IXMLDOMNode): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
+    inline def setNextSibling(value: IXMLDOMNode): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeFromID(value: String => IXMLDOMNode): Self = StObject.set(x, "nodeFromID", js.Any.fromFunction1(value))
+    inline def setNodeFromID(value: String => IXMLDOMNode): Self = StObject.set(x, "nodeFromID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+    inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeType(value: DOMNodeType): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+    inline def setNodeType(value: DOMNodeType): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeTypeString(value: String): Self = StObject.set(x, "nodeTypeString", value.asInstanceOf[js.Any])
+    inline def setNodeTypeString(value: String): Self = StObject.set(x, "nodeTypeString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeTypedValue(value: js.Any): Self = StObject.set(x, "nodeTypedValue", value.asInstanceOf[js.Any])
+    inline def setNodeTypedValue(value: js.Any): Self = StObject.set(x, "nodeTypedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeValue(value: js.Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+    inline def setNodeValue(value: js.Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOndataavailable(value: js.Any): Self = StObject.set(x, "ondataavailable", value.asInstanceOf[js.Any])
+    inline def setOndataavailable(value: js.Any): Self = StObject.set(x, "ondataavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnreadystatechange(value: js.Any): Self = StObject.set(x, "onreadystatechange", value.asInstanceOf[js.Any])
+    inline def setOnreadystatechange(value: js.Any): Self = StObject.set(x, "onreadystatechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOntransformnode(value: js.Any): Self = StObject.set(x, "ontransformnode", value.asInstanceOf[js.Any])
+    inline def setOntransformnode(value: js.Any): Self = StObject.set(x, "ontransformnode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerDocument(value: IXMLDOMDocument): Self = StObject.set(x, "ownerDocument", value.asInstanceOf[js.Any])
+    inline def setOwnerDocument(value: IXMLDOMDocument): Self = StObject.set(x, "ownerDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNode(value: IXMLDOMNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+    inline def setParentNode(value: IXMLDOMNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseError(value: IXMLDOMParseError): Self = StObject.set(x, "parseError", value.asInstanceOf[js.Any])
+    inline def setParseError(value: IXMLDOMParseError): Self = StObject.set(x, "parseError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParsed(value: Boolean): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
+    inline def setParsed(value: Boolean): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveWhiteSpace(value: Boolean): Self = StObject.set(x, "preserveWhiteSpace", value.asInstanceOf[js.Any])
+    inline def setPreserveWhiteSpace(value: Boolean): Self = StObject.set(x, "preserveWhiteSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousSibling(value: IXMLDOMNode): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
+    inline def setPreviousSibling(value: IXMLDOMNode): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyState(value: Double): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
+    inline def setReadyState(value: Double): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveChild(value: IXMLDOMNode => IXMLDOMNode): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
+    inline def setRemoveChild(value: IXMLDOMNode => IXMLDOMNode): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceChild(value: (IXMLDOMNode, IXMLDOMNode) => IXMLDOMNode): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
+    inline def setReplaceChild(value: (IXMLDOMNode, IXMLDOMNode) => IXMLDOMNode): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolveExternals(value: Boolean): Self = StObject.set(x, "resolveExternals", value.asInstanceOf[js.Any])
+    inline def setResolveExternals(value: Boolean): Self = StObject.set(x, "resolveExternals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSave(value: js.Any => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+    inline def setSave(value: js.Any => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSchemas(value: js.Any): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+    inline def setSchemas(value: js.Any): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectNodes(value: String => IXMLDOMNodeList): Self = StObject.set(x, "selectNodes", js.Any.fromFunction1(value))
+    inline def setSelectNodes(value: String => IXMLDOMNodeList): Self = StObject.set(x, "selectNodes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectSingleNode(value: String => IXMLDOMNode): Self = StObject.set(x, "selectSingleNode", js.Any.fromFunction1(value))
+    inline def setSelectSingleNode(value: String => IXMLDOMNode): Self = StObject.set(x, "selectSingleNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetProperty(value: (String, js.Any) => Unit): Self = StObject.set(x, "setProperty", js.Any.fromFunction2(value))
+    inline def setSetProperty(value: (String, js.Any) => Unit): Self = StObject.set(x, "setProperty", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSpecified(value: Boolean): Self = StObject.set(x, "specified", value.asInstanceOf[js.Any])
+    inline def setSpecified(value: Boolean): Self = StObject.set(x, "specified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformNode(value: IXMLDOMNode => String): Self = StObject.set(x, "transformNode", js.Any.fromFunction1(value))
+    inline def setTransformNode(value: IXMLDOMNode => String): Self = StObject.set(x, "transformNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformNodeToObject(value: (IXMLDOMNode, js.Any) => Unit): Self = StObject.set(x, "transformNodeToObject", js.Any.fromFunction2(value))
+    inline def setTransformNodeToObject(value: (IXMLDOMNode, js.Any) => Unit): Self = StObject.set(x, "transformNodeToObject", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidate(value: () => IXMLDOMParseError): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+    inline def setValidate(value: () => IXMLDOMParseError): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValidateNode(value: IXMLDOMNode => IXMLDOMParseError): Self = StObject.set(x, "validateNode", js.Any.fromFunction1(value))
+    inline def setValidateNode(value: IXMLDOMNode => IXMLDOMParseError): Self = StObject.set(x, "validateNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateOnParse(value: Boolean): Self = StObject.set(x, "validateOnParse", value.asInstanceOf[js.Any])
+    inline def setValidateOnParse(value: Boolean): Self = StObject.set(x, "validateOnParse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXml(value: String): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
+    inline def setXml(value: String): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
   }
 }

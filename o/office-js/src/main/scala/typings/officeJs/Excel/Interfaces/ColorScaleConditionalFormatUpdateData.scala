@@ -18,19 +18,15 @@ trait ColorScaleConditionalFormatUpdateData extends StObject {
 }
 object ColorScaleConditionalFormatUpdateData {
   
-  @scala.inline
-  def apply(): ColorScaleConditionalFormatUpdateData = {
+  inline def apply(): ColorScaleConditionalFormatUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorScaleConditionalFormatUpdateData]
   }
   
-  @scala.inline
-  implicit class ColorScaleConditionalFormatUpdateDataMutableBuilder[Self <: ColorScaleConditionalFormatUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ColorScaleConditionalFormatUpdateData](x: Self) {
     
-    @scala.inline
-    def setCriteria(value: ConditionalColorScaleCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: ConditionalColorScaleCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
   }
 }

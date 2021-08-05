@@ -18,22 +18,17 @@ trait BatchUpdatePartitionRequestEntry extends StObject {
 }
 object BatchUpdatePartitionRequestEntry {
   
-  @scala.inline
-  def apply(PartitionInput: PartitionInput, PartitionValueList: BoundedPartitionValueList): BatchUpdatePartitionRequestEntry = {
+  inline def apply(PartitionInput: PartitionInput, PartitionValueList: BoundedPartitionValueList): BatchUpdatePartitionRequestEntry = {
     val __obj = js.Dynamic.literal(PartitionInput = PartitionInput.asInstanceOf[js.Any], PartitionValueList = PartitionValueList.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdatePartitionRequestEntry]
   }
   
-  @scala.inline
-  implicit class BatchUpdatePartitionRequestEntryMutableBuilder[Self <: BatchUpdatePartitionRequestEntry] (val x: Self) extends AnyVal {
+  extension [Self <: BatchUpdatePartitionRequestEntry](x: Self) {
     
-    @scala.inline
-    def setPartitionInput(value: PartitionInput): Self = StObject.set(x, "PartitionInput", value.asInstanceOf[js.Any])
+    inline def setPartitionInput(value: PartitionInput): Self = StObject.set(x, "PartitionInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionValueList(value: BoundedPartitionValueList): Self = StObject.set(x, "PartitionValueList", value.asInstanceOf[js.Any])
+    inline def setPartitionValueList(value: BoundedPartitionValueList): Self = StObject.set(x, "PartitionValueList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionValueListVarargs(value: ValueString*): Self = StObject.set(x, "PartitionValueList", js.Array(value :_*))
+    inline def setPartitionValueListVarargs(value: ValueString*): Self = StObject.set(x, "PartitionValueList", js.Array(value :_*))
   }
 }

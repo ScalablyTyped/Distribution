@@ -31,8 +31,7 @@ trait TransitionAnimation extends StObject {
 }
 object TransitionAnimation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `transition-delay`: Double,
     `transition-duration`: Double,
     `transition-property`: String,
@@ -46,19 +45,14 @@ object TransitionAnimation {
     __obj.asInstanceOf[TransitionAnimation]
   }
   
-  @scala.inline
-  implicit class TransitionAnimationMutableBuilder[Self <: TransitionAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: TransitionAnimation](x: Self) {
     
-    @scala.inline
-    def `setTransition-delay`(value: Double): Self = StObject.set(x, "transition-delay", value.asInstanceOf[js.Any])
+    inline def `setTransition-delay`(value: Double): Self = StObject.set(x, "transition-delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTransition-duration`(value: Double): Self = StObject.set(x, "transition-duration", value.asInstanceOf[js.Any])
+    inline def `setTransition-duration`(value: Double): Self = StObject.set(x, "transition-duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTransition-property`(value: String): Self = StObject.set(x, "transition-property", value.asInstanceOf[js.Any])
+    inline def `setTransition-property`(value: String): Self = StObject.set(x, "transition-property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTransition-timing-function`(value: TransitionTimingFunction): Self = StObject.set(x, "transition-timing-function", value.asInstanceOf[js.Any])
+    inline def `setTransition-timing-function`(value: TransitionTimingFunction): Self = StObject.set(x, "transition-timing-function", value.asInstanceOf[js.Any])
   }
 }

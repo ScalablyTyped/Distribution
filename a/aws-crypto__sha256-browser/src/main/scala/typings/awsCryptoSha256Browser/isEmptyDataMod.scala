@@ -11,6 +11,5 @@ object isEmptyDataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isEmptyData(data: SourceData): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyData")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEmptyData(data: SourceData): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyData")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

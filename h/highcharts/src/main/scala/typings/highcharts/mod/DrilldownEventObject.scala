@@ -52,53 +52,38 @@ trait DrilldownEventObject extends StObject {
 }
 object DrilldownEventObject {
   
-  @scala.inline
-  def apply(point: Point, preventDefault: js.Function, target: Chart_): DrilldownEventObject = {
+  inline def apply(point: Point, preventDefault: js.Function, target: Chart_): DrilldownEventObject = {
     val __obj = js.Dynamic.literal(point = point.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("drilldown")
     __obj.asInstanceOf[DrilldownEventObject]
   }
   
-  @scala.inline
-  implicit class DrilldownEventObjectMutableBuilder[Self <: DrilldownEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: DrilldownEventObject](x: Self) {
     
-    @scala.inline
-    def setCategory(value: Double): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: Double): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+    inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     
-    @scala.inline
-    def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(value: Boolean | js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: Boolean | js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    @scala.inline
-    def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesOptions(value: SeriesOptionsType): Self = StObject.set(x, "seriesOptions", value.asInstanceOf[js.Any])
+    inline def setSeriesOptions(value: SeriesOptionsType): Self = StObject.set(x, "seriesOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesOptionsUndefined: Self = StObject.set(x, "seriesOptions", js.undefined)
+    inline def setSeriesOptionsUndefined: Self = StObject.set(x, "seriesOptions", js.undefined)
     
-    @scala.inline
-    def setTarget(value: Chart_): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Chart_): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: drilldown): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: drilldown): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

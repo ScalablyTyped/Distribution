@@ -41,50 +41,36 @@ object contrastCheckerMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+        inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+        inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
         
-        @scala.inline
-        def setFallbackBackgroundColor(value: String): Self = StObject.set(x, "fallbackBackgroundColor", value.asInstanceOf[js.Any])
+        inline def setFallbackBackgroundColor(value: String): Self = StObject.set(x, "fallbackBackgroundColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFallbackBackgroundColorUndefined: Self = StObject.set(x, "fallbackBackgroundColor", js.undefined)
+        inline def setFallbackBackgroundColorUndefined: Self = StObject.set(x, "fallbackBackgroundColor", js.undefined)
         
-        @scala.inline
-        def setFallbackTextColor(value: String): Self = StObject.set(x, "fallbackTextColor", value.asInstanceOf[js.Any])
+        inline def setFallbackTextColor(value: String): Self = StObject.set(x, "fallbackTextColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFallbackTextColorUndefined: Self = StObject.set(x, "fallbackTextColor", js.undefined)
+        inline def setFallbackTextColorUndefined: Self = StObject.set(x, "fallbackTextColor", js.undefined)
         
-        @scala.inline
-        def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+        inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+        inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
         
-        @scala.inline
-        def setIsLargeText(value: Boolean): Self = StObject.set(x, "isLargeText", value.asInstanceOf[js.Any])
+        inline def setIsLargeText(value: Boolean): Self = StObject.set(x, "isLargeText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsLargeTextUndefined: Self = StObject.set(x, "isLargeText", js.undefined)
+        inline def setIsLargeTextUndefined: Self = StObject.set(x, "isLargeText", js.undefined)
         
-        @scala.inline
-        def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+        inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+        inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
       }
     }
   }

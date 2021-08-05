@@ -14,22 +14,17 @@ trait ReturnTypeGetMatchedStylesForNodeResponse extends StObject {
 }
 object ReturnTypeGetMatchedStylesForNodeResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[GetMatchedStylesForNodeRequest], returnType: GetMatchedStylesForNodeResponse): ReturnTypeGetMatchedStylesForNodeResponse = {
+  inline def apply(paramsType: js.Array[GetMatchedStylesForNodeRequest], returnType: GetMatchedStylesForNodeResponse): ReturnTypeGetMatchedStylesForNodeResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeGetMatchedStylesForNodeResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetMatchedStylesForNodeResponseMutableBuilder[Self <: ReturnTypeGetMatchedStylesForNodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetMatchedStylesForNodeResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[GetMatchedStylesForNodeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[GetMatchedStylesForNodeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: GetMatchedStylesForNodeRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetMatchedStylesForNodeRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetMatchedStylesForNodeResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetMatchedStylesForNodeResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

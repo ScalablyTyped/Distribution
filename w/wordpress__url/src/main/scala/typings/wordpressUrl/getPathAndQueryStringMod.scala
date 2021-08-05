@@ -10,6 +10,5 @@ object getPathAndQueryStringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPathAndQueryString(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathAndQueryString")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getPathAndQueryString(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathAndQueryString")(url.asInstanceOf[js.Any]).asInstanceOf[String]
 }

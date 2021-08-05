@@ -15,16 +15,13 @@ trait Settings_
 }
 object Settings_ {
   
-  @scala.inline
-  def apply(public: StringDictionary[js.Any]): Settings_ = {
+  inline def apply(public: StringDictionary[js.Any]): Settings_ = {
     val __obj = js.Dynamic.literal(public = public.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings_]
   }
   
-  @scala.inline
-  implicit class Settings_MutableBuilder[Self <: Settings_] (val x: Self) extends AnyVal {
+  extension [Self <: Settings_](x: Self) {
     
-    @scala.inline
-    def setPublic(value: StringDictionary[js.Any]): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+    inline def setPublic(value: StringDictionary[js.Any]): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
   }
 }

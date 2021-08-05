@@ -13,16 +13,13 @@ trait ICountResult
 }
 object ICountResult {
   
-  @scala.inline
-  def apply(errMsg: String, total: Double): ICountResult = {
+  inline def apply(errMsg: String, total: Double): ICountResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICountResult]
   }
   
-  @scala.inline
-  implicit class ICountResultMutableBuilder[Self <: ICountResult] (val x: Self) extends AnyVal {
+  extension [Self <: ICountResult](x: Self) {
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

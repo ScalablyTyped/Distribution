@@ -21,6 +21,5 @@ object ValueConverterResource {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convention(name: String): ValueConverterResource = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")(name.asInstanceOf[js.Any]).asInstanceOf[ValueConverterResource]
+  inline def convention(name: String): ValueConverterResource = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")(name.asInstanceOf[js.Any]).asInstanceOf[ValueConverterResource]
 }

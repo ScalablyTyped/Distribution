@@ -124,163 +124,111 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ProcessRequest {
   
-  @scala.inline
-  def apply(): ProcessRequest = {
+  inline def apply(): ProcessRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProcessRequest]
   }
   
-  @scala.inline
-  implicit class ProcessRequestMutableBuilder[Self <: ProcessRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessRequest](x: Self) {
     
-    @scala.inline
-    def setAction(value: code): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: code): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setCreated(value: dateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: dateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    @scala.inline
-    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
-    @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
+    inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
-    @scala.inline
-    def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
     
-    @scala.inline
-    def setItem(value: js.Array[ProcessRequestItem]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Array[ProcessRequestItem]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setItemVarargs(value: ProcessRequestItem*): Self = StObject.set(x, "item", js.Array(value :_*))
+    inline def setItemVarargs(value: ProcessRequestItem*): Self = StObject.set(x, "item", js.Array(value :_*))
     
-    @scala.inline
-    def setNullify(value: Boolean): Self = StObject.set(x, "nullify", value.asInstanceOf[js.Any])
+    inline def setNullify(value: Boolean): Self = StObject.set(x, "nullify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullifyUndefined: Self = StObject.set(x, "nullify", js.undefined)
+    inline def setNullifyUndefined: Self = StObject.set(x, "nullify", js.undefined)
     
-    @scala.inline
-    def setOrganization(value: Reference): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: Reference): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
+    inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setProvider(value: Reference): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: Reference): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    @scala.inline
-    def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
+    inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
     
-    @scala.inline
-    def setRequest(value: Reference): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Reference): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setResponse(value: Reference): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Reference): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
-    @scala.inline
-    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTarget(value: Reference): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Reference): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def set_action(value: Element): Self = StObject.set(x, "_action", value.asInstanceOf[js.Any])
+    inline def set_action(value: Element): Self = StObject.set(x, "_action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_actionUndefined: Self = StObject.set(x, "_action", js.undefined)
+    inline def set_actionUndefined: Self = StObject.set(x, "_action", js.undefined)
     
-    @scala.inline
-    def set_created(value: Element): Self = StObject.set(x, "_created", value.asInstanceOf[js.Any])
+    inline def set_created(value: Element): Self = StObject.set(x, "_created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_createdUndefined: Self = StObject.set(x, "_created", js.undefined)
+    inline def set_createdUndefined: Self = StObject.set(x, "_created", js.undefined)
     
-    @scala.inline
-    def set_exclude(value: js.Array[Element]): Self = StObject.set(x, "_exclude", value.asInstanceOf[js.Any])
+    inline def set_exclude(value: js.Array[Element]): Self = StObject.set(x, "_exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_excludeUndefined: Self = StObject.set(x, "_exclude", js.undefined)
+    inline def set_excludeUndefined: Self = StObject.set(x, "_exclude", js.undefined)
     
-    @scala.inline
-    def set_excludeVarargs(value: Element*): Self = StObject.set(x, "_exclude", js.Array(value :_*))
+    inline def set_excludeVarargs(value: Element*): Self = StObject.set(x, "_exclude", js.Array(value :_*))
     
-    @scala.inline
-    def set_include(value: js.Array[Element]): Self = StObject.set(x, "_include", value.asInstanceOf[js.Any])
+    inline def set_include(value: js.Array[Element]): Self = StObject.set(x, "_include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_includeUndefined: Self = StObject.set(x, "_include", js.undefined)
+    inline def set_includeUndefined: Self = StObject.set(x, "_include", js.undefined)
     
-    @scala.inline
-    def set_includeVarargs(value: Element*): Self = StObject.set(x, "_include", js.Array(value :_*))
+    inline def set_includeVarargs(value: Element*): Self = StObject.set(x, "_include", js.Array(value :_*))
     
-    @scala.inline
-    def set_nullify(value: Element): Self = StObject.set(x, "_nullify", value.asInstanceOf[js.Any])
+    inline def set_nullify(value: Element): Self = StObject.set(x, "_nullify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_nullifyUndefined: Self = StObject.set(x, "_nullify", js.undefined)
+    inline def set_nullifyUndefined: Self = StObject.set(x, "_nullify", js.undefined)
     
-    @scala.inline
-    def set_reference(value: Element): Self = StObject.set(x, "_reference", value.asInstanceOf[js.Any])
+    inline def set_reference(value: Element): Self = StObject.set(x, "_reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_referenceUndefined: Self = StObject.set(x, "_reference", js.undefined)
+    inline def set_referenceUndefined: Self = StObject.set(x, "_reference", js.undefined)
     
-    @scala.inline
-    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
+    inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
+    inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

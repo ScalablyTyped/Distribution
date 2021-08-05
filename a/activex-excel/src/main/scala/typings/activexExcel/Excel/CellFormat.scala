@@ -34,7 +34,7 @@ trait CellFormat extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.CellFormat_typekey")
+  /* private */ @JSName("Excel.CellFormat_typekey")
   var ExcelDotCellFormat_typekey: CellFormat
   
   var Font: typings.activexExcel.Excel.Font
@@ -67,8 +67,7 @@ trait CellFormat extends StObject {
 }
 object CellFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddIndent: Boolean,
     Application: Application,
     Borders: Borders,
@@ -89,87 +88,60 @@ object CellFormat {
     __obj.asInstanceOf[CellFormat]
   }
   
-  @scala.inline
-  implicit class CellFormatMutableBuilder[Self <: CellFormat] (val x: Self) extends AnyVal {
+  extension [Self <: CellFormat](x: Self) {
     
-    @scala.inline
-    def setAddIndent(value: Boolean): Self = StObject.set(x, "AddIndent", value.asInstanceOf[js.Any])
+    inline def setAddIndent(value: Boolean): Self = StObject.set(x, "AddIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
+    inline def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotCellFormat_typekey(value: CellFormat): Self = StObject.set(x, "Excel.CellFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotCellFormat_typekey(value: CellFormat): Self = StObject.set(x, "Excel.CellFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaHidden(value: Boolean): Self = StObject.set(x, "FormulaHidden", value.asInstanceOf[js.Any])
+    inline def setFormulaHidden(value: Boolean): Self = StObject.set(x, "FormulaHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaHiddenNull: Self = StObject.set(x, "FormulaHidden", null)
+    inline def setFormulaHiddenNull: Self = StObject.set(x, "FormulaHidden", null)
     
-    @scala.inline
-    def setHorizontalAlignment(value: HorizontalAlignments): Self = StObject.set(x, "HorizontalAlignment", value.asInstanceOf[js.Any])
+    inline def setHorizontalAlignment(value: HorizontalAlignments): Self = StObject.set(x, "HorizontalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentLevel(
+    inline def setIndentLevel(
       value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | `14` | `15`
     ): Self = StObject.set(x, "IndentLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
+    inline def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockedNull: Self = StObject.set(x, "Locked", null)
+    inline def setLockedNull: Self = StObject.set(x, "Locked", null)
     
-    @scala.inline
-    def setMergeCells(value: Boolean): Self = StObject.set(x, "MergeCells", value.asInstanceOf[js.Any])
+    inline def setMergeCells(value: Boolean): Self = StObject.set(x, "MergeCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormat(value: String): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: String): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatLocal(value: String): Self = StObject.set(x, "NumberFormatLocal", value.asInstanceOf[js.Any])
+    inline def setNumberFormatLocal(value: String): Self = StObject.set(x, "NumberFormatLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatLocalNull: Self = StObject.set(x, "NumberFormatLocal", null)
+    inline def setNumberFormatLocalNull: Self = StObject.set(x, "NumberFormatLocal", null)
     
-    @scala.inline
-    def setNumberFormatNull: Self = StObject.set(x, "NumberFormat", null)
+    inline def setNumberFormatNull: Self = StObject.set(x, "NumberFormat", null)
     
-    @scala.inline
-    def setOrientation(value: Double | XlOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: Double | XlOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShrinkToFit(value: Boolean): Self = StObject.set(x, "ShrinkToFit", value.asInstanceOf[js.Any])
+    inline def setShrinkToFit(value: Boolean): Self = StObject.set(x, "ShrinkToFit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShrinkToFitNull: Self = StObject.set(x, "ShrinkToFit", null)
+    inline def setShrinkToFitNull: Self = StObject.set(x, "ShrinkToFit", null)
     
-    @scala.inline
-    def setVerticalAlignment(value: VerticalAlignments): Self = StObject.set(x, "VerticalAlignment", value.asInstanceOf[js.Any])
+    inline def setVerticalAlignment(value: VerticalAlignments): Self = StObject.set(x, "VerticalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapText(value: Boolean): Self = StObject.set(x, "WrapText", value.asInstanceOf[js.Any])
+    inline def setWrapText(value: Boolean): Self = StObject.set(x, "WrapText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapTextNull: Self = StObject.set(x, "WrapText", null)
+    inline def setWrapTextNull: Self = StObject.set(x, "WrapText", null)
   }
 }

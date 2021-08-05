@@ -19,25 +19,19 @@ trait INavigation
 }
 object INavigation {
   
-  @scala.inline
-  def apply(): INavigation = {
+  inline def apply(): INavigation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INavigation]
   }
   
-  @scala.inline
-  implicit class INavigationMutableBuilder[Self <: INavigation] (val x: Self) extends AnyVal {
+  extension [Self <: INavigation](x: Self) {
     
-    @scala.inline
-    def setRestoreZoom(value: () => Unit): Self = StObject.set(x, "restoreZoom", js.Any.fromFunction0(value))
+    inline def setRestoreZoom(value: () => Unit): Self = StObject.set(x, "restoreZoom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRestoreZoomUndefined: Self = StObject.set(x, "restoreZoom", js.undefined)
+    inline def setRestoreZoomUndefined: Self = StObject.set(x, "restoreZoom", js.undefined)
     
-    @scala.inline
-    def setSetZoom(value: /* zoomConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setZoom", js.Any.fromFunction1(value))
+    inline def setSetZoom(value: /* zoomConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setZoom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetZoomUndefined: Self = StObject.set(x, "setZoom", js.undefined)
+    inline def setSetZoomUndefined: Self = StObject.set(x, "setZoom", js.undefined)
   }
 }

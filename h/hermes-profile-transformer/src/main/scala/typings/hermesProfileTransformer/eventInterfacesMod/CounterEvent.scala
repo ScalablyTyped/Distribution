@@ -15,16 +15,13 @@ trait CounterEvent
 }
 object CounterEvent {
   
-  @scala.inline
-  def apply(ph: COUNTER_EVENTS): CounterEvent = {
+  inline def apply(ph: COUNTER_EVENTS): CounterEvent = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[CounterEvent]
   }
   
-  @scala.inline
-  implicit class CounterEventMutableBuilder[Self <: CounterEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CounterEvent](x: Self) {
     
-    @scala.inline
-    def setPh(value: COUNTER_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
+    inline def setPh(value: COUNTER_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }
 }

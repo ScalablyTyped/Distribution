@@ -33,52 +33,37 @@ trait DocumentStatus extends StObject {
 }
 object DocumentStatus {
   
-  @scala.inline
-  def apply(document_id: String, notices: js.Array[Notice], status: String, status_description: String): DocumentStatus = {
+  inline def apply(document_id: String, notices: js.Array[Notice], status: String, status_description: String): DocumentStatus = {
     val __obj = js.Dynamic.literal(document_id = document_id.asInstanceOf[js.Any], notices = notices.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], status_description = status_description.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentStatus]
   }
   
-  @scala.inline
-  implicit class DocumentStatusMutableBuilder[Self <: DocumentStatus] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentStatus](x: Self) {
     
-    @scala.inline
-    def setConfiguration_id(value: String): Self = StObject.set(x, "configuration_id", value.asInstanceOf[js.Any])
+    inline def setConfiguration_id(value: String): Self = StObject.set(x, "configuration_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfiguration_idUndefined: Self = StObject.set(x, "configuration_id", js.undefined)
+    inline def setConfiguration_idUndefined: Self = StObject.set(x, "configuration_id", js.undefined)
     
-    @scala.inline
-    def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
+    inline def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile_type(value: String): Self = StObject.set(x, "file_type", value.asInstanceOf[js.Any])
+    inline def setFile_type(value: String): Self = StObject.set(x, "file_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile_typeUndefined: Self = StObject.set(x, "file_type", js.undefined)
+    inline def setFile_typeUndefined: Self = StObject.set(x, "file_type", js.undefined)
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setNotices(value: js.Array[Notice]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
+    inline def setNotices(value: js.Array[Notice]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoticesVarargs(value: Notice*): Self = StObject.set(x, "notices", js.Array(value :_*))
+    inline def setNoticesVarargs(value: Notice*): Self = StObject.set(x, "notices", js.Array(value :_*))
     
-    @scala.inline
-    def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
+    inline def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha1Undefined: Self = StObject.set(x, "sha1", js.undefined)
+    inline def setSha1Undefined: Self = StObject.set(x, "sha1", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus_description(value: String): Self = StObject.set(x, "status_description", value.asInstanceOf[js.Any])
+    inline def setStatus_description(value: String): Self = StObject.set(x, "status_description", value.asInstanceOf[js.Any])
   }
 }

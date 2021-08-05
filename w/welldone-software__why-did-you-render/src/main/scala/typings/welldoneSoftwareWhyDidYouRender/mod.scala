@@ -11,10 +11,8 @@ object mod {
   
   object default {
     
-    @scala.inline
-    def apply(react: TypeofReact): TypeofReact = ^.asInstanceOf[js.Dynamic].apply(react.asInstanceOf[js.Any]).asInstanceOf[TypeofReact]
-    @scala.inline
-    def apply(react: TypeofReact, options: WhyDidYouRenderOptions): TypeofReact = (^.asInstanceOf[js.Dynamic].apply(react.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TypeofReact]
+    inline def apply(react: TypeofReact): TypeofReact = ^.asInstanceOf[js.Dynamic].apply(react.asInstanceOf[js.Any]).asInstanceOf[TypeofReact]
+    inline def apply(react: TypeofReact, options: WhyDidYouRenderOptions): TypeofReact = (^.asInstanceOf[js.Dynamic].apply(react.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TypeofReact]
     
     @JSImport("@welldone-software/why-did-you-render", JSImport.Default)
     @js.native
@@ -41,20 +39,16 @@ object mod {
     }
     object ExoticComponent {
       
-      @scala.inline
-      def apply[P](): ExoticComponent[P] = {
+      inline def apply[P](): ExoticComponent[P] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ExoticComponent[P]]
       }
       
-      @scala.inline
-      implicit class ExoticComponentMutableBuilder[Self <: ExoticComponent[?], P] (val x: Self & ExoticComponent[P]) extends AnyVal {
+      extension [Self <: ExoticComponent[?], P](x: Self & ExoticComponent[P]) {
         
-        @scala.inline
-        def setWhyDidYouRender(value: WhyDidYouRenderComponentMember): Self = StObject.set(x, "whyDidYouRender", value.asInstanceOf[js.Any])
+        inline def setWhyDidYouRender(value: WhyDidYouRenderComponentMember): Self = StObject.set(x, "whyDidYouRender", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWhyDidYouRenderUndefined: Self = StObject.set(x, "whyDidYouRender", js.undefined)
+        inline def setWhyDidYouRenderUndefined: Self = StObject.set(x, "whyDidYouRender", js.undefined)
       }
     }
     
@@ -64,20 +58,16 @@ object mod {
     }
     object FunctionComponent {
       
-      @scala.inline
-      def apply[P](): FunctionComponent[P] = {
+      inline def apply[P](): FunctionComponent[P] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[FunctionComponent[P]]
       }
       
-      @scala.inline
-      implicit class FunctionComponentMutableBuilder[Self <: FunctionComponent[?], P] (val x: Self & FunctionComponent[P]) extends AnyVal {
+      extension [Self <: FunctionComponent[?], P](x: Self & FunctionComponent[P]) {
         
-        @scala.inline
-        def setWhyDidYouRender(value: WhyDidYouRenderComponentMember): Self = StObject.set(x, "whyDidYouRender", value.asInstanceOf[js.Any])
+        inline def setWhyDidYouRender(value: WhyDidYouRenderComponentMember): Self = StObject.set(x, "whyDidYouRender", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWhyDidYouRenderUndefined: Self = StObject.set(x, "whyDidYouRender", js.undefined)
+        inline def setWhyDidYouRenderUndefined: Self = StObject.set(x, "whyDidYouRender", js.undefined)
       }
     }
   }
@@ -96,26 +86,20 @@ object mod {
   }
   object HookDifference {
     
-    @scala.inline
-    def apply(diffType: String, nextValue: js.Any, pathString: String, prevValue: js.Any): HookDifference = {
+    inline def apply(diffType: String, nextValue: js.Any, pathString: String, prevValue: js.Any): HookDifference = {
       val __obj = js.Dynamic.literal(diffType = diffType.asInstanceOf[js.Any], nextValue = nextValue.asInstanceOf[js.Any], pathString = pathString.asInstanceOf[js.Any], prevValue = prevValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[HookDifference]
     }
     
-    @scala.inline
-    implicit class HookDifferenceMutableBuilder[Self <: HookDifference] (val x: Self) extends AnyVal {
+    extension [Self <: HookDifference](x: Self) {
       
-      @scala.inline
-      def setDiffType(value: String): Self = StObject.set(x, "diffType", value.asInstanceOf[js.Any])
+      inline def setDiffType(value: String): Self = StObject.set(x, "diffType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextValue(value: js.Any): Self = StObject.set(x, "nextValue", value.asInstanceOf[js.Any])
+      inline def setNextValue(value: js.Any): Self = StObject.set(x, "nextValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathString(value: String): Self = StObject.set(x, "pathString", value.asInstanceOf[js.Any])
+      inline def setPathString(value: String): Self = StObject.set(x, "pathString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevValue(value: js.Any): Self = StObject.set(x, "prevValue", value.asInstanceOf[js.Any])
+      inline def setPrevValue(value: js.Any): Self = StObject.set(x, "prevValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,26 +115,20 @@ object mod {
   }
   object ReasonForUpdate {
     
-    @scala.inline
-    def apply(hookDifferences: js.Array[HookDifference], propsDifferences: Boolean, stateDifferences: Boolean): ReasonForUpdate = {
+    inline def apply(hookDifferences: js.Array[HookDifference], propsDifferences: Boolean, stateDifferences: Boolean): ReasonForUpdate = {
       val __obj = js.Dynamic.literal(hookDifferences = hookDifferences.asInstanceOf[js.Any], propsDifferences = propsDifferences.asInstanceOf[js.Any], stateDifferences = stateDifferences.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReasonForUpdate]
     }
     
-    @scala.inline
-    implicit class ReasonForUpdateMutableBuilder[Self <: ReasonForUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: ReasonForUpdate](x: Self) {
       
-      @scala.inline
-      def setHookDifferences(value: js.Array[HookDifference]): Self = StObject.set(x, "hookDifferences", value.asInstanceOf[js.Any])
+      inline def setHookDifferences(value: js.Array[HookDifference]): Self = StObject.set(x, "hookDifferences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHookDifferencesVarargs(value: HookDifference*): Self = StObject.set(x, "hookDifferences", js.Array(value :_*))
+      inline def setHookDifferencesVarargs(value: HookDifference*): Self = StObject.set(x, "hookDifferences", js.Array(value :_*))
       
-      @scala.inline
-      def setPropsDifferences(value: Boolean): Self = StObject.set(x, "propsDifferences", value.asInstanceOf[js.Any])
+      inline def setPropsDifferences(value: Boolean): Self = StObject.set(x, "propsDifferences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateDifferences(value: Boolean): Self = StObject.set(x, "stateDifferences", value.asInstanceOf[js.Any])
+      inline def setStateDifferences(value: Boolean): Self = StObject.set(x, "stateDifferences", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,8 +158,7 @@ object mod {
   }
   object UpdateInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Component: Component[js.Object, js.Object, js.Any],
       displayName: String,
       nextHook: js.Any,
@@ -197,44 +174,31 @@ object mod {
       __obj.asInstanceOf[UpdateInfo]
     }
     
-    @scala.inline
-    implicit class UpdateInfoMutableBuilder[Self <: UpdateInfo] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateInfo](x: Self) {
       
-      @scala.inline
-      def setComponent(value: Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHookName(value: String): Self = StObject.set(x, "hookName", value.asInstanceOf[js.Any])
+      inline def setHookName(value: String): Self = StObject.set(x, "hookName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHookNameUndefined: Self = StObject.set(x, "hookName", js.undefined)
+      inline def setHookNameUndefined: Self = StObject.set(x, "hookName", js.undefined)
       
-      @scala.inline
-      def setNextHook(value: js.Any): Self = StObject.set(x, "nextHook", value.asInstanceOf[js.Any])
+      inline def setNextHook(value: js.Any): Self = StObject.set(x, "nextHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextProps(value: js.Any): Self = StObject.set(x, "nextProps", value.asInstanceOf[js.Any])
+      inline def setNextProps(value: js.Any): Self = StObject.set(x, "nextProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextState(value: js.Any): Self = StObject.set(x, "nextState", value.asInstanceOf[js.Any])
+      inline def setNextState(value: js.Any): Self = StObject.set(x, "nextState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: WhyDidYouRenderOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: WhyDidYouRenderOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevHook(value: js.Any): Self = StObject.set(x, "prevHook", value.asInstanceOf[js.Any])
+      inline def setPrevHook(value: js.Any): Self = StObject.set(x, "prevHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevProps(value: js.Any): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
+      inline def setPrevProps(value: js.Any): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevState(value: js.Any): Self = StObject.set(x, "prevState", value.asInstanceOf[js.Any])
+      inline def setPrevState(value: js.Any): Self = StObject.set(x, "prevState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: ReasonForUpdate): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: ReasonForUpdate): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,113 +238,78 @@ object mod {
   }
   object WhyDidYouRenderOptions {
     
-    @scala.inline
-    def apply(): WhyDidYouRenderOptions = {
+    inline def apply(): WhyDidYouRenderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WhyDidYouRenderOptions]
     }
     
-    @scala.inline
-    implicit class WhyDidYouRenderOptionsMutableBuilder[Self <: WhyDidYouRenderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WhyDidYouRenderOptions](x: Self) {
       
-      @scala.inline
-      def setCollapseGroups(value: Boolean): Self = StObject.set(x, "collapseGroups", value.asInstanceOf[js.Any])
+      inline def setCollapseGroups(value: Boolean): Self = StObject.set(x, "collapseGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseGroupsUndefined: Self = StObject.set(x, "collapseGroups", js.undefined)
+      inline def setCollapseGroupsUndefined: Self = StObject.set(x, "collapseGroups", js.undefined)
       
-      @scala.inline
-      def setCustomName(value: String): Self = StObject.set(x, "customName", value.asInstanceOf[js.Any])
+      inline def setCustomName(value: String): Self = StObject.set(x, "customName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomNameUndefined: Self = StObject.set(x, "customName", js.undefined)
+      inline def setCustomNameUndefined: Self = StObject.set(x, "customName", js.undefined)
       
-      @scala.inline
-      def setDiffNameColor(value: String): Self = StObject.set(x, "diffNameColor", value.asInstanceOf[js.Any])
+      inline def setDiffNameColor(value: String): Self = StObject.set(x, "diffNameColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiffNameColorUndefined: Self = StObject.set(x, "diffNameColor", js.undefined)
+      inline def setDiffNameColorUndefined: Self = StObject.set(x, "diffNameColor", js.undefined)
       
-      @scala.inline
-      def setDiffPathColor(value: String): Self = StObject.set(x, "diffPathColor", value.asInstanceOf[js.Any])
+      inline def setDiffPathColor(value: String): Self = StObject.set(x, "diffPathColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiffPathColorUndefined: Self = StObject.set(x, "diffPathColor", js.undefined)
+      inline def setDiffPathColorUndefined: Self = StObject.set(x, "diffPathColor", js.undefined)
       
-      @scala.inline
-      def setExclude(value: js.Array[RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: RegExp*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: RegExp*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setHotReloadBufferMs(value: Double): Self = StObject.set(x, "hotReloadBufferMs", value.asInstanceOf[js.Any])
+      inline def setHotReloadBufferMs(value: Double): Self = StObject.set(x, "hotReloadBufferMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHotReloadBufferMsUndefined: Self = StObject.set(x, "hotReloadBufferMs", js.undefined)
+      inline def setHotReloadBufferMsUndefined: Self = StObject.set(x, "hotReloadBufferMs", js.undefined)
       
-      @scala.inline
-      def setInclude(value: js.Array[RegExp]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.Array[RegExp]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: RegExp*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: RegExp*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setLogOnDifferentValues(value: Boolean): Self = StObject.set(x, "logOnDifferentValues", value.asInstanceOf[js.Any])
+      inline def setLogOnDifferentValues(value: Boolean): Self = StObject.set(x, "logOnDifferentValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogOnDifferentValuesUndefined: Self = StObject.set(x, "logOnDifferentValues", js.undefined)
+      inline def setLogOnDifferentValuesUndefined: Self = StObject.set(x, "logOnDifferentValues", js.undefined)
       
-      @scala.inline
-      def setLogOwnerReasons(value: Boolean): Self = StObject.set(x, "logOwnerReasons", value.asInstanceOf[js.Any])
+      inline def setLogOwnerReasons(value: Boolean): Self = StObject.set(x, "logOwnerReasons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogOwnerReasonsUndefined: Self = StObject.set(x, "logOwnerReasons", js.undefined)
+      inline def setLogOwnerReasonsUndefined: Self = StObject.set(x, "logOwnerReasons", js.undefined)
       
-      @scala.inline
-      def setNotifier(value: /* options */ UpdateInfo => Unit): Self = StObject.set(x, "notifier", js.Any.fromFunction1(value))
+      inline def setNotifier(value: /* options */ UpdateInfo => Unit): Self = StObject.set(x, "notifier", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifierUndefined: Self = StObject.set(x, "notifier", js.undefined)
+      inline def setNotifierUndefined: Self = StObject.set(x, "notifier", js.undefined)
       
-      @scala.inline
-      def setOnlyLogs(value: Boolean): Self = StObject.set(x, "onlyLogs", value.asInstanceOf[js.Any])
+      inline def setOnlyLogs(value: Boolean): Self = StObject.set(x, "onlyLogs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyLogsUndefined: Self = StObject.set(x, "onlyLogs", js.undefined)
+      inline def setOnlyLogsUndefined: Self = StObject.set(x, "onlyLogs", js.undefined)
       
-      @scala.inline
-      def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
+      inline def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
+      inline def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
       
-      @scala.inline
-      def setTrackAllPureComponents(value: Boolean): Self = StObject.set(x, "trackAllPureComponents", value.asInstanceOf[js.Any])
+      inline def setTrackAllPureComponents(value: Boolean): Self = StObject.set(x, "trackAllPureComponents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackAllPureComponentsUndefined: Self = StObject.set(x, "trackAllPureComponents", js.undefined)
+      inline def setTrackAllPureComponentsUndefined: Self = StObject.set(x, "trackAllPureComponents", js.undefined)
       
-      @scala.inline
-      def setTrackExtraHooks(value: js.Array[ExtraHookToTrack]): Self = StObject.set(x, "trackExtraHooks", value.asInstanceOf[js.Any])
+      inline def setTrackExtraHooks(value: js.Array[ExtraHookToTrack]): Self = StObject.set(x, "trackExtraHooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackExtraHooksUndefined: Self = StObject.set(x, "trackExtraHooks", js.undefined)
+      inline def setTrackExtraHooksUndefined: Self = StObject.set(x, "trackExtraHooks", js.undefined)
       
-      @scala.inline
-      def setTrackExtraHooksVarargs(value: ExtraHookToTrack*): Self = StObject.set(x, "trackExtraHooks", js.Array(value :_*))
+      inline def setTrackExtraHooksVarargs(value: ExtraHookToTrack*): Self = StObject.set(x, "trackExtraHooks", js.Array(value :_*))
       
-      @scala.inline
-      def setTrackHooks(value: Boolean): Self = StObject.set(x, "trackHooks", value.asInstanceOf[js.Any])
+      inline def setTrackHooks(value: Boolean): Self = StObject.set(x, "trackHooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackHooksUndefined: Self = StObject.set(x, "trackHooks", js.undefined)
+      inline def setTrackHooksUndefined: Self = StObject.set(x, "trackHooks", js.undefined)
     }
   }
 }

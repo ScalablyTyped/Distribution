@@ -13,16 +13,13 @@ trait StorageLensAwsOrg extends StObject {
 }
 object StorageLensAwsOrg {
   
-  @scala.inline
-  def apply(Arn: AwsOrgArn): StorageLensAwsOrg = {
+  inline def apply(Arn: AwsOrgArn): StorageLensAwsOrg = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageLensAwsOrg]
   }
   
-  @scala.inline
-  implicit class StorageLensAwsOrgMutableBuilder[Self <: StorageLensAwsOrg] (val x: Self) extends AnyVal {
+  extension [Self <: StorageLensAwsOrg](x: Self) {
     
-    @scala.inline
-    def setArn(value: AwsOrgArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AwsOrgArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
   }
 }

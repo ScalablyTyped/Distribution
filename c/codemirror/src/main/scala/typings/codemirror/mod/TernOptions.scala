@@ -93,97 +93,69 @@ trait TernOptions extends StObject {
 }
 object TernOptions {
   
-  @scala.inline
-  def apply(): TernOptions = {
+  inline def apply(): TernOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TernOptions]
   }
   
-  @scala.inline
-  implicit class TernOptionsMutableBuilder[Self <: TernOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TernOptions](x: Self) {
     
-    @scala.inline
-    def setCompletionTip(value: /* data */ CompletionsQueryResult => String | HTMLElement | Null): Self = StObject.set(x, "completionTip", js.Any.fromFunction1(value))
+    inline def setCompletionTip(value: /* data */ CompletionsQueryResult => String | HTMLElement | Null): Self = StObject.set(x, "completionTip", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompletionTipUndefined: Self = StObject.set(x, "completionTip", js.undefined)
+    inline def setCompletionTipUndefined: Self = StObject.set(x, "completionTip", js.undefined)
     
-    @scala.inline
-    def setDefs(value: js.Array[Def]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
+    inline def setDefs(value: js.Array[Def]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefsUndefined: Self = StObject.set(x, "defs", js.undefined)
+    inline def setDefsUndefined: Self = StObject.set(x, "defs", js.undefined)
     
-    @scala.inline
-    def setDefsVarargs(value: Def*): Self = StObject.set(x, "defs", js.Array(value :_*))
+    inline def setDefsVarargs(value: Def*): Self = StObject.set(x, "defs", js.Array(value :_*))
     
-    @scala.inline
-    def setFileFilter(value: (/* value */ String, /* docName */ String, /* doc */ Doc) => String): Self = StObject.set(x, "fileFilter", js.Any.fromFunction3(value))
+    inline def setFileFilter(value: (/* value */ String, /* docName */ String, /* doc */ Doc) => String): Self = StObject.set(x, "fileFilter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFileFilterUndefined: Self = StObject.set(x, "fileFilter", js.undefined)
+    inline def setFileFilterUndefined: Self = StObject.set(x, "fileFilter", js.undefined)
     
-    @scala.inline
-    def setGetFile(value: (/* name */ String, /* callback */ js.Function1[/* doc */ Doc | Null, js.Any]) => js.Any): Self = StObject.set(x, "getFile", js.Any.fromFunction2(value))
+    inline def setGetFile(value: (/* name */ String, /* callback */ js.Function1[/* doc */ Doc | Null, js.Any]) => js.Any): Self = StObject.set(x, "getFile", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetFileUndefined: Self = StObject.set(x, "getFile", js.undefined)
+    inline def setGetFileUndefined: Self = StObject.set(x, "getFile", js.undefined)
     
-    @scala.inline
-    def setPlugins(
+    inline def setPlugins(
       value: /* import warning: importer.ImportType#apply Failed type conversion: tern.tern/lib/tern.ConstructorOptions['plugins'] */ js.Any
     ): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    @scala.inline
-    def setResponseFilter(
+    inline def setResponseFilter(
       value: (/* doc */ Doc, /* query */ Query, /* request */ Document, /* error */ js.UndefOr[Error], /* data */ js.UndefOr[
           RefsQueryResult | DefinitionQueryResult | DocumentationQueryResult | FilesQueryResult | PropertiesQueryResult | CompletionsQueryResult | TypeQueryResult | RenameQueryResult
         ]) => js.Any
     ): Self = StObject.set(x, "responseFilter", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setResponseFilterUndefined: Self = StObject.set(x, "responseFilter", js.undefined)
+    inline def setResponseFilterUndefined: Self = StObject.set(x, "responseFilter", js.undefined)
     
-    @scala.inline
-    def setShowError(value: (/* editor */ Editor, /* message */ Error) => js.Any): Self = StObject.set(x, "showError", js.Any.fromFunction2(value))
+    inline def setShowError(value: (/* editor */ Editor, /* message */ Error) => js.Any): Self = StObject.set(x, "showError", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShowErrorUndefined: Self = StObject.set(x, "showError", js.undefined)
+    inline def setShowErrorUndefined: Self = StObject.set(x, "showError", js.undefined)
     
-    @scala.inline
-    def setSwitchToDoc(value: (/* name */ String, /* doc */ Doc) => js.Any): Self = StObject.set(x, "switchToDoc", js.Any.fromFunction2(value))
+    inline def setSwitchToDoc(value: (/* name */ String, /* doc */ Doc) => js.Any): Self = StObject.set(x, "switchToDoc", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSwitchToDocUndefined: Self = StObject.set(x, "switchToDoc", js.undefined)
+    inline def setSwitchToDocUndefined: Self = StObject.set(x, "switchToDoc", js.undefined)
     
-    @scala.inline
-    def setTypeTip(value: /* data */ TypeQueryResult => String | HTMLElement | Null): Self = StObject.set(x, "typeTip", js.Any.fromFunction1(value))
+    inline def setTypeTip(value: /* data */ TypeQueryResult => String | HTMLElement | Null): Self = StObject.set(x, "typeTip", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTypeTipUndefined: Self = StObject.set(x, "typeTip", js.undefined)
+    inline def setTypeTipUndefined: Self = StObject.set(x, "typeTip", js.undefined)
     
-    @scala.inline
-    def setUseWorker(value: Boolean): Self = StObject.set(x, "useWorker", value.asInstanceOf[js.Any])
+    inline def setUseWorker(value: Boolean): Self = StObject.set(x, "useWorker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseWorkerUndefined: Self = StObject.set(x, "useWorker", js.undefined)
+    inline def setUseWorkerUndefined: Self = StObject.set(x, "useWorker", js.undefined)
     
-    @scala.inline
-    def setWorkerDeps(value: js.Array[String]): Self = StObject.set(x, "workerDeps", value.asInstanceOf[js.Any])
+    inline def setWorkerDeps(value: js.Array[String]): Self = StObject.set(x, "workerDeps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerDepsUndefined: Self = StObject.set(x, "workerDeps", js.undefined)
+    inline def setWorkerDepsUndefined: Self = StObject.set(x, "workerDeps", js.undefined)
     
-    @scala.inline
-    def setWorkerDepsVarargs(value: String*): Self = StObject.set(x, "workerDeps", js.Array(value :_*))
+    inline def setWorkerDepsVarargs(value: String*): Self = StObject.set(x, "workerDeps", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkerScript(value: String): Self = StObject.set(x, "workerScript", value.asInstanceOf[js.Any])
+    inline def setWorkerScript(value: String): Self = StObject.set(x, "workerScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerScriptUndefined: Self = StObject.set(x, "workerScript", js.undefined)
+    inline def setWorkerScriptUndefined: Self = StObject.set(x, "workerScript", js.undefined)
   }
 }

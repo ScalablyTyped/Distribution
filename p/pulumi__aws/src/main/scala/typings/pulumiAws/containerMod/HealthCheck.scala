@@ -49,46 +49,33 @@ trait HealthCheck extends StObject {
 }
 object HealthCheck {
   
-  @scala.inline
-  def apply(): HealthCheck = {
+  inline def apply(): HealthCheck = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HealthCheck]
   }
   
-  @scala.inline
-  implicit class HealthCheckMutableBuilder[Self <: HealthCheck] (val x: Self) extends AnyVal {
+  extension [Self <: HealthCheck](x: Self) {
     
-    @scala.inline
-    def setCommand(value: js.Array[String]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: js.Array[String]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
+    inline def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+    inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+    inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
     
-    @scala.inline
-    def setStartPeriod(value: Double): Self = StObject.set(x, "startPeriod", value.asInstanceOf[js.Any])
+    inline def setStartPeriod(value: Double): Self = StObject.set(x, "startPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPeriodUndefined: Self = StObject.set(x, "startPeriod", js.undefined)
+    inline def setStartPeriodUndefined: Self = StObject.set(x, "startPeriod", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

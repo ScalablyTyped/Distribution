@@ -33,46 +33,33 @@ trait ListMetricsInput extends StObject {
 }
 object ListMetricsInput {
   
-  @scala.inline
-  def apply(): ListMetricsInput = {
+  inline def apply(): ListMetricsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMetricsInput]
   }
   
-  @scala.inline
-  implicit class ListMetricsInputMutableBuilder[Self <: ListMetricsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListMetricsInput](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: DimensionFilters): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: DimensionFilters): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: DimensionFilter*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: DimensionFilter*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRecentlyActive(value: RecentlyActive): Self = StObject.set(x, "RecentlyActive", value.asInstanceOf[js.Any])
+    inline def setRecentlyActive(value: RecentlyActive): Self = StObject.set(x, "RecentlyActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecentlyActiveUndefined: Self = StObject.set(x, "RecentlyActive", js.undefined)
+    inline def setRecentlyActiveUndefined: Self = StObject.set(x, "RecentlyActive", js.undefined)
   }
 }

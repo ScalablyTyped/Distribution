@@ -15,19 +15,15 @@ trait TypeofSunburstChartFn extends StObject {
 }
 object TypeofSunburstChartFn {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: SunburstChart): TypeofSunburstChartFn = {
+  inline def apply(Locale: js.Any, fn: SunburstChart): TypeofSunburstChartFn = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSunburstChartFn]
   }
   
-  @scala.inline
-  implicit class TypeofSunburstChartFnMutableBuilder[Self <: TypeofSunburstChartFn] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSunburstChartFn](x: Self) {
     
-    @scala.inline
-    def setFn(value: SunburstChart): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: SunburstChart): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

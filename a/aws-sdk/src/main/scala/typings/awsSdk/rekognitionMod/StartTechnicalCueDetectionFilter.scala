@@ -13,19 +13,15 @@ trait StartTechnicalCueDetectionFilter extends StObject {
 }
 object StartTechnicalCueDetectionFilter {
   
-  @scala.inline
-  def apply(): StartTechnicalCueDetectionFilter = {
+  inline def apply(): StartTechnicalCueDetectionFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartTechnicalCueDetectionFilter]
   }
   
-  @scala.inline
-  implicit class StartTechnicalCueDetectionFilterMutableBuilder[Self <: StartTechnicalCueDetectionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: StartTechnicalCueDetectionFilter](x: Self) {
     
-    @scala.inline
-    def setMinSegmentConfidence(value: SegmentConfidence): Self = StObject.set(x, "MinSegmentConfidence", value.asInstanceOf[js.Any])
+    inline def setMinSegmentConfidence(value: SegmentConfidence): Self = StObject.set(x, "MinSegmentConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSegmentConfidenceUndefined: Self = StObject.set(x, "MinSegmentConfidence", js.undefined)
+    inline def setMinSegmentConfidenceUndefined: Self = StObject.set(x, "MinSegmentConfidence", js.undefined)
   }
 }

@@ -46,23 +46,18 @@ object fallbackErrorMod {
   }
   object FallbackServiceError {
     
-    @scala.inline
-    def apply(code: Status, details: js.Array[js.Object], message: String, name: String): FallbackServiceError = {
+    inline def apply(code: Status, details: js.Array[js.Object], message: String, name: String): FallbackServiceError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FallbackServiceError]
     }
     
-    @scala.inline
-    implicit class FallbackServiceErrorMutableBuilder[Self <: FallbackServiceError] (val x: Self) extends AnyVal {
+    extension [Self <: FallbackServiceError](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
   
@@ -76,26 +71,20 @@ object fallbackErrorMod {
   }
   object FallbackStatusObject {
     
-    @scala.inline
-    def apply(code: Status, details: js.Array[js.Object], message: String): FallbackStatusObject = {
+    inline def apply(code: Status, details: js.Array[js.Object], message: String): FallbackStatusObject = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[FallbackStatusObject]
     }
     
-    @scala.inline
-    implicit class FallbackStatusObjectMutableBuilder[Self <: FallbackStatusObject] (val x: Self) extends AnyVal {
+    extension [Self <: FallbackStatusObject](x: Self) {
       
-      @scala.inline
-      def setCode(value: Status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetails(value: js.Array[js.Object]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: js.Array[js.Object]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsVarargs(value: js.Object*): Self = StObject.set(x, "details", js.Array(value :_*))
+      inline def setDetailsVarargs(value: js.Object*): Self = StObject.set(x, "details", js.Array(value :_*))
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,20 +96,16 @@ object fallbackErrorMod {
   }
   object ProtobufAny {
     
-    @scala.inline
-    def apply(type_url: String, value: Uint8Array): ProtobufAny = {
+    inline def apply(type_url: String, value: Uint8Array): ProtobufAny = {
       val __obj = js.Dynamic.literal(type_url = type_url.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProtobufAny]
     }
     
-    @scala.inline
-    implicit class ProtobufAnyMutableBuilder[Self <: ProtobufAny] (val x: Self) extends AnyVal {
+    extension [Self <: ProtobufAny](x: Self) {
       
-      @scala.inline
-      def setType_url(value: String): Self = StObject.set(x, "type_url", value.asInstanceOf[js.Any])
+      inline def setType_url(value: String): Self = StObject.set(x, "type_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

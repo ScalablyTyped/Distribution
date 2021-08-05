@@ -23,19 +23,15 @@ trait CharacterStyle
 }
 object CharacterStyle {
   
-  @scala.inline
-  def apply(isDeleted: Boolean, linkedStyle: ParagraphStyle, name: String, parent: CharacterStyle): CharacterStyle = {
+  inline def apply(isDeleted: Boolean, linkedStyle: ParagraphStyle, name: String, parent: CharacterStyle): CharacterStyle = {
     val __obj = js.Dynamic.literal(isDeleted = isDeleted.asInstanceOf[js.Any], linkedStyle = linkedStyle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CharacterStyle]
   }
   
-  @scala.inline
-  implicit class CharacterStyleMutableBuilder[Self <: CharacterStyle] (val x: Self) extends AnyVal {
+  extension [Self <: CharacterStyle](x: Self) {
     
-    @scala.inline
-    def setLinkedStyle(value: ParagraphStyle): Self = StObject.set(x, "linkedStyle", value.asInstanceOf[js.Any])
+    inline def setLinkedStyle(value: ParagraphStyle): Self = StObject.set(x, "linkedStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: CharacterStyle): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: CharacterStyle): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
   }
 }

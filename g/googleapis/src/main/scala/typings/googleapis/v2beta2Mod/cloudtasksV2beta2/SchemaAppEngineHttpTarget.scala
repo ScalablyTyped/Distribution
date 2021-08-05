@@ -25,19 +25,15 @@ trait SchemaAppEngineHttpTarget extends StObject {
 }
 object SchemaAppEngineHttpTarget {
   
-  @scala.inline
-  def apply(): SchemaAppEngineHttpTarget = {
+  inline def apply(): SchemaAppEngineHttpTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAppEngineHttpTarget]
   }
   
-  @scala.inline
-  implicit class SchemaAppEngineHttpTargetMutableBuilder[Self <: SchemaAppEngineHttpTarget] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAppEngineHttpTarget](x: Self) {
     
-    @scala.inline
-    def setAppEngineRoutingOverride(value: SchemaAppEngineRouting): Self = StObject.set(x, "appEngineRoutingOverride", value.asInstanceOf[js.Any])
+    inline def setAppEngineRoutingOverride(value: SchemaAppEngineRouting): Self = StObject.set(x, "appEngineRoutingOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppEngineRoutingOverrideUndefined: Self = StObject.set(x, "appEngineRoutingOverride", js.undefined)
+    inline def setAppEngineRoutingOverrideUndefined: Self = StObject.set(x, "appEngineRoutingOverride", js.undefined)
   }
 }

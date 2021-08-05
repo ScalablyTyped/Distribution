@@ -45,8 +45,7 @@ trait XNativeNumberSupplier
 }
 object XNativeNumberSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     convertFromXmlAttributes: NativeNumberXmlAttributes => Double,
     convertToXmlAttributes: (Locale, Double) => NativeNumberXmlAttributes,
@@ -59,19 +58,14 @@ object XNativeNumberSupplier {
     __obj.asInstanceOf[XNativeNumberSupplier]
   }
   
-  @scala.inline
-  implicit class XNativeNumberSupplierMutableBuilder[Self <: XNativeNumberSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XNativeNumberSupplier](x: Self) {
     
-    @scala.inline
-    def setConvertFromXmlAttributes(value: NativeNumberXmlAttributes => Double): Self = StObject.set(x, "convertFromXmlAttributes", js.Any.fromFunction1(value))
+    inline def setConvertFromXmlAttributes(value: NativeNumberXmlAttributes => Double): Self = StObject.set(x, "convertFromXmlAttributes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConvertToXmlAttributes(value: (Locale, Double) => NativeNumberXmlAttributes): Self = StObject.set(x, "convertToXmlAttributes", js.Any.fromFunction2(value))
+    inline def setConvertToXmlAttributes(value: (Locale, Double) => NativeNumberXmlAttributes): Self = StObject.set(x, "convertToXmlAttributes", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetNativeNumberString(value: (String, Locale, Double) => String): Self = StObject.set(x, "getNativeNumberString", js.Any.fromFunction3(value))
+    inline def setGetNativeNumberString(value: (String, Locale, Double) => String): Self = StObject.set(x, "getNativeNumberString", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setIsValidNatNum(value: (Locale, Double) => Boolean): Self = StObject.set(x, "isValidNatNum", js.Any.fromFunction2(value))
+    inline def setIsValidNatNum(value: (Locale, Double) => Boolean): Self = StObject.set(x, "isValidNatNum", js.Any.fromFunction2(value))
   }
 }

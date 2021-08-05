@@ -76,17 +76,14 @@ object typesEncryptionKeyAccessDeniedExceptionMod {
   }
   object EncryptionKeyAccessDeniedException {
     
-    @scala.inline
-    def apply(): EncryptionKeyAccessDeniedException = {
+    inline def apply(): EncryptionKeyAccessDeniedException = {
       val __obj = js.Dynamic.literal(name = "EncryptionKeyAccessDeniedException")
       __obj.asInstanceOf[EncryptionKeyAccessDeniedException]
     }
     
-    @scala.inline
-    implicit class EncryptionKeyAccessDeniedExceptionMutableBuilder[Self <: EncryptionKeyAccessDeniedException] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptionKeyAccessDeniedException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyAccessDeniedException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

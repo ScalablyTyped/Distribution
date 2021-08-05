@@ -13,22 +13,17 @@ trait UpdateDomainEntryResult extends StObject {
 }
 object UpdateDomainEntryResult {
   
-  @scala.inline
-  def apply(): UpdateDomainEntryResult = {
+  inline def apply(): UpdateDomainEntryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDomainEntryResult]
   }
   
-  @scala.inline
-  implicit class UpdateDomainEntryResultMutableBuilder[Self <: UpdateDomainEntryResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDomainEntryResult](x: Self) {
     
-    @scala.inline
-    def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    @scala.inline
-    def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
   }
 }

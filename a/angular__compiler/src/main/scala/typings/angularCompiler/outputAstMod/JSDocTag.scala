@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JSDocTag extends StObject
 object JSDocTag {
   
-  @scala.inline
-  def TagName(tagName: JSDocTagName | String): typings.angularCompiler.anon.TagName = {
+  inline def TagName(tagName: JSDocTagName | String): typings.angularCompiler.anon.TagName = {
     val __obj = js.Dynamic.literal(tagName = tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.angularCompiler.anon.TagName]
   }
   
-  @scala.inline
-  def Text(tagName: Unit, text: String): typings.angularCompiler.anon.Text = {
+  inline def Text(tagName: Unit, text: String): typings.angularCompiler.anon.Text = {
     val __obj = js.Dynamic.literal(tagName = tagName.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.angularCompiler.anon.Text]
   }

@@ -22,20 +22,16 @@ object temperatureMod extends Shortcut {
   }
   object TemperatureProps {
     
-    @scala.inline
-    def apply(): TemperatureProps = {
+    inline def apply(): TemperatureProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TemperatureProps]
     }
     
-    @scala.inline
-    implicit class TemperaturePropsMutableBuilder[Self <: TemperatureProps] (val x: Self) extends AnyVal {
+    extension [Self <: TemperatureProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

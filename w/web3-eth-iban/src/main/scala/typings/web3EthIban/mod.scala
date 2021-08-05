@@ -32,23 +32,17 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createIndirect(options: IndirectOptions): Iban = ^.asInstanceOf[js.Dynamic].applyDynamic("createIndirect")(options.asInstanceOf[js.Any]).asInstanceOf[Iban]
+    inline def createIndirect(options: IndirectOptions): Iban = ^.asInstanceOf[js.Dynamic].applyDynamic("createIndirect")(options.asInstanceOf[js.Any]).asInstanceOf[Iban]
     
-    @scala.inline
-    def fromAddress(address: String): Iban = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Iban]
+    inline def fromAddress(address: String): Iban = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Iban]
     
-    @scala.inline
-    def fromBban(bban: String): Iban = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBban")(bban.asInstanceOf[js.Any]).asInstanceOf[Iban]
+    inline def fromBban(bban: String): Iban = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBban")(bban.asInstanceOf[js.Any]).asInstanceOf[Iban]
     
-    @scala.inline
-    def isValid(iban: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(iban.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValid(iban: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(iban.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def toAddress(iban: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toAddress")(iban.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toAddress(iban: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toAddress")(iban.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def toIban(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toIban")(address.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toIban(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toIban")(address.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   trait IndirectOptions extends StObject {
@@ -59,20 +53,16 @@ object mod {
   }
   object IndirectOptions {
     
-    @scala.inline
-    def apply(identifier: String, institution: String): IndirectOptions = {
+    inline def apply(identifier: String, institution: String): IndirectOptions = {
       val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], institution = institution.asInstanceOf[js.Any])
       __obj.asInstanceOf[IndirectOptions]
     }
     
-    @scala.inline
-    implicit class IndirectOptionsMutableBuilder[Self <: IndirectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IndirectOptions](x: Self) {
       
-      @scala.inline
-      def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstitution(value: String): Self = StObject.set(x, "institution", value.asInstanceOf[js.Any])
+      inline def setInstitution(value: String): Self = StObject.set(x, "institution", value.asInstanceOf[js.Any])
     }
   }
 }

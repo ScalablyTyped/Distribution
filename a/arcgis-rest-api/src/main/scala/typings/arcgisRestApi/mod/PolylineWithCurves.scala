@@ -13,19 +13,15 @@ trait PolylineWithCurves
 }
 object PolylineWithCurves {
   
-  @scala.inline
-  def apply(curvePaths: js.Array[js.Array[Position | JsonCurve]]): PolylineWithCurves = {
+  inline def apply(curvePaths: js.Array[js.Array[Position | JsonCurve]]): PolylineWithCurves = {
     val __obj = js.Dynamic.literal(curvePaths = curvePaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolylineWithCurves]
   }
   
-  @scala.inline
-  implicit class PolylineWithCurvesMutableBuilder[Self <: PolylineWithCurves] (val x: Self) extends AnyVal {
+  extension [Self <: PolylineWithCurves](x: Self) {
     
-    @scala.inline
-    def setCurvePaths(value: js.Array[js.Array[Position | JsonCurve]]): Self = StObject.set(x, "curvePaths", value.asInstanceOf[js.Any])
+    inline def setCurvePaths(value: js.Array[js.Array[Position | JsonCurve]]): Self = StObject.set(x, "curvePaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurvePathsVarargs(value: (js.Array[Position | JsonCurve])*): Self = StObject.set(x, "curvePaths", js.Array(value :_*))
+    inline def setCurvePathsVarargs(value: (js.Array[Position | JsonCurve])*): Self = StObject.set(x, "curvePaths", js.Array(value :_*))
   }
 }

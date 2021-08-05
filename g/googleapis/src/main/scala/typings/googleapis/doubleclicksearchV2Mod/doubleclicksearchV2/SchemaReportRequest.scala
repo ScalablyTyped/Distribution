@@ -112,106 +112,73 @@ trait SchemaReportRequest extends StObject {
 }
 object SchemaReportRequest {
   
-  @scala.inline
-  def apply(): SchemaReportRequest = {
+  inline def apply(): SchemaReportRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReportRequest]
   }
   
-  @scala.inline
-  implicit class SchemaReportRequestMutableBuilder[Self <: SchemaReportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReportRequest](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[SchemaReportApiColumnSpec]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[SchemaReportApiColumnSpec]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: SchemaReportApiColumnSpec*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: SchemaReportApiColumnSpec*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setDownloadFormat(value: String): Self = StObject.set(x, "downloadFormat", value.asInstanceOf[js.Any])
+    inline def setDownloadFormat(value: String): Self = StObject.set(x, "downloadFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadFormatUndefined: Self = StObject.set(x, "downloadFormat", js.undefined)
+    inline def setDownloadFormatUndefined: Self = StObject.set(x, "downloadFormat", js.undefined)
     
-    @scala.inline
-    def setFilters(value: js.Array[Column]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[Column]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Column*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Column*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeDeletedEntities(value: Boolean): Self = StObject.set(x, "includeDeletedEntities", value.asInstanceOf[js.Any])
+    inline def setIncludeDeletedEntities(value: Boolean): Self = StObject.set(x, "includeDeletedEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDeletedEntitiesUndefined: Self = StObject.set(x, "includeDeletedEntities", js.undefined)
+    inline def setIncludeDeletedEntitiesUndefined: Self = StObject.set(x, "includeDeletedEntities", js.undefined)
     
-    @scala.inline
-    def setIncludeRemovedEntities(value: Boolean): Self = StObject.set(x, "includeRemovedEntities", value.asInstanceOf[js.Any])
+    inline def setIncludeRemovedEntities(value: Boolean): Self = StObject.set(x, "includeRemovedEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeRemovedEntitiesUndefined: Self = StObject.set(x, "includeRemovedEntities", js.undefined)
+    inline def setIncludeRemovedEntitiesUndefined: Self = StObject.set(x, "includeRemovedEntities", js.undefined)
     
-    @scala.inline
-    def setMaxRowsPerFile(value: Double): Self = StObject.set(x, "maxRowsPerFile", value.asInstanceOf[js.Any])
+    inline def setMaxRowsPerFile(value: Double): Self = StObject.set(x, "maxRowsPerFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRowsPerFileUndefined: Self = StObject.set(x, "maxRowsPerFile", js.undefined)
+    inline def setMaxRowsPerFileUndefined: Self = StObject.set(x, "maxRowsPerFile", js.undefined)
     
-    @scala.inline
-    def setOrderBy(value: js.Array[SortOrder]): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: js.Array[SortOrder]): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    @scala.inline
-    def setOrderByVarargs(value: SortOrder*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
+    inline def setOrderByVarargs(value: SortOrder*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
     
-    @scala.inline
-    def setReportScope(value: AdGroupId): Self = StObject.set(x, "reportScope", value.asInstanceOf[js.Any])
+    inline def setReportScope(value: AdGroupId): Self = StObject.set(x, "reportScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportScopeUndefined: Self = StObject.set(x, "reportScope", js.undefined)
+    inline def setReportScopeUndefined: Self = StObject.set(x, "reportScope", js.undefined)
     
-    @scala.inline
-    def setReportType(value: String): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
+    inline def setReportType(value: String): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportTypeUndefined: Self = StObject.set(x, "reportType", js.undefined)
+    inline def setReportTypeUndefined: Self = StObject.set(x, "reportType", js.undefined)
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+    inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
-    @scala.inline
-    def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
+    inline def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
+    inline def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
     
-    @scala.inline
-    def setStatisticsCurrency(value: String): Self = StObject.set(x, "statisticsCurrency", value.asInstanceOf[js.Any])
+    inline def setStatisticsCurrency(value: String): Self = StObject.set(x, "statisticsCurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticsCurrencyUndefined: Self = StObject.set(x, "statisticsCurrency", js.undefined)
+    inline def setStatisticsCurrencyUndefined: Self = StObject.set(x, "statisticsCurrency", js.undefined)
     
-    @scala.inline
-    def setTimeRange(value: ChangedAttributesSinceTimestamp): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
+    inline def setTimeRange(value: ChangedAttributesSinceTimestamp): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRangeUndefined: Self = StObject.set(x, "timeRange", js.undefined)
+    inline def setTimeRangeUndefined: Self = StObject.set(x, "timeRange", js.undefined)
     
-    @scala.inline
-    def setVerifySingleTimeZone(value: Boolean): Self = StObject.set(x, "verifySingleTimeZone", value.asInstanceOf[js.Any])
+    inline def setVerifySingleTimeZone(value: Boolean): Self = StObject.set(x, "verifySingleTimeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifySingleTimeZoneUndefined: Self = StObject.set(x, "verifySingleTimeZone", js.undefined)
+    inline def setVerifySingleTimeZoneUndefined: Self = StObject.set(x, "verifySingleTimeZone", js.undefined)
   }
 }

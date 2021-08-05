@@ -15,31 +15,23 @@ trait FormatParams extends StObject {
 }
 object FormatParams {
   
-  @scala.inline
-  def apply(): FormatParams = {
+  inline def apply(): FormatParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormatParams]
   }
   
-  @scala.inline
-  implicit class FormatParamsMutableBuilder[Self <: FormatParams] (val x: Self) extends AnyVal {
+  extension [Self <: FormatParams](x: Self) {
     
-    @scala.inline
-    def setCsv(value: CsvParams): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
+    inline def setCsv(value: CsvParams): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
+    inline def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
     
-    @scala.inline
-    def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+    inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     
-    @scala.inline
-    def setXml(value: XmlParams): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
+    inline def setXml(value: XmlParams): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlUndefined: Self = StObject.set(x, "xml", js.undefined)
+    inline def setXmlUndefined: Self = StObject.set(x, "xml", js.undefined)
   }
 }

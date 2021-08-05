@@ -13,16 +13,13 @@ trait MonitoringStoppingCondition extends StObject {
 }
 object MonitoringStoppingCondition {
   
-  @scala.inline
-  def apply(MaxRuntimeInSeconds: MonitoringMaxRuntimeInSeconds): MonitoringStoppingCondition = {
+  inline def apply(MaxRuntimeInSeconds: MonitoringMaxRuntimeInSeconds): MonitoringStoppingCondition = {
     val __obj = js.Dynamic.literal(MaxRuntimeInSeconds = MaxRuntimeInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitoringStoppingCondition]
   }
   
-  @scala.inline
-  implicit class MonitoringStoppingConditionMutableBuilder[Self <: MonitoringStoppingCondition] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoringStoppingCondition](x: Self) {
     
-    @scala.inline
-    def setMaxRuntimeInSeconds(value: MonitoringMaxRuntimeInSeconds): Self = StObject.set(x, "MaxRuntimeInSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxRuntimeInSeconds(value: MonitoringMaxRuntimeInSeconds): Self = StObject.set(x, "MaxRuntimeInSeconds", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait ConferenceParameters extends StObject {
 }
 object ConferenceParameters {
   
-  @scala.inline
-  def apply(): ConferenceParameters = {
+  inline def apply(): ConferenceParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConferenceParameters]
   }
   
-  @scala.inline
-  implicit class ConferenceParametersMutableBuilder[Self <: ConferenceParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ConferenceParameters](x: Self) {
     
-    @scala.inline
-    def setAddOnParameters(value: ConferenceParametersAddOnParameters): Self = StObject.set(x, "addOnParameters", value.asInstanceOf[js.Any])
+    inline def setAddOnParameters(value: ConferenceParametersAddOnParameters): Self = StObject.set(x, "addOnParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddOnParametersUndefined: Self = StObject.set(x, "addOnParameters", js.undefined)
+    inline def setAddOnParametersUndefined: Self = StObject.set(x, "addOnParameters", js.undefined)
   }
 }

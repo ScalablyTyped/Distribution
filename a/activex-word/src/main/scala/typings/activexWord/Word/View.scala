@@ -141,7 +141,7 @@ trait View extends StObject {
   
   var Type: WdViewType = js.native
   
-  @JSName("Word.View_typekey")
+  /* private */ @JSName("Word.View_typekey")
   var WordDotView_typekey: View = js.native
   
   var WrapToWindow: Boolean = js.native

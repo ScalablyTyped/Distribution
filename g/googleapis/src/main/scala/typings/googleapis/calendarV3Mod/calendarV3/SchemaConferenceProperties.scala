@@ -15,22 +15,17 @@ trait SchemaConferenceProperties extends StObject {
 }
 object SchemaConferenceProperties {
   
-  @scala.inline
-  def apply(): SchemaConferenceProperties = {
+  inline def apply(): SchemaConferenceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConferenceProperties]
   }
   
-  @scala.inline
-  implicit class SchemaConferencePropertiesMutableBuilder[Self <: SchemaConferenceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConferenceProperties](x: Self) {
     
-    @scala.inline
-    def setAllowedConferenceSolutionTypes(value: js.Array[String]): Self = StObject.set(x, "allowedConferenceSolutionTypes", value.asInstanceOf[js.Any])
+    inline def setAllowedConferenceSolutionTypes(value: js.Array[String]): Self = StObject.set(x, "allowedConferenceSolutionTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedConferenceSolutionTypesUndefined: Self = StObject.set(x, "allowedConferenceSolutionTypes", js.undefined)
+    inline def setAllowedConferenceSolutionTypesUndefined: Self = StObject.set(x, "allowedConferenceSolutionTypes", js.undefined)
     
-    @scala.inline
-    def setAllowedConferenceSolutionTypesVarargs(value: String*): Self = StObject.set(x, "allowedConferenceSolutionTypes", js.Array(value :_*))
+    inline def setAllowedConferenceSolutionTypesVarargs(value: String*): Self = StObject.set(x, "allowedConferenceSolutionTypes", js.Array(value :_*))
   }
 }

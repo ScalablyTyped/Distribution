@@ -25,38 +25,28 @@ object anon {
   }
   object ReadonlyBrowserRouterProp {
     
-    @scala.inline
-    def apply(): ReadonlyBrowserRouterProp = {
+    inline def apply(): ReadonlyBrowserRouterProp = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyBrowserRouterProp]
     }
     
-    @scala.inline
-    implicit class ReadonlyBrowserRouterPropMutableBuilder[Self <: ReadonlyBrowserRouterProp] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyBrowserRouterProp](x: Self) {
       
-      @scala.inline
-      def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
+      inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
       
-      @scala.inline
-      def setForceRefresh(value: Boolean): Self = StObject.set(x, "forceRefresh", value.asInstanceOf[js.Any])
+      inline def setForceRefresh(value: Boolean): Self = StObject.set(x, "forceRefresh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceRefreshUndefined: Self = StObject.set(x, "forceRefresh", js.undefined)
+      inline def setForceRefreshUndefined: Self = StObject.set(x, "forceRefresh", js.undefined)
       
-      @scala.inline
-      def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
+      inline def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
+      inline def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
       
-      @scala.inline
-      def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
+      inline def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
+      inline def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
     }
   }
   
@@ -73,32 +63,24 @@ object anon {
   }
   object ReadonlyHashRouterProps {
     
-    @scala.inline
-    def apply(): ReadonlyHashRouterProps = {
+    inline def apply(): ReadonlyHashRouterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyHashRouterProps]
     }
     
-    @scala.inline
-    implicit class ReadonlyHashRouterPropsMutableBuilder[Self <: ReadonlyHashRouterProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyHashRouterProps](x: Self) {
       
-      @scala.inline
-      def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
+      inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
       
-      @scala.inline
-      def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
+      inline def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
+      inline def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
       
-      @scala.inline
-      def setHashType(value: slash | noslash | hashbang): Self = StObject.set(x, "hashType", value.asInstanceOf[js.Any])
+      inline def setHashType(value: slash | noslash | hashbang): Self = StObject.set(x, "hashType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashTypeUndefined: Self = StObject.set(x, "hashType", js.undefined)
+      inline def setHashTypeUndefined: Self = StObject.set(x, "hashType", js.undefined)
     }
   }
   
@@ -108,18 +90,15 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(`type`: EffectType): Type = {
+    inline def apply(`type`: EffectType): Type = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(value: EffectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: EffectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

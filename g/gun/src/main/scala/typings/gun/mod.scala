@@ -492,56 +492,40 @@ object mod extends Shortcut {
     }
     object ConstructorOptions {
       
-      @scala.inline
-      def apply(): ConstructorOptions = {
+      inline def apply(): ConstructorOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ConstructorOptions]
       }
       
-      @scala.inline
-      implicit class ConstructorOptionsMutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ConstructorOptions](x: Self) {
         
-        @scala.inline
-        def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+        inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+        inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
         
-        @scala.inline
-        def setLocalStorage(value: Boolean): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
+        inline def setLocalStorage(value: Boolean): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
+        inline def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
         
-        @scala.inline
-        def setPeers(value: Record[String, js.Object]): Self = StObject.set(x, "peers", value.asInstanceOf[js.Any])
+        inline def setPeers(value: Record[String, js.Object]): Self = StObject.set(x, "peers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPeersUndefined: Self = StObject.set(x, "peers", js.undefined)
+        inline def setPeersUndefined: Self = StObject.set(x, "peers", js.undefined)
         
-        @scala.inline
-        def setRadisk(value: Boolean): Self = StObject.set(x, "radisk", value.asInstanceOf[js.Any])
+        inline def setRadisk(value: Boolean): Self = StObject.set(x, "radisk", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRadiskUndefined: Self = StObject.set(x, "radisk", js.undefined)
+        inline def setRadiskUndefined: Self = StObject.set(x, "radisk", js.undefined)
         
-        @scala.inline
-        def setS3(value: Bucket): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+        inline def setS3(value: Bucket): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
+        inline def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
         
-        @scala.inline
-        def setUuid(value: () => String): Self = StObject.set(x, "uuid", js.Any.fromFunction0(value))
+        inline def setUuid(value: () => String): Self = StObject.set(x, "uuid", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+        inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
         
-        @scala.inline
-        def setWeb(value: js.Any): Self = StObject.set(x, "web", value.asInstanceOf[js.Any])
+        inline def setWeb(value: js.Any): Self = StObject.set(x, "web", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebUndefined: Self = StObject.set(x, "web", js.undefined)
+        inline def setWebUndefined: Self = StObject.set(x, "web", js.undefined)
       }
     }
     
@@ -558,26 +542,20 @@ object mod extends Shortcut {
     }
     object CryptoKeyPair {
       
-      @scala.inline
-      def apply(epriv: String, epub: String, priv: String, pub: String): CryptoKeyPair = {
+      inline def apply(epriv: String, epub: String, priv: String, pub: String): CryptoKeyPair = {
         val __obj = js.Dynamic.literal(epriv = epriv.asInstanceOf[js.Any], epub = epub.asInstanceOf[js.Any], priv = priv.asInstanceOf[js.Any], pub = pub.asInstanceOf[js.Any])
         __obj.asInstanceOf[CryptoKeyPair]
       }
       
-      @scala.inline
-      implicit class CryptoKeyPairMutableBuilder[Self <: CryptoKeyPair] (val x: Self) extends AnyVal {
+      extension [Self <: CryptoKeyPair](x: Self) {
         
-        @scala.inline
-        def setEpriv(value: String): Self = StObject.set(x, "epriv", value.asInstanceOf[js.Any])
+        inline def setEpriv(value: String): Self = StObject.set(x, "epriv", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEpub(value: String): Self = StObject.set(x, "epub", value.asInstanceOf[js.Any])
+        inline def setEpub(value: String): Self = StObject.set(x, "epub", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPriv(value: String): Self = StObject.set(x, "priv", value.asInstanceOf[js.Any])
+        inline def setPriv(value: String): Self = StObject.set(x, "priv", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPub(value: String): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
+        inline def setPub(value: String): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
       }
     }
     

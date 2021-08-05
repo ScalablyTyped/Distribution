@@ -18,25 +18,19 @@ trait Vhost extends StObject {
 }
 object Vhost {
   
-  @scala.inline
-  def apply(prefix: String): Vhost = {
+  inline def apply(prefix: String): Vhost = {
     val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vhost]
   }
   
-  @scala.inline
-  implicit class VhostMutableBuilder[Self <: Vhost] (val x: Self) extends AnyVal {
+  extension [Self <: Vhost](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVhost(value: String | js.Array[String]): Self = StObject.set(x, "vhost", value.asInstanceOf[js.Any])
+    inline def setVhost(value: String | js.Array[String]): Self = StObject.set(x, "vhost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVhostUndefined: Self = StObject.set(x, "vhost", js.undefined)
+    inline def setVhostUndefined: Self = StObject.set(x, "vhost", js.undefined)
     
-    @scala.inline
-    def setVhostVarargs(value: String*): Self = StObject.set(x, "vhost", js.Array(value :_*))
+    inline def setVhostVarargs(value: String*): Self = StObject.set(x, "vhost", js.Array(value :_*))
   }
 }

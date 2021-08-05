@@ -31,29 +31,22 @@ object typesGetCredentialsForIdentityOutputMod {
   }
   object GetCredentialsForIdentityOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetCredentialsForIdentityOutput = {
+    inline def apply($metadata: ResponseMetadata): GetCredentialsForIdentityOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetCredentialsForIdentityOutput]
     }
     
-    @scala.inline
-    implicit class GetCredentialsForIdentityOutputMutableBuilder[Self <: GetCredentialsForIdentityOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetCredentialsForIdentityOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentials(value: UnmarshalledCredentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: UnmarshalledCredentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
       
-      @scala.inline
-      def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+      inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+      inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     }
   }
 }

@@ -11,12 +11,8 @@ object vstoolsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addProjectToSolution(slnFile: String, project: Project): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addProjectToSolution")(slnFile.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def addProjectToSolution(slnFile: String, project: Project, verbose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addProjectToSolution")(slnFile.asInstanceOf[js.Any], project.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def addProjectToSolution(slnFile: String, project: Project, verbose: Boolean, checkMode: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addProjectToSolution")(slnFile.asInstanceOf[js.Any], project.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any], checkMode.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def addProjectToSolution(slnFile: String, project: Project, verbose: Unit, checkMode: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addProjectToSolution")(slnFile.asInstanceOf[js.Any], project.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any], checkMode.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def addProjectToSolution(slnFile: String, project: Project): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addProjectToSolution")(slnFile.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def addProjectToSolution(slnFile: String, project: Project, verbose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addProjectToSolution")(slnFile.asInstanceOf[js.Any], project.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def addProjectToSolution(slnFile: String, project: Project, verbose: Boolean, checkMode: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addProjectToSolution")(slnFile.asInstanceOf[js.Any], project.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any], checkMode.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def addProjectToSolution(slnFile: String, project: Project, verbose: Unit, checkMode: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("addProjectToSolution")(slnFile.asInstanceOf[js.Any], project.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any], checkMode.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

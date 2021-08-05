@@ -10,19 +10,15 @@ trait Navigator extends StObject {
 }
 object Navigator {
   
-  @scala.inline
-  def apply(): Navigator = {
+  inline def apply(): Navigator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Navigator]
   }
   
-  @scala.inline
-  implicit class NavigatorMutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
+  extension [Self <: Navigator](x: Self) {
     
-    @scala.inline
-    def setMediaSession(value: MediaSession): Self = StObject.set(x, "mediaSession", value.asInstanceOf[js.Any])
+    inline def setMediaSession(value: MediaSession): Self = StObject.set(x, "mediaSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaSessionUndefined: Self = StObject.set(x, "mediaSession", js.undefined)
+    inline def setMediaSessionUndefined: Self = StObject.set(x, "mediaSession", js.undefined)
   }
 }

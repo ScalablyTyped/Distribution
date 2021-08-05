@@ -35,8 +35,7 @@ object libDialogMod extends Shortcut {
     @JSImport("office-ui-fabric-react/lib/Dialog", "DialogBase.defaultProps")
     @js.native
     def defaultProps: IDialogProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IDialogProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IDialogProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/Dialog", "DialogContent")
@@ -59,8 +58,7 @@ object libDialogMod extends Shortcut {
     @JSImport("office-ui-fabric-react/lib/Dialog", "DialogContentBase.defaultProps")
     @js.native
     def defaultProps: IDialogContentProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IDialogContentProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IDialogContentProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/Dialog", "DialogFooter")

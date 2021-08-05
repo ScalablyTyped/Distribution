@@ -10,16 +10,13 @@ trait Full extends StObject {
 }
 object Full {
   
-  @scala.inline
-  def apply(full: Boolean): Full = {
+  inline def apply(full: Boolean): Full = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any])
     __obj.asInstanceOf[Full]
   }
   
-  @scala.inline
-  implicit class FullMutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
+  extension [Self <: Full](x: Self) {
     
-    @scala.inline
-    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
   }
 }

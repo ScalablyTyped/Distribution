@@ -31,14 +31,12 @@ object Map {
   		* Gets the streetside panorama information closest to the specified bounding box and returns using a success callback function. 
   		* This information can then be used to set the map view to that streetside panorama.
   		*/
-  @scala.inline
-  def getClosestPanorama(
+  inline def getClosestPanorama(
     bounds: typings.bingmaps.Microsoft.Maps.LocationRect,
     success: js.Function1[/* panoramaInfo */ IPanoramaInfo, Unit],
     missingCoverage: js.Function0[Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getClosestPanorama")(bounds.asInstanceOf[js.Any], success.asInstanceOf[js.Any], missingCoverage.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Returns the branch name; release, experimental, frozen. */
-  @scala.inline
-  def getVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[String]
+  inline def getVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[String]
 }

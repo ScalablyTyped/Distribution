@@ -12,6 +12,5 @@ object overlayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def menuOverlayAnimation(menu: MenuI): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("menuOverlayAnimation")(menu.asInstanceOf[js.Any]).asInstanceOf[Animation]
+  inline def menuOverlayAnimation(menu: MenuI): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("menuOverlayAnimation")(menu.asInstanceOf[js.Any]).asInstanceOf[Animation]
 }

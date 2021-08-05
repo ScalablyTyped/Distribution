@@ -20,8 +20,7 @@ trait QueryResponse extends StObject {
 }
 object QueryResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDataTable: () => DataTable,
     getDetailedMessage: () => String,
     getMessage: () => String,
@@ -33,25 +32,18 @@ object QueryResponse {
     __obj.asInstanceOf[QueryResponse]
   }
   
-  @scala.inline
-  implicit class QueryResponseMutableBuilder[Self <: QueryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: QueryResponse](x: Self) {
     
-    @scala.inline
-    def setGetDataTable(value: () => DataTable): Self = StObject.set(x, "getDataTable", js.Any.fromFunction0(value))
+    inline def setGetDataTable(value: () => DataTable): Self = StObject.set(x, "getDataTable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDetailedMessage(value: () => String): Self = StObject.set(x, "getDetailedMessage", js.Any.fromFunction0(value))
+    inline def setGetDetailedMessage(value: () => String): Self = StObject.set(x, "getDetailedMessage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMessage(value: () => String): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
+    inline def setGetMessage(value: () => String): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReasons(value: () => js.Array[String]): Self = StObject.set(x, "getReasons", js.Any.fromFunction0(value))
+    inline def setGetReasons(value: () => js.Array[String]): Self = StObject.set(x, "getReasons", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasWarning(value: () => Boolean): Self = StObject.set(x, "hasWarning", js.Any.fromFunction0(value))
+    inline def setHasWarning(value: () => Boolean): Self = StObject.set(x, "hasWarning", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsError(value: () => Boolean): Self = StObject.set(x, "isError", js.Any.fromFunction0(value))
+    inline def setIsError(value: () => Boolean): Self = StObject.set(x, "isError", js.Any.fromFunction0(value))
   }
 }

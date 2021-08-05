@@ -13,16 +13,13 @@ trait DeleteCacheSecurityGroupMessage extends StObject {
 }
 object DeleteCacheSecurityGroupMessage {
   
-  @scala.inline
-  def apply(CacheSecurityGroupName: String): DeleteCacheSecurityGroupMessage = {
+  inline def apply(CacheSecurityGroupName: String): DeleteCacheSecurityGroupMessage = {
     val __obj = js.Dynamic.literal(CacheSecurityGroupName = CacheSecurityGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCacheSecurityGroupMessage]
   }
   
-  @scala.inline
-  implicit class DeleteCacheSecurityGroupMessageMutableBuilder[Self <: DeleteCacheSecurityGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCacheSecurityGroupMessage](x: Self) {
     
-    @scala.inline
-    def setCacheSecurityGroupName(value: String): Self = StObject.set(x, "CacheSecurityGroupName", value.asInstanceOf[js.Any])
+    inline def setCacheSecurityGroupName(value: String): Self = StObject.set(x, "CacheSecurityGroupName", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait DisassociateResolverEndpointIpAddressResponse extends StObject {
 }
 object DisassociateResolverEndpointIpAddressResponse {
   
-  @scala.inline
-  def apply(): DisassociateResolverEndpointIpAddressResponse = {
+  inline def apply(): DisassociateResolverEndpointIpAddressResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisassociateResolverEndpointIpAddressResponse]
   }
   
-  @scala.inline
-  implicit class DisassociateResolverEndpointIpAddressResponseMutableBuilder[Self <: DisassociateResolverEndpointIpAddressResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateResolverEndpointIpAddressResponse](x: Self) {
     
-    @scala.inline
-    def setResolverEndpoint(value: ResolverEndpoint): Self = StObject.set(x, "ResolverEndpoint", value.asInstanceOf[js.Any])
+    inline def setResolverEndpoint(value: ResolverEndpoint): Self = StObject.set(x, "ResolverEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverEndpointUndefined: Self = StObject.set(x, "ResolverEndpoint", js.undefined)
+    inline def setResolverEndpointUndefined: Self = StObject.set(x, "ResolverEndpoint", js.undefined)
   }
 }

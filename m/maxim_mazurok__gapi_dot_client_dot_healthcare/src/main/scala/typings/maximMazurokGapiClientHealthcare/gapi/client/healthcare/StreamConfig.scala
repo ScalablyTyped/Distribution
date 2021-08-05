@@ -30,28 +30,21 @@ trait StreamConfig extends StObject {
 }
 object StreamConfig {
   
-  @scala.inline
-  def apply(): StreamConfig = {
+  inline def apply(): StreamConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamConfig]
   }
   
-  @scala.inline
-  implicit class StreamConfigMutableBuilder[Self <: StreamConfig] (val x: Self) extends AnyVal {
+  extension [Self <: StreamConfig](x: Self) {
     
-    @scala.inline
-    def setBigqueryDestination(value: GoogleCloudHealthcareV1FhirBigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
+    inline def setBigqueryDestination(value: GoogleCloudHealthcareV1FhirBigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigqueryDestinationUndefined: Self = StObject.set(x, "bigqueryDestination", js.undefined)
+    inline def setBigqueryDestinationUndefined: Self = StObject.set(x, "bigqueryDestination", js.undefined)
     
-    @scala.inline
-    def setResourceTypes(value: js.Array[String]): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
+    inline def setResourceTypes(value: js.Array[String]): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypesUndefined: Self = StObject.set(x, "resourceTypes", js.undefined)
+    inline def setResourceTypesUndefined: Self = StObject.set(x, "resourceTypes", js.undefined)
     
-    @scala.inline
-    def setResourceTypesVarargs(value: String*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
+    inline def setResourceTypesVarargs(value: String*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
   }
 }

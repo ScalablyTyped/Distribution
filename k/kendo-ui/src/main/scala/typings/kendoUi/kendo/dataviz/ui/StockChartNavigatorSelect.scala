@@ -15,31 +15,23 @@ trait StockChartNavigatorSelect extends StObject {
 }
 object StockChartNavigatorSelect {
   
-  @scala.inline
-  def apply(): StockChartNavigatorSelect = {
+  inline def apply(): StockChartNavigatorSelect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockChartNavigatorSelect]
   }
   
-  @scala.inline
-  implicit class StockChartNavigatorSelectMutableBuilder[Self <: StockChartNavigatorSelect] (val x: Self) extends AnyVal {
+  extension [Self <: StockChartNavigatorSelect](x: Self) {
     
-    @scala.inline
-    def setFrom(value: Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setMousewheel(value: Boolean | StockChartNavigatorSelectMousewheel): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
+    inline def setMousewheel(value: Boolean | StockChartNavigatorSelectMousewheel): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
+    inline def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
     
-    @scala.inline
-    def setTo(value: Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

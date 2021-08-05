@@ -14,8 +14,7 @@ trait FlowMap
 }
 object FlowMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasComment: Boolean,
     hasProps: Boolean,
     items: js.Array[FlowChar | BlankLine | Comment | Alias | Scalar | FlowCollection],
@@ -29,10 +28,8 @@ object FlowMap {
     __obj.asInstanceOf[FlowMap]
   }
   
-  @scala.inline
-  implicit class FlowMapMutableBuilder[Self <: FlowMap] (val x: Self) extends AnyVal {
+  extension [Self <: FlowMap](x: Self) {
     
-    @scala.inline
-    def setType(value: FLOW_MAP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FLOW_MAP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

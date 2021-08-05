@@ -15,20 +15,16 @@ trait ShortHeaderValue
 }
 object ShortHeaderValue {
   
-  @scala.inline
-  def apply(value: Double): ShortHeaderValue = {
+  inline def apply(value: Double): ShortHeaderValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("short")
     __obj.asInstanceOf[ShortHeaderValue]
   }
   
-  @scala.inline
-  implicit class ShortHeaderValueMutableBuilder[Self <: ShortHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: ShortHeaderValue](x: Self) {
     
-    @scala.inline
-    def setType(value: short): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: short): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -11,16 +11,13 @@ trait ValueTSV[TSV /* <: /* import warning: importer.ImportType#apply Failed typ
 }
 object ValueTSV {
   
-  @scala.inline
-  def apply[TSV /* <: /* import warning: importer.ImportType#apply Failed type conversion: TTypestate['value'] */ js.Any */, TTypestate /* <: Typestate[TContext] */](value: TSV): ValueTSV[TSV, TTypestate] = {
+  inline def apply[TSV /* <: /* import warning: importer.ImportType#apply Failed type conversion: TTypestate['value'] */ js.Any */, TTypestate /* <: Typestate[TContext] */](value: TSV): ValueTSV[TSV, TTypestate] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueTSV[TSV, TTypestate]]
   }
   
-  @scala.inline
-  implicit class ValueTSVMutableBuilder[Self <: ValueTSV[?, ?], TSV /* <: /* import warning: importer.ImportType#apply Failed type conversion: TTypestate['value'] */ js.Any */, TTypestate /* <: Typestate[TContext] */] (val x: Self & (ValueTSV[TSV, TTypestate])) extends AnyVal {
+  extension [Self <: ValueTSV[?, ?], TSV /* <: /* import warning: importer.ImportType#apply Failed type conversion: TTypestate['value'] */ js.Any */, TTypestate /* <: Typestate[TContext] */](x: Self & (ValueTSV[TSV, TTypestate])) {
     
-    @scala.inline
-    def setValue(value: TSV): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TSV): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -34,8 +34,7 @@ trait SectionHeaderItem extends StObject {
 }
 object SectionHeaderItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     duplicate: () => SectionHeaderItem,
     getHelpText: () => String,
     getId: () => Integer,
@@ -49,31 +48,22 @@ object SectionHeaderItem {
     __obj.asInstanceOf[SectionHeaderItem]
   }
   
-  @scala.inline
-  implicit class SectionHeaderItemMutableBuilder[Self <: SectionHeaderItem] (val x: Self) extends AnyVal {
+  extension [Self <: SectionHeaderItem](x: Self) {
     
-    @scala.inline
-    def setDuplicate(value: () => SectionHeaderItem): Self = StObject.set(x, "duplicate", js.Any.fromFunction0(value))
+    inline def setDuplicate(value: () => SectionHeaderItem): Self = StObject.set(x, "duplicate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHelpText(value: () => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction0(value))
+    inline def setGetHelpText(value: () => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => Integer): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Integer): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
+    inline def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+    inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => ItemType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => ItemType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetHelpText(value: String => SectionHeaderItem): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
+    inline def setSetHelpText(value: String => SectionHeaderItem): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTitle(value: String => SectionHeaderItem): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: String => SectionHeaderItem): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
   }
 }

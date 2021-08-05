@@ -16,37 +16,27 @@ trait PlannerUser
 }
 object PlannerUser {
   
-  @scala.inline
-  def apply(): PlannerUser = {
+  inline def apply(): PlannerUser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlannerUser]
   }
   
-  @scala.inline
-  implicit class PlannerUserMutableBuilder[Self <: PlannerUser] (val x: Self) extends AnyVal {
+  extension [Self <: PlannerUser](x: Self) {
     
-    @scala.inline
-    def setPlans(value: NullableOption[js.Array[PlannerPlan]]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
+    inline def setPlans(value: NullableOption[js.Array[PlannerPlan]]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlansNull: Self = StObject.set(x, "plans", null)
+    inline def setPlansNull: Self = StObject.set(x, "plans", null)
     
-    @scala.inline
-    def setPlansUndefined: Self = StObject.set(x, "plans", js.undefined)
+    inline def setPlansUndefined: Self = StObject.set(x, "plans", js.undefined)
     
-    @scala.inline
-    def setPlansVarargs(value: PlannerPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
+    inline def setPlansVarargs(value: PlannerPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
     
-    @scala.inline
-    def setTasks(value: NullableOption[js.Array[PlannerTask]]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+    inline def setTasks(value: NullableOption[js.Array[PlannerTask]]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasksNull: Self = StObject.set(x, "tasks", null)
+    inline def setTasksNull: Self = StObject.set(x, "tasks", null)
     
-    @scala.inline
-    def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
+    inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
-    @scala.inline
-    def setTasksVarargs(value: PlannerTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: PlannerTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
   }
 }

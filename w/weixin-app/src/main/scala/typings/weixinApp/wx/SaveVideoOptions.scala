@@ -16,19 +16,15 @@ trait SaveVideoOptions
 }
 object SaveVideoOptions {
   
-  @scala.inline
-  def apply(filePath: String, success: String => Unit): SaveVideoOptions = {
+  inline def apply(filePath: String, success: String => Unit): SaveVideoOptions = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[SaveVideoOptions]
   }
   
-  @scala.inline
-  implicit class SaveVideoOptionsMutableBuilder[Self <: SaveVideoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SaveVideoOptions](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: String => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: String => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

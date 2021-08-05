@@ -57,33 +57,23 @@ object relayStoreUtilsMod {
   @js.native
   val TYPENAME_KEY: String = js.native
   
-  @scala.inline
-  def formatStorageKey(name: String, argValues: Arguments): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatStorageKey")(name.asInstanceOf[js.Any], argValues.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatStorageKey(name: String, argValues: Arguments): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatStorageKey")(name.asInstanceOf[js.Any], argValues.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getArgumentValues(args: js.Array[NormalizationArgument | ReaderArgument], variables: Variables): Arguments = (^.asInstanceOf[js.Dynamic].applyDynamic("getArgumentValues")(args.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[Arguments]
+  inline def getArgumentValues(args: js.Array[NormalizationArgument | ReaderArgument], variables: Variables): Arguments = (^.asInstanceOf[js.Dynamic].applyDynamic("getArgumentValues")(args.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[Arguments]
   
-  @scala.inline
-  def getHandleStorageKey(handleField: NormalizationHandle, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getHandleStorageKey")(handleField.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getHandleStorageKey(handleField: NormalizationHandle, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getHandleStorageKey")(handleField.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getModuleComponentKey(documentName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getModuleComponentKey")(documentName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getModuleComponentKey(documentName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getModuleComponentKey")(documentName.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getModuleOperationKey(documentName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getModuleOperationKey")(documentName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getModuleOperationKey(documentName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getModuleOperationKey")(documentName.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getStableStorageKey(name: String, args: Arguments): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStableStorageKey")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getStableStorageKey(name: String, args: Arguments): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStableStorageKey")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getStableVariableValue(name: String, variables: Variables): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getStableVariableValue")(name.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getStableVariableValue(name: String, variables: Variables): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getStableVariableValue")(name.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getStorageKey(field: NormalizationField, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorageKey")(field.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getStorageKey(field: NormalizationHandle, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorageKey")(field.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getStorageKey(field: ReaderField, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorageKey")(field.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getStorageKey(field: NormalizationField, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorageKey")(field.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getStorageKey(field: NormalizationHandle, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorageKey")(field.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getStorageKey(field: ReaderField, variables: Variables): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorageKey")(field.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type Arguments = StringDictionary[js.Any]
 }

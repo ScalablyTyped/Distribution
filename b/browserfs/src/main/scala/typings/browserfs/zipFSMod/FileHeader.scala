@@ -15,7 +15,7 @@ class FileHeader protected () extends StObject {
   
   def crc32(): Double = js.native
   
-  var data: js.Any = js.native
+  /* private */ var data: js.Any = js.native
   
   def extraField(): Buffer = js.native
   

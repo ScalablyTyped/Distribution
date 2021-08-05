@@ -10,16 +10,13 @@ trait IdleRequestOptions extends StObject {
 }
 object IdleRequestOptions {
   
-  @scala.inline
-  def apply(timeout: Double): IdleRequestOptions = {
+  inline def apply(timeout: Double): IdleRequestOptions = {
     val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdleRequestOptions]
   }
   
-  @scala.inline
-  implicit class IdleRequestOptionsMutableBuilder[Self <: IdleRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IdleRequestOptions](x: Self) {
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

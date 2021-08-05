@@ -14,22 +14,17 @@ trait AuditRef extends StObject {
 }
 object AuditRef {
   
-  @scala.inline
-  def apply(group: String, id: String, weight: Double): AuditRef = {
+  inline def apply(group: String, id: String, weight: Double): AuditRef = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditRef]
   }
   
-  @scala.inline
-  implicit class AuditRefMutableBuilder[Self <: AuditRef] (val x: Self) extends AnyVal {
+  extension [Self <: AuditRef](x: Self) {
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

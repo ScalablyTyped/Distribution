@@ -15,22 +15,17 @@ trait ArrayStoreOptions[T]
 }
 object ArrayStoreOptions {
   
-  @scala.inline
-  def apply[T](): ArrayStoreOptions[T] = {
+  inline def apply[T](): ArrayStoreOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArrayStoreOptions[T]]
   }
   
-  @scala.inline
-  implicit class ArrayStoreOptionsMutableBuilder[Self <: ArrayStoreOptions[?], T] (val x: Self & ArrayStoreOptions[T]) extends AnyVal {
+  extension [Self <: ArrayStoreOptions[?], T](x: Self & ArrayStoreOptions[T]) {
     
-    @scala.inline
-    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

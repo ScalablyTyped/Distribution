@@ -17,8 +17,7 @@ trait TypeofSceneUtils extends StObject {
 }
 object TypeofSceneUtils {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attach: (Object3D, Scene, Object3D) => Unit,
     createMultiMaterialObject: (Geometry, js.Array[typings.three.materialMod.Material]) => Object3D,
     detach: (Object3D, Object3D, Scene) => Unit
@@ -27,16 +26,12 @@ object TypeofSceneUtils {
     __obj.asInstanceOf[TypeofSceneUtils]
   }
   
-  @scala.inline
-  implicit class TypeofSceneUtilsMutableBuilder[Self <: TypeofSceneUtils] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSceneUtils](x: Self) {
     
-    @scala.inline
-    def setAttach(value: (Object3D, Scene, Object3D) => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction3(value))
+    inline def setAttach(value: (Object3D, Scene, Object3D) => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateMultiMaterialObject(value: (Geometry, js.Array[typings.three.materialMod.Material]) => Object3D): Self = StObject.set(x, "createMultiMaterialObject", js.Any.fromFunction2(value))
+    inline def setCreateMultiMaterialObject(value: (Geometry, js.Array[typings.three.materialMod.Material]) => Object3D): Self = StObject.set(x, "createMultiMaterialObject", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDetach(value: (Object3D, Object3D, Scene) => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction3(value))
+    inline def setDetach(value: (Object3D, Object3D, Scene) => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction3(value))
   }
 }

@@ -12,14 +12,10 @@ object appBuilderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def executeAppBuilderAndWriteJson(args: js.Array[String], data: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilderAndWriteJson")(args.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def executeAppBuilderAndWriteJson(args: js.Array[String], data: js.Any, extraOptions: SpawnOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilderAndWriteJson")(args.asInstanceOf[js.Any], data.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def executeAppBuilderAndWriteJson(args: js.Array[String], data: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilderAndWriteJson")(args.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def executeAppBuilderAndWriteJson(args: js.Array[String], data: js.Any, extraOptions: SpawnOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilderAndWriteJson")(args.asInstanceOf[js.Any], data.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def executeAppBuilderAsJson[T](args: js.Array[String]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilderAsJson")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def executeAppBuilderAsJson[T](args: js.Array[String]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilderAsJson")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
-  @scala.inline
-  def objectToArgs(to: js.Array[String], argNameToValue: StringDictionary[String | Null]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("objectToArgs")(to.asInstanceOf[js.Any], argNameToValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def objectToArgs(to: js.Array[String], argNameToValue: StringDictionary[String | Null]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("objectToArgs")(to.asInstanceOf[js.Any], argNameToValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -83,103 +83,71 @@ trait BatchWriteOperationResponse extends StObject {
 }
 object BatchWriteOperationResponse {
   
-  @scala.inline
-  def apply(): BatchWriteOperationResponse = {
+  inline def apply(): BatchWriteOperationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchWriteOperationResponse]
   }
   
-  @scala.inline
-  implicit class BatchWriteOperationResponseMutableBuilder[Self <: BatchWriteOperationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchWriteOperationResponse](x: Self) {
     
-    @scala.inline
-    def setAddFacetToObject(value: BatchAddFacetToObjectResponse): Self = StObject.set(x, "AddFacetToObject", value.asInstanceOf[js.Any])
+    inline def setAddFacetToObject(value: BatchAddFacetToObjectResponse): Self = StObject.set(x, "AddFacetToObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddFacetToObjectUndefined: Self = StObject.set(x, "AddFacetToObject", js.undefined)
+    inline def setAddFacetToObjectUndefined: Self = StObject.set(x, "AddFacetToObject", js.undefined)
     
-    @scala.inline
-    def setAttachObject(value: BatchAttachObjectResponse): Self = StObject.set(x, "AttachObject", value.asInstanceOf[js.Any])
+    inline def setAttachObject(value: BatchAttachObjectResponse): Self = StObject.set(x, "AttachObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachObjectUndefined: Self = StObject.set(x, "AttachObject", js.undefined)
+    inline def setAttachObjectUndefined: Self = StObject.set(x, "AttachObject", js.undefined)
     
-    @scala.inline
-    def setAttachPolicy(value: BatchAttachPolicyResponse): Self = StObject.set(x, "AttachPolicy", value.asInstanceOf[js.Any])
+    inline def setAttachPolicy(value: BatchAttachPolicyResponse): Self = StObject.set(x, "AttachPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachPolicyUndefined: Self = StObject.set(x, "AttachPolicy", js.undefined)
+    inline def setAttachPolicyUndefined: Self = StObject.set(x, "AttachPolicy", js.undefined)
     
-    @scala.inline
-    def setAttachToIndex(value: BatchAttachToIndexResponse): Self = StObject.set(x, "AttachToIndex", value.asInstanceOf[js.Any])
+    inline def setAttachToIndex(value: BatchAttachToIndexResponse): Self = StObject.set(x, "AttachToIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachToIndexUndefined: Self = StObject.set(x, "AttachToIndex", js.undefined)
+    inline def setAttachToIndexUndefined: Self = StObject.set(x, "AttachToIndex", js.undefined)
     
-    @scala.inline
-    def setAttachTypedLink(value: BatchAttachTypedLinkResponse): Self = StObject.set(x, "AttachTypedLink", value.asInstanceOf[js.Any])
+    inline def setAttachTypedLink(value: BatchAttachTypedLinkResponse): Self = StObject.set(x, "AttachTypedLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachTypedLinkUndefined: Self = StObject.set(x, "AttachTypedLink", js.undefined)
+    inline def setAttachTypedLinkUndefined: Self = StObject.set(x, "AttachTypedLink", js.undefined)
     
-    @scala.inline
-    def setCreateIndex(value: BatchCreateIndexResponse): Self = StObject.set(x, "CreateIndex", value.asInstanceOf[js.Any])
+    inline def setCreateIndex(value: BatchCreateIndexResponse): Self = StObject.set(x, "CreateIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateIndexUndefined: Self = StObject.set(x, "CreateIndex", js.undefined)
+    inline def setCreateIndexUndefined: Self = StObject.set(x, "CreateIndex", js.undefined)
     
-    @scala.inline
-    def setCreateObject(value: BatchCreateObjectResponse): Self = StObject.set(x, "CreateObject", value.asInstanceOf[js.Any])
+    inline def setCreateObject(value: BatchCreateObjectResponse): Self = StObject.set(x, "CreateObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateObjectUndefined: Self = StObject.set(x, "CreateObject", js.undefined)
+    inline def setCreateObjectUndefined: Self = StObject.set(x, "CreateObject", js.undefined)
     
-    @scala.inline
-    def setDeleteObject(value: BatchDeleteObjectResponse): Self = StObject.set(x, "DeleteObject", value.asInstanceOf[js.Any])
+    inline def setDeleteObject(value: BatchDeleteObjectResponse): Self = StObject.set(x, "DeleteObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteObjectUndefined: Self = StObject.set(x, "DeleteObject", js.undefined)
+    inline def setDeleteObjectUndefined: Self = StObject.set(x, "DeleteObject", js.undefined)
     
-    @scala.inline
-    def setDetachFromIndex(value: BatchDetachFromIndexResponse): Self = StObject.set(x, "DetachFromIndex", value.asInstanceOf[js.Any])
+    inline def setDetachFromIndex(value: BatchDetachFromIndexResponse): Self = StObject.set(x, "DetachFromIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachFromIndexUndefined: Self = StObject.set(x, "DetachFromIndex", js.undefined)
+    inline def setDetachFromIndexUndefined: Self = StObject.set(x, "DetachFromIndex", js.undefined)
     
-    @scala.inline
-    def setDetachObject(value: BatchDetachObjectResponse): Self = StObject.set(x, "DetachObject", value.asInstanceOf[js.Any])
+    inline def setDetachObject(value: BatchDetachObjectResponse): Self = StObject.set(x, "DetachObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachObjectUndefined: Self = StObject.set(x, "DetachObject", js.undefined)
+    inline def setDetachObjectUndefined: Self = StObject.set(x, "DetachObject", js.undefined)
     
-    @scala.inline
-    def setDetachPolicy(value: BatchDetachPolicyResponse): Self = StObject.set(x, "DetachPolicy", value.asInstanceOf[js.Any])
+    inline def setDetachPolicy(value: BatchDetachPolicyResponse): Self = StObject.set(x, "DetachPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachPolicyUndefined: Self = StObject.set(x, "DetachPolicy", js.undefined)
+    inline def setDetachPolicyUndefined: Self = StObject.set(x, "DetachPolicy", js.undefined)
     
-    @scala.inline
-    def setDetachTypedLink(value: BatchDetachTypedLinkResponse): Self = StObject.set(x, "DetachTypedLink", value.asInstanceOf[js.Any])
+    inline def setDetachTypedLink(value: BatchDetachTypedLinkResponse): Self = StObject.set(x, "DetachTypedLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachTypedLinkUndefined: Self = StObject.set(x, "DetachTypedLink", js.undefined)
+    inline def setDetachTypedLinkUndefined: Self = StObject.set(x, "DetachTypedLink", js.undefined)
     
-    @scala.inline
-    def setRemoveFacetFromObject(value: BatchRemoveFacetFromObjectResponse): Self = StObject.set(x, "RemoveFacetFromObject", value.asInstanceOf[js.Any])
+    inline def setRemoveFacetFromObject(value: BatchRemoveFacetFromObjectResponse): Self = StObject.set(x, "RemoveFacetFromObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveFacetFromObjectUndefined: Self = StObject.set(x, "RemoveFacetFromObject", js.undefined)
+    inline def setRemoveFacetFromObjectUndefined: Self = StObject.set(x, "RemoveFacetFromObject", js.undefined)
     
-    @scala.inline
-    def setUpdateLinkAttributes(value: BatchUpdateLinkAttributesResponse): Self = StObject.set(x, "UpdateLinkAttributes", value.asInstanceOf[js.Any])
+    inline def setUpdateLinkAttributes(value: BatchUpdateLinkAttributesResponse): Self = StObject.set(x, "UpdateLinkAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateLinkAttributesUndefined: Self = StObject.set(x, "UpdateLinkAttributes", js.undefined)
+    inline def setUpdateLinkAttributesUndefined: Self = StObject.set(x, "UpdateLinkAttributes", js.undefined)
     
-    @scala.inline
-    def setUpdateObjectAttributes(value: BatchUpdateObjectAttributesResponse): Self = StObject.set(x, "UpdateObjectAttributes", value.asInstanceOf[js.Any])
+    inline def setUpdateObjectAttributes(value: BatchUpdateObjectAttributesResponse): Self = StObject.set(x, "UpdateObjectAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateObjectAttributesUndefined: Self = StObject.set(x, "UpdateObjectAttributes", js.undefined)
+    inline def setUpdateObjectAttributesUndefined: Self = StObject.set(x, "UpdateObjectAttributes", js.undefined)
   }
 }

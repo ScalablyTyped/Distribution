@@ -14,19 +14,15 @@ trait TypeofCalendar extends StObject {
 }
 object TypeofCalendar {
   
-  @scala.inline
-  def apply(extend: js.Object => typings.kendoUi.kendo.ui.Calendar, fn: typings.kendoUi.kendo.ui.Calendar): TypeofCalendar = {
+  inline def apply(extend: js.Object => typings.kendoUi.kendo.ui.Calendar, fn: typings.kendoUi.kendo.ui.Calendar): TypeofCalendar = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofCalendar]
   }
   
-  @scala.inline
-  implicit class TypeofCalendarMutableBuilder[Self <: TypeofCalendar] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofCalendar](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => typings.kendoUi.kendo.ui.Calendar): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => typings.kendoUi.kendo.ui.Calendar): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: typings.kendoUi.kendo.ui.Calendar): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: typings.kendoUi.kendo.ui.Calendar): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

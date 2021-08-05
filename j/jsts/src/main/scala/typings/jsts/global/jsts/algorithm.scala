@@ -29,43 +29,35 @@ object algorithm {
     @JSGlobal("jsts.algorithm.Orientation.CLOCKWISE")
     @js.native
     def CLOCKWISE: Double = js.native
-    @scala.inline
-    def CLOCKWISE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOCKWISE")(x.asInstanceOf[js.Any])
+    inline def CLOCKWISE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOCKWISE")(x.asInstanceOf[js.Any])
     
     @JSGlobal("jsts.algorithm.Orientation.COLLINEAR")
     @js.native
     def COLLINEAR: Double = js.native
-    @scala.inline
-    def COLLINEAR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COLLINEAR")(x.asInstanceOf[js.Any])
+    inline def COLLINEAR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COLLINEAR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("jsts.algorithm.Orientation.COUNTERCLOCKWISE")
     @js.native
     def COUNTERCLOCKWISE: Double = js.native
-    @scala.inline
-    def COUNTERCLOCKWISE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COUNTERCLOCKWISE")(x.asInstanceOf[js.Any])
+    inline def COUNTERCLOCKWISE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COUNTERCLOCKWISE")(x.asInstanceOf[js.Any])
     
     @JSGlobal("jsts.algorithm.Orientation.LEFT")
     @js.native
     def LEFT: Double = js.native
-    @scala.inline
-    def LEFT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT")(x.asInstanceOf[js.Any])
+    inline def LEFT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT")(x.asInstanceOf[js.Any])
     
     @JSGlobal("jsts.algorithm.Orientation.RIGHT")
     @js.native
     def RIGHT: Double = js.native
-    @scala.inline
-    def RIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
+    inline def RIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
     
     @JSGlobal("jsts.algorithm.Orientation.STRAIGHT")
     @js.native
     def STRAIGHT: Double = js.native
-    @scala.inline
-    def STRAIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRAIGHT")(x.asInstanceOf[js.Any])
+    inline def STRAIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRAIGHT")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def index(p1: Point, p2: Point, q: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def index(p1: Point, p2: Point, q: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def isCCW(ring: js.Array[Coordinate]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCCW")(ring.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isCCW(ring: js.Array[Coordinate]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCCW")(ring.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

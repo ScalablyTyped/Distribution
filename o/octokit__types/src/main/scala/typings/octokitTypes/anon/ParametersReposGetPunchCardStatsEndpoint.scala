@@ -18,8 +18,7 @@ trait ParametersReposGetPunchCardStatsEndpoint extends StObject {
 }
 object ParametersReposGetPunchCardStatsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposGetPunchCardStatsEndpoint,
     request: ReposGetPunchCardStatsRequestOptions,
     response: OctokitResponse[ReposGetPunchCardStatsResponseData]
@@ -28,16 +27,12 @@ object ParametersReposGetPunchCardStatsEndpoint {
     __obj.asInstanceOf[ParametersReposGetPunchCardStatsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposGetPunchCardStatsEndpointMutableBuilder[Self <: ParametersReposGetPunchCardStatsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposGetPunchCardStatsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposGetPunchCardStatsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposGetPunchCardStatsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposGetPunchCardStatsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposGetPunchCardStatsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetPunchCardStatsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetPunchCardStatsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

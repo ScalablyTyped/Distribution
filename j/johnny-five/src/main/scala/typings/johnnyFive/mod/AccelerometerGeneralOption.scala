@@ -10,19 +10,15 @@ trait AccelerometerGeneralOption extends StObject {
 }
 object AccelerometerGeneralOption {
   
-  @scala.inline
-  def apply(): AccelerometerGeneralOption = {
+  inline def apply(): AccelerometerGeneralOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccelerometerGeneralOption]
   }
   
-  @scala.inline
-  implicit class AccelerometerGeneralOptionMutableBuilder[Self <: AccelerometerGeneralOption] (val x: Self) extends AnyVal {
+  extension [Self <: AccelerometerGeneralOption](x: Self) {
     
-    @scala.inline
-    def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+    inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
   }
 }

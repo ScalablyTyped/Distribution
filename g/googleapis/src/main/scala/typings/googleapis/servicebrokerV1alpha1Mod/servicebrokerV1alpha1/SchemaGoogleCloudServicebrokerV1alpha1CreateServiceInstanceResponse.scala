@@ -25,25 +25,19 @@ trait SchemaGoogleCloudServicebrokerV1alpha1CreateServiceInstanceResponse extend
 }
 object SchemaGoogleCloudServicebrokerV1alpha1CreateServiceInstanceResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudServicebrokerV1alpha1CreateServiceInstanceResponse = {
+  inline def apply(): SchemaGoogleCloudServicebrokerV1alpha1CreateServiceInstanceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudServicebrokerV1alpha1CreateServiceInstanceResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudServicebrokerV1alpha1CreateServiceInstanceResponseMutableBuilder[Self <: SchemaGoogleCloudServicebrokerV1alpha1CreateServiceInstanceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudServicebrokerV1alpha1CreateServiceInstanceResponse](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
   }
 }

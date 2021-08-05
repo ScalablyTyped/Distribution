@@ -11,6 +11,5 @@ object treeLevelColumnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def TreeLevelColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeLevelColumn")().asInstanceOf[PropertyDecorator]
+  inline def TreeLevelColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeLevelColumn")().asInstanceOf[PropertyDecorator]
 }

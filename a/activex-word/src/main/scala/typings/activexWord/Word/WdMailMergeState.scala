@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdMailMergeState extends StObject
 object WdMailMergeState {
   
-  @scala.inline
-  def wdDataSource: `5` = 5.asInstanceOf[`5`]
+  inline def wdDataSource: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdMainAndDataSource: `2` = 2.asInstanceOf[`2`]
+  inline def wdMainAndDataSource: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdMainAndHeader: `3` = 3.asInstanceOf[`3`]
+  inline def wdMainAndHeader: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdMainAndSourceAndHeader: `4` = 4.asInstanceOf[`4`]
+  inline def wdMainAndSourceAndHeader: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdMainDocumentOnly: `1` = 1.asInstanceOf[`1`]
+  inline def wdMainDocumentOnly: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdNormalDocument: `0` = 0.asInstanceOf[`0`]
+  inline def wdNormalDocument: `0` = 0.asInstanceOf[`0`]
 }

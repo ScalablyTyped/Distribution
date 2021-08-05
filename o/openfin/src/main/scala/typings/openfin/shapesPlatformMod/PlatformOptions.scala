@@ -16,25 +16,19 @@ trait PlatformOptions
 }
 object PlatformOptions {
   
-  @scala.inline
-  def apply(uuid: String): PlatformOptions = {
+  inline def apply(uuid: String): PlatformOptions = {
     val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformOptions]
   }
   
-  @scala.inline
-  implicit class PlatformOptionsMutableBuilder[Self <: PlatformOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlatformOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultWindowOptions(value: DefaultWindowOptions): Self = StObject.set(x, "defaultWindowOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultWindowOptions(value: DefaultWindowOptions): Self = StObject.set(x, "defaultWindowOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultWindowOptionsUndefined: Self = StObject.set(x, "defaultWindowOptions", js.undefined)
+    inline def setDefaultWindowOptionsUndefined: Self = StObject.set(x, "defaultWindowOptions", js.undefined)
     
-    @scala.inline
-    def setDisableDefaultCommands(value: Boolean): Self = StObject.set(x, "disableDefaultCommands", value.asInstanceOf[js.Any])
+    inline def setDisableDefaultCommands(value: Boolean): Self = StObject.set(x, "disableDefaultCommands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableDefaultCommandsUndefined: Self = StObject.set(x, "disableDefaultCommands", js.undefined)
+    inline def setDisableDefaultCommandsUndefined: Self = StObject.set(x, "disableDefaultCommands", js.undefined)
   }
 }

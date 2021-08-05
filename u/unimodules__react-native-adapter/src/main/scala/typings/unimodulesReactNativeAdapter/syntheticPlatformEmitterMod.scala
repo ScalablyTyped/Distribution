@@ -19,20 +19,16 @@ object syntheticPlatformEmitterMod extends Shortcut {
   }
   object SyntheticPlatformEmitter {
     
-    @scala.inline
-    def apply(_emitter: js.Any, emit: (String, js.Any) => Unit): SyntheticPlatformEmitter = {
+    inline def apply(_emitter: js.Any, emit: (String, js.Any) => Unit): SyntheticPlatformEmitter = {
       val __obj = js.Dynamic.literal(_emitter = _emitter.asInstanceOf[js.Any], emit = js.Any.fromFunction2(emit))
       __obj.asInstanceOf[SyntheticPlatformEmitter]
     }
     
-    @scala.inline
-    implicit class SyntheticPlatformEmitterMutableBuilder[Self <: SyntheticPlatformEmitter] (val x: Self) extends AnyVal {
+    extension [Self <: SyntheticPlatformEmitter](x: Self) {
       
-      @scala.inline
-      def setEmit(value: (String, js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_emitter(value: js.Any): Self = StObject.set(x, "_emitter", value.asInstanceOf[js.Any])
+      inline def set_emitter(value: js.Any): Self = StObject.set(x, "_emitter", value.asInstanceOf[js.Any])
     }
   }
   

@@ -20,29 +20,22 @@ object hooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useFrame(callback: RenderCallback): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Null]
-  @scala.inline
-  def useFrame(callback: RenderCallback, renderPriority: Double): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useFrame")(callback.asInstanceOf[js.Any], renderPriority.asInstanceOf[js.Any])).asInstanceOf[Null]
+  inline def useFrame(callback: RenderCallback): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Null]
+  inline def useFrame(callback: RenderCallback, renderPriority: Double): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useFrame")(callback.asInstanceOf[js.Any], renderPriority.asInstanceOf[js.Any])).asInstanceOf[Null]
   
-  @scala.inline
-  def useGraph(`object`: Object3D): ObjectMap = ^.asInstanceOf[js.Dynamic].applyDynamic("useGraph")(`object`.asInstanceOf[js.Any]).asInstanceOf[ObjectMap]
+  inline def useGraph(`object`: Object3D): ObjectMap = ^.asInstanceOf[js.Dynamic].applyDynamic("useGraph")(`object`.asInstanceOf[js.Any]).asInstanceOf[ObjectMap]
   
   object useLoader {
     
-    @scala.inline
-    def apply[T](Proto: Instantiable0[LoaderResult[T]], input: String | js.Array[String]): T = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[T]
-    @scala.inline
-    def apply[T](
+    inline def apply[T](Proto: Instantiable0[LoaderResult[T]], input: String | js.Array[String]): T = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def apply[T](
       Proto: Instantiable0[LoaderResult[T]],
       input: String | js.Array[String],
       extensions: Unit,
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
     ): T = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[T]
-    @scala.inline
-    def apply[T](Proto: Instantiable0[LoaderResult[T]], input: String | js.Array[String], extensions: Extensions): T = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[T]
-    @scala.inline
-    def apply[T](
+    inline def apply[T](Proto: Instantiable0[LoaderResult[T]], input: String | js.Array[String], extensions: Extensions): T = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def apply[T](
       Proto: Instantiable0[LoaderResult[T]],
       input: String | js.Array[String],
       extensions: Extensions,
@@ -61,8 +54,7 @@ object hooksMod {
         /* extensions */ js.UndefOr[Extensions], 
         Unit
       ] = js.native
-    @scala.inline
-    def preload_=(
+    inline def preload_=(
       x: js.Function3[
           /* Proto */ Instantiable0[LoaderResult[js.Any]], 
           /* url */ String | js.Array[String], 
@@ -72,18 +64,13 @@ object hooksMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preload")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def useResource[T](): MutableRefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResource")().asInstanceOf[MutableRefObject[T]]
-  @scala.inline
-  def useResource[T](optionalRef: MutableRefObject[T]): MutableRefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResource")(optionalRef.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[T]]
+  inline def useResource[T](): MutableRefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResource")().asInstanceOf[MutableRefObject[T]]
+  inline def useResource[T](optionalRef: MutableRefObject[T]): MutableRefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResource")(optionalRef.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[T]]
   
-  @scala.inline
-  def useThree(): SharedCanvasContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useThree")().asInstanceOf[SharedCanvasContext]
+  inline def useThree(): SharedCanvasContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useThree")().asInstanceOf[SharedCanvasContext]
   
-  @scala.inline
-  def useUpdate[T](callback: js.Function1[/* props */ T, Unit], dependents: js.Array[js.Any]): MutableRefObject[T | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("useUpdate")(callback.asInstanceOf[js.Any], dependents.asInstanceOf[js.Any])).asInstanceOf[MutableRefObject[T | Unit]]
-  @scala.inline
-  def useUpdate[T](
+  inline def useUpdate[T](callback: js.Function1[/* props */ T, Unit], dependents: js.Array[js.Any]): MutableRefObject[T | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("useUpdate")(callback.asInstanceOf[js.Any], dependents.asInstanceOf[js.Any])).asInstanceOf[MutableRefObject[T | Unit]]
+  inline def useUpdate[T](
     callback: js.Function1[/* props */ T, Unit],
     dependents: js.Array[js.Any],
     optionalRef: MutableRefObject[T]
@@ -136,20 +123,16 @@ object hooksMod {
   }
   object ObjectMap {
     
-    @scala.inline
-    def apply(materials: StringDictionary[Material], nodes: StringDictionary[Object3D]): ObjectMap = {
+    inline def apply(materials: StringDictionary[Material], nodes: StringDictionary[Object3D]): ObjectMap = {
       val __obj = js.Dynamic.literal(materials = materials.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[ObjectMap]
     }
     
-    @scala.inline
-    implicit class ObjectMapMutableBuilder[Self <: ObjectMap] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectMap](x: Self) {
       
-      @scala.inline
-      def setMaterials(value: StringDictionary[Material]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
+      inline def setMaterials(value: StringDictionary[Material]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodes(value: StringDictionary[Object3D]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: StringDictionary[Object3D]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     }
   }
 }

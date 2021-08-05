@@ -160,10 +160,8 @@ object mod {
       * @param types - Which chart types should call this method. Defaults to all
       * if none is passed.
       */
-    @scala.inline
-    def addInitHandler(handler: js.Function0[js.Object]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addInitHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def addInitHandler(handler: js.Function0[js.Object], types: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addInitHandler")(handler.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def addInitHandler(handler: js.Function0[js.Object]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addInitHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def addInitHandler(handler: js.Function0[js.Object], types: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addInitHandler")(handler.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Set it to true if you have base href set for your page.
@@ -172,14 +170,12 @@ object mod {
     @JSImport("amcharts", "AmCharts.baseHref")
     @js.native
     def baseHref: Boolean = js.native
-    @scala.inline
-    def baseHref_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseHref")(x.asInstanceOf[js.Any])
+    inline def baseHref_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseHref")(x.asInstanceOf[js.Any])
     
     /**
       * Clears all the charts on page, removes listeners and intervals.
       */
-    @scala.inline
-    def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+    inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
     
     /**
       * Array of day names, used when formatting dates (if categoryAxis.parseDates is set to true)
@@ -188,16 +184,13 @@ object mod {
     @JSImport("amcharts", "AmCharts.dayNames")
     @js.native
     def dayNames: js.Array[String] = js.native
-    @scala.inline
-    def dayNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dayNames")(x.asInstanceOf[js.Any])
+    inline def dayNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dayNames")(x.asInstanceOf[js.Any])
     
     /**
       * Create chart by params.
       */
-    @scala.inline
-    def makeChart(selector: String, params: js.Any): AmChart = (^.asInstanceOf[js.Dynamic].applyDynamic("makeChart")(selector.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[AmChart]
-    @scala.inline
-    def makeChart(selector: String, params: js.Any, delay: Double): AmChart = (^.asInstanceOf[js.Dynamic].applyDynamic("makeChart")(selector.asInstanceOf[js.Any], params.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[AmChart]
+    inline def makeChart(selector: String, params: js.Any): AmChart = (^.asInstanceOf[js.Dynamic].applyDynamic("makeChart")(selector.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[AmChart]
+    inline def makeChart(selector: String, params: js.Any, delay: Double): AmChart = (^.asInstanceOf[js.Dynamic].applyDynamic("makeChart")(selector.asInstanceOf[js.Any], params.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[AmChart]
     
     /**
       * Array of month names, used when formatting dates (if categoryAxis.parseDates is set to true)
@@ -209,8 +202,7 @@ object mod {
     @JSImport("amcharts", "AmCharts.monthNames")
     @js.native
     def monthNames: js.Array[String] = js.native
-    @scala.inline
-    def monthNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("monthNames")(x.asInstanceOf[js.Any])
+    inline def monthNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("monthNames")(x.asInstanceOf[js.Any])
     
     /**
       * Array of short versions of day names, used when formatting dates (if categoryAxis.parseDates is set to true)
@@ -219,8 +211,7 @@ object mod {
     @JSImport("amcharts", "AmCharts.shortDayNames")
     @js.native
     def shortDayNames: js.Array[String] = js.native
-    @scala.inline
-    def shortDayNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortDayNames")(x.asInstanceOf[js.Any])
+    inline def shortDayNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortDayNames")(x.asInstanceOf[js.Any])
     
     /**
       * Array of short versions of month names, used when formatting dates (if categoryAxis.parseDates is set to true)
@@ -229,8 +220,7 @@ object mod {
     @JSImport("amcharts", "AmCharts.shortMonthNames")
     @js.native
     def shortMonthNames: js.Array[String] = js.native
-    @scala.inline
-    def shortMonthNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortMonthNames")(x.asInstanceOf[js.Any])
+    inline def shortMonthNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortMonthNames")(x.asInstanceOf[js.Any])
     
     /**
       * Set global used AmCharts theme.
@@ -238,8 +228,7 @@ object mod {
     @JSImport("amcharts", "AmCharts.theme")
     @js.native
     def theme: js.Any = js.native
-    @scala.inline
-    def theme_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
+    inline def theme_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
     
     /**
       * Object with existing themes.
@@ -247,8 +236,7 @@ object mod {
     @JSImport("amcharts", "AmCharts.themes")
     @js.native
     def themes: js.Any = js.native
-    @scala.inline
-    def themes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("themes")(x.asInstanceOf[js.Any])
+    inline def themes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("themes")(x.asInstanceOf[js.Any])
     
     /**
       * Set it to true if you want UTC time to be used instead of local time.
@@ -256,7 +244,6 @@ object mod {
     @JSImport("amcharts", "AmCharts.useUTC")
     @js.native
     def useUTC: Boolean = js.native
-    @scala.inline
-    def useUTC_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useUTC")(x.asInstanceOf[js.Any])
+    inline def useUTC_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useUTC")(x.asInstanceOf[js.Any])
   }
 }

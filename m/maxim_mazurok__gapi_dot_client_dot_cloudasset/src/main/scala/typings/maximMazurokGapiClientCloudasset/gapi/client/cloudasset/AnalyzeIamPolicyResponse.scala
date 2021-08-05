@@ -17,34 +17,25 @@ trait AnalyzeIamPolicyResponse extends StObject {
 }
 object AnalyzeIamPolicyResponse {
   
-  @scala.inline
-  def apply(): AnalyzeIamPolicyResponse = {
+  inline def apply(): AnalyzeIamPolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnalyzeIamPolicyResponse]
   }
   
-  @scala.inline
-  implicit class AnalyzeIamPolicyResponseMutableBuilder[Self <: AnalyzeIamPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyzeIamPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setFullyExplored(value: Boolean): Self = StObject.set(x, "fullyExplored", value.asInstanceOf[js.Any])
+    inline def setFullyExplored(value: Boolean): Self = StObject.set(x, "fullyExplored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullyExploredUndefined: Self = StObject.set(x, "fullyExplored", js.undefined)
+    inline def setFullyExploredUndefined: Self = StObject.set(x, "fullyExplored", js.undefined)
     
-    @scala.inline
-    def setMainAnalysis(value: IamPolicyAnalysis): Self = StObject.set(x, "mainAnalysis", value.asInstanceOf[js.Any])
+    inline def setMainAnalysis(value: IamPolicyAnalysis): Self = StObject.set(x, "mainAnalysis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainAnalysisUndefined: Self = StObject.set(x, "mainAnalysis", js.undefined)
+    inline def setMainAnalysisUndefined: Self = StObject.set(x, "mainAnalysis", js.undefined)
     
-    @scala.inline
-    def setServiceAccountImpersonationAnalysis(value: js.Array[IamPolicyAnalysis]): Self = StObject.set(x, "serviceAccountImpersonationAnalysis", value.asInstanceOf[js.Any])
+    inline def setServiceAccountImpersonationAnalysis(value: js.Array[IamPolicyAnalysis]): Self = StObject.set(x, "serviceAccountImpersonationAnalysis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountImpersonationAnalysisUndefined: Self = StObject.set(x, "serviceAccountImpersonationAnalysis", js.undefined)
+    inline def setServiceAccountImpersonationAnalysisUndefined: Self = StObject.set(x, "serviceAccountImpersonationAnalysis", js.undefined)
     
-    @scala.inline
-    def setServiceAccountImpersonationAnalysisVarargs(value: IamPolicyAnalysis*): Self = StObject.set(x, "serviceAccountImpersonationAnalysis", js.Array(value :_*))
+    inline def setServiceAccountImpersonationAnalysisVarargs(value: IamPolicyAnalysis*): Self = StObject.set(x, "serviceAccountImpersonationAnalysis", js.Array(value :_*))
   }
 }

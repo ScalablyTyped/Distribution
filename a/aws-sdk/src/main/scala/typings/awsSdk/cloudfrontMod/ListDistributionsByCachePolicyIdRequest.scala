@@ -23,28 +23,21 @@ trait ListDistributionsByCachePolicyIdRequest extends StObject {
 }
 object ListDistributionsByCachePolicyIdRequest {
   
-  @scala.inline
-  def apply(CachePolicyId: String): ListDistributionsByCachePolicyIdRequest = {
+  inline def apply(CachePolicyId: String): ListDistributionsByCachePolicyIdRequest = {
     val __obj = js.Dynamic.literal(CachePolicyId = CachePolicyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDistributionsByCachePolicyIdRequest]
   }
   
-  @scala.inline
-  implicit class ListDistributionsByCachePolicyIdRequestMutableBuilder[Self <: ListDistributionsByCachePolicyIdRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListDistributionsByCachePolicyIdRequest](x: Self) {
     
-    @scala.inline
-    def setCachePolicyId(value: String): Self = StObject.set(x, "CachePolicyId", value.asInstanceOf[js.Any])
+    inline def setCachePolicyId(value: String): Self = StObject.set(x, "CachePolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: String): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: String): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

@@ -60,55 +60,39 @@ trait _InitializeParams
 }
 object _InitializeParams {
   
-  @scala.inline
-  def apply(capabilities: ClientCapabilities): _InitializeParams = {
+  inline def apply(capabilities: ClientCapabilities): _InitializeParams = {
     val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], processId = null, rootUri = null)
     __obj.asInstanceOf[_InitializeParams]
   }
   
-  @scala.inline
-  implicit class _InitializeParamsMutableBuilder[Self <: _InitializeParams] (val x: Self) extends AnyVal {
+  extension [Self <: _InitializeParams](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: ClientCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: ClientCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientInfo(value: Name): Self = StObject.set(x, "clientInfo", value.asInstanceOf[js.Any])
+    inline def setClientInfo(value: Name): Self = StObject.set(x, "clientInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientInfoUndefined: Self = StObject.set(x, "clientInfo", js.undefined)
+    inline def setClientInfoUndefined: Self = StObject.set(x, "clientInfo", js.undefined)
     
-    @scala.inline
-    def setInitializationOptions(value: js.Any): Self = StObject.set(x, "initializationOptions", value.asInstanceOf[js.Any])
+    inline def setInitializationOptions(value: js.Any): Self = StObject.set(x, "initializationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializationOptionsUndefined: Self = StObject.set(x, "initializationOptions", js.undefined)
+    inline def setInitializationOptionsUndefined: Self = StObject.set(x, "initializationOptions", js.undefined)
     
-    @scala.inline
-    def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+    inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessIdNull: Self = StObject.set(x, "processId", null)
+    inline def setProcessIdNull: Self = StObject.set(x, "processId", null)
     
-    @scala.inline
-    def setRootPath(value: String): Self = StObject.set(x, "rootPath", value.asInstanceOf[js.Any])
+    inline def setRootPath(value: String): Self = StObject.set(x, "rootPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootPathNull: Self = StObject.set(x, "rootPath", null)
+    inline def setRootPathNull: Self = StObject.set(x, "rootPath", null)
     
-    @scala.inline
-    def setRootPathUndefined: Self = StObject.set(x, "rootPath", js.undefined)
+    inline def setRootPathUndefined: Self = StObject.set(x, "rootPath", js.undefined)
     
-    @scala.inline
-    def setRootUri(value: DocumentUri): Self = StObject.set(x, "rootUri", value.asInstanceOf[js.Any])
+    inline def setRootUri(value: DocumentUri): Self = StObject.set(x, "rootUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUriNull: Self = StObject.set(x, "rootUri", null)
+    inline def setRootUriNull: Self = StObject.set(x, "rootUri", null)
     
-    @scala.inline
-    def setTrace(value: off | messages | verbose): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+    inline def setTrace(value: off | messages | verbose): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+    inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
   }
 }

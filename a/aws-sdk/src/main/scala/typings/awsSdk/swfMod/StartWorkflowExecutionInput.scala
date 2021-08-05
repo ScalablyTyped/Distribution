@@ -63,73 +63,51 @@ trait StartWorkflowExecutionInput extends StObject {
 }
 object StartWorkflowExecutionInput {
   
-  @scala.inline
-  def apply(domain: DomainName, workflowId: WorkflowId, workflowType: WorkflowType): StartWorkflowExecutionInput = {
+  inline def apply(domain: DomainName, workflowId: WorkflowId, workflowType: WorkflowType): StartWorkflowExecutionInput = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], workflowId = workflowId.asInstanceOf[js.Any], workflowType = workflowType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartWorkflowExecutionInput]
   }
   
-  @scala.inline
-  implicit class StartWorkflowExecutionInputMutableBuilder[Self <: StartWorkflowExecutionInput] (val x: Self) extends AnyVal {
+  extension [Self <: StartWorkflowExecutionInput](x: Self) {
     
-    @scala.inline
-    def setChildPolicy(value: ChildPolicy): Self = StObject.set(x, "childPolicy", value.asInstanceOf[js.Any])
+    inline def setChildPolicy(value: ChildPolicy): Self = StObject.set(x, "childPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildPolicyUndefined: Self = StObject.set(x, "childPolicy", js.undefined)
+    inline def setChildPolicyUndefined: Self = StObject.set(x, "childPolicy", js.undefined)
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "executionStartToCloseTimeout", value.asInstanceOf[js.Any])
+    inline def setExecutionStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "executionStartToCloseTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionStartToCloseTimeoutUndefined: Self = StObject.set(x, "executionStartToCloseTimeout", js.undefined)
+    inline def setExecutionStartToCloseTimeoutUndefined: Self = StObject.set(x, "executionStartToCloseTimeout", js.undefined)
     
-    @scala.inline
-    def setInput(value: Data): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Data): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setLambdaRole(value: Arn): Self = StObject.set(x, "lambdaRole", value.asInstanceOf[js.Any])
+    inline def setLambdaRole(value: Arn): Self = StObject.set(x, "lambdaRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaRoleUndefined: Self = StObject.set(x, "lambdaRole", js.undefined)
+    inline def setLambdaRoleUndefined: Self = StObject.set(x, "lambdaRole", js.undefined)
     
-    @scala.inline
-    def setTagList(value: TagList): Self = StObject.set(x, "tagList", value.asInstanceOf[js.Any])
+    inline def setTagList(value: TagList): Self = StObject.set(x, "tagList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagListUndefined: Self = StObject.set(x, "tagList", js.undefined)
+    inline def setTagListUndefined: Self = StObject.set(x, "tagList", js.undefined)
     
-    @scala.inline
-    def setTagListVarargs(value: Tag*): Self = StObject.set(x, "tagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "tagList", js.Array(value :_*))
     
-    @scala.inline
-    def setTaskList(value: TaskList): Self = StObject.set(x, "taskList", value.asInstanceOf[js.Any])
+    inline def setTaskList(value: TaskList): Self = StObject.set(x, "taskList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskListUndefined: Self = StObject.set(x, "taskList", js.undefined)
+    inline def setTaskListUndefined: Self = StObject.set(x, "taskList", js.undefined)
     
-    @scala.inline
-    def setTaskPriority(value: TaskPriority): Self = StObject.set(x, "taskPriority", value.asInstanceOf[js.Any])
+    inline def setTaskPriority(value: TaskPriority): Self = StObject.set(x, "taskPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskPriorityUndefined: Self = StObject.set(x, "taskPriority", js.undefined)
+    inline def setTaskPriorityUndefined: Self = StObject.set(x, "taskPriority", js.undefined)
     
-    @scala.inline
-    def setTaskStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "taskStartToCloseTimeout", value.asInstanceOf[js.Any])
+    inline def setTaskStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "taskStartToCloseTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskStartToCloseTimeoutUndefined: Self = StObject.set(x, "taskStartToCloseTimeout", js.undefined)
+    inline def setTaskStartToCloseTimeoutUndefined: Self = StObject.set(x, "taskStartToCloseTimeout", js.undefined)
     
-    @scala.inline
-    def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
+    inline def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
+    inline def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
   }
 }

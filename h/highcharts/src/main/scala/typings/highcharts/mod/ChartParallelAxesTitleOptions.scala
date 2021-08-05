@@ -42,31 +42,23 @@ trait ChartParallelAxesTitleOptions extends StObject {
 }
 object ChartParallelAxesTitleOptions {
   
-  @scala.inline
-  def apply(): ChartParallelAxesTitleOptions = {
+  inline def apply(): ChartParallelAxesTitleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartParallelAxesTitleOptions]
   }
   
-  @scala.inline
-  implicit class ChartParallelAxesTitleOptionsMutableBuilder[Self <: ChartParallelAxesTitleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartParallelAxesTitleOptions](x: Self) {
     
-    @scala.inline
-    def setReserveSpace(value: Boolean): Self = StObject.set(x, "reserveSpace", value.asInstanceOf[js.Any])
+    inline def setReserveSpace(value: Boolean): Self = StObject.set(x, "reserveSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReserveSpaceUndefined: Self = StObject.set(x, "reserveSpace", js.undefined)
+    inline def setReserveSpaceUndefined: Self = StObject.set(x, "reserveSpace", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlign(value: AlignValue): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: AlignValue): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+    inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

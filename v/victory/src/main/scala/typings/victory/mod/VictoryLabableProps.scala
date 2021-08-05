@@ -24,19 +24,15 @@ trait VictoryLabableProps extends StObject {
 }
 object VictoryLabableProps {
   
-  @scala.inline
-  def apply(): VictoryLabableProps = {
+  inline def apply(): VictoryLabableProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryLabableProps]
   }
   
-  @scala.inline
-  implicit class VictoryLabablePropsMutableBuilder[Self <: VictoryLabableProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryLabableProps](x: Self) {
     
-    @scala.inline
-    def setLabelComponent(value: ReactElement): Self = StObject.set(x, "labelComponent", value.asInstanceOf[js.Any])
+    inline def setLabelComponent(value: ReactElement): Self = StObject.set(x, "labelComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelComponentUndefined: Self = StObject.set(x, "labelComponent", js.undefined)
+    inline def setLabelComponentUndefined: Self = StObject.set(x, "labelComponent", js.undefined)
   }
 }

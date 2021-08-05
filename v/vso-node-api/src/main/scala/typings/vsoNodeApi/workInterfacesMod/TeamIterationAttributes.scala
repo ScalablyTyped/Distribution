@@ -15,22 +15,17 @@ trait TeamIterationAttributes extends StObject {
 }
 object TeamIterationAttributes {
   
-  @scala.inline
-  def apply(finishDate: Date, startDate: Date, timeFrame: TimeFrame): TeamIterationAttributes = {
+  inline def apply(finishDate: Date, startDate: Date, timeFrame: TimeFrame): TeamIterationAttributes = {
     val __obj = js.Dynamic.literal(finishDate = finishDate.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], timeFrame = timeFrame.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamIterationAttributes]
   }
   
-  @scala.inline
-  implicit class TeamIterationAttributesMutableBuilder[Self <: TeamIterationAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: TeamIterationAttributes](x: Self) {
     
-    @scala.inline
-    def setFinishDate(value: Date): Self = StObject.set(x, "finishDate", value.asInstanceOf[js.Any])
+    inline def setFinishDate(value: Date): Self = StObject.set(x, "finishDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeFrame(value: TimeFrame): Self = StObject.set(x, "timeFrame", value.asInstanceOf[js.Any])
+    inline def setTimeFrame(value: TimeFrame): Self = StObject.set(x, "timeFrame", value.asInstanceOf[js.Any])
   }
 }

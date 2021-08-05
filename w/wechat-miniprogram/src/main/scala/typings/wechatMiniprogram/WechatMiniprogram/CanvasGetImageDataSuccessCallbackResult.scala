@@ -20,25 +20,19 @@ trait CanvasGetImageDataSuccessCallbackResult extends StObject {
 }
 object CanvasGetImageDataSuccessCallbackResult {
   
-  @scala.inline
-  def apply(data: Uint8ClampedArray, errMsg: String, height: Double, width: Double): CanvasGetImageDataSuccessCallbackResult = {
+  inline def apply(data: Uint8ClampedArray, errMsg: String, height: Double, width: Double): CanvasGetImageDataSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasGetImageDataSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class CanvasGetImageDataSuccessCallbackResultMutableBuilder[Self <: CanvasGetImageDataSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasGetImageDataSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setData(value: Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -32,55 +32,39 @@ trait MessagePart extends StObject {
 }
 object MessagePart {
   
-  @scala.inline
-  def apply(): MessagePart = {
+  inline def apply(): MessagePart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessagePart]
   }
   
-  @scala.inline
-  implicit class MessagePartMutableBuilder[Self <: MessagePart] (val x: Self) extends AnyVal {
+  extension [Self <: MessagePart](x: Self) {
     
-    @scala.inline
-    def setBody(value: MessagePartBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: MessagePartBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Array[MessagePartHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[MessagePartHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHeadersVarargs(value: MessagePartHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: MessagePartHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setPartId(value: String): Self = StObject.set(x, "partId", value.asInstanceOf[js.Any])
+    inline def setPartId(value: String): Self = StObject.set(x, "partId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartIdUndefined: Self = StObject.set(x, "partId", js.undefined)
+    inline def setPartIdUndefined: Self = StObject.set(x, "partId", js.undefined)
     
-    @scala.inline
-    def setParts(value: js.Array[MessagePart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+    inline def setParts(value: js.Array[MessagePart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
+    inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
     
-    @scala.inline
-    def setPartsVarargs(value: MessagePart*): Self = StObject.set(x, "parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: MessagePart*): Self = StObject.set(x, "parts", js.Array(value :_*))
   }
 }

@@ -11,17 +11,14 @@ trait CancelReleaseJobRequest extends StObject {
 }
 object CancelReleaseJobRequest {
   
-  @scala.inline
-  def apply(`operation-attributes-tag`: Joburi): CancelReleaseJobRequest = {
+  inline def apply(`operation-attributes-tag`: Joburi): CancelReleaseJobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("operation-attributes-tag")(`operation-attributes-tag`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelReleaseJobRequest]
   }
   
-  @scala.inline
-  implicit class CancelReleaseJobRequestMutableBuilder[Self <: CancelReleaseJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelReleaseJobRequest](x: Self) {
     
-    @scala.inline
-    def `setOperation-attributes-tag`(value: Joburi): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setOperation-attributes-tag`(value: Joburi): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
   }
 }

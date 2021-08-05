@@ -12,17 +12,14 @@ object anon {
   }
   object ClassName {
     
-    @scala.inline
-    def apply(className: String): ClassName = {
+    inline def apply(className: String): ClassName = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClassName]
     }
     
-    @scala.inline
-    implicit class ClassNameMutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
+    extension [Self <: ClassName](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,17 +29,14 @@ object anon {
   }
   object Color {
     
-    @scala.inline
-    def apply(color: String): Color = {
+    inline def apply(color: String): Color = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
       __obj.asInstanceOf[Color]
     }
     
-    @scala.inline
-    implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+    extension [Self <: Color](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,20 +48,16 @@ object anon {
   }
   object Fill {
     
-    @scala.inline
-    def apply(className: String, fill: String): Fill = {
+    inline def apply(className: String, fill: String): Fill = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fill]
     }
     
-    @scala.inline
-    implicit class FillMutableBuilder[Self <: Fill] (val x: Self) extends AnyVal {
+    extension [Self <: Fill](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,26 +73,20 @@ object anon {
   }
   object FontFamily {
     
-    @scala.inline
-    def apply(className: String, fontFamily: String, fontSize: Double, textAnchor: String): FontFamily = {
+    inline def apply(className: String, fontFamily: String, fontSize: Double, textAnchor: String): FontFamily = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], textAnchor = textAnchor.asInstanceOf[js.Any])
       __obj.asInstanceOf[FontFamily]
     }
     
-    @scala.inline
-    implicit class FontFamilyMutableBuilder[Self <: FontFamily] (val x: Self) extends AnyVal {
+    extension [Self <: FontFamily](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAnchor(value: String): Self = StObject.set(x, "textAnchor", value.asInstanceOf[js.Any])
+      inline def setTextAnchor(value: String): Self = StObject.set(x, "textAnchor", value.asInstanceOf[js.Any])
     }
   }
 }

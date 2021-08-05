@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T](first: js.Array[T], args: js.Array[js.Any]*): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(first.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def apply[T](first: js.Array[T], args: js.Array[js.Any]*): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(first.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   @JSImport("arr-diff", JSImport.Namespace)
   @js.native

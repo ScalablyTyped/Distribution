@@ -13,19 +13,15 @@ trait PrintJobStatusInfo extends StObject {
 }
 object PrintJobStatusInfo {
   
-  @scala.inline
-  def apply(status: PrintJobStatus, statusMessage: String): PrintJobStatusInfo = {
+  inline def apply(status: PrintJobStatus, statusMessage: String): PrintJobStatusInfo = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintJobStatusInfo]
   }
   
-  @scala.inline
-  implicit class PrintJobStatusInfoMutableBuilder[Self <: PrintJobStatusInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PrintJobStatusInfo](x: Self) {
     
-    @scala.inline
-    def setStatus(value: PrintJobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PrintJobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
   }
 }

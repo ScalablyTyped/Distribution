@@ -18,25 +18,19 @@ trait PivotGroupLimit extends StObject {
 }
 object PivotGroupLimit {
   
-  @scala.inline
-  def apply(): PivotGroupLimit = {
+  inline def apply(): PivotGroupLimit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotGroupLimit]
   }
   
-  @scala.inline
-  implicit class PivotGroupLimitMutableBuilder[Self <: PivotGroupLimit] (val x: Self) extends AnyVal {
+  extension [Self <: PivotGroupLimit](x: Self) {
     
-    @scala.inline
-    def setApplyOrder(value: Double): Self = StObject.set(x, "applyOrder", value.asInstanceOf[js.Any])
+    inline def setApplyOrder(value: Double): Self = StObject.set(x, "applyOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyOrderUndefined: Self = StObject.set(x, "applyOrder", js.undefined)
+    inline def setApplyOrderUndefined: Self = StObject.set(x, "applyOrder", js.undefined)
     
-    @scala.inline
-    def setCountLimit(value: Double): Self = StObject.set(x, "countLimit", value.asInstanceOf[js.Any])
+    inline def setCountLimit(value: Double): Self = StObject.set(x, "countLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountLimitUndefined: Self = StObject.set(x, "countLimit", js.undefined)
+    inline def setCountLimitUndefined: Self = StObject.set(x, "countLimit", js.undefined)
   }
 }

@@ -23,34 +23,25 @@ trait DailyVolume extends StObject {
 }
 object DailyVolume {
   
-  @scala.inline
-  def apply(): DailyVolume = {
+  inline def apply(): DailyVolume = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DailyVolume]
   }
   
-  @scala.inline
-  implicit class DailyVolumeMutableBuilder[Self <: DailyVolume] (val x: Self) extends AnyVal {
+  extension [Self <: DailyVolume](x: Self) {
     
-    @scala.inline
-    def setDomainIspPlacements(value: DomainIspPlacements): Self = StObject.set(x, "DomainIspPlacements", value.asInstanceOf[js.Any])
+    inline def setDomainIspPlacements(value: DomainIspPlacements): Self = StObject.set(x, "DomainIspPlacements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainIspPlacementsUndefined: Self = StObject.set(x, "DomainIspPlacements", js.undefined)
+    inline def setDomainIspPlacementsUndefined: Self = StObject.set(x, "DomainIspPlacements", js.undefined)
     
-    @scala.inline
-    def setDomainIspPlacementsVarargs(value: DomainIspPlacement*): Self = StObject.set(x, "DomainIspPlacements", js.Array(value :_*))
+    inline def setDomainIspPlacementsVarargs(value: DomainIspPlacement*): Self = StObject.set(x, "DomainIspPlacements", js.Array(value :_*))
     
-    @scala.inline
-    def setStartDate(value: Timestamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Timestamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
     
-    @scala.inline
-    def setVolumeStatistics(value: VolumeStatistics): Self = StObject.set(x, "VolumeStatistics", value.asInstanceOf[js.Any])
+    inline def setVolumeStatistics(value: VolumeStatistics): Self = StObject.set(x, "VolumeStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeStatisticsUndefined: Self = StObject.set(x, "VolumeStatistics", js.undefined)
+    inline def setVolumeStatisticsUndefined: Self = StObject.set(x, "VolumeStatistics", js.undefined)
   }
 }

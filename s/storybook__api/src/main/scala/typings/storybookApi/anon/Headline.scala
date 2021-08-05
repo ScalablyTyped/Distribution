@@ -13,22 +13,17 @@ trait Headline extends StObject {
 }
 object Headline {
   
-  @scala.inline
-  def apply(headline: String): Headline = {
+  inline def apply(headline: String): Headline = {
     val __obj = js.Dynamic.literal(headline = headline.asInstanceOf[js.Any])
     __obj.asInstanceOf[Headline]
   }
   
-  @scala.inline
-  implicit class HeadlineMutableBuilder[Self <: Headline] (val x: Self) extends AnyVal {
+  extension [Self <: Headline](x: Self) {
     
-    @scala.inline
-    def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
+    inline def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubHeadline(value: String | ReactNode): Self = StObject.set(x, "subHeadline", value.asInstanceOf[js.Any])
+    inline def setSubHeadline(value: String | ReactNode): Self = StObject.set(x, "subHeadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubHeadlineUndefined: Self = StObject.set(x, "subHeadline", js.undefined)
+    inline def setSubHeadlineUndefined: Self = StObject.set(x, "subHeadline", js.undefined)
   }
 }

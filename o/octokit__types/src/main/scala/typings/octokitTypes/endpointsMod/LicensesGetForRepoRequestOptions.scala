@@ -20,25 +20,19 @@ trait LicensesGetForRepoRequestOptions extends StObject {
 }
 object LicensesGetForRepoRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): LicensesGetForRepoRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): LicensesGetForRepoRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/license")
     __obj.asInstanceOf[LicensesGetForRepoRequestOptions]
   }
   
-  @scala.inline
-  implicit class LicensesGetForRepoRequestOptionsMutableBuilder[Self <: LicensesGetForRepoRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LicensesGetForRepoRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashlicense): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashlicense): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

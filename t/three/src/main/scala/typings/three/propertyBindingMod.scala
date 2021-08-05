@@ -59,19 +59,14 @@ object propertyBindingMod {
       def unbind(): Unit = js.native
     }
     
-    @scala.inline
-    def create(root: js.Any, path: js.Any): PropertyBinding | Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[PropertyBinding | Composite]
-    @scala.inline
-    def create(root: js.Any, path: js.Any, parsedPath: js.Any): PropertyBinding | Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any], parsedPath.asInstanceOf[js.Any])).asInstanceOf[PropertyBinding | Composite]
+    inline def create(root: js.Any, path: js.Any): PropertyBinding | Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[PropertyBinding | Composite]
+    inline def create(root: js.Any, path: js.Any, parsedPath: js.Any): PropertyBinding | Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any], parsedPath.asInstanceOf[js.Any])).asInstanceOf[PropertyBinding | Composite]
     
-    @scala.inline
-    def findNode(root: js.Any, nodeName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findNode")(root.asInstanceOf[js.Any], nodeName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def findNode(root: js.Any, nodeName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findNode")(root.asInstanceOf[js.Any], nodeName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def parseTrackName(trackName: String): ParseTrackNameResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTrackName")(trackName.asInstanceOf[js.Any]).asInstanceOf[ParseTrackNameResults]
+    inline def parseTrackName(trackName: String): ParseTrackNameResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTrackName")(trackName.asInstanceOf[js.Any]).asInstanceOf[ParseTrackNameResults]
     
-    @scala.inline
-    def sanitizeNodeName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeNodeName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def sanitizeNodeName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeNodeName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   trait ParseTrackNameResults extends StObject {
@@ -88,8 +83,7 @@ object propertyBindingMod {
   }
   object ParseTrackNameResults {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       nodeName: String,
       objectIndex: String,
       objectName: String,
@@ -100,23 +94,17 @@ object propertyBindingMod {
       __obj.asInstanceOf[ParseTrackNameResults]
     }
     
-    @scala.inline
-    implicit class ParseTrackNameResultsMutableBuilder[Self <: ParseTrackNameResults] (val x: Self) extends AnyVal {
+    extension [Self <: ParseTrackNameResults](x: Self) {
       
-      @scala.inline
-      def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+      inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectIndex(value: String): Self = StObject.set(x, "objectIndex", value.asInstanceOf[js.Any])
+      inline def setObjectIndex(value: String): Self = StObject.set(x, "objectIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectName(value: String): Self = StObject.set(x, "objectName", value.asInstanceOf[js.Any])
+      inline def setObjectName(value: String): Self = StObject.set(x, "objectName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyIndex(value: String): Self = StObject.set(x, "propertyIndex", value.asInstanceOf[js.Any])
+      inline def setPropertyIndex(value: String): Self = StObject.set(x, "propertyIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+      inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     }
   }
 }

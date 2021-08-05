@@ -16,23 +16,18 @@ object anon {
   }
   object NoWrapParams {
     
-    @scala.inline
-    def apply(): NoWrapParams = {
+    inline def apply(): NoWrapParams = {
       val __obj = js.Dynamic.literal(outputFormat = "string")
       __obj.asInstanceOf[NoWrapParams]
     }
     
-    @scala.inline
-    implicit class NoWrapParamsMutableBuilder[Self <: NoWrapParams] (val x: Self) extends AnyVal {
+    extension [Self <: NoWrapParams](x: Self) {
       
-      @scala.inline
-      def setNoWrapParams(value: Boolean): Self = StObject.set(x, "noWrapParams", value.asInstanceOf[js.Any])
+      inline def setNoWrapParams(value: Boolean): Self = StObject.set(x, "noWrapParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoWrapParamsUndefined: Self = StObject.set(x, "noWrapParams", js.undefined)
+      inline def setNoWrapParamsUndefined: Self = StObject.set(x, "noWrapParams", js.undefined)
       
-      @scala.inline
-      def setOutputFormat(value: string): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
+      inline def setOutputFormat(value: string): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,23 +39,18 @@ object anon {
   }
   object OutputFormat {
     
-    @scala.inline
-    def apply(): OutputFormat = {
+    inline def apply(): OutputFormat = {
       val __obj = js.Dynamic.literal(outputFormat = "document")
       __obj.asInstanceOf[OutputFormat]
     }
     
-    @scala.inline
-    implicit class OutputFormatMutableBuilder[Self <: OutputFormat] (val x: Self) extends AnyVal {
+    extension [Self <: OutputFormat](x: Self) {
       
-      @scala.inline
-      def setNoWrapParams(value: Boolean): Self = StObject.set(x, "noWrapParams", value.asInstanceOf[js.Any])
+      inline def setNoWrapParams(value: Boolean): Self = StObject.set(x, "noWrapParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoWrapParamsUndefined: Self = StObject.set(x, "noWrapParams", js.undefined)
+      inline def setNoWrapParamsUndefined: Self = StObject.set(x, "noWrapParams", js.undefined)
       
-      @scala.inline
-      def setOutputFormat(value: document): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
+      inline def setOutputFormat(value: document): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
     }
   }
 }

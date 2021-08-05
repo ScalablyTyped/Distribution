@@ -76,131 +76,91 @@ trait MigrationJob extends StObject {
 }
 object MigrationJob {
   
-  @scala.inline
-  def apply(): MigrationJob = {
+  inline def apply(): MigrationJob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MigrationJob]
   }
   
-  @scala.inline
-  implicit class MigrationJobMutableBuilder[Self <: MigrationJob] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationJob](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationDatabase(value: DatabaseType): Self = StObject.set(x, "destinationDatabase", value.asInstanceOf[js.Any])
+    inline def setDestinationDatabase(value: DatabaseType): Self = StObject.set(x, "destinationDatabase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationDatabaseUndefined: Self = StObject.set(x, "destinationDatabase", js.undefined)
+    inline def setDestinationDatabaseUndefined: Self = StObject.set(x, "destinationDatabase", js.undefined)
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setDumpPath(value: String): Self = StObject.set(x, "dumpPath", value.asInstanceOf[js.Any])
+    inline def setDumpPath(value: String): Self = StObject.set(x, "dumpPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDumpPathUndefined: Self = StObject.set(x, "dumpPath", js.undefined)
+    inline def setDumpPathUndefined: Self = StObject.set(x, "dumpPath", js.undefined)
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.MigrationJob & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPhase(value: String): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+    inline def setPhase(value: String): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
+    inline def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
     
-    @scala.inline
-    def setReverseSshConnectivity(value: ReverseSshConnectivity): Self = StObject.set(x, "reverseSshConnectivity", value.asInstanceOf[js.Any])
+    inline def setReverseSshConnectivity(value: ReverseSshConnectivity): Self = StObject.set(x, "reverseSshConnectivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseSshConnectivityUndefined: Self = StObject.set(x, "reverseSshConnectivity", js.undefined)
+    inline def setReverseSshConnectivityUndefined: Self = StObject.set(x, "reverseSshConnectivity", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDatabase(value: DatabaseType): Self = StObject.set(x, "sourceDatabase", value.asInstanceOf[js.Any])
+    inline def setSourceDatabase(value: DatabaseType): Self = StObject.set(x, "sourceDatabase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDatabaseUndefined: Self = StObject.set(x, "sourceDatabase", js.undefined)
+    inline def setSourceDatabaseUndefined: Self = StObject.set(x, "sourceDatabase", js.undefined)
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setStaticIpConnectivity(value: js.Any): Self = StObject.set(x, "staticIpConnectivity", value.asInstanceOf[js.Any])
+    inline def setStaticIpConnectivity(value: js.Any): Self = StObject.set(x, "staticIpConnectivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticIpConnectivityUndefined: Self = StObject.set(x, "staticIpConnectivity", js.undefined)
+    inline def setStaticIpConnectivityUndefined: Self = StObject.set(x, "staticIpConnectivity", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
-    @scala.inline
-    def setVpcPeeringConnectivity(value: VpcPeeringConnectivity): Self = StObject.set(x, "vpcPeeringConnectivity", value.asInstanceOf[js.Any])
+    inline def setVpcPeeringConnectivity(value: VpcPeeringConnectivity): Self = StObject.set(x, "vpcPeeringConnectivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcPeeringConnectivityUndefined: Self = StObject.set(x, "vpcPeeringConnectivity", js.undefined)
+    inline def setVpcPeeringConnectivityUndefined: Self = StObject.set(x, "vpcPeeringConnectivity", js.undefined)
   }
 }

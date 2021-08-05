@@ -18,19 +18,15 @@ trait ExpandColumnComponentProps extends StObject {
 }
 object ExpandColumnComponentProps {
   
-  @scala.inline
-  def apply(isExpandableRow: Boolean, isExpanded: Boolean): ExpandColumnComponentProps = {
+  inline def apply(isExpandableRow: Boolean, isExpanded: Boolean): ExpandColumnComponentProps = {
     val __obj = js.Dynamic.literal(isExpandableRow = isExpandableRow.asInstanceOf[js.Any], isExpanded = isExpanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpandColumnComponentProps]
   }
   
-  @scala.inline
-  implicit class ExpandColumnComponentPropsMutableBuilder[Self <: ExpandColumnComponentProps] (val x: Self) extends AnyVal {
+  extension [Self <: ExpandColumnComponentProps](x: Self) {
     
-    @scala.inline
-    def setIsExpandableRow(value: Boolean): Self = StObject.set(x, "isExpandableRow", value.asInstanceOf[js.Any])
+    inline def setIsExpandableRow(value: Boolean): Self = StObject.set(x, "isExpandableRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+    inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
   }
 }

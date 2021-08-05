@@ -29,8 +29,7 @@ trait IHttpResponse[T] extends StObject {
 }
 object IHttpResponse {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     config: IRequestConfig,
     data: T,
     headers: IHttpHeadersGetter,
@@ -42,25 +41,18 @@ object IHttpResponse {
     __obj.asInstanceOf[IHttpResponse[T]]
   }
   
-  @scala.inline
-  implicit class IHttpResponseMutableBuilder[Self <: IHttpResponse[?], T] (val x: Self & IHttpResponse[T]) extends AnyVal {
+  extension [Self <: IHttpResponse[?], T](x: Self & IHttpResponse[T]) {
     
-    @scala.inline
-    def setConfig(value: IRequestConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: IRequestConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: IHttpHeadersGetter): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: IHttpHeadersGetter): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+    inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrStatus(value: complete | error | timeout | abort): Self = StObject.set(x, "xhrStatus", value.asInstanceOf[js.Any])
+    inline def setXhrStatus(value: complete | error | timeout | abort): Self = StObject.set(x, "xhrStatus", value.asInstanceOf[js.Any])
   }
 }

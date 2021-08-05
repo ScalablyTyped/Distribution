@@ -10,14 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(url: String): Client = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[Client]
-  @scala.inline
-  def apply(url: String, username: String): Client = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], username.asInstanceOf[js.Any])).asInstanceOf[Client]
-  @scala.inline
-  def apply(url: String, username: String, password: String): Client = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Client]
-  @scala.inline
-  def apply(url: String, username: Unit, password: String): Client = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Client]
+  inline def apply(url: String): Client = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def apply(url: String, username: String): Client = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], username.asInstanceOf[js.Any])).asInstanceOf[Client]
+  inline def apply(url: String, username: String, password: String): Client = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Client]
+  inline def apply(url: String, username: Unit, password: String): Client = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Client]
   
   @JSImport("jsreport-client", JSImport.Namespace)
   @js.native

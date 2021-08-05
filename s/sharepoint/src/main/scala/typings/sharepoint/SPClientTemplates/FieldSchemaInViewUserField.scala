@@ -25,8 +25,7 @@ trait FieldSchemaInViewUserField
 }
 object FieldSchemaInViewUserField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowGridEditing: Boolean,
     AllowMultipleValues: String,
     CalloutMenu: String,
@@ -57,22 +56,16 @@ object FieldSchemaInViewUserField {
     __obj.asInstanceOf[FieldSchemaInViewUserField]
   }
   
-  @scala.inline
-  implicit class FieldSchemaInViewUserFieldMutableBuilder[Self <: FieldSchemaInViewUserField] (val x: Self) extends AnyVal {
+  extension [Self <: FieldSchemaInViewUserField](x: Self) {
     
-    @scala.inline
-    def setAllowMultipleValues(value: String): Self = StObject.set(x, "AllowMultipleValues", value.asInstanceOf[js.Any])
+    inline def setAllowMultipleValues(value: String): Self = StObject.set(x, "AllowMultipleValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRender(value: String): Self = StObject.set(x, "DefaultRender", value.asInstanceOf[js.Any])
+    inline def setDefaultRender(value: String): Self = StObject.set(x, "DefaultRender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasPrefix(value: String): Self = StObject.set(x, "HasPrefix", value.asInstanceOf[js.Any])
+    inline def setHasPrefix(value: String): Self = StObject.set(x, "HasPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasUserLink(value: String): Self = StObject.set(x, "HasUserLink", value.asInstanceOf[js.Any])
+    inline def setHasUserLink(value: String): Self = StObject.set(x, "HasUserLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImnHeader(value: String): Self = StObject.set(x, "ImnHeader", value.asInstanceOf[js.Any])
+    inline def setImnHeader(value: String): Self = StObject.set(x, "ImnHeader", value.asInstanceOf[js.Any])
   }
 }

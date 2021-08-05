@@ -23,31 +23,23 @@ trait UpdateUserOpts extends StObject {
 }
 object UpdateUserOpts {
   
-  @scala.inline
-  def apply(): UpdateUserOpts = {
+  inline def apply(): UpdateUserOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateUserOpts]
   }
   
-  @scala.inline
-  implicit class UpdateUserOptsMutableBuilder[Self <: UpdateUserOpts] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateUserOpts](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNative_currency(value: String): Self = StObject.set(x, "native_currency", value.asInstanceOf[js.Any])
+    inline def setNative_currency(value: String): Self = StObject.set(x, "native_currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNative_currencyUndefined: Self = StObject.set(x, "native_currency", js.undefined)
+    inline def setNative_currencyUndefined: Self = StObject.set(x, "native_currency", js.undefined)
     
-    @scala.inline
-    def setTime_zone(value: String): Self = StObject.set(x, "time_zone", value.asInstanceOf[js.Any])
+    inline def setTime_zone(value: String): Self = StObject.set(x, "time_zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_zoneUndefined: Self = StObject.set(x, "time_zone", js.undefined)
+    inline def setTime_zoneUndefined: Self = StObject.set(x, "time_zone", js.undefined)
   }
 }

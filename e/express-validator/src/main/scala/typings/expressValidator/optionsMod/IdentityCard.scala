@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IdentityCard extends StObject
 object IdentityCard {
   
-  @scala.inline
-  def ES: typings.expressValidator.expressValidatorStrings.ES = "ES".asInstanceOf[typings.expressValidator.expressValidatorStrings.ES]
+  inline def ES: typings.expressValidator.expressValidatorStrings.ES = "ES".asInstanceOf[typings.expressValidator.expressValidatorStrings.ES]
   
-  @scala.inline
-  def IN: typings.expressValidator.expressValidatorStrings.IN = "IN".asInstanceOf[typings.expressValidator.expressValidatorStrings.IN]
+  inline def IN: typings.expressValidator.expressValidatorStrings.IN = "IN".asInstanceOf[typings.expressValidator.expressValidatorStrings.IN]
   
-  @scala.inline
-  def NO: typings.expressValidator.expressValidatorStrings.NO = "NO".asInstanceOf[typings.expressValidator.expressValidatorStrings.NO]
+  inline def NO: typings.expressValidator.expressValidatorStrings.NO = "NO".asInstanceOf[typings.expressValidator.expressValidatorStrings.NO]
   
-  @scala.inline
-  def any: typings.expressValidator.expressValidatorStrings.any = "any".asInstanceOf[typings.expressValidator.expressValidatorStrings.any]
+  inline def any: typings.expressValidator.expressValidatorStrings.any = "any".asInstanceOf[typings.expressValidator.expressValidatorStrings.any]
   
-  @scala.inline
-  def `ar-TN`: typings.expressValidator.expressValidatorStrings.`ar-TN` = "ar-TN".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ar-TN`]
+  inline def `ar-TN`: typings.expressValidator.expressValidatorStrings.`ar-TN` = "ar-TN".asInstanceOf[typings.expressValidator.expressValidatorStrings.`ar-TN`]
   
-  @scala.inline
-  def `he-IL`: typings.expressValidator.expressValidatorStrings.`he-IL` = "he-IL".asInstanceOf[typings.expressValidator.expressValidatorStrings.`he-IL`]
+  inline def `he-IL`: typings.expressValidator.expressValidatorStrings.`he-IL` = "he-IL".asInstanceOf[typings.expressValidator.expressValidatorStrings.`he-IL`]
   
-  @scala.inline
-  def `zh-CN`: typings.expressValidator.expressValidatorStrings.`zh-CN` = "zh-CN".asInstanceOf[typings.expressValidator.expressValidatorStrings.`zh-CN`]
+  inline def `zh-CN`: typings.expressValidator.expressValidatorStrings.`zh-CN` = "zh-CN".asInstanceOf[typings.expressValidator.expressValidatorStrings.`zh-CN`]
   
-  @scala.inline
-  def `zh-TW`: typings.expressValidator.expressValidatorStrings.`zh-TW` = "zh-TW".asInstanceOf[typings.expressValidator.expressValidatorStrings.`zh-TW`]
+  inline def `zh-TW`: typings.expressValidator.expressValidatorStrings.`zh-TW` = "zh-TW".asInstanceOf[typings.expressValidator.expressValidatorStrings.`zh-TW`]
 }

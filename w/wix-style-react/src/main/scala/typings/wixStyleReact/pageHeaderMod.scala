@@ -48,83 +48,58 @@ object pageHeaderMod {
   }
   object PageHeaderProps {
     
-    @scala.inline
-    def apply(): PageHeaderProps = {
+    inline def apply(): PageHeaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageHeaderProps]
     }
     
-    @scala.inline
-    implicit class PageHeaderPropsMutableBuilder[Self <: PageHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: PageHeaderProps](x: Self) {
       
-      @scala.inline
-      def setActionsBar(value: ReactNode | ActionsBarRenderFn): Self = StObject.set(x, "actionsBar", value.asInstanceOf[js.Any])
+      inline def setActionsBar(value: ReactNode | ActionsBarRenderFn): Self = StObject.set(x, "actionsBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsBarFunction1(value: /* data */ HasBackgroundImage => ReactNode): Self = StObject.set(x, "actionsBar", js.Any.fromFunction1(value))
+      inline def setActionsBarFunction1(value: /* data */ HasBackgroundImage => ReactNode): Self = StObject.set(x, "actionsBar", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActionsBarUndefined: Self = StObject.set(x, "actionsBar", js.undefined)
+      inline def setActionsBarUndefined: Self = StObject.set(x, "actionsBar", js.undefined)
       
-      @scala.inline
-      def setBreadcrumbs(value: ReactNode | BreadcrumbsRenderFn): Self = StObject.set(x, "breadcrumbs", value.asInstanceOf[js.Any])
+      inline def setBreadcrumbs(value: ReactNode | BreadcrumbsRenderFn): Self = StObject.set(x, "breadcrumbs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreadcrumbsFunction1(value: /* minimized */ Boolean => ReactNode): Self = StObject.set(x, "breadcrumbs", js.Any.fromFunction1(value))
+      inline def setBreadcrumbsFunction1(value: /* minimized */ Boolean => ReactNode): Self = StObject.set(x, "breadcrumbs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBreadcrumbsUndefined: Self = StObject.set(x, "breadcrumbs", js.undefined)
+      inline def setBreadcrumbsUndefined: Self = StObject.set(x, "breadcrumbs", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setHasBackgroundImage(value: Boolean): Self = StObject.set(x, "hasBackgroundImage", value.asInstanceOf[js.Any])
+      inline def setHasBackgroundImage(value: Boolean): Self = StObject.set(x, "hasBackgroundImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasBackgroundImageUndefined: Self = StObject.set(x, "hasBackgroundImage", js.undefined)
+      inline def setHasBackgroundImageUndefined: Self = StObject.set(x, "hasBackgroundImage", js.undefined)
       
-      @scala.inline
-      def setMinimized(value: Boolean): Self = StObject.set(x, "minimized", value.asInstanceOf[js.Any])
+      inline def setMinimized(value: Boolean): Self = StObject.set(x, "minimized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimizedUndefined: Self = StObject.set(x, "minimized", js.undefined)
+      inline def setMinimizedUndefined: Self = StObject.set(x, "minimized", js.undefined)
       
-      @scala.inline
-      def setOnBackClicked(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onBackClicked", js.Any.fromFunction1(value))
+      inline def setOnBackClicked(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onBackClicked", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBackClickedUndefined: Self = StObject.set(x, "onBackClicked", js.undefined)
+      inline def setOnBackClickedUndefined: Self = StObject.set(x, "onBackClicked", js.undefined)
       
-      @scala.inline
-      def setShowBackButton(value: Boolean): Self = StObject.set(x, "showBackButton", value.asInstanceOf[js.Any])
+      inline def setShowBackButton(value: Boolean): Self = StObject.set(x, "showBackButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowBackButtonUndefined: Self = StObject.set(x, "showBackButton", js.undefined)
+      inline def setShowBackButtonUndefined: Self = StObject.set(x, "showBackButton", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: ReactNode): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode | TitleRenderFn): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode | TitleRenderFn): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFunction1(value: /* minimized */ Boolean => ReactNode): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
+      inline def setTitleFunction1(value: /* minimized */ Boolean => ReactNode): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   

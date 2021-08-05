@@ -17,8 +17,7 @@ trait ParametersGistsDeleteCommentEndpoint extends StObject {
 }
 object ParametersGistsDeleteCommentEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: GistsDeleteCommentEndpoint,
     request: GistsDeleteCommentRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersGistsDeleteCommentEndpoint {
     __obj.asInstanceOf[ParametersGistsDeleteCommentEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersGistsDeleteCommentEndpointMutableBuilder[Self <: ParametersGistsDeleteCommentEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersGistsDeleteCommentEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: GistsDeleteCommentEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: GistsDeleteCommentEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: GistsDeleteCommentRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: GistsDeleteCommentRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

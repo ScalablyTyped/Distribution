@@ -18,28 +18,21 @@ trait DescribeScheduledInstancesResult extends StObject {
 }
 object DescribeScheduledInstancesResult {
   
-  @scala.inline
-  def apply(): DescribeScheduledInstancesResult = {
+  inline def apply(): DescribeScheduledInstancesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeScheduledInstancesResult]
   }
   
-  @scala.inline
-  implicit class DescribeScheduledInstancesResultMutableBuilder[Self <: DescribeScheduledInstancesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeScheduledInstancesResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setScheduledInstanceSet(value: ScheduledInstanceSet): Self = StObject.set(x, "ScheduledInstanceSet", value.asInstanceOf[js.Any])
+    inline def setScheduledInstanceSet(value: ScheduledInstanceSet): Self = StObject.set(x, "ScheduledInstanceSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledInstanceSetUndefined: Self = StObject.set(x, "ScheduledInstanceSet", js.undefined)
+    inline def setScheduledInstanceSetUndefined: Self = StObject.set(x, "ScheduledInstanceSet", js.undefined)
     
-    @scala.inline
-    def setScheduledInstanceSetVarargs(value: ScheduledInstance*): Self = StObject.set(x, "ScheduledInstanceSet", js.Array(value :_*))
+    inline def setScheduledInstanceSetVarargs(value: ScheduledInstance*): Self = StObject.set(x, "ScheduledInstanceSet", js.Array(value :_*))
   }
 }

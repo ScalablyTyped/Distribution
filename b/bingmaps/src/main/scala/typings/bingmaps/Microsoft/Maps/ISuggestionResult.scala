@@ -38,8 +38,7 @@ trait ISuggestionResult extends StObject {
 }
 object ISuggestionResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: IAddress,
     bestView: LocationRect,
     entityId: String,
@@ -54,34 +53,24 @@ object ISuggestionResult {
     __obj.asInstanceOf[ISuggestionResult]
   }
   
-  @scala.inline
-  implicit class ISuggestionResultMutableBuilder[Self <: ISuggestionResult] (val x: Self) extends AnyVal {
+  extension [Self <: ISuggestionResult](x: Self) {
     
-    @scala.inline
-    def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBestView(value: LocationRect): Self = StObject.set(x, "bestView", value.asInstanceOf[js.Any])
+    inline def setBestView(value: LocationRect): Self = StObject.set(x, "bestView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
+    inline def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitySubType(value: String): Self = StObject.set(x, "entitySubType", value.asInstanceOf[js.Any])
+    inline def setEntitySubType(value: String): Self = StObject.set(x, "entitySubType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+    inline def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedSuggestion(value: String): Self = StObject.set(x, "formattedSuggestion", value.asInstanceOf[js.Any])
+    inline def setFormattedSuggestion(value: String): Self = StObject.set(x, "formattedSuggestion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

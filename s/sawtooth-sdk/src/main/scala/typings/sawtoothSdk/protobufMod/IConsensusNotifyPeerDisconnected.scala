@@ -12,22 +12,17 @@ trait IConsensusNotifyPeerDisconnected extends StObject {
 }
 object IConsensusNotifyPeerDisconnected {
   
-  @scala.inline
-  def apply(): IConsensusNotifyPeerDisconnected = {
+  inline def apply(): IConsensusNotifyPeerDisconnected = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusNotifyPeerDisconnected]
   }
   
-  @scala.inline
-  implicit class IConsensusNotifyPeerDisconnectedMutableBuilder[Self <: IConsensusNotifyPeerDisconnected] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusNotifyPeerDisconnected](x: Self) {
     
-    @scala.inline
-    def setPeerId(value: Uint8Array): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+    inline def setPeerId(value: Uint8Array): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerIdNull: Self = StObject.set(x, "peerId", null)
+    inline def setPeerIdNull: Self = StObject.set(x, "peerId", null)
     
-    @scala.inline
-    def setPeerIdUndefined: Self = StObject.set(x, "peerId", js.undefined)
+    inline def setPeerIdUndefined: Self = StObject.set(x, "peerId", js.undefined)
   }
 }

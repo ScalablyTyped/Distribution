@@ -13,16 +13,13 @@ trait PutRetentionConfigurationRequest extends StObject {
 }
 object PutRetentionConfigurationRequest {
   
-  @scala.inline
-  def apply(RetentionPeriodInDays: RetentionPeriodInDays): PutRetentionConfigurationRequest = {
+  inline def apply(RetentionPeriodInDays: RetentionPeriodInDays): PutRetentionConfigurationRequest = {
     val __obj = js.Dynamic.literal(RetentionPeriodInDays = RetentionPeriodInDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRetentionConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class PutRetentionConfigurationRequestMutableBuilder[Self <: PutRetentionConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutRetentionConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setRetentionPeriodInDays(value: RetentionPeriodInDays): Self = StObject.set(x, "RetentionPeriodInDays", value.asInstanceOf[js.Any])
+    inline def setRetentionPeriodInDays(value: RetentionPeriodInDays): Self = StObject.set(x, "RetentionPeriodInDays", value.asInstanceOf[js.Any])
   }
 }

@@ -15,8 +15,7 @@ object mod {
     * before before requesting a rate-limited resource (i.e. wait for its turn) in
     * order to not exceed the limit.
     */
-  @scala.inline
-  def apply(turnsPerInterval: Double, interval: Double): WaitTurn = (^.asInstanceOf[js.Dynamic].apply(turnsPerInterval.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[WaitTurn]
+  inline def apply(turnsPerInterval: Double, interval: Double): WaitTurn = (^.asInstanceOf[js.Dynamic].apply(turnsPerInterval.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[WaitTurn]
   
   @JSImport("wyt", JSImport.Namespace)
   @js.native

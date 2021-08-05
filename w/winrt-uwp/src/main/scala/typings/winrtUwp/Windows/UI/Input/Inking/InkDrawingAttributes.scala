@@ -33,8 +33,7 @@ trait InkDrawingAttributes extends StObject {
 }
 object InkDrawingAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Color,
     drawAsHighlighter: Boolean,
     fitToCurve: Boolean,
@@ -47,28 +46,20 @@ object InkDrawingAttributes {
     __obj.asInstanceOf[InkDrawingAttributes]
   }
   
-  @scala.inline
-  implicit class InkDrawingAttributesMutableBuilder[Self <: InkDrawingAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: InkDrawingAttributes](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawAsHighlighter(value: Boolean): Self = StObject.set(x, "drawAsHighlighter", value.asInstanceOf[js.Any])
+    inline def setDrawAsHighlighter(value: Boolean): Self = StObject.set(x, "drawAsHighlighter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitToCurve(value: Boolean): Self = StObject.set(x, "fitToCurve", value.asInstanceOf[js.Any])
+    inline def setFitToCurve(value: Boolean): Self = StObject.set(x, "fitToCurve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnorePressure(value: Boolean): Self = StObject.set(x, "ignorePressure", value.asInstanceOf[js.Any])
+    inline def setIgnorePressure(value: Boolean): Self = StObject.set(x, "ignorePressure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPenTip(value: PenTipShape): Self = StObject.set(x, "penTip", value.asInstanceOf[js.Any])
+    inline def setPenTip(value: PenTipShape): Self = StObject.set(x, "penTip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPenTipTransform(value: Matrix3x2): Self = StObject.set(x, "penTipTransform", value.asInstanceOf[js.Any])
+    inline def setPenTipTransform(value: Matrix3x2): Self = StObject.set(x, "penTipTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

@@ -93,8 +93,7 @@ trait ChatMessage extends StObject {
 }
 object ChatMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attachments: IVector[ChatMessageAttachment],
     body: String,
     estimatedDownloadSize: Double,
@@ -127,88 +126,60 @@ object ChatMessage {
     __obj.asInstanceOf[ChatMessage]
   }
   
-  @scala.inline
-  implicit class ChatMessageMutableBuilder[Self <: ChatMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessage](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: IVector[ChatMessageAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: IVector[ChatMessageAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedDownloadSize(value: Double): Self = StObject.set(x, "estimatedDownloadSize", value.asInstanceOf[js.Any])
+    inline def setEstimatedDownloadSize(value: Double): Self = StObject.set(x, "estimatedDownloadSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAutoReply(value: Boolean): Self = StObject.set(x, "isAutoReply", value.asInstanceOf[js.Any])
+    inline def setIsAutoReply(value: Boolean): Self = StObject.set(x, "isAutoReply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsForwardingDisabled(value: Boolean): Self = StObject.set(x, "isForwardingDisabled", value.asInstanceOf[js.Any])
+    inline def setIsForwardingDisabled(value: Boolean): Self = StObject.set(x, "isForwardingDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIncoming(value: Boolean): Self = StObject.set(x, "isIncoming", value.asInstanceOf[js.Any])
+    inline def setIsIncoming(value: Boolean): Self = StObject.set(x, "isIncoming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRead(value: Boolean): Self = StObject.set(x, "isRead", value.asInstanceOf[js.Any])
+    inline def setIsRead(value: Boolean): Self = StObject.set(x, "isRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReceivedDuringQuietHours(value: Boolean): Self = StObject.set(x, "isReceivedDuringQuietHours", value.asInstanceOf[js.Any])
+    inline def setIsReceivedDuringQuietHours(value: Boolean): Self = StObject.set(x, "isReceivedDuringQuietHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReplyDisabled(value: Boolean): Self = StObject.set(x, "isReplyDisabled", value.asInstanceOf[js.Any])
+    inline def setIsReplyDisabled(value: Boolean): Self = StObject.set(x, "isReplyDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSeen(value: Boolean): Self = StObject.set(x, "isSeen", value.asInstanceOf[js.Any])
+    inline def setIsSeen(value: Boolean): Self = StObject.set(x, "isSeen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSimMessage(value: Boolean): Self = StObject.set(x, "isSimMessage", value.asInstanceOf[js.Any])
+    inline def setIsSimMessage(value: Boolean): Self = StObject.set(x, "isSimMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalTimestamp(value: Date): Self = StObject.set(x, "localTimestamp", value.asInstanceOf[js.Any])
+    inline def setLocalTimestamp(value: Date): Self = StObject.set(x, "localTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageKind(value: ChatMessageKind): Self = StObject.set(x, "messageKind", value.asInstanceOf[js.Any])
+    inline def setMessageKind(value: ChatMessageKind): Self = StObject.set(x, "messageKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageOperatorKind(value: ChatMessageOperatorKind): Self = StObject.set(x, "messageOperatorKind", value.asInstanceOf[js.Any])
+    inline def setMessageOperatorKind(value: ChatMessageOperatorKind): Self = StObject.set(x, "messageOperatorKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkTimestamp(value: Date): Self = StObject.set(x, "networkTimestamp", value.asInstanceOf[js.Any])
+    inline def setNetworkTimestamp(value: Date): Self = StObject.set(x, "networkTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientSendStatuses(value: IMapView[String, ChatMessageStatus]): Self = StObject.set(x, "recipientSendStatuses", value.asInstanceOf[js.Any])
+    inline def setRecipientSendStatuses(value: IMapView[String, ChatMessageStatus]): Self = StObject.set(x, "recipientSendStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipients(value: IVector[String]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
+    inline def setRecipients(value: IVector[String]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientsDeliveryInfos(value: IVector[ChatRecipientDeliveryInfo]): Self = StObject.set(x, "recipientsDeliveryInfos", value.asInstanceOf[js.Any])
+    inline def setRecipientsDeliveryInfos(value: IVector[ChatRecipientDeliveryInfo]): Self = StObject.set(x, "recipientsDeliveryInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteId(value: String): Self = StObject.set(x, "remoteId", value.asInstanceOf[js.Any])
+    inline def setRemoteId(value: String): Self = StObject.set(x, "remoteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldSuppressNotification(value: Boolean): Self = StObject.set(x, "shouldSuppressNotification", value.asInstanceOf[js.Any])
+    inline def setShouldSuppressNotification(value: Boolean): Self = StObject.set(x, "shouldSuppressNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ChatMessageStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ChatMessageStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadingInfo(value: ChatConversationThreadingInfo): Self = StObject.set(x, "threadingInfo", value.asInstanceOf[js.Any])
+    inline def setThreadingInfo(value: ChatConversationThreadingInfo): Self = StObject.set(x, "threadingInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportFriendlyName(value: String): Self = StObject.set(x, "transportFriendlyName", value.asInstanceOf[js.Any])
+    inline def setTransportFriendlyName(value: String): Self = StObject.set(x, "transportFriendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportId(value: String): Self = StObject.set(x, "transportId", value.asInstanceOf[js.Any])
+    inline def setTransportId(value: String): Self = StObject.set(x, "transportId", value.asInstanceOf[js.Any])
   }
 }

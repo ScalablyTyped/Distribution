@@ -26,34 +26,25 @@ trait SchemaSeason extends StObject {
 }
 object SchemaSeason {
   
-  @scala.inline
-  def apply(): SchemaSeason = {
+  inline def apply(): SchemaSeason = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSeason]
   }
   
-  @scala.inline
-  implicit class SchemaSeasonMutableBuilder[Self <: SchemaSeason] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSeason](x: Self) {
     
-    @scala.inline
-    def setEnd(value: SchemaMonthDay): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: SchemaMonthDay): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setProrations(value: js.Array[SchemaProrate]): Self = StObject.set(x, "prorations", value.asInstanceOf[js.Any])
+    inline def setProrations(value: js.Array[SchemaProrate]): Self = StObject.set(x, "prorations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProrationsUndefined: Self = StObject.set(x, "prorations", js.undefined)
+    inline def setProrationsUndefined: Self = StObject.set(x, "prorations", js.undefined)
     
-    @scala.inline
-    def setProrationsVarargs(value: SchemaProrate*): Self = StObject.set(x, "prorations", js.Array(value :_*))
+    inline def setProrationsVarargs(value: SchemaProrate*): Self = StObject.set(x, "prorations", js.Array(value :_*))
     
-    @scala.inline
-    def setStart(value: SchemaMonthDay): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: SchemaMonthDay): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

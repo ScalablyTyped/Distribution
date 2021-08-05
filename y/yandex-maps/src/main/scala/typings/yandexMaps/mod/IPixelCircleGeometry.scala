@@ -14,8 +14,7 @@ trait IPixelCircleGeometry
 }
 object IPixelCircleGeometry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     equals_ : IPixelGeometry => Boolean,
     events: IEventManager[js.Object],
     getBounds: () => js.Array[js.Array[Double]] | Null,
@@ -31,13 +30,10 @@ object IPixelCircleGeometry {
     __obj.asInstanceOf[IPixelCircleGeometry]
   }
   
-  @scala.inline
-  implicit class IPixelCircleGeometryMutableBuilder[Self <: IPixelCircleGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: IPixelCircleGeometry](x: Self) {
     
-    @scala.inline
-    def setGetCoordinates(value: () => js.Array[Double]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
+    inline def setGetCoordinates(value: () => js.Array[Double]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRadius(value: () => Double): Self = StObject.set(x, "getRadius", js.Any.fromFunction0(value))
+    inline def setGetRadius(value: () => Double): Self = StObject.set(x, "getRadius", js.Any.fromFunction0(value))
   }
 }

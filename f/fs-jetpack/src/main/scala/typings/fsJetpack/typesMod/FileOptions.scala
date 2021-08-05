@@ -14,34 +14,25 @@ trait FileOptions extends StObject {
 }
 object FileOptions {
   
-  @scala.inline
-  def apply(): FileOptions = {
+  inline def apply(): FileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileOptions]
   }
   
-  @scala.inline
-  implicit class FileOptionsMutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FileOptions](x: Self) {
     
-    @scala.inline
-    def setContent(value: WritableData): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: WritableData): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setContentVarargs(value: js.Any*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: js.Any*): Self = StObject.set(x, "content", js.Array(value :_*))
     
-    @scala.inline
-    def setJsonIndent(value: Double): Self = StObject.set(x, "jsonIndent", value.asInstanceOf[js.Any])
+    inline def setJsonIndent(value: Double): Self = StObject.set(x, "jsonIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonIndentUndefined: Self = StObject.set(x, "jsonIndent", js.undefined)
+    inline def setJsonIndentUndefined: Self = StObject.set(x, "jsonIndent", js.undefined)
     
-    @scala.inline
-    def setMode(value: String | Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String | Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

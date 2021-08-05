@@ -18,8 +18,7 @@ trait XModuleManager2
      with XNameReplace
 object XModuleManager2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,

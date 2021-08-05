@@ -21,31 +21,23 @@ trait BaseParameter extends StObject {
 }
 object BaseParameter {
   
-  @scala.inline
-  def apply(in: body | query | path | header | formData, name: String): BaseParameter = {
+  inline def apply(in: body | query | path | header | formData, name: String): BaseParameter = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseParameter]
   }
   
-  @scala.inline
-  implicit class BaseParameterMutableBuilder[Self <: BaseParameter] (val x: Self) extends AnyVal {
+  extension [Self <: BaseParameter](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setIn(value: body | query | path | header | formData): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    inline def setIn(value: body | query | path | header | formData): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
   }
 }

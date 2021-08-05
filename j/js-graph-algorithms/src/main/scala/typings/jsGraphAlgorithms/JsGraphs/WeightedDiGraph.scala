@@ -12,8 +12,7 @@ trait WeightedDiGraph
 }
 object WeightedDiGraph {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     V: Double,
     addEdge: Edge => Unit,
     adj: Double => js.Array[Edge],
@@ -27,10 +26,8 @@ object WeightedDiGraph {
     __obj.asInstanceOf[WeightedDiGraph]
   }
   
-  @scala.inline
-  implicit class WeightedDiGraphMutableBuilder[Self <: WeightedDiGraph] (val x: Self) extends AnyVal {
+  extension [Self <: WeightedDiGraph](x: Self) {
     
-    @scala.inline
-    def setToDiGraph(value: () => DiGraph): Self = StObject.set(x, "toDiGraph", js.Any.fromFunction0(value))
+    inline def setToDiGraph(value: () => DiGraph): Self = StObject.set(x, "toDiGraph", js.Any.fromFunction0(value))
   }
 }

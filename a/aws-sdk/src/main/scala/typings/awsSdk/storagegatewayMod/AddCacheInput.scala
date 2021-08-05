@@ -15,22 +15,17 @@ trait AddCacheInput extends StObject {
 }
 object AddCacheInput {
   
-  @scala.inline
-  def apply(DiskIds: DiskIds, GatewayARN: GatewayARN): AddCacheInput = {
+  inline def apply(DiskIds: DiskIds, GatewayARN: GatewayARN): AddCacheInput = {
     val __obj = js.Dynamic.literal(DiskIds = DiskIds.asInstanceOf[js.Any], GatewayARN = GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCacheInput]
   }
   
-  @scala.inline
-  implicit class AddCacheInputMutableBuilder[Self <: AddCacheInput] (val x: Self) extends AnyVal {
+  extension [Self <: AddCacheInput](x: Self) {
     
-    @scala.inline
-    def setDiskIds(value: DiskIds): Self = StObject.set(x, "DiskIds", value.asInstanceOf[js.Any])
+    inline def setDiskIds(value: DiskIds): Self = StObject.set(x, "DiskIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskIdsVarargs(value: DiskId*): Self = StObject.set(x, "DiskIds", js.Array(value :_*))
+    inline def setDiskIdsVarargs(value: DiskId*): Self = StObject.set(x, "DiskIds", js.Array(value :_*))
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
   }
 }

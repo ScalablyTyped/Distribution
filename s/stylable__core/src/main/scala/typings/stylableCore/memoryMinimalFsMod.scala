@@ -13,8 +13,7 @@ object memoryMinimalFsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createMinimalFS(hasFilesTrimWS: MinimalFSSetup): Fs = ^.asInstanceOf[js.Dynamic].applyDynamic("createMinimalFS")(hasFilesTrimWS.asInstanceOf[js.Any]).asInstanceOf[Fs]
+  inline def createMinimalFS(hasFilesTrimWS: MinimalFSSetup): Fs = ^.asInstanceOf[js.Dynamic].applyDynamic("createMinimalFS")(hasFilesTrimWS.asInstanceOf[js.Any]).asInstanceOf[Fs]
   
   trait File extends StObject {
     
@@ -24,23 +23,18 @@ object memoryMinimalFsMod {
   }
   object File {
     
-    @scala.inline
-    def apply(content: String): File = {
+    inline def apply(content: String): File = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
     }
   }
   
@@ -52,23 +46,18 @@ object memoryMinimalFsMod {
   }
   object MinimalFSSetup {
     
-    @scala.inline
-    def apply(files: StringDictionary[File]): MinimalFSSetup = {
+    inline def apply(files: StringDictionary[File]): MinimalFSSetup = {
       val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
       __obj.asInstanceOf[MinimalFSSetup]
     }
     
-    @scala.inline
-    implicit class MinimalFSSetupMutableBuilder[Self <: MinimalFSSetup] (val x: Self) extends AnyVal {
+    extension [Self <: MinimalFSSetup](x: Self) {
       
-      @scala.inline
-      def setFiles(value: StringDictionary[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: StringDictionary[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimWS(value: Boolean): Self = StObject.set(x, "trimWS", value.asInstanceOf[js.Any])
+      inline def setTrimWS(value: Boolean): Self = StObject.set(x, "trimWS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimWSUndefined: Self = StObject.set(x, "trimWS", js.undefined)
+      inline def setTrimWSUndefined: Self = StObject.set(x, "trimWS", js.undefined)
     }
   }
 }

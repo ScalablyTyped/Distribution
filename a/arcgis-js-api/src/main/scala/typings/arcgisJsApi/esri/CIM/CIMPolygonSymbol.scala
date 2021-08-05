@@ -14,17 +14,14 @@ trait CIMPolygonSymbol
 }
 object CIMPolygonSymbol {
   
-  @scala.inline
-  def apply(): CIMPolygonSymbol = {
+  inline def apply(): CIMPolygonSymbol = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMPolygonSymbol")
     __obj.asInstanceOf[CIMPolygonSymbol]
   }
   
-  @scala.inline
-  implicit class CIMPolygonSymbolMutableBuilder[Self <: CIMPolygonSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: CIMPolygonSymbol](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMPolygonSymbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMPolygonSymbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

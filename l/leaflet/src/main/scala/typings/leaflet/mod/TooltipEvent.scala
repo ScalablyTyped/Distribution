@@ -12,8 +12,7 @@ trait TooltipEvent
 }
 object TooltipEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     layer: js.Any,
     propagatedFrom: js.Any,
     sourceTarget: js.Any,
@@ -26,10 +25,8 @@ object TooltipEvent {
     __obj.asInstanceOf[TooltipEvent]
   }
   
-  @scala.inline
-  implicit class TooltipEventMutableBuilder[Self <: TooltipEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TooltipEvent](x: Self) {
     
-    @scala.inline
-    def setTooltip(value: Tooltip_): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: Tooltip_): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
   }
 }

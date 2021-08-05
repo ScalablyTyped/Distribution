@@ -19,8 +19,7 @@ trait ClassBody_
 }
 object ClassBody_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: js.Array[
       ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | TSDeclareMethod_ | TSIndexSignature_
     ]
@@ -30,22 +29,18 @@ object ClassBody_ {
     __obj.asInstanceOf[ClassBody_]
   }
   
-  @scala.inline
-  implicit class ClassBody_MutableBuilder[Self <: ClassBody_] (val x: Self) extends AnyVal {
+  extension [Self <: ClassBody_](x: Self) {
     
-    @scala.inline
-    def setBody(
+    inline def setBody(
       value: js.Array[
           ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | TSDeclareMethod_ | TSIndexSignature_
         ]
     ): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyVarargs(
+    inline def setBodyVarargs(
       value: (ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | TSDeclareMethod_ | TSIndexSignature_)*
     ): Self = StObject.set(x, "body", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: ClassBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ClassBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

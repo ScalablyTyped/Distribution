@@ -19,19 +19,15 @@ trait LayerPaintedEvent extends StObject {
 }
 object LayerPaintedEvent {
   
-  @scala.inline
-  def apply(clip: Rect, layerId: LayerId): LayerPaintedEvent = {
+  inline def apply(clip: Rect, layerId: LayerId): LayerPaintedEvent = {
     val __obj = js.Dynamic.literal(clip = clip.asInstanceOf[js.Any], layerId = layerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerPaintedEvent]
   }
   
-  @scala.inline
-  implicit class LayerPaintedEventMutableBuilder[Self <: LayerPaintedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LayerPaintedEvent](x: Self) {
     
-    @scala.inline
-    def setClip(value: Rect): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    inline def setClip(value: Rect): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerId(value: LayerId): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: LayerId): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
   }
 }

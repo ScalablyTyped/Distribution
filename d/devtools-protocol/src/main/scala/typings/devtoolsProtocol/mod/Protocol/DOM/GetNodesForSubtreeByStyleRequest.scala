@@ -24,28 +24,21 @@ trait GetNodesForSubtreeByStyleRequest extends StObject {
 }
 object GetNodesForSubtreeByStyleRequest {
   
-  @scala.inline
-  def apply(computedStyles: js.Array[CSSComputedStyleProperty], nodeId: NodeId): GetNodesForSubtreeByStyleRequest = {
+  inline def apply(computedStyles: js.Array[CSSComputedStyleProperty], nodeId: NodeId): GetNodesForSubtreeByStyleRequest = {
     val __obj = js.Dynamic.literal(computedStyles = computedStyles.asInstanceOf[js.Any], nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNodesForSubtreeByStyleRequest]
   }
   
-  @scala.inline
-  implicit class GetNodesForSubtreeByStyleRequestMutableBuilder[Self <: GetNodesForSubtreeByStyleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetNodesForSubtreeByStyleRequest](x: Self) {
     
-    @scala.inline
-    def setComputedStyles(value: js.Array[CSSComputedStyleProperty]): Self = StObject.set(x, "computedStyles", value.asInstanceOf[js.Any])
+    inline def setComputedStyles(value: js.Array[CSSComputedStyleProperty]): Self = StObject.set(x, "computedStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputedStylesVarargs(value: CSSComputedStyleProperty*): Self = StObject.set(x, "computedStyles", js.Array(value :_*))
+    inline def setComputedStylesVarargs(value: CSSComputedStyleProperty*): Self = StObject.set(x, "computedStyles", js.Array(value :_*))
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPierce(value: Boolean): Self = StObject.set(x, "pierce", value.asInstanceOf[js.Any])
+    inline def setPierce(value: Boolean): Self = StObject.set(x, "pierce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPierceUndefined: Self = StObject.set(x, "pierce", js.undefined)
+    inline def setPierceUndefined: Self = StObject.set(x, "pierce", js.undefined)
   }
 }

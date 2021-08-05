@@ -13,19 +13,15 @@ trait ReleaseHostsRequest extends StObject {
 }
 object ReleaseHostsRequest {
   
-  @scala.inline
-  def apply(HostIds: RequestHostIdList): ReleaseHostsRequest = {
+  inline def apply(HostIds: RequestHostIdList): ReleaseHostsRequest = {
     val __obj = js.Dynamic.literal(HostIds = HostIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseHostsRequest]
   }
   
-  @scala.inline
-  implicit class ReleaseHostsRequestMutableBuilder[Self <: ReleaseHostsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseHostsRequest](x: Self) {
     
-    @scala.inline
-    def setHostIds(value: RequestHostIdList): Self = StObject.set(x, "HostIds", value.asInstanceOf[js.Any])
+    inline def setHostIds(value: RequestHostIdList): Self = StObject.set(x, "HostIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostIdsVarargs(value: DedicatedHostId*): Self = StObject.set(x, "HostIds", js.Array(value :_*))
+    inline def setHostIdsVarargs(value: DedicatedHostId*): Self = StObject.set(x, "HostIds", js.Array(value :_*))
   }
 }

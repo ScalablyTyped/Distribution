@@ -10,6 +10,5 @@ object isValidQueryStringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isValidQueryString(queryString: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidQueryString")(queryString.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidQueryString(queryString: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidQueryString")(queryString.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

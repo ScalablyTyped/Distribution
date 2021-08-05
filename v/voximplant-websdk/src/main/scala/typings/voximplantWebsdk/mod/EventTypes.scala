@@ -40,41 +40,30 @@ object EventTypes {
   }
   object AuthResult {
     
-    @scala.inline
-    def apply(result: Boolean): AuthResult = {
+    inline def apply(result: Boolean): AuthResult = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthResult]
     }
     
-    @scala.inline
-    implicit class AuthResultMutableBuilder[Self <: AuthResult] (val x: Self) extends AnyVal {
+    extension [Self <: AuthResult](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,17 +95,14 @@ object EventTypes {
   }
   object ConnectionFailed {
     
-    @scala.inline
-    def apply(message: String): ConnectionFailed = {
+    inline def apply(message: String): ConnectionFailed = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectionFailed]
     }
     
-    @scala.inline
-    implicit class ConnectionFailedMutableBuilder[Self <: ConnectionFailed] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionFailed](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,23 +125,18 @@ object EventTypes {
   }
   object IncomingCall {
     
-    @scala.inline
-    def apply(call: Call): IncomingCall = {
+    inline def apply(call: Call): IncomingCall = {
       val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
       __obj.asInstanceOf[IncomingCall]
     }
     
-    @scala.inline
-    implicit class IncomingCallMutableBuilder[Self <: IncomingCall] (val x: Self) extends AnyVal {
+    extension [Self <: IncomingCall](x: Self) {
       
-      @scala.inline
-      def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
+      inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     }
   }
   
@@ -173,17 +154,14 @@ object EventTypes {
   }
   object MicAccessResult {
     
-    @scala.inline
-    def apply(result: Boolean): MicAccessResult = {
+    inline def apply(result: Boolean): MicAccessResult = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[MicAccessResult]
     }
     
-    @scala.inline
-    implicit class MicAccessResultMutableBuilder[Self <: MicAccessResult] (val x: Self) extends AnyVal {
+    extension [Self <: MicAccessResult](x: Self) {
       
-      @scala.inline
-      def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -201,17 +179,14 @@ object EventTypes {
   }
   object NetStatsReceived {
     
-    @scala.inline
-    def apply(stats: NetworkInfo): NetStatsReceived = {
+    inline def apply(stats: NetworkInfo): NetStatsReceived = {
       val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
       __obj.asInstanceOf[NetStatsReceived]
     }
     
-    @scala.inline
-    implicit class NetStatsReceivedMutableBuilder[Self <: NetStatsReceived] (val x: Self) extends AnyVal {
+    extension [Self <: NetStatsReceived](x: Self) {
       
-      @scala.inline
-      def setStats(value: NetworkInfo): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: NetworkInfo): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     }
   }
   
@@ -236,17 +211,14 @@ object EventTypes {
   }
   object SDKReady {
     
-    @scala.inline
-    def apply(version: String): SDKReady = {
+    inline def apply(version: String): SDKReady = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[SDKReady]
     }
     
-    @scala.inline
-    implicit class SDKReadyMutableBuilder[Self <: SDKReady] (val x: Self) extends AnyVal {
+    extension [Self <: SDKReady](x: Self) {
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

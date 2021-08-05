@@ -74,21 +74,16 @@ object iotCertificateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Certificate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CertificateState): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Certificate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CertificateState, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    inline def get(name: String, id: Input[ID]): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    inline def get(name: String, id: Input[ID], state: CertificateState): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    inline def get(name: String, id: Input[ID], state: CertificateState, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
     
     /**
       * Returns true if the given object is an instance of Certificate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/certificate.Certificate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iot/certificate.Certificate */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/certificate.Certificate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iot/certificate.Certificate */ Boolean]
   }
   
   trait CertificateArgs extends StObject {
@@ -109,23 +104,18 @@ object iotCertificateMod {
   }
   object CertificateArgs {
     
-    @scala.inline
-    def apply(active: Input[Boolean]): CertificateArgs = {
+    inline def apply(active: Input[Boolean]): CertificateArgs = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertificateArgs]
     }
     
-    @scala.inline
-    implicit class CertificateArgsMutableBuilder[Self <: CertificateArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateArgs](x: Self) {
       
-      @scala.inline
-      def setActive(value: Input[Boolean]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Input[Boolean]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsr(value: Input[String]): Self = StObject.set(x, "csr", value.asInstanceOf[js.Any])
+      inline def setCsr(value: Input[String]): Self = StObject.set(x, "csr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsrUndefined: Self = StObject.set(x, "csr", js.undefined)
+      inline def setCsrUndefined: Self = StObject.set(x, "csr", js.undefined)
     }
   }
   
@@ -167,50 +157,36 @@ object iotCertificateMod {
   }
   object CertificateState {
     
-    @scala.inline
-    def apply(): CertificateState = {
+    inline def apply(): CertificateState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CertificateState]
     }
     
-    @scala.inline
-    implicit class CertificateStateMutableBuilder[Self <: CertificateState] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateState](x: Self) {
       
-      @scala.inline
-      def setActive(value: Input[Boolean]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Input[Boolean]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCertificatePem(value: Input[String]): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
+      inline def setCertificatePem(value: Input[String]): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificatePemUndefined: Self = StObject.set(x, "certificatePem", js.undefined)
+      inline def setCertificatePemUndefined: Self = StObject.set(x, "certificatePem", js.undefined)
       
-      @scala.inline
-      def setCsr(value: Input[String]): Self = StObject.set(x, "csr", value.asInstanceOf[js.Any])
+      inline def setCsr(value: Input[String]): Self = StObject.set(x, "csr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsrUndefined: Self = StObject.set(x, "csr", js.undefined)
+      inline def setCsrUndefined: Self = StObject.set(x, "csr", js.undefined)
       
-      @scala.inline
-      def setPrivateKey(value: Input[String]): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: Input[String]): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
+      inline def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
       
-      @scala.inline
-      def setPublicKey(value: Input[String]): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: Input[String]): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
+      inline def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
     }
   }
 }

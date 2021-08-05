@@ -22,25 +22,17 @@ object commonActionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def goBack(): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")().asInstanceOf[Action]
+  inline def goBack(): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")().asInstanceOf[Action]
   
-  @scala.inline
-  def navigate(name: String): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(name.asInstanceOf[js.Any]).asInstanceOf[Action]
-  @scala.inline
-  def navigate(name: String, params: js.Object): Action = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Action]
-  @scala.inline
-  def navigate(route: KeyParams): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(route.asInstanceOf[js.Any]).asInstanceOf[Action]
-  @scala.inline
-  def navigate(route: Name): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(route.asInstanceOf[js.Any]).asInstanceOf[Action]
+  inline def navigate(name: String): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(name.asInstanceOf[js.Any]).asInstanceOf[Action]
+  inline def navigate(name: String, params: js.Object): Action = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Action]
+  inline def navigate(route: KeyParams): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(route.asInstanceOf[js.Any]).asInstanceOf[Action]
+  inline def navigate(route: Name): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(route.asInstanceOf[js.Any]).asInstanceOf[Action]
   
-  @scala.inline
-  def reset(): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Action]
-  @scala.inline
-  def reset(state: ResetState): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(state.asInstanceOf[js.Any]).asInstanceOf[Action]
+  inline def reset(): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Action]
+  inline def reset(state: ResetState): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(state.asInstanceOf[js.Any]).asInstanceOf[Action]
   
-  @scala.inline
-  def setParams(params: js.Object): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("setParams")(params.asInstanceOf[js.Any]).asInstanceOf[Action]
+  inline def setParams(params: js.Object): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("setParams")(params.asInstanceOf[js.Any]).asInstanceOf[Action]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactNavigationRouters.anon.Source
@@ -51,29 +43,25 @@ object commonActionsMod {
   trait Action extends StObject
   object Action {
     
-    @scala.inline
-    def Payload(payload: Key | Merge): typings.reactNavigationRouters.anon.Payload = {
+    inline def Payload(payload: Key | Merge): typings.reactNavigationRouters.anon.Payload = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("NAVIGATE")
       __obj.asInstanceOf[typings.reactNavigationRouters.anon.Payload]
     }
     
-    @scala.inline
-    def Source(): typings.reactNavigationRouters.anon.Source = {
+    inline def Source(): typings.reactNavigationRouters.anon.Source = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("GO_BACK")
       __obj.asInstanceOf[typings.reactNavigationRouters.anon.Source]
     }
     
-    @scala.inline
-    def Target(): typings.reactNavigationRouters.anon.Target = {
+    inline def Target(): typings.reactNavigationRouters.anon.Target = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("RESET")
       __obj.asInstanceOf[typings.reactNavigationRouters.anon.Target]
     }
     
-    @scala.inline
-    def Type(payload: Params): typings.reactNavigationRouters.anon.Type = {
+    inline def Type(payload: Params): typings.reactNavigationRouters.anon.Type = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("SET_PARAMS")
       __obj.asInstanceOf[typings.reactNavigationRouters.anon.Type]
@@ -90,8 +78,7 @@ object commonActionsMod {
   trait _ResetState extends StObject
   object _ResetState {
     
-    @scala.inline
-    def OmitNavigationStateParamL(
+    inline def OmitNavigationStateParamL(
       index: Double,
       key: String,
       routeNames: js.Array[
@@ -108,8 +95,7 @@ object commonActionsMod {
       __obj.asInstanceOf[typings.reactNavigationRouters.anon.OmitNavigationStateParamL]
     }
     
-    @scala.inline
-    def PartialStateNavigationSta(
+    inline def PartialStateNavigationSta(
       routes: js.Array[
           PartialRoute[
             Route[

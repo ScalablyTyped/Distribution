@@ -18,28 +18,21 @@ trait ListPlatformApplicationsResponse extends StObject {
 }
 object ListPlatformApplicationsResponse {
   
-  @scala.inline
-  def apply(): ListPlatformApplicationsResponse = {
+  inline def apply(): ListPlatformApplicationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPlatformApplicationsResponse]
   }
   
-  @scala.inline
-  implicit class ListPlatformApplicationsResponseMutableBuilder[Self <: ListPlatformApplicationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPlatformApplicationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPlatformApplications(value: ListOfPlatformApplications): Self = StObject.set(x, "PlatformApplications", value.asInstanceOf[js.Any])
+    inline def setPlatformApplications(value: ListOfPlatformApplications): Self = StObject.set(x, "PlatformApplications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformApplicationsUndefined: Self = StObject.set(x, "PlatformApplications", js.undefined)
+    inline def setPlatformApplicationsUndefined: Self = StObject.set(x, "PlatformApplications", js.undefined)
     
-    @scala.inline
-    def setPlatformApplicationsVarargs(value: PlatformApplication*): Self = StObject.set(x, "PlatformApplications", js.Array(value :_*))
+    inline def setPlatformApplicationsVarargs(value: PlatformApplication*): Self = StObject.set(x, "PlatformApplications", js.Array(value :_*))
   }
 }

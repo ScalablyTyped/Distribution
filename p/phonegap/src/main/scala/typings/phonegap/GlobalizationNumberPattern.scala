@@ -24,8 +24,7 @@ trait GlobalizationNumberPattern extends StObject {
 }
 object GlobalizationNumberPattern {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     decimal: String,
     fraction: Double,
     grouping: String,
@@ -39,31 +38,22 @@ object GlobalizationNumberPattern {
     __obj.asInstanceOf[GlobalizationNumberPattern]
   }
   
-  @scala.inline
-  implicit class GlobalizationNumberPatternMutableBuilder[Self <: GlobalizationNumberPattern] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalizationNumberPattern](x: Self) {
     
-    @scala.inline
-    def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+    inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFraction(value: Double): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
+    inline def setFraction(value: Double): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrouping(value: String): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
+    inline def setGrouping(value: String): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegative(value: String): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+    inline def setNegative(value: String): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositive(value: String): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
+    inline def setPositive(value: String): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRounding(value: Double): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
+    inline def setRounding(value: Double): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

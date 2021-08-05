@@ -12,14 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(url: String): WebSocket = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[WebSocket]
-  @scala.inline
-  def apply(url: String, _reserved: js.Any): WebSocket = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], _reserved.asInstanceOf[js.Any])).asInstanceOf[WebSocket]
-  @scala.inline
-  def apply(url: String, _reserved: js.Any, options: Options): WebSocket = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], _reserved.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WebSocket]
-  @scala.inline
-  def apply(url: String, _reserved: Unit, options: Options): WebSocket = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], _reserved.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WebSocket]
+  inline def apply(url: String): WebSocket = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[WebSocket]
+  inline def apply(url: String, _reserved: js.Any): WebSocket = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], _reserved.asInstanceOf[js.Any])).asInstanceOf[WebSocket]
+  inline def apply(url: String, _reserved: js.Any, options: Options): WebSocket = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], _reserved.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WebSocket]
+  inline def apply(url: String, _reserved: Unit, options: Options): WebSocket = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], _reserved.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WebSocket]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sockjs-client", JSImport.Namespace)
@@ -40,29 +36,25 @@ object mod {
   @js.native
   def CLOSED: CLOSED = js.native
   type CLOSED = `3`
-  @scala.inline
-  def CLOSED_=(x: CLOSED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED")(x.asInstanceOf[js.Any])
+  inline def CLOSED_=(x: CLOSED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED")(x.asInstanceOf[js.Any])
   
   @JSImport("sockjs-client", "CLOSING")
   @js.native
   def CLOSING: CLOSING = js.native
   type CLOSING = `2`
-  @scala.inline
-  def CLOSING_=(x: CLOSING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
+  inline def CLOSING_=(x: CLOSING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
   
   @JSImport("sockjs-client", "CONNECTING")
   @js.native
   def CONNECTING: CONNECTING = js.native
   type CONNECTING = `0`
-  @scala.inline
-  def CONNECTING_=(x: CONNECTING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTING")(x.asInstanceOf[js.Any])
+  inline def CONNECTING_=(x: CONNECTING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTING")(x.asInstanceOf[js.Any])
   
   @JSImport("sockjs-client", "OPEN")
   @js.native
   def OPEN: OPEN = js.native
   type OPEN = `1`
-  @scala.inline
-  def OPEN_=(x: OPEN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
+  inline def OPEN_=(x: OPEN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
   
   @js.native
   trait BaseEvent
@@ -103,44 +95,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+      inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
       
-      @scala.inline
-      def setSessionId(value: Double | SessionGenerator): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+      inline def setSessionId(value: Double | SessionGenerator): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionIdFunction0(value: () => String): Self = StObject.set(x, "sessionId", js.Any.fromFunction0(value))
+      inline def setSessionIdFunction0(value: () => String): Self = StObject.set(x, "sessionId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
+      inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTransports(value: String | js.Array[String]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
+      inline def setTransports(value: String | js.Array[String]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
+      inline def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
       
-      @scala.inline
-      def setTransportsVarargs(value: String*): Self = StObject.set(x, "transports", js.Array(value :_*))
+      inline def setTransportsVarargs(value: String*): Self = StObject.set(x, "transports", js.Array(value :_*))
     }
   }
   

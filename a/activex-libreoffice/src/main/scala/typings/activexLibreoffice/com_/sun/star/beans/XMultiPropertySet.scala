@@ -75,8 +75,7 @@ trait XMultiPropertySet
 }
 object XMultiPropertySet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PropertySetInfo: XPropertySetInfo,
     acquire: () => Unit,
     addPropertiesChangeListener: (SeqEquiv[String], XPropertiesChangeListener) => Unit,
@@ -92,28 +91,20 @@ object XMultiPropertySet {
     __obj.asInstanceOf[XMultiPropertySet]
   }
   
-  @scala.inline
-  implicit class XMultiPropertySetMutableBuilder[Self <: XMultiPropertySet] (val x: Self) extends AnyVal {
+  extension [Self <: XMultiPropertySet](x: Self) {
     
-    @scala.inline
-    def setAddPropertiesChangeListener(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = StObject.set(x, "addPropertiesChangeListener", js.Any.fromFunction2(value))
+    inline def setAddPropertiesChangeListener(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = StObject.set(x, "addPropertiesChangeListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFirePropertiesChangeEvent(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = StObject.set(x, "firePropertiesChangeEvent", js.Any.fromFunction2(value))
+    inline def setFirePropertiesChangeEvent(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = StObject.set(x, "firePropertiesChangeEvent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPropertyValues(value: SeqEquiv[String] => SafeArray[js.Any]): Self = StObject.set(x, "getPropertyValues", js.Any.fromFunction1(value))
+    inline def setGetPropertyValues(value: SeqEquiv[String] => SafeArray[js.Any]): Self = StObject.set(x, "getPropertyValues", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropertySetInfo(value: XPropertySetInfo): Self = StObject.set(x, "PropertySetInfo", value.asInstanceOf[js.Any])
+    inline def setPropertySetInfo(value: XPropertySetInfo): Self = StObject.set(x, "PropertySetInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovePropertiesChangeListener(value: XPropertiesChangeListener => Unit): Self = StObject.set(x, "removePropertiesChangeListener", js.Any.fromFunction1(value))
+    inline def setRemovePropertiesChangeListener(value: XPropertiesChangeListener => Unit): Self = StObject.set(x, "removePropertiesChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPropertyValues(value: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit): Self = StObject.set(x, "setPropertyValues", js.Any.fromFunction2(value))
+    inline def setSetPropertyValues(value: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit): Self = StObject.set(x, "setPropertyValues", js.Any.fromFunction2(value))
   }
 }

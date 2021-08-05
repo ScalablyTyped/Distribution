@@ -10,16 +10,13 @@ trait NativeViewGestureHandlerEventExtra extends StObject {
 }
 object NativeViewGestureHandlerEventExtra {
   
-  @scala.inline
-  def apply(pointerInside: Boolean): NativeViewGestureHandlerEventExtra = {
+  inline def apply(pointerInside: Boolean): NativeViewGestureHandlerEventExtra = {
     val __obj = js.Dynamic.literal(pointerInside = pointerInside.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeViewGestureHandlerEventExtra]
   }
   
-  @scala.inline
-  implicit class NativeViewGestureHandlerEventExtraMutableBuilder[Self <: NativeViewGestureHandlerEventExtra] (val x: Self) extends AnyVal {
+  extension [Self <: NativeViewGestureHandlerEventExtra](x: Self) {
     
-    @scala.inline
-    def setPointerInside(value: Boolean): Self = StObject.set(x, "pointerInside", value.asInstanceOf[js.Any])
+    inline def setPointerInside(value: Boolean): Self = StObject.set(x, "pointerInside", value.asInstanceOf[js.Any])
   }
 }

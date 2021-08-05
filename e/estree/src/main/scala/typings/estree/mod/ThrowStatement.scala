@@ -16,20 +16,16 @@ trait ThrowStatement
 }
 object ThrowStatement {
   
-  @scala.inline
-  def apply(argument: Expression): ThrowStatement = {
+  inline def apply(argument: Expression): ThrowStatement = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ThrowStatement")
     __obj.asInstanceOf[ThrowStatement]
   }
   
-  @scala.inline
-  implicit class ThrowStatementMutableBuilder[Self <: ThrowStatement] (val x: Self) extends AnyVal {
+  extension [Self <: ThrowStatement](x: Self) {
     
-    @scala.inline
-    def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.ThrowStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.ThrowStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

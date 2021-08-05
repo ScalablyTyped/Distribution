@@ -18,25 +18,19 @@ trait AwsRdsDbParameterGroup extends StObject {
 }
 object AwsRdsDbParameterGroup {
   
-  @scala.inline
-  def apply(): AwsRdsDbParameterGroup = {
+  inline def apply(): AwsRdsDbParameterGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRdsDbParameterGroup]
   }
   
-  @scala.inline
-  implicit class AwsRdsDbParameterGroupMutableBuilder[Self <: AwsRdsDbParameterGroup] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRdsDbParameterGroup](x: Self) {
     
-    @scala.inline
-    def setDbParameterGroupName(value: NonEmptyString): Self = StObject.set(x, "DbParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setDbParameterGroupName(value: NonEmptyString): Self = StObject.set(x, "DbParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbParameterGroupNameUndefined: Self = StObject.set(x, "DbParameterGroupName", js.undefined)
+    inline def setDbParameterGroupNameUndefined: Self = StObject.set(x, "DbParameterGroupName", js.undefined)
     
-    @scala.inline
-    def setParameterApplyStatus(value: NonEmptyString): Self = StObject.set(x, "ParameterApplyStatus", value.asInstanceOf[js.Any])
+    inline def setParameterApplyStatus(value: NonEmptyString): Self = StObject.set(x, "ParameterApplyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterApplyStatusUndefined: Self = StObject.set(x, "ParameterApplyStatus", js.undefined)
+    inline def setParameterApplyStatusUndefined: Self = StObject.set(x, "ParameterApplyStatus", js.undefined)
   }
 }

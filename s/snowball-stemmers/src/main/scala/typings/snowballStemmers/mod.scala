@@ -10,11 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def algorithms(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("algorithms")().asInstanceOf[js.Array[String]]
+  inline def algorithms(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("algorithms")().asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def newStemmer(locale: String): Stemmer = ^.asInstanceOf[js.Dynamic].applyDynamic("newStemmer")(locale.asInstanceOf[js.Any]).asInstanceOf[Stemmer]
+  inline def newStemmer(locale: String): Stemmer = ^.asInstanceOf[js.Dynamic].applyDynamic("newStemmer")(locale.asInstanceOf[js.Any]).asInstanceOf[Stemmer]
   
   trait Stemmer extends StObject {
     
@@ -22,17 +20,14 @@ object mod {
   }
   object Stemmer {
     
-    @scala.inline
-    def apply(stem: String => String): Stemmer = {
+    inline def apply(stem: String => String): Stemmer = {
       val __obj = js.Dynamic.literal(stem = js.Any.fromFunction1(stem))
       __obj.asInstanceOf[Stemmer]
     }
     
-    @scala.inline
-    implicit class StemmerMutableBuilder[Self <: Stemmer] (val x: Self) extends AnyVal {
+    extension [Self <: Stemmer](x: Self) {
       
-      @scala.inline
-      def setStem(value: String => String): Self = StObject.set(x, "stem", js.Any.fromFunction1(value))
+      inline def setStem(value: String => String): Self = StObject.set(x, "stem", js.Any.fromFunction1(value))
     }
   }
 }

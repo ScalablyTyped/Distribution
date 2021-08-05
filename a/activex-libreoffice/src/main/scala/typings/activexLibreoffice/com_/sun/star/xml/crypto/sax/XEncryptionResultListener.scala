@@ -25,8 +25,7 @@ trait XEncryptionResultListener
 }
 object XEncryptionResultListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     encrypted: (Double, SecurityOperationStatus) => Unit,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XEncryptionResultListener {
     __obj.asInstanceOf[XEncryptionResultListener]
   }
   
-  @scala.inline
-  implicit class XEncryptionResultListenerMutableBuilder[Self <: XEncryptionResultListener] (val x: Self) extends AnyVal {
+  extension [Self <: XEncryptionResultListener](x: Self) {
     
-    @scala.inline
-    def setEncrypted(value: (Double, SecurityOperationStatus) => Unit): Self = StObject.set(x, "encrypted", js.Any.fromFunction2(value))
+    inline def setEncrypted(value: (Double, SecurityOperationStatus) => Unit): Self = StObject.set(x, "encrypted", js.Any.fromFunction2(value))
   }
 }

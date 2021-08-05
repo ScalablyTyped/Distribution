@@ -5,238 +5,186 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def Plots: typings.plotlyJs.mod.StaticPlots = typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Plots").asInstanceOf[typings.plotlyJs.mod.StaticPlots]
+inline def Plots: typings.plotlyJs.mod.StaticPlots = typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Plots").asInstanceOf[typings.plotlyJs.mod.StaticPlots]
 
-@scala.inline
-def addFrames(root: typings.plotlyJs.mod.Root, frames: js.Array[typings.plotlyJs.anon.PartialFrame]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addFrames")(root.asInstanceOf[js.Any], frames.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def addFrames(root: typings.plotlyJs.mod.Root, frames: js.Array[typings.plotlyJs.anon.PartialFrame]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addFrames")(root.asInstanceOf[js.Any], frames.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
 
-@scala.inline
-def addTraces(root: typings.plotlyJs.mod.Root, traces: js.Array[typings.plotlyJs.mod.Data]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addTraces")(root.asInstanceOf[js.Any], traces.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def addTraces(
+inline def addTraces(root: typings.plotlyJs.mod.Root, traces: js.Array[typings.plotlyJs.mod.Data]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addTraces")(root.asInstanceOf[js.Any], traces.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def addTraces(
   root: typings.plotlyJs.mod.Root,
   traces: js.Array[typings.plotlyJs.mod.Data],
   newIndices: js.Array[scala.Double]
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addTraces")(root.asInstanceOf[js.Any], traces.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def addTraces(
+inline def addTraces(
   root: typings.plotlyJs.mod.Root,
   traces: js.Array[typings.plotlyJs.mod.Data],
   newIndices: scala.Double
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addTraces")(root.asInstanceOf[js.Any], traces.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def addTraces(root: typings.plotlyJs.mod.Root, traces: typings.plotlyJs.mod.Data): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addTraces")(root.asInstanceOf[js.Any], traces.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def addTraces(
+inline def addTraces(root: typings.plotlyJs.mod.Root, traces: typings.plotlyJs.mod.Data): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addTraces")(root.asInstanceOf[js.Any], traces.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def addTraces(
   root: typings.plotlyJs.mod.Root,
   traces: typings.plotlyJs.mod.Data,
   newIndices: js.Array[scala.Double]
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addTraces")(root.asInstanceOf[js.Any], traces.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def addTraces(root: typings.plotlyJs.mod.Root, traces: typings.plotlyJs.mod.Data, newIndices: scala.Double): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addTraces")(root.asInstanceOf[js.Any], traces.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def addTraces(root: typings.plotlyJs.mod.Root, traces: typings.plotlyJs.mod.Data, newIndices: scala.Double): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addTraces")(root.asInstanceOf[js.Any], traces.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
 
-@scala.inline
-def deleteFrames(root: typings.plotlyJs.mod.Root, frames: js.Array[scala.Double]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("deleteFrames")(root.asInstanceOf[js.Any], frames.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def deleteFrames(root: typings.plotlyJs.mod.Root, frames: js.Array[scala.Double]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("deleteFrames")(root.asInstanceOf[js.Any], frames.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
 
-@scala.inline
-def deleteTraces(root: typings.plotlyJs.mod.Root, indices: js.Array[scala.Double]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("deleteTraces")(root.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def deleteTraces(root: typings.plotlyJs.mod.Root, indices: scala.Double): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("deleteTraces")(root.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def deleteTraces(root: typings.plotlyJs.mod.Root, indices: js.Array[scala.Double]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("deleteTraces")(root.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def deleteTraces(root: typings.plotlyJs.mod.Root, indices: scala.Double): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("deleteTraces")(root.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
 
-@scala.inline
-def downloadImage(root: typings.plotlyJs.mod.Root, opts: typings.plotlyJs.mod.DownloadImgopts): js.Promise[java.lang.String] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("downloadImage")(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[java.lang.String]]
+inline def downloadImage(root: typings.plotlyJs.mod.Root, opts: typings.plotlyJs.mod.DownloadImgopts): js.Promise[java.lang.String] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("downloadImage")(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[java.lang.String]]
 
-@scala.inline
-def extendTraces(
+inline def extendTraces(
   root: typings.plotlyJs.mod.Root,
   update: js.Array[typings.plotlyJs.mod.Data],
   indices: js.Array[scala.Double]
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def extendTraces(
+inline def extendTraces(
   root: typings.plotlyJs.mod.Root,
   update: js.Array[typings.plotlyJs.mod.Data],
   indices: js.Array[scala.Double],
   maxPoints: scala.Double
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], maxPoints.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def extendTraces(
+inline def extendTraces(
   root: typings.plotlyJs.mod.Root,
   update: js.Array[typings.plotlyJs.mod.Data],
   indices: scala.Double
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def extendTraces(
+inline def extendTraces(
   root: typings.plotlyJs.mod.Root,
   update: js.Array[typings.plotlyJs.mod.Data],
   indices: scala.Double,
   maxPoints: scala.Double
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], maxPoints.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def extendTraces(
+inline def extendTraces(
   root: typings.plotlyJs.mod.Root,
   update: typings.plotlyJs.mod.Data,
   indices: js.Array[scala.Double]
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def extendTraces(
+inline def extendTraces(
   root: typings.plotlyJs.mod.Root,
   update: typings.plotlyJs.mod.Data,
   indices: js.Array[scala.Double],
   maxPoints: scala.Double
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], maxPoints.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def extendTraces(root: typings.plotlyJs.mod.Root, update: typings.plotlyJs.mod.Data, indices: scala.Double): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def extendTraces(
+inline def extendTraces(root: typings.plotlyJs.mod.Root, update: typings.plotlyJs.mod.Data, indices: scala.Double): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def extendTraces(
   root: typings.plotlyJs.mod.Root,
   update: typings.plotlyJs.mod.Data,
   indices: scala.Double,
   maxPoints: scala.Double
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extendTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], maxPoints.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
 
-@scala.inline
-def moveTraces(root: typings.plotlyJs.mod.Root, currentIndices: js.Array[scala.Double]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def moveTraces(
+inline def moveTraces(root: typings.plotlyJs.mod.Root, currentIndices: js.Array[scala.Double]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def moveTraces(
   root: typings.plotlyJs.mod.Root,
   currentIndices: js.Array[scala.Double],
   newIndices: js.Array[scala.Double]
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def moveTraces(root: typings.plotlyJs.mod.Root, currentIndices: js.Array[scala.Double], newIndices: scala.Double): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def moveTraces(root: typings.plotlyJs.mod.Root, currentIndices: scala.Double): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def moveTraces(root: typings.plotlyJs.mod.Root, currentIndices: scala.Double, newIndices: js.Array[scala.Double]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def moveTraces(root: typings.plotlyJs.mod.Root, currentIndices: scala.Double, newIndices: scala.Double): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def moveTraces(root: typings.plotlyJs.mod.Root, currentIndices: js.Array[scala.Double], newIndices: scala.Double): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def moveTraces(root: typings.plotlyJs.mod.Root, currentIndices: scala.Double): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def moveTraces(root: typings.plotlyJs.mod.Root, currentIndices: scala.Double, newIndices: js.Array[scala.Double]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def moveTraces(root: typings.plotlyJs.mod.Root, currentIndices: scala.Double, newIndices: scala.Double): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("moveTraces")(root.asInstanceOf[js.Any], currentIndices.asInstanceOf[js.Any], newIndices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
 
-@scala.inline
-def newPlot(root: typings.plotlyJs.mod.Root, data: js.Array[typings.plotlyJs.mod.Data]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("newPlot")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def newPlot(
+inline def newPlot(root: typings.plotlyJs.mod.Root, data: js.Array[typings.plotlyJs.mod.Data]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("newPlot")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def newPlot(
   root: typings.plotlyJs.mod.Root,
   data: js.Array[typings.plotlyJs.mod.Data],
   layout: scala.Unit,
   config: typings.plotlyJs.anon.PartialConfig
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("newPlot")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any], layout.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def newPlot(
+inline def newPlot(
   root: typings.plotlyJs.mod.Root,
   data: js.Array[typings.plotlyJs.mod.Data],
   layout: typings.plotlyJs.anon.PartialLayout
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("newPlot")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any], layout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def newPlot(
+inline def newPlot(
   root: typings.plotlyJs.mod.Root,
   data: js.Array[typings.plotlyJs.mod.Data],
   layout: typings.plotlyJs.anon.PartialLayout,
   config: typings.plotlyJs.anon.PartialConfig
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("newPlot")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any], layout.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
 
-@scala.inline
-def plot(root: typings.plotlyJs.mod.Root, data: js.Array[typings.plotlyJs.mod.Data]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("plot")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def plot(
+inline def plot(root: typings.plotlyJs.mod.Root, data: js.Array[typings.plotlyJs.mod.Data]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("plot")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def plot(
   root: typings.plotlyJs.mod.Root,
   data: js.Array[typings.plotlyJs.mod.Data],
   layout: scala.Unit,
   config: typings.plotlyJs.anon.PartialConfig
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("plot")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any], layout.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def plot(
+inline def plot(
   root: typings.plotlyJs.mod.Root,
   data: js.Array[typings.plotlyJs.mod.Data],
   layout: typings.plotlyJs.anon.PartialLayout
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("plot")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any], layout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def plot(
+inline def plot(
   root: typings.plotlyJs.mod.Root,
   data: js.Array[typings.plotlyJs.mod.Data],
   layout: typings.plotlyJs.anon.PartialLayout,
   config: typings.plotlyJs.anon.PartialConfig
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("plot")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any], layout.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
 
-@scala.inline
-def prependTraces(
+inline def prependTraces(
   root: typings.plotlyJs.mod.Root,
   update: js.Array[typings.plotlyJs.mod.Data],
   indices: js.Array[scala.Double]
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("prependTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def prependTraces(
+inline def prependTraces(
   root: typings.plotlyJs.mod.Root,
   update: js.Array[typings.plotlyJs.mod.Data],
   indices: scala.Double
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("prependTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def prependTraces(
+inline def prependTraces(
   root: typings.plotlyJs.mod.Root,
   update: typings.plotlyJs.mod.Data,
   indices: js.Array[scala.Double]
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("prependTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def prependTraces(root: typings.plotlyJs.mod.Root, update: typings.plotlyJs.mod.Data, indices: scala.Double): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("prependTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def prependTraces(root: typings.plotlyJs.mod.Root, update: typings.plotlyJs.mod.Data, indices: scala.Double): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("prependTraces")(root.asInstanceOf[js.Any], update.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
 
-@scala.inline
-def purge(root: typings.plotlyJs.mod.Root): scala.Unit = typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("purge")(root.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def purge(root: typings.plotlyJs.mod.Root): scala.Unit = typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("purge")(root.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def react(root: typings.plotlyJs.mod.Root, data: js.Array[typings.plotlyJs.mod.Data]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("react")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def react(
+inline def react(root: typings.plotlyJs.mod.Root, data: js.Array[typings.plotlyJs.mod.Data]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("react")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def react(
   root: typings.plotlyJs.mod.Root,
   data: js.Array[typings.plotlyJs.mod.Data],
   layout: scala.Unit,
   config: typings.plotlyJs.anon.PartialConfig
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("react")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any], layout.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def react(
+inline def react(
   root: typings.plotlyJs.mod.Root,
   data: js.Array[typings.plotlyJs.mod.Data],
   layout: typings.plotlyJs.anon.PartialLayout
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("react")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any], layout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def react(
+inline def react(
   root: typings.plotlyJs.mod.Root,
   data: js.Array[typings.plotlyJs.mod.Data],
   layout: typings.plotlyJs.anon.PartialLayout,
   config: typings.plotlyJs.anon.PartialConfig
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("react")(root.asInstanceOf[js.Any], data.asInstanceOf[js.Any], layout.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
 
-@scala.inline
-def redraw(root: typings.plotlyJs.mod.Root): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("redraw")(root.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def redraw(root: typings.plotlyJs.mod.Root): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("redraw")(root.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
 
-@scala.inline
-def relayout(root: typings.plotlyJs.mod.Root, layout: typings.plotlyJs.anon.PartialLayout): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("relayout")(root.asInstanceOf[js.Any], layout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def relayout(root: typings.plotlyJs.mod.Root, layout: typings.plotlyJs.anon.PartialLayout): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("relayout")(root.asInstanceOf[js.Any], layout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
 
-@scala.inline
-def restyle(root: typings.plotlyJs.mod.Root, aobj: typings.plotlyJs.mod.Data): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("restyle")(root.asInstanceOf[js.Any], aobj.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def restyle(root: typings.plotlyJs.mod.Root, aobj: typings.plotlyJs.mod.Data, traces: js.Array[scala.Double]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("restyle")(root.asInstanceOf[js.Any], aobj.asInstanceOf[js.Any], traces.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def restyle(root: typings.plotlyJs.mod.Root, aobj: typings.plotlyJs.mod.Data, traces: scala.Double): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("restyle")(root.asInstanceOf[js.Any], aobj.asInstanceOf[js.Any], traces.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def restyle(root: typings.plotlyJs.mod.Root, aobj: typings.plotlyJs.mod.Data): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("restyle")(root.asInstanceOf[js.Any], aobj.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def restyle(root: typings.plotlyJs.mod.Root, aobj: typings.plotlyJs.mod.Data, traces: js.Array[scala.Double]): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("restyle")(root.asInstanceOf[js.Any], aobj.asInstanceOf[js.Any], traces.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
+inline def restyle(root: typings.plotlyJs.mod.Root, aobj: typings.plotlyJs.mod.Data, traces: scala.Double): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("restyle")(root.asInstanceOf[js.Any], aobj.asInstanceOf[js.Any], traces.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
 
-@scala.inline
-def toImage(root: typings.plotlyJs.mod.Root, opts: typings.plotlyJs.mod.ToImgopts): js.Promise[java.lang.String] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("toImage")(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[java.lang.String]]
+inline def toImage(root: typings.plotlyJs.mod.Root, opts: typings.plotlyJs.mod.ToImgopts): js.Promise[java.lang.String] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("toImage")(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[java.lang.String]]
 
-@scala.inline
-def update(
+inline def update(
   root: typings.plotlyJs.mod.Root,
   traceUpdate: typings.plotlyJs.mod.Data,
   layoutUpdate: typings.plotlyJs.anon.PartialLayout
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("update")(root.asInstanceOf[js.Any], traceUpdate.asInstanceOf[js.Any], layoutUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def update(
+inline def update(
   root: typings.plotlyJs.mod.Root,
   traceUpdate: typings.plotlyJs.mod.Data,
   layoutUpdate: typings.plotlyJs.anon.PartialLayout,
   traces: js.Array[scala.Double]
 ): js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement] = (typings.plotlyJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("update")(root.asInstanceOf[js.Any], traceUpdate.asInstanceOf[js.Any], layoutUpdate.asInstanceOf[js.Any], traces.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.plotlyJs.mod.PlotlyHTMLElement]]
-@scala.inline
-def update(
+inline def update(
   root: typings.plotlyJs.mod.Root,
   traceUpdate: typings.plotlyJs.mod.Data,
   layoutUpdate: typings.plotlyJs.anon.PartialLayout,

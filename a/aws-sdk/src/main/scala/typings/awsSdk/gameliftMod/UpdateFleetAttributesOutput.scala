@@ -13,19 +13,15 @@ trait UpdateFleetAttributesOutput extends StObject {
 }
 object UpdateFleetAttributesOutput {
   
-  @scala.inline
-  def apply(): UpdateFleetAttributesOutput = {
+  inline def apply(): UpdateFleetAttributesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateFleetAttributesOutput]
   }
   
-  @scala.inline
-  implicit class UpdateFleetAttributesOutputMutableBuilder[Self <: UpdateFleetAttributesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFleetAttributesOutput](x: Self) {
     
-    @scala.inline
-    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
+    inline def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
   }
 }

@@ -17,23 +17,18 @@ trait TemplateLiteral
 }
 object TemplateLiteral {
   
-  @scala.inline
-  def apply(elements: js.Array[String | JSChildNode], loc: SourceLocation): TemplateLiteral = {
+  inline def apply(elements: js.Array[String | JSChildNode], loc: SourceLocation): TemplateLiteral = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(22)
     __obj.asInstanceOf[TemplateLiteral]
   }
   
-  @scala.inline
-  implicit class TemplateLiteralMutableBuilder[Self <: TemplateLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateLiteral](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[String | JSChildNode]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[String | JSChildNode]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsVarargs(value: (String | JSChildNode)*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: (String | JSChildNode)*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: `22`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `22`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

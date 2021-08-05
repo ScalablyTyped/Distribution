@@ -12,17 +12,14 @@ object anon {
   }
   object Now {
     
-    @scala.inline
-    def apply(now: () => Double): Now = {
+    inline def apply(now: () => Double): Now = {
       val __obj = js.Dynamic.literal(now = js.Any.fromFunction0(now))
       __obj.asInstanceOf[Now]
     }
     
-    @scala.inline
-    implicit class NowMutableBuilder[Self <: Now] (val x: Self) extends AnyVal {
+    extension [Self <: Now](x: Self) {
       
-      @scala.inline
-      def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
+      inline def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
     }
   }
 }

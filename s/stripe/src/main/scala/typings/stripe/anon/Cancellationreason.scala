@@ -11,19 +11,15 @@ trait Cancellationreason extends StObject {
 }
 object Cancellationreason {
   
-  @scala.inline
-  def apply(): Cancellationreason = {
+  inline def apply(): Cancellationreason = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cancellationreason]
   }
   
-  @scala.inline
-  implicit class CancellationreasonMutableBuilder[Self <: Cancellationreason] (val x: Self) extends AnyVal {
+  extension [Self <: Cancellationreason](x: Self) {
     
-    @scala.inline
-    def setCancellation_reason(value: PaymentIntentUserProvidedCancellationReason): Self = StObject.set(x, "cancellation_reason", value.asInstanceOf[js.Any])
+    inline def setCancellation_reason(value: PaymentIntentUserProvidedCancellationReason): Self = StObject.set(x, "cancellation_reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancellation_reasonUndefined: Self = StObject.set(x, "cancellation_reason", js.undefined)
+    inline def setCancellation_reasonUndefined: Self = StObject.set(x, "cancellation_reason", js.undefined)
   }
 }

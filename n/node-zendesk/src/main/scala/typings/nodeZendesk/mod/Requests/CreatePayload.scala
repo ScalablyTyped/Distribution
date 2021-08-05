@@ -10,16 +10,13 @@ trait CreatePayload extends StObject {
 }
 object CreatePayload {
   
-  @scala.inline
-  def apply(request: CreateModel): CreatePayload = {
+  inline def apply(request: CreateModel): CreatePayload = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePayload]
   }
   
-  @scala.inline
-  implicit class CreatePayloadMutableBuilder[Self <: CreatePayload] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePayload](x: Self) {
     
-    @scala.inline
-    def setRequest(value: CreateModel): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: CreateModel): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

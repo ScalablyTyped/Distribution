@@ -12,8 +12,7 @@ trait ASPxClientFileManagerToolbarItem
      with ASPxClientMenuItem
 object ASPxClientFileManagerToolbarItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetChecked: () => Boolean,
     GetEnabled: () => Boolean,
     GetImageUrl: () => String,

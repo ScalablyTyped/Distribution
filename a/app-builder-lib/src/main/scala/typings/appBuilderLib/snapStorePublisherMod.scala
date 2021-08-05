@@ -15,7 +15,7 @@ object snapStorePublisherMod {
   class SnapStorePublisher protected () extends Publisher {
     def this(context: PublishContext, options: SnapStoreOptions) = this()
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     @JSName("providerName")
     val providerName_FSnapStorePublisher: /* "snapStore" */ String = js.native
@@ -33,26 +33,20 @@ object snapStorePublisherMod {
   }
   object SnapStoreOptions {
     
-    @scala.inline
-    def apply(provider: PublishProvider): SnapStoreOptions = {
+    inline def apply(provider: PublishProvider): SnapStoreOptions = {
       val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[SnapStoreOptions]
     }
     
-    @scala.inline
-    implicit class SnapStoreOptionsMutableBuilder[Self <: SnapStoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SnapStoreOptions](x: Self) {
       
-      @scala.inline
-      def setChannels(value: String | js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+      inline def setChannels(value: String | js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelsNull: Self = StObject.set(x, "channels", null)
+      inline def setChannelsNull: Self = StObject.set(x, "channels", null)
       
-      @scala.inline
-      def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+      inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
       
-      @scala.inline
-      def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
     }
   }
 }

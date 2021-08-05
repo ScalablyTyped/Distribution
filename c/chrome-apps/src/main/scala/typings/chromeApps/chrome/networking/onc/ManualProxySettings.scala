@@ -20,37 +20,27 @@ trait ManualProxySettings[M, P] extends StObject {
 }
 object ManualProxySettings {
   
-  @scala.inline
-  def apply[M, P](): ManualProxySettings[M, P] = {
+  inline def apply[M, P](): ManualProxySettings[M, P] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManualProxySettings[M, P]]
   }
   
-  @scala.inline
-  implicit class ManualProxySettingsMutableBuilder[Self <: ManualProxySettings[?, ?], M, P] (val x: Self & (ManualProxySettings[M, P])) extends AnyVal {
+  extension [Self <: ManualProxySettings[?, ?], M, P](x: Self & (ManualProxySettings[M, P])) {
     
-    @scala.inline
-    def setFTPProxy(value: P): Self = StObject.set(x, "FTPProxy", value.asInstanceOf[js.Any])
+    inline def setFTPProxy(value: P): Self = StObject.set(x, "FTPProxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFTPProxyUndefined: Self = StObject.set(x, "FTPProxy", js.undefined)
+    inline def setFTPProxyUndefined: Self = StObject.set(x, "FTPProxy", js.undefined)
     
-    @scala.inline
-    def setHTTPProxy(value: P): Self = StObject.set(x, "HTTPProxy", value.asInstanceOf[js.Any])
+    inline def setHTTPProxy(value: P): Self = StObject.set(x, "HTTPProxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTTPProxyUndefined: Self = StObject.set(x, "HTTPProxy", js.undefined)
+    inline def setHTTPProxyUndefined: Self = StObject.set(x, "HTTPProxy", js.undefined)
     
-    @scala.inline
-    def setSOCKS(value: P): Self = StObject.set(x, "SOCKS", value.asInstanceOf[js.Any])
+    inline def setSOCKS(value: P): Self = StObject.set(x, "SOCKS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSOCKSUndefined: Self = StObject.set(x, "SOCKS", js.undefined)
+    inline def setSOCKSUndefined: Self = StObject.set(x, "SOCKS", js.undefined)
     
-    @scala.inline
-    def setSecureHTTPProxy(value: P): Self = StObject.set(x, "SecureHTTPProxy", value.asInstanceOf[js.Any])
+    inline def setSecureHTTPProxy(value: P): Self = StObject.set(x, "SecureHTTPProxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureHTTPProxyUndefined: Self = StObject.set(x, "SecureHTTPProxy", js.undefined)
+    inline def setSecureHTTPProxyUndefined: Self = StObject.set(x, "SecureHTTPProxy", js.undefined)
   }
 }

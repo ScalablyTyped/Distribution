@@ -18,8 +18,7 @@ trait ParametersScimGetProvisioningInformationForUserEndpoint extends StObject {
 }
 object ParametersScimGetProvisioningInformationForUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ScimGetProvisioningInformationForUserEndpoint,
     request: ScimGetProvisioningInformationForUserRequestOptions,
     response: OctokitResponse[ScimGetProvisioningInformationForUserResponseData]
@@ -28,16 +27,12 @@ object ParametersScimGetProvisioningInformationForUserEndpoint {
     __obj.asInstanceOf[ParametersScimGetProvisioningInformationForUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersScimGetProvisioningInformationForUserEndpointMutableBuilder[Self <: ParametersScimGetProvisioningInformationForUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersScimGetProvisioningInformationForUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ScimGetProvisioningInformationForUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ScimGetProvisioningInformationForUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ScimGetProvisioningInformationForUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ScimGetProvisioningInformationForUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ScimGetProvisioningInformationForUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ScimGetProvisioningInformationForUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

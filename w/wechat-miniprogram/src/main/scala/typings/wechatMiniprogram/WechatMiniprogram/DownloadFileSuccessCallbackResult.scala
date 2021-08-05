@@ -24,8 +24,7 @@ trait DownloadFileSuccessCallbackResult extends StObject {
 }
 object DownloadFileSuccessCallbackResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errMsg: String,
     filePath: String,
     profile: DownloadProfile,
@@ -36,22 +35,16 @@ object DownloadFileSuccessCallbackResult {
     __obj.asInstanceOf[DownloadFileSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class DownloadFileSuccessCallbackResultMutableBuilder[Self <: DownloadFileSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadFileSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile(value: DownloadProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: DownloadProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
   }
 }

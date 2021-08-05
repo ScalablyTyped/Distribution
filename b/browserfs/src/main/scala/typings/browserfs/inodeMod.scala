@@ -24,8 +24,7 @@ object inodeMod {
     /**
       * Converts the buffer into an Inode.
       */
-    @scala.inline
-    def fromBuffer(buffer: Buffer): Inode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Inode]
+    inline def fromBuffer(buffer: Buffer): Inode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Inode]
   }
   
   @js.native

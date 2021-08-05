@@ -22,22 +22,17 @@ trait ElementChange extends StObject {
 }
 object ElementChange {
   
-  @scala.inline
-  def apply(Accessor: js.Any, Element: js.Any, ReplacedElement: js.Any): ElementChange = {
+  inline def apply(Accessor: js.Any, Element: js.Any, ReplacedElement: js.Any): ElementChange = {
     val __obj = js.Dynamic.literal(Accessor = Accessor.asInstanceOf[js.Any], Element = Element.asInstanceOf[js.Any], ReplacedElement = ReplacedElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementChange]
   }
   
-  @scala.inline
-  implicit class ElementChangeMutableBuilder[Self <: ElementChange] (val x: Self) extends AnyVal {
+  extension [Self <: ElementChange](x: Self) {
     
-    @scala.inline
-    def setAccessor(value: js.Any): Self = StObject.set(x, "Accessor", value.asInstanceOf[js.Any])
+    inline def setAccessor(value: js.Any): Self = StObject.set(x, "Accessor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: js.Any): Self = StObject.set(x, "Element", value.asInstanceOf[js.Any])
+    inline def setElement(value: js.Any): Self = StObject.set(x, "Element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacedElement(value: js.Any): Self = StObject.set(x, "ReplacedElement", value.asInstanceOf[js.Any])
+    inline def setReplacedElement(value: js.Any): Self = StObject.set(x, "ReplacedElement", value.asInstanceOf[js.Any])
   }
 }

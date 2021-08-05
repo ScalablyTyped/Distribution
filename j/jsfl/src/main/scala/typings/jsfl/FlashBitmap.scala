@@ -18,34 +18,25 @@ trait FlashBitmap extends StObject {
 }
 object FlashBitmap {
   
-  @scala.inline
-  def apply(bits: js.Any, depth: js.Any, height: js.Any, width: js.Any): FlashBitmap = {
+  inline def apply(bits: js.Any, depth: js.Any, height: js.Any, width: js.Any): FlashBitmap = {
     val __obj = js.Dynamic.literal(bits = bits.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlashBitmap]
   }
   
-  @scala.inline
-  implicit class FlashBitmapMutableBuilder[Self <: FlashBitmap] (val x: Self) extends AnyVal {
+  extension [Self <: FlashBitmap](x: Self) {
     
-    @scala.inline
-    def setBits(value: js.Any): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
+    inline def setBits(value: js.Any): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCTab(value: js.Array[String]): Self = StObject.set(x, "cTab", value.asInstanceOf[js.Any])
+    inline def setCTab(value: js.Array[String]): Self = StObject.set(x, "cTab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCTabUndefined: Self = StObject.set(x, "cTab", js.undefined)
+    inline def setCTabUndefined: Self = StObject.set(x, "cTab", js.undefined)
     
-    @scala.inline
-    def setCTabVarargs(value: String*): Self = StObject.set(x, "cTab", js.Array(value :_*))
+    inline def setCTabVarargs(value: String*): Self = StObject.set(x, "cTab", js.Array(value :_*))
     
-    @scala.inline
-    def setDepth(value: js.Any): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: js.Any): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -14,18 +14,15 @@ object tabCapture {
   @JSImport("sinon-chrome", "tabCapture.capture")
   @js.native
   def capture: SinonChromeStub = js.native
-  @scala.inline
-  def capture_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("capture")(x.asInstanceOf[js.Any])
+  inline def capture_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("capture")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "tabCapture.getCapturedTabs")
   @js.native
   def getCapturedTabs: SinonChromeStub = js.native
-  @scala.inline
-  def getCapturedTabs_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCapturedTabs")(x.asInstanceOf[js.Any])
+  inline def getCapturedTabs_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCapturedTabs")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "tabCapture.onStatusChanged")
   @js.native
   def onStatusChanged: Event = js.native
-  @scala.inline
-  def onStatusChanged_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStatusChanged")(x.asInstanceOf[js.Any])
+  inline def onStatusChanged_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStatusChanged")(x.asInstanceOf[js.Any])
 }

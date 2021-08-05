@@ -8,11 +8,9 @@ object casperjsStrings {
   
   @js.native
   sealed trait css extends StObject
-  @scala.inline
-  def css: css = "css".asInstanceOf[css]
+  inline def css: css = "css".asInstanceOf[css]
   
   @js.native
   sealed trait xpath extends StObject
-  @scala.inline
-  def xpath: xpath = "xpath".asInstanceOf[xpath]
+  inline def xpath: xpath = "xpath".asInstanceOf[xpath]
 }

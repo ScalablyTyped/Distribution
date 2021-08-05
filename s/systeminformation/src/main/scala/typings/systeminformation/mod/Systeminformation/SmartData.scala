@@ -36,8 +36,7 @@ trait SmartData extends StObject {
 }
 object SmartData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ata_smart_attributes: Revision,
     ata_smart_error_log: Summary,
     ata_smart_self_test_log: Standard,
@@ -53,40 +52,28 @@ object SmartData {
     __obj.asInstanceOf[SmartData]
   }
   
-  @scala.inline
-  implicit class SmartDataMutableBuilder[Self <: SmartData] (val x: Self) extends AnyVal {
+  extension [Self <: SmartData](x: Self) {
     
-    @scala.inline
-    def setAta_smart_attributes(value: Revision): Self = StObject.set(x, "ata_smart_attributes", value.asInstanceOf[js.Any])
+    inline def setAta_smart_attributes(value: Revision): Self = StObject.set(x, "ata_smart_attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAta_smart_error_log(value: Summary): Self = StObject.set(x, "ata_smart_error_log", value.asInstanceOf[js.Any])
+    inline def setAta_smart_error_log(value: Summary): Self = StObject.set(x, "ata_smart_error_log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAta_smart_self_test_log(value: Standard): Self = StObject.set(x, "ata_smart_self_test_log", value.asInstanceOf[js.Any])
+    inline def setAta_smart_self_test_log(value: Standard): Self = StObject.set(x, "ata_smart_self_test_log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevice(value: Infoname): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: Infoname): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJson_format_version(value: js.Array[Double]): Self = StObject.set(x, "json_format_version", value.asInstanceOf[js.Any])
+    inline def setJson_format_version(value: js.Array[Double]): Self = StObject.set(x, "json_format_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJson_format_versionVarargs(value: Double*): Self = StObject.set(x, "json_format_version", js.Array(value :_*))
+    inline def setJson_format_versionVarargs(value: Double*): Self = StObject.set(x, "json_format_version", js.Array(value :_*))
     
-    @scala.inline
-    def setPower_cycle_count(value: Double): Self = StObject.set(x, "power_cycle_count", value.asInstanceOf[js.Any])
+    inline def setPower_cycle_count(value: Double): Self = StObject.set(x, "power_cycle_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPower_on_time(value: Hours): Self = StObject.set(x, "power_on_time", value.asInstanceOf[js.Any])
+    inline def setPower_on_time(value: Hours): Self = StObject.set(x, "power_on_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmart_status(value: Passed): Self = StObject.set(x, "smart_status", value.asInstanceOf[js.Any])
+    inline def setSmart_status(value: Passed): Self = StObject.set(x, "smart_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmartctl(value: Argv): Self = StObject.set(x, "smartctl", value.asInstanceOf[js.Any])
+    inline def setSmartctl(value: Argv): Self = StObject.set(x, "smartctl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemperature(value: Current): Self = StObject.set(x, "temperature", value.asInstanceOf[js.Any])
+    inline def setTemperature(value: Current): Self = StObject.set(x, "temperature", value.asInstanceOf[js.Any])
   }
 }

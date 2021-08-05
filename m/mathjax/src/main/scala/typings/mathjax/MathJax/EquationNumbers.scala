@@ -37,49 +37,35 @@ trait EquationNumbers extends StObject {
 }
 object EquationNumbers {
   
-  @scala.inline
-  def apply(): EquationNumbers = {
+  inline def apply(): EquationNumbers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EquationNumbers]
   }
   
-  @scala.inline
-  implicit class EquationNumbersMutableBuilder[Self <: EquationNumbers] (val x: Self) extends AnyVal {
+  extension [Self <: EquationNumbers](x: Self) {
     
-    @scala.inline
-    def setAutoNumber(value: String): Self = StObject.set(x, "autoNumber", value.asInstanceOf[js.Any])
+    inline def setAutoNumber(value: String): Self = StObject.set(x, "autoNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoNumberUndefined: Self = StObject.set(x, "autoNumber", js.undefined)
+    inline def setAutoNumberUndefined: Self = StObject.set(x, "autoNumber", js.undefined)
     
-    @scala.inline
-    def setFormatID(value: () => String): Self = StObject.set(x, "formatID", js.Any.fromFunction0(value))
+    inline def setFormatID(value: () => String): Self = StObject.set(x, "formatID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFormatIDUndefined: Self = StObject.set(x, "formatID", js.undefined)
+    inline def setFormatIDUndefined: Self = StObject.set(x, "formatID", js.undefined)
     
-    @scala.inline
-    def setFormatNumber(value: /* n */ Double => String): Self = StObject.set(x, "formatNumber", js.Any.fromFunction1(value))
+    inline def setFormatNumber(value: /* n */ Double => String): Self = StObject.set(x, "formatNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatNumberUndefined: Self = StObject.set(x, "formatNumber", js.undefined)
+    inline def setFormatNumberUndefined: Self = StObject.set(x, "formatNumber", js.undefined)
     
-    @scala.inline
-    def setFormatTag(value: /* n */ Double => String): Self = StObject.set(x, "formatTag", js.Any.fromFunction1(value))
+    inline def setFormatTag(value: /* n */ Double => String): Self = StObject.set(x, "formatTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatTagUndefined: Self = StObject.set(x, "formatTag", js.undefined)
+    inline def setFormatTagUndefined: Self = StObject.set(x, "formatTag", js.undefined)
     
-    @scala.inline
-    def setFormatURL(value: /* id */ String => String): Self = StObject.set(x, "formatURL", js.Any.fromFunction1(value))
+    inline def setFormatURL(value: /* id */ String => String): Self = StObject.set(x, "formatURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatURLUndefined: Self = StObject.set(x, "formatURL", js.undefined)
+    inline def setFormatURLUndefined: Self = StObject.set(x, "formatURL", js.undefined)
     
-    @scala.inline
-    def setUseLabelIds(value: Boolean): Self = StObject.set(x, "useLabelIds", value.asInstanceOf[js.Any])
+    inline def setUseLabelIds(value: Boolean): Self = StObject.set(x, "useLabelIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLabelIdsUndefined: Self = StObject.set(x, "useLabelIds", js.undefined)
+    inline def setUseLabelIdsUndefined: Self = StObject.set(x, "useLabelIds", js.undefined)
   }
 }

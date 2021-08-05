@@ -28,73 +28,51 @@ trait AutoOnly extends StObject {
 }
 object AutoOnly {
   
-  @scala.inline
-  def apply(): AutoOnly = {
+  inline def apply(): AutoOnly = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoOnly]
   }
   
-  @scala.inline
-  implicit class AutoOnlyMutableBuilder[Self <: AutoOnly] (val x: Self) extends AnyVal {
+  extension [Self <: AutoOnly](x: Self) {
     
-    @scala.inline
-    def setAutoOnly(value: Boolean): Self = StObject.set(x, "autoOnly", value.asInstanceOf[js.Any])
+    inline def setAutoOnly(value: Boolean): Self = StObject.set(x, "autoOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoOnlyUndefined: Self = StObject.set(x, "autoOnly", js.undefined)
+    inline def setAutoOnlyUndefined: Self = StObject.set(x, "autoOnly", js.undefined)
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
+    inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setManualOnly(value: Boolean): Self = StObject.set(x, "manualOnly", value.asInstanceOf[js.Any])
+    inline def setManualOnly(value: Boolean): Self = StObject.set(x, "manualOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualOnlyUndefined: Self = StObject.set(x, "manualOnly", js.undefined)
+    inline def setManualOnlyUndefined: Self = StObject.set(x, "manualOnly", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerType(value: String): Self = StObject.set(x, "ownerType", value.asInstanceOf[js.Any])
+    inline def setOwnerType(value: String): Self = StObject.set(x, "ownerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerTypeUndefined: Self = StObject.set(x, "ownerType", js.undefined)
+    inline def setOwnerTypeUndefined: Self = StObject.set(x, "ownerType", js.undefined)
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setSubaccounts(value: Boolean): Self = StObject.set(x, "subaccounts", value.asInstanceOf[js.Any])
+    inline def setSubaccounts(value: Boolean): Self = StObject.set(x, "subaccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubaccountsUndefined: Self = StObject.set(x, "subaccounts", js.undefined)
+    inline def setSubaccountsUndefined: Self = StObject.set(x, "subaccounts", js.undefined)
     
-    @scala.inline
-    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

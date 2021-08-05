@@ -15,26 +15,20 @@ object transactionOptionsMod {
   }
   object TransactionOptions {
     
-    @scala.inline
-    def apply(): TransactionOptions = {
+    inline def apply(): TransactionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransactionOptions]
     }
     
-    @scala.inline
-    implicit class TransactionOptionsMutableBuilder[Self <: TransactionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransactionOptions](x: Self) {
       
-      @scala.inline
-      def setConnectionName(value: String): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
+      inline def setConnectionName(value: String): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionNameUndefined: Self = StObject.set(x, "connectionName", js.undefined)
+      inline def setConnectionNameUndefined: Self = StObject.set(x, "connectionName", js.undefined)
       
-      @scala.inline
-      def setIsolation(value: IsolationLevel): Self = StObject.set(x, "isolation", value.asInstanceOf[js.Any])
+      inline def setIsolation(value: IsolationLevel): Self = StObject.set(x, "isolation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsolationUndefined: Self = StObject.set(x, "isolation", js.undefined)
+      inline def setIsolationUndefined: Self = StObject.set(x, "isolation", js.undefined)
     }
   }
 }

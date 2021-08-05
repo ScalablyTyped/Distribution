@@ -32,80 +32,56 @@ trait WindowTransform
 }
 object WindowTransform {
   
-  @scala.inline
-  def apply(): WindowTransform = {
+  inline def apply(): WindowTransform = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("window")
     __obj.asInstanceOf[WindowTransform]
   }
   
-  @scala.inline
-  implicit class WindowTransformMutableBuilder[Self <: WindowTransform] (val x: Self) extends AnyVal {
+  extension [Self <: WindowTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: (js.Array[String | SignalRef | Null]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: (js.Array[String | SignalRef | Null]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setAsVarargs(value: (String | SignalRef | Null)*): Self = StObject.set(x, "as", js.Array(value :_*))
+    inline def setAsVarargs(value: (String | SignalRef | Null)*): Self = StObject.set(x, "as", js.Array(value :_*))
     
-    @scala.inline
-    def setFields(value: (js.Array[FieldRef | Null]) | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: (js.Array[FieldRef | Null]) | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: (FieldRef | Null)*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: (FieldRef | Null)*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setFrame(value: (Vector2[Double | SignalRef | Null]) | SignalRef): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: (Vector2[Double | SignalRef | Null]) | SignalRef): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+    inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     
-    @scala.inline
-    def setGroupby(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
+    inline def setGroupby(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
+    inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    @scala.inline
-    def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
-    @scala.inline
-    def setIgnorePeers(value: Boolean | SignalRef): Self = StObject.set(x, "ignorePeers", value.asInstanceOf[js.Any])
+    inline def setIgnorePeers(value: Boolean | SignalRef): Self = StObject.set(x, "ignorePeers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnorePeersUndefined: Self = StObject.set(x, "ignorePeers", js.undefined)
+    inline def setIgnorePeersUndefined: Self = StObject.set(x, "ignorePeers", js.undefined)
     
-    @scala.inline
-    def setOps(value: js.Array[AggregateOp | WindowOnlyOp | SignalRef]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
+    inline def setOps(value: js.Array[AggregateOp | WindowOnlyOp | SignalRef]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpsUndefined: Self = StObject.set(x, "ops", js.undefined)
+    inline def setOpsUndefined: Self = StObject.set(x, "ops", js.undefined)
     
-    @scala.inline
-    def setOpsVarargs(value: (AggregateOp | WindowOnlyOp | SignalRef)*): Self = StObject.set(x, "ops", js.Array(value :_*))
+    inline def setOpsVarargs(value: (AggregateOp | WindowOnlyOp | SignalRef)*): Self = StObject.set(x, "ops", js.Array(value :_*))
     
-    @scala.inline
-    def setParams(value: (js.Array[Double | SignalRef | Null]) | SignalRef): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: (js.Array[Double | SignalRef | Null]) | SignalRef): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setParamsVarargs(value: (Double | SignalRef | Null)*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: (Double | SignalRef | Null)*): Self = StObject.set(x, "params", js.Array(value :_*))
     
-    @scala.inline
-    def setSort(value: Compare): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Compare): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setType(value: window): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: window): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

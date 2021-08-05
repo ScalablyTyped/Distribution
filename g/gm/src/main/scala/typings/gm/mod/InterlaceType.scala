@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InterlaceType extends StObject
 object InterlaceType {
   
-  @scala.inline
-  def Line: typings.gm.gmStrings.Line = "Line".asInstanceOf[typings.gm.gmStrings.Line]
+  inline def Line: typings.gm.gmStrings.Line = "Line".asInstanceOf[typings.gm.gmStrings.Line]
   
-  @scala.inline
-  def None: typings.gm.gmStrings.None = "None".asInstanceOf[typings.gm.gmStrings.None]
+  inline def None: typings.gm.gmStrings.None = "None".asInstanceOf[typings.gm.gmStrings.None]
   
-  @scala.inline
-  def Partition: typings.gm.gmStrings.Partition = "Partition".asInstanceOf[typings.gm.gmStrings.Partition]
+  inline def Partition: typings.gm.gmStrings.Partition = "Partition".asInstanceOf[typings.gm.gmStrings.Partition]
   
-  @scala.inline
-  def Plane: typings.gm.gmStrings.Plane = "Plane".asInstanceOf[typings.gm.gmStrings.Plane]
+  inline def Plane: typings.gm.gmStrings.Plane = "Plane".asInstanceOf[typings.gm.gmStrings.Plane]
 }

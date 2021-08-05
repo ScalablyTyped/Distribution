@@ -16,8 +16,7 @@ trait RenderContextItemInView
 }
 object RenderContextItemInView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowCreateFolder: Boolean,
     AllowGridMode: Boolean,
     BasePermissions: StringDictionary[Boolean],
@@ -106,13 +105,10 @@ object RenderContextItemInView {
     __obj.asInstanceOf[RenderContextItemInView]
   }
   
-  @scala.inline
-  implicit class RenderContextItemInViewMutableBuilder[Self <: RenderContextItemInView] (val x: Self) extends AnyVal {
+  extension [Self <: RenderContextItemInView](x: Self) {
     
-    @scala.inline
-    def setCurrentItem(value: Item): Self = StObject.set(x, "CurrentItem", value.asInstanceOf[js.Any])
+    inline def setCurrentItem(value: Item): Self = StObject.set(x, "CurrentItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentItemIdx(value: Double): Self = StObject.set(x, "CurrentItemIdx", value.asInstanceOf[js.Any])
+    inline def setCurrentItemIdx(value: Double): Self = StObject.set(x, "CurrentItemIdx", value.asInstanceOf[js.Any])
   }
 }

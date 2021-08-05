@@ -14,16 +14,13 @@ trait GetWasmBytecodeRequest extends StObject {
 }
 object GetWasmBytecodeRequest {
   
-  @scala.inline
-  def apply(scriptId: ScriptId): GetWasmBytecodeRequest = {
+  inline def apply(scriptId: ScriptId): GetWasmBytecodeRequest = {
     val __obj = js.Dynamic.literal(scriptId = scriptId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWasmBytecodeRequest]
   }
   
-  @scala.inline
-  implicit class GetWasmBytecodeRequestMutableBuilder[Self <: GetWasmBytecodeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetWasmBytecodeRequest](x: Self) {
     
-    @scala.inline
-    def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
+    inline def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
   }
 }

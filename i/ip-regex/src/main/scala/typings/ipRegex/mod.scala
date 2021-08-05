@@ -29,10 +29,8 @@ object mod {
   	//=> null
   	```
   	*/
-  @scala.inline
-  def apply(): RegExp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RegExp]
-  @scala.inline
-  def apply(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def apply(): RegExp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RegExp]
+  inline def apply(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
   
   @JSImport("ip-regex", JSImport.Namespace)
   @js.native
@@ -41,10 +39,8 @@ object mod {
   /**
   	@returns A regex for matching IPv4.
   	*/
-  @scala.inline
-  def v4(): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[RegExp]
-  @scala.inline
-  def v4(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def v4(): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[RegExp]
+  inline def v4(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
   
   /**
   	@returns A regex for matching IPv6.
@@ -55,10 +51,8 @@ object mod {
   	//=> true
   	```
   	*/
-  @scala.inline
-  def v6(): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")().asInstanceOf[RegExp]
-  @scala.inline
-  def v6(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def v6(): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")().asInstanceOf[RegExp]
+  inline def v6(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
   
   trait Options extends StObject {
     
@@ -76,26 +70,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+      inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+      inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
       
-      @scala.inline
-      def setIncludeBoundaries(value: Boolean): Self = StObject.set(x, "includeBoundaries", value.asInstanceOf[js.Any])
+      inline def setIncludeBoundaries(value: Boolean): Self = StObject.set(x, "includeBoundaries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeBoundariesUndefined: Self = StObject.set(x, "includeBoundaries", js.undefined)
+      inline def setIncludeBoundariesUndefined: Self = StObject.set(x, "includeBoundaries", js.undefined)
     }
   }
 }

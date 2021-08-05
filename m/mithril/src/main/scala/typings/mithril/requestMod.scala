@@ -19,8 +19,7 @@ object requestMod extends Shortcut {
   }
   object Static {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       jsonp: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jsonp */ js.Any,
       request: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof request */ js.Any
     ): Static = {
@@ -28,14 +27,11 @@ object requestMod extends Shortcut {
       __obj.asInstanceOf[Static]
     }
     
-    @scala.inline
-    implicit class StaticMutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
+    extension [Self <: Static](x: Self) {
       
-      @scala.inline
-      def setJsonp(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jsonp */ js.Any): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+      inline def setJsonp(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jsonp */ js.Any): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof request */ js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof request */ js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   

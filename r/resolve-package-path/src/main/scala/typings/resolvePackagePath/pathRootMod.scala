@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pathRootMod {
   
-  @scala.inline
-  def apply(foo: String): String = ^.asInstanceOf[js.Dynamic].apply(foo.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(foo: String): String = ^.asInstanceOf[js.Dynamic].apply(foo.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("resolve-package-path/types/path-root", JSImport.Namespace)
   @js.native

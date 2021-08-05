@@ -24,58 +24,41 @@ trait AnimationOptions extends StObject {
 }
 object AnimationOptions {
   
-  @scala.inline
-  def apply(imageURL: String): AnimationOptions = {
+  inline def apply(imageURL: String): AnimationOptions = {
     val __obj = js.Dynamic.literal(imageURL = imageURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationOptions]
   }
   
-  @scala.inline
-  implicit class AnimationOptionsMutableBuilder[Self <: AnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+    inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setImageURL(value: String): Self = StObject.set(x, "imageURL", value.asInstanceOf[js.Any])
+    inline def setImageURL(value: String): Self = StObject.set(x, "imageURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfFrame(value: Double): Self = StObject.set(x, "numberOfFrame", value.asInstanceOf[js.Any])
+    inline def setNumberOfFrame(value: Double): Self = StObject.set(x, "numberOfFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfFrameUndefined: Self = StObject.set(x, "numberOfFrame", js.undefined)
+    inline def setNumberOfFrameUndefined: Self = StObject.set(x, "numberOfFrame", js.undefined)
     
-    @scala.inline
-    def setOffsetx(value: Double): Self = StObject.set(x, "offsetx", value.asInstanceOf[js.Any])
+    inline def setOffsetx(value: Double): Self = StObject.set(x, "offsetx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetxUndefined: Self = StObject.set(x, "offsetx", js.undefined)
+    inline def setOffsetxUndefined: Self = StObject.set(x, "offsetx", js.undefined)
     
-    @scala.inline
-    def setOffsety(value: Double): Self = StObject.set(x, "offsety", value.asInstanceOf[js.Any])
+    inline def setOffsety(value: Double): Self = StObject.set(x, "offsety", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetyUndefined: Self = StObject.set(x, "offsety", js.undefined)
+    inline def setOffsetyUndefined: Self = StObject.set(x, "offsety", js.undefined)
     
-    @scala.inline
-    def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+    inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+    inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

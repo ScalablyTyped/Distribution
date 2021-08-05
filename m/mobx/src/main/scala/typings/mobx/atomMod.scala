@@ -64,21 +64,16 @@ object atomMod {
     override def reportObserved(): js.Any = js.native
   }
   
-  @scala.inline
-  def createAtom(name: String): IAtom = ^.asInstanceOf[js.Dynamic].applyDynamic("createAtom")(name.asInstanceOf[js.Any]).asInstanceOf[IAtom]
-  @scala.inline
-  def createAtom(name: String, onBecomeObservedHandler: js.Function0[Unit]): IAtom = (^.asInstanceOf[js.Dynamic].applyDynamic("createAtom")(name.asInstanceOf[js.Any], onBecomeObservedHandler.asInstanceOf[js.Any])).asInstanceOf[IAtom]
-  @scala.inline
-  def createAtom(
+  inline def createAtom(name: String): IAtom = ^.asInstanceOf[js.Dynamic].applyDynamic("createAtom")(name.asInstanceOf[js.Any]).asInstanceOf[IAtom]
+  inline def createAtom(name: String, onBecomeObservedHandler: js.Function0[Unit]): IAtom = (^.asInstanceOf[js.Dynamic].applyDynamic("createAtom")(name.asInstanceOf[js.Any], onBecomeObservedHandler.asInstanceOf[js.Any])).asInstanceOf[IAtom]
+  inline def createAtom(
     name: String,
     onBecomeObservedHandler: js.Function0[Unit],
     onBecomeUnobservedHandler: js.Function0[Unit]
   ): IAtom = (^.asInstanceOf[js.Dynamic].applyDynamic("createAtom")(name.asInstanceOf[js.Any], onBecomeObservedHandler.asInstanceOf[js.Any], onBecomeUnobservedHandler.asInstanceOf[js.Any])).asInstanceOf[IAtom]
-  @scala.inline
-  def createAtom(name: String, onBecomeObservedHandler: Unit, onBecomeUnobservedHandler: js.Function0[Unit]): IAtom = (^.asInstanceOf[js.Dynamic].applyDynamic("createAtom")(name.asInstanceOf[js.Any], onBecomeObservedHandler.asInstanceOf[js.Any], onBecomeUnobservedHandler.asInstanceOf[js.Any])).asInstanceOf[IAtom]
+  inline def createAtom(name: String, onBecomeObservedHandler: Unit, onBecomeUnobservedHandler: js.Function0[Unit]): IAtom = (^.asInstanceOf[js.Dynamic].applyDynamic("createAtom")(name.asInstanceOf[js.Any], onBecomeObservedHandler.asInstanceOf[js.Any], onBecomeUnobservedHandler.asInstanceOf[js.Any])).asInstanceOf[IAtom]
   
-  @scala.inline
-  def isAtom(x: js.Any): /* is mobx.mobx/lib/core/atom.Atom */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAtom")(x.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/core/atom.Atom */ Boolean]
+  inline def isAtom(x: js.Any): /* is mobx.mobx/lib/core/atom.Atom */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAtom")(x.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/core/atom.Atom */ Boolean]
   
   @JSImport("mobx/lib/core/atom", "$mobx")
   @js.native
@@ -94,8 +89,7 @@ object atomMod {
   }
   object IAtom {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       diffValue: Double,
       isBeingObserved: Boolean,
       isPendingUnobservation: Boolean,
@@ -112,14 +106,11 @@ object atomMod {
       __obj.asInstanceOf[IAtom]
     }
     
-    @scala.inline
-    implicit class IAtomMutableBuilder[Self <: IAtom] (val x: Self) extends AnyVal {
+    extension [Self <: IAtom](x: Self) {
       
-      @scala.inline
-      def setReportChanged(value: () => js.Any): Self = StObject.set(x, "reportChanged", js.Any.fromFunction0(value))
+      inline def setReportChanged(value: () => js.Any): Self = StObject.set(x, "reportChanged", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReportObserved(value: () => js.Any): Self = StObject.set(x, "reportObserved", js.Any.fromFunction0(value))
+      inline def setReportObserved(value: () => js.Any): Self = StObject.set(x, "reportObserved", js.Any.fromFunction0(value))
     }
   }
 }

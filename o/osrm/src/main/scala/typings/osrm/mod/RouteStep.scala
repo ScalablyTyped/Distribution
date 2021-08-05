@@ -83,8 +83,7 @@ trait RouteStep extends StObject {
 }
 object RouteStep {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destinations: String,
     distance: Double,
     duration: Double,
@@ -104,52 +103,36 @@ object RouteStep {
     __obj.asInstanceOf[RouteStep]
   }
   
-  @scala.inline
-  implicit class RouteStepMutableBuilder[Self <: RouteStep] (val x: Self) extends AnyVal {
+  extension [Self <: RouteStep](x: Self) {
     
-    @scala.inline
-    def setDestinations(value: String): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
+    inline def setDestinations(value: String): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExits(value: String): Self = StObject.set(x, "exits", value.asInstanceOf[js.Any])
+    inline def setExits(value: String): Self = StObject.set(x, "exits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometry(value: Polyline | LineString): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: Polyline | LineString): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersections(value: js.Array[Intersection]): Self = StObject.set(x, "intersections", value.asInstanceOf[js.Any])
+    inline def setIntersections(value: js.Array[Intersection]): Self = StObject.set(x, "intersections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersectionsVarargs(value: Intersection*): Self = StObject.set(x, "intersections", js.Array(value :_*))
+    inline def setIntersectionsVarargs(value: Intersection*): Self = StObject.set(x, "intersections", js.Array(value :_*))
     
-    @scala.inline
-    def setManeuver(value: StepManeuver): Self = StObject.set(x, "maneuver", value.asInstanceOf[js.Any])
+    inline def setManeuver(value: StepManeuver): Self = StObject.set(x, "maneuver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPronunciation(value: String): Self = StObject.set(x, "pronunciation", value.asInstanceOf[js.Any])
+    inline def setPronunciation(value: String): Self = StObject.set(x, "pronunciation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotary_name(value: String): Self = StObject.set(x, "rotary_name", value.asInstanceOf[js.Any])
+    inline def setRotary_name(value: String): Self = StObject.set(x, "rotary_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotary_pronunciation(value: String): Self = StObject.set(x, "rotary_pronunciation", value.asInstanceOf[js.Any])
+    inline def setRotary_pronunciation(value: String): Self = StObject.set(x, "rotary_pronunciation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

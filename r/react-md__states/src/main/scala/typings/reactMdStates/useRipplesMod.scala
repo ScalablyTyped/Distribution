@@ -14,8 +14,7 @@ object useRipplesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useRipples[E /* <: HTMLElement */](
+  inline def useRipples[E /* <: HTMLElement */](
     hasRippleTimeoutRippleClassNamesRippleContainerClassNameRippleClassNameDisableRippleDisableSpacebarClickOptions: RipplesOptions[E]
   ): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRipples")(hasRippleTimeoutRippleClassNamesRippleContainerClassNameRippleClassNameDisableRippleDisableSpacebarClickOptions.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
   
@@ -27,23 +26,18 @@ object useRipplesMod {
   }
   object ReturnValue {
     
-    @scala.inline
-    def apply[E /* <: HTMLElement */](handlers: MergableRippleHandlers[E]): ReturnValue[E] = {
+    inline def apply[E /* <: HTMLElement */](handlers: MergableRippleHandlers[E]): ReturnValue[E] = {
       val __obj = js.Dynamic.literal(handlers = handlers.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReturnValue[E]]
     }
     
-    @scala.inline
-    implicit class ReturnValueMutableBuilder[Self <: ReturnValue[?], E /* <: HTMLElement */] (val x: Self & ReturnValue[E]) extends AnyVal {
+    extension [Self <: ReturnValue[?], E /* <: HTMLElement */](x: Self & ReturnValue[E]) {
       
-      @scala.inline
-      def setHandlers(value: MergableRippleHandlers[E]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: MergableRippleHandlers[E]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRipples(value: ReactNode): Self = StObject.set(x, "ripples", value.asInstanceOf[js.Any])
+      inline def setRipples(value: ReactNode): Self = StObject.set(x, "ripples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRipplesUndefined: Self = StObject.set(x, "ripples", js.undefined)
+      inline def setRipplesUndefined: Self = StObject.set(x, "ripples", js.undefined)
     }
   }
 }

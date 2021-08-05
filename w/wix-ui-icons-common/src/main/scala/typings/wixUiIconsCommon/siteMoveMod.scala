@@ -22,20 +22,16 @@ object siteMoveMod extends Shortcut {
   }
   object SiteMoveProps {
     
-    @scala.inline
-    def apply(): SiteMoveProps = {
+    inline def apply(): SiteMoveProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SiteMoveProps]
     }
     
-    @scala.inline
-    implicit class SiteMovePropsMutableBuilder[Self <: SiteMoveProps] (val x: Self) extends AnyVal {
+    extension [Self <: SiteMoveProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

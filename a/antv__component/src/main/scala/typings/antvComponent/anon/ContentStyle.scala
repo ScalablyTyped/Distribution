@@ -12,19 +12,15 @@ trait ContentStyle extends StObject {
 }
 object ContentStyle {
   
-  @scala.inline
-  def apply(content: String, style: FontSize): ContentStyle = {
+  inline def apply(content: String, style: FontSize): ContentStyle = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentStyle]
   }
   
-  @scala.inline
-  implicit class ContentStyleMutableBuilder[Self <: ContentStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ContentStyle](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: FontSize): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: FontSize): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrintScaling extends StObject
 object PrintScaling {
   
-  @scala.inline
-  def auto: typings.ipp.ippStrings.auto = "auto".asInstanceOf[typings.ipp.ippStrings.auto]
+  inline def auto: typings.ipp.ippStrings.auto = "auto".asInstanceOf[typings.ipp.ippStrings.auto]
   
-  @scala.inline
-  def `auto-fit`: typings.ipp.ippStrings.`auto-fit` = "auto-fit".asInstanceOf[typings.ipp.ippStrings.`auto-fit`]
+  inline def `auto-fit`: typings.ipp.ippStrings.`auto-fit` = "auto-fit".asInstanceOf[typings.ipp.ippStrings.`auto-fit`]
   
-  @scala.inline
-  def fill: typings.ipp.ippStrings.fill = "fill".asInstanceOf[typings.ipp.ippStrings.fill]
+  inline def fill: typings.ipp.ippStrings.fill = "fill".asInstanceOf[typings.ipp.ippStrings.fill]
   
-  @scala.inline
-  def fit: typings.ipp.ippStrings.fit = "fit".asInstanceOf[typings.ipp.ippStrings.fit]
+  inline def fit: typings.ipp.ippStrings.fit = "fit".asInstanceOf[typings.ipp.ippStrings.fit]
   
-  @scala.inline
-  def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
+  inline def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
 }

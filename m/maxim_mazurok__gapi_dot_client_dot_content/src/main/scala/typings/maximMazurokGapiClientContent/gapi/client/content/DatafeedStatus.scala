@@ -42,79 +42,55 @@ trait DatafeedStatus extends StObject {
 }
 object DatafeedStatus {
   
-  @scala.inline
-  def apply(): DatafeedStatus = {
+  inline def apply(): DatafeedStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatafeedStatus]
   }
   
-  @scala.inline
-  implicit class DatafeedStatusMutableBuilder[Self <: DatafeedStatus] (val x: Self) extends AnyVal {
+  extension [Self <: DatafeedStatus](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setDatafeedId(value: String): Self = StObject.set(x, "datafeedId", value.asInstanceOf[js.Any])
+    inline def setDatafeedId(value: String): Self = StObject.set(x, "datafeedId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatafeedIdUndefined: Self = StObject.set(x, "datafeedId", js.undefined)
+    inline def setDatafeedIdUndefined: Self = StObject.set(x, "datafeedId", js.undefined)
     
-    @scala.inline
-    def setErrors(value: js.Array[DatafeedStatusError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[DatafeedStatusError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: DatafeedStatusError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: DatafeedStatusError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setItemsTotal(value: String): Self = StObject.set(x, "itemsTotal", value.asInstanceOf[js.Any])
+    inline def setItemsTotal(value: String): Self = StObject.set(x, "itemsTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsTotalUndefined: Self = StObject.set(x, "itemsTotal", js.undefined)
+    inline def setItemsTotalUndefined: Self = StObject.set(x, "itemsTotal", js.undefined)
     
-    @scala.inline
-    def setItemsValid(value: String): Self = StObject.set(x, "itemsValid", value.asInstanceOf[js.Any])
+    inline def setItemsValid(value: String): Self = StObject.set(x, "itemsValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsValidUndefined: Self = StObject.set(x, "itemsValid", js.undefined)
+    inline def setItemsValidUndefined: Self = StObject.set(x, "itemsValid", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLastUploadDate(value: String): Self = StObject.set(x, "lastUploadDate", value.asInstanceOf[js.Any])
+    inline def setLastUploadDate(value: String): Self = StObject.set(x, "lastUploadDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUploadDateUndefined: Self = StObject.set(x, "lastUploadDate", js.undefined)
+    inline def setLastUploadDateUndefined: Self = StObject.set(x, "lastUploadDate", js.undefined)
     
-    @scala.inline
-    def setProcessingStatus(value: String): Self = StObject.set(x, "processingStatus", value.asInstanceOf[js.Any])
+    inline def setProcessingStatus(value: String): Self = StObject.set(x, "processingStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingStatusUndefined: Self = StObject.set(x, "processingStatus", js.undefined)
+    inline def setProcessingStatusUndefined: Self = StObject.set(x, "processingStatus", js.undefined)
     
-    @scala.inline
-    def setWarnings(value: js.Array[DatafeedStatusError]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[DatafeedStatusError]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    @scala.inline
-    def setWarningsVarargs(value: DatafeedStatusError*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: DatafeedStatusError*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

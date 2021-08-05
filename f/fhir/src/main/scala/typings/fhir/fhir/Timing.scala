@@ -33,43 +33,31 @@ trait Timing
 }
 object Timing {
   
-  @scala.inline
-  def apply(): Timing = {
+  inline def apply(): Timing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Timing]
   }
   
-  @scala.inline
-  implicit class TimingMutableBuilder[Self <: Timing] (val x: Self) extends AnyVal {
+  extension [Self <: Timing](x: Self) {
     
-    @scala.inline
-    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setEvent(value: js.Array[dateTime]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: js.Array[dateTime]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setEventVarargs(value: dateTime*): Self = StObject.set(x, "event", js.Array(value :_*))
+    inline def setEventVarargs(value: dateTime*): Self = StObject.set(x, "event", js.Array(value :_*))
     
-    @scala.inline
-    def setRepeat(value: TimingRepeat): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: TimingRepeat): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+    inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
     
-    @scala.inline
-    def set_event(value: js.Array[Element]): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
+    inline def set_event(value: js.Array[Element]): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_eventUndefined: Self = StObject.set(x, "_event", js.undefined)
+    inline def set_eventUndefined: Self = StObject.set(x, "_event", js.undefined)
     
-    @scala.inline
-    def set_eventVarargs(value: Element*): Self = StObject.set(x, "_event", js.Array(value :_*))
+    inline def set_eventVarargs(value: Element*): Self = StObject.set(x, "_event", js.Array(value :_*))
   }
 }

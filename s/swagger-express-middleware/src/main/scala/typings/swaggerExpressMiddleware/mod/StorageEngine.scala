@@ -24,8 +24,7 @@ trait StorageEngine extends StObject {
 }
 object StorageEngine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _handleFile: (Request_[ParamsDictionary, js.Any, js.Any, Query], File, js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[File], Unit]) => Unit,
     _removeFile: (Request_[ParamsDictionary, js.Any, js.Any, Query], File, js.Function1[/* error */ Error, Unit]) => Unit
   ): StorageEngine = {
@@ -33,16 +32,13 @@ object StorageEngine {
     __obj.asInstanceOf[StorageEngine]
   }
   
-  @scala.inline
-  implicit class StorageEngineMutableBuilder[Self <: StorageEngine] (val x: Self) extends AnyVal {
+  extension [Self <: StorageEngine](x: Self) {
     
-    @scala.inline
-    def set_handleFile(
+    inline def set_handleFile(
       value: (Request_[ParamsDictionary, js.Any, js.Any, Query], File, js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[File], Unit]) => Unit
     ): Self = StObject.set(x, "_handleFile", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def set_removeFile(
+    inline def set_removeFile(
       value: (Request_[ParamsDictionary, js.Any, js.Any, Query], File, js.Function1[/* error */ Error, Unit]) => Unit
     ): Self = StObject.set(x, "_removeFile", js.Any.fromFunction3(value))
   }

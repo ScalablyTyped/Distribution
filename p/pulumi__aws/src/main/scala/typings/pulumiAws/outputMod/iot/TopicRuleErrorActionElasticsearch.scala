@@ -33,29 +33,22 @@ trait TopicRuleErrorActionElasticsearch extends StObject {
 }
 object TopicRuleErrorActionElasticsearch {
   
-  @scala.inline
-  def apply(endpoint: String, id: String, index: String, roleArn: String, `type`: String): TopicRuleErrorActionElasticsearch = {
+  inline def apply(endpoint: String, id: String, index: String, roleArn: String, `type`: String): TopicRuleErrorActionElasticsearch = {
     val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleErrorActionElasticsearch]
   }
   
-  @scala.inline
-  implicit class TopicRuleErrorActionElasticsearchMutableBuilder[Self <: TopicRuleErrorActionElasticsearch] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleErrorActionElasticsearch](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

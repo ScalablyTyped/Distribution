@@ -12,20 +12,16 @@ trait BingProviderResultPoint extends StObject {
 }
 object BingProviderResultPoint {
   
-  @scala.inline
-  def apply(coordinates: PointTuple, `type`: String): BingProviderResultPoint = {
+  inline def apply(coordinates: PointTuple, `type`: String): BingProviderResultPoint = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BingProviderResultPoint]
   }
   
-  @scala.inline
-  implicit class BingProviderResultPointMutableBuilder[Self <: BingProviderResultPoint] (val x: Self) extends AnyVal {
+  extension [Self <: BingProviderResultPoint](x: Self) {
     
-    @scala.inline
-    def setCoordinates(value: PointTuple): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: PointTuple): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

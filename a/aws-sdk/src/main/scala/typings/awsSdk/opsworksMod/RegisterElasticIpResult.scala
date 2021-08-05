@@ -13,19 +13,15 @@ trait RegisterElasticIpResult extends StObject {
 }
 object RegisterElasticIpResult {
   
-  @scala.inline
-  def apply(): RegisterElasticIpResult = {
+  inline def apply(): RegisterElasticIpResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterElasticIpResult]
   }
   
-  @scala.inline
-  implicit class RegisterElasticIpResultMutableBuilder[Self <: RegisterElasticIpResult] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterElasticIpResult](x: Self) {
     
-    @scala.inline
-    def setElasticIp(value: String): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
+    inline def setElasticIp(value: String): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticIpUndefined: Self = StObject.set(x, "ElasticIp", js.undefined)
+    inline def setElasticIpUndefined: Self = StObject.set(x, "ElasticIp", js.undefined)
   }
 }

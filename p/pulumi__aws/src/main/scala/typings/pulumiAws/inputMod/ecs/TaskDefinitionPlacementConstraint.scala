@@ -22,23 +22,18 @@ trait TaskDefinitionPlacementConstraint extends StObject {
 }
 object TaskDefinitionPlacementConstraint {
   
-  @scala.inline
-  def apply(`type`: Input[String]): TaskDefinitionPlacementConstraint = {
+  inline def apply(`type`: Input[String]): TaskDefinitionPlacementConstraint = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskDefinitionPlacementConstraint]
   }
   
-  @scala.inline
-  implicit class TaskDefinitionPlacementConstraintMutableBuilder[Self <: TaskDefinitionPlacementConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: TaskDefinitionPlacementConstraint](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Input[String]): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Input[String]): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

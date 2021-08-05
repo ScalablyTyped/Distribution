@@ -31,31 +31,23 @@ trait ParamsResourceI18nlanguagesList
 }
 object ParamsResourceI18nlanguagesList {
   
-  @scala.inline
-  def apply(): ParamsResourceI18nlanguagesList = {
+  inline def apply(): ParamsResourceI18nlanguagesList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceI18nlanguagesList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceI18nlanguagesListMutableBuilder[Self <: ParamsResourceI18nlanguagesList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceI18nlanguagesList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
+    inline def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
+    inline def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
     
-    @scala.inline
-    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
+    inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
   }
 }

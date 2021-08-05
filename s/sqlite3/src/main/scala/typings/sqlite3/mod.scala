@@ -231,31 +231,25 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def Database(filename: String): typings.sqlite3.mod.Database = ^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.sqlite3.mod.Database]
-    @scala.inline
-    def Database(
+    inline def Database(filename: String): typings.sqlite3.mod.Database = ^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.sqlite3.mod.Database]
+    inline def Database(
       filename: String,
       callback: js.ThisFunction1[/* this */ typings.sqlite3.mod.Database, /* err */ Error | Null, Unit]
     ): typings.sqlite3.mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite3.mod.Database]
-    @scala.inline
-    def Database(filename: String, mode: Double): typings.sqlite3.mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite3.mod.Database]
-    @scala.inline
-    def Database(
+    inline def Database(filename: String, mode: Double): typings.sqlite3.mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite3.mod.Database]
+    inline def Database(
       filename: String,
       mode: Double,
       callback: js.ThisFunction1[/* this */ typings.sqlite3.mod.Database, /* err */ Error | Null, Unit]
     ): typings.sqlite3.mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite3.mod.Database]
-    @scala.inline
-    def Database(
+    inline def Database(
       filename: String,
       mode: Unit,
       callback: js.ThisFunction1[/* this */ typings.sqlite3.mod.Database, /* err */ Error | Null, Unit]
     ): typings.sqlite3.mod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("Database")(filename.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.sqlite3.mod.Database]
   }
   
-  @scala.inline
-  def verbose(): typings.sqlite3.mod.sqlite3 = ^.asInstanceOf[js.Dynamic].applyDynamic("verbose")().asInstanceOf[typings.sqlite3.mod.sqlite3]
+  inline def verbose(): typings.sqlite3.mod.sqlite3 = ^.asInstanceOf[js.Dynamic].applyDynamic("verbose")().asInstanceOf[typings.sqlite3.mod.sqlite3]
   
   @js.native
   trait RunResult extends Statement {
@@ -295,8 +289,7 @@ object mod {
   }
   object sqlite3 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Database: Instantiable2[
           /* filename */ String, 
           /* callback */ js.UndefOr[js.Function1[/* err */ Error | Null, Unit]], 
@@ -317,14 +310,11 @@ object mod {
       __obj.asInstanceOf[typings.sqlite3.mod.sqlite3]
     }
     
-    @scala.inline
-    implicit class sqlite3MutableBuilder[Self <: typings.sqlite3.mod.sqlite3] (val x: Self) extends AnyVal {
+    extension [Self <: typings.sqlite3.mod.sqlite3](x: Self) {
       
-      @scala.inline
-      def setCached(value: typings.sqlite3.anon.Database): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
+      inline def setCached(value: typings.sqlite3.anon.Database): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabase(
+      inline def setDatabase(
         value: Instantiable2[
               /* filename */ String, 
               /* callback */ js.UndefOr[js.Function1[/* err */ Error | Null, Unit]], 
@@ -332,32 +322,23 @@ object mod {
             ]
       ): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPEN_CREATE(value: Double): Self = StObject.set(x, "OPEN_CREATE", value.asInstanceOf[js.Any])
+      inline def setOPEN_CREATE(value: Double): Self = StObject.set(x, "OPEN_CREATE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPEN_PRIVATECACHE(value: Double): Self = StObject.set(x, "OPEN_PRIVATECACHE", value.asInstanceOf[js.Any])
+      inline def setOPEN_PRIVATECACHE(value: Double): Self = StObject.set(x, "OPEN_PRIVATECACHE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPEN_READONLY(value: Double): Self = StObject.set(x, "OPEN_READONLY", value.asInstanceOf[js.Any])
+      inline def setOPEN_READONLY(value: Double): Self = StObject.set(x, "OPEN_READONLY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPEN_READWRITE(value: Double): Self = StObject.set(x, "OPEN_READWRITE", value.asInstanceOf[js.Any])
+      inline def setOPEN_READWRITE(value: Double): Self = StObject.set(x, "OPEN_READWRITE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPEN_SHAREDCACHE(value: Double): Self = StObject.set(x, "OPEN_SHAREDCACHE", value.asInstanceOf[js.Any])
+      inline def setOPEN_SHAREDCACHE(value: Double): Self = StObject.set(x, "OPEN_SHAREDCACHE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPEN_URI(value: Double): Self = StObject.set(x, "OPEN_URI", value.asInstanceOf[js.Any])
+      inline def setOPEN_URI(value: Double): Self = StObject.set(x, "OPEN_URI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunResult(value: RunResult): Self = StObject.set(x, "RunResult", value.asInstanceOf[js.Any])
+      inline def setRunResult(value: RunResult): Self = StObject.set(x, "RunResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatement(value: Instantiable0[Statement]): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
+      inline def setStatement(value: Instantiable0[Statement]): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbose(value: () => typings.sqlite3.mod.sqlite3): Self = StObject.set(x, "verbose", js.Any.fromFunction0(value))
+      inline def setVerbose(value: () => typings.sqlite3.mod.sqlite3): Self = StObject.set(x, "verbose", js.Any.fromFunction0(value))
     }
   }
 }

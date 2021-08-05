@@ -10,19 +10,15 @@ trait TargetReference extends StObject {
 }
 object TargetReference {
   
-  @scala.inline
-  def apply(): TargetReference = {
+  inline def apply(): TargetReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetReference]
   }
   
-  @scala.inline
-  implicit class TargetReferenceMutableBuilder[Self <: TargetReference] (val x: Self) extends AnyVal {
+  extension [Self <: TargetReference](x: Self) {
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

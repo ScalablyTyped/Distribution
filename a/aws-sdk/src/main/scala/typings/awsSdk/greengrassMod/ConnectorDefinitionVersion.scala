@@ -13,22 +13,17 @@ trait ConnectorDefinitionVersion extends StObject {
 }
 object ConnectorDefinitionVersion {
   
-  @scala.inline
-  def apply(): ConnectorDefinitionVersion = {
+  inline def apply(): ConnectorDefinitionVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectorDefinitionVersion]
   }
   
-  @scala.inline
-  implicit class ConnectorDefinitionVersionMutableBuilder[Self <: ConnectorDefinitionVersion] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectorDefinitionVersion](x: Self) {
     
-    @scala.inline
-    def setConnectors(value: listOfConnector): Self = StObject.set(x, "Connectors", value.asInstanceOf[js.Any])
+    inline def setConnectors(value: listOfConnector): Self = StObject.set(x, "Connectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorsUndefined: Self = StObject.set(x, "Connectors", js.undefined)
+    inline def setConnectorsUndefined: Self = StObject.set(x, "Connectors", js.undefined)
     
-    @scala.inline
-    def setConnectorsVarargs(value: Connector*): Self = StObject.set(x, "Connectors", js.Array(value :_*))
+    inline def setConnectorsVarargs(value: Connector*): Self = StObject.set(x, "Connectors", js.Array(value :_*))
   }
 }

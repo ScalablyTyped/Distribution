@@ -16,22 +16,17 @@ trait AttendeeBase
 }
 object AttendeeBase {
   
-  @scala.inline
-  def apply(): AttendeeBase = {
+  inline def apply(): AttendeeBase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttendeeBase]
   }
   
-  @scala.inline
-  implicit class AttendeeBaseMutableBuilder[Self <: AttendeeBase] (val x: Self) extends AnyVal {
+  extension [Self <: AttendeeBase](x: Self) {
     
-    @scala.inline
-    def setType(value: NullableOption[AttendeeType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NullableOption[AttendeeType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNull: Self = StObject.set(x, "type", null)
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

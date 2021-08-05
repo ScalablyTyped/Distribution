@@ -28,37 +28,27 @@ trait AddCommunicationToCaseRequest extends StObject {
 }
 object AddCommunicationToCaseRequest {
   
-  @scala.inline
-  def apply(communicationBody: CommunicationBody): AddCommunicationToCaseRequest = {
+  inline def apply(communicationBody: CommunicationBody): AddCommunicationToCaseRequest = {
     val __obj = js.Dynamic.literal(communicationBody = communicationBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCommunicationToCaseRequest]
   }
   
-  @scala.inline
-  implicit class AddCommunicationToCaseRequestMutableBuilder[Self <: AddCommunicationToCaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddCommunicationToCaseRequest](x: Self) {
     
-    @scala.inline
-    def setAttachmentSetId(value: AttachmentSetId): Self = StObject.set(x, "attachmentSetId", value.asInstanceOf[js.Any])
+    inline def setAttachmentSetId(value: AttachmentSetId): Self = StObject.set(x, "attachmentSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentSetIdUndefined: Self = StObject.set(x, "attachmentSetId", js.undefined)
+    inline def setAttachmentSetIdUndefined: Self = StObject.set(x, "attachmentSetId", js.undefined)
     
-    @scala.inline
-    def setCaseId(value: CaseId): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
+    inline def setCaseId(value: CaseId): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseIdUndefined: Self = StObject.set(x, "caseId", js.undefined)
+    inline def setCaseIdUndefined: Self = StObject.set(x, "caseId", js.undefined)
     
-    @scala.inline
-    def setCcEmailAddresses(value: CcEmailAddressList): Self = StObject.set(x, "ccEmailAddresses", value.asInstanceOf[js.Any])
+    inline def setCcEmailAddresses(value: CcEmailAddressList): Self = StObject.set(x, "ccEmailAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCcEmailAddressesUndefined: Self = StObject.set(x, "ccEmailAddresses", js.undefined)
+    inline def setCcEmailAddressesUndefined: Self = StObject.set(x, "ccEmailAddresses", js.undefined)
     
-    @scala.inline
-    def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = StObject.set(x, "ccEmailAddresses", js.Array(value :_*))
+    inline def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = StObject.set(x, "ccEmailAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setCommunicationBody(value: CommunicationBody): Self = StObject.set(x, "communicationBody", value.asInstanceOf[js.Any])
+    inline def setCommunicationBody(value: CommunicationBody): Self = StObject.set(x, "communicationBody", value.asInstanceOf[js.Any])
   }
 }

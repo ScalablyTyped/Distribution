@@ -18,28 +18,21 @@ trait ListThingRegistrationTasksResponse extends StObject {
 }
 object ListThingRegistrationTasksResponse {
   
-  @scala.inline
-  def apply(): ListThingRegistrationTasksResponse = {
+  inline def apply(): ListThingRegistrationTasksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListThingRegistrationTasksResponse]
   }
   
-  @scala.inline
-  implicit class ListThingRegistrationTasksResponseMutableBuilder[Self <: ListThingRegistrationTasksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListThingRegistrationTasksResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setTaskIds(value: TaskIdList): Self = StObject.set(x, "taskIds", value.asInstanceOf[js.Any])
+    inline def setTaskIds(value: TaskIdList): Self = StObject.set(x, "taskIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskIdsUndefined: Self = StObject.set(x, "taskIds", js.undefined)
+    inline def setTaskIdsUndefined: Self = StObject.set(x, "taskIds", js.undefined)
     
-    @scala.inline
-    def setTaskIdsVarargs(value: TaskId*): Self = StObject.set(x, "taskIds", js.Array(value :_*))
+    inline def setTaskIdsVarargs(value: TaskId*): Self = StObject.set(x, "taskIds", js.Array(value :_*))
   }
 }

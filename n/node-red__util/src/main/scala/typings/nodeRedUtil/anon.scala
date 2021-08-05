@@ -14,20 +14,16 @@ object anon {
   }
   object Format {
     
-    @scala.inline
-    def apply(format: String, msg: String): Format = {
+    inline def apply(format: String, msg: String): Format = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
       __obj.asInstanceOf[Format]
     }
     
-    @scala.inline
-    implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+    extension [Self <: Format](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,23 +35,18 @@ object anon {
   }
   object Key {
     
-    @scala.inline
-    def apply(key: String): Key = {
+    inline def apply(key: String): Key = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStore(value: String): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: String): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     }
   }
   
@@ -65,20 +56,16 @@ object anon {
   }
   object MaxLength {
     
-    @scala.inline
-    def apply(): MaxLength = {
+    inline def apply(): MaxLength = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaxLength]
     }
     
-    @scala.inline
-    implicit class MaxLengthMutableBuilder[Self <: MaxLength] (val x: Self) extends AnyVal {
+    extension [Self <: MaxLength](x: Self) {
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     }
   }
   
@@ -88,17 +75,14 @@ object anon {
   }
   object Msg {
     
-    @scala.inline
-    def apply(msg: js.Any): Msg = {
+    inline def apply(msg: js.Any): Msg = {
       val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any])
       __obj.asInstanceOf[Msg]
     }
     
-    @scala.inline
-    implicit class MsgMutableBuilder[Self <: Msg] (val x: Self) extends AnyVal {
+    extension [Self <: Msg](x: Self) {
       
-      @scala.inline
-      def setMsg(value: js.Any): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: js.Any): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     }
   }
 }

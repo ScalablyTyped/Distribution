@@ -18,19 +18,15 @@ trait SchemaTcpCheck extends StObject {
 }
 object SchemaTcpCheck {
   
-  @scala.inline
-  def apply(): SchemaTcpCheck = {
+  inline def apply(): SchemaTcpCheck = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTcpCheck]
   }
   
-  @scala.inline
-  implicit class SchemaTcpCheckMutableBuilder[Self <: SchemaTcpCheck] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTcpCheck](x: Self) {
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

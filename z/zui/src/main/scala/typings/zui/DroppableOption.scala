@@ -38,100 +38,69 @@ trait DroppableOption extends StObject {
 }
 object DroppableOption {
   
-  @scala.inline
-  def apply(target: JQuery | String): DroppableOption = {
+  inline def apply(target: JQuery | String): DroppableOption = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DroppableOption]
   }
   
-  @scala.inline
-  implicit class DroppableOptionMutableBuilder[Self <: DroppableOption] (val x: Self) extends AnyVal {
+  extension [Self <: DroppableOption](x: Self) {
     
-    @scala.inline
-    def setAlways(value: /* e */ DroppableEvent => Unit): Self = StObject.set(x, "always", js.Any.fromFunction1(value))
+    inline def setAlways(value: /* e */ DroppableEvent => Unit): Self = StObject.set(x, "always", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
+    inline def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
     
-    @scala.inline
-    def setBefore(value: /* e */ js.UndefOr[DroppableEvent] => Boolean): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
+    inline def setBefore(value: /* e */ js.UndefOr[DroppableEvent] => Boolean): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeDrop(value: /* e */ DroppableEvent => Boolean): Self = StObject.set(x, "beforeDrop", js.Any.fromFunction1(value))
+    inline def setBeforeDrop(value: /* e */ DroppableEvent => Boolean): Self = StObject.set(x, "beforeDrop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeDropUndefined: Self = StObject.set(x, "beforeDrop", js.undefined)
+    inline def setBeforeDropUndefined: Self = StObject.set(x, "beforeDrop", js.undefined)
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    @scala.inline
-    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setDeviation(value: Double): Self = StObject.set(x, "deviation", value.asInstanceOf[js.Any])
+    inline def setDeviation(value: Double): Self = StObject.set(x, "deviation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviationUndefined: Self = StObject.set(x, "deviation", js.undefined)
+    inline def setDeviationUndefined: Self = StObject.set(x, "deviation", js.undefined)
     
-    @scala.inline
-    def setDrag(value: /* e */ DroppableEvent => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
+    inline def setDrag(value: /* e */ DroppableEvent => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+    inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
-    @scala.inline
-    def setDrop(value: /* e */ DroppableEvent => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
+    inline def setDrop(value: /* e */ DroppableEvent => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+    inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
-    @scala.inline
-    def setFinish(value: /* e */ DroppableEvent => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
+    inline def setFinish(value: /* e */ DroppableEvent => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
+    inline def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
     
-    @scala.inline
-    def setFlex(value: Boolean): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+    inline def setFlex(value: Boolean): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
+    inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
     
-    @scala.inline
-    def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+    inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setSensorOffsetX(value: Double): Self = StObject.set(x, "sensorOffsetX", value.asInstanceOf[js.Any])
+    inline def setSensorOffsetX(value: Double): Self = StObject.set(x, "sensorOffsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSensorOffsetXUndefined: Self = StObject.set(x, "sensorOffsetX", js.undefined)
+    inline def setSensorOffsetXUndefined: Self = StObject.set(x, "sensorOffsetX", js.undefined)
     
-    @scala.inline
-    def setSensorOffsetY(value: Double): Self = StObject.set(x, "sensorOffsetY", value.asInstanceOf[js.Any])
+    inline def setSensorOffsetY(value: Double): Self = StObject.set(x, "sensorOffsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSensorOffsetYUndefined: Self = StObject.set(x, "sensorOffsetY", js.undefined)
+    inline def setSensorOffsetYUndefined: Self = StObject.set(x, "sensorOffsetY", js.undefined)
     
-    @scala.inline
-    def setStart(value: /* e */ js.UndefOr[DroppableEvent] => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* e */ js.UndefOr[DroppableEvent] => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setTarget(value: JQuery | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: JQuery | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

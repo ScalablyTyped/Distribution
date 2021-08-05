@@ -55,23 +55,18 @@ object mod extends Shortcut {
   }
   object vndb {
     
-    @scala.inline
-    def apply(end: () => js.Promise[Unit], socket: TLSSocket, write: String => js.Promise[String]): typings.vndb.mod.vndb = {
+    inline def apply(end: () => js.Promise[Unit], socket: TLSSocket, write: String => js.Promise[String]): typings.vndb.mod.vndb = {
       val __obj = js.Dynamic.literal(end = js.Any.fromFunction0(end), socket = socket.asInstanceOf[js.Any], write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[typings.vndb.mod.vndb]
     }
     
-    @scala.inline
-    implicit class vndbMutableBuilder[Self <: typings.vndb.mod.vndb] (val x: Self) extends AnyVal {
+    extension [Self <: typings.vndb.mod.vndb](x: Self) {
       
-      @scala.inline
-      def setEnd(value: () => js.Promise[Unit]): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => js.Promise[Unit]): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSocket(value: TLSSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: TLSSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrite(value: String => js.Promise[String]): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: String => js.Promise[String]): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
 }

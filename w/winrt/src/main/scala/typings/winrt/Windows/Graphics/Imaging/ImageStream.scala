@@ -20,8 +20,7 @@ trait ImageStream
 }
 object ImageStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canRead: Boolean,
     canWrite: Boolean,
     cloneStream: () => IRandomAccessStream,
@@ -41,10 +40,8 @@ object ImageStream {
     __obj.asInstanceOf[ImageStream]
   }
   
-  @scala.inline
-  implicit class ImageStreamMutableBuilder[Self <: ImageStream] (val x: Self) extends AnyVal {
+  extension [Self <: ImageStream](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }
 }

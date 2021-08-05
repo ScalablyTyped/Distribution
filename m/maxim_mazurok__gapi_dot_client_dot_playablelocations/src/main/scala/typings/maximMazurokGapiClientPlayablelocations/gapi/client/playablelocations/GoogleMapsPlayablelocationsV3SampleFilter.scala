@@ -20,34 +20,25 @@ trait GoogleMapsPlayablelocationsV3SampleFilter extends StObject {
 }
 object GoogleMapsPlayablelocationsV3SampleFilter {
   
-  @scala.inline
-  def apply(): GoogleMapsPlayablelocationsV3SampleFilter = {
+  inline def apply(): GoogleMapsPlayablelocationsV3SampleFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3SampleFilter]
   }
   
-  @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3SampleFilterMutableBuilder[Self <: GoogleMapsPlayablelocationsV3SampleFilter] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleMapsPlayablelocationsV3SampleFilter](x: Self) {
     
-    @scala.inline
-    def setIncludedTypes(value: js.Array[String]): Self = StObject.set(x, "includedTypes", value.asInstanceOf[js.Any])
+    inline def setIncludedTypes(value: js.Array[String]): Self = StObject.set(x, "includedTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedTypesUndefined: Self = StObject.set(x, "includedTypes", js.undefined)
+    inline def setIncludedTypesUndefined: Self = StObject.set(x, "includedTypes", js.undefined)
     
-    @scala.inline
-    def setIncludedTypesVarargs(value: String*): Self = StObject.set(x, "includedTypes", js.Array(value :_*))
+    inline def setIncludedTypesVarargs(value: String*): Self = StObject.set(x, "includedTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxLocationCount(value: Double): Self = StObject.set(x, "maxLocationCount", value.asInstanceOf[js.Any])
+    inline def setMaxLocationCount(value: Double): Self = StObject.set(x, "maxLocationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLocationCountUndefined: Self = StObject.set(x, "maxLocationCount", js.undefined)
+    inline def setMaxLocationCountUndefined: Self = StObject.set(x, "maxLocationCount", js.undefined)
     
-    @scala.inline
-    def setSpacing(value: GoogleMapsPlayablelocationsV3SampleSpacingOptions): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: GoogleMapsPlayablelocationsV3SampleSpacingOptions): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
   }
 }

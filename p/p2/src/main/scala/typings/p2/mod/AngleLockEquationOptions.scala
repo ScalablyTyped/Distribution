@@ -12,25 +12,19 @@ trait AngleLockEquationOptions extends StObject {
 }
 object AngleLockEquationOptions {
   
-  @scala.inline
-  def apply(): AngleLockEquationOptions = {
+  inline def apply(): AngleLockEquationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AngleLockEquationOptions]
   }
   
-  @scala.inline
-  implicit class AngleLockEquationOptionsMutableBuilder[Self <: AngleLockEquationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AngleLockEquationOptions](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+    inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
   }
 }

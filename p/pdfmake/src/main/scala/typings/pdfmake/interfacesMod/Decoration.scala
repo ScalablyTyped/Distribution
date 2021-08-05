@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Decoration extends StObject
 object Decoration {
   
-  @scala.inline
-  def lineThrough: typings.pdfmake.pdfmakeStrings.lineThrough = "lineThrough".asInstanceOf[typings.pdfmake.pdfmakeStrings.lineThrough]
+  inline def lineThrough: typings.pdfmake.pdfmakeStrings.lineThrough = "lineThrough".asInstanceOf[typings.pdfmake.pdfmakeStrings.lineThrough]
   
-  @scala.inline
-  def overline: typings.pdfmake.pdfmakeStrings.overline = "overline".asInstanceOf[typings.pdfmake.pdfmakeStrings.overline]
+  inline def overline: typings.pdfmake.pdfmakeStrings.overline = "overline".asInstanceOf[typings.pdfmake.pdfmakeStrings.overline]
   
-  @scala.inline
-  def underline: typings.pdfmake.pdfmakeStrings.underline = "underline".asInstanceOf[typings.pdfmake.pdfmakeStrings.underline]
+  inline def underline: typings.pdfmake.pdfmakeStrings.underline = "underline".asInstanceOf[typings.pdfmake.pdfmakeStrings.underline]
 }

@@ -25,8 +25,7 @@ trait XMenuBarAcceptor
 }
 object XMenuBarAcceptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -36,10 +35,8 @@ object XMenuBarAcceptor {
     __obj.asInstanceOf[XMenuBarAcceptor]
   }
   
-  @scala.inline
-  implicit class XMenuBarAcceptorMutableBuilder[Self <: XMenuBarAcceptor] (val x: Self) extends AnyVal {
+  extension [Self <: XMenuBarAcceptor](x: Self) {
     
-    @scala.inline
-    def setUpdateMenuBar(value: js.Array[XMenuBar] => Unit): Self = StObject.set(x, "updateMenuBar", js.Any.fromFunction1(value))
+    inline def setUpdateMenuBar(value: js.Array[XMenuBar] => Unit): Self = StObject.set(x, "updateMenuBar", js.Any.fromFunction1(value))
   }
 }

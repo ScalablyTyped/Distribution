@@ -18,19 +18,15 @@ trait FlushStageCacheRequest extends StObject {
 }
 object FlushStageCacheRequest {
   
-  @scala.inline
-  def apply(restApiId: String, stageName: String): FlushStageCacheRequest = {
+  inline def apply(restApiId: String, stageName: String): FlushStageCacheRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlushStageCacheRequest]
   }
   
-  @scala.inline
-  implicit class FlushStageCacheRequestMutableBuilder[Self <: FlushStageCacheRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FlushStageCacheRequest](x: Self) {
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait DeleteTableColumnRequest extends StObject {
 }
 object DeleteTableColumnRequest {
   
-  @scala.inline
-  def apply(): DeleteTableColumnRequest = {
+  inline def apply(): DeleteTableColumnRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteTableColumnRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTableColumnRequestMutableBuilder[Self <: DeleteTableColumnRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTableColumnRequest](x: Self) {
     
-    @scala.inline
-    def setTableCellLocation(value: TableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
+    inline def setTableCellLocation(value: TableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableCellLocationUndefined: Self = StObject.set(x, "tableCellLocation", js.undefined)
+    inline def setTableCellLocationUndefined: Self = StObject.set(x, "tableCellLocation", js.undefined)
   }
 }

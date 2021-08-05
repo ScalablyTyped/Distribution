@@ -49,8 +49,7 @@ trait BlockDeprecation[T /* <: Record[String, js.Any] */] extends StObject {
 }
 object BlockDeprecation {
   
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](
+  inline def apply[T /* <: Record[String, js.Any] */](
     attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
     */ typings.wordpressBlocks.wordpressBlocksStrings.BlockDeprecation & TopLevel[js.Any],
@@ -67,26 +66,21 @@ object BlockDeprecation {
     __obj.asInstanceOf[BlockDeprecation[T]]
   }
   
-  @scala.inline
-  implicit class BlockDeprecationMutableBuilder[Self <: BlockDeprecation[?], T /* <: Record[String, js.Any] */] (val x: Self & BlockDeprecation[T]) extends AnyVal {
+  extension [Self <: BlockDeprecation[?], T /* <: Record[String, js.Any] */](x: Self & BlockDeprecation[T]) {
     
-    @scala.inline
-    def setAttributes(
+    inline def setAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
       */ typings.wordpressBlocks.wordpressBlocksStrings.BlockDeprecation & TopLevel[js.Any]
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEligible(
+    inline def setIsEligible(
       value: (/* attributes */ Record[String, js.Any], /* innerBlocks */ js.Array[BlockInstance[StringDictionary[js.Any]]]) => Boolean
     ): Self = StObject.set(x, "isEligible", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsEligibleUndefined: Self = StObject.set(x, "isEligible", js.undefined)
+    inline def setIsEligibleUndefined: Self = StObject.set(x, "isEligible", js.undefined)
     
-    @scala.inline
-    def setMigrate(
+    inline def setMigrate(
       value: (js.UndefOr[js.Function1[/* attributes */ Record[String, js.Any], T]]) & (js.UndefOr[
           js.Function2[
             /* attributes */ Record[String, js.Any], 
@@ -96,13 +90,10 @@ object BlockDeprecation {
         ])
     ): Self = StObject.set(x, "migrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSave(value: ComponentType[BlockSaveProps[T]]): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: ComponentType[BlockSaveProps[T]]): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupports(value: BlockSupports): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
+    inline def setSupports(value: BlockSupports): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
+    inline def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
   }
 }

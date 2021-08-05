@@ -10,7 +10,7 @@ trait HTMLWndOptionElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLWndOptionElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLWndOptionElement_typekey")
   var MSHTMLDotHTMLWndOptionElement_typekey: HTMLWndOptionElement = js.native
   
   var accessKey: String = js.native

@@ -14,22 +14,17 @@ trait Room extends StObject {
 }
 object Room {
   
-  @scala.inline
-  def apply(room: String, x: Double, y: Double): Room = {
+  inline def apply(room: String, x: Double, y: Double): Room = {
     val __obj = js.Dynamic.literal(room = room.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Room]
   }
   
-  @scala.inline
-  implicit class RoomMutableBuilder[Self <: Room] (val x: Self) extends AnyVal {
+  extension [Self <: Room](x: Self) {
     
-    @scala.inline
-    def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait Av1QvbrSettings extends StObject {
 }
 object Av1QvbrSettings {
   
-  @scala.inline
-  def apply(): Av1QvbrSettings = {
+  inline def apply(): Av1QvbrSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Av1QvbrSettings]
   }
   
-  @scala.inline
-  implicit class Av1QvbrSettingsMutableBuilder[Self <: Av1QvbrSettings] (val x: Self) extends AnyVal {
+  extension [Self <: Av1QvbrSettings](x: Self) {
     
-    @scala.inline
-    def setQvbrQualityLevel(value: integerMin1Max10): Self = StObject.set(x, "QvbrQualityLevel", value.asInstanceOf[js.Any])
+    inline def setQvbrQualityLevel(value: integerMin1Max10): Self = StObject.set(x, "QvbrQualityLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQvbrQualityLevelFineTune(value: doubleMin0Max1): Self = StObject.set(x, "QvbrQualityLevelFineTune", value.asInstanceOf[js.Any])
+    inline def setQvbrQualityLevelFineTune(value: doubleMin0Max1): Self = StObject.set(x, "QvbrQualityLevelFineTune", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQvbrQualityLevelFineTuneUndefined: Self = StObject.set(x, "QvbrQualityLevelFineTune", js.undefined)
+    inline def setQvbrQualityLevelFineTuneUndefined: Self = StObject.set(x, "QvbrQualityLevelFineTune", js.undefined)
     
-    @scala.inline
-    def setQvbrQualityLevelUndefined: Self = StObject.set(x, "QvbrQualityLevel", js.undefined)
+    inline def setQvbrQualityLevelUndefined: Self = StObject.set(x, "QvbrQualityLevel", js.undefined)
   }
 }

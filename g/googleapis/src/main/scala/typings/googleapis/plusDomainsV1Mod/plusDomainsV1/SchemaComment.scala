@@ -70,82 +70,57 @@ trait SchemaComment extends StObject {
 }
 object SchemaComment {
   
-  @scala.inline
-  def apply(): SchemaComment = {
+  inline def apply(): SchemaComment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaComment]
   }
   
-  @scala.inline
-  implicit class SchemaCommentMutableBuilder[Self <: SchemaComment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaComment](x: Self) {
     
-    @scala.inline
-    def setActor(value: Verification): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
+    inline def setActor(value: Verification): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
+    inline def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInReplyTo(value: js.Array[IdUrl]): Self = StObject.set(x, "inReplyTo", value.asInstanceOf[js.Any])
+    inline def setInReplyTo(value: js.Array[IdUrl]): Self = StObject.set(x, "inReplyTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInReplyToUndefined: Self = StObject.set(x, "inReplyTo", js.undefined)
+    inline def setInReplyToUndefined: Self = StObject.set(x, "inReplyTo", js.undefined)
     
-    @scala.inline
-    def setInReplyToVarargs(value: IdUrl*): Self = StObject.set(x, "inReplyTo", js.Array(value :_*))
+    inline def setInReplyToVarargs(value: IdUrl*): Self = StObject.set(x, "inReplyTo", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setObject(value: ObjectType): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: ObjectType): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+    inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
     
-    @scala.inline
-    def setPlusoners(value: `7`): Self = StObject.set(x, "plusoners", value.asInstanceOf[js.Any])
+    inline def setPlusoners(value: `7`): Self = StObject.set(x, "plusoners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlusonersUndefined: Self = StObject.set(x, "plusoners", js.undefined)
+    inline def setPlusonersUndefined: Self = StObject.set(x, "plusoners", js.undefined)
     
-    @scala.inline
-    def setPublished(value: String): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
+    inline def setPublished(value: String): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
+    inline def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
-    @scala.inline
-    def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+    inline def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
+    inline def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
   }
 }

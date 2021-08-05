@@ -18,8 +18,7 @@ trait ExpandChoiceMap[T /* <: Answers */]
 }
 object ExpandChoiceMap {
   
-  @scala.inline
-  def apply[T /* <: Answers */](
+  inline def apply[T /* <: Answers */](
     Choice: typings.inquirer.choiceMod.^[T],
     ChoiceOptions: ChoiceOptions[T],
     ExpandChoiceOptions: ExpandChoiceOptions[T],
@@ -30,10 +29,8 @@ object ExpandChoiceMap {
     __obj.asInstanceOf[ExpandChoiceMap[T]]
   }
   
-  @scala.inline
-  implicit class ExpandChoiceMapMutableBuilder[Self <: ExpandChoiceMap[?], T /* <: Answers */] (val x: Self & ExpandChoiceMap[T]) extends AnyVal {
+  extension [Self <: ExpandChoiceMap[?], T /* <: Answers */](x: Self & ExpandChoiceMap[T]) {
     
-    @scala.inline
-    def setExpandChoiceOptions(value: ExpandChoiceOptions[T]): Self = StObject.set(x, "ExpandChoiceOptions", value.asInstanceOf[js.Any])
+    inline def setExpandChoiceOptions(value: ExpandChoiceOptions[T]): Self = StObject.set(x, "ExpandChoiceOptions", value.asInstanceOf[js.Any])
   }
 }

@@ -18,29 +18,22 @@ trait Emote extends StObject {
 }
 object Emote {
   
-  @scala.inline
-  def apply(chatID: String, from: String, fromID: String, message: String, `type`: String): Emote = {
+  inline def apply(chatID: String, from: String, fromID: String, message: String, `type`: String): Emote = {
     val __obj = js.Dynamic.literal(chatID = chatID.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], fromID = fromID.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Emote]
   }
   
-  @scala.inline
-  implicit class EmoteMutableBuilder[Self <: Emote] (val x: Self) extends AnyVal {
+  extension [Self <: Emote](x: Self) {
     
-    @scala.inline
-    def setChatID(value: String): Self = StObject.set(x, "chatID", value.asInstanceOf[js.Any])
+    inline def setChatID(value: String): Self = StObject.set(x, "chatID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromID(value: String): Self = StObject.set(x, "fromID", value.asInstanceOf[js.Any])
+    inline def setFromID(value: String): Self = StObject.set(x, "fromID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

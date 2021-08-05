@@ -12,22 +12,17 @@ trait ModelMapping extends StObject {
 }
 object ModelMapping {
   
-  @scala.inline
-  def apply(prisma: js.Any): ModelMapping = {
+  inline def apply(prisma: js.Any): ModelMapping = {
     val __obj = js.Dynamic.literal(prisma = prisma.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelMapping]
   }
   
-  @scala.inline
-  implicit class ModelMappingMutableBuilder[Self <: ModelMapping] (val x: Self) extends AnyVal {
+  extension [Self <: ModelMapping](x: Self) {
     
-    @scala.inline
-    def setModelMapping(value: VerificationRequest): Self = StObject.set(x, "modelMapping", value.asInstanceOf[js.Any])
+    inline def setModelMapping(value: VerificationRequest): Self = StObject.set(x, "modelMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelMappingUndefined: Self = StObject.set(x, "modelMapping", js.undefined)
+    inline def setModelMappingUndefined: Self = StObject.set(x, "modelMapping", js.undefined)
     
-    @scala.inline
-    def setPrisma(value: js.Any): Self = StObject.set(x, "prisma", value.asInstanceOf[js.Any])
+    inline def setPrisma(value: js.Any): Self = StObject.set(x, "prisma", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "knockout-postbox"
-version := "0.0-unknown-dt-20201002Z-ffb47e"
+version := "0.0-unknown-dt-20201002Z-aa35f6"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

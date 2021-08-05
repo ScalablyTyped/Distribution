@@ -33,43 +33,31 @@ trait ResourceDataContainer extends StObject {
 }
 object ResourceDataContainer {
   
-  @scala.inline
-  def apply(): ResourceDataContainer = {
+  inline def apply(): ResourceDataContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceDataContainer]
   }
   
-  @scala.inline
-  implicit class ResourceDataContainerMutableBuilder[Self <: ResourceDataContainer] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceDataContainer](x: Self) {
     
-    @scala.inline
-    def setLocalDeviceResourceData(value: LocalDeviceResourceData): Self = StObject.set(x, "LocalDeviceResourceData", value.asInstanceOf[js.Any])
+    inline def setLocalDeviceResourceData(value: LocalDeviceResourceData): Self = StObject.set(x, "LocalDeviceResourceData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalDeviceResourceDataUndefined: Self = StObject.set(x, "LocalDeviceResourceData", js.undefined)
+    inline def setLocalDeviceResourceDataUndefined: Self = StObject.set(x, "LocalDeviceResourceData", js.undefined)
     
-    @scala.inline
-    def setLocalVolumeResourceData(value: LocalVolumeResourceData): Self = StObject.set(x, "LocalVolumeResourceData", value.asInstanceOf[js.Any])
+    inline def setLocalVolumeResourceData(value: LocalVolumeResourceData): Self = StObject.set(x, "LocalVolumeResourceData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalVolumeResourceDataUndefined: Self = StObject.set(x, "LocalVolumeResourceData", js.undefined)
+    inline def setLocalVolumeResourceDataUndefined: Self = StObject.set(x, "LocalVolumeResourceData", js.undefined)
     
-    @scala.inline
-    def setS3MachineLearningModelResourceData(value: S3MachineLearningModelResourceData): Self = StObject.set(x, "S3MachineLearningModelResourceData", value.asInstanceOf[js.Any])
+    inline def setS3MachineLearningModelResourceData(value: S3MachineLearningModelResourceData): Self = StObject.set(x, "S3MachineLearningModelResourceData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3MachineLearningModelResourceDataUndefined: Self = StObject.set(x, "S3MachineLearningModelResourceData", js.undefined)
+    inline def setS3MachineLearningModelResourceDataUndefined: Self = StObject.set(x, "S3MachineLearningModelResourceData", js.undefined)
     
-    @scala.inline
-    def setSageMakerMachineLearningModelResourceData(value: SageMakerMachineLearningModelResourceData): Self = StObject.set(x, "SageMakerMachineLearningModelResourceData", value.asInstanceOf[js.Any])
+    inline def setSageMakerMachineLearningModelResourceData(value: SageMakerMachineLearningModelResourceData): Self = StObject.set(x, "SageMakerMachineLearningModelResourceData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSageMakerMachineLearningModelResourceDataUndefined: Self = StObject.set(x, "SageMakerMachineLearningModelResourceData", js.undefined)
+    inline def setSageMakerMachineLearningModelResourceDataUndefined: Self = StObject.set(x, "SageMakerMachineLearningModelResourceData", js.undefined)
     
-    @scala.inline
-    def setSecretsManagerSecretResourceData(value: SecretsManagerSecretResourceData): Self = StObject.set(x, "SecretsManagerSecretResourceData", value.asInstanceOf[js.Any])
+    inline def setSecretsManagerSecretResourceData(value: SecretsManagerSecretResourceData): Self = StObject.set(x, "SecretsManagerSecretResourceData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretsManagerSecretResourceDataUndefined: Self = StObject.set(x, "SecretsManagerSecretResourceData", js.undefined)
+    inline def setSecretsManagerSecretResourceDataUndefined: Self = StObject.set(x, "SecretsManagerSecretResourceData", js.undefined)
   }
 }

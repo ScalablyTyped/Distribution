@@ -18,19 +18,15 @@ trait RemoveFlowOutputRequest extends StObject {
 }
 object RemoveFlowOutputRequest {
   
-  @scala.inline
-  def apply(FlowArn: string, OutputArn: string): RemoveFlowOutputRequest = {
+  inline def apply(FlowArn: string, OutputArn: string): RemoveFlowOutputRequest = {
     val __obj = js.Dynamic.literal(FlowArn = FlowArn.asInstanceOf[js.Any], OutputArn = OutputArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveFlowOutputRequest]
   }
   
-  @scala.inline
-  implicit class RemoveFlowOutputRequestMutableBuilder[Self <: RemoveFlowOutputRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveFlowOutputRequest](x: Self) {
     
-    @scala.inline
-    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputArn(value: string): Self = StObject.set(x, "OutputArn", value.asInstanceOf[js.Any])
+    inline def setOutputArn(value: string): Self = StObject.set(x, "OutputArn", value.asInstanceOf[js.Any])
   }
 }

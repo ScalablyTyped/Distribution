@@ -43,8 +43,7 @@ trait ASPxClientRichEditFloatingObjectMovedEventArgs
 }
 object ASPxClientRichEditFloatingObjectMovedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     newPosition: Double,
     objectX: Double,
     objectY: Double,
@@ -56,28 +55,20 @@ object ASPxClientRichEditFloatingObjectMovedEventArgs {
     __obj.asInstanceOf[ASPxClientRichEditFloatingObjectMovedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientRichEditFloatingObjectMovedEventArgsMutableBuilder[Self <: ASPxClientRichEditFloatingObjectMovedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRichEditFloatingObjectMovedEventArgs](x: Self) {
     
-    @scala.inline
-    def setNewPosition(value: Double): Self = StObject.set(x, "newPosition", value.asInstanceOf[js.Any])
+    inline def setNewPosition(value: Double): Self = StObject.set(x, "newPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectX(value: Double): Self = StObject.set(x, "objectX", value.asInstanceOf[js.Any])
+    inline def setObjectX(value: Double): Self = StObject.set(x, "objectX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectY(value: Double): Self = StObject.set(x, "objectY", value.asInstanceOf[js.Any])
+    inline def setObjectY(value: Double): Self = StObject.set(x, "objectY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
+    inline def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageIntervals(value: js.Array[Interval]): Self = StObject.set(x, "pageIntervals", value.asInstanceOf[js.Any])
+    inline def setPageIntervals(value: js.Array[Interval]): Self = StObject.set(x, "pageIntervals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageIntervalsVarargs(value: Interval*): Self = StObject.set(x, "pageIntervals", js.Array(value :_*))
+    inline def setPageIntervalsVarargs(value: Interval*): Self = StObject.set(x, "pageIntervals", js.Array(value :_*))
     
-    @scala.inline
-    def setSubDocumentId(value: Double): Self = StObject.set(x, "subDocumentId", value.asInstanceOf[js.Any])
+    inline def setSubDocumentId(value: Double): Self = StObject.set(x, "subDocumentId", value.asInstanceOf[js.Any])
   }
 }

@@ -38,52 +38,37 @@ trait UpdateAnomalySubscriptionRequest extends StObject {
 }
 object UpdateAnomalySubscriptionRequest {
   
-  @scala.inline
-  def apply(SubscriptionArn: GenericString): UpdateAnomalySubscriptionRequest = {
+  inline def apply(SubscriptionArn: GenericString): UpdateAnomalySubscriptionRequest = {
     val __obj = js.Dynamic.literal(SubscriptionArn = SubscriptionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAnomalySubscriptionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAnomalySubscriptionRequestMutableBuilder[Self <: UpdateAnomalySubscriptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAnomalySubscriptionRequest](x: Self) {
     
-    @scala.inline
-    def setFrequency(value: AnomalySubscriptionFrequency): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: AnomalySubscriptionFrequency): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "Frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "Frequency", js.undefined)
     
-    @scala.inline
-    def setMonitorArnList(value: Values): Self = StObject.set(x, "MonitorArnList", value.asInstanceOf[js.Any])
+    inline def setMonitorArnList(value: Values): Self = StObject.set(x, "MonitorArnList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorArnListUndefined: Self = StObject.set(x, "MonitorArnList", js.undefined)
+    inline def setMonitorArnListUndefined: Self = StObject.set(x, "MonitorArnList", js.undefined)
     
-    @scala.inline
-    def setMonitorArnListVarargs(value: Value*): Self = StObject.set(x, "MonitorArnList", js.Array(value :_*))
+    inline def setMonitorArnListVarargs(value: Value*): Self = StObject.set(x, "MonitorArnList", js.Array(value :_*))
     
-    @scala.inline
-    def setSubscribers(value: Subscribers): Self = StObject.set(x, "Subscribers", value.asInstanceOf[js.Any])
+    inline def setSubscribers(value: Subscribers): Self = StObject.set(x, "Subscribers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribersUndefined: Self = StObject.set(x, "Subscribers", js.undefined)
+    inline def setSubscribersUndefined: Self = StObject.set(x, "Subscribers", js.undefined)
     
-    @scala.inline
-    def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
+    inline def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
     
-    @scala.inline
-    def setSubscriptionArn(value: GenericString): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
+    inline def setSubscriptionArn(value: GenericString): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionName(value: GenericString): Self = StObject.set(x, "SubscriptionName", value.asInstanceOf[js.Any])
+    inline def setSubscriptionName(value: GenericString): Self = StObject.set(x, "SubscriptionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionNameUndefined: Self = StObject.set(x, "SubscriptionName", js.undefined)
+    inline def setSubscriptionNameUndefined: Self = StObject.set(x, "SubscriptionName", js.undefined)
     
-    @scala.inline
-    def setThreshold(value: NullableNonNegativeDouble): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: NullableNonNegativeDouble): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "Threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "Threshold", js.undefined)
   }
 }

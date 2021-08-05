@@ -10,10 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFirstConsistentlyInteractive(): js.Promise[Double | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstConsistentlyInteractive")().asInstanceOf[js.Promise[Double | Null]]
-  @scala.inline
-  def getFirstConsistentlyInteractive(opts: GetFirstConsistentlyInteractiveOpts): js.Promise[Double | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstConsistentlyInteractive")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double | Null]]
+  inline def getFirstConsistentlyInteractive(): js.Promise[Double | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstConsistentlyInteractive")().asInstanceOf[js.Promise[Double | Null]]
+  inline def getFirstConsistentlyInteractive(opts: GetFirstConsistentlyInteractiveOpts): js.Promise[Double | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstConsistentlyInteractive")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double | Null]]
   
   trait GetFirstConsistentlyInteractiveOpts extends StObject {
     
@@ -33,29 +31,22 @@ object mod {
   }
   object GetFirstConsistentlyInteractiveOpts {
     
-    @scala.inline
-    def apply(): GetFirstConsistentlyInteractiveOpts = {
+    inline def apply(): GetFirstConsistentlyInteractiveOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetFirstConsistentlyInteractiveOpts]
     }
     
-    @scala.inline
-    implicit class GetFirstConsistentlyInteractiveOptsMutableBuilder[Self <: GetFirstConsistentlyInteractiveOpts] (val x: Self) extends AnyVal {
+    extension [Self <: GetFirstConsistentlyInteractiveOpts](x: Self) {
       
-      @scala.inline
-      def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+      inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinValueNull: Self = StObject.set(x, "minValue", null)
+      inline def setMinValueNull: Self = StObject.set(x, "minValue", null)
       
-      @scala.inline
-      def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+      inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
       
-      @scala.inline
-      def setUseMutationObserver(value: Boolean): Self = StObject.set(x, "useMutationObserver", value.asInstanceOf[js.Any])
+      inline def setUseMutationObserver(value: Boolean): Self = StObject.set(x, "useMutationObserver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseMutationObserverUndefined: Self = StObject.set(x, "useMutationObserver", js.undefined)
+      inline def setUseMutationObserverUndefined: Self = StObject.set(x, "useMutationObserver", js.undefined)
     }
   }
 }

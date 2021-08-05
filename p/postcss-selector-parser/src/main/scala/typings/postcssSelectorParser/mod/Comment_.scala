@@ -14,8 +14,7 @@ trait Comment_
 }
 object Comment_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendToPropertyAndEscape: (String, js.Any, String) => Unit,
     clone_ : StringDictionary[js.Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],
@@ -37,10 +36,8 @@ object Comment_ {
     __obj.asInstanceOf[Comment_]
   }
   
-  @scala.inline
-  implicit class Comment_MutableBuilder[Self <: Comment_] (val x: Self) extends AnyVal {
+  extension [Self <: Comment_](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.comment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.comment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

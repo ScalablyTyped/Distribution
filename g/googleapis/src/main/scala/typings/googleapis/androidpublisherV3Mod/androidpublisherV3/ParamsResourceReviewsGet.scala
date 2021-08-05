@@ -35,37 +35,27 @@ trait ParamsResourceReviewsGet
 }
 object ParamsResourceReviewsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceReviewsGet = {
+  inline def apply(): ParamsResourceReviewsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceReviewsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceReviewsGetMutableBuilder[Self <: ParamsResourceReviewsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceReviewsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
-    @scala.inline
-    def setReviewId(value: String): Self = StObject.set(x, "reviewId", value.asInstanceOf[js.Any])
+    inline def setReviewId(value: String): Self = StObject.set(x, "reviewId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewIdUndefined: Self = StObject.set(x, "reviewId", js.undefined)
+    inline def setReviewIdUndefined: Self = StObject.set(x, "reviewId", js.undefined)
     
-    @scala.inline
-    def setTranslationLanguage(value: String): Self = StObject.set(x, "translationLanguage", value.asInstanceOf[js.Any])
+    inline def setTranslationLanguage(value: String): Self = StObject.set(x, "translationLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationLanguageUndefined: Self = StObject.set(x, "translationLanguage", js.undefined)
+    inline def setTranslationLanguageUndefined: Self = StObject.set(x, "translationLanguage", js.undefined)
   }
 }

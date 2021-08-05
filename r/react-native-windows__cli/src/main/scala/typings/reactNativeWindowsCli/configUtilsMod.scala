@@ -14,48 +14,33 @@ object configUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findAppProjectFiles(winFolder: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAppProjectFiles")(winFolder.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def findAppProjectFiles(winFolder: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAppProjectFiles")(winFolder.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def findDependencyProjectFiles(winFolder: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findDependencyProjectFiles")(winFolder.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def findDependencyProjectFiles(winFolder: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findDependencyProjectFiles")(winFolder.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def findFiles(folder: String, filenamePattern: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("findFiles")(folder.asInstanceOf[js.Any], filenamePattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def findFiles(folder: String, filenamePattern: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("findFiles")(folder.asInstanceOf[js.Any], filenamePattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def findPropertyValue(projectContents: Node, propertyName: String, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("findPropertyValue")(projectContents.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def findPropertyValue(projectContents: Node, propertyName: String, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("findPropertyValue")(projectContents.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def findSolutionFiles(winFolder: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findSolutionFiles")(winFolder.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def findSolutionFiles(winFolder: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findSolutionFiles")(winFolder.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def findWindowsFolder(folder: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findWindowsFolder")(folder.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def findWindowsFolder(folder: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findWindowsFolder")(folder.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def getProjectGuid(projectContents: Node): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectGuid")(projectContents.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def getProjectGuid(projectContents: Node): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectGuid")(projectContents.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def getProjectLanguage(projectPath: String): cpp | cs | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectLanguage")(projectPath.asInstanceOf[js.Any]).asInstanceOf[cpp | cs | Null]
+  inline def getProjectLanguage(projectPath: String): cpp | cs | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectLanguage")(projectPath.asInstanceOf[js.Any]).asInstanceOf[cpp | cs | Null]
   
-  @scala.inline
-  def getProjectName(projectContents: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectName")(projectContents.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getProjectName(projectContents: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectName")(projectContents.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getProjectNamespace(projectContents: Node): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectNamespace")(projectContents.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def getProjectNamespace(projectContents: Node): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectNamespace")(projectContents.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def importProjectExists(projectContents: Node, projectName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("importProjectExists")(projectContents.asInstanceOf[js.Any], projectName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def importProjectExists(projectContents: Node, projectName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("importProjectExists")(projectContents.asInstanceOf[js.Any], projectName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isRnwDependencyProject(filePath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRnwDependencyProject")(filePath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRnwDependencyProject(filePath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRnwDependencyProject")(filePath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isRnwSolution(filePath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRnwSolution")(filePath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRnwSolution(filePath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRnwSolution")(filePath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def readProjectFile(projectPath: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("readProjectFile")(projectPath.asInstanceOf[js.Any]).asInstanceOf[Document]
+  inline def readProjectFile(projectPath: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("readProjectFile")(projectPath.asInstanceOf[js.Any]).asInstanceOf[Document]
   
-  @scala.inline
-  def tryFindPropertyValue(projectContents: Node, propertyName: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("tryFindPropertyValue")(projectContents.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def tryFindPropertyValue(projectContents: Node, propertyName: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("tryFindPropertyValue")(projectContents.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[String | Null]
 }

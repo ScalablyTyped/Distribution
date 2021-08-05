@@ -16,25 +16,19 @@ trait FetchTime
 }
 object FetchTime {
   
-  @scala.inline
-  def apply(): FetchTime = {
+  inline def apply(): FetchTime = {
     val __obj = js.Dynamic.literal(status = "available")
     __obj.asInstanceOf[FetchTime]
   }
   
-  @scala.inline
-  implicit class FetchTimeMutableBuilder[Self <: FetchTime] (val x: Self) extends AnyVal {
+  extension [Self <: FetchTime](x: Self) {
     
-    @scala.inline
-    def setFetchTime(value: Double): Self = StObject.set(x, "fetchTime", value.asInstanceOf[js.Any])
+    inline def setFetchTime(value: Double): Self = StObject.set(x, "fetchTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchTimeNull: Self = StObject.set(x, "fetchTime", null)
+    inline def setFetchTimeNull: Self = StObject.set(x, "fetchTime", null)
     
-    @scala.inline
-    def setFetchTimeUndefined: Self = StObject.set(x, "fetchTime", js.undefined)
+    inline def setFetchTimeUndefined: Self = StObject.set(x, "fetchTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: available): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: available): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

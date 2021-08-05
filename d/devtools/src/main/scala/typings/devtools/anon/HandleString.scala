@@ -10,16 +10,13 @@ trait HandleString extends StObject {
 }
 object HandleString {
   
-  @scala.inline
-  def apply(handle: String): HandleString = {
+  inline def apply(handle: String): HandleString = {
     val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleString]
   }
   
-  @scala.inline
-  implicit class HandleStringMutableBuilder[Self <: HandleString] (val x: Self) extends AnyVal {
+  extension [Self <: HandleString](x: Self) {
     
-    @scala.inline
-    def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
   }
 }

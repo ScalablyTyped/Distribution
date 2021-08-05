@@ -113,8 +113,7 @@ trait ScriptAttributes extends StObject {
 }
 object ScriptAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: (String, Array) => Unit,
     get: String => js.Any,
     has: String => Boolean,
@@ -124,19 +123,14 @@ object ScriptAttributes {
     __obj.asInstanceOf[ScriptAttributes]
   }
   
-  @scala.inline
-  implicit class ScriptAttributesMutableBuilder[Self <: ScriptAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptAttributes](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, Array) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, Array) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: String => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: String => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

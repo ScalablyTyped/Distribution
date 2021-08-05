@@ -91,26 +91,20 @@ object mod {
   }
   object LineByLineReaderFileOptions {
     
-    @scala.inline
-    def apply(): LineByLineReaderFileOptions = {
+    inline def apply(): LineByLineReaderFileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LineByLineReaderFileOptions]
     }
     
-    @scala.inline
-    implicit class LineByLineReaderFileOptionsMutableBuilder[Self <: LineByLineReaderFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LineByLineReaderFileOptions](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
   
@@ -124,26 +118,20 @@ object mod {
   }
   object LineByLineReaderOptions {
     
-    @scala.inline
-    def apply(): LineByLineReaderOptions = {
+    inline def apply(): LineByLineReaderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LineByLineReaderOptions]
     }
     
-    @scala.inline
-    implicit class LineByLineReaderOptionsMutableBuilder[Self <: LineByLineReaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LineByLineReaderOptions](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: ascii | utf8 | utf16le | ucs2 | base64 | latin1 | binary | hex): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: ascii | utf8 | utf16le | ucs2 | base64 | latin1 | binary | hex): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setSkipEmptyLines(value: Boolean): Self = StObject.set(x, "skipEmptyLines", value.asInstanceOf[js.Any])
+      inline def setSkipEmptyLines(value: Boolean): Self = StObject.set(x, "skipEmptyLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipEmptyLinesUndefined: Self = StObject.set(x, "skipEmptyLines", js.undefined)
+      inline def setSkipEmptyLinesUndefined: Self = StObject.set(x, "skipEmptyLines", js.undefined)
     }
   }
 }

@@ -36,8 +36,7 @@ object fitnessMod {
     @JSImport("googleapis/build/src/apis/fitness", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Fitness] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Fitness]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
@@ -75,8 +74,7 @@ object fitnessMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -120,9 +118,7 @@ object fitnessMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def fitness(options: Options): Fitness = ^.asInstanceOf[js.Dynamic].applyDynamic("fitness")(options.asInstanceOf[js.Any]).asInstanceOf[Fitness]
+  inline def fitness(options: Options): Fitness = ^.asInstanceOf[js.Dynamic].applyDynamic("fitness")(options.asInstanceOf[js.Any]).asInstanceOf[Fitness]
   
-  @scala.inline
-  def fitness_v1(version: v1): Fitness = ^.asInstanceOf[js.Dynamic].applyDynamic("fitness")(version.asInstanceOf[js.Any]).asInstanceOf[Fitness]
+  inline def fitness_v1(version: v1): Fitness = ^.asInstanceOf[js.Dynamic].applyDynamic("fitness")(version.asInstanceOf[js.Any]).asInstanceOf[Fitness]
 }

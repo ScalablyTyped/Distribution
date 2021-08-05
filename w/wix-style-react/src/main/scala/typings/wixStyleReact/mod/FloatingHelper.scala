@@ -21,6 +21,5 @@ object FloatingHelper {
   @JSImport("wix-style-react", "FloatingHelper.Content")
   @js.native
   def Content: ComponentClass[FloatingHelperContentProps, ComponentState] = js.native
-  @scala.inline
-  def Content_=(x: ComponentClass[FloatingHelperContentProps, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
+  inline def Content_=(x: ComponentClass[FloatingHelperContentProps, ComponentState]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
 }

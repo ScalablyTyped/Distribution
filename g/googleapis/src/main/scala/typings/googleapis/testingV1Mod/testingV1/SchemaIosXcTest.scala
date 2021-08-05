@@ -43,37 +43,27 @@ trait SchemaIosXcTest extends StObject {
 }
 object SchemaIosXcTest {
   
-  @scala.inline
-  def apply(): SchemaIosXcTest = {
+  inline def apply(): SchemaIosXcTest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIosXcTest]
   }
   
-  @scala.inline
-  implicit class SchemaIosXcTestMutableBuilder[Self <: SchemaIosXcTest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIosXcTest](x: Self) {
     
-    @scala.inline
-    def setAppBundleId(value: String): Self = StObject.set(x, "appBundleId", value.asInstanceOf[js.Any])
+    inline def setAppBundleId(value: String): Self = StObject.set(x, "appBundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppBundleIdUndefined: Self = StObject.set(x, "appBundleId", js.undefined)
+    inline def setAppBundleIdUndefined: Self = StObject.set(x, "appBundleId", js.undefined)
     
-    @scala.inline
-    def setTestsZip(value: SchemaFileReference): Self = StObject.set(x, "testsZip", value.asInstanceOf[js.Any])
+    inline def setTestsZip(value: SchemaFileReference): Self = StObject.set(x, "testsZip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestsZipUndefined: Self = StObject.set(x, "testsZip", js.undefined)
+    inline def setTestsZipUndefined: Self = StObject.set(x, "testsZip", js.undefined)
     
-    @scala.inline
-    def setXcodeVersion(value: String): Self = StObject.set(x, "xcodeVersion", value.asInstanceOf[js.Any])
+    inline def setXcodeVersion(value: String): Self = StObject.set(x, "xcodeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXcodeVersionUndefined: Self = StObject.set(x, "xcodeVersion", js.undefined)
+    inline def setXcodeVersionUndefined: Self = StObject.set(x, "xcodeVersion", js.undefined)
     
-    @scala.inline
-    def setXctestrun(value: SchemaFileReference): Self = StObject.set(x, "xctestrun", value.asInstanceOf[js.Any])
+    inline def setXctestrun(value: SchemaFileReference): Self = StObject.set(x, "xctestrun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXctestrunUndefined: Self = StObject.set(x, "xctestrun", js.undefined)
+    inline def setXctestrunUndefined: Self = StObject.set(x, "xctestrun", js.undefined)
   }
 }

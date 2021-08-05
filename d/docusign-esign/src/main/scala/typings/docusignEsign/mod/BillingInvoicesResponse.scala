@@ -23,34 +23,25 @@ trait BillingInvoicesResponse extends StObject {
 }
 object BillingInvoicesResponse {
   
-  @scala.inline
-  def apply(): BillingInvoicesResponse = {
+  inline def apply(): BillingInvoicesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BillingInvoicesResponse]
   }
   
-  @scala.inline
-  implicit class BillingInvoicesResponseMutableBuilder[Self <: BillingInvoicesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BillingInvoicesResponse](x: Self) {
     
-    @scala.inline
-    def setBillingInvoices(value: js.Array[BillingInvoice]): Self = StObject.set(x, "billingInvoices", value.asInstanceOf[js.Any])
+    inline def setBillingInvoices(value: js.Array[BillingInvoice]): Self = StObject.set(x, "billingInvoices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingInvoicesUndefined: Self = StObject.set(x, "billingInvoices", js.undefined)
+    inline def setBillingInvoicesUndefined: Self = StObject.set(x, "billingInvoices", js.undefined)
     
-    @scala.inline
-    def setBillingInvoicesVarargs(value: BillingInvoice*): Self = StObject.set(x, "billingInvoices", js.Array(value :_*))
+    inline def setBillingInvoicesVarargs(value: BillingInvoice*): Self = StObject.set(x, "billingInvoices", js.Array(value :_*))
     
-    @scala.inline
-    def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
+    inline def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUriUndefined: Self = StObject.set(x, "nextUri", js.undefined)
+    inline def setNextUriUndefined: Self = StObject.set(x, "nextUri", js.undefined)
     
-    @scala.inline
-    def setPreviousUri(value: String): Self = StObject.set(x, "previousUri", value.asInstanceOf[js.Any])
+    inline def setPreviousUri(value: String): Self = StObject.set(x, "previousUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousUriUndefined: Self = StObject.set(x, "previousUri", js.undefined)
+    inline def setPreviousUriUndefined: Self = StObject.set(x, "previousUri", js.undefined)
   }
 }

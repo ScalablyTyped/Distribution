@@ -18,25 +18,19 @@ trait GroupDefinition extends StObject {
 }
 object GroupDefinition {
   
-  @scala.inline
-  def apply(): GroupDefinition = {
+  inline def apply(): GroupDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupDefinition]
   }
   
-  @scala.inline
-  implicit class GroupDefinitionMutableBuilder[Self <: GroupDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: GroupDefinition](x: Self) {
     
-    @scala.inline
-    def setKey(value: GroupDefinitionKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: GroupDefinitionKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setType(value: GroupDefinitionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: GroupDefinitionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

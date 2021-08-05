@@ -33,46 +33,33 @@ trait MultiplexProgram extends StObject {
 }
 object MultiplexProgram {
   
-  @scala.inline
-  def apply(): MultiplexProgram = {
+  inline def apply(): MultiplexProgram = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiplexProgram]
   }
   
-  @scala.inline
-  implicit class MultiplexProgramMutableBuilder[Self <: MultiplexProgram] (val x: Self) extends AnyVal {
+  extension [Self <: MultiplexProgram](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "ChannelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "ChannelId", js.undefined)
     
-    @scala.inline
-    def setMultiplexProgramSettings(value: MultiplexProgramSettings): Self = StObject.set(x, "MultiplexProgramSettings", value.asInstanceOf[js.Any])
+    inline def setMultiplexProgramSettings(value: MultiplexProgramSettings): Self = StObject.set(x, "MultiplexProgramSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiplexProgramSettingsUndefined: Self = StObject.set(x, "MultiplexProgramSettings", js.undefined)
+    inline def setMultiplexProgramSettingsUndefined: Self = StObject.set(x, "MultiplexProgramSettings", js.undefined)
     
-    @scala.inline
-    def setPacketIdentifiersMap(value: MultiplexProgramPacketIdentifiersMap): Self = StObject.set(x, "PacketIdentifiersMap", value.asInstanceOf[js.Any])
+    inline def setPacketIdentifiersMap(value: MultiplexProgramPacketIdentifiersMap): Self = StObject.set(x, "PacketIdentifiersMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacketIdentifiersMapUndefined: Self = StObject.set(x, "PacketIdentifiersMap", js.undefined)
+    inline def setPacketIdentifiersMapUndefined: Self = StObject.set(x, "PacketIdentifiersMap", js.undefined)
     
-    @scala.inline
-    def setPipelineDetails(value: listOfMultiplexProgramPipelineDetail): Self = StObject.set(x, "PipelineDetails", value.asInstanceOf[js.Any])
+    inline def setPipelineDetails(value: listOfMultiplexProgramPipelineDetail): Self = StObject.set(x, "PipelineDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineDetailsUndefined: Self = StObject.set(x, "PipelineDetails", js.undefined)
+    inline def setPipelineDetailsUndefined: Self = StObject.set(x, "PipelineDetails", js.undefined)
     
-    @scala.inline
-    def setPipelineDetailsVarargs(value: MultiplexProgramPipelineDetail*): Self = StObject.set(x, "PipelineDetails", js.Array(value :_*))
+    inline def setPipelineDetailsVarargs(value: MultiplexProgramPipelineDetail*): Self = StObject.set(x, "PipelineDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setProgramName(value: string): Self = StObject.set(x, "ProgramName", value.asInstanceOf[js.Any])
+    inline def setProgramName(value: string): Self = StObject.set(x, "ProgramName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramNameUndefined: Self = StObject.set(x, "ProgramName", js.undefined)
+    inline def setProgramNameUndefined: Self = StObject.set(x, "ProgramName", js.undefined)
   }
 }

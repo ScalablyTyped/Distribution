@@ -13,22 +13,17 @@ trait FirstRange extends StObject {
 }
 object FirstRange {
   
-  @scala.inline
-  def apply(firstRange: Range): FirstRange = {
+  inline def apply(firstRange: Range): FirstRange = {
     val __obj = js.Dynamic.literal(firstRange = firstRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirstRange]
   }
   
-  @scala.inline
-  implicit class FirstRangeMutableBuilder[Self <: FirstRange] (val x: Self) extends AnyVal {
+  extension [Self <: FirstRange](x: Self) {
     
-    @scala.inline
-    def setFirstRange(value: Range): Self = StObject.set(x, "firstRange", value.asInstanceOf[js.Any])
+    inline def setFirstRange(value: Range): Self = StObject.set(x, "firstRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

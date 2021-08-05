@@ -18,25 +18,19 @@ trait ProvisioningArtifactOutput extends StObject {
 }
 object ProvisioningArtifactOutput {
   
-  @scala.inline
-  def apply(): ProvisioningArtifactOutput = {
+  inline def apply(): ProvisioningArtifactOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProvisioningArtifactOutput]
   }
   
-  @scala.inline
-  implicit class ProvisioningArtifactOutputMutableBuilder[Self <: ProvisioningArtifactOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ProvisioningArtifactOutput](x: Self) {
     
-    @scala.inline
-    def setDescription(value: OutputDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: OutputDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setKey(value: ProvisioningArtifactOutputKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ProvisioningArtifactOutputKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
   }
 }

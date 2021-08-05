@@ -20,37 +20,27 @@ trait Lat extends StObject {
 }
 object Lat {
   
-  @scala.inline
-  def apply(): Lat = {
+  inline def apply(): Lat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Lat]
   }
   
-  @scala.inline
-  implicit class LatMutableBuilder[Self <: Lat] (val x: Self) extends AnyVal {
+  extension [Self <: Lat](x: Self) {
     
-    @scala.inline
-    def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+    inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatUndefined: Self = StObject.set(x, "lat", js.undefined)
+    inline def setLatUndefined: Self = StObject.set(x, "lat", js.undefined)
     
-    @scala.inline
-    def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+    inline def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLngUndefined: Self = StObject.set(x, "lng", js.undefined)
+    inline def setLngUndefined: Self = StObject.set(x, "lng", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSpan(value: String): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    inline def setSpan(value: String): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
+    inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
   }
 }

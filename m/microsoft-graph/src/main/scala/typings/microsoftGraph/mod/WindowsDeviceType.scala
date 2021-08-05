@@ -15,18 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WindowsDeviceType extends StObject
 object WindowsDeviceType {
   
-  @scala.inline
-  def desktop: typings.microsoftGraph.microsoftGraphStrings.desktop = "desktop".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.desktop]
+  inline def desktop: typings.microsoftGraph.microsoftGraphStrings.desktop = "desktop".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.desktop]
   
-  @scala.inline
-  def holographic: typings.microsoftGraph.microsoftGraphStrings.holographic = "holographic".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.holographic]
+  inline def holographic: typings.microsoftGraph.microsoftGraphStrings.holographic = "holographic".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.holographic]
   
-  @scala.inline
-  def mobile: typings.microsoftGraph.microsoftGraphStrings.mobile = "mobile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mobile]
+  inline def mobile: typings.microsoftGraph.microsoftGraphStrings.mobile = "mobile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mobile]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def team: typings.microsoftGraph.microsoftGraphStrings.team = "team".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.team]
+  inline def team: typings.microsoftGraph.microsoftGraphStrings.team = "team".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.team]
 }

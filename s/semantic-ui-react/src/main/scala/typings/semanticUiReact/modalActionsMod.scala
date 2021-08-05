@@ -37,8 +37,7 @@ object modalActionsMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object ModalActionsProps {
     
-    @scala.inline
-    def apply(): ModalActionsProps = {
+    inline def apply(): ModalActionsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModalActionsProps]
     }
@@ -77,55 +76,40 @@ object modalActionsMod extends Shortcut {
   }
   object StrictModalActionsProps {
     
-    @scala.inline
-    def apply(): StrictModalActionsProps = {
+    inline def apply(): StrictModalActionsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictModalActionsProps]
     }
     
-    @scala.inline
-    implicit class StrictModalActionsPropsMutableBuilder[Self <: StrictModalActionsProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictModalActionsProps](x: Self) {
       
-      @scala.inline
-      def setActions(value: SemanticShorthandCollection[ButtonProps]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: SemanticShorthandCollection[ButtonProps]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setActionsVarargs(value: SemanticShorthandItem[ButtonProps]*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: SemanticShorthandItem[ButtonProps]*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setOnActionClick(
+      inline def setOnActionClick(
         value: (/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* data */ ButtonProps) => Unit
       ): Self = StObject.set(x, "onActionClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnActionClickUndefined: Self = StObject.set(x, "onActionClick", js.undefined)
+      inline def setOnActionClickUndefined: Self = StObject.set(x, "onActionClick", js.undefined)
     }
   }
   

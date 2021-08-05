@@ -18,22 +18,17 @@ trait SchemaSegmentDefinition extends StObject {
 }
 object SchemaSegmentDefinition {
   
-  @scala.inline
-  def apply(): SchemaSegmentDefinition = {
+  inline def apply(): SchemaSegmentDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSegmentDefinition]
   }
   
-  @scala.inline
-  implicit class SchemaSegmentDefinitionMutableBuilder[Self <: SchemaSegmentDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSegmentDefinition](x: Self) {
     
-    @scala.inline
-    def setSegmentFilters(value: js.Array[SchemaSegmentFilter]): Self = StObject.set(x, "segmentFilters", value.asInstanceOf[js.Any])
+    inline def setSegmentFilters(value: js.Array[SchemaSegmentFilter]): Self = StObject.set(x, "segmentFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentFiltersUndefined: Self = StObject.set(x, "segmentFilters", js.undefined)
+    inline def setSegmentFiltersUndefined: Self = StObject.set(x, "segmentFilters", js.undefined)
     
-    @scala.inline
-    def setSegmentFiltersVarargs(value: SchemaSegmentFilter*): Self = StObject.set(x, "segmentFilters", js.Array(value :_*))
+    inline def setSegmentFiltersVarargs(value: SchemaSegmentFilter*): Self = StObject.set(x, "segmentFilters", js.Array(value :_*))
   }
 }

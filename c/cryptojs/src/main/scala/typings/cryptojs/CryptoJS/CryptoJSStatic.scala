@@ -192,8 +192,7 @@ trait CryptoJSStatic extends StObject {
 }
 object CryptoJSStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AES: ICipherHelper[IBlockCipherCfg],
     DES: ICipherHelper[IBlockCipherCfg],
     EvpKDF: IEvpKDFHelper,
@@ -232,106 +231,72 @@ object CryptoJSStatic {
     __obj.asInstanceOf[CryptoJSStatic]
   }
   
-  @scala.inline
-  implicit class CryptoJSStaticMutableBuilder[Self <: CryptoJSStatic] (val x: Self) extends AnyVal {
+  extension [Self <: CryptoJSStatic](x: Self) {
     
-    @scala.inline
-    def setAES(value: ICipherHelper[IBlockCipherCfg]): Self = StObject.set(x, "AES", value.asInstanceOf[js.Any])
+    inline def setAES(value: ICipherHelper[IBlockCipherCfg]): Self = StObject.set(x, "AES", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgo(value: AlgoStatic): Self = StObject.set(x, "algo", value.asInstanceOf[js.Any])
+    inline def setAlgo(value: AlgoStatic): Self = StObject.set(x, "algo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDES(value: ICipherHelper[IBlockCipherCfg]): Self = StObject.set(x, "DES", value.asInstanceOf[js.Any])
+    inline def setDES(value: ICipherHelper[IBlockCipherCfg]): Self = StObject.set(x, "DES", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnc(value: EncStatic): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
+    inline def setEnc(value: EncStatic): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvpKDF(value: IEvpKDFHelper): Self = StObject.set(x, "EvpKDF", value.asInstanceOf[js.Any])
+    inline def setEvpKDF(value: IEvpKDFHelper): Self = StObject.set(x, "EvpKDF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: FormatStatic): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: FormatStatic): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacMD5(value: IHasherHmacHelper): Self = StObject.set(x, "HmacMD5", value.asInstanceOf[js.Any])
+    inline def setHmacMD5(value: IHasherHmacHelper): Self = StObject.set(x, "HmacMD5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacRIPEMD160(value: IHasherHmacHelper): Self = StObject.set(x, "HmacRIPEMD160", value.asInstanceOf[js.Any])
+    inline def setHmacRIPEMD160(value: IHasherHmacHelper): Self = StObject.set(x, "HmacRIPEMD160", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacSHA1(value: IHasherHmacHelper): Self = StObject.set(x, "HmacSHA1", value.asInstanceOf[js.Any])
+    inline def setHmacSHA1(value: IHasherHmacHelper): Self = StObject.set(x, "HmacSHA1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacSHA224(value: IHasherHmacHelper): Self = StObject.set(x, "HmacSHA224", value.asInstanceOf[js.Any])
+    inline def setHmacSHA224(value: IHasherHmacHelper): Self = StObject.set(x, "HmacSHA224", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacSHA256(value: IHasherHmacHelper): Self = StObject.set(x, "HmacSHA256", value.asInstanceOf[js.Any])
+    inline def setHmacSHA256(value: IHasherHmacHelper): Self = StObject.set(x, "HmacSHA256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacSHA3(value: IHasherHmacHelper): Self = StObject.set(x, "HmacSHA3", value.asInstanceOf[js.Any])
+    inline def setHmacSHA3(value: IHasherHmacHelper): Self = StObject.set(x, "HmacSHA3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacSHA384(value: IHasherHmacHelper): Self = StObject.set(x, "HmacSHA384", value.asInstanceOf[js.Any])
+    inline def setHmacSHA384(value: IHasherHmacHelper): Self = StObject.set(x, "HmacSHA384", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacSHA512(value: IHasherHmacHelper): Self = StObject.set(x, "HmacSHA512", value.asInstanceOf[js.Any])
+    inline def setHmacSHA512(value: IHasherHmacHelper): Self = StObject.set(x, "HmacSHA512", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKdf(value: KdfStatic): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
+    inline def setKdf(value: KdfStatic): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLib(value: LibStatic): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
+    inline def setLib(value: LibStatic): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMD5(value: HasherHelper): Self = StObject.set(x, "MD5", value.asInstanceOf[js.Any])
+    inline def setMD5(value: HasherHelper): Self = StObject.set(x, "MD5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: ModeStatic): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ModeStatic): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPBKDF2(value: IEvpKDFHelper): Self = StObject.set(x, "PBKDF2", value.asInstanceOf[js.Any])
+    inline def setPBKDF2(value: IEvpKDFHelper): Self = StObject.set(x, "PBKDF2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPad(value: PadStatic): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: PadStatic): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRC4(value: CipherHelper): Self = StObject.set(x, "RC4", value.asInstanceOf[js.Any])
+    inline def setRC4(value: CipherHelper): Self = StObject.set(x, "RC4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRC4Drop(value: ICipherHelper[js.Object]): Self = StObject.set(x, "RC4Drop", value.asInstanceOf[js.Any])
+    inline def setRC4Drop(value: ICipherHelper[js.Object]): Self = StObject.set(x, "RC4Drop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRIPEMD160(value: HasherHelper): Self = StObject.set(x, "RIPEMD160", value.asInstanceOf[js.Any])
+    inline def setRIPEMD160(value: HasherHelper): Self = StObject.set(x, "RIPEMD160", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRabbit(value: CipherHelper): Self = StObject.set(x, "Rabbit", value.asInstanceOf[js.Any])
+    inline def setRabbit(value: CipherHelper): Self = StObject.set(x, "Rabbit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRabbitLegacy(value: CipherHelper): Self = StObject.set(x, "RabbitLegacy", value.asInstanceOf[js.Any])
+    inline def setRabbitLegacy(value: CipherHelper): Self = StObject.set(x, "RabbitLegacy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA1(value: HasherHelper): Self = StObject.set(x, "SHA1", value.asInstanceOf[js.Any])
+    inline def setSHA1(value: HasherHelper): Self = StObject.set(x, "SHA1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA224(value: HasherHelper): Self = StObject.set(x, "SHA224", value.asInstanceOf[js.Any])
+    inline def setSHA224(value: HasherHelper): Self = StObject.set(x, "SHA224", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA256(value: HasherHelper): Self = StObject.set(x, "SHA256", value.asInstanceOf[js.Any])
+    inline def setSHA256(value: HasherHelper): Self = StObject.set(x, "SHA256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA3(value: IHasherHelper[ISHA3Cfg]): Self = StObject.set(x, "SHA3", value.asInstanceOf[js.Any])
+    inline def setSHA3(value: IHasherHelper[ISHA3Cfg]): Self = StObject.set(x, "SHA3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA384(value: HasherHelper): Self = StObject.set(x, "SHA384", value.asInstanceOf[js.Any])
+    inline def setSHA384(value: HasherHelper): Self = StObject.set(x, "SHA384", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHA512(value: HasherHelper): Self = StObject.set(x, "SHA512", value.asInstanceOf[js.Any])
+    inline def setSHA512(value: HasherHelper): Self = StObject.set(x, "SHA512", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTripleDES(value: ICipherHelper[IBlockCipherCfg]): Self = StObject.set(x, "TripleDES", value.asInstanceOf[js.Any])
+    inline def setTripleDES(value: ICipherHelper[IBlockCipherCfg]): Self = StObject.set(x, "TripleDES", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX64(value: X64Static): Self = StObject.set(x, "x64", value.asInstanceOf[js.Any])
+    inline def setX64(value: X64Static): Self = StObject.set(x, "x64", value.asInstanceOf[js.Any])
   }
 }

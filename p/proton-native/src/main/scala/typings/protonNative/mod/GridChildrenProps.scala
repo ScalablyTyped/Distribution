@@ -35,43 +35,31 @@ trait GridChildrenProps extends StObject {
 }
 object GridChildrenProps {
   
-  @scala.inline
-  def apply(): GridChildrenProps = {
+  inline def apply(): GridChildrenProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridChildrenProps]
   }
   
-  @scala.inline
-  implicit class GridChildrenPropsMutableBuilder[Self <: GridChildrenProps] (val x: Self) extends AnyVal {
+  extension [Self <: GridChildrenProps](x: Self) {
     
-    @scala.inline
-    def setAlign(value: H): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: H): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setExpand(value: H): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: H): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
-    @scala.inline
-    def setSpan(value: X): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    inline def setSpan(value: X): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
+    inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
   }
 }

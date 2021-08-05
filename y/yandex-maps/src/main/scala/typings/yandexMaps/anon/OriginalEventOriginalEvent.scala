@@ -10,16 +10,13 @@ trait OriginalEventOriginalEvent[OriginalEvent] extends StObject {
 }
 object OriginalEventOriginalEvent {
   
-  @scala.inline
-  def apply[OriginalEvent](originalEvent: OriginalEvent): OriginalEventOriginalEvent[OriginalEvent] = {
+  inline def apply[OriginalEvent](originalEvent: OriginalEvent): OriginalEventOriginalEvent[OriginalEvent] = {
     val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginalEventOriginalEvent[OriginalEvent]]
   }
   
-  @scala.inline
-  implicit class OriginalEventOriginalEventMutableBuilder[Self <: OriginalEventOriginalEvent[?], OriginalEvent] (val x: Self & OriginalEventOriginalEvent[OriginalEvent]) extends AnyVal {
+  extension [Self <: OriginalEventOriginalEvent[?], OriginalEvent](x: Self & OriginalEventOriginalEvent[OriginalEvent]) {
     
-    @scala.inline
-    def setOriginalEvent(value: OriginalEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: OriginalEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
   }
 }

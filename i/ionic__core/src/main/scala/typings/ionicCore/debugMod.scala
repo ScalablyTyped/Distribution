@@ -12,9 +12,7 @@ object debugMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def printRedirects(redirects: js.Array[RouteRedirect]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printRedirects")(redirects.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def printRedirects(redirects: js.Array[RouteRedirect]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printRedirects")(redirects.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def printRoutes(routes: js.Array[RouteChain]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def printRoutes(routes: js.Array[RouteChain]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

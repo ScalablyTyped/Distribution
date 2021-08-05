@@ -29,31 +29,23 @@ trait UnprocessedScramSecret extends StObject {
 }
 object UnprocessedScramSecret {
   
-  @scala.inline
-  def apply(): UnprocessedScramSecret = {
+  inline def apply(): UnprocessedScramSecret = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnprocessedScramSecret]
   }
   
-  @scala.inline
-  implicit class UnprocessedScramSecretMutableBuilder[Self <: UnprocessedScramSecret] (val x: Self) extends AnyVal {
+  extension [Self <: UnprocessedScramSecret](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: string): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: string): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: string): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: string): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setSecretArn(value: string): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
+    inline def setSecretArn(value: string): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
+    inline def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
   }
 }

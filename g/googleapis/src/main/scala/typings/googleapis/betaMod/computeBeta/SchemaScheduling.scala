@@ -41,40 +41,29 @@ trait SchemaScheduling extends StObject {
 }
 object SchemaScheduling {
   
-  @scala.inline
-  def apply(): SchemaScheduling = {
+  inline def apply(): SchemaScheduling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaScheduling]
   }
   
-  @scala.inline
-  implicit class SchemaSchedulingMutableBuilder[Self <: SchemaScheduling] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaScheduling](x: Self) {
     
-    @scala.inline
-    def setAutomaticRestart(value: Boolean): Self = StObject.set(x, "automaticRestart", value.asInstanceOf[js.Any])
+    inline def setAutomaticRestart(value: Boolean): Self = StObject.set(x, "automaticRestart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticRestartUndefined: Self = StObject.set(x, "automaticRestart", js.undefined)
+    inline def setAutomaticRestartUndefined: Self = StObject.set(x, "automaticRestart", js.undefined)
     
-    @scala.inline
-    def setNodeAffinities(value: js.Array[SchemaSchedulingNodeAffinity]): Self = StObject.set(x, "nodeAffinities", value.asInstanceOf[js.Any])
+    inline def setNodeAffinities(value: js.Array[SchemaSchedulingNodeAffinity]): Self = StObject.set(x, "nodeAffinities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeAffinitiesUndefined: Self = StObject.set(x, "nodeAffinities", js.undefined)
+    inline def setNodeAffinitiesUndefined: Self = StObject.set(x, "nodeAffinities", js.undefined)
     
-    @scala.inline
-    def setNodeAffinitiesVarargs(value: SchemaSchedulingNodeAffinity*): Self = StObject.set(x, "nodeAffinities", js.Array(value :_*))
+    inline def setNodeAffinitiesVarargs(value: SchemaSchedulingNodeAffinity*): Self = StObject.set(x, "nodeAffinities", js.Array(value :_*))
     
-    @scala.inline
-    def setOnHostMaintenance(value: String): Self = StObject.set(x, "onHostMaintenance", value.asInstanceOf[js.Any])
+    inline def setOnHostMaintenance(value: String): Self = StObject.set(x, "onHostMaintenance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnHostMaintenanceUndefined: Self = StObject.set(x, "onHostMaintenance", js.undefined)
+    inline def setOnHostMaintenanceUndefined: Self = StObject.set(x, "onHostMaintenance", js.undefined)
     
-    @scala.inline
-    def setPreemptible(value: Boolean): Self = StObject.set(x, "preemptible", value.asInstanceOf[js.Any])
+    inline def setPreemptible(value: Boolean): Self = StObject.set(x, "preemptible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreemptibleUndefined: Self = StObject.set(x, "preemptible", js.undefined)
+    inline def setPreemptibleUndefined: Self = StObject.set(x, "preemptible", js.undefined)
   }
 }

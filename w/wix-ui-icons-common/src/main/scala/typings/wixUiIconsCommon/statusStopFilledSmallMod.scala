@@ -22,20 +22,16 @@ object statusStopFilledSmallMod extends Shortcut {
   }
   object StatusStopFilledSmallProps {
     
-    @scala.inline
-    def apply(): StatusStopFilledSmallProps = {
+    inline def apply(): StatusStopFilledSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatusStopFilledSmallProps]
     }
     
-    @scala.inline
-    implicit class StatusStopFilledSmallPropsMutableBuilder[Self <: StatusStopFilledSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatusStopFilledSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

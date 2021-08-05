@@ -10,8 +10,7 @@ object useIntervalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(fn: js.Function0[Unit], ms: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(fn: js.Function0[Unit], ms: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Creates a pausable `setInterval` that is properly cleaned up when a component unmounted
     *
@@ -34,8 +33,7 @@ object useIntervalMod {
     * @param ms The milliseconds duration of the interval
     * @param paused Whether or not the interval is currently running
     */
-  @scala.inline
-  def default(fn: js.Function0[Unit], ms: Double, paused: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], ms.asInstanceOf[js.Any], paused.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(fn: js.Function0[Unit], ms: Double, paused: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], ms.asInstanceOf[js.Any], paused.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Creates a pausable `setInterval` that _fires_ immediately and is
     * properly cleaned up when a component unmounted
@@ -55,6 +53,5 @@ object useIntervalMod {
     * rather than waiting for the first interval to elapse
     *
     */
-  @scala.inline
-  def default(fn: js.Function0[Unit], ms: Double, paused: Boolean, runImmediately: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], ms.asInstanceOf[js.Any], paused.asInstanceOf[js.Any], runImmediately.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(fn: js.Function0[Unit], ms: Double, paused: Boolean, runImmediately: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], ms.asInstanceOf[js.Any], paused.asInstanceOf[js.Any], runImmediately.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

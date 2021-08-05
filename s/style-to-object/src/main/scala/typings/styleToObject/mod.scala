@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(style: String): StringDictionary[String] | Null = ^.asInstanceOf[js.Dynamic].apply(style.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String] | Null]
-  @scala.inline
-  def apply(style: String, iterator: Iterator): StringDictionary[String] | Null = (^.asInstanceOf[js.Dynamic].apply(style.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String] | Null]
+  inline def apply(style: String): StringDictionary[String] | Null = ^.asInstanceOf[js.Dynamic].apply(style.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String] | Null]
+  inline def apply(style: String, iterator: Iterator): StringDictionary[String] | Null = (^.asInstanceOf[js.Dynamic].apply(style.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String] | Null]
   
   @JSImport("style-to-object", JSImport.Namespace)
   @js.native
@@ -30,27 +28,21 @@ object mod {
   }
   object Declaration {
     
-    @scala.inline
-    def apply(position: End, property: String, `type`: String, value: String): Declaration = {
+    inline def apply(position: End, property: String, `type`: String, value: String): Declaration = {
       val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Declaration]
     }
     
-    @scala.inline
-    implicit class DeclarationMutableBuilder[Self <: Declaration] (val x: Self) extends AnyVal {
+    extension [Self <: Declaration](x: Self) {
       
-      @scala.inline
-      def setPosition(value: End): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: End): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,20 +54,16 @@ object mod {
   }
   object DeclarationPos {
     
-    @scala.inline
-    def apply(column: Double, line: Double): DeclarationPos = {
+    inline def apply(column: Double, line: Double): DeclarationPos = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeclarationPos]
     }
     
-    @scala.inline
-    implicit class DeclarationPosMutableBuilder[Self <: DeclarationPos] (val x: Self) extends AnyVal {
+    extension [Self <: DeclarationPos](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
   

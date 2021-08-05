@@ -162,21 +162,16 @@ object topicMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Topic]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Topic]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TopicState): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Topic]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TopicState, opts: CustomResourceOptions): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Topic]
+    inline def get(name: String, id: Input[ID]): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Topic]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Topic]
+    inline def get(name: String, id: Input[ID], state: TopicState): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Topic]
+    inline def get(name: String, id: Input[ID], state: TopicState, opts: CustomResourceOptions): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Topic]
     
     /**
       * Returns true if the given object is an instance of Topic.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topic.Topic */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sns/topic.Topic */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topic.Topic */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sns/topic.Topic */ Boolean]
   }
   
   trait TopicArgs extends StObject {
@@ -278,128 +273,88 @@ object topicMod {
   }
   object TopicArgs {
     
-    @scala.inline
-    def apply(): TopicArgs = {
+    inline def apply(): TopicArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TopicArgs]
     }
     
-    @scala.inline
-    implicit class TopicArgsMutableBuilder[Self <: TopicArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TopicArgs](x: Self) {
       
-      @scala.inline
-      def setApplicationFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "applicationFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setApplicationFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "applicationFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "applicationFailureFeedbackRoleArn", js.undefined)
+      inline def setApplicationFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "applicationFailureFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setApplicationSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "applicationSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setApplicationSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "applicationSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "applicationSuccessFeedbackRoleArn", js.undefined)
+      inline def setApplicationSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "applicationSuccessFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setApplicationSuccessFeedbackSampleRate(value: Input[Double]): Self = StObject.set(x, "applicationSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
+      inline def setApplicationSuccessFeedbackSampleRate(value: Input[Double]): Self = StObject.set(x, "applicationSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "applicationSuccessFeedbackSampleRate", js.undefined)
+      inline def setApplicationSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "applicationSuccessFeedbackSampleRate", js.undefined)
       
-      @scala.inline
-      def setDeliveryPolicy(value: Input[String]): Self = StObject.set(x, "deliveryPolicy", value.asInstanceOf[js.Any])
+      inline def setDeliveryPolicy(value: Input[String]): Self = StObject.set(x, "deliveryPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeliveryPolicyUndefined: Self = StObject.set(x, "deliveryPolicy", js.undefined)
+      inline def setDeliveryPolicyUndefined: Self = StObject.set(x, "deliveryPolicy", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: Input[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: Input[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setHttpFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "httpFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setHttpFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "httpFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "httpFailureFeedbackRoleArn", js.undefined)
+      inline def setHttpFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "httpFailureFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setHttpSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "httpSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setHttpSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "httpSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "httpSuccessFeedbackRoleArn", js.undefined)
+      inline def setHttpSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "httpSuccessFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setHttpSuccessFeedbackSampleRate(value: Input[Double]): Self = StObject.set(x, "httpSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
+      inline def setHttpSuccessFeedbackSampleRate(value: Input[Double]): Self = StObject.set(x, "httpSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "httpSuccessFeedbackSampleRate", js.undefined)
+      inline def setHttpSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "httpSuccessFeedbackSampleRate", js.undefined)
       
-      @scala.inline
-      def setKmsMasterKeyId(value: Input[String]): Self = StObject.set(x, "kmsMasterKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsMasterKeyId(value: Input[String]): Self = StObject.set(x, "kmsMasterKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "kmsMasterKeyId", js.undefined)
+      inline def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "kmsMasterKeyId", js.undefined)
       
-      @scala.inline
-      def setLambdaFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "lambdaFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setLambdaFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "lambdaFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "lambdaFailureFeedbackRoleArn", js.undefined)
+      inline def setLambdaFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "lambdaFailureFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setLambdaSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "lambdaSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setLambdaSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "lambdaSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "lambdaSuccessFeedbackRoleArn", js.undefined)
+      inline def setLambdaSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "lambdaSuccessFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setLambdaSuccessFeedbackSampleRate(value: Input[Double]): Self = StObject.set(x, "lambdaSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
+      inline def setLambdaSuccessFeedbackSampleRate(value: Input[Double]): Self = StObject.set(x, "lambdaSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "lambdaSuccessFeedbackSampleRate", js.undefined)
+      inline def setLambdaSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "lambdaSuccessFeedbackSampleRate", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setSqsFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "sqsFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setSqsFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "sqsFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqsFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "sqsFailureFeedbackRoleArn", js.undefined)
+      inline def setSqsFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "sqsFailureFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setSqsSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "sqsSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setSqsSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "sqsSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqsSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "sqsSuccessFeedbackRoleArn", js.undefined)
+      inline def setSqsSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "sqsSuccessFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setSqsSuccessFeedbackSampleRate(value: Input[Double]): Self = StObject.set(x, "sqsSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
+      inline def setSqsSuccessFeedbackSampleRate(value: Input[Double]): Self = StObject.set(x, "sqsSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqsSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "sqsSuccessFeedbackSampleRate", js.undefined)
+      inline def setSqsSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "sqsSuccessFeedbackSampleRate", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -507,134 +462,92 @@ object topicMod {
   }
   object TopicState {
     
-    @scala.inline
-    def apply(): TopicState = {
+    inline def apply(): TopicState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TopicState]
     }
     
-    @scala.inline
-    implicit class TopicStateMutableBuilder[Self <: TopicState] (val x: Self) extends AnyVal {
+    extension [Self <: TopicState](x: Self) {
       
-      @scala.inline
-      def setApplicationFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "applicationFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setApplicationFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "applicationFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "applicationFailureFeedbackRoleArn", js.undefined)
+      inline def setApplicationFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "applicationFailureFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setApplicationSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "applicationSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setApplicationSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "applicationSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "applicationSuccessFeedbackRoleArn", js.undefined)
+      inline def setApplicationSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "applicationSuccessFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setApplicationSuccessFeedbackSampleRate(value: Input[Double]): Self = StObject.set(x, "applicationSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
+      inline def setApplicationSuccessFeedbackSampleRate(value: Input[Double]): Self = StObject.set(x, "applicationSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "applicationSuccessFeedbackSampleRate", js.undefined)
+      inline def setApplicationSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "applicationSuccessFeedbackSampleRate", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[ARN]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[ARN]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDeliveryPolicy(value: Input[String]): Self = StObject.set(x, "deliveryPolicy", value.asInstanceOf[js.Any])
+      inline def setDeliveryPolicy(value: Input[String]): Self = StObject.set(x, "deliveryPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeliveryPolicyUndefined: Self = StObject.set(x, "deliveryPolicy", js.undefined)
+      inline def setDeliveryPolicyUndefined: Self = StObject.set(x, "deliveryPolicy", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: Input[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: Input[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setHttpFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "httpFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setHttpFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "httpFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "httpFailureFeedbackRoleArn", js.undefined)
+      inline def setHttpFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "httpFailureFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setHttpSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "httpSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setHttpSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "httpSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "httpSuccessFeedbackRoleArn", js.undefined)
+      inline def setHttpSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "httpSuccessFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setHttpSuccessFeedbackSampleRate(value: Input[Double]): Self = StObject.set(x, "httpSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
+      inline def setHttpSuccessFeedbackSampleRate(value: Input[Double]): Self = StObject.set(x, "httpSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "httpSuccessFeedbackSampleRate", js.undefined)
+      inline def setHttpSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "httpSuccessFeedbackSampleRate", js.undefined)
       
-      @scala.inline
-      def setKmsMasterKeyId(value: Input[String]): Self = StObject.set(x, "kmsMasterKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsMasterKeyId(value: Input[String]): Self = StObject.set(x, "kmsMasterKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "kmsMasterKeyId", js.undefined)
+      inline def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "kmsMasterKeyId", js.undefined)
       
-      @scala.inline
-      def setLambdaFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "lambdaFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setLambdaFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "lambdaFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "lambdaFailureFeedbackRoleArn", js.undefined)
+      inline def setLambdaFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "lambdaFailureFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setLambdaSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "lambdaSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setLambdaSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "lambdaSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "lambdaSuccessFeedbackRoleArn", js.undefined)
+      inline def setLambdaSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "lambdaSuccessFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setLambdaSuccessFeedbackSampleRate(value: Input[Double]): Self = StObject.set(x, "lambdaSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
+      inline def setLambdaSuccessFeedbackSampleRate(value: Input[Double]): Self = StObject.set(x, "lambdaSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "lambdaSuccessFeedbackSampleRate", js.undefined)
+      inline def setLambdaSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "lambdaSuccessFeedbackSampleRate", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setSqsFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "sqsFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setSqsFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "sqsFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqsFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "sqsFailureFeedbackRoleArn", js.undefined)
+      inline def setSqsFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "sqsFailureFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setSqsSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "sqsSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setSqsSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "sqsSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqsSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "sqsSuccessFeedbackRoleArn", js.undefined)
+      inline def setSqsSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "sqsSuccessFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setSqsSuccessFeedbackSampleRate(value: Input[Double]): Self = StObject.set(x, "sqsSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
+      inline def setSqsSuccessFeedbackSampleRate(value: Input[Double]): Self = StObject.set(x, "sqsSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqsSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "sqsSuccessFeedbackSampleRate", js.undefined)
+      inline def setSqsSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "sqsSuccessFeedbackSampleRate", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

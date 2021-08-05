@@ -18,25 +18,19 @@ trait TextDetectionResult extends StObject {
 }
 object TextDetectionResult {
   
-  @scala.inline
-  def apply(): TextDetectionResult = {
+  inline def apply(): TextDetectionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextDetectionResult]
   }
   
-  @scala.inline
-  implicit class TextDetectionResultMutableBuilder[Self <: TextDetectionResult] (val x: Self) extends AnyVal {
+  extension [Self <: TextDetectionResult](x: Self) {
     
-    @scala.inline
-    def setTextDetection(value: TextDetection): Self = StObject.set(x, "TextDetection", value.asInstanceOf[js.Any])
+    inline def setTextDetection(value: TextDetection): Self = StObject.set(x, "TextDetection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDetectionUndefined: Self = StObject.set(x, "TextDetection", js.undefined)
+    inline def setTextDetectionUndefined: Self = StObject.set(x, "TextDetection", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

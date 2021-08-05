@@ -36,27 +36,22 @@ trait InputEvent extends StObject {
 }
 object InputEvent {
   
-  @scala.inline
-  def apply(): InputEvent = {
+  inline def apply(): InputEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputEvent]
   }
   
-  @scala.inline
-  implicit class InputEventMutableBuilder[Self <: InputEvent] (val x: Self) extends AnyVal {
+  extension [Self <: InputEvent](x: Self) {
     
-    @scala.inline
-    def setModifiers(
+    inline def setModifiers(
       value: js.Array[
           shift | control | ctrl | alt | meta | command | cmd | isKeypad | isAutoRepeat | leftButtonDown | middleButtonDown | rightButtonDown | capsLock | numLock | left | right
         ]
     ): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
+    inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
-    @scala.inline
-    def setModifiersVarargs(
+    inline def setModifiersVarargs(
       value: (shift | control | ctrl | alt | meta | command | cmd | isKeypad | isAutoRepeat | leftButtonDown | middleButtonDown | rightButtonDown | capsLock | numLock | left | right)*
     ): Self = StObject.set(x, "modifiers", js.Array(value :_*))
   }

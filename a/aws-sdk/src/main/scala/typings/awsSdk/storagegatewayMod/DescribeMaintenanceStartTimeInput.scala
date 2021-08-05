@@ -10,16 +10,13 @@ trait DescribeMaintenanceStartTimeInput extends StObject {
 }
 object DescribeMaintenanceStartTimeInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN): DescribeMaintenanceStartTimeInput = {
+  inline def apply(GatewayARN: GatewayARN): DescribeMaintenanceStartTimeInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeMaintenanceStartTimeInput]
   }
   
-  @scala.inline
-  implicit class DescribeMaintenanceStartTimeInputMutableBuilder[Self <: DescribeMaintenanceStartTimeInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMaintenanceStartTimeInput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
   }
 }

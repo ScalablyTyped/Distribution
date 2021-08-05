@@ -106,8 +106,7 @@ object webGLRenderListsMod {
   }
   object RenderItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       groupOrder: Double,
       id: Double,
       material: Material,
@@ -121,41 +120,29 @@ object webGLRenderListsMod {
       __obj.asInstanceOf[RenderItem]
     }
     
-    @scala.inline
-    implicit class RenderItemMutableBuilder[Self <: RenderItem] (val x: Self) extends AnyVal {
+    extension [Self <: RenderItem](x: Self) {
       
-      @scala.inline
-      def setGeometry(value: BufferGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: BufferGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeometryNull: Self = StObject.set(x, "geometry", null)
+      inline def setGeometryNull: Self = StObject.set(x, "geometry", null)
       
-      @scala.inline
-      def setGroup(value: Group): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: Group): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupNull: Self = StObject.set(x, "group", null)
+      inline def setGroupNull: Self = StObject.set(x, "group", null)
       
-      @scala.inline
-      def setGroupOrder(value: Double): Self = StObject.set(x, "groupOrder", value.asInstanceOf[js.Any])
+      inline def setGroupOrder(value: Double): Self = StObject.set(x, "groupOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaterial(value: Material): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+      inline def setMaterial(value: Material): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: Object3D): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Object3D): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgram(value: WebGLProgram): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: WebGLProgram): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderOrder(value: Double): Self = StObject.set(x, "renderOrder", value.asInstanceOf[js.Any])
+      inline def setRenderOrder(value: Double): Self = StObject.set(x, "renderOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     }
   }
   

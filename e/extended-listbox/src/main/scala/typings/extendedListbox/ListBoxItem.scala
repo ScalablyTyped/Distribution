@@ -32,64 +32,45 @@ trait ListBoxItem extends StObject {
 }
 object ListBoxItem {
   
-  @scala.inline
-  def apply(): ListBoxItem = {
+  inline def apply(): ListBoxItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBoxItem]
   }
   
-  @scala.inline
-  implicit class ListBoxItemMutableBuilder[Self <: ListBoxItem] (val x: Self) extends AnyVal {
+  extension [Self <: ListBoxItem](x: Self) {
     
-    @scala.inline
-    def setChildItems(value: js.Array[String | ListBoxItem]): Self = StObject.set(x, "childItems", value.asInstanceOf[js.Any])
+    inline def setChildItems(value: js.Array[String | ListBoxItem]): Self = StObject.set(x, "childItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildItemsUndefined: Self = StObject.set(x, "childItems", js.undefined)
+    inline def setChildItemsUndefined: Self = StObject.set(x, "childItems", js.undefined)
     
-    @scala.inline
-    def setChildItemsVarargs(value: (String | ListBoxItem)*): Self = StObject.set(x, "childItems", js.Array(value :_*))
+    inline def setChildItemsVarargs(value: (String | ListBoxItem)*): Self = StObject.set(x, "childItems", js.Array(value :_*))
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setGroupHeader(value: Boolean): Self = StObject.set(x, "groupHeader", value.asInstanceOf[js.Any])
+    inline def setGroupHeader(value: Boolean): Self = StObject.set(x, "groupHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupHeaderUndefined: Self = StObject.set(x, "groupHeader", js.undefined)
+    inline def setGroupHeaderUndefined: Self = StObject.set(x, "groupHeader", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setParentGroupId(value: String): Self = StObject.set(x, "parentGroupId", value.asInstanceOf[js.Any])
+    inline def setParentGroupId(value: String): Self = StObject.set(x, "parentGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentGroupIdUndefined: Self = StObject.set(x, "parentGroupId", js.undefined)
+    inline def setParentGroupIdUndefined: Self = StObject.set(x, "parentGroupId", js.undefined)
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

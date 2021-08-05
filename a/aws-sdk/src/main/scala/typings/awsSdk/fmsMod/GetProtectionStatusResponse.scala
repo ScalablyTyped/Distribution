@@ -28,37 +28,27 @@ trait GetProtectionStatusResponse extends StObject {
 }
 object GetProtectionStatusResponse {
   
-  @scala.inline
-  def apply(): GetProtectionStatusResponse = {
+  inline def apply(): GetProtectionStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetProtectionStatusResponse]
   }
   
-  @scala.inline
-  implicit class GetProtectionStatusResponseMutableBuilder[Self <: GetProtectionStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetProtectionStatusResponse](x: Self) {
     
-    @scala.inline
-    def setAdminAccountId(value: AWSAccountId): Self = StObject.set(x, "AdminAccountId", value.asInstanceOf[js.Any])
+    inline def setAdminAccountId(value: AWSAccountId): Self = StObject.set(x, "AdminAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminAccountIdUndefined: Self = StObject.set(x, "AdminAccountId", js.undefined)
+    inline def setAdminAccountIdUndefined: Self = StObject.set(x, "AdminAccountId", js.undefined)
     
-    @scala.inline
-    def setData(value: ProtectionData): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: ProtectionData): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setServiceType(value: SecurityServiceType): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: SecurityServiceType): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceTypeUndefined: Self = StObject.set(x, "ServiceType", js.undefined)
+    inline def setServiceTypeUndefined: Self = StObject.set(x, "ServiceType", js.undefined)
   }
 }

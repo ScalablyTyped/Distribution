@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoButtonStyleHidden extends StObject
 object MsoButtonStyleHidden {
   
-  @scala.inline
-  def msoButtonTextBelow: `8` = 8.asInstanceOf[`8`]
+  inline def msoButtonTextBelow: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def msoButtonWrapText: `4` = 4.asInstanceOf[`4`]
+  inline def msoButtonWrapText: `4` = 4.asInstanceOf[`4`]
 }

@@ -70,8 +70,7 @@ object gatewayRegistryMod {
   }
   object GatewayRegistry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _children: StringDictionary[js.UndefOr[StringDictionary[ReactNode]]],
       _containers: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, js.Any]) | Null]],
       _currentId: Double,
@@ -87,38 +86,27 @@ object gatewayRegistryMod {
       __obj.asInstanceOf[GatewayRegistry]
     }
     
-    @scala.inline
-    implicit class GatewayRegistryMutableBuilder[Self <: GatewayRegistry] (val x: Self) extends AnyVal {
+    extension [Self <: GatewayRegistry](x: Self) {
       
-      @scala.inline
-      def setAddChild(value: (String, String, ReactNode) => Unit): Self = StObject.set(x, "addChild", js.Any.fromFunction3(value))
+      inline def setAddChild(value: (String, String, ReactNode) => Unit): Self = StObject.set(x, "addChild", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAddContainer(value: (String, Component[js.Object, js.Object, js.Any]) => Unit): Self = StObject.set(x, "addContainer", js.Any.fromFunction2(value))
+      inline def setAddContainer(value: (String, Component[js.Object, js.Object, js.Any]) => Unit): Self = StObject.set(x, "addContainer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClearChild(value: (String, String) => Unit): Self = StObject.set(x, "clearChild", js.Any.fromFunction2(value))
+      inline def setClearChild(value: (String, String) => Unit): Self = StObject.set(x, "clearChild", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegister(value: (String, ReactNode) => String): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+      inline def setRegister(value: (String, ReactNode) => String): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveContainer(value: String => Unit): Self = StObject.set(x, "removeContainer", js.Any.fromFunction1(value))
+      inline def setRemoveContainer(value: String => Unit): Self = StObject.set(x, "removeContainer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnregister(value: (String, String) => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction2(value))
+      inline def setUnregister(value: (String, String) => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_children(value: StringDictionary[js.UndefOr[StringDictionary[ReactNode]]]): Self = StObject.set(x, "_children", value.asInstanceOf[js.Any])
+      inline def set_children(value: StringDictionary[js.UndefOr[StringDictionary[ReactNode]]]): Self = StObject.set(x, "_children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_containers(value: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, js.Any]) | Null]]): Self = StObject.set(x, "_containers", value.asInstanceOf[js.Any])
+      inline def set_containers(value: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, js.Any]) | Null]]): Self = StObject.set(x, "_containers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_currentId(value: Double): Self = StObject.set(x, "_currentId", value.asInstanceOf[js.Any])
+      inline def set_currentId(value: Double): Self = StObject.set(x, "_currentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_renderContainer(value: String => Unit): Self = StObject.set(x, "_renderContainer", js.Any.fromFunction1(value))
+      inline def set_renderContainer(value: String => Unit): Self = StObject.set(x, "_renderContainer", js.Any.fromFunction1(value))
     }
   }
 }

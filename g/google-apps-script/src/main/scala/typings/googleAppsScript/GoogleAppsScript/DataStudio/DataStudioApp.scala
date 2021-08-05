@@ -13,16 +13,13 @@ trait DataStudioApp extends StObject {
 }
 object DataStudioApp {
   
-  @scala.inline
-  def apply(createCommunityConnector: () => CommunityConnector): DataStudioApp = {
+  inline def apply(createCommunityConnector: () => CommunityConnector): DataStudioApp = {
     val __obj = js.Dynamic.literal(createCommunityConnector = js.Any.fromFunction0(createCommunityConnector))
     __obj.asInstanceOf[DataStudioApp]
   }
   
-  @scala.inline
-  implicit class DataStudioAppMutableBuilder[Self <: DataStudioApp] (val x: Self) extends AnyVal {
+  extension [Self <: DataStudioApp](x: Self) {
     
-    @scala.inline
-    def setCreateCommunityConnector(value: () => CommunityConnector): Self = StObject.set(x, "createCommunityConnector", js.Any.fromFunction0(value))
+    inline def setCreateCommunityConnector(value: () => CommunityConnector): Self = StObject.set(x, "createCommunityConnector", js.Any.fromFunction0(value))
   }
 }

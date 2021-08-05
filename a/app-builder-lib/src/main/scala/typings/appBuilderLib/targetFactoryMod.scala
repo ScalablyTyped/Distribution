@@ -27,14 +27,11 @@ object targetFactoryMod {
     def outDir_MNoOpTarget: String = js.native
   }
   
-  @scala.inline
-  def computeArchToTargetNamesMap(raw: Map[Arch, js.Array[String]], platformPackager: PlatformPackager[js.Any], platform: Platform): Map[Arch, js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeArchToTargetNamesMap")(raw.asInstanceOf[js.Any], platformPackager.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Map[Arch, js.Array[String]]]
+  inline def computeArchToTargetNamesMap(raw: Map[Arch, js.Array[String]], platformPackager: PlatformPackager[js.Any], platform: Platform): Map[Arch, js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeArchToTargetNamesMap")(raw.asInstanceOf[js.Any], platformPackager.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Map[Arch, js.Array[String]]]
   
-  @scala.inline
-  def createCommonTarget(target: String, outDir: String, packager: PlatformPackager[js.Any]): Target = (^.asInstanceOf[js.Dynamic].applyDynamic("createCommonTarget")(target.asInstanceOf[js.Any], outDir.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[Target]
+  inline def createCommonTarget(target: String, outDir: String, packager: PlatformPackager[js.Any]): Target = (^.asInstanceOf[js.Dynamic].applyDynamic("createCommonTarget")(target.asInstanceOf[js.Any], outDir.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[Target]
   
-  @scala.inline
-  def createTargets(
+  inline def createTargets(
     nameToTarget: Map[String, Target],
     rawList: js.Array[String],
     outDir: String,

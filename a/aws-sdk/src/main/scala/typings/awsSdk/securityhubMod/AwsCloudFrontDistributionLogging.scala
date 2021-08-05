@@ -28,37 +28,27 @@ trait AwsCloudFrontDistributionLogging extends StObject {
 }
 object AwsCloudFrontDistributionLogging {
   
-  @scala.inline
-  def apply(): AwsCloudFrontDistributionLogging = {
+  inline def apply(): AwsCloudFrontDistributionLogging = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCloudFrontDistributionLogging]
   }
   
-  @scala.inline
-  implicit class AwsCloudFrontDistributionLoggingMutableBuilder[Self <: AwsCloudFrontDistributionLogging] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCloudFrontDistributionLogging](x: Self) {
     
-    @scala.inline
-    def setBucket(value: NonEmptyString): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: NonEmptyString): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setIncludeCookies(value: Boolean): Self = StObject.set(x, "IncludeCookies", value.asInstanceOf[js.Any])
+    inline def setIncludeCookies(value: Boolean): Self = StObject.set(x, "IncludeCookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCookiesUndefined: Self = StObject.set(x, "IncludeCookies", js.undefined)
+    inline def setIncludeCookiesUndefined: Self = StObject.set(x, "IncludeCookies", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: NonEmptyString): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: NonEmptyString): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
   }
 }

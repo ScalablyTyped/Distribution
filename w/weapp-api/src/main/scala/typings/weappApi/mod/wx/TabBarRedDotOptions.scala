@@ -13,16 +13,13 @@ trait TabBarRedDotOptions
 }
 object TabBarRedDotOptions {
   
-  @scala.inline
-  def apply(index: Double): TabBarRedDotOptions = {
+  inline def apply(index: Double): TabBarRedDotOptions = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabBarRedDotOptions]
   }
   
-  @scala.inline
-  implicit class TabBarRedDotOptionsMutableBuilder[Self <: TabBarRedDotOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TabBarRedDotOptions](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

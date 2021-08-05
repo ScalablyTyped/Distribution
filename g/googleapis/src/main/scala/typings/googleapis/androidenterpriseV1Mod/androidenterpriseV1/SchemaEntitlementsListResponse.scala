@@ -24,28 +24,21 @@ trait SchemaEntitlementsListResponse extends StObject {
 }
 object SchemaEntitlementsListResponse {
   
-  @scala.inline
-  def apply(): SchemaEntitlementsListResponse = {
+  inline def apply(): SchemaEntitlementsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEntitlementsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaEntitlementsListResponseMutableBuilder[Self <: SchemaEntitlementsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEntitlementsListResponse](x: Self) {
     
-    @scala.inline
-    def setEntitlement(value: js.Array[SchemaEntitlement]): Self = StObject.set(x, "entitlement", value.asInstanceOf[js.Any])
+    inline def setEntitlement(value: js.Array[SchemaEntitlement]): Self = StObject.set(x, "entitlement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitlementUndefined: Self = StObject.set(x, "entitlement", js.undefined)
+    inline def setEntitlementUndefined: Self = StObject.set(x, "entitlement", js.undefined)
     
-    @scala.inline
-    def setEntitlementVarargs(value: SchemaEntitlement*): Self = StObject.set(x, "entitlement", js.Array(value :_*))
+    inline def setEntitlementVarargs(value: SchemaEntitlement*): Self = StObject.set(x, "entitlement", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

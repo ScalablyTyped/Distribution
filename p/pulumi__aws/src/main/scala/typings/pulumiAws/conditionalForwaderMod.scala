@@ -55,21 +55,16 @@ object conditionalForwaderMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ConditionalForwader = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ConditionalForwader]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ConditionalForwader = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConditionalForwader]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ConditionalForwaderState): ConditionalForwader = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ConditionalForwader]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ConditionalForwaderState, opts: CustomResourceOptions): ConditionalForwader = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConditionalForwader]
+    inline def get(name: String, id: Input[ID]): ConditionalForwader = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ConditionalForwader]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ConditionalForwader = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConditionalForwader]
+    inline def get(name: String, id: Input[ID], state: ConditionalForwaderState): ConditionalForwader = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ConditionalForwader]
+    inline def get(name: String, id: Input[ID], state: ConditionalForwaderState, opts: CustomResourceOptions): ConditionalForwader = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConditionalForwader]
     
     /**
       * Returns true if the given object is an instance of ConditionalForwader.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directoryservice/conditionalForwader.ConditionalForwader */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directoryservice/conditionalForwader.ConditionalForwader */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directoryservice/conditionalForwader.ConditionalForwader */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directoryservice/conditionalForwader.ConditionalForwader */ Boolean]
   }
   
   trait ConditionalForwaderArgs extends StObject {
@@ -91,8 +86,7 @@ object conditionalForwaderMod {
   }
   object ConditionalForwaderArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       directoryId: Input[String],
       dnsIps: Input[js.Array[Input[String]]],
       remoteDomainName: Input[String]
@@ -101,20 +95,15 @@ object conditionalForwaderMod {
       __obj.asInstanceOf[ConditionalForwaderArgs]
     }
     
-    @scala.inline
-    implicit class ConditionalForwaderArgsMutableBuilder[Self <: ConditionalForwaderArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ConditionalForwaderArgs](x: Self) {
       
-      @scala.inline
-      def setDirectoryId(value: Input[String]): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
+      inline def setDirectoryId(value: Input[String]): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsIps(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "dnsIps", value.asInstanceOf[js.Any])
+      inline def setDnsIps(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "dnsIps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsIpsVarargs(value: Input[String]*): Self = StObject.set(x, "dnsIps", js.Array(value :_*))
+      inline def setDnsIpsVarargs(value: Input[String]*): Self = StObject.set(x, "dnsIps", js.Array(value :_*))
       
-      @scala.inline
-      def setRemoteDomainName(value: Input[String]): Self = StObject.set(x, "remoteDomainName", value.asInstanceOf[js.Any])
+      inline def setRemoteDomainName(value: Input[String]): Self = StObject.set(x, "remoteDomainName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,35 +126,26 @@ object conditionalForwaderMod {
   }
   object ConditionalForwaderState {
     
-    @scala.inline
-    def apply(): ConditionalForwaderState = {
+    inline def apply(): ConditionalForwaderState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConditionalForwaderState]
     }
     
-    @scala.inline
-    implicit class ConditionalForwaderStateMutableBuilder[Self <: ConditionalForwaderState] (val x: Self) extends AnyVal {
+    extension [Self <: ConditionalForwaderState](x: Self) {
       
-      @scala.inline
-      def setDirectoryId(value: Input[String]): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
+      inline def setDirectoryId(value: Input[String]): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryIdUndefined: Self = StObject.set(x, "directoryId", js.undefined)
+      inline def setDirectoryIdUndefined: Self = StObject.set(x, "directoryId", js.undefined)
       
-      @scala.inline
-      def setDnsIps(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "dnsIps", value.asInstanceOf[js.Any])
+      inline def setDnsIps(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "dnsIps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsIpsUndefined: Self = StObject.set(x, "dnsIps", js.undefined)
+      inline def setDnsIpsUndefined: Self = StObject.set(x, "dnsIps", js.undefined)
       
-      @scala.inline
-      def setDnsIpsVarargs(value: Input[String]*): Self = StObject.set(x, "dnsIps", js.Array(value :_*))
+      inline def setDnsIpsVarargs(value: Input[String]*): Self = StObject.set(x, "dnsIps", js.Array(value :_*))
       
-      @scala.inline
-      def setRemoteDomainName(value: Input[String]): Self = StObject.set(x, "remoteDomainName", value.asInstanceOf[js.Any])
+      inline def setRemoteDomainName(value: Input[String]): Self = StObject.set(x, "remoteDomainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteDomainNameUndefined: Self = StObject.set(x, "remoteDomainName", js.undefined)
+      inline def setRemoteDomainNameUndefined: Self = StObject.set(x, "remoteDomainName", js.undefined)
     }
   }
 }

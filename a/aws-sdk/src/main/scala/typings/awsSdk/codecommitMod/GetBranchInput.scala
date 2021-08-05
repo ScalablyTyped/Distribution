@@ -18,25 +18,19 @@ trait GetBranchInput extends StObject {
 }
 object GetBranchInput {
   
-  @scala.inline
-  def apply(): GetBranchInput = {
+  inline def apply(): GetBranchInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBranchInput]
   }
   
-  @scala.inline
-  implicit class GetBranchInputMutableBuilder[Self <: GetBranchInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBranchInput](x: Self) {
     
-    @scala.inline
-    def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchNameUndefined: Self = StObject.set(x, "branchName", js.undefined)
+    inline def setBranchNameUndefined: Self = StObject.set(x, "branchName", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+    inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
   }
 }

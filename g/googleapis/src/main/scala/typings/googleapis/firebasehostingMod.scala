@@ -40,8 +40,7 @@ object firebasehostingMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Firebasehosting
       ] = js.native
-    @scala.inline
-    def v1beta1_=(
+    inline def v1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object firebasehostingMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object firebasehostingMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def firebasehosting(options: Options): Firebasehosting = ^.asInstanceOf[js.Dynamic].applyDynamic("firebasehosting")(options.asInstanceOf[js.Any]).asInstanceOf[Firebasehosting]
+  inline def firebasehosting(options: Options): Firebasehosting = ^.asInstanceOf[js.Dynamic].applyDynamic("firebasehosting")(options.asInstanceOf[js.Any]).asInstanceOf[Firebasehosting]
   
-  @scala.inline
-  def firebasehosting_v1beta1(version: v1beta1): Firebasehosting = ^.asInstanceOf[js.Dynamic].applyDynamic("firebasehosting")(version.asInstanceOf[js.Any]).asInstanceOf[Firebasehosting]
+  inline def firebasehosting_v1beta1(version: v1beta1): Firebasehosting = ^.asInstanceOf[js.Dynamic].applyDynamic("firebasehosting")(version.asInstanceOf[js.Any]).asInstanceOf[Firebasehosting]
 }

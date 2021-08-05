@@ -13,22 +13,17 @@ trait `163` extends StObject {
 }
 object `163` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[AddCompilationCacheRequest], returnType: Unit): `163` = {
+  inline def apply(paramsType: js.Array[AddCompilationCacheRequest], returnType: Unit): `163` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`163`]
   }
   
-  @scala.inline
-  implicit class `163MutableBuilder`[Self <: `163`] (val x: Self) extends AnyVal {
+  extension [Self <: `163`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[AddCompilationCacheRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[AddCompilationCacheRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: AddCompilationCacheRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: AddCompilationCacheRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

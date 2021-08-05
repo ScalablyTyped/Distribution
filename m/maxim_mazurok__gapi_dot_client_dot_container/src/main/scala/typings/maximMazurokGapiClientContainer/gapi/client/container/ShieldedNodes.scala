@@ -11,19 +11,15 @@ trait ShieldedNodes extends StObject {
 }
 object ShieldedNodes {
   
-  @scala.inline
-  def apply(): ShieldedNodes = {
+  inline def apply(): ShieldedNodes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShieldedNodes]
   }
   
-  @scala.inline
-  implicit class ShieldedNodesMutableBuilder[Self <: ShieldedNodes] (val x: Self) extends AnyVal {
+  extension [Self <: ShieldedNodes](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

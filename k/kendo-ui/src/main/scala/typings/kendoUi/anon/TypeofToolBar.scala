@@ -15,19 +15,15 @@ trait TypeofToolBar extends StObject {
 }
 object TypeofToolBar {
   
-  @scala.inline
-  def apply(extend: js.Object => ToolBar, fn: ToolBar): TypeofToolBar = {
+  inline def apply(extend: js.Object => ToolBar, fn: ToolBar): TypeofToolBar = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofToolBar]
   }
   
-  @scala.inline
-  implicit class TypeofToolBarMutableBuilder[Self <: TypeofToolBar] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofToolBar](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => ToolBar): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => ToolBar): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: ToolBar): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: ToolBar): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

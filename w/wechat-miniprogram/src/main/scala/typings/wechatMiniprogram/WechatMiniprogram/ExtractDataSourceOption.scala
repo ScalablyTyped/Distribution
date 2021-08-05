@@ -11,16 +11,13 @@ trait ExtractDataSourceOption extends StObject {
 }
 object ExtractDataSourceOption {
   
-  @scala.inline
-  def apply(source: String): ExtractDataSourceOption = {
+  inline def apply(source: String): ExtractDataSourceOption = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtractDataSourceOption]
   }
   
-  @scala.inline
-  implicit class ExtractDataSourceOptionMutableBuilder[Self <: ExtractDataSourceOption] (val x: Self) extends AnyVal {
+  extension [Self <: ExtractDataSourceOption](x: Self) {
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

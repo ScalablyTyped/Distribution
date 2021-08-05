@@ -16,7 +16,7 @@ object bearerSecurityMod {
     def this(token: String) = this()
     def this(token: String, defaults: js.Any) = this()
     
-    var _token: js.Any = js.native
+    /* private */ var _token: js.Any = js.native
     
     @JSName("addHeaders")
     def addHeaders_MBearerSecurity(headers: IHeaders): Unit = js.native
@@ -24,7 +24,7 @@ object bearerSecurityMod {
     @JSName("addOptions")
     def addOptions_MBearerSecurity(options: js.Any): Unit = js.native
     
-    var defaults: js.Any = js.native
+    /* private */ var defaults: js.Any = js.native
     
     @JSName("toXML")
     def toXML_MBearerSecurity(): String = js.native

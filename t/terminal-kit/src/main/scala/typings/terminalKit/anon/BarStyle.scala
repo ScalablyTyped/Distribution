@@ -13,25 +13,19 @@ trait BarStyle extends StObject {
 }
 object BarStyle {
   
-  @scala.inline
-  def apply(): BarStyle = {
+  inline def apply(): BarStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BarStyle]
   }
   
-  @scala.inline
-  implicit class BarStyleMutableBuilder[Self <: BarStyle] (val x: Self) extends AnyVal {
+  extension [Self <: BarStyle](x: Self) {
     
-    @scala.inline
-    def setBarStyle(value: CTerminal): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
+    inline def setBarStyle(value: CTerminal): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
+    inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
     
-    @scala.inline
-    def setInnerSize(value: Double): Self = StObject.set(x, "innerSize", value.asInstanceOf[js.Any])
+    inline def setInnerSize(value: Double): Self = StObject.set(x, "innerSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerSizeUndefined: Self = StObject.set(x, "innerSize", js.undefined)
+    inline def setInnerSizeUndefined: Self = StObject.set(x, "innerSize", js.undefined)
   }
 }

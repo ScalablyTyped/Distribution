@@ -12,16 +12,13 @@ trait TextTrackMenuItemOptions
 }
 object TextTrackMenuItemOptions {
   
-  @scala.inline
-  def apply(track: TextTrack): TextTrackMenuItemOptions = {
+  inline def apply(track: TextTrack): TextTrackMenuItemOptions = {
     val __obj = js.Dynamic.literal(track = track.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextTrackMenuItemOptions]
   }
   
-  @scala.inline
-  implicit class TextTrackMenuItemOptionsMutableBuilder[Self <: TextTrackMenuItemOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextTrackMenuItemOptions](x: Self) {
     
-    @scala.inline
-    def setTrack(value: TextTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: TextTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
   }
 }

@@ -35,44 +35,32 @@ object anon {
   }
   object Alert {
     
-    @scala.inline
-    def apply(): Alert = {
+    inline def apply(): Alert = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Alert]
     }
     
-    @scala.inline
-    implicit class AlertMutableBuilder[Self <: Alert] (val x: Self) extends AnyVal {
+    extension [Self <: Alert](x: Self) {
       
-      @scala.inline
-      def setAlert(value: Boolean): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+      inline def setAlert(value: Boolean): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
+      inline def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
       
-      @scala.inline
-      def setEdge(value: Double): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+      inline def setEdge(value: Double): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
+      inline def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setPullUpDown(value: Double): Self = StObject.set(x, "pullUpDown", value.asInstanceOf[js.Any])
+      inline def setPullUpDown(value: Double): Self = StObject.set(x, "pullUpDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullUpDownUndefined: Self = StObject.set(x, "pullUpDown", js.undefined)
+      inline def setPullUpDownUndefined: Self = StObject.set(x, "pullUpDown", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -86,17 +74,14 @@ object anon {
   }
   object Bits {
     
-    @scala.inline
-    def apply(bits: Double): Bits = {
+    inline def apply(bits: Double): Bits = {
       val __obj = js.Dynamic.literal(bits = bits.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bits]
     }
     
-    @scala.inline
-    implicit class BitsMutableBuilder[Self <: Bits] (val x: Self) extends AnyVal {
+    extension [Self <: Bits](x: Self) {
       
-      @scala.inline
-      def setBits(value: Double): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
+      inline def setBits(value: Double): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
     }
   }
 }

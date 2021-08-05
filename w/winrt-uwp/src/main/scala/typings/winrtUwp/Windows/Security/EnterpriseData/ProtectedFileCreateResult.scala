@@ -20,22 +20,17 @@ trait ProtectedFileCreateResult extends StObject {
 }
 object ProtectedFileCreateResult {
   
-  @scala.inline
-  def apply(file: StorageFile, protectionInfo: FileProtectionInfo, stream: IRandomAccessStream): ProtectedFileCreateResult = {
+  inline def apply(file: StorageFile, protectionInfo: FileProtectionInfo, stream: IRandomAccessStream): ProtectedFileCreateResult = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], protectionInfo = protectionInfo.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtectedFileCreateResult]
   }
   
-  @scala.inline
-  implicit class ProtectedFileCreateResultMutableBuilder[Self <: ProtectedFileCreateResult] (val x: Self) extends AnyVal {
+  extension [Self <: ProtectedFileCreateResult](x: Self) {
     
-    @scala.inline
-    def setFile(value: StorageFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: StorageFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectionInfo(value: FileProtectionInfo): Self = StObject.set(x, "protectionInfo", value.asInstanceOf[js.Any])
+    inline def setProtectionInfo(value: FileProtectionInfo): Self = StObject.set(x, "protectionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStream(value: IRandomAccessStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: IRandomAccessStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }
 }

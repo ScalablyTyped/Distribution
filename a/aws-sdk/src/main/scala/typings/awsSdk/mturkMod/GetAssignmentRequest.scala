@@ -13,16 +13,13 @@ trait GetAssignmentRequest extends StObject {
 }
 object GetAssignmentRequest {
   
-  @scala.inline
-  def apply(AssignmentId: EntityId): GetAssignmentRequest = {
+  inline def apply(AssignmentId: EntityId): GetAssignmentRequest = {
     val __obj = js.Dynamic.literal(AssignmentId = AssignmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAssignmentRequest]
   }
   
-  @scala.inline
-  implicit class GetAssignmentRequestMutableBuilder[Self <: GetAssignmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAssignmentRequest](x: Self) {
     
-    @scala.inline
-    def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
+    inline def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
   }
 }

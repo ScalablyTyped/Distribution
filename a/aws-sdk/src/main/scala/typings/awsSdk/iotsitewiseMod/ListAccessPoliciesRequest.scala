@@ -43,55 +43,39 @@ trait ListAccessPoliciesRequest extends StObject {
 }
 object ListAccessPoliciesRequest {
   
-  @scala.inline
-  def apply(): ListAccessPoliciesRequest = {
+  inline def apply(): ListAccessPoliciesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAccessPoliciesRequest]
   }
   
-  @scala.inline
-  implicit class ListAccessPoliciesRequestMutableBuilder[Self <: ListAccessPoliciesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAccessPoliciesRequest](x: Self) {
     
-    @scala.inline
-    def setIamArn(value: ARN): Self = StObject.set(x, "iamArn", value.asInstanceOf[js.Any])
+    inline def setIamArn(value: ARN): Self = StObject.set(x, "iamArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamArnUndefined: Self = StObject.set(x, "iamArn", js.undefined)
+    inline def setIamArnUndefined: Self = StObject.set(x, "iamArn", js.undefined)
     
-    @scala.inline
-    def setIdentityId(value: IdentityId): Self = StObject.set(x, "identityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "identityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityIdUndefined: Self = StObject.set(x, "identityId", js.undefined)
+    inline def setIdentityIdUndefined: Self = StObject.set(x, "identityId", js.undefined)
     
-    @scala.inline
-    def setIdentityType(value: IdentityType): Self = StObject.set(x, "identityType", value.asInstanceOf[js.Any])
+    inline def setIdentityType(value: IdentityType): Self = StObject.set(x, "identityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityTypeUndefined: Self = StObject.set(x, "identityType", js.undefined)
+    inline def setIdentityTypeUndefined: Self = StObject.set(x, "identityType", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: ID): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ID): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

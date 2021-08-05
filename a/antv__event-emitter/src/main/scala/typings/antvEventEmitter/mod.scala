@@ -16,7 +16,7 @@ object mod {
   @js.native
   trait EventEmitter extends StObject {
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
     /**
       * 触发一个事件
@@ -62,20 +62,16 @@ object mod {
   }
   object EventType {
     
-    @scala.inline
-    def apply(callback: js.Function, once: Boolean): EventType = {
+    inline def apply(callback: js.Function, once: Boolean): EventType = {
       val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], once = once.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventType]
     }
     
-    @scala.inline
-    implicit class EventTypeMutableBuilder[Self <: EventType] (val x: Self) extends AnyVal {
+    extension [Self <: EventType](x: Self) {
       
-      @scala.inline
-      def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+      inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     }
   }
 }

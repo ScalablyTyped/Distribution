@@ -13,20 +13,16 @@ object anon {
   }
   object OnSSR {
     
-    @scala.inline
-    def apply(): OnSSR = {
+    inline def apply(): OnSSR = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnSSR]
     }
     
-    @scala.inline
-    implicit class OnSSRMutableBuilder[Self <: OnSSR] (val x: Self) extends AnyVal {
+    extension [Self <: OnSSR](x: Self) {
       
-      @scala.inline
-      def setOnSSR(value: ReactChild): Self = StObject.set(x, "onSSR", value.asInstanceOf[js.Any])
+      inline def setOnSSR(value: ReactChild): Self = StObject.set(x, "onSSR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnSSRUndefined: Self = StObject.set(x, "onSSR", js.undefined)
+      inline def setOnSSRUndefined: Self = StObject.set(x, "onSSR", js.undefined)
     }
   }
 }

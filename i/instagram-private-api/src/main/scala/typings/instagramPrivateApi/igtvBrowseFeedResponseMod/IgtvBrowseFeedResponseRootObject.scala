@@ -28,8 +28,7 @@ trait IgtvBrowseFeedResponseRootObject extends StObject {
 }
 object IgtvBrowseFeedResponseRootObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     badging: IgtvBrowseFeedResponseBadging,
     banner_token: String,
     browse_items: js.Array[IgtvBrowseFeedResponseBrowseItemsItem],
@@ -45,43 +44,30 @@ object IgtvBrowseFeedResponseRootObject {
     __obj.asInstanceOf[IgtvBrowseFeedResponseRootObject]
   }
   
-  @scala.inline
-  implicit class IgtvBrowseFeedResponseRootObjectMutableBuilder[Self <: IgtvBrowseFeedResponseRootObject] (val x: Self) extends AnyVal {
+  extension [Self <: IgtvBrowseFeedResponseRootObject](x: Self) {
     
-    @scala.inline
-    def setBadging(value: IgtvBrowseFeedResponseBadging): Self = StObject.set(x, "badging", value.asInstanceOf[js.Any])
+    inline def setBadging(value: IgtvBrowseFeedResponseBadging): Self = StObject.set(x, "badging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBanner_token(value: String): Self = StObject.set(x, "banner_token", value.asInstanceOf[js.Any])
+    inline def setBanner_token(value: String): Self = StObject.set(x, "banner_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowse_items(value: js.Array[IgtvBrowseFeedResponseBrowseItemsItem]): Self = StObject.set(x, "browse_items", value.asInstanceOf[js.Any])
+    inline def setBrowse_items(value: js.Array[IgtvBrowseFeedResponseBrowseItemsItem]): Self = StObject.set(x, "browse_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowse_itemsVarargs(value: IgtvBrowseFeedResponseBrowseItemsItem*): Self = StObject.set(x, "browse_items", js.Array(value :_*))
+    inline def setBrowse_itemsVarargs(value: IgtvBrowseFeedResponseBrowseItemsItem*): Self = StObject.set(x, "browse_items", js.Array(value :_*))
     
-    @scala.inline
-    def setChannels(value: js.Array[IgtvBrowseFeedResponseChannelsItem]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: js.Array[IgtvBrowseFeedResponseChannelsItem]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsVarargs(value: IgtvBrowseFeedResponseChannelsItem*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: IgtvBrowseFeedResponseChannelsItem*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
-    @scala.inline
-    def setComposer(value: IgtvBrowseFeedResponseComposer): Self = StObject.set(x, "composer", value.asInstanceOf[js.Any])
+    inline def setComposer(value: IgtvBrowseFeedResponseComposer): Self = StObject.set(x, "composer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax_id(value: String): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
+    inline def setMax_id(value: String): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
+    inline def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMy_channel(value: IgtvBrowseFeedResponseMyChannel): Self = StObject.set(x, "my_channel", value.asInstanceOf[js.Any])
+    inline def setMy_channel(value: IgtvBrowseFeedResponseMyChannel): Self = StObject.set(x, "my_channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeen_state(value: IgtvBrowseFeedResponseSeenState): Self = StObject.set(x, "seen_state", value.asInstanceOf[js.Any])
+    inline def setSeen_state(value: IgtvBrowseFeedResponseSeenState): Self = StObject.set(x, "seen_state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

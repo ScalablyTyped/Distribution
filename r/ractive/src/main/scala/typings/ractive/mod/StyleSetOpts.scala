@@ -14,19 +14,15 @@ trait StyleSetOpts
 }
 object StyleSetOpts {
   
-  @scala.inline
-  def apply(): StyleSetOpts = {
+  inline def apply(): StyleSetOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StyleSetOpts]
   }
   
-  @scala.inline
-  implicit class StyleSetOptsMutableBuilder[Self <: StyleSetOpts] (val x: Self) extends AnyVal {
+  extension [Self <: StyleSetOpts](x: Self) {
     
-    @scala.inline
-    def setApply(value: Boolean): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
+    inline def setApply(value: Boolean): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
+    inline def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
   }
 }

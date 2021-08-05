@@ -18,25 +18,19 @@ trait DeleteRealtimeEndpointOutput extends StObject {
 }
 object DeleteRealtimeEndpointOutput {
   
-  @scala.inline
-  def apply(): DeleteRealtimeEndpointOutput = {
+  inline def apply(): DeleteRealtimeEndpointOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteRealtimeEndpointOutput]
   }
   
-  @scala.inline
-  implicit class DeleteRealtimeEndpointOutputMutableBuilder[Self <: DeleteRealtimeEndpointOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRealtimeEndpointOutput](x: Self) {
     
-    @scala.inline
-    def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
+    inline def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMLModelIdUndefined: Self = StObject.set(x, "MLModelId", js.undefined)
+    inline def setMLModelIdUndefined: Self = StObject.set(x, "MLModelId", js.undefined)
     
-    @scala.inline
-    def setRealtimeEndpointInfo(value: RealtimeEndpointInfo): Self = StObject.set(x, "RealtimeEndpointInfo", value.asInstanceOf[js.Any])
+    inline def setRealtimeEndpointInfo(value: RealtimeEndpointInfo): Self = StObject.set(x, "RealtimeEndpointInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealtimeEndpointInfoUndefined: Self = StObject.set(x, "RealtimeEndpointInfo", js.undefined)
+    inline def setRealtimeEndpointInfoUndefined: Self = StObject.set(x, "RealtimeEndpointInfo", js.undefined)
   }
 }

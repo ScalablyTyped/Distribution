@@ -20,20 +20,16 @@ object typesTagMod {
   }
   object Tag {
     
-    @scala.inline
-    def apply(TagKey: String, TagValue: String): Tag = {
+    inline def apply(TagKey: String, TagValue: String): Tag = {
       val __obj = js.Dynamic.literal(TagKey = TagKey.asInstanceOf[js.Any], TagValue = TagValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tag]
     }
     
-    @scala.inline
-    implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+    extension [Self <: Tag](x: Self) {
       
-      @scala.inline
-      def setTagKey(value: String): Self = StObject.set(x, "TagKey", value.asInstanceOf[js.Any])
+      inline def setTagKey(value: String): Self = StObject.set(x, "TagKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagValue(value: String): Self = StObject.set(x, "TagValue", value.asInstanceOf[js.Any])
+      inline def setTagValue(value: String): Self = StObject.set(x, "TagValue", value.asInstanceOf[js.Any])
     }
   }
   

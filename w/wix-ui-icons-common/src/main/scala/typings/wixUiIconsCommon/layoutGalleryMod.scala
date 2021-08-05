@@ -22,20 +22,16 @@ object layoutGalleryMod extends Shortcut {
   }
   object LayoutGalleryProps {
     
-    @scala.inline
-    def apply(): LayoutGalleryProps = {
+    inline def apply(): LayoutGalleryProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutGalleryProps]
     }
     
-    @scala.inline
-    implicit class LayoutGalleryPropsMutableBuilder[Self <: LayoutGalleryProps] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutGalleryProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -25,29 +25,22 @@ trait MidiProgramChangeMessage extends StObject {
 }
 object MidiProgramChangeMessage {
   
-  @scala.inline
-  def apply(channel: Double, program: Double, rawData: IBuffer, timestamp: Double, `type`: MidiMessageType): MidiProgramChangeMessage = {
+  inline def apply(channel: Double, program: Double, rawData: IBuffer, timestamp: Double, `type`: MidiMessageType): MidiProgramChangeMessage = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any], rawData = rawData.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MidiProgramChangeMessage]
   }
   
-  @scala.inline
-  implicit class MidiProgramChangeMessageMutableBuilder[Self <: MidiProgramChangeMessage] (val x: Self) extends AnyVal {
+  extension [Self <: MidiProgramChangeMessage](x: Self) {
     
-    @scala.inline
-    def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgram(value: Double): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+    inline def setProgram(value: Double): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+    inline def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MidiMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MidiMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

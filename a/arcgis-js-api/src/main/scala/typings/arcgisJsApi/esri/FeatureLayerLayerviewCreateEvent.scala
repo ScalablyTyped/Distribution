@@ -12,19 +12,15 @@ trait FeatureLayerLayerviewCreateEvent extends StObject {
 }
 object FeatureLayerLayerviewCreateEvent {
   
-  @scala.inline
-  def apply(layerView: LayerView, view: View): FeatureLayerLayerviewCreateEvent = {
+  inline def apply(layerView: LayerView, view: View): FeatureLayerLayerviewCreateEvent = {
     val __obj = js.Dynamic.literal(layerView = layerView.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerLayerviewCreateEvent]
   }
   
-  @scala.inline
-  implicit class FeatureLayerLayerviewCreateEventMutableBuilder[Self <: FeatureLayerLayerviewCreateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureLayerLayerviewCreateEvent](x: Self) {
     
-    @scala.inline
-    def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
+    inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

@@ -16,8 +16,7 @@ trait CastExpression
 }
 object CastExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -46,16 +45,12 @@ object CastExpression {
     __obj.asInstanceOf[CastExpression]
   }
   
-  @scala.inline
-  implicit class CastExpressionMutableBuilder[Self <: CastExpression] (val x: Self) extends AnyVal {
+  extension [Self <: CastExpression](x: Self) {
     
-    @scala.inline
-    def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (CastExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (CastExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setType(value: AST): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AST): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

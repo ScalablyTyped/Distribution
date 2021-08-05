@@ -22,43 +22,31 @@ trait PasswordlessVerifyOptions
 }
 object PasswordlessVerifyOptions {
   
-  @scala.inline
-  def apply(connection: String, verificationCode: String): PasswordlessVerifyOptions = {
+  inline def apply(connection: String, verificationCode: String): PasswordlessVerifyOptions = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], verificationCode = verificationCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordlessVerifyOptions]
   }
   
-  @scala.inline
-  implicit class PasswordlessVerifyOptionsMutableBuilder[Self <: PasswordlessVerifyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PasswordlessVerifyOptions](x: Self) {
     
-    @scala.inline
-    def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
+    inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
-    @scala.inline
-    def setResponseMode(value: String): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
+    inline def setResponseMode(value: String): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
+    inline def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
     
-    @scala.inline
-    def setSend(value: String): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
+    inline def setSend(value: String): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
+    inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
     
-    @scala.inline
-    def setVerificationCode(value: String): Self = StObject.set(x, "verificationCode", value.asInstanceOf[js.Any])
+    inline def setVerificationCode(value: String): Self = StObject.set(x, "verificationCode", value.asInstanceOf[js.Any])
   }
 }

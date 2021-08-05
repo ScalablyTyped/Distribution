@@ -20,8 +20,7 @@ trait OperationLoader extends StObject {
 }
 object OperationLoader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: js.Any => js.UndefOr[NormalizationSplitOperation | Null],
     load: js.Any => js.Promise[js.UndefOr[NormalizationSplitOperation | Null]]
   ): OperationLoader = {
@@ -29,13 +28,10 @@ object OperationLoader {
     __obj.asInstanceOf[OperationLoader]
   }
   
-  @scala.inline
-  implicit class OperationLoaderMutableBuilder[Self <: OperationLoader] (val x: Self) extends AnyVal {
+  extension [Self <: OperationLoader](x: Self) {
     
-    @scala.inline
-    def setGet(value: js.Any => js.UndefOr[NormalizationSplitOperation | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: js.Any => js.UndefOr[NormalizationSplitOperation | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoad(value: js.Any => js.Promise[js.UndefOr[NormalizationSplitOperation | Null]]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: js.Any => js.Promise[js.UndefOr[NormalizationSplitOperation | Null]]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
   }
 }

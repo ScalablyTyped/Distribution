@@ -12,25 +12,19 @@ trait CardImageStyle extends StObject {
 }
 object CardImageStyle {
   
-  @scala.inline
-  def apply(): CardImageStyle = {
+  inline def apply(): CardImageStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CardImageStyle]
   }
   
-  @scala.inline
-  implicit class CardImageStyleMutableBuilder[Self <: CardImageStyle] (val x: Self) extends AnyVal {
+  extension [Self <: CardImageStyle](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setResizeMode(value: String): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
+    inline def setResizeMode(value: String): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
+    inline def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
   }
 }

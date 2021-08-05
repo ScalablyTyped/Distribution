@@ -18,19 +18,15 @@ trait IBitmapFontDataInfo extends StObject {
 }
 object IBitmapFontDataInfo {
   
-  @scala.inline
-  def apply(face: String, size: Double): IBitmapFontDataInfo = {
+  inline def apply(face: String, size: Double): IBitmapFontDataInfo = {
     val __obj = js.Dynamic.literal(face = face.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBitmapFontDataInfo]
   }
   
-  @scala.inline
-  implicit class IBitmapFontDataInfoMutableBuilder[Self <: IBitmapFontDataInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IBitmapFontDataInfo](x: Self) {
     
-    @scala.inline
-    def setFace(value: String): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
+    inline def setFace(value: String): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

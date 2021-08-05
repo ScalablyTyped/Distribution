@@ -18,8 +18,7 @@ object invariantMod {
   }
   object Invariant {
     
-    @scala.inline
-    def apply[F](
+    inline def apply[F](
       URI: F,
       imap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Any
     ): Invariant[F] = {
@@ -27,16 +26,13 @@ object invariantMod {
       __obj.asInstanceOf[Invariant[F]]
     }
     
-    @scala.inline
-    implicit class InvariantMutableBuilder[Self <: Invariant[?], F] (val x: Self & Invariant[F]) extends AnyVal {
+    extension [Self <: Invariant[?], F](x: Self & Invariant[F]) {
       
-      @scala.inline
-      def setImap(
+      inline def setImap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Any
       ): Self = StObject.set(x, "imap", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,8 +48,7 @@ object invariantMod {
   }
   object Invariant1 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       URI: F,
       imap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any, js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Any
     ): Invariant1[F] = {
@@ -61,16 +56,13 @@ object invariantMod {
       __obj.asInstanceOf[Invariant1[F]]
     }
     
-    @scala.inline
-    implicit class Invariant1MutableBuilder[Self <: Invariant1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & Invariant1[F]) extends AnyVal {
+    extension [Self <: Invariant1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & Invariant1[F]) {
       
-      @scala.inline
-      def setImap(
+      inline def setImap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any, js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Any
       ): Self = StObject.set(x, "imap", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,8 +78,7 @@ object invariantMod {
   }
   object Invariant2 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       URI: F,
       imap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Any
     ): Invariant2[F] = {
@@ -95,16 +86,13 @@ object invariantMod {
       __obj.asInstanceOf[Invariant2[F]]
     }
     
-    @scala.inline
-    implicit class Invariant2MutableBuilder[Self <: Invariant2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & Invariant2[F]) extends AnyVal {
+    extension [Self <: Invariant2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & Invariant2[F]) {
       
-      @scala.inline
-      def setImap(
+      inline def setImap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Any
       ): Self = StObject.set(x, "imap", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,8 +110,7 @@ object invariantMod {
   }
   object Invariant2C {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       URI: F,
       _E: E,
       imap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Any
@@ -132,19 +119,15 @@ object invariantMod {
       __obj.asInstanceOf[Invariant2C[F, E]]
     }
     
-    @scala.inline
-    implicit class Invariant2CMutableBuilder[Self <: Invariant2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (Invariant2C[F, E])) extends AnyVal {
+    extension [Self <: Invariant2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (Invariant2C[F, E])) {
       
-      @scala.inline
-      def setImap(
+      inline def setImap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Any
       ): Self = StObject.set(x, "imap", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_E(value: E): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
+      inline def set_E(value: E): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
     }
   }
   
@@ -160,8 +143,7 @@ object invariantMod {
   }
   object Invariant3 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
       URI: F,
       imap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Any
     ): Invariant3[F] = {
@@ -169,16 +151,13 @@ object invariantMod {
       __obj.asInstanceOf[Invariant3[F]]
     }
     
-    @scala.inline
-    implicit class Invariant3MutableBuilder[Self <: Invariant3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & Invariant3[F]) extends AnyVal {
+    extension [Self <: Invariant3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & Invariant3[F]) {
       
-      @scala.inline
-      def setImap(
+      inline def setImap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Any
       ): Self = StObject.set(x, "imap", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,8 +173,7 @@ object invariantMod {
   }
   object Invariant3C {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
       URI: F,
       imap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Any
     ): Invariant3C[F, E] = {
@@ -203,16 +181,13 @@ object invariantMod {
       __obj.asInstanceOf[Invariant3C[F, E]]
     }
     
-    @scala.inline
-    implicit class Invariant3CMutableBuilder[Self <: Invariant3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E] (val x: Self & (Invariant3C[F, E])) extends AnyVal {
+    extension [Self <: Invariant3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](x: Self & (Invariant3C[F, E])) {
       
-      @scala.inline
-      def setImap(
+      inline def setImap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Any
       ): Self = StObject.set(x, "imap", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -228,8 +203,7 @@ object invariantMod {
   }
   object Invariant4 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
       URI: F,
       imap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any, js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Any
     ): Invariant4[F] = {
@@ -237,16 +211,13 @@ object invariantMod {
       __obj.asInstanceOf[Invariant4[F]]
     }
     
-    @scala.inline
-    implicit class Invariant4MutableBuilder[Self <: Invariant4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */] (val x: Self & Invariant4[F]) extends AnyVal {
+    extension [Self <: Invariant4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](x: Self & Invariant4[F]) {
       
-      @scala.inline
-      def setImap(
+      inline def setImap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any, js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Any
       ): Self = StObject.set(x, "imap", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
   }
 }

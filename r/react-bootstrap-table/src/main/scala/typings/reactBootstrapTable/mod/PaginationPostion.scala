@@ -14,12 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PaginationPostion extends StObject
 object PaginationPostion {
   
-  @scala.inline
-  def both: typings.reactBootstrapTable.reactBootstrapTableStrings.both = "both".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.both]
+  inline def both: typings.reactBootstrapTable.reactBootstrapTableStrings.both = "both".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.both]
   
-  @scala.inline
-  def bottom: bottom_ = "bottom".asInstanceOf[bottom_]
+  inline def bottom: bottom_ = "bottom".asInstanceOf[bottom_]
   
-  @scala.inline
-  def top: top_ = "top".asInstanceOf[top_]
+  inline def top: top_ = "top".asInstanceOf[top_]
 }

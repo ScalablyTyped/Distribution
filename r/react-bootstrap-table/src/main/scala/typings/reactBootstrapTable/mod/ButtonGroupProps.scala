@@ -29,8 +29,7 @@ trait ButtonGroupProps extends StObject {
 }
 object ButtonGroupProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleteBtn: ReactElement,
     exportCSVBtn: ReactElement,
     insertBtn: ReactElement,
@@ -40,19 +39,14 @@ object ButtonGroupProps {
     __obj.asInstanceOf[ButtonGroupProps]
   }
   
-  @scala.inline
-  implicit class ButtonGroupPropsMutableBuilder[Self <: ButtonGroupProps] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonGroupProps](x: Self) {
     
-    @scala.inline
-    def setDeleteBtn(value: ReactElement): Self = StObject.set(x, "deleteBtn", value.asInstanceOf[js.Any])
+    inline def setDeleteBtn(value: ReactElement): Self = StObject.set(x, "deleteBtn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportCSVBtn(value: ReactElement): Self = StObject.set(x, "exportCSVBtn", value.asInstanceOf[js.Any])
+    inline def setExportCSVBtn(value: ReactElement): Self = StObject.set(x, "exportCSVBtn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertBtn(value: ReactElement): Self = StObject.set(x, "insertBtn", value.asInstanceOf[js.Any])
+    inline def setInsertBtn(value: ReactElement): Self = StObject.set(x, "insertBtn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSelectedOnlyBtn(value: ReactElement): Self = StObject.set(x, "showSelectedOnlyBtn", value.asInstanceOf[js.Any])
+    inline def setShowSelectedOnlyBtn(value: ReactElement): Self = StObject.set(x, "showSelectedOnlyBtn", value.asInstanceOf[js.Any])
   }
 }

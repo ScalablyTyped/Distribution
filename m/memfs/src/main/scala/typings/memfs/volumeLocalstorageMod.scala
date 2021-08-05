@@ -26,12 +26,9 @@ object volumeLocalstorageMod {
     def setItem(key: String, json: js.Any): Unit = js.native
   }
   
-  @scala.inline
-  def createVolume(namespace: String): Instantiable1[/* args (repeated) */ js.Any, Volume] = ^.asInstanceOf[js.Dynamic].applyDynamic("createVolume")(namespace.asInstanceOf[js.Any]).asInstanceOf[Instantiable1[/* args (repeated) */ js.Any, Volume]]
-  @scala.inline
-  def createVolume(namespace: String, LS: js.Object): Instantiable1[/* args (repeated) */ js.Any, Volume] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVolume")(namespace.asInstanceOf[js.Any], LS.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args (repeated) */ js.Any, Volume]]
-  @scala.inline
-  def createVolume(namespace: String, LS: IStore): Instantiable1[/* args (repeated) */ js.Any, Volume] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVolume")(namespace.asInstanceOf[js.Any], LS.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args (repeated) */ js.Any, Volume]]
+  inline def createVolume(namespace: String): Instantiable1[/* args (repeated) */ js.Any, Volume] = ^.asInstanceOf[js.Dynamic].applyDynamic("createVolume")(namespace.asInstanceOf[js.Any]).asInstanceOf[Instantiable1[/* args (repeated) */ js.Any, Volume]]
+  inline def createVolume(namespace: String, LS: js.Object): Instantiable1[/* args (repeated) */ js.Any, Volume] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVolume")(namespace.asInstanceOf[js.Any], LS.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args (repeated) */ js.Any, Volume]]
+  inline def createVolume(namespace: String, LS: IStore): Instantiable1[/* args (repeated) */ js.Any, Volume] = (^.asInstanceOf[js.Dynamic].applyDynamic("createVolume")(namespace.asInstanceOf[js.Any], LS.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args (repeated) */ js.Any, Volume]]
   
   trait IStore extends StObject {
     
@@ -43,23 +40,18 @@ object volumeLocalstorageMod {
   }
   object IStore {
     
-    @scala.inline
-    def apply(getItem: String => js.Any, removeItem: String => js.Any, setItem: (String, js.Any) => js.Any): IStore = {
+    inline def apply(getItem: String => js.Any, removeItem: String => js.Any, setItem: (String, js.Any) => js.Any): IStore = {
       val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction1(getItem), removeItem = js.Any.fromFunction1(removeItem), setItem = js.Any.fromFunction2(setItem))
       __obj.asInstanceOf[IStore]
     }
     
-    @scala.inline
-    implicit class IStoreMutableBuilder[Self <: IStore] (val x: Self) extends AnyVal {
+    extension [Self <: IStore](x: Self) {
       
-      @scala.inline
-      def setGetItem(value: String => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+      inline def setGetItem(value: String => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveItem(value: String => js.Any): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+      inline def setRemoveItem(value: String => js.Any): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetItem(value: (String, js.Any) => js.Any): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+      inline def setSetItem(value: (String, js.Any) => js.Any): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
     }
   }
 }

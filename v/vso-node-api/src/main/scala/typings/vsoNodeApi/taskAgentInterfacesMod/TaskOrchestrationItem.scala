@@ -10,16 +10,13 @@ trait TaskOrchestrationItem extends StObject {
 }
 object TaskOrchestrationItem {
   
-  @scala.inline
-  def apply(itemType: TaskOrchestrationItemType): TaskOrchestrationItem = {
+  inline def apply(itemType: TaskOrchestrationItemType): TaskOrchestrationItem = {
     val __obj = js.Dynamic.literal(itemType = itemType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskOrchestrationItem]
   }
   
-  @scala.inline
-  implicit class TaskOrchestrationItemMutableBuilder[Self <: TaskOrchestrationItem] (val x: Self) extends AnyVal {
+  extension [Self <: TaskOrchestrationItem](x: Self) {
     
-    @scala.inline
-    def setItemType(value: TaskOrchestrationItemType): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+    inline def setItemType(value: TaskOrchestrationItemType): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
   }
 }

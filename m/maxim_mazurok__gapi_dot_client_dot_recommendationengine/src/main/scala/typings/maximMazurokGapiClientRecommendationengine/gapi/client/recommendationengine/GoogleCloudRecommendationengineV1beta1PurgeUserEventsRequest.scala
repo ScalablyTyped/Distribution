@@ -20,25 +20,19 @@ trait GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest extends StObj
 }
 object GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequestMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
   }
 }

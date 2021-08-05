@@ -13,16 +13,13 @@ trait GetBulkDeploymentStatusRequest extends StObject {
 }
 object GetBulkDeploymentStatusRequest {
   
-  @scala.inline
-  def apply(BulkDeploymentId: string): GetBulkDeploymentStatusRequest = {
+  inline def apply(BulkDeploymentId: string): GetBulkDeploymentStatusRequest = {
     val __obj = js.Dynamic.literal(BulkDeploymentId = BulkDeploymentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBulkDeploymentStatusRequest]
   }
   
-  @scala.inline
-  implicit class GetBulkDeploymentStatusRequestMutableBuilder[Self <: GetBulkDeploymentStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBulkDeploymentStatusRequest](x: Self) {
     
-    @scala.inline
-    def setBulkDeploymentId(value: string): Self = StObject.set(x, "BulkDeploymentId", value.asInstanceOf[js.Any])
+    inline def setBulkDeploymentId(value: string): Self = StObject.set(x, "BulkDeploymentId", value.asInstanceOf[js.Any])
   }
 }

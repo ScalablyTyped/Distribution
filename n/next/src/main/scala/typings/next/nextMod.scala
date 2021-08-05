@@ -11,16 +11,14 @@ object nextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(options: NextServerConstructor): typings.next.nextServerMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[typings.next.nextServerMod.default]
+  inline def default(options: NextServerConstructor): typings.next.nextServerMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[typings.next.nextServerMod.default]
   
   trait NextServerConstructor
     extends StObject
        with ServerConstructor
   object NextServerConstructor {
     
-    @scala.inline
-    def apply(): NextServerConstructor = {
+    inline def apply(): NextServerConstructor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NextServerConstructor]
     }

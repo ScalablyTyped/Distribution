@@ -38,8 +38,7 @@ trait Browser extends StObject {
 }
 object Browser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CHROME_VERSION: Double,
     IE_VERSION: Double,
     IS_ANDROID: Boolean,
@@ -58,58 +57,40 @@ object Browser {
     __obj.asInstanceOf[Browser]
   }
   
-  @scala.inline
-  implicit class BrowserMutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
+  extension [Self <: Browser](x: Self) {
     
-    @scala.inline
-    def setANDROID_VERSION(value: Double): Self = StObject.set(x, "ANDROID_VERSION", value.asInstanceOf[js.Any])
+    inline def setANDROID_VERSION(value: Double): Self = StObject.set(x, "ANDROID_VERSION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setANDROID_VERSIONNull: Self = StObject.set(x, "ANDROID_VERSION", null)
+    inline def setANDROID_VERSIONNull: Self = StObject.set(x, "ANDROID_VERSION", null)
     
-    @scala.inline
-    def setCHROME_VERSION(value: Double): Self = StObject.set(x, "CHROME_VERSION", value.asInstanceOf[js.Any])
+    inline def setCHROME_VERSION(value: Double): Self = StObject.set(x, "CHROME_VERSION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIE_VERSION(value: Double): Self = StObject.set(x, "IE_VERSION", value.asInstanceOf[js.Any])
+    inline def setIE_VERSION(value: Double): Self = StObject.set(x, "IE_VERSION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIOS_VERSION(value: Double): Self = StObject.set(x, "IOS_VERSION", value.asInstanceOf[js.Any])
+    inline def setIOS_VERSION(value: Double): Self = StObject.set(x, "IOS_VERSION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIOS_VERSIONNull: Self = StObject.set(x, "IOS_VERSION", null)
+    inline def setIOS_VERSIONNull: Self = StObject.set(x, "IOS_VERSION", null)
     
-    @scala.inline
-    def setIS_ANDROID(value: Boolean): Self = StObject.set(x, "IS_ANDROID", value.asInstanceOf[js.Any])
+    inline def setIS_ANDROID(value: Boolean): Self = StObject.set(x, "IS_ANDROID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIS_ANY_SAFARI(value: Boolean): Self = StObject.set(x, "IS_ANY_SAFARI", value.asInstanceOf[js.Any])
+    inline def setIS_ANY_SAFARI(value: Boolean): Self = StObject.set(x, "IS_ANY_SAFARI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIS_CHROME(value: Boolean): Self = StObject.set(x, "IS_CHROME", value.asInstanceOf[js.Any])
+    inline def setIS_CHROME(value: Boolean): Self = StObject.set(x, "IS_CHROME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIS_EDGE(value: Boolean): Self = StObject.set(x, "IS_EDGE", value.asInstanceOf[js.Any])
+    inline def setIS_EDGE(value: Boolean): Self = StObject.set(x, "IS_EDGE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIS_IOS(value: Boolean): Self = StObject.set(x, "IS_IOS", value.asInstanceOf[js.Any])
+    inline def setIS_IOS(value: Boolean): Self = StObject.set(x, "IS_IOS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIS_IPAD(value: Boolean): Self = StObject.set(x, "IS_IPAD", value.asInstanceOf[js.Any])
+    inline def setIS_IPAD(value: Boolean): Self = StObject.set(x, "IS_IPAD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIS_IPHONE(value: Boolean): Self = StObject.set(x, "IS_IPHONE", value.asInstanceOf[js.Any])
+    inline def setIS_IPHONE(value: Boolean): Self = StObject.set(x, "IS_IPHONE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIS_IPOD(value: Boolean): Self = StObject.set(x, "IS_IPOD", value.asInstanceOf[js.Any])
+    inline def setIS_IPOD(value: Boolean): Self = StObject.set(x, "IS_IPOD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIS_NATIVE_ANDROID(value: Boolean): Self = StObject.set(x, "IS_NATIVE_ANDROID", value.asInstanceOf[js.Any])
+    inline def setIS_NATIVE_ANDROID(value: Boolean): Self = StObject.set(x, "IS_NATIVE_ANDROID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIS_SAFARI(value: Boolean): Self = StObject.set(x, "IS_SAFARI", value.asInstanceOf[js.Any])
+    inline def setIS_SAFARI(value: Boolean): Self = StObject.set(x, "IS_SAFARI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTOUCH_ENABLED(value: Boolean): Self = StObject.set(x, "TOUCH_ENABLED", value.asInstanceOf[js.Any])
+    inline def setTOUCH_ENABLED(value: Boolean): Self = StObject.set(x, "TOUCH_ENABLED", value.asInstanceOf[js.Any])
   }
 }

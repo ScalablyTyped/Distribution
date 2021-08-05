@@ -17,40 +17,29 @@ trait Atlas extends StObject {
 }
 object Atlas {
   
-  @scala.inline
-  def apply(): Atlas = {
+  inline def apply(): Atlas = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Atlas]
   }
   
-  @scala.inline
-  implicit class AtlasMutableBuilder[Self <: Atlas] (val x: Self) extends AnyVal {
+  extension [Self <: Atlas](x: Self) {
     
-    @scala.inline
-    def setAtlas(value: TextureAtlas): Self = StObject.set(x, "atlas", value.asInstanceOf[js.Any])
+    inline def setAtlas(value: TextureAtlas): Self = StObject.set(x, "atlas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtlasUndefined: Self = StObject.set(x, "atlas", js.undefined)
+    inline def setAtlasUndefined: Self = StObject.set(x, "atlas", js.undefined)
     
-    @scala.inline
-    def setFrameKeys(value: js.Array[String]): Self = StObject.set(x, "frameKeys", value.asInstanceOf[js.Any])
+    inline def setFrameKeys(value: js.Array[String]): Self = StObject.set(x, "frameKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameKeysUndefined: Self = StObject.set(x, "frameKeys", js.undefined)
+    inline def setFrameKeysUndefined: Self = StObject.set(x, "frameKeys", js.undefined)
     
-    @scala.inline
-    def setFrameKeysVarargs(value: String*): Self = StObject.set(x, "frameKeys", js.Array(value :_*))
+    inline def setFrameKeysVarargs(value: String*): Self = StObject.set(x, "frameKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setPixelsPerUnit(value: Double): Self = StObject.set(x, "pixelsPerUnit", value.asInstanceOf[js.Any])
+    inline def setPixelsPerUnit(value: Double): Self = StObject.set(x, "pixelsPerUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelsPerUnitUndefined: Self = StObject.set(x, "pixelsPerUnit", js.undefined)
+    inline def setPixelsPerUnitUndefined: Self = StObject.set(x, "pixelsPerUnit", js.undefined)
     
-    @scala.inline
-    def setRenderMode(value: Double): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
+    inline def setRenderMode(value: Double): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderModeUndefined: Self = StObject.set(x, "renderMode", js.undefined)
+    inline def setRenderModeUndefined: Self = StObject.set(x, "renderMode", js.undefined)
   }
 }

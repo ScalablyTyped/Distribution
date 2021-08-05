@@ -28,25 +28,19 @@ trait DocumentReferenceRelatesTo
 }
 object DocumentReferenceRelatesTo {
   
-  @scala.inline
-  def apply(code: code, target: Reference): DocumentReferenceRelatesTo = {
+  inline def apply(code: code, target: Reference): DocumentReferenceRelatesTo = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentReferenceRelatesTo]
   }
   
-  @scala.inline
-  implicit class DocumentReferenceRelatesToMutableBuilder[Self <: DocumentReferenceRelatesTo] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentReferenceRelatesTo](x: Self) {
     
-    @scala.inline
-    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Reference): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Reference): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
+    inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
+    inline def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
   }
 }

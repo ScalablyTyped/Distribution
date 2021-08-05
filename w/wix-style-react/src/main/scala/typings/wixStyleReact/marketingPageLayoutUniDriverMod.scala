@@ -19,8 +19,7 @@ object marketingPageLayoutUniDriverMod {
   }
   object MarketingPageLayoutUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -32,17 +31,13 @@ object marketingPageLayoutUniDriverMod {
       __obj.asInstanceOf[MarketingPageLayoutUniDriver]
     }
     
-    @scala.inline
-    implicit class MarketingPageLayoutUniDriverMutableBuilder[Self <: MarketingPageLayoutUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: MarketingPageLayoutUniDriver](x: Self) {
       
-      @scala.inline
-      def setHasContent(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasContent", js.Any.fromFunction0(value))
+      inline def setHasContent(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasFooter(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasFooter", js.Any.fromFunction0(value))
+      inline def setHasFooter(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasFooter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasImage(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasImage", js.Any.fromFunction0(value))
+      inline def setHasImage(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasImage", js.Any.fromFunction0(value))
     }
   }
 }

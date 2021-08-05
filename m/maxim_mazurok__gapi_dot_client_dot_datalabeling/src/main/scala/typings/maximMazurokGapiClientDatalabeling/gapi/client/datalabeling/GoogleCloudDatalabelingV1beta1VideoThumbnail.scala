@@ -14,25 +14,19 @@ trait GoogleCloudDatalabelingV1beta1VideoThumbnail extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1VideoThumbnail {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1VideoThumbnail = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1VideoThumbnail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1VideoThumbnail]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1VideoThumbnailMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1VideoThumbnail] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1VideoThumbnail](x: Self) {
     
-    @scala.inline
-    def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+    inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
     
-    @scala.inline
-    def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
+    inline def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
+    inline def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
   }
 }

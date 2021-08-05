@@ -18,19 +18,15 @@ trait RunFilter extends StObject {
 }
 object RunFilter {
   
-  @scala.inline
-  def apply(sourceFilter: String, testCaseFilter: String): RunFilter = {
+  inline def apply(sourceFilter: String, testCaseFilter: String): RunFilter = {
     val __obj = js.Dynamic.literal(sourceFilter = sourceFilter.asInstanceOf[js.Any], testCaseFilter = testCaseFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunFilter]
   }
   
-  @scala.inline
-  implicit class RunFilterMutableBuilder[Self <: RunFilter] (val x: Self) extends AnyVal {
+  extension [Self <: RunFilter](x: Self) {
     
-    @scala.inline
-    def setSourceFilter(value: String): Self = StObject.set(x, "sourceFilter", value.asInstanceOf[js.Any])
+    inline def setSourceFilter(value: String): Self = StObject.set(x, "sourceFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCaseFilter(value: String): Self = StObject.set(x, "testCaseFilter", value.asInstanceOf[js.Any])
+    inline def setTestCaseFilter(value: String): Self = StObject.set(x, "testCaseFilter", value.asInstanceOf[js.Any])
   }
 }

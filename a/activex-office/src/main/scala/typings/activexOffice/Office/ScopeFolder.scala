@@ -14,7 +14,7 @@ trait ScopeFolder extends StObject {
   
   val Name: String
   
-  @JSName("Office.ScopeFolder_typekey")
+  /* private */ @JSName("Office.ScopeFolder_typekey")
   var OfficeDotScopeFolder_typekey: ScopeFolder
   
   val Path: String
@@ -25,8 +25,7 @@ trait ScopeFolder extends StObject {
 }
 object ScopeFolder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddToSearchFolders: () => Unit,
     Application: js.Any,
     Creator: Double,
@@ -40,28 +39,20 @@ object ScopeFolder {
     __obj.asInstanceOf[ScopeFolder]
   }
   
-  @scala.inline
-  implicit class ScopeFolderMutableBuilder[Self <: ScopeFolder] (val x: Self) extends AnyVal {
+  extension [Self <: ScopeFolder](x: Self) {
     
-    @scala.inline
-    def setAddToSearchFolders(value: () => Unit): Self = StObject.set(x, "AddToSearchFolders", js.Any.fromFunction0(value))
+    inline def setAddToSearchFolders(value: () => Unit): Self = StObject.set(x, "AddToSearchFolders", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotScopeFolder_typekey(value: ScopeFolder): Self = StObject.set(x, "Office.ScopeFolder_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotScopeFolder_typekey(value: ScopeFolder): Self = StObject.set(x, "Office.ScopeFolder_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeFolders(value: ScopeFolders): Self = StObject.set(x, "ScopeFolders", value.asInstanceOf[js.Any])
+    inline def setScopeFolders(value: ScopeFolders): Self = StObject.set(x, "ScopeFolders", value.asInstanceOf[js.Any])
   }
 }

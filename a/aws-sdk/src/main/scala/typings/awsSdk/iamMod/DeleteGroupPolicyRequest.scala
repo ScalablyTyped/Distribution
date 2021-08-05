@@ -18,19 +18,15 @@ trait DeleteGroupPolicyRequest extends StObject {
 }
 object DeleteGroupPolicyRequest {
   
-  @scala.inline
-  def apply(GroupName: groupNameType, PolicyName: policyNameType): DeleteGroupPolicyRequest = {
+  inline def apply(GroupName: groupNameType, PolicyName: policyNameType): DeleteGroupPolicyRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGroupPolicyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteGroupPolicyRequestMutableBuilder[Self <: DeleteGroupPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGroupPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyName(value: policyNameType): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: policyNameType): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
   }
 }

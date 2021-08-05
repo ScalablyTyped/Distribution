@@ -35,70 +35,49 @@ trait RouteInfo extends StObject {
 }
 object RouteInfo {
   
-  @scala.inline
-  def apply(): RouteInfo = {
+  inline def apply(): RouteInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteInfo]
   }
   
-  @scala.inline
-  implicit class RouteInfoMutableBuilder[Self <: RouteInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RouteInfo](x: Self) {
     
-    @scala.inline
-    def setDestIpRange(value: String): Self = StObject.set(x, "destIpRange", value.asInstanceOf[js.Any])
+    inline def setDestIpRange(value: String): Self = StObject.set(x, "destIpRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestIpRangeUndefined: Self = StObject.set(x, "destIpRange", js.undefined)
+    inline def setDestIpRangeUndefined: Self = StObject.set(x, "destIpRange", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setInstanceTags(value: js.Array[String]): Self = StObject.set(x, "instanceTags", value.asInstanceOf[js.Any])
+    inline def setInstanceTags(value: js.Array[String]): Self = StObject.set(x, "instanceTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTagsUndefined: Self = StObject.set(x, "instanceTags", js.undefined)
+    inline def setInstanceTagsUndefined: Self = StObject.set(x, "instanceTags", js.undefined)
     
-    @scala.inline
-    def setInstanceTagsVarargs(value: String*): Self = StObject.set(x, "instanceTags", js.Array(value :_*))
+    inline def setInstanceTagsVarargs(value: String*): Self = StObject.set(x, "instanceTags", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
+    inline def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUriUndefined: Self = StObject.set(x, "networkUri", js.undefined)
+    inline def setNetworkUriUndefined: Self = StObject.set(x, "networkUri", js.undefined)
     
-    @scala.inline
-    def setNextHop(value: String): Self = StObject.set(x, "nextHop", value.asInstanceOf[js.Any])
+    inline def setNextHop(value: String): Self = StObject.set(x, "nextHop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextHopType(value: String): Self = StObject.set(x, "nextHopType", value.asInstanceOf[js.Any])
+    inline def setNextHopType(value: String): Self = StObject.set(x, "nextHopType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextHopTypeUndefined: Self = StObject.set(x, "nextHopType", js.undefined)
+    inline def setNextHopTypeUndefined: Self = StObject.set(x, "nextHopType", js.undefined)
     
-    @scala.inline
-    def setNextHopUndefined: Self = StObject.set(x, "nextHop", js.undefined)
+    inline def setNextHopUndefined: Self = StObject.set(x, "nextHop", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setRouteType(value: String): Self = StObject.set(x, "routeType", value.asInstanceOf[js.Any])
+    inline def setRouteType(value: String): Self = StObject.set(x, "routeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteTypeUndefined: Self = StObject.set(x, "routeType", js.undefined)
+    inline def setRouteTypeUndefined: Self = StObject.set(x, "routeType", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

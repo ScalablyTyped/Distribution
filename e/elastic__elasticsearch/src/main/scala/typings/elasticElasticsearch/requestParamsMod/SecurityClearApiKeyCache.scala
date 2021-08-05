@@ -12,19 +12,15 @@ trait SecurityClearApiKeyCache
 }
 object SecurityClearApiKeyCache {
   
-  @scala.inline
-  def apply(ids: String | js.Array[String]): SecurityClearApiKeyCache = {
+  inline def apply(ids: String | js.Array[String]): SecurityClearApiKeyCache = {
     val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityClearApiKeyCache]
   }
   
-  @scala.inline
-  implicit class SecurityClearApiKeyCacheMutableBuilder[Self <: SecurityClearApiKeyCache] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityClearApiKeyCache](x: Self) {
     
-    @scala.inline
-    def setIds(value: String | js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: String | js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
   }
 }

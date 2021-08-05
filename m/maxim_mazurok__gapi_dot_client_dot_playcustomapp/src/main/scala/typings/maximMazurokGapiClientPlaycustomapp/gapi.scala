@@ -19,17 +19,14 @@ object gapi {
       }
       object AccountsResource {
         
-        @scala.inline
-        def apply(customApps: CustomAppsResource): AccountsResource = {
+        inline def apply(customApps: CustomAppsResource): AccountsResource = {
           val __obj = js.Dynamic.literal(customApps = customApps.asInstanceOf[js.Any])
           __obj.asInstanceOf[AccountsResource]
         }
         
-        @scala.inline
-        implicit class AccountsResourceMutableBuilder[Self <: AccountsResource] (val x: Self) extends AnyVal {
+        extension [Self <: AccountsResource](x: Self) {
           
-          @scala.inline
-          def setCustomApps(value: CustomAppsResource): Self = StObject.set(x, "customApps", value.asInstanceOf[js.Any])
+          inline def setCustomApps(value: CustomAppsResource): Self = StObject.set(x, "customApps", value.asInstanceOf[js.Any])
         }
       }
       
@@ -46,32 +43,24 @@ object gapi {
       }
       object CustomApp {
         
-        @scala.inline
-        def apply(): CustomApp = {
+        inline def apply(): CustomApp = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[CustomApp]
         }
         
-        @scala.inline
-        implicit class CustomAppMutableBuilder[Self <: CustomApp] (val x: Self) extends AnyVal {
+        extension [Self <: CustomApp](x: Self) {
           
-          @scala.inline
-          def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+          inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+          inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
           
-          @scala.inline
-          def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+          inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+          inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+          inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         }
       }
       

@@ -18,22 +18,17 @@ trait LateDataRule extends StObject {
 }
 object LateDataRule {
   
-  @scala.inline
-  def apply(ruleConfiguration: LateDataRuleConfiguration): LateDataRule = {
+  inline def apply(ruleConfiguration: LateDataRuleConfiguration): LateDataRule = {
     val __obj = js.Dynamic.literal(ruleConfiguration = ruleConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[LateDataRule]
   }
   
-  @scala.inline
-  implicit class LateDataRuleMutableBuilder[Self <: LateDataRule] (val x: Self) extends AnyVal {
+  extension [Self <: LateDataRule](x: Self) {
     
-    @scala.inline
-    def setRuleConfiguration(value: LateDataRuleConfiguration): Self = StObject.set(x, "ruleConfiguration", value.asInstanceOf[js.Any])
+    inline def setRuleConfiguration(value: LateDataRuleConfiguration): Self = StObject.set(x, "ruleConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleName(value: LateDataRuleName): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: LateDataRuleName): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleNameUndefined: Self = StObject.set(x, "ruleName", js.undefined)
+    inline def setRuleNameUndefined: Self = StObject.set(x, "ruleName", js.undefined)
   }
 }

@@ -14,31 +14,23 @@ trait DSGenerateOptions extends StObject {
 }
 object DSGenerateOptions {
   
-  @scala.inline
-  def apply(): DSGenerateOptions = {
+  inline def apply(): DSGenerateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DSGenerateOptions]
   }
   
-  @scala.inline
-  implicit class DSGenerateOptionsMutableBuilder[Self <: DSGenerateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DSGenerateOptions](x: Self) {
     
-    @scala.inline
-    def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+    inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+    inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
     
-    @scala.inline
-    def setDecorate(value: (/* result */ String, /* node */ DSNode) => Unit): Self = StObject.set(x, "decorate", js.Any.fromFunction2(value))
+    inline def setDecorate(value: (/* result */ String, /* node */ DSNode) => Unit): Self = StObject.set(x, "decorate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDecorateUndefined: Self = StObject.set(x, "decorate", js.undefined)
+    inline def setDecorateUndefined: Self = StObject.set(x, "decorate", js.undefined)
     
-    @scala.inline
-    def setForceBraces(value: Boolean): Self = StObject.set(x, "forceBraces", value.asInstanceOf[js.Any])
+    inline def setForceBraces(value: Boolean): Self = StObject.set(x, "forceBraces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceBracesUndefined: Self = StObject.set(x, "forceBraces", js.undefined)
+    inline def setForceBracesUndefined: Self = StObject.set(x, "forceBraces", js.undefined)
   }
 }

@@ -16,13 +16,12 @@ trait MappedDataFields extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.MappedDataFields_typekey")
+  /* private */ @JSName("Word.MappedDataFields_typekey")
   var WordDotMappedDataFields_typekey: MappedDataFields
 }
 object MappedDataFields {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Creator: Double,
@@ -35,25 +34,18 @@ object MappedDataFields {
     __obj.asInstanceOf[MappedDataFields]
   }
   
-  @scala.inline
-  implicit class MappedDataFieldsMutableBuilder[Self <: MappedDataFields] (val x: Self) extends AnyVal {
+  extension [Self <: MappedDataFields](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: WdMappedDataFields => MappedDataField): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: WdMappedDataFields => MappedDataField): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotMappedDataFields_typekey(value: MappedDataFields): Self = StObject.set(x, "Word.MappedDataFields_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotMappedDataFields_typekey(value: MappedDataFields): Self = StObject.set(x, "Word.MappedDataFields_typekey", value.asInstanceOf[js.Any])
   }
 }

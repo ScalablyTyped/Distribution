@@ -18,19 +18,15 @@ trait ArtifactDetails extends StObject {
 }
 object ArtifactDetails {
   
-  @scala.inline
-  def apply(maximumCount: MaximumArtifactCount, minimumCount: MinimumArtifactCount): ArtifactDetails = {
+  inline def apply(maximumCount: MaximumArtifactCount, minimumCount: MinimumArtifactCount): ArtifactDetails = {
     val __obj = js.Dynamic.literal(maximumCount = maximumCount.asInstanceOf[js.Any], minimumCount = minimumCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactDetails]
   }
   
-  @scala.inline
-  implicit class ArtifactDetailsMutableBuilder[Self <: ArtifactDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactDetails](x: Self) {
     
-    @scala.inline
-    def setMaximumCount(value: MaximumArtifactCount): Self = StObject.set(x, "maximumCount", value.asInstanceOf[js.Any])
+    inline def setMaximumCount(value: MaximumArtifactCount): Self = StObject.set(x, "maximumCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumCount(value: MinimumArtifactCount): Self = StObject.set(x, "minimumCount", value.asInstanceOf[js.Any])
+    inline def setMinimumCount(value: MinimumArtifactCount): Self = StObject.set(x, "minimumCount", value.asInstanceOf[js.Any])
   }
 }

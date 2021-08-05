@@ -10,16 +10,13 @@ trait LoadNetworkResourceResponse extends StObject {
 }
 object LoadNetworkResourceResponse {
   
-  @scala.inline
-  def apply(resource: LoadNetworkResourcePageResult): LoadNetworkResourceResponse = {
+  inline def apply(resource: LoadNetworkResourcePageResult): LoadNetworkResourceResponse = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadNetworkResourceResponse]
   }
   
-  @scala.inline
-  implicit class LoadNetworkResourceResponseMutableBuilder[Self <: LoadNetworkResourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LoadNetworkResourceResponse](x: Self) {
     
-    @scala.inline
-    def setResource(value: LoadNetworkResourcePageResult): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: LoadNetworkResourcePageResult): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

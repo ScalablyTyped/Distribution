@@ -33,8 +33,7 @@ object tableContextMod extends Shortcut {
   }
   object TableContextProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       direction: ltr | rtl,
       fixedInfoList: js.Array[FixedInfo],
       getComponent: (/* path */ js.Array[String], /* defaultComponent */ js.UndefOr[CustomizeComponent]) => CustomizeComponent,
@@ -46,31 +45,23 @@ object tableContextMod extends Shortcut {
       __obj.asInstanceOf[TableContextProps]
     }
     
-    @scala.inline
-    implicit class TableContextPropsMutableBuilder[Self <: TableContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableContextProps](x: Self) {
       
-      @scala.inline
-      def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedInfoList(value: js.Array[FixedInfo]): Self = StObject.set(x, "fixedInfoList", value.asInstanceOf[js.Any])
+      inline def setFixedInfoList(value: js.Array[FixedInfo]): Self = StObject.set(x, "fixedInfoList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedInfoListVarargs(value: FixedInfo*): Self = StObject.set(x, "fixedInfoList", js.Array(value :_*))
+      inline def setFixedInfoListVarargs(value: FixedInfo*): Self = StObject.set(x, "fixedInfoList", js.Array(value :_*))
       
-      @scala.inline
-      def setGetComponent(
+      inline def setGetComponent(
         value: (/* path */ js.Array[String], /* defaultComponent */ js.UndefOr[CustomizeComponent]) => CustomizeComponent
       ): Self = StObject.set(x, "getComponent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsSticky(value: Boolean): Self = StObject.set(x, "isSticky", value.asInstanceOf[js.Any])
+      inline def setIsSticky(value: Boolean): Self = StObject.set(x, "isSticky", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollbarSize(value: Double): Self = StObject.set(x, "scrollbarSize", value.asInstanceOf[js.Any])
+      inline def setScrollbarSize(value: Double): Self = StObject.set(x, "scrollbarSize", value.asInstanceOf[js.Any])
     }
   }
   

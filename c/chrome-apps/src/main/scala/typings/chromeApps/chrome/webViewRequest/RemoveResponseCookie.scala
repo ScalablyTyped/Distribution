@@ -14,23 +14,19 @@ trait RemoveResponseCookie
   
   val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.RemoveResponseCookie
+  /* protected */ val typeGuard: typings.chromeApps.chromeAppsStrings.RemoveResponseCookie
 }
 object RemoveResponseCookie {
   
-  @scala.inline
-  def apply(instanceType: String): RemoveResponseCookie = {
+  inline def apply(instanceType: String): RemoveResponseCookie = {
     val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RemoveResponseCookie")
     __obj.asInstanceOf[RemoveResponseCookie]
   }
   
-  @scala.inline
-  implicit class RemoveResponseCookieMutableBuilder[Self <: RemoveResponseCookie] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveResponseCookie](x: Self) {
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.RemoveResponseCookie): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
+    inline def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.RemoveResponseCookie): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
   }
 }

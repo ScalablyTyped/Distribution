@@ -16,10 +16,8 @@ object tableToolbarMod {
   /* Inlined react.react.SFC<wix-style-react.wix-style-react/dist/es/src/TableToolbar.TableToolbarProps> & {  ItemGroup :react.react.SFC<wix-style-react.wix-style-react/dist/es/src/TableToolbar.ItemGroupProps>,   Item :react.react.SFC<wix-style-react.wix-style-react/dist/es/src/TableToolbar.ItemProps>,   Title :react.react.SFC<wix-style-react.wix-style-react/dist/es/src/TableToolbar.TitleProps>,   Label :react.react.SFC<wix-style-react.wix-style-react/dist/es/src/TableToolbar.LabelProps>,   Divider :react.react.SFC<wix-style-react.wix-style-react/dist/es/src/TableToolbar.DividerProps>,   SelectedCount :react.react.SFC<wix-style-react.wix-style-react/dist/es/src/TableToolbar.SelectedCountProps>} */
   object default {
     
-    @scala.inline
-    def apply(props: PropsWithChildren[TableToolbarProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    @scala.inline
-    def apply(props: PropsWithChildren[TableToolbarProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildren[TableToolbarProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildren[TableToolbarProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", JSImport.Default)
     @js.native
@@ -28,8 +26,7 @@ object tableToolbarMod {
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "default.Divider")
     @js.native
     def Divider: SFC[DividerProps] = js.native
-    @scala.inline
-    def Divider_=(x: SFC[DividerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
+    inline def Divider_=(x: SFC[DividerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "default.Item")
     @js.native
@@ -38,62 +35,51 @@ object tableToolbarMod {
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "default.ItemGroup")
     @js.native
     def ItemGroup: SFC[ItemGroupProps] = js.native
-    @scala.inline
-    def ItemGroup_=(x: SFC[ItemGroupProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemGroup")(x.asInstanceOf[js.Any])
+    inline def ItemGroup_=(x: SFC[ItemGroupProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemGroup")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Item_=(x: SFC[ItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    inline def Item_=(x: SFC[ItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "default.Label")
     @js.native
     def Label: SFC[LabelProps] = js.native
-    @scala.inline
-    def Label_=(x: SFC[LabelProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Label")(x.asInstanceOf[js.Any])
+    inline def Label_=(x: SFC[LabelProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Label")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "default.SelectedCount")
     @js.native
     def SelectedCount: SFC[SelectedCountProps] = js.native
-    @scala.inline
-    def SelectedCount_=(x: SFC[SelectedCountProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectedCount")(x.asInstanceOf[js.Any])
+    inline def SelectedCount_=(x: SFC[SelectedCountProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectedCount")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "default.Title")
     @js.native
     def Title: SFC[TitleProps] = js.native
-    @scala.inline
-    def Title_=(x: SFC[TitleProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
+    inline def Title_=(x: SFC[TitleProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "default.contextTypes")
     @js.native
     def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    @scala.inline
-    def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "default.defaultProps")
     @js.native
     def defaultProps: js.UndefOr[PartialTableToolbarProps] = js.native
-    @scala.inline
-    def defaultProps_=(x: js.UndefOr[PartialTableToolbarProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: js.UndefOr[PartialTableToolbarProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "default.displayName")
     @js.native
     def displayName: js.UndefOr[String] = js.native
-    @scala.inline
-    def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "default.propTypes")
     @js.native
     def propTypes: js.UndefOr[WeakValidationMapTableToo] = js.native
-    @scala.inline
-    def propTypes_=(x: js.UndefOr[WeakValidationMapTableToo]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapTableToo]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   /* Inlined react.react.SFC<wix-style-react.wix-style-react/dist/es/src/TableToolbar.TableToolbarProps> & {  ItemGroup :react.react.SFC<wix-style-react.wix-style-react/dist/es/src/TableToolbar.ItemGroupProps>,   Item :react.react.SFC<wix-style-react.wix-style-react/dist/es/src/TableToolbar.ItemProps>,   Title :react.react.SFC<wix-style-react.wix-style-react/dist/es/src/TableToolbar.TitleProps>,   Label :react.react.SFC<wix-style-react.wix-style-react/dist/es/src/TableToolbar.LabelProps>,   Divider :react.react.SFC<wix-style-react.wix-style-react/dist/es/src/TableToolbar.DividerProps>,   SelectedCount :react.react.SFC<wix-style-react.wix-style-react/dist/es/src/TableToolbar.SelectedCountProps>} */
   object TableToolbar {
     
-    @scala.inline
-    def apply(props: PropsWithChildren[TableToolbarProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    @scala.inline
-    def apply(props: PropsWithChildren[TableToolbarProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildren[TableToolbarProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildren[TableToolbarProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "TableToolbar")
     @js.native
@@ -102,8 +88,7 @@ object tableToolbarMod {
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "TableToolbar.Divider")
     @js.native
     def Divider: SFC[DividerProps] = js.native
-    @scala.inline
-    def Divider_=(x: SFC[DividerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
+    inline def Divider_=(x: SFC[DividerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divider")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "TableToolbar.Item")
     @js.native
@@ -112,53 +97,44 @@ object tableToolbarMod {
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "TableToolbar.ItemGroup")
     @js.native
     def ItemGroup: SFC[ItemGroupProps] = js.native
-    @scala.inline
-    def ItemGroup_=(x: SFC[ItemGroupProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemGroup")(x.asInstanceOf[js.Any])
+    inline def ItemGroup_=(x: SFC[ItemGroupProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ItemGroup")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Item_=(x: SFC[ItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    inline def Item_=(x: SFC[ItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "TableToolbar.Label")
     @js.native
     def Label: SFC[LabelProps] = js.native
-    @scala.inline
-    def Label_=(x: SFC[LabelProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Label")(x.asInstanceOf[js.Any])
+    inline def Label_=(x: SFC[LabelProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Label")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "TableToolbar.SelectedCount")
     @js.native
     def SelectedCount: SFC[SelectedCountProps] = js.native
-    @scala.inline
-    def SelectedCount_=(x: SFC[SelectedCountProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectedCount")(x.asInstanceOf[js.Any])
+    inline def SelectedCount_=(x: SFC[SelectedCountProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectedCount")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "TableToolbar.Title")
     @js.native
     def Title: SFC[TitleProps] = js.native
-    @scala.inline
-    def Title_=(x: SFC[TitleProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
+    inline def Title_=(x: SFC[TitleProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "TableToolbar.contextTypes")
     @js.native
     def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    @scala.inline
-    def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "TableToolbar.defaultProps")
     @js.native
     def defaultProps: js.UndefOr[PartialTableToolbarProps] = js.native
-    @scala.inline
-    def defaultProps_=(x: js.UndefOr[PartialTableToolbarProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: js.UndefOr[PartialTableToolbarProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "TableToolbar.displayName")
     @js.native
     def displayName: js.UndefOr[String] = js.native
-    @scala.inline
-    def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/TableToolbar", "TableToolbar.propTypes")
     @js.native
     def propTypes: js.UndefOr[WeakValidationMapTableToo] = js.native
-    @scala.inline
-    def propTypes_=(x: js.UndefOr[WeakValidationMapTableToo]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapTableToo]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   trait DividerProps extends StObject
@@ -171,26 +147,20 @@ object tableToolbarMod {
   }
   object ItemGroupProps {
     
-    @scala.inline
-    def apply(): ItemGroupProps = {
+    inline def apply(): ItemGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ItemGroupProps]
     }
     
-    @scala.inline
-    implicit class ItemGroupPropsMutableBuilder[Self <: ItemGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: ItemGroupProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }
   }
   
@@ -202,26 +172,20 @@ object tableToolbarMod {
   }
   object ItemProps {
     
-    @scala.inline
-    def apply(): ItemProps = {
+    inline def apply(): ItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ItemProps]
     }
     
-    @scala.inline
-    implicit class ItemPropsMutableBuilder[Self <: ItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: ItemProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     }
   }
   
@@ -231,20 +195,16 @@ object tableToolbarMod {
   }
   object LabelProps {
     
-    @scala.inline
-    def apply(): LabelProps = {
+    inline def apply(): LabelProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LabelProps]
     }
     
-    @scala.inline
-    implicit class LabelPropsMutableBuilder[Self <: LabelProps] (val x: Self) extends AnyVal {
+    extension [Self <: LabelProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -256,26 +216,20 @@ object tableToolbarMod {
   }
   object SelectedCountProps {
     
-    @scala.inline
-    def apply(): SelectedCountProps = {
+    inline def apply(): SelectedCountProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectedCountProps]
     }
     
-    @scala.inline
-    implicit class SelectedCountPropsMutableBuilder[Self <: SelectedCountProps] (val x: Self) extends AnyVal {
+    extension [Self <: SelectedCountProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
     }
   }
   
@@ -285,20 +239,16 @@ object tableToolbarMod {
   }
   object TableToolbarProps {
     
-    @scala.inline
-    def apply(): TableToolbarProps = {
+    inline def apply(): TableToolbarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableToolbarProps]
     }
     
-    @scala.inline
-    implicit class TableToolbarPropsMutableBuilder[Self <: TableToolbarProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableToolbarProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -310,26 +260,20 @@ object tableToolbarMod {
   }
   object TitleProps {
     
-    @scala.inline
-    def apply(): TitleProps = {
+    inline def apply(): TitleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TitleProps]
     }
     
-    @scala.inline
-    implicit class TitlePropsMutableBuilder[Self <: TitleProps] (val x: Self) extends AnyVal {
+    extension [Self <: TitleProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
     }
   }
 }

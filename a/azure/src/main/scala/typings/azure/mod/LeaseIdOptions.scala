@@ -12,19 +12,15 @@ trait LeaseIdOptions
 }
 object LeaseIdOptions {
   
-  @scala.inline
-  def apply(): LeaseIdOptions = {
+  inline def apply(): LeaseIdOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LeaseIdOptions]
   }
   
-  @scala.inline
-  implicit class LeaseIdOptionsMutableBuilder[Self <: LeaseIdOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LeaseIdOptions](x: Self) {
     
-    @scala.inline
-    def setLeaseId(value: String): Self = StObject.set(x, "leaseId", value.asInstanceOf[js.Any])
+    inline def setLeaseId(value: String): Self = StObject.set(x, "leaseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaseIdUndefined: Self = StObject.set(x, "leaseId", js.undefined)
+    inline def setLeaseIdUndefined: Self = StObject.set(x, "leaseId", js.undefined)
   }
 }

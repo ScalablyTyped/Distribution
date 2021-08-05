@@ -22,25 +22,19 @@ trait ContextRegExp
 }
 object ContextRegExp {
   
-  @scala.inline
-  def apply(): ContextRegExp = {
+  inline def apply(): ContextRegExp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContextRegExp]
   }
   
-  @scala.inline
-  implicit class ContextRegExpMutableBuilder[Self <: ContextRegExp] (val x: Self) extends AnyVal {
+  extension [Self <: ContextRegExp](x: Self) {
     
-    @scala.inline
-    def setContextRegExp(value: RegExp): Self = StObject.set(x, "contextRegExp", value.asInstanceOf[js.Any])
+    inline def setContextRegExp(value: RegExp): Self = StObject.set(x, "contextRegExp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextRegExpUndefined: Self = StObject.set(x, "contextRegExp", js.undefined)
+    inline def setContextRegExpUndefined: Self = StObject.set(x, "contextRegExp", js.undefined)
     
-    @scala.inline
-    def setResourceRegExp(value: RegExp): Self = StObject.set(x, "resourceRegExp", value.asInstanceOf[js.Any])
+    inline def setResourceRegExp(value: RegExp): Self = StObject.set(x, "resourceRegExp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRegExpUndefined: Self = StObject.set(x, "resourceRegExp", js.undefined)
+    inline def setResourceRegExpUndefined: Self = StObject.set(x, "resourceRegExp", js.undefined)
   }
 }

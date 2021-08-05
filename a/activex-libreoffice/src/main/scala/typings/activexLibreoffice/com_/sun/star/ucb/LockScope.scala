@@ -18,10 +18,8 @@ trait LockScope extends StObject
 object LockScope {
   
   /** the lock is exclusive. */
-  @scala.inline
-  def EXCLUSIVE: `0` = 0.asInstanceOf[`0`]
+  inline def EXCLUSIVE: `0` = 0.asInstanceOf[`0`]
   
   /** the lock is shared. */
-  @scala.inline
-  def SHARED: `1` = 1.asInstanceOf[`1`]
+  inline def SHARED: `1` = 1.asInstanceOf[`1`]
 }

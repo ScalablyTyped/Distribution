@@ -23,28 +23,21 @@ trait InspectorServiceAttributes extends StObject {
 }
 object InspectorServiceAttributes {
   
-  @scala.inline
-  def apply(schemaVersion: NumericVersion): InspectorServiceAttributes = {
+  inline def apply(schemaVersion: NumericVersion): InspectorServiceAttributes = {
     val __obj = js.Dynamic.literal(schemaVersion = schemaVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[InspectorServiceAttributes]
   }
   
-  @scala.inline
-  implicit class InspectorServiceAttributesMutableBuilder[Self <: InspectorServiceAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: InspectorServiceAttributes](x: Self) {
     
-    @scala.inline
-    def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
+    inline def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssessmentRunArnUndefined: Self = StObject.set(x, "assessmentRunArn", js.undefined)
+    inline def setAssessmentRunArnUndefined: Self = StObject.set(x, "assessmentRunArn", js.undefined)
     
-    @scala.inline
-    def setRulesPackageArn(value: Arn): Self = StObject.set(x, "rulesPackageArn", value.asInstanceOf[js.Any])
+    inline def setRulesPackageArn(value: Arn): Self = StObject.set(x, "rulesPackageArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesPackageArnUndefined: Self = StObject.set(x, "rulesPackageArn", js.undefined)
+    inline def setRulesPackageArnUndefined: Self = StObject.set(x, "rulesPackageArn", js.undefined)
     
-    @scala.inline
-    def setSchemaVersion(value: NumericVersion): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
+    inline def setSchemaVersion(value: NumericVersion): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
   }
 }

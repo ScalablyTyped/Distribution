@@ -14,28 +14,21 @@ trait BatchGetValuesByDataFilterResponse extends StObject {
 }
 object BatchGetValuesByDataFilterResponse {
   
-  @scala.inline
-  def apply(): BatchGetValuesByDataFilterResponse = {
+  inline def apply(): BatchGetValuesByDataFilterResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetValuesByDataFilterResponse]
   }
   
-  @scala.inline
-  implicit class BatchGetValuesByDataFilterResponseMutableBuilder[Self <: BatchGetValuesByDataFilterResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetValuesByDataFilterResponse](x: Self) {
     
-    @scala.inline
-    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
+    inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
+    inline def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
     
-    @scala.inline
-    def setValueRanges(value: js.Array[MatchedValueRange]): Self = StObject.set(x, "valueRanges", value.asInstanceOf[js.Any])
+    inline def setValueRanges(value: js.Array[MatchedValueRange]): Self = StObject.set(x, "valueRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueRangesUndefined: Self = StObject.set(x, "valueRanges", js.undefined)
+    inline def setValueRangesUndefined: Self = StObject.set(x, "valueRanges", js.undefined)
     
-    @scala.inline
-    def setValueRangesVarargs(value: MatchedValueRange*): Self = StObject.set(x, "valueRanges", js.Array(value :_*))
+    inline def setValueRangesVarargs(value: MatchedValueRange*): Self = StObject.set(x, "valueRanges", js.Array(value :_*))
   }
 }

@@ -32,31 +32,23 @@ trait AccessibilitySeriesOptions extends StObject {
 }
 object AccessibilitySeriesOptions {
   
-  @scala.inline
-  def apply(): AccessibilitySeriesOptions = {
+  inline def apply(): AccessibilitySeriesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessibilitySeriesOptions]
   }
   
-  @scala.inline
-  implicit class AccessibilitySeriesOptionsMutableBuilder[Self <: AccessibilitySeriesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AccessibilitySeriesOptions](x: Self) {
     
-    @scala.inline
-    def setDescribeSingleSeries(value: Boolean): Self = StObject.set(x, "describeSingleSeries", value.asInstanceOf[js.Any])
+    inline def setDescribeSingleSeries(value: Boolean): Self = StObject.set(x, "describeSingleSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescribeSingleSeriesUndefined: Self = StObject.set(x, "describeSingleSeries", js.undefined)
+    inline def setDescribeSingleSeriesUndefined: Self = StObject.set(x, "describeSingleSeries", js.undefined)
     
-    @scala.inline
-    def setDescriptionFormatter(value: Series => String): Self = StObject.set(x, "descriptionFormatter", js.Any.fromFunction1(value))
+    inline def setDescriptionFormatter(value: Series => String): Self = StObject.set(x, "descriptionFormatter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDescriptionFormatterUndefined: Self = StObject.set(x, "descriptionFormatter", js.undefined)
+    inline def setDescriptionFormatterUndefined: Self = StObject.set(x, "descriptionFormatter", js.undefined)
     
-    @scala.inline
-    def setPointDescriptionEnabledThreshold(value: Boolean | Double): Self = StObject.set(x, "pointDescriptionEnabledThreshold", value.asInstanceOf[js.Any])
+    inline def setPointDescriptionEnabledThreshold(value: Boolean | Double): Self = StObject.set(x, "pointDescriptionEnabledThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointDescriptionEnabledThresholdUndefined: Self = StObject.set(x, "pointDescriptionEnabledThreshold", js.undefined)
+    inline def setPointDescriptionEnabledThresholdUndefined: Self = StObject.set(x, "pointDescriptionEnabledThreshold", js.undefined)
   }
 }

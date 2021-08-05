@@ -10,8 +10,6 @@ object menuToggleUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def updateVisibility(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateVisibility")().asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def updateVisibility(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateVisibility")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def updateVisibility(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateVisibility")().asInstanceOf[js.Promise[Boolean]]
+  inline def updateVisibility(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateVisibility")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
 }

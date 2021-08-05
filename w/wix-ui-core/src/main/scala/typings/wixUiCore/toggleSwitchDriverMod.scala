@@ -12,6 +12,5 @@ object toggleSwitchDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def toggleSwitchDriverFactory(hasElementEventTrigger: Element): GetId = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleSwitchDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[GetId]
+  inline def toggleSwitchDriverFactory(hasElementEventTrigger: Element): GetId = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleSwitchDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[GetId]
 }

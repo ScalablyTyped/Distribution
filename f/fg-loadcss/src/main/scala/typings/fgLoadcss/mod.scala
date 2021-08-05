@@ -13,22 +13,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def loadCSS(href: String): HTMLLinkElement = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any]).asInstanceOf[HTMLLinkElement]
-  @scala.inline
-  def loadCSS(href: String, before: Unit, media: String): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
-  @scala.inline
-  def loadCSS(href: String, before: Unit, media: String, attributes: Record[String, String]): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
-  @scala.inline
-  def loadCSS(href: String, before: Unit, media: Unit, attributes: Record[String, String]): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
-  @scala.inline
-  def loadCSS(href: String, before: HTMLElement): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
-  @scala.inline
-  def loadCSS(href: String, before: HTMLElement, media: String): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
-  @scala.inline
-  def loadCSS(href: String, before: HTMLElement, media: String, attributes: Record[String, String]): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
-  @scala.inline
-  def loadCSS(href: String, before: HTMLElement, media: Unit, attributes: Record[String, String]): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
+  inline def loadCSS(href: String): HTMLLinkElement = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any]).asInstanceOf[HTMLLinkElement]
+  inline def loadCSS(href: String, before: Unit, media: String): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
+  inline def loadCSS(href: String, before: Unit, media: String, attributes: Record[String, String]): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
+  inline def loadCSS(href: String, before: Unit, media: Unit, attributes: Record[String, String]): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
+  inline def loadCSS(href: String, before: HTMLElement): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
+  inline def loadCSS(href: String, before: HTMLElement, media: String): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
+  inline def loadCSS(href: String, before: HTMLElement, media: String, attributes: Record[String, String]): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
+  inline def loadCSS(href: String, before: HTMLElement, media: Unit, attributes: Record[String, String]): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
   
   object global {
     
@@ -38,17 +30,14 @@ object mod {
     }
     object Window {
       
-      @scala.inline
-      def apply(onloadCSS: (HTMLLinkElement, js.Function0[Unit]) => Unit): Window = {
+      inline def apply(onloadCSS: (HTMLLinkElement, js.Function0[Unit]) => Unit): Window = {
         val __obj = js.Dynamic.literal(onloadCSS = js.Any.fromFunction2(onloadCSS))
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setOnloadCSS(value: (HTMLLinkElement, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onloadCSS", js.Any.fromFunction2(value))
+        inline def setOnloadCSS(value: (HTMLLinkElement, js.Function0[Unit]) => Unit): Self = StObject.set(x, "onloadCSS", js.Any.fromFunction2(value))
       }
     }
   }

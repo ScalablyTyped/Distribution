@@ -12,19 +12,15 @@ trait Viewport extends StObject {
 }
 object Viewport {
   
-  @scala.inline
-  def apply(center: Point, zoom: Double): Viewport = {
+  inline def apply(center: Point, zoom: Double): Viewport = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[Viewport]
   }
   
-  @scala.inline
-  implicit class ViewportMutableBuilder[Self <: Viewport] (val x: Self) extends AnyVal {
+  extension [Self <: Viewport](x: Self) {
     
-    @scala.inline
-    def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

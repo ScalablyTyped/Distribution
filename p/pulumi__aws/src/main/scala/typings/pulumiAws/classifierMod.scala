@@ -71,21 +71,16 @@ object classifierMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Classifier = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Classifier]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Classifier = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Classifier]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ClassifierState): Classifier = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Classifier]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ClassifierState, opts: CustomResourceOptions): Classifier = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Classifier]
+    inline def get(name: String, id: Input[ID]): Classifier = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Classifier]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Classifier = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Classifier]
+    inline def get(name: String, id: Input[ID], state: ClassifierState): Classifier = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Classifier]
+    inline def get(name: String, id: Input[ID], state: ClassifierState, opts: CustomResourceOptions): Classifier = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Classifier]
     
     /**
       * Returns true if the given object is an instance of Classifier.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/classifier.Classifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/classifier.Classifier */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/classifier.Classifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/classifier.Classifier */ Boolean]
   }
   
   trait ClassifierArgs extends StObject {
@@ -117,44 +112,32 @@ object classifierMod {
   }
   object ClassifierArgs {
     
-    @scala.inline
-    def apply(): ClassifierArgs = {
+    inline def apply(): ClassifierArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClassifierArgs]
     }
     
-    @scala.inline
-    implicit class ClassifierArgsMutableBuilder[Self <: ClassifierArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ClassifierArgs](x: Self) {
       
-      @scala.inline
-      def setCsvClassifier(value: Input[typings.pulumiAws.inputMod.glue.ClassifierCsvClassifier]): Self = StObject.set(x, "csvClassifier", value.asInstanceOf[js.Any])
+      inline def setCsvClassifier(value: Input[typings.pulumiAws.inputMod.glue.ClassifierCsvClassifier]): Self = StObject.set(x, "csvClassifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsvClassifierUndefined: Self = StObject.set(x, "csvClassifier", js.undefined)
+      inline def setCsvClassifierUndefined: Self = StObject.set(x, "csvClassifier", js.undefined)
       
-      @scala.inline
-      def setGrokClassifier(value: Input[typings.pulumiAws.inputMod.glue.ClassifierGrokClassifier]): Self = StObject.set(x, "grokClassifier", value.asInstanceOf[js.Any])
+      inline def setGrokClassifier(value: Input[typings.pulumiAws.inputMod.glue.ClassifierGrokClassifier]): Self = StObject.set(x, "grokClassifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrokClassifierUndefined: Self = StObject.set(x, "grokClassifier", js.undefined)
+      inline def setGrokClassifierUndefined: Self = StObject.set(x, "grokClassifier", js.undefined)
       
-      @scala.inline
-      def setJsonClassifier(value: Input[typings.pulumiAws.inputMod.glue.ClassifierJsonClassifier]): Self = StObject.set(x, "jsonClassifier", value.asInstanceOf[js.Any])
+      inline def setJsonClassifier(value: Input[typings.pulumiAws.inputMod.glue.ClassifierJsonClassifier]): Self = StObject.set(x, "jsonClassifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonClassifierUndefined: Self = StObject.set(x, "jsonClassifier", js.undefined)
+      inline def setJsonClassifierUndefined: Self = StObject.set(x, "jsonClassifier", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setXmlClassifier(value: Input[typings.pulumiAws.inputMod.glue.ClassifierXmlClassifier]): Self = StObject.set(x, "xmlClassifier", value.asInstanceOf[js.Any])
+      inline def setXmlClassifier(value: Input[typings.pulumiAws.inputMod.glue.ClassifierXmlClassifier]): Self = StObject.set(x, "xmlClassifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmlClassifierUndefined: Self = StObject.set(x, "xmlClassifier", js.undefined)
+      inline def setXmlClassifierUndefined: Self = StObject.set(x, "xmlClassifier", js.undefined)
     }
   }
   
@@ -187,44 +170,32 @@ object classifierMod {
   }
   object ClassifierState {
     
-    @scala.inline
-    def apply(): ClassifierState = {
+    inline def apply(): ClassifierState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClassifierState]
     }
     
-    @scala.inline
-    implicit class ClassifierStateMutableBuilder[Self <: ClassifierState] (val x: Self) extends AnyVal {
+    extension [Self <: ClassifierState](x: Self) {
       
-      @scala.inline
-      def setCsvClassifier(value: Input[typings.pulumiAws.inputMod.glue.ClassifierCsvClassifier]): Self = StObject.set(x, "csvClassifier", value.asInstanceOf[js.Any])
+      inline def setCsvClassifier(value: Input[typings.pulumiAws.inputMod.glue.ClassifierCsvClassifier]): Self = StObject.set(x, "csvClassifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsvClassifierUndefined: Self = StObject.set(x, "csvClassifier", js.undefined)
+      inline def setCsvClassifierUndefined: Self = StObject.set(x, "csvClassifier", js.undefined)
       
-      @scala.inline
-      def setGrokClassifier(value: Input[typings.pulumiAws.inputMod.glue.ClassifierGrokClassifier]): Self = StObject.set(x, "grokClassifier", value.asInstanceOf[js.Any])
+      inline def setGrokClassifier(value: Input[typings.pulumiAws.inputMod.glue.ClassifierGrokClassifier]): Self = StObject.set(x, "grokClassifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrokClassifierUndefined: Self = StObject.set(x, "grokClassifier", js.undefined)
+      inline def setGrokClassifierUndefined: Self = StObject.set(x, "grokClassifier", js.undefined)
       
-      @scala.inline
-      def setJsonClassifier(value: Input[typings.pulumiAws.inputMod.glue.ClassifierJsonClassifier]): Self = StObject.set(x, "jsonClassifier", value.asInstanceOf[js.Any])
+      inline def setJsonClassifier(value: Input[typings.pulumiAws.inputMod.glue.ClassifierJsonClassifier]): Self = StObject.set(x, "jsonClassifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonClassifierUndefined: Self = StObject.set(x, "jsonClassifier", js.undefined)
+      inline def setJsonClassifierUndefined: Self = StObject.set(x, "jsonClassifier", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setXmlClassifier(value: Input[typings.pulumiAws.inputMod.glue.ClassifierXmlClassifier]): Self = StObject.set(x, "xmlClassifier", value.asInstanceOf[js.Any])
+      inline def setXmlClassifier(value: Input[typings.pulumiAws.inputMod.glue.ClassifierXmlClassifier]): Self = StObject.set(x, "xmlClassifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmlClassifierUndefined: Self = StObject.set(x, "xmlClassifier", js.undefined)
+      inline def setXmlClassifierUndefined: Self = StObject.set(x, "xmlClassifier", js.undefined)
     }
   }
 }

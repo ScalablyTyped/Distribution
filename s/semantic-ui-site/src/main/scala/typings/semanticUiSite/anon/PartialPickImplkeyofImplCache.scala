@@ -19,43 +19,31 @@ trait PartialPickImplkeyofImplCache extends StObject {
 }
 object PartialPickImplkeyofImplCache {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplCache = {
+  inline def apply(): PartialPickImplkeyofImplCache = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplCache]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplCacheMutableBuilder[Self <: PartialPickImplkeyofImplCache] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplCache](x: Self) {
     
-    @scala.inline
-    def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setSection(value: js.Any): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+    inline def setSection(value: js.Any): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
+    inline def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
     
-    @scala.inline
-    def setSections(value: js.Any): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+    inline def setSections(value: js.Any): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
+    inline def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
     
-    @scala.inline
-    def setUtilities(value: js.Any): Self = StObject.set(x, "utilities", value.asInstanceOf[js.Any])
+    inline def setUtilities(value: js.Any): Self = StObject.set(x, "utilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtilitiesUndefined: Self = StObject.set(x, "utilities", js.undefined)
+    inline def setUtilitiesUndefined: Self = StObject.set(x, "utilities", js.undefined)
   }
 }

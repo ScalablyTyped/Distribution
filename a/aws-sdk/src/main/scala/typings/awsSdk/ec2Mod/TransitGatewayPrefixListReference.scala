@@ -38,49 +38,35 @@ trait TransitGatewayPrefixListReference extends StObject {
 }
 object TransitGatewayPrefixListReference {
   
-  @scala.inline
-  def apply(): TransitGatewayPrefixListReference = {
+  inline def apply(): TransitGatewayPrefixListReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitGatewayPrefixListReference]
   }
   
-  @scala.inline
-  implicit class TransitGatewayPrefixListReferenceMutableBuilder[Self <: TransitGatewayPrefixListReference] (val x: Self) extends AnyVal {
+  extension [Self <: TransitGatewayPrefixListReference](x: Self) {
     
-    @scala.inline
-    def setBlackhole(value: Boolean): Self = StObject.set(x, "Blackhole", value.asInstanceOf[js.Any])
+    inline def setBlackhole(value: Boolean): Self = StObject.set(x, "Blackhole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlackholeUndefined: Self = StObject.set(x, "Blackhole", js.undefined)
+    inline def setBlackholeUndefined: Self = StObject.set(x, "Blackhole", js.undefined)
     
-    @scala.inline
-    def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
+    inline def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixListIdUndefined: Self = StObject.set(x, "PrefixListId", js.undefined)
+    inline def setPrefixListIdUndefined: Self = StObject.set(x, "PrefixListId", js.undefined)
     
-    @scala.inline
-    def setPrefixListOwnerId(value: String): Self = StObject.set(x, "PrefixListOwnerId", value.asInstanceOf[js.Any])
+    inline def setPrefixListOwnerId(value: String): Self = StObject.set(x, "PrefixListOwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixListOwnerIdUndefined: Self = StObject.set(x, "PrefixListOwnerId", js.undefined)
+    inline def setPrefixListOwnerIdUndefined: Self = StObject.set(x, "PrefixListOwnerId", js.undefined)
     
-    @scala.inline
-    def setState(value: TransitGatewayPrefixListReferenceState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: TransitGatewayPrefixListReferenceState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayAttachment(value: TransitGatewayPrefixListAttachment): Self = StObject.set(x, "TransitGatewayAttachment", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayAttachment(value: TransitGatewayPrefixListAttachment): Self = StObject.set(x, "TransitGatewayAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayAttachmentUndefined: Self = StObject.set(x, "TransitGatewayAttachment", js.undefined)
+    inline def setTransitGatewayAttachmentUndefined: Self = StObject.set(x, "TransitGatewayAttachment", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayRouteTableId(value: TransitGatewayRouteTableId): Self = StObject.set(x, "TransitGatewayRouteTableId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayRouteTableId(value: TransitGatewayRouteTableId): Self = StObject.set(x, "TransitGatewayRouteTableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayRouteTableIdUndefined: Self = StObject.set(x, "TransitGatewayRouteTableId", js.undefined)
+    inline def setTransitGatewayRouteTableIdUndefined: Self = StObject.set(x, "TransitGatewayRouteTableId", js.undefined)
   }
 }

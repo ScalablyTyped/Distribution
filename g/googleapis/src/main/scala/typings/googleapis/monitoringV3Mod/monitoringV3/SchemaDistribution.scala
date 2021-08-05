@@ -74,61 +74,43 @@ trait SchemaDistribution extends StObject {
 }
 object SchemaDistribution {
   
-  @scala.inline
-  def apply(): SchemaDistribution = {
+  inline def apply(): SchemaDistribution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDistribution]
   }
   
-  @scala.inline
-  implicit class SchemaDistributionMutableBuilder[Self <: SchemaDistribution] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDistribution](x: Self) {
     
-    @scala.inline
-    def setBucketCounts(value: js.Array[String]): Self = StObject.set(x, "bucketCounts", value.asInstanceOf[js.Any])
+    inline def setBucketCounts(value: js.Array[String]): Self = StObject.set(x, "bucketCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketCountsUndefined: Self = StObject.set(x, "bucketCounts", js.undefined)
+    inline def setBucketCountsUndefined: Self = StObject.set(x, "bucketCounts", js.undefined)
     
-    @scala.inline
-    def setBucketCountsVarargs(value: String*): Self = StObject.set(x, "bucketCounts", js.Array(value :_*))
+    inline def setBucketCountsVarargs(value: String*): Self = StObject.set(x, "bucketCounts", js.Array(value :_*))
     
-    @scala.inline
-    def setBucketOptions(value: SchemaBucketOptions): Self = StObject.set(x, "bucketOptions", value.asInstanceOf[js.Any])
+    inline def setBucketOptions(value: SchemaBucketOptions): Self = StObject.set(x, "bucketOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketOptionsUndefined: Self = StObject.set(x, "bucketOptions", js.undefined)
+    inline def setBucketOptionsUndefined: Self = StObject.set(x, "bucketOptions", js.undefined)
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setExemplars(value: js.Array[SchemaExemplar]): Self = StObject.set(x, "exemplars", value.asInstanceOf[js.Any])
+    inline def setExemplars(value: js.Array[SchemaExemplar]): Self = StObject.set(x, "exemplars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExemplarsUndefined: Self = StObject.set(x, "exemplars", js.undefined)
+    inline def setExemplarsUndefined: Self = StObject.set(x, "exemplars", js.undefined)
     
-    @scala.inline
-    def setExemplarsVarargs(value: SchemaExemplar*): Self = StObject.set(x, "exemplars", js.Array(value :_*))
+    inline def setExemplarsVarargs(value: SchemaExemplar*): Self = StObject.set(x, "exemplars", js.Array(value :_*))
     
-    @scala.inline
-    def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
+    inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
+    inline def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
     
-    @scala.inline
-    def setRange(value: SchemaRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SchemaRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setSumOfSquaredDeviation(value: Double): Self = StObject.set(x, "sumOfSquaredDeviation", value.asInstanceOf[js.Any])
+    inline def setSumOfSquaredDeviation(value: Double): Self = StObject.set(x, "sumOfSquaredDeviation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumOfSquaredDeviationUndefined: Self = StObject.set(x, "sumOfSquaredDeviation", js.undefined)
+    inline def setSumOfSquaredDeviationUndefined: Self = StObject.set(x, "sumOfSquaredDeviation", js.undefined)
   }
 }

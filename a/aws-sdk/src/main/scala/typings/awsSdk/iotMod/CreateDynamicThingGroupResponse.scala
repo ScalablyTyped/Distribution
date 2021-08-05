@@ -38,49 +38,35 @@ trait CreateDynamicThingGroupResponse extends StObject {
 }
 object CreateDynamicThingGroupResponse {
   
-  @scala.inline
-  def apply(): CreateDynamicThingGroupResponse = {
+  inline def apply(): CreateDynamicThingGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDynamicThingGroupResponse]
   }
   
-  @scala.inline
-  implicit class CreateDynamicThingGroupResponseMutableBuilder[Self <: CreateDynamicThingGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDynamicThingGroupResponse](x: Self) {
     
-    @scala.inline
-    def setIndexName(value: IndexName): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: IndexName): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNameUndefined: Self = StObject.set(x, "indexName", js.undefined)
+    inline def setIndexNameUndefined: Self = StObject.set(x, "indexName", js.undefined)
     
-    @scala.inline
-    def setQueryString(value: QueryString): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: QueryString): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringUndefined: Self = StObject.set(x, "queryString", js.undefined)
+    inline def setQueryStringUndefined: Self = StObject.set(x, "queryString", js.undefined)
     
-    @scala.inline
-    def setQueryVersion(value: QueryVersion): Self = StObject.set(x, "queryVersion", value.asInstanceOf[js.Any])
+    inline def setQueryVersion(value: QueryVersion): Self = StObject.set(x, "queryVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryVersionUndefined: Self = StObject.set(x, "queryVersion", js.undefined)
+    inline def setQueryVersionUndefined: Self = StObject.set(x, "queryVersion", js.undefined)
     
-    @scala.inline
-    def setThingGroupArn(value: ThingGroupArn): Self = StObject.set(x, "thingGroupArn", value.asInstanceOf[js.Any])
+    inline def setThingGroupArn(value: ThingGroupArn): Self = StObject.set(x, "thingGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingGroupArnUndefined: Self = StObject.set(x, "thingGroupArn", js.undefined)
+    inline def setThingGroupArnUndefined: Self = StObject.set(x, "thingGroupArn", js.undefined)
     
-    @scala.inline
-    def setThingGroupId(value: ThingGroupId): Self = StObject.set(x, "thingGroupId", value.asInstanceOf[js.Any])
+    inline def setThingGroupId(value: ThingGroupId): Self = StObject.set(x, "thingGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingGroupIdUndefined: Self = StObject.set(x, "thingGroupId", js.undefined)
+    inline def setThingGroupIdUndefined: Self = StObject.set(x, "thingGroupId", js.undefined)
     
-    @scala.inline
-    def setThingGroupName(value: ThingGroupName): Self = StObject.set(x, "thingGroupName", value.asInstanceOf[js.Any])
+    inline def setThingGroupName(value: ThingGroupName): Self = StObject.set(x, "thingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingGroupNameUndefined: Self = StObject.set(x, "thingGroupName", js.undefined)
+    inline def setThingGroupNameUndefined: Self = StObject.set(x, "thingGroupName", js.undefined)
   }
 }

@@ -11,13 +11,11 @@ object parseMockdbStrings {
   sealed trait beforeDelete
     extends StObject
        with HookType
-  @scala.inline
-  def beforeDelete: beforeDelete = "beforeDelete".asInstanceOf[beforeDelete]
+  inline def beforeDelete: beforeDelete = "beforeDelete".asInstanceOf[beforeDelete]
   
   @js.native
   sealed trait beforeSave
     extends StObject
        with HookType
-  @scala.inline
-  def beforeSave: beforeSave = "beforeSave".asInstanceOf[beforeSave]
+  inline def beforeSave: beforeSave = "beforeSave".asInstanceOf[beforeSave]
 }

@@ -28,37 +28,27 @@ trait TapeRecoveryPointInfo extends StObject {
 }
 object TapeRecoveryPointInfo {
   
-  @scala.inline
-  def apply(): TapeRecoveryPointInfo = {
+  inline def apply(): TapeRecoveryPointInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TapeRecoveryPointInfo]
   }
   
-  @scala.inline
-  implicit class TapeRecoveryPointInfoMutableBuilder[Self <: TapeRecoveryPointInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TapeRecoveryPointInfo](x: Self) {
     
-    @scala.inline
-    def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
+    inline def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeARNUndefined: Self = StObject.set(x, "TapeARN", js.undefined)
+    inline def setTapeARNUndefined: Self = StObject.set(x, "TapeARN", js.undefined)
     
-    @scala.inline
-    def setTapeRecoveryPointTime(value: Time): Self = StObject.set(x, "TapeRecoveryPointTime", value.asInstanceOf[js.Any])
+    inline def setTapeRecoveryPointTime(value: Time): Self = StObject.set(x, "TapeRecoveryPointTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeRecoveryPointTimeUndefined: Self = StObject.set(x, "TapeRecoveryPointTime", js.undefined)
+    inline def setTapeRecoveryPointTimeUndefined: Self = StObject.set(x, "TapeRecoveryPointTime", js.undefined)
     
-    @scala.inline
-    def setTapeSizeInBytes(value: TapeSize): Self = StObject.set(x, "TapeSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setTapeSizeInBytes(value: TapeSize): Self = StObject.set(x, "TapeSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeSizeInBytesUndefined: Self = StObject.set(x, "TapeSizeInBytes", js.undefined)
+    inline def setTapeSizeInBytesUndefined: Self = StObject.set(x, "TapeSizeInBytes", js.undefined)
     
-    @scala.inline
-    def setTapeStatus(value: TapeRecoveryPointStatus): Self = StObject.set(x, "TapeStatus", value.asInstanceOf[js.Any])
+    inline def setTapeStatus(value: TapeRecoveryPointStatus): Self = StObject.set(x, "TapeStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeStatusUndefined: Self = StObject.set(x, "TapeStatus", js.undefined)
+    inline def setTapeStatusUndefined: Self = StObject.set(x, "TapeStatus", js.undefined)
   }
 }

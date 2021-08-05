@@ -29,8 +29,7 @@ trait RecordLanguagesstring extends StObject {
 }
 object RecordLanguagesstring {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     de: String,
     en: String,
     es: String,
@@ -47,37 +46,26 @@ object RecordLanguagesstring {
     __obj.asInstanceOf[RecordLanguagesstring]
   }
   
-  @scala.inline
-  implicit class RecordLanguagesstringMutableBuilder[Self <: RecordLanguagesstring] (val x: Self) extends AnyVal {
+  extension [Self <: RecordLanguagesstring](x: Self) {
     
-    @scala.inline
-    def setDe(value: String): Self = StObject.set(x, "de", value.asInstanceOf[js.Any])
+    inline def setDe(value: String): Self = StObject.set(x, "de", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEn(value: String): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
+    inline def setEn(value: String): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEs(value: String): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
+    inline def setEs(value: String): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFr(value: String): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
+    inline def setFr(value: String): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIt(value: String): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
+    inline def setIt(value: String): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNl(value: String): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
+    inline def setNl(value: String): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPl(value: String): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
+    inline def setPl(value: String): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPt(value: String): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+    inline def setPt(value: String): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRu(value: String): Self = StObject.set(x, "ru", value.asInstanceOf[js.Any])
+    inline def setRu(value: String): Self = StObject.set(x, "ru", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setZh-cn`(value: String): Self = StObject.set(x, "zh-cn", value.asInstanceOf[js.Any])
+    inline def `setZh-cn`(value: String): Self = StObject.set(x, "zh-cn", value.asInstanceOf[js.Any])
   }
 }

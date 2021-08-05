@@ -24,8 +24,7 @@ trait Services extends StObject {
 }
 object Services {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backendConnector: js.Any,
     i18nFormat: js.Any,
     interpolator: Interpolator,
@@ -39,31 +38,22 @@ object Services {
     __obj.asInstanceOf[Services]
   }
   
-  @scala.inline
-  implicit class ServicesMutableBuilder[Self <: Services] (val x: Self) extends AnyVal {
+  extension [Self <: Services](x: Self) {
     
-    @scala.inline
-    def setBackendConnector(value: js.Any): Self = StObject.set(x, "backendConnector", value.asInstanceOf[js.Any])
+    inline def setBackendConnector(value: js.Any): Self = StObject.set(x, "backendConnector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setI18nFormat(value: js.Any): Self = StObject.set(x, "i18nFormat", value.asInstanceOf[js.Any])
+    inline def setI18nFormat(value: js.Any): Self = StObject.set(x, "i18nFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolator(value: Interpolator): Self = StObject.set(x, "interpolator", value.asInstanceOf[js.Any])
+    inline def setInterpolator(value: Interpolator): Self = StObject.set(x, "interpolator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageDetector(value: js.Any): Self = StObject.set(x, "languageDetector", value.asInstanceOf[js.Any])
+    inline def setLanguageDetector(value: js.Any): Self = StObject.set(x, "languageDetector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUtils(value: js.Any): Self = StObject.set(x, "languageUtils", value.asInstanceOf[js.Any])
+    inline def setLanguageUtils(value: js.Any): Self = StObject.set(x, "languageUtils", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluralResolver(value: js.Any): Self = StObject.set(x, "pluralResolver", value.asInstanceOf[js.Any])
+    inline def setPluralResolver(value: js.Any): Self = StObject.set(x, "pluralResolver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceStore(value: ResourceStore): Self = StObject.set(x, "resourceStore", value.asInstanceOf[js.Any])
+    inline def setResourceStore(value: ResourceStore): Self = StObject.set(x, "resourceStore", value.asInstanceOf[js.Any])
   }
 }

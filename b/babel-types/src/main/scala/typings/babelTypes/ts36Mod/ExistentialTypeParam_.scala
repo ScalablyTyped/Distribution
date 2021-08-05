@@ -15,17 +15,14 @@ trait ExistentialTypeParam_
 }
 object ExistentialTypeParam_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double): ExistentialTypeParam_ = {
+  inline def apply(end: Double, loc: SourceLocation, start: Double): ExistentialTypeParam_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExistentialTypeParam")
     __obj.asInstanceOf[ExistentialTypeParam_]
   }
   
-  @scala.inline
-  implicit class ExistentialTypeParam_MutableBuilder[Self <: ExistentialTypeParam_] (val x: Self) extends AnyVal {
+  extension [Self <: ExistentialTypeParam_](x: Self) {
     
-    @scala.inline
-    def setType(value: ExistentialTypeParam): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ExistentialTypeParam): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

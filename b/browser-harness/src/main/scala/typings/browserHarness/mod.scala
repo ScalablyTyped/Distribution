@@ -41,26 +41,21 @@ object mod {
     @JSImport("browser-harness", "config.retryMS")
     @js.native
     def retryMS: Double = js.native
-    @scala.inline
-    def retryMS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("retryMS")(x.asInstanceOf[js.Any])
+    inline def retryMS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("retryMS")(x.asInstanceOf[js.Any])
     
     @JSImport("browser-harness", "config.timeoutMS")
     @js.native
     def timeoutMS: Double = js.native
-    @scala.inline
-    def timeoutMS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeoutMS")(x.asInstanceOf[js.Any])
+    inline def timeoutMS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeoutMS")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("browser-harness", "events")
   @js.native
   def events: HarnessEvents = js.native
-  @scala.inline
-  def events_=(x: HarnessEvents): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
+  inline def events_=(x: HarnessEvents): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def listen(port: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def listen(port: Double, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def listen(port: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def listen(port: Double, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @js.native
   trait Driver extends StObject {

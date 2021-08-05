@@ -76,8 +76,7 @@ object Resources {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def createMatchingContext(result: IIterable[typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceQualifier]): typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createMatchingContext")(result.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceContext]
+      inline def createMatchingContext(result: IIterable[typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceQualifier]): typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createMatchingContext")(result.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceContext]
     }
     
     @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceContextLanguagesVectorView")
@@ -121,11 +120,9 @@ object Resources {
       @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceManager.current")
       @js.native
       def current: typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceManager = js.native
-      @scala.inline
-      def current_=(x: typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceManager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
+      inline def current_=(x: typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceManager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def isResourceReference(resourceReference: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResourceReference")(resourceReference.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isResourceReference(resourceReference: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResourceReference")(resourceReference.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     }
     
     @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceMap")
@@ -399,7 +396,6 @@ object Resources {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getStringForReference(uri: Uri): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStringForReference")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getStringForReference(uri: Uri): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStringForReference")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

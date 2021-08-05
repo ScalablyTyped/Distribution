@@ -48,50 +48,36 @@ object typesQueryOutputMod {
   }
   object QueryOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): QueryOutput = {
+    inline def apply($metadata: ResponseMetadata): QueryOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryOutput]
     }
     
-    @scala.inline
-    implicit class QueryOutputMutableBuilder[Self <: QueryOutput] (val x: Self) extends AnyVal {
+    extension [Self <: QueryOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacity(value: UnmarshalledConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setConsumedCapacity(value: UnmarshalledConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[StringDictionary[UnmarshalledAttributeValue]]): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[StringDictionary[UnmarshalledAttributeValue]]): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: StringDictionary[UnmarshalledAttributeValue]*): Self = StObject.set(x, "Items", js.Array(value :_*))
+      inline def setItemsVarargs(value: StringDictionary[UnmarshalledAttributeValue]*): Self = StObject.set(x, "Items", js.Array(value :_*))
       
-      @scala.inline
-      def setLastEvaluatedKey(value: StringDictionary[UnmarshalledAttributeValue]): Self = StObject.set(x, "LastEvaluatedKey", value.asInstanceOf[js.Any])
+      inline def setLastEvaluatedKey(value: StringDictionary[UnmarshalledAttributeValue]): Self = StObject.set(x, "LastEvaluatedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastEvaluatedKeyUndefined: Self = StObject.set(x, "LastEvaluatedKey", js.undefined)
+      inline def setLastEvaluatedKeyUndefined: Self = StObject.set(x, "LastEvaluatedKey", js.undefined)
       
-      @scala.inline
-      def setScannedCount(value: Double): Self = StObject.set(x, "ScannedCount", value.asInstanceOf[js.Any])
+      inline def setScannedCount(value: Double): Self = StObject.set(x, "ScannedCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScannedCountUndefined: Self = StObject.set(x, "ScannedCount", js.undefined)
+      inline def setScannedCountUndefined: Self = StObject.set(x, "ScannedCount", js.undefined)
     }
   }
 }

@@ -43,26 +43,20 @@ object bayesianClassifierMod {
   }
   object BayesianClassifier {
     
-    @scala.inline
-    def apply(data: Data, score: Item => OddsSums, totalCount: Double, train: (Item, String) => Unit): BayesianClassifier = {
+    inline def apply(data: Data, score: Item => OddsSums, totalCount: Double, train: (Item, String) => Unit): BayesianClassifier = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], score = js.Any.fromFunction1(score), totalCount = totalCount.asInstanceOf[js.Any], train = js.Any.fromFunction2(train))
       __obj.asInstanceOf[BayesianClassifier]
     }
     
-    @scala.inline
-    implicit class BayesianClassifierMutableBuilder[Self <: BayesianClassifier] (val x: Self) extends AnyVal {
+    extension [Self <: BayesianClassifier](x: Self) {
       
-      @scala.inline
-      def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScore(value: Item => OddsSums): Self = StObject.set(x, "score", js.Any.fromFunction1(value))
+      inline def setScore(value: Item => OddsSums): Self = StObject.set(x, "score", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+      inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrain(value: (Item, String) => Unit): Self = StObject.set(x, "train", js.Any.fromFunction2(value))
+      inline def setTrain(value: (Item, String) => Unit): Self = StObject.set(x, "train", js.Any.fromFunction2(value))
     }
   }
   

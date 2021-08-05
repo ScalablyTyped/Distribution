@@ -10,16 +10,13 @@ trait IInitializeWithCoreWindow extends StObject {
 }
 object IInitializeWithCoreWindow {
   
-  @scala.inline
-  def apply(initialize: CoreWindow => Unit): IInitializeWithCoreWindow = {
+  inline def apply(initialize: CoreWindow => Unit): IInitializeWithCoreWindow = {
     val __obj = js.Dynamic.literal(initialize = js.Any.fromFunction1(initialize))
     __obj.asInstanceOf[IInitializeWithCoreWindow]
   }
   
-  @scala.inline
-  implicit class IInitializeWithCoreWindowMutableBuilder[Self <: IInitializeWithCoreWindow] (val x: Self) extends AnyVal {
+  extension [Self <: IInitializeWithCoreWindow](x: Self) {
     
-    @scala.inline
-    def setInitialize(value: CoreWindow => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+    inline def setInitialize(value: CoreWindow => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
   }
 }

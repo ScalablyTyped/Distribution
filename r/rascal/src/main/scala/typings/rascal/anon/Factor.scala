@@ -16,25 +16,19 @@ trait Factor extends StObject {
 }
 object Factor {
   
-  @scala.inline
-  def apply(factor: Double, max: Double, min: Double, strategy: String): Factor = {
+  inline def apply(factor: Double, max: Double, min: Double, strategy: String): Factor = {
     val __obj = js.Dynamic.literal(factor = factor.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], strategy = strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Factor]
   }
   
-  @scala.inline
-  implicit class FactorMutableBuilder[Self <: Factor] (val x: Self) extends AnyVal {
+  extension [Self <: Factor](x: Self) {
     
-    @scala.inline
-    def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+    inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    inline def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
   }
 }

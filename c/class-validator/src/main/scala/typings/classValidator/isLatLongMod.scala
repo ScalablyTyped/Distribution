@@ -16,11 +16,8 @@ object isLatLongMod {
   @js.native
   val IS_LATLONG: /* "isLatLong" */ String = js.native
   
-  @scala.inline
-  def IsLatLong_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLatLong")().asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def IsLatLong_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLatLong")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def IsLatLong_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLatLong")().asInstanceOf[PropertyDecorator]
+  inline def IsLatLong_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLatLong")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @scala.inline
-  def isLatLong(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLatLong")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLatLong(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLatLong")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

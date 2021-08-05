@@ -23,31 +23,23 @@ trait DynamoDBTarget extends StObject {
 }
 object DynamoDBTarget {
   
-  @scala.inline
-  def apply(): DynamoDBTarget = {
+  inline def apply(): DynamoDBTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DynamoDBTarget]
   }
   
-  @scala.inline
-  implicit class DynamoDBTargetMutableBuilder[Self <: DynamoDBTarget] (val x: Self) extends AnyVal {
+  extension [Self <: DynamoDBTarget](x: Self) {
     
-    @scala.inline
-    def setPath(value: Path): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Path): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
-    @scala.inline
-    def setScanAll(value: NullableBoolean): Self = StObject.set(x, "scanAll", value.asInstanceOf[js.Any])
+    inline def setScanAll(value: NullableBoolean): Self = StObject.set(x, "scanAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanAllUndefined: Self = StObject.set(x, "scanAll", js.undefined)
+    inline def setScanAllUndefined: Self = StObject.set(x, "scanAll", js.undefined)
     
-    @scala.inline
-    def setScanRate(value: NullableDouble): Self = StObject.set(x, "scanRate", value.asInstanceOf[js.Any])
+    inline def setScanRate(value: NullableDouble): Self = StObject.set(x, "scanRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanRateUndefined: Self = StObject.set(x, "scanRate", js.undefined)
+    inline def setScanRateUndefined: Self = StObject.set(x, "scanRate", js.undefined)
   }
 }

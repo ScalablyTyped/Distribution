@@ -25,7 +25,7 @@ object connectionOptionsEnvReaderMod {
     /**
       * Converts a string which contains a number into a javascript number
       */
-    var stringToNumber: js.Any = js.native
+    /* private */ var stringToNumber: js.Any = js.native
     
     /**
       * Transforms caching option into real caching value option requires.

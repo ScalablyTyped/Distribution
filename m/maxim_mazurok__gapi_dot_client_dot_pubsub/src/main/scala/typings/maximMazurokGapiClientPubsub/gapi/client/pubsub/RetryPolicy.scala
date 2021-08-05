@@ -14,25 +14,19 @@ trait RetryPolicy extends StObject {
 }
 object RetryPolicy {
   
-  @scala.inline
-  def apply(): RetryPolicy = {
+  inline def apply(): RetryPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetryPolicy]
   }
   
-  @scala.inline
-  implicit class RetryPolicyMutableBuilder[Self <: RetryPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: RetryPolicy](x: Self) {
     
-    @scala.inline
-    def setMaximumBackoff(value: String): Self = StObject.set(x, "maximumBackoff", value.asInstanceOf[js.Any])
+    inline def setMaximumBackoff(value: String): Self = StObject.set(x, "maximumBackoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumBackoffUndefined: Self = StObject.set(x, "maximumBackoff", js.undefined)
+    inline def setMaximumBackoffUndefined: Self = StObject.set(x, "maximumBackoff", js.undefined)
     
-    @scala.inline
-    def setMinimumBackoff(value: String): Self = StObject.set(x, "minimumBackoff", value.asInstanceOf[js.Any])
+    inline def setMinimumBackoff(value: String): Self = StObject.set(x, "minimumBackoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumBackoffUndefined: Self = StObject.set(x, "minimumBackoff", js.undefined)
+    inline def setMinimumBackoffUndefined: Self = StObject.set(x, "minimumBackoff", js.undefined)
   }
 }

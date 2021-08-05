@@ -22,26 +22,20 @@ object loadingIconMod extends Shortcut {
   }
   object LoadingIconProps {
     
-    @scala.inline
-    def apply(existIcon: Boolean, prefixCls: String): LoadingIconProps = {
+    inline def apply(existIcon: Boolean, prefixCls: String): LoadingIconProps = {
       val __obj = js.Dynamic.literal(existIcon = existIcon.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadingIconProps]
     }
     
-    @scala.inline
-    implicit class LoadingIconPropsMutableBuilder[Self <: LoadingIconProps] (val x: Self) extends AnyVal {
+    extension [Self <: LoadingIconProps](x: Self) {
       
-      @scala.inline
-      def setExistIcon(value: Boolean): Self = StObject.set(x, "existIcon", value.asInstanceOf[js.Any])
+      inline def setExistIcon(value: Boolean): Self = StObject.set(x, "existIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoading(value: Boolean | js.Object): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean | js.Object): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     }
   }
   

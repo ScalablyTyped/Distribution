@@ -15,14 +15,12 @@ trait ContextEvent
      with Event
 object ContextEvent {
   
-  @scala.inline
-  def ContextEventEnter(ph: CONTEXT_EVENTS_ENTER): typings.hermesProfileTransformer.eventInterfacesMod.ContextEventEnter = {
+  inline def ContextEventEnter(ph: CONTEXT_EVENTS_ENTER): typings.hermesProfileTransformer.eventInterfacesMod.ContextEventEnter = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.hermesProfileTransformer.eventInterfacesMod.ContextEventEnter]
   }
   
-  @scala.inline
-  def ContextEventLeave(ph: CONTEXT_EVENTS_LEAVE): typings.hermesProfileTransformer.eventInterfacesMod.ContextEventLeave = {
+  inline def ContextEventLeave(ph: CONTEXT_EVENTS_LEAVE): typings.hermesProfileTransformer.eventInterfacesMod.ContextEventLeave = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.hermesProfileTransformer.eventInterfacesMod.ContextEventLeave]
   }

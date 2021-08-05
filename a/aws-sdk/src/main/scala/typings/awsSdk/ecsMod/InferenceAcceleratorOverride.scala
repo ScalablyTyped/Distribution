@@ -18,25 +18,19 @@ trait InferenceAcceleratorOverride extends StObject {
 }
 object InferenceAcceleratorOverride {
   
-  @scala.inline
-  def apply(): InferenceAcceleratorOverride = {
+  inline def apply(): InferenceAcceleratorOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InferenceAcceleratorOverride]
   }
   
-  @scala.inline
-  implicit class InferenceAcceleratorOverrideMutableBuilder[Self <: InferenceAcceleratorOverride] (val x: Self) extends AnyVal {
+  extension [Self <: InferenceAcceleratorOverride](x: Self) {
     
-    @scala.inline
-    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
-    @scala.inline
-    def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
+    inline def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
+    inline def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
   }
 }

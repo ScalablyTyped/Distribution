@@ -13,19 +13,15 @@ trait BrandRequest extends StObject {
 }
 object BrandRequest {
   
-  @scala.inline
-  def apply(): BrandRequest = {
+  inline def apply(): BrandRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrandRequest]
   }
   
-  @scala.inline
-  implicit class BrandRequestMutableBuilder[Self <: BrandRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BrandRequest](x: Self) {
     
-    @scala.inline
-    def setBrandId(value: String): Self = StObject.set(x, "brandId", value.asInstanceOf[js.Any])
+    inline def setBrandId(value: String): Self = StObject.set(x, "brandId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandIdUndefined: Self = StObject.set(x, "brandId", js.undefined)
+    inline def setBrandIdUndefined: Self = StObject.set(x, "brandId", js.undefined)
   }
 }

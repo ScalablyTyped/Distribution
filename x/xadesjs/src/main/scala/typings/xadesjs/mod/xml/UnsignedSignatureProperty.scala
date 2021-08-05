@@ -13,6 +13,5 @@ class UnsignedSignatureProperty ()
   extends typings.xadesjs.xmlMod.UnsignedSignatureProperty
 object UnsignedSignatureProperty {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.UnsignedSignatureProperty] = ^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedSignatureProperty").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.UnsignedSignatureProperty]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.UnsignedSignatureProperty] = ^.asInstanceOf[js.Dynamic].selectDynamic("UnsignedSignatureProperty").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.UnsignedSignatureProperty]]
 }

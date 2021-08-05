@@ -10,6 +10,5 @@ object useThenableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](create: js.Function0[js.Thenable[T]]): js.Tuple2[Boolean, js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(create.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, js.UndefOr[T]]]
+  inline def default[T](create: js.Function0[js.Thenable[T]]): js.Tuple2[Boolean, js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(create.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, js.UndefOr[T]]]
 }

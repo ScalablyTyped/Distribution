@@ -14,19 +14,15 @@ trait TreeMapItemCreatedEvent
 }
 object TreeMapItemCreatedEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TreeMap): TreeMapItemCreatedEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TreeMap): TreeMapItemCreatedEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeMapItemCreatedEvent]
   }
   
-  @scala.inline
-  implicit class TreeMapItemCreatedEventMutableBuilder[Self <: TreeMapItemCreatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TreeMapItemCreatedEvent](x: Self) {
     
-    @scala.inline
-    def setElement(value: JQuery | Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: JQuery | Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
   }
 }

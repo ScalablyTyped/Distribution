@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TablePaste extends StObject
 object TablePaste {
   
-  @scala.inline
-  def apply: TablePaste = ^.asInstanceOf[js.Dynamic].selectDynamic("TablePaste").asInstanceOf[TablePaste]
+  inline def apply: TablePaste = ^.asInstanceOf[js.Dynamic].selectDynamic("TablePaste").asInstanceOf[TablePaste]
 }

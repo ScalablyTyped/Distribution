@@ -102,103 +102,71 @@ trait IHashMap
 }
 object IHashMap {
   
-  @scala.inline
-  def apply(): IHashMap = {
+  inline def apply(): IHashMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IHashMap]
   }
   
-  @scala.inline
-  implicit class IHashMapMutableBuilder[Self <: IHashMap] (val x: Self) extends AnyVal {
+  extension [Self <: IHashMap](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (/* key */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (/* key */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setClear(value: /* initial */ js.UndefOr[js.Any] => IHashMap): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+    inline def setClear(value: /* initial */ js.UndefOr[js.Any] => IHashMap): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setClone_(value: () => IHashMap): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
+    inline def setClone_(value: () => IHashMap): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+    inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
     
-    @scala.inline
-    def setContains(value: /* value */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: /* value */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContainsKey(value: /* key */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
+    inline def setContainsKey(value: /* key */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContainsKeyUndefined: Self = StObject.set(x, "containsKey", js.undefined)
+    inline def setContainsKeyUndefined: Self = StObject.set(x, "containsKey", js.undefined)
     
-    @scala.inline
-    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
+    inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
-    @scala.inline
-    def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IHashMap): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
+    inline def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IHashMap): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
+    inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
-    @scala.inline
-    def setGet(value: /* key */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* key */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
+    inline def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
+    inline def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
     
-    @scala.inline
-    def setGetKey(value: /* o */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
+    inline def setGetKey(value: /* o */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
+    inline def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
     
-    @scala.inline
-    def setGetKeys(value: () => Array): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
+    inline def setGetKeys(value: () => Array): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetKeysUndefined: Self = StObject.set(x, "getKeys", js.undefined)
+    inline def setGetKeysUndefined: Self = StObject.set(x, "getKeys", js.undefined)
     
-    @scala.inline
-    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    @scala.inline
-    def setGetValues(value: () => Array): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+    inline def setGetValues(value: () => Array): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
+    inline def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
     
-    @scala.inline
-    def setKeyFn(value: js.Any): Self = StObject.set(x, "keyFn", value.asInstanceOf[js.Any])
+    inline def setKeyFn(value: js.Any): Self = StObject.set(x, "keyFn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyFnUndefined: Self = StObject.set(x, "keyFn", js.undefined)
+    inline def setKeyFnUndefined: Self = StObject.set(x, "keyFn", js.undefined)
     
-    @scala.inline
-    def setRemove(value: /* o */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: /* o */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveAtKey(value: /* key */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "removeAtKey", js.Any.fromFunction1(value))
+    inline def setRemoveAtKey(value: /* key */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "removeAtKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveAtKeyUndefined: Self = StObject.set(x, "removeAtKey", js.undefined)
+    inline def setRemoveAtKeyUndefined: Self = StObject.set(x, "removeAtKey", js.undefined)
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    @scala.inline
-    def setReplace(value: (/* key */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
+    inline def setReplace(value: (/* key */ js.UndefOr[String], /* value */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
   }
 }

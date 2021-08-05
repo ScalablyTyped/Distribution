@@ -13,16 +13,13 @@ trait DeleteDetectorRequest extends StObject {
 }
 object DeleteDetectorRequest {
   
-  @scala.inline
-  def apply(detectorId: identifier): DeleteDetectorRequest = {
+  inline def apply(detectorId: identifier): DeleteDetectorRequest = {
     val __obj = js.Dynamic.literal(detectorId = detectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDetectorRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDetectorRequestMutableBuilder[Self <: DeleteDetectorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDetectorRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
   }
 }

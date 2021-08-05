@@ -35,8 +35,7 @@ trait RowsColsLayoutGrid
 }
 object RowsColsLayoutGrid {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignment: MIN | MAX | STRETCH | CENTER,
     count: Double,
     gutterSize: Double,
@@ -46,43 +45,30 @@ object RowsColsLayoutGrid {
     __obj.asInstanceOf[RowsColsLayoutGrid]
   }
   
-  @scala.inline
-  implicit class RowsColsLayoutGridMutableBuilder[Self <: RowsColsLayoutGrid] (val x: Self) extends AnyVal {
+  extension [Self <: RowsColsLayoutGrid](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: MIN | MAX | STRETCH | CENTER): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: MIN | MAX | STRETCH | CENTER): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: RGBA): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: RGBA): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGutterSize(value: Double): Self = StObject.set(x, "gutterSize", value.asInstanceOf[js.Any])
+    inline def setGutterSize(value: Double): Self = StObject.set(x, "gutterSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPattern(value: ROWS | COLUMNS): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: ROWS | COLUMNS): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionSize(value: Double): Self = StObject.set(x, "sectionSize", value.asInstanceOf[js.Any])
+    inline def setSectionSize(value: Double): Self = StObject.set(x, "sectionSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionSizeUndefined: Self = StObject.set(x, "sectionSize", js.undefined)
+    inline def setSectionSizeUndefined: Self = StObject.set(x, "sectionSize", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

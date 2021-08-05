@@ -61,14 +61,12 @@ object AccessCache {
     @JSGlobal("Windows.Storage.AccessCache.StorageApplicationPermissions.futureAccessList")
     @js.native
     def futureAccessList: typings.winrt.Windows.Storage.AccessCache.StorageItemAccessList = js.native
-    @scala.inline
-    def futureAccessList_=(x: typings.winrt.Windows.Storage.AccessCache.StorageItemAccessList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("futureAccessList")(x.asInstanceOf[js.Any])
+    inline def futureAccessList_=(x: typings.winrt.Windows.Storage.AccessCache.StorageItemAccessList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("futureAccessList")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Storage.AccessCache.StorageApplicationPermissions.mostRecentlyUsedList")
     @js.native
     def mostRecentlyUsedList: typings.winrt.Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList = js.native
-    @scala.inline
-    def mostRecentlyUsedList_=(x: typings.winrt.Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mostRecentlyUsedList")(x.asInstanceOf[js.Any])
+    inline def mostRecentlyUsedList_=(x: typings.winrt.Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mostRecentlyUsedList")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Storage.AccessCache.StorageItemAccessList")

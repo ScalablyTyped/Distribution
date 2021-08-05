@@ -43,46 +43,33 @@ trait ProjectParametersProperties extends StObject {
 }
 object ProjectParametersProperties {
   
-  @scala.inline
-  def apply(): ProjectParametersProperties = {
+  inline def apply(): ProjectParametersProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectParametersProperties]
   }
   
-  @scala.inline
-  implicit class ProjectParametersPropertiesMutableBuilder[Self <: ProjectParametersProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectParametersProperties](x: Self) {
     
-    @scala.inline
-    def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+    inline def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
+    inline def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
-    @scala.inline
-    def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value :_*))
+    inline def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value :_*))
     
-    @scala.inline
-    def setOutSR(value: SpatialReferenceProperties): Self = StObject.set(x, "outSR", value.asInstanceOf[js.Any])
+    inline def setOutSR(value: SpatialReferenceProperties): Self = StObject.set(x, "outSR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutSRUndefined: Self = StObject.set(x, "outSR", js.undefined)
+    inline def setOutSRUndefined: Self = StObject.set(x, "outSR", js.undefined)
     
-    @scala.inline
-    def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
+    inline def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
+    inline def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
     
-    @scala.inline
-    def setTransformForward(value: Boolean): Self = StObject.set(x, "transformForward", value.asInstanceOf[js.Any])
+    inline def setTransformForward(value: Boolean): Self = StObject.set(x, "transformForward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformForwardUndefined: Self = StObject.set(x, "transformForward", js.undefined)
+    inline def setTransformForwardUndefined: Self = StObject.set(x, "transformForward", js.undefined)
     
-    @scala.inline
-    def setTransformation(value: ProjectParametersTransformation): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
+    inline def setTransformation(value: ProjectParametersTransformation): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformationUndefined: Self = StObject.set(x, "transformation", js.undefined)
+    inline def setTransformationUndefined: Self = StObject.set(x, "transformation", js.undefined)
   }
 }

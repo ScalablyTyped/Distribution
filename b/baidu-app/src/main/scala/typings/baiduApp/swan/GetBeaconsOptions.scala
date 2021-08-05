@@ -13,19 +13,15 @@ trait GetBeaconsOptions
 }
 object GetBeaconsOptions {
   
-  @scala.inline
-  def apply(): GetBeaconsOptions = {
+  inline def apply(): GetBeaconsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBeaconsOptions]
   }
   
-  @scala.inline
-  implicit class GetBeaconsOptionsMutableBuilder[Self <: GetBeaconsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetBeaconsOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* options */ GetBeaconsSuccess => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* options */ GetBeaconsSuccess => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

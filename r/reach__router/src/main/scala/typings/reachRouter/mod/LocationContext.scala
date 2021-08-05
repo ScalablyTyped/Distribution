@@ -13,19 +13,15 @@ trait LocationContext extends StObject {
 }
 object LocationContext {
   
-  @scala.inline
-  def apply(location: WindowLocation[LocationState], navigate: NavigateFn): LocationContext = {
+  inline def apply(location: WindowLocation[LocationState], navigate: NavigateFn): LocationContext = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], navigate = navigate.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationContext]
   }
   
-  @scala.inline
-  implicit class LocationContextMutableBuilder[Self <: LocationContext] (val x: Self) extends AnyVal {
+  extension [Self <: LocationContext](x: Self) {
     
-    @scala.inline
-    def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
+    inline def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
   }
 }

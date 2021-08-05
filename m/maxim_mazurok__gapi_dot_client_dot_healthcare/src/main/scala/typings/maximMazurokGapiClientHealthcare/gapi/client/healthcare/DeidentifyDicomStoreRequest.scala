@@ -22,31 +22,23 @@ trait DeidentifyDicomStoreRequest extends StObject {
 }
 object DeidentifyDicomStoreRequest {
   
-  @scala.inline
-  def apply(): DeidentifyDicomStoreRequest = {
+  inline def apply(): DeidentifyDicomStoreRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeidentifyDicomStoreRequest]
   }
   
-  @scala.inline
-  implicit class DeidentifyDicomStoreRequestMutableBuilder[Self <: DeidentifyDicomStoreRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeidentifyDicomStoreRequest](x: Self) {
     
-    @scala.inline
-    def setConfig(value: DeidentifyConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: DeidentifyConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setDestinationStore(value: String): Self = StObject.set(x, "destinationStore", value.asInstanceOf[js.Any])
+    inline def setDestinationStore(value: String): Self = StObject.set(x, "destinationStore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationStoreUndefined: Self = StObject.set(x, "destinationStore", js.undefined)
+    inline def setDestinationStoreUndefined: Self = StObject.set(x, "destinationStore", js.undefined)
     
-    @scala.inline
-    def setFilterConfig(value: DicomFilterConfig): Self = StObject.set(x, "filterConfig", value.asInstanceOf[js.Any])
+    inline def setFilterConfig(value: DicomFilterConfig): Self = StObject.set(x, "filterConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterConfigUndefined: Self = StObject.set(x, "filterConfig", js.undefined)
+    inline def setFilterConfigUndefined: Self = StObject.set(x, "filterConfig", js.undefined)
   }
 }

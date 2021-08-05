@@ -16,7 +16,7 @@ object tokenMod {
       */
     def this(name: String) = this()
     
-    var _tokenStructuralPropertyT: js.Any = js.native
+    /* private */ var _tokenStructuralPropertyT: js.Any = js.native
     
     /**
       * The human readable name for the token.

@@ -16,28 +16,21 @@ trait DeleteVoiceModelParams extends StObject {
 }
 object DeleteVoiceModelParams {
   
-  @scala.inline
-  def apply(customization_id: String): DeleteVoiceModelParams = {
+  inline def apply(customization_id: String): DeleteVoiceModelParams = {
     val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVoiceModelParams]
   }
   
-  @scala.inline
-  implicit class DeleteVoiceModelParamsMutableBuilder[Self <: DeleteVoiceModelParams] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVoiceModelParams](x: Self) {
     
-    @scala.inline
-    def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
+    inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

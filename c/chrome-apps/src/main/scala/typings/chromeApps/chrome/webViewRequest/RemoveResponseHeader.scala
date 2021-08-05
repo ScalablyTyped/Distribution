@@ -13,23 +13,19 @@ trait RemoveResponseHeader
   
   val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.RemoveResponseHeader
+  /* protected */ val typeGuard: typings.chromeApps.chromeAppsStrings.RemoveResponseHeader
 }
 object RemoveResponseHeader {
   
-  @scala.inline
-  def apply(instanceType: String): RemoveResponseHeader = {
+  inline def apply(instanceType: String): RemoveResponseHeader = {
     val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RemoveResponseHeader")
     __obj.asInstanceOf[RemoveResponseHeader]
   }
   
-  @scala.inline
-  implicit class RemoveResponseHeaderMutableBuilder[Self <: RemoveResponseHeader] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveResponseHeader](x: Self) {
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.RemoveResponseHeader): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
+    inline def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.RemoveResponseHeader): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
   }
 }

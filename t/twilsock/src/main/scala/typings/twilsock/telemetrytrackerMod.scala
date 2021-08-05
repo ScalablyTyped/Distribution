@@ -92,7 +92,7 @@ object telemetrytrackerMod {
   class TelemetryTracker protected () extends StObject {
     def this(config: Configuration, packetInterface: PacketInterface) = this()
     
-    var _canSendTelemetry: js.Any = js.native
+    /* private */ var _canSendTelemetry: js.Any = js.native
     
     def addPartialEvent(incompleteEvent: TelemetryEventDescription, eventKey: String, point: TelemetryPoint): Unit = js.native
     
@@ -101,27 +101,27 @@ object telemetrytrackerMod {
     def canSendTelemetry: Boolean = js.native
     def canSendTelemetry_=(enable: Boolean): Unit = js.native
     
-    val config: js.Any = js.native
+    /* private */ val config: js.Any = js.native
     
-    var getTelemetryPortion: js.Any = js.native
+    /* private */ var getTelemetryPortion: js.Any = js.native
     
     def getTelemetryToSend(sendingLimit: EventSendingLimitation): js.Array[TelemetryEventDescription] = js.native
     
-    var hasInitializationFinished: js.Any = js.native
+    /* private */ var hasInitializationFinished: js.Any = js.native
     
     def isTelemetryEnabled: Boolean = js.native
     
-    val maxEventsPortionToSend: js.Any = js.native
+    /* private */ val maxEventsPortionToSend: js.Any = js.native
     
-    var merge: js.Any = js.native
+    /* private */ var merge: js.Any = js.native
     
-    val minEventsPortionToSend: js.Any = js.native
+    /* private */ val minEventsPortionToSend: js.Any = js.native
     
-    val packetInterface: js.Any = js.native
+    /* private */ val packetInterface: js.Any = js.native
     
-    var pendingEvents: js.Any = js.native
+    /* private */ var pendingEvents: js.Any = js.native
     
-    var readyEvents: js.Any = js.native
+    /* private */ var readyEvents: js.Any = js.native
     
     def sendTelemetry(limit: EventSendingLimitation): Unit = js.native
     

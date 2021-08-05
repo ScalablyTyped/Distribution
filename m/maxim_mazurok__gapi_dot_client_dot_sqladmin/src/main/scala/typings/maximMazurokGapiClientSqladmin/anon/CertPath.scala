@@ -20,31 +20,23 @@ trait CertPath extends StObject {
 }
 object CertPath {
   
-  @scala.inline
-  def apply(): CertPath = {
+  inline def apply(): CertPath = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CertPath]
   }
   
-  @scala.inline
-  implicit class CertPathMutableBuilder[Self <: CertPath] (val x: Self) extends AnyVal {
+  extension [Self <: CertPath](x: Self) {
     
-    @scala.inline
-    def setCertPath(value: String): Self = StObject.set(x, "certPath", value.asInstanceOf[js.Any])
+    inline def setCertPath(value: String): Self = StObject.set(x, "certPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertPathUndefined: Self = StObject.set(x, "certPath", js.undefined)
+    inline def setCertPathUndefined: Self = StObject.set(x, "certPath", js.undefined)
     
-    @scala.inline
-    def setPvkPassword(value: String): Self = StObject.set(x, "pvkPassword", value.asInstanceOf[js.Any])
+    inline def setPvkPassword(value: String): Self = StObject.set(x, "pvkPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPvkPasswordUndefined: Self = StObject.set(x, "pvkPassword", js.undefined)
+    inline def setPvkPasswordUndefined: Self = StObject.set(x, "pvkPassword", js.undefined)
     
-    @scala.inline
-    def setPvkPath(value: String): Self = StObject.set(x, "pvkPath", value.asInstanceOf[js.Any])
+    inline def setPvkPath(value: String): Self = StObject.set(x, "pvkPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPvkPathUndefined: Self = StObject.set(x, "pvkPath", js.undefined)
+    inline def setPvkPathUndefined: Self = StObject.set(x, "pvkPath", js.undefined)
   }
 }

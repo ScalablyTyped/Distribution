@@ -20,25 +20,19 @@ trait ReposDeleteWebhookRequestOptions extends StObject {
 }
 object ReposDeleteWebhookRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposDeleteWebhookRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposDeleteWebhookRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/hooks/:hook_id")
     __obj.asInstanceOf[ReposDeleteWebhookRequestOptions]
   }
   
-  @scala.inline
-  implicit class ReposDeleteWebhookRequestOptionsMutableBuilder[Self <: ReposDeleteWebhookRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReposDeleteWebhookRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashhooksSlashColonhook_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashhooksSlashColonhook_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

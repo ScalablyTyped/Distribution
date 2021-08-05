@@ -20,37 +20,27 @@ trait RateDetails extends StObject {
 }
 object RateDetails {
   
-  @scala.inline
-  def apply(): RateDetails = {
+  inline def apply(): RateDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RateDetails]
   }
   
-  @scala.inline
-  implicit class RateDetailsMutableBuilder[Self <: RateDetails] (val x: Self) extends AnyVal {
+  extension [Self <: RateDetails](x: Self) {
     
-    @scala.inline
-    def setInventorySourceRateType(value: String): Self = StObject.set(x, "inventorySourceRateType", value.asInstanceOf[js.Any])
+    inline def setInventorySourceRateType(value: String): Self = StObject.set(x, "inventorySourceRateType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventorySourceRateTypeUndefined: Self = StObject.set(x, "inventorySourceRateType", js.undefined)
+    inline def setInventorySourceRateTypeUndefined: Self = StObject.set(x, "inventorySourceRateType", js.undefined)
     
-    @scala.inline
-    def setMinimumSpend(value: Money): Self = StObject.set(x, "minimumSpend", value.asInstanceOf[js.Any])
+    inline def setMinimumSpend(value: Money): Self = StObject.set(x, "minimumSpend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumSpendUndefined: Self = StObject.set(x, "minimumSpend", js.undefined)
+    inline def setMinimumSpendUndefined: Self = StObject.set(x, "minimumSpend", js.undefined)
     
-    @scala.inline
-    def setRate(value: Money): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+    inline def setRate(value: Money): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+    inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
     
-    @scala.inline
-    def setUnitsPurchased(value: String): Self = StObject.set(x, "unitsPurchased", value.asInstanceOf[js.Any])
+    inline def setUnitsPurchased(value: String): Self = StObject.set(x, "unitsPurchased", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsPurchasedUndefined: Self = StObject.set(x, "unitsPurchased", js.undefined)
+    inline def setUnitsPurchasedUndefined: Self = StObject.set(x, "unitsPurchased", js.undefined)
   }
 }

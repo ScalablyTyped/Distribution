@@ -11,19 +11,15 @@ trait ExpansionFilesUploadResponse extends StObject {
 }
 object ExpansionFilesUploadResponse {
   
-  @scala.inline
-  def apply(): ExpansionFilesUploadResponse = {
+  inline def apply(): ExpansionFilesUploadResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExpansionFilesUploadResponse]
   }
   
-  @scala.inline
-  implicit class ExpansionFilesUploadResponseMutableBuilder[Self <: ExpansionFilesUploadResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ExpansionFilesUploadResponse](x: Self) {
     
-    @scala.inline
-    def setExpansionFile(value: ExpansionFile): Self = StObject.set(x, "expansionFile", value.asInstanceOf[js.Any])
+    inline def setExpansionFile(value: ExpansionFile): Self = StObject.set(x, "expansionFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpansionFileUndefined: Self = StObject.set(x, "expansionFile", js.undefined)
+    inline def setExpansionFileUndefined: Self = StObject.set(x, "expansionFile", js.undefined)
   }
 }

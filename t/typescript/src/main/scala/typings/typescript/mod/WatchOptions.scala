@@ -19,37 +19,27 @@ trait WatchOptions
 }
 object WatchOptions {
   
-  @scala.inline
-  def apply(): WatchOptions = {
+  inline def apply(): WatchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WatchOptions]
   }
   
-  @scala.inline
-  implicit class WatchOptionsMutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WatchOptions](x: Self) {
     
-    @scala.inline
-    def setFallbackPolling(value: PollingWatchKind): Self = StObject.set(x, "fallbackPolling", value.asInstanceOf[js.Any])
+    inline def setFallbackPolling(value: PollingWatchKind): Self = StObject.set(x, "fallbackPolling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackPollingUndefined: Self = StObject.set(x, "fallbackPolling", js.undefined)
+    inline def setFallbackPollingUndefined: Self = StObject.set(x, "fallbackPolling", js.undefined)
     
-    @scala.inline
-    def setSynchronousWatchDirectory(value: Boolean): Self = StObject.set(x, "synchronousWatchDirectory", value.asInstanceOf[js.Any])
+    inline def setSynchronousWatchDirectory(value: Boolean): Self = StObject.set(x, "synchronousWatchDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynchronousWatchDirectoryUndefined: Self = StObject.set(x, "synchronousWatchDirectory", js.undefined)
+    inline def setSynchronousWatchDirectoryUndefined: Self = StObject.set(x, "synchronousWatchDirectory", js.undefined)
     
-    @scala.inline
-    def setWatchDirectory(value: WatchDirectoryKind): Self = StObject.set(x, "watchDirectory", value.asInstanceOf[js.Any])
+    inline def setWatchDirectory(value: WatchDirectoryKind): Self = StObject.set(x, "watchDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchDirectoryUndefined: Self = StObject.set(x, "watchDirectory", js.undefined)
+    inline def setWatchDirectoryUndefined: Self = StObject.set(x, "watchDirectory", js.undefined)
     
-    @scala.inline
-    def setWatchFile(value: WatchFileKind): Self = StObject.set(x, "watchFile", value.asInstanceOf[js.Any])
+    inline def setWatchFile(value: WatchFileKind): Self = StObject.set(x, "watchFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchFileUndefined: Self = StObject.set(x, "watchFile", js.undefined)
+    inline def setWatchFileUndefined: Self = StObject.set(x, "watchFile", js.undefined)
   }
 }

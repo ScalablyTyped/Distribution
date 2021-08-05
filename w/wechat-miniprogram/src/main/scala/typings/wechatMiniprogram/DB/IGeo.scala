@@ -38,8 +38,7 @@ trait IGeo extends StObject {
 }
 object IGeo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LineString: IGeoLineStringConstructor,
     MultiLineString: IGeoMultiLineStringConstructor,
     MultiPoint: IGeoMultiPointConstructor,
@@ -51,25 +50,18 @@ object IGeo {
     __obj.asInstanceOf[IGeo]
   }
   
-  @scala.inline
-  implicit class IGeoMutableBuilder[Self <: IGeo] (val x: Self) extends AnyVal {
+  extension [Self <: IGeo](x: Self) {
     
-    @scala.inline
-    def setLineString(value: IGeoLineStringConstructor): Self = StObject.set(x, "LineString", value.asInstanceOf[js.Any])
+    inline def setLineString(value: IGeoLineStringConstructor): Self = StObject.set(x, "LineString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiLineString(value: IGeoMultiLineStringConstructor): Self = StObject.set(x, "MultiLineString", value.asInstanceOf[js.Any])
+    inline def setMultiLineString(value: IGeoMultiLineStringConstructor): Self = StObject.set(x, "MultiLineString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiPoint(value: IGeoMultiPointConstructor): Self = StObject.set(x, "MultiPoint", value.asInstanceOf[js.Any])
+    inline def setMultiPoint(value: IGeoMultiPointConstructor): Self = StObject.set(x, "MultiPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiPolygon(value: IGeoMultiPolygonConstructor): Self = StObject.set(x, "MultiPolygon", value.asInstanceOf[js.Any])
+    inline def setMultiPolygon(value: IGeoMultiPolygonConstructor): Self = StObject.set(x, "MultiPolygon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: IGeoPointConstructor): Self = StObject.set(x, "Point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: IGeoPointConstructor): Self = StObject.set(x, "Point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygon(value: IGeoPolygonConstructor): Self = StObject.set(x, "Polygon", value.asInstanceOf[js.Any])
+    inline def setPolygon(value: IGeoPolygonConstructor): Self = StObject.set(x, "Polygon", value.asInstanceOf[js.Any])
   }
 }

@@ -23,34 +23,25 @@ trait ConditionalForwarder extends StObject {
 }
 object ConditionalForwarder {
   
-  @scala.inline
-  def apply(): ConditionalForwarder = {
+  inline def apply(): ConditionalForwarder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalForwarder]
   }
   
-  @scala.inline
-  implicit class ConditionalForwarderMutableBuilder[Self <: ConditionalForwarder] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalForwarder](x: Self) {
     
-    @scala.inline
-    def setDnsIpAddrs(value: DnsIpAddrs): Self = StObject.set(x, "DnsIpAddrs", value.asInstanceOf[js.Any])
+    inline def setDnsIpAddrs(value: DnsIpAddrs): Self = StObject.set(x, "DnsIpAddrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsIpAddrsUndefined: Self = StObject.set(x, "DnsIpAddrs", js.undefined)
+    inline def setDnsIpAddrsUndefined: Self = StObject.set(x, "DnsIpAddrs", js.undefined)
     
-    @scala.inline
-    def setDnsIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "DnsIpAddrs", js.Array(value :_*))
+    inline def setDnsIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "DnsIpAddrs", js.Array(value :_*))
     
-    @scala.inline
-    def setRemoteDomainName(value: RemoteDomainName): Self = StObject.set(x, "RemoteDomainName", value.asInstanceOf[js.Any])
+    inline def setRemoteDomainName(value: RemoteDomainName): Self = StObject.set(x, "RemoteDomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteDomainNameUndefined: Self = StObject.set(x, "RemoteDomainName", js.undefined)
+    inline def setRemoteDomainNameUndefined: Self = StObject.set(x, "RemoteDomainName", js.undefined)
     
-    @scala.inline
-    def setReplicationScope(value: ReplicationScope): Self = StObject.set(x, "ReplicationScope", value.asInstanceOf[js.Any])
+    inline def setReplicationScope(value: ReplicationScope): Self = StObject.set(x, "ReplicationScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationScopeUndefined: Self = StObject.set(x, "ReplicationScope", js.undefined)
+    inline def setReplicationScopeUndefined: Self = StObject.set(x, "ReplicationScope", js.undefined)
   }
 }

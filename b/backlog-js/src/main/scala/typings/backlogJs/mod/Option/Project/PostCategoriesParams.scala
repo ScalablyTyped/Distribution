@@ -10,16 +10,13 @@ trait PostCategoriesParams extends StObject {
 }
 object PostCategoriesParams {
   
-  @scala.inline
-  def apply(name: String): PostCategoriesParams = {
+  inline def apply(name: String): PostCategoriesParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostCategoriesParams]
   }
   
-  @scala.inline
-  implicit class PostCategoriesParamsMutableBuilder[Self <: PostCategoriesParams] (val x: Self) extends AnyVal {
+  extension [Self <: PostCategoriesParams](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

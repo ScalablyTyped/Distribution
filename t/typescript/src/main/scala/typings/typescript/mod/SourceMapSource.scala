@@ -16,8 +16,7 @@ trait SourceMapSource extends StObject {
 }
 object SourceMapSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fileName: java.lang.String,
     getLineAndCharacterOfPosition: Double => LineAndCharacter,
     text: java.lang.String
@@ -26,22 +25,16 @@ object SourceMapSource {
     __obj.asInstanceOf[SourceMapSource]
   }
   
-  @scala.inline
-  implicit class SourceMapSourceMutableBuilder[Self <: SourceMapSource] (val x: Self) extends AnyVal {
+  extension [Self <: SourceMapSource](x: Self) {
     
-    @scala.inline
-    def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetLineAndCharacterOfPosition(value: Double => LineAndCharacter): Self = StObject.set(x, "getLineAndCharacterOfPosition", js.Any.fromFunction1(value))
+    inline def setGetLineAndCharacterOfPosition(value: Double => LineAndCharacter): Self = StObject.set(x, "getLineAndCharacterOfPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSkipTrivia(value: /* pos */ Double => Double): Self = StObject.set(x, "skipTrivia", js.Any.fromFunction1(value))
+    inline def setSkipTrivia(value: /* pos */ Double => Double): Self = StObject.set(x, "skipTrivia", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSkipTriviaUndefined: Self = StObject.set(x, "skipTrivia", js.undefined)
+    inline def setSkipTriviaUndefined: Self = StObject.set(x, "skipTrivia", js.undefined)
     
-    @scala.inline
-    def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

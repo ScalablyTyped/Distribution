@@ -21,20 +21,16 @@ trait TableWidthUnit extends StObject {
 }
 object TableWidthUnit {
   
-  @scala.inline
-  def apply(`type`: TableWidthUnitType, value: Double): TableWidthUnit = {
+  inline def apply(`type`: TableWidthUnitType, value: Double): TableWidthUnit = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableWidthUnit]
   }
   
-  @scala.inline
-  implicit class TableWidthUnitMutableBuilder[Self <: TableWidthUnit] (val x: Self) extends AnyVal {
+  extension [Self <: TableWidthUnit](x: Self) {
     
-    @scala.inline
-    def setType(value: TableWidthUnitType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TableWidthUnitType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

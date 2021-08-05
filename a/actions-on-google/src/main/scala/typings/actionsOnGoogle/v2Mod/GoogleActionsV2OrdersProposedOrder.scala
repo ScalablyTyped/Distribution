@@ -48,58 +48,41 @@ trait GoogleActionsV2OrdersProposedOrder extends StObject {
 }
 object GoogleActionsV2OrdersProposedOrder {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersProposedOrder = {
+  inline def apply(): GoogleActionsV2OrdersProposedOrder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersProposedOrder]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersProposedOrderMutableBuilder[Self <: GoogleActionsV2OrdersProposedOrder] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersProposedOrder](x: Self) {
     
-    @scala.inline
-    def setCart(value: GoogleActionsV2OrdersCart): Self = StObject.set(x, "cart", value.asInstanceOf[js.Any])
+    inline def setCart(value: GoogleActionsV2OrdersCart): Self = StObject.set(x, "cart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCartUndefined: Self = StObject.set(x, "cart", js.undefined)
+    inline def setCartUndefined: Self = StObject.set(x, "cart", js.undefined)
     
-    @scala.inline
-    def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setImage(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setOtherItems(value: js.Array[GoogleActionsV2OrdersLineItem]): Self = StObject.set(x, "otherItems", value.asInstanceOf[js.Any])
+    inline def setOtherItems(value: js.Array[GoogleActionsV2OrdersLineItem]): Self = StObject.set(x, "otherItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherItemsUndefined: Self = StObject.set(x, "otherItems", js.undefined)
+    inline def setOtherItemsUndefined: Self = StObject.set(x, "otherItems", js.undefined)
     
-    @scala.inline
-    def setOtherItemsVarargs(value: GoogleActionsV2OrdersLineItem*): Self = StObject.set(x, "otherItems", js.Array(value :_*))
+    inline def setOtherItemsVarargs(value: GoogleActionsV2OrdersLineItem*): Self = StObject.set(x, "otherItems", js.Array(value :_*))
     
-    @scala.inline
-    def setTermsOfServiceUrl(value: String): Self = StObject.set(x, "termsOfServiceUrl", value.asInstanceOf[js.Any])
+    inline def setTermsOfServiceUrl(value: String): Self = StObject.set(x, "termsOfServiceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsOfServiceUrlUndefined: Self = StObject.set(x, "termsOfServiceUrl", js.undefined)
+    inline def setTermsOfServiceUrlUndefined: Self = StObject.set(x, "termsOfServiceUrl", js.undefined)
     
-    @scala.inline
-    def setTotalPrice(value: GoogleActionsV2OrdersPrice): Self = StObject.set(x, "totalPrice", value.asInstanceOf[js.Any])
+    inline def setTotalPrice(value: GoogleActionsV2OrdersPrice): Self = StObject.set(x, "totalPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalPriceUndefined: Self = StObject.set(x, "totalPrice", js.undefined)
+    inline def setTotalPriceUndefined: Self = StObject.set(x, "totalPrice", js.undefined)
   }
 }

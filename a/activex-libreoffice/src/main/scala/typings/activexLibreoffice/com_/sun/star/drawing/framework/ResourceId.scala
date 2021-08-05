@@ -37,8 +37,7 @@ trait ResourceId
 }
 object ResourceId {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XResourceId,
     AnchorURLs: SafeArray[String],
     FullResourceURL: URL,
@@ -62,19 +61,14 @@ object ResourceId {
     __obj.asInstanceOf[ResourceId]
   }
   
-  @scala.inline
-  implicit class ResourceIdMutableBuilder[Self <: ResourceId] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceId](x: Self) {
     
-    @scala.inline
-    def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateEmpty(value: () => Unit): Self = StObject.set(x, "createEmpty", js.Any.fromFunction0(value))
+    inline def setCreateEmpty(value: () => Unit): Self = StObject.set(x, "createEmpty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateWithAnchor(value: (String, XResourceId) => Unit): Self = StObject.set(x, "createWithAnchor", js.Any.fromFunction2(value))
+    inline def setCreateWithAnchor(value: (String, XResourceId) => Unit): Self = StObject.set(x, "createWithAnchor", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateWithAnchorURL(value: (String, String) => Unit): Self = StObject.set(x, "createWithAnchorURL", js.Any.fromFunction2(value))
+    inline def setCreateWithAnchorURL(value: (String, String) => Unit): Self = StObject.set(x, "createWithAnchorURL", js.Any.fromFunction2(value))
   }
 }

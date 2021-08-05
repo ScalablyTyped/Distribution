@@ -17,8 +17,7 @@ trait ValueDescriptionInfinity
 }
 object ValueDescriptionInfinity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     negative: Boolean,
     parent: Argument | ConstantMemberType | FieldType
@@ -28,13 +27,10 @@ object ValueDescriptionInfinity {
     __obj.asInstanceOf[ValueDescriptionInfinity]
   }
   
-  @scala.inline
-  implicit class ValueDescriptionInfinityMutableBuilder[Self <: ValueDescriptionInfinity] (val x: Self) extends AnyVal {
+  extension [Self <: ValueDescriptionInfinity](x: Self) {
     
-    @scala.inline
-    def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+    inline def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Infinity): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Infinity): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

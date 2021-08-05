@@ -22,28 +22,21 @@ trait GooglePrivacyDlpV2KAnonymityConfig extends StObject {
 }
 object GooglePrivacyDlpV2KAnonymityConfig {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2KAnonymityConfig = {
+  inline def apply(): GooglePrivacyDlpV2KAnonymityConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2KAnonymityConfig]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2KAnonymityConfigMutableBuilder[Self <: GooglePrivacyDlpV2KAnonymityConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2KAnonymityConfig](x: Self) {
     
-    @scala.inline
-    def setEntityId(value: GooglePrivacyDlpV2EntityId): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
+    inline def setEntityId(value: GooglePrivacyDlpV2EntityId): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
+    inline def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
-    @scala.inline
-    def setQuasiIds(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "quasiIds", value.asInstanceOf[js.Any])
+    inline def setQuasiIds(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "quasiIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
+    inline def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
     
-    @scala.inline
-    def setQuasiIdsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
+    inline def setQuasiIdsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
   }
 }

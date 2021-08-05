@@ -35,20 +35,16 @@ object typesMod {
   }
   object GetArrowPropsArg {
     
-    @scala.inline
-    def apply(): GetArrowPropsArg = {
+    inline def apply(): GetArrowPropsArg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetArrowPropsArg]
     }
     
-    @scala.inline
-    implicit class GetArrowPropsArgMutableBuilder[Self <: GetArrowPropsArg] (val x: Self) extends AnyVal {
+    extension [Self <: GetArrowPropsArg](x: Self) {
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -64,32 +60,24 @@ object typesMod {
   }
   object GetTooltipPropsArg {
     
-    @scala.inline
-    def apply(): GetTooltipPropsArg = {
+    inline def apply(): GetTooltipPropsArg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetTooltipPropsArg]
     }
     
-    @scala.inline
-    implicit class GetTooltipPropsArgMutableBuilder[Self <: GetTooltipPropsArg] (val x: Self) extends AnyVal {
+    extension [Self <: GetTooltipPropsArg](x: Self) {
       
-      @scala.inline
-      def setOnMouseEnter(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnMouseLeave(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -115,62 +103,44 @@ object typesMod {
   }
   object GetTriggerPropsArg {
     
-    @scala.inline
-    def apply(): GetTriggerPropsArg = {
+    inline def apply(): GetTriggerPropsArg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetTriggerPropsArg]
     }
     
-    @scala.inline
-    implicit class GetTriggerPropsArgMutableBuilder[Self <: GetTriggerPropsArg] (val x: Self) extends AnyVal {
+    extension [Self <: GetTriggerPropsArg](x: Self) {
       
-      @scala.inline
-      def setOnBlur(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnContextMenu(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+      inline def setOnContextMenu(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
+      inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnMouseEnter(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnMouseLeave(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      @scala.inline
-      def setOnMouseMove(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+      inline def setOnMouseMove(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
+      inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
-      @scala.inline
-      def setOnTouchEnd(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+      inline def setOnTouchEnd(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
+      inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
     }
   }
   
@@ -220,8 +190,7 @@ object typesMod {
   }
   object TooltipProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arrowProps: PopperArrowProps,
       clearScheduled: () => Unit,
       closeOnReferenceHidden: Boolean,
@@ -237,56 +206,39 @@ object typesMod {
       __obj.asInstanceOf[TooltipProps]
     }
     
-    @scala.inline
-    implicit class TooltipPropsMutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipProps](x: Self) {
       
-      @scala.inline
-      def setArrowProps(value: PopperArrowProps): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
+      inline def setArrowProps(value: PopperArrowProps): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearScheduled(value: () => Unit): Self = StObject.set(x, "clearScheduled", js.Any.fromFunction0(value))
+      inline def setClearScheduled(value: () => Unit): Self = StObject.set(x, "clearScheduled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCloseOnReferenceHidden(value: Boolean): Self = StObject.set(x, "closeOnReferenceHidden", value.asInstanceOf[js.Any])
+      inline def setCloseOnReferenceHidden(value: Boolean): Self = StObject.set(x, "closeOnReferenceHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideTooltip(value: () => Unit): Self = StObject.set(x, "hideTooltip", js.Any.fromFunction0(value))
+      inline def setHideTooltip(value: () => Unit): Self = StObject.set(x, "hideTooltip", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInnerRef(value: Ref): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* element */ HTMLElement | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* element */ HTMLElement | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+      inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
-      @scala.inline
-      def setIsReferenceHidden(value: Boolean): Self = StObject.set(x, "isReferenceHidden", value.asInstanceOf[js.Any])
+      inline def setIsReferenceHidden(value: Boolean): Self = StObject.set(x, "isReferenceHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsReferenceHiddenUndefined: Self = StObject.set(x, "isReferenceHidden", js.undefined)
+      inline def setIsReferenceHiddenUndefined: Self = StObject.set(x, "isReferenceHidden", js.undefined)
       
-      @scala.inline
-      def setMutationObserverOptions(value: MutationObserverInit): Self = StObject.set(x, "mutationObserverOptions", value.asInstanceOf[js.Any])
+      inline def setMutationObserverOptions(value: MutationObserverInit): Self = StObject.set(x, "mutationObserverOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltip(value: TooltipArg => ReactNode): Self = StObject.set(x, "tooltip", js.Any.fromFunction1(value))
+      inline def setTooltip(value: TooltipArg => ReactNode): Self = StObject.set(x, "tooltip", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerVarargs(value: TriggerTypes*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+      inline def setTriggerVarargs(value: TriggerTypes*): Self = StObject.set(x, "trigger", js.Array(value :_*))
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -394,8 +346,7 @@ object typesMod {
   }
   object TooltipTriggerProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       children: ChildrenArg => ReactNode,
       closeOnReferenceHidden: Boolean,
       defaultTooltipShown: Boolean,
@@ -415,86 +366,59 @@ object typesMod {
       __obj.asInstanceOf[TooltipTriggerProps]
     }
     
-    @scala.inline
-    implicit class TooltipTriggerPropsMutableBuilder[Self <: TooltipTriggerProps] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipTriggerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ChildrenArg => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: ChildrenArg => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCloseOnReferenceHidden(value: Boolean): Self = StObject.set(x, "closeOnReferenceHidden", value.asInstanceOf[js.Any])
+      inline def setCloseOnReferenceHidden(value: Boolean): Self = StObject.set(x, "closeOnReferenceHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultTooltipShown(value: Boolean): Self = StObject.set(x, "defaultTooltipShown", value.asInstanceOf[js.Any])
+      inline def setDefaultTooltipShown(value: Boolean): Self = StObject.set(x, "defaultTooltipShown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayHide(value: Double): Self = StObject.set(x, "delayHide", value.asInstanceOf[js.Any])
+      inline def setDelayHide(value: Double): Self = StObject.set(x, "delayHide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayShow(value: Double): Self = StObject.set(x, "delayShow", value.asInstanceOf[js.Any])
+      inline def setDelayShow(value: Double): Self = StObject.set(x, "delayShow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowCursor(value: Boolean): Self = StObject.set(x, "followCursor", value.asInstanceOf[js.Any])
+      inline def setFollowCursor(value: Boolean): Self = StObject.set(x, "followCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetTooltipRef(value: Ref): Self = StObject.set(x, "getTooltipRef", value.asInstanceOf[js.Any])
+      inline def setGetTooltipRef(value: Ref): Self = StObject.set(x, "getTooltipRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetTooltipRefFunction1(value: /* element */ HTMLElement | Null => Unit): Self = StObject.set(x, "getTooltipRef", js.Any.fromFunction1(value))
+      inline def setGetTooltipRefFunction1(value: /* element */ HTMLElement | Null => Unit): Self = StObject.set(x, "getTooltipRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTooltipRefNull: Self = StObject.set(x, "getTooltipRef", null)
+      inline def setGetTooltipRefNull: Self = StObject.set(x, "getTooltipRef", null)
       
-      @scala.inline
-      def setGetTooltipRefUndefined: Self = StObject.set(x, "getTooltipRef", js.undefined)
+      inline def setGetTooltipRefUndefined: Self = StObject.set(x, "getTooltipRef", js.undefined)
       
-      @scala.inline
-      def setGetTriggerRef(value: Ref): Self = StObject.set(x, "getTriggerRef", value.asInstanceOf[js.Any])
+      inline def setGetTriggerRef(value: Ref): Self = StObject.set(x, "getTriggerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetTriggerRefFunction1(value: /* element */ HTMLElement | Null => Unit): Self = StObject.set(x, "getTriggerRef", js.Any.fromFunction1(value))
+      inline def setGetTriggerRefFunction1(value: /* element */ HTMLElement | Null => Unit): Self = StObject.set(x, "getTriggerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTriggerRefNull: Self = StObject.set(x, "getTriggerRef", null)
+      inline def setGetTriggerRefNull: Self = StObject.set(x, "getTriggerRef", null)
       
-      @scala.inline
-      def setGetTriggerRefUndefined: Self = StObject.set(x, "getTriggerRef", js.undefined)
+      inline def setGetTriggerRefUndefined: Self = StObject.set(x, "getTriggerRef", js.undefined)
       
-      @scala.inline
-      def setModifiers(value: js.Array[Modifier[js.Any, js.Object]]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: js.Array[Modifier[js.Any, js.Object]]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiersVarargs(value: (Modifier[js.Any, js.Object])*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+      inline def setModifiersVarargs(value: (Modifier[js.Any, js.Object])*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setMutationObserverOptions(value: MutationObserverInit): Self = StObject.set(x, "mutationObserverOptions", value.asInstanceOf[js.Any])
+      inline def setMutationObserverOptions(value: MutationObserverInit): Self = StObject.set(x, "mutationObserverOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnVisibilityChange(value: Boolean => Unit): Self = StObject.set(x, "onVisibilityChange", js.Any.fromFunction1(value))
+      inline def setOnVisibilityChange(value: Boolean => Unit): Self = StObject.set(x, "onVisibilityChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortalContainer(value: HTMLElement): Self = StObject.set(x, "portalContainer", value.asInstanceOf[js.Any])
+      inline def setPortalContainer(value: HTMLElement): Self = StObject.set(x, "portalContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltip(value: TooltipArg => ReactNode): Self = StObject.set(x, "tooltip", js.Any.fromFunction1(value))
+      inline def setTooltip(value: TooltipArg => ReactNode): Self = StObject.set(x, "tooltip", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTooltipShown(value: Boolean): Self = StObject.set(x, "tooltipShown", value.asInstanceOf[js.Any])
+      inline def setTooltipShown(value: Boolean): Self = StObject.set(x, "tooltipShown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipShownUndefined: Self = StObject.set(x, "tooltipShown", js.undefined)
+      inline def setTooltipShownUndefined: Self = StObject.set(x, "tooltipShown", js.undefined)
       
-      @scala.inline
-      def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerVarargs(value: TriggerTypes*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+      inline def setTriggerVarargs(value: TriggerTypes*): Self = StObject.set(x, "trigger", js.Array(value :_*))
       
-      @scala.inline
-      def setUsePortal(value: Boolean): Self = StObject.set(x, "usePortal", value.asInstanceOf[js.Any])
+      inline def setUsePortal(value: Boolean): Self = StObject.set(x, "usePortal", value.asInstanceOf[js.Any])
     }
   }
   
@@ -508,29 +432,22 @@ object typesMod {
   }
   object TooltipTriggerState {
     
-    @scala.inline
-    def apply(tooltipShown: Boolean): TooltipTriggerState = {
+    inline def apply(tooltipShown: Boolean): TooltipTriggerState = {
       val __obj = js.Dynamic.literal(tooltipShown = tooltipShown.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipTriggerState]
     }
     
-    @scala.inline
-    implicit class TooltipTriggerStateMutableBuilder[Self <: TooltipTriggerState] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipTriggerState](x: Self) {
       
-      @scala.inline
-      def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageXUndefined: Self = StObject.set(x, "pageX", js.undefined)
+      inline def setPageXUndefined: Self = StObject.set(x, "pageX", js.undefined)
       
-      @scala.inline
-      def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageYUndefined: Self = StObject.set(x, "pageY", js.undefined)
+      inline def setPageYUndefined: Self = StObject.set(x, "pageY", js.undefined)
       
-      @scala.inline
-      def setTooltipShown(value: Boolean): Self = StObject.set(x, "tooltipShown", value.asInstanceOf[js.Any])
+      inline def setTooltipShown(value: Boolean): Self = StObject.set(x, "tooltipShown", value.asInstanceOf[js.Any])
     }
   }
   
@@ -546,19 +463,14 @@ object typesMod {
   trait TriggerTypes extends StObject
   object TriggerTypes {
     
-    @scala.inline
-    def click: typings.reactPopperTooltip.reactPopperTooltipStrings.click = "click".asInstanceOf[typings.reactPopperTooltip.reactPopperTooltipStrings.click]
+    inline def click: typings.reactPopperTooltip.reactPopperTooltipStrings.click = "click".asInstanceOf[typings.reactPopperTooltip.reactPopperTooltipStrings.click]
     
-    @scala.inline
-    def focus: typings.reactPopperTooltip.reactPopperTooltipStrings.focus = "focus".asInstanceOf[typings.reactPopperTooltip.reactPopperTooltipStrings.focus]
+    inline def focus: typings.reactPopperTooltip.reactPopperTooltipStrings.focus = "focus".asInstanceOf[typings.reactPopperTooltip.reactPopperTooltipStrings.focus]
     
-    @scala.inline
-    def hover: typings.reactPopperTooltip.reactPopperTooltipStrings.hover = "hover".asInstanceOf[typings.reactPopperTooltip.reactPopperTooltipStrings.hover]
+    inline def hover: typings.reactPopperTooltip.reactPopperTooltipStrings.hover = "hover".asInstanceOf[typings.reactPopperTooltip.reactPopperTooltipStrings.hover]
     
-    @scala.inline
-    def none: typings.reactPopperTooltip.reactPopperTooltipStrings.none = "none".asInstanceOf[typings.reactPopperTooltip.reactPopperTooltipStrings.none]
+    inline def none: typings.reactPopperTooltip.reactPopperTooltipStrings.none = "none".asInstanceOf[typings.reactPopperTooltip.reactPopperTooltipStrings.none]
     
-    @scala.inline
-    def `right-click`: typings.reactPopperTooltip.reactPopperTooltipStrings.`right-click` = "right-click".asInstanceOf[typings.reactPopperTooltip.reactPopperTooltipStrings.`right-click`]
+    inline def `right-click`: typings.reactPopperTooltip.reactPopperTooltipStrings.`right-click` = "right-click".asInstanceOf[typings.reactPopperTooltip.reactPopperTooltipStrings.`right-click`]
   }
 }

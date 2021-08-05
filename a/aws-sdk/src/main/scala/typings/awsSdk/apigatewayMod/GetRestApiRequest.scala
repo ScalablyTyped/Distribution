@@ -13,16 +13,13 @@ trait GetRestApiRequest extends StObject {
 }
 object GetRestApiRequest {
   
-  @scala.inline
-  def apply(restApiId: String): GetRestApiRequest = {
+  inline def apply(restApiId: String): GetRestApiRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRestApiRequest]
   }
   
-  @scala.inline
-  implicit class GetRestApiRequestMutableBuilder[Self <: GetRestApiRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRestApiRequest](x: Self) {
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

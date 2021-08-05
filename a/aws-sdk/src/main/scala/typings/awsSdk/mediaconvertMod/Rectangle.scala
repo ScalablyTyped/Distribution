@@ -28,37 +28,27 @@ trait Rectangle extends StObject {
 }
 object Rectangle {
   
-  @scala.inline
-  def apply(): Rectangle = {
+  inline def apply(): Rectangle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Rectangle]
   }
   
-  @scala.inline
-  implicit class RectangleMutableBuilder[Self <: Rectangle] (val x: Self) extends AnyVal {
+  extension [Self <: Rectangle](x: Self) {
     
-    @scala.inline
-    def setHeight(value: integerMin2Max2147483647): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: integerMin2Max2147483647): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: integerMin2Max2147483647): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: integerMin2Max2147483647): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
     
-    @scala.inline
-    def setX(value: integerMin0Max2147483647): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+    inline def setX(value: integerMin0Max2147483647): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "X", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "X", js.undefined)
     
-    @scala.inline
-    def setY(value: integerMin0Max2147483647): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+    inline def setY(value: integerMin0Max2147483647): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "Y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "Y", js.undefined)
   }
 }

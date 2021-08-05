@@ -13,7 +13,7 @@ trait OlkSenderPhoto extends StObject {
   
   var MousePointer: OlMousePointer
   
-  @JSName("Outlook.OlkSenderPhoto_typekey")
+  /* private */ @JSName("Outlook.OlkSenderPhoto_typekey")
   var OutlookDotOlkSenderPhoto_typekey: OlkSenderPhoto
   
   val PreferredHeight: Double
@@ -22,8 +22,7 @@ trait OlkSenderPhoto extends StObject {
 }
 object OlkSenderPhoto {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Enabled: Boolean,
     MouseIcon: StdPicture,
     MousePointer: OlMousePointer,
@@ -36,25 +35,18 @@ object OlkSenderPhoto {
     __obj.asInstanceOf[OlkSenderPhoto]
   }
   
-  @scala.inline
-  implicit class OlkSenderPhotoMutableBuilder[Self <: OlkSenderPhoto] (val x: Self) extends AnyVal {
+  extension [Self <: OlkSenderPhoto](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
+    inline def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
+    inline def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotOlkSenderPhoto_typekey(value: OlkSenderPhoto): Self = StObject.set(x, "Outlook.OlkSenderPhoto_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotOlkSenderPhoto_typekey(value: OlkSenderPhoto): Self = StObject.set(x, "Outlook.OlkSenderPhoto_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredHeight(value: Double): Self = StObject.set(x, "PreferredHeight", value.asInstanceOf[js.Any])
+    inline def setPreferredHeight(value: Double): Self = StObject.set(x, "PreferredHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredWidth(value: Double): Self = StObject.set(x, "PreferredWidth", value.asInstanceOf[js.Any])
+    inline def setPreferredWidth(value: Double): Self = StObject.set(x, "PreferredWidth", value.asInstanceOf[js.Any])
   }
 }

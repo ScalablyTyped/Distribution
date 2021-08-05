@@ -14,7 +14,7 @@ object maxLineLengthRuleMod {
   class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
     
-    var getRuleOptions: js.Any = js.native
+    /* private */ var getRuleOptions: js.Any = js.native
   }
   /* static members */
   object Rule {
@@ -23,13 +23,11 @@ object maxLineLengthRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def FAILURE_STRING_FACTORY(lineLimit: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_FACTORY")(lineLimit.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def FAILURE_STRING_FACTORY(lineLimit: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_FACTORY")(lineLimit.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/maxLineLengthRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

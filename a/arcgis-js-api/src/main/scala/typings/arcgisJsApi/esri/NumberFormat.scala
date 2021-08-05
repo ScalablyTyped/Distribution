@@ -26,8 +26,7 @@ trait NumberFormat
 }
 object NumberFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,19 +35,14 @@ object NumberFormat {
     __obj.asInstanceOf[NumberFormat]
   }
   
-  @scala.inline
-  implicit class NumberFormatMutableBuilder[Self <: NumberFormat] (val x: Self) extends AnyVal {
+  extension [Self <: NumberFormat](x: Self) {
     
-    @scala.inline
-    def setDigitSeparator(value: Boolean): Self = StObject.set(x, "digitSeparator", value.asInstanceOf[js.Any])
+    inline def setDigitSeparator(value: Boolean): Self = StObject.set(x, "digitSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigitSeparatorUndefined: Self = StObject.set(x, "digitSeparator", js.undefined)
+    inline def setDigitSeparatorUndefined: Self = StObject.set(x, "digitSeparator", js.undefined)
     
-    @scala.inline
-    def setPlaces(value: Double): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
+    inline def setPlaces(value: Double): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacesUndefined: Self = StObject.set(x, "places", js.undefined)
+    inline def setPlacesUndefined: Self = StObject.set(x, "places", js.undefined)
   }
 }

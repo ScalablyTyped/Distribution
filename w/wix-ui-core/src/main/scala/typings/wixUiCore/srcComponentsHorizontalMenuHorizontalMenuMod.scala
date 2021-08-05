@@ -33,20 +33,17 @@ object srcComponentsHorizontalMenuHorizontalMenuMod {
     @JSImport("wix-ui-core/src/components/horizontal-menu/HorizontalMenu", "HorizontalMenu.Item")
     @js.native
     def Item: TypeofHorizontalMenuItemInstantiableDefaultProps = js.native
-    @scala.inline
-    def Item_=(x: TypeofHorizontalMenuItemInstantiableDefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    inline def Item_=(x: TypeofHorizontalMenuItemInstantiableDefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/src/components/horizontal-menu/HorizontalMenu", "HorizontalMenu.Layout")
     @js.native
     def Layout: GridFC = js.native
-    @scala.inline
-    def Layout_=(x: GridFC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Layout")(x.asInstanceOf[js.Any])
+    inline def Layout_=(x: GridFC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Layout")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/src/components/horizontal-menu/HorizontalMenu", "HorizontalMenu.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait HorizontalMenuProps extends StObject {
@@ -61,32 +58,24 @@ object srcComponentsHorizontalMenuHorizontalMenuMod {
   }
   object HorizontalMenuProps {
     
-    @scala.inline
-    def apply(): HorizontalMenuProps = {
+    inline def apply(): HorizontalMenuProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HorizontalMenuProps]
     }
     
-    @scala.inline
-    implicit class HorizontalMenuPropsMutableBuilder[Self <: HorizontalMenuProps] (val x: Self) extends AnyVal {
+    extension [Self <: HorizontalMenuProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setMenuStyle(value: CSSProperties): Self = StObject.set(x, "menuStyle", value.asInstanceOf[js.Any])
+      inline def setMenuStyle(value: CSSProperties): Self = StObject.set(x, "menuStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuStyleUndefined: Self = StObject.set(x, "menuStyle", js.undefined)
+      inline def setMenuStyleUndefined: Self = StObject.set(x, "menuStyle", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

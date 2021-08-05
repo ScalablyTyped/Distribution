@@ -11,16 +11,13 @@ trait Recorder extends StObject {
 }
 object Recorder {
   
-  @scala.inline
-  def apply(record: Record => Unit): Recorder = {
+  inline def apply(record: Record => Unit): Recorder = {
     val __obj = js.Dynamic.literal(record = js.Any.fromFunction1(record))
     __obj.asInstanceOf[Recorder]
   }
   
-  @scala.inline
-  implicit class RecorderMutableBuilder[Self <: Recorder] (val x: Self) extends AnyVal {
+  extension [Self <: Recorder](x: Self) {
     
-    @scala.inline
-    def setRecord(value: Record => Unit): Self = StObject.set(x, "record", js.Any.fromFunction1(value))
+    inline def setRecord(value: Record => Unit): Self = StObject.set(x, "record", js.Any.fromFunction1(value))
   }
 }

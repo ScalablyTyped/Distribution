@@ -14,16 +14,13 @@ trait ScreencastFrameAckRequest extends StObject {
 }
 object ScreencastFrameAckRequest {
   
-  @scala.inline
-  def apply(sessionId: integer): ScreencastFrameAckRequest = {
+  inline def apply(sessionId: integer): ScreencastFrameAckRequest = {
     val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreencastFrameAckRequest]
   }
   
-  @scala.inline
-  implicit class ScreencastFrameAckRequestMutableBuilder[Self <: ScreencastFrameAckRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ScreencastFrameAckRequest](x: Self) {
     
-    @scala.inline
-    def setSessionId(value: integer): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: integer): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }
 }

@@ -343,6 +343,6 @@ object broadcasterMod {
       */
     /* protected */ def isAllowedSubscriber(subscriber: EntitySubscriberInterface[js.Any], target: js.Function): Boolean = js.native
     
-    var queryRunner: js.Any = js.native
+    /* private */ var queryRunner: js.Any = js.native
   }
 }

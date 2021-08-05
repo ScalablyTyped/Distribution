@@ -47,21 +47,16 @@ object configurationSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ConfigurationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ConfigurationSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ConfigurationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigurationSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ConfigurationSetState): ConfigurationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ConfigurationSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ConfigurationSetState, opts: CustomResourceOptions): ConfigurationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigurationSet]
+    inline def get(name: String, id: Input[ID]): ConfigurationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ConfigurationSet]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ConfigurationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigurationSet]
+    inline def get(name: String, id: Input[ID], state: ConfigurationSetState): ConfigurationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ConfigurationSet]
+    inline def get(name: String, id: Input[ID], state: ConfigurationSetState, opts: CustomResourceOptions): ConfigurationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigurationSet]
     
     /**
       * Returns true if the given object is an instance of ConfigurationSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/configurationSet.ConfigurationSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/configurationSet.ConfigurationSet */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/configurationSet.ConfigurationSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/configurationSet.ConfigurationSet */ Boolean]
   }
   
   trait ConfigurationSetArgs extends StObject {
@@ -73,20 +68,16 @@ object configurationSetMod {
   }
   object ConfigurationSetArgs {
     
-    @scala.inline
-    def apply(): ConfigurationSetArgs = {
+    inline def apply(): ConfigurationSetArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurationSetArgs]
     }
     
-    @scala.inline
-    implicit class ConfigurationSetArgsMutableBuilder[Self <: ConfigurationSetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationSetArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -99,20 +90,16 @@ object configurationSetMod {
   }
   object ConfigurationSetState {
     
-    @scala.inline
-    def apply(): ConfigurationSetState = {
+    inline def apply(): ConfigurationSetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurationSetState]
     }
     
-    @scala.inline
-    implicit class ConfigurationSetStateMutableBuilder[Self <: ConfigurationSetState] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationSetState](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

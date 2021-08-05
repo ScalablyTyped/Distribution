@@ -38,8 +38,7 @@ trait GitAsyncRefOperationDetail extends StObject {
 }
 object GitAsyncRefOperationDetail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     conflict: Boolean,
     currentCommitId: String,
     failureMessage: String,
@@ -51,25 +50,18 @@ object GitAsyncRefOperationDetail {
     __obj.asInstanceOf[GitAsyncRefOperationDetail]
   }
   
-  @scala.inline
-  implicit class GitAsyncRefOperationDetailMutableBuilder[Self <: GitAsyncRefOperationDetail] (val x: Self) extends AnyVal {
+  extension [Self <: GitAsyncRefOperationDetail](x: Self) {
     
-    @scala.inline
-    def setConflict(value: Boolean): Self = StObject.set(x, "conflict", value.asInstanceOf[js.Any])
+    inline def setConflict(value: Boolean): Self = StObject.set(x, "conflict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentCommitId(value: String): Self = StObject.set(x, "currentCommitId", value.asInstanceOf[js.Any])
+    inline def setCurrentCommitId(value: String): Self = StObject.set(x, "currentCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureMessage(value: String): Self = StObject.set(x, "failureMessage", value.asInstanceOf[js.Any])
+    inline def setFailureMessage(value: String): Self = StObject.set(x, "failureMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: GitAsyncRefOperationFailureStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GitAsyncRefOperationFailureStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedout(value: Boolean): Self = StObject.set(x, "timedout", value.asInstanceOf[js.Any])
+    inline def setTimedout(value: Boolean): Self = StObject.set(x, "timedout", value.asInstanceOf[js.Any])
   }
 }

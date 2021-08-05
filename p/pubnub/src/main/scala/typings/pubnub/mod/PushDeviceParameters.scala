@@ -12,19 +12,15 @@ trait PushDeviceParameters extends StObject {
 }
 object PushDeviceParameters {
   
-  @scala.inline
-  def apply(device: String, pushGateway: String): PushDeviceParameters = {
+  inline def apply(device: String, pushGateway: String): PushDeviceParameters = {
     val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], pushGateway = pushGateway.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushDeviceParameters]
   }
   
-  @scala.inline
-  implicit class PushDeviceParametersMutableBuilder[Self <: PushDeviceParameters] (val x: Self) extends AnyVal {
+  extension [Self <: PushDeviceParameters](x: Self) {
     
-    @scala.inline
-    def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushGateway(value: String): Self = StObject.set(x, "pushGateway", value.asInstanceOf[js.Any])
+    inline def setPushGateway(value: String): Self = StObject.set(x, "pushGateway", value.asInstanceOf[js.Any])
   }
 }

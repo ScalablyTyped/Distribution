@@ -25,103 +25,73 @@ object dialogMod {
   @JSImport("plugins/dialog", "MessageBox")
   @js.native
   def MessageBox: Box = js.native
-  @scala.inline
-  def MessageBox_=(x: Box): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MessageBox")(x.asInstanceOf[js.Any])
+  inline def MessageBox_=(x: Box): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MessageBox")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def addContext(name: String, modalContext: DialogContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addContext")(name.asInstanceOf[js.Any], modalContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addContext(name: String, modalContext: DialogContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addContext")(name.asInstanceOf[js.Any], modalContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def close(obj: js.Any, results: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(obj.asInstanceOf[js.Any], results.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def close(obj: js.Any, results: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(obj.asInstanceOf[js.Any], results.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("plugins/dialog", "currentZIndex")
   @js.native
   def currentZIndex: Double = js.native
-  @scala.inline
-  def currentZIndex_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentZIndex")(x.asInstanceOf[js.Any])
+  inline def currentZIndex_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentZIndex")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def getContext(): DialogContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")().asInstanceOf[DialogContext]
-  @scala.inline
-  def getContext(name: String): DialogContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(name.asInstanceOf[js.Any]).asInstanceOf[DialogContext]
+  inline def getContext(): DialogContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")().asInstanceOf[DialogContext]
+  inline def getContext(name: String): DialogContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(name.asInstanceOf[js.Any]).asInstanceOf[DialogContext]
   
-  @scala.inline
-  def getDialog(obj: js.Any): Dialog = ^.asInstanceOf[js.Dynamic].applyDynamic("getDialog")(obj.asInstanceOf[js.Any]).asInstanceOf[Dialog]
+  inline def getDialog(obj: js.Any): Dialog = ^.asInstanceOf[js.Dynamic].applyDynamic("getDialog")(obj.asInstanceOf[js.Any]).asInstanceOf[Dialog]
   
-  @scala.inline
-  def getNextZIndex(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextZIndex")().asInstanceOf[Double]
+  inline def getNextZIndex(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextZIndex")().asInstanceOf[Double]
   
-  @scala.inline
-  def install(config: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def install(config: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def isOpen(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOpen")().asInstanceOf[Boolean]
+  inline def isOpen(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOpen")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def show(obj: js.Any): DurandalPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(obj.asInstanceOf[js.Any]).asInstanceOf[DurandalPromise[js.Any]]
-  @scala.inline
-  def show(obj: js.Any, activationData: js.Any): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(obj.asInstanceOf[js.Any], activationData.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
-  @scala.inline
-  def show(obj: js.Any, activationData: js.Any, context: String): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(obj.asInstanceOf[js.Any], activationData.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
-  @scala.inline
-  def show(obj: js.Any, activationData: Unit, context: String): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(obj.asInstanceOf[js.Any], activationData.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
+  inline def show(obj: js.Any): DurandalPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(obj.asInstanceOf[js.Any]).asInstanceOf[DurandalPromise[js.Any]]
+  inline def show(obj: js.Any, activationData: js.Any): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(obj.asInstanceOf[js.Any], activationData.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
+  inline def show(obj: js.Any, activationData: js.Any, context: String): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(obj.asInstanceOf[js.Any], activationData.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
+  inline def show(obj: js.Any, activationData: Unit, context: String): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(obj.asInstanceOf[js.Any], activationData.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
   
-  @scala.inline
-  def showMessage(message: String): DurandalPromise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any]).asInstanceOf[DurandalPromise[String]]
-  @scala.inline
-  def showMessage(message: String, title: String): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
-  @scala.inline
-  def showMessage(message: String, title: String, options: js.Array[DialogButton | String]): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
-  @scala.inline
-  def showMessage(message: String, title: String, options: js.Array[DialogButton | String], autoclose: Boolean): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
-  @scala.inline
-  def showMessage(
+  inline def showMessage(message: String): DurandalPromise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any]).asInstanceOf[DurandalPromise[String]]
+  inline def showMessage(message: String, title: String): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
+  inline def showMessage(message: String, title: String, options: js.Array[DialogButton | String]): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
+  inline def showMessage(message: String, title: String, options: js.Array[DialogButton | String], autoclose: Boolean): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
+  inline def showMessage(
     message: String,
     title: String,
     options: js.Array[DialogButton | String],
     autoclose: Boolean,
     settings: js.Object
   ): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
-  @scala.inline
-  def showMessage(
+  inline def showMessage(
     message: String,
     title: String,
     options: js.Array[DialogButton | String],
     autoclose: Unit,
     settings: js.Object
   ): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
-  @scala.inline
-  def showMessage(message: String, title: String, options: Unit, autoclose: Boolean): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
-  @scala.inline
-  def showMessage(message: String, title: String, options: Unit, autoclose: Boolean, settings: js.Object): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
-  @scala.inline
-  def showMessage(message: String, title: String, options: Unit, autoclose: Unit, settings: js.Object): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
-  @scala.inline
-  def showMessage(message: String, title: Unit, options: js.Array[DialogButton | String]): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
-  @scala.inline
-  def showMessage(message: String, title: Unit, options: js.Array[DialogButton | String], autoclose: Boolean): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
-  @scala.inline
-  def showMessage(
+  inline def showMessage(message: String, title: String, options: Unit, autoclose: Boolean): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
+  inline def showMessage(message: String, title: String, options: Unit, autoclose: Boolean, settings: js.Object): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
+  inline def showMessage(message: String, title: String, options: Unit, autoclose: Unit, settings: js.Object): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
+  inline def showMessage(message: String, title: Unit, options: js.Array[DialogButton | String]): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
+  inline def showMessage(message: String, title: Unit, options: js.Array[DialogButton | String], autoclose: Boolean): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
+  inline def showMessage(
     message: String,
     title: Unit,
     options: js.Array[DialogButton | String],
     autoclose: Boolean,
     settings: js.Object
   ): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
-  @scala.inline
-  def showMessage(
+  inline def showMessage(
     message: String,
     title: Unit,
     options: js.Array[DialogButton | String],
     autoclose: Unit,
     settings: js.Object
   ): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
-  @scala.inline
-  def showMessage(message: String, title: Unit, options: Unit, autoclose: Boolean): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
-  @scala.inline
-  def showMessage(message: String, title: Unit, options: Unit, autoclose: Boolean, settings: js.Object): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
-  @scala.inline
-  def showMessage(message: String, title: Unit, options: Unit, autoclose: Unit, settings: js.Object): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
+  inline def showMessage(message: String, title: Unit, options: Unit, autoclose: Boolean): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
+  inline def showMessage(message: String, title: Unit, options: Unit, autoclose: Boolean, settings: js.Object): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
+  inline def showMessage(message: String, title: Unit, options: Unit, autoclose: Unit, settings: js.Object): DurandalPromise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showMessage")(message.asInstanceOf[js.Any], title.asInstanceOf[js.Any], options.asInstanceOf[js.Any], autoclose.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[String]]
   
   /**
     * Models a message box's message, title and options.
@@ -143,20 +113,16 @@ object dialogMod {
   }
   object Box {
     
-    @scala.inline
-    def apply(getView: () => HTMLElement, selectOption: String => Unit): Box = {
+    inline def apply(getView: () => HTMLElement, selectOption: String => Unit): Box = {
       val __obj = js.Dynamic.literal(getView = js.Any.fromFunction0(getView), selectOption = js.Any.fromFunction1(selectOption))
       __obj.asInstanceOf[Box]
     }
     
-    @scala.inline
-    implicit class BoxMutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
+    extension [Self <: Box](x: Self) {
       
-      @scala.inline
-      def setGetView(value: () => HTMLElement): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
+      inline def setGetView(value: () => HTMLElement): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSelectOption(value: String => Unit): Self = StObject.set(x, "selectOption", js.Any.fromFunction1(value))
+      inline def setSelectOption(value: String => Unit): Self = StObject.set(x, "selectOption", js.Any.fromFunction1(value))
     }
   }
   
@@ -176,8 +142,7 @@ object dialogMod {
   }
   object Dialog {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activator: DurandalActivator[js.Any],
       close: () => DurandalPromise[js.Any],
       context: DialogContext,
@@ -189,26 +154,19 @@ object dialogMod {
       __obj.asInstanceOf[Dialog]
     }
     
-    @scala.inline
-    implicit class DialogMutableBuilder[Self <: Dialog] (val x: Self) extends AnyVal {
+    extension [Self <: Dialog](x: Self) {
       
-      @scala.inline
-      def setActivator(value: DurandalActivator[js.Any]): Self = StObject.set(x, "activator", value.asInstanceOf[js.Any])
+      inline def setActivator(value: DurandalActivator[js.Any]): Self = StObject.set(x, "activator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClose(value: () => DurandalPromise[js.Any]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => DurandalPromise[js.Any]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContext(value: DialogContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: DialogContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings(value: CompositionContext): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: CompositionContext): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }
   }
   
@@ -241,8 +199,7 @@ object dialogMod {
   }
   object DialogContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addHost: Dialog => Unit,
       compositionComplete: (HTMLElement, HTMLElement, CompositionContext) => Unit,
       removeHost: Dialog => Unit
@@ -251,23 +208,17 @@ object dialogMod {
       __obj.asInstanceOf[DialogContext]
     }
     
-    @scala.inline
-    implicit class DialogContextMutableBuilder[Self <: DialogContext] (val x: Self) extends AnyVal {
+    extension [Self <: DialogContext](x: Self) {
       
-      @scala.inline
-      def setAddHost(value: Dialog => Unit): Self = StObject.set(x, "addHost", js.Any.fromFunction1(value))
+      inline def setAddHost(value: Dialog => Unit): Self = StObject.set(x, "addHost", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBlockoutOpacity(value: Double): Self = StObject.set(x, "blockoutOpacity", value.asInstanceOf[js.Any])
+      inline def setBlockoutOpacity(value: Double): Self = StObject.set(x, "blockoutOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockoutOpacityUndefined: Self = StObject.set(x, "blockoutOpacity", js.undefined)
+      inline def setBlockoutOpacityUndefined: Self = StObject.set(x, "blockoutOpacity", js.undefined)
       
-      @scala.inline
-      def setCompositionComplete(value: (HTMLElement, HTMLElement, CompositionContext) => Unit): Self = StObject.set(x, "compositionComplete", js.Any.fromFunction3(value))
+      inline def setCompositionComplete(value: (HTMLElement, HTMLElement, CompositionContext) => Unit): Self = StObject.set(x, "compositionComplete", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRemoveHost(value: Dialog => Unit): Self = StObject.set(x, "removeHost", js.Any.fromFunction1(value))
+      inline def setRemoveHost(value: Dialog => Unit): Self = StObject.set(x, "removeHost", js.Any.fromFunction1(value))
     }
   }
 }

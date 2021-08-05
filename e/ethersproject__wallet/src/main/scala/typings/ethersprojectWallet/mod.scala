@@ -85,42 +85,27 @@ object mod {
     /**
       *  Static methods to create Wallet instances.
       */
-    @scala.inline
-    def createRandom(): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")().asInstanceOf[Wallet]
-    @scala.inline
-    def createRandom(options: js.Any): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")(options.asInstanceOf[js.Any]).asInstanceOf[Wallet]
+    inline def createRandom(): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")().asInstanceOf[Wallet]
+    inline def createRandom(options: js.Any): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")(options.asInstanceOf[js.Any]).asInstanceOf[Wallet]
     
-    @scala.inline
-    def fromEncryptedJson(json: String, password: String): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
-    @scala.inline
-    def fromEncryptedJson(json: String, password: String, progressCallback: ProgressCallback): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
-    @scala.inline
-    def fromEncryptedJson(json: String, password: Bytes): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
-    @scala.inline
-    def fromEncryptedJson(json: String, password: Bytes, progressCallback: ProgressCallback): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
+    inline def fromEncryptedJson(json: String, password: String): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
+    inline def fromEncryptedJson(json: String, password: String, progressCallback: ProgressCallback): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
+    inline def fromEncryptedJson(json: String, password: Bytes): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
+    inline def fromEncryptedJson(json: String, password: Bytes, progressCallback: ProgressCallback): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
     
-    @scala.inline
-    def fromEncryptedJsonSync(json: String, password: String): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJsonSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Wallet]
-    @scala.inline
-    def fromEncryptedJsonSync(json: String, password: Bytes): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJsonSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Wallet]
+    inline def fromEncryptedJsonSync(json: String, password: String): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJsonSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Wallet]
+    inline def fromEncryptedJsonSync(json: String, password: Bytes): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJsonSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Wallet]
     
-    @scala.inline
-    def fromMnemonic(mnemonic: String): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any]).asInstanceOf[Wallet]
-    @scala.inline
-    def fromMnemonic(mnemonic: String, path: String): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Wallet]
-    @scala.inline
-    def fromMnemonic(mnemonic: String, path: String, wordlist: Wordlist): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], path.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[Wallet]
-    @scala.inline
-    def fromMnemonic(mnemonic: String, path: Unit, wordlist: Wordlist): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], path.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[Wallet]
+    inline def fromMnemonic(mnemonic: String): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any]).asInstanceOf[Wallet]
+    inline def fromMnemonic(mnemonic: String, path: String): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Wallet]
+    inline def fromMnemonic(mnemonic: String, path: String, wordlist: Wordlist): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], path.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[Wallet]
+    inline def fromMnemonic(mnemonic: String, path: Unit, wordlist: Wordlist): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], path.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[Wallet]
   }
   
-  @scala.inline
-  def verifyMessage(message: String, signature: SignatureLike): String = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyMessage")(message.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def verifyMessage(message: Bytes, signature: SignatureLike): String = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyMessage")(message.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def verifyMessage(message: String, signature: SignatureLike): String = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyMessage")(message.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def verifyMessage(message: Bytes, signature: SignatureLike): String = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyMessage")(message.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def verifyTypedData(
+  inline def verifyTypedData(
     domain: TypedDataDomain,
     types: Record[String, js.Array[TypedDataField]],
     value: Record[String, js.Any],

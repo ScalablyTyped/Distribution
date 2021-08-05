@@ -14,13 +14,12 @@ trait CoAuthUpdate extends StObject {
   
   val Range: typings.activexWord.Word.Range
   
-  @JSName("Word.CoAuthUpdate_typekey")
+  /* private */ @JSName("Word.CoAuthUpdate_typekey")
   var WordDotCoAuthUpdate_typekey: CoAuthUpdate
 }
 object CoAuthUpdate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Parent: js.Any,
@@ -32,22 +31,16 @@ object CoAuthUpdate {
     __obj.asInstanceOf[CoAuthUpdate]
   }
   
-  @scala.inline
-  implicit class CoAuthUpdateMutableBuilder[Self <: CoAuthUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: CoAuthUpdate](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotCoAuthUpdate_typekey(value: CoAuthUpdate): Self = StObject.set(x, "Word.CoAuthUpdate_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotCoAuthUpdate_typekey(value: CoAuthUpdate): Self = StObject.set(x, "Word.CoAuthUpdate_typekey", value.asInstanceOf[js.Any])
   }
 }

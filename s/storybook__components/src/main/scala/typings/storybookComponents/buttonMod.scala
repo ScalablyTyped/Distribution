@@ -32,20 +32,16 @@ object buttonMod {
   }
   object ButtonProps {
     
-    @scala.inline
-    def apply(): ButtonProps = {
+    inline def apply(): ButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonProps]
     }
     
-    @scala.inline
-    implicit class ButtonPropsMutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonProps](x: Self) {
       
-      @scala.inline
-      def setHref(value: Unit): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: Unit): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     }
   }
   
@@ -55,20 +51,16 @@ object buttonMod {
   }
   object IconButtonProps {
     
-    @scala.inline
-    def apply(): IconButtonProps = {
+    inline def apply(): IconButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IconButtonProps]
     }
     
-    @scala.inline
-    implicit class IconButtonPropsMutableBuilder[Self <: IconButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconButtonProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     }
   }
   
@@ -82,17 +74,14 @@ object buttonMod {
   }
   object LinkProps {
     
-    @scala.inline
-    def apply(href: String): LinkProps = {
+    inline def apply(href: String): LinkProps = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkProps]
     }
     
-    @scala.inline
-    implicit class LinkPropsMutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: LinkProps](x: Self) {
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,26 +93,20 @@ object buttonMod {
   }
   object TabButtonProps {
     
-    @scala.inline
-    def apply(): TabButtonProps = {
+    inline def apply(): TabButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabButtonProps]
     }
     
-    @scala.inline
-    implicit class TabButtonPropsMutableBuilder[Self <: TabButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabButtonProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+      inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+      inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     }
   }
 }

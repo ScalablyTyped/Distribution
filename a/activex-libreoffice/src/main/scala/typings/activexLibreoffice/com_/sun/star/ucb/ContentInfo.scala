@@ -51,22 +51,17 @@ trait ContentInfo extends StObject {
 }
 object ContentInfo {
   
-  @scala.inline
-  def apply(Attributes: Double, Properties: SafeArray[Property], Type: String): ContentInfo = {
+  inline def apply(Attributes: Double, Properties: SafeArray[Property], Type: String): ContentInfo = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentInfo]
   }
   
-  @scala.inline
-  implicit class ContentInfoMutableBuilder[Self <: ContentInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ContentInfo](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Double): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Double): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: SafeArray[Property]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SafeArray[Property]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

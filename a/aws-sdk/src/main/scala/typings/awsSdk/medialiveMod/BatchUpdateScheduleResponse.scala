@@ -18,25 +18,19 @@ trait BatchUpdateScheduleResponse extends StObject {
 }
 object BatchUpdateScheduleResponse {
   
-  @scala.inline
-  def apply(): BatchUpdateScheduleResponse = {
+  inline def apply(): BatchUpdateScheduleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchUpdateScheduleResponse]
   }
   
-  @scala.inline
-  implicit class BatchUpdateScheduleResponseMutableBuilder[Self <: BatchUpdateScheduleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchUpdateScheduleResponse](x: Self) {
     
-    @scala.inline
-    def setCreates(value: BatchScheduleActionCreateResult): Self = StObject.set(x, "Creates", value.asInstanceOf[js.Any])
+    inline def setCreates(value: BatchScheduleActionCreateResult): Self = StObject.set(x, "Creates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatesUndefined: Self = StObject.set(x, "Creates", js.undefined)
+    inline def setCreatesUndefined: Self = StObject.set(x, "Creates", js.undefined)
     
-    @scala.inline
-    def setDeletes(value: BatchScheduleActionDeleteResult): Self = StObject.set(x, "Deletes", value.asInstanceOf[js.Any])
+    inline def setDeletes(value: BatchScheduleActionDeleteResult): Self = StObject.set(x, "Deletes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletesUndefined: Self = StObject.set(x, "Deletes", js.undefined)
+    inline def setDeletesUndefined: Self = StObject.set(x, "Deletes", js.undefined)
   }
 }

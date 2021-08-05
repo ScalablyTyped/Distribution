@@ -23,19 +23,15 @@ trait ASPxClientListEditCustomHighlightingEventArgs
 }
 object ASPxClientListEditCustomHighlightingEventArgs {
   
-  @scala.inline
-  def apply(filter: String, highlighting: js.Any): ASPxClientListEditCustomHighlightingEventArgs = {
+  inline def apply(filter: String, highlighting: js.Any): ASPxClientListEditCustomHighlightingEventArgs = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], highlighting = highlighting.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientListEditCustomHighlightingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientListEditCustomHighlightingEventArgsMutableBuilder[Self <: ASPxClientListEditCustomHighlightingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientListEditCustomHighlightingEventArgs](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlighting(value: js.Any): Self = StObject.set(x, "highlighting", value.asInstanceOf[js.Any])
+    inline def setHighlighting(value: js.Any): Self = StObject.set(x, "highlighting", value.asInstanceOf[js.Any])
   }
 }

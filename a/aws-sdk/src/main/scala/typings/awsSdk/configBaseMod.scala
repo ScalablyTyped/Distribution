@@ -303,50 +303,36 @@ object configBaseMod {
   }
   object HTTPOptions {
     
-    @scala.inline
-    def apply(): HTTPOptions = {
+    inline def apply(): HTTPOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HTTPOptions]
     }
     
-    @scala.inline
-    implicit class HTTPOptionsMutableBuilder[Self <: HTTPOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HTTPOptions](x: Self) {
       
-      @scala.inline
-      def setAgent(value: Agent | typings.node.httpsMod.Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Agent | typings.node.httpsMod.Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
+      inline def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
       
-      @scala.inline
-      def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setXhrAsync(value: Boolean): Self = StObject.set(x, "xhrAsync", value.asInstanceOf[js.Any])
+      inline def setXhrAsync(value: Boolean): Self = StObject.set(x, "xhrAsync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhrAsyncUndefined: Self = StObject.set(x, "xhrAsync", js.undefined)
+      inline def setXhrAsyncUndefined: Self = StObject.set(x, "xhrAsync", js.undefined)
       
-      @scala.inline
-      def setXhrWithCredentials(value: Boolean): Self = StObject.set(x, "xhrWithCredentials", value.asInstanceOf[js.Any])
+      inline def setXhrWithCredentials(value: Boolean): Self = StObject.set(x, "xhrWithCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhrWithCredentialsUndefined: Self = StObject.set(x, "xhrWithCredentials", js.undefined)
+      inline def setXhrWithCredentialsUndefined: Self = StObject.set(x, "xhrWithCredentials", js.undefined)
     }
   }
   
@@ -365,28 +351,22 @@ object configBaseMod {
   }
   object Logger {
     
-    @scala.inline
-    def apply(): Logger = {
+    inline def apply(): Logger = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Logger]
     }
     
-    @scala.inline
-    implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+    extension [Self <: Logger](x: Self) {
       
-      @scala.inline
-      def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setWrite(
+      inline def setWrite(
         value: (/* chunk */ js.Any, /* encoding */ js.UndefOr[String], /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit
       ): Self = StObject.set(x, "write", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+      inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
     }
   }
   
@@ -415,38 +395,28 @@ object configBaseMod {
   }
   object ParamValidation {
     
-    @scala.inline
-    def apply(): ParamValidation = {
+    inline def apply(): ParamValidation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParamValidation]
     }
     
-    @scala.inline
-    implicit class ParamValidationMutableBuilder[Self <: ParamValidation] (val x: Self) extends AnyVal {
+    extension [Self <: ParamValidation](x: Self) {
       
-      @scala.inline
-      def setEnum(value: Boolean): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+      inline def setEnum(value: Boolean): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
+      inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
       
-      @scala.inline
-      def setMax(value: Boolean): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Boolean): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setPattern(value: Boolean): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: Boolean): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+      inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     }
   }
   
@@ -466,26 +436,20 @@ object configBaseMod {
   }
   object RetryDelayOptions {
     
-    @scala.inline
-    def apply(): RetryDelayOptions = {
+    inline def apply(): RetryDelayOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RetryDelayOptions]
     }
     
-    @scala.inline
-    implicit class RetryDelayOptionsMutableBuilder[Self <: RetryDelayOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RetryDelayOptions](x: Self) {
       
-      @scala.inline
-      def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setCustomBackoff(value: (/* retryCount */ Double, /* err */ js.UndefOr[Error]) => Double): Self = StObject.set(x, "customBackoff", js.Any.fromFunction2(value))
+      inline def setCustomBackoff(value: (/* retryCount */ Double, /* err */ js.UndefOr[Error]) => Double): Self = StObject.set(x, "customBackoff", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCustomBackoffUndefined: Self = StObject.set(x, "customBackoff", js.undefined)
+      inline def setCustomBackoffUndefined: Self = StObject.set(x, "customBackoff", js.undefined)
     }
   }
 }

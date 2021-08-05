@@ -16,18 +16,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceState extends StObject
 object DeviceState {
   
-  @scala.inline
-  def Disabled: Disabled_ = "Disabled".asInstanceOf[Disabled_]
+  inline def Disabled: Disabled_ = "Disabled".asInstanceOf[Disabled_]
   
-  @scala.inline
-  def Enabled: typings.chromeApps.chromeAppsStrings.Enabled = "Enabled".asInstanceOf[typings.chromeApps.chromeAppsStrings.Enabled]
+  inline def Enabled: typings.chromeApps.chromeAppsStrings.Enabled = "Enabled".asInstanceOf[typings.chromeApps.chromeAppsStrings.Enabled]
   
-  @scala.inline
-  def Enabling: typings.chromeApps.chromeAppsStrings.Enabling = "Enabling".asInstanceOf[typings.chromeApps.chromeAppsStrings.Enabling]
+  inline def Enabling: typings.chromeApps.chromeAppsStrings.Enabling = "Enabling".asInstanceOf[typings.chromeApps.chromeAppsStrings.Enabling]
   
-  @scala.inline
-  def Prohibited: typings.chromeApps.chromeAppsStrings.Prohibited = "Prohibited".asInstanceOf[typings.chromeApps.chromeAppsStrings.Prohibited]
+  inline def Prohibited: typings.chromeApps.chromeAppsStrings.Prohibited = "Prohibited".asInstanceOf[typings.chromeApps.chromeAppsStrings.Prohibited]
   
-  @scala.inline
-  def Uninitialized: typings.chromeApps.chromeAppsStrings.Uninitialized = "Uninitialized".asInstanceOf[typings.chromeApps.chromeAppsStrings.Uninitialized]
+  inline def Uninitialized: typings.chromeApps.chromeAppsStrings.Uninitialized = "Uninitialized".asInstanceOf[typings.chromeApps.chromeAppsStrings.Uninitialized]
 }

@@ -12,6 +12,5 @@ object scriptsElementClearMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(html: HTMLElement, elem: HTMLInputElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(html.asInstanceOf[js.Any], elem.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(html: HTMLElement, elem: HTMLInputElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(html.asInstanceOf[js.Any], elem.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

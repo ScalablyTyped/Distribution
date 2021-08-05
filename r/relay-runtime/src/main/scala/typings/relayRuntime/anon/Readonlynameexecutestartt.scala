@@ -23,25 +23,19 @@ trait Readonlynameexecutestartt
 }
 object Readonlynameexecutestartt {
   
-  @scala.inline
-  def apply(params: RequestParameters, transactionID: Double, variables: Variables): Readonlynameexecutestartt = {
+  inline def apply(params: RequestParameters, transactionID: Double, variables: Variables): Readonlynameexecutestartt = {
     val __obj = js.Dynamic.literal(name = "execute.start", params = params.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynameexecutestartt]
   }
   
-  @scala.inline
-  implicit class ReadonlynameexecutestarttMutableBuilder[Self <: Readonlynameexecutestartt] (val x: Self) extends AnyVal {
+  extension [Self <: Readonlynameexecutestartt](x: Self) {
     
-    @scala.inline
-    def setName(value: executeDotstart): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: executeDotstart): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: RequestParameters): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: RequestParameters): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionID(value: Double): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
+    inline def setTransactionID(value: Double): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

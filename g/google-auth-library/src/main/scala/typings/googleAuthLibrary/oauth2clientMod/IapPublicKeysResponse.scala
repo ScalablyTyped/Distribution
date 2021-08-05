@@ -13,25 +13,19 @@ trait IapPublicKeysResponse extends StObject {
 }
 object IapPublicKeysResponse {
   
-  @scala.inline
-  def apply(pubkeys: PublicKeys): IapPublicKeysResponse = {
+  inline def apply(pubkeys: PublicKeys): IapPublicKeysResponse = {
     val __obj = js.Dynamic.literal(pubkeys = pubkeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[IapPublicKeysResponse]
   }
   
-  @scala.inline
-  implicit class IapPublicKeysResponseMutableBuilder[Self <: IapPublicKeysResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IapPublicKeysResponse](x: Self) {
     
-    @scala.inline
-    def setPubkeys(value: PublicKeys): Self = StObject.set(x, "pubkeys", value.asInstanceOf[js.Any])
+    inline def setPubkeys(value: PublicKeys): Self = StObject.set(x, "pubkeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRes(value: GaxiosResponse[Unit]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: GaxiosResponse[Unit]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResNull: Self = StObject.set(x, "res", null)
+    inline def setResNull: Self = StObject.set(x, "res", null)
     
-    @scala.inline
-    def setResUndefined: Self = StObject.set(x, "res", js.undefined)
+    inline def setResUndefined: Self = StObject.set(x, "res", js.undefined)
   }
 }

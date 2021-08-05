@@ -37,37 +37,27 @@ trait IgGridGroupByGroupedColumn
 }
 object IgGridGroupByGroupedColumn {
   
-  @scala.inline
-  def apply(): IgGridGroupByGroupedColumn = {
+  inline def apply(): IgGridGroupByGroupedColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridGroupByGroupedColumn]
   }
   
-  @scala.inline
-  implicit class IgGridGroupByGroupedColumnMutableBuilder[Self <: IgGridGroupByGroupedColumn] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridGroupByGroupedColumn](x: Self) {
     
-    @scala.inline
-    def setCol(value: js.Any): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+    inline def setCol(value: js.Any): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColUndefined: Self = StObject.set(x, "col", js.undefined)
+    inline def setColUndefined: Self = StObject.set(x, "col", js.undefined)
     
-    @scala.inline
-    def setDir(value: js.Any): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: js.Any): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
   }
 }

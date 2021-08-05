@@ -15,15 +15,15 @@ object standardMenuMod {
     extends StObject
        with IMenuFactory {
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var filterManager: js.Any = js.native
+    /* private */ var filterManager: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var hidePopup: js.Any = js.native
+    /* private */ var hidePopup: js.Any = js.native
     
-    var popupService: js.Any = js.native
+    /* private */ var popupService: js.Any = js.native
     
     def showPopup(column: Column, positionCallback: js.Function1[/* eMenu */ HTMLElement, Unit]): Unit = js.native
   }

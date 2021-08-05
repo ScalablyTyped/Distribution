@@ -14,20 +14,16 @@ object core {
   }
   object Locale {
     
-    @scala.inline
-    def apply(months: java.lang.String, weekdays: java.lang.String): Locale = {
+    inline def apply(months: java.lang.String, weekdays: java.lang.String): Locale = {
       val __obj = js.Dynamic.literal(months = months.asInstanceOf[js.Any], weekdays = weekdays.asInstanceOf[js.Any])
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setMonths(value: java.lang.String): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      inline def setMonths(value: java.lang.String): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdays(value: java.lang.String): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
+      inline def setWeekdays(value: java.lang.String): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
     }
   }
 }

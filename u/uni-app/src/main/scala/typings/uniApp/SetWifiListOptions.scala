@@ -28,40 +28,29 @@ trait SetWifiListOptions extends StObject {
 }
 object SetWifiListOptions {
   
-  @scala.inline
-  def apply(): SetWifiListOptions = {
+  inline def apply(): SetWifiListOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetWifiListOptions]
   }
   
-  @scala.inline
-  implicit class SetWifiListOptionsMutableBuilder[Self <: SetWifiListOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SetWifiListOptions](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+    inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
+    inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setWifiList(value: js.Array[WiFiItem]): Self = StObject.set(x, "wifiList", value.asInstanceOf[js.Any])
+    inline def setWifiList(value: js.Array[WiFiItem]): Self = StObject.set(x, "wifiList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiListUndefined: Self = StObject.set(x, "wifiList", js.undefined)
+    inline def setWifiListUndefined: Self = StObject.set(x, "wifiList", js.undefined)
     
-    @scala.inline
-    def setWifiListVarargs(value: WiFiItem*): Self = StObject.set(x, "wifiList", js.Array(value :_*))
+    inline def setWifiListVarargs(value: WiFiItem*): Self = StObject.set(x, "wifiList", js.Array(value :_*))
   }
 }

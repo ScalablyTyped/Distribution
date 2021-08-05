@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(tagged: TemplateStringsArray): String | js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(tagged.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[String]]
+  inline def default(tagged: TemplateStringsArray): String | js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(tagged.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[String]]
 }

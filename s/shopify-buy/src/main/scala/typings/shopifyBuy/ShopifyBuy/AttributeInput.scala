@@ -18,43 +18,31 @@ trait AttributeInput extends StObject {
 }
 object AttributeInput {
   
-  @scala.inline
-  def apply(): AttributeInput = {
+  inline def apply(): AttributeInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttributeInput]
   }
   
-  @scala.inline
-  implicit class AttributeInputMutableBuilder[Self <: AttributeInput] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeInput](x: Self) {
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setVariantId(value: String): Self = StObject.set(x, "variantId", value.asInstanceOf[js.Any])
+    inline def setVariantId(value: String): Self = StObject.set(x, "variantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantIdUndefined: Self = StObject.set(x, "variantId", js.undefined)
+    inline def setVariantIdUndefined: Self = StObject.set(x, "variantId", js.undefined)
   }
 }

@@ -13,8 +13,7 @@ object conv2DBackpropInputMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def conv2DBackpropInput(args: AttrsConv2DBackpropInputAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropInput")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def conv2DBackpropInput(args: AttrsConv2DBackpropInputAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropInput")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Conv2DBackpropInput", "conv2DBackpropInputConfig")
   @js.native

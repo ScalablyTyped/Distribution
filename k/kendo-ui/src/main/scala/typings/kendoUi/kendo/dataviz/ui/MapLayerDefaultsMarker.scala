@@ -14,31 +14,23 @@ trait MapLayerDefaultsMarker extends StObject {
 }
 object MapLayerDefaultsMarker {
   
-  @scala.inline
-  def apply(): MapLayerDefaultsMarker = {
+  inline def apply(): MapLayerDefaultsMarker = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapLayerDefaultsMarker]
   }
   
-  @scala.inline
-  implicit class MapLayerDefaultsMarkerMutableBuilder[Self <: MapLayerDefaultsMarker] (val x: Self) extends AnyVal {
+  extension [Self <: MapLayerDefaultsMarker](x: Self) {
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: MapLayerDefaultsMarkerTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: MapLayerDefaultsMarkerTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

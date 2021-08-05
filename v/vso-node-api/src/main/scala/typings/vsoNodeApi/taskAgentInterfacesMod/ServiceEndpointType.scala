@@ -31,8 +31,7 @@ trait ServiceEndpointType extends StObject {
 }
 object ServiceEndpointType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authenticationSchemes: js.Array[ServiceEndpointAuthenticationScheme],
     dataSources: js.Array[DataSource],
     dependencyData: js.Array[DependencyData],
@@ -49,52 +48,36 @@ object ServiceEndpointType {
     __obj.asInstanceOf[ServiceEndpointType]
   }
   
-  @scala.inline
-  implicit class ServiceEndpointTypeMutableBuilder[Self <: ServiceEndpointType] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceEndpointType](x: Self) {
     
-    @scala.inline
-    def setAuthenticationSchemes(value: js.Array[ServiceEndpointAuthenticationScheme]): Self = StObject.set(x, "authenticationSchemes", value.asInstanceOf[js.Any])
+    inline def setAuthenticationSchemes(value: js.Array[ServiceEndpointAuthenticationScheme]): Self = StObject.set(x, "authenticationSchemes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationSchemesVarargs(value: ServiceEndpointAuthenticationScheme*): Self = StObject.set(x, "authenticationSchemes", js.Array(value :_*))
+    inline def setAuthenticationSchemesVarargs(value: ServiceEndpointAuthenticationScheme*): Self = StObject.set(x, "authenticationSchemes", js.Array(value :_*))
     
-    @scala.inline
-    def setDataSources(value: js.Array[DataSource]): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
+    inline def setDataSources(value: js.Array[DataSource]): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "dataSources", js.Array(value :_*))
+    inline def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "dataSources", js.Array(value :_*))
     
-    @scala.inline
-    def setDependencyData(value: js.Array[DependencyData]): Self = StObject.set(x, "dependencyData", value.asInstanceOf[js.Any])
+    inline def setDependencyData(value: js.Array[DependencyData]): Self = StObject.set(x, "dependencyData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependencyDataVarargs(value: DependencyData*): Self = StObject.set(x, "dependencyData", js.Array(value :_*))
+    inline def setDependencyDataVarargs(value: DependencyData*): Self = StObject.set(x, "dependencyData", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUrl(value: EndpointUrl): Self = StObject.set(x, "endpointUrl", value.asInstanceOf[js.Any])
+    inline def setEndpointUrl(value: EndpointUrl): Self = StObject.set(x, "endpointUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpLink(value: HelpLink): Self = StObject.set(x, "helpLink", value.asInstanceOf[js.Any])
+    inline def setHelpLink(value: HelpLink): Self = StObject.set(x, "helpLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpMarkDown(value: String): Self = StObject.set(x, "helpMarkDown", value.asInstanceOf[js.Any])
+    inline def setHelpMarkDown(value: String): Self = StObject.set(x, "helpMarkDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDescriptors(value: js.Array[InputDescriptor]): Self = StObject.set(x, "inputDescriptors", value.asInstanceOf[js.Any])
+    inline def setInputDescriptors(value: js.Array[InputDescriptor]): Self = StObject.set(x, "inputDescriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDescriptorsVarargs(value: InputDescriptor*): Self = StObject.set(x, "inputDescriptors", js.Array(value :_*))
+    inline def setInputDescriptorsVarargs(value: InputDescriptor*): Self = StObject.set(x, "inputDescriptors", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -40,8 +40,7 @@ trait RendererResult
 }
 object RendererResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     basemapId: String,
     basemapTheme: String,
     constructor: js.Function,
@@ -54,19 +53,14 @@ object RendererResult {
     __obj.asInstanceOf[RendererResult]
   }
   
-  @scala.inline
-  implicit class RendererResultMutableBuilder[Self <: RendererResult] (val x: Self) extends AnyVal {
+  extension [Self <: RendererResult](x: Self) {
     
-    @scala.inline
-    def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
+    inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
+    inline def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotDensityScheme(value: DotDensityScheme): Self = StObject.set(x, "dotDensityScheme", value.asInstanceOf[js.Any])
+    inline def setDotDensityScheme(value: DotDensityScheme): Self = StObject.set(x, "dotDensityScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderer(value: DotDensityRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: DotDensityRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
   }
 }

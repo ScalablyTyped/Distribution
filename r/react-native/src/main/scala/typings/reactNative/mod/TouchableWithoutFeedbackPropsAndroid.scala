@@ -15,22 +15,17 @@ trait TouchableWithoutFeedbackPropsAndroid extends StObject {
 }
 object TouchableWithoutFeedbackPropsAndroid {
   
-  @scala.inline
-  def apply(): TouchableWithoutFeedbackPropsAndroid = {
+  inline def apply(): TouchableWithoutFeedbackPropsAndroid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TouchableWithoutFeedbackPropsAndroid]
   }
   
-  @scala.inline
-  implicit class TouchableWithoutFeedbackPropsAndroidMutableBuilder[Self <: TouchableWithoutFeedbackPropsAndroid] (val x: Self) extends AnyVal {
+  extension [Self <: TouchableWithoutFeedbackPropsAndroid](x: Self) {
     
-    @scala.inline
-    def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
+    inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
+    inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
     
-    @scala.inline
-    def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
+    inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
   }
 }

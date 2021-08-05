@@ -12,16 +12,13 @@ trait IInputEnabledEventArgs
 }
 object IInputEnabledEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean, inputEnabled: Boolean): IInputEnabledEventArgs = {
+  inline def apply(handled: Boolean, inputEnabled: Boolean): IInputEnabledEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], inputEnabled = inputEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInputEnabledEventArgs]
   }
   
-  @scala.inline
-  implicit class IInputEnabledEventArgsMutableBuilder[Self <: IInputEnabledEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IInputEnabledEventArgs](x: Self) {
     
-    @scala.inline
-    def setInputEnabled(value: Boolean): Self = StObject.set(x, "inputEnabled", value.asInstanceOf[js.Any])
+    inline def setInputEnabled(value: Boolean): Self = StObject.set(x, "inputEnabled", value.asInstanceOf[js.Any])
   }
 }

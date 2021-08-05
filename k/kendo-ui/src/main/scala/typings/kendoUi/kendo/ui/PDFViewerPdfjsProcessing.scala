@@ -10,19 +10,15 @@ trait PDFViewerPdfjsProcessing extends StObject {
 }
 object PDFViewerPdfjsProcessing {
   
-  @scala.inline
-  def apply(): PDFViewerPdfjsProcessing = {
+  inline def apply(): PDFViewerPdfjsProcessing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PDFViewerPdfjsProcessing]
   }
   
-  @scala.inline
-  implicit class PDFViewerPdfjsProcessingMutableBuilder[Self <: PDFViewerPdfjsProcessing] (val x: Self) extends AnyVal {
+  extension [Self <: PDFViewerPdfjsProcessing](x: Self) {
     
-    @scala.inline
-    def setFile(value: js.Any | String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: js.Any | String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
   }
 }

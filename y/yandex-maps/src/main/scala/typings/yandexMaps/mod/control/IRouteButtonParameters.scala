@@ -14,25 +14,19 @@ trait IRouteButtonParameters extends StObject {
 }
 object IRouteButtonParameters {
   
-  @scala.inline
-  def apply(): IRouteButtonParameters = {
+  inline def apply(): IRouteButtonParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRouteButtonParameters]
   }
   
-  @scala.inline
-  implicit class IRouteButtonParametersMutableBuilder[Self <: IRouteButtonParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IRouteButtonParameters](x: Self) {
     
-    @scala.inline
-    def setOptions(value: AdjustMapMargin): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: AdjustMapMargin): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setState(value: Expanded): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Expanded): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait MitigationActionIdentifier extends StObject {
 }
 object MitigationActionIdentifier {
   
-  @scala.inline
-  def apply(): MitigationActionIdentifier = {
+  inline def apply(): MitigationActionIdentifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MitigationActionIdentifier]
   }
   
-  @scala.inline
-  implicit class MitigationActionIdentifierMutableBuilder[Self <: MitigationActionIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: MitigationActionIdentifier](x: Self) {
     
-    @scala.inline
-    def setActionArn(value: MitigationActionArn): Self = StObject.set(x, "actionArn", value.asInstanceOf[js.Any])
+    inline def setActionArn(value: MitigationActionArn): Self = StObject.set(x, "actionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionArnUndefined: Self = StObject.set(x, "actionArn", js.undefined)
+    inline def setActionArnUndefined: Self = StObject.set(x, "actionArn", js.undefined)
     
-    @scala.inline
-    def setActionName(value: MitigationActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: MitigationActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
+    inline def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
   }
 }

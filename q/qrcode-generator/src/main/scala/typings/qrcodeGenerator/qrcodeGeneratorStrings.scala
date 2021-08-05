@@ -10,55 +10,47 @@ object qrcodeGeneratorStrings {
   sealed trait Alphanumeric
     extends StObject
        with Mode
-  @scala.inline
-  def Alphanumeric: Alphanumeric = "Alphanumeric".asInstanceOf[Alphanumeric]
+  inline def Alphanumeric: Alphanumeric = "Alphanumeric".asInstanceOf[Alphanumeric]
   
   @js.native
   sealed trait Byte
     extends StObject
        with Mode
-  @scala.inline
-  def Byte: Byte = "Byte".asInstanceOf[Byte]
+  inline def Byte: Byte = "Byte".asInstanceOf[Byte]
   
   @js.native
   sealed trait H
     extends StObject
        with ErrorCorrectionLevel
-  @scala.inline
-  def H: H = "H".asInstanceOf[H]
+  inline def H: H = "H".asInstanceOf[H]
   
   @js.native
   sealed trait Kanji
     extends StObject
        with Mode
-  @scala.inline
-  def Kanji: Kanji = "Kanji".asInstanceOf[Kanji]
+  inline def Kanji: Kanji = "Kanji".asInstanceOf[Kanji]
   
   @js.native
   sealed trait L
     extends StObject
        with ErrorCorrectionLevel
-  @scala.inline
-  def L: L = "L".asInstanceOf[L]
+  inline def L: L = "L".asInstanceOf[L]
   
   @js.native
   sealed trait M
     extends StObject
        with ErrorCorrectionLevel
-  @scala.inline
-  def M: M = "M".asInstanceOf[M]
+  inline def M: M = "M".asInstanceOf[M]
   
   @js.native
   sealed trait Numeric
     extends StObject
        with Mode
-  @scala.inline
-  def Numeric: Numeric = "Numeric".asInstanceOf[Numeric]
+  inline def Numeric: Numeric = "Numeric".asInstanceOf[Numeric]
   
   @js.native
   sealed trait Q
     extends StObject
        with ErrorCorrectionLevel
-  @scala.inline
-  def Q: Q = "Q".asInstanceOf[Q]
+  inline def Q: Q = "Q".asInstanceOf[Q]
 }

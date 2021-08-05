@@ -19,25 +19,19 @@ trait IModelChangedEvent extends StObject {
 }
 object IModelChangedEvent {
   
-  @scala.inline
-  def apply(): IModelChangedEvent = {
+  inline def apply(): IModelChangedEvent = {
     val __obj = js.Dynamic.literal(newModelUrl = null, oldModelUrl = null)
     __obj.asInstanceOf[IModelChangedEvent]
   }
   
-  @scala.inline
-  implicit class IModelChangedEventMutableBuilder[Self <: IModelChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IModelChangedEvent](x: Self) {
     
-    @scala.inline
-    def setNewModelUrl(value: Uri): Self = StObject.set(x, "newModelUrl", value.asInstanceOf[js.Any])
+    inline def setNewModelUrl(value: Uri): Self = StObject.set(x, "newModelUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewModelUrlNull: Self = StObject.set(x, "newModelUrl", null)
+    inline def setNewModelUrlNull: Self = StObject.set(x, "newModelUrl", null)
     
-    @scala.inline
-    def setOldModelUrl(value: Uri): Self = StObject.set(x, "oldModelUrl", value.asInstanceOf[js.Any])
+    inline def setOldModelUrl(value: Uri): Self = StObject.set(x, "oldModelUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldModelUrlNull: Self = StObject.set(x, "oldModelUrl", null)
+    inline def setOldModelUrlNull: Self = StObject.set(x, "oldModelUrl", null)
   }
 }

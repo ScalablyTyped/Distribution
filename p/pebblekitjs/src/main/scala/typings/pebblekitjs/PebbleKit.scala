@@ -17,23 +17,18 @@ object PebbleKit {
   }
   object AppGlanceSlice {
     
-    @scala.inline
-    def apply(layout: Layout): AppGlanceSlice = {
+    inline def apply(layout: Layout): AppGlanceSlice = {
       val __obj = js.Dynamic.literal(layout = layout.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppGlanceSlice]
     }
     
-    @scala.inline
-    implicit class AppGlanceSliceMutableBuilder[Self <: AppGlanceSlice] (val x: Self) extends AnyVal {
+    extension [Self <: AppGlanceSlice](x: Self) {
       
-      @scala.inline
-      def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+      inline def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
+      inline def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
       
-      @scala.inline
-      def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,17 +38,14 @@ object PebbleKit {
   }
   object AppMessageData {
     
-    @scala.inline
-    def apply(transactionId: String): AppMessageData = {
+    inline def apply(transactionId: String): AppMessageData = {
       val __obj = js.Dynamic.literal(transactionId = transactionId.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppMessageData]
     }
     
-    @scala.inline
-    implicit class AppMessageDataMutableBuilder[Self <: AppMessageData] (val x: Self) extends AnyVal {
+    extension [Self <: AppMessageData](x: Self) {
       
-      @scala.inline
-      def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+      inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,23 +57,18 @@ object PebbleKit {
   }
   object AppMessageEvent {
     
-    @scala.inline
-    def apply(data: AppMessageData): AppMessageEvent = {
+    inline def apply(data: AppMessageData): AppMessageEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppMessageEvent]
     }
     
-    @scala.inline
-    implicit class AppMessageEventMutableBuilder[Self <: AppMessageEvent] (val x: Self) extends AnyVal {
+    extension [Self <: AppMessageEvent](x: Self) {
       
-      @scala.inline
-      def setData(value: AppMessageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: AppMessageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     }
   }
   
@@ -91,17 +78,14 @@ object PebbleKit {
   }
   object Error {
     
-    @scala.inline
-    def apply(message: String): Error = {
+    inline def apply(message: String): Error = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,30 +99,23 @@ object PebbleKit {
   }
   object Event {
     
-    @scala.inline
-    def apply(`type`: String): Event = {
+    inline def apply(`type`: String): Event = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,26 +134,20 @@ object PebbleKit {
   }
   object Firmware {
     
-    @scala.inline
-    def apply(major: Double, minor: Double, patch: Double, suffix: String): Firmware = {
+    inline def apply(major: Double, minor: Double, patch: Double, suffix: String): Firmware = {
       val __obj = js.Dynamic.literal(major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any])
       __obj.asInstanceOf[Firmware]
     }
     
-    @scala.inline
-    implicit class FirmwareMutableBuilder[Self <: Firmware] (val x: Self) extends AnyVal {
+    extension [Self <: Firmware](x: Self) {
       
-      @scala.inline
-      def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+      inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+      inline def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatch(value: Double): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+      inline def setPatch(value: Double): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,20 +159,16 @@ object PebbleKit {
   }
   object Layout {
     
-    @scala.inline
-    def apply(icon: String, subtitleTemplateString: String): Layout = {
+    inline def apply(icon: String, subtitleTemplateString: String): Layout = {
       val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], subtitleTemplateString = subtitleTemplateString.asInstanceOf[js.Any])
       __obj.asInstanceOf[Layout]
     }
     
-    @scala.inline
-    implicit class LayoutMutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
+    extension [Self <: Layout](x: Self) {
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleTemplateString(value: String): Self = StObject.set(x, "subtitleTemplateString", value.asInstanceOf[js.Any])
+      inline def setSubtitleTemplateString(value: String): Self = StObject.set(x, "subtitleTemplateString", value.asInstanceOf[js.Any])
     }
   }
   
@@ -379,26 +346,20 @@ object PebbleKit {
   }
   object WatchInfo {
     
-    @scala.inline
-    def apply(firmware: Firmware, language: String, model: String, platform: String): WatchInfo = {
+    inline def apply(firmware: Firmware, language: String, model: String, platform: String): WatchInfo = {
       val __obj = js.Dynamic.literal(firmware = firmware.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any])
       __obj.asInstanceOf[WatchInfo]
     }
     
-    @scala.inline
-    implicit class WatchInfoMutableBuilder[Self <: WatchInfo] (val x: Self) extends AnyVal {
+    extension [Self <: WatchInfo](x: Self) {
       
-      @scala.inline
-      def setFirmware(value: Firmware): Self = StObject.set(x, "firmware", value.asInstanceOf[js.Any])
+      inline def setFirmware(value: Firmware): Self = StObject.set(x, "firmware", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }
   }
 }

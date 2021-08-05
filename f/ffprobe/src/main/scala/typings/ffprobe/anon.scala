@@ -32,8 +32,7 @@ object anon {
   }
   object Attachedpic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attached_pic: Double,
       clean_effects: Double,
       comment: Double,
@@ -50,41 +49,29 @@ object anon {
       __obj.asInstanceOf[Attachedpic]
     }
     
-    @scala.inline
-    implicit class AttachedpicMutableBuilder[Self <: Attachedpic] (val x: Self) extends AnyVal {
+    extension [Self <: Attachedpic](x: Self) {
       
-      @scala.inline
-      def setAttached_pic(value: Double): Self = StObject.set(x, "attached_pic", value.asInstanceOf[js.Any])
+      inline def setAttached_pic(value: Double): Self = StObject.set(x, "attached_pic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClean_effects(value: Double): Self = StObject.set(x, "clean_effects", value.asInstanceOf[js.Any])
+      inline def setClean_effects(value: Double): Self = StObject.set(x, "clean_effects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment(value: Double): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Double): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDub(value: Double): Self = StObject.set(x, "dub", value.asInstanceOf[js.Any])
+      inline def setDub(value: Double): Self = StObject.set(x, "dub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForced(value: Double): Self = StObject.set(x, "forced", value.asInstanceOf[js.Any])
+      inline def setForced(value: Double): Self = StObject.set(x, "forced", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHearing_impaired(value: Double): Self = StObject.set(x, "hearing_impaired", value.asInstanceOf[js.Any])
+      inline def setHearing_impaired(value: Double): Self = StObject.set(x, "hearing_impaired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKaraoke(value: Double): Self = StObject.set(x, "karaoke", value.asInstanceOf[js.Any])
+      inline def setKaraoke(value: Double): Self = StObject.set(x, "karaoke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLyrics(value: Double): Self = StObject.set(x, "lyrics", value.asInstanceOf[js.Any])
+      inline def setLyrics(value: Double): Self = StObject.set(x, "lyrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginal(value: Double): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+      inline def setOriginal(value: Double): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisual_impaired(value: Double): Self = StObject.set(x, "visual_impaired", value.asInstanceOf[js.Any])
+      inline def setVisual_impaired(value: Double): Self = StObject.set(x, "visual_impaired", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,29 +85,22 @@ object anon {
   }
   object Creationtime {
     
-    @scala.inline
-    def apply(handler_name: String): Creationtime = {
+    inline def apply(handler_name: String): Creationtime = {
       val __obj = js.Dynamic.literal(handler_name = handler_name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Creationtime]
     }
     
-    @scala.inline
-    implicit class CreationtimeMutableBuilder[Self <: Creationtime] (val x: Self) extends AnyVal {
+    extension [Self <: Creationtime](x: Self) {
       
-      @scala.inline
-      def setCreation_time(value: String): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
+      inline def setCreation_time(value: String): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreation_timeUndefined: Self = StObject.set(x, "creation_time", js.undefined)
+      inline def setCreation_timeUndefined: Self = StObject.set(x, "creation_time", js.undefined)
       
-      @scala.inline
-      def setHandler_name(value: String): Self = StObject.set(x, "handler_name", value.asInstanceOf[js.Any])
+      inline def setHandler_name(value: String): Self = StObject.set(x, "handler_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     }
   }
 }

@@ -12,25 +12,19 @@ trait DisplayInForeground extends StObject {
 }
 object DisplayInForeground {
   
-  @scala.inline
-  def apply(): DisplayInForeground = {
+  inline def apply(): DisplayInForeground = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisplayInForeground]
   }
   
-  @scala.inline
-  implicit class DisplayInForegroundMutableBuilder[Self <: DisplayInForeground] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayInForeground](x: Self) {
     
-    @scala.inline
-    def setSound(value: Boolean): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+    inline def setSound(value: Boolean): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
+    inline def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     
-    @scala.inline
-    def set_displayInForeground(value: Boolean): Self = StObject.set(x, "_displayInForeground", value.asInstanceOf[js.Any])
+    inline def set_displayInForeground(value: Boolean): Self = StObject.set(x, "_displayInForeground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_displayInForegroundUndefined: Self = StObject.set(x, "_displayInForeground", js.undefined)
+    inline def set_displayInForegroundUndefined: Self = StObject.set(x, "_displayInForeground", js.undefined)
   }
 }

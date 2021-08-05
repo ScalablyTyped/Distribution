@@ -25,25 +25,19 @@ trait SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesResponse extends
 }
 object SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesResponse = {
+  inline def apply(): SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesResponseMutableBuilder[Self <: SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesResponse](x: Self) {
     
-    @scala.inline
-    def setFhirStore(value: String): Self = StObject.set(x, "fhirStore", value.asInstanceOf[js.Any])
+    inline def setFhirStore(value: String): Self = StObject.set(x, "fhirStore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFhirStoreUndefined: Self = StObject.set(x, "fhirStore", js.undefined)
+    inline def setFhirStoreUndefined: Self = StObject.set(x, "fhirStore", js.undefined)
     
-    @scala.inline
-    def setInputSize(value: String): Self = StObject.set(x, "inputSize", value.asInstanceOf[js.Any])
+    inline def setInputSize(value: String): Self = StObject.set(x, "inputSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputSizeUndefined: Self = StObject.set(x, "inputSize", js.undefined)
+    inline def setInputSizeUndefined: Self = StObject.set(x, "inputSize", js.undefined)
   }
 }

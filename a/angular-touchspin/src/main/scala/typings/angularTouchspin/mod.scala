@@ -48,17 +48,14 @@ object mod extends Shortcut {
     }
     object ITouchSpinConfigProvider {
       
-      @scala.inline
-      def apply(defaults: typings.angularTouchspin.mod.angularTouchspin.ITouchSpinOptions => Unit): typings.angularTouchspin.mod.angularTouchspin.ITouchSpinConfigProvider = {
+      inline def apply(defaults: typings.angularTouchspin.mod.angularTouchspin.ITouchSpinOptions => Unit): typings.angularTouchspin.mod.angularTouchspin.ITouchSpinConfigProvider = {
         val __obj = js.Dynamic.literal(defaults = js.Any.fromFunction1(defaults))
         __obj.asInstanceOf[typings.angularTouchspin.mod.angularTouchspin.ITouchSpinConfigProvider]
       }
       
-      @scala.inline
-      implicit class ITouchSpinConfigProviderMutableBuilder[Self <: typings.angularTouchspin.mod.angularTouchspin.ITouchSpinConfigProvider] (val x: Self) extends AnyVal {
+      extension [Self <: typings.angularTouchspin.mod.angularTouchspin.ITouchSpinConfigProvider](x: Self) {
         
-        @scala.inline
-        def setDefaults(value: typings.angularTouchspin.mod.angularTouchspin.ITouchSpinOptions => Unit): Self = StObject.set(x, "defaults", js.Any.fromFunction1(value))
+        inline def setDefaults(value: typings.angularTouchspin.mod.angularTouchspin.ITouchSpinOptions => Unit): Self = StObject.set(x, "defaults", js.Any.fromFunction1(value))
       }
     }
     
@@ -113,152 +110,104 @@ object mod extends Shortcut {
     }
     object ITouchSpinOptions {
       
-      @scala.inline
-      def apply(): typings.angularTouchspin.mod.angularTouchspin.ITouchSpinOptions = {
+      inline def apply(): typings.angularTouchspin.mod.angularTouchspin.ITouchSpinOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.angularTouchspin.mod.angularTouchspin.ITouchSpinOptions]
       }
       
-      @scala.inline
-      implicit class ITouchSpinOptionsMutableBuilder[Self <: typings.angularTouchspin.mod.angularTouchspin.ITouchSpinOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.angularTouchspin.mod.angularTouchspin.ITouchSpinOptions](x: Self) {
         
-        @scala.inline
-        def setButtonDownClass(value: String): Self = StObject.set(x, "buttonDownClass", value.asInstanceOf[js.Any])
+        inline def setButtonDownClass(value: String): Self = StObject.set(x, "buttonDownClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonDownClassUndefined: Self = StObject.set(x, "buttonDownClass", js.undefined)
+        inline def setButtonDownClassUndefined: Self = StObject.set(x, "buttonDownClass", js.undefined)
         
-        @scala.inline
-        def setButtonDownShow(value: Boolean): Self = StObject.set(x, "buttonDownShow", value.asInstanceOf[js.Any])
+        inline def setButtonDownShow(value: Boolean): Self = StObject.set(x, "buttonDownShow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonDownShowUndefined: Self = StObject.set(x, "buttonDownShow", js.undefined)
+        inline def setButtonDownShowUndefined: Self = StObject.set(x, "buttonDownShow", js.undefined)
         
-        @scala.inline
-        def setButtonDownTxt(value: String): Self = StObject.set(x, "buttonDownTxt", value.asInstanceOf[js.Any])
+        inline def setButtonDownTxt(value: String): Self = StObject.set(x, "buttonDownTxt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonDownTxtUndefined: Self = StObject.set(x, "buttonDownTxt", js.undefined)
+        inline def setButtonDownTxtUndefined: Self = StObject.set(x, "buttonDownTxt", js.undefined)
         
-        @scala.inline
-        def setButtonUpClass(value: String): Self = StObject.set(x, "buttonUpClass", value.asInstanceOf[js.Any])
+        inline def setButtonUpClass(value: String): Self = StObject.set(x, "buttonUpClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonUpClassUndefined: Self = StObject.set(x, "buttonUpClass", js.undefined)
+        inline def setButtonUpClassUndefined: Self = StObject.set(x, "buttonUpClass", js.undefined)
         
-        @scala.inline
-        def setButtonUpShow(value: Boolean): Self = StObject.set(x, "buttonUpShow", value.asInstanceOf[js.Any])
+        inline def setButtonUpShow(value: Boolean): Self = StObject.set(x, "buttonUpShow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonUpShowUndefined: Self = StObject.set(x, "buttonUpShow", js.undefined)
+        inline def setButtonUpShowUndefined: Self = StObject.set(x, "buttonUpShow", js.undefined)
         
-        @scala.inline
-        def setButtonUpTxt(value: String): Self = StObject.set(x, "buttonUpTxt", value.asInstanceOf[js.Any])
+        inline def setButtonUpTxt(value: String): Self = StObject.set(x, "buttonUpTxt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonUpTxtUndefined: Self = StObject.set(x, "buttonUpTxt", js.undefined)
+        inline def setButtonUpTxtUndefined: Self = StObject.set(x, "buttonUpTxt", js.undefined)
         
-        @scala.inline
-        def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+        inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDecimalsDelimiter(value: String): Self = StObject.set(x, "decimalsDelimiter", value.asInstanceOf[js.Any])
+        inline def setDecimalsDelimiter(value: String): Self = StObject.set(x, "decimalsDelimiter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDecimalsDelimiterUndefined: Self = StObject.set(x, "decimalsDelimiter", js.undefined)
+        inline def setDecimalsDelimiterUndefined: Self = StObject.set(x, "decimalsDelimiter", js.undefined)
         
-        @scala.inline
-        def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+        inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
         
-        @scala.inline
-        def setForceStepDivisibility(value: StepDivisibilityType): Self = StObject.set(x, "forceStepDivisibility", value.asInstanceOf[js.Any])
+        inline def setForceStepDivisibility(value: StepDivisibilityType): Self = StObject.set(x, "forceStepDivisibility", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForceStepDivisibilityUndefined: Self = StObject.set(x, "forceStepDivisibility", js.undefined)
+        inline def setForceStepDivisibilityUndefined: Self = StObject.set(x, "forceStepDivisibility", js.undefined)
         
-        @scala.inline
-        def setInputReadOnly(value: Boolean): Self = StObject.set(x, "inputReadOnly", value.asInstanceOf[js.Any])
+        inline def setInputReadOnly(value: Boolean): Self = StObject.set(x, "inputReadOnly", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInputReadOnlyUndefined: Self = StObject.set(x, "inputReadOnly", js.undefined)
+        inline def setInputReadOnlyUndefined: Self = StObject.set(x, "inputReadOnly", js.undefined)
         
-        @scala.inline
-        def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+        inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+        inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
         
-        @scala.inline
-        def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+        inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+        inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
         
-        @scala.inline
-        def setMousewheel(value: Boolean): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
+        inline def setMousewheel(value: Boolean): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
+        inline def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
         
-        @scala.inline
-        def setPostfix(value: String): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
+        inline def setPostfix(value: String): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPostfixExtraClass(value: String): Self = StObject.set(x, "postfixExtraClass", value.asInstanceOf[js.Any])
+        inline def setPostfixExtraClass(value: String): Self = StObject.set(x, "postfixExtraClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPostfixExtraClassUndefined: Self = StObject.set(x, "postfixExtraClass", js.undefined)
+        inline def setPostfixExtraClassUndefined: Self = StObject.set(x, "postfixExtraClass", js.undefined)
         
-        @scala.inline
-        def setPostfixUndefined: Self = StObject.set(x, "postfix", js.undefined)
+        inline def setPostfixUndefined: Self = StObject.set(x, "postfix", js.undefined)
         
-        @scala.inline
-        def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+        inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrefixExtraClass(value: String): Self = StObject.set(x, "prefixExtraClass", value.asInstanceOf[js.Any])
+        inline def setPrefixExtraClass(value: String): Self = StObject.set(x, "prefixExtraClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrefixExtraClassUndefined: Self = StObject.set(x, "prefixExtraClass", js.undefined)
+        inline def setPrefixExtraClassUndefined: Self = StObject.set(x, "prefixExtraClass", js.undefined)
         
-        @scala.inline
-        def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+        inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
         
-        @scala.inline
-        def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+        inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStepInterval(value: Double): Self = StObject.set(x, "stepInterval", value.asInstanceOf[js.Any])
+        inline def setStepInterval(value: Double): Self = StObject.set(x, "stepInterval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStepIntervalDelay(value: Double): Self = StObject.set(x, "stepIntervalDelay", value.asInstanceOf[js.Any])
+        inline def setStepIntervalDelay(value: Double): Self = StObject.set(x, "stepIntervalDelay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStepIntervalDelayUndefined: Self = StObject.set(x, "stepIntervalDelay", js.undefined)
+        inline def setStepIntervalDelayUndefined: Self = StObject.set(x, "stepIntervalDelay", js.undefined)
         
-        @scala.inline
-        def setStepIntervalUndefined: Self = StObject.set(x, "stepInterval", js.undefined)
+        inline def setStepIntervalUndefined: Self = StObject.set(x, "stepInterval", js.undefined)
         
-        @scala.inline
-        def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+        inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
         
-        @scala.inline
-        def setVerticalButtons(value: Boolean): Self = StObject.set(x, "verticalButtons", value.asInstanceOf[js.Any])
+        inline def setVerticalButtons(value: Boolean): Self = StObject.set(x, "verticalButtons", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerticalButtonsUndefined: Self = StObject.set(x, "verticalButtons", js.undefined)
+        inline def setVerticalButtonsUndefined: Self = StObject.set(x, "verticalButtons", js.undefined)
         
-        @scala.inline
-        def setVerticalDownClass(value: String): Self = StObject.set(x, "verticalDownClass", value.asInstanceOf[js.Any])
+        inline def setVerticalDownClass(value: String): Self = StObject.set(x, "verticalDownClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerticalDownClassUndefined: Self = StObject.set(x, "verticalDownClass", js.undefined)
+        inline def setVerticalDownClassUndefined: Self = StObject.set(x, "verticalDownClass", js.undefined)
         
-        @scala.inline
-        def setVerticalUpClass(value: String): Self = StObject.set(x, "verticalUpClass", value.asInstanceOf[js.Any])
+        inline def setVerticalUpClass(value: String): Self = StObject.set(x, "verticalUpClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerticalUpClassUndefined: Self = StObject.set(x, "verticalUpClass", js.undefined)
+        inline def setVerticalUpClassUndefined: Self = StObject.set(x, "verticalUpClass", js.undefined)
       }
     }
   }

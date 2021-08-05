@@ -27,11 +27,11 @@ object colorProviderMod {
         ] {
     def this(client: BaseLanguageClient) = this()
     
-    var asColor: js.Any = js.native
+    /* private */ var asColor: js.Any = js.native
     
-    var asColorInformations: js.Any = js.native
+    /* private */ var asColorInformations: js.Any = js.native
     
-    var asColorPresentations: js.Any = js.native
+    /* private */ var asColorPresentations: js.Any = js.native
   }
   
   trait ColorProviderMiddleware extends StObject {
@@ -59,17 +59,14 @@ object colorProviderMod {
   }
   object ColorProviderMiddleware {
     
-    @scala.inline
-    def apply(): ColorProviderMiddleware = {
+    inline def apply(): ColorProviderMiddleware = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColorProviderMiddleware]
     }
     
-    @scala.inline
-    implicit class ColorProviderMiddlewareMutableBuilder[Self <: ColorProviderMiddleware] (val x: Self) extends AnyVal {
+    extension [Self <: ColorProviderMiddleware](x: Self) {
       
-      @scala.inline
-      def setProvideColorPresentations(
+      inline def setProvideColorPresentations(
         value: js.ThisFunction4[
               /* this */ Unit, 
               /* color */ Color, 
@@ -80,11 +77,9 @@ object colorProviderMod {
             ]
       ): Self = StObject.set(x, "provideColorPresentations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvideColorPresentationsUndefined: Self = StObject.set(x, "provideColorPresentations", js.undefined)
+      inline def setProvideColorPresentationsUndefined: Self = StObject.set(x, "provideColorPresentations", js.undefined)
       
-      @scala.inline
-      def setProvideDocumentColors(
+      inline def setProvideDocumentColors(
         value: js.ThisFunction3[
               /* this */ Unit, 
               /* document */ TextDocument, 
@@ -94,8 +89,7 @@ object colorProviderMod {
             ]
       ): Self = StObject.set(x, "provideDocumentColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvideDocumentColorsUndefined: Self = StObject.set(x, "provideDocumentColors", js.undefined)
+      inline def setProvideDocumentColorsUndefined: Self = StObject.set(x, "provideDocumentColors", js.undefined)
     }
   }
   

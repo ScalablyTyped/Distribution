@@ -179,21 +179,16 @@ object userPoolMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): UserPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserPool]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPool]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserPoolState): UserPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserPool]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserPoolState, opts: CustomResourceOptions): UserPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPool]
+    inline def get(name: String, id: Input[ID]): UserPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserPool]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPool]
+    inline def get(name: String, id: Input[ID], state: UserPoolState): UserPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserPool]
+    inline def get(name: String, id: Input[ID], state: UserPoolState, opts: CustomResourceOptions): UserPool = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPool]
     
     /**
       * Returns true if the given object is an instance of UserPool.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPool.UserPool */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/userPool.UserPool */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPool.UserPool */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/userPool.UserPool */ Boolean]
   }
   
   trait UserPoolArgs extends StObject {
@@ -305,152 +300,104 @@ object userPoolMod {
   }
   object UserPoolArgs {
     
-    @scala.inline
-    def apply(): UserPoolArgs = {
+    inline def apply(): UserPoolArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserPoolArgs]
     }
     
-    @scala.inline
-    implicit class UserPoolArgsMutableBuilder[Self <: UserPoolArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UserPoolArgs](x: Self) {
       
-      @scala.inline
-      def setAdminCreateUserConfig(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolAdminCreateUserConfig]): Self = StObject.set(x, "adminCreateUserConfig", value.asInstanceOf[js.Any])
+      inline def setAdminCreateUserConfig(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolAdminCreateUserConfig]): Self = StObject.set(x, "adminCreateUserConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdminCreateUserConfigUndefined: Self = StObject.set(x, "adminCreateUserConfig", js.undefined)
+      inline def setAdminCreateUserConfigUndefined: Self = StObject.set(x, "adminCreateUserConfig", js.undefined)
       
-      @scala.inline
-      def setAliasAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "aliasAttributes", value.asInstanceOf[js.Any])
+      inline def setAliasAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "aliasAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasAttributesUndefined: Self = StObject.set(x, "aliasAttributes", js.undefined)
+      inline def setAliasAttributesUndefined: Self = StObject.set(x, "aliasAttributes", js.undefined)
       
-      @scala.inline
-      def setAliasAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "aliasAttributes", js.Array(value :_*))
+      inline def setAliasAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "aliasAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setAutoVerifiedAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "autoVerifiedAttributes", value.asInstanceOf[js.Any])
+      inline def setAutoVerifiedAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "autoVerifiedAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoVerifiedAttributesUndefined: Self = StObject.set(x, "autoVerifiedAttributes", js.undefined)
+      inline def setAutoVerifiedAttributesUndefined: Self = StObject.set(x, "autoVerifiedAttributes", js.undefined)
       
-      @scala.inline
-      def setAutoVerifiedAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "autoVerifiedAttributes", js.Array(value :_*))
+      inline def setAutoVerifiedAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "autoVerifiedAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setDeviceConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolDeviceConfiguration]): Self = StObject.set(x, "deviceConfiguration", value.asInstanceOf[js.Any])
+      inline def setDeviceConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolDeviceConfiguration]): Self = StObject.set(x, "deviceConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceConfigurationUndefined: Self = StObject.set(x, "deviceConfiguration", js.undefined)
+      inline def setDeviceConfigurationUndefined: Self = StObject.set(x, "deviceConfiguration", js.undefined)
       
-      @scala.inline
-      def setEmailConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolEmailConfiguration]): Self = StObject.set(x, "emailConfiguration", value.asInstanceOf[js.Any])
+      inline def setEmailConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolEmailConfiguration]): Self = StObject.set(x, "emailConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailConfigurationUndefined: Self = StObject.set(x, "emailConfiguration", js.undefined)
+      inline def setEmailConfigurationUndefined: Self = StObject.set(x, "emailConfiguration", js.undefined)
       
-      @scala.inline
-      def setEmailVerificationMessage(value: Input[String]): Self = StObject.set(x, "emailVerificationMessage", value.asInstanceOf[js.Any])
+      inline def setEmailVerificationMessage(value: Input[String]): Self = StObject.set(x, "emailVerificationMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailVerificationMessageUndefined: Self = StObject.set(x, "emailVerificationMessage", js.undefined)
+      inline def setEmailVerificationMessageUndefined: Self = StObject.set(x, "emailVerificationMessage", js.undefined)
       
-      @scala.inline
-      def setEmailVerificationSubject(value: Input[String]): Self = StObject.set(x, "emailVerificationSubject", value.asInstanceOf[js.Any])
+      inline def setEmailVerificationSubject(value: Input[String]): Self = StObject.set(x, "emailVerificationSubject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailVerificationSubjectUndefined: Self = StObject.set(x, "emailVerificationSubject", js.undefined)
+      inline def setEmailVerificationSubjectUndefined: Self = StObject.set(x, "emailVerificationSubject", js.undefined)
       
-      @scala.inline
-      def setLambdaConfig(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolLambdaConfig]): Self = StObject.set(x, "lambdaConfig", value.asInstanceOf[js.Any])
+      inline def setLambdaConfig(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolLambdaConfig]): Self = StObject.set(x, "lambdaConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaConfigUndefined: Self = StObject.set(x, "lambdaConfig", js.undefined)
+      inline def setLambdaConfigUndefined: Self = StObject.set(x, "lambdaConfig", js.undefined)
       
-      @scala.inline
-      def setMfaConfiguration(value: Input[String]): Self = StObject.set(x, "mfaConfiguration", value.asInstanceOf[js.Any])
+      inline def setMfaConfiguration(value: Input[String]): Self = StObject.set(x, "mfaConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMfaConfigurationUndefined: Self = StObject.set(x, "mfaConfiguration", js.undefined)
+      inline def setMfaConfigurationUndefined: Self = StObject.set(x, "mfaConfiguration", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPasswordPolicy(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolPasswordPolicy]): Self = StObject.set(x, "passwordPolicy", value.asInstanceOf[js.Any])
+      inline def setPasswordPolicy(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolPasswordPolicy]): Self = StObject.set(x, "passwordPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordPolicyUndefined: Self = StObject.set(x, "passwordPolicy", js.undefined)
+      inline def setPasswordPolicyUndefined: Self = StObject.set(x, "passwordPolicy", js.undefined)
       
-      @scala.inline
-      def setSchemas(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cognito.UserPoolSchema]]]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+      inline def setSchemas(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cognito.UserPoolSchema]]]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
+      inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
       
-      @scala.inline
-      def setSchemasVarargs(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolSchema]*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+      inline def setSchemasVarargs(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolSchema]*): Self = StObject.set(x, "schemas", js.Array(value :_*))
       
-      @scala.inline
-      def setSmsAuthenticationMessage(value: Input[String]): Self = StObject.set(x, "smsAuthenticationMessage", value.asInstanceOf[js.Any])
+      inline def setSmsAuthenticationMessage(value: Input[String]): Self = StObject.set(x, "smsAuthenticationMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmsAuthenticationMessageUndefined: Self = StObject.set(x, "smsAuthenticationMessage", js.undefined)
+      inline def setSmsAuthenticationMessageUndefined: Self = StObject.set(x, "smsAuthenticationMessage", js.undefined)
       
-      @scala.inline
-      def setSmsConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolSmsConfiguration]): Self = StObject.set(x, "smsConfiguration", value.asInstanceOf[js.Any])
+      inline def setSmsConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolSmsConfiguration]): Self = StObject.set(x, "smsConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmsConfigurationUndefined: Self = StObject.set(x, "smsConfiguration", js.undefined)
+      inline def setSmsConfigurationUndefined: Self = StObject.set(x, "smsConfiguration", js.undefined)
       
-      @scala.inline
-      def setSmsVerificationMessage(value: Input[String]): Self = StObject.set(x, "smsVerificationMessage", value.asInstanceOf[js.Any])
+      inline def setSmsVerificationMessage(value: Input[String]): Self = StObject.set(x, "smsVerificationMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmsVerificationMessageUndefined: Self = StObject.set(x, "smsVerificationMessage", js.undefined)
+      inline def setSmsVerificationMessageUndefined: Self = StObject.set(x, "smsVerificationMessage", js.undefined)
       
-      @scala.inline
-      def setSoftwareTokenMfaConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolSoftwareTokenMfaConfiguration]): Self = StObject.set(x, "softwareTokenMfaConfiguration", value.asInstanceOf[js.Any])
+      inline def setSoftwareTokenMfaConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolSoftwareTokenMfaConfiguration]): Self = StObject.set(x, "softwareTokenMfaConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSoftwareTokenMfaConfigurationUndefined: Self = StObject.set(x, "softwareTokenMfaConfiguration", js.undefined)
+      inline def setSoftwareTokenMfaConfigurationUndefined: Self = StObject.set(x, "softwareTokenMfaConfiguration", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUserPoolAddOns(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolUserPoolAddOns]): Self = StObject.set(x, "userPoolAddOns", value.asInstanceOf[js.Any])
+      inline def setUserPoolAddOns(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolUserPoolAddOns]): Self = StObject.set(x, "userPoolAddOns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPoolAddOnsUndefined: Self = StObject.set(x, "userPoolAddOns", js.undefined)
+      inline def setUserPoolAddOnsUndefined: Self = StObject.set(x, "userPoolAddOns", js.undefined)
       
-      @scala.inline
-      def setUsernameAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "usernameAttributes", value.asInstanceOf[js.Any])
+      inline def setUsernameAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "usernameAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameAttributesUndefined: Self = StObject.set(x, "usernameAttributes", js.undefined)
+      inline def setUsernameAttributesUndefined: Self = StObject.set(x, "usernameAttributes", js.undefined)
       
-      @scala.inline
-      def setUsernameAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "usernameAttributes", js.Array(value :_*))
+      inline def setUsernameAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "usernameAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setUsernameConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolUsernameConfiguration]): Self = StObject.set(x, "usernameConfiguration", value.asInstanceOf[js.Any])
+      inline def setUsernameConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolUsernameConfiguration]): Self = StObject.set(x, "usernameConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameConfigurationUndefined: Self = StObject.set(x, "usernameConfiguration", js.undefined)
+      inline def setUsernameConfigurationUndefined: Self = StObject.set(x, "usernameConfiguration", js.undefined)
       
-      @scala.inline
-      def setVerificationMessageTemplate(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolVerificationMessageTemplate]): Self = StObject.set(x, "verificationMessageTemplate", value.asInstanceOf[js.Any])
+      inline def setVerificationMessageTemplate(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolVerificationMessageTemplate]): Self = StObject.set(x, "verificationMessageTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerificationMessageTemplateUndefined: Self = StObject.set(x, "verificationMessageTemplate", js.undefined)
+      inline def setVerificationMessageTemplateUndefined: Self = StObject.set(x, "verificationMessageTemplate", js.undefined)
     }
   }
   
@@ -583,176 +530,120 @@ object userPoolMod {
   }
   object UserPoolState {
     
-    @scala.inline
-    def apply(): UserPoolState = {
+    inline def apply(): UserPoolState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserPoolState]
     }
     
-    @scala.inline
-    implicit class UserPoolStateMutableBuilder[Self <: UserPoolState] (val x: Self) extends AnyVal {
+    extension [Self <: UserPoolState](x: Self) {
       
-      @scala.inline
-      def setAdminCreateUserConfig(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolAdminCreateUserConfig]): Self = StObject.set(x, "adminCreateUserConfig", value.asInstanceOf[js.Any])
+      inline def setAdminCreateUserConfig(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolAdminCreateUserConfig]): Self = StObject.set(x, "adminCreateUserConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdminCreateUserConfigUndefined: Self = StObject.set(x, "adminCreateUserConfig", js.undefined)
+      inline def setAdminCreateUserConfigUndefined: Self = StObject.set(x, "adminCreateUserConfig", js.undefined)
       
-      @scala.inline
-      def setAliasAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "aliasAttributes", value.asInstanceOf[js.Any])
+      inline def setAliasAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "aliasAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasAttributesUndefined: Self = StObject.set(x, "aliasAttributes", js.undefined)
+      inline def setAliasAttributesUndefined: Self = StObject.set(x, "aliasAttributes", js.undefined)
       
-      @scala.inline
-      def setAliasAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "aliasAttributes", js.Array(value :_*))
+      inline def setAliasAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "aliasAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAutoVerifiedAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "autoVerifiedAttributes", value.asInstanceOf[js.Any])
+      inline def setAutoVerifiedAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "autoVerifiedAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoVerifiedAttributesUndefined: Self = StObject.set(x, "autoVerifiedAttributes", js.undefined)
+      inline def setAutoVerifiedAttributesUndefined: Self = StObject.set(x, "autoVerifiedAttributes", js.undefined)
       
-      @scala.inline
-      def setAutoVerifiedAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "autoVerifiedAttributes", js.Array(value :_*))
+      inline def setAutoVerifiedAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "autoVerifiedAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setCreationDate(value: Input[String]): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Input[String]): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+      inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
       
-      @scala.inline
-      def setDeviceConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolDeviceConfiguration]): Self = StObject.set(x, "deviceConfiguration", value.asInstanceOf[js.Any])
+      inline def setDeviceConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolDeviceConfiguration]): Self = StObject.set(x, "deviceConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceConfigurationUndefined: Self = StObject.set(x, "deviceConfiguration", js.undefined)
+      inline def setDeviceConfigurationUndefined: Self = StObject.set(x, "deviceConfiguration", js.undefined)
       
-      @scala.inline
-      def setEmailConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolEmailConfiguration]): Self = StObject.set(x, "emailConfiguration", value.asInstanceOf[js.Any])
+      inline def setEmailConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolEmailConfiguration]): Self = StObject.set(x, "emailConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailConfigurationUndefined: Self = StObject.set(x, "emailConfiguration", js.undefined)
+      inline def setEmailConfigurationUndefined: Self = StObject.set(x, "emailConfiguration", js.undefined)
       
-      @scala.inline
-      def setEmailVerificationMessage(value: Input[String]): Self = StObject.set(x, "emailVerificationMessage", value.asInstanceOf[js.Any])
+      inline def setEmailVerificationMessage(value: Input[String]): Self = StObject.set(x, "emailVerificationMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailVerificationMessageUndefined: Self = StObject.set(x, "emailVerificationMessage", js.undefined)
+      inline def setEmailVerificationMessageUndefined: Self = StObject.set(x, "emailVerificationMessage", js.undefined)
       
-      @scala.inline
-      def setEmailVerificationSubject(value: Input[String]): Self = StObject.set(x, "emailVerificationSubject", value.asInstanceOf[js.Any])
+      inline def setEmailVerificationSubject(value: Input[String]): Self = StObject.set(x, "emailVerificationSubject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailVerificationSubjectUndefined: Self = StObject.set(x, "emailVerificationSubject", js.undefined)
+      inline def setEmailVerificationSubjectUndefined: Self = StObject.set(x, "emailVerificationSubject", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setLambdaConfig(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolLambdaConfig]): Self = StObject.set(x, "lambdaConfig", value.asInstanceOf[js.Any])
+      inline def setLambdaConfig(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolLambdaConfig]): Self = StObject.set(x, "lambdaConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaConfigUndefined: Self = StObject.set(x, "lambdaConfig", js.undefined)
+      inline def setLambdaConfigUndefined: Self = StObject.set(x, "lambdaConfig", js.undefined)
       
-      @scala.inline
-      def setLastModifiedDate(value: Input[String]): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+      inline def setLastModifiedDate(value: Input[String]): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
+      inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
       
-      @scala.inline
-      def setMfaConfiguration(value: Input[String]): Self = StObject.set(x, "mfaConfiguration", value.asInstanceOf[js.Any])
+      inline def setMfaConfiguration(value: Input[String]): Self = StObject.set(x, "mfaConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMfaConfigurationUndefined: Self = StObject.set(x, "mfaConfiguration", js.undefined)
+      inline def setMfaConfigurationUndefined: Self = StObject.set(x, "mfaConfiguration", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPasswordPolicy(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolPasswordPolicy]): Self = StObject.set(x, "passwordPolicy", value.asInstanceOf[js.Any])
+      inline def setPasswordPolicy(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolPasswordPolicy]): Self = StObject.set(x, "passwordPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordPolicyUndefined: Self = StObject.set(x, "passwordPolicy", js.undefined)
+      inline def setPasswordPolicyUndefined: Self = StObject.set(x, "passwordPolicy", js.undefined)
       
-      @scala.inline
-      def setSchemas(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cognito.UserPoolSchema]]]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+      inline def setSchemas(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cognito.UserPoolSchema]]]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
+      inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
       
-      @scala.inline
-      def setSchemasVarargs(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolSchema]*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+      inline def setSchemasVarargs(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolSchema]*): Self = StObject.set(x, "schemas", js.Array(value :_*))
       
-      @scala.inline
-      def setSmsAuthenticationMessage(value: Input[String]): Self = StObject.set(x, "smsAuthenticationMessage", value.asInstanceOf[js.Any])
+      inline def setSmsAuthenticationMessage(value: Input[String]): Self = StObject.set(x, "smsAuthenticationMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmsAuthenticationMessageUndefined: Self = StObject.set(x, "smsAuthenticationMessage", js.undefined)
+      inline def setSmsAuthenticationMessageUndefined: Self = StObject.set(x, "smsAuthenticationMessage", js.undefined)
       
-      @scala.inline
-      def setSmsConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolSmsConfiguration]): Self = StObject.set(x, "smsConfiguration", value.asInstanceOf[js.Any])
+      inline def setSmsConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolSmsConfiguration]): Self = StObject.set(x, "smsConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmsConfigurationUndefined: Self = StObject.set(x, "smsConfiguration", js.undefined)
+      inline def setSmsConfigurationUndefined: Self = StObject.set(x, "smsConfiguration", js.undefined)
       
-      @scala.inline
-      def setSmsVerificationMessage(value: Input[String]): Self = StObject.set(x, "smsVerificationMessage", value.asInstanceOf[js.Any])
+      inline def setSmsVerificationMessage(value: Input[String]): Self = StObject.set(x, "smsVerificationMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmsVerificationMessageUndefined: Self = StObject.set(x, "smsVerificationMessage", js.undefined)
+      inline def setSmsVerificationMessageUndefined: Self = StObject.set(x, "smsVerificationMessage", js.undefined)
       
-      @scala.inline
-      def setSoftwareTokenMfaConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolSoftwareTokenMfaConfiguration]): Self = StObject.set(x, "softwareTokenMfaConfiguration", value.asInstanceOf[js.Any])
+      inline def setSoftwareTokenMfaConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolSoftwareTokenMfaConfiguration]): Self = StObject.set(x, "softwareTokenMfaConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSoftwareTokenMfaConfigurationUndefined: Self = StObject.set(x, "softwareTokenMfaConfiguration", js.undefined)
+      inline def setSoftwareTokenMfaConfigurationUndefined: Self = StObject.set(x, "softwareTokenMfaConfiguration", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUserPoolAddOns(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolUserPoolAddOns]): Self = StObject.set(x, "userPoolAddOns", value.asInstanceOf[js.Any])
+      inline def setUserPoolAddOns(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolUserPoolAddOns]): Self = StObject.set(x, "userPoolAddOns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPoolAddOnsUndefined: Self = StObject.set(x, "userPoolAddOns", js.undefined)
+      inline def setUserPoolAddOnsUndefined: Self = StObject.set(x, "userPoolAddOns", js.undefined)
       
-      @scala.inline
-      def setUsernameAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "usernameAttributes", value.asInstanceOf[js.Any])
+      inline def setUsernameAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "usernameAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameAttributesUndefined: Self = StObject.set(x, "usernameAttributes", js.undefined)
+      inline def setUsernameAttributesUndefined: Self = StObject.set(x, "usernameAttributes", js.undefined)
       
-      @scala.inline
-      def setUsernameAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "usernameAttributes", js.Array(value :_*))
+      inline def setUsernameAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "usernameAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setUsernameConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolUsernameConfiguration]): Self = StObject.set(x, "usernameConfiguration", value.asInstanceOf[js.Any])
+      inline def setUsernameConfiguration(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolUsernameConfiguration]): Self = StObject.set(x, "usernameConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameConfigurationUndefined: Self = StObject.set(x, "usernameConfiguration", js.undefined)
+      inline def setUsernameConfigurationUndefined: Self = StObject.set(x, "usernameConfiguration", js.undefined)
       
-      @scala.inline
-      def setVerificationMessageTemplate(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolVerificationMessageTemplate]): Self = StObject.set(x, "verificationMessageTemplate", value.asInstanceOf[js.Any])
+      inline def setVerificationMessageTemplate(value: Input[typings.pulumiAws.inputMod.cognito.UserPoolVerificationMessageTemplate]): Self = StObject.set(x, "verificationMessageTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerificationMessageTemplateUndefined: Self = StObject.set(x, "verificationMessageTemplate", js.undefined)
+      inline def setVerificationMessageTemplateUndefined: Self = StObject.set(x, "verificationMessageTemplate", js.undefined)
     }
   }
 }

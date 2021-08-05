@@ -13,16 +13,13 @@ trait SetClipboardDataOptions
 }
 object SetClipboardDataOptions {
   
-  @scala.inline
-  def apply(data: String): SetClipboardDataOptions = {
+  inline def apply(data: String): SetClipboardDataOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetClipboardDataOptions]
   }
   
-  @scala.inline
-  implicit class SetClipboardDataOptionsMutableBuilder[Self <: SetClipboardDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SetClipboardDataOptions](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

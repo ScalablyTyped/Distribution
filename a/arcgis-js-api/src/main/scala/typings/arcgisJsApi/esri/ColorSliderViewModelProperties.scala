@@ -31,34 +31,25 @@ trait ColorSliderViewModelProperties
 }
 object ColorSliderViewModelProperties {
   
-  @scala.inline
-  def apply(): ColorSliderViewModelProperties = {
+  inline def apply(): ColorSliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorSliderViewModelProperties]
   }
   
-  @scala.inline
-  implicit class ColorSliderViewModelPropertiesMutableBuilder[Self <: ColorSliderViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ColorSliderViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setHandlesSyncedToPrimary(value: Boolean): Self = StObject.set(x, "handlesSyncedToPrimary", value.asInstanceOf[js.Any])
+    inline def setHandlesSyncedToPrimary(value: Boolean): Self = StObject.set(x, "handlesSyncedToPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlesSyncedToPrimaryUndefined: Self = StObject.set(x, "handlesSyncedToPrimary", js.undefined)
+    inline def setHandlesSyncedToPrimaryUndefined: Self = StObject.set(x, "handlesSyncedToPrimary", js.undefined)
     
-    @scala.inline
-    def setPrimaryHandleEnabled(value: Boolean): Self = StObject.set(x, "primaryHandleEnabled", value.asInstanceOf[js.Any])
+    inline def setPrimaryHandleEnabled(value: Boolean): Self = StObject.set(x, "primaryHandleEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryHandleEnabledUndefined: Self = StObject.set(x, "primaryHandleEnabled", js.undefined)
+    inline def setPrimaryHandleEnabledUndefined: Self = StObject.set(x, "primaryHandleEnabled", js.undefined)
     
-    @scala.inline
-    def setStops(value: js.Array[ColorStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[ColorStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    @scala.inline
-    def setStopsVarargs(value: ColorStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: ColorStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
   }
 }

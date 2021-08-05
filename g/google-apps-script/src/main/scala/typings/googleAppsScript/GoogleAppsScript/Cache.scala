@@ -65,8 +65,7 @@ object Cache {
   }
   object CacheService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getDocumentCache: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null,
       getScriptCache: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null,
       getUserCache: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null
@@ -75,17 +74,13 @@ object Cache {
       __obj.asInstanceOf[CacheService]
     }
     
-    @scala.inline
-    implicit class CacheServiceMutableBuilder[Self <: CacheService] (val x: Self) extends AnyVal {
+    extension [Self <: CacheService](x: Self) {
       
-      @scala.inline
-      def setGetDocumentCache(value: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null): Self = StObject.set(x, "getDocumentCache", js.Any.fromFunction0(value))
+      inline def setGetDocumentCache(value: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null): Self = StObject.set(x, "getDocumentCache", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScriptCache(value: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null): Self = StObject.set(x, "getScriptCache", js.Any.fromFunction0(value))
+      inline def setGetScriptCache(value: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null): Self = StObject.set(x, "getScriptCache", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUserCache(value: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null): Self = StObject.set(x, "getUserCache", js.Any.fromFunction0(value))
+      inline def setGetUserCache(value: () => typings.googleAppsScript.GoogleAppsScript.Cache.Cache | Null): Self = StObject.set(x, "getUserCache", js.Any.fromFunction0(value))
     }
   }
 }

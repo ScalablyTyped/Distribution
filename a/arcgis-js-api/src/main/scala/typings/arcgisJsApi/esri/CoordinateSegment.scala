@@ -34,8 +34,7 @@ trait CoordinateSegment
 }
 object CoordinateSegment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alias: String,
     constructor: js.Function,
     description: String,
@@ -47,16 +46,12 @@ object CoordinateSegment {
     __obj.asInstanceOf[CoordinateSegment]
   }
   
-  @scala.inline
-  implicit class CoordinateSegmentMutableBuilder[Self <: CoordinateSegment] (val x: Self) extends AnyVal {
+  extension [Self <: CoordinateSegment](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchPattern(value: RegExp): Self = StObject.set(x, "searchPattern", value.asInstanceOf[js.Any])
+    inline def setSearchPattern(value: RegExp): Self = StObject.set(x, "searchPattern", value.asInstanceOf[js.Any])
   }
 }

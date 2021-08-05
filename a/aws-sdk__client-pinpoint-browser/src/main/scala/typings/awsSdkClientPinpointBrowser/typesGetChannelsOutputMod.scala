@@ -26,20 +26,16 @@ object typesGetChannelsOutputMod {
   }
   object GetChannelsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, ChannelsResponse: UnmarshalledChannelsResponse): GetChannelsOutput = {
+    inline def apply($metadata: ResponseMetadata, ChannelsResponse: UnmarshalledChannelsResponse): GetChannelsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ChannelsResponse = ChannelsResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetChannelsOutput]
     }
     
-    @scala.inline
-    implicit class GetChannelsOutputMutableBuilder[Self <: GetChannelsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetChannelsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelsResponse(value: UnmarshalledChannelsResponse): Self = StObject.set(x, "ChannelsResponse", value.asInstanceOf[js.Any])
+      inline def setChannelsResponse(value: UnmarshalledChannelsResponse): Self = StObject.set(x, "ChannelsResponse", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -17,25 +17,19 @@ trait TranslateTextGlossaryConfig extends StObject {
 }
 object TranslateTextGlossaryConfig {
   
-  @scala.inline
-  def apply(): TranslateTextGlossaryConfig = {
+  inline def apply(): TranslateTextGlossaryConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TranslateTextGlossaryConfig]
   }
   
-  @scala.inline
-  implicit class TranslateTextGlossaryConfigMutableBuilder[Self <: TranslateTextGlossaryConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TranslateTextGlossaryConfig](x: Self) {
     
-    @scala.inline
-    def setGlossary(value: String): Self = StObject.set(x, "glossary", value.asInstanceOf[js.Any])
+    inline def setGlossary(value: String): Self = StObject.set(x, "glossary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlossaryUndefined: Self = StObject.set(x, "glossary", js.undefined)
+    inline def setGlossaryUndefined: Self = StObject.set(x, "glossary", js.undefined)
     
-    @scala.inline
-    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+    inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+    inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
   }
 }

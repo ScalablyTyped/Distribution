@@ -12,6 +12,5 @@ object labelDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def labelDriverFactory(hasElementEventTrigger: Element): GetForAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("labelDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[GetForAttribute]
+  inline def labelDriverFactory(hasElementEventTrigger: Element): GetForAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("labelDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[GetForAttribute]
 }

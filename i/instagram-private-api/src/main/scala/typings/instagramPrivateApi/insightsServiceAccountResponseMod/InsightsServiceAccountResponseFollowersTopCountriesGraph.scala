@@ -10,19 +10,15 @@ trait InsightsServiceAccountResponseFollowersTopCountriesGraph extends StObject 
 }
 object InsightsServiceAccountResponseFollowersTopCountriesGraph {
   
-  @scala.inline
-  def apply(data_points: js.Array[InsightsServiceAccountResponseDataPointsItem]): InsightsServiceAccountResponseFollowersTopCountriesGraph = {
+  inline def apply(data_points: js.Array[InsightsServiceAccountResponseDataPointsItem]): InsightsServiceAccountResponseFollowersTopCountriesGraph = {
     val __obj = js.Dynamic.literal(data_points = data_points.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServiceAccountResponseFollowersTopCountriesGraph]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponseFollowersTopCountriesGraphMutableBuilder[Self <: InsightsServiceAccountResponseFollowersTopCountriesGraph] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponseFollowersTopCountriesGraph](x: Self) {
     
-    @scala.inline
-    def setData_points(value: js.Array[InsightsServiceAccountResponseDataPointsItem]): Self = StObject.set(x, "data_points", value.asInstanceOf[js.Any])
+    inline def setData_points(value: js.Array[InsightsServiceAccountResponseDataPointsItem]): Self = StObject.set(x, "data_points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData_pointsVarargs(value: InsightsServiceAccountResponseDataPointsItem*): Self = StObject.set(x, "data_points", js.Array(value :_*))
+    inline def setData_pointsVarargs(value: InsightsServiceAccountResponseDataPointsItem*): Self = StObject.set(x, "data_points", js.Array(value :_*))
   }
 }

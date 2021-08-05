@@ -10,8 +10,7 @@ trait IHistory
      with IObservable
 object IHistory {
   
-  @scala.inline
-  def apply(): IHistory = {
+  inline def apply(): IHistory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IHistory]
   }

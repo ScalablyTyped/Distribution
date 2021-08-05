@@ -17,8 +17,7 @@ trait FunctionAbi
      with AbiDefinition
 object FunctionAbi {
   
-  @scala.inline
-  def ConstructorAbi(
+  inline def ConstructorAbi(
     inputs: js.Array[DataItem],
     payable: Boolean,
     stateMutability: ConstructorStateMutability,
@@ -29,15 +28,13 @@ object FunctionAbi {
     __obj.asInstanceOf[typings.ethereumProtocol.mod.ConstructorAbi]
   }
   
-  @scala.inline
-  def FallbackAbi(payable: Boolean, `type`: Fallback): typings.ethereumProtocol.mod.FallbackAbi = {
+  inline def FallbackAbi(payable: Boolean, `type`: Fallback): typings.ethereumProtocol.mod.FallbackAbi = {
     val __obj = js.Dynamic.literal(payable = payable.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.ethereumProtocol.mod.FallbackAbi]
   }
   
-  @scala.inline
-  def MethodAbi(
+  inline def MethodAbi(
     constant: Boolean,
     inputs: js.Array[DataItem],
     name: String,

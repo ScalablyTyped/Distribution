@@ -12,16 +12,13 @@ trait OpenVoucherDetailOptions1
 }
 object OpenVoucherDetailOptions1 {
   
-  @scala.inline
-  def apply(passId: String): OpenVoucherDetailOptions1 = {
+  inline def apply(passId: String): OpenVoucherDetailOptions1 = {
     val __obj = js.Dynamic.literal(passId = passId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenVoucherDetailOptions1]
   }
   
-  @scala.inline
-  implicit class OpenVoucherDetailOptions1MutableBuilder[Self <: OpenVoucherDetailOptions1] (val x: Self) extends AnyVal {
+  extension [Self <: OpenVoucherDetailOptions1](x: Self) {
     
-    @scala.inline
-    def setPassId(value: String): Self = StObject.set(x, "passId", value.asInstanceOf[js.Any])
+    inline def setPassId(value: String): Self = StObject.set(x, "passId", value.asInstanceOf[js.Any])
   }
 }

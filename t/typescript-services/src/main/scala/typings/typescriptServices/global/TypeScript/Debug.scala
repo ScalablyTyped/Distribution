@@ -16,29 +16,21 @@ object Debug {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def assert(expression: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def assert(expression: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def assert(expression: js.Any, message: String, verboseDebugInfo: js.Function0[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any], message.asInstanceOf[js.Any], verboseDebugInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def assert(expression: js.Any, message: Unit, verboseDebugInfo: js.Function0[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any], message.asInstanceOf[js.Any], verboseDebugInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assert(expression: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def assert(expression: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assert(expression: js.Any, message: String, verboseDebugInfo: js.Function0[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any], message.asInstanceOf[js.Any], verboseDebugInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assert(expression: js.Any, message: Unit, verboseDebugInfo: js.Function0[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expression.asInstanceOf[js.Any], message.asInstanceOf[js.Any], verboseDebugInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
   @JSGlobal("TypeScript.Debug.currentAssertionLevel")
   @js.native
   def currentAssertionLevel: js.Any = js.native
-  @scala.inline
-  def currentAssertionLevel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentAssertionLevel")(x.asInstanceOf[js.Any])
+  inline def currentAssertionLevel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentAssertionLevel")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def fail(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")().asInstanceOf[Unit]
-  @scala.inline
-  def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def fail(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")().asInstanceOf[Unit]
+  inline def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def shouldAssert(level: typings.typescriptServices.TypeScript.AssertionLevel): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldAssert")(level.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def shouldAssert(level: typings.typescriptServices.TypeScript.AssertionLevel): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldAssert")(level.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

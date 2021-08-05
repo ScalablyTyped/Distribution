@@ -43,49 +43,35 @@ trait RespondToAuthChallengeRequest extends StObject {
 }
 object RespondToAuthChallengeRequest {
   
-  @scala.inline
-  def apply(ChallengeName: ChallengeNameType, ClientId: ClientIdType): RespondToAuthChallengeRequest = {
+  inline def apply(ChallengeName: ChallengeNameType, ClientId: ClientIdType): RespondToAuthChallengeRequest = {
     val __obj = js.Dynamic.literal(ChallengeName = ChallengeName.asInstanceOf[js.Any], ClientId = ClientId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RespondToAuthChallengeRequest]
   }
   
-  @scala.inline
-  implicit class RespondToAuthChallengeRequestMutableBuilder[Self <: RespondToAuthChallengeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RespondToAuthChallengeRequest](x: Self) {
     
-    @scala.inline
-    def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
+    inline def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyticsMetadataUndefined: Self = StObject.set(x, "AnalyticsMetadata", js.undefined)
+    inline def setAnalyticsMetadataUndefined: Self = StObject.set(x, "AnalyticsMetadata", js.undefined)
     
-    @scala.inline
-    def setChallengeName(value: ChallengeNameType): Self = StObject.set(x, "ChallengeName", value.asInstanceOf[js.Any])
+    inline def setChallengeName(value: ChallengeNameType): Self = StObject.set(x, "ChallengeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChallengeResponses(value: ChallengeResponsesType): Self = StObject.set(x, "ChallengeResponses", value.asInstanceOf[js.Any])
+    inline def setChallengeResponses(value: ChallengeResponsesType): Self = StObject.set(x, "ChallengeResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChallengeResponsesUndefined: Self = StObject.set(x, "ChallengeResponses", js.undefined)
+    inline def setChallengeResponsesUndefined: Self = StObject.set(x, "ChallengeResponses", js.undefined)
     
-    @scala.inline
-    def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
+    inline def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
+    inline def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
     
-    @scala.inline
-    def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
     
-    @scala.inline
-    def setUserContextData(value: UserContextDataType): Self = StObject.set(x, "UserContextData", value.asInstanceOf[js.Any])
+    inline def setUserContextData(value: UserContextDataType): Self = StObject.set(x, "UserContextData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserContextDataUndefined: Self = StObject.set(x, "UserContextData", js.undefined)
+    inline def setUserContextDataUndefined: Self = StObject.set(x, "UserContextData", js.undefined)
   }
 }

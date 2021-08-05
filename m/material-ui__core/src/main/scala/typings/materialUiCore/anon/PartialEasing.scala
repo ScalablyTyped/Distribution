@@ -17,37 +17,27 @@ trait PartialEasing extends StObject {
 }
 object PartialEasing {
   
-  @scala.inline
-  def apply(): PartialEasing = {
+  inline def apply(): PartialEasing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialEasing]
   }
   
-  @scala.inline
-  implicit class PartialEasingMutableBuilder[Self <: PartialEasing] (val x: Self) extends AnyVal {
+  extension [Self <: PartialEasing](x: Self) {
     
-    @scala.inline
-    def setEaseIn(value: String): Self = StObject.set(x, "easeIn", value.asInstanceOf[js.Any])
+    inline def setEaseIn(value: String): Self = StObject.set(x, "easeIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEaseInOut(value: String): Self = StObject.set(x, "easeInOut", value.asInstanceOf[js.Any])
+    inline def setEaseInOut(value: String): Self = StObject.set(x, "easeInOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEaseInOutUndefined: Self = StObject.set(x, "easeInOut", js.undefined)
+    inline def setEaseInOutUndefined: Self = StObject.set(x, "easeInOut", js.undefined)
     
-    @scala.inline
-    def setEaseInUndefined: Self = StObject.set(x, "easeIn", js.undefined)
+    inline def setEaseInUndefined: Self = StObject.set(x, "easeIn", js.undefined)
     
-    @scala.inline
-    def setEaseOut(value: String): Self = StObject.set(x, "easeOut", value.asInstanceOf[js.Any])
+    inline def setEaseOut(value: String): Self = StObject.set(x, "easeOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEaseOutUndefined: Self = StObject.set(x, "easeOut", js.undefined)
+    inline def setEaseOutUndefined: Self = StObject.set(x, "easeOut", js.undefined)
     
-    @scala.inline
-    def setSharp(value: String): Self = StObject.set(x, "sharp", value.asInstanceOf[js.Any])
+    inline def setSharp(value: String): Self = StObject.set(x, "sharp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharpUndefined: Self = StObject.set(x, "sharp", js.undefined)
+    inline def setSharpUndefined: Self = StObject.set(x, "sharp", js.undefined)
   }
 }

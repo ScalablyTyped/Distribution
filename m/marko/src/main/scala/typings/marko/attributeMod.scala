@@ -105,8 +105,7 @@ object attributeMod {
   }
   object Attribute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowExpressions: Boolean,
       autocomplete: Boolean,
       defaultValue: String,
@@ -127,89 +126,61 @@ object attributeMod {
       __obj.asInstanceOf[Attribute]
     }
     
-    @scala.inline
-    implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
+    extension [Self <: Attribute](x: Self) {
       
-      @scala.inline
-      def setAllowExpressions(value: Boolean): Self = StObject.set(x, "allowExpressions", value.asInstanceOf[js.Any])
+      inline def setAllowExpressions(value: Boolean): Self = StObject.set(x, "allowExpressions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutocomplete(value: Boolean): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
+      inline def setAutocomplete(value: Boolean): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecated(value: js.Any): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+      inline def setDeprecated(value: js.Any): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicAttribute(value: Boolean): Self = StObject.set(x, "dynamicAttribute", value.asInstanceOf[js.Any])
+      inline def setDynamicAttribute(value: Boolean): Self = StObject.set(x, "dynamicAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnum(value: js.Any): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+      inline def setEnum(value: js.Any): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPattern(value: js.Any): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: js.Any): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+      inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      @scala.inline
-      def setPreserveName(value: String): Self = StObject.set(x, "preserveName", value.asInstanceOf[js.Any])
+      inline def setPreserveName(value: String): Self = StObject.set(x, "preserveName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveNameUndefined: Self = StObject.set(x, "preserveName", js.undefined)
+      inline def setPreserveNameUndefined: Self = StObject.set(x, "preserveName", js.undefined)
       
-      @scala.inline
-      def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setRemoveDashes(value: Boolean): Self = StObject.set(x, "removeDashes", value.asInstanceOf[js.Any])
+      inline def setRemoveDashes(value: Boolean): Self = StObject.set(x, "removeDashes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetContextFlag(value: String): Self = StObject.set(x, "setContextFlag", value.asInstanceOf[js.Any])
+      inline def setSetContextFlag(value: String): Self = StObject.set(x, "setContextFlag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetFlag(value: String): Self = StObject.set(x, "setFlag", value.asInstanceOf[js.Any])
+      inline def setSetFlag(value: String): Self = StObject.set(x, "setFlag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetFlagNull: Self = StObject.set(x, "setFlag", null)
+      inline def setSetFlagNull: Self = StObject.set(x, "setFlag", null)
       
-      @scala.inline
-      def setTargetProperty(value: String): Self = StObject.set(x, "targetProperty", value.asInstanceOf[js.Any])
+      inline def setTargetProperty(value: String): Self = StObject.set(x, "targetProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetPropertyNull: Self = StObject.set(x, "targetProperty", null)
+      inline def setTargetPropertyNull: Self = StObject.set(x, "targetProperty", null)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeNull: Self = StObject.set(x, "type", null)
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
     }
   }
 }

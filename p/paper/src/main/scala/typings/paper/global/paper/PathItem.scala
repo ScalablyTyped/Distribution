@@ -31,8 +31,7 @@ object PathItem {
     * @return the newly created path item
     */
   /* static member */
-  @scala.inline
-  def create(`object`: js.Object): typings.paper.paper.Path | typings.paper.paper.CompoundPath = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.paper.paper.Path | typings.paper.paper.CompoundPath]
+  inline def create(`object`: js.Object): typings.paper.paper.Path | typings.paper.paper.CompoundPath = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.paper.paper.Path | typings.paper.paper.CompoundPath]
   /** 
     * Creates a path item from the given SVG path-data, determining if the
     * data describes a plain path or a compound-path with multiple
@@ -43,8 +42,7 @@ object PathItem {
     * @return the newly created path item
     */
   /* static member */
-  @scala.inline
-  def create(pathData: String): typings.paper.paper.Path | typings.paper.paper.CompoundPath = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pathData.asInstanceOf[js.Any]).asInstanceOf[typings.paper.paper.Path | typings.paper.paper.CompoundPath]
+  inline def create(pathData: String): typings.paper.paper.Path | typings.paper.paper.CompoundPath = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pathData.asInstanceOf[js.Any]).asInstanceOf[typings.paper.paper.Path | typings.paper.paper.CompoundPath]
   /** 
     * Creates a path item from the given segments array, determining if the
     * array describes a plain path or a compound-path with multiple
@@ -55,6 +53,5 @@ object PathItem {
     * @return the newly created path item
     */
   /* static member */
-  @scala.inline
-  def create(segments: js.Array[js.Array[Double]]): typings.paper.paper.Path | typings.paper.paper.CompoundPath = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(segments.asInstanceOf[js.Any]).asInstanceOf[typings.paper.paper.Path | typings.paper.paper.CompoundPath]
+  inline def create(segments: js.Array[js.Array[Double]]): typings.paper.paper.Path | typings.paper.paper.CompoundPath = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(segments.asInstanceOf[js.Any]).asInstanceOf[typings.paper.paper.Path | typings.paper.paper.CompoundPath]
 }

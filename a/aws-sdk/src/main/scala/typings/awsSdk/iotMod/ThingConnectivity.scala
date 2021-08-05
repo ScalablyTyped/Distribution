@@ -18,25 +18,19 @@ trait ThingConnectivity extends StObject {
 }
 object ThingConnectivity {
   
-  @scala.inline
-  def apply(): ThingConnectivity = {
+  inline def apply(): ThingConnectivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThingConnectivity]
   }
   
-  @scala.inline
-  implicit class ThingConnectivityMutableBuilder[Self <: ThingConnectivity] (val x: Self) extends AnyVal {
+  extension [Self <: ThingConnectivity](x: Self) {
     
-    @scala.inline
-    def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+    inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
+    inline def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: ConnectivityTimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: ConnectivityTimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

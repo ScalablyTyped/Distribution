@@ -16,19 +16,15 @@ trait SchemaInlineObjectProperties extends StObject {
 }
 object SchemaInlineObjectProperties {
   
-  @scala.inline
-  def apply(): SchemaInlineObjectProperties = {
+  inline def apply(): SchemaInlineObjectProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInlineObjectProperties]
   }
   
-  @scala.inline
-  implicit class SchemaInlineObjectPropertiesMutableBuilder[Self <: SchemaInlineObjectProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInlineObjectProperties](x: Self) {
     
-    @scala.inline
-    def setEmbeddedObject(value: SchemaEmbeddedObject): Self = StObject.set(x, "embeddedObject", value.asInstanceOf[js.Any])
+    inline def setEmbeddedObject(value: SchemaEmbeddedObject): Self = StObject.set(x, "embeddedObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddedObjectUndefined: Self = StObject.set(x, "embeddedObject", js.undefined)
+    inline def setEmbeddedObjectUndefined: Self = StObject.set(x, "embeddedObject", js.undefined)
   }
 }

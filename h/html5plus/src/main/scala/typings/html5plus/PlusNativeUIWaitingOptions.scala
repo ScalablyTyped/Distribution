@@ -127,91 +127,63 @@ trait PlusNativeUIWaitingOptions extends StObject {
 }
 object PlusNativeUIWaitingOptions {
   
-  @scala.inline
-  def apply(): PlusNativeUIWaitingOptions = {
+  inline def apply(): PlusNativeUIWaitingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeUIWaitingOptions]
   }
   
-  @scala.inline
-  implicit class PlusNativeUIWaitingOptionsMutableBuilder[Self <: PlusNativeUIWaitingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeUIWaitingOptions](x: Self) {
     
-    @scala.inline
-    def setBack(value: none | close | transmit): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
+    inline def setBack(value: none | close | transmit): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackUndefined: Self = StObject.set(x, "back", js.undefined)
+    inline def setBackUndefined: Self = StObject.set(x, "back", js.undefined)
     
-    @scala.inline
-    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLoading(value: PlusNativeUIWaitingLoadingOptions): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: PlusNativeUIWaitingLoadingOptions): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
-    @scala.inline
-    def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+    inline def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
+    inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
-    @scala.inline
-    def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setPadlock(value: Boolean): Self = StObject.set(x, "padlock", value.asInstanceOf[js.Any])
+    inline def setPadlock(value: Boolean): Self = StObject.set(x, "padlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadlockUndefined: Self = StObject.set(x, "padlock", js.undefined)
+    inline def setPadlockUndefined: Self = StObject.set(x, "padlock", js.undefined)
     
-    @scala.inline
-    def setRound(value: Double): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+    inline def setRound(value: Double): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+    inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStyle(value: black | white): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: black | white): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTextalign(value: String): Self = StObject.set(x, "textalign", value.asInstanceOf[js.Any])
+    inline def setTextalign(value: String): Self = StObject.set(x, "textalign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextalignUndefined: Self = StObject.set(x, "textalign", js.undefined)
+    inline def setTextalignUndefined: Self = StObject.set(x, "textalign", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

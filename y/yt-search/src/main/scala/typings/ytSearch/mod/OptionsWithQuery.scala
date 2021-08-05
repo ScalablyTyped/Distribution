@@ -13,16 +13,13 @@ trait OptionsWithQuery
 }
 object OptionsWithQuery {
   
-  @scala.inline
-  def apply(query: String): OptionsWithQuery = {
+  inline def apply(query: String): OptionsWithQuery = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsWithQuery]
   }
   
-  @scala.inline
-  implicit class OptionsWithQueryMutableBuilder[Self <: OptionsWithQuery] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsWithQuery](x: Self) {
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

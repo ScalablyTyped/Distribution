@@ -22,6 +22,6 @@ trait RecentFiles extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.RecentFiles_typekey")
+  /* private */ @JSName("Word.RecentFiles_typekey")
   var WordDotRecentFiles_typekey: RecentFiles = js.native
 }

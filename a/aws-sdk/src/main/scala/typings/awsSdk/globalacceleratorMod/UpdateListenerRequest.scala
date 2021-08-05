@@ -28,37 +28,27 @@ trait UpdateListenerRequest extends StObject {
 }
 object UpdateListenerRequest {
   
-  @scala.inline
-  def apply(ListenerArn: GenericString): UpdateListenerRequest = {
+  inline def apply(ListenerArn: GenericString): UpdateListenerRequest = {
     val __obj = js.Dynamic.literal(ListenerArn = ListenerArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateListenerRequest]
   }
   
-  @scala.inline
-  implicit class UpdateListenerRequestMutableBuilder[Self <: UpdateListenerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateListenerRequest](x: Self) {
     
-    @scala.inline
-    def setClientAffinity(value: ClientAffinity): Self = StObject.set(x, "ClientAffinity", value.asInstanceOf[js.Any])
+    inline def setClientAffinity(value: ClientAffinity): Self = StObject.set(x, "ClientAffinity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientAffinityUndefined: Self = StObject.set(x, "ClientAffinity", js.undefined)
+    inline def setClientAffinityUndefined: Self = StObject.set(x, "ClientAffinity", js.undefined)
     
-    @scala.inline
-    def setListenerArn(value: GenericString): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
+    inline def setListenerArn(value: GenericString): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortRanges(value: PortRanges): Self = StObject.set(x, "PortRanges", value.asInstanceOf[js.Any])
+    inline def setPortRanges(value: PortRanges): Self = StObject.set(x, "PortRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortRangesUndefined: Self = StObject.set(x, "PortRanges", js.undefined)
+    inline def setPortRangesUndefined: Self = StObject.set(x, "PortRanges", js.undefined)
     
-    @scala.inline
-    def setPortRangesVarargs(value: PortRange*): Self = StObject.set(x, "PortRanges", js.Array(value :_*))
+    inline def setPortRangesVarargs(value: PortRange*): Self = StObject.set(x, "PortRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
   }
 }

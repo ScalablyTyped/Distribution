@@ -46,20 +46,16 @@ object typesMod {
   }
   object CustomFormatConfig {
     
-    @scala.inline
-    def apply(): CustomFormatConfig = {
+    inline def apply(): CustomFormatConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomFormatConfig]
     }
     
-    @scala.inline
-    implicit class CustomFormatConfigMutableBuilder[Self <: CustomFormatConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CustomFormatConfig](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     }
   }
   
@@ -76,38 +72,28 @@ object typesMod {
   }
   object CustomFormats {
     
-    @scala.inline
-    def apply(): CustomFormats = {
+    inline def apply(): CustomFormats = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomFormats]
     }
     
-    @scala.inline
-    implicit class CustomFormatsMutableBuilder[Self <: CustomFormats] (val x: Self) extends AnyVal {
+    extension [Self <: CustomFormats](x: Self) {
       
-      @scala.inline
-      def setDate(value: Record[String, DateTimeFormatOptions]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Record[String, DateTimeFormatOptions]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setNumber(value: Record[String, NumberFormatOptions]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Record[String, NumberFormatOptions]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      @scala.inline
-      def setRelative(value: Record[String, IntlRelativeTimeFormatOptions]): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      inline def setRelative(value: Record[String, IntlRelativeTimeFormatOptions]): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
+      inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
       
-      @scala.inline
-      def setTime(value: Record[String, DateTimeFormatOptions]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Record[String, DateTimeFormatOptions]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     }
   }
   
@@ -125,14 +111,11 @@ object typesMod {
   trait FormatDisplayNameOptions extends StObject
   object FormatDisplayNameOptions {
     
-    @scala.inline
-    def fallback: typings.formatjsIntl.formatjsIntlStrings.fallback = "fallback".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.fallback]
+    inline def fallback: typings.formatjsIntl.formatjsIntlStrings.fallback = "fallback".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.fallback]
     
-    @scala.inline
-    def style: typings.formatjsIntl.formatjsIntlStrings.style = "style".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.style]
+    inline def style: typings.formatjsIntl.formatjsIntlStrings.style = "style".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.style]
     
-    @scala.inline
-    def `type`: typings.formatjsIntl.formatjsIntlStrings.`type` = "type".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.`type`]
+    inline def `type`: typings.formatjsIntl.formatjsIntlStrings.`type` = "type".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.`type`]
   }
   
   /* Inlined std.Exclude<@formatjs/intl-listformat.@formatjs/intl-listformat.IntlListFormatOptions, 'localeMatcher'> */
@@ -143,11 +126,9 @@ object typesMod {
   trait FormatListOptions extends StObject
   object FormatListOptions {
     
-    @scala.inline
-    def style: typings.formatjsIntl.formatjsIntlStrings.style = "style".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.style]
+    inline def style: typings.formatjsIntl.formatjsIntlStrings.style = "style".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.style]
     
-    @scala.inline
-    def `type`: typings.formatjsIntl.formatjsIntlStrings.`type` = "type".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.`type`]
+    inline def `type`: typings.formatjsIntl.formatjsIntlStrings.`type` = "type".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.`type`]
   }
   
   type FormatNumberOptions = (Exclude[typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptions, localeMatcher]) & CustomFormatConfig
@@ -188,8 +169,7 @@ object typesMod {
   }
   object Formatters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getDateTimeFormat: ConstructorParameters[TypeofDateTimeFormat] => DateTimeFormat,
       getDisplayNames: ConstructorParameters[TypeofDisplayNames] => DisplayNames,
       getListFormat: ConstructorParameters[TypeofIntlListFormat] => default,
@@ -202,29 +182,21 @@ object typesMod {
       __obj.asInstanceOf[Formatters]
     }
     
-    @scala.inline
-    implicit class FormattersMutableBuilder[Self <: Formatters] (val x: Self) extends AnyVal {
+    extension [Self <: Formatters](x: Self) {
       
-      @scala.inline
-      def setGetDateTimeFormat(value: ConstructorParameters[TypeofDateTimeFormat] => DateTimeFormat): Self = StObject.set(x, "getDateTimeFormat", js.Any.fromFunction1(value))
+      inline def setGetDateTimeFormat(value: ConstructorParameters[TypeofDateTimeFormat] => DateTimeFormat): Self = StObject.set(x, "getDateTimeFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDisplayNames(value: ConstructorParameters[TypeofDisplayNames] => DisplayNames): Self = StObject.set(x, "getDisplayNames", js.Any.fromFunction1(value))
+      inline def setGetDisplayNames(value: ConstructorParameters[TypeofDisplayNames] => DisplayNames): Self = StObject.set(x, "getDisplayNames", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetListFormat(value: ConstructorParameters[TypeofIntlListFormat] => default): Self = StObject.set(x, "getListFormat", js.Any.fromFunction1(value))
+      inline def setGetListFormat(value: ConstructorParameters[TypeofIntlListFormat] => default): Self = StObject.set(x, "getListFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMessageFormat(value: ConstructorParameters[TypeofIntlMessageFormat] => IntlMessageFormat): Self = StObject.set(x, "getMessageFormat", js.Any.fromFunction1(value))
+      inline def setGetMessageFormat(value: ConstructorParameters[TypeofIntlMessageFormat] => IntlMessageFormat): Self = StObject.set(x, "getMessageFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNumberFormat(value: ConstructorParameters[TypeofNumberFormat] => NumberFormat): Self = StObject.set(x, "getNumberFormat", js.Any.fromFunction1(value))
+      inline def setGetNumberFormat(value: ConstructorParameters[TypeofNumberFormat] => NumberFormat): Self = StObject.set(x, "getNumberFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPluralRules(value: ConstructorParameters[TypeofPluralRules] => PluralRules): Self = StObject.set(x, "getPluralRules", js.Any.fromFunction1(value))
+      inline def setGetPluralRules(value: ConstructorParameters[TypeofPluralRules] => PluralRules): Self = StObject.set(x, "getPluralRules", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRelativeTimeFormat(
+      inline def setGetRelativeTimeFormat(
         value: ConstructorParameters[TypeofIntlRelativeTimeFor] => typings.formatjsIntlRelativetimeformat.mod.default
       ): Self = StObject.set(x, "getRelativeTimeFormat", js.Any.fromFunction1(value))
     }
@@ -248,8 +220,7 @@ object typesMod {
   }
   object IntlCache {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dateTime: Record[String, DateTimeFormat],
       displayNames: Record[String, DisplayNames],
       list: Record[String, default],
@@ -262,29 +233,21 @@ object typesMod {
       __obj.asInstanceOf[IntlCache]
     }
     
-    @scala.inline
-    implicit class IntlCacheMutableBuilder[Self <: IntlCache] (val x: Self) extends AnyVal {
+    extension [Self <: IntlCache](x: Self) {
       
-      @scala.inline
-      def setDateTime(value: Record[String, DateTimeFormat]): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+      inline def setDateTime(value: Record[String, DateTimeFormat]): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNames(value: Record[String, DisplayNames]): Self = StObject.set(x, "displayNames", value.asInstanceOf[js.Any])
+      inline def setDisplayNames(value: Record[String, DisplayNames]): Self = StObject.set(x, "displayNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setList(value: Record[String, default]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: Record[String, default]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: Record[String, IntlMessageFormat]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Record[String, IntlMessageFormat]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: Record[String, NumberFormat]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Record[String, NumberFormat]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluralRules(value: Record[String, PluralRules]): Self = StObject.set(x, "pluralRules", value.asInstanceOf[js.Any])
+      inline def setPluralRules(value: Record[String, PluralRules]): Self = StObject.set(x, "pluralRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeTime(value: Record[String, typings.formatjsIntlRelativetimeformat.mod.default]): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
+      inline def setRelativeTime(value: Record[String, typings.formatjsIntlRelativetimeformat.mod.default]): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -315,8 +278,7 @@ object typesMod {
   }
   object IntlConfig {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       defaultFormats: CustomFormats,
       defaultLocale: String,
       formats: CustomFormats,
@@ -328,40 +290,29 @@ object typesMod {
       __obj.asInstanceOf[IntlConfig[T]]
     }
     
-    @scala.inline
-    implicit class IntlConfigMutableBuilder[Self <: IntlConfig[?], T] (val x: Self & IntlConfig[T]) extends AnyVal {
+    extension [Self <: IntlConfig[?], T](x: Self & IntlConfig[T]) {
       
-      @scala.inline
-      def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])
+      inline def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
+      inline def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRichTextElements(value: Record[String, FormatXMLElementFn[T, String | T | (js.Array[String | T])]]): Self = StObject.set(x, "defaultRichTextElements", value.asInstanceOf[js.Any])
+      inline def setDefaultRichTextElements(value: Record[String, FormatXMLElementFn[T, String | T | (js.Array[String | T])]]): Self = StObject.set(x, "defaultRichTextElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRichTextElementsUndefined: Self = StObject.set(x, "defaultRichTextElements", js.undefined)
+      inline def setDefaultRichTextElementsUndefined: Self = StObject.set(x, "defaultRichTextElements", js.undefined)
       
-      @scala.inline
-      def setFormats(value: CustomFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: CustomFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessages(value: Record[String, js.Array[MessageFormatElement] | String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: Record[String, js.Array[MessageFormatElement] | String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnError(
+      inline def setOnError(
         value: /* err */ MissingTranslationError | MessageFormatError | MissingDataError | InvalidConfigError | UnsupportedFormatterError | FormatError => Unit
       ): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+      inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+      inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
     }
   }
   
@@ -524,35 +475,26 @@ object typesMod {
   }
   object MessageDescriptor {
     
-    @scala.inline
-    def apply(): MessageDescriptor = {
+    inline def apply(): MessageDescriptor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MessageDescriptor]
     }
     
-    @scala.inline
-    implicit class MessageDescriptorMutableBuilder[Self <: MessageDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: MessageDescriptor](x: Self) {
       
-      @scala.inline
-      def setDefaultMessage(value: String | js.Array[MessageFormatElement]): Self = StObject.set(x, "defaultMessage", value.asInstanceOf[js.Any])
+      inline def setDefaultMessage(value: String | js.Array[MessageFormatElement]): Self = StObject.set(x, "defaultMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultMessageUndefined: Self = StObject.set(x, "defaultMessage", js.undefined)
+      inline def setDefaultMessageUndefined: Self = StObject.set(x, "defaultMessage", js.undefined)
       
-      @scala.inline
-      def setDefaultMessageVarargs(value: MessageFormatElement*): Self = StObject.set(x, "defaultMessage", js.Array(value :_*))
+      inline def setDefaultMessageVarargs(value: MessageFormatElement*): Self = StObject.set(x, "defaultMessage", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String | js.Object): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String | js.Object): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
   }
   
@@ -582,61 +524,44 @@ object typesMod {
   }
   object OptionalIntlConfig {
     
-    @scala.inline
-    def apply[T](locale: String): OptionalIntlConfig[T] = {
+    inline def apply[T](locale: String): OptionalIntlConfig[T] = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionalIntlConfig[T]]
     }
     
-    @scala.inline
-    implicit class OptionalIntlConfigMutableBuilder[Self <: OptionalIntlConfig[?], T] (val x: Self & OptionalIntlConfig[T]) extends AnyVal {
+    extension [Self <: OptionalIntlConfig[?], T](x: Self & OptionalIntlConfig[T]) {
       
-      @scala.inline
-      def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])
+      inline def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFormatsUndefined: Self = StObject.set(x, "defaultFormats", js.undefined)
+      inline def setDefaultFormatsUndefined: Self = StObject.set(x, "defaultFormats", js.undefined)
       
-      @scala.inline
-      def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
+      inline def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
+      inline def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
       
-      @scala.inline
-      def setDefaultRichTextElements(value: Record[String, FormatXMLElementFn[T, String | T | (js.Array[String | T])]]): Self = StObject.set(x, "defaultRichTextElements", value.asInstanceOf[js.Any])
+      inline def setDefaultRichTextElements(value: Record[String, FormatXMLElementFn[T, String | T | (js.Array[String | T])]]): Self = StObject.set(x, "defaultRichTextElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRichTextElementsUndefined: Self = StObject.set(x, "defaultRichTextElements", js.undefined)
+      inline def setDefaultRichTextElementsUndefined: Self = StObject.set(x, "defaultRichTextElements", js.undefined)
       
-      @scala.inline
-      def setFormats(value: CustomFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: CustomFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+      inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessages(value: Record[String, js.Array[MessageFormatElement] | String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: Record[String, js.Array[MessageFormatElement] | String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      @scala.inline
-      def setOnError(
+      inline def setOnError(
         value: /* err */ MissingTranslationError | MessageFormatError | MissingDataError | InvalidConfigError | UnsupportedFormatterError | FormatError => Unit
       ): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+      inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+      inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
     }
   }
 }

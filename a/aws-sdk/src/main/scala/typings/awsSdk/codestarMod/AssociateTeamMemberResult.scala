@@ -13,19 +13,15 @@ trait AssociateTeamMemberResult extends StObject {
 }
 object AssociateTeamMemberResult {
   
-  @scala.inline
-  def apply(): AssociateTeamMemberResult = {
+  inline def apply(): AssociateTeamMemberResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateTeamMemberResult]
   }
   
-  @scala.inline
-  implicit class AssociateTeamMemberResultMutableBuilder[Self <: AssociateTeamMemberResult] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateTeamMemberResult](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait ImagesConfig extends StObject {
 }
 object ImagesConfig {
   
-  @scala.inline
-  def apply(): ImagesConfig = {
+  inline def apply(): ImagesConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImagesConfig]
   }
   
-  @scala.inline
-  implicit class ImagesConfigMutableBuilder[Self <: ImagesConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ImagesConfig](x: Self) {
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+    inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+    inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
   }
 }

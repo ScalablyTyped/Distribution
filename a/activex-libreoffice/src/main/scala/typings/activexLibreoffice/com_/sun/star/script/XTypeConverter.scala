@@ -34,8 +34,7 @@ trait XTypeConverter
 }
 object XTypeConverter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     convertTo: (js.Any, `type`) => js.Any,
     convertToSimpleType: (js.Any, TypeClass) => js.Any,
@@ -46,13 +45,10 @@ object XTypeConverter {
     __obj.asInstanceOf[XTypeConverter]
   }
   
-  @scala.inline
-  implicit class XTypeConverterMutableBuilder[Self <: XTypeConverter] (val x: Self) extends AnyVal {
+  extension [Self <: XTypeConverter](x: Self) {
     
-    @scala.inline
-    def setConvertTo(value: (js.Any, `type`) => js.Any): Self = StObject.set(x, "convertTo", js.Any.fromFunction2(value))
+    inline def setConvertTo(value: (js.Any, `type`) => js.Any): Self = StObject.set(x, "convertTo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConvertToSimpleType(value: (js.Any, TypeClass) => js.Any): Self = StObject.set(x, "convertToSimpleType", js.Any.fromFunction2(value))
+    inline def setConvertToSimpleType(value: (js.Any, TypeClass) => js.Any): Self = StObject.set(x, "convertToSimpleType", js.Any.fromFunction2(value))
   }
 }

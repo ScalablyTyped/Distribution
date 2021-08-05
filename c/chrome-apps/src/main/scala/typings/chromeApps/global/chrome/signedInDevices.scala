@@ -25,16 +25,14 @@ object signedInDevices {
     * Gets the array of signed in devices, signed into the same account as the current profile.
     * @param callback The callback to be invoked with the array of DeviceInfo objects.
     */
-  @scala.inline
-  def get(callback: js.Function1[/* devices */ js.Array[DeviceInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def get(callback: js.Function1[/* devices */ js.Array[DeviceInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * Gets the array of signed in devices, signed into the same account as the current profile.
     * @param isLocal If true only return the information for the local device.
     * If false or omitted return the list of all devices including the local device.
     * @param callback The callback to be invoked with the array of DeviceInfo objects.
     */
-  @scala.inline
-  def get(isLocal: Boolean, callback: js.Function1[/* devices */ js.Array[DeviceInfo], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(isLocal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def get(isLocal: Boolean, callback: js.Function1[/* devices */ js.Array[DeviceInfo], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(isLocal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired when the DeviceInfo object of any of the signed in devices

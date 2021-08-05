@@ -70,17 +70,14 @@ object v1beta1ClusterRoleMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ClusterRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ClusterRole]
-    @scala.inline
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): ClusterRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClusterRole]
+    inline def get(name: String, id: Input[ID]): ClusterRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ClusterRole]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): ClusterRole = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClusterRole]
     
     /**
       * Returns true if the given object is an instance of ClusterRole.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/clusterRole.ClusterRole */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/clusterRole.ClusterRole */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/clusterRole.ClusterRole */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/clusterRole.ClusterRole */ Boolean]
   }
   
   trait ClusterRoleArgs extends StObject {
@@ -114,47 +111,34 @@ object v1beta1ClusterRoleMod {
   }
   object ClusterRoleArgs {
     
-    @scala.inline
-    def apply(): ClusterRoleArgs = {
+    inline def apply(): ClusterRoleArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClusterRoleArgs]
     }
     
-    @scala.inline
-    implicit class ClusterRoleArgsMutableBuilder[Self <: ClusterRoleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterRoleArgs](x: Self) {
       
-      @scala.inline
-      def setAggregationRule(value: Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.AggregationRule]): Self = StObject.set(x, "aggregationRule", value.asInstanceOf[js.Any])
+      inline def setAggregationRule(value: Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.AggregationRule]): Self = StObject.set(x, "aggregationRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAggregationRuleUndefined: Self = StObject.set(x, "aggregationRule", js.undefined)
+      inline def setAggregationRuleUndefined: Self = StObject.set(x, "aggregationRule", js.undefined)
       
-      @scala.inline
-      def setApiVersion(value: Input[rbacDotauthorizationDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[rbacDotauthorizationDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ClusterRole]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ClusterRole]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setRules(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.PolicyRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.PolicyRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.PolicyRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.PolicyRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
     }
   }
 }

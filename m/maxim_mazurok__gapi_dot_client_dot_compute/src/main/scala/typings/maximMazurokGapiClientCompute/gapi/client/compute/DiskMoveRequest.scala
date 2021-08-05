@@ -24,25 +24,19 @@ trait DiskMoveRequest extends StObject {
 }
 object DiskMoveRequest {
   
-  @scala.inline
-  def apply(): DiskMoveRequest = {
+  inline def apply(): DiskMoveRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiskMoveRequest]
   }
   
-  @scala.inline
-  implicit class DiskMoveRequestMutableBuilder[Self <: DiskMoveRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DiskMoveRequest](x: Self) {
     
-    @scala.inline
-    def setDestinationZone(value: String): Self = StObject.set(x, "destinationZone", value.asInstanceOf[js.Any])
+    inline def setDestinationZone(value: String): Self = StObject.set(x, "destinationZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationZoneUndefined: Self = StObject.set(x, "destinationZone", js.undefined)
+    inline def setDestinationZoneUndefined: Self = StObject.set(x, "destinationZone", js.undefined)
     
-    @scala.inline
-    def setTargetDisk(value: String): Self = StObject.set(x, "targetDisk", value.asInstanceOf[js.Any])
+    inline def setTargetDisk(value: String): Self = StObject.set(x, "targetDisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDiskUndefined: Self = StObject.set(x, "targetDisk", js.undefined)
+    inline def setTargetDiskUndefined: Self = StObject.set(x, "targetDisk", js.undefined)
   }
 }

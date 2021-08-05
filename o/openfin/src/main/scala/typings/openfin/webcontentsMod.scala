@@ -30,8 +30,7 @@ object webcontentsMod {
   }
   object CertificateErrorEvent {
     
-    @scala.inline
-    def apply[Topic, Type](
+    inline def apply[Topic, Type](
       certificate: js.Any,
       error: String,
       name: String,
@@ -45,17 +44,13 @@ object webcontentsMod {
       __obj.asInstanceOf[CertificateErrorEvent[Topic, Type]]
     }
     
-    @scala.inline
-    implicit class CertificateErrorEventMutableBuilder[Self <: CertificateErrorEvent[?, ?], Topic, Type] (val x: Self & (CertificateErrorEvent[Topic, Type])) extends AnyVal {
+    extension [Self <: CertificateErrorEvent[?, ?], Topic, Type](x: Self & (CertificateErrorEvent[Topic, Type])) {
       
-      @scala.inline
-      def setCertificate(value: js.Any): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: js.Any): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,18 +62,15 @@ object webcontentsMod {
   }
   object PageTitleUpdatedEvent {
     
-    @scala.inline
-    def apply[Topic, Type](name: String, title: String, topic: Topic, `type`: Type, uuid: String): PageTitleUpdatedEvent[Topic, Type] = {
+    inline def apply[Topic, Type](name: String, title: String, topic: Topic, `type`: Type, uuid: String): PageTitleUpdatedEvent[Topic, Type] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PageTitleUpdatedEvent[Topic, Type]]
     }
     
-    @scala.inline
-    implicit class PageTitleUpdatedEventMutableBuilder[Self <: PageTitleUpdatedEvent[?, ?], Topic, Type] (val x: Self & (PageTitleUpdatedEvent[Topic, Type])) extends AnyVal {
+    extension [Self <: PageTitleUpdatedEvent[?, ?], Topic, Type](x: Self & (PageTitleUpdatedEvent[Topic, Type])) {
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,8 +102,7 @@ object webcontentsMod {
   }
   object WebContentsEventMapping {
     
-    @scala.inline
-    def apply[Topic, Type](
+    inline def apply[Topic, Type](
       blurred: WindowEvent[Topic, Type],
       `certificate-error`: CertificateErrorEvent[Topic, Type],
       crashed: CrashedEvent & (WindowEvent[Topic, Type]),
@@ -138,41 +129,29 @@ object webcontentsMod {
       __obj.asInstanceOf[WebContentsEventMapping[Topic, Type]]
     }
     
-    @scala.inline
-    implicit class WebContentsEventMappingMutableBuilder[Self <: WebContentsEventMapping[?, ?], Topic, Type] (val x: Self & (WebContentsEventMapping[Topic, Type])) extends AnyVal {
+    extension [Self <: WebContentsEventMapping[?, ?], Topic, Type](x: Self & (WebContentsEventMapping[Topic, Type])) {
       
-      @scala.inline
-      def setBlurred(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "blurred", value.asInstanceOf[js.Any])
+      inline def setBlurred(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "blurred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCertificate-error`(value: CertificateErrorEvent[Topic, Type]): Self = StObject.set(x, "certificate-error", value.asInstanceOf[js.Any])
+      inline def `setCertificate-error`(value: CertificateErrorEvent[Topic, Type]): Self = StObject.set(x, "certificate-error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrashed(value: CrashedEvent & (WindowEvent[Topic, Type])): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
+      inline def setCrashed(value: CrashedEvent & (WindowEvent[Topic, Type])): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDid-change-theme-color`(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "did-change-theme-color", value.asInstanceOf[js.Any])
+      inline def `setDid-change-theme-color`(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "did-change-theme-color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocused(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      inline def setFocused(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFound-in-page`(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "found-in-page", value.asInstanceOf[js.Any])
+      inline def `setFound-in-page`(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "found-in-page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setNavigation-rejected`(value: WindowNavigationRejectedEvent[Topic, Type]): Self = StObject.set(x, "navigation-rejected", value.asInstanceOf[js.Any])
+      inline def `setNavigation-rejected`(value: WindowNavigationRejectedEvent[Topic, Type]): Self = StObject.set(x, "navigation-rejected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPage-favicon-updated`(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "page-favicon-updated", value.asInstanceOf[js.Any])
+      inline def `setPage-favicon-updated`(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "page-favicon-updated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPage-title-updated`(value: PageTitleUpdatedEvent[Topic, Type]): Self = StObject.set(x, "page-title-updated", value.asInstanceOf[js.Any])
+      inline def `setPage-title-updated`(value: PageTitleUpdatedEvent[Topic, Type]): Self = StObject.set(x, "page-title-updated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setResource-load-failed`(value: WindowResourceLoadFailedEvent[Topic, Type]): Self = StObject.set(x, "resource-load-failed", value.asInstanceOf[js.Any])
+      inline def `setResource-load-failed`(value: WindowResourceLoadFailedEvent[Topic, Type]): Self = StObject.set(x, "resource-load-failed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setResource-response-received`(value: WindowResourceResponseReceivedEvent[Topic, Type]): Self = StObject.set(x, "resource-response-received", value.asInstanceOf[js.Any])
+      inline def `setResource-response-received`(value: WindowResourceResponseReceivedEvent[Topic, Type]): Self = StObject.set(x, "resource-response-received", value.asInstanceOf[js.Any])
     }
   }
   
@@ -190,8 +169,7 @@ object webcontentsMod {
   }
   object WindowResourceLoadFailedEvent {
     
-    @scala.inline
-    def apply[Topic, Type](
+    inline def apply[Topic, Type](
       errorCode: Double,
       errorDescription: String,
       isMainFrame: Boolean,
@@ -206,20 +184,15 @@ object webcontentsMod {
       __obj.asInstanceOf[WindowResourceLoadFailedEvent[Topic, Type]]
     }
     
-    @scala.inline
-    implicit class WindowResourceLoadFailedEventMutableBuilder[Self <: WindowResourceLoadFailedEvent[?, ?], Topic, Type] (val x: Self & (WindowResourceLoadFailedEvent[Topic, Type])) extends AnyVal {
+    extension [Self <: WindowResourceLoadFailedEvent[?, ?], Topic, Type](x: Self & (WindowResourceLoadFailedEvent[Topic, Type])) {
       
-      @scala.inline
-      def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorDescription(value: String): Self = StObject.set(x, "errorDescription", value.asInstanceOf[js.Any])
+      inline def setErrorDescription(value: String): Self = StObject.set(x, "errorDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMainFrame(value: Boolean): Self = StObject.set(x, "isMainFrame", value.asInstanceOf[js.Any])
+      inline def setIsMainFrame(value: Boolean): Self = StObject.set(x, "isMainFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidatedURL(value: String): Self = StObject.set(x, "validatedURL", value.asInstanceOf[js.Any])
+      inline def setValidatedURL(value: String): Self = StObject.set(x, "validatedURL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -245,8 +218,7 @@ object webcontentsMod {
   }
   object WindowResourceResponseReceivedEvent {
     
-    @scala.inline
-    def apply[Topic, Type](
+    inline def apply[Topic, Type](
       headers: js.Any,
       httpResponseCode: Double,
       name: String,
@@ -265,32 +237,23 @@ object webcontentsMod {
       __obj.asInstanceOf[WindowResourceResponseReceivedEvent[Topic, Type]]
     }
     
-    @scala.inline
-    implicit class WindowResourceResponseReceivedEventMutableBuilder[Self <: WindowResourceResponseReceivedEvent[?, ?], Topic, Type] (val x: Self & (WindowResourceResponseReceivedEvent[Topic, Type])) extends AnyVal {
+    extension [Self <: WindowResourceResponseReceivedEvent[?, ?], Topic, Type](x: Self & (WindowResourceResponseReceivedEvent[Topic, Type])) {
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpResponseCode(value: Double): Self = StObject.set(x, "httpResponseCode", value.asInstanceOf[js.Any])
+      inline def setHttpResponseCode(value: Double): Self = StObject.set(x, "httpResponseCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewUrl(value: String): Self = StObject.set(x, "newUrl", value.asInstanceOf[js.Any])
+      inline def setNewUrl(value: String): Self = StObject.set(x, "newUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalUrl(value: String): Self = StObject.set(x, "originalUrl", value.asInstanceOf[js.Any])
+      inline def setOriginalUrl(value: String): Self = StObject.set(x, "originalUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+      inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestMethod(value: String): Self = StObject.set(x, "requestMethod", value.asInstanceOf[js.Any])
+      inline def setRequestMethod(value: String): Self = StObject.set(x, "requestMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceType(value: mainFrame | subFrame | styleSheet | script | image | `object` | xhr | other): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+      inline def setResourceType(value: mainFrame | subFrame | styleSheet | script | image | `object` | xhr | other): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

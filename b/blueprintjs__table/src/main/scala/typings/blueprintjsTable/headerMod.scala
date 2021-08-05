@@ -28,42 +28,42 @@ object headerMod {
     def this(props: Unit, context: js.Any) = this()
     def this(props: IInternalHeaderProps, context: js.Any) = this()
     
-    var activationIndex: Double = js.native
+    /* protected */ var activationIndex: Double = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MHeader(_underscore: IInternalHeaderProps, prevState: IHeaderState): Unit = js.native
     
-    var convertEventToIndex: js.Any = js.native
+    /* private */ var convertEventToIndex: js.Any = js.native
     
-    var handleDragSelectableSelection: js.Any = js.native
+    /* private */ var handleDragSelectableSelection: js.Any = js.native
     
-    var handleDragSelectableSelectionEnd: js.Any = js.native
+    /* private */ var handleDragSelectableSelectionEnd: js.Any = js.native
     
-    var isColumnHeader: js.Any = js.native
+    /* private */ var isColumnHeader: js.Any = js.native
     
-    var isDragReorderableDisabled: js.Any = js.native
+    /* private */ var isDragReorderableDisabled: js.Any = js.native
     
-    var isDragSelectableDisabled: js.Any = js.native
+    /* private */ var isDragSelectableDisabled: js.Any = js.native
     
-    var isEntireCellTargetReorderable: js.Any = js.native
+    /* private */ var isEntireCellTargetReorderable: js.Any = js.native
     
-    var isReorderHandleEnabled: js.Any = js.native
+    /* private */ var isReorderHandleEnabled: js.Any = js.native
     
-    var isSelectedRegionsControlledAndNonEmpty: js.Any = js.native
+    /* private */ var isSelectedRegionsControlledAndNonEmpty: js.Any = js.native
     
-    var locateClick: js.Any = js.native
+    /* private */ var locateClick: js.Any = js.native
     
-    var locateDragForReordering: js.Any = js.native
+    /* private */ var locateDragForReordering: js.Any = js.native
     
-    var locateDragForSelection: js.Any = js.native
+    /* private */ var locateDragForSelection: js.Any = js.native
     
-    var maybeRenderReorderHandle: js.Any = js.native
+    /* private */ var maybeRenderReorderHandle: js.Any = js.native
     
-    var renderCell: js.Any = js.native
+    /* private */ var renderCell: js.Any = js.native
     
-    var renderCells: js.Any = js.native
+    /* private */ var renderCells: js.Any = js.native
     
-    var renderNewCell: js.Any = js.native
+    /* private */ var renderNewCell: js.Any = js.native
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MHeader(): Boolean = js.native
@@ -74,7 +74,7 @@ object headerMod {
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MHeader(nextProps: IInternalHeaderProps, nextState: IHeaderState): Boolean = js.native
     
-    var wrapInDragReorderable: js.Any = js.native
+    /* private */ var wrapInDragReorderable: js.Any = js.native
   }
   
   type IHeaderCellRenderer = js.Function1[/* index */ Double, ReactElement]
@@ -160,20 +160,16 @@ object headerMod {
   }
   object IHeaderState {
     
-    @scala.inline
-    def apply(): IHeaderState = {
+    inline def apply(): IHeaderState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IHeaderState]
     }
     
-    @scala.inline
-    implicit class IHeaderStateMutableBuilder[Self <: IHeaderState] (val x: Self) extends AnyVal {
+    extension [Self <: IHeaderState](x: Self) {
       
-      @scala.inline
-      def setHasValidSelection(value: Boolean): Self = StObject.set(x, "hasValidSelection", value.asInstanceOf[js.Any])
+      inline def setHasValidSelection(value: Boolean): Self = StObject.set(x, "hasValidSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasValidSelectionUndefined: Self = StObject.set(x, "hasValidSelection", js.undefined)
+      inline def setHasValidSelectionUndefined: Self = StObject.set(x, "hasValidSelection", js.undefined)
     }
   }
   

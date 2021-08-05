@@ -36,22 +36,17 @@ trait TextSegment extends StObject {
 }
 object TextSegment {
   
-  @scala.inline
-  def apply(SegmentEnd: Double, SegmentStart: Double, SegmentText: String): TextSegment = {
+  inline def apply(SegmentEnd: Double, SegmentStart: Double, SegmentText: String): TextSegment = {
     val __obj = js.Dynamic.literal(SegmentEnd = SegmentEnd.asInstanceOf[js.Any], SegmentStart = SegmentStart.asInstanceOf[js.Any], SegmentText = SegmentText.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextSegment]
   }
   
-  @scala.inline
-  implicit class TextSegmentMutableBuilder[Self <: TextSegment] (val x: Self) extends AnyVal {
+  extension [Self <: TextSegment](x: Self) {
     
-    @scala.inline
-    def setSegmentEnd(value: Double): Self = StObject.set(x, "SegmentEnd", value.asInstanceOf[js.Any])
+    inline def setSegmentEnd(value: Double): Self = StObject.set(x, "SegmentEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentStart(value: Double): Self = StObject.set(x, "SegmentStart", value.asInstanceOf[js.Any])
+    inline def setSegmentStart(value: Double): Self = StObject.set(x, "SegmentStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentText(value: String): Self = StObject.set(x, "SegmentText", value.asInstanceOf[js.Any])
+    inline def setSegmentText(value: String): Self = StObject.set(x, "SegmentText", value.asInstanceOf[js.Any])
   }
 }

@@ -28,31 +28,23 @@ trait SchemaTlsCertificateContext extends StObject {
 }
 object SchemaTlsCertificateContext {
   
-  @scala.inline
-  def apply(): SchemaTlsCertificateContext = {
+  inline def apply(): SchemaTlsCertificateContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTlsCertificateContext]
   }
   
-  @scala.inline
-  implicit class SchemaTlsCertificateContextMutableBuilder[Self <: SchemaTlsCertificateContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTlsCertificateContext](x: Self) {
     
-    @scala.inline
-    def setCertificatePaths(value: SchemaTlsCertificatePaths): Self = StObject.set(x, "certificatePaths", value.asInstanceOf[js.Any])
+    inline def setCertificatePaths(value: SchemaTlsCertificatePaths): Self = StObject.set(x, "certificatePaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatePathsUndefined: Self = StObject.set(x, "certificatePaths", js.undefined)
+    inline def setCertificatePathsUndefined: Self = StObject.set(x, "certificatePaths", js.undefined)
     
-    @scala.inline
-    def setCertificateSource(value: String): Self = StObject.set(x, "certificateSource", value.asInstanceOf[js.Any])
+    inline def setCertificateSource(value: String): Self = StObject.set(x, "certificateSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateSourceUndefined: Self = StObject.set(x, "certificateSource", js.undefined)
+    inline def setCertificateSourceUndefined: Self = StObject.set(x, "certificateSource", js.undefined)
     
-    @scala.inline
-    def setSdsConfig(value: SchemaSdsConfig): Self = StObject.set(x, "sdsConfig", value.asInstanceOf[js.Any])
+    inline def setSdsConfig(value: SchemaSdsConfig): Self = StObject.set(x, "sdsConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdsConfigUndefined: Self = StObject.set(x, "sdsConfig", js.undefined)
+    inline def setSdsConfigUndefined: Self = StObject.set(x, "sdsConfig", js.undefined)
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CommandButton extends StObject {
   
-  @JSName("Access.CommandButton_typekey")
+  /* private */ @JSName("Access.CommandButton_typekey")
   var AccessDotCommandButton_typekey: CommandButton = js.native
   
   var AddColon: Boolean = js.native

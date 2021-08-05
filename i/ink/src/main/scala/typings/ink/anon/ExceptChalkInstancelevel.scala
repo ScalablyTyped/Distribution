@@ -133,8 +133,7 @@ trait ExceptChalkInstancelevel extends StObject {
 }
 object ExceptChalkInstancelevel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ansi: /* code */ Double => Chalk,
     ansi256: /* index */ Double => Chalk,
     bgAnsi: /* code */ Double => Chalk,
@@ -201,190 +200,128 @@ object ExceptChalkInstancelevel {
     __obj.asInstanceOf[ExceptChalkInstancelevel]
   }
   
-  @scala.inline
-  implicit class ExceptChalkInstancelevelMutableBuilder[Self <: ExceptChalkInstancelevel] (val x: Self) extends AnyVal {
+  extension [Self <: ExceptChalkInstancelevel](x: Self) {
     
-    @scala.inline
-    def setAnsi(value: /* code */ Double => Chalk): Self = StObject.set(x, "ansi", js.Any.fromFunction1(value))
+    inline def setAnsi(value: /* code */ Double => Chalk): Self = StObject.set(x, "ansi", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAnsi256(value: /* index */ Double => Chalk): Self = StObject.set(x, "ansi256", js.Any.fromFunction1(value))
+    inline def setAnsi256(value: /* index */ Double => Chalk): Self = StObject.set(x, "ansi256", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBgAnsi(value: /* code */ Double => Chalk): Self = StObject.set(x, "bgAnsi", js.Any.fromFunction1(value))
+    inline def setBgAnsi(value: /* code */ Double => Chalk): Self = StObject.set(x, "bgAnsi", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBgAnsi256(value: /* index */ Double => Chalk): Self = StObject.set(x, "bgAnsi256", js.Any.fromFunction1(value))
+    inline def setBgAnsi256(value: /* index */ Double => Chalk): Self = StObject.set(x, "bgAnsi256", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBgBlack(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgBlack", js.Any.fromFunction2(value))
+    inline def setBgBlack(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgBlack", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgBlackBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgBlackBright", js.Any.fromFunction2(value))
+    inline def setBgBlackBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgBlackBright", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgBlue(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgBlue", js.Any.fromFunction2(value))
+    inline def setBgBlue(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgBlue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgBlueBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgBlueBright", js.Any.fromFunction2(value))
+    inline def setBgBlueBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgBlueBright", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgCyan(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgCyan", js.Any.fromFunction2(value))
+    inline def setBgCyan(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgCyan", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgCyanBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgCyanBright", js.Any.fromFunction2(value))
+    inline def setBgCyanBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgCyanBright", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgGray(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgGray", js.Any.fromFunction2(value))
+    inline def setBgGray(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgGray", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgGreen(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgGreen", js.Any.fromFunction2(value))
+    inline def setBgGreen(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgGreen", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgGreenBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgGreenBright", js.Any.fromFunction2(value))
+    inline def setBgGreenBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgGreenBright", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgGrey(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgGrey", js.Any.fromFunction2(value))
+    inline def setBgGrey(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgGrey", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgHex(value: /* color */ String => Chalk): Self = StObject.set(x, "bgHex", js.Any.fromFunction1(value))
+    inline def setBgHex(value: /* color */ String => Chalk): Self = StObject.set(x, "bgHex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBgHsl(value: (/* hue */ Double, /* saturation */ Double, /* lightness */ Double) => Chalk): Self = StObject.set(x, "bgHsl", js.Any.fromFunction3(value))
+    inline def setBgHsl(value: (/* hue */ Double, /* saturation */ Double, /* lightness */ Double) => Chalk): Self = StObject.set(x, "bgHsl", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBgHsv(value: (/* hue */ Double, /* saturation */ Double, /* value */ Double) => Chalk): Self = StObject.set(x, "bgHsv", js.Any.fromFunction3(value))
+    inline def setBgHsv(value: (/* hue */ Double, /* saturation */ Double, /* value */ Double) => Chalk): Self = StObject.set(x, "bgHsv", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBgHwb(value: (/* hue */ Double, /* whiteness */ Double, /* blackness */ Double) => Chalk): Self = StObject.set(x, "bgHwb", js.Any.fromFunction3(value))
+    inline def setBgHwb(value: (/* hue */ Double, /* whiteness */ Double, /* blackness */ Double) => Chalk): Self = StObject.set(x, "bgHwb", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBgKeyword(value: /* color */ String => Chalk): Self = StObject.set(x, "bgKeyword", js.Any.fromFunction1(value))
+    inline def setBgKeyword(value: /* color */ String => Chalk): Self = StObject.set(x, "bgKeyword", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBgMagenta(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgMagenta", js.Any.fromFunction2(value))
+    inline def setBgMagenta(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgMagenta", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgMagentaBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgMagentaBright", js.Any.fromFunction2(value))
+    inline def setBgMagentaBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgMagentaBright", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgRed(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgRed", js.Any.fromFunction2(value))
+    inline def setBgRed(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgRed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgRedBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgRedBright", js.Any.fromFunction2(value))
+    inline def setBgRedBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgRedBright", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgRgb(value: (/* red */ Double, /* green */ Double, /* blue */ Double) => Chalk): Self = StObject.set(x, "bgRgb", js.Any.fromFunction3(value))
+    inline def setBgRgb(value: (/* red */ Double, /* green */ Double, /* blue */ Double) => Chalk): Self = StObject.set(x, "bgRgb", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBgWhite(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgWhite", js.Any.fromFunction2(value))
+    inline def setBgWhite(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgWhite", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgWhiteBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgWhiteBright", js.Any.fromFunction2(value))
+    inline def setBgWhiteBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgWhiteBright", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgYellow(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgYellow", js.Any.fromFunction2(value))
+    inline def setBgYellow(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgYellow", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBgYellowBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgYellowBright", js.Any.fromFunction2(value))
+    inline def setBgYellowBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bgYellowBright", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBlack(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "black", js.Any.fromFunction2(value))
+    inline def setBlack(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "black", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBlackBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "blackBright", js.Any.fromFunction2(value))
+    inline def setBlackBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "blackBright", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBlue(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "blue", js.Any.fromFunction2(value))
+    inline def setBlue(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "blue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBlueBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "blueBright", js.Any.fromFunction2(value))
+    inline def setBlueBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "blueBright", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBold(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bold", js.Any.fromFunction2(value))
+    inline def setBold(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "bold", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCyan(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "cyan", js.Any.fromFunction2(value))
+    inline def setCyan(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "cyan", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCyanBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "cyanBright", js.Any.fromFunction2(value))
+    inline def setCyanBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "cyanBright", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDim(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "dim", js.Any.fromFunction2(value))
+    inline def setDim(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "dim", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGray(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "gray", js.Any.fromFunction2(value))
+    inline def setGray(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "gray", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGreen(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "green", js.Any.fromFunction2(value))
+    inline def setGreen(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "green", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGreenBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "greenBright", js.Any.fromFunction2(value))
+    inline def setGreenBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "greenBright", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGrey(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "grey", js.Any.fromFunction2(value))
+    inline def setGrey(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "grey", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHex(value: /* color */ String => Chalk): Self = StObject.set(x, "hex", js.Any.fromFunction1(value))
+    inline def setHex(value: /* color */ String => Chalk): Self = StObject.set(x, "hex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHidden(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "hidden", js.Any.fromFunction2(value))
+    inline def setHidden(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "hidden", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHsl(value: (/* hue */ Double, /* saturation */ Double, /* lightness */ Double) => Chalk): Self = StObject.set(x, "hsl", js.Any.fromFunction3(value))
+    inline def setHsl(value: (/* hue */ Double, /* saturation */ Double, /* lightness */ Double) => Chalk): Self = StObject.set(x, "hsl", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHsv(value: (/* hue */ Double, /* saturation */ Double, /* value */ Double) => Chalk): Self = StObject.set(x, "hsv", js.Any.fromFunction3(value))
+    inline def setHsv(value: (/* hue */ Double, /* saturation */ Double, /* value */ Double) => Chalk): Self = StObject.set(x, "hsv", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHwb(value: (/* hue */ Double, /* whiteness */ Double, /* blackness */ Double) => Chalk): Self = StObject.set(x, "hwb", js.Any.fromFunction3(value))
+    inline def setHwb(value: (/* hue */ Double, /* whiteness */ Double, /* blackness */ Double) => Chalk): Self = StObject.set(x, "hwb", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInverse(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "inverse", js.Any.fromFunction2(value))
+    inline def setInverse(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "inverse", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItalic(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "italic", js.Any.fromFunction2(value))
+    inline def setItalic(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "italic", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setKeyword(value: /* color */ String => Chalk): Self = StObject.set(x, "keyword", js.Any.fromFunction1(value))
+    inline def setKeyword(value: /* color */ String => Chalk): Self = StObject.set(x, "keyword", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMagenta(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "magenta", js.Any.fromFunction2(value))
+    inline def setMagenta(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "magenta", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMagentaBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "magentaBright", js.Any.fromFunction2(value))
+    inline def setMagentaBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "magentaBright", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRed(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "red", js.Any.fromFunction2(value))
+    inline def setRed(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "red", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRedBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "redBright", js.Any.fromFunction2(value))
+    inline def setRedBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "redBright", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReset(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "reset", js.Any.fromFunction2(value))
+    inline def setReset(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "reset", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRgb(value: (/* red */ Double, /* green */ Double, /* blue */ Double) => Chalk): Self = StObject.set(x, "rgb", js.Any.fromFunction3(value))
+    inline def setRgb(value: (/* red */ Double, /* green */ Double, /* blue */ Double) => Chalk): Self = StObject.set(x, "rgb", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setStrikethrough(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "strikethrough", js.Any.fromFunction2(value))
+    inline def setStrikethrough(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "strikethrough", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnderline(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "underline", js.Any.fromFunction2(value))
+    inline def setUnderline(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "underline", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVisible(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "visible", js.Any.fromFunction2(value))
+    inline def setVisible(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "visible", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWhite(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "white", js.Any.fromFunction2(value))
+    inline def setWhite(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "white", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWhiteBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "whiteBright", js.Any.fromFunction2(value))
+    inline def setWhiteBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "whiteBright", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setYellow(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "yellow", js.Any.fromFunction2(value))
+    inline def setYellow(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "yellow", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setYellowBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "yellowBright", js.Any.fromFunction2(value))
+    inline def setYellowBright(value: (/* text */ TemplateStringsArray, /* repeated */ js.Any) => String): Self = StObject.set(x, "yellowBright", js.Any.fromFunction2(value))
   }
 }

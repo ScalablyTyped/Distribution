@@ -11,8 +11,7 @@ object getPageFilesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPageFiles(buildManifest: BuildManifest, page: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPageFiles")(buildManifest.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def getPageFiles(buildManifest: BuildManifest, page: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPageFiles")(buildManifest.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   trait BuildManifest extends StObject {
     
@@ -30,8 +29,7 @@ object getPageFilesMod {
   }
   object BuildManifest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ampDevFiles: js.Array[String],
       ampFirstPages: js.Array[String],
       devFiles: js.Array[String],
@@ -43,41 +41,29 @@ object getPageFilesMod {
       __obj.asInstanceOf[BuildManifest]
     }
     
-    @scala.inline
-    implicit class BuildManifestMutableBuilder[Self <: BuildManifest] (val x: Self) extends AnyVal {
+    extension [Self <: BuildManifest](x: Self) {
       
-      @scala.inline
-      def setAmpDevFiles(value: js.Array[String]): Self = StObject.set(x, "ampDevFiles", value.asInstanceOf[js.Any])
+      inline def setAmpDevFiles(value: js.Array[String]): Self = StObject.set(x, "ampDevFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmpDevFilesVarargs(value: String*): Self = StObject.set(x, "ampDevFiles", js.Array(value :_*))
+      inline def setAmpDevFilesVarargs(value: String*): Self = StObject.set(x, "ampDevFiles", js.Array(value :_*))
       
-      @scala.inline
-      def setAmpFirstPages(value: js.Array[String]): Self = StObject.set(x, "ampFirstPages", value.asInstanceOf[js.Any])
+      inline def setAmpFirstPages(value: js.Array[String]): Self = StObject.set(x, "ampFirstPages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmpFirstPagesVarargs(value: String*): Self = StObject.set(x, "ampFirstPages", js.Array(value :_*))
+      inline def setAmpFirstPagesVarargs(value: String*): Self = StObject.set(x, "ampFirstPages", js.Array(value :_*))
       
-      @scala.inline
-      def setDevFiles(value: js.Array[String]): Self = StObject.set(x, "devFiles", value.asInstanceOf[js.Any])
+      inline def setDevFiles(value: js.Array[String]): Self = StObject.set(x, "devFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevFilesVarargs(value: String*): Self = StObject.set(x, "devFiles", js.Array(value :_*))
+      inline def setDevFilesVarargs(value: String*): Self = StObject.set(x, "devFiles", js.Array(value :_*))
       
-      @scala.inline
-      def setLowPriorityFiles(value: js.Array[String]): Self = StObject.set(x, "lowPriorityFiles", value.asInstanceOf[js.Any])
+      inline def setLowPriorityFiles(value: js.Array[String]): Self = StObject.set(x, "lowPriorityFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowPriorityFilesVarargs(value: String*): Self = StObject.set(x, "lowPriorityFiles", js.Array(value :_*))
+      inline def setLowPriorityFilesVarargs(value: String*): Self = StObject.set(x, "lowPriorityFiles", js.Array(value :_*))
       
-      @scala.inline
-      def setPages(value: Dictpage): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+      inline def setPages(value: Dictpage): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolyfillFiles(value: js.Array[String]): Self = StObject.set(x, "polyfillFiles", value.asInstanceOf[js.Any])
+      inline def setPolyfillFiles(value: js.Array[String]): Self = StObject.set(x, "polyfillFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolyfillFilesVarargs(value: String*): Self = StObject.set(x, "polyfillFiles", js.Array(value :_*))
+      inline def setPolyfillFilesVarargs(value: String*): Self = StObject.set(x, "polyfillFiles", js.Array(value :_*))
     }
   }
 }

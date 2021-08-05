@@ -11,16 +11,16 @@ class ObjectType protected ()
      with typings.typescriptServices.TypeScript.ObjectType {
   def this(typeMembers: typings.typescriptServices.TypeScript.ISeparatedSyntaxList2) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _astID: js.Any = js.native
   
   /* CompleteClass */
   var _end: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _postComments: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _preComments: js.Any = js.native
   
   /* CompleteClass */

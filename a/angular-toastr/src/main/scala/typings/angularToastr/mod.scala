@@ -48,8 +48,7 @@ object mod {
       }
       object IToast {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           el: IAugmentedJQuery,
           iconClass: String,
           isOpened: Boolean,
@@ -61,26 +60,19 @@ object mod {
           __obj.asInstanceOf[typings.angularToastr.mod.angularAugmentingMod.toastr.IToast]
         }
         
-        @scala.inline
-        implicit class IToastMutableBuilder[Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToast] (val x: Self) extends AnyVal {
+        extension [Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToast](x: Self) {
           
-          @scala.inline
-          def setEl(value: IAugmentedJQuery): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+          inline def setEl(value: IAugmentedJQuery): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+          inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIsOpened(value: Boolean): Self = StObject.set(x, "isOpened", value.asInstanceOf[js.Any])
+          inline def setIsOpened(value: Boolean): Self = StObject.set(x, "isOpened", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOpen(value: IPromise[js.Any]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+          inline def setOpen(value: IPromise[js.Any]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setScope(value: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+          inline def setScope(value: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setToastId(value: Double): Self = StObject.set(x, "toastId", value.asInstanceOf[js.Any])
+          inline def setToastId(value: Double): Self = StObject.set(x, "toastId", value.asInstanceOf[js.Any])
         }
       }
       
@@ -128,106 +120,74 @@ object mod {
       }
       object IToastBaseConfig {
         
-        @scala.inline
-        def apply(): typings.angularToastr.mod.angularAugmentingMod.toastr.IToastBaseConfig = {
+        inline def apply(): typings.angularToastr.mod.angularAugmentingMod.toastr.IToastBaseConfig = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.angularToastr.mod.angularAugmentingMod.toastr.IToastBaseConfig]
         }
         
-        @scala.inline
-        implicit class IToastBaseConfigMutableBuilder[Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastBaseConfig] (val x: Self) extends AnyVal {
+        extension [Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastBaseConfig](x: Self) {
           
-          @scala.inline
-          def setAllowHtml(value: Boolean): Self = StObject.set(x, "allowHtml", value.asInstanceOf[js.Any])
+          inline def setAllowHtml(value: Boolean): Self = StObject.set(x, "allowHtml", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAllowHtmlUndefined: Self = StObject.set(x, "allowHtml", js.undefined)
+          inline def setAllowHtmlUndefined: Self = StObject.set(x, "allowHtml", js.undefined)
           
-          @scala.inline
-          def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+          inline def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+          inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
           
-          @scala.inline
-          def setCloseHtml(value: String): Self = StObject.set(x, "closeHtml", value.asInstanceOf[js.Any])
+          inline def setCloseHtml(value: String): Self = StObject.set(x, "closeHtml", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCloseHtmlUndefined: Self = StObject.set(x, "closeHtml", js.undefined)
+          inline def setCloseHtmlUndefined: Self = StObject.set(x, "closeHtml", js.undefined)
           
-          @scala.inline
-          def setExtendedTimeOut(value: Double): Self = StObject.set(x, "extendedTimeOut", value.asInstanceOf[js.Any])
+          inline def setExtendedTimeOut(value: Double): Self = StObject.set(x, "extendedTimeOut", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExtendedTimeOutUndefined: Self = StObject.set(x, "extendedTimeOut", js.undefined)
+          inline def setExtendedTimeOutUndefined: Self = StObject.set(x, "extendedTimeOut", js.undefined)
           
-          @scala.inline
-          def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+          inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
+          inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
           
-          @scala.inline
-          def setMessageClass(value: String): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
+          inline def setMessageClass(value: String): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMessageClassUndefined: Self = StObject.set(x, "messageClass", js.undefined)
+          inline def setMessageClassUndefined: Self = StObject.set(x, "messageClass", js.undefined)
           
-          @scala.inline
-          def setOnHidden(
+          inline def setOnHidden(
             value: (/* wasClicked */ Boolean, /* toast */ typings.angularToastr.mod.angularAugmentingMod.toastr.IToast) => Unit
           ): Self = StObject.set(x, "onHidden", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setOnHiddenUndefined: Self = StObject.set(x, "onHidden", js.undefined)
+          inline def setOnHiddenUndefined: Self = StObject.set(x, "onHidden", js.undefined)
           
-          @scala.inline
-          def setOnShown(value: /* toast */ typings.angularToastr.mod.angularAugmentingMod.toastr.IToast => Unit): Self = StObject.set(x, "onShown", js.Any.fromFunction1(value))
+          inline def setOnShown(value: /* toast */ typings.angularToastr.mod.angularAugmentingMod.toastr.IToast => Unit): Self = StObject.set(x, "onShown", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setOnShownUndefined: Self = StObject.set(x, "onShown", js.undefined)
+          inline def setOnShownUndefined: Self = StObject.set(x, "onShown", js.undefined)
           
-          @scala.inline
-          def setOnTap(value: /* toast */ typings.angularToastr.mod.angularAugmentingMod.toastr.IToast => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
+          inline def setOnTap(value: /* toast */ typings.angularToastr.mod.angularAugmentingMod.toastr.IToast => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
+          inline def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
           
-          @scala.inline
-          def setProgressBar(value: Boolean): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
+          inline def setProgressBar(value: Boolean): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setProgressBarUndefined: Self = StObject.set(x, "progressBar", js.undefined)
+          inline def setProgressBarUndefined: Self = StObject.set(x, "progressBar", js.undefined)
           
-          @scala.inline
-          def setTapToDismiss(value: Boolean): Self = StObject.set(x, "tapToDismiss", value.asInstanceOf[js.Any])
+          inline def setTapToDismiss(value: Boolean): Self = StObject.set(x, "tapToDismiss", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTapToDismissUndefined: Self = StObject.set(x, "tapToDismiss", js.undefined)
+          inline def setTapToDismissUndefined: Self = StObject.set(x, "tapToDismiss", js.undefined)
           
-          @scala.inline
-          def setTemplates(value: Progressbar): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+          inline def setTemplates(value: Progressbar): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
+          inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
           
-          @scala.inline
-          def setTimeOut(value: Double): Self = StObject.set(x, "timeOut", value.asInstanceOf[js.Any])
+          inline def setTimeOut(value: Double): Self = StObject.set(x, "timeOut", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTimeOutUndefined: Self = StObject.set(x, "timeOut", js.undefined)
+          inline def setTimeOutUndefined: Self = StObject.set(x, "timeOut", js.undefined)
           
-          @scala.inline
-          def setTitleClass(value: String): Self = StObject.set(x, "titleClass", value.asInstanceOf[js.Any])
+          inline def setTitleClass(value: String): Self = StObject.set(x, "titleClass", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleClassUndefined: Self = StObject.set(x, "titleClass", js.undefined)
+          inline def setTitleClassUndefined: Self = StObject.set(x, "titleClass", js.undefined)
           
-          @scala.inline
-          def setToastClass(value: String): Self = StObject.set(x, "toastClass", value.asInstanceOf[js.Any])
+          inline def setToastClass(value: String): Self = StObject.set(x, "toastClass", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setToastClassUndefined: Self = StObject.set(x, "toastClass", js.undefined)
+          inline def setToastClassUndefined: Self = StObject.set(x, "toastClass", js.undefined)
         }
       }
       
@@ -239,20 +199,16 @@ object mod {
       }
       object IToastConfig {
         
-        @scala.inline
-        def apply(): typings.angularToastr.mod.angularAugmentingMod.toastr.IToastConfig = {
+        inline def apply(): typings.angularToastr.mod.angularAugmentingMod.toastr.IToastConfig = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.angularToastr.mod.angularAugmentingMod.toastr.IToastConfig]
         }
         
-        @scala.inline
-        implicit class IToastConfigMutableBuilder[Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastConfig] (val x: Self) extends AnyVal {
+        extension [Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastConfig](x: Self) {
           
-          @scala.inline
-          def setIconClasses(value: Error): Self = StObject.set(x, "iconClasses", value.asInstanceOf[js.Any])
+          inline def setIconClasses(value: Error): Self = StObject.set(x, "iconClasses", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIconClassesUndefined: Self = StObject.set(x, "iconClasses", js.undefined)
+          inline def setIconClassesUndefined: Self = StObject.set(x, "iconClasses", js.undefined)
         }
       }
       
@@ -276,62 +232,44 @@ object mod {
       }
       object IToastContainerConfig {
         
-        @scala.inline
-        def apply(): typings.angularToastr.mod.angularAugmentingMod.toastr.IToastContainerConfig = {
+        inline def apply(): typings.angularToastr.mod.angularAugmentingMod.toastr.IToastContainerConfig = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.angularToastr.mod.angularAugmentingMod.toastr.IToastContainerConfig]
         }
         
-        @scala.inline
-        implicit class IToastContainerConfigMutableBuilder[Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastContainerConfig] (val x: Self) extends AnyVal {
+        extension [Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastContainerConfig](x: Self) {
           
-          @scala.inline
-          def setAutoDismiss(value: Boolean): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
+          inline def setAutoDismiss(value: Boolean): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAutoDismissUndefined: Self = StObject.set(x, "autoDismiss", js.undefined)
+          inline def setAutoDismissUndefined: Self = StObject.set(x, "autoDismiss", js.undefined)
           
-          @scala.inline
-          def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+          inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+          inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
           
-          @scala.inline
-          def setMaxOpened(value: Double): Self = StObject.set(x, "maxOpened", value.asInstanceOf[js.Any])
+          inline def setMaxOpened(value: Double): Self = StObject.set(x, "maxOpened", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMaxOpenedUndefined: Self = StObject.set(x, "maxOpened", js.undefined)
+          inline def setMaxOpenedUndefined: Self = StObject.set(x, "maxOpened", js.undefined)
           
-          @scala.inline
-          def setNewestOnTop(value: Boolean): Self = StObject.set(x, "newestOnTop", value.asInstanceOf[js.Any])
+          inline def setNewestOnTop(value: Boolean): Self = StObject.set(x, "newestOnTop", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNewestOnTopUndefined: Self = StObject.set(x, "newestOnTop", js.undefined)
+          inline def setNewestOnTopUndefined: Self = StObject.set(x, "newestOnTop", js.undefined)
           
-          @scala.inline
-          def setPositionClass(value: String): Self = StObject.set(x, "positionClass", value.asInstanceOf[js.Any])
+          inline def setPositionClass(value: String): Self = StObject.set(x, "positionClass", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPositionClassUndefined: Self = StObject.set(x, "positionClass", js.undefined)
+          inline def setPositionClassUndefined: Self = StObject.set(x, "positionClass", js.undefined)
           
-          @scala.inline
-          def setPreventDuplicates(value: Boolean): Self = StObject.set(x, "preventDuplicates", value.asInstanceOf[js.Any])
+          inline def setPreventDuplicates(value: Boolean): Self = StObject.set(x, "preventDuplicates", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPreventDuplicatesUndefined: Self = StObject.set(x, "preventDuplicates", js.undefined)
+          inline def setPreventDuplicatesUndefined: Self = StObject.set(x, "preventDuplicates", js.undefined)
           
-          @scala.inline
-          def setPreventOpenDuplicates(value: Boolean): Self = StObject.set(x, "preventOpenDuplicates", value.asInstanceOf[js.Any])
+          inline def setPreventOpenDuplicates(value: Boolean): Self = StObject.set(x, "preventOpenDuplicates", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPreventOpenDuplicatesUndefined: Self = StObject.set(x, "preventOpenDuplicates", js.undefined)
+          inline def setPreventOpenDuplicatesUndefined: Self = StObject.set(x, "preventOpenDuplicates", js.undefined)
           
-          @scala.inline
-          def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+          inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+          inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
         }
       }
       
@@ -345,26 +283,20 @@ object mod {
       }
       object IToastOptions {
         
-        @scala.inline
-        def apply(): typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions = {
+        inline def apply(): typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions]
         }
         
-        @scala.inline
-        implicit class IToastOptionsMutableBuilder[Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions] (val x: Self) extends AnyVal {
+        extension [Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions](x: Self) {
           
-          @scala.inline
-          def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+          inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+          inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
           
-          @scala.inline
-          def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+          inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+          inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
         }
       }
       
@@ -390,8 +322,7 @@ object mod {
            with typings.angularToastr.mod.angularAugmentingMod.toastr.IToastConfig
       object IToastrConfig {
         
-        @scala.inline
-        def apply(): typings.angularToastr.mod.angularAugmentingMod.toastr.IToastrConfig = {
+        inline def apply(): typings.angularToastr.mod.angularAugmentingMod.toastr.IToastrConfig = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.angularToastr.mod.angularAugmentingMod.toastr.IToastrConfig]
         }

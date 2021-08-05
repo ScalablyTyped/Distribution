@@ -33,43 +33,31 @@ trait TestCustomDataIdentifierRequest extends StObject {
 }
 object TestCustomDataIdentifierRequest {
   
-  @scala.inline
-  def apply(regex: string, sampleText: string): TestCustomDataIdentifierRequest = {
+  inline def apply(regex: string, sampleText: string): TestCustomDataIdentifierRequest = {
     val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any], sampleText = sampleText.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestCustomDataIdentifierRequest]
   }
   
-  @scala.inline
-  implicit class TestCustomDataIdentifierRequestMutableBuilder[Self <: TestCustomDataIdentifierRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TestCustomDataIdentifierRequest](x: Self) {
     
-    @scala.inline
-    def setIgnoreWords(value: listOfString): Self = StObject.set(x, "ignoreWords", value.asInstanceOf[js.Any])
+    inline def setIgnoreWords(value: listOfString): Self = StObject.set(x, "ignoreWords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreWordsUndefined: Self = StObject.set(x, "ignoreWords", js.undefined)
+    inline def setIgnoreWordsUndefined: Self = StObject.set(x, "ignoreWords", js.undefined)
     
-    @scala.inline
-    def setIgnoreWordsVarargs(value: string*): Self = StObject.set(x, "ignoreWords", js.Array(value :_*))
+    inline def setIgnoreWordsVarargs(value: string*): Self = StObject.set(x, "ignoreWords", js.Array(value :_*))
     
-    @scala.inline
-    def setKeywords(value: listOfString): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: listOfString): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+    inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    @scala.inline
-    def setKeywordsVarargs(value: string*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+    inline def setKeywordsVarargs(value: string*): Self = StObject.set(x, "keywords", js.Array(value :_*))
     
-    @scala.inline
-    def setMaximumMatchDistance(value: integer): Self = StObject.set(x, "maximumMatchDistance", value.asInstanceOf[js.Any])
+    inline def setMaximumMatchDistance(value: integer): Self = StObject.set(x, "maximumMatchDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumMatchDistanceUndefined: Self = StObject.set(x, "maximumMatchDistance", js.undefined)
+    inline def setMaximumMatchDistanceUndefined: Self = StObject.set(x, "maximumMatchDistance", js.undefined)
     
-    @scala.inline
-    def setRegex(value: string): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: string): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleText(value: string): Self = StObject.set(x, "sampleText", value.asInstanceOf[js.Any])
+    inline def setSampleText(value: string): Self = StObject.set(x, "sampleText", value.asInstanceOf[js.Any])
   }
 }

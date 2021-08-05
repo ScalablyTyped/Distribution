@@ -18,22 +18,17 @@ trait PredefinedMetricSpecification extends StObject {
 }
 object PredefinedMetricSpecification {
   
-  @scala.inline
-  def apply(PredefinedMetricType: MetricType): PredefinedMetricSpecification = {
+  inline def apply(PredefinedMetricType: MetricType): PredefinedMetricSpecification = {
     val __obj = js.Dynamic.literal(PredefinedMetricType = PredefinedMetricType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredefinedMetricSpecification]
   }
   
-  @scala.inline
-  implicit class PredefinedMetricSpecificationMutableBuilder[Self <: PredefinedMetricSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: PredefinedMetricSpecification](x: Self) {
     
-    @scala.inline
-    def setPredefinedMetricType(value: MetricType): Self = StObject.set(x, "PredefinedMetricType", value.asInstanceOf[js.Any])
+    inline def setPredefinedMetricType(value: MetricType): Self = StObject.set(x, "PredefinedMetricType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceLabel(value: ResourceLabel): Self = StObject.set(x, "ResourceLabel", value.asInstanceOf[js.Any])
+    inline def setResourceLabel(value: ResourceLabel): Self = StObject.set(x, "ResourceLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceLabelUndefined: Self = StObject.set(x, "ResourceLabel", js.undefined)
+    inline def setResourceLabelUndefined: Self = StObject.set(x, "ResourceLabel", js.undefined)
   }
 }

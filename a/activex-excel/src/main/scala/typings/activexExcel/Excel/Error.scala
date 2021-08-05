@@ -10,7 +10,7 @@ trait Error extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.Error_typekey")
+  /* private */ @JSName("Excel.Error_typekey")
   var ExcelDotError_typekey: Error
   
   var Ignore: Boolean
@@ -21,8 +21,7 @@ trait Error extends StObject {
 }
 object Error {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     ExcelDotError_typekey: Error,
@@ -35,25 +34,18 @@ object Error {
     __obj.asInstanceOf[Error]
   }
   
-  @scala.inline
-  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+  extension [Self <: Error](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotError_typekey(value: Error): Self = StObject.set(x, "Excel.Error_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotError_typekey(value: Error): Self = StObject.set(x, "Excel.Error_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnore(value: Boolean): Self = StObject.set(x, "Ignore", value.asInstanceOf[js.Any])
+    inline def setIgnore(value: Boolean): Self = StObject.set(x, "Ignore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Boolean): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

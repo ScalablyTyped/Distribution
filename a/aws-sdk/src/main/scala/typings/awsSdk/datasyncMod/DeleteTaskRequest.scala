@@ -13,16 +13,13 @@ trait DeleteTaskRequest extends StObject {
 }
 object DeleteTaskRequest {
   
-  @scala.inline
-  def apply(TaskArn: TaskArn): DeleteTaskRequest = {
+  inline def apply(TaskArn: TaskArn): DeleteTaskRequest = {
     val __obj = js.Dynamic.literal(TaskArn = TaskArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTaskRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTaskRequestMutableBuilder[Self <: DeleteTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTaskRequest](x: Self) {
     
-    @scala.inline
-    def setTaskArn(value: TaskArn): Self = StObject.set(x, "TaskArn", value.asInstanceOf[js.Any])
+    inline def setTaskArn(value: TaskArn): Self = StObject.set(x, "TaskArn", value.asInstanceOf[js.Any])
   }
 }

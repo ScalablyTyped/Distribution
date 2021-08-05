@@ -13,22 +13,17 @@ trait ExplicitDeny extends StObject {
 }
 object ExplicitDeny {
   
-  @scala.inline
-  def apply(): ExplicitDeny = {
+  inline def apply(): ExplicitDeny = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExplicitDeny]
   }
   
-  @scala.inline
-  implicit class ExplicitDenyMutableBuilder[Self <: ExplicitDeny] (val x: Self) extends AnyVal {
+  extension [Self <: ExplicitDeny](x: Self) {
     
-    @scala.inline
-    def setPolicies(value: Policies): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
+    inline def setPolicies(value: Policies): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
+    inline def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
-    @scala.inline
-    def setPoliciesVarargs(value: Policy*): Self = StObject.set(x, "policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: Policy*): Self = StObject.set(x, "policies", js.Array(value :_*))
   }
 }

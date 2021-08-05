@@ -10,15 +10,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def atob(encoded: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atob")(encoded.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def atob(encoded: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atob")(encoded.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def btoa(source: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("btoa")(source.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def btoa(source: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("btoa")(source.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def fromBase64(encoded: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(encoded.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fromBase64(encoded: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(encoded.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toBase64(source: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBase64")(source.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toBase64(source: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBase64")(source.asInstanceOf[js.Any]).asInstanceOf[String]
 }

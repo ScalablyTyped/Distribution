@@ -22,55 +22,39 @@ trait UIkitModalOptions extends StObject {
 }
 object UIkitModalOptions {
   
-  @scala.inline
-  def apply(): UIkitModalOptions = {
+  inline def apply(): UIkitModalOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UIkitModalOptions]
   }
   
-  @scala.inline
-  implicit class UIkitModalOptionsMutableBuilder[Self <: UIkitModalOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitModalOptions](x: Self) {
     
-    @scala.inline
-    def `setBg-close`(value: Boolean): Self = StObject.set(x, "bg-close", value.asInstanceOf[js.Any])
+    inline def `setBg-close`(value: Boolean): Self = StObject.set(x, "bg-close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBg-closeUndefined`: Self = StObject.set(x, "bg-close", js.undefined)
+    inline def `setBg-closeUndefined`: Self = StObject.set(x, "bg-close", js.undefined)
     
-    @scala.inline
-    def `setCls-page`(value: String): Self = StObject.set(x, "cls-page", value.asInstanceOf[js.Any])
+    inline def `setCls-page`(value: String): Self = StObject.set(x, "cls-page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCls-pageUndefined`: Self = StObject.set(x, "cls-page", js.undefined)
+    inline def `setCls-pageUndefined`: Self = StObject.set(x, "cls-page", js.undefined)
     
-    @scala.inline
-    def `setCls-panel`(value: String): Self = StObject.set(x, "cls-panel", value.asInstanceOf[js.Any])
+    inline def `setCls-panel`(value: String): Self = StObject.set(x, "cls-panel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCls-panelUndefined`: Self = StObject.set(x, "cls-panel", js.undefined)
+    inline def `setCls-panelUndefined`: Self = StObject.set(x, "cls-panel", js.undefined)
     
-    @scala.inline
-    def setContainer(value: String | Boolean): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String | Boolean): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def `setEsc-close`(value: Boolean): Self = StObject.set(x, "esc-close", value.asInstanceOf[js.Any])
+    inline def `setEsc-close`(value: Boolean): Self = StObject.set(x, "esc-close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setEsc-closeUndefined`: Self = StObject.set(x, "esc-close", js.undefined)
+    inline def `setEsc-closeUndefined`: Self = StObject.set(x, "esc-close", js.undefined)
     
-    @scala.inline
-    def `setSel-close`(value: String): Self = StObject.set(x, "sel-close", value.asInstanceOf[js.Any])
+    inline def `setSel-close`(value: String): Self = StObject.set(x, "sel-close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSel-closeUndefined`: Self = StObject.set(x, "sel-close", js.undefined)
+    inline def `setSel-closeUndefined`: Self = StObject.set(x, "sel-close", js.undefined)
     
-    @scala.inline
-    def setStack(value: Boolean): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: Boolean): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
   }
 }

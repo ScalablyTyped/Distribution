@@ -14,25 +14,19 @@ trait BeginDate extends StObject {
 }
 object BeginDate {
   
-  @scala.inline
-  def apply(beginDate: typings.std.Date, id: String): BeginDate = {
+  inline def apply(beginDate: typings.std.Date, id: String): BeginDate = {
     val __obj = js.Dynamic.literal(beginDate = beginDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeginDate]
   }
   
-  @scala.inline
-  implicit class BeginDateMutableBuilder[Self <: BeginDate] (val x: Self) extends AnyVal {
+  extension [Self <: BeginDate](x: Self) {
     
-    @scala.inline
-    def setBeginDate(value: typings.std.Date): Self = StObject.set(x, "beginDate", value.asInstanceOf[js.Any])
+    inline def setBeginDate(value: typings.std.Date): Self = StObject.set(x, "beginDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDate(value: typings.std.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: typings.std.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

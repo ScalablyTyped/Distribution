@@ -15,25 +15,19 @@ trait ResponseGetUserMinutes200
 }
 object ResponseGetUserMinutes200 {
   
-  @scala.inline
-  def apply(): ResponseGetUserMinutes200 = {
+  inline def apply(): ResponseGetUserMinutes200 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponseGetUserMinutes200]
   }
   
-  @scala.inline
-  implicit class ResponseGetUserMinutes200MutableBuilder[Self <: ResponseGetUserMinutes200] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseGetUserMinutes200](x: Self) {
     
-    @scala.inline
-    def setAutomated(value: String): Self = StObject.set(x, "automated", value.asInstanceOf[js.Any])
+    inline def setAutomated(value: String): Self = StObject.set(x, "automated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomatedUndefined: Self = StObject.set(x, "automated", js.undefined)
+    inline def setAutomatedUndefined: Self = StObject.set(x, "automated", js.undefined)
     
-    @scala.inline
-    def setManual(value: String): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
+    inline def setManual(value: String): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualUndefined: Self = StObject.set(x, "manual", js.undefined)
+    inline def setManualUndefined: Self = StObject.set(x, "manual", js.undefined)
   }
 }

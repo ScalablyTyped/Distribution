@@ -19,31 +19,31 @@ object keytipLayerBaseMod {
     extends Component[IKeytipLayerProps, IKeytipLayerState, js.Any] {
     def this(props: IKeytipLayerProps, context: js.Any) = this()
     
-    var _addKeytipToQueue: js.Any = js.native
+    /* private */ var _addKeytipToQueue: js.Any = js.native
     
-    var _async: js.Any = js.native
+    /* private */ var _async: js.Any = js.native
     
-    var _buildTree: js.Any = js.native
+    /* private */ var _buildTree: js.Any = js.native
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _currentSequence: js.Any = js.native
+    /* private */ var _currentSequence: js.Any = js.native
     
-    var _delayedKeytipQueue: js.Any = js.native
+    /* private */ var _delayedKeytipQueue: js.Any = js.native
     
-    var _delayedQueueTimeout: js.Any = js.native
+    /* private */ var _delayedQueueTimeout: js.Any = js.native
     
     /**
       * Enters keytip mode for this layer
       */
-    var _enterKeytipMode: js.Any = js.native
+    /* private */ var _enterKeytipMode: js.Any = js.native
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
     /**
       * Exits keytip mode for this layer
       */
-    var _exitKeytipMode: js.Any = js.native
+    /* private */ var _exitKeytipMode: js.Any = js.native
     
     /**
       * Returns duplicates among keytip IDs.
@@ -52,11 +52,11 @@ object keytipLayerBaseMod {
       * @param keytipIds - Array of keytip IDs to find duplicates for
       * @returns - Array of duplicates that were found. Each duplicate will only be added once to this array.
       */
-    var _getDuplicateIds: js.Any = js.native
+    /* private */ var _getDuplicateIds: js.Any = js.native
     
-    var _getKtpExecuteTarget: js.Any = js.native
+    /* private */ var _getKtpExecuteTarget: js.Any = js.native
     
-    var _getKtpTarget: js.Any = js.native
+    /* private */ var _getKtpTarget: js.Any = js.native
     
     /**
       * Gets the ModifierKeyCodes based on the keyboard event
@@ -64,9 +64,9 @@ object keytipLayerBaseMod {
       * @param ev - React.KeyboardEvent
       * @returns List of ModifierKeyCodes that were pressed
       */
-    var _getModifierKey: js.Any = js.native
+    /* private */ var _getModifierKey: js.Any = js.native
     
-    var _getVisibleKeytips: js.Any = js.native
+    /* private */ var _getVisibleKeytips: js.Any = js.native
     
     /**
       * Returns T/F if the keytipProps keySequences match the currentKeytip, and the currentKeytip is in an overflow well
@@ -75,33 +75,33 @@ object keytipLayerBaseMod {
       * @param keytipProps - Keytip props to check
       * @returns - T/F if this keytip should become the currentKeytip
       */
-    var _isCurrentKeytipAnAlias: js.Any = js.native
+    /* private */ var _isCurrentKeytipAnAlias: js.Any = js.native
     
-    var _keyHandled: js.Any = js.native
+    /* private */ var _keyHandled: js.Any = js.native
     
-    var _keytipManager: js.Any = js.native
+    /* private */ var _keytipManager: js.Any = js.native
     
-    var _keytipTree: js.Any = js.native
+    /* private */ var _keytipTree: js.Any = js.native
     
-    var _newCurrentKeytipSequences: js.Any = js.native
+    /* private */ var _newCurrentKeytipSequences: js.Any = js.native
     
-    var _onDismiss: js.Any = js.native
+    /* private */ var _onDismiss: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _onKeyPress: js.Any = js.native
+    /* private */ var _onKeyPress: js.Any = js.native
     
-    var _onKeytipAdded: js.Any = js.native
+    /* private */ var _onKeytipAdded: js.Any = js.native
     
-    var _onKeytipRemoved: js.Any = js.native
+    /* private */ var _onKeytipRemoved: js.Any = js.native
     
-    var _onKeytipUpdated: js.Any = js.native
+    /* private */ var _onKeytipUpdated: js.Any = js.native
     
-    var _onPersistedKeytipAdded: js.Any = js.native
+    /* private */ var _onPersistedKeytipAdded: js.Any = js.native
     
-    var _onPersistedKeytipExecute: js.Any = js.native
+    /* private */ var _onPersistedKeytipExecute: js.Any = js.native
     
-    var _onPersistedKeytipRemoved: js.Any = js.native
+    /* private */ var _onPersistedKeytipRemoved: js.Any = js.native
     
     /**
       * Callback function to use for persisted keytips
@@ -109,9 +109,9 @@ object keytipLayerBaseMod {
       * @param overflowButtonSequences - The overflow button sequence to execute
       * @param keytipSequences - The keytip that should become the 'currentKeytip' when it is registered
       */
-    var _persistedKeytipExecute: js.Any = js.native
+    /* private */ var _persistedKeytipExecute: js.Any = js.native
     
-    var _removeKeytipFromQueue: js.Any = js.native
+    /* private */ var _removeKeytipFromQueue: js.Any = js.native
     
     /**
       * Sets if we are in keytip mode.
@@ -119,26 +119,26 @@ object keytipLayerBaseMod {
       * the value that the manager will expose externally.
       * @param inKeytipMode - Boolean so set whether we are in keytip mode or not
       */
-    var _setInKeytipMode: js.Any = js.native
+    /* private */ var _setInKeytipMode: js.Any = js.native
     
     /**
       * Sets the keytips state property
       *
       * @param keytipProps - Keytips to set in this layer
       */
-    var _setKeytips: js.Any = js.native
+    /* private */ var _setKeytips: js.Any = js.native
     
     /**
       * Trigger a keytip immediately and set it as the current keytip
       *
       * @param keytipProps - Keytip to trigger immediately
       */
-    var _triggerKeytipImmediately: js.Any = js.native
+    /* private */ var _triggerKeytipImmediately: js.Any = js.native
     
     /**
       * Emits a warning if duplicate keytips are found for the children of the current keytip
       */
-    var _warnIfDuplicateKeytips: js.Any = js.native
+    /* private */ var _warnIfDuplicateKeytips: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MKeytipLayerBase(): Unit = js.native
@@ -183,8 +183,7 @@ object keytipLayerBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/KeytipLayer/KeytipLayer.base", "KeytipLayerBase.defaultProps")
     @js.native
     def defaultProps: IKeytipLayerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IKeytipLayerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IKeytipLayerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IKeytipLayerState extends StObject {
@@ -197,29 +196,22 @@ object keytipLayerBaseMod {
   }
   object IKeytipLayerState {
     
-    @scala.inline
-    def apply(inKeytipMode: Boolean, keytips: js.Array[IKeytipProps], visibleKeytips: js.Array[IKeytipProps]): IKeytipLayerState = {
+    inline def apply(inKeytipMode: Boolean, keytips: js.Array[IKeytipProps], visibleKeytips: js.Array[IKeytipProps]): IKeytipLayerState = {
       val __obj = js.Dynamic.literal(inKeytipMode = inKeytipMode.asInstanceOf[js.Any], keytips = keytips.asInstanceOf[js.Any], visibleKeytips = visibleKeytips.asInstanceOf[js.Any])
       __obj.asInstanceOf[IKeytipLayerState]
     }
     
-    @scala.inline
-    implicit class IKeytipLayerStateMutableBuilder[Self <: IKeytipLayerState] (val x: Self) extends AnyVal {
+    extension [Self <: IKeytipLayerState](x: Self) {
       
-      @scala.inline
-      def setInKeytipMode(value: Boolean): Self = StObject.set(x, "inKeytipMode", value.asInstanceOf[js.Any])
+      inline def setInKeytipMode(value: Boolean): Self = StObject.set(x, "inKeytipMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeytips(value: js.Array[IKeytipProps]): Self = StObject.set(x, "keytips", value.asInstanceOf[js.Any])
+      inline def setKeytips(value: js.Array[IKeytipProps]): Self = StObject.set(x, "keytips", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeytipsVarargs(value: IKeytipProps*): Self = StObject.set(x, "keytips", js.Array(value :_*))
+      inline def setKeytipsVarargs(value: IKeytipProps*): Self = StObject.set(x, "keytips", js.Array(value :_*))
       
-      @scala.inline
-      def setVisibleKeytips(value: js.Array[IKeytipProps]): Self = StObject.set(x, "visibleKeytips", value.asInstanceOf[js.Any])
+      inline def setVisibleKeytips(value: js.Array[IKeytipProps]): Self = StObject.set(x, "visibleKeytips", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleKeytipsVarargs(value: IKeytipProps*): Self = StObject.set(x, "visibleKeytips", js.Array(value :_*))
+      inline def setVisibleKeytipsVarargs(value: IKeytipProps*): Self = StObject.set(x, "visibleKeytips", js.Array(value :_*))
     }
   }
 }

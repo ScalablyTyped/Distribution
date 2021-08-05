@@ -12,25 +12,19 @@ trait SpreadsheetSheetColumn extends StObject {
 }
 object SpreadsheetSheetColumn {
   
-  @scala.inline
-  def apply(): SpreadsheetSheetColumn = {
+  inline def apply(): SpreadsheetSheetColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpreadsheetSheetColumn]
   }
   
-  @scala.inline
-  implicit class SpreadsheetSheetColumnMutableBuilder[Self <: SpreadsheetSheetColumn] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadsheetSheetColumn](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

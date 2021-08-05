@@ -21,8 +21,7 @@ trait Timeline extends StObject {
 }
 object Timeline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
     getPropertyId: () => Double
   ): Timeline = {
@@ -30,13 +29,10 @@ object Timeline {
     __obj.asInstanceOf[Timeline]
   }
   
-  @scala.inline
-  implicit class TimelineMutableBuilder[Self <: Timeline] (val x: Self) extends AnyVal {
+  extension [Self <: Timeline](x: Self) {
     
-    @scala.inline
-    def setApply(value: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction7(value))
+    inline def setApply(value: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setGetPropertyId(value: () => Double): Self = StObject.set(x, "getPropertyId", js.Any.fromFunction0(value))
+    inline def setGetPropertyId(value: () => Double): Self = StObject.set(x, "getPropertyId", js.Any.fromFunction0(value))
   }
 }

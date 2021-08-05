@@ -10,16 +10,13 @@ trait GlobalWorkerOptions extends StObject {
 }
 object GlobalWorkerOptions {
   
-  @scala.inline
-  def apply(workerSrc: String): GlobalWorkerOptions = {
+  inline def apply(workerSrc: String): GlobalWorkerOptions = {
     val __obj = js.Dynamic.literal(workerSrc = workerSrc.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalWorkerOptions]
   }
   
-  @scala.inline
-  implicit class GlobalWorkerOptionsMutableBuilder[Self <: GlobalWorkerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalWorkerOptions](x: Self) {
     
-    @scala.inline
-    def setWorkerSrc(value: String): Self = StObject.set(x, "workerSrc", value.asInstanceOf[js.Any])
+    inline def setWorkerSrc(value: String): Self = StObject.set(x, "workerSrc", value.asInstanceOf[js.Any])
   }
 }

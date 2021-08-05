@@ -18,25 +18,19 @@ trait Featurization extends StObject {
 }
 object Featurization {
   
-  @scala.inline
-  def apply(AttributeName: Name): Featurization = {
+  inline def apply(AttributeName: Name): Featurization = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Featurization]
   }
   
-  @scala.inline
-  implicit class FeaturizationMutableBuilder[Self <: Featurization] (val x: Self) extends AnyVal {
+  extension [Self <: Featurization](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: Name): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: Name): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturizationPipeline(value: FeaturizationPipeline): Self = StObject.set(x, "FeaturizationPipeline", value.asInstanceOf[js.Any])
+    inline def setFeaturizationPipeline(value: FeaturizationPipeline): Self = StObject.set(x, "FeaturizationPipeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturizationPipelineUndefined: Self = StObject.set(x, "FeaturizationPipeline", js.undefined)
+    inline def setFeaturizationPipelineUndefined: Self = StObject.set(x, "FeaturizationPipeline", js.undefined)
     
-    @scala.inline
-    def setFeaturizationPipelineVarargs(value: FeaturizationMethod*): Self = StObject.set(x, "FeaturizationPipeline", js.Array(value :_*))
+    inline def setFeaturizationPipelineVarargs(value: FeaturizationMethod*): Self = StObject.set(x, "FeaturizationPipeline", js.Array(value :_*))
   }
 }

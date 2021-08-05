@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HeavyAdResolutionStatus extends StObject
 object HeavyAdResolutionStatus {
   
-  @scala.inline
-  def HeavyAdBlocked: typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdBlocked = "HeavyAdBlocked".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdBlocked]
+  inline def HeavyAdBlocked: typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdBlocked = "HeavyAdBlocked".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdBlocked]
   
-  @scala.inline
-  def HeavyAdWarning: typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdWarning = "HeavyAdWarning".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdWarning]
+  inline def HeavyAdWarning: typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdWarning = "HeavyAdWarning".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.HeavyAdWarning]
 }

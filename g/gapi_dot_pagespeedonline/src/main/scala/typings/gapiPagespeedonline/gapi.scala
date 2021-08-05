@@ -21,17 +21,14 @@ object gapi {
       }
       object pagespeedapi {
         
-        @scala.inline
-        def apply(runpagespeed: Fields => HttpRequest[GoogleApiPageSpeedOnlineResource]): pagespeedapi = {
+        inline def apply(runpagespeed: Fields => HttpRequest[GoogleApiPageSpeedOnlineResource]): pagespeedapi = {
           val __obj = js.Dynamic.literal(runpagespeed = js.Any.fromFunction1(runpagespeed))
           __obj.asInstanceOf[pagespeedapi]
         }
         
-        @scala.inline
-        implicit class pagespeedapiMutableBuilder[Self <: pagespeedapi] (val x: Self) extends AnyVal {
+        extension [Self <: pagespeedapi](x: Self) {
           
-          @scala.inline
-          def setRunpagespeed(value: Fields => HttpRequest[GoogleApiPageSpeedOnlineResource]): Self = StObject.set(x, "runpagespeed", js.Any.fromFunction1(value))
+          inline def setRunpagespeed(value: Fields => HttpRequest[GoogleApiPageSpeedOnlineResource]): Self = StObject.set(x, "runpagespeed", js.Any.fromFunction1(value))
         }
       }
     }

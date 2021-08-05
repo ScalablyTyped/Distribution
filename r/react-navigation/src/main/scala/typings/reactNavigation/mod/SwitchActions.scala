@@ -15,6 +15,5 @@ object SwitchActions {
   @js.native
   val JUMP_TO: NavigationSlashJUMP_TO = js.native
   
-  @scala.inline
-  def jumpTo(options: NavigationJumpToActionPayload): NavigationJumpToAction = ^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationJumpToAction]
+  inline def jumpTo(options: NavigationJumpToActionPayload): NavigationJumpToAction = ^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationJumpToAction]
 }

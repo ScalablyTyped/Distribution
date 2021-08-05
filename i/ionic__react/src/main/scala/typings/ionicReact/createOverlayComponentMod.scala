@@ -22,8 +22,7 @@ object createOverlayComponentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createOverlayComponent[OverlayComponent /* <: js.Object */, OverlayType /* <: OverlayElement */](displayName: String, controller: `0`[OverlayType]): ForwardRefExoticComponent[
+  inline def createOverlayComponent[OverlayComponent /* <: js.Object */, OverlayType /* <: OverlayElement */](displayName: String, controller: `0`[OverlayType]): ForwardRefExoticComponent[
     (PropsWithoutRef[OverlayComponent & ReactOverlayProps & `1`[OverlayType]]) & RefAttributes[OverlayType]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOverlayComponent")(displayName.asInstanceOf[js.Any], controller.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[
     (PropsWithoutRef[OverlayComponent & ReactOverlayProps & `1`[OverlayType]]) & RefAttributes[OverlayType]
@@ -72,47 +71,34 @@ object createOverlayComponentMod {
   }
   object ReactOverlayProps {
     
-    @scala.inline
-    def apply(isOpen: Boolean): ReactOverlayProps = {
+    inline def apply(isOpen: Boolean): ReactOverlayProps = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactOverlayProps]
     }
     
-    @scala.inline
-    implicit class ReactOverlayPropsMutableBuilder[Self <: ReactOverlayProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactOverlayProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onDidDismiss", js.Any.fromFunction1(value))
+      inline def setOnDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onDidDismiss", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDidDismissUndefined: Self = StObject.set(x, "onDidDismiss", js.undefined)
+      inline def setOnDidDismissUndefined: Self = StObject.set(x, "onDidDismiss", js.undefined)
       
-      @scala.inline
-      def setOnDidPresent(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onDidPresent", js.Any.fromFunction1(value))
+      inline def setOnDidPresent(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onDidPresent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDidPresentUndefined: Self = StObject.set(x, "onDidPresent", js.undefined)
+      inline def setOnDidPresentUndefined: Self = StObject.set(x, "onDidPresent", js.undefined)
       
-      @scala.inline
-      def setOnWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onWillDismiss", js.Any.fromFunction1(value))
+      inline def setOnWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onWillDismiss", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWillDismissUndefined: Self = StObject.set(x, "onWillDismiss", js.undefined)
+      inline def setOnWillDismissUndefined: Self = StObject.set(x, "onWillDismiss", js.undefined)
       
-      @scala.inline
-      def setOnWillPresent(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onWillPresent", js.Any.fromFunction1(value))
+      inline def setOnWillPresent(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onWillPresent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWillPresentUndefined: Self = StObject.set(x, "onWillPresent", js.undefined)
+      inline def setOnWillPresentUndefined: Self = StObject.set(x, "onWillPresent", js.undefined)
     }
   }
 }

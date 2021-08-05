@@ -30,8 +30,7 @@ trait XCertificateContainer extends StObject {
 }
 object XCertificateContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCertificate: (String, String, Boolean) => Boolean,
     hasCertificate: (String, String) => CertificateContainerStatus
   ): XCertificateContainer = {
@@ -39,13 +38,10 @@ object XCertificateContainer {
     __obj.asInstanceOf[XCertificateContainer]
   }
   
-  @scala.inline
-  implicit class XCertificateContainerMutableBuilder[Self <: XCertificateContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XCertificateContainer](x: Self) {
     
-    @scala.inline
-    def setAddCertificate(value: (String, String, Boolean) => Boolean): Self = StObject.set(x, "addCertificate", js.Any.fromFunction3(value))
+    inline def setAddCertificate(value: (String, String, Boolean) => Boolean): Self = StObject.set(x, "addCertificate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHasCertificate(value: (String, String) => CertificateContainerStatus): Self = StObject.set(x, "hasCertificate", js.Any.fromFunction2(value))
+    inline def setHasCertificate(value: (String, String) => CertificateContainerStatus): Self = StObject.set(x, "hasCertificate", js.Any.fromFunction2(value))
   }
 }

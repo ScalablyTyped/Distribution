@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TreeMethod extends StObject
 object TreeMethod {
   
-  @scala.inline
-  def cluster: typings.vegaTypings.vegaTypingsStrings.cluster = "cluster".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.cluster]
+  inline def cluster: typings.vegaTypings.vegaTypingsStrings.cluster = "cluster".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.cluster]
   
-  @scala.inline
-  def tidy: typings.vegaTypings.vegaTypingsStrings.tidy = "tidy".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.tidy]
+  inline def tidy: typings.vegaTypings.vegaTypingsStrings.tidy = "tidy".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.tidy]
 }

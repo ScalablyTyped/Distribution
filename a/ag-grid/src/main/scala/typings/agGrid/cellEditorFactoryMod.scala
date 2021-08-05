@@ -17,13 +17,13 @@ object cellEditorFactoryMod {
     
     def addCellEditor(key: String, cellEditor: InstantiableICellEditorComp): Unit = js.native
     
-    var componentResolver: js.Any = js.native
+    /* private */ var componentResolver: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     def createCellEditor(column: ColDef, params: ICellEditorParams): Promise[ICellEditorComp] = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     /* private */ def init(): js.Any = js.native
   }

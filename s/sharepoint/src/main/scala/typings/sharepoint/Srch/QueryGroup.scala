@@ -16,8 +16,7 @@ trait QueryGroup extends StObject {
 }
 object QueryGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataProvider: DataProvider,
     displays: js.Array[DisplayControl],
     name: String,
@@ -27,25 +26,18 @@ object QueryGroup {
     __obj.asInstanceOf[QueryGroup]
   }
   
-  @scala.inline
-  implicit class QueryGroupMutableBuilder[Self <: QueryGroup] (val x: Self) extends AnyVal {
+  extension [Self <: QueryGroup](x: Self) {
     
-    @scala.inline
-    def setDataProvider(value: DataProvider): Self = StObject.set(x, "dataProvider", value.asInstanceOf[js.Any])
+    inline def setDataProvider(value: DataProvider): Self = StObject.set(x, "dataProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplays(value: js.Array[DisplayControl]): Self = StObject.set(x, "displays", value.asInstanceOf[js.Any])
+    inline def setDisplays(value: js.Array[DisplayControl]): Self = StObject.set(x, "displays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplaysVarargs(value: DisplayControl*): Self = StObject.set(x, "displays", js.Array(value :_*))
+    inline def setDisplaysVarargs(value: DisplayControl*): Self = StObject.set(x, "displays", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchBoxes(value: js.Array[Refinement]): Self = StObject.set(x, "searchBoxes", value.asInstanceOf[js.Any])
+    inline def setSearchBoxes(value: js.Array[Refinement]): Self = StObject.set(x, "searchBoxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchBoxesVarargs(value: Refinement*): Self = StObject.set(x, "searchBoxes", js.Array(value :_*))
+    inline def setSearchBoxesVarargs(value: Refinement*): Self = StObject.set(x, "searchBoxes", js.Array(value :_*))
   }
 }

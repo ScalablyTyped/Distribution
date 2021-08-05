@@ -90,8 +90,7 @@ trait heatmapCreateRendererParams
 }
 object heatmapCreateRendererParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer | CSVLayer | GeoJSONLayer,
@@ -102,67 +101,46 @@ object heatmapCreateRendererParams {
     __obj.asInstanceOf[heatmapCreateRendererParams]
   }
   
-  @scala.inline
-  implicit class heatmapCreateRendererParamsMutableBuilder[Self <: heatmapCreateRendererParams] (val x: Self) extends AnyVal {
+  extension [Self <: heatmapCreateRendererParams](x: Self) {
     
-    @scala.inline
-    def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
+    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
+    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
-    @scala.inline
-    def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
+    inline def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
+    inline def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
     
-    @scala.inline
-    def setFadeToTransparent(value: Boolean): Self = StObject.set(x, "fadeToTransparent", value.asInstanceOf[js.Any])
+    inline def setFadeToTransparent(value: Boolean): Self = StObject.set(x, "fadeToTransparent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFadeToTransparentUndefined: Self = StObject.set(x, "fadeToTransparent", js.undefined)
+    inline def setFadeToTransparentUndefined: Self = StObject.set(x, "fadeToTransparent", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setHeatmapScheme(value: HeatmapScheme): Self = StObject.set(x, "heatmapScheme", value.asInstanceOf[js.Any])
+    inline def setHeatmapScheme(value: HeatmapScheme): Self = StObject.set(x, "heatmapScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeatmapSchemeUndefined: Self = StObject.set(x, "heatmapScheme", js.undefined)
+    inline def setHeatmapSchemeUndefined: Self = StObject.set(x, "heatmapScheme", js.undefined)
     
-    @scala.inline
-    def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRatio(value: Double): Self = StObject.set(x, "maxRatio", value.asInstanceOf[js.Any])
+    inline def setMaxRatio(value: Double): Self = StObject.set(x, "maxRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRatioUndefined: Self = StObject.set(x, "maxRatio", js.undefined)
+    inline def setMaxRatioUndefined: Self = StObject.set(x, "maxRatio", js.undefined)
     
-    @scala.inline
-    def setMinRatio(value: Double): Self = StObject.set(x, "minRatio", value.asInstanceOf[js.Any])
+    inline def setMinRatio(value: Double): Self = StObject.set(x, "minRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinRatioUndefined: Self = StObject.set(x, "minRatio", js.undefined)
+    inline def setMinRatioUndefined: Self = StObject.set(x, "minRatio", js.undefined)
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setStatistics(value: HeatmapStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: HeatmapStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
+    inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
-    @scala.inline
-    def setView(value: MapView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

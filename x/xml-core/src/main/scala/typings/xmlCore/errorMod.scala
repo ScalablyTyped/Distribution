@@ -146,6 +146,6 @@ object errorMod {
     /* CompleteClass */
     var name: String = js.native
     
-    val prefix: /* "XMLJS" */ String = js.native
+    /* protected */ val prefix: /* "XMLJS" */ String = js.native
   }
 }

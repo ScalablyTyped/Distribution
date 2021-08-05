@@ -14,19 +14,15 @@ trait TagFrameFlags extends StObject {
 }
 object TagFrameFlags {
   
-  @scala.inline
-  def apply(format: Compression, message: Filealterpreservation): TagFrameFlags = {
+  inline def apply(format: Compression, message: Filealterpreservation): TagFrameFlags = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagFrameFlags]
   }
   
-  @scala.inline
-  implicit class TagFrameFlagsMutableBuilder[Self <: TagFrameFlags] (val x: Self) extends AnyVal {
+  extension [Self <: TagFrameFlags](x: Self) {
     
-    @scala.inline
-    def setFormat(value: Compression): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Compression): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: Filealterpreservation): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Filealterpreservation): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

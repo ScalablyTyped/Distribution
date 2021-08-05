@@ -15,16 +15,13 @@ trait IntercomConfig extends StObject {
 }
 object IntercomConfig {
   
-  @scala.inline
-  def apply(text: String): IntercomConfig = {
+  inline def apply(text: String): IntercomConfig = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntercomConfig]
   }
   
-  @scala.inline
-  implicit class IntercomConfigMutableBuilder[Self <: IntercomConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IntercomConfig](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

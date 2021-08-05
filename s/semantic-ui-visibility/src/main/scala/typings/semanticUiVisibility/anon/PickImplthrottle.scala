@@ -12,16 +12,13 @@ trait PickImplthrottle extends StObject {
 }
 object PickImplthrottle {
   
-  @scala.inline
-  def apply(throttle: `false` | Double): PickImplthrottle = {
+  inline def apply(throttle: `false` | Double): PickImplthrottle = {
     val __obj = js.Dynamic.literal(throttle = throttle.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplthrottle]
   }
   
-  @scala.inline
-  implicit class PickImplthrottleMutableBuilder[Self <: PickImplthrottle] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplthrottle](x: Self) {
     
-    @scala.inline
-    def setThrottle(value: `false` | Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+    inline def setThrottle(value: `false` | Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
   }
 }

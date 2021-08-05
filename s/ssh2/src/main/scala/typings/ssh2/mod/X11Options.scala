@@ -14,25 +14,19 @@ trait X11Options extends StObject {
 }
 object X11Options {
   
-  @scala.inline
-  def apply(): X11Options = {
+  inline def apply(): X11Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[X11Options]
   }
   
-  @scala.inline
-  implicit class X11OptionsMutableBuilder[Self <: X11Options] (val x: Self) extends AnyVal {
+  extension [Self <: X11Options](x: Self) {
     
-    @scala.inline
-    def setScreen(value: Double): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+    inline def setScreen(value: Double): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
+    inline def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
     
-    @scala.inline
-    def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+    inline def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
+    inline def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
   }
 }

@@ -28,38 +28,28 @@ object interfaceMod {
   }
   object ISize {
     
-    @scala.inline
-    def apply(): ISize = {
+    inline def apply(): ISize = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISize]
     }
     
-    @scala.inline
-    implicit class ISizeMutableBuilder[Self <: ISize] (val x: Self) extends AnyVal {
+    extension [Self <: ISize](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -71,23 +61,18 @@ object interfaceMod {
   }
   object ISizeCalculationResult {
     
-    @scala.inline
-    def apply(): ISizeCalculationResult = {
+    inline def apply(): ISizeCalculationResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISizeCalculationResult]
     }
     
-    @scala.inline
-    implicit class ISizeCalculationResultMutableBuilder[Self <: ISizeCalculationResult] (val x: Self) extends AnyVal {
+    extension [Self <: ISizeCalculationResult](x: Self) {
       
-      @scala.inline
-      def setImages(value: js.Array[ISize]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: js.Array[ISize]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+      inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
       
-      @scala.inline
-      def setImagesVarargs(value: ISize*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: ISize*): Self = StObject.set(x, "images", js.Array(value :_*))
     }
   }
 }

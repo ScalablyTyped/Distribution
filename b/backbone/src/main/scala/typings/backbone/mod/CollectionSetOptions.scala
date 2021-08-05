@@ -21,43 +21,31 @@ trait CollectionSetOptions
 }
 object CollectionSetOptions {
   
-  @scala.inline
-  def apply(): CollectionSetOptions = {
+  inline def apply(): CollectionSetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionSetOptions]
   }
   
-  @scala.inline
-  implicit class CollectionSetOptionsMutableBuilder[Self <: CollectionSetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionSetOptions](x: Self) {
     
-    @scala.inline
-    def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setAt(value: Double): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+    inline def setAt(value: Double): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
+    inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
     
-    @scala.inline
-    def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
+    inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
     
-    @scala.inline
-    def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    @scala.inline
-    def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

@@ -11,13 +11,11 @@ object spotifyNodeApplescriptStrings {
   sealed trait paused
     extends StObject
        with SpotifyPlayingState
-  @scala.inline
-  def paused: paused = "paused".asInstanceOf[paused]
+  inline def paused: paused = "paused".asInstanceOf[paused]
   
   @js.native
   sealed trait playing
     extends StObject
        with SpotifyPlayingState
-  @scala.inline
-  def playing: playing = "playing".asInstanceOf[playing]
+  inline def playing: playing = "playing".asInstanceOf[playing]
 }

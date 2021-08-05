@@ -20,8 +20,7 @@ trait ComplexAspect extends StObject {
 }
 object ComplexAspect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     complexObject: ComplexObject,
     getEntityAspect: () => EntityAspect,
     getPropertyPath: String => String,
@@ -33,25 +32,18 @@ object ComplexAspect {
     __obj.asInstanceOf[ComplexAspect]
   }
   
-  @scala.inline
-  implicit class ComplexAspectMutableBuilder[Self <: ComplexAspect] (val x: Self) extends AnyVal {
+  extension [Self <: ComplexAspect](x: Self) {
     
-    @scala.inline
-    def setComplexObject(value: ComplexObject): Self = StObject.set(x, "complexObject", value.asInstanceOf[js.Any])
+    inline def setComplexObject(value: ComplexObject): Self = StObject.set(x, "complexObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEntityAspect(value: () => EntityAspect): Self = StObject.set(x, "getEntityAspect", js.Any.fromFunction0(value))
+    inline def setGetEntityAspect(value: () => EntityAspect): Self = StObject.set(x, "getEntityAspect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPropertyPath(value: String => String): Self = StObject.set(x, "getPropertyPath", js.Any.fromFunction1(value))
+    inline def setGetPropertyPath(value: String => String): Self = StObject.set(x, "getPropertyPath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOriginalValues(value: js.Object): Self = StObject.set(x, "originalValues", value.asInstanceOf[js.Any])
+    inline def setOriginalValues(value: js.Object): Self = StObject.set(x, "originalValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Object): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Object): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentProperty(value: DataProperty): Self = StObject.set(x, "parentProperty", value.asInstanceOf[js.Any])
+    inline def setParentProperty(value: DataProperty): Self = StObject.set(x, "parentProperty", value.asInstanceOf[js.Any])
   }
 }

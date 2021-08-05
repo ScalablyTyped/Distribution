@@ -53,61 +53,43 @@ trait FamilyMemberHistoryCondition
 }
 object FamilyMemberHistoryCondition {
   
-  @scala.inline
-  def apply(code: CodeableConcept): FamilyMemberHistoryCondition = {
+  inline def apply(code: CodeableConcept): FamilyMemberHistoryCondition = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[FamilyMemberHistoryCondition]
   }
   
-  @scala.inline
-  implicit class FamilyMemberHistoryConditionMutableBuilder[Self <: FamilyMemberHistoryCondition] (val x: Self) extends AnyVal {
+  extension [Self <: FamilyMemberHistoryCondition](x: Self) {
     
-    @scala.inline
-    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
-    @scala.inline
-    def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
+    inline def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
     
-    @scala.inline
-    def setOnsetAge(value: Age): Self = StObject.set(x, "onsetAge", value.asInstanceOf[js.Any])
+    inline def setOnsetAge(value: Age): Self = StObject.set(x, "onsetAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnsetAgeUndefined: Self = StObject.set(x, "onsetAge", js.undefined)
+    inline def setOnsetAgeUndefined: Self = StObject.set(x, "onsetAge", js.undefined)
     
-    @scala.inline
-    def setOnsetPeriod(value: Period): Self = StObject.set(x, "onsetPeriod", value.asInstanceOf[js.Any])
+    inline def setOnsetPeriod(value: Period): Self = StObject.set(x, "onsetPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnsetPeriodUndefined: Self = StObject.set(x, "onsetPeriod", js.undefined)
+    inline def setOnsetPeriodUndefined: Self = StObject.set(x, "onsetPeriod", js.undefined)
     
-    @scala.inline
-    def setOnsetRange(value: Range): Self = StObject.set(x, "onsetRange", value.asInstanceOf[js.Any])
+    inline def setOnsetRange(value: Range): Self = StObject.set(x, "onsetRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnsetRangeUndefined: Self = StObject.set(x, "onsetRange", js.undefined)
+    inline def setOnsetRangeUndefined: Self = StObject.set(x, "onsetRange", js.undefined)
     
-    @scala.inline
-    def setOnsetString(value: String): Self = StObject.set(x, "onsetString", value.asInstanceOf[js.Any])
+    inline def setOnsetString(value: String): Self = StObject.set(x, "onsetString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnsetStringUndefined: Self = StObject.set(x, "onsetString", js.undefined)
+    inline def setOnsetStringUndefined: Self = StObject.set(x, "onsetString", js.undefined)
     
-    @scala.inline
-    def setOutcome(value: CodeableConcept): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
+    inline def setOutcome(value: CodeableConcept): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
+    inline def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
     
-    @scala.inline
-    def set_onsetString(value: Element): Self = StObject.set(x, "_onsetString", value.asInstanceOf[js.Any])
+    inline def set_onsetString(value: Element): Self = StObject.set(x, "_onsetString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_onsetStringUndefined: Self = StObject.set(x, "_onsetString", js.undefined)
+    inline def set_onsetStringUndefined: Self = StObject.set(x, "_onsetString", js.undefined)
   }
 }

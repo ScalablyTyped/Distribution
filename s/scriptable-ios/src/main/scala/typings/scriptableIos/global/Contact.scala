@@ -395,10 +395,8 @@ object Contact {
     * @see https://docs.scriptable.app/contact/#add
     */
   /* static member */
-  @scala.inline
-  def add(contact: typings.scriptableIos.Contact): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(contact.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def add(contact: typings.scriptableIos.Contact, containerIdentifier: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(contact.asInstanceOf[js.Any], containerIdentifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def add(contact: typings.scriptableIos.Contact): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(contact.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def add(contact: typings.scriptableIos.Contact, containerIdentifier: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(contact.asInstanceOf[js.Any], containerIdentifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * _Fetches contacts._
@@ -408,8 +406,7 @@ object Contact {
     * @see https://docs.scriptable.app/contact/#all
     */
   /* static member */
-  @scala.inline
-  def all(containers: js.Array[typings.scriptableIos.ContactsContainer]): js.Promise[js.Array[typings.scriptableIos.Contact]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(containers.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Contact]]]
+  inline def all(containers: js.Array[typings.scriptableIos.ContactsContainer]): js.Promise[js.Array[typings.scriptableIos.Contact]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(containers.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Contact]]]
   
   /**
     * _Queues a contact to be deleted._
@@ -422,8 +419,7 @@ object Contact {
     * @see https://docs.scriptable.app/contact/#delete
     */
   /* static member */
-  @scala.inline
-  def delete(contact: typings.scriptableIos.Contact): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(contact.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def delete(contact: typings.scriptableIos.Contact): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(contact.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * _Fetches contacts in groups._
@@ -433,8 +429,7 @@ object Contact {
     * @see https://docs.scriptable.app/contact/#ingroups
     */
   /* static member */
-  @scala.inline
-  def inGroups(groups: js.Array[typings.scriptableIos.ContactsGroup]): js.Promise[js.Array[typings.scriptableIos.Contact]] = ^.asInstanceOf[js.Dynamic].applyDynamic("inGroups")(groups.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Contact]]]
+  inline def inGroups(groups: js.Array[typings.scriptableIos.ContactsGroup]): js.Promise[js.Array[typings.scriptableIos.Contact]] = ^.asInstanceOf[js.Dynamic].applyDynamic("inGroups")(groups.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Contact]]]
   
   /**
     * _Persist queued changes to the address book._
@@ -446,8 +441,7 @@ object Contact {
     * @see https://docs.scriptable.app/contact/#persistchanges
     */
   /* static member */
-  @scala.inline
-  def persistChanges(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("persistChanges")().asInstanceOf[js.Promise[Unit]]
+  inline def persistChanges(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("persistChanges")().asInstanceOf[js.Promise[Unit]]
   
   /**
     * _Queues an update to a contact._
@@ -461,6 +455,5 @@ object Contact {
     * @see https://docs.scriptable.app/contact/#update
     */
   /* static member */
-  @scala.inline
-  def update(contact: typings.scriptableIos.Contact): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(contact.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def update(contact: typings.scriptableIos.Contact): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(contact.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

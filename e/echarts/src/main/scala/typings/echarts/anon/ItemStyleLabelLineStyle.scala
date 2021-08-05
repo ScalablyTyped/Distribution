@@ -23,31 +23,23 @@ trait ItemStyleLabelLineStyle extends StObject {
 }
 object ItemStyleLabelLineStyle {
   
-  @scala.inline
-  def apply(): ItemStyleLabelLineStyle = {
+  inline def apply(): ItemStyleLabelLineStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ItemStyleLabelLineStyle]
   }
   
-  @scala.inline
-  implicit class ItemStyleLabelLineStyleMutableBuilder[Self <: ItemStyleLabelLineStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ItemStyleLabelLineStyle](x: Self) {
     
-    @scala.inline
-    def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    @scala.inline
-    def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLineStyle(value: ColorCurveness): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: ColorCurveness): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
   }
 }

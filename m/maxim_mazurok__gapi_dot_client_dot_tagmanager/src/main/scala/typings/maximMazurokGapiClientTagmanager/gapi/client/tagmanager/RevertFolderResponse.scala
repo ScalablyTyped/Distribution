@@ -14,19 +14,15 @@ trait RevertFolderResponse extends StObject {
 }
 object RevertFolderResponse {
   
-  @scala.inline
-  def apply(): RevertFolderResponse = {
+  inline def apply(): RevertFolderResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevertFolderResponse]
   }
   
-  @scala.inline
-  implicit class RevertFolderResponseMutableBuilder[Self <: RevertFolderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RevertFolderResponse](x: Self) {
     
-    @scala.inline
-    def setFolder(value: Folder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: Folder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+    inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
   }
 }

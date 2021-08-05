@@ -24,8 +24,7 @@ trait OfficeVersion extends StObject {
 }
 object OfficeVersion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assemblyVersion: String,
     majorBuildVersion: Double,
     majorVersion: String,
@@ -39,31 +38,22 @@ object OfficeVersion {
     __obj.asInstanceOf[OfficeVersion]
   }
   
-  @scala.inline
-  implicit class OfficeVersionMutableBuilder[Self <: OfficeVersion] (val x: Self) extends AnyVal {
+  extension [Self <: OfficeVersion](x: Self) {
     
-    @scala.inline
-    def setAssemblyVersion(value: String): Self = StObject.set(x, "assemblyVersion", value.asInstanceOf[js.Any])
+    inline def setAssemblyVersion(value: String): Self = StObject.set(x, "assemblyVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorBuildVersion(value: Double): Self = StObject.set(x, "majorBuildVersion", value.asInstanceOf[js.Any])
+    inline def setMajorBuildVersion(value: Double): Self = StObject.set(x, "majorBuildVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorVersion(value: String): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
+    inline def setMajorVersion(value: String): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorVersionDotZero(value: String): Self = StObject.set(x, "majorVersionDotZero", value.asInstanceOf[js.Any])
+    inline def setMajorVersionDotZero(value: String): Self = StObject.set(x, "majorVersionDotZero", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousMajorBuildVersion(value: Double): Self = StObject.set(x, "previousMajorBuildVersion", value.asInstanceOf[js.Any])
+    inline def setPreviousMajorBuildVersion(value: Double): Self = StObject.set(x, "previousMajorBuildVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousVersion(value: String): Self = StObject.set(x, "previousVersion", value.asInstanceOf[js.Any])
+    inline def setPreviousVersion(value: String): Self = StObject.set(x, "previousVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousVersionDotZero(value: String): Self = StObject.set(x, "previousVersionDotZero", value.asInstanceOf[js.Any])
+    inline def setPreviousVersionDotZero(value: String): Self = StObject.set(x, "previousVersionDotZero", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWssMajorVersion(value: String): Self = StObject.set(x, "wssMajorVersion", value.asInstanceOf[js.Any])
+    inline def setWssMajorVersion(value: String): Self = StObject.set(x, "wssMajorVersion", value.asInstanceOf[js.Any])
   }
 }

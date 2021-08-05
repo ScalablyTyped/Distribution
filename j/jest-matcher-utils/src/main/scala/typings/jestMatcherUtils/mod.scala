@@ -137,83 +137,52 @@ object mod {
   @js.native
   val SUGGEST_TO_CONTAIN_EQUAL: String = js.native
   
-  @scala.inline
-  def diff(a: js.Any, b: js.Any): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  @scala.inline
-  def diff(a: js.Any, b: js.Any, options: typings.jestDiff.typesMod.DiffOptions): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def diff(a: js.Any, b: js.Any): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def diff(a: js.Any, b: js.Any, options: typings.jestDiff.typesMod.DiffOptions): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @scala.inline
-  def ensureActualIsNumber(actual: js.Any, matcherName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureActualIsNumber")(actual.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def ensureActualIsNumber(actual: js.Any, matcherName: String, options: MatcherHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureActualIsNumber")(actual.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureActualIsNumber(actual: js.Any, matcherName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureActualIsNumber")(actual.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureActualIsNumber(actual: js.Any, matcherName: String, options: MatcherHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureActualIsNumber")(actual.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def ensureExpectedIsNonNegativeInteger(expected: js.Any, matcherName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExpectedIsNonNegativeInteger")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def ensureExpectedIsNonNegativeInteger(expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExpectedIsNonNegativeInteger")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureExpectedIsNonNegativeInteger(expected: js.Any, matcherName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExpectedIsNonNegativeInteger")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureExpectedIsNonNegativeInteger(expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExpectedIsNonNegativeInteger")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def ensureExpectedIsNumber(expected: js.Any, matcherName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExpectedIsNumber")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def ensureExpectedIsNumber(expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExpectedIsNumber")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureExpectedIsNumber(expected: js.Any, matcherName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExpectedIsNumber")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureExpectedIsNumber(expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExpectedIsNumber")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def ensureNoExpected(expected: js.Any, matcherName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureNoExpected")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def ensureNoExpected(expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureNoExpected")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureNoExpected(expected: js.Any, matcherName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureNoExpected")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureNoExpected(expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureNoExpected")(expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def ensureNumbers(actual: js.Any, expected: js.Any, matcherName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureNumbers")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def ensureNumbers(actual: js.Any, expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureNumbers")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureNumbers(actual: js.Any, expected: js.Any, matcherName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureNumbers")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ensureNumbers(actual: js.Any, expected: js.Any, matcherName: String, options: MatcherHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureNumbers")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], matcherName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getLabelPrinter(strings: String*): PrintLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("getLabelPrinter")(strings.asInstanceOf[js.Any]).asInstanceOf[PrintLabel]
+  inline def getLabelPrinter(strings: String*): PrintLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("getLabelPrinter")(strings.asInstanceOf[js.Any]).asInstanceOf[PrintLabel]
   
-  @scala.inline
-  def highlightTrailingWhitespace(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightTrailingWhitespace")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def highlightTrailingWhitespace(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightTrailingWhitespace")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def matcherErrorMessage(hint: String, generic: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherErrorMessage")(hint.asInstanceOf[js.Any], generic.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def matcherErrorMessage(hint: String, generic: String, specific: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherErrorMessage")(hint.asInstanceOf[js.Any], generic.asInstanceOf[js.Any], specific.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def matcherErrorMessage(hint: String, generic: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherErrorMessage")(hint.asInstanceOf[js.Any], generic.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def matcherErrorMessage(hint: String, generic: String, specific: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherErrorMessage")(hint.asInstanceOf[js.Any], generic.asInstanceOf[js.Any], specific.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def matcherHint(matcherName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def matcherHint(matcherName: String, received: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def matcherHint(matcherName: String, received: String, expected: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def matcherHint(matcherName: String, received: String, expected: String, options: MatcherHintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def matcherHint(matcherName: String, received: String, expected: Unit, options: MatcherHintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def matcherHint(matcherName: String, received: Unit, expected: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def matcherHint(matcherName: String, received: Unit, expected: String, options: MatcherHintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def matcherHint(matcherName: String, received: Unit, expected: Unit, options: MatcherHintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def matcherHint(matcherName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def matcherHint(matcherName: String, received: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def matcherHint(matcherName: String, received: String, expected: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def matcherHint(matcherName: String, received: String, expected: String, options: MatcherHintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def matcherHint(matcherName: String, received: String, expected: Unit, options: MatcherHintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def matcherHint(matcherName: String, received: Unit, expected: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def matcherHint(matcherName: String, received: Unit, expected: String, options: MatcherHintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def matcherHint(matcherName: String, received: Unit, expected: Unit, options: MatcherHintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("matcherHint")(matcherName.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def pluralize(word: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pluralize")(word.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pluralize(word: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pluralize")(word.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def printDiffOrStringify(expected: js.Any, received: js.Any, expectedLabel: String, receivedLabel: String, expand: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printDiffOrStringify")(expected.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expectedLabel.asInstanceOf[js.Any], receivedLabel.asInstanceOf[js.Any], expand.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def printDiffOrStringify(expected: js.Any, received: js.Any, expectedLabel: String, receivedLabel: String, expand: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printDiffOrStringify")(expected.asInstanceOf[js.Any], received.asInstanceOf[js.Any], expectedLabel.asInstanceOf[js.Any], receivedLabel.asInstanceOf[js.Any], expand.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def printExpected(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printExpected")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def printExpected(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printExpected")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def printReceived(`object`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printReceived")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def printReceived(`object`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printReceived")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def printWithType(name: String, value: js.Any, print: js.Function1[/* value */ js.Any, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printWithType")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], print.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def printWithType(name: String, value: js.Any, print: js.Function1[/* value */ js.Any, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printWithType")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], print.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def stringify(`object`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def stringify(`object`: js.Any, maxDepth: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(`object`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(`object`: js.Any, maxDepth: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`object`.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type DiffOptions = typings.jestDiff.typesMod.DiffOptions
   
@@ -239,62 +208,44 @@ object mod {
   }
   object MatcherHintOptions {
     
-    @scala.inline
-    def apply(): MatcherHintOptions = {
+    inline def apply(): MatcherHintOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MatcherHintOptions]
     }
     
-    @scala.inline
-    implicit class MatcherHintOptionsMutableBuilder[Self <: MatcherHintOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MatcherHintOptions](x: Self) {
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setExpectedColor(value: /* arg */ String => String): Self = StObject.set(x, "expectedColor", js.Any.fromFunction1(value))
+      inline def setExpectedColor(value: /* arg */ String => String): Self = StObject.set(x, "expectedColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExpectedColorUndefined: Self = StObject.set(x, "expectedColor", js.undefined)
+      inline def setExpectedColorUndefined: Self = StObject.set(x, "expectedColor", js.undefined)
       
-      @scala.inline
-      def setIsDirectExpectCall(value: Boolean): Self = StObject.set(x, "isDirectExpectCall", value.asInstanceOf[js.Any])
+      inline def setIsDirectExpectCall(value: Boolean): Self = StObject.set(x, "isDirectExpectCall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDirectExpectCallUndefined: Self = StObject.set(x, "isDirectExpectCall", js.undefined)
+      inline def setIsDirectExpectCallUndefined: Self = StObject.set(x, "isDirectExpectCall", js.undefined)
       
-      @scala.inline
-      def setIsNot(value: Boolean): Self = StObject.set(x, "isNot", value.asInstanceOf[js.Any])
+      inline def setIsNot(value: Boolean): Self = StObject.set(x, "isNot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNotUndefined: Self = StObject.set(x, "isNot", js.undefined)
+      inline def setIsNotUndefined: Self = StObject.set(x, "isNot", js.undefined)
       
-      @scala.inline
-      def setPromise(value: String): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: String): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
       
-      @scala.inline
-      def setReceivedColor(value: /* arg */ String => String): Self = StObject.set(x, "receivedColor", js.Any.fromFunction1(value))
+      inline def setReceivedColor(value: /* arg */ String => String): Self = StObject.set(x, "receivedColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReceivedColorUndefined: Self = StObject.set(x, "receivedColor", js.undefined)
+      inline def setReceivedColorUndefined: Self = StObject.set(x, "receivedColor", js.undefined)
       
-      @scala.inline
-      def setSecondArgument(value: String): Self = StObject.set(x, "secondArgument", value.asInstanceOf[js.Any])
+      inline def setSecondArgument(value: String): Self = StObject.set(x, "secondArgument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondArgumentColor(value: /* arg */ String => String): Self = StObject.set(x, "secondArgumentColor", js.Any.fromFunction1(value))
+      inline def setSecondArgumentColor(value: /* arg */ String => String): Self = StObject.set(x, "secondArgumentColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSecondArgumentColorUndefined: Self = StObject.set(x, "secondArgumentColor", js.undefined)
+      inline def setSecondArgumentColorUndefined: Self = StObject.set(x, "secondArgumentColor", js.undefined)
       
-      @scala.inline
-      def setSecondArgumentUndefined: Self = StObject.set(x, "secondArgument", js.undefined)
+      inline def setSecondArgumentUndefined: Self = StObject.set(x, "secondArgument", js.undefined)
     }
   }
   

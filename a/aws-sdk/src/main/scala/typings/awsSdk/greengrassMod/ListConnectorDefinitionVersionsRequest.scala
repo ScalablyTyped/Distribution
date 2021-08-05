@@ -23,28 +23,21 @@ trait ListConnectorDefinitionVersionsRequest extends StObject {
 }
 object ListConnectorDefinitionVersionsRequest {
   
-  @scala.inline
-  def apply(ConnectorDefinitionId: string): ListConnectorDefinitionVersionsRequest = {
+  inline def apply(ConnectorDefinitionId: string): ListConnectorDefinitionVersionsRequest = {
     val __obj = js.Dynamic.literal(ConnectorDefinitionId = ConnectorDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListConnectorDefinitionVersionsRequest]
   }
   
-  @scala.inline
-  implicit class ListConnectorDefinitionVersionsRequestMutableBuilder[Self <: ListConnectorDefinitionVersionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListConnectorDefinitionVersionsRequest](x: Self) {
     
-    @scala.inline
-    def setConnectorDefinitionId(value: string): Self = StObject.set(x, "ConnectorDefinitionId", value.asInstanceOf[js.Any])
+    inline def setConnectorDefinitionId(value: string): Self = StObject.set(x, "ConnectorDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

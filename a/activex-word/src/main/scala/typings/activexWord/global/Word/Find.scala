@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Find")
 @js.native
-class Find[TParent] protected ()
+/* private */ class Find[TParent] ()
   extends StObject
      with typings.activexWord.Word.Find[TParent] {
   
@@ -212,7 +212,7 @@ class Find[TParent] protected ()
   /* CompleteClass */
   var Text: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Find_typekey")
   var WordDotFind_typekey: typings.activexWord.Word.Find[typings.activexWord.Word.Range | typings.activexWord.Word.Selection] = js.native
   

@@ -27,8 +27,7 @@ trait CellularApnContext extends StObject {
 }
 object CellularApnContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accessPointName: String,
     authenticationType: CellularApnAuthenticationType,
     isCompressionEnabled: Boolean,
@@ -40,25 +39,18 @@ object CellularApnContext {
     __obj.asInstanceOf[CellularApnContext]
   }
   
-  @scala.inline
-  implicit class CellularApnContextMutableBuilder[Self <: CellularApnContext] (val x: Self) extends AnyVal {
+  extension [Self <: CellularApnContext](x: Self) {
     
-    @scala.inline
-    def setAccessPointName(value: String): Self = StObject.set(x, "accessPointName", value.asInstanceOf[js.Any])
+    inline def setAccessPointName(value: String): Self = StObject.set(x, "accessPointName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationType(value: CellularApnAuthenticationType): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
+    inline def setAuthenticationType(value: CellularApnAuthenticationType): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCompressionEnabled(value: Boolean): Self = StObject.set(x, "isCompressionEnabled", value.asInstanceOf[js.Any])
+    inline def setIsCompressionEnabled(value: Boolean): Self = StObject.set(x, "isCompressionEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
   }
 }

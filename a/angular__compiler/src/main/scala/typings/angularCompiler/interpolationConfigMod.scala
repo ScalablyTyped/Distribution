@@ -26,9 +26,7 @@ object interpolationConfigMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromArray(): InterpolationConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")().asInstanceOf[InterpolationConfig]
-    @scala.inline
-    def fromArray(markers: js.Tuple2[String, String]): InterpolationConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(markers.asInstanceOf[js.Any]).asInstanceOf[InterpolationConfig]
+    inline def fromArray(): InterpolationConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")().asInstanceOf[InterpolationConfig]
+    inline def fromArray(markers: js.Tuple2[String, String]): InterpolationConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(markers.asInstanceOf[js.Any]).asInstanceOf[InterpolationConfig]
   }
 }

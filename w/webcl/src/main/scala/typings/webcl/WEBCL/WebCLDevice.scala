@@ -15,8 +15,7 @@ trait WebCLDevice extends StObject {
 }
 object WebCLDevice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enableExtension: String => Boolean,
     getInfo: DeviceInfo => js.Any,
     getSupportedExtensions: () => js.Array[String]
@@ -25,16 +24,12 @@ object WebCLDevice {
     __obj.asInstanceOf[WebCLDevice]
   }
   
-  @scala.inline
-  implicit class WebCLDeviceMutableBuilder[Self <: WebCLDevice] (val x: Self) extends AnyVal {
+  extension [Self <: WebCLDevice](x: Self) {
     
-    @scala.inline
-    def setEnableExtension(value: String => Boolean): Self = StObject.set(x, "enableExtension", js.Any.fromFunction1(value))
+    inline def setEnableExtension(value: String => Boolean): Self = StObject.set(x, "enableExtension", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetInfo(value: DeviceInfo => js.Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
+    inline def setGetInfo(value: DeviceInfo => js.Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSupportedExtensions(value: () => js.Array[String]): Self = StObject.set(x, "getSupportedExtensions", js.Any.fromFunction0(value))
+    inline def setGetSupportedExtensions(value: () => js.Array[String]): Self = StObject.set(x, "getSupportedExtensions", js.Any.fromFunction0(value))
   }
 }

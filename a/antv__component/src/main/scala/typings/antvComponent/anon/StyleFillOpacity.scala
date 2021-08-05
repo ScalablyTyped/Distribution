@@ -10,16 +10,13 @@ trait StyleFillOpacity extends StObject {
 }
 object StyleFillOpacity {
   
-  @scala.inline
-  def apply(style: FillOpacity): StyleFillOpacity = {
+  inline def apply(style: FillOpacity): StyleFillOpacity = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleFillOpacity]
   }
   
-  @scala.inline
-  implicit class StyleFillOpacityMutableBuilder[Self <: StyleFillOpacity] (val x: Self) extends AnyVal {
+  extension [Self <: StyleFillOpacity](x: Self) {
     
-    @scala.inline
-    def setStyle(value: FillOpacity): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: FillOpacity): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

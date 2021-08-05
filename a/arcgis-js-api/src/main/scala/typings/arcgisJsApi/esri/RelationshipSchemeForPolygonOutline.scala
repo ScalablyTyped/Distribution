@@ -26,8 +26,7 @@ trait RelationshipSchemeForPolygonOutline
 }
 object RelationshipSchemeForPolygonOutline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object RelationshipSchemeForPolygonOutline {
     __obj.asInstanceOf[RelationshipSchemeForPolygonOutline]
   }
   
-  @scala.inline
-  implicit class RelationshipSchemeForPolygonOutlineMutableBuilder[Self <: RelationshipSchemeForPolygonOutline] (val x: Self) extends AnyVal {
+  extension [Self <: RelationshipSchemeForPolygonOutline](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

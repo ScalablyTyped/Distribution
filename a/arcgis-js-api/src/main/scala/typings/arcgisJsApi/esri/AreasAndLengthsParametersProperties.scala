@@ -54,42 +54,31 @@ trait AreasAndLengthsParametersProperties extends StObject {
 }
 object AreasAndLengthsParametersProperties {
   
-  @scala.inline
-  def apply(): AreasAndLengthsParametersProperties = {
+  inline def apply(): AreasAndLengthsParametersProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AreasAndLengthsParametersProperties]
   }
   
-  @scala.inline
-  implicit class AreasAndLengthsParametersPropertiesMutableBuilder[Self <: AreasAndLengthsParametersProperties] (val x: Self) extends AnyVal {
+  extension [Self <: AreasAndLengthsParametersProperties](x: Self) {
     
-    @scala.inline
-    def setAreaUnit(
+    inline def setAreaUnit(
       value: acres | hectares | `square-miles` | `square-kilometers` | `square-meters` | `square-feet` | `square-yards`
     ): Self = StObject.set(x, "areaUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaUnitUndefined: Self = StObject.set(x, "areaUnit", js.undefined)
+    inline def setAreaUnitUndefined: Self = StObject.set(x, "areaUnit", js.undefined)
     
-    @scala.inline
-    def setCalculationType(value: planar | geodesic | `preserve-shape`): Self = StObject.set(x, "calculationType", value.asInstanceOf[js.Any])
+    inline def setCalculationType(value: planar | geodesic | `preserve-shape`): Self = StObject.set(x, "calculationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculationTypeUndefined: Self = StObject.set(x, "calculationType", js.undefined)
+    inline def setCalculationTypeUndefined: Self = StObject.set(x, "calculationType", js.undefined)
     
-    @scala.inline
-    def setLengthUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "lengthUnit", value.asInstanceOf[js.Any])
+    inline def setLengthUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "lengthUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUnitUndefined: Self = StObject.set(x, "lengthUnit", js.undefined)
+    inline def setLengthUnitUndefined: Self = StObject.set(x, "lengthUnit", js.undefined)
     
-    @scala.inline
-    def setPolygons(value: js.Array[PolygonProperties]): Self = StObject.set(x, "polygons", value.asInstanceOf[js.Any])
+    inline def setPolygons(value: js.Array[PolygonProperties]): Self = StObject.set(x, "polygons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonsUndefined: Self = StObject.set(x, "polygons", js.undefined)
+    inline def setPolygonsUndefined: Self = StObject.set(x, "polygons", js.undefined)
     
-    @scala.inline
-    def setPolygonsVarargs(value: PolygonProperties*): Self = StObject.set(x, "polygons", js.Array(value :_*))
+    inline def setPolygonsVarargs(value: PolygonProperties*): Self = StObject.set(x, "polygons", js.Array(value :_*))
   }
 }

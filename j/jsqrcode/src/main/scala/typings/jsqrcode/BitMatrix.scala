@@ -20,7 +20,7 @@ trait BitMatrix extends StObject {
   
   def get_Renamed(x: Double, y: Double): Boolean
   
-  var height: Double
+  /* private */ var height: Double
   
   var rowSize: Double
   
@@ -28,12 +28,11 @@ trait BitMatrix extends StObject {
   
   def set_Renamed(x: Double, y: Double): Unit
   
-  var width: Double
+  /* private */ var width: Double
 }
 object BitMatrix {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Dimension: Double,
     Height: Double,
     Width: Double,
@@ -51,40 +50,28 @@ object BitMatrix {
     __obj.asInstanceOf[BitMatrix]
   }
   
-  @scala.inline
-  implicit class BitMatrixMutableBuilder[Self <: BitMatrix] (val x: Self) extends AnyVal {
+  extension [Self <: BitMatrix](x: Self) {
     
-    @scala.inline
-    def setBits(value: js.Array[Double]): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
+    inline def setBits(value: js.Array[Double]): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitsVarargs(value: Double*): Self = StObject.set(x, "bits", js.Array(value :_*))
+    inline def setBitsVarargs(value: Double*): Self = StObject.set(x, "bits", js.Array(value :_*))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDimension(value: Double): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: Double): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlip(value: (Double, Double) => Unit): Self = StObject.set(x, "flip", js.Any.fromFunction2(value))
+    inline def setFlip(value: (Double, Double) => Unit): Self = StObject.set(x, "flip", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGet_Renamed(value: (Double, Double) => Boolean): Self = StObject.set(x, "get_Renamed", js.Any.fromFunction2(value))
+    inline def setGet_Renamed(value: (Double, Double) => Boolean): Self = StObject.set(x, "get_Renamed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSize(value: Double): Self = StObject.set(x, "rowSize", value.asInstanceOf[js.Any])
+    inline def setRowSize(value: Double): Self = StObject.set(x, "rowSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetRegion(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setRegion", js.Any.fromFunction4(value))
+    inline def setSetRegion(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setRegion", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSet_Renamed(value: (Double, Double) => Unit): Self = StObject.set(x, "set_Renamed", js.Any.fromFunction2(value))
+    inline def setSet_Renamed(value: (Double, Double) => Unit): Self = StObject.set(x, "set_Renamed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

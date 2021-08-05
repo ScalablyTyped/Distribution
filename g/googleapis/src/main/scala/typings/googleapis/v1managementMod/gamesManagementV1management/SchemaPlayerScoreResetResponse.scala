@@ -30,34 +30,25 @@ trait SchemaPlayerScoreResetResponse extends StObject {
 }
 object SchemaPlayerScoreResetResponse {
   
-  @scala.inline
-  def apply(): SchemaPlayerScoreResetResponse = {
+  inline def apply(): SchemaPlayerScoreResetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPlayerScoreResetResponse]
   }
   
-  @scala.inline
-  implicit class SchemaPlayerScoreResetResponseMutableBuilder[Self <: SchemaPlayerScoreResetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPlayerScoreResetResponse](x: Self) {
     
-    @scala.inline
-    def setDefinitionId(value: String): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
+    inline def setDefinitionId(value: String): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionIdUndefined: Self = StObject.set(x, "definitionId", js.undefined)
+    inline def setDefinitionIdUndefined: Self = StObject.set(x, "definitionId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setResetScoreTimeSpans(value: js.Array[String]): Self = StObject.set(x, "resetScoreTimeSpans", value.asInstanceOf[js.Any])
+    inline def setResetScoreTimeSpans(value: js.Array[String]): Self = StObject.set(x, "resetScoreTimeSpans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetScoreTimeSpansUndefined: Self = StObject.set(x, "resetScoreTimeSpans", js.undefined)
+    inline def setResetScoreTimeSpansUndefined: Self = StObject.set(x, "resetScoreTimeSpans", js.undefined)
     
-    @scala.inline
-    def setResetScoreTimeSpansVarargs(value: String*): Self = StObject.set(x, "resetScoreTimeSpans", js.Array(value :_*))
+    inline def setResetScoreTimeSpansVarargs(value: String*): Self = StObject.set(x, "resetScoreTimeSpans", js.Array(value :_*))
   }
 }

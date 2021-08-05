@@ -18,25 +18,19 @@ trait ListAlgorithmsOutput extends StObject {
 }
 object ListAlgorithmsOutput {
   
-  @scala.inline
-  def apply(AlgorithmSummaryList: AlgorithmSummaryList): ListAlgorithmsOutput = {
+  inline def apply(AlgorithmSummaryList: AlgorithmSummaryList): ListAlgorithmsOutput = {
     val __obj = js.Dynamic.literal(AlgorithmSummaryList = AlgorithmSummaryList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAlgorithmsOutput]
   }
   
-  @scala.inline
-  implicit class ListAlgorithmsOutputMutableBuilder[Self <: ListAlgorithmsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListAlgorithmsOutput](x: Self) {
     
-    @scala.inline
-    def setAlgorithmSummaryList(value: AlgorithmSummaryList): Self = StObject.set(x, "AlgorithmSummaryList", value.asInstanceOf[js.Any])
+    inline def setAlgorithmSummaryList(value: AlgorithmSummaryList): Self = StObject.set(x, "AlgorithmSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmSummaryListVarargs(value: AlgorithmSummary*): Self = StObject.set(x, "AlgorithmSummaryList", js.Array(value :_*))
+    inline def setAlgorithmSummaryListVarargs(value: AlgorithmSummary*): Self = StObject.set(x, "AlgorithmSummaryList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait Alternative extends StObject {
 }
 object Alternative {
   
-  @scala.inline
-  def apply(): Alternative = {
+  inline def apply(): Alternative = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Alternative]
   }
   
-  @scala.inline
-  implicit class AlternativeMutableBuilder[Self <: Alternative] (val x: Self) extends AnyVal {
+  extension [Self <: Alternative](x: Self) {
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
   }
 }

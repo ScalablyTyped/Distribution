@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.DiagramNodes")
 @js.native
-class DiagramNodes protected ()
+/* private */ class DiagramNodes ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.DiagramNodes {
   
@@ -25,7 +25,7 @@ class DiagramNodes protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.DiagramNodes_typekey")
   var PowerPointDotDiagramNodes_typekey: typings.activexPowerpoint.PowerPoint.DiagramNodes = js.native
   

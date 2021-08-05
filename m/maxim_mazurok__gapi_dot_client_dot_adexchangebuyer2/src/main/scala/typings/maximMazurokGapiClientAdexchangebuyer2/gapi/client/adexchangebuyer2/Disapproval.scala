@@ -14,28 +14,21 @@ trait Disapproval extends StObject {
 }
 object Disapproval {
   
-  @scala.inline
-  def apply(): Disapproval = {
+  inline def apply(): Disapproval = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Disapproval]
   }
   
-  @scala.inline
-  implicit class DisapprovalMutableBuilder[Self <: Disapproval] (val x: Self) extends AnyVal {
+  extension [Self <: Disapproval](x: Self) {
     
-    @scala.inline
-    def setDetails(value: js.Array[String]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: js.Array[String]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setDetailsVarargs(value: String*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: String*): Self = StObject.set(x, "details", js.Array(value :_*))
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

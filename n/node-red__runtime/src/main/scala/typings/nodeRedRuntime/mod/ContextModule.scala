@@ -31,19 +31,15 @@ trait ContextModule extends StObject {
 }
 object ContextModule {
   
-  @scala.inline
-  def apply(delete: Id => js.Promise[Unit], getValue: Id => js.Promise[js.Object]): ContextModule = {
+  inline def apply(delete: Id => js.Promise[Unit], getValue: Id => js.Promise[js.Object]): ContextModule = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), getValue = js.Any.fromFunction1(getValue))
     __obj.asInstanceOf[ContextModule]
   }
   
-  @scala.inline
-  implicit class ContextModuleMutableBuilder[Self <: ContextModule] (val x: Self) extends AnyVal {
+  extension [Self <: ContextModule](x: Self) {
     
-    @scala.inline
-    def setDelete(value: Id => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: Id => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetValue(value: Id => js.Promise[js.Object]): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+    inline def setGetValue(value: Id => js.Promise[js.Object]): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
   }
 }

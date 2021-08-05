@@ -24,19 +24,15 @@ trait IExecuteResult
 }
 object IExecuteResult {
   
-  @scala.inline
-  def apply(data: StringDictionary[js.Any], execution_count: Double): IExecuteResult = {
+  inline def apply(data: StringDictionary[js.Any], execution_count: Double): IExecuteResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], execution_count = execution_count.asInstanceOf[js.Any], output_type = "execute_result")
     __obj.asInstanceOf[IExecuteResult]
   }
   
-  @scala.inline
-  implicit class IExecuteResultMutableBuilder[Self <: IExecuteResult] (val x: Self) extends AnyVal {
+  extension [Self <: IExecuteResult](x: Self) {
     
-    @scala.inline
-    def setExecution_count(value: Double): Self = StObject.set(x, "execution_count", value.asInstanceOf[js.Any])
+    inline def setExecution_count(value: Double): Self = StObject.set(x, "execution_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput_type(value: execute_result): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
+    inline def setOutput_type(value: execute_result): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
   }
 }

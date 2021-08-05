@@ -14,28 +14,21 @@ trait GoogleCloudDialogflowV2SearchAgentsResponse extends StObject {
 }
 object GoogleCloudDialogflowV2SearchAgentsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2SearchAgentsResponse = {
+  inline def apply(): GoogleCloudDialogflowV2SearchAgentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2SearchAgentsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2SearchAgentsResponseMutableBuilder[Self <: GoogleCloudDialogflowV2SearchAgentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2SearchAgentsResponse](x: Self) {
     
-    @scala.inline
-    def setAgents(value: js.Array[GoogleCloudDialogflowV2Agent]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
+    inline def setAgents(value: js.Array[GoogleCloudDialogflowV2Agent]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentsUndefined: Self = StObject.set(x, "agents", js.undefined)
+    inline def setAgentsUndefined: Self = StObject.set(x, "agents", js.undefined)
     
-    @scala.inline
-    def setAgentsVarargs(value: GoogleCloudDialogflowV2Agent*): Self = StObject.set(x, "agents", js.Array(value :_*))
+    inline def setAgentsVarargs(value: GoogleCloudDialogflowV2Agent*): Self = StObject.set(x, "agents", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

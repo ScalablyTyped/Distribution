@@ -85,23 +85,18 @@ object mod {
   }
   object AuthorizerConfiguration {
     
-    @scala.inline
-    def apply(jwkKeyListUrl: String): AuthorizerConfiguration = {
+    inline def apply(jwkKeyListUrl: String): AuthorizerConfiguration = {
       val __obj = js.Dynamic.literal(jwkKeyListUrl = jwkKeyListUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthorizerConfiguration]
     }
     
-    @scala.inline
-    implicit class AuthorizerConfigurationMutableBuilder[Self <: AuthorizerConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorizerConfiguration](x: Self) {
       
-      @scala.inline
-      def setAuthorizerContextResolver(value: String): Self = StObject.set(x, "authorizerContextResolver", value.asInstanceOf[js.Any])
+      inline def setAuthorizerContextResolver(value: String): Self = StObject.set(x, "authorizerContextResolver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizerContextResolverUndefined: Self = StObject.set(x, "authorizerContextResolver", js.undefined)
+      inline def setAuthorizerContextResolverUndefined: Self = StObject.set(x, "authorizerContextResolver", js.undefined)
       
-      @scala.inline
-      def setJwkKeyListUrl(value: String): Self = StObject.set(x, "jwkKeyListUrl", value.asInstanceOf[js.Any])
+      inline def setJwkKeyListUrl(value: String): Self = StObject.set(x, "jwkKeyListUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,20 +108,16 @@ object mod {
   }
   object AuthorizerPolicy {
     
-    @scala.inline
-    def apply(policyDocument: js.Object, principalId: String): AuthorizerPolicy = {
+    inline def apply(policyDocument: js.Object, principalId: String): AuthorizerPolicy = {
       val __obj = js.Dynamic.literal(policyDocument = policyDocument.asInstanceOf[js.Any], principalId = principalId.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthorizerPolicy]
     }
     
-    @scala.inline
-    implicit class AuthorizerPolicyMutableBuilder[Self <: AuthorizerPolicy] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorizerPolicy](x: Self) {
       
-      @scala.inline
-      def setPolicyDocument(value: js.Object): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
+      inline def setPolicyDocument(value: js.Object): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
+      inline def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -136,17 +127,14 @@ object mod {
   }
   object PlatformClientConfiguration {
     
-    @scala.inline
-    def apply(client: js.Object): PlatformClientConfiguration = {
+    inline def apply(client: js.Object): PlatformClientConfiguration = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlatformClientConfiguration]
     }
     
-    @scala.inline
-    implicit class PlatformClientConfigurationMutableBuilder[Self <: PlatformClientConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: PlatformClientConfiguration](x: Self) {
       
-      @scala.inline
-      def setClient(value: js.Object): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: js.Object): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,38 +154,28 @@ object mod {
   }
   object PlatformClientResponse {
     
-    @scala.inline
-    def apply[T](config: js.Object, headers: js.Any, status: Double, statusText: String): PlatformClientResponse[T] = {
+    inline def apply[T](config: js.Object, headers: js.Any, status: Double, statusText: String): PlatformClientResponse[T] = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlatformClientResponse[T]]
     }
     
-    @scala.inline
-    implicit class PlatformClientResponseMutableBuilder[Self <: PlatformClientResponse[?], T] (val x: Self & PlatformClientResponse[T]) extends AnyVal {
+    extension [Self <: PlatformClientResponse[?], T](x: Self & PlatformClientResponse[T]) {
       
-      @scala.inline
-      def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,32 +189,24 @@ object mod {
   }
   object RequestLoggerConfiguration {
     
-    @scala.inline
-    def apply(): RequestLoggerConfiguration = {
+    inline def apply(): RequestLoggerConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestLoggerConfiguration]
     }
     
-    @scala.inline
-    implicit class RequestLoggerConfigurationMutableBuilder[Self <: RequestLoggerConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: RequestLoggerConfiguration](x: Self) {
       
-      @scala.inline
-      def setExtendErrorObjects(value: Boolean): Self = StObject.set(x, "extendErrorObjects", value.asInstanceOf[js.Any])
+      inline def setExtendErrorObjects(value: Boolean): Self = StObject.set(x, "extendErrorObjects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendErrorObjectsUndefined: Self = StObject.set(x, "extendErrorObjects", js.undefined)
+      inline def setExtendErrorObjectsUndefined: Self = StObject.set(x, "extendErrorObjects", js.undefined)
       
-      @scala.inline
-      def setJsonSpace(value: Double): Self = StObject.set(x, "jsonSpace", value.asInstanceOf[js.Any])
+      inline def setJsonSpace(value: Double): Self = StObject.set(x, "jsonSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonSpaceUndefined: Self = StObject.set(x, "jsonSpace", js.undefined)
+      inline def setJsonSpaceUndefined: Self = StObject.set(x, "jsonSpace", js.undefined)
       
-      @scala.inline
-      def setLogFunction(value: /* msg */ js.Any => Unit): Self = StObject.set(x, "logFunction", js.Any.fromFunction1(value))
+      inline def setLogFunction(value: /* msg */ js.Any => Unit): Self = StObject.set(x, "logFunction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogFunctionUndefined: Self = StObject.set(x, "logFunction", js.undefined)
+      inline def setLogFunctionUndefined: Self = StObject.set(x, "logFunction", js.undefined)
     }
   }
   
@@ -252,26 +222,20 @@ object mod {
   }
   object ServiceTokenProviderConfiguration {
     
-    @scala.inline
-    def apply(audience: String, clientId: String, encryptedClientSecret: String, tokenEndpoint: String): ServiceTokenProviderConfiguration = {
+    inline def apply(audience: String, clientId: String, encryptedClientSecret: String, tokenEndpoint: String): ServiceTokenProviderConfiguration = {
       val __obj = js.Dynamic.literal(audience = audience.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], encryptedClientSecret = encryptedClientSecret.asInstanceOf[js.Any], tokenEndpoint = tokenEndpoint.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceTokenProviderConfiguration]
     }
     
-    @scala.inline
-    implicit class ServiceTokenProviderConfigurationMutableBuilder[Self <: ServiceTokenProviderConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceTokenProviderConfiguration](x: Self) {
       
-      @scala.inline
-      def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptedClientSecret(value: String): Self = StObject.set(x, "encryptedClientSecret", value.asInstanceOf[js.Any])
+      inline def setEncryptedClientSecret(value: String): Self = StObject.set(x, "encryptedClientSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenEndpoint(value: String): Self = StObject.set(x, "tokenEndpoint", value.asInstanceOf[js.Any])
+      inline def setTokenEndpoint(value: String): Self = StObject.set(x, "tokenEndpoint", value.asInstanceOf[js.Any])
     }
   }
 }

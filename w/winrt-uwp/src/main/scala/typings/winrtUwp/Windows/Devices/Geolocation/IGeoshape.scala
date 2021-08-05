@@ -18,8 +18,7 @@ trait IGeoshape extends StObject {
 }
 object IGeoshape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     altitudeReferenceSystem: AltitudeReferenceSystem,
     geoshapeType: GeoshapeType,
     spatialReferenceId: Double
@@ -28,16 +27,12 @@ object IGeoshape {
     __obj.asInstanceOf[IGeoshape]
   }
   
-  @scala.inline
-  implicit class IGeoshapeMutableBuilder[Self <: IGeoshape] (val x: Self) extends AnyVal {
+  extension [Self <: IGeoshape](x: Self) {
     
-    @scala.inline
-    def setAltitudeReferenceSystem(value: AltitudeReferenceSystem): Self = StObject.set(x, "altitudeReferenceSystem", value.asInstanceOf[js.Any])
+    inline def setAltitudeReferenceSystem(value: AltitudeReferenceSystem): Self = StObject.set(x, "altitudeReferenceSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoshapeType(value: GeoshapeType): Self = StObject.set(x, "geoshapeType", value.asInstanceOf[js.Any])
+    inline def setGeoshapeType(value: GeoshapeType): Self = StObject.set(x, "geoshapeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceId(value: Double): Self = StObject.set(x, "spatialReferenceId", value.asInstanceOf[js.Any])
+    inline def setSpatialReferenceId(value: Double): Self = StObject.set(x, "spatialReferenceId", value.asInstanceOf[js.Any])
   }
 }

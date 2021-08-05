@@ -10,16 +10,13 @@ trait EnumValuesDirect extends StObject {
 }
 object EnumValuesDirect {
   
-  @scala.inline
-  def apply(enumValues: Direct): EnumValuesDirect = {
+  inline def apply(enumValues: Direct): EnumValuesDirect = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesDirect]
   }
   
-  @scala.inline
-  implicit class EnumValuesDirectMutableBuilder[Self <: EnumValuesDirect] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesDirect](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Direct): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Direct): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

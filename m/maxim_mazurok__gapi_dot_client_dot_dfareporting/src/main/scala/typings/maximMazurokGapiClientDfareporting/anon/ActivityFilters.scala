@@ -36,67 +36,47 @@ trait ActivityFilters extends StObject {
 }
 object ActivityFilters {
   
-  @scala.inline
-  def apply(): ActivityFilters = {
+  inline def apply(): ActivityFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActivityFilters]
   }
   
-  @scala.inline
-  implicit class ActivityFiltersMutableBuilder[Self <: ActivityFilters] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityFilters](x: Self) {
     
-    @scala.inline
-    def setActivityFilters(value: js.Array[DimensionValue]): Self = StObject.set(x, "activityFilters", value.asInstanceOf[js.Any])
+    inline def setActivityFilters(value: js.Array[DimensionValue]): Self = StObject.set(x, "activityFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityFiltersUndefined: Self = StObject.set(x, "activityFilters", js.undefined)
+    inline def setActivityFiltersUndefined: Self = StObject.set(x, "activityFilters", js.undefined)
     
-    @scala.inline
-    def setActivityFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "activityFilters", js.Array(value :_*))
+    inline def setActivityFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "activityFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setCustomChannelGrouping(value: ChannelGrouping): Self = StObject.set(x, "customChannelGrouping", value.asInstanceOf[js.Any])
+    inline def setCustomChannelGrouping(value: ChannelGrouping): Self = StObject.set(x, "customChannelGrouping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomChannelGroupingUndefined: Self = StObject.set(x, "customChannelGrouping", js.undefined)
+    inline def setCustomChannelGroupingUndefined: Self = StObject.set(x, "customChannelGrouping", js.undefined)
     
-    @scala.inline
-    def setDateRange(value: typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
+    inline def setDateRange(value: typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
+    inline def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
     
-    @scala.inline
-    def setDimensions(value: js.Array[SortedDimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: js.Array[SortedDimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setFloodlightConfigId(value: DimensionValue): Self = StObject.set(x, "floodlightConfigId", value.asInstanceOf[js.Any])
+    inline def setFloodlightConfigId(value: DimensionValue): Self = StObject.set(x, "floodlightConfigId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightConfigIdUndefined: Self = StObject.set(x, "floodlightConfigId", js.undefined)
+    inline def setFloodlightConfigIdUndefined: Self = StObject.set(x, "floodlightConfigId", js.undefined)
     
-    @scala.inline
-    def setMetricNames(value: js.Array[String]): Self = StObject.set(x, "metricNames", value.asInstanceOf[js.Any])
+    inline def setMetricNames(value: js.Array[String]): Self = StObject.set(x, "metricNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
+    inline def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
     
-    @scala.inline
-    def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
     
-    @scala.inline
-    def setPathFilters(value: js.Array[PathFilter]): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
+    inline def setPathFilters(value: js.Array[PathFilter]): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathFiltersUndefined: Self = StObject.set(x, "pathFilters", js.undefined)
+    inline def setPathFiltersUndefined: Self = StObject.set(x, "pathFilters", js.undefined)
     
-    @scala.inline
-    def setPathFiltersVarargs(value: PathFilter*): Self = StObject.set(x, "pathFilters", js.Array(value :_*))
+    inline def setPathFiltersVarargs(value: PathFilter*): Self = StObject.set(x, "pathFilters", js.Array(value :_*))
   }
 }

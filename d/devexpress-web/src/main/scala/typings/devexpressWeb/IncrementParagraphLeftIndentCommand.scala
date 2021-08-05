@@ -23,19 +23,15 @@ trait IncrementParagraphLeftIndentCommand
 }
 object IncrementParagraphLeftIndentCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): IncrementParagraphLeftIndentCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): IncrementParagraphLeftIndentCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[IncrementParagraphLeftIndentCommand]
   }
   
-  @scala.inline
-  implicit class IncrementParagraphLeftIndentCommandMutableBuilder[Self <: IncrementParagraphLeftIndentCommand] (val x: Self) extends AnyVal {
+  extension [Self <: IncrementParagraphLeftIndentCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetState(value: () => SimpleCommandState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => SimpleCommandState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

@@ -23,8 +23,7 @@ trait ResizableUIParams extends StObject {
 }
 object ResizableUIParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     element: JQuery,
     helper: JQuery,
     originalElement: JQuery,
@@ -37,28 +36,20 @@ object ResizableUIParams {
     __obj.asInstanceOf[ResizableUIParams]
   }
   
-  @scala.inline
-  implicit class ResizableUIParamsMutableBuilder[Self <: ResizableUIParams] (val x: Self) extends AnyVal {
+  extension [Self <: ResizableUIParams](x: Self) {
     
-    @scala.inline
-    def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelper(value: JQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+    inline def setHelper(value: JQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalElement(value: JQuery): Self = StObject.set(x, "originalElement", value.asInstanceOf[js.Any])
+    inline def setOriginalElement(value: JQuery): Self = StObject.set(x, "originalElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalPosition(value: js.Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
+    inline def setOriginalPosition(value: js.Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalSize(value: js.Any): Self = StObject.set(x, "originalSize", value.asInstanceOf[js.Any])
+    inline def setOriginalSize(value: js.Any): Self = StObject.set(x, "originalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

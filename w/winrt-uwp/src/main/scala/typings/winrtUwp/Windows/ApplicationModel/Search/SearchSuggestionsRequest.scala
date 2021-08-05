@@ -21,8 +21,7 @@ trait SearchSuggestionsRequest extends StObject {
 }
 object SearchSuggestionsRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDeferral: () => SearchSuggestionsRequestDeferral,
     isCanceled: Boolean,
     searchSuggestionCollection: SearchSuggestionCollection
@@ -31,16 +30,12 @@ object SearchSuggestionsRequest {
     __obj.asInstanceOf[SearchSuggestionsRequest]
   }
   
-  @scala.inline
-  implicit class SearchSuggestionsRequestMutableBuilder[Self <: SearchSuggestionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SearchSuggestionsRequest](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => SearchSuggestionsRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => SearchSuggestionsRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
+    inline def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchSuggestionCollection(value: SearchSuggestionCollection): Self = StObject.set(x, "searchSuggestionCollection", value.asInstanceOf[js.Any])
+    inline def setSearchSuggestionCollection(value: SearchSuggestionCollection): Self = StObject.set(x, "searchSuggestionCollection", value.asInstanceOf[js.Any])
   }
 }

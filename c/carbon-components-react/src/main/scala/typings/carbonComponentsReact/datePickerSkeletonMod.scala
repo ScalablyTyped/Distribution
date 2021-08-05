@@ -22,20 +22,16 @@ object datePickerSkeletonMod extends Shortcut {
   }
   object DatePickerSkeletonProps {
     
-    @scala.inline
-    def apply(): DatePickerSkeletonProps = {
+    inline def apply(): DatePickerSkeletonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DatePickerSkeletonProps]
     }
     
-    @scala.inline
-    implicit class DatePickerSkeletonPropsMutableBuilder[Self <: DatePickerSkeletonProps] (val x: Self) extends AnyVal {
+    extension [Self <: DatePickerSkeletonProps](x: Self) {
       
-      @scala.inline
-      def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     }
   }
   

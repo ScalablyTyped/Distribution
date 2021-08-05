@@ -23,22 +23,17 @@ trait GlobalPowerLevel extends StObject {
 }
 object GlobalPowerLevel {
   
-  @scala.inline
-  def apply(level: Double, progress: Double, progressTotal: Double): GlobalPowerLevel = {
+  inline def apply(level: Double, progress: Double, progressTotal: Double): GlobalPowerLevel = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], progressTotal = progressTotal.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalPowerLevel]
   }
   
-  @scala.inline
-  implicit class GlobalPowerLevelMutableBuilder[Self <: GlobalPowerLevel] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalPowerLevel](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressTotal(value: Double): Self = StObject.set(x, "progressTotal", value.asInstanceOf[js.Any])
+    inline def setProgressTotal(value: Double): Self = StObject.set(x, "progressTotal", value.asInstanceOf[js.Any])
   }
 }

@@ -23,19 +23,15 @@ trait IEntityEquippedArmorEventData extends StObject {
 }
 object IEntityEquippedArmorEventData {
   
-  @scala.inline
-  def apply(entity: IEntity, item_stack: IItemStack): IEntityEquippedArmorEventData = {
+  inline def apply(entity: IEntity, item_stack: IItemStack): IEntityEquippedArmorEventData = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], item_stack = item_stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntityEquippedArmorEventData]
   }
   
-  @scala.inline
-  implicit class IEntityEquippedArmorEventDataMutableBuilder[Self <: IEntityEquippedArmorEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IEntityEquippedArmorEventData](x: Self) {
     
-    @scala.inline
-    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_stack(value: IItemStack): Self = StObject.set(x, "item_stack", value.asInstanceOf[js.Any])
+    inline def setItem_stack(value: IItemStack): Self = StObject.set(x, "item_stack", value.asInstanceOf[js.Any])
   }
 }

@@ -11,25 +11,19 @@ trait ForwardedRef extends StObject {
 }
 object ForwardedRef {
   
-  @scala.inline
-  def apply(): ForwardedRef = {
+  inline def apply(): ForwardedRef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ForwardedRef]
   }
   
-  @scala.inline
-  implicit class ForwardedRefMutableBuilder[Self <: ForwardedRef] (val x: Self) extends AnyVal {
+  extension [Self <: ForwardedRef](x: Self) {
     
-    @scala.inline
-    def setForwardedRef(value: Ref[js.Any]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
+    inline def setForwardedRef(value: Ref[js.Any]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardedRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "forwardedRef", js.Any.fromFunction1(value))
+    inline def setForwardedRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "forwardedRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForwardedRefNull: Self = StObject.set(x, "forwardedRef", null)
+    inline def setForwardedRefNull: Self = StObject.set(x, "forwardedRef", null)
     
-    @scala.inline
-    def setForwardedRefUndefined: Self = StObject.set(x, "forwardedRef", js.undefined)
+    inline def setForwardedRefUndefined: Self = StObject.set(x, "forwardedRef", js.undefined)
   }
 }

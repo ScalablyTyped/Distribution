@@ -11,16 +11,13 @@ trait PickImplcontainExactly extends StObject {
 }
 object PickImplcontainExactly {
   
-  @scala.inline
-  def apply(containExactly: String): PickImplcontainExactly = {
+  inline def apply(containExactly: String): PickImplcontainExactly = {
     val __obj = js.Dynamic.literal(containExactly = containExactly.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcontainExactly]
   }
   
-  @scala.inline
-  implicit class PickImplcontainExactlyMutableBuilder[Self <: PickImplcontainExactly] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplcontainExactly](x: Self) {
     
-    @scala.inline
-    def setContainExactly(value: String): Self = StObject.set(x, "containExactly", value.asInstanceOf[js.Any])
+    inline def setContainExactly(value: String): Self = StObject.set(x, "containExactly", value.asInstanceOf[js.Any])
   }
 }

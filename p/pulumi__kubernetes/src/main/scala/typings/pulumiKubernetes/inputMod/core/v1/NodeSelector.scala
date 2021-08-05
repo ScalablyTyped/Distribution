@@ -17,19 +17,15 @@ trait NodeSelector extends StObject {
 }
 object NodeSelector {
   
-  @scala.inline
-  def apply(nodeSelectorTerms: Input[js.Array[Input[NodeSelectorTerm]]]): NodeSelector = {
+  inline def apply(nodeSelectorTerms: Input[js.Array[Input[NodeSelectorTerm]]]): NodeSelector = {
     val __obj = js.Dynamic.literal(nodeSelectorTerms = nodeSelectorTerms.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeSelector]
   }
   
-  @scala.inline
-  implicit class NodeSelectorMutableBuilder[Self <: NodeSelector] (val x: Self) extends AnyVal {
+  extension [Self <: NodeSelector](x: Self) {
     
-    @scala.inline
-    def setNodeSelectorTerms(value: Input[js.Array[Input[NodeSelectorTerm]]]): Self = StObject.set(x, "nodeSelectorTerms", value.asInstanceOf[js.Any])
+    inline def setNodeSelectorTerms(value: Input[js.Array[Input[NodeSelectorTerm]]]): Self = StObject.set(x, "nodeSelectorTerms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeSelectorTermsVarargs(value: Input[NodeSelectorTerm]*): Self = StObject.set(x, "nodeSelectorTerms", js.Array(value :_*))
+    inline def setNodeSelectorTermsVarargs(value: Input[NodeSelectorTerm]*): Self = StObject.set(x, "nodeSelectorTerms", js.Array(value :_*))
   }
 }

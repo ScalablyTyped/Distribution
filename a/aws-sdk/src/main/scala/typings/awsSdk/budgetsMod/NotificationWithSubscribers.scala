@@ -18,22 +18,17 @@ trait NotificationWithSubscribers extends StObject {
 }
 object NotificationWithSubscribers {
   
-  @scala.inline
-  def apply(Notification: Notification, Subscribers: Subscribers): NotificationWithSubscribers = {
+  inline def apply(Notification: Notification, Subscribers: Subscribers): NotificationWithSubscribers = {
     val __obj = js.Dynamic.literal(Notification = Notification.asInstanceOf[js.Any], Subscribers = Subscribers.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationWithSubscribers]
   }
   
-  @scala.inline
-  implicit class NotificationWithSubscribersMutableBuilder[Self <: NotificationWithSubscribers] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationWithSubscribers](x: Self) {
     
-    @scala.inline
-    def setNotification(value: Notification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: Notification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribers(value: Subscribers): Self = StObject.set(x, "Subscribers", value.asInstanceOf[js.Any])
+    inline def setSubscribers(value: Subscribers): Self = StObject.set(x, "Subscribers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
+    inline def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
   }
 }

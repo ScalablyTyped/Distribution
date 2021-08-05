@@ -10,8 +10,7 @@ trait ReferenceRegistrationOptions
      with WorkDoneProgressOptions
 object ReferenceRegistrationOptions {
   
-  @scala.inline
-  def apply(): ReferenceRegistrationOptions = {
+  inline def apply(): ReferenceRegistrationOptions = {
     val __obj = js.Dynamic.literal(documentSelector = null)
     __obj.asInstanceOf[ReferenceRegistrationOptions]
   }

@@ -23,28 +23,21 @@ trait ExecutionEngineConfig extends StObject {
 }
 object ExecutionEngineConfig {
   
-  @scala.inline
-  def apply(Id: XmlStringMaxLen256): ExecutionEngineConfig = {
+  inline def apply(Id: XmlStringMaxLen256): ExecutionEngineConfig = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionEngineConfig]
   }
   
-  @scala.inline
-  implicit class ExecutionEngineConfigMutableBuilder[Self <: ExecutionEngineConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionEngineConfig](x: Self) {
     
-    @scala.inline
-    def setId(value: XmlStringMaxLen256): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: XmlStringMaxLen256): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterInstanceSecurityGroupId(value: XmlStringMaxLen256): Self = StObject.set(x, "MasterInstanceSecurityGroupId", value.asInstanceOf[js.Any])
+    inline def setMasterInstanceSecurityGroupId(value: XmlStringMaxLen256): Self = StObject.set(x, "MasterInstanceSecurityGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterInstanceSecurityGroupIdUndefined: Self = StObject.set(x, "MasterInstanceSecurityGroupId", js.undefined)
+    inline def setMasterInstanceSecurityGroupIdUndefined: Self = StObject.set(x, "MasterInstanceSecurityGroupId", js.undefined)
     
-    @scala.inline
-    def setType(value: ExecutionEngineType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ExecutionEngineType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

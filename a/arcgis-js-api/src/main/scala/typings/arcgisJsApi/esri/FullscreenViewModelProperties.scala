@@ -23,25 +23,19 @@ trait FullscreenViewModelProperties extends StObject {
 }
 object FullscreenViewModelProperties {
   
-  @scala.inline
-  def apply(): FullscreenViewModelProperties = {
+  inline def apply(): FullscreenViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FullscreenViewModelProperties]
   }
   
-  @scala.inline
-  implicit class FullscreenViewModelPropertiesMutableBuilder[Self <: FullscreenViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FullscreenViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

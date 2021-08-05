@@ -33,43 +33,31 @@ trait BillingInvoiceItem extends StObject {
 }
 object BillingInvoiceItem {
   
-  @scala.inline
-  def apply(): BillingInvoiceItem = {
+  inline def apply(): BillingInvoiceItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BillingInvoiceItem]
   }
   
-  @scala.inline
-  implicit class BillingInvoiceItemMutableBuilder[Self <: BillingInvoiceItem] (val x: Self) extends AnyVal {
+  extension [Self <: BillingInvoiceItem](x: Self) {
     
-    @scala.inline
-    def setChargeAmount(value: String): Self = StObject.set(x, "chargeAmount", value.asInstanceOf[js.Any])
+    inline def setChargeAmount(value: String): Self = StObject.set(x, "chargeAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChargeAmountUndefined: Self = StObject.set(x, "chargeAmount", js.undefined)
+    inline def setChargeAmountUndefined: Self = StObject.set(x, "chargeAmount", js.undefined)
     
-    @scala.inline
-    def setChargeName(value: String): Self = StObject.set(x, "chargeName", value.asInstanceOf[js.Any])
+    inline def setChargeName(value: String): Self = StObject.set(x, "chargeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChargeNameUndefined: Self = StObject.set(x, "chargeName", js.undefined)
+    inline def setChargeNameUndefined: Self = StObject.set(x, "chargeName", js.undefined)
     
-    @scala.inline
-    def setInvoiceItemId(value: String): Self = StObject.set(x, "invoiceItemId", value.asInstanceOf[js.Any])
+    inline def setInvoiceItemId(value: String): Self = StObject.set(x, "invoiceItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoiceItemIdUndefined: Self = StObject.set(x, "invoiceItemId", js.undefined)
+    inline def setInvoiceItemIdUndefined: Self = StObject.set(x, "invoiceItemId", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    @scala.inline
-    def setUnitPrice(value: String): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
+    inline def setUnitPrice(value: String): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
+    inline def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
   }
 }

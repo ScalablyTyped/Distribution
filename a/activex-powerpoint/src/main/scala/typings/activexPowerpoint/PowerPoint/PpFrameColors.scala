@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpFrameColors extends StObject
 object PpFrameColors {
   
-  @scala.inline
-  def ppFrameColorsBlackTextOnWhite: `5` = 5.asInstanceOf[`5`]
+  inline def ppFrameColorsBlackTextOnWhite: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ppFrameColorsBrowserColors: `1` = 1.asInstanceOf[`1`]
+  inline def ppFrameColorsBrowserColors: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppFrameColorsPresentationSchemeAccentColor: `3` = 3.asInstanceOf[`3`]
+  inline def ppFrameColorsPresentationSchemeAccentColor: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppFrameColorsPresentationSchemeTextColor: `2` = 2.asInstanceOf[`2`]
+  inline def ppFrameColorsPresentationSchemeTextColor: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppFrameColorsWhiteTextOnBlack: `4` = 4.asInstanceOf[`4`]
+  inline def ppFrameColorsWhiteTextOnBlack: `4` = 4.asInstanceOf[`4`]
 }

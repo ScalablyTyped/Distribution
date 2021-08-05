@@ -16,15 +16,11 @@ object controlFlowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def endsControlFlow(statement: BlockLike): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("endsControlFlow")(statement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def endsControlFlow(statement: Statement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("endsControlFlow")(statement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def endsControlFlow(statement: BlockLike): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("endsControlFlow")(statement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def endsControlFlow(statement: Statement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("endsControlFlow")(statement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def getControlFlowEnd(statement: BlockLike): ControlFlowEnd = ^.asInstanceOf[js.Dynamic].applyDynamic("getControlFlowEnd")(statement.asInstanceOf[js.Any]).asInstanceOf[ControlFlowEnd]
-  @scala.inline
-  def getControlFlowEnd(statement: Statement): ControlFlowEnd = ^.asInstanceOf[js.Dynamic].applyDynamic("getControlFlowEnd")(statement.asInstanceOf[js.Any]).asInstanceOf[ControlFlowEnd]
+  inline def getControlFlowEnd(statement: BlockLike): ControlFlowEnd = ^.asInstanceOf[js.Dynamic].applyDynamic("getControlFlowEnd")(statement.asInstanceOf[js.Any]).asInstanceOf[ControlFlowEnd]
+  inline def getControlFlowEnd(statement: Statement): ControlFlowEnd = ^.asInstanceOf[js.Dynamic].applyDynamic("getControlFlowEnd")(statement.asInstanceOf[js.Any]).asInstanceOf[ControlFlowEnd]
   
   trait ControlFlowEnd extends StObject {
     
@@ -34,23 +30,18 @@ object controlFlowMod {
   }
   object ControlFlowEnd {
     
-    @scala.inline
-    def apply(end: Boolean, statements: js.Array[ControlFlowStatement]): ControlFlowEnd = {
+    inline def apply(end: Boolean, statements: js.Array[ControlFlowStatement]): ControlFlowEnd = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], statements = statements.asInstanceOf[js.Any])
       __obj.asInstanceOf[ControlFlowEnd]
     }
     
-    @scala.inline
-    implicit class ControlFlowEndMutableBuilder[Self <: ControlFlowEnd] (val x: Self) extends AnyVal {
+    extension [Self <: ControlFlowEnd](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatements(value: js.Array[ControlFlowStatement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+      inline def setStatements(value: js.Array[ControlFlowStatement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementsVarargs(value: ControlFlowStatement*): Self = StObject.set(x, "statements", js.Array(value :_*))
+      inline def setStatementsVarargs(value: ControlFlowStatement*): Self = StObject.set(x, "statements", js.Array(value :_*))
     }
   }
   

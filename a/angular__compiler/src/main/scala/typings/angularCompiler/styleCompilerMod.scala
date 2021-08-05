@@ -45,13 +45,13 @@ object styleCompilerMod {
   class StyleCompiler protected () extends StObject {
     def this(_urlResolver: UrlResolver) = this()
     
-    var _compileStyles: js.Any = js.native
+    /* private */ var _compileStyles: js.Any = js.native
     
-    var _shadowCss: js.Any = js.native
+    /* private */ var _shadowCss: js.Any = js.native
     
-    var _shimIfNeeded: js.Any = js.native
+    /* private */ var _shimIfNeeded: js.Any = js.native
     
-    var _urlResolver: js.Any = js.native
+    /* private */ var _urlResolver: js.Any = js.native
     
     def compileComponent(outputCtx: OutputContext, comp: CompileDirectiveMetadata): CompiledStylesheet = js.native
     

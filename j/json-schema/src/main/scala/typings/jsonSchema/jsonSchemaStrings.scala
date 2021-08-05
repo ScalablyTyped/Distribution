@@ -14,8 +14,7 @@ object jsonSchemaStrings {
     extends StObject
        with JSONSchema4TypeName
        with JSONSchema6TypeName
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
   sealed trait array
@@ -23,8 +22,7 @@ object jsonSchemaStrings {
        with JSONSchema4TypeName
        with JSONSchema6TypeName
        with JSONSchema7TypeName
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
   sealed trait boolean
@@ -32,8 +30,7 @@ object jsonSchemaStrings {
        with JSONSchema4TypeName
        with JSONSchema6TypeName
        with JSONSchema7TypeName
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
   sealed trait integer
@@ -41,8 +38,7 @@ object jsonSchemaStrings {
        with JSONSchema4TypeName
        with JSONSchema6TypeName
        with JSONSchema7TypeName
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
+  inline def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
   sealed trait `null`
@@ -50,8 +46,7 @@ object jsonSchemaStrings {
        with JSONSchema4TypeName
        with JSONSchema6TypeName
        with JSONSchema7TypeName
-  @scala.inline
-  def `null`: `null` = "null".asInstanceOf[`null`]
+  inline def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
   sealed trait number
@@ -59,8 +54,7 @@ object jsonSchemaStrings {
        with JSONSchema4TypeName
        with JSONSchema6TypeName
        with JSONSchema7TypeName
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
   sealed trait `object`
@@ -68,8 +62,7 @@ object jsonSchemaStrings {
        with JSONSchema4TypeName
        with JSONSchema6TypeName
        with JSONSchema7TypeName
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
   sealed trait string
@@ -77,6 +70,5 @@ object jsonSchemaStrings {
        with JSONSchema4TypeName
        with JSONSchema6TypeName
        with JSONSchema7TypeName
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
 }

@@ -31,8 +31,7 @@ object autoCompleteWithLabelUniDriverMod {
   }
   object AutoCompleteWithLabelUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blur: () => js.Promise[Unit],
       click: () => js.Promise[Unit],
       clickAtOption: Double => js.Promise[Unit],
@@ -50,35 +49,25 @@ object autoCompleteWithLabelUniDriverMod {
       __obj.asInstanceOf[AutoCompleteWithLabelUniDriver]
     }
     
-    @scala.inline
-    implicit class AutoCompleteWithLabelUniDriverMutableBuilder[Self <: AutoCompleteWithLabelUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: AutoCompleteWithLabelUniDriver](x: Self) {
       
-      @scala.inline
-      def setBlur(value: () => js.Promise[Unit]): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+      inline def setBlur(value: () => js.Promise[Unit]): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickAtOption(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickAtOption", js.Any.fromFunction1(value))
+      inline def setClickAtOption(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickAtOption", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickAtOptionWithValue(value: String => js.Promise[Unit]): Self = StObject.set(x, "clickAtOptionWithValue", js.Any.fromFunction1(value))
+      inline def setClickAtOptionWithValue(value: String => js.Promise[Unit]): Self = StObject.set(x, "clickAtOptionWithValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickMenuArrow(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickMenuArrow", js.Any.fromFunction0(value))
+      inline def setClickMenuArrow(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickMenuArrow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnterText(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
+      inline def setEnterText(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLabelText(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
+      inline def setGetLabelText(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasError(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
+      inline def setHasError(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     }
   }
 }

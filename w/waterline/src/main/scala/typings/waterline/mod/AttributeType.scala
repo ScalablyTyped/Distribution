@@ -21,39 +21,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttributeType extends StObject
 object AttributeType {
   
-  @scala.inline
-  def array: typings.waterline.waterlineStrings.array = "array".asInstanceOf[typings.waterline.waterlineStrings.array]
+  inline def array: typings.waterline.waterlineStrings.array = "array".asInstanceOf[typings.waterline.waterlineStrings.array]
   
-  @scala.inline
-  def binary: typings.waterline.waterlineStrings.binary = "binary".asInstanceOf[typings.waterline.waterlineStrings.binary]
+  inline def binary: typings.waterline.waterlineStrings.binary = "binary".asInstanceOf[typings.waterline.waterlineStrings.binary]
   
-  @scala.inline
-  def boolean: typings.waterline.waterlineStrings.boolean = "boolean".asInstanceOf[typings.waterline.waterlineStrings.boolean]
+  inline def boolean: typings.waterline.waterlineStrings.boolean = "boolean".asInstanceOf[typings.waterline.waterlineStrings.boolean]
   
-  @scala.inline
-  def date: typings.waterline.waterlineStrings.date = "date".asInstanceOf[typings.waterline.waterlineStrings.date]
+  inline def date: typings.waterline.waterlineStrings.date = "date".asInstanceOf[typings.waterline.waterlineStrings.date]
   
-  @scala.inline
-  def datetime: typings.waterline.waterlineStrings.datetime = "datetime".asInstanceOf[typings.waterline.waterlineStrings.datetime]
+  inline def datetime: typings.waterline.waterlineStrings.datetime = "datetime".asInstanceOf[typings.waterline.waterlineStrings.datetime]
   
-  @scala.inline
-  def float: typings.waterline.waterlineStrings.float = "float".asInstanceOf[typings.waterline.waterlineStrings.float]
+  inline def float: typings.waterline.waterlineStrings.float = "float".asInstanceOf[typings.waterline.waterlineStrings.float]
   
-  @scala.inline
-  def integer: typings.waterline.waterlineStrings.integer = "integer".asInstanceOf[typings.waterline.waterlineStrings.integer]
+  inline def integer: typings.waterline.waterlineStrings.integer = "integer".asInstanceOf[typings.waterline.waterlineStrings.integer]
   
-  @scala.inline
-  def json: typings.waterline.waterlineStrings.json = "json".asInstanceOf[typings.waterline.waterlineStrings.json]
+  inline def json: typings.waterline.waterlineStrings.json = "json".asInstanceOf[typings.waterline.waterlineStrings.json]
   
-  @scala.inline
-  def number: typings.waterline.waterlineStrings.number = "number".asInstanceOf[typings.waterline.waterlineStrings.number]
+  inline def number: typings.waterline.waterlineStrings.number = "number".asInstanceOf[typings.waterline.waterlineStrings.number]
   
-  @scala.inline
-  def string: typings.waterline.waterlineStrings.string = "string".asInstanceOf[typings.waterline.waterlineStrings.string]
+  inline def string: typings.waterline.waterlineStrings.string = "string".asInstanceOf[typings.waterline.waterlineStrings.string]
   
-  @scala.inline
-  def text: typings.waterline.waterlineStrings.text = "text".asInstanceOf[typings.waterline.waterlineStrings.text]
+  inline def text: typings.waterline.waterlineStrings.text = "text".asInstanceOf[typings.waterline.waterlineStrings.text]
   
-  @scala.inline
-  def time: typings.waterline.waterlineStrings.time = "time".asInstanceOf[typings.waterline.waterlineStrings.time]
+  inline def time: typings.waterline.waterlineStrings.time = "time".asInstanceOf[typings.waterline.waterlineStrings.time]
 }

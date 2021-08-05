@@ -58,79 +58,55 @@ trait DBClusterEndpoint extends StObject {
 }
 object DBClusterEndpoint {
   
-  @scala.inline
-  def apply(): DBClusterEndpoint = {
+  inline def apply(): DBClusterEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBClusterEndpoint]
   }
   
-  @scala.inline
-  implicit class DBClusterEndpointMutableBuilder[Self <: DBClusterEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: DBClusterEndpoint](x: Self) {
     
-    @scala.inline
-    def setCustomEndpointType(value: String): Self = StObject.set(x, "CustomEndpointType", value.asInstanceOf[js.Any])
+    inline def setCustomEndpointType(value: String): Self = StObject.set(x, "CustomEndpointType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomEndpointTypeUndefined: Self = StObject.set(x, "CustomEndpointType", js.undefined)
+    inline def setCustomEndpointTypeUndefined: Self = StObject.set(x, "CustomEndpointType", js.undefined)
     
-    @scala.inline
-    def setDBClusterEndpointArn(value: String): Self = StObject.set(x, "DBClusterEndpointArn", value.asInstanceOf[js.Any])
+    inline def setDBClusterEndpointArn(value: String): Self = StObject.set(x, "DBClusterEndpointArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterEndpointArnUndefined: Self = StObject.set(x, "DBClusterEndpointArn", js.undefined)
+    inline def setDBClusterEndpointArnUndefined: Self = StObject.set(x, "DBClusterEndpointArn", js.undefined)
     
-    @scala.inline
-    def setDBClusterEndpointIdentifier(value: String): Self = StObject.set(x, "DBClusterEndpointIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterEndpointIdentifier(value: String): Self = StObject.set(x, "DBClusterEndpointIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterEndpointIdentifierUndefined: Self = StObject.set(x, "DBClusterEndpointIdentifier", js.undefined)
+    inline def setDBClusterEndpointIdentifierUndefined: Self = StObject.set(x, "DBClusterEndpointIdentifier", js.undefined)
     
-    @scala.inline
-    def setDBClusterEndpointResourceIdentifier(value: String): Self = StObject.set(x, "DBClusterEndpointResourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterEndpointResourceIdentifier(value: String): Self = StObject.set(x, "DBClusterEndpointResourceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterEndpointResourceIdentifierUndefined: Self = StObject.set(x, "DBClusterEndpointResourceIdentifier", js.undefined)
+    inline def setDBClusterEndpointResourceIdentifierUndefined: Self = StObject.set(x, "DBClusterEndpointResourceIdentifier", js.undefined)
     
-    @scala.inline
-    def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterIdentifierUndefined: Self = StObject.set(x, "DBClusterIdentifier", js.undefined)
+    inline def setDBClusterIdentifierUndefined: Self = StObject.set(x, "DBClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointType(value: String): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
+    inline def setEndpointType(value: String): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
+    inline def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
-    @scala.inline
-    def setExcludedMembers(value: StringList): Self = StObject.set(x, "ExcludedMembers", value.asInstanceOf[js.Any])
+    inline def setExcludedMembers(value: StringList): Self = StObject.set(x, "ExcludedMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedMembersUndefined: Self = StObject.set(x, "ExcludedMembers", js.undefined)
+    inline def setExcludedMembersUndefined: Self = StObject.set(x, "ExcludedMembers", js.undefined)
     
-    @scala.inline
-    def setExcludedMembersVarargs(value: String*): Self = StObject.set(x, "ExcludedMembers", js.Array(value :_*))
+    inline def setExcludedMembersVarargs(value: String*): Self = StObject.set(x, "ExcludedMembers", js.Array(value :_*))
     
-    @scala.inline
-    def setStaticMembers(value: StringList): Self = StObject.set(x, "StaticMembers", value.asInstanceOf[js.Any])
+    inline def setStaticMembers(value: StringList): Self = StObject.set(x, "StaticMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticMembersUndefined: Self = StObject.set(x, "StaticMembers", js.undefined)
+    inline def setStaticMembersUndefined: Self = StObject.set(x, "StaticMembers", js.undefined)
     
-    @scala.inline
-    def setStaticMembersVarargs(value: String*): Self = StObject.set(x, "StaticMembers", js.Array(value :_*))
+    inline def setStaticMembersVarargs(value: String*): Self = StObject.set(x, "StaticMembers", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

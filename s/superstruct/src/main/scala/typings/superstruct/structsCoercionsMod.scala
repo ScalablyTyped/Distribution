@@ -12,17 +12,13 @@ object structsCoercionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def coercion[T, S](struct: Struct[T, S], coercer: js.Function1[/* value */ js.Any, js.Any]): Struct[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("coercion")(struct.asInstanceOf[js.Any], coercer.asInstanceOf[js.Any])).asInstanceOf[Struct[T, S]]
+  inline def coercion[T, S](struct: Struct[T, S], coercer: js.Function1[/* value */ js.Any, js.Any]): Struct[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("coercion")(struct.asInstanceOf[js.Any], coercer.asInstanceOf[js.Any])).asInstanceOf[Struct[T, S]]
   
-  @scala.inline
-  def defaulted[T, S](S: Struct[T, S], fallback: js.Any): Struct[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaulted")(S.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[Struct[T, S]]
+  inline def defaulted[T, S](S: Struct[T, S], fallback: js.Any): Struct[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaulted")(S.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[Struct[T, S]]
   
-  @scala.inline
-  def defaulted_true[T, S](S: Struct[T, S], fallback: js.Any, strict: `true`): Struct[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaulted")(S.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Struct[T, S]]
+  inline def defaulted_true[T, S](S: Struct[T, S], fallback: js.Any, strict: `true`): Struct[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaulted")(S.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Struct[T, S]]
   
-  @scala.inline
-  def masked[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */](
+  inline def masked[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */](
     struct: Struct[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<S> */ js.Any, 
       S

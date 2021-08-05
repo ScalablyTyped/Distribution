@@ -13,17 +13,14 @@ object anon {
   }
   object FailOnWarning {
     
-    @scala.inline
-    def apply(): FailOnWarning = {
+    inline def apply(): FailOnWarning = {
       val __obj = js.Dynamic.literal(failOnWarning = true)
       __obj.asInstanceOf[FailOnWarning]
     }
     
-    @scala.inline
-    implicit class FailOnWarningMutableBuilder[Self <: FailOnWarning] (val x: Self) extends AnyVal {
+    extension [Self <: FailOnWarning](x: Self) {
       
-      @scala.inline
-      def setFailOnWarning(value: `true`): Self = StObject.set(x, "failOnWarning", value.asInstanceOf[js.Any])
+      inline def setFailOnWarning(value: `true`): Self = StObject.set(x, "failOnWarning", value.asInstanceOf[js.Any])
     }
   }
 }

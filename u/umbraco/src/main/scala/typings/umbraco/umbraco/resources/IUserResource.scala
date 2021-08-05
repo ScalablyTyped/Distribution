@@ -14,16 +14,13 @@ trait IUserResource extends StObject {
 }
 object IUserResource {
   
-  @scala.inline
-  def apply(disableUser: Double => Unit): IUserResource = {
+  inline def apply(disableUser: Double => Unit): IUserResource = {
     val __obj = js.Dynamic.literal(disableUser = js.Any.fromFunction1(disableUser))
     __obj.asInstanceOf[IUserResource]
   }
   
-  @scala.inline
-  implicit class IUserResourceMutableBuilder[Self <: IUserResource] (val x: Self) extends AnyVal {
+  extension [Self <: IUserResource](x: Self) {
     
-    @scala.inline
-    def setDisableUser(value: Double => Unit): Self = StObject.set(x, "disableUser", js.Any.fromFunction1(value))
+    inline def setDisableUser(value: Double => Unit): Self = StObject.set(x, "disableUser", js.Any.fromFunction1(value))
   }
 }

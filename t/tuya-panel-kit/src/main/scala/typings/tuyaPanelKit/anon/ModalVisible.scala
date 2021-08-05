@@ -10,16 +10,13 @@ trait ModalVisible extends StObject {
 }
 object ModalVisible {
   
-  @scala.inline
-  def apply(modalVisible: Boolean): ModalVisible = {
+  inline def apply(modalVisible: Boolean): ModalVisible = {
     val __obj = js.Dynamic.literal(modalVisible = modalVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalVisible]
   }
   
-  @scala.inline
-  implicit class ModalVisibleMutableBuilder[Self <: ModalVisible] (val x: Self) extends AnyVal {
+  extension [Self <: ModalVisible](x: Self) {
     
-    @scala.inline
-    def setModalVisible(value: Boolean): Self = StObject.set(x, "modalVisible", value.asInstanceOf[js.Any])
+    inline def setModalVisible(value: Boolean): Self = StObject.set(x, "modalVisible", value.asInstanceOf[js.Any])
   }
 }

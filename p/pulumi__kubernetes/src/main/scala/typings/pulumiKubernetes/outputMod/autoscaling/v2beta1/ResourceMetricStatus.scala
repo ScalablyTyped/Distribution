@@ -26,22 +26,17 @@ trait ResourceMetricStatus extends StObject {
 }
 object ResourceMetricStatus {
   
-  @scala.inline
-  def apply(currentAverageUtilization: Double, currentAverageValue: String, name: String): ResourceMetricStatus = {
+  inline def apply(currentAverageUtilization: Double, currentAverageValue: String, name: String): ResourceMetricStatus = {
     val __obj = js.Dynamic.literal(currentAverageUtilization = currentAverageUtilization.asInstanceOf[js.Any], currentAverageValue = currentAverageValue.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceMetricStatus]
   }
   
-  @scala.inline
-  implicit class ResourceMetricStatusMutableBuilder[Self <: ResourceMetricStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceMetricStatus](x: Self) {
     
-    @scala.inline
-    def setCurrentAverageUtilization(value: Double): Self = StObject.set(x, "currentAverageUtilization", value.asInstanceOf[js.Any])
+    inline def setCurrentAverageUtilization(value: Double): Self = StObject.set(x, "currentAverageUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentAverageValue(value: String): Self = StObject.set(x, "currentAverageValue", value.asInstanceOf[js.Any])
+    inline def setCurrentAverageValue(value: String): Self = StObject.set(x, "currentAverageValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

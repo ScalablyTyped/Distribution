@@ -14,8 +14,7 @@ object dateTimeFormatPartitionDateTimePatternMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def PartitionDateTimePattern(
+  inline def PartitionDateTimePattern(
     dtf: DateTimeFormat,
     x: Double,
     implDetails: ToLocalTimeImplDetails & FormatDateTimePatternImplDetails

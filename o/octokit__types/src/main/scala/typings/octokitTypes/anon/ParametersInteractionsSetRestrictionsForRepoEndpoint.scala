@@ -18,8 +18,7 @@ trait ParametersInteractionsSetRestrictionsForRepoEndpoint extends StObject {
 }
 object ParametersInteractionsSetRestrictionsForRepoEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: InteractionsSetRestrictionsForRepoEndpoint,
     request: InteractionsSetRestrictionsForRepoRequestOptions,
     response: OctokitResponse[InteractionsSetRestrictionsForRepoResponseData]
@@ -28,16 +27,12 @@ object ParametersInteractionsSetRestrictionsForRepoEndpoint {
     __obj.asInstanceOf[ParametersInteractionsSetRestrictionsForRepoEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersInteractionsSetRestrictionsForRepoEndpointMutableBuilder[Self <: ParametersInteractionsSetRestrictionsForRepoEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersInteractionsSetRestrictionsForRepoEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: InteractionsSetRestrictionsForRepoEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: InteractionsSetRestrictionsForRepoEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: InteractionsSetRestrictionsForRepoRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: InteractionsSetRestrictionsForRepoRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[InteractionsSetRestrictionsForRepoResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[InteractionsSetRestrictionsForRepoResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

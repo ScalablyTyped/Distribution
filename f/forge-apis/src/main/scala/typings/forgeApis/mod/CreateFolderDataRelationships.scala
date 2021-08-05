@@ -10,16 +10,13 @@ trait CreateFolderDataRelationships extends StObject {
 }
 object CreateFolderDataRelationships {
   
-  @scala.inline
-  def apply(parent: CreateFolderDataRelationshipsParent): CreateFolderDataRelationships = {
+  inline def apply(parent: CreateFolderDataRelationshipsParent): CreateFolderDataRelationships = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFolderDataRelationships]
   }
   
-  @scala.inline
-  implicit class CreateFolderDataRelationshipsMutableBuilder[Self <: CreateFolderDataRelationships] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFolderDataRelationships](x: Self) {
     
-    @scala.inline
-    def setParent(value: CreateFolderDataRelationshipsParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: CreateFolderDataRelationshipsParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
   }
 }

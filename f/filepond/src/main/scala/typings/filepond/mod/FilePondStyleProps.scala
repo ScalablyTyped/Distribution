@@ -63,70 +63,49 @@ trait FilePondStyleProps extends StObject {
 }
 object FilePondStyleProps {
   
-  @scala.inline
-  def apply(): FilePondStyleProps = {
+  inline def apply(): FilePondStyleProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilePondStyleProps]
   }
   
-  @scala.inline
-  implicit class FilePondStylePropsMutableBuilder[Self <: FilePondStyleProps] (val x: Self) extends AnyVal {
+  extension [Self <: FilePondStyleProps](x: Self) {
     
-    @scala.inline
-    def setStyleButtonProcessItemPosition(value: String): Self = StObject.set(x, "styleButtonProcessItemPosition", value.asInstanceOf[js.Any])
+    inline def setStyleButtonProcessItemPosition(value: String): Self = StObject.set(x, "styleButtonProcessItemPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleButtonProcessItemPositionUndefined: Self = StObject.set(x, "styleButtonProcessItemPosition", js.undefined)
+    inline def setStyleButtonProcessItemPositionUndefined: Self = StObject.set(x, "styleButtonProcessItemPosition", js.undefined)
     
-    @scala.inline
-    def setStyleButtonRemoveItemAlign(value: Boolean): Self = StObject.set(x, "styleButtonRemoveItemAlign", value.asInstanceOf[js.Any])
+    inline def setStyleButtonRemoveItemAlign(value: Boolean): Self = StObject.set(x, "styleButtonRemoveItemAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleButtonRemoveItemAlignUndefined: Self = StObject.set(x, "styleButtonRemoveItemAlign", js.undefined)
+    inline def setStyleButtonRemoveItemAlignUndefined: Self = StObject.set(x, "styleButtonRemoveItemAlign", js.undefined)
     
-    @scala.inline
-    def setStyleButtonRemoveItemPosition(value: String): Self = StObject.set(x, "styleButtonRemoveItemPosition", value.asInstanceOf[js.Any])
+    inline def setStyleButtonRemoveItemPosition(value: String): Self = StObject.set(x, "styleButtonRemoveItemPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleButtonRemoveItemPositionUndefined: Self = StObject.set(x, "styleButtonRemoveItemPosition", js.undefined)
+    inline def setStyleButtonRemoveItemPositionUndefined: Self = StObject.set(x, "styleButtonRemoveItemPosition", js.undefined)
     
-    @scala.inline
-    def setStyleItemPanelAspectRatio(value: String): Self = StObject.set(x, "styleItemPanelAspectRatio", value.asInstanceOf[js.Any])
+    inline def setStyleItemPanelAspectRatio(value: String): Self = StObject.set(x, "styleItemPanelAspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleItemPanelAspectRatioNull: Self = StObject.set(x, "styleItemPanelAspectRatio", null)
+    inline def setStyleItemPanelAspectRatioNull: Self = StObject.set(x, "styleItemPanelAspectRatio", null)
     
-    @scala.inline
-    def setStyleItemPanelAspectRatioUndefined: Self = StObject.set(x, "styleItemPanelAspectRatio", js.undefined)
+    inline def setStyleItemPanelAspectRatioUndefined: Self = StObject.set(x, "styleItemPanelAspectRatio", js.undefined)
     
-    @scala.inline
-    def setStyleLoadIndicatorPosition(value: String): Self = StObject.set(x, "styleLoadIndicatorPosition", value.asInstanceOf[js.Any])
+    inline def setStyleLoadIndicatorPosition(value: String): Self = StObject.set(x, "styleLoadIndicatorPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleLoadIndicatorPositionUndefined: Self = StObject.set(x, "styleLoadIndicatorPosition", js.undefined)
+    inline def setStyleLoadIndicatorPositionUndefined: Self = StObject.set(x, "styleLoadIndicatorPosition", js.undefined)
     
-    @scala.inline
-    def setStylePanelAspectRatio(value: String): Self = StObject.set(x, "stylePanelAspectRatio", value.asInstanceOf[js.Any])
+    inline def setStylePanelAspectRatio(value: String): Self = StObject.set(x, "stylePanelAspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylePanelAspectRatioNull: Self = StObject.set(x, "stylePanelAspectRatio", null)
+    inline def setStylePanelAspectRatioNull: Self = StObject.set(x, "stylePanelAspectRatio", null)
     
-    @scala.inline
-    def setStylePanelAspectRatioUndefined: Self = StObject.set(x, "stylePanelAspectRatio", js.undefined)
+    inline def setStylePanelAspectRatioUndefined: Self = StObject.set(x, "stylePanelAspectRatio", js.undefined)
     
-    @scala.inline
-    def setStylePanelLayout(value: integrated | compact | circle): Self = StObject.set(x, "stylePanelLayout", value.asInstanceOf[js.Any])
+    inline def setStylePanelLayout(value: integrated | compact | circle): Self = StObject.set(x, "stylePanelLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylePanelLayoutNull: Self = StObject.set(x, "stylePanelLayout", null)
+    inline def setStylePanelLayoutNull: Self = StObject.set(x, "stylePanelLayout", null)
     
-    @scala.inline
-    def setStylePanelLayoutUndefined: Self = StObject.set(x, "stylePanelLayout", js.undefined)
+    inline def setStylePanelLayoutUndefined: Self = StObject.set(x, "stylePanelLayout", js.undefined)
     
-    @scala.inline
-    def setStyleProgressIndicatorPosition(value: String): Self = StObject.set(x, "styleProgressIndicatorPosition", value.asInstanceOf[js.Any])
+    inline def setStyleProgressIndicatorPosition(value: String): Self = StObject.set(x, "styleProgressIndicatorPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleProgressIndicatorPositionUndefined: Self = StObject.set(x, "styleProgressIndicatorPosition", js.undefined)
+    inline def setStyleProgressIndicatorPositionUndefined: Self = StObject.set(x, "styleProgressIndicatorPosition", js.undefined)
   }
 }

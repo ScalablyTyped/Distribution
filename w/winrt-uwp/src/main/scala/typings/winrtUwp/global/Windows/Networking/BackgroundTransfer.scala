@@ -48,16 +48,14 @@ object BackgroundTransfer {
       * @return A collection of pending downloads for the current application instance.
       */
     /* static member */
-    @scala.inline
-    def getCurrentDownloadsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentDownloadsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getCurrentDownloadsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentDownloadsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     /**
       * Returns a collection of pending downloads for a specific Group .
       * @param group A string indicating a specific group of transfers.
       * @return A collection of pending downloads for the specific group.
       */
     /* static member */
-    @scala.inline
-    def getCurrentDownloadsAsync(group: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentDownloadsAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getCurrentDownloadsAsync(group: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentDownloadsAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /**
       * Gets all downloads associated with the provided BackgroundTransferGroup .
@@ -65,8 +63,7 @@ object BackgroundTransfer {
       * @return A list of downloads currently associated with the specified group.
       */
     /* static member */
-    @scala.inline
-    def getCurrentDownloadsForTransferGroupAsync(group: typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferGroup): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentDownloadsForTransferGroupAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getCurrentDownloadsForTransferGroupAsync(group: typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferGroup): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentDownloadsForTransferGroupAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /**
       * Used to request an unconstrained download operation. When this method is called the user is provided with a UI prompt that they can use to indicate their consent for an unconstrained operation.
@@ -74,8 +71,7 @@ object BackgroundTransfer {
       * @return Indicates if the operations will run unconstrained.
       */
     /* static member */
-    @scala.inline
-    def requestUnconstrainedDownloadsAsync(operations: IIterable[typings.winrtUwp.Windows.Networking.BackgroundTransfer.DownloadOperation]): IPromiseWithIAsyncOperation[
+    inline def requestUnconstrainedDownloadsAsync(operations: IIterable[typings.winrtUwp.Windows.Networking.BackgroundTransfer.DownloadOperation]): IPromiseWithIAsyncOperation[
         typings.winrtUwp.Windows.Networking.BackgroundTransfer.UnconstrainedTransferRequestResult
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestUnconstrainedDownloadsAsync")(operations.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[
         typings.winrtUwp.Windows.Networking.BackgroundTransfer.UnconstrainedTransferRequestResult
@@ -211,8 +207,7 @@ object BackgroundTransfer {
       * @return The error encountered.
       */
     /* static member */
-    @scala.inline
-    def getStatus(hresult: Double): WebErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[WebErrorStatus]
+    inline def getStatus(hresult: Double): WebErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[WebErrorStatus]
   }
   
   /** A named group used to associate multiple download or upload operations. This class makes it easy for your app to create these groups and to complete downloads and uploads simultaneously, in serial, or based on priority. */
@@ -242,8 +237,7 @@ object BackgroundTransfer {
       * @return The new BackgroundTransferGroup .
       */
     /* static member */
-    @scala.inline
-    def createGroup(name: String): typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("createGroup")(name.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferGroup]
+    inline def createGroup(name: String): typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("createGroup")(name.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferGroup]
   }
   
   /** Defines the values used to indicate the priority of a download or upload operation when within a BackgroundTransferGroup . */
@@ -314,16 +308,14 @@ object BackgroundTransfer {
       * @return A collection of pending uploads for the current application instance.
       */
     /* static member */
-    @scala.inline
-    def getCurrentUploadsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getCurrentUploadsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     /**
       * Returns a collection of pending uploads for a specific Group .
       * @param group A string indicating a specific group of uploads.
       * @return A collection of pending uploads for the specific group.
       */
     /* static member */
-    @scala.inline
-    def getCurrentUploadsAsync(group: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getCurrentUploadsAsync(group: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /**
       * Gets all uploads associated with the provided BackgroundTransferGroup .
@@ -331,8 +323,7 @@ object BackgroundTransfer {
       * @return A list of uploads currently associated with the specified group.
       */
     /* static member */
-    @scala.inline
-    def getCurrentUploadsForTransferGroupAsync(group: typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferGroup): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsForTransferGroupAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getCurrentUploadsForTransferGroupAsync(group: typings.winrtUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferGroup): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUploadsForTransferGroupAsync")(group.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /**
       * Used to request an unconstrained upload operation. When this method is called the user is provided with a UI prompt that they can use to indicate their consent for an unconstrained operation.
@@ -340,8 +331,7 @@ object BackgroundTransfer {
       * @return Indicates if the operations will run unconstrained.
       */
     /* static member */
-    @scala.inline
-    def requestUnconstrainedUploadsAsync(operations: IIterable[typings.winrtUwp.Windows.Networking.BackgroundTransfer.UploadOperation]): IPromiseWithIAsyncOperation[
+    inline def requestUnconstrainedUploadsAsync(operations: IIterable[typings.winrtUwp.Windows.Networking.BackgroundTransfer.UploadOperation]): IPromiseWithIAsyncOperation[
         typings.winrtUwp.Windows.Networking.BackgroundTransfer.UnconstrainedTransferRequestResult
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestUnconstrainedUploadsAsync")(operations.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[
         typings.winrtUwp.Windows.Networking.BackgroundTransfer.UnconstrainedTransferRequestResult
@@ -365,24 +355,21 @@ object BackgroundTransfer {
     @JSGlobal("Windows.Networking.BackgroundTransfer.ContentPrefetcher.contentUris")
     @js.native
     def contentUris: IVector[Uri] = js.native
-    @scala.inline
-    def contentUris_=(x: IVector[Uri]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contentUris")(x.asInstanceOf[js.Any])
+    inline def contentUris_=(x: IVector[Uri]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contentUris")(x.asInstanceOf[js.Any])
     
     /** Specifies the location of a well-formed XML file that contains a list of resources to be prefetched. */
     /* static member */
     @JSGlobal("Windows.Networking.BackgroundTransfer.ContentPrefetcher.indirectContentUri")
     @js.native
     def indirectContentUri: Uri = js.native
-    @scala.inline
-    def indirectContentUri_=(x: Uri): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("indirectContentUri")(x.asInstanceOf[js.Any])
+    inline def indirectContentUri_=(x: Uri): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("indirectContentUri")(x.asInstanceOf[js.Any])
     
     /** Gets the date and time of the last successful content prefetch operation. */
     /* static member */
     @JSGlobal("Windows.Networking.BackgroundTransfer.ContentPrefetcher.lastSuccessfulPrefetchTime")
     @js.native
     def lastSuccessfulPrefetchTime: Date = js.native
-    @scala.inline
-    def lastSuccessfulPrefetchTime_=(x: Date): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastSuccessfulPrefetchTime")(x.asInstanceOf[js.Any])
+    inline def lastSuccessfulPrefetchTime_=(x: Date): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastSuccessfulPrefetchTime")(x.asInstanceOf[js.Any])
   }
   
   /** Performs an asynchronous download operation. The Background Transfer sample demonstrates this functionality. For an overview of Background Transfer capabilities, see Transferring data in the background. Download the Background Transfer sample for examples in JavaScript, C#, and C++. */

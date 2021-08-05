@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdSortFieldType extends StObject
 object WdSortFieldType {
   
-  @scala.inline
-  def wdSortFieldAlphanumeric: `0` = 0.asInstanceOf[`0`]
+  inline def wdSortFieldAlphanumeric: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdSortFieldDate: `2` = 2.asInstanceOf[`2`]
+  inline def wdSortFieldDate: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdSortFieldJapanJIS: `4` = 4.asInstanceOf[`4`]
+  inline def wdSortFieldJapanJIS: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdSortFieldKoreaKS: `6` = 6.asInstanceOf[`6`]
+  inline def wdSortFieldKoreaKS: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdSortFieldNumeric: `1` = 1.asInstanceOf[`1`]
+  inline def wdSortFieldNumeric: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdSortFieldStroke: `5` = 5.asInstanceOf[`5`]
+  inline def wdSortFieldStroke: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdSortFieldSyllable: `3` = 3.asInstanceOf[`3`]
+  inline def wdSortFieldSyllable: `3` = 3.asInstanceOf[`3`]
 }

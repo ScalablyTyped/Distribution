@@ -45,25 +45,19 @@ trait SqliteDatabase extends StObject {
 }
 object SqliteDatabase {
   
-  @scala.inline
-  def apply(close: () => Unit, dump: () => String, exec: String => Unit, prepare: String => SqliteStatement): SqliteDatabase = {
+  inline def apply(close: () => Unit, dump: () => String, exec: String => Unit, prepare: String => SqliteStatement): SqliteDatabase = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), dump = js.Any.fromFunction0(dump), exec = js.Any.fromFunction1(exec), prepare = js.Any.fromFunction1(prepare))
     __obj.asInstanceOf[SqliteDatabase]
   }
   
-  @scala.inline
-  implicit class SqliteDatabaseMutableBuilder[Self <: SqliteDatabase] (val x: Self) extends AnyVal {
+  extension [Self <: SqliteDatabase](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDump(value: () => String): Self = StObject.set(x, "dump", js.Any.fromFunction0(value))
+    inline def setDump(value: () => String): Self = StObject.set(x, "dump", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExec(value: String => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
+    inline def setExec(value: String => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrepare(value: String => SqliteStatement): Self = StObject.set(x, "prepare", js.Any.fromFunction1(value))
+    inline def setPrepare(value: String => SqliteStatement): Self = StObject.set(x, "prepare", js.Any.fromFunction1(value))
   }
 }

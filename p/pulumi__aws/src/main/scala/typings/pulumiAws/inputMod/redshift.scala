@@ -27,29 +27,22 @@ object redshift {
   }
   object ClusterLogging {
     
-    @scala.inline
-    def apply(enable: Input[Boolean]): ClusterLogging = {
+    inline def apply(enable: Input[Boolean]): ClusterLogging = {
       val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterLogging]
     }
     
-    @scala.inline
-    implicit class ClusterLoggingMutableBuilder[Self <: ClusterLogging] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterLogging](x: Self) {
       
-      @scala.inline
-      def setBucketName(value: Input[String]): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+      inline def setBucketName(value: Input[String]): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
+      inline def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
       
-      @scala.inline
-      def setEnable(value: Input[Boolean]): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+      inline def setEnable(value: Input[Boolean]): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3KeyPrefix(value: Input[String]): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
+      inline def setS3KeyPrefix(value: Input[String]): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
+      inline def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
     }
   }
   
@@ -72,29 +65,22 @@ object redshift {
   }
   object ClusterSnapshotCopy {
     
-    @scala.inline
-    def apply(destinationRegion: Input[String]): ClusterSnapshotCopy = {
+    inline def apply(destinationRegion: Input[String]): ClusterSnapshotCopy = {
       val __obj = js.Dynamic.literal(destinationRegion = destinationRegion.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterSnapshotCopy]
     }
     
-    @scala.inline
-    implicit class ClusterSnapshotCopyMutableBuilder[Self <: ClusterSnapshotCopy] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterSnapshotCopy](x: Self) {
       
-      @scala.inline
-      def setDestinationRegion(value: Input[String]): Self = StObject.set(x, "destinationRegion", value.asInstanceOf[js.Any])
+      inline def setDestinationRegion(value: Input[String]): Self = StObject.set(x, "destinationRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantName(value: Input[String]): Self = StObject.set(x, "grantName", value.asInstanceOf[js.Any])
+      inline def setGrantName(value: Input[String]): Self = StObject.set(x, "grantName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantNameUndefined: Self = StObject.set(x, "grantName", js.undefined)
+      inline def setGrantNameUndefined: Self = StObject.set(x, "grantName", js.undefined)
       
-      @scala.inline
-      def setRetentionPeriod(value: Input[Double]): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
+      inline def setRetentionPeriod(value: Input[Double]): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
+      inline def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
     }
   }
   
@@ -112,20 +98,16 @@ object redshift {
   }
   object ParameterGroupParameter {
     
-    @scala.inline
-    def apply(name: Input[String], value: Input[String]): ParameterGroupParameter = {
+    inline def apply(name: Input[String], value: Input[String]): ParameterGroupParameter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParameterGroupParameter]
     }
     
-    @scala.inline
-    implicit class ParameterGroupParameterMutableBuilder[Self <: ParameterGroupParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ParameterGroupParameter](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,32 +131,24 @@ object redshift {
   }
   object SecurityGroupIngress {
     
-    @scala.inline
-    def apply(): SecurityGroupIngress = {
+    inline def apply(): SecurityGroupIngress = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SecurityGroupIngress]
     }
     
-    @scala.inline
-    implicit class SecurityGroupIngressMutableBuilder[Self <: SecurityGroupIngress] (val x: Self) extends AnyVal {
+    extension [Self <: SecurityGroupIngress](x: Self) {
       
-      @scala.inline
-      def setCidr(value: Input[String]): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
+      inline def setCidr(value: Input[String]): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidrUndefined: Self = StObject.set(x, "cidr", js.undefined)
+      inline def setCidrUndefined: Self = StObject.set(x, "cidr", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupName(value: Input[String]): Self = StObject.set(x, "securityGroupName", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupName(value: Input[String]): Self = StObject.set(x, "securityGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupNameUndefined: Self = StObject.set(x, "securityGroupName", js.undefined)
+      inline def setSecurityGroupNameUndefined: Self = StObject.set(x, "securityGroupName", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupOwnerId(value: Input[String]): Self = StObject.set(x, "securityGroupOwnerId", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupOwnerId(value: Input[String]): Self = StObject.set(x, "securityGroupOwnerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupOwnerIdUndefined: Self = StObject.set(x, "securityGroupOwnerId", js.undefined)
+      inline def setSecurityGroupOwnerIdUndefined: Self = StObject.set(x, "securityGroupOwnerId", js.undefined)
     }
   }
 }

@@ -23,34 +23,25 @@ trait BTreeIndexField extends StObject {
 }
 object BTreeIndexField {
   
-  @scala.inline
-  def apply(path: String): BTreeIndexField = {
+  inline def apply(path: String): BTreeIndexField = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[BTreeIndexField]
   }
   
-  @scala.inline
-  implicit class BTreeIndexFieldMutableBuilder[Self <: BTreeIndexField] (val x: Self) extends AnyVal {
+  extension [Self <: BTreeIndexField](x: Self) {
     
-    @scala.inline
-    def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+    inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
+    inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
     
-    @scala.inline
-    def setMaxlength(value: Double): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
+    inline def setMaxlength(value: Double): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxlengthUndefined: Self = StObject.set(x, "maxlength", js.undefined)
+    inline def setMaxlengthUndefined: Self = StObject.set(x, "maxlength", js.undefined)
     
-    @scala.inline
-    def setOrder(value: String | Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: String | Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

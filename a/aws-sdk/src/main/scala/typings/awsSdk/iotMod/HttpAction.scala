@@ -28,37 +28,27 @@ trait HttpAction extends StObject {
 }
 object HttpAction {
   
-  @scala.inline
-  def apply(url: Url): HttpAction = {
+  inline def apply(url: Url): HttpAction = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpAction]
   }
   
-  @scala.inline
-  implicit class HttpActionMutableBuilder[Self <: HttpAction] (val x: Self) extends AnyVal {
+  extension [Self <: HttpAction](x: Self) {
     
-    @scala.inline
-    def setAuth(value: HttpAuthorization): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: HttpAuthorization): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setConfirmationUrl(value: Url): Self = StObject.set(x, "confirmationUrl", value.asInstanceOf[js.Any])
+    inline def setConfirmationUrl(value: Url): Self = StObject.set(x, "confirmationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmationUrlUndefined: Self = StObject.set(x, "confirmationUrl", js.undefined)
+    inline def setConfirmationUrlUndefined: Self = StObject.set(x, "confirmationUrl", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: HeaderList): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: HeaderList): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHeadersVarargs(value: HttpActionHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: HttpActionHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

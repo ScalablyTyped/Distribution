@@ -28,55 +28,39 @@ trait gutternumberundefinedorie extends StObject {
 }
 object gutternumberundefinedorie {
   
-  @scala.inline
-  def apply(colorScale: js.Array[String], height: Double, width: Double): gutternumberundefinedorie = {
+  inline def apply(colorScale: js.Array[String], height: Double, width: Double): gutternumberundefinedorie = {
     val __obj = js.Dynamic.literal(colorScale = colorScale.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[gutternumberundefinedorie]
   }
   
-  @scala.inline
-  implicit class gutternumberundefinedorieMutableBuilder[Self <: gutternumberundefinedorie] (val x: Self) extends AnyVal {
+  extension [Self <: gutternumberundefinedorie](x: Self) {
     
-    @scala.inline
-    def setColorScale(value: js.Array[String]): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
+    inline def setColorScale(value: js.Array[String]): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorScaleVarargs(value: String*): Self = StObject.set(x, "colorScale", js.Array(value :_*))
+    inline def setColorScaleVarargs(value: String*): Self = StObject.set(x, "colorScale", js.Array(value :_*))
     
-    @scala.inline
-    def setGutter(value: Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+    inline def setGutter(value: Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
+    inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: vertical | horizontal): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: vertical | horizontal): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setStyle(value: Labels): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Labels): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTitleOrientation(value: OrientationTypes): Self = StObject.set(x, "titleOrientation", value.asInstanceOf[js.Any])
+    inline def setTitleOrientation(value: OrientationTypes): Self = StObject.set(x, "titleOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleOrientationUndefined: Self = StObject.set(x, "titleOrientation", js.undefined)
+    inline def setTitleOrientationUndefined: Self = StObject.set(x, "titleOrientation", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

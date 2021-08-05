@@ -22,13 +22,11 @@ object Writer {
     * @param size Buffer size
     * @returns Buffer
     */
-  @scala.inline
-  def alloc(size: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def alloc(size: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
   /**
     * Creates a new writer.
     * @returns A {@link BufferWriter} when Buffers are supported, otherwise a {@link Writer}
     */
-  @scala.inline
-  def create(): typings.apolloProtobufjs.mod.BufferWriter | typings.apolloProtobufjs.mod.Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.apolloProtobufjs.mod.BufferWriter | typings.apolloProtobufjs.mod.Writer]
+  inline def create(): typings.apolloProtobufjs.mod.BufferWriter | typings.apolloProtobufjs.mod.Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.apolloProtobufjs.mod.BufferWriter | typings.apolloProtobufjs.mod.Writer]
 }

@@ -16,8 +16,7 @@ trait IFreezable extends StObject {
 }
 object IFreezable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     events: IEventManager[js.Object],
     freeze: () => IFreezable,
     isFrozen: () => Boolean,
@@ -27,19 +26,14 @@ object IFreezable {
     __obj.asInstanceOf[IFreezable]
   }
   
-  @scala.inline
-  implicit class IFreezableMutableBuilder[Self <: IFreezable] (val x: Self) extends AnyVal {
+  extension [Self <: IFreezable](x: Self) {
     
-    @scala.inline
-    def setEvents(value: IEventManager[js.Object]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: IEventManager[js.Object]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreeze(value: () => IFreezable): Self = StObject.set(x, "freeze", js.Any.fromFunction0(value))
+    inline def setFreeze(value: () => IFreezable): Self = StObject.set(x, "freeze", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsFrozen(value: () => Boolean): Self = StObject.set(x, "isFrozen", js.Any.fromFunction0(value))
+    inline def setIsFrozen(value: () => Boolean): Self = StObject.set(x, "isFrozen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnfreeze(value: () => IFreezable): Self = StObject.set(x, "unfreeze", js.Any.fromFunction0(value))
+    inline def setUnfreeze(value: () => IFreezable): Self = StObject.set(x, "unfreeze", js.Any.fromFunction0(value))
   }
 }

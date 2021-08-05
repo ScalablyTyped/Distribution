@@ -12,25 +12,19 @@ trait DestroyPrimitives extends StObject {
 }
 object DestroyPrimitives {
   
-  @scala.inline
-  def apply(): DestroyPrimitives = {
+  inline def apply(): DestroyPrimitives = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DestroyPrimitives]
   }
   
-  @scala.inline
-  implicit class DestroyPrimitivesMutableBuilder[Self <: DestroyPrimitives] (val x: Self) extends AnyVal {
+  extension [Self <: DestroyPrimitives](x: Self) {
     
-    @scala.inline
-    def setDestroyPrimitives(value: Boolean): Self = StObject.set(x, "destroyPrimitives", value.asInstanceOf[js.Any])
+    inline def setDestroyPrimitives(value: Boolean): Self = StObject.set(x, "destroyPrimitives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyPrimitivesUndefined: Self = StObject.set(x, "destroyPrimitives", js.undefined)
+    inline def setDestroyPrimitivesUndefined: Self = StObject.set(x, "destroyPrimitives", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

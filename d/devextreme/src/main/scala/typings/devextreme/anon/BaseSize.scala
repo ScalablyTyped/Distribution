@@ -17,37 +17,27 @@ trait BaseSize extends StObject {
 }
 object BaseSize {
   
-  @scala.inline
-  def apply(): BaseSize = {
+  inline def apply(): BaseSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseSize]
   }
   
-  @scala.inline
-  implicit class BaseSizeMutableBuilder[Self <: BaseSize] (val x: Self) extends AnyVal {
+  extension [Self <: BaseSize](x: Self) {
     
-    @scala.inline
-    def setBaseSize(value: Double | auto): Self = StObject.set(x, "baseSize", value.asInstanceOf[js.Any])
+    inline def setBaseSize(value: Double | auto): Self = StObject.set(x, "baseSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseSizeUndefined: Self = StObject.set(x, "baseSize", js.undefined)
+    inline def setBaseSizeUndefined: Self = StObject.set(x, "baseSize", js.undefined)
     
-    @scala.inline
-    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+    inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
     
-    @scala.inline
-    def setScreen(value: String): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+    inline def setScreen(value: String): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
+    inline def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
     
-    @scala.inline
-    def setShrink(value: Double): Self = StObject.set(x, "shrink", value.asInstanceOf[js.Any])
+    inline def setShrink(value: Double): Self = StObject.set(x, "shrink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShrinkUndefined: Self = StObject.set(x, "shrink", js.undefined)
+    inline def setShrinkUndefined: Self = StObject.set(x, "shrink", js.undefined)
   }
 }

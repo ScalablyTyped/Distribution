@@ -22,8 +22,7 @@ trait CellFormatRanges
      with XEnumerationAccess
 object CellFormatRanges {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,

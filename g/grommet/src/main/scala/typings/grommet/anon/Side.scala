@@ -13,16 +13,13 @@ trait Side extends StObject {
 }
 object Side {
   
-  @scala.inline
-  def apply(side: left | right | bottom): Side = {
+  inline def apply(side: left | right | bottom): Side = {
     val __obj = js.Dynamic.literal(side = side.asInstanceOf[js.Any])
     __obj.asInstanceOf[Side]
   }
   
-  @scala.inline
-  implicit class SideMutableBuilder[Self <: Side] (val x: Self) extends AnyVal {
+  extension [Self <: Side](x: Self) {
     
-    @scala.inline
-    def setSide(value: left | right | bottom): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+    inline def setSide(value: left | right | bottom): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
   }
 }

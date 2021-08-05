@@ -18,20 +18,16 @@ trait GrpcGatewayRoute extends StObject {
 }
 object GrpcGatewayRoute {
   
-  @scala.inline
-  def apply(action: GrpcGatewayRouteAction, `match`: GrpcGatewayRouteMatch): GrpcGatewayRoute = {
+  inline def apply(action: GrpcGatewayRouteAction, `match`: GrpcGatewayRouteMatch): GrpcGatewayRoute = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrpcGatewayRoute]
   }
   
-  @scala.inline
-  implicit class GrpcGatewayRouteMutableBuilder[Self <: GrpcGatewayRoute] (val x: Self) extends AnyVal {
+  extension [Self <: GrpcGatewayRoute](x: Self) {
     
-    @scala.inline
-    def setAction(value: GrpcGatewayRouteAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: GrpcGatewayRouteAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatch(value: GrpcGatewayRouteMatch): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: GrpcGatewayRouteMatch): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
   }
 }

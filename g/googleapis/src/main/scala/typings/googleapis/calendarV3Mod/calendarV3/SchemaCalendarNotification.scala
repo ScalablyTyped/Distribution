@@ -32,25 +32,19 @@ trait SchemaCalendarNotification extends StObject {
 }
 object SchemaCalendarNotification {
   
-  @scala.inline
-  def apply(): SchemaCalendarNotification = {
+  inline def apply(): SchemaCalendarNotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCalendarNotification]
   }
   
-  @scala.inline
-  implicit class SchemaCalendarNotificationMutableBuilder[Self <: SchemaCalendarNotification] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCalendarNotification](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DescribeDomainConfigurationRequest extends StObject {
 }
 object DescribeDomainConfigurationRequest {
   
-  @scala.inline
-  def apply(domainConfigurationName: ReservedDomainConfigurationName): DescribeDomainConfigurationRequest = {
+  inline def apply(domainConfigurationName: ReservedDomainConfigurationName): DescribeDomainConfigurationRequest = {
     val __obj = js.Dynamic.literal(domainConfigurationName = domainConfigurationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDomainConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDomainConfigurationRequestMutableBuilder[Self <: DescribeDomainConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDomainConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setDomainConfigurationName(value: ReservedDomainConfigurationName): Self = StObject.set(x, "domainConfigurationName", value.asInstanceOf[js.Any])
+    inline def setDomainConfigurationName(value: ReservedDomainConfigurationName): Self = StObject.set(x, "domainConfigurationName", value.asInstanceOf[js.Any])
   }
 }

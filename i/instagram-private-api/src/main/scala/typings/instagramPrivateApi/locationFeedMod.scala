@@ -19,11 +19,11 @@ object locationFeedMod {
     
     var id: String | Double = js.native
     
-    var nextMaxId: js.Any = js.native
+    /* private */ var nextMaxId: js.Any = js.native
     
-    var nextMediaIds: js.Any = js.native
+    /* private */ var nextMediaIds: js.Any = js.native
     
-    var nextPage: js.Any = js.native
+    /* private */ var nextPage: js.Any = js.native
     
     def request(): js.Promise[LocationFeedResponse] = js.native
     

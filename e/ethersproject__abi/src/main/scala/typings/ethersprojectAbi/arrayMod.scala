@@ -25,9 +25,7 @@ object arrayMod {
     val length: Double = js.native
   }
   
-  @scala.inline
-  def pack(writer: Writer, coders: js.Array[Coder], values: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(writer.asInstanceOf[js.Any], coders.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def pack(writer: Writer, coders: js.Array[Coder], values: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(writer.asInstanceOf[js.Any], coders.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def unpack(reader: Reader, coders: js.Array[Coder]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(reader.asInstanceOf[js.Any], coders.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def unpack(reader: Reader, coders: js.Array[Coder]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(reader.asInstanceOf[js.Any], coders.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
 }

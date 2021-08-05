@@ -18,8 +18,7 @@ trait ASPxDesignerParameterType extends StObject {
 }
 object ASPxDesignerParameterType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultVal: js.Any,
     displayValue: String,
     specifics: String,
@@ -30,22 +29,16 @@ object ASPxDesignerParameterType {
     __obj.asInstanceOf[ASPxDesignerParameterType]
   }
   
-  @scala.inline
-  implicit class ASPxDesignerParameterTypeMutableBuilder[Self <: ASPxDesignerParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxDesignerParameterType](x: Self) {
     
-    @scala.inline
-    def setDefaultVal(value: js.Any): Self = StObject.set(x, "defaultVal", value.asInstanceOf[js.Any])
+    inline def setDefaultVal(value: js.Any): Self = StObject.set(x, "defaultVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
+    inline def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecifics(value: String): Self = StObject.set(x, "specifics", value.asInstanceOf[js.Any])
+    inline def setSpecifics(value: String): Self = StObject.set(x, "specifics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueConverter(value: js.Any => js.Any): Self = StObject.set(x, "valueConverter", js.Any.fromFunction1(value))
+    inline def setValueConverter(value: js.Any => js.Any): Self = StObject.set(x, "valueConverter", js.Any.fromFunction1(value))
   }
 }

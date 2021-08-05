@@ -14,19 +14,15 @@ trait NetworkEndpointGroupsListEndpointsRequest extends StObject {
 }
 object NetworkEndpointGroupsListEndpointsRequest {
   
-  @scala.inline
-  def apply(): NetworkEndpointGroupsListEndpointsRequest = {
+  inline def apply(): NetworkEndpointGroupsListEndpointsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkEndpointGroupsListEndpointsRequest]
   }
   
-  @scala.inline
-  implicit class NetworkEndpointGroupsListEndpointsRequestMutableBuilder[Self <: NetworkEndpointGroupsListEndpointsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkEndpointGroupsListEndpointsRequest](x: Self) {
     
-    @scala.inline
-    def setHealthStatus(value: String): Self = StObject.set(x, "healthStatus", value.asInstanceOf[js.Any])
+    inline def setHealthStatus(value: String): Self = StObject.set(x, "healthStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthStatusUndefined: Self = StObject.set(x, "healthStatus", js.undefined)
+    inline def setHealthStatusUndefined: Self = StObject.set(x, "healthStatus", js.undefined)
   }
 }

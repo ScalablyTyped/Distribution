@@ -10,19 +10,15 @@ trait SavedFeedResponseImageVersions2 extends StObject {
 }
 object SavedFeedResponseImageVersions2 {
   
-  @scala.inline
-  def apply(candidates: js.Array[SavedFeedResponseCandidatesItem]): SavedFeedResponseImageVersions2 = {
+  inline def apply(candidates: js.Array[SavedFeedResponseCandidatesItem]): SavedFeedResponseImageVersions2 = {
     val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavedFeedResponseImageVersions2]
   }
   
-  @scala.inline
-  implicit class SavedFeedResponseImageVersions2MutableBuilder[Self <: SavedFeedResponseImageVersions2] (val x: Self) extends AnyVal {
+  extension [Self <: SavedFeedResponseImageVersions2](x: Self) {
     
-    @scala.inline
-    def setCandidates(value: js.Array[SavedFeedResponseCandidatesItem]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
+    inline def setCandidates(value: js.Array[SavedFeedResponseCandidatesItem]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidatesVarargs(value: SavedFeedResponseCandidatesItem*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+    inline def setCandidatesVarargs(value: SavedFeedResponseCandidatesItem*): Self = StObject.set(x, "candidates", js.Array(value :_*))
   }
 }

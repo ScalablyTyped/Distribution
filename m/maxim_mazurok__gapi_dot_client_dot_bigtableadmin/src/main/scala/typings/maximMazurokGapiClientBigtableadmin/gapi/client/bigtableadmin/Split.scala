@@ -11,19 +11,15 @@ trait Split extends StObject {
 }
 object Split {
   
-  @scala.inline
-  def apply(): Split = {
+  inline def apply(): Split = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Split]
   }
   
-  @scala.inline
-  implicit class SplitMutableBuilder[Self <: Split] (val x: Self) extends AnyVal {
+  extension [Self <: Split](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

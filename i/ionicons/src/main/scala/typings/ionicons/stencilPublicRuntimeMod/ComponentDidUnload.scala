@@ -14,16 +14,13 @@ trait ComponentDidUnload extends StObject {
 }
 object ComponentDidUnload {
   
-  @scala.inline
-  def apply(componentDidUnload: () => Unit): ComponentDidUnload = {
+  inline def apply(componentDidUnload: () => Unit): ComponentDidUnload = {
     val __obj = js.Dynamic.literal(componentDidUnload = js.Any.fromFunction0(componentDidUnload))
     __obj.asInstanceOf[ComponentDidUnload]
   }
   
-  @scala.inline
-  implicit class ComponentDidUnloadMutableBuilder[Self <: ComponentDidUnload] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentDidUnload](x: Self) {
     
-    @scala.inline
-    def setComponentDidUnload(value: () => Unit): Self = StObject.set(x, "componentDidUnload", js.Any.fromFunction0(value))
+    inline def setComponentDidUnload(value: () => Unit): Self = StObject.set(x, "componentDidUnload", js.Any.fromFunction0(value))
   }
 }

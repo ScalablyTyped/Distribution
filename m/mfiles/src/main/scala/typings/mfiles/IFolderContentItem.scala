@@ -19,8 +19,7 @@ trait IFolderContentItem extends StObject {
 }
 object IFolderContentItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FolderContentItemType: MFFolderContentItemType,
     ObjectVersion: IObjectVersion,
     PropertyFolder: ITypedValue,
@@ -31,22 +30,16 @@ object IFolderContentItem {
     __obj.asInstanceOf[IFolderContentItem]
   }
   
-  @scala.inline
-  implicit class IFolderContentItemMutableBuilder[Self <: IFolderContentItem] (val x: Self) extends AnyVal {
+  extension [Self <: IFolderContentItem](x: Self) {
     
-    @scala.inline
-    def setFolderContentItemType(value: MFFolderContentItemType): Self = StObject.set(x, "FolderContentItemType", value.asInstanceOf[js.Any])
+    inline def setFolderContentItemType(value: MFFolderContentItemType): Self = StObject.set(x, "FolderContentItemType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectVersion(value: IObjectVersion): Self = StObject.set(x, "ObjectVersion", value.asInstanceOf[js.Any])
+    inline def setObjectVersion(value: IObjectVersion): Self = StObject.set(x, "ObjectVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyFolder(value: ITypedValue): Self = StObject.set(x, "PropertyFolder", value.asInstanceOf[js.Any])
+    inline def setPropertyFolder(value: ITypedValue): Self = StObject.set(x, "PropertyFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraditionalFolder(value: ILookup): Self = StObject.set(x, "TraditionalFolder", value.asInstanceOf[js.Any])
+    inline def setTraditionalFolder(value: ILookup): Self = StObject.set(x, "TraditionalFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: IView): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
+    inline def setView(value: IView): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
   }
 }

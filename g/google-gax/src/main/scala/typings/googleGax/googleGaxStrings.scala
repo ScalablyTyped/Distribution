@@ -8,131 +8,105 @@ object googleGaxStrings {
   
   @js.native
   sealed trait bool extends StObject
-  @scala.inline
-  def bool: bool = "bool".asInstanceOf[bool]
+  inline def bool: bool = "bool".asInstanceOf[bool]
   
   @js.native
   sealed trait bytes extends StObject
-  @scala.inline
-  def bytes: bytes = "bytes".asInstanceOf[bytes]
+  inline def bytes: bytes = "bytes".asInstanceOf[bytes]
   
   @js.native
   sealed trait custom extends StObject
-  @scala.inline
-  def custom: custom = "custom".asInstanceOf[custom]
+  inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
   sealed trait delete extends StObject
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
   sealed trait double extends StObject
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
+  inline def double: double = "double".asInstanceOf[double]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait fixed32 extends StObject
-  @scala.inline
-  def fixed32: fixed32 = "fixed32".asInstanceOf[fixed32]
+  inline def fixed32: fixed32 = "fixed32".asInstanceOf[fixed32]
   
   @js.native
   sealed trait fixed64 extends StObject
-  @scala.inline
-  def fixed64: fixed64 = "fixed64".asInstanceOf[fixed64]
+  inline def fixed64: fixed64 = "fixed64".asInstanceOf[fixed64]
   
   @js.native
   sealed trait float extends StObject
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
+  inline def float: float = "float".asInstanceOf[float]
   
   @js.native
   sealed trait get extends StObject
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
+  inline def get: get = "get".asInstanceOf[get]
   
   @js.native
   sealed trait int32 extends StObject
-  @scala.inline
-  def int32: int32 = "int32".asInstanceOf[int32]
+  inline def int32: int32 = "int32".asInstanceOf[int32]
   
   @js.native
   sealed trait int64 extends StObject
-  @scala.inline
-  def int64: int64 = "int64".asInstanceOf[int64]
+  inline def int64: int64 = "int64".asInstanceOf[int64]
   
   @js.native
   sealed trait optional extends StObject
-  @scala.inline
-  def optional: optional = "optional".asInstanceOf[optional]
+  inline def optional: optional = "optional".asInstanceOf[optional]
   
   @js.native
   sealed trait patch extends StObject
-  @scala.inline
-  def patch: patch = "patch".asInstanceOf[patch]
+  inline def patch: patch = "patch".asInstanceOf[patch]
   
   @js.native
   sealed trait post extends StObject
-  @scala.inline
-  def post: post = "post".asInstanceOf[post]
+  inline def post: post = "post".asInstanceOf[post]
   
   @js.native
   sealed trait put extends StObject
-  @scala.inline
-  def put: put = "put".asInstanceOf[put]
+  inline def put: put = "put".asInstanceOf[put]
   
   @js.native
   sealed trait repeated extends StObject
-  @scala.inline
-  def repeated: repeated = "repeated".asInstanceOf[repeated]
+  inline def repeated: repeated = "repeated".asInstanceOf[repeated]
   
   @js.native
   sealed trait required extends StObject
-  @scala.inline
-  def required: required = "required".asInstanceOf[required]
+  inline def required: required = "required".asInstanceOf[required]
   
   @js.native
   sealed trait response extends StObject
-  @scala.inline
-  def response: response = "response".asInstanceOf[response]
+  inline def response: response = "response".asInstanceOf[response]
   
   @js.native
   sealed trait sfixed32 extends StObject
-  @scala.inline
-  def sfixed32: sfixed32 = "sfixed32".asInstanceOf[sfixed32]
+  inline def sfixed32: sfixed32 = "sfixed32".asInstanceOf[sfixed32]
   
   @js.native
   sealed trait sfixed64 extends StObject
-  @scala.inline
-  def sfixed64: sfixed64 = "sfixed64".asInstanceOf[sfixed64]
+  inline def sfixed64: sfixed64 = "sfixed64".asInstanceOf[sfixed64]
   
   @js.native
   sealed trait sint32 extends StObject
-  @scala.inline
-  def sint32: sint32 = "sint32".asInstanceOf[sint32]
+  inline def sint32: sint32 = "sint32".asInstanceOf[sint32]
   
   @js.native
   sealed trait sint64 extends StObject
-  @scala.inline
-  def sint64: sint64 = "sint64".asInstanceOf[sint64]
+  inline def sint64: sint64 = "sint64".asInstanceOf[sint64]
   
   @js.native
   sealed trait string extends StObject
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait uint32 extends StObject
-  @scala.inline
-  def uint32: uint32 = "uint32".asInstanceOf[uint32]
+  inline def uint32: uint32 = "uint32".asInstanceOf[uint32]
   
   @js.native
   sealed trait uint64 extends StObject
-  @scala.inline
-  def uint64: uint64 = "uint64".asInstanceOf[uint64]
+  inline def uint64: uint64 = "uint64".asInstanceOf[uint64]
 }

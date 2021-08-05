@@ -16,19 +16,15 @@ trait SmsFilterRules extends StObject {
 }
 object SmsFilterRules {
   
-  @scala.inline
-  def apply(actionType: SmsFilterActionType, rules: IVector[SmsFilterRule]): SmsFilterRules = {
+  inline def apply(actionType: SmsFilterActionType, rules: IVector[SmsFilterRule]): SmsFilterRules = {
     val __obj = js.Dynamic.literal(actionType = actionType.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmsFilterRules]
   }
   
-  @scala.inline
-  implicit class SmsFilterRulesMutableBuilder[Self <: SmsFilterRules] (val x: Self) extends AnyVal {
+  extension [Self <: SmsFilterRules](x: Self) {
     
-    @scala.inline
-    def setActionType(value: SmsFilterActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: SmsFilterActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRules(value: IVector[SmsFilterRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: IVector[SmsFilterRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
   }
 }

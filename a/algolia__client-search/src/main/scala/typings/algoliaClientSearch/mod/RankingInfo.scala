@@ -34,8 +34,7 @@ trait RankingInfo extends StObject {
 }
 object RankingInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filters: Double,
     firstMatchedWord: Double,
     geoDistance: Double,
@@ -49,55 +48,38 @@ object RankingInfo {
     __obj.asInstanceOf[RankingInfo]
   }
   
-  @scala.inline
-  implicit class RankingInfoMutableBuilder[Self <: RankingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RankingInfo](x: Self) {
     
-    @scala.inline
-    def setFilters(value: Double): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Double): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstMatchedWord(value: Double): Self = StObject.set(x, "firstMatchedWord", value.asInstanceOf[js.Any])
+    inline def setFirstMatchedWord(value: Double): Self = StObject.set(x, "firstMatchedWord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoDistance(value: Double): Self = StObject.set(x, "geoDistance", value.asInstanceOf[js.Any])
+    inline def setGeoDistance(value: Double): Self = StObject.set(x, "geoDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoPrecision(value: Double): Self = StObject.set(x, "geoPrecision", value.asInstanceOf[js.Any])
+    inline def setGeoPrecision(value: Double): Self = StObject.set(x, "geoPrecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoPrecisionUndefined: Self = StObject.set(x, "geoPrecision", js.undefined)
+    inline def setGeoPrecisionUndefined: Self = StObject.set(x, "geoPrecision", js.undefined)
     
-    @scala.inline
-    def setMatchedGeoLocation(value: Distance): Self = StObject.set(x, "matchedGeoLocation", value.asInstanceOf[js.Any])
+    inline def setMatchedGeoLocation(value: Distance): Self = StObject.set(x, "matchedGeoLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedGeoLocationUndefined: Self = StObject.set(x, "matchedGeoLocation", js.undefined)
+    inline def setMatchedGeoLocationUndefined: Self = StObject.set(x, "matchedGeoLocation", js.undefined)
     
-    @scala.inline
-    def setNbExactWords(value: Double): Self = StObject.set(x, "nbExactWords", value.asInstanceOf[js.Any])
+    inline def setNbExactWords(value: Double): Self = StObject.set(x, "nbExactWords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNbTypos(value: Double): Self = StObject.set(x, "nbTypos", value.asInstanceOf[js.Any])
+    inline def setNbTypos(value: Double): Self = StObject.set(x, "nbTypos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonalization(value: FiltersScore): Self = StObject.set(x, "personalization", value.asInstanceOf[js.Any])
+    inline def setPersonalization(value: FiltersScore): Self = StObject.set(x, "personalization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonalizationUndefined: Self = StObject.set(x, "personalization", js.undefined)
+    inline def setPersonalizationUndefined: Self = StObject.set(x, "personalization", js.undefined)
     
-    @scala.inline
-    def setPromoted(value: Boolean): Self = StObject.set(x, "promoted", value.asInstanceOf[js.Any])
+    inline def setPromoted(value: Boolean): Self = StObject.set(x, "promoted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProximityDistance(value: Double): Self = StObject.set(x, "proximityDistance", value.asInstanceOf[js.Any])
+    inline def setProximityDistance(value: Double): Self = StObject.set(x, "proximityDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProximityDistanceUndefined: Self = StObject.set(x, "proximityDistance", js.undefined)
+    inline def setProximityDistanceUndefined: Self = StObject.set(x, "proximityDistance", js.undefined)
     
-    @scala.inline
-    def setUserScore(value: Double): Self = StObject.set(x, "userScore", value.asInstanceOf[js.Any])
+    inline def setUserScore(value: Double): Self = StObject.set(x, "userScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWords(value: Double): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    inline def setWords(value: Double): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
   }
 }

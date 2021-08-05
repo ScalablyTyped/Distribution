@@ -36,8 +36,7 @@ trait HorizontalPodAutoscalerSpec extends StObject {
 }
 object HorizontalPodAutoscalerSpec {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     behavior: HorizontalPodAutoscalerBehavior,
     maxReplicas: Double,
     metrics: js.Array[MetricSpec],
@@ -48,25 +47,18 @@ object HorizontalPodAutoscalerSpec {
     __obj.asInstanceOf[HorizontalPodAutoscalerSpec]
   }
   
-  @scala.inline
-  implicit class HorizontalPodAutoscalerSpecMutableBuilder[Self <: HorizontalPodAutoscalerSpec] (val x: Self) extends AnyVal {
+  extension [Self <: HorizontalPodAutoscalerSpec](x: Self) {
     
-    @scala.inline
-    def setBehavior(value: HorizontalPodAutoscalerBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    inline def setBehavior(value: HorizontalPodAutoscalerBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxReplicas(value: Double): Self = StObject.set(x, "maxReplicas", value.asInstanceOf[js.Any])
+    inline def setMaxReplicas(value: Double): Self = StObject.set(x, "maxReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetrics(value: js.Array[MetricSpec]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[MetricSpec]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsVarargs(value: MetricSpec*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: MetricSpec*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setMinReplicas(value: Double): Self = StObject.set(x, "minReplicas", value.asInstanceOf[js.Any])
+    inline def setMinReplicas(value: Double): Self = StObject.set(x, "minReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleTargetRef(value: CrossVersionObjectReference): Self = StObject.set(x, "scaleTargetRef", value.asInstanceOf[js.Any])
+    inline def setScaleTargetRef(value: CrossVersionObjectReference): Self = StObject.set(x, "scaleTargetRef", value.asInstanceOf[js.Any])
   }
 }

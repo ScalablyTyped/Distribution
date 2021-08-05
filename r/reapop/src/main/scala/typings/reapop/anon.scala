@@ -23,8 +23,7 @@ object anon {
   }
   object DismissNotification {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dismissNotification: String => Unit,
       dismissNotifications: () => Unit,
       notifications: js.Array[Notification],
@@ -35,23 +34,17 @@ object anon {
       __obj.asInstanceOf[DismissNotification]
     }
     
-    @scala.inline
-    implicit class DismissNotificationMutableBuilder[Self <: DismissNotification] (val x: Self) extends AnyVal {
+    extension [Self <: DismissNotification](x: Self) {
       
-      @scala.inline
-      def setDismissNotification(value: String => Unit): Self = StObject.set(x, "dismissNotification", js.Any.fromFunction1(value))
+      inline def setDismissNotification(value: String => Unit): Self = StObject.set(x, "dismissNotification", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDismissNotifications(value: () => Unit): Self = StObject.set(x, "dismissNotifications", js.Any.fromFunction0(value))
+      inline def setDismissNotifications(value: () => Unit): Self = StObject.set(x, "dismissNotifications", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
       
-      @scala.inline
-      def setNotify_(value: PartialNotification => Unit): Self = StObject.set(x, "notify", js.Any.fromFunction1(value))
+      inline def setNotify_(value: PartialNotification => Unit): Self = StObject.set(x, "notify", js.Any.fromFunction1(value))
     }
   }
   
@@ -86,95 +79,66 @@ object anon {
   }
   object PartialNotification {
     
-    @scala.inline
-    def apply(): PartialNotification = {
+    inline def apply(): PartialNotification = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialNotification]
     }
     
-    @scala.inline
-    implicit class PartialNotificationMutableBuilder[Self <: PartialNotification] (val x: Self) extends AnyVal {
+    extension [Self <: PartialNotification](x: Self) {
       
-      @scala.inline
-      def setAllowHTML(value: Boolean): Self = StObject.set(x, "allowHTML", value.asInstanceOf[js.Any])
+      inline def setAllowHTML(value: Boolean): Self = StObject.set(x, "allowHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowHTMLUndefined: Self = StObject.set(x, "allowHTML", js.undefined)
+      inline def setAllowHTMLUndefined: Self = StObject.set(x, "allowHTML", js.undefined)
       
-      @scala.inline
-      def setButtons(value: js.Array[NotificationButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: js.Array[NotificationButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+      inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      @scala.inline
-      def setButtonsVarargs(value: NotificationButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: NotificationButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
       
-      @scala.inline
-      def setDismissAfter(value: Double): Self = StObject.set(x, "dismissAfter", value.asInstanceOf[js.Any])
+      inline def setDismissAfter(value: Double): Self = StObject.set(x, "dismissAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissAfterUndefined: Self = StObject.set(x, "dismissAfter", js.undefined)
+      inline def setDismissAfterUndefined: Self = StObject.set(x, "dismissAfter", js.undefined)
       
-      @scala.inline
-      def setDismissible(value: Boolean): Self = StObject.set(x, "dismissible", value.asInstanceOf[js.Any])
+      inline def setDismissible(value: Boolean): Self = StObject.set(x, "dismissible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissibleUndefined: Self = StObject.set(x, "dismissible", js.undefined)
+      inline def setDismissibleUndefined: Self = StObject.set(x, "dismissible", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setOnAdd(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+      inline def setOnAdd(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
+      inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
       
-      @scala.inline
-      def setOnDismiss(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+      inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setShowDismissButton(value: Boolean): Self = StObject.set(x, "showDismissButton", value.asInstanceOf[js.Any])
+      inline def setShowDismissButton(value: Boolean): Self = StObject.set(x, "showDismissButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDismissButtonUndefined: Self = StObject.set(x, "showDismissButton", js.undefined)
+      inline def setShowDismissButtonUndefined: Self = StObject.set(x, "showDismissButton", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -189,38 +153,28 @@ object anon {
   }
   object PartialNotificationConfig {
     
-    @scala.inline
-    def apply(): PartialNotificationConfig = {
+    inline def apply(): PartialNotificationConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialNotificationConfig]
     }
     
-    @scala.inline
-    implicit class PartialNotificationConfigMutableBuilder[Self <: PartialNotificationConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PartialNotificationConfig](x: Self) {
       
-      @scala.inline
-      def setCustomizeNotification(value: /* notification */ NewNotification => Unit): Self = StObject.set(x, "customizeNotification", js.Any.fromFunction1(value))
+      inline def setCustomizeNotification(value: /* notification */ NewNotification => Unit): Self = StObject.set(x, "customizeNotification", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomizeNotificationNull: Self = StObject.set(x, "customizeNotification", null)
+      inline def setCustomizeNotificationNull: Self = StObject.set(x, "customizeNotification", null)
       
-      @scala.inline
-      def setCustomizeNotificationUndefined: Self = StObject.set(x, "customizeNotification", js.undefined)
+      inline def setCustomizeNotificationUndefined: Self = StObject.set(x, "customizeNotification", js.undefined)
       
-      @scala.inline
-      def setDefaultProps(value: PartialNotification): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+      inline def setDefaultProps(value: PartialNotification): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
+      inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
       
-      @scala.inline
-      def setGenerateId(value: /* notification */ NewNotification => String): Self = StObject.set(x, "generateId", js.Any.fromFunction1(value))
+      inline def setGenerateId(value: /* notification */ NewNotification => String): Self = StObject.set(x, "generateId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGenerateIdNull: Self = StObject.set(x, "generateId", null)
+      inline def setGenerateIdNull: Self = StObject.set(x, "generateId", null)
       
-      @scala.inline
-      def setGenerateIdUndefined: Self = StObject.set(x, "generateId", js.undefined)
+      inline def setGenerateIdUndefined: Self = StObject.set(x, "generateId", js.undefined)
     }
   }
 }

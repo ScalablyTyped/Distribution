@@ -23,22 +23,17 @@ trait UpdateRoutingProfileDefaultOutboundQueueRequest extends StObject {
 }
 object UpdateRoutingProfileDefaultOutboundQueueRequest {
   
-  @scala.inline
-  def apply(DefaultOutboundQueueId: QueueId, InstanceId: InstanceId, RoutingProfileId: RoutingProfileId): UpdateRoutingProfileDefaultOutboundQueueRequest = {
+  inline def apply(DefaultOutboundQueueId: QueueId, InstanceId: InstanceId, RoutingProfileId: RoutingProfileId): UpdateRoutingProfileDefaultOutboundQueueRequest = {
     val __obj = js.Dynamic.literal(DefaultOutboundQueueId = DefaultOutboundQueueId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], RoutingProfileId = RoutingProfileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRoutingProfileDefaultOutboundQueueRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRoutingProfileDefaultOutboundQueueRequestMutableBuilder[Self <: UpdateRoutingProfileDefaultOutboundQueueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRoutingProfileDefaultOutboundQueueRequest](x: Self) {
     
-    @scala.inline
-    def setDefaultOutboundQueueId(value: QueueId): Self = StObject.set(x, "DefaultOutboundQueueId", value.asInstanceOf[js.Any])
+    inline def setDefaultOutboundQueueId(value: QueueId): Self = StObject.set(x, "DefaultOutboundQueueId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
+    inline def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
   }
 }

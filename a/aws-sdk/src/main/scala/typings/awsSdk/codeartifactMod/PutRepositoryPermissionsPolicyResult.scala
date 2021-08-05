@@ -13,19 +13,15 @@ trait PutRepositoryPermissionsPolicyResult extends StObject {
 }
 object PutRepositoryPermissionsPolicyResult {
   
-  @scala.inline
-  def apply(): PutRepositoryPermissionsPolicyResult = {
+  inline def apply(): PutRepositoryPermissionsPolicyResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutRepositoryPermissionsPolicyResult]
   }
   
-  @scala.inline
-  implicit class PutRepositoryPermissionsPolicyResultMutableBuilder[Self <: PutRepositoryPermissionsPolicyResult] (val x: Self) extends AnyVal {
+  extension [Self <: PutRepositoryPermissionsPolicyResult](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: ResourcePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: ResourcePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
   }
 }

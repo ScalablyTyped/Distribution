@@ -24,22 +24,17 @@ trait BezierPoint extends StObject {
 }
 object BezierPoint {
   
-  @scala.inline
-  def apply(ControlPoint1: Point, ControlPoint2: Point, Position: Point): BezierPoint = {
+  inline def apply(ControlPoint1: Point, ControlPoint2: Point, Position: Point): BezierPoint = {
     val __obj = js.Dynamic.literal(ControlPoint1 = ControlPoint1.asInstanceOf[js.Any], ControlPoint2 = ControlPoint2.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any])
     __obj.asInstanceOf[BezierPoint]
   }
   
-  @scala.inline
-  implicit class BezierPointMutableBuilder[Self <: BezierPoint] (val x: Self) extends AnyVal {
+  extension [Self <: BezierPoint](x: Self) {
     
-    @scala.inline
-    def setControlPoint1(value: Point): Self = StObject.set(x, "ControlPoint1", value.asInstanceOf[js.Any])
+    inline def setControlPoint1(value: Point): Self = StObject.set(x, "ControlPoint1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlPoint2(value: Point): Self = StObject.set(x, "ControlPoint2", value.asInstanceOf[js.Any])
+    inline def setControlPoint2(value: Point): Self = StObject.set(x, "ControlPoint2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
   }
 }

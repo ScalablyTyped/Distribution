@@ -63,30 +63,23 @@ object mod {
     @js.native
     val NIL: UUIDClass = js.native
     
-    @scala.inline
-    def genV1(): UUIDClass = ^.asInstanceOf[js.Dynamic].applyDynamic("genV1")().asInstanceOf[UUIDClass]
+    inline def genV1(): UUIDClass = ^.asInstanceOf[js.Dynamic].applyDynamic("genV1")().asInstanceOf[UUIDClass]
     
-    @scala.inline
-    def genV4(): UUIDClass = ^.asInstanceOf[js.Dynamic].applyDynamic("genV4")().asInstanceOf[UUIDClass]
+    inline def genV4(): UUIDClass = ^.asInstanceOf[js.Dynamic].applyDynamic("genV4")().asInstanceOf[UUIDClass]
     
-    @scala.inline
-    def generate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[String]
+    inline def generate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[String]
     
     // Hide unnecessary methods
     @JSImport("uuidjs", "default.overwrittenUUID")
     @js.native
     def overwrittenUUID: js.Any = js.native
-    @scala.inline
-    def overwrittenUUID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overwrittenUUID")(x.asInstanceOf[js.Any])
+    inline def overwrittenUUID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overwrittenUUID")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def parse(strId: String): UUIDClass = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(strId.asInstanceOf[js.Any]).asInstanceOf[UUIDClass]
+    inline def parse(strId: String): UUIDClass = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(strId.asInstanceOf[js.Any]).asInstanceOf[UUIDClass]
     
-    @scala.inline
-    def resetState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetState")().asInstanceOf[Unit]
+    inline def resetState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetState")().asInstanceOf[Unit]
     
-    @scala.inline
-    def useMathRandom(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useMathRandom")().asInstanceOf[Unit]
+    inline def useMathRandom(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useMathRandom")().asInstanceOf[Unit]
   }
   
   @JSImport("uuidjs", "FIELD_NAMES")
@@ -101,29 +94,22 @@ object mod {
   @js.native
   val NIL: UUID = js.native
   
-  @scala.inline
-  def genV1(): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("genV1")().asInstanceOf[UUID]
+  inline def genV1(): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("genV1")().asInstanceOf[UUID]
   
-  @scala.inline
-  def genV4(): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("genV4")().asInstanceOf[UUID]
+  inline def genV4(): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("genV4")().asInstanceOf[UUID]
   
-  @scala.inline
-  def generate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[String]
+  inline def generate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[String]
   
   @JSImport("uuidjs", "overwrittenUUID")
   @js.native
   def overwrittenUUID: js.Any = js.native
-  @scala.inline
-  def overwrittenUUID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overwrittenUUID")(x.asInstanceOf[js.Any])
+  inline def overwrittenUUID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("overwrittenUUID")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def parse(strId: String): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(strId.asInstanceOf[js.Any]).asInstanceOf[UUID]
+  inline def parse(strId: String): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(strId.asInstanceOf[js.Any]).asInstanceOf[UUID]
   
-  @scala.inline
-  def resetState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetState")().asInstanceOf[Unit]
+  inline def resetState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetState")().asInstanceOf[Unit]
   
-  @scala.inline
-  def useMathRandom(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useMathRandom")().asInstanceOf[Unit]
+  inline def useMathRandom(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useMathRandom")().asInstanceOf[Unit]
   
   /** @deprecated Use class-based API */
   trait UUID extends StObject {
@@ -148,8 +134,7 @@ object mod {
   }
   object UUID {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bitFields: UUIDFields[String],
       bitString: String,
       equals_ : UUID => Boolean,
@@ -165,35 +150,25 @@ object mod {
       __obj.asInstanceOf[UUID]
     }
     
-    @scala.inline
-    implicit class UUIDMutableBuilder[Self <: UUID] (val x: Self) extends AnyVal {
+    extension [Self <: UUID](x: Self) {
       
-      @scala.inline
-      def setBitFields(value: UUIDFields[String]): Self = StObject.set(x, "bitFields", value.asInstanceOf[js.Any])
+      inline def setBitFields(value: UUIDFields[String]): Self = StObject.set(x, "bitFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitString(value: String): Self = StObject.set(x, "bitString", value.asInstanceOf[js.Any])
+      inline def setBitString(value: String): Self = StObject.set(x, "bitString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEquals_(value: UUID => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: UUID => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHexFields(value: UUIDFields[String]): Self = StObject.set(x, "hexFields", value.asInstanceOf[js.Any])
+      inline def setHexFields(value: UUIDFields[String]): Self = StObject.set(x, "hexFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHexNoDelim(value: String): Self = StObject.set(x, "hexNoDelim", value.asInstanceOf[js.Any])
+      inline def setHexNoDelim(value: String): Self = StObject.set(x, "hexNoDelim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHexString(value: String): Self = StObject.set(x, "hexString", value.asInstanceOf[js.Any])
+      inline def setHexString(value: String): Self = StObject.set(x, "hexString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntFields(value: UUIDFields[Double]): Self = StObject.set(x, "intFields", value.asInstanceOf[js.Any])
+      inline def setIntFields(value: UUIDFields[Double]): Self = StObject.set(x, "intFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
+      inline def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -219,8 +194,7 @@ object mod {
   }
   object UUIDClass {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bitFields: UUIDFields[String],
       bitString: String,
       equals_ : UUIDClass => Boolean,
@@ -236,35 +210,25 @@ object mod {
       __obj.asInstanceOf[UUIDClass]
     }
     
-    @scala.inline
-    implicit class UUIDClassMutableBuilder[Self <: UUIDClass] (val x: Self) extends AnyVal {
+    extension [Self <: UUIDClass](x: Self) {
       
-      @scala.inline
-      def setBitFields(value: UUIDFields[String]): Self = StObject.set(x, "bitFields", value.asInstanceOf[js.Any])
+      inline def setBitFields(value: UUIDFields[String]): Self = StObject.set(x, "bitFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitString(value: String): Self = StObject.set(x, "bitString", value.asInstanceOf[js.Any])
+      inline def setBitString(value: String): Self = StObject.set(x, "bitString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEquals_(value: UUIDClass => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: UUIDClass => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHexFields(value: UUIDFields[String]): Self = StObject.set(x, "hexFields", value.asInstanceOf[js.Any])
+      inline def setHexFields(value: UUIDFields[String]): Self = StObject.set(x, "hexFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHexNoDelim(value: String): Self = StObject.set(x, "hexNoDelim", value.asInstanceOf[js.Any])
+      inline def setHexNoDelim(value: String): Self = StObject.set(x, "hexNoDelim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHexString(value: String): Self = StObject.set(x, "hexString", value.asInstanceOf[js.Any])
+      inline def setHexString(value: String): Self = StObject.set(x, "hexString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntFields(value: UUIDFields[Double]): Self = StObject.set(x, "intFields", value.asInstanceOf[js.Any])
+      inline def setIntFields(value: UUIDFields[Double]): Self = StObject.set(x, "intFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
+      inline def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

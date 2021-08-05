@@ -15,8 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getArrayPages(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): js.Function3[
+  inline def getArrayPages(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): js.Function3[
     /* limit */ Double, 
     /* pageCount */ Double, 
     /* currentPage */ Double, 
@@ -28,14 +27,11 @@ object mod {
     js.Array[PageElement]
   ]]
   
-  @scala.inline
-  def hasNextPages(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): js.Function1[/* pageCount */ Double, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasNextPages")(req.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* pageCount */ Double, Boolean]]
+  inline def hasNextPages(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): js.Function1[/* pageCount */ Double, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasNextPages")(req.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* pageCount */ Double, Boolean]]
   
-  @scala.inline
-  def href(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): js.Function2[/* prev */ js.Object | Boolean, /* params */ js.Object, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("href")(req.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* prev */ js.Object | Boolean, /* params */ js.Object, String]]
+  inline def href(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): js.Function2[/* prev */ js.Object | Boolean, /* params */ js.Object, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("href")(req.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* prev */ js.Object | Boolean, /* params */ js.Object, String]]
   
-  @scala.inline
-  def middleware(): js.Function3[
+  inline def middleware(): js.Function3[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* res */ Response_[js.Any], 
     /* next */ NextFunction, 
@@ -46,8 +42,7 @@ object mod {
     /* next */ NextFunction, 
     Unit
   ]]
-  @scala.inline
-  def middleware(limit: Double): js.Function3[
+  inline def middleware(limit: Double): js.Function3[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* res */ Response_[js.Any], 
     /* next */ NextFunction, 
@@ -58,8 +53,7 @@ object mod {
     /* next */ NextFunction, 
     Unit
   ]]
-  @scala.inline
-  def middleware(limit: Double, maxLimit: Double): js.Function3[
+  inline def middleware(limit: Double, maxLimit: Double): js.Function3[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* res */ Response_[js.Any], 
     /* next */ NextFunction, 
@@ -70,8 +64,7 @@ object mod {
     /* next */ NextFunction, 
     Unit
   ]]
-  @scala.inline
-  def middleware(limit: Unit, maxLimit: Double): js.Function3[
+  inline def middleware(limit: Unit, maxLimit: Double): js.Function3[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* res */ Response_[js.Any], 
     /* next */ NextFunction, 
@@ -96,8 +89,7 @@ object mod {
   }
   object PageElement {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       number: Double,
       url: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => js.Function2[/* prev */ js.Object | Boolean, /* params */ js.Object, String]
     ): PageElement = {
@@ -105,14 +97,11 @@ object mod {
       __obj.asInstanceOf[PageElement]
     }
     
-    @scala.inline
-    implicit class PageElementMutableBuilder[Self <: PageElement] (val x: Self) extends AnyVal {
+    extension [Self <: PageElement](x: Self) {
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(
+      inline def setUrl(
         value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => js.Function2[/* prev */ js.Object | Boolean, /* params */ js.Object, String]
       ): Self = StObject.set(x, "url", js.Any.fromFunction1(value))
     }
@@ -130,26 +119,20 @@ object mod {
       }
       object Request {
         
-        @scala.inline
-        def apply(): Request = {
+        inline def apply(): Request = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Request]
         }
         
-        @scala.inline
-        implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+        extension [Self <: Request](x: Self) {
           
-          @scala.inline
-          def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+          inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+          inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
           
-          @scala.inline
-          def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+          inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+          inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
         }
       }
     }

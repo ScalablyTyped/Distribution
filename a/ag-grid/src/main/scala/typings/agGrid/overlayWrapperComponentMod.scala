@@ -42,14 +42,12 @@ object overlayWrapperComponentMod {
     @JSImport("ag-grid/dist/lib/rendering/overlays/overlayWrapperComponent", "OverlayWrapperComponent.LOADING_WRAPPER_OVERLAY_TEMPLATE")
     @js.native
     def LOADING_WRAPPER_OVERLAY_TEMPLATE: js.Any = js.native
-    @scala.inline
-    def LOADING_WRAPPER_OVERLAY_TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADING_WRAPPER_OVERLAY_TEMPLATE")(x.asInstanceOf[js.Any])
+    inline def LOADING_WRAPPER_OVERLAY_TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADING_WRAPPER_OVERLAY_TEMPLATE")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/rendering/overlays/overlayWrapperComponent", "OverlayWrapperComponent.NO_ROWS_WRAPPER_OVERLAY_TEMPLATE")
     @js.native
     def NO_ROWS_WRAPPER_OVERLAY_TEMPLATE: js.Any = js.native
-    @scala.inline
-    def NO_ROWS_WRAPPER_OVERLAY_TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_ROWS_WRAPPER_OVERLAY_TEMPLATE")(x.asInstanceOf[js.Any])
+    inline def NO_ROWS_WRAPPER_OVERLAY_TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_ROWS_WRAPPER_OVERLAY_TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
   trait IOverlayWrapperComp
@@ -64,8 +62,7 @@ object overlayWrapperComponentMod {
   }
   object IOverlayWrapperComp {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getGui: () => HTMLElement,
       hideOverlay: HTMLElement => Unit,
       showLoadingOverlay: HTMLElement => Unit,
@@ -75,17 +72,13 @@ object overlayWrapperComponentMod {
       __obj.asInstanceOf[IOverlayWrapperComp]
     }
     
-    @scala.inline
-    implicit class IOverlayWrapperCompMutableBuilder[Self <: IOverlayWrapperComp] (val x: Self) extends AnyVal {
+    extension [Self <: IOverlayWrapperComp](x: Self) {
       
-      @scala.inline
-      def setHideOverlay(value: HTMLElement => Unit): Self = StObject.set(x, "hideOverlay", js.Any.fromFunction1(value))
+      inline def setHideOverlay(value: HTMLElement => Unit): Self = StObject.set(x, "hideOverlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShowLoadingOverlay(value: HTMLElement => Unit): Self = StObject.set(x, "showLoadingOverlay", js.Any.fromFunction1(value))
+      inline def setShowLoadingOverlay(value: HTMLElement => Unit): Self = StObject.set(x, "showLoadingOverlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShowNoRowsOverlay(value: HTMLElement => Unit): Self = StObject.set(x, "showNoRowsOverlay", js.Any.fromFunction1(value))
+      inline def setShowNoRowsOverlay(value: HTMLElement => Unit): Self = StObject.set(x, "showNoRowsOverlay", js.Any.fromFunction1(value))
     }
   }
   

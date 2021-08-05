@@ -33,31 +33,23 @@ trait RichTextData extends StObject {
 }
 object RichTextData {
   
-  @scala.inline
-  def apply(): RichTextData = {
+  inline def apply(): RichTextData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RichTextData]
   }
   
-  @scala.inline
-  implicit class RichTextDataMutableBuilder[Self <: RichTextData] (val x: Self) extends AnyVal {
+  extension [Self <: RichTextData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLanguageId(value: String): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
+    inline def setLanguageId(value: String): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageIdUndefined: Self = StObject.set(x, "languageId", js.undefined)
+    inline def setLanguageIdUndefined: Self = StObject.set(x, "languageId", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

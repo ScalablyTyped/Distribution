@@ -16,19 +16,15 @@ trait mobileNumberstringSequenc extends StObject {
 }
 object mobileNumberstringSequenc {
   
-  @scala.inline
-  def apply(mobileNumber: String, sequence: Double): mobileNumberstringSequenc = {
+  inline def apply(mobileNumber: String, sequence: Double): mobileNumberstringSequenc = {
     val __obj = js.Dynamic.literal(mobileNumber = mobileNumber.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[mobileNumberstringSequenc]
   }
   
-  @scala.inline
-  implicit class mobileNumberstringSequencMutableBuilder[Self <: mobileNumberstringSequenc] (val x: Self) extends AnyVal {
+  extension [Self <: mobileNumberstringSequenc](x: Self) {
     
-    @scala.inline
-    def setMobileNumber(value: String): Self = StObject.set(x, "mobileNumber", value.asInstanceOf[js.Any])
+    inline def setMobileNumber(value: String): Self = StObject.set(x, "mobileNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+    inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
   }
 }

@@ -27,49 +27,35 @@ trait FontSetting extends StObject {
 }
 object FontSetting {
   
-  @scala.inline
-  def apply(): FontSetting = {
+  inline def apply(): FontSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontSetting]
   }
   
-  @scala.inline
-  implicit class FontSettingMutableBuilder[Self <: FontSetting] (val x: Self) extends AnyVal {
+  extension [Self <: FontSetting](x: Self) {
     
-    @scala.inline
-    def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+    inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
     
-    @scala.inline
-    def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+    inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+    inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setMax_size(value: Double): Self = StObject.set(x, "max_size", value.asInstanceOf[js.Any])
+    inline def setMax_size(value: Double): Self = StObject.set(x, "max_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax_sizeUndefined: Self = StObject.set(x, "max_size", js.undefined)
+    inline def setMax_sizeUndefined: Self = StObject.set(x, "max_size", js.undefined)
     
-    @scala.inline
-    def setMin_size(value: Double): Self = StObject.set(x, "min_size", value.asInstanceOf[js.Any])
+    inline def setMin_size(value: Double): Self = StObject.set(x, "min_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin_sizeUndefined: Self = StObject.set(x, "min_size", js.undefined)
+    inline def setMin_sizeUndefined: Self = StObject.set(x, "min_size", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

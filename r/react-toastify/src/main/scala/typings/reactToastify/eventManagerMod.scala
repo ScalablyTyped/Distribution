@@ -37,23 +37,17 @@ object eventManagerMod {
   trait Event extends StObject
   object Event {
     
-    @scala.inline
-    def Change: `4` = 4.asInstanceOf[`4`]
+    inline def Change: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def Clear: `1` = 1.asInstanceOf[`1`]
+    inline def Clear: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def ClearWaitingQueue: `5` = 5.asInstanceOf[`5`]
+    inline def ClearWaitingQueue: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def DidMount: `2` = 2.asInstanceOf[`2`]
+    inline def DidMount: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def Show: `0` = 0.asInstanceOf[`0`]
+    inline def Show: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def WillUnmount: `3` = 3.asInstanceOf[`3`]
+    inline def WillUnmount: `3` = 3.asInstanceOf[`3`]
   }
   
   @js.native

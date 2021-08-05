@@ -10,16 +10,13 @@ trait AppAssociation extends StObject {
 }
 object AppAssociation {
   
-  @scala.inline
-  def apply(repository: RepoAssociation): AppAssociation = {
+  inline def apply(repository: RepoAssociation): AppAssociation = {
     val __obj = js.Dynamic.literal(repository = repository.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppAssociation]
   }
   
-  @scala.inline
-  implicit class AppAssociationMutableBuilder[Self <: AppAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: AppAssociation](x: Self) {
     
-    @scala.inline
-    def setRepository(value: RepoAssociation): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: RepoAssociation): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
   }
 }

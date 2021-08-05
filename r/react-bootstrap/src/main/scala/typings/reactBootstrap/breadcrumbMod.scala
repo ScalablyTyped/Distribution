@@ -26,8 +26,7 @@ object breadcrumbMod {
   @JSImport("react-bootstrap/lib/Breadcrumb", "Item")
   @js.native
   def Item: Instantiable0[typings.reactBootstrap.breadcrumbItemMod.^] = js.native
-  @scala.inline
-  def Item_=(x: Instantiable0[typings.reactBootstrap.breadcrumbItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: Instantiable0[typings.reactBootstrap.breadcrumbItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Breadcrumb
@@ -41,20 +40,16 @@ object breadcrumbMod {
   }
   object BreadcrumbProps {
     
-    @scala.inline
-    def apply(): BreadcrumbProps = {
+    inline def apply(): BreadcrumbProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BreadcrumbProps]
     }
     
-    @scala.inline
-    implicit class BreadcrumbPropsMutableBuilder[Self <: BreadcrumbProps] (val x: Self) extends AnyVal {
+    extension [Self <: BreadcrumbProps](x: Self) {
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
     }
   }
 }

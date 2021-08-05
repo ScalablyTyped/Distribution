@@ -47,7 +47,7 @@ object phoneMatchMod {
       *
       * Note: This is a string to allow for prefixed 0's.
       */
-    val number: js.Any = js.native
+    /* private */ val number: js.Any = js.native
     
     /**
       * @protected
@@ -58,7 +58,7 @@ object phoneMatchMod {
       *
       * Ex: '+1 (123) 456 7879'
       */
-    val plusSign: js.Any = js.native
+    /* private */ val plusSign: js.Any = js.native
   }
   
   trait PhoneMatchConfig
@@ -71,8 +71,7 @@ object phoneMatchMod {
   }
   object PhoneMatchConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       matchedText: String,
       number: String,
       offset: Double,
@@ -83,14 +82,11 @@ object phoneMatchMod {
       __obj.asInstanceOf[PhoneMatchConfig]
     }
     
-    @scala.inline
-    implicit class PhoneMatchConfigMutableBuilder[Self <: PhoneMatchConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PhoneMatchConfig](x: Self) {
       
-      @scala.inline
-      def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlusSign(value: Boolean): Self = StObject.set(x, "plusSign", value.asInstanceOf[js.Any])
+      inline def setPlusSign(value: Boolean): Self = StObject.set(x, "plusSign", value.asInstanceOf[js.Any])
     }
   }
 }

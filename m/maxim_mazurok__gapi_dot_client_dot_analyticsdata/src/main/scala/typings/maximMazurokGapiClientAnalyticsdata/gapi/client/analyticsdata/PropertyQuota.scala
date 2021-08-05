@@ -26,37 +26,27 @@ trait PropertyQuota extends StObject {
 }
 object PropertyQuota {
   
-  @scala.inline
-  def apply(): PropertyQuota = {
+  inline def apply(): PropertyQuota = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropertyQuota]
   }
   
-  @scala.inline
-  implicit class PropertyQuotaMutableBuilder[Self <: PropertyQuota] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyQuota](x: Self) {
     
-    @scala.inline
-    def setConcurrentRequests(value: QuotaStatus): Self = StObject.set(x, "concurrentRequests", value.asInstanceOf[js.Any])
+    inline def setConcurrentRequests(value: QuotaStatus): Self = StObject.set(x, "concurrentRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcurrentRequestsUndefined: Self = StObject.set(x, "concurrentRequests", js.undefined)
+    inline def setConcurrentRequestsUndefined: Self = StObject.set(x, "concurrentRequests", js.undefined)
     
-    @scala.inline
-    def setServerErrorsPerProjectPerHour(value: QuotaStatus): Self = StObject.set(x, "serverErrorsPerProjectPerHour", value.asInstanceOf[js.Any])
+    inline def setServerErrorsPerProjectPerHour(value: QuotaStatus): Self = StObject.set(x, "serverErrorsPerProjectPerHour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerErrorsPerProjectPerHourUndefined: Self = StObject.set(x, "serverErrorsPerProjectPerHour", js.undefined)
+    inline def setServerErrorsPerProjectPerHourUndefined: Self = StObject.set(x, "serverErrorsPerProjectPerHour", js.undefined)
     
-    @scala.inline
-    def setTokensPerDay(value: QuotaStatus): Self = StObject.set(x, "tokensPerDay", value.asInstanceOf[js.Any])
+    inline def setTokensPerDay(value: QuotaStatus): Self = StObject.set(x, "tokensPerDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensPerDayUndefined: Self = StObject.set(x, "tokensPerDay", js.undefined)
+    inline def setTokensPerDayUndefined: Self = StObject.set(x, "tokensPerDay", js.undefined)
     
-    @scala.inline
-    def setTokensPerHour(value: QuotaStatus): Self = StObject.set(x, "tokensPerHour", value.asInstanceOf[js.Any])
+    inline def setTokensPerHour(value: QuotaStatus): Self = StObject.set(x, "tokensPerHour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensPerHourUndefined: Self = StObject.set(x, "tokensPerHour", js.undefined)
+    inline def setTokensPerHourUndefined: Self = StObject.set(x, "tokensPerHour", js.undefined)
   }
 }

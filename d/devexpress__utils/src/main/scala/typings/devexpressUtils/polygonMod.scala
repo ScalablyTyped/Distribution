@@ -54,10 +54,8 @@ object polygonMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def collision[T1 /* <: Point */, T2 /* <: Point */](a: Polygon[T1], b: Polygon[T2]): CollisionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("collision")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[CollisionResult]
+    inline def collision[T1 /* <: Point */, T2 /* <: Point */](a: Polygon[T1], b: Polygon[T2]): CollisionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("collision")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[CollisionResult]
     
-    @scala.inline
-    def fromRectangle(rect: IRectangle): Polygon[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRectangle")(rect.asInstanceOf[js.Any]).asInstanceOf[Polygon[Point]]
+    inline def fromRectangle(rect: IRectangle): Polygon[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRectangle")(rect.asInstanceOf[js.Any]).asInstanceOf[Polygon[Point]]
   }
 }

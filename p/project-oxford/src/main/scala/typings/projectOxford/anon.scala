@@ -20,8 +20,7 @@ object anon {
   }
   object AccentColor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accentColor: String,
       dominantColorBackground: String,
       dominantColorForeground: String,
@@ -32,26 +31,19 @@ object anon {
       __obj.asInstanceOf[AccentColor]
     }
     
-    @scala.inline
-    implicit class AccentColorMutableBuilder[Self <: AccentColor] (val x: Self) extends AnyVal {
+    extension [Self <: AccentColor](x: Self) {
       
-      @scala.inline
-      def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
+      inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDominantColorBackground(value: String): Self = StObject.set(x, "dominantColorBackground", value.asInstanceOf[js.Any])
+      inline def setDominantColorBackground(value: String): Self = StObject.set(x, "dominantColorBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDominantColorForeground(value: String): Self = StObject.set(x, "dominantColorForeground", value.asInstanceOf[js.Any])
+      inline def setDominantColorForeground(value: String): Self = StObject.set(x, "dominantColorForeground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDominantColors(value: js.Array[String]): Self = StObject.set(x, "dominantColors", value.asInstanceOf[js.Any])
+      inline def setDominantColors(value: js.Array[String]): Self = StObject.set(x, "dominantColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDominantColorsVarargs(value: String*): Self = StObject.set(x, "dominantColors", js.Array(value :_*))
+      inline def setDominantColorsVarargs(value: String*): Self = StObject.set(x, "dominantColors", js.Array(value :_*))
       
-      @scala.inline
-      def setIsBWImg(value: Boolean): Self = StObject.set(x, "isBWImg", value.asInstanceOf[js.Any])
+      inline def setIsBWImg(value: Boolean): Self = StObject.set(x, "isBWImg", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,26 +59,20 @@ object anon {
   }
   object AdultScore {
     
-    @scala.inline
-    def apply(adultScore: Double, isAdultContent: Boolean, isRacyContent: Boolean, racyScore: Double): AdultScore = {
+    inline def apply(adultScore: Double, isAdultContent: Boolean, isRacyContent: Boolean, racyScore: Double): AdultScore = {
       val __obj = js.Dynamic.literal(adultScore = adultScore.asInstanceOf[js.Any], isAdultContent = isAdultContent.asInstanceOf[js.Any], isRacyContent = isRacyContent.asInstanceOf[js.Any], racyScore = racyScore.asInstanceOf[js.Any])
       __obj.asInstanceOf[AdultScore]
     }
     
-    @scala.inline
-    implicit class AdultScoreMutableBuilder[Self <: AdultScore] (val x: Self) extends AnyVal {
+    extension [Self <: AdultScore](x: Self) {
       
-      @scala.inline
-      def setAdultScore(value: Double): Self = StObject.set(x, "adultScore", value.asInstanceOf[js.Any])
+      inline def setAdultScore(value: Double): Self = StObject.set(x, "adultScore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAdultContent(value: Boolean): Self = StObject.set(x, "isAdultContent", value.asInstanceOf[js.Any])
+      inline def setIsAdultContent(value: Boolean): Self = StObject.set(x, "isAdultContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRacyContent(value: Boolean): Self = StObject.set(x, "isRacyContent", value.asInstanceOf[js.Any])
+      inline def setIsRacyContent(value: Boolean): Self = StObject.set(x, "isRacyContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRacyScore(value: Double): Self = StObject.set(x, "racyScore", value.asInstanceOf[js.Any])
+      inline def setRacyScore(value: Double): Self = StObject.set(x, "racyScore", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,23 +86,18 @@ object anon {
   }
   object Age {
     
-    @scala.inline
-    def apply(age: Double, faceRectangle: Height, gender: String): Age = {
+    inline def apply(age: Double, faceRectangle: Height, gender: String): Age = {
       val __obj = js.Dynamic.literal(age = age.asInstanceOf[js.Any], faceRectangle = faceRectangle.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any])
       __obj.asInstanceOf[Age]
     }
     
-    @scala.inline
-    implicit class AgeMutableBuilder[Self <: Age] (val x: Self) extends AnyVal {
+    extension [Self <: Age](x: Self) {
       
-      @scala.inline
-      def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
+      inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaceRectangle(value: Height): Self = StObject.set(x, "faceRectangle", value.asInstanceOf[js.Any])
+      inline def setFaceRectangle(value: Height): Self = StObject.set(x, "faceRectangle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+      inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,20 +109,16 @@ object anon {
   }
   object BoundingBox {
     
-    @scala.inline
-    def apply(boundingBox: String, text: String): BoundingBox = {
+    inline def apply(boundingBox: String, text: String): BoundingBox = {
       val __obj = js.Dynamic.literal(boundingBox = boundingBox.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[BoundingBox]
     }
     
-    @scala.inline
-    implicit class BoundingBoxMutableBuilder[Self <: BoundingBox] (val x: Self) extends AnyVal {
+    extension [Self <: BoundingBox](x: Self) {
       
-      @scala.inline
-      def setBoundingBox(value: String): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
+      inline def setBoundingBox(value: String): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,20 +130,16 @@ object anon {
   }
   object ClipArtType {
     
-    @scala.inline
-    def apply(clipArtType: Double, lineDrawingType: Double): ClipArtType = {
+    inline def apply(clipArtType: Double, lineDrawingType: Double): ClipArtType = {
       val __obj = js.Dynamic.literal(clipArtType = clipArtType.asInstanceOf[js.Any], lineDrawingType = lineDrawingType.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClipArtType]
     }
     
-    @scala.inline
-    implicit class ClipArtTypeMutableBuilder[Self <: ClipArtType] (val x: Self) extends AnyVal {
+    extension [Self <: ClipArtType](x: Self) {
       
-      @scala.inline
-      def setClipArtType(value: Double): Self = StObject.set(x, "clipArtType", value.asInstanceOf[js.Any])
+      inline def setClipArtType(value: Double): Self = StObject.set(x, "clipArtType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineDrawingType(value: Double): Self = StObject.set(x, "lineDrawingType", value.asInstanceOf[js.Any])
+      inline def setLineDrawingType(value: Double): Self = StObject.set(x, "lineDrawingType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -178,20 +151,16 @@ object anon {
   }
   object Confidence {
     
-    @scala.inline
-    def apply(confidence: Double, personId: String): Confidence = {
+    inline def apply(confidence: Double, personId: String): Confidence = {
       val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], personId = personId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Confidence]
     }
     
-    @scala.inline
-    implicit class ConfidenceMutableBuilder[Self <: Confidence] (val x: Self) extends AnyVal {
+    extension [Self <: Confidence](x: Self) {
       
-      @scala.inline
-      def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+      inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonId(value: String): Self = StObject.set(x, "personId", value.asInstanceOf[js.Any])
+      inline def setPersonId(value: String): Self = StObject.set(x, "personId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -205,23 +174,18 @@ object anon {
   }
   object Format {
     
-    @scala.inline
-    def apply(format: String, height: Double, width: Double): Format = {
+    inline def apply(format: String, height: Double, width: Double): Format = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Format]
     }
     
-    @scala.inline
-    implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+    extension [Self <: Format](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,26 +201,20 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(height: Double, left: Double, top: Double, width: Double): Height = {
+    inline def apply(height: Double, left: Double, top: Double, width: Double): Height = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -268,23 +226,18 @@ object anon {
   }
   object Lines {
     
-    @scala.inline
-    def apply(boundingBox: String, lines: js.Array[Words]): Lines = {
+    inline def apply(boundingBox: String, lines: js.Array[Words]): Lines = {
       val __obj = js.Dynamic.literal(boundingBox = boundingBox.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any])
       __obj.asInstanceOf[Lines]
     }
     
-    @scala.inline
-    implicit class LinesMutableBuilder[Self <: Lines] (val x: Self) extends AnyVal {
+    extension [Self <: Lines](x: Self) {
       
-      @scala.inline
-      def setBoundingBox(value: String): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
+      inline def setBoundingBox(value: String): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLines(value: js.Array[Words]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: js.Array[Words]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesVarargs(value: Words*): Self = StObject.set(x, "lines", js.Array(value :_*))
+      inline def setLinesVarargs(value: Words*): Self = StObject.set(x, "lines", js.Array(value :_*))
     }
   }
   
@@ -296,20 +249,16 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String, score: Double): Name = {
+    inline def apply(name: String, score: Double): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+      inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     }
   }
   
@@ -319,17 +268,14 @@ object anon {
   }
   object PersonId {
     
-    @scala.inline
-    def apply(personId: String): PersonId = {
+    inline def apply(personId: String): PersonId = {
       val __obj = js.Dynamic.literal(personId = personId.asInstanceOf[js.Any])
       __obj.asInstanceOf[PersonId]
     }
     
-    @scala.inline
-    implicit class PersonIdMutableBuilder[Self <: PersonId] (val x: Self) extends AnyVal {
+    extension [Self <: PersonId](x: Self) {
       
-      @scala.inline
-      def setPersonId(value: String): Self = StObject.set(x, "personId", value.asInstanceOf[js.Any])
+      inline def setPersonId(value: String): Self = StObject.set(x, "personId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -343,23 +289,18 @@ object anon {
   }
   object Pitch {
     
-    @scala.inline
-    def apply(pitch: Double, roll: Double, yaw: Double): Pitch = {
+    inline def apply(pitch: Double, roll: Double, yaw: Double): Pitch = {
       val __obj = js.Dynamic.literal(pitch = pitch.asInstanceOf[js.Any], roll = roll.asInstanceOf[js.Any], yaw = yaw.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pitch]
     }
     
-    @scala.inline
-    implicit class PitchMutableBuilder[Self <: Pitch] (val x: Self) extends AnyVal {
+    extension [Self <: Pitch](x: Self) {
       
-      @scala.inline
-      def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+      inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoll(value: Double): Self = StObject.set(x, "roll", value.asInstanceOf[js.Any])
+      inline def setRoll(value: Double): Self = StObject.set(x, "roll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYaw(value: Double): Self = StObject.set(x, "yaw", value.asInstanceOf[js.Any])
+      inline def setYaw(value: Double): Self = StObject.set(x, "yaw", value.asInstanceOf[js.Any])
     }
   }
   
@@ -371,23 +312,18 @@ object anon {
   }
   object Words {
     
-    @scala.inline
-    def apply(boundingBox: String, words: js.Array[BoundingBox]): Words = {
+    inline def apply(boundingBox: String, words: js.Array[BoundingBox]): Words = {
       val __obj = js.Dynamic.literal(boundingBox = boundingBox.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
       __obj.asInstanceOf[Words]
     }
     
-    @scala.inline
-    implicit class WordsMutableBuilder[Self <: Words] (val x: Self) extends AnyVal {
+    extension [Self <: Words](x: Self) {
       
-      @scala.inline
-      def setBoundingBox(value: String): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
+      inline def setBoundingBox(value: String): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWords(value: js.Array[BoundingBox]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+      inline def setWords(value: js.Array[BoundingBox]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordsVarargs(value: BoundingBox*): Self = StObject.set(x, "words", js.Array(value :_*))
+      inline def setWordsVarargs(value: BoundingBox*): Self = StObject.set(x, "words", js.Array(value :_*))
     }
   }
 }

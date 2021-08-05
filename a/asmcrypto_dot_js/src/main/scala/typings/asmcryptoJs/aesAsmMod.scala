@@ -112,8 +112,7 @@ object aesAsmMod {
     @JSImport("asmcrypto.js/dist_es8/aes/aes.asm", "AES_asm.DEC")
     @js.native
     def DEC: CBC = js.native
-    @scala.inline
-    def DEC_=(x: CBC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEC")(x.asInstanceOf[js.Any])
+    inline def DEC_=(x: CBC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEC")(x.asInstanceOf[js.Any])
     
     /**
       * AES enciphering mode constants
@@ -121,14 +120,12 @@ object aesAsmMod {
     @JSImport("asmcrypto.js/dist_es8/aes/aes.asm", "AES_asm.ENC")
     @js.native
     def ENC: Dictkey = js.native
-    @scala.inline
-    def ENC_=(x: Dictkey): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENC")(x.asInstanceOf[js.Any])
+    inline def ENC_=(x: Dictkey): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENC")(x.asInstanceOf[js.Any])
     
     @JSImport("asmcrypto.js/dist_es8/aes/aes.asm", "AES_asm.HEAP_DATA")
     @js.native
     def HEAP_DATA: Double = js.native
-    @scala.inline
-    def HEAP_DATA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEAP_DATA")(x.asInstanceOf[js.Any])
+    inline def HEAP_DATA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEAP_DATA")(x.asInstanceOf[js.Any])
     
     /**
       * AES MAC mode constants
@@ -136,8 +133,7 @@ object aesAsmMod {
     @JSImport("asmcrypto.js/dist_es8/aes/aes.asm", "AES_asm.MAC")
     @js.native
     def MAC: GCM = js.native
-    @scala.inline
-    def MAC_=(x: GCM): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAC")(x.asInstanceOf[js.Any])
+    inline def MAC_=(x: GCM): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAC")(x.asInstanceOf[js.Any])
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -151,22 +147,16 @@ object aesAsmMod {
   trait AESMode extends StObject
   object AESMode {
     
-    @scala.inline
-    def CBC: typings.asmcryptoJs.asmcryptoJsStrings.CBC = "CBC".asInstanceOf[typings.asmcryptoJs.asmcryptoJsStrings.CBC]
+    inline def CBC: typings.asmcryptoJs.asmcryptoJsStrings.CBC = "CBC".asInstanceOf[typings.asmcryptoJs.asmcryptoJsStrings.CBC]
     
-    @scala.inline
-    def CCM: typings.asmcryptoJs.asmcryptoJsStrings.CCM = "CCM".asInstanceOf[typings.asmcryptoJs.asmcryptoJsStrings.CCM]
+    inline def CCM: typings.asmcryptoJs.asmcryptoJsStrings.CCM = "CCM".asInstanceOf[typings.asmcryptoJs.asmcryptoJsStrings.CCM]
     
-    @scala.inline
-    def CFB: typings.asmcryptoJs.asmcryptoJsStrings.CFB = "CFB".asInstanceOf[typings.asmcryptoJs.asmcryptoJsStrings.CFB]
+    inline def CFB: typings.asmcryptoJs.asmcryptoJsStrings.CFB = "CFB".asInstanceOf[typings.asmcryptoJs.asmcryptoJsStrings.CFB]
     
-    @scala.inline
-    def CTR: typings.asmcryptoJs.asmcryptoJsStrings.CTR = "CTR".asInstanceOf[typings.asmcryptoJs.asmcryptoJsStrings.CTR]
+    inline def CTR: typings.asmcryptoJs.asmcryptoJsStrings.CTR = "CTR".asInstanceOf[typings.asmcryptoJs.asmcryptoJsStrings.CTR]
     
-    @scala.inline
-    def ECB: typings.asmcryptoJs.asmcryptoJsStrings.ECB = "ECB".asInstanceOf[typings.asmcryptoJs.asmcryptoJsStrings.ECB]
+    inline def ECB: typings.asmcryptoJs.asmcryptoJsStrings.ECB = "ECB".asInstanceOf[typings.asmcryptoJs.asmcryptoJsStrings.ECB]
     
-    @scala.inline
-    def OFB: typings.asmcryptoJs.asmcryptoJsStrings.OFB = "OFB".asInstanceOf[typings.asmcryptoJs.asmcryptoJsStrings.OFB]
+    inline def OFB: typings.asmcryptoJs.asmcryptoJsStrings.OFB = "OFB".asInstanceOf[typings.asmcryptoJs.asmcryptoJsStrings.OFB]
   }
 }

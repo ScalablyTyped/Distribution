@@ -31,8 +31,7 @@ trait XContainerApproveListener extends StObject {
 }
 object XContainerApproveListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     approveInsertElement: ContainerEvent => XVeto,
     approveRemoveElement: ContainerEvent => XVeto,
     approveReplaceElement: ContainerEvent => XVeto
@@ -41,16 +40,12 @@ object XContainerApproveListener {
     __obj.asInstanceOf[XContainerApproveListener]
   }
   
-  @scala.inline
-  implicit class XContainerApproveListenerMutableBuilder[Self <: XContainerApproveListener] (val x: Self) extends AnyVal {
+  extension [Self <: XContainerApproveListener](x: Self) {
     
-    @scala.inline
-    def setApproveInsertElement(value: ContainerEvent => XVeto): Self = StObject.set(x, "approveInsertElement", js.Any.fromFunction1(value))
+    inline def setApproveInsertElement(value: ContainerEvent => XVeto): Self = StObject.set(x, "approveInsertElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApproveRemoveElement(value: ContainerEvent => XVeto): Self = StObject.set(x, "approveRemoveElement", js.Any.fromFunction1(value))
+    inline def setApproveRemoveElement(value: ContainerEvent => XVeto): Self = StObject.set(x, "approveRemoveElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApproveReplaceElement(value: ContainerEvent => XVeto): Self = StObject.set(x, "approveReplaceElement", js.Any.fromFunction1(value))
+    inline def setApproveReplaceElement(value: ContainerEvent => XVeto): Self = StObject.set(x, "approveReplaceElement", js.Any.fromFunction1(value))
   }
 }

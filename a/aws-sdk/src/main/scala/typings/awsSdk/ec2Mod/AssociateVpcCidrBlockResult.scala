@@ -23,31 +23,23 @@ trait AssociateVpcCidrBlockResult extends StObject {
 }
 object AssociateVpcCidrBlockResult {
   
-  @scala.inline
-  def apply(): AssociateVpcCidrBlockResult = {
+  inline def apply(): AssociateVpcCidrBlockResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateVpcCidrBlockResult]
   }
   
-  @scala.inline
-  implicit class AssociateVpcCidrBlockResultMutableBuilder[Self <: AssociateVpcCidrBlockResult] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateVpcCidrBlockResult](x: Self) {
     
-    @scala.inline
-    def setCidrBlockAssociation(value: VpcCidrBlockAssociation): Self = StObject.set(x, "CidrBlockAssociation", value.asInstanceOf[js.Any])
+    inline def setCidrBlockAssociation(value: VpcCidrBlockAssociation): Self = StObject.set(x, "CidrBlockAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrBlockAssociationUndefined: Self = StObject.set(x, "CidrBlockAssociation", js.undefined)
+    inline def setCidrBlockAssociationUndefined: Self = StObject.set(x, "CidrBlockAssociation", js.undefined)
     
-    @scala.inline
-    def setIpv6CidrBlockAssociation(value: VpcIpv6CidrBlockAssociation): Self = StObject.set(x, "Ipv6CidrBlockAssociation", value.asInstanceOf[js.Any])
+    inline def setIpv6CidrBlockAssociation(value: VpcIpv6CidrBlockAssociation): Self = StObject.set(x, "Ipv6CidrBlockAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6CidrBlockAssociationUndefined: Self = StObject.set(x, "Ipv6CidrBlockAssociation", js.undefined)
+    inline def setIpv6CidrBlockAssociationUndefined: Self = StObject.set(x, "Ipv6CidrBlockAssociation", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

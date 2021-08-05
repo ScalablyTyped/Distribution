@@ -21,20 +21,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object BooleanLiteral_ {
   
-  @scala.inline
-  def apply(value: Boolean): BooleanLiteral_ = {
+  inline def apply(value: Boolean): BooleanLiteral_ = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("BooleanLiteral")
     __obj.asInstanceOf[BooleanLiteral_]
   }
   
-  @scala.inline
-  implicit class BooleanLiteral_MutableBuilder[Self <: BooleanLiteral_] (val x: Self) extends AnyVal {
+  extension [Self <: BooleanLiteral_](x: Self) {
     
-    @scala.inline
-    def setType(value: BooleanLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BooleanLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -123,56 +123,40 @@ object anon {
   }
   object parseBooleanstrueParseOpt {
     
-    @scala.inline
-    def apply(parseBooleans: `true` & js.UndefOr[Boolean]): parseBooleanstrueParseOpt = {
+    inline def apply(parseBooleans: `true` & js.UndefOr[Boolean]): parseBooleanstrueParseOpt = {
       val __obj = js.Dynamic.literal(parseBooleans = parseBooleans.asInstanceOf[js.Any])
       __obj.asInstanceOf[parseBooleanstrueParseOpt]
     }
     
-    @scala.inline
-    implicit class parseBooleanstrueParseOptMutableBuilder[Self <: parseBooleanstrueParseOpt] (val x: Self) extends AnyVal {
+    extension [Self <: parseBooleanstrueParseOpt](x: Self) {
       
-      @scala.inline
-      def setArrayFormat(value: bracket | index | comma | separator | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
+      inline def setArrayFormat(value: bracket | index | comma | separator | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayFormatSeparator(value: String): Self = StObject.set(x, "arrayFormatSeparator", value.asInstanceOf[js.Any])
+      inline def setArrayFormatSeparator(value: String): Self = StObject.set(x, "arrayFormatSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayFormatSeparatorUndefined: Self = StObject.set(x, "arrayFormatSeparator", js.undefined)
+      inline def setArrayFormatSeparatorUndefined: Self = StObject.set(x, "arrayFormatSeparator", js.undefined)
       
-      @scala.inline
-      def setArrayFormatUndefined: Self = StObject.set(x, "arrayFormat", js.undefined)
+      inline def setArrayFormatUndefined: Self = StObject.set(x, "arrayFormat", js.undefined)
       
-      @scala.inline
-      def setDecode(value: Boolean): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
+      inline def setDecode(value: Boolean): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
+      inline def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
       
-      @scala.inline
-      def setParseBooleans(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "parseBooleans", value.asInstanceOf[js.Any])
+      inline def setParseBooleans(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "parseBooleans", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseFragmentIdentifier(value: Boolean): Self = StObject.set(x, "parseFragmentIdentifier", value.asInstanceOf[js.Any])
+      inline def setParseFragmentIdentifier(value: Boolean): Self = StObject.set(x, "parseFragmentIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseFragmentIdentifierUndefined: Self = StObject.set(x, "parseFragmentIdentifier", js.undefined)
+      inline def setParseFragmentIdentifierUndefined: Self = StObject.set(x, "parseFragmentIdentifier", js.undefined)
       
-      @scala.inline
-      def setParseNumbers(value: Boolean): Self = StObject.set(x, "parseNumbers", value.asInstanceOf[js.Any])
+      inline def setParseNumbers(value: Boolean): Self = StObject.set(x, "parseNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseNumbersUndefined: Self = StObject.set(x, "parseNumbers", js.undefined)
+      inline def setParseNumbersUndefined: Self = StObject.set(x, "parseNumbers", js.undefined)
       
-      @scala.inline
-      def setSort(value: (js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: (js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortFunction2(value: (/* itemLeft */ String, /* itemRight */ String) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+      inline def setSortFunction2(value: (/* itemLeft */ String, /* itemRight */ String) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     }
   }
   
@@ -286,53 +270,38 @@ object anon {
   }
   object parseBooleanstrueparseNum {
     
-    @scala.inline
-    def apply(parseBooleans: `true` & js.UndefOr[Boolean], parseNumbers: `true` & js.UndefOr[Boolean]): parseBooleanstrueparseNum = {
+    inline def apply(parseBooleans: `true` & js.UndefOr[Boolean], parseNumbers: `true` & js.UndefOr[Boolean]): parseBooleanstrueparseNum = {
       val __obj = js.Dynamic.literal(parseBooleans = parseBooleans.asInstanceOf[js.Any], parseNumbers = parseNumbers.asInstanceOf[js.Any])
       __obj.asInstanceOf[parseBooleanstrueparseNum]
     }
     
-    @scala.inline
-    implicit class parseBooleanstrueparseNumMutableBuilder[Self <: parseBooleanstrueparseNum] (val x: Self) extends AnyVal {
+    extension [Self <: parseBooleanstrueparseNum](x: Self) {
       
-      @scala.inline
-      def setArrayFormat(value: bracket | index | comma | separator | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
+      inline def setArrayFormat(value: bracket | index | comma | separator | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayFormatSeparator(value: String): Self = StObject.set(x, "arrayFormatSeparator", value.asInstanceOf[js.Any])
+      inline def setArrayFormatSeparator(value: String): Self = StObject.set(x, "arrayFormatSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayFormatSeparatorUndefined: Self = StObject.set(x, "arrayFormatSeparator", js.undefined)
+      inline def setArrayFormatSeparatorUndefined: Self = StObject.set(x, "arrayFormatSeparator", js.undefined)
       
-      @scala.inline
-      def setArrayFormatUndefined: Self = StObject.set(x, "arrayFormat", js.undefined)
+      inline def setArrayFormatUndefined: Self = StObject.set(x, "arrayFormat", js.undefined)
       
-      @scala.inline
-      def setDecode(value: Boolean): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
+      inline def setDecode(value: Boolean): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
+      inline def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
       
-      @scala.inline
-      def setParseBooleans(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "parseBooleans", value.asInstanceOf[js.Any])
+      inline def setParseBooleans(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "parseBooleans", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseFragmentIdentifier(value: Boolean): Self = StObject.set(x, "parseFragmentIdentifier", value.asInstanceOf[js.Any])
+      inline def setParseFragmentIdentifier(value: Boolean): Self = StObject.set(x, "parseFragmentIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseFragmentIdentifierUndefined: Self = StObject.set(x, "parseFragmentIdentifier", js.undefined)
+      inline def setParseFragmentIdentifierUndefined: Self = StObject.set(x, "parseFragmentIdentifier", js.undefined)
       
-      @scala.inline
-      def setParseNumbers(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "parseNumbers", value.asInstanceOf[js.Any])
+      inline def setParseNumbers(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "parseNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSort(value: (js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: (js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortFunction2(value: (/* itemLeft */ String, /* itemRight */ String) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+      inline def setSortFunction2(value: (/* itemLeft */ String, /* itemRight */ String) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     }
   }
   
@@ -446,56 +415,40 @@ object anon {
   }
   object parseNumberstrueParseOpti {
     
-    @scala.inline
-    def apply(parseNumbers: `true` & js.UndefOr[Boolean]): parseNumberstrueParseOpti = {
+    inline def apply(parseNumbers: `true` & js.UndefOr[Boolean]): parseNumberstrueParseOpti = {
       val __obj = js.Dynamic.literal(parseNumbers = parseNumbers.asInstanceOf[js.Any])
       __obj.asInstanceOf[parseNumberstrueParseOpti]
     }
     
-    @scala.inline
-    implicit class parseNumberstrueParseOptiMutableBuilder[Self <: parseNumberstrueParseOpti] (val x: Self) extends AnyVal {
+    extension [Self <: parseNumberstrueParseOpti](x: Self) {
       
-      @scala.inline
-      def setArrayFormat(value: bracket | index | comma | separator | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
+      inline def setArrayFormat(value: bracket | index | comma | separator | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayFormatSeparator(value: String): Self = StObject.set(x, "arrayFormatSeparator", value.asInstanceOf[js.Any])
+      inline def setArrayFormatSeparator(value: String): Self = StObject.set(x, "arrayFormatSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayFormatSeparatorUndefined: Self = StObject.set(x, "arrayFormatSeparator", js.undefined)
+      inline def setArrayFormatSeparatorUndefined: Self = StObject.set(x, "arrayFormatSeparator", js.undefined)
       
-      @scala.inline
-      def setArrayFormatUndefined: Self = StObject.set(x, "arrayFormat", js.undefined)
+      inline def setArrayFormatUndefined: Self = StObject.set(x, "arrayFormat", js.undefined)
       
-      @scala.inline
-      def setDecode(value: Boolean): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
+      inline def setDecode(value: Boolean): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
+      inline def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
       
-      @scala.inline
-      def setParseBooleans(value: Boolean): Self = StObject.set(x, "parseBooleans", value.asInstanceOf[js.Any])
+      inline def setParseBooleans(value: Boolean): Self = StObject.set(x, "parseBooleans", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseBooleansUndefined: Self = StObject.set(x, "parseBooleans", js.undefined)
+      inline def setParseBooleansUndefined: Self = StObject.set(x, "parseBooleans", js.undefined)
       
-      @scala.inline
-      def setParseFragmentIdentifier(value: Boolean): Self = StObject.set(x, "parseFragmentIdentifier", value.asInstanceOf[js.Any])
+      inline def setParseFragmentIdentifier(value: Boolean): Self = StObject.set(x, "parseFragmentIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseFragmentIdentifierUndefined: Self = StObject.set(x, "parseFragmentIdentifier", js.undefined)
+      inline def setParseFragmentIdentifierUndefined: Self = StObject.set(x, "parseFragmentIdentifier", js.undefined)
       
-      @scala.inline
-      def setParseNumbers(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "parseNumbers", value.asInstanceOf[js.Any])
+      inline def setParseNumbers(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "parseNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSort(value: (js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: (js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false`): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortFunction2(value: (/* itemLeft */ String, /* itemRight */ String) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+      inline def setSortFunction2(value: (/* itemLeft */ String, /* itemRight */ String) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     }
   }
 }

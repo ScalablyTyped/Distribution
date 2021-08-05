@@ -20,36 +20,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MethodType extends StObject
 object MethodType {
   
-  @scala.inline
-  def deselectAll: typings.bootstrapSelect.bootstrapSelectStrings.deselectAll = "deselectAll".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.deselectAll]
+  inline def deselectAll: typings.bootstrapSelect.bootstrapSelectStrings.deselectAll = "deselectAll".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.deselectAll]
   
-  @scala.inline
-  def destroy: typings.bootstrapSelect.bootstrapSelectStrings.destroy = "destroy".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.destroy]
+  inline def destroy: typings.bootstrapSelect.bootstrapSelectStrings.destroy = "destroy".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.destroy]
   
-  @scala.inline
-  def hide: typings.bootstrapSelect.bootstrapSelectStrings.hide = "hide".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.hide]
+  inline def hide: typings.bootstrapSelect.bootstrapSelectStrings.hide = "hide".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.hide]
   
-  @scala.inline
-  def mobile: typings.bootstrapSelect.bootstrapSelectStrings.mobile = "mobile".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.mobile]
+  inline def mobile: typings.bootstrapSelect.bootstrapSelectStrings.mobile = "mobile".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.mobile]
   
-  @scala.inline
-  def refresh: typings.bootstrapSelect.bootstrapSelectStrings.refresh = "refresh".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.refresh]
+  inline def refresh: typings.bootstrapSelect.bootstrapSelectStrings.refresh = "refresh".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.refresh]
   
-  @scala.inline
-  def render: typings.bootstrapSelect.bootstrapSelectStrings.render = "render".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.render]
+  inline def render: typings.bootstrapSelect.bootstrapSelectStrings.render = "render".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.render]
   
-  @scala.inline
-  def selectAll: typings.bootstrapSelect.bootstrapSelectStrings.selectAll = "selectAll".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.selectAll]
+  inline def selectAll: typings.bootstrapSelect.bootstrapSelectStrings.selectAll = "selectAll".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.selectAll]
   
-  @scala.inline
-  def setStyle: typings.bootstrapSelect.bootstrapSelectStrings.setStyle = "setStyle".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.setStyle]
+  inline def setStyle: typings.bootstrapSelect.bootstrapSelectStrings.setStyle = "setStyle".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.setStyle]
   
-  @scala.inline
-  def show: typings.bootstrapSelect.bootstrapSelectStrings.show = "show".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.show]
+  inline def show: typings.bootstrapSelect.bootstrapSelectStrings.show = "show".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.show]
   
-  @scala.inline
-  def toggle: typings.bootstrapSelect.bootstrapSelectStrings.toggle = "toggle".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.toggle]
+  inline def toggle: typings.bootstrapSelect.bootstrapSelectStrings.toggle = "toggle".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.toggle]
   
-  @scala.inline
-  def `val`: typings.bootstrapSelect.bootstrapSelectStrings.`val` = "val".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.`val`]
+  inline def `val`: typings.bootstrapSelect.bootstrapSelectStrings.`val` = "val".asInstanceOf[typings.bootstrapSelect.bootstrapSelectStrings.`val`]
 }

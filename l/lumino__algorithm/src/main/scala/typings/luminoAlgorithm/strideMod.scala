@@ -27,9 +27,9 @@ object strideMod {
       */
     def this(source: IIterator[T], step: Double) = this()
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
-    var _step: js.Any = js.native
+    /* private */ var _step: js.Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -64,6 +64,5 @@ object strideMod {
     override def next(): js.UndefOr[T] = js.native
   }
   
-  @scala.inline
-  def stride[T](`object`: IterableOrArrayLike[T], step: Double): IIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("stride")(`object`.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IIterator[T]]
+  inline def stride[T](`object`: IterableOrArrayLike[T], step: Double): IIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("stride")(`object`.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IIterator[T]]
 }

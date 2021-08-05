@@ -11,19 +11,15 @@ trait RegisterDebuggeeRequest extends StObject {
 }
 object RegisterDebuggeeRequest {
   
-  @scala.inline
-  def apply(): RegisterDebuggeeRequest = {
+  inline def apply(): RegisterDebuggeeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterDebuggeeRequest]
   }
   
-  @scala.inline
-  implicit class RegisterDebuggeeRequestMutableBuilder[Self <: RegisterDebuggeeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterDebuggeeRequest](x: Self) {
     
-    @scala.inline
-    def setDebuggee(value: Debuggee): Self = StObject.set(x, "debuggee", value.asInstanceOf[js.Any])
+    inline def setDebuggee(value: Debuggee): Self = StObject.set(x, "debuggee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebuggeeUndefined: Self = StObject.set(x, "debuggee", js.undefined)
+    inline def setDebuggeeUndefined: Self = StObject.set(x, "debuggee", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait RebootReplicationInstanceMessage extends StObject {
 }
 object RebootReplicationInstanceMessage {
   
-  @scala.inline
-  def apply(ReplicationInstanceArn: String): RebootReplicationInstanceMessage = {
+  inline def apply(ReplicationInstanceArn: String): RebootReplicationInstanceMessage = {
     val __obj = js.Dynamic.literal(ReplicationInstanceArn = ReplicationInstanceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RebootReplicationInstanceMessage]
   }
   
-  @scala.inline
-  implicit class RebootReplicationInstanceMessageMutableBuilder[Self <: RebootReplicationInstanceMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RebootReplicationInstanceMessage](x: Self) {
     
-    @scala.inline
-    def setForceFailover(value: BooleanOptional): Self = StObject.set(x, "ForceFailover", value.asInstanceOf[js.Any])
+    inline def setForceFailover(value: BooleanOptional): Self = StObject.set(x, "ForceFailover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceFailoverUndefined: Self = StObject.set(x, "ForceFailover", js.undefined)
+    inline def setForceFailoverUndefined: Self = StObject.set(x, "ForceFailover", js.undefined)
     
-    @scala.inline
-    def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
+    inline def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
   }
 }

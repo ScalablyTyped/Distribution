@@ -60,8 +60,7 @@ trait XCompoundTypeDescription
 }
 object XCompoundTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BaseType: XTypeDescription,
     MemberNames: SafeArray[String],
     MemberTypes: SafeArray[XTypeDescription],
@@ -80,25 +79,18 @@ object XCompoundTypeDescription {
     __obj.asInstanceOf[XCompoundTypeDescription]
   }
   
-  @scala.inline
-  implicit class XCompoundTypeDescriptionMutableBuilder[Self <: XCompoundTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XCompoundTypeDescription](x: Self) {
     
-    @scala.inline
-    def setBaseType(value: XTypeDescription): Self = StObject.set(x, "BaseType", value.asInstanceOf[js.Any])
+    inline def setBaseType(value: XTypeDescription): Self = StObject.set(x, "BaseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBaseType(value: () => XTypeDescription): Self = StObject.set(x, "getBaseType", js.Any.fromFunction0(value))
+    inline def setGetBaseType(value: () => XTypeDescription): Self = StObject.set(x, "getBaseType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMemberNames(value: () => SafeArray[String]): Self = StObject.set(x, "getMemberNames", js.Any.fromFunction0(value))
+    inline def setGetMemberNames(value: () => SafeArray[String]): Self = StObject.set(x, "getMemberNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMemberTypes(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getMemberTypes", js.Any.fromFunction0(value))
+    inline def setGetMemberTypes(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getMemberTypes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMemberNames(value: SafeArray[String]): Self = StObject.set(x, "MemberNames", value.asInstanceOf[js.Any])
+    inline def setMemberNames(value: SafeArray[String]): Self = StObject.set(x, "MemberNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberTypes(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "MemberTypes", value.asInstanceOf[js.Any])
+    inline def setMemberTypes(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "MemberTypes", value.asInstanceOf[js.Any])
   }
 }

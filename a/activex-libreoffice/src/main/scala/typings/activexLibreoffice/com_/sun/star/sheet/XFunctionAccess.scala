@@ -27,8 +27,7 @@ trait XFunctionAccess
 }
 object XFunctionAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     callFunction: (String, SeqEquiv[js.Any]) => js.Any,
     queryInterface: `type` => js.Any,
@@ -38,10 +37,8 @@ object XFunctionAccess {
     __obj.asInstanceOf[XFunctionAccess]
   }
   
-  @scala.inline
-  implicit class XFunctionAccessMutableBuilder[Self <: XFunctionAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XFunctionAccess](x: Self) {
     
-    @scala.inline
-    def setCallFunction(value: (String, SeqEquiv[js.Any]) => js.Any): Self = StObject.set(x, "callFunction", js.Any.fromFunction2(value))
+    inline def setCallFunction(value: (String, SeqEquiv[js.Any]) => js.Any): Self = StObject.set(x, "callFunction", js.Any.fromFunction2(value))
   }
 }

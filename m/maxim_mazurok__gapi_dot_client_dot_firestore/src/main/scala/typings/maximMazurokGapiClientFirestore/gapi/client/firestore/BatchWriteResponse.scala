@@ -14,31 +14,23 @@ trait BatchWriteResponse extends StObject {
 }
 object BatchWriteResponse {
   
-  @scala.inline
-  def apply(): BatchWriteResponse = {
+  inline def apply(): BatchWriteResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchWriteResponse]
   }
   
-  @scala.inline
-  implicit class BatchWriteResponseMutableBuilder[Self <: BatchWriteResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchWriteResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: js.Array[Status]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: js.Array[Status]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setStatusVarargs(value: Status*): Self = StObject.set(x, "status", js.Array(value :_*))
+    inline def setStatusVarargs(value: Status*): Self = StObject.set(x, "status", js.Array(value :_*))
     
-    @scala.inline
-    def setWriteResults(value: js.Array[WriteResult]): Self = StObject.set(x, "writeResults", value.asInstanceOf[js.Any])
+    inline def setWriteResults(value: js.Array[WriteResult]): Self = StObject.set(x, "writeResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteResultsUndefined: Self = StObject.set(x, "writeResults", js.undefined)
+    inline def setWriteResultsUndefined: Self = StObject.set(x, "writeResults", js.undefined)
     
-    @scala.inline
-    def setWriteResultsVarargs(value: WriteResult*): Self = StObject.set(x, "writeResults", js.Array(value :_*))
+    inline def setWriteResultsVarargs(value: WriteResult*): Self = StObject.set(x, "writeResults", js.Array(value :_*))
   }
 }

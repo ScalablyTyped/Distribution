@@ -14,25 +14,19 @@ trait CreatePagesOptions
 }
 object CreatePagesOptions {
   
-  @scala.inline
-  def apply(): CreatePagesOptions = {
+  inline def apply(): CreatePagesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePagesOptions]
   }
   
-  @scala.inline
-  implicit class CreatePagesOptionsMutableBuilder[Self <: CreatePagesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePagesOptions](x: Self) {
     
-    @scala.inline
-    def setContentMD5(value: String): Self = StObject.set(x, "contentMD5", value.asInstanceOf[js.Any])
+    inline def setContentMD5(value: String): Self = StObject.set(x, "contentMD5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentMD5Undefined: Self = StObject.set(x, "contentMD5", js.undefined)
+    inline def setContentMD5Undefined: Self = StObject.set(x, "contentMD5", js.undefined)
     
-    @scala.inline
-    def setUseTransactionalMD5(value: Boolean): Self = StObject.set(x, "useTransactionalMD5", value.asInstanceOf[js.Any])
+    inline def setUseTransactionalMD5(value: Boolean): Self = StObject.set(x, "useTransactionalMD5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseTransactionalMD5Undefined: Self = StObject.set(x, "useTransactionalMD5", js.undefined)
+    inline def setUseTransactionalMD5Undefined: Self = StObject.set(x, "useTransactionalMD5", js.undefined)
   }
 }

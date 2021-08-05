@@ -12,19 +12,15 @@ trait AdWordsReportRowIterator extends StObject {
 }
 object AdWordsReportRowIterator {
   
-  @scala.inline
-  def apply(hasNext: () => Boolean, next: () => AdWordsReportRow): AdWordsReportRowIterator = {
+  inline def apply(hasNext: () => Boolean, next: () => AdWordsReportRow): AdWordsReportRowIterator = {
     val __obj = js.Dynamic.literal(hasNext = js.Any.fromFunction0(hasNext), next = js.Any.fromFunction0(next))
     __obj.asInstanceOf[AdWordsReportRowIterator]
   }
   
-  @scala.inline
-  implicit class AdWordsReportRowIteratorMutableBuilder[Self <: AdWordsReportRowIterator] (val x: Self) extends AnyVal {
+  extension [Self <: AdWordsReportRowIterator](x: Self) {
     
-    @scala.inline
-    def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
+    inline def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNext(value: () => AdWordsReportRow): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+    inline def setNext(value: () => AdWordsReportRow): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
   }
 }

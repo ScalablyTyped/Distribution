@@ -28,37 +28,27 @@ trait SwapEnvironmentCNAMEsMessage extends StObject {
 }
 object SwapEnvironmentCNAMEsMessage {
   
-  @scala.inline
-  def apply(): SwapEnvironmentCNAMEsMessage = {
+  inline def apply(): SwapEnvironmentCNAMEsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SwapEnvironmentCNAMEsMessage]
   }
   
-  @scala.inline
-  implicit class SwapEnvironmentCNAMEsMessageMutableBuilder[Self <: SwapEnvironmentCNAMEsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SwapEnvironmentCNAMEsMessage](x: Self) {
     
-    @scala.inline
-    def setDestinationEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "DestinationEnvironmentId", value.asInstanceOf[js.Any])
+    inline def setDestinationEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "DestinationEnvironmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationEnvironmentIdUndefined: Self = StObject.set(x, "DestinationEnvironmentId", js.undefined)
+    inline def setDestinationEnvironmentIdUndefined: Self = StObject.set(x, "DestinationEnvironmentId", js.undefined)
     
-    @scala.inline
-    def setDestinationEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "DestinationEnvironmentName", value.asInstanceOf[js.Any])
+    inline def setDestinationEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "DestinationEnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationEnvironmentNameUndefined: Self = StObject.set(x, "DestinationEnvironmentName", js.undefined)
+    inline def setDestinationEnvironmentNameUndefined: Self = StObject.set(x, "DestinationEnvironmentName", js.undefined)
     
-    @scala.inline
-    def setSourceEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "SourceEnvironmentId", value.asInstanceOf[js.Any])
+    inline def setSourceEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "SourceEnvironmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceEnvironmentIdUndefined: Self = StObject.set(x, "SourceEnvironmentId", js.undefined)
+    inline def setSourceEnvironmentIdUndefined: Self = StObject.set(x, "SourceEnvironmentId", js.undefined)
     
-    @scala.inline
-    def setSourceEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "SourceEnvironmentName", value.asInstanceOf[js.Any])
+    inline def setSourceEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "SourceEnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceEnvironmentNameUndefined: Self = StObject.set(x, "SourceEnvironmentName", js.undefined)
+    inline def setSourceEnvironmentNameUndefined: Self = StObject.set(x, "SourceEnvironmentName", js.undefined)
   }
 }

@@ -53,67 +53,47 @@ trait AacSettings extends StObject {
 }
 object AacSettings {
   
-  @scala.inline
-  def apply(): AacSettings = {
+  inline def apply(): AacSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AacSettings]
   }
   
-  @scala.inline
-  implicit class AacSettingsMutableBuilder[Self <: AacSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AacSettings](x: Self) {
     
-    @scala.inline
-    def setAudioDescriptionBroadcasterMix(value: AacAudioDescriptionBroadcasterMix): Self = StObject.set(x, "AudioDescriptionBroadcasterMix", value.asInstanceOf[js.Any])
+    inline def setAudioDescriptionBroadcasterMix(value: AacAudioDescriptionBroadcasterMix): Self = StObject.set(x, "AudioDescriptionBroadcasterMix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioDescriptionBroadcasterMixUndefined: Self = StObject.set(x, "AudioDescriptionBroadcasterMix", js.undefined)
+    inline def setAudioDescriptionBroadcasterMixUndefined: Self = StObject.set(x, "AudioDescriptionBroadcasterMix", js.undefined)
     
-    @scala.inline
-    def setBitrate(value: integerMin6000Max1024000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: integerMin6000Max1024000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
+    inline def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
     
-    @scala.inline
-    def setCodecProfile(value: AacCodecProfile): Self = StObject.set(x, "CodecProfile", value.asInstanceOf[js.Any])
+    inline def setCodecProfile(value: AacCodecProfile): Self = StObject.set(x, "CodecProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecProfileUndefined: Self = StObject.set(x, "CodecProfile", js.undefined)
+    inline def setCodecProfileUndefined: Self = StObject.set(x, "CodecProfile", js.undefined)
     
-    @scala.inline
-    def setCodingMode(value: AacCodingMode): Self = StObject.set(x, "CodingMode", value.asInstanceOf[js.Any])
+    inline def setCodingMode(value: AacCodingMode): Self = StObject.set(x, "CodingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodingModeUndefined: Self = StObject.set(x, "CodingMode", js.undefined)
+    inline def setCodingModeUndefined: Self = StObject.set(x, "CodingMode", js.undefined)
     
-    @scala.inline
-    def setRateControlMode(value: AacRateControlMode): Self = StObject.set(x, "RateControlMode", value.asInstanceOf[js.Any])
+    inline def setRateControlMode(value: AacRateControlMode): Self = StObject.set(x, "RateControlMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateControlModeUndefined: Self = StObject.set(x, "RateControlMode", js.undefined)
+    inline def setRateControlModeUndefined: Self = StObject.set(x, "RateControlMode", js.undefined)
     
-    @scala.inline
-    def setRawFormat(value: AacRawFormat): Self = StObject.set(x, "RawFormat", value.asInstanceOf[js.Any])
+    inline def setRawFormat(value: AacRawFormat): Self = StObject.set(x, "RawFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawFormatUndefined: Self = StObject.set(x, "RawFormat", js.undefined)
+    inline def setRawFormatUndefined: Self = StObject.set(x, "RawFormat", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: integerMin8000Max96000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: integerMin8000Max96000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
     
-    @scala.inline
-    def setSpecification(value: AacSpecification): Self = StObject.set(x, "Specification", value.asInstanceOf[js.Any])
+    inline def setSpecification(value: AacSpecification): Self = StObject.set(x, "Specification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecificationUndefined: Self = StObject.set(x, "Specification", js.undefined)
+    inline def setSpecificationUndefined: Self = StObject.set(x, "Specification", js.undefined)
     
-    @scala.inline
-    def setVbrQuality(value: AacVbrQuality): Self = StObject.set(x, "VbrQuality", value.asInstanceOf[js.Any])
+    inline def setVbrQuality(value: AacVbrQuality): Self = StObject.set(x, "VbrQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVbrQualityUndefined: Self = StObject.set(x, "VbrQuality", js.undefined)
+    inline def setVbrQualityUndefined: Self = StObject.set(x, "VbrQuality", js.undefined)
   }
 }

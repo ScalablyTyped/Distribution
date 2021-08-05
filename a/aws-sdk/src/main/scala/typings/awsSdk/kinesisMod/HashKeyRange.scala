@@ -18,19 +18,15 @@ trait HashKeyRange extends StObject {
 }
 object HashKeyRange {
   
-  @scala.inline
-  def apply(EndingHashKey: HashKey, StartingHashKey: HashKey): HashKeyRange = {
+  inline def apply(EndingHashKey: HashKey, StartingHashKey: HashKey): HashKeyRange = {
     val __obj = js.Dynamic.literal(EndingHashKey = EndingHashKey.asInstanceOf[js.Any], StartingHashKey = StartingHashKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[HashKeyRange]
   }
   
-  @scala.inline
-  implicit class HashKeyRangeMutableBuilder[Self <: HashKeyRange] (val x: Self) extends AnyVal {
+  extension [Self <: HashKeyRange](x: Self) {
     
-    @scala.inline
-    def setEndingHashKey(value: HashKey): Self = StObject.set(x, "EndingHashKey", value.asInstanceOf[js.Any])
+    inline def setEndingHashKey(value: HashKey): Self = StObject.set(x, "EndingHashKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartingHashKey(value: HashKey): Self = StObject.set(x, "StartingHashKey", value.asInstanceOf[js.Any])
+    inline def setStartingHashKey(value: HashKey): Self = StObject.set(x, "StartingHashKey", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ trait DownlaodFileByNameOpts
 }
 object DownlaodFileByNameOpts {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bucketName: String,
     fileName: String,
     responseType: arraybuffer | blob | document | json | text | stream
@@ -30,13 +29,10 @@ object DownlaodFileByNameOpts {
     __obj.asInstanceOf[DownlaodFileByNameOpts]
   }
   
-  @scala.inline
-  implicit class DownlaodFileByNameOptsMutableBuilder[Self <: DownlaodFileByNameOpts] (val x: Self) extends AnyVal {
+  extension [Self <: DownlaodFileByNameOpts](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
   }
 }

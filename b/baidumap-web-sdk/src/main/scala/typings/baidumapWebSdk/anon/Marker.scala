@@ -14,23 +14,18 @@ trait Marker extends StObject {
 }
 object Marker {
   
-  @scala.inline
-  def apply(marker: typings.baidumapWebSdk.BMap.Marker, target: js.Any, `type`: String): Marker = {
+  inline def apply(marker: typings.baidumapWebSdk.BMap.Marker, target: js.Any, `type`: String): Marker = {
     val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Marker]
   }
   
-  @scala.inline
-  implicit class MarkerMutableBuilder[Self <: Marker] (val x: Self) extends AnyVal {
+  extension [Self <: Marker](x: Self) {
     
-    @scala.inline
-    def setMarker(value: typings.baidumapWebSdk.BMap.Marker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: typings.baidumapWebSdk.BMap.Marker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

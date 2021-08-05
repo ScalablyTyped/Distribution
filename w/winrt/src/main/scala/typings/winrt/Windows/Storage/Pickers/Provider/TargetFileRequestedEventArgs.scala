@@ -9,8 +9,7 @@ trait TargetFileRequestedEventArgs
      with ITargetFileRequestedEventArgs
 object TargetFileRequestedEventArgs {
   
-  @scala.inline
-  def apply(request: TargetFileRequest): TargetFileRequestedEventArgs = {
+  inline def apply(request: TargetFileRequest): TargetFileRequestedEventArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetFileRequestedEventArgs]
   }

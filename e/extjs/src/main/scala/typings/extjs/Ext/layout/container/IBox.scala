@@ -59,73 +59,51 @@ trait IBox
 }
 object IBox {
   
-  @scala.inline
-  def apply(): IBox = {
+  inline def apply(): IBox = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBox]
   }
   
-  @scala.inline
-  implicit class IBoxMutableBuilder[Self <: IBox] (val x: Self) extends AnyVal {
+  extension [Self <: IBox](x: Self) {
     
-    @scala.inline
-    def setCacheFlexes(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "cacheFlexes", js.Any.fromFunction1(value))
+    inline def setCacheFlexes(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "cacheFlexes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCacheFlexesUndefined: Self = StObject.set(x, "cacheFlexes", js.undefined)
+    inline def setCacheFlexesUndefined: Self = StObject.set(x, "cacheFlexes", js.undefined)
     
-    @scala.inline
-    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
+    inline def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
+    inline def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
-    @scala.inline
-    def setCompleteLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "completeLayout", js.Any.fromFunction1(value))
+    inline def setCompleteLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "completeLayout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompleteLayoutUndefined: Self = StObject.set(x, "completeLayout", js.undefined)
+    inline def setCompleteLayoutUndefined: Self = StObject.set(x, "completeLayout", js.undefined)
     
-    @scala.inline
-    def setDefaultMargins(value: js.Any): Self = StObject.set(x, "defaultMargins", value.asInstanceOf[js.Any])
+    inline def setDefaultMargins(value: js.Any): Self = StObject.set(x, "defaultMargins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultMarginsUndefined: Self = StObject.set(x, "defaultMargins", js.undefined)
+    inline def setDefaultMarginsUndefined: Self = StObject.set(x, "defaultMargins", js.undefined)
     
-    @scala.inline
-    def setFinishedLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "finishedLayout", js.Any.fromFunction1(value))
+    inline def setFinishedLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "finishedLayout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFinishedLayoutUndefined: Self = StObject.set(x, "finishedLayout", js.undefined)
+    inline def setFinishedLayoutUndefined: Self = StObject.set(x, "finishedLayout", js.undefined)
     
-    @scala.inline
-    def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+    inline def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
+    inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
     
-    @scala.inline
-    def setGetItemSizePolicy(value: (/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any]) => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction2(value))
+    inline def setGetItemSizePolicy(value: (/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any]) => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
+    inline def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
     
-    @scala.inline
-    def setPack(value: String): Self = StObject.set(x, "pack", value.asInstanceOf[js.Any])
+    inline def setPack(value: String): Self = StObject.set(x, "pack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackUndefined: Self = StObject.set(x, "pack", js.undefined)
+    inline def setPackUndefined: Self = StObject.set(x, "pack", js.undefined)
     
-    @scala.inline
-    def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setStretchMaxPartner(value: js.Any): Self = StObject.set(x, "stretchMaxPartner", value.asInstanceOf[js.Any])
+    inline def setStretchMaxPartner(value: js.Any): Self = StObject.set(x, "stretchMaxPartner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStretchMaxPartnerUndefined: Self = StObject.set(x, "stretchMaxPartner", js.undefined)
+    inline def setStretchMaxPartnerUndefined: Self = StObject.set(x, "stretchMaxPartner", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait ValidateResponse extends StObject {
 }
 object ValidateResponse {
   
-  @scala.inline
-  def apply(): ValidateResponse = {
+  inline def apply(): ValidateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidateResponse]
   }
   
-  @scala.inline
-  implicit class ValidateResponseMutableBuilder[Self <: ValidateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ValidateResponse](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setQueryInfo(value: QueryInfo): Self = StObject.set(x, "queryInfo", value.asInstanceOf[js.Any])
+    inline def setQueryInfo(value: QueryInfo): Self = StObject.set(x, "queryInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryInfoUndefined: Self = StObject.set(x, "queryInfo", js.undefined)
+    inline def setQueryInfoUndefined: Self = StObject.set(x, "queryInfo", js.undefined)
   }
 }

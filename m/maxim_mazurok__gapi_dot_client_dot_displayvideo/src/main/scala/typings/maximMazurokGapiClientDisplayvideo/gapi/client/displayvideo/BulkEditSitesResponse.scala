@@ -11,22 +11,17 @@ trait BulkEditSitesResponse extends StObject {
 }
 object BulkEditSitesResponse {
   
-  @scala.inline
-  def apply(): BulkEditSitesResponse = {
+  inline def apply(): BulkEditSitesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkEditSitesResponse]
   }
   
-  @scala.inline
-  implicit class BulkEditSitesResponseMutableBuilder[Self <: BulkEditSitesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BulkEditSitesResponse](x: Self) {
     
-    @scala.inline
-    def setSites(value: js.Array[Site]): Self = StObject.set(x, "sites", value.asInstanceOf[js.Any])
+    inline def setSites(value: js.Array[Site]): Self = StObject.set(x, "sites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSitesUndefined: Self = StObject.set(x, "sites", js.undefined)
+    inline def setSitesUndefined: Self = StObject.set(x, "sites", js.undefined)
     
-    @scala.inline
-    def setSitesVarargs(value: Site*): Self = StObject.set(x, "sites", js.Array(value :_*))
+    inline def setSitesVarargs(value: Site*): Self = StObject.set(x, "sites", js.Array(value :_*))
   }
 }

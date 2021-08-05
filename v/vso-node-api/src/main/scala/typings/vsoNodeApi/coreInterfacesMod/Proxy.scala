@@ -34,8 +34,7 @@ trait Proxy extends StObject {
 }
 object Proxy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authorization: ProxyAuthorization,
     description: String,
     friendlyName: String,
@@ -48,28 +47,20 @@ object Proxy {
     __obj.asInstanceOf[Proxy]
   }
   
-  @scala.inline
-  implicit class ProxyMutableBuilder[Self <: Proxy] (val x: Self) extends AnyVal {
+  extension [Self <: Proxy](x: Self) {
     
-    @scala.inline
-    def setAuthorization(value: ProxyAuthorization): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
+    inline def setAuthorization(value: ProxyAuthorization): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalDefault(value: Boolean): Self = StObject.set(x, "globalDefault", value.asInstanceOf[js.Any])
+    inline def setGlobalDefault(value: Boolean): Self = StObject.set(x, "globalDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSite(value: String): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+    inline def setSite(value: String): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteDefault(value: Boolean): Self = StObject.set(x, "siteDefault", value.asInstanceOf[js.Any])
+    inline def setSiteDefault(value: Boolean): Self = StObject.set(x, "siteDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

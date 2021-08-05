@@ -43,8 +43,7 @@ object byMod {
       * @see http://www.w3.org/TR/2011/WD-html5-20110525/elements.html#classes
       * @see http://www.w3.org/TR/CSS2/selector.html#class-html
       */
-    @scala.inline
-    def className(name: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("className")(name.asInstanceOf[js.Any]).asInstanceOf[By]
+    inline def className(name: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("className")(name.asInstanceOf[js.Any]).asInstanceOf[By]
     
     /**
       * Locates elements using a CSS selector.
@@ -53,8 +52,7 @@ object byMod {
       * @return {!By} The new locator.
       * @see http://www.w3.org/TR/CSS2/selector.html
       */
-    @scala.inline
-    def css(selector: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(selector.asInstanceOf[js.Any]).asInstanceOf[By]
+    inline def css(selector: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(selector.asInstanceOf[js.Any]).asInstanceOf[By]
     
     /**
       * Locates eleemnts by the ID attribute. This locator uses the CSS selector
@@ -63,8 +61,7 @@ object byMod {
       * @param {string} id The ID to search for.
       * @return {!By} The new locator.
       */
-    @scala.inline
-    def id(id: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(id.asInstanceOf[js.Any]).asInstanceOf[By]
+    inline def id(id: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(id.asInstanceOf[js.Any]).asInstanceOf[By]
     
     /**
       * Locates an elements by evaluating a
@@ -76,10 +73,8 @@ object byMod {
       * @return {function(!./WebDriver): !./Promise}
       *     A new JavaScript-based locator function.
       */
-    @scala.inline
-    def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("js")(script.asInstanceOf[js.Any], var_args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]]]
-    @scala.inline
-    def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("js")(script.asInstanceOf[js.Any], var_args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]]]
+    inline def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("js")(script.asInstanceOf[js.Any], var_args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]]]
+    inline def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("js")(script.asInstanceOf[js.Any], var_args.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]]]
     
     /**
       * Locates link elements whose
@@ -89,8 +84,7 @@ object byMod {
       * @param {string} text The link text to search for.
       * @return {!By} The new locator.
       */
-    @scala.inline
-    def linkText(text: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("linkText")(text.asInstanceOf[js.Any]).asInstanceOf[By]
+    inline def linkText(text: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("linkText")(text.asInstanceOf[js.Any]).asInstanceOf[By]
     
     /**
       * Locates elements whose `name` attribute has the given value.
@@ -98,8 +92,7 @@ object byMod {
       * @param {string} name The name attribute to search for.
       * @return {!By} The new locator.
       */
-    @scala.inline
-    def name(name: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("name")(name.asInstanceOf[js.Any]).asInstanceOf[By]
+    inline def name(name: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("name")(name.asInstanceOf[js.Any]).asInstanceOf[By]
     
     /**
       * Locates link elements whose
@@ -109,8 +102,7 @@ object byMod {
       * @param {string} text The substring to check for in a link's visible text.
       * @return {!By} The new locator.
       */
-    @scala.inline
-    def partialLinkText(text: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("partialLinkText")(text.asInstanceOf[js.Any]).asInstanceOf[By]
+    inline def partialLinkText(text: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("partialLinkText")(text.asInstanceOf[js.Any]).asInstanceOf[By]
     
     /**
       * Locates elements with a given tag name.
@@ -119,8 +111,7 @@ object byMod {
       * @return {!By} The new locator.
       * @deprecated Use {@link By.css() By.css(tagName)} instead.
       */
-    @scala.inline
-    def tagName(name: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("tagName")(name.asInstanceOf[js.Any]).asInstanceOf[By]
+    inline def tagName(name: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("tagName")(name.asInstanceOf[js.Any]).asInstanceOf[By]
     
     /**
       * Locates elements matching a XPath selector. Care should be taken when
@@ -133,12 +124,10 @@ object byMod {
       * @return {!By} The new locator.
       * @see http://www.w3.org/TR/xpath/
       */
-    @scala.inline
-    def xpath(xpath: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("xpath")(xpath.asInstanceOf[js.Any]).asInstanceOf[By]
+    inline def xpath(xpath: String): By = ^.asInstanceOf[js.Dynamic].applyDynamic("xpath")(xpath.asInstanceOf[js.Any]).asInstanceOf[By]
   }
   
-  @scala.inline
-  def checkedLocator(locator: Locator): By = ^.asInstanceOf[js.Dynamic].applyDynamic("checkedLocator")(locator.asInstanceOf[js.Any]).asInstanceOf[By]
+  inline def checkedLocator(locator: Locator): By = ^.asInstanceOf[js.Dynamic].applyDynamic("checkedLocator")(locator.asInstanceOf[js.Any]).asInstanceOf[By]
   
   /* Rewritten from type alias, can be one of: 
     - typings.seleniumWebdriver.anon.ClassName
@@ -156,57 +145,48 @@ object byMod {
        with _Locator
   object ByHash {
     
-    @scala.inline
-    def ClassName(className: String): typings.seleniumWebdriver.anon.ClassName = {
+    inline def ClassName(className: String): typings.seleniumWebdriver.anon.ClassName = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.seleniumWebdriver.anon.ClassName]
     }
     
-    @scala.inline
-    def Css(css: String): typings.seleniumWebdriver.anon.Css = {
+    inline def Css(css: String): typings.seleniumWebdriver.anon.Css = {
       val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.seleniumWebdriver.anon.Css]
     }
     
-    @scala.inline
-    def Id(id: String): typings.seleniumWebdriver.anon.Id = {
+    inline def Id(id: String): typings.seleniumWebdriver.anon.Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.seleniumWebdriver.anon.Id]
     }
     
-    @scala.inline
-    def Js(js_ : String): typings.seleniumWebdriver.anon.Js = {
+    inline def Js(js_ : String): typings.seleniumWebdriver.anon.Js = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.seleniumWebdriver.anon.Js]
     }
     
-    @scala.inline
-    def LinkText(linkText: String): typings.seleniumWebdriver.anon.LinkText = {
+    inline def LinkText(linkText: String): typings.seleniumWebdriver.anon.LinkText = {
       val __obj = js.Dynamic.literal(linkText = linkText.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.seleniumWebdriver.anon.LinkText]
     }
     
-    @scala.inline
-    def Name(name: String): typings.seleniumWebdriver.anon.Name = {
+    inline def Name(name: String): typings.seleniumWebdriver.anon.Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.seleniumWebdriver.anon.Name]
     }
     
-    @scala.inline
-    def PartialLinkText(partialLinkText: String): typings.seleniumWebdriver.anon.PartialLinkText = {
+    inline def PartialLinkText(partialLinkText: String): typings.seleniumWebdriver.anon.PartialLinkText = {
       val __obj = js.Dynamic.literal(partialLinkText = partialLinkText.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.seleniumWebdriver.anon.PartialLinkText]
     }
     
-    @scala.inline
-    def TagName(tagName: String): typings.seleniumWebdriver.anon.TagName = {
+    inline def TagName(tagName: String): typings.seleniumWebdriver.anon.TagName = {
       val __obj = js.Dynamic.literal(tagName = tagName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.seleniumWebdriver.anon.TagName]
     }
     
-    @scala.inline
-    def Xpath(xpath: String): typings.seleniumWebdriver.anon.Xpath = {
+    inline def Xpath(xpath: String): typings.seleniumWebdriver.anon.Xpath = {
       val __obj = js.Dynamic.literal(xpath = xpath.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.seleniumWebdriver.anon.Xpath]
     }

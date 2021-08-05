@@ -14,26 +14,20 @@ object anon {
   }
   object HashChange {
     
-    @scala.inline
-    def apply(): HashChange = {
+    inline def apply(): HashChange = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HashChange]
     }
     
-    @scala.inline
-    implicit class HashChangeMutableBuilder[Self <: HashChange] (val x: Self) extends AnyVal {
+    extension [Self <: HashChange](x: Self) {
       
-      @scala.inline
-      def setHashChange(value: js.Any): Self = StObject.set(x, "hashChange", value.asInstanceOf[js.Any])
+      inline def setHashChange(value: js.Any): Self = StObject.set(x, "hashChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashChangeUndefined: Self = StObject.set(x, "hashChange", js.undefined)
+      inline def setHashChangeUndefined: Self = StObject.set(x, "hashChange", js.undefined)
       
-      @scala.inline
-      def setPushState(value: js.Any): Self = StObject.set(x, "pushState", value.asInstanceOf[js.Any])
+      inline def setPushState(value: js.Any): Self = StObject.set(x, "pushState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushStateUndefined: Self = StObject.set(x, "pushState", js.undefined)
+      inline def setPushStateUndefined: Self = StObject.set(x, "pushState", js.undefined)
     }
   }
 }

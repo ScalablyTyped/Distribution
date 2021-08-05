@@ -74,8 +74,7 @@ object comboBoxTypesMod {
   }
   object IComboBoxClassNames {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callout: String,
       container: String,
       divider: String,
@@ -92,41 +91,29 @@ object comboBoxTypesMod {
       __obj.asInstanceOf[IComboBoxClassNames]
     }
     
-    @scala.inline
-    implicit class IComboBoxClassNamesMutableBuilder[Self <: IComboBoxClassNames] (val x: Self) extends AnyVal {
+    extension [Self <: IComboBoxClassNames](x: Self) {
       
-      @scala.inline
-      def setCallout(value: String): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
+      inline def setCallout(value: String): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+      inline def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsContainer(value: String): Self = StObject.set(x, "optionsContainer", value.asInstanceOf[js.Any])
+      inline def setOptionsContainer(value: String): Self = StObject.set(x, "optionsContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsContainerWrapper(value: String): Self = StObject.set(x, "optionsContainerWrapper", value.asInstanceOf[js.Any])
+      inline def setOptionsContainerWrapper(value: String): Self = StObject.set(x, "optionsContainerWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenReaderText(value: String): Self = StObject.set(x, "screenReaderText", value.asInstanceOf[js.Any])
+      inline def setScreenReaderText(value: String): Self = StObject.set(x, "screenReaderText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,26 +137,20 @@ object comboBoxTypesMod {
   }
   object IComboBoxOption {
     
-    @scala.inline
-    def apply(key: String | Double, text: String): IComboBoxOption = {
+    inline def apply(key: String | Double, text: String): IComboBoxOption = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[IComboBoxOption]
     }
     
-    @scala.inline
-    implicit class IComboBoxOptionMutableBuilder[Self <: IComboBoxOption] (val x: Self) extends AnyVal {
+    extension [Self <: IComboBoxOption](x: Self) {
       
-      @scala.inline
-      def setStyles(value: PartialIComboBoxOptionSty): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: PartialIComboBoxOptionSty): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setUseAriaLabelAsText(value: Boolean): Self = StObject.set(x, "useAriaLabelAsText", value.asInstanceOf[js.Any])
+      inline def setUseAriaLabelAsText(value: Boolean): Self = StObject.set(x, "useAriaLabelAsText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseAriaLabelAsTextUndefined: Self = StObject.set(x, "useAriaLabelAsText", js.undefined)
+      inline def setUseAriaLabelAsTextUndefined: Self = StObject.set(x, "useAriaLabelAsText", js.undefined)
     }
   }
   
@@ -183,23 +164,18 @@ object comboBoxTypesMod {
   }
   object IComboBoxOptionClassNames {
     
-    @scala.inline
-    def apply(optionText: String, optionTextWrapper: String, root: String): IComboBoxOptionClassNames = {
+    inline def apply(optionText: String, optionTextWrapper: String, root: String): IComboBoxOptionClassNames = {
       val __obj = js.Dynamic.literal(optionText = optionText.asInstanceOf[js.Any], optionTextWrapper = optionTextWrapper.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[IComboBoxOptionClassNames]
     }
     
-    @scala.inline
-    implicit class IComboBoxOptionClassNamesMutableBuilder[Self <: IComboBoxOptionClassNames] (val x: Self) extends AnyVal {
+    extension [Self <: IComboBoxOptionClassNames](x: Self) {
       
-      @scala.inline
-      def setOptionText(value: String): Self = StObject.set(x, "optionText", value.asInstanceOf[js.Any])
+      inline def setOptionText(value: String): Self = StObject.set(x, "optionText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionTextWrapper(value: String): Self = StObject.set(x, "optionTextWrapper", value.asInstanceOf[js.Any])
+      inline def setOptionTextWrapper(value: String): Self = StObject.set(x, "optionTextWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
   
@@ -222,32 +198,24 @@ object comboBoxTypesMod {
   }
   object IComboBoxOptionStyles {
     
-    @scala.inline
-    def apply(): IComboBoxOptionStyles = {
+    inline def apply(): IComboBoxOptionStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IComboBoxOptionStyles]
     }
     
-    @scala.inline
-    implicit class IComboBoxOptionStylesMutableBuilder[Self <: IComboBoxOptionStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IComboBoxOptionStyles](x: Self) {
       
-      @scala.inline
-      def setOptionText(value: IStyle): Self = StObject.set(x, "optionText", value.asInstanceOf[js.Any])
+      inline def setOptionText(value: IStyle): Self = StObject.set(x, "optionText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionTextNull: Self = StObject.set(x, "optionText", null)
+      inline def setOptionTextNull: Self = StObject.set(x, "optionText", null)
       
-      @scala.inline
-      def setOptionTextUndefined: Self = StObject.set(x, "optionText", js.undefined)
+      inline def setOptionTextUndefined: Self = StObject.set(x, "optionText", js.undefined)
       
-      @scala.inline
-      def setOptionTextWrapper(value: IStyle): Self = StObject.set(x, "optionTextWrapper", value.asInstanceOf[js.Any])
+      inline def setOptionTextWrapper(value: IStyle): Self = StObject.set(x, "optionTextWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionTextWrapperNull: Self = StObject.set(x, "optionTextWrapper", null)
+      inline def setOptionTextWrapperNull: Self = StObject.set(x, "optionTextWrapper", null)
       
-      @scala.inline
-      def setOptionTextWrapperUndefined: Self = StObject.set(x, "optionTextWrapper", js.undefined)
+      inline def setOptionTextWrapperUndefined: Self = StObject.set(x, "optionTextWrapper", js.undefined)
     }
   }
   
@@ -490,230 +458,162 @@ object comboBoxTypesMod {
   }
   object IComboBoxProps {
     
-    @scala.inline
-    def apply(options: js.Array[IComboBoxOption]): IComboBoxProps = {
+    inline def apply(options: js.Array[IComboBoxOption]): IComboBoxProps = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[IComboBoxProps]
     }
     
-    @scala.inline
-    implicit class IComboBoxPropsMutableBuilder[Self <: IComboBoxProps] (val x: Self) extends AnyVal {
+    extension [Self <: IComboBoxProps](x: Self) {
       
-      @scala.inline
-      def setAllowFreeform(value: Boolean): Self = StObject.set(x, "allowFreeform", value.asInstanceOf[js.Any])
+      inline def setAllowFreeform(value: Boolean): Self = StObject.set(x, "allowFreeform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowFreeformUndefined: Self = StObject.set(x, "allowFreeform", js.undefined)
+      inline def setAllowFreeformUndefined: Self = StObject.set(x, "allowFreeform", js.undefined)
       
-      @scala.inline
-      def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
+      inline def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaDescribedByUndefined: Self = StObject.set(x, "ariaDescribedBy", js.undefined)
+      inline def setAriaDescribedByUndefined: Self = StObject.set(x, "ariaDescribedBy", js.undefined)
       
-      @scala.inline
-      def setAutoComplete(value: on | off): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+      inline def setAutoComplete(value: on | off): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+      inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
       
-      @scala.inline
-      def setAutofill(value: IAutofillProps): Self = StObject.set(x, "autofill", value.asInstanceOf[js.Any])
+      inline def setAutofill(value: IAutofillProps): Self = StObject.set(x, "autofill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutofillUndefined: Self = StObject.set(x, "autofill", js.undefined)
+      inline def setAutofillUndefined: Self = StObject.set(x, "autofill", js.undefined)
       
-      @scala.inline
-      def setButtonIconProps(value: IIconProps): Self = StObject.set(x, "buttonIconProps", value.asInstanceOf[js.Any])
+      inline def setButtonIconProps(value: IIconProps): Self = StObject.set(x, "buttonIconProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonIconPropsUndefined: Self = StObject.set(x, "buttonIconProps", js.undefined)
+      inline def setButtonIconPropsUndefined: Self = StObject.set(x, "buttonIconProps", js.undefined)
       
-      @scala.inline
-      def setCaretDownButtonStyles(value: PartialIButtonStyles): Self = StObject.set(x, "caretDownButtonStyles", value.asInstanceOf[js.Any])
+      inline def setCaretDownButtonStyles(value: PartialIButtonStyles): Self = StObject.set(x, "caretDownButtonStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaretDownButtonStylesUndefined: Self = StObject.set(x, "caretDownButtonStyles", js.undefined)
+      inline def setCaretDownButtonStylesUndefined: Self = StObject.set(x, "caretDownButtonStyles", js.undefined)
       
-      @scala.inline
-      def setComboBoxOptionStyles(value: PartialIComboBoxOptionSty): Self = StObject.set(x, "comboBoxOptionStyles", value.asInstanceOf[js.Any])
+      inline def setComboBoxOptionStyles(value: PartialIComboBoxOptionSty): Self = StObject.set(x, "comboBoxOptionStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComboBoxOptionStylesUndefined: Self = StObject.set(x, "comboBoxOptionStyles", js.undefined)
+      inline def setComboBoxOptionStylesUndefined: Self = StObject.set(x, "comboBoxOptionStyles", js.undefined)
       
-      @scala.inline
-      def setDropdownMaxWidth(value: Double): Self = StObject.set(x, "dropdownMaxWidth", value.asInstanceOf[js.Any])
+      inline def setDropdownMaxWidth(value: Double): Self = StObject.set(x, "dropdownMaxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownMaxWidthUndefined: Self = StObject.set(x, "dropdownMaxWidth", js.undefined)
+      inline def setDropdownMaxWidthUndefined: Self = StObject.set(x, "dropdownMaxWidth", js.undefined)
       
-      @scala.inline
-      def setDropdownWidth(value: Double): Self = StObject.set(x, "dropdownWidth", value.asInstanceOf[js.Any])
+      inline def setDropdownWidth(value: Double): Self = StObject.set(x, "dropdownWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownWidthUndefined: Self = StObject.set(x, "dropdownWidth", js.undefined)
+      inline def setDropdownWidthUndefined: Self = StObject.set(x, "dropdownWidth", js.undefined)
       
-      @scala.inline
-      def setGetClassNames(
+      inline def setGetClassNames(
         value: (/* theme */ ITheme, /* isOpen */ Boolean, /* disabled */ Boolean, /* required */ Boolean, /* focused */ Boolean, /* allowFreeForm */ Boolean, /* hasErrorMessage */ Boolean, /* className */ js.UndefOr[String]) => IComboBoxClassNames
       ): Self = StObject.set(x, "getClassNames", js.Any.fromFunction8(value))
       
-      @scala.inline
-      def setGetClassNamesUndefined: Self = StObject.set(x, "getClassNames", js.undefined)
+      inline def setGetClassNamesUndefined: Self = StObject.set(x, "getClassNames", js.undefined)
       
-      @scala.inline
-      def setIconButtonProps(value: IButtonProps): Self = StObject.set(x, "iconButtonProps", value.asInstanceOf[js.Any])
+      inline def setIconButtonProps(value: IButtonProps): Self = StObject.set(x, "iconButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconButtonPropsUndefined: Self = StObject.set(x, "iconButtonProps", js.undefined)
+      inline def setIconButtonPropsUndefined: Self = StObject.set(x, "iconButtonProps", js.undefined)
       
-      @scala.inline
-      def setIsButtonAriaHidden(value: Boolean): Self = StObject.set(x, "isButtonAriaHidden", value.asInstanceOf[js.Any])
+      inline def setIsButtonAriaHidden(value: Boolean): Self = StObject.set(x, "isButtonAriaHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsButtonAriaHiddenUndefined: Self = StObject.set(x, "isButtonAriaHidden", js.undefined)
+      inline def setIsButtonAriaHiddenUndefined: Self = StObject.set(x, "isButtonAriaHidden", js.undefined)
       
-      @scala.inline
-      def setKeytipProps(value: IKeytipProps): Self = StObject.set(x, "keytipProps", value.asInstanceOf[js.Any])
+      inline def setKeytipProps(value: IKeytipProps): Self = StObject.set(x, "keytipProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeytipPropsUndefined: Self = StObject.set(x, "keytipProps", js.undefined)
+      inline def setKeytipPropsUndefined: Self = StObject.set(x, "keytipProps", js.undefined)
       
-      @scala.inline
-      def setMultiSelectDelimiter(value: String): Self = StObject.set(x, "multiSelectDelimiter", value.asInstanceOf[js.Any])
+      inline def setMultiSelectDelimiter(value: String): Self = StObject.set(x, "multiSelectDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiSelectDelimiterUndefined: Self = StObject.set(x, "multiSelectDelimiter", js.undefined)
+      inline def setMultiSelectDelimiterUndefined: Self = StObject.set(x, "multiSelectDelimiter", js.undefined)
       
-      @scala.inline
-      def setOnChange(
+      inline def setOnChange(
         value: (/* event */ FormEvent[IComboBox], /* option */ js.UndefOr[IComboBoxOption], /* index */ js.UndefOr[Double], /* value */ js.UndefOr[String]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnItemClick(
+      inline def setOnItemClick(
         value: (/* event */ FormEvent[IComboBox], /* option */ js.UndefOr[IComboBoxOption], /* index */ js.UndefOr[Double]) => Unit
       ): Self = StObject.set(x, "onItemClick", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
+      inline def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
       
-      @scala.inline
-      def setOnMenuDismiss(value: () => Unit): Self = StObject.set(x, "onMenuDismiss", js.Any.fromFunction0(value))
+      inline def setOnMenuDismiss(value: () => Unit): Self = StObject.set(x, "onMenuDismiss", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnMenuDismissUndefined: Self = StObject.set(x, "onMenuDismiss", js.undefined)
+      inline def setOnMenuDismissUndefined: Self = StObject.set(x, "onMenuDismiss", js.undefined)
       
-      @scala.inline
-      def setOnMenuDismissed(value: () => Unit): Self = StObject.set(x, "onMenuDismissed", js.Any.fromFunction0(value))
+      inline def setOnMenuDismissed(value: () => Unit): Self = StObject.set(x, "onMenuDismissed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnMenuDismissedUndefined: Self = StObject.set(x, "onMenuDismissed", js.undefined)
+      inline def setOnMenuDismissedUndefined: Self = StObject.set(x, "onMenuDismissed", js.undefined)
       
-      @scala.inline
-      def setOnMenuOpen(value: () => Unit): Self = StObject.set(x, "onMenuOpen", js.Any.fromFunction0(value))
+      inline def setOnMenuOpen(value: () => Unit): Self = StObject.set(x, "onMenuOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnMenuOpenUndefined: Self = StObject.set(x, "onMenuOpen", js.undefined)
+      inline def setOnMenuOpenUndefined: Self = StObject.set(x, "onMenuOpen", js.undefined)
       
-      @scala.inline
-      def setOnPendingValueChanged(
+      inline def setOnPendingValueChanged(
         value: (/* option */ js.UndefOr[IComboBoxOption], /* index */ js.UndefOr[Double], /* value */ js.UndefOr[String]) => Unit
       ): Self = StObject.set(x, "onPendingValueChanged", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnPendingValueChangedUndefined: Self = StObject.set(x, "onPendingValueChanged", js.undefined)
+      inline def setOnPendingValueChangedUndefined: Self = StObject.set(x, "onPendingValueChanged", js.undefined)
       
-      @scala.inline
-      def setOnRenderLabel(
+      inline def setOnRenderLabel(
         value: (/* props */ js.UndefOr[IOnRenderComboBoxLabelProps], /* defaultRender */ js.UndefOr[
               js.Function1[/* props */ js.UndefOr[IOnRenderComboBoxLabelProps], Element | Null]
             ]) => Element | Null
       ): Self = StObject.set(x, "onRenderLabel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderLabelUndefined: Self = StObject.set(x, "onRenderLabel", js.undefined)
+      inline def setOnRenderLabelUndefined: Self = StObject.set(x, "onRenderLabel", js.undefined)
       
-      @scala.inline
-      def setOnRenderLowerContent(
+      inline def setOnRenderLowerContent(
         value: (/* props */ js.UndefOr[IComboBoxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IComboBoxProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderLowerContent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderLowerContentUndefined: Self = StObject.set(x, "onRenderLowerContent", js.undefined)
+      inline def setOnRenderLowerContentUndefined: Self = StObject.set(x, "onRenderLowerContent", js.undefined)
       
-      @scala.inline
-      def setOnRenderUpperContent(
+      inline def setOnRenderUpperContent(
         value: (/* props */ js.UndefOr[IComboBoxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IComboBoxProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderUpperContent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderUpperContentUndefined: Self = StObject.set(x, "onRenderUpperContent", js.undefined)
+      inline def setOnRenderUpperContentUndefined: Self = StObject.set(x, "onRenderUpperContent", js.undefined)
       
-      @scala.inline
-      def setOnResolveOptions(
+      inline def setOnResolveOptions(
         value: /* options */ js.Array[IComboBoxOption] => js.Array[IComboBoxOption] | js.Thenable[js.Array[IComboBoxOption]]
       ): Self = StObject.set(x, "onResolveOptions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResolveOptionsUndefined: Self = StObject.set(x, "onResolveOptions", js.undefined)
+      inline def setOnResolveOptionsUndefined: Self = StObject.set(x, "onResolveOptions", js.undefined)
       
-      @scala.inline
-      def setOnScrollToItem(value: /* itemIndex */ Double => Unit): Self = StObject.set(x, "onScrollToItem", js.Any.fromFunction1(value))
+      inline def setOnScrollToItem(value: /* itemIndex */ Double => Unit): Self = StObject.set(x, "onScrollToItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollToItemUndefined: Self = StObject.set(x, "onScrollToItem", js.undefined)
+      inline def setOnScrollToItemUndefined: Self = StObject.set(x, "onScrollToItem", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Array[IComboBoxOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[IComboBoxOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: IComboBoxOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: IComboBoxOption*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setPersistMenu(value: Boolean): Self = StObject.set(x, "persistMenu", value.asInstanceOf[js.Any])
+      inline def setPersistMenu(value: Boolean): Self = StObject.set(x, "persistMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistMenuUndefined: Self = StObject.set(x, "persistMenu", js.undefined)
+      inline def setPersistMenuUndefined: Self = StObject.set(x, "persistMenu", js.undefined)
       
-      @scala.inline
-      def setScrollSelectedToTop(value: Boolean): Self = StObject.set(x, "scrollSelectedToTop", value.asInstanceOf[js.Any])
+      inline def setScrollSelectedToTop(value: Boolean): Self = StObject.set(x, "scrollSelectedToTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollSelectedToTopUndefined: Self = StObject.set(x, "scrollSelectedToTop", js.undefined)
+      inline def setScrollSelectedToTopUndefined: Self = StObject.set(x, "scrollSelectedToTop", js.undefined)
       
-      @scala.inline
-      def setShouldRestoreFocus(value: Boolean): Self = StObject.set(x, "shouldRestoreFocus", value.asInstanceOf[js.Any])
+      inline def setShouldRestoreFocus(value: Boolean): Self = StObject.set(x, "shouldRestoreFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldRestoreFocusUndefined: Self = StObject.set(x, "shouldRestoreFocus", js.undefined)
+      inline def setShouldRestoreFocusUndefined: Self = StObject.set(x, "shouldRestoreFocus", js.undefined)
       
-      @scala.inline
-      def setStyles(value: PartialIComboBoxStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: PartialIComboBoxStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setUseComboBoxAsMenuWidth(value: Boolean): Self = StObject.set(x, "useComboBoxAsMenuWidth", value.asInstanceOf[js.Any])
+      inline def setUseComboBoxAsMenuWidth(value: Boolean): Self = StObject.set(x, "useComboBoxAsMenuWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseComboBoxAsMenuWidthUndefined: Self = StObject.set(x, "useComboBoxAsMenuWidth", js.undefined)
+      inline def setUseComboBoxAsMenuWidthUndefined: Self = StObject.set(x, "useComboBoxAsMenuWidth", js.undefined)
     }
   }
   
@@ -822,185 +722,126 @@ object comboBoxTypesMod {
   }
   object IComboBoxStyles {
     
-    @scala.inline
-    def apply(): IComboBoxStyles = {
+    inline def apply(): IComboBoxStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IComboBoxStyles]
     }
     
-    @scala.inline
-    implicit class IComboBoxStylesMutableBuilder[Self <: IComboBoxStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IComboBoxStyles](x: Self) {
       
-      @scala.inline
-      def setCallout(value: IStyle): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
+      inline def setCallout(value: IStyle): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalloutNull: Self = StObject.set(x, "callout", null)
+      inline def setCalloutNull: Self = StObject.set(x, "callout", null)
       
-      @scala.inline
-      def setCalloutUndefined: Self = StObject.set(x, "callout", js.undefined)
+      inline def setCalloutUndefined: Self = StObject.set(x, "callout", js.undefined)
       
-      @scala.inline
-      def setContainer(value: IStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: IStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerNull: Self = StObject.set(x, "container", null)
+      inline def setContainerNull: Self = StObject.set(x, "container", null)
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setDivider(value: IStyle): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+      inline def setDivider(value: IStyle): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDividerNull: Self = StObject.set(x, "divider", null)
+      inline def setDividerNull: Self = StObject.set(x, "divider", null)
       
-      @scala.inline
-      def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
+      inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(value: IStyle): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: IStyle): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageNull: Self = StObject.set(x, "errorMessage", null)
+      inline def setErrorMessageNull: Self = StObject.set(x, "errorMessage", null)
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      @scala.inline
-      def setHeader(value: IStyle): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: IStyle): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderNull: Self = StObject.set(x, "header", null)
+      inline def setHeaderNull: Self = StObject.set(x, "header", null)
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setInput(value: IStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: IStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputDisabled(value: IStyle): Self = StObject.set(x, "inputDisabled", value.asInstanceOf[js.Any])
+      inline def setInputDisabled(value: IStyle): Self = StObject.set(x, "inputDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputDisabledNull: Self = StObject.set(x, "inputDisabled", null)
+      inline def setInputDisabledNull: Self = StObject.set(x, "inputDisabled", null)
       
-      @scala.inline
-      def setInputDisabledUndefined: Self = StObject.set(x, "inputDisabled", js.undefined)
+      inline def setInputDisabledUndefined: Self = StObject.set(x, "inputDisabled", js.undefined)
       
-      @scala.inline
-      def setInputNull: Self = StObject.set(x, "input", null)
+      inline def setInputNull: Self = StObject.set(x, "input", null)
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setLabel(value: IStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: IStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelDisabled(value: IStyle): Self = StObject.set(x, "labelDisabled", value.asInstanceOf[js.Any])
+      inline def setLabelDisabled(value: IStyle): Self = StObject.set(x, "labelDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelDisabledNull: Self = StObject.set(x, "labelDisabled", null)
+      inline def setLabelDisabledNull: Self = StObject.set(x, "labelDisabled", null)
       
-      @scala.inline
-      def setLabelDisabledUndefined: Self = StObject.set(x, "labelDisabled", js.undefined)
+      inline def setLabelDisabledUndefined: Self = StObject.set(x, "labelDisabled", js.undefined)
       
-      @scala.inline
-      def setLabelNull: Self = StObject.set(x, "label", null)
+      inline def setLabelNull: Self = StObject.set(x, "label", null)
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setOptionsContainer(value: IStyle): Self = StObject.set(x, "optionsContainer", value.asInstanceOf[js.Any])
+      inline def setOptionsContainer(value: IStyle): Self = StObject.set(x, "optionsContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsContainerNull: Self = StObject.set(x, "optionsContainer", null)
+      inline def setOptionsContainerNull: Self = StObject.set(x, "optionsContainer", null)
       
-      @scala.inline
-      def setOptionsContainerUndefined: Self = StObject.set(x, "optionsContainer", js.undefined)
+      inline def setOptionsContainerUndefined: Self = StObject.set(x, "optionsContainer", js.undefined)
       
-      @scala.inline
-      def setOptionsContainerWrapper(value: IStyle): Self = StObject.set(x, "optionsContainerWrapper", value.asInstanceOf[js.Any])
+      inline def setOptionsContainerWrapper(value: IStyle): Self = StObject.set(x, "optionsContainerWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsContainerWrapperNull: Self = StObject.set(x, "optionsContainerWrapper", null)
+      inline def setOptionsContainerWrapperNull: Self = StObject.set(x, "optionsContainerWrapper", null)
       
-      @scala.inline
-      def setOptionsContainerWrapperUndefined: Self = StObject.set(x, "optionsContainerWrapper", js.undefined)
+      inline def setOptionsContainerWrapperUndefined: Self = StObject.set(x, "optionsContainerWrapper", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDisabled(value: IStyle): Self = StObject.set(x, "rootDisabled", value.asInstanceOf[js.Any])
+      inline def setRootDisabled(value: IStyle): Self = StObject.set(x, "rootDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDisabledNull: Self = StObject.set(x, "rootDisabled", null)
+      inline def setRootDisabledNull: Self = StObject.set(x, "rootDisabled", null)
       
-      @scala.inline
-      def setRootDisabledUndefined: Self = StObject.set(x, "rootDisabled", js.undefined)
+      inline def setRootDisabledUndefined: Self = StObject.set(x, "rootDisabled", js.undefined)
       
-      @scala.inline
-      def setRootDisallowFreeForm(value: IStyle): Self = StObject.set(x, "rootDisallowFreeForm", value.asInstanceOf[js.Any])
+      inline def setRootDisallowFreeForm(value: IStyle): Self = StObject.set(x, "rootDisallowFreeForm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDisallowFreeFormNull: Self = StObject.set(x, "rootDisallowFreeForm", null)
+      inline def setRootDisallowFreeFormNull: Self = StObject.set(x, "rootDisallowFreeForm", null)
       
-      @scala.inline
-      def setRootDisallowFreeFormUndefined: Self = StObject.set(x, "rootDisallowFreeForm", js.undefined)
+      inline def setRootDisallowFreeFormUndefined: Self = StObject.set(x, "rootDisallowFreeForm", js.undefined)
       
-      @scala.inline
-      def setRootError(value: IStyle): Self = StObject.set(x, "rootError", value.asInstanceOf[js.Any])
+      inline def setRootError(value: IStyle): Self = StObject.set(x, "rootError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootErrorNull: Self = StObject.set(x, "rootError", null)
+      inline def setRootErrorNull: Self = StObject.set(x, "rootError", null)
       
-      @scala.inline
-      def setRootErrorUndefined: Self = StObject.set(x, "rootError", js.undefined)
+      inline def setRootErrorUndefined: Self = StObject.set(x, "rootError", js.undefined)
       
-      @scala.inline
-      def setRootFocused(value: IStyle): Self = StObject.set(x, "rootFocused", value.asInstanceOf[js.Any])
+      inline def setRootFocused(value: IStyle): Self = StObject.set(x, "rootFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootFocusedNull: Self = StObject.set(x, "rootFocused", null)
+      inline def setRootFocusedNull: Self = StObject.set(x, "rootFocused", null)
       
-      @scala.inline
-      def setRootFocusedUndefined: Self = StObject.set(x, "rootFocused", js.undefined)
+      inline def setRootFocusedUndefined: Self = StObject.set(x, "rootFocused", js.undefined)
       
-      @scala.inline
-      def setRootHovered(value: IStyle): Self = StObject.set(x, "rootHovered", value.asInstanceOf[js.Any])
+      inline def setRootHovered(value: IStyle): Self = StObject.set(x, "rootHovered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootHoveredNull: Self = StObject.set(x, "rootHovered", null)
+      inline def setRootHoveredNull: Self = StObject.set(x, "rootHovered", null)
       
-      @scala.inline
-      def setRootHoveredUndefined: Self = StObject.set(x, "rootHovered", js.undefined)
+      inline def setRootHoveredUndefined: Self = StObject.set(x, "rootHovered", js.undefined)
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootPressed(value: IStyle): Self = StObject.set(x, "rootPressed", value.asInstanceOf[js.Any])
+      inline def setRootPressed(value: IStyle): Self = StObject.set(x, "rootPressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootPressedNull: Self = StObject.set(x, "rootPressed", null)
+      inline def setRootPressedNull: Self = StObject.set(x, "rootPressed", null)
       
-      @scala.inline
-      def setRootPressedUndefined: Self = StObject.set(x, "rootPressed", js.undefined)
+      inline def setRootPressedUndefined: Self = StObject.set(x, "rootPressed", js.undefined)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setScreenReaderText(value: IStyle): Self = StObject.set(x, "screenReaderText", value.asInstanceOf[js.Any])
+      inline def setScreenReaderText(value: IStyle): Self = StObject.set(x, "screenReaderText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenReaderTextNull: Self = StObject.set(x, "screenReaderText", null)
+      inline def setScreenReaderTextNull: Self = StObject.set(x, "screenReaderText", null)
       
-      @scala.inline
-      def setScreenReaderTextUndefined: Self = StObject.set(x, "screenReaderText", js.undefined)
+      inline def setScreenReaderTextUndefined: Self = StObject.set(x, "screenReaderText", js.undefined)
     }
   }
   
@@ -1018,23 +859,18 @@ object comboBoxTypesMod {
   }
   object IOnRenderComboBoxLabelProps {
     
-    @scala.inline
-    def apply(props: IComboBoxProps): IOnRenderComboBoxLabelProps = {
+    inline def apply(props: IComboBoxProps): IOnRenderComboBoxLabelProps = {
       val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOnRenderComboBoxLabelProps]
     }
     
-    @scala.inline
-    implicit class IOnRenderComboBoxLabelPropsMutableBuilder[Self <: IOnRenderComboBoxLabelProps] (val x: Self) extends AnyVal {
+    extension [Self <: IOnRenderComboBoxLabelProps](x: Self) {
       
-      @scala.inline
-      def setMultiselectAccessibleText(value: String): Self = StObject.set(x, "multiselectAccessibleText", value.asInstanceOf[js.Any])
+      inline def setMultiselectAccessibleText(value: String): Self = StObject.set(x, "multiselectAccessibleText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiselectAccessibleTextUndefined: Self = StObject.set(x, "multiselectAccessibleText", js.undefined)
+      inline def setMultiselectAccessibleTextUndefined: Self = StObject.set(x, "multiselectAccessibleText", js.undefined)
       
-      @scala.inline
-      def setProps(value: IComboBoxProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: IComboBoxProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
 }

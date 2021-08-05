@@ -15,10 +15,8 @@ object SpreadsheetViewObjectsMode {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def HIDE: `1` = 1.asInstanceOf[`1`]
+    inline def HIDE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def SHOW: `0` = 0.asInstanceOf[`0`]
+    inline def SHOW: `0` = 0.asInstanceOf[`0`]
   }
 }

@@ -11,22 +11,17 @@ trait SettingsChange extends StObject {
 }
 object SettingsChange {
   
-  @scala.inline
-  def apply(): SettingsChange = {
+  inline def apply(): SettingsChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SettingsChange]
   }
   
-  @scala.inline
-  implicit class SettingsChangeMutableBuilder[Self <: SettingsChange] (val x: Self) extends AnyVal {
+  extension [Self <: SettingsChange](x: Self) {
     
-    @scala.inline
-    def setRestrictionChanges(value: js.Array[RestrictionChange]): Self = StObject.set(x, "restrictionChanges", value.asInstanceOf[js.Any])
+    inline def setRestrictionChanges(value: js.Array[RestrictionChange]): Self = StObject.set(x, "restrictionChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictionChangesUndefined: Self = StObject.set(x, "restrictionChanges", js.undefined)
+    inline def setRestrictionChangesUndefined: Self = StObject.set(x, "restrictionChanges", js.undefined)
     
-    @scala.inline
-    def setRestrictionChangesVarargs(value: RestrictionChange*): Self = StObject.set(x, "restrictionChanges", js.Array(value :_*))
+    inline def setRestrictionChangesVarargs(value: RestrictionChange*): Self = StObject.set(x, "restrictionChanges", js.Array(value :_*))
   }
 }

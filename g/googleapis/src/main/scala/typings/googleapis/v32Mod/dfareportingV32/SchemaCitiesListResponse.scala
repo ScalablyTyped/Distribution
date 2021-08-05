@@ -22,28 +22,21 @@ trait SchemaCitiesListResponse extends StObject {
 }
 object SchemaCitiesListResponse {
   
-  @scala.inline
-  def apply(): SchemaCitiesListResponse = {
+  inline def apply(): SchemaCitiesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCitiesListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCitiesListResponseMutableBuilder[Self <: SchemaCitiesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCitiesListResponse](x: Self) {
     
-    @scala.inline
-    def setCities(value: js.Array[SchemaCity]): Self = StObject.set(x, "cities", value.asInstanceOf[js.Any])
+    inline def setCities(value: js.Array[SchemaCity]): Self = StObject.set(x, "cities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCitiesUndefined: Self = StObject.set(x, "cities", js.undefined)
+    inline def setCitiesUndefined: Self = StObject.set(x, "cities", js.undefined)
     
-    @scala.inline
-    def setCitiesVarargs(value: SchemaCity*): Self = StObject.set(x, "cities", js.Array(value :_*))
+    inline def setCitiesVarargs(value: SchemaCity*): Self = StObject.set(x, "cities", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

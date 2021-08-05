@@ -23,28 +23,21 @@ trait ListDevicePoolsRequest extends StObject {
 }
 object ListDevicePoolsRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): ListDevicePoolsRequest = {
+  inline def apply(arn: AmazonResourceName): ListDevicePoolsRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDevicePoolsRequest]
   }
   
-  @scala.inline
-  implicit class ListDevicePoolsRequestMutableBuilder[Self <: ListDevicePoolsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListDevicePoolsRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setType(value: DevicePoolType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DevicePoolType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

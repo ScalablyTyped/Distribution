@@ -26,25 +26,19 @@ trait IgZoombarDefaultZoomWindow
 }
 object IgZoombarDefaultZoomWindow {
   
-  @scala.inline
-  def apply(): IgZoombarDefaultZoomWindow = {
+  inline def apply(): IgZoombarDefaultZoomWindow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgZoombarDefaultZoomWindow]
   }
   
-  @scala.inline
-  implicit class IgZoombarDefaultZoomWindowMutableBuilder[Self <: IgZoombarDefaultZoomWindow] (val x: Self) extends AnyVal {
+  extension [Self <: IgZoombarDefaultZoomWindow](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

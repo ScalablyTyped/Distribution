@@ -14,8 +14,7 @@ trait ReturnTypeGetSourceOrderHighlightObjectForTestResponse extends StObject {
 }
 object ReturnTypeGetSourceOrderHighlightObjectForTestResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     paramsType: js.Array[GetSourceOrderHighlightObjectForTestRequest],
     returnType: GetSourceOrderHighlightObjectForTestResponse
   ): ReturnTypeGetSourceOrderHighlightObjectForTestResponse = {
@@ -23,16 +22,12 @@ object ReturnTypeGetSourceOrderHighlightObjectForTestResponse {
     __obj.asInstanceOf[ReturnTypeGetSourceOrderHighlightObjectForTestResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetSourceOrderHighlightObjectForTestResponseMutableBuilder[Self <: ReturnTypeGetSourceOrderHighlightObjectForTestResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetSourceOrderHighlightObjectForTestResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[GetSourceOrderHighlightObjectForTestRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[GetSourceOrderHighlightObjectForTestRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: GetSourceOrderHighlightObjectForTestRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetSourceOrderHighlightObjectForTestRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetSourceOrderHighlightObjectForTestResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetSourceOrderHighlightObjectForTestResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

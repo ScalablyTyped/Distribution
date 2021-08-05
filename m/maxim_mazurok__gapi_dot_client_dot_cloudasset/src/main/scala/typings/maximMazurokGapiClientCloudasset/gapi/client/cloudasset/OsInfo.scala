@@ -32,61 +32,43 @@ trait OsInfo extends StObject {
 }
 object OsInfo {
   
-  @scala.inline
-  def apply(): OsInfo = {
+  inline def apply(): OsInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OsInfo]
   }
   
-  @scala.inline
-  implicit class OsInfoMutableBuilder[Self <: OsInfo] (val x: Self) extends AnyVal {
+  extension [Self <: OsInfo](x: Self) {
     
-    @scala.inline
-    def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+    inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
+    inline def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+    inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
-    @scala.inline
-    def setKernelRelease(value: String): Self = StObject.set(x, "kernelRelease", value.asInstanceOf[js.Any])
+    inline def setKernelRelease(value: String): Self = StObject.set(x, "kernelRelease", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelReleaseUndefined: Self = StObject.set(x, "kernelRelease", js.undefined)
+    inline def setKernelReleaseUndefined: Self = StObject.set(x, "kernelRelease", js.undefined)
     
-    @scala.inline
-    def setKernelVersion(value: String): Self = StObject.set(x, "kernelVersion", value.asInstanceOf[js.Any])
+    inline def setKernelVersion(value: String): Self = StObject.set(x, "kernelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelVersionUndefined: Self = StObject.set(x, "kernelVersion", js.undefined)
+    inline def setKernelVersionUndefined: Self = StObject.set(x, "kernelVersion", js.undefined)
     
-    @scala.inline
-    def setLongName(value: String): Self = StObject.set(x, "longName", value.asInstanceOf[js.Any])
+    inline def setLongName(value: String): Self = StObject.set(x, "longName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongNameUndefined: Self = StObject.set(x, "longName", js.undefined)
+    inline def setLongNameUndefined: Self = StObject.set(x, "longName", js.undefined)
     
-    @scala.inline
-    def setOsconfigAgentVersion(value: String): Self = StObject.set(x, "osconfigAgentVersion", value.asInstanceOf[js.Any])
+    inline def setOsconfigAgentVersion(value: String): Self = StObject.set(x, "osconfigAgentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsconfigAgentVersionUndefined: Self = StObject.set(x, "osconfigAgentVersion", js.undefined)
+    inline def setOsconfigAgentVersionUndefined: Self = StObject.set(x, "osconfigAgentVersion", js.undefined)
     
-    @scala.inline
-    def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
+    inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
+    inline def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

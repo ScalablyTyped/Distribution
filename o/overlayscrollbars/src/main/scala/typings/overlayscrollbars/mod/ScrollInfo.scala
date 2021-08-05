@@ -29,8 +29,7 @@ trait ScrollInfo extends StObject {
 }
 object ScrollInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     handleLength: XNumber,
     handleLengthRatio: XNumber,
     handleOffset: XNumber,
@@ -46,37 +45,26 @@ object ScrollInfo {
     __obj.asInstanceOf[ScrollInfo]
   }
   
-  @scala.inline
-  implicit class ScrollInfoMutableBuilder[Self <: ScrollInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollInfo](x: Self) {
     
-    @scala.inline
-    def setHandleLength(value: XNumber): Self = StObject.set(x, "handleLength", value.asInstanceOf[js.Any])
+    inline def setHandleLength(value: XNumber): Self = StObject.set(x, "handleLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleLengthRatio(value: XNumber): Self = StObject.set(x, "handleLengthRatio", value.asInstanceOf[js.Any])
+    inline def setHandleLengthRatio(value: XNumber): Self = StObject.set(x, "handleLengthRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleOffset(value: XNumber): Self = StObject.set(x, "handleOffset", value.asInstanceOf[js.Any])
+    inline def setHandleOffset(value: XNumber): Self = StObject.set(x, "handleOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
+    inline def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRTLNormalized(value: Boolean): Self = StObject.set(x, "isRTLNormalized", value.asInstanceOf[js.Any])
+    inline def setIsRTLNormalized(value: Boolean): Self = StObject.set(x, "isRTLNormalized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: XNumber): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: XNumber): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: XNumber): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: XNumber): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatio(value: XNumber): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: XNumber): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnappedHandleOffset(value: XNumber): Self = StObject.set(x, "snappedHandleOffset", value.asInstanceOf[js.Any])
+    inline def setSnappedHandleOffset(value: XNumber): Self = StObject.set(x, "snappedHandleOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackLength(value: XNumber): Self = StObject.set(x, "trackLength", value.asInstanceOf[js.Any])
+    inline def setTrackLength(value: XNumber): Self = StObject.set(x, "trackLength", value.asInstanceOf[js.Any])
   }
 }

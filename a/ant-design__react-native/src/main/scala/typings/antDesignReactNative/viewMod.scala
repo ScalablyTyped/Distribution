@@ -33,7 +33,6 @@ object viewMod {
     @JSImport("@ant-design/react-native/lib/view", "default.forceTouchAvailable")
     @js.native
     def forceTouchAvailable: Boolean = js.native
-    @scala.inline
-    def forceTouchAvailable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceTouchAvailable")(x.asInstanceOf[js.Any])
+    inline def forceTouchAvailable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceTouchAvailable")(x.asInstanceOf[js.Any])
   }
 }

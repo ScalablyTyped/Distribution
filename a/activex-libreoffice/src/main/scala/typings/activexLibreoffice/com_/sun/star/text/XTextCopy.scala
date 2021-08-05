@@ -19,8 +19,7 @@ trait XTextCopy
 }
 object XTextCopy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     copyText: XTextCopy => Unit,
     queryInterface: `type` => js.Any,
@@ -30,10 +29,8 @@ object XTextCopy {
     __obj.asInstanceOf[XTextCopy]
   }
   
-  @scala.inline
-  implicit class XTextCopyMutableBuilder[Self <: XTextCopy] (val x: Self) extends AnyVal {
+  extension [Self <: XTextCopy](x: Self) {
     
-    @scala.inline
-    def setCopyText(value: XTextCopy => Unit): Self = StObject.set(x, "copyText", js.Any.fromFunction1(value))
+    inline def setCopyText(value: XTextCopy => Unit): Self = StObject.set(x, "copyText", js.Any.fromFunction1(value))
   }
 }

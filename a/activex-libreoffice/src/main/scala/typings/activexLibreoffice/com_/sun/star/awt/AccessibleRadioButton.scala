@@ -36,8 +36,7 @@ trait AccessibleRadioButton
      with XAccessibleValue
 object AccessibleRadioButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleActionCount: Double,
     AccessibleChildCount: Double,
     AccessibleDescription: String,

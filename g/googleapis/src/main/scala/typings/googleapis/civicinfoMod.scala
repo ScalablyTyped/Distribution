@@ -36,8 +36,7 @@ object civicinfoMod {
     @JSImport("googleapis/build/src/apis/civicinfo", "VERSIONS.v2")
     @js.native
     def v2: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Civicinfo] = js.native
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Civicinfo]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2")(x.asInstanceOf[js.Any])
   }
@@ -75,8 +74,7 @@ object civicinfoMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -120,9 +118,7 @@ object civicinfoMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def civicinfo(options: Options): Civicinfo = ^.asInstanceOf[js.Dynamic].applyDynamic("civicinfo")(options.asInstanceOf[js.Any]).asInstanceOf[Civicinfo]
+  inline def civicinfo(options: Options): Civicinfo = ^.asInstanceOf[js.Dynamic].applyDynamic("civicinfo")(options.asInstanceOf[js.Any]).asInstanceOf[Civicinfo]
   
-  @scala.inline
-  def civicinfo_v2(version: v2): Civicinfo = ^.asInstanceOf[js.Dynamic].applyDynamic("civicinfo")(version.asInstanceOf[js.Any]).asInstanceOf[Civicinfo]
+  inline def civicinfo_v2(version: v2): Civicinfo = ^.asInstanceOf[js.Dynamic].applyDynamic("civicinfo")(version.asInstanceOf[js.Any]).asInstanceOf[Civicinfo]
 }

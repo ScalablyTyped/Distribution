@@ -33,8 +33,7 @@ trait PortalUserAddItemParams
 }
 object PortalUserAddItemParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     item: PortalItem,
@@ -44,22 +43,16 @@ object PortalUserAddItemParams {
     __obj.asInstanceOf[PortalUserAddItemParams]
   }
   
-  @scala.inline
-  implicit class PortalUserAddItemParamsMutableBuilder[Self <: PortalUserAddItemParams] (val x: Self) extends AnyVal {
+  extension [Self <: PortalUserAddItemParams](x: Self) {
     
-    @scala.inline
-    def setData(value: String | js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setFolder(value: String | PortalFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: String | PortalFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+    inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
-    @scala.inline
-    def setItem(value: PortalItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: PortalItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

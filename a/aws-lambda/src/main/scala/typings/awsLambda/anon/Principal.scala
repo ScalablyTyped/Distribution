@@ -11,19 +11,15 @@ trait Principal extends StObject {
 }
 object Principal {
   
-  @scala.inline
-  def apply(Principal: PrincipalValue): Principal = {
+  inline def apply(Principal: PrincipalValue): Principal = {
     val __obj = js.Dynamic.literal(Principal = Principal.asInstanceOf[js.Any])
     __obj.asInstanceOf[Principal]
   }
   
-  @scala.inline
-  implicit class PrincipalMutableBuilder[Self <: Principal] (val x: Self) extends AnyVal {
+  extension [Self <: Principal](x: Self) {
     
-    @scala.inline
-    def setPrincipal(value: PrincipalValue): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: PrincipalValue): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalVarargs(value: String*): Self = StObject.set(x, "Principal", js.Array(value :_*))
+    inline def setPrincipalVarargs(value: String*): Self = StObject.set(x, "Principal", js.Array(value :_*))
   }
 }

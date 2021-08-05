@@ -17,37 +17,27 @@ trait DownloadOptions extends StObject {
 }
 object DownloadOptions {
   
-  @scala.inline
-  def apply(): DownloadOptions = {
+  inline def apply(): DownloadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DownloadOptions]
   }
   
-  @scala.inline
-  implicit class DownloadOptionsMutableBuilder[Self <: DownloadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadOptions](x: Self) {
     
-    @scala.inline
-    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setMd5(value: Boolean): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
+    inline def setMd5(value: Boolean): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMd5Undefined: Self = StObject.set(x, "md5", js.undefined)
+    inline def setMd5Undefined: Self = StObject.set(x, "md5", js.undefined)
     
-    @scala.inline
-    def setSessionType(value: FileSystemSessionType): Self = StObject.set(x, "sessionType", value.asInstanceOf[js.Any])
+    inline def setSessionType(value: FileSystemSessionType): Self = StObject.set(x, "sessionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionTypeUndefined: Self = StObject.set(x, "sessionType", js.undefined)
+    inline def setSessionTypeUndefined: Self = StObject.set(x, "sessionType", js.undefined)
   }
 }

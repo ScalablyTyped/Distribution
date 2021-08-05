@@ -19,25 +19,19 @@ trait DeleteCalendarObjectOptions extends StObject {
 }
 object DeleteCalendarObjectOptions {
   
-  @scala.inline
-  def apply(): DeleteCalendarObjectOptions = {
+  inline def apply(): DeleteCalendarObjectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteCalendarObjectOptions]
   }
   
-  @scala.inline
-  implicit class DeleteCalendarObjectOptionsMutableBuilder[Self <: DeleteCalendarObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCalendarObjectOptions](x: Self) {
     
-    @scala.inline
-    def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+    inline def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+    inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     
-    @scala.inline
-    def setXhr(value: Transport): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    inline def setXhr(value: Transport): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
   }
 }

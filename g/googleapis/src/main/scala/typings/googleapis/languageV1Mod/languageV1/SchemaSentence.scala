@@ -23,25 +23,19 @@ trait SchemaSentence extends StObject {
 }
 object SchemaSentence {
   
-  @scala.inline
-  def apply(): SchemaSentence = {
+  inline def apply(): SchemaSentence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSentence]
   }
   
-  @scala.inline
-  implicit class SchemaSentenceMutableBuilder[Self <: SchemaSentence] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSentence](x: Self) {
     
-    @scala.inline
-    def setSentiment(value: SchemaSentiment): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
+    inline def setSentiment(value: SchemaSentiment): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
+    inline def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
     
-    @scala.inline
-    def setText(value: SchemaTextSpan): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: SchemaTextSpan): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

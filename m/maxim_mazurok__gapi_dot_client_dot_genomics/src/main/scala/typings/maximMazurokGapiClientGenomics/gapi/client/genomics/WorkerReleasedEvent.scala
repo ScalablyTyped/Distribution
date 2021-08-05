@@ -14,25 +14,19 @@ trait WorkerReleasedEvent extends StObject {
 }
 object WorkerReleasedEvent {
   
-  @scala.inline
-  def apply(): WorkerReleasedEvent = {
+  inline def apply(): WorkerReleasedEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkerReleasedEvent]
   }
   
-  @scala.inline
-  implicit class WorkerReleasedEventMutableBuilder[Self <: WorkerReleasedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerReleasedEvent](x: Self) {
     
-    @scala.inline
-    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

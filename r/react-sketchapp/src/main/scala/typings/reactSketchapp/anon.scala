@@ -17,23 +17,18 @@ object anon {
   }
   object ClearExistingStyles {
     
-    @scala.inline
-    def apply(context: SketchContext): ClearExistingStyles = {
+    inline def apply(context: SketchContext): ClearExistingStyles = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClearExistingStyles]
     }
     
-    @scala.inline
-    implicit class ClearExistingStylesMutableBuilder[Self <: ClearExistingStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ClearExistingStyles](x: Self) {
       
-      @scala.inline
-      def setClearExistingStyles(value: Boolean): Self = StObject.set(x, "clearExistingStyles", value.asInstanceOf[js.Any])
+      inline def setClearExistingStyles(value: Boolean): Self = StObject.set(x, "clearExistingStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearExistingStylesUndefined: Self = StObject.set(x, "clearExistingStyles", js.undefined)
+      inline def setClearExistingStylesUndefined: Self = StObject.set(x, "clearExistingStyles", js.undefined)
       
-      @scala.inline
-      def setContext(value: SketchContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: SketchContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,26 +40,20 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(): Height = {
+    inline def apply(): Height = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -74,17 +63,14 @@ object anon {
   }
   object IsInAParentText {
     
-    @scala.inline
-    def apply(isInAParentText: Boolean): IsInAParentText = {
+    inline def apply(isInAParentText: Boolean): IsInAParentText = {
       val __obj = js.Dynamic.literal(isInAParentText = isInAParentText.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsInAParentText]
     }
     
-    @scala.inline
-    implicit class IsInAParentTextMutableBuilder[Self <: IsInAParentText] (val x: Self) extends AnyVal {
+    extension [Self <: IsInAParentText](x: Self) {
       
-      @scala.inline
-      def setIsInAParentText(value: Boolean): Self = StObject.set(x, "isInAParentText", value.asInstanceOf[js.Any])
+      inline def setIsInAParentText(value: Boolean): Self = StObject.set(x, "isInAParentText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,20 +80,16 @@ object anon {
   }
   object Overrides {
     
-    @scala.inline
-    def apply(): Overrides = {
+    inline def apply(): Overrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Overrides]
     }
     
-    @scala.inline
-    implicit class OverridesMutableBuilder[Self <: Overrides] (val x: Self) extends AnyVal {
+    extension [Self <: Overrides](x: Self) {
       
-      @scala.inline
-      def setOverrides(value: StringDictionary[js.Any]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: StringDictionary[js.Any]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     }
   }
   
@@ -117,17 +99,14 @@ object anon {
   }
   object Src {
     
-    @scala.inline
-    def apply(src: String): Src = {
+    inline def apply(src: String): Src = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[Src]
     }
     
-    @scala.inline
-    implicit class SrcMutableBuilder[Self <: Src] (val x: Self) extends AnyVal {
+    extension [Self <: Src](x: Self) {
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,17 +116,14 @@ object anon {
   }
   object Style {
     
-    @scala.inline
-    def apply(style: typings.reactSketchapp.mod.Style | TextStyle): Style = {
+    inline def apply(style: typings.reactSketchapp.mod.Style | TextStyle): Style = {
       val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[Style]
     }
     
-    @scala.inline
-    implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
+    extension [Self <: Style](x: Self) {
       
-      @scala.inline
-      def setStyle(value: typings.reactSketchapp.mod.Style | TextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: typings.reactSketchapp.mod.Style | TextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,20 +135,16 @@ object anon {
   }
   object Width {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Width = {
+    inline def apply(height: Double, width: Double): Width = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Width]
     }
     
-    @scala.inline
-    implicit class WidthMutableBuilder[Self <: Width] (val x: Self) extends AnyVal {
+    extension [Self <: Width](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -32,17 +32,13 @@ object mod {
     var unreffed: Boolean = js.native
   }
   
-  @scala.inline
-  def clearInterval(timer: Interval): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInterval")(timer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearInterval(timer: Interval): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInterval")(timer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def clearTimeout(timer: Timeout): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(timer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearTimeout(timer: Timeout): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(timer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setInterval(listener: Listener, ms: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(listener.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def setInterval(listener: Listener, ms: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(listener.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Interval]
   
-  @scala.inline
-  def setTimeout(listener: Listener, ms: Double): Timeout = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(listener.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Timeout]
+  inline def setTimeout(listener: Listener, ms: Double): Timeout = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(listener.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Timeout]
   
   type Interval = Timeout
   

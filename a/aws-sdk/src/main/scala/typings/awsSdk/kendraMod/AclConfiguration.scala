@@ -13,16 +13,13 @@ trait AclConfiguration extends StObject {
 }
 object AclConfiguration {
   
-  @scala.inline
-  def apply(AllowedGroupsColumnName: ColumnName): AclConfiguration = {
+  inline def apply(AllowedGroupsColumnName: ColumnName): AclConfiguration = {
     val __obj = js.Dynamic.literal(AllowedGroupsColumnName = AllowedGroupsColumnName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AclConfiguration]
   }
   
-  @scala.inline
-  implicit class AclConfigurationMutableBuilder[Self <: AclConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AclConfiguration](x: Self) {
     
-    @scala.inline
-    def setAllowedGroupsColumnName(value: ColumnName): Self = StObject.set(x, "AllowedGroupsColumnName", value.asInstanceOf[js.Any])
+    inline def setAllowedGroupsColumnName(value: ColumnName): Self = StObject.set(x, "AllowedGroupsColumnName", value.asInstanceOf[js.Any])
   }
 }

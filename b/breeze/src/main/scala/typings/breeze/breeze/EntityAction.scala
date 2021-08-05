@@ -36,8 +36,7 @@ trait EntityAction
 }
 object EntityAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AcceptChanges: EntityActionSymbol,
     Attach: EntityActionSymbol,
     AttachOnImport: EntityActionSymbol,
@@ -59,43 +58,30 @@ object EntityAction {
     __obj.asInstanceOf[EntityAction]
   }
   
-  @scala.inline
-  implicit class EntityActionMutableBuilder[Self <: EntityAction] (val x: Self) extends AnyVal {
+  extension [Self <: EntityAction](x: Self) {
     
-    @scala.inline
-    def setAcceptChanges(value: EntityActionSymbol): Self = StObject.set(x, "AcceptChanges", value.asInstanceOf[js.Any])
+    inline def setAcceptChanges(value: EntityActionSymbol): Self = StObject.set(x, "AcceptChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttach(value: EntityActionSymbol): Self = StObject.set(x, "Attach", value.asInstanceOf[js.Any])
+    inline def setAttach(value: EntityActionSymbol): Self = StObject.set(x, "Attach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachOnImport(value: EntityActionSymbol): Self = StObject.set(x, "AttachOnImport", value.asInstanceOf[js.Any])
+    inline def setAttachOnImport(value: EntityActionSymbol): Self = StObject.set(x, "AttachOnImport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachOnQuery(value: EntityActionSymbol): Self = StObject.set(x, "AttachOnQuery", value.asInstanceOf[js.Any])
+    inline def setAttachOnQuery(value: EntityActionSymbol): Self = StObject.set(x, "AttachOnQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClear(value: EntityActionSymbol): Self = StObject.set(x, "Clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: EntityActionSymbol): Self = StObject.set(x, "Clear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetach(value: EntityActionSymbol): Self = StObject.set(x, "Detach", value.asInstanceOf[js.Any])
+    inline def setDetach(value: EntityActionSymbol): Self = StObject.set(x, "Detach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityStateChange(value: EntityActionSymbol): Self = StObject.set(x, "EntityStateChange", value.asInstanceOf[js.Any])
+    inline def setEntityStateChange(value: EntityActionSymbol): Self = StObject.set(x, "EntityStateChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeOnImport(value: EntityActionSymbol): Self = StObject.set(x, "MergeOnImport", value.asInstanceOf[js.Any])
+    inline def setMergeOnImport(value: EntityActionSymbol): Self = StObject.set(x, "MergeOnImport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeOnQuery(value: EntityActionSymbol): Self = StObject.set(x, "MergeOnQuery", value.asInstanceOf[js.Any])
+    inline def setMergeOnQuery(value: EntityActionSymbol): Self = StObject.set(x, "MergeOnQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeOnSave(value: EntityActionSymbol): Self = StObject.set(x, "MergeOnSave", value.asInstanceOf[js.Any])
+    inline def setMergeOnSave(value: EntityActionSymbol): Self = StObject.set(x, "MergeOnSave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyChange(value: EntityActionSymbol): Self = StObject.set(x, "PropertyChange", value.asInstanceOf[js.Any])
+    inline def setPropertyChange(value: EntityActionSymbol): Self = StObject.set(x, "PropertyChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectChanges(value: EntityActionSymbol): Self = StObject.set(x, "RejectChanges", value.asInstanceOf[js.Any])
+    inline def setRejectChanges(value: EntityActionSymbol): Self = StObject.set(x, "RejectChanges", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,15 @@ object fileMod {
   
   trait FileUtils_ extends StObject {
     
-    var filenameReservedRegex: js.Any
+    /* private */ var filenameReservedRegex: js.Any
     
-    var filenameReservedRegexWindows: js.Any
+    /* private */ var filenameReservedRegexWindows: js.Any
     
     def isValidFileName(fileName: js.Any): Boolean
   }
   object FileUtils_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       filenameReservedRegex: js.Any,
       filenameReservedRegexWindows: js.Any,
       isValidFileName: js.Any => Boolean
@@ -30,17 +29,13 @@ object fileMod {
       __obj.asInstanceOf[FileUtils_]
     }
     
-    @scala.inline
-    implicit class FileUtils_MutableBuilder[Self <: FileUtils_] (val x: Self) extends AnyVal {
+    extension [Self <: FileUtils_](x: Self) {
       
-      @scala.inline
-      def setFilenameReservedRegex(value: js.Any): Self = StObject.set(x, "filenameReservedRegex", value.asInstanceOf[js.Any])
+      inline def setFilenameReservedRegex(value: js.Any): Self = StObject.set(x, "filenameReservedRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameReservedRegexWindows(value: js.Any): Self = StObject.set(x, "filenameReservedRegexWindows", value.asInstanceOf[js.Any])
+      inline def setFilenameReservedRegexWindows(value: js.Any): Self = StObject.set(x, "filenameReservedRegexWindows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsValidFileName(value: js.Any => Boolean): Self = StObject.set(x, "isValidFileName", js.Any.fromFunction1(value))
+      inline def setIsValidFileName(value: js.Any => Boolean): Self = StObject.set(x, "isValidFileName", js.Any.fromFunction1(value))
     }
   }
 }

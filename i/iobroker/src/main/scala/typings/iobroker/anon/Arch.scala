@@ -26,8 +26,7 @@ trait Arch extends StObject {
 }
 object Arch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arch: ReturnType[js.Function0[String]],
     endianness: ReturnType[js.Function0[BE | LE]],
     hostname: String,
@@ -41,28 +40,20 @@ object Arch {
     __obj.asInstanceOf[Arch]
   }
   
-  @scala.inline
-  implicit class ArchMutableBuilder[Self <: Arch] (val x: Self) extends AnyVal {
+  extension [Self <: Arch](x: Self) {
     
-    @scala.inline
-    def setArch(value: ReturnType[js.Function0[String]]): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+    inline def setArch(value: ReturnType[js.Function0[String]]): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndianness(value: ReturnType[js.Function0[BE | LE]]): Self = StObject.set(x, "endianness", value.asInstanceOf[js.Any])
+    inline def setEndianness(value: ReturnType[js.Function0[BE | LE]]): Self = StObject.set(x, "endianness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: ReturnType[js.Function0[Platform]]): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: ReturnType[js.Function0[Platform]]): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelease(value: ReturnType[js.Function0[String]]): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: ReturnType[js.Function0[String]]): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTmpdir(value: ReturnType[js.Function0[String]]): Self = StObject.set(x, "tmpdir", value.asInstanceOf[js.Any])
+    inline def setTmpdir(value: ReturnType[js.Function0[String]]): Self = StObject.set(x, "tmpdir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ReturnType[js.Function0[String]]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ReturnType[js.Function0[String]]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

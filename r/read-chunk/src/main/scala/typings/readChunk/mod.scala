@@ -22,8 +22,7 @@ object mod {
   	//=> 'ell'
   	```
   	*/
-  @scala.inline
-  def apply(filePath: String, startPosition: Double, length: Double): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any], startPosition.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def apply(filePath: String, startPosition: Double, length: Double): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any], startPosition.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
   @JSImport("read-chunk", JSImport.Namespace)
   @js.native
@@ -48,10 +47,8 @@ object mod {
   	```
   	*/
   // TODO: Remove this for the next major release
-  @scala.inline
-  def default(filePath: String, startPosition: Double, length: Double): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(filePath.asInstanceOf[js.Any], startPosition.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default(filePath: String, startPosition: Double, length: Double): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(filePath.asInstanceOf[js.Any], startPosition.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	Read a chunk from a file synchronously.
@@ -60,6 +57,5 @@ object mod {
   	@param length - Number of bytes to read.
   	@returns The read chunk.
   	*/
-  @scala.inline
-  def sync(filePath: String, startPosition: Double, length: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filePath.asInstanceOf[js.Any], startPosition.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def sync(filePath: String, startPosition: Double, length: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filePath.asInstanceOf[js.Any], startPosition.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer]
 }

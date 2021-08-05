@@ -18,28 +18,21 @@ trait ListComplianceStatusResponse extends StObject {
 }
 object ListComplianceStatusResponse {
   
-  @scala.inline
-  def apply(): ListComplianceStatusResponse = {
+  inline def apply(): ListComplianceStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListComplianceStatusResponse]
   }
   
-  @scala.inline
-  implicit class ListComplianceStatusResponseMutableBuilder[Self <: ListComplianceStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListComplianceStatusResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPolicyComplianceStatusList(value: PolicyComplianceStatusList): Self = StObject.set(x, "PolicyComplianceStatusList", value.asInstanceOf[js.Any])
+    inline def setPolicyComplianceStatusList(value: PolicyComplianceStatusList): Self = StObject.set(x, "PolicyComplianceStatusList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyComplianceStatusListUndefined: Self = StObject.set(x, "PolicyComplianceStatusList", js.undefined)
+    inline def setPolicyComplianceStatusListUndefined: Self = StObject.set(x, "PolicyComplianceStatusList", js.undefined)
     
-    @scala.inline
-    def setPolicyComplianceStatusListVarargs(value: PolicyComplianceStatus*): Self = StObject.set(x, "PolicyComplianceStatusList", js.Array(value :_*))
+    inline def setPolicyComplianceStatusListVarargs(value: PolicyComplianceStatus*): Self = StObject.set(x, "PolicyComplianceStatusList", js.Array(value :_*))
   }
 }

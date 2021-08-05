@@ -24,8 +24,7 @@ trait DatabaseEnvironment
 }
 object DatabaseEnvironment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LoginTimeout: Double,
     NumberFormatsSupplier: XNumberFormatsSupplier,
     PropertySetInfo: XPropertySetInfo,
@@ -50,10 +49,8 @@ object DatabaseEnvironment {
     __obj.asInstanceOf[DatabaseEnvironment]
   }
   
-  @scala.inline
-  implicit class DatabaseEnvironmentMutableBuilder[Self <: DatabaseEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseEnvironment](x: Self) {
     
-    @scala.inline
-    def setNumberFormatsSupplier(value: XNumberFormatsSupplier): Self = StObject.set(x, "NumberFormatsSupplier", value.asInstanceOf[js.Any])
+    inline def setNumberFormatsSupplier(value: XNumberFormatsSupplier): Self = StObject.set(x, "NumberFormatsSupplier", value.asInstanceOf[js.Any])
   }
 }

@@ -18,46 +18,33 @@ trait ApiDataRow extends StObject {
 }
 object ApiDataRow {
   
-  @scala.inline
-  def apply(): ApiDataRow = {
+  inline def apply(): ApiDataRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApiDataRow]
   }
   
-  @scala.inline
-  implicit class ApiDataRowMutableBuilder[Self <: ApiDataRow] (val x: Self) extends AnyVal {
+  extension [Self <: ApiDataRow](x: Self) {
     
-    @scala.inline
-    def setClicks(value: Double): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
+    inline def setClicks(value: Double): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClicksUndefined: Self = StObject.set(x, "clicks", js.undefined)
+    inline def setClicksUndefined: Self = StObject.set(x, "clicks", js.undefined)
     
-    @scala.inline
-    def setCtr(value: Double): Self = StObject.set(x, "ctr", value.asInstanceOf[js.Any])
+    inline def setCtr(value: Double): Self = StObject.set(x, "ctr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtrUndefined: Self = StObject.set(x, "ctr", js.undefined)
+    inline def setCtrUndefined: Self = StObject.set(x, "ctr", js.undefined)
     
-    @scala.inline
-    def setImpressions(value: Double): Self = StObject.set(x, "impressions", value.asInstanceOf[js.Any])
+    inline def setImpressions(value: Double): Self = StObject.set(x, "impressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpressionsUndefined: Self = StObject.set(x, "impressions", js.undefined)
+    inline def setImpressionsUndefined: Self = StObject.set(x, "impressions", js.undefined)
     
-    @scala.inline
-    def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

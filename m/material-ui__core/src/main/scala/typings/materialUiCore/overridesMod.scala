@@ -376,284 +376,191 @@ object overridesMod {
   }
   object ComponentNameToClassKey {
     
-    @scala.inline
-    implicit class ComponentNameToClassKeyMutableBuilder[Self <: ComponentNameToClassKey] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentNameToClassKey](x: Self) {
       
-      @scala.inline
-      def setMuiAppBar(value: AppBarClassKey): Self = StObject.set(x, "MuiAppBar", value.asInstanceOf[js.Any])
+      inline def setMuiAppBar(value: AppBarClassKey): Self = StObject.set(x, "MuiAppBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiAvatar(value: AvatarClassKey): Self = StObject.set(x, "MuiAvatar", value.asInstanceOf[js.Any])
+      inline def setMuiAvatar(value: AvatarClassKey): Self = StObject.set(x, "MuiAvatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiBackdrop(value: BackdropClassKey): Self = StObject.set(x, "MuiBackdrop", value.asInstanceOf[js.Any])
+      inline def setMuiBackdrop(value: BackdropClassKey): Self = StObject.set(x, "MuiBackdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiBadge(value: BadgeClassKey): Self = StObject.set(x, "MuiBadge", value.asInstanceOf[js.Any])
+      inline def setMuiBadge(value: BadgeClassKey): Self = StObject.set(x, "MuiBadge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiBottomNavigation(value: BottomNavigationClassKey): Self = StObject.set(x, "MuiBottomNavigation", value.asInstanceOf[js.Any])
+      inline def setMuiBottomNavigation(value: BottomNavigationClassKey): Self = StObject.set(x, "MuiBottomNavigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiBottomNavigationAction(value: BottomNavigationActionClassKey): Self = StObject.set(x, "MuiBottomNavigationAction", value.asInstanceOf[js.Any])
+      inline def setMuiBottomNavigationAction(value: BottomNavigationActionClassKey): Self = StObject.set(x, "MuiBottomNavigationAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiButton(value: ButtonClassKey): Self = StObject.set(x, "MuiButton", value.asInstanceOf[js.Any])
+      inline def setMuiButton(value: ButtonClassKey): Self = StObject.set(x, "MuiButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiButtonBase(value: ButtonBaseClassKey): Self = StObject.set(x, "MuiButtonBase", value.asInstanceOf[js.Any])
+      inline def setMuiButtonBase(value: ButtonBaseClassKey): Self = StObject.set(x, "MuiButtonBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCard(value: CardClassKey): Self = StObject.set(x, "MuiCard", value.asInstanceOf[js.Any])
+      inline def setMuiCard(value: CardClassKey): Self = StObject.set(x, "MuiCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCardActionArea(value: CardActionAreaClassKey): Self = StObject.set(x, "MuiCardActionArea", value.asInstanceOf[js.Any])
+      inline def setMuiCardActionArea(value: CardActionAreaClassKey): Self = StObject.set(x, "MuiCardActionArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCardActions(value: CardActionsClassKey): Self = StObject.set(x, "MuiCardActions", value.asInstanceOf[js.Any])
+      inline def setMuiCardActions(value: CardActionsClassKey): Self = StObject.set(x, "MuiCardActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCardContent(value: CardContentClassKey): Self = StObject.set(x, "MuiCardContent", value.asInstanceOf[js.Any])
+      inline def setMuiCardContent(value: CardContentClassKey): Self = StObject.set(x, "MuiCardContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCardHeader(value: CardHeaderClassKey): Self = StObject.set(x, "MuiCardHeader", value.asInstanceOf[js.Any])
+      inline def setMuiCardHeader(value: CardHeaderClassKey): Self = StObject.set(x, "MuiCardHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCardMedia(value: CardMediaClassKey): Self = StObject.set(x, "MuiCardMedia", value.asInstanceOf[js.Any])
+      inline def setMuiCardMedia(value: CardMediaClassKey): Self = StObject.set(x, "MuiCardMedia", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCheckbox(value: CheckboxClassKey): Self = StObject.set(x, "MuiCheckbox", value.asInstanceOf[js.Any])
+      inline def setMuiCheckbox(value: CheckboxClassKey): Self = StObject.set(x, "MuiCheckbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiChip(value: ChipClassKey): Self = StObject.set(x, "MuiChip", value.asInstanceOf[js.Any])
+      inline def setMuiChip(value: ChipClassKey): Self = StObject.set(x, "MuiChip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCircularProgress(value: CircularProgressClassKey): Self = StObject.set(x, "MuiCircularProgress", value.asInstanceOf[js.Any])
+      inline def setMuiCircularProgress(value: CircularProgressClassKey): Self = StObject.set(x, "MuiCircularProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCollapse(value: CollapseClassKey): Self = StObject.set(x, "MuiCollapse", value.asInstanceOf[js.Any])
+      inline def setMuiCollapse(value: CollapseClassKey): Self = StObject.set(x, "MuiCollapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCssBaseline(value: CssBaselineClassKey): Self = StObject.set(x, "MuiCssBaseline", value.asInstanceOf[js.Any])
+      inline def setMuiCssBaseline(value: CssBaselineClassKey): Self = StObject.set(x, "MuiCssBaseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiDialog(value: DialogClassKey): Self = StObject.set(x, "MuiDialog", value.asInstanceOf[js.Any])
+      inline def setMuiDialog(value: DialogClassKey): Self = StObject.set(x, "MuiDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiDialogActions(value: DialogActionsClassKey): Self = StObject.set(x, "MuiDialogActions", value.asInstanceOf[js.Any])
+      inline def setMuiDialogActions(value: DialogActionsClassKey): Self = StObject.set(x, "MuiDialogActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiDialogContent(value: DialogContentClassKey): Self = StObject.set(x, "MuiDialogContent", value.asInstanceOf[js.Any])
+      inline def setMuiDialogContent(value: DialogContentClassKey): Self = StObject.set(x, "MuiDialogContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiDialogContentText(value: DialogContentTextClassKey): Self = StObject.set(x, "MuiDialogContentText", value.asInstanceOf[js.Any])
+      inline def setMuiDialogContentText(value: DialogContentTextClassKey): Self = StObject.set(x, "MuiDialogContentText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiDialogTitle(value: DialogTitleClassKey): Self = StObject.set(x, "MuiDialogTitle", value.asInstanceOf[js.Any])
+      inline def setMuiDialogTitle(value: DialogTitleClassKey): Self = StObject.set(x, "MuiDialogTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiDivider(value: DividerClassKey): Self = StObject.set(x, "MuiDivider", value.asInstanceOf[js.Any])
+      inline def setMuiDivider(value: DividerClassKey): Self = StObject.set(x, "MuiDivider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiDrawer(value: DrawerClassKey): Self = StObject.set(x, "MuiDrawer", value.asInstanceOf[js.Any])
+      inline def setMuiDrawer(value: DrawerClassKey): Self = StObject.set(x, "MuiDrawer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiExpansionPanel(value: ExpansionPanelClassKey): Self = StObject.set(x, "MuiExpansionPanel", value.asInstanceOf[js.Any])
+      inline def setMuiExpansionPanel(value: ExpansionPanelClassKey): Self = StObject.set(x, "MuiExpansionPanel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiExpansionPanelActions(value: ExpansionPanelActionsClassKey): Self = StObject.set(x, "MuiExpansionPanelActions", value.asInstanceOf[js.Any])
+      inline def setMuiExpansionPanelActions(value: ExpansionPanelActionsClassKey): Self = StObject.set(x, "MuiExpansionPanelActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiExpansionPanelDetails(value: ExpansionPanelDetailsClassKey): Self = StObject.set(x, "MuiExpansionPanelDetails", value.asInstanceOf[js.Any])
+      inline def setMuiExpansionPanelDetails(value: ExpansionPanelDetailsClassKey): Self = StObject.set(x, "MuiExpansionPanelDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiExpansionPanelSummary(value: ExpansionPanelSummaryClassKey): Self = StObject.set(x, "MuiExpansionPanelSummary", value.asInstanceOf[js.Any])
+      inline def setMuiExpansionPanelSummary(value: ExpansionPanelSummaryClassKey): Self = StObject.set(x, "MuiExpansionPanelSummary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiFab(value: FabClassKey): Self = StObject.set(x, "MuiFab", value.asInstanceOf[js.Any])
+      inline def setMuiFab(value: FabClassKey): Self = StObject.set(x, "MuiFab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiFilledInput(value: FilledInputClassKey): Self = StObject.set(x, "MuiFilledInput", value.asInstanceOf[js.Any])
+      inline def setMuiFilledInput(value: FilledInputClassKey): Self = StObject.set(x, "MuiFilledInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiFormControl(value: FormControlClassKey): Self = StObject.set(x, "MuiFormControl", value.asInstanceOf[js.Any])
+      inline def setMuiFormControl(value: FormControlClassKey): Self = StObject.set(x, "MuiFormControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiFormControlLabel(value: FormControlLabelClassKey): Self = StObject.set(x, "MuiFormControlLabel", value.asInstanceOf[js.Any])
+      inline def setMuiFormControlLabel(value: FormControlLabelClassKey): Self = StObject.set(x, "MuiFormControlLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiFormGroup(value: FormGroupClassKey): Self = StObject.set(x, "MuiFormGroup", value.asInstanceOf[js.Any])
+      inline def setMuiFormGroup(value: FormGroupClassKey): Self = StObject.set(x, "MuiFormGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiFormHelperText(value: FormHelperTextClassKey): Self = StObject.set(x, "MuiFormHelperText", value.asInstanceOf[js.Any])
+      inline def setMuiFormHelperText(value: FormHelperTextClassKey): Self = StObject.set(x, "MuiFormHelperText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiFormLabel(value: FormLabelClassKey): Self = StObject.set(x, "MuiFormLabel", value.asInstanceOf[js.Any])
+      inline def setMuiFormLabel(value: FormLabelClassKey): Self = StObject.set(x, "MuiFormLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiGrid(value: GridClassKey): Self = StObject.set(x, "MuiGrid", value.asInstanceOf[js.Any])
+      inline def setMuiGrid(value: GridClassKey): Self = StObject.set(x, "MuiGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiGridList(value: GridListClassKey): Self = StObject.set(x, "MuiGridList", value.asInstanceOf[js.Any])
+      inline def setMuiGridList(value: GridListClassKey): Self = StObject.set(x, "MuiGridList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiGridListTile(value: GridListTileClassKey): Self = StObject.set(x, "MuiGridListTile", value.asInstanceOf[js.Any])
+      inline def setMuiGridListTile(value: GridListTileClassKey): Self = StObject.set(x, "MuiGridListTile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiGridListTileBar(value: GridListTileBarClassKey): Self = StObject.set(x, "MuiGridListTileBar", value.asInstanceOf[js.Any])
+      inline def setMuiGridListTileBar(value: GridListTileBarClassKey): Self = StObject.set(x, "MuiGridListTileBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiIcon(value: IconClassKey): Self = StObject.set(x, "MuiIcon", value.asInstanceOf[js.Any])
+      inline def setMuiIcon(value: IconClassKey): Self = StObject.set(x, "MuiIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiIconButton(value: IconButtonClassKey): Self = StObject.set(x, "MuiIconButton", value.asInstanceOf[js.Any])
+      inline def setMuiIconButton(value: IconButtonClassKey): Self = StObject.set(x, "MuiIconButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiInput(value: InputClassKey): Self = StObject.set(x, "MuiInput", value.asInstanceOf[js.Any])
+      inline def setMuiInput(value: InputClassKey): Self = StObject.set(x, "MuiInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiInputAdornment(value: InputAdornmentClassKey): Self = StObject.set(x, "MuiInputAdornment", value.asInstanceOf[js.Any])
+      inline def setMuiInputAdornment(value: InputAdornmentClassKey): Self = StObject.set(x, "MuiInputAdornment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiInputBase(value: InputBaseClassKey): Self = StObject.set(x, "MuiInputBase", value.asInstanceOf[js.Any])
+      inline def setMuiInputBase(value: InputBaseClassKey): Self = StObject.set(x, "MuiInputBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiInputLabel(value: InputLabelClassKey): Self = StObject.set(x, "MuiInputLabel", value.asInstanceOf[js.Any])
+      inline def setMuiInputLabel(value: InputLabelClassKey): Self = StObject.set(x, "MuiInputLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiLinearProgress(value: LinearProgressClassKey): Self = StObject.set(x, "MuiLinearProgress", value.asInstanceOf[js.Any])
+      inline def setMuiLinearProgress(value: LinearProgressClassKey): Self = StObject.set(x, "MuiLinearProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiLink(value: LinkClassKey): Self = StObject.set(x, "MuiLink", value.asInstanceOf[js.Any])
+      inline def setMuiLink(value: LinkClassKey): Self = StObject.set(x, "MuiLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiList(value: ListClassKey): Self = StObject.set(x, "MuiList", value.asInstanceOf[js.Any])
+      inline def setMuiList(value: ListClassKey): Self = StObject.set(x, "MuiList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiListItem(value: ListItemClassKey): Self = StObject.set(x, "MuiListItem", value.asInstanceOf[js.Any])
+      inline def setMuiListItem(value: ListItemClassKey): Self = StObject.set(x, "MuiListItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiListItemAvatar(value: ListItemAvatarClassKey): Self = StObject.set(x, "MuiListItemAvatar", value.asInstanceOf[js.Any])
+      inline def setMuiListItemAvatar(value: ListItemAvatarClassKey): Self = StObject.set(x, "MuiListItemAvatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiListItemIcon(value: ListItemIconClassKey): Self = StObject.set(x, "MuiListItemIcon", value.asInstanceOf[js.Any])
+      inline def setMuiListItemIcon(value: ListItemIconClassKey): Self = StObject.set(x, "MuiListItemIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiListItemSecondaryAction(value: ListItemSecondaryActionClassKey): Self = StObject.set(x, "MuiListItemSecondaryAction", value.asInstanceOf[js.Any])
+      inline def setMuiListItemSecondaryAction(value: ListItemSecondaryActionClassKey): Self = StObject.set(x, "MuiListItemSecondaryAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiListItemText(value: ListItemTextClassKey): Self = StObject.set(x, "MuiListItemText", value.asInstanceOf[js.Any])
+      inline def setMuiListItemText(value: ListItemTextClassKey): Self = StObject.set(x, "MuiListItemText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiListSubheader(value: ListSubheaderClassKey): Self = StObject.set(x, "MuiListSubheader", value.asInstanceOf[js.Any])
+      inline def setMuiListSubheader(value: ListSubheaderClassKey): Self = StObject.set(x, "MuiListSubheader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiMenu(value: MenuClassKey): Self = StObject.set(x, "MuiMenu", value.asInstanceOf[js.Any])
+      inline def setMuiMenu(value: MenuClassKey): Self = StObject.set(x, "MuiMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiMenuItem(value: MenuItemClassKey): Self = StObject.set(x, "MuiMenuItem", value.asInstanceOf[js.Any])
+      inline def setMuiMenuItem(value: MenuItemClassKey): Self = StObject.set(x, "MuiMenuItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiMobileStepper(value: MobileStepperClassKey): Self = StObject.set(x, "MuiMobileStepper", value.asInstanceOf[js.Any])
+      inline def setMuiMobileStepper(value: MobileStepperClassKey): Self = StObject.set(x, "MuiMobileStepper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiModal(value: ModalClassKey): Self = StObject.set(x, "MuiModal", value.asInstanceOf[js.Any])
+      inline def setMuiModal(value: ModalClassKey): Self = StObject.set(x, "MuiModal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiNativeSelect(value: NativeSelectClassKey): Self = StObject.set(x, "MuiNativeSelect", value.asInstanceOf[js.Any])
+      inline def setMuiNativeSelect(value: NativeSelectClassKey): Self = StObject.set(x, "MuiNativeSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiOutlinedInput(value: OutlinedInputClassKey): Self = StObject.set(x, "MuiOutlinedInput", value.asInstanceOf[js.Any])
+      inline def setMuiOutlinedInput(value: OutlinedInputClassKey): Self = StObject.set(x, "MuiOutlinedInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiPaper(value: PaperClassKey): Self = StObject.set(x, "MuiPaper", value.asInstanceOf[js.Any])
+      inline def setMuiPaper(value: PaperClassKey): Self = StObject.set(x, "MuiPaper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiPopover(value: PopoverClassKey): Self = StObject.set(x, "MuiPopover", value.asInstanceOf[js.Any])
+      inline def setMuiPopover(value: PopoverClassKey): Self = StObject.set(x, "MuiPopover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiRadio(value: RadioClassKey): Self = StObject.set(x, "MuiRadio", value.asInstanceOf[js.Any])
+      inline def setMuiRadio(value: RadioClassKey): Self = StObject.set(x, "MuiRadio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiSelect(value: SelectClassKey): Self = StObject.set(x, "MuiSelect", value.asInstanceOf[js.Any])
+      inline def setMuiSelect(value: SelectClassKey): Self = StObject.set(x, "MuiSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiSnackbar(value: SnackbarClassKey): Self = StObject.set(x, "MuiSnackbar", value.asInstanceOf[js.Any])
+      inline def setMuiSnackbar(value: SnackbarClassKey): Self = StObject.set(x, "MuiSnackbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiSnackbarContent(value: SnackbarContentClassKey): Self = StObject.set(x, "MuiSnackbarContent", value.asInstanceOf[js.Any])
+      inline def setMuiSnackbarContent(value: SnackbarContentClassKey): Self = StObject.set(x, "MuiSnackbarContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiStep(value: StepClasskey): Self = StObject.set(x, "MuiStep", value.asInstanceOf[js.Any])
+      inline def setMuiStep(value: StepClasskey): Self = StObject.set(x, "MuiStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiStepButton(value: StepButtonClasskey): Self = StObject.set(x, "MuiStepButton", value.asInstanceOf[js.Any])
+      inline def setMuiStepButton(value: StepButtonClasskey): Self = StObject.set(x, "MuiStepButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiStepConnector(value: StepConnectorClasskey): Self = StObject.set(x, "MuiStepConnector", value.asInstanceOf[js.Any])
+      inline def setMuiStepConnector(value: StepConnectorClasskey): Self = StObject.set(x, "MuiStepConnector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiStepContent(value: StepContentClasskey): Self = StObject.set(x, "MuiStepContent", value.asInstanceOf[js.Any])
+      inline def setMuiStepContent(value: StepContentClasskey): Self = StObject.set(x, "MuiStepContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiStepIcon(value: StepIconClasskey): Self = StObject.set(x, "MuiStepIcon", value.asInstanceOf[js.Any])
+      inline def setMuiStepIcon(value: StepIconClasskey): Self = StObject.set(x, "MuiStepIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiStepLabel(value: StepLabelClasskey): Self = StObject.set(x, "MuiStepLabel", value.asInstanceOf[js.Any])
+      inline def setMuiStepLabel(value: StepLabelClasskey): Self = StObject.set(x, "MuiStepLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiStepper(value: StepperClasskey): Self = StObject.set(x, "MuiStepper", value.asInstanceOf[js.Any])
+      inline def setMuiStepper(value: StepperClasskey): Self = StObject.set(x, "MuiStepper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiSvgIcon(value: SvgIconClassKey): Self = StObject.set(x, "MuiSvgIcon", value.asInstanceOf[js.Any])
+      inline def setMuiSvgIcon(value: SvgIconClassKey): Self = StObject.set(x, "MuiSvgIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiSwitch(value: SwitchClassKey): Self = StObject.set(x, "MuiSwitch", value.asInstanceOf[js.Any])
+      inline def setMuiSwitch(value: SwitchClassKey): Self = StObject.set(x, "MuiSwitch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiSwitchBase(value: SwitchBaseClassKey): Self = StObject.set(x, "MuiSwitchBase", value.asInstanceOf[js.Any])
+      inline def setMuiSwitchBase(value: SwitchBaseClassKey): Self = StObject.set(x, "MuiSwitchBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTab(value: TabClassKey): Self = StObject.set(x, "MuiTab", value.asInstanceOf[js.Any])
+      inline def setMuiTab(value: TabClassKey): Self = StObject.set(x, "MuiTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTable(value: TableClassKey): Self = StObject.set(x, "MuiTable", value.asInstanceOf[js.Any])
+      inline def setMuiTable(value: TableClassKey): Self = StObject.set(x, "MuiTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTableBody(value: TableBodyClassKey): Self = StObject.set(x, "MuiTableBody", value.asInstanceOf[js.Any])
+      inline def setMuiTableBody(value: TableBodyClassKey): Self = StObject.set(x, "MuiTableBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTableCell(value: TableCellClassKey): Self = StObject.set(x, "MuiTableCell", value.asInstanceOf[js.Any])
+      inline def setMuiTableCell(value: TableCellClassKey): Self = StObject.set(x, "MuiTableCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTableFooter(value: TableFooterClassKey): Self = StObject.set(x, "MuiTableFooter", value.asInstanceOf[js.Any])
+      inline def setMuiTableFooter(value: TableFooterClassKey): Self = StObject.set(x, "MuiTableFooter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTableHead(value: TableHeadClassKey): Self = StObject.set(x, "MuiTableHead", value.asInstanceOf[js.Any])
+      inline def setMuiTableHead(value: TableHeadClassKey): Self = StObject.set(x, "MuiTableHead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTablePagination(value: TablePaginationClassKey): Self = StObject.set(x, "MuiTablePagination", value.asInstanceOf[js.Any])
+      inline def setMuiTablePagination(value: TablePaginationClassKey): Self = StObject.set(x, "MuiTablePagination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTableRow(value: TableRowClassKey): Self = StObject.set(x, "MuiTableRow", value.asInstanceOf[js.Any])
+      inline def setMuiTableRow(value: TableRowClassKey): Self = StObject.set(x, "MuiTableRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTableSortLabel(value: TableSortLabelClassKey): Self = StObject.set(x, "MuiTableSortLabel", value.asInstanceOf[js.Any])
+      inline def setMuiTableSortLabel(value: TableSortLabelClassKey): Self = StObject.set(x, "MuiTableSortLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTabs(value: TabsClassKey): Self = StObject.set(x, "MuiTabs", value.asInstanceOf[js.Any])
+      inline def setMuiTabs(value: TabsClassKey): Self = StObject.set(x, "MuiTabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiToolbar(value: ToolbarClassKey): Self = StObject.set(x, "MuiToolbar", value.asInstanceOf[js.Any])
+      inline def setMuiToolbar(value: ToolbarClassKey): Self = StObject.set(x, "MuiToolbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTooltip(value: TooltipClassKey): Self = StObject.set(x, "MuiTooltip", value.asInstanceOf[js.Any])
+      inline def setMuiTooltip(value: TooltipClassKey): Self = StObject.set(x, "MuiTooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTouchRipple(value: TouchRippleClassKey): Self = StObject.set(x, "MuiTouchRipple", value.asInstanceOf[js.Any])
+      inline def setMuiTouchRipple(value: TouchRippleClassKey): Self = StObject.set(x, "MuiTouchRipple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTypography(value: TypographyClassKey): Self = StObject.set(x, "MuiTypography", value.asInstanceOf[js.Any])
+      inline def setMuiTypography(value: TypographyClassKey): Self = StObject.set(x, "MuiTypography", value.asInstanceOf[js.Any])
     }
   }
   
@@ -846,566 +753,380 @@ object overridesMod {
   }
   object Overrides {
     
-    @scala.inline
-    def apply(): Overrides = {
+    inline def apply(): Overrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Overrides]
     }
     
-    @scala.inline
-    implicit class OverridesMutableBuilder[Self <: Overrides] (val x: Self) extends AnyVal {
+    extension [Self <: Overrides](x: Self) {
       
-      @scala.inline
-      def setMuiAppBar(value: PartialStyleRulesAppBarCl): Self = StObject.set(x, "MuiAppBar", value.asInstanceOf[js.Any])
+      inline def setMuiAppBar(value: PartialStyleRulesAppBarCl): Self = StObject.set(x, "MuiAppBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiAppBarUndefined: Self = StObject.set(x, "MuiAppBar", js.undefined)
+      inline def setMuiAppBarUndefined: Self = StObject.set(x, "MuiAppBar", js.undefined)
       
-      @scala.inline
-      def setMuiAvatar(value: PartialStyleRulesAvatarCl): Self = StObject.set(x, "MuiAvatar", value.asInstanceOf[js.Any])
+      inline def setMuiAvatar(value: PartialStyleRulesAvatarCl): Self = StObject.set(x, "MuiAvatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiAvatarUndefined: Self = StObject.set(x, "MuiAvatar", js.undefined)
+      inline def setMuiAvatarUndefined: Self = StObject.set(x, "MuiAvatar", js.undefined)
       
-      @scala.inline
-      def setMuiBackdrop(value: PartialStyleRulesBackdrop): Self = StObject.set(x, "MuiBackdrop", value.asInstanceOf[js.Any])
+      inline def setMuiBackdrop(value: PartialStyleRulesBackdrop): Self = StObject.set(x, "MuiBackdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiBackdropUndefined: Self = StObject.set(x, "MuiBackdrop", js.undefined)
+      inline def setMuiBackdropUndefined: Self = StObject.set(x, "MuiBackdrop", js.undefined)
       
-      @scala.inline
-      def setMuiBadge(value: PartialStyleRulesBadgeCla): Self = StObject.set(x, "MuiBadge", value.asInstanceOf[js.Any])
+      inline def setMuiBadge(value: PartialStyleRulesBadgeCla): Self = StObject.set(x, "MuiBadge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiBadgeUndefined: Self = StObject.set(x, "MuiBadge", js.undefined)
+      inline def setMuiBadgeUndefined: Self = StObject.set(x, "MuiBadge", js.undefined)
       
-      @scala.inline
-      def setMuiBottomNavigation(value: PartialStyleRulesBottomNaRoot): Self = StObject.set(x, "MuiBottomNavigation", value.asInstanceOf[js.Any])
+      inline def setMuiBottomNavigation(value: PartialStyleRulesBottomNaRoot): Self = StObject.set(x, "MuiBottomNavigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiBottomNavigationAction(value: PartialStyleRulesBottomNa): Self = StObject.set(x, "MuiBottomNavigationAction", value.asInstanceOf[js.Any])
+      inline def setMuiBottomNavigationAction(value: PartialStyleRulesBottomNa): Self = StObject.set(x, "MuiBottomNavigationAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiBottomNavigationActionUndefined: Self = StObject.set(x, "MuiBottomNavigationAction", js.undefined)
+      inline def setMuiBottomNavigationActionUndefined: Self = StObject.set(x, "MuiBottomNavigationAction", js.undefined)
       
-      @scala.inline
-      def setMuiBottomNavigationUndefined: Self = StObject.set(x, "MuiBottomNavigation", js.undefined)
+      inline def setMuiBottomNavigationUndefined: Self = StObject.set(x, "MuiBottomNavigation", js.undefined)
       
-      @scala.inline
-      def setMuiButton(value: PartialStyleRulesButtonCl): Self = StObject.set(x, "MuiButton", value.asInstanceOf[js.Any])
+      inline def setMuiButton(value: PartialStyleRulesButtonCl): Self = StObject.set(x, "MuiButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiButtonBase(value: PartialStyleRulesButtonBa): Self = StObject.set(x, "MuiButtonBase", value.asInstanceOf[js.Any])
+      inline def setMuiButtonBase(value: PartialStyleRulesButtonBa): Self = StObject.set(x, "MuiButtonBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiButtonBaseUndefined: Self = StObject.set(x, "MuiButtonBase", js.undefined)
+      inline def setMuiButtonBaseUndefined: Self = StObject.set(x, "MuiButtonBase", js.undefined)
       
-      @scala.inline
-      def setMuiButtonUndefined: Self = StObject.set(x, "MuiButton", js.undefined)
+      inline def setMuiButtonUndefined: Self = StObject.set(x, "MuiButton", js.undefined)
       
-      @scala.inline
-      def setMuiCard(value: PartialStyleRulesCardClas): Self = StObject.set(x, "MuiCard", value.asInstanceOf[js.Any])
+      inline def setMuiCard(value: PartialStyleRulesCardClas): Self = StObject.set(x, "MuiCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCardActionArea(value: PartialStyleRulesCardActiFocusHighlight): Self = StObject.set(x, "MuiCardActionArea", value.asInstanceOf[js.Any])
+      inline def setMuiCardActionArea(value: PartialStyleRulesCardActiFocusHighlight): Self = StObject.set(x, "MuiCardActionArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCardActionAreaUndefined: Self = StObject.set(x, "MuiCardActionArea", js.undefined)
+      inline def setMuiCardActionAreaUndefined: Self = StObject.set(x, "MuiCardActionArea", js.undefined)
       
-      @scala.inline
-      def setMuiCardActions(value: PartialStyleRulesCardActi): Self = StObject.set(x, "MuiCardActions", value.asInstanceOf[js.Any])
+      inline def setMuiCardActions(value: PartialStyleRulesCardActi): Self = StObject.set(x, "MuiCardActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCardActionsUndefined: Self = StObject.set(x, "MuiCardActions", js.undefined)
+      inline def setMuiCardActionsUndefined: Self = StObject.set(x, "MuiCardActions", js.undefined)
       
-      @scala.inline
-      def setMuiCardContent(value: PartialStyleRulesCardCont): Self = StObject.set(x, "MuiCardContent", value.asInstanceOf[js.Any])
+      inline def setMuiCardContent(value: PartialStyleRulesCardCont): Self = StObject.set(x, "MuiCardContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCardContentUndefined: Self = StObject.set(x, "MuiCardContent", js.undefined)
+      inline def setMuiCardContentUndefined: Self = StObject.set(x, "MuiCardContent", js.undefined)
       
-      @scala.inline
-      def setMuiCardHeader(value: PartialStyleRulesCardHead): Self = StObject.set(x, "MuiCardHeader", value.asInstanceOf[js.Any])
+      inline def setMuiCardHeader(value: PartialStyleRulesCardHead): Self = StObject.set(x, "MuiCardHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCardHeaderUndefined: Self = StObject.set(x, "MuiCardHeader", js.undefined)
+      inline def setMuiCardHeaderUndefined: Self = StObject.set(x, "MuiCardHeader", js.undefined)
       
-      @scala.inline
-      def setMuiCardMedia(value: PartialStyleRulesCardMedi): Self = StObject.set(x, "MuiCardMedia", value.asInstanceOf[js.Any])
+      inline def setMuiCardMedia(value: PartialStyleRulesCardMedi): Self = StObject.set(x, "MuiCardMedia", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCardMediaUndefined: Self = StObject.set(x, "MuiCardMedia", js.undefined)
+      inline def setMuiCardMediaUndefined: Self = StObject.set(x, "MuiCardMedia", js.undefined)
       
-      @scala.inline
-      def setMuiCardUndefined: Self = StObject.set(x, "MuiCard", js.undefined)
+      inline def setMuiCardUndefined: Self = StObject.set(x, "MuiCard", js.undefined)
       
-      @scala.inline
-      def setMuiCheckbox(value: PartialStyleRulesCheckbox): Self = StObject.set(x, "MuiCheckbox", value.asInstanceOf[js.Any])
+      inline def setMuiCheckbox(value: PartialStyleRulesCheckbox): Self = StObject.set(x, "MuiCheckbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCheckboxUndefined: Self = StObject.set(x, "MuiCheckbox", js.undefined)
+      inline def setMuiCheckboxUndefined: Self = StObject.set(x, "MuiCheckbox", js.undefined)
       
-      @scala.inline
-      def setMuiChip(value: PartialStyleRulesChipClas): Self = StObject.set(x, "MuiChip", value.asInstanceOf[js.Any])
+      inline def setMuiChip(value: PartialStyleRulesChipClas): Self = StObject.set(x, "MuiChip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiChipUndefined: Self = StObject.set(x, "MuiChip", js.undefined)
+      inline def setMuiChipUndefined: Self = StObject.set(x, "MuiChip", js.undefined)
       
-      @scala.inline
-      def setMuiCircularProgress(value: PartialStyleRulesCircular): Self = StObject.set(x, "MuiCircularProgress", value.asInstanceOf[js.Any])
+      inline def setMuiCircularProgress(value: PartialStyleRulesCircular): Self = StObject.set(x, "MuiCircularProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCircularProgressUndefined: Self = StObject.set(x, "MuiCircularProgress", js.undefined)
+      inline def setMuiCircularProgressUndefined: Self = StObject.set(x, "MuiCircularProgress", js.undefined)
       
-      @scala.inline
-      def setMuiCollapse(value: PartialStyleRulesCollapse): Self = StObject.set(x, "MuiCollapse", value.asInstanceOf[js.Any])
+      inline def setMuiCollapse(value: PartialStyleRulesCollapse): Self = StObject.set(x, "MuiCollapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCollapseUndefined: Self = StObject.set(x, "MuiCollapse", js.undefined)
+      inline def setMuiCollapseUndefined: Self = StObject.set(x, "MuiCollapse", js.undefined)
       
-      @scala.inline
-      def setMuiCssBaseline(value: PartialStyleRulesCssBasel): Self = StObject.set(x, "MuiCssBaseline", value.asInstanceOf[js.Any])
+      inline def setMuiCssBaseline(value: PartialStyleRulesCssBasel): Self = StObject.set(x, "MuiCssBaseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiCssBaselineUndefined: Self = StObject.set(x, "MuiCssBaseline", js.undefined)
+      inline def setMuiCssBaselineUndefined: Self = StObject.set(x, "MuiCssBaseline", js.undefined)
       
-      @scala.inline
-      def setMuiDialog(value: PartialStyleRulesDialogCl): Self = StObject.set(x, "MuiDialog", value.asInstanceOf[js.Any])
+      inline def setMuiDialog(value: PartialStyleRulesDialogCl): Self = StObject.set(x, "MuiDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiDialogActions(value: PartialStyleRulesDialogAc): Self = StObject.set(x, "MuiDialogActions", value.asInstanceOf[js.Any])
+      inline def setMuiDialogActions(value: PartialStyleRulesDialogAc): Self = StObject.set(x, "MuiDialogActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiDialogActionsUndefined: Self = StObject.set(x, "MuiDialogActions", js.undefined)
+      inline def setMuiDialogActionsUndefined: Self = StObject.set(x, "MuiDialogActions", js.undefined)
       
-      @scala.inline
-      def setMuiDialogContent(value: PartialStyleRulesDialogCo): Self = StObject.set(x, "MuiDialogContent", value.asInstanceOf[js.Any])
+      inline def setMuiDialogContent(value: PartialStyleRulesDialogCo): Self = StObject.set(x, "MuiDialogContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiDialogContentText(value: PartialStyleRulesDialogCo): Self = StObject.set(x, "MuiDialogContentText", value.asInstanceOf[js.Any])
+      inline def setMuiDialogContentText(value: PartialStyleRulesDialogCo): Self = StObject.set(x, "MuiDialogContentText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiDialogContentTextUndefined: Self = StObject.set(x, "MuiDialogContentText", js.undefined)
+      inline def setMuiDialogContentTextUndefined: Self = StObject.set(x, "MuiDialogContentText", js.undefined)
       
-      @scala.inline
-      def setMuiDialogContentUndefined: Self = StObject.set(x, "MuiDialogContent", js.undefined)
+      inline def setMuiDialogContentUndefined: Self = StObject.set(x, "MuiDialogContent", js.undefined)
       
-      @scala.inline
-      def setMuiDialogTitle(value: PartialStyleRulesDialogTi): Self = StObject.set(x, "MuiDialogTitle", value.asInstanceOf[js.Any])
+      inline def setMuiDialogTitle(value: PartialStyleRulesDialogTi): Self = StObject.set(x, "MuiDialogTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiDialogTitleUndefined: Self = StObject.set(x, "MuiDialogTitle", js.undefined)
+      inline def setMuiDialogTitleUndefined: Self = StObject.set(x, "MuiDialogTitle", js.undefined)
       
-      @scala.inline
-      def setMuiDialogUndefined: Self = StObject.set(x, "MuiDialog", js.undefined)
+      inline def setMuiDialogUndefined: Self = StObject.set(x, "MuiDialog", js.undefined)
       
-      @scala.inline
-      def setMuiDivider(value: PartialStyleRulesDividerC): Self = StObject.set(x, "MuiDivider", value.asInstanceOf[js.Any])
+      inline def setMuiDivider(value: PartialStyleRulesDividerC): Self = StObject.set(x, "MuiDivider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiDividerUndefined: Self = StObject.set(x, "MuiDivider", js.undefined)
+      inline def setMuiDividerUndefined: Self = StObject.set(x, "MuiDivider", js.undefined)
       
-      @scala.inline
-      def setMuiDrawer(value: PartialStyleRulesDrawerCl): Self = StObject.set(x, "MuiDrawer", value.asInstanceOf[js.Any])
+      inline def setMuiDrawer(value: PartialStyleRulesDrawerCl): Self = StObject.set(x, "MuiDrawer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiDrawerUndefined: Self = StObject.set(x, "MuiDrawer", js.undefined)
+      inline def setMuiDrawerUndefined: Self = StObject.set(x, "MuiDrawer", js.undefined)
       
-      @scala.inline
-      def setMuiExpansionPanel(value: PartialStyleRulesExpansioDisabled): Self = StObject.set(x, "MuiExpansionPanel", value.asInstanceOf[js.Any])
+      inline def setMuiExpansionPanel(value: PartialStyleRulesExpansioDisabled): Self = StObject.set(x, "MuiExpansionPanel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiExpansionPanelActions(value: PartialStyleRulesExpansioAction): Self = StObject.set(x, "MuiExpansionPanelActions", value.asInstanceOf[js.Any])
+      inline def setMuiExpansionPanelActions(value: PartialStyleRulesExpansioAction): Self = StObject.set(x, "MuiExpansionPanelActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiExpansionPanelActionsUndefined: Self = StObject.set(x, "MuiExpansionPanelActions", js.undefined)
+      inline def setMuiExpansionPanelActionsUndefined: Self = StObject.set(x, "MuiExpansionPanelActions", js.undefined)
       
-      @scala.inline
-      def setMuiExpansionPanelDetails(value: PartialStyleRulesExpansio): Self = StObject.set(x, "MuiExpansionPanelDetails", value.asInstanceOf[js.Any])
+      inline def setMuiExpansionPanelDetails(value: PartialStyleRulesExpansio): Self = StObject.set(x, "MuiExpansionPanelDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiExpansionPanelDetailsUndefined: Self = StObject.set(x, "MuiExpansionPanelDetails", js.undefined)
+      inline def setMuiExpansionPanelDetailsUndefined: Self = StObject.set(x, "MuiExpansionPanelDetails", js.undefined)
       
-      @scala.inline
-      def setMuiExpansionPanelSummary(value: PartialStyleRulesExpansioContent): Self = StObject.set(x, "MuiExpansionPanelSummary", value.asInstanceOf[js.Any])
+      inline def setMuiExpansionPanelSummary(value: PartialStyleRulesExpansioContent): Self = StObject.set(x, "MuiExpansionPanelSummary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiExpansionPanelSummaryUndefined: Self = StObject.set(x, "MuiExpansionPanelSummary", js.undefined)
+      inline def setMuiExpansionPanelSummaryUndefined: Self = StObject.set(x, "MuiExpansionPanelSummary", js.undefined)
       
-      @scala.inline
-      def setMuiExpansionPanelUndefined: Self = StObject.set(x, "MuiExpansionPanel", js.undefined)
+      inline def setMuiExpansionPanelUndefined: Self = StObject.set(x, "MuiExpansionPanel", js.undefined)
       
-      @scala.inline
-      def setMuiFab(value: PartialStyleRulesFabClass): Self = StObject.set(x, "MuiFab", value.asInstanceOf[js.Any])
+      inline def setMuiFab(value: PartialStyleRulesFabClass): Self = StObject.set(x, "MuiFab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiFabUndefined: Self = StObject.set(x, "MuiFab", js.undefined)
+      inline def setMuiFabUndefined: Self = StObject.set(x, "MuiFab", js.undefined)
       
-      @scala.inline
-      def setMuiFilledInput(value: PartialStyleRulesFilledIn): Self = StObject.set(x, "MuiFilledInput", value.asInstanceOf[js.Any])
+      inline def setMuiFilledInput(value: PartialStyleRulesFilledIn): Self = StObject.set(x, "MuiFilledInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiFilledInputUndefined: Self = StObject.set(x, "MuiFilledInput", js.undefined)
+      inline def setMuiFilledInputUndefined: Self = StObject.set(x, "MuiFilledInput", js.undefined)
       
-      @scala.inline
-      def setMuiFormControl(value: PartialStyleRulesFormCont): Self = StObject.set(x, "MuiFormControl", value.asInstanceOf[js.Any])
+      inline def setMuiFormControl(value: PartialStyleRulesFormCont): Self = StObject.set(x, "MuiFormControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiFormControlLabel(value: PartialStyleRulesFormContDisabled): Self = StObject.set(x, "MuiFormControlLabel", value.asInstanceOf[js.Any])
+      inline def setMuiFormControlLabel(value: PartialStyleRulesFormContDisabled): Self = StObject.set(x, "MuiFormControlLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiFormControlLabelUndefined: Self = StObject.set(x, "MuiFormControlLabel", js.undefined)
+      inline def setMuiFormControlLabelUndefined: Self = StObject.set(x, "MuiFormControlLabel", js.undefined)
       
-      @scala.inline
-      def setMuiFormControlUndefined: Self = StObject.set(x, "MuiFormControl", js.undefined)
+      inline def setMuiFormControlUndefined: Self = StObject.set(x, "MuiFormControl", js.undefined)
       
-      @scala.inline
-      def setMuiFormGroup(value: PartialStyleRulesFormGrou): Self = StObject.set(x, "MuiFormGroup", value.asInstanceOf[js.Any])
+      inline def setMuiFormGroup(value: PartialStyleRulesFormGrou): Self = StObject.set(x, "MuiFormGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiFormGroupUndefined: Self = StObject.set(x, "MuiFormGroup", js.undefined)
+      inline def setMuiFormGroupUndefined: Self = StObject.set(x, "MuiFormGroup", js.undefined)
       
-      @scala.inline
-      def setMuiFormHelperText(value: PartialStyleRulesFormHelp): Self = StObject.set(x, "MuiFormHelperText", value.asInstanceOf[js.Any])
+      inline def setMuiFormHelperText(value: PartialStyleRulesFormHelp): Self = StObject.set(x, "MuiFormHelperText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiFormHelperTextUndefined: Self = StObject.set(x, "MuiFormHelperText", js.undefined)
+      inline def setMuiFormHelperTextUndefined: Self = StObject.set(x, "MuiFormHelperText", js.undefined)
       
-      @scala.inline
-      def setMuiFormLabel(value: PartialStyleRulesFormLabe): Self = StObject.set(x, "MuiFormLabel", value.asInstanceOf[js.Any])
+      inline def setMuiFormLabel(value: PartialStyleRulesFormLabe): Self = StObject.set(x, "MuiFormLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiFormLabelUndefined: Self = StObject.set(x, "MuiFormLabel", js.undefined)
+      inline def setMuiFormLabelUndefined: Self = StObject.set(x, "MuiFormLabel", js.undefined)
       
-      @scala.inline
-      def setMuiGrid(value: PartialStyleRulesGridClas): Self = StObject.set(x, "MuiGrid", value.asInstanceOf[js.Any])
+      inline def setMuiGrid(value: PartialStyleRulesGridClas): Self = StObject.set(x, "MuiGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiGridList(value: PartialStyleRulesGridListRoot): Self = StObject.set(x, "MuiGridList", value.asInstanceOf[js.Any])
+      inline def setMuiGridList(value: PartialStyleRulesGridListRoot): Self = StObject.set(x, "MuiGridList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiGridListTile(value: PartialStyleRulesGridList): Self = StObject.set(x, "MuiGridListTile", value.asInstanceOf[js.Any])
+      inline def setMuiGridListTile(value: PartialStyleRulesGridList): Self = StObject.set(x, "MuiGridListTile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiGridListTileBar(value: PartialStyleRulesGridListActionIcon): Self = StObject.set(x, "MuiGridListTileBar", value.asInstanceOf[js.Any])
+      inline def setMuiGridListTileBar(value: PartialStyleRulesGridListActionIcon): Self = StObject.set(x, "MuiGridListTileBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiGridListTileBarUndefined: Self = StObject.set(x, "MuiGridListTileBar", js.undefined)
+      inline def setMuiGridListTileBarUndefined: Self = StObject.set(x, "MuiGridListTileBar", js.undefined)
       
-      @scala.inline
-      def setMuiGridListTileUndefined: Self = StObject.set(x, "MuiGridListTile", js.undefined)
+      inline def setMuiGridListTileUndefined: Self = StObject.set(x, "MuiGridListTile", js.undefined)
       
-      @scala.inline
-      def setMuiGridListUndefined: Self = StObject.set(x, "MuiGridList", js.undefined)
+      inline def setMuiGridListUndefined: Self = StObject.set(x, "MuiGridList", js.undefined)
       
-      @scala.inline
-      def setMuiGridUndefined: Self = StObject.set(x, "MuiGrid", js.undefined)
+      inline def setMuiGridUndefined: Self = StObject.set(x, "MuiGrid", js.undefined)
       
-      @scala.inline
-      def setMuiIcon(value: PartialStyleRulesIconClas): Self = StObject.set(x, "MuiIcon", value.asInstanceOf[js.Any])
+      inline def setMuiIcon(value: PartialStyleRulesIconClas): Self = StObject.set(x, "MuiIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiIconButton(value: PartialStyleRulesIconButt): Self = StObject.set(x, "MuiIconButton", value.asInstanceOf[js.Any])
+      inline def setMuiIconButton(value: PartialStyleRulesIconButt): Self = StObject.set(x, "MuiIconButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiIconButtonUndefined: Self = StObject.set(x, "MuiIconButton", js.undefined)
+      inline def setMuiIconButtonUndefined: Self = StObject.set(x, "MuiIconButton", js.undefined)
       
-      @scala.inline
-      def setMuiIconUndefined: Self = StObject.set(x, "MuiIcon", js.undefined)
+      inline def setMuiIconUndefined: Self = StObject.set(x, "MuiIcon", js.undefined)
       
-      @scala.inline
-      def setMuiInput(value: PartialStyleRulesInputCla): Self = StObject.set(x, "MuiInput", value.asInstanceOf[js.Any])
+      inline def setMuiInput(value: PartialStyleRulesInputCla): Self = StObject.set(x, "MuiInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiInputAdornment(value: PartialStyleRulesInputAdo): Self = StObject.set(x, "MuiInputAdornment", value.asInstanceOf[js.Any])
+      inline def setMuiInputAdornment(value: PartialStyleRulesInputAdo): Self = StObject.set(x, "MuiInputAdornment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiInputAdornmentUndefined: Self = StObject.set(x, "MuiInputAdornment", js.undefined)
+      inline def setMuiInputAdornmentUndefined: Self = StObject.set(x, "MuiInputAdornment", js.undefined)
       
-      @scala.inline
-      def setMuiInputBase(value: PartialStyleRulesInputBas): Self = StObject.set(x, "MuiInputBase", value.asInstanceOf[js.Any])
+      inline def setMuiInputBase(value: PartialStyleRulesInputBas): Self = StObject.set(x, "MuiInputBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiInputBaseUndefined: Self = StObject.set(x, "MuiInputBase", js.undefined)
+      inline def setMuiInputBaseUndefined: Self = StObject.set(x, "MuiInputBase", js.undefined)
       
-      @scala.inline
-      def setMuiInputLabel(value: PartialStyleRulesInputLab): Self = StObject.set(x, "MuiInputLabel", value.asInstanceOf[js.Any])
+      inline def setMuiInputLabel(value: PartialStyleRulesInputLab): Self = StObject.set(x, "MuiInputLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiInputLabelUndefined: Self = StObject.set(x, "MuiInputLabel", js.undefined)
+      inline def setMuiInputLabelUndefined: Self = StObject.set(x, "MuiInputLabel", js.undefined)
       
-      @scala.inline
-      def setMuiInputUndefined: Self = StObject.set(x, "MuiInput", js.undefined)
+      inline def setMuiInputUndefined: Self = StObject.set(x, "MuiInput", js.undefined)
       
-      @scala.inline
-      def setMuiLinearProgress(value: PartialStyleRulesLinearPr): Self = StObject.set(x, "MuiLinearProgress", value.asInstanceOf[js.Any])
+      inline def setMuiLinearProgress(value: PartialStyleRulesLinearPr): Self = StObject.set(x, "MuiLinearProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiLinearProgressUndefined: Self = StObject.set(x, "MuiLinearProgress", js.undefined)
+      inline def setMuiLinearProgressUndefined: Self = StObject.set(x, "MuiLinearProgress", js.undefined)
       
-      @scala.inline
-      def setMuiLink(value: PartialStyleRulesLinkClas): Self = StObject.set(x, "MuiLink", value.asInstanceOf[js.Any])
+      inline def setMuiLink(value: PartialStyleRulesLinkClas): Self = StObject.set(x, "MuiLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiLinkUndefined: Self = StObject.set(x, "MuiLink", js.undefined)
+      inline def setMuiLinkUndefined: Self = StObject.set(x, "MuiLink", js.undefined)
       
-      @scala.inline
-      def setMuiList(value: PartialStyleRulesListClas): Self = StObject.set(x, "MuiList", value.asInstanceOf[js.Any])
+      inline def setMuiList(value: PartialStyleRulesListClas): Self = StObject.set(x, "MuiList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiListItem(value: PartialStyleRulesListItemButton): Self = StObject.set(x, "MuiListItem", value.asInstanceOf[js.Any])
+      inline def setMuiListItem(value: PartialStyleRulesListItemButton): Self = StObject.set(x, "MuiListItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiListItemAvatar(value: PartialStyleRulesListItemIcon): Self = StObject.set(x, "MuiListItemAvatar", value.asInstanceOf[js.Any])
+      inline def setMuiListItemAvatar(value: PartialStyleRulesListItemIcon): Self = StObject.set(x, "MuiListItemAvatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiListItemAvatarUndefined: Self = StObject.set(x, "MuiListItemAvatar", js.undefined)
+      inline def setMuiListItemAvatarUndefined: Self = StObject.set(x, "MuiListItemAvatar", js.undefined)
       
-      @scala.inline
-      def setMuiListItemIcon(value: PartialStyleRulesListItemRoot): Self = StObject.set(x, "MuiListItemIcon", value.asInstanceOf[js.Any])
+      inline def setMuiListItemIcon(value: PartialStyleRulesListItemRoot): Self = StObject.set(x, "MuiListItemIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiListItemIconUndefined: Self = StObject.set(x, "MuiListItemIcon", js.undefined)
+      inline def setMuiListItemIconUndefined: Self = StObject.set(x, "MuiListItemIcon", js.undefined)
       
-      @scala.inline
-      def setMuiListItemSecondaryAction(value: PartialStyleRulesListItemRoot): Self = StObject.set(x, "MuiListItemSecondaryAction", value.asInstanceOf[js.Any])
+      inline def setMuiListItemSecondaryAction(value: PartialStyleRulesListItemRoot): Self = StObject.set(x, "MuiListItemSecondaryAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiListItemSecondaryActionUndefined: Self = StObject.set(x, "MuiListItemSecondaryAction", js.undefined)
+      inline def setMuiListItemSecondaryActionUndefined: Self = StObject.set(x, "MuiListItemSecondaryAction", js.undefined)
       
-      @scala.inline
-      def setMuiListItemText(value: PartialStyleRulesListItem): Self = StObject.set(x, "MuiListItemText", value.asInstanceOf[js.Any])
+      inline def setMuiListItemText(value: PartialStyleRulesListItem): Self = StObject.set(x, "MuiListItemText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiListItemTextUndefined: Self = StObject.set(x, "MuiListItemText", js.undefined)
+      inline def setMuiListItemTextUndefined: Self = StObject.set(x, "MuiListItemText", js.undefined)
       
-      @scala.inline
-      def setMuiListItemUndefined: Self = StObject.set(x, "MuiListItem", js.undefined)
+      inline def setMuiListItemUndefined: Self = StObject.set(x, "MuiListItem", js.undefined)
       
-      @scala.inline
-      def setMuiListSubheader(value: PartialStyleRulesListSubh): Self = StObject.set(x, "MuiListSubheader", value.asInstanceOf[js.Any])
+      inline def setMuiListSubheader(value: PartialStyleRulesListSubh): Self = StObject.set(x, "MuiListSubheader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiListSubheaderUndefined: Self = StObject.set(x, "MuiListSubheader", js.undefined)
+      inline def setMuiListSubheaderUndefined: Self = StObject.set(x, "MuiListSubheader", js.undefined)
       
-      @scala.inline
-      def setMuiListUndefined: Self = StObject.set(x, "MuiList", js.undefined)
+      inline def setMuiListUndefined: Self = StObject.set(x, "MuiList", js.undefined)
       
-      @scala.inline
-      def setMuiMenu(value: PartialStyleRulesMenuClas): Self = StObject.set(x, "MuiMenu", value.asInstanceOf[js.Any])
+      inline def setMuiMenu(value: PartialStyleRulesMenuClas): Self = StObject.set(x, "MuiMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiMenuItem(value: PartialStyleRulesMenuItem): Self = StObject.set(x, "MuiMenuItem", value.asInstanceOf[js.Any])
+      inline def setMuiMenuItem(value: PartialStyleRulesMenuItem): Self = StObject.set(x, "MuiMenuItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiMenuItemUndefined: Self = StObject.set(x, "MuiMenuItem", js.undefined)
+      inline def setMuiMenuItemUndefined: Self = StObject.set(x, "MuiMenuItem", js.undefined)
       
-      @scala.inline
-      def setMuiMenuUndefined: Self = StObject.set(x, "MuiMenu", js.undefined)
+      inline def setMuiMenuUndefined: Self = StObject.set(x, "MuiMenu", js.undefined)
       
-      @scala.inline
-      def setMuiMobileStepper(value: PartialStyleRulesMobileSt): Self = StObject.set(x, "MuiMobileStepper", value.asInstanceOf[js.Any])
+      inline def setMuiMobileStepper(value: PartialStyleRulesMobileSt): Self = StObject.set(x, "MuiMobileStepper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiMobileStepperUndefined: Self = StObject.set(x, "MuiMobileStepper", js.undefined)
+      inline def setMuiMobileStepperUndefined: Self = StObject.set(x, "MuiMobileStepper", js.undefined)
       
-      @scala.inline
-      def setMuiModal(value: PartialStyleRulesModalCla): Self = StObject.set(x, "MuiModal", value.asInstanceOf[js.Any])
+      inline def setMuiModal(value: PartialStyleRulesModalCla): Self = StObject.set(x, "MuiModal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiModalUndefined: Self = StObject.set(x, "MuiModal", js.undefined)
+      inline def setMuiModalUndefined: Self = StObject.set(x, "MuiModal", js.undefined)
       
-      @scala.inline
-      def setMuiNativeSelect(value: PartialStyleRulesNativeSe): Self = StObject.set(x, "MuiNativeSelect", value.asInstanceOf[js.Any])
+      inline def setMuiNativeSelect(value: PartialStyleRulesNativeSe): Self = StObject.set(x, "MuiNativeSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiNativeSelectUndefined: Self = StObject.set(x, "MuiNativeSelect", js.undefined)
+      inline def setMuiNativeSelectUndefined: Self = StObject.set(x, "MuiNativeSelect", js.undefined)
       
-      @scala.inline
-      def setMuiOutlinedInput(value: PartialStyleRulesOutlined): Self = StObject.set(x, "MuiOutlinedInput", value.asInstanceOf[js.Any])
+      inline def setMuiOutlinedInput(value: PartialStyleRulesOutlined): Self = StObject.set(x, "MuiOutlinedInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiOutlinedInputUndefined: Self = StObject.set(x, "MuiOutlinedInput", js.undefined)
+      inline def setMuiOutlinedInputUndefined: Self = StObject.set(x, "MuiOutlinedInput", js.undefined)
       
-      @scala.inline
-      def setMuiPaper(value: PartialStyleRulesPaperCla): Self = StObject.set(x, "MuiPaper", value.asInstanceOf[js.Any])
+      inline def setMuiPaper(value: PartialStyleRulesPaperCla): Self = StObject.set(x, "MuiPaper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiPaperUndefined: Self = StObject.set(x, "MuiPaper", js.undefined)
+      inline def setMuiPaperUndefined: Self = StObject.set(x, "MuiPaper", js.undefined)
       
-      @scala.inline
-      def setMuiPopover(value: PartialStyleRulesPopoverC): Self = StObject.set(x, "MuiPopover", value.asInstanceOf[js.Any])
+      inline def setMuiPopover(value: PartialStyleRulesPopoverC): Self = StObject.set(x, "MuiPopover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiPopoverUndefined: Self = StObject.set(x, "MuiPopover", js.undefined)
+      inline def setMuiPopoverUndefined: Self = StObject.set(x, "MuiPopover", js.undefined)
       
-      @scala.inline
-      def setMuiRadio(value: PartialStyleRulesRadioCla): Self = StObject.set(x, "MuiRadio", value.asInstanceOf[js.Any])
+      inline def setMuiRadio(value: PartialStyleRulesRadioCla): Self = StObject.set(x, "MuiRadio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiRadioUndefined: Self = StObject.set(x, "MuiRadio", js.undefined)
+      inline def setMuiRadioUndefined: Self = StObject.set(x, "MuiRadio", js.undefined)
       
-      @scala.inline
-      def setMuiSelect(value: PartialStyleRulesSelectCl): Self = StObject.set(x, "MuiSelect", value.asInstanceOf[js.Any])
+      inline def setMuiSelect(value: PartialStyleRulesSelectCl): Self = StObject.set(x, "MuiSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiSelectUndefined: Self = StObject.set(x, "MuiSelect", js.undefined)
+      inline def setMuiSelectUndefined: Self = StObject.set(x, "MuiSelect", js.undefined)
       
-      @scala.inline
-      def setMuiSnackbar(value: PartialStyleRulesSnackbar): Self = StObject.set(x, "MuiSnackbar", value.asInstanceOf[js.Any])
+      inline def setMuiSnackbar(value: PartialStyleRulesSnackbar): Self = StObject.set(x, "MuiSnackbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiSnackbarContent(value: PartialStyleRulesSnackbarAction): Self = StObject.set(x, "MuiSnackbarContent", value.asInstanceOf[js.Any])
+      inline def setMuiSnackbarContent(value: PartialStyleRulesSnackbarAction): Self = StObject.set(x, "MuiSnackbarContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiSnackbarContentUndefined: Self = StObject.set(x, "MuiSnackbarContent", js.undefined)
+      inline def setMuiSnackbarContentUndefined: Self = StObject.set(x, "MuiSnackbarContent", js.undefined)
       
-      @scala.inline
-      def setMuiSnackbarUndefined: Self = StObject.set(x, "MuiSnackbar", js.undefined)
+      inline def setMuiSnackbarUndefined: Self = StObject.set(x, "MuiSnackbar", js.undefined)
       
-      @scala.inline
-      def setMuiStep(value: PartialStyleRulesStepClas): Self = StObject.set(x, "MuiStep", value.asInstanceOf[js.Any])
+      inline def setMuiStep(value: PartialStyleRulesStepClas): Self = StObject.set(x, "MuiStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiStepButton(value: PartialStyleRulesStepButt): Self = StObject.set(x, "MuiStepButton", value.asInstanceOf[js.Any])
+      inline def setMuiStepButton(value: PartialStyleRulesStepButt): Self = StObject.set(x, "MuiStepButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiStepButtonUndefined: Self = StObject.set(x, "MuiStepButton", js.undefined)
+      inline def setMuiStepButtonUndefined: Self = StObject.set(x, "MuiStepButton", js.undefined)
       
-      @scala.inline
-      def setMuiStepConnector(value: PartialStyleRulesStepConn): Self = StObject.set(x, "MuiStepConnector", value.asInstanceOf[js.Any])
+      inline def setMuiStepConnector(value: PartialStyleRulesStepConn): Self = StObject.set(x, "MuiStepConnector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiStepConnectorUndefined: Self = StObject.set(x, "MuiStepConnector", js.undefined)
+      inline def setMuiStepConnectorUndefined: Self = StObject.set(x, "MuiStepConnector", js.undefined)
       
-      @scala.inline
-      def setMuiStepContent(value: PartialStyleRulesStepCont): Self = StObject.set(x, "MuiStepContent", value.asInstanceOf[js.Any])
+      inline def setMuiStepContent(value: PartialStyleRulesStepCont): Self = StObject.set(x, "MuiStepContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiStepContentUndefined: Self = StObject.set(x, "MuiStepContent", js.undefined)
+      inline def setMuiStepContentUndefined: Self = StObject.set(x, "MuiStepContent", js.undefined)
       
-      @scala.inline
-      def setMuiStepIcon(value: PartialStyleRulesStepIcon): Self = StObject.set(x, "MuiStepIcon", value.asInstanceOf[js.Any])
+      inline def setMuiStepIcon(value: PartialStyleRulesStepIcon): Self = StObject.set(x, "MuiStepIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiStepIconUndefined: Self = StObject.set(x, "MuiStepIcon", js.undefined)
+      inline def setMuiStepIconUndefined: Self = StObject.set(x, "MuiStepIcon", js.undefined)
       
-      @scala.inline
-      def setMuiStepLabel(value: PartialStyleRulesStepLabe): Self = StObject.set(x, "MuiStepLabel", value.asInstanceOf[js.Any])
+      inline def setMuiStepLabel(value: PartialStyleRulesStepLabe): Self = StObject.set(x, "MuiStepLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiStepLabelUndefined: Self = StObject.set(x, "MuiStepLabel", js.undefined)
+      inline def setMuiStepLabelUndefined: Self = StObject.set(x, "MuiStepLabel", js.undefined)
       
-      @scala.inline
-      def setMuiStepUndefined: Self = StObject.set(x, "MuiStep", js.undefined)
+      inline def setMuiStepUndefined: Self = StObject.set(x, "MuiStep", js.undefined)
       
-      @scala.inline
-      def setMuiStepper(value: PartialStyleRulesStepperC): Self = StObject.set(x, "MuiStepper", value.asInstanceOf[js.Any])
+      inline def setMuiStepper(value: PartialStyleRulesStepperC): Self = StObject.set(x, "MuiStepper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiStepperUndefined: Self = StObject.set(x, "MuiStepper", js.undefined)
+      inline def setMuiStepperUndefined: Self = StObject.set(x, "MuiStepper", js.undefined)
       
-      @scala.inline
-      def setMuiSvgIcon(value: PartialStyleRulesSvgIconC): Self = StObject.set(x, "MuiSvgIcon", value.asInstanceOf[js.Any])
+      inline def setMuiSvgIcon(value: PartialStyleRulesSvgIconC): Self = StObject.set(x, "MuiSvgIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiSvgIconUndefined: Self = StObject.set(x, "MuiSvgIcon", js.undefined)
+      inline def setMuiSvgIconUndefined: Self = StObject.set(x, "MuiSvgIcon", js.undefined)
       
-      @scala.inline
-      def setMuiSwitch(value: PartialStyleRulesSwitchCl): Self = StObject.set(x, "MuiSwitch", value.asInstanceOf[js.Any])
+      inline def setMuiSwitch(value: PartialStyleRulesSwitchCl): Self = StObject.set(x, "MuiSwitch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiSwitchBase(value: PartialStyleRulesSwitchBa): Self = StObject.set(x, "MuiSwitchBase", value.asInstanceOf[js.Any])
+      inline def setMuiSwitchBase(value: PartialStyleRulesSwitchBa): Self = StObject.set(x, "MuiSwitchBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiSwitchBaseUndefined: Self = StObject.set(x, "MuiSwitchBase", js.undefined)
+      inline def setMuiSwitchBaseUndefined: Self = StObject.set(x, "MuiSwitchBase", js.undefined)
       
-      @scala.inline
-      def setMuiSwitchUndefined: Self = StObject.set(x, "MuiSwitch", js.undefined)
+      inline def setMuiSwitchUndefined: Self = StObject.set(x, "MuiSwitch", js.undefined)
       
-      @scala.inline
-      def setMuiTab(value: PartialStyleRulesTabClass): Self = StObject.set(x, "MuiTab", value.asInstanceOf[js.Any])
+      inline def setMuiTab(value: PartialStyleRulesTabClass): Self = StObject.set(x, "MuiTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTabUndefined: Self = StObject.set(x, "MuiTab", js.undefined)
+      inline def setMuiTabUndefined: Self = StObject.set(x, "MuiTab", js.undefined)
       
-      @scala.inline
-      def setMuiTable(value: PartialStyleRulesTableCla): Self = StObject.set(x, "MuiTable", value.asInstanceOf[js.Any])
+      inline def setMuiTable(value: PartialStyleRulesTableCla): Self = StObject.set(x, "MuiTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTableBody(value: PartialStyleRulesTableBod): Self = StObject.set(x, "MuiTableBody", value.asInstanceOf[js.Any])
+      inline def setMuiTableBody(value: PartialStyleRulesTableBod): Self = StObject.set(x, "MuiTableBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTableBodyUndefined: Self = StObject.set(x, "MuiTableBody", js.undefined)
+      inline def setMuiTableBodyUndefined: Self = StObject.set(x, "MuiTableBody", js.undefined)
       
-      @scala.inline
-      def setMuiTableCell(value: PartialStyleRulesTableCel): Self = StObject.set(x, "MuiTableCell", value.asInstanceOf[js.Any])
+      inline def setMuiTableCell(value: PartialStyleRulesTableCel): Self = StObject.set(x, "MuiTableCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTableCellUndefined: Self = StObject.set(x, "MuiTableCell", js.undefined)
+      inline def setMuiTableCellUndefined: Self = StObject.set(x, "MuiTableCell", js.undefined)
       
-      @scala.inline
-      def setMuiTableFooter(value: PartialStyleRulesTableFoo): Self = StObject.set(x, "MuiTableFooter", value.asInstanceOf[js.Any])
+      inline def setMuiTableFooter(value: PartialStyleRulesTableFoo): Self = StObject.set(x, "MuiTableFooter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTableFooterUndefined: Self = StObject.set(x, "MuiTableFooter", js.undefined)
+      inline def setMuiTableFooterUndefined: Self = StObject.set(x, "MuiTableFooter", js.undefined)
       
-      @scala.inline
-      def setMuiTableHead(value: PartialStyleRulesTableHea): Self = StObject.set(x, "MuiTableHead", value.asInstanceOf[js.Any])
+      inline def setMuiTableHead(value: PartialStyleRulesTableHea): Self = StObject.set(x, "MuiTableHead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTableHeadUndefined: Self = StObject.set(x, "MuiTableHead", js.undefined)
+      inline def setMuiTableHeadUndefined: Self = StObject.set(x, "MuiTableHead", js.undefined)
       
-      @scala.inline
-      def setMuiTablePagination(value: PartialStyleRulesTablePag): Self = StObject.set(x, "MuiTablePagination", value.asInstanceOf[js.Any])
+      inline def setMuiTablePagination(value: PartialStyleRulesTablePag): Self = StObject.set(x, "MuiTablePagination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTablePaginationUndefined: Self = StObject.set(x, "MuiTablePagination", js.undefined)
+      inline def setMuiTablePaginationUndefined: Self = StObject.set(x, "MuiTablePagination", js.undefined)
       
-      @scala.inline
-      def setMuiTableRow(value: PartialStyleRulesTableRow): Self = StObject.set(x, "MuiTableRow", value.asInstanceOf[js.Any])
+      inline def setMuiTableRow(value: PartialStyleRulesTableRow): Self = StObject.set(x, "MuiTableRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTableRowUndefined: Self = StObject.set(x, "MuiTableRow", js.undefined)
+      inline def setMuiTableRowUndefined: Self = StObject.set(x, "MuiTableRow", js.undefined)
       
-      @scala.inline
-      def setMuiTableSortLabel(value: PartialStyleRulesTableSor): Self = StObject.set(x, "MuiTableSortLabel", value.asInstanceOf[js.Any])
+      inline def setMuiTableSortLabel(value: PartialStyleRulesTableSor): Self = StObject.set(x, "MuiTableSortLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTableSortLabelUndefined: Self = StObject.set(x, "MuiTableSortLabel", js.undefined)
+      inline def setMuiTableSortLabelUndefined: Self = StObject.set(x, "MuiTableSortLabel", js.undefined)
       
-      @scala.inline
-      def setMuiTableUndefined: Self = StObject.set(x, "MuiTable", js.undefined)
+      inline def setMuiTableUndefined: Self = StObject.set(x, "MuiTable", js.undefined)
       
-      @scala.inline
-      def setMuiTabs(value: PartialStyleRulesTabsClas): Self = StObject.set(x, "MuiTabs", value.asInstanceOf[js.Any])
+      inline def setMuiTabs(value: PartialStyleRulesTabsClas): Self = StObject.set(x, "MuiTabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTabsUndefined: Self = StObject.set(x, "MuiTabs", js.undefined)
+      inline def setMuiTabsUndefined: Self = StObject.set(x, "MuiTabs", js.undefined)
       
-      @scala.inline
-      def setMuiToolbar(value: PartialStyleRulesToolbarC): Self = StObject.set(x, "MuiToolbar", value.asInstanceOf[js.Any])
+      inline def setMuiToolbar(value: PartialStyleRulesToolbarC): Self = StObject.set(x, "MuiToolbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiToolbarUndefined: Self = StObject.set(x, "MuiToolbar", js.undefined)
+      inline def setMuiToolbarUndefined: Self = StObject.set(x, "MuiToolbar", js.undefined)
       
-      @scala.inline
-      def setMuiTooltip(value: PartialStyleRulesTooltipC): Self = StObject.set(x, "MuiTooltip", value.asInstanceOf[js.Any])
+      inline def setMuiTooltip(value: PartialStyleRulesTooltipC): Self = StObject.set(x, "MuiTooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTooltipUndefined: Self = StObject.set(x, "MuiTooltip", js.undefined)
+      inline def setMuiTooltipUndefined: Self = StObject.set(x, "MuiTooltip", js.undefined)
       
-      @scala.inline
-      def setMuiTouchRipple(value: PartialStyleRulesTouchRip): Self = StObject.set(x, "MuiTouchRipple", value.asInstanceOf[js.Any])
+      inline def setMuiTouchRipple(value: PartialStyleRulesTouchRip): Self = StObject.set(x, "MuiTouchRipple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTouchRippleUndefined: Self = StObject.set(x, "MuiTouchRipple", js.undefined)
+      inline def setMuiTouchRippleUndefined: Self = StObject.set(x, "MuiTouchRipple", js.undefined)
       
-      @scala.inline
-      def setMuiTypography(value: PartialStyleRulesTypograp): Self = StObject.set(x, "MuiTypography", value.asInstanceOf[js.Any])
+      inline def setMuiTypography(value: PartialStyleRulesTypograp): Self = StObject.set(x, "MuiTypography", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuiTypographyUndefined: Self = StObject.set(x, "MuiTypography", js.undefined)
+      inline def setMuiTypographyUndefined: Self = StObject.set(x, "MuiTypography", js.undefined)
     }
   }
 }

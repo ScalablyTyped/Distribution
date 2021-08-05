@@ -19,8 +19,7 @@ trait XComponentEnumeration
 }
 object XComponentEnumeration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     hasMoreElements: () => Boolean,
     nextComponent: () => XComponent,
@@ -32,10 +31,8 @@ object XComponentEnumeration {
     __obj.asInstanceOf[XComponentEnumeration]
   }
   
-  @scala.inline
-  implicit class XComponentEnumerationMutableBuilder[Self <: XComponentEnumeration] (val x: Self) extends AnyVal {
+  extension [Self <: XComponentEnumeration](x: Self) {
     
-    @scala.inline
-    def setNextComponent(value: () => XComponent): Self = StObject.set(x, "nextComponent", js.Any.fromFunction0(value))
+    inline def setNextComponent(value: () => XComponent): Self = StObject.set(x, "nextComponent", js.Any.fromFunction0(value))
   }
 }

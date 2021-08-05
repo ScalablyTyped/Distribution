@@ -15,34 +15,25 @@ trait SessionRenegotiateOptions extends StObject {
 }
 object SessionRenegotiateOptions {
   
-  @scala.inline
-  def apply(): SessionRenegotiateOptions = {
+  inline def apply(): SessionRenegotiateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SessionRenegotiateOptions]
   }
   
-  @scala.inline
-  implicit class SessionRenegotiateOptionsMutableBuilder[Self <: SessionRenegotiateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SessionRenegotiateOptions](x: Self) {
     
-    @scala.inline
-    def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+    inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+    inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
     
-    @scala.inline
-    def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+    inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setRtcOfferConstraints(value: RTCOfferOptions): Self = StObject.set(x, "rtcOfferConstraints", value.asInstanceOf[js.Any])
+    inline def setRtcOfferConstraints(value: RTCOfferOptions): Self = StObject.set(x, "rtcOfferConstraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtcOfferConstraintsUndefined: Self = StObject.set(x, "rtcOfferConstraints", js.undefined)
+    inline def setRtcOfferConstraintsUndefined: Self = StObject.set(x, "rtcOfferConstraints", js.undefined)
     
-    @scala.inline
-    def setUseUpdate(value: Boolean): Self = StObject.set(x, "useUpdate", value.asInstanceOf[js.Any])
+    inline def setUseUpdate(value: Boolean): Self = StObject.set(x, "useUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseUpdateUndefined: Self = StObject.set(x, "useUpdate", js.undefined)
+    inline def setUseUpdateUndefined: Self = StObject.set(x, "useUpdate", js.undefined)
   }
 }

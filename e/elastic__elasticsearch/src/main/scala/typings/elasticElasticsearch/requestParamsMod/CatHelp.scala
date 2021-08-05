@@ -14,28 +14,21 @@ trait CatHelp
 }
 object CatHelp {
   
-  @scala.inline
-  def apply(): CatHelp = {
+  inline def apply(): CatHelp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CatHelp]
   }
   
-  @scala.inline
-  implicit class CatHelpMutableBuilder[Self <: CatHelp] (val x: Self) extends AnyVal {
+  extension [Self <: CatHelp](x: Self) {
     
-    @scala.inline
-    def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+    inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+    inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
     
-    @scala.inline
-    def setS(value: String | js.Array[String]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: String | js.Array[String]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSUndefined: Self = StObject.set(x, "s", js.undefined)
+    inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
     
-    @scala.inline
-    def setSVarargs(value: String*): Self = StObject.set(x, "s", js.Array(value :_*))
+    inline def setSVarargs(value: String*): Self = StObject.set(x, "s", js.Array(value :_*))
   }
 }

@@ -12,16 +12,13 @@ trait SettingsPaneCommandsRequestedEventArgs extends StObject {
 }
 object SettingsPaneCommandsRequestedEventArgs {
   
-  @scala.inline
-  def apply(request: SettingsPaneCommandsRequest): SettingsPaneCommandsRequestedEventArgs = {
+  inline def apply(request: SettingsPaneCommandsRequest): SettingsPaneCommandsRequestedEventArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsPaneCommandsRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class SettingsPaneCommandsRequestedEventArgsMutableBuilder[Self <: SettingsPaneCommandsRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SettingsPaneCommandsRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequest(value: SettingsPaneCommandsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: SettingsPaneCommandsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait OffsetRadius extends StObject {
 }
 object OffsetRadius {
   
-  @scala.inline
-  def apply(offsetRadius: Double): OffsetRadius = {
+  inline def apply(offsetRadius: Double): OffsetRadius = {
     val __obj = js.Dynamic.literal(offsetRadius = offsetRadius.asInstanceOf[js.Any])
     __obj.asInstanceOf[OffsetRadius]
   }
   
-  @scala.inline
-  implicit class OffsetRadiusMutableBuilder[Self <: OffsetRadius] (val x: Self) extends AnyVal {
+  extension [Self <: OffsetRadius](x: Self) {
     
-    @scala.inline
-    def setOffsetRadius(value: Double): Self = StObject.set(x, "offsetRadius", value.asInstanceOf[js.Any])
+    inline def setOffsetRadius(value: Double): Self = StObject.set(x, "offsetRadius", value.asInstanceOf[js.Any])
   }
 }

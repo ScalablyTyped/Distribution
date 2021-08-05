@@ -10,8 +10,7 @@ trait UpdateSegmentInput
      with typings.awsSdkClientPinpointBrowser.typesUpdateSegmentInputMod.UpdateSegmentInput
 object UpdateSegmentInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, SegmentId: String, WriteSegmentRequest: WriteSegmentRequest): UpdateSegmentInput = {
+  inline def apply(ApplicationId: String, SegmentId: String, WriteSegmentRequest: WriteSegmentRequest): UpdateSegmentInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any], WriteSegmentRequest = WriteSegmentRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSegmentInput]
   }

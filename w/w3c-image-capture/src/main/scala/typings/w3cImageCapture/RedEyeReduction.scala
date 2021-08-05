@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RedEyeReduction extends StObject
 object RedEyeReduction {
   
-  @scala.inline
-  def always: typings.w3cImageCapture.w3cImageCaptureStrings.always = "always".asInstanceOf[typings.w3cImageCapture.w3cImageCaptureStrings.always]
+  inline def always: typings.w3cImageCapture.w3cImageCaptureStrings.always = "always".asInstanceOf[typings.w3cImageCapture.w3cImageCaptureStrings.always]
   
-  @scala.inline
-  def controllable: typings.w3cImageCapture.w3cImageCaptureStrings.controllable = "controllable".asInstanceOf[typings.w3cImageCapture.w3cImageCaptureStrings.controllable]
+  inline def controllable: typings.w3cImageCapture.w3cImageCaptureStrings.controllable = "controllable".asInstanceOf[typings.w3cImageCapture.w3cImageCaptureStrings.controllable]
   
-  @scala.inline
-  def never: typings.w3cImageCapture.w3cImageCaptureStrings.never = "never".asInstanceOf[typings.w3cImageCapture.w3cImageCaptureStrings.never]
+  inline def never: typings.w3cImageCapture.w3cImageCaptureStrings.never = "never".asInstanceOf[typings.w3cImageCapture.w3cImageCaptureStrings.never]
 }

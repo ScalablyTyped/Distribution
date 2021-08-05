@@ -10,6 +10,5 @@ object global {
   @JSGlobal("deployJava")
   @js.native
   def deployJava: DeployJavaStatic = js.native
-  @scala.inline
-  def deployJava_=(x: DeployJavaStatic): Unit = js.Dynamic.global.updateDynamic("deployJava")(x.asInstanceOf[js.Any])
+  inline def deployJava_=(x: DeployJavaStatic): Unit = js.Dynamic.global.updateDynamic("deployJava")(x.asInstanceOf[js.Any])
 }

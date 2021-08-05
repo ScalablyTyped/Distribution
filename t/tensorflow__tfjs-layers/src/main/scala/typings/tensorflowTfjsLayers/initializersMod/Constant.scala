@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Constant protected () extends Initializer {
   def this(args: ConstantArgs) = this()
   
-  var value: js.Any = js.native
+  /* private */ var value: js.Any = js.native
 }
 /* static members */
 object Constant {
@@ -22,6 +22,5 @@ object Constant {
   @JSImport("@tensorflow/tfjs-layers/dist/initializers", "Constant.className")
   @js.native
   def className: String = js.native
-  @scala.inline
-  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+  inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
 }

@@ -13,16 +13,13 @@ trait DescribeObservationRequest extends StObject {
 }
 object DescribeObservationRequest {
   
-  @scala.inline
-  def apply(ObservationId: ObservationId): DescribeObservationRequest = {
+  inline def apply(ObservationId: ObservationId): DescribeObservationRequest = {
     val __obj = js.Dynamic.literal(ObservationId = ObservationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeObservationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeObservationRequestMutableBuilder[Self <: DescribeObservationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeObservationRequest](x: Self) {
     
-    @scala.inline
-    def setObservationId(value: ObservationId): Self = StObject.set(x, "ObservationId", value.asInstanceOf[js.Any])
+    inline def setObservationId(value: ObservationId): Self = StObject.set(x, "ObservationId", value.asInstanceOf[js.Any])
   }
 }

@@ -39,17 +39,17 @@ object staticSymbolResolverMod {
       errorRecorder: js.Function2[/* error */ js.Any, /* fileName */ js.UndefOr[String], Unit]
     ) = this()
     
-    var _createSymbolsOf: js.Any = js.native
+    /* private */ var _createSymbolsOf: js.Any = js.native
     
-    var _resolveSymbolFromSummary: js.Any = js.native
+    /* private */ var _resolveSymbolFromSummary: js.Any = js.native
     
-    var _resolveSymbolMembers: js.Any = js.native
+    /* private */ var _resolveSymbolMembers: js.Any = js.native
     
-    var createExport: js.Any = js.native
+    /* private */ var createExport: js.Any = js.native
     
-    var createResolvedSymbol: js.Any = js.native
+    /* private */ var createResolvedSymbol: js.Any = js.native
     
-    var errorRecorder: js.Any = js.native
+    /* private */ var errorRecorder: js.Any = js.native
     
     /**
       * getImportAs produces a symbol that can be used to import the given symbol.
@@ -68,7 +68,7 @@ object staticSymbolResolverMod {
     /**
       * @param module an absolute path to a module file.
       */
-    var getModuleMetadata: js.Any = js.native
+    /* private */ var getModuleMetadata: js.Any = js.native
     
     /**
       * getResourcePath produces the path to the original location of the symbol and should
@@ -108,9 +108,9 @@ object staticSymbolResolverMod {
       */
     def hasDecorators(filePath: String): Boolean = js.native
     
-    var host: js.Any = js.native
+    /* private */ var host: js.Any = js.native
     
-    var importAs: js.Any = js.native
+    /* private */ var importAs: js.Any = js.native
     
     /**
       * Invalidate all information derived from the given file and return the
@@ -120,36 +120,34 @@ object staticSymbolResolverMod {
       */
     def invalidateFile(fileName: String): js.Array[StaticSymbol] = js.native
     
-    var knownFileNameToModuleNames: js.Any = js.native
+    /* private */ var knownFileNameToModuleNames: js.Any = js.native
     
-    var metadataCache: js.Any = js.native
+    /* private */ var metadataCache: js.Any = js.native
     
     def recordImportAs(sourceSymbol: StaticSymbol, targetSymbol: StaticSymbol): Unit = js.native
     
     def recordModuleNameForFileName(fileName: String, moduleName: String): Unit = js.native
     
-    var reportError: js.Any = js.native
+    /* private */ var reportError: js.Any = js.native
     
-    var resolveModule: js.Any = js.native
+    /* private */ var resolveModule: js.Any = js.native
     
     def resolveSymbol(staticSymbol: StaticSymbol): ResolvedStaticSymbol = js.native
     
-    var resolvedSymbols: js.Any = js.native
+    /* private */ var resolvedSymbols: js.Any = js.native
     
-    var staticSymbolCache: js.Any = js.native
+    /* private */ var staticSymbolCache: js.Any = js.native
     
-    var summaryResolver: js.Any = js.native
+    /* private */ var summaryResolver: js.Any = js.native
     
-    var symbolFromFile: js.Any = js.native
+    /* private */ var symbolFromFile: js.Any = js.native
     
-    var symbolResourcePaths: js.Any = js.native
+    /* private */ var symbolResourcePaths: js.Any = js.native
   }
   
-  @scala.inline
-  def unescapeIdentifier(identifier: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeIdentifier")(identifier.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unescapeIdentifier(identifier: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeIdentifier")(identifier.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def unwrapResolvedMetadata(metadata: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapResolvedMetadata")(metadata.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def unwrapResolvedMetadata(metadata: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapResolvedMetadata")(metadata.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @js.native
   trait StaticSymbolResolverHost extends StObject {

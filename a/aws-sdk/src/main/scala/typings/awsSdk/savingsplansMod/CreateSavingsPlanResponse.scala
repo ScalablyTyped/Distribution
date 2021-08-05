@@ -13,19 +13,15 @@ trait CreateSavingsPlanResponse extends StObject {
 }
 object CreateSavingsPlanResponse {
   
-  @scala.inline
-  def apply(): CreateSavingsPlanResponse = {
+  inline def apply(): CreateSavingsPlanResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSavingsPlanResponse]
   }
   
-  @scala.inline
-  implicit class CreateSavingsPlanResponseMutableBuilder[Self <: CreateSavingsPlanResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSavingsPlanResponse](x: Self) {
     
-    @scala.inline
-    def setSavingsPlanId(value: SavingsPlanId): Self = StObject.set(x, "savingsPlanId", value.asInstanceOf[js.Any])
+    inline def setSavingsPlanId(value: SavingsPlanId): Self = StObject.set(x, "savingsPlanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingsPlanIdUndefined: Self = StObject.set(x, "savingsPlanId", js.undefined)
+    inline def setSavingsPlanIdUndefined: Self = StObject.set(x, "savingsPlanId", js.undefined)
   }
 }

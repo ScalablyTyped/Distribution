@@ -13,19 +13,15 @@ trait ScheduledInstancesIpv6Address extends StObject {
 }
 object ScheduledInstancesIpv6Address {
   
-  @scala.inline
-  def apply(): ScheduledInstancesIpv6Address = {
+  inline def apply(): ScheduledInstancesIpv6Address = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScheduledInstancesIpv6Address]
   }
   
-  @scala.inline
-  implicit class ScheduledInstancesIpv6AddressMutableBuilder[Self <: ScheduledInstancesIpv6Address] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduledInstancesIpv6Address](x: Self) {
     
-    @scala.inline
-    def setIpv6Address(value: Ipv6Address): Self = StObject.set(x, "Ipv6Address", value.asInstanceOf[js.Any])
+    inline def setIpv6Address(value: Ipv6Address): Self = StObject.set(x, "Ipv6Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6AddressUndefined: Self = StObject.set(x, "Ipv6Address", js.undefined)
+    inline def setIpv6AddressUndefined: Self = StObject.set(x, "Ipv6Address", js.undefined)
   }
 }

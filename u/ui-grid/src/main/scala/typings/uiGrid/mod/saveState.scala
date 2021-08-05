@@ -144,92 +144,64 @@ object saveState {
   }
   object IGridOptions {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.saveState.IGridOptions = {
+    inline def apply(): typings.uiGrid.mod.saveState.IGridOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.saveState.IGridOptions]
     }
     
-    @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.saveState.IGridOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.saveState.IGridOptions](x: Self) {
       
-      @scala.inline
-      def setSaveFilter(value: Boolean): Self = StObject.set(x, "saveFilter", value.asInstanceOf[js.Any])
+      inline def setSaveFilter(value: Boolean): Self = StObject.set(x, "saveFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveFilterUndefined: Self = StObject.set(x, "saveFilter", js.undefined)
+      inline def setSaveFilterUndefined: Self = StObject.set(x, "saveFilter", js.undefined)
       
-      @scala.inline
-      def setSaveFocus(value: Boolean): Self = StObject.set(x, "saveFocus", value.asInstanceOf[js.Any])
+      inline def setSaveFocus(value: Boolean): Self = StObject.set(x, "saveFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveFocusUndefined: Self = StObject.set(x, "saveFocus", js.undefined)
+      inline def setSaveFocusUndefined: Self = StObject.set(x, "saveFocus", js.undefined)
       
-      @scala.inline
-      def setSaveGrouping(value: Boolean): Self = StObject.set(x, "saveGrouping", value.asInstanceOf[js.Any])
+      inline def setSaveGrouping(value: Boolean): Self = StObject.set(x, "saveGrouping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveGroupingExpandedStates(value: Boolean): Self = StObject.set(x, "saveGroupingExpandedStates", value.asInstanceOf[js.Any])
+      inline def setSaveGroupingExpandedStates(value: Boolean): Self = StObject.set(x, "saveGroupingExpandedStates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveGroupingExpandedStatesUndefined: Self = StObject.set(x, "saveGroupingExpandedStates", js.undefined)
+      inline def setSaveGroupingExpandedStatesUndefined: Self = StObject.set(x, "saveGroupingExpandedStates", js.undefined)
       
-      @scala.inline
-      def setSaveGroupingUndefined: Self = StObject.set(x, "saveGrouping", js.undefined)
+      inline def setSaveGroupingUndefined: Self = StObject.set(x, "saveGrouping", js.undefined)
       
-      @scala.inline
-      def setSaveOrder(value: Boolean): Self = StObject.set(x, "saveOrder", value.asInstanceOf[js.Any])
+      inline def setSaveOrder(value: Boolean): Self = StObject.set(x, "saveOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveOrderUndefined: Self = StObject.set(x, "saveOrder", js.undefined)
+      inline def setSaveOrderUndefined: Self = StObject.set(x, "saveOrder", js.undefined)
       
-      @scala.inline
-      def setSavePinning(value: Boolean): Self = StObject.set(x, "savePinning", value.asInstanceOf[js.Any])
+      inline def setSavePinning(value: Boolean): Self = StObject.set(x, "savePinning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSavePinningUndefined: Self = StObject.set(x, "savePinning", js.undefined)
+      inline def setSavePinningUndefined: Self = StObject.set(x, "savePinning", js.undefined)
       
-      @scala.inline
-      def setSaveRowIdentity(value: Boolean): Self = StObject.set(x, "saveRowIdentity", value.asInstanceOf[js.Any])
+      inline def setSaveRowIdentity(value: Boolean): Self = StObject.set(x, "saveRowIdentity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveRowIdentityUndefined: Self = StObject.set(x, "saveRowIdentity", js.undefined)
+      inline def setSaveRowIdentityUndefined: Self = StObject.set(x, "saveRowIdentity", js.undefined)
       
-      @scala.inline
-      def setSaveScroll(value: Boolean): Self = StObject.set(x, "saveScroll", value.asInstanceOf[js.Any])
+      inline def setSaveScroll(value: Boolean): Self = StObject.set(x, "saveScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveScrollUndefined: Self = StObject.set(x, "saveScroll", js.undefined)
+      inline def setSaveScrollUndefined: Self = StObject.set(x, "saveScroll", js.undefined)
       
-      @scala.inline
-      def setSaveSelection(value: Boolean): Self = StObject.set(x, "saveSelection", value.asInstanceOf[js.Any])
+      inline def setSaveSelection(value: Boolean): Self = StObject.set(x, "saveSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveSelectionUndefined: Self = StObject.set(x, "saveSelection", js.undefined)
+      inline def setSaveSelectionUndefined: Self = StObject.set(x, "saveSelection", js.undefined)
       
-      @scala.inline
-      def setSaveSort(value: Boolean): Self = StObject.set(x, "saveSort", value.asInstanceOf[js.Any])
+      inline def setSaveSort(value: Boolean): Self = StObject.set(x, "saveSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveSortUndefined: Self = StObject.set(x, "saveSort", js.undefined)
+      inline def setSaveSortUndefined: Self = StObject.set(x, "saveSort", js.undefined)
       
-      @scala.inline
-      def setSaveTreeView(value: Boolean): Self = StObject.set(x, "saveTreeView", value.asInstanceOf[js.Any])
+      inline def setSaveTreeView(value: Boolean): Self = StObject.set(x, "saveTreeView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveTreeViewUndefined: Self = StObject.set(x, "saveTreeView", js.undefined)
+      inline def setSaveTreeViewUndefined: Self = StObject.set(x, "saveTreeView", js.undefined)
       
-      @scala.inline
-      def setSaveVisible(value: Boolean): Self = StObject.set(x, "saveVisible", value.asInstanceOf[js.Any])
+      inline def setSaveVisible(value: Boolean): Self = StObject.set(x, "saveVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveVisibleUndefined: Self = StObject.set(x, "saveVisible", js.undefined)
+      inline def setSaveVisibleUndefined: Self = StObject.set(x, "saveVisible", js.undefined)
       
-      @scala.inline
-      def setSaveWidths(value: Boolean): Self = StObject.set(x, "saveWidths", value.asInstanceOf[js.Any])
+      inline def setSaveWidths(value: Boolean): Self = StObject.set(x, "saveWidths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveWidthsUndefined: Self = StObject.set(x, "saveWidths", js.undefined)
+      inline def setSaveWidthsUndefined: Self = StObject.set(x, "saveWidths", js.undefined)
     }
   }
   
@@ -251,20 +223,16 @@ object saveState {
   }
   object IGridSaveStateApi {
     
-    @scala.inline
-    def apply(restore: (IScope, IGridSavedState) => Unit, save: () => IGridSavedState): IGridSaveStateApi = {
+    inline def apply(restore: (IScope, IGridSavedState) => Unit, save: () => IGridSavedState): IGridSaveStateApi = {
       val __obj = js.Dynamic.literal(restore = js.Any.fromFunction2(restore), save = js.Any.fromFunction0(save))
       __obj.asInstanceOf[IGridSaveStateApi]
     }
     
-    @scala.inline
-    implicit class IGridSaveStateApiMutableBuilder[Self <: IGridSaveStateApi] (val x: Self) extends AnyVal {
+    extension [Self <: IGridSaveStateApi](x: Self) {
       
-      @scala.inline
-      def setRestore(value: (IScope, IGridSavedState) => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction2(value))
+      inline def setRestore(value: (IScope, IGridSavedState) => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSave(value: () => IGridSavedState): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
+      inline def setSave(value: () => IGridSavedState): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
     }
   }
   
@@ -282,41 +250,30 @@ object saveState {
   }
   object IGridSavedState {
     
-    @scala.inline
-    def apply(grouping: IGridGroupingConfiguration, selection: js.Array[IRowVal], treeView: ITreeState): IGridSavedState = {
+    inline def apply(grouping: IGridGroupingConfiguration, selection: js.Array[IRowVal], treeView: ITreeState): IGridSavedState = {
       val __obj = js.Dynamic.literal(grouping = grouping.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], treeView = treeView.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGridSavedState]
     }
     
-    @scala.inline
-    implicit class IGridSavedStateMutableBuilder[Self <: IGridSavedState] (val x: Self) extends AnyVal {
+    extension [Self <: IGridSavedState](x: Self) {
       
-      @scala.inline
-      def setColumns(value: js.Array[ISavedColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[ISavedColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setColumnsVarargs(value: ISavedColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: ISavedColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setGrouping(value: IGridGroupingConfiguration): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
+      inline def setGrouping(value: IGridGroupingConfiguration): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollFocus(value: ISavedScrollFocus): Self = StObject.set(x, "scrollFocus", value.asInstanceOf[js.Any])
+      inline def setScrollFocus(value: ISavedScrollFocus): Self = StObject.set(x, "scrollFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollFocusUndefined: Self = StObject.set(x, "scrollFocus", js.undefined)
+      inline def setScrollFocusUndefined: Self = StObject.set(x, "scrollFocus", js.undefined)
       
-      @scala.inline
-      def setSelection(value: js.Array[IRowVal]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: js.Array[IRowVal]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionVarargs(value: IRowVal*): Self = StObject.set(x, "selection", js.Array(value :_*))
+      inline def setSelectionVarargs(value: IRowVal*): Self = StObject.set(x, "selection", js.Array(value :_*))
       
-      @scala.inline
-      def setTreeView(value: ITreeState): Self = StObject.set(x, "treeView", value.asInstanceOf[js.Any])
+      inline def setTreeView(value: ITreeState): Self = StObject.set(x, "treeView", value.asInstanceOf[js.Any])
     }
   }
   
@@ -328,20 +285,16 @@ object saveState {
   }
   object IRowVal {
     
-    @scala.inline
-    def apply(identity: Boolean, row: Double | js.Any): IRowVal = {
+    inline def apply(identity: Boolean, row: Double | js.Any): IRowVal = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRowVal]
     }
     
-    @scala.inline
-    implicit class IRowValMutableBuilder[Self <: IRowVal] (val x: Self) extends AnyVal {
+    extension [Self <: IRowVal](x: Self) {
       
-      @scala.inline
-      def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRow(value: Double | js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Double | js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     }
   }
   
@@ -361,50 +314,36 @@ object saveState {
   }
   object ISavedColumn {
     
-    @scala.inline
-    def apply(name: String): ISavedColumn = {
+    inline def apply(name: String): ISavedColumn = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISavedColumn]
     }
     
-    @scala.inline
-    implicit class ISavedColumnMutableBuilder[Self <: ISavedColumn] (val x: Self) extends AnyVal {
+    extension [Self <: ISavedColumn](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[IFilterOptions]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[IFilterOptions]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: IFilterOptions*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: IFilterOptions*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinned(value: String): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+      inline def setPinned(value: String): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
+      inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
       
-      @scala.inline
-      def setSort(value: ISortInfo): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: ISortInfo): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -418,32 +357,24 @@ object saveState {
   }
   object ISavedScrollFocus {
     
-    @scala.inline
-    def apply(): ISavedScrollFocus = {
+    inline def apply(): ISavedScrollFocus = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISavedScrollFocus]
     }
     
-    @scala.inline
-    implicit class ISavedScrollFocusMutableBuilder[Self <: ISavedScrollFocus] (val x: Self) extends AnyVal {
+    extension [Self <: ISavedScrollFocus](x: Self) {
       
-      @scala.inline
-      def setColName(value: String): Self = StObject.set(x, "colName", value.asInstanceOf[js.Any])
+      inline def setColName(value: String): Self = StObject.set(x, "colName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColNameUndefined: Self = StObject.set(x, "colName", js.undefined)
+      inline def setColNameUndefined: Self = StObject.set(x, "colName", js.undefined)
       
-      @scala.inline
-      def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+      inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+      inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
-      @scala.inline
-      def setRowVal(value: IRowVal): Self = StObject.set(x, "rowVal", value.asInstanceOf[js.Any])
+      inline def setRowVal(value: IRowVal): Self = StObject.set(x, "rowVal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowValUndefined: Self = StObject.set(x, "rowVal", js.undefined)
+      inline def setRowValUndefined: Self = StObject.set(x, "rowVal", js.undefined)
     }
   }
 }

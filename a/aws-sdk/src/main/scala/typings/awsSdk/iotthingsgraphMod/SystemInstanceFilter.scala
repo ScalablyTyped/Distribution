@@ -18,28 +18,21 @@ trait SystemInstanceFilter extends StObject {
 }
 object SystemInstanceFilter {
   
-  @scala.inline
-  def apply(): SystemInstanceFilter = {
+  inline def apply(): SystemInstanceFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SystemInstanceFilter]
   }
   
-  @scala.inline
-  implicit class SystemInstanceFilterMutableBuilder[Self <: SystemInstanceFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInstanceFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: SystemInstanceFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SystemInstanceFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValue(value: SystemInstanceFilterValues): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SystemInstanceFilterValues): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setValueVarargs(value: SystemInstanceFilterValue*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: SystemInstanceFilterValue*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

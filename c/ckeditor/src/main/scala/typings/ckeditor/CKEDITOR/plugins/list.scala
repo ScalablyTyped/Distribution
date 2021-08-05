@@ -18,8 +18,7 @@ trait list extends StObject {
 }
 object list {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arrayToList: (js.Any, js.Any, js.Any, js.Any) => Unit,
     listToArray: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit
   ): list = {
@@ -27,13 +26,10 @@ object list {
     __obj.asInstanceOf[list]
   }
   
-  @scala.inline
-  implicit class listMutableBuilder[Self <: list] (val x: Self) extends AnyVal {
+  extension [Self <: list](x: Self) {
     
-    @scala.inline
-    def setArrayToList(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "arrayToList", js.Any.fromFunction4(value))
+    inline def setArrayToList(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "arrayToList", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setListToArray(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "listToArray", js.Any.fromFunction5(value))
+    inline def setListToArray(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "listToArray", js.Any.fromFunction5(value))
   }
 }

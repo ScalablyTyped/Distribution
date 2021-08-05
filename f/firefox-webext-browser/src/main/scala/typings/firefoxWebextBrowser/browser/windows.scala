@@ -72,95 +72,66 @@ object windows {
   }
   object CreateCreateData {
     
-    @scala.inline
-    def apply(): CreateCreateData = {
+    inline def apply(): CreateCreateData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateCreateData]
     }
     
-    @scala.inline
-    implicit class CreateCreateDataMutableBuilder[Self <: CreateCreateData] (val x: Self) extends AnyVal {
+    extension [Self <: CreateCreateData](x: Self) {
       
-      @scala.inline
-      def setAllowScriptsToClose(value: Boolean): Self = StObject.set(x, "allowScriptsToClose", value.asInstanceOf[js.Any])
+      inline def setAllowScriptsToClose(value: Boolean): Self = StObject.set(x, "allowScriptsToClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowScriptsToCloseUndefined: Self = StObject.set(x, "allowScriptsToClose", js.undefined)
+      inline def setAllowScriptsToCloseUndefined: Self = StObject.set(x, "allowScriptsToClose", js.undefined)
       
-      @scala.inline
-      def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
+      inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
+      inline def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
       
-      @scala.inline
-      def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
+      inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
+      inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
+      inline def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setState(value: WindowState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: WindowState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
       
-      @scala.inline
-      def setTitlePreface(value: String): Self = StObject.set(x, "titlePreface", value.asInstanceOf[js.Any])
+      inline def setTitlePreface(value: String): Self = StObject.set(x, "titlePreface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitlePrefaceUndefined: Self = StObject.set(x, "titlePreface", js.undefined)
+      inline def setTitlePrefaceUndefined: Self = StObject.set(x, "titlePreface", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
-      @scala.inline
-      def setType(value: CreateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: CreateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String | js.Array[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String | js.Array[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
+      inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -176,17 +147,13 @@ object windows {
   trait CreateType extends StObject
   object CreateType {
     
-    @scala.inline
-    def detached_panel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.detached_panel = "detached_panel".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.detached_panel]
+    inline def detached_panel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.detached_panel = "detached_panel".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.detached_panel]
     
-    @scala.inline
-    def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
+    inline def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
     
-    @scala.inline
-    def panel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.panel = "panel".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.panel]
+    inline def panel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.panel = "panel".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.panel]
     
-    @scala.inline
-    def popup: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup = "popup".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup]
+    inline def popup: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup = "popup".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup]
   }
   
   /**
@@ -207,29 +174,22 @@ object windows {
   }
   object GetAllGetInfo {
     
-    @scala.inline
-    def apply(): GetAllGetInfo = {
+    inline def apply(): GetAllGetInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetAllGetInfo]
     }
     
-    @scala.inline
-    implicit class GetAllGetInfoMutableBuilder[Self <: GetAllGetInfo] (val x: Self) extends AnyVal {
+    extension [Self <: GetAllGetInfo](x: Self) {
       
-      @scala.inline
-      def setPopulate(value: Boolean): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
+      inline def setPopulate(value: Boolean): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
+      inline def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
       
-      @scala.inline
-      def setWindowTypes(value: js.Array[WindowType]): Self = StObject.set(x, "windowTypes", value.asInstanceOf[js.Any])
+      inline def setWindowTypes(value: js.Array[WindowType]): Self = StObject.set(x, "windowTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowTypesUndefined: Self = StObject.set(x, "windowTypes", js.undefined)
+      inline def setWindowTypesUndefined: Self = StObject.set(x, "windowTypes", js.undefined)
       
-      @scala.inline
-      def setWindowTypesVarargs(value: WindowType*): Self = StObject.set(x, "windowTypes", js.Array(value :_*))
+      inline def setWindowTypesVarargs(value: WindowType*): Self = StObject.set(x, "windowTypes", js.Array(value :_*))
     }
   }
   
@@ -249,29 +209,22 @@ object windows {
   }
   object GetInfo {
     
-    @scala.inline
-    def apply(): GetInfo = {
+    inline def apply(): GetInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetInfo]
     }
     
-    @scala.inline
-    implicit class GetInfoMutableBuilder[Self <: GetInfo] (val x: Self) extends AnyVal {
+    extension [Self <: GetInfo](x: Self) {
       
-      @scala.inline
-      def setPopulate(value: Boolean): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
+      inline def setPopulate(value: Boolean): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
+      inline def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
       
-      @scala.inline
-      def setWindowTypes(value: js.Array[WindowType]): Self = StObject.set(x, "windowTypes", value.asInstanceOf[js.Any])
+      inline def setWindowTypes(value: js.Array[WindowType]): Self = StObject.set(x, "windowTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowTypesUndefined: Self = StObject.set(x, "windowTypes", js.undefined)
+      inline def setWindowTypesUndefined: Self = StObject.set(x, "windowTypes", js.undefined)
       
-      @scala.inline
-      def setWindowTypesVarargs(value: WindowType*): Self = StObject.set(x, "windowTypes", js.Array(value :_*))
+      inline def setWindowTypesVarargs(value: WindowType*): Self = StObject.set(x, "windowTypes", js.Array(value :_*))
     }
   }
   
@@ -313,62 +266,44 @@ object windows {
   }
   object UpdateUpdateInfo {
     
-    @scala.inline
-    def apply(): UpdateUpdateInfo = {
+    inline def apply(): UpdateUpdateInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateUpdateInfo]
     }
     
-    @scala.inline
-    implicit class UpdateUpdateInfoMutableBuilder[Self <: UpdateUpdateInfo] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateUpdateInfo](x: Self) {
       
-      @scala.inline
-      def setDrawAttention(value: Boolean): Self = StObject.set(x, "drawAttention", value.asInstanceOf[js.Any])
+      inline def setDrawAttention(value: Boolean): Self = StObject.set(x, "drawAttention", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawAttentionUndefined: Self = StObject.set(x, "drawAttention", js.undefined)
+      inline def setDrawAttentionUndefined: Self = StObject.set(x, "drawAttention", js.undefined)
       
-      @scala.inline
-      def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
+      inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setState(value: WindowState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: WindowState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setTitlePreface(value: String): Self = StObject.set(x, "titlePreface", value.asInstanceOf[js.Any])
+      inline def setTitlePreface(value: String): Self = StObject.set(x, "titlePreface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitlePrefaceUndefined: Self = StObject.set(x, "titlePreface", js.undefined)
+      inline def setTitlePrefaceUndefined: Self = StObject.set(x, "titlePreface", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -425,86 +360,60 @@ object windows {
   }
   object Window {
     
-    @scala.inline
-    def apply(alwaysOnTop: Boolean, focused: Boolean, incognito: Boolean): Window = {
+    inline def apply(alwaysOnTop: Boolean, focused: Boolean, incognito: Boolean): Window = {
       val __obj = js.Dynamic.literal(alwaysOnTop = alwaysOnTop.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], incognito = incognito.asInstanceOf[js.Any])
       __obj.asInstanceOf[Window]
     }
     
-    @scala.inline
-    implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+    extension [Self <: Window](x: Self) {
       
-      @scala.inline
-      def setAlwaysOnTop(value: Boolean): Self = StObject.set(x, "alwaysOnTop", value.asInstanceOf[js.Any])
+      inline def setAlwaysOnTop(value: Boolean): Self = StObject.set(x, "alwaysOnTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
+      inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+      inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
+      inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
       
-      @scala.inline
-      def setState(value: WindowState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: WindowState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
+      inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      @scala.inline
-      def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
-      @scala.inline
-      def setType(value: WindowType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: WindowType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -521,20 +430,15 @@ object windows {
   trait WindowState extends StObject
   object WindowState {
     
-    @scala.inline
-    def docked: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.docked = "docked".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.docked]
+    inline def docked: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.docked = "docked".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.docked]
     
-    @scala.inline
-    def fullscreen: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fullscreen = "fullscreen".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fullscreen]
+    inline def fullscreen: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fullscreen = "fullscreen".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fullscreen]
     
-    @scala.inline
-    def maximized: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.maximized = "maximized".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.maximized]
+    inline def maximized: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.maximized = "maximized".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.maximized]
     
-    @scala.inline
-    def minimized: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.minimized = "minimized".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.minimized]
+    inline def minimized: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.minimized = "minimized".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.minimized]
     
-    @scala.inline
-    def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
+    inline def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
   }
   
   /* windows types */
@@ -551,19 +455,14 @@ object windows {
   trait WindowType extends StObject
   object WindowType {
     
-    @scala.inline
-    def app: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.app = "app".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.app]
+    inline def app: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.app = "app".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.app]
     
-    @scala.inline
-    def devtools: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools = "devtools".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools]
+    inline def devtools: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools = "devtools".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools]
     
-    @scala.inline
-    def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
+    inline def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
     
-    @scala.inline
-    def panel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.panel = "panel".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.panel]
+    inline def panel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.panel = "panel".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.panel]
     
-    @scala.inline
-    def popup: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup = "popup".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup]
+    inline def popup: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup = "popup".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.popup]
   }
 }

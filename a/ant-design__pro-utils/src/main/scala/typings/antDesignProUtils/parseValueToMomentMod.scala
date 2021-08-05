@@ -11,10 +11,8 @@ object parseValueToMomentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(value: DateValue): js.UndefOr[Moment | js.Array[Moment] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Moment | js.Array[Moment] | Null]]
-  @scala.inline
-  def default(value: DateValue, formatter: String): js.UndefOr[Moment | js.Array[Moment] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Moment | js.Array[Moment] | Null]]
+  inline def default(value: DateValue): js.UndefOr[Moment | js.Array[Moment] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Moment | js.Array[Moment] | Null]]
+  inline def default(value: DateValue, formatter: String): js.UndefOr[Moment | js.Array[Moment] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Moment | js.Array[Moment] | Null]]
   
   type DateValue = Moment | (js.Array[Double | Moment | String]) | String | Double
 }

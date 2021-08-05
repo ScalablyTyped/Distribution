@@ -8,11 +8,9 @@ object hdrHistogramJsStrings {
   
   @js.native
   sealed trait packed extends StObject
-  @scala.inline
-  def packed: packed = "packed".asInstanceOf[packed]
+  inline def packed: packed = "packed".asInstanceOf[packed]
   
   @js.native
   sealed trait sparse_array extends StObject
-  @scala.inline
-  def sparse_array: sparse_array = "sparse_array".asInstanceOf[sparse_array]
+  inline def sparse_array: sparse_array = "sparse_array".asInstanceOf[sparse_array]
 }

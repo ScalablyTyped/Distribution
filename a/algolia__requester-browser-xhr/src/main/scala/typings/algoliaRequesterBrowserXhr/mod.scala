@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createBrowserXhrRequester(): Requester = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserXhrRequester")().asInstanceOf[Requester]
+  inline def createBrowserXhrRequester(): Requester = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserXhrRequester")().asInstanceOf[Requester]
 }

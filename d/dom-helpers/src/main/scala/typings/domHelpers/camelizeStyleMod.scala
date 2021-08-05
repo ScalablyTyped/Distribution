@@ -11,6 +11,5 @@ object camelizeStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T /* <: String */](string: T): CamelProperty = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any]).asInstanceOf[CamelProperty]
+  inline def default[T /* <: String */](string: T): CamelProperty = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any]).asInstanceOf[CamelProperty]
 }

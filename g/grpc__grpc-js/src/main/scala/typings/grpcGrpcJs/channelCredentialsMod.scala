@@ -16,8 +16,8 @@ object channelCredentialsMod {
   
   @JSImport("@grpc/grpc-js/build/src/channel-credentials", "ChannelCredentials")
   @js.native
-  abstract class ChannelCredentials protected () extends StObject {
-    protected def this(callCredentials: CallCredentials) = this()
+  /* protected */ abstract class ChannelCredentials () extends StObject {
+    /* protected */ def this(callCredentials: CallCredentials) = this()
     
     /**
       * Check whether two channel credentials objects are equal. Two secure
@@ -43,7 +43,7 @@ object channelCredentialsMod {
       */
     def _isSecure(): Boolean = js.native
     
-    var callCredentials: CallCredentials = js.native
+    /* protected */ var callCredentials: CallCredentials = js.native
     
     /**
       * Returns a copy of this object with the included set of per-call credentials
@@ -63,8 +63,7 @@ object channelCredentialsMod {
     /**
       * Return a new ChannelCredentials instance with no credentials.
       */
-    @scala.inline
-    def createInsecure(): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[ChannelCredentials]
+    inline def createInsecure(): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[ChannelCredentials]
     
     /**
       * Return a new ChannelCredentials instance with a given set of credentials.
@@ -74,8 +73,7 @@ object channelCredentialsMod {
       * @param privateKey The client certificate private key, if available.
       * @param certChain The client certificate key chain, if available.
       */
-    @scala.inline
-    def createSsl(
+    inline def createSsl(
       rootCerts: js.UndefOr[Buffer | Null],
       privateKey: js.UndefOr[Buffer | Null],
       certChain: js.UndefOr[Buffer | Null],
@@ -83,8 +81,7 @@ object channelCredentialsMod {
     ): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
   }
   
-  @scala.inline
-  def createGoogleDefaultCredentials(): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createGoogleDefaultCredentials")().asInstanceOf[ChannelCredentials]
+  inline def createGoogleDefaultCredentials(): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createGoogleDefaultCredentials")().asInstanceOf[ChannelCredentials]
   
   trait Certificate extends StObject {
     
@@ -95,17 +92,14 @@ object channelCredentialsMod {
   }
   object Certificate {
     
-    @scala.inline
-    def apply(raw: Buffer): Certificate = {
+    inline def apply(raw: Buffer): Certificate = {
       val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[Certificate]
     }
     
-    @scala.inline
-    implicit class CertificateMutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
+    extension [Self <: Certificate](x: Self) {
       
-      @scala.inline
-      def setRaw(value: Buffer): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Buffer): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
   
@@ -121,20 +115,16 @@ object channelCredentialsMod {
   }
   object VerifyOptions {
     
-    @scala.inline
-    def apply(): VerifyOptions = {
+    inline def apply(): VerifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VerifyOptions]
     }
     
-    @scala.inline
-    implicit class VerifyOptionsMutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyOptions](x: Self) {
       
-      @scala.inline
-      def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ Certificate) => js.UndefOr[Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
+      inline def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ Certificate) => js.UndefOr[Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
+      inline def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
     }
   }
 }

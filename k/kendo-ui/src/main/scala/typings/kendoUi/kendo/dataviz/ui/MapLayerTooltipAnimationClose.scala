@@ -12,25 +12,19 @@ trait MapLayerTooltipAnimationClose extends StObject {
 }
 object MapLayerTooltipAnimationClose {
   
-  @scala.inline
-  def apply(): MapLayerTooltipAnimationClose = {
+  inline def apply(): MapLayerTooltipAnimationClose = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapLayerTooltipAnimationClose]
   }
   
-  @scala.inline
-  implicit class MapLayerTooltipAnimationCloseMutableBuilder[Self <: MapLayerTooltipAnimationClose] (val x: Self) extends AnyVal {
+  extension [Self <: MapLayerTooltipAnimationClose](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEffects(value: String): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+    inline def setEffects(value: String): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
+    inline def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
   }
 }

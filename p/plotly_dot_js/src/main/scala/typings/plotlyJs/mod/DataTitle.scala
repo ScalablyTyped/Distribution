@@ -24,8 +24,7 @@ trait DataTitle extends StObject {
 }
 object DataTitle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     font: PartialFont,
     position: (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`),
     standoff: Double,
@@ -35,21 +34,16 @@ object DataTitle {
     __obj.asInstanceOf[DataTitle]
   }
   
-  @scala.inline
-  implicit class DataTitleMutableBuilder[Self <: DataTitle] (val x: Self) extends AnyVal {
+  extension [Self <: DataTitle](x: Self) {
     
-    @scala.inline
-    def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(
+    inline def setPosition(
       value: (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`)
     ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandoff(value: Double): Self = StObject.set(x, "standoff", value.asInstanceOf[js.Any])
+    inline def setStandoff(value: Double): Self = StObject.set(x, "standoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

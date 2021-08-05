@@ -34,53 +34,53 @@ object httpClientMod {
     def this(userAgent: Unit, handlers: js.Array[IRequestHandler], requestOptions: IRequestOptions) = this()
     def this(userAgent: Unit, handlers: Unit, requestOptions: IRequestOptions) = this()
     
-    var _agent: js.Any = js.native
+    /* private */ var _agent: js.Any = js.native
     
-    var _allowRedirectDowngrade: js.Any = js.native
+    /* private */ var _allowRedirectDowngrade: js.Any = js.native
     
-    var _allowRedirects: js.Any = js.native
+    /* private */ var _allowRedirects: js.Any = js.native
     
-    var _allowRetries: js.Any = js.native
+    /* private */ var _allowRetries: js.Any = js.native
     
-    var _ca: js.Any = js.native
+    /* private */ var _ca: js.Any = js.native
     
-    var _cert: js.Any = js.native
+    /* private */ var _cert: js.Any = js.native
     
-    var _certConfig: js.Any = js.native
+    /* private */ var _certConfig: js.Any = js.native
     
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
-    var _getAgent: js.Any = js.native
+    /* private */ var _getAgent: js.Any = js.native
     
-    var _getProxy: js.Any = js.native
+    /* private */ var _getProxy: js.Any = js.native
     
-    var _httpProxy: js.Any = js.native
+    /* private */ var _httpProxy: js.Any = js.native
     
-    var _httpProxyBypassHosts: js.Any = js.native
+    /* private */ var _httpProxyBypassHosts: js.Any = js.native
     
-    var _ignoreSslError: js.Any = js.native
+    /* private */ var _ignoreSslError: js.Any = js.native
     
-    var _isMatchInBypassProxyList: js.Any = js.native
+    /* private */ var _isMatchInBypassProxyList: js.Any = js.native
     
-    var _isPresigned: js.Any = js.native
+    /* private */ var _isPresigned: js.Any = js.native
     
-    var _keepAlive: js.Any = js.native
+    /* private */ var _keepAlive: js.Any = js.native
     
-    var _key: js.Any = js.native
+    /* private */ var _key: js.Any = js.native
     
-    var _maxRedirects: js.Any = js.native
+    /* private */ var _maxRedirects: js.Any = js.native
     
-    var _maxRetries: js.Any = js.native
+    /* private */ var _maxRetries: js.Any = js.native
     
-    var _mergeHeaders: js.Any = js.native
+    /* private */ var _mergeHeaders: js.Any = js.native
     
-    var _performExponentialBackoff: js.Any = js.native
+    /* private */ var _performExponentialBackoff: js.Any = js.native
     
-    var _prepareRequest: js.Any = js.native
+    /* private */ var _prepareRequest: js.Any = js.native
     
-    var _proxyAgent: js.Any = js.native
+    /* private */ var _proxyAgent: js.Any = js.native
     
-    var _socketTimeout: js.Any = js.native
+    /* private */ var _socketTimeout: js.Any = js.native
     
     /**
       * Needs to be called if keepAlive is set to true in request options.
@@ -283,8 +283,7 @@ object httpClientMod {
     /* 305 */ val UseProxy: typings.typedRestClient.httpClientMod.HttpCodes.UseProxy & Double = js.native
   }
   
-  @scala.inline
-  def isHttps(requestUrl: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHttps")(requestUrl.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isHttps(requestUrl: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHttps")(requestUrl.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait RequestInfo extends StObject {
     
@@ -296,23 +295,18 @@ object httpClientMod {
   }
   object RequestInfo {
     
-    @scala.inline
-    def apply(httpModule: js.Any, options: RequestOptions, parsedUrl: Url): RequestInfo = {
+    inline def apply(httpModule: js.Any, options: RequestOptions, parsedUrl: Url): RequestInfo = {
       val __obj = js.Dynamic.literal(httpModule = httpModule.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], parsedUrl = parsedUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestInfo]
     }
     
-    @scala.inline
-    implicit class RequestInfoMutableBuilder[Self <: RequestInfo] (val x: Self) extends AnyVal {
+    extension [Self <: RequestInfo](x: Self) {
       
-      @scala.inline
-      def setHttpModule(value: js.Any): Self = StObject.set(x, "httpModule", value.asInstanceOf[js.Any])
+      inline def setHttpModule(value: js.Any): Self = StObject.set(x, "httpModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: RequestOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: RequestOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsedUrl(value: Url): Self = StObject.set(x, "parsedUrl", value.asInstanceOf[js.Any])
+      inline def setParsedUrl(value: Url): Self = StObject.set(x, "parsedUrl", value.asInstanceOf[js.Any])
     }
   }
 }

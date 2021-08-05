@@ -21,31 +21,23 @@ trait GoogleCloudAssetV1IdentityList extends StObject {
 }
 object GoogleCloudAssetV1IdentityList {
   
-  @scala.inline
-  def apply(): GoogleCloudAssetV1IdentityList = {
+  inline def apply(): GoogleCloudAssetV1IdentityList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudAssetV1IdentityList]
   }
   
-  @scala.inline
-  implicit class GoogleCloudAssetV1IdentityListMutableBuilder[Self <: GoogleCloudAssetV1IdentityList] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudAssetV1IdentityList](x: Self) {
     
-    @scala.inline
-    def setGroupEdges(value: js.Array[GoogleCloudAssetV1Edge]): Self = StObject.set(x, "groupEdges", value.asInstanceOf[js.Any])
+    inline def setGroupEdges(value: js.Array[GoogleCloudAssetV1Edge]): Self = StObject.set(x, "groupEdges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupEdgesUndefined: Self = StObject.set(x, "groupEdges", js.undefined)
+    inline def setGroupEdgesUndefined: Self = StObject.set(x, "groupEdges", js.undefined)
     
-    @scala.inline
-    def setGroupEdgesVarargs(value: GoogleCloudAssetV1Edge*): Self = StObject.set(x, "groupEdges", js.Array(value :_*))
+    inline def setGroupEdgesVarargs(value: GoogleCloudAssetV1Edge*): Self = StObject.set(x, "groupEdges", js.Array(value :_*))
     
-    @scala.inline
-    def setIdentities(value: js.Array[GoogleCloudAssetV1Identity]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
+    inline def setIdentities(value: js.Array[GoogleCloudAssetV1Identity]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentitiesUndefined: Self = StObject.set(x, "identities", js.undefined)
+    inline def setIdentitiesUndefined: Self = StObject.set(x, "identities", js.undefined)
     
-    @scala.inline
-    def setIdentitiesVarargs(value: GoogleCloudAssetV1Identity*): Self = StObject.set(x, "identities", js.Array(value :_*))
+    inline def setIdentitiesVarargs(value: GoogleCloudAssetV1Identity*): Self = StObject.set(x, "identities", js.Array(value :_*))
   }
 }

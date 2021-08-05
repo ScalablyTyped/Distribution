@@ -14,25 +14,19 @@ trait LabelPrice extends StObject {
 }
 object LabelPrice {
   
-  @scala.inline
-  def apply(price: Double, ticketType: String): LabelPrice = {
+  inline def apply(price: Double, ticketType: String): LabelPrice = {
     val __obj = js.Dynamic.literal(price = price.asInstanceOf[js.Any], ticketType = ticketType.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelPrice]
   }
   
-  @scala.inline
-  implicit class LabelPriceMutableBuilder[Self <: LabelPrice] (val x: Self) extends AnyVal {
+  extension [Self <: LabelPrice](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicketType(value: String): Self = StObject.set(x, "ticketType", value.asInstanceOf[js.Any])
+    inline def setTicketType(value: String): Self = StObject.set(x, "ticketType", value.asInstanceOf[js.Any])
   }
 }

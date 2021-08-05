@@ -16,15 +16,14 @@ trait Row extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.Row_typekey")
+  /* private */ @JSName("PowerPoint.Row_typekey")
   var PowerPointDotRow_typekey: Row
   
   def Select(): Unit
 }
 object Row {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Cells: CellRange,
     Delete: () => Unit,
@@ -38,28 +37,20 @@ object Row {
     __obj.asInstanceOf[Row]
   }
   
-  @scala.inline
-  implicit class RowMutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
+  extension [Self <: Row](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCells(value: CellRange): Self = StObject.set(x, "Cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: CellRange): Self = StObject.set(x, "Cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotRow_typekey(value: Row): Self = StObject.set(x, "PowerPoint.Row_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotRow_typekey(value: Row): Self = StObject.set(x, "PowerPoint.Row_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
   }
 }

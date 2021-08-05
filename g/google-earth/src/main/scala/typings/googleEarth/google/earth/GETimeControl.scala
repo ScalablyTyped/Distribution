@@ -37,8 +37,7 @@ trait GETimeControl
 }
 object GETimeControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAvailableImageDates: () => KmlObjectList[KmlTimeStamp],
     getCalculatedRate: () => Double,
     getExtents: () => KmlTimeSpan,
@@ -49,22 +48,16 @@ object GETimeControl {
     __obj.asInstanceOf[GETimeControl]
   }
   
-  @scala.inline
-  implicit class GETimeControlMutableBuilder[Self <: GETimeControl] (val x: Self) extends AnyVal {
+  extension [Self <: GETimeControl](x: Self) {
     
-    @scala.inline
-    def setGetAvailableImageDates(value: () => KmlObjectList[KmlTimeStamp]): Self = StObject.set(x, "getAvailableImageDates", js.Any.fromFunction0(value))
+    inline def setGetAvailableImageDates(value: () => KmlObjectList[KmlTimeStamp]): Self = StObject.set(x, "getAvailableImageDates", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCalculatedRate(value: () => Double): Self = StObject.set(x, "getCalculatedRate", js.Any.fromFunction0(value))
+    inline def setGetCalculatedRate(value: () => Double): Self = StObject.set(x, "getCalculatedRate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExtents(value: () => KmlTimeSpan): Self = StObject.set(x, "getExtents", js.Any.fromFunction0(value))
+    inline def setGetExtents(value: () => KmlTimeSpan): Self = StObject.set(x, "getExtents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVisibility(value: () => GEVisibilityEnum): Self = StObject.set(x, "getVisibility", js.Any.fromFunction0(value))
+    inline def setGetVisibility(value: () => GEVisibilityEnum): Self = StObject.set(x, "getVisibility", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetVisibility(value: GEVisibilityEnum => Unit): Self = StObject.set(x, "setVisibility", js.Any.fromFunction1(value))
+    inline def setSetVisibility(value: GEVisibilityEnum => Unit): Self = StObject.set(x, "setVisibility", js.Any.fromFunction1(value))
   }
 }

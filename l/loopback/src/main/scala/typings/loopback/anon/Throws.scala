@@ -12,19 +12,15 @@ trait Throws extends StObject {
 }
 object Throws {
   
-  @scala.inline
-  def apply(throws: Boolean, validate: Boolean): Throws = {
+  inline def apply(throws: Boolean, validate: Boolean): Throws = {
     val __obj = js.Dynamic.literal(throws = throws.asInstanceOf[js.Any], validate = validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Throws]
   }
   
-  @scala.inline
-  implicit class ThrowsMutableBuilder[Self <: Throws] (val x: Self) extends AnyVal {
+  extension [Self <: Throws](x: Self) {
     
-    @scala.inline
-    def setThrows(value: Boolean): Self = StObject.set(x, "throws", value.asInstanceOf[js.Any])
+    inline def setThrows(value: Boolean): Self = StObject.set(x, "throws", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
   }
 }

@@ -19,32 +19,24 @@ object srcListMod {
   }
   object ListResult {
     
-    @scala.inline
-    def apply(items: js.Array[Reference], prefixes: js.Array[Reference]): ListResult = {
+    inline def apply(items: js.Array[Reference], prefixes: js.Array[Reference]): ListResult = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], prefixes = prefixes.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListResult]
     }
     
-    @scala.inline
-    implicit class ListResultMutableBuilder[Self <: ListResult] (val x: Self) extends AnyVal {
+    extension [Self <: ListResult](x: Self) {
       
-      @scala.inline
-      def setItems(value: js.Array[Reference]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Reference]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: Reference*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Reference*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+      inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+      inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       
-      @scala.inline
-      def setPrefixes(value: js.Array[Reference]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
+      inline def setPrefixes(value: js.Array[Reference]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixesVarargs(value: Reference*): Self = StObject.set(x, "prefixes", js.Array(value :_*))
+      inline def setPrefixesVarargs(value: Reference*): Self = StObject.set(x, "prefixes", js.Array(value :_*))
     }
   }
 }

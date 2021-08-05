@@ -12,8 +12,6 @@ object setConnectionTimeoutMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setConnectionTimeout(request: ClientRequest, reject: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConnectionTimeout")(request.asInstanceOf[js.Any], reject.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setConnectionTimeout(request: ClientRequest, reject: js.Function1[/* err */ Error, Unit], timeoutInMs: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConnectionTimeout")(request.asInstanceOf[js.Any], reject.asInstanceOf[js.Any], timeoutInMs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setConnectionTimeout(request: ClientRequest, reject: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConnectionTimeout")(request.asInstanceOf[js.Any], reject.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setConnectionTimeout(request: ClientRequest, reject: js.Function1[/* err */ Error, Unit], timeoutInMs: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConnectionTimeout")(request.asInstanceOf[js.Any], reject.asInstanceOf[js.Any], timeoutInMs.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

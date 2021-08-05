@@ -15,16 +15,13 @@ trait PreDispatch[TTarget]
 }
 object PreDispatch {
   
-  @scala.inline
-  def apply[TTarget](preDispatch: Event => `false` | Unit): PreDispatch[TTarget] = {
+  inline def apply[TTarget](preDispatch: Event => `false` | Unit): PreDispatch[TTarget] = {
     val __obj = js.Dynamic.literal(preDispatch = js.Any.fromFunction1(preDispatch))
     __obj.asInstanceOf[PreDispatch[TTarget]]
   }
   
-  @scala.inline
-  implicit class PreDispatchMutableBuilder[Self <: PreDispatch[?], TTarget] (val x: Self & PreDispatch[TTarget]) extends AnyVal {
+  extension [Self <: PreDispatch[?], TTarget](x: Self & PreDispatch[TTarget]) {
     
-    @scala.inline
-    def setPreDispatch(value: Event => `false` | Unit): Self = StObject.set(x, "preDispatch", js.Any.fromFunction1(value))
+    inline def setPreDispatch(value: Event => `false` | Unit): Self = StObject.set(x, "preDispatch", js.Any.fromFunction1(value))
   }
 }

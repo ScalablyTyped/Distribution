@@ -25,8 +25,7 @@ object mod {
     *  // later
     *  OFF_DEATH();
     */
-  @scala.inline
-  def apply(callback: js.Function1[/* arg */ Signal, Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def apply(callback: js.Function1[/* arg */ Signal, Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   /**
     * Invokes a callback when a SIGINT, SIGTERM, or SIGQUIT is detected
     * on the current node process. Configurable by the provided options.
@@ -50,8 +49,7 @@ object mod {
     *  // later
     *  OFF_DEATH();
     */
-  @scala.inline
-  def apply(options: Debug): js.Function1[
+  inline def apply(options: Debug): js.Function1[
     /* callback */ js.Function2[/* signalOrErr */ Signal | Error, /* origin */ js.UndefOr[String], Unit], 
     js.Function0[Unit]
   ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -79,8 +77,7 @@ object mod {
     *  // later
     *  OFF_DEATH();
     */
-  @scala.inline
-  def apply(options: SIGINT): js.Function1[/* callback */ js.Function1[/* signal */ Signal, Unit], js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* callback */ js.Function1[/* signal */ Signal, Unit], js.Function0[Unit]]]
+  inline def apply(options: SIGINT): js.Function1[/* callback */ js.Function1[/* signal */ Signal, Unit], js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* callback */ js.Function1[/* signal */ Signal, Unit], js.Function0[Unit]]]
   
   @JSImport("death", JSImport.Namespace)
   @js.native
@@ -94,13 +91,10 @@ object mod {
   trait Signal extends StObject
   object Signal {
     
-    @scala.inline
-    def SIGINT: typings.death.deathStrings.SIGINT = "SIGINT".asInstanceOf[typings.death.deathStrings.SIGINT]
+    inline def SIGINT: typings.death.deathStrings.SIGINT = "SIGINT".asInstanceOf[typings.death.deathStrings.SIGINT]
     
-    @scala.inline
-    def SIGQUIT: typings.death.deathStrings.SIGQUIT = "SIGQUIT".asInstanceOf[typings.death.deathStrings.SIGQUIT]
+    inline def SIGQUIT: typings.death.deathStrings.SIGQUIT = "SIGQUIT".asInstanceOf[typings.death.deathStrings.SIGQUIT]
     
-    @scala.inline
-    def SIGTERM: typings.death.deathStrings.SIGTERM = "SIGTERM".asInstanceOf[typings.death.deathStrings.SIGTERM]
+    inline def SIGTERM: typings.death.deathStrings.SIGTERM = "SIGTERM".asInstanceOf[typings.death.deathStrings.SIGTERM]
   }
 }

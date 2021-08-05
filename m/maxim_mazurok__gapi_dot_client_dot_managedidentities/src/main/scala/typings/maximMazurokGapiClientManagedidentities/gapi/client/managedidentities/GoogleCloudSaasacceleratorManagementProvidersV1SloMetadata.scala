@@ -29,43 +29,31 @@ trait GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata extends StObjec
 }
 object GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata {
   
-  @scala.inline
-  def apply(): GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata = {
+  inline def apply(): GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudSaasacceleratorManagementProvidersV1SloMetadataMutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata](x: Self) {
     
-    @scala.inline
-    def setEligibility(value: GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility): Self = StObject.set(x, "eligibility", value.asInstanceOf[js.Any])
+    inline def setEligibility(value: GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility): Self = StObject.set(x, "eligibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEligibilityUndefined: Self = StObject.set(x, "eligibility", js.undefined)
+    inline def setEligibilityUndefined: Self = StObject.set(x, "eligibility", js.undefined)
     
-    @scala.inline
-    def setExclusions(value: js.Array[GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
+    inline def setExclusions(value: js.Array[GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
+    inline def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
     
-    @scala.inline
-    def setExclusionsVarargs(value: GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
+    inline def setExclusionsVarargs(value: GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
     
-    @scala.inline
-    def setNodes(value: js.Array[GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    @scala.inline
-    def setNodesVarargs(value: GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
+    inline def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
   }
 }

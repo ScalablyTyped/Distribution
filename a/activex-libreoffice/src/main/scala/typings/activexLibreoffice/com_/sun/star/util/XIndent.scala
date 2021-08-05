@@ -19,8 +19,7 @@ trait XIndent
 }
 object XIndent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     decrementIndent: () => Unit,
     incrementIndent: () => Unit,
@@ -31,13 +30,10 @@ object XIndent {
     __obj.asInstanceOf[XIndent]
   }
   
-  @scala.inline
-  implicit class XIndentMutableBuilder[Self <: XIndent] (val x: Self) extends AnyVal {
+  extension [Self <: XIndent](x: Self) {
     
-    @scala.inline
-    def setDecrementIndent(value: () => Unit): Self = StObject.set(x, "decrementIndent", js.Any.fromFunction0(value))
+    inline def setDecrementIndent(value: () => Unit): Self = StObject.set(x, "decrementIndent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIncrementIndent(value: () => Unit): Self = StObject.set(x, "incrementIndent", js.Any.fromFunction0(value))
+    inline def setIncrementIndent(value: () => Unit): Self = StObject.set(x, "incrementIndent", js.Any.fromFunction0(value))
   }
 }

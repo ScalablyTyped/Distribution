@@ -13,6 +13,5 @@ class IssuerSerial ()
   extends typings.xadesjs.xmlMod.IssuerSerial
 object IssuerSerial {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.IssuerSerial] = ^.asInstanceOf[js.Dynamic].selectDynamic("IssuerSerial").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.IssuerSerial]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.IssuerSerial] = ^.asInstanceOf[js.Dynamic].selectDynamic("IssuerSerial").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.IssuerSerial]]
 }

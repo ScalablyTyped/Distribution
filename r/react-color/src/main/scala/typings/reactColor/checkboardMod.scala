@@ -29,32 +29,24 @@ object checkboardMod {
   }
   object CheckboardProps {
     
-    @scala.inline
-    def apply(): CheckboardProps = {
+    inline def apply(): CheckboardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CheckboardProps]
     }
     
-    @scala.inline
-    implicit class CheckboardPropsMutableBuilder[Self <: CheckboardProps] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboardProps](x: Self) {
       
-      @scala.inline
-      def setGrey(value: String): Self = StObject.set(x, "grey", value.asInstanceOf[js.Any])
+      inline def setGrey(value: String): Self = StObject.set(x, "grey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreyUndefined: Self = StObject.set(x, "grey", js.undefined)
+      inline def setGreyUndefined: Self = StObject.set(x, "grey", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setWhite(value: String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+      inline def setWhite(value: String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteUndefined: Self = StObject.set(x, "white", js.undefined)
+      inline def setWhiteUndefined: Self = StObject.set(x, "white", js.undefined)
     }
   }
 }

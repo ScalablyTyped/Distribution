@@ -28,37 +28,27 @@ trait CanaryTimeline extends StObject {
 }
 object CanaryTimeline {
   
-  @scala.inline
-  def apply(): CanaryTimeline = {
+  inline def apply(): CanaryTimeline = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanaryTimeline]
   }
   
-  @scala.inline
-  implicit class CanaryTimelineMutableBuilder[Self <: CanaryTimeline] (val x: Self) extends AnyVal {
+  extension [Self <: CanaryTimeline](x: Self) {
     
-    @scala.inline
-    def setCreated(value: Timestamp): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Timestamp): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
     
-    @scala.inline
-    def setLastModified(value: Timestamp): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: Timestamp): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
-    @scala.inline
-    def setLastStarted(value: Timestamp): Self = StObject.set(x, "LastStarted", value.asInstanceOf[js.Any])
+    inline def setLastStarted(value: Timestamp): Self = StObject.set(x, "LastStarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStartedUndefined: Self = StObject.set(x, "LastStarted", js.undefined)
+    inline def setLastStartedUndefined: Self = StObject.set(x, "LastStarted", js.undefined)
     
-    @scala.inline
-    def setLastStopped(value: Timestamp): Self = StObject.set(x, "LastStopped", value.asInstanceOf[js.Any])
+    inline def setLastStopped(value: Timestamp): Self = StObject.set(x, "LastStopped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStoppedUndefined: Self = StObject.set(x, "LastStopped", js.undefined)
+    inline def setLastStoppedUndefined: Self = StObject.set(x, "LastStopped", js.undefined)
   }
 }

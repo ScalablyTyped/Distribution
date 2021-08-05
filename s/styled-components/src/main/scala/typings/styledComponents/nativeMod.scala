@@ -93,11 +93,9 @@ object nativeMod {
   @js.native
   val css: ThemedCssFunction[DefaultTheme] = js.native
   
-  @scala.inline
-  def isStyledComponent(target: js.Any): /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStyledComponent")(target.asInstanceOf[js.Any]).asInstanceOf[/* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean]
+  inline def isStyledComponent(target: js.Any): /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStyledComponent")(target.asInstanceOf[js.Any]).asInstanceOf[/* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean]
   
-  @scala.inline
-  def useTheme(): DefaultTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[DefaultTheme]
+  inline def useTheme(): DefaultTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[DefaultTheme]
   
   @JSImport("styled-components/native", "withTheme")
   @js.native
@@ -241,8 +239,7 @@ object nativeMod {
   }
   object ReactNativeThemedStyledComponentsModule {
     
-    @scala.inline
-    def apply[T /* <: js.Object */, U /* <: js.Object */](
+    inline def apply[T /* <: js.Object */, U /* <: js.Object */](
       ThemeConsumer: Consumer[T],
       ThemeContext: Context[T],
       ThemeProvider: ThemeProviderComponent[T, U],
@@ -261,34 +258,25 @@ object nativeMod {
       __obj.asInstanceOf[ReactNativeThemedStyledComponentsModule[T, U]]
     }
     
-    @scala.inline
-    implicit class ReactNativeThemedStyledComponentsModuleMutableBuilder[Self <: ReactNativeThemedStyledComponentsModule[?, ?], T /* <: js.Object */, U /* <: js.Object */] (val x: Self & (ReactNativeThemedStyledComponentsModule[T, U])) extends AnyVal {
+    extension [Self <: ReactNativeThemedStyledComponentsModule[?, ?], T /* <: js.Object */, U /* <: js.Object */](x: Self & (ReactNativeThemedStyledComponentsModule[T, U])) {
       
-      @scala.inline
-      def setCss(value: ThemedCssFunction[T]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: ThemedCssFunction[T]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault(value: ReactNativeStyledInterface[T]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: ReactNativeStyledInterface[T]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsStyledComponent(
+      inline def setIsStyledComponent(
         value: /* target */ js.Any => /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean
       ): Self = StObject.set(x, "isStyledComponent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setThemeConsumer(value: Consumer[T]): Self = StObject.set(x, "ThemeConsumer", value.asInstanceOf[js.Any])
+      inline def setThemeConsumer(value: Consumer[T]): Self = StObject.set(x, "ThemeConsumer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeContext(value: Context[T]): Self = StObject.set(x, "ThemeContext", value.asInstanceOf[js.Any])
+      inline def setThemeContext(value: Context[T]): Self = StObject.set(x, "ThemeContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeProvider(value: ThemeProviderComponent[T, U]): Self = StObject.set(x, "ThemeProvider", value.asInstanceOf[js.Any])
+      inline def setThemeProvider(value: ThemeProviderComponent[T, U]): Self = StObject.set(x, "ThemeProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseTheme(value: () => T): Self = StObject.set(x, "useTheme", js.Any.fromFunction0(value))
+      inline def setUseTheme(value: () => T): Self = StObject.set(x, "useTheme", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWithTheme(
+      inline def setWithTheme(
         value: /* component */ ComponentType[js.Any] => ForwardRefExoticComponent[
               WithOptionalTheme[
                 ComponentPropsWithRef[ComponentType[js.Any]], 

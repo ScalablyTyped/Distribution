@@ -26,8 +26,7 @@ trait AnalyticsApplicationInputsSchema extends StObject {
 }
 object AnalyticsApplicationInputsSchema {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     recordColumns: Input[js.Array[Input[AnalyticsApplicationInputsSchemaRecordColumn]]],
     recordFormat: Input[AnalyticsApplicationInputsSchemaRecordFormat]
   ): AnalyticsApplicationInputsSchema = {
@@ -35,22 +34,16 @@ object AnalyticsApplicationInputsSchema {
     __obj.asInstanceOf[AnalyticsApplicationInputsSchema]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationInputsSchemaMutableBuilder[Self <: AnalyticsApplicationInputsSchema] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationInputsSchema](x: Self) {
     
-    @scala.inline
-    def setRecordColumns(value: Input[js.Array[Input[AnalyticsApplicationInputsSchemaRecordColumn]]]): Self = StObject.set(x, "recordColumns", value.asInstanceOf[js.Any])
+    inline def setRecordColumns(value: Input[js.Array[Input[AnalyticsApplicationInputsSchemaRecordColumn]]]): Self = StObject.set(x, "recordColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordColumnsVarargs(value: Input[AnalyticsApplicationInputsSchemaRecordColumn]*): Self = StObject.set(x, "recordColumns", js.Array(value :_*))
+    inline def setRecordColumnsVarargs(value: Input[AnalyticsApplicationInputsSchemaRecordColumn]*): Self = StObject.set(x, "recordColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setRecordEncoding(value: Input[String]): Self = StObject.set(x, "recordEncoding", value.asInstanceOf[js.Any])
+    inline def setRecordEncoding(value: Input[String]): Self = StObject.set(x, "recordEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordEncodingUndefined: Self = StObject.set(x, "recordEncoding", js.undefined)
+    inline def setRecordEncodingUndefined: Self = StObject.set(x, "recordEncoding", js.undefined)
     
-    @scala.inline
-    def setRecordFormat(value: Input[AnalyticsApplicationInputsSchemaRecordFormat]): Self = StObject.set(x, "recordFormat", value.asInstanceOf[js.Any])
+    inline def setRecordFormat(value: Input[AnalyticsApplicationInputsSchemaRecordFormat]): Self = StObject.set(x, "recordFormat", value.asInstanceOf[js.Any])
   }
 }

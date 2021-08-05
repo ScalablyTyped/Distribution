@@ -14,31 +14,23 @@ trait SessionSendDtmfOptions extends StObject {
 }
 object SessionSendDtmfOptions {
   
-  @scala.inline
-  def apply(interToneGap: Double): SessionSendDtmfOptions = {
+  inline def apply(interToneGap: Double): SessionSendDtmfOptions = {
     val __obj = js.Dynamic.literal(interToneGap = interToneGap.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionSendDtmfOptions]
   }
   
-  @scala.inline
-  implicit class SessionSendDtmfOptionsMutableBuilder[Self <: SessionSendDtmfOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SessionSendDtmfOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+    inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+    inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
     
-    @scala.inline
-    def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+    inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setInterToneGap(value: Double): Self = StObject.set(x, "interToneGap", value.asInstanceOf[js.Any])
+    inline def setInterToneGap(value: Double): Self = StObject.set(x, "interToneGap", value.asInstanceOf[js.Any])
   }
 }

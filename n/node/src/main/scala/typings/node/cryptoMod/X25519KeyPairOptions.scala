@@ -14,8 +14,7 @@ trait X25519KeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] ex
 }
 object X25519KeyPairOptions {
   
-  @scala.inline
-  def apply[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](
+  inline def apply[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](
     privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] & `0`,
     publicKeyEncoding: FormatType[PubF]
   ): X25519KeyPairOptions[PubF, PrivF] = {
@@ -23,13 +22,10 @@ object X25519KeyPairOptions {
     __obj.asInstanceOf[X25519KeyPairOptions[PubF, PrivF]]
   }
   
-  @scala.inline
-  implicit class X25519KeyPairOptionsMutableBuilder[Self <: X25519KeyPairOptions[?, ?], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] (val x: Self & (X25519KeyPairOptions[PubF, PrivF])) extends AnyVal {
+  extension [Self <: X25519KeyPairOptions[?, ?], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](x: Self & (X25519KeyPairOptions[PubF, PrivF])) {
     
-    @scala.inline
-    def setPrivateKeyEncoding(value: BasePrivateKeyEncodingOptions[PrivF] & `0`): Self = StObject.set(x, "privateKeyEncoding", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyEncoding(value: BasePrivateKeyEncodingOptions[PrivF] & `0`): Self = StObject.set(x, "privateKeyEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyEncoding(value: FormatType[PubF]): Self = StObject.set(x, "publicKeyEncoding", value.asInstanceOf[js.Any])
+    inline def setPublicKeyEncoding(value: FormatType[PubF]): Self = StObject.set(x, "publicKeyEncoding", value.asInstanceOf[js.Any])
   }
 }

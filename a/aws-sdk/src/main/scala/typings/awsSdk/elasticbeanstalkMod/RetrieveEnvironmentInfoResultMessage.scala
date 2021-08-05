@@ -13,22 +13,17 @@ trait RetrieveEnvironmentInfoResultMessage extends StObject {
 }
 object RetrieveEnvironmentInfoResultMessage {
   
-  @scala.inline
-  def apply(): RetrieveEnvironmentInfoResultMessage = {
+  inline def apply(): RetrieveEnvironmentInfoResultMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetrieveEnvironmentInfoResultMessage]
   }
   
-  @scala.inline
-  implicit class RetrieveEnvironmentInfoResultMessageMutableBuilder[Self <: RetrieveEnvironmentInfoResultMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RetrieveEnvironmentInfoResultMessage](x: Self) {
     
-    @scala.inline
-    def setEnvironmentInfo(value: EnvironmentInfoDescriptionList): Self = StObject.set(x, "EnvironmentInfo", value.asInstanceOf[js.Any])
+    inline def setEnvironmentInfo(value: EnvironmentInfoDescriptionList): Self = StObject.set(x, "EnvironmentInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentInfoUndefined: Self = StObject.set(x, "EnvironmentInfo", js.undefined)
+    inline def setEnvironmentInfoUndefined: Self = StObject.set(x, "EnvironmentInfo", js.undefined)
     
-    @scala.inline
-    def setEnvironmentInfoVarargs(value: EnvironmentInfoDescription*): Self = StObject.set(x, "EnvironmentInfo", js.Array(value :_*))
+    inline def setEnvironmentInfoVarargs(value: EnvironmentInfoDescription*): Self = StObject.set(x, "EnvironmentInfo", js.Array(value :_*))
   }
 }

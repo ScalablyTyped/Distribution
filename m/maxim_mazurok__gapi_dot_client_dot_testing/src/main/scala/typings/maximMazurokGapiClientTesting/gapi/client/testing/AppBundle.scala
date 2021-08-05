@@ -11,19 +11,15 @@ trait AppBundle extends StObject {
 }
 object AppBundle {
   
-  @scala.inline
-  def apply(): AppBundle = {
+  inline def apply(): AppBundle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppBundle]
   }
   
-  @scala.inline
-  implicit class AppBundleMutableBuilder[Self <: AppBundle] (val x: Self) extends AnyVal {
+  extension [Self <: AppBundle](x: Self) {
     
-    @scala.inline
-    def setBundleLocation(value: FileReference): Self = StObject.set(x, "bundleLocation", value.asInstanceOf[js.Any])
+    inline def setBundleLocation(value: FileReference): Self = StObject.set(x, "bundleLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleLocationUndefined: Self = StObject.set(x, "bundleLocation", js.undefined)
+    inline def setBundleLocationUndefined: Self = StObject.set(x, "bundleLocation", js.undefined)
   }
 }

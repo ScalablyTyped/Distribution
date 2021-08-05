@@ -55,8 +55,7 @@ trait IDateTimeFormatterFactory extends StObject {
 }
 object IDateTimeFormatterFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createDateTimeFormatter: String => DateTimeFormatter,
     createDateTimeFormatterContext: (String, IIterable[String], String, String, String) => DateTimeFormatter,
     createDateTimeFormatterDate: (YearFormat, MonthFormat, DayFormat, DayOfWeekFormat) => DateTimeFormatter,
@@ -69,32 +68,24 @@ object IDateTimeFormatterFactory {
     __obj.asInstanceOf[IDateTimeFormatterFactory]
   }
   
-  @scala.inline
-  implicit class IDateTimeFormatterFactoryMutableBuilder[Self <: IDateTimeFormatterFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IDateTimeFormatterFactory](x: Self) {
     
-    @scala.inline
-    def setCreateDateTimeFormatter(value: String => DateTimeFormatter): Self = StObject.set(x, "createDateTimeFormatter", js.Any.fromFunction1(value))
+    inline def setCreateDateTimeFormatter(value: String => DateTimeFormatter): Self = StObject.set(x, "createDateTimeFormatter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateDateTimeFormatterContext(value: (String, IIterable[String], String, String, String) => DateTimeFormatter): Self = StObject.set(x, "createDateTimeFormatterContext", js.Any.fromFunction5(value))
+    inline def setCreateDateTimeFormatterContext(value: (String, IIterable[String], String, String, String) => DateTimeFormatter): Self = StObject.set(x, "createDateTimeFormatterContext", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setCreateDateTimeFormatterDate(value: (YearFormat, MonthFormat, DayFormat, DayOfWeekFormat) => DateTimeFormatter): Self = StObject.set(x, "createDateTimeFormatterDate", js.Any.fromFunction4(value))
+    inline def setCreateDateTimeFormatterDate(value: (YearFormat, MonthFormat, DayFormat, DayOfWeekFormat) => DateTimeFormatter): Self = StObject.set(x, "createDateTimeFormatterDate", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCreateDateTimeFormatterDateTimeContext(
+    inline def setCreateDateTimeFormatterDateTimeContext(
       value: (YearFormat, MonthFormat, DayFormat, DayOfWeekFormat, HourFormat, MinuteFormat, SecondFormat, IIterable[String], String, String, String) => DateTimeFormatter
     ): Self = StObject.set(x, "createDateTimeFormatterDateTimeContext", js.Any.fromFunction11(value))
     
-    @scala.inline
-    def setCreateDateTimeFormatterDateTimeLanguages(
+    inline def setCreateDateTimeFormatterDateTimeLanguages(
       value: (YearFormat, MonthFormat, DayFormat, DayOfWeekFormat, HourFormat, MinuteFormat, SecondFormat, IIterable[String]) => DateTimeFormatter
     ): Self = StObject.set(x, "createDateTimeFormatterDateTimeLanguages", js.Any.fromFunction8(value))
     
-    @scala.inline
-    def setCreateDateTimeFormatterLanguages(value: (String, IIterable[String]) => DateTimeFormatter): Self = StObject.set(x, "createDateTimeFormatterLanguages", js.Any.fromFunction2(value))
+    inline def setCreateDateTimeFormatterLanguages(value: (String, IIterable[String]) => DateTimeFormatter): Self = StObject.set(x, "createDateTimeFormatterLanguages", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateDateTimeFormatterTime(value: (HourFormat, MinuteFormat, SecondFormat) => DateTimeFormatter): Self = StObject.set(x, "createDateTimeFormatterTime", js.Any.fromFunction3(value))
+    inline def setCreateDateTimeFormatterTime(value: (HourFormat, MinuteFormat, SecondFormat) => DateTimeFormatter): Self = StObject.set(x, "createDateTimeFormatterTime", js.Any.fromFunction3(value))
   }
 }

@@ -22,25 +22,19 @@ trait SchemaTermsAndConditions extends StObject {
 }
 object SchemaTermsAndConditions {
   
-  @scala.inline
-  def apply(): SchemaTermsAndConditions = {
+  inline def apply(): SchemaTermsAndConditions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTermsAndConditions]
   }
   
-  @scala.inline
-  implicit class SchemaTermsAndConditionsMutableBuilder[Self <: SchemaTermsAndConditions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTermsAndConditions](x: Self) {
     
-    @scala.inline
-    def setContent(value: SchemaUserFacingMessage): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: SchemaUserFacingMessage): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setHeader(value: SchemaUserFacingMessage): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: SchemaUserFacingMessage): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
   }
 }

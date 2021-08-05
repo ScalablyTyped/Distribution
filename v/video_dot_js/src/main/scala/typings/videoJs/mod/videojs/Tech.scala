@@ -421,23 +421,18 @@ object Tech {
   }
   object SourceObject {
     
-    @scala.inline
-    def apply(src: String): SourceObject = {
+    inline def apply(src: String): SourceObject = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceObject]
     }
     
-    @scala.inline
-    implicit class SourceObjectMutableBuilder[Self <: SourceObject] (val x: Self) extends AnyVal {
+    extension [Self <: SourceObject](x: Self) {
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

@@ -13,16 +13,13 @@ trait DescribeIdentityProviderConfigurationRequest extends StObject {
 }
 object DescribeIdentityProviderConfigurationRequest {
   
-  @scala.inline
-  def apply(FleetArn: FleetArn): DescribeIdentityProviderConfigurationRequest = {
+  inline def apply(FleetArn: FleetArn): DescribeIdentityProviderConfigurationRequest = {
     val __obj = js.Dynamic.literal(FleetArn = FleetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeIdentityProviderConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeIdentityProviderConfigurationRequestMutableBuilder[Self <: DescribeIdentityProviderConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIdentityProviderConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
+    inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
   }
 }

@@ -282,8 +282,7 @@ object mod {
   }
   object BackgroundColor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bgBlack: CSPair,
       bgBlackBright: CSPair,
       bgBlue: CSPair,
@@ -307,62 +306,43 @@ object mod {
       __obj.asInstanceOf[BackgroundColor]
     }
     
-    @scala.inline
-    implicit class BackgroundColorMutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
+    extension [Self <: BackgroundColor](x: Self) {
       
-      @scala.inline
-      def setBgBlack(value: CSPair): Self = StObject.set(x, "bgBlack", value.asInstanceOf[js.Any])
+      inline def setBgBlack(value: CSPair): Self = StObject.set(x, "bgBlack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgBlackBright(value: CSPair): Self = StObject.set(x, "bgBlackBright", value.asInstanceOf[js.Any])
+      inline def setBgBlackBright(value: CSPair): Self = StObject.set(x, "bgBlackBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgBlue(value: CSPair): Self = StObject.set(x, "bgBlue", value.asInstanceOf[js.Any])
+      inline def setBgBlue(value: CSPair): Self = StObject.set(x, "bgBlue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgBlueBright(value: CSPair): Self = StObject.set(x, "bgBlueBright", value.asInstanceOf[js.Any])
+      inline def setBgBlueBright(value: CSPair): Self = StObject.set(x, "bgBlueBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgCyan(value: CSPair): Self = StObject.set(x, "bgCyan", value.asInstanceOf[js.Any])
+      inline def setBgCyan(value: CSPair): Self = StObject.set(x, "bgCyan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgCyanBright(value: CSPair): Self = StObject.set(x, "bgCyanBright", value.asInstanceOf[js.Any])
+      inline def setBgCyanBright(value: CSPair): Self = StObject.set(x, "bgCyanBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgGray(value: CSPair): Self = StObject.set(x, "bgGray", value.asInstanceOf[js.Any])
+      inline def setBgGray(value: CSPair): Self = StObject.set(x, "bgGray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgGreen(value: CSPair): Self = StObject.set(x, "bgGreen", value.asInstanceOf[js.Any])
+      inline def setBgGreen(value: CSPair): Self = StObject.set(x, "bgGreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgGreenBright(value: CSPair): Self = StObject.set(x, "bgGreenBright", value.asInstanceOf[js.Any])
+      inline def setBgGreenBright(value: CSPair): Self = StObject.set(x, "bgGreenBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgGrey(value: CSPair): Self = StObject.set(x, "bgGrey", value.asInstanceOf[js.Any])
+      inline def setBgGrey(value: CSPair): Self = StObject.set(x, "bgGrey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgMagenta(value: CSPair): Self = StObject.set(x, "bgMagenta", value.asInstanceOf[js.Any])
+      inline def setBgMagenta(value: CSPair): Self = StObject.set(x, "bgMagenta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgMagentaBright(value: CSPair): Self = StObject.set(x, "bgMagentaBright", value.asInstanceOf[js.Any])
+      inline def setBgMagentaBright(value: CSPair): Self = StObject.set(x, "bgMagentaBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgRed(value: CSPair): Self = StObject.set(x, "bgRed", value.asInstanceOf[js.Any])
+      inline def setBgRed(value: CSPair): Self = StObject.set(x, "bgRed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgRedBright(value: CSPair): Self = StObject.set(x, "bgRedBright", value.asInstanceOf[js.Any])
+      inline def setBgRedBright(value: CSPair): Self = StObject.set(x, "bgRedBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgWhite(value: CSPair): Self = StObject.set(x, "bgWhite", value.asInstanceOf[js.Any])
+      inline def setBgWhite(value: CSPair): Self = StObject.set(x, "bgWhite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgWhiteBright(value: CSPair): Self = StObject.set(x, "bgWhiteBright", value.asInstanceOf[js.Any])
+      inline def setBgWhiteBright(value: CSPair): Self = StObject.set(x, "bgWhiteBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgYellow(value: CSPair): Self = StObject.set(x, "bgYellow", value.asInstanceOf[js.Any])
+      inline def setBgYellow(value: CSPair): Self = StObject.set(x, "bgYellow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgYellowBright(value: CSPair): Self = StObject.set(x, "bgYellowBright", value.asInstanceOf[js.Any])
+      inline def setBgYellowBright(value: CSPair): Self = StObject.set(x, "bgYellowBright", value.asInstanceOf[js.Any])
     }
   }
   
@@ -380,20 +360,16 @@ object mod {
   }
   object CSPair {
     
-    @scala.inline
-    def apply(close: String, open: String): CSPair = {
+    inline def apply(close: String, open: String): CSPair = {
       val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
       __obj.asInstanceOf[CSPair]
     }
     
-    @scala.inline
-    implicit class CSPairMutableBuilder[Self <: CSPair] (val x: Self) extends AnyVal {
+    extension [Self <: CSPair](x: Self) {
       
-      @scala.inline
-      def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     }
   }
   
@@ -550,449 +526,301 @@ object mod {
   trait CSSColor extends StObject
   object CSSColor {
     
-    @scala.inline
-    def aliceblue: typings.ansiStyles.ansiStylesStrings.aliceblue = "aliceblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.aliceblue]
+    inline def aliceblue: typings.ansiStyles.ansiStylesStrings.aliceblue = "aliceblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.aliceblue]
     
-    @scala.inline
-    def antiquewhite: typings.ansiStyles.ansiStylesStrings.antiquewhite = "antiquewhite".asInstanceOf[typings.ansiStyles.ansiStylesStrings.antiquewhite]
+    inline def antiquewhite: typings.ansiStyles.ansiStylesStrings.antiquewhite = "antiquewhite".asInstanceOf[typings.ansiStyles.ansiStylesStrings.antiquewhite]
     
-    @scala.inline
-    def aqua: typings.ansiStyles.ansiStylesStrings.aqua = "aqua".asInstanceOf[typings.ansiStyles.ansiStylesStrings.aqua]
+    inline def aqua: typings.ansiStyles.ansiStylesStrings.aqua = "aqua".asInstanceOf[typings.ansiStyles.ansiStylesStrings.aqua]
     
-    @scala.inline
-    def aquamarine: typings.ansiStyles.ansiStylesStrings.aquamarine = "aquamarine".asInstanceOf[typings.ansiStyles.ansiStylesStrings.aquamarine]
+    inline def aquamarine: typings.ansiStyles.ansiStylesStrings.aquamarine = "aquamarine".asInstanceOf[typings.ansiStyles.ansiStylesStrings.aquamarine]
     
-    @scala.inline
-    def azure: typings.ansiStyles.ansiStylesStrings.azure = "azure".asInstanceOf[typings.ansiStyles.ansiStylesStrings.azure]
+    inline def azure: typings.ansiStyles.ansiStylesStrings.azure = "azure".asInstanceOf[typings.ansiStyles.ansiStylesStrings.azure]
     
-    @scala.inline
-    def beige: typings.ansiStyles.ansiStylesStrings.beige = "beige".asInstanceOf[typings.ansiStyles.ansiStylesStrings.beige]
+    inline def beige: typings.ansiStyles.ansiStylesStrings.beige = "beige".asInstanceOf[typings.ansiStyles.ansiStylesStrings.beige]
     
-    @scala.inline
-    def bisque: typings.ansiStyles.ansiStylesStrings.bisque = "bisque".asInstanceOf[typings.ansiStyles.ansiStylesStrings.bisque]
+    inline def bisque: typings.ansiStyles.ansiStylesStrings.bisque = "bisque".asInstanceOf[typings.ansiStyles.ansiStylesStrings.bisque]
     
-    @scala.inline
-    def black: typings.ansiStyles.ansiStylesStrings.black = "black".asInstanceOf[typings.ansiStyles.ansiStylesStrings.black]
+    inline def black: typings.ansiStyles.ansiStylesStrings.black = "black".asInstanceOf[typings.ansiStyles.ansiStylesStrings.black]
     
-    @scala.inline
-    def blanchedalmond: typings.ansiStyles.ansiStylesStrings.blanchedalmond = "blanchedalmond".asInstanceOf[typings.ansiStyles.ansiStylesStrings.blanchedalmond]
+    inline def blanchedalmond: typings.ansiStyles.ansiStylesStrings.blanchedalmond = "blanchedalmond".asInstanceOf[typings.ansiStyles.ansiStylesStrings.blanchedalmond]
     
-    @scala.inline
-    def blue: typings.ansiStyles.ansiStylesStrings.blue = "blue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.blue]
+    inline def blue: typings.ansiStyles.ansiStylesStrings.blue = "blue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.blue]
     
-    @scala.inline
-    def blueviolet: typings.ansiStyles.ansiStylesStrings.blueviolet = "blueviolet".asInstanceOf[typings.ansiStyles.ansiStylesStrings.blueviolet]
+    inline def blueviolet: typings.ansiStyles.ansiStylesStrings.blueviolet = "blueviolet".asInstanceOf[typings.ansiStyles.ansiStylesStrings.blueviolet]
     
-    @scala.inline
-    def brown: typings.ansiStyles.ansiStylesStrings.brown = "brown".asInstanceOf[typings.ansiStyles.ansiStylesStrings.brown]
+    inline def brown: typings.ansiStyles.ansiStylesStrings.brown = "brown".asInstanceOf[typings.ansiStyles.ansiStylesStrings.brown]
     
-    @scala.inline
-    def burlywood: typings.ansiStyles.ansiStylesStrings.burlywood = "burlywood".asInstanceOf[typings.ansiStyles.ansiStylesStrings.burlywood]
+    inline def burlywood: typings.ansiStyles.ansiStylesStrings.burlywood = "burlywood".asInstanceOf[typings.ansiStyles.ansiStylesStrings.burlywood]
     
-    @scala.inline
-    def cadetblue: typings.ansiStyles.ansiStylesStrings.cadetblue = "cadetblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.cadetblue]
+    inline def cadetblue: typings.ansiStyles.ansiStylesStrings.cadetblue = "cadetblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.cadetblue]
     
-    @scala.inline
-    def chartreuse: typings.ansiStyles.ansiStylesStrings.chartreuse = "chartreuse".asInstanceOf[typings.ansiStyles.ansiStylesStrings.chartreuse]
+    inline def chartreuse: typings.ansiStyles.ansiStylesStrings.chartreuse = "chartreuse".asInstanceOf[typings.ansiStyles.ansiStylesStrings.chartreuse]
     
-    @scala.inline
-    def chocolate: typings.ansiStyles.ansiStylesStrings.chocolate = "chocolate".asInstanceOf[typings.ansiStyles.ansiStylesStrings.chocolate]
+    inline def chocolate: typings.ansiStyles.ansiStylesStrings.chocolate = "chocolate".asInstanceOf[typings.ansiStyles.ansiStylesStrings.chocolate]
     
-    @scala.inline
-    def coral: typings.ansiStyles.ansiStylesStrings.coral = "coral".asInstanceOf[typings.ansiStyles.ansiStylesStrings.coral]
+    inline def coral: typings.ansiStyles.ansiStylesStrings.coral = "coral".asInstanceOf[typings.ansiStyles.ansiStylesStrings.coral]
     
-    @scala.inline
-    def cornflowerblue: typings.ansiStyles.ansiStylesStrings.cornflowerblue = "cornflowerblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.cornflowerblue]
+    inline def cornflowerblue: typings.ansiStyles.ansiStylesStrings.cornflowerblue = "cornflowerblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.cornflowerblue]
     
-    @scala.inline
-    def cornsilk: typings.ansiStyles.ansiStylesStrings.cornsilk = "cornsilk".asInstanceOf[typings.ansiStyles.ansiStylesStrings.cornsilk]
+    inline def cornsilk: typings.ansiStyles.ansiStylesStrings.cornsilk = "cornsilk".asInstanceOf[typings.ansiStyles.ansiStylesStrings.cornsilk]
     
-    @scala.inline
-    def crimson: typings.ansiStyles.ansiStylesStrings.crimson = "crimson".asInstanceOf[typings.ansiStyles.ansiStylesStrings.crimson]
+    inline def crimson: typings.ansiStyles.ansiStylesStrings.crimson = "crimson".asInstanceOf[typings.ansiStyles.ansiStylesStrings.crimson]
     
-    @scala.inline
-    def cyan: typings.ansiStyles.ansiStylesStrings.cyan = "cyan".asInstanceOf[typings.ansiStyles.ansiStylesStrings.cyan]
+    inline def cyan: typings.ansiStyles.ansiStylesStrings.cyan = "cyan".asInstanceOf[typings.ansiStyles.ansiStylesStrings.cyan]
     
-    @scala.inline
-    def darkblue: typings.ansiStyles.ansiStylesStrings.darkblue = "darkblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkblue]
+    inline def darkblue: typings.ansiStyles.ansiStylesStrings.darkblue = "darkblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkblue]
     
-    @scala.inline
-    def darkcyan: typings.ansiStyles.ansiStylesStrings.darkcyan = "darkcyan".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkcyan]
+    inline def darkcyan: typings.ansiStyles.ansiStylesStrings.darkcyan = "darkcyan".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkcyan]
     
-    @scala.inline
-    def darkgoldenrod: typings.ansiStyles.ansiStylesStrings.darkgoldenrod = "darkgoldenrod".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkgoldenrod]
+    inline def darkgoldenrod: typings.ansiStyles.ansiStylesStrings.darkgoldenrod = "darkgoldenrod".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkgoldenrod]
     
-    @scala.inline
-    def darkgray: typings.ansiStyles.ansiStylesStrings.darkgray = "darkgray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkgray]
+    inline def darkgray: typings.ansiStyles.ansiStylesStrings.darkgray = "darkgray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkgray]
     
-    @scala.inline
-    def darkgreen: typings.ansiStyles.ansiStylesStrings.darkgreen = "darkgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkgreen]
+    inline def darkgreen: typings.ansiStyles.ansiStylesStrings.darkgreen = "darkgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkgreen]
     
-    @scala.inline
-    def darkgrey: typings.ansiStyles.ansiStylesStrings.darkgrey = "darkgrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkgrey]
+    inline def darkgrey: typings.ansiStyles.ansiStylesStrings.darkgrey = "darkgrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkgrey]
     
-    @scala.inline
-    def darkkhaki: typings.ansiStyles.ansiStylesStrings.darkkhaki = "darkkhaki".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkkhaki]
+    inline def darkkhaki: typings.ansiStyles.ansiStylesStrings.darkkhaki = "darkkhaki".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkkhaki]
     
-    @scala.inline
-    def darkmagenta: typings.ansiStyles.ansiStylesStrings.darkmagenta = "darkmagenta".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkmagenta]
+    inline def darkmagenta: typings.ansiStyles.ansiStylesStrings.darkmagenta = "darkmagenta".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkmagenta]
     
-    @scala.inline
-    def darkolivegreen: typings.ansiStyles.ansiStylesStrings.darkolivegreen = "darkolivegreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkolivegreen]
+    inline def darkolivegreen: typings.ansiStyles.ansiStylesStrings.darkolivegreen = "darkolivegreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkolivegreen]
     
-    @scala.inline
-    def darkorange: typings.ansiStyles.ansiStylesStrings.darkorange = "darkorange".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkorange]
+    inline def darkorange: typings.ansiStyles.ansiStylesStrings.darkorange = "darkorange".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkorange]
     
-    @scala.inline
-    def darkorchid: typings.ansiStyles.ansiStylesStrings.darkorchid = "darkorchid".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkorchid]
+    inline def darkorchid: typings.ansiStyles.ansiStylesStrings.darkorchid = "darkorchid".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkorchid]
     
-    @scala.inline
-    def darkred: typings.ansiStyles.ansiStylesStrings.darkred = "darkred".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkred]
+    inline def darkred: typings.ansiStyles.ansiStylesStrings.darkred = "darkred".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkred]
     
-    @scala.inline
-    def darksalmon: typings.ansiStyles.ansiStylesStrings.darksalmon = "darksalmon".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darksalmon]
+    inline def darksalmon: typings.ansiStyles.ansiStylesStrings.darksalmon = "darksalmon".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darksalmon]
     
-    @scala.inline
-    def darkseagreen: typings.ansiStyles.ansiStylesStrings.darkseagreen = "darkseagreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkseagreen]
+    inline def darkseagreen: typings.ansiStyles.ansiStylesStrings.darkseagreen = "darkseagreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkseagreen]
     
-    @scala.inline
-    def darkslateblue: typings.ansiStyles.ansiStylesStrings.darkslateblue = "darkslateblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkslateblue]
+    inline def darkslateblue: typings.ansiStyles.ansiStylesStrings.darkslateblue = "darkslateblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkslateblue]
     
-    @scala.inline
-    def darkslategray: typings.ansiStyles.ansiStylesStrings.darkslategray = "darkslategray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkslategray]
+    inline def darkslategray: typings.ansiStyles.ansiStylesStrings.darkslategray = "darkslategray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkslategray]
     
-    @scala.inline
-    def darkslategrey: typings.ansiStyles.ansiStylesStrings.darkslategrey = "darkslategrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkslategrey]
+    inline def darkslategrey: typings.ansiStyles.ansiStylesStrings.darkslategrey = "darkslategrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkslategrey]
     
-    @scala.inline
-    def darkturquoise: typings.ansiStyles.ansiStylesStrings.darkturquoise = "darkturquoise".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkturquoise]
+    inline def darkturquoise: typings.ansiStyles.ansiStylesStrings.darkturquoise = "darkturquoise".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkturquoise]
     
-    @scala.inline
-    def darkviolet: typings.ansiStyles.ansiStylesStrings.darkviolet = "darkviolet".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkviolet]
+    inline def darkviolet: typings.ansiStyles.ansiStylesStrings.darkviolet = "darkviolet".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkviolet]
     
-    @scala.inline
-    def deeppink: typings.ansiStyles.ansiStylesStrings.deeppink = "deeppink".asInstanceOf[typings.ansiStyles.ansiStylesStrings.deeppink]
+    inline def deeppink: typings.ansiStyles.ansiStylesStrings.deeppink = "deeppink".asInstanceOf[typings.ansiStyles.ansiStylesStrings.deeppink]
     
-    @scala.inline
-    def deepskyblue: typings.ansiStyles.ansiStylesStrings.deepskyblue = "deepskyblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.deepskyblue]
+    inline def deepskyblue: typings.ansiStyles.ansiStylesStrings.deepskyblue = "deepskyblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.deepskyblue]
     
-    @scala.inline
-    def dimgray: typings.ansiStyles.ansiStylesStrings.dimgray = "dimgray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.dimgray]
+    inline def dimgray: typings.ansiStyles.ansiStylesStrings.dimgray = "dimgray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.dimgray]
     
-    @scala.inline
-    def dimgrey: typings.ansiStyles.ansiStylesStrings.dimgrey = "dimgrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.dimgrey]
+    inline def dimgrey: typings.ansiStyles.ansiStylesStrings.dimgrey = "dimgrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.dimgrey]
     
-    @scala.inline
-    def dodgerblue: typings.ansiStyles.ansiStylesStrings.dodgerblue = "dodgerblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.dodgerblue]
+    inline def dodgerblue: typings.ansiStyles.ansiStylesStrings.dodgerblue = "dodgerblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.dodgerblue]
     
-    @scala.inline
-    def firebrick: typings.ansiStyles.ansiStylesStrings.firebrick = "firebrick".asInstanceOf[typings.ansiStyles.ansiStylesStrings.firebrick]
+    inline def firebrick: typings.ansiStyles.ansiStylesStrings.firebrick = "firebrick".asInstanceOf[typings.ansiStyles.ansiStylesStrings.firebrick]
     
-    @scala.inline
-    def floralwhite: typings.ansiStyles.ansiStylesStrings.floralwhite = "floralwhite".asInstanceOf[typings.ansiStyles.ansiStylesStrings.floralwhite]
+    inline def floralwhite: typings.ansiStyles.ansiStylesStrings.floralwhite = "floralwhite".asInstanceOf[typings.ansiStyles.ansiStylesStrings.floralwhite]
     
-    @scala.inline
-    def forestgreen: typings.ansiStyles.ansiStylesStrings.forestgreen = "forestgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.forestgreen]
+    inline def forestgreen: typings.ansiStyles.ansiStylesStrings.forestgreen = "forestgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.forestgreen]
     
-    @scala.inline
-    def fuchsia: typings.ansiStyles.ansiStylesStrings.fuchsia = "fuchsia".asInstanceOf[typings.ansiStyles.ansiStylesStrings.fuchsia]
+    inline def fuchsia: typings.ansiStyles.ansiStylesStrings.fuchsia = "fuchsia".asInstanceOf[typings.ansiStyles.ansiStylesStrings.fuchsia]
     
-    @scala.inline
-    def gainsboro: typings.ansiStyles.ansiStylesStrings.gainsboro = "gainsboro".asInstanceOf[typings.ansiStyles.ansiStylesStrings.gainsboro]
+    inline def gainsboro: typings.ansiStyles.ansiStylesStrings.gainsboro = "gainsboro".asInstanceOf[typings.ansiStyles.ansiStylesStrings.gainsboro]
     
-    @scala.inline
-    def ghostwhite: typings.ansiStyles.ansiStylesStrings.ghostwhite = "ghostwhite".asInstanceOf[typings.ansiStyles.ansiStylesStrings.ghostwhite]
+    inline def ghostwhite: typings.ansiStyles.ansiStylesStrings.ghostwhite = "ghostwhite".asInstanceOf[typings.ansiStyles.ansiStylesStrings.ghostwhite]
     
-    @scala.inline
-    def gold: typings.ansiStyles.ansiStylesStrings.gold = "gold".asInstanceOf[typings.ansiStyles.ansiStylesStrings.gold]
+    inline def gold: typings.ansiStyles.ansiStylesStrings.gold = "gold".asInstanceOf[typings.ansiStyles.ansiStylesStrings.gold]
     
-    @scala.inline
-    def goldenrod: typings.ansiStyles.ansiStylesStrings.goldenrod = "goldenrod".asInstanceOf[typings.ansiStyles.ansiStylesStrings.goldenrod]
+    inline def goldenrod: typings.ansiStyles.ansiStylesStrings.goldenrod = "goldenrod".asInstanceOf[typings.ansiStyles.ansiStylesStrings.goldenrod]
     
-    @scala.inline
-    def gray: typings.ansiStyles.ansiStylesStrings.gray = "gray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.gray]
+    inline def gray: typings.ansiStyles.ansiStylesStrings.gray = "gray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.gray]
     
-    @scala.inline
-    def green: typings.ansiStyles.ansiStylesStrings.green = "green".asInstanceOf[typings.ansiStyles.ansiStylesStrings.green]
+    inline def green: typings.ansiStyles.ansiStylesStrings.green = "green".asInstanceOf[typings.ansiStyles.ansiStylesStrings.green]
     
-    @scala.inline
-    def greenyellow: typings.ansiStyles.ansiStylesStrings.greenyellow = "greenyellow".asInstanceOf[typings.ansiStyles.ansiStylesStrings.greenyellow]
+    inline def greenyellow: typings.ansiStyles.ansiStylesStrings.greenyellow = "greenyellow".asInstanceOf[typings.ansiStyles.ansiStylesStrings.greenyellow]
     
-    @scala.inline
-    def grey: typings.ansiStyles.ansiStylesStrings.grey = "grey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.grey]
+    inline def grey: typings.ansiStyles.ansiStylesStrings.grey = "grey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.grey]
     
-    @scala.inline
-    def honeydew: typings.ansiStyles.ansiStylesStrings.honeydew = "honeydew".asInstanceOf[typings.ansiStyles.ansiStylesStrings.honeydew]
+    inline def honeydew: typings.ansiStyles.ansiStylesStrings.honeydew = "honeydew".asInstanceOf[typings.ansiStyles.ansiStylesStrings.honeydew]
     
-    @scala.inline
-    def hotpink: typings.ansiStyles.ansiStylesStrings.hotpink = "hotpink".asInstanceOf[typings.ansiStyles.ansiStylesStrings.hotpink]
+    inline def hotpink: typings.ansiStyles.ansiStylesStrings.hotpink = "hotpink".asInstanceOf[typings.ansiStyles.ansiStylesStrings.hotpink]
     
-    @scala.inline
-    def indianred: typings.ansiStyles.ansiStylesStrings.indianred = "indianred".asInstanceOf[typings.ansiStyles.ansiStylesStrings.indianred]
+    inline def indianred: typings.ansiStyles.ansiStylesStrings.indianred = "indianred".asInstanceOf[typings.ansiStyles.ansiStylesStrings.indianred]
     
-    @scala.inline
-    def indigo: typings.ansiStyles.ansiStylesStrings.indigo = "indigo".asInstanceOf[typings.ansiStyles.ansiStylesStrings.indigo]
+    inline def indigo: typings.ansiStyles.ansiStylesStrings.indigo = "indigo".asInstanceOf[typings.ansiStyles.ansiStylesStrings.indigo]
     
-    @scala.inline
-    def ivory: typings.ansiStyles.ansiStylesStrings.ivory = "ivory".asInstanceOf[typings.ansiStyles.ansiStylesStrings.ivory]
+    inline def ivory: typings.ansiStyles.ansiStylesStrings.ivory = "ivory".asInstanceOf[typings.ansiStyles.ansiStylesStrings.ivory]
     
-    @scala.inline
-    def khaki: typings.ansiStyles.ansiStylesStrings.khaki = "khaki".asInstanceOf[typings.ansiStyles.ansiStylesStrings.khaki]
+    inline def khaki: typings.ansiStyles.ansiStylesStrings.khaki = "khaki".asInstanceOf[typings.ansiStyles.ansiStylesStrings.khaki]
     
-    @scala.inline
-    def lavender: typings.ansiStyles.ansiStylesStrings.lavender = "lavender".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lavender]
+    inline def lavender: typings.ansiStyles.ansiStylesStrings.lavender = "lavender".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lavender]
     
-    @scala.inline
-    def lavenderblush: typings.ansiStyles.ansiStylesStrings.lavenderblush = "lavenderblush".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lavenderblush]
+    inline def lavenderblush: typings.ansiStyles.ansiStylesStrings.lavenderblush = "lavenderblush".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lavenderblush]
     
-    @scala.inline
-    def lawngreen: typings.ansiStyles.ansiStylesStrings.lawngreen = "lawngreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lawngreen]
+    inline def lawngreen: typings.ansiStyles.ansiStylesStrings.lawngreen = "lawngreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lawngreen]
     
-    @scala.inline
-    def lemonchiffon: typings.ansiStyles.ansiStylesStrings.lemonchiffon = "lemonchiffon".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lemonchiffon]
+    inline def lemonchiffon: typings.ansiStyles.ansiStylesStrings.lemonchiffon = "lemonchiffon".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lemonchiffon]
     
-    @scala.inline
-    def lightblue: typings.ansiStyles.ansiStylesStrings.lightblue = "lightblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightblue]
+    inline def lightblue: typings.ansiStyles.ansiStylesStrings.lightblue = "lightblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightblue]
     
-    @scala.inline
-    def lightcoral: typings.ansiStyles.ansiStylesStrings.lightcoral = "lightcoral".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightcoral]
+    inline def lightcoral: typings.ansiStyles.ansiStylesStrings.lightcoral = "lightcoral".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightcoral]
     
-    @scala.inline
-    def lightcyan: typings.ansiStyles.ansiStylesStrings.lightcyan = "lightcyan".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightcyan]
+    inline def lightcyan: typings.ansiStyles.ansiStylesStrings.lightcyan = "lightcyan".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightcyan]
     
-    @scala.inline
-    def lightgoldenrodyellow: typings.ansiStyles.ansiStylesStrings.lightgoldenrodyellow = "lightgoldenrodyellow".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightgoldenrodyellow]
+    inline def lightgoldenrodyellow: typings.ansiStyles.ansiStylesStrings.lightgoldenrodyellow = "lightgoldenrodyellow".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightgoldenrodyellow]
     
-    @scala.inline
-    def lightgray: typings.ansiStyles.ansiStylesStrings.lightgray = "lightgray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightgray]
+    inline def lightgray: typings.ansiStyles.ansiStylesStrings.lightgray = "lightgray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightgray]
     
-    @scala.inline
-    def lightgreen: typings.ansiStyles.ansiStylesStrings.lightgreen = "lightgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightgreen]
+    inline def lightgreen: typings.ansiStyles.ansiStylesStrings.lightgreen = "lightgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightgreen]
     
-    @scala.inline
-    def lightgrey: typings.ansiStyles.ansiStylesStrings.lightgrey = "lightgrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightgrey]
+    inline def lightgrey: typings.ansiStyles.ansiStylesStrings.lightgrey = "lightgrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightgrey]
     
-    @scala.inline
-    def lightpink: typings.ansiStyles.ansiStylesStrings.lightpink = "lightpink".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightpink]
+    inline def lightpink: typings.ansiStyles.ansiStylesStrings.lightpink = "lightpink".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightpink]
     
-    @scala.inline
-    def lightsalmon: typings.ansiStyles.ansiStylesStrings.lightsalmon = "lightsalmon".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightsalmon]
+    inline def lightsalmon: typings.ansiStyles.ansiStylesStrings.lightsalmon = "lightsalmon".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightsalmon]
     
-    @scala.inline
-    def lightseagreen: typings.ansiStyles.ansiStylesStrings.lightseagreen = "lightseagreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightseagreen]
+    inline def lightseagreen: typings.ansiStyles.ansiStylesStrings.lightseagreen = "lightseagreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightseagreen]
     
-    @scala.inline
-    def lightskyblue: typings.ansiStyles.ansiStylesStrings.lightskyblue = "lightskyblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightskyblue]
+    inline def lightskyblue: typings.ansiStyles.ansiStylesStrings.lightskyblue = "lightskyblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightskyblue]
     
-    @scala.inline
-    def lightslategray: typings.ansiStyles.ansiStylesStrings.lightslategray = "lightslategray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightslategray]
+    inline def lightslategray: typings.ansiStyles.ansiStylesStrings.lightslategray = "lightslategray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightslategray]
     
-    @scala.inline
-    def lightslategrey: typings.ansiStyles.ansiStylesStrings.lightslategrey = "lightslategrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightslategrey]
+    inline def lightslategrey: typings.ansiStyles.ansiStylesStrings.lightslategrey = "lightslategrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightslategrey]
     
-    @scala.inline
-    def lightsteelblue: typings.ansiStyles.ansiStylesStrings.lightsteelblue = "lightsteelblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightsteelblue]
+    inline def lightsteelblue: typings.ansiStyles.ansiStylesStrings.lightsteelblue = "lightsteelblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightsteelblue]
     
-    @scala.inline
-    def lightyellow: typings.ansiStyles.ansiStylesStrings.lightyellow = "lightyellow".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightyellow]
+    inline def lightyellow: typings.ansiStyles.ansiStylesStrings.lightyellow = "lightyellow".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightyellow]
     
-    @scala.inline
-    def lime: typings.ansiStyles.ansiStylesStrings.lime = "lime".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lime]
+    inline def lime: typings.ansiStyles.ansiStylesStrings.lime = "lime".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lime]
     
-    @scala.inline
-    def limegreen: typings.ansiStyles.ansiStylesStrings.limegreen = "limegreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.limegreen]
+    inline def limegreen: typings.ansiStyles.ansiStylesStrings.limegreen = "limegreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.limegreen]
     
-    @scala.inline
-    def linen: typings.ansiStyles.ansiStylesStrings.linen = "linen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.linen]
+    inline def linen: typings.ansiStyles.ansiStylesStrings.linen = "linen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.linen]
     
-    @scala.inline
-    def magenta: typings.ansiStyles.ansiStylesStrings.magenta = "magenta".asInstanceOf[typings.ansiStyles.ansiStylesStrings.magenta]
+    inline def magenta: typings.ansiStyles.ansiStylesStrings.magenta = "magenta".asInstanceOf[typings.ansiStyles.ansiStylesStrings.magenta]
     
-    @scala.inline
-    def maroon: typings.ansiStyles.ansiStylesStrings.maroon = "maroon".asInstanceOf[typings.ansiStyles.ansiStylesStrings.maroon]
+    inline def maroon: typings.ansiStyles.ansiStylesStrings.maroon = "maroon".asInstanceOf[typings.ansiStyles.ansiStylesStrings.maroon]
     
-    @scala.inline
-    def mediumaquamarine: typings.ansiStyles.ansiStylesStrings.mediumaquamarine = "mediumaquamarine".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumaquamarine]
+    inline def mediumaquamarine: typings.ansiStyles.ansiStylesStrings.mediumaquamarine = "mediumaquamarine".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumaquamarine]
     
-    @scala.inline
-    def mediumblue: typings.ansiStyles.ansiStylesStrings.mediumblue = "mediumblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumblue]
+    inline def mediumblue: typings.ansiStyles.ansiStylesStrings.mediumblue = "mediumblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumblue]
     
-    @scala.inline
-    def mediumorchid: typings.ansiStyles.ansiStylesStrings.mediumorchid = "mediumorchid".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumorchid]
+    inline def mediumorchid: typings.ansiStyles.ansiStylesStrings.mediumorchid = "mediumorchid".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumorchid]
     
-    @scala.inline
-    def mediumpurple: typings.ansiStyles.ansiStylesStrings.mediumpurple = "mediumpurple".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumpurple]
+    inline def mediumpurple: typings.ansiStyles.ansiStylesStrings.mediumpurple = "mediumpurple".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumpurple]
     
-    @scala.inline
-    def mediumseagreen: typings.ansiStyles.ansiStylesStrings.mediumseagreen = "mediumseagreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumseagreen]
+    inline def mediumseagreen: typings.ansiStyles.ansiStylesStrings.mediumseagreen = "mediumseagreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumseagreen]
     
-    @scala.inline
-    def mediumslateblue: typings.ansiStyles.ansiStylesStrings.mediumslateblue = "mediumslateblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumslateblue]
+    inline def mediumslateblue: typings.ansiStyles.ansiStylesStrings.mediumslateblue = "mediumslateblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumslateblue]
     
-    @scala.inline
-    def mediumspringgreen: typings.ansiStyles.ansiStylesStrings.mediumspringgreen = "mediumspringgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumspringgreen]
+    inline def mediumspringgreen: typings.ansiStyles.ansiStylesStrings.mediumspringgreen = "mediumspringgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumspringgreen]
     
-    @scala.inline
-    def mediumturquoise: typings.ansiStyles.ansiStylesStrings.mediumturquoise = "mediumturquoise".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumturquoise]
+    inline def mediumturquoise: typings.ansiStyles.ansiStylesStrings.mediumturquoise = "mediumturquoise".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumturquoise]
     
-    @scala.inline
-    def mediumvioletred: typings.ansiStyles.ansiStylesStrings.mediumvioletred = "mediumvioletred".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumvioletred]
+    inline def mediumvioletred: typings.ansiStyles.ansiStylesStrings.mediumvioletred = "mediumvioletred".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumvioletred]
     
-    @scala.inline
-    def midnightblue: typings.ansiStyles.ansiStylesStrings.midnightblue = "midnightblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.midnightblue]
+    inline def midnightblue: typings.ansiStyles.ansiStylesStrings.midnightblue = "midnightblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.midnightblue]
     
-    @scala.inline
-    def mintcream: typings.ansiStyles.ansiStylesStrings.mintcream = "mintcream".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mintcream]
+    inline def mintcream: typings.ansiStyles.ansiStylesStrings.mintcream = "mintcream".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mintcream]
     
-    @scala.inline
-    def mistyrose: typings.ansiStyles.ansiStylesStrings.mistyrose = "mistyrose".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mistyrose]
+    inline def mistyrose: typings.ansiStyles.ansiStylesStrings.mistyrose = "mistyrose".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mistyrose]
     
-    @scala.inline
-    def moccasin: typings.ansiStyles.ansiStylesStrings.moccasin = "moccasin".asInstanceOf[typings.ansiStyles.ansiStylesStrings.moccasin]
+    inline def moccasin: typings.ansiStyles.ansiStylesStrings.moccasin = "moccasin".asInstanceOf[typings.ansiStyles.ansiStylesStrings.moccasin]
     
-    @scala.inline
-    def navajowhite: typings.ansiStyles.ansiStylesStrings.navajowhite = "navajowhite".asInstanceOf[typings.ansiStyles.ansiStylesStrings.navajowhite]
+    inline def navajowhite: typings.ansiStyles.ansiStylesStrings.navajowhite = "navajowhite".asInstanceOf[typings.ansiStyles.ansiStylesStrings.navajowhite]
     
-    @scala.inline
-    def navy: typings.ansiStyles.ansiStylesStrings.navy = "navy".asInstanceOf[typings.ansiStyles.ansiStylesStrings.navy]
+    inline def navy: typings.ansiStyles.ansiStylesStrings.navy = "navy".asInstanceOf[typings.ansiStyles.ansiStylesStrings.navy]
     
-    @scala.inline
-    def oldlace: typings.ansiStyles.ansiStylesStrings.oldlace = "oldlace".asInstanceOf[typings.ansiStyles.ansiStylesStrings.oldlace]
+    inline def oldlace: typings.ansiStyles.ansiStylesStrings.oldlace = "oldlace".asInstanceOf[typings.ansiStyles.ansiStylesStrings.oldlace]
     
-    @scala.inline
-    def olive: typings.ansiStyles.ansiStylesStrings.olive = "olive".asInstanceOf[typings.ansiStyles.ansiStylesStrings.olive]
+    inline def olive: typings.ansiStyles.ansiStylesStrings.olive = "olive".asInstanceOf[typings.ansiStyles.ansiStylesStrings.olive]
     
-    @scala.inline
-    def olivedrab: typings.ansiStyles.ansiStylesStrings.olivedrab = "olivedrab".asInstanceOf[typings.ansiStyles.ansiStylesStrings.olivedrab]
+    inline def olivedrab: typings.ansiStyles.ansiStylesStrings.olivedrab = "olivedrab".asInstanceOf[typings.ansiStyles.ansiStylesStrings.olivedrab]
     
-    @scala.inline
-    def orange: typings.ansiStyles.ansiStylesStrings.orange = "orange".asInstanceOf[typings.ansiStyles.ansiStylesStrings.orange]
+    inline def orange: typings.ansiStyles.ansiStylesStrings.orange = "orange".asInstanceOf[typings.ansiStyles.ansiStylesStrings.orange]
     
-    @scala.inline
-    def orangered: typings.ansiStyles.ansiStylesStrings.orangered = "orangered".asInstanceOf[typings.ansiStyles.ansiStylesStrings.orangered]
+    inline def orangered: typings.ansiStyles.ansiStylesStrings.orangered = "orangered".asInstanceOf[typings.ansiStyles.ansiStylesStrings.orangered]
     
-    @scala.inline
-    def orchid: typings.ansiStyles.ansiStylesStrings.orchid = "orchid".asInstanceOf[typings.ansiStyles.ansiStylesStrings.orchid]
+    inline def orchid: typings.ansiStyles.ansiStylesStrings.orchid = "orchid".asInstanceOf[typings.ansiStyles.ansiStylesStrings.orchid]
     
-    @scala.inline
-    def palegoldenrod: typings.ansiStyles.ansiStylesStrings.palegoldenrod = "palegoldenrod".asInstanceOf[typings.ansiStyles.ansiStylesStrings.palegoldenrod]
+    inline def palegoldenrod: typings.ansiStyles.ansiStylesStrings.palegoldenrod = "palegoldenrod".asInstanceOf[typings.ansiStyles.ansiStylesStrings.palegoldenrod]
     
-    @scala.inline
-    def palegreen: typings.ansiStyles.ansiStylesStrings.palegreen = "palegreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.palegreen]
+    inline def palegreen: typings.ansiStyles.ansiStylesStrings.palegreen = "palegreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.palegreen]
     
-    @scala.inline
-    def paleturquoise: typings.ansiStyles.ansiStylesStrings.paleturquoise = "paleturquoise".asInstanceOf[typings.ansiStyles.ansiStylesStrings.paleturquoise]
+    inline def paleturquoise: typings.ansiStyles.ansiStylesStrings.paleturquoise = "paleturquoise".asInstanceOf[typings.ansiStyles.ansiStylesStrings.paleturquoise]
     
-    @scala.inline
-    def palevioletred: typings.ansiStyles.ansiStylesStrings.palevioletred = "palevioletred".asInstanceOf[typings.ansiStyles.ansiStylesStrings.palevioletred]
+    inline def palevioletred: typings.ansiStyles.ansiStylesStrings.palevioletred = "palevioletred".asInstanceOf[typings.ansiStyles.ansiStylesStrings.palevioletred]
     
-    @scala.inline
-    def papayawhip: typings.ansiStyles.ansiStylesStrings.papayawhip = "papayawhip".asInstanceOf[typings.ansiStyles.ansiStylesStrings.papayawhip]
+    inline def papayawhip: typings.ansiStyles.ansiStylesStrings.papayawhip = "papayawhip".asInstanceOf[typings.ansiStyles.ansiStylesStrings.papayawhip]
     
-    @scala.inline
-    def peachpuff: typings.ansiStyles.ansiStylesStrings.peachpuff = "peachpuff".asInstanceOf[typings.ansiStyles.ansiStylesStrings.peachpuff]
+    inline def peachpuff: typings.ansiStyles.ansiStylesStrings.peachpuff = "peachpuff".asInstanceOf[typings.ansiStyles.ansiStylesStrings.peachpuff]
     
-    @scala.inline
-    def peru: typings.ansiStyles.ansiStylesStrings.peru = "peru".asInstanceOf[typings.ansiStyles.ansiStylesStrings.peru]
+    inline def peru: typings.ansiStyles.ansiStylesStrings.peru = "peru".asInstanceOf[typings.ansiStyles.ansiStylesStrings.peru]
     
-    @scala.inline
-    def pink: typings.ansiStyles.ansiStylesStrings.pink = "pink".asInstanceOf[typings.ansiStyles.ansiStylesStrings.pink]
+    inline def pink: typings.ansiStyles.ansiStylesStrings.pink = "pink".asInstanceOf[typings.ansiStyles.ansiStylesStrings.pink]
     
-    @scala.inline
-    def plum: typings.ansiStyles.ansiStylesStrings.plum = "plum".asInstanceOf[typings.ansiStyles.ansiStylesStrings.plum]
+    inline def plum: typings.ansiStyles.ansiStylesStrings.plum = "plum".asInstanceOf[typings.ansiStyles.ansiStylesStrings.plum]
     
-    @scala.inline
-    def powderblue: typings.ansiStyles.ansiStylesStrings.powderblue = "powderblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.powderblue]
+    inline def powderblue: typings.ansiStyles.ansiStylesStrings.powderblue = "powderblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.powderblue]
     
-    @scala.inline
-    def purple: typings.ansiStyles.ansiStylesStrings.purple = "purple".asInstanceOf[typings.ansiStyles.ansiStylesStrings.purple]
+    inline def purple: typings.ansiStyles.ansiStylesStrings.purple = "purple".asInstanceOf[typings.ansiStyles.ansiStylesStrings.purple]
     
-    @scala.inline
-    def rebeccapurple: typings.ansiStyles.ansiStylesStrings.rebeccapurple = "rebeccapurple".asInstanceOf[typings.ansiStyles.ansiStylesStrings.rebeccapurple]
+    inline def rebeccapurple: typings.ansiStyles.ansiStylesStrings.rebeccapurple = "rebeccapurple".asInstanceOf[typings.ansiStyles.ansiStylesStrings.rebeccapurple]
     
-    @scala.inline
-    def red: typings.ansiStyles.ansiStylesStrings.red = "red".asInstanceOf[typings.ansiStyles.ansiStylesStrings.red]
+    inline def red: typings.ansiStyles.ansiStylesStrings.red = "red".asInstanceOf[typings.ansiStyles.ansiStylesStrings.red]
     
-    @scala.inline
-    def rosybrown: typings.ansiStyles.ansiStylesStrings.rosybrown = "rosybrown".asInstanceOf[typings.ansiStyles.ansiStylesStrings.rosybrown]
+    inline def rosybrown: typings.ansiStyles.ansiStylesStrings.rosybrown = "rosybrown".asInstanceOf[typings.ansiStyles.ansiStylesStrings.rosybrown]
     
-    @scala.inline
-    def royalblue: typings.ansiStyles.ansiStylesStrings.royalblue = "royalblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.royalblue]
+    inline def royalblue: typings.ansiStyles.ansiStylesStrings.royalblue = "royalblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.royalblue]
     
-    @scala.inline
-    def saddlebrown: typings.ansiStyles.ansiStylesStrings.saddlebrown = "saddlebrown".asInstanceOf[typings.ansiStyles.ansiStylesStrings.saddlebrown]
+    inline def saddlebrown: typings.ansiStyles.ansiStylesStrings.saddlebrown = "saddlebrown".asInstanceOf[typings.ansiStyles.ansiStylesStrings.saddlebrown]
     
-    @scala.inline
-    def salmon: typings.ansiStyles.ansiStylesStrings.salmon = "salmon".asInstanceOf[typings.ansiStyles.ansiStylesStrings.salmon]
+    inline def salmon: typings.ansiStyles.ansiStylesStrings.salmon = "salmon".asInstanceOf[typings.ansiStyles.ansiStylesStrings.salmon]
     
-    @scala.inline
-    def sandybrown: typings.ansiStyles.ansiStylesStrings.sandybrown = "sandybrown".asInstanceOf[typings.ansiStyles.ansiStylesStrings.sandybrown]
+    inline def sandybrown: typings.ansiStyles.ansiStylesStrings.sandybrown = "sandybrown".asInstanceOf[typings.ansiStyles.ansiStylesStrings.sandybrown]
     
-    @scala.inline
-    def seagreen: typings.ansiStyles.ansiStylesStrings.seagreen = "seagreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.seagreen]
+    inline def seagreen: typings.ansiStyles.ansiStylesStrings.seagreen = "seagreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.seagreen]
     
-    @scala.inline
-    def seashell: typings.ansiStyles.ansiStylesStrings.seashell = "seashell".asInstanceOf[typings.ansiStyles.ansiStylesStrings.seashell]
+    inline def seashell: typings.ansiStyles.ansiStylesStrings.seashell = "seashell".asInstanceOf[typings.ansiStyles.ansiStylesStrings.seashell]
     
-    @scala.inline
-    def sienna: typings.ansiStyles.ansiStylesStrings.sienna = "sienna".asInstanceOf[typings.ansiStyles.ansiStylesStrings.sienna]
+    inline def sienna: typings.ansiStyles.ansiStylesStrings.sienna = "sienna".asInstanceOf[typings.ansiStyles.ansiStylesStrings.sienna]
     
-    @scala.inline
-    def silver: typings.ansiStyles.ansiStylesStrings.silver = "silver".asInstanceOf[typings.ansiStyles.ansiStylesStrings.silver]
+    inline def silver: typings.ansiStyles.ansiStylesStrings.silver = "silver".asInstanceOf[typings.ansiStyles.ansiStylesStrings.silver]
     
-    @scala.inline
-    def skyblue: typings.ansiStyles.ansiStylesStrings.skyblue = "skyblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.skyblue]
+    inline def skyblue: typings.ansiStyles.ansiStylesStrings.skyblue = "skyblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.skyblue]
     
-    @scala.inline
-    def slateblue: typings.ansiStyles.ansiStylesStrings.slateblue = "slateblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.slateblue]
+    inline def slateblue: typings.ansiStyles.ansiStylesStrings.slateblue = "slateblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.slateblue]
     
-    @scala.inline
-    def slategray: typings.ansiStyles.ansiStylesStrings.slategray = "slategray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.slategray]
+    inline def slategray: typings.ansiStyles.ansiStylesStrings.slategray = "slategray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.slategray]
     
-    @scala.inline
-    def slategrey: typings.ansiStyles.ansiStylesStrings.slategrey = "slategrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.slategrey]
+    inline def slategrey: typings.ansiStyles.ansiStylesStrings.slategrey = "slategrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.slategrey]
     
-    @scala.inline
-    def snow: typings.ansiStyles.ansiStylesStrings.snow = "snow".asInstanceOf[typings.ansiStyles.ansiStylesStrings.snow]
+    inline def snow: typings.ansiStyles.ansiStylesStrings.snow = "snow".asInstanceOf[typings.ansiStyles.ansiStylesStrings.snow]
     
-    @scala.inline
-    def springgreen: typings.ansiStyles.ansiStylesStrings.springgreen = "springgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.springgreen]
+    inline def springgreen: typings.ansiStyles.ansiStylesStrings.springgreen = "springgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.springgreen]
     
-    @scala.inline
-    def steelblue: typings.ansiStyles.ansiStylesStrings.steelblue = "steelblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.steelblue]
+    inline def steelblue: typings.ansiStyles.ansiStylesStrings.steelblue = "steelblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.steelblue]
     
-    @scala.inline
-    def tan: typings.ansiStyles.ansiStylesStrings.tan = "tan".asInstanceOf[typings.ansiStyles.ansiStylesStrings.tan]
+    inline def tan: typings.ansiStyles.ansiStylesStrings.tan = "tan".asInstanceOf[typings.ansiStyles.ansiStylesStrings.tan]
     
-    @scala.inline
-    def teal: typings.ansiStyles.ansiStylesStrings.teal = "teal".asInstanceOf[typings.ansiStyles.ansiStylesStrings.teal]
+    inline def teal: typings.ansiStyles.ansiStylesStrings.teal = "teal".asInstanceOf[typings.ansiStyles.ansiStylesStrings.teal]
     
-    @scala.inline
-    def thistle: typings.ansiStyles.ansiStylesStrings.thistle = "thistle".asInstanceOf[typings.ansiStyles.ansiStylesStrings.thistle]
+    inline def thistle: typings.ansiStyles.ansiStylesStrings.thistle = "thistle".asInstanceOf[typings.ansiStyles.ansiStylesStrings.thistle]
     
-    @scala.inline
-    def tomato: typings.ansiStyles.ansiStylesStrings.tomato = "tomato".asInstanceOf[typings.ansiStyles.ansiStylesStrings.tomato]
+    inline def tomato: typings.ansiStyles.ansiStylesStrings.tomato = "tomato".asInstanceOf[typings.ansiStyles.ansiStylesStrings.tomato]
     
-    @scala.inline
-    def turquoise: typings.ansiStyles.ansiStylesStrings.turquoise = "turquoise".asInstanceOf[typings.ansiStyles.ansiStylesStrings.turquoise]
+    inline def turquoise: typings.ansiStyles.ansiStylesStrings.turquoise = "turquoise".asInstanceOf[typings.ansiStyles.ansiStylesStrings.turquoise]
     
-    @scala.inline
-    def violet: typings.ansiStyles.ansiStylesStrings.violet = "violet".asInstanceOf[typings.ansiStyles.ansiStylesStrings.violet]
+    inline def violet: typings.ansiStyles.ansiStylesStrings.violet = "violet".asInstanceOf[typings.ansiStyles.ansiStylesStrings.violet]
     
-    @scala.inline
-    def wheat: typings.ansiStyles.ansiStylesStrings.wheat = "wheat".asInstanceOf[typings.ansiStyles.ansiStylesStrings.wheat]
+    inline def wheat: typings.ansiStyles.ansiStylesStrings.wheat = "wheat".asInstanceOf[typings.ansiStyles.ansiStylesStrings.wheat]
     
-    @scala.inline
-    def white: typings.ansiStyles.ansiStylesStrings.white = "white".asInstanceOf[typings.ansiStyles.ansiStylesStrings.white]
+    inline def white: typings.ansiStyles.ansiStylesStrings.white = "white".asInstanceOf[typings.ansiStyles.ansiStylesStrings.white]
     
-    @scala.inline
-    def whitesmoke: typings.ansiStyles.ansiStylesStrings.whitesmoke = "whitesmoke".asInstanceOf[typings.ansiStyles.ansiStylesStrings.whitesmoke]
+    inline def whitesmoke: typings.ansiStyles.ansiStylesStrings.whitesmoke = "whitesmoke".asInstanceOf[typings.ansiStyles.ansiStylesStrings.whitesmoke]
     
-    @scala.inline
-    def yellow: typings.ansiStyles.ansiStylesStrings.yellow = "yellow".asInstanceOf[typings.ansiStyles.ansiStylesStrings.yellow]
+    inline def yellow: typings.ansiStyles.ansiStylesStrings.yellow = "yellow".asInstanceOf[typings.ansiStyles.ansiStylesStrings.yellow]
     
-    @scala.inline
-    def yellowgreen: typings.ansiStyles.ansiStylesStrings.yellowgreen = "yellowgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.yellowgreen]
+    inline def yellowgreen: typings.ansiStyles.ansiStylesStrings.yellowgreen = "yellowgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.yellowgreen]
   }
   
   trait ColorBase extends StObject {
@@ -1010,26 +838,20 @@ object mod {
   }
   object ColorBase {
     
-    @scala.inline
-    def apply(ansi: ColorConvert, ansi16m: ColorConvert, ansi256: ColorConvert, close: String): ColorBase = {
+    inline def apply(ansi: ColorConvert, ansi16m: ColorConvert, ansi256: ColorConvert, close: String): ColorBase = {
       val __obj = js.Dynamic.literal(ansi = ansi.asInstanceOf[js.Any], ansi16m = ansi16m.asInstanceOf[js.Any], ansi256 = ansi256.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColorBase]
     }
     
-    @scala.inline
-    implicit class ColorBaseMutableBuilder[Self <: ColorBase] (val x: Self) extends AnyVal {
+    extension [Self <: ColorBase](x: Self) {
       
-      @scala.inline
-      def setAnsi(value: ColorConvert): Self = StObject.set(x, "ansi", value.asInstanceOf[js.Any])
+      inline def setAnsi(value: ColorConvert): Self = StObject.set(x, "ansi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnsi16m(value: ColorConvert): Self = StObject.set(x, "ansi16m", value.asInstanceOf[js.Any])
+      inline def setAnsi16m(value: ColorConvert): Self = StObject.set(x, "ansi16m", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnsi256(value: ColorConvert): Self = StObject.set(x, "ansi256", value.asInstanceOf[js.Any])
+      inline def setAnsi256(value: ColorConvert): Self = StObject.set(x, "ansi256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1090,8 +912,7 @@ object mod {
   }
   object ColorConvert {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ansi: Double => String,
       ansi256: Double => String,
       hex: String => String,
@@ -1105,32 +926,23 @@ object mod {
       __obj.asInstanceOf[ColorConvert]
     }
     
-    @scala.inline
-    implicit class ColorConvertMutableBuilder[Self <: ColorConvert] (val x: Self) extends AnyVal {
+    extension [Self <: ColorConvert](x: Self) {
       
-      @scala.inline
-      def setAnsi(value: Double => String): Self = StObject.set(x, "ansi", js.Any.fromFunction1(value))
+      inline def setAnsi(value: Double => String): Self = StObject.set(x, "ansi", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAnsi256(value: Double => String): Self = StObject.set(x, "ansi256", js.Any.fromFunction1(value))
+      inline def setAnsi256(value: Double => String): Self = StObject.set(x, "ansi256", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHex(value: String => String): Self = StObject.set(x, "hex", js.Any.fromFunction1(value))
+      inline def setHex(value: String => String): Self = StObject.set(x, "hex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHsl(value: (Double, Double, Double) => String): Self = StObject.set(x, "hsl", js.Any.fromFunction3(value))
+      inline def setHsl(value: (Double, Double, Double) => String): Self = StObject.set(x, "hsl", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHsv(value: (Double, Double, Double) => String): Self = StObject.set(x, "hsv", js.Any.fromFunction3(value))
+      inline def setHsv(value: (Double, Double, Double) => String): Self = StObject.set(x, "hsv", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHwb(value: (Double, Double, Double) => String): Self = StObject.set(x, "hwb", js.Any.fromFunction3(value))
+      inline def setHwb(value: (Double, Double, Double) => String): Self = StObject.set(x, "hwb", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setKeyword(value: CSSColor => String): Self = StObject.set(x, "keyword", js.Any.fromFunction1(value))
+      inline def setKeyword(value: CSSColor => String): Self = StObject.set(x, "keyword", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRgb(value: (Double, Double, Double) => String): Self = StObject.set(x, "rgb", js.Any.fromFunction3(value))
+      inline def setRgb(value: (Double, Double, Double) => String): Self = StObject.set(x, "rgb", js.Any.fromFunction3(value))
     }
   }
   
@@ -1180,8 +992,7 @@ object mod {
   }
   object ForegroundColor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       black: CSPair,
       blackBright: CSPair,
       blue: CSPair,
@@ -1205,62 +1016,43 @@ object mod {
       __obj.asInstanceOf[ForegroundColor]
     }
     
-    @scala.inline
-    implicit class ForegroundColorMutableBuilder[Self <: ForegroundColor] (val x: Self) extends AnyVal {
+    extension [Self <: ForegroundColor](x: Self) {
       
-      @scala.inline
-      def setBlack(value: CSPair): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
+      inline def setBlack(value: CSPair): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackBright(value: CSPair): Self = StObject.set(x, "blackBright", value.asInstanceOf[js.Any])
+      inline def setBlackBright(value: CSPair): Self = StObject.set(x, "blackBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlue(value: CSPair): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+      inline def setBlue(value: CSPair): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueBright(value: CSPair): Self = StObject.set(x, "blueBright", value.asInstanceOf[js.Any])
+      inline def setBlueBright(value: CSPair): Self = StObject.set(x, "blueBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCyan(value: CSPair): Self = StObject.set(x, "cyan", value.asInstanceOf[js.Any])
+      inline def setCyan(value: CSPair): Self = StObject.set(x, "cyan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCyanBright(value: CSPair): Self = StObject.set(x, "cyanBright", value.asInstanceOf[js.Any])
+      inline def setCyanBright(value: CSPair): Self = StObject.set(x, "cyanBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGray(value: CSPair): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
+      inline def setGray(value: CSPair): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreen(value: CSPair): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+      inline def setGreen(value: CSPair): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenBright(value: CSPair): Self = StObject.set(x, "greenBright", value.asInstanceOf[js.Any])
+      inline def setGreenBright(value: CSPair): Self = StObject.set(x, "greenBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrey(value: CSPair): Self = StObject.set(x, "grey", value.asInstanceOf[js.Any])
+      inline def setGrey(value: CSPair): Self = StObject.set(x, "grey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagenta(value: CSPair): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
+      inline def setMagenta(value: CSPair): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaBright(value: CSPair): Self = StObject.set(x, "magentaBright", value.asInstanceOf[js.Any])
+      inline def setMagentaBright(value: CSPair): Self = StObject.set(x, "magentaBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed(value: CSPair): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+      inline def setRed(value: CSPair): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedBright(value: CSPair): Self = StObject.set(x, "redBright", value.asInstanceOf[js.Any])
+      inline def setRedBright(value: CSPair): Self = StObject.set(x, "redBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhite(value: CSPair): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+      inline def setWhite(value: CSPair): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteBright(value: CSPair): Self = StObject.set(x, "whiteBright", value.asInstanceOf[js.Any])
+      inline def setWhiteBright(value: CSPair): Self = StObject.set(x, "whiteBright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellow(value: CSPair): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
+      inline def setYellow(value: CSPair): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellowBright(value: CSPair): Self = StObject.set(x, "yellowBright", value.asInstanceOf[js.Any])
+      inline def setYellowBright(value: CSPair): Self = StObject.set(x, "yellowBright", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1308,8 +1100,7 @@ object mod {
   }
   object Modifier {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bold: CSPair,
       dim: CSPair,
       hidden: CSPair,
@@ -1323,32 +1114,23 @@ object mod {
       __obj.asInstanceOf[Modifier]
     }
     
-    @scala.inline
-    implicit class ModifierMutableBuilder[Self <: Modifier] (val x: Self) extends AnyVal {
+    extension [Self <: Modifier](x: Self) {
       
-      @scala.inline
-      def setBold(value: CSPair): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+      inline def setBold(value: CSPair): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDim(value: CSPair): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
+      inline def setDim(value: CSPair): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: CSPair): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: CSPair): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverse(value: CSPair): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+      inline def setInverse(value: CSPair): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItalic(value: CSPair): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+      inline def setItalic(value: CSPair): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReset(value: CSPair): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      inline def setReset(value: CSPair): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrikethrough(value: CSPair): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
+      inline def setStrikethrough(value: CSPair): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderline(value: CSPair): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+      inline def setUnderline(value: CSPair): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     }
   }
 }

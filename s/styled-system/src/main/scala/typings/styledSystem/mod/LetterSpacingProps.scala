@@ -15,25 +15,19 @@ trait LetterSpacingProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] ex
 }
 object LetterSpacingProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): LetterSpacingProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): LetterSpacingProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LetterSpacingProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class LetterSpacingPropsMutableBuilder[Self <: LetterSpacingProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (LetterSpacingProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: LetterSpacingProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (LetterSpacingProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setLetterSpacing(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    inline def setLetterSpacing(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterSpacingNull: Self = StObject.set(x, "letterSpacing", null)
+    inline def setLetterSpacingNull: Self = StObject.set(x, "letterSpacing", null)
     
-    @scala.inline
-    def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+    inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
-    @scala.inline
-    def setLetterSpacingVarargs(value: (TVal | Null)*): Self = StObject.set(x, "letterSpacing", js.Array(value :_*))
+    inline def setLetterSpacingVarargs(value: (TVal | Null)*): Self = StObject.set(x, "letterSpacing", js.Array(value :_*))
   }
 }

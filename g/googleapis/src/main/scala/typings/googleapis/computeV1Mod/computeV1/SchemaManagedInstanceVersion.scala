@@ -19,25 +19,19 @@ trait SchemaManagedInstanceVersion extends StObject {
 }
 object SchemaManagedInstanceVersion {
   
-  @scala.inline
-  def apply(): SchemaManagedInstanceVersion = {
+  inline def apply(): SchemaManagedInstanceVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManagedInstanceVersion]
   }
   
-  @scala.inline
-  implicit class SchemaManagedInstanceVersionMutableBuilder[Self <: SchemaManagedInstanceVersion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManagedInstanceVersion](x: Self) {
     
-    @scala.inline
-    def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
+    inline def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTemplateUndefined: Self = StObject.set(x, "instanceTemplate", js.undefined)
+    inline def setInstanceTemplateUndefined: Self = StObject.set(x, "instanceTemplate", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

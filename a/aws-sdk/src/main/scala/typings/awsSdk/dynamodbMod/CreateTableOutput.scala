@@ -13,19 +13,15 @@ trait CreateTableOutput extends StObject {
 }
 object CreateTableOutput {
   
-  @scala.inline
-  def apply(): CreateTableOutput = {
+  inline def apply(): CreateTableOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTableOutput]
   }
   
-  @scala.inline
-  implicit class CreateTableOutputMutableBuilder[Self <: CreateTableOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTableOutput](x: Self) {
     
-    @scala.inline
-    def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
+    inline def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
+    inline def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
   }
 }

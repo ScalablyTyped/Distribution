@@ -14,22 +14,17 @@ trait DrawerProps extends StObject {
 }
 object DrawerProps {
   
-  @scala.inline
-  def apply(children: Element): DrawerProps = {
+  inline def apply(children: Element): DrawerProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerProps]
   }
   
-  @scala.inline
-  implicit class DrawerPropsMutableBuilder[Self <: DrawerProps] (val x: Self) extends AnyVal {
+  extension [Self <: DrawerProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: `0`): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: `0`): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

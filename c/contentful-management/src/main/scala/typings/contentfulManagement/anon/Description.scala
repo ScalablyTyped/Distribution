@@ -18,8 +18,7 @@ trait Description extends StObject {
 }
 object Description {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: StringDictionary[String],
     file: StringDictionary[ContentType],
     title: StringDictionary[String]
@@ -28,16 +27,12 @@ object Description {
     __obj.asInstanceOf[Description]
   }
   
-  @scala.inline
-  implicit class DescriptionMutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
+  extension [Self <: Description](x: Self) {
     
-    @scala.inline
-    def setDescription(value: StringDictionary[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: StringDictionary[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: StringDictionary[ContentType]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: StringDictionary[ContentType]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: StringDictionary[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: StringDictionary[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

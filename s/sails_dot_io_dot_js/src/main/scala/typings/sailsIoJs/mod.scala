@@ -20,8 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(client: SocketIOClientStatic): Client = ^.asInstanceOf[js.Dynamic].apply(client.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def apply(client: SocketIOClientStatic): Client = ^.asInstanceOf[js.Dynamic].apply(client.asInstanceOf[js.Any]).asInstanceOf[Client]
   
   @JSImport("sails.io.js", JSImport.Namespace)
   @js.native
@@ -35,20 +34,16 @@ object mod {
   }
   object Client {
     
-    @scala.inline
-    def apply(sails: ClientSails, socket: Socket): Client = {
+    inline def apply(sails: ClientSails, socket: Socket): Client = {
       val __obj = js.Dynamic.literal(sails = sails.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
       __obj.asInstanceOf[Client]
     }
     
-    @scala.inline
-    implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
+    extension [Self <: Client](x: Self) {
       
-      @scala.inline
-      def setSails(value: ClientSails): Self = StObject.set(x, "sails", value.asInstanceOf[js.Any])
+      inline def setSails(value: ClientSails): Self = StObject.set(x, "sails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,20 +95,16 @@ object mod {
   }
   object ConnectConfig {
     
-    @scala.inline
-    def apply(): ConnectConfig = {
+    inline def apply(): ConnectConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectConfig]
     }
     
-    @scala.inline
-    implicit class ConnectConfigMutableBuilder[Self <: ConnectConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectConfig](x: Self) {
       
-      @scala.inline
-      def setInitialConnectionHeaders(value: InitialConnectionHeaders): Self = StObject.set(x, "initialConnectionHeaders", value.asInstanceOf[js.Any])
+      inline def setInitialConnectionHeaders(value: InitialConnectionHeaders): Self = StObject.set(x, "initialConnectionHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialConnectionHeadersUndefined: Self = StObject.set(x, "initialConnectionHeaders", js.undefined)
+      inline def setInitialConnectionHeadersUndefined: Self = StObject.set(x, "initialConnectionHeaders", js.undefined)
     }
   }
   
@@ -127,20 +118,16 @@ object mod {
   }
   object InitialConnectionHeaders {
     
-    @scala.inline
-    def apply(): InitialConnectionHeaders = {
+    inline def apply(): InitialConnectionHeaders = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InitialConnectionHeaders]
     }
     
-    @scala.inline
-    implicit class InitialConnectionHeadersMutableBuilder[Self <: InitialConnectionHeaders] (val x: Self) extends AnyVal {
+    extension [Self <: InitialConnectionHeaders](x: Self) {
       
-      @scala.inline
-      def setNosession(value: Boolean): Self = StObject.set(x, "nosession", value.asInstanceOf[js.Any])
+      inline def setNosession(value: Boolean): Self = StObject.set(x, "nosession", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNosessionUndefined: Self = StObject.set(x, "nosession", js.undefined)
+      inline def setNosessionUndefined: Self = StObject.set(x, "nosession", js.undefined)
     }
   }
   
@@ -160,35 +147,26 @@ object mod {
   }
   object JWR {
     
-    @scala.inline
-    def apply(body: js.Any, headers: Headers, pipe: () => Error, statusCode: Double, toPOJO: () => Body): JWR = {
+    inline def apply(body: js.Any, headers: Headers, pipe: () => Error, statusCode: Double, toPOJO: () => Body): JWR = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], pipe = js.Any.fromFunction0(pipe), statusCode = statusCode.asInstanceOf[js.Any], toPOJO = js.Any.fromFunction0(toPOJO))
       __obj.asInstanceOf[JWR]
     }
     
-    @scala.inline
-    implicit class JWRMutableBuilder[Self <: JWR] (val x: Self) extends AnyVal {
+    extension [Self <: JWR](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPipe(value: () => Error): Self = StObject.set(x, "pipe", js.Any.fromFunction0(value))
+      inline def setPipe(value: () => Error): Self = StObject.set(x, "pipe", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToPOJO(value: () => Body): Self = StObject.set(x, "toPOJO", js.Any.fromFunction0(value))
+      inline def setToPOJO(value: () => Body): Self = StObject.set(x, "toPOJO", js.Any.fromFunction0(value))
     }
   }
   
@@ -208,41 +186,30 @@ object mod {
   }
   object RequestOptions {
     
-    @scala.inline
-    def apply(url: String): RequestOptions = {
+    inline def apply(url: String): RequestOptions = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestOptions]
     }
     
-    @scala.inline
-    implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestOptions](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -258,38 +225,28 @@ object mod {
   }
   object SDKInfo {
     
-    @scala.inline
-    def apply(): SDKInfo = {
+    inline def apply(): SDKInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SDKInfo]
     }
     
-    @scala.inline
-    implicit class SDKInfoMutableBuilder[Self <: SDKInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SDKInfo](x: Self) {
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: browser | node): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: browser | node): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionString(value: String): Self = StObject.set(x, "versionString", value.asInstanceOf[js.Any])
+      inline def setVersionString(value: String): Self = StObject.set(x, "versionString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionStringUndefined: Self = StObject.set(x, "versionString", js.undefined)
+      inline def setVersionStringUndefined: Self = StObject.set(x, "versionString", js.undefined)
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   

@@ -25,26 +25,20 @@ object typesAttributeValueUpdateMod {
   }
   object AttributeValueUpdate {
     
-    @scala.inline
-    def apply(): AttributeValueUpdate = {
+    inline def apply(): AttributeValueUpdate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AttributeValueUpdate]
     }
     
-    @scala.inline
-    implicit class AttributeValueUpdateMutableBuilder[Self <: AttributeValueUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeValueUpdate](x: Self) {
       
-      @scala.inline
-      def setAction(value: ADD | PUT | DELETE | String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+      inline def setAction(value: ADD | PUT | DELETE | String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
       
-      @scala.inline
-      def setValue(value: AttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: AttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
     }
   }
   
@@ -60,20 +54,16 @@ object typesAttributeValueUpdateMod {
   }
   object UnmarshalledAttributeValueUpdate {
     
-    @scala.inline
-    def apply(): UnmarshalledAttributeValueUpdate = {
+    inline def apply(): UnmarshalledAttributeValueUpdate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledAttributeValueUpdate]
     }
     
-    @scala.inline
-    implicit class UnmarshalledAttributeValueUpdateMutableBuilder[Self <: UnmarshalledAttributeValueUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledAttributeValueUpdate](x: Self) {
       
-      @scala.inline
-      def setValue(value: UnmarshalledAttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: UnmarshalledAttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
     }
   }
 }

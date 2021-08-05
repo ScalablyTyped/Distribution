@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleColumnFill extends StObject
 object styleColumnFill {
   
-  @scala.inline
-  def styleColumnFillAuto: `0` = 0.asInstanceOf[`0`]
+  inline def styleColumnFillAuto: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleColumnFillBalance: `1` = 1.asInstanceOf[`1`]
+  inline def styleColumnFillBalance: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleColumnFillNotSet: `2` = 2.asInstanceOf[`2`]
+  inline def styleColumnFillNotSet: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleColumnFill_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleColumnFill_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

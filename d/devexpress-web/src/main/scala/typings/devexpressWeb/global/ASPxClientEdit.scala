@@ -246,30 +246,18 @@ object ASPxClientEdit {
     * @param checkInvisibleEditors true to check both visible and invisible editors that belong to the specified container; false to check only visible editors.
     */
   /* static member */
-  @scala.inline
-  def AreEditorsValid(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")().asInstanceOf[Boolean]
-  @scala.inline
-  def AreEditorsValid(container: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def AreEditorsValid(container: String, validationGroup: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def AreEditorsValid(container: String, validationGroup: String, checkInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], checkInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def AreEditorsValid(container: String, validationGroup: Unit, checkInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], checkInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def AreEditorsValid(container: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def AreEditorsValid(container: js.Any, validationGroup: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def AreEditorsValid(container: js.Any, validationGroup: String, checkInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], checkInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def AreEditorsValid(container: js.Any, validationGroup: Unit, checkInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], checkInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def AreEditorsValid(container: Unit, validationGroup: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def AreEditorsValid(container: Unit, validationGroup: String, checkInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], checkInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def AreEditorsValid(container: Unit, validationGroup: Unit, checkInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], checkInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def AreEditorsValid(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")().asInstanceOf[Boolean]
+  inline def AreEditorsValid(container: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def AreEditorsValid(container: String, validationGroup: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def AreEditorsValid(container: String, validationGroup: String, checkInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], checkInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def AreEditorsValid(container: String, validationGroup: Unit, checkInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], checkInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def AreEditorsValid(container: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def AreEditorsValid(container: js.Any, validationGroup: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def AreEditorsValid(container: js.Any, validationGroup: String, checkInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], checkInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def AreEditorsValid(container: js.Any, validationGroup: Unit, checkInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], checkInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def AreEditorsValid(container: Unit, validationGroup: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def AreEditorsValid(container: Unit, validationGroup: String, checkInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], checkInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def AreEditorsValid(container: Unit, validationGroup: Unit, checkInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("AreEditorsValid")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], checkInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Attaches a handler to the ASPxClientEdit's event indicating whether the editor has been changed since the previous state.
@@ -277,8 +265,7 @@ object ASPxClientEdit {
     * @param predicate An ASPxClientControlPredicate object representing the predicate criteria.
     */
   /* static member */
-  @scala.inline
-  def AttachEditorModificationListener(handler: js.Any, predicate: ASPxClientControlPredicate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AttachEditorModificationListener")(handler.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def AttachEditorModificationListener(handler: js.Any, predicate: ASPxClientControlPredicate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("AttachEditorModificationListener")(handler.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Assigns a null value to all editors in a specified visibility state, which are located within a specified container and belong to a specific validation group.
@@ -287,14 +274,10 @@ object ASPxClientEdit {
     * @param clearInvisibleEditors true to clear both visible and invisible editors that belong to the specified container and group; false to clear only visible editors.
     */
   /* static member */
-  @scala.inline
-  def ClearEditorsInContainer(container: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearEditorsInContainer")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def ClearEditorsInContainer(container: js.Any, validationGroup: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClearEditorsInContainer")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def ClearEditorsInContainer(container: js.Any, validationGroup: String, clearInvisibleEditors: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClearEditorsInContainer")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], clearInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def ClearEditorsInContainer(container: js.Any, validationGroup: Unit, clearInvisibleEditors: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClearEditorsInContainer")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], clearInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ClearEditorsInContainer(container: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearEditorsInContainer")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def ClearEditorsInContainer(container: js.Any, validationGroup: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClearEditorsInContainer")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ClearEditorsInContainer(container: js.Any, validationGroup: String, clearInvisibleEditors: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClearEditorsInContainer")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], clearInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ClearEditorsInContainer(container: js.Any, validationGroup: Unit, clearInvisibleEditors: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClearEditorsInContainer")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], clearInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Assigns a null value to all editors which are located within the specified container object, and belonging to a specific validation group, dependent on the visibility state specified.
@@ -303,14 +286,10 @@ object ASPxClientEdit {
     * @param clearInvisibleEditors true to clear both visible and invisible editors that belong to the specified container and group; false to clear only visible editors.
     */
   /* static member */
-  @scala.inline
-  def ClearEditorsInContainerById(containerId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearEditorsInContainerById")(containerId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def ClearEditorsInContainerById(containerId: String, validationGroup: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClearEditorsInContainerById")(containerId.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def ClearEditorsInContainerById(containerId: String, validationGroup: String, clearInvisibleEditors: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClearEditorsInContainerById")(containerId.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], clearInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def ClearEditorsInContainerById(containerId: String, validationGroup: Unit, clearInvisibleEditors: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClearEditorsInContainerById")(containerId.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], clearInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ClearEditorsInContainerById(containerId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearEditorsInContainerById")(containerId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def ClearEditorsInContainerById(containerId: String, validationGroup: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClearEditorsInContainerById")(containerId.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ClearEditorsInContainerById(containerId: String, validationGroup: String, clearInvisibleEditors: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClearEditorsInContainerById")(containerId.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], clearInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ClearEditorsInContainerById(containerId: String, validationGroup: Unit, clearInvisibleEditors: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClearEditorsInContainerById")(containerId.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], clearInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Assigns a null value to all editors which belong to a specific validation group, dependent on the visibility state specified.
@@ -318,10 +297,8 @@ object ASPxClientEdit {
     * @param clearInvisibleEditors true to clear both visible and invisible editors that belong to the specified validation group; false to clear only visible editors.
     */
   /* static member */
-  @scala.inline
-  def ClearGroup(validationGroup: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearGroup")(validationGroup.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def ClearGroup(validationGroup: String, clearInvisibleEditors: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClearGroup")(validationGroup.asInstanceOf[js.Any], clearInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ClearGroup(validationGroup: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearGroup")(validationGroup.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def ClearGroup(validationGroup: String, clearInvisibleEditors: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClearGroup")(validationGroup.asInstanceOf[js.Any], clearInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Detaches a handler from the editor's event if the editor meets the predicate criteria.
@@ -329,8 +306,7 @@ object ASPxClientEdit {
     * @param predicate An ASPxClientControlPredicate object representing a predicate criteria.
     */
   /* static member */
-  @scala.inline
-  def DetachEditorModificationListener(handler: js.Any, predicate: ASPxClientControlPredicate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DetachEditorModificationListener")(handler.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def DetachEditorModificationListener(handler: js.Any, predicate: ASPxClientControlPredicate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DetachEditorModificationListener")(handler.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Validates all editors in a specified visibility state, which are located within a specified container and belong to a specific validation group. true if the specified editors pass validation; otherwise, false.
@@ -339,14 +315,10 @@ object ASPxClientEdit {
     * @param validateInvisibleEditors true to validate both visible and invisible editors that belong to the specified container and group; false to validate only visible editors.
     */
   /* static member */
-  @scala.inline
-  def ValidateEditorsInContainer(container: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidateEditorsInContainer")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def ValidateEditorsInContainer(container: js.Any, validationGroup: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateEditorsInContainer")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def ValidateEditorsInContainer(container: js.Any, validationGroup: String, validateInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateEditorsInContainer")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], validateInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def ValidateEditorsInContainer(container: js.Any, validationGroup: Unit, validateInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateEditorsInContainer")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], validateInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ValidateEditorsInContainer(container: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidateEditorsInContainer")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def ValidateEditorsInContainer(container: js.Any, validationGroup: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateEditorsInContainer")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ValidateEditorsInContainer(container: js.Any, validationGroup: String, validateInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateEditorsInContainer")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], validateInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ValidateEditorsInContainer(container: js.Any, validationGroup: Unit, validateInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateEditorsInContainer")(container.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], validateInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Performs validation of the editors which are located within the specified container and belong to a specific validation group, dependent on the visibility state specified. true if the specified editors pass validation; otherwise, false.
@@ -355,14 +327,10 @@ object ASPxClientEdit {
     * @param validateInvisibleEditors true to validate both visible and invisible editors that belong to the specified container and group; false to validate only visible editors.
     */
   /* static member */
-  @scala.inline
-  def ValidateEditorsInContainerById(containerId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidateEditorsInContainerById")(containerId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def ValidateEditorsInContainerById(containerId: String, validationGroup: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateEditorsInContainerById")(containerId.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def ValidateEditorsInContainerById(containerId: String, validationGroup: String, validateInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateEditorsInContainerById")(containerId.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], validateInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def ValidateEditorsInContainerById(containerId: String, validationGroup: Unit, validateInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateEditorsInContainerById")(containerId.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], validateInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ValidateEditorsInContainerById(containerId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidateEditorsInContainerById")(containerId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def ValidateEditorsInContainerById(containerId: String, validationGroup: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateEditorsInContainerById")(containerId.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ValidateEditorsInContainerById(containerId: String, validationGroup: String, validateInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateEditorsInContainerById")(containerId.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], validateInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ValidateEditorsInContainerById(containerId: String, validationGroup: Unit, validateInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateEditorsInContainerById")(containerId.asInstanceOf[js.Any], validationGroup.asInstanceOf[js.Any], validateInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Performs validation of editors contained within the specified validation group, dependent on the editor visibility state specified. true if editors of the specified validation group pass validation; otherwise, false.
@@ -370,8 +338,6 @@ object ASPxClientEdit {
     * @param validateInvisibleEditors true to validate both visible and invisible editors that belong to the specified validation group; false to validate only visible editors.
     */
   /* static member */
-  @scala.inline
-  def ValidateGroup(validationGroup: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidateGroup")(validationGroup.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def ValidateGroup(validationGroup: String, validateInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateGroup")(validationGroup.asInstanceOf[js.Any], validateInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ValidateGroup(validationGroup: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidateGroup")(validationGroup.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def ValidateGroup(validationGroup: String, validateInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateGroup")(validationGroup.asInstanceOf[js.Any], validateInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

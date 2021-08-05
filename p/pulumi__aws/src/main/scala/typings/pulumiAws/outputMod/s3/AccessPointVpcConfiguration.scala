@@ -13,16 +13,13 @@ trait AccessPointVpcConfiguration extends StObject {
 }
 object AccessPointVpcConfiguration {
   
-  @scala.inline
-  def apply(vpcId: String): AccessPointVpcConfiguration = {
+  inline def apply(vpcId: String): AccessPointVpcConfiguration = {
     val __obj = js.Dynamic.literal(vpcId = vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessPointVpcConfiguration]
   }
   
-  @scala.inline
-  implicit class AccessPointVpcConfigurationMutableBuilder[Self <: AccessPointVpcConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AccessPointVpcConfiguration](x: Self) {
     
-    @scala.inline
-    def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
   }
 }

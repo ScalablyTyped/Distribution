@@ -14,19 +14,15 @@ trait WorkerShutdownNotice extends StObject {
 }
 object WorkerShutdownNotice {
   
-  @scala.inline
-  def apply(): WorkerShutdownNotice = {
+  inline def apply(): WorkerShutdownNotice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkerShutdownNotice]
   }
   
-  @scala.inline
-  implicit class WorkerShutdownNoticeMutableBuilder[Self <: WorkerShutdownNotice] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerShutdownNotice](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

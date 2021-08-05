@@ -24,7 +24,7 @@ object emailMatchMod {
       *
       * The email address that was matched.
       */
-    val email: js.Any = js.native
+    /* private */ val email: js.Any = js.native
     
     /**
       * Returns the email address that was matched.
@@ -42,17 +42,14 @@ object emailMatchMod {
   }
   object EmailMatchConfig {
     
-    @scala.inline
-    def apply(email: String, matchedText: String, offset: Double, tagBuilder: AnchorTagBuilder): EmailMatchConfig = {
+    inline def apply(email: String, matchedText: String, offset: Double, tagBuilder: AnchorTagBuilder): EmailMatchConfig = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], matchedText = matchedText.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmailMatchConfig]
     }
     
-    @scala.inline
-    implicit class EmailMatchConfigMutableBuilder[Self <: EmailMatchConfig] (val x: Self) extends AnyVal {
+    extension [Self <: EmailMatchConfig](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     }
   }
 }

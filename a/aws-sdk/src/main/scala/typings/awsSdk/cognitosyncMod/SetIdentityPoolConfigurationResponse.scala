@@ -23,31 +23,23 @@ trait SetIdentityPoolConfigurationResponse extends StObject {
 }
 object SetIdentityPoolConfigurationResponse {
   
-  @scala.inline
-  def apply(): SetIdentityPoolConfigurationResponse = {
+  inline def apply(): SetIdentityPoolConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetIdentityPoolConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class SetIdentityPoolConfigurationResponseMutableBuilder[Self <: SetIdentityPoolConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SetIdentityPoolConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setCognitoStreams(value: CognitoStreams): Self = StObject.set(x, "CognitoStreams", value.asInstanceOf[js.Any])
+    inline def setCognitoStreams(value: CognitoStreams): Self = StObject.set(x, "CognitoStreams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCognitoStreamsUndefined: Self = StObject.set(x, "CognitoStreams", js.undefined)
+    inline def setCognitoStreamsUndefined: Self = StObject.set(x, "CognitoStreams", js.undefined)
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
+    inline def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
     
-    @scala.inline
-    def setPushSync(value: PushSync): Self = StObject.set(x, "PushSync", value.asInstanceOf[js.Any])
+    inline def setPushSync(value: PushSync): Self = StObject.set(x, "PushSync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushSyncUndefined: Self = StObject.set(x, "PushSync", js.undefined)
+    inline def setPushSyncUndefined: Self = StObject.set(x, "PushSync", js.undefined)
   }
 }

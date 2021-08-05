@@ -25,20 +25,16 @@ object mod {
   }
   object ChartData {
     
-    @scala.inline
-    def apply(data: StringDictionary[Double], meta: Color): ChartData = {
+    inline def apply(data: StringDictionary[Double], meta: Color): ChartData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChartData]
     }
     
-    @scala.inline
-    implicit class ChartDataMutableBuilder[Self <: ChartData] (val x: Self) extends AnyVal {
+    extension [Self <: ChartData](x: Self) {
       
-      @scala.inline
-      def setData(value: StringDictionary[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: Color): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Color): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,98 +107,68 @@ object mod {
   }
   object ChartOptionsProps {
     
-    @scala.inline
-    def apply(): ChartOptionsProps = {
+    inline def apply(): ChartOptionsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChartOptionsProps]
     }
     
-    @scala.inline
-    implicit class ChartOptionsPropsMutableBuilder[Self <: ChartOptionsProps] (val x: Self) extends AnyVal {
+    extension [Self <: ChartOptionsProps](x: Self) {
       
-      @scala.inline
-      def setAxes(value: Boolean): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      inline def setAxes(value: Boolean): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+      inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
-      @scala.inline
-      def setAxisProps(value: () => ClassName): Self = StObject.set(x, "axisProps", js.Any.fromFunction0(value))
+      inline def setAxisProps(value: () => ClassName): Self = StObject.set(x, "axisProps", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAxisPropsUndefined: Self = StObject.set(x, "axisProps", js.undefined)
+      inline def setAxisPropsUndefined: Self = StObject.set(x, "axisProps", js.undefined)
       
-      @scala.inline
-      def setCaptionMargin(value: Double): Self = StObject.set(x, "captionMargin", value.asInstanceOf[js.Any])
+      inline def setCaptionMargin(value: Double): Self = StObject.set(x, "captionMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionMarginUndefined: Self = StObject.set(x, "captionMargin", js.undefined)
+      inline def setCaptionMarginUndefined: Self = StObject.set(x, "captionMargin", js.undefined)
       
-      @scala.inline
-      def setCaptionProps(value: () => FontFamily): Self = StObject.set(x, "captionProps", js.Any.fromFunction0(value))
+      inline def setCaptionProps(value: () => FontFamily): Self = StObject.set(x, "captionProps", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCaptionPropsUndefined: Self = StObject.set(x, "captionProps", js.undefined)
+      inline def setCaptionPropsUndefined: Self = StObject.set(x, "captionProps", js.undefined)
       
-      @scala.inline
-      def setCaptions(value: Boolean): Self = StObject.set(x, "captions", value.asInstanceOf[js.Any])
+      inline def setCaptions(value: Boolean): Self = StObject.set(x, "captions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionsUndefined: Self = StObject.set(x, "captions", js.undefined)
+      inline def setCaptionsUndefined: Self = StObject.set(x, "captions", js.undefined)
       
-      @scala.inline
-      def setDotProps(value: () => ClassName): Self = StObject.set(x, "dotProps", js.Any.fromFunction0(value))
+      inline def setDotProps(value: () => ClassName): Self = StObject.set(x, "dotProps", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDotPropsUndefined: Self = StObject.set(x, "dotProps", js.undefined)
+      inline def setDotPropsUndefined: Self = StObject.set(x, "dotProps", js.undefined)
       
-      @scala.inline
-      def setDots(value: Boolean): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
+      inline def setDots(value: Boolean): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
+      inline def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
       
-      @scala.inline
-      def setScaleProps(value: () => Fill): Self = StObject.set(x, "scaleProps", js.Any.fromFunction0(value))
+      inline def setScaleProps(value: () => Fill): Self = StObject.set(x, "scaleProps", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setScalePropsUndefined: Self = StObject.set(x, "scaleProps", js.undefined)
+      inline def setScalePropsUndefined: Self = StObject.set(x, "scaleProps", js.undefined)
       
-      @scala.inline
-      def setScales(value: Double): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+      inline def setScales(value: Double): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
+      inline def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
       
-      @scala.inline
-      def setSetViewBox(value: ChartOptionsProps => Double): Self = StObject.set(x, "setViewBox", js.Any.fromFunction1(value))
+      inline def setSetViewBox(value: ChartOptionsProps => Double): Self = StObject.set(x, "setViewBox", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetViewBoxUndefined: Self = StObject.set(x, "setViewBox", js.undefined)
+      inline def setSetViewBoxUndefined: Self = StObject.set(x, "setViewBox", js.undefined)
       
-      @scala.inline
-      def setShapeProps(value: () => ClassName): Self = StObject.set(x, "shapeProps", js.Any.fromFunction0(value))
+      inline def setShapeProps(value: () => ClassName): Self = StObject.set(x, "shapeProps", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShapePropsUndefined: Self = StObject.set(x, "shapeProps", js.undefined)
+      inline def setShapePropsUndefined: Self = StObject.set(x, "shapeProps", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSmoothing(value: /* points */ js.Array[js.Array[js.Any]] => String): Self = StObject.set(x, "smoothing", js.Any.fromFunction1(value))
+      inline def setSmoothing(value: /* points */ js.Array[js.Array[js.Any]] => String): Self = StObject.set(x, "smoothing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
+      inline def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
       
-      @scala.inline
-      def setZoomDistance(value: Double): Self = StObject.set(x, "zoomDistance", value.asInstanceOf[js.Any])
+      inline def setZoomDistance(value: Double): Self = StObject.set(x, "zoomDistance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomDistanceUndefined: Self = StObject.set(x, "zoomDistance", js.undefined)
+      inline def setZoomDistanceUndefined: Self = StObject.set(x, "zoomDistance", js.undefined)
     }
   }
   
@@ -218,32 +184,24 @@ object mod {
   }
   object ChartProps {
     
-    @scala.inline
-    def apply(captions: StringDictionary[String], data: js.Array[ChartData], size: Double): ChartProps = {
+    inline def apply(captions: StringDictionary[String], data: js.Array[ChartData], size: Double): ChartProps = {
       val __obj = js.Dynamic.literal(captions = captions.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChartProps]
     }
     
-    @scala.inline
-    implicit class ChartPropsMutableBuilder[Self <: ChartProps] (val x: Self) extends AnyVal {
+    extension [Self <: ChartProps](x: Self) {
       
-      @scala.inline
-      def setCaptions(value: StringDictionary[String]): Self = StObject.set(x, "captions", value.asInstanceOf[js.Any])
+      inline def setCaptions(value: StringDictionary[String]): Self = StObject.set(x, "captions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Array[ChartData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[ChartData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: ChartData*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: ChartData*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: ChartOptionsProps): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ChartOptionsProps): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   

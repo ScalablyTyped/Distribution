@@ -10,16 +10,13 @@ trait TreeNode extends StObject {
 }
 object TreeNode {
   
-  @scala.inline
-  def apply(node: TreeItem): TreeNode = {
+  inline def apply(node: TreeItem): TreeNode = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeNode]
   }
   
-  @scala.inline
-  implicit class TreeNodeMutableBuilder[Self <: TreeNode] (val x: Self) extends AnyVal {
+  extension [Self <: TreeNode](x: Self) {
     
-    @scala.inline
-    def setNode(value: TreeItem): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: TreeItem): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

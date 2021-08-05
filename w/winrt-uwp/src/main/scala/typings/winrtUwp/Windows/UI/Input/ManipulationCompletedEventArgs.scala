@@ -23,8 +23,7 @@ trait ManipulationCompletedEventArgs extends StObject {
 }
 object ManipulationCompletedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cumulative: ManipulationDelta,
     pointerDeviceType: PointerDeviceType,
     position: Point,
@@ -34,19 +33,14 @@ object ManipulationCompletedEventArgs {
     __obj.asInstanceOf[ManipulationCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class ManipulationCompletedEventArgsMutableBuilder[Self <: ManipulationCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ManipulationCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCumulative(value: ManipulationDelta): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    inline def setCumulative(value: ManipulationDelta): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerDeviceType(value: PointerDeviceType): Self = StObject.set(x, "pointerDeviceType", value.asInstanceOf[js.Any])
+    inline def setPointerDeviceType(value: PointerDeviceType): Self = StObject.set(x, "pointerDeviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVelocities(value: ManipulationVelocities): Self = StObject.set(x, "velocities", value.asInstanceOf[js.Any])
+    inline def setVelocities(value: ManipulationVelocities): Self = StObject.set(x, "velocities", value.asInstanceOf[js.Any])
   }
 }

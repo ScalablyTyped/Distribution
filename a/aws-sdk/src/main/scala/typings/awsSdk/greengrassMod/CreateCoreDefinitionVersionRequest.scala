@@ -23,31 +23,23 @@ trait CreateCoreDefinitionVersionRequest extends StObject {
 }
 object CreateCoreDefinitionVersionRequest {
   
-  @scala.inline
-  def apply(CoreDefinitionId: string): CreateCoreDefinitionVersionRequest = {
+  inline def apply(CoreDefinitionId: string): CreateCoreDefinitionVersionRequest = {
     val __obj = js.Dynamic.literal(CoreDefinitionId = CoreDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCoreDefinitionVersionRequest]
   }
   
-  @scala.inline
-  implicit class CreateCoreDefinitionVersionRequestMutableBuilder[Self <: CreateCoreDefinitionVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCoreDefinitionVersionRequest](x: Self) {
     
-    @scala.inline
-    def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
+    inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
+    inline def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
     
-    @scala.inline
-    def setCoreDefinitionId(value: string): Self = StObject.set(x, "CoreDefinitionId", value.asInstanceOf[js.Any])
+    inline def setCoreDefinitionId(value: string): Self = StObject.set(x, "CoreDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCores(value: listOfCore): Self = StObject.set(x, "Cores", value.asInstanceOf[js.Any])
+    inline def setCores(value: listOfCore): Self = StObject.set(x, "Cores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoresUndefined: Self = StObject.set(x, "Cores", js.undefined)
+    inline def setCoresUndefined: Self = StObject.set(x, "Cores", js.undefined)
     
-    @scala.inline
-    def setCoresVarargs(value: Core*): Self = StObject.set(x, "Cores", js.Array(value :_*))
+    inline def setCoresVarargs(value: Core*): Self = StObject.set(x, "Cores", js.Array(value :_*))
   }
 }

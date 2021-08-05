@@ -13,22 +13,17 @@ trait LogConfiguration extends StObject {
 }
 object LogConfiguration {
   
-  @scala.inline
-  def apply(logDriver: LogDriver): LogConfiguration = {
+  inline def apply(logDriver: LogDriver): LogConfiguration = {
     val __obj = js.Dynamic.literal(logDriver = logDriver.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogConfiguration]
   }
   
-  @scala.inline
-  implicit class LogConfigurationMutableBuilder[Self <: LogConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LogConfiguration](x: Self) {
     
-    @scala.inline
-    def setLogDriver(value: LogDriver): Self = StObject.set(x, "logDriver", value.asInstanceOf[js.Any])
+    inline def setLogDriver(value: LogDriver): Self = StObject.set(x, "logDriver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

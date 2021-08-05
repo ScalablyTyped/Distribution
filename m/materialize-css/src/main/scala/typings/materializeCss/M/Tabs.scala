@@ -25,22 +25,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Tabs {
   
-  @scala.inline
-  def apply(index: Double, select: String => Unit, updateTabIndicator: () => Unit): Tabs = {
+  inline def apply(index: Double, select: String => Unit, updateTabIndicator: () => Unit): Tabs = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], select = js.Any.fromFunction1(select), updateTabIndicator = js.Any.fromFunction0(updateTabIndicator))
     __obj.asInstanceOf[Tabs]
   }
   
-  @scala.inline
-  implicit class TabsMutableBuilder[Self <: Tabs] (val x: Self) extends AnyVal {
+  extension [Self <: Tabs](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: String => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+    inline def setSelect(value: String => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateTabIndicator(value: () => Unit): Self = StObject.set(x, "updateTabIndicator", js.Any.fromFunction0(value))
+    inline def setUpdateTabIndicator(value: () => Unit): Self = StObject.set(x, "updateTabIndicator", js.Any.fromFunction0(value))
   }
 }

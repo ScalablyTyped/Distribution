@@ -32,11 +32,9 @@ object mod {
   trait Action extends StObject
   object Action {
     
-    @scala.inline
-    def close: typings.reactFloater.reactFloaterStrings.close = "close".asInstanceOf[typings.reactFloater.reactFloaterStrings.close]
+    inline def close: typings.reactFloater.reactFloaterStrings.close = "close".asInstanceOf[typings.reactFloater.reactFloaterStrings.close]
     
-    @scala.inline
-    def open: typings.reactFloater.reactFloaterStrings.open = "open".asInstanceOf[typings.reactFloater.reactFloaterStrings.open]
+    inline def open: typings.reactFloater.reactFloaterStrings.open = "open".asInstanceOf[typings.reactFloater.reactFloaterStrings.open]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -58,47 +56,33 @@ object mod {
   trait Placement extends StObject
   object Placement {
     
-    @scala.inline
-    def auto: typings.reactFloater.reactFloaterStrings.auto = "auto".asInstanceOf[typings.reactFloater.reactFloaterStrings.auto]
+    inline def auto: typings.reactFloater.reactFloaterStrings.auto = "auto".asInstanceOf[typings.reactFloater.reactFloaterStrings.auto]
     
-    @scala.inline
-    def bottom: typings.reactFloater.reactFloaterStrings.bottom = "bottom".asInstanceOf[typings.reactFloater.reactFloaterStrings.bottom]
+    inline def bottom: typings.reactFloater.reactFloaterStrings.bottom = "bottom".asInstanceOf[typings.reactFloater.reactFloaterStrings.bottom]
     
-    @scala.inline
-    def `bottom-end`: typings.reactFloater.reactFloaterStrings.`bottom-end` = "bottom-end".asInstanceOf[typings.reactFloater.reactFloaterStrings.`bottom-end`]
+    inline def `bottom-end`: typings.reactFloater.reactFloaterStrings.`bottom-end` = "bottom-end".asInstanceOf[typings.reactFloater.reactFloaterStrings.`bottom-end`]
     
-    @scala.inline
-    def `bottom-start`: typings.reactFloater.reactFloaterStrings.`bottom-start` = "bottom-start".asInstanceOf[typings.reactFloater.reactFloaterStrings.`bottom-start`]
+    inline def `bottom-start`: typings.reactFloater.reactFloaterStrings.`bottom-start` = "bottom-start".asInstanceOf[typings.reactFloater.reactFloaterStrings.`bottom-start`]
     
-    @scala.inline
-    def center: typings.reactFloater.reactFloaterStrings.center = "center".asInstanceOf[typings.reactFloater.reactFloaterStrings.center]
+    inline def center: typings.reactFloater.reactFloaterStrings.center = "center".asInstanceOf[typings.reactFloater.reactFloaterStrings.center]
     
-    @scala.inline
-    def left: typings.reactFloater.reactFloaterStrings.left = "left".asInstanceOf[typings.reactFloater.reactFloaterStrings.left]
+    inline def left: typings.reactFloater.reactFloaterStrings.left = "left".asInstanceOf[typings.reactFloater.reactFloaterStrings.left]
     
-    @scala.inline
-    def `left-end`: typings.reactFloater.reactFloaterStrings.`left-end` = "left-end".asInstanceOf[typings.reactFloater.reactFloaterStrings.`left-end`]
+    inline def `left-end`: typings.reactFloater.reactFloaterStrings.`left-end` = "left-end".asInstanceOf[typings.reactFloater.reactFloaterStrings.`left-end`]
     
-    @scala.inline
-    def `left-start`: typings.reactFloater.reactFloaterStrings.`left-start` = "left-start".asInstanceOf[typings.reactFloater.reactFloaterStrings.`left-start`]
+    inline def `left-start`: typings.reactFloater.reactFloaterStrings.`left-start` = "left-start".asInstanceOf[typings.reactFloater.reactFloaterStrings.`left-start`]
     
-    @scala.inline
-    def right: typings.reactFloater.reactFloaterStrings.right = "right".asInstanceOf[typings.reactFloater.reactFloaterStrings.right]
+    inline def right: typings.reactFloater.reactFloaterStrings.right = "right".asInstanceOf[typings.reactFloater.reactFloaterStrings.right]
     
-    @scala.inline
-    def `right-end`: typings.reactFloater.reactFloaterStrings.`right-end` = "right-end".asInstanceOf[typings.reactFloater.reactFloaterStrings.`right-end`]
+    inline def `right-end`: typings.reactFloater.reactFloaterStrings.`right-end` = "right-end".asInstanceOf[typings.reactFloater.reactFloaterStrings.`right-end`]
     
-    @scala.inline
-    def `right-start`: typings.reactFloater.reactFloaterStrings.`right-start` = "right-start".asInstanceOf[typings.reactFloater.reactFloaterStrings.`right-start`]
+    inline def `right-start`: typings.reactFloater.reactFloaterStrings.`right-start` = "right-start".asInstanceOf[typings.reactFloater.reactFloaterStrings.`right-start`]
     
-    @scala.inline
-    def top: typings.reactFloater.reactFloaterStrings.top = "top".asInstanceOf[typings.reactFloater.reactFloaterStrings.top]
+    inline def top: typings.reactFloater.reactFloaterStrings.top = "top".asInstanceOf[typings.reactFloater.reactFloaterStrings.top]
     
-    @scala.inline
-    def `top-end`: typings.reactFloater.reactFloaterStrings.`top-end` = "top-end".asInstanceOf[typings.reactFloater.reactFloaterStrings.`top-end`]
+    inline def `top-end`: typings.reactFloater.reactFloaterStrings.`top-end` = "top-end".asInstanceOf[typings.reactFloater.reactFloaterStrings.`top-end`]
     
-    @scala.inline
-    def `top-start`: typings.reactFloater.reactFloaterStrings.`top-start` = "top-start".asInstanceOf[typings.reactFloater.reactFloaterStrings.`top-start`]
+    inline def `top-start`: typings.reactFloater.reactFloaterStrings.`top-start` = "top-start".asInstanceOf[typings.reactFloater.reactFloaterStrings.`top-start`]
   }
   
   trait Props extends StObject {
@@ -220,155 +204,106 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
+      inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoOpenUndefined: Self = StObject.set(x, "autoOpen", js.undefined)
+      inline def setAutoOpenUndefined: Self = StObject.set(x, "autoOpen", js.undefined)
       
-      @scala.inline
-      def setCallback(value: (/* action */ Action, /* props */ PropsWithComponent | PropsWithContent) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* action */ Action, /* props */ PropsWithComponent | PropsWithContent) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
+      inline def setDisableAnimation(value: Boolean): Self = StObject.set(x, "disableAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
+      inline def setDisableAnimationUndefined: Self = StObject.set(x, "disableAnimation", js.undefined)
       
-      @scala.inline
-      def setDisableFlip(value: Boolean): Self = StObject.set(x, "disableFlip", value.asInstanceOf[js.Any])
+      inline def setDisableFlip(value: Boolean): Self = StObject.set(x, "disableFlip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableFlipUndefined: Self = StObject.set(x, "disableFlip", js.undefined)
+      inline def setDisableFlipUndefined: Self = StObject.set(x, "disableFlip", js.undefined)
       
-      @scala.inline
-      def setDisableHoverToClick(value: Boolean): Self = StObject.set(x, "disableHoverToClick", value.asInstanceOf[js.Any])
+      inline def setDisableHoverToClick(value: Boolean): Self = StObject.set(x, "disableHoverToClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHoverToClickUndefined: Self = StObject.set(x, "disableHoverToClick", js.undefined)
+      inline def setDisableHoverToClickUndefined: Self = StObject.set(x, "disableHoverToClick", js.undefined)
       
-      @scala.inline
-      def setEvent(value: click | hover): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: click | hover): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventDelay(value: Double): Self = StObject.set(x, "eventDelay", value.asInstanceOf[js.Any])
+      inline def setEventDelay(value: Double): Self = StObject.set(x, "eventDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventDelayUndefined: Self = StObject.set(x, "eventDelay", js.undefined)
+      inline def setEventDelayUndefined: Self = StObject.set(x, "eventDelay", js.undefined)
       
-      @scala.inline
-      def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      @scala.inline
-      def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setGetPopper(value: (/* popper */ Data, /* origin */ floater | wrapper) => Unit): Self = StObject.set(x, "getPopper", js.Any.fromFunction2(value))
+      inline def setGetPopper(value: (/* popper */ Data, /* origin */ floater | wrapper) => Unit): Self = StObject.set(x, "getPopper", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetPopperUndefined: Self = StObject.set(x, "getPopper", js.undefined)
+      inline def setGetPopperUndefined: Self = StObject.set(x, "getPopper", js.undefined)
       
-      @scala.inline
-      def setHideArrow(value: Boolean): Self = StObject.set(x, "hideArrow", value.asInstanceOf[js.Any])
+      inline def setHideArrow(value: Boolean): Self = StObject.set(x, "hideArrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideArrowUndefined: Self = StObject.set(x, "hideArrow", js.undefined)
+      inline def setHideArrowUndefined: Self = StObject.set(x, "hideArrow", js.undefined)
       
-      @scala.inline
-      def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Modifiers): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Modifiers): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
+      inline def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
+      inline def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setStyles(value: PartialStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: PartialStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String | HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String | HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetNull: Self = StObject.set(x, "target", null)
+      inline def setTargetNull: Self = StObject.set(x, "target", null)
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setWrapperOptions(value: Offset): Self = StObject.set(x, "wrapperOptions", value.asInstanceOf[js.Any])
+      inline def setWrapperOptions(value: Offset): Self = StObject.set(x, "wrapperOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperOptionsUndefined: Self = StObject.set(x, "wrapperOptions", js.undefined)
+      inline def setWrapperOptionsUndefined: Self = StObject.set(x, "wrapperOptions", js.undefined)
     }
   }
   
@@ -384,17 +319,14 @@ object mod {
   }
   object PropsWithComponent {
     
-    @scala.inline
-    def apply(component: RenderProps => ReactNode): PropsWithComponent = {
+    inline def apply(component: RenderProps => ReactNode): PropsWithComponent = {
       val __obj = js.Dynamic.literal(component = js.Any.fromFunction1(component))
       __obj.asInstanceOf[PropsWithComponent]
     }
     
-    @scala.inline
-    implicit class PropsWithComponentMutableBuilder[Self <: PropsWithComponent] (val x: Self) extends AnyVal {
+    extension [Self <: PropsWithComponent](x: Self) {
       
-      @scala.inline
-      def setComponent(value: RenderProps => ReactNode): Self = StObject.set(x, "component", js.Any.fromFunction1(value))
+      inline def setComponent(value: RenderProps => ReactNode): Self = StObject.set(x, "component", js.Any.fromFunction1(value))
     }
   }
   
@@ -410,20 +342,16 @@ object mod {
   }
   object PropsWithContent {
     
-    @scala.inline
-    def apply(): PropsWithContent = {
+    inline def apply(): PropsWithContent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PropsWithContent]
     }
     
-    @scala.inline
-    implicit class PropsWithContentMutableBuilder[Self <: PropsWithContent] (val x: Self) extends AnyVal {
+    extension [Self <: PropsWithContent](x: Self) {
       
-      @scala.inline
-      def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     }
   }
   
@@ -435,17 +363,14 @@ object mod {
   }
   object RenderProps {
     
-    @scala.inline
-    def apply(closeFn: () => Unit): RenderProps = {
+    inline def apply(closeFn: () => Unit): RenderProps = {
       val __obj = js.Dynamic.literal(closeFn = js.Any.fromFunction0(closeFn))
       __obj.asInstanceOf[RenderProps]
     }
     
-    @scala.inline
-    implicit class RenderPropsMutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
+    extension [Self <: RenderProps](x: Self) {
       
-      @scala.inline
-      def setCloseFn(value: () => Unit): Self = StObject.set(x, "closeFn", js.Any.fromFunction0(value))
+      inline def setCloseFn(value: () => Unit): Self = StObject.set(x, "closeFn", js.Any.fromFunction0(value))
     }
   }
   
@@ -483,8 +408,7 @@ object mod {
   }
   object Styles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arrow: CSSPropertieslengthnumber,
       close: CSSProperties,
       container: CSSProperties,
@@ -505,53 +429,37 @@ object mod {
       __obj.asInstanceOf[Styles]
     }
     
-    @scala.inline
-    implicit class StylesMutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
+    extension [Self <: Styles](x: Self) {
       
-      @scala.inline
-      def setArrow(value: CSSPropertieslengthnumber): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+      inline def setArrow(value: CSSPropertieslengthnumber): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClose(value: CSSProperties): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: CSSProperties): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: CSSProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: CSSProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: CSSProperties): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: CSSProperties): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloater(value: CSSProperties): Self = StObject.set(x, "floater", value.asInstanceOf[js.Any])
+      inline def setFloater(value: CSSProperties): Self = StObject.set(x, "floater", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloaterCentered(value: CSSProperties): Self = StObject.set(x, "floaterCentered", value.asInstanceOf[js.Any])
+      inline def setFloaterCentered(value: CSSProperties): Self = StObject.set(x, "floaterCentered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloaterClosing(value: CSSProperties): Self = StObject.set(x, "floaterClosing", value.asInstanceOf[js.Any])
+      inline def setFloaterClosing(value: CSSProperties): Self = StObject.set(x, "floaterClosing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloaterOpening(value: CSSProperties): Self = StObject.set(x, "floaterOpening", value.asInstanceOf[js.Any])
+      inline def setFloaterOpening(value: CSSProperties): Self = StObject.set(x, "floaterOpening", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloaterWithAnimation(value: CSSProperties): Self = StObject.set(x, "floaterWithAnimation", value.asInstanceOf[js.Any])
+      inline def setFloaterWithAnimation(value: CSSProperties): Self = StObject.set(x, "floaterWithAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloaterWithComponent(value: CSSProperties): Self = StObject.set(x, "floaterWithComponent", value.asInstanceOf[js.Any])
+      inline def setFloaterWithComponent(value: CSSProperties): Self = StObject.set(x, "floaterWithComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooter(value: CSSProperties): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: CSSProperties): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: ZIndex): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ZIndex): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: CSSProperties): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: CSSProperties): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapper(value: CSSProperties): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: CSSProperties): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperPosition(value: CSSProperties): Self = StObject.set(x, "wrapperPosition", value.asInstanceOf[js.Any])
+      inline def setWrapperPosition(value: CSSProperties): Self = StObject.set(x, "wrapperPosition", value.asInstanceOf[js.Any])
     }
   }
 }

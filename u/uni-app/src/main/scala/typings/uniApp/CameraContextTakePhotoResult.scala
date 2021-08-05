@@ -13,19 +13,15 @@ trait CameraContextTakePhotoResult extends StObject {
 }
 object CameraContextTakePhotoResult {
   
-  @scala.inline
-  def apply(): CameraContextTakePhotoResult = {
+  inline def apply(): CameraContextTakePhotoResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CameraContextTakePhotoResult]
   }
   
-  @scala.inline
-  implicit class CameraContextTakePhotoResultMutableBuilder[Self <: CameraContextTakePhotoResult] (val x: Self) extends AnyVal {
+  extension [Self <: CameraContextTakePhotoResult](x: Self) {
     
-    @scala.inline
-    def setTempImagePath(value: String): Self = StObject.set(x, "tempImagePath", value.asInstanceOf[js.Any])
+    inline def setTempImagePath(value: String): Self = StObject.set(x, "tempImagePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempImagePathUndefined: Self = StObject.set(x, "tempImagePath", js.undefined)
+    inline def setTempImagePathUndefined: Self = StObject.set(x, "tempImagePath", js.undefined)
   }
 }

@@ -11,20 +11,17 @@ object nodeAbiStrings {
   sealed trait electron
     extends StObject
        with Runtime
-  @scala.inline
-  def electron: electron = "electron".asInstanceOf[electron]
+  inline def electron: electron = "electron".asInstanceOf[electron]
   
   @js.native
   sealed trait node
     extends StObject
        with Runtime
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
+  inline def node: node = "node".asInstanceOf[node]
   
   @js.native
   sealed trait `node-webkit`
     extends StObject
        with Runtime
-  @scala.inline
-  def `node-webkit`: `node-webkit` = "node-webkit".asInstanceOf[`node-webkit`]
+  inline def `node-webkit`: `node-webkit` = "node-webkit".asInstanceOf[`node-webkit`]
 }

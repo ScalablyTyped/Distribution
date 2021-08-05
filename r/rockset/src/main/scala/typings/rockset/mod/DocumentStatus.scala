@@ -24,37 +24,27 @@ trait DocumentStatus extends StObject {
 }
 object DocumentStatus {
   
-  @scala.inline
-  def apply(): DocumentStatus = {
+  inline def apply(): DocumentStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentStatus]
   }
   
-  @scala.inline
-  implicit class DocumentStatusMutableBuilder[Self <: DocumentStatus] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentStatus](x: Self) {
     
-    @scala.inline
-    def setError(value: ErrorModel): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ErrorModel): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ADDED | REPLACED | DELETED | ERROR): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ADDED | REPLACED | DELETED | ERROR): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def set_collection(value: String): Self = StObject.set(x, "_collection", value.asInstanceOf[js.Any])
+    inline def set_collection(value: String): Self = StObject.set(x, "_collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_collectionUndefined: Self = StObject.set(x, "_collection", js.undefined)
+    inline def set_collectionUndefined: Self = StObject.set(x, "_collection", js.undefined)
     
-    @scala.inline
-    def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
+    inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
   }
 }

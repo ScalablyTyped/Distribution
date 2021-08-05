@@ -14,8 +14,7 @@ trait XUniversalShapeDescriptor
 }
 object XUniversalShapeDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ShapeType: String,
     acquire: () => Unit,
     getShapeType: () => String,
@@ -27,10 +26,8 @@ object XUniversalShapeDescriptor {
     __obj.asInstanceOf[XUniversalShapeDescriptor]
   }
   
-  @scala.inline
-  implicit class XUniversalShapeDescriptorMutableBuilder[Self <: XUniversalShapeDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: XUniversalShapeDescriptor](x: Self) {
     
-    @scala.inline
-    def setSetShapeType(value: String => Unit): Self = StObject.set(x, "setShapeType", js.Any.fromFunction1(value))
+    inline def setSetShapeType(value: String => Unit): Self = StObject.set(x, "setShapeType", js.Any.fromFunction1(value))
   }
 }

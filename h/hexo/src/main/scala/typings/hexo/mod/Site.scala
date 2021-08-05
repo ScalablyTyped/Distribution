@@ -22,8 +22,7 @@ trait Site extends StObject {
 }
 object Site {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     categories: Model[Category],
     data: StringDictionary[js.Any],
     pages: Model[Page],
@@ -34,22 +33,16 @@ object Site {
     __obj.asInstanceOf[Site]
   }
   
-  @scala.inline
-  implicit class SiteMutableBuilder[Self <: Site] (val x: Self) extends AnyVal {
+  extension [Self <: Site](x: Self) {
     
-    @scala.inline
-    def setCategories(value: Model[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: Model[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPages(value: Model[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: Model[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosts(value: Model[typings.hexo.mod.Locals.Post]): Self = StObject.set(x, "posts", value.asInstanceOf[js.Any])
+    inline def setPosts(value: Model[typings.hexo.mod.Locals.Post]): Self = StObject.set(x, "posts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Model[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Model[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
   }
 }

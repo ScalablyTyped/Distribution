@@ -18,40 +18,29 @@ trait IEventFilter extends StObject {
 }
 object IEventFilter {
   
-  @scala.inline
-  def apply(): IEventFilter = {
+  inline def apply(): IEventFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEventFilter]
   }
   
-  @scala.inline
-  implicit class IEventFilterMutableBuilder[Self <: IEventFilter] (val x: Self) extends AnyVal {
+  extension [Self <: IEventFilter](x: Self) {
     
-    @scala.inline
-    def setFilterType(value: FilterType): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
+    inline def setFilterType(value: FilterType): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterTypeNull: Self = StObject.set(x, "filterType", null)
+    inline def setFilterTypeNull: Self = StObject.set(x, "filterType", null)
     
-    @scala.inline
-    def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
+    inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyNull: Self = StObject.set(x, "key", null)
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setMatchString(value: String): Self = StObject.set(x, "matchString", value.asInstanceOf[js.Any])
+    inline def setMatchString(value: String): Self = StObject.set(x, "matchString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchStringNull: Self = StObject.set(x, "matchString", null)
+    inline def setMatchStringNull: Self = StObject.set(x, "matchString", null)
     
-    @scala.inline
-    def setMatchStringUndefined: Self = StObject.set(x, "matchString", js.undefined)
+    inline def setMatchStringUndefined: Self = StObject.set(x, "matchString", js.undefined)
   }
 }

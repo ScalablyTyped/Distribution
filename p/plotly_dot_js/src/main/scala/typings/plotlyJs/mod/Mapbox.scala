@@ -29,8 +29,7 @@ trait Mapbox extends StObject {
 }
 object Mapbox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accesstoken: String,
     bearing: Double,
     center: PartialMapboxCenter,
@@ -45,37 +44,26 @@ object Mapbox {
     __obj.asInstanceOf[Mapbox]
   }
   
-  @scala.inline
-  implicit class MapboxMutableBuilder[Self <: Mapbox] (val x: Self) extends AnyVal {
+  extension [Self <: Mapbox](x: Self) {
     
-    @scala.inline
-    def setAccesstoken(value: String): Self = StObject.set(x, "accesstoken", value.asInstanceOf[js.Any])
+    inline def setAccesstoken(value: String): Self = StObject.set(x, "accesstoken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
+    inline def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenter(value: PartialMapboxCenter): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: PartialMapboxCenter): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomain(value: PartialDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: PartialDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayers(value: js.Array[PartialMapboxLayersCircle]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: js.Array[PartialMapboxLayersCircle]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersVarargs(value: PartialMapboxLayersCircle*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: PartialMapboxLayersCircle*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
-    @scala.inline
-    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+    inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: Double | String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Double | String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUirevision(value: Double | String): Self = StObject.set(x, "uirevision", value.asInstanceOf[js.Any])
+    inline def setUirevision(value: Double | String): Self = StObject.set(x, "uirevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

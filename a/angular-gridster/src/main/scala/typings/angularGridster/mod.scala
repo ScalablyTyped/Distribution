@@ -102,161 +102,110 @@ object mod extends Shortcut {
       }
       object GridsterConfig {
         
-        @scala.inline
-        def apply(): GridsterConfig = {
+        inline def apply(): GridsterConfig = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GridsterConfig]
         }
         
-        @scala.inline
-        implicit class GridsterConfigMutableBuilder[Self <: GridsterConfig] (val x: Self) extends AnyVal {
+        extension [Self <: GridsterConfig](x: Self) {
           
-          @scala.inline
-          def setColWidth(value: String): Self = StObject.set(x, "colWidth", value.asInstanceOf[js.Any])
+          inline def setColWidth(value: String): Self = StObject.set(x, "colWidth", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setColWidthUndefined: Self = StObject.set(x, "colWidth", js.undefined)
+          inline def setColWidthUndefined: Self = StObject.set(x, "colWidth", js.undefined)
           
-          @scala.inline
-          def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+          inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+          inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
           
-          @scala.inline
-          def setDefaultSizeX(value: Double): Self = StObject.set(x, "defaultSizeX", value.asInstanceOf[js.Any])
+          inline def setDefaultSizeX(value: Double): Self = StObject.set(x, "defaultSizeX", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDefaultSizeXUndefined: Self = StObject.set(x, "defaultSizeX", js.undefined)
+          inline def setDefaultSizeXUndefined: Self = StObject.set(x, "defaultSizeX", js.undefined)
           
-          @scala.inline
-          def setDefaultSizeY(value: Double): Self = StObject.set(x, "defaultSizeY", value.asInstanceOf[js.Any])
+          inline def setDefaultSizeY(value: Double): Self = StObject.set(x, "defaultSizeY", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDefaultSizeYUndefined: Self = StObject.set(x, "defaultSizeY", js.undefined)
+          inline def setDefaultSizeYUndefined: Self = StObject.set(x, "defaultSizeY", js.undefined)
           
-          @scala.inline
-          def setDraggable(value: Drag): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+          inline def setDraggable(value: Drag): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+          inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
           
-          @scala.inline
-          def setFloating(value: Boolean): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
+          inline def setFloating(value: Boolean): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFloatingUndefined: Self = StObject.set(x, "floating", js.undefined)
+          inline def setFloatingUndefined: Self = StObject.set(x, "floating", js.undefined)
           
-          @scala.inline
-          def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+          inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
+          inline def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
           
-          @scala.inline
-          def setMargins(value: js.Array[Double]): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
+          inline def setMargins(value: js.Array[Double]): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMarginsUndefined: Self = StObject.set(x, "margins", js.undefined)
+          inline def setMarginsUndefined: Self = StObject.set(x, "margins", js.undefined)
           
-          @scala.inline
-          def setMarginsVarargs(value: Double*): Self = StObject.set(x, "margins", js.Array(value :_*))
+          inline def setMarginsVarargs(value: Double*): Self = StObject.set(x, "margins", js.Array(value :_*))
           
-          @scala.inline
-          def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
+          inline def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
+          inline def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
           
-          @scala.inline
-          def setMaxSizeX(value: Double): Self = StObject.set(x, "maxSizeX", value.asInstanceOf[js.Any])
+          inline def setMaxSizeX(value: Double): Self = StObject.set(x, "maxSizeX", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMaxSizeXUndefined: Self = StObject.set(x, "maxSizeX", js.undefined)
+          inline def setMaxSizeXUndefined: Self = StObject.set(x, "maxSizeX", js.undefined)
           
-          @scala.inline
-          def setMaxSizeY(value: Double): Self = StObject.set(x, "maxSizeY", value.asInstanceOf[js.Any])
+          inline def setMaxSizeY(value: Double): Self = StObject.set(x, "maxSizeY", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMaxSizeYUndefined: Self = StObject.set(x, "maxSizeY", js.undefined)
+          inline def setMaxSizeYUndefined: Self = StObject.set(x, "maxSizeY", js.undefined)
           
-          @scala.inline
-          def setMinColumns(value: Double): Self = StObject.set(x, "minColumns", value.asInstanceOf[js.Any])
+          inline def setMinColumns(value: Double): Self = StObject.set(x, "minColumns", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMinColumnsUndefined: Self = StObject.set(x, "minColumns", js.undefined)
+          inline def setMinColumnsUndefined: Self = StObject.set(x, "minColumns", js.undefined)
           
-          @scala.inline
-          def setMinRows(value: Double): Self = StObject.set(x, "minRows", value.asInstanceOf[js.Any])
+          inline def setMinRows(value: Double): Self = StObject.set(x, "minRows", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMinRowsUndefined: Self = StObject.set(x, "minRows", js.undefined)
+          inline def setMinRowsUndefined: Self = StObject.set(x, "minRows", js.undefined)
           
-          @scala.inline
-          def setMinSizeX(value: Double): Self = StObject.set(x, "minSizeX", value.asInstanceOf[js.Any])
+          inline def setMinSizeX(value: Double): Self = StObject.set(x, "minSizeX", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMinSizeXUndefined: Self = StObject.set(x, "minSizeX", js.undefined)
+          inline def setMinSizeXUndefined: Self = StObject.set(x, "minSizeX", js.undefined)
           
-          @scala.inline
-          def setMinSizeY(value: Double): Self = StObject.set(x, "minSizeY", value.asInstanceOf[js.Any])
+          inline def setMinSizeY(value: Double): Self = StObject.set(x, "minSizeY", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMinSizeYUndefined: Self = StObject.set(x, "minSizeY", js.undefined)
+          inline def setMinSizeYUndefined: Self = StObject.set(x, "minSizeY", js.undefined)
           
-          @scala.inline
-          def setMobileBreakPoint(value: Double): Self = StObject.set(x, "mobileBreakPoint", value.asInstanceOf[js.Any])
+          inline def setMobileBreakPoint(value: Double): Self = StObject.set(x, "mobileBreakPoint", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMobileBreakPointUndefined: Self = StObject.set(x, "mobileBreakPoint", js.undefined)
+          inline def setMobileBreakPointUndefined: Self = StObject.set(x, "mobileBreakPoint", js.undefined)
           
-          @scala.inline
-          def setMobileModeEnabled(value: Boolean): Self = StObject.set(x, "mobileModeEnabled", value.asInstanceOf[js.Any])
+          inline def setMobileModeEnabled(value: Boolean): Self = StObject.set(x, "mobileModeEnabled", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMobileModeEnabledUndefined: Self = StObject.set(x, "mobileModeEnabled", js.undefined)
+          inline def setMobileModeEnabledUndefined: Self = StObject.set(x, "mobileModeEnabled", js.undefined)
           
-          @scala.inline
-          def setOuterMargin(value: Boolean): Self = StObject.set(x, "outerMargin", value.asInstanceOf[js.Any])
+          inline def setOuterMargin(value: Boolean): Self = StObject.set(x, "outerMargin", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOuterMarginUndefined: Self = StObject.set(x, "outerMargin", js.undefined)
+          inline def setOuterMarginUndefined: Self = StObject.set(x, "outerMargin", js.undefined)
           
-          @scala.inline
-          def setPushing(value: Boolean): Self = StObject.set(x, "pushing", value.asInstanceOf[js.Any])
+          inline def setPushing(value: Boolean): Self = StObject.set(x, "pushing", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPushingUndefined: Self = StObject.set(x, "pushing", js.undefined)
+          inline def setPushingUndefined: Self = StObject.set(x, "pushing", js.undefined)
           
-          @scala.inline
-          def setResizable(value: Enabled): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+          inline def setResizable(value: Enabled): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+          inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
           
-          @scala.inline
-          def setRowHeight(value: String): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+          inline def setRowHeight(value: String): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+          inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
           
-          @scala.inline
-          def setSaveGridItemCalculatedHeightInMobile(value: Boolean): Self = StObject.set(x, "saveGridItemCalculatedHeightInMobile", value.asInstanceOf[js.Any])
+          inline def setSaveGridItemCalculatedHeightInMobile(value: Boolean): Self = StObject.set(x, "saveGridItemCalculatedHeightInMobile", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSaveGridItemCalculatedHeightInMobileUndefined: Self = StObject.set(x, "saveGridItemCalculatedHeightInMobile", js.undefined)
+          inline def setSaveGridItemCalculatedHeightInMobileUndefined: Self = StObject.set(x, "saveGridItemCalculatedHeightInMobile", js.undefined)
           
-          @scala.inline
-          def setSwapping(value: Boolean): Self = StObject.set(x, "swapping", value.asInstanceOf[js.Any])
+          inline def setSwapping(value: Boolean): Self = StObject.set(x, "swapping", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSwappingUndefined: Self = StObject.set(x, "swapping", js.undefined)
+          inline def setSwappingUndefined: Self = StObject.set(x, "swapping", js.undefined)
           
-          @scala.inline
-          def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+          inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+          inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
         }
       }
       
@@ -276,26 +225,20 @@ object mod extends Shortcut {
       }
       object StandardGridsterItem {
         
-        @scala.inline
-        def apply(col: Double, row: Double, sizeX: Double, sizeY: Double): StandardGridsterItem = {
+        inline def apply(col: Double, row: Double, sizeX: Double, sizeY: Double): StandardGridsterItem = {
           val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], sizeX = sizeX.asInstanceOf[js.Any], sizeY = sizeY.asInstanceOf[js.Any])
           __obj.asInstanceOf[StandardGridsterItem]
         }
         
-        @scala.inline
-        implicit class StandardGridsterItemMutableBuilder[Self <: StandardGridsterItem] (val x: Self) extends AnyVal {
+        extension [Self <: StandardGridsterItem](x: Self) {
           
-          @scala.inline
-          def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+          inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+          inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSizeX(value: Double): Self = StObject.set(x, "sizeX", value.asInstanceOf[js.Any])
+          inline def setSizeX(value: Double): Self = StObject.set(x, "sizeX", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSizeY(value: Double): Self = StObject.set(x, "sizeY", value.asInstanceOf[js.Any])
+          inline def setSizeY(value: Double): Self = StObject.set(x, "sizeY", value.asInstanceOf[js.Any])
         }
       }
     }

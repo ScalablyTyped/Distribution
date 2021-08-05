@@ -19,28 +19,21 @@ trait Op
 }
 object Op {
   
-  @scala.inline
-  def apply(op: ScaleField): Op = {
+  inline def apply(op: ScaleField): Op = {
     val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any])
     __obj.asInstanceOf[Op]
   }
   
-  @scala.inline
-  implicit class OpMutableBuilder[Self <: Op] (val x: Self) extends AnyVal {
+  extension [Self <: Op](x: Self) {
     
-    @scala.inline
-    def setField(value: ScaleField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: ScaleField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setOp(value: ScaleField): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: ScaleField): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
   }
 }

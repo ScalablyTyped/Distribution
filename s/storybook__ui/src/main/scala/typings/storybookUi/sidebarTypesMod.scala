@@ -17,17 +17,13 @@ object sidebarTypesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isClearType(x: js.Any): /* is @storybook/ui.@storybook/ui/dist/components/sidebar/types.ClearType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClearType")(x.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/ui.@storybook/ui/dist/components/sidebar/types.ClearType */ Boolean]
+  inline def isClearType(x: js.Any): /* is @storybook/ui.@storybook/ui/dist/components/sidebar/types.ClearType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClearType")(x.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/ui.@storybook/ui/dist/components/sidebar/types.ClearType */ Boolean]
   
-  @scala.inline
-  def isCloseType(x: js.Any): /* is @storybook/ui.@storybook/ui/dist/components/sidebar/types.CloseType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCloseType")(x.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/ui.@storybook/ui/dist/components/sidebar/types.CloseType */ Boolean]
+  inline def isCloseType(x: js.Any): /* is @storybook/ui.@storybook/ui/dist/components/sidebar/types.CloseType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCloseType")(x.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/ui.@storybook/ui/dist/components/sidebar/types.CloseType */ Boolean]
   
-  @scala.inline
-  def isExpandType(x: js.Any): /* is @storybook/ui.@storybook/ui/dist/components/sidebar/types.ExpandType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExpandType")(x.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/ui.@storybook/ui/dist/components/sidebar/types.ExpandType */ Boolean]
+  inline def isExpandType(x: js.Any): /* is @storybook/ui.@storybook/ui/dist/components/sidebar/types.ExpandType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExpandType")(x.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/ui.@storybook/ui/dist/components/sidebar/types.ExpandType */ Boolean]
   
-  @scala.inline
-  def isSearchResult(x: js.Any): /* is @storybook/ui.@storybook/ui/dist/components/sidebar/types.SearchResult */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSearchResult")(x.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/ui.@storybook/ui/dist/components/sidebar/types.SearchResult */ Boolean]
+  inline def isSearchResult(x: js.Any): /* is @storybook/ui.@storybook/ui/dist/components/sidebar/types.SearchResult */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSearchResult")(x.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/ui.@storybook/ui/dist/components/sidebar/types.SearchResult */ Boolean]
   
   trait ClearType
     extends StObject
@@ -37,17 +33,14 @@ object sidebarTypesMod {
   }
   object ClearType {
     
-    @scala.inline
-    def apply(clearLastViewed: () => Unit): ClearType = {
+    inline def apply(clearLastViewed: () => Unit): ClearType = {
       val __obj = js.Dynamic.literal(clearLastViewed = js.Any.fromFunction0(clearLastViewed))
       __obj.asInstanceOf[ClearType]
     }
     
-    @scala.inline
-    implicit class ClearTypeMutableBuilder[Self <: ClearType] (val x: Self) extends AnyVal {
+    extension [Self <: ClearType](x: Self) {
       
-      @scala.inline
-      def setClearLastViewed(value: () => Unit): Self = StObject.set(x, "clearLastViewed", js.Any.fromFunction0(value))
+      inline def setClearLastViewed(value: () => Unit): Self = StObject.set(x, "clearLastViewed", js.Any.fromFunction0(value))
     }
   }
   
@@ -59,17 +52,14 @@ object sidebarTypesMod {
   }
   object CloseType {
     
-    @scala.inline
-    def apply(closeMenu: () => Unit): CloseType = {
+    inline def apply(closeMenu: () => Unit): CloseType = {
       val __obj = js.Dynamic.literal(closeMenu = js.Any.fromFunction0(closeMenu))
       __obj.asInstanceOf[CloseType]
     }
     
-    @scala.inline
-    implicit class CloseTypeMutableBuilder[Self <: CloseType] (val x: Self) extends AnyVal {
+    extension [Self <: CloseType](x: Self) {
       
-      @scala.inline
-      def setCloseMenu(value: () => Unit): Self = StObject.set(x, "closeMenu", js.Any.fromFunction0(value))
+      inline def setCloseMenu(value: () => Unit): Self = StObject.set(x, "closeMenu", js.Any.fromFunction0(value))
     }
   }
   
@@ -81,23 +71,18 @@ object sidebarTypesMod {
   }
   object CombinedDataset {
     
-    @scala.inline
-    def apply(entries: js.Array[js.Tuple2[String, RefType]], hash: Refs): CombinedDataset = {
+    inline def apply(entries: js.Array[js.Tuple2[String, RefType]], hash: Refs): CombinedDataset = {
       val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any])
       __obj.asInstanceOf[CombinedDataset]
     }
     
-    @scala.inline
-    implicit class CombinedDatasetMutableBuilder[Self <: CombinedDataset] (val x: Self) extends AnyVal {
+    extension [Self <: CombinedDataset](x: Self) {
       
-      @scala.inline
-      def setEntries(value: js.Array[js.Tuple2[String, RefType]]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: js.Array[js.Tuple2[String, RefType]]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntriesVarargs(value: (js.Tuple2[String, RefType])*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: (js.Tuple2[String, RefType])*): Self = StObject.set(x, "entries", js.Array(value :_*))
       
-      @scala.inline
-      def setHash(value: Refs): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Refs): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +97,22 @@ object sidebarTypesMod {
   trait DownshiftItem extends StObject
   object DownshiftItem {
     
-    @scala.inline
-    def ClearType(clearLastViewed: () => Unit): typings.storybookUi.sidebarTypesMod.ClearType = {
+    inline def ClearType(clearLastViewed: () => Unit): typings.storybookUi.sidebarTypesMod.ClearType = {
       val __obj = js.Dynamic.literal(clearLastViewed = js.Any.fromFunction0(clearLastViewed))
       __obj.asInstanceOf[typings.storybookUi.sidebarTypesMod.ClearType]
     }
     
-    @scala.inline
-    def CloseType(closeMenu: () => Unit): typings.storybookUi.sidebarTypesMod.CloseType = {
+    inline def CloseType(closeMenu: () => Unit): typings.storybookUi.sidebarTypesMod.CloseType = {
       val __obj = js.Dynamic.literal(closeMenu = js.Any.fromFunction0(closeMenu))
       __obj.asInstanceOf[typings.storybookUi.sidebarTypesMod.CloseType]
     }
     
-    @scala.inline
-    def ExpandType(moreCount: Double, showAll: () => Unit, totalCount: Double): typings.storybookUi.sidebarTypesMod.ExpandType = {
+    inline def ExpandType(moreCount: Double, showAll: () => Unit, totalCount: Double): typings.storybookUi.sidebarTypesMod.ExpandType = {
       val __obj = js.Dynamic.literal(moreCount = moreCount.asInstanceOf[js.Any], showAll = js.Any.fromFunction0(showAll), totalCount = totalCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.storybookUi.sidebarTypesMod.ExpandType]
     }
     
-    @scala.inline
-    def SearchResult(item: SearchItem, matches: js.Any, score: Double): typings.storybookUi.sidebarTypesMod.SearchResult = {
+    inline def SearchResult(item: SearchItem, matches: js.Any, score: Double): typings.storybookUi.sidebarTypesMod.SearchResult = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.storybookUi.sidebarTypesMod.SearchResult]
     }
@@ -149,23 +130,18 @@ object sidebarTypesMod {
   }
   object ExpandType {
     
-    @scala.inline
-    def apply(moreCount: Double, showAll: () => Unit, totalCount: Double): ExpandType = {
+    inline def apply(moreCount: Double, showAll: () => Unit, totalCount: Double): ExpandType = {
       val __obj = js.Dynamic.literal(moreCount = moreCount.asInstanceOf[js.Any], showAll = js.Any.fromFunction0(showAll), totalCount = totalCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpandType]
     }
     
-    @scala.inline
-    implicit class ExpandTypeMutableBuilder[Self <: ExpandType] (val x: Self) extends AnyVal {
+    extension [Self <: ExpandType](x: Self) {
       
-      @scala.inline
-      def setMoreCount(value: Double): Self = StObject.set(x, "moreCount", value.asInstanceOf[js.Any])
+      inline def setMoreCount(value: Double): Self = StObject.set(x, "moreCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowAll(value: () => Unit): Self = StObject.set(x, "showAll", js.Any.fromFunction0(value))
+      inline def setShowAll(value: () => Unit): Self = StObject.set(x, "showAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+      inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -189,41 +165,29 @@ object sidebarTypesMod {
   trait Item extends StObject
   object Item {
     
-    @scala.inline
-    def args: typings.storybookUi.storybookUiStrings.args = "args".asInstanceOf[typings.storybookUi.storybookUiStrings.args]
+    inline def args: typings.storybookUi.storybookUiStrings.args = "args".asInstanceOf[typings.storybookUi.storybookUiStrings.args]
     
-    @scala.inline
-    def children: typings.storybookUi.storybookUiStrings.children = "children".asInstanceOf[typings.storybookUi.storybookUiStrings.children]
+    inline def children: typings.storybookUi.storybookUiStrings.children = "children".asInstanceOf[typings.storybookUi.storybookUiStrings.children]
     
-    @scala.inline
-    def depth: typings.storybookUi.storybookUiStrings.depth = "depth".asInstanceOf[typings.storybookUi.storybookUiStrings.depth]
+    inline def depth: typings.storybookUi.storybookUiStrings.depth = "depth".asInstanceOf[typings.storybookUi.storybookUiStrings.depth]
     
-    @scala.inline
-    def id: typings.storybookUi.storybookUiStrings.id = "id".asInstanceOf[typings.storybookUi.storybookUiStrings.id]
+    inline def id: typings.storybookUi.storybookUiStrings.id = "id".asInstanceOf[typings.storybookUi.storybookUiStrings.id]
     
-    @scala.inline
-    def isComponent: typings.storybookUi.storybookUiStrings.isComponent = "isComponent".asInstanceOf[typings.storybookUi.storybookUiStrings.isComponent]
+    inline def isComponent: typings.storybookUi.storybookUiStrings.isComponent = "isComponent".asInstanceOf[typings.storybookUi.storybookUiStrings.isComponent]
     
-    @scala.inline
-    def isLeaf: typings.storybookUi.storybookUiStrings.isLeaf = "isLeaf".asInstanceOf[typings.storybookUi.storybookUiStrings.isLeaf]
+    inline def isLeaf: typings.storybookUi.storybookUiStrings.isLeaf = "isLeaf".asInstanceOf[typings.storybookUi.storybookUiStrings.isLeaf]
     
-    @scala.inline
-    def isRoot: typings.storybookUi.storybookUiStrings.isRoot = "isRoot".asInstanceOf[typings.storybookUi.storybookUiStrings.isRoot]
+    inline def isRoot: typings.storybookUi.storybookUiStrings.isRoot = "isRoot".asInstanceOf[typings.storybookUi.storybookUiStrings.isRoot]
     
-    @scala.inline
-    def kind: typings.storybookUi.storybookUiStrings.kind = "kind".asInstanceOf[typings.storybookUi.storybookUiStrings.kind]
+    inline def kind: typings.storybookUi.storybookUiStrings.kind = "kind".asInstanceOf[typings.storybookUi.storybookUiStrings.kind]
     
-    @scala.inline
-    def name: typings.storybookUi.storybookUiStrings.name = "name".asInstanceOf[typings.storybookUi.storybookUiStrings.name]
+    inline def name: typings.storybookUi.storybookUiStrings.name = "name".asInstanceOf[typings.storybookUi.storybookUiStrings.name]
     
-    @scala.inline
-    def parameters: typings.storybookUi.storybookUiStrings.parameters = "parameters".asInstanceOf[typings.storybookUi.storybookUiStrings.parameters]
+    inline def parameters: typings.storybookUi.storybookUiStrings.parameters = "parameters".asInstanceOf[typings.storybookUi.storybookUiStrings.parameters]
     
-    @scala.inline
-    def parent: typings.storybookUi.storybookUiStrings.parent = "parent".asInstanceOf[typings.storybookUi.storybookUiStrings.parent]
+    inline def parent: typings.storybookUi.storybookUiStrings.parent = "parent".asInstanceOf[typings.storybookUi.storybookUiStrings.parent]
     
-    @scala.inline
-    def refId: typings.storybookUi.storybookUiStrings.refId = "refId".asInstanceOf[typings.storybookUi.storybookUiStrings.refId]
+    inline def refId: typings.storybookUi.storybookUiStrings.refId = "refId".asInstanceOf[typings.storybookUi.storybookUiStrings.refId]
   }
   
   trait ItemRef extends StObject {
@@ -234,20 +198,16 @@ object sidebarTypesMod {
   }
   object ItemRef {
     
-    @scala.inline
-    def apply(itemId: String, refId: String): ItemRef = {
+    inline def apply(itemId: String, refId: String): ItemRef = {
       val __obj = js.Dynamic.literal(itemId = itemId.asInstanceOf[js.Any], refId = refId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ItemRef]
     }
     
-    @scala.inline
-    implicit class ItemRefMutableBuilder[Self <: ItemRef] (val x: Self) extends AnyVal {
+    extension [Self <: ItemRef](x: Self) {
       
-      @scala.inline
-      def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+      inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+      inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -263,29 +223,22 @@ object sidebarTypesMod {
   }
   object Match {
     
-    @scala.inline
-    def apply(arrayIndex: Double, indices: js.Array[js.Tuple2[Double, Double]], key: name | path, value: String): Match = {
+    inline def apply(arrayIndex: Double, indices: js.Array[js.Tuple2[Double, Double]], key: name | path, value: String): Match = {
       val __obj = js.Dynamic.literal(arrayIndex = arrayIndex.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Match]
     }
     
-    @scala.inline
-    implicit class MatchMutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
+    extension [Self <: Match](x: Self) {
       
-      @scala.inline
-      def setArrayIndex(value: Double): Self = StObject.set(x, "arrayIndex", value.asInstanceOf[js.Any])
+      inline def setArrayIndex(value: Double): Self = StObject.set(x, "arrayIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndices(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+      inline def setIndices(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicesVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "indices", js.Array(value :_*))
+      inline def setIndicesVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "indices", js.Array(value :_*))
       
-      @scala.inline
-      def setKey(value: name | path): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: name | path): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -308,17 +261,14 @@ object sidebarTypesMod {
   }
   object SearchResult {
     
-    @scala.inline
-    def apply(item: SearchItem, matches: js.Any, score: Double): SearchResult = {
+    inline def apply(item: SearchItem, matches: js.Any, score: Double): SearchResult = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchResult]
     }
     
-    @scala.inline
-    implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
+    extension [Self <: SearchResult](x: Self) {
       
-      @scala.inline
-      def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+      inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     }
   }
   
@@ -332,20 +282,16 @@ object sidebarTypesMod {
   }
   object StoryRef {
     
-    @scala.inline
-    def apply(refId: String, storyId: String): StoryRef = {
+    inline def apply(refId: String, storyId: String): StoryRef = {
       val __obj = js.Dynamic.literal(refId = refId.asInstanceOf[js.Any], storyId = storyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoryRef]
     }
     
-    @scala.inline
-    implicit class StoryRefMutableBuilder[Self <: StoryRef] (val x: Self) extends AnyVal {
+    extension [Self <: StoryRef](x: Self) {
       
-      @scala.inline
-      def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+      inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
+      inline def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
     }
   }
 }

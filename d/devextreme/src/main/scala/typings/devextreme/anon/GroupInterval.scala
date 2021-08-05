@@ -16,37 +16,27 @@ trait GroupInterval extends StObject {
 }
 object GroupInterval {
   
-  @scala.inline
-  def apply(): GroupInterval = {
+  inline def apply(): GroupInterval = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupInterval]
   }
   
-  @scala.inline
-  implicit class GroupIntervalMutableBuilder[Self <: GroupInterval] (val x: Self) extends AnyVal {
+  extension [Self <: GroupInterval](x: Self) {
     
-    @scala.inline
-    def setGroupInterval(value: String | Double): Self = StObject.set(x, "groupInterval", value.asInstanceOf[js.Any])
+    inline def setGroupInterval(value: String | Double): Self = StObject.set(x, "groupInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIntervalUndefined: Self = StObject.set(x, "groupInterval", js.undefined)
+    inline def setGroupIntervalUndefined: Self = StObject.set(x, "groupInterval", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setValue(value: String | Double | typings.std.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double | typings.std.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
+    inline def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueTextUndefined: Self = StObject.set(x, "valueText", js.undefined)
+    inline def setValueTextUndefined: Self = StObject.set(x, "valueText", js.undefined)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

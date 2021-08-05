@@ -19,8 +19,7 @@ object backoffMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def exponential(options: js.Any): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(options.asInstanceOf[js.Any]).asInstanceOf[Backoff]
+    inline def exponential(options: js.Any): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(options.asInstanceOf[js.Any]).asInstanceOf[Backoff]
   }
   
   @JSImport("operation-retrier/lib/backoff", "Backoff")
@@ -31,31 +30,31 @@ object backoffMod {
     def backoff(): Unit = js.native
     def backoff(err: js.Any): Unit = js.native
     
-    var backoffDelay: js.Any = js.native
+    /* private */ var backoffDelay: js.Any = js.native
     
-    var backoffNumber: js.Any = js.native
+    /* private */ var backoffNumber: js.Any = js.native
     
-    val factor: js.Any = js.native
+    /* private */ val factor: js.Any = js.native
     
     def failAfter(maxNumberOfRetry: js.Any): Unit = js.native
     
-    val initialDelay: js.Any = js.native
+    /* private */ val initialDelay: js.Any = js.native
     
-    val maxDelay: js.Any = js.native
+    /* private */ val maxDelay: js.Any = js.native
     
-    var maxNumberOfRetry: js.Any = js.native
+    /* private */ var maxNumberOfRetry: js.Any = js.native
     
     def next(): Double = js.native
     
-    var nextBackoffDelay: js.Any = js.native
+    /* private */ var nextBackoffDelay: js.Any = js.native
     
     def onBackoff(): Unit = js.native
     
-    val randomisationFactor: js.Any = js.native
+    /* private */ val randomisationFactor: js.Any = js.native
     
     def reset(): Unit = js.native
     
-    var timeoutID: js.Any = js.native
+    /* private */ var timeoutID: js.Any = js.native
   }
   object Backoff {
     
@@ -64,7 +63,6 @@ object backoffMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def exponential(options: js.Any): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(options.asInstanceOf[js.Any]).asInstanceOf[Backoff]
+    inline def exponential(options: js.Any): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(options.asInstanceOf[js.Any]).asInstanceOf[Backoff]
   }
 }

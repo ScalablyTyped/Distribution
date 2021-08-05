@@ -23,31 +23,23 @@ trait Shard extends StObject {
 }
 object Shard {
   
-  @scala.inline
-  def apply(): Shard = {
+  inline def apply(): Shard = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Shard]
   }
   
-  @scala.inline
-  implicit class ShardMutableBuilder[Self <: Shard] (val x: Self) extends AnyVal {
+  extension [Self <: Shard](x: Self) {
     
-    @scala.inline
-    def setParentShardId(value: ShardId): Self = StObject.set(x, "ParentShardId", value.asInstanceOf[js.Any])
+    inline def setParentShardId(value: ShardId): Self = StObject.set(x, "ParentShardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentShardIdUndefined: Self = StObject.set(x, "ParentShardId", js.undefined)
+    inline def setParentShardIdUndefined: Self = StObject.set(x, "ParentShardId", js.undefined)
     
-    @scala.inline
-    def setSequenceNumberRange(value: SequenceNumberRange): Self = StObject.set(x, "SequenceNumberRange", value.asInstanceOf[js.Any])
+    inline def setSequenceNumberRange(value: SequenceNumberRange): Self = StObject.set(x, "SequenceNumberRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceNumberRangeUndefined: Self = StObject.set(x, "SequenceNumberRange", js.undefined)
+    inline def setSequenceNumberRangeUndefined: Self = StObject.set(x, "SequenceNumberRange", js.undefined)
     
-    @scala.inline
-    def setShardId(value: ShardId): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
+    inline def setShardId(value: ShardId): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardIdUndefined: Self = StObject.set(x, "ShardId", js.undefined)
+    inline def setShardIdUndefined: Self = StObject.set(x, "ShardId", js.undefined)
   }
 }

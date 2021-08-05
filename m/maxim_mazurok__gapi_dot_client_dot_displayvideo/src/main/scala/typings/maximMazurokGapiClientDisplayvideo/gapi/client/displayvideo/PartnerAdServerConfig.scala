@@ -11,19 +11,15 @@ trait PartnerAdServerConfig extends StObject {
 }
 object PartnerAdServerConfig {
   
-  @scala.inline
-  def apply(): PartnerAdServerConfig = {
+  inline def apply(): PartnerAdServerConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartnerAdServerConfig]
   }
   
-  @scala.inline
-  implicit class PartnerAdServerConfigMutableBuilder[Self <: PartnerAdServerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PartnerAdServerConfig](x: Self) {
     
-    @scala.inline
-    def setMeasurementConfig(value: MeasurementConfig): Self = StObject.set(x, "measurementConfig", value.asInstanceOf[js.Any])
+    inline def setMeasurementConfig(value: MeasurementConfig): Self = StObject.set(x, "measurementConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasurementConfigUndefined: Self = StObject.set(x, "measurementConfig", js.undefined)
+    inline def setMeasurementConfigUndefined: Self = StObject.set(x, "measurementConfig", js.undefined)
   }
 }

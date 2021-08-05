@@ -12,25 +12,19 @@ trait IsCaseSensitive extends StObject {
 }
 object IsCaseSensitive {
   
-  @scala.inline
-  def apply(): IsCaseSensitive = {
+  inline def apply(): IsCaseSensitive = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsCaseSensitive]
   }
   
-  @scala.inline
-  implicit class IsCaseSensitiveMutableBuilder[Self <: IsCaseSensitive] (val x: Self) extends AnyVal {
+  extension [Self <: IsCaseSensitive](x: Self) {
     
-    @scala.inline
-    def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "isCaseSensitive", value.asInstanceOf[js.Any])
+    inline def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "isCaseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCaseSensitiveUndefined: Self = StObject.set(x, "isCaseSensitive", js.undefined)
+    inline def setIsCaseSensitiveUndefined: Self = StObject.set(x, "isCaseSensitive", js.undefined)
     
-    @scala.inline
-    def setStripTrailingSlash(value: Boolean): Self = StObject.set(x, "stripTrailingSlash", value.asInstanceOf[js.Any])
+    inline def setStripTrailingSlash(value: Boolean): Self = StObject.set(x, "stripTrailingSlash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripTrailingSlashUndefined: Self = StObject.set(x, "stripTrailingSlash", js.undefined)
+    inline def setStripTrailingSlashUndefined: Self = StObject.set(x, "stripTrailingSlash", js.undefined)
   }
 }

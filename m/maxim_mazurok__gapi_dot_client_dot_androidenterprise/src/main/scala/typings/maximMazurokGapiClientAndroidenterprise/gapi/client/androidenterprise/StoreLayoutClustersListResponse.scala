@@ -11,22 +11,17 @@ trait StoreLayoutClustersListResponse extends StObject {
 }
 object StoreLayoutClustersListResponse {
   
-  @scala.inline
-  def apply(): StoreLayoutClustersListResponse = {
+  inline def apply(): StoreLayoutClustersListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StoreLayoutClustersListResponse]
   }
   
-  @scala.inline
-  implicit class StoreLayoutClustersListResponseMutableBuilder[Self <: StoreLayoutClustersListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StoreLayoutClustersListResponse](x: Self) {
     
-    @scala.inline
-    def setCluster(value: js.Array[StoreCluster]): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: js.Array[StoreCluster]): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setClusterVarargs(value: StoreCluster*): Self = StObject.set(x, "cluster", js.Array(value :_*))
+    inline def setClusterVarargs(value: StoreCluster*): Self = StObject.set(x, "cluster", js.Array(value :_*))
   }
 }

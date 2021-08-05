@@ -12,19 +12,15 @@ trait Days extends StObject {
 }
 object Days {
   
-  @scala.inline
-  def apply(Days: Double, Enabled: Boolean): Days = {
+  inline def apply(Days: Double, Enabled: Boolean): Days = {
     val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Days]
   }
   
-  @scala.inline
-  implicit class DaysMutableBuilder[Self <: Days] (val x: Self) extends AnyVal {
+  extension [Self <: Days](x: Self) {
     
-    @scala.inline
-    def setDays(value: Double): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
+    inline def setDays(value: Double): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
   }
 }

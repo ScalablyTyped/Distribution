@@ -14,8 +14,7 @@ trait StringFieldDef[F /* <: Field */]
      with FormatMixins
 object StringFieldDef {
   
-  @scala.inline
-  def apply[F /* <: Field */](): StringFieldDef[F] = {
+  inline def apply[F /* <: Field */](): StringFieldDef[F] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StringFieldDef[F]]
   }

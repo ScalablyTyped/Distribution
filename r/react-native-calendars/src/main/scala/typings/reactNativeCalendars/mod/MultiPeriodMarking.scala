@@ -13,19 +13,15 @@ trait MultiPeriodMarking
 }
 object MultiPeriodMarking {
   
-  @scala.inline
-  def apply(periods: js.Array[Color]): MultiPeriodMarking = {
+  inline def apply(periods: js.Array[Color]): MultiPeriodMarking = {
     val __obj = js.Dynamic.literal(periods = periods.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiPeriodMarking]
   }
   
-  @scala.inline
-  implicit class MultiPeriodMarkingMutableBuilder[Self <: MultiPeriodMarking] (val x: Self) extends AnyVal {
+  extension [Self <: MultiPeriodMarking](x: Self) {
     
-    @scala.inline
-    def setPeriods(value: js.Array[Color]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
+    inline def setPeriods(value: js.Array[Color]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodsVarargs(value: Color*): Self = StObject.set(x, "periods", js.Array(value :_*))
+    inline def setPeriodsVarargs(value: Color*): Self = StObject.set(x, "periods", js.Array(value :_*))
   }
 }

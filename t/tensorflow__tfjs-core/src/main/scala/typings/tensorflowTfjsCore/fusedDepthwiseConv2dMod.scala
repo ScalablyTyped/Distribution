@@ -13,8 +13,7 @@ object fusedDepthwiseConv2dMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def depthwiseConv2d[T /* <: Tensor3D | Tensor4D */](
+  inline def depthwiseConv2d[T /* <: Tensor3D | Tensor4D */](
     hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: Bias[T]
   ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights.asInstanceOf[js.Any]).asInstanceOf[T]
 }

@@ -28,35 +28,27 @@ trait ContainerStartedEvent extends StObject {
 }
 object ContainerStartedEvent {
   
-  @scala.inline
-  def apply(): ContainerStartedEvent = {
+  inline def apply(): ContainerStartedEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerStartedEvent]
   }
   
-  @scala.inline
-  implicit class ContainerStartedEventMutableBuilder[Self <: ContainerStartedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerStartedEvent](x: Self) {
     
-    @scala.inline
-    def setActionId(value: Double): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: Double): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
-    @scala.inline
-    def setPortMappings(
+    inline def setPortMappings(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
       */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.ContainerStartedEvent & TopLevel[js.Any]
     ): Self = StObject.set(x, "portMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortMappingsUndefined: Self = StObject.set(x, "portMappings", js.undefined)
+    inline def setPortMappingsUndefined: Self = StObject.set(x, "portMappings", js.undefined)
   }
 }

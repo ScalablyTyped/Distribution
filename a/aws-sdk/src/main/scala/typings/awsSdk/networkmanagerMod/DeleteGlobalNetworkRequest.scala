@@ -13,16 +13,13 @@ trait DeleteGlobalNetworkRequest extends StObject {
 }
 object DeleteGlobalNetworkRequest {
   
-  @scala.inline
-  def apply(GlobalNetworkId: String): DeleteGlobalNetworkRequest = {
+  inline def apply(GlobalNetworkId: String): DeleteGlobalNetworkRequest = {
     val __obj = js.Dynamic.literal(GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGlobalNetworkRequest]
   }
   
-  @scala.inline
-  implicit class DeleteGlobalNetworkRequestMutableBuilder[Self <: DeleteGlobalNetworkRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGlobalNetworkRequest](x: Self) {
     
-    @scala.inline
-    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
   }
 }

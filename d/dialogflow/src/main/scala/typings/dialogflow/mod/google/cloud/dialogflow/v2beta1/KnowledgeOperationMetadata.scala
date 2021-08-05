@@ -79,10 +79,8 @@ object KnowledgeOperationMetadata {
     * @returns KnowledgeOperationMetadata instance
     */
   /* static member */
-  @scala.inline
-  def create(): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[KnowledgeOperationMetadata]
-  @scala.inline
-  def create(properties: IKnowledgeOperationMetadata): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
+  inline def create(): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[KnowledgeOperationMetadata]
+  inline def create(properties: IKnowledgeOperationMetadata): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
   
   /**
     * Decodes a KnowledgeOperationMetadata message from the specified reader or buffer.
@@ -93,14 +91,10 @@ object KnowledgeOperationMetadata {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
-  @scala.inline
-  def decode(reader: Reader, length: Double): KnowledgeOperationMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[KnowledgeOperationMetadata]
-  @scala.inline
-  def decode(reader: Uint8Array): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): KnowledgeOperationMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[KnowledgeOperationMetadata]
+  inline def decode(reader: Reader): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
+  inline def decode(reader: Reader, length: Double): KnowledgeOperationMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[KnowledgeOperationMetadata]
+  inline def decode(reader: Uint8Array): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
+  inline def decode(reader: Uint8Array, length: Double): KnowledgeOperationMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[KnowledgeOperationMetadata]
   
   /**
     * Decodes a KnowledgeOperationMetadata message from the specified reader or buffer, length delimited.
@@ -110,10 +104,8 @@ object KnowledgeOperationMetadata {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
+  inline def decodeDelimited(reader: Reader): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
+  inline def decodeDelimited(reader: Uint8Array): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
   
   /**
     * Encodes the specified KnowledgeOperationMetadata message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.verify|verify} messages.
@@ -122,10 +114,8 @@ object KnowledgeOperationMetadata {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: IKnowledgeOperationMetadata): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IKnowledgeOperationMetadata, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IKnowledgeOperationMetadata): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IKnowledgeOperationMetadata, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified KnowledgeOperationMetadata message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.verify|verify} messages.
@@ -134,10 +124,8 @@ object KnowledgeOperationMetadata {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: IKnowledgeOperationMetadata): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IKnowledgeOperationMetadata, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IKnowledgeOperationMetadata): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IKnowledgeOperationMetadata, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a KnowledgeOperationMetadata message from a plain object. Also converts values to their respective internal types.
@@ -145,8 +133,7 @@ object KnowledgeOperationMetadata {
     * @returns KnowledgeOperationMetadata
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
+  inline def fromObject(`object`: StringDictionary[js.Any]): KnowledgeOperationMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[KnowledgeOperationMetadata]
   
   /**
     * Creates a plain object from a KnowledgeOperationMetadata message. Also converts values to other types if specified.
@@ -155,10 +142,8 @@ object KnowledgeOperationMetadata {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: KnowledgeOperationMetadata): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: KnowledgeOperationMetadata, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: KnowledgeOperationMetadata): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: KnowledgeOperationMetadata, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a KnowledgeOperationMetadata message.
@@ -166,6 +151,5 @@ object KnowledgeOperationMetadata {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

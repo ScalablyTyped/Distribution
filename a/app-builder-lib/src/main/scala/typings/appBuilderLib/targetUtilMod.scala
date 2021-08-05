@@ -26,12 +26,9 @@ object targetUtilMod {
     def getTempFile(name: String): String = js.native
   }
   
-  @scala.inline
-  def createStageDir(target: Target, packager: PlatformPackager[js.Any], arch: Arch): js.Promise[StageDir] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStageDir")(target.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], arch.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StageDir]]
+  inline def createStageDir(target: Target, packager: PlatformPackager[js.Any], arch: Arch): js.Promise[StageDir] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStageDir")(target.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], arch.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StageDir]]
   
-  @scala.inline
-  def createStageDirPath(target: Target, packager: PlatformPackager[js.Any], arch: Arch): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStageDirPath")(target.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], arch.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def createStageDirPath(target: Target, packager: PlatformPackager[js.Any], arch: Arch): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStageDirPath")(target.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], arch.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getWindowsInstallationDirName(appInfo: AppInfo, isTryToUseProductName: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getWindowsInstallationDirName")(appInfo.asInstanceOf[js.Any], isTryToUseProductName.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getWindowsInstallationDirName(appInfo: AppInfo, isTryToUseProductName: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getWindowsInstallationDirName")(appInfo.asInstanceOf[js.Any], isTryToUseProductName.asInstanceOf[js.Any])).asInstanceOf[String]
 }

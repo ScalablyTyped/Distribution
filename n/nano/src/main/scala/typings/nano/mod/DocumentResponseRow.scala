@@ -13,19 +13,15 @@ trait DocumentResponseRow[D]
 }
 object DocumentResponseRow {
   
-  @scala.inline
-  def apply[D](id: String, key: String, value: Rev): DocumentResponseRow[D] = {
+  inline def apply[D](id: String, key: String, value: Rev): DocumentResponseRow[D] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentResponseRow[D]]
   }
   
-  @scala.inline
-  implicit class DocumentResponseRowMutableBuilder[Self <: DocumentResponseRow[?], D] (val x: Self & DocumentResponseRow[D]) extends AnyVal {
+  extension [Self <: DocumentResponseRow[?], D](x: Self & DocumentResponseRow[D]) {
     
-    @scala.inline
-    def setDoc(value: D & Document): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+    inline def setDoc(value: D & Document): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
+    inline def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
   }
 }

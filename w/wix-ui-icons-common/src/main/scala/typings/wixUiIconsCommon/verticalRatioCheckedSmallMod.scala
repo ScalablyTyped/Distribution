@@ -22,20 +22,16 @@ object verticalRatioCheckedSmallMod extends Shortcut {
   }
   object VerticalRatioCheckedSmallProps {
     
-    @scala.inline
-    def apply(): VerticalRatioCheckedSmallProps = {
+    inline def apply(): VerticalRatioCheckedSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VerticalRatioCheckedSmallProps]
     }
     
-    @scala.inline
-    implicit class VerticalRatioCheckedSmallPropsMutableBuilder[Self <: VerticalRatioCheckedSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: VerticalRatioCheckedSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

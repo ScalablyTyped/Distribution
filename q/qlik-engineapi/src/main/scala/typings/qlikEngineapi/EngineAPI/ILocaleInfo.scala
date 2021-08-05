@@ -124,8 +124,7 @@ trait ILocaleInfo extends StObject {
 }
 object ILocaleInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qBrokenWeeks: Double,
     qCalendarStrings: ICalenderStrings,
     qCollation: String,
@@ -147,55 +146,38 @@ object ILocaleInfo {
     __obj.asInstanceOf[ILocaleInfo]
   }
   
-  @scala.inline
-  implicit class ILocaleInfoMutableBuilder[Self <: ILocaleInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ILocaleInfo](x: Self) {
     
-    @scala.inline
-    def setQBrokenWeeks(value: Double): Self = StObject.set(x, "qBrokenWeeks", value.asInstanceOf[js.Any])
+    inline def setQBrokenWeeks(value: Double): Self = StObject.set(x, "qBrokenWeeks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQCalendarStrings(value: ICalenderStrings): Self = StObject.set(x, "qCalendarStrings", value.asInstanceOf[js.Any])
+    inline def setQCalendarStrings(value: ICalenderStrings): Self = StObject.set(x, "qCalendarStrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQCollation(value: String): Self = StObject.set(x, "qCollation", value.asInstanceOf[js.Any])
+    inline def setQCollation(value: String): Self = StObject.set(x, "qCollation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQCurrentYear(value: Double): Self = StObject.set(x, "qCurrentYear", value.asInstanceOf[js.Any])
+    inline def setQCurrentYear(value: Double): Self = StObject.set(x, "qCurrentYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDateFmt(value: String): Self = StObject.set(x, "qDateFmt", value.asInstanceOf[js.Any])
+    inline def setQDateFmt(value: String): Self = StObject.set(x, "qDateFmt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDecimalSep(value: String): Self = StObject.set(x, "qDecimalSep", value.asInstanceOf[js.Any])
+    inline def setQDecimalSep(value: String): Self = StObject.set(x, "qDecimalSep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFirstMonthOfYear(value: Double): Self = StObject.set(x, "qFirstMonthOfYear", value.asInstanceOf[js.Any])
+    inline def setQFirstMonthOfYear(value: Double): Self = StObject.set(x, "qFirstMonthOfYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFirstWeekDay(value: Boolean): Self = StObject.set(x, "qFirstWeekDay", value.asInstanceOf[js.Any])
+    inline def setQFirstWeekDay(value: Boolean): Self = StObject.set(x, "qFirstWeekDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQListSep(value: String): Self = StObject.set(x, "qListSep", value.asInstanceOf[js.Any])
+    inline def setQListSep(value: String): Self = StObject.set(x, "qListSep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMoneyDecimalSep(value: String): Self = StObject.set(x, "qMoneyDecimalSep", value.asInstanceOf[js.Any])
+    inline def setQMoneyDecimalSep(value: String): Self = StObject.set(x, "qMoneyDecimalSep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMoneyFmt(value: String): Self = StObject.set(x, "qMoneyFmt", value.asInstanceOf[js.Any])
+    inline def setQMoneyFmt(value: String): Self = StObject.set(x, "qMoneyFmt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMoneyThousandSep(value: String): Self = StObject.set(x, "qMoneyThousandSep", value.asInstanceOf[js.Any])
+    inline def setQMoneyThousandSep(value: String): Self = StObject.set(x, "qMoneyThousandSep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQReferenceDay(value: Double): Self = StObject.set(x, "qReferenceDay", value.asInstanceOf[js.Any])
+    inline def setQReferenceDay(value: Double): Self = StObject.set(x, "qReferenceDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQThousandSep(value: String): Self = StObject.set(x, "qThousandSep", value.asInstanceOf[js.Any])
+    inline def setQThousandSep(value: String): Self = StObject.set(x, "qThousandSep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTimeFmt(value: String): Self = StObject.set(x, "qTimeFmt", value.asInstanceOf[js.Any])
+    inline def setQTimeFmt(value: String): Self = StObject.set(x, "qTimeFmt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTimestampFmt(value: String): Self = StObject.set(x, "qTimestampFmt", value.asInstanceOf[js.Any])
+    inline def setQTimestampFmt(value: String): Self = StObject.set(x, "qTimestampFmt", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait CommentProtection extends StObject {
 }
 object CommentProtection {
   
-  @scala.inline
-  def apply(lockText: True | False, locked: True | False): CommentProtection = {
+  inline def apply(lockText: True | False, locked: True | False): CommentProtection = {
     val __obj = js.Dynamic.literal(lockText = lockText.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentProtection]
   }
   
-  @scala.inline
-  implicit class CommentProtectionMutableBuilder[Self <: CommentProtection] (val x: Self) extends AnyVal {
+  extension [Self <: CommentProtection](x: Self) {
     
-    @scala.inline
-    def setLockText(value: True | False): Self = StObject.set(x, "lockText", value.asInstanceOf[js.Any])
+    inline def setLockText(value: True | False): Self = StObject.set(x, "lockText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocked(value: True | False): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: True | False): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
   }
 }

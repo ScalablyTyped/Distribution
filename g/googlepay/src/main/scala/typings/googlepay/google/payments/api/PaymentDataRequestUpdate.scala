@@ -42,31 +42,23 @@ trait PaymentDataRequestUpdate extends StObject {
 }
 object PaymentDataRequestUpdate {
   
-  @scala.inline
-  def apply(): PaymentDataRequestUpdate = {
+  inline def apply(): PaymentDataRequestUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaymentDataRequestUpdate]
   }
   
-  @scala.inline
-  implicit class PaymentDataRequestUpdateMutableBuilder[Self <: PaymentDataRequestUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentDataRequestUpdate](x: Self) {
     
-    @scala.inline
-    def setError(value: PaymentDataError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: PaymentDataError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setNewShippingOptionParameters(value: ShippingOptionParameters): Self = StObject.set(x, "newShippingOptionParameters", value.asInstanceOf[js.Any])
+    inline def setNewShippingOptionParameters(value: ShippingOptionParameters): Self = StObject.set(x, "newShippingOptionParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewShippingOptionParametersUndefined: Self = StObject.set(x, "newShippingOptionParameters", js.undefined)
+    inline def setNewShippingOptionParametersUndefined: Self = StObject.set(x, "newShippingOptionParameters", js.undefined)
     
-    @scala.inline
-    def setNewTransactionInfo(value: TransactionInfo): Self = StObject.set(x, "newTransactionInfo", value.asInstanceOf[js.Any])
+    inline def setNewTransactionInfo(value: TransactionInfo): Self = StObject.set(x, "newTransactionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewTransactionInfoUndefined: Self = StObject.set(x, "newTransactionInfo", js.undefined)
+    inline def setNewTransactionInfoUndefined: Self = StObject.set(x, "newTransactionInfo", js.undefined)
   }
 }

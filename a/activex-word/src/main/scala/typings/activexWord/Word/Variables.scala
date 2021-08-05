@@ -21,6 +21,6 @@ trait Variables extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.Variables_typekey")
+  /* private */ @JSName("Word.Variables_typekey")
   var WordDotVariables_typekey: Variables = js.native
 }

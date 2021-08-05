@@ -18,8 +18,7 @@ trait MemberName extends StObject {
 }
 object MemberName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isArray: () => Boolean,
     isMarker: () => Boolean,
     isString: () => Boolean,
@@ -30,22 +29,16 @@ object MemberName {
     __obj.asInstanceOf[MemberName]
   }
   
-  @scala.inline
-  implicit class MemberNameMutableBuilder[Self <: MemberName] (val x: Self) extends AnyVal {
+  extension [Self <: MemberName](x: Self) {
     
-    @scala.inline
-    def setIsArray(value: () => Boolean): Self = StObject.set(x, "isArray", js.Any.fromFunction0(value))
+    inline def setIsArray(value: () => Boolean): Self = StObject.set(x, "isArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsMarker(value: () => Boolean): Self = StObject.set(x, "isMarker", js.Any.fromFunction0(value))
+    inline def setIsMarker(value: () => Boolean): Self = StObject.set(x, "isMarker", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsString(value: () => Boolean): Self = StObject.set(x, "isString", js.Any.fromFunction0(value))
+    inline def setIsString(value: () => Boolean): Self = StObject.set(x, "isString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
   }
 }

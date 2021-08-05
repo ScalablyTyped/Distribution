@@ -41,43 +41,31 @@ trait LegendBaseCfg
 }
 object LegendBaseCfg {
   
-  @scala.inline
-  def apply(container: IGroup): LegendBaseCfg = {
+  inline def apply(container: IGroup): LegendBaseCfg = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendBaseCfg]
   }
   
-  @scala.inline
-  implicit class LegendBaseCfgMutableBuilder[Self <: LegendBaseCfg] (val x: Self) extends AnyVal {
+  extension [Self <: LegendBaseCfg](x: Self) {
     
-    @scala.inline
-    def setBackground(value: LegendBackgroundCfg): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: LegendBackgroundCfg): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setTitle(value: LegendTitleCfg): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: LegendTitleCfg): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

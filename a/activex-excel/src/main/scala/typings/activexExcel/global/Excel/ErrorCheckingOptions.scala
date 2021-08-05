@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ErrorCheckingOptions")
 @js.native
-class ErrorCheckingOptions protected ()
+/* private */ class ErrorCheckingOptions ()
   extends StObject
      with typings.activexExcel.Excel.ErrorCheckingOptions {
   
@@ -27,7 +27,7 @@ class ErrorCheckingOptions protected ()
   /* CompleteClass */
   var EvaluateToError: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.ErrorCheckingOptions_typekey")
   var ExcelDotErrorCheckingOptions_typekey: typings.activexExcel.Excel.ErrorCheckingOptions = js.native
   

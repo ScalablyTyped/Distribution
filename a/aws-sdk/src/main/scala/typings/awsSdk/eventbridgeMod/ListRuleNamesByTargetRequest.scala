@@ -28,34 +28,25 @@ trait ListRuleNamesByTargetRequest extends StObject {
 }
 object ListRuleNamesByTargetRequest {
   
-  @scala.inline
-  def apply(TargetArn: TargetArn): ListRuleNamesByTargetRequest = {
+  inline def apply(TargetArn: TargetArn): ListRuleNamesByTargetRequest = {
     val __obj = js.Dynamic.literal(TargetArn = TargetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRuleNamesByTargetRequest]
   }
   
-  @scala.inline
-  implicit class ListRuleNamesByTargetRequestMutableBuilder[Self <: ListRuleNamesByTargetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListRuleNamesByTargetRequest](x: Self) {
     
-    @scala.inline
-    def setEventBusName(value: EventBusNameOrArn): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
+    inline def setEventBusName(value: EventBusNameOrArn): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
+    inline def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
     
-    @scala.inline
-    def setLimit(value: LimitMax100): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: LimitMax100): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTargetArn(value: TargetArn): Self = StObject.set(x, "TargetArn", value.asInstanceOf[js.Any])
+    inline def setTargetArn(value: TargetArn): Self = StObject.set(x, "TargetArn", value.asInstanceOf[js.Any])
   }
 }

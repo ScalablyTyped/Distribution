@@ -18,28 +18,21 @@ trait BatchListObjectParentPathsResponse extends StObject {
 }
 object BatchListObjectParentPathsResponse {
   
-  @scala.inline
-  def apply(): BatchListObjectParentPathsResponse = {
+  inline def apply(): BatchListObjectParentPathsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchListObjectParentPathsResponse]
   }
   
-  @scala.inline
-  implicit class BatchListObjectParentPathsResponseMutableBuilder[Self <: BatchListObjectParentPathsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchListObjectParentPathsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPathToObjectIdentifiersList(value: PathToObjectIdentifiersList): Self = StObject.set(x, "PathToObjectIdentifiersList", value.asInstanceOf[js.Any])
+    inline def setPathToObjectIdentifiersList(value: PathToObjectIdentifiersList): Self = StObject.set(x, "PathToObjectIdentifiersList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathToObjectIdentifiersListUndefined: Self = StObject.set(x, "PathToObjectIdentifiersList", js.undefined)
+    inline def setPathToObjectIdentifiersListUndefined: Self = StObject.set(x, "PathToObjectIdentifiersList", js.undefined)
     
-    @scala.inline
-    def setPathToObjectIdentifiersListVarargs(value: PathToObjectIdentifiers*): Self = StObject.set(x, "PathToObjectIdentifiersList", js.Array(value :_*))
+    inline def setPathToObjectIdentifiersListVarargs(value: PathToObjectIdentifiers*): Self = StObject.set(x, "PathToObjectIdentifiersList", js.Array(value :_*))
   }
 }

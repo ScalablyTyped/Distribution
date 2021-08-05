@@ -41,8 +41,7 @@ trait PerformanceApi extends StObject {
 }
 object PerformanceApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disable: () => js.Promise[Unit],
     enable: EnableRequest => js.Promise[Unit],
     getMetrics: () => js.Promise[GetMetricsResponse],
@@ -53,22 +52,16 @@ object PerformanceApi {
     __obj.asInstanceOf[PerformanceApi]
   }
   
-  @scala.inline
-  implicit class PerformanceApiMutableBuilder[Self <: PerformanceApi] (val x: Self) extends AnyVal {
+  extension [Self <: PerformanceApi](x: Self) {
     
-    @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+    inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnable(value: EnableRequest => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
+    inline def setEnable(value: EnableRequest => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMetrics(value: () => js.Promise[GetMetricsResponse]): Self = StObject.set(x, "getMetrics", js.Any.fromFunction0(value))
+    inline def setGetMetrics(value: () => js.Promise[GetMetricsResponse]): Self = StObject.set(x, "getMetrics", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOn(value: (metrics, js.Function1[/* params */ MetricsEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (metrics, js.Function1[/* params */ MetricsEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetTimeDomain(value: SetTimeDomainRequest => js.Promise[Unit]): Self = StObject.set(x, "setTimeDomain", js.Any.fromFunction1(value))
+    inline def setSetTimeDomain(value: SetTimeDomainRequest => js.Promise[Unit]): Self = StObject.set(x, "setTimeDomain", js.Any.fromFunction1(value))
   }
 }

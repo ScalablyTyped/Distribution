@@ -29,34 +29,25 @@ trait JumpListCategory extends StObject {
 }
 object JumpListCategory {
   
-  @scala.inline
-  def apply(): JumpListCategory = {
+  inline def apply(): JumpListCategory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JumpListCategory]
   }
   
-  @scala.inline
-  implicit class JumpListCategoryMutableBuilder[Self <: JumpListCategory] (val x: Self) extends AnyVal {
+  extension [Self <: JumpListCategory](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[JumpListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[JumpListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: JumpListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: JumpListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: tasks | frequent | recent | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: tasks | frequent | recent | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

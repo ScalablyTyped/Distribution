@@ -18,8 +18,7 @@ trait DragDropManager extends StObject {
 }
 object DragDropManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dispatch: js.Any => Unit,
     getActions: () => DragDropActions,
     getBackend: () => Backend,
@@ -30,22 +29,16 @@ object DragDropManager {
     __obj.asInstanceOf[DragDropManager]
   }
   
-  @scala.inline
-  implicit class DragDropManagerMutableBuilder[Self <: DragDropManager] (val x: Self) extends AnyVal {
+  extension [Self <: DragDropManager](x: Self) {
     
-    @scala.inline
-    def setDispatch(value: js.Any => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+    inline def setDispatch(value: js.Any => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetActions(value: () => DragDropActions): Self = StObject.set(x, "getActions", js.Any.fromFunction0(value))
+    inline def setGetActions(value: () => DragDropActions): Self = StObject.set(x, "getActions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBackend(value: () => Backend): Self = StObject.set(x, "getBackend", js.Any.fromFunction0(value))
+    inline def setGetBackend(value: () => Backend): Self = StObject.set(x, "getBackend", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMonitor(value: () => DragDropMonitor): Self = StObject.set(x, "getMonitor", js.Any.fromFunction0(value))
+    inline def setGetMonitor(value: () => DragDropMonitor): Self = StObject.set(x, "getMonitor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRegistry(value: () => HandlerRegistry): Self = StObject.set(x, "getRegistry", js.Any.fromFunction0(value))
+    inline def setGetRegistry(value: () => HandlerRegistry): Self = StObject.set(x, "getRegistry", js.Any.fromFunction0(value))
   }
 }

@@ -14,20 +14,16 @@ object anon {
   }
   object Xpriv {
     
-    @scala.inline
-    def apply(xpriv: String, xpub: String): Xpriv = {
+    inline def apply(xpriv: String, xpub: String): Xpriv = {
       val __obj = js.Dynamic.literal(xpriv = xpriv.asInstanceOf[js.Any], xpub = xpub.asInstanceOf[js.Any])
       __obj.asInstanceOf[Xpriv]
     }
     
-    @scala.inline
-    implicit class XprivMutableBuilder[Self <: Xpriv] (val x: Self) extends AnyVal {
+    extension [Self <: Xpriv](x: Self) {
       
-      @scala.inline
-      def setXpriv(value: String): Self = StObject.set(x, "xpriv", value.asInstanceOf[js.Any])
+      inline def setXpriv(value: String): Self = StObject.set(x, "xpriv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXpub(value: String): Self = StObject.set(x, "xpub", value.asInstanceOf[js.Any])
+      inline def setXpub(value: String): Self = StObject.set(x, "xpub", value.asInstanceOf[js.Any])
     }
   }
 }

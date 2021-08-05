@@ -12,19 +12,15 @@ trait NxInlineMeasureDef extends StObject {
 }
 object NxInlineMeasureDef {
   
-  @scala.inline
-  def apply(qcx: Double, qcy: Double): NxInlineMeasureDef = {
+  inline def apply(qcx: Double, qcy: Double): NxInlineMeasureDef = {
     val __obj = js.Dynamic.literal(qcx = qcx.asInstanceOf[js.Any], qcy = qcy.asInstanceOf[js.Any])
     __obj.asInstanceOf[NxInlineMeasureDef]
   }
   
-  @scala.inline
-  implicit class NxInlineMeasureDefMutableBuilder[Self <: NxInlineMeasureDef] (val x: Self) extends AnyVal {
+  extension [Self <: NxInlineMeasureDef](x: Self) {
     
-    @scala.inline
-    def setQcx(value: Double): Self = StObject.set(x, "qcx", value.asInstanceOf[js.Any])
+    inline def setQcx(value: Double): Self = StObject.set(x, "qcx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQcy(value: Double): Self = StObject.set(x, "qcy", value.asInstanceOf[js.Any])
+    inline def setQcy(value: Double): Self = StObject.set(x, "qcy", value.asInstanceOf[js.Any])
   }
 }

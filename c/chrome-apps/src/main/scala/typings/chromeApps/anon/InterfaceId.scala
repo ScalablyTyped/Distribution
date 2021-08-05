@@ -15,25 +15,19 @@ trait InterfaceId extends StObject {
 }
 object InterfaceId {
   
-  @scala.inline
-  def apply(productId: integer, vendorId: integer): InterfaceId = {
+  inline def apply(productId: integer, vendorId: integer): InterfaceId = {
     val __obj = js.Dynamic.literal(productId = productId.asInstanceOf[js.Any], vendorId = vendorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InterfaceId]
   }
   
-  @scala.inline
-  implicit class InterfaceIdMutableBuilder[Self <: InterfaceId] (val x: Self) extends AnyVal {
+  extension [Self <: InterfaceId](x: Self) {
     
-    @scala.inline
-    def setInterfaceId(value: integer): Self = StObject.set(x, "interfaceId", value.asInstanceOf[js.Any])
+    inline def setInterfaceId(value: integer): Self = StObject.set(x, "interfaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceIdUndefined: Self = StObject.set(x, "interfaceId", js.undefined)
+    inline def setInterfaceIdUndefined: Self = StObject.set(x, "interfaceId", js.undefined)
     
-    @scala.inline
-    def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
+    inline def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
   }
 }

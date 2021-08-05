@@ -21,26 +21,20 @@ object themeProviderMod {
   }
   object IThemeProviderProps {
     
-    @scala.inline
-    def apply(): IThemeProviderProps = {
+    inline def apply(): IThemeProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IThemeProviderProps]
     }
     
-    @scala.inline
-    implicit class IThemeProviderPropsMutableBuilder[Self <: IThemeProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: IThemeProviderProps](x: Self) {
       
-      @scala.inline
-      def setScheme(value: ISchemeNames): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: ISchemeNames): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+      inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
 }

@@ -10,16 +10,13 @@ trait EnumValuesLocked extends StObject {
 }
 object EnumValuesLocked {
   
-  @scala.inline
-  def apply(enumValues: Locked): EnumValuesLocked = {
+  inline def apply(enumValues: Locked): EnumValuesLocked = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesLocked]
   }
   
-  @scala.inline
-  implicit class EnumValuesLockedMutableBuilder[Self <: EnumValuesLocked] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesLocked](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Locked): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Locked): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -12,61 +12,51 @@ object motorHatStrings {
   sealed trait M1
     extends StObject
        with Motor
-  @scala.inline
-  def M1: M1 = "M1".asInstanceOf[M1]
+  inline def M1: M1 = "M1".asInstanceOf[M1]
   
   @js.native
   sealed trait M2
     extends StObject
        with Motor
-  @scala.inline
-  def M2: M2 = "M2".asInstanceOf[M2]
+  inline def M2: M2 = "M2".asInstanceOf[M2]
   
   @js.native
   sealed trait M3
     extends StObject
        with Motor
-  @scala.inline
-  def M3: M3 = "M3".asInstanceOf[M3]
+  inline def M3: M3 = "M3".asInstanceOf[M3]
   
   @js.native
   sealed trait M4
     extends StObject
        with Motor
-  @scala.inline
-  def M4: M4 = "M4".asInstanceOf[M4]
+  inline def M4: M4 = "M4".asInstanceOf[M4]
   
   @js.native
   sealed trait back
     extends StObject
        with Direction
-  @scala.inline
-  def back: back = "back".asInstanceOf[back]
+  inline def back: back = "back".asInstanceOf[back]
   
   @js.native
   sealed trait double extends StObject
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
+  inline def double: double = "double".asInstanceOf[double]
   
   @js.native
   sealed trait fwd
     extends StObject
        with Direction
-  @scala.inline
-  def fwd: fwd = "fwd".asInstanceOf[fwd]
+  inline def fwd: fwd = "fwd".asInstanceOf[fwd]
   
   @js.native
   sealed trait interleaved extends StObject
-  @scala.inline
-  def interleaved: interleaved = "interleaved".asInstanceOf[interleaved]
+  inline def interleaved: interleaved = "interleaved".asInstanceOf[interleaved]
   
   @js.native
   sealed trait microstep extends StObject
-  @scala.inline
-  def microstep: microstep = "microstep".asInstanceOf[microstep]
+  inline def microstep: microstep = "microstep".asInstanceOf[microstep]
   
   @js.native
   sealed trait single extends StObject
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
+  inline def single: single = "single".asInstanceOf[single]
 }

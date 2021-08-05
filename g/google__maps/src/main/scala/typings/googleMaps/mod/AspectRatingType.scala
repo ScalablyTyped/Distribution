@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AspectRatingType extends StObject
 object AspectRatingType {
   
-  @scala.inline
-  def appeal: typings.googleMaps.googleMapsStrings.appeal = "appeal".asInstanceOf[typings.googleMaps.googleMapsStrings.appeal]
+  inline def appeal: typings.googleMaps.googleMapsStrings.appeal = "appeal".asInstanceOf[typings.googleMaps.googleMapsStrings.appeal]
   
-  @scala.inline
-  def atmosphere: typings.googleMaps.googleMapsStrings.atmosphere = "atmosphere".asInstanceOf[typings.googleMaps.googleMapsStrings.atmosphere]
+  inline def atmosphere: typings.googleMaps.googleMapsStrings.atmosphere = "atmosphere".asInstanceOf[typings.googleMaps.googleMapsStrings.atmosphere]
   
-  @scala.inline
-  def decor: typings.googleMaps.googleMapsStrings.decor = "decor".asInstanceOf[typings.googleMaps.googleMapsStrings.decor]
+  inline def decor: typings.googleMaps.googleMapsStrings.decor = "decor".asInstanceOf[typings.googleMaps.googleMapsStrings.decor]
   
-  @scala.inline
-  def facilities: typings.googleMaps.googleMapsStrings.facilities = "facilities".asInstanceOf[typings.googleMaps.googleMapsStrings.facilities]
+  inline def facilities: typings.googleMaps.googleMapsStrings.facilities = "facilities".asInstanceOf[typings.googleMaps.googleMapsStrings.facilities]
   
-  @scala.inline
-  def food: typings.googleMaps.googleMapsStrings.food = "food".asInstanceOf[typings.googleMaps.googleMapsStrings.food]
+  inline def food: typings.googleMaps.googleMapsStrings.food = "food".asInstanceOf[typings.googleMaps.googleMapsStrings.food]
   
-  @scala.inline
-  def overall: typings.googleMaps.googleMapsStrings.overall = "overall".asInstanceOf[typings.googleMaps.googleMapsStrings.overall]
+  inline def overall: typings.googleMaps.googleMapsStrings.overall = "overall".asInstanceOf[typings.googleMaps.googleMapsStrings.overall]
   
-  @scala.inline
-  def quality: typings.googleMaps.googleMapsStrings.quality = "quality".asInstanceOf[typings.googleMaps.googleMapsStrings.quality]
+  inline def quality: typings.googleMaps.googleMapsStrings.quality = "quality".asInstanceOf[typings.googleMaps.googleMapsStrings.quality]
   
-  @scala.inline
-  def service: typings.googleMaps.googleMapsStrings.service = "service".asInstanceOf[typings.googleMaps.googleMapsStrings.service]
+  inline def service: typings.googleMaps.googleMapsStrings.service = "service".asInstanceOf[typings.googleMaps.googleMapsStrings.service]
 }

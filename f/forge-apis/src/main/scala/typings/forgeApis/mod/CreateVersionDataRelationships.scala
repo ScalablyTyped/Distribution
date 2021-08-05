@@ -12,25 +12,19 @@ trait CreateVersionDataRelationships extends StObject {
 }
 object CreateVersionDataRelationships {
   
-  @scala.inline
-  def apply(): CreateVersionDataRelationships = {
+  inline def apply(): CreateVersionDataRelationships = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateVersionDataRelationships]
   }
   
-  @scala.inline
-  implicit class CreateVersionDataRelationshipsMutableBuilder[Self <: CreateVersionDataRelationships] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVersionDataRelationships](x: Self) {
     
-    @scala.inline
-    def setItem(value: CreateVersionDataRelationshipsItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: CreateVersionDataRelationshipsItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setStorage(value: CreateItemRelationshipsStorage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: CreateItemRelationshipsStorage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+    inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
   }
 }

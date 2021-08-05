@@ -19,16 +19,13 @@ trait CalendarItem2
 }
 object CalendarItem2 {
   
-  @scala.inline
-  def apply(AbbrevName: String, FullName: String, ID: String, NarrowName: String): CalendarItem2 = {
+  inline def apply(AbbrevName: String, FullName: String, ID: String, NarrowName: String): CalendarItem2 = {
     val __obj = js.Dynamic.literal(AbbrevName = AbbrevName.asInstanceOf[js.Any], FullName = FullName.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], NarrowName = NarrowName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarItem2]
   }
   
-  @scala.inline
-  implicit class CalendarItem2MutableBuilder[Self <: CalendarItem2] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarItem2](x: Self) {
     
-    @scala.inline
-    def setNarrowName(value: String): Self = StObject.set(x, "NarrowName", value.asInstanceOf[js.Any])
+    inline def setNarrowName(value: String): Self = StObject.set(x, "NarrowName", value.asInstanceOf[js.Any])
   }
 }

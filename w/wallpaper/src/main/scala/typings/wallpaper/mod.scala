@@ -23,8 +23,7 @@ object mod {
   @JSImport("wallpaper", "default")
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof wallpaper */ js.Any = js.native
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof wallpaper */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof wallpaper */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	Get the path to the wallpaper image currently set.
@@ -38,10 +37,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def get(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def get(options: GetOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def get(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[String]]
+  inline def get(options: GetOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   /**
   	__macOS only.__
@@ -58,8 +55,7 @@ object mod {
   @JSImport("wallpaper", "screens")
   @js.native
   def screens: js.UndefOr[js.Function0[js.Promise[js.Array[String]]]] = js.native
-  @scala.inline
-  def screens_=(x: js.UndefOr[js.Function0[js.Promise[js.Array[String]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("screens")(x.asInstanceOf[js.Any])
+  inline def screens_=(x: js.UndefOr[js.Function0[js.Promise[js.Array[String]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("screens")(x.asInstanceOf[js.Any])
   
   /**
   	Set a new wallpaper.
@@ -72,10 +68,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def set(imagePath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(imagePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def set(imagePath: String, options: SetOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(imagePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def set(imagePath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(imagePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def set(imagePath: String, options: SetOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(imagePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait GetOptions extends StObject {
     
@@ -89,20 +83,16 @@ object mod {
   }
   object GetOptions {
     
-    @scala.inline
-    def apply(): GetOptions = {
+    inline def apply(): GetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetOptions]
     }
     
-    @scala.inline
-    implicit class GetOptionsMutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetOptions](x: Self) {
       
-      @scala.inline
-      def setScreen(value: all | main | Double): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+      inline def setScreen(value: all | main | Double): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
+      inline def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
     }
   }
   
@@ -126,26 +116,20 @@ object mod {
   }
   object SetOptions {
     
-    @scala.inline
-    def apply(): SetOptions = {
+    inline def apply(): SetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetOptions]
     }
     
-    @scala.inline
-    implicit class SetOptionsMutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetOptions](x: Self) {
       
-      @scala.inline
-      def setScale(value: auto | fill | fit | stretch | center): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: auto | fill | fit | stretch | center): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setScreen(value: all | main | Double): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+      inline def setScreen(value: all | main | Double): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
+      inline def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
     }
   }
 }

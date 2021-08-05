@@ -14,34 +14,25 @@ trait IdGeneration[T, U] extends StObject {
 }
 object IdGeneration {
   
-  @scala.inline
-  def apply[T, U](): IdGeneration[T, U] = {
+  inline def apply[T, U](): IdGeneration[T, U] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdGeneration[T, U]]
   }
   
-  @scala.inline
-  implicit class IdGenerationMutableBuilder[Self <: IdGeneration[?, ?], T, U] (val x: Self & (IdGeneration[T, U])) extends AnyVal {
+  extension [Self <: IdGeneration[?, ?], T, U](x: Self & (IdGeneration[T, U])) {
     
-    @scala.inline
-    def setConnection(value: js.Object): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: js.Object): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionNull: Self = StObject.set(x, "connection", null)
+    inline def setConnectionNull: Self = StObject.set(x, "connection", null)
     
-    @scala.inline
-    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+    inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
-    @scala.inline
-    def setIdGeneration(value: String): Self = StObject.set(x, "idGeneration", value.asInstanceOf[js.Any])
+    inline def setIdGeneration(value: String): Self = StObject.set(x, "idGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdGenerationUndefined: Self = StObject.set(x, "idGeneration", js.undefined)
+    inline def setIdGenerationUndefined: Self = StObject.set(x, "idGeneration", js.undefined)
     
-    @scala.inline
-    def setTransform(value: /* doc */ T => U): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+    inline def setTransform(value: /* doc */ T => U): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

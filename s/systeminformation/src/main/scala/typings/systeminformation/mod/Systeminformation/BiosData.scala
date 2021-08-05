@@ -16,25 +16,19 @@ trait BiosData extends StObject {
 }
 object BiosData {
   
-  @scala.inline
-  def apply(releaseDate: String, revision: String, vendor: String, version: String): BiosData = {
+  inline def apply(releaseDate: String, revision: String, vendor: String, version: String): BiosData = {
     val __obj = js.Dynamic.literal(releaseDate = releaseDate.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[BiosData]
   }
   
-  @scala.inline
-  implicit class BiosDataMutableBuilder[Self <: BiosData] (val x: Self) extends AnyVal {
+  extension [Self <: BiosData](x: Self) {
     
-    @scala.inline
-    def setReleaseDate(value: String): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
+    inline def setReleaseDate(value: String): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

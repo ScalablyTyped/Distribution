@@ -23,31 +23,23 @@ trait UnprocessedNamedQueryId extends StObject {
 }
 object UnprocessedNamedQueryId {
   
-  @scala.inline
-  def apply(): UnprocessedNamedQueryId = {
+  inline def apply(): UnprocessedNamedQueryId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnprocessedNamedQueryId]
   }
   
-  @scala.inline
-  implicit class UnprocessedNamedQueryIdMutableBuilder[Self <: UnprocessedNamedQueryId] (val x: Self) extends AnyVal {
+  extension [Self <: UnprocessedNamedQueryId](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setNamedQueryId(value: NamedQueryId): Self = StObject.set(x, "NamedQueryId", value.asInstanceOf[js.Any])
+    inline def setNamedQueryId(value: NamedQueryId): Self = StObject.set(x, "NamedQueryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedQueryIdUndefined: Self = StObject.set(x, "NamedQueryId", js.undefined)
+    inline def setNamedQueryIdUndefined: Self = StObject.set(x, "NamedQueryId", js.undefined)
   }
 }

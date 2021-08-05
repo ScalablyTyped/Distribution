@@ -26,13 +26,12 @@ trait Section extends StObject {
   
   val Range: typings.activexWord.Word.Range
   
-  @JSName("Word.Section_typekey")
+  /* private */ @JSName("Word.Section_typekey")
   var WordDotSection_typekey: Section
 }
 object Section {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Borders: Borders,
     Creator: Double,
@@ -50,40 +49,28 @@ object Section {
     __obj.asInstanceOf[Section]
   }
   
-  @scala.inline
-  implicit class SectionMutableBuilder[Self <: Section] (val x: Self) extends AnyVal {
+  extension [Self <: Section](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
+    inline def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooters(value: HeadersFooters): Self = StObject.set(x, "Footers", value.asInstanceOf[js.Any])
+    inline def setFooters(value: HeadersFooters): Self = StObject.set(x, "Footers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: HeadersFooters): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: HeadersFooters): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSetup(value: PageSetup): Self = StObject.set(x, "PageSetup", value.asInstanceOf[js.Any])
+    inline def setPageSetup(value: PageSetup): Self = StObject.set(x, "PageSetup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectedForForms(value: Boolean): Self = StObject.set(x, "ProtectedForForms", value.asInstanceOf[js.Any])
+    inline def setProtectedForForms(value: Boolean): Self = StObject.set(x, "ProtectedForForms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotSection_typekey(value: Section): Self = StObject.set(x, "Word.Section_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotSection_typekey(value: Section): Self = StObject.set(x, "Word.Section_typekey", value.asInstanceOf[js.Any])
   }
 }

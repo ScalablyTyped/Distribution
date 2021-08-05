@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object shimMod {
   
-  @scala.inline
-  def apply(): ReturnType[
+  inline def apply(): ReturnType[
     js.Function0[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof promisify */ js.Any
     ]

@@ -13,13 +13,9 @@ object svgUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDimensions(element: SVGElement): Dimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[Dimensions]
-  @scala.inline
-  def getDimensions(element: SVGPathElement): Dimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[Dimensions]
+  inline def getDimensions(element: SVGElement): Dimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[Dimensions]
+  inline def getDimensions(element: SVGPathElement): Dimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[Dimensions]
   
-  @scala.inline
-  def getSVGElementDimensions(element: SVGElement): Dimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getSVGElementDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[Dimensions]
-  @scala.inline
-  def getSVGElementDimensions(element: SVGPathElement): Dimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getSVGElementDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[Dimensions]
+  inline def getSVGElementDimensions(element: SVGElement): Dimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getSVGElementDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[Dimensions]
+  inline def getSVGElementDimensions(element: SVGPathElement): Dimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getSVGElementDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[Dimensions]
 }

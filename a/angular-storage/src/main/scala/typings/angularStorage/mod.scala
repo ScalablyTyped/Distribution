@@ -50,23 +50,18 @@ object mod extends Shortcut {
         }
         object INamespacedStoreService {
           
-          @scala.inline
-          def apply(get: String => js.Any, remove: String => Unit, set: (String, js.Any) => Unit): INamespacedStoreService = {
+          inline def apply(get: String => js.Any, remove: String => Unit, set: (String, js.Any) => Unit): INamespacedStoreService = {
             val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set))
             __obj.asInstanceOf[INamespacedStoreService]
           }
           
-          @scala.inline
-          implicit class INamespacedStoreServiceMutableBuilder[Self <: INamespacedStoreService] (val x: Self) extends AnyVal {
+          extension [Self <: INamespacedStoreService](x: Self) {
             
-            @scala.inline
-            def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+            inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+            inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+            inline def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
           }
         }
         
@@ -81,17 +76,14 @@ object mod extends Shortcut {
         }
         object IStoreProvider {
           
-          @scala.inline
-          def apply(setStore: String => Unit): IStoreProvider = {
+          inline def apply(setStore: String => Unit): IStoreProvider = {
             val __obj = js.Dynamic.literal(setStore = js.Any.fromFunction1(setStore))
             __obj.asInstanceOf[IStoreProvider]
           }
           
-          @scala.inline
-          implicit class IStoreProviderMutableBuilder[Self <: IStoreProvider] (val x: Self) extends AnyVal {
+          extension [Self <: IStoreProvider](x: Self) {
             
-            @scala.inline
-            def setSetStore(value: String => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
+            inline def setSetStore(value: String => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
           }
         }
         

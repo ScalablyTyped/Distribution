@@ -71,105 +71,75 @@ trait CloudSqlSettings extends StObject {
 }
 object CloudSqlSettings {
   
-  @scala.inline
-  def apply(): CloudSqlSettings = {
+  inline def apply(): CloudSqlSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudSqlSettings]
   }
   
-  @scala.inline
-  implicit class CloudSqlSettingsMutableBuilder[Self <: CloudSqlSettings] (val x: Self) extends AnyVal {
+  extension [Self <: CloudSqlSettings](x: Self) {
     
-    @scala.inline
-    def setActivationPolicy(value: String): Self = StObject.set(x, "activationPolicy", value.asInstanceOf[js.Any])
+    inline def setActivationPolicy(value: String): Self = StObject.set(x, "activationPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivationPolicyUndefined: Self = StObject.set(x, "activationPolicy", js.undefined)
+    inline def setActivationPolicyUndefined: Self = StObject.set(x, "activationPolicy", js.undefined)
     
-    @scala.inline
-    def setAutoStorageIncrease(value: Boolean): Self = StObject.set(x, "autoStorageIncrease", value.asInstanceOf[js.Any])
+    inline def setAutoStorageIncrease(value: Boolean): Self = StObject.set(x, "autoStorageIncrease", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoStorageIncreaseUndefined: Self = StObject.set(x, "autoStorageIncrease", js.undefined)
+    inline def setAutoStorageIncreaseUndefined: Self = StObject.set(x, "autoStorageIncrease", js.undefined)
     
-    @scala.inline
-    def setDataDiskSizeGb(value: String): Self = StObject.set(x, "dataDiskSizeGb", value.asInstanceOf[js.Any])
+    inline def setDataDiskSizeGb(value: String): Self = StObject.set(x, "dataDiskSizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDiskSizeGbUndefined: Self = StObject.set(x, "dataDiskSizeGb", js.undefined)
+    inline def setDataDiskSizeGbUndefined: Self = StObject.set(x, "dataDiskSizeGb", js.undefined)
     
-    @scala.inline
-    def setDataDiskType(value: String): Self = StObject.set(x, "dataDiskType", value.asInstanceOf[js.Any])
+    inline def setDataDiskType(value: String): Self = StObject.set(x, "dataDiskType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDiskTypeUndefined: Self = StObject.set(x, "dataDiskType", js.undefined)
+    inline def setDataDiskTypeUndefined: Self = StObject.set(x, "dataDiskType", js.undefined)
     
-    @scala.inline
-    def setDatabaseFlags(
+    inline def setDatabaseFlags(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[js.Any]
     ): Self = StObject.set(x, "databaseFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseFlagsUndefined: Self = StObject.set(x, "databaseFlags", js.undefined)
+    inline def setDatabaseFlagsUndefined: Self = StObject.set(x, "databaseFlags", js.undefined)
     
-    @scala.inline
-    def setDatabaseVersion(value: String): Self = StObject.set(x, "databaseVersion", value.asInstanceOf[js.Any])
+    inline def setDatabaseVersion(value: String): Self = StObject.set(x, "databaseVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseVersionUndefined: Self = StObject.set(x, "databaseVersion", js.undefined)
+    inline def setDatabaseVersionUndefined: Self = StObject.set(x, "databaseVersion", js.undefined)
     
-    @scala.inline
-    def setIpConfig(value: SqlIpConfig): Self = StObject.set(x, "ipConfig", value.asInstanceOf[js.Any])
+    inline def setIpConfig(value: SqlIpConfig): Self = StObject.set(x, "ipConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpConfigUndefined: Self = StObject.set(x, "ipConfig", js.undefined)
+    inline def setIpConfigUndefined: Self = StObject.set(x, "ipConfig", js.undefined)
     
-    @scala.inline
-    def setRootPassword(value: String): Self = StObject.set(x, "rootPassword", value.asInstanceOf[js.Any])
+    inline def setRootPassword(value: String): Self = StObject.set(x, "rootPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootPasswordSet(value: Boolean): Self = StObject.set(x, "rootPasswordSet", value.asInstanceOf[js.Any])
+    inline def setRootPasswordSet(value: Boolean): Self = StObject.set(x, "rootPasswordSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootPasswordSetUndefined: Self = StObject.set(x, "rootPasswordSet", js.undefined)
+    inline def setRootPasswordSetUndefined: Self = StObject.set(x, "rootPasswordSet", js.undefined)
     
-    @scala.inline
-    def setRootPasswordUndefined: Self = StObject.set(x, "rootPassword", js.undefined)
+    inline def setRootPasswordUndefined: Self = StObject.set(x, "rootPassword", js.undefined)
     
-    @scala.inline
-    def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
+    inline def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIdUndefined: Self = StObject.set(x, "sourceId", js.undefined)
+    inline def setSourceIdUndefined: Self = StObject.set(x, "sourceId", js.undefined)
     
-    @scala.inline
-    def setStorageAutoResizeLimit(value: String): Self = StObject.set(x, "storageAutoResizeLimit", value.asInstanceOf[js.Any])
+    inline def setStorageAutoResizeLimit(value: String): Self = StObject.set(x, "storageAutoResizeLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageAutoResizeLimitUndefined: Self = StObject.set(x, "storageAutoResizeLimit", js.undefined)
+    inline def setStorageAutoResizeLimitUndefined: Self = StObject.set(x, "storageAutoResizeLimit", js.undefined)
     
-    @scala.inline
-    def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
+    inline def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
     
-    @scala.inline
-    def setUserLabels(
+    inline def setUserLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.CloudSqlSettings & TopLevel[js.Any]
     ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)
+    inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

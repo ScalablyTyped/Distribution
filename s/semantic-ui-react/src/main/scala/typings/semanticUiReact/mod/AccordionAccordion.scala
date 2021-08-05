@@ -19,6 +19,5 @@ class AccordionAccordion protected ()
 }
 object AccordionAccordion {
   
-  @scala.inline
-  def apply: ComponentClass[AccordionAccordionProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("AccordionAccordion").asInstanceOf[ComponentClass[AccordionAccordionProps, ComponentState]]
+  inline def apply: ComponentClass[AccordionAccordionProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("AccordionAccordion").asInstanceOf[ComponentClass[AccordionAccordionProps, ComponentState]]
 }

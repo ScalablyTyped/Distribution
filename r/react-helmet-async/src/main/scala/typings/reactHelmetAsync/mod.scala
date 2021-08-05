@@ -52,8 +52,7 @@ object mod {
     @JSImport("react-helmet-async", "HelmetProvider.canUseDOM")
     @js.native
     def canUseDOM: Boolean = js.native
-    @scala.inline
-    def canUseDOM_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canUseDOM")(x.asInstanceOf[js.Any])
+    inline def canUseDOM_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canUseDOM")(x.asInstanceOf[js.Any])
   }
   
   type BodyProps = (DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]) & OtherElementAttributes
@@ -64,17 +63,14 @@ object mod {
   }
   object FilledContext {
     
-    @scala.inline
-    def apply(helmet: HelmetData): FilledContext = {
+    inline def apply(helmet: HelmetData): FilledContext = {
       val __obj = js.Dynamic.literal(helmet = helmet.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilledContext]
     }
     
-    @scala.inline
-    implicit class FilledContextMutableBuilder[Self <: FilledContext] (val x: Self) extends AnyVal {
+    extension [Self <: FilledContext](x: Self) {
       
-      @scala.inline
-      def setHelmet(value: HelmetData): Self = StObject.set(x, "helmet", value.asInstanceOf[js.Any])
+      inline def setHelmet(value: HelmetData): Self = StObject.set(x, "helmet", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,8 +98,7 @@ object mod {
   }
   object HelmetData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       base: HelmetDatum,
       bodyAttributes: HelmetHTMLBodyDatum,
       htmlAttributes: HelmetHTMLElementDatum,
@@ -119,38 +114,27 @@ object mod {
       __obj.asInstanceOf[HelmetData]
     }
     
-    @scala.inline
-    implicit class HelmetDataMutableBuilder[Self <: HelmetData] (val x: Self) extends AnyVal {
+    extension [Self <: HelmetData](x: Self) {
       
-      @scala.inline
-      def setBase(value: HelmetDatum): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: HelmetDatum): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyAttributes(value: HelmetHTMLBodyDatum): Self = StObject.set(x, "bodyAttributes", value.asInstanceOf[js.Any])
+      inline def setBodyAttributes(value: HelmetHTMLBodyDatum): Self = StObject.set(x, "bodyAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlAttributes(value: HelmetHTMLElementDatum): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: HelmetHTMLElementDatum): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: HelmetDatum): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: HelmetDatum): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: HelmetDatum): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: HelmetDatum): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoscript(value: HelmetDatum): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
+      inline def setNoscript(value: HelmetDatum): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScript(value: HelmetDatum): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: HelmetDatum): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: HelmetDatum): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: HelmetDatum): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: HelmetDatum): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: HelmetDatum): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAttributes(value: HelmetDatum): Self = StObject.set(x, "titleAttributes", value.asInstanceOf[js.Any])
+      inline def setTitleAttributes(value: HelmetDatum): Self = StObject.set(x, "titleAttributes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -160,17 +144,14 @@ object mod {
   }
   object HelmetDatum {
     
-    @scala.inline
-    def apply(toComponent: () => Component[js.Any, js.Object, js.Any]): HelmetDatum = {
+    inline def apply(toComponent: () => Component[js.Any, js.Object, js.Any]): HelmetDatum = {
       val __obj = js.Dynamic.literal(toComponent = js.Any.fromFunction0(toComponent))
       __obj.asInstanceOf[HelmetDatum]
     }
     
-    @scala.inline
-    implicit class HelmetDatumMutableBuilder[Self <: HelmetDatum] (val x: Self) extends AnyVal {
+    extension [Self <: HelmetDatum](x: Self) {
       
-      @scala.inline
-      def setToComponent(value: () => Component[js.Any, js.Object, js.Any]): Self = StObject.set(x, "toComponent", js.Any.fromFunction0(value))
+      inline def setToComponent(value: () => Component[js.Any, js.Object, js.Any]): Self = StObject.set(x, "toComponent", js.Any.fromFunction0(value))
     }
   }
   
@@ -180,17 +161,14 @@ object mod {
   }
   object HelmetHTMLBodyDatum {
     
-    @scala.inline
-    def apply(toComponent: () => HTMLAttributes[HTMLBodyElement]): HelmetHTMLBodyDatum = {
+    inline def apply(toComponent: () => HTMLAttributes[HTMLBodyElement]): HelmetHTMLBodyDatum = {
       val __obj = js.Dynamic.literal(toComponent = js.Any.fromFunction0(toComponent))
       __obj.asInstanceOf[HelmetHTMLBodyDatum]
     }
     
-    @scala.inline
-    implicit class HelmetHTMLBodyDatumMutableBuilder[Self <: HelmetHTMLBodyDatum] (val x: Self) extends AnyVal {
+    extension [Self <: HelmetHTMLBodyDatum](x: Self) {
       
-      @scala.inline
-      def setToComponent(value: () => HTMLAttributes[HTMLBodyElement]): Self = StObject.set(x, "toComponent", js.Any.fromFunction0(value))
+      inline def setToComponent(value: () => HTMLAttributes[HTMLBodyElement]): Self = StObject.set(x, "toComponent", js.Any.fromFunction0(value))
     }
   }
   
@@ -200,17 +178,14 @@ object mod {
   }
   object HelmetHTMLElementDatum {
     
-    @scala.inline
-    def apply(toComponent: () => HTMLAttributes[HTMLHtmlElement]): HelmetHTMLElementDatum = {
+    inline def apply(toComponent: () => HTMLAttributes[HTMLHtmlElement]): HelmetHTMLElementDatum = {
       val __obj = js.Dynamic.literal(toComponent = js.Any.fromFunction0(toComponent))
       __obj.asInstanceOf[HelmetHTMLElementDatum]
     }
     
-    @scala.inline
-    implicit class HelmetHTMLElementDatumMutableBuilder[Self <: HelmetHTMLElementDatum] (val x: Self) extends AnyVal {
+    extension [Self <: HelmetHTMLElementDatum](x: Self) {
       
-      @scala.inline
-      def setToComponent(value: () => HTMLAttributes[HTMLHtmlElement]): Self = StObject.set(x, "toComponent", js.Any.fromFunction0(value))
+      inline def setToComponent(value: () => HTMLAttributes[HTMLHtmlElement]): Self = StObject.set(x, "toComponent", js.Any.fromFunction0(value))
     }
   }
   
@@ -252,125 +227,86 @@ object mod {
   }
   object HelmetProps {
     
-    @scala.inline
-    def apply(): HelmetProps = {
+    inline def apply(): HelmetProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HelmetProps]
     }
     
-    @scala.inline
-    implicit class HelmetPropsMutableBuilder[Self <: HelmetProps] (val x: Self) extends AnyVal {
+    extension [Self <: HelmetProps](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setBase(value: js.Any): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: js.Any): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setBodyAttributes(value: BodyProps): Self = StObject.set(x, "bodyAttributes", value.asInstanceOf[js.Any])
+      inline def setBodyAttributes(value: BodyProps): Self = StObject.set(x, "bodyAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyAttributesUndefined: Self = StObject.set(x, "bodyAttributes", js.undefined)
+      inline def setBodyAttributesUndefined: Self = StObject.set(x, "bodyAttributes", js.undefined)
       
-      @scala.inline
-      def setDefaultTitle(value: String): Self = StObject.set(x, "defaultTitle", value.asInstanceOf[js.Any])
+      inline def setDefaultTitle(value: String): Self = StObject.set(x, "defaultTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultTitleUndefined: Self = StObject.set(x, "defaultTitle", js.undefined)
+      inline def setDefaultTitleUndefined: Self = StObject.set(x, "defaultTitle", js.undefined)
       
-      @scala.inline
-      def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+      inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+      inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
       
-      @scala.inline
-      def setEncodeSpecialCharacters(value: Boolean): Self = StObject.set(x, "encodeSpecialCharacters", value.asInstanceOf[js.Any])
+      inline def setEncodeSpecialCharacters(value: Boolean): Self = StObject.set(x, "encodeSpecialCharacters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodeSpecialCharactersUndefined: Self = StObject.set(x, "encodeSpecialCharacters", js.undefined)
+      inline def setEncodeSpecialCharactersUndefined: Self = StObject.set(x, "encodeSpecialCharacters", js.undefined)
       
-      @scala.inline
-      def setHtmlAttributes(value: HtmlProps): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: HtmlProps): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
+      inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
-      @scala.inline
-      def setLink(value: js.Array[LinkProps]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: js.Array[LinkProps]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      @scala.inline
-      def setLinkVarargs(value: LinkProps*): Self = StObject.set(x, "link", js.Array(value :_*))
+      inline def setLinkVarargs(value: LinkProps*): Self = StObject.set(x, "link", js.Array(value :_*))
       
-      @scala.inline
-      def setMeta(value: js.Array[MetaProps]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: js.Array[MetaProps]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setMetaVarargs(value: MetaProps*): Self = StObject.set(x, "meta", js.Array(value :_*))
+      inline def setMetaVarargs(value: MetaProps*): Self = StObject.set(x, "meta", js.Array(value :_*))
       
-      @scala.inline
-      def setNoscript(value: js.Array[js.Any]): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
+      inline def setNoscript(value: js.Array[js.Any]): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoscriptUndefined: Self = StObject.set(x, "noscript", js.undefined)
+      inline def setNoscriptUndefined: Self = StObject.set(x, "noscript", js.undefined)
       
-      @scala.inline
-      def setNoscriptVarargs(value: js.Any*): Self = StObject.set(x, "noscript", js.Array(value :_*))
+      inline def setNoscriptVarargs(value: js.Any*): Self = StObject.set(x, "noscript", js.Array(value :_*))
       
-      @scala.inline
-      def setOnChangeClientState(value: (/* newState */ js.Any, /* addedTags */ HelmetTags, /* removedTags */ HelmetTags) => Unit): Self = StObject.set(x, "onChangeClientState", js.Any.fromFunction3(value))
+      inline def setOnChangeClientState(value: (/* newState */ js.Any, /* addedTags */ HelmetTags, /* removedTags */ HelmetTags) => Unit): Self = StObject.set(x, "onChangeClientState", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnChangeClientStateUndefined: Self = StObject.set(x, "onChangeClientState", js.undefined)
+      inline def setOnChangeClientStateUndefined: Self = StObject.set(x, "onChangeClientState", js.undefined)
       
-      @scala.inline
-      def setScript(value: js.Array[js.Any]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: js.Array[js.Any]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+      inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
       
-      @scala.inline
-      def setScriptVarargs(value: js.Any*): Self = StObject.set(x, "script", js.Array(value :_*))
+      inline def setScriptVarargs(value: js.Any*): Self = StObject.set(x, "script", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: js.Array[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Array[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setStyleVarargs(value: js.Any*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: js.Any*): Self = StObject.set(x, "style", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAttributes(value: js.Object): Self = StObject.set(x, "titleAttributes", value.asInstanceOf[js.Any])
+      inline def setTitleAttributes(value: js.Object): Self = StObject.set(x, "titleAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAttributesUndefined: Self = StObject.set(x, "titleAttributes", js.undefined)
+      inline def setTitleAttributesUndefined: Self = StObject.set(x, "titleAttributes", js.undefined)
       
-      @scala.inline
-      def setTitleTemplate(value: String): Self = StObject.set(x, "titleTemplate", value.asInstanceOf[js.Any])
+      inline def setTitleTemplate(value: String): Self = StObject.set(x, "titleTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleTemplateUndefined: Self = StObject.set(x, "titleTemplate", js.undefined)
+      inline def setTitleTemplateUndefined: Self = StObject.set(x, "titleTemplate", js.undefined)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -390,8 +326,7 @@ object mod {
   }
   object HelmetTags {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       baseTag: js.Array[js.Any],
       linkTags: js.Array[HTMLLinkElement],
       metaTags: js.Array[HTMLMetaElement],
@@ -403,44 +338,31 @@ object mod {
       __obj.asInstanceOf[HelmetTags]
     }
     
-    @scala.inline
-    implicit class HelmetTagsMutableBuilder[Self <: HelmetTags] (val x: Self) extends AnyVal {
+    extension [Self <: HelmetTags](x: Self) {
       
-      @scala.inline
-      def setBaseTag(value: js.Array[js.Any]): Self = StObject.set(x, "baseTag", value.asInstanceOf[js.Any])
+      inline def setBaseTag(value: js.Array[js.Any]): Self = StObject.set(x, "baseTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseTagVarargs(value: js.Any*): Self = StObject.set(x, "baseTag", js.Array(value :_*))
+      inline def setBaseTagVarargs(value: js.Any*): Self = StObject.set(x, "baseTag", js.Array(value :_*))
       
-      @scala.inline
-      def setLinkTags(value: js.Array[HTMLLinkElement]): Self = StObject.set(x, "linkTags", value.asInstanceOf[js.Any])
+      inline def setLinkTags(value: js.Array[HTMLLinkElement]): Self = StObject.set(x, "linkTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkTagsVarargs(value: HTMLLinkElement*): Self = StObject.set(x, "linkTags", js.Array(value :_*))
+      inline def setLinkTagsVarargs(value: HTMLLinkElement*): Self = StObject.set(x, "linkTags", js.Array(value :_*))
       
-      @scala.inline
-      def setMetaTags(value: js.Array[HTMLMetaElement]): Self = StObject.set(x, "metaTags", value.asInstanceOf[js.Any])
+      inline def setMetaTags(value: js.Array[HTMLMetaElement]): Self = StObject.set(x, "metaTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaTagsVarargs(value: HTMLMetaElement*): Self = StObject.set(x, "metaTags", js.Array(value :_*))
+      inline def setMetaTagsVarargs(value: HTMLMetaElement*): Self = StObject.set(x, "metaTags", js.Array(value :_*))
       
-      @scala.inline
-      def setNoscriptTags(value: js.Array[js.Any]): Self = StObject.set(x, "noscriptTags", value.asInstanceOf[js.Any])
+      inline def setNoscriptTags(value: js.Array[js.Any]): Self = StObject.set(x, "noscriptTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoscriptTagsVarargs(value: js.Any*): Self = StObject.set(x, "noscriptTags", js.Array(value :_*))
+      inline def setNoscriptTagsVarargs(value: js.Any*): Self = StObject.set(x, "noscriptTags", js.Array(value :_*))
       
-      @scala.inline
-      def setScriptTags(value: js.Array[HTMLScriptElement]): Self = StObject.set(x, "scriptTags", value.asInstanceOf[js.Any])
+      inline def setScriptTags(value: js.Array[HTMLScriptElement]): Self = StObject.set(x, "scriptTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptTagsVarargs(value: HTMLScriptElement*): Self = StObject.set(x, "scriptTags", js.Array(value :_*))
+      inline def setScriptTagsVarargs(value: HTMLScriptElement*): Self = StObject.set(x, "scriptTags", js.Array(value :_*))
       
-      @scala.inline
-      def setStyleTags(value: js.Array[HTMLStyleElement]): Self = StObject.set(x, "styleTags", value.asInstanceOf[js.Any])
+      inline def setStyleTags(value: js.Array[HTMLStyleElement]): Self = StObject.set(x, "styleTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleTagsVarargs(value: HTMLStyleElement*): Self = StObject.set(x, "styleTags", js.Array(value :_*))
+      inline def setStyleTagsVarargs(value: HTMLStyleElement*): Self = StObject.set(x, "styleTags", js.Array(value :_*))
     }
   }
   
@@ -458,20 +380,16 @@ object mod {
   }
   object ProviderProps {
     
-    @scala.inline
-    def apply(): ProviderProps = {
+    inline def apply(): ProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProviderProps]
     }
     
-    @scala.inline
-    implicit class ProviderPropsMutableBuilder[Self <: ProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ProviderProps](x: Self) {
       
-      @scala.inline
-      def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     }
   }
 }

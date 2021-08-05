@@ -31,8 +31,7 @@ trait BooleanCondition extends StObject {
 }
 object BooleanCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBackground: () => String | Null,
     getBold: () => Boolean | Null,
     getCriteriaType: () => BooleanCriteria,
@@ -46,31 +45,22 @@ object BooleanCondition {
     __obj.asInstanceOf[BooleanCondition]
   }
   
-  @scala.inline
-  implicit class BooleanConditionMutableBuilder[Self <: BooleanCondition] (val x: Self) extends AnyVal {
+  extension [Self <: BooleanCondition](x: Self) {
     
-    @scala.inline
-    def setGetBackground(value: () => String | Null): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
+    inline def setGetBackground(value: () => String | Null): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBold(value: () => Boolean | Null): Self = StObject.set(x, "getBold", js.Any.fromFunction0(value))
+    inline def setGetBold(value: () => Boolean | Null): Self = StObject.set(x, "getBold", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCriteriaType(value: () => BooleanCriteria): Self = StObject.set(x, "getCriteriaType", js.Any.fromFunction0(value))
+    inline def setGetCriteriaType(value: () => BooleanCriteria): Self = StObject.set(x, "getCriteriaType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCriteriaValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
+    inline def setGetCriteriaValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFontColor(value: () => String | Null): Self = StObject.set(x, "getFontColor", js.Any.fromFunction0(value))
+    inline def setGetFontColor(value: () => String | Null): Self = StObject.set(x, "getFontColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItalic(value: () => Boolean | Null): Self = StObject.set(x, "getItalic", js.Any.fromFunction0(value))
+    inline def setGetItalic(value: () => Boolean | Null): Self = StObject.set(x, "getItalic", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStrikethrough(value: () => Boolean | Null): Self = StObject.set(x, "getStrikethrough", js.Any.fromFunction0(value))
+    inline def setGetStrikethrough(value: () => Boolean | Null): Self = StObject.set(x, "getStrikethrough", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUnderline(value: () => Boolean | Null): Self = StObject.set(x, "getUnderline", js.Any.fromFunction0(value))
+    inline def setGetUnderline(value: () => Boolean | Null): Self = StObject.set(x, "getUnderline", js.Any.fromFunction0(value))
   }
 }

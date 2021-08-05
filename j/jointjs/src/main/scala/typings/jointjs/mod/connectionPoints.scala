@@ -22,26 +22,22 @@ object connectionPoints {
   @JSImport("jointjs", "connectionPoints.anchor")
   @js.native
   def anchor: GenericConnectionPoint[typings.jointjs.jointjsStrings.anchor] = js.native
-  @scala.inline
-  def anchor_=(x: GenericConnectionPoint[anchor]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("anchor")(x.asInstanceOf[js.Any])
+  inline def anchor_=(x: GenericConnectionPoint[anchor]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("anchor")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "connectionPoints.bbox")
   @js.native
   def bbox: GenericConnectionPoint[typings.jointjs.jointjsStrings.bbox] = js.native
-  @scala.inline
-  def bbox_=(x: GenericConnectionPoint[bbox]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bbox")(x.asInstanceOf[js.Any])
+  inline def bbox_=(x: GenericConnectionPoint[bbox]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bbox")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "connectionPoints.boundary")
   @js.native
   def boundary: GenericConnectionPoint[typings.jointjs.jointjsStrings.boundary] = js.native
-  @scala.inline
-  def boundary_=(x: GenericConnectionPoint[boundary]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("boundary")(x.asInstanceOf[js.Any])
+  inline def boundary_=(x: GenericConnectionPoint[boundary]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("boundary")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "connectionPoints.rectangle")
   @js.native
   def rectangle: GenericConnectionPoint[typings.jointjs.jointjsStrings.rectangle] = js.native
-  @scala.inline
-  def rectangle_=(x: GenericConnectionPoint[rectangle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rectangle")(x.asInstanceOf[js.Any])
+  inline def rectangle_=(x: GenericConnectionPoint[rectangle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rectangle")(x.asInstanceOf[js.Any])
   
   trait AlignConnectionPointArguments
     extends StObject
@@ -53,29 +49,22 @@ object connectionPoints {
   }
   object AlignConnectionPointArguments {
     
-    @scala.inline
-    def apply(): AlignConnectionPointArguments = {
+    inline def apply(): AlignConnectionPointArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlignConnectionPointArguments]
     }
     
-    @scala.inline
-    implicit class AlignConnectionPointArgumentsMutableBuilder[Self <: AlignConnectionPointArguments] (val x: Self) extends AnyVal {
+    extension [Self <: AlignConnectionPointArguments](x: Self) {
       
-      @scala.inline
-      def setAlign(value: ConnectionPointAlignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: ConnectionPointAlignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignNull: Self = StObject.set(x, "align", null)
+      inline def setAlignNull: Self = StObject.set(x, "align", null)
       
-      @scala.inline
-      def setAlignOffset(value: Double): Self = StObject.set(x, "alignOffset", value.asInstanceOf[js.Any])
+      inline def setAlignOffset(value: Double): Self = StObject.set(x, "alignOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignOffsetUndefined: Self = StObject.set(x, "alignOffset", js.undefined)
+      inline def setAlignOffsetUndefined: Self = StObject.set(x, "alignOffset", js.undefined)
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     }
   }
   
@@ -95,47 +84,34 @@ object connectionPoints {
   }
   object BoundaryConnectionPointArguments {
     
-    @scala.inline
-    def apply(): BoundaryConnectionPointArguments = {
+    inline def apply(): BoundaryConnectionPointArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BoundaryConnectionPointArguments]
     }
     
-    @scala.inline
-    implicit class BoundaryConnectionPointArgumentsMutableBuilder[Self <: BoundaryConnectionPointArguments] (val x: Self) extends AnyVal {
+    extension [Self <: BoundaryConnectionPointArguments](x: Self) {
       
-      @scala.inline
-      def setExtrapolate(value: Boolean): Self = StObject.set(x, "extrapolate", value.asInstanceOf[js.Any])
+      inline def setExtrapolate(value: Boolean): Self = StObject.set(x, "extrapolate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtrapolateUndefined: Self = StObject.set(x, "extrapolate", js.undefined)
+      inline def setExtrapolateUndefined: Self = StObject.set(x, "extrapolate", js.undefined)
       
-      @scala.inline
-      def setInsideout(value: Boolean): Self = StObject.set(x, "insideout", value.asInstanceOf[js.Any])
+      inline def setInsideout(value: Boolean): Self = StObject.set(x, "insideout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsideoutUndefined: Self = StObject.set(x, "insideout", js.undefined)
+      inline def setInsideoutUndefined: Self = StObject.set(x, "insideout", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      @scala.inline
-      def setSelector(value: (js.Array[String | Double]) | String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: (js.Array[String | Double]) | String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
-      @scala.inline
-      def setSelectorVarargs(value: (String | Double)*): Self = StObject.set(x, "selector", js.Array(value :_*))
+      inline def setSelectorVarargs(value: (String | Double)*): Self = StObject.set(x, "selector", js.Array(value :_*))
       
-      @scala.inline
-      def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+      inline def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
+      inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
     }
   }
   
@@ -150,17 +126,13 @@ object connectionPoints {
   trait ConnectionPointAlignment extends StObject
   object ConnectionPointAlignment {
     
-    @scala.inline
-    def bottom: typings.jointjs.jointjsStrings.bottom = "bottom".asInstanceOf[typings.jointjs.jointjsStrings.bottom]
+    inline def bottom: typings.jointjs.jointjsStrings.bottom = "bottom".asInstanceOf[typings.jointjs.jointjsStrings.bottom]
     
-    @scala.inline
-    def left: typings.jointjs.jointjsStrings.left = "left".asInstanceOf[typings.jointjs.jointjsStrings.left]
+    inline def left: typings.jointjs.jointjsStrings.left = "left".asInstanceOf[typings.jointjs.jointjsStrings.left]
     
-    @scala.inline
-    def right: typings.jointjs.jointjsStrings.right = "right".asInstanceOf[typings.jointjs.jointjsStrings.right]
+    inline def right: typings.jointjs.jointjsStrings.right = "right".asInstanceOf[typings.jointjs.jointjsStrings.right]
     
-    @scala.inline
-    def top: typings.jointjs.jointjsStrings.top = "top".asInstanceOf[typings.jointjs.jointjsStrings.top]
+    inline def top: typings.jointjs.jointjsStrings.top = "top".asInstanceOf[typings.jointjs.jointjsStrings.top]
   }
   
   /* Inlined jointjs.jointjs.connectionPoints.GenericConnectionPointArguments<jointjs.jointjs.connectionPoints.ConnectionPointType> */
@@ -176,26 +148,19 @@ object connectionPoints {
   trait ConnectionPointArguments extends StObject
   object ConnectionPointArguments {
     
-    @scala.inline
-    def extrapolate: typings.jointjs.jointjsStrings.extrapolate = "extrapolate".asInstanceOf[typings.jointjs.jointjsStrings.extrapolate]
+    inline def extrapolate: typings.jointjs.jointjsStrings.extrapolate = "extrapolate".asInstanceOf[typings.jointjs.jointjsStrings.extrapolate]
     
-    @scala.inline
-    def insideout: typings.jointjs.jointjsStrings.insideout = "insideout".asInstanceOf[typings.jointjs.jointjsStrings.insideout]
+    inline def insideout: typings.jointjs.jointjsStrings.insideout = "insideout".asInstanceOf[typings.jointjs.jointjsStrings.insideout]
     
-    @scala.inline
-    def offset: typings.jointjs.jointjsStrings.offset = "offset".asInstanceOf[typings.jointjs.jointjsStrings.offset]
+    inline def offset: typings.jointjs.jointjsStrings.offset = "offset".asInstanceOf[typings.jointjs.jointjsStrings.offset]
     
-    @scala.inline
-    def precision: typings.jointjs.jointjsStrings.precision = "precision".asInstanceOf[typings.jointjs.jointjsStrings.precision]
+    inline def precision: typings.jointjs.jointjsStrings.precision = "precision".asInstanceOf[typings.jointjs.jointjsStrings.precision]
     
-    @scala.inline
-    def selector: typings.jointjs.jointjsStrings.selector = "selector".asInstanceOf[typings.jointjs.jointjsStrings.selector]
+    inline def selector: typings.jointjs.jointjsStrings.selector = "selector".asInstanceOf[typings.jointjs.jointjsStrings.selector]
     
-    @scala.inline
-    def sticky: typings.jointjs.jointjsStrings.sticky = "sticky".asInstanceOf[typings.jointjs.jointjsStrings.sticky]
+    inline def sticky: typings.jointjs.jointjsStrings.sticky = "sticky".asInstanceOf[typings.jointjs.jointjsStrings.sticky]
     
-    @scala.inline
-    def stroke: typings.jointjs.jointjsStrings.stroke = "stroke".asInstanceOf[typings.jointjs.jointjsStrings.stroke]
+    inline def stroke: typings.jointjs.jointjsStrings.stroke = "stroke".asInstanceOf[typings.jointjs.jointjsStrings.stroke]
   }
   
   trait ConnectionPointArgumentsMap
@@ -212,8 +177,7 @@ object connectionPoints {
   }
   object ConnectionPointArgumentsMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       anchor: DefaultConnectionPointArguments,
       bbox: StrokeConnectionPointArguments,
       boundary: BoundaryConnectionPointArguments,
@@ -223,20 +187,15 @@ object connectionPoints {
       __obj.asInstanceOf[ConnectionPointArgumentsMap]
     }
     
-    @scala.inline
-    implicit class ConnectionPointArgumentsMapMutableBuilder[Self <: ConnectionPointArgumentsMap] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionPointArgumentsMap](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: DefaultConnectionPointArguments): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: DefaultConnectionPointArguments): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBbox(value: StrokeConnectionPointArguments): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+      inline def setBbox(value: StrokeConnectionPointArguments): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundary(value: BoundaryConnectionPointArguments): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+      inline def setBoundary(value: BoundaryConnectionPointArguments): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRectangle(value: StrokeConnectionPointArguments): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
+      inline def setRectangle(value: StrokeConnectionPointArguments): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
     }
   }
   
@@ -256,20 +215,16 @@ object connectionPoints {
   }
   object DefaultConnectionPointArguments {
     
-    @scala.inline
-    def apply(): DefaultConnectionPointArguments = {
+    inline def apply(): DefaultConnectionPointArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultConnectionPointArguments]
     }
     
-    @scala.inline
-    implicit class DefaultConnectionPointArgumentsMutableBuilder[Self <: DefaultConnectionPointArguments] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultConnectionPointArguments](x: Self) {
       
-      @scala.inline
-      def setOffset(value: Double | Point): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double | Point): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     }
   }
   
@@ -293,25 +248,20 @@ object connectionPoints {
   }
   object GenericConnectionPointJSON {
     
-    @scala.inline
-    def apply[K /* <: ConnectionPointType */](name: K): GenericConnectionPointJSON[K] = {
+    inline def apply[K /* <: ConnectionPointType */](name: K): GenericConnectionPointJSON[K] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericConnectionPointJSON[K]]
     }
     
-    @scala.inline
-    implicit class GenericConnectionPointJSONMutableBuilder[Self <: GenericConnectionPointJSON[?], K /* <: ConnectionPointType */] (val x: Self & GenericConnectionPointJSON[K]) extends AnyVal {
+    extension [Self <: GenericConnectionPointJSON[?], K /* <: ConnectionPointType */](x: Self & GenericConnectionPointJSON[K]) {
       
-      @scala.inline
-      def setArgs(
+      inline def setArgs(
         value: /* import warning: importer.ImportType#apply Failed type conversion: jointjs.jointjs.connectionPoints.ConnectionPointArgumentsMap[K] */ js.Any
       ): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -323,20 +273,16 @@ object connectionPoints {
   }
   object StrokeConnectionPointArguments {
     
-    @scala.inline
-    def apply(): StrokeConnectionPointArguments = {
+    inline def apply(): StrokeConnectionPointArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrokeConnectionPointArguments]
     }
     
-    @scala.inline
-    implicit class StrokeConnectionPointArgumentsMutableBuilder[Self <: StrokeConnectionPointArguments] (val x: Self) extends AnyVal {
+    extension [Self <: StrokeConnectionPointArguments](x: Self) {
       
-      @scala.inline
-      def setStroke(value: Boolean): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: Boolean): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+      inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     }
   }
 }

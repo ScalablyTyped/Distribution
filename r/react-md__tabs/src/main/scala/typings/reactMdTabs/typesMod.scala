@@ -73,74 +73,52 @@ object typesMod {
   }
   object TabConfig {
     
-    @scala.inline
-    def apply(): TabConfig = {
+    inline def apply(): TabConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabConfig]
     }
     
-    @scala.inline
-    implicit class TabConfigMutableBuilder[Self <: TabConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TabConfig](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
+      inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
+      inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      @scala.inline
-      def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+      inline def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
+      inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconAfter(value: Boolean): Self = StObject.set(x, "iconAfter", value.asInstanceOf[js.Any])
+      inline def setIconAfter(value: Boolean): Self = StObject.set(x, "iconAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconAfterUndefined: Self = StObject.set(x, "iconAfter", js.undefined)
+      inline def setIconAfterUndefined: Self = StObject.set(x, "iconAfter", js.undefined)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
+      inline def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
+      inline def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -152,14 +130,11 @@ object typesMod {
   trait TabsAlignment extends StObject
   object TabsAlignment {
     
-    @scala.inline
-    def center: typings.reactMdTabs.reactMdTabsStrings.center = "center".asInstanceOf[typings.reactMdTabs.reactMdTabsStrings.center]
+    inline def center: typings.reactMdTabs.reactMdTabsStrings.center = "center".asInstanceOf[typings.reactMdTabs.reactMdTabsStrings.center]
     
-    @scala.inline
-    def left: typings.reactMdTabs.reactMdTabsStrings.left = "left".asInstanceOf[typings.reactMdTabs.reactMdTabsStrings.left]
+    inline def left: typings.reactMdTabs.reactMdTabsStrings.left = "left".asInstanceOf[typings.reactMdTabs.reactMdTabsStrings.left]
     
-    @scala.inline
-    def right: typings.reactMdTabs.reactMdTabsStrings.right = "right".asInstanceOf[typings.reactMdTabs.reactMdTabsStrings.right]
+    inline def right: typings.reactMdTabs.reactMdTabsStrings.right = "right".asInstanceOf[typings.reactMdTabs.reactMdTabsStrings.right]
   }
   
   trait TabsConfig extends StObject {
@@ -193,38 +168,28 @@ object typesMod {
   }
   object TabsConfig {
     
-    @scala.inline
-    def apply(): TabsConfig = {
+    inline def apply(): TabsConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabsConfig]
     }
     
-    @scala.inline
-    implicit class TabsConfigMutableBuilder[Self <: TabsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TabsConfig](x: Self) {
       
-      @scala.inline
-      def setAlign(value: TabsAlignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: TabsAlignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
+      inline def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomaticUndefined: Self = StObject.set(x, "automatic", js.undefined)
+      inline def setAutomaticUndefined: Self = StObject.set(x, "automatic", js.undefined)
       
-      @scala.inline
-      def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      @scala.inline
-      def setPadded(value: Boolean): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
+      inline def setPadded(value: Boolean): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddedUndefined: Self = StObject.set(x, "padded", js.undefined)
+      inline def setPaddedUndefined: Self = StObject.set(x, "padded", js.undefined)
     }
   }
 }

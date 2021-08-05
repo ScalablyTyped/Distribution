@@ -19,8 +19,7 @@ trait UnoControlSpinButton
      with XSpinValue
 object UnoControlSpinButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleContext: XAccessibleContext,
     Context: XInterface,
     Graphics: XGraphics,

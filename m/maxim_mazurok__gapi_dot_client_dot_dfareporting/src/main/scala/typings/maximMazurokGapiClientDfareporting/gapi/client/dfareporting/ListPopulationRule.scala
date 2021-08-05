@@ -17,34 +17,25 @@ trait ListPopulationRule extends StObject {
 }
 object ListPopulationRule {
   
-  @scala.inline
-  def apply(): ListPopulationRule = {
+  inline def apply(): ListPopulationRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPopulationRule]
   }
   
-  @scala.inline
-  implicit class ListPopulationRuleMutableBuilder[Self <: ListPopulationRule] (val x: Self) extends AnyVal {
+  extension [Self <: ListPopulationRule](x: Self) {
     
-    @scala.inline
-    def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
+    inline def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
+    inline def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
     
-    @scala.inline
-    def setFloodlightActivityName(value: String): Self = StObject.set(x, "floodlightActivityName", value.asInstanceOf[js.Any])
+    inline def setFloodlightActivityName(value: String): Self = StObject.set(x, "floodlightActivityName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightActivityNameUndefined: Self = StObject.set(x, "floodlightActivityName", js.undefined)
+    inline def setFloodlightActivityNameUndefined: Self = StObject.set(x, "floodlightActivityName", js.undefined)
     
-    @scala.inline
-    def setListPopulationClauses(value: js.Array[ListPopulationClause]): Self = StObject.set(x, "listPopulationClauses", value.asInstanceOf[js.Any])
+    inline def setListPopulationClauses(value: js.Array[ListPopulationClause]): Self = StObject.set(x, "listPopulationClauses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPopulationClausesUndefined: Self = StObject.set(x, "listPopulationClauses", js.undefined)
+    inline def setListPopulationClausesUndefined: Self = StObject.set(x, "listPopulationClauses", js.undefined)
     
-    @scala.inline
-    def setListPopulationClausesVarargs(value: ListPopulationClause*): Self = StObject.set(x, "listPopulationClauses", js.Array(value :_*))
+    inline def setListPopulationClausesVarargs(value: ListPopulationClause*): Self = StObject.set(x, "listPopulationClauses", js.Array(value :_*))
   }
 }

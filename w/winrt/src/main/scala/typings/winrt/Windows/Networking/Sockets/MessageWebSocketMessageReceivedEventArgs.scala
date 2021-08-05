@@ -11,8 +11,7 @@ trait MessageWebSocketMessageReceivedEventArgs
      with IMessageWebSocketMessageReceivedEventArgs
 object MessageWebSocketMessageReceivedEventArgs {
   
-  @scala.inline
-  def apply(getDataReader: () => DataReader, getDataStream: () => IInputStream, messageType: SocketMessageType): MessageWebSocketMessageReceivedEventArgs = {
+  inline def apply(getDataReader: () => DataReader, getDataStream: () => IInputStream, messageType: SocketMessageType): MessageWebSocketMessageReceivedEventArgs = {
     val __obj = js.Dynamic.literal(getDataReader = js.Any.fromFunction0(getDataReader), getDataStream = js.Any.fromFunction0(getDataStream), messageType = messageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageWebSocketMessageReceivedEventArgs]
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait htmlInputImage extends StObject {
   
-  @JSName("MSHTML.htmlInputImage_typekey")
+  /* private */ @JSName("MSHTML.htmlInputImage_typekey")
   var MSHTMLDothtmlInputImage_typekey: htmlInputImage = js.native
   
   var accessKey: String = js.native

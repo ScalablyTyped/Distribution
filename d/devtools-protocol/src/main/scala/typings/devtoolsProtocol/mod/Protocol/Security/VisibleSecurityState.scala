@@ -28,34 +28,25 @@ trait VisibleSecurityState extends StObject {
 }
 object VisibleSecurityState {
   
-  @scala.inline
-  def apply(securityState: SecurityState, securityStateIssueIds: js.Array[String]): VisibleSecurityState = {
+  inline def apply(securityState: SecurityState, securityStateIssueIds: js.Array[String]): VisibleSecurityState = {
     val __obj = js.Dynamic.literal(securityState = securityState.asInstanceOf[js.Any], securityStateIssueIds = securityStateIssueIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisibleSecurityState]
   }
   
-  @scala.inline
-  implicit class VisibleSecurityStateMutableBuilder[Self <: VisibleSecurityState] (val x: Self) extends AnyVal {
+  extension [Self <: VisibleSecurityState](x: Self) {
     
-    @scala.inline
-    def setCertificateSecurityState(value: CertificateSecurityState): Self = StObject.set(x, "certificateSecurityState", value.asInstanceOf[js.Any])
+    inline def setCertificateSecurityState(value: CertificateSecurityState): Self = StObject.set(x, "certificateSecurityState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateSecurityStateUndefined: Self = StObject.set(x, "certificateSecurityState", js.undefined)
+    inline def setCertificateSecurityStateUndefined: Self = StObject.set(x, "certificateSecurityState", js.undefined)
     
-    @scala.inline
-    def setSafetyTipInfo(value: SafetyTipInfo): Self = StObject.set(x, "safetyTipInfo", value.asInstanceOf[js.Any])
+    inline def setSafetyTipInfo(value: SafetyTipInfo): Self = StObject.set(x, "safetyTipInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafetyTipInfoUndefined: Self = StObject.set(x, "safetyTipInfo", js.undefined)
+    inline def setSafetyTipInfoUndefined: Self = StObject.set(x, "safetyTipInfo", js.undefined)
     
-    @scala.inline
-    def setSecurityState(value: SecurityState): Self = StObject.set(x, "securityState", value.asInstanceOf[js.Any])
+    inline def setSecurityState(value: SecurityState): Self = StObject.set(x, "securityState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityStateIssueIds(value: js.Array[String]): Self = StObject.set(x, "securityStateIssueIds", value.asInstanceOf[js.Any])
+    inline def setSecurityStateIssueIds(value: js.Array[String]): Self = StObject.set(x, "securityStateIssueIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityStateIssueIdsVarargs(value: String*): Self = StObject.set(x, "securityStateIssueIds", js.Array(value :_*))
+    inline def setSecurityStateIssueIdsVarargs(value: String*): Self = StObject.set(x, "securityStateIssueIds", js.Array(value :_*))
   }
 }

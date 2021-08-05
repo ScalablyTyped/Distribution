@@ -23,8 +23,7 @@ trait XGoalSeek
 }
 object XGoalSeek {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -34,10 +33,8 @@ object XGoalSeek {
     __obj.asInstanceOf[XGoalSeek]
   }
   
-  @scala.inline
-  implicit class XGoalSeekMutableBuilder[Self <: XGoalSeek] (val x: Self) extends AnyVal {
+  extension [Self <: XGoalSeek](x: Self) {
     
-    @scala.inline
-    def setSeekGoal(value: (CellAddress, CellAddress, String) => GoalResult): Self = StObject.set(x, "seekGoal", js.Any.fromFunction3(value))
+    inline def setSeekGoal(value: (CellAddress, CellAddress, String) => GoalResult): Self = StObject.set(x, "seekGoal", js.Any.fromFunction3(value))
   }
 }

@@ -181,18 +181,12 @@ object activationsMod {
     val className: /* "tanh" */ String = js.native
   }
   
-  @scala.inline
-  def deserializeActivation(config: ConfigDict): Activation = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeActivation")(config.asInstanceOf[js.Any]).asInstanceOf[Activation]
-  @scala.inline
-  def deserializeActivation(config: ConfigDict, customObjects: ConfigDict): Activation = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeActivation")(config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[Activation]
+  inline def deserializeActivation(config: ConfigDict): Activation = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeActivation")(config.asInstanceOf[js.Any]).asInstanceOf[Activation]
+  inline def deserializeActivation(config: ConfigDict, customObjects: ConfigDict): Activation = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeActivation")(config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[Activation]
   
-  @scala.inline
-  def getActivation(identifier: ConfigDict): Activation = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivation")(identifier.asInstanceOf[js.Any]).asInstanceOf[Activation]
-  @scala.inline
-  def getActivation(identifier: ActivationIdentifier): Activation = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivation")(identifier.asInstanceOf[js.Any]).asInstanceOf[Activation]
-  @scala.inline
-  def getActivation(identifier: Activation): Activation = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivation")(identifier.asInstanceOf[js.Any]).asInstanceOf[Activation]
+  inline def getActivation(identifier: ConfigDict): Activation = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivation")(identifier.asInstanceOf[js.Any]).asInstanceOf[Activation]
+  inline def getActivation(identifier: ActivationIdentifier): Activation = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivation")(identifier.asInstanceOf[js.Any]).asInstanceOf[Activation]
+  inline def getActivation(identifier: Activation): Activation = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivation")(identifier.asInstanceOf[js.Any]).asInstanceOf[Activation]
   
-  @scala.inline
-  def serializeActivation(activation: Activation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeActivation")(activation.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serializeActivation(activation: Activation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeActivation")(activation.asInstanceOf[js.Any]).asInstanceOf[String]
 }

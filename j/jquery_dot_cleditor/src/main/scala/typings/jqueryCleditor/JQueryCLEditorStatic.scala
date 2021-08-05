@@ -18,8 +18,7 @@ trait JQueryCLEditorStatic extends StObject {
 }
 object JQueryCLEditorStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buttons: js.Array[JQueryCLEditorButtonDefinition],
     defaultOptions: JQueryCLEditorOptions,
     imagesPath: () => String
@@ -28,19 +27,14 @@ object JQueryCLEditorStatic {
     __obj.asInstanceOf[JQueryCLEditorStatic]
   }
   
-  @scala.inline
-  implicit class JQueryCLEditorStaticMutableBuilder[Self <: JQueryCLEditorStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryCLEditorStatic](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[JQueryCLEditorButtonDefinition]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[JQueryCLEditorButtonDefinition]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsVarargs(value: JQueryCLEditorButtonDefinition*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: JQueryCLEditorButtonDefinition*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultOptions(value: JQueryCLEditorOptions): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultOptions(value: JQueryCLEditorOptions): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesPath(value: () => String): Self = StObject.set(x, "imagesPath", js.Any.fromFunction0(value))
+    inline def setImagesPath(value: () => String): Self = StObject.set(x, "imagesPath", js.Any.fromFunction0(value))
   }
 }

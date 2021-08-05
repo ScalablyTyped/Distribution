@@ -38,43 +38,31 @@ trait CandidateTemplate extends StObject {
 }
 object CandidateTemplate {
   
-  @scala.inline
-  def apply(candidate: String, id: Double): CandidateTemplate = {
+  inline def apply(candidate: String, id: Double): CandidateTemplate = {
     val __obj = js.Dynamic.literal(candidate = candidate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CandidateTemplate]
   }
   
-  @scala.inline
-  implicit class CandidateTemplateMutableBuilder[Self <: CandidateTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: CandidateTemplate](x: Self) {
     
-    @scala.inline
-    def setAnnotation(value: String): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
+    inline def setAnnotation(value: String): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
+    inline def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
     
-    @scala.inline
-    def setCandidate(value: String): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
+    inline def setCandidate(value: String): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setParentId(value: Double): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: Double): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+    inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
-    @scala.inline
-    def setUsage(value: CandidateUsage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    inline def setUsage(value: CandidateUsage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+    inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
   }
 }

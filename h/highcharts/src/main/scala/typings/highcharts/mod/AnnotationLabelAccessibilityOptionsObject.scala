@@ -14,19 +14,15 @@ trait AnnotationLabelAccessibilityOptionsObject extends StObject {
 }
 object AnnotationLabelAccessibilityOptionsObject {
   
-  @scala.inline
-  def apply(): AnnotationLabelAccessibilityOptionsObject = {
+  inline def apply(): AnnotationLabelAccessibilityOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationLabelAccessibilityOptionsObject]
   }
   
-  @scala.inline
-  implicit class AnnotationLabelAccessibilityOptionsObjectMutableBuilder[Self <: AnnotationLabelAccessibilityOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationLabelAccessibilityOptionsObject](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
   }
 }

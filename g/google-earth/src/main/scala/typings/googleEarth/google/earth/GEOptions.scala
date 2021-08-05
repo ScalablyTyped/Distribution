@@ -180,8 +180,7 @@ trait GEOptions extends StObject {
 }
 object GEOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAtmosphereVisibility: () => Boolean,
     getAutoGroundLevelViewEnabled: () => Boolean,
     getBuildingHighlightingEnabled: () => Boolean,
@@ -216,94 +215,64 @@ object GEOptions {
     __obj.asInstanceOf[GEOptions]
   }
   
-  @scala.inline
-  implicit class GEOptionsMutableBuilder[Self <: GEOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GEOptions](x: Self) {
     
-    @scala.inline
-    def setGetAtmosphereVisibility(value: () => Boolean): Self = StObject.set(x, "getAtmosphereVisibility", js.Any.fromFunction0(value))
+    inline def setGetAtmosphereVisibility(value: () => Boolean): Self = StObject.set(x, "getAtmosphereVisibility", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAutoGroundLevelViewEnabled(value: () => Boolean): Self = StObject.set(x, "getAutoGroundLevelViewEnabled", js.Any.fromFunction0(value))
+    inline def setGetAutoGroundLevelViewEnabled(value: () => Boolean): Self = StObject.set(x, "getAutoGroundLevelViewEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBuildingHighlightingEnabled(value: () => Boolean): Self = StObject.set(x, "getBuildingHighlightingEnabled", js.Any.fromFunction0(value))
+    inline def setGetBuildingHighlightingEnabled(value: () => Boolean): Self = StObject.set(x, "getBuildingHighlightingEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBuildingSelectionEnabled(value: () => Boolean): Self = StObject.set(x, "getBuildingSelectionEnabled", js.Any.fromFunction0(value))
+    inline def setGetBuildingSelectionEnabled(value: () => Boolean): Self = StObject.set(x, "getBuildingSelectionEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFadeInOutEnabled(value: () => Boolean): Self = StObject.set(x, "getFadeInOutEnabled", js.Any.fromFunction0(value))
+    inline def setGetFadeInOutEnabled(value: () => Boolean): Self = StObject.set(x, "getFadeInOutEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFlyToSpeed(value: () => Double): Self = StObject.set(x, "getFlyToSpeed", js.Any.fromFunction0(value))
+    inline def setGetFlyToSpeed(value: () => Double): Self = StObject.set(x, "getFlyToSpeed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGridVisibility(value: () => Boolean): Self = StObject.set(x, "getGridVisibility", js.Any.fromFunction0(value))
+    inline def setGetGridVisibility(value: () => Boolean): Self = StObject.set(x, "getGridVisibility", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMouseNavigationEnabled(value: () => Boolean): Self = StObject.set(x, "getMouseNavigationEnabled", js.Any.fromFunction0(value))
+    inline def setGetMouseNavigationEnabled(value: () => Boolean): Self = StObject.set(x, "getMouseNavigationEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOverviewMapVisibility(value: () => Boolean): Self = StObject.set(x, "getOverviewMapVisibility", js.Any.fromFunction0(value))
+    inline def setGetOverviewMapVisibility(value: () => Boolean): Self = StObject.set(x, "getOverviewMapVisibility", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScaleLegendVisibility(value: () => Boolean): Self = StObject.set(x, "getScaleLegendVisibility", js.Any.fromFunction0(value))
+    inline def setGetScaleLegendVisibility(value: () => Boolean): Self = StObject.set(x, "getScaleLegendVisibility", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScrollWheelZoomSpeed(value: () => Double): Self = StObject.set(x, "getScrollWheelZoomSpeed", js.Any.fromFunction0(value))
+    inline def setGetScrollWheelZoomSpeed(value: () => Double): Self = StObject.set(x, "getScrollWheelZoomSpeed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStatusBarVisibility(value: () => Boolean): Self = StObject.set(x, "getStatusBarVisibility", js.Any.fromFunction0(value))
+    inline def setGetStatusBarVisibility(value: () => Boolean): Self = StObject.set(x, "getStatusBarVisibility", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTerrainExaggeration(value: () => Double): Self = StObject.set(x, "getTerrainExaggeration", js.Any.fromFunction0(value))
+    inline def setGetTerrainExaggeration(value: () => Double): Self = StObject.set(x, "getTerrainExaggeration", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUnitsFeetMiles(value: () => Boolean): Self = StObject.set(x, "getUnitsFeetMiles", js.Any.fromFunction0(value))
+    inline def setGetUnitsFeetMiles(value: () => Boolean): Self = StObject.set(x, "getUnitsFeetMiles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAtmosphereVisibility(value: Boolean => Unit): Self = StObject.set(x, "setAtmosphereVisibility", js.Any.fromFunction1(value))
+    inline def setSetAtmosphereVisibility(value: Boolean => Unit): Self = StObject.set(x, "setAtmosphereVisibility", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAutoGroundLevelViewEnabled(value: Boolean => Unit): Self = StObject.set(x, "setAutoGroundLevelViewEnabled", js.Any.fromFunction1(value))
+    inline def setSetAutoGroundLevelViewEnabled(value: Boolean => Unit): Self = StObject.set(x, "setAutoGroundLevelViewEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBuildingHighlightingEnabled(value: Boolean => Unit): Self = StObject.set(x, "setBuildingHighlightingEnabled", js.Any.fromFunction1(value))
+    inline def setSetBuildingHighlightingEnabled(value: Boolean => Unit): Self = StObject.set(x, "setBuildingHighlightingEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBuildingSelectionEnabled(value: Boolean => Unit): Self = StObject.set(x, "setBuildingSelectionEnabled", js.Any.fromFunction1(value))
+    inline def setSetBuildingSelectionEnabled(value: Boolean => Unit): Self = StObject.set(x, "setBuildingSelectionEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFadeInOutEnabled(value: Boolean => Unit): Self = StObject.set(x, "setFadeInOutEnabled", js.Any.fromFunction1(value))
+    inline def setSetFadeInOutEnabled(value: Boolean => Unit): Self = StObject.set(x, "setFadeInOutEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFlyToSpeed(value: Double => Unit): Self = StObject.set(x, "setFlyToSpeed", js.Any.fromFunction1(value))
+    inline def setSetFlyToSpeed(value: Double => Unit): Self = StObject.set(x, "setFlyToSpeed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGridVisibility(value: Boolean => Unit): Self = StObject.set(x, "setGridVisibility", js.Any.fromFunction1(value))
+    inline def setSetGridVisibility(value: Boolean => Unit): Self = StObject.set(x, "setGridVisibility", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMapType(value: GEMapTypeEnum => Unit): Self = StObject.set(x, "setMapType", js.Any.fromFunction1(value))
+    inline def setSetMapType(value: GEMapTypeEnum => Unit): Self = StObject.set(x, "setMapType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMouseNavigationEnabled(value: Boolean => Unit): Self = StObject.set(x, "setMouseNavigationEnabled", js.Any.fromFunction1(value))
+    inline def setSetMouseNavigationEnabled(value: Boolean => Unit): Self = StObject.set(x, "setMouseNavigationEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOverviewMapVisibility(value: Boolean => Unit): Self = StObject.set(x, "setOverviewMapVisibility", js.Any.fromFunction1(value))
+    inline def setSetOverviewMapVisibility(value: Boolean => Unit): Self = StObject.set(x, "setOverviewMapVisibility", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetScaleLegendVisibility(value: Boolean => Unit): Self = StObject.set(x, "setScaleLegendVisibility", js.Any.fromFunction1(value))
+    inline def setSetScaleLegendVisibility(value: Boolean => Unit): Self = StObject.set(x, "setScaleLegendVisibility", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetScrollWheelZoomSpeed(value: Double => Unit): Self = StObject.set(x, "setScrollWheelZoomSpeed", js.Any.fromFunction1(value))
+    inline def setSetScrollWheelZoomSpeed(value: Double => Unit): Self = StObject.set(x, "setScrollWheelZoomSpeed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStatusBarVisibility(value: Boolean => Unit): Self = StObject.set(x, "setStatusBarVisibility", js.Any.fromFunction1(value))
+    inline def setSetStatusBarVisibility(value: Boolean => Unit): Self = StObject.set(x, "setStatusBarVisibility", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTerrainExaggeration(value: Double => Unit): Self = StObject.set(x, "setTerrainExaggeration", js.Any.fromFunction1(value))
+    inline def setSetTerrainExaggeration(value: Double => Unit): Self = StObject.set(x, "setTerrainExaggeration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUnitsFeetMiles(value: Boolean => Unit): Self = StObject.set(x, "setUnitsFeetMiles", js.Any.fromFunction1(value))
+    inline def setSetUnitsFeetMiles(value: Boolean => Unit): Self = StObject.set(x, "setUnitsFeetMiles", js.Any.fromFunction1(value))
   }
 }

@@ -15,20 +15,16 @@ object anon {
   }
   object Domain {
     
-    @scala.inline
-    def apply(domain: TypedDataDomain, value: js.Any): Domain = {
+    inline def apply(domain: TypedDataDomain, value: js.Any): Domain = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Domain]
     }
     
-    @scala.inline
-    implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
+    extension [Self <: Domain](x: Self) {
       
-      @scala.inline
-      def setDomain(value: TypedDataDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: TypedDataDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

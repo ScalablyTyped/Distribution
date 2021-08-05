@@ -30,38 +30,30 @@ trait InterruptReason extends StObject
 object InterruptReason {
   
   /** script stopped at a breakpoint. */
-  @scala.inline
-  def BreakPoint: `3` = 3.asInstanceOf[`3`]
+  inline def BreakPoint: `3` = 3.asInstanceOf[`3`]
   
   /**
     * script in the engine was cancelled.
     *
     * script execution was cancelled.
     */
-  @scala.inline
-  def Cancel: `0` = 0.asInstanceOf[`0`]
+  inline def Cancel: `0` = 0.asInstanceOf[`0`]
   
   /** script has invalid syntax. */
-  @scala.inline
-  def CompileError: `2` = 2.asInstanceOf[`2`]
+  inline def CompileError: `2` = 2.asInstanceOf[`2`]
   
   /** runtime error occurred during script execution. */
-  @scala.inline
-  def RuntimeError: `1` = 1.asInstanceOf[`1`]
+  inline def RuntimeError: `1` = 1.asInstanceOf[`1`]
   
   /** script stops because only one scripting engine command was executed. */
-  @scala.inline
-  def Step: `4` = 4.asInstanceOf[`4`]
+  inline def Step: `4` = 4.asInstanceOf[`4`]
   
   /** script stops because it leaves a function. */
-  @scala.inline
-  def StepOut: `6` = 6.asInstanceOf[`6`]
+  inline def StepOut: `6` = 6.asInstanceOf[`6`]
   
   /** script stops because one step was executed. */
-  @scala.inline
-  def StepOver: `5` = 5.asInstanceOf[`5`]
+  inline def StepOver: `5` = 5.asInstanceOf[`5`]
   
   /** script stop because one step was executed. */
-  @scala.inline
-  def StepStatement: `7` = 7.asInstanceOf[`7`]
+  inline def StepStatement: `7` = 7.asInstanceOf[`7`]
 }

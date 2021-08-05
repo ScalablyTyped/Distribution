@@ -23,31 +23,23 @@ trait AwsRdsDbSubnetGroupSubnet extends StObject {
 }
 object AwsRdsDbSubnetGroupSubnet {
   
-  @scala.inline
-  def apply(): AwsRdsDbSubnetGroupSubnet = {
+  inline def apply(): AwsRdsDbSubnetGroupSubnet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRdsDbSubnetGroupSubnet]
   }
   
-  @scala.inline
-  implicit class AwsRdsDbSubnetGroupSubnetMutableBuilder[Self <: AwsRdsDbSubnetGroupSubnet] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRdsDbSubnetGroupSubnet](x: Self) {
     
-    @scala.inline
-    def setSubnetAvailabilityZone(value: AwsRdsDbSubnetGroupSubnetAvailabilityZone): Self = StObject.set(x, "SubnetAvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setSubnetAvailabilityZone(value: AwsRdsDbSubnetGroupSubnetAvailabilityZone): Self = StObject.set(x, "SubnetAvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetAvailabilityZoneUndefined: Self = StObject.set(x, "SubnetAvailabilityZone", js.undefined)
+    inline def setSubnetAvailabilityZoneUndefined: Self = StObject.set(x, "SubnetAvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setSubnetIdentifier(value: NonEmptyString): Self = StObject.set(x, "SubnetIdentifier", value.asInstanceOf[js.Any])
+    inline def setSubnetIdentifier(value: NonEmptyString): Self = StObject.set(x, "SubnetIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdentifierUndefined: Self = StObject.set(x, "SubnetIdentifier", js.undefined)
+    inline def setSubnetIdentifierUndefined: Self = StObject.set(x, "SubnetIdentifier", js.undefined)
     
-    @scala.inline
-    def setSubnetStatus(value: NonEmptyString): Self = StObject.set(x, "SubnetStatus", value.asInstanceOf[js.Any])
+    inline def setSubnetStatus(value: NonEmptyString): Self = StObject.set(x, "SubnetStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetStatusUndefined: Self = StObject.set(x, "SubnetStatus", js.undefined)
+    inline def setSubnetStatusUndefined: Self = StObject.set(x, "SubnetStatus", js.undefined)
   }
 }

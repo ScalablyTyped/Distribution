@@ -22,8 +22,7 @@ trait IStroke extends StObject {
 }
 object IStroke {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cap: String,
     chart: IChart,
     dash: js.Array[Double],
@@ -36,31 +35,22 @@ object IStroke {
     __obj.asInstanceOf[IStroke]
   }
   
-  @scala.inline
-  implicit class IStrokeMutableBuilder[Self <: IStroke] (val x: Self) extends AnyVal {
+  extension [Self <: IStroke](x: Self) {
     
-    @scala.inline
-    def setCap(value: String): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
+    inline def setCap(value: String): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDash(value: js.Array[Double]): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
+    inline def setDash(value: js.Array[Double]): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashVarargs(value: Double*): Self = StObject.set(x, "dash", js.Array(value :_*))
+    inline def setDashVarargs(value: Double*): Self = StObject.set(x, "dash", js.Array(value :_*))
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradient(value: IGradient): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+    inline def setGradient(value: IGradient): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoin(value: String): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+    inline def setJoin(value: String): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

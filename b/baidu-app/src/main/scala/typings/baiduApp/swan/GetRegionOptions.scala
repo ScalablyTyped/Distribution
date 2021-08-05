@@ -14,16 +14,13 @@ trait GetRegionOptions
 }
 object GetRegionOptions {
   
-  @scala.inline
-  def apply(success: Northeast => Unit): GetRegionOptions = {
+  inline def apply(success: Northeast => Unit): GetRegionOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetRegionOptions]
   }
   
-  @scala.inline
-  implicit class GetRegionOptionsMutableBuilder[Self <: GetRegionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetRegionOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Northeast => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: Northeast => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

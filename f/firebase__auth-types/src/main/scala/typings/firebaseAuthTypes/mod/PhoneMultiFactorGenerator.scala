@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/auth-types", "PhoneMultiFactorGenerator")
 @js.native
-class PhoneMultiFactorGenerator protected () extends StObject
+/* private */ class PhoneMultiFactorGenerator () extends StObject
 /* static members */
 object PhoneMultiFactorGenerator {
   
@@ -17,9 +17,7 @@ object PhoneMultiFactorGenerator {
   @JSImport("@firebase/auth-types", "PhoneMultiFactorGenerator.FACTOR_ID")
   @js.native
   def FACTOR_ID: String = js.native
-  @scala.inline
-  def FACTOR_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACTOR_ID")(x.asInstanceOf[js.Any])
+  inline def FACTOR_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACTOR_ID")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def assertion(phoneAuthCredential: PhoneAuthCredential): PhoneMultiFactorAssertion = ^.asInstanceOf[js.Dynamic].applyDynamic("assertion")(phoneAuthCredential.asInstanceOf[js.Any]).asInstanceOf[PhoneMultiFactorAssertion]
+  inline def assertion(phoneAuthCredential: PhoneAuthCredential): PhoneMultiFactorAssertion = ^.asInstanceOf[js.Dynamic].applyDynamic("assertion")(phoneAuthCredential.asInstanceOf[js.Any]).asInstanceOf[PhoneMultiFactorAssertion]
 }

@@ -12,17 +12,14 @@ trait `1` extends StObject {
 }
 object `1` {
   
-  @scala.inline
-  def apply(`type`: sec1 | pkcs8): `1` = {
+  inline def apply(`type`: sec1 | pkcs8): `1` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`1`]
   }
   
-  @scala.inline
-  implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+  extension [Self <: `1`](x: Self) {
     
-    @scala.inline
-    def setType(value: sec1 | pkcs8): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: sec1 | pkcs8): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

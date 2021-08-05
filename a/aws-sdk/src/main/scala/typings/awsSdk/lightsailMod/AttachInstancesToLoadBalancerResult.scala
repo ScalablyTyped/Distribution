@@ -13,22 +13,17 @@ trait AttachInstancesToLoadBalancerResult extends StObject {
 }
 object AttachInstancesToLoadBalancerResult {
   
-  @scala.inline
-  def apply(): AttachInstancesToLoadBalancerResult = {
+  inline def apply(): AttachInstancesToLoadBalancerResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachInstancesToLoadBalancerResult]
   }
   
-  @scala.inline
-  implicit class AttachInstancesToLoadBalancerResultMutableBuilder[Self <: AttachInstancesToLoadBalancerResult] (val x: Self) extends AnyVal {
+  extension [Self <: AttachInstancesToLoadBalancerResult](x: Self) {
     
-    @scala.inline
-    def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    @scala.inline
-    def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
   }
 }

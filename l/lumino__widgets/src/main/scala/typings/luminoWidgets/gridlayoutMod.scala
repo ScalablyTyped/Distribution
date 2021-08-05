@@ -20,35 +20,35 @@ object gridlayoutMod {
   class GridLayout () extends Layout {
     def this(options: IOptions) = this()
     
-    var _box: js.Any = js.native
+    /* private */ var _box: js.Any = js.native
     
-    var _columnSizers: js.Any = js.native
+    /* private */ var _columnSizers: js.Any = js.native
     
-    var _columnSpacing: js.Any = js.native
+    /* private */ var _columnSpacing: js.Any = js.native
     
-    var _columnStarts: js.Any = js.native
+    /* private */ var _columnStarts: js.Any = js.native
     
-    var _dirty: js.Any = js.native
+    /* private */ var _dirty: js.Any = js.native
     
     /**
       * Fit the layout to the total size required by the widgets.
       */
-    var _fit: js.Any = js.native
+    /* private */ var _fit: js.Any = js.native
     
-    var _items: js.Any = js.native
+    /* private */ var _items: js.Any = js.native
     
-    var _rowSizers: js.Any = js.native
+    /* private */ var _rowSizers: js.Any = js.native
     
-    var _rowSpacing: js.Any = js.native
+    /* private */ var _rowSpacing: js.Any = js.native
     
-    var _rowStarts: js.Any = js.native
+    /* private */ var _rowStarts: js.Any = js.native
     
     /**
       * Update the layout position and size of the widgets.
       *
       * The parent offset dimensions should be `-1` if unknown.
       */
-    var _update: js.Any = js.native
+    /* private */ var _update: js.Any = js.native
     
     /**
       * Add a widget to the grid layout.
@@ -173,8 +173,7 @@ object gridlayoutMod {
       *
       * @returns The cell config for the widget.
       */
-    @scala.inline
-    def getCellConfig(widget: Widget): ICellConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getCellConfig")(widget.asInstanceOf[js.Any]).asInstanceOf[ICellConfig]
+    inline def getCellConfig(widget: Widget): ICellConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getCellConfig")(widget.asInstanceOf[js.Any]).asInstanceOf[ICellConfig]
     
     /**
       * Set the cell config for the given widget.
@@ -183,8 +182,7 @@ object gridlayoutMod {
       *
       * @param value - The value for the cell config.
       */
-    @scala.inline
-    def setCellConfig(widget: Widget, value: PartialICellConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCellConfig")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setCellConfig(widget: Widget, value: PartialICellConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCellConfig")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * An object which holds the cell configuration for a widget.
@@ -213,26 +211,20 @@ object gridlayoutMod {
     }
     object ICellConfig {
       
-      @scala.inline
-      def apply(column: Double, columnSpan: Double, row: Double, rowSpan: Double): ICellConfig = {
+      inline def apply(column: Double, columnSpan: Double, row: Double, rowSpan: Double): ICellConfig = {
         val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnSpan = columnSpan.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], rowSpan = rowSpan.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICellConfig]
       }
       
-      @scala.inline
-      implicit class ICellConfigMutableBuilder[Self <: ICellConfig] (val x: Self) extends AnyVal {
+      extension [Self <: ICellConfig](x: Self) {
         
-        @scala.inline
-        def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+        inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
+        inline def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+        inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+        inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
       }
     }
     
@@ -273,38 +265,28 @@ object gridlayoutMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+        inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
+        inline def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
         
-        @scala.inline
-        def setColumnSpacing(value: Double): Self = StObject.set(x, "columnSpacing", value.asInstanceOf[js.Any])
+        inline def setColumnSpacing(value: Double): Self = StObject.set(x, "columnSpacing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnSpacingUndefined: Self = StObject.set(x, "columnSpacing", js.undefined)
+        inline def setColumnSpacingUndefined: Self = StObject.set(x, "columnSpacing", js.undefined)
         
-        @scala.inline
-        def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+        inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+        inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
         
-        @scala.inline
-        def setRowSpacing(value: Double): Self = StObject.set(x, "rowSpacing", value.asInstanceOf[js.Any])
+        inline def setRowSpacing(value: Double): Self = StObject.set(x, "rowSpacing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowSpacingUndefined: Self = StObject.set(x, "rowSpacing", js.undefined)
+        inline def setRowSpacingUndefined: Self = StObject.set(x, "rowSpacing", js.undefined)
       }
     }
   }

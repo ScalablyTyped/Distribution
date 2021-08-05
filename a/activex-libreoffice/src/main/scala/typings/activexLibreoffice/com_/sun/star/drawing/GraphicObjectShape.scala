@@ -95,8 +95,7 @@ trait GraphicObjectShape
 }
 object GraphicObjectShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustBlue: Double,
     AdjustContrast: Double,
     AdjustGreen: Double,
@@ -348,46 +347,32 @@ object GraphicObjectShape {
     __obj.asInstanceOf[GraphicObjectShape]
   }
   
-  @scala.inline
-  implicit class GraphicObjectShapeMutableBuilder[Self <: GraphicObjectShape] (val x: Self) extends AnyVal {
+  extension [Self <: GraphicObjectShape](x: Self) {
     
-    @scala.inline
-    def setAdjustBlue(value: Double): Self = StObject.set(x, "AdjustBlue", value.asInstanceOf[js.Any])
+    inline def setAdjustBlue(value: Double): Self = StObject.set(x, "AdjustBlue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustContrast(value: Double): Self = StObject.set(x, "AdjustContrast", value.asInstanceOf[js.Any])
+    inline def setAdjustContrast(value: Double): Self = StObject.set(x, "AdjustContrast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustGreen(value: Double): Self = StObject.set(x, "AdjustGreen", value.asInstanceOf[js.Any])
+    inline def setAdjustGreen(value: Double): Self = StObject.set(x, "AdjustGreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustLuminance(value: Double): Self = StObject.set(x, "AdjustLuminance", value.asInstanceOf[js.Any])
+    inline def setAdjustLuminance(value: Double): Self = StObject.set(x, "AdjustLuminance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustRed(value: Double): Self = StObject.set(x, "AdjustRed", value.asInstanceOf[js.Any])
+    inline def setAdjustRed(value: Double): Self = StObject.set(x, "AdjustRed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGamma(value: Double): Self = StObject.set(x, "Gamma", value.asInstanceOf[js.Any])
+    inline def setGamma(value: Double): Self = StObject.set(x, "Gamma", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphic(value: XGraphic): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])
+    inline def setGraphic(value: XGraphic): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicColorMode(value: ColorMode): Self = StObject.set(x, "GraphicColorMode", value.asInstanceOf[js.Any])
+    inline def setGraphicColorMode(value: ColorMode): Self = StObject.set(x, "GraphicColorMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicObjectFillBitmap(value: XBitmap): Self = StObject.set(x, "GraphicObjectFillBitmap", value.asInstanceOf[js.Any])
+    inline def setGraphicObjectFillBitmap(value: XBitmap): Self = StObject.set(x, "GraphicObjectFillBitmap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicStreamURL(value: String): Self = StObject.set(x, "GraphicStreamURL", value.asInstanceOf[js.Any])
+    inline def setGraphicStreamURL(value: String): Self = StObject.set(x, "GraphicStreamURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicURL(value: String): Self = StObject.set(x, "GraphicURL", value.asInstanceOf[js.Any])
+    inline def setGraphicURL(value: String): Self = StObject.set(x, "GraphicURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageMap(value: XIndexContainer): Self = StObject.set(x, "ImageMap", value.asInstanceOf[js.Any])
+    inline def setImageMap(value: XIndexContainer): Self = StObject.set(x, "ImageMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparency(value: Double): Self = StObject.set(x, "Transparency", value.asInstanceOf[js.Any])
+    inline def setTransparency(value: Double): Self = StObject.set(x, "Transparency", value.asInstanceOf[js.Any])
   }
 }

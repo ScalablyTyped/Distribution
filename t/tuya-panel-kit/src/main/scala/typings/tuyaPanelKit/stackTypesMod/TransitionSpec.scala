@@ -13,14 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TransitionSpec extends StObject
 object TransitionSpec {
   
-  @scala.inline
-  def Animation(config: OmitSpringAnimationConfig): typings.tuyaPanelKit.anon.Animation = {
+  inline def Animation(config: OmitSpringAnimationConfig): typings.tuyaPanelKit.anon.Animation = {
     val __obj = js.Dynamic.literal(animation = "spring", config = config.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tuyaPanelKit.anon.Animation]
   }
   
-  @scala.inline
-  def Config(config: OmitTimingAnimationConfig): typings.tuyaPanelKit.anon.Config = {
+  inline def Config(config: OmitTimingAnimationConfig): typings.tuyaPanelKit.anon.Config = {
     val __obj = js.Dynamic.literal(animation = "timing", config = config.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tuyaPanelKit.anon.Config]
   }

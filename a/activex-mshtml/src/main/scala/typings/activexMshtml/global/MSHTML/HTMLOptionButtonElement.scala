@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLOptionButtonElement")
 @js.native
-class HTMLOptionButtonElement protected ()
+/* private */ class HTMLOptionButtonElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLOptionButtonElement

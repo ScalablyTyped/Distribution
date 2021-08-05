@@ -10,16 +10,13 @@ trait TransactionLineItemGateway extends StObject {
 }
 object TransactionLineItemGateway {
   
-  @scala.inline
-  def apply(findAll: String => js.Promise[js.Array[TransactionLineItem]]): TransactionLineItemGateway = {
+  inline def apply(findAll: String => js.Promise[js.Array[TransactionLineItem]]): TransactionLineItemGateway = {
     val __obj = js.Dynamic.literal(findAll = js.Any.fromFunction1(findAll))
     __obj.asInstanceOf[TransactionLineItemGateway]
   }
   
-  @scala.inline
-  implicit class TransactionLineItemGatewayMutableBuilder[Self <: TransactionLineItemGateway] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionLineItemGateway](x: Self) {
     
-    @scala.inline
-    def setFindAll(value: String => js.Promise[js.Array[TransactionLineItem]]): Self = StObject.set(x, "findAll", js.Any.fromFunction1(value))
+    inline def setFindAll(value: String => js.Promise[js.Array[TransactionLineItem]]): Self = StObject.set(x, "findAll", js.Any.fromFunction1(value))
   }
 }

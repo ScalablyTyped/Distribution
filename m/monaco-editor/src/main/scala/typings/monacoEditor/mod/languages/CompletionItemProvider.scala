@@ -32,37 +32,29 @@ trait CompletionItemProvider extends StObject {
 }
 object CompletionItemProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideCompletionItems: (ITextModel, Position, CompletionContext, CancellationToken) => ProviderResult[CompletionList]
   ): CompletionItemProvider = {
     val __obj = js.Dynamic.literal(provideCompletionItems = js.Any.fromFunction4(provideCompletionItems))
     __obj.asInstanceOf[CompletionItemProvider]
   }
   
-  @scala.inline
-  implicit class CompletionItemProviderMutableBuilder[Self <: CompletionItemProvider] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionItemProvider](x: Self) {
     
-    @scala.inline
-    def setProvideCompletionItems(
+    inline def setProvideCompletionItems(
       value: (ITextModel, Position, CompletionContext, CancellationToken) => ProviderResult[CompletionList]
     ): Self = StObject.set(x, "provideCompletionItems", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setResolveCompletionItem(
+    inline def setResolveCompletionItem(
       value: (/* item */ CompletionItem, /* token */ CancellationToken) => ProviderResult[CompletionItem]
     ): Self = StObject.set(x, "resolveCompletionItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolveCompletionItemUndefined: Self = StObject.set(x, "resolveCompletionItem", js.undefined)
+    inline def setResolveCompletionItemUndefined: Self = StObject.set(x, "resolveCompletionItem", js.undefined)
     
-    @scala.inline
-    def setTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "triggerCharacters", value.asInstanceOf[js.Any])
+    inline def setTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "triggerCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerCharactersUndefined: Self = StObject.set(x, "triggerCharacters", js.undefined)
+    inline def setTriggerCharactersUndefined: Self = StObject.set(x, "triggerCharacters", js.undefined)
     
-    @scala.inline
-    def setTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "triggerCharacters", js.Array(value :_*))
+    inline def setTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "triggerCharacters", js.Array(value :_*))
   }
 }

@@ -12,8 +12,7 @@ object winstonPubMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+  inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
   @JSImport("diagnostic-channel-publishers/dist/src/winston.pub", "winston2")
   @js.native
@@ -35,26 +34,20 @@ object winstonPubMod {
   }
   object IWinstonData {
     
-    @scala.inline
-    def apply(level: String, levelKind: String, message: String | Error, meta: js.Any): IWinstonData = {
+    inline def apply(level: String, levelKind: String, message: String | Error, meta: js.Any): IWinstonData = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], levelKind = levelKind.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWinstonData]
     }
     
-    @scala.inline
-    implicit class IWinstonDataMutableBuilder[Self <: IWinstonData] (val x: Self) extends AnyVal {
+    extension [Self <: IWinstonData](x: Self) {
       
-      @scala.inline
-      def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelKind(value: String): Self = StObject.set(x, "levelKind", value.asInstanceOf[js.Any])
+      inline def setLevelKind(value: String): Self = StObject.set(x, "levelKind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String | Error): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String | Error): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
 }

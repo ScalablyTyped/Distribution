@@ -29,55 +29,39 @@ trait VideoSettings extends StObject {
 }
 object VideoSettings {
   
-  @scala.inline
-  def apply(): VideoSettings = {
+  inline def apply(): VideoSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoSettings]
   }
   
-  @scala.inline
-  implicit class VideoSettingsMutableBuilder[Self <: VideoSettings] (val x: Self) extends AnyVal {
+  extension [Self <: VideoSettings](x: Self) {
     
-    @scala.inline
-    def setCompanionSettings(value: CompanionSetting): Self = StObject.set(x, "companionSettings", value.asInstanceOf[js.Any])
+    inline def setCompanionSettings(value: CompanionSetting): Self = StObject.set(x, "companionSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanionSettingsUndefined: Self = StObject.set(x, "companionSettings", js.undefined)
+    inline def setCompanionSettingsUndefined: Self = StObject.set(x, "companionSettings", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setObaEnabled(value: Boolean): Self = StObject.set(x, "obaEnabled", value.asInstanceOf[js.Any])
+    inline def setObaEnabled(value: Boolean): Self = StObject.set(x, "obaEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObaEnabledUndefined: Self = StObject.set(x, "obaEnabled", js.undefined)
+    inline def setObaEnabledUndefined: Self = StObject.set(x, "obaEnabled", js.undefined)
     
-    @scala.inline
-    def setObaSettings(value: ObaIcon): Self = StObject.set(x, "obaSettings", value.asInstanceOf[js.Any])
+    inline def setObaSettings(value: ObaIcon): Self = StObject.set(x, "obaSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObaSettingsUndefined: Self = StObject.set(x, "obaSettings", js.undefined)
+    inline def setObaSettingsUndefined: Self = StObject.set(x, "obaSettings", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setSkippableSettings(value: SkippableSetting): Self = StObject.set(x, "skippableSettings", value.asInstanceOf[js.Any])
+    inline def setSkippableSettings(value: SkippableSetting): Self = StObject.set(x, "skippableSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkippableSettingsUndefined: Self = StObject.set(x, "skippableSettings", js.undefined)
+    inline def setSkippableSettingsUndefined: Self = StObject.set(x, "skippableSettings", js.undefined)
     
-    @scala.inline
-    def setTranscodeSettings(value: TranscodeSetting): Self = StObject.set(x, "transcodeSettings", value.asInstanceOf[js.Any])
+    inline def setTranscodeSettings(value: TranscodeSetting): Self = StObject.set(x, "transcodeSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscodeSettingsUndefined: Self = StObject.set(x, "transcodeSettings", js.undefined)
+    inline def setTranscodeSettingsUndefined: Self = StObject.set(x, "transcodeSettings", js.undefined)
   }
 }

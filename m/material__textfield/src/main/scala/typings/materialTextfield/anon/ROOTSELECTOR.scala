@@ -10,16 +10,13 @@ trait ROOTSELECTOR extends StObject {
 }
 object ROOTSELECTOR {
   
-  @scala.inline
-  def apply(ROOT_SELECTOR: String): ROOTSELECTOR = {
+  inline def apply(ROOT_SELECTOR: String): ROOTSELECTOR = {
     val __obj = js.Dynamic.literal(ROOT_SELECTOR = ROOT_SELECTOR.asInstanceOf[js.Any])
     __obj.asInstanceOf[ROOTSELECTOR]
   }
   
-  @scala.inline
-  implicit class ROOTSELECTORMutableBuilder[Self <: ROOTSELECTOR] (val x: Self) extends AnyVal {
+  extension [Self <: ROOTSELECTOR](x: Self) {
     
-    @scala.inline
-    def setROOT_SELECTOR(value: String): Self = StObject.set(x, "ROOT_SELECTOR", value.asInstanceOf[js.Any])
+    inline def setROOT_SELECTOR(value: String): Self = StObject.set(x, "ROOT_SELECTOR", value.asInstanceOf[js.Any])
   }
 }

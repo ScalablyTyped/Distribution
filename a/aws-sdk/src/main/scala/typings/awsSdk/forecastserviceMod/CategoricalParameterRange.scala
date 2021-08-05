@@ -18,22 +18,17 @@ trait CategoricalParameterRange extends StObject {
 }
 object CategoricalParameterRange {
   
-  @scala.inline
-  def apply(Name: Name, Values: Values): CategoricalParameterRange = {
+  inline def apply(Name: Name, Values: Values): CategoricalParameterRange = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategoricalParameterRange]
   }
   
-  @scala.inline
-  implicit class CategoricalParameterRangeMutableBuilder[Self <: CategoricalParameterRange] (val x: Self) extends AnyVal {
+  extension [Self <: CategoricalParameterRange](x: Self) {
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: Values): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Values): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: Value*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Value*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

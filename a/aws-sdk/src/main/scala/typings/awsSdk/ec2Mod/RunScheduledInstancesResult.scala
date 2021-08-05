@@ -13,22 +13,17 @@ trait RunScheduledInstancesResult extends StObject {
 }
 object RunScheduledInstancesResult {
   
-  @scala.inline
-  def apply(): RunScheduledInstancesResult = {
+  inline def apply(): RunScheduledInstancesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunScheduledInstancesResult]
   }
   
-  @scala.inline
-  implicit class RunScheduledInstancesResultMutableBuilder[Self <: RunScheduledInstancesResult] (val x: Self) extends AnyVal {
+  extension [Self <: RunScheduledInstancesResult](x: Self) {
     
-    @scala.inline
-    def setInstanceIdSet(value: InstanceIdSet): Self = StObject.set(x, "InstanceIdSet", value.asInstanceOf[js.Any])
+    inline def setInstanceIdSet(value: InstanceIdSet): Self = StObject.set(x, "InstanceIdSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdSetUndefined: Self = StObject.set(x, "InstanceIdSet", js.undefined)
+    inline def setInstanceIdSetUndefined: Self = StObject.set(x, "InstanceIdSet", js.undefined)
     
-    @scala.inline
-    def setInstanceIdSetVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIdSet", js.Array(value :_*))
+    inline def setInstanceIdSetVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIdSet", js.Array(value :_*))
   }
 }

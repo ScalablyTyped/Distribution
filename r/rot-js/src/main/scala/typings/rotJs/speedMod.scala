@@ -23,17 +23,14 @@ object speedMod {
   }
   object SpeedActor {
     
-    @scala.inline
-    def apply(getSpeed: () => Double): SpeedActor = {
+    inline def apply(getSpeed: () => Double): SpeedActor = {
       val __obj = js.Dynamic.literal(getSpeed = js.Any.fromFunction0(getSpeed))
       __obj.asInstanceOf[SpeedActor]
     }
     
-    @scala.inline
-    implicit class SpeedActorMutableBuilder[Self <: SpeedActor] (val x: Self) extends AnyVal {
+    extension [Self <: SpeedActor](x: Self) {
       
-      @scala.inline
-      def setGetSpeed(value: () => Double): Self = StObject.set(x, "getSpeed", js.Any.fromFunction0(value))
+      inline def setGetSpeed(value: () => Double): Self = StObject.set(x, "getSpeed", js.Any.fromFunction0(value))
     }
   }
 }

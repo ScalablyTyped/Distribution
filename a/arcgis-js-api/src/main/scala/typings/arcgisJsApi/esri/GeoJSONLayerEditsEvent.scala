@@ -14,8 +14,7 @@ trait GeoJSONLayerEditsEvent extends StObject {
 }
 object GeoJSONLayerEditsEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addedFeatures: js.Array[GeoJSONLayerEditsEventAddedFeatures],
     deletedFeatures: js.Array[GeoJSONLayerEditsEventDeletedFeatures],
     updatedFeatures: js.Array[GeoJSONLayerEditsEventUpdatedFeatures]
@@ -24,25 +23,18 @@ object GeoJSONLayerEditsEvent {
     __obj.asInstanceOf[GeoJSONLayerEditsEvent]
   }
   
-  @scala.inline
-  implicit class GeoJSONLayerEditsEventMutableBuilder[Self <: GeoJSONLayerEditsEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GeoJSONLayerEditsEvent](x: Self) {
     
-    @scala.inline
-    def setAddedFeatures(value: js.Array[GeoJSONLayerEditsEventAddedFeatures]): Self = StObject.set(x, "addedFeatures", value.asInstanceOf[js.Any])
+    inline def setAddedFeatures(value: js.Array[GeoJSONLayerEditsEventAddedFeatures]): Self = StObject.set(x, "addedFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedFeaturesVarargs(value: GeoJSONLayerEditsEventAddedFeatures*): Self = StObject.set(x, "addedFeatures", js.Array(value :_*))
+    inline def setAddedFeaturesVarargs(value: GeoJSONLayerEditsEventAddedFeatures*): Self = StObject.set(x, "addedFeatures", js.Array(value :_*))
     
-    @scala.inline
-    def setDeletedFeatures(value: js.Array[GeoJSONLayerEditsEventDeletedFeatures]): Self = StObject.set(x, "deletedFeatures", value.asInstanceOf[js.Any])
+    inline def setDeletedFeatures(value: js.Array[GeoJSONLayerEditsEventDeletedFeatures]): Self = StObject.set(x, "deletedFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedFeaturesVarargs(value: GeoJSONLayerEditsEventDeletedFeatures*): Self = StObject.set(x, "deletedFeatures", js.Array(value :_*))
+    inline def setDeletedFeaturesVarargs(value: GeoJSONLayerEditsEventDeletedFeatures*): Self = StObject.set(x, "deletedFeatures", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdatedFeatures(value: js.Array[GeoJSONLayerEditsEventUpdatedFeatures]): Self = StObject.set(x, "updatedFeatures", value.asInstanceOf[js.Any])
+    inline def setUpdatedFeatures(value: js.Array[GeoJSONLayerEditsEventUpdatedFeatures]): Self = StObject.set(x, "updatedFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedFeaturesVarargs(value: GeoJSONLayerEditsEventUpdatedFeatures*): Self = StObject.set(x, "updatedFeatures", js.Array(value :_*))
+    inline def setUpdatedFeaturesVarargs(value: GeoJSONLayerEditsEventUpdatedFeatures*): Self = StObject.set(x, "updatedFeatures", js.Array(value :_*))
   }
 }

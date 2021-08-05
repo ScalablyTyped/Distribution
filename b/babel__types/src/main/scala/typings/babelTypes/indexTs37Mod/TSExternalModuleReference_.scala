@@ -17,20 +17,16 @@ trait TSExternalModuleReference_
 }
 object TSExternalModuleReference_ {
   
-  @scala.inline
-  def apply(expression: StringLiteral_): TSExternalModuleReference_ = {
+  inline def apply(expression: StringLiteral_): TSExternalModuleReference_ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSExternalModuleReference")
     __obj.asInstanceOf[TSExternalModuleReference_]
   }
   
-  @scala.inline
-  implicit class TSExternalModuleReference_MutableBuilder[Self <: TSExternalModuleReference_] (val x: Self) extends AnyVal {
+  extension [Self <: TSExternalModuleReference_](x: Self) {
     
-    @scala.inline
-    def setExpression(value: StringLiteral_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: StringLiteral_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TSExternalModuleReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSExternalModuleReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

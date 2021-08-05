@@ -137,53 +137,38 @@ object Session {
   }
   object CreateOptions {
     
-    @scala.inline
-    def apply(): CreateOptions = {
+    inline def apply(): CreateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateOptions]
     }
     
-    @scala.inline
-    implicit class CreateOptionsMutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateOptions](x: Self) {
       
-      @scala.inline
-      def setBehavior(value: String): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+      inline def setBehavior(value: String): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+      inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
       
-      @scala.inline
-      def setChecks(value: js.Array[String]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
+      inline def setChecks(value: js.Array[String]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
+      inline def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
       
-      @scala.inline
-      def setChecksVarargs(value: String*): Self = StObject.set(x, "checks", js.Array(value :_*))
+      inline def setChecksVarargs(value: String*): Self = StObject.set(x, "checks", js.Array(value :_*))
       
-      @scala.inline
-      def setLockdelay(value: String): Self = StObject.set(x, "lockdelay", value.asInstanceOf[js.Any])
+      inline def setLockdelay(value: String): Self = StObject.set(x, "lockdelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockdelayUndefined: Self = StObject.set(x, "lockdelay", js.undefined)
+      inline def setLockdelayUndefined: Self = StObject.set(x, "lockdelay", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
       
-      @scala.inline
-      def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
   
@@ -195,17 +180,14 @@ object Session {
   }
   object DestroyOptions {
     
-    @scala.inline
-    def apply(id: String): DestroyOptions = {
+    inline def apply(id: String): DestroyOptions = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[DestroyOptions]
     }
     
-    @scala.inline
-    implicit class DestroyOptionsMutableBuilder[Self <: DestroyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DestroyOptions](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -219,17 +201,14 @@ object Session {
   }
   object InfoOptions {
     
-    @scala.inline
-    def apply(id: String): InfoOptions = {
+    inline def apply(id: String): InfoOptions = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[InfoOptions]
     }
     
-    @scala.inline
-    implicit class InfoOptionsMutableBuilder[Self <: InfoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InfoOptions](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -238,8 +217,7 @@ object Session {
        with CommonOptions
   object ListOptions {
     
-    @scala.inline
-    def apply(): ListOptions = {
+    inline def apply(): ListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListOptions]
     }
@@ -253,17 +231,14 @@ object Session {
   }
   object NodeOptions {
     
-    @scala.inline
-    def apply(node: String): NodeOptions = {
+    inline def apply(node: String): NodeOptions = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeOptions]
     }
     
-    @scala.inline
-    implicit class NodeOptionsMutableBuilder[Self <: NodeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NodeOptions](x: Self) {
       
-      @scala.inline
-      def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   
@@ -275,17 +250,14 @@ object Session {
   }
   object RenewOptions {
     
-    @scala.inline
-    def apply(id: String): RenewOptions = {
+    inline def apply(id: String): RenewOptions = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenewOptions]
     }
     
-    @scala.inline
-    implicit class RenewOptionsMutableBuilder[Self <: RenewOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RenewOptions](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

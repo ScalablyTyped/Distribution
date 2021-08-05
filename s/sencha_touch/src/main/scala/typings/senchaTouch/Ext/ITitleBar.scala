@@ -71,91 +71,63 @@ trait ITitleBar
 }
 object ITitleBar {
   
-  @scala.inline
-  def apply(): ITitleBar = {
+  inline def apply(): ITitleBar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITitleBar]
   }
   
-  @scala.inline
-  implicit class ITitleBarMutableBuilder[Self <: ITitleBar] (val x: Self) extends AnyVal {
+  extension [Self <: ITitleBar](x: Self) {
     
-    @scala.inline
-    def setGetCls(value: () => java.lang.String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
+    inline def setGetCls(value: () => java.lang.String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
+    inline def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
     
-    @scala.inline
-    def setGetMaxButtonWidth(value: () => java.lang.String): Self = StObject.set(x, "getMaxButtonWidth", js.Any.fromFunction0(value))
+    inline def setGetMaxButtonWidth(value: () => java.lang.String): Self = StObject.set(x, "getMaxButtonWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxButtonWidthUndefined: Self = StObject.set(x, "getMaxButtonWidth", js.undefined)
+    inline def setGetMaxButtonWidthUndefined: Self = StObject.set(x, "getMaxButtonWidth", js.undefined)
     
-    @scala.inline
-    def setGetTitle(value: () => java.lang.String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+    inline def setGetTitle(value: () => java.lang.String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTitleAlign(value: () => java.lang.String): Self = StObject.set(x, "getTitleAlign", js.Any.fromFunction0(value))
+    inline def setGetTitleAlign(value: () => java.lang.String): Self = StObject.set(x, "getTitleAlign", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTitleAlignUndefined: Self = StObject.set(x, "getTitleAlign", js.undefined)
+    inline def setGetTitleAlignUndefined: Self = StObject.set(x, "getTitleAlign", js.undefined)
     
-    @scala.inline
-    def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
+    inline def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
     
-    @scala.inline
-    def setMaxButtonWidth(value: java.lang.String): Self = StObject.set(x, "maxButtonWidth", value.asInstanceOf[js.Any])
+    inline def setMaxButtonWidth(value: java.lang.String): Self = StObject.set(x, "maxButtonWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxButtonWidthUndefined: Self = StObject.set(x, "maxButtonWidth", js.undefined)
+    inline def setMaxButtonWidthUndefined: Self = StObject.set(x, "maxButtonWidth", js.undefined)
     
-    @scala.inline
-    def setMinHeight(value: java.lang.String): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    inline def setMinHeight(value: java.lang.String): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
-    @scala.inline
-    def setSetCls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
+    inline def setSetCls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
+    inline def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
     
-    @scala.inline
-    def setSetMaxButtonWidth(value: /* maxButtonWidth */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setMaxButtonWidth", js.Any.fromFunction1(value))
+    inline def setSetMaxButtonWidth(value: /* maxButtonWidth */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setMaxButtonWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaxButtonWidthUndefined: Self = StObject.set(x, "setMaxButtonWidth", js.undefined)
+    inline def setSetMaxButtonWidthUndefined: Self = StObject.set(x, "setMaxButtonWidth", js.undefined)
     
-    @scala.inline
-    def setSetMinHeight(value: /* minHeight */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
+    inline def setSetMinHeight(value: /* minHeight */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinHeightUndefined: Self = StObject.set(x, "setMinHeight", js.undefined)
+    inline def setSetMinHeightUndefined: Self = StObject.set(x, "setMinHeight", js.undefined)
     
-    @scala.inline
-    def setSetTitle(value: /* title */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: /* title */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTitleAlign(value: /* titleAlign */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setTitleAlign", js.Any.fromFunction1(value))
+    inline def setSetTitleAlign(value: /* titleAlign */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setTitleAlign", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTitleAlignUndefined: Self = StObject.set(x, "setTitleAlign", js.undefined)
+    inline def setSetTitleAlignUndefined: Self = StObject.set(x, "setTitleAlign", js.undefined)
     
-    @scala.inline
-    def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
+    inline def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
     
-    @scala.inline
-    def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleAlign(value: java.lang.String): Self = StObject.set(x, "titleAlign", value.asInstanceOf[js.Any])
+    inline def setTitleAlign(value: java.lang.String): Self = StObject.set(x, "titleAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleAlignUndefined: Self = StObject.set(x, "titleAlign", js.undefined)
+    inline def setTitleAlignUndefined: Self = StObject.set(x, "titleAlign", js.undefined)
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -102,46 +102,34 @@ object dragBoxMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBoxEndCondition(value: EndCondition): Self = StObject.set(x, "boxEndCondition", value.asInstanceOf[js.Any])
+      inline def setBoxEndCondition(value: EndCondition): Self = StObject.set(x, "boxEndCondition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxEndConditionUndefined: Self = StObject.set(x, "boxEndCondition", js.undefined)
+      inline def setBoxEndConditionUndefined: Self = StObject.set(x, "boxEndCondition", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+      inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
       
-      @scala.inline
-      def setMinArea(value: Double): Self = StObject.set(x, "minArea", value.asInstanceOf[js.Any])
+      inline def setMinArea(value: Double): Self = StObject.set(x, "minArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinAreaUndefined: Self = StObject.set(x, "minArea", js.undefined)
+      inline def setMinAreaUndefined: Self = StObject.set(x, "minArea", js.undefined)
       
-      @scala.inline
-      def setOnBoxEnd(
+      inline def setOnBoxEnd(
         value: js.ThisFunction1[/* this */ DragBox, /* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent], Unit]
       ): Self = StObject.set(x, "onBoxEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnBoxEndUndefined: Self = StObject.set(x, "onBoxEnd", js.undefined)
+      inline def setOnBoxEndUndefined: Self = StObject.set(x, "onBoxEnd", js.undefined)
     }
   }
 }

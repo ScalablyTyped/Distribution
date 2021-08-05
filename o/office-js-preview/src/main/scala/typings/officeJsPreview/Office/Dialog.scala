@@ -60,8 +60,7 @@ trait Dialog extends StObject {
 }
 object Dialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEventHandler: (EventType, js.Function1[
       /* args */ typings.officeJsPreview.anon.Message | typings.officeJsPreview.anon.Error, 
       Unit
@@ -74,24 +73,19 @@ object Dialog {
     __obj.asInstanceOf[Dialog]
   }
   
-  @scala.inline
-  implicit class DialogMutableBuilder[Self <: Dialog] (val x: Self) extends AnyVal {
+  extension [Self <: Dialog](x: Self) {
     
-    @scala.inline
-    def setAddEventHandler(
+    inline def setAddEventHandler(
       value: (EventType, js.Function1[
           /* args */ typings.officeJsPreview.anon.Message | typings.officeJsPreview.anon.Error, 
           Unit
         ]) => Unit
     ): Self = StObject.set(x, "addEventHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMessageChild(value: String => Unit): Self = StObject.set(x, "messageChild", js.Any.fromFunction1(value))
+    inline def setMessageChild(value: String => Unit): Self = StObject.set(x, "messageChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendMessage(value: String => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
+    inline def setSendMessage(value: String => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
   }
 }

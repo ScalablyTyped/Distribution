@@ -23,8 +23,7 @@ trait MaxPool3DBackpropAttrs extends StObject {
 }
 object MaxPool3DBackpropAttrs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filterSize: (js.Tuple3[Double, Double, Double]) | Double,
     pad: valid_ | same_ | Double,
     strides: (js.Tuple3[Double, Double, Double]) | Double
@@ -33,28 +32,20 @@ object MaxPool3DBackpropAttrs {
     __obj.asInstanceOf[MaxPool3DBackpropAttrs]
   }
   
-  @scala.inline
-  implicit class MaxPool3DBackpropAttrsMutableBuilder[Self <: MaxPool3DBackpropAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: MaxPool3DBackpropAttrs](x: Self) {
     
-    @scala.inline
-    def setDilations(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
+    inline def setDilations(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDilationsUndefined: Self = StObject.set(x, "dilations", js.undefined)
+    inline def setDilationsUndefined: Self = StObject.set(x, "dilations", js.undefined)
     
-    @scala.inline
-    def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
+    inline def setDimRoundingMode(value: floor | round | ceil): Self = StObject.set(x, "dimRoundingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimRoundingModeUndefined: Self = StObject.set(x, "dimRoundingMode", js.undefined)
+    inline def setDimRoundingModeUndefined: Self = StObject.set(x, "dimRoundingMode", js.undefined)
     
-    @scala.inline
-    def setFilterSize(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
+    inline def setFilterSize(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrides(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+    inline def setStrides(value: (js.Tuple3[Double, Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
   }
 }

@@ -33,8 +33,7 @@ object toolbarMod {
     @JSImport("carbon-components/components/toolbar/toolbar", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -48,8 +47,7 @@ object toolbarMod {
   }
   object Toolbar {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _handleDocumentClick: js.Any => Unit,
       _handleKeyDown: js.Any => Unit,
       _handleRowHeightChange: (js.Any, js.Any) => Unit
@@ -58,17 +56,13 @@ object toolbarMod {
       __obj.asInstanceOf[Toolbar]
     }
     
-    @scala.inline
-    implicit class ToolbarMutableBuilder[Self <: Toolbar] (val x: Self) extends AnyVal {
+    extension [Self <: Toolbar](x: Self) {
       
-      @scala.inline
-      def set_handleDocumentClick(value: js.Any => Unit): Self = StObject.set(x, "_handleDocumentClick", js.Any.fromFunction1(value))
+      inline def set_handleDocumentClick(value: js.Any => Unit): Self = StObject.set(x, "_handleDocumentClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_handleKeyDown(value: js.Any => Unit): Self = StObject.set(x, "_handleKeyDown", js.Any.fromFunction1(value))
+      inline def set_handleKeyDown(value: js.Any => Unit): Self = StObject.set(x, "_handleKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_handleRowHeightChange(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_handleRowHeightChange", js.Any.fromFunction2(value))
+      inline def set_handleRowHeightChange(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "_handleRowHeightChange", js.Any.fromFunction2(value))
     }
   }
 }

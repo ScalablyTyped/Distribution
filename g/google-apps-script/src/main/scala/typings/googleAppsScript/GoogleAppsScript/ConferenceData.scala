@@ -129,17 +129,14 @@ object ConferenceData {
   }
   object ConferenceData {
     
-    @scala.inline
-    def apply(printJson: () => String): typings.googleAppsScript.GoogleAppsScript.ConferenceData.ConferenceData = {
+    inline def apply(printJson: () => String): typings.googleAppsScript.GoogleAppsScript.ConferenceData.ConferenceData = {
       val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson))
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.ConferenceData.ConferenceData]
     }
     
-    @scala.inline
-    implicit class ConferenceDataMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.ConferenceData.ConferenceData] (val x: Self) extends AnyVal {
+    extension [Self <: typings.googleAppsScript.GoogleAppsScript.ConferenceData.ConferenceData](x: Self) {
       
-      @scala.inline
-      def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
+      inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     }
   }
   
@@ -209,8 +206,7 @@ object ConferenceData {
   }
   object ConferenceDataBuilder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addConferenceParameter: ConferenceParameter => ConferenceDataBuilder,
       addEntryPoint: EntryPoint => ConferenceDataBuilder,
       build: () => typings.googleAppsScript.GoogleAppsScript.ConferenceData.ConferenceData,
@@ -223,29 +219,21 @@ object ConferenceData {
       __obj.asInstanceOf[ConferenceDataBuilder]
     }
     
-    @scala.inline
-    implicit class ConferenceDataBuilderMutableBuilder[Self <: ConferenceDataBuilder] (val x: Self) extends AnyVal {
+    extension [Self <: ConferenceDataBuilder](x: Self) {
       
-      @scala.inline
-      def setAddConferenceParameter(value: ConferenceParameter => ConferenceDataBuilder): Self = StObject.set(x, "addConferenceParameter", js.Any.fromFunction1(value))
+      inline def setAddConferenceParameter(value: ConferenceParameter => ConferenceDataBuilder): Self = StObject.set(x, "addConferenceParameter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddEntryPoint(value: EntryPoint => ConferenceDataBuilder): Self = StObject.set(x, "addEntryPoint", js.Any.fromFunction1(value))
+      inline def setAddEntryPoint(value: EntryPoint => ConferenceDataBuilder): Self = StObject.set(x, "addEntryPoint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBuild(value: () => typings.googleAppsScript.GoogleAppsScript.ConferenceData.ConferenceData): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+      inline def setBuild(value: () => typings.googleAppsScript.GoogleAppsScript.ConferenceData.ConferenceData): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetConferenceId(value: String => ConferenceDataBuilder): Self = StObject.set(x, "setConferenceId", js.Any.fromFunction1(value))
+      inline def setSetConferenceId(value: String => ConferenceDataBuilder): Self = StObject.set(x, "setConferenceId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetConferenceSolutionId(value: String => ConferenceDataBuilder): Self = StObject.set(x, "setConferenceSolutionId", js.Any.fromFunction1(value))
+      inline def setSetConferenceSolutionId(value: String => ConferenceDataBuilder): Self = StObject.set(x, "setConferenceSolutionId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetError(value: ConferenceError => ConferenceDataBuilder): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
+      inline def setSetError(value: ConferenceError => ConferenceDataBuilder): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetNotes(value: String => ConferenceDataBuilder): Self = StObject.set(x, "setNotes", js.Any.fromFunction1(value))
+      inline def setSetNotes(value: String => ConferenceDataBuilder): Self = StObject.set(x, "setNotes", js.Any.fromFunction1(value))
     }
   }
   
@@ -286,8 +274,7 @@ object ConferenceData {
   }
   object ConferenceDataService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ConferenceErrorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConferenceErrorType */ js.Any,
       EntryPointFeature: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointFeature */ js.Any,
       EntryPointType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointType */ js.Any,
@@ -300,35 +287,27 @@ object ConferenceData {
       __obj.asInstanceOf[ConferenceDataService]
     }
     
-    @scala.inline
-    implicit class ConferenceDataServiceMutableBuilder[Self <: ConferenceDataService] (val x: Self) extends AnyVal {
+    extension [Self <: ConferenceDataService](x: Self) {
       
-      @scala.inline
-      def setConferenceErrorType(
+      inline def setConferenceErrorType(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConferenceErrorType */ js.Any
       ): Self = StObject.set(x, "ConferenceErrorType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryPointFeature(
+      inline def setEntryPointFeature(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointFeature */ js.Any
       ): Self = StObject.set(x, "EntryPointFeature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryPointType(
+      inline def setEntryPointType(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntryPointType */ js.Any
       ): Self = StObject.set(x, "EntryPointType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewConferenceDataBuilder(value: () => ConferenceDataBuilder): Self = StObject.set(x, "newConferenceDataBuilder", js.Any.fromFunction0(value))
+      inline def setNewConferenceDataBuilder(value: () => ConferenceDataBuilder): Self = StObject.set(x, "newConferenceDataBuilder", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNewConferenceError(value: () => ConferenceError): Self = StObject.set(x, "newConferenceError", js.Any.fromFunction0(value))
+      inline def setNewConferenceError(value: () => ConferenceError): Self = StObject.set(x, "newConferenceError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNewConferenceParameter(value: () => ConferenceParameter): Self = StObject.set(x, "newConferenceParameter", js.Any.fromFunction0(value))
+      inline def setNewConferenceParameter(value: () => ConferenceParameter): Self = StObject.set(x, "newConferenceParameter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNewEntryPoint(value: () => EntryPoint): Self = StObject.set(x, "newEntryPoint", js.Any.fromFunction0(value))
+      inline def setNewEntryPoint(value: () => EntryPoint): Self = StObject.set(x, "newEntryPoint", js.Any.fromFunction0(value))
     }
   }
   
@@ -372,8 +351,7 @@ object ConferenceData {
   }
   object ConferenceError {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       setAuthenticationUrl: String => ConferenceError,
       setConferenceErrorType: ConferenceErrorType => ConferenceError
     ): ConferenceError = {
@@ -381,14 +359,11 @@ object ConferenceData {
       __obj.asInstanceOf[ConferenceError]
     }
     
-    @scala.inline
-    implicit class ConferenceErrorMutableBuilder[Self <: ConferenceError] (val x: Self) extends AnyVal {
+    extension [Self <: ConferenceError](x: Self) {
       
-      @scala.inline
-      def setSetAuthenticationUrl(value: String => ConferenceError): Self = StObject.set(x, "setAuthenticationUrl", js.Any.fromFunction1(value))
+      inline def setSetAuthenticationUrl(value: String => ConferenceError): Self = StObject.set(x, "setAuthenticationUrl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetConferenceErrorType(value: ConferenceErrorType => ConferenceError): Self = StObject.set(x, "setConferenceErrorType", js.Any.fromFunction1(value))
+      inline def setSetConferenceErrorType(value: ConferenceErrorType => ConferenceError): Self = StObject.set(x, "setConferenceErrorType", js.Any.fromFunction1(value))
     }
   }
   
@@ -420,20 +395,16 @@ object ConferenceData {
   }
   object ConferenceParameter {
     
-    @scala.inline
-    def apply(setKey: String => ConferenceParameter, setValue: String => ConferenceParameter): ConferenceParameter = {
+    inline def apply(setKey: String => ConferenceParameter, setValue: String => ConferenceParameter): ConferenceParameter = {
       val __obj = js.Dynamic.literal(setKey = js.Any.fromFunction1(setKey), setValue = js.Any.fromFunction1(setValue))
       __obj.asInstanceOf[ConferenceParameter]
     }
     
-    @scala.inline
-    implicit class ConferenceParameterMutableBuilder[Self <: ConferenceParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ConferenceParameter](x: Self) {
       
-      @scala.inline
-      def setSetKey(value: String => ConferenceParameter): Self = StObject.set(x, "setKey", js.Any.fromFunction1(value))
+      inline def setSetKey(value: String => ConferenceParameter): Self = StObject.set(x, "setKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetValue(value: String => ConferenceParameter): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: String => ConferenceParameter): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     }
   }
   
@@ -529,8 +500,7 @@ object ConferenceData {
   }
   object EntryPoint {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addFeature: EntryPointFeature => EntryPoint,
       setAccessCode: String => EntryPoint,
       setEntryPointType: EntryPointType => EntryPoint,
@@ -545,35 +515,25 @@ object ConferenceData {
       __obj.asInstanceOf[EntryPoint]
     }
     
-    @scala.inline
-    implicit class EntryPointMutableBuilder[Self <: EntryPoint] (val x: Self) extends AnyVal {
+    extension [Self <: EntryPoint](x: Self) {
       
-      @scala.inline
-      def setAddFeature(value: EntryPointFeature => EntryPoint): Self = StObject.set(x, "addFeature", js.Any.fromFunction1(value))
+      inline def setAddFeature(value: EntryPointFeature => EntryPoint): Self = StObject.set(x, "addFeature", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAccessCode(value: String => EntryPoint): Self = StObject.set(x, "setAccessCode", js.Any.fromFunction1(value))
+      inline def setSetAccessCode(value: String => EntryPoint): Self = StObject.set(x, "setAccessCode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetEntryPointType(value: EntryPointType => EntryPoint): Self = StObject.set(x, "setEntryPointType", js.Any.fromFunction1(value))
+      inline def setSetEntryPointType(value: EntryPointType => EntryPoint): Self = StObject.set(x, "setEntryPointType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMeetingCode(value: String => EntryPoint): Self = StObject.set(x, "setMeetingCode", js.Any.fromFunction1(value))
+      inline def setSetMeetingCode(value: String => EntryPoint): Self = StObject.set(x, "setMeetingCode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPasscode(value: String => EntryPoint): Self = StObject.set(x, "setPasscode", js.Any.fromFunction1(value))
+      inline def setSetPasscode(value: String => EntryPoint): Self = StObject.set(x, "setPasscode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPassword(value: String => EntryPoint): Self = StObject.set(x, "setPassword", js.Any.fromFunction1(value))
+      inline def setSetPassword(value: String => EntryPoint): Self = StObject.set(x, "setPassword", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPin(value: String => EntryPoint): Self = StObject.set(x, "setPin", js.Any.fromFunction1(value))
+      inline def setSetPin(value: String => EntryPoint): Self = StObject.set(x, "setPin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRegionCode(value: String => EntryPoint): Self = StObject.set(x, "setRegionCode", js.Any.fromFunction1(value))
+      inline def setSetRegionCode(value: String => EntryPoint): Self = StObject.set(x, "setRegionCode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetUri(value: String => EntryPoint): Self = StObject.set(x, "setUri", js.Any.fromFunction1(value))
+      inline def setSetUri(value: String => EntryPoint): Self = StObject.set(x, "setUri", js.Any.fromFunction1(value))
     }
   }
 }

@@ -24,25 +24,19 @@ trait SchemaPlacementTargeting extends StObject {
 }
 object SchemaPlacementTargeting {
   
-  @scala.inline
-  def apply(): SchemaPlacementTargeting = {
+  inline def apply(): SchemaPlacementTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPlacementTargeting]
   }
   
-  @scala.inline
-  implicit class SchemaPlacementTargetingMutableBuilder[Self <: SchemaPlacementTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPlacementTargeting](x: Self) {
     
-    @scala.inline
-    def setMobileApplicationTargeting(value: SchemaMobileApplicationTargeting): Self = StObject.set(x, "mobileApplicationTargeting", value.asInstanceOf[js.Any])
+    inline def setMobileApplicationTargeting(value: SchemaMobileApplicationTargeting): Self = StObject.set(x, "mobileApplicationTargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileApplicationTargetingUndefined: Self = StObject.set(x, "mobileApplicationTargeting", js.undefined)
+    inline def setMobileApplicationTargetingUndefined: Self = StObject.set(x, "mobileApplicationTargeting", js.undefined)
     
-    @scala.inline
-    def setUrlTargeting(value: SchemaUrlTargeting): Self = StObject.set(x, "urlTargeting", value.asInstanceOf[js.Any])
+    inline def setUrlTargeting(value: SchemaUrlTargeting): Self = StObject.set(x, "urlTargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlTargetingUndefined: Self = StObject.set(x, "urlTargeting", js.undefined)
+    inline def setUrlTargetingUndefined: Self = StObject.set(x, "urlTargeting", js.undefined)
   }
 }

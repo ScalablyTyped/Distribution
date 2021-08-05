@@ -17,25 +17,19 @@ trait BatchCreateSessionsRequest extends StObject {
 }
 object BatchCreateSessionsRequest {
   
-  @scala.inline
-  def apply(): BatchCreateSessionsRequest = {
+  inline def apply(): BatchCreateSessionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchCreateSessionsRequest]
   }
   
-  @scala.inline
-  implicit class BatchCreateSessionsRequestMutableBuilder[Self <: BatchCreateSessionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchCreateSessionsRequest](x: Self) {
     
-    @scala.inline
-    def setSessionCount(value: Double): Self = StObject.set(x, "sessionCount", value.asInstanceOf[js.Any])
+    inline def setSessionCount(value: Double): Self = StObject.set(x, "sessionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionCountUndefined: Self = StObject.set(x, "sessionCount", js.undefined)
+    inline def setSessionCountUndefined: Self = StObject.set(x, "sessionCount", js.undefined)
     
-    @scala.inline
-    def setSessionTemplate(value: Session): Self = StObject.set(x, "sessionTemplate", value.asInstanceOf[js.Any])
+    inline def setSessionTemplate(value: Session): Self = StObject.set(x, "sessionTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionTemplateUndefined: Self = StObject.set(x, "sessionTemplate", js.undefined)
+    inline def setSessionTemplateUndefined: Self = StObject.set(x, "sessionTemplate", js.undefined)
   }
 }

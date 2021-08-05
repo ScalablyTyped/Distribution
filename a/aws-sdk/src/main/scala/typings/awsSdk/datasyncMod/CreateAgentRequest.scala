@@ -38,55 +38,39 @@ trait CreateAgentRequest extends StObject {
 }
 object CreateAgentRequest {
   
-  @scala.inline
-  def apply(ActivationKey: ActivationKey): CreateAgentRequest = {
+  inline def apply(ActivationKey: ActivationKey): CreateAgentRequest = {
     val __obj = js.Dynamic.literal(ActivationKey = ActivationKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAgentRequest]
   }
   
-  @scala.inline
-  implicit class CreateAgentRequestMutableBuilder[Self <: CreateAgentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAgentRequest](x: Self) {
     
-    @scala.inline
-    def setActivationKey(value: ActivationKey): Self = StObject.set(x, "ActivationKey", value.asInstanceOf[js.Any])
+    inline def setActivationKey(value: ActivationKey): Self = StObject.set(x, "ActivationKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentName(value: TagValue): Self = StObject.set(x, "AgentName", value.asInstanceOf[js.Any])
+    inline def setAgentName(value: TagValue): Self = StObject.set(x, "AgentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentNameUndefined: Self = StObject.set(x, "AgentName", js.undefined)
+    inline def setAgentNameUndefined: Self = StObject.set(x, "AgentName", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupArns(value: PLSecurityGroupArnList): Self = StObject.set(x, "SecurityGroupArns", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupArns(value: PLSecurityGroupArnList): Self = StObject.set(x, "SecurityGroupArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupArnsUndefined: Self = StObject.set(x, "SecurityGroupArns", js.undefined)
+    inline def setSecurityGroupArnsUndefined: Self = StObject.set(x, "SecurityGroupArns", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupArnsVarargs(value: Ec2SecurityGroupArn*): Self = StObject.set(x, "SecurityGroupArns", js.Array(value :_*))
+    inline def setSecurityGroupArnsVarargs(value: Ec2SecurityGroupArn*): Self = StObject.set(x, "SecurityGroupArns", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnetArns(value: PLSubnetArnList): Self = StObject.set(x, "SubnetArns", value.asInstanceOf[js.Any])
+    inline def setSubnetArns(value: PLSubnetArnList): Self = StObject.set(x, "SubnetArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetArnsUndefined: Self = StObject.set(x, "SubnetArns", js.undefined)
+    inline def setSubnetArnsUndefined: Self = StObject.set(x, "SubnetArns", js.undefined)
     
-    @scala.inline
-    def setSubnetArnsVarargs(value: Ec2SubnetArn*): Self = StObject.set(x, "SubnetArns", js.Array(value :_*))
+    inline def setSubnetArnsVarargs(value: Ec2SubnetArn*): Self = StObject.set(x, "SubnetArns", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: InputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: InputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcEndpointId(value: VpcEndpointId): Self = StObject.set(x, "VpcEndpointId", value.asInstanceOf[js.Any])
+    inline def setVpcEndpointId(value: VpcEndpointId): Self = StObject.set(x, "VpcEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcEndpointIdUndefined: Self = StObject.set(x, "VpcEndpointId", js.undefined)
+    inline def setVpcEndpointIdUndefined: Self = StObject.set(x, "VpcEndpointId", js.undefined)
   }
 }

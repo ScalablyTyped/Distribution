@@ -81,8 +81,7 @@ object groupsMod {
   }
   object GroupDetailSchema {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatar_url: String,
       description: String,
       full_name: String,
@@ -107,23 +106,17 @@ object groupsMod {
       __obj.asInstanceOf[GroupDetailSchema]
     }
     
-    @scala.inline
-    implicit class GroupDetailSchemaMutableBuilder[Self <: GroupDetailSchema] (val x: Self) extends AnyVal {
+    extension [Self <: GroupDetailSchema](x: Self) {
       
-      @scala.inline
-      def setProjects(value: js.Array[ProjectSchema]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+      inline def setProjects(value: js.Array[ProjectSchema]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectsVarargs(value: ProjectSchema*): Self = StObject.set(x, "projects", js.Array(value :_*))
+      inline def setProjectsVarargs(value: ProjectSchema*): Self = StObject.set(x, "projects", js.Array(value :_*))
       
-      @scala.inline
-      def setRunners_token(value: String): Self = StObject.set(x, "runners_token", value.asInstanceOf[js.Any])
+      inline def setRunners_token(value: String): Self = StObject.set(x, "runners_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShared_projects(value: js.Array[ProjectSchema]): Self = StObject.set(x, "shared_projects", value.asInstanceOf[js.Any])
+      inline def setShared_projects(value: js.Array[ProjectSchema]): Self = StObject.set(x, "shared_projects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShared_projectsVarargs(value: ProjectSchema*): Self = StObject.set(x, "shared_projects", js.Array(value :_*))
+      inline def setShared_projectsVarargs(value: ProjectSchema*): Self = StObject.set(x, "shared_projects", js.Array(value :_*))
     }
   }
   
@@ -169,8 +162,7 @@ object groupsMod {
   }
   object GroupSchema {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatar_url: String,
       description: String,
       full_name: String,
@@ -192,74 +184,51 @@ object groupsMod {
       __obj.asInstanceOf[GroupSchema]
     }
     
-    @scala.inline
-    implicit class GroupSchemaMutableBuilder[Self <: GroupSchema] (val x: Self) extends AnyVal {
+    extension [Self <: GroupSchema](x: Self) {
       
-      @scala.inline
-      def setAuto_devops_enabled(value: Boolean): Self = StObject.set(x, "auto_devops_enabled", value.asInstanceOf[js.Any])
+      inline def setAuto_devops_enabled(value: Boolean): Self = StObject.set(x, "auto_devops_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuto_devops_enabledUndefined: Self = StObject.set(x, "auto_devops_enabled", js.undefined)
+      inline def setAuto_devops_enabledUndefined: Self = StObject.set(x, "auto_devops_enabled", js.undefined)
       
-      @scala.inline
-      def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
+      inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmails_disabled(value: Boolean): Self = StObject.set(x, "emails_disabled", value.asInstanceOf[js.Any])
+      inline def setEmails_disabled(value: Boolean): Self = StObject.set(x, "emails_disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmails_disabledUndefined: Self = StObject.set(x, "emails_disabled", js.undefined)
+      inline def setEmails_disabledUndefined: Self = StObject.set(x, "emails_disabled", js.undefined)
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_path(value: String): Self = StObject.set(x, "full_path", value.asInstanceOf[js.Any])
+      inline def setFull_path(value: String): Self = StObject.set(x, "full_path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLfs_enabled(value: Boolean): Self = StObject.set(x, "lfs_enabled", value.asInstanceOf[js.Any])
+      inline def setLfs_enabled(value: Boolean): Self = StObject.set(x, "lfs_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent_id(value: Double): Self = StObject.set(x, "parent_id", value.asInstanceOf[js.Any])
+      inline def setParent_id(value: Double): Self = StObject.set(x, "parent_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent_idUndefined: Self = StObject.set(x, "parent_id", js.undefined)
+      inline def setParent_idUndefined: Self = StObject.set(x, "parent_id", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject_creation_level(value: String): Self = StObject.set(x, "project_creation_level", value.asInstanceOf[js.Any])
+      inline def setProject_creation_level(value: String): Self = StObject.set(x, "project_creation_level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest_access_enabled(value: Boolean): Self = StObject.set(x, "request_access_enabled", value.asInstanceOf[js.Any])
+      inline def setRequest_access_enabled(value: Boolean): Self = StObject.set(x, "request_access_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequire_two_factor_authentication(value: Boolean): Self = StObject.set(x, "require_two_factor_authentication", value.asInstanceOf[js.Any])
+      inline def setRequire_two_factor_authentication(value: Boolean): Self = StObject.set(x, "require_two_factor_authentication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShare_with_group_lock(value: Boolean): Self = StObject.set(x, "share_with_group_lock", value.asInstanceOf[js.Any])
+      inline def setShare_with_group_lock(value: Boolean): Self = StObject.set(x, "share_with_group_lock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubgroup_creation_level(value: String): Self = StObject.set(x, "subgroup_creation_level", value.asInstanceOf[js.Any])
+      inline def setSubgroup_creation_level(value: String): Self = StObject.set(x, "subgroup_creation_level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwo_factor_grace_period(value: Double): Self = StObject.set(x, "two_factor_grace_period", value.asInstanceOf[js.Any])
+      inline def setTwo_factor_grace_period(value: Double): Self = StObject.set(x, "two_factor_grace_period", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+      inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeb_url(value: String): Self = StObject.set(x, "web_url", value.asInstanceOf[js.Any])
+      inline def setWeb_url(value: String): Self = StObject.set(x, "web_url", value.asInstanceOf[js.Any])
     }
   }
 }

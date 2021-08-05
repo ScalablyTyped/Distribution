@@ -23,12 +23,10 @@ object Pagination {
   @JSImport("@ant-design/react-native", "Pagination.contextTypes")
   @js.native
   def contextTypes: AntLocale = js.native
-  @scala.inline
-  def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("@ant-design/react-native", "Pagination.defaultProps")
   @js.native
   def defaultProps: Current = js.native
-  @scala.inline
-  def defaultProps_=(x: Current): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Current): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

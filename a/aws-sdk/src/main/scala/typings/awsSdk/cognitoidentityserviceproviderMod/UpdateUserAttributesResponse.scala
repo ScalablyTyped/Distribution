@@ -13,22 +13,17 @@ trait UpdateUserAttributesResponse extends StObject {
 }
 object UpdateUserAttributesResponse {
   
-  @scala.inline
-  def apply(): UpdateUserAttributesResponse = {
+  inline def apply(): UpdateUserAttributesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateUserAttributesResponse]
   }
   
-  @scala.inline
-  implicit class UpdateUserAttributesResponseMutableBuilder[Self <: UpdateUserAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateUserAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setCodeDeliveryDetailsList(value: CodeDeliveryDetailsListType): Self = StObject.set(x, "CodeDeliveryDetailsList", value.asInstanceOf[js.Any])
+    inline def setCodeDeliveryDetailsList(value: CodeDeliveryDetailsListType): Self = StObject.set(x, "CodeDeliveryDetailsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeDeliveryDetailsListUndefined: Self = StObject.set(x, "CodeDeliveryDetailsList", js.undefined)
+    inline def setCodeDeliveryDetailsListUndefined: Self = StObject.set(x, "CodeDeliveryDetailsList", js.undefined)
     
-    @scala.inline
-    def setCodeDeliveryDetailsListVarargs(value: CodeDeliveryDetailsType*): Self = StObject.set(x, "CodeDeliveryDetailsList", js.Array(value :_*))
+    inline def setCodeDeliveryDetailsListVarargs(value: CodeDeliveryDetailsType*): Self = StObject.set(x, "CodeDeliveryDetailsList", js.Array(value :_*))
   }
 }

@@ -18,19 +18,15 @@ trait InsightResultValue extends StObject {
 }
 object InsightResultValue {
   
-  @scala.inline
-  def apply(Count: Integer, GroupByAttributeValue: NonEmptyString): InsightResultValue = {
+  inline def apply(Count: Integer, GroupByAttributeValue: NonEmptyString): InsightResultValue = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], GroupByAttributeValue = GroupByAttributeValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightResultValue]
   }
   
-  @scala.inline
-  implicit class InsightResultValueMutableBuilder[Self <: InsightResultValue] (val x: Self) extends AnyVal {
+  extension [Self <: InsightResultValue](x: Self) {
     
-    @scala.inline
-    def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByAttributeValue(value: NonEmptyString): Self = StObject.set(x, "GroupByAttributeValue", value.asInstanceOf[js.Any])
+    inline def setGroupByAttributeValue(value: NonEmptyString): Self = StObject.set(x, "GroupByAttributeValue", value.asInstanceOf[js.Any])
   }
 }

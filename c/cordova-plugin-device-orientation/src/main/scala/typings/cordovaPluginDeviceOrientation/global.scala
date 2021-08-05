@@ -32,13 +32,11 @@ object global {
     @JSGlobal("CompassError.COMPASS_INTERNAL_ERR")
     @js.native
     def COMPASS_INTERNAL_ERR: Double = js.native
-    @scala.inline
-    def COMPASS_INTERNAL_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPASS_INTERNAL_ERR")(x.asInstanceOf[js.Any])
+    inline def COMPASS_INTERNAL_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPASS_INTERNAL_ERR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("CompassError.COMPASS_NOT_SUPPORTED")
     @js.native
     def COMPASS_NOT_SUPPORTED: Double = js.native
-    @scala.inline
-    def COMPASS_NOT_SUPPORTED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPASS_NOT_SUPPORTED")(x.asInstanceOf[js.Any])
+    inline def COMPASS_NOT_SUPPORTED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPASS_NOT_SUPPORTED")(x.asInstanceOf[js.Any])
   }
 }

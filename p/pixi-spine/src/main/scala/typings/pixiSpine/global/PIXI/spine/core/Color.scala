@@ -62,42 +62,35 @@ object Color {
   @JSGlobal("PIXI.spine.core.Color.BLUE")
   @js.native
   def BLUE: typings.pixiSpine.PIXI.spine.core.Color = js.native
-  @scala.inline
-  def BLUE_=(x: typings.pixiSpine.PIXI.spine.core.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE")(x.asInstanceOf[js.Any])
+  inline def BLUE_=(x: typings.pixiSpine.PIXI.spine.core.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("PIXI.spine.core.Color.GREEN")
   @js.native
   def GREEN: typings.pixiSpine.PIXI.spine.core.Color = js.native
-  @scala.inline
-  def GREEN_=(x: typings.pixiSpine.PIXI.spine.core.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN")(x.asInstanceOf[js.Any])
+  inline def GREEN_=(x: typings.pixiSpine.PIXI.spine.core.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("PIXI.spine.core.Color.MAGENTA")
   @js.native
   def MAGENTA: typings.pixiSpine.PIXI.spine.core.Color = js.native
-  @scala.inline
-  def MAGENTA_=(x: typings.pixiSpine.PIXI.spine.core.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAGENTA")(x.asInstanceOf[js.Any])
+  inline def MAGENTA_=(x: typings.pixiSpine.PIXI.spine.core.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAGENTA")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("PIXI.spine.core.Color.RED")
   @js.native
   def RED: typings.pixiSpine.PIXI.spine.core.Color = js.native
-  @scala.inline
-  def RED_=(x: typings.pixiSpine.PIXI.spine.core.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED")(x.asInstanceOf[js.Any])
+  inline def RED_=(x: typings.pixiSpine.PIXI.spine.core.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("PIXI.spine.core.Color.WHITE")
   @js.native
   def WHITE: typings.pixiSpine.PIXI.spine.core.Color = js.native
-  @scala.inline
-  def WHITE_=(x: typings.pixiSpine.PIXI.spine.core.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHITE")(x.asInstanceOf[js.Any])
+  inline def WHITE_=(x: typings.pixiSpine.PIXI.spine.core.Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHITE")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def rgb888ToColor(color: typings.pixiSpine.PIXI.spine.core.Color, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb888ToColor")(color.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def rgb888ToColor(color: typings.pixiSpine.PIXI.spine.core.Color, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb888ToColor")(color.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def rgba8888ToColor(color: typings.pixiSpine.PIXI.spine.core.Color, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba8888ToColor")(color.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def rgba8888ToColor(color: typings.pixiSpine.PIXI.spine.core.Color, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rgba8888ToColor")(color.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

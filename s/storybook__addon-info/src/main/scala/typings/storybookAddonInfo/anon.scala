@@ -28,8 +28,7 @@ object anon {
   }
   object DefaultValue {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultValue: js.Any,
       description: String,
       propType: js.Object | String,
@@ -40,23 +39,17 @@ object anon {
       __obj.asInstanceOf[DefaultValue]
     }
     
-    @scala.inline
-    implicit class DefaultValueMutableBuilder[Self <: DefaultValue] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultValue](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropType(value: js.Object | String): Self = StObject.set(x, "propType", value.asInstanceOf[js.Any])
+      inline def setPropType(value: js.Object | String): Self = StObject.set(x, "propType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,41 +71,30 @@ object anon {
   }
   object ParametersinfoOptions {
     
-    @scala.inline
-    def apply(info: Options): ParametersinfoOptions = {
+    inline def apply(info: Options): ParametersinfoOptions = {
       val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParametersinfoOptions]
     }
     
-    @scala.inline
-    implicit class ParametersinfoOptionsMutableBuilder[Self <: ParametersinfoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParametersinfoOptions](x: Self) {
       
-      @scala.inline
-      def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
+      inline def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocsOnlyUndefined: Self = StObject.set(x, "docsOnly", js.undefined)
+      inline def setDocsOnlyUndefined: Self = StObject.set(x, "docsOnly", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setInfo(value: Options): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Options): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayout(value: centered | fullscreen | padded | none): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: centered | fullscreen | padded | none): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setOptions(value: OptionsParameter): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: OptionsParameter): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
 }

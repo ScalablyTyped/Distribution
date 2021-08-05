@@ -11,19 +11,15 @@ trait ITypeSelectorParameters extends StObject {
 }
 object ITypeSelectorParameters {
   
-  @scala.inline
-  def apply(): ITypeSelectorParameters = {
+  inline def apply(): ITypeSelectorParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITypeSelectorParameters]
   }
   
-  @scala.inline
-  implicit class ITypeSelectorParametersMutableBuilder[Self <: ITypeSelectorParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ITypeSelectorParameters](x: Self) {
     
-    @scala.inline
-    def setOptions(value: PanoramasItemMode): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: PanoramasItemMode): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

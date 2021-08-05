@@ -23,8 +23,7 @@ trait DeleteApplicationReferenceDataSourceRequest extends StObject {
 }
 object DeleteApplicationReferenceDataSourceRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplicationName: ApplicationName,
     CurrentApplicationVersionId: ApplicationVersionId,
     ReferenceId: Id
@@ -33,16 +32,12 @@ object DeleteApplicationReferenceDataSourceRequest {
     __obj.asInstanceOf[DeleteApplicationReferenceDataSourceRequest]
   }
   
-  @scala.inline
-  implicit class DeleteApplicationReferenceDataSourceRequestMutableBuilder[Self <: DeleteApplicationReferenceDataSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteApplicationReferenceDataSourceRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
+    inline def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceId(value: Id): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
+    inline def setReferenceId(value: Id): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
   }
 }

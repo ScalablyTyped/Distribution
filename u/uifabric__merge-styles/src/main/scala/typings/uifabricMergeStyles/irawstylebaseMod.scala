@@ -95,14 +95,11 @@ object irawstylebaseMod {
   trait ICSSBaselinePositionRule extends StObject
   object ICSSBaselinePositionRule {
     
-    @scala.inline
-    def baseline: typings.uifabricMergeStyles.uifabricMergeStylesStrings.baseline = "baseline".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.baseline]
+    inline def baseline: typings.uifabricMergeStyles.uifabricMergeStylesStrings.baseline = "baseline".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.baseline]
     
-    @scala.inline
-    def `first baseline`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`first baseline` = ("first baseline").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`first baseline`]
+    inline def `first baseline`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`first baseline` = ("first baseline").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`first baseline`]
     
-    @scala.inline
-    def `last baseline`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`last baseline` = ("last baseline").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`last baseline`]
+    inline def `last baseline`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`last baseline` = ("last baseline").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`last baseline`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -148,119 +145,81 @@ object irawstylebaseMod {
   trait ICSSDisplayRule extends StObject
   object ICSSDisplayRule {
     
-    @scala.inline
-    def block: typings.uifabricMergeStyles.uifabricMergeStylesStrings.block = "block".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.block]
+    inline def block: typings.uifabricMergeStyles.uifabricMergeStylesStrings.block = "block".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.block]
     
-    @scala.inline
-    def `block flow`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`block flow` = ("block flow").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`block flow`]
+    inline def `block flow`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`block flow` = ("block flow").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`block flow`]
     
-    @scala.inline
-    def contents: typings.uifabricMergeStyles.uifabricMergeStylesStrings.contents = "contents".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.contents]
+    inline def contents: typings.uifabricMergeStyles.uifabricMergeStylesStrings.contents = "contents".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.contents]
     
-    @scala.inline
-    def flex: typings.uifabricMergeStyles.uifabricMergeStylesStrings.flex = "flex".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.flex]
+    inline def flex: typings.uifabricMergeStyles.uifabricMergeStylesStrings.flex = "flex".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.flex]
     
-    @scala.inline
-    def `flex run-in`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flex run-in` = ("flex run-in").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flex run-in`]
+    inline def `flex run-in`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flex run-in` = ("flex run-in").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flex run-in`]
     
-    @scala.inline
-    def flow: typings.uifabricMergeStyles.uifabricMergeStylesStrings.flow = "flow".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.flow]
+    inline def flow: typings.uifabricMergeStyles.uifabricMergeStylesStrings.flow = "flow".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.flow]
     
-    @scala.inline
-    def `flow list-item block`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flow list-item block` = ("flow list-item block").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flow list-item block`]
+    inline def `flow list-item block`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flow list-item block` = ("flow list-item block").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flow list-item block`]
     
-    @scala.inline
-    def `flow-root`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flow-root` = "flow-root".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flow-root`]
+    inline def `flow-root`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flow-root` = "flow-root".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flow-root`]
     
-    @scala.inline
-    def grid: typings.uifabricMergeStyles.uifabricMergeStylesStrings.grid = "grid".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.grid]
+    inline def grid: typings.uifabricMergeStyles.uifabricMergeStylesStrings.grid = "grid".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.grid]
     
-    @scala.inline
-    def `inline`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline` = "inline".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline`]
+    inline def `inline`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline` = "inline".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline`]
     
-    @scala.inline
-    def `inline table`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline table` = ("inline table").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline table`]
+    inline def `inline table`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline table` = ("inline table").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline table`]
     
-    @scala.inline
-    def `inline-block`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-block` = "inline-block".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-block`]
+    inline def `inline-block`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-block` = "inline-block".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-block`]
     
-    @scala.inline
-    def `inline-flex`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-flex` = "inline-flex".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-flex`]
+    inline def `inline-flex`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-flex` = "inline-flex".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-flex`]
     
-    @scala.inline
-    def `inline-grid`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-grid` = "inline-grid".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-grid`]
+    inline def `inline-grid`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-grid` = "inline-grid".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-grid`]
     
-    @scala.inline
-    def `inline-table`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-table` = "inline-table".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-table`]
+    inline def `inline-table`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-table` = "inline-table".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`inline-table`]
     
-    @scala.inline
-    def `list-item`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item` = "list-item".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item`]
+    inline def `list-item`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item` = "list-item".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item`]
     
-    @scala.inline
-    def `list-item block`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block` = ("list-item block").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block`]
+    inline def `list-item block`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block` = ("list-item block").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block`]
     
-    @scala.inline
-    def `list-item block flow`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block flow` = ("list-item block flow").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block flow`]
+    inline def `list-item block flow`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block flow` = ("list-item block flow").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block flow`]
     
-    @scala.inline
-    def `list-item block flow-root`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block flow-root` = ("list-item block flow-root").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block flow-root`]
+    inline def `list-item block flow-root`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block flow-root` = ("list-item block flow-root").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item block flow-root`]
     
-    @scala.inline
-    def `list-item flow`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item flow` = ("list-item flow").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item flow`]
+    inline def `list-item flow`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item flow` = ("list-item flow").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item flow`]
     
-    @scala.inline
-    def `list-item flow-root`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item flow-root` = ("list-item flow-root").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item flow-root`]
+    inline def `list-item flow-root`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item flow-root` = ("list-item flow-root").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item flow-root`]
     
-    @scala.inline
-    def `list-item inline`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item inline` = ("list-item inline").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item inline`]
+    inline def `list-item inline`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item inline` = ("list-item inline").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`list-item inline`]
     
-    @scala.inline
-    def none: typings.uifabricMergeStyles.uifabricMergeStylesStrings.none = "none".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.none]
+    inline def none: typings.uifabricMergeStyles.uifabricMergeStylesStrings.none = "none".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.none]
     
-    @scala.inline
-    def ruby: typings.uifabricMergeStyles.uifabricMergeStylesStrings.ruby = "ruby".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.ruby]
+    inline def ruby: typings.uifabricMergeStyles.uifabricMergeStylesStrings.ruby = "ruby".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.ruby]
     
-    @scala.inline
-    def `ruby-base`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-base` = "ruby-base".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-base`]
+    inline def `ruby-base`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-base` = "ruby-base".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-base`]
     
-    @scala.inline
-    def `ruby-base-container`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-base-container` = "ruby-base-container".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-base-container`]
+    inline def `ruby-base-container`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-base-container` = "ruby-base-container".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-base-container`]
     
-    @scala.inline
-    def `ruby-text`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-text` = "ruby-text".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-text`]
+    inline def `ruby-text`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-text` = "ruby-text".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-text`]
     
-    @scala.inline
-    def `ruby-text-container`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-text-container` = "ruby-text-container".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-text-container`]
+    inline def `ruby-text-container`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-text-container` = "ruby-text-container".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`ruby-text-container`]
     
-    @scala.inline
-    def `run-in`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`run-in` = "run-in".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`run-in`]
+    inline def `run-in`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`run-in` = "run-in".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`run-in`]
     
-    @scala.inline
-    def table: typings.uifabricMergeStyles.uifabricMergeStylesStrings.table = "table".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.table]
+    inline def table: typings.uifabricMergeStyles.uifabricMergeStylesStrings.table = "table".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.table]
     
-    @scala.inline
-    def `table-caption`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-caption` = "table-caption".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-caption`]
+    inline def `table-caption`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-caption` = "table-caption".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-caption`]
     
-    @scala.inline
-    def `table-cell`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-cell` = "table-cell".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-cell`]
+    inline def `table-cell`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-cell` = "table-cell".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-cell`]
     
-    @scala.inline
-    def `table-column`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-column` = "table-column".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-column`]
+    inline def `table-column`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-column` = "table-column".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-column`]
     
-    @scala.inline
-    def `table-column-group`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-column-group` = "table-column-group".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-column-group`]
+    inline def `table-column-group`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-column-group` = "table-column-group".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-column-group`]
     
-    @scala.inline
-    def `table-footer-group`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-footer-group` = "table-footer-group".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-footer-group`]
+    inline def `table-footer-group`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-footer-group` = "table-footer-group".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-footer-group`]
     
-    @scala.inline
-    def `table-header-group`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-header-group` = "table-header-group".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-header-group`]
+    inline def `table-header-group`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-header-group` = "table-header-group".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-header-group`]
     
-    @scala.inline
-    def `table-row`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-row` = "table-row".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-row`]
+    inline def `table-row`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-row` = "table-row".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-row`]
     
-    @scala.inline
-    def `table-row-group`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-row-group` = "table-row-group".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-row-group`]
+    inline def `table-row-group`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-row-group` = "table-row-group".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`table-row-group`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -289,68 +248,47 @@ object irawstylebaseMod {
   trait ICSSOverflowAndSelfPositionRule extends StObject
   object ICSSOverflowAndSelfPositionRule {
     
-    @scala.inline
-    def center: typings.uifabricMergeStyles.uifabricMergeStylesStrings.center = "center".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.center]
+    inline def center: typings.uifabricMergeStyles.uifabricMergeStylesStrings.center = "center".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.center]
     
-    @scala.inline
-    def end: typings.uifabricMergeStyles.uifabricMergeStylesStrings.end = "end".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.end]
+    inline def end: typings.uifabricMergeStyles.uifabricMergeStylesStrings.end = "end".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.end]
     
-    @scala.inline
-    def `flex-end`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flex-end` = "flex-end".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flex-end`]
+    inline def `flex-end`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flex-end` = "flex-end".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flex-end`]
     
-    @scala.inline
-    def `flex-start`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flex-start` = "flex-start".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flex-start`]
+    inline def `flex-start`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flex-start` = "flex-start".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`flex-start`]
     
-    @scala.inline
-    def `safe center`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe center` = ("safe center").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe center`]
+    inline def `safe center`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe center` = ("safe center").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe center`]
     
-    @scala.inline
-    def `safe end`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe end` = ("safe end").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe end`]
+    inline def `safe end`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe end` = ("safe end").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe end`]
     
-    @scala.inline
-    def `safe flex-end`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe flex-end` = ("safe flex-end").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe flex-end`]
+    inline def `safe flex-end`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe flex-end` = ("safe flex-end").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe flex-end`]
     
-    @scala.inline
-    def `safe flex-start`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe flex-start` = ("safe flex-start").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe flex-start`]
+    inline def `safe flex-start`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe flex-start` = ("safe flex-start").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe flex-start`]
     
-    @scala.inline
-    def `safe self-end`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe self-end` = ("safe self-end").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe self-end`]
+    inline def `safe self-end`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe self-end` = ("safe self-end").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe self-end`]
     
-    @scala.inline
-    def `safe self-start`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe self-start` = ("safe self-start").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe self-start`]
+    inline def `safe self-start`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe self-start` = ("safe self-start").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe self-start`]
     
-    @scala.inline
-    def `safe start`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe start` = ("safe start").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe start`]
+    inline def `safe start`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe start` = ("safe start").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`safe start`]
     
-    @scala.inline
-    def `self-end`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`self-end` = "self-end".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`self-end`]
+    inline def `self-end`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`self-end` = "self-end".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`self-end`]
     
-    @scala.inline
-    def `self-start`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`self-start` = "self-start".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`self-start`]
+    inline def `self-start`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`self-start` = "self-start".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`self-start`]
     
-    @scala.inline
-    def start: typings.uifabricMergeStyles.uifabricMergeStylesStrings.start = "start".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.start]
+    inline def start: typings.uifabricMergeStyles.uifabricMergeStylesStrings.start = "start".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.start]
     
-    @scala.inline
-    def `unsafe center`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe center` = ("unsafe center").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe center`]
+    inline def `unsafe center`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe center` = ("unsafe center").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe center`]
     
-    @scala.inline
-    def `unsafe end`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe end` = ("unsafe end").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe end`]
+    inline def `unsafe end`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe end` = ("unsafe end").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe end`]
     
-    @scala.inline
-    def `unsafe flex-end`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe flex-end` = ("unsafe flex-end").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe flex-end`]
+    inline def `unsafe flex-end`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe flex-end` = ("unsafe flex-end").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe flex-end`]
     
-    @scala.inline
-    def `unsafe flex-start`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe flex-start` = ("unsafe flex-start").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe flex-start`]
+    inline def `unsafe flex-start`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe flex-start` = ("unsafe flex-start").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe flex-start`]
     
-    @scala.inline
-    def `unsafe self-end`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe self-end` = ("unsafe self-end").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe self-end`]
+    inline def `unsafe self-end`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe self-end` = ("unsafe self-end").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe self-end`]
     
-    @scala.inline
-    def `unsafe self-start`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe self-start` = ("unsafe self-start").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe self-start`]
+    inline def `unsafe self-start`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe self-start` = ("unsafe self-start").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe self-start`]
     
-    @scala.inline
-    def `unsafe start`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe start` = ("unsafe start").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe start`]
+    inline def `unsafe start`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe start` = ("unsafe start").asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`unsafe start`]
   }
   
   type ICSSPercentageRule = String
@@ -365,14 +303,11 @@ object irawstylebaseMod {
   trait ICSSRule extends StObject
   object ICSSRule {
     
-    @scala.inline
-    def inherit: typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit = "inherit".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit]
+    inline def inherit: typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit = "inherit".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit]
     
-    @scala.inline
-    def initial: typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial = "initial".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial]
+    inline def initial: typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial = "initial".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial]
     
-    @scala.inline
-    def unset: typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset = "unset".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset]
+    inline def unset: typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset = "unset".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset]
   }
   
   trait IFontFace
@@ -404,38 +339,28 @@ object irawstylebaseMod {
   }
   object IFontFace {
     
-    @scala.inline
-    def apply(): IFontFace = {
+    inline def apply(): IFontFace = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFontFace]
     }
     
-    @scala.inline
-    implicit class IFontFaceMutableBuilder[Self <: IFontFace] (val x: Self) extends AnyVal {
+    extension [Self <: IFontFace](x: Self) {
       
-      @scala.inline
-      def setFontDisplay(value: auto | block | swap | fallback | optional): Self = StObject.set(x, "fontDisplay", value.asInstanceOf[js.Any])
+      inline def setFontDisplay(value: auto | block | swap | fallback | optional): Self = StObject.set(x, "fontDisplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontDisplayUndefined: Self = StObject.set(x, "fontDisplay", js.undefined)
+      inline def setFontDisplayUndefined: Self = StObject.set(x, "fontDisplay", js.undefined)
       
-      @scala.inline
-      def setFontFeatureSettings(value: String): Self = StObject.set(x, "fontFeatureSettings", value.asInstanceOf[js.Any])
+      inline def setFontFeatureSettings(value: String): Self = StObject.set(x, "fontFeatureSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFeatureSettingsUndefined: Self = StObject.set(x, "fontFeatureSettings", js.undefined)
+      inline def setFontFeatureSettingsUndefined: Self = StObject.set(x, "fontFeatureSettings", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      @scala.inline
-      def setUnicodeRange(value: ICSSRule | String): Self = StObject.set(x, "unicodeRange", value.asInstanceOf[js.Any])
+      inline def setUnicodeRange(value: ICSSRule | String): Self = StObject.set(x, "unicodeRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicodeRangeUndefined: Self = StObject.set(x, "unicodeRange", js.undefined)
+      inline def setUnicodeRangeUndefined: Self = StObject.set(x, "unicodeRange", js.undefined)
     }
   }
   
@@ -469,53 +394,37 @@ object irawstylebaseMod {
   trait IFontWeight extends StObject
   object IFontWeight {
     
-    @scala.inline
-    def `100`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`100` = 100.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`100`]
+    inline def `100`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`100` = 100.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`100`]
     
-    @scala.inline
-    def `200`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`200` = 200.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`200`]
+    inline def `200`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`200` = 200.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`200`]
     
-    @scala.inline
-    def `300`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`300` = 300.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`300`]
+    inline def `300`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`300` = 300.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`300`]
     
-    @scala.inline
-    def `400`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`400` = 400.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`400`]
+    inline def `400`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`400` = 400.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`400`]
     
-    @scala.inline
-    def `500`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`500` = 500.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`500`]
+    inline def `500`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`500` = 500.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`500`]
     
-    @scala.inline
-    def `600`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`600` = 600.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`600`]
+    inline def `600`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`600` = 600.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`600`]
     
-    @scala.inline
-    def `700`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`700` = 700.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`700`]
+    inline def `700`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`700` = 700.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`700`]
     
-    @scala.inline
-    def `800`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`800` = 800.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`800`]
+    inline def `800`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`800` = 800.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`800`]
     
-    @scala.inline
-    def `900`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`900` = 900.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`900`]
+    inline def `900`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`900` = 900.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`900`]
     
-    @scala.inline
-    def bold: typings.uifabricMergeStyles.uifabricMergeStylesStrings.bold = "bold".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.bold]
+    inline def bold: typings.uifabricMergeStyles.uifabricMergeStylesStrings.bold = "bold".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.bold]
     
-    @scala.inline
-    def bolder: typings.uifabricMergeStyles.uifabricMergeStylesStrings.bolder = "bolder".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.bolder]
+    inline def bolder: typings.uifabricMergeStyles.uifabricMergeStylesStrings.bolder = "bolder".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.bolder]
     
-    @scala.inline
-    def inherit: typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit = "inherit".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit]
+    inline def inherit: typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit = "inherit".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit]
     
-    @scala.inline
-    def initial: typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial = "initial".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial]
+    inline def initial: typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial = "initial".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial]
     
-    @scala.inline
-    def lighter: typings.uifabricMergeStyles.uifabricMergeStylesStrings.lighter = "lighter".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.lighter]
+    inline def lighter: typings.uifabricMergeStyles.uifabricMergeStylesStrings.lighter = "lighter".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.lighter]
     
-    @scala.inline
-    def normal: typings.uifabricMergeStyles.uifabricMergeStylesStrings.normal = "normal".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.normal]
+    inline def normal: typings.uifabricMergeStyles.uifabricMergeStylesStrings.normal = "normal".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.normal]
     
-    @scala.inline
-    def unset: typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset = "unset".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset]
+    inline def unset: typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset = "unset".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -542,62 +451,43 @@ object irawstylebaseMod {
   trait IMixBlendModes extends StObject
   object IMixBlendModes {
     
-    @scala.inline
-    def color: typings.uifabricMergeStyles.uifabricMergeStylesStrings.color = "color".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.color]
+    inline def color: typings.uifabricMergeStyles.uifabricMergeStylesStrings.color = "color".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.color]
     
-    @scala.inline
-    def `color-burn`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`color-burn` = "color-burn".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`color-burn`]
+    inline def `color-burn`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`color-burn` = "color-burn".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`color-burn`]
     
-    @scala.inline
-    def `color-dodge`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`color-dodge` = "color-dodge".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`color-dodge`]
+    inline def `color-dodge`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`color-dodge` = "color-dodge".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`color-dodge`]
     
-    @scala.inline
-    def darken: typings.uifabricMergeStyles.uifabricMergeStylesStrings.darken = "darken".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.darken]
+    inline def darken: typings.uifabricMergeStyles.uifabricMergeStylesStrings.darken = "darken".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.darken]
     
-    @scala.inline
-    def difference: typings.uifabricMergeStyles.uifabricMergeStylesStrings.difference = "difference".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.difference]
+    inline def difference: typings.uifabricMergeStyles.uifabricMergeStylesStrings.difference = "difference".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.difference]
     
-    @scala.inline
-    def exclusion: typings.uifabricMergeStyles.uifabricMergeStylesStrings.exclusion = "exclusion".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.exclusion]
+    inline def exclusion: typings.uifabricMergeStyles.uifabricMergeStylesStrings.exclusion = "exclusion".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.exclusion]
     
-    @scala.inline
-    def `hard-light`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`hard-light` = "hard-light".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`hard-light`]
+    inline def `hard-light`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`hard-light` = "hard-light".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`hard-light`]
     
-    @scala.inline
-    def hue: typings.uifabricMergeStyles.uifabricMergeStylesStrings.hue = "hue".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.hue]
+    inline def hue: typings.uifabricMergeStyles.uifabricMergeStylesStrings.hue = "hue".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.hue]
     
-    @scala.inline
-    def inherit: typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit = "inherit".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit]
+    inline def inherit: typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit = "inherit".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.inherit]
     
-    @scala.inline
-    def initial: typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial = "initial".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial]
+    inline def initial: typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial = "initial".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.initial]
     
-    @scala.inline
-    def lighten: typings.uifabricMergeStyles.uifabricMergeStylesStrings.lighten = "lighten".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.lighten]
+    inline def lighten: typings.uifabricMergeStyles.uifabricMergeStylesStrings.lighten = "lighten".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.lighten]
     
-    @scala.inline
-    def luminosity: typings.uifabricMergeStyles.uifabricMergeStylesStrings.luminosity = "luminosity".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.luminosity]
+    inline def luminosity: typings.uifabricMergeStyles.uifabricMergeStylesStrings.luminosity = "luminosity".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.luminosity]
     
-    @scala.inline
-    def multiply: typings.uifabricMergeStyles.uifabricMergeStylesStrings.multiply = "multiply".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.multiply]
+    inline def multiply: typings.uifabricMergeStyles.uifabricMergeStylesStrings.multiply = "multiply".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.multiply]
     
-    @scala.inline
-    def normal: typings.uifabricMergeStyles.uifabricMergeStylesStrings.normal = "normal".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.normal]
+    inline def normal: typings.uifabricMergeStyles.uifabricMergeStylesStrings.normal = "normal".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.normal]
     
-    @scala.inline
-    def overlay: typings.uifabricMergeStyles.uifabricMergeStylesStrings.overlay = "overlay".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.overlay]
+    inline def overlay: typings.uifabricMergeStyles.uifabricMergeStylesStrings.overlay = "overlay".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.overlay]
     
-    @scala.inline
-    def saturation: typings.uifabricMergeStyles.uifabricMergeStylesStrings.saturation = "saturation".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.saturation]
+    inline def saturation: typings.uifabricMergeStyles.uifabricMergeStylesStrings.saturation = "saturation".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.saturation]
     
-    @scala.inline
-    def screen: typings.uifabricMergeStyles.uifabricMergeStylesStrings.screen = "screen".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.screen]
+    inline def screen: typings.uifabricMergeStyles.uifabricMergeStylesStrings.screen = "screen".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.screen]
     
-    @scala.inline
-    def `soft-light`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`soft-light` = "soft-light".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`soft-light`]
+    inline def `soft-light`: typings.uifabricMergeStyles.uifabricMergeStylesStrings.`soft-light` = "soft-light".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.`soft-light`]
     
-    @scala.inline
-    def unset: typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset = "unset".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset]
+    inline def unset: typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset = "unset".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.unset]
   }
   
   trait IRawFontStyle extends StObject {
@@ -687,84 +577,60 @@ object irawstylebaseMod {
   }
   object IRawFontStyle {
     
-    @scala.inline
-    def apply(): IRawFontStyle = {
+    inline def apply(): IRawFontStyle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRawFontStyle]
     }
     
-    @scala.inline
-    implicit class IRawFontStyleMutableBuilder[Self <: IRawFontStyle] (val x: Self) extends AnyVal {
+    extension [Self <: IRawFontStyle](x: Self) {
       
-      @scala.inline
-      def setFont(value: ICSSRule | String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: ICSSRule | String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamily(value: ICSSRule | String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: ICSSRule | String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+      inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
-      @scala.inline
-      def setFontKerning(value: ICSSRule | String): Self = StObject.set(x, "fontKerning", value.asInstanceOf[js.Any])
+      inline def setFontKerning(value: ICSSRule | String): Self = StObject.set(x, "fontKerning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontKerningUndefined: Self = StObject.set(x, "fontKerning", js.undefined)
+      inline def setFontKerningUndefined: Self = StObject.set(x, "fontKerning", js.undefined)
       
-      @scala.inline
-      def setFontSize(
+      inline def setFontSize(
         value: ICSSRule | `xx-small` | `x-small` | small | medium | large | `x-large` | `xx-large` | larger | smaller | ICSSPixelUnitRule | ICSSPercentageRule
       ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeAdjust(value: ICSSRule | none | Double | String): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
+      inline def setFontSizeAdjust(value: ICSSRule | none | Double | String): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeAdjustUndefined: Self = StObject.set(x, "fontSizeAdjust", js.undefined)
+      inline def setFontSizeAdjustUndefined: Self = StObject.set(x, "fontSizeAdjust", js.undefined)
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFontStretch(
+      inline def setFontStretch(
         value: ICSSRule | normal | `ultra-condensed` | `extra-condensed` | condensed | `semi-condensed` | `semi-expanded` | expanded | `extra-expanded` | `ultra-expanded` | String
       ): Self = StObject.set(x, "fontStretch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStretchUndefined: Self = StObject.set(x, "fontStretch", js.undefined)
+      inline def setFontStretchUndefined: Self = StObject.set(x, "fontStretch", js.undefined)
       
-      @scala.inline
-      def setFontStyle(value: ICSSRule | normal | italic | oblique | String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+      inline def setFontStyle(value: ICSSRule | normal | italic | oblique | String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+      inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
       
-      @scala.inline
-      def setFontSynthesis(value: ICSSRule | String): Self = StObject.set(x, "fontSynthesis", value.asInstanceOf[js.Any])
+      inline def setFontSynthesis(value: ICSSRule | String): Self = StObject.set(x, "fontSynthesis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSynthesisUndefined: Self = StObject.set(x, "fontSynthesis", js.undefined)
+      inline def setFontSynthesisUndefined: Self = StObject.set(x, "fontSynthesis", js.undefined)
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setFontVariant(value: ICSSRule | String): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
+      inline def setFontVariant(value: ICSSRule | String): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontVariantAlternates(value: ICSSRule | String): Self = StObject.set(x, "fontVariantAlternates", value.asInstanceOf[js.Any])
+      inline def setFontVariantAlternates(value: ICSSRule | String): Self = StObject.set(x, "fontVariantAlternates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontVariantAlternatesUndefined: Self = StObject.set(x, "fontVariantAlternates", js.undefined)
+      inline def setFontVariantAlternatesUndefined: Self = StObject.set(x, "fontVariantAlternates", js.undefined)
       
-      @scala.inline
-      def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
+      inline def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
       
-      @scala.inline
-      def setFontWeight(value: IFontWeight | String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: IFontWeight | String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+      inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     }
   }
   
@@ -2590,1636 +2456,1096 @@ object irawstylebaseMod {
   }
   object IRawStyleBase {
     
-    @scala.inline
-    def apply(): IRawStyleBase = {
+    inline def apply(): IRawStyleBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRawStyleBase]
     }
     
-    @scala.inline
-    implicit class IRawStyleBaseMutableBuilder[Self <: IRawStyleBase] (val x: Self) extends AnyVal {
+    extension [Self <: IRawStyleBase](x: Self) {
       
-      @scala.inline
-      def setAlignContent(
+      inline def setAlignContent(
         value: ICSSRule | `flex-start` | `flex-end` | center | `space-between` | `space-around` | stretch | String
       ): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
+      inline def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
       
-      @scala.inline
-      def setAlignItems(value: ICSSRule | `flex-start` | `flex-end` | center | baseline | stretch | String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+      inline def setAlignItems(value: ICSSRule | `flex-start` | `flex-end` | center | baseline | stretch | String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
+      inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
       
-      @scala.inline
-      def setAlignSelf(
+      inline def setAlignSelf(
         value: ICSSRule | auto | normal | stretch | ICSSBaselinePositionRule | ICSSOverflowAndSelfPositionRule | String
       ): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
+      inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
-      @scala.inline
-      def setAlignmentAdjust(value: ICSSRule | String): Self = StObject.set(x, "alignmentAdjust", value.asInstanceOf[js.Any])
+      inline def setAlignmentAdjust(value: ICSSRule | String): Self = StObject.set(x, "alignmentAdjust", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignmentAdjustUndefined: Self = StObject.set(x, "alignmentAdjust", js.undefined)
+      inline def setAlignmentAdjustUndefined: Self = StObject.set(x, "alignmentAdjust", js.undefined)
       
-      @scala.inline
-      def setAlignmentBaseline(value: ICSSRule | String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
+      inline def setAlignmentBaseline(value: ICSSRule | String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignmentBaselineUndefined: Self = StObject.set(x, "alignmentBaseline", js.undefined)
+      inline def setAlignmentBaselineUndefined: Self = StObject.set(x, "alignmentBaseline", js.undefined)
       
-      @scala.inline
-      def setAnimation(value: ICSSRule | String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: ICSSRule | String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDelay(value: ICSSRule | String): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
+      inline def setAnimationDelay(value: ICSSRule | String): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
+      inline def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
       
-      @scala.inline
-      def setAnimationDirection(value: ICSSRule | String): Self = StObject.set(x, "animationDirection", value.asInstanceOf[js.Any])
+      inline def setAnimationDirection(value: ICSSRule | String): Self = StObject.set(x, "animationDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDirectionUndefined: Self = StObject.set(x, "animationDirection", js.undefined)
+      inline def setAnimationDirectionUndefined: Self = StObject.set(x, "animationDirection", js.undefined)
       
-      @scala.inline
-      def setAnimationDuration(value: ICSSRule | String): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      inline def setAnimationDuration(value: ICSSRule | String): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
       
-      @scala.inline
-      def setAnimationFillMode(value: ICSSRule | none | forwards | backwards | both | String): Self = StObject.set(x, "animationFillMode", value.asInstanceOf[js.Any])
+      inline def setAnimationFillMode(value: ICSSRule | none | forwards | backwards | both | String): Self = StObject.set(x, "animationFillMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationFillModeUndefined: Self = StObject.set(x, "animationFillMode", js.undefined)
+      inline def setAnimationFillModeUndefined: Self = StObject.set(x, "animationFillMode", js.undefined)
       
-      @scala.inline
-      def setAnimationIterationCount(value: ICSSRule | String): Self = StObject.set(x, "animationIterationCount", value.asInstanceOf[js.Any])
+      inline def setAnimationIterationCount(value: ICSSRule | String): Self = StObject.set(x, "animationIterationCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationIterationCountUndefined: Self = StObject.set(x, "animationIterationCount", js.undefined)
+      inline def setAnimationIterationCountUndefined: Self = StObject.set(x, "animationIterationCount", js.undefined)
       
-      @scala.inline
-      def setAnimationName(value: ICSSRule | String): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
+      inline def setAnimationName(value: ICSSRule | String): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
+      inline def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
       
-      @scala.inline
-      def setAnimationPlayState(value: ICSSRule | String): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
+      inline def setAnimationPlayState(value: ICSSRule | String): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationPlayStateUndefined: Self = StObject.set(x, "animationPlayState", js.undefined)
+      inline def setAnimationPlayStateUndefined: Self = StObject.set(x, "animationPlayState", js.undefined)
       
-      @scala.inline
-      def setAnimationTimingFunction(value: ICSSRule | String): Self = StObject.set(x, "animationTimingFunction", value.asInstanceOf[js.Any])
+      inline def setAnimationTimingFunction(value: ICSSRule | String): Self = StObject.set(x, "animationTimingFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationTimingFunctionUndefined: Self = StObject.set(x, "animationTimingFunction", js.undefined)
+      inline def setAnimationTimingFunctionUndefined: Self = StObject.set(x, "animationTimingFunction", js.undefined)
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setAppearance(value: ICSSRule | String): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
+      inline def setAppearance(value: ICSSRule | String): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
+      inline def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
       
-      @scala.inline
-      def setBackdropFilter(value: ICSSRule | String): Self = StObject.set(x, "backdropFilter", value.asInstanceOf[js.Any])
+      inline def setBackdropFilter(value: ICSSRule | String): Self = StObject.set(x, "backdropFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropFilterUndefined: Self = StObject.set(x, "backdropFilter", js.undefined)
+      inline def setBackdropFilterUndefined: Self = StObject.set(x, "backdropFilter", js.undefined)
       
-      @scala.inline
-      def setBackfaceVisibility(value: ICSSRule | String): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
+      inline def setBackfaceVisibility(value: ICSSRule | String): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackfaceVisibilityUndefined: Self = StObject.set(x, "backfaceVisibility", js.undefined)
+      inline def setBackfaceVisibilityUndefined: Self = StObject.set(x, "backfaceVisibility", js.undefined)
       
-      @scala.inline
-      def setBackground(value: ICSSRule | String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: ICSSRule | String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundAttachment(value: ICSSRule | scroll | fixed | local | String): Self = StObject.set(x, "backgroundAttachment", value.asInstanceOf[js.Any])
+      inline def setBackgroundAttachment(value: ICSSRule | scroll | fixed | local | String): Self = StObject.set(x, "backgroundAttachment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundAttachmentUndefined: Self = StObject.set(x, "backgroundAttachment", js.undefined)
+      inline def setBackgroundAttachmentUndefined: Self = StObject.set(x, "backgroundAttachment", js.undefined)
       
-      @scala.inline
-      def setBackgroundBlendMode(value: ICSSRule | String): Self = StObject.set(x, "backgroundBlendMode", value.asInstanceOf[js.Any])
+      inline def setBackgroundBlendMode(value: ICSSRule | String): Self = StObject.set(x, "backgroundBlendMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundBlendModeUndefined: Self = StObject.set(x, "backgroundBlendMode", js.undefined)
+      inline def setBackgroundBlendModeUndefined: Self = StObject.set(x, "backgroundBlendMode", js.undefined)
       
-      @scala.inline
-      def setBackgroundClip(value: ICSSRule | `border-box` | `padding-box` | `content-box` | text | String): Self = StObject.set(x, "backgroundClip", value.asInstanceOf[js.Any])
+      inline def setBackgroundClip(value: ICSSRule | `border-box` | `padding-box` | `content-box` | text | String): Self = StObject.set(x, "backgroundClip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundClipUndefined: Self = StObject.set(x, "backgroundClip", js.undefined)
+      inline def setBackgroundClipUndefined: Self = StObject.set(x, "backgroundClip", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(value: ICSSRule | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: ICSSRule | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setBackgroundComposite(value: ICSSRule | String): Self = StObject.set(x, "backgroundComposite", value.asInstanceOf[js.Any])
+      inline def setBackgroundComposite(value: ICSSRule | String): Self = StObject.set(x, "backgroundComposite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundCompositeUndefined: Self = StObject.set(x, "backgroundComposite", js.undefined)
+      inline def setBackgroundCompositeUndefined: Self = StObject.set(x, "backgroundComposite", js.undefined)
       
-      @scala.inline
-      def setBackgroundImage(value: ICSSRule | String): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
+      inline def setBackgroundImage(value: ICSSRule | String): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
+      inline def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
       
-      @scala.inline
-      def setBackgroundOrigin(value: ICSSRule | String): Self = StObject.set(x, "backgroundOrigin", value.asInstanceOf[js.Any])
+      inline def setBackgroundOrigin(value: ICSSRule | String): Self = StObject.set(x, "backgroundOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundOriginUndefined: Self = StObject.set(x, "backgroundOrigin", js.undefined)
+      inline def setBackgroundOriginUndefined: Self = StObject.set(x, "backgroundOrigin", js.undefined)
       
-      @scala.inline
-      def setBackgroundPosition(value: ICSSRule | String): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
+      inline def setBackgroundPosition(value: ICSSRule | String): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
+      inline def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
       
-      @scala.inline
-      def setBackgroundRepeat(value: ICSSRule | String): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
+      inline def setBackgroundRepeat(value: ICSSRule | String): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
+      inline def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
       
-      @scala.inline
-      def setBackgroundSize(value: ICSSRule | String): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
+      inline def setBackgroundSize(value: ICSSRule | String): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
+      inline def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setBorder(value: ICSSRule | `0` | String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      inline def setBorder(value: ICSSRule | `0` | String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderBottom(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+      inline def setBorderBottom(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderBottomColor(value: ICSSRule | String): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
+      inline def setBorderBottomColor(value: ICSSRule | String): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
+      inline def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
       
-      @scala.inline
-      def setBorderBottomLeftRadius(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
+      inline def setBorderBottomLeftRadius(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "borderBottomLeftRadius", js.undefined)
+      inline def setBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "borderBottomLeftRadius", js.undefined)
       
-      @scala.inline
-      def setBorderBottomRightRadius(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
+      inline def setBorderBottomRightRadius(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderBottomRightRadiusUndefined: Self = StObject.set(x, "borderBottomRightRadius", js.undefined)
+      inline def setBorderBottomRightRadiusUndefined: Self = StObject.set(x, "borderBottomRightRadius", js.undefined)
       
-      @scala.inline
-      def setBorderBottomStyle(value: ICSSRule | String): Self = StObject.set(x, "borderBottomStyle", value.asInstanceOf[js.Any])
+      inline def setBorderBottomStyle(value: ICSSRule | String): Self = StObject.set(x, "borderBottomStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderBottomStyleUndefined: Self = StObject.set(x, "borderBottomStyle", js.undefined)
+      inline def setBorderBottomStyleUndefined: Self = StObject.set(x, "borderBottomStyle", js.undefined)
       
-      @scala.inline
-      def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
+      inline def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
       
-      @scala.inline
-      def setBorderBottomWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderBottomWidth", value.asInstanceOf[js.Any])
+      inline def setBorderBottomWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderBottomWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderBottomWidthUndefined: Self = StObject.set(x, "borderBottomWidth", js.undefined)
+      inline def setBorderBottomWidthUndefined: Self = StObject.set(x, "borderBottomWidth", js.undefined)
       
-      @scala.inline
-      def setBorderCollapse(value: ICSSRule | String): Self = StObject.set(x, "borderCollapse", value.asInstanceOf[js.Any])
+      inline def setBorderCollapse(value: ICSSRule | String): Self = StObject.set(x, "borderCollapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderCollapseUndefined: Self = StObject.set(x, "borderCollapse", js.undefined)
+      inline def setBorderCollapseUndefined: Self = StObject.set(x, "borderCollapse", js.undefined)
       
-      @scala.inline
-      def setBorderColor(value: ICSSRule | String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+      inline def setBorderColor(value: ICSSRule | String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+      inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
-      @scala.inline
-      def setBorderCornerShape(value: ICSSRule | String): Self = StObject.set(x, "borderCornerShape", value.asInstanceOf[js.Any])
+      inline def setBorderCornerShape(value: ICSSRule | String): Self = StObject.set(x, "borderCornerShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderCornerShapeUndefined: Self = StObject.set(x, "borderCornerShape", js.undefined)
+      inline def setBorderCornerShapeUndefined: Self = StObject.set(x, "borderCornerShape", js.undefined)
       
-      @scala.inline
-      def setBorderImageSource(value: ICSSRule | String): Self = StObject.set(x, "borderImageSource", value.asInstanceOf[js.Any])
+      inline def setBorderImageSource(value: ICSSRule | String): Self = StObject.set(x, "borderImageSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderImageSourceUndefined: Self = StObject.set(x, "borderImageSource", js.undefined)
+      inline def setBorderImageSourceUndefined: Self = StObject.set(x, "borderImageSource", js.undefined)
       
-      @scala.inline
-      def setBorderImageWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderImageWidth", value.asInstanceOf[js.Any])
+      inline def setBorderImageWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderImageWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderImageWidthUndefined: Self = StObject.set(x, "borderImageWidth", js.undefined)
+      inline def setBorderImageWidthUndefined: Self = StObject.set(x, "borderImageWidth", js.undefined)
       
-      @scala.inline
-      def setBorderLeft(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
+      inline def setBorderLeft(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderLeftColor(value: ICSSRule | String): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
+      inline def setBorderLeftColor(value: ICSSRule | String): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
+      inline def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
       
-      @scala.inline
-      def setBorderLeftStyle(value: ICSSRule | String): Self = StObject.set(x, "borderLeftStyle", value.asInstanceOf[js.Any])
+      inline def setBorderLeftStyle(value: ICSSRule | String): Self = StObject.set(x, "borderLeftStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderLeftStyleUndefined: Self = StObject.set(x, "borderLeftStyle", js.undefined)
+      inline def setBorderLeftStyleUndefined: Self = StObject.set(x, "borderLeftStyle", js.undefined)
       
-      @scala.inline
-      def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
+      inline def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
       
-      @scala.inline
-      def setBorderLeftWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderLeftWidth", value.asInstanceOf[js.Any])
+      inline def setBorderLeftWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderLeftWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderLeftWidthUndefined: Self = StObject.set(x, "borderLeftWidth", js.undefined)
+      inline def setBorderLeftWidthUndefined: Self = StObject.set(x, "borderLeftWidth", js.undefined)
       
-      @scala.inline
-      def setBorderRadius(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+      inline def setBorderRadius(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+      inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
       
-      @scala.inline
-      def setBorderRight(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
+      inline def setBorderRight(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderRightColor(value: ICSSRule | String): Self = StObject.set(x, "borderRightColor", value.asInstanceOf[js.Any])
+      inline def setBorderRightColor(value: ICSSRule | String): Self = StObject.set(x, "borderRightColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderRightColorUndefined: Self = StObject.set(x, "borderRightColor", js.undefined)
+      inline def setBorderRightColorUndefined: Self = StObject.set(x, "borderRightColor", js.undefined)
       
-      @scala.inline
-      def setBorderRightStyle(value: ICSSRule | String): Self = StObject.set(x, "borderRightStyle", value.asInstanceOf[js.Any])
+      inline def setBorderRightStyle(value: ICSSRule | String): Self = StObject.set(x, "borderRightStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderRightStyleUndefined: Self = StObject.set(x, "borderRightStyle", js.undefined)
+      inline def setBorderRightStyleUndefined: Self = StObject.set(x, "borderRightStyle", js.undefined)
       
-      @scala.inline
-      def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
+      inline def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
       
-      @scala.inline
-      def setBorderRightWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderRightWidth", value.asInstanceOf[js.Any])
+      inline def setBorderRightWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderRightWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderRightWidthUndefined: Self = StObject.set(x, "borderRightWidth", js.undefined)
+      inline def setBorderRightWidthUndefined: Self = StObject.set(x, "borderRightWidth", js.undefined)
       
-      @scala.inline
-      def setBorderSpacing(value: ICSSRule | String): Self = StObject.set(x, "borderSpacing", value.asInstanceOf[js.Any])
+      inline def setBorderSpacing(value: ICSSRule | String): Self = StObject.set(x, "borderSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderSpacingUndefined: Self = StObject.set(x, "borderSpacing", js.undefined)
+      inline def setBorderSpacingUndefined: Self = StObject.set(x, "borderSpacing", js.undefined)
       
-      @scala.inline
-      def setBorderStyle(value: ICSSRule | String): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: ICSSRule | String): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+      inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
-      @scala.inline
-      def setBorderTop(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
+      inline def setBorderTop(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderTopColor(value: ICSSRule | String): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
+      inline def setBorderTopColor(value: ICSSRule | String): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
+      inline def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
       
-      @scala.inline
-      def setBorderTopLeftRadius(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderTopLeftRadius", value.asInstanceOf[js.Any])
+      inline def setBorderTopLeftRadius(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderTopLeftRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderTopLeftRadiusUndefined: Self = StObject.set(x, "borderTopLeftRadius", js.undefined)
+      inline def setBorderTopLeftRadiusUndefined: Self = StObject.set(x, "borderTopLeftRadius", js.undefined)
       
-      @scala.inline
-      def setBorderTopRightRadius(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderTopRightRadius", value.asInstanceOf[js.Any])
+      inline def setBorderTopRightRadius(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderTopRightRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderTopRightRadiusUndefined: Self = StObject.set(x, "borderTopRightRadius", js.undefined)
+      inline def setBorderTopRightRadiusUndefined: Self = StObject.set(x, "borderTopRightRadius", js.undefined)
       
-      @scala.inline
-      def setBorderTopStyle(value: ICSSRule | String): Self = StObject.set(x, "borderTopStyle", value.asInstanceOf[js.Any])
+      inline def setBorderTopStyle(value: ICSSRule | String): Self = StObject.set(x, "borderTopStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderTopStyleUndefined: Self = StObject.set(x, "borderTopStyle", js.undefined)
+      inline def setBorderTopStyleUndefined: Self = StObject.set(x, "borderTopStyle", js.undefined)
       
-      @scala.inline
-      def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
+      inline def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
       
-      @scala.inline
-      def setBorderTopWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
+      inline def setBorderTopWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderTopWidthUndefined: Self = StObject.set(x, "borderTopWidth", js.undefined)
+      inline def setBorderTopWidthUndefined: Self = StObject.set(x, "borderTopWidth", js.undefined)
       
-      @scala.inline
-      def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+      inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      @scala.inline
-      def setBorderWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+      inline def setBorderWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+      inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
       
-      @scala.inline
-      def setBottom(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setBoxDecorationBreak(value: ICSSRule | String): Self = StObject.set(x, "boxDecorationBreak", value.asInstanceOf[js.Any])
+      inline def setBoxDecorationBreak(value: ICSSRule | String): Self = StObject.set(x, "boxDecorationBreak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxDecorationBreakUndefined: Self = StObject.set(x, "boxDecorationBreak", js.undefined)
+      inline def setBoxDecorationBreakUndefined: Self = StObject.set(x, "boxDecorationBreak", js.undefined)
       
-      @scala.inline
-      def setBoxShadow(value: ICSSRule | String): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
+      inline def setBoxShadow(value: ICSSRule | String): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
+      inline def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
       
-      @scala.inline
-      def setBoxSizing(value: ICSSRule | `border-box` | `content-box` | String): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
+      inline def setBoxSizing(value: ICSSRule | `border-box` | `content-box` | String): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxSizingUndefined: Self = StObject.set(x, "boxSizing", js.undefined)
+      inline def setBoxSizingUndefined: Self = StObject.set(x, "boxSizing", js.undefined)
       
-      @scala.inline
-      def setBreakAfter(value: ICSSRule | String): Self = StObject.set(x, "breakAfter", value.asInstanceOf[js.Any])
+      inline def setBreakAfter(value: ICSSRule | String): Self = StObject.set(x, "breakAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakAfterUndefined: Self = StObject.set(x, "breakAfter", js.undefined)
+      inline def setBreakAfterUndefined: Self = StObject.set(x, "breakAfter", js.undefined)
       
-      @scala.inline
-      def setBreakBefore(value: ICSSRule | String): Self = StObject.set(x, "breakBefore", value.asInstanceOf[js.Any])
+      inline def setBreakBefore(value: ICSSRule | String): Self = StObject.set(x, "breakBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakBeforeUndefined: Self = StObject.set(x, "breakBefore", js.undefined)
+      inline def setBreakBeforeUndefined: Self = StObject.set(x, "breakBefore", js.undefined)
       
-      @scala.inline
-      def setBreakInside(value: ICSSRule | String): Self = StObject.set(x, "breakInside", value.asInstanceOf[js.Any])
+      inline def setBreakInside(value: ICSSRule | String): Self = StObject.set(x, "breakInside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakInsideUndefined: Self = StObject.set(x, "breakInside", js.undefined)
+      inline def setBreakInsideUndefined: Self = StObject.set(x, "breakInside", js.undefined)
       
-      @scala.inline
-      def setClear(value: ICSSRule | String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      inline def setClear(value: ICSSRule | String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+      inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
       
-      @scala.inline
-      def setClipRule(value: ICSSRule | String): Self = StObject.set(x, "clipRule", value.asInstanceOf[js.Any])
+      inline def setClipRule(value: ICSSRule | String): Self = StObject.set(x, "clipRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipRuleUndefined: Self = StObject.set(x, "clipRule", js.undefined)
+      inline def setClipRuleUndefined: Self = StObject.set(x, "clipRule", js.undefined)
       
-      @scala.inline
-      def setColor(value: ICSSRule | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ICSSRule | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setColumnCount(value: ICSSRule | Double | auto | String): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+      inline def setColumnCount(value: ICSSRule | Double | auto | String): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
+      inline def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
       
-      @scala.inline
-      def setColumnFill(value: ICSSRule | String): Self = StObject.set(x, "columnFill", value.asInstanceOf[js.Any])
+      inline def setColumnFill(value: ICSSRule | String): Self = StObject.set(x, "columnFill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnFillUndefined: Self = StObject.set(x, "columnFill", js.undefined)
+      inline def setColumnFillUndefined: Self = StObject.set(x, "columnFill", js.undefined)
       
-      @scala.inline
-      def setColumnGap(value: ICSSRule | String): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+      inline def setColumnGap(value: ICSSRule | String): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
+      inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
       
-      @scala.inline
-      def setColumnRule(value: ICSSRule | String): Self = StObject.set(x, "columnRule", value.asInstanceOf[js.Any])
+      inline def setColumnRule(value: ICSSRule | String): Self = StObject.set(x, "columnRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnRuleColor(value: ICSSRule | String): Self = StObject.set(x, "columnRuleColor", value.asInstanceOf[js.Any])
+      inline def setColumnRuleColor(value: ICSSRule | String): Self = StObject.set(x, "columnRuleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnRuleColorUndefined: Self = StObject.set(x, "columnRuleColor", js.undefined)
+      inline def setColumnRuleColorUndefined: Self = StObject.set(x, "columnRuleColor", js.undefined)
       
-      @scala.inline
-      def setColumnRuleUndefined: Self = StObject.set(x, "columnRule", js.undefined)
+      inline def setColumnRuleUndefined: Self = StObject.set(x, "columnRule", js.undefined)
       
-      @scala.inline
-      def setColumnRuleWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "columnRuleWidth", value.asInstanceOf[js.Any])
+      inline def setColumnRuleWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "columnRuleWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnRuleWidthUndefined: Self = StObject.set(x, "columnRuleWidth", js.undefined)
+      inline def setColumnRuleWidthUndefined: Self = StObject.set(x, "columnRuleWidth", js.undefined)
       
-      @scala.inline
-      def setColumnSpan(value: ICSSRule | String): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
+      inline def setColumnSpan(value: ICSSRule | String): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
+      inline def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
       
-      @scala.inline
-      def setColumnWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+      inline def setColumnWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+      inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
       
-      @scala.inline
-      def setColumns(value: ICSSRule | String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: ICSSRule | String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setCounterIncrement(value: ICSSRule | String): Self = StObject.set(x, "counterIncrement", value.asInstanceOf[js.Any])
+      inline def setCounterIncrement(value: ICSSRule | String): Self = StObject.set(x, "counterIncrement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCounterIncrementUndefined: Self = StObject.set(x, "counterIncrement", js.undefined)
+      inline def setCounterIncrementUndefined: Self = StObject.set(x, "counterIncrement", js.undefined)
       
-      @scala.inline
-      def setCounterReset(value: ICSSRule | String): Self = StObject.set(x, "counterReset", value.asInstanceOf[js.Any])
+      inline def setCounterReset(value: ICSSRule | String): Self = StObject.set(x, "counterReset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCounterResetUndefined: Self = StObject.set(x, "counterReset", js.undefined)
+      inline def setCounterResetUndefined: Self = StObject.set(x, "counterReset", js.undefined)
       
-      @scala.inline
-      def setCue(value: ICSSRule | String): Self = StObject.set(x, "cue", value.asInstanceOf[js.Any])
+      inline def setCue(value: ICSSRule | String): Self = StObject.set(x, "cue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCueAfter(value: ICSSRule | String): Self = StObject.set(x, "cueAfter", value.asInstanceOf[js.Any])
+      inline def setCueAfter(value: ICSSRule | String): Self = StObject.set(x, "cueAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCueAfterUndefined: Self = StObject.set(x, "cueAfter", js.undefined)
+      inline def setCueAfterUndefined: Self = StObject.set(x, "cueAfter", js.undefined)
       
-      @scala.inline
-      def setCueUndefined: Self = StObject.set(x, "cue", js.undefined)
+      inline def setCueUndefined: Self = StObject.set(x, "cue", js.undefined)
       
-      @scala.inline
-      def setCursor(value: ICSSRule | String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: ICSSRule | String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+      inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
       
-      @scala.inline
-      def setDirection(value: ICSSRule | String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: ICSSRule | String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setDisplay(value: ICSSRule | ICSSDisplayRule | String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: ICSSRule | ICSSDisplayRule | String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setFill(value: ICSSRule | String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: ICSSRule | String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillOpacity(value: ICSSRule | Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+      inline def setFillOpacity(value: ICSSRule | Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+      inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
       
-      @scala.inline
-      def setFillRule(value: ICSSRule | String): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
+      inline def setFillRule(value: ICSSRule | String): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
+      inline def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setFilter(value: ICSSRule | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: ICSSRule | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFlex(value: ICSSRule | String | Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+      inline def setFlex(value: ICSSRule | String | Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexBasis(value: ICSSRule | String | Double): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
+      inline def setFlexBasis(value: ICSSRule | String | Double): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
+      inline def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
       
-      @scala.inline
-      def setFlexDirection(value: ICSSRule | row | `row-reverse` | column | `column-reverse` | String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+      inline def setFlexDirection(value: ICSSRule | row | `row-reverse` | column | `column-reverse` | String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
+      inline def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
       
-      @scala.inline
-      def setFlexFlow(value: ICSSRule | String): Self = StObject.set(x, "flexFlow", value.asInstanceOf[js.Any])
+      inline def setFlexFlow(value: ICSSRule | String): Self = StObject.set(x, "flexFlow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexFlowUndefined: Self = StObject.set(x, "flexFlow", js.undefined)
+      inline def setFlexFlowUndefined: Self = StObject.set(x, "flexFlow", js.undefined)
       
-      @scala.inline
-      def setFlexGrow(value: ICSSRule | Double | String): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
+      inline def setFlexGrow(value: ICSSRule | Double | String): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
+      inline def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
       
-      @scala.inline
-      def setFlexShrink(value: ICSSRule | Double | String): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
+      inline def setFlexShrink(value: ICSSRule | Double | String): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
+      inline def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
       
-      @scala.inline
-      def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
+      inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
       
-      @scala.inline
-      def setFlexWrap(value: ICSSRule | nowrap | wrap | `wrap-reverse` | String): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
+      inline def setFlexWrap(value: ICSSRule | nowrap | wrap | `wrap-reverse` | String): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
+      inline def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
       
-      @scala.inline
-      def setFloat(value: ICSSRule | String): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+      inline def setFloat(value: ICSSRule | String): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
+      inline def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
       
-      @scala.inline
-      def setFlowFrom(value: ICSSRule | String): Self = StObject.set(x, "flowFrom", value.asInstanceOf[js.Any])
+      inline def setFlowFrom(value: ICSSRule | String): Self = StObject.set(x, "flowFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowFromUndefined: Self = StObject.set(x, "flowFrom", js.undefined)
+      inline def setFlowFromUndefined: Self = StObject.set(x, "flowFrom", js.undefined)
       
-      @scala.inline
-      def setForcedColorAdjust(value: auto | none | String): Self = StObject.set(x, "forcedColorAdjust", value.asInstanceOf[js.Any])
+      inline def setForcedColorAdjust(value: auto | none | String): Self = StObject.set(x, "forcedColorAdjust", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForcedColorAdjustUndefined: Self = StObject.set(x, "forcedColorAdjust", js.undefined)
+      inline def setForcedColorAdjustUndefined: Self = StObject.set(x, "forcedColorAdjust", js.undefined)
       
-      @scala.inline
-      def setGridArea(value: ICSSRule | String): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
+      inline def setGridArea(value: ICSSRule | String): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
+      inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
       
-      @scala.inline
-      def setGridAutoColumns(value: ICSSRule | String): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
+      inline def setGridAutoColumns(value: ICSSRule | String): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridAutoColumnsUndefined: Self = StObject.set(x, "gridAutoColumns", js.undefined)
+      inline def setGridAutoColumnsUndefined: Self = StObject.set(x, "gridAutoColumns", js.undefined)
       
-      @scala.inline
-      def setGridAutoFlow(value: ICSSRule | String): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
+      inline def setGridAutoFlow(value: ICSSRule | String): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
+      inline def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
       
-      @scala.inline
-      def setGridAutoRows(value: ICSSRule | String): Self = StObject.set(x, "gridAutoRows", value.asInstanceOf[js.Any])
+      inline def setGridAutoRows(value: ICSSRule | String): Self = StObject.set(x, "gridAutoRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridAutoRowsUndefined: Self = StObject.set(x, "gridAutoRows", js.undefined)
+      inline def setGridAutoRowsUndefined: Self = StObject.set(x, "gridAutoRows", js.undefined)
       
-      @scala.inline
-      def setGridColumn(value: ICSSRule | String): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
+      inline def setGridColumn(value: ICSSRule | String): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridColumnEnd(value: ICSSRule | String): Self = StObject.set(x, "gridColumnEnd", value.asInstanceOf[js.Any])
+      inline def setGridColumnEnd(value: ICSSRule | String): Self = StObject.set(x, "gridColumnEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridColumnEndUndefined: Self = StObject.set(x, "gridColumnEnd", js.undefined)
+      inline def setGridColumnEndUndefined: Self = StObject.set(x, "gridColumnEnd", js.undefined)
       
-      @scala.inline
-      def setGridColumnGap(value: ICSSRule | String): Self = StObject.set(x, "gridColumnGap", value.asInstanceOf[js.Any])
+      inline def setGridColumnGap(value: ICSSRule | String): Self = StObject.set(x, "gridColumnGap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridColumnGapUndefined: Self = StObject.set(x, "gridColumnGap", js.undefined)
+      inline def setGridColumnGapUndefined: Self = StObject.set(x, "gridColumnGap", js.undefined)
       
-      @scala.inline
-      def setGridColumnStart(value: ICSSRule | String): Self = StObject.set(x, "gridColumnStart", value.asInstanceOf[js.Any])
+      inline def setGridColumnStart(value: ICSSRule | String): Self = StObject.set(x, "gridColumnStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridColumnStartUndefined: Self = StObject.set(x, "gridColumnStart", js.undefined)
+      inline def setGridColumnStartUndefined: Self = StObject.set(x, "gridColumnStart", js.undefined)
       
-      @scala.inline
-      def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
+      inline def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
       
-      @scala.inline
-      def setGridGap(value: ICSSRule | String): Self = StObject.set(x, "gridGap", value.asInstanceOf[js.Any])
+      inline def setGridGap(value: ICSSRule | String): Self = StObject.set(x, "gridGap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridGapUndefined: Self = StObject.set(x, "gridGap", js.undefined)
+      inline def setGridGapUndefined: Self = StObject.set(x, "gridGap", js.undefined)
       
-      @scala.inline
-      def setGridRow(value: ICSSRule | String): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
+      inline def setGridRow(value: ICSSRule | String): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridRowEnd(value: ICSSRule | String): Self = StObject.set(x, "gridRowEnd", value.asInstanceOf[js.Any])
+      inline def setGridRowEnd(value: ICSSRule | String): Self = StObject.set(x, "gridRowEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridRowEndUndefined: Self = StObject.set(x, "gridRowEnd", js.undefined)
+      inline def setGridRowEndUndefined: Self = StObject.set(x, "gridRowEnd", js.undefined)
       
-      @scala.inline
-      def setGridRowGap(value: ICSSRule | String): Self = StObject.set(x, "gridRowGap", value.asInstanceOf[js.Any])
+      inline def setGridRowGap(value: ICSSRule | String): Self = StObject.set(x, "gridRowGap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridRowGapUndefined: Self = StObject.set(x, "gridRowGap", js.undefined)
+      inline def setGridRowGapUndefined: Self = StObject.set(x, "gridRowGap", js.undefined)
       
-      @scala.inline
-      def setGridRowPosition(value: ICSSRule | String): Self = StObject.set(x, "gridRowPosition", value.asInstanceOf[js.Any])
+      inline def setGridRowPosition(value: ICSSRule | String): Self = StObject.set(x, "gridRowPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridRowPositionUndefined: Self = StObject.set(x, "gridRowPosition", js.undefined)
+      inline def setGridRowPositionUndefined: Self = StObject.set(x, "gridRowPosition", js.undefined)
       
-      @scala.inline
-      def setGridRowStart(value: ICSSRule | String): Self = StObject.set(x, "gridRowStart", value.asInstanceOf[js.Any])
+      inline def setGridRowStart(value: ICSSRule | String): Self = StObject.set(x, "gridRowStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridRowStartUndefined: Self = StObject.set(x, "gridRowStart", js.undefined)
+      inline def setGridRowStartUndefined: Self = StObject.set(x, "gridRowStart", js.undefined)
       
-      @scala.inline
-      def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
+      inline def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
       
-      @scala.inline
-      def setGridTemplate(value: ICSSRule | String): Self = StObject.set(x, "gridTemplate", value.asInstanceOf[js.Any])
+      inline def setGridTemplate(value: ICSSRule | String): Self = StObject.set(x, "gridTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridTemplateAreas(value: ICSSRule | String): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
+      inline def setGridTemplateAreas(value: ICSSRule | String): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
+      inline def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
       
-      @scala.inline
-      def setGridTemplateColumns(value: ICSSRule | String): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
+      inline def setGridTemplateColumns(value: ICSSRule | String): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridTemplateColumnsUndefined: Self = StObject.set(x, "gridTemplateColumns", js.undefined)
+      inline def setGridTemplateColumnsUndefined: Self = StObject.set(x, "gridTemplateColumns", js.undefined)
       
-      @scala.inline
-      def setGridTemplateRows(value: ICSSRule | String): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
+      inline def setGridTemplateRows(value: ICSSRule | String): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridTemplateRowsUndefined: Self = StObject.set(x, "gridTemplateRows", js.undefined)
+      inline def setGridTemplateRowsUndefined: Self = StObject.set(x, "gridTemplateRows", js.undefined)
       
-      @scala.inline
-      def setGridTemplateUndefined: Self = StObject.set(x, "gridTemplate", js.undefined)
+      inline def setGridTemplateUndefined: Self = StObject.set(x, "gridTemplate", js.undefined)
       
-      @scala.inline
-      def setHeight(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHyphenateLimitChars(value: ICSSRule | String): Self = StObject.set(x, "hyphenateLimitChars", value.asInstanceOf[js.Any])
+      inline def setHyphenateLimitChars(value: ICSSRule | String): Self = StObject.set(x, "hyphenateLimitChars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHyphenateLimitCharsUndefined: Self = StObject.set(x, "hyphenateLimitChars", js.undefined)
+      inline def setHyphenateLimitCharsUndefined: Self = StObject.set(x, "hyphenateLimitChars", js.undefined)
       
-      @scala.inline
-      def setHyphenateLimitLines(value: ICSSRule | String): Self = StObject.set(x, "hyphenateLimitLines", value.asInstanceOf[js.Any])
+      inline def setHyphenateLimitLines(value: ICSSRule | String): Self = StObject.set(x, "hyphenateLimitLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHyphenateLimitLinesUndefined: Self = StObject.set(x, "hyphenateLimitLines", js.undefined)
+      inline def setHyphenateLimitLinesUndefined: Self = StObject.set(x, "hyphenateLimitLines", js.undefined)
       
-      @scala.inline
-      def setHyphenateLimitZone(value: ICSSRule | String): Self = StObject.set(x, "hyphenateLimitZone", value.asInstanceOf[js.Any])
+      inline def setHyphenateLimitZone(value: ICSSRule | String): Self = StObject.set(x, "hyphenateLimitZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHyphenateLimitZoneUndefined: Self = StObject.set(x, "hyphenateLimitZone", js.undefined)
+      inline def setHyphenateLimitZoneUndefined: Self = StObject.set(x, "hyphenateLimitZone", js.undefined)
       
-      @scala.inline
-      def setHyphens(value: ICSSRule | String): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
+      inline def setHyphens(value: ICSSRule | String): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHyphensUndefined: Self = StObject.set(x, "hyphens", js.undefined)
+      inline def setHyphensUndefined: Self = StObject.set(x, "hyphens", js.undefined)
       
-      @scala.inline
-      def setJustifyContent(
+      inline def setJustifyContent(
         value: ICSSRule | `flex-start` | `flex-end` | center | `space-between` | `space-around` | `space-evenly` | stretch | String
       ): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
+      inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
       
-      @scala.inline
-      def setJustifySelf(
+      inline def setJustifySelf(
         value: ICSSRule | auto | normal | stretch | ICSSBaselinePositionRule | ICSSOverflowAndSelfPositionRule | left | right | (`safe left`) | (`safe right`) | (`unsafe left`) | (`unsafe right`) | String
       ): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJustifySelfUndefined: Self = StObject.set(x, "justifySelf", js.undefined)
+      inline def setJustifySelfUndefined: Self = StObject.set(x, "justifySelf", js.undefined)
       
-      @scala.inline
-      def setLeft(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setLetterSpacing(value: ICSSRule | String): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+      inline def setLetterSpacing(value: ICSSRule | String): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+      inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
       
-      @scala.inline
-      def setLineHeight(value: ICSSRule | normal | ICSSPixelUnitRule | ICSSPercentageRule): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+      inline def setLineHeight(value: ICSSRule | normal | ICSSPixelUnitRule | ICSSPercentageRule): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+      inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
       
-      @scala.inline
-      def setListStyle(value: ICSSRule | String): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
+      inline def setListStyle(value: ICSSRule | String): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListStyleImage(value: ICSSRule | String): Self = StObject.set(x, "listStyleImage", value.asInstanceOf[js.Any])
+      inline def setListStyleImage(value: ICSSRule | String): Self = StObject.set(x, "listStyleImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListStyleImageUndefined: Self = StObject.set(x, "listStyleImage", js.undefined)
+      inline def setListStyleImageUndefined: Self = StObject.set(x, "listStyleImage", js.undefined)
       
-      @scala.inline
-      def setListStylePosition(value: ICSSRule | String): Self = StObject.set(x, "listStylePosition", value.asInstanceOf[js.Any])
+      inline def setListStylePosition(value: ICSSRule | String): Self = StObject.set(x, "listStylePosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListStylePositionUndefined: Self = StObject.set(x, "listStylePosition", js.undefined)
+      inline def setListStylePositionUndefined: Self = StObject.set(x, "listStylePosition", js.undefined)
       
-      @scala.inline
-      def setListStyleType(value: ICSSRule | String): Self = StObject.set(x, "listStyleType", value.asInstanceOf[js.Any])
+      inline def setListStyleType(value: ICSSRule | String): Self = StObject.set(x, "listStyleType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListStyleTypeUndefined: Self = StObject.set(x, "listStyleType", js.undefined)
+      inline def setListStyleTypeUndefined: Self = StObject.set(x, "listStyleType", js.undefined)
       
-      @scala.inline
-      def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
+      inline def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
       
-      @scala.inline
-      def setMargin(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginBottom(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      inline def setMarginBottom(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+      inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
       
-      @scala.inline
-      def setMarginLeft(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      inline def setMarginLeft(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+      inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
       
-      @scala.inline
-      def setMarginRight(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      inline def setMarginRight(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+      inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
       
-      @scala.inline
-      def setMarginTop(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+      inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setMarqueeDirection(value: ICSSRule | String): Self = StObject.set(x, "marqueeDirection", value.asInstanceOf[js.Any])
+      inline def setMarqueeDirection(value: ICSSRule | String): Self = StObject.set(x, "marqueeDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarqueeDirectionUndefined: Self = StObject.set(x, "marqueeDirection", js.undefined)
+      inline def setMarqueeDirectionUndefined: Self = StObject.set(x, "marqueeDirection", js.undefined)
       
-      @scala.inline
-      def setMarqueeStyle(value: ICSSRule | String): Self = StObject.set(x, "marqueeStyle", value.asInstanceOf[js.Any])
+      inline def setMarqueeStyle(value: ICSSRule | String): Self = StObject.set(x, "marqueeStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarqueeStyleUndefined: Self = StObject.set(x, "marqueeStyle", js.undefined)
+      inline def setMarqueeStyleUndefined: Self = StObject.set(x, "marqueeStyle", js.undefined)
       
-      @scala.inline
-      def setMask(value: ICSSRule | String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: ICSSRule | String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskBorder(value: ICSSRule | String): Self = StObject.set(x, "maskBorder", value.asInstanceOf[js.Any])
+      inline def setMaskBorder(value: ICSSRule | String): Self = StObject.set(x, "maskBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskBorderRepeat(value: ICSSRule | String): Self = StObject.set(x, "maskBorderRepeat", value.asInstanceOf[js.Any])
+      inline def setMaskBorderRepeat(value: ICSSRule | String): Self = StObject.set(x, "maskBorderRepeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskBorderRepeatUndefined: Self = StObject.set(x, "maskBorderRepeat", js.undefined)
+      inline def setMaskBorderRepeatUndefined: Self = StObject.set(x, "maskBorderRepeat", js.undefined)
       
-      @scala.inline
-      def setMaskBorderSlice(value: ICSSRule | String): Self = StObject.set(x, "maskBorderSlice", value.asInstanceOf[js.Any])
+      inline def setMaskBorderSlice(value: ICSSRule | String): Self = StObject.set(x, "maskBorderSlice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskBorderSliceUndefined: Self = StObject.set(x, "maskBorderSlice", js.undefined)
+      inline def setMaskBorderSliceUndefined: Self = StObject.set(x, "maskBorderSlice", js.undefined)
       
-      @scala.inline
-      def setMaskBorderSource(value: ICSSRule | String): Self = StObject.set(x, "maskBorderSource", value.asInstanceOf[js.Any])
+      inline def setMaskBorderSource(value: ICSSRule | String): Self = StObject.set(x, "maskBorderSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskBorderSourceUndefined: Self = StObject.set(x, "maskBorderSource", js.undefined)
+      inline def setMaskBorderSourceUndefined: Self = StObject.set(x, "maskBorderSource", js.undefined)
       
-      @scala.inline
-      def setMaskBorderUndefined: Self = StObject.set(x, "maskBorder", js.undefined)
+      inline def setMaskBorderUndefined: Self = StObject.set(x, "maskBorder", js.undefined)
       
-      @scala.inline
-      def setMaskBorderWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "maskBorderWidth", value.asInstanceOf[js.Any])
+      inline def setMaskBorderWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "maskBorderWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskBorderWidthUndefined: Self = StObject.set(x, "maskBorderWidth", js.undefined)
+      inline def setMaskBorderWidthUndefined: Self = StObject.set(x, "maskBorderWidth", js.undefined)
       
-      @scala.inline
-      def setMaskClip(value: ICSSRule | String): Self = StObject.set(x, "maskClip", value.asInstanceOf[js.Any])
+      inline def setMaskClip(value: ICSSRule | String): Self = StObject.set(x, "maskClip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskClipUndefined: Self = StObject.set(x, "maskClip", js.undefined)
+      inline def setMaskClipUndefined: Self = StObject.set(x, "maskClip", js.undefined)
       
-      @scala.inline
-      def setMaskOrigin(value: ICSSRule | String): Self = StObject.set(x, "maskOrigin", value.asInstanceOf[js.Any])
+      inline def setMaskOrigin(value: ICSSRule | String): Self = StObject.set(x, "maskOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskOriginUndefined: Self = StObject.set(x, "maskOrigin", js.undefined)
+      inline def setMaskOriginUndefined: Self = StObject.set(x, "maskOrigin", js.undefined)
       
-      @scala.inline
-      def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
       
-      @scala.inline
-      def setMaxFontSize(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "maxFontSize", value.asInstanceOf[js.Any])
+      inline def setMaxFontSize(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "maxFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFontSizeUndefined: Self = StObject.set(x, "maxFontSize", js.undefined)
+      inline def setMaxFontSizeUndefined: Self = StObject.set(x, "maxFontSize", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinHeight(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+      inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setMixBlendMode(value: ICSSRule | IMixBlendModes | String): Self = StObject.set(x, "mixBlendMode", value.asInstanceOf[js.Any])
+      inline def setMixBlendMode(value: ICSSRule | IMixBlendModes | String): Self = StObject.set(x, "mixBlendMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMixBlendModeUndefined: Self = StObject.set(x, "mixBlendMode", js.undefined)
+      inline def setMixBlendModeUndefined: Self = StObject.set(x, "mixBlendMode", js.undefined)
       
-      @scala.inline
-      def setMozOsxFontSmoothing(value: none | antialiased | grayscale | `subpixel-antialiased` | String): Self = StObject.set(x, "MozOsxFontSmoothing", value.asInstanceOf[js.Any])
+      inline def setMozOsxFontSmoothing(value: none | antialiased | grayscale | `subpixel-antialiased` | String): Self = StObject.set(x, "MozOsxFontSmoothing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMozOsxFontSmoothingUndefined: Self = StObject.set(x, "MozOsxFontSmoothing", js.undefined)
+      inline def setMozOsxFontSmoothingUndefined: Self = StObject.set(x, "MozOsxFontSmoothing", js.undefined)
       
-      @scala.inline
-      def setMsHighContrastAdjust(value: ICSSRule | String): Self = StObject.set(x, "MsHighContrastAdjust", value.asInstanceOf[js.Any])
+      inline def setMsHighContrastAdjust(value: ICSSRule | String): Self = StObject.set(x, "MsHighContrastAdjust", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsHighContrastAdjustUndefined: Self = StObject.set(x, "MsHighContrastAdjust", js.undefined)
+      inline def setMsHighContrastAdjustUndefined: Self = StObject.set(x, "MsHighContrastAdjust", js.undefined)
       
-      @scala.inline
-      def setMsOverflowStyle(value: auto | none | scrollbar | `-ms-autohiding-scrollbar` | String): Self = StObject.set(x, "MsOverflowStyle", value.asInstanceOf[js.Any])
+      inline def setMsOverflowStyle(value: auto | none | scrollbar | `-ms-autohiding-scrollbar` | String): Self = StObject.set(x, "MsOverflowStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsOverflowStyleUndefined: Self = StObject.set(x, "MsOverflowStyle", js.undefined)
+      inline def setMsOverflowStyleUndefined: Self = StObject.set(x, "MsOverflowStyle", js.undefined)
       
-      @scala.inline
-      def setObjectFit(value: ICSSRule | cover | contain | fill | none | String): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
+      inline def setObjectFit(value: ICSSRule | cover | contain | fill | none | String): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
+      inline def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: ICSSRule | Double | String): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: ICSSRule | Double | String): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setOrder(value: ICSSRule | Double | String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: ICSSRule | Double | String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setOrphans(value: ICSSRule | Double | String): Self = StObject.set(x, "orphans", value.asInstanceOf[js.Any])
+      inline def setOrphans(value: ICSSRule | Double | String): Self = StObject.set(x, "orphans", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrphansUndefined: Self = StObject.set(x, "orphans", js.undefined)
+      inline def setOrphansUndefined: Self = StObject.set(x, "orphans", js.undefined)
       
-      @scala.inline
-      def setOutline(value: ICSSRule | `0` | String): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+      inline def setOutline(value: ICSSRule | `0` | String): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineColor(value: ICSSRule | String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+      inline def setOutlineColor(value: ICSSRule | String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
+      inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
       
-      @scala.inline
-      def setOutlineOffset(value: ICSSRule | String): Self = StObject.set(x, "outlineOffset", value.asInstanceOf[js.Any])
+      inline def setOutlineOffset(value: ICSSRule | String): Self = StObject.set(x, "outlineOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineOffsetUndefined: Self = StObject.set(x, "outlineOffset", js.undefined)
+      inline def setOutlineOffsetUndefined: Self = StObject.set(x, "outlineOffset", js.undefined)
       
-      @scala.inline
-      def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+      inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
       
-      @scala.inline
-      def setOverflow(value: ICSSRule | auto | hidden | scroll | visible): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: ICSSRule | auto | hidden | scroll | visible): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowStyle(value: ICSSRule | String): Self = StObject.set(x, "overflowStyle", value.asInstanceOf[js.Any])
+      inline def setOverflowStyle(value: ICSSRule | String): Self = StObject.set(x, "overflowStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowStyleUndefined: Self = StObject.set(x, "overflowStyle", js.undefined)
+      inline def setOverflowStyleUndefined: Self = StObject.set(x, "overflowStyle", js.undefined)
       
-      @scala.inline
-      def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+      inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
-      @scala.inline
-      def setOverflowWrap(value: ICSSRule | normal | `break-word` | String): Self = StObject.set(x, "overflowWrap", value.asInstanceOf[js.Any])
+      inline def setOverflowWrap(value: ICSSRule | normal | `break-word` | String): Self = StObject.set(x, "overflowWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowWrapUndefined: Self = StObject.set(x, "overflowWrap", js.undefined)
+      inline def setOverflowWrapUndefined: Self = StObject.set(x, "overflowWrap", js.undefined)
       
-      @scala.inline
-      def setOverflowX(value: ICSSRule | auto | hidden | scroll | visible | String): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
+      inline def setOverflowX(value: ICSSRule | auto | hidden | scroll | visible | String): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
+      inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
       
-      @scala.inline
-      def setOverflowY(value: ICSSRule | auto | hidden | scroll | visible | String): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
+      inline def setOverflowY(value: ICSSRule | auto | hidden | scroll | visible | String): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
+      inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
       
-      @scala.inline
-      def setPadding(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingBlockEnd(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "paddingBlockEnd", value.asInstanceOf[js.Any])
+      inline def setPaddingBlockEnd(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "paddingBlockEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingBlockEndUndefined: Self = StObject.set(x, "paddingBlockEnd", js.undefined)
+      inline def setPaddingBlockEndUndefined: Self = StObject.set(x, "paddingBlockEnd", js.undefined)
       
-      @scala.inline
-      def setPaddingBlockStart(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "paddingBlockStart", value.asInstanceOf[js.Any])
+      inline def setPaddingBlockStart(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "paddingBlockStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingBlockStartUndefined: Self = StObject.set(x, "paddingBlockStart", js.undefined)
+      inline def setPaddingBlockStartUndefined: Self = StObject.set(x, "paddingBlockStart", js.undefined)
       
-      @scala.inline
-      def setPaddingBottom(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+      inline def setPaddingBottom(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
+      inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
       
-      @scala.inline
-      def setPaddingInlineEnd(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "paddingInlineEnd", value.asInstanceOf[js.Any])
+      inline def setPaddingInlineEnd(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "paddingInlineEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingInlineEndUndefined: Self = StObject.set(x, "paddingInlineEnd", js.undefined)
+      inline def setPaddingInlineEndUndefined: Self = StObject.set(x, "paddingInlineEnd", js.undefined)
       
-      @scala.inline
-      def setPaddingInlineStart(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "paddingInlineStart", value.asInstanceOf[js.Any])
+      inline def setPaddingInlineStart(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "paddingInlineStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingInlineStartUndefined: Self = StObject.set(x, "paddingInlineStart", js.undefined)
+      inline def setPaddingInlineStartUndefined: Self = StObject.set(x, "paddingInlineStart", js.undefined)
       
-      @scala.inline
-      def setPaddingLeft(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+      inline def setPaddingLeft(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
+      inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
       
-      @scala.inline
-      def setPaddingRight(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+      inline def setPaddingRight(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
+      inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
       
-      @scala.inline
-      def setPaddingTop(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+      inline def setPaddingTop(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
+      inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setPageBreakAfter(value: ICSSRule | String): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
+      inline def setPageBreakAfter(value: ICSSRule | String): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageBreakAfterUndefined: Self = StObject.set(x, "pageBreakAfter", js.undefined)
+      inline def setPageBreakAfterUndefined: Self = StObject.set(x, "pageBreakAfter", js.undefined)
       
-      @scala.inline
-      def setPageBreakBefore(value: ICSSRule | String): Self = StObject.set(x, "pageBreakBefore", value.asInstanceOf[js.Any])
+      inline def setPageBreakBefore(value: ICSSRule | String): Self = StObject.set(x, "pageBreakBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageBreakBeforeUndefined: Self = StObject.set(x, "pageBreakBefore", js.undefined)
+      inline def setPageBreakBeforeUndefined: Self = StObject.set(x, "pageBreakBefore", js.undefined)
       
-      @scala.inline
-      def setPageBreakInside(value: ICSSRule | String): Self = StObject.set(x, "pageBreakInside", value.asInstanceOf[js.Any])
+      inline def setPageBreakInside(value: ICSSRule | String): Self = StObject.set(x, "pageBreakInside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
+      inline def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
       
-      @scala.inline
-      def setPause(value: ICSSRule | String): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+      inline def setPause(value: ICSSRule | String): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseAfter(value: ICSSRule | String): Self = StObject.set(x, "pauseAfter", value.asInstanceOf[js.Any])
+      inline def setPauseAfter(value: ICSSRule | String): Self = StObject.set(x, "pauseAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseAfterUndefined: Self = StObject.set(x, "pauseAfter", js.undefined)
+      inline def setPauseAfterUndefined: Self = StObject.set(x, "pauseAfter", js.undefined)
       
-      @scala.inline
-      def setPauseBefore(value: ICSSRule | String): Self = StObject.set(x, "pauseBefore", value.asInstanceOf[js.Any])
+      inline def setPauseBefore(value: ICSSRule | String): Self = StObject.set(x, "pauseBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseBeforeUndefined: Self = StObject.set(x, "pauseBefore", js.undefined)
+      inline def setPauseBeforeUndefined: Self = StObject.set(x, "pauseBefore", js.undefined)
       
-      @scala.inline
-      def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
+      inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
       
-      @scala.inline
-      def setPerspective(value: ICSSRule | String): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
+      inline def setPerspective(value: ICSSRule | String): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerspectiveOrigin(value: ICSSRule | String): Self = StObject.set(x, "perspectiveOrigin", value.asInstanceOf[js.Any])
+      inline def setPerspectiveOrigin(value: ICSSRule | String): Self = StObject.set(x, "perspectiveOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerspectiveOriginUndefined: Self = StObject.set(x, "perspectiveOrigin", js.undefined)
+      inline def setPerspectiveOriginUndefined: Self = StObject.set(x, "perspectiveOrigin", js.undefined)
       
-      @scala.inline
-      def setPerspectiveUndefined: Self = StObject.set(x, "perspective", js.undefined)
+      inline def setPerspectiveUndefined: Self = StObject.set(x, "perspective", js.undefined)
       
-      @scala.inline
-      def setPointerEvents(value: ICSSRule | String): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+      inline def setPointerEvents(value: ICSSRule | String): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
+      inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
       
-      @scala.inline
-      def setPosition(value: ICSSRule | static | relative | absolute | fixed | sticky): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: ICSSRule | static | relative | absolute | fixed | sticky): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setQuotes(value: ICSSRule | String): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
+      inline def setQuotes(value: ICSSRule | String): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
+      inline def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
       
-      @scala.inline
-      def setRegionFragment(value: ICSSRule | String): Self = StObject.set(x, "regionFragment", value.asInstanceOf[js.Any])
+      inline def setRegionFragment(value: ICSSRule | String): Self = StObject.set(x, "regionFragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionFragmentUndefined: Self = StObject.set(x, "regionFragment", js.undefined)
+      inline def setRegionFragmentUndefined: Self = StObject.set(x, "regionFragment", js.undefined)
       
-      @scala.inline
-      def setResize(value: ICSSRule | none | both | horizontal | vertical | block | `inline` | String): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      inline def setResize(value: ICSSRule | none | both | horizontal | vertical | block | `inline` | String): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setRestAfter(value: ICSSRule | String): Self = StObject.set(x, "restAfter", value.asInstanceOf[js.Any])
+      inline def setRestAfter(value: ICSSRule | String): Self = StObject.set(x, "restAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestAfterUndefined: Self = StObject.set(x, "restAfter", js.undefined)
+      inline def setRestAfterUndefined: Self = StObject.set(x, "restAfter", js.undefined)
       
-      @scala.inline
-      def setRestBefore(value: ICSSRule | String): Self = StObject.set(x, "restBefore", value.asInstanceOf[js.Any])
+      inline def setRestBefore(value: ICSSRule | String): Self = StObject.set(x, "restBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestBeforeUndefined: Self = StObject.set(x, "restBefore", js.undefined)
+      inline def setRestBeforeUndefined: Self = StObject.set(x, "restBefore", js.undefined)
       
-      @scala.inline
-      def setRight(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setShapeImageThreshold(value: ICSSRule | String): Self = StObject.set(x, "shapeImageThreshold", value.asInstanceOf[js.Any])
+      inline def setShapeImageThreshold(value: ICSSRule | String): Self = StObject.set(x, "shapeImageThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeImageThresholdUndefined: Self = StObject.set(x, "shapeImageThreshold", js.undefined)
+      inline def setShapeImageThresholdUndefined: Self = StObject.set(x, "shapeImageThreshold", js.undefined)
       
-      @scala.inline
-      def setShapeInside(value: ICSSRule | String): Self = StObject.set(x, "shapeInside", value.asInstanceOf[js.Any])
+      inline def setShapeInside(value: ICSSRule | String): Self = StObject.set(x, "shapeInside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeInsideUndefined: Self = StObject.set(x, "shapeInside", js.undefined)
+      inline def setShapeInsideUndefined: Self = StObject.set(x, "shapeInside", js.undefined)
       
-      @scala.inline
-      def setShapeMargin(value: ICSSRule | String): Self = StObject.set(x, "shapeMargin", value.asInstanceOf[js.Any])
+      inline def setShapeMargin(value: ICSSRule | String): Self = StObject.set(x, "shapeMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeMarginUndefined: Self = StObject.set(x, "shapeMargin", js.undefined)
+      inline def setShapeMarginUndefined: Self = StObject.set(x, "shapeMargin", js.undefined)
       
-      @scala.inline
-      def setShapeOutside(value: ICSSRule | String): Self = StObject.set(x, "shapeOutside", value.asInstanceOf[js.Any])
+      inline def setShapeOutside(value: ICSSRule | String): Self = StObject.set(x, "shapeOutside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeOutsideUndefined: Self = StObject.set(x, "shapeOutside", js.undefined)
+      inline def setShapeOutsideUndefined: Self = StObject.set(x, "shapeOutside", js.undefined)
       
-      @scala.inline
-      def setSpeak(value: ICSSRule | String): Self = StObject.set(x, "speak", value.asInstanceOf[js.Any])
+      inline def setSpeak(value: ICSSRule | String): Self = StObject.set(x, "speak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeakAs(value: ICSSRule | String): Self = StObject.set(x, "speakAs", value.asInstanceOf[js.Any])
+      inline def setSpeakAs(value: ICSSRule | String): Self = StObject.set(x, "speakAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeakAsUndefined: Self = StObject.set(x, "speakAs", js.undefined)
+      inline def setSpeakAsUndefined: Self = StObject.set(x, "speakAs", js.undefined)
       
-      @scala.inline
-      def setSpeakUndefined: Self = StObject.set(x, "speak", js.undefined)
+      inline def setSpeakUndefined: Self = StObject.set(x, "speak", js.undefined)
       
-      @scala.inline
-      def setStroke(value: ICSSRule | String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: ICSSRule | String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeLinecap(value: ICSSRule | butt | round | square | String): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+      inline def setStrokeLinecap(value: ICSSRule | butt | round | square | String): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
+      inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
       
-      @scala.inline
-      def setStrokeOpacity(value: ICSSRule | Double | String): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+      inline def setStrokeOpacity(value: ICSSRule | Double | String): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+      inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
       
-      @scala.inline
-      def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+      inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
       
-      @scala.inline
-      def setStrokeWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
-      @scala.inline
-      def setTabSize(value: ICSSRule | String): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
+      inline def setTabSize(value: ICSSRule | String): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
+      inline def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
       
-      @scala.inline
-      def setTableLayout(value: ICSSRule | String): Self = StObject.set(x, "tableLayout", value.asInstanceOf[js.Any])
+      inline def setTableLayout(value: ICSSRule | String): Self = StObject.set(x, "tableLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableLayoutUndefined: Self = StObject.set(x, "tableLayout", js.undefined)
+      inline def setTableLayoutUndefined: Self = StObject.set(x, "tableLayout", js.undefined)
       
-      @scala.inline
-      def setTextAlign(value: ICSSRule | String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: ICSSRule | String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignLast(value: ICSSRule | String): Self = StObject.set(x, "textAlignLast", value.asInstanceOf[js.Any])
+      inline def setTextAlignLast(value: ICSSRule | String): Self = StObject.set(x, "textAlignLast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignLastUndefined: Self = StObject.set(x, "textAlignLast", js.undefined)
+      inline def setTextAlignLastUndefined: Self = StObject.set(x, "textAlignLast", js.undefined)
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      @scala.inline
-      def setTextDecoration(value: ICSSRule | String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
+      inline def setTextDecoration(value: ICSSRule | String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDecorationColor(value: ICSSRule | String): Self = StObject.set(x, "textDecorationColor", value.asInstanceOf[js.Any])
+      inline def setTextDecorationColor(value: ICSSRule | String): Self = StObject.set(x, "textDecorationColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDecorationColorUndefined: Self = StObject.set(x, "textDecorationColor", js.undefined)
+      inline def setTextDecorationColorUndefined: Self = StObject.set(x, "textDecorationColor", js.undefined)
       
-      @scala.inline
-      def setTextDecorationLine(value: ICSSRule | String): Self = StObject.set(x, "textDecorationLine", value.asInstanceOf[js.Any])
+      inline def setTextDecorationLine(value: ICSSRule | String): Self = StObject.set(x, "textDecorationLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDecorationLineUndefined: Self = StObject.set(x, "textDecorationLine", js.undefined)
+      inline def setTextDecorationLineUndefined: Self = StObject.set(x, "textDecorationLine", js.undefined)
       
-      @scala.inline
-      def setTextDecorationSkip(value: ICSSRule | String): Self = StObject.set(x, "textDecorationSkip", value.asInstanceOf[js.Any])
+      inline def setTextDecorationSkip(value: ICSSRule | String): Self = StObject.set(x, "textDecorationSkip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDecorationSkipUndefined: Self = StObject.set(x, "textDecorationSkip", js.undefined)
+      inline def setTextDecorationSkipUndefined: Self = StObject.set(x, "textDecorationSkip", js.undefined)
       
-      @scala.inline
-      def setTextDecorationStyle(value: ICSSRule | String): Self = StObject.set(x, "textDecorationStyle", value.asInstanceOf[js.Any])
+      inline def setTextDecorationStyle(value: ICSSRule | String): Self = StObject.set(x, "textDecorationStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDecorationStyleUndefined: Self = StObject.set(x, "textDecorationStyle", js.undefined)
+      inline def setTextDecorationStyleUndefined: Self = StObject.set(x, "textDecorationStyle", js.undefined)
       
-      @scala.inline
-      def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
+      inline def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
       
-      @scala.inline
-      def setTextEmphasis(value: ICSSRule | String): Self = StObject.set(x, "textEmphasis", value.asInstanceOf[js.Any])
+      inline def setTextEmphasis(value: ICSSRule | String): Self = StObject.set(x, "textEmphasis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextEmphasisColor(value: ICSSRule | String): Self = StObject.set(x, "textEmphasisColor", value.asInstanceOf[js.Any])
+      inline def setTextEmphasisColor(value: ICSSRule | String): Self = StObject.set(x, "textEmphasisColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextEmphasisColorUndefined: Self = StObject.set(x, "textEmphasisColor", js.undefined)
+      inline def setTextEmphasisColorUndefined: Self = StObject.set(x, "textEmphasisColor", js.undefined)
       
-      @scala.inline
-      def setTextEmphasisStyle(value: ICSSRule | String): Self = StObject.set(x, "textEmphasisStyle", value.asInstanceOf[js.Any])
+      inline def setTextEmphasisStyle(value: ICSSRule | String): Self = StObject.set(x, "textEmphasisStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextEmphasisStyleUndefined: Self = StObject.set(x, "textEmphasisStyle", js.undefined)
+      inline def setTextEmphasisStyleUndefined: Self = StObject.set(x, "textEmphasisStyle", js.undefined)
       
-      @scala.inline
-      def setTextEmphasisUndefined: Self = StObject.set(x, "textEmphasis", js.undefined)
+      inline def setTextEmphasisUndefined: Self = StObject.set(x, "textEmphasis", js.undefined)
       
-      @scala.inline
-      def setTextHeight(value: ICSSRule | String): Self = StObject.set(x, "textHeight", value.asInstanceOf[js.Any])
+      inline def setTextHeight(value: ICSSRule | String): Self = StObject.set(x, "textHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextHeightUndefined: Self = StObject.set(x, "textHeight", js.undefined)
+      inline def setTextHeightUndefined: Self = StObject.set(x, "textHeight", js.undefined)
       
-      @scala.inline
-      def setTextIndent(value: ICSSRule | String): Self = StObject.set(x, "textIndent", value.asInstanceOf[js.Any])
+      inline def setTextIndent(value: ICSSRule | String): Self = StObject.set(x, "textIndent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextIndentUndefined: Self = StObject.set(x, "textIndent", js.undefined)
+      inline def setTextIndentUndefined: Self = StObject.set(x, "textIndent", js.undefined)
       
-      @scala.inline
-      def setTextOverflow(value: ICSSRule | String): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
+      inline def setTextOverflow(value: ICSSRule | String): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
+      inline def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
       
-      @scala.inline
-      def setTextOverline(value: ICSSRule | String): Self = StObject.set(x, "textOverline", value.asInstanceOf[js.Any])
+      inline def setTextOverline(value: ICSSRule | String): Self = StObject.set(x, "textOverline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextOverlineColor(value: ICSSRule | String): Self = StObject.set(x, "textOverlineColor", value.asInstanceOf[js.Any])
+      inline def setTextOverlineColor(value: ICSSRule | String): Self = StObject.set(x, "textOverlineColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextOverlineColorUndefined: Self = StObject.set(x, "textOverlineColor", js.undefined)
+      inline def setTextOverlineColorUndefined: Self = StObject.set(x, "textOverlineColor", js.undefined)
       
-      @scala.inline
-      def setTextOverlineMode(value: ICSSRule | String): Self = StObject.set(x, "textOverlineMode", value.asInstanceOf[js.Any])
+      inline def setTextOverlineMode(value: ICSSRule | String): Self = StObject.set(x, "textOverlineMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextOverlineModeUndefined: Self = StObject.set(x, "textOverlineMode", js.undefined)
+      inline def setTextOverlineModeUndefined: Self = StObject.set(x, "textOverlineMode", js.undefined)
       
-      @scala.inline
-      def setTextOverlineStyle(value: ICSSRule | String): Self = StObject.set(x, "textOverlineStyle", value.asInstanceOf[js.Any])
+      inline def setTextOverlineStyle(value: ICSSRule | String): Self = StObject.set(x, "textOverlineStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextOverlineStyleUndefined: Self = StObject.set(x, "textOverlineStyle", js.undefined)
+      inline def setTextOverlineStyleUndefined: Self = StObject.set(x, "textOverlineStyle", js.undefined)
       
-      @scala.inline
-      def setTextOverlineUndefined: Self = StObject.set(x, "textOverline", js.undefined)
+      inline def setTextOverlineUndefined: Self = StObject.set(x, "textOverline", js.undefined)
       
-      @scala.inline
-      def setTextOverlineWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "textOverlineWidth", value.asInstanceOf[js.Any])
+      inline def setTextOverlineWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "textOverlineWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextOverlineWidthUndefined: Self = StObject.set(x, "textOverlineWidth", js.undefined)
+      inline def setTextOverlineWidthUndefined: Self = StObject.set(x, "textOverlineWidth", js.undefined)
       
-      @scala.inline
-      def setTextRendering(value: ICSSRule | String): Self = StObject.set(x, "textRendering", value.asInstanceOf[js.Any])
+      inline def setTextRendering(value: ICSSRule | String): Self = StObject.set(x, "textRendering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextRenderingUndefined: Self = StObject.set(x, "textRendering", js.undefined)
+      inline def setTextRenderingUndefined: Self = StObject.set(x, "textRendering", js.undefined)
       
-      @scala.inline
-      def setTextShadow(value: ICSSRule | String): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
+      inline def setTextShadow(value: ICSSRule | String): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
+      inline def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
       
-      @scala.inline
-      def setTextSizeAdjust(value: none | auto | ICSSPercentageRule | ICSSRule): Self = StObject.set(x, "textSizeAdjust", value.asInstanceOf[js.Any])
+      inline def setTextSizeAdjust(value: none | auto | ICSSPercentageRule | ICSSRule): Self = StObject.set(x, "textSizeAdjust", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextSizeAdjustUndefined: Self = StObject.set(x, "textSizeAdjust", js.undefined)
+      inline def setTextSizeAdjustUndefined: Self = StObject.set(x, "textSizeAdjust", js.undefined)
       
-      @scala.inline
-      def setTextTransform(value: ICSSRule | String): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
+      inline def setTextTransform(value: ICSSRule | String): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
+      inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
       
-      @scala.inline
-      def setTextUnderlinePosition(value: ICSSRule | String): Self = StObject.set(x, "textUnderlinePosition", value.asInstanceOf[js.Any])
+      inline def setTextUnderlinePosition(value: ICSSRule | String): Self = StObject.set(x, "textUnderlinePosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUnderlinePositionUndefined: Self = StObject.set(x, "textUnderlinePosition", js.undefined)
+      inline def setTextUnderlinePositionUndefined: Self = StObject.set(x, "textUnderlinePosition", js.undefined)
       
-      @scala.inline
-      def setTextUnderlineStyle(value: ICSSRule | String): Self = StObject.set(x, "textUnderlineStyle", value.asInstanceOf[js.Any])
+      inline def setTextUnderlineStyle(value: ICSSRule | String): Self = StObject.set(x, "textUnderlineStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUnderlineStyleUndefined: Self = StObject.set(x, "textUnderlineStyle", js.undefined)
+      inline def setTextUnderlineStyleUndefined: Self = StObject.set(x, "textUnderlineStyle", js.undefined)
       
-      @scala.inline
-      def setTop(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
-      @scala.inline
-      def setTouchAction(value: ICSSRule | String): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
+      inline def setTouchAction(value: ICSSRule | String): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchActionUndefined: Self = StObject.set(x, "touchAction", js.undefined)
+      inline def setTouchActionUndefined: Self = StObject.set(x, "touchAction", js.undefined)
       
-      @scala.inline
-      def setTransform(value: ICSSRule | String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: ICSSRule | String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformOrigin(value: ICSSRule | String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
+      inline def setTransformOrigin(value: ICSSRule | String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
+      inline def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
       
-      @scala.inline
-      def setTransformOriginZ(value: ICSSRule | String): Self = StObject.set(x, "transformOriginZ", value.asInstanceOf[js.Any])
+      inline def setTransformOriginZ(value: ICSSRule | String): Self = StObject.set(x, "transformOriginZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformOriginZUndefined: Self = StObject.set(x, "transformOriginZ", js.undefined)
+      inline def setTransformOriginZUndefined: Self = StObject.set(x, "transformOriginZ", js.undefined)
       
-      @scala.inline
-      def setTransformStyle(value: ICSSRule | String): Self = StObject.set(x, "transformStyle", value.asInstanceOf[js.Any])
+      inline def setTransformStyle(value: ICSSRule | String): Self = StObject.set(x, "transformStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformStyleUndefined: Self = StObject.set(x, "transformStyle", js.undefined)
+      inline def setTransformStyleUndefined: Self = StObject.set(x, "transformStyle", js.undefined)
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setTransition(value: ICSSRule | String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: ICSSRule | String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDelay(value: ICSSRule | String): Self = StObject.set(x, "transitionDelay", value.asInstanceOf[js.Any])
+      inline def setTransitionDelay(value: ICSSRule | String): Self = StObject.set(x, "transitionDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDelayUndefined: Self = StObject.set(x, "transitionDelay", js.undefined)
+      inline def setTransitionDelayUndefined: Self = StObject.set(x, "transitionDelay", js.undefined)
       
-      @scala.inline
-      def setTransitionDuration(value: ICSSRule | String): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: ICSSRule | String): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
       
-      @scala.inline
-      def setTransitionProperty(value: ICSSRule | String): Self = StObject.set(x, "transitionProperty", value.asInstanceOf[js.Any])
+      inline def setTransitionProperty(value: ICSSRule | String): Self = StObject.set(x, "transitionProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionPropertyUndefined: Self = StObject.set(x, "transitionProperty", js.undefined)
+      inline def setTransitionPropertyUndefined: Self = StObject.set(x, "transitionProperty", js.undefined)
       
-      @scala.inline
-      def setTransitionTimingFunction(value: ICSSRule | String): Self = StObject.set(x, "transitionTimingFunction", value.asInstanceOf[js.Any])
+      inline def setTransitionTimingFunction(value: ICSSRule | String): Self = StObject.set(x, "transitionTimingFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionTimingFunctionUndefined: Self = StObject.set(x, "transitionTimingFunction", js.undefined)
+      inline def setTransitionTimingFunctionUndefined: Self = StObject.set(x, "transitionTimingFunction", js.undefined)
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
       
-      @scala.inline
-      def setUnicodeBidi(value: ICSSRule | String): Self = StObject.set(x, "unicodeBidi", value.asInstanceOf[js.Any])
+      inline def setUnicodeBidi(value: ICSSRule | String): Self = StObject.set(x, "unicodeBidi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicodeBidiUndefined: Self = StObject.set(x, "unicodeBidi", js.undefined)
+      inline def setUnicodeBidiUndefined: Self = StObject.set(x, "unicodeBidi", js.undefined)
       
-      @scala.inline
-      def setUserFocus(value: ICSSRule | String): Self = StObject.set(x, "userFocus", value.asInstanceOf[js.Any])
+      inline def setUserFocus(value: ICSSRule | String): Self = StObject.set(x, "userFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserFocusUndefined: Self = StObject.set(x, "userFocus", js.undefined)
+      inline def setUserFocusUndefined: Self = StObject.set(x, "userFocus", js.undefined)
       
-      @scala.inline
-      def setUserInput(value: ICSSRule | String): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
+      inline def setUserInput(value: ICSSRule | String): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserInputUndefined: Self = StObject.set(x, "userInput", js.undefined)
+      inline def setUserInputUndefined: Self = StObject.set(x, "userInput", js.undefined)
       
-      @scala.inline
-      def setUserSelect(value: ICSSRule | none | auto | text | all | contain | String): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
+      inline def setUserSelect(value: ICSSRule | none | auto | text | all | contain | String): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserSelectUndefined: Self = StObject.set(x, "userSelect", js.undefined)
+      inline def setUserSelectUndefined: Self = StObject.set(x, "userSelect", js.undefined)
       
-      @scala.inline
-      def setVerticalAlign(value: ICSSRule | String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: ICSSRule | String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+      inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
       
-      @scala.inline
-      def setVisibility(value: ICSSRule | String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+      inline def setVisibility(value: ICSSRule | String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+      inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
       
-      @scala.inline
-      def setVoiceBalance(value: ICSSRule | String): Self = StObject.set(x, "voiceBalance", value.asInstanceOf[js.Any])
+      inline def setVoiceBalance(value: ICSSRule | String): Self = StObject.set(x, "voiceBalance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceBalanceUndefined: Self = StObject.set(x, "voiceBalance", js.undefined)
+      inline def setVoiceBalanceUndefined: Self = StObject.set(x, "voiceBalance", js.undefined)
       
-      @scala.inline
-      def setVoiceDuration(value: ICSSRule | String): Self = StObject.set(x, "voiceDuration", value.asInstanceOf[js.Any])
+      inline def setVoiceDuration(value: ICSSRule | String): Self = StObject.set(x, "voiceDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceDurationUndefined: Self = StObject.set(x, "voiceDuration", js.undefined)
+      inline def setVoiceDurationUndefined: Self = StObject.set(x, "voiceDuration", js.undefined)
       
-      @scala.inline
-      def setVoiceFamily(value: ICSSRule | String): Self = StObject.set(x, "voiceFamily", value.asInstanceOf[js.Any])
+      inline def setVoiceFamily(value: ICSSRule | String): Self = StObject.set(x, "voiceFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceFamilyUndefined: Self = StObject.set(x, "voiceFamily", js.undefined)
+      inline def setVoiceFamilyUndefined: Self = StObject.set(x, "voiceFamily", js.undefined)
       
-      @scala.inline
-      def setVoicePitch(value: ICSSRule | String): Self = StObject.set(x, "voicePitch", value.asInstanceOf[js.Any])
+      inline def setVoicePitch(value: ICSSRule | String): Self = StObject.set(x, "voicePitch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoicePitchUndefined: Self = StObject.set(x, "voicePitch", js.undefined)
+      inline def setVoicePitchUndefined: Self = StObject.set(x, "voicePitch", js.undefined)
       
-      @scala.inline
-      def setVoiceRange(value: ICSSRule | String): Self = StObject.set(x, "voiceRange", value.asInstanceOf[js.Any])
+      inline def setVoiceRange(value: ICSSRule | String): Self = StObject.set(x, "voiceRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceRangeUndefined: Self = StObject.set(x, "voiceRange", js.undefined)
+      inline def setVoiceRangeUndefined: Self = StObject.set(x, "voiceRange", js.undefined)
       
-      @scala.inline
-      def setVoiceRate(value: ICSSRule | String): Self = StObject.set(x, "voiceRate", value.asInstanceOf[js.Any])
+      inline def setVoiceRate(value: ICSSRule | String): Self = StObject.set(x, "voiceRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceRateUndefined: Self = StObject.set(x, "voiceRate", js.undefined)
+      inline def setVoiceRateUndefined: Self = StObject.set(x, "voiceRate", js.undefined)
       
-      @scala.inline
-      def setVoiceStress(value: ICSSRule | String): Self = StObject.set(x, "voiceStress", value.asInstanceOf[js.Any])
+      inline def setVoiceStress(value: ICSSRule | String): Self = StObject.set(x, "voiceStress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceStressUndefined: Self = StObject.set(x, "voiceStress", js.undefined)
+      inline def setVoiceStressUndefined: Self = StObject.set(x, "voiceStress", js.undefined)
       
-      @scala.inline
-      def setVoiceVolume(value: ICSSRule | String): Self = StObject.set(x, "voiceVolume", value.asInstanceOf[js.Any])
+      inline def setVoiceVolume(value: ICSSRule | String): Self = StObject.set(x, "voiceVolume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceVolumeUndefined: Self = StObject.set(x, "voiceVolume", js.undefined)
+      inline def setVoiceVolumeUndefined: Self = StObject.set(x, "voiceVolume", js.undefined)
       
-      @scala.inline
-      def setWebkitBackdropFilter(value: ICSSRule | String): Self = StObject.set(x, "WebkitBackdropFilter", value.asInstanceOf[js.Any])
+      inline def setWebkitBackdropFilter(value: ICSSRule | String): Self = StObject.set(x, "WebkitBackdropFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebkitBackdropFilterUndefined: Self = StObject.set(x, "WebkitBackdropFilter", js.undefined)
+      inline def setWebkitBackdropFilterUndefined: Self = StObject.set(x, "WebkitBackdropFilter", js.undefined)
       
-      @scala.inline
-      def setWebkitFontSmoothing(value: none | antialiased | grayscale | `subpixel-antialiased` | String): Self = StObject.set(x, "WebkitFontSmoothing", value.asInstanceOf[js.Any])
+      inline def setWebkitFontSmoothing(value: none | antialiased | grayscale | `subpixel-antialiased` | String): Self = StObject.set(x, "WebkitFontSmoothing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebkitFontSmoothingUndefined: Self = StObject.set(x, "WebkitFontSmoothing", js.undefined)
+      inline def setWebkitFontSmoothingUndefined: Self = StObject.set(x, "WebkitFontSmoothing", js.undefined)
       
-      @scala.inline
-      def setWebkitOverflowScrolling(value: auto | touch | String): Self = StObject.set(x, "WebkitOverflowScrolling", value.asInstanceOf[js.Any])
+      inline def setWebkitOverflowScrolling(value: auto | touch | String): Self = StObject.set(x, "WebkitOverflowScrolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebkitOverflowScrollingUndefined: Self = StObject.set(x, "WebkitOverflowScrolling", js.undefined)
+      inline def setWebkitOverflowScrollingUndefined: Self = StObject.set(x, "WebkitOverflowScrolling", js.undefined)
       
-      @scala.inline
-      def setWebkitTapHighlightColor(value: String): Self = StObject.set(x, "WebkitTapHighlightColor", value.asInstanceOf[js.Any])
+      inline def setWebkitTapHighlightColor(value: String): Self = StObject.set(x, "WebkitTapHighlightColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebkitTapHighlightColorUndefined: Self = StObject.set(x, "WebkitTapHighlightColor", js.undefined)
+      inline def setWebkitTapHighlightColorUndefined: Self = StObject.set(x, "WebkitTapHighlightColor", js.undefined)
       
-      @scala.inline
-      def setWebkitTextSizeAdjust(value: none | auto | ICSSPercentageRule | ICSSRule | String): Self = StObject.set(x, "WebkitTextSizeAdjust", value.asInstanceOf[js.Any])
+      inline def setWebkitTextSizeAdjust(value: none | auto | ICSSPercentageRule | ICSSRule | String): Self = StObject.set(x, "WebkitTextSizeAdjust", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebkitTextSizeAdjustUndefined: Self = StObject.set(x, "WebkitTextSizeAdjust", js.undefined)
+      inline def setWebkitTextSizeAdjustUndefined: Self = StObject.set(x, "WebkitTextSizeAdjust", js.undefined)
       
-      @scala.inline
-      def setWhiteSpace(value: ICSSRule | String): Self = StObject.set(x, "whiteSpace", value.asInstanceOf[js.Any])
+      inline def setWhiteSpace(value: ICSSRule | String): Self = StObject.set(x, "whiteSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteSpaceUndefined: Self = StObject.set(x, "whiteSpace", js.undefined)
+      inline def setWhiteSpaceUndefined: Self = StObject.set(x, "whiteSpace", js.undefined)
       
-      @scala.inline
-      def setWidows(value: ICSSRule | Double | String): Self = StObject.set(x, "widows", value.asInstanceOf[js.Any])
+      inline def setWidows(value: ICSSRule | Double | String): Self = StObject.set(x, "widows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidowsUndefined: Self = StObject.set(x, "widows", js.undefined)
+      inline def setWidowsUndefined: Self = StObject.set(x, "widows", js.undefined)
       
-      @scala.inline
-      def setWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setWordBreak(value: ICSSRule | String): Self = StObject.set(x, "wordBreak", value.asInstanceOf[js.Any])
+      inline def setWordBreak(value: ICSSRule | String): Self = StObject.set(x, "wordBreak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordBreakUndefined: Self = StObject.set(x, "wordBreak", js.undefined)
+      inline def setWordBreakUndefined: Self = StObject.set(x, "wordBreak", js.undefined)
       
-      @scala.inline
-      def setWordSpacing(value: ICSSRule | String): Self = StObject.set(x, "wordSpacing", value.asInstanceOf[js.Any])
+      inline def setWordSpacing(value: ICSSRule | String): Self = StObject.set(x, "wordSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordSpacingUndefined: Self = StObject.set(x, "wordSpacing", js.undefined)
+      inline def setWordSpacingUndefined: Self = StObject.set(x, "wordSpacing", js.undefined)
       
-      @scala.inline
-      def setWordWrap(value: ICSSRule | String): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
+      inline def setWordWrap(value: ICSSRule | String): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
+      inline def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
       
-      @scala.inline
-      def setWrapFlow(value: ICSSRule | String): Self = StObject.set(x, "wrapFlow", value.asInstanceOf[js.Any])
+      inline def setWrapFlow(value: ICSSRule | String): Self = StObject.set(x, "wrapFlow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapFlowUndefined: Self = StObject.set(x, "wrapFlow", js.undefined)
+      inline def setWrapFlowUndefined: Self = StObject.set(x, "wrapFlow", js.undefined)
       
-      @scala.inline
-      def setWrapMargin(value: ICSSRule | String): Self = StObject.set(x, "wrapMargin", value.asInstanceOf[js.Any])
+      inline def setWrapMargin(value: ICSSRule | String): Self = StObject.set(x, "wrapMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapMarginUndefined: Self = StObject.set(x, "wrapMargin", js.undefined)
+      inline def setWrapMarginUndefined: Self = StObject.set(x, "wrapMargin", js.undefined)
       
-      @scala.inline
-      def setWritingMode(value: ICSSRule | String): Self = StObject.set(x, "writingMode", value.asInstanceOf[js.Any])
+      inline def setWritingMode(value: ICSSRule | String): Self = StObject.set(x, "writingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritingModeUndefined: Self = StObject.set(x, "writingMode", js.undefined)
+      inline def setWritingModeUndefined: Self = StObject.set(x, "writingMode", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: ICSSRule | auto | Double | String): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: ICSSRule | auto | Double | String): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
       
-      @scala.inline
-      def setZoom(value: ICSSRule | auto | Double | ICSSPercentageRule): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: ICSSRule | auto | Double | ICSSPercentageRule): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+      inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     }
   }
 }

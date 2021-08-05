@@ -22,25 +22,19 @@ trait FoldTransform
 }
 object FoldTransform {
   
-  @scala.inline
-  def apply(fold: js.Array[FieldName]): FoldTransform = {
+  inline def apply(fold: js.Array[FieldName]): FoldTransform = {
     val __obj = js.Dynamic.literal(fold = fold.asInstanceOf[js.Any])
     __obj.asInstanceOf[FoldTransform]
   }
   
-  @scala.inline
-  implicit class FoldTransformMutableBuilder[Self <: FoldTransform] (val x: Self) extends AnyVal {
+  extension [Self <: FoldTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: js.Tuple2[FieldName, FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: js.Tuple2[FieldName, FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setFold(value: js.Array[FieldName]): Self = StObject.set(x, "fold", value.asInstanceOf[js.Any])
+    inline def setFold(value: js.Array[FieldName]): Self = StObject.set(x, "fold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFoldVarargs(value: FieldName*): Self = StObject.set(x, "fold", js.Array(value :_*))
+    inline def setFoldVarargs(value: FieldName*): Self = StObject.set(x, "fold", js.Array(value :_*))
   }
 }

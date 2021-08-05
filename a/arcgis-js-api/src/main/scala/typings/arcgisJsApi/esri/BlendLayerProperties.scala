@@ -47,21 +47,17 @@ trait BlendLayerProperties extends StObject {
 }
 object BlendLayerProperties {
   
-  @scala.inline
-  def apply(): BlendLayerProperties = {
+  inline def apply(): BlendLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlendLayerProperties]
   }
   
-  @scala.inline
-  implicit class BlendLayerPropertiesMutableBuilder[Self <: BlendLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BlendLayerProperties](x: Self) {
     
-    @scala.inline
-    def setBlendMode(
+    inline def setBlendMode(
       value: average | `color-burn` | `color-dodge` | typings.arcgisJsApi.arcgisJsApiStrings.color | darken | `destination-atop` | `destination-in` | `destination-out` | `destination-over` | difference | exclusion | `hard-light` | hue | invert | lighten | lighter | luminosity | minus | multiply | normal | overlay | plus | reflect | saturation | screen | `soft-light` | `source-atop` | `source-in` | `source-out` | `vivid-light` | xor
     ): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlendModeUndefined: Self = StObject.set(x, "blendMode", js.undefined)
+    inline def setBlendModeUndefined: Self = StObject.set(x, "blendMode", js.undefined)
   }
 }

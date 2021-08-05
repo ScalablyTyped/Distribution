@@ -16,22 +16,17 @@ trait BlockHash[T] extends StObject {
 }
 object BlockHash {
   
-  @scala.inline
-  def apply[T](endian: big | little, hmacStrength: Double, padLength: Double): BlockHash[T] = {
+  inline def apply[T](endian: big | little, hmacStrength: Double, padLength: Double): BlockHash[T] = {
     val __obj = js.Dynamic.literal(endian = endian.asInstanceOf[js.Any], hmacStrength = hmacStrength.asInstanceOf[js.Any], padLength = padLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockHash[T]]
   }
   
-  @scala.inline
-  implicit class BlockHashMutableBuilder[Self <: BlockHash[?], T] (val x: Self & BlockHash[T]) extends AnyVal {
+  extension [Self <: BlockHash[?], T](x: Self & BlockHash[T]) {
     
-    @scala.inline
-    def setEndian(value: big | little): Self = StObject.set(x, "endian", value.asInstanceOf[js.Any])
+    inline def setEndian(value: big | little): Self = StObject.set(x, "endian", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHmacStrength(value: Double): Self = StObject.set(x, "hmacStrength", value.asInstanceOf[js.Any])
+    inline def setHmacStrength(value: Double): Self = StObject.set(x, "hmacStrength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadLength(value: Double): Self = StObject.set(x, "padLength", value.asInstanceOf[js.Any])
+    inline def setPadLength(value: Double): Self = StObject.set(x, "padLength", value.asInstanceOf[js.Any])
   }
 }

@@ -56,35 +56,26 @@ trait Annotations[Args, StoryFnReturnType] extends StObject {
 }
 object Annotations {
   
-  @scala.inline
-  def apply[Args, StoryFnReturnType](): Annotations[Args, StoryFnReturnType] = {
+  inline def apply[Args, StoryFnReturnType](): Annotations[Args, StoryFnReturnType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Annotations[Args, StoryFnReturnType]]
   }
   
-  @scala.inline
-  implicit class AnnotationsMutableBuilder[Self <: Annotations[?, ?], Args, StoryFnReturnType] (val x: Self & (Annotations[Args, StoryFnReturnType])) extends AnyVal {
+  extension [Self <: Annotations[?, ?], Args, StoryFnReturnType](x: Self & (Annotations[Args, StoryFnReturnType])) {
     
-    @scala.inline
-    def setArgTypes(value: ArgTypes): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
+    inline def setArgTypes(value: ArgTypes): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgTypesUndefined: Self = StObject.set(x, "argTypes", js.undefined)
+    inline def setArgTypesUndefined: Self = StObject.set(x, "argTypes", js.undefined)
     
-    @scala.inline
-    def setArgs(value: Partial[Args]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Partial[Args]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setDecorators(value: BaseDecorators[StoryFnReturnType]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+    inline def setDecorators(value: BaseDecorators[StoryFnReturnType]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
+    inline def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
     
-    @scala.inline
-    def setDecoratorsVarargs(
+    inline def setDecoratorsVarargs(
       value: (js.Function2[
           /* story */ js.Function0[StoryFnReturnType], 
           /* context */ StoryContext, 
@@ -92,28 +83,20 @@ object Annotations {
         ])*
     ): Self = StObject.set(x, "decorators", js.Array(value :_*))
     
-    @scala.inline
-    def setExcludeStories(value: js.Array[String] | RegExp): Self = StObject.set(x, "excludeStories", value.asInstanceOf[js.Any])
+    inline def setExcludeStories(value: js.Array[String] | RegExp): Self = StObject.set(x, "excludeStories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeStoriesUndefined: Self = StObject.set(x, "excludeStories", js.undefined)
+    inline def setExcludeStoriesUndefined: Self = StObject.set(x, "excludeStories", js.undefined)
     
-    @scala.inline
-    def setExcludeStoriesVarargs(value: String*): Self = StObject.set(x, "excludeStories", js.Array(value :_*))
+    inline def setExcludeStoriesVarargs(value: String*): Self = StObject.set(x, "excludeStories", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeStories(value: js.Array[String] | RegExp): Self = StObject.set(x, "includeStories", value.asInstanceOf[js.Any])
+    inline def setIncludeStories(value: js.Array[String] | RegExp): Self = StObject.set(x, "includeStories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeStoriesUndefined: Self = StObject.set(x, "includeStories", js.undefined)
+    inline def setIncludeStoriesUndefined: Self = StObject.set(x, "includeStories", js.undefined)
     
-    @scala.inline
-    def setIncludeStoriesVarargs(value: String*): Self = StObject.set(x, "includeStories", js.Array(value :_*))
+    inline def setIncludeStoriesVarargs(value: String*): Self = StObject.set(x, "includeStories", js.Array(value :_*))
     
-    @scala.inline
-    def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }
 }

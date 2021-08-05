@@ -24,17 +24,14 @@ trait IPathLine
 }
 object IPathLine {
   
-  @scala.inline
-  def apply(end: IPoint, origin: IPoint, `type`: String): IPathLine = {
+  inline def apply(end: IPoint, origin: IPoint, `type`: String): IPathLine = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPathLine]
   }
   
-  @scala.inline
-  implicit class IPathLineMutableBuilder[Self <: IPathLine] (val x: Self) extends AnyVal {
+  extension [Self <: IPathLine](x: Self) {
     
-    @scala.inline
-    def setEnd(value: IPoint): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: IPoint): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
   }
 }

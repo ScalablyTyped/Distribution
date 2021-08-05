@@ -15,22 +15,17 @@ trait PresentationProperties extends StObject {
 }
 object PresentationProperties {
   
-  @scala.inline
-  def apply(): PresentationProperties = {
+  inline def apply(): PresentationProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PresentationProperties]
   }
   
-  @scala.inline
-  implicit class PresentationPropertiesMutableBuilder[Self <: PresentationProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PresentationProperties](x: Self) {
     
-    @scala.inline
-    def setSlides(value: CollectionProperties[SlideProperties]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
+    inline def setSlides(value: CollectionProperties[SlideProperties]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
+    inline def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
     
-    @scala.inline
-    def setSlidesVarargs(value: SlideProperties*): Self = StObject.set(x, "slides", js.Array(value :_*))
+    inline def setSlidesVarargs(value: SlideProperties*): Self = StObject.set(x, "slides", js.Array(value :_*))
   }
 }

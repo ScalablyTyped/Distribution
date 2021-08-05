@@ -18,16 +18,13 @@ trait BootstrapClientMenuItemEventArgs
 }
 object BootstrapClientMenuItemEventArgs {
   
-  @scala.inline
-  def apply(item: BootstrapClientMenuItem): BootstrapClientMenuItemEventArgs = {
+  inline def apply(item: BootstrapClientMenuItem): BootstrapClientMenuItemEventArgs = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapClientMenuItemEventArgs]
   }
   
-  @scala.inline
-  implicit class BootstrapClientMenuItemEventArgsMutableBuilder[Self <: BootstrapClientMenuItemEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientMenuItemEventArgs](x: Self) {
     
-    @scala.inline
-    def setItem(value: BootstrapClientMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: BootstrapClientMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

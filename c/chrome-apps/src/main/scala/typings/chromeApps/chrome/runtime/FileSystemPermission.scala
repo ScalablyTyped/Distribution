@@ -20,19 +20,15 @@ trait FileSystemPermission
 }
 object FileSystemPermission {
   
-  @scala.inline
-  def apply(fileSystem: js.Array[write_ | retainEntries | directory | requestFileSystem]): FileSystemPermission = {
+  inline def apply(fileSystem: js.Array[write_ | retainEntries | directory | requestFileSystem]): FileSystemPermission = {
     val __obj = js.Dynamic.literal(fileSystem = fileSystem.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystemPermission]
   }
   
-  @scala.inline
-  implicit class FileSystemPermissionMutableBuilder[Self <: FileSystemPermission] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemPermission](x: Self) {
     
-    @scala.inline
-    def setFileSystem(value: js.Array[write_ | retainEntries | directory | requestFileSystem]): Self = StObject.set(x, "fileSystem", value.asInstanceOf[js.Any])
+    inline def setFileSystem(value: js.Array[write_ | retainEntries | directory | requestFileSystem]): Self = StObject.set(x, "fileSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSystemVarargs(value: (write_ | retainEntries | directory | requestFileSystem)*): Self = StObject.set(x, "fileSystem", js.Array(value :_*))
+    inline def setFileSystemVarargs(value: (write_ | retainEntries | directory | requestFileSystem)*): Self = StObject.set(x, "fileSystem", js.Array(value :_*))
   }
 }

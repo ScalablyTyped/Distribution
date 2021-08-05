@@ -18,8 +18,7 @@ trait ConformancePackComplianceSummary extends StObject {
 }
 object ConformancePackComplianceSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConformancePackComplianceStatus: ConformancePackComplianceType,
     ConformancePackName: ConformancePackName
   ): ConformancePackComplianceSummary = {
@@ -27,13 +26,10 @@ object ConformancePackComplianceSummary {
     __obj.asInstanceOf[ConformancePackComplianceSummary]
   }
   
-  @scala.inline
-  implicit class ConformancePackComplianceSummaryMutableBuilder[Self <: ConformancePackComplianceSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ConformancePackComplianceSummary](x: Self) {
     
-    @scala.inline
-    def setConformancePackComplianceStatus(value: ConformancePackComplianceType): Self = StObject.set(x, "ConformancePackComplianceStatus", value.asInstanceOf[js.Any])
+    inline def setConformancePackComplianceStatus(value: ConformancePackComplianceType): Self = StObject.set(x, "ConformancePackComplianceStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformancePackName(value: ConformancePackName): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
+    inline def setConformancePackName(value: ConformancePackName): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
   }
 }

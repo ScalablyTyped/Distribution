@@ -10,19 +10,15 @@ trait UpdateManyPayload extends StObject {
 }
 object UpdateManyPayload {
   
-  @scala.inline
-  def apply(users: js.Array[UpdateModel]): UpdateManyPayload = {
+  inline def apply(users: js.Array[UpdateModel]): UpdateManyPayload = {
     val __obj = js.Dynamic.literal(users = users.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateManyPayload]
   }
   
-  @scala.inline
-  implicit class UpdateManyPayloadMutableBuilder[Self <: UpdateManyPayload] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateManyPayload](x: Self) {
     
-    @scala.inline
-    def setUsers(value: js.Array[UpdateModel]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[UpdateModel]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersVarargs(value: UpdateModel*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: UpdateModel*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

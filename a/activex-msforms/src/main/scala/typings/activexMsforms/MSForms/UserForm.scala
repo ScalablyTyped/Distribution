@@ -54,7 +54,7 @@ trait UserForm extends StObject {
   
   var KeepScrollBarsVisible: fmScrollBars = js.native
   
-  @JSName("MSForms.UserForm_typekey")
+  /* private */ @JSName("MSForms.UserForm_typekey")
   var MSFormsDotUserForm_typekey: UserForm = js.native
   
   var MouseIcon: StdPicture = js.native

@@ -24,8 +24,7 @@ trait AttachmentCardNoPreviewOptions extends StObject {
 }
 object AttachmentCardNoPreviewOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buttons: js.Array[DownloadButtonDescriptor | CustomButtonDescriptor],
     description: String,
     fileIconImageUrl: String,
@@ -38,37 +37,26 @@ object AttachmentCardNoPreviewOptions {
     __obj.asInstanceOf[AttachmentCardNoPreviewOptions]
   }
   
-  @scala.inline
-  implicit class AttachmentCardNoPreviewOptionsMutableBuilder[Self <: AttachmentCardNoPreviewOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentCardNoPreviewOptions](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[DownloadButtonDescriptor | CustomButtonDescriptor]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[DownloadButtonDescriptor | CustomButtonDescriptor]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsVarargs(value: (DownloadButtonDescriptor | CustomButtonDescriptor)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: (DownloadButtonDescriptor | CustomButtonDescriptor)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIconImageUrl(value: String): Self = StObject.set(x, "fileIconImageUrl", value.asInstanceOf[js.Any])
+    inline def setFileIconImageUrl(value: String): Self = StObject.set(x, "fileIconImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFoldColor(value: String): Self = StObject.set(x, "foldColor", value.asInstanceOf[js.Any])
+    inline def setFoldColor(value: String): Self = StObject.set(x, "foldColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFoldColorUndefined: Self = StObject.set(x, "foldColor", js.undefined)
+    inline def setFoldColorUndefined: Self = StObject.set(x, "foldColor", js.undefined)
     
-    @scala.inline
-    def setIconThumbnailUrl(value: String): Self = StObject.set(x, "iconThumbnailUrl", value.asInstanceOf[js.Any])
+    inline def setIconThumbnailUrl(value: String): Self = StObject.set(x, "iconThumbnailUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewOnClick(value: PreviewClickEvent => Unit): Self = StObject.set(x, "previewOnClick", js.Any.fromFunction1(value))
+    inline def setPreviewOnClick(value: PreviewClickEvent => Unit): Self = StObject.set(x, "previewOnClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPreviewUrl(value: String): Self = StObject.set(x, "previewUrl", value.asInstanceOf[js.Any])
+    inline def setPreviewUrl(value: String): Self = StObject.set(x, "previewUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

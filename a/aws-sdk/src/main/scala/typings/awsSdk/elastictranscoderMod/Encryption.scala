@@ -28,37 +28,27 @@ trait Encryption extends StObject {
 }
 object Encryption {
   
-  @scala.inline
-  def apply(): Encryption = {
+  inline def apply(): Encryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Encryption]
   }
   
-  @scala.inline
-  implicit class EncryptionMutableBuilder[Self <: Encryption] (val x: Self) extends AnyVal {
+  extension [Self <: Encryption](x: Self) {
     
-    @scala.inline
-    def setInitializationVector(value: ZeroTo255String): Self = StObject.set(x, "InitializationVector", value.asInstanceOf[js.Any])
+    inline def setInitializationVector(value: ZeroTo255String): Self = StObject.set(x, "InitializationVector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializationVectorUndefined: Self = StObject.set(x, "InitializationVector", js.undefined)
+    inline def setInitializationVectorUndefined: Self = StObject.set(x, "InitializationVector", js.undefined)
     
-    @scala.inline
-    def setKey(value: Base64EncodedString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Base64EncodedString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyMd5(value: Base64EncodedString): Self = StObject.set(x, "KeyMd5", value.asInstanceOf[js.Any])
+    inline def setKeyMd5(value: Base64EncodedString): Self = StObject.set(x, "KeyMd5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyMd5Undefined: Self = StObject.set(x, "KeyMd5", js.undefined)
+    inline def setKeyMd5Undefined: Self = StObject.set(x, "KeyMd5", js.undefined)
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setMode(value: EncryptionMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: EncryptionMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
   }
 }

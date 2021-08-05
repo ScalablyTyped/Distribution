@@ -27,8 +27,7 @@ trait GraphQLResolveInfo extends StObject {
 }
 object GraphQLResolveInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fieldASTs: js.Array[Field],
     fieldName: String,
     fragments: StringDictionary[FragmentDefinition],
@@ -43,37 +42,26 @@ object GraphQLResolveInfo {
     __obj.asInstanceOf[GraphQLResolveInfo]
   }
   
-  @scala.inline
-  implicit class GraphQLResolveInfoMutableBuilder[Self <: GraphQLResolveInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GraphQLResolveInfo](x: Self) {
     
-    @scala.inline
-    def setFieldASTs(value: js.Array[Field]): Self = StObject.set(x, "fieldASTs", value.asInstanceOf[js.Any])
+    inline def setFieldASTs(value: js.Array[Field]): Self = StObject.set(x, "fieldASTs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldASTsVarargs(value: Field*): Self = StObject.set(x, "fieldASTs", js.Array(value :_*))
+    inline def setFieldASTsVarargs(value: Field*): Self = StObject.set(x, "fieldASTs", js.Array(value :_*))
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragments(value: StringDictionary[FragmentDefinition]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
+    inline def setFragments(value: StringDictionary[FragmentDefinition]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: OperationDefinition): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: OperationDefinition): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentType(value: GraphQLCompositeType): Self = StObject.set(x, "parentType", value.asInstanceOf[js.Any])
+    inline def setParentType(value: GraphQLCompositeType): Self = StObject.set(x, "parentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnType(value: GraphQLOutputType): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GraphQLOutputType): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootValue(value: js.Any): Self = StObject.set(x, "rootValue", value.asInstanceOf[js.Any])
+    inline def setRootValue(value: js.Any): Self = StObject.set(x, "rootValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: GraphQLSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: GraphQLSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "variableValues", value.asInstanceOf[js.Any])
+    inline def setVariableValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "variableValues", value.asInstanceOf[js.Any])
   }
 }

@@ -8,11 +8,9 @@ object aceDiffStrings {
   
   @js.native
   sealed trait broad extends StObject
-  @scala.inline
-  def broad: broad = "broad".asInstanceOf[broad]
+  inline def broad: broad = "broad".asInstanceOf[broad]
   
   @js.native
   sealed trait specific extends StObject
-  @scala.inline
-  def specific: specific = "specific".asInstanceOf[specific]
+  inline def specific: specific = "specific".asInstanceOf[specific]
 }

@@ -19,29 +19,23 @@ trait ReportInstanceInfoRequest extends StObject {
 }
 object ReportInstanceInfoRequest {
   
-  @scala.inline
-  def apply(): ReportInstanceInfoRequest = {
+  inline def apply(): ReportInstanceInfoRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportInstanceInfoRequest]
   }
   
-  @scala.inline
-  implicit class ReportInstanceInfoRequestMutableBuilder[Self <: ReportInstanceInfoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReportInstanceInfoRequest](x: Self) {
     
-    @scala.inline
-    def setMetadata(
+    inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.ReportInstanceInfoRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setVmId(value: String): Self = StObject.set(x, "vmId", value.asInstanceOf[js.Any])
+    inline def setVmId(value: String): Self = StObject.set(x, "vmId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmIdUndefined: Self = StObject.set(x, "vmId", js.undefined)
+    inline def setVmIdUndefined: Self = StObject.set(x, "vmId", js.undefined)
   }
 }

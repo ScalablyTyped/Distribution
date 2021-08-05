@@ -76,8 +76,7 @@ trait ISpawnEntityComponent extends StObject {
 }
 object ISpawnEntityComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     max_wait_time: Double,
     min_wait_time: Double,
     num_to_spawn: Double,
@@ -93,43 +92,30 @@ object ISpawnEntityComponent {
     __obj.asInstanceOf[ISpawnEntityComponent]
   }
   
-  @scala.inline
-  implicit class ISpawnEntityComponentMutableBuilder[Self <: ISpawnEntityComponent] (val x: Self) extends AnyVal {
+  extension [Self <: ISpawnEntityComponent](x: Self) {
     
-    @scala.inline
-    def setFilters(value: MinecraftFilter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: MinecraftFilter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setMax_wait_time(value: Double): Self = StObject.set(x, "max_wait_time", value.asInstanceOf[js.Any])
+    inline def setMax_wait_time(value: Double): Self = StObject.set(x, "max_wait_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin_wait_time(value: Double): Self = StObject.set(x, "min_wait_time", value.asInstanceOf[js.Any])
+    inline def setMin_wait_time(value: Double): Self = StObject.set(x, "min_wait_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNum_to_spawn(value: Double): Self = StObject.set(x, "num_to_spawn", value.asInstanceOf[js.Any])
+    inline def setNum_to_spawn(value: Double): Self = StObject.set(x, "num_to_spawn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShould_leash(value: Boolean): Self = StObject.set(x, "should_leash", value.asInstanceOf[js.Any])
+    inline def setShould_leash(value: Boolean): Self = StObject.set(x, "should_leash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingle_use(value: Boolean): Self = StObject.set(x, "single_use", value.asInstanceOf[js.Any])
+    inline def setSingle_use(value: Boolean): Self = StObject.set(x, "single_use", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpawn_entity(value: String): Self = StObject.set(x, "spawn_entity", value.asInstanceOf[js.Any])
+    inline def setSpawn_entity(value: String): Self = StObject.set(x, "spawn_entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpawn_event(value: String): Self = StObject.set(x, "spawn_event", value.asInstanceOf[js.Any])
+    inline def setSpawn_event(value: String): Self = StObject.set(x, "spawn_event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpawn_item(value: String): Self = StObject.set(x, "spawn_item", value.asInstanceOf[js.Any])
+    inline def setSpawn_item(value: String): Self = StObject.set(x, "spawn_item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpawn_method(value: String): Self = StObject.set(x, "spawn_method", value.asInstanceOf[js.Any])
+    inline def setSpawn_method(value: String): Self = StObject.set(x, "spawn_method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpawn_sound(value: String): Self = StObject.set(x, "spawn_sound", value.asInstanceOf[js.Any])
+    inline def setSpawn_sound(value: String): Self = StObject.set(x, "spawn_sound", value.asInstanceOf[js.Any])
   }
 }

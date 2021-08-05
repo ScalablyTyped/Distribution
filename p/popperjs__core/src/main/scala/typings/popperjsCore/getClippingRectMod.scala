@@ -14,6 +14,5 @@ object getClippingRectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: Element, boundary: Boundary, rootBoundary: RootBoundary): ClientRectObject = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any], rootBoundary.asInstanceOf[js.Any])).asInstanceOf[ClientRectObject]
+  inline def default(element: Element, boundary: Boundary, rootBoundary: RootBoundary): ClientRectObject = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any], rootBoundary.asInstanceOf[js.Any])).asInstanceOf[ClientRectObject]
 }

@@ -164,8 +164,7 @@ object mod {
   @JSImport("timezone-js", "timezone")
   @js.native
   def timezone: TimezoneJs = js.native
-  @scala.inline
-  def timezone_=(x: TimezoneJs): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timezone")(x.asInstanceOf[js.Any])
+  inline def timezone_=(x: TimezoneJs): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timezone")(x.asInstanceOf[js.Any])
   
   @js.native
   trait TimezoneJs extends StObject {
@@ -198,38 +197,28 @@ object mod {
   }
   object TimezoneJsOptions {
     
-    @scala.inline
-    def apply(): TimezoneJsOptions = {
+    inline def apply(): TimezoneJsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimezoneJsOptions]
     }
     
-    @scala.inline
-    implicit class TimezoneJsOptionsMutableBuilder[Self <: TimezoneJsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TimezoneJsOptions](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setError(value: /* err */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* err */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: /* data */ String => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: /* data */ String => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

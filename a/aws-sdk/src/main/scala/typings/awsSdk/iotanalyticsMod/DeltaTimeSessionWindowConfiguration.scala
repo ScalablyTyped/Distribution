@@ -13,16 +13,13 @@ trait DeltaTimeSessionWindowConfiguration extends StObject {
 }
 object DeltaTimeSessionWindowConfiguration {
   
-  @scala.inline
-  def apply(timeoutInMinutes: SessionTimeoutInMinutes): DeltaTimeSessionWindowConfiguration = {
+  inline def apply(timeoutInMinutes: SessionTimeoutInMinutes): DeltaTimeSessionWindowConfiguration = {
     val __obj = js.Dynamic.literal(timeoutInMinutes = timeoutInMinutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeltaTimeSessionWindowConfiguration]
   }
   
-  @scala.inline
-  implicit class DeltaTimeSessionWindowConfigurationMutableBuilder[Self <: DeltaTimeSessionWindowConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DeltaTimeSessionWindowConfiguration](x: Self) {
     
-    @scala.inline
-    def setTimeoutInMinutes(value: SessionTimeoutInMinutes): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
+    inline def setTimeoutInMinutes(value: SessionTimeoutInMinutes): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
   }
 }

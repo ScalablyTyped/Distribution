@@ -15,22 +15,17 @@ trait RemoveTargetedPublishersRequest extends StObject {
 }
 object RemoveTargetedPublishersRequest {
   
-  @scala.inline
-  def apply(): RemoveTargetedPublishersRequest = {
+  inline def apply(): RemoveTargetedPublishersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveTargetedPublishersRequest]
   }
   
-  @scala.inline
-  implicit class RemoveTargetedPublishersRequestMutableBuilder[Self <: RemoveTargetedPublishersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveTargetedPublishersRequest](x: Self) {
     
-    @scala.inline
-    def setPublisherIds(value: js.Array[String]): Self = StObject.set(x, "publisherIds", value.asInstanceOf[js.Any])
+    inline def setPublisherIds(value: js.Array[String]): Self = StObject.set(x, "publisherIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherIdsUndefined: Self = StObject.set(x, "publisherIds", js.undefined)
+    inline def setPublisherIdsUndefined: Self = StObject.set(x, "publisherIds", js.undefined)
     
-    @scala.inline
-    def setPublisherIdsVarargs(value: String*): Self = StObject.set(x, "publisherIds", js.Array(value :_*))
+    inline def setPublisherIdsVarargs(value: String*): Self = StObject.set(x, "publisherIds", js.Array(value :_*))
   }
 }

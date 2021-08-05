@@ -17,27 +17,21 @@ trait RateLimitOptions
 }
 object RateLimitOptions {
   
-  @scala.inline
-  def apply(timeout: Double): RateLimitOptions = {
+  inline def apply(timeout: Double): RateLimitOptions = {
     val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[RateLimitOptions]
   }
   
-  @scala.inline
-  implicit class RateLimitOptionsMutableBuilder[Self <: RateLimitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RateLimitOptions](x: Self) {
     
-    @scala.inline
-    def setMethod(value: notifyAtFixedRate | notifyWhenChangesStop | RateLimitMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: notifyAtFixedRate | notifyWhenChangesStop | RateLimitMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodFunction3(
+    inline def setMethodFunction3(
       value: (/* callback */ js.Function0[Unit], /* timeout */ Double, /* options */ js.Any) => js.Function0[Unit]
     ): Self = StObject.set(x, "method", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

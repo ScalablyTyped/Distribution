@@ -26,52 +26,37 @@ trait MailSearchFolder
 }
 object MailSearchFolder {
   
-  @scala.inline
-  def apply(): MailSearchFolder = {
+  inline def apply(): MailSearchFolder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MailSearchFolder]
   }
   
-  @scala.inline
-  implicit class MailSearchFolderMutableBuilder[Self <: MailSearchFolder] (val x: Self) extends AnyVal {
+  extension [Self <: MailSearchFolder](x: Self) {
     
-    @scala.inline
-    def setFilterQuery(value: NullableOption[String]): Self = StObject.set(x, "filterQuery", value.asInstanceOf[js.Any])
+    inline def setFilterQuery(value: NullableOption[String]): Self = StObject.set(x, "filterQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterQueryNull: Self = StObject.set(x, "filterQuery", null)
+    inline def setFilterQueryNull: Self = StObject.set(x, "filterQuery", null)
     
-    @scala.inline
-    def setFilterQueryUndefined: Self = StObject.set(x, "filterQuery", js.undefined)
+    inline def setFilterQueryUndefined: Self = StObject.set(x, "filterQuery", js.undefined)
     
-    @scala.inline
-    def setIncludeNestedFolders(value: NullableOption[Boolean]): Self = StObject.set(x, "includeNestedFolders", value.asInstanceOf[js.Any])
+    inline def setIncludeNestedFolders(value: NullableOption[Boolean]): Self = StObject.set(x, "includeNestedFolders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeNestedFoldersNull: Self = StObject.set(x, "includeNestedFolders", null)
+    inline def setIncludeNestedFoldersNull: Self = StObject.set(x, "includeNestedFolders", null)
     
-    @scala.inline
-    def setIncludeNestedFoldersUndefined: Self = StObject.set(x, "includeNestedFolders", js.undefined)
+    inline def setIncludeNestedFoldersUndefined: Self = StObject.set(x, "includeNestedFolders", js.undefined)
     
-    @scala.inline
-    def setIsSupported(value: NullableOption[Boolean]): Self = StObject.set(x, "isSupported", value.asInstanceOf[js.Any])
+    inline def setIsSupported(value: NullableOption[Boolean]): Self = StObject.set(x, "isSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSupportedNull: Self = StObject.set(x, "isSupported", null)
+    inline def setIsSupportedNull: Self = StObject.set(x, "isSupported", null)
     
-    @scala.inline
-    def setIsSupportedUndefined: Self = StObject.set(x, "isSupported", js.undefined)
+    inline def setIsSupportedUndefined: Self = StObject.set(x, "isSupported", js.undefined)
     
-    @scala.inline
-    def setSourceFolderIds(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "sourceFolderIds", value.asInstanceOf[js.Any])
+    inline def setSourceFolderIds(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "sourceFolderIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFolderIdsNull: Self = StObject.set(x, "sourceFolderIds", null)
+    inline def setSourceFolderIdsNull: Self = StObject.set(x, "sourceFolderIds", null)
     
-    @scala.inline
-    def setSourceFolderIdsUndefined: Self = StObject.set(x, "sourceFolderIds", js.undefined)
+    inline def setSourceFolderIdsUndefined: Self = StObject.set(x, "sourceFolderIds", js.undefined)
     
-    @scala.inline
-    def setSourceFolderIdsVarargs(value: String*): Self = StObject.set(x, "sourceFolderIds", js.Array(value :_*))
+    inline def setSourceFolderIdsVarargs(value: String*): Self = StObject.set(x, "sourceFolderIds", js.Array(value :_*))
   }
 }

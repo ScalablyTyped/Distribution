@@ -11,6 +11,5 @@ object asapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def asap(task: Task): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("asap")(task.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def asap(task: Task): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("asap")(task.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

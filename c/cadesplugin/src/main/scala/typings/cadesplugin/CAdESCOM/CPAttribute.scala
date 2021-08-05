@@ -16,22 +16,17 @@ trait CPAttribute extends StObject {
 }
 object CPAttribute {
   
-  @scala.inline
-  def apply(Name: ValuesOf[CADESCOM_ATTRIBUTE], Value: js.Any, ValueEncoding: ValuesOf[CAPICOM_ENCODING_TYPE]): CPAttribute = {
+  inline def apply(Name: ValuesOf[CADESCOM_ATTRIBUTE], Value: js.Any, ValueEncoding: ValuesOf[CAPICOM_ENCODING_TYPE]): CPAttribute = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any], ValueEncoding = ValueEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[CPAttribute]
   }
   
-  @scala.inline
-  implicit class CPAttributeMutableBuilder[Self <: CPAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: CPAttribute](x: Self) {
     
-    @scala.inline
-    def setName(value: ValuesOf[CADESCOM_ATTRIBUTE]): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ValuesOf[CADESCOM_ATTRIBUTE]): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueEncoding(value: ValuesOf[CAPICOM_ENCODING_TYPE]): Self = StObject.set(x, "ValueEncoding", value.asInstanceOf[js.Any])
+    inline def setValueEncoding(value: ValuesOf[CAPICOM_ENCODING_TYPE]): Self = StObject.set(x, "ValueEncoding", value.asInstanceOf[js.Any])
   }
 }

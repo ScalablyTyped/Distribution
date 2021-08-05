@@ -23,43 +23,31 @@ trait GoogleCloudVisionV1p4beta1LocalizedObjectAnnotation extends StObject {
 }
 object GoogleCloudVisionV1p4beta1LocalizedObjectAnnotation {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p4beta1LocalizedObjectAnnotation = {
+  inline def apply(): GoogleCloudVisionV1p4beta1LocalizedObjectAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1LocalizedObjectAnnotation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p4beta1LocalizedObjectAnnotationMutableBuilder[Self <: GoogleCloudVisionV1p4beta1LocalizedObjectAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p4beta1LocalizedObjectAnnotation](x: Self) {
     
-    @scala.inline
-    def setBoundingPoly(value: GoogleCloudVisionV1p4beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
+    inline def setBoundingPoly(value: GoogleCloudVisionV1p4beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
+    inline def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setMid(value: String): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
+    inline def setMid(value: String): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMidUndefined: Self = StObject.set(x, "mid", js.undefined)
+    inline def setMidUndefined: Self = StObject.set(x, "mid", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

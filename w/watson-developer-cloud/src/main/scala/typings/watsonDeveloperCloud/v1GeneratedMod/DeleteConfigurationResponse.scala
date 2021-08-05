@@ -18,28 +18,21 @@ trait DeleteConfigurationResponse extends StObject {
 }
 object DeleteConfigurationResponse {
   
-  @scala.inline
-  def apply(configuration_id: String, status: String): DeleteConfigurationResponse = {
+  inline def apply(configuration_id: String, status: String): DeleteConfigurationResponse = {
     val __obj = js.Dynamic.literal(configuration_id = configuration_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class DeleteConfigurationResponseMutableBuilder[Self <: DeleteConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setConfiguration_id(value: String): Self = StObject.set(x, "configuration_id", value.asInstanceOf[js.Any])
+    inline def setConfiguration_id(value: String): Self = StObject.set(x, "configuration_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotices(value: js.Array[Notice]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
+    inline def setNotices(value: js.Array[Notice]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoticesUndefined: Self = StObject.set(x, "notices", js.undefined)
+    inline def setNoticesUndefined: Self = StObject.set(x, "notices", js.undefined)
     
-    @scala.inline
-    def setNoticesVarargs(value: Notice*): Self = StObject.set(x, "notices", js.Array(value :_*))
+    inline def setNoticesVarargs(value: Notice*): Self = StObject.set(x, "notices", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

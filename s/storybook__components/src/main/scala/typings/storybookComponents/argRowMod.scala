@@ -29,44 +29,32 @@ object argRowMod {
   }
   object ArgRowProps {
     
-    @scala.inline
-    def apply(arg: js.Any, row: ArgType): ArgRowProps = {
+    inline def apply(arg: js.Any, row: ArgType): ArgRowProps = {
       val __obj = js.Dynamic.literal(arg = arg.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArgRowProps]
     }
     
-    @scala.inline
-    implicit class ArgRowPropsMutableBuilder[Self <: ArgRowProps] (val x: Self) extends AnyVal {
+    extension [Self <: ArgRowProps](x: Self) {
       
-      @scala.inline
-      def setArg(value: js.Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
+      inline def setArg(value: js.Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
+      inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
+      inline def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
       
-      @scala.inline
-      def setInitialExpandedArgs(value: Boolean): Self = StObject.set(x, "initialExpandedArgs", value.asInstanceOf[js.Any])
+      inline def setInitialExpandedArgs(value: Boolean): Self = StObject.set(x, "initialExpandedArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialExpandedArgsUndefined: Self = StObject.set(x, "initialExpandedArgs", js.undefined)
+      inline def setInitialExpandedArgsUndefined: Self = StObject.set(x, "initialExpandedArgs", js.undefined)
       
-      @scala.inline
-      def setRow(value: ArgType): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: ArgType): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateArgs(value: /* args */ Args => Unit): Self = StObject.set(x, "updateArgs", js.Any.fromFunction1(value))
+      inline def setUpdateArgs(value: /* args */ Args => Unit): Self = StObject.set(x, "updateArgs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateArgsUndefined: Self = StObject.set(x, "updateArgs", js.undefined)
+      inline def setUpdateArgsUndefined: Self = StObject.set(x, "updateArgs", js.undefined)
     }
   }
 }

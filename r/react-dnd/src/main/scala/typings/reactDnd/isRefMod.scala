@@ -10,8 +10,7 @@ object isRefMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isRef(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRef")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRef(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRef")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait Ref[T] extends StObject {
     
@@ -19,17 +18,14 @@ object isRefMod {
   }
   object Ref {
     
-    @scala.inline
-    def apply[T](current: T): Ref[T] = {
+    inline def apply[T](current: T): Ref[T] = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ref[T]]
     }
     
-    @scala.inline
-    implicit class RefMutableBuilder[Self <: Ref[?], T] (val x: Self & Ref[T]) extends AnyVal {
+    extension [Self <: Ref[?], T](x: Self & Ref[T]) {
       
-      @scala.inline
-      def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     }
   }
 }

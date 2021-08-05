@@ -8,16 +8,13 @@ object angularDesktopNotificationStrings {
   
   @js.native
   sealed trait default extends StObject
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait denied extends StObject
-  @scala.inline
-  def denied: denied = "denied".asInstanceOf[denied]
+  inline def denied: denied = "denied".asInstanceOf[denied]
   
   @js.native
   sealed trait granted extends StObject
-  @scala.inline
-  def granted: granted = "granted".asInstanceOf[granted]
+  inline def granted: granted = "granted".asInstanceOf[granted]
 }

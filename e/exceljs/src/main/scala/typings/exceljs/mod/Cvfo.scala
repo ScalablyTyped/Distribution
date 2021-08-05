@@ -12,23 +12,18 @@ trait Cvfo extends StObject {
 }
 object Cvfo {
   
-  @scala.inline
-  def apply(`type`: CfvoTypes): Cvfo = {
+  inline def apply(`type`: CfvoTypes): Cvfo = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cvfo]
   }
   
-  @scala.inline
-  implicit class CvfoMutableBuilder[Self <: Cvfo] (val x: Self) extends AnyVal {
+  extension [Self <: Cvfo](x: Self) {
     
-    @scala.inline
-    def setType(value: CfvoTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CfvoTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

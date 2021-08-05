@@ -28,37 +28,27 @@ trait GameServerInstance extends StObject {
 }
 object GameServerInstance {
   
-  @scala.inline
-  def apply(): GameServerInstance = {
+  inline def apply(): GameServerInstance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GameServerInstance]
   }
   
-  @scala.inline
-  implicit class GameServerInstanceMutableBuilder[Self <: GameServerInstance] (val x: Self) extends AnyVal {
+  extension [Self <: GameServerInstance](x: Self) {
     
-    @scala.inline
-    def setGameServerGroupArn(value: GameServerGroupArn): Self = StObject.set(x, "GameServerGroupArn", value.asInstanceOf[js.Any])
+    inline def setGameServerGroupArn(value: GameServerGroupArn): Self = StObject.set(x, "GameServerGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerGroupArnUndefined: Self = StObject.set(x, "GameServerGroupArn", js.undefined)
+    inline def setGameServerGroupArnUndefined: Self = StObject.set(x, "GameServerGroupArn", js.undefined)
     
-    @scala.inline
-    def setGameServerGroupName(value: GameServerGroupName): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
+    inline def setGameServerGroupName(value: GameServerGroupName): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerGroupNameUndefined: Self = StObject.set(x, "GameServerGroupName", js.undefined)
+    inline def setGameServerGroupNameUndefined: Self = StObject.set(x, "GameServerGroupName", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: GameServerInstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: GameServerInstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setInstanceStatus(value: GameServerInstanceStatus): Self = StObject.set(x, "InstanceStatus", value.asInstanceOf[js.Any])
+    inline def setInstanceStatus(value: GameServerInstanceStatus): Self = StObject.set(x, "InstanceStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceStatusUndefined: Self = StObject.set(x, "InstanceStatus", js.undefined)
+    inline def setInstanceStatusUndefined: Self = StObject.set(x, "InstanceStatus", js.undefined)
   }
 }

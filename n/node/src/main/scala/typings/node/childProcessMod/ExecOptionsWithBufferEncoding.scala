@@ -13,19 +13,15 @@ trait ExecOptionsWithBufferEncoding
 }
 object ExecOptionsWithBufferEncoding {
   
-  @scala.inline
-  def apply(): ExecOptionsWithBufferEncoding = {
+  inline def apply(): ExecOptionsWithBufferEncoding = {
     val __obj = js.Dynamic.literal(encoding = null)
     __obj.asInstanceOf[ExecOptionsWithBufferEncoding]
   }
   
-  @scala.inline
-  implicit class ExecOptionsWithBufferEncodingMutableBuilder[Self <: ExecOptionsWithBufferEncoding] (val x: Self) extends AnyVal {
+  extension [Self <: ExecOptionsWithBufferEncoding](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingNull: Self = StObject.set(x, "encoding", null)
+    inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
   }
 }

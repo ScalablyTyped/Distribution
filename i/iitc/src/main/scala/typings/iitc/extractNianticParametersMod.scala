@@ -13,7 +13,6 @@ object extractNianticParametersMod {
       * and it's various member objects, functions, etc.
       * so we need to extract some essential parameters from the code for IITC to use
       */
-    @scala.inline
-    def extractFromStock(): Unit = js.Dynamic.global.applyDynamic("extractFromStock")().asInstanceOf[Unit]
+    inline def extractFromStock(): Unit = js.Dynamic.global.applyDynamic("extractFromStock")().asInstanceOf[Unit]
   }
 }

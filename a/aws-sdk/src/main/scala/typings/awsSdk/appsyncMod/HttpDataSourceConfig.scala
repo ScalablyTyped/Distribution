@@ -18,25 +18,19 @@ trait HttpDataSourceConfig extends StObject {
 }
 object HttpDataSourceConfig {
   
-  @scala.inline
-  def apply(): HttpDataSourceConfig = {
+  inline def apply(): HttpDataSourceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpDataSourceConfig]
   }
   
-  @scala.inline
-  implicit class HttpDataSourceConfigMutableBuilder[Self <: HttpDataSourceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HttpDataSourceConfig](x: Self) {
     
-    @scala.inline
-    def setAuthorizationConfig(value: AuthorizationConfig): Self = StObject.set(x, "authorizationConfig", value.asInstanceOf[js.Any])
+    inline def setAuthorizationConfig(value: AuthorizationConfig): Self = StObject.set(x, "authorizationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationConfigUndefined: Self = StObject.set(x, "authorizationConfig", js.undefined)
+    inline def setAuthorizationConfigUndefined: Self = StObject.set(x, "authorizationConfig", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
   }
 }

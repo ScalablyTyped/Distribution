@@ -11,13 +11,11 @@ object fbWatchmanStrings {
   sealed trait log
     extends StObject
        with UnilateralTags
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
+  inline def log: log = "log".asInstanceOf[log]
   
   @js.native
   sealed trait unilateralTags
     extends StObject
        with UnilateralTags
-  @scala.inline
-  def unilateralTags: unilateralTags = "unilateralTags".asInstanceOf[unilateralTags]
+  inline def unilateralTags: unilateralTags = "unilateralTags".asInstanceOf[unilateralTags]
 }

@@ -53,55 +53,39 @@ trait Binding extends StObject {
 }
 object Binding {
   
-  @scala.inline
-  def apply(bind: Scope => Unit, isBound: Boolean, source: Scope, unbind: () => Unit): Binding = {
+  inline def apply(bind: Scope => Unit, isBound: Boolean, source: Scope, unbind: () => Unit): Binding = {
     val __obj = js.Dynamic.literal(bind = js.Any.fromFunction1(bind), isBound = isBound.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], unbind = js.Any.fromFunction0(unbind))
     __obj.asInstanceOf[Binding]
   }
   
-  @scala.inline
-  implicit class BindingMutableBuilder[Self <: Binding] (val x: Self) extends AnyVal {
+  extension [Self <: Binding](x: Self) {
     
-    @scala.inline
-    def setBind(value: Scope => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
+    inline def setBind(value: Scope => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCallSource(value: /* event */ js.Any => js.Any): Self = StObject.set(x, "callSource", js.Any.fromFunction1(value))
+    inline def setCallSource(value: /* event */ js.Any => js.Any): Self = StObject.set(x, "callSource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCallSourceUndefined: Self = StObject.set(x, "callSource", js.undefined)
+    inline def setCallSourceUndefined: Self = StObject.set(x, "callSource", js.undefined)
     
-    @scala.inline
-    def setIsBound(value: Boolean): Self = StObject.set(x, "isBound", value.asInstanceOf[js.Any])
+    inline def setIsBound(value: Boolean): Self = StObject.set(x, "isBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: bindingMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: bindingMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setSource(value: Scope): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Scope): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceExpression(value: Expression): Self = StObject.set(x, "sourceExpression", value.asInstanceOf[js.Any])
+    inline def setSourceExpression(value: Expression): Self = StObject.set(x, "sourceExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceExpressionUndefined: Self = StObject.set(x, "sourceExpression", js.undefined)
+    inline def setSourceExpressionUndefined: Self = StObject.set(x, "sourceExpression", js.undefined)
     
-    @scala.inline
-    def setUnbind(value: () => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
+    inline def setUnbind(value: () => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateSource(value: /* value */ js.Any => Unit): Self = StObject.set(x, "updateSource", js.Any.fromFunction1(value))
+    inline def setUpdateSource(value: /* value */ js.Any => Unit): Self = StObject.set(x, "updateSource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateSourceUndefined: Self = StObject.set(x, "updateSource", js.undefined)
+    inline def setUpdateSourceUndefined: Self = StObject.set(x, "updateSource", js.undefined)
     
-    @scala.inline
-    def setUpdateTarget(value: /* value */ js.Any => Unit): Self = StObject.set(x, "updateTarget", js.Any.fromFunction1(value))
+    inline def setUpdateTarget(value: /* value */ js.Any => Unit): Self = StObject.set(x, "updateTarget", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateTargetUndefined: Self = StObject.set(x, "updateTarget", js.undefined)
+    inline def setUpdateTargetUndefined: Self = StObject.set(x, "updateTarget", js.undefined)
   }
 }

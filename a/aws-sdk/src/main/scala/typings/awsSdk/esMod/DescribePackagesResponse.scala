@@ -15,28 +15,21 @@ trait DescribePackagesResponse extends StObject {
 }
 object DescribePackagesResponse {
   
-  @scala.inline
-  def apply(): DescribePackagesResponse = {
+  inline def apply(): DescribePackagesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePackagesResponse]
   }
   
-  @scala.inline
-  implicit class DescribePackagesResponseMutableBuilder[Self <: DescribePackagesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePackagesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPackageDetailsList(value: PackageDetailsList): Self = StObject.set(x, "PackageDetailsList", value.asInstanceOf[js.Any])
+    inline def setPackageDetailsList(value: PackageDetailsList): Self = StObject.set(x, "PackageDetailsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageDetailsListUndefined: Self = StObject.set(x, "PackageDetailsList", js.undefined)
+    inline def setPackageDetailsListUndefined: Self = StObject.set(x, "PackageDetailsList", js.undefined)
     
-    @scala.inline
-    def setPackageDetailsListVarargs(value: PackageDetails*): Self = StObject.set(x, "PackageDetailsList", js.Array(value :_*))
+    inline def setPackageDetailsListVarargs(value: PackageDetails*): Self = StObject.set(x, "PackageDetailsList", js.Array(value :_*))
   }
 }

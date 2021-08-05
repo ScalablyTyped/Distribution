@@ -13,19 +13,15 @@ trait GetMonitoringSubscriptionResult extends StObject {
 }
 object GetMonitoringSubscriptionResult {
   
-  @scala.inline
-  def apply(): GetMonitoringSubscriptionResult = {
+  inline def apply(): GetMonitoringSubscriptionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetMonitoringSubscriptionResult]
   }
   
-  @scala.inline
-  implicit class GetMonitoringSubscriptionResultMutableBuilder[Self <: GetMonitoringSubscriptionResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetMonitoringSubscriptionResult](x: Self) {
     
-    @scala.inline
-    def setMonitoringSubscription(value: MonitoringSubscription): Self = StObject.set(x, "MonitoringSubscription", value.asInstanceOf[js.Any])
+    inline def setMonitoringSubscription(value: MonitoringSubscription): Self = StObject.set(x, "MonitoringSubscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringSubscriptionUndefined: Self = StObject.set(x, "MonitoringSubscription", js.undefined)
+    inline def setMonitoringSubscriptionUndefined: Self = StObject.set(x, "MonitoringSubscription", js.undefined)
   }
 }

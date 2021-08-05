@@ -38,7 +38,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Options")
 @js.native
-class Options protected ()
+/* private */ class Options ()
   extends StObject
      with typings.activexWord.Word.Options {
   
@@ -778,7 +778,7 @@ class Options protected ()
   /* CompleteClass */
   var WarnBeforeSavingPrintingSendingMarkup: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Options_typekey")
   var WordDotOptions_typekey: typings.activexWord.Word.Options = js.native
 }

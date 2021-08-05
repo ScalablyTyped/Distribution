@@ -18,6 +18,5 @@ object IgnoreElementsObserver {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(currentObserver: IObserver): typings.wonderFrp.observerIgnoreElementsObserverMod.IgnoreElementsObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.observerIgnoreElementsObserverMod.IgnoreElementsObserver]
+  inline def create(currentObserver: IObserver): typings.wonderFrp.observerIgnoreElementsObserverMod.IgnoreElementsObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.observerIgnoreElementsObserverMod.IgnoreElementsObserver]
 }

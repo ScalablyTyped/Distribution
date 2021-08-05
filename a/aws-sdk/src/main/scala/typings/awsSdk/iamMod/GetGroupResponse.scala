@@ -28,34 +28,25 @@ trait GetGroupResponse extends StObject {
 }
 object GetGroupResponse {
   
-  @scala.inline
-  def apply(Group: Group, Users: userListType): GetGroupResponse = {
+  inline def apply(Group: Group, Users: userListType): GetGroupResponse = {
     val __obj = js.Dynamic.literal(Group = Group.asInstanceOf[js.Any], Users = Users.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGroupResponse]
   }
   
-  @scala.inline
-  implicit class GetGroupResponseMutableBuilder[Self <: GetGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetGroupResponse](x: Self) {
     
-    @scala.inline
-    def setGroup(value: Group): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Group): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setUsers(value: userListType): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: userListType): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersVarargs(value: User*): Self = StObject.set(x, "Users", js.Array(value :_*))
+    inline def setUsersVarargs(value: User*): Self = StObject.set(x, "Users", js.Array(value :_*))
   }
 }

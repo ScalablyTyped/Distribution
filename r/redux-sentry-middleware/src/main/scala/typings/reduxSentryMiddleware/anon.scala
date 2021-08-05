@@ -64,8 +64,7 @@ object anon {
   }
   object Typeof {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Breadcrumbs: TypeofBreadcrumbs,
       FunctionToString: TypeofCoreIntegrations,
       GlobalHandlers: TypeofGlobalHandlers,
@@ -78,29 +77,21 @@ object anon {
       __obj.asInstanceOf[Typeof]
     }
     
-    @scala.inline
-    implicit class TypeofMutableBuilder[Self <: Typeof] (val x: Self) extends AnyVal {
+    extension [Self <: Typeof](x: Self) {
       
-      @scala.inline
-      def setBreadcrumbs(value: TypeofBreadcrumbs): Self = StObject.set(x, "Breadcrumbs", value.asInstanceOf[js.Any])
+      inline def setBreadcrumbs(value: TypeofBreadcrumbs): Self = StObject.set(x, "Breadcrumbs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionToString(value: TypeofCoreIntegrations): Self = StObject.set(x, "FunctionToString", value.asInstanceOf[js.Any])
+      inline def setFunctionToString(value: TypeofCoreIntegrations): Self = StObject.set(x, "FunctionToString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalHandlers(value: TypeofGlobalHandlers): Self = StObject.set(x, "GlobalHandlers", value.asInstanceOf[js.Any])
+      inline def setGlobalHandlers(value: TypeofGlobalHandlers): Self = StObject.set(x, "GlobalHandlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInboundFilters(value: TypeofCoreIntegrationsInstantiable): Self = StObject.set(x, "InboundFilters", value.asInstanceOf[js.Any])
+      inline def setInboundFilters(value: TypeofCoreIntegrationsInstantiable): Self = StObject.set(x, "InboundFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkedErrors(value: TypeofLinkedErrors): Self = StObject.set(x, "LinkedErrors", value.asInstanceOf[js.Any])
+      inline def setLinkedErrors(value: TypeofLinkedErrors): Self = StObject.set(x, "LinkedErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTryCatch(value: TypeofTryCatch): Self = StObject.set(x, "TryCatch", value.asInstanceOf[js.Any])
+      inline def setTryCatch(value: TypeofTryCatch): Self = StObject.set(x, "TryCatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgent(value: TypeofUserAgent): Self = StObject.set(x, "UserAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: TypeofUserAgent): Self = StObject.set(x, "UserAgent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -231,17 +222,14 @@ object anon {
   }
   object TypeofSeverity {
     
-    @scala.inline
-    def apply(fromString: String => Severity): TypeofSeverity = {
+    inline def apply(fromString: String => Severity): TypeofSeverity = {
       val __obj = js.Dynamic.literal(fromString = js.Any.fromFunction1(fromString))
       __obj.asInstanceOf[TypeofSeverity]
     }
     
-    @scala.inline
-    implicit class TypeofSeverityMutableBuilder[Self <: TypeofSeverity] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofSeverity](x: Self) {
       
-      @scala.inline
-      def setFromString(value: String => Severity): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
+      inline def setFromString(value: String => Severity): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
     }
   }
   
@@ -257,17 +245,14 @@ object anon {
   }
   object TypeofStatus {
     
-    @scala.inline
-    def apply(fromHttpCode: Double => Status): TypeofStatus = {
+    inline def apply(fromHttpCode: Double => Status): TypeofStatus = {
       val __obj = js.Dynamic.literal(fromHttpCode = js.Any.fromFunction1(fromHttpCode))
       __obj.asInstanceOf[TypeofStatus]
     }
     
-    @scala.inline
-    implicit class TypeofStatusMutableBuilder[Self <: TypeofStatus] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofStatus](x: Self) {
       
-      @scala.inline
-      def setFromHttpCode(value: Double => Status): Self = StObject.set(x, "fromHttpCode", js.Any.fromFunction1(value))
+      inline def setFromHttpCode(value: Double => Status): Self = StObject.set(x, "fromHttpCode", js.Any.fromFunction1(value))
     }
   }
   
@@ -284,8 +269,7 @@ object anon {
   }
   object TypeofTransports {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BaseTransport: Instantiable1[/* options */ TransportOptions, BaseTransport],
       FetchTransport: Instantiable1[/* options */ TransportOptions, FetchTransport],
       XHRTransport: Instantiable1[/* options */ TransportOptions, XHRTransport]
@@ -294,17 +278,13 @@ object anon {
       __obj.asInstanceOf[TypeofTransports]
     }
     
-    @scala.inline
-    implicit class TypeofTransportsMutableBuilder[Self <: TypeofTransports] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofTransports](x: Self) {
       
-      @scala.inline
-      def setBaseTransport(value: Instantiable1[/* options */ TransportOptions, BaseTransport]): Self = StObject.set(x, "BaseTransport", value.asInstanceOf[js.Any])
+      inline def setBaseTransport(value: Instantiable1[/* options */ TransportOptions, BaseTransport]): Self = StObject.set(x, "BaseTransport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchTransport(value: Instantiable1[/* options */ TransportOptions, FetchTransport]): Self = StObject.set(x, "FetchTransport", value.asInstanceOf[js.Any])
+      inline def setFetchTransport(value: Instantiable1[/* options */ TransportOptions, FetchTransport]): Self = StObject.set(x, "FetchTransport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXHRTransport(value: Instantiable1[/* options */ TransportOptions, XHRTransport]): Self = StObject.set(x, "XHRTransport", value.asInstanceOf[js.Any])
+      inline def setXHRTransport(value: Instantiable1[/* options */ TransportOptions, XHRTransport]): Self = StObject.set(x, "XHRTransport", value.asInstanceOf[js.Any])
     }
   }
 }

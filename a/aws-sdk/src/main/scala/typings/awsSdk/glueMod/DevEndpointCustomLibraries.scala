@@ -18,25 +18,19 @@ trait DevEndpointCustomLibraries extends StObject {
 }
 object DevEndpointCustomLibraries {
   
-  @scala.inline
-  def apply(): DevEndpointCustomLibraries = {
+  inline def apply(): DevEndpointCustomLibraries = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DevEndpointCustomLibraries]
   }
   
-  @scala.inline
-  implicit class DevEndpointCustomLibrariesMutableBuilder[Self <: DevEndpointCustomLibraries] (val x: Self) extends AnyVal {
+  extension [Self <: DevEndpointCustomLibraries](x: Self) {
     
-    @scala.inline
-    def setExtraJarsS3Path(value: GenericString): Self = StObject.set(x, "ExtraJarsS3Path", value.asInstanceOf[js.Any])
+    inline def setExtraJarsS3Path(value: GenericString): Self = StObject.set(x, "ExtraJarsS3Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraJarsS3PathUndefined: Self = StObject.set(x, "ExtraJarsS3Path", js.undefined)
+    inline def setExtraJarsS3PathUndefined: Self = StObject.set(x, "ExtraJarsS3Path", js.undefined)
     
-    @scala.inline
-    def setExtraPythonLibsS3Path(value: GenericString): Self = StObject.set(x, "ExtraPythonLibsS3Path", value.asInstanceOf[js.Any])
+    inline def setExtraPythonLibsS3Path(value: GenericString): Self = StObject.set(x, "ExtraPythonLibsS3Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraPythonLibsS3PathUndefined: Self = StObject.set(x, "ExtraPythonLibsS3Path", js.undefined)
+    inline def setExtraPythonLibsS3PathUndefined: Self = StObject.set(x, "ExtraPythonLibsS3Path", js.undefined)
   }
 }

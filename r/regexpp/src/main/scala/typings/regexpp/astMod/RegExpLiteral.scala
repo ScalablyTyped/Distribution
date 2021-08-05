@@ -21,26 +21,20 @@ trait RegExpLiteral
 }
 object RegExpLiteral {
   
-  @scala.inline
-  def apply(end: Double, flags: Flags, parent: Null, pattern: Pattern, raw: String, start: Double): RegExpLiteral = {
+  inline def apply(end: Double, flags: Flags, parent: Null, pattern: Pattern, raw: String, start: Double): RegExpLiteral = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("RegExpLiteral")
     __obj.asInstanceOf[RegExpLiteral]
   }
   
-  @scala.inline
-  implicit class RegExpLiteralMutableBuilder[Self <: RegExpLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: RegExpLiteral](x: Self) {
     
-    @scala.inline
-    def setFlags(value: Flags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Flags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: Pattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: Pattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.regexpp.regexppStrings.RegExpLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.regexpp.regexppStrings.RegExpLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

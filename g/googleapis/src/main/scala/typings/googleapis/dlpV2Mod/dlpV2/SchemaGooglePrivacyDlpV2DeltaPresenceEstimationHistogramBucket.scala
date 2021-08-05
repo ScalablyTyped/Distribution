@@ -41,46 +41,33 @@ trait SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket extends StO
 }
 object SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket = {
+  inline def apply(): SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucketMutableBuilder[Self <: SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket](x: Self) {
     
-    @scala.inline
-    def setBucketSize(value: String): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
+    inline def setBucketSize(value: String): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
+    inline def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
     
-    @scala.inline
-    def setBucketValueCount(value: String): Self = StObject.set(x, "bucketValueCount", value.asInstanceOf[js.Any])
+    inline def setBucketValueCount(value: String): Self = StObject.set(x, "bucketValueCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketValueCountUndefined: Self = StObject.set(x, "bucketValueCount", js.undefined)
+    inline def setBucketValueCountUndefined: Self = StObject.set(x, "bucketValueCount", js.undefined)
     
-    @scala.inline
-    def setBucketValues(value: js.Array[SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues]): Self = StObject.set(x, "bucketValues", value.asInstanceOf[js.Any])
+    inline def setBucketValues(value: js.Array[SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues]): Self = StObject.set(x, "bucketValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketValuesUndefined: Self = StObject.set(x, "bucketValues", js.undefined)
+    inline def setBucketValuesUndefined: Self = StObject.set(x, "bucketValues", js.undefined)
     
-    @scala.inline
-    def setBucketValuesVarargs(value: SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues*): Self = StObject.set(x, "bucketValues", js.Array(value :_*))
+    inline def setBucketValuesVarargs(value: SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues*): Self = StObject.set(x, "bucketValues", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxProbability(value: Double): Self = StObject.set(x, "maxProbability", value.asInstanceOf[js.Any])
+    inline def setMaxProbability(value: Double): Self = StObject.set(x, "maxProbability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxProbabilityUndefined: Self = StObject.set(x, "maxProbability", js.undefined)
+    inline def setMaxProbabilityUndefined: Self = StObject.set(x, "maxProbability", js.undefined)
     
-    @scala.inline
-    def setMinProbability(value: Double): Self = StObject.set(x, "minProbability", value.asInstanceOf[js.Any])
+    inline def setMinProbability(value: Double): Self = StObject.set(x, "minProbability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinProbabilityUndefined: Self = StObject.set(x, "minProbability", js.undefined)
+    inline def setMinProbabilityUndefined: Self = StObject.set(x, "minProbability", js.undefined)
   }
 }

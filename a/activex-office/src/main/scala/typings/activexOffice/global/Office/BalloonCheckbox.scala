@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.BalloonCheckbox")
 @js.native
-class BalloonCheckbox protected ()
+/* private */ class BalloonCheckbox ()
   extends StObject
      with typings.activexOffice.Office.BalloonCheckbox {
   
@@ -25,7 +25,7 @@ class BalloonCheckbox protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.BalloonCheckbox_typekey")
   var OfficeDotBalloonCheckbox_typekey: typings.activexOffice.Office.BalloonCheckbox = js.native
   

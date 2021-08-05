@@ -16,28 +16,21 @@ trait DeleteUserDataParams extends StObject {
 }
 object DeleteUserDataParams {
   
-  @scala.inline
-  def apply(customer_id: String): DeleteUserDataParams = {
+  inline def apply(customer_id: String): DeleteUserDataParams = {
     val __obj = js.Dynamic.literal(customer_id = customer_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteUserDataParams]
   }
   
-  @scala.inline
-  implicit class DeleteUserDataParamsMutableBuilder[Self <: DeleteUserDataParams] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteUserDataParams](x: Self) {
     
-    @scala.inline
-    def setCustomer_id(value: String): Self = StObject.set(x, "customer_id", value.asInstanceOf[js.Any])
+    inline def setCustomer_id(value: String): Self = StObject.set(x, "customer_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

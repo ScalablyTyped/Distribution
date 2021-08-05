@@ -26,8 +26,7 @@ trait DynamicDataLayerFields
 }
 object DynamicDataLayerFields {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alias: String,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object DynamicDataLayerFields {
     __obj.asInstanceOf[DynamicDataLayerFields]
   }
   
-  @scala.inline
-  implicit class DynamicDataLayerFieldsMutableBuilder[Self <: DynamicDataLayerFields] (val x: Self) extends AnyVal {
+  extension [Self <: DynamicDataLayerFields](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

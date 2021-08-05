@@ -36,22 +36,17 @@ trait XLoggerPool extends StObject {
 }
 object XLoggerPool {
   
-  @scala.inline
-  def apply(DefaultLogger: XLogger, getDefaultLogger: () => XLogger, getNamedLogger: String => XLogger): XLoggerPool = {
+  inline def apply(DefaultLogger: XLogger, getDefaultLogger: () => XLogger, getNamedLogger: String => XLogger): XLoggerPool = {
     val __obj = js.Dynamic.literal(DefaultLogger = DefaultLogger.asInstanceOf[js.Any], getDefaultLogger = js.Any.fromFunction0(getDefaultLogger), getNamedLogger = js.Any.fromFunction1(getNamedLogger))
     __obj.asInstanceOf[XLoggerPool]
   }
   
-  @scala.inline
-  implicit class XLoggerPoolMutableBuilder[Self <: XLoggerPool] (val x: Self) extends AnyVal {
+  extension [Self <: XLoggerPool](x: Self) {
     
-    @scala.inline
-    def setDefaultLogger(value: XLogger): Self = StObject.set(x, "DefaultLogger", value.asInstanceOf[js.Any])
+    inline def setDefaultLogger(value: XLogger): Self = StObject.set(x, "DefaultLogger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDefaultLogger(value: () => XLogger): Self = StObject.set(x, "getDefaultLogger", js.Any.fromFunction0(value))
+    inline def setGetDefaultLogger(value: () => XLogger): Self = StObject.set(x, "getDefaultLogger", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNamedLogger(value: String => XLogger): Self = StObject.set(x, "getNamedLogger", js.Any.fromFunction1(value))
+    inline def setGetNamedLogger(value: String => XLogger): Self = StObject.set(x, "getNamedLogger", js.Any.fromFunction1(value))
   }
 }

@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RatingAustraliaTelevisionType extends StObject
 object RatingAustraliaTelevisionType {
   
-  @scala.inline
-  def agesAbove15: typings.microsoftGraph.microsoftGraphStrings.agesAbove15 = "agesAbove15".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove15]
+  inline def agesAbove15: typings.microsoftGraph.microsoftGraphStrings.agesAbove15 = "agesAbove15".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove15]
   
-  @scala.inline
-  def agesAbove15AdultViolence: typings.microsoftGraph.microsoftGraphStrings.agesAbove15AdultViolence = "agesAbove15AdultViolence".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove15AdultViolence]
+  inline def agesAbove15AdultViolence: typings.microsoftGraph.microsoftGraphStrings.agesAbove15AdultViolence = "agesAbove15AdultViolence".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.agesAbove15AdultViolence]
   
-  @scala.inline
-  def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allAllowed]
+  inline def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allAllowed]
   
-  @scala.inline
-  def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allBlocked]
+  inline def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allBlocked]
   
-  @scala.inline
-  def children: typings.microsoftGraph.microsoftGraphStrings.children = "children".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.children]
+  inline def children: typings.microsoftGraph.microsoftGraphStrings.children = "children".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.children]
   
-  @scala.inline
-  def general: typings.microsoftGraph.microsoftGraphStrings.general = "general".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.general]
+  inline def general: typings.microsoftGraph.microsoftGraphStrings.general = "general".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.general]
   
-  @scala.inline
-  def mature: typings.microsoftGraph.microsoftGraphStrings.mature = "mature".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mature]
+  inline def mature: typings.microsoftGraph.microsoftGraphStrings.mature = "mature".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mature]
   
-  @scala.inline
-  def parentalGuidance: typings.microsoftGraph.microsoftGraphStrings.parentalGuidance = "parentalGuidance".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.parentalGuidance]
+  inline def parentalGuidance: typings.microsoftGraph.microsoftGraphStrings.parentalGuidance = "parentalGuidance".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.parentalGuidance]
   
-  @scala.inline
-  def preschoolers: typings.microsoftGraph.microsoftGraphStrings.preschoolers = "preschoolers".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preschoolers]
+  inline def preschoolers: typings.microsoftGraph.microsoftGraphStrings.preschoolers = "preschoolers".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.preschoolers]
 }

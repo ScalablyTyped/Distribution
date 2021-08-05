@@ -23,31 +23,23 @@ trait BulkDeployment extends StObject {
 }
 object BulkDeployment {
   
-  @scala.inline
-  def apply(): BulkDeployment = {
+  inline def apply(): BulkDeployment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkDeployment]
   }
   
-  @scala.inline
-  implicit class BulkDeploymentMutableBuilder[Self <: BulkDeployment] (val x: Self) extends AnyVal {
+  extension [Self <: BulkDeployment](x: Self) {
     
-    @scala.inline
-    def setBulkDeploymentArn(value: string): Self = StObject.set(x, "BulkDeploymentArn", value.asInstanceOf[js.Any])
+    inline def setBulkDeploymentArn(value: string): Self = StObject.set(x, "BulkDeploymentArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkDeploymentArnUndefined: Self = StObject.set(x, "BulkDeploymentArn", js.undefined)
+    inline def setBulkDeploymentArnUndefined: Self = StObject.set(x, "BulkDeploymentArn", js.undefined)
     
-    @scala.inline
-    def setBulkDeploymentId(value: string): Self = StObject.set(x, "BulkDeploymentId", value.asInstanceOf[js.Any])
+    inline def setBulkDeploymentId(value: string): Self = StObject.set(x, "BulkDeploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkDeploymentIdUndefined: Self = StObject.set(x, "BulkDeploymentId", js.undefined)
+    inline def setBulkDeploymentIdUndefined: Self = StObject.set(x, "BulkDeploymentId", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: string): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: string): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
   }
 }

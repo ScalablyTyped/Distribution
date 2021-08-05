@@ -10,19 +10,15 @@ trait AnnotationsPitchforkControlPointOptions extends StObject {
 }
 object AnnotationsPitchforkControlPointOptions {
   
-  @scala.inline
-  def apply(): AnnotationsPitchforkControlPointOptions = {
+  inline def apply(): AnnotationsPitchforkControlPointOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsPitchforkControlPointOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsPitchforkControlPointOptionsMutableBuilder[Self <: AnnotationsPitchforkControlPointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsPitchforkControlPointOptions](x: Self) {
     
-    @scala.inline
-    def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
   }
 }

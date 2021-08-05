@@ -28,8 +28,7 @@ trait XFilterGroupManager
 }
 object XFilterGroupManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     appendFilterGroup: (String, SeqEquiv[StringPair]) => Unit,
     queryInterface: `type` => js.Any,
@@ -39,10 +38,8 @@ object XFilterGroupManager {
     __obj.asInstanceOf[XFilterGroupManager]
   }
   
-  @scala.inline
-  implicit class XFilterGroupManagerMutableBuilder[Self <: XFilterGroupManager] (val x: Self) extends AnyVal {
+  extension [Self <: XFilterGroupManager](x: Self) {
     
-    @scala.inline
-    def setAppendFilterGroup(value: (String, SeqEquiv[StringPair]) => Unit): Self = StObject.set(x, "appendFilterGroup", js.Any.fromFunction2(value))
+    inline def setAppendFilterGroup(value: (String, SeqEquiv[StringPair]) => Unit): Self = StObject.set(x, "appendFilterGroup", js.Any.fromFunction2(value))
   }
 }

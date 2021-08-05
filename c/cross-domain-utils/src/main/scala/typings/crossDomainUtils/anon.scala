@@ -12,17 +12,14 @@ object anon {
   }
   object Cancel {
     
-    @scala.inline
-    def apply(cancel: () => Unit): Cancel = {
+    inline def apply(cancel: () => Unit): Cancel = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel))
       __obj.asInstanceOf[Cancel]
     }
     
-    @scala.inline
-    implicit class CancelMutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
+    extension [Self <: Cancel](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }
   }
   
@@ -34,23 +31,18 @@ object anon {
   }
   object MockUserAgent {
     
-    @scala.inline
-    def apply(userAgent: String): MockUserAgent = {
+    inline def apply(userAgent: String): MockUserAgent = {
       val __obj = js.Dynamic.literal(userAgent = userAgent.asInstanceOf[js.Any])
       __obj.asInstanceOf[MockUserAgent]
     }
     
-    @scala.inline
-    implicit class MockUserAgentMutableBuilder[Self <: MockUserAgent] (val x: Self) extends AnyVal {
+    extension [Self <: MockUserAgent](x: Self) {
       
-      @scala.inline
-      def setMockUserAgent(value: String): Self = StObject.set(x, "mockUserAgent", value.asInstanceOf[js.Any])
+      inline def setMockUserAgent(value: String): Self = StObject.set(x, "mockUserAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMockUserAgentUndefined: Self = StObject.set(x, "mockUserAgent", js.undefined)
+      inline def setMockUserAgentUndefined: Self = StObject.set(x, "mockUserAgent", js.undefined)
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -68,29 +60,22 @@ object anon {
   }
   object TypeofXMLHttpRequest {
     
-    @scala.inline
-    def apply(DONE: Double, HEADERS_RECEIVED: Double, LOADING: Double, OPENED: Double, UNSENT: Double): TypeofXMLHttpRequest = {
+    inline def apply(DONE: Double, HEADERS_RECEIVED: Double, LOADING: Double, OPENED: Double, UNSENT: Double): TypeofXMLHttpRequest = {
       val __obj = js.Dynamic.literal(DONE = DONE.asInstanceOf[js.Any], HEADERS_RECEIVED = HEADERS_RECEIVED.asInstanceOf[js.Any], LOADING = LOADING.asInstanceOf[js.Any], OPENED = OPENED.asInstanceOf[js.Any], UNSENT = UNSENT.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofXMLHttpRequest]
     }
     
-    @scala.inline
-    implicit class TypeofXMLHttpRequestMutableBuilder[Self <: TypeofXMLHttpRequest] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofXMLHttpRequest](x: Self) {
       
-      @scala.inline
-      def setDONE(value: Double): Self = StObject.set(x, "DONE", value.asInstanceOf[js.Any])
+      inline def setDONE(value: Double): Self = StObject.set(x, "DONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHEADERS_RECEIVED(value: Double): Self = StObject.set(x, "HEADERS_RECEIVED", value.asInstanceOf[js.Any])
+      inline def setHEADERS_RECEIVED(value: Double): Self = StObject.set(x, "HEADERS_RECEIVED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOADING(value: Double): Self = StObject.set(x, "LOADING", value.asInstanceOf[js.Any])
+      inline def setLOADING(value: Double): Self = StObject.set(x, "LOADING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPENED(value: Double): Self = StObject.set(x, "OPENED", value.asInstanceOf[js.Any])
+      inline def setOPENED(value: Double): Self = StObject.set(x, "OPENED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNSENT(value: Double): Self = StObject.set(x, "UNSENT", value.asInstanceOf[js.Any])
+      inline def setUNSENT(value: Double): Self = StObject.set(x, "UNSENT", value.asInstanceOf[js.Any])
     }
   }
 }

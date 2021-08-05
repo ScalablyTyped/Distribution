@@ -10,8 +10,7 @@ trait CodeActionRegistrationOptions
      with CodeActionOptions
 object CodeActionRegistrationOptions {
   
-  @scala.inline
-  def apply(): CodeActionRegistrationOptions = {
+  inline def apply(): CodeActionRegistrationOptions = {
     val __obj = js.Dynamic.literal(documentSelector = null)
     __obj.asInstanceOf[CodeActionRegistrationOptions]
   }

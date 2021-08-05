@@ -40,8 +40,7 @@ trait XIsolatedConnection
 }
 object XIsolatedConnection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getIsolatedConnection: (String, String) => XConnection,
     getIsolatedConnectionWithCompletion: XInteractionHandler => XConnection,
@@ -52,13 +51,10 @@ object XIsolatedConnection {
     __obj.asInstanceOf[XIsolatedConnection]
   }
   
-  @scala.inline
-  implicit class XIsolatedConnectionMutableBuilder[Self <: XIsolatedConnection] (val x: Self) extends AnyVal {
+  extension [Self <: XIsolatedConnection](x: Self) {
     
-    @scala.inline
-    def setGetIsolatedConnection(value: (String, String) => XConnection): Self = StObject.set(x, "getIsolatedConnection", js.Any.fromFunction2(value))
+    inline def setGetIsolatedConnection(value: (String, String) => XConnection): Self = StObject.set(x, "getIsolatedConnection", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetIsolatedConnectionWithCompletion(value: XInteractionHandler => XConnection): Self = StObject.set(x, "getIsolatedConnectionWithCompletion", js.Any.fromFunction1(value))
+    inline def setGetIsolatedConnectionWithCompletion(value: XInteractionHandler => XConnection): Self = StObject.set(x, "getIsolatedConnectionWithCompletion", js.Any.fromFunction1(value))
   }
 }

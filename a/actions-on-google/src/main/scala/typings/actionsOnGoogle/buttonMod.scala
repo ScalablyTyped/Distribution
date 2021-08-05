@@ -42,29 +42,22 @@ object buttonMod {
   }
   object ButtonOptions {
     
-    @scala.inline
-    def apply(title: String): ButtonOptions = {
+    inline def apply(title: String): ButtonOptions = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[ButtonOptions]
     }
     
-    @scala.inline
-    implicit class ButtonOptionsMutableBuilder[Self <: ButtonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonOptions](x: Self) {
       
-      @scala.inline
-      def setAction(value: GoogleActionsV2UiElementsOpenUrlAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: GoogleActionsV2UiElementsOpenUrlAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

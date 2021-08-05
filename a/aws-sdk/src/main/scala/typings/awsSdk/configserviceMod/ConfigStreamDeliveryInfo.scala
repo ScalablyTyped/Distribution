@@ -28,37 +28,27 @@ trait ConfigStreamDeliveryInfo extends StObject {
 }
 object ConfigStreamDeliveryInfo {
   
-  @scala.inline
-  def apply(): ConfigStreamDeliveryInfo = {
+  inline def apply(): ConfigStreamDeliveryInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigStreamDeliveryInfo]
   }
   
-  @scala.inline
-  implicit class ConfigStreamDeliveryInfoMutableBuilder[Self <: ConfigStreamDeliveryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigStreamDeliveryInfo](x: Self) {
     
-    @scala.inline
-    def setLastErrorCode(value: String): Self = StObject.set(x, "lastErrorCode", value.asInstanceOf[js.Any])
+    inline def setLastErrorCode(value: String): Self = StObject.set(x, "lastErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastErrorCodeUndefined: Self = StObject.set(x, "lastErrorCode", js.undefined)
+    inline def setLastErrorCodeUndefined: Self = StObject.set(x, "lastErrorCode", js.undefined)
     
-    @scala.inline
-    def setLastErrorMessage(value: String): Self = StObject.set(x, "lastErrorMessage", value.asInstanceOf[js.Any])
+    inline def setLastErrorMessage(value: String): Self = StObject.set(x, "lastErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastErrorMessageUndefined: Self = StObject.set(x, "lastErrorMessage", js.undefined)
+    inline def setLastErrorMessageUndefined: Self = StObject.set(x, "lastErrorMessage", js.undefined)
     
-    @scala.inline
-    def setLastStatus(value: DeliveryStatus): Self = StObject.set(x, "lastStatus", value.asInstanceOf[js.Any])
+    inline def setLastStatus(value: DeliveryStatus): Self = StObject.set(x, "lastStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStatusChangeTime(value: Date): Self = StObject.set(x, "lastStatusChangeTime", value.asInstanceOf[js.Any])
+    inline def setLastStatusChangeTime(value: Date): Self = StObject.set(x, "lastStatusChangeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStatusChangeTimeUndefined: Self = StObject.set(x, "lastStatusChangeTime", js.undefined)
+    inline def setLastStatusChangeTimeUndefined: Self = StObject.set(x, "lastStatusChangeTime", js.undefined)
     
-    @scala.inline
-    def setLastStatusUndefined: Self = StObject.set(x, "lastStatus", js.undefined)
+    inline def setLastStatusUndefined: Self = StObject.set(x, "lastStatus", js.undefined)
   }
 }

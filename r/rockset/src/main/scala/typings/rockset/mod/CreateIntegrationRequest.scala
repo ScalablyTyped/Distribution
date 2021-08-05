@@ -29,52 +29,37 @@ trait CreateIntegrationRequest extends StObject {
 }
 object CreateIntegrationRequest {
   
-  @scala.inline
-  def apply(name: String): CreateIntegrationRequest = {
+  inline def apply(name: String): CreateIntegrationRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIntegrationRequest]
   }
   
-  @scala.inline
-  implicit class CreateIntegrationRequestMutableBuilder[Self <: CreateIntegrationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIntegrationRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDynamodb(value: DynamodbIntegration): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
+    inline def setDynamodb(value: DynamodbIntegration): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
+    inline def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
     
-    @scala.inline
-    def setGcs(value: GcsIntegration): Self = StObject.set(x, "gcs", value.asInstanceOf[js.Any])
+    inline def setGcs(value: GcsIntegration): Self = StObject.set(x, "gcs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsUndefined: Self = StObject.set(x, "gcs", js.undefined)
+    inline def setGcsUndefined: Self = StObject.set(x, "gcs", js.undefined)
     
-    @scala.inline
-    def setKinesis(value: KinesisIntegration): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
+    inline def setKinesis(value: KinesisIntegration): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisUndefined: Self = StObject.set(x, "kinesis", js.undefined)
+    inline def setKinesisUndefined: Self = StObject.set(x, "kinesis", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedshift(value: RedshiftIntegration): Self = StObject.set(x, "redshift", value.asInstanceOf[js.Any])
+    inline def setRedshift(value: RedshiftIntegration): Self = StObject.set(x, "redshift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedshiftUndefined: Self = StObject.set(x, "redshift", js.undefined)
+    inline def setRedshiftUndefined: Self = StObject.set(x, "redshift", js.undefined)
     
-    @scala.inline
-    def setS3(value: S3Integration): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+    inline def setS3(value: S3Integration): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
+    inline def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
   }
 }

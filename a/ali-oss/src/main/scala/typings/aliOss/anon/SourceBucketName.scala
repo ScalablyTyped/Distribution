@@ -12,19 +12,15 @@ trait SourceBucketName extends StObject {
 }
 object SourceBucketName {
   
-  @scala.inline
-  def apply(sourceBucketName: String, sourceKey: String): SourceBucketName = {
+  inline def apply(sourceBucketName: String, sourceKey: String): SourceBucketName = {
     val __obj = js.Dynamic.literal(sourceBucketName = sourceBucketName.asInstanceOf[js.Any], sourceKey = sourceKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceBucketName]
   }
   
-  @scala.inline
-  implicit class SourceBucketNameMutableBuilder[Self <: SourceBucketName] (val x: Self) extends AnyVal {
+  extension [Self <: SourceBucketName](x: Self) {
     
-    @scala.inline
-    def setSourceBucketName(value: String): Self = StObject.set(x, "sourceBucketName", value.asInstanceOf[js.Any])
+    inline def setSourceBucketName(value: String): Self = StObject.set(x, "sourceBucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceKey(value: String): Self = StObject.set(x, "sourceKey", value.asInstanceOf[js.Any])
+    inline def setSourceKey(value: String): Self = StObject.set(x, "sourceKey", value.asInstanceOf[js.Any])
   }
 }

@@ -17,20 +17,16 @@ trait WhiteSpace
 }
 object WhiteSpace {
   
-  @scala.inline
-  def apply(value: String): WhiteSpace = {
+  inline def apply(value: String): WhiteSpace = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("WhiteSpace")
     __obj.asInstanceOf[WhiteSpace]
   }
   
-  @scala.inline
-  implicit class WhiteSpaceMutableBuilder[Self <: WhiteSpace] (val x: Self) extends AnyVal {
+  extension [Self <: WhiteSpace](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.WhiteSpace): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.WhiteSpace): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

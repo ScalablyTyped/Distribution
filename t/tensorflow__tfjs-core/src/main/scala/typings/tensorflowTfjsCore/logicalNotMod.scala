@@ -13,6 +13,5 @@ object logicalNotMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def logicalNot[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("logicalNot")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def logicalNot[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("logicalNot")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 }

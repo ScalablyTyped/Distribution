@@ -11,19 +11,15 @@ trait GhostError extends StObject {
 }
 object GhostError {
   
-  @scala.inline
-  def apply(errors: js.Array[ErrorType]): GhostError = {
+  inline def apply(errors: js.Array[ErrorType]): GhostError = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
     __obj.asInstanceOf[GhostError]
   }
   
-  @scala.inline
-  implicit class GhostErrorMutableBuilder[Self <: GhostError] (val x: Self) extends AnyVal {
+  extension [Self <: GhostError](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Array[ErrorType]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[ErrorType]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: ErrorType*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ErrorType*): Self = StObject.set(x, "errors", js.Array(value :_*))
   }
 }

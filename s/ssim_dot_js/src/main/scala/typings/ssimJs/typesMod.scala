@@ -30,23 +30,18 @@ object typesMod {
   }
   object ImageData {
     
-    @scala.inline
-    def apply(data: Uint8ClampedArray, height: Double, width: Double): ImageData = {
+    inline def apply(data: Uint8ClampedArray, height: Double, width: Double): ImageData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageData]
     }
     
-    @scala.inline
-    implicit class ImageDataMutableBuilder[Self <: ImageData] (val x: Self) extends AnyVal {
+    extension [Self <: ImageData](x: Self) {
       
-      @scala.inline
-      def setData(value: Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,8 +53,7 @@ object typesMod {
   trait ImageMatrix extends StObject
   object ImageMatrix {
     
-    @scala.inline
-    def Height(
+    inline def Height(
       data: Uint8Array | Int8Array | Uint32Array | Int32Array | Uint16Array,
       height: Double,
       width: Double
@@ -68,14 +62,12 @@ object typesMod {
       __obj.asInstanceOf[typings.ssimJs.anon.Height]
     }
     
-    @scala.inline
-    def ImageData(data: Uint8ClampedArray, height: Double, width: Double): typings.ssimJs.typesMod.ImageData = {
+    inline def ImageData(data: Uint8ClampedArray, height: Double, width: Double): typings.ssimJs.typesMod.ImageData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ssimJs.typesMod.ImageData]
     }
     
-    @scala.inline
-    def Matrix(data: js.Array[Double], height: Double, width: Double): typings.ssimJs.typesMod.Matrix = {
+    inline def Matrix(data: js.Array[Double], height: Double, width: Double): typings.ssimJs.typesMod.Matrix = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ssimJs.typesMod.Matrix]
     }
@@ -91,17 +83,14 @@ object typesMod {
   }
   object MSSIMMatrix {
     
-    @scala.inline
-    def apply(data: js.Array[Double], height: Double, mssim: Double, width: Double): MSSIMMatrix = {
+    inline def apply(data: js.Array[Double], height: Double, mssim: Double, width: Double): MSSIMMatrix = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], mssim = mssim.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[MSSIMMatrix]
     }
     
-    @scala.inline
-    implicit class MSSIMMatrixMutableBuilder[Self <: MSSIMMatrix] (val x: Self) extends AnyVal {
+    extension [Self <: MSSIMMatrix](x: Self) {
       
-      @scala.inline
-      def setMssim(value: Double): Self = StObject.set(x, "mssim", value.asInstanceOf[js.Any])
+      inline def setMssim(value: Double): Self = StObject.set(x, "mssim", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,26 +108,20 @@ object typesMod {
   }
   object Matrix {
     
-    @scala.inline
-    def apply(data: js.Array[Double], height: Double, width: Double): Matrix = {
+    inline def apply(data: js.Array[Double], height: Double, width: Double): Matrix = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Matrix]
     }
     
-    @scala.inline
-    implicit class MatrixMutableBuilder[Self <: Matrix] (val x: Self) extends AnyVal {
+    extension [Self <: Matrix](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,8 +145,7 @@ object typesMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bitDepth: Double,
       downsample: original | fast | `false`,
       k1: Double,
@@ -176,35 +158,25 @@ object typesMod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBitDepth(value: Double): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
+      inline def setBitDepth(value: Double): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownsample(value: original | fast | `false`): Self = StObject.set(x, "downsample", value.asInstanceOf[js.Any])
+      inline def setDownsample(value: original | fast | `false`): Self = StObject.set(x, "downsample", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setK1(value: Double): Self = StObject.set(x, "k1", value.asInstanceOf[js.Any])
+      inline def setK1(value: Double): Self = StObject.set(x, "k1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setK2(value: Double): Self = StObject.set(x, "k2", value.asInstanceOf[js.Any])
+      inline def setK2(value: Double): Self = StObject.set(x, "k2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setRgb2grayVersion(value: original | integer): Self = StObject.set(x, "rgb2grayVersion", value.asInstanceOf[js.Any])
+      inline def setRgb2grayVersion(value: original | integer): Self = StObject.set(x, "rgb2grayVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsim(value: fast | original | bezkrovny | weber): Self = StObject.set(x, "ssim", value.asInstanceOf[js.Any])
+      inline def setSsim(value: fast | original | bezkrovny | weber): Self = StObject.set(x, "ssim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowSize(value: Double): Self = StObject.set(x, "windowSize", value.asInstanceOf[js.Any])
+      inline def setWindowSize(value: Double): Self = StObject.set(x, "windowSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -216,13 +188,10 @@ object typesMod {
   trait Shape extends StObject
   object Shape {
     
-    @scala.inline
-    def full: typings.ssimJs.ssimJsStrings.full = "full".asInstanceOf[typings.ssimJs.ssimJsStrings.full]
+    inline def full: typings.ssimJs.ssimJsStrings.full = "full".asInstanceOf[typings.ssimJs.ssimJsStrings.full]
     
-    @scala.inline
-    def same: typings.ssimJs.ssimJsStrings.same = "same".asInstanceOf[typings.ssimJs.ssimJsStrings.same]
+    inline def same: typings.ssimJs.ssimJsStrings.same = "same".asInstanceOf[typings.ssimJs.ssimJsStrings.same]
     
-    @scala.inline
-    def valid: typings.ssimJs.ssimJsStrings.valid = "valid".asInstanceOf[typings.ssimJs.ssimJsStrings.valid]
+    inline def valid: typings.ssimJs.ssimJsStrings.valid = "valid".asInstanceOf[typings.ssimJs.ssimJsStrings.valid]
   }
 }

@@ -14,28 +14,21 @@ trait NetworkEndpointWithHealthStatus extends StObject {
 }
 object NetworkEndpointWithHealthStatus {
   
-  @scala.inline
-  def apply(): NetworkEndpointWithHealthStatus = {
+  inline def apply(): NetworkEndpointWithHealthStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkEndpointWithHealthStatus]
   }
   
-  @scala.inline
-  implicit class NetworkEndpointWithHealthStatusMutableBuilder[Self <: NetworkEndpointWithHealthStatus] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkEndpointWithHealthStatus](x: Self) {
     
-    @scala.inline
-    def setHealths(value: js.Array[HealthStatusForNetworkEndpoint]): Self = StObject.set(x, "healths", value.asInstanceOf[js.Any])
+    inline def setHealths(value: js.Array[HealthStatusForNetworkEndpoint]): Self = StObject.set(x, "healths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthsUndefined: Self = StObject.set(x, "healths", js.undefined)
+    inline def setHealthsUndefined: Self = StObject.set(x, "healths", js.undefined)
     
-    @scala.inline
-    def setHealthsVarargs(value: HealthStatusForNetworkEndpoint*): Self = StObject.set(x, "healths", js.Array(value :_*))
+    inline def setHealthsVarargs(value: HealthStatusForNetworkEndpoint*): Self = StObject.set(x, "healths", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkEndpoint(value: NetworkEndpoint): Self = StObject.set(x, "networkEndpoint", value.asInstanceOf[js.Any])
+    inline def setNetworkEndpoint(value: NetworkEndpoint): Self = StObject.set(x, "networkEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkEndpointUndefined: Self = StObject.set(x, "networkEndpoint", js.undefined)
+    inline def setNetworkEndpointUndefined: Self = StObject.set(x, "networkEndpoint", js.undefined)
   }
 }

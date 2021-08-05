@@ -37,45 +37,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoBevelType extends StObject
 object MsoBevelType {
   
-  @scala.inline
-  def msoBevelAngle: `6` = 6.asInstanceOf[`6`]
+  inline def msoBevelAngle: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoBevelArtDeco: `13` = 13.asInstanceOf[`13`]
+  inline def msoBevelArtDeco: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def msoBevelCircle: `3` = 3.asInstanceOf[`3`]
+  inline def msoBevelCircle: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoBevelConvex: `8` = 8.asInstanceOf[`8`]
+  inline def msoBevelConvex: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def msoBevelCoolSlant: `9` = 9.asInstanceOf[`9`]
+  inline def msoBevelCoolSlant: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def msoBevelCross: `5` = 5.asInstanceOf[`5`]
+  inline def msoBevelCross: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoBevelDivot: `10` = 10.asInstanceOf[`10`]
+  inline def msoBevelDivot: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def msoBevelHardEdge: `12` = 12.asInstanceOf[`12`]
+  inline def msoBevelHardEdge: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def msoBevelNone: `1` = 1.asInstanceOf[`1`]
+  inline def msoBevelNone: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoBevelRelaxedInset: `2` = 2.asInstanceOf[`2`]
+  inline def msoBevelRelaxedInset: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoBevelRiblet: `11` = 11.asInstanceOf[`11`]
+  inline def msoBevelRiblet: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def msoBevelSlope: `4` = 4.asInstanceOf[`4`]
+  inline def msoBevelSlope: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoBevelSoftRound: `7` = 7.asInstanceOf[`7`]
+  inline def msoBevelSoftRound: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def msoBevelTypeMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoBevelTypeMixed: `-2` = -2.asInstanceOf[`-2`]
 }

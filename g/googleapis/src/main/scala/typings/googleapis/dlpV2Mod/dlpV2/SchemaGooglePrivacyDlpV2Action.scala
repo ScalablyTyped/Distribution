@@ -33,37 +33,27 @@ trait SchemaGooglePrivacyDlpV2Action extends StObject {
 }
 object SchemaGooglePrivacyDlpV2Action {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2Action = {
+  inline def apply(): SchemaGooglePrivacyDlpV2Action = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Action]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2ActionMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Action] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2Action](x: Self) {
     
-    @scala.inline
-    def setJobNotificationEmails(value: SchemaGooglePrivacyDlpV2JobNotificationEmails): Self = StObject.set(x, "jobNotificationEmails", value.asInstanceOf[js.Any])
+    inline def setJobNotificationEmails(value: SchemaGooglePrivacyDlpV2JobNotificationEmails): Self = StObject.set(x, "jobNotificationEmails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNotificationEmailsUndefined: Self = StObject.set(x, "jobNotificationEmails", js.undefined)
+    inline def setJobNotificationEmailsUndefined: Self = StObject.set(x, "jobNotificationEmails", js.undefined)
     
-    @scala.inline
-    def setPubSub(value: SchemaGooglePrivacyDlpV2PublishToPubSub): Self = StObject.set(x, "pubSub", value.asInstanceOf[js.Any])
+    inline def setPubSub(value: SchemaGooglePrivacyDlpV2PublishToPubSub): Self = StObject.set(x, "pubSub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubSubUndefined: Self = StObject.set(x, "pubSub", js.undefined)
+    inline def setPubSubUndefined: Self = StObject.set(x, "pubSub", js.undefined)
     
-    @scala.inline
-    def setPublishSummaryToCscc(value: SchemaGooglePrivacyDlpV2PublishSummaryToCscc): Self = StObject.set(x, "publishSummaryToCscc", value.asInstanceOf[js.Any])
+    inline def setPublishSummaryToCscc(value: SchemaGooglePrivacyDlpV2PublishSummaryToCscc): Self = StObject.set(x, "publishSummaryToCscc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishSummaryToCsccUndefined: Self = StObject.set(x, "publishSummaryToCscc", js.undefined)
+    inline def setPublishSummaryToCsccUndefined: Self = StObject.set(x, "publishSummaryToCscc", js.undefined)
     
-    @scala.inline
-    def setSaveFindings(value: SchemaGooglePrivacyDlpV2SaveFindings): Self = StObject.set(x, "saveFindings", value.asInstanceOf[js.Any])
+    inline def setSaveFindings(value: SchemaGooglePrivacyDlpV2SaveFindings): Self = StObject.set(x, "saveFindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveFindingsUndefined: Self = StObject.set(x, "saveFindings", js.undefined)
+    inline def setSaveFindingsUndefined: Self = StObject.set(x, "saveFindings", js.undefined)
   }
 }

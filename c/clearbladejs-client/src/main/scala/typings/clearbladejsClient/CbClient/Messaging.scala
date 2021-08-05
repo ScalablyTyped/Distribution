@@ -41,8 +41,7 @@ trait Messaging extends StObject {
 }
 object Messaging {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     URI: String,
     callTimeout: Double,
     client: Client,
@@ -64,55 +63,38 @@ object Messaging {
     __obj.asInstanceOf[Messaging]
   }
   
-  @scala.inline
-  implicit class MessagingMutableBuilder[Self <: Messaging] (val x: Self) extends AnyVal {
+  extension [Self <: Messaging](x: Self) {
     
-    @scala.inline
-    def setCallTimeout(value: Double): Self = StObject.set(x, "callTimeout", value.asInstanceOf[js.Any])
+    inline def setCallTimeout(value: Double): Self = StObject.set(x, "callTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTopics(value: CbCallback => Unit): Self = StObject.set(x, "currentTopics", js.Any.fromFunction1(value))
+    inline def setCurrentTopics(value: CbCallback => Unit): Self = StObject.set(x, "currentTopics", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+    inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAndDeleteMessageHistory(value: (String, Double, Double, Double, Double, CbCallback) => Unit): Self = StObject.set(x, "getAndDeleteMessageHistory", js.Any.fromFunction6(value))
+    inline def setGetAndDeleteMessageHistory(value: (String, Double, Double, Double, Double, CbCallback) => Unit): Self = StObject.set(x, "getAndDeleteMessageHistory", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setGetMessageHistory(value: (String, Double, Double, CbCallback) => Unit): Self = StObject.set(x, "getMessageHistory", js.Any.fromFunction4(value))
+    inline def setGetMessageHistory(value: (String, Double, Double, CbCallback) => Unit): Self = StObject.set(x, "getMessageHistory", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetMessageHistoryWithTimeFrame(value: (String, Double, Double, Double, Double, CbCallback) => Unit): Self = StObject.set(x, "getMessageHistoryWithTimeFrame", js.Any.fromFunction6(value))
+    inline def setGetMessageHistoryWithTimeFrame(value: (String, Double, Double, Double, Double, CbCallback) => Unit): Self = StObject.set(x, "getMessageHistoryWithTimeFrame", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setPublish(value: (String, js.Object) => Unit): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
+    inline def setPublish(value: (String, js.Object) => Unit): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPublishREST(value: (String, js.Object, CbCallback) => Unit): Self = StObject.set(x, "publishREST", js.Any.fromFunction3(value))
+    inline def setPublishREST(value: (String, js.Object, CbCallback) => Unit): Self = StObject.set(x, "publishREST", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSubscribe(value: (String, MessagingSubscribeOptions, MessageCallback) => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction3(value))
+    inline def setSubscribe(value: (String, MessagingSubscribeOptions, MessageCallback) => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
+    inline def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsubscribe(value: (String, MessagingSubscribeOptions) => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
+    inline def setUnsubscribe(value: (String, MessagingSubscribeOptions) => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

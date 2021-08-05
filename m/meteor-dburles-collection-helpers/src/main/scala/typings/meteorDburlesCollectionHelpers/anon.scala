@@ -20,35 +20,26 @@ object anon {
   }
   object ArrayFilters {
     
-    @scala.inline
-    def apply(): ArrayFilters = {
+    inline def apply(): ArrayFilters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ArrayFilters]
     }
     
-    @scala.inline
-    implicit class ArrayFiltersMutableBuilder[Self <: ArrayFilters] (val x: Self) extends AnyVal {
+    extension [Self <: ArrayFilters](x: Self) {
       
-      @scala.inline
-      def setArrayFilters(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
+      inline def setArrayFilters(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayFiltersUndefined: Self = StObject.set(x, "arrayFilters", js.undefined)
+      inline def setArrayFiltersUndefined: Self = StObject.set(x, "arrayFilters", js.undefined)
       
-      @scala.inline
-      def setArrayFiltersVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "arrayFilters", js.Array(value :_*))
+      inline def setArrayFiltersVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "arrayFilters", js.Array(value :_*))
       
-      @scala.inline
-      def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
       
-      @scala.inline
-      def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+      inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+      inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
     }
   }
   
@@ -76,52 +67,38 @@ object anon {
   }
   object Fetch {
     
-    @scala.inline
-    def apply[T](): Fetch[T] = {
+    inline def apply[T](): Fetch[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Fetch[T]]
     }
     
-    @scala.inline
-    implicit class FetchMutableBuilder[Self <: Fetch[?], T] (val x: Self & Fetch[T]) extends AnyVal {
+    extension [Self <: Fetch[?], T](x: Self & Fetch[T]) {
       
-      @scala.inline
-      def setFetch(value: js.Array[String]): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
+      inline def setFetch(value: js.Array[String]): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
+      inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
       
-      @scala.inline
-      def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value :_*))
+      inline def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value :_*))
       
-      @scala.inline
-      def setInsert(value: (/* userId */ String, /* doc */ Full[T] & T) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+      inline def setInsert(value: (/* userId */ String, /* doc */ Full[T] & T) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+      inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
       
-      @scala.inline
-      def setRemove(value: (/* userId */ String, /* doc */ Full[T] & T) => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (/* userId */ String, /* doc */ Full[T] & T) => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      @scala.inline
-      def setTransform(value: js.Function): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: js.Function): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformNull: Self = StObject.set(x, "transform", null)
+      inline def setTransformNull: Self = StObject.set(x, "transform", null)
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setUpdate(
+      inline def setUpdate(
         value: (/* userId */ String, /* doc */ Full[T] & T, /* fieldNames */ js.Array[String], /* modifier */ js.Any) => Boolean
       ): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
   
@@ -141,47 +118,34 @@ object anon {
   }
   object Fields {
     
-    @scala.inline
-    def apply(): Fields = {
+    inline def apply(): Fields = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Fields]
     }
     
-    @scala.inline
-    implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+    extension [Self <: Fields](x: Self) {
       
-      @scala.inline
-      def setFields(value: FieldSpecifier): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: FieldSpecifier): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setReactive(value: Boolean): Self = StObject.set(x, "reactive", value.asInstanceOf[js.Any])
+      inline def setReactive(value: Boolean): Self = StObject.set(x, "reactive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReactiveUndefined: Self = StObject.set(x, "reactive", js.undefined)
+      inline def setReactiveUndefined: Self = StObject.set(x, "reactive", js.undefined)
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setSort(value: SortSpecifier): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: SortSpecifier): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      @scala.inline
-      def setTransform(value: js.Function): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: js.Function): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformNull: Self = StObject.set(x, "transform", null)
+      inline def setTransformNull: Self = StObject.set(x, "transform", null)
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   
@@ -193,26 +157,20 @@ object anon {
   }
   object InsertedId {
     
-    @scala.inline
-    def apply(): InsertedId = {
+    inline def apply(): InsertedId = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InsertedId]
     }
     
-    @scala.inline
-    implicit class InsertedIdMutableBuilder[Self <: InsertedId] (val x: Self) extends AnyVal {
+    extension [Self <: InsertedId](x: Self) {
       
-      @scala.inline
-      def setInsertedId(value: String): Self = StObject.set(x, "insertedId", value.asInstanceOf[js.Any])
+      inline def setInsertedId(value: String): Self = StObject.set(x, "insertedId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertedIdUndefined: Self = StObject.set(x, "insertedId", js.undefined)
+      inline def setInsertedIdUndefined: Self = StObject.set(x, "insertedId", js.undefined)
       
-      @scala.inline
-      def setNumberAffected(value: Double): Self = StObject.set(x, "numberAffected", value.asInstanceOf[js.Any])
+      inline def setNumberAffected(value: Double): Self = StObject.set(x, "numberAffected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberAffectedUndefined: Self = StObject.set(x, "numberAffected", js.undefined)
+      inline def setNumberAffectedUndefined: Self = StObject.set(x, "numberAffected", js.undefined)
     }
   }
   
@@ -222,20 +180,16 @@ object anon {
   }
   object Multi {
     
-    @scala.inline
-    def apply(): Multi = {
+    inline def apply(): Multi = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Multi]
     }
     
-    @scala.inline
-    implicit class MultiMutableBuilder[Self <: Multi] (val x: Self) extends AnyVal {
+    extension [Self <: Multi](x: Self) {
       
-      @scala.inline
-      def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     }
   }
 }

@@ -18,8 +18,7 @@ trait ASPxClientReportPreview extends StObject {
 }
 object ASPxClientReportPreview {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     documentBuilding: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any,
     pageIndex: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any,
     pages: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<any> */ js.Any,
@@ -30,31 +29,25 @@ object ASPxClientReportPreview {
     __obj.asInstanceOf[ASPxClientReportPreview]
   }
   
-  @scala.inline
-  implicit class ASPxClientReportPreviewMutableBuilder[Self <: ASPxClientReportPreview] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientReportPreview](x: Self) {
     
-    @scala.inline
-    def setDocumentBuilding(
+    inline def setDocumentBuilding(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
     ): Self = StObject.set(x, "documentBuilding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageIndex(
+    inline def setPageIndex(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
     ): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPages(
+    inline def setPages(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<any> */ js.Any
     ): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMultipagePreview(
+    inline def setShowMultipagePreview(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
     ): Self = StObject.set(x, "showMultipagePreview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(
+    inline def setZoom(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
     ): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }

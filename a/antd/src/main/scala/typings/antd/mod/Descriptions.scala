@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Descriptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasCustomizePrefixClsTitleExtraColumnColonBorderedLayoutChildrenClassNameStyleSize: DescriptionsProps
   ): Element = ^.asInstanceOf[js.Dynamic].apply(hasCustomizePrefixClsTitleExtraColumnColonBorderedLayoutChildrenClassNameStyleSize.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -22,6 +21,5 @@ object Descriptions {
   @JSImport("antd", "Descriptions.Item")
   @js.native
   def Item: FC[DescriptionsItemProps] = js.native
-  @scala.inline
-  def Item_=(x: FC[DescriptionsItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: FC[DescriptionsItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }

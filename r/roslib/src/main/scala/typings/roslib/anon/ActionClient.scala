@@ -12,19 +12,15 @@ trait ActionClient extends StObject {
 }
 object ActionClient {
   
-  @scala.inline
-  def apply(actionClient: typings.roslib.mod.ActionClient, goalMessage: js.Any): ActionClient = {
+  inline def apply(actionClient: typings.roslib.mod.ActionClient, goalMessage: js.Any): ActionClient = {
     val __obj = js.Dynamic.literal(actionClient = actionClient.asInstanceOf[js.Any], goalMessage = goalMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionClient]
   }
   
-  @scala.inline
-  implicit class ActionClientMutableBuilder[Self <: ActionClient] (val x: Self) extends AnyVal {
+  extension [Self <: ActionClient](x: Self) {
     
-    @scala.inline
-    def setActionClient(value: typings.roslib.mod.ActionClient): Self = StObject.set(x, "actionClient", value.asInstanceOf[js.Any])
+    inline def setActionClient(value: typings.roslib.mod.ActionClient): Self = StObject.set(x, "actionClient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoalMessage(value: js.Any): Self = StObject.set(x, "goalMessage", value.asInstanceOf[js.Any])
+    inline def setGoalMessage(value: js.Any): Self = StObject.set(x, "goalMessage", value.asInstanceOf[js.Any])
   }
 }

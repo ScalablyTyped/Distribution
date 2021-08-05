@@ -21,31 +21,23 @@ trait TopLevelDomainOptions extends StObject {
 }
 object TopLevelDomainOptions {
   
-  @scala.inline
-  def apply(): TopLevelDomainOptions = {
+  inline def apply(): TopLevelDomainOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopLevelDomainOptions]
   }
   
-  @scala.inline
-  implicit class TopLevelDomainOptionsMutableBuilder[Self <: TopLevelDomainOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TopLevelDomainOptions](x: Self) {
     
-    @scala.inline
-    def setAllow(value: Set[String] | js.Array[String] | Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+    inline def setAllow(value: Set[String] | js.Array[String] | Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
+    inline def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     
-    @scala.inline
-    def setAllowVarargs(value: String*): Self = StObject.set(x, "allow", js.Array(value :_*))
+    inline def setAllowVarargs(value: String*): Self = StObject.set(x, "allow", js.Array(value :_*))
     
-    @scala.inline
-    def setDeny(value: Set[String] | js.Array[String]): Self = StObject.set(x, "deny", value.asInstanceOf[js.Any])
+    inline def setDeny(value: Set[String] | js.Array[String]): Self = StObject.set(x, "deny", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenyUndefined: Self = StObject.set(x, "deny", js.undefined)
+    inline def setDenyUndefined: Self = StObject.set(x, "deny", js.undefined)
     
-    @scala.inline
-    def setDenyVarargs(value: String*): Self = StObject.set(x, "deny", js.Array(value :_*))
+    inline def setDenyVarargs(value: String*): Self = StObject.set(x, "deny", js.Array(value :_*))
   }
 }

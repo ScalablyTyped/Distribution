@@ -13,16 +13,13 @@ trait bufferCodecsData extends StObject {
 }
 object bufferCodecsData {
   
-  @scala.inline
-  def apply(tracks: Tracks): bufferCodecsData = {
+  inline def apply(tracks: Tracks): bufferCodecsData = {
     val __obj = js.Dynamic.literal(tracks = tracks.asInstanceOf[js.Any])
     __obj.asInstanceOf[bufferCodecsData]
   }
   
-  @scala.inline
-  implicit class bufferCodecsDataMutableBuilder[Self <: bufferCodecsData] (val x: Self) extends AnyVal {
+  extension [Self <: bufferCodecsData](x: Self) {
     
-    @scala.inline
-    def setTracks(value: Tracks): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+    inline def setTracks(value: Tracks): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
   }
 }

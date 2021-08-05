@@ -20,16 +20,13 @@ trait heatmapStatistics extends StObject {
 }
 object heatmapStatistics {
   
-  @scala.inline
-  def apply(heatmapStatistics: heatmapStatisticsHeatmapStatisticsParams => js.Promise[HeatmapStatisticsResult]): heatmapStatistics = {
+  inline def apply(heatmapStatistics: heatmapStatisticsHeatmapStatisticsParams => js.Promise[HeatmapStatisticsResult]): heatmapStatistics = {
     val __obj = js.Dynamic.literal(heatmapStatistics = js.Any.fromFunction1(heatmapStatistics))
     __obj.asInstanceOf[heatmapStatistics]
   }
   
-  @scala.inline
-  implicit class heatmapStatisticsMutableBuilder[Self <: heatmapStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: heatmapStatistics](x: Self) {
     
-    @scala.inline
-    def setHeatmapStatistics(value: heatmapStatisticsHeatmapStatisticsParams => js.Promise[HeatmapStatisticsResult]): Self = StObject.set(x, "heatmapStatistics", js.Any.fromFunction1(value))
+    inline def setHeatmapStatistics(value: heatmapStatisticsHeatmapStatisticsParams => js.Promise[HeatmapStatisticsResult]): Self = StObject.set(x, "heatmapStatistics", js.Any.fromFunction1(value))
   }
 }

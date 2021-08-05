@@ -23,22 +23,17 @@ trait GitImportTfvcSource extends StObject {
 }
 object GitImportTfvcSource {
   
-  @scala.inline
-  def apply(importHistory: Boolean, importHistoryDurationInDays: Double, path: String): GitImportTfvcSource = {
+  inline def apply(importHistory: Boolean, importHistoryDurationInDays: Double, path: String): GitImportTfvcSource = {
     val __obj = js.Dynamic.literal(importHistory = importHistory.asInstanceOf[js.Any], importHistoryDurationInDays = importHistoryDurationInDays.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitImportTfvcSource]
   }
   
-  @scala.inline
-  implicit class GitImportTfvcSourceMutableBuilder[Self <: GitImportTfvcSource] (val x: Self) extends AnyVal {
+  extension [Self <: GitImportTfvcSource](x: Self) {
     
-    @scala.inline
-    def setImportHistory(value: Boolean): Self = StObject.set(x, "importHistory", value.asInstanceOf[js.Any])
+    inline def setImportHistory(value: Boolean): Self = StObject.set(x, "importHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportHistoryDurationInDays(value: Double): Self = StObject.set(x, "importHistoryDurationInDays", value.asInstanceOf[js.Any])
+    inline def setImportHistoryDurationInDays(value: Double): Self = StObject.set(x, "importHistoryDurationInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

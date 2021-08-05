@@ -15,22 +15,17 @@ trait SocketTcpPermission extends StObject {
 }
 object SocketTcpPermission {
   
-  @scala.inline
-  def apply(): SocketTcpPermission = {
+  inline def apply(): SocketTcpPermission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SocketTcpPermission]
   }
   
-  @scala.inline
-  implicit class SocketTcpPermissionMutableBuilder[Self <: SocketTcpPermission] (val x: Self) extends AnyVal {
+  extension [Self <: SocketTcpPermission](x: Self) {
     
-    @scala.inline
-    def setConnect(value: String | js.Array[String]): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+    inline def setConnect(value: String | js.Array[String]): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+    inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
     
-    @scala.inline
-    def setConnectVarargs(value: String*): Self = StObject.set(x, "connect", js.Array(value :_*))
+    inline def setConnectVarargs(value: String*): Self = StObject.set(x, "connect", js.Array(value :_*))
   }
 }

@@ -12,8 +12,7 @@ object injectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](hints: StringDictionary[String | Partialdefault]): js.Function1[/* target */ T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hints.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ T, T]]
+  inline def default[T](hints: StringDictionary[String | Partialdefault]): js.Function1[/* target */ T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hints.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ T, T]]
   
   @JSImport("forge-di/dist/framework/inject", "HINT_PROPERTY")
   @js.native

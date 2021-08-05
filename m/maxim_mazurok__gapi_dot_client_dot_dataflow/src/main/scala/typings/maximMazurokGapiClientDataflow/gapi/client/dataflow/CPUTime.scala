@@ -17,31 +17,23 @@ trait CPUTime extends StObject {
 }
 object CPUTime {
   
-  @scala.inline
-  def apply(): CPUTime = {
+  inline def apply(): CPUTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CPUTime]
   }
   
-  @scala.inline
-  implicit class CPUTimeMutableBuilder[Self <: CPUTime] (val x: Self) extends AnyVal {
+  extension [Self <: CPUTime](x: Self) {
     
-    @scala.inline
-    def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+    inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+    inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    @scala.inline
-    def setTotalMs(value: String): Self = StObject.set(x, "totalMs", value.asInstanceOf[js.Any])
+    inline def setTotalMs(value: String): Self = StObject.set(x, "totalMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalMsUndefined: Self = StObject.set(x, "totalMs", js.undefined)
+    inline def setTotalMsUndefined: Self = StObject.set(x, "totalMs", js.undefined)
   }
 }

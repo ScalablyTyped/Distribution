@@ -13,22 +13,17 @@ trait ResponseListAllTunnels200
 }
 object ResponseListAllTunnels200 {
   
-  @scala.inline
-  def apply(): ResponseListAllTunnels200 = {
+  inline def apply(): ResponseListAllTunnels200 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponseListAllTunnels200]
   }
   
-  @scala.inline
-  implicit class ResponseListAllTunnels200MutableBuilder[Self <: ResponseListAllTunnels200] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseListAllTunnels200](x: Self) {
     
-    @scala.inline
-    def setTunnels(value: js.Array[Tunnel]): Self = StObject.set(x, "tunnels", value.asInstanceOf[js.Any])
+    inline def setTunnels(value: js.Array[Tunnel]): Self = StObject.set(x, "tunnels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnelsUndefined: Self = StObject.set(x, "tunnels", js.undefined)
+    inline def setTunnelsUndefined: Self = StObject.set(x, "tunnels", js.undefined)
     
-    @scala.inline
-    def setTunnelsVarargs(value: Tunnel*): Self = StObject.set(x, "tunnels", js.Array(value :_*))
+    inline def setTunnelsVarargs(value: Tunnel*): Self = StObject.set(x, "tunnels", js.Array(value :_*))
   }
 }

@@ -42,8 +42,7 @@ object mod {
       * DOM element, you can use it like this: getInstance(alert)
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): typings.bootstrap.alertMod.Alert = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.alertMod.Alert]
+    inline def getInstance(element: Element): typings.bootstrap.alertMod.Alert = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.alertMod.Alert]
   }
   
   @JSImport("bootstrap", "Button")
@@ -83,10 +82,8 @@ object mod {
       * with a DOM element.
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): typings.bootstrap.carouselMod.Carousel = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.carouselMod.Carousel]
-    @scala.inline
-    def getInstance(element: Element, options: PartialOptions): typings.bootstrap.carouselMod.Carousel = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bootstrap.carouselMod.Carousel]
+    inline def getInstance(element: Element): typings.bootstrap.carouselMod.Carousel = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.carouselMod.Carousel]
+    inline def getInstance(element: Element, options: PartialOptions): typings.bootstrap.carouselMod.Carousel = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bootstrap.carouselMod.Carousel]
   }
   
   @JSImport("bootstrap", "Collapse")
@@ -123,10 +120,8 @@ object mod {
       * with a DOM element.
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): typings.bootstrap.collapseMod.Collapse = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.collapseMod.Collapse]
-    @scala.inline
-    def getInstance(element: Element, options: PartialOptionsParent): typings.bootstrap.collapseMod.Collapse = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bootstrap.collapseMod.Collapse]
+    inline def getInstance(element: Element): typings.bootstrap.collapseMod.Collapse = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.collapseMod.Collapse]
+    inline def getInstance(element: Element, options: PartialOptionsParent): typings.bootstrap.collapseMod.Collapse = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bootstrap.collapseMod.Collapse]
   }
   
   @JSImport("bootstrap", "Dropdown")
@@ -163,10 +158,8 @@ object mod {
       * with a DOM element.
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): typings.bootstrap.dropdownMod.Dropdown = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.dropdownMod.Dropdown]
-    @scala.inline
-    def getInstance(element: Element, options: PartialOptionsBoundary): typings.bootstrap.dropdownMod.Dropdown = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bootstrap.dropdownMod.Dropdown]
+    inline def getInstance(element: Element): typings.bootstrap.dropdownMod.Dropdown = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.dropdownMod.Dropdown]
+    inline def getInstance(element: Element, options: PartialOptionsBoundary): typings.bootstrap.dropdownMod.Dropdown = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bootstrap.dropdownMod.Dropdown]
   }
   
   @JSImport("bootstrap", "Modal")
@@ -205,10 +198,8 @@ object mod {
       * a DOM element
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): typings.bootstrap.modalMod.Modal = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.modalMod.Modal]
-    @scala.inline
-    def getInstance(element: Element, options: PartialOptionsBackdrop): typings.bootstrap.modalMod.Modal = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bootstrap.modalMod.Modal]
+    inline def getInstance(element: Element): typings.bootstrap.modalMod.Modal = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.modalMod.Modal]
+    inline def getInstance(element: Element, options: PartialOptionsBackdrop): typings.bootstrap.modalMod.Modal = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bootstrap.modalMod.Modal]
   }
   
   @JSImport("bootstrap", "Popover")
@@ -247,10 +238,8 @@ object mod {
       * with a DOM element
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): typings.bootstrap.popoverMod.Popover = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.popoverMod.Popover]
-    @scala.inline
-    def getInstance(element: Element, options: PartialOptionsAnimation): typings.bootstrap.popoverMod.Popover = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bootstrap.popoverMod.Popover]
+    inline def getInstance(element: Element): typings.bootstrap.popoverMod.Popover = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.popoverMod.Popover]
+    inline def getInstance(element: Element, options: PartialOptionsAnimation): typings.bootstrap.popoverMod.Popover = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bootstrap.popoverMod.Popover]
   }
   
   @JSImport("bootstrap", "ScrollSpy")
@@ -281,10 +270,8 @@ object mod {
       * with a DOM element
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): typings.bootstrap.scrollspyMod.ScrollSpy = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.scrollspyMod.ScrollSpy]
-    @scala.inline
-    def getInstance(element: Element, options: PartialOptionsMethod): typings.bootstrap.scrollspyMod.ScrollSpy = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bootstrap.scrollspyMod.ScrollSpy]
+    inline def getInstance(element: Element): typings.bootstrap.scrollspyMod.ScrollSpy = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.scrollspyMod.ScrollSpy]
+    inline def getInstance(element: Element, options: PartialOptionsMethod): typings.bootstrap.scrollspyMod.ScrollSpy = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bootstrap.scrollspyMod.ScrollSpy]
   }
   
   @JSImport("bootstrap", "Tab")
@@ -320,8 +307,7 @@ object mod {
       * DOM element
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): typings.bootstrap.tabMod.Tab = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.tabMod.Tab]
+    inline def getInstance(element: Element): typings.bootstrap.tabMod.Tab = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.tabMod.Tab]
   }
   
   @JSImport("bootstrap", "Toast")
@@ -357,8 +343,7 @@ object mod {
       * with a DOM element
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): typings.bootstrap.toastMod.Toast = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.toastMod.Toast]
+    inline def getInstance(element: Element): typings.bootstrap.toastMod.Toast = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.toastMod.Toast]
   }
   
   @JSImport("bootstrap", "Tooltip")
@@ -396,7 +381,6 @@ object mod {
       * with a DOM element
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): typings.bootstrap.tooltipMod.Tooltip = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.tooltipMod.Tooltip]
+    inline def getInstance(element: Element): typings.bootstrap.tooltipMod.Tooltip = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.bootstrap.tooltipMod.Tooltip]
   }
 }

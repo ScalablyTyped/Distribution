@@ -14,25 +14,19 @@ trait MatterPermission extends StObject {
 }
 object MatterPermission {
   
-  @scala.inline
-  def apply(): MatterPermission = {
+  inline def apply(): MatterPermission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatterPermission]
   }
   
-  @scala.inline
-  implicit class MatterPermissionMutableBuilder[Self <: MatterPermission] (val x: Self) extends AnyVal {
+  extension [Self <: MatterPermission](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

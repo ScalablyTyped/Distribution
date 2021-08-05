@@ -43,55 +43,39 @@ trait ActiveViolation extends StObject {
 }
 object ActiveViolation {
   
-  @scala.inline
-  def apply(): ActiveViolation = {
+  inline def apply(): ActiveViolation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActiveViolation]
   }
   
-  @scala.inline
-  implicit class ActiveViolationMutableBuilder[Self <: ActiveViolation] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveViolation](x: Self) {
     
-    @scala.inline
-    def setBehavior(value: Behavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    inline def setBehavior(value: Behavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+    inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
     
-    @scala.inline
-    def setLastViolationTime(value: Timestamp): Self = StObject.set(x, "lastViolationTime", value.asInstanceOf[js.Any])
+    inline def setLastViolationTime(value: Timestamp): Self = StObject.set(x, "lastViolationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastViolationTimeUndefined: Self = StObject.set(x, "lastViolationTime", js.undefined)
+    inline def setLastViolationTimeUndefined: Self = StObject.set(x, "lastViolationTime", js.undefined)
     
-    @scala.inline
-    def setLastViolationValue(value: MetricValue): Self = StObject.set(x, "lastViolationValue", value.asInstanceOf[js.Any])
+    inline def setLastViolationValue(value: MetricValue): Self = StObject.set(x, "lastViolationValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastViolationValueUndefined: Self = StObject.set(x, "lastViolationValue", js.undefined)
+    inline def setLastViolationValueUndefined: Self = StObject.set(x, "lastViolationValue", js.undefined)
     
-    @scala.inline
-    def setSecurityProfileName(value: SecurityProfileName): Self = StObject.set(x, "securityProfileName", value.asInstanceOf[js.Any])
+    inline def setSecurityProfileName(value: SecurityProfileName): Self = StObject.set(x, "securityProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityProfileNameUndefined: Self = StObject.set(x, "securityProfileName", js.undefined)
+    inline def setSecurityProfileNameUndefined: Self = StObject.set(x, "securityProfileName", js.undefined)
     
-    @scala.inline
-    def setThingName(value: DeviceDefenderThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: DeviceDefenderThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
+    inline def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
     
-    @scala.inline
-    def setViolationId(value: ViolationId): Self = StObject.set(x, "violationId", value.asInstanceOf[js.Any])
+    inline def setViolationId(value: ViolationId): Self = StObject.set(x, "violationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolationIdUndefined: Self = StObject.set(x, "violationId", js.undefined)
+    inline def setViolationIdUndefined: Self = StObject.set(x, "violationId", js.undefined)
     
-    @scala.inline
-    def setViolationStartTime(value: Timestamp): Self = StObject.set(x, "violationStartTime", value.asInstanceOf[js.Any])
+    inline def setViolationStartTime(value: Timestamp): Self = StObject.set(x, "violationStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolationStartTimeUndefined: Self = StObject.set(x, "violationStartTime", js.undefined)
+    inline def setViolationStartTimeUndefined: Self = StObject.set(x, "violationStartTime", js.undefined)
   }
 }

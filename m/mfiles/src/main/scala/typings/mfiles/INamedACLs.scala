@@ -12,19 +12,15 @@ trait INamedACLs extends StObject {
 }
 object INamedACLs {
   
-  @scala.inline
-  def apply(Count: Double, Item: Double => INamedACL): INamedACLs = {
+  inline def apply(Count: Double, Item: Double => INamedACL): INamedACLs = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.asInstanceOf[INamedACLs]
   }
   
-  @scala.inline
-  implicit class INamedACLsMutableBuilder[Self <: INamedACLs] (val x: Self) extends AnyVal {
+  extension [Self <: INamedACLs](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => INamedACL): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => INamedACL): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

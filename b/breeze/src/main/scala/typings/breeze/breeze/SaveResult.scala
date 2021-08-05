@@ -15,28 +15,21 @@ trait SaveResult extends StObject {
 }
 object SaveResult {
   
-  @scala.inline
-  def apply(XHR: XMLHttpRequest, entities: js.Array[Entity], keyMappings: js.Array[KeyMapping]): SaveResult = {
+  inline def apply(XHR: XMLHttpRequest, entities: js.Array[Entity], keyMappings: js.Array[KeyMapping]): SaveResult = {
     val __obj = js.Dynamic.literal(XHR = XHR.asInstanceOf[js.Any], entities = entities.asInstanceOf[js.Any], keyMappings = keyMappings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveResult]
   }
   
-  @scala.inline
-  implicit class SaveResultMutableBuilder[Self <: SaveResult] (val x: Self) extends AnyVal {
+  extension [Self <: SaveResult](x: Self) {
     
-    @scala.inline
-    def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyMappings(value: js.Array[KeyMapping]): Self = StObject.set(x, "keyMappings", value.asInstanceOf[js.Any])
+    inline def setKeyMappings(value: js.Array[KeyMapping]): Self = StObject.set(x, "keyMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyMappingsVarargs(value: KeyMapping*): Self = StObject.set(x, "keyMappings", js.Array(value :_*))
+    inline def setKeyMappingsVarargs(value: KeyMapping*): Self = StObject.set(x, "keyMappings", js.Array(value :_*))
     
-    @scala.inline
-    def setXHR(value: XMLHttpRequest): Self = StObject.set(x, "XHR", value.asInstanceOf[js.Any])
+    inline def setXHR(value: XMLHttpRequest): Self = StObject.set(x, "XHR", value.asInstanceOf[js.Any])
   }
 }

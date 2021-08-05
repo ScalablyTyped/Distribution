@@ -23,8 +23,7 @@ trait MochaPhantomJS extends StObject {
 }
 object MochaPhantomJS {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     columns: Double,
     customizeMocha: MochaPhantomJSOptions => Unit,
     mochaStartWait: Double,
@@ -37,28 +36,20 @@ object MochaPhantomJS {
     __obj.asInstanceOf[MochaPhantomJS]
   }
   
-  @scala.inline
-  implicit class MochaPhantomJSMutableBuilder[Self <: MochaPhantomJS] (val x: Self) extends AnyVal {
+  extension [Self <: MochaPhantomJS](x: Self) {
     
-    @scala.inline
-    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomizeMocha(value: MochaPhantomJSOptions => Unit): Self = StObject.set(x, "customizeMocha", js.Any.fromFunction1(value))
+    inline def setCustomizeMocha(value: MochaPhantomJSOptions => Unit): Self = StObject.set(x, "customizeMocha", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMochaStartWait(value: Double): Self = StObject.set(x, "mochaStartWait", value.asInstanceOf[js.Any])
+    inline def setMochaStartWait(value: Double): Self = StObject.set(x, "mochaStartWait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+    inline def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -17,23 +17,18 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setEnvPreprocessor(value: js.Array[String]): Self = StObject.set(x, "envPreprocessor", value.asInstanceOf[js.Any])
+      inline def setEnvPreprocessor(value: js.Array[String]): Self = StObject.set(x, "envPreprocessor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvPreprocessorUndefined: Self = StObject.set(x, "envPreprocessor", js.undefined)
+      inline def setEnvPreprocessorUndefined: Self = StObject.set(x, "envPreprocessor", js.undefined)
       
-      @scala.inline
-      def setEnvPreprocessorVarargs(value: String*): Self = StObject.set(x, "envPreprocessor", js.Array(value :_*))
+      inline def setEnvPreprocessorVarargs(value: String*): Self = StObject.set(x, "envPreprocessor", js.Array(value :_*))
     }
   }
 }

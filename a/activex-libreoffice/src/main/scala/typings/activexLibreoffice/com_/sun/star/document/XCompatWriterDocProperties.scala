@@ -14,22 +14,17 @@ trait XCompatWriterDocProperties extends StObject {
 }
 object XCompatWriterDocProperties {
   
-  @scala.inline
-  def apply(Category: String, Company: String, Manager: String): XCompatWriterDocProperties = {
+  inline def apply(Category: String, Company: String, Manager: String): XCompatWriterDocProperties = {
     val __obj = js.Dynamic.literal(Category = Category.asInstanceOf[js.Any], Company = Company.asInstanceOf[js.Any], Manager = Manager.asInstanceOf[js.Any])
     __obj.asInstanceOf[XCompatWriterDocProperties]
   }
   
-  @scala.inline
-  implicit class XCompatWriterDocPropertiesMutableBuilder[Self <: XCompatWriterDocProperties] (val x: Self) extends AnyVal {
+  extension [Self <: XCompatWriterDocProperties](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompany(value: String): Self = StObject.set(x, "Company", value.asInstanceOf[js.Any])
+    inline def setCompany(value: String): Self = StObject.set(x, "Company", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManager(value: String): Self = StObject.set(x, "Manager", value.asInstanceOf[js.Any])
+    inline def setManager(value: String): Self = StObject.set(x, "Manager", value.asInstanceOf[js.Any])
   }
 }

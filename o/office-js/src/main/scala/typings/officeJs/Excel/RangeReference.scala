@@ -22,16 +22,13 @@ trait RangeReference extends StObject {
 }
 object RangeReference {
   
-  @scala.inline
-  def apply(address: String): RangeReference = {
+  inline def apply(address: String): RangeReference = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeReference]
   }
   
-  @scala.inline
-  implicit class RangeReferenceMutableBuilder[Self <: RangeReference] (val x: Self) extends AnyVal {
+  extension [Self <: RangeReference](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
   }
 }

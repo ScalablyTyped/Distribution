@@ -12,6 +12,5 @@ object installCommonGlobalsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(globalObject: Global, globals: ConfigGlobals): Global & ConfigGlobals = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(globalObject.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[Global & ConfigGlobals]
+  inline def default(globalObject: Global, globals: ConfigGlobals): Global & ConfigGlobals = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(globalObject.asInstanceOf[js.Any], globals.asInstanceOf[js.Any])).asInstanceOf[Global & ConfigGlobals]
 }

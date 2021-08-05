@@ -28,8 +28,7 @@ trait OlapTableViewResultCell extends StObject {
 }
 object OlapTableViewResultCell {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cellOrdinal: () => Double,
     formattedValue: () => String,
     resultCellIndex: () => Double,
@@ -39,19 +38,14 @@ object OlapTableViewResultCell {
     __obj.asInstanceOf[OlapTableViewResultCell]
   }
   
-  @scala.inline
-  implicit class OlapTableViewResultCellMutableBuilder[Self <: OlapTableViewResultCell] (val x: Self) extends AnyVal {
+  extension [Self <: OlapTableViewResultCell](x: Self) {
     
-    @scala.inline
-    def setCellOrdinal(value: () => Double): Self = StObject.set(x, "cellOrdinal", js.Any.fromFunction0(value))
+    inline def setCellOrdinal(value: () => Double): Self = StObject.set(x, "cellOrdinal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFormattedValue(value: () => String): Self = StObject.set(x, "formattedValue", js.Any.fromFunction0(value))
+    inline def setFormattedValue(value: () => String): Self = StObject.set(x, "formattedValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResultCellIndex(value: () => Double): Self = StObject.set(x, "resultCellIndex", js.Any.fromFunction0(value))
+    inline def setResultCellIndex(value: () => Double): Self = StObject.set(x, "resultCellIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValue(value: () => js.Object): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
+    inline def setValue(value: () => js.Object): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
   }
 }

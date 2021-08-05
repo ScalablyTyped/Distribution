@@ -8,16 +8,13 @@ object meteorAstronomyStrings {
   
   @js.native
   sealed trait Fields extends StObject
-  @scala.inline
-  def Fields: Fields = "Fields".asInstanceOf[Fields]
+  inline def Fields: Fields = "Fields".asInstanceOf[Fields]
   
   @js.native
   sealed trait Helpers extends StObject
-  @scala.inline
-  def Helpers: Helpers = "Helpers".asInstanceOf[Helpers]
+  inline def Helpers: Helpers = "Helpers".asInstanceOf[Helpers]
   
   @js.native
   sealed trait _id extends StObject
-  @scala.inline
-  def _id: _id = "_id".asInstanceOf[_id]
+  inline def _id: _id = "_id".asInstanceOf[_id]
 }

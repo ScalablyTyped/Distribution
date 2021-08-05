@@ -22,22 +22,17 @@ trait ScaleMixins extends StObject {
 }
 object ScaleMixins {
   
-  @scala.inline
-  def apply(): ScaleMixins = {
+  inline def apply(): ScaleMixins = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScaleMixins]
   }
   
-  @scala.inline
-  implicit class ScaleMixinsMutableBuilder[Self <: ScaleMixins] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleMixins](x: Self) {
     
-    @scala.inline
-    def setScale(value: Scale[ExprRef | SignalRef]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Scale[ExprRef | SignalRef]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleNull: Self = StObject.set(x, "scale", null)
+    inline def setScaleNull: Self = StObject.set(x, "scale", null)
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

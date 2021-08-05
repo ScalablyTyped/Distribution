@@ -12,19 +12,15 @@ trait Hourly extends StObject {
 }
 object Hourly {
   
-  @scala.inline
-  def apply(daily: scala.Double, hourly: scala.Double): Hourly = {
+  inline def apply(daily: scala.Double, hourly: scala.Double): Hourly = {
     val __obj = js.Dynamic.literal(daily = daily.asInstanceOf[js.Any], hourly = hourly.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hourly]
   }
   
-  @scala.inline
-  implicit class HourlyMutableBuilder[Self <: Hourly] (val x: Self) extends AnyVal {
+  extension [Self <: Hourly](x: Self) {
     
-    @scala.inline
-    def setDaily(value: scala.Double): Self = StObject.set(x, "daily", value.asInstanceOf[js.Any])
+    inline def setDaily(value: scala.Double): Self = StObject.set(x, "daily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourly(value: scala.Double): Self = StObject.set(x, "hourly", value.asInstanceOf[js.Any])
+    inline def setHourly(value: scala.Double): Self = StObject.set(x, "hourly", value.asInstanceOf[js.Any])
   }
 }

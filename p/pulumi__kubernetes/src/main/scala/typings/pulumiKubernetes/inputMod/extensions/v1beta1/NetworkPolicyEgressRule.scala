@@ -22,31 +22,23 @@ trait NetworkPolicyEgressRule extends StObject {
 }
 object NetworkPolicyEgressRule {
   
-  @scala.inline
-  def apply(): NetworkPolicyEgressRule = {
+  inline def apply(): NetworkPolicyEgressRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkPolicyEgressRule]
   }
   
-  @scala.inline
-  implicit class NetworkPolicyEgressRuleMutableBuilder[Self <: NetworkPolicyEgressRule] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkPolicyEgressRule](x: Self) {
     
-    @scala.inline
-    def setPorts(value: Input[js.Array[Input[NetworkPolicyPort]]]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: Input[js.Array[Input[NetworkPolicyPort]]]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+    inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
-    @scala.inline
-    def setPortsVarargs(value: Input[NetworkPolicyPort]*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: Input[NetworkPolicyPort]*): Self = StObject.set(x, "ports", js.Array(value :_*))
     
-    @scala.inline
-    def setTo(value: Input[js.Array[Input[NetworkPolicyPeer]]]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Input[js.Array[Input[NetworkPolicyPeer]]]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
-    @scala.inline
-    def setToVarargs(value: Input[NetworkPolicyPeer]*): Self = StObject.set(x, "to", js.Array(value :_*))
+    inline def setToVarargs(value: Input[NetworkPolicyPeer]*): Self = StObject.set(x, "to", js.Array(value :_*))
   }
 }

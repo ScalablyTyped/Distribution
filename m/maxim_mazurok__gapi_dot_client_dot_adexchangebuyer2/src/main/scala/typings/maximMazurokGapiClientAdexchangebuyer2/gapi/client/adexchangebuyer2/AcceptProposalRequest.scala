@@ -11,19 +11,15 @@ trait AcceptProposalRequest extends StObject {
 }
 object AcceptProposalRequest {
   
-  @scala.inline
-  def apply(): AcceptProposalRequest = {
+  inline def apply(): AcceptProposalRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AcceptProposalRequest]
   }
   
-  @scala.inline
-  implicit class AcceptProposalRequestMutableBuilder[Self <: AcceptProposalRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptProposalRequest](x: Self) {
     
-    @scala.inline
-    def setProposalRevision(value: String): Self = StObject.set(x, "proposalRevision", value.asInstanceOf[js.Any])
+    inline def setProposalRevision(value: String): Self = StObject.set(x, "proposalRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalRevisionUndefined: Self = StObject.set(x, "proposalRevision", js.undefined)
+    inline def setProposalRevisionUndefined: Self = StObject.set(x, "proposalRevision", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait PickColorTypeKnobvalue extends StObject {
 }
 object PickColorTypeKnobvalue {
   
-  @scala.inline
-  def apply(value: ColorTypeKnobValue): PickColorTypeKnobvalue = {
+  inline def apply(value: ColorTypeKnobValue): PickColorTypeKnobvalue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickColorTypeKnobvalue]
   }
   
-  @scala.inline
-  implicit class PickColorTypeKnobvalueMutableBuilder[Self <: PickColorTypeKnobvalue] (val x: Self) extends AnyVal {
+  extension [Self <: PickColorTypeKnobvalue](x: Self) {
     
-    @scala.inline
-    def setValue(value: ColorTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ColorTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

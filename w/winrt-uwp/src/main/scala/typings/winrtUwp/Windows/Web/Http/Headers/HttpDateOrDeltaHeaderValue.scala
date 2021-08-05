@@ -16,19 +16,15 @@ trait HttpDateOrDeltaHeaderValue extends StObject {
 }
 object HttpDateOrDeltaHeaderValue {
   
-  @scala.inline
-  def apply(date: Date, delta: Double): HttpDateOrDeltaHeaderValue = {
+  inline def apply(date: Date, delta: Double): HttpDateOrDeltaHeaderValue = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpDateOrDeltaHeaderValue]
   }
   
-  @scala.inline
-  implicit class HttpDateOrDeltaHeaderValueMutableBuilder[Self <: HttpDateOrDeltaHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: HttpDateOrDeltaHeaderValue](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
   }
 }

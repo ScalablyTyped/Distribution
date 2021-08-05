@@ -23,22 +23,17 @@ trait BatchAttachObject extends StObject {
 }
 object BatchAttachObject {
   
-  @scala.inline
-  def apply(ChildReference: ObjectReference, LinkName: LinkName, ParentReference: ObjectReference): BatchAttachObject = {
+  inline def apply(ChildReference: ObjectReference, LinkName: LinkName, ParentReference: ObjectReference): BatchAttachObject = {
     val __obj = js.Dynamic.literal(ChildReference = ChildReference.asInstanceOf[js.Any], LinkName = LinkName.asInstanceOf[js.Any], ParentReference = ParentReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchAttachObject]
   }
   
-  @scala.inline
-  implicit class BatchAttachObjectMutableBuilder[Self <: BatchAttachObject] (val x: Self) extends AnyVal {
+  extension [Self <: BatchAttachObject](x: Self) {
     
-    @scala.inline
-    def setChildReference(value: ObjectReference): Self = StObject.set(x, "ChildReference", value.asInstanceOf[js.Any])
+    inline def setChildReference(value: ObjectReference): Self = StObject.set(x, "ChildReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkName(value: LinkName): Self = StObject.set(x, "LinkName", value.asInstanceOf[js.Any])
+    inline def setLinkName(value: LinkName): Self = StObject.set(x, "LinkName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentReference(value: ObjectReference): Self = StObject.set(x, "ParentReference", value.asInstanceOf[js.Any])
+    inline def setParentReference(value: ObjectReference): Self = StObject.set(x, "ParentReference", value.asInstanceOf[js.Any])
   }
 }

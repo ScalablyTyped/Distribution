@@ -14,8 +14,7 @@ trait InvalidEvent[T]
 }
 object InvalidEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     bubbles: Boolean,
     cancelable: Boolean,
     currentTarget: EventTarget & T,
@@ -37,10 +36,8 @@ object InvalidEvent {
     __obj.asInstanceOf[InvalidEvent[T]]
   }
   
-  @scala.inline
-  implicit class InvalidEventMutableBuilder[Self <: InvalidEvent[?], T] (val x: Self & InvalidEvent[T]) extends AnyVal {
+  extension [Self <: InvalidEvent[?], T](x: Self & InvalidEvent[T]) {
     
-    @scala.inline
-    def setTarget(value: EventTarget & T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: EventTarget & T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

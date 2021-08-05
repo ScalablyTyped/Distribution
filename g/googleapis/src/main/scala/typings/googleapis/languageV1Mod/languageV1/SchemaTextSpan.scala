@@ -22,25 +22,19 @@ trait SchemaTextSpan extends StObject {
 }
 object SchemaTextSpan {
   
-  @scala.inline
-  def apply(): SchemaTextSpan = {
+  inline def apply(): SchemaTextSpan = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTextSpan]
   }
   
-  @scala.inline
-  implicit class SchemaTextSpanMutableBuilder[Self <: SchemaTextSpan] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTextSpan](x: Self) {
     
-    @scala.inline
-    def setBeginOffset(value: Double): Self = StObject.set(x, "beginOffset", value.asInstanceOf[js.Any])
+    inline def setBeginOffset(value: Double): Self = StObject.set(x, "beginOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginOffsetUndefined: Self = StObject.set(x, "beginOffset", js.undefined)
+    inline def setBeginOffsetUndefined: Self = StObject.set(x, "beginOffset", js.undefined)
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

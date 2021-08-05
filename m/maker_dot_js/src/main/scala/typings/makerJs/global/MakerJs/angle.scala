@@ -21,8 +21,7 @@ object angle {
     * @param mirrorY Boolean to mirror on the y axis.
     * @returns Mirrored angle.
     */
-  @scala.inline
-  def mirror(angleInDegrees: Double, mirrorX: Boolean, mirrorY: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mirror")(angleInDegrees.asInstanceOf[js.Any], mirrorX.asInstanceOf[js.Any], mirrorY.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def mirror(angleInDegrees: Double, mirrorX: Boolean, mirrorY: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mirror")(angleInDegrees.asInstanceOf[js.Any], mirrorX.asInstanceOf[js.Any], mirrorY.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Ensures an angle is not greater than 360
@@ -30,8 +29,7 @@ object angle {
     * @param angleInDegrees Angle in degrees.
     * @retiurns Same polar angle but not greater than 360 degrees.
     */
-  @scala.inline
-  def noRevolutions(angleInDegrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("noRevolutions")(angleInDegrees.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def noRevolutions(angleInDegrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("noRevolutions")(angleInDegrees.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Get an arc's end angle, ensured to be greater than its start angle.
@@ -39,8 +37,7 @@ object angle {
     * @param arc An arc path object.
     * @returns End angle of arc.
     */
-  @scala.inline
-  def ofArcEnd(arc: IPathArc): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ofArcEnd")(arc.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def ofArcEnd(arc: IPathArc): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ofArcEnd")(arc.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Get the angle in the middle of an arc's start and end angles.
@@ -49,10 +46,8 @@ object angle {
     * @param ratio Optional number between 0 and 1 specifying percentage between start and end angles. Default is .5
     * @returns Middle angle of arc.
     */
-  @scala.inline
-  def ofArcMiddle(arc: IPathArc): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ofArcMiddle")(arc.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def ofArcMiddle(arc: IPathArc, ratio: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ofArcMiddle")(arc.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def ofArcMiddle(arc: IPathArc): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ofArcMiddle")(arc.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def ofArcMiddle(arc: IPathArc, ratio: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ofArcMiddle")(arc.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Total angle of an arc between its start and end angles.
@@ -60,8 +55,7 @@ object angle {
     * @param arc The arc to measure.
     * @returns Angle of arc.
     */
-  @scala.inline
-  def ofArcSpan(arc: IPathArc): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ofArcSpan")(arc.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def ofArcSpan(arc: IPathArc): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ofArcSpan")(arc.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Angle of a line path.
@@ -69,8 +63,7 @@ object angle {
     * @param line The line path to find the angle of.
     * @returns Angle of the line path, in degrees.
     */
-  @scala.inline
-  def ofLineInDegrees(line: IPathLine): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ofLineInDegrees")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def ofLineInDegrees(line: IPathLine): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ofLineInDegrees")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Angle of a line through a point, in degrees.
@@ -79,8 +72,7 @@ object angle {
     * @param origin Point of origin of the angle.
     * @returns Angle of the line throught the point, in degrees.
     */
-  @scala.inline
-  def ofPointInDegrees(origin: IPoint, pointToFindAngle: IPoint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ofPointInDegrees")(origin.asInstanceOf[js.Any], pointToFindAngle.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def ofPointInDegrees(origin: IPoint, pointToFindAngle: IPoint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ofPointInDegrees")(origin.asInstanceOf[js.Any], pointToFindAngle.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Angle of a line through a point, in radians.
@@ -89,8 +81,7 @@ object angle {
     * @param origin Point of origin of the angle.
     * @returns Angle of the line throught the point, in radians.
     */
-  @scala.inline
-  def ofPointInRadians(origin: IPoint, pointToFindAngle: IPoint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ofPointInRadians")(origin.asInstanceOf[js.Any], pointToFindAngle.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def ofPointInRadians(origin: IPoint, pointToFindAngle: IPoint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ofPointInRadians")(origin.asInstanceOf[js.Any], pointToFindAngle.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Convert an angle from radians to degrees.
@@ -98,8 +89,7 @@ object angle {
     * @param angleInRadians Angle in radians.
     * @returns Angle in degrees.
     */
-  @scala.inline
-  def toDegrees(angleInRadians: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDegrees")(angleInRadians.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def toDegrees(angleInRadians: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDegrees")(angleInRadians.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Convert an angle from degrees to radians.
@@ -107,6 +97,5 @@ object angle {
     * @param angleInDegrees Angle in degrees.
     * @returns Angle in radians.
     */
-  @scala.inline
-  def toRadians(angleInDegrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toRadians")(angleInDegrees.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def toRadians(angleInDegrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toRadians")(angleInDegrees.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

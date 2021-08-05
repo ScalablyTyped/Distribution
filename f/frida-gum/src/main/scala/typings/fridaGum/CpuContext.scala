@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CpuContext extends StObject
 object CpuContext {
   
-  @scala.inline
-  def Arm64CpuContext(
+  inline def Arm64CpuContext(
     fp: NativePointer,
     lr: NativePointer,
     pc: NativePointer,
@@ -55,8 +54,7 @@ object CpuContext {
     __obj.asInstanceOf[typings.fridaGum.Arm64CpuContext]
   }
   
-  @scala.inline
-  def ArmCpuContext(
+  inline def ArmCpuContext(
     lr: NativePointer,
     pc: NativePointer,
     r0: NativePointer,
@@ -78,8 +76,7 @@ object CpuContext {
     __obj.asInstanceOf[typings.fridaGum.ArmCpuContext]
   }
   
-  @scala.inline
-  def Ia32CpuContext(
+  inline def Ia32CpuContext(
     eax: NativePointer,
     ebp: NativePointer,
     ebx: NativePointer,
@@ -96,8 +93,7 @@ object CpuContext {
     __obj.asInstanceOf[typings.fridaGum.Ia32CpuContext]
   }
   
-  @scala.inline
-  def MipsCpuContext(
+  inline def MipsCpuContext(
     a0: NativePointer,
     a1: NativePointer,
     a2: NativePointer,
@@ -137,14 +133,12 @@ object CpuContext {
     __obj.asInstanceOf[typings.fridaGum.MipsCpuContext]
   }
   
-  @scala.inline
-  def PortableCpuContext(pc: NativePointer, sp: NativePointer): typings.fridaGum.PortableCpuContext = {
+  inline def PortableCpuContext(pc: NativePointer, sp: NativePointer): typings.fridaGum.PortableCpuContext = {
     val __obj = js.Dynamic.literal(pc = pc.asInstanceOf[js.Any], sp = sp.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fridaGum.PortableCpuContext]
   }
   
-  @scala.inline
-  def X64CpuContext(
+  inline def X64CpuContext(
     pc: NativePointer,
     r10: NativePointer,
     r11: NativePointer,

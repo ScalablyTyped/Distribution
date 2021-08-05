@@ -21,23 +21,18 @@ trait DownloadErrorEvent
 }
 object DownloadErrorEvent {
   
-  @scala.inline
-  def apply(event: Id): DownloadErrorEvent = {
+  inline def apply(event: Id): DownloadErrorEvent = {
     val __obj = js.Dynamic.literal(error = "download", event = event.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[DownloadErrorEvent]
   }
   
-  @scala.inline
-  implicit class DownloadErrorEventMutableBuilder[Self <: DownloadErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: download): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: download): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: Id): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Id): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

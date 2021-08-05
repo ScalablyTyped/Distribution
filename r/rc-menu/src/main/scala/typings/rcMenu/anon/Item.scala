@@ -19,8 +19,7 @@ trait Item extends StObject {
 }
 object Item {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     domEvent: typings.react.mod.MouseEvent[HTMLElement, MouseEvent],
     item: ReactInstance,
     key: String | Double,
@@ -30,22 +29,16 @@ object Item {
     __obj.asInstanceOf[Item]
   }
   
-  @scala.inline
-  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+  extension [Self <: Item](x: Self) {
     
-    @scala.inline
-    def setDomEvent(value: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
+    inline def setDomEvent(value: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: ReactInstance): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: ReactInstance): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPath(value: js.Array[String | Double]): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
+    inline def setKeyPath(value: js.Array[String | Double]): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPathVarargs(value: (String | Double)*): Self = StObject.set(x, "keyPath", js.Array(value :_*))
+    inline def setKeyPathVarargs(value: (String | Double)*): Self = StObject.set(x, "keyPath", js.Array(value :_*))
   }
 }

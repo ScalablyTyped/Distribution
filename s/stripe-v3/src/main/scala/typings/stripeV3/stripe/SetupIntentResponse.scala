@@ -13,25 +13,19 @@ trait SetupIntentResponse extends StObject {
 }
 object SetupIntentResponse {
   
-  @scala.inline
-  def apply(): SetupIntentResponse = {
+  inline def apply(): SetupIntentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetupIntentResponse]
   }
   
-  @scala.inline
-  implicit class SetupIntentResponseMutableBuilder[Self <: SetupIntentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SetupIntentResponse](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setSetupIntent(value: SetupIntent): Self = StObject.set(x, "setupIntent", value.asInstanceOf[js.Any])
+    inline def setSetupIntent(value: SetupIntent): Self = StObject.set(x, "setupIntent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetupIntentUndefined: Self = StObject.set(x, "setupIntent", js.undefined)
+    inline def setSetupIntentUndefined: Self = StObject.set(x, "setupIntent", js.undefined)
   }
 }

@@ -52,8 +52,7 @@ trait CallFrame extends StObject {
 }
 object CallFrame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callFrameId: CallFrameId,
     functionName: String,
     location: Location,
@@ -66,40 +65,28 @@ object CallFrame {
     __obj.asInstanceOf[CallFrame]
   }
   
-  @scala.inline
-  implicit class CallFrameMutableBuilder[Self <: CallFrame] (val x: Self) extends AnyVal {
+  extension [Self <: CallFrame](x: Self) {
     
-    @scala.inline
-    def setCallFrameId(value: CallFrameId): Self = StObject.set(x, "callFrameId", value.asInstanceOf[js.Any])
+    inline def setCallFrameId(value: CallFrameId): Self = StObject.set(x, "callFrameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionLocation(value: Location): Self = StObject.set(x, "functionLocation", value.asInstanceOf[js.Any])
+    inline def setFunctionLocation(value: Location): Self = StObject.set(x, "functionLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionLocationUndefined: Self = StObject.set(x, "functionLocation", js.undefined)
+    inline def setFunctionLocationUndefined: Self = StObject.set(x, "functionLocation", js.undefined)
     
-    @scala.inline
-    def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: RemoteObject): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: RemoteObject): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValueUndefined: Self = StObject.set(x, "returnValue", js.undefined)
+    inline def setReturnValueUndefined: Self = StObject.set(x, "returnValue", js.undefined)
     
-    @scala.inline
-    def setScopeChain(value: js.Array[Scope]): Self = StObject.set(x, "scopeChain", value.asInstanceOf[js.Any])
+    inline def setScopeChain(value: js.Array[Scope]): Self = StObject.set(x, "scopeChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeChainVarargs(value: Scope*): Self = StObject.set(x, "scopeChain", js.Array(value :_*))
+    inline def setScopeChainVarargs(value: Scope*): Self = StObject.set(x, "scopeChain", js.Array(value :_*))
     
-    @scala.inline
-    def setThis(value: RemoteObject): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
+    inline def setThis(value: RemoteObject): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

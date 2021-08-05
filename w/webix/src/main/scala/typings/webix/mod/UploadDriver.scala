@@ -14,10 +14,8 @@ object UploadDriver {
   @js.native
   val ^ : UploadDriver = js.native
   
-  @scala.inline
-  implicit class UploadDriverMutableBuilder[Self <: UploadDriver] (val x: Self) extends AnyVal {
+  extension [Self <: UploadDriver](x: Self) {
     
-    @scala.inline
-    def setHtml5(value: js.Any): Self = StObject.set(x, "html5", value.asInstanceOf[js.Any])
+    inline def setHtml5(value: js.Any): Self = StObject.set(x, "html5", value.asInstanceOf[js.Any])
   }
 }

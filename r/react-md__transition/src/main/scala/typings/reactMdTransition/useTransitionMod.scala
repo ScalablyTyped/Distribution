@@ -16,8 +16,7 @@ object useTransitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useTransition[E /* <: HTMLElement */](
+  inline def useTransition[E /* <: HTMLElement */](
     hasAppearRepaintTemporaryTransitionInPropTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedPropRef: TransitionOptions[E]
   ): TransitionReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTransition")(hasAppearRepaintTemporaryTransitionInPropTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedPropRef.asInstanceOf[js.Any]).asInstanceOf[TransitionReturnValue[E]]
   
@@ -55,8 +54,7 @@ object useTransitionMod {
   }
   object TransitionReturnValue {
     
-    @scala.inline
-    def apply[E /* <: HTMLElement */](
+    inline def apply[E /* <: HTMLElement */](
       appearing: Boolean,
       dispatch: TransitionAction => Unit,
       ref: /* instance */ E | Null => Unit,
@@ -67,14 +65,11 @@ object useTransitionMod {
       __obj.asInstanceOf[TransitionReturnValue[E]]
     }
     
-    @scala.inline
-    implicit class TransitionReturnValueMutableBuilder[Self <: TransitionReturnValue[?], E /* <: HTMLElement */] (val x: Self & TransitionReturnValue[E]) extends AnyVal {
+    extension [Self <: TransitionReturnValue[?], E /* <: HTMLElement */](x: Self & TransitionReturnValue[E]) {
       
-      @scala.inline
-      def setDispatch(value: TransitionAction => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: TransitionAction => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRef(value: /* instance */ E | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRef(value: /* instance */ E | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     }
   }
   
@@ -103,23 +98,18 @@ object useTransitionMod {
   }
   object TransitionState {
     
-    @scala.inline
-    def apply(appearing: Boolean, rendered: Boolean, stage: TransitionStage): TransitionState = {
+    inline def apply(appearing: Boolean, rendered: Boolean, stage: TransitionStage): TransitionState = {
       val __obj = js.Dynamic.literal(appearing = appearing.asInstanceOf[js.Any], rendered = rendered.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransitionState]
     }
     
-    @scala.inline
-    implicit class TransitionStateMutableBuilder[Self <: TransitionState] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionState](x: Self) {
       
-      @scala.inline
-      def setAppearing(value: Boolean): Self = StObject.set(x, "appearing", value.asInstanceOf[js.Any])
+      inline def setAppearing(value: Boolean): Self = StObject.set(x, "appearing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRendered(value: Boolean): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
+      inline def setRendered(value: Boolean): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStage(value: TransitionStage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+      inline def setStage(value: TransitionStage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,19 +11,15 @@ trait HitsProvided[THit] extends StObject {
 }
 object HitsProvided {
   
-  @scala.inline
-  def apply[THit](hits: js.Array[Hit[THit]]): HitsProvided[THit] = {
+  inline def apply[THit](hits: js.Array[Hit[THit]]): HitsProvided[THit] = {
     val __obj = js.Dynamic.literal(hits = hits.asInstanceOf[js.Any])
     __obj.asInstanceOf[HitsProvided[THit]]
   }
   
-  @scala.inline
-  implicit class HitsProvidedMutableBuilder[Self <: HitsProvided[?], THit] (val x: Self & HitsProvided[THit]) extends AnyVal {
+  extension [Self <: HitsProvided[?], THit](x: Self & HitsProvided[THit]) {
     
-    @scala.inline
-    def setHits(value: js.Array[Hit[THit]]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
+    inline def setHits(value: js.Array[Hit[THit]]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitsVarargs(value: Hit[THit]*): Self = StObject.set(x, "hits", js.Array(value :_*))
+    inline def setHitsVarargs(value: Hit[THit]*): Self = StObject.set(x, "hits", js.Array(value :_*))
   }
 }

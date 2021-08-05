@@ -25,8 +25,7 @@ object componentsSignatureInputSignatureInputContextMod {
   @js.native
   val SignatureInputContextProvider: Provider[SignatureInputContextValue] = js.native
   
-  @scala.inline
-  def withSignatureInputContext[P /* <: WithSignaturePadProps */](WrappedComponent: ComponentType[P]): FunctionComponent[
+  inline def withSignatureInputContext[P /* <: WithSignaturePadProps */](WrappedComponent: ComponentType[P]): FunctionComponent[
     Pick[
       P, 
       Exclude[
@@ -68,17 +67,14 @@ object componentsSignatureInputSignatureInputContextMod {
   }
   object SignaturePadApiContext {
     
-    @scala.inline
-    def apply(clear: () => Unit): SignaturePadApiContext = {
+    inline def apply(clear: () => Unit): SignaturePadApiContext = {
       val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear))
       __obj.asInstanceOf[SignaturePadApiContext]
     }
     
-    @scala.inline
-    implicit class SignaturePadApiContextMutableBuilder[Self <: SignaturePadApiContext] (val x: Self) extends AnyVal {
+    extension [Self <: SignaturePadApiContext](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     }
   }
   

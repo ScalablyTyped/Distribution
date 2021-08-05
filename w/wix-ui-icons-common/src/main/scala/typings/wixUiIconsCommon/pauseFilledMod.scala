@@ -22,20 +22,16 @@ object pauseFilledMod extends Shortcut {
   }
   object PauseFilledProps {
     
-    @scala.inline
-    def apply(): PauseFilledProps = {
+    inline def apply(): PauseFilledProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PauseFilledProps]
     }
     
-    @scala.inline
-    implicit class PauseFilledPropsMutableBuilder[Self <: PauseFilledProps] (val x: Self) extends AnyVal {
+    extension [Self <: PauseFilledProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

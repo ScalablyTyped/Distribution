@@ -53,67 +53,47 @@ trait Bot extends StObject {
 }
 object Bot {
   
-  @scala.inline
-  def apply(): Bot = {
+  inline def apply(): Bot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bot]
   }
   
-  @scala.inline
-  implicit class BotMutableBuilder[Self <: Bot] (val x: Self) extends AnyVal {
+  extension [Self <: Bot](x: Self) {
     
-    @scala.inline
-    def setBotEmail(value: SensitiveString): Self = StObject.set(x, "BotEmail", value.asInstanceOf[js.Any])
+    inline def setBotEmail(value: SensitiveString): Self = StObject.set(x, "BotEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotEmailUndefined: Self = StObject.set(x, "BotEmail", js.undefined)
+    inline def setBotEmailUndefined: Self = StObject.set(x, "BotEmail", js.undefined)
     
-    @scala.inline
-    def setBotId(value: String): Self = StObject.set(x, "BotId", value.asInstanceOf[js.Any])
+    inline def setBotId(value: String): Self = StObject.set(x, "BotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotIdUndefined: Self = StObject.set(x, "BotId", js.undefined)
+    inline def setBotIdUndefined: Self = StObject.set(x, "BotId", js.undefined)
     
-    @scala.inline
-    def setBotType(value: BotType): Self = StObject.set(x, "BotType", value.asInstanceOf[js.Any])
+    inline def setBotType(value: BotType): Self = StObject.set(x, "BotType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotTypeUndefined: Self = StObject.set(x, "BotType", js.undefined)
+    inline def setBotTypeUndefined: Self = StObject.set(x, "BotType", js.undefined)
     
-    @scala.inline
-    def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
+    inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: NullableBoolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: NullableBoolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: SensitiveString): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: SensitiveString): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
-    @scala.inline
-    def setSecurityToken(value: SensitiveString): Self = StObject.set(x, "SecurityToken", value.asInstanceOf[js.Any])
+    inline def setSecurityToken(value: SensitiveString): Self = StObject.set(x, "SecurityToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityTokenUndefined: Self = StObject.set(x, "SecurityToken", js.undefined)
+    inline def setSecurityTokenUndefined: Self = StObject.set(x, "SecurityToken", js.undefined)
     
-    @scala.inline
-    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedTimestampUndefined: Self = StObject.set(x, "UpdatedTimestamp", js.undefined)
+    inline def setUpdatedTimestampUndefined: Self = StObject.set(x, "UpdatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
   }
 }

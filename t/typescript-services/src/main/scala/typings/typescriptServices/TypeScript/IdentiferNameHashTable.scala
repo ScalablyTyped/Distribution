@@ -9,8 +9,7 @@ trait IdentiferNameHashTable[T]
      with StringHashTable[T]
 object IdentiferNameHashTable {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     add: (String, T) => Boolean,
     addOrUpdate: (String, T) => Boolean,
     count: () => Double,

@@ -37,11 +37,9 @@ object LanguageCodes {
        with _ALL
   object BrazilianPortuguese {
     
-    @scala.inline
-    def pt: typings.qlik.qlikStrings.pt = "pt".asInstanceOf[typings.qlik.qlikStrings.pt]
+    inline def pt: typings.qlik.qlikStrings.pt = "pt".asInstanceOf[typings.qlik.qlikStrings.pt]
     
-    @scala.inline
-    def `pt-BR`: typings.qlik.qlikStrings.`pt-BR` = "pt-BR".asInstanceOf[typings.qlik.qlikStrings.`pt-BR`]
+    inline def `pt-BR`: typings.qlik.qlikStrings.`pt-BR` = "pt-BR".asInstanceOf[typings.qlik.qlikStrings.`pt-BR`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -53,11 +51,9 @@ object LanguageCodes {
        with _ALL
   object Dutch {
     
-    @scala.inline
-    def nl: typings.qlik.qlikStrings.nl = "nl".asInstanceOf[typings.qlik.qlikStrings.nl]
+    inline def nl: typings.qlik.qlikStrings.nl = "nl".asInstanceOf[typings.qlik.qlikStrings.nl]
     
-    @scala.inline
-    def `nl-NL`: typings.qlik.qlikStrings.`nl-NL` = "nl-NL".asInstanceOf[typings.qlik.qlikStrings.`nl-NL`]
+    inline def `nl-NL`: typings.qlik.qlikStrings.`nl-NL` = "nl-NL".asInstanceOf[typings.qlik.qlikStrings.`nl-NL`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -69,11 +65,9 @@ object LanguageCodes {
        with _ALL
   object English {
     
-    @scala.inline
-    def en: typings.qlik.qlikStrings.en = "en".asInstanceOf[typings.qlik.qlikStrings.en]
+    inline def en: typings.qlik.qlikStrings.en = "en".asInstanceOf[typings.qlik.qlikStrings.en]
     
-    @scala.inline
-    def `en-US`: typings.qlik.qlikStrings.`en-US` = "en-US".asInstanceOf[typings.qlik.qlikStrings.`en-US`]
+    inline def `en-US`: typings.qlik.qlikStrings.`en-US` = "en-US".asInstanceOf[typings.qlik.qlikStrings.`en-US`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -85,11 +79,9 @@ object LanguageCodes {
        with _ALL
   object French {
     
-    @scala.inline
-    def fr: typings.qlik.qlikStrings.fr = "fr".asInstanceOf[typings.qlik.qlikStrings.fr]
+    inline def fr: typings.qlik.qlikStrings.fr = "fr".asInstanceOf[typings.qlik.qlikStrings.fr]
     
-    @scala.inline
-    def `fr-FR`: typings.qlik.qlikStrings.`fr-FR` = "fr-FR".asInstanceOf[typings.qlik.qlikStrings.`fr-FR`]
+    inline def `fr-FR`: typings.qlik.qlikStrings.`fr-FR` = "fr-FR".asInstanceOf[typings.qlik.qlikStrings.`fr-FR`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -101,11 +93,9 @@ object LanguageCodes {
        with _ALL
   object German {
     
-    @scala.inline
-    def de: typings.qlik.qlikStrings.de = "de".asInstanceOf[typings.qlik.qlikStrings.de]
+    inline def de: typings.qlik.qlikStrings.de = "de".asInstanceOf[typings.qlik.qlikStrings.de]
     
-    @scala.inline
-    def `de-DE`: typings.qlik.qlikStrings.`de-DE` = "de-DE".asInstanceOf[typings.qlik.qlikStrings.`de-DE`]
+    inline def `de-DE`: typings.qlik.qlikStrings.`de-DE` = "de-DE".asInstanceOf[typings.qlik.qlikStrings.`de-DE`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -117,11 +107,9 @@ object LanguageCodes {
        with _ALL
   object Italian {
     
-    @scala.inline
-    def it: typings.qlik.qlikStrings.it = "it".asInstanceOf[typings.qlik.qlikStrings.it]
+    inline def it: typings.qlik.qlikStrings.it = "it".asInstanceOf[typings.qlik.qlikStrings.it]
     
-    @scala.inline
-    def `it-IT`: typings.qlik.qlikStrings.`it-IT` = "it-IT".asInstanceOf[typings.qlik.qlikStrings.`it-IT`]
+    inline def `it-IT`: typings.qlik.qlikStrings.`it-IT` = "it-IT".asInstanceOf[typings.qlik.qlikStrings.`it-IT`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -133,11 +121,9 @@ object LanguageCodes {
        with _ALL
   object Japanese {
     
-    @scala.inline
-    def ja: typings.qlik.qlikStrings.ja = "ja".asInstanceOf[typings.qlik.qlikStrings.ja]
+    inline def ja: typings.qlik.qlikStrings.ja = "ja".asInstanceOf[typings.qlik.qlikStrings.ja]
     
-    @scala.inline
-    def `ja-JP`: typings.qlik.qlikStrings.`ja-JP` = "ja-JP".asInstanceOf[typings.qlik.qlikStrings.`ja-JP`]
+    inline def `ja-JP`: typings.qlik.qlikStrings.`ja-JP` = "ja-JP".asInstanceOf[typings.qlik.qlikStrings.`ja-JP`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -149,11 +135,9 @@ object LanguageCodes {
        with _ALL
   object Korean {
     
-    @scala.inline
-    def ko: typings.qlik.qlikStrings.ko = "ko".asInstanceOf[typings.qlik.qlikStrings.ko]
+    inline def ko: typings.qlik.qlikStrings.ko = "ko".asInstanceOf[typings.qlik.qlikStrings.ko]
     
-    @scala.inline
-    def `ko-KR`: typings.qlik.qlikStrings.`ko-KR` = "ko-KR".asInstanceOf[typings.qlik.qlikStrings.`ko-KR`]
+    inline def `ko-KR`: typings.qlik.qlikStrings.`ko-KR` = "ko-KR".asInstanceOf[typings.qlik.qlikStrings.`ko-KR`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -165,11 +149,9 @@ object LanguageCodes {
        with _ALL
   object Polish {
     
-    @scala.inline
-    def pl: typings.qlik.qlikStrings.pl = "pl".asInstanceOf[typings.qlik.qlikStrings.pl]
+    inline def pl: typings.qlik.qlikStrings.pl = "pl".asInstanceOf[typings.qlik.qlikStrings.pl]
     
-    @scala.inline
-    def `pl-PL`: typings.qlik.qlikStrings.`pl-PL` = "pl-PL".asInstanceOf[typings.qlik.qlikStrings.`pl-PL`]
+    inline def `pl-PL`: typings.qlik.qlikStrings.`pl-PL` = "pl-PL".asInstanceOf[typings.qlik.qlikStrings.`pl-PL`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -181,11 +163,9 @@ object LanguageCodes {
        with _ALL
   object Russian {
     
-    @scala.inline
-    def ru: typings.qlik.qlikStrings.ru = "ru".asInstanceOf[typings.qlik.qlikStrings.ru]
+    inline def ru: typings.qlik.qlikStrings.ru = "ru".asInstanceOf[typings.qlik.qlikStrings.ru]
     
-    @scala.inline
-    def `ru-RU`: typings.qlik.qlikStrings.`ru-RU` = "ru-RU".asInstanceOf[typings.qlik.qlikStrings.`ru-RU`]
+    inline def `ru-RU`: typings.qlik.qlikStrings.`ru-RU` = "ru-RU".asInstanceOf[typings.qlik.qlikStrings.`ru-RU`]
   }
   
   type SimplifiedChinese = `zh-CN`
@@ -199,11 +179,9 @@ object LanguageCodes {
        with _ALL
   object Spanish {
     
-    @scala.inline
-    def es: typings.qlik.qlikStrings.es = "es".asInstanceOf[typings.qlik.qlikStrings.es]
+    inline def es: typings.qlik.qlikStrings.es = "es".asInstanceOf[typings.qlik.qlikStrings.es]
     
-    @scala.inline
-    def `es-ES`: typings.qlik.qlikStrings.`es-ES` = "es-ES".asInstanceOf[typings.qlik.qlikStrings.`es-ES`]
+    inline def `es-ES`: typings.qlik.qlikStrings.`es-ES` = "es-ES".asInstanceOf[typings.qlik.qlikStrings.`es-ES`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -215,11 +193,9 @@ object LanguageCodes {
        with _ALL
   object Swedish {
     
-    @scala.inline
-    def sv: typings.qlik.qlikStrings.sv = "sv".asInstanceOf[typings.qlik.qlikStrings.sv]
+    inline def sv: typings.qlik.qlikStrings.sv = "sv".asInstanceOf[typings.qlik.qlikStrings.sv]
     
-    @scala.inline
-    def `sv-SE`: typings.qlik.qlikStrings.`sv-SE` = "sv-SE".asInstanceOf[typings.qlik.qlikStrings.`sv-SE`]
+    inline def `sv-SE`: typings.qlik.qlikStrings.`sv-SE` = "sv-SE".asInstanceOf[typings.qlik.qlikStrings.`sv-SE`]
   }
   
   type TraditionalChinese = `zh-TW`
@@ -233,11 +209,9 @@ object LanguageCodes {
        with _ALL
   object Turkish {
     
-    @scala.inline
-    def ts: ts_ = "ts".asInstanceOf[ts_]
+    inline def ts: ts_ = "ts".asInstanceOf[ts_]
     
-    @scala.inline
-    def `ts-TR`: typings.qlik.qlikStrings.`ts-TR` = "ts-TR".asInstanceOf[typings.qlik.qlikStrings.`ts-TR`]
+    inline def `ts-TR`: typings.qlik.qlikStrings.`ts-TR` = "ts-TR".asInstanceOf[typings.qlik.qlikStrings.`ts-TR`]
   }
   
   trait _ALL extends StObject

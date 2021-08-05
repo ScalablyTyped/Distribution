@@ -131,8 +131,7 @@ object util {
       * @param sMimeType file mime-type
       * @param sCharset file charset
       */
-    @scala.inline
-    def save(sData: String, sFileName: String, sFileExtension: String, sMimeType: String, sCharset: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(sData.asInstanceOf[js.Any], sFileName.asInstanceOf[js.Any], sFileExtension.asInstanceOf[js.Any], sMimeType.asInstanceOf[js.Any], sCharset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def save(sData: String, sFileName: String, sFileExtension: String, sMimeType: String, sCharset: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(sData.asInstanceOf[js.Any], sFileName.asInstanceOf[js.Any], sFileExtension.asInstanceOf[js.Any], sMimeType.asInstanceOf[js.Any], sCharset.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSGlobal("sap.ui.core.util.MockServer")

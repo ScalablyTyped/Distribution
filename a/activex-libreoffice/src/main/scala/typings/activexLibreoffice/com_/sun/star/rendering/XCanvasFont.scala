@@ -76,8 +76,7 @@ trait XCanvasFont
 }
 object XCanvasFont {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AvailableSizes: SafeArray[Double],
     ExtraFontProperties: SafeArray[PropertyValue],
     FontMetrics: FontMetrics,
@@ -95,34 +94,24 @@ object XCanvasFont {
     __obj.asInstanceOf[XCanvasFont]
   }
   
-  @scala.inline
-  implicit class XCanvasFontMutableBuilder[Self <: XCanvasFont] (val x: Self) extends AnyVal {
+  extension [Self <: XCanvasFont](x: Self) {
     
-    @scala.inline
-    def setAvailableSizes(value: SafeArray[Double]): Self = StObject.set(x, "AvailableSizes", value.asInstanceOf[js.Any])
+    inline def setAvailableSizes(value: SafeArray[Double]): Self = StObject.set(x, "AvailableSizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTextLayout(value: (StringContext, Double, Double) => XTextLayout): Self = StObject.set(x, "createTextLayout", js.Any.fromFunction3(value))
+    inline def setCreateTextLayout(value: (StringContext, Double, Double) => XTextLayout): Self = StObject.set(x, "createTextLayout", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setExtraFontProperties(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ExtraFontProperties", value.asInstanceOf[js.Any])
+    inline def setExtraFontProperties(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ExtraFontProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontMetrics(value: FontMetrics): Self = StObject.set(x, "FontMetrics", value.asInstanceOf[js.Any])
+    inline def setFontMetrics(value: FontMetrics): Self = StObject.set(x, "FontMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontRequest(value: FontRequest): Self = StObject.set(x, "FontRequest", value.asInstanceOf[js.Any])
+    inline def setFontRequest(value: FontRequest): Self = StObject.set(x, "FontRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAvailableSizes(value: () => SafeArray[Double]): Self = StObject.set(x, "getAvailableSizes", js.Any.fromFunction0(value))
+    inline def setGetAvailableSizes(value: () => SafeArray[Double]): Self = StObject.set(x, "getAvailableSizes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExtraFontProperties(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getExtraFontProperties", js.Any.fromFunction0(value))
+    inline def setGetExtraFontProperties(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getExtraFontProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFontMetrics(value: () => FontMetrics): Self = StObject.set(x, "getFontMetrics", js.Any.fromFunction0(value))
+    inline def setGetFontMetrics(value: () => FontMetrics): Self = StObject.set(x, "getFontMetrics", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFontRequest(value: () => FontRequest): Self = StObject.set(x, "getFontRequest", js.Any.fromFunction0(value))
+    inline def setGetFontRequest(value: () => FontRequest): Self = StObject.set(x, "getFontRequest", js.Any.fromFunction0(value))
   }
 }

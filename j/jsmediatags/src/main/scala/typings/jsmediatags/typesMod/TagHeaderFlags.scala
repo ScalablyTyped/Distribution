@@ -16,8 +16,7 @@ trait TagHeaderFlags extends StObject {
 }
 object TagHeaderFlags {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     experimental_indicator: Boolean,
     extended_header: Boolean,
     footer_present: Boolean,
@@ -27,19 +26,14 @@ object TagHeaderFlags {
     __obj.asInstanceOf[TagHeaderFlags]
   }
   
-  @scala.inline
-  implicit class TagHeaderFlagsMutableBuilder[Self <: TagHeaderFlags] (val x: Self) extends AnyVal {
+  extension [Self <: TagHeaderFlags](x: Self) {
     
-    @scala.inline
-    def setExperimental_indicator(value: Boolean): Self = StObject.set(x, "experimental_indicator", value.asInstanceOf[js.Any])
+    inline def setExperimental_indicator(value: Boolean): Self = StObject.set(x, "experimental_indicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtended_header(value: Boolean): Self = StObject.set(x, "extended_header", value.asInstanceOf[js.Any])
+    inline def setExtended_header(value: Boolean): Self = StObject.set(x, "extended_header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooter_present(value: Boolean): Self = StObject.set(x, "footer_present", value.asInstanceOf[js.Any])
+    inline def setFooter_present(value: Boolean): Self = StObject.set(x, "footer_present", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsynchronisation(value: Boolean): Self = StObject.set(x, "unsynchronisation", value.asInstanceOf[js.Any])
+    inline def setUnsynchronisation(value: Boolean): Self = StObject.set(x, "unsynchronisation", value.asInstanceOf[js.Any])
   }
 }

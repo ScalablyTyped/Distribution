@@ -12,6 +12,5 @@ object getCenterOfBoundsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(coords: js.Array[GeolibInputCoordinates]): Latitude = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(coords.asInstanceOf[js.Any]).asInstanceOf[Latitude]
+  inline def default(coords: js.Array[GeolibInputCoordinates]): Latitude = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(coords.asInstanceOf[js.Any]).asInstanceOf[Latitude]
 }

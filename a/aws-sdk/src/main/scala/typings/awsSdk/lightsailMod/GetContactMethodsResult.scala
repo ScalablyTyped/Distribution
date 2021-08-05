@@ -13,22 +13,17 @@ trait GetContactMethodsResult extends StObject {
 }
 object GetContactMethodsResult {
   
-  @scala.inline
-  def apply(): GetContactMethodsResult = {
+  inline def apply(): GetContactMethodsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetContactMethodsResult]
   }
   
-  @scala.inline
-  implicit class GetContactMethodsResultMutableBuilder[Self <: GetContactMethodsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetContactMethodsResult](x: Self) {
     
-    @scala.inline
-    def setContactMethods(value: ContactMethodsList): Self = StObject.set(x, "contactMethods", value.asInstanceOf[js.Any])
+    inline def setContactMethods(value: ContactMethodsList): Self = StObject.set(x, "contactMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactMethodsUndefined: Self = StObject.set(x, "contactMethods", js.undefined)
+    inline def setContactMethodsUndefined: Self = StObject.set(x, "contactMethods", js.undefined)
     
-    @scala.inline
-    def setContactMethodsVarargs(value: ContactMethod*): Self = StObject.set(x, "contactMethods", js.Array(value :_*))
+    inline def setContactMethodsVarargs(value: ContactMethod*): Self = StObject.set(x, "contactMethods", js.Array(value :_*))
   }
 }

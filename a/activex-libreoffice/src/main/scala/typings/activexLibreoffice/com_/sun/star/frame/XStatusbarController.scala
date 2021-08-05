@@ -86,8 +86,7 @@ trait XStatusbarController
 }
 object XStatusbarController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     click: Point => Unit,
@@ -110,28 +109,20 @@ object XStatusbarController {
     __obj.asInstanceOf[XStatusbarController]
   }
   
-  @scala.inline
-  implicit class XStatusbarControllerMutableBuilder[Self <: XStatusbarController] (val x: Self) extends AnyVal {
+  extension [Self <: XStatusbarController](x: Self) {
     
-    @scala.inline
-    def setClick(value: Point => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+    inline def setClick(value: Point => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCommand(value: (Point, Double, Boolean, js.Any) => Unit): Self = StObject.set(x, "command", js.Any.fromFunction4(value))
+    inline def setCommand(value: (Point, Double, Boolean, js.Any) => Unit): Self = StObject.set(x, "command", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDoubleClick(value: Point => Unit): Self = StObject.set(x, "doubleClick", js.Any.fromFunction1(value))
+    inline def setDoubleClick(value: Point => Unit): Self = StObject.set(x, "doubleClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseButtonDown(value: MouseEvent => Boolean): Self = StObject.set(x, "mouseButtonDown", js.Any.fromFunction1(value))
+    inline def setMouseButtonDown(value: MouseEvent => Boolean): Self = StObject.set(x, "mouseButtonDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseButtonUp(value: MouseEvent => Boolean): Self = StObject.set(x, "mouseButtonUp", js.Any.fromFunction1(value))
+    inline def setMouseButtonUp(value: MouseEvent => Boolean): Self = StObject.set(x, "mouseButtonUp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseMove(value: MouseEvent => Boolean): Self = StObject.set(x, "mouseMove", js.Any.fromFunction1(value))
+    inline def setMouseMove(value: MouseEvent => Boolean): Self = StObject.set(x, "mouseMove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPaint(value: (XGraphics, Rectangle, Double) => Unit): Self = StObject.set(x, "paint", js.Any.fromFunction3(value))
+    inline def setPaint(value: (XGraphics, Rectangle, Double) => Unit): Self = StObject.set(x, "paint", js.Any.fromFunction3(value))
   }
 }

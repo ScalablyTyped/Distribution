@@ -16,15 +16,12 @@ object futureMod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def wait_(future_list: js.Array[Future]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(future_list.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def wait_(future_list: js.Array[Future]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(future_list.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   /* static member */
-  @scala.inline
-  def wait_(future: Future): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(future.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def wait_(future: Future): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(future.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def wrap(fn: js.Function): Future = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any]).asInstanceOf[Future]
+  inline def wrap(fn: js.Function): Future = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any]).asInstanceOf[Future]
   
   @js.native
   trait Future extends StObject {

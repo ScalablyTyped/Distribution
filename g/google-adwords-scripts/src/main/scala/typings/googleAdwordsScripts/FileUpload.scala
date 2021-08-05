@@ -13,8 +13,7 @@ trait FileUpload
 }
 object FileUpload {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apply: () => Unit,
     forCampaignManagement: () => FileUpload,
     forOfflineConversions: () => FileUpload,
@@ -25,10 +24,8 @@ object FileUpload {
     __obj.asInstanceOf[FileUpload]
   }
   
-  @scala.inline
-  implicit class FileUploadMutableBuilder[Self <: FileUpload] (val x: Self) extends AnyVal {
+  extension [Self <: FileUpload](x: Self) {
     
-    @scala.inline
-    def setApply(value: () => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
+    inline def setApply(value: () => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
   }
 }

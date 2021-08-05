@@ -13,8 +13,7 @@ object reactionCleanupTrackingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(recordReactionAsCommitted, resetCleanupScheduleForTests, forceCleanupTimerToRunNowForTests) */ @scala.inline
-  def addReactionToTrack(
+  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(recordReactionAsCommitted, resetCleanupScheduleForTests, forceCleanupTimerToRunNowForTests) */ inline def addReactionToTrack(
     reactionTrackingRef: MutableRefObject[IReactionTracking | Null],
     reaction: Reaction_,
     objectRetainedByReact: js.Object

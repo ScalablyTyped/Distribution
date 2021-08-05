@@ -53,26 +53,20 @@ object presignerMod {
     }
     object PresignerOptions {
       
-      @scala.inline
-      def apply(): PresignerOptions = {
+      inline def apply(): PresignerOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PresignerOptions]
       }
       
-      @scala.inline
-      implicit class PresignerOptionsMutableBuilder[Self <: PresignerOptions] (val x: Self) extends AnyVal {
+      extension [Self <: PresignerOptions](x: Self) {
         
-        @scala.inline
-        def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+        inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         
-        @scala.inline
-        def setService(value: ^): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+        inline def setService(value: ^): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+        inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
       }
     }
   }

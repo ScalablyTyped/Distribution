@@ -18,28 +18,21 @@ trait ListPermissionSetProvisioningStatusResponse extends StObject {
 }
 object ListPermissionSetProvisioningStatusResponse {
   
-  @scala.inline
-  def apply(): ListPermissionSetProvisioningStatusResponse = {
+  inline def apply(): ListPermissionSetProvisioningStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPermissionSetProvisioningStatusResponse]
   }
   
-  @scala.inline
-  implicit class ListPermissionSetProvisioningStatusResponseMutableBuilder[Self <: ListPermissionSetProvisioningStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPermissionSetProvisioningStatusResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPermissionSetsProvisioningStatus(value: PermissionSetProvisioningStatusList): Self = StObject.set(x, "PermissionSetsProvisioningStatus", value.asInstanceOf[js.Any])
+    inline def setPermissionSetsProvisioningStatus(value: PermissionSetProvisioningStatusList): Self = StObject.set(x, "PermissionSetsProvisioningStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionSetsProvisioningStatusUndefined: Self = StObject.set(x, "PermissionSetsProvisioningStatus", js.undefined)
+    inline def setPermissionSetsProvisioningStatusUndefined: Self = StObject.set(x, "PermissionSetsProvisioningStatus", js.undefined)
     
-    @scala.inline
-    def setPermissionSetsProvisioningStatusVarargs(value: PermissionSetProvisioningStatusMetadata*): Self = StObject.set(x, "PermissionSetsProvisioningStatus", js.Array(value :_*))
+    inline def setPermissionSetsProvisioningStatusVarargs(value: PermissionSetProvisioningStatusMetadata*): Self = StObject.set(x, "PermissionSetsProvisioningStatus", js.Array(value :_*))
   }
 }

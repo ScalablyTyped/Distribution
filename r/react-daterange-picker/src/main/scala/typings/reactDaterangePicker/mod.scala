@@ -89,175 +89,120 @@ object mod {
   }
   object BaseProps {
     
-    @scala.inline
-    def apply[T](): BaseProps[T] = {
+    inline def apply[T](): BaseProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseProps[T]]
     }
     
-    @scala.inline
-    implicit class BasePropsMutableBuilder[Self <: BaseProps[?], T] (val x: Self & BaseProps[T]) extends AnyVal {
+    extension [Self <: BaseProps[?], T](x: Self & BaseProps[T]) {
       
-      @scala.inline
-      def setBemBlock(value: String): Self = StObject.set(x, "bemBlock", value.asInstanceOf[js.Any])
+      inline def setBemBlock(value: String): Self = StObject.set(x, "bemBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBemBlockUndefined: Self = StObject.set(x, "bemBlock", js.undefined)
+      inline def setBemBlockUndefined: Self = StObject.set(x, "bemBlock", js.undefined)
       
-      @scala.inline
-      def setBemNamespace(value: String): Self = StObject.set(x, "bemNamespace", value.asInstanceOf[js.Any])
+      inline def setBemNamespace(value: String): Self = StObject.set(x, "bemNamespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBemNamespaceUndefined: Self = StObject.set(x, "bemNamespace", js.undefined)
+      inline def setBemNamespaceUndefined: Self = StObject.set(x, "bemNamespace", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDateStates(value: js.Array[DateState]): Self = StObject.set(x, "dateStates", value.asInstanceOf[js.Any])
+      inline def setDateStates(value: js.Array[DateState]): Self = StObject.set(x, "dateStates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateStatesUndefined: Self = StObject.set(x, "dateStates", js.undefined)
+      inline def setDateStatesUndefined: Self = StObject.set(x, "dateStates", js.undefined)
       
-      @scala.inline
-      def setDateStatesVarargs(value: DateState*): Self = StObject.set(x, "dateStates", js.Array(value :_*))
+      inline def setDateStatesVarargs(value: DateState*): Self = StObject.set(x, "dateStates", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultState(value: String): Self = StObject.set(x, "defaultState", value.asInstanceOf[js.Any])
+      inline def setDefaultState(value: String): Self = StObject.set(x, "defaultState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultStateUndefined: Self = StObject.set(x, "defaultState", js.undefined)
+      inline def setDefaultStateUndefined: Self = StObject.set(x, "defaultState", js.undefined)
       
-      @scala.inline
-      def setDisableNavigation(value: Boolean): Self = StObject.set(x, "disableNavigation", value.asInstanceOf[js.Any])
+      inline def setDisableNavigation(value: Boolean): Self = StObject.set(x, "disableNavigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableNavigationUndefined: Self = StObject.set(x, "disableNavigation", js.undefined)
+      inline def setDisableNavigationUndefined: Self = StObject.set(x, "disableNavigation", js.undefined)
       
-      @scala.inline
-      def setFirstOfWeek(value: Double): Self = StObject.set(x, "firstOfWeek", value.asInstanceOf[js.Any])
+      inline def setFirstOfWeek(value: Double): Self = StObject.set(x, "firstOfWeek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstOfWeekUndefined: Self = StObject.set(x, "firstOfWeek", js.undefined)
+      inline def setFirstOfWeekUndefined: Self = StObject.set(x, "firstOfWeek", js.undefined)
       
-      @scala.inline
-      def setHelpMessage(value: String): Self = StObject.set(x, "helpMessage", value.asInstanceOf[js.Any])
+      inline def setHelpMessage(value: String): Self = StObject.set(x, "helpMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpMessageUndefined: Self = StObject.set(x, "helpMessage", js.undefined)
+      inline def setHelpMessageUndefined: Self = StObject.set(x, "helpMessage", js.undefined)
       
-      @scala.inline
-      def setInitialDate(value: Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
+      inline def setInitialDate(value: Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialDateUndefined: Self = StObject.set(x, "initialDate", js.undefined)
+      inline def setInitialDateUndefined: Self = StObject.set(x, "initialDate", js.undefined)
       
-      @scala.inline
-      def setInitialFromValue(value: Boolean): Self = StObject.set(x, "initialFromValue", value.asInstanceOf[js.Any])
+      inline def setInitialFromValue(value: Boolean): Self = StObject.set(x, "initialFromValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialFromValueUndefined: Self = StObject.set(x, "initialFromValue", js.undefined)
+      inline def setInitialFromValueUndefined: Self = StObject.set(x, "initialFromValue", js.undefined)
       
-      @scala.inline
-      def setInitialMonth(value: Double): Self = StObject.set(x, "initialMonth", value.asInstanceOf[js.Any])
+      inline def setInitialMonth(value: Double): Self = StObject.set(x, "initialMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialMonthUndefined: Self = StObject.set(x, "initialMonth", js.undefined)
+      inline def setInitialMonthUndefined: Self = StObject.set(x, "initialMonth", js.undefined)
       
-      @scala.inline
-      def setInitialRange(value: js.Object): Self = StObject.set(x, "initialRange", value.asInstanceOf[js.Any])
+      inline def setInitialRange(value: js.Object): Self = StObject.set(x, "initialRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialRangeUndefined: Self = StObject.set(x, "initialRange", js.undefined)
+      inline def setInitialRangeUndefined: Self = StObject.set(x, "initialRange", js.undefined)
       
-      @scala.inline
-      def setInitialYear(value: Double): Self = StObject.set(x, "initialYear", value.asInstanceOf[js.Any])
+      inline def setInitialYear(value: Double): Self = StObject.set(x, "initialYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialYearUndefined: Self = StObject.set(x, "initialYear", js.undefined)
+      inline def setInitialYearUndefined: Self = StObject.set(x, "initialYear", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setMaximumDate(value: Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
+      inline def setMaximumDate(value: Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumDateUndefined: Self = StObject.set(x, "maximumDate", js.undefined)
+      inline def setMaximumDateUndefined: Self = StObject.set(x, "maximumDate", js.undefined)
       
-      @scala.inline
-      def setMinimumDate(value: Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
+      inline def setMinimumDate(value: Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumDateUndefined: Self = StObject.set(x, "minimumDate", js.undefined)
+      inline def setMinimumDateUndefined: Self = StObject.set(x, "minimumDate", js.undefined)
       
-      @scala.inline
-      def setNumberOfCalendars(value: Double): Self = StObject.set(x, "numberOfCalendars", value.asInstanceOf[js.Any])
+      inline def setNumberOfCalendars(value: Double): Self = StObject.set(x, "numberOfCalendars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfCalendarsUndefined: Self = StObject.set(x, "numberOfCalendars", js.undefined)
+      inline def setNumberOfCalendarsUndefined: Self = StObject.set(x, "numberOfCalendars", js.undefined)
       
-      @scala.inline
-      def setOnHighlightDate(value: /* date */ Date => Unit): Self = StObject.set(x, "onHighlightDate", js.Any.fromFunction1(value))
+      inline def setOnHighlightDate(value: /* date */ Date => Unit): Self = StObject.set(x, "onHighlightDate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnHighlightDateUndefined: Self = StObject.set(x, "onHighlightDate", js.undefined)
+      inline def setOnHighlightDateUndefined: Self = StObject.set(x, "onHighlightDate", js.undefined)
       
-      @scala.inline
-      def setOnHighlightRange(value: /* date */ Date => Unit): Self = StObject.set(x, "onHighlightRange", js.Any.fromFunction1(value))
+      inline def setOnHighlightRange(value: /* date */ Date => Unit): Self = StObject.set(x, "onHighlightRange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnHighlightRangeUndefined: Self = StObject.set(x, "onHighlightRange", js.undefined)
+      inline def setOnHighlightRangeUndefined: Self = StObject.set(x, "onHighlightRange", js.undefined)
       
-      @scala.inline
-      def setOnSelectStart(value: /* value */ MomentRangeNoneinpundefin => Unit): Self = StObject.set(x, "onSelectStart", js.Any.fromFunction1(value))
+      inline def setOnSelectStart(value: /* value */ MomentRangeNoneinpundefin => Unit): Self = StObject.set(x, "onSelectStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectStartUndefined: Self = StObject.set(x, "onSelectStart", js.undefined)
+      inline def setOnSelectStartUndefined: Self = StObject.set(x, "onSelectStart", js.undefined)
       
-      @scala.inline
-      def setPaginationArrowComponent(
+      inline def setPaginationArrowComponent(
         value: (ComponentClass[PaginationArrowProps[js.Object], ComponentState]) | SFC[PaginationArrowProps[js.Object]]
       ): Self = StObject.set(x, "paginationArrowComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationArrowComponentUndefined: Self = StObject.set(x, "paginationArrowComponent", js.undefined)
+      inline def setPaginationArrowComponentUndefined: Self = StObject.set(x, "paginationArrowComponent", js.undefined)
       
-      @scala.inline
-      def setSelectedLabel(value: String): Self = StObject.set(x, "selectedLabel", value.asInstanceOf[js.Any])
+      inline def setSelectedLabel(value: String): Self = StObject.set(x, "selectedLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedLabelUndefined: Self = StObject.set(x, "selectedLabel", js.undefined)
+      inline def setSelectedLabelUndefined: Self = StObject.set(x, "selectedLabel", js.undefined)
       
-      @scala.inline
-      def setShowLegend(value: Boolean): Self = StObject.set(x, "showLegend", value.asInstanceOf[js.Any])
+      inline def setShowLegend(value: Boolean): Self = StObject.set(x, "showLegend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowLegendUndefined: Self = StObject.set(x, "showLegend", js.undefined)
+      inline def setShowLegendUndefined: Self = StObject.set(x, "showLegend", js.undefined)
       
-      @scala.inline
-      def setSingleDateRange(value: Boolean): Self = StObject.set(x, "singleDateRange", value.asInstanceOf[js.Any])
+      inline def setSingleDateRange(value: Boolean): Self = StObject.set(x, "singleDateRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleDateRangeUndefined: Self = StObject.set(x, "singleDateRange", js.undefined)
+      inline def setSingleDateRangeUndefined: Self = StObject.set(x, "singleDateRange", js.undefined)
       
-      @scala.inline
-      def setStateDefinitions(value: StateDefinitions): Self = StObject.set(x, "stateDefinitions", value.asInstanceOf[js.Any])
+      inline def setStateDefinitions(value: StateDefinitions): Self = StObject.set(x, "stateDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateDefinitionsUndefined: Self = StObject.set(x, "stateDefinitions", js.undefined)
+      inline def setStateDefinitionsUndefined: Self = StObject.set(x, "stateDefinitions", js.undefined)
       
-      @scala.inline
-      def setValue(value: MomentRangeNoneinpundefin | DateRange | Moment): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: MomentRangeNoneinpundefin | DateRange | Moment): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -273,20 +218,16 @@ object mod {
   }
   object DateState {
     
-    @scala.inline
-    def apply(range: DateRange, state: String): DateState = {
+    inline def apply(range: DateRange, state: String): DateState = {
       val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[DateState]
     }
     
-    @scala.inline
-    implicit class DateStateMutableBuilder[Self <: DateState] (val x: Self) extends AnyVal {
+    extension [Self <: DateState](x: Self) {
       
-      @scala.inline
-      def setRange(value: DateRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: DateRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -298,20 +239,16 @@ object mod {
   }
   object OnSelectCallbackParam {
     
-    @scala.inline
-    def apply(end: Moment, start: Moment): OnSelectCallbackParam = {
+    inline def apply(end: Moment, start: Moment): OnSelectCallbackParam = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnSelectCallbackParam]
     }
     
-    @scala.inline
-    implicit class OnSelectCallbackParamMutableBuilder[Self <: OnSelectCallbackParam] (val x: Self) extends AnyVal {
+    extension [Self <: OnSelectCallbackParam](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Moment): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Moment): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Moment): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Moment): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -327,32 +264,24 @@ object mod {
   }
   object PaginationArrowProps {
     
-    @scala.inline
-    def apply[T](): PaginationArrowProps[T] = {
+    inline def apply[T](): PaginationArrowProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaginationArrowProps[T]]
     }
     
-    @scala.inline
-    implicit class PaginationArrowPropsMutableBuilder[Self <: PaginationArrowProps[?], T] (val x: Self & PaginationArrowProps[T]) extends AnyVal {
+    extension [Self <: PaginationArrowProps[?], T](x: Self & PaginationArrowProps[T]) {
       
-      @scala.inline
-      def setDirection(value: next | previous): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: next | previous): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnTrigger(value: () => Unit): Self = StObject.set(x, "onTrigger", js.Any.fromFunction0(value))
+      inline def setOnTrigger(value: () => Unit): Self = StObject.set(x, "onTrigger", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnTriggerUndefined: Self = StObject.set(x, "onTrigger", js.undefined)
+      inline def setOnTriggerUndefined: Self = StObject.set(x, "onTrigger", js.undefined)
     }
   }
   
@@ -363,14 +292,12 @@ object mod {
   trait Props[T] extends StObject
   object Props {
     
-    @scala.inline
-    def RangeProps[T](): typings.reactDaterangePicker.mod.RangeProps[T] = {
+    inline def RangeProps[T](): typings.reactDaterangePicker.mod.RangeProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.reactDaterangePicker.mod.RangeProps[T]]
     }
     
-    @scala.inline
-    def SingleProps[T](): typings.reactDaterangePicker.mod.SingleProps[T] = {
+    inline def SingleProps[T](): typings.reactDaterangePicker.mod.SingleProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.reactDaterangePicker.mod.SingleProps[T]]
     }
@@ -387,26 +314,20 @@ object mod {
   }
   object RangeProps {
     
-    @scala.inline
-    def apply[T](): RangeProps[T] = {
+    inline def apply[T](): RangeProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RangeProps[T]]
     }
     
-    @scala.inline
-    implicit class RangePropsMutableBuilder[Self <: RangeProps[?], T] (val x: Self & RangeProps[T]) extends AnyVal {
+    extension [Self <: RangeProps[?], T](x: Self & RangeProps[T]) {
       
-      @scala.inline
-      def setOnSelect(value: /* value */ OnSelectCallbackParam => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* value */ OnSelectCallbackParam => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setSelectionType(value: range): Self = StObject.set(x, "selectionType", value.asInstanceOf[js.Any])
+      inline def setSelectionType(value: range): Self = StObject.set(x, "selectionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionTypeUndefined: Self = StObject.set(x, "selectionType", js.undefined)
+      inline def setSelectionTypeUndefined: Self = StObject.set(x, "selectionType", js.undefined)
     }
   }
   
@@ -421,26 +342,20 @@ object mod {
   }
   object SingleProps {
     
-    @scala.inline
-    def apply[T](): SingleProps[T] = {
+    inline def apply[T](): SingleProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SingleProps[T]]
     }
     
-    @scala.inline
-    implicit class SinglePropsMutableBuilder[Self <: SingleProps[?], T] (val x: Self & SingleProps[T]) extends AnyVal {
+    extension [Self <: SingleProps[?], T](x: Self & SingleProps[T]) {
       
-      @scala.inline
-      def setOnSelect(value: /* value */ Moment => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* value */ Moment => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setSelectionType(value: single): Self = StObject.set(x, "selectionType", value.asInstanceOf[js.Any])
+      inline def setSelectionType(value: single): Self = StObject.set(x, "selectionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionTypeUndefined: Self = StObject.set(x, "selectionType", js.undefined)
+      inline def setSelectionTypeUndefined: Self = StObject.set(x, "selectionType", js.undefined)
     }
   }
   
@@ -454,26 +369,20 @@ object mod {
   }
   object StateDefinition {
     
-    @scala.inline
-    def apply(color: String, label: String): StateDefinition = {
+    inline def apply(color: String, label: String): StateDefinition = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateDefinition]
     }
     
-    @scala.inline
-    implicit class StateDefinitionMutableBuilder[Self <: StateDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: StateDefinition](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+      inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+      inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     }
   }
   

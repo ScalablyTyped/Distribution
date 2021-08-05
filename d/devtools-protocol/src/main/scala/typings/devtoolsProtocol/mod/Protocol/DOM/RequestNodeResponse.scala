@@ -13,16 +13,13 @@ trait RequestNodeResponse extends StObject {
 }
 object RequestNodeResponse {
   
-  @scala.inline
-  def apply(nodeId: NodeId): RequestNodeResponse = {
+  inline def apply(nodeId: NodeId): RequestNodeResponse = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestNodeResponse]
   }
   
-  @scala.inline
-  implicit class RequestNodeResponseMutableBuilder[Self <: RequestNodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RequestNodeResponse](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

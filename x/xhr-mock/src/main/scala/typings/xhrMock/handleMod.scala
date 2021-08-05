@@ -12,15 +12,13 @@ object handleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def async(
+  inline def async(
     handlers: js.Array[MockFunction],
     request: default,
     response: typings.xhrMock.mockResponseMod.default
   ): js.Promise[typings.xhrMock.mockResponseMod.default] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(handlers.asInstanceOf[js.Any], request.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.xhrMock.mockResponseMod.default]]
   
-  @scala.inline
-  def sync(
+  inline def sync(
     handlers: js.Array[MockFunction],
     request: default,
     response: typings.xhrMock.mockResponseMod.default

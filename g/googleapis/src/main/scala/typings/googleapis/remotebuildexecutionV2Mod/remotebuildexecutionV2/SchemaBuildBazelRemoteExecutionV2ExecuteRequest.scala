@@ -36,37 +36,27 @@ trait SchemaBuildBazelRemoteExecutionV2ExecuteRequest extends StObject {
 }
 object SchemaBuildBazelRemoteExecutionV2ExecuteRequest {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelRemoteExecutionV2ExecuteRequest = {
+  inline def apply(): SchemaBuildBazelRemoteExecutionV2ExecuteRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2ExecuteRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2ExecuteRequestMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2ExecuteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelRemoteExecutionV2ExecuteRequest](x: Self) {
     
-    @scala.inline
-    def setActionDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "actionDigest", value.asInstanceOf[js.Any])
+    inline def setActionDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "actionDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionDigestUndefined: Self = StObject.set(x, "actionDigest", js.undefined)
+    inline def setActionDigestUndefined: Self = StObject.set(x, "actionDigest", js.undefined)
     
-    @scala.inline
-    def setExecutionPolicy(value: SchemaBuildBazelRemoteExecutionV2ExecutionPolicy): Self = StObject.set(x, "executionPolicy", value.asInstanceOf[js.Any])
+    inline def setExecutionPolicy(value: SchemaBuildBazelRemoteExecutionV2ExecutionPolicy): Self = StObject.set(x, "executionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionPolicyUndefined: Self = StObject.set(x, "executionPolicy", js.undefined)
+    inline def setExecutionPolicyUndefined: Self = StObject.set(x, "executionPolicy", js.undefined)
     
-    @scala.inline
-    def setResultsCachePolicy(value: SchemaBuildBazelRemoteExecutionV2ResultsCachePolicy): Self = StObject.set(x, "resultsCachePolicy", value.asInstanceOf[js.Any])
+    inline def setResultsCachePolicy(value: SchemaBuildBazelRemoteExecutionV2ResultsCachePolicy): Self = StObject.set(x, "resultsCachePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsCachePolicyUndefined: Self = StObject.set(x, "resultsCachePolicy", js.undefined)
+    inline def setResultsCachePolicyUndefined: Self = StObject.set(x, "resultsCachePolicy", js.undefined)
     
-    @scala.inline
-    def setSkipCacheLookup(value: Boolean): Self = StObject.set(x, "skipCacheLookup", value.asInstanceOf[js.Any])
+    inline def setSkipCacheLookup(value: Boolean): Self = StObject.set(x, "skipCacheLookup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipCacheLookupUndefined: Self = StObject.set(x, "skipCacheLookup", js.undefined)
+    inline def setSkipCacheLookupUndefined: Self = StObject.set(x, "skipCacheLookup", js.undefined)
   }
 }

@@ -39,8 +39,7 @@ object interfaceMod {
   }
   object MenuInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       domEvent: MouseEvent[HTMLElement, NativeMouseEvent],
       item: ReactInstance,
       key: Key,
@@ -50,23 +49,17 @@ object interfaceMod {
       __obj.asInstanceOf[MenuInfo]
     }
     
-    @scala.inline
-    implicit class MenuInfoMutableBuilder[Self <: MenuInfo] (val x: Self) extends AnyVal {
+    extension [Self <: MenuInfo](x: Self) {
       
-      @scala.inline
-      def setDomEvent(value: MouseEvent[HTMLElement, NativeMouseEvent]): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
+      inline def setDomEvent(value: MouseEvent[HTMLElement, NativeMouseEvent]): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: ReactInstance): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: ReactInstance): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyPath(value: js.Array[Key]): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
+      inline def setKeyPath(value: js.Array[Key]): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyPathVarargs(value: Key*): Self = StObject.set(x, "keyPath", js.Array(value :_*))
+      inline def setKeyPathVarargs(value: Key*): Self = StObject.set(x, "keyPath", js.Array(value :_*))
     }
   }
   
@@ -80,20 +73,15 @@ object interfaceMod {
   trait MenuMode extends StObject
   object MenuMode {
     
-    @scala.inline
-    def horizontal: typings.rcMenu.rcMenuStrings.horizontal = "horizontal".asInstanceOf[typings.rcMenu.rcMenuStrings.horizontal]
+    inline def horizontal: typings.rcMenu.rcMenuStrings.horizontal = "horizontal".asInstanceOf[typings.rcMenu.rcMenuStrings.horizontal]
     
-    @scala.inline
-    def `inline`: typings.rcMenu.rcMenuStrings.`inline` = "inline".asInstanceOf[typings.rcMenu.rcMenuStrings.`inline`]
+    inline def `inline`: typings.rcMenu.rcMenuStrings.`inline` = "inline".asInstanceOf[typings.rcMenu.rcMenuStrings.`inline`]
     
-    @scala.inline
-    def vertical: typings.rcMenu.rcMenuStrings.vertical = "vertical".asInstanceOf[typings.rcMenu.rcMenuStrings.vertical]
+    inline def vertical: typings.rcMenu.rcMenuStrings.vertical = "vertical".asInstanceOf[typings.rcMenu.rcMenuStrings.vertical]
     
-    @scala.inline
-    def `vertical-left`: typings.rcMenu.rcMenuStrings.`vertical-left` = "vertical-left".asInstanceOf[typings.rcMenu.rcMenuStrings.`vertical-left`]
+    inline def `vertical-left`: typings.rcMenu.rcMenuStrings.`vertical-left` = "vertical-left".asInstanceOf[typings.rcMenu.rcMenuStrings.`vertical-left`]
     
-    @scala.inline
-    def `vertical-right`: typings.rcMenu.rcMenuStrings.`vertical-right` = "vertical-right".asInstanceOf[typings.rcMenu.rcMenuStrings.`vertical-right`]
+    inline def `vertical-right`: typings.rcMenu.rcMenuStrings.`vertical-right` = "vertical-right".asInstanceOf[typings.rcMenu.rcMenuStrings.`vertical-right`]
   }
   
   trait MiniStore extends StObject {
@@ -106,8 +94,7 @@ object interfaceMod {
   }
   object MiniStore {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getState: () => js.Any,
       setState: js.Any => Unit,
       subscribe: js.Function0[Unit] => js.Function0[Unit]
@@ -116,17 +103,13 @@ object interfaceMod {
       __obj.asInstanceOf[MiniStore]
     }
     
-    @scala.inline
-    implicit class MiniStoreMutableBuilder[Self <: MiniStore] (val x: Self) extends AnyVal {
+    extension [Self <: MiniStore](x: Self) {
       
-      @scala.inline
-      def setGetState(value: () => js.Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => js.Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetState(value: js.Any => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+      inline def setSetState(value: js.Any => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubscribe(value: js.Function0[Unit] => js.Function0[Unit]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+      inline def setSubscribe(value: js.Function0[Unit] => js.Function0[Unit]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
   }
   
@@ -146,8 +129,7 @@ object interfaceMod {
   }
   object SelectInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       domEvent: MouseEvent[HTMLElement, NativeMouseEvent],
       item: ReactInstance,
       key: Key,
@@ -157,17 +139,13 @@ object interfaceMod {
       __obj.asInstanceOf[SelectInfo]
     }
     
-    @scala.inline
-    implicit class SelectInfoMutableBuilder[Self <: SelectInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SelectInfo](x: Self) {
       
-      @scala.inline
-      def setSelectedKeys(value: js.Array[Key]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
+      inline def setSelectedKeys(value: js.Array[Key]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedKeysUndefined: Self = StObject.set(x, "selectedKeys", js.undefined)
+      inline def setSelectedKeysUndefined: Self = StObject.set(x, "selectedKeys", js.undefined)
       
-      @scala.inline
-      def setSelectedKeysVarargs(value: Key*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
+      inline def setSelectedKeysVarargs(value: Key*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
     }
   }
   
@@ -178,10 +156,8 @@ object interfaceMod {
   trait TriggerSubMenuAction extends StObject
   object TriggerSubMenuAction {
     
-    @scala.inline
-    def click: typings.rcMenu.rcMenuStrings.click = "click".asInstanceOf[typings.rcMenu.rcMenuStrings.click]
+    inline def click: typings.rcMenu.rcMenuStrings.click = "click".asInstanceOf[typings.rcMenu.rcMenuStrings.click]
     
-    @scala.inline
-    def hover: typings.rcMenu.rcMenuStrings.hover = "hover".asInstanceOf[typings.rcMenu.rcMenuStrings.hover]
+    inline def hover: typings.rcMenu.rcMenuStrings.hover = "hover".asInstanceOf[typings.rcMenu.rcMenuStrings.hover]
   }
 }

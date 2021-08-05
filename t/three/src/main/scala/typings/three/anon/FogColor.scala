@@ -17,25 +17,19 @@ trait FogColor extends StObject {
 }
 object FogColor {
   
-  @scala.inline
-  def apply(fogColor: IUniform, fogDensity: IUniform, fogFar: IUniform, fogNear: IUniform): FogColor = {
+  inline def apply(fogColor: IUniform, fogDensity: IUniform, fogFar: IUniform, fogNear: IUniform): FogColor = {
     val __obj = js.Dynamic.literal(fogColor = fogColor.asInstanceOf[js.Any], fogDensity = fogDensity.asInstanceOf[js.Any], fogFar = fogFar.asInstanceOf[js.Any], fogNear = fogNear.asInstanceOf[js.Any])
     __obj.asInstanceOf[FogColor]
   }
   
-  @scala.inline
-  implicit class FogColorMutableBuilder[Self <: FogColor] (val x: Self) extends AnyVal {
+  extension [Self <: FogColor](x: Self) {
     
-    @scala.inline
-    def setFogColor(value: IUniform): Self = StObject.set(x, "fogColor", value.asInstanceOf[js.Any])
+    inline def setFogColor(value: IUniform): Self = StObject.set(x, "fogColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFogDensity(value: IUniform): Self = StObject.set(x, "fogDensity", value.asInstanceOf[js.Any])
+    inline def setFogDensity(value: IUniform): Self = StObject.set(x, "fogDensity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFogFar(value: IUniform): Self = StObject.set(x, "fogFar", value.asInstanceOf[js.Any])
+    inline def setFogFar(value: IUniform): Self = StObject.set(x, "fogFar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFogNear(value: IUniform): Self = StObject.set(x, "fogNear", value.asInstanceOf[js.Any])
+    inline def setFogNear(value: IUniform): Self = StObject.set(x, "fogNear", value.asInstanceOf[js.Any])
   }
 }

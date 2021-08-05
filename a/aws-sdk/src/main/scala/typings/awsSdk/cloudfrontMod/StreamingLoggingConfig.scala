@@ -23,22 +23,17 @@ trait StreamingLoggingConfig extends StObject {
 }
 object StreamingLoggingConfig {
   
-  @scala.inline
-  def apply(Bucket: String, Enabled: Boolean, Prefix: String): StreamingLoggingConfig = {
+  inline def apply(Bucket: String, Enabled: Boolean, Prefix: String): StreamingLoggingConfig = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Prefix = Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamingLoggingConfig]
   }
   
-  @scala.inline
-  implicit class StreamingLoggingConfigMutableBuilder[Self <: StreamingLoggingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: StreamingLoggingConfig](x: Self) {
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
   }
 }

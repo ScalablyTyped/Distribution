@@ -120,87 +120,61 @@ trait RouteOptionsPayload extends StObject {
 }
 object RouteOptionsPayload {
   
-  @scala.inline
-  def apply(): RouteOptionsPayload = {
+  inline def apply(): RouteOptionsPayload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteOptionsPayload]
   }
   
-  @scala.inline
-  implicit class RouteOptionsPayloadMutableBuilder[Self <: RouteOptionsPayload] (val x: Self) extends AnyVal {
+  extension [Self <: RouteOptionsPayload](x: Self) {
     
-    @scala.inline
-    def setAllow(value: String | js.Array[String]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+    inline def setAllow(value: String | js.Array[String]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
+    inline def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     
-    @scala.inline
-    def setAllowVarargs(value: String*): Self = StObject.set(x, "allow", js.Array(value :_*))
+    inline def setAllowVarargs(value: String*): Self = StObject.set(x, "allow", js.Array(value :_*))
     
-    @scala.inline
-    def setCompression(value: Dictionary[PayloadCompressionDecoderSettings]): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: Dictionary[PayloadCompressionDecoderSettings]): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+    inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
-    @scala.inline
-    def setDefaultContentType(value: String): Self = StObject.set(x, "defaultContentType", value.asInstanceOf[js.Any])
+    inline def setDefaultContentType(value: String): Self = StObject.set(x, "defaultContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultContentTypeUndefined: Self = StObject.set(x, "defaultContentType", js.undefined)
+    inline def setDefaultContentTypeUndefined: Self = StObject.set(x, "defaultContentType", js.undefined)
     
-    @scala.inline
-    def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
+    inline def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailActionFunction3(
+    inline def setFailActionFunction3(
       value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
     ): Self = StObject.set(x, "failAction", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
+    inline def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
     
-    @scala.inline
-    def setMaxBytes(value: Double): Self = StObject.set(x, "maxBytes", value.asInstanceOf[js.Any])
+    inline def setMaxBytes(value: Double): Self = StObject.set(x, "maxBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBytesUndefined: Self = StObject.set(x, "maxBytes", js.undefined)
+    inline def setMaxBytesUndefined: Self = StObject.set(x, "maxBytes", js.undefined)
     
-    @scala.inline
-    def setMultipart(value: `false` | Output): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
+    inline def setMultipart(value: `false` | Output): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
+    inline def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
     
-    @scala.inline
-    def setOutput(value: PayloadOutput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: PayloadOutput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
-    @scala.inline
-    def setOverride(value: String): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    inline def setOverride(value: String): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+    inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
     
-    @scala.inline
-    def setParse(value: Boolean | gunzip): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    inline def setParse(value: Boolean | gunzip): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+    inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: `false` | Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: `false` | Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUploads(value: String): Self = StObject.set(x, "uploads", value.asInstanceOf[js.Any])
+    inline def setUploads(value: String): Self = StObject.set(x, "uploads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadsUndefined: Self = StObject.set(x, "uploads", js.undefined)
+    inline def setUploadsUndefined: Self = StObject.set(x, "uploads", js.undefined)
   }
 }

@@ -22,28 +22,23 @@ trait RenameProvider extends StObject {
 }
 object RenameProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideRenameEdits: (ITextModel, Position, String, CancellationToken) => ProviderResult[WorkspaceEdit & Rejection]
   ): RenameProvider = {
     val __obj = js.Dynamic.literal(provideRenameEdits = js.Any.fromFunction4(provideRenameEdits))
     __obj.asInstanceOf[RenameProvider]
   }
   
-  @scala.inline
-  implicit class RenameProviderMutableBuilder[Self <: RenameProvider] (val x: Self) extends AnyVal {
+  extension [Self <: RenameProvider](x: Self) {
     
-    @scala.inline
-    def setProvideRenameEdits(
+    inline def setProvideRenameEdits(
       value: (ITextModel, Position, String, CancellationToken) => ProviderResult[WorkspaceEdit & Rejection]
     ): Self = StObject.set(x, "provideRenameEdits", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setResolveRenameLocation(
+    inline def setResolveRenameLocation(
       value: (/* model */ ITextModel, /* position */ Position, /* token */ CancellationToken) => ProviderResult[RenameLocation & Rejection]
     ): Self = StObject.set(x, "resolveRenameLocation", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setResolveRenameLocationUndefined: Self = StObject.set(x, "resolveRenameLocation", js.undefined)
+    inline def setResolveRenameLocationUndefined: Self = StObject.set(x, "resolveRenameLocation", js.undefined)
   }
 }

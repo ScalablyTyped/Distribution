@@ -42,8 +42,7 @@ trait NodeInfo extends StObject {
 }
 object NodeInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorMessage: String,
     isLeaf: Boolean,
     label: String,
@@ -57,49 +56,34 @@ object NodeInfo {
     __obj.asInstanceOf[NodeInfo]
   }
   
-  @scala.inline
-  implicit class NodeInfoMutableBuilder[Self <: NodeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: NodeInfo](x: Self) {
     
-    @scala.inline
-    def setChildProvider(value: String): Self = StObject.set(x, "childProvider", value.asInstanceOf[js.Any])
+    inline def setChildProvider(value: String): Self = StObject.set(x, "childProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildProviderUndefined: Self = StObject.set(x, "childProvider", js.undefined)
+    inline def setChildProviderUndefined: Self = StObject.set(x, "childProvider", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconType(value: String | SqlThemeIcon): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
+    inline def setIconType(value: String | SqlThemeIcon): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
+    inline def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
     
-    @scala.inline
-    def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
+    inline def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ObjectMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodePath(value: String): Self = StObject.set(x, "nodePath", value.asInstanceOf[js.Any])
+    inline def setNodePath(value: String): Self = StObject.set(x, "nodePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeStatus(value: String): Self = StObject.set(x, "nodeStatus", value.asInstanceOf[js.Any])
+    inline def setNodeStatus(value: String): Self = StObject.set(x, "nodeStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeSubType(value: String): Self = StObject.set(x, "nodeSubType", value.asInstanceOf[js.Any])
+    inline def setNodeSubType(value: String): Self = StObject.set(x, "nodeSubType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+    inline def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

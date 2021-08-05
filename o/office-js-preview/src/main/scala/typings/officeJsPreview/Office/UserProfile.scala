@@ -92,25 +92,19 @@ trait UserProfile extends StObject {
 }
 object UserProfile {
   
-  @scala.inline
-  def apply(accountType: String, displayName: String, emailAddress: String, timeZone: String): UserProfile = {
+  inline def apply(accountType: String, displayName: String, emailAddress: String, timeZone: String): UserProfile = {
     val __obj = js.Dynamic.literal(accountType = accountType.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], emailAddress = emailAddress.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserProfile]
   }
   
-  @scala.inline
-  implicit class UserProfileMutableBuilder[Self <: UserProfile] (val x: Self) extends AnyVal {
+  extension [Self <: UserProfile](x: Self) {
     
-    @scala.inline
-    def setAccountType(value: String): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
+    inline def setAccountType(value: String): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
   }
 }

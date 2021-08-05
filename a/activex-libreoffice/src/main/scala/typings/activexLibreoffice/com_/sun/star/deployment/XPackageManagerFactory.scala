@@ -27,16 +27,13 @@ trait XPackageManagerFactory extends StObject {
 }
 object XPackageManagerFactory {
   
-  @scala.inline
-  def apply(getPackageManager: String => XPackageManager): XPackageManagerFactory = {
+  inline def apply(getPackageManager: String => XPackageManager): XPackageManagerFactory = {
     val __obj = js.Dynamic.literal(getPackageManager = js.Any.fromFunction1(getPackageManager))
     __obj.asInstanceOf[XPackageManagerFactory]
   }
   
-  @scala.inline
-  implicit class XPackageManagerFactoryMutableBuilder[Self <: XPackageManagerFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XPackageManagerFactory](x: Self) {
     
-    @scala.inline
-    def setGetPackageManager(value: String => XPackageManager): Self = StObject.set(x, "getPackageManager", js.Any.fromFunction1(value))
+    inline def setGetPackageManager(value: String => XPackageManager): Self = StObject.set(x, "getPackageManager", js.Any.fromFunction1(value))
   }
 }

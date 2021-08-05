@@ -18,28 +18,21 @@ trait ListGatewaysOutput extends StObject {
 }
 object ListGatewaysOutput {
   
-  @scala.inline
-  def apply(): ListGatewaysOutput = {
+  inline def apply(): ListGatewaysOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGatewaysOutput]
   }
   
-  @scala.inline
-  implicit class ListGatewaysOutputMutableBuilder[Self <: ListGatewaysOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListGatewaysOutput](x: Self) {
     
-    @scala.inline
-    def setGateways(value: Gateways): Self = StObject.set(x, "Gateways", value.asInstanceOf[js.Any])
+    inline def setGateways(value: Gateways): Self = StObject.set(x, "Gateways", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewaysUndefined: Self = StObject.set(x, "Gateways", js.undefined)
+    inline def setGatewaysUndefined: Self = StObject.set(x, "Gateways", js.undefined)
     
-    @scala.inline
-    def setGatewaysVarargs(value: GatewayInfo*): Self = StObject.set(x, "Gateways", js.Array(value :_*))
+    inline def setGatewaysVarargs(value: GatewayInfo*): Self = StObject.set(x, "Gateways", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

@@ -50,55 +50,39 @@ trait ParamsResourceRepresentativesRepresentativeinfobyaddress
 }
 object ParamsResourceRepresentativesRepresentativeinfobyaddress {
   
-  @scala.inline
-  def apply(): ParamsResourceRepresentativesRepresentativeinfobyaddress = {
+  inline def apply(): ParamsResourceRepresentativesRepresentativeinfobyaddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceRepresentativesRepresentativeinfobyaddress]
   }
   
-  @scala.inline
-  implicit class ParamsResourceRepresentativesRepresentativeinfobyaddressMutableBuilder[Self <: ParamsResourceRepresentativesRepresentativeinfobyaddress] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceRepresentativesRepresentativeinfobyaddress](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setIncludeOffices(value: Boolean): Self = StObject.set(x, "includeOffices", value.asInstanceOf[js.Any])
+    inline def setIncludeOffices(value: Boolean): Self = StObject.set(x, "includeOffices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeOfficesUndefined: Self = StObject.set(x, "includeOffices", js.undefined)
+    inline def setIncludeOfficesUndefined: Self = StObject.set(x, "includeOffices", js.undefined)
     
-    @scala.inline
-    def setLevels(value: js.Array[String]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: js.Array[String]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+    inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
-    @scala.inline
-    def setLevelsVarargs(value: String*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: String*): Self = StObject.set(x, "levels", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestBody(value: SchemaRepresentativeInfoRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaRepresentativeInfoRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+    inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    @scala.inline
-    def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
   }
 }

@@ -28,34 +28,25 @@ trait UpdateSipRuleRequest extends StObject {
 }
 object UpdateSipRuleRequest {
   
-  @scala.inline
-  def apply(Name: SipRuleName, SipRuleId: NonEmptyString): UpdateSipRuleRequest = {
+  inline def apply(Name: SipRuleName, SipRuleId: NonEmptyString): UpdateSipRuleRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SipRuleId = SipRuleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSipRuleRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSipRuleRequestMutableBuilder[Self <: UpdateSipRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSipRuleRequest](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: NullableBoolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: NullableBoolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
     
-    @scala.inline
-    def setName(value: SipRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SipRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSipRuleId(value: NonEmptyString): Self = StObject.set(x, "SipRuleId", value.asInstanceOf[js.Any])
+    inline def setSipRuleId(value: NonEmptyString): Self = StObject.set(x, "SipRuleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetApplications(value: SipRuleTargetApplicationList): Self = StObject.set(x, "TargetApplications", value.asInstanceOf[js.Any])
+    inline def setTargetApplications(value: SipRuleTargetApplicationList): Self = StObject.set(x, "TargetApplications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetApplicationsUndefined: Self = StObject.set(x, "TargetApplications", js.undefined)
+    inline def setTargetApplicationsUndefined: Self = StObject.set(x, "TargetApplications", js.undefined)
     
-    @scala.inline
-    def setTargetApplicationsVarargs(value: SipRuleTargetApplication*): Self = StObject.set(x, "TargetApplications", js.Array(value :_*))
+    inline def setTargetApplicationsVarargs(value: SipRuleTargetApplication*): Self = StObject.set(x, "TargetApplications", js.Array(value :_*))
   }
 }

@@ -11,18 +11,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assertOptions(options: Null, defaults: js.Array[String]): NamedValues = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptions")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[NamedValues]
-  @scala.inline
-  def assertOptions(options: Null, defaults: NamedValues): NamedValues = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptions")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[NamedValues]
-  @scala.inline
-  def assertOptions(options: Unit, defaults: js.Array[String]): NamedValues = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptions")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[NamedValues]
-  @scala.inline
-  def assertOptions(options: Unit, defaults: NamedValues): NamedValues = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptions")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[NamedValues]
-  @scala.inline
-  def assertOptions(options: NamedValues, defaults: js.Array[String]): NamedValues = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptions")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[NamedValues]
-  @scala.inline
-  def assertOptions(options: NamedValues, defaults: NamedValues): NamedValues = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptions")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[NamedValues]
+  inline def assertOptions(options: Null, defaults: js.Array[String]): NamedValues = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptions")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[NamedValues]
+  inline def assertOptions(options: Null, defaults: NamedValues): NamedValues = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptions")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[NamedValues]
+  inline def assertOptions(options: Unit, defaults: js.Array[String]): NamedValues = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptions")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[NamedValues]
+  inline def assertOptions(options: Unit, defaults: NamedValues): NamedValues = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptions")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[NamedValues]
+  inline def assertOptions(options: NamedValues, defaults: js.Array[String]): NamedValues = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptions")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[NamedValues]
+  inline def assertOptions(options: NamedValues, defaults: NamedValues): NamedValues = (^.asInstanceOf[js.Dynamic].applyDynamic("assertOptions")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[NamedValues]
   
   type NamedValues = StringDictionary[js.Any]
 }

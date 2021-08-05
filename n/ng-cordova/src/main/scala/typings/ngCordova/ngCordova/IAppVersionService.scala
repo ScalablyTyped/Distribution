@@ -13,19 +13,15 @@ trait IAppVersionService extends StObject {
 }
 object IAppVersionService {
   
-  @scala.inline
-  def apply(getVersionCode: () => IPromise[String], getVersionNumber: () => IPromise[String]): IAppVersionService = {
+  inline def apply(getVersionCode: () => IPromise[String], getVersionNumber: () => IPromise[String]): IAppVersionService = {
     val __obj = js.Dynamic.literal(getVersionCode = js.Any.fromFunction0(getVersionCode), getVersionNumber = js.Any.fromFunction0(getVersionNumber))
     __obj.asInstanceOf[IAppVersionService]
   }
   
-  @scala.inline
-  implicit class IAppVersionServiceMutableBuilder[Self <: IAppVersionService] (val x: Self) extends AnyVal {
+  extension [Self <: IAppVersionService](x: Self) {
     
-    @scala.inline
-    def setGetVersionCode(value: () => IPromise[String]): Self = StObject.set(x, "getVersionCode", js.Any.fromFunction0(value))
+    inline def setGetVersionCode(value: () => IPromise[String]): Self = StObject.set(x, "getVersionCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVersionNumber(value: () => IPromise[String]): Self = StObject.set(x, "getVersionNumber", js.Any.fromFunction0(value))
+    inline def setGetVersionNumber(value: () => IPromise[String]): Self = StObject.set(x, "getVersionNumber", js.Any.fromFunction0(value))
   }
 }

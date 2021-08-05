@@ -13,19 +13,15 @@ trait AppInstanceRetentionSettings extends StObject {
 }
 object AppInstanceRetentionSettings {
   
-  @scala.inline
-  def apply(): AppInstanceRetentionSettings = {
+  inline def apply(): AppInstanceRetentionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppInstanceRetentionSettings]
   }
   
-  @scala.inline
-  implicit class AppInstanceRetentionSettingsMutableBuilder[Self <: AppInstanceRetentionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AppInstanceRetentionSettings](x: Self) {
     
-    @scala.inline
-    def setChannelRetentionSettings(value: ChannelRetentionSettings): Self = StObject.set(x, "ChannelRetentionSettings", value.asInstanceOf[js.Any])
+    inline def setChannelRetentionSettings(value: ChannelRetentionSettings): Self = StObject.set(x, "ChannelRetentionSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelRetentionSettingsUndefined: Self = StObject.set(x, "ChannelRetentionSettings", js.undefined)
+    inline def setChannelRetentionSettingsUndefined: Self = StObject.set(x, "ChannelRetentionSettings", js.undefined)
   }
 }

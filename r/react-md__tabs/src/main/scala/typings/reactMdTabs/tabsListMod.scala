@@ -40,26 +40,20 @@ object tabsListMod {
   }
   object TabsListProps {
     
-    @scala.inline
-    def apply(activeIndex: Double, onActiveIndexChange: Double => Unit): TabsListProps = {
+    inline def apply(activeIndex: Double, onActiveIndexChange: Double => Unit): TabsListProps = {
       val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], onActiveIndexChange = js.Any.fromFunction1(onActiveIndexChange))
       __obj.asInstanceOf[TabsListProps]
     }
     
-    @scala.inline
-    implicit class TabsListPropsMutableBuilder[Self <: TabsListProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabsListProps](x: Self) {
       
-      @scala.inline
-      def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+      inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableTransition(value: Boolean): Self = StObject.set(x, "disableTransition", value.asInstanceOf[js.Any])
+      inline def setDisableTransition(value: Boolean): Self = StObject.set(x, "disableTransition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableTransitionUndefined: Self = StObject.set(x, "disableTransition", js.undefined)
+      inline def setDisableTransitionUndefined: Self = StObject.set(x, "disableTransition", js.undefined)
       
-      @scala.inline
-      def setOnActiveIndexChange(value: Double => Unit): Self = StObject.set(x, "onActiveIndexChange", js.Any.fromFunction1(value))
+      inline def setOnActiveIndexChange(value: Double => Unit): Self = StObject.set(x, "onActiveIndexChange", js.Any.fromFunction1(value))
     }
   }
 }

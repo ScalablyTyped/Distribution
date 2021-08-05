@@ -10,16 +10,13 @@ trait OptionsLimit extends StObject {
 }
 object OptionsLimit {
   
-  @scala.inline
-  def apply(options: Limit): OptionsLimit = {
+  inline def apply(options: Limit): OptionsLimit = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsLimit]
   }
   
-  @scala.inline
-  implicit class OptionsLimitMutableBuilder[Self <: OptionsLimit] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsLimit](x: Self) {
     
-    @scala.inline
-    def setOptions(value: Limit): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Limit): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

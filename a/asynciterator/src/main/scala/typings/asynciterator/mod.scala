@@ -30,7 +30,7 @@ object mod {
     def this(items: Unit, hasAutoStart: AutoStart) = this()
     def this(items: Iterable[T], hasAutoStart: AutoStart) = this()
     
-    var _buffer: js.Any = js.native
+    /* private */ var _buffer: js.Any = js.native
   }
   
   @JSImport("asynciterator", "AsyncIterator")
@@ -77,13 +77,13 @@ object mod {
       */
     /* protected */ def _endAsync(): Unit = js.native
     
-    var _properties: js.UndefOr[StringDictionary[js.Any]] = js.native
+    /* protected */ var _properties: js.UndefOr[StringDictionary[js.Any]] = js.native
     
-    var _propertyCallbacks: js.UndefOr[StringDictionary[js.Array[js.Function1[/* value */ js.Any, Unit]]]] = js.native
+    /* protected */ var _propertyCallbacks: js.UndefOr[StringDictionary[js.Array[js.Function1[/* value */ js.Any, Unit]]]] = js.native
     
-    var _readable: js.Any = js.native
+    /* private */ var _readable: js.Any = js.native
     
-    var _state: Double = js.native
+    /* protected */ var _state: Double = js.native
     
     /**
       Generates details for a textual representation of the iterator.
@@ -350,7 +350,7 @@ object mod {
       */
     /* protected */ def _begin(done: js.Function0[Unit]): Unit = js.native
     
-    var _buffer: js.Any = js.native
+    /* private */ var _buffer: js.Any = js.native
     
     /**
       Stops the iterator from generating new items,
@@ -390,7 +390,7 @@ object mod {
       */
     /* protected */ def _init(autoStart: Boolean): Unit = js.native
     
-    var _maxBufferSize: js.Any = js.native
+    /* private */ var _maxBufferSize: js.Any = js.native
     
     /**
       Adds an item to the internal buffer.
@@ -400,7 +400,7 @@ object mod {
       */
     /* protected */ def _push(item: T): Unit = js.native
     
-    var _pushedCount: Double = js.native
+    /* protected */ var _pushedCount: Double = js.native
     
     /**
       Tries to generate the given number of items.
@@ -411,7 +411,7 @@ object mod {
       */
     /* protected */ def _read(count: Double, done: js.Function0[Unit]): Unit = js.native
     
-    var _reading: Boolean = js.native
+    /* protected */ var _reading: Boolean = js.native
     
     /**
       The maximum number of items to preload in the internal buffer.
@@ -444,7 +444,7 @@ object mod {
     
     /* protected */ def _init(): Unit = js.native
     
-    var _readPosition: js.Any = js.native
+    /* private */ var _readPosition: js.Any = js.native
   }
   
   @JSImport("asynciterator", "DESTROYED")
@@ -476,11 +476,11 @@ object mod {
   class IntegerIterator () extends AsyncIterator[Double] {
     def this(hasStartStepEnd: End) = this()
     
-    var _last: js.Any = js.native
+    /* private */ var _last: js.Any = js.native
     
-    var _next: js.Any = js.native
+    /* private */ var _next: js.Any = js.native
     
-    var _step: js.Any = js.native
+    /* private */ var _step: js.Any = js.native
   }
   
   @JSImport("asynciterator", "MultiTransformIterator")
@@ -517,7 +517,7 @@ object mod {
       */
     /* protected */ def _createTransformer(item: S): AsyncIterator[D] = js.native
     
-    var _transformerQueue: js.Any = js.native
+    /* private */ var _transformerQueue: js.Any = js.native
   }
   
   @JSImport("asynciterator", "OPEN")
@@ -555,20 +555,20 @@ object mod {
     ) = this()
     def this(source: SourceExpression[S], options: TransformOptions[S, D]) = this()
     
-    var _appender: js.Any = js.native
+    /* private */ var _appender: js.Any = js.native
     
-    var _filter: js.Any = js.native
+    /* private */ var _filter: js.Any = js.native
     
     /* protected */ def _insert(inserter: Unit, done: js.Function0[Unit]): Unit = js.native
     /* protected */ def _insert(inserter: AsyncIterator[D], done: js.Function0[Unit]): Unit = js.native
     
-    var _limit: js.Any = js.native
+    /* private */ var _limit: js.Any = js.native
     
-    var _map: js.Any = js.native
+    /* private */ var _map: js.Any = js.native
     
-    var _offset: js.Any = js.native
+    /* private */ var _offset: js.Any = js.native
     
-    var _prepender: js.Any = js.native
+    /* private */ var _prepender: js.Any = js.native
     
     /* protected */ def _readAndTransformSimple(count: Double, next: js.Function0[Unit], done: js.Function0[Unit]): Unit = js.native
   }
@@ -582,7 +582,7 @@ object mod {
       */
     def this(item: T) = this()
     
-    var _item: js.Any = js.native
+    /* private */ var _item: js.Any = js.native
   }
   
   @JSImport("asynciterator", "TransformIterator")
@@ -610,9 +610,9 @@ object mod {
       */
     /* protected */ def _closeWhenDone(): Unit = js.native
     
-    var _createSource: js.UndefOr[js.Function0[AsyncIteratorOrPromise[S]] | Null] = js.native
+    /* protected */ var _createSource: js.UndefOr[js.Function0[AsyncIteratorOrPromise[S]] | Null] = js.native
     
-    var _destroySource: Boolean = js.native
+    /* protected */ var _destroySource: Boolean = js.native
     
     /**
       Initializes a source that was set through a promise
@@ -620,7 +620,7 @@ object mod {
       */
     /* protected */ def _loadSourceAsync(): Unit = js.native
     
-    var _optional: Boolean = js.native
+    /* protected */ var _optional: Boolean = js.native
     
     /**
       Tries to transform the item;
@@ -633,9 +633,9 @@ object mod {
       */
     /* protected */ def _readAndTransform(next: js.Function0[Unit], done: js.Function0[Unit]): Unit = js.native
     
-    var _source: js.UndefOr[InternalSource[S]] = js.native
+    /* protected */ var _source: js.UndefOr[InternalSource[S]] = js.native
     
-    var _sourceStarted: Boolean = js.native
+    /* protected */ var _sourceStarted: Boolean = js.native
     
     /**
       Generates items based on the item from the source.
@@ -680,51 +680,38 @@ object mod {
     
     /* protected */ def _addSource(source: InternalSource[T]): Unit = js.native
     
-    var _currentSource: js.Any = js.native
+    /* private */ var _currentSource: js.Any = js.native
     
     /* protected */ def _loadSources(): Unit = js.native
     
-    var _pending: js.Any = js.native
+    /* private */ var _pending: js.Any = js.native
     
     /* protected */ def _removeEmptySources(): Unit = js.native
     
-    var _sources: js.Any = js.native
+    /* private */ var _sources: js.Any = js.native
   }
   
-  @scala.inline
-  def empty[T](): EmptyIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[EmptyIterator[T]]
+  inline def empty[T](): EmptyIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[EmptyIterator[T]]
   
-  @scala.inline
-  def fromArray[T](items: Iterable[T]): ArrayIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(items.asInstanceOf[js.Any]).asInstanceOf[ArrayIterator[T]]
+  inline def fromArray[T](items: Iterable[T]): ArrayIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(items.asInstanceOf[js.Any]).asInstanceOf[ArrayIterator[T]]
   
-  @scala.inline
-  def getTaskScheduler(): TaskScheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("getTaskScheduler")().asInstanceOf[TaskScheduler]
+  inline def getTaskScheduler(): TaskScheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("getTaskScheduler")().asInstanceOf[TaskScheduler]
   
-  @scala.inline
-  def range(start: Double, end: Double): IntegerIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[IntegerIterator]
-  @scala.inline
-  def range(start: Double, end: Double, step: Double): IntegerIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IntegerIterator]
+  inline def range(start: Double, end: Double): IntegerIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[IntegerIterator]
+  inline def range(start: Double, end: Double, step: Double): IntegerIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IntegerIterator]
   
-  @scala.inline
-  def scheduleTask(task: Task): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scheduleTask")(task.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def scheduleTask(task: Task): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scheduleTask")(task.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setTaskScheduler(scheduler: TaskScheduler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTaskScheduler")(scheduler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setTaskScheduler(scheduler: TaskScheduler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTaskScheduler")(scheduler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def single[T](item: T): SingletonIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("single")(item.asInstanceOf[js.Any]).asInstanceOf[SingletonIterator[T]]
+  inline def single[T](item: T): SingletonIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("single")(item.asInstanceOf[js.Any]).asInstanceOf[SingletonIterator[T]]
   
-  @scala.inline
-  def union[T](sources: AsyncIteratorOrArray[AsyncIterator[T]]): UnionIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(sources.asInstanceOf[js.Any]).asInstanceOf[UnionIterator[T]]
+  inline def union[T](sources: AsyncIteratorOrArray[AsyncIterator[T]]): UnionIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(sources.asInstanceOf[js.Any]).asInstanceOf[UnionIterator[T]]
   
-  @scala.inline
-  def wrap[T](source: js.Promise[EventEmitter]): TransformIterator[T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(source.asInstanceOf[js.Any]).asInstanceOf[TransformIterator[T, T]]
-  @scala.inline
-  def wrap[T](source: js.Promise[EventEmitter], options: TransformIteratorOptions[T]): TransformIterator[T, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransformIterator[T, T]]
-  @scala.inline
-  def wrap[T](source: EventEmitter): TransformIterator[T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(source.asInstanceOf[js.Any]).asInstanceOf[TransformIterator[T, T]]
-  @scala.inline
-  def wrap[T](source: EventEmitter, options: TransformIteratorOptions[T]): TransformIterator[T, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransformIterator[T, T]]
+  inline def wrap[T](source: js.Promise[EventEmitter]): TransformIterator[T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(source.asInstanceOf[js.Any]).asInstanceOf[TransformIterator[T, T]]
+  inline def wrap[T](source: js.Promise[EventEmitter], options: TransformIteratorOptions[T]): TransformIterator[T, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransformIterator[T, T]]
+  inline def wrap[T](source: EventEmitter): TransformIterator[T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(source.asInstanceOf[js.Any]).asInstanceOf[TransformIterator[T, T]]
+  inline def wrap[T](source: EventEmitter, options: TransformIteratorOptions[T]): TransformIterator[T, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransformIterator[T, T]]
   
   type AsyncIteratorOrArray[T] = js.Array[T] | AsyncIterator[T]
   
@@ -738,26 +725,20 @@ object mod {
   }
   object BufferedIteratorOptions {
     
-    @scala.inline
-    def apply(): BufferedIteratorOptions = {
+    inline def apply(): BufferedIteratorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BufferedIteratorOptions]
     }
     
-    @scala.inline
-    implicit class BufferedIteratorOptionsMutableBuilder[Self <: BufferedIteratorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BufferedIteratorOptions](x: Self) {
       
-      @scala.inline
-      def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+      inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+      inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
       
-      @scala.inline
-      def setMaxBufferSize(value: Double): Self = StObject.set(x, "maxBufferSize", value.asInstanceOf[js.Any])
+      inline def setMaxBufferSize(value: Double): Self = StObject.set(x, "maxBufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBufferSizeUndefined: Self = StObject.set(x, "maxBufferSize", js.undefined)
+      inline def setMaxBufferSizeUndefined: Self = StObject.set(x, "maxBufferSize", js.undefined)
     }
   }
   
@@ -775,20 +756,16 @@ object mod {
   }
   object MultiTransformOptions {
     
-    @scala.inline
-    def apply[S, D](): MultiTransformOptions[S, D] = {
+    inline def apply[S, D](): MultiTransformOptions[S, D] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MultiTransformOptions[S, D]]
     }
     
-    @scala.inline
-    implicit class MultiTransformOptionsMutableBuilder[Self <: MultiTransformOptions[?, ?], S, D] (val x: Self & (MultiTransformOptions[S, D])) extends AnyVal {
+    extension [Self <: MultiTransformOptions[?, ?], S, D](x: Self & (MultiTransformOptions[S, D])) {
       
-      @scala.inline
-      def setMultiTransform(value: /* item */ S => AsyncIterator[D]): Self = StObject.set(x, "multiTransform", js.Any.fromFunction1(value))
+      inline def setMultiTransform(value: /* item */ S => AsyncIterator[D]): Self = StObject.set(x, "multiTransform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMultiTransformUndefined: Self = StObject.set(x, "multiTransform", js.undefined)
+      inline def setMultiTransformUndefined: Self = StObject.set(x, "multiTransform", js.undefined)
     }
   }
   
@@ -806,35 +783,26 @@ object mod {
   }
   object TransformIteratorOptions {
     
-    @scala.inline
-    def apply[S](): TransformIteratorOptions[S] = {
+    inline def apply[S](): TransformIteratorOptions[S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransformIteratorOptions[S]]
     }
     
-    @scala.inline
-    implicit class TransformIteratorOptionsMutableBuilder[Self <: TransformIteratorOptions[?], S] (val x: Self & TransformIteratorOptions[S]) extends AnyVal {
+    extension [Self <: TransformIteratorOptions[?], S](x: Self & TransformIteratorOptions[S]) {
       
-      @scala.inline
-      def setDestroySource(value: Boolean): Self = StObject.set(x, "destroySource", value.asInstanceOf[js.Any])
+      inline def setDestroySource(value: Boolean): Self = StObject.set(x, "destroySource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroySourceUndefined: Self = StObject.set(x, "destroySource", js.undefined)
+      inline def setDestroySourceUndefined: Self = StObject.set(x, "destroySource", js.undefined)
       
-      @scala.inline
-      def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+      inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
-      @scala.inline
-      def setSource(value: SourceExpression[S]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: SourceExpression[S]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceFunction0(value: () => AsyncIteratorOrPromise[S]): Self = StObject.set(x, "source", js.Any.fromFunction0(value))
+      inline def setSourceFunction0(value: () => AsyncIteratorOrPromise[S]): Self = StObject.set(x, "source", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
   
@@ -865,64 +833,46 @@ object mod {
   }
   object TransformOptions {
     
-    @scala.inline
-    def apply[S, D](): TransformOptions[S, D] = {
+    inline def apply[S, D](): TransformOptions[S, D] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransformOptions[S, D]]
     }
     
-    @scala.inline
-    implicit class TransformOptionsMutableBuilder[Self <: TransformOptions[?, ?], S, D] (val x: Self & (TransformOptions[S, D])) extends AnyVal {
+    extension [Self <: TransformOptions[?, ?], S, D](x: Self & (TransformOptions[S, D])) {
       
-      @scala.inline
-      def setAppend(value: AsyncIteratorOrArray[D]): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+      inline def setAppend(value: AsyncIteratorOrArray[D]): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+      inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
       
-      @scala.inline
-      def setAppendVarargs(value: D*): Self = StObject.set(x, "append", js.Array(value :_*))
+      inline def setAppendVarargs(value: D*): Self = StObject.set(x, "append", js.Array(value :_*))
       
-      @scala.inline
-      def setFilter(value: /* item */ S => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* item */ S => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setMap(value: /* item */ S => D): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: /* item */ S => D): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setPrepend(value: AsyncIteratorOrArray[D]): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
+      inline def setPrepend(value: AsyncIteratorOrArray[D]): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
+      inline def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
       
-      @scala.inline
-      def setPrependVarargs(value: D*): Self = StObject.set(x, "prepend", js.Array(value :_*))
+      inline def setPrependVarargs(value: D*): Self = StObject.set(x, "prepend", js.Array(value :_*))
       
-      @scala.inline
-      def setTransform(
+      inline def setTransform(
         value: (/* item */ S, /* done */ js.Function0[Unit], /* push */ js.Function1[/* item */ D, Unit]) => Unit
       ): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
 }

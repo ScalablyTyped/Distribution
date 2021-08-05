@@ -36,8 +36,7 @@ trait MMORoom
 }
 object MMORoom {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containsUser: SFSUser => Boolean,
     containsVariable: String => Boolean,
     defaultAOI: Vec3D,
@@ -71,22 +70,16 @@ object MMORoom {
     __obj.asInstanceOf[MMORoom]
   }
   
-  @scala.inline
-  implicit class MMORoomMutableBuilder[Self <: MMORoom] (val x: Self) extends AnyVal {
+  extension [Self <: MMORoom](x: Self) {
     
-    @scala.inline
-    def setDefaultAOI(value: Vec3D): Self = StObject.set(x, "defaultAOI", value.asInstanceOf[js.Any])
+    inline def setDefaultAOI(value: Vec3D): Self = StObject.set(x, "defaultAOI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMMOItem(value: Double => MMOItem): Self = StObject.set(x, "getMMOItem", js.Any.fromFunction1(value))
+    inline def setGetMMOItem(value: Double => MMOItem): Self = StObject.set(x, "getMMOItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMMOItems(value: () => js.Array[MMOItem]): Self = StObject.set(x, "getMMOItems", js.Any.fromFunction0(value))
+    inline def setGetMMOItems(value: () => js.Array[MMOItem]): Self = StObject.set(x, "getMMOItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHigherMapLimit(value: MapLimits): Self = StObject.set(x, "higherMapLimit", value.asInstanceOf[js.Any])
+    inline def setHigherMapLimit(value: MapLimits): Self = StObject.set(x, "higherMapLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerMapLimit(value: MapLimits): Self = StObject.set(x, "lowerMapLimit", value.asInstanceOf[js.Any])
+    inline def setLowerMapLimit(value: MapLimits): Self = StObject.set(x, "lowerMapLimit", value.asInstanceOf[js.Any])
   }
 }

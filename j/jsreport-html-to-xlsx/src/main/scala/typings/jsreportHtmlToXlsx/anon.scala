@@ -13,17 +13,14 @@ object anon {
   }
   object HtmlEngine {
     
-    @scala.inline
-    def apply(htmlEngine: htmlEngine): HtmlEngine = {
+    inline def apply(htmlEngine: htmlEngine): HtmlEngine = {
       val __obj = js.Dynamic.literal(htmlEngine = htmlEngine.asInstanceOf[js.Any])
       __obj.asInstanceOf[HtmlEngine]
     }
     
-    @scala.inline
-    implicit class HtmlEngineMutableBuilder[Self <: HtmlEngine] (val x: Self) extends AnyVal {
+    extension [Self <: HtmlEngine](x: Self) {
       
-      @scala.inline
-      def setHtmlEngine(value: htmlEngine): Self = StObject.set(x, "htmlEngine", value.asInstanceOf[js.Any])
+      inline def setHtmlEngine(value: htmlEngine): Self = StObject.set(x, "htmlEngine", value.asInstanceOf[js.Any])
     }
   }
   
@@ -40,38 +37,28 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setAddBufferSize(value: Double): Self = StObject.set(x, "addBufferSize", value.asInstanceOf[js.Any])
+      inline def setAddBufferSize(value: Double): Self = StObject.set(x, "addBufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddBufferSizeUndefined: Self = StObject.set(x, "addBufferSize", js.undefined)
+      inline def setAddBufferSizeUndefined: Self = StObject.set(x, "addBufferSize", js.undefined)
       
-      @scala.inline
-      def setEscapeAmp(value: Boolean): Self = StObject.set(x, "escapeAmp", value.asInstanceOf[js.Any])
+      inline def setEscapeAmp(value: Boolean): Self = StObject.set(x, "escapeAmp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeAmpUndefined: Self = StObject.set(x, "escapeAmp", js.undefined)
+      inline def setEscapeAmpUndefined: Self = StObject.set(x, "escapeAmp", js.undefined)
       
-      @scala.inline
-      def setNumberOfParsedAddIterations(value: Double): Self = StObject.set(x, "numberOfParsedAddIterations", value.asInstanceOf[js.Any])
+      inline def setNumberOfParsedAddIterations(value: Double): Self = StObject.set(x, "numberOfParsedAddIterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfParsedAddIterationsUndefined: Self = StObject.set(x, "numberOfParsedAddIterations", js.undefined)
+      inline def setNumberOfParsedAddIterationsUndefined: Self = StObject.set(x, "numberOfParsedAddIterations", js.undefined)
       
-      @scala.inline
-      def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      inline def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     }
   }
 }

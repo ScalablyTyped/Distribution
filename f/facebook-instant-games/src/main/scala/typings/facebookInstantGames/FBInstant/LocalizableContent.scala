@@ -21,19 +21,15 @@ trait LocalizableContent extends StObject {
 }
 object LocalizableContent {
   
-  @scala.inline
-  def apply(default: String, localizations: LocalizationsDict): LocalizableContent = {
+  inline def apply(default: String, localizations: LocalizationsDict): LocalizableContent = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], localizations = localizations.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalizableContent]
   }
   
-  @scala.inline
-  implicit class LocalizableContentMutableBuilder[Self <: LocalizableContent] (val x: Self) extends AnyVal {
+  extension [Self <: LocalizableContent](x: Self) {
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizations(value: LocalizationsDict): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
+    inline def setLocalizations(value: LocalizationsDict): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ trait ScrollParams extends StObject {
 }
 object ScrollParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientHeight: Double,
     clientWidth: Double,
     scrollHeight: Double,
@@ -33,25 +32,18 @@ object ScrollParams {
     __obj.asInstanceOf[ScrollParams]
   }
   
-  @scala.inline
-  implicit class ScrollParamsMutableBuilder[Self <: ScrollParams] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollParams](x: Self) {
     
-    @scala.inline
-    def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
+    inline def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientWidth(value: Double): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
+    inline def setClientWidth(value: Double): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
+    inline def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollWidth(value: Double): Self = StObject.set(x, "scrollWidth", value.asInstanceOf[js.Any])
+    inline def setScrollWidth(value: Double): Self = StObject.set(x, "scrollWidth", value.asInstanceOf[js.Any])
   }
 }

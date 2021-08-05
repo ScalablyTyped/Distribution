@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UnorderedListType extends StObject
 object UnorderedListType {
   
-  @scala.inline
-  def circle: typings.pdfmake.pdfmakeStrings.circle = "circle".asInstanceOf[typings.pdfmake.pdfmakeStrings.circle]
+  inline def circle: typings.pdfmake.pdfmakeStrings.circle = "circle".asInstanceOf[typings.pdfmake.pdfmakeStrings.circle]
   
-  @scala.inline
-  def none: typings.pdfmake.pdfmakeStrings.none = "none".asInstanceOf[typings.pdfmake.pdfmakeStrings.none]
+  inline def none: typings.pdfmake.pdfmakeStrings.none = "none".asInstanceOf[typings.pdfmake.pdfmakeStrings.none]
   
-  @scala.inline
-  def square: typings.pdfmake.pdfmakeStrings.square = "square".asInstanceOf[typings.pdfmake.pdfmakeStrings.square]
+  inline def square: typings.pdfmake.pdfmakeStrings.square = "square".asInstanceOf[typings.pdfmake.pdfmakeStrings.square]
 }

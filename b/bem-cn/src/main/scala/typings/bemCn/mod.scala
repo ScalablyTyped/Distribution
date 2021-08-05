@@ -29,10 +29,8 @@ object mod {
   @js.native
   val block: BemCn = js.native
   
-  @scala.inline
-  def setup(): BemCn = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[BemCn]
-  @scala.inline
-  def setup(settings: PartialBemSettings): BemCn = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(settings.asInstanceOf[js.Any]).asInstanceOf[BemCn]
+  inline def setup(): BemCn = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[BemCn]
+  inline def setup(settings: PartialBemSettings): BemCn = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(settings.asInstanceOf[js.Any]).asInstanceOf[BemCn]
   
   @js.native
   trait BemBlock
@@ -56,29 +54,22 @@ object mod {
   }
   object BemContext {
     
-    @scala.inline
-    def apply(mixes: js.Array[BemMix], mods: BemMods, name: String, states: BemStates): BemContext = {
+    inline def apply(mixes: js.Array[BemMix], mods: BemMods, name: String, states: BemStates): BemContext = {
       val __obj = js.Dynamic.literal(mixes = mixes.asInstanceOf[js.Any], mods = mods.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any])
       __obj.asInstanceOf[BemContext]
     }
     
-    @scala.inline
-    implicit class BemContextMutableBuilder[Self <: BemContext] (val x: Self) extends AnyVal {
+    extension [Self <: BemContext](x: Self) {
       
-      @scala.inline
-      def setMixes(value: js.Array[BemMix]): Self = StObject.set(x, "mixes", value.asInstanceOf[js.Any])
+      inline def setMixes(value: js.Array[BemMix]): Self = StObject.set(x, "mixes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMixesVarargs(value: BemMix*): Self = StObject.set(x, "mixes", js.Array(value :_*))
+      inline def setMixesVarargs(value: BemMix*): Self = StObject.set(x, "mixes", js.Array(value :_*))
       
-      @scala.inline
-      def setMods(value: BemMods): Self = StObject.set(x, "mods", value.asInstanceOf[js.Any])
+      inline def setMods(value: BemMods): Self = StObject.set(x, "mods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStates(value: BemStates): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+      inline def setStates(value: BemStates): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,35 +115,26 @@ object mod {
   }
   object BemSettings {
     
-    @scala.inline
-    def apply(el: String, mod: String, modValue: String): BemSettings = {
+    inline def apply(el: String, mod: String, modValue: String): BemSettings = {
       val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any], mod = mod.asInstanceOf[js.Any], modValue = modValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[BemSettings]
     }
     
-    @scala.inline
-    implicit class BemSettingsMutableBuilder[Self <: BemSettings] (val x: Self) extends AnyVal {
+    extension [Self <: BemSettings](x: Self) {
       
-      @scala.inline
-      def setClassMap(value: Record[String, String]): Self = StObject.set(x, "classMap", value.asInstanceOf[js.Any])
+      inline def setClassMap(value: Record[String, String]): Self = StObject.set(x, "classMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassMapUndefined: Self = StObject.set(x, "classMap", js.undefined)
+      inline def setClassMapUndefined: Self = StObject.set(x, "classMap", js.undefined)
       
-      @scala.inline
-      def setEl(value: String): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+      inline def setEl(value: String): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMod(value: String): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
+      inline def setMod(value: String): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModValue(value: String): Self = StObject.set(x, "modValue", value.asInstanceOf[js.Any])
+      inline def setModValue(value: String): Self = StObject.set(x, "modValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNs(value: String): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+      inline def setNs(value: String): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
+      inline def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
     }
   }
   
@@ -165,11 +147,9 @@ object mod {
   trait BemStatePrefix extends StObject
   object BemStatePrefix {
     
-    @scala.inline
-    def `has-`: typings.bemCn.bemCnStrings.`has-` = "has-".asInstanceOf[typings.bemCn.bemCnStrings.`has-`]
+    inline def `has-`: typings.bemCn.bemCnStrings.`has-` = "has-".asInstanceOf[typings.bemCn.bemCnStrings.`has-`]
     
-    @scala.inline
-    def `is-`: typings.bemCn.bemCnStrings.`is-` = "is-".asInstanceOf[typings.bemCn.bemCnStrings.`is-`]
+    inline def `is-`: typings.bemCn.bemCnStrings.`is-` = "is-".asInstanceOf[typings.bemCn.bemCnStrings.`is-`]
   }
   
   /* Inlined std.Record<bem-cn.bem-cn.BemStatePrefix, bem-cn.bem-cn.BemState> */
@@ -181,22 +161,18 @@ object mod {
   }
   object BemStates {
     
-    @scala.inline
-    def apply(`has-`: BemState, `is-`: BemState): BemStates = {
+    inline def apply(`has-`: BemState, `is-`: BemState): BemStates = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("has-")(`has-`.asInstanceOf[js.Any])
       __obj.updateDynamic("is-")(`is-`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BemStates]
     }
     
-    @scala.inline
-    implicit class BemStatesMutableBuilder[Self <: BemStates] (val x: Self) extends AnyVal {
+    extension [Self <: BemStates](x: Self) {
       
-      @scala.inline
-      def `setHas-`(value: BemState): Self = StObject.set(x, "has-", value.asInstanceOf[js.Any])
+      inline def `setHas-`(value: BemState): Self = StObject.set(x, "has-", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setIs-`(value: BemState): Self = StObject.set(x, "is-", value.asInstanceOf[js.Any])
+      inline def `setIs-`(value: BemState): Self = StObject.set(x, "is-", value.asInstanceOf[js.Any])
     }
   }
   

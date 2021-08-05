@@ -27,34 +27,25 @@ trait SchemaOrgUnits extends StObject {
 }
 object SchemaOrgUnits {
   
-  @scala.inline
-  def apply(): SchemaOrgUnits = {
+  inline def apply(): SchemaOrgUnits = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrgUnits]
   }
   
-  @scala.inline
-  implicit class SchemaOrgUnitsMutableBuilder[Self <: SchemaOrgUnits] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrgUnits](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setOrganizationUnits(value: js.Array[SchemaOrgUnit]): Self = StObject.set(x, "organizationUnits", value.asInstanceOf[js.Any])
+    inline def setOrganizationUnits(value: js.Array[SchemaOrgUnit]): Self = StObject.set(x, "organizationUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationUnitsUndefined: Self = StObject.set(x, "organizationUnits", js.undefined)
+    inline def setOrganizationUnitsUndefined: Self = StObject.set(x, "organizationUnits", js.undefined)
     
-    @scala.inline
-    def setOrganizationUnitsVarargs(value: SchemaOrgUnit*): Self = StObject.set(x, "organizationUnits", js.Array(value :_*))
+    inline def setOrganizationUnitsVarargs(value: SchemaOrgUnit*): Self = StObject.set(x, "organizationUnits", js.Array(value :_*))
   }
 }

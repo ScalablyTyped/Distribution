@@ -30,26 +30,20 @@ trait SeriesLegendItemClickEventObject extends StObject {
 }
 object SeriesLegendItemClickEventObject {
   
-  @scala.inline
-  def apply(browserEvent: PointerEvent, preventDefault: js.Function, target: Series): SeriesLegendItemClickEventObject = {
+  inline def apply(browserEvent: PointerEvent, preventDefault: js.Function, target: Series): SeriesLegendItemClickEventObject = {
     val __obj = js.Dynamic.literal(browserEvent = browserEvent.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("legendItemClick")
     __obj.asInstanceOf[SeriesLegendItemClickEventObject]
   }
   
-  @scala.inline
-  implicit class SeriesLegendItemClickEventObjectMutableBuilder[Self <: SeriesLegendItemClickEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesLegendItemClickEventObject](x: Self) {
     
-    @scala.inline
-    def setBrowserEvent(value: PointerEvent): Self = StObject.set(x, "browserEvent", value.asInstanceOf[js.Any])
+    inline def setBrowserEvent(value: PointerEvent): Self = StObject.set(x, "browserEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Series): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Series): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: legendItemClick): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: legendItemClick): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

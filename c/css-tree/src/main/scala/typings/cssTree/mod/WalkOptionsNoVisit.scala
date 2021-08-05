@@ -14,31 +14,23 @@ trait WalkOptionsNoVisit extends StObject {
 }
 object WalkOptionsNoVisit {
   
-  @scala.inline
-  def apply(): WalkOptionsNoVisit = {
+  inline def apply(): WalkOptionsNoVisit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WalkOptionsNoVisit]
   }
   
-  @scala.inline
-  implicit class WalkOptionsNoVisitMutableBuilder[Self <: WalkOptionsNoVisit] (val x: Self) extends AnyVal {
+  extension [Self <: WalkOptionsNoVisit](x: Self) {
     
-    @scala.inline
-    def setEnter(value: EnterOrLeaveFn[CssNode]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+    inline def setEnter(value: EnterOrLeaveFn[CssNode]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+    inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
-    @scala.inline
-    def setLeave(value: EnterOrLeaveFn[CssNode]): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
+    inline def setLeave(value: EnterOrLeaveFn[CssNode]): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
+    inline def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
     
-    @scala.inline
-    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
   }
 }

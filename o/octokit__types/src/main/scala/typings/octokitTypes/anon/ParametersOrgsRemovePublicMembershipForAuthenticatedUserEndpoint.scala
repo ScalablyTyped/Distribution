@@ -17,8 +17,7 @@ trait ParametersOrgsRemovePublicMembershipForAuthenticatedUserEndpoint extends S
 }
 object ParametersOrgsRemovePublicMembershipForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: OrgsRemovePublicMembershipForAuthenticatedUserEndpoint,
     request: OrgsRemovePublicMembershipForAuthenticatedUserRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersOrgsRemovePublicMembershipForAuthenticatedUserEndpoint {
     __obj.asInstanceOf[ParametersOrgsRemovePublicMembershipForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersOrgsRemovePublicMembershipForAuthenticatedUserEndpointMutableBuilder[Self <: ParametersOrgsRemovePublicMembershipForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersOrgsRemovePublicMembershipForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: OrgsRemovePublicMembershipForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: OrgsRemovePublicMembershipForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: OrgsRemovePublicMembershipForAuthenticatedUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: OrgsRemovePublicMembershipForAuthenticatedUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -57,62 +57,44 @@ object fabricTypesMod {
   }
   object IFabricProps {
     
-    @scala.inline
-    def apply(): IFabricProps = {
+    inline def apply(): IFabricProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFabricProps]
     }
     
-    @scala.inline
-    implicit class IFabricPropsMutableBuilder[Self <: IFabricProps] (val x: Self) extends AnyVal {
+    extension [Self <: IFabricProps](x: Self) {
       
-      @scala.inline
-      def setApplyTheme(value: Boolean): Self = StObject.set(x, "applyTheme", value.asInstanceOf[js.Any])
+      inline def setApplyTheme(value: Boolean): Self = StObject.set(x, "applyTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyThemeToBody(value: Boolean): Self = StObject.set(x, "applyThemeToBody", value.asInstanceOf[js.Any])
+      inline def setApplyThemeToBody(value: Boolean): Self = StObject.set(x, "applyThemeToBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyThemeToBodyUndefined: Self = StObject.set(x, "applyThemeToBody", js.undefined)
+      inline def setApplyThemeToBodyUndefined: Self = StObject.set(x, "applyThemeToBody", js.undefined)
       
-      @scala.inline
-      def setApplyThemeUndefined: Self = StObject.set(x, "applyTheme", js.undefined)
+      inline def setApplyThemeUndefined: Self = StObject.set(x, "applyTheme", js.undefined)
       
-      @scala.inline
-      def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[js.Object]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[js.Object]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ js.Object | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ js.Object | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDir(value: rtl | ltr | auto): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: rtl | ltr | auto): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IFabricStyleProps, IFabricStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IFabricStyleProps, IFabricStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IFabricStyleProps => DeepPartial[IFabricStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IFabricStyleProps => DeepPartial[IFabricStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -125,17 +107,14 @@ object fabricTypesMod {
   }
   object IFabricStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IFabricStyleProps = {
+    inline def apply(theme: ITheme): IFabricStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFabricStyleProps]
     }
     
-    @scala.inline
-    implicit class IFabricStylePropsMutableBuilder[Self <: IFabricStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IFabricStyleProps](x: Self) {
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,32 +126,24 @@ object fabricTypesMod {
   }
   object IFabricStyles {
     
-    @scala.inline
-    def apply(): IFabricStyles = {
+    inline def apply(): IFabricStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFabricStyles]
     }
     
-    @scala.inline
-    implicit class IFabricStylesMutableBuilder[Self <: IFabricStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IFabricStyles](x: Self) {
       
-      @scala.inline
-      def setBodyThemed(value: IStyle): Self = StObject.set(x, "bodyThemed", value.asInstanceOf[js.Any])
+      inline def setBodyThemed(value: IStyle): Self = StObject.set(x, "bodyThemed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyThemedNull: Self = StObject.set(x, "bodyThemed", null)
+      inline def setBodyThemedNull: Self = StObject.set(x, "bodyThemed", null)
       
-      @scala.inline
-      def setBodyThemedUndefined: Self = StObject.set(x, "bodyThemed", js.undefined)
+      inline def setBodyThemedUndefined: Self = StObject.set(x, "bodyThemed", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

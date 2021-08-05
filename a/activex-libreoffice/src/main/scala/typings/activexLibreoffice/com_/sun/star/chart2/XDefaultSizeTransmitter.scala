@@ -20,8 +20,7 @@ trait XDefaultSizeTransmitter
 }
 object XDefaultSizeTransmitter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -31,10 +30,8 @@ object XDefaultSizeTransmitter {
     __obj.asInstanceOf[XDefaultSizeTransmitter]
   }
   
-  @scala.inline
-  implicit class XDefaultSizeTransmitterMutableBuilder[Self <: XDefaultSizeTransmitter] (val x: Self) extends AnyVal {
+  extension [Self <: XDefaultSizeTransmitter](x: Self) {
     
-    @scala.inline
-    def setSetDefaultSize(value: Size => Unit): Self = StObject.set(x, "setDefaultSize", js.Any.fromFunction1(value))
+    inline def setSetDefaultSize(value: Size => Unit): Self = StObject.set(x, "setDefaultSize", js.Any.fromFunction1(value))
   }
 }

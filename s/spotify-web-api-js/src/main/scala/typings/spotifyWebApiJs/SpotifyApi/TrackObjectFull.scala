@@ -20,8 +20,7 @@ trait TrackObjectFull
 }
 object TrackObjectFull {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     album: AlbumObjectSimplified,
     artists: js.Array[ArtistObjectSimplified],
     disc_number: Double,
@@ -42,16 +41,12 @@ object TrackObjectFull {
     __obj.asInstanceOf[TrackObjectFull]
   }
   
-  @scala.inline
-  implicit class TrackObjectFullMutableBuilder[Self <: TrackObjectFull] (val x: Self) extends AnyVal {
+  extension [Self <: TrackObjectFull](x: Self) {
     
-    @scala.inline
-    def setAlbum(value: AlbumObjectSimplified): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
+    inline def setAlbum(value: AlbumObjectSimplified): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternal_ids(value: ExternalIdObject): Self = StObject.set(x, "external_ids", value.asInstanceOf[js.Any])
+    inline def setExternal_ids(value: ExternalIdObject): Self = StObject.set(x, "external_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopularity(value: Double): Self = StObject.set(x, "popularity", value.asInstanceOf[js.Any])
+    inline def setPopularity(value: Double): Self = StObject.set(x, "popularity", value.asInstanceOf[js.Any])
   }
 }

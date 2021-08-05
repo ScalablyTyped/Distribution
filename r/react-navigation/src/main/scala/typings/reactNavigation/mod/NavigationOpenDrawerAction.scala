@@ -15,23 +15,18 @@ trait NavigationOpenDrawerAction
 }
 object NavigationOpenDrawerAction {
   
-  @scala.inline
-  def apply(): NavigationOpenDrawerAction = {
+  inline def apply(): NavigationOpenDrawerAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Navigation/OPEN_DRAWER")
     __obj.asInstanceOf[NavigationOpenDrawerAction]
   }
   
-  @scala.inline
-  implicit class NavigationOpenDrawerActionMutableBuilder[Self <: NavigationOpenDrawerAction] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationOpenDrawerAction](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setType(value: NavigationSlashOPEN_DRAWER): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NavigationSlashOPEN_DRAWER): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

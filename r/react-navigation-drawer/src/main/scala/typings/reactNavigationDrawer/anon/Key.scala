@@ -13,23 +13,18 @@ trait Key extends StObject {
 }
 object Key {
   
-  @scala.inline
-  def apply(): Key = {
+  inline def apply(): Key = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CHILD_ACTION")
     __obj.asInstanceOf[Key]
   }
   
-  @scala.inline
-  implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+  extension [Self <: Key](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setType(value: CHILD_ACTION): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CHILD_ACTION): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

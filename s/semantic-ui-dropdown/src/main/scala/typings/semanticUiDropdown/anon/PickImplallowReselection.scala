@@ -11,16 +11,13 @@ trait PickImplallowReselection extends StObject {
 }
 object PickImplallowReselection {
   
-  @scala.inline
-  def apply(allowReselection: Boolean): PickImplallowReselection = {
+  inline def apply(allowReselection: Boolean): PickImplallowReselection = {
     val __obj = js.Dynamic.literal(allowReselection = allowReselection.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplallowReselection]
   }
   
-  @scala.inline
-  implicit class PickImplallowReselectionMutableBuilder[Self <: PickImplallowReselection] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplallowReselection](x: Self) {
     
-    @scala.inline
-    def setAllowReselection(value: Boolean): Self = StObject.set(x, "allowReselection", value.asInstanceOf[js.Any])
+    inline def setAllowReselection(value: Boolean): Self = StObject.set(x, "allowReselection", value.asInstanceOf[js.Any])
   }
 }

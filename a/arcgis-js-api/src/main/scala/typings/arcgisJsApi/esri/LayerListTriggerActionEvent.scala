@@ -12,19 +12,15 @@ trait LayerListTriggerActionEvent extends StObject {
 }
 object LayerListTriggerActionEvent {
   
-  @scala.inline
-  def apply(action: ActionButton | ActionToggle, item: ListItem): LayerListTriggerActionEvent = {
+  inline def apply(action: ActionButton | ActionToggle, item: ListItem): LayerListTriggerActionEvent = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerListTriggerActionEvent]
   }
   
-  @scala.inline
-  implicit class LayerListTriggerActionEventMutableBuilder[Self <: LayerListTriggerActionEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LayerListTriggerActionEvent](x: Self) {
     
-    @scala.inline
-    def setAction(value: ActionButton | ActionToggle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ActionButton | ActionToggle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: ListItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: ListItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

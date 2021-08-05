@@ -23,34 +23,25 @@ trait UserPendingChanges extends StObject {
 }
 object UserPendingChanges {
   
-  @scala.inline
-  def apply(): UserPendingChanges = {
+  inline def apply(): UserPendingChanges = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserPendingChanges]
   }
   
-  @scala.inline
-  implicit class UserPendingChangesMutableBuilder[Self <: UserPendingChanges] (val x: Self) extends AnyVal {
+  extension [Self <: UserPendingChanges](x: Self) {
     
-    @scala.inline
-    def setConsoleAccess(value: boolean): Self = StObject.set(x, "ConsoleAccess", value.asInstanceOf[js.Any])
+    inline def setConsoleAccess(value: boolean): Self = StObject.set(x, "ConsoleAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsoleAccessUndefined: Self = StObject.set(x, "ConsoleAccess", js.undefined)
+    inline def setConsoleAccessUndefined: Self = StObject.set(x, "ConsoleAccess", js.undefined)
     
-    @scala.inline
-    def setGroups(value: listOfString): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: listOfString): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: string*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: string*): Self = StObject.set(x, "Groups", js.Array(value :_*))
     
-    @scala.inline
-    def setPendingChange(value: ChangeType): Self = StObject.set(x, "PendingChange", value.asInstanceOf[js.Any])
+    inline def setPendingChange(value: ChangeType): Self = StObject.set(x, "PendingChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingChangeUndefined: Self = StObject.set(x, "PendingChange", js.undefined)
+    inline def setPendingChangeUndefined: Self = StObject.set(x, "PendingChange", js.undefined)
   }
 }

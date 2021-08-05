@@ -25,25 +25,19 @@ trait SchemaLevel extends StObject {
 }
 object SchemaLevel {
   
-  @scala.inline
-  def apply(): SchemaLevel = {
+  inline def apply(): SchemaLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLevel]
   }
   
-  @scala.inline
-  implicit class SchemaLevelMutableBuilder[Self <: SchemaLevel] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLevel](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
   }
 }

@@ -75,11 +75,11 @@ object messageMod {
       */
     def remove(): js.Promise[Message | SessionError] = js.native
     
-    var services: js.Any = js.native
+    /* private */ var services: js.Any = js.native
     
     def sid: String = js.native
     
-    var state: js.Any = js.native
+    /* private */ var state: js.Any = js.native
     
     def `type`: Type = js.native
     
@@ -106,11 +106,9 @@ object messageMod {
     trait Type extends StObject
     object Type {
       
-      @scala.inline
-      def media: typings.twilioChat.twilioChatStrings.media = "media".asInstanceOf[typings.twilioChat.twilioChatStrings.media]
+      inline def media: typings.twilioChat.twilioChatStrings.media = "media".asInstanceOf[typings.twilioChat.twilioChatStrings.media]
       
-      @scala.inline
-      def text: typings.twilioChat.twilioChatStrings.text = "text".asInstanceOf[typings.twilioChat.twilioChatStrings.text]
+      inline def text: typings.twilioChat.twilioChatStrings.text = "text".asInstanceOf[typings.twilioChat.twilioChatStrings.text]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -124,23 +122,17 @@ object messageMod {
     trait UpdateReason extends StObject
     object UpdateReason {
       
-      @scala.inline
-      def attributes: typings.twilioChat.twilioChatStrings.attributes = "attributes".asInstanceOf[typings.twilioChat.twilioChatStrings.attributes]
+      inline def attributes: typings.twilioChat.twilioChatStrings.attributes = "attributes".asInstanceOf[typings.twilioChat.twilioChatStrings.attributes]
       
-      @scala.inline
-      def author: typings.twilioChat.twilioChatStrings.author = "author".asInstanceOf[typings.twilioChat.twilioChatStrings.author]
+      inline def author: typings.twilioChat.twilioChatStrings.author = "author".asInstanceOf[typings.twilioChat.twilioChatStrings.author]
       
-      @scala.inline
-      def body: typings.twilioChat.twilioChatStrings.body = "body".asInstanceOf[typings.twilioChat.twilioChatStrings.body]
+      inline def body: typings.twilioChat.twilioChatStrings.body = "body".asInstanceOf[typings.twilioChat.twilioChatStrings.body]
       
-      @scala.inline
-      def dateCreated: typings.twilioChat.twilioChatStrings.dateCreated = "dateCreated".asInstanceOf[typings.twilioChat.twilioChatStrings.dateCreated]
+      inline def dateCreated: typings.twilioChat.twilioChatStrings.dateCreated = "dateCreated".asInstanceOf[typings.twilioChat.twilioChatStrings.dateCreated]
       
-      @scala.inline
-      def dateUpdated: typings.twilioChat.twilioChatStrings.dateUpdated = "dateUpdated".asInstanceOf[typings.twilioChat.twilioChatStrings.dateUpdated]
+      inline def dateUpdated: typings.twilioChat.twilioChatStrings.dateUpdated = "dateUpdated".asInstanceOf[typings.twilioChat.twilioChatStrings.dateUpdated]
       
-      @scala.inline
-      def lastUpdatedBy: typings.twilioChat.twilioChatStrings.lastUpdatedBy = "lastUpdatedBy".asInstanceOf[typings.twilioChat.twilioChatStrings.lastUpdatedBy]
+      inline def lastUpdatedBy: typings.twilioChat.twilioChatStrings.lastUpdatedBy = "lastUpdatedBy".asInstanceOf[typings.twilioChat.twilioChatStrings.lastUpdatedBy]
     }
     
     trait UpdatedEventArgs extends StObject {
@@ -151,23 +143,18 @@ object messageMod {
     }
     object UpdatedEventArgs {
       
-      @scala.inline
-      def apply(message: Message, updateReasons: js.Array[UpdateReason]): UpdatedEventArgs = {
+      inline def apply(message: Message, updateReasons: js.Array[UpdateReason]): UpdatedEventArgs = {
         val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], updateReasons = updateReasons.asInstanceOf[js.Any])
         __obj.asInstanceOf[UpdatedEventArgs]
       }
       
-      @scala.inline
-      implicit class UpdatedEventArgsMutableBuilder[Self <: UpdatedEventArgs] (val x: Self) extends AnyVal {
+      extension [Self <: UpdatedEventArgs](x: Self) {
         
-        @scala.inline
-        def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateReasons(value: js.Array[UpdateReason]): Self = StObject.set(x, "updateReasons", value.asInstanceOf[js.Any])
+        inline def setUpdateReasons(value: js.Array[UpdateReason]): Self = StObject.set(x, "updateReasons", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateReasonsVarargs(value: UpdateReason*): Self = StObject.set(x, "updateReasons", js.Array(value :_*))
+        inline def setUpdateReasonsVarargs(value: UpdateReason*): Self = StObject.set(x, "updateReasons", js.Array(value :_*))
       }
     }
   }
@@ -180,20 +167,16 @@ object messageMod {
   }
   object MessageServices {
     
-    @scala.inline
-    def apply(mcsClient: McsClient, session: Session): MessageServices = {
+    inline def apply(mcsClient: McsClient, session: Session): MessageServices = {
       val __obj = js.Dynamic.literal(mcsClient = mcsClient.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageServices]
     }
     
-    @scala.inline
-    implicit class MessageServicesMutableBuilder[Self <: MessageServices] (val x: Self) extends AnyVal {
+    extension [Self <: MessageServices](x: Self) {
       
-      @scala.inline
-      def setMcsClient(value: McsClient): Self = StObject.set(x, "mcsClient", value.asInstanceOf[js.Any])
+      inline def setMcsClient(value: McsClient): Self = StObject.set(x, "mcsClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     }
   }
 }

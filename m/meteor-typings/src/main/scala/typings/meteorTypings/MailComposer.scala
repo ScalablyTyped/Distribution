@@ -16,8 +16,7 @@ trait MailComposer extends StObject {
 }
 object MailComposer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addHeader: (String, String) => Unit,
     pipe: js.Any => Unit,
     setMessageOption: (String, String, String, String) => Unit,
@@ -27,19 +26,14 @@ object MailComposer {
     __obj.asInstanceOf[MailComposer]
   }
   
-  @scala.inline
-  implicit class MailComposerMutableBuilder[Self <: MailComposer] (val x: Self) extends AnyVal {
+  extension [Self <: MailComposer](x: Self) {
     
-    @scala.inline
-    def setAddHeader(value: (String, String) => Unit): Self = StObject.set(x, "addHeader", js.Any.fromFunction2(value))
+    inline def setAddHeader(value: (String, String) => Unit): Self = StObject.set(x, "addHeader", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPipe(value: js.Any => Unit): Self = StObject.set(x, "pipe", js.Any.fromFunction1(value))
+    inline def setPipe(value: js.Any => Unit): Self = StObject.set(x, "pipe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMessageOption(value: (String, String, String, String) => Unit): Self = StObject.set(x, "setMessageOption", js.Any.fromFunction4(value))
+    inline def setSetMessageOption(value: (String, String, String, String) => Unit): Self = StObject.set(x, "setMessageOption", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setStreamMessage(value: () => Unit): Self = StObject.set(x, "streamMessage", js.Any.fromFunction0(value))
+    inline def setStreamMessage(value: () => Unit): Self = StObject.set(x, "streamMessage", js.Any.fromFunction0(value))
   }
 }

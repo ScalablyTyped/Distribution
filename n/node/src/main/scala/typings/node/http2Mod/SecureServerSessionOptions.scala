@@ -11,8 +11,7 @@ trait SecureServerSessionOptions
      with TlsOptions
 object SecureServerSessionOptions {
   
-  @scala.inline
-  def apply(): SecureServerSessionOptions = {
+  inline def apply(): SecureServerSessionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecureServerSessionOptions]
   }

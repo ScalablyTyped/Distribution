@@ -13,16 +13,13 @@ trait DescribeFlowDefinitionRequest extends StObject {
 }
 object DescribeFlowDefinitionRequest {
   
-  @scala.inline
-  def apply(FlowDefinitionName: FlowDefinitionName): DescribeFlowDefinitionRequest = {
+  inline def apply(FlowDefinitionName: FlowDefinitionName): DescribeFlowDefinitionRequest = {
     val __obj = js.Dynamic.literal(FlowDefinitionName = FlowDefinitionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFlowDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class DescribeFlowDefinitionRequestMutableBuilder[Self <: DescribeFlowDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFlowDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setFlowDefinitionName(value: FlowDefinitionName): Self = StObject.set(x, "FlowDefinitionName", value.asInstanceOf[js.Any])
+    inline def setFlowDefinitionName(value: FlowDefinitionName): Self = StObject.set(x, "FlowDefinitionName", value.asInstanceOf[js.Any])
   }
 }

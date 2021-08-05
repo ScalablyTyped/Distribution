@@ -23,8 +23,7 @@ object mod {
   // }
   ```
   */
-  @scala.inline
-  def apply(milliseconds: Double): Parsed = ^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any]).asInstanceOf[Parsed]
+  inline def apply(milliseconds: Double): Parsed = ^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any]).asInstanceOf[Parsed]
   
   @JSImport("parse-ms", JSImport.Namespace)
   @js.native
@@ -48,8 +47,7 @@ object mod {
   }
   object Parsed {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       days: Double,
       hours: Double,
       microseconds: Double,
@@ -62,29 +60,21 @@ object mod {
       __obj.asInstanceOf[Parsed]
     }
     
-    @scala.inline
-    implicit class ParsedMutableBuilder[Self <: Parsed] (val x: Self) extends AnyVal {
+    extension [Self <: Parsed](x: Self) {
       
-      @scala.inline
-      def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+      inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+      inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroseconds(value: Double): Self = StObject.set(x, "microseconds", value.asInstanceOf[js.Any])
+      inline def setMicroseconds(value: Double): Self = StObject.set(x, "microseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
+      inline def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+      inline def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNanoseconds(value: Double): Self = StObject.set(x, "nanoseconds", value.asInstanceOf[js.Any])
+      inline def setNanoseconds(value: Double): Self = StObject.set(x, "nanoseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     }
   }
 }

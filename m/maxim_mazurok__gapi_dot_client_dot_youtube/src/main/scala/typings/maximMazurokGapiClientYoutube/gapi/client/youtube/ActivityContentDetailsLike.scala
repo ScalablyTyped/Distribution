@@ -11,19 +11,15 @@ trait ActivityContentDetailsLike extends StObject {
 }
 object ActivityContentDetailsLike {
   
-  @scala.inline
-  def apply(): ActivityContentDetailsLike = {
+  inline def apply(): ActivityContentDetailsLike = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActivityContentDetailsLike]
   }
   
-  @scala.inline
-  implicit class ActivityContentDetailsLikeMutableBuilder[Self <: ActivityContentDetailsLike] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityContentDetailsLike](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
   }
 }

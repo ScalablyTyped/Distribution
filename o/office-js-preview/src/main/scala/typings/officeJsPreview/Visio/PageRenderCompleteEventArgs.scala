@@ -30,19 +30,15 @@ trait PageRenderCompleteEventArgs extends StObject {
 }
 object PageRenderCompleteEventArgs {
   
-  @scala.inline
-  def apply(pageName: String, success: Boolean): PageRenderCompleteEventArgs = {
+  inline def apply(pageName: String, success: Boolean): PageRenderCompleteEventArgs = {
     val __obj = js.Dynamic.literal(pageName = pageName.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageRenderCompleteEventArgs]
   }
   
-  @scala.inline
-  implicit class PageRenderCompleteEventArgsMutableBuilder[Self <: PageRenderCompleteEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PageRenderCompleteEventArgs](x: Self) {
     
-    @scala.inline
-    def setPageName(value: String): Self = StObject.set(x, "pageName", value.asInstanceOf[js.Any])
+    inline def setPageName(value: String): Self = StObject.set(x, "pageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

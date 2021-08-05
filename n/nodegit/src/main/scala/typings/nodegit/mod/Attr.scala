@@ -15,11 +15,9 @@ object Attr {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addMacro(repo: typings.nodegit.repositoryMod.Repository, name: String, values: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addMacro")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def addMacro(repo: typings.nodegit.repositoryMod.Repository, name: String, values: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("addMacro")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def cacheFlush(repo: typings.nodegit.repositoryMod.Repository): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cacheFlush")(repo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cacheFlush(repo: typings.nodegit.repositoryMod.Repository): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cacheFlush")(repo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * @param repo - The repository containing the path.
@@ -29,8 +27,7 @@ object Attr {
     * @param name - The name of the attribute to look up.
     * @returns - Output of the value of the attribute. Use the GIT_ATTR_...
     */
-  @scala.inline
-  def get(repo: typings.nodegit.repositoryMod.Repository, flags: Double, path: String, name: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(repo.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], path.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def get(repo: typings.nodegit.repositoryMod.Repository, flags: Double, path: String, name: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(repo.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], path.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
     * @param repo - The repository containing the path.
@@ -40,8 +37,7 @@ object Attr {
     * @param numAttr - The number of attributes being looked up
     * @param names - An array of num_attr strings containing attribute names.
     */
-  @scala.inline
-  def getMany(
+  inline def getMany(
     repo: typings.nodegit.repositoryMod.Repository,
     flags: Double,
     path: String,
@@ -53,6 +49,5 @@ object Attr {
     * @param attr - The attribute
     * @returns - the value type for the attribute
     */
-  @scala.inline
-  def value(attr: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(attr.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def value(attr: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(attr.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

@@ -145,85 +145,65 @@ trait OverwriteCSSProperties extends StObject {
 }
 object OverwriteCSSProperties {
   
-  @scala.inline
-  def apply(): OverwriteCSSProperties = {
+  inline def apply(): OverwriteCSSProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OverwriteCSSProperties]
   }
   
-  @scala.inline
-  implicit class OverwriteCSSPropertiesMutableBuilder[Self <: OverwriteCSSProperties] (val x: Self) extends AnyVal {
+  extension [Self <: OverwriteCSSProperties](x: Self) {
     
-    @scala.inline
-    def setBorderBottomStyle(
+    inline def setBorderBottomStyle(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottomStyle */ js.Any) | String
     ): Self = StObject.set(x, "borderBottomStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottomStyleUndefined: Self = StObject.set(x, "borderBottomStyle", js.undefined)
+    inline def setBorderBottomStyleUndefined: Self = StObject.set(x, "borderBottomStyle", js.undefined)
     
-    @scala.inline
-    def setBorderLeftStyle(
+    inline def setBorderLeftStyle(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeftStyle */ js.Any) | String
     ): Self = StObject.set(x, "borderLeftStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderLeftStyleUndefined: Self = StObject.set(x, "borderLeftStyle", js.undefined)
+    inline def setBorderLeftStyleUndefined: Self = StObject.set(x, "borderLeftStyle", js.undefined)
     
-    @scala.inline
-    def setBorderRadius(
+    inline def setBorderRadius(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<string | number> */ js.Any
     ): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
-    @scala.inline
-    def setBorderRightStyle(
+    inline def setBorderRightStyle(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRightStyle */ js.Any) | String
     ): Self = StObject.set(x, "borderRightStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRightStyleUndefined: Self = StObject.set(x, "borderRightStyle", js.undefined)
+    inline def setBorderRightStyleUndefined: Self = StObject.set(x, "borderRightStyle", js.undefined)
     
-    @scala.inline
-    def setBorderTopStyle(
+    inline def setBorderTopStyle(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderTopStyle */ js.Any) | String
     ): Self = StObject.set(x, "borderTopStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTopStyleUndefined: Self = StObject.set(x, "borderTopStyle", js.undefined)
+    inline def setBorderTopStyleUndefined: Self = StObject.set(x, "borderTopStyle", js.undefined)
     
-    @scala.inline
-    def setBorderTopWidth(
+    inline def setBorderTopWidth(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderTopWidth<never> */ js.Any) | String
     ): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTopWidthUndefined: Self = StObject.set(x, "borderTopWidth", js.undefined)
+    inline def setBorderTopWidthUndefined: Self = StObject.set(x, "borderTopWidth", js.undefined)
     
-    @scala.inline
-    def setBoxShadow(
+    inline def setBoxShadow(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
     ): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
+    inline def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
     
-    @scala.inline
-    def setFontWeight(
+    inline def setFontWeight(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | String
     ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    @scala.inline
-    def setZIndex(
+    inline def setZIndex(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | String
     ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

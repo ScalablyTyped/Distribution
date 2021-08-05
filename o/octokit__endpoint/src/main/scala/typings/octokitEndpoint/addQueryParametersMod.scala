@@ -11,6 +11,5 @@ object addQueryParametersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addQueryParameters(url: String, parameters: Dictx): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addQueryParameters")(url.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def addQueryParameters(url: String, parameters: Dictx): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addQueryParameters")(url.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[String]
 }

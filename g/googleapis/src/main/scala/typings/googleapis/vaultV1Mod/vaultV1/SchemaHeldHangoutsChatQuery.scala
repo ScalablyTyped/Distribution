@@ -16,19 +16,15 @@ trait SchemaHeldHangoutsChatQuery extends StObject {
 }
 object SchemaHeldHangoutsChatQuery {
   
-  @scala.inline
-  def apply(): SchemaHeldHangoutsChatQuery = {
+  inline def apply(): SchemaHeldHangoutsChatQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHeldHangoutsChatQuery]
   }
   
-  @scala.inline
-  implicit class SchemaHeldHangoutsChatQueryMutableBuilder[Self <: SchemaHeldHangoutsChatQuery] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHeldHangoutsChatQuery](x: Self) {
     
-    @scala.inline
-    def setIncludeRooms(value: Boolean): Self = StObject.set(x, "includeRooms", value.asInstanceOf[js.Any])
+    inline def setIncludeRooms(value: Boolean): Self = StObject.set(x, "includeRooms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeRoomsUndefined: Self = StObject.set(x, "includeRooms", js.undefined)
+    inline def setIncludeRoomsUndefined: Self = StObject.set(x, "includeRooms", js.undefined)
   }
 }

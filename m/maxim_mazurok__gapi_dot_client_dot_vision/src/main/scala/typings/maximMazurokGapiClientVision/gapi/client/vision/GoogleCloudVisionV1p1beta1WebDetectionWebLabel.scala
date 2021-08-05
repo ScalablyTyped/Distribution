@@ -14,25 +14,19 @@ trait GoogleCloudVisionV1p1beta1WebDetectionWebLabel extends StObject {
 }
 object GoogleCloudVisionV1p1beta1WebDetectionWebLabel {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p1beta1WebDetectionWebLabel = {
+  inline def apply(): GoogleCloudVisionV1p1beta1WebDetectionWebLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p1beta1WebDetectionWebLabel]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p1beta1WebDetectionWebLabelMutableBuilder[Self <: GoogleCloudVisionV1p1beta1WebDetectionWebLabel] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p1beta1WebDetectionWebLabel](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
   }
 }

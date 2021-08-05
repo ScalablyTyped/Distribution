@@ -18,40 +18,29 @@ trait IHook extends StObject {
 }
 object IHook {
   
-  @scala.inline
-  def apply(): IHook = {
+  inline def apply(): IHook = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IHook]
   }
   
-  @scala.inline
-  implicit class IHookMutableBuilder[Self <: IHook] (val x: Self) extends AnyVal {
+  extension [Self <: IHook](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setSourceReference(value: ISourceReference): Self = StObject.set(x, "sourceReference", value.asInstanceOf[js.Any])
+    inline def setSourceReference(value: ISourceReference): Self = StObject.set(x, "sourceReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceReferenceNull: Self = StObject.set(x, "sourceReference", null)
+    inline def setSourceReferenceNull: Self = StObject.set(x, "sourceReference", null)
     
-    @scala.inline
-    def setSourceReferenceUndefined: Self = StObject.set(x, "sourceReference", js.undefined)
+    inline def setSourceReferenceUndefined: Self = StObject.set(x, "sourceReference", js.undefined)
     
-    @scala.inline
-    def setTagExpression(value: String): Self = StObject.set(x, "tagExpression", value.asInstanceOf[js.Any])
+    inline def setTagExpression(value: String): Self = StObject.set(x, "tagExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagExpressionNull: Self = StObject.set(x, "tagExpression", null)
+    inline def setTagExpressionNull: Self = StObject.set(x, "tagExpression", null)
     
-    @scala.inline
-    def setTagExpressionUndefined: Self = StObject.set(x, "tagExpression", js.undefined)
+    inline def setTagExpressionUndefined: Self = StObject.set(x, "tagExpression", js.undefined)
   }
 }

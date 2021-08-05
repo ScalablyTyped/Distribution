@@ -23,63 +23,49 @@ object StylesManager {
   @JSImport("survey-knockout", "StylesManager.Enabled")
   @js.native
   def Enabled: Boolean = js.native
-  @scala.inline
-  def Enabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enabled")(x.asInstanceOf[js.Any])
+  inline def Enabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enabled")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "StylesManager.Media")
   @js.native
   def Media: StringDictionary[typings.surveyKnockout.anon.Media] = js.native
-  @scala.inline
-  def Media_=(x: StringDictionary[Media]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Media")(x.asInstanceOf[js.Any])
+  inline def Media_=(x: StringDictionary[Media]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Media")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "StylesManager.Styles")
   @js.native
   def Styles: StringDictionary[String] = js.native
-  @scala.inline
-  def Styles_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Styles")(x.asInstanceOf[js.Any])
+  inline def Styles_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Styles")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "StylesManager.ThemeColors")
   @js.native
   def ThemeColors: StringDictionary[StringDictionary[String]] = js.native
-  @scala.inline
-  def ThemeColors_=(x: StringDictionary[StringDictionary[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ThemeColors")(x.asInstanceOf[js.Any])
+  inline def ThemeColors_=(x: StringDictionary[StringDictionary[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ThemeColors")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "StylesManager.ThemeCss")
   @js.native
   def ThemeCss: StringDictionary[String] = js.native
-  @scala.inline
-  def ThemeCss_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ThemeCss")(x.asInstanceOf[js.Any])
+  inline def ThemeCss_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ThemeCss")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def applyTheme(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyTheme")().asInstanceOf[Unit]
-  @scala.inline
-  def applyTheme(themeName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyTheme")(themeName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def applyTheme(themeName: String, themeSelector: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTheme")(themeName.asInstanceOf[js.Any], themeSelector.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def applyTheme(themeName: Unit, themeSelector: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTheme")(themeName.asInstanceOf[js.Any], themeSelector.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyTheme(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyTheme")().asInstanceOf[Unit]
+  inline def applyTheme(themeName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyTheme")(themeName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def applyTheme(themeName: String, themeSelector: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTheme")(themeName.asInstanceOf[js.Any], themeSelector.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyTheme(themeName: Unit, themeSelector: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTheme")(themeName.asInstanceOf[js.Any], themeSelector.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("survey-knockout", "StylesManager.bootstrapThemeCss")
   @js.native
   def bootstrapThemeCss: StringDictionary[String] = js.native
-  @scala.inline
-  def bootstrapThemeCss_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bootstrapThemeCss")(x.asInstanceOf[js.Any])
+  inline def bootstrapThemeCss_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bootstrapThemeCss")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "StylesManager.bootstrapmaterialThemeCss")
   @js.native
   def bootstrapmaterialThemeCss: StringDictionary[String] = js.native
-  @scala.inline
-  def bootstrapmaterialThemeCss_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bootstrapmaterialThemeCss")(x.asInstanceOf[js.Any])
+  inline def bootstrapmaterialThemeCss_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bootstrapmaterialThemeCss")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def createSheet(styleSheetId: String): CSSStyleSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("createSheet")(styleSheetId.asInstanceOf[js.Any]).asInstanceOf[CSSStyleSheet]
+  inline def createSheet(styleSheetId: String): CSSStyleSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("createSheet")(styleSheetId.asInstanceOf[js.Any]).asInstanceOf[CSSStyleSheet]
   
-  @scala.inline
-  def findSheet(styleSheetId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findSheet")(styleSheetId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def findSheet(styleSheetId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findSheet")(styleSheetId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("survey-knockout", "StylesManager.modernThemeCss")
   @js.native
   def modernThemeCss: StringDictionary[String] = js.native
-  @scala.inline
-  def modernThemeCss_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modernThemeCss")(x.asInstanceOf[js.Any])
+  inline def modernThemeCss_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modernThemeCss")(x.asInstanceOf[js.Any])
 }

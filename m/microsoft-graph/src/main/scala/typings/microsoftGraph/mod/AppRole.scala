@@ -51,70 +51,49 @@ trait AppRole extends StObject {
 }
 object AppRole {
   
-  @scala.inline
-  def apply(): AppRole = {
+  inline def apply(): AppRole = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppRole]
   }
   
-  @scala.inline
-  implicit class AppRoleMutableBuilder[Self <: AppRole] (val x: Self) extends AnyVal {
+  extension [Self <: AppRole](x: Self) {
     
-    @scala.inline
-    def setAllowedMemberTypes(value: js.Array[String]): Self = StObject.set(x, "allowedMemberTypes", value.asInstanceOf[js.Any])
+    inline def setAllowedMemberTypes(value: js.Array[String]): Self = StObject.set(x, "allowedMemberTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedMemberTypesUndefined: Self = StObject.set(x, "allowedMemberTypes", js.undefined)
+    inline def setAllowedMemberTypesUndefined: Self = StObject.set(x, "allowedMemberTypes", js.undefined)
     
-    @scala.inline
-    def setAllowedMemberTypesVarargs(value: String*): Self = StObject.set(x, "allowedMemberTypes", js.Array(value :_*))
+    inline def setAllowedMemberTypesVarargs(value: String*): Self = StObject.set(x, "allowedMemberTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+    inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: NullableOption[String]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: NullableOption[String]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginNull: Self = StObject.set(x, "origin", null)
+    inline def setOriginNull: Self = StObject.set(x, "origin", null)
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setValue(value: NullableOption[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NullableOption[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

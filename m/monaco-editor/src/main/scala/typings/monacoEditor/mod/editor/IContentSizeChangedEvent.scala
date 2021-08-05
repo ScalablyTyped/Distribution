@@ -16,8 +16,7 @@ trait IContentSizeChangedEvent extends StObject {
 }
 object IContentSizeChangedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentHeight: Double,
     contentHeightChanged: Boolean,
     contentWidth: Double,
@@ -27,19 +26,14 @@ object IContentSizeChangedEvent {
     __obj.asInstanceOf[IContentSizeChangedEvent]
   }
   
-  @scala.inline
-  implicit class IContentSizeChangedEventMutableBuilder[Self <: IContentSizeChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IContentSizeChangedEvent](x: Self) {
     
-    @scala.inline
-    def setContentHeight(value: Double): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
+    inline def setContentHeight(value: Double): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentHeightChanged(value: Boolean): Self = StObject.set(x, "contentHeightChanged", value.asInstanceOf[js.Any])
+    inline def setContentHeightChanged(value: Boolean): Self = StObject.set(x, "contentHeightChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
+    inline def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentWidthChanged(value: Boolean): Self = StObject.set(x, "contentWidthChanged", value.asInstanceOf[js.Any])
+    inline def setContentWidthChanged(value: Boolean): Self = StObject.set(x, "contentWidthChanged", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait NegativeKeyword
 }
 object NegativeKeyword {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAdGroup: () => AdGroup,
     getCampaign: () => Campaign,
     getMatchType: () => MatchType,
@@ -30,16 +29,12 @@ object NegativeKeyword {
     __obj.asInstanceOf[NegativeKeyword]
   }
   
-  @scala.inline
-  implicit class NegativeKeywordMutableBuilder[Self <: NegativeKeyword] (val x: Self) extends AnyVal {
+  extension [Self <: NegativeKeyword](x: Self) {
     
-    @scala.inline
-    def setGetMatchType(value: () => MatchType): Self = StObject.set(x, "getMatchType", js.Any.fromFunction0(value))
+    inline def setGetMatchType(value: () => MatchType): Self = StObject.set(x, "getMatchType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

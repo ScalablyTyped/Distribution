@@ -29,8 +29,7 @@ trait InteractionHandler
      with XInitialization
 object InteractionHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     handle: XInteractionRequest => Unit,
     initialize: SeqEquiv[js.Any] => Unit,

@@ -14,8 +14,7 @@ trait Combinator_
 }
 object Combinator_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendToPropertyAndEscape: (String, js.Any, String) => Unit,
     clone_ : StringDictionary[js.Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],
@@ -37,10 +36,8 @@ object Combinator_ {
     __obj.asInstanceOf[Combinator_]
   }
   
-  @scala.inline
-  implicit class Combinator_MutableBuilder[Self <: Combinator_] (val x: Self) extends AnyVal {
+  extension [Self <: Combinator_](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.combinator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.combinator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

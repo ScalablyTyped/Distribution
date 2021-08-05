@@ -18,19 +18,15 @@ trait CreateTransitVirtualInterfaceRequest extends StObject {
 }
 object CreateTransitVirtualInterfaceRequest {
   
-  @scala.inline
-  def apply(connectionId: ConnectionId, newTransitVirtualInterface: NewTransitVirtualInterface): CreateTransitVirtualInterfaceRequest = {
+  inline def apply(connectionId: ConnectionId, newTransitVirtualInterface: NewTransitVirtualInterface): CreateTransitVirtualInterfaceRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], newTransitVirtualInterface = newTransitVirtualInterface.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTransitVirtualInterfaceRequest]
   }
   
-  @scala.inline
-  implicit class CreateTransitVirtualInterfaceRequestMutableBuilder[Self <: CreateTransitVirtualInterfaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTransitVirtualInterfaceRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewTransitVirtualInterface(value: NewTransitVirtualInterface): Self = StObject.set(x, "newTransitVirtualInterface", value.asInstanceOf[js.Any])
+    inline def setNewTransitVirtualInterface(value: NewTransitVirtualInterface): Self = StObject.set(x, "newTransitVirtualInterface", value.asInstanceOf[js.Any])
   }
 }

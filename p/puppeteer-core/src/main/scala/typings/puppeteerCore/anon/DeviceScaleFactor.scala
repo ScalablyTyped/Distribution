@@ -20,8 +20,7 @@ trait DeviceScaleFactor extends StObject {
 }
 object DeviceScaleFactor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceScaleFactor: Double,
     hasTouch: Boolean,
     height: Double,
@@ -33,25 +32,18 @@ object DeviceScaleFactor {
     __obj.asInstanceOf[DeviceScaleFactor]
   }
   
-  @scala.inline
-  implicit class DeviceScaleFactorMutableBuilder[Self <: DeviceScaleFactor] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceScaleFactor](x: Self) {
     
-    @scala.inline
-    def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
+    inline def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasTouch(value: Boolean): Self = StObject.set(x, "hasTouch", value.asInstanceOf[js.Any])
+    inline def setHasTouch(value: Boolean): Self = StObject.set(x, "hasTouch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLandscape(value: Boolean): Self = StObject.set(x, "isLandscape", value.asInstanceOf[js.Any])
+    inline def setIsLandscape(value: Boolean): Self = StObject.set(x, "isLandscape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+    inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

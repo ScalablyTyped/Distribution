@@ -28,31 +28,23 @@ trait GetDimensionValuesResponse extends StObject {
 }
 object GetDimensionValuesResponse {
   
-  @scala.inline
-  def apply(DimensionValues: DimensionValuesWithAttributesList, ReturnSize: PageSize, TotalSize: PageSize): GetDimensionValuesResponse = {
+  inline def apply(DimensionValues: DimensionValuesWithAttributesList, ReturnSize: PageSize, TotalSize: PageSize): GetDimensionValuesResponse = {
     val __obj = js.Dynamic.literal(DimensionValues = DimensionValues.asInstanceOf[js.Any], ReturnSize = ReturnSize.asInstanceOf[js.Any], TotalSize = TotalSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDimensionValuesResponse]
   }
   
-  @scala.inline
-  implicit class GetDimensionValuesResponseMutableBuilder[Self <: GetDimensionValuesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDimensionValuesResponse](x: Self) {
     
-    @scala.inline
-    def setDimensionValues(value: DimensionValuesWithAttributesList): Self = StObject.set(x, "DimensionValues", value.asInstanceOf[js.Any])
+    inline def setDimensionValues(value: DimensionValuesWithAttributesList): Self = StObject.set(x, "DimensionValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionValuesVarargs(value: DimensionValuesWithAttributes*): Self = StObject.set(x, "DimensionValues", js.Array(value :_*))
+    inline def setDimensionValuesVarargs(value: DimensionValuesWithAttributes*): Self = StObject.set(x, "DimensionValues", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setReturnSize(value: PageSize): Self = StObject.set(x, "ReturnSize", value.asInstanceOf[js.Any])
+    inline def setReturnSize(value: PageSize): Self = StObject.set(x, "ReturnSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSize(value: PageSize): Self = StObject.set(x, "TotalSize", value.asInstanceOf[js.Any])
+    inline def setTotalSize(value: PageSize): Self = StObject.set(x, "TotalSize", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait SendCommandResult extends StObject {
 }
 object SendCommandResult {
   
-  @scala.inline
-  def apply(): SendCommandResult = {
+  inline def apply(): SendCommandResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendCommandResult]
   }
   
-  @scala.inline
-  implicit class SendCommandResultMutableBuilder[Self <: SendCommandResult] (val x: Self) extends AnyVal {
+  extension [Self <: SendCommandResult](x: Self) {
     
-    @scala.inline
-    def setCommand(value: Command): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Command): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "Command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "Command", js.undefined)
   }
 }

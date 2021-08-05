@@ -11,18 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Avvio[Null] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Avvio[Null]]
-  @scala.inline
-  def apply(done: js.Function): Avvio[Null] = ^.asInstanceOf[js.Dynamic].apply(done.asInstanceOf[js.Any]).asInstanceOf[Avvio[Null]]
-  @scala.inline
-  def apply[I](instance: I): Avvio[I] = ^.asInstanceOf[js.Dynamic].apply(instance.asInstanceOf[js.Any]).asInstanceOf[Avvio[I]]
-  @scala.inline
-  def apply[I](instance: I, options: Unit, done: js.Function): Avvio[I] = (^.asInstanceOf[js.Dynamic].apply(instance.asInstanceOf[js.Any], options.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Avvio[I]]
-  @scala.inline
-  def apply[I](instance: I, options: Options): Avvio[I] = (^.asInstanceOf[js.Dynamic].apply(instance.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Avvio[I]]
-  @scala.inline
-  def apply[I](instance: I, options: Options, done: js.Function): Avvio[I] = (^.asInstanceOf[js.Dynamic].apply(instance.asInstanceOf[js.Any], options.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Avvio[I]]
+  inline def apply(): Avvio[Null] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Avvio[Null]]
+  inline def apply(done: js.Function): Avvio[Null] = ^.asInstanceOf[js.Dynamic].apply(done.asInstanceOf[js.Any]).asInstanceOf[Avvio[Null]]
+  inline def apply[I](instance: I): Avvio[I] = ^.asInstanceOf[js.Dynamic].apply(instance.asInstanceOf[js.Any]).asInstanceOf[Avvio[I]]
+  inline def apply[I](instance: I, options: Unit, done: js.Function): Avvio[I] = (^.asInstanceOf[js.Dynamic].apply(instance.asInstanceOf[js.Any], options.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Avvio[I]]
+  inline def apply[I](instance: I, options: Options): Avvio[I] = (^.asInstanceOf[js.Dynamic].apply(instance.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Avvio[I]]
+  inline def apply[I](instance: I, options: Options, done: js.Function): Avvio[I] = (^.asInstanceOf[js.Dynamic].apply(instance.asInstanceOf[js.Any], options.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Avvio[I]]
   
   @JSImport("avvio", JSImport.Namespace)
   @js.native
@@ -80,26 +74,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
+      inline def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutostartUndefined: Self = StObject.set(x, "autostart", js.undefined)
+      inline def setAutostartUndefined: Self = StObject.set(x, "autostart", js.undefined)
       
-      @scala.inline
-      def setExpose(value: typings.avvio.anon.After): Self = StObject.set(x, "expose", value.asInstanceOf[js.Any])
+      inline def setExpose(value: typings.avvio.anon.After): Self = StObject.set(x, "expose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposeUndefined: Self = StObject.set(x, "expose", js.undefined)
+      inline def setExposeUndefined: Self = StObject.set(x, "expose", js.undefined)
     }
   }
   
@@ -151,8 +139,7 @@ object mod {
   }
   object Server {
     
-    @scala.inline
-    def apply[I](
+    inline def apply[I](
       after: After[I, context[I]],
       close: Close[I, context[I]],
       onClose: /* fn */ js.Function2[context[I], /* done */ js.Function, Unit] => context[I],
@@ -163,23 +150,17 @@ object mod {
       __obj.asInstanceOf[Server[I]]
     }
     
-    @scala.inline
-    implicit class ServerMutableBuilder[Self <: Server[?], I] (val x: Self & Server[I]) extends AnyVal {
+    extension [Self <: Server[?], I](x: Self & Server[I]) {
       
-      @scala.inline
-      def setAfter(value: After[I, context[I]]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: After[I, context[I]]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClose(value: Close[I, context[I]]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: Close[I, context[I]]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClose(value: /* fn */ js.Function2[context[I], /* done */ js.Function, Unit] => context[I]): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* fn */ js.Function2[context[I], /* done */ js.Function, Unit] => context[I]): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReady(value: Ready[I, context[I]]): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+      inline def setReady(value: Ready[I, context[I]]): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUse(value: (/* fn */ Plugin[js.Any, I], /* options */ js.UndefOr[js.Any]) => context[I]): Self = StObject.set(x, "use", js.Any.fromFunction2(value))
+      inline def setUse(value: (/* fn */ Plugin[js.Any, I], /* options */ js.UndefOr[js.Any]) => context[I]): Self = StObject.set(x, "use", js.Any.fromFunction2(value))
     }
   }
   

@@ -12,10 +12,8 @@ object databaseMod {
   
   object database {
     
-    @scala.inline
-    def apply(): Database = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Database]
-    @scala.inline
-    def apply(app: App): Database = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Database]
+    inline def apply(): Database = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Database]
+    inline def apply(app: App): Database = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Database]
     
     @JSImport("firebase-admin/lib/database", "database")
     @js.native
@@ -29,18 +27,12 @@ object databaseMod {
     @js.native
     val ServerValue: typings.firebaseDatabaseTypes.mod.ServerValue = js.native
     
-    @scala.inline
-    def enableLogging(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")().asInstanceOf[js.Any]
-    @scala.inline
-    def enableLogging(logger: js.Function1[/* a */ String, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def enableLogging(logger: js.Function1[/* a */ String, js.Any], persistent: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def enableLogging(logger: Boolean): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def enableLogging(logger: Boolean, persistent: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def enableLogging(logger: Unit, persistent: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def enableLogging(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")().asInstanceOf[js.Any]
+    inline def enableLogging(logger: js.Function1[/* a */ String, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def enableLogging(logger: js.Function1[/* a */ String, js.Any], persistent: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def enableLogging(logger: Boolean): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def enableLogging(logger: Boolean, persistent: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def enableLogging(logger: Unit, persistent: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     trait DataSnapshot extends StObject {
       
@@ -70,8 +62,7 @@ object databaseMod {
     }
     object DataSnapshot {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         child: String => typings.firebaseDatabaseTypes.mod.DataSnapshot,
         exists: () => Boolean,
         exportVal: () => js.Any,
@@ -89,47 +80,33 @@ object databaseMod {
         __obj.asInstanceOf[DataSnapshot]
       }
       
-      @scala.inline
-      implicit class DataSnapshotMutableBuilder[Self <: DataSnapshot] (val x: Self) extends AnyVal {
+      extension [Self <: DataSnapshot](x: Self) {
         
-        @scala.inline
-        def setChild(value: String => typings.firebaseDatabaseTypes.mod.DataSnapshot): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+        inline def setChild(value: String => typings.firebaseDatabaseTypes.mod.DataSnapshot): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+        inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setExportVal(value: () => js.Any): Self = StObject.set(x, "exportVal", js.Any.fromFunction0(value))
+        inline def setExportVal(value: () => js.Any): Self = StObject.set(x, "exportVal", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setForEach(value: js.Function1[DataSnapshot, Boolean | Unit] => Boolean): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+        inline def setForEach(value: js.Function1[DataSnapshot, Boolean | Unit] => Boolean): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetPriority(value: () => String | Double | Null): Self = StObject.set(x, "getPriority", js.Any.fromFunction0(value))
+        inline def setGetPriority(value: () => String | Double | Null): Self = StObject.set(x, "getPriority", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setHasChild(value: String => Boolean): Self = StObject.set(x, "hasChild", js.Any.fromFunction1(value))
+        inline def setHasChild(value: String => Boolean): Self = StObject.set(x, "hasChild", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setHasChildren(value: () => Boolean): Self = StObject.set(x, "hasChildren", js.Any.fromFunction0(value))
+        inline def setHasChildren(value: () => Boolean): Self = StObject.set(x, "hasChildren", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyNull: Self = StObject.set(x, "key", null)
+        inline def setKeyNull: Self = StObject.set(x, "key", null)
         
-        @scala.inline
-        def setNumChildren(value: () => Double): Self = StObject.set(x, "numChildren", js.Any.fromFunction0(value))
+        inline def setNumChildren(value: () => Double): Self = StObject.set(x, "numChildren", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setRef(value: typings.firebaseDatabaseTypes.mod.Reference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+        inline def setRef(value: typings.firebaseDatabaseTypes.mod.Reference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setToJSON(value: () => js.Object | Null): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+        inline def setToJSON(value: () => js.Object | Null): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setVal(value: () => js.Any): Self = StObject.set(x, "val", js.Any.fromFunction0(value))
+        inline def setVal(value: () => js.Any): Self = StObject.set(x, "val", js.Any.fromFunction0(value))
       }
     }
     
@@ -174,20 +151,15 @@ object databaseMod {
     trait EventType extends StObject
     object EventType {
       
-      @scala.inline
-      def child_added: typings.firebaseAdmin.firebaseAdminStrings.child_added = "child_added".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.child_added]
+      inline def child_added: typings.firebaseAdmin.firebaseAdminStrings.child_added = "child_added".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.child_added]
       
-      @scala.inline
-      def child_changed: typings.firebaseAdmin.firebaseAdminStrings.child_changed = "child_changed".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.child_changed]
+      inline def child_changed: typings.firebaseAdmin.firebaseAdminStrings.child_changed = "child_changed".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.child_changed]
       
-      @scala.inline
-      def child_moved: typings.firebaseAdmin.firebaseAdminStrings.child_moved = "child_moved".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.child_moved]
+      inline def child_moved: typings.firebaseAdmin.firebaseAdminStrings.child_moved = "child_moved".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.child_moved]
       
-      @scala.inline
-      def child_removed: typings.firebaseAdmin.firebaseAdminStrings.child_removed = "child_removed".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.child_removed]
+      inline def child_removed: typings.firebaseAdmin.firebaseAdminStrings.child_removed = "child_removed".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.child_removed]
       
-      @scala.inline
-      def value: typings.firebaseAdmin.firebaseAdminStrings.value = "value".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.value]
+      inline def value: typings.firebaseAdmin.firebaseAdminStrings.value = "value".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.value]
     }
     
     @js.native

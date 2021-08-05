@@ -23,34 +23,25 @@ trait AcceleratorType extends StObject {
 }
 object AcceleratorType {
   
-  @scala.inline
-  def apply(): AcceleratorType = {
+  inline def apply(): AcceleratorType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AcceleratorType]
   }
   
-  @scala.inline
-  implicit class AcceleratorTypeMutableBuilder[Self <: AcceleratorType] (val x: Self) extends AnyVal {
+  extension [Self <: AcceleratorType](x: Self) {
     
-    @scala.inline
-    def setAcceleratorTypeName(value: AcceleratorTypeName): Self = StObject.set(x, "acceleratorTypeName", value.asInstanceOf[js.Any])
+    inline def setAcceleratorTypeName(value: AcceleratorTypeName): Self = StObject.set(x, "acceleratorTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorTypeNameUndefined: Self = StObject.set(x, "acceleratorTypeName", js.undefined)
+    inline def setAcceleratorTypeNameUndefined: Self = StObject.set(x, "acceleratorTypeName", js.undefined)
     
-    @scala.inline
-    def setMemoryInfo(value: MemoryInfo): Self = StObject.set(x, "memoryInfo", value.asInstanceOf[js.Any])
+    inline def setMemoryInfo(value: MemoryInfo): Self = StObject.set(x, "memoryInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryInfoUndefined: Self = StObject.set(x, "memoryInfo", js.undefined)
+    inline def setMemoryInfoUndefined: Self = StObject.set(x, "memoryInfo", js.undefined)
     
-    @scala.inline
-    def setThroughputInfo(value: ThroughputInfoList): Self = StObject.set(x, "throughputInfo", value.asInstanceOf[js.Any])
+    inline def setThroughputInfo(value: ThroughputInfoList): Self = StObject.set(x, "throughputInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThroughputInfoUndefined: Self = StObject.set(x, "throughputInfo", js.undefined)
+    inline def setThroughputInfoUndefined: Self = StObject.set(x, "throughputInfo", js.undefined)
     
-    @scala.inline
-    def setThroughputInfoVarargs(value: KeyValuePair*): Self = StObject.set(x, "throughputInfo", js.Array(value :_*))
+    inline def setThroughputInfoVarargs(value: KeyValuePair*): Self = StObject.set(x, "throughputInfo", js.Array(value :_*))
   }
 }

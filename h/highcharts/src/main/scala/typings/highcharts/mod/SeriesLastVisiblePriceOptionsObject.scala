@@ -15,25 +15,19 @@ trait SeriesLastVisiblePriceOptionsObject extends StObject {
 }
 object SeriesLastVisiblePriceOptionsObject {
   
-  @scala.inline
-  def apply(): SeriesLastVisiblePriceOptionsObject = {
+  inline def apply(): SeriesLastVisiblePriceOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesLastVisiblePriceOptionsObject]
   }
   
-  @scala.inline
-  implicit class SeriesLastVisiblePriceOptionsObjectMutableBuilder[Self <: SeriesLastVisiblePriceOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesLastVisiblePriceOptionsObject](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setLabel(value: SeriesLastVisiblePriceLabelOptionsObject): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: SeriesLastVisiblePriceLabelOptionsObject): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

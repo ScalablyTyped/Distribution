@@ -45,26 +45,20 @@ object accessibilityFeatures {
   }
   object AccessibilityFeaturesCallbackArg {
     
-    @scala.inline
-    def apply(levelOfControl: LevelOfControl, value: js.Any): AccessibilityFeaturesCallbackArg = {
+    inline def apply(levelOfControl: LevelOfControl, value: js.Any): AccessibilityFeaturesCallbackArg = {
       val __obj = js.Dynamic.literal(levelOfControl = levelOfControl.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccessibilityFeaturesCallbackArg]
     }
     
-    @scala.inline
-    implicit class AccessibilityFeaturesCallbackArgMutableBuilder[Self <: AccessibilityFeaturesCallbackArg] (val x: Self) extends AnyVal {
+    extension [Self <: AccessibilityFeaturesCallbackArg](x: Self) {
       
-      @scala.inline
-      def setIncognitoSpecific(value: Boolean): Self = StObject.set(x, "incognitoSpecific", value.asInstanceOf[js.Any])
+      inline def setIncognitoSpecific(value: Boolean): Self = StObject.set(x, "incognitoSpecific", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncognitoSpecificUndefined: Self = StObject.set(x, "incognitoSpecific", js.undefined)
+      inline def setIncognitoSpecificUndefined: Self = StObject.set(x, "incognitoSpecific", js.undefined)
       
-      @scala.inline
-      def setLevelOfControl(value: LevelOfControl): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
+      inline def setLevelOfControl(value: LevelOfControl): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,20 +75,16 @@ object accessibilityFeatures {
   }
   object AccessibilityFeaturesClearArg {
     
-    @scala.inline
-    def apply(): AccessibilityFeaturesClearArg = {
+    inline def apply(): AccessibilityFeaturesClearArg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccessibilityFeaturesClearArg]
     }
     
-    @scala.inline
-    implicit class AccessibilityFeaturesClearArgMutableBuilder[Self <: AccessibilityFeaturesClearArg] (val x: Self) extends AnyVal {
+    extension [Self <: AccessibilityFeaturesClearArg](x: Self) {
       
-      @scala.inline
-      def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
   }
   
@@ -105,20 +95,16 @@ object accessibilityFeatures {
   }
   object AccessibilityFeaturesGetArg {
     
-    @scala.inline
-    def apply(): AccessibilityFeaturesGetArg = {
+    inline def apply(): AccessibilityFeaturesGetArg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccessibilityFeaturesGetArg]
     }
     
-    @scala.inline
-    implicit class AccessibilityFeaturesGetArgMutableBuilder[Self <: AccessibilityFeaturesGetArg] (val x: Self) extends AnyVal {
+    extension [Self <: AccessibilityFeaturesGetArg](x: Self) {
       
-      @scala.inline
-      def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
+      inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
+      inline def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
     }
   }
   
@@ -141,23 +127,18 @@ object accessibilityFeatures {
   }
   object AccessibilityFeaturesSetArg {
     
-    @scala.inline
-    def apply(value: js.Any): AccessibilityFeaturesSetArg = {
+    inline def apply(value: js.Any): AccessibilityFeaturesSetArg = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccessibilityFeaturesSetArg]
     }
     
-    @scala.inline
-    implicit class AccessibilityFeaturesSetArgMutableBuilder[Self <: AccessibilityFeaturesSetArg] (val x: Self) extends AnyVal {
+    extension [Self <: AccessibilityFeaturesSetArg](x: Self) {
       
-      @scala.inline
-      def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -205,17 +186,13 @@ object accessibilityFeatures {
   trait LevelOfControl extends StObject
   object LevelOfControl {
     
-    @scala.inline
-    def controllable_by_this_extension: typings.chromeApps.chromeAppsStrings.controllable_by_this_extension = "controllable_by_this_extension".asInstanceOf[typings.chromeApps.chromeAppsStrings.controllable_by_this_extension]
+    inline def controllable_by_this_extension: typings.chromeApps.chromeAppsStrings.controllable_by_this_extension = "controllable_by_this_extension".asInstanceOf[typings.chromeApps.chromeAppsStrings.controllable_by_this_extension]
     
-    @scala.inline
-    def controlled_by_other_extensions: typings.chromeApps.chromeAppsStrings.controlled_by_other_extensions = "controlled_by_other_extensions".asInstanceOf[typings.chromeApps.chromeAppsStrings.controlled_by_other_extensions]
+    inline def controlled_by_other_extensions: typings.chromeApps.chromeAppsStrings.controlled_by_other_extensions = "controlled_by_other_extensions".asInstanceOf[typings.chromeApps.chromeAppsStrings.controlled_by_other_extensions]
     
-    @scala.inline
-    def controlled_by_this_extension: typings.chromeApps.chromeAppsStrings.controlled_by_this_extension = "controlled_by_this_extension".asInstanceOf[typings.chromeApps.chromeAppsStrings.controlled_by_this_extension]
+    inline def controlled_by_this_extension: typings.chromeApps.chromeAppsStrings.controlled_by_this_extension = "controlled_by_this_extension".asInstanceOf[typings.chromeApps.chromeAppsStrings.controlled_by_this_extension]
     
-    @scala.inline
-    def not_controllable: typings.chromeApps.chromeAppsStrings.not_controllable = "not_controllable".asInstanceOf[typings.chromeApps.chromeAppsStrings.not_controllable]
+    inline def not_controllable: typings.chromeApps.chromeAppsStrings.not_controllable = "not_controllable".asInstanceOf[typings.chromeApps.chromeAppsStrings.not_controllable]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -227,16 +204,12 @@ object accessibilityFeatures {
   trait Scope extends StObject
   object Scope {
     
-    @scala.inline
-    def incognito_persistent: typings.chromeApps.chromeAppsStrings.incognito_persistent = "incognito_persistent".asInstanceOf[typings.chromeApps.chromeAppsStrings.incognito_persistent]
+    inline def incognito_persistent: typings.chromeApps.chromeAppsStrings.incognito_persistent = "incognito_persistent".asInstanceOf[typings.chromeApps.chromeAppsStrings.incognito_persistent]
     
-    @scala.inline
-    def incognito_session_only: typings.chromeApps.chromeAppsStrings.incognito_session_only = "incognito_session_only".asInstanceOf[typings.chromeApps.chromeAppsStrings.incognito_session_only]
+    inline def incognito_session_only: typings.chromeApps.chromeAppsStrings.incognito_session_only = "incognito_session_only".asInstanceOf[typings.chromeApps.chromeAppsStrings.incognito_session_only]
     
-    @scala.inline
-    def regular: typings.chromeApps.chromeAppsStrings.regular = "regular".asInstanceOf[typings.chromeApps.chromeAppsStrings.regular]
+    inline def regular: typings.chromeApps.chromeAppsStrings.regular = "regular".asInstanceOf[typings.chromeApps.chromeAppsStrings.regular]
     
-    @scala.inline
-    def regular_only: typings.chromeApps.chromeAppsStrings.regular_only = "regular_only".asInstanceOf[typings.chromeApps.chromeAppsStrings.regular_only]
+    inline def regular_only: typings.chromeApps.chromeAppsStrings.regular_only = "regular_only".asInstanceOf[typings.chromeApps.chromeAppsStrings.regular_only]
   }
 }

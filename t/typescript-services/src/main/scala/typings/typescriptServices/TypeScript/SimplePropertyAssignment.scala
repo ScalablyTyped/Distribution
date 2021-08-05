@@ -14,8 +14,7 @@ trait SimplePropertyAssignment
 }
 object SimplePropertyAssignment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -43,13 +42,10 @@ object SimplePropertyAssignment {
     __obj.asInstanceOf[SimplePropertyAssignment]
   }
   
-  @scala.inline
-  implicit class SimplePropertyAssignmentMutableBuilder[Self <: SimplePropertyAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: SimplePropertyAssignment](x: Self) {
     
-    @scala.inline
-    def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: Identifier): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: Identifier): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
   }
 }

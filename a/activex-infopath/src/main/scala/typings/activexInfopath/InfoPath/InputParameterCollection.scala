@@ -8,15 +8,14 @@ trait InputParameterCollection extends StObject {
   
   val Count: Double
   
-  @JSName("InfoPath.InputParameterCollection_typekey")
+  /* private */ @JSName("InfoPath.InputParameterCollection_typekey")
   var InfoPathDotInputParameterCollection_typekey: InputParameterCollection
   
   def Item(varIndex: js.Any): InputParameterObject
 }
 object InputParameterCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     InfoPathDotInputParameterCollection_typekey: InputParameterCollection,
     Item: js.Any => InputParameterObject
@@ -26,16 +25,12 @@ object InputParameterCollection {
     __obj.asInstanceOf[InputParameterCollection]
   }
   
-  @scala.inline
-  implicit class InputParameterCollectionMutableBuilder[Self <: InputParameterCollection] (val x: Self) extends AnyVal {
+  extension [Self <: InputParameterCollection](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotInputParameterCollection_typekey(value: InputParameterCollection): Self = StObject.set(x, "InfoPath.InputParameterCollection_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotInputParameterCollection_typekey(value: InputParameterCollection): Self = StObject.set(x, "InfoPath.InputParameterCollection_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => InputParameterObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => InputParameterObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

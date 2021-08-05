@@ -19,22 +19,17 @@ trait WordSegment extends StObject {
 }
 object WordSegment {
   
-  @scala.inline
-  def apply(alternateForms: IVectorView[AlternateWordForm], sourceTextSegment: TextSegment, text: String): WordSegment = {
+  inline def apply(alternateForms: IVectorView[AlternateWordForm], sourceTextSegment: TextSegment, text: String): WordSegment = {
     val __obj = js.Dynamic.literal(alternateForms = alternateForms.asInstanceOf[js.Any], sourceTextSegment = sourceTextSegment.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[WordSegment]
   }
   
-  @scala.inline
-  implicit class WordSegmentMutableBuilder[Self <: WordSegment] (val x: Self) extends AnyVal {
+  extension [Self <: WordSegment](x: Self) {
     
-    @scala.inline
-    def setAlternateForms(value: IVectorView[AlternateWordForm]): Self = StObject.set(x, "alternateForms", value.asInstanceOf[js.Any])
+    inline def setAlternateForms(value: IVectorView[AlternateWordForm]): Self = StObject.set(x, "alternateForms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTextSegment(value: TextSegment): Self = StObject.set(x, "sourceTextSegment", value.asInstanceOf[js.Any])
+    inline def setSourceTextSegment(value: TextSegment): Self = StObject.set(x, "sourceTextSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

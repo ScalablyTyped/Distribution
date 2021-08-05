@@ -39,7 +39,7 @@ object invokeHistoryMod {
     /**
       * @hidden
       */
-    var end_time_ : js.Any = js.native
+    /* private */ var end_time_ : js.Any = js.native
     
     /**
       * Get end time.
@@ -64,12 +64,12 @@ object invokeHistoryMod {
     /**
       * @hidden
       */
-    var listener: js.Any = js.native
+    /* private */ var listener: js.Any = js.native
     
     /**
       * @hidden
       */
-    var start_time_ : js.Any = js.native
+    /* private */ var start_time_ : js.Any = js.native
     
     /**
       * Convert to an {@link Invoke} message.
@@ -81,6 +81,6 @@ object invokeHistoryMod {
     /**
       * @hidden
       */
-    var uid: js.Any = js.native
+    /* private */ var uid: js.Any = js.native
   }
 }

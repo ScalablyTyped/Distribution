@@ -10,16 +10,13 @@ trait Isauto extends StObject {
 }
 object Isauto {
   
-  @scala.inline
-  def apply(is_auto: Boolean): Isauto = {
+  inline def apply(is_auto: Boolean): Isauto = {
     val __obj = js.Dynamic.literal(is_auto = is_auto.asInstanceOf[js.Any])
     __obj.asInstanceOf[Isauto]
   }
   
-  @scala.inline
-  implicit class IsautoMutableBuilder[Self <: Isauto] (val x: Self) extends AnyVal {
+  extension [Self <: Isauto](x: Self) {
     
-    @scala.inline
-    def setIs_auto(value: Boolean): Self = StObject.set(x, "is_auto", value.asInstanceOf[js.Any])
+    inline def setIs_auto(value: Boolean): Self = StObject.set(x, "is_auto", value.asInstanceOf[js.Any])
   }
 }

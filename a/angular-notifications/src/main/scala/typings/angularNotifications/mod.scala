@@ -18,20 +18,16 @@ object mod {
     }
     object IAnimation {
       
-      @scala.inline
-      def apply(duration: Double, enabled: Boolean): IAnimation = {
+      inline def apply(duration: Double, enabled: Boolean): IAnimation = {
         val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
         __obj.asInstanceOf[IAnimation]
       }
       
-      @scala.inline
-      implicit class IAnimationMutableBuilder[Self <: IAnimation] (val x: Self) extends AnyVal {
+      extension [Self <: IAnimation](x: Self) {
         
-        @scala.inline
-        def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+        inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+        inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       }
     }
     
@@ -53,8 +49,7 @@ object mod {
     }
     object INotification {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         content: String,
         icon: String,
         image: String,
@@ -68,29 +63,21 @@ object mod {
         __obj.asInstanceOf[INotification]
       }
       
-      @scala.inline
-      implicit class INotificationMutableBuilder[Self <: INotification] (val x: Self) extends AnyVal {
+      extension [Self <: INotification](x: Self) {
         
-        @scala.inline
-        def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+        inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+        inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserData(value: String): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+        inline def setUserData(value: String): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
       }
     }
     
@@ -176,8 +163,7 @@ object mod {
     }
     object ISettings {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         custom: IAnimation,
         details: Boolean,
         error: IAnimation,
@@ -193,38 +179,27 @@ object mod {
         __obj.asInstanceOf[ISettings]
       }
       
-      @scala.inline
-      implicit class ISettingsMutableBuilder[Self <: ISettings] (val x: Self) extends AnyVal {
+      extension [Self <: ISettings](x: Self) {
         
-        @scala.inline
-        def setCustom(value: IAnimation): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+        inline def setCustom(value: IAnimation): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDetails(value: Boolean): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+        inline def setDetails(value: Boolean): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setError(value: IAnimation): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: IAnimation): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHtml5DefaultIcon(value: String): Self = StObject.set(x, "html5DefaultIcon", value.asInstanceOf[js.Any])
+        inline def setHtml5DefaultIcon(value: String): Self = StObject.set(x, "html5DefaultIcon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHtml5Mode(value: Boolean): Self = StObject.set(x, "html5Mode", value.asInstanceOf[js.Any])
+        inline def setHtml5Mode(value: Boolean): Self = StObject.set(x, "html5Mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfo(value: IAnimation): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: IAnimation): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocalStorage(value: Boolean): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
+        inline def setLocalStorage(value: Boolean): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProgress(value: IAnimation): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+        inline def setProgress(value: IAnimation): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuccess(value: IAnimation): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+        inline def setSuccess(value: IAnimation): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWarning(value: IAnimation): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+        inline def setWarning(value: IAnimation): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -15,19 +15,15 @@ trait FieldDependentRule
 }
 object FieldDependentRule {
   
-  @scala.inline
-  def apply(_links: js.Any, dependentFields: js.Array[WorkItemFieldReference], url: String): FieldDependentRule = {
+  inline def apply(_links: js.Any, dependentFields: js.Array[WorkItemFieldReference], url: String): FieldDependentRule = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], dependentFields = dependentFields.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldDependentRule]
   }
   
-  @scala.inline
-  implicit class FieldDependentRuleMutableBuilder[Self <: FieldDependentRule] (val x: Self) extends AnyVal {
+  extension [Self <: FieldDependentRule](x: Self) {
     
-    @scala.inline
-    def setDependentFields(value: js.Array[WorkItemFieldReference]): Self = StObject.set(x, "dependentFields", value.asInstanceOf[js.Any])
+    inline def setDependentFields(value: js.Array[WorkItemFieldReference]): Self = StObject.set(x, "dependentFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependentFieldsVarargs(value: WorkItemFieldReference*): Self = StObject.set(x, "dependentFields", js.Array(value :_*))
+    inline def setDependentFieldsVarargs(value: WorkItemFieldReference*): Self = StObject.set(x, "dependentFields", js.Array(value :_*))
   }
 }

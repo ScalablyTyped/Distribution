@@ -18,25 +18,19 @@ trait SsmControls extends StObject {
 }
 object SsmControls {
   
-  @scala.inline
-  def apply(): SsmControls = {
+  inline def apply(): SsmControls = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SsmControls]
   }
   
-  @scala.inline
-  implicit class SsmControlsMutableBuilder[Self <: SsmControls] (val x: Self) extends AnyVal {
+  extension [Self <: SsmControls](x: Self) {
     
-    @scala.inline
-    def setConcurrentExecutionRatePercentage(value: Percentage): Self = StObject.set(x, "ConcurrentExecutionRatePercentage", value.asInstanceOf[js.Any])
+    inline def setConcurrentExecutionRatePercentage(value: Percentage): Self = StObject.set(x, "ConcurrentExecutionRatePercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcurrentExecutionRatePercentageUndefined: Self = StObject.set(x, "ConcurrentExecutionRatePercentage", js.undefined)
+    inline def setConcurrentExecutionRatePercentageUndefined: Self = StObject.set(x, "ConcurrentExecutionRatePercentage", js.undefined)
     
-    @scala.inline
-    def setErrorPercentage(value: Percentage): Self = StObject.set(x, "ErrorPercentage", value.asInstanceOf[js.Any])
+    inline def setErrorPercentage(value: Percentage): Self = StObject.set(x, "ErrorPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorPercentageUndefined: Self = StObject.set(x, "ErrorPercentage", js.undefined)
+    inline def setErrorPercentageUndefined: Self = StObject.set(x, "ErrorPercentage", js.undefined)
   }
 }

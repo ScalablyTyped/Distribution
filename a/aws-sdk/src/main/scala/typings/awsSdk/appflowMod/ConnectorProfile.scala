@@ -48,61 +48,43 @@ trait ConnectorProfile extends StObject {
 }
 object ConnectorProfile {
   
-  @scala.inline
-  def apply(): ConnectorProfile = {
+  inline def apply(): ConnectorProfile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectorProfile]
   }
   
-  @scala.inline
-  implicit class ConnectorProfileMutableBuilder[Self <: ConnectorProfile] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectorProfile](x: Self) {
     
-    @scala.inline
-    def setConnectionMode(value: ConnectionMode): Self = StObject.set(x, "connectionMode", value.asInstanceOf[js.Any])
+    inline def setConnectionMode(value: ConnectionMode): Self = StObject.set(x, "connectionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionModeUndefined: Self = StObject.set(x, "connectionMode", js.undefined)
+    inline def setConnectionModeUndefined: Self = StObject.set(x, "connectionMode", js.undefined)
     
-    @scala.inline
-    def setConnectorProfileArn(value: ConnectorProfileArn): Self = StObject.set(x, "connectorProfileArn", value.asInstanceOf[js.Any])
+    inline def setConnectorProfileArn(value: ConnectorProfileArn): Self = StObject.set(x, "connectorProfileArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorProfileArnUndefined: Self = StObject.set(x, "connectorProfileArn", js.undefined)
+    inline def setConnectorProfileArnUndefined: Self = StObject.set(x, "connectorProfileArn", js.undefined)
     
-    @scala.inline
-    def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
+    inline def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorProfileNameUndefined: Self = StObject.set(x, "connectorProfileName", js.undefined)
+    inline def setConnectorProfileNameUndefined: Self = StObject.set(x, "connectorProfileName", js.undefined)
     
-    @scala.inline
-    def setConnectorProfileProperties(value: ConnectorProfileProperties): Self = StObject.set(x, "connectorProfileProperties", value.asInstanceOf[js.Any])
+    inline def setConnectorProfileProperties(value: ConnectorProfileProperties): Self = StObject.set(x, "connectorProfileProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorProfilePropertiesUndefined: Self = StObject.set(x, "connectorProfileProperties", js.undefined)
+    inline def setConnectorProfilePropertiesUndefined: Self = StObject.set(x, "connectorProfileProperties", js.undefined)
     
-    @scala.inline
-    def setConnectorType(value: ConnectorType): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
+    inline def setConnectorType(value: ConnectorType): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorTypeUndefined: Self = StObject.set(x, "connectorType", js.undefined)
+    inline def setConnectorTypeUndefined: Self = StObject.set(x, "connectorType", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setCredentialsArn(value: ARN): Self = StObject.set(x, "credentialsArn", value.asInstanceOf[js.Any])
+    inline def setCredentialsArn(value: ARN): Self = StObject.set(x, "credentialsArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsArnUndefined: Self = StObject.set(x, "credentialsArn", js.undefined)
+    inline def setCredentialsArnUndefined: Self = StObject.set(x, "credentialsArn", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedAt(value: Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
+    inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
   }
 }

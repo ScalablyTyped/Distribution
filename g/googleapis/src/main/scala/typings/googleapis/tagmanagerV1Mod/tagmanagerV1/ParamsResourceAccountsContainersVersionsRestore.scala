@@ -34,37 +34,27 @@ trait ParamsResourceAccountsContainersVersionsRestore
 }
 object ParamsResourceAccountsContainersVersionsRestore {
   
-  @scala.inline
-  def apply(): ParamsResourceAccountsContainersVersionsRestore = {
+  inline def apply(): ParamsResourceAccountsContainersVersionsRestore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAccountsContainersVersionsRestore]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAccountsContainersVersionsRestoreMutableBuilder[Self <: ParamsResourceAccountsContainersVersionsRestore] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAccountsContainersVersionsRestore](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+    inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
-    @scala.inline
-    def setContainerVersionId(value: String): Self = StObject.set(x, "containerVersionId", value.asInstanceOf[js.Any])
+    inline def setContainerVersionId(value: String): Self = StObject.set(x, "containerVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerVersionIdUndefined: Self = StObject.set(x, "containerVersionId", js.undefined)
+    inline def setContainerVersionIdUndefined: Self = StObject.set(x, "containerVersionId", js.undefined)
   }
 }

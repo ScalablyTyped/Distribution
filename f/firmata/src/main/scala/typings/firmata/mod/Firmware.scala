@@ -12,19 +12,15 @@ trait Firmware extends StObject {
 }
 object Firmware {
   
-  @scala.inline
-  def apply(name: String, version: Version): Firmware = {
+  inline def apply(name: String, version: Version): Firmware = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Firmware]
   }
   
-  @scala.inline
-  implicit class FirmwareMutableBuilder[Self <: Firmware] (val x: Self) extends AnyVal {
+  extension [Self <: Firmware](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

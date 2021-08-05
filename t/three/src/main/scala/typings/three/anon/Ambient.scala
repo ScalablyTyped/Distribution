@@ -44,8 +44,7 @@ trait Ambient extends StObject {
 }
 object Ambient {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ambient: js.Array[Double],
     directional: js.Array[js.Any],
     directionalShadow: js.Array[js.Any],
@@ -69,109 +68,74 @@ object Ambient {
     __obj.asInstanceOf[Ambient]
   }
   
-  @scala.inline
-  implicit class AmbientMutableBuilder[Self <: Ambient] (val x: Self) extends AnyVal {
+  extension [Self <: Ambient](x: Self) {
     
-    @scala.inline
-    def setAmbient(value: js.Array[Double]): Self = StObject.set(x, "ambient", value.asInstanceOf[js.Any])
+    inline def setAmbient(value: js.Array[Double]): Self = StObject.set(x, "ambient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmbientVarargs(value: Double*): Self = StObject.set(x, "ambient", js.Array(value :_*))
+    inline def setAmbientVarargs(value: Double*): Self = StObject.set(x, "ambient", js.Array(value :_*))
     
-    @scala.inline
-    def setDirectional(value: js.Array[js.Any]): Self = StObject.set(x, "directional", value.asInstanceOf[js.Any])
+    inline def setDirectional(value: js.Array[js.Any]): Self = StObject.set(x, "directional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionalShadow(value: js.Array[js.Any]): Self = StObject.set(x, "directionalShadow", value.asInstanceOf[js.Any])
+    inline def setDirectionalShadow(value: js.Array[js.Any]): Self = StObject.set(x, "directionalShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionalShadowMap(value: js.Array[js.Any]): Self = StObject.set(x, "directionalShadowMap", value.asInstanceOf[js.Any])
+    inline def setDirectionalShadowMap(value: js.Array[js.Any]): Self = StObject.set(x, "directionalShadowMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionalShadowMapVarargs(value: js.Any*): Self = StObject.set(x, "directionalShadowMap", js.Array(value :_*))
+    inline def setDirectionalShadowMapVarargs(value: js.Any*): Self = StObject.set(x, "directionalShadowMap", js.Array(value :_*))
     
-    @scala.inline
-    def setDirectionalShadowMatrix(value: js.Array[js.Any]): Self = StObject.set(x, "directionalShadowMatrix", value.asInstanceOf[js.Any])
+    inline def setDirectionalShadowMatrix(value: js.Array[js.Any]): Self = StObject.set(x, "directionalShadowMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionalShadowMatrixVarargs(value: js.Any*): Self = StObject.set(x, "directionalShadowMatrix", js.Array(value :_*))
+    inline def setDirectionalShadowMatrixVarargs(value: js.Any*): Self = StObject.set(x, "directionalShadowMatrix", js.Array(value :_*))
     
-    @scala.inline
-    def setDirectionalShadowVarargs(value: js.Any*): Self = StObject.set(x, "directionalShadow", js.Array(value :_*))
+    inline def setDirectionalShadowVarargs(value: js.Any*): Self = StObject.set(x, "directionalShadow", js.Array(value :_*))
     
-    @scala.inline
-    def setDirectionalVarargs(value: js.Any*): Self = StObject.set(x, "directional", js.Array(value :_*))
+    inline def setDirectionalVarargs(value: js.Any*): Self = StObject.set(x, "directional", js.Array(value :_*))
     
-    @scala.inline
-    def setHash(value: DirectionalLength): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: DirectionalLength): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHemi(value: js.Array[js.Any]): Self = StObject.set(x, "hemi", value.asInstanceOf[js.Any])
+    inline def setHemi(value: js.Array[js.Any]): Self = StObject.set(x, "hemi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHemiVarargs(value: js.Any*): Self = StObject.set(x, "hemi", js.Array(value :_*))
+    inline def setHemiVarargs(value: js.Any*): Self = StObject.set(x, "hemi", js.Array(value :_*))
     
-    @scala.inline
-    def setPoint(value: js.Array[js.Any]): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: js.Array[js.Any]): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointShadow(value: js.Array[js.Any]): Self = StObject.set(x, "pointShadow", value.asInstanceOf[js.Any])
+    inline def setPointShadow(value: js.Array[js.Any]): Self = StObject.set(x, "pointShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointShadowMap(value: js.Array[js.Any]): Self = StObject.set(x, "pointShadowMap", value.asInstanceOf[js.Any])
+    inline def setPointShadowMap(value: js.Array[js.Any]): Self = StObject.set(x, "pointShadowMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointShadowMapVarargs(value: js.Any*): Self = StObject.set(x, "pointShadowMap", js.Array(value :_*))
+    inline def setPointShadowMapVarargs(value: js.Any*): Self = StObject.set(x, "pointShadowMap", js.Array(value :_*))
     
-    @scala.inline
-    def setPointShadowMatrix(value: js.Array[js.Any]): Self = StObject.set(x, "pointShadowMatrix", value.asInstanceOf[js.Any])
+    inline def setPointShadowMatrix(value: js.Array[js.Any]): Self = StObject.set(x, "pointShadowMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointShadowMatrixVarargs(value: js.Any*): Self = StObject.set(x, "pointShadowMatrix", js.Array(value :_*))
+    inline def setPointShadowMatrixVarargs(value: js.Any*): Self = StObject.set(x, "pointShadowMatrix", js.Array(value :_*))
     
-    @scala.inline
-    def setPointShadowVarargs(value: js.Any*): Self = StObject.set(x, "pointShadow", js.Array(value :_*))
+    inline def setPointShadowVarargs(value: js.Any*): Self = StObject.set(x, "pointShadow", js.Array(value :_*))
     
-    @scala.inline
-    def setPointVarargs(value: js.Any*): Self = StObject.set(x, "point", js.Array(value :_*))
+    inline def setPointVarargs(value: js.Any*): Self = StObject.set(x, "point", js.Array(value :_*))
     
-    @scala.inline
-    def setProbe(value: js.Array[js.Any]): Self = StObject.set(x, "probe", value.asInstanceOf[js.Any])
+    inline def setProbe(value: js.Array[js.Any]): Self = StObject.set(x, "probe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProbeVarargs(value: js.Any*): Self = StObject.set(x, "probe", js.Array(value :_*))
+    inline def setProbeVarargs(value: js.Any*): Self = StObject.set(x, "probe", js.Array(value :_*))
     
-    @scala.inline
-    def setRectArea(value: js.Array[js.Any]): Self = StObject.set(x, "rectArea", value.asInstanceOf[js.Any])
+    inline def setRectArea(value: js.Array[js.Any]): Self = StObject.set(x, "rectArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectAreaVarargs(value: js.Any*): Self = StObject.set(x, "rectArea", js.Array(value :_*))
+    inline def setRectAreaVarargs(value: js.Any*): Self = StObject.set(x, "rectArea", js.Array(value :_*))
     
-    @scala.inline
-    def setSpot(value: js.Array[js.Any]): Self = StObject.set(x, "spot", value.asInstanceOf[js.Any])
+    inline def setSpot(value: js.Array[js.Any]): Self = StObject.set(x, "spot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotShadow(value: js.Array[js.Any]): Self = StObject.set(x, "spotShadow", value.asInstanceOf[js.Any])
+    inline def setSpotShadow(value: js.Array[js.Any]): Self = StObject.set(x, "spotShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotShadowMap(value: js.Array[js.Any]): Self = StObject.set(x, "spotShadowMap", value.asInstanceOf[js.Any])
+    inline def setSpotShadowMap(value: js.Array[js.Any]): Self = StObject.set(x, "spotShadowMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotShadowMapVarargs(value: js.Any*): Self = StObject.set(x, "spotShadowMap", js.Array(value :_*))
+    inline def setSpotShadowMapVarargs(value: js.Any*): Self = StObject.set(x, "spotShadowMap", js.Array(value :_*))
     
-    @scala.inline
-    def setSpotShadowMatrix(value: js.Array[js.Any]): Self = StObject.set(x, "spotShadowMatrix", value.asInstanceOf[js.Any])
+    inline def setSpotShadowMatrix(value: js.Array[js.Any]): Self = StObject.set(x, "spotShadowMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotShadowMatrixVarargs(value: js.Any*): Self = StObject.set(x, "spotShadowMatrix", js.Array(value :_*))
+    inline def setSpotShadowMatrixVarargs(value: js.Any*): Self = StObject.set(x, "spotShadowMatrix", js.Array(value :_*))
     
-    @scala.inline
-    def setSpotShadowVarargs(value: js.Any*): Self = StObject.set(x, "spotShadow", js.Array(value :_*))
+    inline def setSpotShadowVarargs(value: js.Any*): Self = StObject.set(x, "spotShadow", js.Array(value :_*))
     
-    @scala.inline
-    def setSpotVarargs(value: js.Any*): Self = StObject.set(x, "spot", js.Array(value :_*))
+    inline def setSpotVarargs(value: js.Any*): Self = StObject.set(x, "spot", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

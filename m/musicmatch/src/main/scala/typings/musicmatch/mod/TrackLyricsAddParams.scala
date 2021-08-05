@@ -12,25 +12,19 @@ trait TrackLyricsAddParams extends StObject {
 }
 object TrackLyricsAddParams {
   
-  @scala.inline
-  def apply(): TrackLyricsAddParams = {
+  inline def apply(): TrackLyricsAddParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrackLyricsAddParams]
   }
   
-  @scala.inline
-  implicit class TrackLyricsAddParamsMutableBuilder[Self <: TrackLyricsAddParams] (val x: Self) extends AnyVal {
+  extension [Self <: TrackLyricsAddParams](x: Self) {
     
-    @scala.inline
-    def setLyrics_body(value: String): Self = StObject.set(x, "lyrics_body", value.asInstanceOf[js.Any])
+    inline def setLyrics_body(value: String): Self = StObject.set(x, "lyrics_body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLyrics_bodyUndefined: Self = StObject.set(x, "lyrics_body", js.undefined)
+    inline def setLyrics_bodyUndefined: Self = StObject.set(x, "lyrics_body", js.undefined)
     
-    @scala.inline
-    def setLyrics_id(value: Double): Self = StObject.set(x, "lyrics_id", value.asInstanceOf[js.Any])
+    inline def setLyrics_id(value: Double): Self = StObject.set(x, "lyrics_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLyrics_idUndefined: Self = StObject.set(x, "lyrics_id", js.undefined)
+    inline def setLyrics_idUndefined: Self = StObject.set(x, "lyrics_id", js.undefined)
   }
 }

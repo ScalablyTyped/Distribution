@@ -11,19 +11,15 @@ trait CreateMessageRequest extends StObject {
 }
 object CreateMessageRequest {
   
-  @scala.inline
-  def apply(): CreateMessageRequest = {
+  inline def apply(): CreateMessageRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateMessageRequest]
   }
   
-  @scala.inline
-  implicit class CreateMessageRequestMutableBuilder[Self <: CreateMessageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMessageRequest](x: Self) {
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isWidgetMod {
   
-  @scala.inline
-  def apply(vTree: VTree): /* is virtual-dom.VirtualDOM.Widget */ Boolean = ^.asInstanceOf[js.Dynamic].apply(vTree.asInstanceOf[js.Any]).asInstanceOf[/* is virtual-dom.VirtualDOM.Widget */ Boolean]
+  inline def apply(vTree: VTree): /* is virtual-dom.VirtualDOM.Widget */ Boolean = ^.asInstanceOf[js.Dynamic].apply(vTree.asInstanceOf[js.Any]).asInstanceOf[/* is virtual-dom.VirtualDOM.Widget */ Boolean]
   
   @JSImport("virtual-dom/vnode/is-widget", JSImport.Namespace)
   @js.native

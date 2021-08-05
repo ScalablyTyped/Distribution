@@ -28,37 +28,27 @@ trait ImportCertificateMessage extends StObject {
 }
 object ImportCertificateMessage {
   
-  @scala.inline
-  def apply(CertificateIdentifier: String): ImportCertificateMessage = {
+  inline def apply(CertificateIdentifier: String): ImportCertificateMessage = {
     val __obj = js.Dynamic.literal(CertificateIdentifier = CertificateIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportCertificateMessage]
   }
   
-  @scala.inline
-  implicit class ImportCertificateMessageMutableBuilder[Self <: ImportCertificateMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ImportCertificateMessage](x: Self) {
     
-    @scala.inline
-    def setCertificateIdentifier(value: String): Self = StObject.set(x, "CertificateIdentifier", value.asInstanceOf[js.Any])
+    inline def setCertificateIdentifier(value: String): Self = StObject.set(x, "CertificateIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatePem(value: String): Self = StObject.set(x, "CertificatePem", value.asInstanceOf[js.Any])
+    inline def setCertificatePem(value: String): Self = StObject.set(x, "CertificatePem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatePemUndefined: Self = StObject.set(x, "CertificatePem", js.undefined)
+    inline def setCertificatePemUndefined: Self = StObject.set(x, "CertificatePem", js.undefined)
     
-    @scala.inline
-    def setCertificateWallet(value: CertificateWallet): Self = StObject.set(x, "CertificateWallet", value.asInstanceOf[js.Any])
+    inline def setCertificateWallet(value: CertificateWallet): Self = StObject.set(x, "CertificateWallet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateWalletUndefined: Self = StObject.set(x, "CertificateWallet", js.undefined)
+    inline def setCertificateWalletUndefined: Self = StObject.set(x, "CertificateWallet", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

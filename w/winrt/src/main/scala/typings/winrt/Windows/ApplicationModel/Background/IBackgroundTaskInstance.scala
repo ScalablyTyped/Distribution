@@ -22,8 +22,7 @@ trait IBackgroundTaskInstance extends StObject {
 }
 object IBackgroundTaskInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDeferral: () => BackgroundTaskDeferral,
     instanceId: String,
     oncanceled: js.Any,
@@ -36,28 +35,20 @@ object IBackgroundTaskInstance {
     __obj.asInstanceOf[IBackgroundTaskInstance]
   }
   
-  @scala.inline
-  implicit class IBackgroundTaskInstanceMutableBuilder[Self <: IBackgroundTaskInstance] (val x: Self) extends AnyVal {
+  extension [Self <: IBackgroundTaskInstance](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => BackgroundTaskDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => BackgroundTaskDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOncanceled(value: js.Any): Self = StObject.set(x, "oncanceled", value.asInstanceOf[js.Any])
+    inline def setOncanceled(value: js.Any): Self = StObject.set(x, "oncanceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuspendedCount(value: Double): Self = StObject.set(x, "suspendedCount", value.asInstanceOf[js.Any])
+    inline def setSuspendedCount(value: Double): Self = StObject.set(x, "suspendedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTask(value: BackgroundTaskRegistration): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: BackgroundTaskRegistration): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerDetails(value: js.Any): Self = StObject.set(x, "triggerDetails", value.asInstanceOf[js.Any])
+    inline def setTriggerDetails(value: js.Any): Self = StObject.set(x, "triggerDetails", value.asInstanceOf[js.Any])
   }
 }

@@ -83,106 +83,73 @@ trait Integration extends StObject {
 }
 object Integration {
   
-  @scala.inline
-  def apply(): Integration = {
+  inline def apply(): Integration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Integration]
   }
   
-  @scala.inline
-  implicit class IntegrationMutableBuilder[Self <: Integration] (val x: Self) extends AnyVal {
+  extension [Self <: Integration](x: Self) {
     
-    @scala.inline
-    def setCacheKeyParameters(value: ListOfString): Self = StObject.set(x, "cacheKeyParameters", value.asInstanceOf[js.Any])
+    inline def setCacheKeyParameters(value: ListOfString): Self = StObject.set(x, "cacheKeyParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheKeyParametersUndefined: Self = StObject.set(x, "cacheKeyParameters", js.undefined)
+    inline def setCacheKeyParametersUndefined: Self = StObject.set(x, "cacheKeyParameters", js.undefined)
     
-    @scala.inline
-    def setCacheKeyParametersVarargs(value: String*): Self = StObject.set(x, "cacheKeyParameters", js.Array(value :_*))
+    inline def setCacheKeyParametersVarargs(value: String*): Self = StObject.set(x, "cacheKeyParameters", js.Array(value :_*))
     
-    @scala.inline
-    def setCacheNamespace(value: String): Self = StObject.set(x, "cacheNamespace", value.asInstanceOf[js.Any])
+    inline def setCacheNamespace(value: String): Self = StObject.set(x, "cacheNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheNamespaceUndefined: Self = StObject.set(x, "cacheNamespace", js.undefined)
+    inline def setCacheNamespaceUndefined: Self = StObject.set(x, "cacheNamespace", js.undefined)
     
-    @scala.inline
-    def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
+    inline def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
     
-    @scala.inline
-    def setConnectionType(value: ConnectionType): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
+    inline def setConnectionType(value: ConnectionType): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionTypeUndefined: Self = StObject.set(x, "connectionType", js.undefined)
+    inline def setConnectionTypeUndefined: Self = StObject.set(x, "connectionType", js.undefined)
     
-    @scala.inline
-    def setContentHandling(value: ContentHandlingStrategy): Self = StObject.set(x, "contentHandling", value.asInstanceOf[js.Any])
+    inline def setContentHandling(value: ContentHandlingStrategy): Self = StObject.set(x, "contentHandling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentHandlingUndefined: Self = StObject.set(x, "contentHandling", js.undefined)
+    inline def setContentHandlingUndefined: Self = StObject.set(x, "contentHandling", js.undefined)
     
-    @scala.inline
-    def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
-    @scala.inline
-    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+    inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
+    inline def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
     
-    @scala.inline
-    def setIntegrationResponses(value: MapOfIntegrationResponse): Self = StObject.set(x, "integrationResponses", value.asInstanceOf[js.Any])
+    inline def setIntegrationResponses(value: MapOfIntegrationResponse): Self = StObject.set(x, "integrationResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrationResponsesUndefined: Self = StObject.set(x, "integrationResponses", js.undefined)
+    inline def setIntegrationResponsesUndefined: Self = StObject.set(x, "integrationResponses", js.undefined)
     
-    @scala.inline
-    def setPassthroughBehavior(value: String): Self = StObject.set(x, "passthroughBehavior", value.asInstanceOf[js.Any])
+    inline def setPassthroughBehavior(value: String): Self = StObject.set(x, "passthroughBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassthroughBehaviorUndefined: Self = StObject.set(x, "passthroughBehavior", js.undefined)
+    inline def setPassthroughBehaviorUndefined: Self = StObject.set(x, "passthroughBehavior", js.undefined)
     
-    @scala.inline
-    def setRequestParameters(value: MapOfStringToString): Self = StObject.set(x, "requestParameters", value.asInstanceOf[js.Any])
+    inline def setRequestParameters(value: MapOfStringToString): Self = StObject.set(x, "requestParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestParametersUndefined: Self = StObject.set(x, "requestParameters", js.undefined)
+    inline def setRequestParametersUndefined: Self = StObject.set(x, "requestParameters", js.undefined)
     
-    @scala.inline
-    def setRequestTemplates(value: MapOfStringToString): Self = StObject.set(x, "requestTemplates", value.asInstanceOf[js.Any])
+    inline def setRequestTemplates(value: MapOfStringToString): Self = StObject.set(x, "requestTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestTemplatesUndefined: Self = StObject.set(x, "requestTemplates", js.undefined)
+    inline def setRequestTemplatesUndefined: Self = StObject.set(x, "requestTemplates", js.undefined)
     
-    @scala.inline
-    def setTimeoutInMillis(value: Integer): Self = StObject.set(x, "timeoutInMillis", value.asInstanceOf[js.Any])
+    inline def setTimeoutInMillis(value: Integer): Self = StObject.set(x, "timeoutInMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInMillisUndefined: Self = StObject.set(x, "timeoutInMillis", js.undefined)
+    inline def setTimeoutInMillisUndefined: Self = StObject.set(x, "timeoutInMillis", js.undefined)
     
-    @scala.inline
-    def setTlsConfig(value: TlsConfig): Self = StObject.set(x, "tlsConfig", value.asInstanceOf[js.Any])
+    inline def setTlsConfig(value: TlsConfig): Self = StObject.set(x, "tlsConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsConfigUndefined: Self = StObject.set(x, "tlsConfig", js.undefined)
+    inline def setTlsConfigUndefined: Self = StObject.set(x, "tlsConfig", js.undefined)
     
-    @scala.inline
-    def setType(value: IntegrationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IntegrationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

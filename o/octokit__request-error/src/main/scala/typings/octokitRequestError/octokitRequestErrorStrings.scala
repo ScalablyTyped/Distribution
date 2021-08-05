@@ -8,6 +8,5 @@ object octokitRequestErrorStrings {
   
   @js.native
   sealed trait HttpError extends StObject
-  @scala.inline
-  def HttpError: HttpError = "HttpError".asInstanceOf[HttpError]
+  inline def HttpError: HttpError = "HttpError".asInstanceOf[HttpError]
 }

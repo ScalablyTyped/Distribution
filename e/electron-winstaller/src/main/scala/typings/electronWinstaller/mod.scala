@@ -11,9 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertVersion(version: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertVersion")(version.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertVersion(version: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertVersion")(version.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def createWindowsInstaller(options: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWindowsInstaller")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def createWindowsInstaller(options: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWindowsInstaller")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

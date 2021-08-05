@@ -17,22 +17,17 @@ trait SchemaListConnectionsResponse extends StObject {
 }
 object SchemaListConnectionsResponse {
   
-  @scala.inline
-  def apply(): SchemaListConnectionsResponse = {
+  inline def apply(): SchemaListConnectionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListConnectionsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListConnectionsResponseMutableBuilder[Self <: SchemaListConnectionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListConnectionsResponse](x: Self) {
     
-    @scala.inline
-    def setConnections(value: js.Array[SchemaConnection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
+    inline def setConnections(value: js.Array[SchemaConnection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
+    inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
-    @scala.inline
-    def setConnectionsVarargs(value: SchemaConnection*): Self = StObject.set(x, "connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: SchemaConnection*): Self = StObject.set(x, "connections", js.Array(value :_*))
   }
 }

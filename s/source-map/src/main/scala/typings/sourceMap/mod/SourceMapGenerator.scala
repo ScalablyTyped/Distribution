@@ -61,6 +61,5 @@ object SourceMapGenerator {
     *
     * @param sourceMapConsumer The SourceMap.
     */
-  @scala.inline
-  def fromSourceMap(sourceMapConsumer: SourceMapConsumer): SourceMapGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSourceMap")(sourceMapConsumer.asInstanceOf[js.Any]).asInstanceOf[SourceMapGenerator]
+  inline def fromSourceMap(sourceMapConsumer: SourceMapConsumer): SourceMapGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSourceMap")(sourceMapConsumer.asInstanceOf[js.Any]).asInstanceOf[SourceMapGenerator]
 }

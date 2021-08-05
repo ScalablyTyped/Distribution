@@ -12,8 +12,7 @@ object dialogMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: IDialogChildProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: IDialogChildProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait IDialogChildProps
     extends StObject
@@ -25,23 +24,18 @@ object dialogMod {
   }
   object IDialogChildProps {
     
-    @scala.inline
-    def apply(getOpenCount: () => Double): IDialogChildProps = {
+    inline def apply(getOpenCount: () => Double): IDialogChildProps = {
       val __obj = js.Dynamic.literal(getOpenCount = js.Any.fromFunction0(getOpenCount))
       __obj.asInstanceOf[IDialogChildProps]
     }
     
-    @scala.inline
-    implicit class IDialogChildPropsMutableBuilder[Self <: IDialogChildProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDialogChildProps](x: Self) {
       
-      @scala.inline
-      def setGetOpenCount(value: () => Double): Self = StObject.set(x, "getOpenCount", js.Any.fromFunction0(value))
+      inline def setGetOpenCount(value: () => Double): Self = StObject.set(x, "getOpenCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSwitchScrollingEffect(value: () => Unit): Self = StObject.set(x, "switchScrollingEffect", js.Any.fromFunction0(value))
+      inline def setSwitchScrollingEffect(value: () => Unit): Self = StObject.set(x, "switchScrollingEffect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSwitchScrollingEffectUndefined: Self = StObject.set(x, "switchScrollingEffect", js.undefined)
+      inline def setSwitchScrollingEffectUndefined: Self = StObject.set(x, "switchScrollingEffect", js.undefined)
     }
   }
 }

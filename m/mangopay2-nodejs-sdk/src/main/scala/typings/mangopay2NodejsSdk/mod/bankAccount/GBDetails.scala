@@ -34,28 +34,21 @@ trait GBDetails
 }
 object GBDetails {
   
-  @scala.inline
-  def apply(AccountNumber: String, OwnerAddress: AddressType, OwnerName: String, SortCode: String): GBDetails = {
+  inline def apply(AccountNumber: String, OwnerAddress: AddressType, OwnerName: String, SortCode: String): GBDetails = {
     val __obj = js.Dynamic.literal(AccountNumber = AccountNumber.asInstanceOf[js.Any], OwnerAddress = OwnerAddress.asInstanceOf[js.Any], OwnerName = OwnerName.asInstanceOf[js.Any], SortCode = SortCode.asInstanceOf[js.Any], Type = "GB")
     __obj.asInstanceOf[GBDetails]
   }
   
-  @scala.inline
-  implicit class GBDetailsMutableBuilder[Self <: GBDetails] (val x: Self) extends AnyVal {
+  extension [Self <: GBDetails](x: Self) {
     
-    @scala.inline
-    def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
+    inline def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerAddress(value: AddressType): Self = StObject.set(x, "OwnerAddress", value.asInstanceOf[js.Any])
+    inline def setOwnerAddress(value: AddressType): Self = StObject.set(x, "OwnerAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerName(value: String): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
+    inline def setOwnerName(value: String): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortCode(value: String): Self = StObject.set(x, "SortCode", value.asInstanceOf[js.Any])
+    inline def setSortCode(value: String): Self = StObject.set(x, "SortCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: GB): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: GB): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

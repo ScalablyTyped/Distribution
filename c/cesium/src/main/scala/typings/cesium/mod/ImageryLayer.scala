@@ -45,36 +45,31 @@ object ImageryLayer {
   @JSImport("cesium", "ImageryLayer.DEFAULT_BRIGHTNESS")
   @js.native
   def DEFAULT_BRIGHTNESS: Double = js.native
-  @scala.inline
-  def DEFAULT_BRIGHTNESS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_BRIGHTNESS")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_BRIGHTNESS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_BRIGHTNESS")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cesium", "ImageryLayer.DEFAULT_CONTRAST")
   @js.native
   def DEFAULT_CONTRAST: Double = js.native
-  @scala.inline
-  def DEFAULT_CONTRAST_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_CONTRAST")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_CONTRAST_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_CONTRAST")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cesium", "ImageryLayer.DEFAULT_GAMMA")
   @js.native
   def DEFAULT_GAMMA: Double = js.native
-  @scala.inline
-  def DEFAULT_GAMMA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_GAMMA")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_GAMMA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_GAMMA")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cesium", "ImageryLayer.DEFAULT_HUE")
   @js.native
   def DEFAULT_HUE: Double = js.native
-  @scala.inline
-  def DEFAULT_HUE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_HUE")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_HUE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_HUE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cesium", "ImageryLayer.DEFAULT_SATURATION")
   @js.native
   def DEFAULT_SATURATION: Double = js.native
-  @scala.inline
-  def DEFAULT_SATURATION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_SATURATION")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_SATURATION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_SATURATION")(x.asInstanceOf[js.Any])
   
   type ValueFunc = js.Function5[
     /* frameState */ js.Any, 

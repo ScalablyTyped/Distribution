@@ -30,7 +30,7 @@ object describeIdentityCommandMod {
         ] {
     def this(input: DescribeIdentityCommandInput) = this()
     
-    var deserialize: js.Any = js.native
+    /* private */ var deserialize: js.Any = js.native
     
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
@@ -42,7 +42,7 @@ object describeIdentityCommandMod {
       options: HttpHandlerOptions
     ): Handler[DescribeIdentityCommandInput, DescribeIdentityCommandOutput] = js.native
     
-    var serialize: js.Any = js.native
+    /* private */ var serialize: js.Any = js.native
   }
   
   type DescribeIdentityCommandInput = DescribeIdentityInput
@@ -54,8 +54,7 @@ object describeIdentityCommandMod {
        with _ServiceOutputTypes
   object DescribeIdentityCommandOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DescribeIdentityCommandOutput = {
+    inline def apply($metadata: ResponseMetadata): DescribeIdentityCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeIdentityCommandOutput]
     }

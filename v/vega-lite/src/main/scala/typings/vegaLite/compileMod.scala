@@ -19,10 +19,8 @@ object compileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compile(inputSpec: TopLevelSpec): Normalized = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(inputSpec.asInstanceOf[js.Any]).asInstanceOf[Normalized]
-  @scala.inline
-  def compile(inputSpec: TopLevelSpec, opt: CompileOptions): Normalized = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(inputSpec.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Normalized]
+  inline def compile(inputSpec: TopLevelSpec): Normalized = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(inputSpec.asInstanceOf[js.Any]).asInstanceOf[Normalized]
+  inline def compile(inputSpec: TopLevelSpec, opt: CompileOptions): Normalized = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(inputSpec.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Normalized]
   
   trait CompileOptions extends StObject {
     
@@ -43,34 +41,26 @@ object compileMod {
   }
   object CompileOptions {
     
-    @scala.inline
-    def apply(): CompileOptions = {
+    inline def apply(): CompileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CompileOptions]
     }
     
-    @scala.inline
-    implicit class CompileOptionsMutableBuilder[Self <: CompileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CompileOptions](x: Self) {
       
-      @scala.inline
-      def setConfig(value: Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setFieldTitle(
+      inline def setFieldTitle(
         value: (/* fieldDef */ FieldDefBase[String, Bin], /* config */ Config[ExprRef | SignalRef]) => String
       ): Self = StObject.set(x, "fieldTitle", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFieldTitleUndefined: Self = StObject.set(x, "fieldTitle", js.undefined)
+      inline def setFieldTitleUndefined: Self = StObject.set(x, "fieldTitle", js.undefined)
       
-      @scala.inline
-      def setLogger(value: LoggerInterface): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: LoggerInterface): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     }
   }
 }

@@ -31,8 +31,7 @@ object mod extends Shortcut {
   }
   object Md5_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       array: () => js.Array[Double],
       arrayBuffer: () => ArrayBuffer,
       base64: () => String,
@@ -45,29 +44,21 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Md5_]
     }
     
-    @scala.inline
-    implicit class Md5_MutableBuilder[Self <: Md5_] (val x: Self) extends AnyVal {
+    extension [Self <: Md5_](x: Self) {
       
-      @scala.inline
-      def setArray(value: () => js.Array[Double]): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
+      inline def setArray(value: () => js.Array[Double]): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setArrayBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+      inline def setArrayBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBase64(value: () => String): Self = StObject.set(x, "base64", js.Any.fromFunction0(value))
+      inline def setBase64(value: () => String): Self = StObject.set(x, "base64", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
+      inline def setBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDigest(value: () => js.Array[Double]): Self = StObject.set(x, "digest", js.Any.fromFunction0(value))
+      inline def setDigest(value: () => js.Array[Double]): Self = StObject.set(x, "digest", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHex(value: () => String): Self = StObject.set(x, "hex", js.Any.fromFunction0(value))
+      inline def setHex(value: () => String): Self = StObject.set(x, "hex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: message => Md5_): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: message => Md5_): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   

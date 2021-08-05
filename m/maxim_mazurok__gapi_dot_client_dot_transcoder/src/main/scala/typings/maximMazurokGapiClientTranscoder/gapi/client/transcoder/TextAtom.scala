@@ -14,28 +14,21 @@ trait TextAtom extends StObject {
 }
 object TextAtom {
   
-  @scala.inline
-  def apply(): TextAtom = {
+  inline def apply(): TextAtom = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextAtom]
   }
   
-  @scala.inline
-  implicit class TextAtomMutableBuilder[Self <: TextAtom] (val x: Self) extends AnyVal {
+  extension [Self <: TextAtom](x: Self) {
     
-    @scala.inline
-    def setInputs(value: js.Array[TextInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[TextInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+    inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    @scala.inline
-    def setInputsVarargs(value: TextInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: TextInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

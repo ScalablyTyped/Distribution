@@ -14,16 +14,13 @@ trait SearchPageRankResult extends StObject {
 }
 object SearchPageRankResult {
   
-  @scala.inline
-  def apply(rank: NodeCollection => Double): SearchPageRankResult = {
+  inline def apply(rank: NodeCollection => Double): SearchPageRankResult = {
     val __obj = js.Dynamic.literal(rank = js.Any.fromFunction1(rank))
     __obj.asInstanceOf[SearchPageRankResult]
   }
   
-  @scala.inline
-  implicit class SearchPageRankResultMutableBuilder[Self <: SearchPageRankResult] (val x: Self) extends AnyVal {
+  extension [Self <: SearchPageRankResult](x: Self) {
     
-    @scala.inline
-    def setRank(value: NodeCollection => Double): Self = StObject.set(x, "rank", js.Any.fromFunction1(value))
+    inline def setRank(value: NodeCollection => Double): Self = StObject.set(x, "rank", js.Any.fromFunction1(value))
   }
 }

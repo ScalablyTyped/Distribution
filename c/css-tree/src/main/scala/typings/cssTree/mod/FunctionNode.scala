@@ -19,23 +19,18 @@ trait FunctionNode
 }
 object FunctionNode {
   
-  @scala.inline
-  def apply(children: List[CssNode], name: String): FunctionNode = {
+  inline def apply(children: List[CssNode], name: String): FunctionNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Function")
     __obj.asInstanceOf[FunctionNode]
   }
   
-  @scala.inline
-  implicit class FunctionNodeMutableBuilder[Self <: FunctionNode] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionNode](x: Self) {
     
-    @scala.inline
-    def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Function): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Function): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

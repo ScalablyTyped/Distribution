@@ -29,8 +29,7 @@ trait ASPxClientDropDownEdit
 }
 object ASPxClientDropDownEdit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     AdjustDropDownWindow: () => Unit,
     ButtonClick: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientButtonEditBase]],
@@ -94,16 +93,12 @@ object ASPxClientDropDownEdit {
     __obj.asInstanceOf[ASPxClientDropDownEdit]
   }
   
-  @scala.inline
-  implicit class ASPxClientDropDownEditMutableBuilder[Self <: ASPxClientDropDownEdit] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDropDownEdit](x: Self) {
     
-    @scala.inline
-    def setDropDownCommandButtonClick(value: ASPxClientEvent[ASPxClientDropDownCommandEventHandler[ASPxClientDropDownEdit]]): Self = StObject.set(x, "DropDownCommandButtonClick", value.asInstanceOf[js.Any])
+    inline def setDropDownCommandButtonClick(value: ASPxClientEvent[ASPxClientDropDownCommandEventHandler[ASPxClientDropDownEdit]]): Self = StObject.set(x, "DropDownCommandButtonClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetKeyValue(value: () => String): Self = StObject.set(x, "GetKeyValue", js.Any.fromFunction0(value))
+    inline def setGetKeyValue(value: () => String): Self = StObject.set(x, "GetKeyValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetKeyValue(value: String => Unit): Self = StObject.set(x, "SetKeyValue", js.Any.fromFunction1(value))
+    inline def setSetKeyValue(value: String => Unit): Self = StObject.set(x, "SetKeyValue", js.Any.fromFunction1(value))
   }
 }

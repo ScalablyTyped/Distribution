@@ -413,8 +413,7 @@ object interfacesMod {
   }
   object LoaderOptions {
     
-    @scala.inline
-    def apply(): LoaderOptions = {
+    inline def apply(): LoaderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoaderOptions]
     }
@@ -424,48 +423,35 @@ object interfacesMod {
         T
       ]
     
-    @scala.inline
-    implicit class LoaderOptionsMutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoaderOptions](x: Self) {
       
-      @scala.inline
-      def setImplementation(value: js.Any): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+      inline def setImplementation(value: js.Any): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
+      inline def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
       
-      @scala.inline
-      def setPrependData(value: String | Callback[String]): Self = StObject.set(x, "prependData", value.asInstanceOf[js.Any])
+      inline def setPrependData(value: String | Callback[String]): Self = StObject.set(x, "prependData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrependDataFunction1(
+      inline def setPrependDataFunction1(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.loader.LoaderContext */ /* loaderContext */ js.Any => String
       ): Self = StObject.set(x, "prependData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrependDataUndefined: Self = StObject.set(x, "prependData", js.undefined)
+      inline def setPrependDataUndefined: Self = StObject.set(x, "prependData", js.undefined)
       
-      @scala.inline
-      def setSassOptions(value: SassOptions | Callback[SassOptions]): Self = StObject.set(x, "sassOptions", value.asInstanceOf[js.Any])
+      inline def setSassOptions(value: SassOptions | Callback[SassOptions]): Self = StObject.set(x, "sassOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSassOptionsFunction1(
+      inline def setSassOptionsFunction1(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.loader.LoaderContext */ /* loaderContext */ js.Any => SassOptions
       ): Self = StObject.set(x, "sassOptions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSassOptionsUndefined: Self = StObject.set(x, "sassOptions", js.undefined)
+      inline def setSassOptionsUndefined: Self = StObject.set(x, "sassOptions", js.undefined)
       
-      @scala.inline
-      def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
       
-      @scala.inline
-      def setWebpackImporter(value: Boolean): Self = StObject.set(x, "webpackImporter", value.asInstanceOf[js.Any])
+      inline def setWebpackImporter(value: Boolean): Self = StObject.set(x, "webpackImporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebpackImporterUndefined: Self = StObject.set(x, "webpackImporter", js.undefined)
+      inline def setWebpackImporterUndefined: Self = StObject.set(x, "webpackImporter", js.undefined)
     }
     
     type SassOptions = Options | typings.sass.mod.Options

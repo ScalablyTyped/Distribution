@@ -25,8 +25,7 @@ trait Cond extends StObject {
 }
 object Cond {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     __type: String,
     block: typings.stylus.mod.Stylus.Nodes.Block,
     column: Double,
@@ -40,34 +39,24 @@ object Cond {
     __obj.asInstanceOf[Cond]
   }
   
-  @scala.inline
-  implicit class CondMutableBuilder[Self <: Cond] (val x: Self) extends AnyVal {
+  extension [Self <: Cond](x: Self) {
     
-    @scala.inline
-    def setBlock(value: typings.stylus.mod.Stylus.Nodes.Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: typings.stylus.mod.Stylus.Nodes.Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCond(value: Expression): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
+    inline def setCond(value: Expression): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElses(value: js.Array[Expression]): Self = StObject.set(x, "elses", value.asInstanceOf[js.Any])
+    inline def setElses(value: js.Array[Expression]): Self = StObject.set(x, "elses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElsesVarargs(value: Expression*): Self = StObject.set(x, "elses", js.Array(value :_*))
+    inline def setElsesVarargs(value: Expression*): Self = StObject.set(x, "elses", js.Array(value :_*))
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
+    inline def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegate(value: Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
+    inline def setNegate(value: Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
+    inline def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
   }
 }

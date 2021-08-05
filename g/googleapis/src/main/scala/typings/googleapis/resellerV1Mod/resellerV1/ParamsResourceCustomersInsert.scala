@@ -34,31 +34,23 @@ trait ParamsResourceCustomersInsert
 }
 object ParamsResourceCustomersInsert {
   
-  @scala.inline
-  def apply(): ParamsResourceCustomersInsert = {
+  inline def apply(): ParamsResourceCustomersInsert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCustomersInsert]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCustomersInsertMutableBuilder[Self <: ParamsResourceCustomersInsert] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCustomersInsert](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCustomerAuthToken(value: String): Self = StObject.set(x, "customerAuthToken", value.asInstanceOf[js.Any])
+    inline def setCustomerAuthToken(value: String): Self = StObject.set(x, "customerAuthToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerAuthTokenUndefined: Self = StObject.set(x, "customerAuthToken", js.undefined)
+    inline def setCustomerAuthTokenUndefined: Self = StObject.set(x, "customerAuthToken", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaCustomer): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaCustomer): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

@@ -30,25 +30,19 @@ trait CellPropertiesProtection extends StObject {
 }
 object CellPropertiesProtection {
   
-  @scala.inline
-  def apply(): CellPropertiesProtection = {
+  inline def apply(): CellPropertiesProtection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CellPropertiesProtection]
   }
   
-  @scala.inline
-  implicit class CellPropertiesProtectionMutableBuilder[Self <: CellPropertiesProtection] (val x: Self) extends AnyVal {
+  extension [Self <: CellPropertiesProtection](x: Self) {
     
-    @scala.inline
-    def setFormulaHidden(value: Boolean): Self = StObject.set(x, "formulaHidden", value.asInstanceOf[js.Any])
+    inline def setFormulaHidden(value: Boolean): Self = StObject.set(x, "formulaHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaHiddenUndefined: Self = StObject.set(x, "formulaHidden", js.undefined)
+    inline def setFormulaHiddenUndefined: Self = StObject.set(x, "formulaHidden", js.undefined)
     
-    @scala.inline
-    def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
+    inline def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
   }
 }

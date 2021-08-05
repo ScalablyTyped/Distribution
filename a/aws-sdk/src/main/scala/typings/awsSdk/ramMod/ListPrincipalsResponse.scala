@@ -18,28 +18,21 @@ trait ListPrincipalsResponse extends StObject {
 }
 object ListPrincipalsResponse {
   
-  @scala.inline
-  def apply(): ListPrincipalsResponse = {
+  inline def apply(): ListPrincipalsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPrincipalsResponse]
   }
   
-  @scala.inline
-  implicit class ListPrincipalsResponseMutableBuilder[Self <: ListPrincipalsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPrincipalsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPrincipals(value: PrincipalList): Self = StObject.set(x, "principals", value.asInstanceOf[js.Any])
+    inline def setPrincipals(value: PrincipalList): Self = StObject.set(x, "principals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalsUndefined: Self = StObject.set(x, "principals", js.undefined)
+    inline def setPrincipalsUndefined: Self = StObject.set(x, "principals", js.undefined)
     
-    @scala.inline
-    def setPrincipalsVarargs(value: Principal*): Self = StObject.set(x, "principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: Principal*): Self = StObject.set(x, "principals", js.Array(value :_*))
   }
 }

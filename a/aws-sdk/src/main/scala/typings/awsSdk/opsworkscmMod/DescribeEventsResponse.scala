@@ -18,28 +18,21 @@ trait DescribeEventsResponse extends StObject {
 }
 object DescribeEventsResponse {
   
-  @scala.inline
-  def apply(): DescribeEventsResponse = {
+  inline def apply(): DescribeEventsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEventsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeEventsResponseMutableBuilder[Self <: DescribeEventsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEventsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setServerEvents(value: ServerEvents): Self = StObject.set(x, "ServerEvents", value.asInstanceOf[js.Any])
+    inline def setServerEvents(value: ServerEvents): Self = StObject.set(x, "ServerEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerEventsUndefined: Self = StObject.set(x, "ServerEvents", js.undefined)
+    inline def setServerEventsUndefined: Self = StObject.set(x, "ServerEvents", js.undefined)
     
-    @scala.inline
-    def setServerEventsVarargs(value: ServerEvent*): Self = StObject.set(x, "ServerEvents", js.Array(value :_*))
+    inline def setServerEventsVarargs(value: ServerEvent*): Self = StObject.set(x, "ServerEvents", js.Array(value :_*))
   }
 }

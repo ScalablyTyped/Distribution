@@ -11,6 +11,5 @@ object deepMergeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(target: Record[String, js.Any], source: Record[String, js.Any]): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  inline def default(target: Record[String, js.Any], source: Record[String, js.Any]): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
 }

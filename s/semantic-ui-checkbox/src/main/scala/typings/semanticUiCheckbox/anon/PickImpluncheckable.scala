@@ -12,16 +12,13 @@ trait PickImpluncheckable extends StObject {
 }
 object PickImpluncheckable {
   
-  @scala.inline
-  def apply(uncheckable: auto | Boolean): PickImpluncheckable = {
+  inline def apply(uncheckable: auto | Boolean): PickImpluncheckable = {
     val __obj = js.Dynamic.literal(uncheckable = uncheckable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpluncheckable]
   }
   
-  @scala.inline
-  implicit class PickImpluncheckableMutableBuilder[Self <: PickImpluncheckable] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpluncheckable](x: Self) {
     
-    @scala.inline
-    def setUncheckable(value: auto | Boolean): Self = StObject.set(x, "uncheckable", value.asInstanceOf[js.Any])
+    inline def setUncheckable(value: auto | Boolean): Self = StObject.set(x, "uncheckable", value.asInstanceOf[js.Any])
   }
 }

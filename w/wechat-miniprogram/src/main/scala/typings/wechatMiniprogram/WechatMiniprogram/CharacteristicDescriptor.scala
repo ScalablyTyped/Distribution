@@ -19,28 +19,21 @@ trait CharacteristicDescriptor extends StObject {
 }
 object CharacteristicDescriptor {
   
-  @scala.inline
-  def apply(uuid: String): CharacteristicDescriptor = {
+  inline def apply(uuid: String): CharacteristicDescriptor = {
     val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[CharacteristicDescriptor]
   }
   
-  @scala.inline
-  implicit class CharacteristicDescriptorMutableBuilder[Self <: CharacteristicDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: CharacteristicDescriptor](x: Self) {
     
-    @scala.inline
-    def setPermission(value: DescriptorPermission): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: DescriptorPermission): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

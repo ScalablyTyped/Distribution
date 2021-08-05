@@ -13,16 +13,13 @@ trait IRouterConfig extends StObject {
 }
 object IRouterConfig {
   
-  @scala.inline
-  def apply(server: server): IRouterConfig = {
+  inline def apply(server: server): IRouterConfig = {
     val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRouterConfig]
   }
   
-  @scala.inline
-  implicit class IRouterConfigMutableBuilder[Self <: IRouterConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IRouterConfig](x: Self) {
     
-    @scala.inline
-    def setServer(value: server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,7 @@ trait GitResolutionRename1to2
 }
 object GitResolutionRename1to2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: GitResolutionRename1to2Action,
     mergeType: GitResolutionMergeType,
     userMergedBlob: GitBlobRef,
@@ -23,10 +22,8 @@ object GitResolutionRename1to2 {
     __obj.asInstanceOf[GitResolutionRename1to2]
   }
   
-  @scala.inline
-  implicit class GitResolutionRename1to2MutableBuilder[Self <: GitResolutionRename1to2] (val x: Self) extends AnyVal {
+  extension [Self <: GitResolutionRename1to2](x: Self) {
     
-    @scala.inline
-    def setAction(value: GitResolutionRename1to2Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: GitResolutionRename1to2Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }
 }

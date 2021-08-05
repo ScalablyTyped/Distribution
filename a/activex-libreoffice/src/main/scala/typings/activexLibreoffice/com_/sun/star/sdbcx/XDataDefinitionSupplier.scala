@@ -33,8 +33,7 @@ trait XDataDefinitionSupplier
 }
 object XDataDefinitionSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getDataDefinitionByConnection: XConnection => XTablesSupplier,
     getDataDefinitionByURL: (String, SeqEquiv[PropertyValue]) => XTablesSupplier,
@@ -45,13 +44,10 @@ object XDataDefinitionSupplier {
     __obj.asInstanceOf[XDataDefinitionSupplier]
   }
   
-  @scala.inline
-  implicit class XDataDefinitionSupplierMutableBuilder[Self <: XDataDefinitionSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XDataDefinitionSupplier](x: Self) {
     
-    @scala.inline
-    def setGetDataDefinitionByConnection(value: XConnection => XTablesSupplier): Self = StObject.set(x, "getDataDefinitionByConnection", js.Any.fromFunction1(value))
+    inline def setGetDataDefinitionByConnection(value: XConnection => XTablesSupplier): Self = StObject.set(x, "getDataDefinitionByConnection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDataDefinitionByURL(value: (String, SeqEquiv[PropertyValue]) => XTablesSupplier): Self = StObject.set(x, "getDataDefinitionByURL", js.Any.fromFunction2(value))
+    inline def setGetDataDefinitionByURL(value: (String, SeqEquiv[PropertyValue]) => XTablesSupplier): Self = StObject.set(x, "getDataDefinitionByURL", js.Any.fromFunction2(value))
   }
 }

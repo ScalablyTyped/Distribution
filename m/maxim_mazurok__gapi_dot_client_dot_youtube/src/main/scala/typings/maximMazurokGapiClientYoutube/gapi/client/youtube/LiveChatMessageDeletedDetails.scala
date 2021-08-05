@@ -10,19 +10,15 @@ trait LiveChatMessageDeletedDetails extends StObject {
 }
 object LiveChatMessageDeletedDetails {
   
-  @scala.inline
-  def apply(): LiveChatMessageDeletedDetails = {
+  inline def apply(): LiveChatMessageDeletedDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiveChatMessageDeletedDetails]
   }
   
-  @scala.inline
-  implicit class LiveChatMessageDeletedDetailsMutableBuilder[Self <: LiveChatMessageDeletedDetails] (val x: Self) extends AnyVal {
+  extension [Self <: LiveChatMessageDeletedDetails](x: Self) {
     
-    @scala.inline
-    def setDeletedMessageId(value: String): Self = StObject.set(x, "deletedMessageId", value.asInstanceOf[js.Any])
+    inline def setDeletedMessageId(value: String): Self = StObject.set(x, "deletedMessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedMessageIdUndefined: Self = StObject.set(x, "deletedMessageId", js.undefined)
+    inline def setDeletedMessageIdUndefined: Self = StObject.set(x, "deletedMessageId", js.undefined)
   }
 }

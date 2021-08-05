@@ -35,49 +35,35 @@ trait RevisionSpec extends StObject {
 }
 object RevisionSpec {
   
-  @scala.inline
-  def apply(): RevisionSpec = {
+  inline def apply(): RevisionSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevisionSpec]
   }
   
-  @scala.inline
-  implicit class RevisionSpecMutableBuilder[Self <: RevisionSpec] (val x: Self) extends AnyVal {
+  extension [Self <: RevisionSpec](x: Self) {
     
-    @scala.inline
-    def setContainerConcurrency(value: Double): Self = StObject.set(x, "containerConcurrency", value.asInstanceOf[js.Any])
+    inline def setContainerConcurrency(value: Double): Self = StObject.set(x, "containerConcurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerConcurrencyUndefined: Self = StObject.set(x, "containerConcurrency", js.undefined)
+    inline def setContainerConcurrencyUndefined: Self = StObject.set(x, "containerConcurrency", js.undefined)
     
-    @scala.inline
-    def setContainers(value: js.Array[Container]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
+    inline def setContainers(value: js.Array[Container]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
+    inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
     
-    @scala.inline
-    def setContainersVarargs(value: Container*): Self = StObject.set(x, "containers", js.Array(value :_*))
+    inline def setContainersVarargs(value: Container*): Self = StObject.set(x, "containers", js.Array(value :_*))
     
-    @scala.inline
-    def setServiceAccountName(value: String): Self = StObject.set(x, "serviceAccountName", value.asInstanceOf[js.Any])
+    inline def setServiceAccountName(value: String): Self = StObject.set(x, "serviceAccountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountNameUndefined: Self = StObject.set(x, "serviceAccountName", js.undefined)
+    inline def setServiceAccountNameUndefined: Self = StObject.set(x, "serviceAccountName", js.undefined)
     
-    @scala.inline
-    def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
+    inline def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
     
-    @scala.inline
-    def setVolumes(value: js.Array[Volume]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
+    inline def setVolumes(value: js.Array[Volume]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
+    inline def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
     
-    @scala.inline
-    def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "volumes", js.Array(value :_*))
+    inline def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "volumes", js.Array(value :_*))
   }
 }

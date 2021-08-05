@@ -101,6 +101,5 @@ object WithStatementSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(condition: IExpressionSyntax, statement: IStatementSyntax): typings.typescriptServices.TypeScript.WithStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(condition.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.WithStatementSyntax]
+  inline def create1(condition: IExpressionSyntax, statement: IStatementSyntax): typings.typescriptServices.TypeScript.WithStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(condition.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.WithStatementSyntax]
 }

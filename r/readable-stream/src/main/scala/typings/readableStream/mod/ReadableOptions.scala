@@ -22,17 +22,14 @@ trait ReadableOptions
 }
 object ReadableOptions {
   
-  @scala.inline
-  def apply(): ReadableOptions = {
+  inline def apply(): ReadableOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadableOptions]
   }
   
-  @scala.inline
-  implicit class ReadableOptionsMutableBuilder[Self <: ReadableOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReadableOptions](x: Self) {
     
-    @scala.inline
-    def setDestroy(
+    inline def setDestroy(
       value: js.ThisFunction2[
           /* this */ _Readable, 
           /* error */ Error | Null, 
@@ -41,13 +38,10 @@ object ReadableOptions {
         ]
     ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setRead(value: js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
   }
 }

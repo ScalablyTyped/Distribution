@@ -40,68 +40,48 @@ object numberInfoMod {
   }
   object NumberInfoProps {
     
-    @scala.inline
-    def apply(): NumberInfoProps = {
+    inline def apply(): NumberInfoProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NumberInfoProps]
     }
     
-    @scala.inline
-    implicit class NumberInfoPropsMutableBuilder[Self <: NumberInfoProps] (val x: Self) extends AnyVal {
+    extension [Self <: NumberInfoProps](x: Self) {
       
-      @scala.inline
-      def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+      inline def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
+      inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
       
-      @scala.inline
-      def setStatus(value: up | down): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: up | down): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSubTitle(value: ReactNode | String): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
+      inline def setSubTitle(value: ReactNode | String): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubTitleUndefined: Self = StObject.set(x, "subTitle", js.undefined)
+      inline def setSubTitleUndefined: Self = StObject.set(x, "subTitle", js.undefined)
       
-      @scala.inline
-      def setSubTotal(value: Double): Self = StObject.set(x, "subTotal", value.asInstanceOf[js.Any])
+      inline def setSubTotal(value: Double): Self = StObject.set(x, "subTotal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubTotalUndefined: Self = StObject.set(x, "subTotal", js.undefined)
+      inline def setSubTotalUndefined: Self = StObject.set(x, "subTotal", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode | String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode | String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTotal(value: ReactNode | String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: ReactNode | String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     }
   }
 }

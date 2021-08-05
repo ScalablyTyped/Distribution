@@ -18,43 +18,31 @@ trait MUIDataTableSearch extends StObject {
 }
 object MUIDataTableSearch {
   
-  @scala.inline
-  def apply(): MUIDataTableSearch = {
+  inline def apply(): MUIDataTableSearch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MUIDataTableSearch]
   }
   
-  @scala.inline
-  implicit class MUIDataTableSearchMutableBuilder[Self <: MUIDataTableSearch] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableSearch](x: Self) {
     
-    @scala.inline
-    def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setOnHide(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
+    inline def setOnHide(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+    inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    @scala.inline
-    def setOnSearch(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
+    inline def setOnSearch(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
+    inline def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
     
-    @scala.inline
-    def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
+    inline def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
+    inline def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
   }
 }

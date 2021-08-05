@@ -20,25 +20,19 @@ trait PlotSunburstLevelsColorVariationOptions extends StObject {
 }
 object PlotSunburstLevelsColorVariationOptions {
   
-  @scala.inline
-  def apply(): PlotSunburstLevelsColorVariationOptions = {
+  inline def apply(): PlotSunburstLevelsColorVariationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotSunburstLevelsColorVariationOptions]
   }
   
-  @scala.inline
-  implicit class PlotSunburstLevelsColorVariationOptionsMutableBuilder[Self <: PlotSunburstLevelsColorVariationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotSunburstLevelsColorVariationOptions](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

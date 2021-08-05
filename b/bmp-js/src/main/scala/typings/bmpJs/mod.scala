@@ -67,7 +67,7 @@ object mod {
     
     var planes: Double = js.native
     
-    var pos: Double = js.native
+    /* private */ var pos: Double = js.native
     
     var rawSize: Double = js.native
     
@@ -101,23 +101,18 @@ object mod {
   }
   object ImageData {
     
-    @scala.inline
-    def apply(data: Buffer, height: Double, width: Double): ImageData = {
+    inline def apply(data: Buffer, height: Double, width: Double): ImageData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageData]
     }
     
-    @scala.inline
-    implicit class ImageDataMutableBuilder[Self <: ImageData] (val x: Self) extends AnyVal {
+    extension [Self <: ImageData](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

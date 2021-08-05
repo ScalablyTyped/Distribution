@@ -22,26 +22,20 @@ object anon {
   }
   object Hasher {
     
-    @scala.inline
-    def apply(iterations: Double, keySize: Double): Hasher = {
+    inline def apply(iterations: Double, keySize: Double): Hasher = {
       val __obj = js.Dynamic.literal(iterations = iterations.asInstanceOf[js.Any], keySize = keySize.asInstanceOf[js.Any])
       __obj.asInstanceOf[Hasher]
     }
     
-    @scala.inline
-    implicit class HasherMutableBuilder[Self <: Hasher] (val x: Self) extends AnyVal {
+    extension [Self <: Hasher](x: Self) {
       
-      @scala.inline
-      def setHasher(value: HasherStatic): Self = StObject.set(x, "hasher", value.asInstanceOf[js.Any])
+      inline def setHasher(value: HasherStatic): Self = StObject.set(x, "hasher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasherUndefined: Self = StObject.set(x, "hasher", js.undefined)
+      inline def setHasherUndefined: Self = StObject.set(x, "hasher", js.undefined)
       
-      @scala.inline
-      def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySize(value: Double): Self = StObject.set(x, "keySize", value.asInstanceOf[js.Any])
+      inline def setKeySize(value: Double): Self = StObject.set(x, "keySize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,74 +65,52 @@ object anon {
   }
   object PartialCipherParams {
     
-    @scala.inline
-    def apply(): PartialCipherParams = {
+    inline def apply(): PartialCipherParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialCipherParams]
     }
     
-    @scala.inline
-    implicit class PartialCipherParamsMutableBuilder[Self <: PartialCipherParams] (val x: Self) extends AnyVal {
+    extension [Self <: PartialCipherParams](x: Self) {
       
-      @scala.inline
-      def setAlgorithm(value: CipherStatic): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: CipherStatic): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+      inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
       
-      @scala.inline
-      def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
+      inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockSizeUndefined: Self = StObject.set(x, "blockSize", js.undefined)
+      inline def setBlockSizeUndefined: Self = StObject.set(x, "blockSize", js.undefined)
       
-      @scala.inline
-      def setCiphertext(value: WordArray): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
+      inline def setCiphertext(value: WordArray): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCiphertextUndefined: Self = StObject.set(x, "ciphertext", js.undefined)
+      inline def setCiphertextUndefined: Self = StObject.set(x, "ciphertext", js.undefined)
       
-      @scala.inline
-      def setFormatter(value: Format_): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+      inline def setFormatter(value: Format_): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setIv(value: WordArray): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+      inline def setIv(value: WordArray): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+      inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
       
-      @scala.inline
-      def setKey(value: WordArray): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: WordArray): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setMode(value: Mode_): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Mode_): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setSalt(value: WordArray): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: WordArray): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
+      inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
       
-      @scala.inline
-      def setToString_(value: /* formatter */ js.UndefOr[Format_] => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
+      inline def setToString_(value: /* formatter */ js.UndefOr[Format_] => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
+      inline def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
     }
   }
 }

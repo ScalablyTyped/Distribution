@@ -56,20 +56,15 @@ object toastMod {
     @js.native
     val ^ : KIND = js.native
     
-    @scala.inline
-    implicit class KINDMutableBuilder[Self <: KIND] (val x: Self) extends AnyVal {
+    extension [Self <: KIND](x: Self) {
       
-      @scala.inline
-      def setInfo(value: info): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: info): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNegative(value: negative): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+      inline def setNegative(value: negative): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositive(value: positive): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
+      inline def setPositive(value: positive): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarning(value: warning): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: warning): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,26 +88,19 @@ object toastMod {
     @js.native
     val ^ : PLACEMENT = js.native
     
-    @scala.inline
-    implicit class PLACEMENTMutableBuilder[Self <: PLACEMENT] (val x: Self) extends AnyVal {
+    extension [Self <: PLACEMENT](x: Self) {
       
-      @scala.inline
-      def setBottom(value: bottom): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: bottom): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomLeft(value: bottomLeft): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
+      inline def setBottomLeft(value: bottomLeft): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomRight(value: bottomRight): Self = StObject.set(x, "bottomRight", value.asInstanceOf[js.Any])
+      inline def setBottomRight(value: bottomRight): Self = StObject.set(x, "bottomRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: top): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: top): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopLeft(value: topLeft): Self = StObject.set(x, "topLeft", value.asInstanceOf[js.Any])
+      inline def setTopLeft(value: topLeft): Self = StObject.set(x, "topLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopRight(value: topRight): Self = StObject.set(x, "topRight", value.asInstanceOf[js.Any])
+      inline def setTopRight(value: topRight): Self = StObject.set(x, "topRight", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,14 +120,11 @@ object toastMod {
     @js.native
     val ^ : TYPE = js.native
     
-    @scala.inline
-    implicit class TYPEMutableBuilder[Self <: TYPE] (val x: Self) extends AnyVal {
+    extension [Self <: TYPE](x: Self) {
       
-      @scala.inline
-      def setInline(value: `inline`): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: `inline`): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToast(value: toast): Self = StObject.set(x, "toast", value.asInstanceOf[js.Any])
+      inline def setToast(value: toast): Self = StObject.set(x, "toast", value.asInstanceOf[js.Any])
     }
   }
   
@@ -232,8 +217,7 @@ object toastMod {
   }
   object IToaster {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear: Key => Unit,
       getRef: () => Ref[Instantiable0[ToasterContainer]],
       info: (ReactNode, ReadonlyToastProps) => Key,
@@ -247,32 +231,23 @@ object toastMod {
       __obj.asInstanceOf[IToaster]
     }
     
-    @scala.inline
-    implicit class IToasterMutableBuilder[Self <: IToaster] (val x: Self) extends AnyVal {
+    extension [Self <: IToaster](x: Self) {
       
-      @scala.inline
-      def setClear(value: Key => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+      inline def setClear(value: Key => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRef(value: () => Ref[Instantiable0[ToasterContainer]]): Self = StObject.set(x, "getRef", js.Any.fromFunction0(value))
+      inline def setGetRef(value: () => Ref[Instantiable0[ToasterContainer]]): Self = StObject.set(x, "getRef", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInfo(value: (ReactNode, ReadonlyToastProps) => Key): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
+      inline def setInfo(value: (ReactNode, ReadonlyToastProps) => Key): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNegative(value: (ReactNode, ReadonlyToastProps) => Key): Self = StObject.set(x, "negative", js.Any.fromFunction2(value))
+      inline def setNegative(value: (ReactNode, ReadonlyToastProps) => Key): Self = StObject.set(x, "negative", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPositive(value: (ReactNode, ReadonlyToastProps) => Key): Self = StObject.set(x, "positive", js.Any.fromFunction2(value))
+      inline def setPositive(value: (ReactNode, ReadonlyToastProps) => Key): Self = StObject.set(x, "positive", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShow(value: (ReactNode, ReadonlyToastProps) => Key): Self = StObject.set(x, "show", js.Any.fromFunction2(value))
+      inline def setShow(value: (ReactNode, ReadonlyToastProps) => Key): Self = StObject.set(x, "show", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdate(value: (Key, ReadonlyToastProps) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      inline def setUpdate(value: (Key, ReadonlyToastProps) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWarning(value: (ReactNode, ReadonlyToastProps) => Key): Self = StObject.set(x, "warning", js.Any.fromFunction2(value))
+      inline def setWarning(value: (ReactNode, ReadonlyToastProps) => Key): Self = StObject.set(x, "warning", js.Any.fromFunction2(value))
     }
   }
   
@@ -295,44 +270,32 @@ object toastMod {
   }
   object SharedStylePropsArg {
     
-    @scala.inline
-    def apply(): SharedStylePropsArg = {
+    inline def apply(): SharedStylePropsArg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SharedStylePropsArg]
     }
     
-    @scala.inline
-    implicit class SharedStylePropsArgMutableBuilder[Self <: SharedStylePropsArg] (val x: Self) extends AnyVal {
+    extension [Self <: SharedStylePropsArg](x: Self) {
       
-      @scala.inline
-      def set$closeable(value: Boolean): Self = StObject.set(x, "$closeable", value.asInstanceOf[js.Any])
+      inline def set$closeable(value: Boolean): Self = StObject.set(x, "$closeable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$closeableUndefined: Self = StObject.set(x, "$closeable", js.undefined)
+      inline def set$closeableUndefined: Self = StObject.set(x, "$closeable", js.undefined)
       
-      @scala.inline
-      def set$isRendered(value: Boolean): Self = StObject.set(x, "$isRendered", value.asInstanceOf[js.Any])
+      inline def set$isRendered(value: Boolean): Self = StObject.set(x, "$isRendered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isRenderedUndefined: Self = StObject.set(x, "$isRendered", js.undefined)
+      inline def set$isRenderedUndefined: Self = StObject.set(x, "$isRendered", js.undefined)
       
-      @scala.inline
-      def set$isVisible(value: Boolean): Self = StObject.set(x, "$isVisible", value.asInstanceOf[js.Any])
+      inline def set$isVisible(value: Boolean): Self = StObject.set(x, "$isVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isVisibleUndefined: Self = StObject.set(x, "$isVisible", js.undefined)
+      inline def set$isVisibleUndefined: Self = StObject.set(x, "$isVisible", js.undefined)
       
-      @scala.inline
-      def set$kind(value: info | positive | warning | negative): Self = StObject.set(x, "$kind", value.asInstanceOf[js.Any])
+      inline def set$kind(value: info | positive | warning | negative): Self = StObject.set(x, "$kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$kindUndefined: Self = StObject.set(x, "$kind", js.undefined)
+      inline def set$kindUndefined: Self = StObject.set(x, "$kind", js.undefined)
       
-      @scala.inline
-      def set$type(value: `inline` | toast): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
+      inline def set$type(value: `inline` | toast): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$typeUndefined: Self = StObject.set(x, "$type", js.undefined)
+      inline def set$typeUndefined: Self = StObject.set(x, "$type", js.undefined)
     }
   }
   
@@ -352,38 +315,30 @@ object toastMod {
   }
   object ToastOverrides {
     
-    @scala.inline
-    def apply(): ToastOverrides = {
+    inline def apply(): ToastOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToastOverrides]
     }
     
-    @scala.inline
-    implicit class ToastOverridesMutableBuilder[Self <: ToastOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: ToastOverrides](x: Self) {
       
-      @scala.inline
-      def setBody(
+      inline def setBody(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
       ): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
       
-      @scala.inline
-      def setCloseIcon(
+      inline def setCloseIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
       ): Self = StObject.set(x, "CloseIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseIconUndefined: Self = StObject.set(x, "CloseIcon", js.undefined)
+      inline def setCloseIconUndefined: Self = StObject.set(x, "CloseIcon", js.undefined)
       
-      @scala.inline
-      def setInnerContainer(
+      inline def setInnerContainer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
       ): Self = StObject.set(x, "InnerContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerContainerUndefined: Self = StObject.set(x, "InnerContainer", js.undefined)
+      inline def setInnerContainerUndefined: Self = StObject.set(x, "InnerContainer", js.undefined)
     }
   }
   
@@ -395,20 +350,16 @@ object toastMod {
   }
   object ToastPrivateState {
     
-    @scala.inline
-    def apply(isRendered: Boolean, isVisible: Boolean): ToastPrivateState = {
+    inline def apply(isRendered: Boolean, isVisible: Boolean): ToastPrivateState = {
       val __obj = js.Dynamic.literal(isRendered = isRendered.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToastPrivateState]
     }
     
-    @scala.inline
-    implicit class ToastPrivateStateMutableBuilder[Self <: ToastPrivateState] (val x: Self) extends AnyVal {
+    extension [Self <: ToastPrivateState](x: Self) {
       
-      @scala.inline
-      def setIsRendered(value: Boolean): Self = StObject.set(x, "isRendered", value.asInstanceOf[js.Any])
+      inline def setIsRendered(value: Boolean): Self = StObject.set(x, "isRendered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+      inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     }
   }
   
@@ -444,101 +395,70 @@ object toastMod {
   }
   object ToastProps {
     
-    @scala.inline
-    def apply(): ToastProps = {
+    inline def apply(): ToastProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToastProps]
     }
     
-    @scala.inline
-    implicit class ToastPropsMutableBuilder[Self <: ToastProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToastProps](x: Self) {
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setAutoHideDuration(value: Double): Self = StObject.set(x, "autoHideDuration", value.asInstanceOf[js.Any])
+      inline def setAutoHideDuration(value: Double): Self = StObject.set(x, "autoHideDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoHideDurationUndefined: Self = StObject.set(x, "autoHideDuration", js.undefined)
+      inline def setAutoHideDurationUndefined: Self = StObject.set(x, "autoHideDuration", js.undefined)
       
-      @scala.inline
-      def setChildren(value: (js.Function1[/* args */ Dismiss, ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: (js.Function1[/* args */ Dismiss, ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction1(value: /* args */ Dismiss => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* args */ Dismiss => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setCloseable(value: Boolean): Self = StObject.set(x, "closeable", value.asInstanceOf[js.Any])
+      inline def setCloseable(value: Boolean): Self = StObject.set(x, "closeable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseableUndefined: Self = StObject.set(x, "closeable", js.undefined)
+      inline def setCloseableUndefined: Self = StObject.set(x, "closeable", js.undefined)
       
-      @scala.inline
-      def `setData-baseweb`(value: String): Self = StObject.set(x, "data-baseweb", value.asInstanceOf[js.Any])
+      inline def `setData-baseweb`(value: String): Self = StObject.set(x, "data-baseweb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setData-basewebUndefined`: Self = StObject.set(x, "data-baseweb", js.undefined)
+      inline def `setData-basewebUndefined`: Self = StObject.set(x, "data-baseweb", js.undefined)
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setKind(value: info | positive | warning | negative): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: info | positive | warning | negative): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setNotificationType(value: `inline` | toast): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
+      inline def setNotificationType(value: `inline` | toast): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationTypeUndefined: Self = StObject.set(x, "notificationType", js.undefined)
+      inline def setNotificationTypeUndefined: Self = StObject.set(x, "notificationType", js.undefined)
       
-      @scala.inline
-      def setOnBlur(value: /* e */ Event => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: /* e */ Event => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: () => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: /* e */ Event => js.Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: /* e */ Event => js.Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnMouseEnter(value: /* e */ Event => js.Any): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: /* e */ Event => js.Any): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnMouseLeave(value: /* e */ Event => js.Any): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: /* e */ Event => js.Any): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: ToastOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: ToastOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     }
   }
   
@@ -550,20 +470,16 @@ object toastMod {
   }
   object ToasterContainerState {
     
-    @scala.inline
-    def apply(isMounted: Boolean, toasts: ReadonlyToastProps): ToasterContainerState = {
+    inline def apply(isMounted: Boolean, toasts: ReadonlyToastProps): ToasterContainerState = {
       val __obj = js.Dynamic.literal(isMounted = isMounted.asInstanceOf[js.Any], toasts = toasts.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToasterContainerState]
     }
     
-    @scala.inline
-    implicit class ToasterContainerStateMutableBuilder[Self <: ToasterContainerState] (val x: Self) extends AnyVal {
+    extension [Self <: ToasterContainerState](x: Self) {
       
-      @scala.inline
-      def setIsMounted(value: Boolean): Self = StObject.set(x, "isMounted", value.asInstanceOf[js.Any])
+      inline def setIsMounted(value: Boolean): Self = StObject.set(x, "isMounted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToasts(value: ReadonlyToastProps): Self = StObject.set(x, "toasts", value.asInstanceOf[js.Any])
+      inline def setToasts(value: ReadonlyToastProps): Self = StObject.set(x, "toasts", value.asInstanceOf[js.Any])
     }
   }
   
@@ -583,38 +499,30 @@ object toastMod {
   }
   object ToasterOverrides {
     
-    @scala.inline
-    def apply(): ToasterOverrides = {
+    inline def apply(): ToasterOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToasterOverrides]
     }
     
-    @scala.inline
-    implicit class ToasterOverridesMutableBuilder[Self <: ToasterOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: ToasterOverrides](x: Self) {
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<ToasterSharedStylePropsArg> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      @scala.inline
-      def setToastBody(
+      inline def setToastBody(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
       ): Self = StObject.set(x, "ToastBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToastBodyUndefined: Self = StObject.set(x, "ToastBody", js.undefined)
+      inline def setToastBodyUndefined: Self = StObject.set(x, "ToastBody", js.undefined)
       
-      @scala.inline
-      def setToastCloseIcon(
+      inline def setToastCloseIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
       ): Self = StObject.set(x, "ToastCloseIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToastCloseIconUndefined: Self = StObject.set(x, "ToastCloseIcon", js.undefined)
+      inline def setToastCloseIconUndefined: Self = StObject.set(x, "ToastCloseIcon", js.undefined)
     }
   }
   
@@ -630,38 +538,28 @@ object toastMod {
   }
   object ToasterProps {
     
-    @scala.inline
-    def apply(): ToasterProps = {
+    inline def apply(): ToasterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToasterProps]
     }
     
-    @scala.inline
-    implicit class ToasterPropsMutableBuilder[Self <: ToasterProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToasterProps](x: Self) {
       
-      @scala.inline
-      def setAutoHideDuration(value: Double): Self = StObject.set(x, "autoHideDuration", value.asInstanceOf[js.Any])
+      inline def setAutoHideDuration(value: Double): Self = StObject.set(x, "autoHideDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoHideDurationUndefined: Self = StObject.set(x, "autoHideDuration", js.undefined)
+      inline def setAutoHideDurationUndefined: Self = StObject.set(x, "autoHideDuration", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: ToasterOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: ToasterOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: topLeft | topRight | bottomLeft | bottomRight | bottom | top): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: topLeft | topRight | bottomLeft | bottomRight | bottom | top): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setUsePortal(value: Boolean): Self = StObject.set(x, "usePortal", value.asInstanceOf[js.Any])
+      inline def setUsePortal(value: Boolean): Self = StObject.set(x, "usePortal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
+      inline def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
     }
   }
   
@@ -672,20 +570,16 @@ object toastMod {
   }
   object ToasterSharedStylePropsArg {
     
-    @scala.inline
-    def apply(): ToasterSharedStylePropsArg = {
+    inline def apply(): ToasterSharedStylePropsArg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToasterSharedStylePropsArg]
     }
     
-    @scala.inline
-    implicit class ToasterSharedStylePropsArgMutableBuilder[Self <: ToasterSharedStylePropsArg] (val x: Self) extends AnyVal {
+    extension [Self <: ToasterSharedStylePropsArg](x: Self) {
       
-      @scala.inline
-      def set$placement(value: topLeft | topRight | bottomLeft | bottomRight | bottom | top): Self = StObject.set(x, "$placement", value.asInstanceOf[js.Any])
+      inline def set$placement(value: topLeft | topRight | bottomLeft | bottomRight | bottom | top): Self = StObject.set(x, "$placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$placementUndefined: Self = StObject.set(x, "$placement", js.undefined)
+      inline def set$placementUndefined: Self = StObject.set(x, "$placement", js.undefined)
     }
   }
 }

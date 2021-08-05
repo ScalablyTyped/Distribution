@@ -13,16 +13,13 @@ trait DescribeFleetMetadataRequest extends StObject {
 }
 object DescribeFleetMetadataRequest {
   
-  @scala.inline
-  def apply(FleetArn: FleetArn): DescribeFleetMetadataRequest = {
+  inline def apply(FleetArn: FleetArn): DescribeFleetMetadataRequest = {
     val __obj = js.Dynamic.literal(FleetArn = FleetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFleetMetadataRequest]
   }
   
-  @scala.inline
-  implicit class DescribeFleetMetadataRequestMutableBuilder[Self <: DescribeFleetMetadataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFleetMetadataRequest](x: Self) {
     
-    @scala.inline
-    def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
+    inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
   }
 }

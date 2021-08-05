@@ -19,8 +19,7 @@ object outputComponentsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Component(options: ComponentOptions): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Component")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def Component(options: ComponentOptions): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Component")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
   
   @JSImport("typedoc/dist/lib/output/components", "ContextAwareRendererComponent")
   @js.native
@@ -30,17 +29,17 @@ object outputComponentsMod {
     
     def getRelativeUrl(absolute: String): String = js.native
     
-    var location: js.Any = js.native
+    /* private */ var location: js.Any = js.native
     
     /* protected */ def onBeginPage(page: PageEvent): Unit = js.native
     
     /* protected */ def onBeginRenderer(event: RendererEvent): Unit = js.native
     
-    var project: js.UndefOr[ProjectReflection] = js.native
+    /* protected */ var project: js.UndefOr[ProjectReflection] = js.native
     
-    var reflection: js.UndefOr[DeclarationReflection] = js.native
+    /* protected */ var reflection: js.UndefOr[DeclarationReflection] = js.native
     
-    var urlPrefix: RegExp = js.native
+    /* protected */ var urlPrefix: RegExp = js.native
   }
   
   @JSImport("typedoc/dist/lib/output/components", "RendererComponent")

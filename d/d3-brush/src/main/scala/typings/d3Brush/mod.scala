@@ -21,17 +21,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def brush[Datum](): BrushBehavior[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("brush")().asInstanceOf[BrushBehavior[Datum]]
+  inline def brush[Datum](): BrushBehavior[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("brush")().asInstanceOf[BrushBehavior[Datum]]
   
-  @scala.inline
-  def brushSelection(node: SVGGElement): BrushSelection_ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("brushSelection")(node.asInstanceOf[js.Any]).asInstanceOf[BrushSelection_ | Null]
+  inline def brushSelection(node: SVGGElement): BrushSelection_ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("brushSelection")(node.asInstanceOf[js.Any]).asInstanceOf[BrushSelection_ | Null]
   
-  @scala.inline
-  def brushX[Datum](): BrushBehavior[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("brushX")().asInstanceOf[BrushBehavior[Datum]]
+  inline def brushX[Datum](): BrushBehavior[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("brushX")().asInstanceOf[BrushBehavior[Datum]]
   
-  @scala.inline
-  def brushY[Datum](): BrushBehavior[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("brushY")().asInstanceOf[BrushBehavior[Datum]]
+  inline def brushY[Datum](): BrushBehavior[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("brushY")().asInstanceOf[BrushBehavior[Datum]]
   
   @js.native
   trait BrushBehavior[Datum] extends StObject {
@@ -307,8 +303,7 @@ object mod {
   }
   object D3BrushEvent {
     
-    @scala.inline
-    def apply[Datum](
+    inline def apply[Datum](
       mode: drag | space | handle | center,
       sourceEvent: js.Any,
       target: BrushBehavior[Datum],
@@ -319,26 +314,19 @@ object mod {
       __obj.asInstanceOf[D3BrushEvent[Datum]]
     }
     
-    @scala.inline
-    implicit class D3BrushEventMutableBuilder[Self <: D3BrushEvent[?], Datum] (val x: Self & D3BrushEvent[Datum]) extends AnyVal {
+    extension [Self <: D3BrushEvent[?], Datum](x: Self & D3BrushEvent[Datum]) {
       
-      @scala.inline
-      def setMode(value: drag | space | handle | center): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: drag | space | handle | center): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelection(value: BrushSelection_): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: BrushSelection_): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionNull: Self = StObject.set(x, "selection", null)
+      inline def setSelectionNull: Self = StObject.set(x, "selection", null)
       
-      @scala.inline
-      def setSourceEvent(value: js.Any): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
+      inline def setSourceEvent(value: js.Any): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: BrushBehavior[Datum]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: BrushBehavior[Datum]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: start | brush | end | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: start | brush | end | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

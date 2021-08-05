@@ -19,8 +19,7 @@ trait GeoJSONEvent
 }
 object GeoJSONEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     geometryType: String,
     id: String,
     layer: Layer,
@@ -35,19 +34,14 @@ object GeoJSONEvent {
     __obj.asInstanceOf[GeoJSONEvent]
   }
   
-  @scala.inline
-  implicit class GeoJSONEventMutableBuilder[Self <: GeoJSONEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GeoJSONEvent](x: Self) {
     
-    @scala.inline
-    def setGeometryType(value: String): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
+    inline def setGeometryType(value: String): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

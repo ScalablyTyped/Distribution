@@ -48,31 +48,23 @@ trait PlusWebviewWebviewExtraOptions extends StObject {
 }
 object PlusWebviewWebviewExtraOptions {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewExtraOptions = {
+  inline def apply(): PlusWebviewWebviewExtraOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewExtraOptions]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewExtraOptionsMutableBuilder[Self <: PlusWebviewWebviewExtraOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewExtraOptions](x: Self) {
     
-    @scala.inline
-    def setAcceleration(value: auto): Self = StObject.set(x, "acceleration", value.asInstanceOf[js.Any])
+    inline def setAcceleration(value: auto): Self = StObject.set(x, "acceleration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccelerationUndefined: Self = StObject.set(x, "acceleration", js.undefined)
+    inline def setAccelerationUndefined: Self = StObject.set(x, "acceleration", js.undefined)
     
-    @scala.inline
-    def setCapture(value: PlusNativeObjBitmap): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    inline def setCapture(value: PlusNativeObjBitmap): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+    inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
-    @scala.inline
-    def setOtherCapture(value: PlusNativeObjBitmap): Self = StObject.set(x, "otherCapture", value.asInstanceOf[js.Any])
+    inline def setOtherCapture(value: PlusNativeObjBitmap): Self = StObject.set(x, "otherCapture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherCaptureUndefined: Self = StObject.set(x, "otherCapture", js.undefined)
+    inline def setOtherCaptureUndefined: Self = StObject.set(x, "otherCapture", js.undefined)
   }
 }

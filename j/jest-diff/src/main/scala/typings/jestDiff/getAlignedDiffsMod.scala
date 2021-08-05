@@ -12,6 +12,5 @@ object getAlignedDiffsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(diffs: js.Array[Diff], changeColor: DiffOptionsColor): js.Array[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(diffs.asInstanceOf[js.Any], changeColor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff]]
+  inline def default(diffs: js.Array[Diff], changeColor: DiffOptionsColor): js.Array[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(diffs.asInstanceOf[js.Any], changeColor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff]]
 }

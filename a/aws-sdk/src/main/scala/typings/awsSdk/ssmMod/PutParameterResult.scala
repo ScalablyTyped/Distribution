@@ -18,25 +18,19 @@ trait PutParameterResult extends StObject {
 }
 object PutParameterResult {
   
-  @scala.inline
-  def apply(): PutParameterResult = {
+  inline def apply(): PutParameterResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutParameterResult]
   }
   
-  @scala.inline
-  implicit class PutParameterResultMutableBuilder[Self <: PutParameterResult] (val x: Self) extends AnyVal {
+  extension [Self <: PutParameterResult](x: Self) {
     
-    @scala.inline
-    def setTier(value: ParameterTier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: ParameterTier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
+    inline def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
     
-    @scala.inline
-    def setVersion(value: PSParameterVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: PSParameterVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

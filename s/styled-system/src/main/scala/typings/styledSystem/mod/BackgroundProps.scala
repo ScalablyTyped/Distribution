@@ -27,25 +27,19 @@ trait BackgroundProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal]
 }
 object BackgroundProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): BackgroundProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): BackgroundProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class BackgroundPropsMutableBuilder[Self <: BackgroundProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BackgroundProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: BackgroundProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (BackgroundProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setBackground(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundNull: Self = StObject.set(x, "background", null)
+    inline def setBackgroundNull: Self = StObject.set(x, "background", null)
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setBackgroundVarargs(value: (TVal | Null)*): Self = StObject.set(x, "background", js.Array(value :_*))
+    inline def setBackgroundVarargs(value: (TVal | Null)*): Self = StObject.set(x, "background", js.Array(value :_*))
   }
 }

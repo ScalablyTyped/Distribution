@@ -35,8 +35,7 @@ trait BaseTaxonomy[T /* <: Context */]
 }
 object BaseTaxonomy {
   
-  @scala.inline
-  def apply[T /* <: Context */](
+  inline def apply[T /* <: Context */](
     _links: Record[String, js.Array[Dictk]],
     capabilities: Assignterms,
     description: String,
@@ -53,40 +52,28 @@ object BaseTaxonomy {
     __obj.asInstanceOf[BaseTaxonomy[T]]
   }
   
-  @scala.inline
-  implicit class BaseTaxonomyMutableBuilder[Self <: BaseTaxonomy[?], T /* <: Context */] (val x: Self & BaseTaxonomy[T]) extends AnyVal {
+  extension [Self <: BaseTaxonomy[?], T /* <: Context */](x: Self & BaseTaxonomy[T]) {
     
-    @scala.inline
-    def setCapabilities(value: Assignterms): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: Assignterms): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchical(value: Boolean): Self = StObject.set(x, "hierarchical", value.asInstanceOf[js.Any])
+    inline def setHierarchical(value: Boolean): Self = StObject.set(x, "hierarchical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabels(value: Addnewitem): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: Addnewitem): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRest_base(value: String): Self = StObject.set(x, "rest_base", value.asInstanceOf[js.Any])
+    inline def setRest_base(value: String): Self = StObject.set(x, "rest_base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_cloud(value: Boolean): Self = StObject.set(x, "show_cloud", value.asInstanceOf[js.Any])
+    inline def setShow_cloud(value: Boolean): Self = StObject.set(x, "show_cloud", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
     
-    @scala.inline
-    def setVisibility(value: Public): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: Public): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

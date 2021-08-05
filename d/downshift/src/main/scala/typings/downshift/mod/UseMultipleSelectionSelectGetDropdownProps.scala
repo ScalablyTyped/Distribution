@@ -14,19 +14,15 @@ trait UseMultipleSelectionSelectGetDropdownProps
 }
 object UseMultipleSelectionSelectGetDropdownProps {
   
-  @scala.inline
-  def apply(): UseMultipleSelectionSelectGetDropdownProps = {
+  inline def apply(): UseMultipleSelectionSelectGetDropdownProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseMultipleSelectionSelectGetDropdownProps]
   }
   
-  @scala.inline
-  implicit class UseMultipleSelectionSelectGetDropdownPropsMutableBuilder[Self <: UseMultipleSelectionSelectGetDropdownProps] (val x: Self) extends AnyVal {
+  extension [Self <: UseMultipleSelectionSelectGetDropdownProps](x: Self) {
     
-    @scala.inline
-    def setPreventKeyAction(value: Boolean): Self = StObject.set(x, "preventKeyAction", value.asInstanceOf[js.Any])
+    inline def setPreventKeyAction(value: Boolean): Self = StObject.set(x, "preventKeyAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventKeyActionUndefined: Self = StObject.set(x, "preventKeyAction", js.undefined)
+    inline def setPreventKeyActionUndefined: Self = StObject.set(x, "preventKeyAction", js.undefined)
   }
 }

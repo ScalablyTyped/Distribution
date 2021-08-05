@@ -22,34 +22,25 @@ trait CreateTableRequest extends StObject {
 }
 object CreateTableRequest {
   
-  @scala.inline
-  def apply(): CreateTableRequest = {
+  inline def apply(): CreateTableRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTableRequest]
   }
   
-  @scala.inline
-  implicit class CreateTableRequestMutableBuilder[Self <: CreateTableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTableRequest](x: Self) {
     
-    @scala.inline
-    def setInitialSplits(value: js.Array[Split]): Self = StObject.set(x, "initialSplits", value.asInstanceOf[js.Any])
+    inline def setInitialSplits(value: js.Array[Split]): Self = StObject.set(x, "initialSplits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialSplitsUndefined: Self = StObject.set(x, "initialSplits", js.undefined)
+    inline def setInitialSplitsUndefined: Self = StObject.set(x, "initialSplits", js.undefined)
     
-    @scala.inline
-    def setInitialSplitsVarargs(value: Split*): Self = StObject.set(x, "initialSplits", js.Array(value :_*))
+    inline def setInitialSplitsVarargs(value: Split*): Self = StObject.set(x, "initialSplits", js.Array(value :_*))
     
-    @scala.inline
-    def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+    inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

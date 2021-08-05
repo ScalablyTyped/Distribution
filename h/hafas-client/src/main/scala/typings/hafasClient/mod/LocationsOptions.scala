@@ -62,67 +62,47 @@ trait LocationsOptions extends StObject {
 }
 object LocationsOptions {
   
-  @scala.inline
-  def apply(): LocationsOptions = {
+  inline def apply(): LocationsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationsOptions]
   }
   
-  @scala.inline
-  implicit class LocationsOptionsMutableBuilder[Self <: LocationsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LocationsOptions](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: Boolean): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: Boolean): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
+    inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    @scala.inline
-    def setEntrances(value: Boolean): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
+    inline def setEntrances(value: Boolean): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
+    inline def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
     
-    @scala.inline
-    def setFuzzy(value: Boolean): Self = StObject.set(x, "fuzzy", value.asInstanceOf[js.Any])
+    inline def setFuzzy(value: Boolean): Self = StObject.set(x, "fuzzy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFuzzyUndefined: Self = StObject.set(x, "fuzzy", js.undefined)
+    inline def setFuzzyUndefined: Self = StObject.set(x, "fuzzy", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLinesOfStops(value: Boolean): Self = StObject.set(x, "linesOfStops", value.asInstanceOf[js.Any])
+    inline def setLinesOfStops(value: Boolean): Self = StObject.set(x, "linesOfStops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesOfStopsUndefined: Self = StObject.set(x, "linesOfStops", js.undefined)
+    inline def setLinesOfStopsUndefined: Self = StObject.set(x, "linesOfStops", js.undefined)
     
-    @scala.inline
-    def setPoi(value: Boolean): Self = StObject.set(x, "poi", value.asInstanceOf[js.Any])
+    inline def setPoi(value: Boolean): Self = StObject.set(x, "poi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoiUndefined: Self = StObject.set(x, "poi", js.undefined)
+    inline def setPoiUndefined: Self = StObject.set(x, "poi", js.undefined)
     
-    @scala.inline
-    def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setStops(value: Boolean): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: Boolean): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    @scala.inline
-    def setSubStops(value: Boolean): Self = StObject.set(x, "subStops", value.asInstanceOf[js.Any])
+    inline def setSubStops(value: Boolean): Self = StObject.set(x, "subStops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubStopsUndefined: Self = StObject.set(x, "subStops", js.undefined)
+    inline def setSubStopsUndefined: Self = StObject.set(x, "subStops", js.undefined)
   }
 }

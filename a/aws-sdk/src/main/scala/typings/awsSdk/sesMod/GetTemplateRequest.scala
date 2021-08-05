@@ -13,16 +13,13 @@ trait GetTemplateRequest extends StObject {
 }
 object GetTemplateRequest {
   
-  @scala.inline
-  def apply(TemplateName: TemplateName): GetTemplateRequest = {
+  inline def apply(TemplateName: TemplateName): GetTemplateRequest = {
     val __obj = js.Dynamic.literal(TemplateName = TemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTemplateRequest]
   }
   
-  @scala.inline
-  implicit class GetTemplateRequestMutableBuilder[Self <: GetTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setTemplateName(value: TemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
   }
 }

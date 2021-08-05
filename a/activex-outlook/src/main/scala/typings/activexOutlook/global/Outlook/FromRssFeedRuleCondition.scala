@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.FromRssFeedRuleCondition")
 @js.native
-class FromRssFeedRuleCondition protected ()
+/* private */ class FromRssFeedRuleCondition ()
   extends StObject
      with typings.activexOutlook.Outlook.FromRssFeedRuleCondition {
   
@@ -27,7 +27,7 @@ class FromRssFeedRuleCondition protected ()
   /* CompleteClass */
   var FromRssFeed: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.FromRssFeedRuleCondition_typekey")
   var OutlookDotFromRssFeedRuleCondition_typekey: typings.activexOutlook.Outlook.FromRssFeedRuleCondition = js.native
   

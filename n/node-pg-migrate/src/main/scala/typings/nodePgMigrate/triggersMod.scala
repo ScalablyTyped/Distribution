@@ -14,12 +14,9 @@ object triggersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createTrigger(mOptions: MigrationOptions): CreateTrigger = ^.asInstanceOf[js.Dynamic].applyDynamic("createTrigger")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateTrigger]
+  inline def createTrigger(mOptions: MigrationOptions): CreateTrigger = ^.asInstanceOf[js.Dynamic].applyDynamic("createTrigger")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateTrigger]
   
-  @scala.inline
-  def dropTrigger(mOptions: MigrationOptions): DropTrigger = ^.asInstanceOf[js.Dynamic].applyDynamic("dropTrigger")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropTrigger]
+  inline def dropTrigger(mOptions: MigrationOptions): DropTrigger = ^.asInstanceOf[js.Dynamic].applyDynamic("dropTrigger")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropTrigger]
   
-  @scala.inline
-  def renameTrigger(mOptions: MigrationOptions): RenameTrigger = ^.asInstanceOf[js.Dynamic].applyDynamic("renameTrigger")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameTrigger]
+  inline def renameTrigger(mOptions: MigrationOptions): RenameTrigger = ^.asInstanceOf[js.Dynamic].applyDynamic("renameTrigger")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameTrigger]
 }

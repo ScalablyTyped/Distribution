@@ -12,20 +12,16 @@ trait Properties extends StObject {
 }
 object Properties {
   
-  @scala.inline
-  def apply(role: String, `type`: String): Properties = {
+  inline def apply(role: String, `type`: String): Properties = {
     val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Properties]
   }
   
-  @scala.inline
-  implicit class PropertiesMutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
+  extension [Self <: Properties](x: Self) {
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

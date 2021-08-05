@@ -24,14 +24,14 @@ object global {
       */
     @JSGlobal("WIA.CommonDialog")
     @js.native
-    class CommonDialog protected ()
+    /* private */ class CommonDialog ()
       extends StObject
          with typings.activexWia.WIA.CommonDialog
     
     /** The Device object represents an active connection to an imaging device. */
     @JSGlobal("WIA.Device")
     @js.native
-    class Device protected ()
+    /* private */ class Device ()
       extends StObject
          with typings.activexWia.WIA.Device {
       
@@ -92,7 +92,7 @@ object global {
       /* CompleteClass */
       override val Type: WiaDeviceType = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("WIA.Device_typekey")
       var WIADotDevice_typekey: typings.activexWia.WIA.Device = js.native
     }
@@ -100,7 +100,7 @@ object global {
     /** The DeviceCommand object describes a CommandID that can be used when calling ExecuteCommand on a Device or Item object. */
     @JSGlobal("WIA.DeviceCommand")
     @js.native
-    class DeviceCommand protected ()
+    /* private */ class DeviceCommand ()
       extends StObject
          with typings.activexWia.WIA.DeviceCommand {
       
@@ -116,7 +116,7 @@ object global {
       /* CompleteClass */
       override val Name: String = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("WIA.DeviceCommand_typekey")
       var WIADotDeviceCommand_typekey: typings.activexWia.WIA.DeviceCommand = js.native
     }
@@ -124,7 +124,7 @@ object global {
     /** The DeviceEvent object describes an EventID that can be used when calling RegisterEvent or RegisterPersistentEvent on a DeviceManager object. */
     @JSGlobal("WIA.DeviceEvent")
     @js.native
-    class DeviceEvent protected ()
+    /* private */ class DeviceEvent ()
       extends StObject
          with typings.activexWia.WIA.DeviceEvent {
       
@@ -144,7 +144,7 @@ object global {
       /* CompleteClass */
       override val Type: WiaEventFlag = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("WIA.DeviceEvent_typekey")
       var WIADotDeviceEvent_typekey: typings.activexWia.WIA.DeviceEvent = js.native
     }
@@ -155,7 +155,7 @@ object global {
       */
     @JSGlobal("WIA.DeviceInfo")
     @js.native
-    class DeviceInfo protected ()
+    /* private */ class DeviceInfo ()
       extends StObject
          with typings.activexWia.WIA.DeviceInfo {
       
@@ -182,7 +182,7 @@ object global {
       /* CompleteClass */
       override val Type: WiaDeviceType = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("WIA.DeviceInfo_typekey")
       var WIADotDeviceInfo_typekey: typings.activexWia.WIA.DeviceInfo = js.native
     }
@@ -193,7 +193,7 @@ object global {
       */
     @JSGlobal("WIA.DeviceManager")
     @js.native
-    class DeviceManager protected ()
+    /* private */ class DeviceManager ()
       extends StObject
          with typings.activexWia.WIA.DeviceManager
     
@@ -203,7 +203,7 @@ object global {
       */
     @JSGlobal("WIA.Filter")
     @js.native
-    class Filter protected ()
+    /* private */ class Filter ()
       extends StObject
          with typings.activexWia.WIA.Filter {
       
@@ -230,7 +230,7 @@ object global {
       @JSName("Properties")
       override val Properties_Original: Properties = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("WIA.Filter_typekey")
       var WIADotFilter_typekey: typings.activexWia.WIA.Filter = js.native
     }
@@ -241,7 +241,7 @@ object global {
       */
     @JSGlobal("WIA.FilterInfo")
     @js.native
-    class FilterInfo protected ()
+    /* private */ class FilterInfo ()
       extends StObject
          with typings.activexWia.WIA.FilterInfo {
       
@@ -257,7 +257,7 @@ object global {
       /* CompleteClass */
       override val Name: String = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("WIA.FilterInfo_typekey")
       var WIADotFilterInfo_typekey: typings.activexWia.WIA.FilterInfo = js.native
     }
@@ -268,7 +268,7 @@ object global {
       */
     @JSGlobal("WIA.ImageFile")
     @js.native
-    class ImageFile protected ()
+    /* private */ class ImageFile ()
       extends StObject
          with typings.activexWia.WIA.ImageFile {
       
@@ -357,7 +357,7 @@ object global {
       /* CompleteClass */
       override val VerticalResolution: Double = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("WIA.ImageFile_typekey")
       var WIADotImageFile_typekey: typings.activexWia.WIA.ImageFile = js.native
       
@@ -369,7 +369,7 @@ object global {
     /** The ImageProcess object manages the filter chain. An ImageProcess object can be created using "WIA.ImageProcess" in a call to CreateObject. */
     @JSGlobal("WIA.ImageProcess")
     @js.native
-    class ImageProcess protected ()
+    /* private */ class ImageProcess ()
       extends StObject
          with typings.activexWia.WIA.ImageProcess {
       
@@ -397,7 +397,7 @@ object global {
       @JSName("Filters")
       override val Filters_Original: Filters = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("WIA.ImageProcess_typekey")
       var WIADotImageProcess_typekey: typings.activexWia.WIA.ImageProcess = js.native
     }
@@ -408,7 +408,7 @@ object global {
       */
     @JSGlobal("WIA.Item")
     @js.native
-    class Item protected ()
+    /* private */ class Item ()
       extends StObject
          with typings.activexWia.WIA.Item
     
@@ -418,7 +418,7 @@ object global {
       */
     @JSGlobal("WIA.Property")
     @js.native
-    class Property protected ()
+    /* private */ class Property ()
       extends StObject
          with typings.activexWia.WIA.Property {
       
@@ -475,7 +475,7 @@ object global {
       /* CompleteClass */
       var Value: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("WIA.Property_typekey")
       var WIADotProperty_typekey: typings.activexWia.WIA.Property = js.native
     }
@@ -486,7 +486,7 @@ object global {
       */
     @JSGlobal("WIA.Rational")
     @js.native
-    class Rational protected ()
+    /* private */ class Rational ()
       extends StObject
          with typings.activexWia.WIA.Rational {
       
@@ -502,7 +502,7 @@ object global {
       /* CompleteClass */
       override val Value: Double = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("WIA.Rational_typekey")
       var WIADotRational_typekey: typings.activexWia.WIA.Rational = js.native
     }

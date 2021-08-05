@@ -19,23 +19,23 @@ object transportTransportMod {
     def this(logger: Logger) = this()
     def this(logger: Logger, options: TransportOptions) = this()
     
-    var _connect: js.Any = js.native
+    /* private */ var _connect: js.Any = js.native
     
-    var _disconnect: js.Any = js.native
+    /* private */ var _disconnect: js.Any = js.native
     
-    var _protocol: js.Any = js.native
+    /* private */ var _protocol: js.Any = js.native
     
-    var _send: js.Any = js.native
+    /* private */ var _send: js.Any = js.native
     
-    var _state: js.Any = js.native
+    /* private */ var _state: js.Any = js.native
     
-    var _stateEventEmitter: js.Any = js.native
+    /* private */ var _stateEventEmitter: js.Any = js.native
     
-    var _ws: js.Any = js.native
+    /* private */ var _ws: js.Any = js.native
     
-    var clearKeepAliveTimeout: js.Any = js.native
+    /* private */ var clearKeepAliveTimeout: js.Any = js.native
     
-    var configuration: js.Any = js.native
+    /* private */ var configuration: js.Any = js.native
     
     /**
       * Connect to network.
@@ -56,13 +56,13 @@ object transportTransportMod {
     /* CompleteClass */
     override def connect(): js.Promise[Unit] = js.native
     
-    var connectPromise: js.Any = js.native
+    /* private */ var connectPromise: js.Any = js.native
     
-    var connectReject: js.Any = js.native
+    /* private */ var connectReject: js.Any = js.native
     
-    var connectResolve: js.Any = js.native
+    /* private */ var connectResolve: js.Any = js.native
     
-    var connectTimeout: js.Any = js.native
+    /* private */ var connectTimeout: js.Any = js.native
     
     /**
       * Disconnect from network.
@@ -83,11 +83,11 @@ object transportTransportMod {
     /* CompleteClass */
     override def disconnect(): js.Promise[Unit] = js.native
     
-    var disconnectPromise: js.Any = js.native
+    /* private */ var disconnectPromise: js.Any = js.native
     
-    var disconnectReject: js.Any = js.native
+    /* private */ var disconnectReject: js.Any = js.native
     
-    var disconnectResolve: js.Any = js.native
+    /* private */ var disconnectResolve: js.Any = js.native
     
     /**
       * Dispose.
@@ -121,35 +121,35 @@ object transportTransportMod {
     /* CompleteClass */
     override def isConnected(): Boolean = js.native
     
-    var keepAliveDebounceTimeout: js.Any = js.native
+    /* private */ var keepAliveDebounceTimeout: js.Any = js.native
     
-    var keepAliveInterval: js.Any = js.native
+    /* private */ var keepAliveInterval: js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     /**
       * WebSocket "onclose" event handler.
       * @param ev - Event.
       */
-    var onWebSocketClose: js.Any = js.native
+    /* private */ var onWebSocketClose: js.Any = js.native
     
     /**
       * WebSocket "onerror" event handler.
       * @param ev - Event.
       */
-    var onWebSocketError: js.Any = js.native
+    /* private */ var onWebSocketError: js.Any = js.native
     
     /**
       * WebSocket "onmessage" event handler.
       * @param ev - Event.
       */
-    var onWebSocketMessage: js.Any = js.native
+    /* private */ var onWebSocketMessage: js.Any = js.native
     
     /**
       * WebSocket "onopen" event handler.
       * @param ev - Event.
       */
-    var onWebSocketOpen: js.Any = js.native
+    /* private */ var onWebSocketOpen: js.Any = js.native
     
     /**
       * The transport protocol.
@@ -175,7 +175,7 @@ object transportTransportMod {
     /**
       * Send a keep-alive (a double-CRLF sequence).
       */
-    var sendKeepAlive: js.Any = js.native
+    /* private */ var sendKeepAlive: js.Any = js.native
     
     /**
       * The URL of the WebSocket Server.
@@ -185,7 +185,7 @@ object transportTransportMod {
     /**
       * Start sending keep-alives.
       */
-    var startSendingKeepAlives: js.Any = js.native
+    /* private */ var startSendingKeepAlives: js.Any = js.native
     
     /**
       * Transport state.
@@ -205,21 +205,21 @@ object transportTransportMod {
     /**
       * Stop sending keep-alives.
       */
-    var stopSendingKeepAlives: js.Any = js.native
+    /* private */ var stopSendingKeepAlives: js.Any = js.native
     
     /**
       * Helper function to generate an Error.
       * @param state - State transitioning to.
       */
-    var transitionLoopDetectedError: js.Any = js.native
+    /* private */ var transitionLoopDetectedError: js.Any = js.native
     
     /**
       * Transition transport state.
       * @internal
       */
-    var transitionState: js.Any = js.native
+    /* private */ var transitionState: js.Any = js.native
     
-    var transitioningState: js.Any = js.native
+    /* private */ var transitioningState: js.Any = js.native
     
     /**
       * The WebSocket.
@@ -236,7 +236,6 @@ object transportTransportMod {
     @JSImport("sip.js/lib/platform/web/transport/transport", "Transport.defaultOptions")
     @js.native
     def defaultOptions: js.Any = js.native
-    @scala.inline
-    def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+    inline def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
   }
 }

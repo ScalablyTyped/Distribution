@@ -33,8 +33,7 @@ trait DataValidation extends StObject {
 }
 object DataValidation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copy: () => DataValidationBuilder,
     getAllowInvalid: () => Boolean,
     getCriteriaType: () => DataValidationCriteria,
@@ -45,22 +44,16 @@ object DataValidation {
     __obj.asInstanceOf[DataValidation]
   }
   
-  @scala.inline
-  implicit class DataValidationMutableBuilder[Self <: DataValidation] (val x: Self) extends AnyVal {
+  extension [Self <: DataValidation](x: Self) {
     
-    @scala.inline
-    def setCopy(value: () => DataValidationBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => DataValidationBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAllowInvalid(value: () => Boolean): Self = StObject.set(x, "getAllowInvalid", js.Any.fromFunction0(value))
+    inline def setGetAllowInvalid(value: () => Boolean): Self = StObject.set(x, "getAllowInvalid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCriteriaType(value: () => DataValidationCriteria): Self = StObject.set(x, "getCriteriaType", js.Any.fromFunction0(value))
+    inline def setGetCriteriaType(value: () => DataValidationCriteria): Self = StObject.set(x, "getCriteriaType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCriteriaValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
+    inline def setGetCriteriaValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHelpText(value: () => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction0(value))
+    inline def setGetHelpText(value: () => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction0(value))
   }
 }

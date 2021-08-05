@@ -13,16 +13,13 @@ trait DescribeBackupInput extends StObject {
 }
 object DescribeBackupInput {
   
-  @scala.inline
-  def apply(BackupArn: BackupArn): DescribeBackupInput = {
+  inline def apply(BackupArn: BackupArn): DescribeBackupInput = {
     val __obj = js.Dynamic.literal(BackupArn = BackupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBackupInput]
   }
   
-  @scala.inline
-  implicit class DescribeBackupInputMutableBuilder[Self <: DescribeBackupInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBackupInput](x: Self) {
     
-    @scala.inline
-    def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
+    inline def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
   }
 }

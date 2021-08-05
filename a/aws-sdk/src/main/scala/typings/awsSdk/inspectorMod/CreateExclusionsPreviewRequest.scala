@@ -13,16 +13,13 @@ trait CreateExclusionsPreviewRequest extends StObject {
 }
 object CreateExclusionsPreviewRequest {
   
-  @scala.inline
-  def apply(assessmentTemplateArn: Arn): CreateExclusionsPreviewRequest = {
+  inline def apply(assessmentTemplateArn: Arn): CreateExclusionsPreviewRequest = {
     val __obj = js.Dynamic.literal(assessmentTemplateArn = assessmentTemplateArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateExclusionsPreviewRequest]
   }
   
-  @scala.inline
-  implicit class CreateExclusionsPreviewRequestMutableBuilder[Self <: CreateExclusionsPreviewRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateExclusionsPreviewRequest](x: Self) {
     
-    @scala.inline
-    def setAssessmentTemplateArn(value: Arn): Self = StObject.set(x, "assessmentTemplateArn", value.asInstanceOf[js.Any])
+    inline def setAssessmentTemplateArn(value: Arn): Self = StObject.set(x, "assessmentTemplateArn", value.asInstanceOf[js.Any])
   }
 }

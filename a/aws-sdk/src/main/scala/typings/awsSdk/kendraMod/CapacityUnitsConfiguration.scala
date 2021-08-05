@@ -18,19 +18,15 @@ trait CapacityUnitsConfiguration extends StObject {
 }
 object CapacityUnitsConfiguration {
   
-  @scala.inline
-  def apply(QueryCapacityUnits: QueryCapacityUnit, StorageCapacityUnits: StorageCapacityUnit): CapacityUnitsConfiguration = {
+  inline def apply(QueryCapacityUnits: QueryCapacityUnit, StorageCapacityUnits: StorageCapacityUnit): CapacityUnitsConfiguration = {
     val __obj = js.Dynamic.literal(QueryCapacityUnits = QueryCapacityUnits.asInstanceOf[js.Any], StorageCapacityUnits = StorageCapacityUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapacityUnitsConfiguration]
   }
   
-  @scala.inline
-  implicit class CapacityUnitsConfigurationMutableBuilder[Self <: CapacityUnitsConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CapacityUnitsConfiguration](x: Self) {
     
-    @scala.inline
-    def setQueryCapacityUnits(value: QueryCapacityUnit): Self = StObject.set(x, "QueryCapacityUnits", value.asInstanceOf[js.Any])
+    inline def setQueryCapacityUnits(value: QueryCapacityUnit): Self = StObject.set(x, "QueryCapacityUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageCapacityUnits(value: StorageCapacityUnit): Self = StObject.set(x, "StorageCapacityUnits", value.asInstanceOf[js.Any])
+    inline def setStorageCapacityUnits(value: StorageCapacityUnit): Self = StObject.set(x, "StorageCapacityUnits", value.asInstanceOf[js.Any])
   }
 }

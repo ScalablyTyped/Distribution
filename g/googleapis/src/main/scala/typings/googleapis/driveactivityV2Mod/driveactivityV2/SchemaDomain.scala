@@ -21,25 +21,19 @@ trait SchemaDomain extends StObject {
 }
 object SchemaDomain {
   
-  @scala.inline
-  def apply(): SchemaDomain = {
+  inline def apply(): SchemaDomain = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDomain]
   }
   
-  @scala.inline
-  implicit class SchemaDomainMutableBuilder[Self <: SchemaDomain] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDomain](x: Self) {
     
-    @scala.inline
-    def setLegacyId(value: String): Self = StObject.set(x, "legacyId", value.asInstanceOf[js.Any])
+    inline def setLegacyId(value: String): Self = StObject.set(x, "legacyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegacyIdUndefined: Self = StObject.set(x, "legacyId", js.undefined)
+    inline def setLegacyIdUndefined: Self = StObject.set(x, "legacyId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

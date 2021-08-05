@@ -15,8 +15,7 @@ trait ParametersUsersListPublicKeysForUserEndpoint extends StObject {
 }
 object ParametersUsersListPublicKeysForUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: UsersListPublicKeysForUserEndpoint,
     response: OctokitResponse[UsersListPublicKeysForUserResponseData]
   ): ParametersUsersListPublicKeysForUserEndpoint = {
@@ -24,13 +23,10 @@ object ParametersUsersListPublicKeysForUserEndpoint {
     __obj.asInstanceOf[ParametersUsersListPublicKeysForUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersUsersListPublicKeysForUserEndpointMutableBuilder[Self <: ParametersUsersListPublicKeysForUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersUsersListPublicKeysForUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: UsersListPublicKeysForUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: UsersListPublicKeysForUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[UsersListPublicKeysForUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[UsersListPublicKeysForUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

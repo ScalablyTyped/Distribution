@@ -13,10 +13,8 @@ object geocodingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(config: SdkConfig): GeocodeService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[GeocodeService]
-  @scala.inline
-  def default(config: typings.mapboxMapboxSdk.mod.default): GeocodeService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[GeocodeService]
+  inline def default(config: SdkConfig): GeocodeService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[GeocodeService]
+  inline def default(config: typings.mapboxMapboxSdk.mod.default): GeocodeService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[GeocodeService]
   
   trait BoundingBox extends StObject {
     
@@ -30,26 +28,20 @@ object geocodingMod {
   }
   object BoundingBox {
     
-    @scala.inline
-    def apply(maxLatitude: Double, maxLongitude: Double, minLatitude: Double, minLongitude: Double): BoundingBox = {
+    inline def apply(maxLatitude: Double, maxLongitude: Double, minLatitude: Double, minLongitude: Double): BoundingBox = {
       val __obj = js.Dynamic.literal(maxLatitude = maxLatitude.asInstanceOf[js.Any], maxLongitude = maxLongitude.asInstanceOf[js.Any], minLatitude = minLatitude.asInstanceOf[js.Any], minLongitude = minLongitude.asInstanceOf[js.Any])
       __obj.asInstanceOf[BoundingBox]
     }
     
-    @scala.inline
-    implicit class BoundingBoxMutableBuilder[Self <: BoundingBox] (val x: Self) extends AnyVal {
+    extension [Self <: BoundingBox](x: Self) {
       
-      @scala.inline
-      def setMaxLatitude(value: Double): Self = StObject.set(x, "maxLatitude", value.asInstanceOf[js.Any])
+      inline def setMaxLatitude(value: Double): Self = StObject.set(x, "maxLatitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLongitude(value: Double): Self = StObject.set(x, "maxLongitude", value.asInstanceOf[js.Any])
+      inline def setMaxLongitude(value: Double): Self = StObject.set(x, "maxLongitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinLatitude(value: Double): Self = StObject.set(x, "minLatitude", value.asInstanceOf[js.Any])
+      inline def setMinLatitude(value: Double): Self = StObject.set(x, "minLatitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinLongitude(value: Double): Self = StObject.set(x, "minLongitude", value.asInstanceOf[js.Any])
+      inline def setMinLongitude(value: Double): Self = StObject.set(x, "minLongitude", value.asInstanceOf[js.Any])
     }
   }
   
@@ -144,8 +136,7 @@ object geocodingMod {
   }
   object GeocodeFeature {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       center: js.Array[Double],
       context: js.Array[GeocodeFeature],
       geometry: Geometry,
@@ -165,71 +156,49 @@ object geocodingMod {
       __obj.asInstanceOf[GeocodeFeature]
     }
     
-    @scala.inline
-    implicit class GeocodeFeatureMutableBuilder[Self <: GeocodeFeature] (val x: Self) extends AnyVal {
+    extension [Self <: GeocodeFeature](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      @scala.inline
-      def setBbox(value: js.Array[Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+      inline def setBbox(value: js.Array[Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
+      inline def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
       
-      @scala.inline
-      def setBboxVarargs(value: Double*): Self = StObject.set(x, "bbox", js.Array(value :_*))
+      inline def setBboxVarargs(value: Double*): Self = StObject.set(x, "bbox", js.Array(value :_*))
       
-      @scala.inline
-      def setCenter(value: js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
+      inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
       
-      @scala.inline
-      def setContext(value: js.Array[GeocodeFeature]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Array[GeocodeFeature]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextVarargs(value: GeocodeFeature*): Self = StObject.set(x, "context", js.Array(value :_*))
+      inline def setContextVarargs(value: GeocodeFeature*): Self = StObject.set(x, "context", js.Array(value :_*))
       
-      @scala.inline
-      def setGeometry(value: Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatching_place_name(value: String): Self = StObject.set(x, "matching_place_name", value.asInstanceOf[js.Any])
+      inline def setMatching_place_name(value: String): Self = StObject.set(x, "matching_place_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatching_text(value: String): Self = StObject.set(x, "matching_text", value.asInstanceOf[js.Any])
+      inline def setMatching_text(value: String): Self = StObject.set(x, "matching_text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlace_name(value: String): Self = StObject.set(x, "place_name", value.asInstanceOf[js.Any])
+      inline def setPlace_name(value: String): Self = StObject.set(x, "place_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlace_type(value: js.Array[String]): Self = StObject.set(x, "place_type", value.asInstanceOf[js.Any])
+      inline def setPlace_type(value: js.Array[String]): Self = StObject.set(x, "place_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlace_typeVarargs(value: String*): Self = StObject.set(x, "place_type", js.Array(value :_*))
+      inline def setPlace_typeVarargs(value: String*): Self = StObject.set(x, "place_type", js.Array(value :_*))
       
-      @scala.inline
-      def setProperties(value: GeocodeProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: GeocodeProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
+      inline def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -240,11 +209,9 @@ object geocodingMod {
   trait GeocodeMode extends StObject
   object GeocodeMode {
     
-    @scala.inline
-    def mapboxDotplaces: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.mapboxDotplaces = "mapbox.places".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.mapboxDotplaces]
+    inline def mapboxDotplaces: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.mapboxDotplaces = "mapbox.places".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.mapboxDotplaces]
     
-    @scala.inline
-    def `mapboxDotplaces-permanent`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`mapboxDotplaces-permanent` = "mapbox.places-permanent".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`mapboxDotplaces-permanent`]
+    inline def `mapboxDotplaces-permanent`: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`mapboxDotplaces-permanent` = "mapbox.places-permanent".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.`mapboxDotplaces-permanent`]
   }
   
   trait GeocodeProperties
@@ -284,8 +251,7 @@ object geocodingMod {
   }
   object GeocodeProperties {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       center: js.Array[Double],
       context: js.Array[GeocodeFeature],
       geometry: Geometry,
@@ -306,41 +272,29 @@ object geocodingMod {
       __obj.asInstanceOf[GeocodeProperties]
     }
     
-    @scala.inline
-    implicit class GeocodePropertiesMutableBuilder[Self <: GeocodeProperties] (val x: Self) extends AnyVal {
+    extension [Self <: GeocodeProperties](x: Self) {
       
-      @scala.inline
-      def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+      inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
-      @scala.inline
-      def setLandmark(value: Boolean): Self = StObject.set(x, "landmark", value.asInstanceOf[js.Any])
+      inline def setLandmark(value: Boolean): Self = StObject.set(x, "landmark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLandmarkUndefined: Self = StObject.set(x, "landmark", js.undefined)
+      inline def setLandmarkUndefined: Self = StObject.set(x, "landmark", js.undefined)
       
-      @scala.inline
-      def setMaki(value: String): Self = StObject.set(x, "maki", value.asInstanceOf[js.Any])
+      inline def setMaki(value: String): Self = StObject.set(x, "maki", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMakiUndefined: Self = StObject.set(x, "maki", js.undefined)
+      inline def setMakiUndefined: Self = StObject.set(x, "maki", js.undefined)
       
-      @scala.inline
-      def setShort_code(value: String): Self = StObject.set(x, "short_code", value.asInstanceOf[js.Any])
+      inline def setShort_code(value: String): Self = StObject.set(x, "short_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTel(value: String): Self = StObject.set(x, "tel", value.asInstanceOf[js.Any])
+      inline def setTel(value: String): Self = StObject.set(x, "tel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTelUndefined: Self = StObject.set(x, "tel", js.undefined)
+      inline def setTelUndefined: Self = StObject.set(x, "tel", js.undefined)
       
-      @scala.inline
-      def setWikidata(value: String): Self = StObject.set(x, "wikidata", value.asInstanceOf[js.Any])
+      inline def setWikidata(value: String): Self = StObject.set(x, "wikidata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWikidataUndefined: Self = StObject.set(x, "wikidata", js.undefined)
+      inline def setWikidataUndefined: Self = StObject.set(x, "wikidata", js.undefined)
     }
   }
   
@@ -359,35 +313,25 @@ object geocodingMod {
   trait GeocodeQueryType extends StObject
   object GeocodeQueryType {
     
-    @scala.inline
-    def address: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.address = "address".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.address]
+    inline def address: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.address = "address".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.address]
     
-    @scala.inline
-    def country: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.country = "country".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.country]
+    inline def country: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.country = "country".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.country]
     
-    @scala.inline
-    def district: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.district = "district".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.district]
+    inline def district: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.district = "district".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.district]
     
-    @scala.inline
-    def locality: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.locality = "locality".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.locality]
+    inline def locality: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.locality = "locality".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.locality]
     
-    @scala.inline
-    def neighborhood: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.neighborhood = "neighborhood".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.neighborhood]
+    inline def neighborhood: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.neighborhood = "neighborhood".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.neighborhood]
     
-    @scala.inline
-    def place: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.place = "place".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.place]
+    inline def place: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.place = "place".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.place]
     
-    @scala.inline
-    def poi: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.poi = "poi".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.poi]
+    inline def poi: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.poi = "poi".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.poi]
     
-    @scala.inline
-    def poiDotlandmark: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.poiDotlandmark = "poi.landmark".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.poiDotlandmark]
+    inline def poiDotlandmark: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.poiDotlandmark = "poi.landmark".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.poiDotlandmark]
     
-    @scala.inline
-    def postcode: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.postcode = "postcode".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.postcode]
+    inline def postcode: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.postcode = "postcode".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.postcode]
     
-    @scala.inline
-    def region: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.region = "region".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.region]
+    inline def region: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.region = "region".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.region]
   }
   
   trait GeocodeRequest extends StObject {
@@ -441,74 +385,52 @@ object geocodingMod {
   }
   object GeocodeRequest {
     
-    @scala.inline
-    def apply(mode: GeocodeMode, query: String | LngLatLike): GeocodeRequest = {
+    inline def apply(mode: GeocodeMode, query: String | LngLatLike): GeocodeRequest = {
       val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeocodeRequest]
     }
     
-    @scala.inline
-    implicit class GeocodeRequestMutableBuilder[Self <: GeocodeRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GeocodeRequest](x: Self) {
       
-      @scala.inline
-      def setAutocomplete(value: Boolean): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
+      inline def setAutocomplete(value: Boolean): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutocompleteUndefined: Self = StObject.set(x, "autocomplete", js.undefined)
+      inline def setAutocompleteUndefined: Self = StObject.set(x, "autocomplete", js.undefined)
       
-      @scala.inline
-      def setBbox(value: BoundingBox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+      inline def setBbox(value: BoundingBox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
+      inline def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
       
-      @scala.inline
-      def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
+      inline def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
+      inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
       
-      @scala.inline
-      def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
+      inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
       
-      @scala.inline
-      def setLanguage(value: js.Array[String]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: js.Array[String]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setLanguageVarargs(value: String*): Self = StObject.set(x, "language", js.Array(value :_*))
+      inline def setLanguageVarargs(value: String*): Self = StObject.set(x, "language", js.Array(value :_*))
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setMode(value: GeocodeMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: GeocodeMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProximity(value: js.Array[Double]): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
+      inline def setProximity(value: js.Array[Double]): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProximityUndefined: Self = StObject.set(x, "proximity", js.undefined)
+      inline def setProximityUndefined: Self = StObject.set(x, "proximity", js.undefined)
       
-      @scala.inline
-      def setProximityVarargs(value: Double*): Self = StObject.set(x, "proximity", js.Array(value :_*))
+      inline def setProximityVarargs(value: Double*): Self = StObject.set(x, "proximity", js.Array(value :_*))
       
-      @scala.inline
-      def setQuery(value: String | LngLatLike): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String | LngLatLike): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypes(value: js.Array[GeocodeQueryType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[GeocodeQueryType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+      inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      @scala.inline
-      def setTypesVarargs(value: GeocodeQueryType*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: GeocodeQueryType*): Self = StObject.set(x, "types", js.Array(value :_*))
     }
   }
   
@@ -536,33 +458,25 @@ object geocodingMod {
   }
   object GeocodeResponse {
     
-    @scala.inline
-    def apply(attribution: String, features: js.Array[GeocodeFeature], query: js.Array[String], `type`: String): GeocodeResponse = {
+    inline def apply(attribution: String, features: js.Array[GeocodeFeature], query: js.Array[String], `type`: String): GeocodeResponse = {
       val __obj = js.Dynamic.literal(attribution = attribution.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeocodeResponse]
     }
     
-    @scala.inline
-    implicit class GeocodeResponseMutableBuilder[Self <: GeocodeResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GeocodeResponse](x: Self) {
       
-      @scala.inline
-      def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+      inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatures(value: js.Array[GeocodeFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      inline def setFeatures(value: js.Array[GeocodeFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeaturesVarargs(value: GeocodeFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+      inline def setFeaturesVarargs(value: GeocodeFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
       
-      @scala.inline
-      def setQuery(value: js.Array[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Array[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryVarargs(value: String*): Self = StObject.set(x, "query", js.Array(value :_*))
+      inline def setQueryVarargs(value: String*): Self = StObject.set(x, "query", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -574,20 +488,16 @@ object geocodingMod {
   }
   object GeocodeService {
     
-    @scala.inline
-    def apply(forwardGeocode: GeocodeRequest => MapiRequest, reverseGeocode: GeocodeRequest => MapiRequest): GeocodeService = {
+    inline def apply(forwardGeocode: GeocodeRequest => MapiRequest, reverseGeocode: GeocodeRequest => MapiRequest): GeocodeService = {
       val __obj = js.Dynamic.literal(forwardGeocode = js.Any.fromFunction1(forwardGeocode), reverseGeocode = js.Any.fromFunction1(reverseGeocode))
       __obj.asInstanceOf[GeocodeService]
     }
     
-    @scala.inline
-    implicit class GeocodeServiceMutableBuilder[Self <: GeocodeService] (val x: Self) extends AnyVal {
+    extension [Self <: GeocodeService](x: Self) {
       
-      @scala.inline
-      def setForwardGeocode(value: GeocodeRequest => MapiRequest): Self = StObject.set(x, "forwardGeocode", js.Any.fromFunction1(value))
+      inline def setForwardGeocode(value: GeocodeRequest => MapiRequest): Self = StObject.set(x, "forwardGeocode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReverseGeocode(value: GeocodeRequest => MapiRequest): Self = StObject.set(x, "reverseGeocode", js.Any.fromFunction1(value))
+      inline def setReverseGeocode(value: GeocodeRequest => MapiRequest): Self = StObject.set(x, "reverseGeocode", js.Any.fromFunction1(value))
     }
   }
   
@@ -610,27 +520,21 @@ object geocodingMod {
   }
   object Geometry {
     
-    @scala.inline
-    def apply(coordinates: js.Array[Double], interpolated: Boolean, `type`: String): Geometry = {
+    inline def apply(coordinates: js.Array[Double], interpolated: Boolean, `type`: String): Geometry = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], interpolated = interpolated.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Geometry]
     }
     
-    @scala.inline
-    implicit class GeometryMutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
+    extension [Self <: Geometry](x: Self) {
       
-      @scala.inline
-      def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      inline def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+      inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
       
-      @scala.inline
-      def setInterpolated(value: Boolean): Self = StObject.set(x, "interpolated", value.asInstanceOf[js.Any])
+      inline def setInterpolated(value: Boolean): Self = StObject.set(x, "interpolated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

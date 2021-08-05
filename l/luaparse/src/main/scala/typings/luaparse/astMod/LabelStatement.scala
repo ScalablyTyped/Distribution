@@ -13,17 +13,14 @@ trait LabelStatement
 }
 object LabelStatement {
   
-  @scala.inline
-  def apply(label: Identifier): LabelStatement = {
+  inline def apply(label: Identifier): LabelStatement = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("LabelStatement")
     __obj.asInstanceOf[LabelStatement]
   }
   
-  @scala.inline
-  implicit class LabelStatementMutableBuilder[Self <: LabelStatement] (val x: Self) extends AnyVal {
+  extension [Self <: LabelStatement](x: Self) {
     
-    @scala.inline
-    def setLabel(value: Identifier): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Identifier): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

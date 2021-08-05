@@ -36,97 +36,67 @@ trait PopupDropdownProps extends StObject {
 }
 object PopupDropdownProps {
   
-  @scala.inline
-  def apply(data: js.Array[Title]): PopupDropdownProps = {
+  inline def apply(data: js.Array[Title]): PopupDropdownProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupDropdownProps]
   }
   
-  @scala.inline
-  implicit class PopupDropdownPropsMutableBuilder[Self <: PopupDropdownProps] (val x: Self) extends AnyVal {
+  extension [Self <: PopupDropdownProps](x: Self) {
     
-    @scala.inline
-    def setCorner(value: Boolean): Self = StObject.set(x, "corner", value.asInstanceOf[js.Any])
+    inline def setCorner(value: Boolean): Self = StObject.set(x, "corner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornerColor(value: String): Self = StObject.set(x, "cornerColor", value.asInstanceOf[js.Any])
+    inline def setCornerColor(value: String): Self = StObject.set(x, "cornerColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornerColorUndefined: Self = StObject.set(x, "cornerColor", js.undefined)
+    inline def setCornerColorUndefined: Self = StObject.set(x, "cornerColor", js.undefined)
     
-    @scala.inline
-    def setCornerDirection(value: String): Self = StObject.set(x, "cornerDirection", value.asInstanceOf[js.Any])
+    inline def setCornerDirection(value: String): Self = StObject.set(x, "cornerDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornerDirectionUndefined: Self = StObject.set(x, "cornerDirection", js.undefined)
+    inline def setCornerDirectionUndefined: Self = StObject.set(x, "cornerDirection", js.undefined)
     
-    @scala.inline
-    def setCornerDirectionValue(value: String): Self = StObject.set(x, "cornerDirectionValue", value.asInstanceOf[js.Any])
+    inline def setCornerDirectionValue(value: String): Self = StObject.set(x, "cornerDirectionValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornerDirectionValueUndefined: Self = StObject.set(x, "cornerDirectionValue", js.undefined)
+    inline def setCornerDirectionValueUndefined: Self = StObject.set(x, "cornerDirectionValue", js.undefined)
     
-    @scala.inline
-    def setCornerSize(value: String): Self = StObject.set(x, "cornerSize", value.asInstanceOf[js.Any])
+    inline def setCornerSize(value: String): Self = StObject.set(x, "cornerSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornerSizeUndefined: Self = StObject.set(x, "cornerSize", js.undefined)
+    inline def setCornerSizeUndefined: Self = StObject.set(x, "cornerSize", js.undefined)
     
-    @scala.inline
-    def setCornerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "cornerStyle", value.asInstanceOf[js.Any])
+    inline def setCornerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "cornerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornerStyleNull: Self = StObject.set(x, "cornerStyle", null)
+    inline def setCornerStyleNull: Self = StObject.set(x, "cornerStyle", null)
     
-    @scala.inline
-    def setCornerStyleUndefined: Self = StObject.set(x, "cornerStyle", js.undefined)
+    inline def setCornerStyleUndefined: Self = StObject.set(x, "cornerStyle", js.undefined)
     
-    @scala.inline
-    def setCornerUndefined: Self = StObject.set(x, "corner", js.undefined)
+    inline def setCornerUndefined: Self = StObject.set(x, "corner", js.undefined)
     
-    @scala.inline
-    def setCustomCornerSize(value: String): Self = StObject.set(x, "customCornerSize", value.asInstanceOf[js.Any])
+    inline def setCustomCornerSize(value: String): Self = StObject.set(x, "customCornerSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomCornerSizeUndefined: Self = StObject.set(x, "customCornerSize", js.undefined)
+    inline def setCustomCornerSizeUndefined: Self = StObject.set(x, "customCornerSize", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Array[Title]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Title]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: Title*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Title*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setListStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
+    inline def setListStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListStyleNull: Self = StObject.set(x, "listStyle", null)
+    inline def setListStyleNull: Self = StObject.set(x, "listStyle", null)
     
-    @scala.inline
-    def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
+    inline def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
     
-    @scala.inline
-    def setOnSelect(value: /* value */ js.UndefOr[Double | String] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+    inline def setOnSelect(value: /* value */ js.UndefOr[Double | String] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+    inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
-    @scala.inline
-    def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
+    inline def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
     
-    @scala.inline
-    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
-    @scala.inline
-    def setTouchViewStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "touchViewStyle", value.asInstanceOf[js.Any])
+    inline def setTouchViewStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "touchViewStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchViewStyleNull: Self = StObject.set(x, "touchViewStyle", null)
+    inline def setTouchViewStyleNull: Self = StObject.set(x, "touchViewStyle", null)
     
-    @scala.inline
-    def setTouchViewStyleUndefined: Self = StObject.set(x, "touchViewStyle", js.undefined)
+    inline def setTouchViewStyleUndefined: Self = StObject.set(x, "touchViewStyle", js.undefined)
   }
 }

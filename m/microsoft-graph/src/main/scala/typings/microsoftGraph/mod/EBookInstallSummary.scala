@@ -28,49 +28,35 @@ trait EBookInstallSummary
 }
 object EBookInstallSummary {
   
-  @scala.inline
-  def apply(): EBookInstallSummary = {
+  inline def apply(): EBookInstallSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EBookInstallSummary]
   }
   
-  @scala.inline
-  implicit class EBookInstallSummaryMutableBuilder[Self <: EBookInstallSummary] (val x: Self) extends AnyVal {
+  extension [Self <: EBookInstallSummary](x: Self) {
     
-    @scala.inline
-    def setFailedDeviceCount(value: Double): Self = StObject.set(x, "failedDeviceCount", value.asInstanceOf[js.Any])
+    inline def setFailedDeviceCount(value: Double): Self = StObject.set(x, "failedDeviceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedDeviceCountUndefined: Self = StObject.set(x, "failedDeviceCount", js.undefined)
+    inline def setFailedDeviceCountUndefined: Self = StObject.set(x, "failedDeviceCount", js.undefined)
     
-    @scala.inline
-    def setFailedUserCount(value: Double): Self = StObject.set(x, "failedUserCount", value.asInstanceOf[js.Any])
+    inline def setFailedUserCount(value: Double): Self = StObject.set(x, "failedUserCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedUserCountUndefined: Self = StObject.set(x, "failedUserCount", js.undefined)
+    inline def setFailedUserCountUndefined: Self = StObject.set(x, "failedUserCount", js.undefined)
     
-    @scala.inline
-    def setInstalledDeviceCount(value: Double): Self = StObject.set(x, "installedDeviceCount", value.asInstanceOf[js.Any])
+    inline def setInstalledDeviceCount(value: Double): Self = StObject.set(x, "installedDeviceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstalledDeviceCountUndefined: Self = StObject.set(x, "installedDeviceCount", js.undefined)
+    inline def setInstalledDeviceCountUndefined: Self = StObject.set(x, "installedDeviceCount", js.undefined)
     
-    @scala.inline
-    def setInstalledUserCount(value: Double): Self = StObject.set(x, "installedUserCount", value.asInstanceOf[js.Any])
+    inline def setInstalledUserCount(value: Double): Self = StObject.set(x, "installedUserCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstalledUserCountUndefined: Self = StObject.set(x, "installedUserCount", js.undefined)
+    inline def setInstalledUserCountUndefined: Self = StObject.set(x, "installedUserCount", js.undefined)
     
-    @scala.inline
-    def setNotInstalledDeviceCount(value: Double): Self = StObject.set(x, "notInstalledDeviceCount", value.asInstanceOf[js.Any])
+    inline def setNotInstalledDeviceCount(value: Double): Self = StObject.set(x, "notInstalledDeviceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotInstalledDeviceCountUndefined: Self = StObject.set(x, "notInstalledDeviceCount", js.undefined)
+    inline def setNotInstalledDeviceCountUndefined: Self = StObject.set(x, "notInstalledDeviceCount", js.undefined)
     
-    @scala.inline
-    def setNotInstalledUserCount(value: Double): Self = StObject.set(x, "notInstalledUserCount", value.asInstanceOf[js.Any])
+    inline def setNotInstalledUserCount(value: Double): Self = StObject.set(x, "notInstalledUserCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotInstalledUserCountUndefined: Self = StObject.set(x, "notInstalledUserCount", js.undefined)
+    inline def setNotInstalledUserCountUndefined: Self = StObject.set(x, "notInstalledUserCount", js.undefined)
   }
 }

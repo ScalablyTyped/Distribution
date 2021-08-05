@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpSoundFormatType extends StObject
 object PpSoundFormatType {
   
-  @scala.inline
-  def ppSoundFormatCDAudio: `3` = 3.asInstanceOf[`3`]
+  inline def ppSoundFormatCDAudio: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppSoundFormatMIDI: `2` = 2.asInstanceOf[`2`]
+  inline def ppSoundFormatMIDI: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppSoundFormatMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def ppSoundFormatMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def ppSoundFormatNone: `0` = 0.asInstanceOf[`0`]
+  inline def ppSoundFormatNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ppSoundFormatWAV: `1` = 1.asInstanceOf[`1`]
+  inline def ppSoundFormatWAV: `1` = 1.asInstanceOf[`1`]
 }

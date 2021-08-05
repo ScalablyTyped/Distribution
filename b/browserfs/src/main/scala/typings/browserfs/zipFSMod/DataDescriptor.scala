@@ -14,7 +14,7 @@ class DataDescriptor protected () extends StObject {
   
   def crc32(): Double = js.native
   
-  var data: js.Any = js.native
+  /* private */ var data: js.Any = js.native
   
   def uncompressedSize(): Double = js.native
 }

@@ -56,8 +56,7 @@ trait NDStreamParserNotifier extends StObject {
 }
 object NDStreamParserNotifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onBeginSetupDecryptor: (IMediaStreamDescriptor, String, js.Array[Double]) => Unit,
     onContentIDReceived: INDLicenseFetchDescriptor => Unit,
     onMediaStreamDescriptorCreated: (IVector[AudioStreamDescriptor], IVector[VideoStreamDescriptor]) => Unit,
@@ -67,20 +66,15 @@ object NDStreamParserNotifier {
     __obj.asInstanceOf[NDStreamParserNotifier]
   }
   
-  @scala.inline
-  implicit class NDStreamParserNotifierMutableBuilder[Self <: NDStreamParserNotifier] (val x: Self) extends AnyVal {
+  extension [Self <: NDStreamParserNotifier](x: Self) {
     
-    @scala.inline
-    def setOnBeginSetupDecryptor(value: (IMediaStreamDescriptor, String, js.Array[Double]) => Unit): Self = StObject.set(x, "onBeginSetupDecryptor", js.Any.fromFunction3(value))
+    inline def setOnBeginSetupDecryptor(value: (IMediaStreamDescriptor, String, js.Array[Double]) => Unit): Self = StObject.set(x, "onBeginSetupDecryptor", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnContentIDReceived(value: INDLicenseFetchDescriptor => Unit): Self = StObject.set(x, "onContentIDReceived", js.Any.fromFunction1(value))
+    inline def setOnContentIDReceived(value: INDLicenseFetchDescriptor => Unit): Self = StObject.set(x, "onContentIDReceived", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMediaStreamDescriptorCreated(value: (IVector[AudioStreamDescriptor], IVector[VideoStreamDescriptor]) => Unit): Self = StObject.set(x, "onMediaStreamDescriptorCreated", js.Any.fromFunction2(value))
+    inline def setOnMediaStreamDescriptorCreated(value: (IVector[AudioStreamDescriptor], IVector[VideoStreamDescriptor]) => Unit): Self = StObject.set(x, "onMediaStreamDescriptorCreated", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnSampleParsed(
+    inline def setOnSampleParsed(
       value: (Double, NDMediaStreamType, MediaStreamSample, Double, NDClosedCaptionFormat, js.Array[Double]) => Unit
     ): Self = StObject.set(x, "onSampleParsed", js.Any.fromFunction6(value))
   }

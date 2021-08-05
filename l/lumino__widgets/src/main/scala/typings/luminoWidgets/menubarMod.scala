@@ -26,53 +26,53 @@ object menubarMod {
   class MenuBar () extends Widget {
     def this(options: IOptions) = this()
     
-    var _activeIndex: js.Any = js.native
+    /* private */ var _activeIndex: js.Any = js.native
     
-    var _childMenu: js.Any = js.native
+    /* private */ var _childMenu: js.Any = js.native
     
     /**
       * Close the child menu immediately.
       *
       * This is a no-op if a child menu is not open.
       */
-    var _closeChildMenu: js.Any = js.native
+    /* private */ var _closeChildMenu: js.Any = js.native
     
     /**
       * Handle the `'keydown'` event for the menu bar.
       */
-    var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: js.Any = js.native
     
     /**
       * Handle the `'mousedown'` event for the menu bar.
       */
-    var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: js.Any = js.native
     
     /**
       * Handle the `'mouseleave'` event for the menu bar.
       */
-    var _evtMouseLeave: js.Any = js.native
+    /* private */ var _evtMouseLeave: js.Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the menu bar.
       */
-    var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: js.Any = js.native
     
-    var _menus: js.Any = js.native
+    /* private */ var _menus: js.Any = js.native
     
     /**
       * Handle the `aboutToClose` signal of a menu.
       */
-    var _onMenuAboutToClose: js.Any = js.native
+    /* private */ var _onMenuAboutToClose: js.Any = js.native
     
     /**
       * Handle the `menuRequested` signal of a child menu.
       */
-    var _onMenuMenuRequested: js.Any = js.native
+    /* private */ var _onMenuMenuRequested: js.Any = js.native
     
     /**
       * Handle the `changed` signal of a title object.
       */
-    var _onTitleChanged: js.Any = js.native
+    /* private */ var _onTitleChanged: js.Any = js.native
     
     /**
       * Open the child menu at the active index immediately.
@@ -80,7 +80,7 @@ object menubarMod {
       * If a different child menu is already open, it will be closed,
       * even if there is no active menu.
       */
-    var _openChildMenu: js.Any = js.native
+    /* private */ var _openChildMenu: js.Any = js.native
     
     /**
       * Get the index of the currently active menu.
@@ -307,20 +307,16 @@ object menubarMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+        inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       }
     }
     
@@ -341,20 +337,16 @@ object menubarMod {
     }
     object IRenderData {
       
-      @scala.inline
-      def apply(active: Boolean, title: Title[Widget]): IRenderData = {
+      inline def apply(active: Boolean, title: Title[Widget]): IRenderData = {
         val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[IRenderData]
       }
       
-      @scala.inline
-      implicit class IRenderDataMutableBuilder[Self <: IRenderData] (val x: Self) extends AnyVal {
+      extension [Self <: IRenderData](x: Self) {
         
-        @scala.inline
-        def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+        inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: Title[Widget]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: Title[Widget]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       }
     }
     
@@ -374,17 +366,14 @@ object menubarMod {
     }
     object IRenderer {
       
-      @scala.inline
-      def apply(renderItem: IRenderData => VirtualElement): IRenderer = {
+      inline def apply(renderItem: IRenderData => VirtualElement): IRenderer = {
         val __obj = js.Dynamic.literal(renderItem = js.Any.fromFunction1(renderItem))
         __obj.asInstanceOf[IRenderer]
       }
       
-      @scala.inline
-      implicit class IRendererMutableBuilder[Self <: IRenderer] (val x: Self) extends AnyVal {
+      extension [Self <: IRenderer](x: Self) {
         
-        @scala.inline
-        def setRenderItem(value: IRenderData => VirtualElement): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
+        inline def setRenderItem(value: IRenderData => VirtualElement): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
       }
     }
   }

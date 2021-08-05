@@ -15,16 +15,13 @@ trait MediaProtectionServiceCompletion extends StObject {
 }
 object MediaProtectionServiceCompletion {
   
-  @scala.inline
-  def apply(complete: Boolean => Unit): MediaProtectionServiceCompletion = {
+  inline def apply(complete: Boolean => Unit): MediaProtectionServiceCompletion = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
     __obj.asInstanceOf[MediaProtectionServiceCompletion]
   }
   
-  @scala.inline
-  implicit class MediaProtectionServiceCompletionMutableBuilder[Self <: MediaProtectionServiceCompletion] (val x: Self) extends AnyVal {
+  extension [Self <: MediaProtectionServiceCompletion](x: Self) {
     
-    @scala.inline
-    def setComplete(value: Boolean => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: Boolean => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
   }
 }

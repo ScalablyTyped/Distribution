@@ -13,16 +13,13 @@ trait GetTopicRuleDestinationRequest extends StObject {
 }
 object GetTopicRuleDestinationRequest {
   
-  @scala.inline
-  def apply(arn: AwsArn): GetTopicRuleDestinationRequest = {
+  inline def apply(arn: AwsArn): GetTopicRuleDestinationRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTopicRuleDestinationRequest]
   }
   
-  @scala.inline
-  implicit class GetTopicRuleDestinationRequestMutableBuilder[Self <: GetTopicRuleDestinationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetTopicRuleDestinationRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AwsArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AwsArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

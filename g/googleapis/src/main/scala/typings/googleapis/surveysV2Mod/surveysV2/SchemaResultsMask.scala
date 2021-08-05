@@ -12,28 +12,21 @@ trait SchemaResultsMask extends StObject {
 }
 object SchemaResultsMask {
   
-  @scala.inline
-  def apply(): SchemaResultsMask = {
+  inline def apply(): SchemaResultsMask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResultsMask]
   }
   
-  @scala.inline
-  implicit class SchemaResultsMaskMutableBuilder[Self <: SchemaResultsMask] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResultsMask](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[SchemaFieldMask]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[SchemaFieldMask]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: SchemaFieldMask*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: SchemaFieldMask*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
   }
 }

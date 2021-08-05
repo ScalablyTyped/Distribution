@@ -43,8 +43,7 @@ trait SceneService extends StObject {
 }
 object SceneService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copyright: String,
     layerId: Double,
     spatialReference: SpatialReference,
@@ -55,22 +54,16 @@ object SceneService {
     __obj.asInstanceOf[SceneService]
   }
   
-  @scala.inline
-  implicit class SceneServiceMutableBuilder[Self <: SceneService] (val x: Self) extends AnyVal {
+  extension [Self <: SceneService](x: Self) {
     
-    @scala.inline
-    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerId(value: Double): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: Double): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: SceneServiceVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: SceneServiceVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

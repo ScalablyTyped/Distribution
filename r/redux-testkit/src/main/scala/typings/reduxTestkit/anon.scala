@@ -17,8 +17,7 @@ object anon {
   }
   object Execute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       execute: (js.Any, /* repeated */ js.Any) => js.Any,
       expect: (js.Any, /* repeated */ js.Any) => ToReturn
     ): Execute = {
@@ -26,14 +25,11 @@ object anon {
       __obj.asInstanceOf[Execute]
     }
     
-    @scala.inline
-    implicit class ExecuteMutableBuilder[Self <: Execute] (val x: Self) extends AnyVal {
+    extension [Self <: Execute](x: Self) {
       
-      @scala.inline
-      def setExecute(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
+      inline def setExecute(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExpect(value: (js.Any, /* repeated */ js.Any) => ToReturn): Self = StObject.set(x, "expect", js.Any.fromFunction2(value))
+      inline def setExpect(value: (js.Any, /* repeated */ js.Any) => ToReturn): Self = StObject.set(x, "expect", js.Any.fromFunction2(value))
     }
   }
   
@@ -45,20 +41,16 @@ object anon {
   }
   object Flush {
     
-    @scala.inline
-    def apply(flush: () => Unit, reset: () => Unit): Flush = {
+    inline def apply(flush: () => Unit, reset: () => Unit): Flush = {
       val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush), reset = js.Any.fromFunction0(reset))
       __obj.asInstanceOf[Flush]
     }
     
-    @scala.inline
-    implicit class FlushMutableBuilder[Self <: Flush] (val x: Self) extends AnyVal {
+    extension [Self <: Flush](x: Self) {
       
-      @scala.inline
-      def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
   }
   
@@ -73,8 +65,7 @@ object anon {
   }
   object ReducerTestkitwithStatest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       execute: Action[js.Any] => js.Any,
       expect: Action[js.Any] => ToChangeInState,
       withState: js.Any => ReducerTestkit
@@ -83,17 +74,13 @@ object anon {
       __obj.asInstanceOf[ReducerTestkitwithStatest]
     }
     
-    @scala.inline
-    implicit class ReducerTestkitwithStatestMutableBuilder[Self <: ReducerTestkitwithStatest] (val x: Self) extends AnyVal {
+    extension [Self <: ReducerTestkitwithStatest](x: Self) {
       
-      @scala.inline
-      def setExecute(value: Action[js.Any] => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      inline def setExecute(value: Action[js.Any] => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExpect(value: Action[js.Any] => ToChangeInState): Self = StObject.set(x, "expect", js.Any.fromFunction1(value))
+      inline def setExpect(value: Action[js.Any] => ToChangeInState): Self = StObject.set(x, "expect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWithState(value: js.Any => ReducerTestkit): Self = StObject.set(x, "withState", js.Any.fromFunction1(value))
+      inline def setWithState(value: js.Any => ReducerTestkit): Self = StObject.set(x, "withState", js.Any.fromFunction1(value))
     }
   }
   
@@ -106,20 +93,16 @@ object anon {
   }
   object ThunkTestkitwithStatestat {
     
-    @scala.inline
-    def apply(execute: /* repeated */ js.Any => js.Any, withState: js.Any => ThunkTestkit): ThunkTestkitwithStatestat = {
+    inline def apply(execute: /* repeated */ js.Any => js.Any, withState: js.Any => ThunkTestkit): ThunkTestkitwithStatestat = {
       val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), withState = js.Any.fromFunction1(withState))
       __obj.asInstanceOf[ThunkTestkitwithStatestat]
     }
     
-    @scala.inline
-    implicit class ThunkTestkitwithStatestatMutableBuilder[Self <: ThunkTestkitwithStatestat] (val x: Self) extends AnyVal {
+    extension [Self <: ThunkTestkitwithStatestat](x: Self) {
       
-      @scala.inline
-      def setExecute(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      inline def setExecute(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWithState(value: js.Any => ThunkTestkit): Self = StObject.set(x, "withState", js.Any.fromFunction1(value))
+      inline def setWithState(value: js.Any => ThunkTestkit): Self = StObject.set(x, "withState", js.Any.fromFunction1(value))
     }
   }
   
@@ -133,23 +116,18 @@ object anon {
   }
   object ToChangeInState {
     
-    @scala.inline
-    def apply(toChangeInState: js.Any => Unit, toReturnState: js.Any => Unit, toStayTheSame: () => Unit): ToChangeInState = {
+    inline def apply(toChangeInState: js.Any => Unit, toReturnState: js.Any => Unit, toStayTheSame: () => Unit): ToChangeInState = {
       val __obj = js.Dynamic.literal(toChangeInState = js.Any.fromFunction1(toChangeInState), toReturnState = js.Any.fromFunction1(toReturnState), toStayTheSame = js.Any.fromFunction0(toStayTheSame))
       __obj.asInstanceOf[ToChangeInState]
     }
     
-    @scala.inline
-    implicit class ToChangeInStateMutableBuilder[Self <: ToChangeInState] (val x: Self) extends AnyVal {
+    extension [Self <: ToChangeInState](x: Self) {
       
-      @scala.inline
-      def setToChangeInState(value: js.Any => Unit): Self = StObject.set(x, "toChangeInState", js.Any.fromFunction1(value))
+      inline def setToChangeInState(value: js.Any => Unit): Self = StObject.set(x, "toChangeInState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToReturnState(value: js.Any => Unit): Self = StObject.set(x, "toReturnState", js.Any.fromFunction1(value))
+      inline def setToReturnState(value: js.Any => Unit): Self = StObject.set(x, "toReturnState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToStayTheSame(value: () => Unit): Self = StObject.set(x, "toStayTheSame", js.Any.fromFunction0(value))
+      inline def setToStayTheSame(value: () => Unit): Self = StObject.set(x, "toStayTheSame", js.Any.fromFunction0(value))
     }
   }
   
@@ -159,17 +137,14 @@ object anon {
   }
   object ToReturn {
     
-    @scala.inline
-    def apply(toReturn: js.Any => Unit): ToReturn = {
+    inline def apply(toReturn: js.Any => Unit): ToReturn = {
       val __obj = js.Dynamic.literal(toReturn = js.Any.fromFunction1(toReturn))
       __obj.asInstanceOf[ToReturn]
     }
     
-    @scala.inline
-    implicit class ToReturnMutableBuilder[Self <: ToReturn] (val x: Self) extends AnyVal {
+    extension [Self <: ToReturn](x: Self) {
       
-      @scala.inline
-      def setToReturn(value: js.Any => Unit): Self = StObject.set(x, "toReturn", js.Any.fromFunction1(value))
+      inline def setToReturn(value: js.Any => Unit): Self = StObject.set(x, "toReturn", js.Any.fromFunction1(value))
     }
   }
 }

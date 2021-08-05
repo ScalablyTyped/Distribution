@@ -93,77 +93,54 @@ object mod extends Shortcut {
   }
   object RegisterOptions {
     
-    @scala.inline
-    def apply(): RegisterOptions = {
+    inline def apply(): RegisterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RegisterOptions]
     }
     
-    @scala.inline
-    implicit class RegisterOptionsMutableBuilder[Self <: RegisterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RegisterOptions](x: Self) {
       
-      @scala.inline
-      def setAddToViewContext(value: Boolean): Self = StObject.set(x, "addToViewContext", value.asInstanceOf[js.Any])
+      inline def setAddToViewContext(value: Boolean): Self = StObject.set(x, "addToViewContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddToViewContextUndefined: Self = StObject.set(x, "addToViewContext", js.undefined)
+      inline def setAddToViewContextUndefined: Self = StObject.set(x, "addToViewContext", js.undefined)
       
-      @scala.inline
-      def setAutoGenerate(value: Boolean): Self = StObject.set(x, "autoGenerate", value.asInstanceOf[js.Any])
+      inline def setAutoGenerate(value: Boolean): Self = StObject.set(x, "autoGenerate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoGenerateUndefined: Self = StObject.set(x, "autoGenerate", js.undefined)
+      inline def setAutoGenerateUndefined: Self = StObject.set(x, "autoGenerate", js.undefined)
       
-      @scala.inline
-      def setCookieOptions(value: ServerStateCookieOptions): Self = StObject.set(x, "cookieOptions", value.asInstanceOf[js.Any])
+      inline def setCookieOptions(value: ServerStateCookieOptions): Self = StObject.set(x, "cookieOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieOptionsUndefined: Self = StObject.set(x, "cookieOptions", js.undefined)
+      inline def setCookieOptionsUndefined: Self = StObject.set(x, "cookieOptions", js.undefined)
       
-      @scala.inline
-      def setEnforce(value: Boolean): Self = StObject.set(x, "enforce", value.asInstanceOf[js.Any])
+      inline def setEnforce(value: Boolean): Self = StObject.set(x, "enforce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnforceUndefined: Self = StObject.set(x, "enforce", js.undefined)
+      inline def setEnforceUndefined: Self = StObject.set(x, "enforce", js.undefined)
       
-      @scala.inline
-      def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
+      inline def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderNameUndefined: Self = StObject.set(x, "headerName", js.undefined)
+      inline def setHeaderNameUndefined: Self = StObject.set(x, "headerName", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLogUnauthorized(value: Boolean): Self = StObject.set(x, "logUnauthorized", value.asInstanceOf[js.Any])
+      inline def setLogUnauthorized(value: Boolean): Self = StObject.set(x, "logUnauthorized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUnauthorizedUndefined: Self = StObject.set(x, "logUnauthorized", js.undefined)
+      inline def setLogUnauthorizedUndefined: Self = StObject.set(x, "logUnauthorized", js.undefined)
       
-      @scala.inline
-      def setRestful(value: Boolean): Self = StObject.set(x, "restful", value.asInstanceOf[js.Any])
+      inline def setRestful(value: Boolean): Self = StObject.set(x, "restful", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestfulUndefined: Self = StObject.set(x, "restful", js.undefined)
+      inline def setRestfulUndefined: Self = StObject.set(x, "restful", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSkip(value: Boolean | SkipFunction): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Boolean | SkipFunction): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipFunction2(value: (/* request */ js.UndefOr[Request], /* h */ js.UndefOr[ResponseToolkit]) => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
+      inline def setSkipFunction2(value: (/* request */ js.UndefOr[Request], /* h */ js.UndefOr[ResponseToolkit]) => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     }
   }
   
@@ -183,20 +160,16 @@ object mod extends Shortcut {
     }
     object PluginSpecificConfiguration {
       
-      @scala.inline
-      def apply(): PluginSpecificConfiguration = {
+      inline def apply(): PluginSpecificConfiguration = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PluginSpecificConfiguration]
       }
       
-      @scala.inline
-      implicit class PluginSpecificConfigurationMutableBuilder[Self <: PluginSpecificConfiguration] (val x: Self) extends AnyVal {
+      extension [Self <: PluginSpecificConfiguration](x: Self) {
         
-        @scala.inline
-        def setCrumb(value: Boolean | Key): Self = StObject.set(x, "crumb", value.asInstanceOf[js.Any])
+        inline def setCrumb(value: Boolean | Key): Self = StObject.set(x, "crumb", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCrumbUndefined: Self = StObject.set(x, "crumb", js.undefined)
+        inline def setCrumbUndefined: Self = StObject.set(x, "crumb", js.undefined)
       }
     }
   }

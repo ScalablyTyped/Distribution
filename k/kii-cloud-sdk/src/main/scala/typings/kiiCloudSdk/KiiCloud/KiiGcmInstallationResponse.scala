@@ -10,16 +10,13 @@ trait KiiGcmInstallationResponse extends StObject {
 }
 object KiiGcmInstallationResponse {
   
-  @scala.inline
-  def apply(installationID: String): KiiGcmInstallationResponse = {
+  inline def apply(installationID: String): KiiGcmInstallationResponse = {
     val __obj = js.Dynamic.literal(installationID = installationID.asInstanceOf[js.Any])
     __obj.asInstanceOf[KiiGcmInstallationResponse]
   }
   
-  @scala.inline
-  implicit class KiiGcmInstallationResponseMutableBuilder[Self <: KiiGcmInstallationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: KiiGcmInstallationResponse](x: Self) {
     
-    @scala.inline
-    def setInstallationID(value: String): Self = StObject.set(x, "installationID", value.asInstanceOf[js.Any])
+    inline def setInstallationID(value: String): Self = StObject.set(x, "installationID", value.asInstanceOf[js.Any])
   }
 }

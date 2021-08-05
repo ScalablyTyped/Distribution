@@ -64,32 +64,24 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setBoundary(value: String): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+      inline def setBoundary(value: String): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
+      inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
       
-      @scala.inline
-      def setHeaderFirst(value: Boolean): Self = StObject.set(x, "headerFirst", value.asInstanceOf[js.Any])
+      inline def setHeaderFirst(value: Boolean): Self = StObject.set(x, "headerFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderFirstUndefined: Self = StObject.set(x, "headerFirst", js.undefined)
+      inline def setHeaderFirstUndefined: Self = StObject.set(x, "headerFirst", js.undefined)
       
-      @scala.inline
-      def setMaxHeaderPairs(value: Double): Self = StObject.set(x, "maxHeaderPairs", value.asInstanceOf[js.Any])
+      inline def setMaxHeaderPairs(value: Double): Self = StObject.set(x, "maxHeaderPairs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeaderPairsUndefined: Self = StObject.set(x, "maxHeaderPairs", js.undefined)
+      inline def setMaxHeaderPairsUndefined: Self = StObject.set(x, "maxHeaderPairs", js.undefined)
     }
   }
   

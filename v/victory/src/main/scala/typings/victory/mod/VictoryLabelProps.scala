@@ -140,175 +140,119 @@ trait VictoryLabelProps extends StObject {
 }
 object VictoryLabelProps {
   
-  @scala.inline
-  def apply(): VictoryLabelProps = {
+  inline def apply(): VictoryLabelProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryLabelProps]
   }
   
-  @scala.inline
-  implicit class VictoryLabelPropsMutableBuilder[Self <: VictoryLabelProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryLabelProps](x: Self) {
     
-    @scala.inline
-    def setAngle(value: String | Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: String | Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setCapHeight(value: StringOrNumberOrCallback): Self = StObject.set(x, "capHeight", value.asInstanceOf[js.Any])
+    inline def setCapHeight(value: StringOrNumberOrCallback): Self = StObject.set(x, "capHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapHeightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "capHeight", js.Any.fromFunction1(value))
+    inline def setCapHeightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "capHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCapHeightUndefined: Self = StObject.set(x, "capHeight", js.undefined)
+    inline def setCapHeightUndefined: Self = StObject.set(x, "capHeight", js.undefined)
     
-    @scala.inline
-    def setChildren(value: StringOrNumberOrCallback): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: StringOrNumberOrCallback): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildrenFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setDatum(value: js.Object): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+    inline def setDatum(value: js.Object): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
+    inline def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
     
-    @scala.inline
-    def setDx(value: StringOrNumberOrCallback): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+    inline def setDx(value: StringOrNumberOrCallback): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDxFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "dx", js.Any.fromFunction1(value))
+    inline def setDxFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "dx", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
+    inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
     
-    @scala.inline
-    def setDy(value: StringOrNumberOrCallback): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    inline def setDy(value: StringOrNumberOrCallback): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "dy", js.Any.fromFunction1(value))
+    inline def setDyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "dy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
+    inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     
-    @scala.inline
-    def setEvents(value: DOMAttributes[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: DOMAttributes[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setLabelPlacement(value: parallel | perpendicular | vertical): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
+    inline def setLabelPlacement(value: parallel | perpendicular | vertical): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelPlacementUndefined: Self = StObject.set(x, "labelPlacement", js.undefined)
+    inline def setLabelPlacementUndefined: Self = StObject.set(x, "labelPlacement", js.undefined)
     
-    @scala.inline
-    def setLineHeight(value: StringOrNumberOrCallback): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: StringOrNumberOrCallback): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "lineHeight", js.Any.fromFunction1(value))
+    inline def setLineHeightFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "lineHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+    inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: XNumber): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: XNumber): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setPolar(value: Boolean): Self = StObject.set(x, "polar", value.asInstanceOf[js.Any])
+    inline def setPolar(value: Boolean): Self = StObject.set(x, "polar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolarUndefined: Self = StObject.set(x, "polar", js.undefined)
+    inline def setPolarUndefined: Self = StObject.set(x, "polar", js.undefined)
     
-    @scala.inline
-    def setRenderInPortal(value: Boolean): Self = StObject.set(x, "renderInPortal", value.asInstanceOf[js.Any])
+    inline def setRenderInPortal(value: Boolean): Self = StObject.set(x, "renderInPortal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderInPortalUndefined: Self = StObject.set(x, "renderInPortal", js.undefined)
+    inline def setRenderInPortalUndefined: Self = StObject.set(x, "renderInPortal", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties | js.Array[CSSProperties]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties | js.Array[CSSProperties]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setStyleVarargs(value: CSSProperties*): Self = StObject.set(x, "style", js.Array(value :_*))
+    inline def setStyleVarargs(value: CSSProperties*): Self = StObject.set(x, "style", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: js.Array[String] | StringOrNumberOrCallback): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: js.Array[String] | StringOrNumberOrCallback): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAnchor(value: TextAnchorType | js.Function0[TextAnchorType]): Self = StObject.set(x, "textAnchor", value.asInstanceOf[js.Any])
+    inline def setTextAnchor(value: TextAnchorType | js.Function0[TextAnchorType]): Self = StObject.set(x, "textAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAnchorFunction0(value: () => TextAnchorType): Self = StObject.set(x, "textAnchor", js.Any.fromFunction0(value))
+    inline def setTextAnchorFunction0(value: () => TextAnchorType): Self = StObject.set(x, "textAnchor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextAnchorUndefined: Self = StObject.set(x, "textAnchor", js.undefined)
+    inline def setTextAnchorUndefined: Self = StObject.set(x, "textAnchor", js.undefined)
     
-    @scala.inline
-    def setTextFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+    inline def setTextFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
     
-    @scala.inline
-    def setTransform(value: String | js.Object | (js.Function0[String | js.Object])): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: String | js.Object | (js.Function0[String | js.Object])): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformFunction0(value: () => String | js.Object): Self = StObject.set(x, "transform", js.Any.fromFunction0(value))
+    inline def setTransformFunction0(value: () => String | js.Object): Self = StObject.set(x, "transform", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    @scala.inline
-    def setVerticalAnchor(value: VerticalAnchorType | js.Function0[VerticalAnchorType]): Self = StObject.set(x, "verticalAnchor", value.asInstanceOf[js.Any])
+    inline def setVerticalAnchor(value: VerticalAnchorType | js.Function0[VerticalAnchorType]): Self = StObject.set(x, "verticalAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAnchorFunction0(value: () => VerticalAnchorType): Self = StObject.set(x, "verticalAnchor", js.Any.fromFunction0(value))
+    inline def setVerticalAnchorFunction0(value: () => VerticalAnchorType): Self = StObject.set(x, "verticalAnchor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVerticalAnchorUndefined: Self = StObject.set(x, "verticalAnchor", js.undefined)
+    inline def setVerticalAnchorUndefined: Self = StObject.set(x, "verticalAnchor", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

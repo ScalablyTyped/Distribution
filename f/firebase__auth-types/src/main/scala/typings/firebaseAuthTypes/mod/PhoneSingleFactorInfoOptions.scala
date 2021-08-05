@@ -12,16 +12,13 @@ trait PhoneSingleFactorInfoOptions
 }
 object PhoneSingleFactorInfoOptions {
   
-  @scala.inline
-  def apply(phoneNumber: String): PhoneSingleFactorInfoOptions = {
+  inline def apply(phoneNumber: String): PhoneSingleFactorInfoOptions = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneSingleFactorInfoOptions]
   }
   
-  @scala.inline
-  implicit class PhoneSingleFactorInfoOptionsMutableBuilder[Self <: PhoneSingleFactorInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneSingleFactorInfoOptions](x: Self) {
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
   }
 }

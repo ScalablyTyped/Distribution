@@ -14,20 +14,16 @@ object anon {
   }
   object Production {
     
-    @scala.inline
-    def apply(production: String, staging: String): Production = {
+    inline def apply(production: String, staging: String): Production = {
       val __obj = js.Dynamic.literal(production = production.asInstanceOf[js.Any], staging = staging.asInstanceOf[js.Any])
       __obj.asInstanceOf[Production]
     }
     
-    @scala.inline
-    implicit class ProductionMutableBuilder[Self <: Production] (val x: Self) extends AnyVal {
+    extension [Self <: Production](x: Self) {
       
-      @scala.inline
-      def setProduction(value: String): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
+      inline def setProduction(value: String): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaging(value: String): Self = StObject.set(x, "staging", value.asInstanceOf[js.Any])
+      inline def setStaging(value: String): Self = StObject.set(x, "staging", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -28,19 +28,15 @@ trait PromptModuleBase extends StObject {
 }
 object PromptModuleBase {
   
-  @scala.inline
-  def apply(registerPrompt: (String, PromptConstructor) => Unit, restoreDefaultPrompts: () => Unit): PromptModuleBase = {
+  inline def apply(registerPrompt: (String, PromptConstructor) => Unit, restoreDefaultPrompts: () => Unit): PromptModuleBase = {
     val __obj = js.Dynamic.literal(registerPrompt = js.Any.fromFunction2(registerPrompt), restoreDefaultPrompts = js.Any.fromFunction0(restoreDefaultPrompts))
     __obj.asInstanceOf[PromptModuleBase]
   }
   
-  @scala.inline
-  implicit class PromptModuleBaseMutableBuilder[Self <: PromptModuleBase] (val x: Self) extends AnyVal {
+  extension [Self <: PromptModuleBase](x: Self) {
     
-    @scala.inline
-    def setRegisterPrompt(value: (String, PromptConstructor) => Unit): Self = StObject.set(x, "registerPrompt", js.Any.fromFunction2(value))
+    inline def setRegisterPrompt(value: (String, PromptConstructor) => Unit): Self = StObject.set(x, "registerPrompt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRestoreDefaultPrompts(value: () => Unit): Self = StObject.set(x, "restoreDefaultPrompts", js.Any.fromFunction0(value))
+    inline def setRestoreDefaultPrompts(value: () => Unit): Self = StObject.set(x, "restoreDefaultPrompts", js.Any.fromFunction0(value))
   }
 }

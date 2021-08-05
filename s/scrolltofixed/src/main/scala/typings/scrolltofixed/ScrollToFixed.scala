@@ -52,146 +52,100 @@ object ScrollToFixed {
   }
   object ScrollToFixedOptions {
     
-    @scala.inline
-    def apply(): ScrollToFixedOptions = {
+    inline def apply(): ScrollToFixedOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScrollToFixedOptions]
     }
     
-    @scala.inline
-    implicit class ScrollToFixedOptionsMutableBuilder[Self <: ScrollToFixedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollToFixedOptions](x: Self) {
       
-      @scala.inline
-      def setBaseClassName(value: String): Self = StObject.set(x, "baseClassName", value.asInstanceOf[js.Any])
+      inline def setBaseClassName(value: String): Self = StObject.set(x, "baseClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseClassNameUndefined: Self = StObject.set(x, "baseClassName", js.undefined)
+      inline def setBaseClassNameUndefined: Self = StObject.set(x, "baseClassName", js.undefined)
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDontCheckForPositionFixedSupport(value: Boolean): Self = StObject.set(x, "dontCheckForPositionFixedSupport", value.asInstanceOf[js.Any])
+      inline def setDontCheckForPositionFixedSupport(value: Boolean): Self = StObject.set(x, "dontCheckForPositionFixedSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDontCheckForPositionFixedSupportUndefined: Self = StObject.set(x, "dontCheckForPositionFixedSupport", js.undefined)
+      inline def setDontCheckForPositionFixedSupportUndefined: Self = StObject.set(x, "dontCheckForPositionFixedSupport", js.undefined)
       
-      @scala.inline
-      def setDontSetWidth(value: Boolean): Self = StObject.set(x, "dontSetWidth", value.asInstanceOf[js.Any])
+      inline def setDontSetWidth(value: Boolean): Self = StObject.set(x, "dontSetWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDontSetWidthUndefined: Self = StObject.set(x, "dontSetWidth", js.undefined)
+      inline def setDontSetWidthUndefined: Self = StObject.set(x, "dontSetWidth", js.undefined)
       
-      @scala.inline
-      def setFixed(value: () => Unit): Self = StObject.set(x, "fixed", js.Any.fromFunction0(value))
+      inline def setFixed(value: () => Unit): Self = StObject.set(x, "fixed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+      inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double | js.Function0[Double]): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double | js.Function0[Double]): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitFunction0(value: () => Double): Self = StObject.set(x, "limit", js.Any.fromFunction0(value))
+      inline def setLimitFunction0(value: () => Double): Self = StObject.set(x, "limit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setMarginTop(value: Double | js.Function0[Double]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: Double | js.Function0[Double]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginTopFunction0(value: () => Double): Self = StObject.set(x, "marginTop", js.Any.fromFunction0(value))
+      inline def setMarginTopFunction0(value: () => Double): Self = StObject.set(x, "marginTop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+      inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setOffsets(value: Boolean): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
+      inline def setOffsets(value: Boolean): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetsUndefined: Self = StObject.set(x, "offsets", js.undefined)
+      inline def setOffsetsUndefined: Self = StObject.set(x, "offsets", js.undefined)
       
-      @scala.inline
-      def setPostAbsolute(value: () => Unit): Self = StObject.set(x, "postAbsolute", js.Any.fromFunction0(value))
+      inline def setPostAbsolute(value: () => Unit): Self = StObject.set(x, "postAbsolute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPostAbsoluteUndefined: Self = StObject.set(x, "postAbsolute", js.undefined)
+      inline def setPostAbsoluteUndefined: Self = StObject.set(x, "postAbsolute", js.undefined)
       
-      @scala.inline
-      def setPostFixed(value: () => Unit): Self = StObject.set(x, "postFixed", js.Any.fromFunction0(value))
+      inline def setPostFixed(value: () => Unit): Self = StObject.set(x, "postFixed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPostFixedUndefined: Self = StObject.set(x, "postFixed", js.undefined)
+      inline def setPostFixedUndefined: Self = StObject.set(x, "postFixed", js.undefined)
       
-      @scala.inline
-      def setPostUnfixed(value: () => Unit): Self = StObject.set(x, "postUnfixed", js.Any.fromFunction0(value))
+      inline def setPostUnfixed(value: () => Unit): Self = StObject.set(x, "postUnfixed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPostUnfixedUndefined: Self = StObject.set(x, "postUnfixed", js.undefined)
+      inline def setPostUnfixedUndefined: Self = StObject.set(x, "postUnfixed", js.undefined)
       
-      @scala.inline
-      def setPreAbsolute(value: () => Unit): Self = StObject.set(x, "preAbsolute", js.Any.fromFunction0(value))
+      inline def setPreAbsolute(value: () => Unit): Self = StObject.set(x, "preAbsolute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreAbsoluteUndefined: Self = StObject.set(x, "preAbsolute", js.undefined)
+      inline def setPreAbsoluteUndefined: Self = StObject.set(x, "preAbsolute", js.undefined)
       
-      @scala.inline
-      def setPreFixed(value: () => Unit): Self = StObject.set(x, "preFixed", js.Any.fromFunction0(value))
+      inline def setPreFixed(value: () => Unit): Self = StObject.set(x, "preFixed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreFixedUndefined: Self = StObject.set(x, "preFixed", js.undefined)
+      inline def setPreFixedUndefined: Self = StObject.set(x, "preFixed", js.undefined)
       
-      @scala.inline
-      def setPreUnfixed(value: () => Unit): Self = StObject.set(x, "preUnfixed", js.Any.fromFunction0(value))
+      inline def setPreUnfixed(value: () => Unit): Self = StObject.set(x, "preUnfixed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreUnfixedUndefined: Self = StObject.set(x, "preUnfixed", js.undefined)
+      inline def setPreUnfixedUndefined: Self = StObject.set(x, "preUnfixed", js.undefined)
       
-      @scala.inline
-      def setRemoveOffsets(value: Boolean): Self = StObject.set(x, "removeOffsets", value.asInstanceOf[js.Any])
+      inline def setRemoveOffsets(value: Boolean): Self = StObject.set(x, "removeOffsets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveOffsetsUndefined: Self = StObject.set(x, "removeOffsets", js.undefined)
+      inline def setRemoveOffsetsUndefined: Self = StObject.set(x, "removeOffsets", js.undefined)
       
-      @scala.inline
-      def setSpacerClass(value: String): Self = StObject.set(x, "spacerClass", value.asInstanceOf[js.Any])
+      inline def setSpacerClass(value: String): Self = StObject.set(x, "spacerClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacerClassUndefined: Self = StObject.set(x, "spacerClass", js.undefined)
+      inline def setSpacerClassUndefined: Self = StObject.set(x, "spacerClass", js.undefined)
       
-      @scala.inline
-      def setUnfixed(value: () => Unit): Self = StObject.set(x, "unfixed", js.Any.fromFunction0(value))
+      inline def setUnfixed(value: () => Unit): Self = StObject.set(x, "unfixed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnfixedUndefined: Self = StObject.set(x, "unfixed", js.undefined)
+      inline def setUnfixedUndefined: Self = StObject.set(x, "unfixed", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
 }

@@ -90,8 +90,7 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def enableAsyncStackTrace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableAsyncStackTrace")().asInstanceOf[Unit]
+    inline def enableAsyncStackTrace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableAsyncStackTrace")().asInstanceOf[Unit]
   }
   
   @JSImport("async-writer", "BufferedWriter")
@@ -122,17 +121,12 @@ object mod {
     def write(what: String): StringWriter = js.native
   }
   
-  @scala.inline
-  def create(): AsyncWriter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[AsyncWriter]
-  @scala.inline
-  def create(writer: js.Any): AsyncWriter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(writer.asInstanceOf[js.Any]).asInstanceOf[AsyncWriter]
-  @scala.inline
-  def create(writer: js.Any, options: AsyncWriterOptions): AsyncWriter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(writer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncWriter]
-  @scala.inline
-  def create(writer: Unit, options: AsyncWriterOptions): AsyncWriter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(writer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncWriter]
+  inline def create(): AsyncWriter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[AsyncWriter]
+  inline def create(writer: js.Any): AsyncWriter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(writer.asInstanceOf[js.Any]).asInstanceOf[AsyncWriter]
+  inline def create(writer: js.Any, options: AsyncWriterOptions): AsyncWriter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(writer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncWriter]
+  inline def create(writer: Unit, options: AsyncWriterOptions): AsyncWriter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(writer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncWriter]
   
-  @scala.inline
-  def enableAsyncStackTrace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableAsyncStackTrace")().asInstanceOf[Unit]
+  inline def enableAsyncStackTrace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableAsyncStackTrace")().asInstanceOf[Unit]
   
   trait AsyncWriterOptions extends StObject {
     
@@ -142,26 +136,20 @@ object mod {
   }
   object AsyncWriterOptions {
     
-    @scala.inline
-    def apply(): AsyncWriterOptions = {
+    inline def apply(): AsyncWriterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsyncWriterOptions]
     }
     
-    @scala.inline
-    implicit class AsyncWriterOptionsMutableBuilder[Self <: AsyncWriterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncWriterOptions](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      @scala.inline
-      def setGlobal(value: StringDictionary[js.Any]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: StringDictionary[js.Any]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     }
   }
   
@@ -175,32 +163,24 @@ object mod {
   }
   object BeginAsyncOptions {
     
-    @scala.inline
-    def apply(): BeginAsyncOptions = {
+    inline def apply(): BeginAsyncOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BeginAsyncOptions]
     }
     
-    @scala.inline
-    implicit class BeginAsyncOptionsMutableBuilder[Self <: BeginAsyncOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BeginAsyncOptions](x: Self) {
       
-      @scala.inline
-      def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+      inline def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+      inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   

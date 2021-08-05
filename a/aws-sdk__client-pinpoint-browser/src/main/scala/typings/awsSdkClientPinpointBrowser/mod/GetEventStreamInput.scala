@@ -9,8 +9,7 @@ trait GetEventStreamInput
      with typings.awsSdkClientPinpointBrowser.typesGetEventStreamInputMod.GetEventStreamInput
 object GetEventStreamInput {
   
-  @scala.inline
-  def apply(ApplicationId: String): GetEventStreamInput = {
+  inline def apply(ApplicationId: String): GetEventStreamInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEventStreamInput]
   }

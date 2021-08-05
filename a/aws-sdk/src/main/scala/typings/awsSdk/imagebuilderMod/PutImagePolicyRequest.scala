@@ -18,19 +18,15 @@ trait PutImagePolicyRequest extends StObject {
 }
 object PutImagePolicyRequest {
   
-  @scala.inline
-  def apply(imageArn: ImageBuildVersionArn, policy: ResourcePolicyDocument): PutImagePolicyRequest = {
+  inline def apply(imageArn: ImageBuildVersionArn, policy: ResourcePolicyDocument): PutImagePolicyRequest = {
     val __obj = js.Dynamic.literal(imageArn = imageArn.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutImagePolicyRequest]
   }
   
-  @scala.inline
-  implicit class PutImagePolicyRequestMutableBuilder[Self <: PutImagePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutImagePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setImageArn(value: ImageBuildVersionArn): Self = StObject.set(x, "imageArn", value.asInstanceOf[js.Any])
+    inline def setImageArn(value: ImageBuildVersionArn): Self = StObject.set(x, "imageArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicy(value: ResourcePolicyDocument): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: ResourcePolicyDocument): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
   }
 }

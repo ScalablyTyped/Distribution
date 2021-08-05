@@ -23,8 +23,7 @@ trait GroupElement
      with HierarchyElement
 object GroupElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AsProperty: Property,
     DefaultAsProperty: XInterface,
     HierarchicalName: String,

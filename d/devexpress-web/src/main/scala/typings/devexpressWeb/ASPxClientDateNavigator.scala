@@ -30,8 +30,7 @@ trait ASPxClientDateNavigator
 }
 object ASPxClientDateNavigator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     DayCellCustomHighlight: ASPxClientEvent[
       ASPxClientDateNavigatorDayCellCustomHighlightEventHandler[ASPxClientDateNavigator]
@@ -57,23 +56,19 @@ object ASPxClientDateNavigator {
     __obj.asInstanceOf[ASPxClientDateNavigator]
   }
   
-  @scala.inline
-  implicit class ASPxClientDateNavigatorMutableBuilder[Self <: ASPxClientDateNavigator] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDateNavigator](x: Self) {
     
-    @scala.inline
-    def setDayCellCustomHighlight(
+    inline def setDayCellCustomHighlight(
       value: ASPxClientEvent[
           ASPxClientDateNavigatorDayCellCustomHighlightEventHandler[ASPxClientDateNavigator]
         ]
     ): Self = StObject.set(x, "DayCellCustomHighlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionChanged(
+    inline def setSelectionChanged(
       value: ASPxClientEvent[ASPxClientDateNavigatorSelectionChangedEventHandler[ASPxClientDateNavigator]]
     ): Self = StObject.set(x, "SelectionChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleMonthChanged(
+    inline def setVisibleMonthChanged(
       value: ASPxClientEvent[ASPxClientDateNavigatorVisibleMonthChangedEventHandler[ASPxClientDateNavigator]]
     ): Self = StObject.set(x, "VisibleMonthChanged", value.asInstanceOf[js.Any])
   }

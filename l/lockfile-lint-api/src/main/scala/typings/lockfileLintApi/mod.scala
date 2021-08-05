@@ -64,21 +64,17 @@ object mod {
   }
   object Error {
     
-    @scala.inline
-    def apply(_package: String, message: String): Error = {
+    inline def apply(_package: String, message: String): Error = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+      inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,29 +90,22 @@ object mod {
   }
   object PackageMetadata {
     
-    @scala.inline
-    def apply(version: String): PackageMetadata = {
+    inline def apply(version: String): PackageMetadata = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[PackageMetadata]
     }
     
-    @scala.inline
-    implicit class PackageMetadataMutableBuilder[Self <: PackageMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: PackageMetadata](x: Self) {
       
-      @scala.inline
-      def setDependencies(value: Record[String, String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: Record[String, String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+      inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      @scala.inline
-      def setResolved(value: String): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
+      inline def setResolved(value: String): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
+      inline def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,20 +119,16 @@ object mod {
   }
   object ParseLockfileOptions {
     
-    @scala.inline
-    def apply(lockfilePath: String, lockfileType: String): ParseLockfileOptions = {
+    inline def apply(lockfilePath: String, lockfileType: String): ParseLockfileOptions = {
       val __obj = js.Dynamic.literal(lockfilePath = lockfilePath.asInstanceOf[js.Any], lockfileType = lockfileType.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseLockfileOptions]
     }
     
-    @scala.inline
-    implicit class ParseLockfileOptionsMutableBuilder[Self <: ParseLockfileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseLockfileOptions](x: Self) {
       
-      @scala.inline
-      def setLockfilePath(value: String): Self = StObject.set(x, "lockfilePath", value.asInstanceOf[js.Any])
+      inline def setLockfilePath(value: String): Self = StObject.set(x, "lockfilePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockfileType(value: String): Self = StObject.set(x, "lockfileType", value.asInstanceOf[js.Any])
+      inline def setLockfileType(value: String): Self = StObject.set(x, "lockfileType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,22 +140,18 @@ object mod {
   }
   object ParseLockfileResult {
     
-    @scala.inline
-    def apply(`object`: Packages): ParseLockfileResult = {
+    inline def apply(`object`: Packages): ParseLockfileResult = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("success")
       __obj.asInstanceOf[ParseLockfileResult]
     }
     
-    @scala.inline
-    implicit class ParseLockfileResultMutableBuilder[Self <: ParseLockfileResult] (val x: Self) extends AnyVal {
+    extension [Self <: ParseLockfileResult](x: Self) {
       
-      @scala.inline
-      def setObject(value: Packages): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Packages): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: success): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: success): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,24 +165,19 @@ object mod {
   }
   object ValidationError {
     
-    @scala.inline
-    def apply(errors: js.Array[Error]): ValidationError = {
+    inline def apply(errors: js.Array[Error]): ValidationError = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("error")
       __obj.asInstanceOf[ValidationError]
     }
     
-    @scala.inline
-    implicit class ValidationErrorMutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationError](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,20 +187,16 @@ object mod {
   }
   object ValidationOptions {
     
-    @scala.inline
-    def apply(): ValidationOptions = {
+    inline def apply(): ValidationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidationOptions]
     }
     
-    @scala.inline
-    implicit class ValidationOptionsMutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationOptions](x: Self) {
       
-      @scala.inline
-      def setEmptyHostname(value: Boolean): Self = StObject.set(x, "emptyHostname", value.asInstanceOf[js.Any])
+      inline def setEmptyHostname(value: Boolean): Self = StObject.set(x, "emptyHostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyHostnameUndefined: Self = StObject.set(x, "emptyHostname", js.undefined)
+      inline def setEmptyHostnameUndefined: Self = StObject.set(x, "emptyHostname", js.undefined)
     }
   }
   
@@ -235,15 +207,13 @@ object mod {
   trait ValidationResult extends StObject
   object ValidationResult {
     
-    @scala.inline
-    def ValidationError(errors: js.Array[Error]): typings.lockfileLintApi.mod.ValidationError = {
+    inline def ValidationError(errors: js.Array[Error]): typings.lockfileLintApi.mod.ValidationError = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("error")
       __obj.asInstanceOf[typings.lockfileLintApi.mod.ValidationError]
     }
     
-    @scala.inline
-    def ValidationSuccess(`object`: Packages): typings.lockfileLintApi.mod.ValidationSuccess = {
+    inline def ValidationSuccess(`object`: Packages): typings.lockfileLintApi.mod.ValidationSuccess = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("success")
@@ -261,22 +231,18 @@ object mod {
   }
   object ValidationSuccess {
     
-    @scala.inline
-    def apply(`object`: Packages): ValidationSuccess = {
+    inline def apply(`object`: Packages): ValidationSuccess = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("success")
       __obj.asInstanceOf[ValidationSuccess]
     }
     
-    @scala.inline
-    implicit class ValidationSuccessMutableBuilder[Self <: ValidationSuccess] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationSuccess](x: Self) {
       
-      @scala.inline
-      def setObject(value: Packages): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Packages): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: success): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: success): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

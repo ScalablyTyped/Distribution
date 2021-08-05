@@ -20,8 +20,7 @@ trait TypeofscriptBadge extends StObject {
 }
 object TypeofscriptBadge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAttention: AttentionDetails => Unit,
     getPopup: (GetPopupDetails, js.Function) => Unit,
     onClicked: ScriptBadgeClickedEvent,
@@ -31,19 +30,14 @@ object TypeofscriptBadge {
     __obj.asInstanceOf[TypeofscriptBadge]
   }
   
-  @scala.inline
-  implicit class TypeofscriptBadgeMutableBuilder[Self <: TypeofscriptBadge] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofscriptBadge](x: Self) {
     
-    @scala.inline
-    def setGetAttention(value: AttentionDetails => Unit): Self = StObject.set(x, "getAttention", js.Any.fromFunction1(value))
+    inline def setGetAttention(value: AttentionDetails => Unit): Self = StObject.set(x, "getAttention", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPopup(value: (GetPopupDetails, js.Function) => Unit): Self = StObject.set(x, "getPopup", js.Any.fromFunction2(value))
+    inline def setGetPopup(value: (GetPopupDetails, js.Function) => Unit): Self = StObject.set(x, "getPopup", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnClicked(value: ScriptBadgeClickedEvent): Self = StObject.set(x, "onClicked", value.asInstanceOf[js.Any])
+    inline def setOnClicked(value: ScriptBadgeClickedEvent): Self = StObject.set(x, "onClicked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPopup(value: SetPopupDetails => Unit): Self = StObject.set(x, "setPopup", js.Any.fromFunction1(value))
+    inline def setSetPopup(value: SetPopupDetails => Unit): Self = StObject.set(x, "setPopup", js.Any.fromFunction1(value))
   }
 }

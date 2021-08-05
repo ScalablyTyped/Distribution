@@ -21,55 +21,39 @@ trait RenderOptions extends StObject {
 }
 object RenderOptions {
   
-  @scala.inline
-  def apply(): RenderOptions = {
+  inline def apply(): RenderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RenderOptions]
   }
   
-  @scala.inline
-  implicit class RenderOptionsMutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RenderOptions](x: Self) {
     
-    @scala.inline
-    def setEvaluator(value: Instantiable0[Evaluator]): Self = StObject.set(x, "Evaluator", value.asInstanceOf[js.Any])
+    inline def setEvaluator(value: Instantiable0[Evaluator]): Self = StObject.set(x, "Evaluator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluatorUndefined: Self = StObject.set(x, "Evaluator", js.undefined)
+    inline def setEvaluatorUndefined: Self = StObject.set(x, "Evaluator", js.undefined)
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setFunctions(value: Dictionary[js.Any]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+    inline def setFunctions(value: Dictionary[js.Any]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+    inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
     
-    @scala.inline
-    def setGlobals(value: Dictionary[js.Any]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+    inline def setGlobals(value: Dictionary[js.Any]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
+    inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
     
-    @scala.inline
-    def setImports(value: js.Array[String]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    inline def setImports(value: js.Array[String]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
+    inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    @scala.inline
-    def setImportsVarargs(value: String*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: String*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
-    @scala.inline
-    def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+    inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    @scala.inline
-    def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
   }
 }

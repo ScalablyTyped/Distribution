@@ -38,8 +38,7 @@ trait ASPxClientFABActionItemBase extends StObject {
 }
 object ASPxClientFABActionItemBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetActionName: () => String,
     GetText: () => String,
     GetVisible: () => Boolean,
@@ -50,22 +49,16 @@ object ASPxClientFABActionItemBase {
     __obj.asInstanceOf[ASPxClientFABActionItemBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientFABActionItemBaseMutableBuilder[Self <: ASPxClientFABActionItemBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFABActionItemBase](x: Self) {
     
-    @scala.inline
-    def setGetActionName(value: () => String): Self = StObject.set(x, "GetActionName", js.Any.fromFunction0(value))
+    inline def setGetActionName(value: () => String): Self = StObject.set(x, "GetActionName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
+    inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "SetVisible", js.Any.fromFunction1(value))
+    inline def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "SetVisible", js.Any.fromFunction1(value))
   }
 }

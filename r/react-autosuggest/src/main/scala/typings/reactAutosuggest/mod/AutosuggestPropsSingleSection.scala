@@ -23,8 +23,7 @@ trait AutosuggestPropsSingleSection[TSuggestion]
 }
 object AutosuggestPropsSingleSection {
   
-  @scala.inline
-  def apply[TSuggestion](
+  inline def apply[TSuggestion](
     getSuggestionValue: TSuggestion => String,
     inputProps: InputProps[TSuggestion],
     onSuggestionsFetchRequested: /* request */ SuggestionsFetchRequestedParams => Unit,
@@ -35,19 +34,14 @@ object AutosuggestPropsSingleSection {
     __obj.asInstanceOf[AutosuggestPropsSingleSection[TSuggestion]]
   }
   
-  @scala.inline
-  implicit class AutosuggestPropsSingleSectionMutableBuilder[Self <: AutosuggestPropsSingleSection[?], TSuggestion] (val x: Self & AutosuggestPropsSingleSection[TSuggestion]) extends AnyVal {
+  extension [Self <: AutosuggestPropsSingleSection[?], TSuggestion](x: Self & AutosuggestPropsSingleSection[TSuggestion]) {
     
-    @scala.inline
-    def setMultiSection(value: `false`): Self = StObject.set(x, "multiSection", value.asInstanceOf[js.Any])
+    inline def setMultiSection(value: `false`): Self = StObject.set(x, "multiSection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiSectionUndefined: Self = StObject.set(x, "multiSection", js.undefined)
+    inline def setMultiSectionUndefined: Self = StObject.set(x, "multiSection", js.undefined)
     
-    @scala.inline
-    def setSuggestions(value: js.Array[TSuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+    inline def setSuggestions(value: js.Array[TSuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionsVarargs(value: TSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: TSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
   }
 }

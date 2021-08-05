@@ -15,6 +15,5 @@ object BasicShaderLib {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.basicShaderLibMod.BasicShaderLib = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.basicShaderLibMod.BasicShaderLib]
+  inline def create(): typings.wonderJs.basicShaderLibMod.BasicShaderLib = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.basicShaderLibMod.BasicShaderLib]
 }

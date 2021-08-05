@@ -55,43 +55,31 @@ trait PlusNavigatorSplashscreenOptions extends StObject {
 }
 object PlusNavigatorSplashscreenOptions {
   
-  @scala.inline
-  def apply(): PlusNavigatorSplashscreenOptions = {
+  inline def apply(): PlusNavigatorSplashscreenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNavigatorSplashscreenOptions]
   }
   
-  @scala.inline
-  implicit class PlusNavigatorSplashscreenOptionsMutableBuilder[Self <: PlusNavigatorSplashscreenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNavigatorSplashscreenOptions](x: Self) {
     
-    @scala.inline
-    def setAutoclose(value: Boolean): Self = StObject.set(x, "autoclose", value.asInstanceOf[js.Any])
+    inline def setAutoclose(value: Boolean): Self = StObject.set(x, "autoclose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutocloseUndefined: Self = StObject.set(x, "autoclose", js.undefined)
+    inline def setAutocloseUndefined: Self = StObject.set(x, "autoclose", js.undefined)
     
-    @scala.inline
-    def setAutoclose_w2a(value: Boolean): Self = StObject.set(x, "autoclose_w2a", value.asInstanceOf[js.Any])
+    inline def setAutoclose_w2a(value: Boolean): Self = StObject.set(x, "autoclose_w2a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoclose_w2aUndefined: Self = StObject.set(x, "autoclose_w2a", js.undefined)
+    inline def setAutoclose_w2aUndefined: Self = StObject.set(x, "autoclose_w2a", js.undefined)
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setDelay_w2a(value: Double): Self = StObject.set(x, "delay_w2a", value.asInstanceOf[js.Any])
+    inline def setDelay_w2a(value: Double): Self = StObject.set(x, "delay_w2a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelay_w2aUndefined: Self = StObject.set(x, "delay_w2a", js.undefined)
+    inline def setDelay_w2aUndefined: Self = StObject.set(x, "delay_w2a", js.undefined)
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

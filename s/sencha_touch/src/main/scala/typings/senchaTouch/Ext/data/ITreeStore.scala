@@ -112,139 +112,95 @@ trait ITreeStore
 }
 object ITreeStore {
   
-  @scala.inline
-  def apply(): ITreeStore = {
+  inline def apply(): ITreeStore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITreeStore]
   }
   
-  @scala.inline
-  implicit class ITreeStoreMutableBuilder[Self <: ITreeStore] (val x: Self) extends AnyVal {
+  extension [Self <: ITreeStore](x: Self) {
     
-    @scala.inline
-    def setClearOnLoad(value: Boolean): Self = StObject.set(x, "clearOnLoad", value.asInstanceOf[js.Any])
+    inline def setClearOnLoad(value: Boolean): Self = StObject.set(x, "clearOnLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearOnLoadUndefined: Self = StObject.set(x, "clearOnLoad", js.undefined)
+    inline def setClearOnLoadUndefined: Self = StObject.set(x, "clearOnLoad", js.undefined)
     
-    @scala.inline
-    def setDefaultRootId(value: String): Self = StObject.set(x, "defaultRootId", value.asInstanceOf[js.Any])
+    inline def setDefaultRootId(value: String): Self = StObject.set(x, "defaultRootId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRootIdUndefined: Self = StObject.set(x, "defaultRootId", js.undefined)
+    inline def setDefaultRootIdUndefined: Self = StObject.set(x, "defaultRootId", js.undefined)
     
-    @scala.inline
-    def setDefaultRootProperty(value: String): Self = StObject.set(x, "defaultRootProperty", value.asInstanceOf[js.Any])
+    inline def setDefaultRootProperty(value: String): Self = StObject.set(x, "defaultRootProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRootPropertyUndefined: Self = StObject.set(x, "defaultRootProperty", js.undefined)
+    inline def setDefaultRootPropertyUndefined: Self = StObject.set(x, "defaultRootProperty", js.undefined)
     
-    @scala.inline
-    def setGetById(value: /* id */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getById", js.Any.fromFunction1(value))
+    inline def setGetById(value: /* id */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetByIdUndefined: Self = StObject.set(x, "getById", js.undefined)
+    inline def setGetByIdUndefined: Self = StObject.set(x, "getById", js.undefined)
     
-    @scala.inline
-    def setGetClearOnLoad(value: () => Boolean): Self = StObject.set(x, "getClearOnLoad", js.Any.fromFunction0(value))
+    inline def setGetClearOnLoad(value: () => Boolean): Self = StObject.set(x, "getClearOnLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetClearOnLoadUndefined: Self = StObject.set(x, "getClearOnLoad", js.undefined)
+    inline def setGetClearOnLoadUndefined: Self = StObject.set(x, "getClearOnLoad", js.undefined)
     
-    @scala.inline
-    def setGetDefaultRootId(value: () => String): Self = StObject.set(x, "getDefaultRootId", js.Any.fromFunction0(value))
+    inline def setGetDefaultRootId(value: () => String): Self = StObject.set(x, "getDefaultRootId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDefaultRootIdUndefined: Self = StObject.set(x, "getDefaultRootId", js.undefined)
+    inline def setGetDefaultRootIdUndefined: Self = StObject.set(x, "getDefaultRootId", js.undefined)
     
-    @scala.inline
-    def setGetDefaultRootProperty(value: () => String): Self = StObject.set(x, "getDefaultRootProperty", js.Any.fromFunction0(value))
+    inline def setGetDefaultRootProperty(value: () => String): Self = StObject.set(x, "getDefaultRootProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDefaultRootPropertyUndefined: Self = StObject.set(x, "getDefaultRootProperty", js.undefined)
+    inline def setGetDefaultRootPropertyUndefined: Self = StObject.set(x, "getDefaultRootProperty", js.undefined)
     
-    @scala.inline
-    def setGetNodeById(value: /* id */ js.UndefOr[js.Any] => INodeInterface): Self = StObject.set(x, "getNodeById", js.Any.fromFunction1(value))
+    inline def setGetNodeById(value: /* id */ js.UndefOr[js.Any] => INodeInterface): Self = StObject.set(x, "getNodeById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNodeByIdUndefined: Self = StObject.set(x, "getNodeById", js.undefined)
+    inline def setGetNodeByIdUndefined: Self = StObject.set(x, "getNodeById", js.undefined)
     
-    @scala.inline
-    def setGetNodeParam(value: () => String): Self = StObject.set(x, "getNodeParam", js.Any.fromFunction0(value))
+    inline def setGetNodeParam(value: () => String): Self = StObject.set(x, "getNodeParam", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNodeParamUndefined: Self = StObject.set(x, "getNodeParam", js.undefined)
+    inline def setGetNodeParamUndefined: Self = StObject.set(x, "getNodeParam", js.undefined)
     
-    @scala.inline
-    def setGetRoot(value: () => js.Any): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
+    inline def setGetRoot(value: () => js.Any): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRootNode(value: /* node */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "getRootNode", js.Any.fromFunction1(value))
+    inline def setGetRootNode(value: /* node */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "getRootNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRootNodeUndefined: Self = StObject.set(x, "getRootNode", js.undefined)
+    inline def setGetRootNodeUndefined: Self = StObject.set(x, "getRootNode", js.undefined)
     
-    @scala.inline
-    def setGetRootUndefined: Self = StObject.set(x, "getRoot", js.undefined)
+    inline def setGetRootUndefined: Self = StObject.set(x, "getRoot", js.undefined)
     
-    @scala.inline
-    def setLoad(value: /* options */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: /* options */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    @scala.inline
-    def setNodeParam(value: String): Self = StObject.set(x, "nodeParam", value.asInstanceOf[js.Any])
+    inline def setNodeParam(value: String): Self = StObject.set(x, "nodeParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeParamUndefined: Self = StObject.set(x, "nodeParam", js.undefined)
+    inline def setNodeParamUndefined: Self = StObject.set(x, "nodeParam", js.undefined)
     
-    @scala.inline
-    def setOnProxyLoad(value: /* operation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onProxyLoad", js.Any.fromFunction1(value))
+    inline def setOnProxyLoad(value: /* operation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onProxyLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnProxyLoadUndefined: Self = StObject.set(x, "onProxyLoad", js.undefined)
+    inline def setOnProxyLoadUndefined: Self = StObject.set(x, "onProxyLoad", js.undefined)
     
-    @scala.inline
-    def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSetClearOnLoad(value: /* clearOnLoad */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setClearOnLoad", js.Any.fromFunction1(value))
+    inline def setSetClearOnLoad(value: /* clearOnLoad */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setClearOnLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetClearOnLoadUndefined: Self = StObject.set(x, "setClearOnLoad", js.undefined)
+    inline def setSetClearOnLoadUndefined: Self = StObject.set(x, "setClearOnLoad", js.undefined)
     
-    @scala.inline
-    def setSetDefaultRootId(value: /* defaultRootId */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDefaultRootId", js.Any.fromFunction1(value))
+    inline def setSetDefaultRootId(value: /* defaultRootId */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDefaultRootId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDefaultRootIdUndefined: Self = StObject.set(x, "setDefaultRootId", js.undefined)
+    inline def setSetDefaultRootIdUndefined: Self = StObject.set(x, "setDefaultRootId", js.undefined)
     
-    @scala.inline
-    def setSetDefaultRootProperty(value: /* defaultRootProperty */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDefaultRootProperty", js.Any.fromFunction1(value))
+    inline def setSetDefaultRootProperty(value: /* defaultRootProperty */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDefaultRootProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDefaultRootPropertyUndefined: Self = StObject.set(x, "setDefaultRootProperty", js.undefined)
+    inline def setSetDefaultRootPropertyUndefined: Self = StObject.set(x, "setDefaultRootProperty", js.undefined)
     
-    @scala.inline
-    def setSetNodeParam(value: /* nodeParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setNodeParam", js.Any.fromFunction1(value))
+    inline def setSetNodeParam(value: /* nodeParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setNodeParam", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNodeParamUndefined: Self = StObject.set(x, "setNodeParam", js.undefined)
+    inline def setSetNodeParamUndefined: Self = StObject.set(x, "setNodeParam", js.undefined)
     
-    @scala.inline
-    def setSetRoot(value: /* root */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setRoot", js.Any.fromFunction1(value))
+    inline def setSetRoot(value: /* root */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setRoot", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRootNode(value: /* node */ js.UndefOr[IModel] => IModel): Self = StObject.set(x, "setRootNode", js.Any.fromFunction1(value))
+    inline def setSetRootNode(value: /* node */ js.UndefOr[IModel] => IModel): Self = StObject.set(x, "setRootNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRootNodeUndefined: Self = StObject.set(x, "setRootNode", js.undefined)
+    inline def setSetRootNodeUndefined: Self = StObject.set(x, "setRootNode", js.undefined)
     
-    @scala.inline
-    def setSetRootUndefined: Self = StObject.set(x, "setRoot", js.undefined)
+    inline def setSetRootUndefined: Self = StObject.set(x, "setRoot", js.undefined)
   }
 }

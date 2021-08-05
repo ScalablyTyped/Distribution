@@ -19,19 +19,15 @@ trait ToolbarState extends StObject {
 }
 object ToolbarState {
   
-  @scala.inline
-  def apply(getViz: () => Viz, isButtonEnabled: ToolbarButtonName => Boolean): ToolbarState = {
+  inline def apply(getViz: () => Viz, isButtonEnabled: ToolbarButtonName => Boolean): ToolbarState = {
     val __obj = js.Dynamic.literal(getViz = js.Any.fromFunction0(getViz), isButtonEnabled = js.Any.fromFunction1(isButtonEnabled))
     __obj.asInstanceOf[ToolbarState]
   }
   
-  @scala.inline
-  implicit class ToolbarStateMutableBuilder[Self <: ToolbarState] (val x: Self) extends AnyVal {
+  extension [Self <: ToolbarState](x: Self) {
     
-    @scala.inline
-    def setGetViz(value: () => Viz): Self = StObject.set(x, "getViz", js.Any.fromFunction0(value))
+    inline def setGetViz(value: () => Viz): Self = StObject.set(x, "getViz", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsButtonEnabled(value: ToolbarButtonName => Boolean): Self = StObject.set(x, "isButtonEnabled", js.Any.fromFunction1(value))
+    inline def setIsButtonEnabled(value: ToolbarButtonName => Boolean): Self = StObject.set(x, "isButtonEnabled", js.Any.fromFunction1(value))
   }
 }

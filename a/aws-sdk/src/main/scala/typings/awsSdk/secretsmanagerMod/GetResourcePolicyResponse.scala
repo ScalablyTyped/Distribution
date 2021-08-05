@@ -23,31 +23,23 @@ trait GetResourcePolicyResponse extends StObject {
 }
 object GetResourcePolicyResponse {
   
-  @scala.inline
-  def apply(): GetResourcePolicyResponse = {
+  inline def apply(): GetResourcePolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetResourcePolicyResponse]
   }
   
-  @scala.inline
-  implicit class GetResourcePolicyResponseMutableBuilder[Self <: GetResourcePolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourcePolicyResponse](x: Self) {
     
-    @scala.inline
-    def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
+    inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    @scala.inline
-    def setName(value: NameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setResourcePolicy(value: NonEmptyResourcePolicyType): Self = StObject.set(x, "ResourcePolicy", value.asInstanceOf[js.Any])
+    inline def setResourcePolicy(value: NonEmptyResourcePolicyType): Self = StObject.set(x, "ResourcePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcePolicyUndefined: Self = StObject.set(x, "ResourcePolicy", js.undefined)
+    inline def setResourcePolicyUndefined: Self = StObject.set(x, "ResourcePolicy", js.undefined)
   }
 }

@@ -83,8 +83,7 @@ object EnterpriseData {
       * @return When the call to this method completes successfully, it returns a DataProtectionInfo object that contains the status of the buffer.
       */
     /* static member */
-    @scala.inline
-    def getProtectionInfoAsync(protectedData: IBuffer): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProtectionInfoAsync")(protectedData.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo]]
+    inline def getProtectionInfoAsync(protectedData: IBuffer): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProtectionInfoAsync")(protectedData.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo]]
     
     /**
       * Get the status of an enterprise protected stream.
@@ -92,8 +91,7 @@ object EnterpriseData {
       * @return When the call to this method completes successfully, it returns a DataProtectionInfo object that contains the status of the stream.
       */
     /* static member */
-    @scala.inline
-    def getStreamProtectionInfoAsync(protectedStream: IInputStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStreamProtectionInfoAsync")(protectedStream.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo]]
+    inline def getStreamProtectionInfoAsync(protectedStream: IInputStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStreamProtectionInfoAsync")(protectedStream.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo]]
     
     /**
       * Protect the data in a buffer to an enterprise identity.
@@ -102,8 +100,7 @@ object EnterpriseData {
       * @return When the call to this method completes successfully, it returns a BufferProtectUnprotectResult object that contains the status of the newly protected buffer.
       */
     /* static member */
-    @scala.inline
-    def protectAsync(data: IBuffer, identity: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.BufferProtectUnprotectResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("protectAsync")(data.asInstanceOf[js.Any], identity.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.BufferProtectUnprotectResult]]
+    inline def protectAsync(data: IBuffer, identity: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.BufferProtectUnprotectResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("protectAsync")(data.asInstanceOf[js.Any], identity.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.BufferProtectUnprotectResult]]
     
     /**
       * Protect a stream of data to an enterprise identity.
@@ -113,8 +110,7 @@ object EnterpriseData {
       * @return When the call to this method completes successfully, it returns a DataProtectionInfo object that contains the status of the protected stream.
       */
     /* static member */
-    @scala.inline
-    def protectStreamAsync(unprotectedStream: IInputStream, identity: String, protectedStream: IOutputStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("protectStreamAsync")(unprotectedStream.asInstanceOf[js.Any], identity.asInstanceOf[js.Any], protectedStream.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo]]
+    inline def protectStreamAsync(unprotectedStream: IInputStream, identity: String, protectedStream: IOutputStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("protectStreamAsync")(unprotectedStream.asInstanceOf[js.Any], identity.asInstanceOf[js.Any], protectedStream.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo]]
     
     /**
       * Removes the protection to an enterprise identity from a buffer.
@@ -122,8 +118,7 @@ object EnterpriseData {
       * @return When the call to this method completes successfully, it returns a BufferProtectUnprotectResult object that contains the status of the unprotected buffer.
       */
     /* static member */
-    @scala.inline
-    def unprotectAsync(data: IBuffer): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.BufferProtectUnprotectResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("unprotectAsync")(data.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.BufferProtectUnprotectResult]]
+    inline def unprotectAsync(data: IBuffer): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.BufferProtectUnprotectResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("unprotectAsync")(data.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.BufferProtectUnprotectResult]]
     
     /**
       * Removes the protection to an enterprise identity from a stream of data.
@@ -132,8 +127,7 @@ object EnterpriseData {
       * @return When the call to this method completes successfully, it returns a DataProtectionInfo object that contains the status of the unprotected stream.
       */
     /* static member */
-    @scala.inline
-    def unprotectStreamAsync(protectedStream: IInputStream, unprotectedStream: IOutputStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("unprotectStreamAsync")(protectedStream.asInstanceOf[js.Any], unprotectedStream.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo]]
+    inline def unprotectStreamAsync(protectedStream: IInputStream, unprotectedStream: IOutputStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("unprotectStreamAsync")(protectedStream.asInstanceOf[js.Any], unprotectedStream.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.DataProtectionInfo]]
   }
   
   /** Describes the enterprise identity protection state of a buffer or stream. */
@@ -213,8 +207,7 @@ object EnterpriseData {
       * @return When the call to this method completes successfully, it returns true if the file protection was copied, or false if there was an error.
       */
     /* static member */
-    @scala.inline
-    def copyProtectionAsync(source: IStorageItem, target: IStorageItem): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyProtectionAsync")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+    inline def copyProtectionAsync(source: IStorageItem, target: IStorageItem): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyProtectionAsync")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
     
     /**
       * Create an enterprise-protected file.
@@ -225,8 +218,7 @@ object EnterpriseData {
       * @return When the call to this method completes successfully, it returns a ProtectedFileCreateResult object representing the newly created protected file.
       */
     /* static member */
-    @scala.inline
-    def createProtectedAndOpenAsync(
+    inline def createProtectedAndOpenAsync(
       parentFolder: IStorageFolder,
       desiredName: String,
       identity: String,
@@ -239,15 +231,13 @@ object EnterpriseData {
       * @return When the call to this method completes successfully, it returns a FileProtectionInfo object that contains the status of the file.
       */
     /* static member */
-    @scala.inline
-    def getProtectionInfoAsync(source: IStorageItem): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.FileProtectionInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProtectionInfoAsync")(source.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.FileProtectionInfo]]
+    inline def getProtectionInfoAsync(source: IStorageItem): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.FileProtectionInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProtectionInfoAsync")(source.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.FileProtectionInfo]]
     
     /* static member */
     @JSGlobal("Windows.Security.EnterpriseData.FileProtectionManager.isContainerAsync")
     @js.native
     def isContainerAsync: js.Any = js.native
-    @scala.inline
-    def isContainerAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isContainerAsync")(x.asInstanceOf[js.Any])
+    inline def isContainerAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isContainerAsync")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /**
@@ -256,8 +246,7 @@ object EnterpriseData {
       * @return When the call to this method completes successfully, it returns a ProtectedContainerImportResult object representing the newly created protected file.
       */
     /* static member */
-    @scala.inline
-    def loadFileFromContainerAsync(containerFile: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerImportResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFileFromContainerAsync")(containerFile.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerImportResult]]
+    inline def loadFileFromContainerAsync(containerFile: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerImportResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFileFromContainerAsync")(containerFile.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerImportResult]]
     /**
       * Create an enterprise-protected file in a specified storage item (such as a folder), and load it from a container file.
       * @param containerFile The enterprise protected file to be created and loaded.
@@ -265,8 +254,7 @@ object EnterpriseData {
       * @return When the call to this method completes successfully, it returns a ProtectedContainerImportResult object representing the newly created protected file.
       */
     /* static member */
-    @scala.inline
-    def loadFileFromContainerAsync(containerFile: IStorageFile, target: IStorageItem): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerImportResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFileFromContainerAsync")(containerFile.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerImportResult]]
+    inline def loadFileFromContainerAsync(containerFile: IStorageFile, target: IStorageItem): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerImportResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFileFromContainerAsync")(containerFile.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerImportResult]]
     /**
       * Create an enterprise-protected file in a specified storage item (such as a folder), and load it from a container file.
       * @param containerFile The enterprise protected file to be created and loaded.
@@ -275,8 +263,7 @@ object EnterpriseData {
       * @return When the call to this method completes successfully, it returns a ProtectedContainerImportResult object representing the newly created protected file.
       */
     /* static member */
-    @scala.inline
-    def loadFileFromContainerAsync(containerFile: IStorageFile, target: IStorageItem, collisionOption: NameCollisionOption): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerImportResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFileFromContainerAsync")(containerFile.asInstanceOf[js.Any], target.asInstanceOf[js.Any], collisionOption.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerImportResult]]
+    inline def loadFileFromContainerAsync(containerFile: IStorageFile, target: IStorageItem, collisionOption: NameCollisionOption): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerImportResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFileFromContainerAsync")(containerFile.asInstanceOf[js.Any], target.asInstanceOf[js.Any], collisionOption.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerImportResult]]
     
     /**
       * Protect the data in a file to an enterprise identity. The app can then use standard APIs to read or write from the file.
@@ -285,8 +272,7 @@ object EnterpriseData {
       * @return When the call to this method completes successfully, it returns a FileProtectionInfo object that contains the status of the newly protected file.
       */
     /* static member */
-    @scala.inline
-    def protectAsync(target: IStorageItem, identity: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.FileProtectionInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("protectAsync")(target.asInstanceOf[js.Any], identity.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.FileProtectionInfo]]
+    inline def protectAsync(target: IStorageItem, identity: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.FileProtectionInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("protectAsync")(target.asInstanceOf[js.Any], identity.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.FileProtectionInfo]]
     
     /**
       * Save an enterprise-protected file as a containerized version.
@@ -294,8 +280,7 @@ object EnterpriseData {
       * @return When the call to this method completes successfully, it returns a ProtectedContainerExportResult object representing the newly created container file.
       */
     /* static member */
-    @scala.inline
-    def saveFileAsContainerAsync(protectedFile: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerExportResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("saveFileAsContainerAsync")(protectedFile.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerExportResult]]
+    inline def saveFileAsContainerAsync(protectedFile: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerExportResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("saveFileAsContainerAsync")(protectedFile.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerExportResult]]
     /**
       * Save an enterprise-protected file as a containerized version, and share it with a specified list of user identities.
       * @param protectedFile The protected source file being copied.
@@ -303,8 +288,7 @@ object EnterpriseData {
       * @return When the call to this method completes successfully, it returns a ProtectedContainerExportResult object representing the newly created container file.
       */
     /* static member */
-    @scala.inline
-    def saveFileAsContainerAsync(protectedFile: IStorageFile, sharedWithIdentities: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerExportResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("saveFileAsContainerAsync")(protectedFile.asInstanceOf[js.Any], sharedWithIdentities.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerExportResult]]
+    inline def saveFileAsContainerAsync(protectedFile: IStorageFile, sharedWithIdentities: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerExportResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("saveFileAsContainerAsync")(protectedFile.asInstanceOf[js.Any], sharedWithIdentities.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectedContainerExportResult]]
   }
   
   /** Describes the enterprise protection state of a file or folder. */
@@ -357,8 +341,7 @@ object EnterpriseData {
       * @return True if the copy operation was successful; otherwise false.
       */
     /* static member */
-    @scala.inline
-    def copyProtectionAsync(sourceStorageItem: IStorageItem, targetStorageItem: IStorageItem): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyProtectionAsync")(sourceStorageItem.asInstanceOf[js.Any], targetStorageItem.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+    inline def copyProtectionAsync(sourceStorageItem: IStorageItem, targetStorageItem: IStorageItem): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyProtectionAsync")(sourceStorageItem.asInstanceOf[js.Any], targetStorageItem.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
     
     /**
       * Gets the selective wipe protection status for a file or folder.
@@ -366,8 +349,7 @@ object EnterpriseData {
       * @return An aysnchronous operation that retrieves the selective wipe protection status for the storageItem.
       */
     /* static member */
-    @scala.inline
-    def getStatusAsync(storageItem: IStorageItem): IPromiseWithIAsyncOperation[FileProtectionStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusAsync")(storageItem.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[FileProtectionStatus]]
+    inline def getStatusAsync(storageItem: IStorageItem): IPromiseWithIAsyncOperation[FileProtectionStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusAsync")(storageItem.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[FileProtectionStatus]]
     
     /**
       * Protects a file or folder for selective wipe.
@@ -376,16 +358,14 @@ object EnterpriseData {
       * @return An asynchronous operation that retrieves the selective wipe protection status for the storageItem.
       */
     /* static member */
-    @scala.inline
-    def protectAsync(storageItem: IStorageItem, enterpriseIdentity: String): IPromiseWithIAsyncOperation[FileProtectionStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("protectAsync")(storageItem.asInstanceOf[js.Any], enterpriseIdentity.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[FileProtectionStatus]]
+    inline def protectAsync(storageItem: IStorageItem, enterpriseIdentity: String): IPromiseWithIAsyncOperation[FileProtectionStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("protectAsync")(storageItem.asInstanceOf[js.Any], enterpriseIdentity.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[FileProtectionStatus]]
     
     /**
       * Revokes all files and folders protected for selective wipe for a specified enterprise id.
       * @param enterpriseIdentity Revoke all files and folders protected by selective wipe for this enterprise id. The enterpriseIdentity value must be formatted as an Internationalized Domain Name (IDN) and cannot contain spaces. For example, contoso.com.
       */
     /* static member */
-    @scala.inline
-    def revoke(enterpriseIdentity: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revoke")(enterpriseIdentity.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def revoke(enterpriseIdentity: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revoke")(enterpriseIdentity.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /** Provides data when content protection is resumed. */
@@ -549,24 +529,19 @@ object EnterpriseData {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_policychanged(`type`: policychanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_policychanged(`type`: policychanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_protectedaccessresumed(`type`: protectedaccessresumed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_protectedaccessresumed(`type`: protectedaccessresumed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_protectedaccesssuspending(`type`: protectedaccesssuspending, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_protectedaccesssuspending(`type`: protectedaccesssuspending, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_protectedcontentrevoked(`type`: protectedcontentrevoked, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_protectedcontentrevoked(`type`: protectedcontentrevoked, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Request if access to enterprise-protected content is available to an identity.
@@ -575,8 +550,7 @@ object EnterpriseData {
       * @return A value of the ProtectionPolicyEvaluationResult enumeration that is the result of the query.
       */
     /* static member */
-    @scala.inline
-    def checkAccess(sourceIdentity: String, targetIdentity: String): ProtectionPolicyEvaluationResult = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAccess")(sourceIdentity.asInstanceOf[js.Any], targetIdentity.asInstanceOf[js.Any])).asInstanceOf[ProtectionPolicyEvaluationResult]
+    inline def checkAccess(sourceIdentity: String, targetIdentity: String): ProtectionPolicyEvaluationResult = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAccess")(sourceIdentity.asInstanceOf[js.Any], targetIdentity.asInstanceOf[js.Any])).asInstanceOf[ProtectionPolicyEvaluationResult]
     
     /**
       * Perform enterprise-protection policy evaluation for a data transfer between your app and a specific target app.
@@ -585,13 +559,11 @@ object EnterpriseData {
       * @return A value of the ProtectionPolicyEvaluationResult enumeration that is the result of the query.
       */
     /* static member */
-    @scala.inline
-    def checkAccessForApp(sourceIdentity: String, appPackageFamilyName: String): ProtectionPolicyEvaluationResult = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAccessForApp")(sourceIdentity.asInstanceOf[js.Any], appPackageFamilyName.asInstanceOf[js.Any])).asInstanceOf[ProtectionPolicyEvaluationResult]
+    inline def checkAccessForApp(sourceIdentity: String, appPackageFamilyName: String): ProtectionPolicyEvaluationResult = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAccessForApp")(sourceIdentity.asInstanceOf[js.Any], appPackageFamilyName.asInstanceOf[js.Any])).asInstanceOf[ProtectionPolicyEvaluationResult]
     
     /** Clear UI policy enforcement for an enterprise identity. The app calls this method before it displays non-enterprise-protected content. */
     /* static member */
-    @scala.inline
-    def clearProcessUIPolicy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearProcessUIPolicy")().asInstanceOf[Unit]
+    inline def clearProcessUIPolicy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearProcessUIPolicy")().asInstanceOf[Unit]
     
     /**
       * Creates a ThreadNetworkContext protected to an enterprise identity. The creation of the context tags all network connections made thereafter on the current thread with the identity, and allows access to enterprise resources that are access controlled by the enterprise's policy.
@@ -599,8 +571,7 @@ object EnterpriseData {
       * @return The protected network context. The app must call ThreadNetworkContext.Close after access to the resource is completed.
       */
     /* static member */
-    @scala.inline
-    def createCurrentThreadNetworkContext(identity: String): typings.winrtUwp.Windows.Security.EnterpriseData.ThreadNetworkContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createCurrentThreadNetworkContext")(identity.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Security.EnterpriseData.ThreadNetworkContext]
+    inline def createCurrentThreadNetworkContext(identity: String): typings.winrtUwp.Windows.Security.EnterpriseData.ThreadNetworkContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createCurrentThreadNetworkContext")(identity.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Security.EnterpriseData.ThreadNetworkContext]
     
     /**
       * You can use this method to determine the current enterprise data protection (EDP) enforcement level. EDP enforcement level is one aspect of mobile device management (MDM) policy configuration.
@@ -608,16 +579,14 @@ object EnterpriseData {
       * @return A value of the EnforcementLevel enumeration.
       */
     /* static member */
-    @scala.inline
-    def getEnforcementLevel(identity: String): EnforcementLevel = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnforcementLevel")(identity.asInstanceOf[js.Any]).asInstanceOf[EnforcementLevel]
+    inline def getEnforcementLevel(identity: String): EnforcementLevel = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnforcementLevel")(identity.asInstanceOf[js.Any]).asInstanceOf[EnforcementLevel]
     
     /**
       * Returns the ProtectionPolicyManager object associated with the current app window.
       * @return The ProtectionPolicyManager object associated with the current app window.
       */
     /* static member */
-    @scala.inline
-    def getForCurrentView(): typings.winrtUwp.Windows.Security.EnterpriseData.ProtectionPolicyManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectionPolicyManager]
+    inline def getForCurrentView(): typings.winrtUwp.Windows.Security.EnterpriseData.ProtectionPolicyManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.Security.EnterpriseData.ProtectionPolicyManager]
     
     /**
       * Returns the enterprise identity of a network resource if the resource is on an enterprise-policy-managed endpoint.
@@ -625,8 +594,7 @@ object EnterpriseData {
       * @return The enterprise identity.
       */
     /* static member */
-    @scala.inline
-    def getPrimaryManagedIdentityForNetworkEndpointAsync(endpointHost: HostName): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrimaryManagedIdentityForNetworkEndpointAsync")(endpointHost.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def getPrimaryManagedIdentityForNetworkEndpointAsync(endpointHost: HostName): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrimaryManagedIdentityForNetworkEndpointAsync")(endpointHost.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Use this method to check whether access to protected data has been revoked since a specified date and time, or is still accessible.
@@ -635,8 +603,7 @@ object EnterpriseData {
       * @return true if access has been revoked since the specified date and time, otherwise false.
       */
     /* static member */
-    @scala.inline
-    def hasContentBeenRevokedSince(identity: String, since: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasContentBeenRevokedSince")(identity.asInstanceOf[js.Any], since.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def hasContentBeenRevokedSince(identity: String, since: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasContentBeenRevokedSince")(identity.asInstanceOf[js.Any], since.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Determines if an enterprise entity is managed by an enterprise policy.
@@ -644,16 +611,14 @@ object EnterpriseData {
       * @return true if the enterprise identity is managed, or false if it is not.
       */
     /* static member */
-    @scala.inline
-    def isIdentityManaged(identity: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentityManaged")(identity.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isIdentityManaged(identity: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentityManaged")(identity.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Use this property to determine whether enterprise data protection (EDP) is enabled on the device. */
     /* static member */
     @JSGlobal("Windows.Security.EnterpriseData.ProtectionPolicyManager.isProtectionEnabled")
     @js.native
     def isProtectionEnabled: Boolean = js.native
-    @scala.inline
-    def isProtectionEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isProtectionEnabled")(x.asInstanceOf[js.Any])
+    inline def isProtectionEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isProtectionEnabled")(x.asInstanceOf[js.Any])
     
     /**
       * Use this property to determine the value of the ProtectionUnderLockConfigRequired enterprise data protection (EDP) policy.
@@ -661,8 +626,7 @@ object EnterpriseData {
       * @return true if ProtectionUnderLockConfigRequired policy is set for the identity, otherwise false.
       */
     /* static member */
-    @scala.inline
-    def isProtectionUnderLockRequired(identity: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProtectionUnderLockRequired")(identity.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isProtectionUnderLockRequired(identity: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProtectionUnderLockRequired")(identity.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Use this property to determine whether decryption of files protected by enterprise data protection (EDP) is allowed.
@@ -670,60 +634,50 @@ object EnterpriseData {
       * @return true if decryption of files protected by EDP is allowed, otherwise false.
       */
     /* static member */
-    @scala.inline
-    def isUserDecryptionAllowed(identity: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUserDecryptionAllowed")(identity.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isUserDecryptionAllowed(identity: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUserDecryptionAllowed")(identity.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** An event that is raised in response to changes in enterprise data protection (EDP) policy managed by the Policy CSP. */
     /* static member */
     @JSGlobal("Windows.Security.EnterpriseData.ProtectionPolicyManager.onpolicychanged")
     @js.native
     def onpolicychanged: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onpolicychanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onpolicychanged")(x.asInstanceOf[js.Any])
+    inline def onpolicychanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onpolicychanged")(x.asInstanceOf[js.Any])
     
     /** Event with which the app registers to receive notification that protection has been resumed. */
     /* static member */
     @JSGlobal("Windows.Security.EnterpriseData.ProtectionPolicyManager.onprotectedaccessresumed")
     @js.native
     def onprotectedaccessresumed: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onprotectedaccessresumed_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprotectedaccessresumed")(x.asInstanceOf[js.Any])
+    inline def onprotectedaccessresumed_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprotectedaccessresumed")(x.asInstanceOf[js.Any])
     
     /** Event with which the app registers to receive notification that protection is to be suspended. */
     /* static member */
     @JSGlobal("Windows.Security.EnterpriseData.ProtectionPolicyManager.onprotectedaccesssuspending")
     @js.native
     def onprotectedaccesssuspending: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onprotectedaccesssuspending_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprotectedaccesssuspending")(x.asInstanceOf[js.Any])
+    inline def onprotectedaccesssuspending_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprotectedaccesssuspending")(x.asInstanceOf[js.Any])
     
     /** Event with which the app registers to receive notification that protection is to be revoked. When the app receives this event, it should determine from ProtectedContentRevokedEventArgs.Identities which enterprise entities have had protection revoked, and call RevokeContent as well as delete any metadata associated with the identity. */
     /* static member */
     @JSGlobal("Windows.Security.EnterpriseData.ProtectionPolicyManager.onprotectedcontentrevoked")
     @js.native
     def onprotectedcontentrevoked: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onprotectedcontentrevoked_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprotectedcontentrevoked")(x.asInstanceOf[js.Any])
+    inline def onprotectedcontentrevoked_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onprotectedcontentrevoked")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_policychanged(`type`: policychanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_policychanged(`type`: policychanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_protectedaccessresumed(`type`: protectedaccessresumed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_protectedaccessresumed(`type`: protectedaccessresumed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_protectedaccesssuspending(`type`: protectedaccesssuspending, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_protectedaccesssuspending(`type`: protectedaccesssuspending, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_protectedcontentrevoked(`type`: protectedcontentrevoked, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_protectedcontentrevoked(`type`: protectedcontentrevoked, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Request access to enterprise protected content for an identity.
@@ -732,8 +686,7 @@ object EnterpriseData {
       * @return A value of the ProtectionPolicyEvaluationResult enumeration that is the result of the request.
       */
     /* static member */
-    @scala.inline
-    def requestAccessAsync(sourceIdentity: String, targetIdentity: String): IPromiseWithIAsyncOperation[ProtectionPolicyEvaluationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestAccessAsync")(sourceIdentity.asInstanceOf[js.Any], targetIdentity.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[ProtectionPolicyEvaluationResult]]
+    inline def requestAccessAsync(sourceIdentity: String, targetIdentity: String): IPromiseWithIAsyncOperation[ProtectionPolicyEvaluationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestAccessAsync")(sourceIdentity.asInstanceOf[js.Any], targetIdentity.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[ProtectionPolicyEvaluationResult]]
     
     /**
       * Request access to enterprise-protected content for a specific target app.
@@ -742,16 +695,14 @@ object EnterpriseData {
       * @return A value of the ProtectionPolicyEvaluationResult enumeration that is the result of the query.
       */
     /* static member */
-    @scala.inline
-    def requestAccessForAppAsync(sourceIdentity: String, appPackageFamilyName: String): IPromiseWithIAsyncOperation[ProtectionPolicyEvaluationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestAccessForAppAsync")(sourceIdentity.asInstanceOf[js.Any], appPackageFamilyName.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[ProtectionPolicyEvaluationResult]]
+    inline def requestAccessForAppAsync(sourceIdentity: String, appPackageFamilyName: String): IPromiseWithIAsyncOperation[ProtectionPolicyEvaluationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestAccessForAppAsync")(sourceIdentity.asInstanceOf[js.Any], appPackageFamilyName.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[ProtectionPolicyEvaluationResult]]
     
     /**
       * Revoke the keys required to access all content protected to the specified enterprise identity.
       * @param identity The enterprise identity. This is an email address or domain that is managed. Your app should use IsIdentityManaged to confirm that an email address or domain is managed.
       */
     /* static member */
-    @scala.inline
-    def revokeContent(identity: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeContent")(identity.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def revokeContent(identity: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeContent")(identity.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Enables UI policy enforcement for an enterprise identity. When an app is about to display a protected file (such as a PDF) or resource (buffer or stream) on its UI, it must enable UI policy enforcement based on the identity the file is protected to. A call to TryApplyProcessUIPolicy ensures that the OS knows about the current context of the app.
@@ -759,8 +710,7 @@ object EnterpriseData {
       * @return true if the identity is being managed by an enterprise policy, or false if it is not.
       */
     /* static member */
-    @scala.inline
-    def tryApplyProcessUIPolicy(identity: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tryApplyProcessUIPolicy")(identity.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def tryApplyProcessUIPolicy(identity: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tryApplyProcessUIPolicy")(identity.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /** A protected network context for an enterprise identity. The creation of the context tags all network connections made thereafter on the current thread with the identity, and allows access to enterprise resources that are access controlled by the enterprise's policy. */

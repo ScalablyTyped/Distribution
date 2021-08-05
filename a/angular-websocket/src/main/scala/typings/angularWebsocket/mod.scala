@@ -162,56 +162,40 @@ object mod {
       }
       object IWebSocketConfigOptions {
         
-        @scala.inline
-        def apply(): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketConfigOptions = {
+        inline def apply(): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketConfigOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketConfigOptions]
         }
         
-        @scala.inline
-        implicit class IWebSocketConfigOptionsMutableBuilder[Self <: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketConfigOptions] (val x: Self) extends AnyVal {
+        extension [Self <: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketConfigOptions](x: Self) {
           
-          @scala.inline
-          def setBinaryType(value: blob | arraybuffer): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
+          inline def setBinaryType(value: blob | arraybuffer): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBinaryTypeUndefined: Self = StObject.set(x, "binaryType", js.undefined)
+          inline def setBinaryTypeUndefined: Self = StObject.set(x, "binaryType", js.undefined)
           
-          @scala.inline
-          def setInitialTimeout(value: Double): Self = StObject.set(x, "initialTimeout", value.asInstanceOf[js.Any])
+          inline def setInitialTimeout(value: Double): Self = StObject.set(x, "initialTimeout", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInitialTimeoutUndefined: Self = StObject.set(x, "initialTimeout", js.undefined)
+          inline def setInitialTimeoutUndefined: Self = StObject.set(x, "initialTimeout", js.undefined)
           
-          @scala.inline
-          def setMaxTimeout(value: Double): Self = StObject.set(x, "maxTimeout", value.asInstanceOf[js.Any])
+          inline def setMaxTimeout(value: Double): Self = StObject.set(x, "maxTimeout", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMaxTimeoutUndefined: Self = StObject.set(x, "maxTimeout", js.undefined)
+          inline def setMaxTimeoutUndefined: Self = StObject.set(x, "maxTimeout", js.undefined)
           
-          @scala.inline
-          def setReconnectIfNotNormalClose(value: Boolean): Self = StObject.set(x, "reconnectIfNotNormalClose", value.asInstanceOf[js.Any])
+          inline def setReconnectIfNotNormalClose(value: Boolean): Self = StObject.set(x, "reconnectIfNotNormalClose", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReconnectIfNotNormalCloseUndefined: Self = StObject.set(x, "reconnectIfNotNormalClose", js.undefined)
+          inline def setReconnectIfNotNormalCloseUndefined: Self = StObject.set(x, "reconnectIfNotNormalClose", js.undefined)
           
-          @scala.inline
-          def setRootScopeFailOver(value: Boolean): Self = StObject.set(x, "rootScopeFailOver", value.asInstanceOf[js.Any])
+          inline def setRootScopeFailOver(value: Boolean): Self = StObject.set(x, "rootScopeFailOver", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRootScopeFailOverUndefined: Self = StObject.set(x, "rootScopeFailOver", js.undefined)
+          inline def setRootScopeFailOverUndefined: Self = StObject.set(x, "rootScopeFailOver", js.undefined)
           
-          @scala.inline
-          def setScope(value: IScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+          inline def setScope(value: IScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+          inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
           
-          @scala.inline
-          def setUseApplyAsync(value: Boolean): Self = StObject.set(x, "useApplyAsync", value.asInstanceOf[js.Any])
+          inline def setUseApplyAsync(value: Boolean): Self = StObject.set(x, "useApplyAsync", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUseApplyAsyncUndefined: Self = StObject.set(x, "useApplyAsync", js.undefined)
+          inline def setUseApplyAsyncUndefined: Self = StObject.set(x, "useApplyAsync", js.undefined)
         }
       }
       
@@ -226,26 +210,20 @@ object mod {
       }
       object IWebSocketMessageHandler {
         
-        @scala.inline
-        def apply(autoApply: Boolean, fn: MessageEvent[js.Any] => Unit): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageHandler = {
+        inline def apply(autoApply: Boolean, fn: MessageEvent[js.Any] => Unit): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageHandler = {
           val __obj = js.Dynamic.literal(autoApply = autoApply.asInstanceOf[js.Any], fn = js.Any.fromFunction1(fn))
           __obj.asInstanceOf[typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageHandler]
         }
         
-        @scala.inline
-        implicit class IWebSocketMessageHandlerMutableBuilder[Self <: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageHandler] (val x: Self) extends AnyVal {
+        extension [Self <: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageHandler](x: Self) {
           
-          @scala.inline
-          def setAutoApply(value: Boolean): Self = StObject.set(x, "autoApply", value.asInstanceOf[js.Any])
+          inline def setAutoApply(value: Boolean): Self = StObject.set(x, "autoApply", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFn(value: MessageEvent[js.Any] => Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+          inline def setFn(value: MessageEvent[js.Any] => Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setPattern(value: String | RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+          inline def setPattern(value: String | RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+          inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
         }
       }
       
@@ -263,26 +241,20 @@ object mod {
       }
       object IWebSocketMessageOptions {
         
-        @scala.inline
-        def apply(): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageOptions = {
+        inline def apply(): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageOptions]
         }
         
-        @scala.inline
-        implicit class IWebSocketMessageOptionsMutableBuilder[Self <: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageOptions] (val x: Self) extends AnyVal {
+        extension [Self <: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageOptions](x: Self) {
           
-          @scala.inline
-          def setAutoApply(value: Boolean): Self = StObject.set(x, "autoApply", value.asInstanceOf[js.Any])
+          inline def setAutoApply(value: Boolean): Self = StObject.set(x, "autoApply", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAutoApplyUndefined: Self = StObject.set(x, "autoApply", js.undefined)
+          inline def setAutoApplyUndefined: Self = StObject.set(x, "autoApply", js.undefined)
           
-          @scala.inline
-          def setFilter(value: String | RegExp): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+          inline def setFilter(value: String | RegExp): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+          inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
         }
       }
       
@@ -312,20 +284,16 @@ object mod {
       }
       object IWebSocketQueueItem {
         
-        @scala.inline
-        def apply(defered: IPromise[Unit], message: js.Any): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketQueueItem = {
+        inline def apply(defered: IPromise[Unit], message: js.Any): typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketQueueItem = {
           val __obj = js.Dynamic.literal(defered = defered.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketQueueItem]
         }
         
-        @scala.inline
-        implicit class IWebSocketQueueItemMutableBuilder[Self <: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketQueueItem] (val x: Self) extends AnyVal {
+        extension [Self <: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketQueueItem](x: Self) {
           
-          @scala.inline
-          def setDefered(value: IPromise[Unit]): Self = StObject.set(x, "defered", value.asInstanceOf[js.Any])
+          inline def setDefered(value: IPromise[Unit]): Self = StObject.set(x, "defered", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+          inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         }
       }
     }

@@ -78,8 +78,7 @@ trait XAccessibleValue
 }
 object XAccessibleValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentValue: js.Any,
     MaximumValue: js.Any,
     MinimumValue: js.Any,
@@ -95,28 +94,20 @@ object XAccessibleValue {
     __obj.asInstanceOf[XAccessibleValue]
   }
   
-  @scala.inline
-  implicit class XAccessibleValueMutableBuilder[Self <: XAccessibleValue] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleValue](x: Self) {
     
-    @scala.inline
-    def setCurrentValue(value: js.Any): Self = StObject.set(x, "CurrentValue", value.asInstanceOf[js.Any])
+    inline def setCurrentValue(value: js.Any): Self = StObject.set(x, "CurrentValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCurrentValue(value: () => js.Any): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction0(value))
+    inline def setGetCurrentValue(value: () => js.Any): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaximumValue(value: () => js.Any): Self = StObject.set(x, "getMaximumValue", js.Any.fromFunction0(value))
+    inline def setGetMaximumValue(value: () => js.Any): Self = StObject.set(x, "getMaximumValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinimumValue(value: () => js.Any): Self = StObject.set(x, "getMinimumValue", js.Any.fromFunction0(value))
+    inline def setGetMinimumValue(value: () => js.Any): Self = StObject.set(x, "getMinimumValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMaximumValue(value: js.Any): Self = StObject.set(x, "MaximumValue", value.asInstanceOf[js.Any])
+    inline def setMaximumValue(value: js.Any): Self = StObject.set(x, "MaximumValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumValue(value: js.Any): Self = StObject.set(x, "MinimumValue", value.asInstanceOf[js.Any])
+    inline def setMinimumValue(value: js.Any): Self = StObject.set(x, "MinimumValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetCurrentValue(value: js.Any => Boolean): Self = StObject.set(x, "setCurrentValue", js.Any.fromFunction1(value))
+    inline def setSetCurrentValue(value: js.Any => Boolean): Self = StObject.set(x, "setCurrentValue", js.Any.fromFunction1(value))
   }
 }

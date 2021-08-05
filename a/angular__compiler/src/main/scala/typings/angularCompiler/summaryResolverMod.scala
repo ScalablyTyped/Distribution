@@ -14,19 +14,19 @@ object summaryResolverMod {
   class AotSummaryResolver protected () extends SummaryResolver[StaticSymbol] {
     def this(host: AotSummaryResolverHost, staticSymbolCache: StaticSymbolCache) = this()
     
-    var _loadSummaryFile: js.Any = js.native
+    /* private */ var _loadSummaryFile: js.Any = js.native
     
-    var host: js.Any = js.native
+    /* private */ var host: js.Any = js.native
     
-    var importAs: js.Any = js.native
+    /* private */ var importAs: js.Any = js.native
     
-    var knownFileNameToModuleNames: js.Any = js.native
+    /* private */ var knownFileNameToModuleNames: js.Any = js.native
     
-    var loadedFilePaths: js.Any = js.native
+    /* private */ var loadedFilePaths: js.Any = js.native
     
-    var staticSymbolCache: js.Any = js.native
+    /* private */ var staticSymbolCache: js.Any = js.native
     
-    var summaryCache: js.Any = js.native
+    /* private */ var summaryCache: js.Any = js.native
   }
   
   trait AotSummaryResolverHost extends StObject {
@@ -59,8 +59,7 @@ object summaryResolverMod {
   }
   object AotSummaryResolverHost {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fromSummaryFileName: (String, String) => String,
       isSourceFile: String => Boolean,
       loadSummary: String => String | Null,
@@ -70,20 +69,15 @@ object summaryResolverMod {
       __obj.asInstanceOf[AotSummaryResolverHost]
     }
     
-    @scala.inline
-    implicit class AotSummaryResolverHostMutableBuilder[Self <: AotSummaryResolverHost] (val x: Self) extends AnyVal {
+    extension [Self <: AotSummaryResolverHost](x: Self) {
       
-      @scala.inline
-      def setFromSummaryFileName(value: (String, String) => String): Self = StObject.set(x, "fromSummaryFileName", js.Any.fromFunction2(value))
+      inline def setFromSummaryFileName(value: (String, String) => String): Self = StObject.set(x, "fromSummaryFileName", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsSourceFile(value: String => Boolean): Self = StObject.set(x, "isSourceFile", js.Any.fromFunction1(value))
+      inline def setIsSourceFile(value: String => Boolean): Self = StObject.set(x, "isSourceFile", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadSummary(value: String => String | Null): Self = StObject.set(x, "loadSummary", js.Any.fromFunction1(value))
+      inline def setLoadSummary(value: String => String | Null): Self = StObject.set(x, "loadSummary", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToSummaryFileName(value: (String, String) => String): Self = StObject.set(x, "toSummaryFileName", js.Any.fromFunction2(value))
+      inline def setToSummaryFileName(value: (String, String) => String): Self = StObject.set(x, "toSummaryFileName", js.Any.fromFunction2(value))
     }
   }
 }

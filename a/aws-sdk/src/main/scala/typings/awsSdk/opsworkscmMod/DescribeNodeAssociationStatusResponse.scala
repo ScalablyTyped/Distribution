@@ -18,28 +18,21 @@ trait DescribeNodeAssociationStatusResponse extends StObject {
 }
 object DescribeNodeAssociationStatusResponse {
   
-  @scala.inline
-  def apply(): DescribeNodeAssociationStatusResponse = {
+  inline def apply(): DescribeNodeAssociationStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeNodeAssociationStatusResponse]
   }
   
-  @scala.inline
-  implicit class DescribeNodeAssociationStatusResponseMutableBuilder[Self <: DescribeNodeAssociationStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNodeAssociationStatusResponse](x: Self) {
     
-    @scala.inline
-    def setEngineAttributes(value: EngineAttributes): Self = StObject.set(x, "EngineAttributes", value.asInstanceOf[js.Any])
+    inline def setEngineAttributes(value: EngineAttributes): Self = StObject.set(x, "EngineAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineAttributesUndefined: Self = StObject.set(x, "EngineAttributes", js.undefined)
+    inline def setEngineAttributesUndefined: Self = StObject.set(x, "EngineAttributes", js.undefined)
     
-    @scala.inline
-    def setEngineAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "EngineAttributes", js.Array(value :_*))
+    inline def setEngineAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "EngineAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setNodeAssociationStatus(value: NodeAssociationStatus): Self = StObject.set(x, "NodeAssociationStatus", value.asInstanceOf[js.Any])
+    inline def setNodeAssociationStatus(value: NodeAssociationStatus): Self = StObject.set(x, "NodeAssociationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeAssociationStatusUndefined: Self = StObject.set(x, "NodeAssociationStatus", js.undefined)
+    inline def setNodeAssociationStatusUndefined: Self = StObject.set(x, "NodeAssociationStatus", js.undefined)
   }
 }

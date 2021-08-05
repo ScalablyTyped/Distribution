@@ -19,20 +19,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+      inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+      inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
     }
   }
   
@@ -42,20 +38,16 @@ object anon {
   }
   object Adjacent {
     
-    @scala.inline
-    def apply(): Adjacent = {
+    inline def apply(): Adjacent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Adjacent]
     }
     
-    @scala.inline
-    implicit class AdjacentMutableBuilder[Self <: Adjacent] (val x: Self) extends AnyVal {
+    extension [Self <: Adjacent](x: Self) {
       
-      @scala.inline
-      def setAdjacent(value: Boolean): Self = StObject.set(x, "adjacent", value.asInstanceOf[js.Any])
+      inline def setAdjacent(value: Boolean): Self = StObject.set(x, "adjacent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdjacentUndefined: Self = StObject.set(x, "adjacent", js.undefined)
+      inline def setAdjacentUndefined: Self = StObject.set(x, "adjacent", js.undefined)
     }
   }
   
@@ -67,26 +59,20 @@ object anon {
   }
   object ExcludeEnd {
     
-    @scala.inline
-    def apply(): ExcludeEnd = {
+    inline def apply(): ExcludeEnd = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExcludeEnd]
     }
     
-    @scala.inline
-    implicit class ExcludeEndMutableBuilder[Self <: ExcludeEnd] (val x: Self) extends AnyVal {
+    extension [Self <: ExcludeEnd](x: Self) {
       
-      @scala.inline
-      def setExcludeEnd(value: Boolean): Self = StObject.set(x, "excludeEnd", value.asInstanceOf[js.Any])
+      inline def setExcludeEnd(value: Boolean): Self = StObject.set(x, "excludeEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeEndUndefined: Self = StObject.set(x, "excludeEnd", js.undefined)
+      inline def setExcludeEndUndefined: Self = StObject.set(x, "excludeEnd", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     }
   }
   
@@ -98,26 +84,20 @@ object anon {
   }
   object ExcludeStart {
     
-    @scala.inline
-    def apply(): ExcludeStart = {
+    inline def apply(): ExcludeStart = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExcludeStart]
     }
     
-    @scala.inline
-    implicit class ExcludeStartMutableBuilder[Self <: ExcludeStart] (val x: Self) extends AnyVal {
+    extension [Self <: ExcludeStart](x: Self) {
       
-      @scala.inline
-      def setExcludeEnd(value: Boolean): Self = StObject.set(x, "excludeEnd", value.asInstanceOf[js.Any])
+      inline def setExcludeEnd(value: Boolean): Self = StObject.set(x, "excludeEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeEndUndefined: Self = StObject.set(x, "excludeEnd", js.undefined)
+      inline def setExcludeEndUndefined: Self = StObject.set(x, "excludeEnd", js.undefined)
       
-      @scala.inline
-      def setExcludeStart(value: Boolean): Self = StObject.set(x, "excludeStart", value.asInstanceOf[js.Any])
+      inline def setExcludeStart(value: Boolean): Self = StObject.set(x, "excludeStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeStartUndefined: Self = StObject.set(x, "excludeStart", js.undefined)
+      inline def setExcludeStartUndefined: Self = StObject.set(x, "excludeStart", js.undefined)
     }
   }
   
@@ -129,26 +109,20 @@ object anon {
   }
   object Exclusive {
     
-    @scala.inline
-    def apply(): Exclusive = {
+    inline def apply(): Exclusive = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Exclusive]
     }
     
-    @scala.inline
-    implicit class ExclusiveMutableBuilder[Self <: Exclusive] (val x: Self) extends AnyVal {
+    extension [Self <: Exclusive](x: Self) {
       
-      @scala.inline
-      def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+      inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+      inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     }
   }
   
@@ -236,26 +210,20 @@ object anon {
   }
   object Step {
     
-    @scala.inline
-    def apply(): Step = {
+    inline def apply(): Step = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Step]
     }
     
-    @scala.inline
-    implicit class StepMutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
+    extension [Self <: Step](x: Self) {
       
-      @scala.inline
-      def setExcludeStart(value: Boolean): Self = StObject.set(x, "excludeStart", value.asInstanceOf[js.Any])
+      inline def setExcludeStart(value: Boolean): Self = StObject.set(x, "excludeStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeStartUndefined: Self = StObject.set(x, "excludeStart", js.undefined)
+      inline def setExcludeStartUndefined: Self = StObject.set(x, "excludeStart", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     }
   }
 }

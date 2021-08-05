@@ -27,26 +27,20 @@ object routingRulesMod {
   }
   object Condition {
     
-    @scala.inline
-    def apply(): Condition = {
+    inline def apply(): Condition = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Condition]
     }
     
-    @scala.inline
-    implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
+    extension [Self <: Condition](x: Self) {
       
-      @scala.inline
-      def setHttpErrorCodeReturnedEquals(value: String): Self = StObject.set(x, "HttpErrorCodeReturnedEquals", value.asInstanceOf[js.Any])
+      inline def setHttpErrorCodeReturnedEquals(value: String): Self = StObject.set(x, "HttpErrorCodeReturnedEquals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpErrorCodeReturnedEqualsUndefined: Self = StObject.set(x, "HttpErrorCodeReturnedEquals", js.undefined)
+      inline def setHttpErrorCodeReturnedEqualsUndefined: Self = StObject.set(x, "HttpErrorCodeReturnedEquals", js.undefined)
       
-      @scala.inline
-      def setKeyPrefixEquals(value: String): Self = StObject.set(x, "KeyPrefixEquals", value.asInstanceOf[js.Any])
+      inline def setKeyPrefixEquals(value: String): Self = StObject.set(x, "KeyPrefixEquals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyPrefixEqualsUndefined: Self = StObject.set(x, "KeyPrefixEquals", js.undefined)
+      inline def setKeyPrefixEqualsUndefined: Self = StObject.set(x, "KeyPrefixEquals", js.undefined)
     }
   }
   
@@ -91,44 +85,32 @@ object routingRulesMod {
   }
   object Redirect {
     
-    @scala.inline
-    def apply(): Redirect = {
+    inline def apply(): Redirect = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Redirect]
     }
     
-    @scala.inline
-    implicit class RedirectMutableBuilder[Self <: Redirect] (val x: Self) extends AnyVal {
+    extension [Self <: Redirect](x: Self) {
       
-      @scala.inline
-      def setHostName(value: String): Self = StObject.set(x, "HostName", value.asInstanceOf[js.Any])
+      inline def setHostName(value: String): Self = StObject.set(x, "HostName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostNameUndefined: Self = StObject.set(x, "HostName", js.undefined)
+      inline def setHostNameUndefined: Self = StObject.set(x, "HostName", js.undefined)
       
-      @scala.inline
-      def setHttpRedirectCode(value: String): Self = StObject.set(x, "HttpRedirectCode", value.asInstanceOf[js.Any])
+      inline def setHttpRedirectCode(value: String): Self = StObject.set(x, "HttpRedirectCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpRedirectCodeUndefined: Self = StObject.set(x, "HttpRedirectCode", js.undefined)
+      inline def setHttpRedirectCodeUndefined: Self = StObject.set(x, "HttpRedirectCode", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
       
-      @scala.inline
-      def setReplaceKeyPrefixWith(value: String): Self = StObject.set(x, "ReplaceKeyPrefixWith", value.asInstanceOf[js.Any])
+      inline def setReplaceKeyPrefixWith(value: String): Self = StObject.set(x, "ReplaceKeyPrefixWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceKeyPrefixWithUndefined: Self = StObject.set(x, "ReplaceKeyPrefixWith", js.undefined)
+      inline def setReplaceKeyPrefixWithUndefined: Self = StObject.set(x, "ReplaceKeyPrefixWith", js.undefined)
       
-      @scala.inline
-      def setReplaceKeyWith(value: String): Self = StObject.set(x, "ReplaceKeyWith", value.asInstanceOf[js.Any])
+      inline def setReplaceKeyWith(value: String): Self = StObject.set(x, "ReplaceKeyWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceKeyWithUndefined: Self = StObject.set(x, "ReplaceKeyWith", js.undefined)
+      inline def setReplaceKeyWithUndefined: Self = StObject.set(x, "ReplaceKeyWith", js.undefined)
     }
   }
   
@@ -148,23 +130,18 @@ object routingRulesMod {
   }
   object RoutingRule {
     
-    @scala.inline
-    def apply(Redirect: Redirect): RoutingRule = {
+    inline def apply(Redirect: Redirect): RoutingRule = {
       val __obj = js.Dynamic.literal(Redirect = Redirect.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoutingRule]
     }
     
-    @scala.inline
-    implicit class RoutingRuleMutableBuilder[Self <: RoutingRule] (val x: Self) extends AnyVal {
+    extension [Self <: RoutingRule](x: Self) {
       
-      @scala.inline
-      def setCondition(value: Condition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: Condition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
+      inline def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
       
-      @scala.inline
-      def setRedirect(value: Redirect): Self = StObject.set(x, "Redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: Redirect): Self = StObject.set(x, "Redirect", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -23,13 +23,10 @@ object trainingDatasetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def evaluateDataset[T](model: js.Any, dataset: Dataset[T], args: ModelEvaluateDatasetArgs): js.Promise[Scalar | js.Array[Scalar]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateDataset")(model.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Scalar | js.Array[Scalar]]]
-  @scala.inline
-  def evaluateDataset[T](model: js.Any, dataset: LazyIterator[T], args: ModelEvaluateDatasetArgs): js.Promise[Scalar | js.Array[Scalar]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateDataset")(model.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Scalar | js.Array[Scalar]]]
+  inline def evaluateDataset[T](model: js.Any, dataset: Dataset[T], args: ModelEvaluateDatasetArgs): js.Promise[Scalar | js.Array[Scalar]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateDataset")(model.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Scalar | js.Array[Scalar]]]
+  inline def evaluateDataset[T](model: js.Any, dataset: LazyIterator[T], args: ModelEvaluateDatasetArgs): js.Promise[Scalar | js.Array[Scalar]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateDataset")(model.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Scalar | js.Array[Scalar]]]
   
-  @scala.inline
-  def fitDataset[T](model: js.Any, dataset: Dataset[T], args: ModelFitDatasetArgs[T]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitDataset")(model.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitDataset[T](model: js.Any, dataset: Dataset[T], args: ModelFitDatasetArgs[T]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitDataset")(model.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
   
   trait FitDatasetElement extends StObject {
     
@@ -39,26 +36,20 @@ object trainingDatasetMod {
   }
   object FitDatasetElement {
     
-    @scala.inline
-    def apply(xs: TensorOrArrayOrMap, ys: TensorOrArrayOrMap): FitDatasetElement = {
+    inline def apply(xs: TensorOrArrayOrMap, ys: TensorOrArrayOrMap): FitDatasetElement = {
       val __obj = js.Dynamic.literal(xs = xs.asInstanceOf[js.Any], ys = ys.asInstanceOf[js.Any])
       __obj.asInstanceOf[FitDatasetElement]
     }
     
-    @scala.inline
-    implicit class FitDatasetElementMutableBuilder[Self <: FitDatasetElement] (val x: Self) extends AnyVal {
+    extension [Self <: FitDatasetElement](x: Self) {
       
-      @scala.inline
-      def setXs(value: TensorOrArrayOrMap): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+      inline def setXs(value: TensorOrArrayOrMap): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "xs", js.Array(value :_*))
+      inline def setXsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "xs", js.Array(value :_*))
       
-      @scala.inline
-      def setYs(value: TensorOrArrayOrMap): Self = StObject.set(x, "ys", value.asInstanceOf[js.Any])
+      inline def setYs(value: TensorOrArrayOrMap): Self = StObject.set(x, "ys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "ys", js.Array(value :_*))
+      inline def setYsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "ys", js.Array(value :_*))
     }
   }
   
@@ -77,26 +68,20 @@ object trainingDatasetMod {
   }
   object ModelEvaluateDatasetArgs {
     
-    @scala.inline
-    def apply(): ModelEvaluateDatasetArgs = {
+    inline def apply(): ModelEvaluateDatasetArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModelEvaluateDatasetArgs]
     }
     
-    @scala.inline
-    implicit class ModelEvaluateDatasetArgsMutableBuilder[Self <: ModelEvaluateDatasetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ModelEvaluateDatasetArgs](x: Self) {
       
-      @scala.inline
-      def setBatches(value: Double): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
+      inline def setBatches(value: Double): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchesUndefined: Self = StObject.set(x, "batches", js.undefined)
+      inline def setBatchesUndefined: Self = StObject.set(x, "batches", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: ModelLoggingVerbosity): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: ModelLoggingVerbosity): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -237,79 +222,56 @@ object trainingDatasetMod {
   }
   object ModelFitDatasetArgs {
     
-    @scala.inline
-    def apply[T](epochs: Double): ModelFitDatasetArgs[T] = {
+    inline def apply[T](epochs: Double): ModelFitDatasetArgs[T] = {
       val __obj = js.Dynamic.literal(epochs = epochs.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelFitDatasetArgs[T]]
     }
     
-    @scala.inline
-    implicit class ModelFitDatasetArgsMutableBuilder[Self <: ModelFitDatasetArgs[?], T] (val x: Self & ModelFitDatasetArgs[T]) extends AnyVal {
+    extension [Self <: ModelFitDatasetArgs[?], T](x: Self & ModelFitDatasetArgs[T]) {
       
-      @scala.inline
-      def setBatchesPerEpoch(value: Double): Self = StObject.set(x, "batchesPerEpoch", value.asInstanceOf[js.Any])
+      inline def setBatchesPerEpoch(value: Double): Self = StObject.set(x, "batchesPerEpoch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchesPerEpochUndefined: Self = StObject.set(x, "batchesPerEpoch", js.undefined)
+      inline def setBatchesPerEpochUndefined: Self = StObject.set(x, "batchesPerEpoch", js.undefined)
       
-      @scala.inline
-      def setCallbacks(value: (js.Array[BaseCallback | CustomCallbackArgs]) | CustomCallbackArgs): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: (js.Array[BaseCallback | CustomCallbackArgs]) | CustomCallbackArgs): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
+      inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
       
-      @scala.inline
-      def setCallbacksVarargs(value: (BaseCallback | CustomCallbackArgs)*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
+      inline def setCallbacksVarargs(value: (BaseCallback | CustomCallbackArgs)*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
       
-      @scala.inline
-      def setClassWeight(value: ClassWeight | js.Array[ClassWeight] | ClassWeightMap): Self = StObject.set(x, "classWeight", value.asInstanceOf[js.Any])
+      inline def setClassWeight(value: ClassWeight | js.Array[ClassWeight] | ClassWeightMap): Self = StObject.set(x, "classWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassWeightUndefined: Self = StObject.set(x, "classWeight", js.undefined)
+      inline def setClassWeightUndefined: Self = StObject.set(x, "classWeight", js.undefined)
       
-      @scala.inline
-      def setClassWeightVarargs(value: ClassWeight*): Self = StObject.set(x, "classWeight", js.Array(value :_*))
+      inline def setClassWeightVarargs(value: ClassWeight*): Self = StObject.set(x, "classWeight", js.Array(value :_*))
       
-      @scala.inline
-      def setEpochs(value: Double): Self = StObject.set(x, "epochs", value.asInstanceOf[js.Any])
+      inline def setEpochs(value: Double): Self = StObject.set(x, "epochs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialEpoch(value: Double): Self = StObject.set(x, "initialEpoch", value.asInstanceOf[js.Any])
+      inline def setInitialEpoch(value: Double): Self = StObject.set(x, "initialEpoch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialEpochUndefined: Self = StObject.set(x, "initialEpoch", js.undefined)
+      inline def setInitialEpochUndefined: Self = StObject.set(x, "initialEpoch", js.undefined)
       
-      @scala.inline
-      def setValidationBatchSize(value: Double): Self = StObject.set(x, "validationBatchSize", value.asInstanceOf[js.Any])
+      inline def setValidationBatchSize(value: Double): Self = StObject.set(x, "validationBatchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationBatchSizeUndefined: Self = StObject.set(x, "validationBatchSize", js.undefined)
+      inline def setValidationBatchSizeUndefined: Self = StObject.set(x, "validationBatchSize", js.undefined)
       
-      @scala.inline
-      def setValidationBatches(value: Double): Self = StObject.set(x, "validationBatches", value.asInstanceOf[js.Any])
+      inline def setValidationBatches(value: Double): Self = StObject.set(x, "validationBatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationBatchesUndefined: Self = StObject.set(x, "validationBatches", js.undefined)
+      inline def setValidationBatchesUndefined: Self = StObject.set(x, "validationBatches", js.undefined)
       
-      @scala.inline
-      def setValidationData(
+      inline def setValidationData(
         value: (js.Tuple2[TensorOrArrayOrMap, TensorOrArrayOrMap]) | (js.Tuple3[TensorOrArrayOrMap, TensorOrArrayOrMap, TensorOrArrayOrMap]) | Dataset[T]
       ): Self = StObject.set(x, "validationData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationDataUndefined: Self = StObject.set(x, "validationData", js.undefined)
+      inline def setValidationDataUndefined: Self = StObject.set(x, "validationData", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: ModelLoggingVerbosity): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: ModelLoggingVerbosity): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
       
-      @scala.inline
-      def setYieldEvery(value: YieldEveryOptions): Self = StObject.set(x, "yieldEvery", value.asInstanceOf[js.Any])
+      inline def setYieldEvery(value: YieldEveryOptions): Self = StObject.set(x, "yieldEvery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYieldEveryUndefined: Self = StObject.set(x, "yieldEvery", js.undefined)
+      inline def setYieldEveryUndefined: Self = StObject.set(x, "yieldEvery", js.undefined)
     }
   }
 }

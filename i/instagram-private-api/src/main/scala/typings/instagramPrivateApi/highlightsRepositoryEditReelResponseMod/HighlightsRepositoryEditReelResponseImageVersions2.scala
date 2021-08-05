@@ -10,19 +10,15 @@ trait HighlightsRepositoryEditReelResponseImageVersions2 extends StObject {
 }
 object HighlightsRepositoryEditReelResponseImageVersions2 {
   
-  @scala.inline
-  def apply(candidates: js.Array[HighlightsRepositoryEditReelResponseCandidatesItem]): HighlightsRepositoryEditReelResponseImageVersions2 = {
+  inline def apply(candidates: js.Array[HighlightsRepositoryEditReelResponseCandidatesItem]): HighlightsRepositoryEditReelResponseImageVersions2 = {
     val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightsRepositoryEditReelResponseImageVersions2]
   }
   
-  @scala.inline
-  implicit class HighlightsRepositoryEditReelResponseImageVersions2MutableBuilder[Self <: HighlightsRepositoryEditReelResponseImageVersions2] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightsRepositoryEditReelResponseImageVersions2](x: Self) {
     
-    @scala.inline
-    def setCandidates(value: js.Array[HighlightsRepositoryEditReelResponseCandidatesItem]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
+    inline def setCandidates(value: js.Array[HighlightsRepositoryEditReelResponseCandidatesItem]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidatesVarargs(value: HighlightsRepositoryEditReelResponseCandidatesItem*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+    inline def setCandidatesVarargs(value: HighlightsRepositoryEditReelResponseCandidatesItem*): Self = StObject.set(x, "candidates", js.Array(value :_*))
   }
 }

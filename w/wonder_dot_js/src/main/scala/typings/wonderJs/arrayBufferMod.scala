@@ -37,13 +37,9 @@ object arrayBufferMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(data: js.Array[Double], size: Double): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
-    @scala.inline
-    def create(data: js.Array[Double], size: Double, `type`: Unit, usage: EBufferUsage): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
-    @scala.inline
-    def create(data: js.Array[Double], size: Double, `type`: EBufferType): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
-    @scala.inline
-    def create(data: js.Array[Double], size: Double, `type`: EBufferType, usage: EBufferUsage): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+    inline def create(data: js.Array[Double], size: Double): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+    inline def create(data: js.Array[Double], size: Double, `type`: Unit, usage: EBufferUsage): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+    inline def create(data: js.Array[Double], size: Double, `type`: EBufferType): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+    inline def create(data: js.Array[Double], size: Double, `type`: EBufferType, usage: EBufferUsage): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
   }
 }

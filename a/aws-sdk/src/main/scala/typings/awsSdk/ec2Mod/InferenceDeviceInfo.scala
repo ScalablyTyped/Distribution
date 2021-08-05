@@ -23,31 +23,23 @@ trait InferenceDeviceInfo extends StObject {
 }
 object InferenceDeviceInfo {
   
-  @scala.inline
-  def apply(): InferenceDeviceInfo = {
+  inline def apply(): InferenceDeviceInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InferenceDeviceInfo]
   }
   
-  @scala.inline
-  implicit class InferenceDeviceInfoMutableBuilder[Self <: InferenceDeviceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: InferenceDeviceInfo](x: Self) {
     
-    @scala.inline
-    def setCount(value: InferenceDeviceCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: InferenceDeviceCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
-    @scala.inline
-    def setManufacturer(value: InferenceDeviceManufacturerName): Self = StObject.set(x, "Manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: InferenceDeviceManufacturerName): Self = StObject.set(x, "Manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerUndefined: Self = StObject.set(x, "Manufacturer", js.undefined)
+    inline def setManufacturerUndefined: Self = StObject.set(x, "Manufacturer", js.undefined)
     
-    @scala.inline
-    def setName(value: InferenceDeviceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: InferenceDeviceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

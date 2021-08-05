@@ -61,8 +61,7 @@ object ackExtensionMod {
   }
   object AckExtension {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       incoming: /* message */ Message => Unit,
       outgoing: /* message */ Message => Unit,
       registered: (String, CometD) => Unit,
@@ -72,20 +71,15 @@ object ackExtensionMod {
       __obj.asInstanceOf[AckExtension]
     }
     
-    @scala.inline
-    implicit class AckExtensionMutableBuilder[Self <: AckExtension] (val x: Self) extends AnyVal {
+    extension [Self <: AckExtension](x: Self) {
       
-      @scala.inline
-      def setIncoming(value: /* message */ Message => Unit): Self = StObject.set(x, "incoming", js.Any.fromFunction1(value))
+      inline def setIncoming(value: /* message */ Message => Unit): Self = StObject.set(x, "incoming", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOutgoing(value: /* message */ Message => Unit): Self = StObject.set(x, "outgoing", js.Any.fromFunction1(value))
+      inline def setOutgoing(value: /* message */ Message => Unit): Self = StObject.set(x, "outgoing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegistered(value: (String, CometD) => Unit): Self = StObject.set(x, "registered", js.Any.fromFunction2(value))
+      inline def setRegistered(value: (String, CometD) => Unit): Self = StObject.set(x, "registered", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnregistered(value: () => Unit): Self = StObject.set(x, "unregistered", js.Any.fromFunction0(value))
+      inline def setUnregistered(value: () => Unit): Self = StObject.set(x, "unregistered", js.Any.fromFunction0(value))
     }
   }
 }

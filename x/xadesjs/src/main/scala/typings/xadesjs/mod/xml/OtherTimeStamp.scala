@@ -13,6 +13,5 @@ class OtherTimeStamp ()
   extends typings.xadesjs.xmlMod.OtherTimeStamp
 object OtherTimeStamp {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.OtherTimeStamp] = ^.asInstanceOf[js.Dynamic].selectDynamic("OtherTimeStamp").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.OtherTimeStamp]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.OtherTimeStamp] = ^.asInstanceOf[js.Dynamic].selectDynamic("OtherTimeStamp").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.OtherTimeStamp]]
 }

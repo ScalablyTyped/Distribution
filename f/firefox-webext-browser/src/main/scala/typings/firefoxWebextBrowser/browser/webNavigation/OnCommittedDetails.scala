@@ -39,46 +39,33 @@ trait OnCommittedDetails extends StObject {
 }
 object OnCommittedDetails {
   
-  @scala.inline
-  def apply(frameId: Double, tabId: Double, timeStamp: Double, url: String): OnCommittedDetails = {
+  inline def apply(frameId: Double, tabId: Double, timeStamp: Double, url: String): OnCommittedDetails = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnCommittedDetails]
   }
   
-  @scala.inline
-  implicit class OnCommittedDetailsMutableBuilder[Self <: OnCommittedDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OnCommittedDetails](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+    inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
+    inline def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
     
-    @scala.inline
-    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+    inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionQualifiers(value: js.Array[TransitionQualifier]): Self = StObject.set(x, "transitionQualifiers", value.asInstanceOf[js.Any])
+    inline def setTransitionQualifiers(value: js.Array[TransitionQualifier]): Self = StObject.set(x, "transitionQualifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionQualifiersUndefined: Self = StObject.set(x, "transitionQualifiers", js.undefined)
+    inline def setTransitionQualifiersUndefined: Self = StObject.set(x, "transitionQualifiers", js.undefined)
     
-    @scala.inline
-    def setTransitionQualifiersVarargs(value: TransitionQualifier*): Self = StObject.set(x, "transitionQualifiers", js.Array(value :_*))
+    inline def setTransitionQualifiersVarargs(value: TransitionQualifier*): Self = StObject.set(x, "transitionQualifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setTransitionType(value: TransitionType): Self = StObject.set(x, "transitionType", value.asInstanceOf[js.Any])
+    inline def setTransitionType(value: TransitionType): Self = StObject.set(x, "transitionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionTypeUndefined: Self = StObject.set(x, "transitionType", js.undefined)
+    inline def setTransitionTypeUndefined: Self = StObject.set(x, "transitionType", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

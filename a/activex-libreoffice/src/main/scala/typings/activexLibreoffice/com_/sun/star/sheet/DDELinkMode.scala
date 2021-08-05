@@ -21,14 +21,11 @@ trait DDELinkMode extends StObject
 object DDELinkMode {
   
   /** numbers are converted into the default format. */
-  @scala.inline
-  def DEFAULT: `0` = 0.asInstanceOf[`0`]
+  inline def DEFAULT: `0` = 0.asInstanceOf[`0`]
   
   /** numbers are converted into the English default format. */
-  @scala.inline
-  def ENGLISH: `1` = 1.asInstanceOf[`1`]
+  inline def ENGLISH: `1` = 1.asInstanceOf[`1`]
   
   /** numbers are not converted, but treated as text. */
-  @scala.inline
-  def TEXT: `2` = 2.asInstanceOf[`2`]
+  inline def TEXT: `2` = 2.asInstanceOf[`2`]
 }

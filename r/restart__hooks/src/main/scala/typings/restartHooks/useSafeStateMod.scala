@@ -24,8 +24,7 @@ object useSafeStateMod {
     * const [show, setShow] = useSafeState(useState(true));
     * ```
     */
-  @scala.inline
-  def default[TState](state: js.Tuple2[TState, AsyncSetState[TState] | StateSetter[TState]]): js.Tuple2[TState, StateSetter[TState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[TState, StateSetter[TState]]]
+  inline def default[TState](state: js.Tuple2[TState, AsyncSetState[TState] | StateSetter[TState]]): js.Tuple2[TState, StateSetter[TState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[TState, StateSetter[TState]]]
   
   type StateSetter[TState] = Dispatch[SetStateAction[TState]]
 }

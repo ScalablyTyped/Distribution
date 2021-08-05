@@ -27,14 +27,10 @@ object mod {
   //=> [{a: 2, b: 0}]
   ```
   */
-  @scala.inline
-  def apply[T /* <: StringDictionary[js.Any] */](`object`: T): T = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def apply[T /* <: StringDictionary[js.Any] */](`object`: T, options: Options): T = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def apply[T](`object`: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def apply[T](`object`: js.Array[T], options: Options): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def apply[T /* <: StringDictionary[js.Any] */](`object`: T): T = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def apply[T /* <: StringDictionary[js.Any] */](`object`: T, options: Options): T = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T](`object`: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def apply[T](`object`: js.Array[T], options: Options): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   @JSImport("sort-keys", JSImport.Namespace)
   @js.native
@@ -55,26 +51,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCompare(value: (/* left */ String, /* right */ String) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+      inline def setCompare(value: (/* left */ String, /* right */ String) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
+      inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
       
-      @scala.inline
-      def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+      inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
     }
   }
 }

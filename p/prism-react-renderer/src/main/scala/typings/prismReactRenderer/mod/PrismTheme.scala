@@ -13,22 +13,17 @@ trait PrismTheme extends StObject {
 }
 object PrismTheme {
   
-  @scala.inline
-  def apply(plain: PrismThemeEntry, styles: js.Array[Languages]): PrismTheme = {
+  inline def apply(plain: PrismThemeEntry, styles: js.Array[Languages]): PrismTheme = {
     val __obj = js.Dynamic.literal(plain = plain.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrismTheme]
   }
   
-  @scala.inline
-  implicit class PrismThemeMutableBuilder[Self <: PrismTheme] (val x: Self) extends AnyVal {
+  extension [Self <: PrismTheme](x: Self) {
     
-    @scala.inline
-    def setPlain(value: PrismThemeEntry): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
+    inline def setPlain(value: PrismThemeEntry): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyles(value: js.Array[Languages]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[Languages]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesVarargs(value: Languages*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: Languages*): Self = StObject.set(x, "styles", js.Array(value :_*))
   }
 }

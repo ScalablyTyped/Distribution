@@ -18,25 +18,19 @@ trait CodeDestination extends StObject {
 }
 object CodeDestination {
   
-  @scala.inline
-  def apply(): CodeDestination = {
+  inline def apply(): CodeDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeDestination]
   }
   
-  @scala.inline
-  implicit class CodeDestinationMutableBuilder[Self <: CodeDestination] (val x: Self) extends AnyVal {
+  extension [Self <: CodeDestination](x: Self) {
     
-    @scala.inline
-    def setCodeCommit(value: CodeCommitCodeDestination): Self = StObject.set(x, "codeCommit", value.asInstanceOf[js.Any])
+    inline def setCodeCommit(value: CodeCommitCodeDestination): Self = StObject.set(x, "codeCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeCommitUndefined: Self = StObject.set(x, "codeCommit", js.undefined)
+    inline def setCodeCommitUndefined: Self = StObject.set(x, "codeCommit", js.undefined)
     
-    @scala.inline
-    def setGitHub(value: GitHubCodeDestination): Self = StObject.set(x, "gitHub", value.asInstanceOf[js.Any])
+    inline def setGitHub(value: GitHubCodeDestination): Self = StObject.set(x, "gitHub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitHubUndefined: Self = StObject.set(x, "gitHub", js.undefined)
+    inline def setGitHubUndefined: Self = StObject.set(x, "gitHub", js.undefined)
   }
 }

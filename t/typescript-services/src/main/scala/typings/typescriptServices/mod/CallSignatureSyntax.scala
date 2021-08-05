@@ -94,10 +94,8 @@ object CallSignatureSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(parameterList: typings.typescriptServices.TypeScript.ParameterListSyntax): typings.typescriptServices.TypeScript.CallSignatureSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(parameterList.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.CallSignatureSyntax]
+  inline def create(parameterList: typings.typescriptServices.TypeScript.ParameterListSyntax): typings.typescriptServices.TypeScript.CallSignatureSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(parameterList.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.CallSignatureSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.CallSignatureSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.CallSignatureSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.CallSignatureSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.CallSignatureSyntax]
 }

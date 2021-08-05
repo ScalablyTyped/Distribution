@@ -17,16 +17,13 @@ trait FilesystemChangeRename
 }
 object FilesystemChangeRename {
   
-  @scala.inline
-  def apply(oldPath: String, path: String): FilesystemChangeRename = {
+  inline def apply(oldPath: String, path: String): FilesystemChangeRename = {
     val __obj = js.Dynamic.literal(action = "renamed", oldPath = oldPath.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilesystemChangeRename]
   }
   
-  @scala.inline
-  implicit class FilesystemChangeRenameMutableBuilder[Self <: FilesystemChangeRename] (val x: Self) extends AnyVal {
+  extension [Self <: FilesystemChangeRename](x: Self) {
     
-    @scala.inline
-    def setOldPath(value: String): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
+    inline def setOldPath(value: String): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
   }
 }

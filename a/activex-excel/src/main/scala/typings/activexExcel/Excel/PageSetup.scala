@@ -40,7 +40,7 @@ trait PageSetup extends StObject {
   
   val EvenPage: Page
   
-  @JSName("Excel.PageSetup_typekey")
+  /* private */ @JSName("Excel.PageSetup_typekey")
   var ExcelDotPageSetup_typekey: PageSetup
   
   val FirstPage: Page
@@ -121,8 +121,7 @@ trait PageSetup extends StObject {
 }
 object PageSetup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AlignMarginsHeaderFooter: Boolean,
     Application: Application,
     BlackAndWhite: Boolean,
@@ -179,157 +178,106 @@ object PageSetup {
     __obj.asInstanceOf[PageSetup]
   }
   
-  @scala.inline
-  implicit class PageSetupMutableBuilder[Self <: PageSetup] (val x: Self) extends AnyVal {
+  extension [Self <: PageSetup](x: Self) {
     
-    @scala.inline
-    def setAlignMarginsHeaderFooter(value: Boolean): Self = StObject.set(x, "AlignMarginsHeaderFooter", value.asInstanceOf[js.Any])
+    inline def setAlignMarginsHeaderFooter(value: Boolean): Self = StObject.set(x, "AlignMarginsHeaderFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlackAndWhite(value: Boolean): Self = StObject.set(x, "BlackAndWhite", value.asInstanceOf[js.Any])
+    inline def setBlackAndWhite(value: Boolean): Self = StObject.set(x, "BlackAndWhite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomMargin(value: Double): Self = StObject.set(x, "BottomMargin", value.asInstanceOf[js.Any])
+    inline def setBottomMargin(value: Double): Self = StObject.set(x, "BottomMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterFooter(value: String): Self = StObject.set(x, "CenterFooter", value.asInstanceOf[js.Any])
+    inline def setCenterFooter(value: String): Self = StObject.set(x, "CenterFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterFooterPicture(value: Graphic): Self = StObject.set(x, "CenterFooterPicture", value.asInstanceOf[js.Any])
+    inline def setCenterFooterPicture(value: Graphic): Self = StObject.set(x, "CenterFooterPicture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterHeader(value: String): Self = StObject.set(x, "CenterHeader", value.asInstanceOf[js.Any])
+    inline def setCenterHeader(value: String): Self = StObject.set(x, "CenterHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterHeaderPicture(value: Graphic): Self = StObject.set(x, "CenterHeaderPicture", value.asInstanceOf[js.Any])
+    inline def setCenterHeaderPicture(value: Graphic): Self = StObject.set(x, "CenterHeaderPicture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterHorizontally(value: Boolean): Self = StObject.set(x, "CenterHorizontally", value.asInstanceOf[js.Any])
+    inline def setCenterHorizontally(value: Boolean): Self = StObject.set(x, "CenterHorizontally", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterVertically(value: Boolean): Self = StObject.set(x, "CenterVertically", value.asInstanceOf[js.Any])
+    inline def setCenterVertically(value: Boolean): Self = StObject.set(x, "CenterVertically", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartSize(value: XlObjectSize): Self = StObject.set(x, "ChartSize", value.asInstanceOf[js.Any])
+    inline def setChartSize(value: XlObjectSize): Self = StObject.set(x, "ChartSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDifferentFirstPageHeaderFooter(value: Boolean): Self = StObject.set(x, "DifferentFirstPageHeaderFooter", value.asInstanceOf[js.Any])
+    inline def setDifferentFirstPageHeaderFooter(value: Boolean): Self = StObject.set(x, "DifferentFirstPageHeaderFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraft(value: Boolean): Self = StObject.set(x, "Draft", value.asInstanceOf[js.Any])
+    inline def setDraft(value: Boolean): Self = StObject.set(x, "Draft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvenPage(value: Page): Self = StObject.set(x, "EvenPage", value.asInstanceOf[js.Any])
+    inline def setEvenPage(value: Page): Self = StObject.set(x, "EvenPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotPageSetup_typekey(value: PageSetup): Self = StObject.set(x, "Excel.PageSetup_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotPageSetup_typekey(value: PageSetup): Self = StObject.set(x, "Excel.PageSetup_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPage(value: Page): Self = StObject.set(x, "FirstPage", value.asInstanceOf[js.Any])
+    inline def setFirstPage(value: Page): Self = StObject.set(x, "FirstPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPageNumber(value: Double): Self = StObject.set(x, "FirstPageNumber", value.asInstanceOf[js.Any])
+    inline def setFirstPageNumber(value: Double): Self = StObject.set(x, "FirstPageNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitToPagesTall(value: Double | `false`): Self = StObject.set(x, "FitToPagesTall", value.asInstanceOf[js.Any])
+    inline def setFitToPagesTall(value: Double | `false`): Self = StObject.set(x, "FitToPagesTall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitToPagesWide(value: Double | `false`): Self = StObject.set(x, "FitToPagesWide", value.asInstanceOf[js.Any])
+    inline def setFitToPagesWide(value: Double | `false`): Self = StObject.set(x, "FitToPagesWide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterMargin(value: Double): Self = StObject.set(x, "FooterMargin", value.asInstanceOf[js.Any])
+    inline def setFooterMargin(value: Double): Self = StObject.set(x, "FooterMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderMargin(value: Double): Self = StObject.set(x, "HeaderMargin", value.asInstanceOf[js.Any])
+    inline def setHeaderMargin(value: Double): Self = StObject.set(x, "HeaderMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftFooter(value: String): Self = StObject.set(x, "LeftFooter", value.asInstanceOf[js.Any])
+    inline def setLeftFooter(value: String): Self = StObject.set(x, "LeftFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftFooterPicture(value: Graphic): Self = StObject.set(x, "LeftFooterPicture", value.asInstanceOf[js.Any])
+    inline def setLeftFooterPicture(value: Graphic): Self = StObject.set(x, "LeftFooterPicture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftHeader(value: String): Self = StObject.set(x, "LeftHeader", value.asInstanceOf[js.Any])
+    inline def setLeftHeader(value: String): Self = StObject.set(x, "LeftHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftHeaderPicture(value: Graphic): Self = StObject.set(x, "LeftHeaderPicture", value.asInstanceOf[js.Any])
+    inline def setLeftHeaderPicture(value: Graphic): Self = StObject.set(x, "LeftHeaderPicture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
+    inline def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOddAndEvenPagesHeaderFooter(value: Boolean): Self = StObject.set(x, "OddAndEvenPagesHeaderFooter", value.asInstanceOf[js.Any])
+    inline def setOddAndEvenPagesHeaderFooter(value: Boolean): Self = StObject.set(x, "OddAndEvenPagesHeaderFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: XlOrder): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: XlOrder): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: XlPageOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: XlPageOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPages(value: Pages): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: Pages): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperSize(value: XlPaperSize): Self = StObject.set(x, "PaperSize", value.asInstanceOf[js.Any])
+    inline def setPaperSize(value: XlPaperSize): Self = StObject.set(x, "PaperSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintArea(value: String): Self = StObject.set(x, "PrintArea", value.asInstanceOf[js.Any])
+    inline def setPrintArea(value: String): Self = StObject.set(x, "PrintArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintComments(value: XlPrintLocation): Self = StObject.set(x, "PrintComments", value.asInstanceOf[js.Any])
+    inline def setPrintComments(value: XlPrintLocation): Self = StObject.set(x, "PrintComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintErrors(value: XlPrintErrors): Self = StObject.set(x, "PrintErrors", value.asInstanceOf[js.Any])
+    inline def setPrintErrors(value: XlPrintErrors): Self = StObject.set(x, "PrintErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintGridlines(value: Boolean): Self = StObject.set(x, "PrintGridlines", value.asInstanceOf[js.Any])
+    inline def setPrintGridlines(value: Boolean): Self = StObject.set(x, "PrintGridlines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintHeadings(value: Boolean): Self = StObject.set(x, "PrintHeadings", value.asInstanceOf[js.Any])
+    inline def setPrintHeadings(value: Boolean): Self = StObject.set(x, "PrintHeadings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintNotes(value: Boolean): Self = StObject.set(x, "PrintNotes", value.asInstanceOf[js.Any])
+    inline def setPrintNotes(value: Boolean): Self = StObject.set(x, "PrintNotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintQuality(value: SafeArray[Double] & (js.Function1[/* Index */ `1` | `2`, Double])): Self = StObject.set(x, "PrintQuality", value.asInstanceOf[js.Any])
+    inline def setPrintQuality(value: SafeArray[Double] & (js.Function1[/* Index */ `1` | `2`, Double])): Self = StObject.set(x, "PrintQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintTitleColumns(value: String): Self = StObject.set(x, "PrintTitleColumns", value.asInstanceOf[js.Any])
+    inline def setPrintTitleColumns(value: String): Self = StObject.set(x, "PrintTitleColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintTitleRows(value: String): Self = StObject.set(x, "PrintTitleRows", value.asInstanceOf[js.Any])
+    inline def setPrintTitleRows(value: String): Self = StObject.set(x, "PrintTitleRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightFooter(value: String): Self = StObject.set(x, "RightFooter", value.asInstanceOf[js.Any])
+    inline def setRightFooter(value: String): Self = StObject.set(x, "RightFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightFooterPicture(value: Graphic): Self = StObject.set(x, "RightFooterPicture", value.asInstanceOf[js.Any])
+    inline def setRightFooterPicture(value: Graphic): Self = StObject.set(x, "RightFooterPicture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightHeader(value: String): Self = StObject.set(x, "RightHeader", value.asInstanceOf[js.Any])
+    inline def setRightHeader(value: String): Self = StObject.set(x, "RightHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightHeaderPicture(value: Graphic): Self = StObject.set(x, "RightHeaderPicture", value.asInstanceOf[js.Any])
+    inline def setRightHeaderPicture(value: Graphic): Self = StObject.set(x, "RightHeaderPicture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightMargin(value: Double): Self = StObject.set(x, "RightMargin", value.asInstanceOf[js.Any])
+    inline def setRightMargin(value: Double): Self = StObject.set(x, "RightMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleWithDocHeaderFooter(value: Boolean): Self = StObject.set(x, "ScaleWithDocHeaderFooter", value.asInstanceOf[js.Any])
+    inline def setScaleWithDocHeaderFooter(value: Boolean): Self = StObject.set(x, "ScaleWithDocHeaderFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopMargin(value: Double): Self = StObject.set(x, "TopMargin", value.asInstanceOf[js.Any])
+    inline def setTopMargin(value: Double): Self = StObject.set(x, "TopMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "Zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "Zoom", value.asInstanceOf[js.Any])
   }
 }

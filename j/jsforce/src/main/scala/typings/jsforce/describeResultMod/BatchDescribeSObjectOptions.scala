@@ -14,31 +14,23 @@ trait BatchDescribeSObjectOptions extends StObject {
 }
 object BatchDescribeSObjectOptions {
   
-  @scala.inline
-  def apply(types: js.Array[String]): BatchDescribeSObjectOptions = {
+  inline def apply(types: js.Array[String]): BatchDescribeSObjectOptions = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDescribeSObjectOptions]
   }
   
-  @scala.inline
-  implicit class BatchDescribeSObjectOptionsMutableBuilder[Self <: BatchDescribeSObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDescribeSObjectOptions](x: Self) {
     
-    @scala.inline
-    def setAutofetch(value: Boolean): Self = StObject.set(x, "autofetch", value.asInstanceOf[js.Any])
+    inline def setAutofetch(value: Boolean): Self = StObject.set(x, "autofetch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutofetchUndefined: Self = StObject.set(x, "autofetch", js.undefined)
+    inline def setAutofetchUndefined: Self = StObject.set(x, "autofetch", js.undefined)
     
-    @scala.inline
-    def setMaxConcurrentRequests(value: Double): Self = StObject.set(x, "maxConcurrentRequests", value.asInstanceOf[js.Any])
+    inline def setMaxConcurrentRequests(value: Double): Self = StObject.set(x, "maxConcurrentRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConcurrentRequestsUndefined: Self = StObject.set(x, "maxConcurrentRequests", js.undefined)
+    inline def setMaxConcurrentRequestsUndefined: Self = StObject.set(x, "maxConcurrentRequests", js.undefined)
     
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

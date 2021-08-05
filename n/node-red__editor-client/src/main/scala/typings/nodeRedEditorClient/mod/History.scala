@@ -26,8 +26,7 @@ trait History extends StObject {
 }
 object History {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => Unit,
     depth: () => Double,
     list: () => js.Array[HistoryEvent],
@@ -42,34 +41,24 @@ object History {
     __obj.asInstanceOf[History]
   }
   
-  @scala.inline
-  implicit class HistoryMutableBuilder[Self <: History] (val x: Self) extends AnyVal {
+  extension [Self <: History](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDepth(value: () => Double): Self = StObject.set(x, "depth", js.Any.fromFunction0(value))
+    inline def setDepth(value: () => Double): Self = StObject.set(x, "depth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setList(value: () => js.Array[HistoryEvent]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
+    inline def setList(value: () => js.Array[HistoryEvent]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setListRedo(value: () => js.Array[HistoryEvent]): Self = StObject.set(x, "listRedo", js.Any.fromFunction0(value))
+    inline def setListRedo(value: () => js.Array[HistoryEvent]): Self = StObject.set(x, "listRedo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMarkAllDirty(value: () => Unit): Self = StObject.set(x, "markAllDirty", js.Any.fromFunction0(value))
+    inline def setMarkAllDirty(value: () => Unit): Self = StObject.set(x, "markAllDirty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPeek(value: () => HistoryEvent): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
+    inline def setPeek(value: () => HistoryEvent): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPop(value: () => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+    inline def setPop(value: () => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPush(value: HistoryEvent => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    inline def setPush(value: HistoryEvent => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRedo(value: () => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
+    inline def setRedo(value: () => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
   }
 }

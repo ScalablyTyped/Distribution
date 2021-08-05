@@ -11,22 +11,17 @@ trait ListThreatListsResponse extends StObject {
 }
 object ListThreatListsResponse {
   
-  @scala.inline
-  def apply(): ListThreatListsResponse = {
+  inline def apply(): ListThreatListsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListThreatListsResponse]
   }
   
-  @scala.inline
-  implicit class ListThreatListsResponseMutableBuilder[Self <: ListThreatListsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListThreatListsResponse](x: Self) {
     
-    @scala.inline
-    def setThreatLists(value: js.Array[ThreatListDescriptor]): Self = StObject.set(x, "threatLists", value.asInstanceOf[js.Any])
+    inline def setThreatLists(value: js.Array[ThreatListDescriptor]): Self = StObject.set(x, "threatLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatListsUndefined: Self = StObject.set(x, "threatLists", js.undefined)
+    inline def setThreatListsUndefined: Self = StObject.set(x, "threatLists", js.undefined)
     
-    @scala.inline
-    def setThreatListsVarargs(value: ThreatListDescriptor*): Self = StObject.set(x, "threatLists", js.Array(value :_*))
+    inline def setThreatListsVarargs(value: ThreatListDescriptor*): Self = StObject.set(x, "threatLists", js.Array(value :_*))
   }
 }

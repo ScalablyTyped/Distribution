@@ -22,8 +22,7 @@ object ShareTarget {
   }
   object IQuickLink {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       supportedDataFormats: IVector[String],
       supportedFileTypes: IVector[String],
@@ -34,23 +33,17 @@ object ShareTarget {
       __obj.asInstanceOf[IQuickLink]
     }
     
-    @scala.inline
-    implicit class IQuickLinkMutableBuilder[Self <: IQuickLink] (val x: Self) extends AnyVal {
+    extension [Self <: IQuickLink](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedDataFormats(value: IVector[String]): Self = StObject.set(x, "supportedDataFormats", value.asInstanceOf[js.Any])
+      inline def setSupportedDataFormats(value: IVector[String]): Self = StObject.set(x, "supportedDataFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedFileTypes(value: IVector[String]): Self = StObject.set(x, "supportedFileTypes", value.asInstanceOf[js.Any])
+      inline def setSupportedFileTypes(value: IVector[String]): Self = StObject.set(x, "supportedFileTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail(value: RandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: RandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,8 +73,7 @@ object ShareTarget {
        with IQuickLink
   object QuickLink {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       supportedDataFormats: IVector[String],
       supportedFileTypes: IVector[String],

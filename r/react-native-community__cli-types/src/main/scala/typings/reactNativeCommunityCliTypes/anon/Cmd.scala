@@ -12,19 +12,15 @@ trait Cmd extends StObject {
 }
 object Cmd {
   
-  @scala.inline
-  def apply(cmd: String, desc: String): Cmd = {
+  inline def apply(cmd: String, desc: String): Cmd = {
     val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cmd]
   }
   
-  @scala.inline
-  implicit class CmdMutableBuilder[Self <: Cmd] (val x: Self) extends AnyVal {
+  extension [Self <: Cmd](x: Self) {
     
-    @scala.inline
-    def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
   }
 }

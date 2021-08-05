@@ -129,50 +129,36 @@ object mod {
     }
     object StreamChannelsOptions {
       
-      @scala.inline
-      def apply(): StreamChannelsOptions = {
+      inline def apply(): StreamChannelsOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StreamChannelsOptions]
       }
       
-      @scala.inline
-      implicit class StreamChannelsOptionsMutableBuilder[Self <: StreamChannelsOptions] (val x: Self) extends AnyVal {
+      extension [Self <: StreamChannelsOptions](x: Self) {
         
-        @scala.inline
-        def setEnableChannelsEvents(value: Boolean): Self = StObject.set(x, "enableChannelsEvents", value.asInstanceOf[js.Any])
+        inline def setEnableChannelsEvents(value: Boolean): Self = StObject.set(x, "enableChannelsEvents", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnableChannelsEventsUndefined: Self = StObject.set(x, "enableChannelsEvents", js.undefined)
+        inline def setEnableChannelsEventsUndefined: Self = StObject.set(x, "enableChannelsEvents", js.undefined)
         
-        @scala.inline
-        def setEnableKeywordsEvents(value: Boolean): Self = StObject.set(x, "enableKeywordsEvents", value.asInstanceOf[js.Any])
+        inline def setEnableKeywordsEvents(value: Boolean): Self = StObject.set(x, "enableKeywordsEvents", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnableKeywordsEventsUndefined: Self = StObject.set(x, "enableKeywordsEvents", js.undefined)
+        inline def setEnableKeywordsEventsUndefined: Self = StObject.set(x, "enableKeywordsEvents", js.undefined)
         
-        @scala.inline
-        def setEnableRootChannelsEvent(value: Boolean): Self = StObject.set(x, "enableRootChannelsEvent", value.asInstanceOf[js.Any])
+        inline def setEnableRootChannelsEvent(value: Boolean): Self = StObject.set(x, "enableRootChannelsEvent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnableRootChannelsEventUndefined: Self = StObject.set(x, "enableRootChannelsEvent", js.undefined)
+        inline def setEnableRootChannelsEventUndefined: Self = StObject.set(x, "enableRootChannelsEvent", js.undefined)
         
-        @scala.inline
-        def setFollow(value: String): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+        inline def setFollow(value: String): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
+        inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
         
-        @scala.inline
-        def setLocations(value: String): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+        inline def setLocations(value: String): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+        inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
         
-        @scala.inline
-        def setTrack(value: js.Object): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+        inline def setTrack(value: js.Object): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+        inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
       }
     }
   }
@@ -214,20 +200,16 @@ object mod {
   }
   object TwitterStreamChannels {
     
-    @scala.inline
-    def apply(getApiClient: () => typings.twit.mod.^, streamChannels: StreamChannelsOptions => StreamChannels): TwitterStreamChannels = {
+    inline def apply(getApiClient: () => typings.twit.mod.^, streamChannels: StreamChannelsOptions => StreamChannels): TwitterStreamChannels = {
       val __obj = js.Dynamic.literal(getApiClient = js.Any.fromFunction0(getApiClient), streamChannels = js.Any.fromFunction1(streamChannels))
       __obj.asInstanceOf[TwitterStreamChannels]
     }
     
-    @scala.inline
-    implicit class TwitterStreamChannelsMutableBuilder[Self <: TwitterStreamChannels] (val x: Self) extends AnyVal {
+    extension [Self <: TwitterStreamChannels](x: Self) {
       
-      @scala.inline
-      def setGetApiClient(value: () => typings.twit.mod.^): Self = StObject.set(x, "getApiClient", js.Any.fromFunction0(value))
+      inline def setGetApiClient(value: () => typings.twit.mod.^): Self = StObject.set(x, "getApiClient", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStreamChannels(value: StreamChannelsOptions => StreamChannels): Self = StObject.set(x, "streamChannels", js.Any.fromFunction1(value))
+      inline def setStreamChannels(value: StreamChannelsOptions => StreamChannels): Self = StObject.set(x, "streamChannels", js.Any.fromFunction1(value))
     }
   }
 }

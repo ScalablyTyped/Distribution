@@ -14,22 +14,17 @@ trait MechanismInfo extends StObject {
 }
 object MechanismInfo {
   
-  @scala.inline
-  def apply(flags: Double, maxKeySize: Double, minKeySize: Double): MechanismInfo = {
+  inline def apply(flags: Double, maxKeySize: Double, minKeySize: Double): MechanismInfo = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], maxKeySize = maxKeySize.asInstanceOf[js.Any], minKeySize = minKeySize.asInstanceOf[js.Any])
     __obj.asInstanceOf[MechanismInfo]
   }
   
-  @scala.inline
-  implicit class MechanismInfoMutableBuilder[Self <: MechanismInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MechanismInfo](x: Self) {
     
-    @scala.inline
-    def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxKeySize(value: Double): Self = StObject.set(x, "maxKeySize", value.asInstanceOf[js.Any])
+    inline def setMaxKeySize(value: Double): Self = StObject.set(x, "maxKeySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinKeySize(value: Double): Self = StObject.set(x, "minKeySize", value.asInstanceOf[js.Any])
+    inline def setMinKeySize(value: Double): Self = StObject.set(x, "minKeySize", value.asInstanceOf[js.Any])
   }
 }

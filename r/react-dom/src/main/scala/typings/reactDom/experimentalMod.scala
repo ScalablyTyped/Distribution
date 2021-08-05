@@ -31,26 +31,22 @@ object experimentalMod {
       * @see https://reactjs.org/docs/concurrent-mode-adoption.html#migration-step-blocking-mode
       * @see https://reactjs.org/docs/concurrent-mode-reference.html#createblockingroot
       */
-    @scala.inline
-    def unstableCreateBlockingRoot(container: Element | Document | DocumentFragment | Comment, options: js.UndefOr[RootOptions]): Root = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_createBlockingRoot")(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
+    inline def unstableCreateBlockingRoot(container: Element | Document | DocumentFragment | Comment, options: js.UndefOr[RootOptions]): Root = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_createBlockingRoot")(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
     
     /**
       * Replaces `ReactDOM.render` when the `.render` method is called and enables Concurrent Mode.
       *
       * @see https://reactjs.org/docs/concurrent-mode-reference.html#createroot
       */
-    @scala.inline
-    def unstableCreateRoot(container: Element | Document | DocumentFragment | Comment, options: js.UndefOr[RootOptions]): Root = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_createRoot")(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
+    inline def unstableCreateRoot(container: Element | Document | DocumentFragment | Comment, options: js.UndefOr[RootOptions]): Root = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_createRoot")(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
     
-    @scala.inline
-    def unstableFlushControlled(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_flushControlled")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def unstableFlushControlled(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_flushControlled")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     // enableSelectiveHydration feature
     /**
       * @see https://github.com/facebook/react/commit/3a2b5f148d450c69aab67f055fc441d294c23518
       */
-    @scala.inline
-    def unstableScheduleHydration(target: Element | Document | DocumentFragment | Comment): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_scheduleHydration")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def unstableScheduleHydration(target: Element | Document | DocumentFragment | Comment): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_scheduleHydration")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     // enableSuspenseServerRenderer feature
     trait HydrationOptions extends StObject {
@@ -61,26 +57,20 @@ object experimentalMod {
     }
     object HydrationOptions {
       
-      @scala.inline
-      def apply(): HydrationOptions = {
+      inline def apply(): HydrationOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[HydrationOptions]
       }
       
-      @scala.inline
-      implicit class HydrationOptionsMutableBuilder[Self <: HydrationOptions] (val x: Self) extends AnyVal {
+      extension [Self <: HydrationOptions](x: Self) {
         
-        @scala.inline
-        def setOnDeleted(value: /* suspenseInstance */ Comment => Unit): Self = StObject.set(x, "onDeleted", js.Any.fromFunction1(value))
+        inline def setOnDeleted(value: /* suspenseInstance */ Comment => Unit): Self = StObject.set(x, "onDeleted", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnDeletedUndefined: Self = StObject.set(x, "onDeleted", js.undefined)
+        inline def setOnDeletedUndefined: Self = StObject.set(x, "onDeleted", js.undefined)
         
-        @scala.inline
-        def setOnHydrated(value: /* suspenseInstance */ Comment => Unit): Self = StObject.set(x, "onHydrated", js.Any.fromFunction1(value))
+        inline def setOnHydrated(value: /* suspenseInstance */ Comment => Unit): Self = StObject.set(x, "onHydrated", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnHydratedUndefined: Self = StObject.set(x, "onHydrated", js.undefined)
+        inline def setOnHydratedUndefined: Self = StObject.set(x, "onHydrated", js.undefined)
       }
     }
     
@@ -105,26 +95,20 @@ object experimentalMod {
     }
     object RootOptions {
       
-      @scala.inline
-      def apply(): RootOptions = {
+      inline def apply(): RootOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RootOptions]
       }
       
-      @scala.inline
-      implicit class RootOptionsMutableBuilder[Self <: RootOptions] (val x: Self) extends AnyVal {
+      extension [Self <: RootOptions](x: Self) {
         
-        @scala.inline
-        def setHydrate(value: Boolean): Self = StObject.set(x, "hydrate", value.asInstanceOf[js.Any])
+        inline def setHydrate(value: Boolean): Self = StObject.set(x, "hydrate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHydrateUndefined: Self = StObject.set(x, "hydrate", js.undefined)
+        inline def setHydrateUndefined: Self = StObject.set(x, "hydrate", js.undefined)
         
-        @scala.inline
-        def setHydrationOptions(value: HydrationOptions): Self = StObject.set(x, "hydrationOptions", value.asInstanceOf[js.Any])
+        inline def setHydrationOptions(value: HydrationOptions): Self = StObject.set(x, "hydrationOptions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHydrationOptionsUndefined: Self = StObject.set(x, "hydrationOptions", js.undefined)
+        inline def setHydrationOptionsUndefined: Self = StObject.set(x, "hydrationOptions", js.undefined)
       }
     }
   }

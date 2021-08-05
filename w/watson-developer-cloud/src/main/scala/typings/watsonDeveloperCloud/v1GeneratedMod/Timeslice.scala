@@ -18,31 +18,23 @@ trait Timeslice extends StObject {
 }
 object Timeslice {
   
-  @scala.inline
-  def apply(): Timeslice = {
+  inline def apply(): Timeslice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Timeslice]
   }
   
-  @scala.inline
-  implicit class TimesliceMutableBuilder[Self <: Timeslice] (val x: Self) extends AnyVal {
+  extension [Self <: Timeslice](x: Self) {
     
-    @scala.inline
-    def setAnomaly(value: Boolean): Self = StObject.set(x, "anomaly", value.asInstanceOf[js.Any])
+    inline def setAnomaly(value: Boolean): Self = StObject.set(x, "anomaly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnomalyUndefined: Self = StObject.set(x, "anomaly", js.undefined)
+    inline def setAnomalyUndefined: Self = StObject.set(x, "anomaly", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
   }
 }

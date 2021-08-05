@@ -19,30 +19,30 @@ object inboundfiltersMod {
     def this(_options: PartialInboundFiltersOpti) = this()
     
     /** JSDoc */
-    var _getEventFilterUrl: js.Any = js.native
+    /* private */ var _getEventFilterUrl: js.Any = js.native
     
     /** JSDoc */
-    var _getPossibleEventMessages: js.Any = js.native
+    /* private */ var _getPossibleEventMessages: js.Any = js.native
     
     /** JSDoc */
-    var _isAllowedUrl: js.Any = js.native
+    /* private */ var _isAllowedUrl: js.Any = js.native
     
     /** JSDoc */
-    var _isDeniedUrl: js.Any = js.native
+    /* private */ var _isDeniedUrl: js.Any = js.native
     
     /** JSDoc */
-    var _isIgnoredError: js.Any = js.native
+    /* private */ var _isIgnoredError: js.Any = js.native
     
     /** JSDoc */
-    var _isSentryError: js.Any = js.native
+    /* private */ var _isSentryError: js.Any = js.native
     
     /** JSDoc */
-    var _mergeOptions: js.Any = js.native
+    /* private */ var _mergeOptions: js.Any = js.native
     
-    val _options: js.Any = js.native
+    /* private */ val _options: js.Any = js.native
     
     /** JSDoc */
-    var _shouldDropEvent: js.Any = js.native
+    /* private */ var _shouldDropEvent: js.Any = js.native
     
     /**
       * Returns {@link IntegrationClass.id}
@@ -77,8 +77,7 @@ object inboundfiltersMod {
     @JSImport("@sentry/core/dist/integrations/inboundfilters", "InboundFilters.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
   /** JSDoc */
@@ -100,8 +99,7 @@ object inboundfiltersMod {
   }
   object InboundFiltersOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowUrls: js.Array[String | RegExp],
       blacklistUrls: js.Array[String | RegExp],
       denyUrls: js.Array[String | RegExp],
@@ -113,41 +111,29 @@ object inboundfiltersMod {
       __obj.asInstanceOf[InboundFiltersOptions]
     }
     
-    @scala.inline
-    implicit class InboundFiltersOptionsMutableBuilder[Self <: InboundFiltersOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InboundFiltersOptions](x: Self) {
       
-      @scala.inline
-      def setAllowUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "allowUrls", value.asInstanceOf[js.Any])
+      inline def setAllowUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "allowUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "allowUrls", js.Array(value :_*))
+      inline def setAllowUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "allowUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setBlacklistUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "blacklistUrls", value.asInstanceOf[js.Any])
+      inline def setBlacklistUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "blacklistUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlacklistUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "blacklistUrls", js.Array(value :_*))
+      inline def setBlacklistUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "blacklistUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setDenyUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "denyUrls", value.asInstanceOf[js.Any])
+      inline def setDenyUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "denyUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDenyUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "denyUrls", js.Array(value :_*))
+      inline def setDenyUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "denyUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreErrors(value: js.Array[String | RegExp]): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
+      inline def setIgnoreErrors(value: js.Array[String | RegExp]): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreErrorsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignoreErrors", js.Array(value :_*))
+      inline def setIgnoreErrorsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignoreErrors", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreInternal(value: Boolean): Self = StObject.set(x, "ignoreInternal", value.asInstanceOf[js.Any])
+      inline def setIgnoreInternal(value: Boolean): Self = StObject.set(x, "ignoreInternal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "whitelistUrls", value.asInstanceOf[js.Any])
+      inline def setWhitelistUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "whitelistUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "whitelistUrls", js.Array(value :_*))
+      inline def setWhitelistUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "whitelistUrls", js.Array(value :_*))
     }
   }
 }

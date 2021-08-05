@@ -18,25 +18,19 @@ trait BatchStopJobRunSuccessfulSubmission extends StObject {
 }
 object BatchStopJobRunSuccessfulSubmission {
   
-  @scala.inline
-  def apply(): BatchStopJobRunSuccessfulSubmission = {
+  inline def apply(): BatchStopJobRunSuccessfulSubmission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchStopJobRunSuccessfulSubmission]
   }
   
-  @scala.inline
-  implicit class BatchStopJobRunSuccessfulSubmissionMutableBuilder[Self <: BatchStopJobRunSuccessfulSubmission] (val x: Self) extends AnyVal {
+  extension [Self <: BatchStopJobRunSuccessfulSubmission](x: Self) {
     
-    @scala.inline
-    def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
-    @scala.inline
-    def setJobRunId(value: IdString): Self = StObject.set(x, "JobRunId", value.asInstanceOf[js.Any])
+    inline def setJobRunId(value: IdString): Self = StObject.set(x, "JobRunId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobRunIdUndefined: Self = StObject.set(x, "JobRunId", js.undefined)
+    inline def setJobRunIdUndefined: Self = StObject.set(x, "JobRunId", js.undefined)
   }
 }

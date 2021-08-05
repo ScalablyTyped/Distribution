@@ -13,16 +13,13 @@ trait RegexValidatorConfig[T /* <: js.Object */]
 }
 object RegexValidatorConfig {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](message: String, regex: RegExp): RegexValidatorConfig[T] = {
+  inline def apply[T /* <: js.Object */](message: String, regex: RegExp): RegexValidatorConfig[T] = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegexValidatorConfig[T]]
   }
   
-  @scala.inline
-  implicit class RegexValidatorConfigMutableBuilder[Self <: RegexValidatorConfig[?], T /* <: js.Object */] (val x: Self & RegexValidatorConfig[T]) extends AnyVal {
+  extension [Self <: RegexValidatorConfig[?], T /* <: js.Object */](x: Self & RegexValidatorConfig[T]) {
     
-    @scala.inline
-    def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
   }
 }

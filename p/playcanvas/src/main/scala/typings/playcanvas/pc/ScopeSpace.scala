@@ -32,22 +32,17 @@ trait ScopeSpace extends StObject {
 }
 object ScopeSpace {
   
-  @scala.inline
-  def apply(getSubSpace: String => ScopeSpace, name: String, resolve: String => ScopeId): ScopeSpace = {
+  inline def apply(getSubSpace: String => ScopeSpace, name: String, resolve: String => ScopeId): ScopeSpace = {
     val __obj = js.Dynamic.literal(getSubSpace = js.Any.fromFunction1(getSubSpace), name = name.asInstanceOf[js.Any], resolve = js.Any.fromFunction1(resolve))
     __obj.asInstanceOf[ScopeSpace]
   }
   
-  @scala.inline
-  implicit class ScopeSpaceMutableBuilder[Self <: ScopeSpace] (val x: Self) extends AnyVal {
+  extension [Self <: ScopeSpace](x: Self) {
     
-    @scala.inline
-    def setGetSubSpace(value: String => ScopeSpace): Self = StObject.set(x, "getSubSpace", js.Any.fromFunction1(value))
+    inline def setGetSubSpace(value: String => ScopeSpace): Self = StObject.set(x, "getSubSpace", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolve(value: String => ScopeId): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+    inline def setResolve(value: String => ScopeId): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
   }
 }

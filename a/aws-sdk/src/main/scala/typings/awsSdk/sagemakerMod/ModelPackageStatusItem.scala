@@ -23,25 +23,19 @@ trait ModelPackageStatusItem extends StObject {
 }
 object ModelPackageStatusItem {
   
-  @scala.inline
-  def apply(Name: EntityName, Status: DetailedModelPackageStatus): ModelPackageStatusItem = {
+  inline def apply(Name: EntityName, Status: DetailedModelPackageStatus): ModelPackageStatusItem = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelPackageStatusItem]
   }
   
-  @scala.inline
-  implicit class ModelPackageStatusItemMutableBuilder[Self <: ModelPackageStatusItem] (val x: Self) extends AnyVal {
+  extension [Self <: ModelPackageStatusItem](x: Self) {
     
-    @scala.inline
-    def setFailureReason(value: String): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: String): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    @scala.inline
-    def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: DetailedModelPackageStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DetailedModelPackageStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

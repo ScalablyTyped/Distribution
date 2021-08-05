@@ -19,28 +19,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object PathProps {
   
-  @scala.inline
-  def apply(): PathProps = {
+  inline def apply(): PathProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PathProps]
   }
   
-  @scala.inline
-  implicit class PathPropsMutableBuilder[Self <: PathProps] (val x: Self) extends AnyVal {
+  extension [Self <: PathProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
+    inline def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
+    inline def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
   }
 }

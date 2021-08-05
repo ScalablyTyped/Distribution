@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EndpointType extends StObject
 object EndpointType {
   
-  @scala.inline
-  def default: typings.microsoftGraph.microsoftGraphStrings.default = "default".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.default]
+  inline def default: typings.microsoftGraph.microsoftGraphStrings.default = "default".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.default]
   
-  @scala.inline
-  def skypeForBusiness: typings.microsoftGraph.microsoftGraphStrings.skypeForBusiness = "skypeForBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusiness]
+  inline def skypeForBusiness: typings.microsoftGraph.microsoftGraphStrings.skypeForBusiness = "skypeForBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusiness]
   
-  @scala.inline
-  def skypeForBusinessVoipPhone: typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessVoipPhone = "skypeForBusinessVoipPhone".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessVoipPhone]
+  inline def skypeForBusinessVoipPhone: typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessVoipPhone = "skypeForBusinessVoipPhone".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusinessVoipPhone]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
   
-  @scala.inline
-  def voicemail: typings.microsoftGraph.microsoftGraphStrings.voicemail = "voicemail".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.voicemail]
+  inline def voicemail: typings.microsoftGraph.microsoftGraphStrings.voicemail = "voicemail".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.voicemail]
 }

@@ -18,25 +18,19 @@ trait InsightsConfiguration extends StObject {
 }
 object InsightsConfiguration {
   
-  @scala.inline
-  def apply(): InsightsConfiguration = {
+  inline def apply(): InsightsConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsightsConfiguration]
   }
   
-  @scala.inline
-  implicit class InsightsConfigurationMutableBuilder[Self <: InsightsConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsConfiguration](x: Self) {
     
-    @scala.inline
-    def setInsightsEnabled(value: NullableBoolean): Self = StObject.set(x, "InsightsEnabled", value.asInstanceOf[js.Any])
+    inline def setInsightsEnabled(value: NullableBoolean): Self = StObject.set(x, "InsightsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsightsEnabledUndefined: Self = StObject.set(x, "InsightsEnabled", js.undefined)
+    inline def setInsightsEnabledUndefined: Self = StObject.set(x, "InsightsEnabled", js.undefined)
     
-    @scala.inline
-    def setNotificationsEnabled(value: NullableBoolean): Self = StObject.set(x, "NotificationsEnabled", value.asInstanceOf[js.Any])
+    inline def setNotificationsEnabled(value: NullableBoolean): Self = StObject.set(x, "NotificationsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationsEnabledUndefined: Self = StObject.set(x, "NotificationsEnabled", js.undefined)
+    inline def setNotificationsEnabledUndefined: Self = StObject.set(x, "NotificationsEnabled", js.undefined)
   }
 }

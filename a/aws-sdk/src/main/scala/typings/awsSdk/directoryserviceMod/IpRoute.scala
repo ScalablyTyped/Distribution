@@ -18,25 +18,19 @@ trait IpRoute extends StObject {
 }
 object IpRoute {
   
-  @scala.inline
-  def apply(): IpRoute = {
+  inline def apply(): IpRoute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IpRoute]
   }
   
-  @scala.inline
-  implicit class IpRouteMutableBuilder[Self <: IpRoute] (val x: Self) extends AnyVal {
+  extension [Self <: IpRoute](x: Self) {
     
-    @scala.inline
-    def setCidrIp(value: CidrIp): Self = StObject.set(x, "CidrIp", value.asInstanceOf[js.Any])
+    inline def setCidrIp(value: CidrIp): Self = StObject.set(x, "CidrIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrIpUndefined: Self = StObject.set(x, "CidrIp", js.undefined)
+    inline def setCidrIpUndefined: Self = StObject.set(x, "CidrIp", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

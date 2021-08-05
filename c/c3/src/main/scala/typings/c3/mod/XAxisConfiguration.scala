@@ -49,70 +49,49 @@ trait XAxisConfiguration
 }
 object XAxisConfiguration {
   
-  @scala.inline
-  def apply(): XAxisConfiguration = {
+  inline def apply(): XAxisConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XAxisConfiguration]
   }
   
-  @scala.inline
-  implicit class XAxisConfigurationMutableBuilder[Self <: XAxisConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: XAxisConfiguration](x: Self) {
     
-    @scala.inline
-    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setExtent(value: js.Array[Double] | js.Function0[js.Array[Double]]): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    inline def setExtent(value: js.Array[Double] | js.Function0[js.Array[Double]]): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtentFunction0(value: () => js.Array[Double]): Self = StObject.set(x, "extent", js.Any.fromFunction0(value))
+    inline def setExtentFunction0(value: () => js.Array[Double]): Self = StObject.set(x, "extent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+    inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
-    @scala.inline
-    def setExtentVarargs(value: Double*): Self = StObject.set(x, "extent", js.Array(value :_*))
+    inline def setExtentVarargs(value: Double*): Self = StObject.set(x, "extent", js.Array(value :_*))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String | Position): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String | Position): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLocaltime(value: Boolean): Self = StObject.set(x, "localtime", value.asInstanceOf[js.Any])
+    inline def setLocaltime(value: Boolean): Self = StObject.set(x, "localtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaltimeUndefined: Self = StObject.set(x, "localtime", js.undefined)
+    inline def setLocaltimeUndefined: Self = StObject.set(x, "localtime", js.undefined)
     
-    @scala.inline
-    def setSelection(value: js.Any): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: js.Any): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+    inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     
-    @scala.inline
-    def setTick(value: XTickConfiguration): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    inline def setTick(value: XTickConfiguration): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
+    inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
     
-    @scala.inline
-    def setType(value: XAxisType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: XAxisType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

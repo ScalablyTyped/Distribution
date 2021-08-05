@@ -18,28 +18,21 @@ trait DescribeAccountLimitsOutput extends StObject {
 }
 object DescribeAccountLimitsOutput {
   
-  @scala.inline
-  def apply(): DescribeAccountLimitsOutput = {
+  inline def apply(): DescribeAccountLimitsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAccountLimitsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeAccountLimitsOutputMutableBuilder[Self <: DescribeAccountLimitsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccountLimitsOutput](x: Self) {
     
-    @scala.inline
-    def setAccountLimits(value: AccountLimitList): Self = StObject.set(x, "AccountLimits", value.asInstanceOf[js.Any])
+    inline def setAccountLimits(value: AccountLimitList): Self = StObject.set(x, "AccountLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountLimitsUndefined: Self = StObject.set(x, "AccountLimits", js.undefined)
+    inline def setAccountLimitsUndefined: Self = StObject.set(x, "AccountLimits", js.undefined)
     
-    @scala.inline
-    def setAccountLimitsVarargs(value: AccountLimit*): Self = StObject.set(x, "AccountLimits", js.Array(value :_*))
+    inline def setAccountLimitsVarargs(value: AccountLimit*): Self = StObject.set(x, "AccountLimits", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

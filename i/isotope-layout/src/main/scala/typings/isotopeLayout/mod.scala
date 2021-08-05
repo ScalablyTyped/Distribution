@@ -166,13 +166,11 @@ object mod {
     override def updateSortData(elements: Elements): Unit = js.native
   }
   
-  @scala.inline
-  def data(element: String): Isotope = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(element.asInstanceOf[js.Any]).asInstanceOf[Isotope]
+  inline def data(element: String): Isotope = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(element.asInstanceOf[js.Any]).asInstanceOf[Isotope]
   /**
     * Get the Isotope instance via its element. Isotope.data() is useful for getting the Isotope instance in JavaScript, after it has been initalized in HTML.
     */
-  @scala.inline
-  def data(element: HTMLElement): Isotope = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(element.asInstanceOf[js.Any]).asInstanceOf[Isotope]
+  inline def data(element: HTMLElement): Isotope = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(element.asInstanceOf[js.Any]).asInstanceOf[Isotope]
   
   trait CellsByColumn extends StObject {
     
@@ -182,26 +180,20 @@ object mod {
   }
   object CellsByColumn {
     
-    @scala.inline
-    def apply(): CellsByColumn = {
+    inline def apply(): CellsByColumn = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CellsByColumn]
     }
     
-    @scala.inline
-    implicit class CellsByColumnMutableBuilder[Self <: CellsByColumn] (val x: Self) extends AnyVal {
+    extension [Self <: CellsByColumn](x: Self) {
       
-      @scala.inline
-      def setColumnWidth(value: Double | String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+      inline def setColumnWidth(value: Double | String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+      inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
       
-      @scala.inline
-      def setRowHeight(value: Double | String): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+      inline def setRowHeight(value: Double | String): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+      inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     }
   }
   
@@ -213,26 +205,20 @@ object mod {
   }
   object CellsByRow {
     
-    @scala.inline
-    def apply(): CellsByRow = {
+    inline def apply(): CellsByRow = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CellsByRow]
     }
     
-    @scala.inline
-    implicit class CellsByRowMutableBuilder[Self <: CellsByRow] (val x: Self) extends AnyVal {
+    extension [Self <: CellsByRow](x: Self) {
       
-      @scala.inline
-      def setColumnWidth(value: Double | String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+      inline def setColumnWidth(value: Double | String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+      inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
       
-      @scala.inline
-      def setRowHeight(value: Double | String): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+      inline def setRowHeight(value: Double | String): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+      inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     }
   }
   
@@ -244,20 +230,16 @@ object mod {
   }
   object FitRows {
     
-    @scala.inline
-    def apply(): FitRows = {
+    inline def apply(): FitRows = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FitRows]
     }
     
-    @scala.inline
-    implicit class FitRowsMutableBuilder[Self <: FitRows] (val x: Self) extends AnyVal {
+    extension [Self <: FitRows](x: Self) {
       
-      @scala.inline
-      def setGutter(value: Double | String): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+      inline def setGutter(value: Double | String): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
+      inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
     }
   }
   
@@ -267,20 +249,16 @@ object mod {
   }
   object Horizontal {
     
-    @scala.inline
-    def apply(): Horizontal = {
+    inline def apply(): Horizontal = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Horizontal]
     }
     
-    @scala.inline
-    implicit class HorizontalMutableBuilder[Self <: Horizontal] (val x: Self) extends AnyVal {
+    extension [Self <: Horizontal](x: Self) {
       
-      @scala.inline
-      def setVerticalAligment(value: Double): Self = StObject.set(x, "verticalAligment", value.asInstanceOf[js.Any])
+      inline def setVerticalAligment(value: Double): Self = StObject.set(x, "verticalAligment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalAligmentUndefined: Self = StObject.set(x, "verticalAligment", js.undefined)
+      inline def setVerticalAligmentUndefined: Self = StObject.set(x, "verticalAligment", js.undefined)
     }
   }
   
@@ -393,8 +371,7 @@ object mod {
   }
   object Isotope {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addItems: Elements => Unit,
       appended: Elements => Unit,
       arrange: IsotopeOptions => Unit,
@@ -418,62 +395,43 @@ object mod {
       __obj.asInstanceOf[Isotope]
     }
     
-    @scala.inline
-    implicit class IsotopeMutableBuilder[Self <: Isotope] (val x: Self) extends AnyVal {
+    extension [Self <: Isotope](x: Self) {
       
-      @scala.inline
-      def setAddItems(value: Elements => Unit): Self = StObject.set(x, "addItems", js.Any.fromFunction1(value))
+      inline def setAddItems(value: Elements => Unit): Self = StObject.set(x, "addItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAppended(value: Elements => Unit): Self = StObject.set(x, "appended", js.Any.fromFunction1(value))
+      inline def setAppended(value: Elements => Unit): Self = StObject.set(x, "appended", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setArrange(value: IsotopeOptions => Unit): Self = StObject.set(x, "arrange", js.Any.fromFunction1(value))
+      inline def setArrange(value: IsotopeOptions => Unit): Self = StObject.set(x, "arrange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFilteredItemElements(value: () => js.Array[Element]): Self = StObject.set(x, "getFilteredItemElements", js.Any.fromFunction0(value))
+      inline def setGetFilteredItemElements(value: () => js.Array[Element]): Self = StObject.set(x, "getFilteredItemElements", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetItemElements(value: () => js.Array[Element]): Self = StObject.set(x, "getItemElements", js.Any.fromFunction0(value))
+      inline def setGetItemElements(value: () => js.Array[Element]): Self = StObject.set(x, "getItemElements", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHideItemElements(value: Elements => Unit): Self = StObject.set(x, "hideItemElements", js.Any.fromFunction1(value))
+      inline def setHideItemElements(value: Elements => Unit): Self = StObject.set(x, "hideItemElements", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInsert(value: Elements => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+      inline def setInsert(value: Elements => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLayout(value: () => Unit): Self = StObject.set(x, "layout", js.Any.fromFunction0(value))
+      inline def setLayout(value: () => Unit): Self = StObject.set(x, "layout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLayoutItems(value: (js.Array[HTMLElement], Boolean) => Unit): Self = StObject.set(x, "layoutItems", js.Any.fromFunction2(value))
+      inline def setLayoutItems(value: (js.Array[HTMLElement], Boolean) => Unit): Self = StObject.set(x, "layoutItems", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrepended(value: Elements => Unit): Self = StObject.set(x, "prepended", js.Any.fromFunction1(value))
+      inline def setPrepended(value: Elements => Unit): Self = StObject.set(x, "prepended", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReloadItems(value: () => Unit): Self = StObject.set(x, "reloadItems", js.Any.fromFunction0(value))
+      inline def setReloadItems(value: () => Unit): Self = StObject.set(x, "reloadItems", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: Elements => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: Elements => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRevealItemElements(value: Elements => Unit): Self = StObject.set(x, "revealItemElements", js.Any.fromFunction1(value))
+      inline def setRevealItemElements(value: Elements => Unit): Self = StObject.set(x, "revealItemElements", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShuffle(value: () => Unit): Self = StObject.set(x, "shuffle", js.Any.fromFunction0(value))
+      inline def setShuffle(value: () => Unit): Self = StObject.set(x, "shuffle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStamp(value: Elements => Unit): Self = StObject.set(x, "stamp", js.Any.fromFunction1(value))
+      inline def setStamp(value: Elements => Unit): Self = StObject.set(x, "stamp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnstamp(value: Elements => Unit): Self = StObject.set(x, "unstamp", js.Any.fromFunction1(value))
+      inline def setUnstamp(value: Elements => Unit): Self = StObject.set(x, "unstamp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateSortData(value: Elements => Unit): Self = StObject.set(x, "updateSortData", js.Any.fromFunction1(value))
+      inline def setUpdateSortData(value: Elements => Unit): Self = StObject.set(x, "updateSortData", js.Any.fromFunction1(value))
     }
   }
   
@@ -616,170 +574,116 @@ object mod {
   }
   object IsotopeOptions {
     
-    @scala.inline
-    def apply(): IsotopeOptions = {
+    inline def apply(): IsotopeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IsotopeOptions]
     }
     
-    @scala.inline
-    implicit class IsotopeOptionsMutableBuilder[Self <: IsotopeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IsotopeOptions](x: Self) {
       
-      @scala.inline
-      def setCellsByColumn(value: CellsByColumn): Self = StObject.set(x, "cellsByColumn", value.asInstanceOf[js.Any])
+      inline def setCellsByColumn(value: CellsByColumn): Self = StObject.set(x, "cellsByColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellsByColumnUndefined: Self = StObject.set(x, "cellsByColumn", js.undefined)
+      inline def setCellsByColumnUndefined: Self = StObject.set(x, "cellsByColumn", js.undefined)
       
-      @scala.inline
-      def setCellsByRow(value: CellsByRow): Self = StObject.set(x, "cellsByRow", value.asInstanceOf[js.Any])
+      inline def setCellsByRow(value: CellsByRow): Self = StObject.set(x, "cellsByRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellsByRowUndefined: Self = StObject.set(x, "cellsByRow", js.undefined)
+      inline def setCellsByRowUndefined: Self = StObject.set(x, "cellsByRow", js.undefined)
       
-      @scala.inline
-      def setContainerStyle(value: Style): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+      inline def setContainerStyle(value: Style): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+      inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
       
-      @scala.inline
-      def setFilter(value: String | (js.Function1[/* itemElement */ HTMLElement, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: String | (js.Function1[/* itemElement */ HTMLElement, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterFunction1(value: /* itemElement */ HTMLElement => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilterFunction1(value: /* itemElement */ HTMLElement => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFitRows(value: FitRows): Self = StObject.set(x, "fitRows", value.asInstanceOf[js.Any])
+      inline def setFitRows(value: FitRows): Self = StObject.set(x, "fitRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFitRowsUndefined: Self = StObject.set(x, "fitRows", js.undefined)
+      inline def setFitRowsUndefined: Self = StObject.set(x, "fitRows", js.undefined)
       
-      @scala.inline
-      def setGetSortData(value: Sorter): Self = StObject.set(x, "getSortData", value.asInstanceOf[js.Any])
+      inline def setGetSortData(value: Sorter): Self = StObject.set(x, "getSortData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetSortDataUndefined: Self = StObject.set(x, "getSortData", js.undefined)
+      inline def setGetSortDataUndefined: Self = StObject.set(x, "getSortData", js.undefined)
       
-      @scala.inline
-      def setHiddenStyle(value: Style): Self = StObject.set(x, "hiddenStyle", value.asInstanceOf[js.Any])
+      inline def setHiddenStyle(value: Style): Self = StObject.set(x, "hiddenStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenStyleUndefined: Self = StObject.set(x, "hiddenStyle", js.undefined)
+      inline def setHiddenStyleUndefined: Self = StObject.set(x, "hiddenStyle", js.undefined)
       
-      @scala.inline
-      def setHoriz(value: Horizontal): Self = StObject.set(x, "horiz", value.asInstanceOf[js.Any])
+      inline def setHoriz(value: Horizontal): Self = StObject.set(x, "horiz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizUndefined: Self = StObject.set(x, "horiz", js.undefined)
+      inline def setHorizUndefined: Self = StObject.set(x, "horiz", js.undefined)
       
-      @scala.inline
-      def setInitLayout(value: Boolean): Self = StObject.set(x, "initLayout", value.asInstanceOf[js.Any])
+      inline def setInitLayout(value: Boolean): Self = StObject.set(x, "initLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitLayoutUndefined: Self = StObject.set(x, "initLayout", js.undefined)
+      inline def setInitLayoutUndefined: Self = StObject.set(x, "initLayout", js.undefined)
       
-      @scala.inline
-      def setItemSelector(value: String): Self = StObject.set(x, "itemSelector", value.asInstanceOf[js.Any])
+      inline def setItemSelector(value: String): Self = StObject.set(x, "itemSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemSelectorUndefined: Self = StObject.set(x, "itemSelector", js.undefined)
+      inline def setItemSelectorUndefined: Self = StObject.set(x, "itemSelector", js.undefined)
       
-      @scala.inline
-      def setLayoutMode(value: LayoutModes): Self = StObject.set(x, "layoutMode", value.asInstanceOf[js.Any])
+      inline def setLayoutMode(value: LayoutModes): Self = StObject.set(x, "layoutMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutModeUndefined: Self = StObject.set(x, "layoutMode", js.undefined)
+      inline def setLayoutModeUndefined: Self = StObject.set(x, "layoutMode", js.undefined)
       
-      @scala.inline
-      def setMasonry(value: Masonry): Self = StObject.set(x, "masonry", value.asInstanceOf[js.Any])
+      inline def setMasonry(value: Masonry): Self = StObject.set(x, "masonry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasonryUndefined: Self = StObject.set(x, "masonry", js.undefined)
+      inline def setMasonryUndefined: Self = StObject.set(x, "masonry", js.undefined)
       
-      @scala.inline
-      def setMasontryHorizontal(value: MasonryHorizontal): Self = StObject.set(x, "masontryHorizontal", value.asInstanceOf[js.Any])
+      inline def setMasontryHorizontal(value: MasonryHorizontal): Self = StObject.set(x, "masontryHorizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasontryHorizontalUndefined: Self = StObject.set(x, "masontryHorizontal", js.undefined)
+      inline def setMasontryHorizontalUndefined: Self = StObject.set(x, "masontryHorizontal", js.undefined)
       
-      @scala.inline
-      def setOriginLeft(value: Boolean): Self = StObject.set(x, "originLeft", value.asInstanceOf[js.Any])
+      inline def setOriginLeft(value: Boolean): Self = StObject.set(x, "originLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginLeftUndefined: Self = StObject.set(x, "originLeft", js.undefined)
+      inline def setOriginLeftUndefined: Self = StObject.set(x, "originLeft", js.undefined)
       
-      @scala.inline
-      def setOriginTop(value: Boolean): Self = StObject.set(x, "originTop", value.asInstanceOf[js.Any])
+      inline def setOriginTop(value: Boolean): Self = StObject.set(x, "originTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginTopUndefined: Self = StObject.set(x, "originTop", js.undefined)
+      inline def setOriginTopUndefined: Self = StObject.set(x, "originTop", js.undefined)
       
-      @scala.inline
-      def setPackery(value: Packery): Self = StObject.set(x, "packery", value.asInstanceOf[js.Any])
+      inline def setPackery(value: Packery): Self = StObject.set(x, "packery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackeryUndefined: Self = StObject.set(x, "packery", js.undefined)
+      inline def setPackeryUndefined: Self = StObject.set(x, "packery", js.undefined)
       
-      @scala.inline
-      def setPercentPosition(value: Boolean): Self = StObject.set(x, "percentPosition", value.asInstanceOf[js.Any])
+      inline def setPercentPosition(value: Boolean): Self = StObject.set(x, "percentPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentPositionUndefined: Self = StObject.set(x, "percentPosition", js.undefined)
+      inline def setPercentPositionUndefined: Self = StObject.set(x, "percentPosition", js.undefined)
       
-      @scala.inline
-      def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setSortAscending(value: Boolean | SortOrder): Self = StObject.set(x, "sortAscending", value.asInstanceOf[js.Any])
+      inline def setSortAscending(value: Boolean | SortOrder): Self = StObject.set(x, "sortAscending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortAscendingUndefined: Self = StObject.set(x, "sortAscending", js.undefined)
+      inline def setSortAscendingUndefined: Self = StObject.set(x, "sortAscending", js.undefined)
       
-      @scala.inline
-      def setSortBy(value: String | js.Array[String]): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+      inline def setSortBy(value: String | js.Array[String]): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+      inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
       
-      @scala.inline
-      def setSortByVarargs(value: String*): Self = StObject.set(x, "sortBy", js.Array(value :_*))
+      inline def setSortByVarargs(value: String*): Self = StObject.set(x, "sortBy", js.Array(value :_*))
       
-      @scala.inline
-      def setStagger(value: Double | String): Self = StObject.set(x, "stagger", value.asInstanceOf[js.Any])
+      inline def setStagger(value: Double | String): Self = StObject.set(x, "stagger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaggerUndefined: Self = StObject.set(x, "stagger", js.undefined)
+      inline def setStaggerUndefined: Self = StObject.set(x, "stagger", js.undefined)
       
-      @scala.inline
-      def setStamp(value: String): Self = StObject.set(x, "stamp", value.asInstanceOf[js.Any])
+      inline def setStamp(value: String): Self = StObject.set(x, "stamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStampUndefined: Self = StObject.set(x, "stamp", js.undefined)
+      inline def setStampUndefined: Self = StObject.set(x, "stamp", js.undefined)
       
-      @scala.inline
-      def setTransitionDuration(value: Double | String): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: Double | String): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Vertical): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Vertical): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
       
-      @scala.inline
-      def setVisibleStyle(value: Style): Self = StObject.set(x, "visibleStyle", value.asInstanceOf[js.Any])
+      inline def setVisibleStyle(value: Style): Self = StObject.set(x, "visibleStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleStyleUndefined: Self = StObject.set(x, "visibleStyle", js.undefined)
+      inline def setVisibleStyleUndefined: Self = StObject.set(x, "visibleStyle", js.undefined)
     }
   }
   
@@ -797,32 +701,23 @@ object mod {
   trait LayoutModes extends StObject
   object LayoutModes {
     
-    @scala.inline
-    def cellsByColumn: typings.isotopeLayout.isotopeLayoutStrings.cellsByColumn = "cellsByColumn".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.cellsByColumn]
+    inline def cellsByColumn: typings.isotopeLayout.isotopeLayoutStrings.cellsByColumn = "cellsByColumn".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.cellsByColumn]
     
-    @scala.inline
-    def cellsByRow: typings.isotopeLayout.isotopeLayoutStrings.cellsByRow = "cellsByRow".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.cellsByRow]
+    inline def cellsByRow: typings.isotopeLayout.isotopeLayoutStrings.cellsByRow = "cellsByRow".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.cellsByRow]
     
-    @scala.inline
-    def fitColumns: typings.isotopeLayout.isotopeLayoutStrings.fitColumns = "fitColumns".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.fitColumns]
+    inline def fitColumns: typings.isotopeLayout.isotopeLayoutStrings.fitColumns = "fitColumns".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.fitColumns]
     
-    @scala.inline
-    def fitRows: typings.isotopeLayout.isotopeLayoutStrings.fitRows = "fitRows".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.fitRows]
+    inline def fitRows: typings.isotopeLayout.isotopeLayoutStrings.fitRows = "fitRows".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.fitRows]
     
-    @scala.inline
-    def horiz: typings.isotopeLayout.isotopeLayoutStrings.horiz = "horiz".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.horiz]
+    inline def horiz: typings.isotopeLayout.isotopeLayoutStrings.horiz = "horiz".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.horiz]
     
-    @scala.inline
-    def masonry: typings.isotopeLayout.isotopeLayoutStrings.masonry = "masonry".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.masonry]
+    inline def masonry: typings.isotopeLayout.isotopeLayoutStrings.masonry = "masonry".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.masonry]
     
-    @scala.inline
-    def masonryHorizontal: typings.isotopeLayout.isotopeLayoutStrings.masonryHorizontal = "masonryHorizontal".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.masonryHorizontal]
+    inline def masonryHorizontal: typings.isotopeLayout.isotopeLayoutStrings.masonryHorizontal = "masonryHorizontal".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.masonryHorizontal]
     
-    @scala.inline
-    def packery: typings.isotopeLayout.isotopeLayoutStrings.packery = "packery".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.packery]
+    inline def packery: typings.isotopeLayout.isotopeLayoutStrings.packery = "packery".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.packery]
     
-    @scala.inline
-    def vertical: typings.isotopeLayout.isotopeLayoutStrings.vertical = "vertical".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.vertical]
+    inline def vertical: typings.isotopeLayout.isotopeLayoutStrings.vertical = "vertical".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.vertical]
   }
   
   trait Masonry extends StObject {
@@ -835,32 +730,24 @@ object mod {
   }
   object Masonry {
     
-    @scala.inline
-    def apply(): Masonry = {
+    inline def apply(): Masonry = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Masonry]
     }
     
-    @scala.inline
-    implicit class MasonryMutableBuilder[Self <: Masonry] (val x: Self) extends AnyVal {
+    extension [Self <: Masonry](x: Self) {
       
-      @scala.inline
-      def setColumnWidth(value: Double | String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+      inline def setColumnWidth(value: Double | String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+      inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
       
-      @scala.inline
-      def setFitWidth(value: Boolean): Self = StObject.set(x, "fitWidth", value.asInstanceOf[js.Any])
+      inline def setFitWidth(value: Boolean): Self = StObject.set(x, "fitWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFitWidthUndefined: Self = StObject.set(x, "fitWidth", js.undefined)
+      inline def setFitWidthUndefined: Self = StObject.set(x, "fitWidth", js.undefined)
       
-      @scala.inline
-      def setGutter(value: Double | String): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+      inline def setGutter(value: Double | String): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
+      inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
     }
   }
   
@@ -872,26 +759,20 @@ object mod {
   }
   object MasonryHorizontal {
     
-    @scala.inline
-    def apply(): MasonryHorizontal = {
+    inline def apply(): MasonryHorizontal = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MasonryHorizontal]
     }
     
-    @scala.inline
-    implicit class MasonryHorizontalMutableBuilder[Self <: MasonryHorizontal] (val x: Self) extends AnyVal {
+    extension [Self <: MasonryHorizontal](x: Self) {
       
-      @scala.inline
-      def setGutter(value: Double | String): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+      inline def setGutter(value: Double | String): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
+      inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
       
-      @scala.inline
-      def setRowHeight(value: Double | String): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+      inline def setRowHeight(value: Double | String): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+      inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     }
   }
   
@@ -907,38 +788,28 @@ object mod {
   }
   object Packery {
     
-    @scala.inline
-    def apply(): Packery = {
+    inline def apply(): Packery = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Packery]
     }
     
-    @scala.inline
-    implicit class PackeryMutableBuilder[Self <: Packery] (val x: Self) extends AnyVal {
+    extension [Self <: Packery](x: Self) {
       
-      @scala.inline
-      def setColumnWidth(value: Double | String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+      inline def setColumnWidth(value: Double | String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+      inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
       
-      @scala.inline
-      def setGutter(value: Double | String): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+      inline def setGutter(value: Double | String): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
+      inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
       
-      @scala.inline
-      def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+      inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
       
-      @scala.inline
-      def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+      inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+      inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     }
   }
   
@@ -954,20 +825,16 @@ object mod {
   }
   object Vertical {
     
-    @scala.inline
-    def apply(): Vertical = {
+    inline def apply(): Vertical = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Vertical]
     }
     
-    @scala.inline
-    implicit class VerticalMutableBuilder[Self <: Vertical] (val x: Self) extends AnyVal {
+    extension [Self <: Vertical](x: Self) {
       
-      @scala.inline
-      def setHorizontalAlignment(value: Double): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+      inline def setHorizontalAlignment(value: Double): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+      inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     }
   }
   

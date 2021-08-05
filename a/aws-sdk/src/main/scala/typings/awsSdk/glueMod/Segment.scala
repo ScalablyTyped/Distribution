@@ -18,19 +18,15 @@ trait Segment extends StObject {
 }
 object Segment {
   
-  @scala.inline
-  def apply(SegmentNumber: NonNegativeInteger, TotalSegments: TotalSegmentsInteger): Segment = {
+  inline def apply(SegmentNumber: NonNegativeInteger, TotalSegments: TotalSegmentsInteger): Segment = {
     val __obj = js.Dynamic.literal(SegmentNumber = SegmentNumber.asInstanceOf[js.Any], TotalSegments = TotalSegments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Segment]
   }
   
-  @scala.inline
-  implicit class SegmentMutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
+  extension [Self <: Segment](x: Self) {
     
-    @scala.inline
-    def setSegmentNumber(value: NonNegativeInteger): Self = StObject.set(x, "SegmentNumber", value.asInstanceOf[js.Any])
+    inline def setSegmentNumber(value: NonNegativeInteger): Self = StObject.set(x, "SegmentNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSegments(value: TotalSegmentsInteger): Self = StObject.set(x, "TotalSegments", value.asInstanceOf[js.Any])
+    inline def setTotalSegments(value: TotalSegmentsInteger): Self = StObject.set(x, "TotalSegments", value.asInstanceOf[js.Any])
   }
 }

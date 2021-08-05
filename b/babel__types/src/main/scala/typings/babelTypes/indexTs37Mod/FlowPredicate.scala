@@ -13,15 +13,13 @@ trait FlowPredicate
      with _Node
 object FlowPredicate {
   
-  @scala.inline
-  def DeclaredPredicate_(value: Flow): typings.babelTypes.indexTs37Mod.DeclaredPredicate_ = {
+  inline def DeclaredPredicate_(value: Flow): typings.babelTypes.indexTs37Mod.DeclaredPredicate_ = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("DeclaredPredicate")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.DeclaredPredicate_]
   }
   
-  @scala.inline
-  def InferredPredicate_(): typings.babelTypes.indexTs37Mod.InferredPredicate_ = {
+  inline def InferredPredicate_(): typings.babelTypes.indexTs37Mod.InferredPredicate_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("InferredPredicate")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.InferredPredicate_]

@@ -19,20 +19,16 @@ trait MarkerShapeCircle
 }
 object MarkerShapeCircle {
   
-  @scala.inline
-  def apply(coords: js.Tuple3[Double, Double, Double]): MarkerShapeCircle = {
+  inline def apply(coords: js.Tuple3[Double, Double, Double]): MarkerShapeCircle = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("circle")
     __obj.asInstanceOf[MarkerShapeCircle]
   }
   
-  @scala.inline
-  implicit class MarkerShapeCircleMutableBuilder[Self <: MarkerShapeCircle] (val x: Self) extends AnyVal {
+  extension [Self <: MarkerShapeCircle](x: Self) {
     
-    @scala.inline
-    def setCoords(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+    inline def setCoords(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: circle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: circle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

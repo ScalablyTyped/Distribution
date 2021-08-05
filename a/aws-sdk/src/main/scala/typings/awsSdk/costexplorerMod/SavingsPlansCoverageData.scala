@@ -28,37 +28,27 @@ trait SavingsPlansCoverageData extends StObject {
 }
 object SavingsPlansCoverageData {
   
-  @scala.inline
-  def apply(): SavingsPlansCoverageData = {
+  inline def apply(): SavingsPlansCoverageData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SavingsPlansCoverageData]
   }
   
-  @scala.inline
-  implicit class SavingsPlansCoverageDataMutableBuilder[Self <: SavingsPlansCoverageData] (val x: Self) extends AnyVal {
+  extension [Self <: SavingsPlansCoverageData](x: Self) {
     
-    @scala.inline
-    def setCoveragePercentage(value: GenericString): Self = StObject.set(x, "CoveragePercentage", value.asInstanceOf[js.Any])
+    inline def setCoveragePercentage(value: GenericString): Self = StObject.set(x, "CoveragePercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoveragePercentageUndefined: Self = StObject.set(x, "CoveragePercentage", js.undefined)
+    inline def setCoveragePercentageUndefined: Self = StObject.set(x, "CoveragePercentage", js.undefined)
     
-    @scala.inline
-    def setOnDemandCost(value: GenericString): Self = StObject.set(x, "OnDemandCost", value.asInstanceOf[js.Any])
+    inline def setOnDemandCost(value: GenericString): Self = StObject.set(x, "OnDemandCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDemandCostUndefined: Self = StObject.set(x, "OnDemandCost", js.undefined)
+    inline def setOnDemandCostUndefined: Self = StObject.set(x, "OnDemandCost", js.undefined)
     
-    @scala.inline
-    def setSpendCoveredBySavingsPlans(value: GenericString): Self = StObject.set(x, "SpendCoveredBySavingsPlans", value.asInstanceOf[js.Any])
+    inline def setSpendCoveredBySavingsPlans(value: GenericString): Self = StObject.set(x, "SpendCoveredBySavingsPlans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpendCoveredBySavingsPlansUndefined: Self = StObject.set(x, "SpendCoveredBySavingsPlans", js.undefined)
+    inline def setSpendCoveredBySavingsPlansUndefined: Self = StObject.set(x, "SpendCoveredBySavingsPlans", js.undefined)
     
-    @scala.inline
-    def setTotalCost(value: GenericString): Self = StObject.set(x, "TotalCost", value.asInstanceOf[js.Any])
+    inline def setTotalCost(value: GenericString): Self = StObject.set(x, "TotalCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCostUndefined: Self = StObject.set(x, "TotalCost", js.undefined)
+    inline def setTotalCostUndefined: Self = StObject.set(x, "TotalCost", js.undefined)
   }
 }

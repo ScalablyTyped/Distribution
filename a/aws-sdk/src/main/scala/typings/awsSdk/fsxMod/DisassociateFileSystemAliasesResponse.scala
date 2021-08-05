@@ -13,22 +13,17 @@ trait DisassociateFileSystemAliasesResponse extends StObject {
 }
 object DisassociateFileSystemAliasesResponse {
   
-  @scala.inline
-  def apply(): DisassociateFileSystemAliasesResponse = {
+  inline def apply(): DisassociateFileSystemAliasesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisassociateFileSystemAliasesResponse]
   }
   
-  @scala.inline
-  implicit class DisassociateFileSystemAliasesResponseMutableBuilder[Self <: DisassociateFileSystemAliasesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateFileSystemAliasesResponse](x: Self) {
     
-    @scala.inline
-    def setAliases(value: Aliases): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: Aliases): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
+    inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
     
-    @scala.inline
-    def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
   }
 }

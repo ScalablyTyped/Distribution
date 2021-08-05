@@ -18,25 +18,19 @@ trait GetParametersRequest extends StObject {
 }
 object GetParametersRequest {
   
-  @scala.inline
-  def apply(Names: ParameterNameList): GetParametersRequest = {
+  inline def apply(Names: ParameterNameList): GetParametersRequest = {
     val __obj = js.Dynamic.literal(Names = Names.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersRequest]
   }
   
-  @scala.inline
-  implicit class GetParametersRequestMutableBuilder[Self <: GetParametersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetParametersRequest](x: Self) {
     
-    @scala.inline
-    def setNames(value: ParameterNameList): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
+    inline def setNames(value: ParameterNameList): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesVarargs(value: PSParameterName*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: PSParameterName*): Self = StObject.set(x, "Names", js.Array(value :_*))
     
-    @scala.inline
-    def setWithDecryption(value: Boolean): Self = StObject.set(x, "WithDecryption", value.asInstanceOf[js.Any])
+    inline def setWithDecryption(value: Boolean): Self = StObject.set(x, "WithDecryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithDecryptionUndefined: Self = StObject.set(x, "WithDecryption", js.undefined)
+    inline def setWithDecryptionUndefined: Self = StObject.set(x, "WithDecryption", js.undefined)
   }
 }

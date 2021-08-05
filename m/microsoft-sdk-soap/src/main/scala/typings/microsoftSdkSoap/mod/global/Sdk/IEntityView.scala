@@ -18,8 +18,7 @@ trait IEntityView extends StObject {
 }
 object IEntityView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributes: AttributeCollection,
     entityState: EntityState,
     id: java.lang.String,
@@ -30,22 +29,16 @@ object IEntityView {
     __obj.asInstanceOf[IEntityView]
   }
   
-  @scala.inline
-  implicit class IEntityViewMutableBuilder[Self <: IEntityView] (val x: Self) extends AnyVal {
+  extension [Self <: IEntityView](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: AttributeCollection): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: AttributeCollection): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityState(value: EntityState): Self = StObject.set(x, "entityState", value.asInstanceOf[js.Any])
+    inline def setEntityState(value: EntityState): Self = StObject.set(x, "entityState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalName(value: java.lang.String): Self = StObject.set(x, "logicalName", value.asInstanceOf[js.Any])
+    inline def setLogicalName(value: java.lang.String): Self = StObject.set(x, "logicalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedEntities(value: RelatedEntityCollection): Self = StObject.set(x, "relatedEntities", value.asInstanceOf[js.Any])
+    inline def setRelatedEntities(value: RelatedEntityCollection): Self = StObject.set(x, "relatedEntities", value.asInstanceOf[js.Any])
   }
 }

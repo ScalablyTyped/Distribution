@@ -13,19 +13,15 @@ trait DescribeEventBusRequest extends StObject {
 }
 object DescribeEventBusRequest {
   
-  @scala.inline
-  def apply(): DescribeEventBusRequest = {
+  inline def apply(): DescribeEventBusRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEventBusRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEventBusRequestMutableBuilder[Self <: DescribeEventBusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEventBusRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: EventBusNameOrArn): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EventBusNameOrArn): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

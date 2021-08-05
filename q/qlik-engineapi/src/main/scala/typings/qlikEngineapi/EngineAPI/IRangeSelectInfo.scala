@@ -21,16 +21,13 @@ trait IRangeSelectInfo extends StObject {
 }
 object IRangeSelectInfo {
   
-  @scala.inline
-  def apply(qRange: IRange): IRangeSelectInfo = {
+  inline def apply(qRange: IRange): IRangeSelectInfo = {
     val __obj = js.Dynamic.literal(qRange = qRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRangeSelectInfo]
   }
   
-  @scala.inline
-  implicit class IRangeSelectInfoMutableBuilder[Self <: IRangeSelectInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IRangeSelectInfo](x: Self) {
     
-    @scala.inline
-    def setQRange(value: IRange): Self = StObject.set(x, "qRange", value.asInstanceOf[js.Any])
+    inline def setQRange(value: IRange): Self = StObject.set(x, "qRange", value.asInstanceOf[js.Any])
   }
 }

@@ -41,8 +41,7 @@ trait DirectionsResponse extends StObject {
 }
 object DirectionsResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     available_travel_modes: js.Array[String],
     geocoded_waypoints: js.Array[GeocodedWaypoint],
     routes: js.Array[DirectionsRoute],
@@ -52,28 +51,20 @@ object DirectionsResponse {
     __obj.asInstanceOf[DirectionsResponse]
   }
   
-  @scala.inline
-  implicit class DirectionsResponseMutableBuilder[Self <: DirectionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsResponse](x: Self) {
     
-    @scala.inline
-    def setAvailable_travel_modes(value: js.Array[String]): Self = StObject.set(x, "available_travel_modes", value.asInstanceOf[js.Any])
+    inline def setAvailable_travel_modes(value: js.Array[String]): Self = StObject.set(x, "available_travel_modes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailable_travel_modesVarargs(value: String*): Self = StObject.set(x, "available_travel_modes", js.Array(value :_*))
+    inline def setAvailable_travel_modesVarargs(value: String*): Self = StObject.set(x, "available_travel_modes", js.Array(value :_*))
     
-    @scala.inline
-    def setGeocoded_waypoints(value: js.Array[GeocodedWaypoint]): Self = StObject.set(x, "geocoded_waypoints", value.asInstanceOf[js.Any])
+    inline def setGeocoded_waypoints(value: js.Array[GeocodedWaypoint]): Self = StObject.set(x, "geocoded_waypoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeocoded_waypointsVarargs(value: GeocodedWaypoint*): Self = StObject.set(x, "geocoded_waypoints", js.Array(value :_*))
+    inline def setGeocoded_waypointsVarargs(value: GeocodedWaypoint*): Self = StObject.set(x, "geocoded_waypoints", js.Array(value :_*))
     
-    @scala.inline
-    def setRoutes(value: js.Array[DirectionsRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: js.Array[DirectionsRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesVarargs(value: DirectionsRoute*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: DirectionsRoute*): Self = StObject.set(x, "routes", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: DirectionsReponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DirectionsReponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

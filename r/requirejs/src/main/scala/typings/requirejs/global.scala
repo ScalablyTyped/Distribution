@@ -9,19 +9,16 @@ object global {
   @JSGlobal("define")
   @js.native
   def define: RequireDefine = js.native
-  @scala.inline
-  def define_=(x: RequireDefine): Unit = js.Dynamic.global.updateDynamic("define")(x.asInstanceOf[js.Any])
+  inline def define_=(x: RequireDefine): Unit = js.Dynamic.global.updateDynamic("define")(x.asInstanceOf[js.Any])
   
   @JSGlobal("require")
   @js.native
   def require: Require = js.native
-  @scala.inline
-  def require_=(x: Require): Unit = js.Dynamic.global.updateDynamic("require")(x.asInstanceOf[js.Any])
+  inline def require_=(x: Require): Unit = js.Dynamic.global.updateDynamic("require")(x.asInstanceOf[js.Any])
   
   // Ambient declarations for 'require' and 'define'
   @JSGlobal("requirejs")
   @js.native
   def requirejs: Require = js.native
-  @scala.inline
-  def requirejs_=(x: Require): Unit = js.Dynamic.global.updateDynamic("requirejs")(x.asInstanceOf[js.Any])
+  inline def requirejs_=(x: Require): Unit = js.Dynamic.global.updateDynamic("requirejs")(x.asInstanceOf[js.Any])
 }

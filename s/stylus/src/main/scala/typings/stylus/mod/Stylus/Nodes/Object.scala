@@ -36,8 +36,7 @@ trait Object
 }
 object Object {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -62,25 +61,18 @@ object Object {
     __obj.asInstanceOf[Object]
   }
   
-  @scala.inline
-  implicit class ObjectMutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
+  extension [Self <: Object](x: Self) {
     
-    @scala.inline
-    def setGet(value: java.lang.String => Node): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: java.lang.String => Node): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHas(value: java.lang.String => scala.Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    inline def setHas(value: java.lang.String => scala.Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet(value: (java.lang.String, Node) => Object): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (java.lang.String, Node) => Object): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setToBlock(value: () => java.lang.String): Self = StObject.set(x, "toBlock", js.Any.fromFunction0(value))
+    inline def setToBlock(value: () => java.lang.String): Self = StObject.set(x, "toBlock", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVals(value: Dictionary[Node]): Self = StObject.set(x, "vals", value.asInstanceOf[js.Any])
+    inline def setVals(value: Dictionary[Node]): Self = StObject.set(x, "vals", value.asInstanceOf[js.Any])
   }
 }

@@ -78,61 +78,45 @@ trait positionConfig extends StObject {
 }
 object positionConfig {
   
-  @scala.inline
-  def apply(): positionConfig = {
+  inline def apply(): positionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[positionConfig]
   }
   
-  @scala.inline
-  implicit class positionConfigMutableBuilder[Self <: positionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: positionConfig](x: Self) {
     
-    @scala.inline
-    def setAt(
+    inline def setAt(
       value: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | X
     ): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
+    inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
     
-    @scala.inline
-    def setBoundary(value: String | Element | JQuery | Window): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: String | Element | JQuery | Window): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundaryOffset(value: String | Y): Self = StObject.set(x, "boundaryOffset", value.asInstanceOf[js.Any])
+    inline def setBoundaryOffset(value: String | Y): Self = StObject.set(x, "boundaryOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundaryOffsetUndefined: Self = StObject.set(x, "boundaryOffset", js.undefined)
+    inline def setBoundaryOffsetUndefined: Self = StObject.set(x, "boundaryOffset", js.undefined)
     
-    @scala.inline
-    def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
+    inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
-    @scala.inline
-    def setCollision(
+    inline def setCollision(
       value: fit | (`fit flip`) | (`fit flipfit`) | (`fit none`) | flip | (`flip fit`) | (`flip none`) | flipfit | (`flipfit fit`) | (`flipfit none`) | none | (`none fit`) | (`none flip`) | (`none flipfit`) | XY
     ): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
+    inline def setCollisionUndefined: Self = StObject.set(x, "collision", js.undefined)
     
-    @scala.inline
-    def setMy(
+    inline def setMy(
       value: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | X
     ): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
+    inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
     
-    @scala.inline
-    def setOf(value: String | Element | JQuery | Window): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
+    inline def setOf(value: String | Element | JQuery | Window): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfUndefined: Self = StObject.set(x, "of", js.undefined)
+    inline def setOfUndefined: Self = StObject.set(x, "of", js.undefined)
     
-    @scala.inline
-    def setOffset(value: String | Y): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: String | Y): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

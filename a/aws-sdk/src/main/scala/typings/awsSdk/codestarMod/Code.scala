@@ -18,19 +18,15 @@ trait Code extends StObject {
 }
 object Code {
   
-  @scala.inline
-  def apply(destination: CodeDestination, source: CodeSource): Code = {
+  inline def apply(destination: CodeDestination, source: CodeSource): Code = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Code]
   }
   
-  @scala.inline
-  implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+  extension [Self <: Code](x: Self) {
     
-    @scala.inline
-    def setDestination(value: CodeDestination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: CodeDestination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: CodeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: CodeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

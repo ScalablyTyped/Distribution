@@ -12,17 +12,14 @@ object anon {
   }
   object Delay {
     
-    @scala.inline
-    def apply(delay: Double): Delay = {
+    inline def apply(delay: Double): Delay = {
       val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
       __obj.asInstanceOf[Delay]
     }
     
-    @scala.inline
-    implicit class DelayMutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
+    extension [Self <: Delay](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     }
   }
   
@@ -34,26 +31,20 @@ object anon {
   }
   object InitialSelectionEnd {
     
-    @scala.inline
-    def apply(): InitialSelectionEnd = {
+    inline def apply(): InitialSelectionEnd = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InitialSelectionEnd]
     }
     
-    @scala.inline
-    implicit class InitialSelectionEndMutableBuilder[Self <: InitialSelectionEnd] (val x: Self) extends AnyVal {
+    extension [Self <: InitialSelectionEnd](x: Self) {
       
-      @scala.inline
-      def setInitialSelectionEnd(value: Double): Self = StObject.set(x, "initialSelectionEnd", value.asInstanceOf[js.Any])
+      inline def setInitialSelectionEnd(value: Double): Self = StObject.set(x, "initialSelectionEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSelectionEndUndefined: Self = StObject.set(x, "initialSelectionEnd", js.undefined)
+      inline def setInitialSelectionEndUndefined: Self = StObject.set(x, "initialSelectionEnd", js.undefined)
       
-      @scala.inline
-      def setInitialSelectionStart(value: Double): Self = StObject.set(x, "initialSelectionStart", value.asInstanceOf[js.Any])
+      inline def setInitialSelectionStart(value: Double): Self = StObject.set(x, "initialSelectionStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSelectionStartUndefined: Self = StObject.set(x, "initialSelectionStart", js.undefined)
+      inline def setInitialSelectionStartUndefined: Self = StObject.set(x, "initialSelectionStart", js.undefined)
     }
   }
 }

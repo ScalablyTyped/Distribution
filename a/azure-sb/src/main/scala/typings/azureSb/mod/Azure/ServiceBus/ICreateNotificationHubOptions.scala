@@ -16,8 +16,7 @@ trait ICreateNotificationHubOptions extends StObject {
 }
 object ICreateNotificationHubOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apns: Dictionary[String],
     gcm: Dictionary[String],
     mpns: Dictionary[String],
@@ -27,19 +26,14 @@ object ICreateNotificationHubOptions {
     __obj.asInstanceOf[ICreateNotificationHubOptions]
   }
   
-  @scala.inline
-  implicit class ICreateNotificationHubOptionsMutableBuilder[Self <: ICreateNotificationHubOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ICreateNotificationHubOptions](x: Self) {
     
-    @scala.inline
-    def setApns(value: Dictionary[String]): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
+    inline def setApns(value: Dictionary[String]): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcm(value: Dictionary[String]): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
+    inline def setGcm(value: Dictionary[String]): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpns(value: Dictionary[String]): Self = StObject.set(x, "mpns", value.asInstanceOf[js.Any])
+    inline def setMpns(value: Dictionary[String]): Self = StObject.set(x, "mpns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWns(value: Dictionary[String]): Self = StObject.set(x, "wns", value.asInstanceOf[js.Any])
+    inline def setWns(value: Dictionary[String]): Self = StObject.set(x, "wns", value.asInstanceOf[js.Any])
   }
 }

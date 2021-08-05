@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PLATFORM extends StObject
 object PLATFORM {
   
-  @scala.inline
-  def pc: typings.overwatchApi.overwatchApiStrings.pc = "pc".asInstanceOf[typings.overwatchApi.overwatchApiStrings.pc]
+  inline def pc: typings.overwatchApi.overwatchApiStrings.pc = "pc".asInstanceOf[typings.overwatchApi.overwatchApiStrings.pc]
   
-  @scala.inline
-  def psn: typings.overwatchApi.overwatchApiStrings.psn = "psn".asInstanceOf[typings.overwatchApi.overwatchApiStrings.psn]
+  inline def psn: typings.overwatchApi.overwatchApiStrings.psn = "psn".asInstanceOf[typings.overwatchApi.overwatchApiStrings.psn]
   
-  @scala.inline
-  def xbl: typings.overwatchApi.overwatchApiStrings.xbl = "xbl".asInstanceOf[typings.overwatchApi.overwatchApiStrings.xbl]
+  inline def xbl: typings.overwatchApi.overwatchApiStrings.xbl = "xbl".asInstanceOf[typings.overwatchApi.overwatchApiStrings.xbl]
 }

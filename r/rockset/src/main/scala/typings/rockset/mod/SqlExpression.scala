@@ -11,19 +11,15 @@ trait SqlExpression extends StObject {
 }
 object SqlExpression {
   
-  @scala.inline
-  def apply(): SqlExpression = {
+  inline def apply(): SqlExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqlExpression]
   }
   
-  @scala.inline
-  implicit class SqlExpressionMutableBuilder[Self <: SqlExpression] (val x: Self) extends AnyVal {
+  extension [Self <: SqlExpression](x: Self) {
     
-    @scala.inline
-    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
+    inline def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
   }
 }

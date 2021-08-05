@@ -23,17 +23,14 @@ object selectMod {
   }
   object SelectConfig {
     
-    @scala.inline
-    def apply(isMulti: Boolean, options: OptionsObject): SelectConfig = {
+    inline def apply(isMulti: Boolean, options: OptionsObject): SelectConfig = {
       val __obj = js.Dynamic.literal(isMulti = isMulti.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectConfig]
     }
     
-    @scala.inline
-    implicit class SelectConfigMutableBuilder[Self <: SelectConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SelectConfig](x: Self) {
       
-      @scala.inline
-      def setIsMulti(value: Boolean): Self = StObject.set(x, "isMulti", value.asInstanceOf[js.Any])
+      inline def setIsMulti(value: Boolean): Self = StObject.set(x, "isMulti", value.asInstanceOf[js.Any])
     }
   }
   

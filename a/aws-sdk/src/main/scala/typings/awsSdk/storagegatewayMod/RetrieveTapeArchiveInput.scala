@@ -18,19 +18,15 @@ trait RetrieveTapeArchiveInput extends StObject {
 }
 object RetrieveTapeArchiveInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN, TapeARN: TapeARN): RetrieveTapeArchiveInput = {
+  inline def apply(GatewayARN: GatewayARN, TapeARN: TapeARN): RetrieveTapeArchiveInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any], TapeARN = TapeARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetrieveTapeArchiveInput]
   }
   
-  @scala.inline
-  implicit class RetrieveTapeArchiveInputMutableBuilder[Self <: RetrieveTapeArchiveInput] (val x: Self) extends AnyVal {
+  extension [Self <: RetrieveTapeArchiveInput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
+    inline def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
   }
 }

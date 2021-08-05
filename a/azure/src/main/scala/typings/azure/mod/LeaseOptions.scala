@@ -14,25 +14,19 @@ trait LeaseOptions
 }
 object LeaseOptions {
   
-  @scala.inline
-  def apply(): LeaseOptions = {
+  inline def apply(): LeaseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LeaseOptions]
   }
   
-  @scala.inline
-  implicit class LeaseOptionsMutableBuilder[Self <: LeaseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LeaseOptions](x: Self) {
     
-    @scala.inline
-    def setLeaseDuration(value: String): Self = StObject.set(x, "leaseDuration", value.asInstanceOf[js.Any])
+    inline def setLeaseDuration(value: String): Self = StObject.set(x, "leaseDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaseDurationUndefined: Self = StObject.set(x, "leaseDuration", js.undefined)
+    inline def setLeaseDurationUndefined: Self = StObject.set(x, "leaseDuration", js.undefined)
     
-    @scala.inline
-    def setProposedLeaseId(value: String): Self = StObject.set(x, "proposedLeaseId", value.asInstanceOf[js.Any])
+    inline def setProposedLeaseId(value: String): Self = StObject.set(x, "proposedLeaseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposedLeaseIdUndefined: Self = StObject.set(x, "proposedLeaseId", js.undefined)
+    inline def setProposedLeaseIdUndefined: Self = StObject.set(x, "proposedLeaseId", js.undefined)
   }
 }

@@ -15,31 +15,23 @@ trait InterchangeOptions extends StObject {
 }
 object InterchangeOptions {
   
-  @scala.inline
-  def apply(): InterchangeOptions = {
+  inline def apply(): InterchangeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InterchangeOptions]
   }
   
-  @scala.inline
-  implicit class InterchangeOptionsMutableBuilder[Self <: InterchangeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InterchangeOptions](x: Self) {
     
-    @scala.inline
-    def setDirectives(value: js.Object): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    inline def setDirectives(value: js.Object): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
+    inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
     
-    @scala.inline
-    def setLoad_attr(value: String): Self = StObject.set(x, "load_attr", value.asInstanceOf[js.Any])
+    inline def setLoad_attr(value: String): Self = StObject.set(x, "load_attr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoad_attrUndefined: Self = StObject.set(x, "load_attr", js.undefined)
+    inline def setLoad_attrUndefined: Self = StObject.set(x, "load_attr", js.undefined)
     
-    @scala.inline
-    def setNamed_queries(value: js.Object): Self = StObject.set(x, "named_queries", value.asInstanceOf[js.Any])
+    inline def setNamed_queries(value: js.Object): Self = StObject.set(x, "named_queries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamed_queriesUndefined: Self = StObject.set(x, "named_queries", js.undefined)
+    inline def setNamed_queriesUndefined: Self = StObject.set(x, "named_queries", js.undefined)
   }
 }

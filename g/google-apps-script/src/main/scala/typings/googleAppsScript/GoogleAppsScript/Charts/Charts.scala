@@ -75,8 +75,7 @@ trait Charts extends StObject {
 }
 object Charts {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ChartHiddenDimensionStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ js.Any,
     ChartMergeStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartMergeStrategy */ js.Any,
     ChartType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ js.Any,
@@ -99,62 +98,44 @@ object Charts {
     __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Charts.Charts]
   }
   
-  @scala.inline
-  implicit class ChartsMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Charts.Charts] (val x: Self) extends AnyVal {
+  extension [Self <: typings.googleAppsScript.GoogleAppsScript.Charts.Charts](x: Self) {
     
-    @scala.inline
-    def setChartHiddenDimensionStrategy(
+    inline def setChartHiddenDimensionStrategy(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ js.Any
     ): Self = StObject.set(x, "ChartHiddenDimensionStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartMergeStrategy(
+    inline def setChartMergeStrategy(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartMergeStrategy */ js.Any
     ): Self = StObject.set(x, "ChartMergeStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ js.Any): Self = StObject.set(x, "ChartType", value.asInstanceOf[js.Any])
+    inline def setChartType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ js.Any): Self = StObject.set(x, "ChartType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColumnType */ js.Any): Self = StObject.set(x, "ColumnType", value.asInstanceOf[js.Any])
+    inline def setColumnType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColumnType */ js.Any): Self = StObject.set(x, "ColumnType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurveStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CurveStyle */ js.Any): Self = StObject.set(x, "CurveStyle", value.asInstanceOf[js.Any])
+    inline def setCurveStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CurveStyle */ js.Any): Self = StObject.set(x, "CurveStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewAreaChart(value: () => AreaChartBuilder): Self = StObject.set(x, "newAreaChart", js.Any.fromFunction0(value))
+    inline def setNewAreaChart(value: () => AreaChartBuilder): Self = StObject.set(x, "newAreaChart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewBarChart(value: () => BarChartBuilder): Self = StObject.set(x, "newBarChart", js.Any.fromFunction0(value))
+    inline def setNewBarChart(value: () => BarChartBuilder): Self = StObject.set(x, "newBarChart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewColumnChart(value: () => ColumnChartBuilder): Self = StObject.set(x, "newColumnChart", js.Any.fromFunction0(value))
+    inline def setNewColumnChart(value: () => ColumnChartBuilder): Self = StObject.set(x, "newColumnChart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDataTable(value: () => DataTableBuilder): Self = StObject.set(x, "newDataTable", js.Any.fromFunction0(value))
+    inline def setNewDataTable(value: () => DataTableBuilder): Self = StObject.set(x, "newDataTable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewDataViewDefinition(value: () => DataViewDefinitionBuilder): Self = StObject.set(x, "newDataViewDefinition", js.Any.fromFunction0(value))
+    inline def setNewDataViewDefinition(value: () => DataViewDefinitionBuilder): Self = StObject.set(x, "newDataViewDefinition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewLineChart(value: () => LineChartBuilder): Self = StObject.set(x, "newLineChart", js.Any.fromFunction0(value))
+    inline def setNewLineChart(value: () => LineChartBuilder): Self = StObject.set(x, "newLineChart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewPieChart(value: () => PieChartBuilder): Self = StObject.set(x, "newPieChart", js.Any.fromFunction0(value))
+    inline def setNewPieChart(value: () => PieChartBuilder): Self = StObject.set(x, "newPieChart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewScatterChart(value: () => ScatterChartBuilder): Self = StObject.set(x, "newScatterChart", js.Any.fromFunction0(value))
+    inline def setNewScatterChart(value: () => ScatterChartBuilder): Self = StObject.set(x, "newScatterChart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTableChart(value: () => TableChartBuilder): Self = StObject.set(x, "newTableChart", js.Any.fromFunction0(value))
+    inline def setNewTableChart(value: () => TableChartBuilder): Self = StObject.set(x, "newTableChart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTextStyle(value: () => TextStyleBuilder): Self = StObject.set(x, "newTextStyle", js.Any.fromFunction0(value))
+    inline def setNewTextStyle(value: () => TextStyleBuilder): Self = StObject.set(x, "newTextStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPointStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ js.Any): Self = StObject.set(x, "PointStyle", value.asInstanceOf[js.Any])
+    inline def setPointStyle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ js.Any): Self = StObject.set(x, "PointStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ js.Any): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ js.Any): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
   }
 }

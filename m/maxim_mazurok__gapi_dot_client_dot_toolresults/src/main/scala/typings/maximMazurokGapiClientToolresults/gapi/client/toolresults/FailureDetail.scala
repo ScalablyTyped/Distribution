@@ -29,55 +29,39 @@ trait FailureDetail extends StObject {
 }
 object FailureDetail {
   
-  @scala.inline
-  def apply(): FailureDetail = {
+  inline def apply(): FailureDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailureDetail]
   }
   
-  @scala.inline
-  implicit class FailureDetailMutableBuilder[Self <: FailureDetail] (val x: Self) extends AnyVal {
+  extension [Self <: FailureDetail](x: Self) {
     
-    @scala.inline
-    def setCrashed(value: Boolean): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
+    inline def setCrashed(value: Boolean): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrashedUndefined: Self = StObject.set(x, "crashed", js.undefined)
+    inline def setCrashedUndefined: Self = StObject.set(x, "crashed", js.undefined)
     
-    @scala.inline
-    def setDeviceOutOfMemory(value: Boolean): Self = StObject.set(x, "deviceOutOfMemory", value.asInstanceOf[js.Any])
+    inline def setDeviceOutOfMemory(value: Boolean): Self = StObject.set(x, "deviceOutOfMemory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceOutOfMemoryUndefined: Self = StObject.set(x, "deviceOutOfMemory", js.undefined)
+    inline def setDeviceOutOfMemoryUndefined: Self = StObject.set(x, "deviceOutOfMemory", js.undefined)
     
-    @scala.inline
-    def setFailedRoboscript(value: Boolean): Self = StObject.set(x, "failedRoboscript", value.asInstanceOf[js.Any])
+    inline def setFailedRoboscript(value: Boolean): Self = StObject.set(x, "failedRoboscript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedRoboscriptUndefined: Self = StObject.set(x, "failedRoboscript", js.undefined)
+    inline def setFailedRoboscriptUndefined: Self = StObject.set(x, "failedRoboscript", js.undefined)
     
-    @scala.inline
-    def setNotInstalled(value: Boolean): Self = StObject.set(x, "notInstalled", value.asInstanceOf[js.Any])
+    inline def setNotInstalled(value: Boolean): Self = StObject.set(x, "notInstalled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotInstalledUndefined: Self = StObject.set(x, "notInstalled", js.undefined)
+    inline def setNotInstalledUndefined: Self = StObject.set(x, "notInstalled", js.undefined)
     
-    @scala.inline
-    def setOtherNativeCrash(value: Boolean): Self = StObject.set(x, "otherNativeCrash", value.asInstanceOf[js.Any])
+    inline def setOtherNativeCrash(value: Boolean): Self = StObject.set(x, "otherNativeCrash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherNativeCrashUndefined: Self = StObject.set(x, "otherNativeCrash", js.undefined)
+    inline def setOtherNativeCrashUndefined: Self = StObject.set(x, "otherNativeCrash", js.undefined)
     
-    @scala.inline
-    def setTimedOut(value: Boolean): Self = StObject.set(x, "timedOut", value.asInstanceOf[js.Any])
+    inline def setTimedOut(value: Boolean): Self = StObject.set(x, "timedOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedOutUndefined: Self = StObject.set(x, "timedOut", js.undefined)
+    inline def setTimedOutUndefined: Self = StObject.set(x, "timedOut", js.undefined)
     
-    @scala.inline
-    def setUnableToCrawl(value: Boolean): Self = StObject.set(x, "unableToCrawl", value.asInstanceOf[js.Any])
+    inline def setUnableToCrawl(value: Boolean): Self = StObject.set(x, "unableToCrawl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnableToCrawlUndefined: Self = StObject.set(x, "unableToCrawl", js.undefined)
+    inline def setUnableToCrawlUndefined: Self = StObject.set(x, "unableToCrawl", js.undefined)
   }
 }

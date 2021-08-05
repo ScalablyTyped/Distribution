@@ -55,49 +55,35 @@ trait ShareLinkContent
 }
 object ShareLinkContent {
   
-  @scala.inline
-  def apply(contentUrl: String): ShareLinkContent = {
+  inline def apply(contentUrl: String): ShareLinkContent = {
     val __obj = js.Dynamic.literal(contentType = "link", contentUrl = contentUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareLinkContent]
   }
   
-  @scala.inline
-  implicit class ShareLinkContentMutableBuilder[Self <: ShareLinkContent] (val x: Self) extends AnyVal {
+  extension [Self <: ShareLinkContent](x: Self) {
     
-    @scala.inline
-    def setCommonParameters(value: ShareContentCommonParameters): Self = StObject.set(x, "commonParameters", value.asInstanceOf[js.Any])
+    inline def setCommonParameters(value: ShareContentCommonParameters): Self = StObject.set(x, "commonParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonParametersUndefined: Self = StObject.set(x, "commonParameters", js.undefined)
+    inline def setCommonParametersUndefined: Self = StObject.set(x, "commonParameters", js.undefined)
     
-    @scala.inline
-    def setContentDescription(value: String): Self = StObject.set(x, "contentDescription", value.asInstanceOf[js.Any])
+    inline def setContentDescription(value: String): Self = StObject.set(x, "contentDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentDescriptionUndefined: Self = StObject.set(x, "contentDescription", js.undefined)
+    inline def setContentDescriptionUndefined: Self = StObject.set(x, "contentDescription", js.undefined)
     
-    @scala.inline
-    def setContentTitle(value: String): Self = StObject.set(x, "contentTitle", value.asInstanceOf[js.Any])
+    inline def setContentTitle(value: String): Self = StObject.set(x, "contentTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTitleUndefined: Self = StObject.set(x, "contentTitle", js.undefined)
+    inline def setContentTitleUndefined: Self = StObject.set(x, "contentTitle", js.undefined)
     
-    @scala.inline
-    def setContentType(value: link): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: link): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+    inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
-    @scala.inline
-    def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+    inline def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
+    inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
   }
 }

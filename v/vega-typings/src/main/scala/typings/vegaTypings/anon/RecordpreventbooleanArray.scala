@@ -15,19 +15,15 @@ trait RecordpreventbooleanArray
 }
 object RecordpreventbooleanArray {
   
-  @scala.inline
-  def apply(prevent: Boolean | js.Array[EventType]): RecordpreventbooleanArray = {
+  inline def apply(prevent: Boolean | js.Array[EventType]): RecordpreventbooleanArray = {
     val __obj = js.Dynamic.literal(prevent = prevent.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordpreventbooleanArray]
   }
   
-  @scala.inline
-  implicit class RecordpreventbooleanArrayMutableBuilder[Self <: RecordpreventbooleanArray] (val x: Self) extends AnyVal {
+  extension [Self <: RecordpreventbooleanArray](x: Self) {
     
-    @scala.inline
-    def setPrevent(value: Boolean | js.Array[EventType]): Self = StObject.set(x, "prevent", value.asInstanceOf[js.Any])
+    inline def setPrevent(value: Boolean | js.Array[EventType]): Self = StObject.set(x, "prevent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventVarargs(value: EventType*): Self = StObject.set(x, "prevent", js.Array(value :_*))
+    inline def setPreventVarargs(value: EventType*): Self = StObject.set(x, "prevent", js.Array(value :_*))
   }
 }

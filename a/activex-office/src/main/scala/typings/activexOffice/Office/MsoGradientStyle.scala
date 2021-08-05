@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoGradientStyle extends StObject
 object MsoGradientStyle {
   
-  @scala.inline
-  def msoGradientDiagonalDown: `4` = 4.asInstanceOf[`4`]
+  inline def msoGradientDiagonalDown: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoGradientDiagonalUp: `3` = 3.asInstanceOf[`3`]
+  inline def msoGradientDiagonalUp: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoGradientFromCenter: `7` = 7.asInstanceOf[`7`]
+  inline def msoGradientFromCenter: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def msoGradientFromCorner: `5` = 5.asInstanceOf[`5`]
+  inline def msoGradientFromCorner: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoGradientFromTitle: `6` = 6.asInstanceOf[`6`]
+  inline def msoGradientFromTitle: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoGradientHorizontal: `1` = 1.asInstanceOf[`1`]
+  inline def msoGradientHorizontal: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoGradientMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoGradientMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoGradientVertical: `2` = 2.asInstanceOf[`2`]
+  inline def msoGradientVertical: `2` = 2.asInstanceOf[`2`]
 }

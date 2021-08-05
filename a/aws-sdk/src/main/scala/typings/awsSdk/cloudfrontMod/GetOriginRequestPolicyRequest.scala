@@ -13,16 +13,13 @@ trait GetOriginRequestPolicyRequest extends StObject {
 }
 object GetOriginRequestPolicyRequest {
   
-  @scala.inline
-  def apply(Id: String): GetOriginRequestPolicyRequest = {
+  inline def apply(Id: String): GetOriginRequestPolicyRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOriginRequestPolicyRequest]
   }
   
-  @scala.inline
-  implicit class GetOriginRequestPolicyRequestMutableBuilder[Self <: GetOriginRequestPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetOriginRequestPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

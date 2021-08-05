@@ -15,16 +15,13 @@ trait OnStateChangeEvent
 }
 object OnStateChangeEvent {
   
-  @scala.inline
-  def apply(data: PlayerState, target: Player): OnStateChangeEvent = {
+  inline def apply(data: PlayerState, target: Player): OnStateChangeEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnStateChangeEvent]
   }
   
-  @scala.inline
-  implicit class OnStateChangeEventMutableBuilder[Self <: OnStateChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: OnStateChangeEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: PlayerState): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: PlayerState): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

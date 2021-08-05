@@ -12,22 +12,17 @@ trait LateBoundPropertyNames extends StObject {
 }
 object LateBoundPropertyNames {
   
-  @scala.inline
-  def apply(known: Boolean, names: js.Array[PropertyName]): LateBoundPropertyNames = {
+  inline def apply(known: Boolean, names: js.Array[PropertyName]): LateBoundPropertyNames = {
     val __obj = js.Dynamic.literal(known = known.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
     __obj.asInstanceOf[LateBoundPropertyNames]
   }
   
-  @scala.inline
-  implicit class LateBoundPropertyNamesMutableBuilder[Self <: LateBoundPropertyNames] (val x: Self) extends AnyVal {
+  extension [Self <: LateBoundPropertyNames](x: Self) {
     
-    @scala.inline
-    def setKnown(value: Boolean): Self = StObject.set(x, "known", value.asInstanceOf[js.Any])
+    inline def setKnown(value: Boolean): Self = StObject.set(x, "known", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNames(value: js.Array[PropertyName]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Array[PropertyName]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesVarargs(value: PropertyName*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: PropertyName*): Self = StObject.set(x, "names", js.Array(value :_*))
   }
 }

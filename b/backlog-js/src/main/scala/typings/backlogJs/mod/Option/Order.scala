@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Order extends StObject
 object Order {
   
-  @scala.inline
-  def asc: typings.backlogJs.backlogJsStrings.asc = "asc".asInstanceOf[typings.backlogJs.backlogJsStrings.asc]
+  inline def asc: typings.backlogJs.backlogJsStrings.asc = "asc".asInstanceOf[typings.backlogJs.backlogJsStrings.asc]
   
-  @scala.inline
-  def desc: typings.backlogJs.backlogJsStrings.desc = "desc".asInstanceOf[typings.backlogJs.backlogJsStrings.desc]
+  inline def desc: typings.backlogJs.backlogJsStrings.desc = "desc".asInstanceOf[typings.backlogJs.backlogJsStrings.desc]
 }

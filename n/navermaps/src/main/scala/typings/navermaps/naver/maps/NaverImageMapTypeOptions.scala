@@ -18,43 +18,31 @@ trait NaverImageMapTypeOptions extends StObject {
 }
 object NaverImageMapTypeOptions {
   
-  @scala.inline
-  def apply(): NaverImageMapTypeOptions = {
+  inline def apply(): NaverImageMapTypeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NaverImageMapTypeOptions]
   }
   
-  @scala.inline
-  implicit class NaverImageMapTypeOptionsMutableBuilder[Self <: NaverImageMapTypeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NaverImageMapTypeOptions](x: Self) {
     
-    @scala.inline
-    def setHd(value: String): Self = StObject.set(x, "hd", value.asInstanceOf[js.Any])
+    inline def setHd(value: String): Self = StObject.set(x, "hd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHdUndefined: Self = StObject.set(x, "hd", js.undefined)
+    inline def setHdUndefined: Self = StObject.set(x, "hd", js.undefined)
     
-    @scala.inline
-    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
-    @scala.inline
-    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
-    @scala.inline
-    def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setTileSize(value: Size): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+    inline def setTileSize(value: Size): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+    inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
   }
 }

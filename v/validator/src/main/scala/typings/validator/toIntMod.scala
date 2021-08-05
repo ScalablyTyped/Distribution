@@ -15,8 +15,6 @@ object toIntMod {
     *
     * @param [radix=10] - radix or base (defaults to 10)
     */
-  @scala.inline
-  def default(input: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def default(input: String, radix: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(input: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(input: String, radix: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

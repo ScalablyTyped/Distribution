@@ -58,8 +58,7 @@ trait Legend extends StObject {
 }
 object Legend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoItemWidth: IGetSet[Boolean, Legend],
     gap: IGetSet[Double, Legend],
     horizontal: IGetSet[Boolean, Legend],
@@ -75,37 +74,26 @@ object Legend {
     __obj.asInstanceOf[Legend]
   }
   
-  @scala.inline
-  implicit class LegendMutableBuilder[Self <: Legend] (val x: Self) extends AnyVal {
+  extension [Self <: Legend](x: Self) {
     
-    @scala.inline
-    def setAutoItemWidth(value: IGetSet[Boolean, Legend]): Self = StObject.set(x, "autoItemWidth", value.asInstanceOf[js.Any])
+    inline def setAutoItemWidth(value: IGetSet[Boolean, Legend]): Self = StObject.set(x, "autoItemWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGap(value: IGetSet[Double, Legend]): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    inline def setGap(value: IGetSet[Double, Legend]): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontal(value: IGetSet[Boolean, Legend]): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: IGetSet[Boolean, Legend]): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemHeight(value: IGetSet[Double, Legend]): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
+    inline def setItemHeight(value: IGetSet[Double, Legend]): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemWidth(value: IGetSet[Double, Legend]): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
+    inline def setItemWidth(value: IGetSet[Double, Legend]): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendText(value: IGetSet[js.Function, Legend]): Self = StObject.set(x, "legendText", value.asInstanceOf[js.Any])
+    inline def setLegendText(value: IGetSet[js.Function, Legend]): Self = StObject.set(x, "legendText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendWidth(value: IGetSet[Double, Legend]): Self = StObject.set(x, "legendWidth", value.asInstanceOf[js.Any])
+    inline def setLegendWidth(value: IGetSet[Double, Legend]): Self = StObject.set(x, "legendWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItems(value: IGetSet[Double, Legend]): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: IGetSet[Double, Legend]): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: IGetSet[Double, Legend]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: IGetSet[Double, Legend]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: IGetSet[Double, Legend]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: IGetSet[Double, Legend]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

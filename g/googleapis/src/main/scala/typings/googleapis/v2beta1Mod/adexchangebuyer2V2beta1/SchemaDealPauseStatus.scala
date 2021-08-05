@@ -37,43 +37,31 @@ trait SchemaDealPauseStatus extends StObject {
 }
 object SchemaDealPauseStatus {
   
-  @scala.inline
-  def apply(): SchemaDealPauseStatus = {
+  inline def apply(): SchemaDealPauseStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDealPauseStatus]
   }
   
-  @scala.inline
-  implicit class SchemaDealPauseStatusMutableBuilder[Self <: SchemaDealPauseStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDealPauseStatus](x: Self) {
     
-    @scala.inline
-    def setBuyerPauseReason(value: String): Self = StObject.set(x, "buyerPauseReason", value.asInstanceOf[js.Any])
+    inline def setBuyerPauseReason(value: String): Self = StObject.set(x, "buyerPauseReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuyerPauseReasonUndefined: Self = StObject.set(x, "buyerPauseReason", js.undefined)
+    inline def setBuyerPauseReasonUndefined: Self = StObject.set(x, "buyerPauseReason", js.undefined)
     
-    @scala.inline
-    def setFirstPausedBy(value: String): Self = StObject.set(x, "firstPausedBy", value.asInstanceOf[js.Any])
+    inline def setFirstPausedBy(value: String): Self = StObject.set(x, "firstPausedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPausedByUndefined: Self = StObject.set(x, "firstPausedBy", js.undefined)
+    inline def setFirstPausedByUndefined: Self = StObject.set(x, "firstPausedBy", js.undefined)
     
-    @scala.inline
-    def setHasBuyerPaused(value: Boolean): Self = StObject.set(x, "hasBuyerPaused", value.asInstanceOf[js.Any])
+    inline def setHasBuyerPaused(value: Boolean): Self = StObject.set(x, "hasBuyerPaused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasBuyerPausedUndefined: Self = StObject.set(x, "hasBuyerPaused", js.undefined)
+    inline def setHasBuyerPausedUndefined: Self = StObject.set(x, "hasBuyerPaused", js.undefined)
     
-    @scala.inline
-    def setHasSellerPaused(value: Boolean): Self = StObject.set(x, "hasSellerPaused", value.asInstanceOf[js.Any])
+    inline def setHasSellerPaused(value: Boolean): Self = StObject.set(x, "hasSellerPaused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasSellerPausedUndefined: Self = StObject.set(x, "hasSellerPaused", js.undefined)
+    inline def setHasSellerPausedUndefined: Self = StObject.set(x, "hasSellerPaused", js.undefined)
     
-    @scala.inline
-    def setSellerPauseReason(value: String): Self = StObject.set(x, "sellerPauseReason", value.asInstanceOf[js.Any])
+    inline def setSellerPauseReason(value: String): Self = StObject.set(x, "sellerPauseReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSellerPauseReasonUndefined: Self = StObject.set(x, "sellerPauseReason", js.undefined)
+    inline def setSellerPauseReasonUndefined: Self = StObject.set(x, "sellerPauseReason", js.undefined)
   }
 }

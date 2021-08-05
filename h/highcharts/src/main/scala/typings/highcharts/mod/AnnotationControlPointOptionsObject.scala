@@ -10,19 +10,15 @@ trait AnnotationControlPointOptionsObject extends StObject {
 }
 object AnnotationControlPointOptionsObject {
   
-  @scala.inline
-  def apply(): AnnotationControlPointOptionsObject = {
+  inline def apply(): AnnotationControlPointOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationControlPointOptionsObject]
   }
   
-  @scala.inline
-  implicit class AnnotationControlPointOptionsObjectMutableBuilder[Self <: AnnotationControlPointOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationControlPointOptionsObject](x: Self) {
     
-    @scala.inline
-    def setPositioner(value: AnnotationControlPointPositionerFunction): Self = StObject.set(x, "positioner", value.asInstanceOf[js.Any])
+    inline def setPositioner(value: AnnotationControlPointPositionerFunction): Self = StObject.set(x, "positioner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionerUndefined: Self = StObject.set(x, "positioner", js.undefined)
+    inline def setPositionerUndefined: Self = StObject.set(x, "positioner", js.undefined)
   }
 }

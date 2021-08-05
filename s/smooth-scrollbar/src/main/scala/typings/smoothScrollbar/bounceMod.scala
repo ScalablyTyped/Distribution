@@ -13,7 +13,7 @@ object bounceMod {
   class Bounce protected () extends StObject {
     def this(_scrollbar: default) = this()
     
-    var _scrollbar: js.Any = js.native
+    /* private */ var _scrollbar: js.Any = js.native
     
     def render(hasXY: X): Unit = js.native
   }

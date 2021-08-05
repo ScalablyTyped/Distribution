@@ -11,13 +11,11 @@ object htmlWebpackTagsPluginStrings {
   sealed trait css
     extends StObject
        with TypeString
-  @scala.inline
-  def css: css = "css".asInstanceOf[css]
+  inline def css: css = "css".asInstanceOf[css]
   
   @js.native
   sealed trait js_
     extends StObject
        with TypeString
-  @scala.inline
-  def js_ : js_ = "js".asInstanceOf[js_]
+  inline def js_ : js_ = "js".asInstanceOf[js_]
 }

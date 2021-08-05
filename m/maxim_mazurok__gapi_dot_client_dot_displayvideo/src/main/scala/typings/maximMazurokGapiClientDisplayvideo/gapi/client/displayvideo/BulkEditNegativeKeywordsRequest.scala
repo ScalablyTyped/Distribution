@@ -14,31 +14,23 @@ trait BulkEditNegativeKeywordsRequest extends StObject {
 }
 object BulkEditNegativeKeywordsRequest {
   
-  @scala.inline
-  def apply(): BulkEditNegativeKeywordsRequest = {
+  inline def apply(): BulkEditNegativeKeywordsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkEditNegativeKeywordsRequest]
   }
   
-  @scala.inline
-  implicit class BulkEditNegativeKeywordsRequestMutableBuilder[Self <: BulkEditNegativeKeywordsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BulkEditNegativeKeywordsRequest](x: Self) {
     
-    @scala.inline
-    def setCreatedNegativeKeywords(value: js.Array[NegativeKeyword]): Self = StObject.set(x, "createdNegativeKeywords", value.asInstanceOf[js.Any])
+    inline def setCreatedNegativeKeywords(value: js.Array[NegativeKeyword]): Self = StObject.set(x, "createdNegativeKeywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedNegativeKeywordsUndefined: Self = StObject.set(x, "createdNegativeKeywords", js.undefined)
+    inline def setCreatedNegativeKeywordsUndefined: Self = StObject.set(x, "createdNegativeKeywords", js.undefined)
     
-    @scala.inline
-    def setCreatedNegativeKeywordsVarargs(value: NegativeKeyword*): Self = StObject.set(x, "createdNegativeKeywords", js.Array(value :_*))
+    inline def setCreatedNegativeKeywordsVarargs(value: NegativeKeyword*): Self = StObject.set(x, "createdNegativeKeywords", js.Array(value :_*))
     
-    @scala.inline
-    def setDeletedNegativeKeywords(value: js.Array[String]): Self = StObject.set(x, "deletedNegativeKeywords", value.asInstanceOf[js.Any])
+    inline def setDeletedNegativeKeywords(value: js.Array[String]): Self = StObject.set(x, "deletedNegativeKeywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedNegativeKeywordsUndefined: Self = StObject.set(x, "deletedNegativeKeywords", js.undefined)
+    inline def setDeletedNegativeKeywordsUndefined: Self = StObject.set(x, "deletedNegativeKeywords", js.undefined)
     
-    @scala.inline
-    def setDeletedNegativeKeywordsVarargs(value: String*): Self = StObject.set(x, "deletedNegativeKeywords", js.Array(value :_*))
+    inline def setDeletedNegativeKeywordsVarargs(value: String*): Self = StObject.set(x, "deletedNegativeKeywords", js.Array(value :_*))
   }
 }

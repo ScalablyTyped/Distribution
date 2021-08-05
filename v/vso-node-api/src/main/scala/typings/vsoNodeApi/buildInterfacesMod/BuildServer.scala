@@ -33,8 +33,7 @@ trait BuildServer extends StObject {
 }
 object BuildServer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     agents: js.Array[BuildAgentReference],
     controller: XamlBuildControllerReference,
     id: Double,
@@ -52,46 +51,32 @@ object BuildServer {
     __obj.asInstanceOf[BuildServer]
   }
   
-  @scala.inline
-  implicit class BuildServerMutableBuilder[Self <: BuildServer] (val x: Self) extends AnyVal {
+  extension [Self <: BuildServer](x: Self) {
     
-    @scala.inline
-    def setAgents(value: js.Array[BuildAgentReference]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
+    inline def setAgents(value: js.Array[BuildAgentReference]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentsVarargs(value: BuildAgentReference*): Self = StObject.set(x, "agents", js.Array(value :_*))
+    inline def setAgentsVarargs(value: BuildAgentReference*): Self = StObject.set(x, "agents", js.Array(value :_*))
     
-    @scala.inline
-    def setController(value: XamlBuildControllerReference): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: XamlBuildControllerReference): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVirtual(value: Boolean): Self = StObject.set(x, "isVirtual", value.asInstanceOf[js.Any])
+    inline def setIsVirtual(value: Boolean): Self = StObject.set(x, "isVirtual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageQueueUrl(value: String): Self = StObject.set(x, "messageQueueUrl", value.asInstanceOf[js.Any])
+    inline def setMessageQueueUrl(value: String): Self = StObject.set(x, "messageQueueUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireClientCertificates(value: Boolean): Self = StObject.set(x, "requireClientCertificates", value.asInstanceOf[js.Any])
+    inline def setRequireClientCertificates(value: Boolean): Self = StObject.set(x, "requireClientCertificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ServiceHostStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ServiceHostStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusChangedDate(value: Date): Self = StObject.set(x, "statusChangedDate", value.asInstanceOf[js.Any])
+    inline def setStatusChangedDate(value: Date): Self = StObject.set(x, "statusChangedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

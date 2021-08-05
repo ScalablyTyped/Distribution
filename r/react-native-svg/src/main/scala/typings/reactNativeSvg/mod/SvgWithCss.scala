@@ -17,6 +17,5 @@ class SvgWithCss protected ()
 }
 object SvgWithCss {
   
-  @scala.inline
-  def apply: ComponentClass[XmlProps, XmlState] = ^.asInstanceOf[js.Dynamic].selectDynamic("SvgWithCss").asInstanceOf[ComponentClass[XmlProps, XmlState]]
+  inline def apply: ComponentClass[XmlProps, XmlState] = ^.asInstanceOf[js.Dynamic].selectDynamic("SvgWithCss").asInstanceOf[ComponentClass[XmlProps, XmlState]]
 }

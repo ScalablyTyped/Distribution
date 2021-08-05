@@ -14,22 +14,17 @@ trait Apns extends StObject {
 }
 object Apns {
   
-  @scala.inline
-  def apply(apns: js.Object, fcm: js.Object, mpns: js.Object): Apns = {
+  inline def apply(apns: js.Object, fcm: js.Object, mpns: js.Object): Apns = {
     val __obj = js.Dynamic.literal(apns = apns.asInstanceOf[js.Any], fcm = fcm.asInstanceOf[js.Any], mpns = mpns.asInstanceOf[js.Any])
     __obj.asInstanceOf[Apns]
   }
   
-  @scala.inline
-  implicit class ApnsMutableBuilder[Self <: Apns] (val x: Self) extends AnyVal {
+  extension [Self <: Apns](x: Self) {
     
-    @scala.inline
-    def setApns(value: js.Object): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
+    inline def setApns(value: js.Object): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFcm(value: js.Object): Self = StObject.set(x, "fcm", value.asInstanceOf[js.Any])
+    inline def setFcm(value: js.Object): Self = StObject.set(x, "fcm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpns(value: js.Object): Self = StObject.set(x, "mpns", value.asInstanceOf[js.Any])
+    inline def setMpns(value: js.Object): Self = StObject.set(x, "mpns", value.asInstanceOf[js.Any])
   }
 }

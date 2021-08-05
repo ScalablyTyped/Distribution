@@ -33,8 +33,7 @@ trait ClosestFacilityParametersAttributeParameterValues
 }
 object ClosestFacilityParametersAttributeParameterValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributeName: String,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -46,16 +45,12 @@ object ClosestFacilityParametersAttributeParameterValues {
     __obj.asInstanceOf[ClosestFacilityParametersAttributeParameterValues]
   }
   
-  @scala.inline
-  implicit class ClosestFacilityParametersAttributeParameterValuesMutableBuilder[Self <: ClosestFacilityParametersAttributeParameterValues] (val x: Self) extends AnyVal {
+  extension [Self <: ClosestFacilityParametersAttributeParameterValues](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
+    inline def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

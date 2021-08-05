@@ -21,27 +21,23 @@ object LayoutGridAlignment {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGridAlignment.Center")
   @js.native
   def Center: LayoutGridAlignment = js.native
-  @scala.inline
-  def Center_=(x: LayoutGridAlignment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Center")(x.asInstanceOf[js.Any])
+  inline def Center_=(x: LayoutGridAlignment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Center")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGridAlignment.End")
   @js.native
   def End: LayoutGridAlignment = js.native
-  @scala.inline
-  def End_=(x: LayoutGridAlignment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("End")(x.asInstanceOf[js.Any])
+  inline def End_=(x: LayoutGridAlignment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("End")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGridAlignment.None")
   @js.native
   def None: LayoutGridAlignment = js.native
-  @scala.inline
-  def None_=(x: LayoutGridAlignment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: LayoutGridAlignment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGridAlignment.Start")
   @js.native
   def Start: LayoutGridAlignment = js.native
-  @scala.inline
-  def Start_=(x: LayoutGridAlignment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Start")(x.asInstanceOf[js.Any])
+  inline def Start_=(x: LayoutGridAlignment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Start")(x.asInstanceOf[js.Any])
 }

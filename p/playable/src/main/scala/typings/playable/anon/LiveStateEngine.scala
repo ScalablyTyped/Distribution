@@ -31,8 +31,7 @@ trait LiveStateEngine extends StObject {
 }
 object LiveStateEngine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     engine: IPlaybackEngine,
     eventEmitter: IEventEmitter,
     liveStateEngine: js.Any,
@@ -46,31 +45,22 @@ object LiveStateEngine {
     __obj.asInstanceOf[LiveStateEngine]
   }
   
-  @scala.inline
-  implicit class LiveStateEngineMutableBuilder[Self <: LiveStateEngine] (val x: Self) extends AnyVal {
+  extension [Self <: LiveStateEngine](x: Self) {
     
-    @scala.inline
-    def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
+    inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveStateEngine(value: js.Any): Self = StObject.set(x, "liveStateEngine", value.asInstanceOf[js.Any])
+    inline def setLiveStateEngine(value: js.Any): Self = StObject.set(x, "liveStateEngine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewFullSize(value: IPreviewFullSize): Self = StObject.set(x, "previewFullSize", value.asInstanceOf[js.Any])
+    inline def setPreviewFullSize(value: IPreviewFullSize): Self = StObject.set(x, "previewFullSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewThumbnail(value: IPreviewThumbnail): Self = StObject.set(x, "previewThumbnail", value.asInstanceOf[js.Any])
+    inline def setPreviewThumbnail(value: IPreviewThumbnail): Self = StObject.set(x, "previewThumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
+    inline def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
+    inline def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
   }
 }

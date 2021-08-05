@@ -20,8 +20,7 @@ trait Context extends StObject {
 }
 object Context {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addPlan: Plan => Unit,
     container: Container,
     currentRequest: Request,
@@ -33,25 +32,18 @@ object Context {
     __obj.asInstanceOf[Context]
   }
   
-  @scala.inline
-  implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+  extension [Self <: Context](x: Self) {
     
-    @scala.inline
-    def setAddPlan(value: Plan => Unit): Self = StObject.set(x, "addPlan", js.Any.fromFunction1(value))
+    inline def setAddPlan(value: Plan => Unit): Self = StObject.set(x, "addPlan", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentRequest(value: Request): Self = StObject.set(x, "currentRequest", value.asInstanceOf[js.Any])
+    inline def setCurrentRequest(value: Request): Self = StObject.set(x, "currentRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlan(value: Plan): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+    inline def setPlan(value: Plan): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetCurrentRequest(value: Request => Unit): Self = StObject.set(x, "setCurrentRequest", js.Any.fromFunction1(value))
+    inline def setSetCurrentRequest(value: Request => Unit): Self = StObject.set(x, "setCurrentRequest", js.Any.fromFunction1(value))
   }
 }

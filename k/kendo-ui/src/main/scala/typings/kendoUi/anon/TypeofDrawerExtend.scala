@@ -15,19 +15,15 @@ trait TypeofDrawerExtend extends StObject {
 }
 object TypeofDrawerExtend {
   
-  @scala.inline
-  def apply(extend: js.Object => Drawer, fn: Drawer): TypeofDrawerExtend = {
+  inline def apply(extend: js.Object => Drawer, fn: Drawer): TypeofDrawerExtend = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofDrawerExtend]
   }
   
-  @scala.inline
-  implicit class TypeofDrawerExtendMutableBuilder[Self <: TypeofDrawerExtend] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofDrawerExtend](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Drawer): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Drawer): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Drawer): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Drawer): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

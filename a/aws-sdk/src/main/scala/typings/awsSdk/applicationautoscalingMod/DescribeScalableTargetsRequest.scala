@@ -33,43 +33,31 @@ trait DescribeScalableTargetsRequest extends StObject {
 }
 object DescribeScalableTargetsRequest {
   
-  @scala.inline
-  def apply(ServiceNamespace: ServiceNamespace): DescribeScalableTargetsRequest = {
+  inline def apply(ServiceNamespace: ServiceNamespace): DescribeScalableTargetsRequest = {
     val __obj = js.Dynamic.literal(ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScalableTargetsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeScalableTargetsRequestMutableBuilder[Self <: DescribeScalableTargetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeScalableTargetsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceIds(value: ResourceIdsMaxLen1600): Self = StObject.set(x, "ResourceIds", value.asInstanceOf[js.Any])
+    inline def setResourceIds(value: ResourceIdsMaxLen1600): Self = StObject.set(x, "ResourceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdsUndefined: Self = StObject.set(x, "ResourceIds", js.undefined)
+    inline def setResourceIdsUndefined: Self = StObject.set(x, "ResourceIds", js.undefined)
     
-    @scala.inline
-    def setResourceIdsVarargs(value: ResourceIdMaxLen1600*): Self = StObject.set(x, "ResourceIds", js.Array(value :_*))
+    inline def setResourceIdsVarargs(value: ResourceIdMaxLen1600*): Self = StObject.set(x, "ResourceIds", js.Array(value :_*))
     
-    @scala.inline
-    def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
+    inline def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalableDimensionUndefined: Self = StObject.set(x, "ScalableDimension", js.undefined)
+    inline def setScalableDimensionUndefined: Self = StObject.set(x, "ScalableDimension", js.undefined)
     
-    @scala.inline
-    def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
+    inline def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
   }
 }

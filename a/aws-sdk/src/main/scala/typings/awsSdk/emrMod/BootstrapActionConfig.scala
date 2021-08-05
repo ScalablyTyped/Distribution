@@ -18,19 +18,15 @@ trait BootstrapActionConfig extends StObject {
 }
 object BootstrapActionConfig {
   
-  @scala.inline
-  def apply(Name: XmlStringMaxLen256, ScriptBootstrapAction: ScriptBootstrapActionConfig): BootstrapActionConfig = {
+  inline def apply(Name: XmlStringMaxLen256, ScriptBootstrapAction: ScriptBootstrapActionConfig): BootstrapActionConfig = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], ScriptBootstrapAction = ScriptBootstrapAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapActionConfig]
   }
   
-  @scala.inline
-  implicit class BootstrapActionConfigMutableBuilder[Self <: BootstrapActionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapActionConfig](x: Self) {
     
-    @scala.inline
-    def setName(value: XmlStringMaxLen256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: XmlStringMaxLen256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptBootstrapAction(value: ScriptBootstrapActionConfig): Self = StObject.set(x, "ScriptBootstrapAction", value.asInstanceOf[js.Any])
+    inline def setScriptBootstrapAction(value: ScriptBootstrapActionConfig): Self = StObject.set(x, "ScriptBootstrapAction", value.asInstanceOf[js.Any])
   }
 }

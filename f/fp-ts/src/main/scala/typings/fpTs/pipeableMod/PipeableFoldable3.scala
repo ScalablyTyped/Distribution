@@ -27,8 +27,7 @@ trait PipeableFoldable3[F /* <: /* import warning: transforms.QualifyReferences#
 }
 object PipeableFoldable3 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
     foldMap: Monoid[js.Any] => js.Function1[
       /* f */ js.Function1[/* a */ js.Any, js.Any], 
       js.Function1[
@@ -49,11 +48,9 @@ object PipeableFoldable3 {
     __obj.asInstanceOf[PipeableFoldable3[F]]
   }
   
-  @scala.inline
-  implicit class PipeableFoldable3MutableBuilder[Self <: PipeableFoldable3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & PipeableFoldable3[F]) extends AnyVal {
+  extension [Self <: PipeableFoldable3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & PipeableFoldable3[F]) {
     
-    @scala.inline
-    def setFoldMap(
+    inline def setFoldMap(
       value: Monoid[js.Any] => js.Function1[
           /* f */ js.Function1[/* a */ js.Any, js.Any], 
           js.Function1[
@@ -63,16 +60,14 @@ object PipeableFoldable3 {
         ]
     ): Self = StObject.set(x, "foldMap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReduce(
+    inline def setReduce(
       value: (js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ /* fa */ js.Any, 
           js.Any
         ]
     ): Self = StObject.set(x, "reduce", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReduceRight(
+    inline def setReduceRight(
       value: (js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ /* fa */ js.Any, 
           js.Any

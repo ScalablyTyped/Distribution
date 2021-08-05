@@ -14,37 +14,27 @@ trait PermissionGrantPolicy
 }
 object PermissionGrantPolicy {
   
-  @scala.inline
-  def apply(): PermissionGrantPolicy = {
+  inline def apply(): PermissionGrantPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PermissionGrantPolicy]
   }
   
-  @scala.inline
-  implicit class PermissionGrantPolicyMutableBuilder[Self <: PermissionGrantPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionGrantPolicy](x: Self) {
     
-    @scala.inline
-    def setExcludes(value: NullableOption[js.Array[PermissionGrantConditionSet]]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
+    inline def setExcludes(value: NullableOption[js.Array[PermissionGrantConditionSet]]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludesNull: Self = StObject.set(x, "excludes", null)
+    inline def setExcludesNull: Self = StObject.set(x, "excludes", null)
     
-    @scala.inline
-    def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
+    inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
     
-    @scala.inline
-    def setExcludesVarargs(value: PermissionGrantConditionSet*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+    inline def setExcludesVarargs(value: PermissionGrantConditionSet*): Self = StObject.set(x, "excludes", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludes(value: NullableOption[js.Array[PermissionGrantConditionSet]]): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
+    inline def setIncludes(value: NullableOption[js.Array[PermissionGrantConditionSet]]): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludesNull: Self = StObject.set(x, "includes", null)
+    inline def setIncludesNull: Self = StObject.set(x, "includes", null)
     
-    @scala.inline
-    def setIncludesUndefined: Self = StObject.set(x, "includes", js.undefined)
+    inline def setIncludesUndefined: Self = StObject.set(x, "includes", js.undefined)
     
-    @scala.inline
-    def setIncludesVarargs(value: PermissionGrantConditionSet*): Self = StObject.set(x, "includes", js.Array(value :_*))
+    inline def setIncludesVarargs(value: PermissionGrantConditionSet*): Self = StObject.set(x, "includes", js.Array(value :_*))
   }
 }

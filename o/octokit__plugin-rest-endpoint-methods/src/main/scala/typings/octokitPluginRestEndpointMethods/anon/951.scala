@@ -20,8 +20,7 @@ trait `951` extends StObject {
 }
 object `951` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[ReposGetCommitCommentEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[ReposGetCommitCommentResponseData]
   ): `951` = {
@@ -29,13 +28,10 @@ object `951` {
     __obj.asInstanceOf[`951`]
   }
   
-  @scala.inline
-  implicit class `951MutableBuilder`[Self <: `951`] (val x: Self) extends AnyVal {
+  extension [Self <: `951`](x: Self) {
     
-    @scala.inline
-    def setParameters(value: RequestParameters & (Omit[ReposGetCommitCommentEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: RequestParameters & (Omit[ReposGetCommitCommentEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetCommitCommentResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetCommitCommentResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

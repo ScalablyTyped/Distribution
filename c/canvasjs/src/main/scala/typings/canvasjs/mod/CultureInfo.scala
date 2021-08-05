@@ -95,97 +95,67 @@ trait CultureInfo extends StObject {
 }
 object CultureInfo {
   
-  @scala.inline
-  def apply(): CultureInfo = {
+  inline def apply(): CultureInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CultureInfo]
   }
   
-  @scala.inline
-  implicit class CultureInfoMutableBuilder[Self <: CultureInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CultureInfo](x: Self) {
     
-    @scala.inline
-    def setDays(value: js.Array[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+    inline def setDays(value: js.Array[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
+    inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
     
-    @scala.inline
-    def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
+    inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
     
-    @scala.inline
-    def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
+    inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
+    inline def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
     
-    @scala.inline
-    def setDigitGroupSeparator(value: String): Self = StObject.set(x, "digitGroupSeparator", value.asInstanceOf[js.Any])
+    inline def setDigitGroupSeparator(value: String): Self = StObject.set(x, "digitGroupSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigitGroupSeparatorUndefined: Self = StObject.set(x, "digitGroupSeparator", js.undefined)
+    inline def setDigitGroupSeparatorUndefined: Self = StObject.set(x, "digitGroupSeparator", js.undefined)
     
-    @scala.inline
-    def setMenuText(value: String): Self = StObject.set(x, "menuText", value.asInstanceOf[js.Any])
+    inline def setMenuText(value: String): Self = StObject.set(x, "menuText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuTextUndefined: Self = StObject.set(x, "menuText", js.undefined)
+    inline def setMenuTextUndefined: Self = StObject.set(x, "menuText", js.undefined)
     
-    @scala.inline
-    def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+    inline def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
+    inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
     
-    @scala.inline
-    def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+    inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
     
-    @scala.inline
-    def setPanText(value: String): Self = StObject.set(x, "panText", value.asInstanceOf[js.Any])
+    inline def setPanText(value: String): Self = StObject.set(x, "panText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanTextUndefined: Self = StObject.set(x, "panText", js.undefined)
+    inline def setPanTextUndefined: Self = StObject.set(x, "panText", js.undefined)
     
-    @scala.inline
-    def setResetText(value: String): Self = StObject.set(x, "resetText", value.asInstanceOf[js.Any])
+    inline def setResetText(value: String): Self = StObject.set(x, "resetText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetTextUndefined: Self = StObject.set(x, "resetText", js.undefined)
+    inline def setResetTextUndefined: Self = StObject.set(x, "resetText", js.undefined)
     
-    @scala.inline
-    def setSaveJPGText(value: String): Self = StObject.set(x, "saveJPGText", value.asInstanceOf[js.Any])
+    inline def setSaveJPGText(value: String): Self = StObject.set(x, "saveJPGText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveJPGTextUndefined: Self = StObject.set(x, "saveJPGText", js.undefined)
+    inline def setSaveJPGTextUndefined: Self = StObject.set(x, "saveJPGText", js.undefined)
     
-    @scala.inline
-    def setSavePNGText(value: String): Self = StObject.set(x, "savePNGText", value.asInstanceOf[js.Any])
+    inline def setSavePNGText(value: String): Self = StObject.set(x, "savePNGText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavePNGTextUndefined: Self = StObject.set(x, "savePNGText", js.undefined)
+    inline def setSavePNGTextUndefined: Self = StObject.set(x, "savePNGText", js.undefined)
     
-    @scala.inline
-    def setShortDays(value: js.Array[String]): Self = StObject.set(x, "shortDays", value.asInstanceOf[js.Any])
+    inline def setShortDays(value: js.Array[String]): Self = StObject.set(x, "shortDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDaysUndefined: Self = StObject.set(x, "shortDays", js.undefined)
+    inline def setShortDaysUndefined: Self = StObject.set(x, "shortDays", js.undefined)
     
-    @scala.inline
-    def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value :_*))
+    inline def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value :_*))
     
-    @scala.inline
-    def setShortMonths(value: js.Array[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
+    inline def setShortMonths(value: js.Array[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortMonthsUndefined: Self = StObject.set(x, "shortMonths", js.undefined)
+    inline def setShortMonthsUndefined: Self = StObject.set(x, "shortMonths", js.undefined)
     
-    @scala.inline
-    def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
+    inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
     
-    @scala.inline
-    def setZoomText(value: String): Self = StObject.set(x, "zoomText", value.asInstanceOf[js.Any])
+    inline def setZoomText(value: String): Self = StObject.set(x, "zoomText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomTextUndefined: Self = StObject.set(x, "zoomText", js.undefined)
+    inline def setZoomTextUndefined: Self = StObject.set(x, "zoomText", js.undefined)
   }
 }

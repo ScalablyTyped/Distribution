@@ -22,11 +22,9 @@ object sideNavLinkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[E /* <: js.Object */](props: ForwardRefProps[HTMLElement, SideNavLinkProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default[E /* <: js.Object */](props: ForwardRefProps[HTMLElement, SideNavLinkProps[E]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def createCustomSideNavLink_element[E /* <: js.Object */](
+  inline def createCustomSideNavLink_element[E /* <: js.Object */](
     element: /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/lib/components/UIShell/SideNavLink.SideNavLinkProps<carbon-components-react.carbon-components-react/typings/shared.ReactAnchorAttr<std.HTMLAnchorElement>>['element'] */ js.Any
   ): SideNavLinkFC[Omit[E, element]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCustomSideNavLink")(element.asInstanceOf[js.Any]).asInstanceOf[SideNavLinkFC[Omit[E, element]]]
   
@@ -45,20 +43,16 @@ object sideNavLinkMod {
   }
   object SideNavLinkPropsBase {
     
-    @scala.inline
-    def apply(children: NonNullable[String]): SideNavLinkPropsBase = {
+    inline def apply(children: NonNullable[String]): SideNavLinkPropsBase = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[SideNavLinkPropsBase]
     }
     
-    @scala.inline
-    implicit class SideNavLinkPropsBaseMutableBuilder[Self <: SideNavLinkPropsBase] (val x: Self) extends AnyVal {
+    extension [Self <: SideNavLinkPropsBase](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
 }

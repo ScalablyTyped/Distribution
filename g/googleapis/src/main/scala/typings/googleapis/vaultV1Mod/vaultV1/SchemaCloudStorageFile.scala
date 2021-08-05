@@ -33,37 +33,27 @@ trait SchemaCloudStorageFile extends StObject {
 }
 object SchemaCloudStorageFile {
   
-  @scala.inline
-  def apply(): SchemaCloudStorageFile = {
+  inline def apply(): SchemaCloudStorageFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCloudStorageFile]
   }
   
-  @scala.inline
-  implicit class SchemaCloudStorageFileMutableBuilder[Self <: SchemaCloudStorageFile] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCloudStorageFile](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
+    inline def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
     
-    @scala.inline
-    def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
+    inline def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
+    inline def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
     
-    @scala.inline
-    def setObjectName(value: String): Self = StObject.set(x, "objectName", value.asInstanceOf[js.Any])
+    inline def setObjectName(value: String): Self = StObject.set(x, "objectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectNameUndefined: Self = StObject.set(x, "objectName", js.undefined)
+    inline def setObjectNameUndefined: Self = StObject.set(x, "objectName", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

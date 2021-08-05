@@ -15,20 +15,16 @@ object anon {
   }
   object Event {
     
-    @scala.inline
-    def apply(event: SyntheticEvent[js.Any, typings.std.Event], isOpen: Boolean): Event = {
+    inline def apply(event: SyntheticEvent[js.Any, typings.std.Event], isOpen: Boolean): Event = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setEvent(value: SyntheticEvent[js.Any, typings.std.Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: SyntheticEvent[js.Any, typings.std.Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     }
   }
 }

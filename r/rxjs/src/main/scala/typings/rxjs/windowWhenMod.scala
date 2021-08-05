@@ -12,6 +12,5 @@ object windowWhenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def windowWhen[T](closingSelector: js.Function0[Observable[js.Any]]): OperatorFunction[T, Observable[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("windowWhen")(closingSelector.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, Observable[T]]]
+  inline def windowWhen[T](closingSelector: js.Function0[Observable[js.Any]]): OperatorFunction[T, Observable[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("windowWhen")(closingSelector.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, Observable[T]]]
 }

@@ -16,37 +16,27 @@ trait Direction extends StObject {
 }
 object Direction {
   
-  @scala.inline
-  def apply(): Direction = {
+  inline def apply(): Direction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Direction]
   }
   
-  @scala.inline
-  implicit class DirectionMutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
+  extension [Self <: Direction](x: Self) {
     
-    @scala.inline
-    def setDirection(value: js.Array[Double] | String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: js.Array[Double] | String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setDirectionVarargs(value: Double*): Self = StObject.set(x, "direction", js.Array(value :_*))
+    inline def setDirectionVarargs(value: Double*): Self = StObject.set(x, "direction", js.Array(value :_*))
     
-    @scala.inline
-    def setLayer(value: yandexNumbersignpanorama | yandexNumbersignairPanorama): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: yandexNumbersignpanorama | yandexNumbersignairPanorama): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    @scala.inline
-    def setSpan(value: js.Array[Double] | String): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    inline def setSpan(value: js.Array[Double] | String): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
+    inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
     
-    @scala.inline
-    def setSpanVarargs(value: Double*): Self = StObject.set(x, "span", js.Array(value :_*))
+    inline def setSpanVarargs(value: Double*): Self = StObject.set(x, "span", js.Array(value :_*))
   }
 }

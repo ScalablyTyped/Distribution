@@ -38,76 +38,53 @@ trait SasPortalDeviceConfig extends StObject {
 }
 object SasPortalDeviceConfig {
   
-  @scala.inline
-  def apply(): SasPortalDeviceConfig = {
+  inline def apply(): SasPortalDeviceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalDeviceConfig]
   }
   
-  @scala.inline
-  implicit class SasPortalDeviceConfigMutableBuilder[Self <: SasPortalDeviceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalDeviceConfig](x: Self) {
     
-    @scala.inline
-    def setAirInterface(value: SasPortalDeviceAirInterface): Self = StObject.set(x, "airInterface", value.asInstanceOf[js.Any])
+    inline def setAirInterface(value: SasPortalDeviceAirInterface): Self = StObject.set(x, "airInterface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAirInterfaceUndefined: Self = StObject.set(x, "airInterface", js.undefined)
+    inline def setAirInterfaceUndefined: Self = StObject.set(x, "airInterface", js.undefined)
     
-    @scala.inline
-    def setCallSign(value: String): Self = StObject.set(x, "callSign", value.asInstanceOf[js.Any])
+    inline def setCallSign(value: String): Self = StObject.set(x, "callSign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallSignUndefined: Self = StObject.set(x, "callSign", js.undefined)
+    inline def setCallSignUndefined: Self = StObject.set(x, "callSign", js.undefined)
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setInstallationParams(value: SasPortalInstallationParams): Self = StObject.set(x, "installationParams", value.asInstanceOf[js.Any])
+    inline def setInstallationParams(value: SasPortalInstallationParams): Self = StObject.set(x, "installationParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationParamsUndefined: Self = StObject.set(x, "installationParams", js.undefined)
+    inline def setInstallationParamsUndefined: Self = StObject.set(x, "installationParams", js.undefined)
     
-    @scala.inline
-    def setIsSigned(value: Boolean): Self = StObject.set(x, "isSigned", value.asInstanceOf[js.Any])
+    inline def setIsSigned(value: Boolean): Self = StObject.set(x, "isSigned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSignedUndefined: Self = StObject.set(x, "isSigned", js.undefined)
+    inline def setIsSignedUndefined: Self = StObject.set(x, "isSigned", js.undefined)
     
-    @scala.inline
-    def setMeasurementCapabilities(value: js.Array[String]): Self = StObject.set(x, "measurementCapabilities", value.asInstanceOf[js.Any])
+    inline def setMeasurementCapabilities(value: js.Array[String]): Self = StObject.set(x, "measurementCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasurementCapabilitiesUndefined: Self = StObject.set(x, "measurementCapabilities", js.undefined)
+    inline def setMeasurementCapabilitiesUndefined: Self = StObject.set(x, "measurementCapabilities", js.undefined)
     
-    @scala.inline
-    def setMeasurementCapabilitiesVarargs(value: String*): Self = StObject.set(x, "measurementCapabilities", js.Array(value :_*))
+    inline def setMeasurementCapabilitiesVarargs(value: String*): Self = StObject.set(x, "measurementCapabilities", js.Array(value :_*))
     
-    @scala.inline
-    def setModel(value: SasPortalDeviceModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: SasPortalDeviceModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

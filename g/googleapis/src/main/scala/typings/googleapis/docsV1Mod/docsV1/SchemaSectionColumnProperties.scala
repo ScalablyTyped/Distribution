@@ -21,25 +21,19 @@ trait SchemaSectionColumnProperties extends StObject {
 }
 object SchemaSectionColumnProperties {
   
-  @scala.inline
-  def apply(): SchemaSectionColumnProperties = {
+  inline def apply(): SchemaSectionColumnProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSectionColumnProperties]
   }
   
-  @scala.inline
-  implicit class SchemaSectionColumnPropertiesMutableBuilder[Self <: SchemaSectionColumnProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSectionColumnProperties](x: Self) {
     
-    @scala.inline
-    def setPaddingEnd(value: SchemaDimension): Self = StObject.set(x, "paddingEnd", value.asInstanceOf[js.Any])
+    inline def setPaddingEnd(value: SchemaDimension): Self = StObject.set(x, "paddingEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingEndUndefined: Self = StObject.set(x, "paddingEnd", js.undefined)
+    inline def setPaddingEndUndefined: Self = StObject.set(x, "paddingEnd", js.undefined)
     
-    @scala.inline
-    def setWidth(value: SchemaDimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: SchemaDimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

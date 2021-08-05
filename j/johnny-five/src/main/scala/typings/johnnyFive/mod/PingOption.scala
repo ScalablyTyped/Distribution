@@ -14,28 +14,21 @@ trait PingOption extends StObject {
 }
 object PingOption {
   
-  @scala.inline
-  def apply(pin: Double | String): PingOption = {
+  inline def apply(pin: Double | String): PingOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     __obj.asInstanceOf[PingOption]
   }
   
-  @scala.inline
-  implicit class PingOptionMutableBuilder[Self <: PingOption] (val x: Self) extends AnyVal {
+  extension [Self <: PingOption](x: Self) {
     
-    @scala.inline
-    def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
+    inline def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
+    inline def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
     
-    @scala.inline
-    def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPulse(value: Double): Self = StObject.set(x, "pulse", value.asInstanceOf[js.Any])
+    inline def setPulse(value: Double): Self = StObject.set(x, "pulse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPulseUndefined: Self = StObject.set(x, "pulse", js.undefined)
+    inline def setPulseUndefined: Self = StObject.set(x, "pulse", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait VirtualGatewayGrpcConnectionPool extends StObject {
 }
 object VirtualGatewayGrpcConnectionPool {
   
-  @scala.inline
-  def apply(maxRequests: MaxRequests): VirtualGatewayGrpcConnectionPool = {
+  inline def apply(maxRequests: MaxRequests): VirtualGatewayGrpcConnectionPool = {
     val __obj = js.Dynamic.literal(maxRequests = maxRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualGatewayGrpcConnectionPool]
   }
   
-  @scala.inline
-  implicit class VirtualGatewayGrpcConnectionPoolMutableBuilder[Self <: VirtualGatewayGrpcConnectionPool] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewayGrpcConnectionPool](x: Self) {
     
-    @scala.inline
-    def setMaxRequests(value: MaxRequests): Self = StObject.set(x, "maxRequests", value.asInstanceOf[js.Any])
+    inline def setMaxRequests(value: MaxRequests): Self = StObject.set(x, "maxRequests", value.asInstanceOf[js.Any])
   }
 }

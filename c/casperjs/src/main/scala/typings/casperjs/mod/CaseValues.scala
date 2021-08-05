@@ -12,19 +12,15 @@ trait CaseValues extends StObject {
 }
 object CaseValues {
   
-  @scala.inline
-  def apply(expected: Boolean, subject: Boolean): CaseValues = {
+  inline def apply(expected: Boolean, subject: Boolean): CaseValues = {
     val __obj = js.Dynamic.literal(expected = expected.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaseValues]
   }
   
-  @scala.inline
-  implicit class CaseValuesMutableBuilder[Self <: CaseValues] (val x: Self) extends AnyVal {
+  extension [Self <: CaseValues](x: Self) {
     
-    @scala.inline
-    def setExpected(value: Boolean): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: Boolean): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: Boolean): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: Boolean): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
   }
 }

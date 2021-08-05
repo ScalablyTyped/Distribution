@@ -18,23 +18,18 @@ trait ParameterRuleObject
 }
 object ParameterRuleObject {
   
-  @scala.inline
-  def apply(`type`: `object` | objectQuestionmark): ParameterRuleObject = {
+  inline def apply(`type`: `object` | objectQuestionmark): ParameterRuleObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterRuleObject]
   }
   
-  @scala.inline
-  implicit class ParameterRuleObjectMutableBuilder[Self <: ParameterRuleObject] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterRuleObject](x: Self) {
     
-    @scala.inline
-    def setRule(value: ParameterRules): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: ParameterRules): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
-    @scala.inline
-    def setType(value: `object` | objectQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `object` | objectQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

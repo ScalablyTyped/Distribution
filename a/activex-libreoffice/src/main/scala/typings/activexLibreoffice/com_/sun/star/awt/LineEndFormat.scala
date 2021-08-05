@@ -17,13 +17,10 @@ object LineEndFormat {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CARRIAGE_RETURN: `0` = 0.asInstanceOf[`0`]
+    inline def CARRIAGE_RETURN: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def CARRIAGE_RETURN_LINE_FEED: `2` = 2.asInstanceOf[`2`]
+    inline def CARRIAGE_RETURN_LINE_FEED: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def LINE_FEED: `1` = 1.asInstanceOf[`1`]
+    inline def LINE_FEED: `1` = 1.asInstanceOf[`1`]
   }
 }

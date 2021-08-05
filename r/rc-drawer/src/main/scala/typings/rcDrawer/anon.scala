@@ -18,23 +18,18 @@ object anon {
   }
   object Open {
     
-    @scala.inline
-    def apply(prevProps: IDrawerProps): Open = {
+    inline def apply(prevProps: IDrawerProps): Open = {
       val __obj = js.Dynamic.literal(prevProps = prevProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[Open]
     }
     
-    @scala.inline
-    implicit class OpenMutableBuilder[Self <: Open] (val x: Self) extends AnyVal {
+    extension [Self <: Open](x: Self) {
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setPrevProps(value: IDrawerProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
+      inline def setPrevProps(value: IDrawerProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,20 +41,16 @@ object anon {
   }
   object PrevProps {
     
-    @scala.inline
-    def apply(_self: DrawerChild, prevProps: IDrawerChildProps): PrevProps = {
+    inline def apply(_self: DrawerChild, prevProps: IDrawerChildProps): PrevProps = {
       val __obj = js.Dynamic.literal(_self = _self.asInstanceOf[js.Any], prevProps = prevProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrevProps]
     }
     
-    @scala.inline
-    implicit class PrevPropsMutableBuilder[Self <: PrevProps] (val x: Self) extends AnyVal {
+    extension [Self <: PrevProps](x: Self) {
       
-      @scala.inline
-      def setPrevProps(value: IDrawerChildProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
+      inline def setPrevProps(value: IDrawerChildProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_self(value: DrawerChild): Self = StObject.set(x, "_self", value.asInstanceOf[js.Any])
+      inline def set_self(value: DrawerChild): Self = StObject.set(x, "_self", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,17 +60,14 @@ object anon {
   }
   object PrevPropsIDrawerChildProps {
     
-    @scala.inline
-    def apply(prevProps: IDrawerChildProps): PrevPropsIDrawerChildProps = {
+    inline def apply(prevProps: IDrawerChildProps): PrevPropsIDrawerChildProps = {
       val __obj = js.Dynamic.literal(prevProps = prevProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrevPropsIDrawerChildProps]
     }
     
-    @scala.inline
-    implicit class PrevPropsIDrawerChildPropsMutableBuilder[Self <: PrevPropsIDrawerChildProps] (val x: Self) extends AnyVal {
+    extension [Self <: PrevPropsIDrawerChildProps](x: Self) {
       
-      @scala.inline
-      def setPrevProps(value: IDrawerChildProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
+      inline def setPrevProps(value: IDrawerChildProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,17 +77,14 @@ object anon {
   }
   object PrevPropsIDrawerProps {
     
-    @scala.inline
-    def apply(prevProps: IDrawerProps): PrevPropsIDrawerProps = {
+    inline def apply(prevProps: IDrawerProps): PrevPropsIDrawerProps = {
       val __obj = js.Dynamic.literal(prevProps = prevProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrevPropsIDrawerProps]
     }
     
-    @scala.inline
-    implicit class PrevPropsIDrawerPropsMutableBuilder[Self <: PrevPropsIDrawerProps] (val x: Self) extends AnyVal {
+    extension [Self <: PrevPropsIDrawerProps](x: Self) {
       
-      @scala.inline
-      def setPrevProps(value: IDrawerProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
+      inline def setPrevProps(value: IDrawerProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,20 +96,16 @@ object anon {
   }
   object Target {
     
-    @scala.inline
-    def apply(open: Boolean, target: HTMLElement): Target = {
+    inline def apply(open: Boolean, target: HTMLElement): Target = {
       val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[Target]
     }
     
-    @scala.inline
-    implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
+    extension [Self <: Target](x: Self) {
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

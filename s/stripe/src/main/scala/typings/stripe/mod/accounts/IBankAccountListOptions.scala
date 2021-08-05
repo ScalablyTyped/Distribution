@@ -14,17 +14,14 @@ trait IBankAccountListOptions
 }
 object IBankAccountListOptions {
   
-  @scala.inline
-  def apply(): IBankAccountListOptions = {
+  inline def apply(): IBankAccountListOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")("bank_account")
     __obj.asInstanceOf[IBankAccountListOptions]
   }
   
-  @scala.inline
-  implicit class IBankAccountListOptionsMutableBuilder[Self <: IBankAccountListOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IBankAccountListOptions](x: Self) {
     
-    @scala.inline
-    def setObject(value: bank_account): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: bank_account): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

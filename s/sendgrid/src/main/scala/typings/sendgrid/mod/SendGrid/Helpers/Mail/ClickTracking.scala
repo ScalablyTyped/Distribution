@@ -19,8 +19,7 @@ trait ClickTracking extends StObject {
 }
 object ClickTracking {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEnable: () => Boolean,
     getEnableText: () => Boolean,
     setEnable: Boolean => Unit,
@@ -31,22 +30,16 @@ object ClickTracking {
     __obj.asInstanceOf[ClickTracking]
   }
   
-  @scala.inline
-  implicit class ClickTrackingMutableBuilder[Self <: ClickTracking] (val x: Self) extends AnyVal {
+  extension [Self <: ClickTracking](x: Self) {
     
-    @scala.inline
-    def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
+    inline def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnableText(value: () => Boolean): Self = StObject.set(x, "getEnableText", js.Any.fromFunction0(value))
+    inline def setGetEnableText(value: () => Boolean): Self = StObject.set(x, "getEnableText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
+    inline def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEnableText(value: Boolean => Unit): Self = StObject.set(x, "setEnableText", js.Any.fromFunction1(value))
+    inline def setSetEnableText(value: Boolean => Unit): Self = StObject.set(x, "setEnableText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSON(value: () => Enable): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => Enable): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

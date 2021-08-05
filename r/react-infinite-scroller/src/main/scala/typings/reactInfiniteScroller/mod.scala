@@ -98,77 +98,54 @@ object mod {
     }
     object InfiniteScrollProps {
       
-      @scala.inline
-      def apply(loadMore: Double => Unit): InfiniteScrollProps = {
+      inline def apply(loadMore: Double => Unit): InfiniteScrollProps = {
         val __obj = js.Dynamic.literal(loadMore = js.Any.fromFunction1(loadMore))
         __obj.asInstanceOf[InfiniteScrollProps]
       }
       
-      @scala.inline
-      implicit class InfiniteScrollPropsMutableBuilder[Self <: InfiniteScrollProps] (val x: Self) extends AnyVal {
+      extension [Self <: InfiniteScrollProps](x: Self) {
         
-        @scala.inline
-        def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+        inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+        inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
         
-        @scala.inline
-        def setGetScrollParent(value: () => HTMLElement | Null): Self = StObject.set(x, "getScrollParent", js.Any.fromFunction0(value))
+        inline def setGetScrollParent(value: () => HTMLElement | Null): Self = StObject.set(x, "getScrollParent", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetScrollParentUndefined: Self = StObject.set(x, "getScrollParent", js.undefined)
+        inline def setGetScrollParentUndefined: Self = StObject.set(x, "getScrollParent", js.undefined)
         
-        @scala.inline
-        def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
+        inline def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHasMoreUndefined: Self = StObject.set(x, "hasMore", js.undefined)
+        inline def setHasMoreUndefined: Self = StObject.set(x, "hasMore", js.undefined)
         
-        @scala.inline
-        def setInitialLoad(value: Boolean): Self = StObject.set(x, "initialLoad", value.asInstanceOf[js.Any])
+        inline def setInitialLoad(value: Boolean): Self = StObject.set(x, "initialLoad", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInitialLoadUndefined: Self = StObject.set(x, "initialLoad", js.undefined)
+        inline def setInitialLoadUndefined: Self = StObject.set(x, "initialLoad", js.undefined)
         
-        @scala.inline
-        def setIsReverse(value: Boolean): Self = StObject.set(x, "isReverse", value.asInstanceOf[js.Any])
+        inline def setIsReverse(value: Boolean): Self = StObject.set(x, "isReverse", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsReverseUndefined: Self = StObject.set(x, "isReverse", js.undefined)
+        inline def setIsReverseUndefined: Self = StObject.set(x, "isReverse", js.undefined)
         
-        @scala.inline
-        def setLoadMore(value: Double => Unit): Self = StObject.set(x, "loadMore", js.Any.fromFunction1(value))
+        inline def setLoadMore(value: Double => Unit): Self = StObject.set(x, "loadMore", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setLoader(value: ReactElement): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+        inline def setLoader(value: ReactElement): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
+        inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
         
-        @scala.inline
-        def setPageStart(value: Double): Self = StObject.set(x, "pageStart", value.asInstanceOf[js.Any])
+        inline def setPageStart(value: Double): Self = StObject.set(x, "pageStart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageStartUndefined: Self = StObject.set(x, "pageStart", js.undefined)
+        inline def setPageStartUndefined: Self = StObject.set(x, "pageStart", js.undefined)
         
-        @scala.inline
-        def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+        inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+        inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
         
-        @scala.inline
-        def setUseCapture(value: Boolean): Self = StObject.set(x, "useCapture", value.asInstanceOf[js.Any])
+        inline def setUseCapture(value: Boolean): Self = StObject.set(x, "useCapture", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseCaptureUndefined: Self = StObject.set(x, "useCapture", js.undefined)
+        inline def setUseCaptureUndefined: Self = StObject.set(x, "useCapture", js.undefined)
         
-        @scala.inline
-        def setUseWindow(value: Boolean): Self = StObject.set(x, "useWindow", value.asInstanceOf[js.Any])
+        inline def setUseWindow(value: Boolean): Self = StObject.set(x, "useWindow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseWindowUndefined: Self = StObject.set(x, "useWindow", js.undefined)
+        inline def setUseWindowUndefined: Self = StObject.set(x, "useWindow", js.undefined)
       }
     }
   }

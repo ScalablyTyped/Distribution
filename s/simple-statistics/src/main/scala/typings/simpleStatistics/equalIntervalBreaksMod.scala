@@ -10,6 +10,5 @@ object equalIntervalBreaksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(x: js.Array[Double], nClasses: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any], nClasses.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def default(x: js.Array[Double], nClasses: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any], nClasses.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

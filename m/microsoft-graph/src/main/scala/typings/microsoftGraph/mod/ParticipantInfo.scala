@@ -32,55 +32,39 @@ trait ParticipantInfo extends StObject {
 }
 object ParticipantInfo {
   
-  @scala.inline
-  def apply(): ParticipantInfo = {
+  inline def apply(): ParticipantInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParticipantInfo]
   }
   
-  @scala.inline
-  implicit class ParticipantInfoMutableBuilder[Self <: ParticipantInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ParticipantInfo](x: Self) {
     
-    @scala.inline
-    def setCountryCode(value: NullableOption[String]): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+    inline def setCountryCode(value: NullableOption[String]): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCodeNull: Self = StObject.set(x, "countryCode", null)
+    inline def setCountryCodeNull: Self = StObject.set(x, "countryCode", null)
     
-    @scala.inline
-    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
+    inline def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
-    @scala.inline
-    def setEndpointType(value: NullableOption[EndpointType]): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
+    inline def setEndpointType(value: NullableOption[EndpointType]): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointTypeNull: Self = StObject.set(x, "endpointType", null)
+    inline def setEndpointTypeNull: Self = StObject.set(x, "endpointType", null)
     
-    @scala.inline
-    def setEndpointTypeUndefined: Self = StObject.set(x, "endpointType", js.undefined)
+    inline def setEndpointTypeUndefined: Self = StObject.set(x, "endpointType", js.undefined)
     
-    @scala.inline
-    def setIdentity(value: IdentitySet): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: IdentitySet): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+    inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
     
-    @scala.inline
-    def setLanguageId(value: NullableOption[String]): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
+    inline def setLanguageId(value: NullableOption[String]): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageIdNull: Self = StObject.set(x, "languageId", null)
+    inline def setLanguageIdNull: Self = StObject.set(x, "languageId", null)
     
-    @scala.inline
-    def setLanguageIdUndefined: Self = StObject.set(x, "languageId", js.undefined)
+    inline def setLanguageIdUndefined: Self = StObject.set(x, "languageId", js.undefined)
     
-    @scala.inline
-    def setRegion(value: NullableOption[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: NullableOption[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionNull: Self = StObject.set(x, "region", null)
+    inline def setRegionNull: Self = StObject.set(x, "region", null)
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

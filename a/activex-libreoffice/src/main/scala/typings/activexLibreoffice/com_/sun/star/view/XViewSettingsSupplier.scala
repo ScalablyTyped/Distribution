@@ -20,8 +20,7 @@ trait XViewSettingsSupplier
 }
 object XViewSettingsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ViewSettings: XPropertySet,
     acquire: () => Unit,
     getViewSettings: () => XPropertySet,
@@ -32,13 +31,10 @@ object XViewSettingsSupplier {
     __obj.asInstanceOf[XViewSettingsSupplier]
   }
   
-  @scala.inline
-  implicit class XViewSettingsSupplierMutableBuilder[Self <: XViewSettingsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XViewSettingsSupplier](x: Self) {
     
-    @scala.inline
-    def setGetViewSettings(value: () => XPropertySet): Self = StObject.set(x, "getViewSettings", js.Any.fromFunction0(value))
+    inline def setGetViewSettings(value: () => XPropertySet): Self = StObject.set(x, "getViewSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setViewSettings(value: XPropertySet): Self = StObject.set(x, "ViewSettings", value.asInstanceOf[js.Any])
+    inline def setViewSettings(value: XPropertySet): Self = StObject.set(x, "ViewSettings", value.asInstanceOf[js.Any])
   }
 }

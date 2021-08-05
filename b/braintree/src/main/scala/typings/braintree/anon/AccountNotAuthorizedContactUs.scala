@@ -22,8 +22,7 @@ trait AccountNotAuthorizedContactUs extends StObject {
 }
 object AccountNotAuthorizedContactUs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccountNotAuthorizedContactUs: String,
     AnotherUsBankMerchantAccount: String,
     Approve: String,
@@ -36,28 +35,20 @@ object AccountNotAuthorizedContactUs {
     __obj.asInstanceOf[AccountNotAuthorizedContactUs]
   }
   
-  @scala.inline
-  implicit class AccountNotAuthorizedContactUsMutableBuilder[Self <: AccountNotAuthorizedContactUs] (val x: Self) extends AnyVal {
+  extension [Self <: AccountNotAuthorizedContactUs](x: Self) {
     
-    @scala.inline
-    def setAccountNotAuthorizedContactUs(value: String): Self = StObject.set(x, "AccountNotAuthorizedContactUs", value.asInstanceOf[js.Any])
+    inline def setAccountNotAuthorizedContactUs(value: String): Self = StObject.set(x, "AccountNotAuthorizedContactUs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnotherUsBankMerchantAccount(value: String): Self = StObject.set(x, "AnotherUsBankMerchantAccount", value.asInstanceOf[js.Any])
+    inline def setAnotherUsBankMerchantAccount(value: String): Self = StObject.set(x, "AnotherUsBankMerchantAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprove(value: String): Self = StObject.set(x, "Approve", value.asInstanceOf[js.Any])
+    inline def setApprove(value: String): Self = StObject.set(x, "Approve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBankRejectedNone(value: String): Self = StObject.set(x, "BankRejectedNone", value.asInstanceOf[js.Any])
+    inline def setBankRejectedNone(value: String): Self = StObject.set(x, "BankRejectedNone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBankRejectedUpdateFundingInformation(value: String): Self = StObject.set(x, "BankRejectedUpdateFundingInformation", value.asInstanceOf[js.Any])
+    inline def setBankRejectedUpdateFundingInformation(value: String): Self = StObject.set(x, "BankRejectedUpdateFundingInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsufficientFundsContactUs(value: String): Self = StObject.set(x, "InsufficientFundsContactUs", value.asInstanceOf[js.Any])
+    inline def setInsufficientFundsContactUs(value: String): Self = StObject.set(x, "InsufficientFundsContactUs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsBankMerchantAccount(value: String): Self = StObject.set(x, "UsBankMerchantAccount", value.asInstanceOf[js.Any])
+    inline def setUsBankMerchantAccount(value: String): Self = StObject.set(x, "UsBankMerchantAccount", value.asInstanceOf[js.Any])
   }
 }

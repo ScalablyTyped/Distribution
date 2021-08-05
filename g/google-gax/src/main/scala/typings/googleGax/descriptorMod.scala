@@ -83,17 +83,14 @@ object descriptorMod {
   }
   object Descriptor {
     
-    @scala.inline
-    def apply(getApiCaller: CallSettings => APICaller): Descriptor = {
+    inline def apply(getApiCaller: CallSettings => APICaller): Descriptor = {
       val __obj = js.Dynamic.literal(getApiCaller = js.Any.fromFunction1(getApiCaller))
       __obj.asInstanceOf[Descriptor]
     }
     
-    @scala.inline
-    implicit class DescriptorMutableBuilder[Self <: Descriptor] (val x: Self) extends AnyVal {
+    extension [Self <: Descriptor](x: Self) {
       
-      @scala.inline
-      def setGetApiCaller(value: CallSettings => APICaller): Self = StObject.set(x, "getApiCaller", js.Any.fromFunction1(value))
+      inline def setGetApiCaller(value: CallSettings => APICaller): Self = StObject.set(x, "getApiCaller", js.Any.fromFunction1(value))
     }
   }
 }

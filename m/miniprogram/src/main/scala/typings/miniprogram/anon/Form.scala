@@ -12,16 +12,13 @@ trait Form extends StObject {
 }
 object Form {
   
-  @scala.inline
-  def apply(form: manual | code): Form = {
+  inline def apply(form: manual | code): Form = {
     val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any])
     __obj.asInstanceOf[Form]
   }
   
-  @scala.inline
-  implicit class FormMutableBuilder[Self <: Form] (val x: Self) extends AnyVal {
+  extension [Self <: Form](x: Self) {
     
-    @scala.inline
-    def setForm(value: manual | code): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: manual | code): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
   }
 }

@@ -23,17 +23,13 @@ object tableMod extends Shortcut {
   trait DataTableSize extends StObject
   object DataTableSize {
     
-    @scala.inline
-    def compact: typings.carbonComponentsReact.carbonComponentsReactStrings.compact = "compact".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.compact]
+    inline def compact: typings.carbonComponentsReact.carbonComponentsReactStrings.compact = "compact".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.compact]
     
-    @scala.inline
-    def normal: typings.carbonComponentsReact.carbonComponentsReactStrings.normal = "normal".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.normal]
+    inline def normal: typings.carbonComponentsReact.carbonComponentsReactStrings.normal = "normal".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.normal]
     
-    @scala.inline
-    def short: typings.carbonComponentsReact.carbonComponentsReactStrings.short = "short".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.short]
+    inline def short: typings.carbonComponentsReact.carbonComponentsReactStrings.short = "short".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.short]
     
-    @scala.inline
-    def tall: typings.carbonComponentsReact.carbonComponentsReactStrings.tall = "tall".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.tall]
+    inline def tall: typings.carbonComponentsReact.carbonComponentsReactStrings.tall = "tall".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.tall]
   }
   
   type InheritedProps = TableHTMLAttributes[HTMLTableElement]
@@ -54,50 +50,36 @@ object tableMod extends Shortcut {
   }
   object TableCarbonProps {
     
-    @scala.inline
-    def apply(): TableCarbonProps = {
+    inline def apply(): TableCarbonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableCarbonProps]
     }
     
-    @scala.inline
-    implicit class TableCarbonPropsMutableBuilder[Self <: TableCarbonProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableCarbonProps](x: Self) {
       
-      @scala.inline
-      def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
+      inline def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
+      inline def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
       
-      @scala.inline
-      def setOverflowMenuOnHover(value: Boolean): Self = StObject.set(x, "overflowMenuOnHover", value.asInstanceOf[js.Any])
+      inline def setOverflowMenuOnHover(value: Boolean): Self = StObject.set(x, "overflowMenuOnHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowMenuOnHoverUndefined: Self = StObject.set(x, "overflowMenuOnHover", js.undefined)
+      inline def setOverflowMenuOnHoverUndefined: Self = StObject.set(x, "overflowMenuOnHover", js.undefined)
       
-      @scala.inline
-      def setShouldShowBorder(value: Boolean): Self = StObject.set(x, "shouldShowBorder", value.asInstanceOf[js.Any])
+      inline def setShouldShowBorder(value: Boolean): Self = StObject.set(x, "shouldShowBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldShowBorderUndefined: Self = StObject.set(x, "shouldShowBorder", js.undefined)
+      inline def setShouldShowBorderUndefined: Self = StObject.set(x, "shouldShowBorder", js.undefined)
       
-      @scala.inline
-      def setSize(value: DataTableSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: DataTableSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setUseStaticWidth(value: Boolean): Self = StObject.set(x, "useStaticWidth", value.asInstanceOf[js.Any])
+      inline def setUseStaticWidth(value: Boolean): Self = StObject.set(x, "useStaticWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseStaticWidthUndefined: Self = StObject.set(x, "useStaticWidth", js.undefined)
+      inline def setUseStaticWidthUndefined: Self = StObject.set(x, "useStaticWidth", js.undefined)
       
-      @scala.inline
-      def setUseZebraStyles(value: Boolean): Self = StObject.set(x, "useZebraStyles", value.asInstanceOf[js.Any])
+      inline def setUseZebraStyles(value: Boolean): Self = StObject.set(x, "useZebraStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseZebraStylesUndefined: Self = StObject.set(x, "useZebraStyles", js.undefined)
+      inline def setUseZebraStylesUndefined: Self = StObject.set(x, "useZebraStyles", js.undefined)
     }
   }
   
@@ -107,8 +89,7 @@ object tableMod extends Shortcut {
        with TableCarbonProps
   object TableProps {
     
-    @scala.inline
-    def apply(): TableProps = {
+    inline def apply(): TableProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableProps]
     }

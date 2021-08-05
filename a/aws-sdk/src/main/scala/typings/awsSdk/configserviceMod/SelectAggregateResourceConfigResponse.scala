@@ -20,34 +20,25 @@ trait SelectAggregateResourceConfigResponse extends StObject {
 }
 object SelectAggregateResourceConfigResponse {
   
-  @scala.inline
-  def apply(): SelectAggregateResourceConfigResponse = {
+  inline def apply(): SelectAggregateResourceConfigResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectAggregateResourceConfigResponse]
   }
   
-  @scala.inline
-  implicit class SelectAggregateResourceConfigResponseMutableBuilder[Self <: SelectAggregateResourceConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SelectAggregateResourceConfigResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setQueryInfo(value: QueryInfo): Self = StObject.set(x, "QueryInfo", value.asInstanceOf[js.Any])
+    inline def setQueryInfo(value: QueryInfo): Self = StObject.set(x, "QueryInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryInfoUndefined: Self = StObject.set(x, "QueryInfo", js.undefined)
+    inline def setQueryInfoUndefined: Self = StObject.set(x, "QueryInfo", js.undefined)
     
-    @scala.inline
-    def setResults(value: Results): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
+    inline def setResults(value: Results): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: String*): Self = StObject.set(x, "Results", js.Array(value :_*))
+    inline def setResultsVarargs(value: String*): Self = StObject.set(x, "Results", js.Array(value :_*))
   }
 }

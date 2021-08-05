@@ -23,25 +23,19 @@ trait SchemaExistingDisk extends StObject {
 }
 object SchemaExistingDisk {
   
-  @scala.inline
-  def apply(): SchemaExistingDisk = {
+  inline def apply(): SchemaExistingDisk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExistingDisk]
   }
   
-  @scala.inline
-  implicit class SchemaExistingDiskMutableBuilder[Self <: SchemaExistingDisk] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExistingDisk](x: Self) {
     
-    @scala.inline
-    def setAttachment(value: SchemaDiskAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
+    inline def setAttachment(value: SchemaDiskAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
+    inline def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

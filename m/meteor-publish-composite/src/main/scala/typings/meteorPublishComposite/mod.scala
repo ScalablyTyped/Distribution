@@ -10,16 +10,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def publishComposite(
+  inline def publishComposite(
     name: String,
     configFunc: js.Function1[
       /* repeated */ js.Any, 
       PublishCompositeConfig[js.Any] | js.Array[PublishCompositeConfig[js.Any]]
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publishComposite")(name.asInstanceOf[js.Any], configFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def publishComposite(name: String, config: js.Array[PublishCompositeConfig[js.Any]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publishComposite")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def publishComposite(name: String, config: PublishCompositeConfig[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publishComposite")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def publishComposite(name: String, config: js.Array[PublishCompositeConfig[js.Any]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publishComposite")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def publishComposite(name: String, config: PublishCompositeConfig[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publishComposite")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

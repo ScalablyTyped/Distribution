@@ -15,14 +15,12 @@ trait DurationEvent
      with Event
 object DurationEvent {
   
-  @scala.inline
-  def DurationEventBegin(ph: DURATION_EVENTS_BEGIN): typings.hermesProfileTransformer.eventInterfacesMod.DurationEventBegin = {
+  inline def DurationEventBegin(ph: DURATION_EVENTS_BEGIN): typings.hermesProfileTransformer.eventInterfacesMod.DurationEventBegin = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.hermesProfileTransformer.eventInterfacesMod.DurationEventBegin]
   }
   
-  @scala.inline
-  def DurationEventEnd(ph: DURATION_EVENTS_END): typings.hermesProfileTransformer.eventInterfacesMod.DurationEventEnd = {
+  inline def DurationEventEnd(ph: DURATION_EVENTS_END): typings.hermesProfileTransformer.eventInterfacesMod.DurationEventEnd = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.hermesProfileTransformer.eventInterfacesMod.DurationEventEnd]
   }

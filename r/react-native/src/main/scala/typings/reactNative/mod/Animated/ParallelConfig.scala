@@ -10,19 +10,15 @@ trait ParallelConfig extends StObject {
 }
 object ParallelConfig {
   
-  @scala.inline
-  def apply(): ParallelConfig = {
+  inline def apply(): ParallelConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParallelConfig]
   }
   
-  @scala.inline
-  implicit class ParallelConfigMutableBuilder[Self <: ParallelConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ParallelConfig](x: Self) {
     
-    @scala.inline
-    def setStopTogether(value: Boolean): Self = StObject.set(x, "stopTogether", value.asInstanceOf[js.Any])
+    inline def setStopTogether(value: Boolean): Self = StObject.set(x, "stopTogether", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopTogetherUndefined: Self = StObject.set(x, "stopTogether", js.undefined)
+    inline def setStopTogetherUndefined: Self = StObject.set(x, "stopTogether", js.undefined)
   }
 }

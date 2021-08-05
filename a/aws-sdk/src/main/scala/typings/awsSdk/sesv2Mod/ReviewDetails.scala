@@ -18,25 +18,19 @@ trait ReviewDetails extends StObject {
 }
 object ReviewDetails {
   
-  @scala.inline
-  def apply(): ReviewDetails = {
+  inline def apply(): ReviewDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReviewDetails]
   }
   
-  @scala.inline
-  implicit class ReviewDetailsMutableBuilder[Self <: ReviewDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ReviewDetails](x: Self) {
     
-    @scala.inline
-    def setCaseId(value: CaseId): Self = StObject.set(x, "CaseId", value.asInstanceOf[js.Any])
+    inline def setCaseId(value: CaseId): Self = StObject.set(x, "CaseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseIdUndefined: Self = StObject.set(x, "CaseId", js.undefined)
+    inline def setCaseIdUndefined: Self = StObject.set(x, "CaseId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ReviewStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ReviewStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

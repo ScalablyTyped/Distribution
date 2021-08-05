@@ -27,8 +27,7 @@ object mobilePopupInnerMod extends Shortcut {
   }
   object MobilePopupInnerProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       animation: AnimationType,
       motion: CSSMotionProps,
       prefixCls: String,
@@ -38,14 +37,11 @@ object mobilePopupInnerMod extends Shortcut {
       __obj.asInstanceOf[MobilePopupInnerProps]
     }
     
-    @scala.inline
-    implicit class MobilePopupInnerPropsMutableBuilder[Self <: MobilePopupInnerProps] (val x: Self) extends AnyVal {
+    extension [Self <: MobilePopupInnerProps](x: Self) {
       
-      @scala.inline
-      def setMobile(value: MobileConfig): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+      inline def setMobile(value: MobileConfig): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
+      inline def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
     }
   }
   

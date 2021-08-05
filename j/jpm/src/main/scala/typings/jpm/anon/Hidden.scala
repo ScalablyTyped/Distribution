@@ -24,52 +24,37 @@ trait Hidden extends StObject {
 }
 object Hidden {
   
-  @scala.inline
-  def apply(items: js.Array[ToolbarItem], title: String): Hidden = {
+  inline def apply(items: js.Array[ToolbarItem], title: String): Hidden = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hidden]
   }
   
-  @scala.inline
-  implicit class HiddenMutableBuilder[Self <: Hidden] (val x: Self) extends AnyVal {
+  extension [Self <: Hidden](x: Self) {
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[ToolbarItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ToolbarItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ToolbarItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ToolbarItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setOnAttach(value: /* toolbar */ Toolbar => js.Any): Self = StObject.set(x, "onAttach", js.Any.fromFunction1(value))
+    inline def setOnAttach(value: /* toolbar */ Toolbar => js.Any): Self = StObject.set(x, "onAttach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnAttachUndefined: Self = StObject.set(x, "onAttach", js.undefined)
+    inline def setOnAttachUndefined: Self = StObject.set(x, "onAttach", js.undefined)
     
-    @scala.inline
-    def setOnDetach(value: /* toolbar */ Toolbar => js.Any): Self = StObject.set(x, "onDetach", js.Any.fromFunction1(value))
+    inline def setOnDetach(value: /* toolbar */ Toolbar => js.Any): Self = StObject.set(x, "onDetach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDetachUndefined: Self = StObject.set(x, "onDetach", js.undefined)
+    inline def setOnDetachUndefined: Self = StObject.set(x, "onDetach", js.undefined)
     
-    @scala.inline
-    def setOnHide(value: /* toolbar */ Toolbar => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
+    inline def setOnHide(value: /* toolbar */ Toolbar => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+    inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    @scala.inline
-    def setOnShow(value: /* toolbar */ Toolbar => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+    inline def setOnShow(value: /* toolbar */ Toolbar => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+    inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

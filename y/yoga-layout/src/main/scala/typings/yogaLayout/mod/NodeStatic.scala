@@ -16,8 +16,7 @@ trait NodeStatic extends StObject {
 }
 object NodeStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: () => YogaNode,
     createDefault: () => YogaNode,
     createWithConfig: YogaConfig => YogaNode,
@@ -27,19 +26,14 @@ object NodeStatic {
     __obj.asInstanceOf[NodeStatic]
   }
   
-  @scala.inline
-  implicit class NodeStaticMutableBuilder[Self <: NodeStatic] (val x: Self) extends AnyVal {
+  extension [Self <: NodeStatic](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => YogaNode): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => YogaNode): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateDefault(value: () => YogaNode): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
+    inline def setCreateDefault(value: () => YogaNode): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateWithConfig(value: YogaConfig => YogaNode): Self = StObject.set(x, "createWithConfig", js.Any.fromFunction1(value))
+    inline def setCreateWithConfig(value: YogaConfig => YogaNode): Self = StObject.set(x, "createWithConfig", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroy(value: YogaNode => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+    inline def setDestroy(value: YogaNode => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
   }
 }

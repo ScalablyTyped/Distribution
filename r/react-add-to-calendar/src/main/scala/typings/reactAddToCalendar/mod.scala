@@ -37,44 +37,32 @@ object mod extends Shortcut {
   }
   object AddToCalendarEvent {
     
-    @scala.inline
-    def apply(): AddToCalendarEvent = {
+    inline def apply(): AddToCalendarEvent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AddToCalendarEvent]
     }
     
-    @scala.inline
-    implicit class AddToCalendarEventMutableBuilder[Self <: AddToCalendarEvent] (val x: Self) extends AnyVal {
+    extension [Self <: AddToCalendarEvent](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEndTime(value: String | Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: String | Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setStartTime(value: String | Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: String | Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -108,92 +96,64 @@ object mod extends Shortcut {
   }
   object AddToCalendarProps {
     
-    @scala.inline
-    def apply(event: AddToCalendarEvent): AddToCalendarProps = {
+    inline def apply(event: AddToCalendarEvent): AddToCalendarProps = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddToCalendarProps]
     }
     
-    @scala.inline
-    implicit class AddToCalendarPropsMutableBuilder[Self <: AddToCalendarProps] (val x: Self) extends AnyVal {
+    extension [Self <: AddToCalendarProps](x: Self) {
       
-      @scala.inline
-      def setButtonClassClosed(value: String): Self = StObject.set(x, "buttonClassClosed", value.asInstanceOf[js.Any])
+      inline def setButtonClassClosed(value: String): Self = StObject.set(x, "buttonClassClosed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonClassClosedUndefined: Self = StObject.set(x, "buttonClassClosed", js.undefined)
+      inline def setButtonClassClosedUndefined: Self = StObject.set(x, "buttonClassClosed", js.undefined)
       
-      @scala.inline
-      def setButtonClassOpen(value: String): Self = StObject.set(x, "buttonClassOpen", value.asInstanceOf[js.Any])
+      inline def setButtonClassOpen(value: String): Self = StObject.set(x, "buttonClassOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonClassOpenUndefined: Self = StObject.set(x, "buttonClassOpen", js.undefined)
+      inline def setButtonClassOpenUndefined: Self = StObject.set(x, "buttonClassOpen", js.undefined)
       
-      @scala.inline
-      def setButtonIconClass(value: String): Self = StObject.set(x, "buttonIconClass", value.asInstanceOf[js.Any])
+      inline def setButtonIconClass(value: String): Self = StObject.set(x, "buttonIconClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonIconClassUndefined: Self = StObject.set(x, "buttonIconClass", js.undefined)
+      inline def setButtonIconClassUndefined: Self = StObject.set(x, "buttonIconClass", js.undefined)
       
-      @scala.inline
-      def setButtonLabel(value: String): Self = StObject.set(x, "buttonLabel", value.asInstanceOf[js.Any])
+      inline def setButtonLabel(value: String): Self = StObject.set(x, "buttonLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonLabelUndefined: Self = StObject.set(x, "buttonLabel", js.undefined)
+      inline def setButtonLabelUndefined: Self = StObject.set(x, "buttonLabel", js.undefined)
       
-      @scala.inline
-      def setButtonTemplate(value: js.Any): Self = StObject.set(x, "buttonTemplate", value.asInstanceOf[js.Any])
+      inline def setButtonTemplate(value: js.Any): Self = StObject.set(x, "buttonTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonTemplateUndefined: Self = StObject.set(x, "buttonTemplate", js.undefined)
+      inline def setButtonTemplateUndefined: Self = StObject.set(x, "buttonTemplate", js.undefined)
       
-      @scala.inline
-      def setButtonWrapperClass(value: String): Self = StObject.set(x, "buttonWrapperClass", value.asInstanceOf[js.Any])
+      inline def setButtonWrapperClass(value: String): Self = StObject.set(x, "buttonWrapperClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonWrapperClassUndefined: Self = StObject.set(x, "buttonWrapperClass", js.undefined)
+      inline def setButtonWrapperClassUndefined: Self = StObject.set(x, "buttonWrapperClass", js.undefined)
       
-      @scala.inline
-      def setDisplayItemIcons(value: Boolean): Self = StObject.set(x, "displayItemIcons", value.asInstanceOf[js.Any])
+      inline def setDisplayItemIcons(value: Boolean): Self = StObject.set(x, "displayItemIcons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayItemIconsUndefined: Self = StObject.set(x, "displayItemIcons", js.undefined)
+      inline def setDisplayItemIconsUndefined: Self = StObject.set(x, "displayItemIcons", js.undefined)
       
-      @scala.inline
-      def setDropdownClass(value: String): Self = StObject.set(x, "dropdownClass", value.asInstanceOf[js.Any])
+      inline def setDropdownClass(value: String): Self = StObject.set(x, "dropdownClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownClassUndefined: Self = StObject.set(x, "dropdownClass", js.undefined)
+      inline def setDropdownClassUndefined: Self = StObject.set(x, "dropdownClass", js.undefined)
       
-      @scala.inline
-      def setEvent(value: AddToCalendarEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: AddToCalendarEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListItems(value: js.Array[js.Any]): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
+      inline def setListItems(value: js.Array[js.Any]): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListItemsUndefined: Self = StObject.set(x, "listItems", js.undefined)
+      inline def setListItemsUndefined: Self = StObject.set(x, "listItems", js.undefined)
       
-      @scala.inline
-      def setListItemsVarargs(value: js.Any*): Self = StObject.set(x, "listItems", js.Array(value :_*))
+      inline def setListItemsVarargs(value: js.Any*): Self = StObject.set(x, "listItems", js.Array(value :_*))
       
-      @scala.inline
-      def setOptionsOpen(value: Boolean): Self = StObject.set(x, "optionsOpen", value.asInstanceOf[js.Any])
+      inline def setOptionsOpen(value: Boolean): Self = StObject.set(x, "optionsOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsOpenUndefined: Self = StObject.set(x, "optionsOpen", js.undefined)
+      inline def setOptionsOpenUndefined: Self = StObject.set(x, "optionsOpen", js.undefined)
       
-      @scala.inline
-      def setRootClass(value: String): Self = StObject.set(x, "rootClass", value.asInstanceOf[js.Any])
+      inline def setRootClass(value: String): Self = StObject.set(x, "rootClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootClassUndefined: Self = StObject.set(x, "rootClass", js.undefined)
+      inline def setRootClassUndefined: Self = StObject.set(x, "rootClass", js.undefined)
       
-      @scala.inline
-      def setUseFontAwesomeIcons(value: Boolean): Self = StObject.set(x, "useFontAwesomeIcons", value.asInstanceOf[js.Any])
+      inline def setUseFontAwesomeIcons(value: Boolean): Self = StObject.set(x, "useFontAwesomeIcons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFontAwesomeIconsUndefined: Self = StObject.set(x, "useFontAwesomeIcons", js.undefined)
+      inline def setUseFontAwesomeIconsUndefined: Self = StObject.set(x, "useFontAwesomeIcons", js.undefined)
     }
   }
   

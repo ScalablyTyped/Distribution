@@ -20,8 +20,7 @@ trait AbstractCollectionLikeMemberType
 }
 object AbstractCollectionLikeMemberType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arguments: js.Array[js.Any],
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
@@ -34,16 +33,12 @@ object AbstractCollectionLikeMemberType {
     __obj.asInstanceOf[AbstractCollectionLikeMemberType]
   }
   
-  @scala.inline
-  implicit class AbstractCollectionLikeMemberTypeMutableBuilder[Self <: AbstractCollectionLikeMemberType] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractCollectionLikeMemberType](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setAsync(value: `false`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: `false`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
   }
 }

@@ -37,34 +37,25 @@ trait IgColorPicker
 }
 object IgColorPicker {
   
-  @scala.inline
-  def apply(): IgColorPicker = {
+  inline def apply(): IgColorPicker = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgColorPicker]
   }
   
-  @scala.inline
-  implicit class IgColorPickerMutableBuilder[Self <: IgColorPicker] (val x: Self) extends AnyVal {
+  extension [Self <: IgColorPicker](x: Self) {
     
-    @scala.inline
-    def setColorSelected(value: (/* event */ Event, /* ui */ ColorSelectedEventUIParam) => Unit): Self = StObject.set(x, "colorSelected", js.Any.fromFunction2(value))
+    inline def setColorSelected(value: (/* event */ Event, /* ui */ ColorSelectedEventUIParam) => Unit): Self = StObject.set(x, "colorSelected", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColorSelectedUndefined: Self = StObject.set(x, "colorSelected", js.undefined)
+    inline def setColorSelectedUndefined: Self = StObject.set(x, "colorSelected", js.undefined)
     
-    @scala.inline
-    def setColors(value: String): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: String): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setStandardColors(value: js.Array[js.Any]): Self = StObject.set(x, "standardColors", value.asInstanceOf[js.Any])
+    inline def setStandardColors(value: js.Array[js.Any]): Self = StObject.set(x, "standardColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardColorsUndefined: Self = StObject.set(x, "standardColors", js.undefined)
+    inline def setStandardColorsUndefined: Self = StObject.set(x, "standardColors", js.undefined)
     
-    @scala.inline
-    def setStandardColorsVarargs(value: js.Any*): Self = StObject.set(x, "standardColors", js.Array(value :_*))
+    inline def setStandardColorsVarargs(value: js.Any*): Self = StObject.set(x, "standardColors", js.Array(value :_*))
   }
 }

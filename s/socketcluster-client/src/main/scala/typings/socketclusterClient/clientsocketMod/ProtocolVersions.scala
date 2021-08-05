@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProtocolVersions extends StObject
 object ProtocolVersions {
   
-  @scala.inline
-  def `1`: typings.socketclusterClient.socketclusterClientNumbers.`1` = 1.asInstanceOf[typings.socketclusterClient.socketclusterClientNumbers.`1`]
+  inline def `1`: typings.socketclusterClient.socketclusterClientNumbers.`1` = 1.asInstanceOf[typings.socketclusterClient.socketclusterClientNumbers.`1`]
   
-  @scala.inline
-  def `2`: typings.socketclusterClient.socketclusterClientNumbers.`2` = 2.asInstanceOf[typings.socketclusterClient.socketclusterClientNumbers.`2`]
+  inline def `2`: typings.socketclusterClient.socketclusterClientNumbers.`2` = 2.asInstanceOf[typings.socketclusterClient.socketclusterClientNumbers.`2`]
 }

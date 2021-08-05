@@ -22,19 +22,15 @@ trait SELinuxStrategyOptions extends StObject {
 }
 object SELinuxStrategyOptions {
   
-  @scala.inline
-  def apply(rule: String, seLinuxOptions: SELinuxOptions): SELinuxStrategyOptions = {
+  inline def apply(rule: String, seLinuxOptions: SELinuxOptions): SELinuxStrategyOptions = {
     val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any], seLinuxOptions = seLinuxOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SELinuxStrategyOptions]
   }
   
-  @scala.inline
-  implicit class SELinuxStrategyOptionsMutableBuilder[Self <: SELinuxStrategyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SELinuxStrategyOptions](x: Self) {
     
-    @scala.inline
-    def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeLinuxOptions(value: SELinuxOptions): Self = StObject.set(x, "seLinuxOptions", value.asInstanceOf[js.Any])
+    inline def setSeLinuxOptions(value: SELinuxOptions): Self = StObject.set(x, "seLinuxOptions", value.asInstanceOf[js.Any])
   }
 }

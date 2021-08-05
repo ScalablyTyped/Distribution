@@ -26,34 +26,25 @@ trait ocrDrivingLicenseOptions
 }
 object ocrDrivingLicenseOptions {
   
-  @scala.inline
-  def apply(image: String): ocrDrivingLicenseOptions = {
+  inline def apply(image: String): ocrDrivingLicenseOptions = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     __obj.asInstanceOf[ocrDrivingLicenseOptions]
   }
   
-  @scala.inline
-  implicit class ocrDrivingLicenseOptionsMutableBuilder[Self <: ocrDrivingLicenseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ocrDrivingLicenseOptions](x: Self) {
     
-    @scala.inline
-    def setDetect_direction(value: Boolean): Self = StObject.set(x, "detect_direction", value.asInstanceOf[js.Any])
+    inline def setDetect_direction(value: Boolean): Self = StObject.set(x, "detect_direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetect_directionUndefined: Self = StObject.set(x, "detect_direction", js.undefined)
+    inline def setDetect_directionUndefined: Self = StObject.set(x, "detect_direction", js.undefined)
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ ocrDrivingLicenseResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ ocrDrivingLicenseResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setUnified_valid_period(value: Boolean): Self = StObject.set(x, "unified_valid_period", value.asInstanceOf[js.Any])
+    inline def setUnified_valid_period(value: Boolean): Self = StObject.set(x, "unified_valid_period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnified_valid_periodUndefined: Self = StObject.set(x, "unified_valid_period", js.undefined)
+    inline def setUnified_valid_periodUndefined: Self = StObject.set(x, "unified_valid_period", js.undefined)
   }
 }

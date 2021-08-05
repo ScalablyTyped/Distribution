@@ -20,17 +20,14 @@ object typesTagResourceOutputMod {
   }
   object TagResourceOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): TagResourceOutput = {
+    inline def apply($metadata: ResponseMetadata): TagResourceOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagResourceOutput]
     }
     
-    @scala.inline
-    implicit class TagResourceOutputMutableBuilder[Self <: TagResourceOutput] (val x: Self) extends AnyVal {
+    extension [Self <: TagResourceOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

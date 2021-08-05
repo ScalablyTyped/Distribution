@@ -62,8 +62,7 @@ object mod {
     * @param GlobalPromise A constructor for Promises
     */
   /* static member */
-  @scala.inline
-  def configure(GlobalPromise: PromiseConstructor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(GlobalPromise.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configure(GlobalPromise: PromiseConstructor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(GlobalPromise.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait PromiseQueue extends StObject {
     
@@ -91,8 +90,7 @@ object mod {
   }
   object PromiseQueue {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: js.Function0[js.Promise[js.Any]] => js.Promise[js.Any],
       getPendingLength: () => Double,
       getQueueLength: () => Double
@@ -101,17 +99,13 @@ object mod {
       __obj.asInstanceOf[PromiseQueue]
     }
     
-    @scala.inline
-    implicit class PromiseQueueMutableBuilder[Self <: PromiseQueue] (val x: Self) extends AnyVal {
+    extension [Self <: PromiseQueue](x: Self) {
       
-      @scala.inline
-      def setAdd(value: js.Function0[js.Promise[js.Any]] => js.Promise[js.Any]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: js.Function0[js.Promise[js.Any]] => js.Promise[js.Any]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPendingLength(value: () => Double): Self = StObject.set(x, "getPendingLength", js.Any.fromFunction0(value))
+      inline def setGetPendingLength(value: () => Double): Self = StObject.set(x, "getPendingLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetQueueLength(value: () => Double): Self = StObject.set(x, "getQueueLength", js.Any.fromFunction0(value))
+      inline def setGetQueueLength(value: () => Double): Self = StObject.set(x, "getQueueLength", js.Any.fromFunction0(value))
     }
   }
   
@@ -124,17 +118,14 @@ object mod {
   }
   object QueueOptions {
     
-    @scala.inline
-    def apply(onEmpty: () => Unit): QueueOptions = {
+    inline def apply(onEmpty: () => Unit): QueueOptions = {
       val __obj = js.Dynamic.literal(onEmpty = js.Any.fromFunction0(onEmpty))
       __obj.asInstanceOf[QueueOptions]
     }
     
-    @scala.inline
-    implicit class QueueOptionsMutableBuilder[Self <: QueueOptions] (val x: Self) extends AnyVal {
+    extension [Self <: QueueOptions](x: Self) {
       
-      @scala.inline
-      def setOnEmpty(value: () => Unit): Self = StObject.set(x, "onEmpty", js.Any.fromFunction0(value))
+      inline def setOnEmpty(value: () => Unit): Self = StObject.set(x, "onEmpty", js.Any.fromFunction0(value))
     }
   }
 }

@@ -19,28 +19,21 @@ trait SchemaGooglePrivacyDlpV2Error extends StObject {
 }
 object SchemaGooglePrivacyDlpV2Error {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2Error = {
+  inline def apply(): SchemaGooglePrivacyDlpV2Error = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Error]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2ErrorMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Error] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2Error](x: Self) {
     
-    @scala.inline
-    def setDetails(value: SchemaGoogleRpcStatus): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: SchemaGoogleRpcStatus): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setTimestamps(value: js.Array[String]): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
+    inline def setTimestamps(value: js.Array[String]): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
+    inline def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
     
-    @scala.inline
-    def setTimestampsVarargs(value: String*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
+    inline def setTimestampsVarargs(value: String*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
   }
 }

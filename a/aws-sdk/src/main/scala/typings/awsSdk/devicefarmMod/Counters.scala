@@ -43,55 +43,39 @@ trait Counters extends StObject {
 }
 object Counters {
   
-  @scala.inline
-  def apply(): Counters = {
+  inline def apply(): Counters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Counters]
   }
   
-  @scala.inline
-  implicit class CountersMutableBuilder[Self <: Counters] (val x: Self) extends AnyVal {
+  extension [Self <: Counters](x: Self) {
     
-    @scala.inline
-    def setErrored(value: Integer): Self = StObject.set(x, "errored", value.asInstanceOf[js.Any])
+    inline def setErrored(value: Integer): Self = StObject.set(x, "errored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErroredUndefined: Self = StObject.set(x, "errored", js.undefined)
+    inline def setErroredUndefined: Self = StObject.set(x, "errored", js.undefined)
     
-    @scala.inline
-    def setFailed(value: Integer): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: Integer): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
+    inline def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
     
-    @scala.inline
-    def setPassed(value: Integer): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
+    inline def setPassed(value: Integer): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassedUndefined: Self = StObject.set(x, "passed", js.undefined)
+    inline def setPassedUndefined: Self = StObject.set(x, "passed", js.undefined)
     
-    @scala.inline
-    def setSkipped(value: Integer): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
+    inline def setSkipped(value: Integer): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkippedUndefined: Self = StObject.set(x, "skipped", js.undefined)
+    inline def setSkippedUndefined: Self = StObject.set(x, "skipped", js.undefined)
     
-    @scala.inline
-    def setStopped(value: Integer): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+    inline def setStopped(value: Integer): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoppedUndefined: Self = StObject.set(x, "stopped", js.undefined)
+    inline def setStoppedUndefined: Self = StObject.set(x, "stopped", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Integer): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Integer): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
-    @scala.inline
-    def setWarned(value: Integer): Self = StObject.set(x, "warned", value.asInstanceOf[js.Any])
+    inline def setWarned(value: Integer): Self = StObject.set(x, "warned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnedUndefined: Self = StObject.set(x, "warned", js.undefined)
+    inline def setWarnedUndefined: Self = StObject.set(x, "warned", js.undefined)
   }
 }

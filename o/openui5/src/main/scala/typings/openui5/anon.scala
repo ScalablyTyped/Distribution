@@ -30,26 +30,20 @@ object anon {
   }
   object TypeofBindingMode {
     
-    @scala.inline
-    def apply(Default: js.Any, OneTime: js.Any, OneWay: js.Any, TwoWay: js.Any): TypeofBindingMode = {
+    inline def apply(Default: js.Any, OneTime: js.Any, OneWay: js.Any, TwoWay: js.Any): TypeofBindingMode = {
       val __obj = js.Dynamic.literal(Default = Default.asInstanceOf[js.Any], OneTime = OneTime.asInstanceOf[js.Any], OneWay = OneWay.asInstanceOf[js.Any], TwoWay = TwoWay.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofBindingMode]
     }
     
-    @scala.inline
-    implicit class TypeofBindingModeMutableBuilder[Self <: TypeofBindingMode] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofBindingMode](x: Self) {
       
-      @scala.inline
-      def setDefault(value: js.Any): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Any): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOneTime(value: js.Any): Self = StObject.set(x, "OneTime", value.asInstanceOf[js.Any])
+      inline def setOneTime(value: js.Any): Self = StObject.set(x, "OneTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOneWay(value: js.Any): Self = StObject.set(x, "OneWay", value.asInstanceOf[js.Any])
+      inline def setOneWay(value: js.Any): Self = StObject.set(x, "OneWay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwoWay(value: js.Any): Self = StObject.set(x, "TwoWay", value.asInstanceOf[js.Any])
+      inline def setTwoWay(value: js.Any): Self = StObject.set(x, "TwoWay", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,20 +61,16 @@ object anon {
   }
   object TypeofBlockBackgroundType {
     
-    @scala.inline
-    def apply(Default: js.Any, Light: js.Any): TypeofBlockBackgroundType = {
+    inline def apply(Default: js.Any, Light: js.Any): TypeofBlockBackgroundType = {
       val __obj = js.Dynamic.literal(Default = Default.asInstanceOf[js.Any], Light = Light.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofBlockBackgroundType]
     }
     
-    @scala.inline
-    implicit class TypeofBlockBackgroundTypeMutableBuilder[Self <: TypeofBlockBackgroundType] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofBlockBackgroundType](x: Self) {
       
-      @scala.inline
-      def setDefault(value: js.Any): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Any): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLight(value: js.Any): Self = StObject.set(x, "Light", value.asInstanceOf[js.Any])
+      inline def setLight(value: js.Any): Self = StObject.set(x, "Light", value.asInstanceOf[js.Any])
     }
   }
   
@@ -170,29 +160,22 @@ object anon {
   }
   object TypeofCountMode {
     
-    @scala.inline
-    def apply(Both: js.Any, Inline: js.Any, InlineRepeat: js.Any, None: js.Any, Request: js.Any): TypeofCountMode = {
+    inline def apply(Both: js.Any, Inline: js.Any, InlineRepeat: js.Any, None: js.Any, Request: js.Any): TypeofCountMode = {
       val __obj = js.Dynamic.literal(Both = Both.asInstanceOf[js.Any], Inline = Inline.asInstanceOf[js.Any], InlineRepeat = InlineRepeat.asInstanceOf[js.Any], None = None.asInstanceOf[js.Any], Request = Request.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofCountMode]
     }
     
-    @scala.inline
-    implicit class TypeofCountModeMutableBuilder[Self <: TypeofCountMode] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofCountMode](x: Self) {
       
-      @scala.inline
-      def setBoth(value: js.Any): Self = StObject.set(x, "Both", value.asInstanceOf[js.Any])
+      inline def setBoth(value: js.Any): Self = StObject.set(x, "Both", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInline(value: js.Any): Self = StObject.set(x, "Inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: js.Any): Self = StObject.set(x, "Inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineRepeat(value: js.Any): Self = StObject.set(x, "InlineRepeat", value.asInstanceOf[js.Any])
+      inline def setInlineRepeat(value: js.Any): Self = StObject.set(x, "InlineRepeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNone(value: js.Any): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
+      inline def setNone(value: js.Any): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: js.Any): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: js.Any): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -260,8 +243,7 @@ object anon {
   }
   object TypeofDock {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BeginBottom: js.Any,
       BeginCenter: js.Any,
       BeginTop: js.Any,
@@ -282,53 +264,37 @@ object anon {
       __obj.asInstanceOf[TypeofDock]
     }
     
-    @scala.inline
-    implicit class TypeofDockMutableBuilder[Self <: TypeofDock] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofDock](x: Self) {
       
-      @scala.inline
-      def setBeginBottom(value: js.Any): Self = StObject.set(x, "BeginBottom", value.asInstanceOf[js.Any])
+      inline def setBeginBottom(value: js.Any): Self = StObject.set(x, "BeginBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeginCenter(value: js.Any): Self = StObject.set(x, "BeginCenter", value.asInstanceOf[js.Any])
+      inline def setBeginCenter(value: js.Any): Self = StObject.set(x, "BeginCenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeginTop(value: js.Any): Self = StObject.set(x, "BeginTop", value.asInstanceOf[js.Any])
+      inline def setBeginTop(value: js.Any): Self = StObject.set(x, "BeginTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterBottom(value: js.Any): Self = StObject.set(x, "CenterBottom", value.asInstanceOf[js.Any])
+      inline def setCenterBottom(value: js.Any): Self = StObject.set(x, "CenterBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterCenter(value: js.Any): Self = StObject.set(x, "CenterCenter", value.asInstanceOf[js.Any])
+      inline def setCenterCenter(value: js.Any): Self = StObject.set(x, "CenterCenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterTop(value: js.Any): Self = StObject.set(x, "CenterTop", value.asInstanceOf[js.Any])
+      inline def setCenterTop(value: js.Any): Self = StObject.set(x, "CenterTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndBottom(value: js.Any): Self = StObject.set(x, "EndBottom", value.asInstanceOf[js.Any])
+      inline def setEndBottom(value: js.Any): Self = StObject.set(x, "EndBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndCenter(value: js.Any): Self = StObject.set(x, "EndCenter", value.asInstanceOf[js.Any])
+      inline def setEndCenter(value: js.Any): Self = StObject.set(x, "EndCenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTop(value: js.Any): Self = StObject.set(x, "EndTop", value.asInstanceOf[js.Any])
+      inline def setEndTop(value: js.Any): Self = StObject.set(x, "EndTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftBottom(value: js.Any): Self = StObject.set(x, "LeftBottom", value.asInstanceOf[js.Any])
+      inline def setLeftBottom(value: js.Any): Self = StObject.set(x, "LeftBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftCenter(value: js.Any): Self = StObject.set(x, "LeftCenter", value.asInstanceOf[js.Any])
+      inline def setLeftCenter(value: js.Any): Self = StObject.set(x, "LeftCenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftTop(value: js.Any): Self = StObject.set(x, "LeftTop", value.asInstanceOf[js.Any])
+      inline def setLeftTop(value: js.Any): Self = StObject.set(x, "LeftTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightBottom(value: js.Any): Self = StObject.set(x, "RightBottom", value.asInstanceOf[js.Any])
+      inline def setRightBottom(value: js.Any): Self = StObject.set(x, "RightBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightCenter(value: js.Any): Self = StObject.set(x, "RightCenter", value.asInstanceOf[js.Any])
+      inline def setRightCenter(value: js.Any): Self = StObject.set(x, "RightCenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightTop(value: js.Any): Self = StObject.set(x, "RightTop", value.asInstanceOf[js.Any])
+      inline def setRightTop(value: js.Any): Self = StObject.set(x, "RightTop", value.asInstanceOf[js.Any])
     }
   }
   
@@ -388,8 +354,7 @@ object anon {
   }
   object TypeofFilterOperator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BT: js.Any,
       Contains: js.Any,
       EQ: js.Any,
@@ -405,38 +370,27 @@ object anon {
       __obj.asInstanceOf[TypeofFilterOperator]
     }
     
-    @scala.inline
-    implicit class TypeofFilterOperatorMutableBuilder[Self <: TypeofFilterOperator] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofFilterOperator](x: Self) {
       
-      @scala.inline
-      def setBT(value: js.Any): Self = StObject.set(x, "BT", value.asInstanceOf[js.Any])
+      inline def setBT(value: js.Any): Self = StObject.set(x, "BT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContains(value: js.Any): Self = StObject.set(x, "Contains", value.asInstanceOf[js.Any])
+      inline def setContains(value: js.Any): Self = StObject.set(x, "Contains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEQ(value: js.Any): Self = StObject.set(x, "EQ", value.asInstanceOf[js.Any])
+      inline def setEQ(value: js.Any): Self = StObject.set(x, "EQ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndsWith(value: js.Any): Self = StObject.set(x, "EndsWith", value.asInstanceOf[js.Any])
+      inline def setEndsWith(value: js.Any): Self = StObject.set(x, "EndsWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGE(value: js.Any): Self = StObject.set(x, "GE", value.asInstanceOf[js.Any])
+      inline def setGE(value: js.Any): Self = StObject.set(x, "GE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGT(value: js.Any): Self = StObject.set(x, "GT", value.asInstanceOf[js.Any])
+      inline def setGT(value: js.Any): Self = StObject.set(x, "GT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLE(value: js.Any): Self = StObject.set(x, "LE", value.asInstanceOf[js.Any])
+      inline def setLE(value: js.Any): Self = StObject.set(x, "LE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLT(value: js.Any): Self = StObject.set(x, "LT", value.asInstanceOf[js.Any])
+      inline def setLT(value: js.Any): Self = StObject.set(x, "LT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNE(value: js.Any): Self = StObject.set(x, "NE", value.asInstanceOf[js.Any])
+      inline def setNE(value: js.Any): Self = StObject.set(x, "NE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartsWith(value: js.Any): Self = StObject.set(x, "StartsWith", value.asInstanceOf[js.Any])
+      inline def setStartsWith(value: js.Any): Self = StObject.set(x, "StartsWith", value.asInstanceOf[js.Any])
     }
   }
   
@@ -454,20 +408,16 @@ object anon {
   }
   object TypeofFilterType {
     
-    @scala.inline
-    def apply(Application: js.Any, Control: js.Any): TypeofFilterType = {
+    inline def apply(Application: js.Any, Control: js.Any): TypeofFilterType = {
       val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Control = Control.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofFilterType]
     }
     
-    @scala.inline
-    implicit class TypeofFilterTypeMutableBuilder[Self <: TypeofFilterType] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofFilterType](x: Self) {
       
-      @scala.inline
-      def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+      inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControl(value: js.Any): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
+      inline def setControl(value: js.Any): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
     }
   }
   
@@ -495,26 +445,20 @@ object anon {
   }
   object TypeofReadyState {
     
-    @scala.inline
-    def apply(CLOSED: js.Any, CLOSING: js.Any, CONNECTING: js.Any, OPEN: js.Any): TypeofReadyState = {
+    inline def apply(CLOSED: js.Any, CLOSING: js.Any, CONNECTING: js.Any, OPEN: js.Any): TypeofReadyState = {
       val __obj = js.Dynamic.literal(CLOSED = CLOSED.asInstanceOf[js.Any], CLOSING = CLOSING.asInstanceOf[js.Any], CONNECTING = CONNECTING.asInstanceOf[js.Any], OPEN = OPEN.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofReadyState]
     }
     
-    @scala.inline
-    implicit class TypeofReadyStateMutableBuilder[Self <: TypeofReadyState] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofReadyState](x: Self) {
       
-      @scala.inline
-      def setCLOSED(value: js.Any): Self = StObject.set(x, "CLOSED", value.asInstanceOf[js.Any])
+      inline def setCLOSED(value: js.Any): Self = StObject.set(x, "CLOSED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLOSING(value: js.Any): Self = StObject.set(x, "CLOSING", value.asInstanceOf[js.Any])
+      inline def setCLOSING(value: js.Any): Self = StObject.set(x, "CLOSING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONNECTING(value: js.Any): Self = StObject.set(x, "CONNECTING", value.asInstanceOf[js.Any])
+      inline def setCONNECTING(value: js.Any): Self = StObject.set(x, "CONNECTING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPEN(value: js.Any): Self = StObject.set(x, "OPEN", value.asInstanceOf[js.Any])
+      inline def setOPEN(value: js.Any): Self = StObject.set(x, "OPEN", value.asInstanceOf[js.Any])
     }
   }
 }

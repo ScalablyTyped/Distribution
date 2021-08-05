@@ -21,8 +21,7 @@ trait WillMoveOrResize[Topic, Type]
 }
 object WillMoveOrResize {
   
-  @scala.inline
-  def apply[Topic, Type](
+  inline def apply[Topic, Type](
     height: Double,
     left: Double,
     monitorScaleFactor: Double,
@@ -38,22 +37,16 @@ object WillMoveOrResize {
     __obj.asInstanceOf[WillMoveOrResize[Topic, Type]]
   }
   
-  @scala.inline
-  implicit class WillMoveOrResizeMutableBuilder[Self <: WillMoveOrResize[?, ?], Topic, Type] (val x: Self & (WillMoveOrResize[Topic, Type])) extends AnyVal {
+  extension [Self <: WillMoveOrResize[?, ?], Topic, Type](x: Self & (WillMoveOrResize[Topic, Type])) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorScaleFactor(value: Double): Self = StObject.set(x, "monitorScaleFactor", value.asInstanceOf[js.Any])
+    inline def setMonitorScaleFactor(value: Double): Self = StObject.set(x, "monitorScaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

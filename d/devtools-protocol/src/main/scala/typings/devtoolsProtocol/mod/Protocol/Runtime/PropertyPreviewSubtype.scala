@@ -33,39 +33,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PropertyPreviewSubtype extends StObject
 object PropertyPreviewSubtype {
   
-  @scala.inline
-  def Array: array = "array".asInstanceOf[array]
+  inline def Array: array = "array".asInstanceOf[array]
   
-  @scala.inline
-  def Date: date = "date".asInstanceOf[date]
+  inline def Date: date = "date".asInstanceOf[date]
   
-  @scala.inline
-  def Error: error = "error".asInstanceOf[error]
+  inline def Error: error = "error".asInstanceOf[error]
   
-  @scala.inline
-  def Generator: generator = "generator".asInstanceOf[generator]
+  inline def Generator: generator = "generator".asInstanceOf[generator]
   
-  @scala.inline
-  def Iterator: iterator = "iterator".asInstanceOf[iterator]
+  inline def Iterator: iterator = "iterator".asInstanceOf[iterator]
   
-  @scala.inline
-  def Map: map = "map".asInstanceOf[map]
+  inline def Map: map = "map".asInstanceOf[map]
   
-  @scala.inline
-  def Node: node = "node".asInstanceOf[node]
+  inline def Node: node = "node".asInstanceOf[node]
   
-  @scala.inline
-  def Null: `null` = "null".asInstanceOf[`null`]
+  inline def Null: `null` = "null".asInstanceOf[`null`]
   
-  @scala.inline
-  def Regexp: regexp = "regexp".asInstanceOf[regexp]
+  inline def Regexp: regexp = "regexp".asInstanceOf[regexp]
   
-  @scala.inline
-  def Set: set = "set".asInstanceOf[set]
+  inline def Set: set = "set".asInstanceOf[set]
   
-  @scala.inline
-  def Weakmap: weakmap = "weakmap".asInstanceOf[weakmap]
+  inline def Weakmap: weakmap = "weakmap".asInstanceOf[weakmap]
   
-  @scala.inline
-  def Weakset: weakset = "weakset".asInstanceOf[weakset]
+  inline def Weakset: weakset = "weakset".asInstanceOf[weakset]
 }

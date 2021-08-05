@@ -18,19 +18,15 @@ trait GetDigestResponse extends StObject {
 }
 object GetDigestResponse {
   
-  @scala.inline
-  def apply(Digest: Digest, DigestTipAddress: ValueHolder): GetDigestResponse = {
+  inline def apply(Digest: Digest, DigestTipAddress: ValueHolder): GetDigestResponse = {
     val __obj = js.Dynamic.literal(Digest = Digest.asInstanceOf[js.Any], DigestTipAddress = DigestTipAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDigestResponse]
   }
   
-  @scala.inline
-  implicit class GetDigestResponseMutableBuilder[Self <: GetDigestResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDigestResponse](x: Self) {
     
-    @scala.inline
-    def setDigest(value: Digest): Self = StObject.set(x, "Digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: Digest): Self = StObject.set(x, "Digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestTipAddress(value: ValueHolder): Self = StObject.set(x, "DigestTipAddress", value.asInstanceOf[js.Any])
+    inline def setDigestTipAddress(value: ValueHolder): Self = StObject.set(x, "DigestTipAddress", value.asInstanceOf[js.Any])
   }
 }

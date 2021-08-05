@@ -11,19 +11,15 @@ trait UpdateActiveBreakpointRequest extends StObject {
 }
 object UpdateActiveBreakpointRequest {
   
-  @scala.inline
-  def apply(): UpdateActiveBreakpointRequest = {
+  inline def apply(): UpdateActiveBreakpointRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateActiveBreakpointRequest]
   }
   
-  @scala.inline
-  implicit class UpdateActiveBreakpointRequestMutableBuilder[Self <: UpdateActiveBreakpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateActiveBreakpointRequest](x: Self) {
     
-    @scala.inline
-    def setBreakpoint(value: Breakpoint): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+    inline def setBreakpoint(value: Breakpoint): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
+    inline def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
   }
 }

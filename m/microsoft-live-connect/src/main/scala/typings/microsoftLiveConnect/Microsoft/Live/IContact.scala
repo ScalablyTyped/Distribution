@@ -74,8 +74,7 @@ trait IContact extends StObject {
 }
 object IContact {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     birth_day: Double,
     birth_month: Double,
     email_hashes: js.Array[String],
@@ -92,43 +91,30 @@ object IContact {
     __obj.asInstanceOf[IContact]
   }
   
-  @scala.inline
-  implicit class IContactMutableBuilder[Self <: IContact] (val x: Self) extends AnyVal {
+  extension [Self <: IContact](x: Self) {
     
-    @scala.inline
-    def setBirth_day(value: Double): Self = StObject.set(x, "birth_day", value.asInstanceOf[js.Any])
+    inline def setBirth_day(value: Double): Self = StObject.set(x, "birth_day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBirth_month(value: Double): Self = StObject.set(x, "birth_month", value.asInstanceOf[js.Any])
+    inline def setBirth_month(value: Double): Self = StObject.set(x, "birth_month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail_hashes(value: js.Array[String]): Self = StObject.set(x, "email_hashes", value.asInstanceOf[js.Any])
+    inline def setEmail_hashes(value: js.Array[String]): Self = StObject.set(x, "email_hashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail_hashesVarargs(value: String*): Self = StObject.set(x, "email_hashes", js.Array(value :_*))
+    inline def setEmail_hashesVarargs(value: String*): Self = StObject.set(x, "email_hashes", js.Array(value :_*))
     
-    @scala.inline
-    def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
+    inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_favorite(value: Boolean): Self = StObject.set(x, "is_favorite", value.asInstanceOf[js.Any])
+    inline def setIs_favorite(value: Boolean): Self = StObject.set(x, "is_favorite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_friend(value: Boolean): Self = StObject.set(x, "is_friend", value.asInstanceOf[js.Any])
+    inline def setIs_friend(value: Boolean): Self = StObject.set(x, "is_friend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
+    inline def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated_time(value: String): Self = StObject.set(x, "updated_time", value.asInstanceOf[js.Any])
+    inline def setUpdated_time(value: String): Self = StObject.set(x, "updated_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
   }
 }

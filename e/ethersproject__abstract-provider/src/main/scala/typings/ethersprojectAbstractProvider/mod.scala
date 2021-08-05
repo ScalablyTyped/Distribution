@@ -47,8 +47,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isForkEvent(value: js.Any): /* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.ForkEvent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForkEvent")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.ForkEvent */ Boolean]
+    inline def isForkEvent(value: js.Any): /* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.ForkEvent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForkEvent")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.ForkEvent */ Boolean]
   }
   
   @JSImport("@ethersproject/abstract-provider", "Provider")
@@ -169,8 +168,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isProvider(value: js.Any): /* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.Provider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProvider")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.Provider */ Boolean]
+    inline def isProvider(value: js.Any): /* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.Provider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProvider")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.Provider */ Boolean]
   }
   
   @JSImport("@ethersproject/abstract-provider", "TransactionForkEvent")
@@ -203,8 +201,7 @@ object mod {
   }
   object Block {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       difficulty: Double,
       extraData: String,
       gasLimit: BigNumber,
@@ -221,14 +218,11 @@ object mod {
       __obj.asInstanceOf[Block]
     }
     
-    @scala.inline
-    implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+    extension [Self <: Block](x: Self) {
       
-      @scala.inline
-      def setTransactions(value: js.Array[String]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
+      inline def setTransactions(value: js.Array[String]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionsVarargs(value: String*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+      inline def setTransactionsVarargs(value: String*): Self = StObject.set(x, "transactions", js.Array(value :_*))
     }
   }
   
@@ -242,8 +236,7 @@ object mod {
   }
   object BlockWithTransactions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       difficulty: Double,
       extraData: String,
       gasLimit: BigNumber,
@@ -260,14 +253,11 @@ object mod {
       __obj.asInstanceOf[BlockWithTransactions]
     }
     
-    @scala.inline
-    implicit class BlockWithTransactionsMutableBuilder[Self <: BlockWithTransactions] (val x: Self) extends AnyVal {
+    extension [Self <: BlockWithTransactions](x: Self) {
       
-      @scala.inline
-      def setTransactions(value: js.Array[TransactionResponse]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
+      inline def setTransactions(value: js.Array[TransactionResponse]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionsVarargs(value: TransactionResponse*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+      inline def setTransactionsVarargs(value: TransactionResponse*): Self = StObject.set(x, "transactions", js.Array(value :_*))
     }
   }
   
@@ -281,29 +271,22 @@ object mod {
   }
   object EventFilter {
     
-    @scala.inline
-    def apply(): EventFilter = {
+    inline def apply(): EventFilter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventFilter]
     }
     
-    @scala.inline
-    implicit class EventFilterMutableBuilder[Self <: EventFilter] (val x: Self) extends AnyVal {
+    extension [Self <: EventFilter](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      @scala.inline
-      def setTopics(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+      inline def setTopics(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
+      inline def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
       
-      @scala.inline
-      def setTopicsVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "topics", js.Array(value :_*))
+      inline def setTopicsVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "topics", js.Array(value :_*))
     }
   }
   
@@ -325,26 +308,20 @@ object mod {
   }
   object Filter {
     
-    @scala.inline
-    def apply(): Filter = {
+    inline def apply(): Filter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Filter]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+    extension [Self <: Filter](x: Self) {
       
-      @scala.inline
-      def setFromBlock(value: BlockTag): Self = StObject.set(x, "fromBlock", value.asInstanceOf[js.Any])
+      inline def setFromBlock(value: BlockTag): Self = StObject.set(x, "fromBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromBlockUndefined: Self = StObject.set(x, "fromBlock", js.undefined)
+      inline def setFromBlockUndefined: Self = StObject.set(x, "fromBlock", js.undefined)
       
-      @scala.inline
-      def setToBlock(value: BlockTag): Self = StObject.set(x, "toBlock", value.asInstanceOf[js.Any])
+      inline def setToBlock(value: BlockTag): Self = StObject.set(x, "toBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToBlockUndefined: Self = StObject.set(x, "toBlock", js.undefined)
+      inline def setToBlockUndefined: Self = StObject.set(x, "toBlock", js.undefined)
     }
   }
   
@@ -356,20 +333,16 @@ object mod {
   }
   object FilterByBlockHash {
     
-    @scala.inline
-    def apply(): FilterByBlockHash = {
+    inline def apply(): FilterByBlockHash = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FilterByBlockHash]
     }
     
-    @scala.inline
-    implicit class FilterByBlockHashMutableBuilder[Self <: FilterByBlockHash] (val x: Self) extends AnyVal {
+    extension [Self <: FilterByBlockHash](x: Self) {
       
-      @scala.inline
-      def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
+      inline def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockHashUndefined: Self = StObject.set(x, "blockHash", js.undefined)
+      inline def setBlockHashUndefined: Self = StObject.set(x, "blockHash", js.undefined)
     }
   }
   
@@ -401,8 +374,7 @@ object mod {
   }
   object Log {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       blockHash: String,
       blockNumber: Double,
@@ -417,38 +389,27 @@ object mod {
       __obj.asInstanceOf[Log]
     }
     
-    @scala.inline
-    implicit class LogMutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
+    extension [Self <: Log](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
+      inline def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockNumber(value: Double): Self = StObject.set(x, "blockNumber", value.asInstanceOf[js.Any])
+      inline def setBlockNumber(value: Double): Self = StObject.set(x, "blockNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogIndex(value: Double): Self = StObject.set(x, "logIndex", value.asInstanceOf[js.Any])
+      inline def setLogIndex(value: Double): Self = StObject.set(x, "logIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+      inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+      inline def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value :_*))
+      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value :_*))
       
-      @scala.inline
-      def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
+      inline def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionIndex(value: Double): Self = StObject.set(x, "transactionIndex", value.asInstanceOf[js.Any])
+      inline def setTransactionIndex(value: Double): Self = StObject.set(x, "transactionIndex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -486,8 +447,7 @@ object mod {
   }
   object TransactionReceipt {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blockHash: String,
       blockNumber: Double,
       byzantium: Boolean,
@@ -506,62 +466,43 @@ object mod {
       __obj.asInstanceOf[TransactionReceipt]
     }
     
-    @scala.inline
-    implicit class TransactionReceiptMutableBuilder[Self <: TransactionReceipt] (val x: Self) extends AnyVal {
+    extension [Self <: TransactionReceipt](x: Self) {
       
-      @scala.inline
-      def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
+      inline def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockNumber(value: Double): Self = StObject.set(x, "blockNumber", value.asInstanceOf[js.Any])
+      inline def setBlockNumber(value: Double): Self = StObject.set(x, "blockNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setByzantium(value: Boolean): Self = StObject.set(x, "byzantium", value.asInstanceOf[js.Any])
+      inline def setByzantium(value: Boolean): Self = StObject.set(x, "byzantium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmations(value: Double): Self = StObject.set(x, "confirmations", value.asInstanceOf[js.Any])
+      inline def setConfirmations(value: Double): Self = StObject.set(x, "confirmations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContractAddress(value: String): Self = StObject.set(x, "contractAddress", value.asInstanceOf[js.Any])
+      inline def setContractAddress(value: String): Self = StObject.set(x, "contractAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCumulativeGasUsed(value: BigNumber): Self = StObject.set(x, "cumulativeGasUsed", value.asInstanceOf[js.Any])
+      inline def setCumulativeGasUsed(value: BigNumber): Self = StObject.set(x, "cumulativeGasUsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasUsed(value: BigNumber): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
+      inline def setGasUsed(value: BigNumber): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogs(value: js.Array[Log]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+      inline def setLogs(value: js.Array[Log]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogsBloom(value: String): Self = StObject.set(x, "logsBloom", value.asInstanceOf[js.Any])
+      inline def setLogsBloom(value: String): Self = StObject.set(x, "logsBloom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogsVarargs(value: Log*): Self = StObject.set(x, "logs", js.Array(value :_*))
+      inline def setLogsVarargs(value: Log*): Self = StObject.set(x, "logs", js.Array(value :_*))
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
+      inline def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionIndex(value: Double): Self = StObject.set(x, "transactionIndex", value.asInstanceOf[js.Any])
+      inline def setTransactionIndex(value: Double): Self = StObject.set(x, "transactionIndex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -585,62 +526,44 @@ object mod {
   }
   object TransactionRequest {
     
-    @scala.inline
-    def apply(): TransactionRequest = {
+    inline def apply(): TransactionRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransactionRequest]
     }
     
-    @scala.inline
-    implicit class TransactionRequestMutableBuilder[Self <: TransactionRequest] (val x: Self) extends AnyVal {
+    extension [Self <: TransactionRequest](x: Self) {
       
-      @scala.inline
-      def setChainId(value: Double): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
+      inline def setChainId(value: Double): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChainIdUndefined: Self = StObject.set(x, "chainId", js.undefined)
+      inline def setChainIdUndefined: Self = StObject.set(x, "chainId", js.undefined)
       
-      @scala.inline
-      def setData(value: BytesLike): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: BytesLike): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setGasLimit(value: BigNumberish): Self = StObject.set(x, "gasLimit", value.asInstanceOf[js.Any])
+      inline def setGasLimit(value: BigNumberish): Self = StObject.set(x, "gasLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasLimitUndefined: Self = StObject.set(x, "gasLimit", js.undefined)
+      inline def setGasLimitUndefined: Self = StObject.set(x, "gasLimit", js.undefined)
       
-      @scala.inline
-      def setGasPrice(value: BigNumberish): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
+      inline def setGasPrice(value: BigNumberish): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
+      inline def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
       
-      @scala.inline
-      def setNonce(value: BigNumberish): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: BigNumberish): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
       
-      @scala.inline
-      def setValue(value: BigNumberish): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: BigNumberish): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -692,8 +615,7 @@ object mod {
   }
   object _Block {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       difficulty: Double,
       extraData: String,
       gasLimit: BigNumber,
@@ -709,38 +631,27 @@ object mod {
       __obj.asInstanceOf[_Block]
     }
     
-    @scala.inline
-    implicit class _BlockMutableBuilder[Self <: _Block] (val x: Self) extends AnyVal {
+    extension [Self <: _Block](x: Self) {
       
-      @scala.inline
-      def setDifficulty(value: Double): Self = StObject.set(x, "difficulty", value.asInstanceOf[js.Any])
+      inline def setDifficulty(value: Double): Self = StObject.set(x, "difficulty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraData(value: String): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+      inline def setExtraData(value: String): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasLimit(value: BigNumber): Self = StObject.set(x, "gasLimit", value.asInstanceOf[js.Any])
+      inline def setGasLimit(value: BigNumber): Self = StObject.set(x, "gasLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasUsed(value: BigNumber): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
+      inline def setGasUsed(value: BigNumber): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiner(value: String): Self = StObject.set(x, "miner", value.asInstanceOf[js.Any])
+      inline def setMiner(value: String): Self = StObject.set(x, "miner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentHash(value: String): Self = StObject.set(x, "parentHash", value.asInstanceOf[js.Any])
+      inline def setParentHash(value: String): Self = StObject.set(x, "parentHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   

@@ -39,18 +39,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ButtonType extends StObject
 object ButtonType {
   
-  @scala.inline
-  def buy: typings.googlepay.googlepayStrings.buy = "buy".asInstanceOf[typings.googlepay.googlepayStrings.buy]
+  inline def buy: typings.googlepay.googlepayStrings.buy = "buy".asInstanceOf[typings.googlepay.googlepayStrings.buy]
   
-  @scala.inline
-  def donate: typings.googlepay.googlepayStrings.donate = "donate".asInstanceOf[typings.googlepay.googlepayStrings.donate]
+  inline def donate: typings.googlepay.googlepayStrings.donate = "donate".asInstanceOf[typings.googlepay.googlepayStrings.donate]
   
-  @scala.inline
-  def long: typings.googlepay.googlepayStrings.long = "long".asInstanceOf[typings.googlepay.googlepayStrings.long]
+  inline def long: typings.googlepay.googlepayStrings.long = "long".asInstanceOf[typings.googlepay.googlepayStrings.long]
   
-  @scala.inline
-  def plain: typings.googlepay.googlepayStrings.plain = "plain".asInstanceOf[typings.googlepay.googlepayStrings.plain]
+  inline def plain: typings.googlepay.googlepayStrings.plain = "plain".asInstanceOf[typings.googlepay.googlepayStrings.plain]
   
-  @scala.inline
-  def short: typings.googlepay.googlepayStrings.short = "short".asInstanceOf[typings.googlepay.googlepayStrings.short]
+  inline def short: typings.googlepay.googlepayStrings.short = "short".asInstanceOf[typings.googlepay.googlepayStrings.short]
 }

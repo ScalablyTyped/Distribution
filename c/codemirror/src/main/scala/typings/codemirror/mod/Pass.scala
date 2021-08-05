@@ -11,6 +11,5 @@ object Pass {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def toString_(): CodeMirrorDotPASS = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[CodeMirrorDotPASS]
+  inline def toString_(): CodeMirrorDotPASS = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[CodeMirrorDotPASS]
 }

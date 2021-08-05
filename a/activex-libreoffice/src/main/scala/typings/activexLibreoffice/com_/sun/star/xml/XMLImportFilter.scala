@@ -23,8 +23,7 @@ trait XMLImportFilter
      with XDocumentHandler
 object XMLImportFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     acquire: () => Unit,
     cancel: () => Unit,

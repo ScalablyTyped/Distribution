@@ -12,25 +12,19 @@ trait PaymentTerm extends StObject {
 }
 object PaymentTerm {
   
-  @scala.inline
-  def apply(): PaymentTerm = {
+  inline def apply(): PaymentTerm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaymentTerm]
   }
   
-  @scala.inline
-  implicit class PaymentTermMutableBuilder[Self <: PaymentTerm] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentTerm](x: Self) {
     
-    @scala.inline
-    def setDue_date(value: String): Self = StObject.set(x, "due_date", value.asInstanceOf[js.Any])
+    inline def setDue_date(value: String): Self = StObject.set(x, "due_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDue_dateUndefined: Self = StObject.set(x, "due_date", js.undefined)
+    inline def setDue_dateUndefined: Self = StObject.set(x, "due_date", js.undefined)
     
-    @scala.inline
-    def setTerm_type(value: String): Self = StObject.set(x, "term_type", value.asInstanceOf[js.Any])
+    inline def setTerm_type(value: String): Self = StObject.set(x, "term_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerm_typeUndefined: Self = StObject.set(x, "term_type", js.undefined)
+    inline def setTerm_typeUndefined: Self = StObject.set(x, "term_type", js.undefined)
   }
 }

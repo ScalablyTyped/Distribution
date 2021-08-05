@@ -23,32 +23,24 @@ trait ARIAPropertyDefinition extends StObject {
 }
 object ARIAPropertyDefinition {
   
-  @scala.inline
-  def apply(`type`: string | id | idlist | integer | number | boolean | token | tokenlist | tristate): ARIAPropertyDefinition = {
+  inline def apply(`type`: string | id | idlist | integer | number | boolean | token | tokenlist | tristate): ARIAPropertyDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARIAPropertyDefinition]
   }
   
-  @scala.inline
-  implicit class ARIAPropertyDefinitionMutableBuilder[Self <: ARIAPropertyDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ARIAPropertyDefinition](x: Self) {
     
-    @scala.inline
-    def setAllowundefined(value: Boolean): Self = StObject.set(x, "allowundefined", value.asInstanceOf[js.Any])
+    inline def setAllowundefined(value: Boolean): Self = StObject.set(x, "allowundefined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowundefinedUndefined: Self = StObject.set(x, "allowundefined", js.undefined)
+    inline def setAllowundefinedUndefined: Self = StObject.set(x, "allowundefined", js.undefined)
     
-    @scala.inline
-    def setType(value: string | id | idlist | integer | number | boolean | token | tokenlist | tristate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: string | id | idlist | integer | number | boolean | token | tokenlist | tristate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Array[String | Boolean]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[String | Boolean]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setValueVarargs(value: (String | Boolean)*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: (String | Boolean)*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

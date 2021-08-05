@@ -26,8 +26,7 @@ object pinAddMod {
     @js.native
     def cidBase: Choices = js.native
     
-    @scala.inline
-    def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
+    inline def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/pin/add", "builder.metadata")
     @js.native
@@ -37,23 +36,19 @@ object pinAddMod {
     @js.native
     def metadataJson: CoerceDescribeString = js.native
     
-    @scala.inline
-    def metadataJson_=(x: CoerceDescribeString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata-json")(x.asInstanceOf[js.Any])
+    inline def metadataJson_=(x: CoerceDescribeString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata-json")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def metadata_=(x: CoerceDescribeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: CoerceDescribeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/pin/add", "builder.recursive")
     @js.native
     def recursive: AliasString = js.native
-    @scala.inline
-    def recursive_=(x: AliasString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recursive")(x.asInstanceOf[js.Any])
+    inline def recursive_=(x: AliasString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recursive")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/pin/add", "builder.timeout")
     @js.native
     def timeout: CoerceType = js.native
-    @scala.inline
-    def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ipfs-cli/dist/src/commands/pin/add", "command")
@@ -64,6 +59,5 @@ object pinAddMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasCtxIpfsPathRecursiveCidBaseTimeoutMetadataMetadataJson: Metadata): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtxIpfsPathRecursiveCidBaseTimeoutMetadataMetadataJson.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasCtxIpfsPathRecursiveCidBaseTimeoutMetadataMetadataJson: Metadata): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtxIpfsPathRecursiveCidBaseTimeoutMetadataMetadataJson.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

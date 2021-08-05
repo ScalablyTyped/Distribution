@@ -12,19 +12,15 @@ trait RouteSettings
 }
 object RouteSettings {
   
-  @scala.inline
-  def apply(): RouteSettings = {
+  inline def apply(): RouteSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteSettings]
   }
   
-  @scala.inline
-  implicit class RouteSettingsMutableBuilder[Self <: RouteSettings] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSettings](x: Self) {
     
-    @scala.inline
-    def setAuth(value: AuthSettings): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: AuthSettings): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
   }
 }

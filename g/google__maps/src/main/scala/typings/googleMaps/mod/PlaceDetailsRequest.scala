@@ -43,43 +43,31 @@ trait PlaceDetailsRequest extends StObject {
 }
 object PlaceDetailsRequest {
   
-  @scala.inline
-  def apply(placeid: String): PlaceDetailsRequest = {
+  inline def apply(placeid: String): PlaceDetailsRequest = {
     val __obj = js.Dynamic.literal(placeid = placeid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceDetailsRequest]
   }
   
-  @scala.inline
-  implicit class PlaceDetailsRequestMutableBuilder[Self <: PlaceDetailsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceDetailsRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[PlaceDetailsRequestField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[PlaceDetailsRequestField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: PlaceDetailsRequestField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: PlaceDetailsRequestField*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setPlaceid(value: String): Self = StObject.set(x, "placeid", value.asInstanceOf[js.Any])
+    inline def setPlaceid(value: String): Self = StObject.set(x, "placeid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setSessiontoken(value: String): Self = StObject.set(x, "sessiontoken", value.asInstanceOf[js.Any])
+    inline def setSessiontoken(value: String): Self = StObject.set(x, "sessiontoken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessiontokenUndefined: Self = StObject.set(x, "sessiontoken", js.undefined)
+    inline def setSessiontokenUndefined: Self = StObject.set(x, "sessiontoken", js.undefined)
   }
 }

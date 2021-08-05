@@ -10,16 +10,13 @@ trait ClaimsOverrideDetails extends StObject {
 }
 object ClaimsOverrideDetails {
   
-  @scala.inline
-  def apply(claimsOverrideDetails: ClaimsToSuppress): ClaimsOverrideDetails = {
+  inline def apply(claimsOverrideDetails: ClaimsToSuppress): ClaimsOverrideDetails = {
     val __obj = js.Dynamic.literal(claimsOverrideDetails = claimsOverrideDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimsOverrideDetails]
   }
   
-  @scala.inline
-  implicit class ClaimsOverrideDetailsMutableBuilder[Self <: ClaimsOverrideDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ClaimsOverrideDetails](x: Self) {
     
-    @scala.inline
-    def setClaimsOverrideDetails(value: ClaimsToSuppress): Self = StObject.set(x, "claimsOverrideDetails", value.asInstanceOf[js.Any])
+    inline def setClaimsOverrideDetails(value: ClaimsToSuppress): Self = StObject.set(x, "claimsOverrideDetails", value.asInstanceOf[js.Any])
   }
 }

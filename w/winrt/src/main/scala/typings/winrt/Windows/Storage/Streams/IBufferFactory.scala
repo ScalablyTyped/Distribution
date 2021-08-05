@@ -10,16 +10,13 @@ trait IBufferFactory extends StObject {
 }
 object IBufferFactory {
   
-  @scala.inline
-  def apply(create: Double => Buffer): IBufferFactory = {
+  inline def apply(create: Double => Buffer): IBufferFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[IBufferFactory]
   }
   
-  @scala.inline
-  implicit class IBufferFactoryMutableBuilder[Self <: IBufferFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IBufferFactory](x: Self) {
     
-    @scala.inline
-    def setCreate(value: Double => Buffer): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: Double => Buffer): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

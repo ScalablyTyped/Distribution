@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlLookFor extends StObject
 object XlLookFor {
   
-  @scala.inline
-  def xlLookForBlanks: `0` = 0.asInstanceOf[`0`]
+  inline def xlLookForBlanks: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlLookForErrors: `1` = 1.asInstanceOf[`1`]
+  inline def xlLookForErrors: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlLookForFormulas: `2` = 2.asInstanceOf[`2`]
+  inline def xlLookForFormulas: `2` = 2.asInstanceOf[`2`]
 }

@@ -52,49 +52,35 @@ trait SchemaProbe extends StObject {
 }
 object SchemaProbe {
   
-  @scala.inline
-  def apply(): SchemaProbe = {
+  inline def apply(): SchemaProbe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProbe]
   }
   
-  @scala.inline
-  implicit class SchemaProbeMutableBuilder[Self <: SchemaProbe] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProbe](x: Self) {
     
-    @scala.inline
-    def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
+    inline def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
+    inline def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
     
-    @scala.inline
-    def setHandler(value: SchemaHandler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: SchemaHandler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+    inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
-    @scala.inline
-    def setInitialDelaySeconds(value: Double): Self = StObject.set(x, "initialDelaySeconds", value.asInstanceOf[js.Any])
+    inline def setInitialDelaySeconds(value: Double): Self = StObject.set(x, "initialDelaySeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialDelaySecondsUndefined: Self = StObject.set(x, "initialDelaySeconds", js.undefined)
+    inline def setInitialDelaySecondsUndefined: Self = StObject.set(x, "initialDelaySeconds", js.undefined)
     
-    @scala.inline
-    def setPeriodSeconds(value: Double): Self = StObject.set(x, "periodSeconds", value.asInstanceOf[js.Any])
+    inline def setPeriodSeconds(value: Double): Self = StObject.set(x, "periodSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodSecondsUndefined: Self = StObject.set(x, "periodSeconds", js.undefined)
+    inline def setPeriodSecondsUndefined: Self = StObject.set(x, "periodSeconds", js.undefined)
     
-    @scala.inline
-    def setSuccessThreshold(value: Double): Self = StObject.set(x, "successThreshold", value.asInstanceOf[js.Any])
+    inline def setSuccessThreshold(value: Double): Self = StObject.set(x, "successThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessThresholdUndefined: Self = StObject.set(x, "successThreshold", js.undefined)
+    inline def setSuccessThresholdUndefined: Self = StObject.set(x, "successThreshold", js.undefined)
     
-    @scala.inline
-    def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
+    inline def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
   }
 }

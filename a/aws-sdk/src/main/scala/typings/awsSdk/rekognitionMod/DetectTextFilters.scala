@@ -15,28 +15,21 @@ trait DetectTextFilters extends StObject {
 }
 object DetectTextFilters {
   
-  @scala.inline
-  def apply(): DetectTextFilters = {
+  inline def apply(): DetectTextFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectTextFilters]
   }
   
-  @scala.inline
-  implicit class DetectTextFiltersMutableBuilder[Self <: DetectTextFilters] (val x: Self) extends AnyVal {
+  extension [Self <: DetectTextFilters](x: Self) {
     
-    @scala.inline
-    def setRegionsOfInterest(value: RegionsOfInterest): Self = StObject.set(x, "RegionsOfInterest", value.asInstanceOf[js.Any])
+    inline def setRegionsOfInterest(value: RegionsOfInterest): Self = StObject.set(x, "RegionsOfInterest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsOfInterestUndefined: Self = StObject.set(x, "RegionsOfInterest", js.undefined)
+    inline def setRegionsOfInterestUndefined: Self = StObject.set(x, "RegionsOfInterest", js.undefined)
     
-    @scala.inline
-    def setRegionsOfInterestVarargs(value: RegionOfInterest*): Self = StObject.set(x, "RegionsOfInterest", js.Array(value :_*))
+    inline def setRegionsOfInterestVarargs(value: RegionOfInterest*): Self = StObject.set(x, "RegionsOfInterest", js.Array(value :_*))
     
-    @scala.inline
-    def setWordFilter(value: DetectionFilter): Self = StObject.set(x, "WordFilter", value.asInstanceOf[js.Any])
+    inline def setWordFilter(value: DetectionFilter): Self = StObject.set(x, "WordFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordFilterUndefined: Self = StObject.set(x, "WordFilter", js.undefined)
+    inline def setWordFilterUndefined: Self = StObject.set(x, "WordFilter", js.undefined)
   }
 }

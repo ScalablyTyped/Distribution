@@ -23,28 +23,21 @@ trait StartSessionRequest extends StObject {
 }
 object StartSessionRequest {
   
-  @scala.inline
-  def apply(Target: SessionTarget): StartSessionRequest = {
+  inline def apply(Target: SessionTarget): StartSessionRequest = {
     val __obj = js.Dynamic.literal(Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSessionRequest]
   }
   
-  @scala.inline
-  implicit class StartSessionRequestMutableBuilder[Self <: StartSessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartSessionRequest](x: Self) {
     
-    @scala.inline
-    def setDocumentName(value: DocumentARN): Self = StObject.set(x, "DocumentName", value.asInstanceOf[js.Any])
+    inline def setDocumentName(value: DocumentARN): Self = StObject.set(x, "DocumentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentNameUndefined: Self = StObject.set(x, "DocumentName", js.undefined)
+    inline def setDocumentNameUndefined: Self = StObject.set(x, "DocumentName", js.undefined)
     
-    @scala.inline
-    def setParameters(value: SessionManagerParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: SessionManagerParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    @scala.inline
-    def setTarget(value: SessionTarget): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: SessionTarget): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

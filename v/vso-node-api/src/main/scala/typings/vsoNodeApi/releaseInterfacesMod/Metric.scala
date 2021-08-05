@@ -12,19 +12,15 @@ trait Metric extends StObject {
 }
 object Metric {
   
-  @scala.inline
-  def apply(name: String, value: Double): Metric = {
+  inline def apply(name: String, value: Double): Metric = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metric]
   }
   
-  @scala.inline
-  implicit class MetricMutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
+  extension [Self <: Metric](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

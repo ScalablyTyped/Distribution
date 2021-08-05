@@ -31,14 +31,11 @@ object mod extends Shortcut {
   trait ComparisonResult extends StObject
   object ComparisonResult {
     
-    @scala.inline
-    def `-1`: typings.jsQuantities.jsQuantitiesNumbers.`-1` = -1.asInstanceOf[typings.jsQuantities.jsQuantitiesNumbers.`-1`]
+    inline def `-1`: typings.jsQuantities.jsQuantitiesNumbers.`-1` = -1.asInstanceOf[typings.jsQuantities.jsQuantitiesNumbers.`-1`]
     
-    @scala.inline
-    def `0`: typings.jsQuantities.jsQuantitiesNumbers.`0` = 0.asInstanceOf[typings.jsQuantities.jsQuantitiesNumbers.`0`]
+    inline def `0`: typings.jsQuantities.jsQuantitiesNumbers.`0` = 0.asInstanceOf[typings.jsQuantities.jsQuantitiesNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.jsQuantities.jsQuantitiesNumbers.`1` = 1.asInstanceOf[typings.jsQuantities.jsQuantitiesNumbers.`1`]
+    inline def `1`: typings.jsQuantities.jsQuantitiesNumbers.`1` = 1.asInstanceOf[typings.jsQuantities.jsQuantitiesNumbers.`1`]
   }
   
   @js.native

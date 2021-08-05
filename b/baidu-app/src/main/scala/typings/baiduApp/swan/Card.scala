@@ -15,25 +15,19 @@ trait Card extends StObject {
 }
 object Card {
   
-  @scala.inline
-  def apply(cardExt: String, cardId: String): Card = {
+  inline def apply(cardExt: String, cardId: String): Card = {
     val __obj = js.Dynamic.literal(cardExt = cardExt.asInstanceOf[js.Any], cardId = cardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Card]
   }
   
-  @scala.inline
-  implicit class CardMutableBuilder[Self <: Card] (val x: Self) extends AnyVal {
+  extension [Self <: Card](x: Self) {
     
-    @scala.inline
-    def setCardExt(value: String): Self = StObject.set(x, "cardExt", value.asInstanceOf[js.Any])
+    inline def setCardExt(value: String): Self = StObject.set(x, "cardExt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
+    inline def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
   }
 }

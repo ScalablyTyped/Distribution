@@ -17,25 +17,19 @@ trait TabsActivationUIParams extends StObject {
 }
 object TabsActivationUIParams {
   
-  @scala.inline
-  def apply(newPanel: JQuery, newTab: JQuery, oldPanel: JQuery, oldTab: JQuery): TabsActivationUIParams = {
+  inline def apply(newPanel: JQuery, newTab: JQuery, oldPanel: JQuery, oldTab: JQuery): TabsActivationUIParams = {
     val __obj = js.Dynamic.literal(newPanel = newPanel.asInstanceOf[js.Any], newTab = newTab.asInstanceOf[js.Any], oldPanel = oldPanel.asInstanceOf[js.Any], oldTab = oldTab.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsActivationUIParams]
   }
   
-  @scala.inline
-  implicit class TabsActivationUIParamsMutableBuilder[Self <: TabsActivationUIParams] (val x: Self) extends AnyVal {
+  extension [Self <: TabsActivationUIParams](x: Self) {
     
-    @scala.inline
-    def setNewPanel(value: JQuery): Self = StObject.set(x, "newPanel", value.asInstanceOf[js.Any])
+    inline def setNewPanel(value: JQuery): Self = StObject.set(x, "newPanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewTab(value: JQuery): Self = StObject.set(x, "newTab", value.asInstanceOf[js.Any])
+    inline def setNewTab(value: JQuery): Self = StObject.set(x, "newTab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldPanel(value: JQuery): Self = StObject.set(x, "oldPanel", value.asInstanceOf[js.Any])
+    inline def setOldPanel(value: JQuery): Self = StObject.set(x, "oldPanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldTab(value: JQuery): Self = StObject.set(x, "oldTab", value.asInstanceOf[js.Any])
+    inline def setOldTab(value: JQuery): Self = StObject.set(x, "oldTab", value.asInstanceOf[js.Any])
   }
 }

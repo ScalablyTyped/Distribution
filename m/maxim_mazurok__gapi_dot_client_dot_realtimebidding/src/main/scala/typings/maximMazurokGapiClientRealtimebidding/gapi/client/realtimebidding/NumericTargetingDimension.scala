@@ -14,31 +14,23 @@ trait NumericTargetingDimension extends StObject {
 }
 object NumericTargetingDimension {
   
-  @scala.inline
-  def apply(): NumericTargetingDimension = {
+  inline def apply(): NumericTargetingDimension = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NumericTargetingDimension]
   }
   
-  @scala.inline
-  implicit class NumericTargetingDimensionMutableBuilder[Self <: NumericTargetingDimension] (val x: Self) extends AnyVal {
+  extension [Self <: NumericTargetingDimension](x: Self) {
     
-    @scala.inline
-    def setExcludedIds(value: js.Array[String]): Self = StObject.set(x, "excludedIds", value.asInstanceOf[js.Any])
+    inline def setExcludedIds(value: js.Array[String]): Self = StObject.set(x, "excludedIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedIdsUndefined: Self = StObject.set(x, "excludedIds", js.undefined)
+    inline def setExcludedIdsUndefined: Self = StObject.set(x, "excludedIds", js.undefined)
     
-    @scala.inline
-    def setExcludedIdsVarargs(value: String*): Self = StObject.set(x, "excludedIds", js.Array(value :_*))
+    inline def setExcludedIdsVarargs(value: String*): Self = StObject.set(x, "excludedIds", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludedIds(value: js.Array[String]): Self = StObject.set(x, "includedIds", value.asInstanceOf[js.Any])
+    inline def setIncludedIds(value: js.Array[String]): Self = StObject.set(x, "includedIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedIdsUndefined: Self = StObject.set(x, "includedIds", js.undefined)
+    inline def setIncludedIdsUndefined: Self = StObject.set(x, "includedIds", js.undefined)
     
-    @scala.inline
-    def setIncludedIdsVarargs(value: String*): Self = StObject.set(x, "includedIds", js.Array(value :_*))
+    inline def setIncludedIdsVarargs(value: String*): Self = StObject.set(x, "includedIds", js.Array(value :_*))
   }
 }

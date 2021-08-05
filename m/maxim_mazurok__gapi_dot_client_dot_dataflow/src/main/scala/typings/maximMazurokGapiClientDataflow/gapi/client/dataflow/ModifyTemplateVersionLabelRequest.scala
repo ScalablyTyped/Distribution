@@ -17,31 +17,23 @@ trait ModifyTemplateVersionLabelRequest extends StObject {
 }
 object ModifyTemplateVersionLabelRequest {
   
-  @scala.inline
-  def apply(): ModifyTemplateVersionLabelRequest = {
+  inline def apply(): ModifyTemplateVersionLabelRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyTemplateVersionLabelRequest]
   }
   
-  @scala.inline
-  implicit class ModifyTemplateVersionLabelRequestMutableBuilder[Self <: ModifyTemplateVersionLabelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyTemplateVersionLabelRequest](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+    inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -28,25 +28,19 @@ trait RegisterDeviceRequest extends StObject {
 }
 object RegisterDeviceRequest {
   
-  @scala.inline
-  def apply(IdentityId: IdentityId, IdentityPoolId: IdentityPoolId, Platform: Platform, Token: PushToken): RegisterDeviceRequest = {
+  inline def apply(IdentityId: IdentityId, IdentityPoolId: IdentityPoolId, Platform: Platform, Token: PushToken): RegisterDeviceRequest = {
     val __obj = js.Dynamic.literal(IdentityId = IdentityId.asInstanceOf[js.Any], IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any], Platform = Platform.asInstanceOf[js.Any], Token = Token.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterDeviceRequest]
   }
   
-  @scala.inline
-  implicit class RegisterDeviceRequestMutableBuilder[Self <: RegisterDeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterDeviceRequest](x: Self) {
     
-    @scala.inline
-    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: Platform): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: Platform): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: PushToken): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
+    inline def setToken(value: PushToken): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
   }
 }

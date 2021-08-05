@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Gauge(value: Double, maxValue: Double, guageWidth: Double, dangerZone: Double, suffix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("Gauge")(value.asInstanceOf[js.Any], maxValue.asInstanceOf[js.Any], guageWidth.asInstanceOf[js.Any], dangerZone.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Gauge(value: Double, maxValue: Double, guageWidth: Double, dangerZone: Double, suffix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("Gauge")(value.asInstanceOf[js.Any], maxValue.asInstanceOf[js.Any], guageWidth.asInstanceOf[js.Any], dangerZone.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("clui", "Line")
   @js.native
@@ -115,8 +114,7 @@ object mod {
     def update(currentValueOrPercent: Double, maxValue: Double): String = js.native
   }
   
-  @scala.inline
-  def Sparkline(values: js.Array[Double], suffix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("Sparkline")(values.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Sparkline(values: js.Array[Double], suffix: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("Sparkline")(values.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("clui", "Spinner")
   @js.native
@@ -160,44 +158,32 @@ object mod {
   }
   object LineBufferOptions {
     
-    @scala.inline
-    def apply(): LineBufferOptions = {
+    inline def apply(): LineBufferOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LineBufferOptions]
     }
     
-    @scala.inline
-    implicit class LineBufferOptionsMutableBuilder[Self <: LineBufferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LineBufferOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double | console): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double | console): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setScroll(value: Double): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      inline def setScroll(value: Double): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+      inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double | console): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | console): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
 }

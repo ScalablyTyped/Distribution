@@ -22,20 +22,16 @@ trait SystemEventData extends StObject {
 }
 object SystemEventData {
   
-  @scala.inline
-  def apply(`type`: String, value: String): SystemEventData = {
+  inline def apply(`type`: String, value: String): SystemEventData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemEventData]
   }
   
-  @scala.inline
-  implicit class SystemEventDataMutableBuilder[Self <: SystemEventData] (val x: Self) extends AnyVal {
+  extension [Self <: SystemEventData](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

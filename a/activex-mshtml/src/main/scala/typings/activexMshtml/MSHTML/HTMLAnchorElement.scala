@@ -10,7 +10,7 @@ trait HTMLAnchorElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLAnchorElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLAnchorElement_typekey")
   var MSHTMLDotHTMLAnchorElement_typekey: HTMLAnchorElement = js.native
   
   var Methods: String = js.native

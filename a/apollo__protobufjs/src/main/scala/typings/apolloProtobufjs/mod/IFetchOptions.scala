@@ -14,25 +14,19 @@ trait IFetchOptions extends StObject {
 }
 object IFetchOptions {
   
-  @scala.inline
-  def apply(): IFetchOptions = {
+  inline def apply(): IFetchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFetchOptions]
   }
   
-  @scala.inline
-  implicit class IFetchOptionsMutableBuilder[Self <: IFetchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IFetchOptions](x: Self) {
     
-    @scala.inline
-    def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+    inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
-    @scala.inline
-    def setXhr(value: Boolean): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    inline def setXhr(value: Boolean): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
   }
 }

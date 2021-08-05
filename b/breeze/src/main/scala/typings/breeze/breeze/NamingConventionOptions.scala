@@ -12,25 +12,19 @@ trait NamingConventionOptions extends StObject {
 }
 object NamingConventionOptions {
   
-  @scala.inline
-  def apply(): NamingConventionOptions = {
+  inline def apply(): NamingConventionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NamingConventionOptions]
   }
   
-  @scala.inline
-  implicit class NamingConventionOptionsMutableBuilder[Self <: NamingConventionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NamingConventionOptions](x: Self) {
     
-    @scala.inline
-    def setClientPropertyNameToServer(value: /* name */ String => String): Self = StObject.set(x, "clientPropertyNameToServer", js.Any.fromFunction1(value))
+    inline def setClientPropertyNameToServer(value: /* name */ String => String): Self = StObject.set(x, "clientPropertyNameToServer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClientPropertyNameToServerUndefined: Self = StObject.set(x, "clientPropertyNameToServer", js.undefined)
+    inline def setClientPropertyNameToServerUndefined: Self = StObject.set(x, "clientPropertyNameToServer", js.undefined)
     
-    @scala.inline
-    def setServerPropertyNameToClient(value: /* name */ String => String): Self = StObject.set(x, "serverPropertyNameToClient", js.Any.fromFunction1(value))
+    inline def setServerPropertyNameToClient(value: /* name */ String => String): Self = StObject.set(x, "serverPropertyNameToClient", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setServerPropertyNameToClientUndefined: Self = StObject.set(x, "serverPropertyNameToClient", js.undefined)
+    inline def setServerPropertyNameToClientUndefined: Self = StObject.set(x, "serverPropertyNameToClient", js.undefined)
   }
 }

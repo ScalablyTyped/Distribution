@@ -38,40 +38,29 @@ trait LabelingJobForWorkteamSummary extends StObject {
 }
 object LabelingJobForWorkteamSummary {
   
-  @scala.inline
-  def apply(CreationTime: Timestamp, JobReferenceCode: JobReferenceCode, WorkRequesterAccountId: AccountId): LabelingJobForWorkteamSummary = {
+  inline def apply(CreationTime: Timestamp, JobReferenceCode: JobReferenceCode, WorkRequesterAccountId: AccountId): LabelingJobForWorkteamSummary = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], JobReferenceCode = JobReferenceCode.asInstanceOf[js.Any], WorkRequesterAccountId = WorkRequesterAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelingJobForWorkteamSummary]
   }
   
-  @scala.inline
-  implicit class LabelingJobForWorkteamSummaryMutableBuilder[Self <: LabelingJobForWorkteamSummary] (val x: Self) extends AnyVal {
+  extension [Self <: LabelingJobForWorkteamSummary](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobReferenceCode(value: JobReferenceCode): Self = StObject.set(x, "JobReferenceCode", value.asInstanceOf[js.Any])
+    inline def setJobReferenceCode(value: JobReferenceCode): Self = StObject.set(x, "JobReferenceCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelCounters(value: LabelCountersForWorkteam): Self = StObject.set(x, "LabelCounters", value.asInstanceOf[js.Any])
+    inline def setLabelCounters(value: LabelCountersForWorkteam): Self = StObject.set(x, "LabelCounters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelCountersUndefined: Self = StObject.set(x, "LabelCounters", js.undefined)
+    inline def setLabelCountersUndefined: Self = StObject.set(x, "LabelCounters", js.undefined)
     
-    @scala.inline
-    def setLabelingJobName(value: LabelingJobName): Self = StObject.set(x, "LabelingJobName", value.asInstanceOf[js.Any])
+    inline def setLabelingJobName(value: LabelingJobName): Self = StObject.set(x, "LabelingJobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelingJobNameUndefined: Self = StObject.set(x, "LabelingJobName", js.undefined)
+    inline def setLabelingJobNameUndefined: Self = StObject.set(x, "LabelingJobName", js.undefined)
     
-    @scala.inline
-    def setNumberOfHumanWorkersPerDataObject(value: NumberOfHumanWorkersPerDataObject): Self = StObject.set(x, "NumberOfHumanWorkersPerDataObject", value.asInstanceOf[js.Any])
+    inline def setNumberOfHumanWorkersPerDataObject(value: NumberOfHumanWorkersPerDataObject): Self = StObject.set(x, "NumberOfHumanWorkersPerDataObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfHumanWorkersPerDataObjectUndefined: Self = StObject.set(x, "NumberOfHumanWorkersPerDataObject", js.undefined)
+    inline def setNumberOfHumanWorkersPerDataObjectUndefined: Self = StObject.set(x, "NumberOfHumanWorkersPerDataObject", js.undefined)
     
-    @scala.inline
-    def setWorkRequesterAccountId(value: AccountId): Self = StObject.set(x, "WorkRequesterAccountId", value.asInstanceOf[js.Any])
+    inline def setWorkRequesterAccountId(value: AccountId): Self = StObject.set(x, "WorkRequesterAccountId", value.asInstanceOf[js.Any])
   }
 }

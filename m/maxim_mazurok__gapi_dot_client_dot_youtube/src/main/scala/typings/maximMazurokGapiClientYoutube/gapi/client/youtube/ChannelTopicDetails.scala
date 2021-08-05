@@ -14,31 +14,23 @@ trait ChannelTopicDetails extends StObject {
 }
 object ChannelTopicDetails {
   
-  @scala.inline
-  def apply(): ChannelTopicDetails = {
+  inline def apply(): ChannelTopicDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelTopicDetails]
   }
   
-  @scala.inline
-  implicit class ChannelTopicDetailsMutableBuilder[Self <: ChannelTopicDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelTopicDetails](x: Self) {
     
-    @scala.inline
-    def setTopicCategories(value: js.Array[String]): Self = StObject.set(x, "topicCategories", value.asInstanceOf[js.Any])
+    inline def setTopicCategories(value: js.Array[String]): Self = StObject.set(x, "topicCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicCategoriesUndefined: Self = StObject.set(x, "topicCategories", js.undefined)
+    inline def setTopicCategoriesUndefined: Self = StObject.set(x, "topicCategories", js.undefined)
     
-    @scala.inline
-    def setTopicCategoriesVarargs(value: String*): Self = StObject.set(x, "topicCategories", js.Array(value :_*))
+    inline def setTopicCategoriesVarargs(value: String*): Self = StObject.set(x, "topicCategories", js.Array(value :_*))
     
-    @scala.inline
-    def setTopicIds(value: js.Array[String]): Self = StObject.set(x, "topicIds", value.asInstanceOf[js.Any])
+    inline def setTopicIds(value: js.Array[String]): Self = StObject.set(x, "topicIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicIdsUndefined: Self = StObject.set(x, "topicIds", js.undefined)
+    inline def setTopicIdsUndefined: Self = StObject.set(x, "topicIds", js.undefined)
     
-    @scala.inline
-    def setTopicIdsVarargs(value: String*): Self = StObject.set(x, "topicIds", js.Array(value :_*))
+    inline def setTopicIdsVarargs(value: String*): Self = StObject.set(x, "topicIds", js.Array(value :_*))
   }
 }

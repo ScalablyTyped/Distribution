@@ -27,8 +27,7 @@ trait PipeableFoldable[F] extends StObject {
 }
 object PipeableFoldable {
   
-  @scala.inline
-  def apply[F](
+  inline def apply[F](
     foldMap: Monoid[js.Any] => js.Function1[
       /* f */ js.Function1[/* a */ js.Any, js.Any], 
       js.Function1[
@@ -49,11 +48,9 @@ object PipeableFoldable {
     __obj.asInstanceOf[PipeableFoldable[F]]
   }
   
-  @scala.inline
-  implicit class PipeableFoldableMutableBuilder[Self <: PipeableFoldable[?], F] (val x: Self & PipeableFoldable[F]) extends AnyVal {
+  extension [Self <: PipeableFoldable[?], F](x: Self & PipeableFoldable[F]) {
     
-    @scala.inline
-    def setFoldMap(
+    inline def setFoldMap(
       value: Monoid[js.Any] => js.Function1[
           /* f */ js.Function1[/* a */ js.Any, js.Any], 
           js.Function1[
@@ -63,16 +60,14 @@ object PipeableFoldable {
         ]
     ): Self = StObject.set(x, "foldMap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReduce(
+    inline def setReduce(
       value: (js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
           js.Any
         ]
     ): Self = StObject.set(x, "reduce", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReduceRight(
+    inline def setReduceRight(
       value: (js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
           js.Any

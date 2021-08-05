@@ -21,20 +21,16 @@ object popoverArrowMod {
   }
   object IPopoverArrowProps {
     
-    @scala.inline
-    def apply(arrowProps: PopperArrowProps, placement: Placement): IPopoverArrowProps = {
+    inline def apply(arrowProps: PopperArrowProps, placement: Placement): IPopoverArrowProps = {
       val __obj = js.Dynamic.literal(arrowProps = arrowProps.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPopoverArrowProps]
     }
     
-    @scala.inline
-    implicit class IPopoverArrowPropsMutableBuilder[Self <: IPopoverArrowProps] (val x: Self) extends AnyVal {
+    extension [Self <: IPopoverArrowProps](x: Self) {
       
-      @scala.inline
-      def setArrowProps(value: PopperArrowProps): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
+      inline def setArrowProps(value: PopperArrowProps): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     }
   }
 }

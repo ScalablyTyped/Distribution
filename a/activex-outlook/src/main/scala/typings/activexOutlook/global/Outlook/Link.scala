@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Link")
 @js.native
-class Link protected ()
+/* private */ class Link ()
   extends StObject
      with typings.activexOutlook.Outlook.Link {
   
@@ -23,7 +23,7 @@ class Link protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.Link_typekey")
   var OutlookDotLink_typekey: typings.activexOutlook.Outlook.Link = js.native
   

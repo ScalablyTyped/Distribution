@@ -14,19 +14,15 @@ trait TypeofSkeletonDebugRender extends StObject {
 }
 object TypeofSkeletonDebugRender {
   
-  @scala.inline
-  def apply(GREEN: js.Any, LIGHT_GRAY: js.Any): TypeofSkeletonDebugRender = {
+  inline def apply(GREEN: js.Any, LIGHT_GRAY: js.Any): TypeofSkeletonDebugRender = {
     val __obj = js.Dynamic.literal(GREEN = GREEN.asInstanceOf[js.Any], LIGHT_GRAY = LIGHT_GRAY.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSkeletonDebugRender]
   }
   
-  @scala.inline
-  implicit class TypeofSkeletonDebugRenderMutableBuilder[Self <: TypeofSkeletonDebugRender] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSkeletonDebugRender](x: Self) {
     
-    @scala.inline
-    def setGREEN(value: js.Any): Self = StObject.set(x, "GREEN", value.asInstanceOf[js.Any])
+    inline def setGREEN(value: js.Any): Self = StObject.set(x, "GREEN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLIGHT_GRAY(value: js.Any): Self = StObject.set(x, "LIGHT_GRAY", value.asInstanceOf[js.Any])
+    inline def setLIGHT_GRAY(value: js.Any): Self = StObject.set(x, "LIGHT_GRAY", value.asInstanceOf[js.Any])
   }
 }

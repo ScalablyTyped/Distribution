@@ -27,6 +27,5 @@ object WindowScroller {
   @JSImport("react-virtualized", "WindowScroller.defaultProps")
   @js.native
   def defaultProps: OnResize = js.native
-  @scala.inline
-  def defaultProps_=(x: OnResize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: OnResize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

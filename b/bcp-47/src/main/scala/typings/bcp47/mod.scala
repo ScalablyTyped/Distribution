@@ -56,13 +56,10 @@ object mod {
     /* 1 */ val errVariantTooLong: typings.bcp47.mod.ErrorCodes.errVariantTooLong & Double = js.native
   }
   
-  @scala.inline
-  def parse(tag: String): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(tag.asInstanceOf[js.Any]).asInstanceOf[Schema]
-  @scala.inline
-  def parse(tag: String, options: ParseOptions): Schema = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(tag.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Schema]
+  inline def parse(tag: String): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(tag.asInstanceOf[js.Any]).asInstanceOf[Schema]
+  inline def parse(tag: String, options: ParseOptions): Schema = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(tag.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Schema]
   
-  @scala.inline
-  def stringify(schema: Schema): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(schema.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(schema: Schema): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(schema.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait LocaleExtension extends StObject {
     
@@ -72,23 +69,18 @@ object mod {
   }
   object LocaleExtension {
     
-    @scala.inline
-    def apply(extensions: js.Array[String], singleton: String): LocaleExtension = {
+    inline def apply(extensions: js.Array[String], singleton: String): LocaleExtension = {
       val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], singleton = singleton.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocaleExtension]
     }
     
-    @scala.inline
-    implicit class LocaleExtensionMutableBuilder[Self <: LocaleExtension] (val x: Self) extends AnyVal {
+    extension [Self <: LocaleExtension](x: Self) {
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setSingleton(value: String): Self = StObject.set(x, "singleton", value.asInstanceOf[js.Any])
+      inline def setSingleton(value: String): Self = StObject.set(x, "singleton", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,32 +96,24 @@ object mod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(): ParseOptions = {
+    inline def apply(): ParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setForgiving(value: Boolean): Self = StObject.set(x, "forgiving", value.asInstanceOf[js.Any])
+      inline def setForgiving(value: Boolean): Self = StObject.set(x, "forgiving", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForgivingUndefined: Self = StObject.set(x, "forgiving", js.undefined)
+      inline def setForgivingUndefined: Self = StObject.set(x, "forgiving", js.undefined)
       
-      @scala.inline
-      def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
+      inline def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+      inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
       
-      @scala.inline
-      def setWarning(value: (/* errorMessage */ String, /* errorCode */ ErrorCodes, /* offset */ Double) => Unit): Self = StObject.set(x, "warning", js.Any.fromFunction3(value))
+      inline def setWarning(value: (/* errorMessage */ String, /* errorCode */ ErrorCodes, /* offset */ Double) => Unit): Self = StObject.set(x, "warning", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+      inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
   }
   
@@ -155,80 +139,56 @@ object mod {
   }
   object Schema {
     
-    @scala.inline
-    def apply(): Schema = {
+    inline def apply(): Schema = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Schema]
     }
     
-    @scala.inline
-    implicit class SchemaMutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
+    extension [Self <: Schema](x: Self) {
       
-      @scala.inline
-      def setExtendedLanguageSubtags(value: js.Array[String]): Self = StObject.set(x, "extendedLanguageSubtags", value.asInstanceOf[js.Any])
+      inline def setExtendedLanguageSubtags(value: js.Array[String]): Self = StObject.set(x, "extendedLanguageSubtags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedLanguageSubtagsUndefined: Self = StObject.set(x, "extendedLanguageSubtags", js.undefined)
+      inline def setExtendedLanguageSubtagsUndefined: Self = StObject.set(x, "extendedLanguageSubtags", js.undefined)
       
-      @scala.inline
-      def setExtendedLanguageSubtagsVarargs(value: String*): Self = StObject.set(x, "extendedLanguageSubtags", js.Array(value :_*))
+      inline def setExtendedLanguageSubtagsVarargs(value: String*): Self = StObject.set(x, "extendedLanguageSubtags", js.Array(value :_*))
       
-      @scala.inline
-      def setExtensions(value: js.Array[LocaleExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[LocaleExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: LocaleExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: LocaleExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setIrregular(value: String): Self = StObject.set(x, "irregular", value.asInstanceOf[js.Any])
+      inline def setIrregular(value: String): Self = StObject.set(x, "irregular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIrregularUndefined: Self = StObject.set(x, "irregular", js.undefined)
+      inline def setIrregularUndefined: Self = StObject.set(x, "irregular", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setPrivateuse(value: js.Array[String]): Self = StObject.set(x, "privateuse", value.asInstanceOf[js.Any])
+      inline def setPrivateuse(value: js.Array[String]): Self = StObject.set(x, "privateuse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateuseUndefined: Self = StObject.set(x, "privateuse", js.undefined)
+      inline def setPrivateuseUndefined: Self = StObject.set(x, "privateuse", js.undefined)
       
-      @scala.inline
-      def setPrivateuseVarargs(value: String*): Self = StObject.set(x, "privateuse", js.Array(value :_*))
+      inline def setPrivateuseVarargs(value: String*): Self = StObject.set(x, "privateuse", js.Array(value :_*))
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setRegular(value: String): Self = StObject.set(x, "regular", value.asInstanceOf[js.Any])
+      inline def setRegular(value: String): Self = StObject.set(x, "regular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegularUndefined: Self = StObject.set(x, "regular", js.undefined)
+      inline def setRegularUndefined: Self = StObject.set(x, "regular", js.undefined)
       
-      @scala.inline
-      def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+      inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
       
-      @scala.inline
-      def setVariants(value: js.Array[String]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+      inline def setVariants(value: js.Array[String]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
+      inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
       
-      @scala.inline
-      def setVariantsVarargs(value: String*): Self = StObject.set(x, "variants", js.Array(value :_*))
+      inline def setVariantsVarargs(value: String*): Self = StObject.set(x, "variants", js.Array(value :_*))
     }
   }
 }

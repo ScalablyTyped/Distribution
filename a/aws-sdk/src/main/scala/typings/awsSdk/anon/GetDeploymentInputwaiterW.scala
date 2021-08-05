@@ -19,22 +19,17 @@ trait GetDeploymentInputwaiterW extends StObject {
 }
 object GetDeploymentInputwaiterW {
   
-  @scala.inline
-  def apply(deploymentId: DeploymentId): GetDeploymentInputwaiterW = {
+  inline def apply(deploymentId: DeploymentId): GetDeploymentInputwaiterW = {
     val __obj = js.Dynamic.literal(deploymentId = deploymentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDeploymentInputwaiterW]
   }
   
-  @scala.inline
-  implicit class GetDeploymentInputwaiterWMutableBuilder[Self <: GetDeploymentInputwaiterW] (val x: Self) extends AnyVal {
+  extension [Self <: GetDeploymentInputwaiterW](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
   }
 }

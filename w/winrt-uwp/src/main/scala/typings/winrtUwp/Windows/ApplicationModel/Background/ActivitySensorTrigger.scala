@@ -24,8 +24,7 @@ trait ActivitySensorTrigger extends StObject {
 }
 object ActivitySensorTrigger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     minimumReportInterval: Double,
     reportInterval: Double,
     subscribedActivities: IVector[ActivityType],
@@ -35,19 +34,14 @@ object ActivitySensorTrigger {
     __obj.asInstanceOf[ActivitySensorTrigger]
   }
   
-  @scala.inline
-  implicit class ActivitySensorTriggerMutableBuilder[Self <: ActivitySensorTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: ActivitySensorTrigger](x: Self) {
     
-    @scala.inline
-    def setMinimumReportInterval(value: Double): Self = StObject.set(x, "minimumReportInterval", value.asInstanceOf[js.Any])
+    inline def setMinimumReportInterval(value: Double): Self = StObject.set(x, "minimumReportInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportInterval(value: Double): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
+    inline def setReportInterval(value: Double): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribedActivities(value: IVector[ActivityType]): Self = StObject.set(x, "subscribedActivities", value.asInstanceOf[js.Any])
+    inline def setSubscribedActivities(value: IVector[ActivityType]): Self = StObject.set(x, "subscribedActivities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedActivities(value: IVectorView[ActivityType]): Self = StObject.set(x, "supportedActivities", value.asInstanceOf[js.Any])
+    inline def setSupportedActivities(value: IVectorView[ActivityType]): Self = StObject.set(x, "supportedActivities", value.asInstanceOf[js.Any])
   }
 }

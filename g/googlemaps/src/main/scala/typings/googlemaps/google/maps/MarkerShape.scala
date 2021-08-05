@@ -18,22 +18,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MarkerShape extends StObject
 object MarkerShape {
   
-  @scala.inline
-  def MarkerShapeCircle(coords: js.Tuple3[Double, Double, Double]): typings.googlemaps.google.maps.MarkerShapeCircle = {
+  inline def MarkerShapeCircle(coords: js.Tuple3[Double, Double, Double]): typings.googlemaps.google.maps.MarkerShapeCircle = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("circle")
     __obj.asInstanceOf[typings.googlemaps.google.maps.MarkerShapeCircle]
   }
   
-  @scala.inline
-  def MarkerShapePoly(coords: MarkerShapePolyCoords): typings.googlemaps.google.maps.MarkerShapePoly = {
+  inline def MarkerShapePoly(coords: MarkerShapePolyCoords): typings.googlemaps.google.maps.MarkerShapePoly = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("poly")
     __obj.asInstanceOf[typings.googlemaps.google.maps.MarkerShapePoly]
   }
   
-  @scala.inline
-  def MarkerShapeRect(coords: js.Tuple4[Double, Double, Double, Double]): typings.googlemaps.google.maps.MarkerShapeRect = {
+  inline def MarkerShapeRect(coords: js.Tuple4[Double, Double, Double, Double]): typings.googlemaps.google.maps.MarkerShapeRect = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("rect")
     __obj.asInstanceOf[typings.googlemaps.google.maps.MarkerShapeRect]

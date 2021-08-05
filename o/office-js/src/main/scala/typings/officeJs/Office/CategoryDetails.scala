@@ -30,19 +30,15 @@ trait CategoryDetails extends StObject {
 }
 object CategoryDetails {
   
-  @scala.inline
-  def apply(color: CategoryColor | String, displayName: String): CategoryDetails = {
+  inline def apply(color: CategoryColor | String, displayName: String): CategoryDetails = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategoryDetails]
   }
   
-  @scala.inline
-  implicit class CategoryDetailsMutableBuilder[Self <: CategoryDetails] (val x: Self) extends AnyVal {
+  extension [Self <: CategoryDetails](x: Self) {
     
-    @scala.inline
-    def setColor(value: CategoryColor | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: CategoryColor | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
   }
 }

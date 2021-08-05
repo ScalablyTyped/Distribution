@@ -14,19 +14,16 @@ object anon {
   }
   object Compiler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
     ): Compiler = {
       val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any])
       __obj.asInstanceOf[Compiler]
     }
     
-    @scala.inline
-    implicit class CompilerMutableBuilder[Self <: Compiler] (val x: Self) extends AnyVal {
+    extension [Self <: Compiler](x: Self) {
       
-      @scala.inline
-      def setCompiler(
+      inline def setCompiler(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
       ): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
     }
@@ -40,20 +37,16 @@ object anon {
   }
   object Options {
     
-    @scala.inline
-    def apply(options: InitializedOptions, server: Server): Options = {
+    inline def apply(options: InitializedOptions, server: Server): Options = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOptions(value: InitializedOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: InitializedOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,8 +58,7 @@ object anon {
   }
   object Stats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
       stats: js.Any
     ): Stats = {
@@ -74,16 +66,13 @@ object anon {
       __obj.asInstanceOf[Stats]
     }
     
-    @scala.inline
-    implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
+    extension [Self <: Stats](x: Self) {
       
-      @scala.inline
-      def setCompiler(
+      inline def setCompiler(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
       ): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStats(value: js.Any): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: js.Any): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -23,8 +23,7 @@ trait XIdentifierReplace
 }
 object XIdentifierReplace {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     Identifiers: SafeArray[Double],
     acquire: () => Unit,
@@ -40,10 +39,8 @@ object XIdentifierReplace {
     __obj.asInstanceOf[XIdentifierReplace]
   }
   
-  @scala.inline
-  implicit class XIdentifierReplaceMutableBuilder[Self <: XIdentifierReplace] (val x: Self) extends AnyVal {
+  extension [Self <: XIdentifierReplace](x: Self) {
     
-    @scala.inline
-    def setReplaceByIdentifer(value: (Double, js.Any) => Unit): Self = StObject.set(x, "replaceByIdentifer", js.Any.fromFunction2(value))
+    inline def setReplaceByIdentifer(value: (Double, js.Any) => Unit): Self = StObject.set(x, "replaceByIdentifer", js.Any.fromFunction2(value))
   }
 }

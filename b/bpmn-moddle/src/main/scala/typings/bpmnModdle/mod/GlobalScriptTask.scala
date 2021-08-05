@@ -14,8 +14,7 @@ trait GlobalScriptTask
 }
 object GlobalScriptTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     id: String,
@@ -31,13 +30,10 @@ object GlobalScriptTask {
     __obj.asInstanceOf[GlobalScriptTask]
   }
   
-  @scala.inline
-  implicit class GlobalScriptTaskMutableBuilder[Self <: GlobalScriptTask] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalScriptTask](x: Self) {
     
-    @scala.inline
-    def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptLanguage(value: String): Self = StObject.set(x, "scriptLanguage", value.asInstanceOf[js.Any])
+    inline def setScriptLanguage(value: String): Self = StObject.set(x, "scriptLanguage", value.asInstanceOf[js.Any])
   }
 }

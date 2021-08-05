@@ -14,22 +14,17 @@ trait Fields extends StObject {
 }
 object Fields {
   
-  @scala.inline
-  def apply(fields: js.Object, issueType: Double, pid: Double): Fields = {
+  inline def apply(fields: js.Object, issueType: Double, pid: Double): Fields = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], issueType = issueType.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
   
-  @scala.inline
-  implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+  extension [Self <: Fields](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssueType(value: Double): Self = StObject.set(x, "issueType", value.asInstanceOf[js.Any])
+    inline def setIssueType(value: Double): Self = StObject.set(x, "issueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
   }
 }

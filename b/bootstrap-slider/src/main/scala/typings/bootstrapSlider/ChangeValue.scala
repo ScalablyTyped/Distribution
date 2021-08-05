@@ -12,19 +12,15 @@ trait ChangeValue extends StObject {
 }
 object ChangeValue {
   
-  @scala.inline
-  def apply(newValue: Double, oldValue: Double): ChangeValue = {
+  inline def apply(newValue: Double, oldValue: Double): ChangeValue = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeValue]
   }
   
-  @scala.inline
-  implicit class ChangeValueMutableBuilder[Self <: ChangeValue] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeValue](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
   }
 }

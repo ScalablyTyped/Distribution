@@ -18,25 +18,19 @@ trait AliasICPRecordal extends StObject {
 }
 object AliasICPRecordal {
   
-  @scala.inline
-  def apply(): AliasICPRecordal = {
+  inline def apply(): AliasICPRecordal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AliasICPRecordal]
   }
   
-  @scala.inline
-  implicit class AliasICPRecordalMutableBuilder[Self <: AliasICPRecordal] (val x: Self) extends AnyVal {
+  extension [Self <: AliasICPRecordal](x: Self) {
     
-    @scala.inline
-    def setCNAME(value: String): Self = StObject.set(x, "CNAME", value.asInstanceOf[js.Any])
+    inline def setCNAME(value: String): Self = StObject.set(x, "CNAME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCNAMEUndefined: Self = StObject.set(x, "CNAME", js.undefined)
+    inline def setCNAMEUndefined: Self = StObject.set(x, "CNAME", js.undefined)
     
-    @scala.inline
-    def setICPRecordalStatus(value: ICPRecordalStatus): Self = StObject.set(x, "ICPRecordalStatus", value.asInstanceOf[js.Any])
+    inline def setICPRecordalStatus(value: ICPRecordalStatus): Self = StObject.set(x, "ICPRecordalStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setICPRecordalStatusUndefined: Self = StObject.set(x, "ICPRecordalStatus", js.undefined)
+    inline def setICPRecordalStatusUndefined: Self = StObject.set(x, "ICPRecordalStatus", js.undefined)
   }
 }

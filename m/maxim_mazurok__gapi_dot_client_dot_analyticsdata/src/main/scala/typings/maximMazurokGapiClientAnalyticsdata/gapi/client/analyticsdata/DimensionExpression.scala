@@ -17,31 +17,23 @@ trait DimensionExpression extends StObject {
 }
 object DimensionExpression {
   
-  @scala.inline
-  def apply(): DimensionExpression = {
+  inline def apply(): DimensionExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DimensionExpression]
   }
   
-  @scala.inline
-  implicit class DimensionExpressionMutableBuilder[Self <: DimensionExpression] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionExpression](x: Self) {
     
-    @scala.inline
-    def setConcatenate(value: ConcatenateExpression): Self = StObject.set(x, "concatenate", value.asInstanceOf[js.Any])
+    inline def setConcatenate(value: ConcatenateExpression): Self = StObject.set(x, "concatenate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcatenateUndefined: Self = StObject.set(x, "concatenate", js.undefined)
+    inline def setConcatenateUndefined: Self = StObject.set(x, "concatenate", js.undefined)
     
-    @scala.inline
-    def setLowerCase(value: CaseExpression): Self = StObject.set(x, "lowerCase", value.asInstanceOf[js.Any])
+    inline def setLowerCase(value: CaseExpression): Self = StObject.set(x, "lowerCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerCaseUndefined: Self = StObject.set(x, "lowerCase", js.undefined)
+    inline def setLowerCaseUndefined: Self = StObject.set(x, "lowerCase", js.undefined)
     
-    @scala.inline
-    def setUpperCase(value: CaseExpression): Self = StObject.set(x, "upperCase", value.asInstanceOf[js.Any])
+    inline def setUpperCase(value: CaseExpression): Self = StObject.set(x, "upperCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperCaseUndefined: Self = StObject.set(x, "upperCase", js.undefined)
+    inline def setUpperCaseUndefined: Self = StObject.set(x, "upperCase", js.undefined)
   }
 }

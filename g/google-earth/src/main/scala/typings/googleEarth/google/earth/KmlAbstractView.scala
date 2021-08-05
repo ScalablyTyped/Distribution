@@ -57,8 +57,7 @@ trait KmlAbstractView
 }
 object KmlAbstractView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     copyAsCamera: () => KmlCamera,
     copyAsLookAt: () => KmlLookAt,
@@ -85,25 +84,18 @@ object KmlAbstractView {
     __obj.asInstanceOf[KmlAbstractView]
   }
   
-  @scala.inline
-  implicit class KmlAbstractViewMutableBuilder[Self <: KmlAbstractView] (val x: Self) extends AnyVal {
+  extension [Self <: KmlAbstractView](x: Self) {
     
-    @scala.inline
-    def setCopyAsCamera(value: () => KmlCamera): Self = StObject.set(x, "copyAsCamera", js.Any.fromFunction0(value))
+    inline def setCopyAsCamera(value: () => KmlCamera): Self = StObject.set(x, "copyAsCamera", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCopyAsLookAt(value: () => KmlLookAt): Self = StObject.set(x, "copyAsLookAt", js.Any.fromFunction0(value))
+    inline def setCopyAsLookAt(value: () => KmlLookAt): Self = StObject.set(x, "copyAsLookAt", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTimePrimitive(value: () => KmlTimePrimitive): Self = StObject.set(x, "getTimePrimitive", js.Any.fromFunction0(value))
+    inline def setGetTimePrimitive(value: () => KmlTimePrimitive): Self = StObject.set(x, "getTimePrimitive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetViewerOptions(value: () => KmlViewerOptions): Self = StObject.set(x, "getViewerOptions", js.Any.fromFunction0(value))
+    inline def setGetViewerOptions(value: () => KmlViewerOptions): Self = StObject.set(x, "getViewerOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetTimePrimitive(value: KmlTimePrimitive => Unit): Self = StObject.set(x, "setTimePrimitive", js.Any.fromFunction1(value))
+    inline def setSetTimePrimitive(value: KmlTimePrimitive => Unit): Self = StObject.set(x, "setTimePrimitive", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetViewerOptions(value: KmlViewerOptions => Unit): Self = StObject.set(x, "setViewerOptions", js.Any.fromFunction1(value))
+    inline def setSetViewerOptions(value: KmlViewerOptions => Unit): Self = StObject.set(x, "setViewerOptions", js.Any.fromFunction1(value))
   }
 }

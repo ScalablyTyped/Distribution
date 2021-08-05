@@ -33,34 +33,25 @@ trait WorkflowTypeInfo extends StObject {
 }
 object WorkflowTypeInfo {
   
-  @scala.inline
-  def apply(creationDate: Timestamp, status: RegistrationStatus, workflowType: WorkflowType): WorkflowTypeInfo = {
+  inline def apply(creationDate: Timestamp, status: RegistrationStatus, workflowType: WorkflowType): WorkflowTypeInfo = {
     val __obj = js.Dynamic.literal(creationDate = creationDate.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], workflowType = workflowType.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowTypeInfo]
   }
   
-  @scala.inline
-  implicit class WorkflowTypeInfoMutableBuilder[Self <: WorkflowTypeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowTypeInfo](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecationDate(value: Timestamp): Self = StObject.set(x, "deprecationDate", value.asInstanceOf[js.Any])
+    inline def setDeprecationDate(value: Timestamp): Self = StObject.set(x, "deprecationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecationDateUndefined: Self = StObject.set(x, "deprecationDate", js.undefined)
+    inline def setDeprecationDateUndefined: Self = StObject.set(x, "deprecationDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setStatus(value: RegistrationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: RegistrationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
+    inline def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
   }
 }

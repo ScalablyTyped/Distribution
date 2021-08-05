@@ -13,19 +13,15 @@ trait CodeLensClientCapabilities extends StObject {
 }
 object CodeLensClientCapabilities {
   
-  @scala.inline
-  def apply(): CodeLensClientCapabilities = {
+  inline def apply(): CodeLensClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeLensClientCapabilities]
   }
   
-  @scala.inline
-  implicit class CodeLensClientCapabilitiesMutableBuilder[Self <: CodeLensClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: CodeLensClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+    inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
   }
 }

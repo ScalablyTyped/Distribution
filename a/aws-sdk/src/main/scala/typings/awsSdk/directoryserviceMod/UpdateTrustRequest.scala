@@ -18,22 +18,17 @@ trait UpdateTrustRequest extends StObject {
 }
 object UpdateTrustRequest {
   
-  @scala.inline
-  def apply(TrustId: TrustId): UpdateTrustRequest = {
+  inline def apply(TrustId: TrustId): UpdateTrustRequest = {
     val __obj = js.Dynamic.literal(TrustId = TrustId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTrustRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTrustRequestMutableBuilder[Self <: UpdateTrustRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTrustRequest](x: Self) {
     
-    @scala.inline
-    def setSelectiveAuth(value: SelectiveAuth): Self = StObject.set(x, "SelectiveAuth", value.asInstanceOf[js.Any])
+    inline def setSelectiveAuth(value: SelectiveAuth): Self = StObject.set(x, "SelectiveAuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectiveAuthUndefined: Self = StObject.set(x, "SelectiveAuth", js.undefined)
+    inline def setSelectiveAuthUndefined: Self = StObject.set(x, "SelectiveAuth", js.undefined)
     
-    @scala.inline
-    def setTrustId(value: TrustId): Self = StObject.set(x, "TrustId", value.asInstanceOf[js.Any])
+    inline def setTrustId(value: TrustId): Self = StObject.set(x, "TrustId", value.asInstanceOf[js.Any])
   }
 }

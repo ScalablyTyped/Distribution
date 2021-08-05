@@ -18,28 +18,21 @@ trait ListNamedQueriesOutput extends StObject {
 }
 object ListNamedQueriesOutput {
   
-  @scala.inline
-  def apply(): ListNamedQueriesOutput = {
+  inline def apply(): ListNamedQueriesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListNamedQueriesOutput]
   }
   
-  @scala.inline
-  implicit class ListNamedQueriesOutputMutableBuilder[Self <: ListNamedQueriesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListNamedQueriesOutput](x: Self) {
     
-    @scala.inline
-    def setNamedQueryIds(value: NamedQueryIdList): Self = StObject.set(x, "NamedQueryIds", value.asInstanceOf[js.Any])
+    inline def setNamedQueryIds(value: NamedQueryIdList): Self = StObject.set(x, "NamedQueryIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedQueryIdsUndefined: Self = StObject.set(x, "NamedQueryIds", js.undefined)
+    inline def setNamedQueryIdsUndefined: Self = StObject.set(x, "NamedQueryIds", js.undefined)
     
-    @scala.inline
-    def setNamedQueryIdsVarargs(value: NamedQueryId*): Self = StObject.set(x, "NamedQueryIds", js.Array(value :_*))
+    inline def setNamedQueryIdsVarargs(value: NamedQueryId*): Self = StObject.set(x, "NamedQueryIds", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

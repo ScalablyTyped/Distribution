@@ -84,204 +84,139 @@ trait TimeGridProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
 }
 object TimeGridProps {
   
-  @scala.inline
-  def apply[TEvent /* <: js.Object */, TResource /* <: js.Object */](eventOffset: Double): TimeGridProps[TEvent, TResource] = {
+  inline def apply[TEvent /* <: js.Object */, TResource /* <: js.Object */](eventOffset: Double): TimeGridProps[TEvent, TResource] = {
     val __obj = js.Dynamic.literal(eventOffset = eventOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeGridProps[TEvent, TResource]]
   }
   
-  @scala.inline
-  implicit class TimeGridPropsMutableBuilder[Self <: TimeGridProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self & (TimeGridProps[TEvent, TResource])) extends AnyVal {
+  extension [Self <: TimeGridProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */](x: Self & (TimeGridProps[TEvent, TResource])) {
     
-    @scala.inline
-    def setAccessors(value: js.Object): Self = StObject.set(x, "accessors", value.asInstanceOf[js.Any])
+    inline def setAccessors(value: js.Object): Self = StObject.set(x, "accessors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessorsUndefined: Self = StObject.set(x, "accessors", js.undefined)
+    inline def setAccessorsUndefined: Self = StObject.set(x, "accessors", js.undefined)
     
-    @scala.inline
-    def setComponents(value: js.Object): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: js.Object): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+    inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
-    @scala.inline
-    def setDayLayoutAlgorithm(value: js.Any): Self = StObject.set(x, "dayLayoutAlgorithm", value.asInstanceOf[js.Any])
+    inline def setDayLayoutAlgorithm(value: js.Any): Self = StObject.set(x, "dayLayoutAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayLayoutAlgorithmUndefined: Self = StObject.set(x, "dayLayoutAlgorithm", js.undefined)
+    inline def setDayLayoutAlgorithmUndefined: Self = StObject.set(x, "dayLayoutAlgorithm", js.undefined)
     
-    @scala.inline
-    def setEventOffset(value: Double): Self = StObject.set(x, "eventOffset", value.asInstanceOf[js.Any])
+    inline def setEventOffset(value: Double): Self = StObject.set(x, "eventOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvents(value: js.Array[TEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[TEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: TEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: TEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setGetDrilldownView(
+    inline def setGetDrilldownView(
       value: (/* targetDate */ Date, /* currentViewName */ View, /* configuredViewNames */ js.Array[View]) => Unit
     ): Self = StObject.set(x, "getDrilldownView", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetDrilldownViewNull: Self = StObject.set(x, "getDrilldownView", null)
+    inline def setGetDrilldownViewNull: Self = StObject.set(x, "getDrilldownView", null)
     
-    @scala.inline
-    def setGetDrilldownViewUndefined: Self = StObject.set(x, "getDrilldownView", js.undefined)
+    inline def setGetDrilldownViewUndefined: Self = StObject.set(x, "getDrilldownView", js.undefined)
     
-    @scala.inline
-    def setGetNow(value: () => Date): Self = StObject.set(x, "getNow", js.Any.fromFunction0(value))
+    inline def setGetNow(value: () => Date): Self = StObject.set(x, "getNow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNowUndefined: Self = StObject.set(x, "getNow", js.undefined)
+    inline def setGetNowUndefined: Self = StObject.set(x, "getNow", js.undefined)
     
-    @scala.inline
-    def setGetters(value: js.Object): Self = StObject.set(x, "getters", value.asInstanceOf[js.Any])
+    inline def setGetters(value: js.Object): Self = StObject.set(x, "getters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGettersUndefined: Self = StObject.set(x, "getters", js.undefined)
+    inline def setGettersUndefined: Self = StObject.set(x, "getters", js.undefined)
     
-    @scala.inline
-    def setLocalizer(value: js.Object): Self = StObject.set(x, "localizer", value.asInstanceOf[js.Any])
+    inline def setLocalizer(value: js.Object): Self = StObject.set(x, "localizer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizerUndefined: Self = StObject.set(x, "localizer", js.undefined)
+    inline def setLocalizerUndefined: Self = StObject.set(x, "localizer", js.undefined)
     
-    @scala.inline
-    def setLongPressThreshold(value: Double): Self = StObject.set(x, "longPressThreshold", value.asInstanceOf[js.Any])
+    inline def setLongPressThreshold(value: Double): Self = StObject.set(x, "longPressThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongPressThresholdUndefined: Self = StObject.set(x, "longPressThreshold", js.undefined)
+    inline def setLongPressThresholdUndefined: Self = StObject.set(x, "longPressThreshold", js.undefined)
     
-    @scala.inline
-    def setMax(value: stringOrDate): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: stringOrDate): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: stringOrDate): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: stringOrDate): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setOnDoubleClickEvent(value: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit): Self = StObject.set(x, "onDoubleClickEvent", js.Any.fromFunction2(value))
+    inline def setOnDoubleClickEvent(value: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit): Self = StObject.set(x, "onDoubleClickEvent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnDoubleClickEventUndefined: Self = StObject.set(x, "onDoubleClickEvent", js.undefined)
+    inline def setOnDoubleClickEventUndefined: Self = StObject.set(x, "onDoubleClickEvent", js.undefined)
     
-    @scala.inline
-    def setOnDrillDown(value: (/* date */ Date, /* view */ View) => Unit): Self = StObject.set(x, "onDrillDown", js.Any.fromFunction2(value))
+    inline def setOnDrillDown(value: (/* date */ Date, /* view */ View) => Unit): Self = StObject.set(x, "onDrillDown", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnDrillDownUndefined: Self = StObject.set(x, "onDrillDown", js.undefined)
+    inline def setOnDrillDownUndefined: Self = StObject.set(x, "onDrillDown", js.undefined)
     
-    @scala.inline
-    def setOnKeyPressEvent(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onKeyPressEvent", js.Any.fromFunction1(value))
+    inline def setOnKeyPressEvent(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onKeyPressEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnKeyPressEventUndefined: Self = StObject.set(x, "onKeyPressEvent", js.undefined)
+    inline def setOnKeyPressEventUndefined: Self = StObject.set(x, "onKeyPressEvent", js.undefined)
     
-    @scala.inline
-    def setOnNavigate(value: /* action */ NavigateAction => Unit): Self = StObject.set(x, "onNavigate", js.Any.fromFunction1(value))
+    inline def setOnNavigate(value: /* action */ NavigateAction => Unit): Self = StObject.set(x, "onNavigate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnNavigateUndefined: Self = StObject.set(x, "onNavigate", js.undefined)
+    inline def setOnNavigateUndefined: Self = StObject.set(x, "onNavigate", js.undefined)
     
-    @scala.inline
-    def setOnSelectEnd(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onSelectEnd", js.Any.fromFunction1(value))
+    inline def setOnSelectEnd(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onSelectEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSelectEndUndefined: Self = StObject.set(x, "onSelectEnd", js.undefined)
+    inline def setOnSelectEndUndefined: Self = StObject.set(x, "onSelectEnd", js.undefined)
     
-    @scala.inline
-    def setOnSelectEvent(value: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit): Self = StObject.set(x, "onSelectEvent", js.Any.fromFunction2(value))
+    inline def setOnSelectEvent(value: (/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event]) => Unit): Self = StObject.set(x, "onSelectEvent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnSelectEventUndefined: Self = StObject.set(x, "onSelectEvent", js.undefined)
+    inline def setOnSelectEventUndefined: Self = StObject.set(x, "onSelectEvent", js.undefined)
     
-    @scala.inline
-    def setOnSelectSlot(value: /* slotInfo */ Action => Unit): Self = StObject.set(x, "onSelectSlot", js.Any.fromFunction1(value))
+    inline def setOnSelectSlot(value: /* slotInfo */ Action => Unit): Self = StObject.set(x, "onSelectSlot", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSelectSlotUndefined: Self = StObject.set(x, "onSelectSlot", js.undefined)
+    inline def setOnSelectSlotUndefined: Self = StObject.set(x, "onSelectSlot", js.undefined)
     
-    @scala.inline
-    def setOnSelectStart(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onSelectStart", js.Any.fromFunction1(value))
+    inline def setOnSelectStart(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onSelectStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSelectStartUndefined: Self = StObject.set(x, "onSelectStart", js.undefined)
+    inline def setOnSelectStartUndefined: Self = StObject.set(x, "onSelectStart", js.undefined)
     
-    @scala.inline
-    def setRange(value: js.Array[js.Any]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: js.Array[js.Any]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setRangeVarargs(value: js.Any*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: js.Any*): Self = StObject.set(x, "range", js.Array(value :_*))
     
-    @scala.inline
-    def setResources(value: js.Array[TResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[TResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: TResource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: TResource*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
-    @scala.inline
-    def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+    inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+    inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
     
-    @scala.inline
-    def setScrollToTime(value: Date): Self = StObject.set(x, "scrollToTime", value.asInstanceOf[js.Any])
+    inline def setScrollToTime(value: Date): Self = StObject.set(x, "scrollToTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollToTimeUndefined: Self = StObject.set(x, "scrollToTime", js.undefined)
+    inline def setScrollToTimeUndefined: Self = StObject.set(x, "scrollToTime", js.undefined)
     
-    @scala.inline
-    def setSelectable(value: Boolean | ignoreEvents): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    inline def setSelectable(value: Boolean | ignoreEvents): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
-    @scala.inline
-    def setSelected(value: js.Object): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: js.Object): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    @scala.inline
-    def setShowMultiDayTimes(value: Boolean): Self = StObject.set(x, "showMultiDayTimes", value.asInstanceOf[js.Any])
+    inline def setShowMultiDayTimes(value: Boolean): Self = StObject.set(x, "showMultiDayTimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMultiDayTimesUndefined: Self = StObject.set(x, "showMultiDayTimes", js.undefined)
+    inline def setShowMultiDayTimesUndefined: Self = StObject.set(x, "showMultiDayTimes", js.undefined)
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    @scala.inline
-    def setTimeslots(value: Double): Self = StObject.set(x, "timeslots", value.asInstanceOf[js.Any])
+    inline def setTimeslots(value: Double): Self = StObject.set(x, "timeslots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeslotsUndefined: Self = StObject.set(x, "timeslots", js.undefined)
+    inline def setTimeslotsUndefined: Self = StObject.set(x, "timeslots", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

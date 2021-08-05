@@ -49,26 +49,20 @@ object mod {
   }
   object ParserOptions {
     
-    @scala.inline
-    def apply(): ParserOptions = {
+    inline def apply(): ParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParserOptions]
     }
     
-    @scala.inline
-    implicit class ParserOptionsMutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParserOptions](x: Self) {
       
-      @scala.inline
-      def setBaseIRI(value: String): Self = StObject.set(x, "baseIRI", value.asInstanceOf[js.Any])
+      inline def setBaseIRI(value: String): Self = StObject.set(x, "baseIRI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseIRIUndefined: Self = StObject.set(x, "baseIRI", js.undefined)
+      inline def setBaseIRIUndefined: Self = StObject.set(x, "baseIRI", js.undefined)
       
-      @scala.inline
-      def setFactory(value: DataFactory[Quad, Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+      inline def setFactory(value: DataFactory[Quad, Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
+      inline def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
     }
   }
 }

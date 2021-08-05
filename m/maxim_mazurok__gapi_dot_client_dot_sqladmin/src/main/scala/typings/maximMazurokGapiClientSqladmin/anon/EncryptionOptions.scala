@@ -10,19 +10,15 @@ trait EncryptionOptions extends StObject {
 }
 object EncryptionOptions {
   
-  @scala.inline
-  def apply(): EncryptionOptions = {
+  inline def apply(): EncryptionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EncryptionOptions]
   }
   
-  @scala.inline
-  implicit class EncryptionOptionsMutableBuilder[Self <: EncryptionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionOptions](x: Self) {
     
-    @scala.inline
-    def setEncryptionOptions(value: CertPath): Self = StObject.set(x, "encryptionOptions", value.asInstanceOf[js.Any])
+    inline def setEncryptionOptions(value: CertPath): Self = StObject.set(x, "encryptionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionOptionsUndefined: Self = StObject.set(x, "encryptionOptions", js.undefined)
+    inline def setEncryptionOptionsUndefined: Self = StObject.set(x, "encryptionOptions", js.undefined)
   }
 }

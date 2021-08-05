@@ -20,40 +20,29 @@ trait Bounds extends StObject {
 }
 object Bounds {
   
-  @scala.inline
-  def apply(opacity: Double): Bounds = {
+  inline def apply(opacity: Double): Bounds = {
     val __obj = js.Dynamic.literal(opacity = opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bounds]
   }
   
-  @scala.inline
-  implicit class BoundsMutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
+  extension [Self <: Bounds](x: Self) {
     
-    @scala.inline
-    def setBounds(value: Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    @scala.inline
-    def setCompositeOperation(value: String): Self = StObject.set(x, "compositeOperation", value.asInstanceOf[js.Any])
+    inline def setCompositeOperation(value: String): Self = StObject.set(x, "compositeOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositeOperationUndefined: Self = StObject.set(x, "compositeOperation", js.undefined)
+    inline def setCompositeOperationUndefined: Self = StObject.set(x, "compositeOperation", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setTranslate(value: Point): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    inline def setTranslate(value: Point): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+    inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
   }
 }

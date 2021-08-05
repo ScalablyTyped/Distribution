@@ -38,8 +38,7 @@ trait CreateConferenceProviderRequest extends StObject {
 }
 object CreateConferenceProviderRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConferenceProviderName: ConferenceProviderName,
     ConferenceProviderType: ConferenceProviderType,
     MeetingSetting: MeetingSetting
@@ -48,34 +47,24 @@ object CreateConferenceProviderRequest {
     __obj.asInstanceOf[CreateConferenceProviderRequest]
   }
   
-  @scala.inline
-  implicit class CreateConferenceProviderRequestMutableBuilder[Self <: CreateConferenceProviderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateConferenceProviderRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setConferenceProviderName(value: ConferenceProviderName): Self = StObject.set(x, "ConferenceProviderName", value.asInstanceOf[js.Any])
+    inline def setConferenceProviderName(value: ConferenceProviderName): Self = StObject.set(x, "ConferenceProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConferenceProviderType(value: ConferenceProviderType): Self = StObject.set(x, "ConferenceProviderType", value.asInstanceOf[js.Any])
+    inline def setConferenceProviderType(value: ConferenceProviderType): Self = StObject.set(x, "ConferenceProviderType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPDialIn(value: IPDialIn): Self = StObject.set(x, "IPDialIn", value.asInstanceOf[js.Any])
+    inline def setIPDialIn(value: IPDialIn): Self = StObject.set(x, "IPDialIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPDialInUndefined: Self = StObject.set(x, "IPDialIn", js.undefined)
+    inline def setIPDialInUndefined: Self = StObject.set(x, "IPDialIn", js.undefined)
     
-    @scala.inline
-    def setMeetingSetting(value: MeetingSetting): Self = StObject.set(x, "MeetingSetting", value.asInstanceOf[js.Any])
+    inline def setMeetingSetting(value: MeetingSetting): Self = StObject.set(x, "MeetingSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPSTNDialIn(value: PSTNDialIn): Self = StObject.set(x, "PSTNDialIn", value.asInstanceOf[js.Any])
+    inline def setPSTNDialIn(value: PSTNDialIn): Self = StObject.set(x, "PSTNDialIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPSTNDialInUndefined: Self = StObject.set(x, "PSTNDialIn", js.undefined)
+    inline def setPSTNDialInUndefined: Self = StObject.set(x, "PSTNDialIn", js.undefined)
   }
 }

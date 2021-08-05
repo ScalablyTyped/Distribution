@@ -10,13 +10,10 @@ object getVendorSettingsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getVendorSettings(): IVendorSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getVendorSettings")().asInstanceOf[IVendorSettings]
+  inline def getVendorSettings(): IVendorSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getVendorSettings")().asInstanceOf[IVendorSettings]
   
-  @scala.inline
-  def setVendorSettings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVendorSettings")().asInstanceOf[Unit]
-  @scala.inline
-  def setVendorSettings(vendorSettings: IVendorSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVendorSettings")(vendorSettings.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setVendorSettings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVendorSettings")().asInstanceOf[Unit]
+  inline def setVendorSettings(vendorSettings: IVendorSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVendorSettings")(vendorSettings.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait IVendorSettings extends StObject {
     
@@ -30,38 +27,28 @@ object getVendorSettingsMod {
   }
   object IVendorSettings {
     
-    @scala.inline
-    def apply(): IVendorSettings = {
+    inline def apply(): IVendorSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IVendorSettings]
     }
     
-    @scala.inline
-    implicit class IVendorSettingsMutableBuilder[Self <: IVendorSettings] (val x: Self) extends AnyVal {
+    extension [Self <: IVendorSettings](x: Self) {
       
-      @scala.inline
-      def setIsMoz(value: Boolean): Self = StObject.set(x, "isMoz", value.asInstanceOf[js.Any])
+      inline def setIsMoz(value: Boolean): Self = StObject.set(x, "isMoz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMozUndefined: Self = StObject.set(x, "isMoz", js.undefined)
+      inline def setIsMozUndefined: Self = StObject.set(x, "isMoz", js.undefined)
       
-      @scala.inline
-      def setIsMs(value: Boolean): Self = StObject.set(x, "isMs", value.asInstanceOf[js.Any])
+      inline def setIsMs(value: Boolean): Self = StObject.set(x, "isMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMsUndefined: Self = StObject.set(x, "isMs", js.undefined)
+      inline def setIsMsUndefined: Self = StObject.set(x, "isMs", js.undefined)
       
-      @scala.inline
-      def setIsOpera(value: Boolean): Self = StObject.set(x, "isOpera", value.asInstanceOf[js.Any])
+      inline def setIsOpera(value: Boolean): Self = StObject.set(x, "isOpera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOperaUndefined: Self = StObject.set(x, "isOpera", js.undefined)
+      inline def setIsOperaUndefined: Self = StObject.set(x, "isOpera", js.undefined)
       
-      @scala.inline
-      def setIsWebkit(value: Boolean): Self = StObject.set(x, "isWebkit", value.asInstanceOf[js.Any])
+      inline def setIsWebkit(value: Boolean): Self = StObject.set(x, "isWebkit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWebkitUndefined: Self = StObject.set(x, "isWebkit", js.undefined)
+      inline def setIsWebkitUndefined: Self = StObject.set(x, "isWebkit", js.undefined)
     }
   }
 }

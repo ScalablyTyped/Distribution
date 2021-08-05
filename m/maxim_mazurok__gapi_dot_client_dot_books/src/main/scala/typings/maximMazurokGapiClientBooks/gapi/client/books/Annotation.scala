@@ -60,118 +60,81 @@ trait Annotation extends StObject {
 }
 object Annotation {
   
-  @scala.inline
-  def apply(): Annotation = {
+  inline def apply(): Annotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Annotation]
   }
   
-  @scala.inline
-  implicit class AnnotationMutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
+  extension [Self <: Annotation](x: Self) {
     
-    @scala.inline
-    def setAfterSelectedText(value: String): Self = StObject.set(x, "afterSelectedText", value.asInstanceOf[js.Any])
+    inline def setAfterSelectedText(value: String): Self = StObject.set(x, "afterSelectedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterSelectedTextUndefined: Self = StObject.set(x, "afterSelectedText", js.undefined)
+    inline def setAfterSelectedTextUndefined: Self = StObject.set(x, "afterSelectedText", js.undefined)
     
-    @scala.inline
-    def setBeforeSelectedText(value: String): Self = StObject.set(x, "beforeSelectedText", value.asInstanceOf[js.Any])
+    inline def setBeforeSelectedText(value: String): Self = StObject.set(x, "beforeSelectedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeSelectedTextUndefined: Self = StObject.set(x, "beforeSelectedText", js.undefined)
+    inline def setBeforeSelectedTextUndefined: Self = StObject.set(x, "beforeSelectedText", js.undefined)
     
-    @scala.inline
-    def setClientVersionRanges(value: CfiRange): Self = StObject.set(x, "clientVersionRanges", value.asInstanceOf[js.Any])
+    inline def setClientVersionRanges(value: CfiRange): Self = StObject.set(x, "clientVersionRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientVersionRangesUndefined: Self = StObject.set(x, "clientVersionRanges", js.undefined)
+    inline def setClientVersionRangesUndefined: Self = StObject.set(x, "clientVersionRanges", js.undefined)
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setCurrentVersionRanges(value: CfiRange): Self = StObject.set(x, "currentVersionRanges", value.asInstanceOf[js.Any])
+    inline def setCurrentVersionRanges(value: CfiRange): Self = StObject.set(x, "currentVersionRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersionRangesUndefined: Self = StObject.set(x, "currentVersionRanges", js.undefined)
+    inline def setCurrentVersionRangesUndefined: Self = StObject.set(x, "currentVersionRanges", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
-    @scala.inline
-    def setHighlightStyle(value: String): Self = StObject.set(x, "highlightStyle", value.asInstanceOf[js.Any])
+    inline def setHighlightStyle(value: String): Self = StObject.set(x, "highlightStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightStyleUndefined: Self = StObject.set(x, "highlightStyle", js.undefined)
+    inline def setHighlightStyleUndefined: Self = StObject.set(x, "highlightStyle", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
+    inline def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
     
-    @scala.inline
-    def setLayerSummary(value: AllowedCharacterCount): Self = StObject.set(x, "layerSummary", value.asInstanceOf[js.Any])
+    inline def setLayerSummary(value: AllowedCharacterCount): Self = StObject.set(x, "layerSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerSummaryUndefined: Self = StObject.set(x, "layerSummary", js.undefined)
+    inline def setLayerSummaryUndefined: Self = StObject.set(x, "layerSummary", js.undefined)
     
-    @scala.inline
-    def setPageIds(value: js.Array[String]): Self = StObject.set(x, "pageIds", value.asInstanceOf[js.Any])
+    inline def setPageIds(value: js.Array[String]): Self = StObject.set(x, "pageIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageIdsUndefined: Self = StObject.set(x, "pageIds", js.undefined)
+    inline def setPageIdsUndefined: Self = StObject.set(x, "pageIds", js.undefined)
     
-    @scala.inline
-    def setPageIdsVarargs(value: String*): Self = StObject.set(x, "pageIds", js.Array(value :_*))
+    inline def setPageIdsVarargs(value: String*): Self = StObject.set(x, "pageIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectedText(value: String): Self = StObject.set(x, "selectedText", value.asInstanceOf[js.Any])
+    inline def setSelectedText(value: String): Self = StObject.set(x, "selectedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedTextUndefined: Self = StObject.set(x, "selectedText", js.undefined)
+    inline def setSelectedTextUndefined: Self = StObject.set(x, "selectedText", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
   }
 }

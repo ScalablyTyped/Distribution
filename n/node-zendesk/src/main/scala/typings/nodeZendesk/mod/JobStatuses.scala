@@ -34,59 +34,42 @@ object JobStatuses {
   }
   object ResponseModel {
     
-    @scala.inline
-    def apply(id: ZendeskID): ResponseModel = {
+    inline def apply(id: ZendeskID): ResponseModel = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponseModel]
     }
     
-    @scala.inline
-    implicit class ResponseModelMutableBuilder[Self <: ResponseModel] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseModel](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageNull: Self = StObject.set(x, "message", null)
+      inline def setMessageNull: Self = StObject.set(x, "message", null)
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+      inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
-      @scala.inline
-      def setResults(value: js.Array[Result]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[Result]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      @scala.inline
-      def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlNull: Self = StObject.set(x, "url", null)
+      inline def setUrlNull: Self = StObject.set(x, "url", null)
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -96,17 +79,14 @@ object JobStatuses {
   }
   object ResponsePayload {
     
-    @scala.inline
-    def apply(job_status: ResponseModel): ResponsePayload = {
+    inline def apply(job_status: ResponseModel): ResponsePayload = {
       val __obj = js.Dynamic.literal(job_status = job_status.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponsePayload]
     }
     
-    @scala.inline
-    implicit class ResponsePayloadMutableBuilder[Self <: ResponsePayload] (val x: Self) extends AnyVal {
+    extension [Self <: ResponsePayload](x: Self) {
       
-      @scala.inline
-      def setJob_status(value: ResponseModel): Self = StObject.set(x, "job_status", value.asInstanceOf[js.Any])
+      inline def setJob_status(value: ResponseModel): Self = StObject.set(x, "job_status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,23 +102,18 @@ object JobStatuses {
   }
   object Result {
     
-    @scala.inline
-    def apply(action: String, id: ZendeskID, status: String, success: Boolean): Result = {
+    inline def apply(action: String, id: ZendeskID, status: String, success: Boolean): Result = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,19 +127,14 @@ object JobStatuses {
   trait Status extends StObject
   object Status {
     
-    @scala.inline
-    def completed: typings.nodeZendesk.nodeZendeskStrings.completed = "completed".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.completed]
+    inline def completed: typings.nodeZendesk.nodeZendeskStrings.completed = "completed".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.completed]
     
-    @scala.inline
-    def failed: typings.nodeZendesk.nodeZendeskStrings.failed = "failed".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.failed]
+    inline def failed: typings.nodeZendesk.nodeZendeskStrings.failed = "failed".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.failed]
     
-    @scala.inline
-    def killed: typings.nodeZendesk.nodeZendeskStrings.killed = "killed".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.killed]
+    inline def killed: typings.nodeZendesk.nodeZendeskStrings.killed = "killed".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.killed]
     
-    @scala.inline
-    def queued: typings.nodeZendesk.nodeZendeskStrings.queued = "queued".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.queued]
+    inline def queued: typings.nodeZendesk.nodeZendeskStrings.queued = "queued".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.queued]
     
-    @scala.inline
-    def working: typings.nodeZendesk.nodeZendeskStrings.working = "working".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.working]
+    inline def working: typings.nodeZendesk.nodeZendeskStrings.working = "working".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.working]
   }
 }

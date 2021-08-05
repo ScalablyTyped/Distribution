@@ -31,49 +31,35 @@ trait Windows10SecureAssessmentConfiguration
 }
 object Windows10SecureAssessmentConfiguration {
   
-  @scala.inline
-  def apply(): Windows10SecureAssessmentConfiguration = {
+  inline def apply(): Windows10SecureAssessmentConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Windows10SecureAssessmentConfiguration]
   }
   
-  @scala.inline
-  implicit class Windows10SecureAssessmentConfigurationMutableBuilder[Self <: Windows10SecureAssessmentConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: Windows10SecureAssessmentConfiguration](x: Self) {
     
-    @scala.inline
-    def setAllowPrinting(value: Boolean): Self = StObject.set(x, "allowPrinting", value.asInstanceOf[js.Any])
+    inline def setAllowPrinting(value: Boolean): Self = StObject.set(x, "allowPrinting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPrintingUndefined: Self = StObject.set(x, "allowPrinting", js.undefined)
+    inline def setAllowPrintingUndefined: Self = StObject.set(x, "allowPrinting", js.undefined)
     
-    @scala.inline
-    def setAllowScreenCapture(value: Boolean): Self = StObject.set(x, "allowScreenCapture", value.asInstanceOf[js.Any])
+    inline def setAllowScreenCapture(value: Boolean): Self = StObject.set(x, "allowScreenCapture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowScreenCaptureUndefined: Self = StObject.set(x, "allowScreenCapture", js.undefined)
+    inline def setAllowScreenCaptureUndefined: Self = StObject.set(x, "allowScreenCapture", js.undefined)
     
-    @scala.inline
-    def setAllowTextSuggestion(value: Boolean): Self = StObject.set(x, "allowTextSuggestion", value.asInstanceOf[js.Any])
+    inline def setAllowTextSuggestion(value: Boolean): Self = StObject.set(x, "allowTextSuggestion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowTextSuggestionUndefined: Self = StObject.set(x, "allowTextSuggestion", js.undefined)
+    inline def setAllowTextSuggestionUndefined: Self = StObject.set(x, "allowTextSuggestion", js.undefined)
     
-    @scala.inline
-    def setConfigurationAccount(value: NullableOption[String]): Self = StObject.set(x, "configurationAccount", value.asInstanceOf[js.Any])
+    inline def setConfigurationAccount(value: NullableOption[String]): Self = StObject.set(x, "configurationAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationAccountNull: Self = StObject.set(x, "configurationAccount", null)
+    inline def setConfigurationAccountNull: Self = StObject.set(x, "configurationAccount", null)
     
-    @scala.inline
-    def setConfigurationAccountUndefined: Self = StObject.set(x, "configurationAccount", js.undefined)
+    inline def setConfigurationAccountUndefined: Self = StObject.set(x, "configurationAccount", js.undefined)
     
-    @scala.inline
-    def setLaunchUri(value: NullableOption[String]): Self = StObject.set(x, "launchUri", value.asInstanceOf[js.Any])
+    inline def setLaunchUri(value: NullableOption[String]): Self = StObject.set(x, "launchUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchUriNull: Self = StObject.set(x, "launchUri", null)
+    inline def setLaunchUriNull: Self = StObject.set(x, "launchUri", null)
     
-    @scala.inline
-    def setLaunchUriUndefined: Self = StObject.set(x, "launchUri", js.undefined)
+    inline def setLaunchUriUndefined: Self = StObject.set(x, "launchUri", js.undefined)
   }
 }

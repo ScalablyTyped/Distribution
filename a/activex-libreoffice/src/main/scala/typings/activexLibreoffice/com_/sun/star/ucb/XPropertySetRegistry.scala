@@ -32,8 +32,7 @@ trait XPropertySetRegistry
 }
 object XPropertySetRegistry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     openPropertySet: (String, Boolean) => XPersistentPropertySet,
     queryInterface: `type` => js.Any,
@@ -44,13 +43,10 @@ object XPropertySetRegistry {
     __obj.asInstanceOf[XPropertySetRegistry]
   }
   
-  @scala.inline
-  implicit class XPropertySetRegistryMutableBuilder[Self <: XPropertySetRegistry] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertySetRegistry](x: Self) {
     
-    @scala.inline
-    def setOpenPropertySet(value: (String, Boolean) => XPersistentPropertySet): Self = StObject.set(x, "openPropertySet", js.Any.fromFunction2(value))
+    inline def setOpenPropertySet(value: (String, Boolean) => XPersistentPropertySet): Self = StObject.set(x, "openPropertySet", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemovePropertySet(value: String => Unit): Self = StObject.set(x, "removePropertySet", js.Any.fromFunction1(value))
+    inline def setRemovePropertySet(value: String => Unit): Self = StObject.set(x, "removePropertySet", js.Any.fromFunction1(value))
   }
 }

@@ -91,8 +91,7 @@ trait ViewerState extends StObject {
 }
 object ViewerState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ID: String,
     activePageIndex: Double,
     currentPageIndices: js.Array[Double],
@@ -136,130 +135,88 @@ object ViewerState {
     __obj.asInstanceOf[ViewerState]
   }
   
-  @scala.inline
-  implicit class ViewerStateMutableBuilder[Self <: ViewerState] (val x: Self) extends AnyVal {
+  extension [Self <: ViewerState](x: Self) {
     
-    @scala.inline
-    def setActivePageIndex(value: Double): Self = StObject.set(x, "activePageIndex", value.asInstanceOf[js.Any])
+    inline def setActivePageIndex(value: Double): Self = StObject.set(x, "activePageIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPageIndices(value: js.Array[Double]): Self = StObject.set(x, "currentPageIndices", value.asInstanceOf[js.Any])
+    inline def setCurrentPageIndices(value: js.Array[Double]): Self = StObject.set(x, "currentPageIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPageIndicesVarargs(value: Double*): Self = StObject.set(x, "currentPageIndices", js.Array(value :_*))
+    inline def setCurrentPageIndicesVarargs(value: Double*): Self = StObject.set(x, "currentPageIndices", js.Array(value :_*))
     
-    @scala.inline
-    def setHorizontalOffset(value: Double): Self = StObject.set(x, "horizontalOffset", value.asInstanceOf[js.Any])
+    inline def setHorizontalOffset(value: Double): Self = StObject.set(x, "horizontalOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalPadding(value: Double): Self = StObject.set(x, "horizontalPadding", value.asInstanceOf[js.Any])
+    inline def setHorizontalPadding(value: Double): Self = StObject.set(x, "horizontalPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialKeyScroll(value: Boolean): Self = StObject.set(x, "initialKeyScroll", value.asInstanceOf[js.Any])
+    inline def setInitialKeyScroll(value: Boolean): Self = StObject.set(x, "initialKeyScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialSpaceScroll(value: Boolean): Self = StObject.set(x, "initialSpaceScroll", value.asInstanceOf[js.Any])
+    inline def setInitialSpaceScroll(value: Boolean): Self = StObject.set(x, "initialSpaceScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerElement(value: HTMLElement): Self = StObject.set(x, "innerElement", value.asInstanceOf[js.Any])
+    inline def setInnerElement(value: HTMLElement): Self = StObject.set(x, "innerElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerObject(value: HTMLElement): Self = StObject.set(x, "innerObject", value.asInstanceOf[js.Any])
+    inline def setInnerObject(value: HTMLElement): Self = StObject.set(x, "innerObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActiveDiva(value: Boolean): Self = StObject.set(x, "isActiveDiva", value.asInstanceOf[js.Any])
+    inline def setIsActiveDiva(value: Boolean): Self = StObject.set(x, "isActiveDiva", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsScrollable(value: Boolean): Self = StObject.set(x, "isScrollable", value.asInstanceOf[js.Any])
+    inline def setIsScrollable(value: Boolean): Self = StObject.set(x, "isScrollable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsZooming(value: Boolean): Self = StObject.set(x, "isZooming", value.asInstanceOf[js.Any])
+    inline def setIsZooming(value: Boolean): Self = StObject.set(x, "isZooming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifest(value: default): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+    inline def setManifest(value: default): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileWebkit(value: Boolean): Self = StObject.set(x, "mobileWebkit", value.asInstanceOf[js.Any])
+    inline def setMobileWebkit(value: Boolean): Self = StObject.set(x, "mobileWebkit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumPages(value: Double): Self = StObject.set(x, "numPages", value.asInstanceOf[js.Any])
+    inline def setNumPages(value: Double): Self = StObject.set(x, "numPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldZoomLevel(value: Double): Self = StObject.set(x, "oldZoomLevel", value.asInstanceOf[js.Any])
+    inline def setOldZoomLevel(value: Double): Self = StObject.set(x, "oldZoomLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterElement(value: HTMLElement): Self = StObject.set(x, "outerElement", value.asInstanceOf[js.Any])
+    inline def setOuterElement(value: HTMLElement): Self = StObject.set(x, "outerElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterObject(value: HTMLElement): Self = StObject.set(x, "outerObject", value.asInstanceOf[js.Any])
+    inline def setOuterObject(value: HTMLElement): Self = StObject.set(x, "outerObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageOverlays(value: js.Object): Self = StObject.set(x, "pageOverlays", value.asInstanceOf[js.Any])
+    inline def setPageOverlays(value: js.Object): Self = StObject.set(x, "pageOverlays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTools(value: js.Array[js.Object]): Self = StObject.set(x, "pageTools", value.asInstanceOf[js.Any])
+    inline def setPageTools(value: js.Array[js.Object]): Self = StObject.set(x, "pageTools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageToolsVarargs(value: js.Object*): Self = StObject.set(x, "pageTools", js.Array(value :_*))
+    inline def setPageToolsVarargs(value: js.Object*): Self = StObject.set(x, "pageTools", js.Array(value :_*))
     
-    @scala.inline
-    def setParentObject(value: HTMLElement): Self = StObject.set(x, "parentObject", value.asInstanceOf[js.Any])
+    inline def setParentObject(value: HTMLElement): Self = StObject.set(x, "parentObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingManifestRequest(value: js.Promise[Response]): Self = StObject.set(x, "pendingManifestRequest", value.asInstanceOf[js.Any])
+    inline def setPendingManifestRequest(value: js.Promise[Response]): Self = StObject.set(x, "pendingManifestRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginInstances(value: js.Array[js.Object]): Self = StObject.set(x, "pluginInstances", value.asInstanceOf[js.Any])
+    inline def setPluginInstances(value: js.Array[js.Object]): Self = StObject.set(x, "pluginInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginInstancesVarargs(value: js.Object*): Self = StObject.set(x, "pluginInstances", js.Array(value :_*))
+    inline def setPluginInstancesVarargs(value: js.Object*): Self = StObject.set(x, "pluginInstances", js.Array(value :_*))
     
-    @scala.inline
-    def setRenderer(value: typings.divaJs.rendererMod.default): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: typings.divaJs.rendererMod.default): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeTimer(value: Double): Self = StObject.set(x, "resizeTimer", value.asInstanceOf[js.Any])
+    inline def setResizeTimer(value: Double): Self = StObject.set(x, "resizeTimer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollbarWidth(value: Double): Self = StObject.set(x, "scrollbarWidth", value.asInstanceOf[js.Any])
+    inline def setScrollbarWidth(value: Double): Self = StObject.set(x, "scrollbarWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrobberTimeoutID(value: Double): Self = StObject.set(x, "throbberTimeoutID", value.asInstanceOf[js.Any])
+    inline def setThrobberTimeoutID(value: Double): Self = StObject.set(x, "throbberTimeoutID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbar(value: js.Object): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    inline def setToolbar(value: js.Object): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalOffset(value: Double): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
+    inline def setVerticalOffset(value: Double): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalPadding(value: Double): Self = StObject.set(x, "verticalPadding", value.asInstanceOf[js.Any])
+    inline def setVerticalPadding(value: Double): Self = StObject.set(x, "verticalPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewHandler(value: ViewHandler): Self = StObject.set(x, "viewHandler", value.asInstanceOf[js.Any])
+    inline def setViewHandler(value: ViewHandler): Self = StObject.set(x, "viewHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewport(value: typings.divaJs.viewportMod.default): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: typings.divaJs.viewportMod.default): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportElement(value: HTMLElement): Self = StObject.set(x, "viewportElement", value.asInstanceOf[js.Any])
+    inline def setViewportElement(value: HTMLElement): Self = StObject.set(x, "viewportElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportObject(value: HTMLElement): Self = StObject.set(x, "viewportObject", value.asInstanceOf[js.Any])
+    inline def setViewportObject(value: HTMLElement): Self = StObject.set(x, "viewportObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomDuration(value: Double): Self = StObject.set(x, "zoomDuration", value.asInstanceOf[js.Any])
+    inline def setZoomDuration(value: Double): Self = StObject.set(x, "zoomDuration", value.asInstanceOf[js.Any])
   }
 }

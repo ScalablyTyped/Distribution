@@ -11,14 +11,10 @@ object snapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def priorityHashText(priority: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("priorityHashText")(priority.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def priorityHashText(priority: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("priorityHashText")(priority.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def priorityHashText(priority: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("priorityHashText")(priority.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def priorityHashText(priority: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("priorityHashText")(priority.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def setMaxNode(`val`: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxNode")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setMaxNode(`val`: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxNode")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def validatePriorityNode(priorityNode: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePriorityNode")(priorityNode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validatePriorityNode(priorityNode: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePriorityNode")(priorityNode.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

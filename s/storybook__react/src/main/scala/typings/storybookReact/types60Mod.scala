@@ -17,8 +17,7 @@ object types60Mod {
        with Annotations[Args, ReactReturnType]
   object Meta {
     
-    @scala.inline
-    def apply[Args](title: String): Meta[Args] = {
+    inline def apply[Args](title: String): Meta[Args] = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[Meta[Args]]
     }

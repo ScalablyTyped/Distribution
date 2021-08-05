@@ -22,17 +22,14 @@ object mod extends Shortcut {
   }
   object JsxChaiStatic {
     
-    @scala.inline
-    def apply(jsxChai: (/* chai */ ChaiStatic, /* utils */ ChaiUtils) => Unit): JsxChaiStatic = {
+    inline def apply(jsxChai: (/* chai */ ChaiStatic, /* utils */ ChaiUtils) => Unit): JsxChaiStatic = {
       val __obj = js.Dynamic.literal(jsxChai = js.Any.fromFunction2(jsxChai))
       __obj.asInstanceOf[JsxChaiStatic]
     }
     
-    @scala.inline
-    implicit class JsxChaiStaticMutableBuilder[Self <: JsxChaiStatic] (val x: Self) extends AnyVal {
+    extension [Self <: JsxChaiStatic](x: Self) {
       
-      @scala.inline
-      def setJsxChai(value: (/* chai */ ChaiStatic, /* utils */ ChaiUtils) => Unit): Self = StObject.set(x, "jsxChai", js.Any.fromFunction2(value))
+      inline def setJsxChai(value: (/* chai */ ChaiStatic, /* utils */ ChaiUtils) => Unit): Self = StObject.set(x, "jsxChai", js.Any.fromFunction2(value))
     }
   }
   

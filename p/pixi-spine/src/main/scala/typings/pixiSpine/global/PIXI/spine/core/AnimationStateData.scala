@@ -47,6 +47,5 @@ object AnimationStateData {
   @JSGlobal("PIXI.spine.core.AnimationStateData.deprecatedWarning1")
   @js.native
   def deprecatedWarning1: js.Any = js.native
-  @scala.inline
-  def deprecatedWarning1_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deprecatedWarning1")(x.asInstanceOf[js.Any])
+  inline def deprecatedWarning1_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deprecatedWarning1")(x.asInstanceOf[js.Any])
 }

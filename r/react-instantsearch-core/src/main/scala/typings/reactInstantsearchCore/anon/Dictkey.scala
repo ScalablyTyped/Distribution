@@ -13,16 +13,13 @@ trait Dictkey
 }
 object Dictkey {
   
-  @scala.inline
-  def apply(aroundLatLng: Boolean): Dictkey = {
+  inline def apply(aroundLatLng: Boolean): Dictkey = {
     val __obj = js.Dynamic.literal(aroundLatLng = aroundLatLng.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictkey]
   }
   
-  @scala.inline
-  implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+  extension [Self <: Dictkey](x: Self) {
     
-    @scala.inline
-    def setAroundLatLng(value: Boolean): Self = StObject.set(x, "aroundLatLng", value.asInstanceOf[js.Any])
+    inline def setAroundLatLng(value: Boolean): Self = StObject.set(x, "aroundLatLng", value.asInstanceOf[js.Any])
   }
 }

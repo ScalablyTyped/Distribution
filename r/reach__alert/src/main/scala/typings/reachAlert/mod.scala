@@ -25,20 +25,16 @@ object mod extends Shortcut {
   }
   object AlertProps {
     
-    @scala.inline
-    def apply(): AlertProps = {
+    inline def apply(): AlertProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlertProps]
     }
     
-    @scala.inline
-    implicit class AlertPropsMutableBuilder[Self <: AlertProps] (val x: Self) extends AnyVal {
+    extension [Self <: AlertProps](x: Self) {
       
-      @scala.inline
-      def setType(value: assertive | polite): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: assertive | polite): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   

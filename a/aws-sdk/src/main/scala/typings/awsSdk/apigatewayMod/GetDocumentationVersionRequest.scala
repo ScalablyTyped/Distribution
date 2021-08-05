@@ -18,19 +18,15 @@ trait GetDocumentationVersionRequest extends StObject {
 }
 object GetDocumentationVersionRequest {
   
-  @scala.inline
-  def apply(documentationVersion: String, restApiId: String): GetDocumentationVersionRequest = {
+  inline def apply(documentationVersion: String, restApiId: String): GetDocumentationVersionRequest = {
     val __obj = js.Dynamic.literal(documentationVersion = documentationVersion.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDocumentationVersionRequest]
   }
   
-  @scala.inline
-  implicit class GetDocumentationVersionRequestMutableBuilder[Self <: GetDocumentationVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDocumentationVersionRequest](x: Self) {
     
-    @scala.inline
-    def setDocumentationVersion(value: String): Self = StObject.set(x, "documentationVersion", value.asInstanceOf[js.Any])
+    inline def setDocumentationVersion(value: String): Self = StObject.set(x, "documentationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

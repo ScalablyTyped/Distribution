@@ -28,8 +28,7 @@ object Accounts {
   }
   object IValidateLoginAttemptCbOpts {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowed: Boolean,
       connection: Connection,
       error: Error,
@@ -43,32 +42,23 @@ object Accounts {
       __obj.asInstanceOf[IValidateLoginAttemptCbOpts]
     }
     
-    @scala.inline
-    implicit class IValidateLoginAttemptCbOptsMutableBuilder[Self <: IValidateLoginAttemptCbOpts] (val x: Self) extends AnyVal {
+    extension [Self <: IValidateLoginAttemptCbOpts](x: Self) {
       
-      @scala.inline
-      def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
+      inline def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodArguments(value: js.Array[js.Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
+      inline def setMethodArguments(value: js.Array[js.Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "methodArguments", js.Array(value :_*))
+      inline def setMethodArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "methodArguments", js.Array(value :_*))
       
-      @scala.inline
-      def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+      inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,41 +89,30 @@ object Accounts {
   }
   object LoginMethodOptions {
     
-    @scala.inline
-    def apply(): LoginMethodOptions = {
+    inline def apply(): LoginMethodOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoginMethodOptions]
     }
     
-    @scala.inline
-    implicit class LoginMethodOptionsMutableBuilder[Self <: LoginMethodOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoginMethodOptions](x: Self) {
       
-      @scala.inline
-      def setMethodArguments(value: js.Array[js.Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
+      inline def setMethodArguments(value: js.Array[js.Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodArgumentsUndefined: Self = StObject.set(x, "methodArguments", js.undefined)
+      inline def setMethodArgumentsUndefined: Self = StObject.set(x, "methodArguments", js.undefined)
       
-      @scala.inline
-      def setMethodArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "methodArguments", js.Array(value :_*))
+      inline def setMethodArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "methodArguments", js.Array(value :_*))
       
-      @scala.inline
-      def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+      inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
+      inline def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
       
-      @scala.inline
-      def setUserCallback(value: /* err */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "userCallback", js.Any.fromFunction1(value))
+      inline def setUserCallback(value: /* err */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "userCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUserCallbackUndefined: Self = StObject.set(x, "userCallback", js.undefined)
+      inline def setUserCallbackUndefined: Self = StObject.set(x, "userCallback", js.undefined)
       
-      @scala.inline
-      def setValidateResult(value: js.Function): Self = StObject.set(x, "validateResult", value.asInstanceOf[js.Any])
+      inline def setValidateResult(value: js.Function): Self = StObject.set(x, "validateResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateResultUndefined: Self = StObject.set(x, "validateResult", js.undefined)
+      inline def setValidateResultUndefined: Self = StObject.set(x, "validateResult", js.undefined)
     }
   }
   

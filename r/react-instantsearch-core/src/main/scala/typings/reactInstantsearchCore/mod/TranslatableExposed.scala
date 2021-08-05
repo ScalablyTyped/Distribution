@@ -11,19 +11,15 @@ trait TranslatableExposed extends StObject {
 }
 object TranslatableExposed {
   
-  @scala.inline
-  def apply(): TranslatableExposed = {
+  inline def apply(): TranslatableExposed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TranslatableExposed]
   }
   
-  @scala.inline
-  implicit class TranslatableExposedMutableBuilder[Self <: TranslatableExposed] (val x: Self) extends AnyVal {
+  extension [Self <: TranslatableExposed](x: Self) {
     
-    @scala.inline
-    def setTranslations(value: StringDictionary[String | (js.Function1[/* repeated */ js.Any, String])]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    inline def setTranslations(value: StringDictionary[String | (js.Function1[/* repeated */ js.Any, String])]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+    inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
   }
 }

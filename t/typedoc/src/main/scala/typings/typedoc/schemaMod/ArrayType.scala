@@ -17,8 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ArrayType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     elementType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type,
     `type`: (ModelToObject[/* "array" */ String]) | (/* "array" */ String)
   ): ArrayType = {
@@ -27,19 +26,14 @@ object ArrayType {
     __obj.asInstanceOf[ArrayType]
   }
   
-  @scala.inline
-  implicit class ArrayTypeMutableBuilder[Self <: ArrayType] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayType](x: Self) {
     
-    @scala.inline
-    def setElementType(value: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+    inline def setElementType(value: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "elementType", js.Array(value :_*))
+    inline def setElementTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "elementType", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: (ModelToObject[/* "array" */ String]) | (/* "array" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: (ModelToObject[/* "array" */ String]) | (/* "array" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

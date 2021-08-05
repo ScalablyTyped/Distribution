@@ -22,17 +22,14 @@ object wnsserviceMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(headers: Dictionary[String]): Options = {
+    inline def apply(headers: Dictionary[String]): Options = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: Dictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Dictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,98 +66,68 @@ object wnsserviceMod {
   }
   object Payload {
     
-    @scala.inline
-    def apply(): Payload = {
+    inline def apply(): Payload = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Payload]
     }
     
-    @scala.inline
-    implicit class PayloadMutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
+    extension [Self <: Payload](x: Self) {
       
-      @scala.inline
-      def setImage1alt(value: String): Self = StObject.set(x, "image1alt", value.asInstanceOf[js.Any])
+      inline def setImage1alt(value: String): Self = StObject.set(x, "image1alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage1altUndefined: Self = StObject.set(x, "image1alt", js.undefined)
+      inline def setImage1altUndefined: Self = StObject.set(x, "image1alt", js.undefined)
       
-      @scala.inline
-      def setImage1src(value: String): Self = StObject.set(x, "image1src", value.asInstanceOf[js.Any])
+      inline def setImage1src(value: String): Self = StObject.set(x, "image1src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage1srcUndefined: Self = StObject.set(x, "image1src", js.undefined)
+      inline def setImage1srcUndefined: Self = StObject.set(x, "image1src", js.undefined)
       
-      @scala.inline
-      def setImage2alt(value: String): Self = StObject.set(x, "image2alt", value.asInstanceOf[js.Any])
+      inline def setImage2alt(value: String): Self = StObject.set(x, "image2alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage2altUndefined: Self = StObject.set(x, "image2alt", js.undefined)
+      inline def setImage2altUndefined: Self = StObject.set(x, "image2alt", js.undefined)
       
-      @scala.inline
-      def setImage2src(value: String): Self = StObject.set(x, "image2src", value.asInstanceOf[js.Any])
+      inline def setImage2src(value: String): Self = StObject.set(x, "image2src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage2srcUndefined: Self = StObject.set(x, "image2src", js.undefined)
+      inline def setImage2srcUndefined: Self = StObject.set(x, "image2src", js.undefined)
       
-      @scala.inline
-      def setImage3alt(value: String): Self = StObject.set(x, "image3alt", value.asInstanceOf[js.Any])
+      inline def setImage3alt(value: String): Self = StObject.set(x, "image3alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage3altUndefined: Self = StObject.set(x, "image3alt", js.undefined)
+      inline def setImage3altUndefined: Self = StObject.set(x, "image3alt", js.undefined)
       
-      @scala.inline
-      def setImage3src(value: String): Self = StObject.set(x, "image3src", value.asInstanceOf[js.Any])
+      inline def setImage3src(value: String): Self = StObject.set(x, "image3src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage3srcUndefined: Self = StObject.set(x, "image3src", js.undefined)
+      inline def setImage3srcUndefined: Self = StObject.set(x, "image3src", js.undefined)
       
-      @scala.inline
-      def setImage4alt(value: String): Self = StObject.set(x, "image4alt", value.asInstanceOf[js.Any])
+      inline def setImage4alt(value: String): Self = StObject.set(x, "image4alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage4altUndefined: Self = StObject.set(x, "image4alt", js.undefined)
+      inline def setImage4altUndefined: Self = StObject.set(x, "image4alt", js.undefined)
       
-      @scala.inline
-      def setImage4src(value: String): Self = StObject.set(x, "image4src", value.asInstanceOf[js.Any])
+      inline def setImage4src(value: String): Self = StObject.set(x, "image4src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage4srcUndefined: Self = StObject.set(x, "image4src", js.undefined)
+      inline def setImage4srcUndefined: Self = StObject.set(x, "image4src", js.undefined)
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setText1(value: String): Self = StObject.set(x, "text1", value.asInstanceOf[js.Any])
+      inline def setText1(value: String): Self = StObject.set(x, "text1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText1Undefined: Self = StObject.set(x, "text1", js.undefined)
+      inline def setText1Undefined: Self = StObject.set(x, "text1", js.undefined)
       
-      @scala.inline
-      def setText2(value: String): Self = StObject.set(x, "text2", value.asInstanceOf[js.Any])
+      inline def setText2(value: String): Self = StObject.set(x, "text2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText2Undefined: Self = StObject.set(x, "text2", js.undefined)
+      inline def setText2Undefined: Self = StObject.set(x, "text2", js.undefined)
       
-      @scala.inline
-      def setText3(value: String): Self = StObject.set(x, "text3", value.asInstanceOf[js.Any])
+      inline def setText3(value: String): Self = StObject.set(x, "text3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText3Undefined: Self = StObject.set(x, "text3", js.undefined)
+      inline def setText3Undefined: Self = StObject.set(x, "text3", js.undefined)
       
-      @scala.inline
-      def setText4(value: String): Self = StObject.set(x, "text4", value.asInstanceOf[js.Any])
+      inline def setText4(value: String): Self = StObject.set(x, "text4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText4Undefined: Self = StObject.set(x, "text4", js.undefined)
+      inline def setText4Undefined: Self = StObject.set(x, "text4", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -2354,41 +2321,29 @@ object wnsserviceMod {
   trait badges extends StObject
   object badges {
     
-    @scala.inline
-    def activity: typings.azureSb.azureSbStrings.activity = "activity".asInstanceOf[typings.azureSb.azureSbStrings.activity]
+    inline def activity: typings.azureSb.azureSbStrings.activity = "activity".asInstanceOf[typings.azureSb.azureSbStrings.activity]
     
-    @scala.inline
-    def alert: typings.azureSb.azureSbStrings.alert = "alert".asInstanceOf[typings.azureSb.azureSbStrings.alert]
+    inline def alert: typings.azureSb.azureSbStrings.alert = "alert".asInstanceOf[typings.azureSb.azureSbStrings.alert]
     
-    @scala.inline
-    def attention: typings.azureSb.azureSbStrings.attention = "attention".asInstanceOf[typings.azureSb.azureSbStrings.attention]
+    inline def attention: typings.azureSb.azureSbStrings.attention = "attention".asInstanceOf[typings.azureSb.azureSbStrings.attention]
     
-    @scala.inline
-    def available: typings.azureSb.azureSbStrings.available = "available".asInstanceOf[typings.azureSb.azureSbStrings.available]
+    inline def available: typings.azureSb.azureSbStrings.available = "available".asInstanceOf[typings.azureSb.azureSbStrings.available]
     
-    @scala.inline
-    def away: typings.azureSb.azureSbStrings.away = "away".asInstanceOf[typings.azureSb.azureSbStrings.away]
+    inline def away: typings.azureSb.azureSbStrings.away = "away".asInstanceOf[typings.azureSb.azureSbStrings.away]
     
-    @scala.inline
-    def busy: typings.azureSb.azureSbStrings.busy = "busy".asInstanceOf[typings.azureSb.azureSbStrings.busy]
+    inline def busy: typings.azureSb.azureSbStrings.busy = "busy".asInstanceOf[typings.azureSb.azureSbStrings.busy]
     
-    @scala.inline
-    def error: typings.azureSb.azureSbStrings.error = "error".asInstanceOf[typings.azureSb.azureSbStrings.error]
+    inline def error: typings.azureSb.azureSbStrings.error = "error".asInstanceOf[typings.azureSb.azureSbStrings.error]
     
-    @scala.inline
-    def newMessage: typings.azureSb.azureSbStrings.newMessage = "newMessage".asInstanceOf[typings.azureSb.azureSbStrings.newMessage]
+    inline def newMessage: typings.azureSb.azureSbStrings.newMessage = "newMessage".asInstanceOf[typings.azureSb.azureSbStrings.newMessage]
     
-    @scala.inline
-    def none: typings.azureSb.azureSbStrings.none = "none".asInstanceOf[typings.azureSb.azureSbStrings.none]
+    inline def none: typings.azureSb.azureSbStrings.none = "none".asInstanceOf[typings.azureSb.azureSbStrings.none]
     
-    @scala.inline
-    def paused: typings.azureSb.azureSbStrings.paused = "paused".asInstanceOf[typings.azureSb.azureSbStrings.paused]
+    inline def paused: typings.azureSb.azureSbStrings.paused = "paused".asInstanceOf[typings.azureSb.azureSbStrings.paused]
     
-    @scala.inline
-    def playing: typings.azureSb.azureSbStrings.playing = "playing".asInstanceOf[typings.azureSb.azureSbStrings.playing]
+    inline def playing: typings.azureSb.azureSbStrings.playing = "playing".asInstanceOf[typings.azureSb.azureSbStrings.playing]
     
-    @scala.inline
-    def unavailable: typings.azureSb.azureSbStrings.unavailable = "unavailable".asInstanceOf[typings.azureSb.azureSbStrings.unavailable]
+    inline def unavailable: typings.azureSb.azureSbStrings.unavailable = "unavailable".asInstanceOf[typings.azureSb.azureSbStrings.unavailable]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -2400,16 +2355,12 @@ object wnsserviceMod {
   trait types extends StObject
   object types {
     
-    @scala.inline
-    def wnsSlashbadge: typings.azureSb.azureSbStrings.wnsSlashbadge = "wns/badge".asInstanceOf[typings.azureSb.azureSbStrings.wnsSlashbadge]
+    inline def wnsSlashbadge: typings.azureSb.azureSbStrings.wnsSlashbadge = "wns/badge".asInstanceOf[typings.azureSb.azureSbStrings.wnsSlashbadge]
     
-    @scala.inline
-    def wnsSlashraw: typings.azureSb.azureSbStrings.wnsSlashraw = "wns/raw".asInstanceOf[typings.azureSb.azureSbStrings.wnsSlashraw]
+    inline def wnsSlashraw: typings.azureSb.azureSbStrings.wnsSlashraw = "wns/raw".asInstanceOf[typings.azureSb.azureSbStrings.wnsSlashraw]
     
-    @scala.inline
-    def wnsSlashtile: typings.azureSb.azureSbStrings.wnsSlashtile = "wns/tile".asInstanceOf[typings.azureSb.azureSbStrings.wnsSlashtile]
+    inline def wnsSlashtile: typings.azureSb.azureSbStrings.wnsSlashtile = "wns/tile".asInstanceOf[typings.azureSb.azureSbStrings.wnsSlashtile]
     
-    @scala.inline
-    def wnsSlashtoast: typings.azureSb.azureSbStrings.wnsSlashtoast = "wns/toast".asInstanceOf[typings.azureSb.azureSbStrings.wnsSlashtoast]
+    inline def wnsSlashtoast: typings.azureSb.azureSbStrings.wnsSlashtoast = "wns/toast".asInstanceOf[typings.azureSb.azureSbStrings.wnsSlashtoast]
   }
 }

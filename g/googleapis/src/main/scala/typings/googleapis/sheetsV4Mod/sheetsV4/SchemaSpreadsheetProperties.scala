@@ -51,49 +51,35 @@ trait SchemaSpreadsheetProperties extends StObject {
 }
 object SchemaSpreadsheetProperties {
   
-  @scala.inline
-  def apply(): SchemaSpreadsheetProperties = {
+  inline def apply(): SchemaSpreadsheetProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSpreadsheetProperties]
   }
   
-  @scala.inline
-  implicit class SchemaSpreadsheetPropertiesMutableBuilder[Self <: SchemaSpreadsheetProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSpreadsheetProperties](x: Self) {
     
-    @scala.inline
-    def setAutoRecalc(value: String): Self = StObject.set(x, "autoRecalc", value.asInstanceOf[js.Any])
+    inline def setAutoRecalc(value: String): Self = StObject.set(x, "autoRecalc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRecalcUndefined: Self = StObject.set(x, "autoRecalc", js.undefined)
+    inline def setAutoRecalcUndefined: Self = StObject.set(x, "autoRecalc", js.undefined)
     
-    @scala.inline
-    def setDefaultFormat(value: SchemaCellFormat): Self = StObject.set(x, "defaultFormat", value.asInstanceOf[js.Any])
+    inline def setDefaultFormat(value: SchemaCellFormat): Self = StObject.set(x, "defaultFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultFormatUndefined: Self = StObject.set(x, "defaultFormat", js.undefined)
+    inline def setDefaultFormatUndefined: Self = StObject.set(x, "defaultFormat", js.undefined)
     
-    @scala.inline
-    def setIterativeCalculationSettings(value: SchemaIterativeCalculationSettings): Self = StObject.set(x, "iterativeCalculationSettings", value.asInstanceOf[js.Any])
+    inline def setIterativeCalculationSettings(value: SchemaIterativeCalculationSettings): Self = StObject.set(x, "iterativeCalculationSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterativeCalculationSettingsUndefined: Self = StObject.set(x, "iterativeCalculationSettings", js.undefined)
+    inline def setIterativeCalculationSettingsUndefined: Self = StObject.set(x, "iterativeCalculationSettings", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

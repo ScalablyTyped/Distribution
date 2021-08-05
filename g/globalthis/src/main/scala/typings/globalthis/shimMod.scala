@@ -9,8 +9,7 @@ object shimMod {
   /**
     * Installs the `globalThis` property onto the global object.
     */
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
   
   @JSImport("globalthis/shim", JSImport.Namespace)
   @js.native

@@ -30,31 +30,23 @@ trait ParamsResourceCoursesAliasesCreate
 }
 object ParamsResourceCoursesAliasesCreate {
   
-  @scala.inline
-  def apply(): ParamsResourceCoursesAliasesCreate = {
+  inline def apply(): ParamsResourceCoursesAliasesCreate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCoursesAliasesCreate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCoursesAliasesCreateMutableBuilder[Self <: ParamsResourceCoursesAliasesCreate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCoursesAliasesCreate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
+    inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
+    inline def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaCourseAlias): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaCourseAlias): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

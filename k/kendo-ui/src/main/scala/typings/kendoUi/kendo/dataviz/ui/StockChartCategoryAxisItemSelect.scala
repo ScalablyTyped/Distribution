@@ -19,43 +19,31 @@ trait StockChartCategoryAxisItemSelect extends StObject {
 }
 object StockChartCategoryAxisItemSelect {
   
-  @scala.inline
-  def apply(): StockChartCategoryAxisItemSelect = {
+  inline def apply(): StockChartCategoryAxisItemSelect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockChartCategoryAxisItemSelect]
   }
   
-  @scala.inline
-  implicit class StockChartCategoryAxisItemSelectMutableBuilder[Self <: StockChartCategoryAxisItemSelect] (val x: Self) extends AnyVal {
+  extension [Self <: StockChartCategoryAxisItemSelect](x: Self) {
     
-    @scala.inline
-    def setFrom(value: String | Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String | Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setMax(value: js.Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: js.Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: js.Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: js.Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setMousewheel(value: StockChartCategoryAxisItemSelectMousewheel): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
+    inline def setMousewheel(value: StockChartCategoryAxisItemSelectMousewheel): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
+    inline def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
     
-    @scala.inline
-    def setTo(value: String | Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String | Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

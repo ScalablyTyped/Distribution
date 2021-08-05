@@ -18,25 +18,19 @@ trait ManagedResourceSummary extends StObject {
 }
 object ManagedResourceSummary {
   
-  @scala.inline
-  def apply(): ManagedResourceSummary = {
+  inline def apply(): ManagedResourceSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedResourceSummary]
   }
   
-  @scala.inline
-  implicit class ManagedResourceSummaryMutableBuilder[Self <: ManagedResourceSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedResourceSummary](x: Self) {
     
-    @scala.inline
-    def setAssociationCount(value: BoxLong): Self = StObject.set(x, "AssociationCount", value.asInstanceOf[js.Any])
+    inline def setAssociationCount(value: BoxLong): Self = StObject.set(x, "AssociationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationCountUndefined: Self = StObject.set(x, "AssociationCount", js.undefined)
+    inline def setAssociationCountUndefined: Self = StObject.set(x, "AssociationCount", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

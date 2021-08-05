@@ -16,37 +16,27 @@ trait Job extends StObject {
 }
 object Job {
   
-  @scala.inline
-  def apply(): Job = {
+  inline def apply(): Job = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Job]
   }
   
-  @scala.inline
-  implicit class JobMutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
+  extension [Self <: Job](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setIsCanceled(value: IsCanceled): Self = StObject.set(x, "IsCanceled", value.asInstanceOf[js.Any])
+    inline def setIsCanceled(value: IsCanceled): Self = StObject.set(x, "IsCanceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCanceledUndefined: Self = StObject.set(x, "IsCanceled", js.undefined)
+    inline def setIsCanceledUndefined: Self = StObject.set(x, "IsCanceled", js.undefined)
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
     
-    @scala.inline
-    def setJobType(value: JobType): Self = StObject.set(x, "JobType", value.asInstanceOf[js.Any])
+    inline def setJobType(value: JobType): Self = StObject.set(x, "JobType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTypeUndefined: Self = StObject.set(x, "JobType", js.undefined)
+    inline def setJobTypeUndefined: Self = StObject.set(x, "JobType", js.undefined)
   }
 }

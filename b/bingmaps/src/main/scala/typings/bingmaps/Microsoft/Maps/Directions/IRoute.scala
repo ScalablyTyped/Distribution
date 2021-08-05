@@ -15,25 +15,19 @@ trait IRoute extends StObject {
 }
 object IRoute {
   
-  @scala.inline
-  def apply(routeLegs: js.Array[IRouteLeg], routePath: js.Array[Location]): IRoute = {
+  inline def apply(routeLegs: js.Array[IRouteLeg], routePath: js.Array[Location]): IRoute = {
     val __obj = js.Dynamic.literal(routeLegs = routeLegs.asInstanceOf[js.Any], routePath = routePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRoute]
   }
   
-  @scala.inline
-  implicit class IRouteMutableBuilder[Self <: IRoute] (val x: Self) extends AnyVal {
+  extension [Self <: IRoute](x: Self) {
     
-    @scala.inline
-    def setRouteLegs(value: js.Array[IRouteLeg]): Self = StObject.set(x, "routeLegs", value.asInstanceOf[js.Any])
+    inline def setRouteLegs(value: js.Array[IRouteLeg]): Self = StObject.set(x, "routeLegs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteLegsVarargs(value: IRouteLeg*): Self = StObject.set(x, "routeLegs", js.Array(value :_*))
+    inline def setRouteLegsVarargs(value: IRouteLeg*): Self = StObject.set(x, "routeLegs", js.Array(value :_*))
     
-    @scala.inline
-    def setRoutePath(value: js.Array[Location]): Self = StObject.set(x, "routePath", value.asInstanceOf[js.Any])
+    inline def setRoutePath(value: js.Array[Location]): Self = StObject.set(x, "routePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutePathVarargs(value: Location*): Self = StObject.set(x, "routePath", js.Array(value :_*))
+    inline def setRoutePathVarargs(value: Location*): Self = StObject.set(x, "routePath", js.Array(value :_*))
   }
 }

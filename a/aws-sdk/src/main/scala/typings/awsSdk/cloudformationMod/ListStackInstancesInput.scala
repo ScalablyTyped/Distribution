@@ -38,49 +38,35 @@ trait ListStackInstancesInput extends StObject {
 }
 object ListStackInstancesInput {
   
-  @scala.inline
-  def apply(StackSetName: StackSetName): ListStackInstancesInput = {
+  inline def apply(StackSetName: StackSetName): ListStackInstancesInput = {
     val __obj = js.Dynamic.literal(StackSetName = StackSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListStackInstancesInput]
   }
   
-  @scala.inline
-  implicit class ListStackInstancesInputMutableBuilder[Self <: ListStackInstancesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListStackInstancesInput](x: Self) {
     
-    @scala.inline
-    def setFilters(value: StackInstanceFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: StackInstanceFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: StackInstanceFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: StackInstanceFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStackInstanceAccount(value: Account): Self = StObject.set(x, "StackInstanceAccount", value.asInstanceOf[js.Any])
+    inline def setStackInstanceAccount(value: Account): Self = StObject.set(x, "StackInstanceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackInstanceAccountUndefined: Self = StObject.set(x, "StackInstanceAccount", js.undefined)
+    inline def setStackInstanceAccountUndefined: Self = StObject.set(x, "StackInstanceAccount", js.undefined)
     
-    @scala.inline
-    def setStackInstanceRegion(value: Region): Self = StObject.set(x, "StackInstanceRegion", value.asInstanceOf[js.Any])
+    inline def setStackInstanceRegion(value: Region): Self = StObject.set(x, "StackInstanceRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackInstanceRegionUndefined: Self = StObject.set(x, "StackInstanceRegion", js.undefined)
+    inline def setStackInstanceRegionUndefined: Self = StObject.set(x, "StackInstanceRegion", js.undefined)
     
-    @scala.inline
-    def setStackSetName(value: StackSetName): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
+    inline def setStackSetName(value: StackSetName): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
   }
 }

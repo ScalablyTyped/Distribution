@@ -30,31 +30,23 @@ trait SchemaAutoFillRequest extends StObject {
 }
 object SchemaAutoFillRequest {
   
-  @scala.inline
-  def apply(): SchemaAutoFillRequest = {
+  inline def apply(): SchemaAutoFillRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAutoFillRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAutoFillRequestMutableBuilder[Self <: SchemaAutoFillRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAutoFillRequest](x: Self) {
     
-    @scala.inline
-    def setRange(value: SchemaGridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SchemaGridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setSourceAndDestination(value: SchemaSourceAndDestination): Self = StObject.set(x, "sourceAndDestination", value.asInstanceOf[js.Any])
+    inline def setSourceAndDestination(value: SchemaSourceAndDestination): Self = StObject.set(x, "sourceAndDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceAndDestinationUndefined: Self = StObject.set(x, "sourceAndDestination", js.undefined)
+    inline def setSourceAndDestinationUndefined: Self = StObject.set(x, "sourceAndDestination", js.undefined)
     
-    @scala.inline
-    def setUseAlternateSeries(value: Boolean): Self = StObject.set(x, "useAlternateSeries", value.asInstanceOf[js.Any])
+    inline def setUseAlternateSeries(value: Boolean): Self = StObject.set(x, "useAlternateSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseAlternateSeriesUndefined: Self = StObject.set(x, "useAlternateSeries", js.undefined)
+    inline def setUseAlternateSeriesUndefined: Self = StObject.set(x, "useAlternateSeries", js.undefined)
   }
 }

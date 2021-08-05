@@ -17,27 +17,22 @@ trait WorkspaceItemList extends StObject {
 }
 object WorkspaceItemList {
   
-  @scala.inline
-  def apply(): WorkspaceItemList = {
+  inline def apply(): WorkspaceItemList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceItemList]
   }
   
-  @scala.inline
-  implicit class WorkspaceItemListMutableBuilder[Self <: WorkspaceItemList] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceItemList](x: Self) {
     
-    @scala.inline
-    def setItems(
+    inline def setItems(
       value: js.Array[
           /* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem
         ]
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(
+    inline def setItemsVarargs(
       value: (/* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem)*
     ): Self = StObject.set(x, "items", js.Array(value :_*))
   }

@@ -13,16 +13,13 @@ trait UpdateHealthCheckResponse extends StObject {
 }
 object UpdateHealthCheckResponse {
   
-  @scala.inline
-  def apply(HealthCheck: HealthCheck): UpdateHealthCheckResponse = {
+  inline def apply(HealthCheck: HealthCheck): UpdateHealthCheckResponse = {
     val __obj = js.Dynamic.literal(HealthCheck = HealthCheck.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateHealthCheckResponse]
   }
   
-  @scala.inline
-  implicit class UpdateHealthCheckResponseMutableBuilder[Self <: UpdateHealthCheckResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateHealthCheckResponse](x: Self) {
     
-    @scala.inline
-    def setHealthCheck(value: HealthCheck): Self = StObject.set(x, "HealthCheck", value.asInstanceOf[js.Any])
+    inline def setHealthCheck(value: HealthCheck): Self = StObject.set(x, "HealthCheck", value.asInstanceOf[js.Any])
   }
 }

@@ -33,8 +33,7 @@ trait CertificateKeyUsages extends StObject {
 }
 object CertificateKeyUsages {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     crlSign: Boolean,
     dataEncipherment: Boolean,
     digitalSignature: Boolean,
@@ -48,31 +47,22 @@ object CertificateKeyUsages {
     __obj.asInstanceOf[CertificateKeyUsages]
   }
   
-  @scala.inline
-  implicit class CertificateKeyUsagesMutableBuilder[Self <: CertificateKeyUsages] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateKeyUsages](x: Self) {
     
-    @scala.inline
-    def setCrlSign(value: Boolean): Self = StObject.set(x, "crlSign", value.asInstanceOf[js.Any])
+    inline def setCrlSign(value: Boolean): Self = StObject.set(x, "crlSign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataEncipherment(value: Boolean): Self = StObject.set(x, "dataEncipherment", value.asInstanceOf[js.Any])
+    inline def setDataEncipherment(value: Boolean): Self = StObject.set(x, "dataEncipherment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigitalSignature(value: Boolean): Self = StObject.set(x, "digitalSignature", value.asInstanceOf[js.Any])
+    inline def setDigitalSignature(value: Boolean): Self = StObject.set(x, "digitalSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncipherOnly(value: Boolean): Self = StObject.set(x, "encipherOnly", value.asInstanceOf[js.Any])
+    inline def setEncipherOnly(value: Boolean): Self = StObject.set(x, "encipherOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyAgreement(value: Boolean): Self = StObject.set(x, "keyAgreement", value.asInstanceOf[js.Any])
+    inline def setKeyAgreement(value: Boolean): Self = StObject.set(x, "keyAgreement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyCertificateSign(value: Boolean): Self = StObject.set(x, "keyCertificateSign", value.asInstanceOf[js.Any])
+    inline def setKeyCertificateSign(value: Boolean): Self = StObject.set(x, "keyCertificateSign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyEncipherment(value: Boolean): Self = StObject.set(x, "keyEncipherment", value.asInstanceOf[js.Any])
+    inline def setKeyEncipherment(value: Boolean): Self = StObject.set(x, "keyEncipherment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonRepudiation(value: Boolean): Self = StObject.set(x, "nonRepudiation", value.asInstanceOf[js.Any])
+    inline def setNonRepudiation(value: Boolean): Self = StObject.set(x, "nonRepudiation", value.asInstanceOf[js.Any])
   }
 }

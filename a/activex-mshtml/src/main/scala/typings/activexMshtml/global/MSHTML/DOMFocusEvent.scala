@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMFocusEvent")
 @js.native
-class DOMFocusEvent protected ()
+/* private */ class DOMFocusEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMFocusEvent {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.DOMFocusEvent_typekey")
   var MSHTMLDotDOMFocusEvent_typekey: typings.activexMshtml.MSHTML.DOMFocusEvent = js.native
   

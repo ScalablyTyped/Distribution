@@ -27,32 +27,24 @@ trait ServerExtEventsObject extends StObject {
 }
 object ServerExtEventsObject {
   
-  @scala.inline
-  def apply(method: ServerExtPointFunction | js.Array[ServerExtPointFunction], `type`: ServerExtType): ServerExtEventsObject = {
+  inline def apply(method: ServerExtPointFunction | js.Array[ServerExtPointFunction], `type`: ServerExtType): ServerExtEventsObject = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerExtEventsObject]
   }
   
-  @scala.inline
-  implicit class ServerExtEventsObjectMutableBuilder[Self <: ServerExtEventsObject] (val x: Self) extends AnyVal {
+  extension [Self <: ServerExtEventsObject](x: Self) {
     
-    @scala.inline
-    def setMethod(value: ServerExtPointFunction | js.Array[ServerExtPointFunction]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: ServerExtPointFunction | js.Array[ServerExtPointFunction]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodFunction1(value: /* server */ Server_ => Unit): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
+    inline def setMethodFunction1(value: /* server */ Server_ => Unit): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMethodVarargs(value: ServerExtPointFunction*): Self = StObject.set(x, "method", js.Array(value :_*))
+    inline def setMethodVarargs(value: ServerExtPointFunction*): Self = StObject.set(x, "method", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: ServerExtOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ServerExtOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setType(value: ServerExtType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ServerExtType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,8 +13,7 @@ trait WorkspaceMiddleware
      with WorkspaceFolderWorkspaceMiddleware
 object WorkspaceMiddleware {
   
-  @scala.inline
-  def apply(): WorkspaceMiddleware = {
+  inline def apply(): WorkspaceMiddleware = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceMiddleware]
   }

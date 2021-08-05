@@ -12,16 +12,13 @@ trait ComponentPropsOptionsArray
 }
 object ComponentPropsOptionsArray {
   
-  @scala.inline
-  def apply(editable: Boolean, editor: String, field: String, hideTool: Boolean, key: String, label: String): ComponentPropsOptionsArray = {
+  inline def apply(editable: Boolean, editor: String, field: String, hideTool: Boolean, key: String, label: String): ComponentPropsOptionsArray = {
     val __obj = js.Dynamic.literal(editable = editable.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hideTool = hideTool.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentPropsOptionsArray]
   }
   
-  @scala.inline
-  implicit class ComponentPropsOptionsArrayMutableBuilder[Self <: ComponentPropsOptionsArray] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentPropsOptionsArray](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

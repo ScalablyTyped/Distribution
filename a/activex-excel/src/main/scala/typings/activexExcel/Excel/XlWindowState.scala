@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlWindowState extends StObject
 object XlWindowState {
   
-  @scala.inline
-  def xlMaximized: `-4137` = -4137.asInstanceOf[`-4137`]
+  inline def xlMaximized: `-4137` = -4137.asInstanceOf[`-4137`]
   
-  @scala.inline
-  def xlMinimized: `-4140` = -4140.asInstanceOf[`-4140`]
+  inline def xlMinimized: `-4140` = -4140.asInstanceOf[`-4140`]
   
-  @scala.inline
-  def xlNormal: `-4143` = -4143.asInstanceOf[`-4143`]
+  inline def xlNormal: `-4143` = -4143.asInstanceOf[`-4143`]
 }

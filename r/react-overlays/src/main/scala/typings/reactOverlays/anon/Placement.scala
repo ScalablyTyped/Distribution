@@ -15,22 +15,17 @@ trait Placement extends StObject {
 }
 object Placement {
   
-  @scala.inline
-  def apply(placement: typings.reactOverlays.usePopperMod.Placement, popper: Rect, reference: Rect): Placement = {
+  inline def apply(placement: typings.reactOverlays.usePopperMod.Placement, popper: Rect, reference: Rect): Placement = {
     val __obj = js.Dynamic.literal(placement = placement.asInstanceOf[js.Any], popper = popper.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[Placement]
   }
   
-  @scala.inline
-  implicit class PlacementMutableBuilder[Self <: Placement] (val x: Self) extends AnyVal {
+  extension [Self <: Placement](x: Self) {
     
-    @scala.inline
-    def setPlacement(value: typings.reactOverlays.usePopperMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: typings.reactOverlays.usePopperMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopper(value: Rect): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+    inline def setPopper(value: Rect): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReference(value: Rect): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: Rect): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait PutRepositoryTriggersOutput extends StObject {
 }
 object PutRepositoryTriggersOutput {
   
-  @scala.inline
-  def apply(): PutRepositoryTriggersOutput = {
+  inline def apply(): PutRepositoryTriggersOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutRepositoryTriggersOutput]
   }
   
-  @scala.inline
-  implicit class PutRepositoryTriggersOutputMutableBuilder[Self <: PutRepositoryTriggersOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PutRepositoryTriggersOutput](x: Self) {
     
-    @scala.inline
-    def setConfigurationId(value: RepositoryTriggersConfigurationId): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
+    inline def setConfigurationId(value: RepositoryTriggersConfigurationId): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationIdUndefined: Self = StObject.set(x, "configurationId", js.undefined)
+    inline def setConfigurationIdUndefined: Self = StObject.set(x, "configurationId", js.undefined)
   }
 }

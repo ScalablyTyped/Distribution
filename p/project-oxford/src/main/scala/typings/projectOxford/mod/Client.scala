@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Client protected () extends StObject {
   def this(apiKey: String) = this()
   
-  var _key: String = js.native
+  /* private */ var _key: String = js.native
   
   var face: FaceAPI = js.native
   

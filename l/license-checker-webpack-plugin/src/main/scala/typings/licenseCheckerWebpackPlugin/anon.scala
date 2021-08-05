@@ -25,44 +25,32 @@ object anon {
   }
   object PartialDependency {
     
-    @scala.inline
-    def apply(): PartialDependency = {
+    inline def apply(): PartialDependency = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialDependency]
     }
     
-    @scala.inline
-    implicit class PartialDependencyMutableBuilder[Self <: PartialDependency] (val x: Self) extends AnyVal {
+    extension [Self <: PartialDependency](x: Self) {
       
-      @scala.inline
-      def setLicenseName(value: String): Self = StObject.set(x, "licenseName", value.asInstanceOf[js.Any])
+      inline def setLicenseName(value: String): Self = StObject.set(x, "licenseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseNameUndefined: Self = StObject.set(x, "licenseName", js.undefined)
+      inline def setLicenseNameUndefined: Self = StObject.set(x, "licenseName", js.undefined)
       
-      @scala.inline
-      def setLicenseText(value: String): Self = StObject.set(x, "licenseText", value.asInstanceOf[js.Any])
+      inline def setLicenseText(value: String): Self = StObject.set(x, "licenseText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseTextUndefined: Self = StObject.set(x, "licenseText", js.undefined)
+      inline def setLicenseTextUndefined: Self = StObject.set(x, "licenseText", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+      inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+      inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -85,62 +73,44 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setAllow(value: String): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+      inline def setAllow(value: String): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
+      inline def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
       
-      @scala.inline
-      def setEmitError(value: Boolean): Self = StObject.set(x, "emitError", value.asInstanceOf[js.Any])
+      inline def setEmitError(value: Boolean): Self = StObject.set(x, "emitError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitErrorUndefined: Self = StObject.set(x, "emitError", js.undefined)
+      inline def setEmitErrorUndefined: Self = StObject.set(x, "emitError", js.undefined)
       
-      @scala.inline
-      def setFilter(value: RegExp): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: RegExp): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setOutputFilename(value: String): Self = StObject.set(x, "outputFilename", value.asInstanceOf[js.Any])
+      inline def setOutputFilename(value: String): Self = StObject.set(x, "outputFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFilenameUndefined: Self = StObject.set(x, "outputFilename", js.undefined)
+      inline def setOutputFilenameUndefined: Self = StObject.set(x, "outputFilename", js.undefined)
       
-      @scala.inline
-      def setOutputWriter(value: String | OutputWriter): Self = StObject.set(x, "outputWriter", value.asInstanceOf[js.Any])
+      inline def setOutputWriter(value: String | OutputWriter): Self = StObject.set(x, "outputWriter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputWriterFunction1(value: /* args */ OutputWriterArgs => String): Self = StObject.set(x, "outputWriter", js.Any.fromFunction1(value))
+      inline def setOutputWriterFunction1(value: /* args */ OutputWriterArgs => String): Self = StObject.set(x, "outputWriter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOutputWriterUndefined: Self = StObject.set(x, "outputWriter", js.undefined)
+      inline def setOutputWriterUndefined: Self = StObject.set(x, "outputWriter", js.undefined)
       
-      @scala.inline
-      def setOverride(value: Record[String, PartialDependency]): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+      inline def setOverride(value: Record[String, PartialDependency]): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+      inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
     }
   }
 }

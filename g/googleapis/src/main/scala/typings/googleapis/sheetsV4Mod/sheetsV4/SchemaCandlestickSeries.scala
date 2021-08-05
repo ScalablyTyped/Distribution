@@ -16,19 +16,15 @@ trait SchemaCandlestickSeries extends StObject {
 }
 object SchemaCandlestickSeries {
   
-  @scala.inline
-  def apply(): SchemaCandlestickSeries = {
+  inline def apply(): SchemaCandlestickSeries = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCandlestickSeries]
   }
   
-  @scala.inline
-  implicit class SchemaCandlestickSeriesMutableBuilder[Self <: SchemaCandlestickSeries] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCandlestickSeries](x: Self) {
     
-    @scala.inline
-    def setData(value: SchemaChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: SchemaChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

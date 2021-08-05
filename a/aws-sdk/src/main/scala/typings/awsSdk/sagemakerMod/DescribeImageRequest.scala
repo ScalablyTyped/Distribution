@@ -13,16 +13,13 @@ trait DescribeImageRequest extends StObject {
 }
 object DescribeImageRequest {
   
-  @scala.inline
-  def apply(ImageName: ImageName): DescribeImageRequest = {
+  inline def apply(ImageName: ImageName): DescribeImageRequest = {
     val __obj = js.Dynamic.literal(ImageName = ImageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeImageRequest]
   }
   
-  @scala.inline
-  implicit class DescribeImageRequestMutableBuilder[Self <: DescribeImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeImageRequest](x: Self) {
     
-    @scala.inline
-    def setImageName(value: ImageName): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
+    inline def setImageName(value: ImageName): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
   }
 }

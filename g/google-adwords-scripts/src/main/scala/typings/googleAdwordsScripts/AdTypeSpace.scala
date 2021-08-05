@@ -22,8 +22,7 @@ trait AdTypeSpace extends StObject {
 }
 object AdTypeSpace {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     expandedTextAd: () => Boolean,
     gmailImageAd: () => Boolean,
     gmailMultiProductAd: () => Boolean,
@@ -36,28 +35,20 @@ object AdTypeSpace {
     __obj.asInstanceOf[AdTypeSpace]
   }
   
-  @scala.inline
-  implicit class AdTypeSpaceMutableBuilder[Self <: AdTypeSpace] (val x: Self) extends AnyVal {
+  extension [Self <: AdTypeSpace](x: Self) {
     
-    @scala.inline
-    def setExpandedTextAd(value: () => Boolean): Self = StObject.set(x, "expandedTextAd", js.Any.fromFunction0(value))
+    inline def setExpandedTextAd(value: () => Boolean): Self = StObject.set(x, "expandedTextAd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGmailImageAd(value: () => Boolean): Self = StObject.set(x, "gmailImageAd", js.Any.fromFunction0(value))
+    inline def setGmailImageAd(value: () => Boolean): Self = StObject.set(x, "gmailImageAd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGmailMultiProductAd(value: () => Boolean): Self = StObject.set(x, "gmailMultiProductAd", js.Any.fromFunction0(value))
+    inline def setGmailMultiProductAd(value: () => Boolean): Self = StObject.set(x, "gmailMultiProductAd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGmailSinglePromotionAd(value: () => Boolean): Self = StObject.set(x, "gmailSinglePromotionAd", js.Any.fromFunction0(value))
+    inline def setGmailSinglePromotionAd(value: () => Boolean): Self = StObject.set(x, "gmailSinglePromotionAd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHtml5Ad(value: () => Boolean): Self = StObject.set(x, "html5Ad", js.Any.fromFunction0(value))
+    inline def setHtml5Ad(value: () => Boolean): Self = StObject.set(x, "html5Ad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImageAd(value: () => Boolean): Self = StObject.set(x, "imageAd", js.Any.fromFunction0(value))
+    inline def setImageAd(value: () => Boolean): Self = StObject.set(x, "imageAd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResponsiveDisplayAd(value: () => Boolean): Self = StObject.set(x, "responsiveDisplayAd", js.Any.fromFunction0(value))
+    inline def setResponsiveDisplayAd(value: () => Boolean): Self = StObject.set(x, "responsiveDisplayAd", js.Any.fromFunction0(value))
   }
 }

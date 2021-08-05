@@ -10,15 +10,11 @@ object LineUtil {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def closestPointOnSegment(p: Point_, p1: Point_, p2: Point_): Point_ = (^.asInstanceOf[js.Dynamic].applyDynamic("closestPointOnSegment")(p.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Point_]
+  inline def closestPointOnSegment(p: Point_, p1: Point_, p2: Point_): Point_ = (^.asInstanceOf[js.Dynamic].applyDynamic("closestPointOnSegment")(p.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Point_]
   
-  @scala.inline
-  def isFlat(latlngs: js.Array[LatLngExpression]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFlat")(latlngs.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFlat(latlngs: js.Array[LatLngExpression]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFlat")(latlngs.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def pointToSegmentDistance(p: Point_, p1: Point_, p2: Point_): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pointToSegmentDistance")(p.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def pointToSegmentDistance(p: Point_, p1: Point_, p2: Point_): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pointToSegmentDistance")(p.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def simplify(points: js.Array[Point_], tolerance: Double): js.Array[Point_] = (^.asInstanceOf[js.Dynamic].applyDynamic("simplify")(points.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[js.Array[Point_]]
+  inline def simplify(points: js.Array[Point_], tolerance: Double): js.Array[Point_] = (^.asInstanceOf[js.Dynamic].applyDynamic("simplify")(points.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[js.Array[Point_]]
 }

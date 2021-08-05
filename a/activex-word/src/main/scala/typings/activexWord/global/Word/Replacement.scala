@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Replacement")
 @js.native
-class Replacement protected ()
+/* private */ class Replacement ()
   extends StObject
      with typings.activexWord.Word.Replacement {
   
@@ -50,7 +50,7 @@ class Replacement protected ()
   /* CompleteClass */
   var Text: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Replacement_typekey")
   var WordDotReplacement_typekey: typings.activexWord.Word.Replacement = js.native
 }

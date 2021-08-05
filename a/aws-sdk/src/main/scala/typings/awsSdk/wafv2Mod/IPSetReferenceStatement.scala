@@ -18,22 +18,17 @@ trait IPSetReferenceStatement extends StObject {
 }
 object IPSetReferenceStatement {
   
-  @scala.inline
-  def apply(ARN: ResourceArn): IPSetReferenceStatement = {
+  inline def apply(ARN: ResourceArn): IPSetReferenceStatement = {
     val __obj = js.Dynamic.literal(ARN = ARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPSetReferenceStatement]
   }
   
-  @scala.inline
-  implicit class IPSetReferenceStatementMutableBuilder[Self <: IPSetReferenceStatement] (val x: Self) extends AnyVal {
+  extension [Self <: IPSetReferenceStatement](x: Self) {
     
-    @scala.inline
-    def setARN(value: ResourceArn): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: ResourceArn): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPSetForwardedIPConfig(value: IPSetForwardedIPConfig): Self = StObject.set(x, "IPSetForwardedIPConfig", value.asInstanceOf[js.Any])
+    inline def setIPSetForwardedIPConfig(value: IPSetForwardedIPConfig): Self = StObject.set(x, "IPSetForwardedIPConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPSetForwardedIPConfigUndefined: Self = StObject.set(x, "IPSetForwardedIPConfig", js.undefined)
+    inline def setIPSetForwardedIPConfigUndefined: Self = StObject.set(x, "IPSetForwardedIPConfig", js.undefined)
   }
 }

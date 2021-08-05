@@ -8,11 +8,9 @@ object formDataStrings {
   
   @js.native
   sealed trait httpColon extends StObject
-  @scala.inline
-  def httpColon: httpColon = "http:".asInstanceOf[httpColon]
+  inline def httpColon: httpColon = "http:".asInstanceOf[httpColon]
   
   @js.native
   sealed trait httpsColon extends StObject
-  @scala.inline
-  def httpsColon: httpsColon = "https:".asInstanceOf[httpsColon]
+  inline def httpsColon: httpsColon = "https:".asInstanceOf[httpsColon]
 }

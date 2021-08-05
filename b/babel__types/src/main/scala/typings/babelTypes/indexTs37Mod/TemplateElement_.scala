@@ -20,23 +20,18 @@ trait TemplateElement_
 }
 object TemplateElement_ {
   
-  @scala.inline
-  def apply(tail: Boolean, value: Cooked): TemplateElement_ = {
+  inline def apply(tail: Boolean, value: Cooked): TemplateElement_ = {
     val __obj = js.Dynamic.literal(tail = tail.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TemplateElement")
     __obj.asInstanceOf[TemplateElement_]
   }
   
-  @scala.inline
-  implicit class TemplateElement_MutableBuilder[Self <: TemplateElement_] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateElement_](x: Self) {
     
-    @scala.inline
-    def setTail(value: Boolean): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
+    inline def setTail(value: Boolean): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TemplateElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TemplateElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Cooked): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Cooked): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -33,37 +33,27 @@ trait ListAccountsForProvisionedPermissionSetRequest extends StObject {
 }
 object ListAccountsForProvisionedPermissionSetRequest {
   
-  @scala.inline
-  def apply(InstanceArn: InstanceArn, PermissionSetArn: PermissionSetArn): ListAccountsForProvisionedPermissionSetRequest = {
+  inline def apply(InstanceArn: InstanceArn, PermissionSetArn: PermissionSetArn): ListAccountsForProvisionedPermissionSetRequest = {
     val __obj = js.Dynamic.literal(InstanceArn = InstanceArn.asInstanceOf[js.Any], PermissionSetArn = PermissionSetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAccountsForProvisionedPermissionSetRequest]
   }
   
-  @scala.inline
-  implicit class ListAccountsForProvisionedPermissionSetRequestMutableBuilder[Self <: ListAccountsForProvisionedPermissionSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAccountsForProvisionedPermissionSetRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
+    inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
+    inline def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningStatus(value: ProvisioningStatus): Self = StObject.set(x, "ProvisioningStatus", value.asInstanceOf[js.Any])
+    inline def setProvisioningStatus(value: ProvisioningStatus): Self = StObject.set(x, "ProvisioningStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningStatusUndefined: Self = StObject.set(x, "ProvisioningStatus", js.undefined)
+    inline def setProvisioningStatusUndefined: Self = StObject.set(x, "ProvisioningStatus", js.undefined)
   }
 }

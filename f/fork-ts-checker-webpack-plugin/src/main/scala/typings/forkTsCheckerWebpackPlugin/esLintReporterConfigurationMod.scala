@@ -12,12 +12,10 @@ object esLintReporterConfigurationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createEsLintReporterConfiguration(
+  inline def createEsLintReporterConfiguration(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
   ): EsLintReporterConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createEsLintReporterConfiguration")(compiler.asInstanceOf[js.Any]).asInstanceOf[EsLintReporterConfiguration]
-  @scala.inline
-  def createEsLintReporterConfiguration(
+  inline def createEsLintReporterConfiguration(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
     options: EsLintReporterOptions
   ): EsLintReporterConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("createEsLintReporterConfiguration")(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EsLintReporterConfiguration]
@@ -34,29 +32,22 @@ object esLintReporterConfigurationMod {
   }
   object EsLintReporterConfiguration {
     
-    @scala.inline
-    def apply(enabled: Boolean, files: js.Array[String], memoryLimit: Double, options: CLIEngineOptions): EsLintReporterConfiguration = {
+    inline def apply(enabled: Boolean, files: js.Array[String], memoryLimit: Double, options: CLIEngineOptions): EsLintReporterConfiguration = {
       val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], memoryLimit = memoryLimit.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[EsLintReporterConfiguration]
     }
     
-    @scala.inline
-    implicit class EsLintReporterConfigurationMutableBuilder[Self <: EsLintReporterConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: EsLintReporterConfiguration](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setMemoryLimit(value: Double): Self = StObject.set(x, "memoryLimit", value.asInstanceOf[js.Any])
+      inline def setMemoryLimit(value: Double): Self = StObject.set(x, "memoryLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: CLIEngineOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: CLIEngineOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
 }

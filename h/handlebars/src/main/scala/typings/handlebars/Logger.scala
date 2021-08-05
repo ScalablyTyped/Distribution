@@ -23,8 +23,7 @@ trait Logger extends StObject {
 }
 object Logger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DEBUG: Double,
     ERROR: Double,
     INFO: Double,
@@ -37,28 +36,20 @@ object Logger {
     __obj.asInstanceOf[Logger]
   }
   
-  @scala.inline
-  implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+  extension [Self <: Logger](x: Self) {
     
-    @scala.inline
-    def setDEBUG(value: Double): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
+    inline def setDEBUG(value: Double): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setERROR(value: Double): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+    inline def setERROR(value: Double): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINFO(value: Double): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
+    inline def setINFO(value: Double): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog(value: (Double, String) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+    inline def setLog(value: (Double, String) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMethodMap(value: NumberDictionary[String]): Self = StObject.set(x, "methodMap", value.asInstanceOf[js.Any])
+    inline def setMethodMap(value: NumberDictionary[String]): Self = StObject.set(x, "methodMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWARN(value: Double): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
+    inline def setWARN(value: Double): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
   }
 }

@@ -20,9 +20,7 @@ object Meta {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): Meta = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Meta]
+  inline def create(): Meta = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Meta]
   
-  @scala.inline
-  def read(xmlNode: Node, ctx: Context): Meta = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(xmlNode.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Meta]
+  inline def read(xmlNode: Node, ctx: Context): Meta = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(xmlNode.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Meta]
 }

@@ -33,8 +33,7 @@ trait CreateStreamProcessorRequest extends StObject {
 }
 object CreateStreamProcessorRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Input: StreamProcessorInput,
     Name: StreamProcessorName,
     Output: StreamProcessorOutput,
@@ -45,22 +44,16 @@ object CreateStreamProcessorRequest {
     __obj.asInstanceOf[CreateStreamProcessorRequest]
   }
   
-  @scala.inline
-  implicit class CreateStreamProcessorRequestMutableBuilder[Self <: CreateStreamProcessorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateStreamProcessorRequest](x: Self) {
     
-    @scala.inline
-    def setInput(value: StreamProcessorInput): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
+    inline def setInput(value: StreamProcessorInput): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: StreamProcessorName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: StreamProcessorName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput(value: StreamProcessorOutput): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: StreamProcessorOutput): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettings(value: StreamProcessorSettings): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: StreamProcessorSettings): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
   }
 }

@@ -27,29 +27,22 @@ trait DynamicScopedRouteConfigs extends StObject {
 }
 object DynamicScopedRouteConfigs {
   
-  @scala.inline
-  def apply(): DynamicScopedRouteConfigs = {
+  inline def apply(): DynamicScopedRouteConfigs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DynamicScopedRouteConfigs]
   }
   
-  @scala.inline
-  implicit class DynamicScopedRouteConfigsMutableBuilder[Self <: DynamicScopedRouteConfigs] (val x: Self) extends AnyVal {
+  extension [Self <: DynamicScopedRouteConfigs](x: Self) {
     
-    @scala.inline
-    def setLastUpdated(value: String): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: String): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
+    inline def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setScopedRouteConfigs(
+    inline def setScopedRouteConfigs(
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
@@ -57,20 +50,16 @@ object DynamicScopedRouteConfigs {
         ]
     ): Self = StObject.set(x, "scopedRouteConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopedRouteConfigsUndefined: Self = StObject.set(x, "scopedRouteConfigs", js.undefined)
+    inline def setScopedRouteConfigsUndefined: Self = StObject.set(x, "scopedRouteConfigs", js.undefined)
     
-    @scala.inline
-    def setScopedRouteConfigsVarargs(
+    inline def setScopedRouteConfigsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicScopedRouteConfigs & TopLevel[js.Any])*
     ): Self = StObject.set(x, "scopedRouteConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setVersionInfo(value: String): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
+    inline def setVersionInfo(value: String): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
+    inline def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
   }
 }

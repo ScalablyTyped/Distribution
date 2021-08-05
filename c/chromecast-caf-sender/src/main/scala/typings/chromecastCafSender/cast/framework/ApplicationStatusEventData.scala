@@ -12,17 +12,14 @@ trait ApplicationStatusEventData
 }
 object ApplicationStatusEventData {
   
-  @scala.inline
-  def apply(status: String, `type`: String): ApplicationStatusEventData = {
+  inline def apply(status: String, `type`: String): ApplicationStatusEventData = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationStatusEventData]
   }
   
-  @scala.inline
-  implicit class ApplicationStatusEventDataMutableBuilder[Self <: ApplicationStatusEventData] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationStatusEventData](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

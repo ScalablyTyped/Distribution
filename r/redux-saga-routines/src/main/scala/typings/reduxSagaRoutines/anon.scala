@@ -33,8 +33,7 @@ object anon {
   }
   object FAILURE_ {
     
-    @scala.inline
-    def apply[TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator](): FAILURE_[
+    inline def apply[TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator](): FAILURE_[
         TTriggerPayloadCreator, 
         TRequestPayloadCreator, 
         TSuccessPayloadCreator, 
@@ -51,44 +50,33 @@ object anon {
       ]]
     }
     
-    @scala.inline
-    implicit class FAILURE_MutableBuilder[Self <: FAILURE_[?, ?, ?, ?, ?], TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator] (val x: Self & (FAILURE_[
+    extension [Self <: FAILURE_[?, ?, ?, ?, ?], TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator](x: Self & (FAILURE_[
             TTriggerPayloadCreator, 
             TRequestPayloadCreator, 
             TSuccessPayloadCreator, 
             TFailurePayloadCreator, 
             TFulfillPayloadCreator
-          ])) extends AnyVal {
+          ])) {
       
-      @scala.inline
-      def setFAILURE(value: TFailurePayloadCreator): Self = StObject.set(x, "FAILURE", value.asInstanceOf[js.Any])
+      inline def setFAILURE(value: TFailurePayloadCreator): Self = StObject.set(x, "FAILURE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFAILUREUndefined: Self = StObject.set(x, "FAILURE", js.undefined)
+      inline def setFAILUREUndefined: Self = StObject.set(x, "FAILURE", js.undefined)
       
-      @scala.inline
-      def setFULFILL(value: TFulfillPayloadCreator): Self = StObject.set(x, "FULFILL", value.asInstanceOf[js.Any])
+      inline def setFULFILL(value: TFulfillPayloadCreator): Self = StObject.set(x, "FULFILL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFULFILLUndefined: Self = StObject.set(x, "FULFILL", js.undefined)
+      inline def setFULFILLUndefined: Self = StObject.set(x, "FULFILL", js.undefined)
       
-      @scala.inline
-      def setREQUEST(value: TRequestPayloadCreator): Self = StObject.set(x, "REQUEST", value.asInstanceOf[js.Any])
+      inline def setREQUEST(value: TRequestPayloadCreator): Self = StObject.set(x, "REQUEST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREQUESTUndefined: Self = StObject.set(x, "REQUEST", js.undefined)
+      inline def setREQUESTUndefined: Self = StObject.set(x, "REQUEST", js.undefined)
       
-      @scala.inline
-      def setSUCCESS(value: TSuccessPayloadCreator): Self = StObject.set(x, "SUCCESS", value.asInstanceOf[js.Any])
+      inline def setSUCCESS(value: TSuccessPayloadCreator): Self = StObject.set(x, "SUCCESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSUCCESSUndefined: Self = StObject.set(x, "SUCCESS", js.undefined)
+      inline def setSUCCESSUndefined: Self = StObject.set(x, "SUCCESS", js.undefined)
       
-      @scala.inline
-      def setTRIGGER(value: TTriggerPayloadCreator): Self = StObject.set(x, "TRIGGER", value.asInstanceOf[js.Any])
+      inline def setTRIGGER(value: TTriggerPayloadCreator): Self = StObject.set(x, "TRIGGER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRIGGERUndefined: Self = StObject.set(x, "TRIGGER", js.undefined)
+      inline def setTRIGGERUndefined: Self = StObject.set(x, "TRIGGER", js.undefined)
     }
   }
   
@@ -116,8 +104,7 @@ object anon {
   }
   object FULFILL {
     
-    @scala.inline
-    def apply[TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](): FULFILL[
+    inline def apply[TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](): FULFILL[
         TTriggerMetaCreator, 
         TRequestMetaCreator, 
         TSuccessMetaCreator, 
@@ -134,44 +121,33 @@ object anon {
       ]]
     }
     
-    @scala.inline
-    implicit class FULFILLMutableBuilder[Self <: FULFILL[?, ?, ?, ?, ?], TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator] (val x: Self & (FULFILL[
+    extension [Self <: FULFILL[?, ?, ?, ?, ?], TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](x: Self & (FULFILL[
             TTriggerMetaCreator, 
             TRequestMetaCreator, 
             TSuccessMetaCreator, 
             TFailureMetaCreator, 
             TFulfillMetaCreator
-          ])) extends AnyVal {
+          ])) {
       
-      @scala.inline
-      def setFAILURE(value: TFailureMetaCreator): Self = StObject.set(x, "FAILURE", value.asInstanceOf[js.Any])
+      inline def setFAILURE(value: TFailureMetaCreator): Self = StObject.set(x, "FAILURE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFAILUREUndefined: Self = StObject.set(x, "FAILURE", js.undefined)
+      inline def setFAILUREUndefined: Self = StObject.set(x, "FAILURE", js.undefined)
       
-      @scala.inline
-      def setFULFILL(value: TFulfillMetaCreator): Self = StObject.set(x, "FULFILL", value.asInstanceOf[js.Any])
+      inline def setFULFILL(value: TFulfillMetaCreator): Self = StObject.set(x, "FULFILL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFULFILLUndefined: Self = StObject.set(x, "FULFILL", js.undefined)
+      inline def setFULFILLUndefined: Self = StObject.set(x, "FULFILL", js.undefined)
       
-      @scala.inline
-      def setREQUEST(value: TRequestMetaCreator): Self = StObject.set(x, "REQUEST", value.asInstanceOf[js.Any])
+      inline def setREQUEST(value: TRequestMetaCreator): Self = StObject.set(x, "REQUEST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREQUESTUndefined: Self = StObject.set(x, "REQUEST", js.undefined)
+      inline def setREQUESTUndefined: Self = StObject.set(x, "REQUEST", js.undefined)
       
-      @scala.inline
-      def setSUCCESS(value: TSuccessMetaCreator): Self = StObject.set(x, "SUCCESS", value.asInstanceOf[js.Any])
+      inline def setSUCCESS(value: TSuccessMetaCreator): Self = StObject.set(x, "SUCCESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSUCCESSUndefined: Self = StObject.set(x, "SUCCESS", js.undefined)
+      inline def setSUCCESSUndefined: Self = StObject.set(x, "SUCCESS", js.undefined)
       
-      @scala.inline
-      def setTRIGGER(value: TTriggerMetaCreator): Self = StObject.set(x, "TRIGGER", value.asInstanceOf[js.Any])
+      inline def setTRIGGER(value: TTriggerMetaCreator): Self = StObject.set(x, "TRIGGER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRIGGERUndefined: Self = StObject.set(x, "TRIGGER", js.undefined)
+      inline def setTRIGGERUndefined: Self = StObject.set(x, "TRIGGER", js.undefined)
     }
   }
   
@@ -189,8 +165,7 @@ object anon {
   }
   object Failure {
     
-    @scala.inline
-    def apply[TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator](
+    inline def apply[TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator](
       failure: TFailureActionCreator,
       fulfill: TFulfillActionCreator,
       request: TRequestActionCreator,
@@ -213,29 +188,23 @@ object anon {
       ]]
     }
     
-    @scala.inline
-    implicit class FailureMutableBuilder[Self <: Failure[?, ?, ?, ?, ?], TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator] (val x: Self & (Failure[
+    extension [Self <: Failure[?, ?, ?, ?, ?], TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator](x: Self & (Failure[
             TTriggerActionCreator, 
             TRequestActionCreator, 
             TSuccessActionCreator, 
             TFailureActionCreator, 
             TFulfillActionCreator
-          ])) extends AnyVal {
+          ])) {
       
-      @scala.inline
-      def setFailure(value: TFailureActionCreator): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
+      inline def setFailure(value: TFailureActionCreator): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFulfill(value: TFulfillActionCreator): Self = StObject.set(x, "fulfill", value.asInstanceOf[js.Any])
+      inline def setFulfill(value: TFulfillActionCreator): Self = StObject.set(x, "fulfill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: TRequestActionCreator): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: TRequestActionCreator): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: TSuccessActionCreator): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: TSuccessActionCreator): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrigger(value: TTriggerActionCreator): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: TTriggerActionCreator): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     }
   }
   
@@ -281,29 +250,22 @@ object anon {
   }
   object keyinRoutineStagesstring {
     
-    @scala.inline
-    def apply(FAILURE: String, FULFILL: String, REQUEST: String, SUCCESS: String, TRIGGER: String): keyinRoutineStagesstring = {
+    inline def apply(FAILURE: String, FULFILL: String, REQUEST: String, SUCCESS: String, TRIGGER: String): keyinRoutineStagesstring = {
       val __obj = js.Dynamic.literal(FAILURE = FAILURE.asInstanceOf[js.Any], FULFILL = FULFILL.asInstanceOf[js.Any], REQUEST = REQUEST.asInstanceOf[js.Any], SUCCESS = SUCCESS.asInstanceOf[js.Any], TRIGGER = TRIGGER.asInstanceOf[js.Any])
       __obj.asInstanceOf[keyinRoutineStagesstring]
     }
     
-    @scala.inline
-    implicit class keyinRoutineStagesstringMutableBuilder[Self <: keyinRoutineStagesstring] (val x: Self) extends AnyVal {
+    extension [Self <: keyinRoutineStagesstring](x: Self) {
       
-      @scala.inline
-      def setFAILURE(value: String): Self = StObject.set(x, "FAILURE", value.asInstanceOf[js.Any])
+      inline def setFAILURE(value: String): Self = StObject.set(x, "FAILURE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFULFILL(value: String): Self = StObject.set(x, "FULFILL", value.asInstanceOf[js.Any])
+      inline def setFULFILL(value: String): Self = StObject.set(x, "FULFILL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREQUEST(value: String): Self = StObject.set(x, "REQUEST", value.asInstanceOf[js.Any])
+      inline def setREQUEST(value: String): Self = StObject.set(x, "REQUEST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSUCCESS(value: String): Self = StObject.set(x, "SUCCESS", value.asInstanceOf[js.Any])
+      inline def setSUCCESS(value: String): Self = StObject.set(x, "SUCCESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRIGGER(value: String): Self = StObject.set(x, "TRIGGER", value.asInstanceOf[js.Any])
+      inline def setTRIGGER(value: String): Self = StObject.set(x, "TRIGGER", value.asInstanceOf[js.Any])
     }
   }
 }

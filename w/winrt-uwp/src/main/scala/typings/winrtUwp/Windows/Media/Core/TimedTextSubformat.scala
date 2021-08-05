@@ -18,22 +18,17 @@ trait TimedTextSubformat extends StObject {
 }
 object TimedTextSubformat {
   
-  @scala.inline
-  def apply(length: Double, startIndex: Double, subformatStyle: TimedTextStyle): TimedTextSubformat = {
+  inline def apply(length: Double, startIndex: Double, subformatStyle: TimedTextStyle): TimedTextSubformat = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any], subformatStyle = subformatStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimedTextSubformat]
   }
   
-  @scala.inline
-  implicit class TimedTextSubformatMutableBuilder[Self <: TimedTextSubformat] (val x: Self) extends AnyVal {
+  extension [Self <: TimedTextSubformat](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubformatStyle(value: TimedTextStyle): Self = StObject.set(x, "subformatStyle", value.asInstanceOf[js.Any])
+    inline def setSubformatStyle(value: TimedTextStyle): Self = StObject.set(x, "subformatStyle", value.asInstanceOf[js.Any])
   }
 }

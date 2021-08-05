@@ -42,8 +42,7 @@ trait XSlideRenderer extends StObject {
 }
 object XSlideRenderer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     calculatePreviewSize: (Double, Size) => Size,
     createPreview: (XDrawPage, Size, Double) => XBitmap,
     createPreviewForCanvas: (XDrawPage, Size, Double, XCanvas) => typings.activexLibreoffice.com_.sun.star.rendering.XBitmap
@@ -52,17 +51,13 @@ object XSlideRenderer {
     __obj.asInstanceOf[XSlideRenderer]
   }
   
-  @scala.inline
-  implicit class XSlideRendererMutableBuilder[Self <: XSlideRenderer] (val x: Self) extends AnyVal {
+  extension [Self <: XSlideRenderer](x: Self) {
     
-    @scala.inline
-    def setCalculatePreviewSize(value: (Double, Size) => Size): Self = StObject.set(x, "calculatePreviewSize", js.Any.fromFunction2(value))
+    inline def setCalculatePreviewSize(value: (Double, Size) => Size): Self = StObject.set(x, "calculatePreviewSize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreatePreview(value: (XDrawPage, Size, Double) => XBitmap): Self = StObject.set(x, "createPreview", js.Any.fromFunction3(value))
+    inline def setCreatePreview(value: (XDrawPage, Size, Double) => XBitmap): Self = StObject.set(x, "createPreview", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreatePreviewForCanvas(
+    inline def setCreatePreviewForCanvas(
       value: (XDrawPage, Size, Double, XCanvas) => typings.activexLibreoffice.com_.sun.star.rendering.XBitmap
     ): Self = StObject.set(x, "createPreviewForCanvas", js.Any.fromFunction4(value))
   }

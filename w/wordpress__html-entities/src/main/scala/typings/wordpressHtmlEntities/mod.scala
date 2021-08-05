@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decodeEntities(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeEntities")(html.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def decodeEntities(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeEntities")(html.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -25,15 +25,13 @@ object playbackEngineMod {
     @JSImport("playable/dist/src/modules/playback-engine/playback-engine", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("playable/dist/src/modules/playback-engine/playback-engine", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -41,15 +39,15 @@ object playbackEngineMod {
     extends StObject
        with IPlaybackEngine {
     
-    var _applyConfig: js.Any = js.native
+    /* private */ var _applyConfig: js.Any = js.native
     
-    var _config: js.Any = js.native
+    /* private */ var _config: js.Any = js.native
     
-    var _defaultOutput: js.Any = js.native
+    /* private */ var _defaultOutput: js.Any = js.native
     
-    var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: js.Any = js.native
     
-    var _output: js.Any = js.native
+    /* private */ var _output: js.Any = js.native
     
     def changeOutput(): Unit = js.native
     def changeOutput(output: Unit, callback: js.Function): Unit = js.native

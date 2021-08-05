@@ -10,16 +10,13 @@ trait ActiveKey extends StObject {
 }
 object ActiveKey {
   
-  @scala.inline
-  def apply(activeKey: typings.react.mod.Key): ActiveKey = {
+  inline def apply(activeKey: typings.react.mod.Key): ActiveKey = {
     val __obj = js.Dynamic.literal(activeKey = activeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveKey]
   }
   
-  @scala.inline
-  implicit class ActiveKeyMutableBuilder[Self <: ActiveKey] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveKey](x: Self) {
     
-    @scala.inline
-    def setActiveKey(value: typings.react.mod.Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
+    inline def setActiveKey(value: typings.react.mod.Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DriveItemsSelectedActionResponse extends StObject {
 }
 object DriveItemsSelectedActionResponse {
   
-  @scala.inline
-  def apply(printJson: () => String): DriveItemsSelectedActionResponse = {
+  inline def apply(printJson: () => String): DriveItemsSelectedActionResponse = {
     val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson))
     __obj.asInstanceOf[DriveItemsSelectedActionResponse]
   }
   
-  @scala.inline
-  implicit class DriveItemsSelectedActionResponseMutableBuilder[Self <: DriveItemsSelectedActionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DriveItemsSelectedActionResponse](x: Self) {
     
-    @scala.inline
-    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
+    inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
   }
 }

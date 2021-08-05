@@ -66,67 +66,47 @@ trait LayerSearchSourceProperties
 }
 object LayerSearchSourceProperties {
   
-  @scala.inline
-  def apply(): LayerSearchSourceProperties = {
+  inline def apply(): LayerSearchSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayerSearchSourceProperties]
   }
   
-  @scala.inline
-  implicit class LayerSearchSourcePropertiesMutableBuilder[Self <: LayerSearchSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LayerSearchSourceProperties](x: Self) {
     
-    @scala.inline
-    def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
+    inline def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
+    inline def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
     
-    @scala.inline
-    def setExactMatch(value: Boolean): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
+    inline def setExactMatch(value: Boolean): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
+    inline def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
     
-    @scala.inline
-    def setLayer(value: LayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: LayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrderByFields(value: js.Array[String]): Self = StObject.set(x, "orderByFields", value.asInstanceOf[js.Any])
+    inline def setOrderByFields(value: js.Array[String]): Self = StObject.set(x, "orderByFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByFieldsUndefined: Self = StObject.set(x, "orderByFields", js.undefined)
+    inline def setOrderByFieldsUndefined: Self = StObject.set(x, "orderByFields", js.undefined)
     
-    @scala.inline
-    def setOrderByFieldsVarargs(value: String*): Self = StObject.set(x, "orderByFields", js.Array(value :_*))
+    inline def setOrderByFieldsVarargs(value: String*): Self = StObject.set(x, "orderByFields", js.Array(value :_*))
     
-    @scala.inline
-    def setSearchFields(value: js.Array[String]): Self = StObject.set(x, "searchFields", value.asInstanceOf[js.Any])
+    inline def setSearchFields(value: js.Array[String]): Self = StObject.set(x, "searchFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchFieldsUndefined: Self = StObject.set(x, "searchFields", js.undefined)
+    inline def setSearchFieldsUndefined: Self = StObject.set(x, "searchFields", js.undefined)
     
-    @scala.inline
-    def setSearchFieldsVarargs(value: String*): Self = StObject.set(x, "searchFields", js.Array(value :_*))
+    inline def setSearchFieldsVarargs(value: String*): Self = StObject.set(x, "searchFields", js.Array(value :_*))
     
-    @scala.inline
-    def setSearchTemplate(value: String): Self = StObject.set(x, "searchTemplate", value.asInstanceOf[js.Any])
+    inline def setSearchTemplate(value: String): Self = StObject.set(x, "searchTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchTemplateUndefined: Self = StObject.set(x, "searchTemplate", js.undefined)
+    inline def setSearchTemplateUndefined: Self = StObject.set(x, "searchTemplate", js.undefined)
     
-    @scala.inline
-    def setSuggestionTemplate(value: String): Self = StObject.set(x, "suggestionTemplate", value.asInstanceOf[js.Any])
+    inline def setSuggestionTemplate(value: String): Self = StObject.set(x, "suggestionTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionTemplateUndefined: Self = StObject.set(x, "suggestionTemplate", js.undefined)
+    inline def setSuggestionTemplateUndefined: Self = StObject.set(x, "suggestionTemplate", js.undefined)
   }
 }

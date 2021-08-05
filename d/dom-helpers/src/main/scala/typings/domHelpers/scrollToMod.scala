@@ -11,8 +11,6 @@ object scrollToMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(selected: HTMLElement): js.UndefOr[js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selected.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Function0[Unit]]]
-  @scala.inline
-  def default(selected: HTMLElement, scrollParent: HTMLElement): js.UndefOr[js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selected.asInstanceOf[js.Any], scrollParent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Function0[Unit]]]
+  inline def default(selected: HTMLElement): js.UndefOr[js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selected.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Function0[Unit]]]
+  inline def default(selected: HTMLElement, scrollParent: HTMLElement): js.UndefOr[js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selected.asInstanceOf[js.Any], scrollParent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Function0[Unit]]]
 }

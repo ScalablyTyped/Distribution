@@ -14,25 +14,19 @@ trait OrderreturnsPartialRefund extends StObject {
 }
 object OrderreturnsPartialRefund {
   
-  @scala.inline
-  def apply(): OrderreturnsPartialRefund = {
+  inline def apply(): OrderreturnsPartialRefund = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderreturnsPartialRefund]
   }
   
-  @scala.inline
-  implicit class OrderreturnsPartialRefundMutableBuilder[Self <: OrderreturnsPartialRefund] (val x: Self) extends AnyVal {
+  extension [Self <: OrderreturnsPartialRefund](x: Self) {
     
-    @scala.inline
-    def setPriceAmount(value: Price): Self = StObject.set(x, "priceAmount", value.asInstanceOf[js.Any])
+    inline def setPriceAmount(value: Price): Self = StObject.set(x, "priceAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceAmountUndefined: Self = StObject.set(x, "priceAmount", js.undefined)
+    inline def setPriceAmountUndefined: Self = StObject.set(x, "priceAmount", js.undefined)
     
-    @scala.inline
-    def setTaxAmount(value: Price): Self = StObject.set(x, "taxAmount", value.asInstanceOf[js.Any])
+    inline def setTaxAmount(value: Price): Self = StObject.set(x, "taxAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxAmountUndefined: Self = StObject.set(x, "taxAmount", js.undefined)
+    inline def setTaxAmountUndefined: Self = StObject.set(x, "taxAmount", js.undefined)
   }
 }

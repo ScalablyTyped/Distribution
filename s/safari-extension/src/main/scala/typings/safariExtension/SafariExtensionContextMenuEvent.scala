@@ -34,8 +34,7 @@ trait SafariExtensionContextMenuEvent
 }
 object SafariExtensionContextMenuEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bubbles: Boolean,
     cancelable: Boolean,
     contextMenu: SafariExtensionContextMenu,
@@ -54,19 +53,14 @@ object SafariExtensionContextMenuEvent {
     __obj.asInstanceOf[SafariExtensionContextMenuEvent]
   }
   
-  @scala.inline
-  implicit class SafariExtensionContextMenuEventMutableBuilder[Self <: SafariExtensionContextMenuEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SafariExtensionContextMenuEvent](x: Self) {
     
-    @scala.inline
-    def setContextMenu(value: SafariExtensionContextMenu): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
+    inline def setContextMenu(value: SafariExtensionContextMenu): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTarget(value: SafariExtensionContextMenuItem): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+    inline def setCurrentTarget(value: SafariExtensionContextMenuItem): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: SafariExtensionContextMenuItem): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: SafariExtensionContextMenuItem): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInfo(value: js.Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+    inline def setUserInfo(value: js.Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
   }
 }

@@ -35,62 +35,46 @@ object mod {
   }
   object KeyboardProps {
     
-    @scala.inline
-    def apply(): KeyboardProps = {
+    inline def apply(): KeyboardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyboardProps]
     }
     
-    @scala.inline
-    implicit class KeyboardPropsMutableBuilder[Self <: KeyboardProps] (val x: Self) extends AnyVal {
+    extension [Self <: KeyboardProps](x: Self) {
       
-      @scala.inline
-      def setCallbackParent(
+      inline def setCallbackParent(
         value: (/* event */ js.UndefOr[String | Event], /* keyboard */ js.UndefOr[Element], /* el */ js.UndefOr[Element]) => Unit
       ): Self = StObject.set(x, "callbackParent", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCallbackParentUndefined: Self = StObject.set(x, "callbackParent", js.undefined)
+      inline def setCallbackParentUndefined: Self = StObject.set(x, "callbackParent", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnAccepted(
+      inline def setOnAccepted(
         value: (/* event */ js.UndefOr[String | Event], /* keyboard */ js.UndefOr[Element], /* el */ js.UndefOr[Element]) => Unit
       ): Self = StObject.set(x, "onAccepted", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnAcceptedUndefined: Self = StObject.set(x, "onAccepted", js.undefined)
+      inline def setOnAcceptedUndefined: Self = StObject.set(x, "onAccepted", js.undefined)
       
-      @scala.inline
-      def setOnChange(
+      inline def setOnChange(
         value: (/* event */ js.UndefOr[String | Event], /* keyboard */ js.UndefOr[Element], /* el */ js.UndefOr[Element]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOptions(value: ReactKeyboardOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ReactKeyboardOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -102,20 +86,16 @@ object mod {
   }
   object KeyboardState {
     
-    @scala.inline
-    def apply(className: String, value: String): KeyboardState = {
+    inline def apply(className: String, value: String): KeyboardState = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyboardState]
     }
     
-    @scala.inline
-    implicit class KeyboardStateMutableBuilder[Self <: KeyboardState] (val x: Self) extends AnyVal {
+    extension [Self <: KeyboardState](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,18 +108,15 @@ object mod {
   }
   object ReactKeyboardOptions {
     
-    @scala.inline
-    def apply(accepted: Unit, `type`: String): ReactKeyboardOptions = {
+    inline def apply(accepted: Unit, `type`: String): ReactKeyboardOptions = {
       val __obj = js.Dynamic.literal(accepted = accepted.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactKeyboardOptions]
     }
     
-    @scala.inline
-    implicit class ReactKeyboardOptionsMutableBuilder[Self <: ReactKeyboardOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReactKeyboardOptions](x: Self) {
       
-      @scala.inline
-      def setAccepted(value: Unit): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
+      inline def setAccepted(value: Unit): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
     }
   }
   

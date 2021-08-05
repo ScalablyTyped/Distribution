@@ -18,25 +18,19 @@ trait AwsDynamoDbTableStreamSpecification extends StObject {
 }
 object AwsDynamoDbTableStreamSpecification {
   
-  @scala.inline
-  def apply(): AwsDynamoDbTableStreamSpecification = {
+  inline def apply(): AwsDynamoDbTableStreamSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsDynamoDbTableStreamSpecification]
   }
   
-  @scala.inline
-  implicit class AwsDynamoDbTableStreamSpecificationMutableBuilder[Self <: AwsDynamoDbTableStreamSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: AwsDynamoDbTableStreamSpecification](x: Self) {
     
-    @scala.inline
-    def setStreamEnabled(value: Boolean): Self = StObject.set(x, "StreamEnabled", value.asInstanceOf[js.Any])
+    inline def setStreamEnabled(value: Boolean): Self = StObject.set(x, "StreamEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamEnabledUndefined: Self = StObject.set(x, "StreamEnabled", js.undefined)
+    inline def setStreamEnabledUndefined: Self = StObject.set(x, "StreamEnabled", js.undefined)
     
-    @scala.inline
-    def setStreamViewType(value: NonEmptyString): Self = StObject.set(x, "StreamViewType", value.asInstanceOf[js.Any])
+    inline def setStreamViewType(value: NonEmptyString): Self = StObject.set(x, "StreamViewType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamViewTypeUndefined: Self = StObject.set(x, "StreamViewType", js.undefined)
+    inline def setStreamViewTypeUndefined: Self = StObject.set(x, "StreamViewType", js.undefined)
   }
 }

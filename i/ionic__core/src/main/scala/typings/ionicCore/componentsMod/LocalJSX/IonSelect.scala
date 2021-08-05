@@ -94,124 +94,85 @@ trait IonSelect extends StObject {
 }
 object IonSelect {
   
-  @scala.inline
-  def apply(): IonSelect = {
+  inline def apply(): IonSelect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonSelect]
   }
   
-  @scala.inline
-  implicit class IonSelectMutableBuilder[Self <: IonSelect] (val x: Self) extends AnyVal {
+  extension [Self <: IonSelect](x: Self) {
     
-    @scala.inline
-    def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+    inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
+    inline def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
     
-    @scala.inline
-    def setCompareWith(value: String | SelectCompareFn): Self = StObject.set(x, "compareWith", value.asInstanceOf[js.Any])
+    inline def setCompareWith(value: String | SelectCompareFn): Self = StObject.set(x, "compareWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompareWithFunction2(value: (/* currentValue */ js.Any, /* compareValue */ js.Any) => Boolean): Self = StObject.set(x, "compareWith", js.Any.fromFunction2(value))
+    inline def setCompareWithFunction2(value: (/* currentValue */ js.Any, /* compareValue */ js.Any) => Boolean): Self = StObject.set(x, "compareWith", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCompareWithNull: Self = StObject.set(x, "compareWith", null)
+    inline def setCompareWithNull: Self = StObject.set(x, "compareWith", null)
     
-    @scala.inline
-    def setCompareWithUndefined: Self = StObject.set(x, "compareWith", js.undefined)
+    inline def setCompareWithUndefined: Self = StObject.set(x, "compareWith", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setInterface(value: SelectInterface): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
+    inline def setInterface(value: SelectInterface): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceOptions(value: js.Any): Self = StObject.set(x, "interfaceOptions", value.asInstanceOf[js.Any])
+    inline def setInterfaceOptions(value: js.Any): Self = StObject.set(x, "interfaceOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceOptionsUndefined: Self = StObject.set(x, "interfaceOptions", js.undefined)
+    inline def setInterfaceOptionsUndefined: Self = StObject.set(x, "interfaceOptions", js.undefined)
     
-    @scala.inline
-    def setInterfaceUndefined: Self = StObject.set(x, "interface", js.undefined)
+    inline def setInterfaceUndefined: Self = StObject.set(x, "interface", js.undefined)
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
+    inline def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
+    inline def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
     
-    @scala.inline
-    def setOnIonBlur(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonBlur", js.Any.fromFunction1(value))
+    inline def setOnIonBlur(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonBlur", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonBlurUndefined: Self = StObject.set(x, "onIonBlur", js.undefined)
+    inline def setOnIonBlurUndefined: Self = StObject.set(x, "onIonBlur", js.undefined)
     
-    @scala.inline
-    def setOnIonCancel(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonCancel", js.Any.fromFunction1(value))
+    inline def setOnIonCancel(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonCancel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonCancelUndefined: Self = StObject.set(x, "onIonCancel", js.undefined)
+    inline def setOnIonCancelUndefined: Self = StObject.set(x, "onIonCancel", js.undefined)
     
-    @scala.inline
-    def setOnIonChange(value: /* event */ CustomEvent[SelectChangeEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonChange", js.Any.fromFunction1(value))
+    inline def setOnIonChange(value: /* event */ CustomEvent[SelectChangeEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonChangeUndefined: Self = StObject.set(x, "onIonChange", js.undefined)
+    inline def setOnIonChangeUndefined: Self = StObject.set(x, "onIonChange", js.undefined)
     
-    @scala.inline
-    def setOnIonFocus(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonFocus", js.Any.fromFunction1(value))
+    inline def setOnIonFocus(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonFocus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonFocusUndefined: Self = StObject.set(x, "onIonFocus", js.undefined)
+    inline def setOnIonFocusUndefined: Self = StObject.set(x, "onIonFocus", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderNull: Self = StObject.set(x, "placeholder", null)
+    inline def setPlaceholderNull: Self = StObject.set(x, "placeholder", null)
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setSelectedText(value: String): Self = StObject.set(x, "selectedText", value.asInstanceOf[js.Any])
+    inline def setSelectedText(value: String): Self = StObject.set(x, "selectedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedTextNull: Self = StObject.set(x, "selectedText", null)
+    inline def setSelectedTextNull: Self = StObject.set(x, "selectedText", null)
     
-    @scala.inline
-    def setSelectedTextUndefined: Self = StObject.set(x, "selectedText", js.undefined)
+    inline def setSelectedTextUndefined: Self = StObject.set(x, "selectedText", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

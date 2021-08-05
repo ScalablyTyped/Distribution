@@ -15,40 +15,35 @@ object useControllableValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useControllableValue[TValue, TElement /* <: HTMLElement */](): js.Tuple2[
+  inline def useControllableValue[TValue, TElement /* <: HTMLElement */](): js.Tuple2[
     js.UndefOr[TValue], 
     js.Function1[/* update */ SetStateAction[js.UndefOr[TValue]], Unit]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useControllableValue")().asInstanceOf[js.Tuple2[
     js.UndefOr[TValue], 
     js.Function1[/* update */ SetStateAction[js.UndefOr[TValue]], Unit]
   ]]
-  @scala.inline
-  def useControllableValue[TValue, TElement /* <: HTMLElement */](controlledValue: TValue): js.Tuple2[
+  inline def useControllableValue[TValue, TElement /* <: HTMLElement */](controlledValue: TValue): js.Tuple2[
     js.UndefOr[TValue], 
     js.Function1[/* update */ SetStateAction[js.UndefOr[TValue]], Unit]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useControllableValue")(controlledValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
     js.UndefOr[TValue], 
     js.Function1[/* update */ SetStateAction[js.UndefOr[TValue]], Unit]
   ]]
-  @scala.inline
-  def useControllableValue[TValue, TElement /* <: HTMLElement */](controlledValue: TValue, defaultUncontrolledValue: TValue): js.Tuple2[
+  inline def useControllableValue[TValue, TElement /* <: HTMLElement */](controlledValue: TValue, defaultUncontrolledValue: TValue): js.Tuple2[
     js.UndefOr[TValue], 
     js.Function1[/* update */ SetStateAction[js.UndefOr[TValue]], Unit]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableValue")(controlledValue.asInstanceOf[js.Any], defaultUncontrolledValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
     js.UndefOr[TValue], 
     js.Function1[/* update */ SetStateAction[js.UndefOr[TValue]], Unit]
   ]]
-  @scala.inline
-  def useControllableValue[TValue, TElement /* <: HTMLElement */](controlledValue: Unit, defaultUncontrolledValue: TValue): js.Tuple2[
+  inline def useControllableValue[TValue, TElement /* <: HTMLElement */](controlledValue: Unit, defaultUncontrolledValue: TValue): js.Tuple2[
     js.UndefOr[TValue], 
     js.Function1[/* update */ SetStateAction[js.UndefOr[TValue]], Unit]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useControllableValue")(controlledValue.asInstanceOf[js.Any], defaultUncontrolledValue.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
     js.UndefOr[TValue], 
     js.Function1[/* update */ SetStateAction[js.UndefOr[TValue]], Unit]
   ]]
-  @scala.inline
-  def useControllableValue[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](
+  inline def useControllableValue[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](
     controlledValue: TValue,
     defaultUncontrolledValue: TValue,
     onChange: ChangeCallback[TElement, TValue, TEvent]
@@ -67,8 +62,7 @@ object useControllableValueMod {
       Unit
     ]
   ]]
-  @scala.inline
-  def useControllableValue[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](
+  inline def useControllableValue[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](
     controlledValue: TValue,
     defaultUncontrolledValue: Unit,
     onChange: ChangeCallback[TElement, TValue, TEvent]
@@ -87,8 +81,7 @@ object useControllableValueMod {
       Unit
     ]
   ]]
-  @scala.inline
-  def useControllableValue[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](
+  inline def useControllableValue[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](
     controlledValue: Unit,
     defaultUncontrolledValue: TValue,
     onChange: ChangeCallback[TElement, TValue, TEvent]
@@ -107,8 +100,7 @@ object useControllableValueMod {
       Unit
     ]
   ]]
-  @scala.inline
-  def useControllableValue[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](
+  inline def useControllableValue[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](
     controlledValue: Unit,
     defaultUncontrolledValue: Unit,
     onChange: ChangeCallback[TElement, TValue, TEvent]
@@ -128,8 +120,7 @@ object useControllableValueMod {
     ]
   ]]
   
-  @scala.inline
-  def `useControllableValue_TValueTElement_HTMLElementTEvent_UnionSyntheticEventTElementEvent<undefined>`[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](): js.Tuple2[
+  inline def `useControllableValue_TValueTElement_HTMLElementTEvent_UnionSyntheticEventTElementEvent<undefined>`[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](): js.Tuple2[
     js.UndefOr[TValue], 
     js.Function2[
       /* update */ SetStateAction[js.UndefOr[TValue]], 
@@ -144,8 +135,7 @@ object useControllableValueMod {
       Unit
     ]
   ]]
-  @scala.inline
-  def `useControllableValue_TValueTElement_HTMLElementTEvent_UnionSyntheticEventTElementEvent<undefined>`[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](controlledValue: TValue): js.Tuple2[
+  inline def `useControllableValue_TValueTElement_HTMLElementTEvent_UnionSyntheticEventTElementEvent<undefined>`[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](controlledValue: TValue): js.Tuple2[
     js.UndefOr[TValue], 
     js.Function2[
       /* update */ SetStateAction[js.UndefOr[TValue]], 
@@ -160,8 +150,7 @@ object useControllableValueMod {
       Unit
     ]
   ]]
-  @scala.inline
-  def `useControllableValue_TValueTElement_HTMLElementTEvent_UnionSyntheticEventTElementEvent<undefined>`[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](controlledValue: TValue, defaultUncontrolledValue: TValue): js.Tuple2[
+  inline def `useControllableValue_TValueTElement_HTMLElementTEvent_UnionSyntheticEventTElementEvent<undefined>`[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](controlledValue: TValue, defaultUncontrolledValue: TValue): js.Tuple2[
     js.UndefOr[TValue], 
     js.Function2[
       /* update */ SetStateAction[js.UndefOr[TValue]], 
@@ -176,8 +165,7 @@ object useControllableValueMod {
       Unit
     ]
   ]]
-  @scala.inline
-  def `useControllableValue_TValueTElement_HTMLElementTEvent_UnionSyntheticEventTElementEvent<undefined>`[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](controlledValue: Unit, defaultUncontrolledValue: TValue): js.Tuple2[
+  inline def `useControllableValue_TValueTElement_HTMLElementTEvent_UnionSyntheticEventTElementEvent<undefined>`[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](controlledValue: Unit, defaultUncontrolledValue: TValue): js.Tuple2[
     js.UndefOr[TValue], 
     js.Function2[
       /* update */ SetStateAction[js.UndefOr[TValue]], 

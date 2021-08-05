@@ -135,17 +135,14 @@ trait Condition[T, P /* <: /* keyof T */ String */]
 }
 object Condition {
   
-  @scala.inline
-  def apply[T, P /* <: /* keyof T */ String */](): Condition[T, P] = {
+  inline def apply[T, P /* <: /* keyof T */ String */](): Condition[T, P] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Condition[T, P]]
   }
   
-  @scala.inline
-  implicit class ConditionMutableBuilder[Self <: Condition[?, ?], T, P /* <: /* keyof T */ String */] (val x: Self & (Condition[T, P])) extends AnyVal {
+  extension [Self <: Condition[?, ?], T, P /* <: /* keyof T */ String */](x: Self & (Condition[T, P])) {
     
-    @scala.inline
-    def set$and(
+    inline def set$and(
       value: js.Array[
           (FilterQuery[
             /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
@@ -153,152 +150,107 @@ object Condition {
         ]
     ): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$andUndefined: Self = StObject.set(x, "$and", js.undefined)
+    inline def set$andUndefined: Self = StObject.set(x, "$and", js.undefined)
     
-    @scala.inline
-    def set$andVarargs(
+    inline def set$andVarargs(
       value: ((FilterQuery[
           /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
         ]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any))*
     ): Self = StObject.set(x, "$and", js.Array(value :_*))
     
-    @scala.inline
-    def set$bitsAllClear(value: js.Object): Self = StObject.set(x, "$bitsAllClear", value.asInstanceOf[js.Any])
+    inline def set$bitsAllClear(value: js.Object): Self = StObject.set(x, "$bitsAllClear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$bitsAllClearUndefined: Self = StObject.set(x, "$bitsAllClear", js.undefined)
+    inline def set$bitsAllClearUndefined: Self = StObject.set(x, "$bitsAllClear", js.undefined)
     
-    @scala.inline
-    def set$bitsAllSet(value: js.Object): Self = StObject.set(x, "$bitsAllSet", value.asInstanceOf[js.Any])
+    inline def set$bitsAllSet(value: js.Object): Self = StObject.set(x, "$bitsAllSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$bitsAllSetUndefined: Self = StObject.set(x, "$bitsAllSet", js.undefined)
+    inline def set$bitsAllSetUndefined: Self = StObject.set(x, "$bitsAllSet", js.undefined)
     
-    @scala.inline
-    def set$bitsAnyClear(value: js.Object): Self = StObject.set(x, "$bitsAnyClear", value.asInstanceOf[js.Any])
+    inline def set$bitsAnyClear(value: js.Object): Self = StObject.set(x, "$bitsAnyClear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$bitsAnyClearUndefined: Self = StObject.set(x, "$bitsAnyClear", js.undefined)
+    inline def set$bitsAnyClearUndefined: Self = StObject.set(x, "$bitsAnyClear", js.undefined)
     
-    @scala.inline
-    def set$bitsAnySet(value: js.Object): Self = StObject.set(x, "$bitsAnySet", value.asInstanceOf[js.Any])
+    inline def set$bitsAnySet(value: js.Object): Self = StObject.set(x, "$bitsAnySet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$bitsAnySetUndefined: Self = StObject.set(x, "$bitsAnySet", js.undefined)
+    inline def set$bitsAnySetUndefined: Self = StObject.set(x, "$bitsAnySet", js.undefined)
     
-    @scala.inline
-    def set$elemMatch(value: js.Object): Self = StObject.set(x, "$elemMatch", value.asInstanceOf[js.Any])
+    inline def set$elemMatch(value: js.Object): Self = StObject.set(x, "$elemMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$elemMatchUndefined: Self = StObject.set(x, "$elemMatch", js.undefined)
+    inline def set$elemMatchUndefined: Self = StObject.set(x, "$elemMatch", js.undefined)
     
-    @scala.inline
-    def set$eq(value: /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any): Self = StObject.set(x, "$eq", value.asInstanceOf[js.Any])
+    inline def set$eq(value: /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any): Self = StObject.set(x, "$eq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$eqUndefined: Self = StObject.set(x, "$eq", js.undefined)
+    inline def set$eqUndefined: Self = StObject.set(x, "$eq", js.undefined)
     
-    @scala.inline
-    def set$expr(value: js.Any): Self = StObject.set(x, "$expr", value.asInstanceOf[js.Any])
+    inline def set$expr(value: js.Any): Self = StObject.set(x, "$expr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$exprUndefined: Self = StObject.set(x, "$expr", js.undefined)
+    inline def set$exprUndefined: Self = StObject.set(x, "$expr", js.undefined)
     
-    @scala.inline
-    def set$geoIntersects(value: js.Object): Self = StObject.set(x, "$geoIntersects", value.asInstanceOf[js.Any])
+    inline def set$geoIntersects(value: js.Object): Self = StObject.set(x, "$geoIntersects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$geoIntersectsUndefined: Self = StObject.set(x, "$geoIntersects", js.undefined)
+    inline def set$geoIntersectsUndefined: Self = StObject.set(x, "$geoIntersects", js.undefined)
     
-    @scala.inline
-    def set$geoWithin(value: js.Object): Self = StObject.set(x, "$geoWithin", value.asInstanceOf[js.Any])
+    inline def set$geoWithin(value: js.Object): Self = StObject.set(x, "$geoWithin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$geoWithinUndefined: Self = StObject.set(x, "$geoWithin", js.undefined)
+    inline def set$geoWithinUndefined: Self = StObject.set(x, "$geoWithin", js.undefined)
     
-    @scala.inline
-    def set$gt(value: /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any): Self = StObject.set(x, "$gt", value.asInstanceOf[js.Any])
+    inline def set$gt(value: /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any): Self = StObject.set(x, "$gt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$gtUndefined: Self = StObject.set(x, "$gt", js.undefined)
+    inline def set$gtUndefined: Self = StObject.set(x, "$gt", js.undefined)
     
-    @scala.inline
-    def set$gte(value: /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any): Self = StObject.set(x, "$gte", value.asInstanceOf[js.Any])
+    inline def set$gte(value: /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any): Self = StObject.set(x, "$gte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$gteUndefined: Self = StObject.set(x, "$gte", js.undefined)
+    inline def set$gteUndefined: Self = StObject.set(x, "$gte", js.undefined)
     
-    @scala.inline
-    def set$in(
+    inline def set$in(
       value: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
         ]
     ): Self = StObject.set(x, "$in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$inUndefined: Self = StObject.set(x, "$in", js.undefined)
+    inline def set$inUndefined: Self = StObject.set(x, "$in", js.undefined)
     
-    @scala.inline
-    def set$inVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any)*): Self = StObject.set(x, "$in", js.Array(value :_*))
+    inline def set$inVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any)*): Self = StObject.set(x, "$in", js.Array(value :_*))
     
-    @scala.inline
-    def set$jsonSchema(value: js.Any): Self = StObject.set(x, "$jsonSchema", value.asInstanceOf[js.Any])
+    inline def set$jsonSchema(value: js.Any): Self = StObject.set(x, "$jsonSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$jsonSchemaUndefined: Self = StObject.set(x, "$jsonSchema", js.undefined)
+    inline def set$jsonSchemaUndefined: Self = StObject.set(x, "$jsonSchema", js.undefined)
     
-    @scala.inline
-    def set$lt(value: /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any): Self = StObject.set(x, "$lt", value.asInstanceOf[js.Any])
+    inline def set$lt(value: /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any): Self = StObject.set(x, "$lt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$ltUndefined: Self = StObject.set(x, "$lt", js.undefined)
+    inline def set$ltUndefined: Self = StObject.set(x, "$lt", js.undefined)
     
-    @scala.inline
-    def set$lte(value: /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any): Self = StObject.set(x, "$lte", value.asInstanceOf[js.Any])
+    inline def set$lte(value: /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any): Self = StObject.set(x, "$lte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$lteUndefined: Self = StObject.set(x, "$lte", js.undefined)
+    inline def set$lteUndefined: Self = StObject.set(x, "$lte", js.undefined)
     
-    @scala.inline
-    def set$mod(value: js.Tuple2[scala.Double, scala.Double]): Self = StObject.set(x, "$mod", value.asInstanceOf[js.Any])
+    inline def set$mod(value: js.Tuple2[scala.Double, scala.Double]): Self = StObject.set(x, "$mod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$modUndefined: Self = StObject.set(x, "$mod", js.undefined)
+    inline def set$modUndefined: Self = StObject.set(x, "$mod", js.undefined)
     
-    @scala.inline
-    def set$ne(value: /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any): Self = StObject.set(x, "$ne", value.asInstanceOf[js.Any])
+    inline def set$ne(value: /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any): Self = StObject.set(x, "$ne", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$neUndefined: Self = StObject.set(x, "$ne", js.undefined)
+    inline def set$neUndefined: Self = StObject.set(x, "$ne", js.undefined)
     
-    @scala.inline
-    def set$near(value: js.Object): Self = StObject.set(x, "$near", value.asInstanceOf[js.Any])
+    inline def set$near(value: js.Object): Self = StObject.set(x, "$near", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$nearSphere(value: js.Object): Self = StObject.set(x, "$nearSphere", value.asInstanceOf[js.Any])
+    inline def set$nearSphere(value: js.Object): Self = StObject.set(x, "$nearSphere", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$nearSphereUndefined: Self = StObject.set(x, "$nearSphere", js.undefined)
+    inline def set$nearSphereUndefined: Self = StObject.set(x, "$nearSphere", js.undefined)
     
-    @scala.inline
-    def set$nearUndefined: Self = StObject.set(x, "$near", js.undefined)
+    inline def set$nearUndefined: Self = StObject.set(x, "$near", js.undefined)
     
-    @scala.inline
-    def set$nin(
+    inline def set$nin(
       value: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
         ]
     ): Self = StObject.set(x, "$nin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$ninUndefined: Self = StObject.set(x, "$nin", js.undefined)
+    inline def set$ninUndefined: Self = StObject.set(x, "$nin", js.undefined)
     
-    @scala.inline
-    def set$ninVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any)*): Self = StObject.set(x, "$nin", js.Array(value :_*))
+    inline def set$ninVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any)*): Self = StObject.set(x, "$nin", js.Array(value :_*))
     
-    @scala.inline
-    def set$not(
+    inline def set$not(
       value: (js.Array[
           (FilterQuery[
             /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
@@ -306,24 +258,19 @@ object Condition {
         ]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any)
     ): Self = StObject.set(x, "$not", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$notUndefined: Self = StObject.set(x, "$not", js.undefined)
+    inline def set$notUndefined: Self = StObject.set(x, "$not", js.undefined)
     
-    @scala.inline
-    def set$notVarargs(
+    inline def set$notVarargs(
       value: ((FilterQuery[
           /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
         ]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any))*
     ): Self = StObject.set(x, "$not", js.Array(value :_*))
     
-    @scala.inline
-    def set$options(value: String): Self = StObject.set(x, "$options", value.asInstanceOf[js.Any])
+    inline def set$options(value: String): Self = StObject.set(x, "$options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$optionsUndefined: Self = StObject.set(x, "$options", js.undefined)
+    inline def set$optionsUndefined: Self = StObject.set(x, "$options", js.undefined)
     
-    @scala.inline
-    def set$or(
+    inline def set$or(
       value: js.Array[
           (FilterQuery[
             /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
@@ -331,38 +278,28 @@ object Condition {
         ]
     ): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$orUndefined: Self = StObject.set(x, "$or", js.undefined)
+    inline def set$orUndefined: Self = StObject.set(x, "$or", js.undefined)
     
-    @scala.inline
-    def set$orVarargs(
+    inline def set$orVarargs(
       value: ((FilterQuery[
           /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
         ]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any))*
     ): Self = StObject.set(x, "$or", js.Array(value :_*))
     
-    @scala.inline
-    def set$regex(value: RegExp): Self = StObject.set(x, "$regex", value.asInstanceOf[js.Any])
+    inline def set$regex(value: RegExp): Self = StObject.set(x, "$regex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$regexUndefined: Self = StObject.set(x, "$regex", js.undefined)
+    inline def set$regexUndefined: Self = StObject.set(x, "$regex", js.undefined)
     
-    @scala.inline
-    def set$size(value: scala.Double): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
+    inline def set$size(value: scala.Double): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
+    inline def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
     
-    @scala.inline
-    def set$text(value: CaseSensitive): Self = StObject.set(x, "$text", value.asInstanceOf[js.Any])
+    inline def set$text(value: CaseSensitive): Self = StObject.set(x, "$text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$textUndefined: Self = StObject.set(x, "$text", js.undefined)
+    inline def set$textUndefined: Self = StObject.set(x, "$text", js.undefined)
     
-    @scala.inline
-    def set$where(value: js.Object): Self = StObject.set(x, "$where", value.asInstanceOf[js.Any])
+    inline def set$where(value: js.Object): Self = StObject.set(x, "$where", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$whereUndefined: Self = StObject.set(x, "$where", js.undefined)
+    inline def set$whereUndefined: Self = StObject.set(x, "$where", js.undefined)
   }
 }

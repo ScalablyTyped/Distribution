@@ -10,16 +10,13 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(ig: IgniteUIStatic): JQueryStatic = {
+  inline def apply(ig: IgniteUIStatic): JQueryStatic = {
     val __obj = js.Dynamic.literal(ig = ig.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setIg(value: IgniteUIStatic): Self = StObject.set(x, "ig", value.asInstanceOf[js.Any])
+    inline def setIg(value: IgniteUIStatic): Self = StObject.set(x, "ig", value.asInstanceOf[js.Any])
   }
 }

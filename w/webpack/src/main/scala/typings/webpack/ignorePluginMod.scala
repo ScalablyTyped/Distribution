@@ -13,14 +13,12 @@ object ignorePluginMod {
   trait IgnorePluginOptions extends StObject
   object IgnorePluginOptions {
     
-    @scala.inline
-    def CheckContext(): typings.webpack.anon.CheckContext = {
+    inline def CheckContext(): typings.webpack.anon.CheckContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.webpack.anon.CheckContext]
     }
     
-    @scala.inline
-    def ContextRegExp(): typings.webpack.anon.ContextRegExp = {
+    inline def ContextRegExp(): typings.webpack.anon.ContextRegExp = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.webpack.anon.ContextRegExp]
     }

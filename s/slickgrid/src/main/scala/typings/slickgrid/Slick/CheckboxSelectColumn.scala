@@ -12,16 +12,13 @@ trait CheckboxSelectColumn[T /* <: SlickData */]
 }
 object CheckboxSelectColumn {
   
-  @scala.inline
-  def apply[T /* <: SlickData */](destroy: () => Unit, getColumnDefinition: () => ColumnMetadata[T], init: Grid[T] => Unit): CheckboxSelectColumn[T] = {
+  inline def apply[T /* <: SlickData */](destroy: () => Unit, getColumnDefinition: () => ColumnMetadata[T], init: Grid[T] => Unit): CheckboxSelectColumn[T] = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getColumnDefinition = js.Any.fromFunction0(getColumnDefinition), init = js.Any.fromFunction1(init))
     __obj.asInstanceOf[CheckboxSelectColumn[T]]
   }
   
-  @scala.inline
-  implicit class CheckboxSelectColumnMutableBuilder[Self <: CheckboxSelectColumn[?], T /* <: SlickData */] (val x: Self & CheckboxSelectColumn[T]) extends AnyVal {
+  extension [Self <: CheckboxSelectColumn[?], T /* <: SlickData */](x: Self & CheckboxSelectColumn[T]) {
     
-    @scala.inline
-    def setGetColumnDefinition(value: () => ColumnMetadata[T]): Self = StObject.set(x, "getColumnDefinition", js.Any.fromFunction0(value))
+    inline def setGetColumnDefinition(value: () => ColumnMetadata[T]): Self = StObject.set(x, "getColumnDefinition", js.Any.fromFunction0(value))
   }
 }

@@ -23,25 +23,19 @@ trait SchemaExtendedSourceContext extends StObject {
 }
 object SchemaExtendedSourceContext {
   
-  @scala.inline
-  def apply(): SchemaExtendedSourceContext = {
+  inline def apply(): SchemaExtendedSourceContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExtendedSourceContext]
   }
   
-  @scala.inline
-  implicit class SchemaExtendedSourceContextMutableBuilder[Self <: SchemaExtendedSourceContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExtendedSourceContext](x: Self) {
     
-    @scala.inline
-    def setContext(value: SchemaSourceContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: SchemaSourceContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
   }
 }

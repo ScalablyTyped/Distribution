@@ -18,19 +18,15 @@ trait SalesforceAction extends StObject {
 }
 object SalesforceAction {
   
-  @scala.inline
-  def apply(token: SalesforceToken, url: SalesforceEndpoint): SalesforceAction = {
+  inline def apply(token: SalesforceToken, url: SalesforceEndpoint): SalesforceAction = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SalesforceAction]
   }
   
-  @scala.inline
-  implicit class SalesforceActionMutableBuilder[Self <: SalesforceAction] (val x: Self) extends AnyVal {
+  extension [Self <: SalesforceAction](x: Self) {
     
-    @scala.inline
-    def setToken(value: SalesforceToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: SalesforceToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SalesforceEndpoint): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SalesforceEndpoint): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

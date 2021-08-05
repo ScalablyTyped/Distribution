@@ -17,17 +17,14 @@ trait VoidTypeAnnotation_
 }
 object VoidTypeAnnotation_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double): VoidTypeAnnotation_ = {
+  inline def apply(end: Double, loc: SourceLocation, start: Double): VoidTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("VoidTypeAnnotation")
     __obj.asInstanceOf[VoidTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class VoidTypeAnnotation_MutableBuilder[Self <: VoidTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: VoidTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setType(value: VoidTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: VoidTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

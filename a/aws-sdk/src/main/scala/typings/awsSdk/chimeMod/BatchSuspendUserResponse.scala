@@ -13,22 +13,17 @@ trait BatchSuspendUserResponse extends StObject {
 }
 object BatchSuspendUserResponse {
   
-  @scala.inline
-  def apply(): BatchSuspendUserResponse = {
+  inline def apply(): BatchSuspendUserResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchSuspendUserResponse]
   }
   
-  @scala.inline
-  implicit class BatchSuspendUserResponseMutableBuilder[Self <: BatchSuspendUserResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchSuspendUserResponse](x: Self) {
     
-    @scala.inline
-    def setUserErrors(value: UserErrorList): Self = StObject.set(x, "UserErrors", value.asInstanceOf[js.Any])
+    inline def setUserErrors(value: UserErrorList): Self = StObject.set(x, "UserErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserErrorsUndefined: Self = StObject.set(x, "UserErrors", js.undefined)
+    inline def setUserErrorsUndefined: Self = StObject.set(x, "UserErrors", js.undefined)
     
-    @scala.inline
-    def setUserErrorsVarargs(value: UserError*): Self = StObject.set(x, "UserErrors", js.Array(value :_*))
+    inline def setUserErrorsVarargs(value: UserError*): Self = StObject.set(x, "UserErrors", js.Array(value :_*))
   }
 }

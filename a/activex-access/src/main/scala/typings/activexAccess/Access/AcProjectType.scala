@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcProjectType extends StObject
 object AcProjectType {
   
-  @scala.inline
-  def acADP: `1` = 1.asInstanceOf[`1`]
+  inline def acADP: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acMDB: `2` = 2.asInstanceOf[`2`]
+  inline def acMDB: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acNull: `0` = 0.asInstanceOf[`0`]
+  inline def acNull: `0` = 0.asInstanceOf[`0`]
 }

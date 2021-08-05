@@ -74,6 +74,6 @@ trait Style extends StObject {
   
   var Visibility: Boolean = js.native
   
-  @JSName("Word.Style_typekey")
+  /* private */ @JSName("Word.Style_typekey")
   var WordDotStyle_typekey: Style = js.native
 }

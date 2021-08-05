@@ -10,8 +10,7 @@ trait DescribeLimitsOutput
      with typings.awsSdkClientDynamodbBrowser.typesDescribeLimitsOutputMod.DescribeLimitsOutput
 object DescribeLimitsOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): DescribeLimitsOutput = {
+  inline def apply($metadata: ResponseMetadata): DescribeLimitsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLimitsOutput]
   }

@@ -18,28 +18,21 @@ trait ListSigningPlatformsResponse extends StObject {
 }
 object ListSigningPlatformsResponse {
   
-  @scala.inline
-  def apply(): ListSigningPlatformsResponse = {
+  inline def apply(): ListSigningPlatformsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSigningPlatformsResponse]
   }
   
-  @scala.inline
-  implicit class ListSigningPlatformsResponseMutableBuilder[Self <: ListSigningPlatformsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSigningPlatformsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPlatforms(value: SigningPlatforms): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
+    inline def setPlatforms(value: SigningPlatforms): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
+    inline def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
     
-    @scala.inline
-    def setPlatformsVarargs(value: SigningPlatform*): Self = StObject.set(x, "platforms", js.Array(value :_*))
+    inline def setPlatformsVarargs(value: SigningPlatform*): Self = StObject.set(x, "platforms", js.Array(value :_*))
   }
 }

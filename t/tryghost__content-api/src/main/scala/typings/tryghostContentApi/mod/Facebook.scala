@@ -14,40 +14,29 @@ trait Facebook extends StObject {
 }
 object Facebook {
   
-  @scala.inline
-  def apply(): Facebook = {
+  inline def apply(): Facebook = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Facebook]
   }
   
-  @scala.inline
-  implicit class FacebookMutableBuilder[Self <: Facebook] (val x: Self) extends AnyVal {
+  extension [Self <: Facebook](x: Self) {
     
-    @scala.inline
-    def setOg_description(value: Nullable[String]): Self = StObject.set(x, "og_description", value.asInstanceOf[js.Any])
+    inline def setOg_description(value: Nullable[String]): Self = StObject.set(x, "og_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOg_descriptionNull: Self = StObject.set(x, "og_description", null)
+    inline def setOg_descriptionNull: Self = StObject.set(x, "og_description", null)
     
-    @scala.inline
-    def setOg_descriptionUndefined: Self = StObject.set(x, "og_description", js.undefined)
+    inline def setOg_descriptionUndefined: Self = StObject.set(x, "og_description", js.undefined)
     
-    @scala.inline
-    def setOg_image(value: Nullable[String]): Self = StObject.set(x, "og_image", value.asInstanceOf[js.Any])
+    inline def setOg_image(value: Nullable[String]): Self = StObject.set(x, "og_image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOg_imageNull: Self = StObject.set(x, "og_image", null)
+    inline def setOg_imageNull: Self = StObject.set(x, "og_image", null)
     
-    @scala.inline
-    def setOg_imageUndefined: Self = StObject.set(x, "og_image", js.undefined)
+    inline def setOg_imageUndefined: Self = StObject.set(x, "og_image", js.undefined)
     
-    @scala.inline
-    def setOg_title(value: Nullable[String]): Self = StObject.set(x, "og_title", value.asInstanceOf[js.Any])
+    inline def setOg_title(value: Nullable[String]): Self = StObject.set(x, "og_title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOg_titleNull: Self = StObject.set(x, "og_title", null)
+    inline def setOg_titleNull: Self = StObject.set(x, "og_title", null)
     
-    @scala.inline
-    def setOg_titleUndefined: Self = StObject.set(x, "og_title", js.undefined)
+    inline def setOg_titleUndefined: Self = StObject.set(x, "og_title", js.undefined)
   }
 }

@@ -38,8 +38,7 @@ object triggerMod {
   }
   object APIGatewayEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       headers: StringDictionary[String],
       httpMethod: String,
       path: String,
@@ -50,56 +49,39 @@ object triggerMod {
       __obj.asInstanceOf[APIGatewayEvent]
     }
     
-    @scala.inline
-    implicit class APIGatewayEventMutableBuilder[Self <: APIGatewayEvent] (val x: Self) extends AnyVal {
+    extension [Self <: APIGatewayEvent](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyNull: Self = StObject.set(x, "body", null)
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHeaderParameters(value: StringDictionary[String]): Self = StObject.set(x, "headerParameters", value.asInstanceOf[js.Any])
+      inline def setHeaderParameters(value: StringDictionary[String]): Self = StObject.set(x, "headerParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderParametersNull: Self = StObject.set(x, "headerParameters", null)
+      inline def setHeaderParametersNull: Self = StObject.set(x, "headerParameters", null)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+      inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathParameters(value: StringDictionary[String]): Self = StObject.set(x, "pathParameters", value.asInstanceOf[js.Any])
+      inline def setPathParameters(value: StringDictionary[String]): Self = StObject.set(x, "pathParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathParametersNull: Self = StObject.set(x, "pathParameters", null)
+      inline def setPathParametersNull: Self = StObject.set(x, "pathParameters", null)
       
-      @scala.inline
-      def setQueryString(value: StringDictionary[String]): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+      inline def setQueryString(value: StringDictionary[String]): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryStringNull: Self = StObject.set(x, "queryString", null)
+      inline def setQueryStringNull: Self = StObject.set(x, "queryString", null)
       
-      @scala.inline
-      def setQueryStringParameters(value: StringDictionary[String]): Self = StObject.set(x, "queryStringParameters", value.asInstanceOf[js.Any])
+      inline def setQueryStringParameters(value: StringDictionary[String]): Self = StObject.set(x, "queryStringParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryStringParametersNull: Self = StObject.set(x, "queryStringParameters", null)
+      inline def setQueryStringParametersNull: Self = StObject.set(x, "queryStringParameters", null)
       
-      @scala.inline
-      def setRequestContext(value: APIGatewayRequestContext): Self = StObject.set(x, "requestContext", value.asInstanceOf[js.Any])
+      inline def setRequestContext(value: APIGatewayRequestContext): Self = StObject.set(x, "requestContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageVariables(value: Stage): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
+      inline def setStageVariables(value: Stage): Self = StObject.set(x, "stageVariables", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,8 +105,7 @@ object triggerMod {
   }
   object APIGatewayRequestContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       httpMethod: String,
       identity: SecretId,
       path: String,
@@ -136,32 +117,23 @@ object triggerMod {
       __obj.asInstanceOf[APIGatewayRequestContext]
     }
     
-    @scala.inline
-    implicit class APIGatewayRequestContextMutableBuilder[Self <: APIGatewayRequestContext] (val x: Self) extends AnyVal {
+    extension [Self <: APIGatewayRequestContext](x: Self) {
       
-      @scala.inline
-      def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+      inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: SecretId): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: SecretId): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+      inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
       
-      @scala.inline
-      def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+      inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceIp(value: String): Self = StObject.set(x, "sourceIp", value.asInstanceOf[js.Any])
+      inline def setSourceIp(value: String): Self = StObject.set(x, "sourceIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+      inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,20 +143,16 @@ object triggerMod {
   }
   object CKafkaEvent {
     
-    @scala.inline
-    def apply(Records: js.Array[CKafkaEventRecord]): CKafkaEvent = {
+    inline def apply(Records: js.Array[CKafkaEventRecord]): CKafkaEvent = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[CKafkaEvent]
     }
     
-    @scala.inline
-    implicit class CKafkaEventMutableBuilder[Self <: CKafkaEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CKafkaEvent](x: Self) {
       
-      @scala.inline
-      def setRecords(value: js.Array[CKafkaEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[CKafkaEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: CKafkaEventRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: CKafkaEventRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
     }
   }
   
@@ -194,17 +162,14 @@ object triggerMod {
   }
   object CKafkaEventRecord {
     
-    @scala.inline
-    def apply(Ckafka: MsgKey): CKafkaEventRecord = {
+    inline def apply(Ckafka: MsgKey): CKafkaEventRecord = {
       val __obj = js.Dynamic.literal(Ckafka = Ckafka.asInstanceOf[js.Any])
       __obj.asInstanceOf[CKafkaEventRecord]
     }
     
-    @scala.inline
-    implicit class CKafkaEventRecordMutableBuilder[Self <: CKafkaEventRecord] (val x: Self) extends AnyVal {
+    extension [Self <: CKafkaEventRecord](x: Self) {
       
-      @scala.inline
-      def setCkafka(value: MsgKey): Self = StObject.set(x, "Ckafka", value.asInstanceOf[js.Any])
+      inline def setCkafka(value: MsgKey): Self = StObject.set(x, "Ckafka", value.asInstanceOf[js.Any])
     }
   }
   
@@ -216,20 +181,16 @@ object triggerMod {
   }
   object CMQTopicEvent {
     
-    @scala.inline
-    def apply(Records: js.Array[CMQTopicEventRecord]): CMQTopicEvent = {
+    inline def apply(Records: js.Array[CMQTopicEventRecord]): CMQTopicEvent = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[CMQTopicEvent]
     }
     
-    @scala.inline
-    implicit class CMQTopicEventMutableBuilder[Self <: CMQTopicEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CMQTopicEvent](x: Self) {
       
-      @scala.inline
-      def setRecords(value: js.Array[CMQTopicEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[CMQTopicEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: CMQTopicEventRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: CMQTopicEventRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
     }
   }
   
@@ -239,17 +200,14 @@ object triggerMod {
   }
   object CMQTopicEventRecord {
     
-    @scala.inline
-    def apply(CMQ: MsgBody): CMQTopicEventRecord = {
+    inline def apply(CMQ: MsgBody): CMQTopicEventRecord = {
       val __obj = js.Dynamic.literal(CMQ = CMQ.asInstanceOf[js.Any])
       __obj.asInstanceOf[CMQTopicEventRecord]
     }
     
-    @scala.inline
-    implicit class CMQTopicEventRecordMutableBuilder[Self <: CMQTopicEventRecord] (val x: Self) extends AnyVal {
+    extension [Self <: CMQTopicEventRecord](x: Self) {
       
-      @scala.inline
-      def setCMQ(value: MsgBody): Self = StObject.set(x, "CMQ", value.asInstanceOf[js.Any])
+      inline def setCMQ(value: MsgBody): Self = StObject.set(x, "CMQ", value.asInstanceOf[js.Any])
     }
   }
   
@@ -261,20 +219,16 @@ object triggerMod {
   }
   object COSEvent {
     
-    @scala.inline
-    def apply(Records: js.Array[COSEventRecord]): COSEvent = {
+    inline def apply(Records: js.Array[COSEventRecord]): COSEvent = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[COSEvent]
     }
     
-    @scala.inline
-    implicit class COSEventMutableBuilder[Self <: COSEvent] (val x: Self) extends AnyVal {
+    extension [Self <: COSEvent](x: Self) {
       
-      @scala.inline
-      def setRecords(value: js.Array[COSEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[COSEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: COSEventRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: COSEventRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
     }
   }
   
@@ -286,20 +240,16 @@ object triggerMod {
   }
   object COSEventRecord {
     
-    @scala.inline
-    def apply(cos: CosBucket, event: EventName): COSEventRecord = {
+    inline def apply(cos: CosBucket, event: EventName): COSEventRecord = {
       val __obj = js.Dynamic.literal(cos = cos.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[COSEventRecord]
     }
     
-    @scala.inline
-    implicit class COSEventRecordMutableBuilder[Self <: COSEventRecord] (val x: Self) extends AnyVal {
+    extension [Self <: COSEventRecord](x: Self) {
       
-      @scala.inline
-      def setCos(value: CosBucket): Self = StObject.set(x, "cos", value.asInstanceOf[js.Any])
+      inline def setCos(value: CosBucket): Self = StObject.set(x, "cos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: EventName): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: EventName): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }
   }
   
@@ -317,26 +267,20 @@ object triggerMod {
   }
   object TimerEvent {
     
-    @scala.inline
-    def apply(Message: String, Time: String, TriggerName: String, Type: String): TimerEvent = {
+    inline def apply(Message: String, Time: String, TriggerName: String, Type: String): TimerEvent = {
       val __obj = js.Dynamic.literal(Message = Message.asInstanceOf[js.Any], Time = Time.asInstanceOf[js.Any], TriggerName = TriggerName.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimerEvent]
     }
     
-    @scala.inline
-    implicit class TimerEventMutableBuilder[Self <: TimerEvent] (val x: Self) extends AnyVal {
+    extension [Self <: TimerEvent](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: String): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+      inline def setTime(value: String): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerName(value: String): Self = StObject.set(x, "TriggerName", value.asInstanceOf[js.Any])
+      inline def setTriggerName(value: String): Self = StObject.set(x, "TriggerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     }
   }
   

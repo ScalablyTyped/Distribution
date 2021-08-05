@@ -27,12 +27,8 @@ object browser {
     Tensor3D
   ] = js.native
   
-  @scala.inline
-  def toPixels(img: Tensor2D | Tensor3D): js.Promise[Uint8ClampedArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPixels")(img.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Uint8ClampedArray]]
-  @scala.inline
-  def toPixels(img: Tensor2D | Tensor3D, canvas: HTMLCanvasElement): js.Promise[Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPixels")(img.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8ClampedArray]]
-  @scala.inline
-  def toPixels(img: TensorLike): js.Promise[Uint8ClampedArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPixels")(img.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Uint8ClampedArray]]
-  @scala.inline
-  def toPixels(img: TensorLike, canvas: HTMLCanvasElement): js.Promise[Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPixels")(img.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8ClampedArray]]
+  inline def toPixels(img: Tensor2D | Tensor3D): js.Promise[Uint8ClampedArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPixels")(img.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Uint8ClampedArray]]
+  inline def toPixels(img: Tensor2D | Tensor3D, canvas: HTMLCanvasElement): js.Promise[Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPixels")(img.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8ClampedArray]]
+  inline def toPixels(img: TensorLike): js.Promise[Uint8ClampedArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("toPixels")(img.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Uint8ClampedArray]]
+  inline def toPixels(img: TensorLike, canvas: HTMLCanvasElement): js.Promise[Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("toPixels")(img.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8ClampedArray]]
 }

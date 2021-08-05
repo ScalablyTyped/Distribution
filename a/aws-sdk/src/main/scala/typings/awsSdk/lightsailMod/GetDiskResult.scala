@@ -13,19 +13,15 @@ trait GetDiskResult extends StObject {
 }
 object GetDiskResult {
   
-  @scala.inline
-  def apply(): GetDiskResult = {
+  inline def apply(): GetDiskResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDiskResult]
   }
   
-  @scala.inline
-  implicit class GetDiskResultMutableBuilder[Self <: GetDiskResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetDiskResult](x: Self) {
     
-    @scala.inline
-    def setDisk(value: Disk): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
+    inline def setDisk(value: Disk): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskUndefined: Self = StObject.set(x, "disk", js.undefined)
+    inline def setDiskUndefined: Self = StObject.set(x, "disk", js.undefined)
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ColorFormat")
 @js.native
-class ColorFormat protected ()
+/* private */ class ColorFormat ()
   extends StObject
      with typings.activexExcel.Excel.ColorFormat {
   
@@ -22,7 +22,7 @@ class ColorFormat protected ()
   /* CompleteClass */
   override val Creator: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.ColorFormat_typekey")
   var ExcelDotColorFormat_typekey: typings.activexExcel.Excel.ColorFormat = js.native
   

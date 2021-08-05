@@ -13,19 +13,15 @@ trait BitmapOptions extends StObject {
 }
 object BitmapOptions {
   
-  @scala.inline
-  def apply(): BitmapOptions = {
+  inline def apply(): BitmapOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BitmapOptions]
   }
   
-  @scala.inline
-  implicit class BitmapOptionsMutableBuilder[Self <: BitmapOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BitmapOptions](x: Self) {
     
-    @scala.inline
-    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
+    inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
   }
 }

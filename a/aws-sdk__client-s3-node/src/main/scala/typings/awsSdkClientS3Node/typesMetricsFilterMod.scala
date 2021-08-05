@@ -29,32 +29,24 @@ object typesMetricsFilterMod {
   }
   object MetricsFilter {
     
-    @scala.inline
-    def apply(): MetricsFilter = {
+    inline def apply(): MetricsFilter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MetricsFilter]
     }
     
-    @scala.inline
-    implicit class MetricsFilterMutableBuilder[Self <: MetricsFilter] (val x: Self) extends AnyVal {
+    extension [Self <: MetricsFilter](x: Self) {
       
-      @scala.inline
-      def setAnd(value: MetricsAndOperator): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
+      inline def setAnd(value: MetricsAndOperator): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAndUndefined: Self = StObject.set(x, "And", js.undefined)
+      inline def setAndUndefined: Self = StObject.set(x, "And", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
       
-      @scala.inline
-      def setTag(value: Tag): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: Tag): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     }
   }
   
@@ -76,26 +68,20 @@ object typesMetricsFilterMod {
   }
   object UnmarshalledMetricsFilter {
     
-    @scala.inline
-    def apply(): UnmarshalledMetricsFilter = {
+    inline def apply(): UnmarshalledMetricsFilter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledMetricsFilter]
     }
     
-    @scala.inline
-    implicit class UnmarshalledMetricsFilterMutableBuilder[Self <: UnmarshalledMetricsFilter] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledMetricsFilter](x: Self) {
       
-      @scala.inline
-      def setAnd(value: UnmarshalledMetricsAndOperator): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
+      inline def setAnd(value: UnmarshalledMetricsAndOperator): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAndUndefined: Self = StObject.set(x, "And", js.undefined)
+      inline def setAndUndefined: Self = StObject.set(x, "And", js.undefined)
       
-      @scala.inline
-      def setTag(value: UnmarshalledTag): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: UnmarshalledTag): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     }
   }
 }

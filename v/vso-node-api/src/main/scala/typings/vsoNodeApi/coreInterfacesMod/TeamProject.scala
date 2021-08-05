@@ -26,8 +26,7 @@ trait TeamProject
 }
 object TeamProject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     abbreviation: String,
     capabilities: StringDictionary[StringDictionary[String]],
@@ -44,16 +43,12 @@ object TeamProject {
     __obj.asInstanceOf[TeamProject]
   }
   
-  @scala.inline
-  implicit class TeamProjectMutableBuilder[Self <: TeamProject] (val x: Self) extends AnyVal {
+  extension [Self <: TeamProject](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: StringDictionary[StringDictionary[String]]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: StringDictionary[StringDictionary[String]]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTeam(value: WebApiTeamRef): Self = StObject.set(x, "defaultTeam", value.asInstanceOf[js.Any])
+    inline def setDefaultTeam(value: WebApiTeamRef): Self = StObject.set(x, "defaultTeam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

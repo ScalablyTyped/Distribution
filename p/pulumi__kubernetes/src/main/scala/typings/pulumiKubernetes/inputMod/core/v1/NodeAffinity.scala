@@ -22,28 +22,21 @@ trait NodeAffinity extends StObject {
 }
 object NodeAffinity {
   
-  @scala.inline
-  def apply(): NodeAffinity = {
+  inline def apply(): NodeAffinity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeAffinity]
   }
   
-  @scala.inline
-  implicit class NodeAffinityMutableBuilder[Self <: NodeAffinity] (val x: Self) extends AnyVal {
+  extension [Self <: NodeAffinity](x: Self) {
     
-    @scala.inline
-    def setPreferredDuringSchedulingIgnoredDuringExecution(value: Input[js.Array[Input[PreferredSchedulingTerm]]]): Self = StObject.set(x, "preferredDuringSchedulingIgnoredDuringExecution", value.asInstanceOf[js.Any])
+    inline def setPreferredDuringSchedulingIgnoredDuringExecution(value: Input[js.Array[Input[PreferredSchedulingTerm]]]): Self = StObject.set(x, "preferredDuringSchedulingIgnoredDuringExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredDuringSchedulingIgnoredDuringExecutionUndefined: Self = StObject.set(x, "preferredDuringSchedulingIgnoredDuringExecution", js.undefined)
+    inline def setPreferredDuringSchedulingIgnoredDuringExecutionUndefined: Self = StObject.set(x, "preferredDuringSchedulingIgnoredDuringExecution", js.undefined)
     
-    @scala.inline
-    def setPreferredDuringSchedulingIgnoredDuringExecutionVarargs(value: Input[PreferredSchedulingTerm]*): Self = StObject.set(x, "preferredDuringSchedulingIgnoredDuringExecution", js.Array(value :_*))
+    inline def setPreferredDuringSchedulingIgnoredDuringExecutionVarargs(value: Input[PreferredSchedulingTerm]*): Self = StObject.set(x, "preferredDuringSchedulingIgnoredDuringExecution", js.Array(value :_*))
     
-    @scala.inline
-    def setRequiredDuringSchedulingIgnoredDuringExecution(value: Input[NodeSelector]): Self = StObject.set(x, "requiredDuringSchedulingIgnoredDuringExecution", value.asInstanceOf[js.Any])
+    inline def setRequiredDuringSchedulingIgnoredDuringExecution(value: Input[NodeSelector]): Self = StObject.set(x, "requiredDuringSchedulingIgnoredDuringExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredDuringSchedulingIgnoredDuringExecutionUndefined: Self = StObject.set(x, "requiredDuringSchedulingIgnoredDuringExecution", js.undefined)
+    inline def setRequiredDuringSchedulingIgnoredDuringExecutionUndefined: Self = StObject.set(x, "requiredDuringSchedulingIgnoredDuringExecution", js.undefined)
   }
 }

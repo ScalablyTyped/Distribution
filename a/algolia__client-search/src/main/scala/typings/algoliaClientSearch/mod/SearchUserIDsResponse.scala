@@ -33,8 +33,7 @@ trait SearchUserIDsResponse extends StObject {
 }
 object SearchUserIDsResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hits: js.Array[UserIDResponse],
     hitsPerPage: Double,
     nbHits: Double,
@@ -45,25 +44,18 @@ object SearchUserIDsResponse {
     __obj.asInstanceOf[SearchUserIDsResponse]
   }
   
-  @scala.inline
-  implicit class SearchUserIDsResponseMutableBuilder[Self <: SearchUserIDsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchUserIDsResponse](x: Self) {
     
-    @scala.inline
-    def setHits(value: js.Array[UserIDResponse]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
+    inline def setHits(value: js.Array[UserIDResponse]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
+    inline def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitsVarargs(value: UserIDResponse*): Self = StObject.set(x, "hits", js.Array(value :_*))
+    inline def setHitsVarargs(value: UserIDResponse*): Self = StObject.set(x, "hits", js.Array(value :_*))
     
-    @scala.inline
-    def setNbHits(value: Double): Self = StObject.set(x, "nbHits", value.asInstanceOf[js.Any])
+    inline def setNbHits(value: Double): Self = StObject.set(x, "nbHits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAt(value: Double): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: Double): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
   }
 }

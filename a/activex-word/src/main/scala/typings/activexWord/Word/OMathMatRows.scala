@@ -20,6 +20,6 @@ trait OMathMatRows extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.OMathMatRows_typekey")
+  /* private */ @JSName("Word.OMathMatRows_typekey")
   var WordDotOMathMatRows_typekey: OMathMatRows = js.native
 }

@@ -67,29 +67,22 @@ object AltJS {
   }
   object ActionsClass {
     
-    @scala.inline
-    def apply(dispatch: /* repeated */ js.Any => Unit): ActionsClass = {
+    inline def apply(dispatch: /* repeated */ js.Any => Unit): ActionsClass = {
       val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch))
       __obj.asInstanceOf[ActionsClass]
     }
     
-    @scala.inline
-    implicit class ActionsClassMutableBuilder[Self <: ActionsClass] (val x: Self) extends AnyVal {
+    extension [Self <: ActionsClass](x: Self) {
       
-      @scala.inline
-      def setActions(value: Actions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: Actions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setDispatch(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGenerateActions(value: /* repeated */ String => Unit): Self = StObject.set(x, "generateActions", js.Any.fromFunction1(value))
+      inline def setGenerateActions(value: /* repeated */ String => Unit): Self = StObject.set(x, "generateActions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGenerateActionsUndefined: Self = StObject.set(x, "generateActions", js.undefined)
+      inline def setGenerateActionsUndefined: Self = StObject.set(x, "generateActions", js.undefined)
     }
   }
   
@@ -161,47 +154,34 @@ object AltJS {
   }
   object AltConfig {
     
-    @scala.inline
-    def apply(): AltConfig = {
+    inline def apply(): AltConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AltConfig]
     }
     
-    @scala.inline
-    implicit class AltConfigMutableBuilder[Self <: AltConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AltConfig](x: Self) {
       
-      @scala.inline
-      def setBatchingFunction(value: /* callback */ js.Function1[/* repeated */ js.Any, js.Any] => Unit): Self = StObject.set(x, "batchingFunction", js.Any.fromFunction1(value))
+      inline def setBatchingFunction(value: /* callback */ js.Function1[/* repeated */ js.Any, js.Any] => Unit): Self = StObject.set(x, "batchingFunction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBatchingFunctionUndefined: Self = StObject.set(x, "batchingFunction", js.undefined)
+      inline def setBatchingFunctionUndefined: Self = StObject.set(x, "batchingFunction", js.undefined)
       
-      @scala.inline
-      def setDeserialize(value: /* deserializeFn */ js.Function1[/* serialData */ String, js.Object] => Unit): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+      inline def setDeserialize(value: /* deserializeFn */ js.Function1[/* serialData */ String, js.Object] => Unit): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeserializeUndefined: Self = StObject.set(x, "deserialize", js.undefined)
+      inline def setDeserializeUndefined: Self = StObject.set(x, "deserialize", js.undefined)
       
-      @scala.inline
-      def setDispatcher(value: js.Any): Self = StObject.set(x, "dispatcher", value.asInstanceOf[js.Any])
+      inline def setDispatcher(value: js.Any): Self = StObject.set(x, "dispatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispatcherUndefined: Self = StObject.set(x, "dispatcher", js.undefined)
+      inline def setDispatcherUndefined: Self = StObject.set(x, "dispatcher", js.undefined)
       
-      @scala.inline
-      def setSerialize(value: /* serializeFn */ js.Function1[/* data */ js.Object, String] => Unit): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+      inline def setSerialize(value: /* serializeFn */ js.Function1[/* data */ js.Object, String] => Unit): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
+      inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
       
-      @scala.inline
-      def setStoreTransforms(value: js.Array[StateTransform]): Self = StObject.set(x, "storeTransforms", value.asInstanceOf[js.Any])
+      inline def setStoreTransforms(value: js.Array[StateTransform]): Self = StObject.set(x, "storeTransforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreTransformsUndefined: Self = StObject.set(x, "storeTransforms", js.undefined)
+      inline def setStoreTransformsUndefined: Self = StObject.set(x, "storeTransforms", js.undefined)
       
-      @scala.inline
-      def setStoreTransformsVarargs(value: StateTransform*): Self = StObject.set(x, "storeTransforms", js.Array(value :_*))
+      inline def setStoreTransformsVarargs(value: StateTransform*): Self = StObject.set(x, "storeTransforms", js.Array(value :_*))
     }
   }
   
@@ -223,8 +203,7 @@ object AltJS {
   }
   object AltStore {
     
-    @scala.inline
-    def apply[S](
+    inline def apply[S](
       emitChange: () => Unit,
       getState: () => S,
       listen: js.Function1[/* state */ S, js.Any] => js.Function0[Unit],
@@ -234,20 +213,15 @@ object AltJS {
       __obj.asInstanceOf[AltStore[S]]
     }
     
-    @scala.inline
-    implicit class AltStoreMutableBuilder[Self <: AltStore[?], S] (val x: Self & AltStore[S]) extends AnyVal {
+    extension [Self <: AltStore[?], S](x: Self & AltStore[S]) {
       
-      @scala.inline
-      def setEmitChange(value: () => Unit): Self = StObject.set(x, "emitChange", js.Any.fromFunction0(value))
+      inline def setEmitChange(value: () => Unit): Self = StObject.set(x, "emitChange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetState(value: () => S): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => S): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setListen(value: js.Function1[/* state */ S, js.Any] => js.Function0[Unit]): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+      inline def setListen(value: js.Function1[/* state */ S, js.Any] => js.Function0[Unit]): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnlisten(value: js.Function1[/* state */ S, js.Any] => Unit): Self = StObject.set(x, "unlisten", js.Any.fromFunction1(value))
+      inline def setUnlisten(value: js.Function1[/* state */ S, js.Any] => Unit): Self = StObject.set(x, "unlisten", js.Any.fromFunction1(value))
     }
   }
   
@@ -275,8 +249,7 @@ object AltJS {
   }
   object SourceModel {
     
-    @scala.inline
-    def apply[S](
+    inline def apply[S](
       error: js.Any => Unit,
       remote: (js.Any, /* repeated */ js.Any) => js.Promise[S],
       success: S => Unit
@@ -285,41 +258,29 @@ object AltJS {
       __obj.asInstanceOf[SourceModel[S]]
     }
     
-    @scala.inline
-    implicit class SourceModelMutableBuilder[Self <: SourceModel[?], S] (val x: Self & SourceModel[S]) extends AnyVal {
+    extension [Self <: SourceModel[?], S](x: Self & SourceModel[S]) {
       
-      @scala.inline
-      def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInterceptResponse(value: (/* response */ js.Any, /* action */ Action[js.Any], /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "interceptResponse", js.Any.fromFunction3(value))
+      inline def setInterceptResponse(value: (/* response */ js.Any, /* action */ Action[js.Any], /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "interceptResponse", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setInterceptResponseUndefined: Self = StObject.set(x, "interceptResponse", js.undefined)
+      inline def setInterceptResponseUndefined: Self = StObject.set(x, "interceptResponse", js.undefined)
       
-      @scala.inline
-      def setLoading(value: /* args */ js.Any => Unit): Self = StObject.set(x, "loading", js.Any.fromFunction1(value))
+      inline def setLoading(value: /* args */ js.Any => Unit): Self = StObject.set(x, "loading", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setLocal(value: (/* state */ js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "local", js.Any.fromFunction2(value))
+      inline def setLocal(value: (/* state */ js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "local", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+      inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
       
-      @scala.inline
-      def setRemote(value: (js.Any, /* repeated */ js.Any) => js.Promise[S]): Self = StObject.set(x, "remote", js.Any.fromFunction2(value))
+      inline def setRemote(value: (js.Any, /* repeated */ js.Any) => js.Promise[S]): Self = StObject.set(x, "remote", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShouldFetch(value: /* fetchFn */ js.Function1[/* repeated */ js.Any, Boolean] => Unit): Self = StObject.set(x, "shouldFetch", js.Any.fromFunction1(value))
+      inline def setShouldFetch(value: /* fetchFn */ js.Function1[/* repeated */ js.Any, Boolean] => Unit): Self = StObject.set(x, "shouldFetch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldFetchUndefined: Self = StObject.set(x, "shouldFetch", js.undefined)
+      inline def setShouldFetchUndefined: Self = StObject.set(x, "shouldFetch", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: S => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: S => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     }
   }
   
@@ -387,8 +348,7 @@ object AltJS {
   }
   object StoreModel {
     
-    @scala.inline
-    def apply[S](
+    inline def apply[S](
       setState: (js.UndefOr[js.Function1[/* state */ S, Unit]]) & (js.UndefOr[
           js.Function1[/* stateFn */ js.Function2[/* currentState */ S, /* nextState */ S, S], Unit]
         ]),
@@ -400,144 +360,99 @@ object AltJS {
       __obj.asInstanceOf[StoreModel[S]]
     }
     
-    @scala.inline
-    implicit class StoreModelMutableBuilder[Self <: StoreModel[?], S] (val x: Self & StoreModel[S]) extends AnyVal {
+    extension [Self <: StoreModel[?], S](x: Self & StoreModel[S]) {
       
-      @scala.inline
-      def setAfterEach(value: (/* payload */ js.Object, /* state */ js.Object) => Unit): Self = StObject.set(x, "afterEach", js.Any.fromFunction2(value))
+      inline def setAfterEach(value: (/* payload */ js.Object, /* state */ js.Object) => Unit): Self = StObject.set(x, "afterEach", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAfterEachUndefined: Self = StObject.set(x, "afterEach", js.undefined)
+      inline def setAfterEachUndefined: Self = StObject.set(x, "afterEach", js.undefined)
       
-      @scala.inline
-      def setAlt(value: Alt): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      inline def setAlt(value: Alt): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      @scala.inline
-      def setBeforeEach(value: (/* payload */ js.Object, /* state */ js.Object) => Unit): Self = StObject.set(x, "beforeEach", js.Any.fromFunction2(value))
+      inline def setBeforeEach(value: (/* payload */ js.Object, /* state */ js.Object) => Unit): Self = StObject.set(x, "beforeEach", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeEachUndefined: Self = StObject.set(x, "beforeEach", js.undefined)
+      inline def setBeforeEachUndefined: Self = StObject.set(x, "beforeEach", js.undefined)
       
-      @scala.inline
-      def setBindAction(value: (/* action */ Action[js.Any], /* handler */ ActionHandler) => Unit): Self = StObject.set(x, "bindAction", js.Any.fromFunction2(value))
+      inline def setBindAction(value: (/* action */ Action[js.Any], /* handler */ ActionHandler) => Unit): Self = StObject.set(x, "bindAction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBindActionUndefined: Self = StObject.set(x, "bindAction", js.undefined)
+      inline def setBindActionUndefined: Self = StObject.set(x, "bindAction", js.undefined)
       
-      @scala.inline
-      def setBindActions(value: /* actions */ ActionsClass => Unit): Self = StObject.set(x, "bindActions", js.Any.fromFunction1(value))
+      inline def setBindActions(value: /* actions */ ActionsClass => Unit): Self = StObject.set(x, "bindActions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBindActionsUndefined: Self = StObject.set(x, "bindActions", js.undefined)
+      inline def setBindActionsUndefined: Self = StObject.set(x, "bindActions", js.undefined)
       
-      @scala.inline
-      def setBindListeners(value: /* config */ StringDictionary[Action[js.Any] | Actions] => Unit): Self = StObject.set(x, "bindListeners", js.Any.fromFunction1(value))
+      inline def setBindListeners(value: /* config */ StringDictionary[Action[js.Any] | Actions] => Unit): Self = StObject.set(x, "bindListeners", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBindListenersUndefined: Self = StObject.set(x, "bindListeners", js.undefined)
+      inline def setBindListenersUndefined: Self = StObject.set(x, "bindListeners", js.undefined)
       
-      @scala.inline
-      def setDispatcher(value: js.Any): Self = StObject.set(x, "dispatcher", value.asInstanceOf[js.Any])
+      inline def setDispatcher(value: js.Any): Self = StObject.set(x, "dispatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispatcherUndefined: Self = StObject.set(x, "dispatcher", js.undefined)
+      inline def setDispatcherUndefined: Self = StObject.set(x, "dispatcher", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setEmitChange(value: () => Unit): Self = StObject.set(x, "emitChange", js.Any.fromFunction0(value))
+      inline def setEmitChange(value: () => Unit): Self = StObject.set(x, "emitChange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEmitChangeUndefined: Self = StObject.set(x, "emitChange", js.undefined)
+      inline def setEmitChangeUndefined: Self = StObject.set(x, "emitChange", js.undefined)
       
-      @scala.inline
-      def setExportAsync(value: /* source */ Source => Unit): Self = StObject.set(x, "exportAsync", js.Any.fromFunction1(value))
+      inline def setExportAsync(value: /* source */ Source => Unit): Self = StObject.set(x, "exportAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExportAsyncUndefined: Self = StObject.set(x, "exportAsync", js.undefined)
+      inline def setExportAsyncUndefined: Self = StObject.set(x, "exportAsync", js.undefined)
       
-      @scala.inline
-      def setExportPublicMethods(value: /* exportConfig */ js.Any => Unit): Self = StObject.set(x, "exportPublicMethods", js.Any.fromFunction1(value))
+      inline def setExportPublicMethods(value: /* exportConfig */ js.Any => Unit): Self = StObject.set(x, "exportPublicMethods", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExportPublicMethodsUndefined: Self = StObject.set(x, "exportPublicMethods", js.undefined)
+      inline def setExportPublicMethodsUndefined: Self = StObject.set(x, "exportPublicMethods", js.undefined)
       
-      @scala.inline
-      def setGetInstance(value: () => AltStore[S]): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
+      inline def setGetInstance(value: () => AltStore[S]): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInstanceUndefined: Self = StObject.set(x, "getInstance", js.undefined)
+      inline def setGetInstanceUndefined: Self = StObject.set(x, "getInstance", js.undefined)
       
-      @scala.inline
-      def setGetState(value: () => S): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => S): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
+      inline def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
       
-      @scala.inline
-      def setObserve(value: /* alt */ Alt => js.Any): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
+      inline def setObserve(value: /* alt */ Alt => js.Any): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setObserveUndefined: Self = StObject.set(x, "observe", js.undefined)
+      inline def setObserveUndefined: Self = StObject.set(x, "observe", js.undefined)
       
-      @scala.inline
-      def setOn(value: (/* event */ lifeCycleEvents, /* callback */ js.Function0[js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (/* event */ lifeCycleEvents, /* callback */ js.Function0[js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnDeserialize(value: /* fn */ js.Function1[/* data */ js.Any, js.Any] => Unit): Self = StObject.set(x, "onDeserialize", js.Any.fromFunction1(value))
+      inline def setOnDeserialize(value: /* fn */ js.Function1[/* data */ js.Any, js.Any] => Unit): Self = StObject.set(x, "onDeserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDeserializeUndefined: Self = StObject.set(x, "onDeserialize", js.undefined)
+      inline def setOnDeserializeUndefined: Self = StObject.set(x, "onDeserialize", js.undefined)
       
-      @scala.inline
-      def setOnSerialize(value: /* fn */ js.Function1[/* data */ js.Any, js.Any] => Unit): Self = StObject.set(x, "onSerialize", js.Any.fromFunction1(value))
+      inline def setOnSerialize(value: /* fn */ js.Function1[/* data */ js.Any, js.Any] => Unit): Self = StObject.set(x, "onSerialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSerializeUndefined: Self = StObject.set(x, "onSerialize", js.undefined)
+      inline def setOnSerializeUndefined: Self = StObject.set(x, "onSerialize", js.undefined)
       
-      @scala.inline
-      def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+      inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
       
-      @scala.inline
-      def setOtherwise(value: (/* data */ js.Any, /* action */ Action[js.Any]) => Unit): Self = StObject.set(x, "otherwise", js.Any.fromFunction2(value))
+      inline def setOtherwise(value: (/* data */ js.Any, /* action */ Action[js.Any]) => Unit): Self = StObject.set(x, "otherwise", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOtherwiseUndefined: Self = StObject.set(x, "otherwise", js.undefined)
+      inline def setOtherwiseUndefined: Self = StObject.set(x, "otherwise", js.undefined)
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
+      inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
       
-      @scala.inline
-      def setReduce(value: (/* state */ js.Any, /* config */ StoreReduce) => js.Object): Self = StObject.set(x, "reduce", js.Any.fromFunction2(value))
+      inline def setReduce(value: (/* state */ js.Any, /* config */ StoreReduce) => js.Object): Self = StObject.set(x, "reduce", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReduceUndefined: Self = StObject.set(x, "reduce", js.undefined)
+      inline def setReduceUndefined: Self = StObject.set(x, "reduce", js.undefined)
       
-      @scala.inline
-      def setRegisterAsync(value: /* datasource */ Source => Unit): Self = StObject.set(x, "registerAsync", js.Any.fromFunction1(value))
+      inline def setRegisterAsync(value: /* datasource */ Source => Unit): Self = StObject.set(x, "registerAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterAsyncUndefined: Self = StObject.set(x, "registerAsync", js.undefined)
+      inline def setRegisterAsyncUndefined: Self = StObject.set(x, "registerAsync", js.undefined)
       
-      @scala.inline
-      def setSetState(
+      inline def setSetState(
         value: (js.UndefOr[js.Function1[/* state */ S, Unit]]) & (js.UndefOr[
               js.Function1[/* stateFn */ js.Function2[/* currentState */ S, /* nextState */ S, S], Unit]
             ])
       ): Self = StObject.set(x, "setState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitFor(
+      inline def setWaitFor(
         value: (js.UndefOr[js.Function1[/* store */ AltStore[js.Any], Unit]]) & (js.UndefOr[
               js.Function1[/* storeOrStores */ AltStore[js.Any] | js.Array[AltStore[js.Any]], Unit]
             ])
@@ -553,20 +468,16 @@ object AltJS {
   }
   object StoreReduce {
     
-    @scala.inline
-    def apply(action: js.Any, data: js.Any): StoreReduce = {
+    inline def apply(action: js.Any, data: js.Any): StoreReduce = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoreReduce]
     }
     
-    @scala.inline
-    implicit class StoreReduceMutableBuilder[Self <: StoreReduce] (val x: Self) extends AnyVal {
+    extension [Self <: StoreReduce](x: Self) {
       
-      @scala.inline
-      def setAction(value: js.Any): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: js.Any): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
 }

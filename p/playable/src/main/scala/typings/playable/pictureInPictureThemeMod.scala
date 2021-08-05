@@ -16,7 +16,6 @@ object pictureInPictureThemeMod {
     @JSImport("playable/dist/src/modules/ui/controls/picture-in-picture/picture-in-picture.theme", "default.pictureInPictureSvgFill")
     @js.native
     def pictureInPictureSvgFill: Fill = js.native
-    @scala.inline
-    def pictureInPictureSvgFill_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pictureInPictureSvgFill")(x.asInstanceOf[js.Any])
+    inline def pictureInPictureSvgFill_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pictureInPictureSvgFill")(x.asInstanceOf[js.Any])
   }
 }

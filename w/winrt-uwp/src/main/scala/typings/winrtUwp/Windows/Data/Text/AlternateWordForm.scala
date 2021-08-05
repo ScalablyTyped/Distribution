@@ -18,8 +18,7 @@ trait AlternateWordForm extends StObject {
 }
 object AlternateWordForm {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alternateText: String,
     normalizationFormat: AlternateNormalizationFormat,
     sourceTextSegment: TextSegment
@@ -28,16 +27,12 @@ object AlternateWordForm {
     __obj.asInstanceOf[AlternateWordForm]
   }
   
-  @scala.inline
-  implicit class AlternateWordFormMutableBuilder[Self <: AlternateWordForm] (val x: Self) extends AnyVal {
+  extension [Self <: AlternateWordForm](x: Self) {
     
-    @scala.inline
-    def setAlternateText(value: String): Self = StObject.set(x, "alternateText", value.asInstanceOf[js.Any])
+    inline def setAlternateText(value: String): Self = StObject.set(x, "alternateText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizationFormat(value: AlternateNormalizationFormat): Self = StObject.set(x, "normalizationFormat", value.asInstanceOf[js.Any])
+    inline def setNormalizationFormat(value: AlternateNormalizationFormat): Self = StObject.set(x, "normalizationFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTextSegment(value: TextSegment): Self = StObject.set(x, "sourceTextSegment", value.asInstanceOf[js.Any])
+    inline def setSourceTextSegment(value: TextSegment): Self = StObject.set(x, "sourceTextSegment", value.asInstanceOf[js.Any])
   }
 }

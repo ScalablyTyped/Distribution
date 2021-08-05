@@ -20,19 +20,15 @@ trait TargetProperties extends StObject {
 }
 object TargetProperties {
   
-  @scala.inline
-  def apply(Properties: SafeArray[NamedValue], Target: js.Any): TargetProperties = {
+  inline def apply(Properties: SafeArray[NamedValue], Target: js.Any): TargetProperties = {
     val __obj = js.Dynamic.literal(Properties = Properties.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetProperties]
   }
   
-  @scala.inline
-  implicit class TargetPropertiesMutableBuilder[Self <: TargetProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TargetProperties](x: Self) {
     
-    @scala.inline
-    def setProperties(value: SafeArray[NamedValue]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SafeArray[NamedValue]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

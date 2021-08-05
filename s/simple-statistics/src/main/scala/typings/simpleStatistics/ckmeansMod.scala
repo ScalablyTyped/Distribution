@@ -10,6 +10,5 @@ object ckmeansMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T /* <: js.Array[Double] */](x: T, nClusters: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any], nClusters.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def default[T /* <: js.Array[Double] */](x: T, nClusters: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any], nClusters.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 }

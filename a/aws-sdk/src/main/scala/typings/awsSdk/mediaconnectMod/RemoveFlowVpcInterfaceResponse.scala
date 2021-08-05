@@ -23,34 +23,25 @@ trait RemoveFlowVpcInterfaceResponse extends StObject {
 }
 object RemoveFlowVpcInterfaceResponse {
   
-  @scala.inline
-  def apply(): RemoveFlowVpcInterfaceResponse = {
+  inline def apply(): RemoveFlowVpcInterfaceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveFlowVpcInterfaceResponse]
   }
   
-  @scala.inline
-  implicit class RemoveFlowVpcInterfaceResponseMutableBuilder[Self <: RemoveFlowVpcInterfaceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveFlowVpcInterfaceResponse](x: Self) {
     
-    @scala.inline
-    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
+    inline def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
     
-    @scala.inline
-    def setNonDeletedNetworkInterfaceIds(value: listOfString): Self = StObject.set(x, "NonDeletedNetworkInterfaceIds", value.asInstanceOf[js.Any])
+    inline def setNonDeletedNetworkInterfaceIds(value: listOfString): Self = StObject.set(x, "NonDeletedNetworkInterfaceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonDeletedNetworkInterfaceIdsUndefined: Self = StObject.set(x, "NonDeletedNetworkInterfaceIds", js.undefined)
+    inline def setNonDeletedNetworkInterfaceIdsUndefined: Self = StObject.set(x, "NonDeletedNetworkInterfaceIds", js.undefined)
     
-    @scala.inline
-    def setNonDeletedNetworkInterfaceIdsVarargs(value: string*): Self = StObject.set(x, "NonDeletedNetworkInterfaceIds", js.Array(value :_*))
+    inline def setNonDeletedNetworkInterfaceIdsVarargs(value: string*): Self = StObject.set(x, "NonDeletedNetworkInterfaceIds", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcInterfaceName(value: string): Self = StObject.set(x, "VpcInterfaceName", value.asInstanceOf[js.Any])
+    inline def setVpcInterfaceName(value: string): Self = StObject.set(x, "VpcInterfaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcInterfaceNameUndefined: Self = StObject.set(x, "VpcInterfaceName", js.undefined)
+    inline def setVpcInterfaceNameUndefined: Self = StObject.set(x, "VpcInterfaceName", js.undefined)
   }
 }

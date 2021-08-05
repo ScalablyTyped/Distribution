@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](options: PromisePollerOptions[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def default[T](options: PromisePollerOptions[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
   trait PromisePollerOptions[T] extends StObject {
     
@@ -166,89 +165,62 @@ object mod {
   }
   object PromisePollerOptions {
     
-    @scala.inline
-    def apply[T](taskFn: () => T | js.Thenable[T]): PromisePollerOptions[T] = {
+    inline def apply[T](taskFn: () => T | js.Thenable[T]): PromisePollerOptions[T] = {
       val __obj = js.Dynamic.literal(taskFn = js.Any.fromFunction0(taskFn))
       __obj.asInstanceOf[PromisePollerOptions[T]]
     }
     
-    @scala.inline
-    implicit class PromisePollerOptionsMutableBuilder[Self <: PromisePollerOptions[?], T] (val x: Self & PromisePollerOptions[T]) extends AnyVal {
+    extension [Self <: PromisePollerOptions[?], T](x: Self & PromisePollerOptions[T]) {
       
-      @scala.inline
-      def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
+      inline def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
+      inline def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setMasterTimeout(value: Double): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
+      inline def setMasterTimeout(value: Double): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
+      inline def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProgressCallback(value: (/* retriesRemaining */ Double, /* error */ js.Any) => Unit): Self = StObject.set(x, "progressCallback", js.Any.fromFunction2(value))
+      inline def setProgressCallback(value: (/* retriesRemaining */ Double, /* error */ js.Any) => Unit): Self = StObject.set(x, "progressCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProgressCallbackUndefined: Self = StObject.set(x, "progressCallback", js.undefined)
+      inline def setProgressCallbackUndefined: Self = StObject.set(x, "progressCallback", js.undefined)
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setShouldContinue(value: (/* reason */ js.Any, /* value */ js.UndefOr[T]) => Boolean): Self = StObject.set(x, "shouldContinue", js.Any.fromFunction2(value))
+      inline def setShouldContinue(value: (/* reason */ js.Any, /* value */ js.UndefOr[T]) => Boolean): Self = StObject.set(x, "shouldContinue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShouldContinueUndefined: Self = StObject.set(x, "shouldContinue", js.undefined)
+      inline def setShouldContinueUndefined: Self = StObject.set(x, "shouldContinue", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setStrategy(value: `fixed-interval` | `linear-backoff` | `exponential-backoff`): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      inline def setStrategy(value: `fixed-interval` | `linear-backoff` | `exponential-backoff`): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
       
-      @scala.inline
-      def setTaskFn(value: () => T | js.Thenable[T]): Self = StObject.set(x, "taskFn", js.Any.fromFunction0(value))
+      inline def setTaskFn(value: () => T | js.Thenable[T]): Self = StObject.set(x, "taskFn", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

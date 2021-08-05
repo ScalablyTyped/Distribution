@@ -36,40 +36,29 @@ trait IRatingConfig extends StObject {
 }
 object IRatingConfig {
   
-  @scala.inline
-  def apply(): IRatingConfig = {
+  inline def apply(): IRatingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRatingConfig]
   }
   
-  @scala.inline
-  implicit class IRatingConfigMutableBuilder[Self <: IRatingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IRatingConfig](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setStateOff(value: String): Self = StObject.set(x, "stateOff", value.asInstanceOf[js.Any])
+    inline def setStateOff(value: String): Self = StObject.set(x, "stateOff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateOffUndefined: Self = StObject.set(x, "stateOff", js.undefined)
+    inline def setStateOffUndefined: Self = StObject.set(x, "stateOff", js.undefined)
     
-    @scala.inline
-    def setStateOn(value: String): Self = StObject.set(x, "stateOn", value.asInstanceOf[js.Any])
+    inline def setStateOn(value: String): Self = StObject.set(x, "stateOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateOnUndefined: Self = StObject.set(x, "stateOn", js.undefined)
+    inline def setStateOnUndefined: Self = StObject.set(x, "stateOn", js.undefined)
     
-    @scala.inline
-    def setTitles(value: js.Array[String]): Self = StObject.set(x, "titles", value.asInstanceOf[js.Any])
+    inline def setTitles(value: js.Array[String]): Self = StObject.set(x, "titles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitlesUndefined: Self = StObject.set(x, "titles", js.undefined)
+    inline def setTitlesUndefined: Self = StObject.set(x, "titles", js.undefined)
     
-    @scala.inline
-    def setTitlesVarargs(value: String*): Self = StObject.set(x, "titles", js.Array(value :_*))
+    inline def setTitlesVarargs(value: String*): Self = StObject.set(x, "titles", js.Array(value :_*))
   }
 }

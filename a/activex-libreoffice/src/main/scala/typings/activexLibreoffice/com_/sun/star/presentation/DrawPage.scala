@@ -84,8 +84,7 @@ trait DrawPage
 }
 object DrawPage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BorderBottom: Double,
     BorderLeft: Double,
     BorderRight: Double,
@@ -153,52 +152,36 @@ object DrawPage {
     __obj.asInstanceOf[DrawPage]
   }
   
-  @scala.inline
-  implicit class DrawPageMutableBuilder[Self <: DrawPage] (val x: Self) extends AnyVal {
+  extension [Self <: DrawPage](x: Self) {
     
-    @scala.inline
-    def setChange(value: Double): Self = StObject.set(x, "Change", value.asInstanceOf[js.Any])
+    inline def setChange(value: Double): Self = StObject.set(x, "Change", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeFormat(value: Double): Self = StObject.set(x, "DateTimeFormat", value.asInstanceOf[js.Any])
+    inline def setDateTimeFormat(value: Double): Self = StObject.set(x, "DateTimeFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeText(value: String): Self = StObject.set(x, "DateTimeText", value.asInstanceOf[js.Any])
+    inline def setDateTimeText(value: String): Self = StObject.set(x, "DateTimeText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffect(value: FadeEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
+    inline def setEffect(value: FadeEffect): Self = StObject.set(x, "Effect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterText(value: String): Self = StObject.set(x, "FooterText", value.asInstanceOf[js.Any])
+    inline def setFooterText(value: String): Self = StObject.set(x, "FooterText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderText(value: String): Self = StObject.set(x, "HeaderText", value.asInstanceOf[js.Any])
+    inline def setHeaderText(value: String): Self = StObject.set(x, "HeaderText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighResDuration(value: Double): Self = StObject.set(x, "HighResDuration", value.asInstanceOf[js.Any])
+    inline def setHighResDuration(value: Double): Self = StObject.set(x, "HighResDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDateTimeFixed(value: Boolean): Self = StObject.set(x, "IsDateTimeFixed", value.asInstanceOf[js.Any])
+    inline def setIsDateTimeFixed(value: Boolean): Self = StObject.set(x, "IsDateTimeFixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDateTimeVisible(value: Boolean): Self = StObject.set(x, "IsDateTimeVisible", value.asInstanceOf[js.Any])
+    inline def setIsDateTimeVisible(value: Boolean): Self = StObject.set(x, "IsDateTimeVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFooterVisible(value: Boolean): Self = StObject.set(x, "IsFooterVisible", value.asInstanceOf[js.Any])
+    inline def setIsFooterVisible(value: Boolean): Self = StObject.set(x, "IsFooterVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHeaderVisible(value: Boolean): Self = StObject.set(x, "IsHeaderVisible", value.asInstanceOf[js.Any])
+    inline def setIsHeaderVisible(value: Boolean): Self = StObject.set(x, "IsHeaderVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPageNumberVisible(value: Boolean): Self = StObject.set(x, "IsPageNumberVisible", value.asInstanceOf[js.Any])
+    inline def setIsPageNumberVisible(value: Boolean): Self = StObject.set(x, "IsPageNumberVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayout(value: Double): Self = StObject.set(x, "Layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: Double): Self = StObject.set(x, "Layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeed(value: AnimationSpeed): Self = StObject.set(x, "Speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: AnimationSpeed): Self = StObject.set(x, "Speed", value.asInstanceOf[js.Any])
   }
 }

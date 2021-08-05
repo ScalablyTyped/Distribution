@@ -14,22 +14,17 @@ trait TfvcVersionDescriptor extends StObject {
 }
 object TfvcVersionDescriptor {
   
-  @scala.inline
-  def apply(version: String, versionOption: TfvcVersionOption, versionType: TfvcVersionType): TfvcVersionDescriptor = {
+  inline def apply(version: String, versionOption: TfvcVersionOption, versionType: TfvcVersionType): TfvcVersionDescriptor = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any], versionOption = versionOption.asInstanceOf[js.Any], versionType = versionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TfvcVersionDescriptor]
   }
   
-  @scala.inline
-  implicit class TfvcVersionDescriptorMutableBuilder[Self <: TfvcVersionDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcVersionDescriptor](x: Self) {
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionOption(value: TfvcVersionOption): Self = StObject.set(x, "versionOption", value.asInstanceOf[js.Any])
+    inline def setVersionOption(value: TfvcVersionOption): Self = StObject.set(x, "versionOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionType(value: TfvcVersionType): Self = StObject.set(x, "versionType", value.asInstanceOf[js.Any])
+    inline def setVersionType(value: TfvcVersionType): Self = StObject.set(x, "versionType", value.asInstanceOf[js.Any])
   }
 }

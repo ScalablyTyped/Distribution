@@ -10,16 +10,13 @@ trait RequestEmailOptions extends StObject {
 }
 object RequestEmailOptions {
   
-  @scala.inline
-  def apply(email: String): RequestEmailOptions = {
+  inline def apply(email: String): RequestEmailOptions = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestEmailOptions]
   }
   
-  @scala.inline
-  implicit class RequestEmailOptionsMutableBuilder[Self <: RequestEmailOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RequestEmailOptions](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
   }
 }

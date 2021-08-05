@@ -8,6 +8,5 @@ object megajsStrings {
   
   @js.native
   sealed trait Storage extends StObject
-  @scala.inline
-  def Storage: Storage = "Storage".asInstanceOf[Storage]
+  inline def Storage: Storage = "Storage".asInstanceOf[Storage]
 }

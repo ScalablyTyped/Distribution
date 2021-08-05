@@ -40,34 +40,25 @@ trait HotpVerifyOptions
 }
 object HotpVerifyOptions {
   
-  @scala.inline
-  def apply(counter: Double, secret: String, token: String): HotpVerifyOptions = {
+  inline def apply(counter: Double, secret: String, token: String): HotpVerifyOptions = {
     val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotpVerifyOptions]
   }
   
-  @scala.inline
-  implicit class HotpVerifyOptionsMutableBuilder[Self <: HotpVerifyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HotpVerifyOptions](x: Self) {
     
-    @scala.inline
-    def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+    inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+    inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
+    inline def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
     
-    @scala.inline
-    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+    inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait NfcDetectionResult extends StObject {
 }
 object NfcDetectionResult {
   
-  @scala.inline
-  def apply(connected: Boolean, rfid: String): NfcDetectionResult = {
+  inline def apply(connected: Boolean, rfid: String): NfcDetectionResult = {
     val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], rfid = rfid.asInstanceOf[js.Any])
     __obj.asInstanceOf[NfcDetectionResult]
   }
   
-  @scala.inline
-  implicit class NfcDetectionResultMutableBuilder[Self <: NfcDetectionResult] (val x: Self) extends AnyVal {
+  extension [Self <: NfcDetectionResult](x: Self) {
     
-    @scala.inline
-    def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+    inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRfid(value: String): Self = StObject.set(x, "rfid", value.asInstanceOf[js.Any])
+    inline def setRfid(value: String): Self = StObject.set(x, "rfid", value.asInstanceOf[js.Any])
   }
 }

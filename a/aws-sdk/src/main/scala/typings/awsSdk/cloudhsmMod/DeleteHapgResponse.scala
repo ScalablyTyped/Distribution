@@ -13,16 +13,13 @@ trait DeleteHapgResponse extends StObject {
 }
 object DeleteHapgResponse {
   
-  @scala.inline
-  def apply(Status: String): DeleteHapgResponse = {
+  inline def apply(Status: String): DeleteHapgResponse = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteHapgResponse]
   }
   
-  @scala.inline
-  implicit class DeleteHapgResponseMutableBuilder[Self <: DeleteHapgResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteHapgResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait TypeInfo extends StObject {
 }
 object TypeInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enter: Node => Unit,
     getArgument: () => GraphQLArgument,
     getDirective: () => GraphQLDirective,
@@ -40,31 +39,22 @@ object TypeInfo {
     __obj.asInstanceOf[TypeInfo]
   }
   
-  @scala.inline
-  implicit class TypeInfoMutableBuilder[Self <: TypeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TypeInfo](x: Self) {
     
-    @scala.inline
-    def setEnter(value: Node => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
+    inline def setEnter(value: Node => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetArgument(value: () => GraphQLArgument): Self = StObject.set(x, "getArgument", js.Any.fromFunction0(value))
+    inline def setGetArgument(value: () => GraphQLArgument): Self = StObject.set(x, "getArgument", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDirective(value: () => GraphQLDirective): Self = StObject.set(x, "getDirective", js.Any.fromFunction0(value))
+    inline def setGetDirective(value: () => GraphQLDirective): Self = StObject.set(x, "getDirective", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFieldDef(value: () => GraphQLFieldDefinition): Self = StObject.set(x, "getFieldDef", js.Any.fromFunction0(value))
+    inline def setGetFieldDef(value: () => GraphQLFieldDefinition): Self = StObject.set(x, "getFieldDef", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInputType(value: () => GraphQLInputType): Self = StObject.set(x, "getInputType", js.Any.fromFunction0(value))
+    inline def setGetInputType(value: () => GraphQLInputType): Self = StObject.set(x, "getInputType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParentType(value: () => GraphQLCompositeType): Self = StObject.set(x, "getParentType", js.Any.fromFunction0(value))
+    inline def setGetParentType(value: () => GraphQLCompositeType): Self = StObject.set(x, "getParentType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => GraphQLOutputType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => GraphQLOutputType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLeave(value: Node => Unit): Self = StObject.set(x, "leave", js.Any.fromFunction1(value))
+    inline def setLeave(value: Node => Unit): Self = StObject.set(x, "leave", js.Any.fromFunction1(value))
   }
 }

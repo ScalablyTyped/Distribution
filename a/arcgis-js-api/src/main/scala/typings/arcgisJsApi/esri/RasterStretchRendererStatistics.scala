@@ -40,8 +40,7 @@ trait RasterStretchRendererStatistics
 }
 object RasterStretchRendererStatistics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     max: Double,
@@ -52,25 +51,18 @@ object RasterStretchRendererStatistics {
     __obj.asInstanceOf[RasterStretchRendererStatistics]
   }
   
-  @scala.inline
-  implicit class RasterStretchRendererStatisticsMutableBuilder[Self <: RasterStretchRendererStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: RasterStretchRendererStatistics](x: Self) {
     
-    @scala.inline
-    def setAvg(value: Double): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
+    inline def setAvg(value: Double): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvgUndefined: Self = StObject.set(x, "avg", js.undefined)
+    inline def setAvgUndefined: Self = StObject.set(x, "avg", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
+    inline def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStddevUndefined: Self = StObject.set(x, "stddev", js.undefined)
+    inline def setStddevUndefined: Self = StObject.set(x, "stddev", js.undefined)
   }
 }

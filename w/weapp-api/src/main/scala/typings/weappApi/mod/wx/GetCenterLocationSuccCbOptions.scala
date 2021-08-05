@@ -13,16 +13,13 @@ trait GetCenterLocationSuccCbOptions
 }
 object GetCenterLocationSuccCbOptions {
   
-  @scala.inline
-  def apply(success: LocationBaseOptions => Unit): GetCenterLocationSuccCbOptions = {
+  inline def apply(success: LocationBaseOptions => Unit): GetCenterLocationSuccCbOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetCenterLocationSuccCbOptions]
   }
   
-  @scala.inline
-  implicit class GetCenterLocationSuccCbOptionsMutableBuilder[Self <: GetCenterLocationSuccCbOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetCenterLocationSuccCbOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: LocationBaseOptions => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: LocationBaseOptions => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

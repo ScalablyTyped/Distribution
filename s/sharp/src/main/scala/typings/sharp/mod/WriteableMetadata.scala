@@ -11,19 +11,15 @@ trait WriteableMetadata extends StObject {
 }
 object WriteableMetadata {
   
-  @scala.inline
-  def apply(): WriteableMetadata = {
+  inline def apply(): WriteableMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WriteableMetadata]
   }
   
-  @scala.inline
-  implicit class WriteableMetadataMutableBuilder[Self <: WriteableMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: WriteableMetadata](x: Self) {
     
-    @scala.inline
-    def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait Polyline
 }
 object Polyline {
   
-  @scala.inline
-  def apply(paths: js.Array[js.Array[Position]]): Polyline = {
+  inline def apply(paths: js.Array[js.Array[Position]]): Polyline = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[Polyline]
   }
   
-  @scala.inline
-  implicit class PolylineMutableBuilder[Self <: Polyline] (val x: Self) extends AnyVal {
+  extension [Self <: Polyline](x: Self) {
     
-    @scala.inline
-    def setPaths(value: js.Array[js.Array[Position]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: js.Array[js.Array[Position]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsVarargs(value: js.Array[Position]*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: js.Array[Position]*): Self = StObject.set(x, "paths", js.Array(value :_*))
   }
 }

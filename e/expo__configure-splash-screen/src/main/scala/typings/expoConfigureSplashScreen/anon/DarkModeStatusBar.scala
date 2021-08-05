@@ -12,25 +12,19 @@ trait DarkModeStatusBar extends StObject {
 }
 object DarkModeStatusBar {
   
-  @scala.inline
-  def apply(): DarkModeStatusBar = {
+  inline def apply(): DarkModeStatusBar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DarkModeStatusBar]
   }
   
-  @scala.inline
-  implicit class DarkModeStatusBarMutableBuilder[Self <: DarkModeStatusBar] (val x: Self) extends AnyVal {
+  extension [Self <: DarkModeStatusBar](x: Self) {
     
-    @scala.inline
-    def setDarkMode(value: `5`): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
+    inline def setDarkMode(value: `5`): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
+    inline def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
     
-    @scala.inline
-    def setStatusBar(value: BackgroundColorHidden): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
+    inline def setStatusBar(value: BackgroundColorHidden): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
+    inline def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
   }
 }

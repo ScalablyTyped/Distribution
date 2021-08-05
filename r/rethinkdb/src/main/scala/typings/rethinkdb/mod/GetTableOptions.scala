@@ -10,16 +10,13 @@ trait GetTableOptions extends StObject {
 }
 object GetTableOptions {
   
-  @scala.inline
-  def apply(useOutdated: Boolean): GetTableOptions = {
+  inline def apply(useOutdated: Boolean): GetTableOptions = {
     val __obj = js.Dynamic.literal(useOutdated = useOutdated.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTableOptions]
   }
   
-  @scala.inline
-  implicit class GetTableOptionsMutableBuilder[Self <: GetTableOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetTableOptions](x: Self) {
     
-    @scala.inline
-    def setUseOutdated(value: Boolean): Self = StObject.set(x, "useOutdated", value.asInstanceOf[js.Any])
+    inline def setUseOutdated(value: Boolean): Self = StObject.set(x, "useOutdated", value.asInstanceOf[js.Any])
   }
 }

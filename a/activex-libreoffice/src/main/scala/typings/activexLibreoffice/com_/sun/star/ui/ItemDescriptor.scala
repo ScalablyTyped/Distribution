@@ -67,8 +67,7 @@ trait ItemDescriptor extends StObject {
 }
 object ItemDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CommandURL: String,
     HelpURL: String,
     IsVisible: Boolean,
@@ -83,34 +82,24 @@ object ItemDescriptor {
     __obj.asInstanceOf[ItemDescriptor]
   }
   
-  @scala.inline
-  implicit class ItemDescriptorMutableBuilder[Self <: ItemDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: ItemDescriptor](x: Self) {
     
-    @scala.inline
-    def setCommandURL(value: String): Self = StObject.set(x, "CommandURL", value.asInstanceOf[js.Any])
+    inline def setCommandURL(value: String): Self = StObject.set(x, "CommandURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
+    inline def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDescriptorContainer(value: XIndexAccess): Self = StObject.set(x, "ItemDescriptorContainer", value.asInstanceOf[js.Any])
+    inline def setItemDescriptorContainer(value: XIndexAccess): Self = StObject.set(x, "ItemDescriptorContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: Double): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Double): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

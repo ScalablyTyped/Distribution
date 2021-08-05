@@ -30,26 +30,20 @@ object fileBrowserHandler {
   }
   object FileHandlerExecuteEventDetails {
     
-    @scala.inline
-    def apply(entries: js.Array[js.Any]): FileHandlerExecuteEventDetails = {
+    inline def apply(entries: js.Array[js.Any]): FileHandlerExecuteEventDetails = {
       val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileHandlerExecuteEventDetails]
     }
     
-    @scala.inline
-    implicit class FileHandlerExecuteEventDetailsMutableBuilder[Self <: FileHandlerExecuteEventDetails] (val x: Self) extends AnyVal {
+    extension [Self <: FileHandlerExecuteEventDetails](x: Self) {
       
-      @scala.inline
-      def setEntries(value: js.Array[js.Any]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: js.Array[js.Any]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntriesVarargs(value: js.Any*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: js.Any*): Self = StObject.set(x, "entries", js.Array(value :_*))
       
-      @scala.inline
-      def setTab_id(value: Double): Self = StObject.set(x, "tab_id", value.asInstanceOf[js.Any])
+      inline def setTab_id(value: Double): Self = StObject.set(x, "tab_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTab_idUndefined: Self = StObject.set(x, "tab_id", js.undefined)
+      inline def setTab_idUndefined: Self = StObject.set(x, "tab_id", js.undefined)
     }
   }
   
@@ -67,26 +61,20 @@ object fileBrowserHandler {
   }
   object SelectionParams {
     
-    @scala.inline
-    def apply(suggestedName: String): SelectionParams = {
+    inline def apply(suggestedName: String): SelectionParams = {
       val __obj = js.Dynamic.literal(suggestedName = suggestedName.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectionParams]
     }
     
-    @scala.inline
-    implicit class SelectionParamsMutableBuilder[Self <: SelectionParams] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionParams](x: Self) {
       
-      @scala.inline
-      def setAllowedFileExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedFileExtensions", value.asInstanceOf[js.Any])
+      inline def setAllowedFileExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedFileExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedFileExtensionsUndefined: Self = StObject.set(x, "allowedFileExtensions", js.undefined)
+      inline def setAllowedFileExtensionsUndefined: Self = StObject.set(x, "allowedFileExtensions", js.undefined)
       
-      @scala.inline
-      def setAllowedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedFileExtensions", js.Array(value :_*))
+      inline def setAllowedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedFileExtensions", js.Array(value :_*))
       
-      @scala.inline
-      def setSuggestedName(value: String): Self = StObject.set(x, "suggestedName", value.asInstanceOf[js.Any])
+      inline def setSuggestedName(value: String): Self = StObject.set(x, "suggestedName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,26 +88,20 @@ object fileBrowserHandler {
   }
   object SelectionResult {
     
-    @scala.inline
-    def apply(success: Boolean): SelectionResult = {
+    inline def apply(success: Boolean): SelectionResult = {
       val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectionResult]
     }
     
-    @scala.inline
-    implicit class SelectionResultMutableBuilder[Self <: SelectionResult] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionResult](x: Self) {
       
-      @scala.inline
-      def setEntry(value: js.Object): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+      inline def setEntry(value: js.Object): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryNull: Self = StObject.set(x, "entry", null)
+      inline def setEntryNull: Self = StObject.set(x, "entry", null)
       
-      @scala.inline
-      def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
+      inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -28,8 +28,7 @@ trait ChartDataChangeEvent
 }
 object ChartDataChangeEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EndColumn: Double,
     EndRow: Double,
     Source: XInterface,
@@ -41,22 +40,16 @@ object ChartDataChangeEvent {
     __obj.asInstanceOf[ChartDataChangeEvent]
   }
   
-  @scala.inline
-  implicit class ChartDataChangeEventMutableBuilder[Self <: ChartDataChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ChartDataChangeEvent](x: Self) {
     
-    @scala.inline
-    def setEndColumn(value: Double): Self = StObject.set(x, "EndColumn", value.asInstanceOf[js.Any])
+    inline def setEndColumn(value: Double): Self = StObject.set(x, "EndColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndRow(value: Double): Self = StObject.set(x, "EndRow", value.asInstanceOf[js.Any])
+    inline def setEndRow(value: Double): Self = StObject.set(x, "EndRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartColumn(value: Double): Self = StObject.set(x, "StartColumn", value.asInstanceOf[js.Any])
+    inline def setStartColumn(value: Double): Self = StObject.set(x, "StartColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartRow(value: Double): Self = StObject.set(x, "StartRow", value.asInstanceOf[js.Any])
+    inline def setStartRow(value: Double): Self = StObject.set(x, "StartRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ChartDataChangeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChartDataChangeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

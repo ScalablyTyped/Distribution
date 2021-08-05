@@ -20,31 +20,23 @@ trait SageMakerMachineLearningModelResourceData extends StObject {
 }
 object SageMakerMachineLearningModelResourceData {
   
-  @scala.inline
-  def apply(): SageMakerMachineLearningModelResourceData = {
+  inline def apply(): SageMakerMachineLearningModelResourceData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SageMakerMachineLearningModelResourceData]
   }
   
-  @scala.inline
-  implicit class SageMakerMachineLearningModelResourceDataMutableBuilder[Self <: SageMakerMachineLearningModelResourceData] (val x: Self) extends AnyVal {
+  extension [Self <: SageMakerMachineLearningModelResourceData](x: Self) {
     
-    @scala.inline
-    def setDestinationPath(value: string): Self = StObject.set(x, "DestinationPath", value.asInstanceOf[js.Any])
+    inline def setDestinationPath(value: string): Self = StObject.set(x, "DestinationPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPathUndefined: Self = StObject.set(x, "DestinationPath", js.undefined)
+    inline def setDestinationPathUndefined: Self = StObject.set(x, "DestinationPath", js.undefined)
     
-    @scala.inline
-    def setOwnerSetting(value: ResourceDownloadOwnerSetting): Self = StObject.set(x, "OwnerSetting", value.asInstanceOf[js.Any])
+    inline def setOwnerSetting(value: ResourceDownloadOwnerSetting): Self = StObject.set(x, "OwnerSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerSettingUndefined: Self = StObject.set(x, "OwnerSetting", js.undefined)
+    inline def setOwnerSettingUndefined: Self = StObject.set(x, "OwnerSetting", js.undefined)
     
-    @scala.inline
-    def setSageMakerJobArn(value: string): Self = StObject.set(x, "SageMakerJobArn", value.asInstanceOf[js.Any])
+    inline def setSageMakerJobArn(value: string): Self = StObject.set(x, "SageMakerJobArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSageMakerJobArnUndefined: Self = StObject.set(x, "SageMakerJobArn", js.undefined)
+    inline def setSageMakerJobArnUndefined: Self = StObject.set(x, "SageMakerJobArn", js.undefined)
   }
 }

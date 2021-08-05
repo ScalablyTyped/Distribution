@@ -13,19 +13,15 @@ trait BatchGetChannelRequest extends StObject {
 }
 object BatchGetChannelRequest {
   
-  @scala.inline
-  def apply(arns: ChannelArnList): BatchGetChannelRequest = {
+  inline def apply(arns: ChannelArnList): BatchGetChannelRequest = {
     val __obj = js.Dynamic.literal(arns = arns.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetChannelRequest]
   }
   
-  @scala.inline
-  implicit class BatchGetChannelRequestMutableBuilder[Self <: BatchGetChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetChannelRequest](x: Self) {
     
-    @scala.inline
-    def setArns(value: ChannelArnList): Self = StObject.set(x, "arns", value.asInstanceOf[js.Any])
+    inline def setArns(value: ChannelArnList): Self = StObject.set(x, "arns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnsVarargs(value: ChannelArn*): Self = StObject.set(x, "arns", js.Array(value :_*))
+    inline def setArnsVarargs(value: ChannelArn*): Self = StObject.set(x, "arns", js.Array(value :_*))
   }
 }

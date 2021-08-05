@@ -13,16 +13,13 @@ trait InventoryFilter extends StObject {
 }
 object InventoryFilter {
   
-  @scala.inline
-  def apply(Prefix: Prefix): InventoryFilter = {
+  inline def apply(Prefix: Prefix): InventoryFilter = {
     val __obj = js.Dynamic.literal(Prefix = Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryFilter]
   }
   
-  @scala.inline
-  implicit class InventoryFilterMutableBuilder[Self <: InventoryFilter] (val x: Self) extends AnyVal {
+  extension [Self <: InventoryFilter](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
   }
 }

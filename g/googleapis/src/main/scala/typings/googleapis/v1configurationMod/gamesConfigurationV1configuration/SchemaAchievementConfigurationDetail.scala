@@ -42,49 +42,35 @@ trait SchemaAchievementConfigurationDetail extends StObject {
 }
 object SchemaAchievementConfigurationDetail {
   
-  @scala.inline
-  def apply(): SchemaAchievementConfigurationDetail = {
+  inline def apply(): SchemaAchievementConfigurationDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAchievementConfigurationDetail]
   }
   
-  @scala.inline
-  implicit class SchemaAchievementConfigurationDetailMutableBuilder[Self <: SchemaAchievementConfigurationDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAchievementConfigurationDetail](x: Self) {
     
-    @scala.inline
-    def setDescription(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+    inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPointValue(value: Double): Self = StObject.set(x, "pointValue", value.asInstanceOf[js.Any])
+    inline def setPointValue(value: Double): Self = StObject.set(x, "pointValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointValueUndefined: Self = StObject.set(x, "pointValue", js.undefined)
+    inline def setPointValueUndefined: Self = StObject.set(x, "pointValue", js.undefined)
     
-    @scala.inline
-    def setSortRank(value: Double): Self = StObject.set(x, "sortRank", value.asInstanceOf[js.Any])
+    inline def setSortRank(value: Double): Self = StObject.set(x, "sortRank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortRankUndefined: Self = StObject.set(x, "sortRank", js.undefined)
+    inline def setSortRankUndefined: Self = StObject.set(x, "sortRank", js.undefined)
   }
 }

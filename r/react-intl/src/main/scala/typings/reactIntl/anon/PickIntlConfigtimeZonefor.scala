@@ -35,8 +35,7 @@ trait PickIntlConfigtimeZonefor extends StObject {
 }
 object PickIntlConfigtimeZonefor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultFormats: CustomFormats,
     defaultLocale: String,
     formats: CustomFormats,
@@ -47,36 +46,26 @@ object PickIntlConfigtimeZonefor {
     __obj.asInstanceOf[PickIntlConfigtimeZonefor]
   }
   
-  @scala.inline
-  implicit class PickIntlConfigtimeZoneforMutableBuilder[Self <: PickIntlConfigtimeZonefor] (val x: Self) extends AnyVal {
+  extension [Self <: PickIntlConfigtimeZonefor](x: Self) {
     
-    @scala.inline
-    def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])
+    inline def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
+    inline def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormats(value: CustomFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+    inline def setFormats(value: CustomFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessages(value: Record[String, js.Array[MessageFormatElement] | String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: Record[String, js.Array[MessageFormatElement] | String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnError(
+    inline def setOnError(
       value: /* err */ MissingTranslationError | MessageFormatError | MissingDataError | InvalidConfigError | UnsupportedFormatterError | FormatError => Unit
     ): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTextComponent(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any): Self = StObject.set(x, "textComponent", value.asInstanceOf[js.Any])
+    inline def setTextComponent(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any): Self = StObject.set(x, "textComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextComponentUndefined: Self = StObject.set(x, "textComponent", js.undefined)
+    inline def setTextComponentUndefined: Self = StObject.set(x, "textComponent", js.undefined)
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

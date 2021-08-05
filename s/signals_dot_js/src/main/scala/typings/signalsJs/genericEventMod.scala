@@ -15,13 +15,13 @@ object genericEventMod {
        with IEvent {
     def this(bubbles: Boolean) = this()
     
-    var _bubbles: Boolean = js.native
+    /* protected */ var _bubbles: Boolean = js.native
     
-    var _currentTarget: js.Object = js.native
+    /* protected */ var _currentTarget: js.Object = js.native
     
-    var _signal: IPrioritySignal = js.native
+    /* protected */ var _signal: IPrioritySignal = js.native
     
-    var _target: js.Object = js.native
+    /* protected */ var _target: js.Object = js.native
     
     /** Indicates whether the event is a bubbling event. */
     /* CompleteClass */

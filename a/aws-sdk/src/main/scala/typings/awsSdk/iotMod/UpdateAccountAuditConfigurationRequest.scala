@@ -23,31 +23,23 @@ trait UpdateAccountAuditConfigurationRequest extends StObject {
 }
 object UpdateAccountAuditConfigurationRequest {
   
-  @scala.inline
-  def apply(): UpdateAccountAuditConfigurationRequest = {
+  inline def apply(): UpdateAccountAuditConfigurationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateAccountAuditConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAccountAuditConfigurationRequestMutableBuilder[Self <: UpdateAccountAuditConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAccountAuditConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setAuditCheckConfigurations(value: AuditCheckConfigurations): Self = StObject.set(x, "auditCheckConfigurations", value.asInstanceOf[js.Any])
+    inline def setAuditCheckConfigurations(value: AuditCheckConfigurations): Self = StObject.set(x, "auditCheckConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditCheckConfigurationsUndefined: Self = StObject.set(x, "auditCheckConfigurations", js.undefined)
+    inline def setAuditCheckConfigurationsUndefined: Self = StObject.set(x, "auditCheckConfigurations", js.undefined)
     
-    @scala.inline
-    def setAuditNotificationTargetConfigurations(value: AuditNotificationTargetConfigurations): Self = StObject.set(x, "auditNotificationTargetConfigurations", value.asInstanceOf[js.Any])
+    inline def setAuditNotificationTargetConfigurations(value: AuditNotificationTargetConfigurations): Self = StObject.set(x, "auditNotificationTargetConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditNotificationTargetConfigurationsUndefined: Self = StObject.set(x, "auditNotificationTargetConfigurations", js.undefined)
+    inline def setAuditNotificationTargetConfigurationsUndefined: Self = StObject.set(x, "auditNotificationTargetConfigurations", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

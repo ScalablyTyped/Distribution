@@ -34,23 +34,18 @@ object webTwainIOMod {
   }
   object Base64Result {
     
-    @scala.inline
-    def apply(getData: (Double, Double) => String, getLength: () => Double, getMD5: () => String): Base64Result = {
+    inline def apply(getData: (Double, Double) => String, getLength: () => Double, getMD5: () => String): Base64Result = {
       val __obj = js.Dynamic.literal(getData = js.Any.fromFunction2(getData), getLength = js.Any.fromFunction0(getLength), getMD5 = js.Any.fromFunction0(getMD5))
       __obj.asInstanceOf[Base64Result]
     }
     
-    @scala.inline
-    implicit class Base64ResultMutableBuilder[Self <: Base64Result] (val x: Self) extends AnyVal {
+    extension [Self <: Base64Result](x: Self) {
       
-      @scala.inline
-      def setGetData(value: (Double, Double) => String): Self = StObject.set(x, "getData", js.Any.fromFunction2(value))
+      inline def setGetData(value: (Double, Double) => String): Self = StObject.set(x, "getData", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+      inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMD5(value: () => String): Self = StObject.set(x, "getMD5", js.Any.fromFunction0(value))
+      inline def setGetMD5(value: () => String): Self = StObject.set(x, "getMD5", js.Any.fromFunction0(value))
     }
   }
   
@@ -72,8 +67,7 @@ object webTwainIOMod {
   }
   object LicenseDetailItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Browser: String,
       EnumLicenseType: String,
       ExpireDate: String,
@@ -86,29 +80,21 @@ object webTwainIOMod {
       __obj.asInstanceOf[LicenseDetailItem]
     }
     
-    @scala.inline
-    implicit class LicenseDetailItemMutableBuilder[Self <: LicenseDetailItem] (val x: Self) extends AnyVal {
+    extension [Self <: LicenseDetailItem](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: String): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: String): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumLicenseType(value: String): Self = StObject.set(x, "EnumLicenseType", value.asInstanceOf[js.Any])
+      inline def setEnumLicenseType(value: String): Self = StObject.set(x, "EnumLicenseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpireDate(value: String): Self = StObject.set(x, "ExpireDate", value.asInstanceOf[js.Any])
+      inline def setExpireDate(value: String): Self = StObject.set(x, "ExpireDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseType(value: String): Self = StObject.set(x, "LicenseType", value.asInstanceOf[js.Any])
+      inline def setLicenseType(value: String): Self = StObject.set(x, "LicenseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOS(value: String): Self = StObject.set(x, "OS", value.asInstanceOf[js.Any])
+      inline def setOS(value: String): Self = StObject.set(x, "OS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrial(value: String): Self = StObject.set(x, "Trial", value.asInstanceOf[js.Any])
+      inline def setTrial(value: String): Self = StObject.set(x, "Trial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     }
   }
   

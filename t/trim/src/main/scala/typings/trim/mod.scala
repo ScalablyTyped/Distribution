@@ -6,16 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(str: String): String = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(str: String): String = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("trim", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def left(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def left(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def right(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def right(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

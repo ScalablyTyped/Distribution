@@ -95,14 +95,12 @@ object IndexSignatureSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     openBracketToken: ISyntaxToken,
     parameter: typings.typescriptServices.TypeScript.ParameterSyntax,
     closeBracketToken: ISyntaxToken
   ): typings.typescriptServices.TypeScript.IndexSignatureSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(openBracketToken.asInstanceOf[js.Any], parameter.asInstanceOf[js.Any], closeBracketToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.IndexSignatureSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(parameter: typings.typescriptServices.TypeScript.ParameterSyntax): typings.typescriptServices.TypeScript.IndexSignatureSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(parameter.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.IndexSignatureSyntax]
+  inline def create1(parameter: typings.typescriptServices.TypeScript.ParameterSyntax): typings.typescriptServices.TypeScript.IndexSignatureSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(parameter.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.IndexSignatureSyntax]
 }

@@ -21,13 +21,11 @@ object Touch {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Touch = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Touch]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.Touch = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Touch]
   
   /* static member */
   @JSGlobal("kendo.ui.Touch.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.Touch = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.Touch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.Touch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

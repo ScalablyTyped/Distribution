@@ -13,8 +13,6 @@ object useStretchStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Tuple2[CSSProperties, js.Function1[/* element */ HTMLElement, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[CSSProperties, js.Function1[/* element */ HTMLElement, Unit]]]
-  @scala.inline
-  def default(stretch: StretchType): js.Tuple2[CSSProperties, js.Function1[/* element */ HTMLElement, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(stretch.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[CSSProperties, js.Function1[/* element */ HTMLElement, Unit]]]
+  inline def default(): js.Tuple2[CSSProperties, js.Function1[/* element */ HTMLElement, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[CSSProperties, js.Function1[/* element */ HTMLElement, Unit]]]
+  inline def default(stretch: StretchType): js.Tuple2[CSSProperties, js.Function1[/* element */ HTMLElement, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(stretch.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[CSSProperties, js.Function1[/* element */ HTMLElement, Unit]]]
 }

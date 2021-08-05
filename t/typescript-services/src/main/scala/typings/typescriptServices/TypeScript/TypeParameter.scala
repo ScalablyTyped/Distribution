@@ -16,8 +16,7 @@ trait TypeParameter
 }
 object TypeParameter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -45,16 +44,12 @@ object TypeParameter {
     __obj.asInstanceOf[TypeParameter]
   }
   
-  @scala.inline
-  implicit class TypeParameterMutableBuilder[Self <: TypeParameter] (val x: Self) extends AnyVal {
+  extension [Self <: TypeParameter](x: Self) {
     
-    @scala.inline
-    def setConstraint(value: Constraint): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    inline def setConstraint(value: Constraint): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (TypeParameter, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (TypeParameter, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

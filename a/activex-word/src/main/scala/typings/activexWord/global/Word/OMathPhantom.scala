@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OMathPhantom")
 @js.native
-class OMathPhantom protected ()
+/* private */ class OMathPhantom ()
   extends StObject
      with typings.activexWord.Word.OMathPhantom {
   
@@ -31,7 +31,7 @@ class OMathPhantom protected ()
   /* CompleteClass */
   var Transp: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.OMathPhantom_typekey")
   var WordDotOMathPhantom_typekey: typings.activexWord.Word.OMathPhantom = js.native
   

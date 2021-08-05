@@ -57,8 +57,7 @@ trait SocialPostDefinitionDataItem
 }
 object SocialPostDefinitionDataItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -81,43 +80,30 @@ object SocialPostDefinitionDataItem {
     __obj.asInstanceOf[SocialPostDefinitionDataItem]
   }
   
-  @scala.inline
-  implicit class SocialPostDefinitionDataItemMutableBuilder[Self <: SocialPostDefinitionDataItem] (val x: Self) extends AnyVal {
+  extension [Self <: SocialPostDefinitionDataItem](x: Self) {
     
-    @scala.inline
-    def setGet_accountName(value: () => String): Self = StObject.set(x, "get_accountName", js.Any.fromFunction0(value))
+    inline def setGet_accountName(value: () => String): Self = StObject.set(x, "get_accountName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_itemType(value: () => SocialPostDefinitionDataItemType): Self = StObject.set(x, "get_itemType", js.Any.fromFunction0(value))
+    inline def setGet_itemType(value: () => SocialPostDefinitionDataItemType): Self = StObject.set(x, "get_itemType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_placeholderName(value: () => String): Self = StObject.set(x, "get_placeholderName", js.Any.fromFunction0(value))
+    inline def setGet_placeholderName(value: () => String): Self = StObject.set(x, "get_placeholderName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_tagGuid(value: () => String): Self = StObject.set(x, "get_tagGuid", js.Any.fromFunction0(value))
+    inline def setGet_tagGuid(value: () => String): Self = StObject.set(x, "get_tagGuid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_text(value: () => String): Self = StObject.set(x, "get_text", js.Any.fromFunction0(value))
+    inline def setGet_text(value: () => String): Self = StObject.set(x, "get_text", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_uri(value: () => String): Self = StObject.set(x, "get_uri", js.Any.fromFunction0(value))
+    inline def setGet_uri(value: () => String): Self = StObject.set(x, "get_uri", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_accountName(value: String => String): Self = StObject.set(x, "set_accountName", js.Any.fromFunction1(value))
+    inline def setSet_accountName(value: String => String): Self = StObject.set(x, "set_accountName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_itemType(value: SocialPostDefinitionDataItemType => SocialPostDefinitionDataItemType): Self = StObject.set(x, "set_itemType", js.Any.fromFunction1(value))
+    inline def setSet_itemType(value: SocialPostDefinitionDataItemType => SocialPostDefinitionDataItemType): Self = StObject.set(x, "set_itemType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_placeholderName(value: String => String): Self = StObject.set(x, "set_placeholderName", js.Any.fromFunction1(value))
+    inline def setSet_placeholderName(value: String => String): Self = StObject.set(x, "set_placeholderName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_tagGuid(value: String => String): Self = StObject.set(x, "set_tagGuid", js.Any.fromFunction1(value))
+    inline def setSet_tagGuid(value: String => String): Self = StObject.set(x, "set_tagGuid", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_text(value: String => String): Self = StObject.set(x, "set_text", js.Any.fromFunction1(value))
+    inline def setSet_text(value: String => String): Self = StObject.set(x, "set_text", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_uri(value: String => String): Self = StObject.set(x, "set_uri", js.Any.fromFunction1(value))
+    inline def setSet_uri(value: String => String): Self = StObject.set(x, "set_uri", js.Any.fromFunction1(value))
   }
 }

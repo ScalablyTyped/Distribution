@@ -52,8 +52,7 @@ trait Predicate extends StObject {
 }
 object Predicate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     and: PredicateMethod,
     not: () => Predicate,
     or: PredicateMethod,
@@ -65,25 +64,18 @@ object Predicate {
     __obj.asInstanceOf[Predicate]
   }
   
-  @scala.inline
-  implicit class PredicateMutableBuilder[Self <: Predicate] (val x: Self) extends AnyVal {
+  extension [Self <: Predicate](x: Self) {
     
-    @scala.inline
-    def setAnd(value: PredicateMethod): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+    inline def setAnd(value: PredicateMethod): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNot(value: () => Predicate): Self = StObject.set(x, "not", js.Any.fromFunction0(value))
+    inline def setNot(value: () => Predicate): Self = StObject.set(x, "not", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOr(value: PredicateMethod): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
+    inline def setOr(value: PredicateMethod): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToFunction(value: () => js.Function): Self = StObject.set(x, "toFunction", js.Any.fromFunction0(value))
+    inline def setToFunction(value: () => js.Function): Self = StObject.set(x, "toFunction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValidate(value: EntityType => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    inline def setValidate(value: EntityType => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
   }
 }

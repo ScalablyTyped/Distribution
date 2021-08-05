@@ -23,31 +23,23 @@ trait ModifyGlobalClusterMessage extends StObject {
 }
 object ModifyGlobalClusterMessage {
   
-  @scala.inline
-  def apply(): ModifyGlobalClusterMessage = {
+  inline def apply(): ModifyGlobalClusterMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyGlobalClusterMessage]
   }
   
-  @scala.inline
-  implicit class ModifyGlobalClusterMessageMutableBuilder[Self <: ModifyGlobalClusterMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyGlobalClusterMessage](x: Self) {
     
-    @scala.inline
-    def setDeletionProtection(value: BooleanOptional): Self = StObject.set(x, "DeletionProtection", value.asInstanceOf[js.Any])
+    inline def setDeletionProtection(value: BooleanOptional): Self = StObject.set(x, "DeletionProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionProtectionUndefined: Self = StObject.set(x, "DeletionProtection", js.undefined)
+    inline def setDeletionProtectionUndefined: Self = StObject.set(x, "DeletionProtection", js.undefined)
     
-    @scala.inline
-    def setGlobalClusterIdentifier(value: String): Self = StObject.set(x, "GlobalClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setGlobalClusterIdentifier(value: String): Self = StObject.set(x, "GlobalClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalClusterIdentifierUndefined: Self = StObject.set(x, "GlobalClusterIdentifier", js.undefined)
+    inline def setGlobalClusterIdentifierUndefined: Self = StObject.set(x, "GlobalClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setNewGlobalClusterIdentifier(value: String): Self = StObject.set(x, "NewGlobalClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setNewGlobalClusterIdentifier(value: String): Self = StObject.set(x, "NewGlobalClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewGlobalClusterIdentifierUndefined: Self = StObject.set(x, "NewGlobalClusterIdentifier", js.undefined)
+    inline def setNewGlobalClusterIdentifierUndefined: Self = StObject.set(x, "NewGlobalClusterIdentifier", js.undefined)
   }
 }

@@ -37,31 +37,23 @@ trait SchemaGoogleCloudDialogflowV2Context extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2Context {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2Context = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2Context = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2Context]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2ContextMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2Context] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2Context](x: Self) {
     
-    @scala.inline
-    def setLifespanCount(value: Double): Self = StObject.set(x, "lifespanCount", value.asInstanceOf[js.Any])
+    inline def setLifespanCount(value: Double): Self = StObject.set(x, "lifespanCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifespanCountUndefined: Self = StObject.set(x, "lifespanCount", js.undefined)
+    inline def setLifespanCountUndefined: Self = StObject.set(x, "lifespanCount", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }
 }

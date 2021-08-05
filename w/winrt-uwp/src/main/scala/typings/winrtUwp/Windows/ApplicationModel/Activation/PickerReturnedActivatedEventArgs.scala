@@ -21,8 +21,7 @@ trait PickerReturnedActivatedEventArgs extends StObject {
 }
 object PickerReturnedActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: ActivationKind,
     pickerOperationId: String,
     previousExecutionState: ApplicationExecutionState,
@@ -32,19 +31,14 @@ object PickerReturnedActivatedEventArgs {
     __obj.asInstanceOf[PickerReturnedActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class PickerReturnedActivatedEventArgsMutableBuilder[Self <: PickerReturnedActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PickerReturnedActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerOperationId(value: String): Self = StObject.set(x, "pickerOperationId", value.asInstanceOf[js.Any])
+    inline def setPickerOperationId(value: String): Self = StObject.set(x, "pickerOperationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

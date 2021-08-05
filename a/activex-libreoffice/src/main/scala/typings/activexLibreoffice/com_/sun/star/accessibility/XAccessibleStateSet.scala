@@ -59,8 +59,7 @@ trait XAccessibleStateSet
 }
 object XAccessibleStateSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     States: SafeArray[Double],
     acquire: () => Unit,
     contains: Double => Boolean,
@@ -74,22 +73,16 @@ object XAccessibleStateSet {
     __obj.asInstanceOf[XAccessibleStateSet]
   }
   
-  @scala.inline
-  implicit class XAccessibleStateSetMutableBuilder[Self <: XAccessibleStateSet] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleStateSet](x: Self) {
     
-    @scala.inline
-    def setContains(value: Double => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: Double => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContainsAll(value: SeqEquiv[Double] => Boolean): Self = StObject.set(x, "containsAll", js.Any.fromFunction1(value))
+    inline def setContainsAll(value: SeqEquiv[Double] => Boolean): Self = StObject.set(x, "containsAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetStates(value: () => SafeArray[Double]): Self = StObject.set(x, "getStates", js.Any.fromFunction0(value))
+    inline def setGetStates(value: () => SafeArray[Double]): Self = StObject.set(x, "getStates", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+    inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStates(value: SafeArray[Double]): Self = StObject.set(x, "States", value.asInstanceOf[js.Any])
+    inline def setStates(value: SafeArray[Double]): Self = StObject.set(x, "States", value.asInstanceOf[js.Any])
   }
 }

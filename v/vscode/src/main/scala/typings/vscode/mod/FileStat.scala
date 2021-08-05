@@ -39,26 +39,20 @@ trait FileStat extends StObject {
 }
 object FileStat {
   
-  @scala.inline
-  def apply(ctime: Double, mtime: Double, size: Double, `type`: FileType): FileStat = {
+  inline def apply(ctime: Double, mtime: Double, size: Double, `type`: FileType): FileStat = {
     val __obj = js.Dynamic.literal(ctime = ctime.asInstanceOf[js.Any], mtime = mtime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileStat]
   }
   
-  @scala.inline
-  implicit class FileStatMutableBuilder[Self <: FileStat] (val x: Self) extends AnyVal {
+  extension [Self <: FileStat](x: Self) {
     
-    @scala.inline
-    def setCtime(value: Double): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+    inline def setCtime(value: Double): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: FileType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FileType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

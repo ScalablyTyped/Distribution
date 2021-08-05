@@ -22,55 +22,39 @@ trait LazyOptions extends StObject {
 }
 object LazyOptions {
   
-  @scala.inline
-  def apply(): LazyOptions = {
+  inline def apply(): LazyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LazyOptions]
   }
   
-  @scala.inline
-  implicit class LazyOptionsMutableBuilder[Self <: LazyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LazyOptions](x: Self) {
     
-    @scala.inline
-    def setElementClass(value: String): Self = StObject.set(x, "elementClass", value.asInstanceOf[js.Any])
+    inline def setElementClass(value: String): Self = StObject.set(x, "elementClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementClassUndefined: Self = StObject.set(x, "elementClass", js.undefined)
+    inline def setElementClassUndefined: Self = StObject.set(x, "elementClass", js.undefined)
     
-    @scala.inline
-    def setLoadOnTransitionStart(value: Boolean): Self = StObject.set(x, "loadOnTransitionStart", value.asInstanceOf[js.Any])
+    inline def setLoadOnTransitionStart(value: Boolean): Self = StObject.set(x, "loadOnTransitionStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadOnTransitionStartUndefined: Self = StObject.set(x, "loadOnTransitionStart", js.undefined)
+    inline def setLoadOnTransitionStartUndefined: Self = StObject.set(x, "loadOnTransitionStart", js.undefined)
     
-    @scala.inline
-    def setLoadPrevNext(value: Boolean): Self = StObject.set(x, "loadPrevNext", value.asInstanceOf[js.Any])
+    inline def setLoadPrevNext(value: Boolean): Self = StObject.set(x, "loadPrevNext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadPrevNextAmount(value: Double): Self = StObject.set(x, "loadPrevNextAmount", value.asInstanceOf[js.Any])
+    inline def setLoadPrevNextAmount(value: Double): Self = StObject.set(x, "loadPrevNextAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadPrevNextAmountUndefined: Self = StObject.set(x, "loadPrevNextAmount", js.undefined)
+    inline def setLoadPrevNextAmountUndefined: Self = StObject.set(x, "loadPrevNextAmount", js.undefined)
     
-    @scala.inline
-    def setLoadPrevNextUndefined: Self = StObject.set(x, "loadPrevNext", js.undefined)
+    inline def setLoadPrevNextUndefined: Self = StObject.set(x, "loadPrevNext", js.undefined)
     
-    @scala.inline
-    def setLoadedClass(value: String): Self = StObject.set(x, "loadedClass", value.asInstanceOf[js.Any])
+    inline def setLoadedClass(value: String): Self = StObject.set(x, "loadedClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadedClassUndefined: Self = StObject.set(x, "loadedClass", js.undefined)
+    inline def setLoadedClassUndefined: Self = StObject.set(x, "loadedClass", js.undefined)
     
-    @scala.inline
-    def setLoadingClass(value: String): Self = StObject.set(x, "loadingClass", value.asInstanceOf[js.Any])
+    inline def setLoadingClass(value: String): Self = StObject.set(x, "loadingClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingClassUndefined: Self = StObject.set(x, "loadingClass", js.undefined)
+    inline def setLoadingClassUndefined: Self = StObject.set(x, "loadingClass", js.undefined)
     
-    @scala.inline
-    def setPreloaderClass(value: String): Self = StObject.set(x, "preloaderClass", value.asInstanceOf[js.Any])
+    inline def setPreloaderClass(value: String): Self = StObject.set(x, "preloaderClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreloaderClassUndefined: Self = StObject.set(x, "preloaderClass", js.undefined)
+    inline def setPreloaderClassUndefined: Self = StObject.set(x, "preloaderClass", js.undefined)
   }
 }

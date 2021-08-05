@@ -24,8 +24,7 @@ object validationFactorsMod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromCrowd(validationFactorsObj: ValidationFactorsObj): ValidationFactors = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(validationFactorsObj.asInstanceOf[js.Any]).asInstanceOf[ValidationFactors]
+  inline def fromCrowd(validationFactorsObj: ValidationFactorsObj): ValidationFactors = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(validationFactorsObj.asInstanceOf[js.Any]).asInstanceOf[ValidationFactors]
   
   trait ValidationFactors extends StObject {
     
@@ -35,20 +34,16 @@ object validationFactorsMod {
   }
   object ValidationFactors {
     
-    @scala.inline
-    def apply(toCrowd: () => ValidationFactorsObj, validationFactors: js.Any): ValidationFactors = {
+    inline def apply(toCrowd: () => ValidationFactorsObj, validationFactors: js.Any): ValidationFactors = {
       val __obj = js.Dynamic.literal(toCrowd = js.Any.fromFunction0(toCrowd), validationFactors = validationFactors.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidationFactors]
     }
     
-    @scala.inline
-    implicit class ValidationFactorsMutableBuilder[Self <: ValidationFactors] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationFactors](x: Self) {
       
-      @scala.inline
-      def setToCrowd(value: () => ValidationFactorsObj): Self = StObject.set(x, "toCrowd", js.Any.fromFunction0(value))
+      inline def setToCrowd(value: () => ValidationFactorsObj): Self = StObject.set(x, "toCrowd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValidationFactors(value: js.Any): Self = StObject.set(x, "validationFactors", value.asInstanceOf[js.Any])
+      inline def setValidationFactors(value: js.Any): Self = StObject.set(x, "validationFactors", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,20 +53,16 @@ object validationFactorsMod {
   }
   object ValidationFactorsObj {
     
-    @scala.inline
-    def apply(validationFactors: js.Array[js.Any]): ValidationFactorsObj = {
+    inline def apply(validationFactors: js.Array[js.Any]): ValidationFactorsObj = {
       val __obj = js.Dynamic.literal(validationFactors = validationFactors.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidationFactorsObj]
     }
     
-    @scala.inline
-    implicit class ValidationFactorsObjMutableBuilder[Self <: ValidationFactorsObj] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationFactorsObj](x: Self) {
       
-      @scala.inline
-      def setValidationFactors(value: js.Array[js.Any]): Self = StObject.set(x, "validationFactors", value.asInstanceOf[js.Any])
+      inline def setValidationFactors(value: js.Array[js.Any]): Self = StObject.set(x, "validationFactors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationFactorsVarargs(value: js.Any*): Self = StObject.set(x, "validationFactors", js.Array(value :_*))
+      inline def setValidationFactorsVarargs(value: js.Any*): Self = StObject.set(x, "validationFactors", js.Array(value :_*))
     }
   }
 }

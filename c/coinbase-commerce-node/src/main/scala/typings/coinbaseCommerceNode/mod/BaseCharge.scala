@@ -43,40 +43,29 @@ trait BaseCharge extends StObject {
 }
 object BaseCharge {
   
-  @scala.inline
-  def apply(description: String, name: String, pricing_type: PricingType): BaseCharge = {
+  inline def apply(description: String, name: String, pricing_type: PricingType): BaseCharge = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pricing_type = pricing_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseCharge]
   }
   
-  @scala.inline
-  implicit class BaseChargeMutableBuilder[Self <: BaseCharge] (val x: Self) extends AnyVal {
+  extension [Self <: BaseCharge](x: Self) {
     
-    @scala.inline
-    def setCancel_url(value: String): Self = StObject.set(x, "cancel_url", value.asInstanceOf[js.Any])
+    inline def setCancel_url(value: String): Self = StObject.set(x, "cancel_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancel_urlUndefined: Self = StObject.set(x, "cancel_url", js.undefined)
+    inline def setCancel_urlUndefined: Self = StObject.set(x, "cancel_url", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: KeyVal): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: KeyVal): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricing_type(value: PricingType): Self = StObject.set(x, "pricing_type", value.asInstanceOf[js.Any])
+    inline def setPricing_type(value: PricingType): Self = StObject.set(x, "pricing_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirect_url(value: String): Self = StObject.set(x, "redirect_url", value.asInstanceOf[js.Any])
+    inline def setRedirect_url(value: String): Self = StObject.set(x, "redirect_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirect_urlUndefined: Self = StObject.set(x, "redirect_url", js.undefined)
+    inline def setRedirect_urlUndefined: Self = StObject.set(x, "redirect_url", js.undefined)
   }
 }

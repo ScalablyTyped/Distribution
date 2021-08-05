@@ -13,16 +13,13 @@ trait SetCPUThrottlingRateRequest extends StObject {
 }
 object SetCPUThrottlingRateRequest {
   
-  @scala.inline
-  def apply(rate: Double): SetCPUThrottlingRateRequest = {
+  inline def apply(rate: Double): SetCPUThrottlingRateRequest = {
     val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetCPUThrottlingRateRequest]
   }
   
-  @scala.inline
-  implicit class SetCPUThrottlingRateRequestMutableBuilder[Self <: SetCPUThrottlingRateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetCPUThrottlingRateRequest](x: Self) {
     
-    @scala.inline
-    def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+    inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
   }
 }

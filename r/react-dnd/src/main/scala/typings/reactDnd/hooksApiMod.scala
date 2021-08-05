@@ -19,18 +19,15 @@ object hooksApiMod {
   }
   object DragObjectWithType {
     
-    @scala.inline
-    def apply(`type`: SourceType): DragObjectWithType = {
+    inline def apply(`type`: SourceType): DragObjectWithType = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DragObjectWithType]
     }
     
-    @scala.inline
-    implicit class DragObjectWithTypeMutableBuilder[Self <: DragObjectWithType] (val x: Self) extends AnyVal {
+    extension [Self <: DragObjectWithType](x: Self) {
       
-      @scala.inline
-      def setType(value: SourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: SourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,62 +100,44 @@ object hooksApiMod {
   }
   object DragSourceHookSpec {
     
-    @scala.inline
-    def apply[DragObject /* <: DragObjectWithType */, DropResult, CollectedProps](item: DragObject): DragSourceHookSpec[DragObject, DropResult, CollectedProps] = {
+    inline def apply[DragObject /* <: DragObjectWithType */, DropResult, CollectedProps](item: DragObject): DragSourceHookSpec[DragObject, DropResult, CollectedProps] = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
       __obj.asInstanceOf[DragSourceHookSpec[DragObject, DropResult, CollectedProps]]
     }
     
-    @scala.inline
-    implicit class DragSourceHookSpecMutableBuilder[Self <: DragSourceHookSpec[?, ?, ?], DragObject /* <: DragObjectWithType */, DropResult, CollectedProps] (val x: Self & (DragSourceHookSpec[DragObject, DropResult, CollectedProps])) extends AnyVal {
+    extension [Self <: DragSourceHookSpec[?, ?, ?], DragObject /* <: DragObjectWithType */, DropResult, CollectedProps](x: Self & (DragSourceHookSpec[DragObject, DropResult, CollectedProps])) {
       
-      @scala.inline
-      def setBegin(value: /* monitor */ DragSourceMonitor => js.UndefOr[DragObject | Unit]): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
+      inline def setBegin(value: /* monitor */ DragSourceMonitor => js.UndefOr[DragObject | Unit]): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
+      inline def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
       
-      @scala.inline
-      def setCanDrag(value: Boolean | (js.Function1[/* monitor */ DragSourceMonitor, Boolean])): Self = StObject.set(x, "canDrag", value.asInstanceOf[js.Any])
+      inline def setCanDrag(value: Boolean | (js.Function1[/* monitor */ DragSourceMonitor, Boolean])): Self = StObject.set(x, "canDrag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanDragFunction1(value: /* monitor */ DragSourceMonitor => Boolean): Self = StObject.set(x, "canDrag", js.Any.fromFunction1(value))
+      inline def setCanDragFunction1(value: /* monitor */ DragSourceMonitor => Boolean): Self = StObject.set(x, "canDrag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCanDragUndefined: Self = StObject.set(x, "canDrag", js.undefined)
+      inline def setCanDragUndefined: Self = StObject.set(x, "canDrag", js.undefined)
       
-      @scala.inline
-      def setCollect(value: /* monitor */ DragSourceMonitor => CollectedProps): Self = StObject.set(x, "collect", js.Any.fromFunction1(value))
+      inline def setCollect(value: /* monitor */ DragSourceMonitor => CollectedProps): Self = StObject.set(x, "collect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCollectUndefined: Self = StObject.set(x, "collect", js.undefined)
+      inline def setCollectUndefined: Self = StObject.set(x, "collect", js.undefined)
       
-      @scala.inline
-      def setEnd(value: (/* draggedItem */ js.UndefOr[DragObject], /* monitor */ DragSourceMonitor) => Unit): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
+      inline def setEnd(value: (/* draggedItem */ js.UndefOr[DragObject], /* monitor */ DragSourceMonitor) => Unit): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setIsDragging(value: /* monitor */ DragSourceMonitor => Boolean): Self = StObject.set(x, "isDragging", js.Any.fromFunction1(value))
+      inline def setIsDragging(value: /* monitor */ DragSourceMonitor => Boolean): Self = StObject.set(x, "isDragging", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsDraggingUndefined: Self = StObject.set(x, "isDragging", js.undefined)
+      inline def setIsDraggingUndefined: Self = StObject.set(x, "isDragging", js.undefined)
       
-      @scala.inline
-      def setItem(value: DragObject): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: DragObject): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: DragSourceOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: DragSourceOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPreviewOptions(value: DragPreviewOptions): Self = StObject.set(x, "previewOptions", value.asInstanceOf[js.Any])
+      inline def setPreviewOptions(value: DragPreviewOptions): Self = StObject.set(x, "previewOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewOptionsUndefined: Self = StObject.set(x, "previewOptions", js.undefined)
+      inline def setPreviewOptionsUndefined: Self = StObject.set(x, "previewOptions", js.undefined)
     }
   }
   
@@ -210,50 +189,36 @@ object hooksApiMod {
   }
   object DropTargetHookSpec {
     
-    @scala.inline
-    def apply[DragObject, DropResult, CollectedProps](accept: TargetType): DropTargetHookSpec[DragObject, DropResult, CollectedProps] = {
+    inline def apply[DragObject, DropResult, CollectedProps](accept: TargetType): DropTargetHookSpec[DragObject, DropResult, CollectedProps] = {
       val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropTargetHookSpec[DragObject, DropResult, CollectedProps]]
     }
     
-    @scala.inline
-    implicit class DropTargetHookSpecMutableBuilder[Self <: DropTargetHookSpec[?, ?, ?], DragObject, DropResult, CollectedProps] (val x: Self & (DropTargetHookSpec[DragObject, DropResult, CollectedProps])) extends AnyVal {
+    extension [Self <: DropTargetHookSpec[?, ?, ?], DragObject, DropResult, CollectedProps](x: Self & (DropTargetHookSpec[DragObject, DropResult, CollectedProps])) {
       
-      @scala.inline
-      def setAccept(value: TargetType): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: TargetType): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptVarargs(value: Identifier*): Self = StObject.set(x, "accept", js.Array(value :_*))
+      inline def setAcceptVarargs(value: Identifier*): Self = StObject.set(x, "accept", js.Array(value :_*))
       
-      @scala.inline
-      def setCanDrop(value: (/* item */ DragObject, /* monitor */ DropTargetMonitor) => Boolean): Self = StObject.set(x, "canDrop", js.Any.fromFunction2(value))
+      inline def setCanDrop(value: (/* item */ DragObject, /* monitor */ DropTargetMonitor) => Boolean): Self = StObject.set(x, "canDrop", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCanDropUndefined: Self = StObject.set(x, "canDrop", js.undefined)
+      inline def setCanDropUndefined: Self = StObject.set(x, "canDrop", js.undefined)
       
-      @scala.inline
-      def setCollect(value: /* monitor */ DropTargetMonitor => CollectedProps): Self = StObject.set(x, "collect", js.Any.fromFunction1(value))
+      inline def setCollect(value: /* monitor */ DropTargetMonitor => CollectedProps): Self = StObject.set(x, "collect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCollectUndefined: Self = StObject.set(x, "collect", js.undefined)
+      inline def setCollectUndefined: Self = StObject.set(x, "collect", js.undefined)
       
-      @scala.inline
-      def setDrop(value: (/* item */ DragObject, /* monitor */ DropTargetMonitor) => js.UndefOr[DropResult]): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
+      inline def setDrop(value: (/* item */ DragObject, /* monitor */ DropTargetMonitor) => js.UndefOr[DropResult]): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+      inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
       
-      @scala.inline
-      def setHover(value: (/* item */ DragObject, /* monitor */ DropTargetMonitor) => Unit): Self = StObject.set(x, "hover", js.Any.fromFunction2(value))
+      inline def setHover(value: (/* item */ DragObject, /* monitor */ DropTargetMonitor) => Unit): Self = StObject.set(x, "hover", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+      inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
 }

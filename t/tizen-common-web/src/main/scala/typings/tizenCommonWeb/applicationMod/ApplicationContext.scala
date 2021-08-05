@@ -18,19 +18,15 @@ trait ApplicationContext extends StObject {
 }
 object ApplicationContext {
   
-  @scala.inline
-  def apply(appId: ApplicationId, id: ApplicationContextId): ApplicationContext = {
+  inline def apply(appId: ApplicationId, id: ApplicationContextId): ApplicationContext = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationContext]
   }
   
-  @scala.inline
-  implicit class ApplicationContextMutableBuilder[Self <: ApplicationContext] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationContext](x: Self) {
     
-    @scala.inline
-    def setAppId(value: ApplicationId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: ApplicationId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: ApplicationContextId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ApplicationContextId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

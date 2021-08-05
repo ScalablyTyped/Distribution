@@ -15,19 +15,15 @@ trait RcsEndUserMessageAvailableTriggerDetails extends StObject {
 }
 object RcsEndUserMessageAvailableTriggerDetails {
   
-  @scala.inline
-  def apply(text: String, title: String): RcsEndUserMessageAvailableTriggerDetails = {
+  inline def apply(text: String, title: String): RcsEndUserMessageAvailableTriggerDetails = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[RcsEndUserMessageAvailableTriggerDetails]
   }
   
-  @scala.inline
-  implicit class RcsEndUserMessageAvailableTriggerDetailsMutableBuilder[Self <: RcsEndUserMessageAvailableTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: RcsEndUserMessageAvailableTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

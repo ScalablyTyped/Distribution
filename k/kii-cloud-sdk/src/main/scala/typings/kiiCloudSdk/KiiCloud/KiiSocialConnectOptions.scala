@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KiiSocialConnectOptions extends StObject
 object KiiSocialConnectOptions {
   
-  @scala.inline
-  def Accesstoken(access_token: String): typings.kiiCloudSdk.anon.Accesstoken = {
+  inline def Accesstoken(access_token: String): typings.kiiCloudSdk.anon.Accesstoken = {
     val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.kiiCloudSdk.anon.Accesstoken]
   }
   
-  @scala.inline
-  def Oauthtoken(oauth_token: String, oauth_token_secret: String): typings.kiiCloudSdk.anon.Oauthtoken = {
+  inline def Oauthtoken(oauth_token: String, oauth_token_secret: String): typings.kiiCloudSdk.anon.Oauthtoken = {
     val __obj = js.Dynamic.literal(oauth_token = oauth_token.asInstanceOf[js.Any], oauth_token_secret = oauth_token_secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.kiiCloudSdk.anon.Oauthtoken]
   }

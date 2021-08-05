@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoConnector extends StObject
 object MsoConnector {
   
-  @scala.inline
-  def msoConnectorAnd: `1` = 1.asInstanceOf[`1`]
+  inline def msoConnectorAnd: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoConnectorOr: `2` = 2.asInstanceOf[`2`]
+  inline def msoConnectorOr: `2` = 2.asInstanceOf[`2`]
 }

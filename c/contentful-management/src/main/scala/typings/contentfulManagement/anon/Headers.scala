@@ -10,16 +10,13 @@ trait Headers extends StObject {
 }
 object Headers {
   
-  @scala.inline
-  def apply(headers: XContentfulVersion): Headers = {
+  inline def apply(headers: XContentfulVersion): Headers = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Headers]
   }
   
-  @scala.inline
-  implicit class HeadersMutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
+  extension [Self <: Headers](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: XContentfulVersion): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: XContentfulVersion): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }
 }

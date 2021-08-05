@@ -22,8 +22,7 @@ trait AllChoiceMap[T /* <: Answers */] extends StObject {
 }
 object AllChoiceMap {
   
-  @scala.inline
-  def apply[T /* <: Answers */](
+  inline def apply[T /* <: Answers */](
     BaseChoiceMap: typings.inquirer.choiceMod.^[T] | ChoiceOptions[T] | SeparatorOptions | typings.inquirer.separatorMod.^,
     CheckboxChoiceMap: ChoiceOptions[T] | typings.inquirer.separatorMod.^ | SeparatorOptions | CheckboxChoiceOptions[T] | typings.inquirer.choiceMod.^[T],
     ExpandChoiceMap: ChoiceOptions[T] | typings.inquirer.separatorMod.^ | SeparatorOptions | ExpandChoiceOptions[T] | typings.inquirer.choiceMod.^[T],
@@ -33,26 +32,21 @@ object AllChoiceMap {
     __obj.asInstanceOf[AllChoiceMap[T]]
   }
   
-  @scala.inline
-  implicit class AllChoiceMapMutableBuilder[Self <: AllChoiceMap[?], T /* <: Answers */] (val x: Self & AllChoiceMap[T]) extends AnyVal {
+  extension [Self <: AllChoiceMap[?], T /* <: Answers */](x: Self & AllChoiceMap[T]) {
     
-    @scala.inline
-    def setBaseChoiceMap(
+    inline def setBaseChoiceMap(
       value: typings.inquirer.choiceMod.^[T] | ChoiceOptions[T] | SeparatorOptions | typings.inquirer.separatorMod.^
     ): Self = StObject.set(x, "BaseChoiceMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckboxChoiceMap(
+    inline def setCheckboxChoiceMap(
       value: ChoiceOptions[T] | typings.inquirer.separatorMod.^ | SeparatorOptions | CheckboxChoiceOptions[T] | typings.inquirer.choiceMod.^[T]
     ): Self = StObject.set(x, "CheckboxChoiceMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandChoiceMap(
+    inline def setExpandChoiceMap(
       value: ChoiceOptions[T] | typings.inquirer.separatorMod.^ | SeparatorOptions | ExpandChoiceOptions[T] | typings.inquirer.choiceMod.^[T]
     ): Self = StObject.set(x, "ExpandChoiceMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListChoiceMap(
+    inline def setListChoiceMap(
       value: ChoiceOptions[T] | typings.inquirer.separatorMod.^ | ListChoiceOptions[T] | SeparatorOptions | typings.inquirer.choiceMod.^[T]
     ): Self = StObject.set(x, "ListChoiceMap", value.asInstanceOf[js.Any])
   }

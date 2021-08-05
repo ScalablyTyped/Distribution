@@ -10,19 +10,15 @@ trait RTCCertificateExpiration extends StObject {
 }
 object RTCCertificateExpiration {
   
-  @scala.inline
-  def apply(): RTCCertificateExpiration = {
+  inline def apply(): RTCCertificateExpiration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCCertificateExpiration]
   }
   
-  @scala.inline
-  implicit class RTCCertificateExpirationMutableBuilder[Self <: RTCCertificateExpiration] (val x: Self) extends AnyVal {
+  extension [Self <: RTCCertificateExpiration](x: Self) {
     
-    @scala.inline
-    def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+    inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
   }
 }

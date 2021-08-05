@@ -13,16 +13,13 @@ trait PrefixLevel extends StObject {
 }
 object PrefixLevel {
   
-  @scala.inline
-  def apply(StorageMetrics: PrefixLevelStorageMetrics): PrefixLevel = {
+  inline def apply(StorageMetrics: PrefixLevelStorageMetrics): PrefixLevel = {
     val __obj = js.Dynamic.literal(StorageMetrics = StorageMetrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrefixLevel]
   }
   
-  @scala.inline
-  implicit class PrefixLevelMutableBuilder[Self <: PrefixLevel] (val x: Self) extends AnyVal {
+  extension [Self <: PrefixLevel](x: Self) {
     
-    @scala.inline
-    def setStorageMetrics(value: PrefixLevelStorageMetrics): Self = StObject.set(x, "StorageMetrics", value.asInstanceOf[js.Any])
+    inline def setStorageMetrics(value: PrefixLevelStorageMetrics): Self = StObject.set(x, "StorageMetrics", value.asInstanceOf[js.Any])
   }
 }

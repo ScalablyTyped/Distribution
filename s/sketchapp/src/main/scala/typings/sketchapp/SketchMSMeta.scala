@@ -33,8 +33,7 @@ trait SketchMSMeta extends StObject {
 }
 object SketchMSMeta {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     app: String,
     appVersion: String,
     autosaved: Double,
@@ -52,49 +51,34 @@ object SketchMSMeta {
     __obj.asInstanceOf[SketchMSMeta]
   }
   
-  @scala.inline
-  implicit class SketchMSMetaMutableBuilder[Self <: SketchMSMeta] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSMeta](x: Self) {
     
-    @scala.inline
-    def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
+    inline def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutosaved(value: Double): Self = StObject.set(x, "autosaved", value.asInstanceOf[js.Any])
+    inline def setAutosaved(value: Double): Self = StObject.set(x, "autosaved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuild(value: Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibilityVersion(value: Double): Self = StObject.set(x, "compatibilityVersion", value.asInstanceOf[js.Any])
+    inline def setCompatibilityVersion(value: Double): Self = StObject.set(x, "compatibilityVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated(value: App): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: App): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFonts(value: js.Array[String]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+    inline def setFonts(value: js.Array[String]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontsVarargs(value: String*): Self = StObject.set(x, "fonts", js.Array(value :_*))
+    inline def setFontsVarargs(value: String*): Self = StObject.set(x, "fonts", js.Array(value :_*))
     
-    @scala.inline
-    def setPagesAndArtboards(value: SketchMSPagesAndArtboards): Self = StObject.set(x, "pagesAndArtboards", value.asInstanceOf[js.Any])
+    inline def setPagesAndArtboards(value: SketchMSPagesAndArtboards): Self = StObject.set(x, "pagesAndArtboards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveHistory(value: js.Array[String]): Self = StObject.set(x, "saveHistory", value.asInstanceOf[js.Any])
+    inline def setSaveHistory(value: js.Array[String]): Self = StObject.set(x, "saveHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveHistoryVarargs(value: String*): Self = StObject.set(x, "saveHistory", js.Array(value :_*))
+    inline def setSaveHistoryVarargs(value: String*): Self = StObject.set(x, "saveHistory", js.Array(value :_*))
     
-    @scala.inline
-    def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

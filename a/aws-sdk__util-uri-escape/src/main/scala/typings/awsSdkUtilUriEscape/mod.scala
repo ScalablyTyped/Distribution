@@ -10,9 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def escapeUri(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeUri")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeUri(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeUri")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def escapeUriPath(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeUriPath")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeUriPath(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeUriPath")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
 }

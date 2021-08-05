@@ -14,22 +14,17 @@ trait MethodPath extends StObject {
 }
 object MethodPath {
   
-  @scala.inline
-  def apply(handler: (js.Any, js.Any) => js.Any, method: String, path: String): MethodPath = {
+  inline def apply(handler: (js.Any, js.Any) => js.Any, method: String, path: String): MethodPath = {
     val __obj = js.Dynamic.literal(handler = js.Any.fromFunction2(handler), method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodPath]
   }
   
-  @scala.inline
-  implicit class MethodPathMutableBuilder[Self <: MethodPath] (val x: Self) extends AnyVal {
+  extension [Self <: MethodPath](x: Self) {
     
-    @scala.inline
-    def setHandler(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+    inline def setHandler(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

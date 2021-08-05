@@ -32,8 +32,7 @@ trait IControlChannelTrigger
 }
 object IControlChannelTrigger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     controlChannelTriggerId: String,
     currentKeepAliveIntervalInMinutes: Double,
@@ -50,37 +49,26 @@ object IControlChannelTrigger {
     __obj.asInstanceOf[IControlChannelTrigger]
   }
   
-  @scala.inline
-  implicit class IControlChannelTriggerMutableBuilder[Self <: IControlChannelTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: IControlChannelTrigger](x: Self) {
     
-    @scala.inline
-    def setControlChannelTriggerId(value: String): Self = StObject.set(x, "controlChannelTriggerId", value.asInstanceOf[js.Any])
+    inline def setControlChannelTriggerId(value: String): Self = StObject.set(x, "controlChannelTriggerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentKeepAliveIntervalInMinutes(value: Double): Self = StObject.set(x, "currentKeepAliveIntervalInMinutes", value.asInstanceOf[js.Any])
+    inline def setCurrentKeepAliveIntervalInMinutes(value: Double): Self = StObject.set(x, "currentKeepAliveIntervalInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecreaseNetworkKeepAliveInterval(value: () => Unit): Self = StObject.set(x, "decreaseNetworkKeepAliveInterval", js.Any.fromFunction0(value))
+    inline def setDecreaseNetworkKeepAliveInterval(value: () => Unit): Self = StObject.set(x, "decreaseNetworkKeepAliveInterval", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFlushTransport(value: () => Unit): Self = StObject.set(x, "flushTransport", js.Any.fromFunction0(value))
+    inline def setFlushTransport(value: () => Unit): Self = StObject.set(x, "flushTransport", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeepAliveTrigger(value: IBackgroundTrigger): Self = StObject.set(x, "keepAliveTrigger", value.asInstanceOf[js.Any])
+    inline def setKeepAliveTrigger(value: IBackgroundTrigger): Self = StObject.set(x, "keepAliveTrigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushNotificationTrigger(value: IBackgroundTrigger): Self = StObject.set(x, "pushNotificationTrigger", value.asInstanceOf[js.Any])
+    inline def setPushNotificationTrigger(value: IBackgroundTrigger): Self = StObject.set(x, "pushNotificationTrigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerKeepAliveIntervalInMinutes(value: Double): Self = StObject.set(x, "serverKeepAliveIntervalInMinutes", value.asInstanceOf[js.Any])
+    inline def setServerKeepAliveIntervalInMinutes(value: Double): Self = StObject.set(x, "serverKeepAliveIntervalInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportObject(value: js.Any): Self = StObject.set(x, "transportObject", value.asInstanceOf[js.Any])
+    inline def setTransportObject(value: js.Any): Self = StObject.set(x, "transportObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsingTransport(value: js.Any => Unit): Self = StObject.set(x, "usingTransport", js.Any.fromFunction1(value))
+    inline def setUsingTransport(value: js.Any => Unit): Self = StObject.set(x, "usingTransport", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWaitForPushEnabled(value: () => ControlChannelTriggerStatus): Self = StObject.set(x, "waitForPushEnabled", js.Any.fromFunction0(value))
+    inline def setWaitForPushEnabled(value: () => ControlChannelTriggerStatus): Self = StObject.set(x, "waitForPushEnabled", js.Any.fromFunction0(value))
   }
 }

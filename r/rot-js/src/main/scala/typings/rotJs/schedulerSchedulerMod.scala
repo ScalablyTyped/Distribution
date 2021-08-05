@@ -113,8 +113,7 @@ object schedulerSchedulerMod {
   }
   object Scheduler {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       _current: js.Any,
       _queue: typings.rotJs.eventqueueMod.default[T],
       _repeat: js.Array[T],
@@ -129,38 +128,27 @@ object schedulerSchedulerMod {
       __obj.asInstanceOf[Scheduler[T]]
     }
     
-    @scala.inline
-    implicit class SchedulerMutableBuilder[Self <: Scheduler[?], T] (val x: Self & Scheduler[T]) extends AnyVal {
+    extension [Self <: Scheduler[?], T](x: Self & Scheduler[T]) {
       
-      @scala.inline
-      def setAdd(value: (T, Boolean) => Scheduler[T]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (T, Boolean) => Scheduler[T]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClear(value: () => Scheduler[T]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Scheduler[T]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTime(value: () => Double): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
+      inline def setGetTime(value: () => Double): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTimeOf(value: T => js.UndefOr[Double]): Self = StObject.set(x, "getTimeOf", js.Any.fromFunction1(value))
+      inline def setGetTimeOf(value: T => js.UndefOr[Double]): Self = StObject.set(x, "getTimeOf", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNext(value: () => js.Any): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => js.Any): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: js.Any => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: js.Any => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_current(value: js.Any): Self = StObject.set(x, "_current", value.asInstanceOf[js.Any])
+      inline def set_current(value: js.Any): Self = StObject.set(x, "_current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_queue(value: typings.rotJs.eventqueueMod.default[T]): Self = StObject.set(x, "_queue", value.asInstanceOf[js.Any])
+      inline def set_queue(value: typings.rotJs.eventqueueMod.default[T]): Self = StObject.set(x, "_queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_repeat(value: js.Array[T]): Self = StObject.set(x, "_repeat", value.asInstanceOf[js.Any])
+      inline def set_repeat(value: js.Array[T]): Self = StObject.set(x, "_repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_repeatVarargs(value: T*): Self = StObject.set(x, "_repeat", js.Array(value :_*))
+      inline def set_repeatVarargs(value: T*): Self = StObject.set(x, "_repeat", js.Array(value :_*))
     }
   }
 }

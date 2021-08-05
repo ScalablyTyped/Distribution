@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlLinkInfoType extends StObject
 object XlLinkInfoType {
   
-  @scala.inline
-  def xlLinkInfoOLELinks: `2` = 2.asInstanceOf[`2`]
+  inline def xlLinkInfoOLELinks: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlLinkInfoPublishers: `5` = 5.asInstanceOf[`5`]
+  inline def xlLinkInfoPublishers: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlLinkInfoSubscribers: `6` = 6.asInstanceOf[`6`]
+  inline def xlLinkInfoSubscribers: `6` = 6.asInstanceOf[`6`]
 }

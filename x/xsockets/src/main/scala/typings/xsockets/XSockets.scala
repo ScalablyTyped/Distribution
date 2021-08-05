@@ -12,17 +12,14 @@ object XSockets {
   }
   object ConfirmationArgument {
     
-    @scala.inline
-    def apply(event: String): ConfirmationArgument = {
+    inline def apply(event: String): ConfirmationArgument = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfirmationArgument]
     }
     
-    @scala.inline
-    implicit class ConfirmationArgumentMutableBuilder[Self <: ConfirmationArgument] (val x: Self) extends AnyVal {
+    extension [Self <: ConfirmationArgument](x: Self) {
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }
   }
   

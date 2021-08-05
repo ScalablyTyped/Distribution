@@ -28,8 +28,7 @@ trait ResourceConfig extends StObject {
 }
 object ResourceConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InstanceCount: TrainingInstanceCount,
     InstanceType: TrainingInstanceType,
     VolumeSizeInGB: VolumeSizeInGB
@@ -38,22 +37,16 @@ object ResourceConfig {
     __obj.asInstanceOf[ResourceConfig]
   }
   
-  @scala.inline
-  implicit class ResourceConfigMutableBuilder[Self <: ResourceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceConfig](x: Self) {
     
-    @scala.inline
-    def setInstanceCount(value: TrainingInstanceCount): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: TrainingInstanceCount): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceType(value: TrainingInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: TrainingInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
+    inline def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeKmsKeyIdUndefined: Self = StObject.set(x, "VolumeKmsKeyId", js.undefined)
+    inline def setVolumeKmsKeyIdUndefined: Self = StObject.set(x, "VolumeKmsKeyId", js.undefined)
     
-    @scala.inline
-    def setVolumeSizeInGB(value: VolumeSizeInGB): Self = StObject.set(x, "VolumeSizeInGB", value.asInstanceOf[js.Any])
+    inline def setVolumeSizeInGB(value: VolumeSizeInGB): Self = StObject.set(x, "VolumeSizeInGB", value.asInstanceOf[js.Any])
   }
 }

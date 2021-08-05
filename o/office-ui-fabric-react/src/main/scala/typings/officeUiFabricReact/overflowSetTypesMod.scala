@@ -62,23 +62,18 @@ object overflowSetTypesMod {
   }
   object IOverflowSetItemProps {
     
-    @scala.inline
-    def apply(key: String): IOverflowSetItemProps = {
+    inline def apply(key: String): IOverflowSetItemProps = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOverflowSetItemProps]
     }
     
-    @scala.inline
-    implicit class IOverflowSetItemPropsMutableBuilder[Self <: IOverflowSetItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: IOverflowSetItemProps](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeytipProps(value: IKeytipProps): Self = StObject.set(x, "keytipProps", value.asInstanceOf[js.Any])
+      inline def setKeytipProps(value: IKeytipProps): Self = StObject.set(x, "keytipProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeytipPropsUndefined: Self = StObject.set(x, "keytipProps", js.undefined)
+      inline def setKeytipPropsUndefined: Self = StObject.set(x, "keytipProps", js.undefined)
     }
   }
   
@@ -173,8 +168,7 @@ object overflowSetTypesMod {
   }
   object IOverflowSetProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onRenderItem: IOverflowSetItemProps => js.Any,
       onRenderOverflowButton: (/* props */ js.UndefOr[js.Array[js.Any]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Array[js.Any]], Element | Null]]) => Element | Null
     ): IOverflowSetProps = {
@@ -182,103 +176,71 @@ object overflowSetTypesMod {
       __obj.asInstanceOf[IOverflowSetProps]
     }
     
-    @scala.inline
-    implicit class IOverflowSetPropsMutableBuilder[Self <: IOverflowSetProps] (val x: Self) extends AnyVal {
+    extension [Self <: IOverflowSetProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IOverflowSet]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IOverflowSet]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IOverflowSet | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IOverflowSet | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDoNotContainWithinFocusZone(value: Boolean): Self = StObject.set(x, "doNotContainWithinFocusZone", value.asInstanceOf[js.Any])
+      inline def setDoNotContainWithinFocusZone(value: Boolean): Self = StObject.set(x, "doNotContainWithinFocusZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoNotContainWithinFocusZoneUndefined: Self = StObject.set(x, "doNotContainWithinFocusZone", js.undefined)
+      inline def setDoNotContainWithinFocusZoneUndefined: Self = StObject.set(x, "doNotContainWithinFocusZone", js.undefined)
       
-      @scala.inline
-      def setFocusZoneProps(value: IFocusZoneProps): Self = StObject.set(x, "focusZoneProps", value.asInstanceOf[js.Any])
+      inline def setFocusZoneProps(value: IFocusZoneProps): Self = StObject.set(x, "focusZoneProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusZonePropsUndefined: Self = StObject.set(x, "focusZoneProps", js.undefined)
+      inline def setFocusZonePropsUndefined: Self = StObject.set(x, "focusZoneProps", js.undefined)
       
-      @scala.inline
-      def setItemSubMenuProvider(value: /* item */ IOverflowSetItemProps => js.UndefOr[js.Array[js.Any]]): Self = StObject.set(x, "itemSubMenuProvider", js.Any.fromFunction1(value))
+      inline def setItemSubMenuProvider(value: /* item */ IOverflowSetItemProps => js.UndefOr[js.Array[js.Any]]): Self = StObject.set(x, "itemSubMenuProvider", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setItemSubMenuProviderUndefined: Self = StObject.set(x, "itemSubMenuProvider", js.undefined)
+      inline def setItemSubMenuProviderUndefined: Self = StObject.set(x, "itemSubMenuProvider", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[IOverflowSetItemProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[IOverflowSetItemProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: IOverflowSetItemProps*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: IOverflowSetItemProps*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setKeytipSequences(value: js.Array[String]): Self = StObject.set(x, "keytipSequences", value.asInstanceOf[js.Any])
+      inline def setKeytipSequences(value: js.Array[String]): Self = StObject.set(x, "keytipSequences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeytipSequencesUndefined: Self = StObject.set(x, "keytipSequences", js.undefined)
+      inline def setKeytipSequencesUndefined: Self = StObject.set(x, "keytipSequences", js.undefined)
       
-      @scala.inline
-      def setKeytipSequencesVarargs(value: String*): Self = StObject.set(x, "keytipSequences", js.Array(value :_*))
+      inline def setKeytipSequencesVarargs(value: String*): Self = StObject.set(x, "keytipSequences", js.Array(value :_*))
       
-      @scala.inline
-      def setOnRenderItem(value: IOverflowSetItemProps => js.Any): Self = StObject.set(x, "onRenderItem", js.Any.fromFunction1(value))
+      inline def setOnRenderItem(value: IOverflowSetItemProps => js.Any): Self = StObject.set(x, "onRenderItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRenderOverflowButton(
+      inline def setOnRenderOverflowButton(
         value: (/* props */ js.UndefOr[js.Array[js.Any]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Array[js.Any]], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderOverflowButton", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOverflowItems(value: js.Array[IOverflowSetItemProps]): Self = StObject.set(x, "overflowItems", value.asInstanceOf[js.Any])
+      inline def setOverflowItems(value: js.Array[IOverflowSetItemProps]): Self = StObject.set(x, "overflowItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowItemsUndefined: Self = StObject.set(x, "overflowItems", js.undefined)
+      inline def setOverflowItemsUndefined: Self = StObject.set(x, "overflowItems", js.undefined)
       
-      @scala.inline
-      def setOverflowItemsVarargs(value: IOverflowSetItemProps*): Self = StObject.set(x, "overflowItems", js.Array(value :_*))
+      inline def setOverflowItemsVarargs(value: IOverflowSetItemProps*): Self = StObject.set(x, "overflowItems", js.Array(value :_*))
       
-      @scala.inline
-      def setOverflowSide(value: start | end): Self = StObject.set(x, "overflowSide", value.asInstanceOf[js.Any])
+      inline def setOverflowSide(value: start | end): Self = StObject.set(x, "overflowSide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowSideUndefined: Self = StObject.set(x, "overflowSide", js.undefined)
+      inline def setOverflowSideUndefined: Self = StObject.set(x, "overflowSide", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IOverflowSetProps, IOverflowSetStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IOverflowSetProps, IOverflowSetStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IOverflowSetProps => DeepPartial[IOverflowSetStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IOverflowSetProps => DeepPartial[IOverflowSetStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
   
@@ -291,26 +253,20 @@ object overflowSetTypesMod {
   }
   object IOverflowSetStyleProps {
     
-    @scala.inline
-    def apply(): IOverflowSetStyleProps = {
+    inline def apply(): IOverflowSetStyleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOverflowSetStyleProps]
     }
     
-    @scala.inline
-    implicit class IOverflowSetStylePropsMutableBuilder[Self <: IOverflowSetStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IOverflowSetStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
   
@@ -327,41 +283,30 @@ object overflowSetTypesMod {
   }
   object IOverflowSetStyles {
     
-    @scala.inline
-    def apply(): IOverflowSetStyles = {
+    inline def apply(): IOverflowSetStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOverflowSetStyles]
     }
     
-    @scala.inline
-    implicit class IOverflowSetStylesMutableBuilder[Self <: IOverflowSetStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IOverflowSetStyles](x: Self) {
       
-      @scala.inline
-      def setItem(value: IStyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: IStyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemNull: Self = StObject.set(x, "item", null)
+      inline def setItemNull: Self = StObject.set(x, "item", null)
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
-      @scala.inline
-      def setOverflowButton(value: IStyle): Self = StObject.set(x, "overflowButton", value.asInstanceOf[js.Any])
+      inline def setOverflowButton(value: IStyle): Self = StObject.set(x, "overflowButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowButtonNull: Self = StObject.set(x, "overflowButton", null)
+      inline def setOverflowButtonNull: Self = StObject.set(x, "overflowButton", null)
       
-      @scala.inline
-      def setOverflowButtonUndefined: Self = StObject.set(x, "overflowButton", js.undefined)
+      inline def setOverflowButtonUndefined: Self = StObject.set(x, "overflowButton", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

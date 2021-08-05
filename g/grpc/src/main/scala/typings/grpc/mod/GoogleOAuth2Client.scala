@@ -11,16 +11,13 @@ trait GoogleOAuth2Client extends StObject {
 }
 object GoogleOAuth2Client {
   
-  @scala.inline
-  def apply(getRequestMetadata: (String, js.Function2[/* err */ Error, /* headers */ js.Any, Unit]) => Unit): GoogleOAuth2Client = {
+  inline def apply(getRequestMetadata: (String, js.Function2[/* err */ Error, /* headers */ js.Any, Unit]) => Unit): GoogleOAuth2Client = {
     val __obj = js.Dynamic.literal(getRequestMetadata = js.Any.fromFunction2(getRequestMetadata))
     __obj.asInstanceOf[GoogleOAuth2Client]
   }
   
-  @scala.inline
-  implicit class GoogleOAuth2ClientMutableBuilder[Self <: GoogleOAuth2Client] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleOAuth2Client](x: Self) {
     
-    @scala.inline
-    def setGetRequestMetadata(value: (String, js.Function2[/* err */ Error, /* headers */ js.Any, Unit]) => Unit): Self = StObject.set(x, "getRequestMetadata", js.Any.fromFunction2(value))
+    inline def setGetRequestMetadata(value: (String, js.Function2[/* err */ Error, /* headers */ js.Any, Unit]) => Unit): Self = StObject.set(x, "getRequestMetadata", js.Any.fromFunction2(value))
   }
 }

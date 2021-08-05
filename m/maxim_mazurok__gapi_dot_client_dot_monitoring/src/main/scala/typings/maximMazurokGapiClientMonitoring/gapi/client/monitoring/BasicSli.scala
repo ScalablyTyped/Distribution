@@ -32,52 +32,37 @@ trait BasicSli extends StObject {
 }
 object BasicSli {
   
-  @scala.inline
-  def apply(): BasicSli = {
+  inline def apply(): BasicSli = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BasicSli]
   }
   
-  @scala.inline
-  implicit class BasicSliMutableBuilder[Self <: BasicSli] (val x: Self) extends AnyVal {
+  extension [Self <: BasicSli](x: Self) {
     
-    @scala.inline
-    def setAvailability(value: js.Any): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
+    inline def setAvailability(value: js.Any): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
+    inline def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
     
-    @scala.inline
-    def setLatency(value: LatencyCriteria): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
+    inline def setLatency(value: LatencyCriteria): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
+    inline def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
     
-    @scala.inline
-    def setLocation(value: js.Array[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: js.Array[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setLocationVarargs(value: String*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: String*): Self = StObject.set(x, "location", js.Array(value :_*))
     
-    @scala.inline
-    def setMethod(value: js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
+    inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: js.Array[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: js.Array[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value :_*))
+    inline def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value :_*))
   }
 }

@@ -21,22 +21,17 @@ trait ISerachMatchCombination extends StObject {
 }
 object ISerachMatchCombination {
   
-  @scala.inline
-  def apply(qFieldMatches: js.Array[ISerachFieldMatch], qId: Double): ISerachMatchCombination = {
+  inline def apply(qFieldMatches: js.Array[ISerachFieldMatch], qId: Double): ISerachMatchCombination = {
     val __obj = js.Dynamic.literal(qFieldMatches = qFieldMatches.asInstanceOf[js.Any], qId = qId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISerachMatchCombination]
   }
   
-  @scala.inline
-  implicit class ISerachMatchCombinationMutableBuilder[Self <: ISerachMatchCombination] (val x: Self) extends AnyVal {
+  extension [Self <: ISerachMatchCombination](x: Self) {
     
-    @scala.inline
-    def setQFieldMatches(value: js.Array[ISerachFieldMatch]): Self = StObject.set(x, "qFieldMatches", value.asInstanceOf[js.Any])
+    inline def setQFieldMatches(value: js.Array[ISerachFieldMatch]): Self = StObject.set(x, "qFieldMatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldMatchesVarargs(value: ISerachFieldMatch*): Self = StObject.set(x, "qFieldMatches", js.Array(value :_*))
+    inline def setQFieldMatchesVarargs(value: ISerachFieldMatch*): Self = StObject.set(x, "qFieldMatches", js.Array(value :_*))
     
-    @scala.inline
-    def setQId(value: Double): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
+    inline def setQId(value: Double): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
   }
 }

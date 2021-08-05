@@ -80,8 +80,7 @@ trait Control
 }
 object Control {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCssClass: String => Unit,
     add_disposing: js.Function => Unit,
     add_propertyChanged: js.Function => Unit,
@@ -108,25 +107,18 @@ object Control {
     __obj.asInstanceOf[Control]
   }
   
-  @scala.inline
-  implicit class ControlMutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
+  extension [Self <: Control](x: Self) {
     
-    @scala.inline
-    def setAddCssClass(value: String => Unit): Self = StObject.set(x, "addCssClass", js.Any.fromFunction1(value))
+    inline def setAddCssClass(value: String => Unit): Self = StObject.set(x, "addCssClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet_element(value: () => HTMLElement): Self = StObject.set(x, "get_element", js.Any.fromFunction0(value))
+    inline def setGet_element(value: () => HTMLElement): Self = StObject.set(x, "get_element", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnBubbleEvent(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "onBubbleEvent", js.Any.fromFunction2(value))
+    inline def setOnBubbleEvent(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "onBubbleEvent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRaiseBubbleEvent(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "raiseBubbleEvent", js.Any.fromFunction2(value))
+    inline def setRaiseBubbleEvent(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "raiseBubbleEvent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveCssClass(value: String => Unit): Self = StObject.set(x, "removeCssClass", js.Any.fromFunction1(value))
+    inline def setRemoveCssClass(value: String => Unit): Self = StObject.set(x, "removeCssClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleCssClass(value: String => Unit): Self = StObject.set(x, "toggleCssClass", js.Any.fromFunction1(value))
+    inline def setToggleCssClass(value: String => Unit): Self = StObject.set(x, "toggleCssClass", js.Any.fromFunction1(value))
   }
 }

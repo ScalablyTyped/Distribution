@@ -18,28 +18,21 @@ trait EventCategoriesMap extends StObject {
 }
 object EventCategoriesMap {
   
-  @scala.inline
-  def apply(): EventCategoriesMap = {
+  inline def apply(): EventCategoriesMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventCategoriesMap]
   }
   
-  @scala.inline
-  implicit class EventCategoriesMapMutableBuilder[Self <: EventCategoriesMap] (val x: Self) extends AnyVal {
+  extension [Self <: EventCategoriesMap](x: Self) {
     
-    @scala.inline
-    def setEventCategories(value: EventCategoriesList): Self = StObject.set(x, "EventCategories", value.asInstanceOf[js.Any])
+    inline def setEventCategories(value: EventCategoriesList): Self = StObject.set(x, "EventCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventCategoriesUndefined: Self = StObject.set(x, "EventCategories", js.undefined)
+    inline def setEventCategoriesUndefined: Self = StObject.set(x, "EventCategories", js.undefined)
     
-    @scala.inline
-    def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value :_*))
+    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceType(value: String): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: String): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
   }
 }

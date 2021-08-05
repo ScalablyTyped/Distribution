@@ -26,14 +26,12 @@ object focusMod {
     @JSImport("ink/build/components/Focus", "default.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("ink/build/components/Focus", "default.propTypes")
     @js.native
     def propTypes: ExitOnCtrlC = js.native
-    @scala.inline
-    def propTypes_=(x: ExitOnCtrlC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: ExitOnCtrlC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -109,35 +107,26 @@ object focusMod {
   }
   object State {
     
-    @scala.inline
-    def apply(disabledFocusIds: js.Array[String], focusIds: js.Array[String], isFocusEnabled: Boolean): State = {
+    inline def apply(disabledFocusIds: js.Array[String], focusIds: js.Array[String], isFocusEnabled: Boolean): State = {
       val __obj = js.Dynamic.literal(disabledFocusIds = disabledFocusIds.asInstanceOf[js.Any], focusIds = focusIds.asInstanceOf[js.Any], isFocusEnabled = isFocusEnabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setActiveFocusId(value: String): Self = StObject.set(x, "activeFocusId", value.asInstanceOf[js.Any])
+      inline def setActiveFocusId(value: String): Self = StObject.set(x, "activeFocusId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveFocusIdUndefined: Self = StObject.set(x, "activeFocusId", js.undefined)
+      inline def setActiveFocusIdUndefined: Self = StObject.set(x, "activeFocusId", js.undefined)
       
-      @scala.inline
-      def setDisabledFocusIds(value: js.Array[String]): Self = StObject.set(x, "disabledFocusIds", value.asInstanceOf[js.Any])
+      inline def setDisabledFocusIds(value: js.Array[String]): Self = StObject.set(x, "disabledFocusIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledFocusIdsVarargs(value: String*): Self = StObject.set(x, "disabledFocusIds", js.Array(value :_*))
+      inline def setDisabledFocusIdsVarargs(value: String*): Self = StObject.set(x, "disabledFocusIds", js.Array(value :_*))
       
-      @scala.inline
-      def setFocusIds(value: js.Array[String]): Self = StObject.set(x, "focusIds", value.asInstanceOf[js.Any])
+      inline def setFocusIds(value: js.Array[String]): Self = StObject.set(x, "focusIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusIdsVarargs(value: String*): Self = StObject.set(x, "focusIds", js.Array(value :_*))
+      inline def setFocusIdsVarargs(value: String*): Self = StObject.set(x, "focusIds", js.Array(value :_*))
       
-      @scala.inline
-      def setIsFocusEnabled(value: Boolean): Self = StObject.set(x, "isFocusEnabled", value.asInstanceOf[js.Any])
+      inline def setIsFocusEnabled(value: Boolean): Self = StObject.set(x, "isFocusEnabled", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,28 +14,21 @@ trait ShippingsettingsGetSupportedCarriersResponse extends StObject {
 }
 object ShippingsettingsGetSupportedCarriersResponse {
   
-  @scala.inline
-  def apply(): ShippingsettingsGetSupportedCarriersResponse = {
+  inline def apply(): ShippingsettingsGetSupportedCarriersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShippingsettingsGetSupportedCarriersResponse]
   }
   
-  @scala.inline
-  implicit class ShippingsettingsGetSupportedCarriersResponseMutableBuilder[Self <: ShippingsettingsGetSupportedCarriersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ShippingsettingsGetSupportedCarriersResponse](x: Self) {
     
-    @scala.inline
-    def setCarriers(value: js.Array[CarriersCarrier]): Self = StObject.set(x, "carriers", value.asInstanceOf[js.Any])
+    inline def setCarriers(value: js.Array[CarriersCarrier]): Self = StObject.set(x, "carriers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarriersUndefined: Self = StObject.set(x, "carriers", js.undefined)
+    inline def setCarriersUndefined: Self = StObject.set(x, "carriers", js.undefined)
     
-    @scala.inline
-    def setCarriersVarargs(value: CarriersCarrier*): Self = StObject.set(x, "carriers", js.Array(value :_*))
+    inline def setCarriersVarargs(value: CarriersCarrier*): Self = StObject.set(x, "carriers", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

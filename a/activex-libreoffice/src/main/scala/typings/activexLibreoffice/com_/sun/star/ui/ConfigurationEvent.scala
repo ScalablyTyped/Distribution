@@ -22,8 +22,7 @@ trait ConfigurationEvent
 }
 object ConfigurationEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Accessor: js.Any,
     Element: js.Any,
     ReplacedElement: js.Any,
@@ -35,13 +34,10 @@ object ConfigurationEvent {
     __obj.asInstanceOf[ConfigurationEvent]
   }
   
-  @scala.inline
-  implicit class ConfigurationEventMutableBuilder[Self <: ConfigurationEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationEvent](x: Self) {
     
-    @scala.inline
-    def setAInfo(value: js.Any): Self = StObject.set(x, "aInfo", value.asInstanceOf[js.Any])
+    inline def setAInfo(value: js.Any): Self = StObject.set(x, "aInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceURL(value: String): Self = StObject.set(x, "ResourceURL", value.asInstanceOf[js.Any])
+    inline def setResourceURL(value: String): Self = StObject.set(x, "ResourceURL", value.asInstanceOf[js.Any])
   }
 }

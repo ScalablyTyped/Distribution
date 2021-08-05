@@ -38,20 +38,16 @@ object mod extends Shortcut {
   }
   object ForeverAgentOptions {
     
-    @scala.inline
-    def apply(): ForeverAgentOptions = {
+    inline def apply(): ForeverAgentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ForeverAgentOptions]
     }
     
-    @scala.inline
-    implicit class ForeverAgentOptionsMutableBuilder[Self <: ForeverAgentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ForeverAgentOptions](x: Self) {
       
-      @scala.inline
-      def setMinSockets(value: Double): Self = StObject.set(x, "minSockets", value.asInstanceOf[js.Any])
+      inline def setMinSockets(value: Double): Self = StObject.set(x, "minSockets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinSocketsUndefined: Self = StObject.set(x, "minSockets", js.undefined)
+      inline def setMinSocketsUndefined: Self = StObject.set(x, "minSockets", js.undefined)
     }
   }
   

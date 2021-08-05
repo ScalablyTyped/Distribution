@@ -28,16 +28,16 @@ object mod {
     def this(ctx: Context) = this()
     
     /** Application */
-    var app: Application = js.native
+    /* protected */ var app: Application = js.native
     
     /** Application config object */
-    var config: EggAppConfig = js.native
+    /* protected */ var config: EggAppConfig = js.native
     
     /** request context */
-    var ctx: Context = js.native
+    /* protected */ var ctx: Context = js.native
     
     /** service */
-    var service: Service = js.native
+    /* protected */ var service: Service = js.native
   }
   
   @JSImport("egg-core", "EggCore")
@@ -256,89 +256,62 @@ object mod {
   }
   object ContextLoaderOption {
     
-    @scala.inline
-    def apply(directory: String | js.Array[String], inject: js.Object, property: String): ContextLoaderOption = {
+    inline def apply(directory: String | js.Array[String], inject: js.Object, property: String): ContextLoaderOption = {
       val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], inject = inject.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContextLoaderOption]
     }
     
-    @scala.inline
-    implicit class ContextLoaderOptionMutableBuilder[Self <: ContextLoaderOption] (val x: Self) extends AnyVal {
+    extension [Self <: ContextLoaderOption](x: Self) {
       
-      @scala.inline
-      def setCall(value: Boolean): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
+      inline def setCall(value: Boolean): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallUndefined: Self = StObject.set(x, "call", js.undefined)
+      inline def setCallUndefined: Self = StObject.set(x, "call", js.undefined)
       
-      @scala.inline
-      def setCaseStyle(value: String | (js.Function1[/* str */ String, js.Array[String]])): Self = StObject.set(x, "caseStyle", value.asInstanceOf[js.Any])
+      inline def setCaseStyle(value: String | (js.Function1[/* str */ String, js.Array[String]])): Self = StObject.set(x, "caseStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseStyleFunction1(value: /* str */ String => js.Array[String]): Self = StObject.set(x, "caseStyle", js.Any.fromFunction1(value))
+      inline def setCaseStyleFunction1(value: /* str */ String => js.Array[String]): Self = StObject.set(x, "caseStyle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCaseStyleUndefined: Self = StObject.set(x, "caseStyle", js.undefined)
+      inline def setCaseStyleUndefined: Self = StObject.set(x, "caseStyle", js.undefined)
       
-      @scala.inline
-      def setDirectory(value: String | js.Array[String]): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+      inline def setDirectory(value: String | js.Array[String]): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryVarargs(value: String*): Self = StObject.set(x, "directory", js.Array(value :_*))
+      inline def setDirectoryVarargs(value: String*): Self = StObject.set(x, "directory", js.Array(value :_*))
       
-      @scala.inline
-      def setFieldClass(value: String): Self = StObject.set(x, "fieldClass", value.asInstanceOf[js.Any])
+      inline def setFieldClass(value: String): Self = StObject.set(x, "fieldClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldClassUndefined: Self = StObject.set(x, "fieldClass", js.undefined)
+      inline def setFieldClassUndefined: Self = StObject.set(x, "fieldClass", js.undefined)
       
-      @scala.inline
-      def setFilter(value: /* obj */ js.Object => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* obj */ js.Object => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => js.Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
+      inline def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => js.Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
+      inline def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
       
-      @scala.inline
-      def setInject(value: js.Object): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
+      inline def setInject(value: js.Object): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatch(value: String | js.Array[String]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: String | js.Array[String]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      @scala.inline
-      def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value :_*))
+      inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value :_*))
       
-      @scala.inline
-      def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+      inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+      inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: js.Object): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Object): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -364,32 +337,24 @@ object mod {
   }
   object EggAppInfo {
     
-    @scala.inline
-    def apply(HOME: String, baseDir: String, env: String, name: String, pkg: PlainObject[js.Any], root: String): EggAppInfo = {
+    inline def apply(HOME: String, baseDir: String, env: String, name: String, pkg: PlainObject[js.Any], root: String): EggAppInfo = {
       val __obj = js.Dynamic.literal(HOME = HOME.asInstanceOf[js.Any], baseDir = baseDir.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pkg = pkg.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[EggAppInfo]
     }
     
-    @scala.inline
-    implicit class EggAppInfoMutableBuilder[Self <: EggAppInfo] (val x: Self) extends AnyVal {
+    extension [Self <: EggAppInfo](x: Self) {
       
-      @scala.inline
-      def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
+      inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHOME(value: String): Self = StObject.set(x, "HOME", value.asInstanceOf[js.Any])
+      inline def setHOME(value: String): Self = StObject.set(x, "HOME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPkg(value: PlainObject[js.Any]): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
+      inline def setPkg(value: PlainObject[js.Any]): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
   
@@ -566,38 +531,28 @@ object mod {
   }
   object EggCoreOptions {
     
-    @scala.inline
-    def apply(): EggCoreOptions = {
+    inline def apply(): EggCoreOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EggCoreOptions]
     }
     
-    @scala.inline
-    implicit class EggCoreOptionsMutableBuilder[Self <: EggCoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EggCoreOptions](x: Self) {
       
-      @scala.inline
-      def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
+      inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseDirUndefined: Self = StObject.set(x, "baseDir", js.undefined)
+      inline def setBaseDirUndefined: Self = StObject.set(x, "baseDir", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: Plugins): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: Plugins): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setServerScope(value: String): Self = StObject.set(x, "serverScope", value.asInstanceOf[js.Any])
+      inline def setServerScope(value: String): Self = StObject.set(x, "serverScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerScopeUndefined: Self = StObject.set(x, "serverScope", js.undefined)
+      inline def setServerScopeUndefined: Self = StObject.set(x, "serverScope", js.undefined)
       
-      @scala.inline
-      def setType(value: EggType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: EggType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -620,35 +575,26 @@ object mod {
   }
   object EggLoaderOptions {
     
-    @scala.inline
-    def apply(app: EggCore[PlainObject[js.Any]], baseDir: String, logger: Logger[LoggerOptions]): EggLoaderOptions = {
+    inline def apply(app: EggCore[PlainObject[js.Any]], baseDir: String, logger: Logger[LoggerOptions]): EggLoaderOptions = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], baseDir = baseDir.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any])
       __obj.asInstanceOf[EggLoaderOptions]
     }
     
-    @scala.inline
-    implicit class EggLoaderOptionsMutableBuilder[Self <: EggLoaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EggLoaderOptions](x: Self) {
       
-      @scala.inline
-      def setApp(value: EggCore[PlainObject[js.Any]]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: EggCore[PlainObject[js.Any]]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
+      inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogger(value: Logger[LoggerOptions]): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger[LoggerOptions]): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlugins(value: Plugins): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: Plugins): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setServerScope(value: String): Self = StObject.set(x, "serverScope", value.asInstanceOf[js.Any])
+      inline def setServerScope(value: String): Self = StObject.set(x, "serverScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerScopeUndefined: Self = StObject.set(x, "serverScope", js.undefined)
+      inline def setServerScopeUndefined: Self = StObject.set(x, "serverScope", js.undefined)
     }
   }
   
@@ -659,11 +605,9 @@ object mod {
   trait EggType extends StObject
   object EggType {
     
-    @scala.inline
-    def agent: typings.eggCore.eggCoreStrings.agent = "agent".asInstanceOf[typings.eggCore.eggCoreStrings.agent]
+    inline def agent: typings.eggCore.eggCoreStrings.agent = "agent".asInstanceOf[typings.eggCore.eggCoreStrings.agent]
     
-    @scala.inline
-    def application: typings.eggCore.eggCoreStrings.application = "application".asInstanceOf[typings.eggCore.eggCoreStrings.application]
+    inline def application: typings.eggCore.eggCoreStrings.application = "application".asInstanceOf[typings.eggCore.eggCoreStrings.application]
   }
   
   @js.native
@@ -715,20 +659,16 @@ object mod {
   }
   object FileLoaderBase {
     
-    @scala.inline
-    def apply(load: () => js.Object, parse: () => js.Array[Exports]): FileLoaderBase = {
+    inline def apply(load: () => js.Object, parse: () => js.Array[Exports]): FileLoaderBase = {
       val __obj = js.Dynamic.literal(load = js.Any.fromFunction0(load), parse = js.Any.fromFunction0(parse))
       __obj.asInstanceOf[FileLoaderBase]
     }
     
-    @scala.inline
-    implicit class FileLoaderBaseMutableBuilder[Self <: FileLoaderBase] (val x: Self) extends AnyVal {
+    extension [Self <: FileLoaderBase](x: Self) {
       
-      @scala.inline
-      def setLoad(value: () => js.Object): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
+      inline def setLoad(value: () => js.Object): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParse(value: () => js.Array[Exports]): Self = StObject.set(x, "parse", js.Any.fromFunction0(value))
+      inline def setParse(value: () => js.Array[Exports]): Self = StObject.set(x, "parse", js.Any.fromFunction0(value))
     }
   }
   
@@ -766,80 +706,56 @@ object mod {
   }
   object FileLoaderOption {
     
-    @scala.inline
-    def apply(directory: String | js.Array[String], target: js.Object): FileLoaderOption = {
+    inline def apply(directory: String | js.Array[String], target: js.Object): FileLoaderOption = {
       val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileLoaderOption]
     }
     
-    @scala.inline
-    implicit class FileLoaderOptionMutableBuilder[Self <: FileLoaderOption] (val x: Self) extends AnyVal {
+    extension [Self <: FileLoaderOption](x: Self) {
       
-      @scala.inline
-      def setCall(value: Boolean): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
+      inline def setCall(value: Boolean): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallUndefined: Self = StObject.set(x, "call", js.undefined)
+      inline def setCallUndefined: Self = StObject.set(x, "call", js.undefined)
       
-      @scala.inline
-      def setCaseStyle(value: String | (js.Function1[/* str */ String, js.Array[String]])): Self = StObject.set(x, "caseStyle", value.asInstanceOf[js.Any])
+      inline def setCaseStyle(value: String | (js.Function1[/* str */ String, js.Array[String]])): Self = StObject.set(x, "caseStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseStyleFunction1(value: /* str */ String => js.Array[String]): Self = StObject.set(x, "caseStyle", js.Any.fromFunction1(value))
+      inline def setCaseStyleFunction1(value: /* str */ String => js.Array[String]): Self = StObject.set(x, "caseStyle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCaseStyleUndefined: Self = StObject.set(x, "caseStyle", js.undefined)
+      inline def setCaseStyleUndefined: Self = StObject.set(x, "caseStyle", js.undefined)
       
-      @scala.inline
-      def setDirectory(value: String | js.Array[String]): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+      inline def setDirectory(value: String | js.Array[String]): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryVarargs(value: String*): Self = StObject.set(x, "directory", js.Array(value :_*))
+      inline def setDirectoryVarargs(value: String*): Self = StObject.set(x, "directory", js.Array(value :_*))
       
-      @scala.inline
-      def setFilter(value: /* obj */ js.Object => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* obj */ js.Object => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => js.Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
+      inline def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => js.Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
+      inline def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
       
-      @scala.inline
-      def setInject(value: js.Object): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
+      inline def setInject(value: js.Object): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
+      inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
       
-      @scala.inline
-      def setMatch(value: String | js.Array[String]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: String | js.Array[String]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      @scala.inline
-      def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value :_*))
+      inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value :_*))
       
-      @scala.inline
-      def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+      inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+      inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
       
-      @scala.inline
-      def setTarget(value: js.Object): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Object): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -874,8 +790,7 @@ object mod {
   }
   object PluginInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _package: String,
       dependencies: js.Array[String],
       enable: Boolean,
@@ -890,41 +805,29 @@ object mod {
       __obj.asInstanceOf[PluginInfo]
     }
     
-    @scala.inline
-    implicit class PluginInfoMutableBuilder[Self <: PluginInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PluginInfo](x: Self) {
       
-      @scala.inline
-      def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
       
-      @scala.inline
-      def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+      inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnv(value: js.Array[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: js.Array[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value :_*))
+      inline def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value :_*))
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalDependencies(value: js.Array[String]): Self = StObject.set(x, "optionalDependencies", value.asInstanceOf[js.Any])
+      inline def setOptionalDependencies(value: js.Array[String]): Self = StObject.set(x, "optionalDependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalDependenciesVarargs(value: String*): Self = StObject.set(x, "optionalDependencies", js.Array(value :_*))
+      inline def setOptionalDependenciesVarargs(value: String*): Self = StObject.set(x, "optionalDependencies", js.Array(value :_*))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+      inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     }
   }
   

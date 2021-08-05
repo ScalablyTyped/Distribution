@@ -19,38 +19,28 @@ object anon {
   }
   object PartialSlow {
     
-    @scala.inline
-    def apply(): PartialSlow = {
+    inline def apply(): PartialSlow = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialSlow]
     }
     
-    @scala.inline
-    implicit class PartialSlowMutableBuilder[Self <: PartialSlow] (val x: Self) extends AnyVal {
+    extension [Self <: PartialSlow](x: Self) {
       
-      @scala.inline
-      def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+      inline def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
+      inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
       
-      @scala.inline
-      def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
+      inline def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
+      inline def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
       
-      @scala.inline
-      def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+      inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
       
-      @scala.inline
-      def setUp(value: Double): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+      inline def setUp(value: Double): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
+      inline def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
     }
   }
 }

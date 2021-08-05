@@ -16,17 +16,13 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def set(delay: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(delay.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def set(delay: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(delay.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   /* static member */
-  @scala.inline
-  def set(delay: Double, message: String): js.Promise[scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(delay.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Nothing]]
+  inline def set(delay: Double, message: String): js.Promise[scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(delay.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Nothing]]
   
   /* static member */
-  @scala.inline
-  def wrap(promise: js.Promise[js.Any], delay: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(promise.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def wrap(promise: js.Promise[js.Any], delay: Double, error: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(promise.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def wrap(promise: js.Promise[js.Any], delay: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(promise.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def wrap(promise: js.Promise[js.Any], delay: Double, error: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(promise.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   @js.native
   trait Timeout extends StObject {

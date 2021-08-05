@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class HttpXhrBackend protected () extends HttpBackend {
   def this(xhrFactory: XhrFactory) = this()
   
-  var xhrFactory: js.Any = js.native
+  /* private */ var xhrFactory: js.Any = js.native
 }

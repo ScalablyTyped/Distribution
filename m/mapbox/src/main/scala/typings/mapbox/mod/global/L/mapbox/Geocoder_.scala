@@ -28,8 +28,7 @@ trait Geocoder_ extends StObject {
 }
 object Geocoder_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getURL: () => String,
     query: (String, js.Function) => js.Any,
     queryURL: String => String,
@@ -42,28 +41,20 @@ object Geocoder_ {
     __obj.asInstanceOf[Geocoder_]
   }
   
-  @scala.inline
-  implicit class Geocoder_MutableBuilder[Self <: Geocoder_] (val x: Self) extends AnyVal {
+  extension [Self <: Geocoder_](x: Self) {
     
-    @scala.inline
-    def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
+    inline def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQuery(value: (String, js.Function) => js.Any): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
+    inline def setQuery(value: (String, js.Function) => js.Any): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setQueryURL(value: String => String): Self = StObject.set(x, "queryURL", js.Any.fromFunction1(value))
+    inline def setQueryURL(value: String => String): Self = StObject.set(x, "queryURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReverseQuery(value: (js.Any, js.Function) => js.Any): Self = StObject.set(x, "reverseQuery", js.Any.fromFunction2(value))
+    inline def setReverseQuery(value: (js.Any, js.Function) => js.Any): Self = StObject.set(x, "reverseQuery", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetID(value: String => js.Any): Self = StObject.set(x, "setID", js.Any.fromFunction1(value))
+    inline def setSetID(value: String => js.Any): Self = StObject.set(x, "setID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTileJSON(value: js.Any => js.Any): Self = StObject.set(x, "setTileJSON", js.Any.fromFunction1(value))
+    inline def setSetTileJSON(value: js.Any => js.Any): Self = StObject.set(x, "setTileJSON", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetURL(value: String => js.Any): Self = StObject.set(x, "setURL", js.Any.fromFunction1(value))
+    inline def setSetURL(value: String => js.Any): Self = StObject.set(x, "setURL", js.Any.fromFunction1(value))
   }
 }

@@ -18,19 +18,15 @@ trait StorageClassAnalysisDataExport extends StObject {
 }
 object StorageClassAnalysisDataExport {
   
-  @scala.inline
-  def apply(Destination: AnalyticsExportDestination, OutputSchemaVersion: StorageClassAnalysisSchemaVersion): StorageClassAnalysisDataExport = {
+  inline def apply(Destination: AnalyticsExportDestination, OutputSchemaVersion: StorageClassAnalysisSchemaVersion): StorageClassAnalysisDataExport = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any], OutputSchemaVersion = OutputSchemaVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageClassAnalysisDataExport]
   }
   
-  @scala.inline
-  implicit class StorageClassAnalysisDataExportMutableBuilder[Self <: StorageClassAnalysisDataExport] (val x: Self) extends AnyVal {
+  extension [Self <: StorageClassAnalysisDataExport](x: Self) {
     
-    @scala.inline
-    def setDestination(value: AnalyticsExportDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: AnalyticsExportDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputSchemaVersion(value: StorageClassAnalysisSchemaVersion): Self = StObject.set(x, "OutputSchemaVersion", value.asInstanceOf[js.Any])
+    inline def setOutputSchemaVersion(value: StorageClassAnalysisSchemaVersion): Self = StObject.set(x, "OutputSchemaVersion", value.asInstanceOf[js.Any])
   }
 }

@@ -28,8 +28,7 @@ trait Font extends StObject {
 }
 object Font {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     font: A | B,
     height: Double,
     includeParity: Boolean,
@@ -40,22 +39,16 @@ object Font {
     __obj.asInstanceOf[Font]
   }
   
-  @scala.inline
-  implicit class FontMutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
+  extension [Self <: Font](x: Self) {
     
-    @scala.inline
-    def setFont(value: A | B): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: A | B): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeParity(value: Boolean): Self = StObject.set(x, "includeParity", value.asInstanceOf[js.Any])
+    inline def setIncludeParity(value: Boolean): Self = StObject.set(x, "includeParity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: typings.escpos.escposStrings.OFF | ABV | BLW | BTH): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: typings.escpos.escposStrings.OFF | ABV | BLW | BTH): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

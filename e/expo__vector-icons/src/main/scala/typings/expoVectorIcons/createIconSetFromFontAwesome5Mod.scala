@@ -19,34 +19,26 @@ object createIconSetFromFontAwesome5Mod {
     @JSImport("@expo/vector-icons/build/createIconSetFromFontAwesome5", "FA5Style.brand")
     @js.native
     def brand: String = js.native
-    @scala.inline
-    def brand_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("brand")(x.asInstanceOf[js.Any])
+    inline def brand_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("brand")(x.asInstanceOf[js.Any])
     
     @JSImport("@expo/vector-icons/build/createIconSetFromFontAwesome5", "FA5Style.light")
     @js.native
     def light: String = js.native
-    @scala.inline
-    def light_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("light")(x.asInstanceOf[js.Any])
+    inline def light_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("light")(x.asInstanceOf[js.Any])
     
     @JSImport("@expo/vector-icons/build/createIconSetFromFontAwesome5", "FA5Style.regular")
     @js.native
     def regular: String = js.native
-    @scala.inline
-    def regular_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regular")(x.asInstanceOf[js.Any])
+    inline def regular_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regular")(x.asInstanceOf[js.Any])
     
     @JSImport("@expo/vector-icons/build/createIconSetFromFontAwesome5", "FA5Style.solid")
     @js.native
     def solid: String = js.native
-    @scala.inline
-    def solid_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("solid")(x.asInstanceOf[js.Any])
+    inline def solid_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("solid")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def createFA5iconSet(glyphMap: js.Any, metadata: js.Object, fonts: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFA5iconSet")(glyphMap.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def createFA5iconSet(glyphMap: js.Any, metadata: js.Object, fonts: js.Any, pro: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFA5iconSet")(glyphMap.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any], pro.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def createFA5iconSet(glyphMap: js.Any, metadata: Unit, fonts: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFA5iconSet")(glyphMap.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def createFA5iconSet(glyphMap: js.Any, metadata: Unit, fonts: js.Any, pro: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFA5iconSet")(glyphMap.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any], pro.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createFA5iconSet(glyphMap: js.Any, metadata: js.Object, fonts: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFA5iconSet")(glyphMap.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createFA5iconSet(glyphMap: js.Any, metadata: js.Object, fonts: js.Any, pro: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFA5iconSet")(glyphMap.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any], pro.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createFA5iconSet(glyphMap: js.Any, metadata: Unit, fonts: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFA5iconSet")(glyphMap.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createFA5iconSet(glyphMap: js.Any, metadata: Unit, fonts: js.Any, pro: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFA5iconSet")(glyphMap.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any], pro.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

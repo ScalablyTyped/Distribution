@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleStyleFloat extends StObject
 object styleStyleFloat {
   
-  @scala.inline
-  def styleStyleFloatLeft: `1` = 1.asInstanceOf[`1`]
+  inline def styleStyleFloatLeft: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleStyleFloatNone: `3` = 3.asInstanceOf[`3`]
+  inline def styleStyleFloatNone: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleStyleFloatNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleStyleFloatNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleStyleFloatRight: `2` = 2.asInstanceOf[`2`]
+  inline def styleStyleFloatRight: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleStyleFloat_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleStyleFloat_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

@@ -13,19 +13,15 @@ trait GetCheckerIpRangesResponse extends StObject {
 }
 object GetCheckerIpRangesResponse {
   
-  @scala.inline
-  def apply(CheckerIpRanges: CheckerIpRanges): GetCheckerIpRangesResponse = {
+  inline def apply(CheckerIpRanges: CheckerIpRanges): GetCheckerIpRangesResponse = {
     val __obj = js.Dynamic.literal(CheckerIpRanges = CheckerIpRanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCheckerIpRangesResponse]
   }
   
-  @scala.inline
-  implicit class GetCheckerIpRangesResponseMutableBuilder[Self <: GetCheckerIpRangesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCheckerIpRangesResponse](x: Self) {
     
-    @scala.inline
-    def setCheckerIpRanges(value: CheckerIpRanges): Self = StObject.set(x, "CheckerIpRanges", value.asInstanceOf[js.Any])
+    inline def setCheckerIpRanges(value: CheckerIpRanges): Self = StObject.set(x, "CheckerIpRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckerIpRangesVarargs(value: IPAddressCidr*): Self = StObject.set(x, "CheckerIpRanges", js.Array(value :_*))
+    inline def setCheckerIpRangesVarargs(value: IPAddressCidr*): Self = StObject.set(x, "CheckerIpRanges", js.Array(value :_*))
   }
 }

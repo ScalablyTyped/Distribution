@@ -14,19 +14,15 @@ trait Namespace
 }
 object Namespace {
   
-  @scala.inline
-  def apply(): Namespace = {
+  inline def apply(): Namespace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Namespace]
   }
   
-  @scala.inline
-  implicit class NamespaceMutableBuilder[Self <: Namespace] (val x: Self) extends AnyVal {
+  extension [Self <: Namespace](x: Self) {
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
   }
 }

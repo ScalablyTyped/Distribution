@@ -8,21 +8,17 @@ object maximMazurokGapiClientCloudtraceStrings {
   
   @js.native
   sealed trait Attributes extends StObject
-  @scala.inline
-  def Attributes: Attributes = "Attributes".asInstanceOf[Attributes]
+  inline def Attributes: Attributes = "Attributes".asInstanceOf[Attributes]
   
   @js.native
   sealed trait Status extends StObject
-  @scala.inline
-  def Status: Status = "Status".asInstanceOf[Status]
+  inline def Status: Status = "Status".asInstanceOf[Status]
   
   @js.native
   sealed trait cloudtrace extends StObject
-  @scala.inline
-  def cloudtrace: cloudtrace = "cloudtrace".asInstanceOf[cloudtrace]
+  inline def cloudtrace: cloudtrace = "cloudtrace".asInstanceOf[cloudtrace]
   
   @js.native
   sealed trait v2 extends StObject
-  @scala.inline
-  def v2: v2 = "v2".asInstanceOf[v2]
+  inline def v2: v2 = "v2".asInstanceOf[v2]
 }

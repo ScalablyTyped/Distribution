@@ -17,37 +17,27 @@ trait PartialScrollSpyOptions extends StObject {
 }
 object PartialScrollSpyOptions {
   
-  @scala.inline
-  def apply(): PartialScrollSpyOptions = {
+  inline def apply(): PartialScrollSpyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialScrollSpyOptions]
   }
   
-  @scala.inline
-  implicit class PartialScrollSpyOptionsMutableBuilder[Self <: PartialScrollSpyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialScrollSpyOptions](x: Self) {
     
-    @scala.inline
-    def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
+    inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
+    inline def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
     
-    @scala.inline
-    def setGetActiveElement(value: /* id */ String => String): Self = StObject.set(x, "getActiveElement", js.Any.fromFunction1(value))
+    inline def setGetActiveElement(value: /* id */ String => String): Self = StObject.set(x, "getActiveElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetActiveElementUndefined: Self = StObject.set(x, "getActiveElement", js.undefined)
+    inline def setGetActiveElementUndefined: Self = StObject.set(x, "getActiveElement", js.undefined)
     
-    @scala.inline
-    def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
+    inline def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
+    inline def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
     
-    @scala.inline
-    def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+    inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
+    inline def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
   }
 }

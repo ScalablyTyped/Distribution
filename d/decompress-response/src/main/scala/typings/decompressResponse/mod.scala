@@ -20,8 +20,7 @@ object mod {
   });
   ```
   */
-  @scala.inline
-  def apply(response: IncomingMessage): IncomingMessage = ^.asInstanceOf[js.Dynamic].apply(response.asInstanceOf[js.Any]).asInstanceOf[IncomingMessage]
+  inline def apply(response: IncomingMessage): IncomingMessage = ^.asInstanceOf[js.Dynamic].apply(response.asInstanceOf[js.Any]).asInstanceOf[IncomingMessage]
   
   @JSImport("decompress-response", JSImport.Namespace)
   @js.native

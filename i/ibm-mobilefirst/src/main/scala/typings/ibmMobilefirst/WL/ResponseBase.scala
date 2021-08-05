@@ -33,8 +33,7 @@ trait ResponseBase extends StObject {
 }
 object ResponseBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorCode: Double,
     errorMsg: String,
     headerJSON: StringDictionary[js.Any],
@@ -51,40 +50,28 @@ object ResponseBase {
     __obj.asInstanceOf[ResponseBase]
   }
   
-  @scala.inline
-  implicit class ResponseBaseMutableBuilder[Self <: ResponseBase] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseBase](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMsg(value: String): Self = StObject.set(x, "errorMsg", value.asInstanceOf[js.Any])
+    inline def setErrorMsg(value: String): Self = StObject.set(x, "errorMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderJSON(value: StringDictionary[js.Any]): Self = StObject.set(x, "headerJSON", value.asInstanceOf[js.Any])
+    inline def setHeaderJSON(value: StringDictionary[js.Any]): Self = StObject.set(x, "headerJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
+    inline def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyState(value: Double): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
+    inline def setReadyState(value: Double): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseJSON(value: StringDictionary[js.Any]): Self = StObject.set(x, "responseJSON", value.asInstanceOf[js.Any])
+    inline def setResponseJSON(value: StringDictionary[js.Any]): Self = StObject.set(x, "responseJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
+    inline def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseXML(value: String): Self = StObject.set(x, "responseXML", value.asInstanceOf[js.Any])
+    inline def setResponseXML(value: String): Self = StObject.set(x, "responseXML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+    inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
   }
 }

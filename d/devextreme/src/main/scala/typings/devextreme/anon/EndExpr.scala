@@ -27,64 +27,45 @@ trait EndExpr extends StObject {
 }
 object EndExpr {
   
-  @scala.inline
-  def apply(): EndExpr = {
+  inline def apply(): EndExpr = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndExpr]
   }
   
-  @scala.inline
-  implicit class EndExprMutableBuilder[Self <: EndExpr] (val x: Self) extends AnyVal {
+  extension [Self <: EndExpr](x: Self) {
     
-    @scala.inline
-    def setColorExpr(value: String | js.Function): Self = StObject.set(x, "colorExpr", value.asInstanceOf[js.Any])
+    inline def setColorExpr(value: String | js.Function): Self = StObject.set(x, "colorExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorExprUndefined: Self = StObject.set(x, "colorExpr", js.undefined)
+    inline def setColorExprUndefined: Self = StObject.set(x, "colorExpr", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: js.Array[js.Any] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Array[js.Any] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
     
-    @scala.inline
-    def setEndExpr(value: String | js.Function): Self = StObject.set(x, "endExpr", value.asInstanceOf[js.Any])
+    inline def setEndExpr(value: String | js.Function): Self = StObject.set(x, "endExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndExprUndefined: Self = StObject.set(x, "endExpr", js.undefined)
+    inline def setEndExprUndefined: Self = StObject.set(x, "endExpr", js.undefined)
     
-    @scala.inline
-    def setKeyExpr(value: String | js.Function): Self = StObject.set(x, "keyExpr", value.asInstanceOf[js.Any])
+    inline def setKeyExpr(value: String | js.Function): Self = StObject.set(x, "keyExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyExprUndefined: Self = StObject.set(x, "keyExpr", js.undefined)
+    inline def setKeyExprUndefined: Self = StObject.set(x, "keyExpr", js.undefined)
     
-    @scala.inline
-    def setParentIdExpr(value: String | js.Function): Self = StObject.set(x, "parentIdExpr", value.asInstanceOf[js.Any])
+    inline def setParentIdExpr(value: String | js.Function): Self = StObject.set(x, "parentIdExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIdExprUndefined: Self = StObject.set(x, "parentIdExpr", js.undefined)
+    inline def setParentIdExprUndefined: Self = StObject.set(x, "parentIdExpr", js.undefined)
     
-    @scala.inline
-    def setProgressExpr(value: String | js.Function): Self = StObject.set(x, "progressExpr", value.asInstanceOf[js.Any])
+    inline def setProgressExpr(value: String | js.Function): Self = StObject.set(x, "progressExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressExprUndefined: Self = StObject.set(x, "progressExpr", js.undefined)
+    inline def setProgressExprUndefined: Self = StObject.set(x, "progressExpr", js.undefined)
     
-    @scala.inline
-    def setStartExpr(value: String | js.Function): Self = StObject.set(x, "startExpr", value.asInstanceOf[js.Any])
+    inline def setStartExpr(value: String | js.Function): Self = StObject.set(x, "startExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartExprUndefined: Self = StObject.set(x, "startExpr", js.undefined)
+    inline def setStartExprUndefined: Self = StObject.set(x, "startExpr", js.undefined)
     
-    @scala.inline
-    def setTitleExpr(value: String | js.Function): Self = StObject.set(x, "titleExpr", value.asInstanceOf[js.Any])
+    inline def setTitleExpr(value: String | js.Function): Self = StObject.set(x, "titleExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleExprUndefined: Self = StObject.set(x, "titleExpr", js.undefined)
+    inline def setTitleExprUndefined: Self = StObject.set(x, "titleExpr", js.undefined)
   }
 }

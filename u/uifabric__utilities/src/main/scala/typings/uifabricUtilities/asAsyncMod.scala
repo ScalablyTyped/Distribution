@@ -16,8 +16,7 @@ object asAsyncMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def asAsync[TProps](options: IAsAsyncOptions[TProps]): ForwardRefExoticComponent[
+  inline def asAsync[TProps](options: IAsAsyncOptions[TProps]): ForwardRefExoticComponent[
     (PropsWithoutRef[TProps & AsyncPlaceholder]) & RefAttributes[ElementType[TProps]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("asAsync")(options.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[
     (PropsWithoutRef[TProps & AsyncPlaceholder]) & RefAttributes[ElementType[TProps]]
@@ -42,29 +41,22 @@ object asAsyncMod {
   }
   object IAsAsyncOptions {
     
-    @scala.inline
-    def apply[TProps](load: () => js.Promise[ElementType[TProps]]): IAsAsyncOptions[TProps] = {
+    inline def apply[TProps](load: () => js.Promise[ElementType[TProps]]): IAsAsyncOptions[TProps] = {
       val __obj = js.Dynamic.literal(load = js.Any.fromFunction0(load))
       __obj.asInstanceOf[IAsAsyncOptions[TProps]]
     }
     
-    @scala.inline
-    implicit class IAsAsyncOptionsMutableBuilder[Self <: IAsAsyncOptions[?], TProps] (val x: Self & IAsAsyncOptions[TProps]) extends AnyVal {
+    extension [Self <: IAsAsyncOptions[?], TProps](x: Self & IAsAsyncOptions[TProps]) {
       
-      @scala.inline
-      def setLoad(value: () => js.Promise[ElementType[TProps]]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
+      inline def setLoad(value: () => js.Promise[ElementType[TProps]]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+      inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     }
   }
 }

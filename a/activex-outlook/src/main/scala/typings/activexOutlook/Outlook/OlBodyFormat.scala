@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlBodyFormat extends StObject
 object OlBodyFormat {
   
-  @scala.inline
-  def olFormatHTML: `2` = 2.asInstanceOf[`2`]
+  inline def olFormatHTML: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olFormatPlain: `1` = 1.asInstanceOf[`1`]
+  inline def olFormatPlain: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olFormatRichText: `3` = 3.asInstanceOf[`3`]
+  inline def olFormatRichText: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olFormatUnspecified: `0` = 0.asInstanceOf[`0`]
+  inline def olFormatUnspecified: `0` = 0.asInstanceOf[`0`]
 }

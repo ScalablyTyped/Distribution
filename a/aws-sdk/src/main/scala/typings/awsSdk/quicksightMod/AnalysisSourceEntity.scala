@@ -13,19 +13,15 @@ trait AnalysisSourceEntity extends StObject {
 }
 object AnalysisSourceEntity {
   
-  @scala.inline
-  def apply(): AnalysisSourceEntity = {
+  inline def apply(): AnalysisSourceEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnalysisSourceEntity]
   }
   
-  @scala.inline
-  implicit class AnalysisSourceEntityMutableBuilder[Self <: AnalysisSourceEntity] (val x: Self) extends AnyVal {
+  extension [Self <: AnalysisSourceEntity](x: Self) {
     
-    @scala.inline
-    def setSourceTemplate(value: AnalysisSourceTemplate): Self = StObject.set(x, "SourceTemplate", value.asInstanceOf[js.Any])
+    inline def setSourceTemplate(value: AnalysisSourceTemplate): Self = StObject.set(x, "SourceTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTemplateUndefined: Self = StObject.set(x, "SourceTemplate", js.undefined)
+    inline def setSourceTemplateUndefined: Self = StObject.set(x, "SourceTemplate", js.undefined)
   }
 }

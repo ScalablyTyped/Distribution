@@ -25,8 +25,7 @@ trait StringConstructor extends StObject {
 }
 object StringConstructor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     format: (java.lang.String, /* repeated */ js.Any) => java.lang.String,
     localeFormat: (java.lang.String, /* repeated */ js.Any) => java.lang.String
   ): StringConstructor = {
@@ -34,13 +33,10 @@ object StringConstructor {
     __obj.asInstanceOf[StringConstructor]
   }
   
-  @scala.inline
-  implicit class StringConstructorMutableBuilder[Self <: StringConstructor] (val x: Self) extends AnyVal {
+  extension [Self <: StringConstructor](x: Self) {
     
-    @scala.inline
-    def setFormat(value: (java.lang.String, /* repeated */ js.Any) => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+    inline def setFormat(value: (java.lang.String, /* repeated */ js.Any) => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLocaleFormat(value: (java.lang.String, /* repeated */ js.Any) => java.lang.String): Self = StObject.set(x, "localeFormat", js.Any.fromFunction2(value))
+    inline def setLocaleFormat(value: (java.lang.String, /* repeated */ js.Any) => java.lang.String): Self = StObject.set(x, "localeFormat", js.Any.fromFunction2(value))
   }
 }

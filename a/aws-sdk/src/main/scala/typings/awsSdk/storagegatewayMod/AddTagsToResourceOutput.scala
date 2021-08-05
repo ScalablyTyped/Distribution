@@ -13,19 +13,15 @@ trait AddTagsToResourceOutput extends StObject {
 }
 object AddTagsToResourceOutput {
   
-  @scala.inline
-  def apply(): AddTagsToResourceOutput = {
+  inline def apply(): AddTagsToResourceOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddTagsToResourceOutput]
   }
   
-  @scala.inline
-  implicit class AddTagsToResourceOutputMutableBuilder[Self <: AddTagsToResourceOutput] (val x: Self) extends AnyVal {
+  extension [Self <: AddTagsToResourceOutput](x: Self) {
     
-    @scala.inline
-    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
+    inline def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
+    inline def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
   }
 }

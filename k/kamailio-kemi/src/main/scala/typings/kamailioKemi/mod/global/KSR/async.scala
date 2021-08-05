@@ -10,9 +10,7 @@ object async {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def route(rn: String, s: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(rn.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def route(rn: String, s: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("route")(rn.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def taskRoute(rn: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("task_route")(rn.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def taskRoute(rn: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("task_route")(rn.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

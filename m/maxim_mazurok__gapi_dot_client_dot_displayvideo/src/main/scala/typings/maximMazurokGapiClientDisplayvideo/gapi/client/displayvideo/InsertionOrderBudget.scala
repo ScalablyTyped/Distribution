@@ -17,34 +17,25 @@ trait InsertionOrderBudget extends StObject {
 }
 object InsertionOrderBudget {
   
-  @scala.inline
-  def apply(): InsertionOrderBudget = {
+  inline def apply(): InsertionOrderBudget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertionOrderBudget]
   }
   
-  @scala.inline
-  implicit class InsertionOrderBudgetMutableBuilder[Self <: InsertionOrderBudget] (val x: Self) extends AnyVal {
+  extension [Self <: InsertionOrderBudget](x: Self) {
     
-    @scala.inline
-    def setAutomationType(value: String): Self = StObject.set(x, "automationType", value.asInstanceOf[js.Any])
+    inline def setAutomationType(value: String): Self = StObject.set(x, "automationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomationTypeUndefined: Self = StObject.set(x, "automationType", js.undefined)
+    inline def setAutomationTypeUndefined: Self = StObject.set(x, "automationType", js.undefined)
     
-    @scala.inline
-    def setBudgetSegments(value: js.Array[InsertionOrderBudgetSegment]): Self = StObject.set(x, "budgetSegments", value.asInstanceOf[js.Any])
+    inline def setBudgetSegments(value: js.Array[InsertionOrderBudgetSegment]): Self = StObject.set(x, "budgetSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetSegmentsUndefined: Self = StObject.set(x, "budgetSegments", js.undefined)
+    inline def setBudgetSegmentsUndefined: Self = StObject.set(x, "budgetSegments", js.undefined)
     
-    @scala.inline
-    def setBudgetSegmentsVarargs(value: InsertionOrderBudgetSegment*): Self = StObject.set(x, "budgetSegments", js.Array(value :_*))
+    inline def setBudgetSegmentsVarargs(value: InsertionOrderBudgetSegment*): Self = StObject.set(x, "budgetSegments", js.Array(value :_*))
     
-    @scala.inline
-    def setBudgetUnit(value: String): Self = StObject.set(x, "budgetUnit", value.asInstanceOf[js.Any])
+    inline def setBudgetUnit(value: String): Self = StObject.set(x, "budgetUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetUnitUndefined: Self = StObject.set(x, "budgetUnit", js.undefined)
+    inline def setBudgetUnitUndefined: Self = StObject.set(x, "budgetUnit", js.undefined)
   }
 }

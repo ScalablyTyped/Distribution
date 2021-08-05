@@ -23,28 +23,24 @@ object SignatureInfoHelpers {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getActualSignatureInfoFromCallExpression(
+  inline def getActualSignatureInfoFromCallExpression(
     ast: ICallExpression,
     caretPosition: Double,
     typeParameterInformation: IPartiallyWrittenTypeArgumentListInformation
   ): typings.typescriptServices.TypeScript.Services.ActualSignatureInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getActualSignatureInfoFromCallExpression")(ast.asInstanceOf[js.Any], caretPosition.asInstanceOf[js.Any], typeParameterInformation.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.ActualSignatureInfo]
   
   /* static member */
-  @scala.inline
-  def getActualSignatureInfoFromPartiallyWritenGenericExpression(caretPosition: Double, typeParameterInformation: IPartiallyWrittenTypeArgumentListInformation): typings.typescriptServices.TypeScript.Services.ActualSignatureInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getActualSignatureInfoFromPartiallyWritenGenericExpression")(caretPosition.asInstanceOf[js.Any], typeParameterInformation.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.ActualSignatureInfo]
+  inline def getActualSignatureInfoFromPartiallyWritenGenericExpression(caretPosition: Double, typeParameterInformation: IPartiallyWrittenTypeArgumentListInformation): typings.typescriptServices.TypeScript.Services.ActualSignatureInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getActualSignatureInfoFromPartiallyWritenGenericExpression")(caretPosition.asInstanceOf[js.Any], typeParameterInformation.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.ActualSignatureInfo]
   
   /* static member */
-  @scala.inline
-  def getSignatureInfoFromGenericSymbol(
+  inline def getSignatureInfoFromGenericSymbol(
     symbol: PullSymbol,
     enclosingScopeSymbol: PullSymbol,
     compilerState: typings.typescriptServices.TypeScript.Services.LanguageServiceCompiler
   ): js.Array[typings.typescriptServices.TypeScript.Services.FormalSignatureItemInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignatureInfoFromGenericSymbol")(symbol.asInstanceOf[js.Any], enclosingScopeSymbol.asInstanceOf[js.Any], compilerState.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.typescriptServices.TypeScript.Services.FormalSignatureItemInfo]]
   
   /* static member */
-  @scala.inline
-  def getSignatureInfoFromSignatureSymbol(
+  inline def getSignatureInfoFromSignatureSymbol(
     symbol: PullSymbol,
     signatures: js.Array[PullSignatureSymbol],
     enclosingScopeSymbol: PullSymbol,
@@ -52,18 +48,14 @@ object SignatureInfoHelpers {
   ): js.Array[typings.typescriptServices.TypeScript.Services.FormalSignatureItemInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignatureInfoFromSignatureSymbol")(symbol.asInstanceOf[js.Any], signatures.asInstanceOf[js.Any], enclosingScopeSymbol.asInstanceOf[js.Any], compilerState.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.typescriptServices.TypeScript.Services.FormalSignatureItemInfo]]
   
   /* static member */
-  @scala.inline
-  def isInPartiallyWrittenTypeArgumentList(syntaxTree: SyntaxTree, position: Double): IPartiallyWrittenTypeArgumentListInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("isInPartiallyWrittenTypeArgumentList")(syntaxTree.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[IPartiallyWrittenTypeArgumentListInformation]
+  inline def isInPartiallyWrittenTypeArgumentList(syntaxTree: SyntaxTree, position: Double): IPartiallyWrittenTypeArgumentListInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("isInPartiallyWrittenTypeArgumentList")(syntaxTree.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[IPartiallyWrittenTypeArgumentListInformation]
   
   /* static member */
-  @scala.inline
-  def isSignatureHelpBlocker(sourceUnit: SourceUnitSyntax, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSignatureHelpBlocker")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isSignatureHelpBlocker(sourceUnit: SourceUnitSyntax, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSignatureHelpBlocker")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def isTargetOfObjectCreationExpression(positionedToken: PositionedToken): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTargetOfObjectCreationExpression")(positionedToken.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTargetOfObjectCreationExpression(positionedToken: PositionedToken): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTargetOfObjectCreationExpression")(positionedToken.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def moveBackUpTillMatchingTokenKind(token: js.Any, tokenKind: js.Any, matchingTokenKind: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("moveBackUpTillMatchingTokenKind")(token.asInstanceOf[js.Any], tokenKind.asInstanceOf[js.Any], matchingTokenKind.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def moveBackUpTillMatchingTokenKind(token: js.Any, tokenKind: js.Any, matchingTokenKind: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("moveBackUpTillMatchingTokenKind")(token.asInstanceOf[js.Any], tokenKind.asInstanceOf[js.Any], matchingTokenKind.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

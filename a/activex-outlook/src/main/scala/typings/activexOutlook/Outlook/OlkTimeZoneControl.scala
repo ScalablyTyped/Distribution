@@ -21,7 +21,7 @@ trait OlkTimeZoneControl extends StObject {
   
   var MousePointer: OlMousePointer
   
-  @JSName("Outlook.OlkTimeZoneControl_typekey")
+  /* private */ @JSName("Outlook.OlkTimeZoneControl_typekey")
   var OutlookDotOlkTimeZoneControl_typekey: OlkTimeZoneControl
   
   var SelectedTimeZoneIndex: Double
@@ -30,8 +30,7 @@ trait OlkTimeZoneControl extends StObject {
 }
 object OlkTimeZoneControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AppointmentTimeField: OlAppointmentTimeField,
     BorderStyle: OlBorderStyle,
     DropDown: () => Unit,
@@ -48,37 +47,26 @@ object OlkTimeZoneControl {
     __obj.asInstanceOf[OlkTimeZoneControl]
   }
   
-  @scala.inline
-  implicit class OlkTimeZoneControlMutableBuilder[Self <: OlkTimeZoneControl] (val x: Self) extends AnyVal {
+  extension [Self <: OlkTimeZoneControl](x: Self) {
     
-    @scala.inline
-    def setAppointmentTimeField(value: OlAppointmentTimeField): Self = StObject.set(x, "AppointmentTimeField", value.asInstanceOf[js.Any])
+    inline def setAppointmentTimeField(value: OlAppointmentTimeField): Self = StObject.set(x, "AppointmentTimeField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderStyle(value: OlBorderStyle): Self = StObject.set(x, "BorderStyle", value.asInstanceOf[js.Any])
+    inline def setBorderStyle(value: OlBorderStyle): Self = StObject.set(x, "BorderStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropDown(value: () => Unit): Self = StObject.set(x, "DropDown", js.Any.fromFunction0(value))
+    inline def setDropDown(value: () => Unit): Self = StObject.set(x, "DropDown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
+    inline def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
+    inline def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotOlkTimeZoneControl_typekey(value: OlkTimeZoneControl): Self = StObject.set(x, "Outlook.OlkTimeZoneControl_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotOlkTimeZoneControl_typekey(value: OlkTimeZoneControl): Self = StObject.set(x, "Outlook.OlkTimeZoneControl_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedTimeZoneIndex(value: Double): Self = StObject.set(x, "SelectedTimeZoneIndex", value.asInstanceOf[js.Any])
+    inline def setSelectedTimeZoneIndex(value: Double): Self = StObject.set(x, "SelectedTimeZoneIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

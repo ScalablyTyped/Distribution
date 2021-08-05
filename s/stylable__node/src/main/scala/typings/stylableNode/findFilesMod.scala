@@ -12,10 +12,8 @@ object findFilesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findFiles(fs: FileSystem, rootDirectory: String, ext: String, blacklist: Set[String]): Errors = (^.asInstanceOf[js.Dynamic].applyDynamic("findFiles")(fs.asInstanceOf[js.Any], rootDirectory.asInstanceOf[js.Any], ext.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[Errors]
-  @scala.inline
-  def findFiles(fs: FileSystem, rootDirectory: String, ext: String, blacklist: Set[String], useRelative: Boolean): Errors = (^.asInstanceOf[js.Dynamic].applyDynamic("findFiles")(fs.asInstanceOf[js.Any], rootDirectory.asInstanceOf[js.Any], ext.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], useRelative.asInstanceOf[js.Any])).asInstanceOf[Errors]
+  inline def findFiles(fs: FileSystem, rootDirectory: String, ext: String, blacklist: Set[String]): Errors = (^.asInstanceOf[js.Dynamic].applyDynamic("findFiles")(fs.asInstanceOf[js.Any], rootDirectory.asInstanceOf[js.Any], ext.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[Errors]
+  inline def findFiles(fs: FileSystem, rootDirectory: String, ext: String, blacklist: Set[String], useRelative: Boolean): Errors = (^.asInstanceOf[js.Dynamic].applyDynamic("findFiles")(fs.asInstanceOf[js.Any], rootDirectory.asInstanceOf[js.Any], ext.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], useRelative.asInstanceOf[js.Any])).asInstanceOf[Errors]
   
   type FileSystem = js.Any
 }

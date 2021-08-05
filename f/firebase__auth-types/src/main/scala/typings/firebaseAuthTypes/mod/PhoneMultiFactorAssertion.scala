@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/auth-types", "PhoneMultiFactorAssertion")
 @js.native
-class PhoneMultiFactorAssertion protected () extends MultiFactorAssertion
+/* private */ class PhoneMultiFactorAssertion () extends MultiFactorAssertion

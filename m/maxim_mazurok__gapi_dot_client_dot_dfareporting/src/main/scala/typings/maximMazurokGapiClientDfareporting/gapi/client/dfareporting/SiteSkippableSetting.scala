@@ -20,37 +20,27 @@ trait SiteSkippableSetting extends StObject {
 }
 object SiteSkippableSetting {
   
-  @scala.inline
-  def apply(): SiteSkippableSetting = {
+  inline def apply(): SiteSkippableSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SiteSkippableSetting]
   }
   
-  @scala.inline
-  implicit class SiteSkippableSettingMutableBuilder[Self <: SiteSkippableSetting] (val x: Self) extends AnyVal {
+  extension [Self <: SiteSkippableSetting](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setProgressOffset(value: VideoOffset): Self = StObject.set(x, "progressOffset", value.asInstanceOf[js.Any])
+    inline def setProgressOffset(value: VideoOffset): Self = StObject.set(x, "progressOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressOffsetUndefined: Self = StObject.set(x, "progressOffset", js.undefined)
+    inline def setProgressOffsetUndefined: Self = StObject.set(x, "progressOffset", js.undefined)
     
-    @scala.inline
-    def setSkipOffset(value: VideoOffset): Self = StObject.set(x, "skipOffset", value.asInstanceOf[js.Any])
+    inline def setSkipOffset(value: VideoOffset): Self = StObject.set(x, "skipOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipOffsetUndefined: Self = StObject.set(x, "skipOffset", js.undefined)
+    inline def setSkipOffsetUndefined: Self = StObject.set(x, "skipOffset", js.undefined)
     
-    @scala.inline
-    def setSkippable(value: Boolean): Self = StObject.set(x, "skippable", value.asInstanceOf[js.Any])
+    inline def setSkippable(value: Boolean): Self = StObject.set(x, "skippable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkippableUndefined: Self = StObject.set(x, "skippable", js.undefined)
+    inline def setSkippableUndefined: Self = StObject.set(x, "skippable", js.undefined)
   }
 }

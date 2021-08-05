@@ -15,9 +15,9 @@ object xmlHttpRequestUploadMod {
   @js.native
   class XMLHttpRequestUpload () extends XMLHttpRequestEventTarget {
     
-    var _body: js.Any = js.native
+    /* private */ var _body: js.Any = js.native
     
-    var _contentType: js.Any = js.native
+    /* private */ var _contentType: js.Any = js.native
     
     def _finalizeHeaders(headers: js.Object, loweredHeaders: js.Object): Unit = js.native
     

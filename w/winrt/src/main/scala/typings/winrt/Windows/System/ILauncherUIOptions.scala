@@ -17,22 +17,17 @@ trait ILauncherUIOptions extends StObject {
 }
 object ILauncherUIOptions {
   
-  @scala.inline
-  def apply(invocationPoint: Point, preferredPlacement: Placement, selectionRect: Rect): ILauncherUIOptions = {
+  inline def apply(invocationPoint: Point, preferredPlacement: Placement, selectionRect: Rect): ILauncherUIOptions = {
     val __obj = js.Dynamic.literal(invocationPoint = invocationPoint.asInstanceOf[js.Any], preferredPlacement = preferredPlacement.asInstanceOf[js.Any], selectionRect = selectionRect.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILauncherUIOptions]
   }
   
-  @scala.inline
-  implicit class ILauncherUIOptionsMutableBuilder[Self <: ILauncherUIOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ILauncherUIOptions](x: Self) {
     
-    @scala.inline
-    def setInvocationPoint(value: Point): Self = StObject.set(x, "invocationPoint", value.asInstanceOf[js.Any])
+    inline def setInvocationPoint(value: Point): Self = StObject.set(x, "invocationPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredPlacement(value: Placement): Self = StObject.set(x, "preferredPlacement", value.asInstanceOf[js.Any])
+    inline def setPreferredPlacement(value: Placement): Self = StObject.set(x, "preferredPlacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionRect(value: Rect): Self = StObject.set(x, "selectionRect", value.asInstanceOf[js.Any])
+    inline def setSelectionRect(value: Rect): Self = StObject.set(x, "selectionRect", value.asInstanceOf[js.Any])
   }
 }

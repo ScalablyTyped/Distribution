@@ -25,16 +25,13 @@ object preferMethodSignatureRuleMod {
     @JSImport("tslint/lib/rules/preferMethodSignatureRule", "Rule.FAILURE_STRING")
     @js.native
     def FAILURE_STRING: String = js.native
-    @scala.inline
-    def FAILURE_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING")(x.asInstanceOf[js.Any])
+    inline def FAILURE_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def METH_SIGN_STRING(ps: PropertySignature): String = ^.asInstanceOf[js.Dynamic].applyDynamic("METH_SIGN_STRING")(ps.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def METH_SIGN_STRING(ps: PropertySignature): String = ^.asInstanceOf[js.Dynamic].applyDynamic("METH_SIGN_STRING")(ps.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/preferMethodSignatureRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

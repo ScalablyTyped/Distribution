@@ -23,14 +23,12 @@ object itemMod {
     @JSImport("antd-mobile/lib/popover/Item", "default.defaultProps")
     @js.native
     def defaultProps: Disabled = js.native
-    @scala.inline
-    def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/lib/popover/Item", "default.myName")
     @js.native
     def myName: String = js.native
-    @scala.inline
-    def myName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("myName")(x.asInstanceOf[js.Any])
+    inline def myName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("myName")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -55,56 +53,40 @@ object itemMod {
   }
   object PopoverItemProps {
     
-    @scala.inline
-    def apply(): PopoverItemProps = {
+    inline def apply(): PopoverItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PopoverItemProps]
     }
     
-    @scala.inline
-    implicit class PopoverItemPropsMutableBuilder[Self <: PopoverItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: PopoverItemProps](x: Self) {
       
-      @scala.inline
-      def setActiveStyle(value: CSSProperties): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
+      inline def setActiveStyle(value: CSSProperties): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
+      inline def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setFirstItem(value: String): Self = StObject.set(x, "firstItem", value.asInstanceOf[js.Any])
+      inline def setFirstItem(value: String): Self = StObject.set(x, "firstItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstItemUndefined: Self = StObject.set(x, "firstItem", js.undefined)
+      inline def setFirstItemUndefined: Self = StObject.set(x, "firstItem", js.undefined)
       
-      @scala.inline
-      def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

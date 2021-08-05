@@ -10,21 +10,17 @@ trait LocalForageDriverMethodsOptional extends StObject {
 }
 object LocalForageDriverMethodsOptional {
   
-  @scala.inline
-  def apply(): LocalForageDriverMethodsOptional = {
+  inline def apply(): LocalForageDriverMethodsOptional = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalForageDriverMethodsOptional]
   }
   
-  @scala.inline
-  implicit class LocalForageDriverMethodsOptionalMutableBuilder[Self <: LocalForageDriverMethodsOptional] (val x: Self) extends AnyVal {
+  extension [Self <: LocalForageDriverMethodsOptional](x: Self) {
     
-    @scala.inline
-    def setDropInstance(
+    inline def setDropInstance(
       value: (/* dbInstanceOptions */ js.UndefOr[LocalForageDbInstanceOptions], /* callback */ js.UndefOr[js.Function1[/* err */ js.Any, Unit]]) => js.Promise[Unit]
     ): Self = StObject.set(x, "dropInstance", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDropInstanceUndefined: Self = StObject.set(x, "dropInstance", js.undefined)
+    inline def setDropInstanceUndefined: Self = StObject.set(x, "dropInstance", js.undefined)
   }
 }

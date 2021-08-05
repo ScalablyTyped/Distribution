@@ -66,21 +66,16 @@ object selectionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Selection]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Selection]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SelectionState): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Selection]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SelectionState, opts: CustomResourceOptions): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Selection]
+    inline def get(name: String, id: Input[ID]): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Selection]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Selection]
+    inline def get(name: String, id: Input[ID], state: SelectionState): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Selection]
+    inline def get(name: String, id: Input[ID], state: SelectionState, opts: CustomResourceOptions): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Selection]
     
     /**
       * Returns true if the given object is an instance of Selection.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/selection.Selection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/backup/selection.Selection */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/selection.Selection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/backup/selection.Selection */ Boolean]
   }
   
   trait SelectionArgs extends StObject {
@@ -112,44 +107,32 @@ object selectionMod {
   }
   object SelectionArgs {
     
-    @scala.inline
-    def apply(iamRoleArn: Input[String], planId: Input[String]): SelectionArgs = {
+    inline def apply(iamRoleArn: Input[String], planId: Input[String]): SelectionArgs = {
       val __obj = js.Dynamic.literal(iamRoleArn = iamRoleArn.asInstanceOf[js.Any], planId = planId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectionArgs]
     }
     
-    @scala.inline
-    implicit class SelectionArgsMutableBuilder[Self <: SelectionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionArgs](x: Self) {
       
-      @scala.inline
-      def setIamRoleArn(value: Input[String]): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
+      inline def setIamRoleArn(value: Input[String]): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPlanId(value: Input[String]): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
+      inline def setPlanId(value: Input[String]): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+      inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
-      @scala.inline
-      def setResourcesVarargs(value: Input[String]*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: Input[String]*): Self = StObject.set(x, "resources", js.Array(value :_*))
       
-      @scala.inline
-      def setSelectionTags(value: Input[js.Array[Input[typings.pulumiAws.inputMod.backup.SelectionSelectionTag]]]): Self = StObject.set(x, "selectionTags", value.asInstanceOf[js.Any])
+      inline def setSelectionTags(value: Input[js.Array[Input[typings.pulumiAws.inputMod.backup.SelectionSelectionTag]]]): Self = StObject.set(x, "selectionTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionTagsUndefined: Self = StObject.set(x, "selectionTags", js.undefined)
+      inline def setSelectionTagsUndefined: Self = StObject.set(x, "selectionTags", js.undefined)
       
-      @scala.inline
-      def setSelectionTagsVarargs(value: Input[typings.pulumiAws.inputMod.backup.SelectionSelectionTag]*): Self = StObject.set(x, "selectionTags", js.Array(value :_*))
+      inline def setSelectionTagsVarargs(value: Input[typings.pulumiAws.inputMod.backup.SelectionSelectionTag]*): Self = StObject.set(x, "selectionTags", js.Array(value :_*))
     }
   }
   
@@ -182,50 +165,36 @@ object selectionMod {
   }
   object SelectionState {
     
-    @scala.inline
-    def apply(): SelectionState = {
+    inline def apply(): SelectionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectionState]
     }
     
-    @scala.inline
-    implicit class SelectionStateMutableBuilder[Self <: SelectionState] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionState](x: Self) {
       
-      @scala.inline
-      def setIamRoleArn(value: Input[String]): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
+      inline def setIamRoleArn(value: Input[String]): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamRoleArnUndefined: Self = StObject.set(x, "iamRoleArn", js.undefined)
+      inline def setIamRoleArnUndefined: Self = StObject.set(x, "iamRoleArn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPlanId(value: Input[String]): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
+      inline def setPlanId(value: Input[String]): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlanIdUndefined: Self = StObject.set(x, "planId", js.undefined)
+      inline def setPlanIdUndefined: Self = StObject.set(x, "planId", js.undefined)
       
-      @scala.inline
-      def setResources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+      inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
-      @scala.inline
-      def setResourcesVarargs(value: Input[String]*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: Input[String]*): Self = StObject.set(x, "resources", js.Array(value :_*))
       
-      @scala.inline
-      def setSelectionTags(value: Input[js.Array[Input[typings.pulumiAws.inputMod.backup.SelectionSelectionTag]]]): Self = StObject.set(x, "selectionTags", value.asInstanceOf[js.Any])
+      inline def setSelectionTags(value: Input[js.Array[Input[typings.pulumiAws.inputMod.backup.SelectionSelectionTag]]]): Self = StObject.set(x, "selectionTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionTagsUndefined: Self = StObject.set(x, "selectionTags", js.undefined)
+      inline def setSelectionTagsUndefined: Self = StObject.set(x, "selectionTags", js.undefined)
       
-      @scala.inline
-      def setSelectionTagsVarargs(value: Input[typings.pulumiAws.inputMod.backup.SelectionSelectionTag]*): Self = StObject.set(x, "selectionTags", js.Array(value :_*))
+      inline def setSelectionTagsVarargs(value: Input[typings.pulumiAws.inputMod.backup.SelectionSelectionTag]*): Self = StObject.set(x, "selectionTags", js.Array(value :_*))
     }
   }
 }

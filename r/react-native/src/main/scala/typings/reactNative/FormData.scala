@@ -10,16 +10,13 @@ trait FormData extends StObject {
 }
 object FormData {
   
-  @scala.inline
-  def apply(append: (String, js.Any) => Unit): FormData = {
+  inline def apply(append: (String, js.Any) => Unit): FormData = {
     val __obj = js.Dynamic.literal(append = js.Any.fromFunction2(append))
     __obj.asInstanceOf[FormData]
   }
   
-  @scala.inline
-  implicit class FormDataMutableBuilder[Self <: FormData] (val x: Self) extends AnyVal {
+  extension [Self <: FormData](x: Self) {
     
-    @scala.inline
-    def setAppend(value: (String, js.Any) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
+    inline def setAppend(value: (String, js.Any) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
   }
 }

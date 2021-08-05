@@ -27,28 +27,21 @@ trait SchemaSpeechRecognitionResult extends StObject {
 }
 object SchemaSpeechRecognitionResult {
   
-  @scala.inline
-  def apply(): SchemaSpeechRecognitionResult = {
+  inline def apply(): SchemaSpeechRecognitionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSpeechRecognitionResult]
   }
   
-  @scala.inline
-  implicit class SchemaSpeechRecognitionResultMutableBuilder[Self <: SchemaSpeechRecognitionResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSpeechRecognitionResult](x: Self) {
     
-    @scala.inline
-    def setAlternatives(value: js.Array[SchemaSpeechRecognitionAlternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
+    inline def setAlternatives(value: js.Array[SchemaSpeechRecognitionAlternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
+    inline def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
     
-    @scala.inline
-    def setAlternativesVarargs(value: SchemaSpeechRecognitionAlternative*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
+    inline def setAlternativesVarargs(value: SchemaSpeechRecognitionAlternative*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
     
-    @scala.inline
-    def setChannelTag(value: Double): Self = StObject.set(x, "channelTag", value.asInstanceOf[js.Any])
+    inline def setChannelTag(value: Double): Self = StObject.set(x, "channelTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelTagUndefined: Self = StObject.set(x, "channelTag", js.undefined)
+    inline def setChannelTagUndefined: Self = StObject.set(x, "channelTag", js.undefined)
   }
 }

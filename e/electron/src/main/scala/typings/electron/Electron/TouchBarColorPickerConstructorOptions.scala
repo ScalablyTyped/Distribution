@@ -23,34 +23,25 @@ trait TouchBarColorPickerConstructorOptions extends StObject {
 }
 object TouchBarColorPickerConstructorOptions {
   
-  @scala.inline
-  def apply(): TouchBarColorPickerConstructorOptions = {
+  inline def apply(): TouchBarColorPickerConstructorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TouchBarColorPickerConstructorOptions]
   }
   
-  @scala.inline
-  implicit class TouchBarColorPickerConstructorOptionsMutableBuilder[Self <: TouchBarColorPickerConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TouchBarColorPickerConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setAvailableColors(value: js.Array[String]): Self = StObject.set(x, "availableColors", value.asInstanceOf[js.Any])
+    inline def setAvailableColors(value: js.Array[String]): Self = StObject.set(x, "availableColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableColorsUndefined: Self = StObject.set(x, "availableColors", js.undefined)
+    inline def setAvailableColorsUndefined: Self = StObject.set(x, "availableColors", js.undefined)
     
-    @scala.inline
-    def setAvailableColorsVarargs(value: String*): Self = StObject.set(x, "availableColors", js.Array(value :_*))
+    inline def setAvailableColorsVarargs(value: String*): Self = StObject.set(x, "availableColors", js.Array(value :_*))
     
-    @scala.inline
-    def setChange(value: /* color */ String => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    inline def setChange(value: /* color */ String => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
+    inline def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedColorUndefined: Self = StObject.set(x, "selectedColor", js.undefined)
+    inline def setSelectedColorUndefined: Self = StObject.set(x, "selectedColor", js.undefined)
   }
 }

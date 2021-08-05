@@ -25,49 +25,35 @@ trait PartialDelta extends StObject {
 }
 object PartialDelta {
   
-  @scala.inline
-  def apply(): PartialDelta = {
+  inline def apply(): PartialDelta = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialDelta]
   }
   
-  @scala.inline
-  implicit class PartialDeltaMutableBuilder[Self <: PartialDelta] (val x: Self) extends AnyVal {
+  extension [Self <: PartialDelta](x: Self) {
     
-    @scala.inline
-    def setDecreasing(value: Symbol): Self = StObject.set(x, "decreasing", value.asInstanceOf[js.Any])
+    inline def setDecreasing(value: Symbol): Self = StObject.set(x, "decreasing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecreasingUndefined: Self = StObject.set(x, "decreasing", js.undefined)
+    inline def setDecreasingUndefined: Self = StObject.set(x, "decreasing", js.undefined)
     
-    @scala.inline
-    def setIncreasing(value: Symbol): Self = StObject.set(x, "increasing", value.asInstanceOf[js.Any])
+    inline def setIncreasing(value: Symbol): Self = StObject.set(x, "increasing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncreasingUndefined: Self = StObject.set(x, "increasing", js.undefined)
+    inline def setIncreasingUndefined: Self = StObject.set(x, "increasing", js.undefined)
     
-    @scala.inline
-    def setPosition(value: top | bottom | left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: top | bottom | left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setReference(value: Double): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: Double): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
+    inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
     
-    @scala.inline
-    def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+    inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
+    inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
     
-    @scala.inline
-    def setValueformat(value: String): Self = StObject.set(x, "valueformat", value.asInstanceOf[js.Any])
+    inline def setValueformat(value: String): Self = StObject.set(x, "valueformat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueformatUndefined: Self = StObject.set(x, "valueformat", js.undefined)
+    inline def setValueformatUndefined: Self = StObject.set(x, "valueformat", js.undefined)
   }
 }

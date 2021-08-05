@@ -11,22 +11,17 @@ trait DeleteDimensionGroupResponse extends StObject {
 }
 object DeleteDimensionGroupResponse {
   
-  @scala.inline
-  def apply(): DeleteDimensionGroupResponse = {
+  inline def apply(): DeleteDimensionGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteDimensionGroupResponse]
   }
   
-  @scala.inline
-  implicit class DeleteDimensionGroupResponseMutableBuilder[Self <: DeleteDimensionGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDimensionGroupResponse](x: Self) {
     
-    @scala.inline
-    def setDimensionGroups(value: js.Array[DimensionGroup]): Self = StObject.set(x, "dimensionGroups", value.asInstanceOf[js.Any])
+    inline def setDimensionGroups(value: js.Array[DimensionGroup]): Self = StObject.set(x, "dimensionGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionGroupsUndefined: Self = StObject.set(x, "dimensionGroups", js.undefined)
+    inline def setDimensionGroupsUndefined: Self = StObject.set(x, "dimensionGroups", js.undefined)
     
-    @scala.inline
-    def setDimensionGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "dimensionGroups", js.Array(value :_*))
+    inline def setDimensionGroupsVarargs(value: DimensionGroup*): Self = StObject.set(x, "dimensionGroups", js.Array(value :_*))
   }
 }

@@ -26,25 +26,20 @@ object checkStylesMod {
     @JSImport("office-ui-fabric-react/lib/components/Check/Check.styles", "CheckGlobalClassNames.checkHost")
     @js.native
     def checkHost: String = js.native
-    @scala.inline
-    def checkHost_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkHost")(x.asInstanceOf[js.Any])
+    inline def checkHost_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkHost")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def check_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("check")(x.asInstanceOf[js.Any])
+    inline def check_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("check")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/Check/Check.styles", "CheckGlobalClassNames.circle")
     @js.native
     def circle: String = js.native
-    @scala.inline
-    def circle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("circle")(x.asInstanceOf[js.Any])
+    inline def circle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("circle")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/components/Check/Check.styles", "CheckGlobalClassNames.root")
     @js.native
     def root: String = js.native
-    @scala.inline
-    def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
+    inline def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def getStyles(props: ICheckStyleProps): ICheckStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ICheckStyles]
+  inline def getStyles(props: ICheckStyleProps): ICheckStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ICheckStyles]
 }

@@ -23,25 +23,19 @@ trait BodyParser extends StObject {
 }
 object BodyParser {
   
-  @scala.inline
-  def apply(): BodyParser = {
+  inline def apply(): BodyParser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BodyParser]
   }
   
-  @scala.inline
-  implicit class BodyParserMutableBuilder[Self <: BodyParser] (val x: Self) extends AnyVal {
+  extension [Self <: BodyParser](x: Self) {
     
-    @scala.inline
-    def setBodyParser(value: SizeLimit | `false`): Self = StObject.set(x, "bodyParser", value.asInstanceOf[js.Any])
+    inline def setBodyParser(value: SizeLimit | `false`): Self = StObject.set(x, "bodyParser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyParserUndefined: Self = StObject.set(x, "bodyParser", js.undefined)
+    inline def setBodyParserUndefined: Self = StObject.set(x, "bodyParser", js.undefined)
     
-    @scala.inline
-    def setExternalResolver(value: `true`): Self = StObject.set(x, "externalResolver", value.asInstanceOf[js.Any])
+    inline def setExternalResolver(value: `true`): Self = StObject.set(x, "externalResolver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalResolverUndefined: Self = StObject.set(x, "externalResolver", js.undefined)
+    inline def setExternalResolverUndefined: Self = StObject.set(x, "externalResolver", js.undefined)
   }
 }

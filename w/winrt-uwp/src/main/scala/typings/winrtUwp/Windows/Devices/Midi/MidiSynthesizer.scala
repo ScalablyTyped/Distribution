@@ -35,8 +35,7 @@ trait MidiSynthesizer extends StObject {
 }
 object MidiSynthesizer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     audioDevice: DeviceInformation,
     close: () => Unit,
     deviceId: String,
@@ -48,25 +47,18 @@ object MidiSynthesizer {
     __obj.asInstanceOf[MidiSynthesizer]
   }
   
-  @scala.inline
-  implicit class MidiSynthesizerMutableBuilder[Self <: MidiSynthesizer] (val x: Self) extends AnyVal {
+  extension [Self <: MidiSynthesizer](x: Self) {
     
-    @scala.inline
-    def setAudioDevice(value: DeviceInformation): Self = StObject.set(x, "audioDevice", value.asInstanceOf[js.Any])
+    inline def setAudioDevice(value: DeviceInformation): Self = StObject.set(x, "audioDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendBuffer(value: IBuffer => Unit): Self = StObject.set(x, "sendBuffer", js.Any.fromFunction1(value))
+    inline def setSendBuffer(value: IBuffer => Unit): Self = StObject.set(x, "sendBuffer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendMessage(value: IMidiMessage => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
+    inline def setSendMessage(value: IMidiMessage => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

@@ -13,17 +13,14 @@ trait ResetInfo
 }
 object ResetInfo {
   
-  @scala.inline
-  def apply(): ResetInfo = {
+  inline def apply(): ResetInfo = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("reset")
     __obj.asInstanceOf[ResetInfo]
   }
   
-  @scala.inline
-  implicit class ResetInfoMutableBuilder[Self <: ResetInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ResetInfo](x: Self) {
     
-    @scala.inline
-    def setType(value: reset): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: reset): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

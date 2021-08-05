@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InitialNavigation extends StObject
 object InitialNavigation {
   
-  @scala.inline
-  def disabled: typings.angularRouter.angularRouterStrings.disabled = "disabled".asInstanceOf[typings.angularRouter.angularRouterStrings.disabled]
+  inline def disabled: typings.angularRouter.angularRouterStrings.disabled = "disabled".asInstanceOf[typings.angularRouter.angularRouterStrings.disabled]
   
-  @scala.inline
-  def enabled: typings.angularRouter.angularRouterStrings.enabled = "enabled".asInstanceOf[typings.angularRouter.angularRouterStrings.enabled]
+  inline def enabled: typings.angularRouter.angularRouterStrings.enabled = "enabled".asInstanceOf[typings.angularRouter.angularRouterStrings.enabled]
   
-  @scala.inline
-  def enabledBlocking: typings.angularRouter.angularRouterStrings.enabledBlocking = "enabledBlocking".asInstanceOf[typings.angularRouter.angularRouterStrings.enabledBlocking]
+  inline def enabledBlocking: typings.angularRouter.angularRouterStrings.enabledBlocking = "enabledBlocking".asInstanceOf[typings.angularRouter.angularRouterStrings.enabledBlocking]
   
-  @scala.inline
-  def enabledNonBlocking: typings.angularRouter.angularRouterStrings.enabledNonBlocking = "enabledNonBlocking".asInstanceOf[typings.angularRouter.angularRouterStrings.enabledNonBlocking]
+  inline def enabledNonBlocking: typings.angularRouter.angularRouterStrings.enabledNonBlocking = "enabledNonBlocking".asInstanceOf[typings.angularRouter.angularRouterStrings.enabledNonBlocking]
 }

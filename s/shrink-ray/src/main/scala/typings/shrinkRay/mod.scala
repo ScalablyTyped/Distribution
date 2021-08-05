@@ -58,54 +58,40 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBrotli(value: Lgblock): Self = StObject.set(x, "brotli", value.asInstanceOf[js.Any])
+      inline def setBrotli(value: Lgblock): Self = StObject.set(x, "brotli", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrotliUndefined: Self = StObject.set(x, "brotli", js.undefined)
+      inline def setBrotliUndefined: Self = StObject.set(x, "brotli", js.undefined)
       
-      @scala.inline
-      def setCache(
+      inline def setCache(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean
       ): Self = StObject.set(x, "cache", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
+      inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
+      inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean
       ): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
       
-      @scala.inline
-      def setZlib(value: Partialflushnumberundefin): Self = StObject.set(x, "zlib", value.asInstanceOf[js.Any])
+      inline def setZlib(value: Partialflushnumberundefin): Self = StObject.set(x, "zlib", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZlibUndefined: Self = StObject.set(x, "zlib", js.undefined)
+      inline def setZlibUndefined: Self = StObject.set(x, "zlib", js.undefined)
     }
   }
   

@@ -16,28 +16,21 @@ trait AbstractAuthData extends StObject {
 }
 object AbstractAuthData {
   
-  @scala.inline
-  def apply(authType: String, deploymentId: String, login: String): AbstractAuthData = {
+  inline def apply(authType: String, deploymentId: String, login: String): AbstractAuthData = {
     val __obj = js.Dynamic.literal(authType = authType.asInstanceOf[js.Any], deploymentId = deploymentId.asInstanceOf[js.Any], login = login.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractAuthData]
   }
   
-  @scala.inline
-  implicit class AbstractAuthDataMutableBuilder[Self <: AbstractAuthData] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractAuthData](x: Self) {
     
-    @scala.inline
-    def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
+    inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+    inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
   }
 }

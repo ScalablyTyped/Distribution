@@ -14,25 +14,19 @@ trait IWatchOptions
 }
 object IWatchOptions {
   
-  @scala.inline
-  def apply(): IWatchOptions = {
+  inline def apply(): IWatchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IWatchOptions]
   }
   
-  @scala.inline
-  implicit class IWatchOptionsMutableBuilder[Self <: IWatchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IWatchOptions](x: Self) {
     
-    @scala.inline
-    def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+    inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+    inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

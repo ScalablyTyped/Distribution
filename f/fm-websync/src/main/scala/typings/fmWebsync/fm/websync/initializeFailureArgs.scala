@@ -15,16 +15,13 @@ trait initializeFailureArgs
 }
 object initializeFailureArgs {
   
-  @scala.inline
-  def apply(error: String): initializeFailureArgs = {
+  inline def apply(error: String): initializeFailureArgs = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[initializeFailureArgs]
   }
   
-  @scala.inline
-  implicit class initializeFailureArgsMutableBuilder[Self <: initializeFailureArgs] (val x: Self) extends AnyVal {
+  extension [Self <: initializeFailureArgs](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

@@ -27,26 +27,20 @@ object NavigationApi {
   }
   object AlertDialogOptions {
     
-    @scala.inline
-    def apply(): AlertDialogOptions = {
+    inline def apply(): AlertDialogOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlertDialogOptions]
     }
     
-    @scala.inline
-    implicit class AlertDialogOptionsMutableBuilder[Self <: AlertDialogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AlertDialogOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -67,23 +61,18 @@ object NavigationApi {
   }
   object AlertDialogStrings {
     
-    @scala.inline
-    def apply(text: String): AlertDialogStrings = {
+    inline def apply(text: String): AlertDialogStrings = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[AlertDialogStrings]
     }
     
-    @scala.inline
-    implicit class AlertDialogStringsMutableBuilder[Self <: AlertDialogStrings] (val x: Self) extends AnyVal {
+    extension [Self <: AlertDialogStrings](x: Self) {
       
-      @scala.inline
-      def setConfirmButtonLabel(value: String): Self = StObject.set(x, "confirmButtonLabel", value.asInstanceOf[js.Any])
+      inline def setConfirmButtonLabel(value: String): Self = StObject.set(x, "confirmButtonLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmButtonLabelUndefined: Self = StObject.set(x, "confirmButtonLabel", js.undefined)
+      inline def setConfirmButtonLabelUndefined: Self = StObject.set(x, "confirmButtonLabel", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,26 +93,20 @@ object NavigationApi {
   }
   object ConfirmDialogOptions {
     
-    @scala.inline
-    def apply(): ConfirmDialogOptions = {
+    inline def apply(): ConfirmDialogOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfirmDialogOptions]
     }
     
-    @scala.inline
-    implicit class ConfirmDialogOptionsMutableBuilder[Self <: ConfirmDialogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfirmDialogOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -139,17 +122,14 @@ object NavigationApi {
   }
   object ConfirmDialogResponse {
     
-    @scala.inline
-    def apply(confirmed: Boolean): ConfirmDialogResponse = {
+    inline def apply(confirmed: Boolean): ConfirmDialogResponse = {
       val __obj = js.Dynamic.literal(confirmed = confirmed.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfirmDialogResponse]
     }
     
-    @scala.inline
-    implicit class ConfirmDialogResponseMutableBuilder[Self <: ConfirmDialogResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ConfirmDialogResponse](x: Self) {
       
-      @scala.inline
-      def setConfirmed(value: Boolean): Self = StObject.set(x, "confirmed", value.asInstanceOf[js.Any])
+      inline def setConfirmed(value: Boolean): Self = StObject.set(x, "confirmed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -185,41 +165,30 @@ object NavigationApi {
   }
   object ConfirmDialogStrings {
     
-    @scala.inline
-    def apply(text: String): ConfirmDialogStrings = {
+    inline def apply(text: String): ConfirmDialogStrings = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfirmDialogStrings]
     }
     
-    @scala.inline
-    implicit class ConfirmDialogStringsMutableBuilder[Self <: ConfirmDialogStrings] (val x: Self) extends AnyVal {
+    extension [Self <: ConfirmDialogStrings](x: Self) {
       
-      @scala.inline
-      def setCancelButtonLabel(value: String): Self = StObject.set(x, "cancelButtonLabel", value.asInstanceOf[js.Any])
+      inline def setCancelButtonLabel(value: String): Self = StObject.set(x, "cancelButtonLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelButtonLabelUndefined: Self = StObject.set(x, "cancelButtonLabel", js.undefined)
+      inline def setCancelButtonLabelUndefined: Self = StObject.set(x, "cancelButtonLabel", js.undefined)
       
-      @scala.inline
-      def setConfirmButtonLabel(value: String): Self = StObject.set(x, "confirmButtonLabel", value.asInstanceOf[js.Any])
+      inline def setConfirmButtonLabel(value: String): Self = StObject.set(x, "confirmButtonLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmButtonLabelUndefined: Self = StObject.set(x, "confirmButtonLabel", js.undefined)
+      inline def setConfirmButtonLabelUndefined: Self = StObject.set(x, "confirmButtonLabel", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -277,65 +246,46 @@ object NavigationApi {
   }
   object EntityFormOptions {
     
-    @scala.inline
-    def apply(entityName: String): EntityFormOptions = {
+    inline def apply(entityName: String): EntityFormOptions = {
       val __obj = js.Dynamic.literal(entityName = entityName.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntityFormOptions]
     }
     
-    @scala.inline
-    implicit class EntityFormOptionsMutableBuilder[Self <: EntityFormOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EntityFormOptions](x: Self) {
       
-      @scala.inline
-      def setCreateFromEntity(value: EntityReference): Self = StObject.set(x, "createFromEntity", value.asInstanceOf[js.Any])
+      inline def setCreateFromEntity(value: EntityReference): Self = StObject.set(x, "createFromEntity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateFromEntityUndefined: Self = StObject.set(x, "createFromEntity", js.undefined)
+      inline def setCreateFromEntityUndefined: Self = StObject.set(x, "createFromEntity", js.undefined)
       
-      @scala.inline
-      def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
+      inline def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
+      inline def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
       
-      @scala.inline
-      def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
+      inline def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormId(value: String): Self = StObject.set(x, "formId", value.asInstanceOf[js.Any])
+      inline def setFormId(value: String): Self = StObject.set(x, "formId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormIdUndefined: Self = StObject.set(x, "formId", js.undefined)
+      inline def setFormIdUndefined: Self = StObject.set(x, "formId", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setOpenInNewWindow(value: Boolean): Self = StObject.set(x, "openInNewWindow", value.asInstanceOf[js.Any])
+      inline def setOpenInNewWindow(value: Boolean): Self = StObject.set(x, "openInNewWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenInNewWindowUndefined: Self = StObject.set(x, "openInNewWindow", js.undefined)
+      inline def setOpenInNewWindowUndefined: Self = StObject.set(x, "openInNewWindow", js.undefined)
       
-      @scala.inline
-      def setUseQuickCreateForm(value: Boolean): Self = StObject.set(x, "useQuickCreateForm", value.asInstanceOf[js.Any])
+      inline def setUseQuickCreateForm(value: Boolean): Self = StObject.set(x, "useQuickCreateForm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseQuickCreateFormUndefined: Self = StObject.set(x, "useQuickCreateForm", js.undefined)
+      inline def setUseQuickCreateFormUndefined: Self = StObject.set(x, "useQuickCreateForm", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setWindowPosition(value: Double): Self = StObject.set(x, "windowPosition", value.asInstanceOf[js.Any])
+      inline def setWindowPosition(value: Double): Self = StObject.set(x, "windowPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowPositionUndefined: Self = StObject.set(x, "windowPosition", js.undefined)
+      inline def setWindowPositionUndefined: Self = StObject.set(x, "windowPosition", js.undefined)
     }
   }
   
@@ -364,32 +314,24 @@ object NavigationApi {
   }
   object ErrorDialogOptions {
     
-    @scala.inline
-    def apply(): ErrorDialogOptions = {
+    inline def apply(): ErrorDialogOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorDialogOptions]
     }
     
-    @scala.inline
-    implicit class ErrorDialogOptionsMutableBuilder[Self <: ErrorDialogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorDialogOptions](x: Self) {
       
-      @scala.inline
-      def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      @scala.inline
-      def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+      inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
   
@@ -408,17 +350,14 @@ object NavigationApi {
   }
   object OpenFileOptions {
     
-    @scala.inline
-    def apply(openMode: OpenFileMode): OpenFileOptions = {
+    inline def apply(openMode: OpenFileMode): OpenFileOptions = {
       val __obj = js.Dynamic.literal(openMode = openMode.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenFileOptions]
     }
     
-    @scala.inline
-    implicit class OpenFileOptionsMutableBuilder[Self <: OpenFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OpenFileOptions](x: Self) {
       
-      @scala.inline
-      def setOpenMode(value: OpenFileMode): Self = StObject.set(x, "openMode", value.asInstanceOf[js.Any])
+      inline def setOpenMode(value: OpenFileMode): Self = StObject.set(x, "openMode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -431,20 +370,16 @@ object NavigationApi {
   }
   object OpenFormSuccessResponse {
     
-    @scala.inline
-    def apply(savedEntityReference: js.Array[EntityReference]): OpenFormSuccessResponse = {
+    inline def apply(savedEntityReference: js.Array[EntityReference]): OpenFormSuccessResponse = {
       val __obj = js.Dynamic.literal(savedEntityReference = savedEntityReference.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenFormSuccessResponse]
     }
     
-    @scala.inline
-    implicit class OpenFormSuccessResponseMutableBuilder[Self <: OpenFormSuccessResponse] (val x: Self) extends AnyVal {
+    extension [Self <: OpenFormSuccessResponse](x: Self) {
       
-      @scala.inline
-      def setSavedEntityReference(value: js.Array[EntityReference]): Self = StObject.set(x, "savedEntityReference", value.asInstanceOf[js.Any])
+      inline def setSavedEntityReference(value: js.Array[EntityReference]): Self = StObject.set(x, "savedEntityReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSavedEntityReferenceVarargs(value: EntityReference*): Self = StObject.set(x, "savedEntityReference", js.Array(value :_*))
+      inline def setSavedEntityReferenceVarargs(value: EntityReference*): Self = StObject.set(x, "savedEntityReference", js.Array(value :_*))
     }
   }
   
@@ -465,26 +400,20 @@ object NavigationApi {
   }
   object OpenUrlOptions {
     
-    @scala.inline
-    def apply(): OpenUrlOptions = {
+    inline def apply(): OpenUrlOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OpenUrlOptions]
     }
     
-    @scala.inline
-    implicit class OpenUrlOptionsMutableBuilder[Self <: OpenUrlOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OpenUrlOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -510,29 +439,22 @@ object NavigationApi {
   }
   object OpenWebResourceOptions {
     
-    @scala.inline
-    def apply(openInNewWindow: Boolean): OpenWebResourceOptions = {
+    inline def apply(openInNewWindow: Boolean): OpenWebResourceOptions = {
       val __obj = js.Dynamic.literal(openInNewWindow = openInNewWindow.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenWebResourceOptions]
     }
     
-    @scala.inline
-    implicit class OpenWebResourceOptionsMutableBuilder[Self <: OpenWebResourceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OpenWebResourceOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setOpenInNewWindow(value: Boolean): Self = StObject.set(x, "openInNewWindow", value.asInstanceOf[js.Any])
+      inline def setOpenInNewWindow(value: Boolean): Self = StObject.set(x, "openInNewWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -550,11 +472,9 @@ object NavigationApi {
     trait OpenFileMode extends StObject
     object OpenFileMode {
       
-      @scala.inline
-      def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
+      inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
       
-      @scala.inline
-      def `2`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2` = 2.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2`]
+      inline def `2`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2` = 2.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2`]
     }
   }
 }

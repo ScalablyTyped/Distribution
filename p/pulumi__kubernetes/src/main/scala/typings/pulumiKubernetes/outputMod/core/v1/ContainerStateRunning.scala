@@ -16,16 +16,13 @@ trait ContainerStateRunning extends StObject {
 }
 object ContainerStateRunning {
   
-  @scala.inline
-  def apply(startedAt: String): ContainerStateRunning = {
+  inline def apply(startedAt: String): ContainerStateRunning = {
     val __obj = js.Dynamic.literal(startedAt = startedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerStateRunning]
   }
   
-  @scala.inline
-  implicit class ContainerStateRunningMutableBuilder[Self <: ContainerStateRunning] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerStateRunning](x: Self) {
     
-    @scala.inline
-    def setStartedAt(value: String): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: String): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
   }
 }

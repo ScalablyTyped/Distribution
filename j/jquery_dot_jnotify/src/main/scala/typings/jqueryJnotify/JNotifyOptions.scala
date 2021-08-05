@@ -18,43 +18,31 @@ trait JNotifyOptions extends StObject {
 }
 object JNotifyOptions {
   
-  @scala.inline
-  def apply(): JNotifyOptions = {
+  inline def apply(): JNotifyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JNotifyOptions]
   }
   
-  @scala.inline
-  implicit class JNotifyOptionsMutableBuilder[Self <: JNotifyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JNotifyOptions](x: Self) {
     
-    @scala.inline
-    def setDisappearTime(value: Double): Self = StObject.set(x, "disappearTime", value.asInstanceOf[js.Any])
+    inline def setDisappearTime(value: Double): Self = StObject.set(x, "disappearTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisappearTimeUndefined: Self = StObject.set(x, "disappearTime", js.undefined)
+    inline def setDisappearTimeUndefined: Self = StObject.set(x, "disappearTime", js.undefined)
     
-    @scala.inline
-    def setPermanent(value: Boolean): Self = StObject.set(x, "permanent", value.asInstanceOf[js.Any])
+    inline def setPermanent(value: Boolean): Self = StObject.set(x, "permanent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermanentUndefined: Self = StObject.set(x, "permanent", js.undefined)
+    inline def setPermanentUndefined: Self = StObject.set(x, "permanent", js.undefined)
     
-    @scala.inline
-    def setShowIcon(value: Boolean): Self = StObject.set(x, "showIcon", value.asInstanceOf[js.Any])
+    inline def setShowIcon(value: Boolean): Self = StObject.set(x, "showIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowIconUndefined: Self = StObject.set(x, "showIcon", js.undefined)
+    inline def setShowIconUndefined: Self = StObject.set(x, "showIcon", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

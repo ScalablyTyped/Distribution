@@ -23,7 +23,7 @@ object rrulesetMod {
   trait RRuleSet
     extends typings.rrule.rruleMod.default {
     
-    var _dtstart: js.Any = js.native
+    /* private */ var _dtstart: js.Any = js.native
     
     val _exdate: js.Array[Date] = js.native
     
@@ -33,7 +33,7 @@ object rrulesetMod {
     
     val _rrule: js.Array[typings.rrule.rruleMod.default] = js.native
     
-    var _tzid: js.Any = js.native
+    /* private */ var _tzid: js.Any = js.native
     
     var dtstart: js.Any = js.native
     

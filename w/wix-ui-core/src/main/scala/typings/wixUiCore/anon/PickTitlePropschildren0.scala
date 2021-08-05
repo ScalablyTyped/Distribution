@@ -12,19 +12,15 @@ trait PickTitlePropschildren0 extends StObject {
 }
 object PickTitlePropschildren0 {
   
-  @scala.inline
-  def apply(): PickTitlePropschildren0 = {
+  inline def apply(): PickTitlePropschildren0 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickTitlePropschildren0]
   }
   
-  @scala.inline
-  implicit class PickTitlePropschildren0MutableBuilder[Self <: PickTitlePropschildren0] (val x: Self) extends AnyVal {
+  extension [Self <: PickTitlePropschildren0](x: Self) {
     
-    @scala.inline
-    def setChildren(value: /* childrenFn */ `6` => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: /* childrenFn */ `6` => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

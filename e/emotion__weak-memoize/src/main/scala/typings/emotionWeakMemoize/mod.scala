@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[Arg /* <: js.Object */, Return](func: UnaryFn[Arg, Return]): UnaryFn[Arg, Return] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any]).asInstanceOf[UnaryFn[Arg, Return]]
+  inline def default[Arg /* <: js.Object */, Return](func: UnaryFn[Arg, Return]): UnaryFn[Arg, Return] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any]).asInstanceOf[UnaryFn[Arg, Return]]
   
   type UnaryFn[Arg, Return] = js.Function1[/* arg */ Arg, Return]
 }

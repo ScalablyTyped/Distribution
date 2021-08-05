@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsV2OrdersOrderLocationType extends StObject
 object GoogleActionsV2OrdersOrderLocationType {
   
-  @scala.inline
-  def BUSINESS: typings.actionsOnGoogle.actionsOnGoogleStrings.BUSINESS = "BUSINESS".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.BUSINESS]
+  inline def BUSINESS: typings.actionsOnGoogle.actionsOnGoogleStrings.BUSINESS = "BUSINESS".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.BUSINESS]
   
-  @scala.inline
-  def DELIVERY: typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY = "DELIVERY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY]
+  inline def DELIVERY: typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY = "DELIVERY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY]
   
-  @scala.inline
-  def DESTINATION: typings.actionsOnGoogle.actionsOnGoogleStrings.DESTINATION = "DESTINATION".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DESTINATION]
+  inline def DESTINATION: typings.actionsOnGoogle.actionsOnGoogleStrings.DESTINATION = "DESTINATION".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DESTINATION]
   
-  @scala.inline
-  def ORIGIN: typings.actionsOnGoogle.actionsOnGoogleStrings.ORIGIN = "ORIGIN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ORIGIN]
+  inline def ORIGIN: typings.actionsOnGoogle.actionsOnGoogleStrings.ORIGIN = "ORIGIN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ORIGIN]
   
-  @scala.inline
-  def PICK_UP: typings.actionsOnGoogle.actionsOnGoogleStrings.PICK_UP = "PICK_UP".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PICK_UP]
+  inline def PICK_UP: typings.actionsOnGoogle.actionsOnGoogleStrings.PICK_UP = "PICK_UP".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PICK_UP]
   
-  @scala.inline
-  def UNKNOWN: typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN]
+  inline def UNKNOWN: typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN]
 }

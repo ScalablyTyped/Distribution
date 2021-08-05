@@ -11,8 +11,7 @@ object libPreprocessMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): PreprocessReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PreprocessReturn]
+  inline def default(): PreprocessReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PreprocessReturn]
   
   type PreprocessReturn = js.Function3[
     /* value */ String, 

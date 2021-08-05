@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "geoflatbush"
-version := "1.0-dt-20200518Z-63f1c2"
+version := "1.0-dt-20200518Z-eafd40"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "flatbush" % "3.3-dt-20201116Z-6c4a9d",
-  "org.scalablytyped" %%% "std" % "4.1-044efb")
+  "org.scalablytyped" %%% "flatbush" % "3.3-dt-20201116Z-5781ab",
+  "org.scalablytyped" %%% "std" % "4.1-2f6855")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

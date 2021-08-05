@@ -30,43 +30,31 @@ trait IonRefresherContent extends StObject {
 }
 object IonRefresherContent {
   
-  @scala.inline
-  def apply(): IonRefresherContent = {
+  inline def apply(): IonRefresherContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonRefresherContent]
   }
   
-  @scala.inline
-  implicit class IonRefresherContentMutableBuilder[Self <: IonRefresherContent] (val x: Self) extends AnyVal {
+  extension [Self <: IonRefresherContent](x: Self) {
     
-    @scala.inline
-    def setPullingIcon(value: SpinnerTypes | String): Self = StObject.set(x, "pullingIcon", value.asInstanceOf[js.Any])
+    inline def setPullingIcon(value: SpinnerTypes | String): Self = StObject.set(x, "pullingIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullingIconNull: Self = StObject.set(x, "pullingIcon", null)
+    inline def setPullingIconNull: Self = StObject.set(x, "pullingIcon", null)
     
-    @scala.inline
-    def setPullingIconUndefined: Self = StObject.set(x, "pullingIcon", js.undefined)
+    inline def setPullingIconUndefined: Self = StObject.set(x, "pullingIcon", js.undefined)
     
-    @scala.inline
-    def setPullingText(value: String | IonicSafeString): Self = StObject.set(x, "pullingText", value.asInstanceOf[js.Any])
+    inline def setPullingText(value: String | IonicSafeString): Self = StObject.set(x, "pullingText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullingTextUndefined: Self = StObject.set(x, "pullingText", js.undefined)
+    inline def setPullingTextUndefined: Self = StObject.set(x, "pullingText", js.undefined)
     
-    @scala.inline
-    def setRefreshingSpinner(value: SpinnerTypes): Self = StObject.set(x, "refreshingSpinner", value.asInstanceOf[js.Any])
+    inline def setRefreshingSpinner(value: SpinnerTypes): Self = StObject.set(x, "refreshingSpinner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshingSpinnerNull: Self = StObject.set(x, "refreshingSpinner", null)
+    inline def setRefreshingSpinnerNull: Self = StObject.set(x, "refreshingSpinner", null)
     
-    @scala.inline
-    def setRefreshingSpinnerUndefined: Self = StObject.set(x, "refreshingSpinner", js.undefined)
+    inline def setRefreshingSpinnerUndefined: Self = StObject.set(x, "refreshingSpinner", js.undefined)
     
-    @scala.inline
-    def setRefreshingText(value: String | IonicSafeString): Self = StObject.set(x, "refreshingText", value.asInstanceOf[js.Any])
+    inline def setRefreshingText(value: String | IonicSafeString): Self = StObject.set(x, "refreshingText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshingTextUndefined: Self = StObject.set(x, "refreshingText", js.undefined)
+    inline def setRefreshingTextUndefined: Self = StObject.set(x, "refreshingText", js.undefined)
   }
 }

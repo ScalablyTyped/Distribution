@@ -19,8 +19,7 @@ object socialPreviewUniDriverMod {
   }
   object SocialPreviewUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -32,17 +31,13 @@ object socialPreviewUniDriverMod {
       __obj.asInstanceOf[SocialPreviewUniDriver]
     }
     
-    @scala.inline
-    implicit class SocialPreviewUniDriverMutableBuilder[Self <: SocialPreviewUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SocialPreviewUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetDescription(value: () => js.Promise[String]): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
+      inline def setGetDescription(value: () => js.Promise[String]): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPreviewUrl(value: () => js.Promise[String]): Self = StObject.set(x, "getPreviewUrl", js.Any.fromFunction0(value))
+      inline def setGetPreviewUrl(value: () => js.Promise[String]): Self = StObject.set(x, "getPreviewUrl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     }
   }
 }

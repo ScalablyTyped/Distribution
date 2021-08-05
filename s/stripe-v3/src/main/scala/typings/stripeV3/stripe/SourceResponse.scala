@@ -12,25 +12,19 @@ trait SourceResponse extends StObject {
 }
 object SourceResponse {
   
-  @scala.inline
-  def apply(): SourceResponse = {
+  inline def apply(): SourceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceResponse]
   }
   
-  @scala.inline
-  implicit class SourceResponseMutableBuilder[Self <: SourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SourceResponse](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

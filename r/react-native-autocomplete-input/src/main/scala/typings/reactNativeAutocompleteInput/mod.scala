@@ -108,97 +108,68 @@ object mod {
   }
   object AutocompleteProps {
     
-    @scala.inline
-    def apply[T](data: js.Array[T], renderItem: Index[T] => ReactNode): AutocompleteProps[T] = {
+    inline def apply[T](data: js.Array[T], renderItem: Index[T] => ReactNode): AutocompleteProps[T] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], renderItem = js.Any.fromFunction1(renderItem))
       __obj.asInstanceOf[AutocompleteProps[T]]
     }
     
-    @scala.inline
-    implicit class AutocompletePropsMutableBuilder[Self <: AutocompleteProps[?], T] (val x: Self & AutocompleteProps[T]) extends AnyVal {
+    extension [Self <: AutocompleteProps[?], T](x: Self & AutocompleteProps[T]) {
       
-      @scala.inline
-      def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+      inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
+      inline def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
       
-      @scala.inline
-      def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+      inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setFlatListProps(value: Partial[FlatListProps[T]]): Self = StObject.set(x, "flatListProps", value.asInstanceOf[js.Any])
+      inline def setFlatListProps(value: Partial[FlatListProps[T]]): Self = StObject.set(x, "flatListProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlatListPropsUndefined: Self = StObject.set(x, "flatListProps", js.undefined)
+      inline def setFlatListPropsUndefined: Self = StObject.set(x, "flatListProps", js.undefined)
       
-      @scala.inline
-      def setHideResults(value: Boolean): Self = StObject.set(x, "hideResults", value.asInstanceOf[js.Any])
+      inline def setHideResults(value: Boolean): Self = StObject.set(x, "hideResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideResultsUndefined: Self = StObject.set(x, "hideResults", js.undefined)
+      inline def setHideResultsUndefined: Self = StObject.set(x, "hideResults", js.undefined)
       
-      @scala.inline
-      def setInputContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "inputContainerStyle", value.asInstanceOf[js.Any])
+      inline def setInputContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "inputContainerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputContainerStyleNull: Self = StObject.set(x, "inputContainerStyle", null)
+      inline def setInputContainerStyleNull: Self = StObject.set(x, "inputContainerStyle", null)
       
-      @scala.inline
-      def setInputContainerStyleUndefined: Self = StObject.set(x, "inputContainerStyle", js.undefined)
+      inline def setInputContainerStyleUndefined: Self = StObject.set(x, "inputContainerStyle", js.undefined)
       
-      @scala.inline
-      def setKeyExtractor(value: (/* item */ T, /* i */ Double) => String): Self = StObject.set(x, "keyExtractor", js.Any.fromFunction2(value))
+      inline def setKeyExtractor(value: (/* item */ T, /* i */ Double) => String): Self = StObject.set(x, "keyExtractor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeyExtractorUndefined: Self = StObject.set(x, "keyExtractor", js.undefined)
+      inline def setKeyExtractorUndefined: Self = StObject.set(x, "keyExtractor", js.undefined)
       
-      @scala.inline
-      def setListContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "listContainerStyle", value.asInstanceOf[js.Any])
+      inline def setListContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "listContainerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListContainerStyleNull: Self = StObject.set(x, "listContainerStyle", null)
+      inline def setListContainerStyleNull: Self = StObject.set(x, "listContainerStyle", null)
       
-      @scala.inline
-      def setListContainerStyleUndefined: Self = StObject.set(x, "listContainerStyle", js.undefined)
+      inline def setListContainerStyleUndefined: Self = StObject.set(x, "listContainerStyle", js.undefined)
       
-      @scala.inline
-      def setListStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
+      inline def setListStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListStyleNull: Self = StObject.set(x, "listStyle", null)
+      inline def setListStyleNull: Self = StObject.set(x, "listStyle", null)
       
-      @scala.inline
-      def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
+      inline def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
       
-      @scala.inline
-      def setOnShowResult(value: /* showResults */ Boolean => Unit): Self = StObject.set(x, "onShowResult", js.Any.fromFunction1(value))
+      inline def setOnShowResult(value: /* showResults */ Boolean => Unit): Self = StObject.set(x, "onShowResult", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnShowResultUndefined: Self = StObject.set(x, "onShowResult", js.undefined)
+      inline def setOnShowResultUndefined: Self = StObject.set(x, "onShowResult", js.undefined)
       
-      @scala.inline
-      def setRenderItem(value: Index[T] => ReactNode): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
+      inline def setRenderItem(value: Index[T] => ReactNode): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderSeparator(
+      inline def setRenderSeparator(
         value: (/* sectionID */ String | Double, /* rowID */ String | Double, /* adjacentRowHighlighted */ js.UndefOr[Boolean]) => ReactElement
       ): Self = StObject.set(x, "renderSeparator", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenderSeparatorUndefined: Self = StObject.set(x, "renderSeparator", js.undefined)
+      inline def setRenderSeparatorUndefined: Self = StObject.set(x, "renderSeparator", js.undefined)
       
-      @scala.inline
-      def setRenderTextInput(value: /* props */ TextInputProperties => ReactNode): Self = StObject.set(x, "renderTextInput", js.Any.fromFunction1(value))
+      inline def setRenderTextInput(value: /* props */ TextInputProperties => ReactNode): Self = StObject.set(x, "renderTextInput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderTextInputUndefined: Self = StObject.set(x, "renderTextInput", js.undefined)
+      inline def setRenderTextInputUndefined: Self = StObject.set(x, "renderTextInput", js.undefined)
     }
   }
 }

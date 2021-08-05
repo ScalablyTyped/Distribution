@@ -18,40 +18,29 @@ trait ICreateEntityTypeRequest extends StObject {
 }
 object ICreateEntityTypeRequest {
   
-  @scala.inline
-  def apply(): ICreateEntityTypeRequest = {
+  inline def apply(): ICreateEntityTypeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICreateEntityTypeRequest]
   }
   
-  @scala.inline
-  implicit class ICreateEntityTypeRequestMutableBuilder[Self <: ICreateEntityTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ICreateEntityTypeRequest](x: Self) {
     
-    @scala.inline
-    def setEntityType(value: IEntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+    inline def setEntityType(value: IEntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypeNull: Self = StObject.set(x, "entityType", null)
+    inline def setEntityTypeNull: Self = StObject.set(x, "entityType", null)
     
-    @scala.inline
-    def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
+    inline def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
+    inline def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

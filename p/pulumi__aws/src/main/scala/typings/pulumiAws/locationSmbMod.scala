@@ -89,21 +89,16 @@ object locationSmbMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LocationSmb = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LocationSmb]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LocationSmb = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocationSmb]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LocationSmbState): LocationSmb = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LocationSmb]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LocationSmbState, opts: CustomResourceOptions): LocationSmb = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocationSmb]
+    inline def get(name: String, id: Input[ID]): LocationSmb = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LocationSmb]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LocationSmb = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocationSmb]
+    inline def get(name: String, id: Input[ID], state: LocationSmbState): LocationSmb = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LocationSmb]
+    inline def get(name: String, id: Input[ID], state: LocationSmbState, opts: CustomResourceOptions): LocationSmb = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocationSmb]
     
     /**
       * Returns true if the given object is an instance of LocationSmb.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/locationSmb.LocationSmb */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/locationSmb.LocationSmb */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/locationSmb.LocationSmb */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/locationSmb.LocationSmb */ Boolean]
   }
   
   trait LocationSmbArgs extends StObject {
@@ -150,8 +145,7 @@ object locationSmbMod {
   }
   object LocationSmbArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       agentArns: Input[js.Array[Input[String]]],
       password: Input[String],
       serverHostname: Input[String],
@@ -162,44 +156,31 @@ object locationSmbMod {
       __obj.asInstanceOf[LocationSmbArgs]
     }
     
-    @scala.inline
-    implicit class LocationSmbArgsMutableBuilder[Self <: LocationSmbArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LocationSmbArgs](x: Self) {
       
-      @scala.inline
-      def setAgentArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "agentArns", value.asInstanceOf[js.Any])
+      inline def setAgentArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "agentArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentArnsVarargs(value: Input[String]*): Self = StObject.set(x, "agentArns", js.Array(value :_*))
+      inline def setAgentArnsVarargs(value: Input[String]*): Self = StObject.set(x, "agentArns", js.Array(value :_*))
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setMountOptions(value: Input[typings.pulumiAws.inputMod.datasync.LocationSmbMountOptions]): Self = StObject.set(x, "mountOptions", value.asInstanceOf[js.Any])
+      inline def setMountOptions(value: Input[typings.pulumiAws.inputMod.datasync.LocationSmbMountOptions]): Self = StObject.set(x, "mountOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountOptionsUndefined: Self = StObject.set(x, "mountOptions", js.undefined)
+      inline def setMountOptionsUndefined: Self = StObject.set(x, "mountOptions", js.undefined)
       
-      @scala.inline
-      def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerHostname(value: Input[String]): Self = StObject.set(x, "serverHostname", value.asInstanceOf[js.Any])
+      inline def setServerHostname(value: Input[String]): Self = StObject.set(x, "serverHostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
+      inline def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -254,77 +235,54 @@ object locationSmbMod {
   }
   object LocationSmbState {
     
-    @scala.inline
-    def apply(): LocationSmbState = {
+    inline def apply(): LocationSmbState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocationSmbState]
     }
     
-    @scala.inline
-    implicit class LocationSmbStateMutableBuilder[Self <: LocationSmbState] (val x: Self) extends AnyVal {
+    extension [Self <: LocationSmbState](x: Self) {
       
-      @scala.inline
-      def setAgentArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "agentArns", value.asInstanceOf[js.Any])
+      inline def setAgentArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "agentArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentArnsUndefined: Self = StObject.set(x, "agentArns", js.undefined)
+      inline def setAgentArnsUndefined: Self = StObject.set(x, "agentArns", js.undefined)
       
-      @scala.inline
-      def setAgentArnsVarargs(value: Input[String]*): Self = StObject.set(x, "agentArns", js.Array(value :_*))
+      inline def setAgentArnsVarargs(value: Input[String]*): Self = StObject.set(x, "agentArns", js.Array(value :_*))
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: Input[String]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setMountOptions(value: Input[typings.pulumiAws.inputMod.datasync.LocationSmbMountOptions]): Self = StObject.set(x, "mountOptions", value.asInstanceOf[js.Any])
+      inline def setMountOptions(value: Input[typings.pulumiAws.inputMod.datasync.LocationSmbMountOptions]): Self = StObject.set(x, "mountOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountOptionsUndefined: Self = StObject.set(x, "mountOptions", js.undefined)
+      inline def setMountOptionsUndefined: Self = StObject.set(x, "mountOptions", js.undefined)
       
-      @scala.inline
-      def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: Input[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setServerHostname(value: Input[String]): Self = StObject.set(x, "serverHostname", value.asInstanceOf[js.Any])
+      inline def setServerHostname(value: Input[String]): Self = StObject.set(x, "serverHostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerHostnameUndefined: Self = StObject.set(x, "serverHostname", js.undefined)
+      inline def setServerHostnameUndefined: Self = StObject.set(x, "serverHostname", js.undefined)
       
-      @scala.inline
-      def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
+      inline def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdirectoryUndefined: Self = StObject.set(x, "subdirectory", js.undefined)
+      inline def setSubdirectoryUndefined: Self = StObject.set(x, "subdirectory", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUri(value: Input[String]): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: Input[String]): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
       
-      @scala.inline
-      def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
 }

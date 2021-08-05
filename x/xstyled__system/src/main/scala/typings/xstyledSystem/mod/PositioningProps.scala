@@ -14,8 +14,7 @@ trait PositioningProps
      with LeftProps[StyledSystemLength]
 object PositioningProps {
   
-  @scala.inline
-  def apply(): PositioningProps = {
+  inline def apply(): PositioningProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PositioningProps]
   }

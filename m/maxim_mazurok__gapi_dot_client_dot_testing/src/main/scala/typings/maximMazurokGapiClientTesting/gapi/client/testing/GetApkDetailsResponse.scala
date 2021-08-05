@@ -11,19 +11,15 @@ trait GetApkDetailsResponse extends StObject {
 }
 object GetApkDetailsResponse {
   
-  @scala.inline
-  def apply(): GetApkDetailsResponse = {
+  inline def apply(): GetApkDetailsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetApkDetailsResponse]
   }
   
-  @scala.inline
-  implicit class GetApkDetailsResponseMutableBuilder[Self <: GetApkDetailsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetApkDetailsResponse](x: Self) {
     
-    @scala.inline
-    def setApkDetail(value: ApkDetail): Self = StObject.set(x, "apkDetail", value.asInstanceOf[js.Any])
+    inline def setApkDetail(value: ApkDetail): Self = StObject.set(x, "apkDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApkDetailUndefined: Self = StObject.set(x, "apkDetail", js.undefined)
+    inline def setApkDetailUndefined: Self = StObject.set(x, "apkDetail", js.undefined)
   }
 }

@@ -21,13 +21,11 @@ object AssociationOwner {
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AssociationOwner.Both")
   @js.native
   def Both: AssociationOwner = js.native
-  @scala.inline
-  def Both_=(x: AssociationOwner): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Both")(x.asInstanceOf[js.Any])
+  inline def Both_=(x: AssociationOwner): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Both")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AssociationOwner.Default")
   @js.native
   def Default: AssociationOwner = js.native
-  @scala.inline
-  def Default_=(x: AssociationOwner): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+  inline def Default_=(x: AssociationOwner): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
 }

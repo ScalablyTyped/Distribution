@@ -23,34 +23,25 @@ trait SearchUsersResponse extends StObject {
 }
 object SearchUsersResponse {
   
-  @scala.inline
-  def apply(): SearchUsersResponse = {
+  inline def apply(): SearchUsersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchUsersResponse]
   }
   
-  @scala.inline
-  implicit class SearchUsersResponseMutableBuilder[Self <: SearchUsersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchUsersResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
     
-    @scala.inline
-    def setUsers(value: UserDataList): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: UserDataList): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
+    inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
-    @scala.inline
-    def setUsersVarargs(value: UserData*): Self = StObject.set(x, "Users", js.Array(value :_*))
+    inline def setUsersVarargs(value: UserData*): Self = StObject.set(x, "Users", js.Array(value :_*))
   }
 }

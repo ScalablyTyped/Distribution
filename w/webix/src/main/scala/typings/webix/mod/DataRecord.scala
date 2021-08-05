@@ -57,6 +57,5 @@ trait DataRecord extends StObject {
 }
 object DataRecord {
   
-  @scala.inline
-  def apply: DataRecordFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("DataRecord").asInstanceOf[DataRecordFactory]
+  inline def apply: DataRecordFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("DataRecord").asInstanceOf[DataRecordFactory]
 }

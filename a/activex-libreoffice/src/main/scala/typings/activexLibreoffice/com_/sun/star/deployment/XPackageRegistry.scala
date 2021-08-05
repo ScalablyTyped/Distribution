@@ -56,8 +56,7 @@ trait XPackageRegistry extends StObject {
 }
 object XPackageRegistry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SupportedPackageTypes: SafeArray[XPackageTypeInfo],
     bindPackage: (String, String, Boolean, String, XCommandEnvironment) => XPackage,
     getSupportedPackageTypes: () => SafeArray[XPackageTypeInfo],
@@ -67,19 +66,14 @@ object XPackageRegistry {
     __obj.asInstanceOf[XPackageRegistry]
   }
   
-  @scala.inline
-  implicit class XPackageRegistryMutableBuilder[Self <: XPackageRegistry] (val x: Self) extends AnyVal {
+  extension [Self <: XPackageRegistry](x: Self) {
     
-    @scala.inline
-    def setBindPackage(value: (String, String, Boolean, String, XCommandEnvironment) => XPackage): Self = StObject.set(x, "bindPackage", js.Any.fromFunction5(value))
+    inline def setBindPackage(value: (String, String, Boolean, String, XCommandEnvironment) => XPackage): Self = StObject.set(x, "bindPackage", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setGetSupportedPackageTypes(value: () => SafeArray[XPackageTypeInfo]): Self = StObject.set(x, "getSupportedPackageTypes", js.Any.fromFunction0(value))
+    inline def setGetSupportedPackageTypes(value: () => SafeArray[XPackageTypeInfo]): Self = StObject.set(x, "getSupportedPackageTypes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPackageRemoved(value: (String, String) => Unit): Self = StObject.set(x, "packageRemoved", js.Any.fromFunction2(value))
+    inline def setPackageRemoved(value: (String, String) => Unit): Self = StObject.set(x, "packageRemoved", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSupportedPackageTypes(value: SafeArray[XPackageTypeInfo]): Self = StObject.set(x, "SupportedPackageTypes", value.asInstanceOf[js.Any])
+    inline def setSupportedPackageTypes(value: SafeArray[XPackageTypeInfo]): Self = StObject.set(x, "SupportedPackageTypes", value.asInstanceOf[js.Any])
   }
 }

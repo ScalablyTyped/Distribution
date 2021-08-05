@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SimpleMarkerSymbolStyle extends StObject
 object SimpleMarkerSymbolStyle {
   
-  @scala.inline
-  def esriSMSCircle: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSCircle = "esriSMSCircle".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSCircle]
+  inline def esriSMSCircle: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSCircle = "esriSMSCircle".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSCircle]
   
-  @scala.inline
-  def esriSMSCross: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSCross = "esriSMSCross".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSCross]
+  inline def esriSMSCross: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSCross = "esriSMSCross".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSCross]
   
-  @scala.inline
-  def esriSMSDiamond: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSDiamond = "esriSMSDiamond".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSDiamond]
+  inline def esriSMSDiamond: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSDiamond = "esriSMSDiamond".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSDiamond]
   
-  @scala.inline
-  def esriSMSSquare: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSSquare = "esriSMSSquare".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSSquare]
+  inline def esriSMSSquare: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSSquare = "esriSMSSquare".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSSquare]
   
-  @scala.inline
-  def esriSMSTriangle: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSTriangle = "esriSMSTriangle".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSTriangle]
+  inline def esriSMSTriangle: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSTriangle = "esriSMSTriangle".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSTriangle]
   
-  @scala.inline
-  def esriSMSX: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSX = "esriSMSX".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSX]
+  inline def esriSMSX: typings.arcgisRestApi.arcgisRestApiStrings.esriSMSX = "esriSMSX".asInstanceOf[typings.arcgisRestApi.arcgisRestApiStrings.esriSMSX]
 }

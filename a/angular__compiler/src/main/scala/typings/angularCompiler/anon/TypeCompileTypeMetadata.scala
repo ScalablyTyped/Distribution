@@ -11,17 +11,14 @@ trait TypeCompileTypeMetadata extends StObject {
 }
 object TypeCompileTypeMetadata {
   
-  @scala.inline
-  def apply(`type`: CompileTypeMetadata): TypeCompileTypeMetadata = {
+  inline def apply(`type`: CompileTypeMetadata): TypeCompileTypeMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeCompileTypeMetadata]
   }
   
-  @scala.inline
-  implicit class TypeCompileTypeMetadataMutableBuilder[Self <: TypeCompileTypeMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: TypeCompileTypeMetadata](x: Self) {
     
-    @scala.inline
-    def setType(value: CompileTypeMetadata): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CompileTypeMetadata): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

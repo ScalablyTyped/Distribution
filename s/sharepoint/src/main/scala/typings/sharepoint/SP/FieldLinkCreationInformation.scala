@@ -14,8 +14,7 @@ trait FieldLinkCreationInformation
 }
 object FieldLinkCreationInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -28,13 +27,10 @@ object FieldLinkCreationInformation {
     __obj.asInstanceOf[FieldLinkCreationInformation]
   }
   
-  @scala.inline
-  implicit class FieldLinkCreationInformationMutableBuilder[Self <: FieldLinkCreationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: FieldLinkCreationInformation](x: Self) {
     
-    @scala.inline
-    def setGet_field(value: () => Field): Self = StObject.set(x, "get_field", js.Any.fromFunction0(value))
+    inline def setGet_field(value: () => Field): Self = StObject.set(x, "get_field", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_field(value: Field => Unit): Self = StObject.set(x, "set_field", js.Any.fromFunction1(value))
+    inline def setSet_field(value: Field => Unit): Self = StObject.set(x, "set_field", js.Any.fromFunction1(value))
   }
 }

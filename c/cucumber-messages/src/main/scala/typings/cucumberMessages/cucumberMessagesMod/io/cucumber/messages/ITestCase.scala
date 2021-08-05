@@ -19,43 +19,31 @@ trait ITestCase extends StObject {
 }
 object ITestCase {
   
-  @scala.inline
-  def apply(): ITestCase = {
+  inline def apply(): ITestCase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITestCase]
   }
   
-  @scala.inline
-  implicit class ITestCaseMutableBuilder[Self <: ITestCase] (val x: Self) extends AnyVal {
+  extension [Self <: ITestCase](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPickleId(value: String): Self = StObject.set(x, "pickleId", value.asInstanceOf[js.Any])
+    inline def setPickleId(value: String): Self = StObject.set(x, "pickleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickleIdNull: Self = StObject.set(x, "pickleId", null)
+    inline def setPickleIdNull: Self = StObject.set(x, "pickleId", null)
     
-    @scala.inline
-    def setPickleIdUndefined: Self = StObject.set(x, "pickleId", js.undefined)
+    inline def setPickleIdUndefined: Self = StObject.set(x, "pickleId", js.undefined)
     
-    @scala.inline
-    def setTestSteps(value: js.Array[ITestStep]): Self = StObject.set(x, "testSteps", value.asInstanceOf[js.Any])
+    inline def setTestSteps(value: js.Array[ITestStep]): Self = StObject.set(x, "testSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestStepsNull: Self = StObject.set(x, "testSteps", null)
+    inline def setTestStepsNull: Self = StObject.set(x, "testSteps", null)
     
-    @scala.inline
-    def setTestStepsUndefined: Self = StObject.set(x, "testSteps", js.undefined)
+    inline def setTestStepsUndefined: Self = StObject.set(x, "testSteps", js.undefined)
     
-    @scala.inline
-    def setTestStepsVarargs(value: ITestStep*): Self = StObject.set(x, "testSteps", js.Array(value :_*))
+    inline def setTestStepsVarargs(value: ITestStep*): Self = StObject.set(x, "testSteps", js.Array(value :_*))
   }
 }

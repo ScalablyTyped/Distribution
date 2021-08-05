@@ -15,19 +15,15 @@ trait TypeofMap extends StObject {
 }
 object TypeofMap {
   
-  @scala.inline
-  def apply(extend: js.Object => Map, fn: Map): TypeofMap = {
+  inline def apply(extend: js.Object => Map, fn: Map): TypeofMap = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofMap]
   }
   
-  @scala.inline
-  implicit class TypeofMapMutableBuilder[Self <: TypeofMap] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofMap](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Map): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Map): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Map): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Map): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

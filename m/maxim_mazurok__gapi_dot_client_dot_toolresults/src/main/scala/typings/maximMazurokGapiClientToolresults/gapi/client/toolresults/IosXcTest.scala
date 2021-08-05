@@ -14,25 +14,19 @@ trait IosXcTest extends StObject {
 }
 object IosXcTest {
   
-  @scala.inline
-  def apply(): IosXcTest = {
+  inline def apply(): IosXcTest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosXcTest]
   }
   
-  @scala.inline
-  implicit class IosXcTestMutableBuilder[Self <: IosXcTest] (val x: Self) extends AnyVal {
+  extension [Self <: IosXcTest](x: Self) {
     
-    @scala.inline
-    def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+    inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
-    @scala.inline
-    def setXcodeVersion(value: String): Self = StObject.set(x, "xcodeVersion", value.asInstanceOf[js.Any])
+    inline def setXcodeVersion(value: String): Self = StObject.set(x, "xcodeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXcodeVersionUndefined: Self = StObject.set(x, "xcodeVersion", js.undefined)
+    inline def setXcodeVersionUndefined: Self = StObject.set(x, "xcodeVersion", js.undefined)
   }
 }

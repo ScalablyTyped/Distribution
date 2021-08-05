@@ -43,8 +43,7 @@ trait GeolocationPositioning extends StObject {
 }
 object GeolocationPositioning {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     geolocationOptions: js.Any,
     goToLocationEnabled: Boolean,
     graphic: Graphic,
@@ -55,22 +54,16 @@ object GeolocationPositioning {
     __obj.asInstanceOf[GeolocationPositioning]
   }
   
-  @scala.inline
-  implicit class GeolocationPositioningMutableBuilder[Self <: GeolocationPositioning] (val x: Self) extends AnyVal {
+  extension [Self <: GeolocationPositioning](x: Self) {
     
-    @scala.inline
-    def setGeolocationOptions(value: js.Any): Self = StObject.set(x, "geolocationOptions", value.asInstanceOf[js.Any])
+    inline def setGeolocationOptions(value: js.Any): Self = StObject.set(x, "geolocationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoToLocationEnabled(value: Boolean): Self = StObject.set(x, "goToLocationEnabled", value.asInstanceOf[js.Any])
+    inline def setGoToLocationEnabled(value: Boolean): Self = StObject.set(x, "goToLocationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphic(value: Graphic): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
+    inline def setGraphic(value: Graphic): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: MapView | SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapView | SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

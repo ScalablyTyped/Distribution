@@ -12,8 +12,7 @@ object loadableDotdriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def loadableDriverFactory(hasElement: ComponentFactory): LoadableDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("loadableDriverFactory")(hasElement.asInstanceOf[js.Any]).asInstanceOf[LoadableDriver]
+  inline def loadableDriverFactory(hasElement: ComponentFactory): LoadableDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("loadableDriverFactory")(hasElement.asInstanceOf[js.Any]).asInstanceOf[LoadableDriver]
   
   trait LoadableDriver
     extends StObject
@@ -23,17 +22,14 @@ object loadableDotdriverMod {
   }
   object LoadableDriver {
     
-    @scala.inline
-    def apply(exists: () => Boolean, existsChild: String => Boolean): LoadableDriver = {
+    inline def apply(exists: () => Boolean, existsChild: String => Boolean): LoadableDriver = {
       val __obj = js.Dynamic.literal(exists = js.Any.fromFunction0(exists), existsChild = js.Any.fromFunction1(existsChild))
       __obj.asInstanceOf[LoadableDriver]
     }
     
-    @scala.inline
-    implicit class LoadableDriverMutableBuilder[Self <: LoadableDriver] (val x: Self) extends AnyVal {
+    extension [Self <: LoadableDriver](x: Self) {
       
-      @scala.inline
-      def setExistsChild(value: String => Boolean): Self = StObject.set(x, "existsChild", js.Any.fromFunction1(value))
+      inline def setExistsChild(value: String => Boolean): Self = StObject.set(x, "existsChild", js.Any.fromFunction1(value))
     }
   }
 }

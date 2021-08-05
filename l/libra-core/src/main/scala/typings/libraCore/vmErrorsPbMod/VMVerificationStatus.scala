@@ -77,11 +77,9 @@ object VMVerificationStatus {
     /* 0 */ val SCRIPT: typings.libraCore.vmErrorsPbMod.VMVerificationStatus.StatusKind.SCRIPT & Double = js.native
   }
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): VMVerificationStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[VMVerificationStatus]
+  inline def deserializeBinary(bytes: Uint8Array): VMVerificationStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[VMVerificationStatus]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: VMVerificationStatus, reader: BinaryReader): VMVerificationStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[VMVerificationStatus]
+  inline def deserializeBinaryFromReader(message: VMVerificationStatus, reader: BinaryReader): VMVerificationStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[VMVerificationStatus]
   
   @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMVerificationStatus.extensions")
   @js.native
@@ -90,17 +88,13 @@ object VMVerificationStatus {
   @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMVerificationStatus.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: VMVerificationStatus, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: VMVerificationStatus, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: VMVerificationStatus): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: VMVerificationStatus): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -116,32 +110,24 @@ object VMVerificationStatus {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(errorKind: VMVerificationErrorKind, message: String, moduleIdx: Double, statusKind: StatusKind): AsObject = {
+    inline def apply(errorKind: VMVerificationErrorKind, message: String, moduleIdx: Double, statusKind: StatusKind): AsObject = {
       val __obj = js.Dynamic.literal(errorKind = errorKind.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], moduleIdx = moduleIdx.asInstanceOf[js.Any], statusKind = statusKind.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setDependencyId(value: typings.libraCore.languageStoragePbMod.ModuleId.AsObject): Self = StObject.set(x, "dependencyId", value.asInstanceOf[js.Any])
+      inline def setDependencyId(value: typings.libraCore.languageStoragePbMod.ModuleId.AsObject): Self = StObject.set(x, "dependencyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependencyIdUndefined: Self = StObject.set(x, "dependencyId", js.undefined)
+      inline def setDependencyIdUndefined: Self = StObject.set(x, "dependencyId", js.undefined)
       
-      @scala.inline
-      def setErrorKind(value: VMVerificationErrorKind): Self = StObject.set(x, "errorKind", value.asInstanceOf[js.Any])
+      inline def setErrorKind(value: VMVerificationErrorKind): Self = StObject.set(x, "errorKind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleIdx(value: Double): Self = StObject.set(x, "moduleIdx", value.asInstanceOf[js.Any])
+      inline def setModuleIdx(value: Double): Self = StObject.set(x, "moduleIdx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusKind(value: StatusKind): Self = StObject.set(x, "statusKind", value.asInstanceOf[js.Any])
+      inline def setStatusKind(value: StatusKind): Self = StObject.set(x, "statusKind", value.asInstanceOf[js.Any])
     }
   }
 }

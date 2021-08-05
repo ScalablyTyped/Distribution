@@ -13,13 +13,11 @@ object reshapeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def reshape[R /* <: Rank */](
+  inline def reshape[R /* <: Rank */](
     x: Tensor[Rank],
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def reshape[R /* <: Rank */](
+  inline def reshape[R /* <: Rank */](
     x: TensorLike,
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]

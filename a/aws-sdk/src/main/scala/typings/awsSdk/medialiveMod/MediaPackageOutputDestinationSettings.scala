@@ -13,19 +13,15 @@ trait MediaPackageOutputDestinationSettings extends StObject {
 }
 object MediaPackageOutputDestinationSettings {
   
-  @scala.inline
-  def apply(): MediaPackageOutputDestinationSettings = {
+  inline def apply(): MediaPackageOutputDestinationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaPackageOutputDestinationSettings]
   }
   
-  @scala.inline
-  implicit class MediaPackageOutputDestinationSettingsMutableBuilder[Self <: MediaPackageOutputDestinationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MediaPackageOutputDestinationSettings](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: stringMin1): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: stringMin1): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "ChannelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "ChannelId", js.undefined)
   }
 }

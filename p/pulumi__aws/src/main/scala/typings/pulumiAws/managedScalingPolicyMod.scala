@@ -51,21 +51,16 @@ object managedScalingPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ManagedScalingPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ManagedScalingPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ManagedScalingPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ManagedScalingPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ManagedScalingPolicyState): ManagedScalingPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ManagedScalingPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ManagedScalingPolicyState, opts: CustomResourceOptions): ManagedScalingPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ManagedScalingPolicy]
+    inline def get(name: String, id: Input[ID]): ManagedScalingPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ManagedScalingPolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ManagedScalingPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ManagedScalingPolicy]
+    inline def get(name: String, id: Input[ID], state: ManagedScalingPolicyState): ManagedScalingPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ManagedScalingPolicy]
+    inline def get(name: String, id: Input[ID], state: ManagedScalingPolicyState, opts: CustomResourceOptions): ManagedScalingPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ManagedScalingPolicy]
     
     /**
       * Returns true if the given object is an instance of ManagedScalingPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/emr/managedScalingPolicy.ManagedScalingPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/emr/managedScalingPolicy.ManagedScalingPolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/emr/managedScalingPolicy.ManagedScalingPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/emr/managedScalingPolicy.ManagedScalingPolicy */ Boolean]
   }
   
   trait ManagedScalingPolicyArgs extends StObject {
@@ -82,8 +77,7 @@ object managedScalingPolicyMod {
   }
   object ManagedScalingPolicyArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clusterId: Input[String],
       computeLimits: Input[js.Array[Input[typings.pulumiAws.inputMod.emr.ManagedScalingPolicyComputeLimit]]]
     ): ManagedScalingPolicyArgs = {
@@ -91,17 +85,13 @@ object managedScalingPolicyMod {
       __obj.asInstanceOf[ManagedScalingPolicyArgs]
     }
     
-    @scala.inline
-    implicit class ManagedScalingPolicyArgsMutableBuilder[Self <: ManagedScalingPolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ManagedScalingPolicyArgs](x: Self) {
       
-      @scala.inline
-      def setClusterId(value: Input[String]): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
+      inline def setClusterId(value: Input[String]): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeLimits(value: Input[js.Array[Input[typings.pulumiAws.inputMod.emr.ManagedScalingPolicyComputeLimit]]]): Self = StObject.set(x, "computeLimits", value.asInstanceOf[js.Any])
+      inline def setComputeLimits(value: Input[js.Array[Input[typings.pulumiAws.inputMod.emr.ManagedScalingPolicyComputeLimit]]]): Self = StObject.set(x, "computeLimits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeLimitsVarargs(value: Input[typings.pulumiAws.inputMod.emr.ManagedScalingPolicyComputeLimit]*): Self = StObject.set(x, "computeLimits", js.Array(value :_*))
+      inline def setComputeLimitsVarargs(value: Input[typings.pulumiAws.inputMod.emr.ManagedScalingPolicyComputeLimit]*): Self = StObject.set(x, "computeLimits", js.Array(value :_*))
     }
   }
   
@@ -121,29 +111,22 @@ object managedScalingPolicyMod {
   }
   object ManagedScalingPolicyState {
     
-    @scala.inline
-    def apply(): ManagedScalingPolicyState = {
+    inline def apply(): ManagedScalingPolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ManagedScalingPolicyState]
     }
     
-    @scala.inline
-    implicit class ManagedScalingPolicyStateMutableBuilder[Self <: ManagedScalingPolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: ManagedScalingPolicyState](x: Self) {
       
-      @scala.inline
-      def setClusterId(value: Input[String]): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
+      inline def setClusterId(value: Input[String]): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
+      inline def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
       
-      @scala.inline
-      def setComputeLimits(value: Input[js.Array[Input[typings.pulumiAws.inputMod.emr.ManagedScalingPolicyComputeLimit]]]): Self = StObject.set(x, "computeLimits", value.asInstanceOf[js.Any])
+      inline def setComputeLimits(value: Input[js.Array[Input[typings.pulumiAws.inputMod.emr.ManagedScalingPolicyComputeLimit]]]): Self = StObject.set(x, "computeLimits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeLimitsUndefined: Self = StObject.set(x, "computeLimits", js.undefined)
+      inline def setComputeLimitsUndefined: Self = StObject.set(x, "computeLimits", js.undefined)
       
-      @scala.inline
-      def setComputeLimitsVarargs(value: Input[typings.pulumiAws.inputMod.emr.ManagedScalingPolicyComputeLimit]*): Self = StObject.set(x, "computeLimits", js.Array(value :_*))
+      inline def setComputeLimitsVarargs(value: Input[typings.pulumiAws.inputMod.emr.ManagedScalingPolicyComputeLimit]*): Self = StObject.set(x, "computeLimits", js.Array(value :_*))
     }
   }
 }

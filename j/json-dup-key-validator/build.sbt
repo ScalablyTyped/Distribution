@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json-dup-key-validator"
-version := "1.0-dt-20200621Z-fbae84"
+version := "1.0-dt-20200621Z-5c7649"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

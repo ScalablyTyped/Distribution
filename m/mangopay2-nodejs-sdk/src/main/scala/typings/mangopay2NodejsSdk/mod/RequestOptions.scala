@@ -22,25 +22,19 @@ trait RequestOptions extends StObject {
 }
 object RequestOptions {
   
-  @scala.inline
-  def apply(headers: PartialHeaders, path: ApiVersion, requestConfig: Timeout, responseConfig: Timeout): RequestOptions = {
+  inline def apply(headers: PartialHeaders, path: ApiVersion, requestConfig: Timeout, responseConfig: Timeout): RequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestConfig = requestConfig.asInstanceOf[js.Any], responseConfig = responseConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
   
-  @scala.inline
-  implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: PartialHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: PartialHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: ApiVersion): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: ApiVersion): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestConfig(value: Timeout): Self = StObject.set(x, "requestConfig", value.asInstanceOf[js.Any])
+    inline def setRequestConfig(value: Timeout): Self = StObject.set(x, "requestConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseConfig(value: Timeout): Self = StObject.set(x, "responseConfig", value.asInstanceOf[js.Any])
+    inline def setResponseConfig(value: Timeout): Self = StObject.set(x, "responseConfig", value.asInstanceOf[js.Any])
   }
 }

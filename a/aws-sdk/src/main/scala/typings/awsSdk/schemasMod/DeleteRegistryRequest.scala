@@ -13,16 +13,13 @@ trait DeleteRegistryRequest extends StObject {
 }
 object DeleteRegistryRequest {
   
-  @scala.inline
-  def apply(RegistryName: string): DeleteRegistryRequest = {
+  inline def apply(RegistryName: string): DeleteRegistryRequest = {
     val __obj = js.Dynamic.literal(RegistryName = RegistryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRegistryRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRegistryRequestMutableBuilder[Self <: DeleteRegistryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRegistryRequest](x: Self) {
     
-    @scala.inline
-    def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
+    inline def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
   }
 }

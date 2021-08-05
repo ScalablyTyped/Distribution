@@ -25,8 +25,7 @@ trait EmailQueryOptions extends StObject {
 }
 object EmailQueryOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     folderIds: IVector[String],
     kind: EmailQueryKind,
     sortDirection: EmailQuerySortDirection,
@@ -37,22 +36,16 @@ object EmailQueryOptions {
     __obj.asInstanceOf[EmailQueryOptions]
   }
   
-  @scala.inline
-  implicit class EmailQueryOptionsMutableBuilder[Self <: EmailQueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EmailQueryOptions](x: Self) {
     
-    @scala.inline
-    def setFolderIds(value: IVector[String]): Self = StObject.set(x, "folderIds", value.asInstanceOf[js.Any])
+    inline def setFolderIds(value: IVector[String]): Self = StObject.set(x, "folderIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: EmailQueryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: EmailQueryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortDirection(value: EmailQuerySortDirection): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
+    inline def setSortDirection(value: EmailQuerySortDirection): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortProperty(value: EmailQuerySortProperty): Self = StObject.set(x, "sortProperty", value.asInstanceOf[js.Any])
+    inline def setSortProperty(value: EmailQuerySortProperty): Self = StObject.set(x, "sortProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextSearch(value: EmailQueryTextSearch): Self = StObject.set(x, "textSearch", value.asInstanceOf[js.Any])
+    inline def setTextSearch(value: EmailQueryTextSearch): Self = StObject.set(x, "textSearch", value.asInstanceOf[js.Any])
   }
 }

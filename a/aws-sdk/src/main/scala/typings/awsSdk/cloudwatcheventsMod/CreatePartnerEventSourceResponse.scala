@@ -13,19 +13,15 @@ trait CreatePartnerEventSourceResponse extends StObject {
 }
 object CreatePartnerEventSourceResponse {
   
-  @scala.inline
-  def apply(): CreatePartnerEventSourceResponse = {
+  inline def apply(): CreatePartnerEventSourceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePartnerEventSourceResponse]
   }
   
-  @scala.inline
-  implicit class CreatePartnerEventSourceResponseMutableBuilder[Self <: CreatePartnerEventSourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePartnerEventSourceResponse](x: Self) {
     
-    @scala.inline
-    def setEventSourceArn(value: String): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
+    inline def setEventSourceArn(value: String): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
+    inline def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
   }
 }

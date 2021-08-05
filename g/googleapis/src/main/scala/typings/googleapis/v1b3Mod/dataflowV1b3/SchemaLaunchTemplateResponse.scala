@@ -17,19 +17,15 @@ trait SchemaLaunchTemplateResponse extends StObject {
 }
 object SchemaLaunchTemplateResponse {
   
-  @scala.inline
-  def apply(): SchemaLaunchTemplateResponse = {
+  inline def apply(): SchemaLaunchTemplateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLaunchTemplateResponse]
   }
   
-  @scala.inline
-  implicit class SchemaLaunchTemplateResponseMutableBuilder[Self <: SchemaLaunchTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLaunchTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setJob(value: SchemaJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: SchemaJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
+    inline def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
   }
 }

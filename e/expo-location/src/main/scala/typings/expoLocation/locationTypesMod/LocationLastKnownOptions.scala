@@ -18,25 +18,19 @@ trait LocationLastKnownOptions extends StObject {
 }
 object LocationLastKnownOptions {
   
-  @scala.inline
-  def apply(): LocationLastKnownOptions = {
+  inline def apply(): LocationLastKnownOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationLastKnownOptions]
   }
   
-  @scala.inline
-  implicit class LocationLastKnownOptionsMutableBuilder[Self <: LocationLastKnownOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LocationLastKnownOptions](x: Self) {
     
-    @scala.inline
-    def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+    inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+    inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     
-    @scala.inline
-    def setRequiredAccuracy(value: Double): Self = StObject.set(x, "requiredAccuracy", value.asInstanceOf[js.Any])
+    inline def setRequiredAccuracy(value: Double): Self = StObject.set(x, "requiredAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredAccuracyUndefined: Self = StObject.set(x, "requiredAccuracy", js.undefined)
+    inline def setRequiredAccuracyUndefined: Self = StObject.set(x, "requiredAccuracy", js.undefined)
   }
 }

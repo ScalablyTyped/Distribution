@@ -27,8 +27,7 @@ trait ConversionDictionary
      with XConversionPropertyType
 object ConversionDictionary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConversionType: Double,
     Locale: Locale,
     Name: String,

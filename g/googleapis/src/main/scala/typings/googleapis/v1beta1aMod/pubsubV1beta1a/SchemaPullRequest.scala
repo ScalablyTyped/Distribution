@@ -25,25 +25,19 @@ trait SchemaPullRequest extends StObject {
 }
 object SchemaPullRequest {
   
-  @scala.inline
-  def apply(): SchemaPullRequest = {
+  inline def apply(): SchemaPullRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPullRequest]
   }
   
-  @scala.inline
-  implicit class SchemaPullRequestMutableBuilder[Self <: SchemaPullRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPullRequest](x: Self) {
     
-    @scala.inline
-    def setReturnImmediately(value: Boolean): Self = StObject.set(x, "returnImmediately", value.asInstanceOf[js.Any])
+    inline def setReturnImmediately(value: Boolean): Self = StObject.set(x, "returnImmediately", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnImmediatelyUndefined: Self = StObject.set(x, "returnImmediately", js.undefined)
+    inline def setReturnImmediatelyUndefined: Self = StObject.set(x, "returnImmediately", js.undefined)
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
   }
 }

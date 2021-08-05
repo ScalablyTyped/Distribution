@@ -13,22 +13,17 @@ trait FindPlaceFromTextResponse extends StObject {
 }
 object FindPlaceFromTextResponse {
   
-  @scala.inline
-  def apply(candidates: js.Array[PartialPlaceSearchResult], status: SearchResponseStatus): FindPlaceFromTextResponse = {
+  inline def apply(candidates: js.Array[PartialPlaceSearchResult], status: SearchResponseStatus): FindPlaceFromTextResponse = {
     val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindPlaceFromTextResponse]
   }
   
-  @scala.inline
-  implicit class FindPlaceFromTextResponseMutableBuilder[Self <: FindPlaceFromTextResponse] (val x: Self) extends AnyVal {
+  extension [Self <: FindPlaceFromTextResponse](x: Self) {
     
-    @scala.inline
-    def setCandidates(value: js.Array[PartialPlaceSearchResult]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
+    inline def setCandidates(value: js.Array[PartialPlaceSearchResult]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidatesVarargs(value: PartialPlaceSearchResult*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+    inline def setCandidatesVarargs(value: PartialPlaceSearchResult*): Self = StObject.set(x, "candidates", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: SearchResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SearchResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

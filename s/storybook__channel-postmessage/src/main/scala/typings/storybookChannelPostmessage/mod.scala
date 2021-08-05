@@ -14,8 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasPage: Config): typings.storybookChannels.mod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPage.asInstanceOf[js.Any]).asInstanceOf[typings.storybookChannels.mod.default]
+  inline def default(hasPage: Config): typings.storybookChannels.mod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPage.asInstanceOf[js.Any]).asInstanceOf[typings.storybookChannels.mod.default]
   
   @JSImport("@storybook/channel-postmessage", "KEY")
   @js.native
@@ -26,23 +25,23 @@ object mod {
   class PostmsgTransport protected () extends StObject {
     def this(config: Config) = this()
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
-    val config: js.Any = js.native
+    /* private */ val config: js.Any = js.native
     
-    var connected: js.Any = js.native
+    /* private */ var connected: js.Any = js.native
     
-    var flush: js.Any = js.native
+    /* private */ var flush: js.Any = js.native
     
-    var getCurrentFrames: js.Any = js.native
+    /* private */ var getCurrentFrames: js.Any = js.native
     
-    var getFrames: js.Any = js.native
+    /* private */ var getFrames: js.Any = js.native
     
-    var getLocalFrame: js.Any = js.native
+    /* private */ var getLocalFrame: js.Any = js.native
     
-    var handleEvent: js.Any = js.native
+    /* private */ var handleEvent: js.Any = js.native
     
-    var handler: js.Any = js.native
+    /* private */ var handler: js.Any = js.native
     
     /**
       * Sends `event` to the associated window. If the window does not yet exist
@@ -61,17 +60,14 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(page: manager | preview): Config = {
+    inline def apply(page: manager | preview): Config = {
       val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setPage(value: manager | preview): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: manager | preview): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -33,16 +33,12 @@ object mod {
     val dbusName: String = js.native
   }
   
-  @scala.inline
-  def Signature(`type`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Signature")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def Signature(`type`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Signature")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getBus(`type`: busType): DBusConnection = ^.asInstanceOf[js.Dynamic].applyDynamic("getBus")(`type`.asInstanceOf[js.Any]).asInstanceOf[DBusConnection]
+  inline def getBus(`type`: busType): DBusConnection = ^.asInstanceOf[js.Dynamic].applyDynamic("getBus")(`type`.asInstanceOf[js.Any]).asInstanceOf[DBusConnection]
   
-  @scala.inline
-  def registerService(busName: busType): DBusService = ^.asInstanceOf[js.Dynamic].applyDynamic("registerService")(busName.asInstanceOf[js.Any]).asInstanceOf[DBusService]
-  @scala.inline
-  def registerService(busName: busType, serviceName: String): DBusService = (^.asInstanceOf[js.Dynamic].applyDynamic("registerService")(busName.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any])).asInstanceOf[DBusService]
+  inline def registerService(busName: busType): DBusService = ^.asInstanceOf[js.Dynamic].applyDynamic("registerService")(busName.asInstanceOf[js.Any]).asInstanceOf[DBusService]
+  inline def registerService(busName: busType, serviceName: String): DBusService = (^.asInstanceOf[js.Dynamic].applyDynamic("registerService")(busName.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any])).asInstanceOf[DBusService]
   
   type AnyInterfaceMethod = StringDictionary[js.Function1[/* repeated */ js.Any, Unit]]
   
@@ -69,8 +65,7 @@ object mod {
   }
   object DBusConnection {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disconnect: () => Unit,
       getInterface: (String, String, String, js.Function2[/* err */ Error | Null, /* iface */ DBusInterface[js.Any], Unit]) => Unit,
       getUniqueServiceName: (String, js.Function2[/* err */ Error | Null, /* uniqueName */ String, Unit]) => Unit,
@@ -80,22 +75,17 @@ object mod {
       __obj.asInstanceOf[DBusConnection]
     }
     
-    @scala.inline
-    implicit class DBusConnectionMutableBuilder[Self <: DBusConnection] (val x: Self) extends AnyVal {
+    extension [Self <: DBusConnection](x: Self) {
       
-      @scala.inline
-      def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+      inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInterface(
+      inline def setGetInterface(
         value: (String, String, String, js.Function2[/* err */ Error | Null, /* iface */ DBusInterface[js.Any], Unit]) => Unit
       ): Self = StObject.set(x, "getInterface", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setGetUniqueServiceName(value: (String, js.Function2[/* err */ Error | Null, /* uniqueName */ String, Unit]) => Unit): Self = StObject.set(x, "getUniqueServiceName", js.Any.fromFunction2(value))
+      inline def setGetUniqueServiceName(value: (String, js.Function2[/* err */ Error | Null, /* uniqueName */ String, Unit]) => Unit): Self = StObject.set(x, "getUniqueServiceName", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReconnect(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "reconnect", js.Any.fromFunction1(value))
+      inline def setReconnect(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "reconnect", js.Any.fromFunction1(value))
     }
   }
   
@@ -115,8 +105,7 @@ object mod {
   }
   object DBusService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bus: DBusConnection,
       createObject: String => DBusServiceObject,
       disconnect: () => Unit,
@@ -127,23 +116,17 @@ object mod {
       __obj.asInstanceOf[DBusService]
     }
     
-    @scala.inline
-    implicit class DBusServiceMutableBuilder[Self <: DBusService] (val x: Self) extends AnyVal {
+    extension [Self <: DBusService](x: Self) {
       
-      @scala.inline
-      def setBus(value: DBusConnection): Self = StObject.set(x, "bus", value.asInstanceOf[js.Any])
+      inline def setBus(value: DBusConnection): Self = StObject.set(x, "bus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateObject(value: String => DBusServiceObject): Self = StObject.set(x, "createObject", js.Any.fromFunction1(value))
+      inline def setCreateObject(value: String => DBusServiceObject): Self = StObject.set(x, "createObject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+      inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveObject(value: DBusServiceObject => Unit): Self = StObject.set(x, "removeObject", js.Any.fromFunction1(value))
+      inline def setRemoveObject(value: DBusServiceObject => Unit): Self = StObject.set(x, "removeObject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,8 +157,7 @@ object mod {
   }
   object DBusServiceInterface {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addMethod: (String, In, js.Function3[
           /* name */ String, 
           /* quality */ js.Any, 
@@ -194,11 +176,9 @@ object mod {
       __obj.asInstanceOf[DBusServiceInterface]
     }
     
-    @scala.inline
-    implicit class DBusServiceInterfaceMutableBuilder[Self <: DBusServiceInterface] (val x: Self) extends AnyVal {
+    extension [Self <: DBusServiceInterface](x: Self) {
       
-      @scala.inline
-      def setAddMethod(
+      inline def setAddMethod(
         value: (String, In, js.Function3[
               /* name */ String, 
               /* quality */ js.Any, 
@@ -207,23 +187,17 @@ object mod {
             ]) => Unit
       ): Self = StObject.set(x, "addMethod", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAddProperty(value: (String, Getter) => Unit): Self = StObject.set(x, "addProperty", js.Any.fromFunction2(value))
+      inline def setAddProperty(value: (String, Getter) => Unit): Self = StObject.set(x, "addProperty", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddSignal(value: (String, Types) => Unit): Self = StObject.set(x, "addSignal", js.Any.fromFunction2(value))
+      inline def setAddSignal(value: (String, Types) => Unit): Self = StObject.set(x, "addSignal", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEmitSignal(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emitSignal", js.Any.fromFunction2(value))
+      inline def setEmitSignal(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emitSignal", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: DBusServiceObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: DBusServiceObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -237,23 +211,18 @@ object mod {
   }
   object DBusServiceObject {
     
-    @scala.inline
-    def apply(createInterface: String => DBusServiceInterface, path: String, service: DBusService): DBusServiceObject = {
+    inline def apply(createInterface: String => DBusServiceInterface, path: String, service: DBusService): DBusServiceObject = {
       val __obj = js.Dynamic.literal(createInterface = js.Any.fromFunction1(createInterface), path = path.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
       __obj.asInstanceOf[DBusServiceObject]
     }
     
-    @scala.inline
-    implicit class DBusServiceObjectMutableBuilder[Self <: DBusServiceObject] (val x: Self) extends AnyVal {
+    extension [Self <: DBusServiceObject](x: Self) {
       
-      @scala.inline
-      def setCreateInterface(value: String => DBusServiceInterface): Self = StObject.set(x, "createInterface", js.Any.fromFunction1(value))
+      inline def setCreateInterface(value: String => DBusServiceInterface): Self = StObject.set(x, "createInterface", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setService(value: DBusService): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: DBusService): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     }
   }
   
@@ -270,10 +239,8 @@ object mod {
   trait busType extends StObject
   object busType {
     
-    @scala.inline
-    def session: typings.dbus.dbusStrings.session = "session".asInstanceOf[typings.dbus.dbusStrings.session]
+    inline def session: typings.dbus.dbusStrings.session = "session".asInstanceOf[typings.dbus.dbusStrings.session]
     
-    @scala.inline
-    def system: typings.dbus.dbusStrings.system = "system".asInstanceOf[typings.dbus.dbusStrings.system]
+    inline def system: typings.dbus.dbusStrings.system = "system".asInstanceOf[typings.dbus.dbusStrings.system]
   }
 }

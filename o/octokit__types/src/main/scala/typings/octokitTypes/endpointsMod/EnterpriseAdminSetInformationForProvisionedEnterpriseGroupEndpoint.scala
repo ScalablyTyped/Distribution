@@ -32,37 +32,27 @@ trait EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint extends
 }
 object EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint {
   
-  @scala.inline
-  def apply(displayName: String, enterprise: String, schemas: js.Array[String], scim_group_id: String): EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint = {
+  inline def apply(displayName: String, enterprise: String, schemas: js.Array[String], scim_group_id: String): EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], enterprise = enterprise.asInstanceOf[js.Any], schemas = schemas.asInstanceOf[js.Any], scim_group_id = scim_group_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpointMutableBuilder[Self <: EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers(value: js.Array[EnterpriseAdminSetInformationForProvisionedEnterpriseGroupParamsMembers]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[EnterpriseAdminSetInformationForProvisionedEnterpriseGroupParamsMembers]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+    inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    @scala.inline
-    def setMembersVarargs(value: EnterpriseAdminSetInformationForProvisionedEnterpriseGroupParamsMembers*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: EnterpriseAdminSetInformationForProvisionedEnterpriseGroupParamsMembers*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+    inline def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
     
-    @scala.inline
-    def setScim_group_id(value: String): Self = StObject.set(x, "scim_group_id", value.asInstanceOf[js.Any])
+    inline def setScim_group_id(value: String): Self = StObject.set(x, "scim_group_id", value.asInstanceOf[js.Any])
   }
 }

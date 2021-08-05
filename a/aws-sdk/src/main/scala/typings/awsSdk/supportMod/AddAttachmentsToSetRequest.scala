@@ -18,25 +18,19 @@ trait AddAttachmentsToSetRequest extends StObject {
 }
 object AddAttachmentsToSetRequest {
   
-  @scala.inline
-  def apply(attachments: Attachments): AddAttachmentsToSetRequest = {
+  inline def apply(attachments: Attachments): AddAttachmentsToSetRequest = {
     val __obj = js.Dynamic.literal(attachments = attachments.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddAttachmentsToSetRequest]
   }
   
-  @scala.inline
-  implicit class AddAttachmentsToSetRequestMutableBuilder[Self <: AddAttachmentsToSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddAttachmentsToSetRequest](x: Self) {
     
-    @scala.inline
-    def setAttachmentSetId(value: AttachmentSetId): Self = StObject.set(x, "attachmentSetId", value.asInstanceOf[js.Any])
+    inline def setAttachmentSetId(value: AttachmentSetId): Self = StObject.set(x, "attachmentSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentSetIdUndefined: Self = StObject.set(x, "attachmentSetId", js.undefined)
+    inline def setAttachmentSetIdUndefined: Self = StObject.set(x, "attachmentSetId", js.undefined)
     
-    @scala.inline
-    def setAttachments(value: Attachments): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: Attachments): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
   }
 }

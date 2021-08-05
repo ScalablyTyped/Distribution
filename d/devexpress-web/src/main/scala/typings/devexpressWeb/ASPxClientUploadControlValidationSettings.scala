@@ -31,8 +31,7 @@ trait ASPxClientUploadControlValidationSettings extends StObject {
 }
 object ASPxClientUploadControlValidationSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowedFileExtensions: js.Array[String],
     invalidFileNameCharacters: js.Array[String],
     maxFileCount: Double,
@@ -42,25 +41,18 @@ object ASPxClientUploadControlValidationSettings {
     __obj.asInstanceOf[ASPxClientUploadControlValidationSettings]
   }
   
-  @scala.inline
-  implicit class ASPxClientUploadControlValidationSettingsMutableBuilder[Self <: ASPxClientUploadControlValidationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientUploadControlValidationSettings](x: Self) {
     
-    @scala.inline
-    def setAllowedFileExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedFileExtensions", value.asInstanceOf[js.Any])
+    inline def setAllowedFileExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedFileExtensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedFileExtensions", js.Array(value :_*))
+    inline def setAllowedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedFileExtensions", js.Array(value :_*))
     
-    @scala.inline
-    def setInvalidFileNameCharacters(value: js.Array[String]): Self = StObject.set(x, "invalidFileNameCharacters", value.asInstanceOf[js.Any])
+    inline def setInvalidFileNameCharacters(value: js.Array[String]): Self = StObject.set(x, "invalidFileNameCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidFileNameCharactersVarargs(value: String*): Self = StObject.set(x, "invalidFileNameCharacters", js.Array(value :_*))
+    inline def setInvalidFileNameCharactersVarargs(value: String*): Self = StObject.set(x, "invalidFileNameCharacters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxFileCount(value: Double): Self = StObject.set(x, "maxFileCount", value.asInstanceOf[js.Any])
+    inline def setMaxFileCount(value: Double): Self = StObject.set(x, "maxFileCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
+    inline def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
   }
 }

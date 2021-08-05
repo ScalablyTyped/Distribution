@@ -114,10 +114,8 @@ object SimpleArrowFunctionExpressionSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(identifier: ISyntaxToken, equalsGreaterThanToken: ISyntaxToken): typings.typescriptServices.TypeScript.SimpleArrowFunctionExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(identifier.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.SimpleArrowFunctionExpressionSyntax]
+  inline def create(identifier: ISyntaxToken, equalsGreaterThanToken: ISyntaxToken): typings.typescriptServices.TypeScript.SimpleArrowFunctionExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(identifier.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.SimpleArrowFunctionExpressionSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.SimpleArrowFunctionExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.SimpleArrowFunctionExpressionSyntax]
+  inline def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.SimpleArrowFunctionExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.SimpleArrowFunctionExpressionSyntax]
 }

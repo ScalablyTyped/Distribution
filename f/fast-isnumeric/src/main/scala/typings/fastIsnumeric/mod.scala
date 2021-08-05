@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(n: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(n: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("fast-isnumeric", JSImport.Namespace)
   @js.native

@@ -11,19 +11,15 @@ trait AuthorizedSellerStatusTargetingOptionDetails extends StObject {
 }
 object AuthorizedSellerStatusTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): AuthorizedSellerStatusTargetingOptionDetails = {
+  inline def apply(): AuthorizedSellerStatusTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthorizedSellerStatusTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class AuthorizedSellerStatusTargetingOptionDetailsMutableBuilder[Self <: AuthorizedSellerStatusTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizedSellerStatusTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setAuthorizedSellerStatus(value: String): Self = StObject.set(x, "authorizedSellerStatus", value.asInstanceOf[js.Any])
+    inline def setAuthorizedSellerStatus(value: String): Self = StObject.set(x, "authorizedSellerStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizedSellerStatusUndefined: Self = StObject.set(x, "authorizedSellerStatus", js.undefined)
+    inline def setAuthorizedSellerStatusUndefined: Self = StObject.set(x, "authorizedSellerStatus", js.undefined)
   }
 }

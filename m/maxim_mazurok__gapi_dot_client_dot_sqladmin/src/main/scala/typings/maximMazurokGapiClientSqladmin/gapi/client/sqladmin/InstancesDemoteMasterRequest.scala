@@ -11,19 +11,15 @@ trait InstancesDemoteMasterRequest extends StObject {
 }
 object InstancesDemoteMasterRequest {
   
-  @scala.inline
-  def apply(): InstancesDemoteMasterRequest = {
+  inline def apply(): InstancesDemoteMasterRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstancesDemoteMasterRequest]
   }
   
-  @scala.inline
-  implicit class InstancesDemoteMasterRequestMutableBuilder[Self <: InstancesDemoteMasterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InstancesDemoteMasterRequest](x: Self) {
     
-    @scala.inline
-    def setDemoteMasterContext(value: DemoteMasterContext): Self = StObject.set(x, "demoteMasterContext", value.asInstanceOf[js.Any])
+    inline def setDemoteMasterContext(value: DemoteMasterContext): Self = StObject.set(x, "demoteMasterContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDemoteMasterContextUndefined: Self = StObject.set(x, "demoteMasterContext", js.undefined)
+    inline def setDemoteMasterContextUndefined: Self = StObject.set(x, "demoteMasterContext", js.undefined)
   }
 }

@@ -17,21 +17,17 @@ object anon {
   }
   object Imagegif {
     
-    @scala.inline
-    def apply(imageSlashgif: js.Array[String]): Imagegif = {
+    inline def apply(imageSlashgif: js.Array[String]): Imagegif = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("image/gif")(imageSlashgif.asInstanceOf[js.Any])
       __obj.asInstanceOf[Imagegif]
     }
     
-    @scala.inline
-    implicit class ImagegifMutableBuilder[Self <: Imagegif] (val x: Self) extends AnyVal {
+    extension [Self <: Imagegif](x: Self) {
       
-      @scala.inline
-      def setImageSlashgif(value: js.Array[String]): Self = StObject.set(x, "image/gif", value.asInstanceOf[js.Any])
+      inline def setImageSlashgif(value: js.Array[String]): Self = StObject.set(x, "image/gif", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSlashgifVarargs(value: String*): Self = StObject.set(x, "image/gif", js.Array(value :_*))
+      inline def setImageSlashgifVarargs(value: String*): Self = StObject.set(x, "image/gif", js.Array(value :_*))
     }
   }
   
@@ -44,18 +40,15 @@ object anon {
   }
   object ImagegifDecoderFn {
     
-    @scala.inline
-    def apply(imageSlashgif: /* data */ Buffer => Bitmap): ImagegifDecoderFn = {
+    inline def apply(imageSlashgif: /* data */ Buffer => Bitmap): ImagegifDecoderFn = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("image/gif")(js.Any.fromFunction1(imageSlashgif))
       __obj.asInstanceOf[ImagegifDecoderFn]
     }
     
-    @scala.inline
-    implicit class ImagegifDecoderFnMutableBuilder[Self <: ImagegifDecoderFn] (val x: Self) extends AnyVal {
+    extension [Self <: ImagegifDecoderFn](x: Self) {
       
-      @scala.inline
-      def setImageSlashgif(value: /* data */ Buffer => Bitmap): Self = StObject.set(x, "image/gif", js.Any.fromFunction1(value))
+      inline def setImageSlashgif(value: /* data */ Buffer => Bitmap): Self = StObject.set(x, "image/gif", js.Any.fromFunction1(value))
     }
   }
   
@@ -65,17 +58,14 @@ object anon {
   }
   object MIMEGIF {
     
-    @scala.inline
-    def apply(): MIMEGIF = {
+    inline def apply(): MIMEGIF = {
       val __obj = js.Dynamic.literal(MIME_GIF = "image/gif")
       __obj.asInstanceOf[MIMEGIF]
     }
     
-    @scala.inline
-    implicit class MIMEGIFMutableBuilder[Self <: MIMEGIF] (val x: Self) extends AnyVal {
+    extension [Self <: MIMEGIF](x: Self) {
       
-      @scala.inline
-      def setMIME_GIF(value: imageSlashgif): Self = StObject.set(x, "MIME_GIF", value.asInstanceOf[js.Any])
+      inline def setMIME_GIF(value: imageSlashgif): Self = StObject.set(x, "MIME_GIF", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -24,25 +24,19 @@ trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1Publisher extends StObject {
 }
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1Publisher {
   
-  @scala.inline
-  def apply(): SchemaGoogleFactcheckingFactchecktoolsV1alpha1Publisher = {
+  inline def apply(): SchemaGoogleFactcheckingFactchecktoolsV1alpha1Publisher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleFactcheckingFactchecktoolsV1alpha1Publisher]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1PublisherMutableBuilder[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1Publisher] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1Publisher](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSite(value: String): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+    inline def setSite(value: String): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
+    inline def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
   }
 }

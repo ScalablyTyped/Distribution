@@ -12,25 +12,19 @@ trait ContainerBackgroundColor extends StObject {
 }
 object ContainerBackgroundColor {
   
-  @scala.inline
-  def apply(): ContainerBackgroundColor = {
+  inline def apply(): ContainerBackgroundColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerBackgroundColor]
   }
   
-  @scala.inline
-  implicit class ContainerBackgroundColorMutableBuilder[Self <: ContainerBackgroundColor] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerBackgroundColor](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setContainerBackgroundColor(value: String): Self = StObject.set(x, "containerBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setContainerBackgroundColor(value: String): Self = StObject.set(x, "containerBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerBackgroundColorUndefined: Self = StObject.set(x, "containerBackgroundColor", js.undefined)
+    inline def setContainerBackgroundColorUndefined: Self = StObject.set(x, "containerBackgroundColor", js.undefined)
   }
 }

@@ -30,23 +30,18 @@ object transactionStartEventMod {
   }
   object TransactionStartEvent {
     
-    @scala.inline
-    def apply(connection: Connection, manager: EntityManager, queryRunner: QueryRunner): TransactionStartEvent = {
+    inline def apply(connection: Connection, manager: EntityManager, queryRunner: QueryRunner): TransactionStartEvent = {
       val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], manager = manager.asInstanceOf[js.Any], queryRunner = queryRunner.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransactionStartEvent]
     }
     
-    @scala.inline
-    implicit class TransactionStartEventMutableBuilder[Self <: TransactionStartEvent] (val x: Self) extends AnyVal {
+    extension [Self <: TransactionStartEvent](x: Self) {
       
-      @scala.inline
-      def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManager(value: EntityManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+      inline def setManager(value: EntityManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryRunner(value: QueryRunner): Self = StObject.set(x, "queryRunner", value.asInstanceOf[js.Any])
+      inline def setQueryRunner(value: QueryRunner): Self = StObject.set(x, "queryRunner", value.asInstanceOf[js.Any])
     }
   }
 }

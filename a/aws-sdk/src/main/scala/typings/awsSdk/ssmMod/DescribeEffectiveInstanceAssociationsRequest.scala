@@ -23,28 +23,21 @@ trait DescribeEffectiveInstanceAssociationsRequest extends StObject {
 }
 object DescribeEffectiveInstanceAssociationsRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId): DescribeEffectiveInstanceAssociationsRequest = {
+  inline def apply(InstanceId: InstanceId): DescribeEffectiveInstanceAssociationsRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEffectiveInstanceAssociationsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEffectiveInstanceAssociationsRequestMutableBuilder[Self <: DescribeEffectiveInstanceAssociationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEffectiveInstanceAssociationsRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: EffectiveInstanceAssociationMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: EffectiveInstanceAssociationMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

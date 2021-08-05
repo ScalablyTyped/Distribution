@@ -15,26 +15,22 @@ object batchWriteItemExceptionsUnionMod {
   trait BatchWriteItemExceptionsUnion extends StObject
   object BatchWriteItemExceptionsUnion {
     
-    @scala.inline
-    def InternalServerError(): typings.awsSdkClientDynamodbBrowser.typesInternalServerErrorMod.InternalServerError = {
+    inline def InternalServerError(): typings.awsSdkClientDynamodbBrowser.typesInternalServerErrorMod.InternalServerError = {
       val __obj = js.Dynamic.literal(name = "InternalServerError")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbBrowser.typesInternalServerErrorMod.InternalServerError]
     }
     
-    @scala.inline
-    def ItemCollectionSizeLimitExceededException(): typings.awsSdkClientDynamodbBrowser.typesItemCollectionSizeLimitExceededExceptionMod.ItemCollectionSizeLimitExceededException = {
+    inline def ItemCollectionSizeLimitExceededException(): typings.awsSdkClientDynamodbBrowser.typesItemCollectionSizeLimitExceededExceptionMod.ItemCollectionSizeLimitExceededException = {
       val __obj = js.Dynamic.literal(name = "ItemCollectionSizeLimitExceededException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbBrowser.typesItemCollectionSizeLimitExceededExceptionMod.ItemCollectionSizeLimitExceededException]
     }
     
-    @scala.inline
-    def ProvisionedThroughputExceededException(): typings.awsSdkClientDynamodbBrowser.typesProvisionedThroughputExceededExceptionMod.ProvisionedThroughputExceededException = {
+    inline def ProvisionedThroughputExceededException(): typings.awsSdkClientDynamodbBrowser.typesProvisionedThroughputExceededExceptionMod.ProvisionedThroughputExceededException = {
       val __obj = js.Dynamic.literal(name = "ProvisionedThroughputExceededException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbBrowser.typesProvisionedThroughputExceededExceptionMod.ProvisionedThroughputExceededException]
     }
     
-    @scala.inline
-    def ResourceNotFoundException(): typings.awsSdkClientDynamodbBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException = {
+    inline def ResourceNotFoundException(): typings.awsSdkClientDynamodbBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException = {
       val __obj = js.Dynamic.literal(name = "ResourceNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException]
     }

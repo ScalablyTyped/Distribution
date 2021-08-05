@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Alignment extends StObject
 object Alignment {
   
-  @scala.inline
-  def auto: typings.reactVirtualized.reactVirtualizedStrings.auto = "auto".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.auto]
+  inline def auto: typings.reactVirtualized.reactVirtualizedStrings.auto = "auto".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.auto]
   
-  @scala.inline
-  def center: typings.reactVirtualized.reactVirtualizedStrings.center = "center".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.center]
+  inline def center: typings.reactVirtualized.reactVirtualizedStrings.center = "center".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.center]
   
-  @scala.inline
-  def end: typings.reactVirtualized.reactVirtualizedStrings.end = "end".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.end]
+  inline def end: typings.reactVirtualized.reactVirtualizedStrings.end = "end".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.end]
   
-  @scala.inline
-  def start: typings.reactVirtualized.reactVirtualizedStrings.start = "start".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.start]
+  inline def start: typings.reactVirtualized.reactVirtualizedStrings.start = "start".asInstanceOf[typings.reactVirtualized.reactVirtualizedStrings.start]
 }

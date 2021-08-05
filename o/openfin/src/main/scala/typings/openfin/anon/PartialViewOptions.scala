@@ -29,61 +29,43 @@ trait PartialViewOptions extends StObject {
 }
 object PartialViewOptions {
   
-  @scala.inline
-  def apply(): PartialViewOptions = {
+  inline def apply(): PartialViewOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialViewOptions]
   }
   
-  @scala.inline
-  implicit class PartialViewOptionsMutableBuilder[Self <: PartialViewOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialViewOptions](x: Self) {
     
-    @scala.inline
-    def setApi(value: Api): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: Api): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
+    inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
-    @scala.inline
-    def setAutoResize(value: AutoResizeOptions): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
+    inline def setAutoResize(value: AutoResizeOptions): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
+    inline def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setContentNavigation(value: ContentNavigation): Self = StObject.set(x, "contentNavigation", value.asInstanceOf[js.Any])
+    inline def setContentNavigation(value: ContentNavigation): Self = StObject.set(x, "contentNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentNavigationUndefined: Self = StObject.set(x, "contentNavigation", js.undefined)
+    inline def setContentNavigationUndefined: Self = StObject.set(x, "contentNavigation", js.undefined)
     
-    @scala.inline
-    def setContextMenuSettings(value: ContextMenuSettings): Self = StObject.set(x, "contextMenuSettings", value.asInstanceOf[js.Any])
+    inline def setContextMenuSettings(value: ContextMenuSettings): Self = StObject.set(x, "contextMenuSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextMenuSettingsUndefined: Self = StObject.set(x, "contextMenuSettings", js.undefined)
+    inline def setContextMenuSettingsUndefined: Self = StObject.set(x, "contextMenuSettings", js.undefined)
     
-    @scala.inline
-    def setCustomContext(value: js.Any): Self = StObject.set(x, "customContext", value.asInstanceOf[js.Any])
+    inline def setCustomContext(value: js.Any): Self = StObject.set(x, "customContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomContextUndefined: Self = StObject.set(x, "customContext", js.undefined)
+    inline def setCustomContextUndefined: Self = StObject.set(x, "customContext", js.undefined)
     
-    @scala.inline
-    def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
+    inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
     
-    @scala.inline
-    def setExperimental(value: js.Any): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+    inline def setExperimental(value: js.Any): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
+    inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
   }
 }

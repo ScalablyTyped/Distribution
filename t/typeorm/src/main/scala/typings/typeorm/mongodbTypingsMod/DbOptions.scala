@@ -18,25 +18,19 @@ trait DbOptions extends StObject {
 }
 object DbOptions {
   
-  @scala.inline
-  def apply(): DbOptions = {
+  inline def apply(): DbOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DbOptions]
   }
   
-  @scala.inline
-  implicit class DbOptionsMutableBuilder[Self <: DbOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DbOptions](x: Self) {
     
-    @scala.inline
-    def setNoListener(value: Boolean): Self = StObject.set(x, "noListener", value.asInstanceOf[js.Any])
+    inline def setNoListener(value: Boolean): Self = StObject.set(x, "noListener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoListenerUndefined: Self = StObject.set(x, "noListener", js.undefined)
+    inline def setNoListenerUndefined: Self = StObject.set(x, "noListener", js.undefined)
     
-    @scala.inline
-    def setReturnNonCachedInstance(value: Boolean): Self = StObject.set(x, "returnNonCachedInstance", value.asInstanceOf[js.Any])
+    inline def setReturnNonCachedInstance(value: Boolean): Self = StObject.set(x, "returnNonCachedInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnNonCachedInstanceUndefined: Self = StObject.set(x, "returnNonCachedInstance", js.undefined)
+    inline def setReturnNonCachedInstanceUndefined: Self = StObject.set(x, "returnNonCachedInstance", js.undefined)
   }
 }

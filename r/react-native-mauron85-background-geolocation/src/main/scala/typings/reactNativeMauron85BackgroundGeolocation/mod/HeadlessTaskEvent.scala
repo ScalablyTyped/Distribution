@@ -14,19 +14,15 @@ trait HeadlessTaskEvent extends StObject {
 }
 object HeadlessTaskEvent {
   
-  @scala.inline
-  def apply(name: HeadlessTaskEventName, params: js.Any): HeadlessTaskEvent = {
+  inline def apply(name: HeadlessTaskEventName, params: js.Any): HeadlessTaskEvent = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadlessTaskEvent]
   }
   
-  @scala.inline
-  implicit class HeadlessTaskEventMutableBuilder[Self <: HeadlessTaskEvent] (val x: Self) extends AnyVal {
+  extension [Self <: HeadlessTaskEvent](x: Self) {
     
-    @scala.inline
-    def setName(value: HeadlessTaskEventName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: HeadlessTaskEventName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

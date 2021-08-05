@@ -18,17 +18,14 @@ object typesNameLengthExceededExceptionMod {
   }
   object NameLengthExceededException {
     
-    @scala.inline
-    def apply(): NameLengthExceededException = {
+    inline def apply(): NameLengthExceededException = {
       val __obj = js.Dynamic.literal(name = "NameLengthExceededException")
       __obj.asInstanceOf[NameLengthExceededException]
     }
     
-    @scala.inline
-    implicit class NameLengthExceededExceptionMutableBuilder[Self <: NameLengthExceededException] (val x: Self) extends AnyVal {
+    extension [Self <: NameLengthExceededException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.NameLengthExceededException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -12,19 +12,15 @@ trait DialogNodeOutputModifiers extends StObject {
 }
 object DialogNodeOutputModifiers {
   
-  @scala.inline
-  def apply(): DialogNodeOutputModifiers = {
+  inline def apply(): DialogNodeOutputModifiers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogNodeOutputModifiers]
   }
   
-  @scala.inline
-  implicit class DialogNodeOutputModifiersMutableBuilder[Self <: DialogNodeOutputModifiers] (val x: Self) extends AnyVal {
+  extension [Self <: DialogNodeOutputModifiers](x: Self) {
     
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
   }
 }

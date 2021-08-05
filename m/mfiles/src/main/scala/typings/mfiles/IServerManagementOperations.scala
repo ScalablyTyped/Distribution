@@ -29,8 +29,7 @@ trait IServerManagementOperations extends StObject {
 }
 object IServerManagementOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BackupMasterDB: (String, Boolean, Double, IImpersonation) => Unit,
     ConfigureWebAccessToDefaultWebSite: () => Unit,
     ConfigureWebAccessToExistingWebSite: String => Unit,
@@ -44,31 +43,22 @@ object IServerManagementOperations {
     __obj.asInstanceOf[IServerManagementOperations]
   }
   
-  @scala.inline
-  implicit class IServerManagementOperationsMutableBuilder[Self <: IServerManagementOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IServerManagementOperations](x: Self) {
     
-    @scala.inline
-    def setBackupMasterDB(value: (String, Boolean, Double, IImpersonation) => Unit): Self = StObject.set(x, "BackupMasterDB", js.Any.fromFunction4(value))
+    inline def setBackupMasterDB(value: (String, Boolean, Double, IImpersonation) => Unit): Self = StObject.set(x, "BackupMasterDB", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setConfigureWebAccessToDefaultWebSite(value: () => Unit): Self = StObject.set(x, "ConfigureWebAccessToDefaultWebSite", js.Any.fromFunction0(value))
+    inline def setConfigureWebAccessToDefaultWebSite(value: () => Unit): Self = StObject.set(x, "ConfigureWebAccessToDefaultWebSite", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConfigureWebAccessToExistingWebSite(value: String => Unit): Self = StObject.set(x, "ConfigureWebAccessToExistingWebSite", js.Any.fromFunction1(value))
+    inline def setConfigureWebAccessToExistingWebSite(value: String => Unit): Self = StObject.set(x, "ConfigureWebAccessToExistingWebSite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConfigureWebAccessToNewVirtualDirectory(value: (String, String) => Unit): Self = StObject.set(x, "ConfigureWebAccessToNewVirtualDirectory", js.Any.fromFunction2(value))
+    inline def setConfigureWebAccessToNewVirtualDirectory(value: (String, String) => Unit): Self = StObject.set(x, "ConfigureWebAccessToNewVirtualDirectory", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConfigureWebAccessToNewWebSite(value: (String, String) => Unit): Self = StObject.set(x, "ConfigureWebAccessToNewWebSite", js.Any.fromFunction2(value))
+    inline def setConfigureWebAccessToNewWebSite(value: (String, String) => Unit): Self = StObject.set(x, "ConfigureWebAccessToNewWebSite", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetEventHandlers(value: () => IEventHandlers): Self = StObject.set(x, "GetEventHandlers", js.Any.fromFunction0(value))
+    inline def setGetEventHandlers(value: () => IEventHandlers): Self = StObject.set(x, "GetEventHandlers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRestoreMasterDB(value: (String, IImpersonation) => Unit): Self = StObject.set(x, "RestoreMasterDB", js.Any.fromFunction2(value))
+    inline def setRestoreMasterDB(value: (String, IImpersonation) => Unit): Self = StObject.set(x, "RestoreMasterDB", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetEventHandlers(value: IEventHandlers => Unit): Self = StObject.set(x, "SetEventHandlers", js.Any.fromFunction1(value))
+    inline def setSetEventHandlers(value: IEventHandlers => Unit): Self = StObject.set(x, "SetEventHandlers", js.Any.fromFunction1(value))
   }
 }

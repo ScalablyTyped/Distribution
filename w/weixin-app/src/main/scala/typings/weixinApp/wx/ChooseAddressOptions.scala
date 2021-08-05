@@ -15,19 +15,15 @@ trait ChooseAddressOptions
 }
 object ChooseAddressOptions {
   
-  @scala.inline
-  def apply(): ChooseAddressOptions = {
+  inline def apply(): ChooseAddressOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChooseAddressOptions]
   }
   
-  @scala.inline
-  implicit class ChooseAddressOptionsMutableBuilder[Self <: ChooseAddressOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseAddressOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ CityName => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ CityName => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

@@ -17,37 +17,27 @@ trait FusionTablesMouseEvent extends StObject {
 }
 object FusionTablesMouseEvent {
   
-  @scala.inline
-  def apply(): FusionTablesMouseEvent = {
+  inline def apply(): FusionTablesMouseEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FusionTablesMouseEvent]
   }
   
-  @scala.inline
-  implicit class FusionTablesMouseEventMutableBuilder[Self <: FusionTablesMouseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FusionTablesMouseEvent](x: Self) {
     
-    @scala.inline
-    def setInfoWindowHtml(value: String): Self = StObject.set(x, "infoWindowHtml", value.asInstanceOf[js.Any])
+    inline def setInfoWindowHtml(value: String): Self = StObject.set(x, "infoWindowHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoWindowHtmlUndefined: Self = StObject.set(x, "infoWindowHtml", js.undefined)
+    inline def setInfoWindowHtmlUndefined: Self = StObject.set(x, "infoWindowHtml", js.undefined)
     
-    @scala.inline
-    def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
+    inline def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
+    inline def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
     
-    @scala.inline
-    def setPixelOffset(value: Size): Self = StObject.set(x, "pixelOffset", value.asInstanceOf[js.Any])
+    inline def setPixelOffset(value: Size): Self = StObject.set(x, "pixelOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelOffsetUndefined: Self = StObject.set(x, "pixelOffset", js.undefined)
+    inline def setPixelOffsetUndefined: Self = StObject.set(x, "pixelOffset", js.undefined)
     
-    @scala.inline
-    def setRow(value: js.Object): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: js.Object): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

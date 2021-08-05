@@ -16,31 +16,23 @@ trait PageRangeOptions
 }
 object PageRangeOptions {
   
-  @scala.inline
-  def apply(): PageRangeOptions = {
+  inline def apply(): PageRangeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageRangeOptions]
   }
   
-  @scala.inline
-  implicit class PageRangeOptionsMutableBuilder[Self <: PageRangeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PageRangeOptions](x: Self) {
     
-    @scala.inline
-    def setRangeEnd(value: Double): Self = StObject.set(x, "rangeEnd", value.asInstanceOf[js.Any])
+    inline def setRangeEnd(value: Double): Self = StObject.set(x, "rangeEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeEndUndefined: Self = StObject.set(x, "rangeEnd", js.undefined)
+    inline def setRangeEndUndefined: Self = StObject.set(x, "rangeEnd", js.undefined)
     
-    @scala.inline
-    def setRangeStart(value: Double): Self = StObject.set(x, "rangeStart", value.asInstanceOf[js.Any])
+    inline def setRangeStart(value: Double): Self = StObject.set(x, "rangeStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeStartUndefined: Self = StObject.set(x, "rangeStart", js.undefined)
+    inline def setRangeStartUndefined: Self = StObject.set(x, "rangeStart", js.undefined)
     
-    @scala.inline
-    def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
   }
 }

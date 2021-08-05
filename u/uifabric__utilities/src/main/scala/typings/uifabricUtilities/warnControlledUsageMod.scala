@@ -10,11 +10,9 @@ object warnControlledUsageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resetControlledWarnings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetControlledWarnings")().asInstanceOf[Unit]
+  inline def resetControlledWarnings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetControlledWarnings")().asInstanceOf[Unit]
   
-  @scala.inline
-  def warnControlledUsage[P](params: IWarnControlledUsageParams[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnControlledUsage")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def warnControlledUsage[P](params: IWarnControlledUsageParams[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnControlledUsage")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait IWarnControlledUsageParams[P] extends StObject {
     
@@ -44,8 +42,7 @@ object warnControlledUsageMod {
   }
   object IWarnControlledUsageParams {
     
-    @scala.inline
-    def apply[P](
+    inline def apply[P](
       componentId: String,
       componentName: String,
       defaultValueProp: /* keyof P */ String,
@@ -57,38 +54,27 @@ object warnControlledUsageMod {
       __obj.asInstanceOf[IWarnControlledUsageParams[P]]
     }
     
-    @scala.inline
-    implicit class IWarnControlledUsageParamsMutableBuilder[Self <: IWarnControlledUsageParams[?], P] (val x: Self & IWarnControlledUsageParams[P]) extends AnyVal {
+    extension [Self <: IWarnControlledUsageParams[?], P](x: Self & IWarnControlledUsageParams[P]) {
       
-      @scala.inline
-      def setComponentId(value: String): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
+      inline def setComponentId(value: String): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
+      inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueProp(value: /* keyof P */ String): Self = StObject.set(x, "defaultValueProp", value.asInstanceOf[js.Any])
+      inline def setDefaultValueProp(value: /* keyof P */ String): Self = StObject.set(x, "defaultValueProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldProps(value: P): Self = StObject.set(x, "oldProps", value.asInstanceOf[js.Any])
+      inline def setOldProps(value: P): Self = StObject.set(x, "oldProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldPropsUndefined: Self = StObject.set(x, "oldProps", js.undefined)
+      inline def setOldPropsUndefined: Self = StObject.set(x, "oldProps", js.undefined)
       
-      @scala.inline
-      def setOnChangeProp(value: /* keyof P */ String): Self = StObject.set(x, "onChangeProp", value.asInstanceOf[js.Any])
+      inline def setOnChangeProp(value: /* keyof P */ String): Self = StObject.set(x, "onChangeProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyProp(value: /* keyof P */ String): Self = StObject.set(x, "readOnlyProp", value.asInstanceOf[js.Any])
+      inline def setReadOnlyProp(value: /* keyof P */ String): Self = StObject.set(x, "readOnlyProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyPropUndefined: Self = StObject.set(x, "readOnlyProp", js.undefined)
+      inline def setReadOnlyPropUndefined: Self = StObject.set(x, "readOnlyProp", js.undefined)
       
-      @scala.inline
-      def setValueProp(value: /* keyof P */ String): Self = StObject.set(x, "valueProp", value.asInstanceOf[js.Any])
+      inline def setValueProp(value: /* keyof P */ String): Self = StObject.set(x, "valueProp", value.asInstanceOf[js.Any])
     }
   }
 }

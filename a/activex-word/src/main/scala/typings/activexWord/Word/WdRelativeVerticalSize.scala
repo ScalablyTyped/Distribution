@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdRelativeVerticalSize extends StObject
 object WdRelativeVerticalSize {
   
-  @scala.inline
-  def wdRelativeVerticalSizeBottomMarginArea: `3` = 3.asInstanceOf[`3`]
+  inline def wdRelativeVerticalSizeBottomMarginArea: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdRelativeVerticalSizeInnerMarginArea: `4` = 4.asInstanceOf[`4`]
+  inline def wdRelativeVerticalSizeInnerMarginArea: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdRelativeVerticalSizeMargin: `0` = 0.asInstanceOf[`0`]
+  inline def wdRelativeVerticalSizeMargin: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdRelativeVerticalSizeOuterMarginArea: `5` = 5.asInstanceOf[`5`]
+  inline def wdRelativeVerticalSizeOuterMarginArea: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdRelativeVerticalSizePage: `1` = 1.asInstanceOf[`1`]
+  inline def wdRelativeVerticalSizePage: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdRelativeVerticalSizeTopMarginArea: `2` = 2.asInstanceOf[`2`]
+  inline def wdRelativeVerticalSizeTopMarginArea: `2` = 2.asInstanceOf[`2`]
 }

@@ -12,25 +12,19 @@ trait Teamwork
 }
 object Teamwork {
   
-  @scala.inline
-  def apply(): Teamwork = {
+  inline def apply(): Teamwork = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Teamwork]
   }
   
-  @scala.inline
-  implicit class TeamworkMutableBuilder[Self <: Teamwork] (val x: Self) extends AnyVal {
+  extension [Self <: Teamwork](x: Self) {
     
-    @scala.inline
-    def setWorkforceIntegrations(value: NullableOption[js.Array[WorkforceIntegration]]): Self = StObject.set(x, "workforceIntegrations", value.asInstanceOf[js.Any])
+    inline def setWorkforceIntegrations(value: NullableOption[js.Array[WorkforceIntegration]]): Self = StObject.set(x, "workforceIntegrations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkforceIntegrationsNull: Self = StObject.set(x, "workforceIntegrations", null)
+    inline def setWorkforceIntegrationsNull: Self = StObject.set(x, "workforceIntegrations", null)
     
-    @scala.inline
-    def setWorkforceIntegrationsUndefined: Self = StObject.set(x, "workforceIntegrations", js.undefined)
+    inline def setWorkforceIntegrationsUndefined: Self = StObject.set(x, "workforceIntegrations", js.undefined)
     
-    @scala.inline
-    def setWorkforceIntegrationsVarargs(value: WorkforceIntegration*): Self = StObject.set(x, "workforceIntegrations", js.Array(value :_*))
+    inline def setWorkforceIntegrationsVarargs(value: WorkforceIntegration*): Self = StObject.set(x, "workforceIntegrations", js.Array(value :_*))
   }
 }

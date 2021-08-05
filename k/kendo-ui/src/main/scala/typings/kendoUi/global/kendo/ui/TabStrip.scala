@@ -21,13 +21,11 @@ object TabStrip {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.TabStrip = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.TabStrip]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.TabStrip = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.TabStrip]
   
   /* static member */
   @JSGlobal("kendo.ui.TabStrip.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.TabStrip = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.TabStrip): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.TabStrip): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

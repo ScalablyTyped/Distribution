@@ -23,43 +23,31 @@ trait UpdateSendingDomain extends StObject {
 }
 object UpdateSendingDomain {
   
-  @scala.inline
-  def apply(): UpdateSendingDomain = {
+  inline def apply(): UpdateSendingDomain = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateSendingDomain]
   }
   
-  @scala.inline
-  implicit class UpdateSendingDomainMutableBuilder[Self <: UpdateSendingDomain] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSendingDomain](x: Self) {
     
-    @scala.inline
-    def setDkim(value: DKIM): Self = StObject.set(x, "dkim", value.asInstanceOf[js.Any])
+    inline def setDkim(value: DKIM): Self = StObject.set(x, "dkim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDkimUndefined: Self = StObject.set(x, "dkim", js.undefined)
+    inline def setDkimUndefined: Self = StObject.set(x, "dkim", js.undefined)
     
-    @scala.inline
-    def setDkim_key_length(value: Double): Self = StObject.set(x, "dkim_key_length", value.asInstanceOf[js.Any])
+    inline def setDkim_key_length(value: Double): Self = StObject.set(x, "dkim_key_length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDkim_key_lengthUndefined: Self = StObject.set(x, "dkim_key_length", js.undefined)
+    inline def setDkim_key_lengthUndefined: Self = StObject.set(x, "dkim_key_length", js.undefined)
     
-    @scala.inline
-    def setGenerate_dkim(value: Boolean): Self = StObject.set(x, "generate_dkim", value.asInstanceOf[js.Any])
+    inline def setGenerate_dkim(value: Boolean): Self = StObject.set(x, "generate_dkim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerate_dkimUndefined: Self = StObject.set(x, "generate_dkim", js.undefined)
+    inline def setGenerate_dkimUndefined: Self = StObject.set(x, "generate_dkim", js.undefined)
     
-    @scala.inline
-    def setShared_with_subaccounts(value: Boolean): Self = StObject.set(x, "shared_with_subaccounts", value.asInstanceOf[js.Any])
+    inline def setShared_with_subaccounts(value: Boolean): Self = StObject.set(x, "shared_with_subaccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShared_with_subaccountsUndefined: Self = StObject.set(x, "shared_with_subaccounts", js.undefined)
+    inline def setShared_with_subaccountsUndefined: Self = StObject.set(x, "shared_with_subaccounts", js.undefined)
     
-    @scala.inline
-    def setTracking_domain(value: String): Self = StObject.set(x, "tracking_domain", value.asInstanceOf[js.Any])
+    inline def setTracking_domain(value: String): Self = StObject.set(x, "tracking_domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracking_domainUndefined: Self = StObject.set(x, "tracking_domain", js.undefined)
+    inline def setTracking_domainUndefined: Self = StObject.set(x, "tracking_domain", js.undefined)
   }
 }

@@ -104,21 +104,16 @@ object serverMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Server]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Server]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ServerState): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Server]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ServerState, opts: CustomResourceOptions): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Server]
+    inline def get(name: String, id: Input[ID]): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Server]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Server]
+    inline def get(name: String, id: Input[ID], state: ServerState): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Server]
+    inline def get(name: String, id: Input[ID], state: ServerState, opts: CustomResourceOptions): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Server]
     
     /**
       * Returns true if the given object is an instance of Server.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/transfer/server.Server */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/transfer/server.Server */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/transfer/server.Server */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/transfer/server.Server */ Boolean]
   }
   
   trait ServerArgs extends StObject {
@@ -170,68 +165,48 @@ object serverMod {
   }
   object ServerArgs {
     
-    @scala.inline
-    def apply(): ServerArgs = {
+    inline def apply(): ServerArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServerArgs]
     }
     
-    @scala.inline
-    implicit class ServerArgsMutableBuilder[Self <: ServerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ServerArgs](x: Self) {
       
-      @scala.inline
-      def setEndpointDetails(value: Input[typings.pulumiAws.inputMod.transfer.ServerEndpointDetails]): Self = StObject.set(x, "endpointDetails", value.asInstanceOf[js.Any])
+      inline def setEndpointDetails(value: Input[typings.pulumiAws.inputMod.transfer.ServerEndpointDetails]): Self = StObject.set(x, "endpointDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointDetailsUndefined: Self = StObject.set(x, "endpointDetails", js.undefined)
+      inline def setEndpointDetailsUndefined: Self = StObject.set(x, "endpointDetails", js.undefined)
       
-      @scala.inline
-      def setEndpointType(value: Input[String]): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
+      inline def setEndpointType(value: Input[String]): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointTypeUndefined: Self = StObject.set(x, "endpointType", js.undefined)
+      inline def setEndpointTypeUndefined: Self = StObject.set(x, "endpointType", js.undefined)
       
-      @scala.inline
-      def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
+      inline def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
+      inline def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
       
-      @scala.inline
-      def setHostKey(value: Input[String]): Self = StObject.set(x, "hostKey", value.asInstanceOf[js.Any])
+      inline def setHostKey(value: Input[String]): Self = StObject.set(x, "hostKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostKeyUndefined: Self = StObject.set(x, "hostKey", js.undefined)
+      inline def setHostKeyUndefined: Self = StObject.set(x, "hostKey", js.undefined)
       
-      @scala.inline
-      def setIdentityProviderType(value: Input[String]): Self = StObject.set(x, "identityProviderType", value.asInstanceOf[js.Any])
+      inline def setIdentityProviderType(value: Input[String]): Self = StObject.set(x, "identityProviderType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityProviderTypeUndefined: Self = StObject.set(x, "identityProviderType", js.undefined)
+      inline def setIdentityProviderTypeUndefined: Self = StObject.set(x, "identityProviderType", js.undefined)
       
-      @scala.inline
-      def setInvocationRole(value: Input[String]): Self = StObject.set(x, "invocationRole", value.asInstanceOf[js.Any])
+      inline def setInvocationRole(value: Input[String]): Self = StObject.set(x, "invocationRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvocationRoleUndefined: Self = StObject.set(x, "invocationRole", js.undefined)
+      inline def setInvocationRoleUndefined: Self = StObject.set(x, "invocationRole", js.undefined)
       
-      @scala.inline
-      def setLoggingRole(value: Input[String]): Self = StObject.set(x, "loggingRole", value.asInstanceOf[js.Any])
+      inline def setLoggingRole(value: Input[String]): Self = StObject.set(x, "loggingRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingRoleUndefined: Self = StObject.set(x, "loggingRole", js.undefined)
+      inline def setLoggingRoleUndefined: Self = StObject.set(x, "loggingRole", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -299,86 +274,60 @@ object serverMod {
   }
   object ServerState {
     
-    @scala.inline
-    def apply(): ServerState = {
+    inline def apply(): ServerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServerState]
     }
     
-    @scala.inline
-    implicit class ServerStateMutableBuilder[Self <: ServerState] (val x: Self) extends AnyVal {
+    extension [Self <: ServerState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointDetails(value: Input[typings.pulumiAws.inputMod.transfer.ServerEndpointDetails]): Self = StObject.set(x, "endpointDetails", value.asInstanceOf[js.Any])
+      inline def setEndpointDetails(value: Input[typings.pulumiAws.inputMod.transfer.ServerEndpointDetails]): Self = StObject.set(x, "endpointDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointDetailsUndefined: Self = StObject.set(x, "endpointDetails", js.undefined)
+      inline def setEndpointDetailsUndefined: Self = StObject.set(x, "endpointDetails", js.undefined)
       
-      @scala.inline
-      def setEndpointType(value: Input[String]): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
+      inline def setEndpointType(value: Input[String]): Self = StObject.set(x, "endpointType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointTypeUndefined: Self = StObject.set(x, "endpointType", js.undefined)
+      inline def setEndpointTypeUndefined: Self = StObject.set(x, "endpointType", js.undefined)
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
+      inline def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
+      inline def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
       
-      @scala.inline
-      def setHostKey(value: Input[String]): Self = StObject.set(x, "hostKey", value.asInstanceOf[js.Any])
+      inline def setHostKey(value: Input[String]): Self = StObject.set(x, "hostKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostKeyFingerprint(value: Input[String]): Self = StObject.set(x, "hostKeyFingerprint", value.asInstanceOf[js.Any])
+      inline def setHostKeyFingerprint(value: Input[String]): Self = StObject.set(x, "hostKeyFingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostKeyFingerprintUndefined: Self = StObject.set(x, "hostKeyFingerprint", js.undefined)
+      inline def setHostKeyFingerprintUndefined: Self = StObject.set(x, "hostKeyFingerprint", js.undefined)
       
-      @scala.inline
-      def setHostKeyUndefined: Self = StObject.set(x, "hostKey", js.undefined)
+      inline def setHostKeyUndefined: Self = StObject.set(x, "hostKey", js.undefined)
       
-      @scala.inline
-      def setIdentityProviderType(value: Input[String]): Self = StObject.set(x, "identityProviderType", value.asInstanceOf[js.Any])
+      inline def setIdentityProviderType(value: Input[String]): Self = StObject.set(x, "identityProviderType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityProviderTypeUndefined: Self = StObject.set(x, "identityProviderType", js.undefined)
+      inline def setIdentityProviderTypeUndefined: Self = StObject.set(x, "identityProviderType", js.undefined)
       
-      @scala.inline
-      def setInvocationRole(value: Input[String]): Self = StObject.set(x, "invocationRole", value.asInstanceOf[js.Any])
+      inline def setInvocationRole(value: Input[String]): Self = StObject.set(x, "invocationRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvocationRoleUndefined: Self = StObject.set(x, "invocationRole", js.undefined)
+      inline def setInvocationRoleUndefined: Self = StObject.set(x, "invocationRole", js.undefined)
       
-      @scala.inline
-      def setLoggingRole(value: Input[String]): Self = StObject.set(x, "loggingRole", value.asInstanceOf[js.Any])
+      inline def setLoggingRole(value: Input[String]): Self = StObject.set(x, "loggingRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingRoleUndefined: Self = StObject.set(x, "loggingRole", js.undefined)
+      inline def setLoggingRoleUndefined: Self = StObject.set(x, "loggingRole", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

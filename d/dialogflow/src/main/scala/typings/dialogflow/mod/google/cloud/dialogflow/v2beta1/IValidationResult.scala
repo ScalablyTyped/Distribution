@@ -12,25 +12,19 @@ trait IValidationResult extends StObject {
 }
 object IValidationResult {
   
-  @scala.inline
-  def apply(): IValidationResult = {
+  inline def apply(): IValidationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IValidationResult]
   }
   
-  @scala.inline
-  implicit class IValidationResultMutableBuilder[Self <: IValidationResult] (val x: Self) extends AnyVal {
+  extension [Self <: IValidationResult](x: Self) {
     
-    @scala.inline
-    def setValidationErrors(value: js.Array[IValidationError]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
+    inline def setValidationErrors(value: js.Array[IValidationError]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationErrorsNull: Self = StObject.set(x, "validationErrors", null)
+    inline def setValidationErrorsNull: Self = StObject.set(x, "validationErrors", null)
     
-    @scala.inline
-    def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
+    inline def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
     
-    @scala.inline
-    def setValidationErrorsVarargs(value: IValidationError*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
+    inline def setValidationErrorsVarargs(value: IValidationError*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
   }
 }

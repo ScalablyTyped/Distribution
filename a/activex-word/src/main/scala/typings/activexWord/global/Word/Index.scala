@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Index")
 @js.native
-class Index protected ()
+/* private */ class Index ()
   extends StObject
      with typings.activexWord.Word.Index {
   
@@ -61,7 +61,7 @@ class Index protected ()
   /* CompleteClass */
   override def Update(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Index_typekey")
   var WordDotIndex_typekey: typings.activexWord.Word.Index = js.native
 }

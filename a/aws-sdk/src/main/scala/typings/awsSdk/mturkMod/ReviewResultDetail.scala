@@ -38,49 +38,35 @@ trait ReviewResultDetail extends StObject {
 }
 object ReviewResultDetail {
   
-  @scala.inline
-  def apply(): ReviewResultDetail = {
+  inline def apply(): ReviewResultDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReviewResultDetail]
   }
   
-  @scala.inline
-  implicit class ReviewResultDetailMutableBuilder[Self <: ReviewResultDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ReviewResultDetail](x: Self) {
     
-    @scala.inline
-    def setActionId(value: EntityId): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: EntityId): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "ActionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "ActionId", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setQuestionId(value: EntityId): Self = StObject.set(x, "QuestionId", value.asInstanceOf[js.Any])
+    inline def setQuestionId(value: EntityId): Self = StObject.set(x, "QuestionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestionIdUndefined: Self = StObject.set(x, "QuestionId", js.undefined)
+    inline def setQuestionIdUndefined: Self = StObject.set(x, "QuestionId", js.undefined)
     
-    @scala.inline
-    def setSubjectId(value: EntityId): Self = StObject.set(x, "SubjectId", value.asInstanceOf[js.Any])
+    inline def setSubjectId(value: EntityId): Self = StObject.set(x, "SubjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectIdUndefined: Self = StObject.set(x, "SubjectId", js.undefined)
+    inline def setSubjectIdUndefined: Self = StObject.set(x, "SubjectId", js.undefined)
     
-    @scala.inline
-    def setSubjectType(value: String): Self = StObject.set(x, "SubjectType", value.asInstanceOf[js.Any])
+    inline def setSubjectType(value: String): Self = StObject.set(x, "SubjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectTypeUndefined: Self = StObject.set(x, "SubjectType", js.undefined)
+    inline def setSubjectTypeUndefined: Self = StObject.set(x, "SubjectType", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

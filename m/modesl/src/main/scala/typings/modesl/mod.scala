@@ -156,11 +156,9 @@ object mod {
     def close(callback: js.Any): Unit = js.native
   }
   
-  @scala.inline
-  def eslSetLogLevel(level: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("eslSetLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def eslSetLogLevel(level: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("eslSetLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setLogLevel(level: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLogLevel(level: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Header extends StObject {
     
@@ -170,20 +168,16 @@ object mod {
   }
   object Header {
     
-    @scala.inline
-    def apply(name: String, value: String): Header = {
+    inline def apply(name: String, value: String): Header = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Header]
     }
     
-    @scala.inline
-    implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+    extension [Self <: Header](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

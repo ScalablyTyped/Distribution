@@ -31,40 +31,29 @@ trait ChromeArgOptions extends StObject {
 }
 object ChromeArgOptions {
   
-  @scala.inline
-  def apply(): ChromeArgOptions = {
+  inline def apply(): ChromeArgOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChromeArgOptions]
   }
   
-  @scala.inline
-  implicit class ChromeArgOptionsMutableBuilder[Self <: ChromeArgOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChromeArgOptions](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setDevtools(value: Boolean): Self = StObject.set(x, "devtools", value.asInstanceOf[js.Any])
+    inline def setDevtools(value: Boolean): Self = StObject.set(x, "devtools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevtoolsUndefined: Self = StObject.set(x, "devtools", js.undefined)
+    inline def setDevtoolsUndefined: Self = StObject.set(x, "devtools", js.undefined)
     
-    @scala.inline
-    def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
+    inline def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
+    inline def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
     
-    @scala.inline
-    def setUserDataDir(value: String): Self = StObject.set(x, "userDataDir", value.asInstanceOf[js.Any])
+    inline def setUserDataDir(value: String): Self = StObject.set(x, "userDataDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDataDirUndefined: Self = StObject.set(x, "userDataDir", js.undefined)
+    inline def setUserDataDirUndefined: Self = StObject.set(x, "userDataDir", js.undefined)
   }
 }

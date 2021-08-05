@@ -112,35 +112,26 @@ object mod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(): ClientOptions = {
+    inline def apply(): ClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setExplicitSocketBind(value: Boolean): Self = StObject.set(x, "explicitSocketBind", value.asInstanceOf[js.Any])
+      inline def setExplicitSocketBind(value: Boolean): Self = StObject.set(x, "explicitSocketBind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExplicitSocketBindUndefined: Self = StObject.set(x, "explicitSocketBind", js.undefined)
+      inline def setExplicitSocketBindUndefined: Self = StObject.set(x, "explicitSocketBind", js.undefined)
       
-      @scala.inline
-      def setInterfaces(value: js.Array[String]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
+      inline def setInterfaces(value: js.Array[String]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfacesUndefined: Self = StObject.set(x, "interfaces", js.undefined)
+      inline def setInterfacesUndefined: Self = StObject.set(x, "interfaces", js.undefined)
       
-      @scala.inline
-      def setInterfacesVarargs(value: String*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
+      inline def setInterfacesVarargs(value: String*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
       
-      @scala.inline
-      def setReuseAddr(value: Boolean): Self = StObject.set(x, "reuseAddr", value.asInstanceOf[js.Any])
+      inline def setReuseAddr(value: Boolean): Self = StObject.set(x, "reuseAddr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReuseAddrUndefined: Self = StObject.set(x, "reuseAddr", js.undefined)
+      inline def setReuseAddrUndefined: Self = StObject.set(x, "reuseAddr", js.undefined)
     }
   }
   
@@ -187,50 +178,36 @@ object mod {
   }
   object ServerOptions {
     
-    @scala.inline
-    def apply(): ServerOptions = {
+    inline def apply(): ServerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServerOptions]
     }
     
-    @scala.inline
-    implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ServerOptions](x: Self) {
       
-      @scala.inline
-      def setAdInterval(value: Double): Self = StObject.set(x, "adInterval", value.asInstanceOf[js.Any])
+      inline def setAdInterval(value: Double): Self = StObject.set(x, "adInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdIntervalUndefined: Self = StObject.set(x, "adInterval", js.undefined)
+      inline def setAdIntervalUndefined: Self = StObject.set(x, "adInterval", js.undefined)
       
-      @scala.inline
-      def setAllowWildcards(value: Boolean): Self = StObject.set(x, "allowWildcards", value.asInstanceOf[js.Any])
+      inline def setAllowWildcards(value: Boolean): Self = StObject.set(x, "allowWildcards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowWildcardsUndefined: Self = StObject.set(x, "allowWildcards", js.undefined)
+      inline def setAllowWildcardsUndefined: Self = StObject.set(x, "allowWildcards", js.undefined)
       
-      @scala.inline
-      def setLocation(value: String | ServiceDescriptionLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String | ServiceDescriptionLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setSuppressRootDeviceAdvertisements(value: Boolean): Self = StObject.set(x, "suppressRootDeviceAdvertisements", value.asInstanceOf[js.Any])
+      inline def setSuppressRootDeviceAdvertisements(value: Boolean): Self = StObject.set(x, "suppressRootDeviceAdvertisements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressRootDeviceAdvertisementsUndefined: Self = StObject.set(x, "suppressRootDeviceAdvertisements", js.undefined)
+      inline def setSuppressRootDeviceAdvertisementsUndefined: Self = StObject.set(x, "suppressRootDeviceAdvertisements", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
       
-      @scala.inline
-      def setUdn(value: String): Self = StObject.set(x, "udn", value.asInstanceOf[js.Any])
+      inline def setUdn(value: String): Self = StObject.set(x, "udn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUdnUndefined: Self = StObject.set(x, "udn", js.undefined)
+      inline def setUdnUndefined: Self = StObject.set(x, "udn", js.undefined)
     }
   }
   
@@ -254,26 +231,20 @@ object mod {
   }
   object ServiceDescriptionLocation {
     
-    @scala.inline
-    def apply(path: String, port: Double): ServiceDescriptionLocation = {
+    inline def apply(path: String, port: Double): ServiceDescriptionLocation = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceDescriptionLocation]
     }
     
-    @scala.inline
-    implicit class ServiceDescriptionLocationMutableBuilder[Self <: ServiceDescriptionLocation] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceDescriptionLocation](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     }
   }
   
@@ -295,32 +266,24 @@ object mod {
   }
   object SsdpHeaders {
     
-    @scala.inline
-    def apply(): SsdpHeaders = {
+    inline def apply(): SsdpHeaders = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SsdpHeaders]
     }
     
-    @scala.inline
-    implicit class SsdpHeadersMutableBuilder[Self <: SsdpHeaders] (val x: Self) extends AnyVal {
+    extension [Self <: SsdpHeaders](x: Self) {
       
-      @scala.inline
-      def setLOCATION(value: String): Self = StObject.set(x, "LOCATION", value.asInstanceOf[js.Any])
+      inline def setLOCATION(value: String): Self = StObject.set(x, "LOCATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOCATIONUndefined: Self = StObject.set(x, "LOCATION", js.undefined)
+      inline def setLOCATIONUndefined: Self = StObject.set(x, "LOCATION", js.undefined)
       
-      @scala.inline
-      def setST(value: String): Self = StObject.set(x, "ST", value.asInstanceOf[js.Any])
+      inline def setST(value: String): Self = StObject.set(x, "ST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTUndefined: Self = StObject.set(x, "ST", js.undefined)
+      inline def setSTUndefined: Self = StObject.set(x, "ST", js.undefined)
       
-      @scala.inline
-      def setUSN(value: String): Self = StObject.set(x, "USN", value.asInstanceOf[js.Any])
+      inline def setUSN(value: String): Self = StObject.set(x, "USN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSNUndefined: Self = StObject.set(x, "USN", js.undefined)
+      inline def setUSNUndefined: Self = StObject.set(x, "USN", js.undefined)
     }
   }
   
@@ -361,56 +324,40 @@ object mod {
   }
   object SsdpOptions {
     
-    @scala.inline
-    def apply(): SsdpOptions = {
+    inline def apply(): SsdpOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SsdpOptions]
     }
     
-    @scala.inline
-    implicit class SsdpOptionsMutableBuilder[Self <: SsdpOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SsdpOptions](x: Self) {
       
-      @scala.inline
-      def setCustomLogger(value: (/* format */ String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "customLogger", js.Any.fromFunction2(value))
+      inline def setCustomLogger(value: (/* format */ String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "customLogger", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCustomLoggerUndefined: Self = StObject.set(x, "customLogger", js.undefined)
+      inline def setCustomLoggerUndefined: Self = StObject.set(x, "customLogger", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: SsdpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: SsdpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setSsdpIp(value: String): Self = StObject.set(x, "ssdpIp", value.asInstanceOf[js.Any])
+      inline def setSsdpIp(value: String): Self = StObject.set(x, "ssdpIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsdpIpUndefined: Self = StObject.set(x, "ssdpIp", js.undefined)
+      inline def setSsdpIpUndefined: Self = StObject.set(x, "ssdpIp", js.undefined)
       
-      @scala.inline
-      def setSsdpPort(value: Double): Self = StObject.set(x, "ssdpPort", value.asInstanceOf[js.Any])
+      inline def setSsdpPort(value: Double): Self = StObject.set(x, "ssdpPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsdpPortUndefined: Self = StObject.set(x, "ssdpPort", js.undefined)
+      inline def setSsdpPortUndefined: Self = StObject.set(x, "ssdpPort", js.undefined)
       
-      @scala.inline
-      def setSsdpSig(value: String): Self = StObject.set(x, "ssdpSig", value.asInstanceOf[js.Any])
+      inline def setSsdpSig(value: String): Self = StObject.set(x, "ssdpSig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsdpSigUndefined: Self = StObject.set(x, "ssdpSig", js.undefined)
+      inline def setSsdpSigUndefined: Self = StObject.set(x, "ssdpSig", js.undefined)
       
-      @scala.inline
-      def setSsdpTtl(value: Double): Self = StObject.set(x, "ssdpTtl", value.asInstanceOf[js.Any])
+      inline def setSsdpTtl(value: Double): Self = StObject.set(x, "ssdpTtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsdpTtlUndefined: Self = StObject.set(x, "ssdpTtl", js.undefined)
+      inline def setSsdpTtlUndefined: Self = StObject.set(x, "ssdpTtl", js.undefined)
     }
   }
 }

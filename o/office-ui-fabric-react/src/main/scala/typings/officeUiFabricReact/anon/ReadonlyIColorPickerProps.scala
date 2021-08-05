@@ -56,106 +56,73 @@ trait ReadonlyIColorPickerProps extends StObject {
 }
 object ReadonlyIColorPickerProps {
   
-  @scala.inline
-  def apply(color: IColor | String): ReadonlyIColorPickerProps = {
+  inline def apply(color: IColor | String): ReadonlyIColorPickerProps = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyIColorPickerProps]
   }
   
-  @scala.inline
-  implicit class ReadonlyIColorPickerPropsMutableBuilder[Self <: ReadonlyIColorPickerProps] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyIColorPickerProps](x: Self) {
     
-    @scala.inline
-    def setAlphaLabel(value: String): Self = StObject.set(x, "alphaLabel", value.asInstanceOf[js.Any])
+    inline def setAlphaLabel(value: String): Self = StObject.set(x, "alphaLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaLabelUndefined: Self = StObject.set(x, "alphaLabel", js.undefined)
+    inline def setAlphaLabelUndefined: Self = StObject.set(x, "alphaLabel", js.undefined)
     
-    @scala.inline
-    def setAlphaSliderHidden(value: Boolean): Self = StObject.set(x, "alphaSliderHidden", value.asInstanceOf[js.Any])
+    inline def setAlphaSliderHidden(value: Boolean): Self = StObject.set(x, "alphaSliderHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaSliderHiddenUndefined: Self = StObject.set(x, "alphaSliderHidden", js.undefined)
+    inline def setAlphaSliderHiddenUndefined: Self = StObject.set(x, "alphaSliderHidden", js.undefined)
     
-    @scala.inline
-    def setAlphaType(value: alpha | transparency | none): Self = StObject.set(x, "alphaType", value.asInstanceOf[js.Any])
+    inline def setAlphaType(value: alpha | transparency | none): Self = StObject.set(x, "alphaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaTypeUndefined: Self = StObject.set(x, "alphaType", js.undefined)
+    inline def setAlphaTypeUndefined: Self = StObject.set(x, "alphaType", js.undefined)
     
-    @scala.inline
-    def setBlueLabel(value: String): Self = StObject.set(x, "blueLabel", value.asInstanceOf[js.Any])
+    inline def setBlueLabel(value: String): Self = StObject.set(x, "blueLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlueLabelUndefined: Self = StObject.set(x, "blueLabel", js.undefined)
+    inline def setBlueLabelUndefined: Self = StObject.set(x, "blueLabel", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setColor(value: IColor | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: IColor | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentRef(value: IRefObject[IColorPicker]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+    inline def setComponentRef(value: IRefObject[IColorPicker]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentRefFunction1(value: /* ref */ IColorPicker | Null => scala.Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+    inline def setComponentRefFunction1(value: /* ref */ IColorPicker | Null => scala.Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+    inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
     
-    @scala.inline
-    def setGreenLabel(value: String): Self = StObject.set(x, "greenLabel", value.asInstanceOf[js.Any])
+    inline def setGreenLabel(value: String): Self = StObject.set(x, "greenLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreenLabelUndefined: Self = StObject.set(x, "greenLabel", js.undefined)
+    inline def setGreenLabelUndefined: Self = StObject.set(x, "greenLabel", js.undefined)
     
-    @scala.inline
-    def setHexLabel(value: String): Self = StObject.set(x, "hexLabel", value.asInstanceOf[js.Any])
+    inline def setHexLabel(value: String): Self = StObject.set(x, "hexLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHexLabelUndefined: Self = StObject.set(x, "hexLabel", js.undefined)
+    inline def setHexLabelUndefined: Self = StObject.set(x, "hexLabel", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: (/* ev */ SyntheticEvent[HTMLElement, Event], /* color */ IColor) => scala.Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+    inline def setOnChange(value: (/* ev */ SyntheticEvent[HTMLElement, Event], /* color */ IColor) => scala.Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setRedLabel(value: String): Self = StObject.set(x, "redLabel", value.asInstanceOf[js.Any])
+    inline def setRedLabel(value: String): Self = StObject.set(x, "redLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedLabelUndefined: Self = StObject.set(x, "redLabel", js.undefined)
+    inline def setRedLabelUndefined: Self = StObject.set(x, "redLabel", js.undefined)
     
-    @scala.inline
-    def setShowPreview(value: Boolean): Self = StObject.set(x, "showPreview", value.asInstanceOf[js.Any])
+    inline def setShowPreview(value: Boolean): Self = StObject.set(x, "showPreview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPreviewUndefined: Self = StObject.set(x, "showPreview", js.undefined)
+    inline def setShowPreviewUndefined: Self = StObject.set(x, "showPreview", js.undefined)
     
-    @scala.inline
-    def setStrings(value: IColorPickerStrings): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+    inline def setStrings(value: IColorPickerStrings): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
+    inline def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
     
-    @scala.inline
-    def setStyles(value: IStyleFunctionOrObject[IColorPickerStyleProps, IColorPickerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: IStyleFunctionOrObject[IColorPickerStyleProps, IColorPickerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesFunction1(value: IColorPickerStyleProps => DeepPartial[IColorPickerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+    inline def setStylesFunction1(value: IColorPickerStyleProps => DeepPartial[IColorPickerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

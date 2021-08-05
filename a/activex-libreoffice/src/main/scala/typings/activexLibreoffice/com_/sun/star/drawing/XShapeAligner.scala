@@ -19,8 +19,7 @@ trait XShapeAligner
 }
 object XShapeAligner {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     alignShapes: (js.Array[XShapes], Alignment) => Unit,
     queryInterface: `type` => js.Any,
@@ -30,10 +29,8 @@ object XShapeAligner {
     __obj.asInstanceOf[XShapeAligner]
   }
   
-  @scala.inline
-  implicit class XShapeAlignerMutableBuilder[Self <: XShapeAligner] (val x: Self) extends AnyVal {
+  extension [Self <: XShapeAligner](x: Self) {
     
-    @scala.inline
-    def setAlignShapes(value: (js.Array[XShapes], Alignment) => Unit): Self = StObject.set(x, "alignShapes", js.Any.fromFunction2(value))
+    inline def setAlignShapes(value: (js.Array[XShapes], Alignment) => Unit): Self = StObject.set(x, "alignShapes", js.Any.fromFunction2(value))
   }
 }

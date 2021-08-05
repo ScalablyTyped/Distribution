@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.AnswerWizard")
 @js.native
-class AnswerWizard protected ()
+/* private */ class AnswerWizard ()
   extends StObject
      with typings.activexOffice.Office.AnswerWizard {
   
@@ -26,7 +26,7 @@ class AnswerWizard protected ()
   @JSName("Files")
   override val Files_Original: AnswerWizardFiles = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.AnswerWizard_typekey")
   var OfficeDotAnswerWizard_typekey: typings.activexOffice.Office.AnswerWizard = js.native
   

@@ -22,8 +22,7 @@ trait FlexboxesProps
      with OrderProps
 object FlexboxesProps {
   
-  @scala.inline
-  def apply(): FlexboxesProps = {
+  inline def apply(): FlexboxesProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlexboxesProps]
   }

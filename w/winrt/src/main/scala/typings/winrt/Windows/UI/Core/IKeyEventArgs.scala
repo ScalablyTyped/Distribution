@@ -15,19 +15,15 @@ trait IKeyEventArgs
 }
 object IKeyEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean, keyStatus: CorePhysicalKeyStatus, virtualKey: VirtualKey): IKeyEventArgs = {
+  inline def apply(handled: Boolean, keyStatus: CorePhysicalKeyStatus, virtualKey: VirtualKey): IKeyEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], keyStatus = keyStatus.asInstanceOf[js.Any], virtualKey = virtualKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeyEventArgs]
   }
   
-  @scala.inline
-  implicit class IKeyEventArgsMutableBuilder[Self <: IKeyEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IKeyEventArgs](x: Self) {
     
-    @scala.inline
-    def setKeyStatus(value: CorePhysicalKeyStatus): Self = StObject.set(x, "keyStatus", value.asInstanceOf[js.Any])
+    inline def setKeyStatus(value: CorePhysicalKeyStatus): Self = StObject.set(x, "keyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualKey(value: VirtualKey): Self = StObject.set(x, "virtualKey", value.asInstanceOf[js.Any])
+    inline def setVirtualKey(value: VirtualKey): Self = StObject.set(x, "virtualKey", value.asInstanceOf[js.Any])
   }
 }

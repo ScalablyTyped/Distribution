@@ -18,19 +18,15 @@ trait Messenger extends StObject {
 }
 object Messenger {
   
-  @scala.inline
-  def apply(hideAll: () => Unit, post: MessageOptions => Message): Messenger = {
+  inline def apply(hideAll: () => Unit, post: MessageOptions => Message): Messenger = {
     val __obj = js.Dynamic.literal(hideAll = js.Any.fromFunction0(hideAll), post = js.Any.fromFunction1(post))
     __obj.asInstanceOf[Messenger]
   }
   
-  @scala.inline
-  implicit class MessengerMutableBuilder[Self <: Messenger] (val x: Self) extends AnyVal {
+  extension [Self <: Messenger](x: Self) {
     
-    @scala.inline
-    def setHideAll(value: () => Unit): Self = StObject.set(x, "hideAll", js.Any.fromFunction0(value))
+    inline def setHideAll(value: () => Unit): Self = StObject.set(x, "hideAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPost(value: MessageOptions => Message): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
+    inline def setPost(value: MessageOptions => Message): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
   }
 }

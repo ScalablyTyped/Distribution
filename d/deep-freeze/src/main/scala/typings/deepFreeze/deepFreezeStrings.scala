@@ -8,6 +8,5 @@ object deepFreezeStrings {
   
   @js.native
   sealed trait DeepReadonly extends StObject
-  @scala.inline
-  def DeepReadonly: DeepReadonly = "DeepReadonly".asInstanceOf[DeepReadonly]
+  inline def DeepReadonly: DeepReadonly = "DeepReadonly".asInstanceOf[DeepReadonly]
 }

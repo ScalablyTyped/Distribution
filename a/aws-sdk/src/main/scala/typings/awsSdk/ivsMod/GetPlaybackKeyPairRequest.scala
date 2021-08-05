@@ -13,16 +13,13 @@ trait GetPlaybackKeyPairRequest extends StObject {
 }
 object GetPlaybackKeyPairRequest {
   
-  @scala.inline
-  def apply(arn: PlaybackKeyPairArn): GetPlaybackKeyPairRequest = {
+  inline def apply(arn: PlaybackKeyPairArn): GetPlaybackKeyPairRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPlaybackKeyPairRequest]
   }
   
-  @scala.inline
-  implicit class GetPlaybackKeyPairRequestMutableBuilder[Self <: GetPlaybackKeyPairRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetPlaybackKeyPairRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: PlaybackKeyPairArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: PlaybackKeyPairArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

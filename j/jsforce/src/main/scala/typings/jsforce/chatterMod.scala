@@ -83,20 +83,16 @@ object chatterMod {
   }
   object BatchRequestParams {
     
-    @scala.inline
-    def apply(method: String, url: String): BatchRequestParams = {
+    inline def apply(method: String, url: String): BatchRequestParams = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[BatchRequestParams]
     }
     
-    @scala.inline
-    implicit class BatchRequestParamsMutableBuilder[Self <: BatchRequestParams] (val x: Self) extends AnyVal {
+    extension [Self <: BatchRequestParams](x: Self) {
       
-      @scala.inline
-      def setRichInput(value: String): Self = StObject.set(x, "richInput", value.asInstanceOf[js.Any])
+      inline def setRichInput(value: String): Self = StObject.set(x, "richInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRichInputUndefined: Self = StObject.set(x, "richInput", js.undefined)
+      inline def setRichInputUndefined: Self = StObject.set(x, "richInput", js.undefined)
     }
   }
   
@@ -108,20 +104,16 @@ object chatterMod {
   }
   object BatchRequestResult {
     
-    @scala.inline
-    def apply(result: RequestResult, statusCode: String): BatchRequestResult = {
+    inline def apply(result: RequestResult, statusCode: String): BatchRequestResult = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[BatchRequestResult]
     }
     
-    @scala.inline
-    implicit class BatchRequestResultMutableBuilder[Self <: BatchRequestResult] (val x: Self) extends AnyVal {
+    extension [Self <: BatchRequestResult](x: Self) {
       
-      @scala.inline
-      def setResult(value: RequestResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: RequestResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,23 +125,18 @@ object chatterMod {
   }
   object BatchRequestResults {
     
-    @scala.inline
-    def apply(hasError: Boolean, results: js.Array[BatchRequestResult]): BatchRequestResults = {
+    inline def apply(hasError: Boolean, results: js.Array[BatchRequestResult]): BatchRequestResults = {
       val __obj = js.Dynamic.literal(hasError = hasError.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
       __obj.asInstanceOf[BatchRequestResults]
     }
     
-    @scala.inline
-    implicit class BatchRequestResultsMutableBuilder[Self <: BatchRequestResults] (val x: Self) extends AnyVal {
+    extension [Self <: BatchRequestResults](x: Self) {
       
-      @scala.inline
-      def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
+      inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResults(value: js.Array[BatchRequestResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[BatchRequestResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsVarargs(value: BatchRequestResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: BatchRequestResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     }
   }
   
@@ -163,26 +150,20 @@ object chatterMod {
   }
   object RequestParams {
     
-    @scala.inline
-    def apply(method: String, url: String): RequestParams = {
+    inline def apply(method: String, url: String): RequestParams = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestParams]
     }
     
-    @scala.inline
-    implicit class RequestParamsMutableBuilder[Self <: RequestParams] (val x: Self) extends AnyVal {
+    extension [Self <: RequestParams](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

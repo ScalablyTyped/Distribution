@@ -32,8 +32,7 @@ trait INDStreamParser extends StObject {
 }
 object INDStreamParser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beginOfStream: () => Unit,
     endOfStream: () => Unit,
     getStreamInformation: IMediaStreamDescriptor => StreamType,
@@ -44,22 +43,16 @@ object INDStreamParser {
     __obj.asInstanceOf[INDStreamParser]
   }
   
-  @scala.inline
-  implicit class INDStreamParserMutableBuilder[Self <: INDStreamParser] (val x: Self) extends AnyVal {
+  extension [Self <: INDStreamParser](x: Self) {
     
-    @scala.inline
-    def setBeginOfStream(value: () => Unit): Self = StObject.set(x, "beginOfStream", js.Any.fromFunction0(value))
+    inline def setBeginOfStream(value: () => Unit): Self = StObject.set(x, "beginOfStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndOfStream(value: () => Unit): Self = StObject.set(x, "endOfStream", js.Any.fromFunction0(value))
+    inline def setEndOfStream(value: () => Unit): Self = StObject.set(x, "endOfStream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStreamInformation(value: IMediaStreamDescriptor => StreamType): Self = StObject.set(x, "getStreamInformation", js.Any.fromFunction1(value))
+    inline def setGetStreamInformation(value: IMediaStreamDescriptor => StreamType): Self = StObject.set(x, "getStreamInformation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNotifier(value: NDStreamParserNotifier): Self = StObject.set(x, "notifier", value.asInstanceOf[js.Any])
+    inline def setNotifier(value: NDStreamParserNotifier): Self = StObject.set(x, "notifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseData(value: js.Array[Double] => Unit): Self = StObject.set(x, "parseData", js.Any.fromFunction1(value))
+    inline def setParseData(value: js.Array[Double] => Unit): Self = StObject.set(x, "parseData", js.Any.fromFunction1(value))
   }
 }

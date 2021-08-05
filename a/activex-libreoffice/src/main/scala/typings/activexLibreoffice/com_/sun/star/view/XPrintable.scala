@@ -43,8 +43,7 @@ trait XPrintable
 }
 object XPrintable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Printer: SafeArray[PropertyValue],
     acquire: () => Unit,
     getPrinter: () => SafeArray[PropertyValue],
@@ -57,19 +56,14 @@ object XPrintable {
     __obj.asInstanceOf[XPrintable]
   }
   
-  @scala.inline
-  implicit class XPrintableMutableBuilder[Self <: XPrintable] (val x: Self) extends AnyVal {
+  extension [Self <: XPrintable](x: Self) {
     
-    @scala.inline
-    def setGetPrinter(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPrinter", js.Any.fromFunction0(value))
+    inline def setGetPrinter(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPrinter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrint(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "print", js.Any.fromFunction1(value))
+    inline def setPrint(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "print", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrinter(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Printer", value.asInstanceOf[js.Any])
+    inline def setPrinter(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Printer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPrinter(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setPrinter", js.Any.fromFunction1(value))
+    inline def setSetPrinter(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setPrinter", js.Any.fromFunction1(value))
   }
 }

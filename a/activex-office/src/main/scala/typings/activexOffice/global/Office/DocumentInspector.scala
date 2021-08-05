@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.DocumentInspector")
 @js.native
-class DocumentInspector protected ()
+/* private */ class DocumentInspector ()
   extends StObject
      with typings.activexOffice.Office.DocumentInspector {
   
@@ -29,7 +29,7 @@ class DocumentInspector protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.DocumentInspector_typekey")
   var OfficeDotDocumentInspector_typekey: typings.activexOffice.Office.DocumentInspector = js.native
   

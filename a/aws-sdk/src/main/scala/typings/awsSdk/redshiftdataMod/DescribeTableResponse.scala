@@ -23,34 +23,25 @@ trait DescribeTableResponse extends StObject {
 }
 object DescribeTableResponse {
   
-  @scala.inline
-  def apply(): DescribeTableResponse = {
+  inline def apply(): DescribeTableResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTableResponse]
   }
   
-  @scala.inline
-  implicit class DescribeTableResponseMutableBuilder[Self <: DescribeTableResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTableResponse](x: Self) {
     
-    @scala.inline
-    def setColumnList(value: ColumnList): Self = StObject.set(x, "ColumnList", value.asInstanceOf[js.Any])
+    inline def setColumnList(value: ColumnList): Self = StObject.set(x, "ColumnList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnListUndefined: Self = StObject.set(x, "ColumnList", js.undefined)
+    inline def setColumnListUndefined: Self = StObject.set(x, "ColumnList", js.undefined)
     
-    @scala.inline
-    def setColumnListVarargs(value: ColumnMetadata*): Self = StObject.set(x, "ColumnList", js.Array(value :_*))
+    inline def setColumnListVarargs(value: ColumnMetadata*): Self = StObject.set(x, "ColumnList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+    inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
   }
 }

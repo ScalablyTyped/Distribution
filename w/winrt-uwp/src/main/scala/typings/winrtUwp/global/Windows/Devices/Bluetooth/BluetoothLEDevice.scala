@@ -24,8 +24,7 @@ object BluetoothLEDevice {
     * @return Returns an asynchronous operation that completes with the BluetoothLEDevice object.
     */
   /* static member */
-  @scala.inline
-  def fromBluetoothAddressAsync(
+  inline def fromBluetoothAddressAsync(
     bluetoothAddress: Double,
     bluetoothAddressType: typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothAddressType
   ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEDevice] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBluetoothAddressAsync")(bluetoothAddress.asInstanceOf[js.Any], bluetoothAddressType.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEDevice]]
@@ -36,16 +35,14 @@ object BluetoothLEDevice {
     * @return After the asynchronous operation completes, returns the BluetoothLEDevice object with the given Id.
     */
   /* static member */
-  @scala.inline
-  def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEDevice]]
+  inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEDevice]]
   
   /**
     * Gets an Advanced Query Syntax (AQS) string for identifying all Bluetooth Low Energy (LE) devices. This string is passed to the FindAllAsync or CreateWatcher method in order to get a list of Bluetooth LE devices.
     * @return The device selector for this device.
     */
   /* static member */
-  @scala.inline
-  def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+  inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
   
   /**
     * Creates an Advanced Query Syntax (AQS) filter string from a BluetoothLEAppearance object. The AQS string is passed into the CreateWatcher method to return a collection of DeviceInformation objects with the specified appearance.
@@ -53,8 +50,7 @@ object BluetoothLEDevice {
     * @return An AQS string that can be passed as a parameter to the CreateWatcher method.
     */
   /* static member */
-  @scala.inline
-  def getDeviceSelectorFromAppearance(appearance: typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearance): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromAppearance")(appearance.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDeviceSelectorFromAppearance(appearance: typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearance): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromAppearance")(appearance.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates an Advanced Query Syntax (AQS) filter string from a 64-bit address that represents a Bluetooth LE device. The AQS string is passed into the CreateWatcher method to return a collection of DeviceInformation objects.
@@ -62,8 +58,7 @@ object BluetoothLEDevice {
     * @return An AQS string that can be passed as a parameter to the CreateWatcher method.
     */
   /* static member */
-  @scala.inline
-  def getDeviceSelectorFromBluetoothAddress(bluetoothAddress: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromBluetoothAddress")(bluetoothAddress.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDeviceSelectorFromBluetoothAddress(bluetoothAddress: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromBluetoothAddress")(bluetoothAddress.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
     * Creates an Advanced Query Syntax (AQS) filter string from a 64-bit address and address type that represents a Bluetooth LE device. The AQS string is passed into the CreateWatcher method.
     * @param bluetoothAddress A 64-bit Bluetooth LE device address used for constructing the AQS string.
@@ -71,8 +66,7 @@ object BluetoothLEDevice {
     * @return An AQS string that can be passed as a parameter to the CreateWatcher method.
     */
   /* static member */
-  @scala.inline
-  def getDeviceSelectorFromBluetoothAddress(
+  inline def getDeviceSelectorFromBluetoothAddress(
     bluetoothAddress: Double,
     bluetoothAddressType: typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothAddressType
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromBluetoothAddress")(bluetoothAddress.asInstanceOf[js.Any], bluetoothAddressType.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -83,8 +77,7 @@ object BluetoothLEDevice {
     * @return An AQS string that can be passed as a parameter to the CreateWatcher method.
     */
   /* static member */
-  @scala.inline
-  def getDeviceSelectorFromConnectionStatus(connectionStatus: typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothConnectionStatus): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromConnectionStatus")(connectionStatus.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDeviceSelectorFromConnectionStatus(connectionStatus: typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothConnectionStatus): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromConnectionStatus")(connectionStatus.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates an Advanced Query Syntax (AQS) filter string that contains a query for the Bluetooth LE device name. The AQS string is passed into the CreateWatcher method to return a collection of DeviceInformation objects containing the specified Bluetooth LE device name.
@@ -92,8 +85,7 @@ object BluetoothLEDevice {
     * @return An AQS string that is passed as a parameter to the CreateWatcher method.
     */
   /* static member */
-  @scala.inline
-  def getDeviceSelectorFromDeviceName(deviceName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromDeviceName")(deviceName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDeviceSelectorFromDeviceName(deviceName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromDeviceName")(deviceName.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates an Advanced Query Syntax (AQS) filter string that contains a query for Bluetooth LE devices that are either paired or unpaired. The AQS string is passed into the CreateWatcher method to return a collection of DeviceInformation objects.
@@ -101,6 +93,5 @@ object BluetoothLEDevice {
     * @return An AQS string that can be passed as a parameter to the CreateWatcher method.
     */
   /* static member */
-  @scala.inline
-  def getDeviceSelectorFromPairingState(pairingState: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromPairingState")(pairingState.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDeviceSelectorFromPairingState(pairingState: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromPairingState")(pairingState.asInstanceOf[js.Any]).asInstanceOf[String]
 }

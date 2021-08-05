@@ -11,6 +11,5 @@ object resizeObserverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def observeResize(element: HTMLElement, callback: js.Function1[/* entry */ js.Any, Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("observeResize")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def observeResize(element: HTMLElement, callback: js.Function1[/* entry */ js.Any, Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("observeResize")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
 }

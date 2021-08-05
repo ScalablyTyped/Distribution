@@ -102,77 +102,66 @@ object Spatial {
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.doubleTap")
     @js.native
     def doubleTap: js.Any = js.native
-    @scala.inline
-    def doubleTap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("doubleTap")(x.asInstanceOf[js.Any])
+    inline def doubleTap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("doubleTap")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.hold")
     @js.native
     def hold: js.Any = js.native
-    @scala.inline
-    def hold_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hold")(x.asInstanceOf[js.Any])
+    inline def hold_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hold")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.manipulationTranslate")
     @js.native
     def manipulationTranslate: js.Any = js.native
-    @scala.inline
-    def manipulationTranslate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("manipulationTranslate")(x.asInstanceOf[js.Any])
+    inline def manipulationTranslate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("manipulationTranslate")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.navigationRailsX")
     @js.native
     def navigationRailsX: js.Any = js.native
-    @scala.inline
-    def navigationRailsX_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationRailsX")(x.asInstanceOf[js.Any])
+    inline def navigationRailsX_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationRailsX")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.navigationRailsY")
     @js.native
     def navigationRailsY: js.Any = js.native
-    @scala.inline
-    def navigationRailsY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationRailsY")(x.asInstanceOf[js.Any])
+    inline def navigationRailsY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationRailsY")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.navigationRailsZ")
     @js.native
     def navigationRailsZ: js.Any = js.native
-    @scala.inline
-    def navigationRailsZ_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationRailsZ")(x.asInstanceOf[js.Any])
+    inline def navigationRailsZ_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationRailsZ")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.navigationX")
     @js.native
     def navigationX: js.Any = js.native
-    @scala.inline
-    def navigationX_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationX")(x.asInstanceOf[js.Any])
+    inline def navigationX_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationX")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.navigationY")
     @js.native
     def navigationY: js.Any = js.native
-    @scala.inline
-    def navigationY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationY")(x.asInstanceOf[js.Any])
+    inline def navigationY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationY")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.navigationZ")
     @js.native
     def navigationZ: js.Any = js.native
-    @scala.inline
-    def navigationZ_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationZ")(x.asInstanceOf[js.Any])
+    inline def navigationZ_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("navigationZ")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.none")
     @js.native
     def none: js.Any = js.native
-    @scala.inline
-    def none_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+    inline def none_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureSettings.tap")
     @js.native
     def tap: js.Any = js.native
-    @scala.inline
-    def tap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tap")(x.asInstanceOf[js.Any])
+    inline def tap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tap")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialHoldCanceledEventArgs")
@@ -289,8 +278,7 @@ object Spatial {
     @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionManager.getForCurrentView")
     @js.native
     def getForCurrentView: js.Any = js.native
-    @scala.inline
-    def getForCurrentView_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getForCurrentView")(x.asInstanceOf[js.Any])
+    inline def getForCurrentView_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getForCurrentView")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSource")
@@ -327,28 +315,24 @@ object Spatial {
     @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceKind.controller")
     @js.native
     def controller: js.Any = js.native
-    @scala.inline
-    def controller_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controller")(x.asInstanceOf[js.Any])
+    inline def controller_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controller")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceKind.hand")
     @js.native
     def hand: js.Any = js.native
-    @scala.inline
-    def hand_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hand")(x.asInstanceOf[js.Any])
+    inline def hand_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hand")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceKind.other")
     @js.native
     def other: js.Any = js.native
-    @scala.inline
-    def other_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("other")(x.asInstanceOf[js.Any])
+    inline def other_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("other")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceKind.voice")
     @js.native
     def voice: js.Any = js.native
-    @scala.inline
-    def voice_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("voice")(x.asInstanceOf[js.Any])
+    inline def voice_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("voice")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceLocation")
@@ -559,8 +543,7 @@ object Spatial {
     @JSGlobal("Windows.UI.Input.Spatial.SpatialPointerPose.tryGetAtTimestamp")
     @js.native
     def tryGetAtTimestamp: js.Any = js.native
-    @scala.inline
-    def tryGetAtTimestamp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tryGetAtTimestamp")(x.asInstanceOf[js.Any])
+    inline def tryGetAtTimestamp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tryGetAtTimestamp")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.Input.Spatial.SpatialRecognitionEndedEventArgs")

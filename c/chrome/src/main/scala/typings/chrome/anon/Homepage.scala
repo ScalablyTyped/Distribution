@@ -15,34 +15,25 @@ trait Homepage extends StObject {
 }
 object Homepage {
   
-  @scala.inline
-  def apply(): Homepage = {
+  inline def apply(): Homepage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Homepage]
   }
   
-  @scala.inline
-  implicit class HomepageMutableBuilder[Self <: Homepage] (val x: Self) extends AnyVal {
+  extension [Self <: Homepage](x: Self) {
     
-    @scala.inline
-    def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
+    inline def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
+    inline def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
     
-    @scala.inline
-    def setSearch_provider(value: SearchProvider): Self = StObject.set(x, "search_provider", value.asInstanceOf[js.Any])
+    inline def setSearch_provider(value: SearchProvider): Self = StObject.set(x, "search_provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch_providerUndefined: Self = StObject.set(x, "search_provider", js.undefined)
+    inline def setSearch_providerUndefined: Self = StObject.set(x, "search_provider", js.undefined)
     
-    @scala.inline
-    def setStartup_pages(value: js.Array[String]): Self = StObject.set(x, "startup_pages", value.asInstanceOf[js.Any])
+    inline def setStartup_pages(value: js.Array[String]): Self = StObject.set(x, "startup_pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartup_pagesUndefined: Self = StObject.set(x, "startup_pages", js.undefined)
+    inline def setStartup_pagesUndefined: Self = StObject.set(x, "startup_pages", js.undefined)
     
-    @scala.inline
-    def setStartup_pagesVarargs(value: String*): Self = StObject.set(x, "startup_pages", js.Array(value :_*))
+    inline def setStartup_pagesVarargs(value: String*): Self = StObject.set(x, "startup_pages", js.Array(value :_*))
   }
 }

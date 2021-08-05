@@ -20,8 +20,7 @@ trait XDataTransferEventListener
 }
 object XDataTransferEventListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     cancelled: DataTransferEvent => Unit,
     disposing: EventObject => Unit,
@@ -33,13 +32,10 @@ object XDataTransferEventListener {
     __obj.asInstanceOf[XDataTransferEventListener]
   }
   
-  @scala.inline
-  implicit class XDataTransferEventListenerMutableBuilder[Self <: XDataTransferEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: XDataTransferEventListener](x: Self) {
     
-    @scala.inline
-    def setCancelled(value: DataTransferEvent => Unit): Self = StObject.set(x, "cancelled", js.Any.fromFunction1(value))
+    inline def setCancelled(value: DataTransferEvent => Unit): Self = StObject.set(x, "cancelled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFinished(value: DataTransferEvent => Unit): Self = StObject.set(x, "finished", js.Any.fromFunction1(value))
+    inline def setFinished(value: DataTransferEvent => Unit): Self = StObject.set(x, "finished", js.Any.fromFunction1(value))
   }
 }

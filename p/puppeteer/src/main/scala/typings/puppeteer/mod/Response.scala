@@ -54,8 +54,7 @@ trait Response extends StObject {
 }
 object Response {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buffer: () => js.Promise[Buffer],
     frame: () => Frame | Null,
     fromCache: () => Boolean,
@@ -75,49 +74,34 @@ object Response {
     __obj.asInstanceOf[Response]
   }
   
-  @scala.inline
-  implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+  extension [Self <: Response](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: () => js.Promise[Buffer]): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
+    inline def setBuffer(value: () => js.Promise[Buffer]): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFrame(value: () => Frame | Null): Self = StObject.set(x, "frame", js.Any.fromFunction0(value))
+    inline def setFrame(value: () => Frame | Null): Self = StObject.set(x, "frame", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFromCache(value: () => Boolean): Self = StObject.set(x, "fromCache", js.Any.fromFunction0(value))
+    inline def setFromCache(value: () => Boolean): Self = StObject.set(x, "fromCache", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFromServiceWorker(value: () => Boolean): Self = StObject.set(x, "fromServiceWorker", js.Any.fromFunction0(value))
+    inline def setFromServiceWorker(value: () => Boolean): Self = StObject.set(x, "fromServiceWorker", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHeaders(value: () => Headers): Self = StObject.set(x, "headers", js.Any.fromFunction0(value))
+    inline def setHeaders(value: () => Headers): Self = StObject.set(x, "headers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+    inline def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOk(value: () => Boolean): Self = StObject.set(x, "ok", js.Any.fromFunction0(value))
+    inline def setOk(value: () => Boolean): Self = StObject.set(x, "ok", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoteAddress(value: () => RemoteInfo): Self = StObject.set(x, "remoteAddress", js.Any.fromFunction0(value))
+    inline def setRemoteAddress(value: () => RemoteInfo): Self = StObject.set(x, "remoteAddress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequest(value: () => Request): Self = StObject.set(x, "request", js.Any.fromFunction0(value))
+    inline def setRequest(value: () => Request): Self = StObject.set(x, "request", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSecurityDetails(value: () => SecurityDetails | Null): Self = StObject.set(x, "securityDetails", js.Any.fromFunction0(value))
+    inline def setSecurityDetails(value: () => SecurityDetails | Null): Self = StObject.set(x, "securityDetails", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStatus(value: () => Double): Self = StObject.set(x, "status", js.Any.fromFunction0(value))
+    inline def setStatus(value: () => Double): Self = StObject.set(x, "status", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStatusText(value: () => String): Self = StObject.set(x, "statusText", js.Any.fromFunction0(value))
+    inline def setStatusText(value: () => String): Self = StObject.set(x, "statusText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+    inline def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUrl(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
+    inline def setUrl(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
   }
 }

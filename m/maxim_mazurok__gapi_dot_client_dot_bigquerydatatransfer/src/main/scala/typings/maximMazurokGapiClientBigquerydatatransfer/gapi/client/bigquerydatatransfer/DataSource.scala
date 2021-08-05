@@ -68,127 +68,87 @@ trait DataSource extends StObject {
 }
 object DataSource {
   
-  @scala.inline
-  def apply(): DataSource = {
+  inline def apply(): DataSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSource]
   }
   
-  @scala.inline
-  implicit class DataSourceMutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
+  extension [Self <: DataSource](x: Self) {
     
-    @scala.inline
-    def setAuthorizationType(value: String): Self = StObject.set(x, "authorizationType", value.asInstanceOf[js.Any])
+    inline def setAuthorizationType(value: String): Self = StObject.set(x, "authorizationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationTypeUndefined: Self = StObject.set(x, "authorizationType", js.undefined)
+    inline def setAuthorizationTypeUndefined: Self = StObject.set(x, "authorizationType", js.undefined)
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setDataRefreshType(value: String): Self = StObject.set(x, "dataRefreshType", value.asInstanceOf[js.Any])
+    inline def setDataRefreshType(value: String): Self = StObject.set(x, "dataRefreshType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRefreshTypeUndefined: Self = StObject.set(x, "dataRefreshType", js.undefined)
+    inline def setDataRefreshTypeUndefined: Self = StObject.set(x, "dataRefreshType", js.undefined)
     
-    @scala.inline
-    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
-    @scala.inline
-    def setDefaultDataRefreshWindowDays(value: Double): Self = StObject.set(x, "defaultDataRefreshWindowDays", value.asInstanceOf[js.Any])
+    inline def setDefaultDataRefreshWindowDays(value: Double): Self = StObject.set(x, "defaultDataRefreshWindowDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultDataRefreshWindowDaysUndefined: Self = StObject.set(x, "defaultDataRefreshWindowDays", js.undefined)
+    inline def setDefaultDataRefreshWindowDaysUndefined: Self = StObject.set(x, "defaultDataRefreshWindowDays", js.undefined)
     
-    @scala.inline
-    def setDefaultSchedule(value: String): Self = StObject.set(x, "defaultSchedule", value.asInstanceOf[js.Any])
+    inline def setDefaultSchedule(value: String): Self = StObject.set(x, "defaultSchedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultScheduleUndefined: Self = StObject.set(x, "defaultSchedule", js.undefined)
+    inline def setDefaultScheduleUndefined: Self = StObject.set(x, "defaultSchedule", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setHelpUrl(value: String): Self = StObject.set(x, "helpUrl", value.asInstanceOf[js.Any])
+    inline def setHelpUrl(value: String): Self = StObject.set(x, "helpUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpUrlUndefined: Self = StObject.set(x, "helpUrl", js.undefined)
+    inline def setHelpUrlUndefined: Self = StObject.set(x, "helpUrl", js.undefined)
     
-    @scala.inline
-    def setManualRunsDisabled(value: Boolean): Self = StObject.set(x, "manualRunsDisabled", value.asInstanceOf[js.Any])
+    inline def setManualRunsDisabled(value: Boolean): Self = StObject.set(x, "manualRunsDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualRunsDisabledUndefined: Self = StObject.set(x, "manualRunsDisabled", js.undefined)
+    inline def setManualRunsDisabledUndefined: Self = StObject.set(x, "manualRunsDisabled", js.undefined)
     
-    @scala.inline
-    def setMinimumScheduleInterval(value: String): Self = StObject.set(x, "minimumScheduleInterval", value.asInstanceOf[js.Any])
+    inline def setMinimumScheduleInterval(value: String): Self = StObject.set(x, "minimumScheduleInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumScheduleIntervalUndefined: Self = StObject.set(x, "minimumScheduleInterval", js.undefined)
+    inline def setMinimumScheduleIntervalUndefined: Self = StObject.set(x, "minimumScheduleInterval", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParameters(value: js.Array[DataSourceParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[DataSourceParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: DataSourceParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: DataSourceParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+    inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     
-    @scala.inline
-    def setSupportsCustomSchedule(value: Boolean): Self = StObject.set(x, "supportsCustomSchedule", value.asInstanceOf[js.Any])
+    inline def setSupportsCustomSchedule(value: Boolean): Self = StObject.set(x, "supportsCustomSchedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsCustomScheduleUndefined: Self = StObject.set(x, "supportsCustomSchedule", js.undefined)
+    inline def setSupportsCustomScheduleUndefined: Self = StObject.set(x, "supportsCustomSchedule", js.undefined)
     
-    @scala.inline
-    def setSupportsMultipleTransfers(value: Boolean): Self = StObject.set(x, "supportsMultipleTransfers", value.asInstanceOf[js.Any])
+    inline def setSupportsMultipleTransfers(value: Boolean): Self = StObject.set(x, "supportsMultipleTransfers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsMultipleTransfersUndefined: Self = StObject.set(x, "supportsMultipleTransfers", js.undefined)
+    inline def setSupportsMultipleTransfersUndefined: Self = StObject.set(x, "supportsMultipleTransfers", js.undefined)
     
-    @scala.inline
-    def setTransferType(value: String): Self = StObject.set(x, "transferType", value.asInstanceOf[js.Any])
+    inline def setTransferType(value: String): Self = StObject.set(x, "transferType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferTypeUndefined: Self = StObject.set(x, "transferType", js.undefined)
+    inline def setTransferTypeUndefined: Self = StObject.set(x, "transferType", js.undefined)
     
-    @scala.inline
-    def setUpdateDeadlineSeconds(value: Double): Self = StObject.set(x, "updateDeadlineSeconds", value.asInstanceOf[js.Any])
+    inline def setUpdateDeadlineSeconds(value: Double): Self = StObject.set(x, "updateDeadlineSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDeadlineSecondsUndefined: Self = StObject.set(x, "updateDeadlineSeconds", js.undefined)
+    inline def setUpdateDeadlineSecondsUndefined: Self = StObject.set(x, "updateDeadlineSeconds", js.undefined)
   }
 }

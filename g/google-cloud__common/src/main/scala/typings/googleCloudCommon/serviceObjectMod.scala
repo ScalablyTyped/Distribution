@@ -48,7 +48,7 @@ object serviceObjectMod {
     def create(options: CreateOptions): js.Promise[CreateResponse[T]] = js.native
     def create(options: CreateOptions, callback: CreateCallback[T]): Unit = js.native
     
-    var createMethod: js.Any = js.native
+    /* private */ var createMethod: js.Any = js.native
     
     /**
       * Delete the object.
@@ -115,7 +115,7 @@ object serviceObjectMod {
     
     var metadata: Metadata = js.native
     
-    var methods: Methods = js.native
+    /* protected */ var methods: Methods = js.native
     
     var parent: ServiceObjectParent = js.native
     
@@ -148,7 +148,7 @@ object serviceObjectMod {
       * @param {string} reqOpts.uri - A URI relative to the baseUrl.
       * @param {function} callback - The callback function passed to `request`.
       */
-    var request_ : js.Any = js.native
+    /* private */ var request_ : js.Any = js.native
     
     /**
       * Set the metadata for this object.
@@ -185,20 +185,16 @@ object serviceObjectMod {
   }
   object DeleteOptions {
     
-    @scala.inline
-    def apply(): DeleteOptions = {
+    inline def apply(): DeleteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeleteOptions]
     }
     
-    @scala.inline
-    implicit class DeleteOptionsMutableBuilder[Self <: DeleteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteOptions](x: Self) {
       
-      @scala.inline
-      def setIgnoreNotFound(value: Boolean): Self = StObject.set(x, "ignoreNotFound", value.asInstanceOf[js.Any])
+      inline def setIgnoreNotFound(value: Boolean): Self = StObject.set(x, "ignoreNotFound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreNotFoundUndefined: Self = StObject.set(x, "ignoreNotFound", js.undefined)
+      inline def setIgnoreNotFoundUndefined: Self = StObject.set(x, "ignoreNotFound", js.undefined)
     }
   }
   
@@ -215,20 +211,16 @@ object serviceObjectMod {
   }
   object GetConfig {
     
-    @scala.inline
-    def apply(): GetConfig = {
+    inline def apply(): GetConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetConfig]
     }
     
-    @scala.inline
-    implicit class GetConfigMutableBuilder[Self <: GetConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GetConfig](x: Self) {
       
-      @scala.inline
-      def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
+      inline def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCreateUndefined: Self = StObject.set(x, "autoCreate", js.undefined)
+      inline def setAutoCreateUndefined: Self = StObject.set(x, "autoCreate", js.undefined)
     }
   }
   
@@ -240,8 +232,7 @@ object serviceObjectMod {
        with CreateOptions
   object GetOrCreateOptions {
     
-    @scala.inline
-    def apply(): GetOrCreateOptions = {
+    inline def apply(): GetOrCreateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetOrCreateOptions]
     }
@@ -262,17 +253,14 @@ object serviceObjectMod {
   }
   object Interceptor {
     
-    @scala.inline
-    def apply(request: Options => DecorateRequestOptions): Interceptor = {
+    inline def apply(request: Options => DecorateRequestOptions): Interceptor = {
       val __obj = js.Dynamic.literal(request = js.Any.fromFunction1(request))
       __obj.asInstanceOf[Interceptor]
     }
     
-    @scala.inline
-    implicit class InterceptorMutableBuilder[Self <: Interceptor] (val x: Self) extends AnyVal {
+    extension [Self <: Interceptor](x: Self) {
       
-      @scala.inline
-      def setRequest(value: Options => DecorateRequestOptions): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+      inline def setRequest(value: Options => DecorateRequestOptions): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     }
   }
   
@@ -334,47 +322,34 @@ object serviceObjectMod {
   }
   object ServiceObjectConfig {
     
-    @scala.inline
-    def apply(parent: ServiceObjectParent): ServiceObjectConfig = {
+    inline def apply(parent: ServiceObjectParent): ServiceObjectConfig = {
       val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceObjectConfig]
     }
     
-    @scala.inline
-    implicit class ServiceObjectConfigMutableBuilder[Self <: ServiceObjectConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceObjectConfig](x: Self) {
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setCreateMethod(value: js.Function): Self = StObject.set(x, "createMethod", value.asInstanceOf[js.Any])
+      inline def setCreateMethod(value: js.Function): Self = StObject.set(x, "createMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateMethodUndefined: Self = StObject.set(x, "createMethod", js.undefined)
+      inline def setCreateMethodUndefined: Self = StObject.set(x, "createMethod", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMethods(value: Methods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: Methods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+      inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      @scala.inline
-      def setParent(value: ServiceObjectParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: ServiceObjectParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPollIntervalMs(value: Double): Self = StObject.set(x, "pollIntervalMs", value.asInstanceOf[js.Any])
+      inline def setPollIntervalMs(value: Double): Self = StObject.set(x, "pollIntervalMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPollIntervalMsUndefined: Self = StObject.set(x, "pollIntervalMs", js.undefined)
+      inline def setPollIntervalMsUndefined: Self = StObject.set(x, "pollIntervalMs", js.undefined)
     }
   }
   
@@ -390,8 +365,7 @@ object serviceObjectMod {
   }
   object ServiceObjectParent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getRequestInterceptors: () => js.Array[js.Function],
       interceptors: js.Array[Interceptor],
       request: (DecorateRequestOptions, BodyResponseCallback) => Unit,
@@ -401,23 +375,17 @@ object serviceObjectMod {
       __obj.asInstanceOf[ServiceObjectParent]
     }
     
-    @scala.inline
-    implicit class ServiceObjectParentMutableBuilder[Self <: ServiceObjectParent] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceObjectParent](x: Self) {
       
-      @scala.inline
-      def setGetRequestInterceptors(value: () => js.Array[js.Function]): Self = StObject.set(x, "getRequestInterceptors", js.Any.fromFunction0(value))
+      inline def setGetRequestInterceptors(value: () => js.Array[js.Function]): Self = StObject.set(x, "getRequestInterceptors", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInterceptors(value: js.Array[Interceptor]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
+      inline def setInterceptors(value: js.Array[Interceptor]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
+      inline def setInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
       
-      @scala.inline
-      def setRequest(value: (DecorateRequestOptions, BodyResponseCallback) => Unit): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
+      inline def setRequest(value: (DecorateRequestOptions, BodyResponseCallback) => Unit): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRequestStream(value: DecorateRequestOptions => Request): Self = StObject.set(x, "requestStream", js.Any.fromFunction1(value))
+      inline def setRequestStream(value: DecorateRequestOptions => Request): Self = StObject.set(x, "requestStream", js.Any.fromFunction1(value))
     }
   }
   

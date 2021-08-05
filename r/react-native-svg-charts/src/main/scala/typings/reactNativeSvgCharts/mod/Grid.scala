@@ -27,6 +27,5 @@ object Grid {
   @JSImport("react-native-svg-charts", "Grid.Direction")
   @js.native
   def Direction: BOTH = js.native
-  @scala.inline
-  def Direction_=(x: BOTH): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Direction")(x.asInstanceOf[js.Any])
+  inline def Direction_=(x: BOTH): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Direction")(x.asInstanceOf[js.Any])
 }

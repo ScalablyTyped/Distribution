@@ -12,25 +12,19 @@ trait UIkitVideoOptions extends StObject {
 }
 object UIkitVideoOptions {
   
-  @scala.inline
-  def apply(): UIkitVideoOptions = {
+  inline def apply(): UIkitVideoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UIkitVideoOptions]
   }
   
-  @scala.inline
-  implicit class UIkitVideoOptionsMutableBuilder[Self <: UIkitVideoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitVideoOptions](x: Self) {
     
-    @scala.inline
-    def setAutomute(value: Boolean): Self = StObject.set(x, "automute", value.asInstanceOf[js.Any])
+    inline def setAutomute(value: Boolean): Self = StObject.set(x, "automute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomuteUndefined: Self = StObject.set(x, "automute", js.undefined)
+    inline def setAutomuteUndefined: Self = StObject.set(x, "automute", js.undefined)
     
-    @scala.inline
-    def setAutoplay(value: Boolean | String): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+    inline def setAutoplay(value: Boolean | String): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+    inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
   }
 }

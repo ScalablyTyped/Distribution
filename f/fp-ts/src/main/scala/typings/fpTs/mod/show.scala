@@ -13,15 +13,13 @@ object show {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStructShow[O /* <: ReadonlyRecord_[String, js.Any] */](
+  inline def getStructShow[O /* <: ReadonlyRecord_[String, js.Any] */](
     shows: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof O ]: fp-ts.fp-ts/lib/Show.Show<O[K]>}
     */ typings.fpTs.fpTsStrings.getStructShow & TopLevel[O]
   ): Show[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStructShow")(shows.asInstanceOf[js.Any]).asInstanceOf[Show[O]]
   
-  @scala.inline
-  def getTupleShow[T /* <: js.Array[Show[js.Any]] */](
+  inline def getTupleShow[T /* <: js.Array[Show[js.Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param shows because its type T is not an array type */ shows: T
   ): Show[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 

@@ -35,8 +35,7 @@ trait NumberConstructor extends StObject {
 }
 object NumberConstructor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MAX_VALUE: Double,
     MIN_VALUE: Double,
     NEGATIVE_INFINITY: Double,
@@ -47,22 +46,16 @@ object NumberConstructor {
     __obj.asInstanceOf[NumberConstructor]
   }
   
-  @scala.inline
-  implicit class NumberConstructorMutableBuilder[Self <: NumberConstructor] (val x: Self) extends AnyVal {
+  extension [Self <: NumberConstructor](x: Self) {
     
-    @scala.inline
-    def setMAX_VALUE(value: Double): Self = StObject.set(x, "MAX_VALUE", value.asInstanceOf[js.Any])
+    inline def setMAX_VALUE(value: Double): Self = StObject.set(x, "MAX_VALUE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMIN_VALUE(value: Double): Self = StObject.set(x, "MIN_VALUE", value.asInstanceOf[js.Any])
+    inline def setMIN_VALUE(value: Double): Self = StObject.set(x, "MIN_VALUE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNEGATIVE_INFINITY(value: Double): Self = StObject.set(x, "NEGATIVE_INFINITY", value.asInstanceOf[js.Any])
+    inline def setNEGATIVE_INFINITY(value: Double): Self = StObject.set(x, "NEGATIVE_INFINITY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNaN(value: Double): Self = StObject.set(x, "NaN", value.asInstanceOf[js.Any])
+    inline def setNaN(value: Double): Self = StObject.set(x, "NaN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPOSITIVE_INFINITY(value: Double): Self = StObject.set(x, "POSITIVE_INFINITY", value.asInstanceOf[js.Any])
+    inline def setPOSITIVE_INFINITY(value: Double): Self = StObject.set(x, "POSITIVE_INFINITY", value.asInstanceOf[js.Any])
   }
 }

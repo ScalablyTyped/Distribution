@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UnixSocketType extends StObject
 object UnixSocketType {
   
-  @scala.inline
-  def `abstract`: typings.fridaGum.fridaGumStrings.`abstract` = "abstract".asInstanceOf[typings.fridaGum.fridaGumStrings.`abstract`]
+  inline def `abstract`: typings.fridaGum.fridaGumStrings.`abstract` = "abstract".asInstanceOf[typings.fridaGum.fridaGumStrings.`abstract`]
   
-  @scala.inline
-  def `abstract-padded`: typings.fridaGum.fridaGumStrings.`abstract-padded` = "abstract-padded".asInstanceOf[typings.fridaGum.fridaGumStrings.`abstract-padded`]
+  inline def `abstract-padded`: typings.fridaGum.fridaGumStrings.`abstract-padded` = "abstract-padded".asInstanceOf[typings.fridaGum.fridaGumStrings.`abstract-padded`]
   
-  @scala.inline
-  def anonymous: typings.fridaGum.fridaGumStrings.anonymous = "anonymous".asInstanceOf[typings.fridaGum.fridaGumStrings.anonymous]
+  inline def anonymous: typings.fridaGum.fridaGumStrings.anonymous = "anonymous".asInstanceOf[typings.fridaGum.fridaGumStrings.anonymous]
   
-  @scala.inline
-  def path: typings.fridaGum.fridaGumStrings.path = "path".asInstanceOf[typings.fridaGum.fridaGumStrings.path]
+  inline def path: typings.fridaGum.fridaGumStrings.path = "path".asInstanceOf[typings.fridaGum.fridaGumStrings.path]
 }

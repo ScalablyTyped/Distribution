@@ -18,28 +18,21 @@ trait ListStacksOutput extends StObject {
 }
 object ListStacksOutput {
   
-  @scala.inline
-  def apply(): ListStacksOutput = {
+  inline def apply(): ListStacksOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListStacksOutput]
   }
   
-  @scala.inline
-  implicit class ListStacksOutputMutableBuilder[Self <: ListStacksOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListStacksOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStackSummaries(value: StackSummaries): Self = StObject.set(x, "StackSummaries", value.asInstanceOf[js.Any])
+    inline def setStackSummaries(value: StackSummaries): Self = StObject.set(x, "StackSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackSummariesUndefined: Self = StObject.set(x, "StackSummaries", js.undefined)
+    inline def setStackSummariesUndefined: Self = StObject.set(x, "StackSummaries", js.undefined)
     
-    @scala.inline
-    def setStackSummariesVarargs(value: StackSummary*): Self = StObject.set(x, "StackSummaries", js.Array(value :_*))
+    inline def setStackSummariesVarargs(value: StackSummary*): Self = StObject.set(x, "StackSummaries", js.Array(value :_*))
   }
 }

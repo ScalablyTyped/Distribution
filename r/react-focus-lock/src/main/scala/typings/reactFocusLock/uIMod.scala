@@ -73,6 +73,5 @@ object uIMod {
     def this(props: AutoFocusProps, context: js.Any) = this()
   }
   
-  @scala.inline
-  def useFocusInside(node: RefObject[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusInside")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useFocusInside(node: RefObject[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusInside")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

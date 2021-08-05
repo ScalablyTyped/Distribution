@@ -131,8 +131,7 @@ trait IonDatetime extends StObject {
 }
 object IonDatetime {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancelText: String,
     disabled: Boolean,
     displayFormat: String,
@@ -145,163 +144,110 @@ object IonDatetime {
     __obj.asInstanceOf[IonDatetime]
   }
   
-  @scala.inline
-  implicit class IonDatetimeMutableBuilder[Self <: IonDatetime] (val x: Self) extends AnyVal {
+  extension [Self <: IonDatetime](x: Self) {
     
-    @scala.inline
-    def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+    inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayNames(value: js.Array[String] | String): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
+    inline def setDayNames(value: js.Array[String] | String): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayNamesUndefined: Self = StObject.set(x, "dayNames", js.undefined)
+    inline def setDayNamesUndefined: Self = StObject.set(x, "dayNames", js.undefined)
     
-    @scala.inline
-    def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
+    inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
     
-    @scala.inline
-    def setDayShortNames(value: js.Array[String] | String): Self = StObject.set(x, "dayShortNames", value.asInstanceOf[js.Any])
+    inline def setDayShortNames(value: js.Array[String] | String): Self = StObject.set(x, "dayShortNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayShortNamesUndefined: Self = StObject.set(x, "dayShortNames", js.undefined)
+    inline def setDayShortNamesUndefined: Self = StObject.set(x, "dayShortNames", js.undefined)
     
-    @scala.inline
-    def setDayShortNamesVarargs(value: String*): Self = StObject.set(x, "dayShortNames", js.Array(value :_*))
+    inline def setDayShortNamesVarargs(value: String*): Self = StObject.set(x, "dayShortNames", js.Array(value :_*))
     
-    @scala.inline
-    def setDayValues(value: js.Array[Double] | Double | String): Self = StObject.set(x, "dayValues", value.asInstanceOf[js.Any])
+    inline def setDayValues(value: js.Array[Double] | Double | String): Self = StObject.set(x, "dayValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayValuesUndefined: Self = StObject.set(x, "dayValues", js.undefined)
+    inline def setDayValuesUndefined: Self = StObject.set(x, "dayValues", js.undefined)
     
-    @scala.inline
-    def setDayValuesVarargs(value: Double*): Self = StObject.set(x, "dayValues", js.Array(value :_*))
+    inline def setDayValuesVarargs(value: Double*): Self = StObject.set(x, "dayValues", js.Array(value :_*))
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFormat(value: String): Self = StObject.set(x, "displayFormat", value.asInstanceOf[js.Any])
+    inline def setDisplayFormat(value: String): Self = StObject.set(x, "displayFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayTimezone(value: String): Self = StObject.set(x, "displayTimezone", value.asInstanceOf[js.Any])
+    inline def setDisplayTimezone(value: String): Self = StObject.set(x, "displayTimezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayTimezoneUndefined: Self = StObject.set(x, "displayTimezone", js.undefined)
+    inline def setDisplayTimezoneUndefined: Self = StObject.set(x, "displayTimezone", js.undefined)
     
-    @scala.inline
-    def setDoneText(value: String): Self = StObject.set(x, "doneText", value.asInstanceOf[js.Any])
+    inline def setDoneText(value: String): Self = StObject.set(x, "doneText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourValues(value: js.Array[Double] | Double | String): Self = StObject.set(x, "hourValues", value.asInstanceOf[js.Any])
+    inline def setHourValues(value: js.Array[Double] | Double | String): Self = StObject.set(x, "hourValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourValuesUndefined: Self = StObject.set(x, "hourValues", js.undefined)
+    inline def setHourValuesUndefined: Self = StObject.set(x, "hourValues", js.undefined)
     
-    @scala.inline
-    def setHourValuesVarargs(value: Double*): Self = StObject.set(x, "hourValues", js.Array(value :_*))
+    inline def setHourValuesVarargs(value: Double*): Self = StObject.set(x, "hourValues", js.Array(value :_*))
     
-    @scala.inline
-    def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setMinuteValues(value: js.Array[Double] | Double | String): Self = StObject.set(x, "minuteValues", value.asInstanceOf[js.Any])
+    inline def setMinuteValues(value: js.Array[Double] | Double | String): Self = StObject.set(x, "minuteValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinuteValuesUndefined: Self = StObject.set(x, "minuteValues", js.undefined)
+    inline def setMinuteValuesUndefined: Self = StObject.set(x, "minuteValues", js.undefined)
     
-    @scala.inline
-    def setMinuteValuesVarargs(value: Double*): Self = StObject.set(x, "minuteValues", js.Array(value :_*))
+    inline def setMinuteValuesVarargs(value: Double*): Self = StObject.set(x, "minuteValues", js.Array(value :_*))
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setMonthNames(value: js.Array[String] | String): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
+    inline def setMonthNames(value: js.Array[String] | String): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthNamesUndefined: Self = StObject.set(x, "monthNames", js.undefined)
+    inline def setMonthNamesUndefined: Self = StObject.set(x, "monthNames", js.undefined)
     
-    @scala.inline
-    def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
+    inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
     
-    @scala.inline
-    def setMonthShortNames(value: js.Array[String] | String): Self = StObject.set(x, "monthShortNames", value.asInstanceOf[js.Any])
+    inline def setMonthShortNames(value: js.Array[String] | String): Self = StObject.set(x, "monthShortNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthShortNamesUndefined: Self = StObject.set(x, "monthShortNames", js.undefined)
+    inline def setMonthShortNamesUndefined: Self = StObject.set(x, "monthShortNames", js.undefined)
     
-    @scala.inline
-    def setMonthShortNamesVarargs(value: String*): Self = StObject.set(x, "monthShortNames", js.Array(value :_*))
+    inline def setMonthShortNamesVarargs(value: String*): Self = StObject.set(x, "monthShortNames", js.Array(value :_*))
     
-    @scala.inline
-    def setMonthValues(value: js.Array[Double] | Double | String): Self = StObject.set(x, "monthValues", value.asInstanceOf[js.Any])
+    inline def setMonthValues(value: js.Array[Double] | Double | String): Self = StObject.set(x, "monthValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthValuesUndefined: Self = StObject.set(x, "monthValues", js.undefined)
+    inline def setMonthValuesUndefined: Self = StObject.set(x, "monthValues", js.undefined)
     
-    @scala.inline
-    def setMonthValuesVarargs(value: Double*): Self = StObject.set(x, "monthValues", js.Array(value :_*))
+    inline def setMonthValuesVarargs(value: Double*): Self = StObject.set(x, "monthValues", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: () => js.Promise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => js.Promise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPickerFormat(value: String): Self = StObject.set(x, "pickerFormat", value.asInstanceOf[js.Any])
+    inline def setPickerFormat(value: String): Self = StObject.set(x, "pickerFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerFormatUndefined: Self = StObject.set(x, "pickerFormat", js.undefined)
+    inline def setPickerFormatUndefined: Self = StObject.set(x, "pickerFormat", js.undefined)
     
-    @scala.inline
-    def setPickerOptions(value: DatetimeOptions): Self = StObject.set(x, "pickerOptions", value.asInstanceOf[js.Any])
+    inline def setPickerOptions(value: DatetimeOptions): Self = StObject.set(x, "pickerOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerOptionsUndefined: Self = StObject.set(x, "pickerOptions", js.undefined)
+    inline def setPickerOptionsUndefined: Self = StObject.set(x, "pickerOptions", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderNull: Self = StObject.set(x, "placeholder", null)
+    inline def setPlaceholderNull: Self = StObject.set(x, "placeholder", null)
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setYearValues(value: js.Array[Double] | Double | String): Self = StObject.set(x, "yearValues", value.asInstanceOf[js.Any])
+    inline def setYearValues(value: js.Array[Double] | Double | String): Self = StObject.set(x, "yearValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearValuesUndefined: Self = StObject.set(x, "yearValues", js.undefined)
+    inline def setYearValuesUndefined: Self = StObject.set(x, "yearValues", js.undefined)
     
-    @scala.inline
-    def setYearValuesVarargs(value: Double*): Self = StObject.set(x, "yearValues", js.Array(value :_*))
+    inline def setYearValuesVarargs(value: Double*): Self = StObject.set(x, "yearValues", js.Array(value :_*))
   }
 }

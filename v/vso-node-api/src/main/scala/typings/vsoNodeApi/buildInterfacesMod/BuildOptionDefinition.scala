@@ -35,8 +35,7 @@ trait BuildOptionDefinition
 }
 object BuildOptionDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     groups: js.Array[BuildOptionGroupDefinition],
     id: String,
@@ -48,28 +47,20 @@ object BuildOptionDefinition {
     __obj.asInstanceOf[BuildOptionDefinition]
   }
   
-  @scala.inline
-  implicit class BuildOptionDefinitionMutableBuilder[Self <: BuildOptionDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: BuildOptionDefinition](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroups(value: js.Array[BuildOptionGroupDefinition]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[BuildOptionGroupDefinition]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsVarargs(value: BuildOptionGroupDefinition*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: BuildOptionGroupDefinition*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setInputs(value: js.Array[BuildOptionInputDefinition]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[BuildOptionInputDefinition]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsVarargs(value: BuildOptionInputDefinition*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: BuildOptionInputDefinition*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrdinal(value: Double): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
+    inline def setOrdinal(value: Double): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
   }
 }

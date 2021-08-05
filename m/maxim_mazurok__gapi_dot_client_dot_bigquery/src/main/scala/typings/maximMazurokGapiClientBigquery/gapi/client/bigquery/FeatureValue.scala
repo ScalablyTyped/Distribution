@@ -17,31 +17,23 @@ trait FeatureValue extends StObject {
 }
 object FeatureValue {
   
-  @scala.inline
-  def apply(): FeatureValue = {
+  inline def apply(): FeatureValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureValue]
   }
   
-  @scala.inline
-  implicit class FeatureValueMutableBuilder[Self <: FeatureValue] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureValue](x: Self) {
     
-    @scala.inline
-    def setCategoricalValue(value: CategoricalValue): Self = StObject.set(x, "categoricalValue", value.asInstanceOf[js.Any])
+    inline def setCategoricalValue(value: CategoricalValue): Self = StObject.set(x, "categoricalValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoricalValueUndefined: Self = StObject.set(x, "categoricalValue", js.undefined)
+    inline def setCategoricalValueUndefined: Self = StObject.set(x, "categoricalValue", js.undefined)
     
-    @scala.inline
-    def setFeatureColumn(value: String): Self = StObject.set(x, "featureColumn", value.asInstanceOf[js.Any])
+    inline def setFeatureColumn(value: String): Self = StObject.set(x, "featureColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureColumnUndefined: Self = StObject.set(x, "featureColumn", js.undefined)
+    inline def setFeatureColumnUndefined: Self = StObject.set(x, "featureColumn", js.undefined)
     
-    @scala.inline
-    def setNumericalValue(value: Double): Self = StObject.set(x, "numericalValue", value.asInstanceOf[js.Any])
+    inline def setNumericalValue(value: Double): Self = StObject.set(x, "numericalValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericalValueUndefined: Self = StObject.set(x, "numericalValue", js.undefined)
+    inline def setNumericalValueUndefined: Self = StObject.set(x, "numericalValue", js.undefined)
   }
 }

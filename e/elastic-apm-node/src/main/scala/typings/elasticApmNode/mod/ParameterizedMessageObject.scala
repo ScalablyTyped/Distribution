@@ -12,22 +12,17 @@ trait ParameterizedMessageObject extends StObject {
 }
 object ParameterizedMessageObject {
   
-  @scala.inline
-  def apply(message: String, params: js.Array[js.Any]): ParameterizedMessageObject = {
+  inline def apply(message: String, params: js.Array[js.Any]): ParameterizedMessageObject = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterizedMessageObject]
   }
   
-  @scala.inline
-  implicit class ParameterizedMessageObjectMutableBuilder[Self <: ParameterizedMessageObject] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterizedMessageObject](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
   }
 }

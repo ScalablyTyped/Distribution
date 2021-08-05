@@ -18,22 +18,17 @@ trait DeleteStreamInput extends StObject {
 }
 object DeleteStreamInput {
   
-  @scala.inline
-  def apply(StreamName: StreamName): DeleteStreamInput = {
+  inline def apply(StreamName: StreamName): DeleteStreamInput = {
     val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteStreamInput]
   }
   
-  @scala.inline
-  implicit class DeleteStreamInputMutableBuilder[Self <: DeleteStreamInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteStreamInput](x: Self) {
     
-    @scala.inline
-    def setEnforceConsumerDeletion(value: BooleanObject): Self = StObject.set(x, "EnforceConsumerDeletion", value.asInstanceOf[js.Any])
+    inline def setEnforceConsumerDeletion(value: BooleanObject): Self = StObject.set(x, "EnforceConsumerDeletion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforceConsumerDeletionUndefined: Self = StObject.set(x, "EnforceConsumerDeletion", js.undefined)
+    inline def setEnforceConsumerDeletionUndefined: Self = StObject.set(x, "EnforceConsumerDeletion", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
   }
 }

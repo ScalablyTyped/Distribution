@@ -10,8 +10,7 @@ object closestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def arrayMaxSquaredDelta(
+  inline def arrayMaxSquaredDelta(
     flatCoordinates: js.Array[Double],
     offset: Double,
     ends: js.Array[Double],
@@ -19,8 +18,7 @@ object closestMod {
     max: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMaxSquaredDelta")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def assignClosestArrayPoint(
+  inline def assignClosestArrayPoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
     ends: js.Array[Double],
@@ -32,8 +30,7 @@ object closestMod {
     closestPoint: js.Array[Double],
     minSquaredDistance: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("assignClosestArrayPoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], maxDelta.asInstanceOf[js.Any], isRing.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], closestPoint.asInstanceOf[js.Any], minSquaredDistance.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def assignClosestArrayPoint(
+  inline def assignClosestArrayPoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
     ends: js.Array[Double],
@@ -47,8 +44,7 @@ object closestMod {
     opt_tmpPoint: js.Array[Double]
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("assignClosestArrayPoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], maxDelta.asInstanceOf[js.Any], isRing.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], closestPoint.asInstanceOf[js.Any], minSquaredDistance.asInstanceOf[js.Any], opt_tmpPoint.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def assignClosestMultiArrayPoint(
+  inline def assignClosestMultiArrayPoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
     endss: js.Array[js.Array[Double]],
@@ -60,8 +56,7 @@ object closestMod {
     closestPoint: js.Array[Double],
     minSquaredDistance: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("assignClosestMultiArrayPoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], endss.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], maxDelta.asInstanceOf[js.Any], isRing.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], closestPoint.asInstanceOf[js.Any], minSquaredDistance.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def assignClosestMultiArrayPoint(
+  inline def assignClosestMultiArrayPoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
     endss: js.Array[js.Array[Double]],
@@ -75,8 +70,7 @@ object closestMod {
     opt_tmpPoint: js.Array[Double]
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("assignClosestMultiArrayPoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], endss.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], maxDelta.asInstanceOf[js.Any], isRing.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], closestPoint.asInstanceOf[js.Any], minSquaredDistance.asInstanceOf[js.Any], opt_tmpPoint.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def assignClosestPoint(
+  inline def assignClosestPoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -88,8 +82,7 @@ object closestMod {
     closestPoint: js.Array[Double],
     minSquaredDistance: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("assignClosestPoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], maxDelta.asInstanceOf[js.Any], isRing.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], closestPoint.asInstanceOf[js.Any], minSquaredDistance.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def assignClosestPoint(
+  inline def assignClosestPoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -103,11 +96,9 @@ object closestMod {
     opt_tmpPoint: js.Array[Double]
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("assignClosestPoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], maxDelta.asInstanceOf[js.Any], isRing.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], closestPoint.asInstanceOf[js.Any], minSquaredDistance.asInstanceOf[js.Any], opt_tmpPoint.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def maxSquaredDelta(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("maxSquaredDelta")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def maxSquaredDelta(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("maxSquaredDelta")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def multiArrayMaxSquaredDelta(
+  inline def multiArrayMaxSquaredDelta(
     flatCoordinates: js.Array[Double],
     offset: Double,
     endss: js.Array[js.Array[Double]],

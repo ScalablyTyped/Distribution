@@ -15,22 +15,17 @@ trait DownloadFileArgs
 }
 object DownloadFileArgs {
   
-  @scala.inline
-  def apply(url: String): DownloadFileArgs = {
+  inline def apply(url: String): DownloadFileArgs = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadFileArgs]
   }
   
-  @scala.inline
-  implicit class DownloadFileArgsMutableBuilder[Self <: DownloadFileArgs] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadFileArgs](x: Self) {
     
-    @scala.inline
-    def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

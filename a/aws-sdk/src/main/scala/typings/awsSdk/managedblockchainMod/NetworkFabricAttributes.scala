@@ -18,25 +18,19 @@ trait NetworkFabricAttributes extends StObject {
 }
 object NetworkFabricAttributes {
   
-  @scala.inline
-  def apply(): NetworkFabricAttributes = {
+  inline def apply(): NetworkFabricAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkFabricAttributes]
   }
   
-  @scala.inline
-  implicit class NetworkFabricAttributesMutableBuilder[Self <: NetworkFabricAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkFabricAttributes](x: Self) {
     
-    @scala.inline
-    def setEdition(value: Edition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
+    inline def setEdition(value: Edition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditionUndefined: Self = StObject.set(x, "Edition", js.undefined)
+    inline def setEditionUndefined: Self = StObject.set(x, "Edition", js.undefined)
     
-    @scala.inline
-    def setOrderingServiceEndpoint(value: String): Self = StObject.set(x, "OrderingServiceEndpoint", value.asInstanceOf[js.Any])
+    inline def setOrderingServiceEndpoint(value: String): Self = StObject.set(x, "OrderingServiceEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderingServiceEndpointUndefined: Self = StObject.set(x, "OrderingServiceEndpoint", js.undefined)
+    inline def setOrderingServiceEndpointUndefined: Self = StObject.set(x, "OrderingServiceEndpoint", js.undefined)
   }
 }

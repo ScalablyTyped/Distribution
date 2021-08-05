@@ -18,28 +18,21 @@ trait ListTypesOutput extends StObject {
 }
 object ListTypesOutput {
   
-  @scala.inline
-  def apply(): ListTypesOutput = {
+  inline def apply(): ListTypesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTypesOutput]
   }
   
-  @scala.inline
-  implicit class ListTypesOutputMutableBuilder[Self <: ListTypesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTypesOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTypeSummaries(value: TypeSummaries): Self = StObject.set(x, "TypeSummaries", value.asInstanceOf[js.Any])
+    inline def setTypeSummaries(value: TypeSummaries): Self = StObject.set(x, "TypeSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeSummariesUndefined: Self = StObject.set(x, "TypeSummaries", js.undefined)
+    inline def setTypeSummariesUndefined: Self = StObject.set(x, "TypeSummaries", js.undefined)
     
-    @scala.inline
-    def setTypeSummariesVarargs(value: TypeSummary*): Self = StObject.set(x, "TypeSummaries", js.Array(value :_*))
+    inline def setTypeSummariesVarargs(value: TypeSummary*): Self = StObject.set(x, "TypeSummaries", js.Array(value :_*))
   }
 }

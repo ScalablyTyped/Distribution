@@ -10,16 +10,13 @@ trait ProcessNewMacroTasksSynchronously extends StObject {
 }
 object ProcessNewMacroTasksSynchronously {
   
-  @scala.inline
-  def apply(processNewMacroTasksSynchronously: Boolean): ProcessNewMacroTasksSynchronously = {
+  inline def apply(processNewMacroTasksSynchronously: Boolean): ProcessNewMacroTasksSynchronously = {
     val __obj = js.Dynamic.literal(processNewMacroTasksSynchronously = processNewMacroTasksSynchronously.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessNewMacroTasksSynchronously]
   }
   
-  @scala.inline
-  implicit class ProcessNewMacroTasksSynchronouslyMutableBuilder[Self <: ProcessNewMacroTasksSynchronously] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessNewMacroTasksSynchronously](x: Self) {
     
-    @scala.inline
-    def setProcessNewMacroTasksSynchronously(value: Boolean): Self = StObject.set(x, "processNewMacroTasksSynchronously", value.asInstanceOf[js.Any])
+    inline def setProcessNewMacroTasksSynchronously(value: Boolean): Self = StObject.set(x, "processNewMacroTasksSynchronously", value.asInstanceOf[js.Any])
   }
 }

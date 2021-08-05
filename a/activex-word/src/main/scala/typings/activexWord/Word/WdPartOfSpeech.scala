@@ -29,33 +29,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdPartOfSpeech extends StObject
 object WdPartOfSpeech {
   
-  @scala.inline
-  def wdAdjective: `0` = 0.asInstanceOf[`0`]
+  inline def wdAdjective: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdAdverb: `2` = 2.asInstanceOf[`2`]
+  inline def wdAdverb: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdConjunction: `5` = 5.asInstanceOf[`5`]
+  inline def wdConjunction: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdIdiom: `8` = 8.asInstanceOf[`8`]
+  inline def wdIdiom: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def wdInterjection: `7` = 7.asInstanceOf[`7`]
+  inline def wdInterjection: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def wdNoun: `1` = 1.asInstanceOf[`1`]
+  inline def wdNoun: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdOther: `9` = 9.asInstanceOf[`9`]
+  inline def wdOther: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def wdPreposition: `6` = 6.asInstanceOf[`6`]
+  inline def wdPreposition: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdPronoun: `4` = 4.asInstanceOf[`4`]
+  inline def wdPronoun: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdVerb: `3` = 3.asInstanceOf[`3`]
+  inline def wdVerb: `3` = 3.asInstanceOf[`3`]
 }

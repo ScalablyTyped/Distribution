@@ -18,19 +18,15 @@ trait GitLastChangeItem extends StObject {
 }
 object GitLastChangeItem {
   
-  @scala.inline
-  def apply(commitId: String, path: String): GitLastChangeItem = {
+  inline def apply(commitId: String, path: String): GitLastChangeItem = {
     val __obj = js.Dynamic.literal(commitId = commitId.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitLastChangeItem]
   }
   
-  @scala.inline
-  implicit class GitLastChangeItemMutableBuilder[Self <: GitLastChangeItem] (val x: Self) extends AnyVal {
+  extension [Self <: GitLastChangeItem](x: Self) {
     
-    @scala.inline
-    def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+    inline def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

@@ -11,22 +11,17 @@ trait DeleteDocumentsResponse extends StObject {
 }
 object DeleteDocumentsResponse {
   
-  @scala.inline
-  def apply(): DeleteDocumentsResponse = {
+  inline def apply(): DeleteDocumentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteDocumentsResponse]
   }
   
-  @scala.inline
-  implicit class DeleteDocumentsResponseMutableBuilder[Self <: DeleteDocumentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDocumentsResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[DocumentStatus]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[DocumentStatus]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: DocumentStatus*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: DocumentStatus*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

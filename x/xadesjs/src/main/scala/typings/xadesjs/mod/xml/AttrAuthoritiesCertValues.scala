@@ -13,6 +13,5 @@ class AttrAuthoritiesCertValues ()
   extends typings.xadesjs.xmlMod.AttrAuthoritiesCertValues
 object AttrAuthoritiesCertValues {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.AttrAuthoritiesCertValues] = ^.asInstanceOf[js.Dynamic].selectDynamic("AttrAuthoritiesCertValues").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.AttrAuthoritiesCertValues]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.AttrAuthoritiesCertValues] = ^.asInstanceOf[js.Dynamic].selectDynamic("AttrAuthoritiesCertValues").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.AttrAuthoritiesCertValues]]
 }

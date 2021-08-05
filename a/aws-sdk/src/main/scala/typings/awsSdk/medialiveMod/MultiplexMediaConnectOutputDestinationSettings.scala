@@ -13,19 +13,15 @@ trait MultiplexMediaConnectOutputDestinationSettings extends StObject {
 }
 object MultiplexMediaConnectOutputDestinationSettings {
   
-  @scala.inline
-  def apply(): MultiplexMediaConnectOutputDestinationSettings = {
+  inline def apply(): MultiplexMediaConnectOutputDestinationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiplexMediaConnectOutputDestinationSettings]
   }
   
-  @scala.inline
-  implicit class MultiplexMediaConnectOutputDestinationSettingsMutableBuilder[Self <: MultiplexMediaConnectOutputDestinationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MultiplexMediaConnectOutputDestinationSettings](x: Self) {
     
-    @scala.inline
-    def setEntitlementArn(value: stringMin1): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
+    inline def setEntitlementArn(value: stringMin1): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitlementArnUndefined: Self = StObject.set(x, "EntitlementArn", js.undefined)
+    inline def setEntitlementArnUndefined: Self = StObject.set(x, "EntitlementArn", js.undefined)
   }
 }

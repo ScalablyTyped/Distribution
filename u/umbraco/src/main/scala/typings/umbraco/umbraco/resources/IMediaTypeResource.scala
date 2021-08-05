@@ -35,16 +35,13 @@ trait IMediaTypeResource extends StObject {
 }
 object IMediaTypeResource {
   
-  @scala.inline
-  def apply(getAllowedTypes: Double => IPromise[IResourcePromise]): IMediaTypeResource = {
+  inline def apply(getAllowedTypes: Double => IPromise[IResourcePromise]): IMediaTypeResource = {
     val __obj = js.Dynamic.literal(getAllowedTypes = js.Any.fromFunction1(getAllowedTypes))
     __obj.asInstanceOf[IMediaTypeResource]
   }
   
-  @scala.inline
-  implicit class IMediaTypeResourceMutableBuilder[Self <: IMediaTypeResource] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaTypeResource](x: Self) {
     
-    @scala.inline
-    def setGetAllowedTypes(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getAllowedTypes", js.Any.fromFunction1(value))
+    inline def setGetAllowedTypes(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getAllowedTypes", js.Any.fromFunction1(value))
   }
 }

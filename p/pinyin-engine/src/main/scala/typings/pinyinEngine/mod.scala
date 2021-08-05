@@ -25,17 +25,14 @@ object mod {
   }
   object PinyinEngine {
     
-    @scala.inline
-    def apply(query: String => js.Array[String]): PinyinEngine = {
+    inline def apply(query: String => js.Array[String]): PinyinEngine = {
       val __obj = js.Dynamic.literal(query = js.Any.fromFunction1(query))
       __obj.asInstanceOf[PinyinEngine]
     }
     
-    @scala.inline
-    implicit class PinyinEngineMutableBuilder[Self <: PinyinEngine] (val x: Self) extends AnyVal {
+    extension [Self <: PinyinEngine](x: Self) {
       
-      @scala.inline
-      def setQuery(value: String => js.Array[String]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
+      inline def setQuery(value: String => js.Array[String]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
     }
   }
 }

@@ -28,37 +28,27 @@ trait GetPackageVersionAssetResult extends StObject {
 }
 object GetPackageVersionAssetResult {
   
-  @scala.inline
-  def apply(): GetPackageVersionAssetResult = {
+  inline def apply(): GetPackageVersionAssetResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPackageVersionAssetResult]
   }
   
-  @scala.inline
-  implicit class GetPackageVersionAssetResultMutableBuilder[Self <: GetPackageVersionAssetResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetPackageVersionAssetResult](x: Self) {
     
-    @scala.inline
-    def setAsset(value: Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
+    inline def setAsset(value: Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetName(value: AssetName): Self = StObject.set(x, "assetName", value.asInstanceOf[js.Any])
+    inline def setAssetName(value: AssetName): Self = StObject.set(x, "assetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetNameUndefined: Self = StObject.set(x, "assetName", js.undefined)
+    inline def setAssetNameUndefined: Self = StObject.set(x, "assetName", js.undefined)
     
-    @scala.inline
-    def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
+    inline def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
     
-    @scala.inline
-    def setPackageVersion(value: PackageVersion): Self = StObject.set(x, "packageVersion", value.asInstanceOf[js.Any])
+    inline def setPackageVersion(value: PackageVersion): Self = StObject.set(x, "packageVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageVersionRevision(value: PackageVersionRevision): Self = StObject.set(x, "packageVersionRevision", value.asInstanceOf[js.Any])
+    inline def setPackageVersionRevision(value: PackageVersionRevision): Self = StObject.set(x, "packageVersionRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageVersionRevisionUndefined: Self = StObject.set(x, "packageVersionRevision", js.undefined)
+    inline def setPackageVersionRevisionUndefined: Self = StObject.set(x, "packageVersionRevision", js.undefined)
     
-    @scala.inline
-    def setPackageVersionUndefined: Self = StObject.set(x, "packageVersion", js.undefined)
+    inline def setPackageVersionUndefined: Self = StObject.set(x, "packageVersion", js.undefined)
   }
 }

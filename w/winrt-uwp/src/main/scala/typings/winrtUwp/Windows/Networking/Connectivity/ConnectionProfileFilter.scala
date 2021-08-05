@@ -37,8 +37,7 @@ trait ConnectionProfileFilter extends StObject {
 }
 object ConnectionProfileFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isBackgroundDataUsageRestricted: Boolean,
     isConnected: Boolean,
     isOverDataLimit: Boolean,
@@ -53,34 +52,24 @@ object ConnectionProfileFilter {
     __obj.asInstanceOf[ConnectionProfileFilter]
   }
   
-  @scala.inline
-  implicit class ConnectionProfileFilterMutableBuilder[Self <: ConnectionProfileFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionProfileFilter](x: Self) {
     
-    @scala.inline
-    def setIsBackgroundDataUsageRestricted(value: Boolean): Self = StObject.set(x, "isBackgroundDataUsageRestricted", value.asInstanceOf[js.Any])
+    inline def setIsBackgroundDataUsageRestricted(value: Boolean): Self = StObject.set(x, "isBackgroundDataUsageRestricted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
+    inline def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOverDataLimit(value: Boolean): Self = StObject.set(x, "isOverDataLimit", value.asInstanceOf[js.Any])
+    inline def setIsOverDataLimit(value: Boolean): Self = StObject.set(x, "isOverDataLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRoaming(value: Boolean): Self = StObject.set(x, "isRoaming", value.asInstanceOf[js.Any])
+    inline def setIsRoaming(value: Boolean): Self = StObject.set(x, "isRoaming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWlanConnectionProfile(value: Boolean): Self = StObject.set(x, "isWlanConnectionProfile", value.asInstanceOf[js.Any])
+    inline def setIsWlanConnectionProfile(value: Boolean): Self = StObject.set(x, "isWlanConnectionProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWwanConnectionProfile(value: Boolean): Self = StObject.set(x, "isWwanConnectionProfile", value.asInstanceOf[js.Any])
+    inline def setIsWwanConnectionProfile(value: Boolean): Self = StObject.set(x, "isWwanConnectionProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkCostType(value: NetworkCostType): Self = StObject.set(x, "networkCostType", value.asInstanceOf[js.Any])
+    inline def setNetworkCostType(value: NetworkCostType): Self = StObject.set(x, "networkCostType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+    inline def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceProviderGuid(value: String): Self = StObject.set(x, "serviceProviderGuid", value.asInstanceOf[js.Any])
+    inline def setServiceProviderGuid(value: String): Self = StObject.set(x, "serviceProviderGuid", value.asInstanceOf[js.Any])
   }
 }

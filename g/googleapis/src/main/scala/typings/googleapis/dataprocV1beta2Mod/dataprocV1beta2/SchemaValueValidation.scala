@@ -16,22 +16,17 @@ trait SchemaValueValidation extends StObject {
 }
 object SchemaValueValidation {
   
-  @scala.inline
-  def apply(): SchemaValueValidation = {
+  inline def apply(): SchemaValueValidation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaValueValidation]
   }
   
-  @scala.inline
-  implicit class SchemaValueValidationMutableBuilder[Self <: SchemaValueValidation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaValueValidation](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

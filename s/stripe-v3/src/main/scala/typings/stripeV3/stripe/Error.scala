@@ -70,68 +70,48 @@ trait Error extends StObject {
 }
 object Error {
   
-  @scala.inline
-  def apply(charge: String, `type`: ErrorType): Error = {
+  inline def apply(charge: String, `type`: ErrorType): Error = {
     val __obj = js.Dynamic.literal(charge = charge.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }
   
-  @scala.inline
-  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+  extension [Self <: Error](x: Self) {
     
-    @scala.inline
-    def setCharge(value: String): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
+    inline def setCharge(value: String): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setDecline_code(value: String): Self = StObject.set(x, "decline_code", value.asInstanceOf[js.Any])
+    inline def setDecline_code(value: String): Self = StObject.set(x, "decline_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecline_codeUndefined: Self = StObject.set(x, "decline_code", js.undefined)
+    inline def setDecline_codeUndefined: Self = StObject.set(x, "decline_code", js.undefined)
     
-    @scala.inline
-    def setDoc_url(value: String): Self = StObject.set(x, "doc_url", value.asInstanceOf[js.Any])
+    inline def setDoc_url(value: String): Self = StObject.set(x, "doc_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoc_urlUndefined: Self = StObject.set(x, "doc_url", js.undefined)
+    inline def setDoc_urlUndefined: Self = StObject.set(x, "doc_url", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    inline def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
+    inline def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
     
-    @scala.inline
-    def setPayment_intent(value: PaymentIntent): Self = StObject.set(x, "payment_intent", value.asInstanceOf[js.Any])
+    inline def setPayment_intent(value: PaymentIntent): Self = StObject.set(x, "payment_intent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment_intentUndefined: Self = StObject.set(x, "payment_intent", js.undefined)
+    inline def setPayment_intentUndefined: Self = StObject.set(x, "payment_intent", js.undefined)
     
-    @scala.inline
-    def setPayment_method(value: PaymentMethod): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
+    inline def setPayment_method(value: PaymentMethod): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
+    inline def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
     
-    @scala.inline
-    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setType(value: ErrorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ErrorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

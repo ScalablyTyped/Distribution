@@ -29,31 +29,23 @@ trait MSIAppServiceOptions
 }
 object MSIAppServiceOptions {
   
-  @scala.inline
-  def apply(): MSIAppServiceOptions = {
+  inline def apply(): MSIAppServiceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MSIAppServiceOptions]
   }
   
-  @scala.inline
-  implicit class MSIAppServiceOptionsMutableBuilder[Self <: MSIAppServiceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MSIAppServiceOptions](x: Self) {
     
-    @scala.inline
-    def setMsiApiVersion(value: String): Self = StObject.set(x, "msiApiVersion", value.asInstanceOf[js.Any])
+    inline def setMsiApiVersion(value: String): Self = StObject.set(x, "msiApiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsiApiVersionUndefined: Self = StObject.set(x, "msiApiVersion", js.undefined)
+    inline def setMsiApiVersionUndefined: Self = StObject.set(x, "msiApiVersion", js.undefined)
     
-    @scala.inline
-    def setMsiEndpoint(value: String): Self = StObject.set(x, "msiEndpoint", value.asInstanceOf[js.Any])
+    inline def setMsiEndpoint(value: String): Self = StObject.set(x, "msiEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsiEndpointUndefined: Self = StObject.set(x, "msiEndpoint", js.undefined)
+    inline def setMsiEndpointUndefined: Self = StObject.set(x, "msiEndpoint", js.undefined)
     
-    @scala.inline
-    def setMsiSecret(value: String): Self = StObject.set(x, "msiSecret", value.asInstanceOf[js.Any])
+    inline def setMsiSecret(value: String): Self = StObject.set(x, "msiSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsiSecretUndefined: Self = StObject.set(x, "msiSecret", js.undefined)
+    inline def setMsiSecretUndefined: Self = StObject.set(x, "msiSecret", js.undefined)
   }
 }

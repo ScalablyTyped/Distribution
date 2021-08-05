@@ -14,22 +14,17 @@ trait LHO2 extends StObject {
 }
 object LHO2 {
   
-  @scala.inline
-  def apply(LHO2: RangedHeal, LO: Heal, XLHO2: HealRangedHeal): LHO2 = {
+  inline def apply(LHO2: RangedHeal, LO: Heal, XLHO2: HealRangedHeal): LHO2 = {
     val __obj = js.Dynamic.literal(LHO2 = LHO2.asInstanceOf[js.Any], LO = LO.asInstanceOf[js.Any], XLHO2 = XLHO2.asInstanceOf[js.Any])
     __obj.asInstanceOf[LHO2]
   }
   
-  @scala.inline
-  implicit class LHO2MutableBuilder[Self <: LHO2] (val x: Self) extends AnyVal {
+  extension [Self <: LHO2](x: Self) {
     
-    @scala.inline
-    def setLHO2(value: RangedHeal): Self = StObject.set(x, "LHO2", value.asInstanceOf[js.Any])
+    inline def setLHO2(value: RangedHeal): Self = StObject.set(x, "LHO2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLO(value: Heal): Self = StObject.set(x, "LO", value.asInstanceOf[js.Any])
+    inline def setLO(value: Heal): Self = StObject.set(x, "LO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXLHO2(value: HealRangedHeal): Self = StObject.set(x, "XLHO2", value.asInstanceOf[js.Any])
+    inline def setXLHO2(value: HealRangedHeal): Self = StObject.set(x, "XLHO2", value.asInstanceOf[js.Any])
   }
 }

@@ -101,80 +101,56 @@ object listItemMod {
   }
   object ListItemProps {
     
-    @scala.inline
-    def apply(): ListItemProps = {
+    inline def apply(): ListItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListItemProps]
     }
     
-    @scala.inline
-    implicit class ListItemPropsMutableBuilder[Self <: ListItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListItemProps](x: Self) {
       
-      @scala.inline
-      def setDisableEnterClick(value: Boolean): Self = StObject.set(x, "disableEnterClick", value.asInstanceOf[js.Any])
+      inline def setDisableEnterClick(value: Boolean): Self = StObject.set(x, "disableEnterClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableEnterClickUndefined: Self = StObject.set(x, "disableEnterClick", js.undefined)
+      inline def setDisableEnterClickUndefined: Self = StObject.set(x, "disableEnterClick", js.undefined)
       
-      @scala.inline
-      def setDisablePressedFallback(value: Boolean): Self = StObject.set(x, "disablePressedFallback", value.asInstanceOf[js.Any])
+      inline def setDisablePressedFallback(value: Boolean): Self = StObject.set(x, "disablePressedFallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisablePressedFallbackUndefined: Self = StObject.set(x, "disablePressedFallback", js.undefined)
+      inline def setDisablePressedFallbackUndefined: Self = StObject.set(x, "disablePressedFallback", js.undefined)
       
-      @scala.inline
-      def setDisableProgrammaticRipple(value: Boolean): Self = StObject.set(x, "disableProgrammaticRipple", value.asInstanceOf[js.Any])
+      inline def setDisableProgrammaticRipple(value: Boolean): Self = StObject.set(x, "disableProgrammaticRipple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableProgrammaticRippleUndefined: Self = StObject.set(x, "disableProgrammaticRipple", js.undefined)
+      inline def setDisableProgrammaticRippleUndefined: Self = StObject.set(x, "disableProgrammaticRipple", js.undefined)
       
-      @scala.inline
-      def setDisableRipple(value: Boolean): Self = StObject.set(x, "disableRipple", value.asInstanceOf[js.Any])
+      inline def setDisableRipple(value: Boolean): Self = StObject.set(x, "disableRipple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableRippleUndefined: Self = StObject.set(x, "disableRipple", js.undefined)
+      inline def setDisableRippleUndefined: Self = StObject.set(x, "disableRipple", js.undefined)
       
-      @scala.inline
-      def setDisableSpacebarClick(value: Boolean): Self = StObject.set(x, "disableSpacebarClick", value.asInstanceOf[js.Any])
+      inline def setDisableSpacebarClick(value: Boolean): Self = StObject.set(x, "disableSpacebarClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableSpacebarClickUndefined: Self = StObject.set(x, "disableSpacebarClick", js.undefined)
+      inline def setDisableSpacebarClickUndefined: Self = StObject.set(x, "disableSpacebarClick", js.undefined)
       
-      @scala.inline
-      def setEnablePressedAndRipple(value: Boolean): Self = StObject.set(x, "enablePressedAndRipple", value.asInstanceOf[js.Any])
+      inline def setEnablePressedAndRipple(value: Boolean): Self = StObject.set(x, "enablePressedAndRipple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnablePressedAndRippleUndefined: Self = StObject.set(x, "enablePressedAndRipple", js.undefined)
+      inline def setEnablePressedAndRippleUndefined: Self = StObject.set(x, "enablePressedAndRipple", js.undefined)
       
-      @scala.inline
-      def setHandlers(value: MergableRippleHandlers[HTMLLIElement]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: MergableRippleHandlers[HTMLLIElement]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
+      inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
       
-      @scala.inline
-      def setRippleClassName(value: String): Self = StObject.set(x, "rippleClassName", value.asInstanceOf[js.Any])
+      inline def setRippleClassName(value: String): Self = StObject.set(x, "rippleClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleClassNameUndefined: Self = StObject.set(x, "rippleClassName", js.undefined)
+      inline def setRippleClassNameUndefined: Self = StObject.set(x, "rippleClassName", js.undefined)
       
-      @scala.inline
-      def setRippleClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "rippleClassNames", value.asInstanceOf[js.Any])
+      inline def setRippleClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "rippleClassNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleClassNamesUndefined: Self = StObject.set(x, "rippleClassNames", js.undefined)
+      inline def setRippleClassNamesUndefined: Self = StObject.set(x, "rippleClassNames", js.undefined)
       
-      @scala.inline
-      def setRippleContainerClassName(value: String): Self = StObject.set(x, "rippleContainerClassName", value.asInstanceOf[js.Any])
+      inline def setRippleContainerClassName(value: String): Self = StObject.set(x, "rippleContainerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleContainerClassNameUndefined: Self = StObject.set(x, "rippleContainerClassName", js.undefined)
+      inline def setRippleContainerClassNameUndefined: Self = StObject.set(x, "rippleContainerClassName", js.undefined)
       
-      @scala.inline
-      def setRippleTimeout(value: TransitionTimeout): Self = StObject.set(x, "rippleTimeout", value.asInstanceOf[js.Any])
+      inline def setRippleTimeout(value: TransitionTimeout): Self = StObject.set(x, "rippleTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleTimeoutUndefined: Self = StObject.set(x, "rippleTimeout", js.undefined)
+      inline def setRippleTimeoutUndefined: Self = StObject.set(x, "rippleTimeout", js.undefined)
     }
   }
 }

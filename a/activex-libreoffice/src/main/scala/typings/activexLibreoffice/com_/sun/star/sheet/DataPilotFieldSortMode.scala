@@ -19,16 +19,12 @@ object DataPilotFieldSortMode {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def DATA: `3` = 3.asInstanceOf[`3`]
+    inline def DATA: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def MANUAL: `1` = 1.asInstanceOf[`1`]
+    inline def MANUAL: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def NAME: `2` = 2.asInstanceOf[`2`]
+    inline def NAME: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
   }
 }

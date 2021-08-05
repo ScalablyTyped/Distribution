@@ -18,8 +18,7 @@ trait VoiceMediaInfo extends StObject {
 }
 object VoiceMediaInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoAccept: Boolean,
     callConfigJson: String,
     callContextToken: String,
@@ -30,22 +29,16 @@ object VoiceMediaInfo {
     __obj.asInstanceOf[VoiceMediaInfo]
   }
   
-  @scala.inline
-  implicit class VoiceMediaInfoMutableBuilder[Self <: VoiceMediaInfo] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceMediaInfo](x: Self) {
     
-    @scala.inline
-    def setAutoAccept(value: Boolean): Self = StObject.set(x, "autoAccept", value.asInstanceOf[js.Any])
+    inline def setAutoAccept(value: Boolean): Self = StObject.set(x, "autoAccept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallConfigJson(value: String): Self = StObject.set(x, "callConfigJson", value.asInstanceOf[js.Any])
+    inline def setCallConfigJson(value: String): Self = StObject.set(x, "callConfigJson", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallContextToken(value: String): Self = StObject.set(x, "callContextToken", value.asInstanceOf[js.Any])
+    inline def setCallContextToken(value: String): Self = StObject.set(x, "callContextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallType(value: SoftphoneCallType): Self = StObject.set(x, "callType", value.asInstanceOf[js.Any])
+    inline def setCallType(value: SoftphoneCallType): Self = StObject.set(x, "callType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaLegContextToken(value: String): Self = StObject.set(x, "mediaLegContextToken", value.asInstanceOf[js.Any])
+    inline def setMediaLegContextToken(value: String): Self = StObject.set(x, "mediaLegContextToken", value.asInstanceOf[js.Any])
   }
 }

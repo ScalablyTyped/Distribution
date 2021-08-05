@@ -14,25 +14,19 @@ trait DateTimeOptions
 }
 object DateTimeOptions {
   
-  @scala.inline
-  def apply(): DateTimeOptions = {
+  inline def apply(): DateTimeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateTimeOptions]
   }
   
-  @scala.inline
-  implicit class DateTimeOptionsMutableBuilder[Self <: DateTimeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DateTimeOptions](x: Self) {
     
-    @scala.inline
-    def setSetZone(value: Boolean): Self = StObject.set(x, "setZone", value.asInstanceOf[js.Any])
+    inline def setSetZone(value: Boolean): Self = StObject.set(x, "setZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetZoneUndefined: Self = StObject.set(x, "setZone", js.undefined)
+    inline def setSetZoneUndefined: Self = StObject.set(x, "setZone", js.undefined)
     
-    @scala.inline
-    def setZone(value: String | Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String | Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

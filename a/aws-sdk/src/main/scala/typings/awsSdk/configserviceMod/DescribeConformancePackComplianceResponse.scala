@@ -23,8 +23,7 @@ trait DescribeConformancePackComplianceResponse extends StObject {
 }
 object DescribeConformancePackComplianceResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConformancePackName: ConformancePackName,
     ConformancePackRuleComplianceList: ConformancePackRuleComplianceList
   ): DescribeConformancePackComplianceResponse = {
@@ -32,22 +31,16 @@ object DescribeConformancePackComplianceResponse {
     __obj.asInstanceOf[DescribeConformancePackComplianceResponse]
   }
   
-  @scala.inline
-  implicit class DescribeConformancePackComplianceResponseMutableBuilder[Self <: DescribeConformancePackComplianceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConformancePackComplianceResponse](x: Self) {
     
-    @scala.inline
-    def setConformancePackName(value: ConformancePackName): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
+    inline def setConformancePackName(value: ConformancePackName): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformancePackRuleComplianceList(value: ConformancePackRuleComplianceList): Self = StObject.set(x, "ConformancePackRuleComplianceList", value.asInstanceOf[js.Any])
+    inline def setConformancePackRuleComplianceList(value: ConformancePackRuleComplianceList): Self = StObject.set(x, "ConformancePackRuleComplianceList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformancePackRuleComplianceListVarargs(value: ConformancePackRuleCompliance*): Self = StObject.set(x, "ConformancePackRuleComplianceList", js.Array(value :_*))
+    inline def setConformancePackRuleComplianceListVarargs(value: ConformancePackRuleCompliance*): Self = StObject.set(x, "ConformancePackRuleComplianceList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

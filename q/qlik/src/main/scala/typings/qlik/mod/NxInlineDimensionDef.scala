@@ -23,8 +23,7 @@ trait NxInlineDimensionDef extends StObject {
 }
 object NxInlineDimensionDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qActiveField: Double,
     qFieldDefs: js.Array[String],
     qGrouping: N | H | C,
@@ -36,34 +35,24 @@ object NxInlineDimensionDef {
     __obj.asInstanceOf[NxInlineDimensionDef]
   }
   
-  @scala.inline
-  implicit class NxInlineDimensionDefMutableBuilder[Self <: NxInlineDimensionDef] (val x: Self) extends AnyVal {
+  extension [Self <: NxInlineDimensionDef](x: Self) {
     
-    @scala.inline
-    def setQActiveField(value: Double): Self = StObject.set(x, "qActiveField", value.asInstanceOf[js.Any])
+    inline def setQActiveField(value: Double): Self = StObject.set(x, "qActiveField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldDefs(value: js.Array[String]): Self = StObject.set(x, "qFieldDefs", value.asInstanceOf[js.Any])
+    inline def setQFieldDefs(value: js.Array[String]): Self = StObject.set(x, "qFieldDefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldDefsVarargs(value: String*): Self = StObject.set(x, "qFieldDefs", js.Array(value :_*))
+    inline def setQFieldDefsVarargs(value: String*): Self = StObject.set(x, "qFieldDefs", js.Array(value :_*))
     
-    @scala.inline
-    def setQGrouping(value: N | H | C): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
+    inline def setQGrouping(value: N | H | C): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNumberPresentations(value: js.Array[FieldAttributes]): Self = StObject.set(x, "qNumberPresentations", value.asInstanceOf[js.Any])
+    inline def setQNumberPresentations(value: js.Array[FieldAttributes]): Self = StObject.set(x, "qNumberPresentations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNumberPresentationsVarargs(value: FieldAttributes*): Self = StObject.set(x, "qNumberPresentations", js.Array(value :_*))
+    inline def setQNumberPresentationsVarargs(value: FieldAttributes*): Self = StObject.set(x, "qNumberPresentations", js.Array(value :_*))
     
-    @scala.inline
-    def setQReverseSort(value: Boolean): Self = StObject.set(x, "qReverseSort", value.asInstanceOf[js.Any])
+    inline def setQReverseSort(value: Boolean): Self = StObject.set(x, "qReverseSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSortCriteries(value: js.Array[SortCriteria]): Self = StObject.set(x, "qSortCriteries", value.asInstanceOf[js.Any])
+    inline def setQSortCriteries(value: js.Array[SortCriteria]): Self = StObject.set(x, "qSortCriteries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSortCriteriesVarargs(value: SortCriteria*): Self = StObject.set(x, "qSortCriteries", js.Array(value :_*))
+    inline def setQSortCriteriesVarargs(value: SortCriteria*): Self = StObject.set(x, "qSortCriteries", js.Array(value :_*))
   }
 }

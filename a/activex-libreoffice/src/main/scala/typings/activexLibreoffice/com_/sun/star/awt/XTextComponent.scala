@@ -61,8 +61,7 @@ trait XTextComponent
 }
 object XTextComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MaxTextLen: Double,
     SelectedText: String,
     Selection: Selection,
@@ -87,55 +86,38 @@ object XTextComponent {
     __obj.asInstanceOf[XTextComponent]
   }
   
-  @scala.inline
-  implicit class XTextComponentMutableBuilder[Self <: XTextComponent] (val x: Self) extends AnyVal {
+  extension [Self <: XTextComponent](x: Self) {
     
-    @scala.inline
-    def setAddTextListener(value: XTextListener => Unit): Self = StObject.set(x, "addTextListener", js.Any.fromFunction1(value))
+    inline def setAddTextListener(value: XTextListener => Unit): Self = StObject.set(x, "addTextListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMaxTextLen(value: () => Double): Self = StObject.set(x, "getMaxTextLen", js.Any.fromFunction0(value))
+    inline def setGetMaxTextLen(value: () => Double): Self = StObject.set(x, "getMaxTextLen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedText(value: () => String): Self = StObject.set(x, "getSelectedText", js.Any.fromFunction0(value))
+    inline def setGetSelectedText(value: () => String): Self = StObject.set(x, "getSelectedText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelection(value: () => Selection): Self = StObject.set(x, "getSelection", js.Any.fromFunction0(value))
+    inline def setGetSelection(value: () => Selection): Self = StObject.set(x, "getSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsertText(value: (Selection, String) => Unit): Self = StObject.set(x, "insertText", js.Any.fromFunction2(value))
+    inline def setInsertText(value: (Selection, String) => Unit): Self = StObject.set(x, "insertText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsEditable(value: () => Boolean): Self = StObject.set(x, "isEditable", js.Any.fromFunction0(value))
+    inline def setIsEditable(value: () => Boolean): Self = StObject.set(x, "isEditable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMaxTextLen(value: Double): Self = StObject.set(x, "MaxTextLen", value.asInstanceOf[js.Any])
+    inline def setMaxTextLen(value: Double): Self = StObject.set(x, "MaxTextLen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveTextListener(value: XTextListener => Unit): Self = StObject.set(x, "removeTextListener", js.Any.fromFunction1(value))
+    inline def setRemoveTextListener(value: XTextListener => Unit): Self = StObject.set(x, "removeTextListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectedText(value: String): Self = StObject.set(x, "SelectedText", value.asInstanceOf[js.Any])
+    inline def setSelectedText(value: String): Self = StObject.set(x, "SelectedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelection(value: Selection): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: Selection): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetEditable(value: Boolean => Unit): Self = StObject.set(x, "setEditable", js.Any.fromFunction1(value))
+    inline def setSetEditable(value: Boolean => Unit): Self = StObject.set(x, "setEditable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaxTextLen(value: Double => Unit): Self = StObject.set(x, "setMaxTextLen", js.Any.fromFunction1(value))
+    inline def setSetMaxTextLen(value: Double => Unit): Self = StObject.set(x, "setMaxTextLen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSelection(value: Selection => Unit): Self = StObject.set(x, "setSelection", js.Any.fromFunction1(value))
+    inline def setSetSelection(value: Selection => Unit): Self = StObject.set(x, "setSelection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

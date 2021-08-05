@@ -20,22 +20,17 @@ trait IPropertyDialogOptions extends StObject {
 }
 object IPropertyDialogOptions {
   
-  @scala.inline
-  def apply(callback: js.Function, editor: String, value: js.Object): IPropertyDialogOptions = {
+  inline def apply(callback: js.Function, editor: String, value: js.Object): IPropertyDialogOptions = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPropertyDialogOptions]
   }
   
-  @scala.inline
-  implicit class IPropertyDialogOptionsMutableBuilder[Self <: IPropertyDialogOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyDialogOptions](x: Self) {
     
-    @scala.inline
-    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditor(value: String): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: String): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

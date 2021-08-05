@@ -16,19 +16,15 @@ trait PointsOfInterestSearchResponse extends StObject {
 }
 object PointsOfInterestSearchResponse {
   
-  @scala.inline
-  def apply(places: js.Array[Place]): PointsOfInterestSearchResponse = {
+  inline def apply(places: js.Array[Place]): PointsOfInterestSearchResponse = {
     val __obj = js.Dynamic.literal(places = places.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointsOfInterestSearchResponse]
   }
   
-  @scala.inline
-  implicit class PointsOfInterestSearchResponseMutableBuilder[Self <: PointsOfInterestSearchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PointsOfInterestSearchResponse](x: Self) {
     
-    @scala.inline
-    def setPlaces(value: js.Array[Place]): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
+    inline def setPlaces(value: js.Array[Place]): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacesVarargs(value: Place*): Self = StObject.set(x, "places", js.Array(value :_*))
+    inline def setPlacesVarargs(value: Place*): Self = StObject.set(x, "places", js.Array(value :_*))
   }
 }

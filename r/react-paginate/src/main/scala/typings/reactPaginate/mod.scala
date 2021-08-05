@@ -148,149 +148,102 @@ object mod extends Shortcut {
   }
   object ReactPaginateProps {
     
-    @scala.inline
-    def apply(marginPagesDisplayed: Double, pageCount: Double, pageRangeDisplayed: Double): ReactPaginateProps = {
+    inline def apply(marginPagesDisplayed: Double, pageCount: Double, pageRangeDisplayed: Double): ReactPaginateProps = {
       val __obj = js.Dynamic.literal(marginPagesDisplayed = marginPagesDisplayed.asInstanceOf[js.Any], pageCount = pageCount.asInstanceOf[js.Any], pageRangeDisplayed = pageRangeDisplayed.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactPaginateProps]
     }
     
-    @scala.inline
-    implicit class ReactPaginatePropsMutableBuilder[Self <: ReactPaginateProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactPaginateProps](x: Self) {
       
-      @scala.inline
-      def setActiveClassName(value: String): Self = StObject.set(x, "activeClassName", value.asInstanceOf[js.Any])
+      inline def setActiveClassName(value: String): Self = StObject.set(x, "activeClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveClassNameUndefined: Self = StObject.set(x, "activeClassName", js.undefined)
+      inline def setActiveClassNameUndefined: Self = StObject.set(x, "activeClassName", js.undefined)
       
-      @scala.inline
-      def setActiveLinkClassName(value: String): Self = StObject.set(x, "activeLinkClassName", value.asInstanceOf[js.Any])
+      inline def setActiveLinkClassName(value: String): Self = StObject.set(x, "activeLinkClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveLinkClassNameUndefined: Self = StObject.set(x, "activeLinkClassName", js.undefined)
+      inline def setActiveLinkClassNameUndefined: Self = StObject.set(x, "activeLinkClassName", js.undefined)
       
-      @scala.inline
-      def setBreakClassName(value: String): Self = StObject.set(x, "breakClassName", value.asInstanceOf[js.Any])
+      inline def setBreakClassName(value: String): Self = StObject.set(x, "breakClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakClassNameUndefined: Self = StObject.set(x, "breakClassName", js.undefined)
+      inline def setBreakClassNameUndefined: Self = StObject.set(x, "breakClassName", js.undefined)
       
-      @scala.inline
-      def setBreakLabel(value: String | ReactNode): Self = StObject.set(x, "breakLabel", value.asInstanceOf[js.Any])
+      inline def setBreakLabel(value: String | ReactNode): Self = StObject.set(x, "breakLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakLabelUndefined: Self = StObject.set(x, "breakLabel", js.undefined)
+      inline def setBreakLabelUndefined: Self = StObject.set(x, "breakLabel", js.undefined)
       
-      @scala.inline
-      def setBreakLinkClassName(value: String): Self = StObject.set(x, "breakLinkClassName", value.asInstanceOf[js.Any])
+      inline def setBreakLinkClassName(value: String): Self = StObject.set(x, "breakLinkClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakLinkClassNameUndefined: Self = StObject.set(x, "breakLinkClassName", js.undefined)
+      inline def setBreakLinkClassNameUndefined: Self = StObject.set(x, "breakLinkClassName", js.undefined)
       
-      @scala.inline
-      def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
+      inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
+      inline def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
       
-      @scala.inline
-      def setDisableInitialCallback(value: Boolean): Self = StObject.set(x, "disableInitialCallback", value.asInstanceOf[js.Any])
+      inline def setDisableInitialCallback(value: Boolean): Self = StObject.set(x, "disableInitialCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableInitialCallbackUndefined: Self = StObject.set(x, "disableInitialCallback", js.undefined)
+      inline def setDisableInitialCallbackUndefined: Self = StObject.set(x, "disableInitialCallback", js.undefined)
       
-      @scala.inline
-      def setDisabledClassName(value: String): Self = StObject.set(x, "disabledClassName", value.asInstanceOf[js.Any])
+      inline def setDisabledClassName(value: String): Self = StObject.set(x, "disabledClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledClassNameUndefined: Self = StObject.set(x, "disabledClassName", js.undefined)
+      inline def setDisabledClassNameUndefined: Self = StObject.set(x, "disabledClassName", js.undefined)
       
-      @scala.inline
-      def setExtraAriaContext(value: String): Self = StObject.set(x, "extraAriaContext", value.asInstanceOf[js.Any])
+      inline def setExtraAriaContext(value: String): Self = StObject.set(x, "extraAriaContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraAriaContextUndefined: Self = StObject.set(x, "extraAriaContext", js.undefined)
+      inline def setExtraAriaContextUndefined: Self = StObject.set(x, "extraAriaContext", js.undefined)
       
-      @scala.inline
-      def setForcePage(value: Double): Self = StObject.set(x, "forcePage", value.asInstanceOf[js.Any])
+      inline def setForcePage(value: Double): Self = StObject.set(x, "forcePage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForcePageUndefined: Self = StObject.set(x, "forcePage", js.undefined)
+      inline def setForcePageUndefined: Self = StObject.set(x, "forcePage", js.undefined)
       
-      @scala.inline
-      def setHrefBuilder(value: /* pageIndex */ Double => Unit): Self = StObject.set(x, "hrefBuilder", js.Any.fromFunction1(value))
+      inline def setHrefBuilder(value: /* pageIndex */ Double => Unit): Self = StObject.set(x, "hrefBuilder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHrefBuilderUndefined: Self = StObject.set(x, "hrefBuilder", js.undefined)
+      inline def setHrefBuilderUndefined: Self = StObject.set(x, "hrefBuilder", js.undefined)
       
-      @scala.inline
-      def setInitialPage(value: Double): Self = StObject.set(x, "initialPage", value.asInstanceOf[js.Any])
+      inline def setInitialPage(value: Double): Self = StObject.set(x, "initialPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPageUndefined: Self = StObject.set(x, "initialPage", js.undefined)
+      inline def setInitialPageUndefined: Self = StObject.set(x, "initialPage", js.undefined)
       
-      @scala.inline
-      def setMarginPagesDisplayed(value: Double): Self = StObject.set(x, "marginPagesDisplayed", value.asInstanceOf[js.Any])
+      inline def setMarginPagesDisplayed(value: Double): Self = StObject.set(x, "marginPagesDisplayed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextClassName(value: String): Self = StObject.set(x, "nextClassName", value.asInstanceOf[js.Any])
+      inline def setNextClassName(value: String): Self = StObject.set(x, "nextClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextClassNameUndefined: Self = StObject.set(x, "nextClassName", js.undefined)
+      inline def setNextClassNameUndefined: Self = StObject.set(x, "nextClassName", js.undefined)
       
-      @scala.inline
-      def setNextLabel(value: ReactNode): Self = StObject.set(x, "nextLabel", value.asInstanceOf[js.Any])
+      inline def setNextLabel(value: ReactNode): Self = StObject.set(x, "nextLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextLabelUndefined: Self = StObject.set(x, "nextLabel", js.undefined)
+      inline def setNextLabelUndefined: Self = StObject.set(x, "nextLabel", js.undefined)
       
-      @scala.inline
-      def setNextLinkClassName(value: String): Self = StObject.set(x, "nextLinkClassName", value.asInstanceOf[js.Any])
+      inline def setNextLinkClassName(value: String): Self = StObject.set(x, "nextLinkClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextLinkClassNameUndefined: Self = StObject.set(x, "nextLinkClassName", js.undefined)
+      inline def setNextLinkClassNameUndefined: Self = StObject.set(x, "nextLinkClassName", js.undefined)
       
-      @scala.inline
-      def setOnPageChange(value: /* selectedItem */ Selected => Unit): Self = StObject.set(x, "onPageChange", js.Any.fromFunction1(value))
+      inline def setOnPageChange(value: /* selectedItem */ Selected => Unit): Self = StObject.set(x, "onPageChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPageChangeUndefined: Self = StObject.set(x, "onPageChange", js.undefined)
+      inline def setOnPageChangeUndefined: Self = StObject.set(x, "onPageChange", js.undefined)
       
-      @scala.inline
-      def setPageClassName(value: String): Self = StObject.set(x, "pageClassName", value.asInstanceOf[js.Any])
+      inline def setPageClassName(value: String): Self = StObject.set(x, "pageClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageClassNameUndefined: Self = StObject.set(x, "pageClassName", js.undefined)
+      inline def setPageClassNameUndefined: Self = StObject.set(x, "pageClassName", js.undefined)
       
-      @scala.inline
-      def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
+      inline def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageLinkClassName(value: String): Self = StObject.set(x, "pageLinkClassName", value.asInstanceOf[js.Any])
+      inline def setPageLinkClassName(value: String): Self = StObject.set(x, "pageLinkClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageLinkClassNameUndefined: Self = StObject.set(x, "pageLinkClassName", js.undefined)
+      inline def setPageLinkClassNameUndefined: Self = StObject.set(x, "pageLinkClassName", js.undefined)
       
-      @scala.inline
-      def setPageRangeDisplayed(value: Double): Self = StObject.set(x, "pageRangeDisplayed", value.asInstanceOf[js.Any])
+      inline def setPageRangeDisplayed(value: Double): Self = StObject.set(x, "pageRangeDisplayed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousClassName(value: String): Self = StObject.set(x, "previousClassName", value.asInstanceOf[js.Any])
+      inline def setPreviousClassName(value: String): Self = StObject.set(x, "previousClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousClassNameUndefined: Self = StObject.set(x, "previousClassName", js.undefined)
+      inline def setPreviousClassNameUndefined: Self = StObject.set(x, "previousClassName", js.undefined)
       
-      @scala.inline
-      def setPreviousLabel(value: ReactNode): Self = StObject.set(x, "previousLabel", value.asInstanceOf[js.Any])
+      inline def setPreviousLabel(value: ReactNode): Self = StObject.set(x, "previousLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousLabelUndefined: Self = StObject.set(x, "previousLabel", js.undefined)
+      inline def setPreviousLabelUndefined: Self = StObject.set(x, "previousLabel", js.undefined)
       
-      @scala.inline
-      def setPreviousLinkClassName(value: String): Self = StObject.set(x, "previousLinkClassName", value.asInstanceOf[js.Any])
+      inline def setPreviousLinkClassName(value: String): Self = StObject.set(x, "previousLinkClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousLinkClassNameUndefined: Self = StObject.set(x, "previousLinkClassName", js.undefined)
+      inline def setPreviousLinkClassNameUndefined: Self = StObject.set(x, "previousLinkClassName", js.undefined)
     }
   }
   

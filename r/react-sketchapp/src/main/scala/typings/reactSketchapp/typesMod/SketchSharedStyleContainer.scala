@@ -12,8 +12,7 @@ trait SketchSharedStyleContainer extends StObject {
 }
 object SketchSharedStyleContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addSharedStyleWithName_firstInstance: (String, SketchStyle) => js.Any,
     setObjects: js.Array[SketchStyle] => Unit
   ): SketchSharedStyleContainer = {
@@ -21,13 +20,10 @@ object SketchSharedStyleContainer {
     __obj.asInstanceOf[SketchSharedStyleContainer]
   }
   
-  @scala.inline
-  implicit class SketchSharedStyleContainerMutableBuilder[Self <: SketchSharedStyleContainer] (val x: Self) extends AnyVal {
+  extension [Self <: SketchSharedStyleContainer](x: Self) {
     
-    @scala.inline
-    def setAddSharedStyleWithName_firstInstance(value: (String, SketchStyle) => js.Any): Self = StObject.set(x, "addSharedStyleWithName_firstInstance", js.Any.fromFunction2(value))
+    inline def setAddSharedStyleWithName_firstInstance(value: (String, SketchStyle) => js.Any): Self = StObject.set(x, "addSharedStyleWithName_firstInstance", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetObjects(value: js.Array[SketchStyle] => Unit): Self = StObject.set(x, "setObjects", js.Any.fromFunction1(value))
+    inline def setSetObjects(value: js.Array[SketchStyle] => Unit): Self = StObject.set(x, "setObjects", js.Any.fromFunction1(value))
   }
 }

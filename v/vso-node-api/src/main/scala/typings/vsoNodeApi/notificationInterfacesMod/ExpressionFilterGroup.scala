@@ -23,22 +23,17 @@ trait ExpressionFilterGroup extends StObject {
 }
 object ExpressionFilterGroup {
   
-  @scala.inline
-  def apply(end: Double, level: Double, start: Double): ExpressionFilterGroup = {
+  inline def apply(end: Double, level: Double, start: Double): ExpressionFilterGroup = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpressionFilterGroup]
   }
   
-  @scala.inline
-  implicit class ExpressionFilterGroupMutableBuilder[Self <: ExpressionFilterGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ExpressionFilterGroup](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

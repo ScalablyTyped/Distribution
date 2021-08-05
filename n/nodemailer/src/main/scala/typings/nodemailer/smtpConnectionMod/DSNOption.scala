@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DSNOption extends StObject
 object DSNOption {
   
-  @scala.inline
-  def DELAY: typings.nodemailer.nodemailerStrings.DELAY = "DELAY".asInstanceOf[typings.nodemailer.nodemailerStrings.DELAY]
+  inline def DELAY: typings.nodemailer.nodemailerStrings.DELAY = "DELAY".asInstanceOf[typings.nodemailer.nodemailerStrings.DELAY]
   
-  @scala.inline
-  def FAILURE: typings.nodemailer.nodemailerStrings.FAILURE = "FAILURE".asInstanceOf[typings.nodemailer.nodemailerStrings.FAILURE]
+  inline def FAILURE: typings.nodemailer.nodemailerStrings.FAILURE = "FAILURE".asInstanceOf[typings.nodemailer.nodemailerStrings.FAILURE]
   
-  @scala.inline
-  def NEVER: typings.nodemailer.nodemailerStrings.NEVER = "NEVER".asInstanceOf[typings.nodemailer.nodemailerStrings.NEVER]
+  inline def NEVER: typings.nodemailer.nodemailerStrings.NEVER = "NEVER".asInstanceOf[typings.nodemailer.nodemailerStrings.NEVER]
   
-  @scala.inline
-  def SUCCESS: typings.nodemailer.nodemailerStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.nodemailer.nodemailerStrings.SUCCESS]
+  inline def SUCCESS: typings.nodemailer.nodemailerStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.nodemailer.nodemailerStrings.SUCCESS]
 }

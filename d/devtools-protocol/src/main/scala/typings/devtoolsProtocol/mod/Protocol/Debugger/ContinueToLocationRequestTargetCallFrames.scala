@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContinueToLocationRequestTargetCallFrames extends StObject
 object ContinueToLocationRequestTargetCallFrames {
   
-  @scala.inline
-  def Any: any = "any".asInstanceOf[any]
+  inline def Any: any = "any".asInstanceOf[any]
   
-  @scala.inline
-  def Current: current = "current".asInstanceOf[current]
+  inline def Current: current = "current".asInstanceOf[current]
 }

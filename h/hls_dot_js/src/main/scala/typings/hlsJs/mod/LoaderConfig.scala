@@ -28,25 +28,19 @@ trait LoaderConfig extends StObject {
 }
 object LoaderConfig {
   
-  @scala.inline
-  def apply(maxRetry: Double, maxRetryDelay: Double, retryDelay: Double, timeout: Double): LoaderConfig = {
+  inline def apply(maxRetry: Double, maxRetryDelay: Double, retryDelay: Double, timeout: Double): LoaderConfig = {
     val __obj = js.Dynamic.literal(maxRetry = maxRetry.asInstanceOf[js.Any], maxRetryDelay = maxRetryDelay.asInstanceOf[js.Any], retryDelay = retryDelay.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderConfig]
   }
   
-  @scala.inline
-  implicit class LoaderConfigMutableBuilder[Self <: LoaderConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LoaderConfig](x: Self) {
     
-    @scala.inline
-    def setMaxRetry(value: Double): Self = StObject.set(x, "maxRetry", value.asInstanceOf[js.Any])
+    inline def setMaxRetry(value: Double): Self = StObject.set(x, "maxRetry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetryDelay(value: Double): Self = StObject.set(x, "maxRetryDelay", value.asInstanceOf[js.Any])
+    inline def setMaxRetryDelay(value: Double): Self = StObject.set(x, "maxRetryDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
+    inline def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

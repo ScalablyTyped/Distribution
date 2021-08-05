@@ -12,16 +12,13 @@ trait PlaybackMediaMarkerReachedEventArgs extends StObject {
 }
 object PlaybackMediaMarkerReachedEventArgs {
   
-  @scala.inline
-  def apply(playbackMediaMarker: PlaybackMediaMarker): PlaybackMediaMarkerReachedEventArgs = {
+  inline def apply(playbackMediaMarker: PlaybackMediaMarker): PlaybackMediaMarkerReachedEventArgs = {
     val __obj = js.Dynamic.literal(playbackMediaMarker = playbackMediaMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaybackMediaMarkerReachedEventArgs]
   }
   
-  @scala.inline
-  implicit class PlaybackMediaMarkerReachedEventArgsMutableBuilder[Self <: PlaybackMediaMarkerReachedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PlaybackMediaMarkerReachedEventArgs](x: Self) {
     
-    @scala.inline
-    def setPlaybackMediaMarker(value: PlaybackMediaMarker): Self = StObject.set(x, "playbackMediaMarker", value.asInstanceOf[js.Any])
+    inline def setPlaybackMediaMarker(value: PlaybackMediaMarker): Self = StObject.set(x, "playbackMediaMarker", value.asInstanceOf[js.Any])
   }
 }

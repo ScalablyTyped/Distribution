@@ -10,16 +10,13 @@ trait HostCancellationToken extends StObject {
 }
 object HostCancellationToken {
   
-  @scala.inline
-  def apply(isCancellationRequested: () => Boolean): HostCancellationToken = {
+  inline def apply(isCancellationRequested: () => Boolean): HostCancellationToken = {
     val __obj = js.Dynamic.literal(isCancellationRequested = js.Any.fromFunction0(isCancellationRequested))
     __obj.asInstanceOf[HostCancellationToken]
   }
   
-  @scala.inline
-  implicit class HostCancellationTokenMutableBuilder[Self <: HostCancellationToken] (val x: Self) extends AnyVal {
+  extension [Self <: HostCancellationToken](x: Self) {
     
-    @scala.inline
-    def setIsCancellationRequested(value: () => Boolean): Self = StObject.set(x, "isCancellationRequested", js.Any.fromFunction0(value))
+    inline def setIsCancellationRequested(value: () => Boolean): Self = StObject.set(x, "isCancellationRequested", js.Any.fromFunction0(value))
   }
 }

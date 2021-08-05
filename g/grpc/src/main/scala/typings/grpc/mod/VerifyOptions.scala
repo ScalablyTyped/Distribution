@@ -15,19 +15,15 @@ trait VerifyOptions extends StObject {
 }
 object VerifyOptions {
   
-  @scala.inline
-  def apply(): VerifyOptions = {
+  inline def apply(): VerifyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VerifyOptions]
   }
   
-  @scala.inline
-  implicit class VerifyOptionsMutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VerifyOptions](x: Self) {
     
-    @scala.inline
-    def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ Certificate) => js.UndefOr[Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
+    inline def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ Certificate) => js.UndefOr[Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
+    inline def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
   }
 }

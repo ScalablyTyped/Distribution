@@ -27,17 +27,14 @@ object portalMod {
   }
   object PortalProps {
     
-    @scala.inline
-    def apply(getContainer: () => Element): PortalProps = {
+    inline def apply(getContainer: () => Element): PortalProps = {
       val __obj = js.Dynamic.literal(getContainer = js.Any.fromFunction0(getContainer))
       __obj.asInstanceOf[PortalProps]
     }
     
-    @scala.inline
-    implicit class PortalPropsMutableBuilder[Self <: PortalProps] (val x: Self) extends AnyVal {
+    extension [Self <: PortalProps](x: Self) {
       
-      @scala.inline
-      def setGetContainer(value: () => Element): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+      inline def setGetContainer(value: () => Element): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
     }
   }
 }

@@ -33,37 +33,27 @@ trait Fulfilled extends StObject {
 }
 object Fulfilled {
   
-  @scala.inline
-  def apply(): Fulfilled = {
+  inline def apply(): Fulfilled = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Fulfilled]
   }
   
-  @scala.inline
-  implicit class FulfilledMutableBuilder[Self <: Fulfilled] (val x: Self) extends AnyVal {
+  extension [Self <: Fulfilled](x: Self) {
     
-    @scala.inline
-    def setCanceled(value: IDateFilter): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
+    inline def setCanceled(value: IDateFilter): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanceledUndefined: Self = StObject.set(x, "canceled", js.undefined)
+    inline def setCanceledUndefined: Self = StObject.set(x, "canceled", js.undefined)
     
-    @scala.inline
-    def setFulfilled(value: IDateFilter): Self = StObject.set(x, "fulfilled", value.asInstanceOf[js.Any])
+    inline def setFulfilled(value: IDateFilter): Self = StObject.set(x, "fulfilled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFulfilledUndefined: Self = StObject.set(x, "fulfilled", js.undefined)
+    inline def setFulfilledUndefined: Self = StObject.set(x, "fulfilled", js.undefined)
     
-    @scala.inline
-    def setPaid(value: IDateFilter): Self = StObject.set(x, "paid", value.asInstanceOf[js.Any])
+    inline def setPaid(value: IDateFilter): Self = StObject.set(x, "paid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaidUndefined: Self = StObject.set(x, "paid", js.undefined)
+    inline def setPaidUndefined: Self = StObject.set(x, "paid", js.undefined)
     
-    @scala.inline
-    def setReturned(value: IDateFilter): Self = StObject.set(x, "returned", value.asInstanceOf[js.Any])
+    inline def setReturned(value: IDateFilter): Self = StObject.set(x, "returned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnedUndefined: Self = StObject.set(x, "returned", js.undefined)
+    inline def setReturnedUndefined: Self = StObject.set(x, "returned", js.undefined)
   }
 }

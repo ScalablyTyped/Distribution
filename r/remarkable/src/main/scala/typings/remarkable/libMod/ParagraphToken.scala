@@ -17,17 +17,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ParagraphToken {
   
-  @scala.inline
-  def apply(level: Double, tight: Boolean, `type`: String): ParagraphToken = {
+  inline def apply(level: Double, tight: Boolean, `type`: String): ParagraphToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], tight = tight.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphToken]
   }
   
-  @scala.inline
-  implicit class ParagraphTokenMutableBuilder[Self <: ParagraphToken] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphToken](x: Self) {
     
-    @scala.inline
-    def setTight(value: Boolean): Self = StObject.set(x, "tight", value.asInstanceOf[js.Any])
+    inline def setTight(value: Boolean): Self = StObject.set(x, "tight", value.asInstanceOf[js.Any])
   }
 }

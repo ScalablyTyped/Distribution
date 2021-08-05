@@ -23,8 +23,7 @@ trait CloudWatchDimensionConfiguration extends StObject {
 }
 object CloudWatchDimensionConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultDimensionValue: DefaultDimensionValue,
     DimensionName: DimensionName,
     DimensionValueSource: DimensionValueSource
@@ -33,16 +32,12 @@ object CloudWatchDimensionConfiguration {
     __obj.asInstanceOf[CloudWatchDimensionConfiguration]
   }
   
-  @scala.inline
-  implicit class CloudWatchDimensionConfigurationMutableBuilder[Self <: CloudWatchDimensionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CloudWatchDimensionConfiguration](x: Self) {
     
-    @scala.inline
-    def setDefaultDimensionValue(value: DefaultDimensionValue): Self = StObject.set(x, "DefaultDimensionValue", value.asInstanceOf[js.Any])
+    inline def setDefaultDimensionValue(value: DefaultDimensionValue): Self = StObject.set(x, "DefaultDimensionValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionName(value: DimensionName): Self = StObject.set(x, "DimensionName", value.asInstanceOf[js.Any])
+    inline def setDimensionName(value: DimensionName): Self = StObject.set(x, "DimensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionValueSource(value: DimensionValueSource): Self = StObject.set(x, "DimensionValueSource", value.asInstanceOf[js.Any])
+    inline def setDimensionValueSource(value: DimensionValueSource): Self = StObject.set(x, "DimensionValueSource", value.asInstanceOf[js.Any])
   }
 }

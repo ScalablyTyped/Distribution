@@ -12,28 +12,21 @@ trait ConnectFailureFilter extends StObject {
 }
 object ConnectFailureFilter {
   
-  @scala.inline
-  def apply(): ConnectFailureFilter = {
+  inline def apply(): ConnectFailureFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectFailureFilter]
   }
   
-  @scala.inline
-  implicit class ConnectFailureFilterMutableBuilder[Self <: ConnectFailureFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectFailureFilter](x: Self) {
     
-    @scala.inline
-    def setEnvelopeIds(value: js.Array[String]): Self = StObject.set(x, "envelopeIds", value.asInstanceOf[js.Any])
+    inline def setEnvelopeIds(value: js.Array[String]): Self = StObject.set(x, "envelopeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeIdsUndefined: Self = StObject.set(x, "envelopeIds", js.undefined)
+    inline def setEnvelopeIdsUndefined: Self = StObject.set(x, "envelopeIds", js.undefined)
     
-    @scala.inline
-    def setEnvelopeIdsVarargs(value: String*): Self = StObject.set(x, "envelopeIds", js.Array(value :_*))
+    inline def setEnvelopeIdsVarargs(value: String*): Self = StObject.set(x, "envelopeIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSynchronous(value: String): Self = StObject.set(x, "synchronous", value.asInstanceOf[js.Any])
+    inline def setSynchronous(value: String): Self = StObject.set(x, "synchronous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynchronousUndefined: Self = StObject.set(x, "synchronous", js.undefined)
+    inline def setSynchronousUndefined: Self = StObject.set(x, "synchronous", js.undefined)
   }
 }

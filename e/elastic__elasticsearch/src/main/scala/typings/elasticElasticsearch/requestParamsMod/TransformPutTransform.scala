@@ -16,25 +16,19 @@ trait TransformPutTransform[T]
 }
 object TransformPutTransform {
   
-  @scala.inline
-  def apply[T](body: T, transform_id: String): TransformPutTransform[T] = {
+  inline def apply[T](body: T, transform_id: String): TransformPutTransform[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], transform_id = transform_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformPutTransform[T]]
   }
   
-  @scala.inline
-  implicit class TransformPutTransformMutableBuilder[Self <: TransformPutTransform[?], T] (val x: Self & TransformPutTransform[T]) extends AnyVal {
+  extension [Self <: TransformPutTransform[?], T](x: Self & TransformPutTransform[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefer_validation(value: Boolean): Self = StObject.set(x, "defer_validation", value.asInstanceOf[js.Any])
+    inline def setDefer_validation(value: Boolean): Self = StObject.set(x, "defer_validation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefer_validationUndefined: Self = StObject.set(x, "defer_validation", js.undefined)
+    inline def setDefer_validationUndefined: Self = StObject.set(x, "defer_validation", js.undefined)
     
-    @scala.inline
-    def setTransform_id(value: String): Self = StObject.set(x, "transform_id", value.asInstanceOf[js.Any])
+    inline def setTransform_id(value: String): Self = StObject.set(x, "transform_id", value.asInstanceOf[js.Any])
   }
 }

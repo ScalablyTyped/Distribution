@@ -13,22 +13,17 @@ trait GetAppValidationOutputResponse extends StObject {
 }
 object GetAppValidationOutputResponse {
   
-  @scala.inline
-  def apply(): GetAppValidationOutputResponse = {
+  inline def apply(): GetAppValidationOutputResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAppValidationOutputResponse]
   }
   
-  @scala.inline
-  implicit class GetAppValidationOutputResponseMutableBuilder[Self <: GetAppValidationOutputResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAppValidationOutputResponse](x: Self) {
     
-    @scala.inline
-    def setValidationOutputList(value: ValidationOutputList): Self = StObject.set(x, "validationOutputList", value.asInstanceOf[js.Any])
+    inline def setValidationOutputList(value: ValidationOutputList): Self = StObject.set(x, "validationOutputList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationOutputListUndefined: Self = StObject.set(x, "validationOutputList", js.undefined)
+    inline def setValidationOutputListUndefined: Self = StObject.set(x, "validationOutputList", js.undefined)
     
-    @scala.inline
-    def setValidationOutputListVarargs(value: ValidationOutput*): Self = StObject.set(x, "validationOutputList", js.Array(value :_*))
+    inline def setValidationOutputListVarargs(value: ValidationOutput*): Self = StObject.set(x, "validationOutputList", js.Array(value :_*))
   }
 }

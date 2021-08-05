@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestReferrerPolicy extends StObject
 object RequestReferrerPolicy {
   
-  @scala.inline
-  def NoReferrer: `no-referrer` = "no-referrer".asInstanceOf[`no-referrer`]
+  inline def NoReferrer: `no-referrer` = "no-referrer".asInstanceOf[`no-referrer`]
   
-  @scala.inline
-  def NoReferrerWhenDowngrade: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
+  inline def NoReferrerWhenDowngrade: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
   
-  @scala.inline
-  def Origin: origin = "origin".asInstanceOf[origin]
+  inline def Origin: origin = "origin".asInstanceOf[origin]
   
-  @scala.inline
-  def OriginWhenCrossOrigin: `origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[`origin-when-cross-origin`]
+  inline def OriginWhenCrossOrigin: `origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[`origin-when-cross-origin`]
   
-  @scala.inline
-  def SameOrigin: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
+  inline def SameOrigin: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
   
-  @scala.inline
-  def StrictOrigin: `strict-origin` = "strict-origin".asInstanceOf[`strict-origin`]
+  inline def StrictOrigin: `strict-origin` = "strict-origin".asInstanceOf[`strict-origin`]
   
-  @scala.inline
-  def StrictOriginWhenCrossOrigin: `strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[`strict-origin-when-cross-origin`]
+  inline def StrictOriginWhenCrossOrigin: `strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[`strict-origin-when-cross-origin`]
   
-  @scala.inline
-  def UnsafeUrl: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
+  inline def UnsafeUrl: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
 }

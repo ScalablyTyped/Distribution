@@ -26,8 +26,7 @@ object widgetOptionsMod {
        with /* option */ StringDictionary[js.Any]
   object WidgetOptions {
     
-    @scala.inline
-    def apply[TElement](): WidgetOptions[TElement] = {
+    inline def apply[TElement](): WidgetOptions[TElement] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WidgetOptions[TElement]]
     }

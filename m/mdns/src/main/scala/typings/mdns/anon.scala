@@ -12,17 +12,14 @@ object anon {
   }
   object Flags {
     
-    @scala.inline
-    def apply(flags: js.Any): Flags = {
+    inline def apply(flags: js.Any): Flags = {
       val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
       __obj.asInstanceOf[Flags]
     }
     
-    @scala.inline
-    implicit class FlagsMutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
+    extension [Self <: Flags](x: Self) {
       
-      @scala.inline
-      def setFlags(value: js.Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: js.Any): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,29 +33,22 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String, protocol: String): Name = {
+    inline def apply(name: String, protocol: String): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtypes(value: js.Array[String]): Self = StObject.set(x, "subtypes", value.asInstanceOf[js.Any])
+      inline def setSubtypes(value: js.Array[String]): Self = StObject.set(x, "subtypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtypesUndefined: Self = StObject.set(x, "subtypes", js.undefined)
+      inline def setSubtypesUndefined: Self = StObject.set(x, "subtypes", js.undefined)
       
-      @scala.inline
-      def setSubtypesVarargs(value: String*): Self = StObject.set(x, "subtypes", js.Array(value :_*))
+      inline def setSubtypesVarargs(value: String*): Self = StObject.set(x, "subtypes", js.Array(value :_*))
     }
   }
 }

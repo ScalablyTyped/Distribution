@@ -28,7 +28,7 @@ object eventDispatcherMod {
     /**
       * @hidden
       */
-    var listeners_ : js.Any = js.native
+    /* private */ var listeners_ : js.Any = js.native
     
     /* CompleteClass */
     override def removeEventListener(`type`: Type, listener: Listener[T, SourceT, IteratorT, ReverseT]): Unit = js.native

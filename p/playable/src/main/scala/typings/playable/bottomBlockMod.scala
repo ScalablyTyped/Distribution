@@ -47,22 +47,19 @@ object bottomBlockMod {
     @JSImport("playable/dist/src/modules/ui/bottom-block/bottom-block", "default.View")
     @js.native
     def View: Instantiable1[/* config */ IBottomBlockViewConfig, typings.playable.bottomBlockViewMod.default] = js.native
-    @scala.inline
-    def View_=(x: Instantiable1[/* config */ IBottomBlockViewConfig, typings.playable.bottomBlockViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+    inline def View_=(x: Instantiable1[/* config */ IBottomBlockViewConfig, typings.playable.bottomBlockViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/bottom-block/bottom-block", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/bottom-block/bottom-block", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -70,23 +67,23 @@ object bottomBlockMod {
     extends StObject
        with IBottomBlock {
     
-    var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: js.Any = js.native
     
-    var _bindViewCallbacks: js.Any = js.native
+    /* private */ var _bindViewCallbacks: js.Any = js.native
     
-    var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: js.Any = js.native
     
-    var _getControlElements: js.Any = js.native
+    /* private */ var _getControlElements: js.Any = js.native
     
-    var _initUI: js.Any = js.native
+    /* private */ var _initUI: js.Any = js.native
     
-    var _isBlockFocused: js.Any = js.native
+    /* private */ var _isBlockFocused: js.Any = js.native
     
-    var _removeFocusState: js.Any = js.native
+    /* private */ var _removeFocusState: js.Any = js.native
     
-    var _setFocusState: js.Any = js.native
+    /* private */ var _setFocusState: js.Any = js.native
     
-    var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: js.Any = js.native
     
     def addControl(key: String, element: HTMLElement, options: IAddControllOptions): Unit = js.native
     
@@ -118,20 +115,16 @@ object bottomBlockMod {
   }
   object IAddControllOptions {
     
-    @scala.inline
-    def apply(): IAddControllOptions = {
+    inline def apply(): IAddControllOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAddControllOptions]
     }
     
-    @scala.inline
-    implicit class IAddControllOptionsMutableBuilder[Self <: IAddControllOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IAddControllOptions](x: Self) {
       
-      @scala.inline
-      def setPosition(value: left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }
   }
   
@@ -159,8 +152,7 @@ object bottomBlockMod {
   }
   object IDependencies {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       chromecastButton: IChromecastButton,
       downloadButton: IDownloadButton,
       eventEmitter: IEventEmitter,
@@ -176,38 +168,27 @@ object bottomBlockMod {
       __obj.asInstanceOf[IDependencies]
     }
     
-    @scala.inline
-    implicit class IDependenciesMutableBuilder[Self <: IDependencies] (val x: Self) extends AnyVal {
+    extension [Self <: IDependencies](x: Self) {
       
-      @scala.inline
-      def setChromecastButton(value: IChromecastButton): Self = StObject.set(x, "chromecastButton", value.asInstanceOf[js.Any])
+      inline def setChromecastButton(value: IChromecastButton): Self = StObject.set(x, "chromecastButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadButton(value: IDownloadButton): Self = StObject.set(x, "downloadButton", value.asInstanceOf[js.Any])
+      inline def setDownloadButton(value: IDownloadButton): Self = StObject.set(x, "downloadButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
+      inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullScreenControl(value: IFullScreenControl): Self = StObject.set(x, "fullScreenControl", value.asInstanceOf[js.Any])
+      inline def setFullScreenControl(value: IFullScreenControl): Self = StObject.set(x, "fullScreenControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogo(value: ILogoControl): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+      inline def setLogo(value: ILogoControl): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPictureInPictureControl(value: IPictureInPictureControl): Self = StObject.set(x, "pictureInPictureControl", value.asInstanceOf[js.Any])
+      inline def setPictureInPictureControl(value: IPictureInPictureControl): Self = StObject.set(x, "pictureInPictureControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayControl(value: IPlayControl): Self = StObject.set(x, "playControl", value.asInstanceOf[js.Any])
+      inline def setPlayControl(value: IPlayControl): Self = StObject.set(x, "playControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressControl(value: IProgressControl): Self = StObject.set(x, "progressControl", value.asInstanceOf[js.Any])
+      inline def setProgressControl(value: IProgressControl): Self = StObject.set(x, "progressControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeControl(value: ITimeControl): Self = StObject.set(x, "timeControl", value.asInstanceOf[js.Any])
+      inline def setTimeControl(value: ITimeControl): Self = StObject.set(x, "timeControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeControl(value: IVolumeControl): Self = StObject.set(x, "volumeControl", value.asInstanceOf[js.Any])
+      inline def setVolumeControl(value: IVolumeControl): Self = StObject.set(x, "volumeControl", value.asInstanceOf[js.Any])
     }
   }
 }

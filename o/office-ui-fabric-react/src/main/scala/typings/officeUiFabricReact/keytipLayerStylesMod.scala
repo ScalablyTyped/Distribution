@@ -14,9 +14,7 @@ object keytipLayerStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLayerStyles(props: ILayerStyleProps): ILayerStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayerStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ILayerStyles]
+  inline def getLayerStyles(props: ILayerStyleProps): ILayerStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayerStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ILayerStyles]
   
-  @scala.inline
-  def getStyles(props: IKeytipLayerStyleProps): IKeytipLayerStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IKeytipLayerStyles]
+  inline def getStyles(props: IKeytipLayerStyleProps): IKeytipLayerStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IKeytipLayerStyles]
 }

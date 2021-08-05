@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchDirectionEnum extends StObject
 object SearchDirectionEnum {
   
-  @scala.inline
-  def adSearchBackward: `-1` = -1.asInstanceOf[`-1`]
+  inline def adSearchBackward: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def adSearchForward: `1` = 1.asInstanceOf[`1`]
+  inline def adSearchForward: `1` = 1.asInstanceOf[`1`]
 }

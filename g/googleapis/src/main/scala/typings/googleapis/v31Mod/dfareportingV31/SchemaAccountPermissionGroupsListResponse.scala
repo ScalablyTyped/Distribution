@@ -22,28 +22,21 @@ trait SchemaAccountPermissionGroupsListResponse extends StObject {
 }
 object SchemaAccountPermissionGroupsListResponse {
   
-  @scala.inline
-  def apply(): SchemaAccountPermissionGroupsListResponse = {
+  inline def apply(): SchemaAccountPermissionGroupsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccountPermissionGroupsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAccountPermissionGroupsListResponseMutableBuilder[Self <: SchemaAccountPermissionGroupsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccountPermissionGroupsListResponse](x: Self) {
     
-    @scala.inline
-    def setAccountPermissionGroups(value: js.Array[SchemaAccountPermissionGroup]): Self = StObject.set(x, "accountPermissionGroups", value.asInstanceOf[js.Any])
+    inline def setAccountPermissionGroups(value: js.Array[SchemaAccountPermissionGroup]): Self = StObject.set(x, "accountPermissionGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountPermissionGroupsUndefined: Self = StObject.set(x, "accountPermissionGroups", js.undefined)
+    inline def setAccountPermissionGroupsUndefined: Self = StObject.set(x, "accountPermissionGroups", js.undefined)
     
-    @scala.inline
-    def setAccountPermissionGroupsVarargs(value: SchemaAccountPermissionGroup*): Self = StObject.set(x, "accountPermissionGroups", js.Array(value :_*))
+    inline def setAccountPermissionGroupsVarargs(value: SchemaAccountPermissionGroup*): Self = StObject.set(x, "accountPermissionGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

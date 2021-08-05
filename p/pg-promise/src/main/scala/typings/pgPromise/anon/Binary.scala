@@ -14,22 +14,17 @@ trait Binary extends StObject {
 }
 object Binary {
   
-  @scala.inline
-  def apply(_types: js.Any, binary: js.Any, text: js.Any): Binary = {
+  inline def apply(_types: js.Any, binary: js.Any, text: js.Any): Binary = {
     val __obj = js.Dynamic.literal(_types = _types.asInstanceOf[js.Any], binary = binary.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Binary]
   }
   
-  @scala.inline
-  implicit class BinaryMutableBuilder[Self <: Binary] (val x: Self) extends AnyVal {
+  extension [Self <: Binary](x: Self) {
     
-    @scala.inline
-    def setBinary(value: js.Any): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    inline def setBinary(value: js.Any): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_types(value: js.Any): Self = StObject.set(x, "_types", value.asInstanceOf[js.Any])
+    inline def set_types(value: js.Any): Self = StObject.set(x, "_types", value.asInstanceOf[js.Any])
   }
 }

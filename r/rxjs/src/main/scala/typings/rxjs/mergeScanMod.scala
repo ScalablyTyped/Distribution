@@ -27,14 +27,14 @@ object mergeScanMod {
       concurrent: Double
     ) = this()
     
-    var accumulator: js.Any = js.native
+    /* private */ var accumulator: js.Any = js.native
     
     /* CompleteClass */
     override def call(subscriber: Subscriber[R], source: js.Any): TeardownLogic = js.native
     
-    var concurrent: js.Any = js.native
+    /* private */ var concurrent: js.Any = js.native
     
-    var seed: js.Any = js.native
+    /* private */ var seed: js.Any = js.native
   }
   
   @JSImport("rxjs/internal/operators/mergeScan", "MergeScanSubscriber")
@@ -47,34 +47,32 @@ object mergeScanMod {
       concurrent: Double
     ) = this()
     
-    var _innerSub: js.Any = js.native
+    /* private */ var _innerSub: js.Any = js.native
     
     /* protected */ def _next(value: js.Any): Unit = js.native
     
-    var acc: js.Any = js.native
+    /* private */ var acc: js.Any = js.native
     
-    var accumulator: js.Any = js.native
+    /* private */ var accumulator: js.Any = js.native
     
-    var active: js.Any = js.native
+    /* private */ var active: js.Any = js.native
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
-    var concurrent: js.Any = js.native
+    /* private */ var concurrent: js.Any = js.native
     
-    var hasCompleted: js.Any = js.native
+    /* private */ var hasCompleted: js.Any = js.native
     
-    var hasValue: js.Any = js.native
+    /* private */ var hasValue: js.Any = js.native
     
-    var index: Double = js.native
+    /* protected */ var index: Double = js.native
   }
   
-  @scala.inline
-  def mergeScan[T, R](
+  inline def mergeScan[T, R](
     accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, ObservableInput[R]],
     seed: R
   ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeScan")(accumulator.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
-  @scala.inline
-  def mergeScan[T, R](
+  inline def mergeScan[T, R](
     accumulator: js.Function3[/* acc */ R, /* value */ T, /* index */ Double, ObservableInput[R]],
     seed: R,
     concurrent: Double

@@ -12,25 +12,19 @@ trait Primary extends StObject {
 }
 object Primary {
   
-  @scala.inline
-  def apply(): Primary = {
+  inline def apply(): Primary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Primary]
   }
   
-  @scala.inline
-  implicit class PrimaryMutableBuilder[Self <: Primary] (val x: Self) extends AnyVal {
+  extension [Self <: Primary](x: Self) {
     
-    @scala.inline
-    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

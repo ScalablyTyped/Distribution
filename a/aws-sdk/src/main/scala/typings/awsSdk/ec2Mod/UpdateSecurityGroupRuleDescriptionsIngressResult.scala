@@ -13,19 +13,15 @@ trait UpdateSecurityGroupRuleDescriptionsIngressResult extends StObject {
 }
 object UpdateSecurityGroupRuleDescriptionsIngressResult {
   
-  @scala.inline
-  def apply(): UpdateSecurityGroupRuleDescriptionsIngressResult = {
+  inline def apply(): UpdateSecurityGroupRuleDescriptionsIngressResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateSecurityGroupRuleDescriptionsIngressResult]
   }
   
-  @scala.inline
-  implicit class UpdateSecurityGroupRuleDescriptionsIngressResultMutableBuilder[Self <: UpdateSecurityGroupRuleDescriptionsIngressResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSecurityGroupRuleDescriptionsIngressResult](x: Self) {
     
-    @scala.inline
-    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
   }
 }

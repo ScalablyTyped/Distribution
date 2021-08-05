@@ -17,16 +17,13 @@ trait PivotExportOptions extends StObject {
 }
 object PivotExportOptions {
   
-  @scala.inline
-  def apply(PrintHeadersOnEveryPage: Boolean): PivotExportOptions = {
+  inline def apply(PrintHeadersOnEveryPage: Boolean): PivotExportOptions = {
     val __obj = js.Dynamic.literal(PrintHeadersOnEveryPage = PrintHeadersOnEveryPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotExportOptions]
   }
   
-  @scala.inline
-  implicit class PivotExportOptionsMutableBuilder[Self <: PivotExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PivotExportOptions](x: Self) {
     
-    @scala.inline
-    def setPrintHeadersOnEveryPage(value: Boolean): Self = StObject.set(x, "PrintHeadersOnEveryPage", value.asInstanceOf[js.Any])
+    inline def setPrintHeadersOnEveryPage(value: Boolean): Self = StObject.set(x, "PrintHeadersOnEveryPage", value.asInstanceOf[js.Any])
   }
 }

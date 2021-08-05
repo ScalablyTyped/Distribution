@@ -37,43 +37,30 @@ object DataLabelPlacement {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AVOID_OVERLAP: `0` = 0.asInstanceOf[`0`]
+    inline def AVOID_OVERLAP: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def BOTTOM: `6` = 6.asInstanceOf[`6`]
+    inline def BOTTOM: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def BOTTOM_LEFT: `5` = 5.asInstanceOf[`5`]
+    inline def BOTTOM_LEFT: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def BOTTOM_RIGHT: `7` = 7.asInstanceOf[`7`]
+    inline def BOTTOM_RIGHT: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def CENTER: `1` = 1.asInstanceOf[`1`]
+    inline def CENTER: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def INSIDE: `10` = 10.asInstanceOf[`10`]
+    inline def INSIDE: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def LEFT: `4` = 4.asInstanceOf[`4`]
+    inline def LEFT: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def NEAR_ORIGIN: `12` = 12.asInstanceOf[`12`]
+    inline def NEAR_ORIGIN: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def OUTSIDE: `11` = 11.asInstanceOf[`11`]
+    inline def OUTSIDE: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def RIGHT: `8` = 8.asInstanceOf[`8`]
+    inline def RIGHT: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def TOP: `2` = 2.asInstanceOf[`2`]
+    inline def TOP: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def TOP_LEFT: `3` = 3.asInstanceOf[`3`]
+    inline def TOP_LEFT: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def TOP_RIGHT: `9` = 9.asInstanceOf[`9`]
+    inline def TOP_RIGHT: `9` = 9.asInstanceOf[`9`]
   }
 }

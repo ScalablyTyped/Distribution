@@ -13,16 +13,13 @@ trait ReleaseObjectParameterType extends StObject {
 }
 object ReleaseObjectParameterType {
   
-  @scala.inline
-  def apply(objectId: RemoteObjectId): ReleaseObjectParameterType = {
+  inline def apply(objectId: RemoteObjectId): ReleaseObjectParameterType = {
     val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseObjectParameterType]
   }
   
-  @scala.inline
-  implicit class ReleaseObjectParameterTypeMutableBuilder[Self <: ReleaseObjectParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseObjectParameterType](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
   }
 }

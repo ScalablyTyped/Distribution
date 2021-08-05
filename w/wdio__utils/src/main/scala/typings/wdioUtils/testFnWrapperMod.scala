@@ -14,8 +14,7 @@ object testFnWrapperMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def testFnWrapper(
+  inline def testFnWrapper(
     args_0: String,
     args_1: SpecFunction,
     args_2: BeforeHookParam[js.Any],
@@ -24,8 +23,7 @@ object testFnWrapperMod {
     args_5: Double
   ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("testFnWrapper")(args_0.asInstanceOf[js.Any], args_1.asInstanceOf[js.Any], args_2.asInstanceOf[js.Any], args_3.asInstanceOf[js.Any], args_4.asInstanceOf[js.Any], args_5.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def testFrameworkFnWrapper(
+  inline def testFrameworkFnWrapper(
     hasExecuteHooksWithArgsExecuteAsyncRunSync: WrapperMethods,
     `type`: String,
     hasSpecFnSpecFnArgs: SpecFunction,
@@ -33,8 +31,7 @@ object testFnWrapperMod {
     hasAfterFnAfterFnArgs: AfterHookParam[js.Any],
     cid: String
   ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("testFrameworkFnWrapper")(hasExecuteHooksWithArgsExecuteAsyncRunSync.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], hasSpecFnSpecFnArgs.asInstanceOf[js.Any], hasBeforeFnBeforeFnArgs.asInstanceOf[js.Any], hasAfterFnAfterFnArgs.asInstanceOf[js.Any], cid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def testFrameworkFnWrapper(
+  inline def testFrameworkFnWrapper(
     hasExecuteHooksWithArgsExecuteAsyncRunSync: WrapperMethods,
     `type`: String,
     hasSpecFnSpecFnArgs: SpecFunction,

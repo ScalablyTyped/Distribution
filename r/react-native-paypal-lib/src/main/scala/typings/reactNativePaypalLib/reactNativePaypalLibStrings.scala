@@ -13,223 +13,191 @@ object reactNativePaypalLibStrings {
   sealed trait AUD
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def AUD: AUD = "AUD".asInstanceOf[AUD]
+  inline def AUD: AUD = "AUD".asInstanceOf[AUD]
   
   @js.native
   sealed trait AUTHORIZE
     extends StObject
        with INTENT
-  @scala.inline
-  def AUTHORIZE: AUTHORIZE = "AUTHORIZE".asInstanceOf[AUTHORIZE]
+  inline def AUTHORIZE: AUTHORIZE = "AUTHORIZE".asInstanceOf[AUTHORIZE]
   
   @js.native
   sealed trait BRL
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def BRL: BRL = "BRL".asInstanceOf[BRL]
+  inline def BRL: BRL = "BRL".asInstanceOf[BRL]
   
   @js.native
   sealed trait CAD
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def CAD: CAD = "CAD".asInstanceOf[CAD]
+  inline def CAD: CAD = "CAD".asInstanceOf[CAD]
   
   @js.native
   sealed trait CHF
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def CHF: CHF = "CHF".asInstanceOf[CHF]
+  inline def CHF: CHF = "CHF".asInstanceOf[CHF]
   
   @js.native
   sealed trait CNY
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def CNY: CNY = "CNY".asInstanceOf[CNY]
+  inline def CNY: CNY = "CNY".asInstanceOf[CNY]
   
   @js.native
   sealed trait CZK
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def CZK: CZK = "CZK".asInstanceOf[CZK]
+  inline def CZK: CZK = "CZK".asInstanceOf[CZK]
   
   @js.native
   sealed trait DKK
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def DKK: DKK = "DKK".asInstanceOf[DKK]
+  inline def DKK: DKK = "DKK".asInstanceOf[DKK]
   
   @js.native
   sealed trait EUR
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def EUR: EUR = "EUR".asInstanceOf[EUR]
+  inline def EUR: EUR = "EUR".asInstanceOf[EUR]
   
   @js.native
   sealed trait GBP
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def GBP: GBP = "GBP".asInstanceOf[GBP]
+  inline def GBP: GBP = "GBP".asInstanceOf[GBP]
   
   @js.native
   sealed trait HKD
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def HKD: HKD = "HKD".asInstanceOf[HKD]
+  inline def HKD: HKD = "HKD".asInstanceOf[HKD]
   
   @js.native
   sealed trait HUF
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def HUF: HUF = "HUF".asInstanceOf[HUF]
+  inline def HUF: HUF = "HUF".asInstanceOf[HUF]
   
   @js.native
   sealed trait ILS
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def ILS: ILS = "ILS".asInstanceOf[ILS]
+  inline def ILS: ILS = "ILS".asInstanceOf[ILS]
   
   @js.native
   sealed trait INR
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def INR: INR = "INR".asInstanceOf[INR]
+  inline def INR: INR = "INR".asInstanceOf[INR]
   
   @js.native
   sealed trait JPY
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def JPY: JPY = "JPY".asInstanceOf[JPY]
+  inline def JPY: JPY = "JPY".asInstanceOf[JPY]
   
   @js.native
   sealed trait MXN
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def MXN: MXN = "MXN".asInstanceOf[MXN]
+  inline def MXN: MXN = "MXN".asInstanceOf[MXN]
   
   @js.native
   sealed trait MYR
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def MYR: MYR = "MYR".asInstanceOf[MYR]
+  inline def MYR: MYR = "MYR".asInstanceOf[MYR]
   
   @js.native
   sealed trait NOK
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def NOK: NOK = "NOK".asInstanceOf[NOK]
+  inline def NOK: NOK = "NOK".asInstanceOf[NOK]
   
   @js.native
   sealed trait NO_NETWORK
     extends StObject
        with ENVIRONMENT
-  @scala.inline
-  def NO_NETWORK: NO_NETWORK = "NO_NETWORK".asInstanceOf[NO_NETWORK]
+  inline def NO_NETWORK: NO_NETWORK = "NO_NETWORK".asInstanceOf[NO_NETWORK]
   
   @js.native
   sealed trait NZD
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def NZD: NZD = "NZD".asInstanceOf[NZD]
+  inline def NZD: NZD = "NZD".asInstanceOf[NZD]
   
   @js.native
   sealed trait ORDER
     extends StObject
        with INTENT
-  @scala.inline
-  def ORDER: ORDER = "ORDER".asInstanceOf[ORDER]
+  inline def ORDER: ORDER = "ORDER".asInstanceOf[ORDER]
   
   @js.native
   sealed trait PHP
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def PHP: PHP = "PHP".asInstanceOf[PHP]
+  inline def PHP: PHP = "PHP".asInstanceOf[PHP]
   
   @js.native
   sealed trait PLN
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def PLN: PLN = "PLN".asInstanceOf[PLN]
+  inline def PLN: PLN = "PLN".asInstanceOf[PLN]
   
   @js.native
   sealed trait PRODUCTION
     extends StObject
        with ENVIRONMENT
-  @scala.inline
-  def PRODUCTION: PRODUCTION = "PRODUCTION".asInstanceOf[PRODUCTION]
+  inline def PRODUCTION: PRODUCTION = "PRODUCTION".asInstanceOf[PRODUCTION]
   
   @js.native
   sealed trait RUB
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def RUB: RUB = "RUB".asInstanceOf[RUB]
+  inline def RUB: RUB = "RUB".asInstanceOf[RUB]
   
   @js.native
   sealed trait SALE
     extends StObject
        with INTENT
-  @scala.inline
-  def SALE: SALE = "SALE".asInstanceOf[SALE]
+  inline def SALE: SALE = "SALE".asInstanceOf[SALE]
   
   @js.native
   sealed trait SANDBOX
     extends StObject
        with ENVIRONMENT
-  @scala.inline
-  def SANDBOX: SANDBOX = "SANDBOX".asInstanceOf[SANDBOX]
+  inline def SANDBOX: SANDBOX = "SANDBOX".asInstanceOf[SANDBOX]
   
   @js.native
   sealed trait SEK
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def SEK: SEK = "SEK".asInstanceOf[SEK]
+  inline def SEK: SEK = "SEK".asInstanceOf[SEK]
   
   @js.native
   sealed trait SGD
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def SGD: SGD = "SGD".asInstanceOf[SGD]
+  inline def SGD: SGD = "SGD".asInstanceOf[SGD]
   
   @js.native
   sealed trait THB
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def THB: THB = "THB".asInstanceOf[THB]
+  inline def THB: THB = "THB".asInstanceOf[THB]
   
   @js.native
   sealed trait TWD
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def TWD: TWD = "TWD".asInstanceOf[TWD]
+  inline def TWD: TWD = "TWD".asInstanceOf[TWD]
   
   @js.native
   sealed trait USD
     extends StObject
        with CURRENCIES
-  @scala.inline
-  def USD: USD = "USD".asInstanceOf[USD]
+  inline def USD: USD = "USD".asInstanceOf[USD]
 }

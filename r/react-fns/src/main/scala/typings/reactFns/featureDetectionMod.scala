@@ -13,6 +13,5 @@ object featureDetectionMod {
   @JSImport("react-fns/dist/utils/featureDetection", "supportsPassiveListener")
   @js.native
   def supportsPassiveListener: Boolean = js.native
-  @scala.inline
-  def supportsPassiveListener_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportsPassiveListener")(x.asInstanceOf[js.Any])
+  inline def supportsPassiveListener_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportsPassiveListener")(x.asInstanceOf[js.Any])
 }

@@ -24,28 +24,21 @@ trait ViewportComponentInfo extends StObject {
 }
 object ViewportComponentInfo {
   
-  @scala.inline
-  def apply(parentMapUniqueKey: String, props: ComponentProps): ViewportComponentInfo = {
+  inline def apply(parentMapUniqueKey: String, props: ComponentProps): ViewportComponentInfo = {
     val __obj = js.Dynamic.literal(parentMapUniqueKey = parentMapUniqueKey.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewportComponentInfo]
   }
   
-  @scala.inline
-  implicit class ViewportComponentInfoMutableBuilder[Self <: ViewportComponentInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ViewportComponentInfo](x: Self) {
     
-    @scala.inline
-    def setLayoutChilds(value: js.Array[String]): Self = StObject.set(x, "layoutChilds", value.asInstanceOf[js.Any])
+    inline def setLayoutChilds(value: js.Array[String]): Self = StObject.set(x, "layoutChilds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutChildsUndefined: Self = StObject.set(x, "layoutChilds", js.undefined)
+    inline def setLayoutChildsUndefined: Self = StObject.set(x, "layoutChilds", js.undefined)
     
-    @scala.inline
-    def setLayoutChildsVarargs(value: String*): Self = StObject.set(x, "layoutChilds", js.Array(value :_*))
+    inline def setLayoutChildsVarargs(value: String*): Self = StObject.set(x, "layoutChilds", js.Array(value :_*))
     
-    @scala.inline
-    def setParentMapUniqueKey(value: String): Self = StObject.set(x, "parentMapUniqueKey", value.asInstanceOf[js.Any])
+    inline def setParentMapUniqueKey(value: String): Self = StObject.set(x, "parentMapUniqueKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProps(value: ComponentProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: ComponentProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait XPanels
 }
 object XPanels {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     DeckId: String,
     ElementNames: SafeArray[String],
@@ -47,13 +46,10 @@ object XPanels {
     __obj.asInstanceOf[XPanels]
   }
   
-  @scala.inline
-  implicit class XPanelsMutableBuilder[Self <: XPanels] (val x: Self) extends AnyVal {
+  extension [Self <: XPanels](x: Self) {
     
-    @scala.inline
-    def setDeckId(value: String): Self = StObject.set(x, "DeckId", value.asInstanceOf[js.Any])
+    inline def setDeckId(value: String): Self = StObject.set(x, "DeckId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeckId(value: () => String): Self = StObject.set(x, "getDeckId", js.Any.fromFunction0(value))
+    inline def setGetDeckId(value: () => String): Self = StObject.set(x, "getDeckId", js.Any.fromFunction0(value))
   }
 }

@@ -42,16 +42,13 @@ trait CModule
 }
 object CModule {
   
-  @scala.inline
-  def apply(dispose: () => Unit): CModule = {
+  inline def apply(dispose: () => Unit): CModule = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
     __obj.asInstanceOf[CModule]
   }
   
-  @scala.inline
-  implicit class CModuleMutableBuilder[Self <: CModule] (val x: Self) extends AnyVal {
+  extension [Self <: CModule](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }
 }

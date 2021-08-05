@@ -23,8 +23,7 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     element: HTMLElement,
     positions: js.Array[js.Function2[/* targetRect */ Rect, /* elementRect */ Rect, Position]],
     target: HTMLElement | Range | ClientRect | Rect | (js.Function0[HTMLElement | Range | ClientRect | Rect])
@@ -33,41 +32,30 @@ object Options {
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitInViewport(value: Boolean): Self = StObject.set(x, "fitInViewport", value.asInstanceOf[js.Any])
+    inline def setFitInViewport(value: Boolean): Self = StObject.set(x, "fitInViewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitInViewportUndefined: Self = StObject.set(x, "fitInViewport", js.undefined)
+    inline def setFitInViewportUndefined: Self = StObject.set(x, "fitInViewport", js.undefined)
     
-    @scala.inline
-    def setLimiter(
+    inline def setLimiter(
       value: HTMLElement | Range | ClientRect | Rect | (js.Function0[HTMLElement | Range | ClientRect | Rect])
     ): Self = StObject.set(x, "limiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimiterFunction0(value: () => HTMLElement | Range | ClientRect | Rect): Self = StObject.set(x, "limiter", js.Any.fromFunction0(value))
+    inline def setLimiterFunction0(value: () => HTMLElement | Range | ClientRect | Rect): Self = StObject.set(x, "limiter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLimiterUndefined: Self = StObject.set(x, "limiter", js.undefined)
+    inline def setLimiterUndefined: Self = StObject.set(x, "limiter", js.undefined)
     
-    @scala.inline
-    def setPositions(value: js.Array[js.Function2[/* targetRect */ Rect, /* elementRect */ Rect, Position]]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+    inline def setPositions(value: js.Array[js.Function2[/* targetRect */ Rect, /* elementRect */ Rect, Position]]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionsVarargs(value: (js.Function2[/* targetRect */ Rect, /* elementRect */ Rect, Position])*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: (js.Function2[/* targetRect */ Rect, /* elementRect */ Rect, Position])*): Self = StObject.set(x, "positions", js.Array(value :_*))
     
-    @scala.inline
-    def setTarget(
+    inline def setTarget(
       value: HTMLElement | Range | ClientRect | Rect | (js.Function0[HTMLElement | Range | ClientRect | Rect])
     ): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetFunction0(value: () => HTMLElement | Range | ClientRect | Rect): Self = StObject.set(x, "target", js.Any.fromFunction0(value))
+    inline def setTargetFunction0(value: () => HTMLElement | Range | ClientRect | Rect): Self = StObject.set(x, "target", js.Any.fromFunction0(value))
   }
 }

@@ -19,20 +19,16 @@ object anon {
   }
   object AllowedModules {
     
-    @scala.inline
-    def apply(allowedModules: js.Array[String]): AllowedModules = {
+    inline def apply(allowedModules: js.Array[String]): AllowedModules = {
       val __obj = js.Dynamic.literal(allowedModules = allowedModules.asInstanceOf[js.Any])
       __obj.asInstanceOf[AllowedModules]
     }
     
-    @scala.inline
-    implicit class AllowedModulesMutableBuilder[Self <: AllowedModules] (val x: Self) extends AnyVal {
+    extension [Self <: AllowedModules](x: Self) {
       
-      @scala.inline
-      def setAllowedModules(value: js.Array[String]): Self = StObject.set(x, "allowedModules", value.asInstanceOf[js.Any])
+      inline def setAllowedModules(value: js.Array[String]): Self = StObject.set(x, "allowedModules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value :_*))
+      inline def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value :_*))
     }
   }
   
@@ -59,68 +55,48 @@ object anon {
   }
   object PartialConfiguration {
     
-    @scala.inline
-    def apply(): PartialConfiguration = {
+    inline def apply(): PartialConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialConfiguration]
     }
     
-    @scala.inline
-    implicit class PartialConfigurationMutableBuilder[Self <: PartialConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: PartialConfiguration](x: Self) {
       
-      @scala.inline
-      def setAutoTempCleanup(value: Boolean): Self = StObject.set(x, "autoTempCleanup", value.asInstanceOf[js.Any])
+      inline def setAutoTempCleanup(value: Boolean): Self = StObject.set(x, "autoTempCleanup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoTempCleanupUndefined: Self = StObject.set(x, "autoTempCleanup", js.undefined)
+      inline def setAutoTempCleanupUndefined: Self = StObject.set(x, "autoTempCleanup", js.undefined)
       
-      @scala.inline
-      def setDataDirectory(value: String): Self = StObject.set(x, "dataDirectory", value.asInstanceOf[js.Any])
+      inline def setDataDirectory(value: String): Self = StObject.set(x, "dataDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataDirectoryUndefined: Self = StObject.set(x, "dataDirectory", js.undefined)
+      inline def setDataDirectoryUndefined: Self = StObject.set(x, "dataDirectory", js.undefined)
       
-      @scala.inline
-      def setExtensionsLocationCache(value: Boolean): Self = StObject.set(x, "extensionsLocationCache", value.asInstanceOf[js.Any])
+      inline def setExtensionsLocationCache(value: Boolean): Self = StObject.set(x, "extensionsLocationCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsLocationCacheUndefined: Self = StObject.set(x, "extensionsLocationCache", js.undefined)
+      inline def setExtensionsLocationCacheUndefined: Self = StObject.set(x, "extensionsLocationCache", js.undefined)
       
-      @scala.inline
-      def setLoadConfig(value: Boolean): Self = StObject.set(x, "loadConfig", value.asInstanceOf[js.Any])
+      inline def setLoadConfig(value: Boolean): Self = StObject.set(x, "loadConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadConfigUndefined: Self = StObject.set(x, "loadConfig", js.undefined)
+      inline def setLoadConfigUndefined: Self = StObject.set(x, "loadConfig", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Silent): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Silent): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setRootDirectory(value: String): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
+      inline def setRootDirectory(value: String): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDirectoryUndefined: Self = StObject.set(x, "rootDirectory", js.undefined)
+      inline def setRootDirectoryUndefined: Self = StObject.set(x, "rootDirectory", js.undefined)
       
-      @scala.inline
-      def setScripts(value: AllowedModules): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+      inline def setScripts(value: AllowedModules): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
+      inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
       
-      @scala.inline
-      def setTasks(value: PartialallowedModulesArra): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+      inline def setTasks(value: PartialallowedModulesArra): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
+      inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
       
-      @scala.inline
-      def setTempDirectory(value: String): Self = StObject.set(x, "tempDirectory", value.asInstanceOf[js.Any])
+      inline def setTempDirectory(value: String): Self = StObject.set(x, "tempDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTempDirectoryUndefined: Self = StObject.set(x, "tempDirectory", js.undefined)
+      inline def setTempDirectoryUndefined: Self = StObject.set(x, "tempDirectory", js.undefined)
     }
   }
   
@@ -135,32 +111,24 @@ object anon {
   }
   object PartialRequest {
     
-    @scala.inline
-    def apply(): PartialRequest = {
+    inline def apply(): PartialRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialRequest]
     }
     
-    @scala.inline
-    implicit class PartialRequestMutableBuilder[Self <: PartialRequest] (val x: Self) extends AnyVal {
+    extension [Self <: PartialRequest](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: PartialTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: PartialTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
   
@@ -177,38 +145,28 @@ object anon {
   }
   object PartialTemplate {
     
-    @scala.inline
-    def apply(): PartialTemplate = {
+    inline def apply(): PartialTemplate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialTemplate]
     }
     
-    @scala.inline
-    implicit class PartialTemplateMutableBuilder[Self <: PartialTemplate] (val x: Self) extends AnyVal {
+    extension [Self <: PartialTemplate](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setEngine(value: Engine | String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+      inline def setEngine(value: Engine | String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+      inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
       
-      @scala.inline
-      def setHelpers(value: Helpers): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
+      inline def setHelpers(value: Helpers): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpersUndefined: Self = StObject.set(x, "helpers", js.undefined)
+      inline def setHelpersUndefined: Self = StObject.set(x, "helpers", js.undefined)
       
-      @scala.inline
-      def setRecipe(value: Recipe | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
+      inline def setRecipe(value: Recipe | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecipeUndefined: Self = StObject.set(x, "recipe", js.undefined)
+      inline def setRecipeUndefined: Self = StObject.set(x, "recipe", js.undefined)
     }
   }
   
@@ -221,29 +179,22 @@ object anon {
   }
   object PartialallowedModulesArra {
     
-    @scala.inline
-    def apply(): PartialallowedModulesArra = {
+    inline def apply(): PartialallowedModulesArra = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialallowedModulesArra]
     }
     
-    @scala.inline
-    implicit class PartialallowedModulesArraMutableBuilder[Self <: PartialallowedModulesArra] (val x: Self) extends AnyVal {
+    extension [Self <: PartialallowedModulesArra](x: Self) {
       
-      @scala.inline
-      def setAllowedModules(value: js.Array[String] | String): Self = StObject.set(x, "allowedModules", value.asInstanceOf[js.Any])
+      inline def setAllowedModules(value: js.Array[String] | String): Self = StObject.set(x, "allowedModules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedModulesUndefined: Self = StObject.set(x, "allowedModules", js.undefined)
+      inline def setAllowedModulesUndefined: Self = StObject.set(x, "allowedModules", js.undefined)
       
-      @scala.inline
-      def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value :_*))
+      inline def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value :_*))
       
-      @scala.inline
-      def setStrategy(value: `dedicated-process` | `http-server` | `in-process` | String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      inline def setStrategy(value: `dedicated-process` | `http-server` | `in-process` | String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     }
   }
   
@@ -253,17 +204,14 @@ object anon {
   }
   object Silent {
     
-    @scala.inline
-    def apply(silent: Boolean): Silent = {
+    inline def apply(silent: Boolean): Silent = {
       val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
       __obj.asInstanceOf[Silent]
     }
     
-    @scala.inline
-    implicit class SilentMutableBuilder[Self <: Silent] (val x: Self) extends AnyVal {
+    extension [Self <: Silent](x: Self) {
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     }
   }
 }

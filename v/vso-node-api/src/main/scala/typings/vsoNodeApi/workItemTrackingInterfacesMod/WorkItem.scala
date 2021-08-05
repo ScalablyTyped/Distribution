@@ -31,8 +31,7 @@ trait WorkItem
 }
 object WorkItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     fields: StringDictionary[js.Any],
     id: Double,
@@ -44,22 +43,16 @@ object WorkItem {
     __obj.asInstanceOf[WorkItem]
   }
   
-  @scala.inline
-  implicit class WorkItemMutableBuilder[Self <: WorkItem] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItem](x: Self) {
     
-    @scala.inline
-    def setFields(value: StringDictionary[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: StringDictionary[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelations(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
+    inline def setRelations(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationsVarargs(value: WorkItemRelation*): Self = StObject.set(x, "relations", js.Array(value :_*))
+    inline def setRelationsVarargs(value: WorkItemRelation*): Self = StObject.set(x, "relations", js.Array(value :_*))
     
-    @scala.inline
-    def setRev(value: Double): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    inline def setRev(value: Double): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
   }
 }

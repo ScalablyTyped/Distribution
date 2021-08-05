@@ -45,50 +45,33 @@ object BoundingRectangle {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def clone_(rectangle: BoundingRectangle): BoundingRectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(rectangle.asInstanceOf[js.Any]).asInstanceOf[BoundingRectangle]
-  @scala.inline
-  def clone_(rectangle: BoundingRectangle, result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(rectangle.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
+  inline def clone_(rectangle: BoundingRectangle): BoundingRectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(rectangle.asInstanceOf[js.Any]).asInstanceOf[BoundingRectangle]
+  inline def clone_(rectangle: BoundingRectangle, result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(rectangle.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
   
   /* static member */
-  @scala.inline
-  def equals_(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")().asInstanceOf[Boolean]
-  @scala.inline
-  def equals_(left: Unit, right: BoundingRectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def equals_(left: BoundingRectangle): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def equals_(left: BoundingRectangle, right: BoundingRectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals_(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")().asInstanceOf[Boolean]
+  inline def equals_(left: Unit, right: BoundingRectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals_(left: BoundingRectangle): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def equals_(left: BoundingRectangle, right: BoundingRectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def expand(rectangle: BoundingRectangle, point: Cartesian2): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(rectangle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
-  @scala.inline
-  def expand(rectangle: BoundingRectangle, point: Cartesian2, result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(rectangle.asInstanceOf[js.Any], point.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
+  inline def expand(rectangle: BoundingRectangle, point: Cartesian2): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(rectangle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
+  inline def expand(rectangle: BoundingRectangle, point: Cartesian2, result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(rectangle.asInstanceOf[js.Any], point.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
   
   /* static member */
-  @scala.inline
-  def fromPoints(positions: js.Array[Cartesian2]): BoundingRectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(positions.asInstanceOf[js.Any]).asInstanceOf[BoundingRectangle]
-  @scala.inline
-  def fromPoints(positions: js.Array[Cartesian2], result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(positions.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
+  inline def fromPoints(positions: js.Array[Cartesian2]): BoundingRectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(positions.asInstanceOf[js.Any]).asInstanceOf[BoundingRectangle]
+  inline def fromPoints(positions: js.Array[Cartesian2], result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(positions.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
   
   /* static member */
-  @scala.inline
-  def fromRectangle(rectangle: Rectangle): BoundingRectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRectangle")(rectangle.asInstanceOf[js.Any]).asInstanceOf[BoundingRectangle]
-  @scala.inline
-  def fromRectangle(rectangle: Rectangle, projection: js.Any): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRectangle")(rectangle.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
-  @scala.inline
-  def fromRectangle(rectangle: Rectangle, projection: js.Any, result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRectangle")(rectangle.asInstanceOf[js.Any], projection.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
-  @scala.inline
-  def fromRectangle(rectangle: Rectangle, projection: Unit, result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRectangle")(rectangle.asInstanceOf[js.Any], projection.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
+  inline def fromRectangle(rectangle: Rectangle): BoundingRectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRectangle")(rectangle.asInstanceOf[js.Any]).asInstanceOf[BoundingRectangle]
+  inline def fromRectangle(rectangle: Rectangle, projection: js.Any): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRectangle")(rectangle.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
+  inline def fromRectangle(rectangle: Rectangle, projection: js.Any, result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRectangle")(rectangle.asInstanceOf[js.Any], projection.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
+  inline def fromRectangle(rectangle: Rectangle, projection: Unit, result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRectangle")(rectangle.asInstanceOf[js.Any], projection.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
   
   /* static member */
-  @scala.inline
-  def intersect(left: BoundingRectangle, right: BoundingRectangle): Intersect = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Intersect]
+  inline def intersect(left: BoundingRectangle, right: BoundingRectangle): Intersect = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Intersect]
   
   /* static member */
-  @scala.inline
-  def union(left: BoundingRectangle, right: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
-  @scala.inline
-  def union(left: BoundingRectangle, right: BoundingRectangle, result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
+  inline def union(left: BoundingRectangle, right: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
+  inline def union(left: BoundingRectangle, right: BoundingRectangle, result: BoundingRectangle): BoundingRectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoundingRectangle]
 }

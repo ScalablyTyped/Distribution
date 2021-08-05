@@ -54,79 +54,55 @@ trait Volume extends StObject {
 }
 object Volume {
   
-  @scala.inline
-  def apply(): Volume = {
+  inline def apply(): Volume = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Volume]
   }
   
-  @scala.inline
-  implicit class VolumeMutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
+  extension [Self <: Volume](x: Self) {
     
-    @scala.inline
-    def setAccessInfo(value: AccessViewStatus): Self = StObject.set(x, "accessInfo", value.asInstanceOf[js.Any])
+    inline def setAccessInfo(value: AccessViewStatus): Self = StObject.set(x, "accessInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessInfoUndefined: Self = StObject.set(x, "accessInfo", js.undefined)
+    inline def setAccessInfoUndefined: Self = StObject.set(x, "accessInfo", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLayerInfo(value: Layers): Self = StObject.set(x, "layerInfo", value.asInstanceOf[js.Any])
+    inline def setLayerInfo(value: Layers): Self = StObject.set(x, "layerInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerInfoUndefined: Self = StObject.set(x, "layerInfo", js.undefined)
+    inline def setLayerInfoUndefined: Self = StObject.set(x, "layerInfo", js.undefined)
     
-    @scala.inline
-    def setRecommendedInfo(value: Explanation): Self = StObject.set(x, "recommendedInfo", value.asInstanceOf[js.Any])
+    inline def setRecommendedInfo(value: Explanation): Self = StObject.set(x, "recommendedInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendedInfoUndefined: Self = StObject.set(x, "recommendedInfo", js.undefined)
+    inline def setRecommendedInfoUndefined: Self = StObject.set(x, "recommendedInfo", js.undefined)
     
-    @scala.inline
-    def setSaleInfo(value: BuyLink): Self = StObject.set(x, "saleInfo", value.asInstanceOf[js.Any])
+    inline def setSaleInfo(value: BuyLink): Self = StObject.set(x, "saleInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaleInfoUndefined: Self = StObject.set(x, "saleInfo", js.undefined)
+    inline def setSaleInfoUndefined: Self = StObject.set(x, "saleInfo", js.undefined)
     
-    @scala.inline
-    def setSearchInfo(value: TextSnippet): Self = StObject.set(x, "searchInfo", value.asInstanceOf[js.Any])
+    inline def setSearchInfo(value: TextSnippet): Self = StObject.set(x, "searchInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchInfoUndefined: Self = StObject.set(x, "searchInfo", js.undefined)
+    inline def setSearchInfoUndefined: Self = StObject.set(x, "searchInfo", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setUserInfo(value: AcquiredTime): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+    inline def setUserInfo(value: AcquiredTime): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
+    inline def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
     
-    @scala.inline
-    def setVolumeInfo(value: AllowAnonLogging): Self = StObject.set(x, "volumeInfo", value.asInstanceOf[js.Any])
+    inline def setVolumeInfo(value: AllowAnonLogging): Self = StObject.set(x, "volumeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeInfoUndefined: Self = StObject.set(x, "volumeInfo", js.undefined)
+    inline def setVolumeInfoUndefined: Self = StObject.set(x, "volumeInfo", js.undefined)
   }
 }

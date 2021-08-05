@@ -14,25 +14,19 @@ trait Precondition extends StObject {
 }
 object Precondition {
   
-  @scala.inline
-  def apply(): Precondition = {
+  inline def apply(): Precondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Precondition]
   }
   
-  @scala.inline
-  implicit class PreconditionMutableBuilder[Self <: Precondition] (val x: Self) extends AnyVal {
+  extension [Self <: Precondition](x: Self) {
     
-    @scala.inline
-    def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+    inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
+    inline def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

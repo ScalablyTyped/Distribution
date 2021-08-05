@@ -15,8 +15,7 @@ trait ParametersReposListCommentsForCommitEndpoint extends StObject {
 }
 object ParametersReposListCommentsForCommitEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposListCommentsForCommitEndpoint,
     response: OctokitResponse[ReposListCommentsForCommitResponseData]
   ): ParametersReposListCommentsForCommitEndpoint = {
@@ -24,13 +23,10 @@ object ParametersReposListCommentsForCommitEndpoint {
     __obj.asInstanceOf[ParametersReposListCommentsForCommitEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposListCommentsForCommitEndpointMutableBuilder[Self <: ParametersReposListCommentsForCommitEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposListCommentsForCommitEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposListCommentsForCommitEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposListCommentsForCommitEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposListCommentsForCommitResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposListCommentsForCommitResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

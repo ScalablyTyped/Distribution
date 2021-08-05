@@ -30,37 +30,27 @@ trait AsymmetricSignResponse extends StObject {
 }
 object AsymmetricSignResponse {
   
-  @scala.inline
-  def apply(): AsymmetricSignResponse = {
+  inline def apply(): AsymmetricSignResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsymmetricSignResponse]
   }
   
-  @scala.inline
-  implicit class AsymmetricSignResponseMutableBuilder[Self <: AsymmetricSignResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AsymmetricSignResponse](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureCrc32c(value: String): Self = StObject.set(x, "signatureCrc32c", value.asInstanceOf[js.Any])
+    inline def setSignatureCrc32c(value: String): Self = StObject.set(x, "signatureCrc32c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureCrc32cUndefined: Self = StObject.set(x, "signatureCrc32c", js.undefined)
+    inline def setSignatureCrc32cUndefined: Self = StObject.set(x, "signatureCrc32c", js.undefined)
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
-    @scala.inline
-    def setVerifiedDigestCrc32c(value: Boolean): Self = StObject.set(x, "verifiedDigestCrc32c", value.asInstanceOf[js.Any])
+    inline def setVerifiedDigestCrc32c(value: Boolean): Self = StObject.set(x, "verifiedDigestCrc32c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifiedDigestCrc32cUndefined: Self = StObject.set(x, "verifiedDigestCrc32c", js.undefined)
+    inline def setVerifiedDigestCrc32cUndefined: Self = StObject.set(x, "verifiedDigestCrc32c", js.undefined)
   }
 }

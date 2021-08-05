@@ -10,19 +10,15 @@ trait CounterLabel extends StObject {
 }
 object CounterLabel {
   
-  @scala.inline
-  def apply(): CounterLabel = {
+  inline def apply(): CounterLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CounterLabel]
   }
   
-  @scala.inline
-  implicit class CounterLabelMutableBuilder[Self <: CounterLabel] (val x: Self) extends AnyVal {
+  extension [Self <: CounterLabel](x: Self) {
     
-    @scala.inline
-    def setCounterLabel(value: String): Self = StObject.set(x, "counterLabel", value.asInstanceOf[js.Any])
+    inline def setCounterLabel(value: String): Self = StObject.set(x, "counterLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCounterLabelUndefined: Self = StObject.set(x, "counterLabel", js.undefined)
+    inline def setCounterLabelUndefined: Self = StObject.set(x, "counterLabel", js.undefined)
   }
 }

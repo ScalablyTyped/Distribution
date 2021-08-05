@@ -18,28 +18,21 @@ trait Delta extends StObject {
 }
 object Delta {
   
-  @scala.inline
-  def apply(action: insert | remove, end: Point, lines: js.Array[String], start: Point): Delta = {
+  inline def apply(action: insert | remove, end: Point, lines: js.Array[String], start: Point): Delta = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delta]
   }
   
-  @scala.inline
-  implicit class DeltaMutableBuilder[Self <: Delta] (val x: Self) extends AnyVal {
+  extension [Self <: Delta](x: Self) {
     
-    @scala.inline
-    def setAction(value: insert | remove): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: insert | remove): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
     
-    @scala.inline
-    def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

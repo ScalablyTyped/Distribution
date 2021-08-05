@@ -13,19 +13,15 @@ trait KinesisDataStream extends StObject {
 }
 object KinesisDataStream {
   
-  @scala.inline
-  def apply(): KinesisDataStream = {
+  inline def apply(): KinesisDataStream = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KinesisDataStream]
   }
   
-  @scala.inline
-  implicit class KinesisDataStreamMutableBuilder[Self <: KinesisDataStream] (val x: Self) extends AnyVal {
+  extension [Self <: KinesisDataStream](x: Self) {
     
-    @scala.inline
-    def setArn(value: KinesisDataArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: KinesisDataArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
   }
 }

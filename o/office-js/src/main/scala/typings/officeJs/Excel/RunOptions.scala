@@ -18,19 +18,15 @@ trait RunOptions
 }
 object RunOptions {
   
-  @scala.inline
-  def apply(): RunOptions = {
+  inline def apply(): RunOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunOptions]
   }
   
-  @scala.inline
-  implicit class RunOptionsMutableBuilder[Self <: RunOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RunOptions](x: Self) {
     
-    @scala.inline
-    def setDelayForCellEdit(value: Boolean): Self = StObject.set(x, "delayForCellEdit", value.asInstanceOf[js.Any])
+    inline def setDelayForCellEdit(value: Boolean): Self = StObject.set(x, "delayForCellEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayForCellEditUndefined: Self = StObject.set(x, "delayForCellEdit", js.undefined)
+    inline def setDelayForCellEditUndefined: Self = StObject.set(x, "delayForCellEdit", js.undefined)
   }
 }

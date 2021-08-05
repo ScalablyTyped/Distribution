@@ -275,72 +275,60 @@ object connection {
   @JSImport("websocket", "connection.CLOSE_DESCRIPTIONS")
   @js.native
   def CLOSE_DESCRIPTIONS: NumberDictionary[String] = js.native
-  @scala.inline
-  def CLOSE_DESCRIPTIONS_=(x: NumberDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_DESCRIPTIONS")(x.asInstanceOf[js.Any])
+  inline def CLOSE_DESCRIPTIONS_=(x: NumberDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_DESCRIPTIONS")(x.asInstanceOf[js.Any])
   
   @JSImport("websocket", "connection.CLOSE_REASON_ABNORMAL")
   @js.native
   def CLOSE_REASON_ABNORMAL: Double = js.native
-  @scala.inline
-  def CLOSE_REASON_ABNORMAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_ABNORMAL")(x.asInstanceOf[js.Any])
+  inline def CLOSE_REASON_ABNORMAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_ABNORMAL")(x.asInstanceOf[js.Any])
   
   @JSImport("websocket", "connection.CLOSE_REASON_EXTENSION_REQUIRED")
   @js.native
   def CLOSE_REASON_EXTENSION_REQUIRED: Double = js.native
-  @scala.inline
-  def CLOSE_REASON_EXTENSION_REQUIRED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_EXTENSION_REQUIRED")(x.asInstanceOf[js.Any])
+  inline def CLOSE_REASON_EXTENSION_REQUIRED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_EXTENSION_REQUIRED")(x.asInstanceOf[js.Any])
   
   @JSImport("websocket", "connection.CLOSE_REASON_GOING_AWAY")
   @js.native
   def CLOSE_REASON_GOING_AWAY: Double = js.native
-  @scala.inline
-  def CLOSE_REASON_GOING_AWAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_GOING_AWAY")(x.asInstanceOf[js.Any])
+  inline def CLOSE_REASON_GOING_AWAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_GOING_AWAY")(x.asInstanceOf[js.Any])
   
   @JSImport("websocket", "connection.CLOSE_REASON_INVALID_DATA")
   @js.native
   def CLOSE_REASON_INVALID_DATA: Double = js.native
-  @scala.inline
-  def CLOSE_REASON_INVALID_DATA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_INVALID_DATA")(x.asInstanceOf[js.Any])
+  inline def CLOSE_REASON_INVALID_DATA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_INVALID_DATA")(x.asInstanceOf[js.Any])
   
   @JSImport("websocket", "connection.CLOSE_REASON_MESSAGE_TOO_BIG")
   @js.native
   def CLOSE_REASON_MESSAGE_TOO_BIG: Double = js.native
-  @scala.inline
-  def CLOSE_REASON_MESSAGE_TOO_BIG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_MESSAGE_TOO_BIG")(x.asInstanceOf[js.Any])
+  inline def CLOSE_REASON_MESSAGE_TOO_BIG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_MESSAGE_TOO_BIG")(x.asInstanceOf[js.Any])
   
   @JSImport("websocket", "connection.CLOSE_REASON_NORMAL")
   @js.native
   def CLOSE_REASON_NORMAL: Double = js.native
-  @scala.inline
-  def CLOSE_REASON_NORMAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_NORMAL")(x.asInstanceOf[js.Any])
+  inline def CLOSE_REASON_NORMAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_NORMAL")(x.asInstanceOf[js.Any])
   
   @JSImport("websocket", "connection.CLOSE_REASON_NOT_PROVIDED")
   @js.native
   def CLOSE_REASON_NOT_PROVIDED: Double = js.native
-  @scala.inline
-  def CLOSE_REASON_NOT_PROVIDED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_NOT_PROVIDED")(x.asInstanceOf[js.Any])
+  inline def CLOSE_REASON_NOT_PROVIDED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_NOT_PROVIDED")(x.asInstanceOf[js.Any])
   
   @JSImport("websocket", "connection.CLOSE_REASON_POLICY_VIOLATION")
   @js.native
   def CLOSE_REASON_POLICY_VIOLATION: Double = js.native
-  @scala.inline
-  def CLOSE_REASON_POLICY_VIOLATION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_POLICY_VIOLATION")(x.asInstanceOf[js.Any])
+  inline def CLOSE_REASON_POLICY_VIOLATION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_POLICY_VIOLATION")(x.asInstanceOf[js.Any])
   
   @JSImport("websocket", "connection.CLOSE_REASON_PROTOCOL_ERROR")
   @js.native
   def CLOSE_REASON_PROTOCOL_ERROR: Double = js.native
-  @scala.inline
-  def CLOSE_REASON_PROTOCOL_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_PROTOCOL_ERROR")(x.asInstanceOf[js.Any])
+  inline def CLOSE_REASON_PROTOCOL_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_PROTOCOL_ERROR")(x.asInstanceOf[js.Any])
   
   @JSImport("websocket", "connection.CLOSE_REASON_RESERVED")
   @js.native
   def CLOSE_REASON_RESERVED: Double = js.native
-  @scala.inline
-  def CLOSE_REASON_RESERVED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_RESERVED")(x.asInstanceOf[js.Any])
+  inline def CLOSE_REASON_RESERVED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_RESERVED")(x.asInstanceOf[js.Any])
   
   @JSImport("websocket", "connection.CLOSE_REASON_UNPROCESSABLE_INPUT")
   @js.native
   def CLOSE_REASON_UNPROCESSABLE_INPUT: Double = js.native
-  @scala.inline
-  def CLOSE_REASON_UNPROCESSABLE_INPUT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_UNPROCESSABLE_INPUT")(x.asInstanceOf[js.Any])
+  inline def CLOSE_REASON_UNPROCESSABLE_INPUT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_REASON_UNPROCESSABLE_INPUT")(x.asInstanceOf[js.Any])
 }

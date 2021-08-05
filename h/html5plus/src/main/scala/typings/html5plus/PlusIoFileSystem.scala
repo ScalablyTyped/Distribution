@@ -29,25 +29,19 @@ trait PlusIoFileSystem extends StObject {
 }
 object PlusIoFileSystem {
   
-  @scala.inline
-  def apply(): PlusIoFileSystem = {
+  inline def apply(): PlusIoFileSystem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusIoFileSystem]
   }
   
-  @scala.inline
-  implicit class PlusIoFileSystemMutableBuilder[Self <: PlusIoFileSystem] (val x: Self) extends AnyVal {
+  extension [Self <: PlusIoFileSystem](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRoot(value: PlusIoDirectoryEntry): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: PlusIoDirectoryEntry): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

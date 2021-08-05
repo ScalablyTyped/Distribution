@@ -38,43 +38,31 @@ trait ListResourceRecordSetsResponse extends StObject {
 }
 object ListResourceRecordSetsResponse {
   
-  @scala.inline
-  def apply(IsTruncated: PageTruncated, MaxItems: PageMaxItems, ResourceRecordSets: ResourceRecordSets): ListResourceRecordSetsResponse = {
+  inline def apply(IsTruncated: PageTruncated, MaxItems: PageMaxItems, ResourceRecordSets: ResourceRecordSets): ListResourceRecordSetsResponse = {
     val __obj = js.Dynamic.literal(IsTruncated = IsTruncated.asInstanceOf[js.Any], MaxItems = MaxItems.asInstanceOf[js.Any], ResourceRecordSets = ResourceRecordSets.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourceRecordSetsResponse]
   }
   
-  @scala.inline
-  implicit class ListResourceRecordSetsResponseMutableBuilder[Self <: ListResourceRecordSetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListResourceRecordSetsResponse](x: Self) {
     
-    @scala.inline
-    def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextRecordIdentifier(value: ResourceRecordSetIdentifier): Self = StObject.set(x, "NextRecordIdentifier", value.asInstanceOf[js.Any])
+    inline def setNextRecordIdentifier(value: ResourceRecordSetIdentifier): Self = StObject.set(x, "NextRecordIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextRecordIdentifierUndefined: Self = StObject.set(x, "NextRecordIdentifier", js.undefined)
+    inline def setNextRecordIdentifierUndefined: Self = StObject.set(x, "NextRecordIdentifier", js.undefined)
     
-    @scala.inline
-    def setNextRecordName(value: DNSName): Self = StObject.set(x, "NextRecordName", value.asInstanceOf[js.Any])
+    inline def setNextRecordName(value: DNSName): Self = StObject.set(x, "NextRecordName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextRecordNameUndefined: Self = StObject.set(x, "NextRecordName", js.undefined)
+    inline def setNextRecordNameUndefined: Self = StObject.set(x, "NextRecordName", js.undefined)
     
-    @scala.inline
-    def setNextRecordType(value: RRType): Self = StObject.set(x, "NextRecordType", value.asInstanceOf[js.Any])
+    inline def setNextRecordType(value: RRType): Self = StObject.set(x, "NextRecordType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextRecordTypeUndefined: Self = StObject.set(x, "NextRecordType", js.undefined)
+    inline def setNextRecordTypeUndefined: Self = StObject.set(x, "NextRecordType", js.undefined)
     
-    @scala.inline
-    def setResourceRecordSets(value: ResourceRecordSets): Self = StObject.set(x, "ResourceRecordSets", value.asInstanceOf[js.Any])
+    inline def setResourceRecordSets(value: ResourceRecordSets): Self = StObject.set(x, "ResourceRecordSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRecordSetsVarargs(value: ResourceRecordSet*): Self = StObject.set(x, "ResourceRecordSets", js.Array(value :_*))
+    inline def setResourceRecordSetsVarargs(value: ResourceRecordSet*): Self = StObject.set(x, "ResourceRecordSets", js.Array(value :_*))
   }
 }

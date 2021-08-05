@@ -11,19 +11,15 @@ trait List extends StObject {
 }
 object List {
   
-  @scala.inline
-  def apply(list: js.Array[Addon]): List = {
+  inline def apply(list: js.Array[Addon]): List = {
     val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any])
     __obj.asInstanceOf[List]
   }
   
-  @scala.inline
-  implicit class ListMutableBuilder[Self <: List] (val x: Self) extends AnyVal {
+  extension [Self <: List](x: Self) {
     
-    @scala.inline
-    def setList(value: js.Array[Addon]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: js.Array[Addon]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListVarargs(value: Addon*): Self = StObject.set(x, "list", js.Array(value :_*))
+    inline def setListVarargs(value: Addon*): Self = StObject.set(x, "list", js.Array(value :_*))
   }
 }

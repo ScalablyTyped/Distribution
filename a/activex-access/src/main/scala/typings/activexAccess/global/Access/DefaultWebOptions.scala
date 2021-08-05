@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.DefaultWebOptions")
 @js.native
-class DefaultWebOptions protected ()
+/* private */ class DefaultWebOptions ()
   extends StObject
      with typings.activexAccess.Access.DefaultWebOptions {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.DefaultWebOptions_typekey")
   var AccessDotDefaultWebOptions_typekey: typings.activexAccess.Access.DefaultWebOptions = js.native
   

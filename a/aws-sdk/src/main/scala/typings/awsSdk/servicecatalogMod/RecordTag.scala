@@ -18,25 +18,19 @@ trait RecordTag extends StObject {
 }
 object RecordTag {
   
-  @scala.inline
-  def apply(): RecordTag = {
+  inline def apply(): RecordTag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecordTag]
   }
   
-  @scala.inline
-  implicit class RecordTagMutableBuilder[Self <: RecordTag] (val x: Self) extends AnyVal {
+  extension [Self <: RecordTag](x: Self) {
     
-    @scala.inline
-    def setKey(value: RecordTagKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: RecordTagKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setValue(value: RecordTagValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: RecordTagValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

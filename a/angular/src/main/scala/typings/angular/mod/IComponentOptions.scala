@@ -68,73 +68,51 @@ trait IComponentOptions extends StObject {
 }
 object IComponentOptions {
   
-  @scala.inline
-  def apply(): IComponentOptions = {
+  inline def apply(): IComponentOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IComponentOptions]
   }
   
-  @scala.inline
-  implicit class IComponentOptionsMutableBuilder[Self <: IComponentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IComponentOptions](x: Self) {
     
-    @scala.inline
-    def setBindings(value: StringDictionary[String]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    inline def setBindings(value: StringDictionary[String]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
+    inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
-    @scala.inline
-    def setController(value: String | Injectable[IControllerConstructor]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: String | Injectable[IControllerConstructor]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
+    inline def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
+    inline def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
     
-    @scala.inline
-    def setControllerFunction1(value: /* repeated */ js.Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
+    inline def setControllerFunction1(value: /* repeated */ js.Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+    inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    @scala.inline
-    def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value :_*))
+    inline def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value :_*))
     
-    @scala.inline
-    def setRequire(value: StringDictionary[String]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
+    inline def setRequire(value: StringDictionary[String]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
+    inline def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String | (Injectable[js.Function1[/* repeated */ js.Any, String]])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String | (Injectable[js.Function1[/* repeated */ js.Any, String]])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateFunction1(value: /* repeated */ js.Any => String): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+    inline def setTemplateFunction1(value: /* repeated */ js.Any => String): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setTemplateUrl(value: String | (Injectable[js.Function1[/* repeated */ js.Any, String]])): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+    inline def setTemplateUrl(value: String | (Injectable[js.Function1[/* repeated */ js.Any, String]])): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUrlFunction1(value: /* repeated */ js.Any => String): Self = StObject.set(x, "templateUrl", js.Any.fromFunction1(value))
+    inline def setTemplateUrlFunction1(value: /* repeated */ js.Any => String): Self = StObject.set(x, "templateUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+    inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     
-    @scala.inline
-    def setTemplateUrlVarargs(value: (String | (js.Function1[/* repeated */ js.Any, String]))*): Self = StObject.set(x, "templateUrl", js.Array(value :_*))
+    inline def setTemplateUrlVarargs(value: (String | (js.Function1[/* repeated */ js.Any, String]))*): Self = StObject.set(x, "templateUrl", js.Array(value :_*))
     
-    @scala.inline
-    def setTemplateVarargs(value: (String | (js.Function1[/* repeated */ js.Any, String]))*): Self = StObject.set(x, "template", js.Array(value :_*))
+    inline def setTemplateVarargs(value: (String | (js.Function1[/* repeated */ js.Any, String]))*): Self = StObject.set(x, "template", js.Array(value :_*))
     
-    @scala.inline
-    def setTransclude(value: Boolean | StringDictionary[String]): Self = StObject.set(x, "transclude", value.asInstanceOf[js.Any])
+    inline def setTransclude(value: Boolean | StringDictionary[String]): Self = StObject.set(x, "transclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscludeUndefined: Self = StObject.set(x, "transclude", js.undefined)
+    inline def setTranscludeUndefined: Self = StObject.set(x, "transclude", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait PostsInsightsFeedResponseTray extends StObject {
 }
 object PostsInsightsFeedResponseTray {
   
-  @scala.inline
-  def apply(value: Double): PostsInsightsFeedResponseTray = {
+  inline def apply(value: Double): PostsInsightsFeedResponseTray = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostsInsightsFeedResponseTray]
   }
   
-  @scala.inline
-  implicit class PostsInsightsFeedResponseTrayMutableBuilder[Self <: PostsInsightsFeedResponseTray] (val x: Self) extends AnyVal {
+  extension [Self <: PostsInsightsFeedResponseTray](x: Self) {
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

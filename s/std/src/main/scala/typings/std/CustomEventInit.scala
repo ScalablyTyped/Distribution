@@ -12,19 +12,15 @@ trait CustomEventInit[T]
 }
 object CustomEventInit {
   
-  @scala.inline
-  def apply[T](): CustomEventInit[T] = {
+  inline def apply[T](): CustomEventInit[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomEventInit[T]]
   }
   
-  @scala.inline
-  implicit class CustomEventInitMutableBuilder[Self <: CustomEventInit[?], T] (val x: Self & CustomEventInit[T]) extends AnyVal {
+  extension [Self <: CustomEventInit[?], T](x: Self & CustomEventInit[T]) {
     
-    @scala.inline
-    def setDetail(value: T): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: T): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
   }
 }

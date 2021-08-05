@@ -36,43 +36,31 @@ trait SchemaRegressionMetrics extends StObject {
 }
 object SchemaRegressionMetrics {
   
-  @scala.inline
-  def apply(): SchemaRegressionMetrics = {
+  inline def apply(): SchemaRegressionMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRegressionMetrics]
   }
   
-  @scala.inline
-  implicit class SchemaRegressionMetricsMutableBuilder[Self <: SchemaRegressionMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRegressionMetrics](x: Self) {
     
-    @scala.inline
-    def setMeanAbsoluteError(value: Double): Self = StObject.set(x, "meanAbsoluteError", value.asInstanceOf[js.Any])
+    inline def setMeanAbsoluteError(value: Double): Self = StObject.set(x, "meanAbsoluteError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanAbsoluteErrorUndefined: Self = StObject.set(x, "meanAbsoluteError", js.undefined)
+    inline def setMeanAbsoluteErrorUndefined: Self = StObject.set(x, "meanAbsoluteError", js.undefined)
     
-    @scala.inline
-    def setMeanSquaredError(value: Double): Self = StObject.set(x, "meanSquaredError", value.asInstanceOf[js.Any])
+    inline def setMeanSquaredError(value: Double): Self = StObject.set(x, "meanSquaredError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanSquaredErrorUndefined: Self = StObject.set(x, "meanSquaredError", js.undefined)
+    inline def setMeanSquaredErrorUndefined: Self = StObject.set(x, "meanSquaredError", js.undefined)
     
-    @scala.inline
-    def setMeanSquaredLogError(value: Double): Self = StObject.set(x, "meanSquaredLogError", value.asInstanceOf[js.Any])
+    inline def setMeanSquaredLogError(value: Double): Self = StObject.set(x, "meanSquaredLogError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanSquaredLogErrorUndefined: Self = StObject.set(x, "meanSquaredLogError", js.undefined)
+    inline def setMeanSquaredLogErrorUndefined: Self = StObject.set(x, "meanSquaredLogError", js.undefined)
     
-    @scala.inline
-    def setMedianAbsoluteError(value: Double): Self = StObject.set(x, "medianAbsoluteError", value.asInstanceOf[js.Any])
+    inline def setMedianAbsoluteError(value: Double): Self = StObject.set(x, "medianAbsoluteError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedianAbsoluteErrorUndefined: Self = StObject.set(x, "medianAbsoluteError", js.undefined)
+    inline def setMedianAbsoluteErrorUndefined: Self = StObject.set(x, "medianAbsoluteError", js.undefined)
     
-    @scala.inline
-    def setRSquared(value: Double): Self = StObject.set(x, "rSquared", value.asInstanceOf[js.Any])
+    inline def setRSquared(value: Double): Self = StObject.set(x, "rSquared", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRSquaredUndefined: Self = StObject.set(x, "rSquared", js.undefined)
+    inline def setRSquaredUndefined: Self = StObject.set(x, "rSquared", js.undefined)
   }
 }

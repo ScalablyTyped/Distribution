@@ -13,19 +13,15 @@ trait GetGroupConfigurationOutput extends StObject {
 }
 object GetGroupConfigurationOutput {
   
-  @scala.inline
-  def apply(): GetGroupConfigurationOutput = {
+  inline def apply(): GetGroupConfigurationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetGroupConfigurationOutput]
   }
   
-  @scala.inline
-  implicit class GetGroupConfigurationOutputMutableBuilder[Self <: GetGroupConfigurationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetGroupConfigurationOutput](x: Self) {
     
-    @scala.inline
-    def setGroupConfiguration(value: GroupConfiguration): Self = StObject.set(x, "GroupConfiguration", value.asInstanceOf[js.Any])
+    inline def setGroupConfiguration(value: GroupConfiguration): Self = StObject.set(x, "GroupConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupConfigurationUndefined: Self = StObject.set(x, "GroupConfiguration", js.undefined)
+    inline def setGroupConfigurationUndefined: Self = StObject.set(x, "GroupConfiguration", js.undefined)
   }
 }

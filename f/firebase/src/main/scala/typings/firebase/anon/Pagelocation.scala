@@ -17,31 +17,23 @@ trait Pagelocation
 }
 object Pagelocation {
   
-  @scala.inline
-  def apply(): Pagelocation = {
+  inline def apply(): Pagelocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Pagelocation]
   }
   
-  @scala.inline
-  implicit class PagelocationMutableBuilder[Self <: Pagelocation] (val x: Self) extends AnyVal {
+  extension [Self <: Pagelocation](x: Self) {
     
-    @scala.inline
-    def setPage_location(value: String): Self = StObject.set(x, "page_location", value.asInstanceOf[js.Any])
+    inline def setPage_location(value: String): Self = StObject.set(x, "page_location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage_locationUndefined: Self = StObject.set(x, "page_location", js.undefined)
+    inline def setPage_locationUndefined: Self = StObject.set(x, "page_location", js.undefined)
     
-    @scala.inline
-    def setPage_path(value: String): Self = StObject.set(x, "page_path", value.asInstanceOf[js.Any])
+    inline def setPage_path(value: String): Self = StObject.set(x, "page_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage_pathUndefined: Self = StObject.set(x, "page_path", js.undefined)
+    inline def setPage_pathUndefined: Self = StObject.set(x, "page_path", js.undefined)
     
-    @scala.inline
-    def setPage_title(value: String): Self = StObject.set(x, "page_title", value.asInstanceOf[js.Any])
+    inline def setPage_title(value: String): Self = StObject.set(x, "page_title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage_titleUndefined: Self = StObject.set(x, "page_title", js.undefined)
+    inline def setPage_titleUndefined: Self = StObject.set(x, "page_title", js.undefined)
   }
 }

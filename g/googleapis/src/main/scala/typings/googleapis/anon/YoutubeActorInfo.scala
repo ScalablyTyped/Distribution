@@ -10,19 +10,15 @@ trait YoutubeActorInfo extends StObject {
 }
 object YoutubeActorInfo {
   
-  @scala.inline
-  def apply(): YoutubeActorInfo = {
+  inline def apply(): YoutubeActorInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[YoutubeActorInfo]
   }
   
-  @scala.inline
-  implicit class YoutubeActorInfoMutableBuilder[Self <: YoutubeActorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: YoutubeActorInfo](x: Self) {
     
-    @scala.inline
-    def setYoutubeActorInfo(value: ChannelId): Self = StObject.set(x, "youtubeActorInfo", value.asInstanceOf[js.Any])
+    inline def setYoutubeActorInfo(value: ChannelId): Self = StObject.set(x, "youtubeActorInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYoutubeActorInfoUndefined: Self = StObject.set(x, "youtubeActorInfo", js.undefined)
+    inline def setYoutubeActorInfoUndefined: Self = StObject.set(x, "youtubeActorInfo", js.undefined)
   }
 }

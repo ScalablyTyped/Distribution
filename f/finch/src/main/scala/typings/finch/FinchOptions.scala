@@ -10,19 +10,15 @@ trait FinchOptions extends StObject {
 }
 object FinchOptions {
   
-  @scala.inline
-  def apply(): FinchOptions = {
+  inline def apply(): FinchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FinchOptions]
   }
   
-  @scala.inline
-  implicit class FinchOptionsMutableBuilder[Self <: FinchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FinchOptions](x: Self) {
     
-    @scala.inline
-    def setCoerceParameterTypes(value: Boolean): Self = StObject.set(x, "CoerceParameterTypes", value.asInstanceOf[js.Any])
+    inline def setCoerceParameterTypes(value: Boolean): Self = StObject.set(x, "CoerceParameterTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoerceParameterTypesUndefined: Self = StObject.set(x, "CoerceParameterTypes", js.undefined)
+    inline def setCoerceParameterTypesUndefined: Self = StObject.set(x, "CoerceParameterTypes", js.undefined)
   }
 }

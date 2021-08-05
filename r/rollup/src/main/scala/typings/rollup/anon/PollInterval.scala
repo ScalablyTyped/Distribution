@@ -12,25 +12,19 @@ trait PollInterval extends StObject {
 }
 object PollInterval {
   
-  @scala.inline
-  def apply(): PollInterval = {
+  inline def apply(): PollInterval = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PollInterval]
   }
   
-  @scala.inline
-  implicit class PollIntervalMutableBuilder[Self <: PollInterval] (val x: Self) extends AnyVal {
+  extension [Self <: PollInterval](x: Self) {
     
-    @scala.inline
-    def setPollInterval(value: Double): Self = StObject.set(x, "pollInterval", value.asInstanceOf[js.Any])
+    inline def setPollInterval(value: Double): Self = StObject.set(x, "pollInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPollIntervalUndefined: Self = StObject.set(x, "pollInterval", js.undefined)
+    inline def setPollIntervalUndefined: Self = StObject.set(x, "pollInterval", js.undefined)
     
-    @scala.inline
-    def setStabilityThreshold(value: Double): Self = StObject.set(x, "stabilityThreshold", value.asInstanceOf[js.Any])
+    inline def setStabilityThreshold(value: Double): Self = StObject.set(x, "stabilityThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStabilityThresholdUndefined: Self = StObject.set(x, "stabilityThreshold", js.undefined)
+    inline def setStabilityThresholdUndefined: Self = StObject.set(x, "stabilityThreshold", js.undefined)
   }
 }

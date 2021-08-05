@@ -92,21 +92,16 @@ object gatewayRouteMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): GatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GatewayRoute]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GatewayRoute]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GatewayRouteState): GatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GatewayRoute]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GatewayRouteState, opts: CustomResourceOptions): GatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GatewayRoute]
+    inline def get(name: String, id: Input[ID]): GatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GatewayRoute]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GatewayRoute]
+    inline def get(name: String, id: Input[ID], state: GatewayRouteState): GatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GatewayRoute]
+    inline def get(name: String, id: Input[ID], state: GatewayRouteState, opts: CustomResourceOptions): GatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GatewayRoute]
     
     /**
       * Returns true if the given object is an instance of GatewayRoute.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/gatewayRoute.GatewayRoute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appmesh/gatewayRoute.GatewayRoute */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/gatewayRoute.GatewayRoute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appmesh/gatewayRoute.GatewayRoute */ Boolean]
   }
   
   trait GatewayRouteArgs extends StObject {
@@ -143,8 +138,7 @@ object gatewayRouteMod {
   }
   object GatewayRouteArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       meshName: Input[String],
       spec: Input[typings.pulumiAws.inputMod.appmesh.GatewayRouteSpec],
       virtualGatewayName: Input[String]
@@ -153,35 +147,25 @@ object gatewayRouteMod {
       __obj.asInstanceOf[GatewayRouteArgs]
     }
     
-    @scala.inline
-    implicit class GatewayRouteArgsMutableBuilder[Self <: GatewayRouteArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GatewayRouteArgs](x: Self) {
       
-      @scala.inline
-      def setMeshName(value: Input[String]): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
+      inline def setMeshName(value: Input[String]): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshOwner(value: Input[String]): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
+      inline def setMeshOwner(value: Input[String]): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshOwnerUndefined: Self = StObject.set(x, "meshOwner", js.undefined)
+      inline def setMeshOwnerUndefined: Self = StObject.set(x, "meshOwner", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSpec(value: Input[typings.pulumiAws.inputMod.appmesh.GatewayRouteSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: Input[typings.pulumiAws.inputMod.appmesh.GatewayRouteSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVirtualGatewayName(value: Input[String]): Self = StObject.set(x, "virtualGatewayName", value.asInstanceOf[js.Any])
+      inline def setVirtualGatewayName(value: Input[String]): Self = StObject.set(x, "virtualGatewayName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -239,74 +223,52 @@ object gatewayRouteMod {
   }
   object GatewayRouteState {
     
-    @scala.inline
-    def apply(): GatewayRouteState = {
+    inline def apply(): GatewayRouteState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GatewayRouteState]
     }
     
-    @scala.inline
-    implicit class GatewayRouteStateMutableBuilder[Self <: GatewayRouteState] (val x: Self) extends AnyVal {
+    extension [Self <: GatewayRouteState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCreatedDate(value: Input[String]): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+      inline def setCreatedDate(value: Input[String]): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
+      inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
       
-      @scala.inline
-      def setLastUpdatedDate(value: Input[String]): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+      inline def setLastUpdatedDate(value: Input[String]): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
+      inline def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
       
-      @scala.inline
-      def setMeshName(value: Input[String]): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
+      inline def setMeshName(value: Input[String]): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshNameUndefined: Self = StObject.set(x, "meshName", js.undefined)
+      inline def setMeshNameUndefined: Self = StObject.set(x, "meshName", js.undefined)
       
-      @scala.inline
-      def setMeshOwner(value: Input[String]): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
+      inline def setMeshOwner(value: Input[String]): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshOwnerUndefined: Self = StObject.set(x, "meshOwner", js.undefined)
+      inline def setMeshOwnerUndefined: Self = StObject.set(x, "meshOwner", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setResourceOwner(value: Input[String]): Self = StObject.set(x, "resourceOwner", value.asInstanceOf[js.Any])
+      inline def setResourceOwner(value: Input[String]): Self = StObject.set(x, "resourceOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceOwnerUndefined: Self = StObject.set(x, "resourceOwner", js.undefined)
+      inline def setResourceOwnerUndefined: Self = StObject.set(x, "resourceOwner", js.undefined)
       
-      @scala.inline
-      def setSpec(value: Input[typings.pulumiAws.inputMod.appmesh.GatewayRouteSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: Input[typings.pulumiAws.inputMod.appmesh.GatewayRouteSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+      inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVirtualGatewayName(value: Input[String]): Self = StObject.set(x, "virtualGatewayName", value.asInstanceOf[js.Any])
+      inline def setVirtualGatewayName(value: Input[String]): Self = StObject.set(x, "virtualGatewayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualGatewayNameUndefined: Self = StObject.set(x, "virtualGatewayName", js.undefined)
+      inline def setVirtualGatewayNameUndefined: Self = StObject.set(x, "virtualGatewayName", js.undefined)
     }
   }
 }

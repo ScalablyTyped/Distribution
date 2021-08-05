@@ -14,25 +14,19 @@ trait Expand extends StObject {
 }
 object Expand {
   
-  @scala.inline
-  def apply(expand: js.Array[String], onExpand: js.Array[String] => Unit, property: String): Expand = {
+  inline def apply(expand: js.Array[String], onExpand: js.Array[String] => Unit, property: String): Expand = {
     val __obj = js.Dynamic.literal(expand = expand.asInstanceOf[js.Any], onExpand = js.Any.fromFunction1(onExpand), property = property.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expand]
   }
   
-  @scala.inline
-  implicit class ExpandMutableBuilder[Self <: Expand] (val x: Self) extends AnyVal {
+  extension [Self <: Expand](x: Self) {
     
-    @scala.inline
-    def setExpand(value: js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value :_*))
+    inline def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value :_*))
     
-    @scala.inline
-    def setOnExpand(value: js.Array[String] => Unit): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
+    inline def setOnExpand(value: js.Array[String] => Unit): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }
 }

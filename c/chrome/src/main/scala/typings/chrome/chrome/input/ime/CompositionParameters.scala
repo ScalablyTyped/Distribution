@@ -26,43 +26,31 @@ trait CompositionParameters extends StObject {
 }
 object CompositionParameters {
   
-  @scala.inline
-  def apply(contextID: Double, cursor: Double, text: String): CompositionParameters = {
+  inline def apply(contextID: Double, cursor: Double, text: String): CompositionParameters = {
     val __obj = js.Dynamic.literal(contextID = contextID.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositionParameters]
   }
   
-  @scala.inline
-  implicit class CompositionParametersMutableBuilder[Self <: CompositionParameters] (val x: Self) extends AnyVal {
+  extension [Self <: CompositionParameters](x: Self) {
     
-    @scala.inline
-    def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
+    inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursor(value: Double): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: Double): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegments(value: js.Array[CompositionParameterSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: js.Array[CompositionParameterSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
+    inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    @scala.inline
-    def setSegmentsVarargs(value: CompositionParameterSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: CompositionParameterSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectionEnd(value: Double): Self = StObject.set(x, "selectionEnd", value.asInstanceOf[js.Any])
+    inline def setSelectionEnd(value: Double): Self = StObject.set(x, "selectionEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionEndUndefined: Self = StObject.set(x, "selectionEnd", js.undefined)
+    inline def setSelectionEndUndefined: Self = StObject.set(x, "selectionEnd", js.undefined)
     
-    @scala.inline
-    def setSelectionStart(value: Double): Self = StObject.set(x, "selectionStart", value.asInstanceOf[js.Any])
+    inline def setSelectionStart(value: Double): Self = StObject.set(x, "selectionStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionStartUndefined: Self = StObject.set(x, "selectionStart", js.undefined)
+    inline def setSelectionStartUndefined: Self = StObject.set(x, "selectionStart", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

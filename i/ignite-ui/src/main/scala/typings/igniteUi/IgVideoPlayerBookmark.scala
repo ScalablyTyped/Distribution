@@ -32,31 +32,23 @@ trait IgVideoPlayerBookmark
 }
 object IgVideoPlayerBookmark {
   
-  @scala.inline
-  def apply(): IgVideoPlayerBookmark = {
+  inline def apply(): IgVideoPlayerBookmark = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgVideoPlayerBookmark]
   }
   
-  @scala.inline
-  implicit class IgVideoPlayerBookmarkMutableBuilder[Self <: IgVideoPlayerBookmark] (val x: Self) extends AnyVal {
+  extension [Self <: IgVideoPlayerBookmark](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

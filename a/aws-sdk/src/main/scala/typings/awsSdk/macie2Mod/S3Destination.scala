@@ -23,25 +23,19 @@ trait S3Destination extends StObject {
 }
 object S3Destination {
   
-  @scala.inline
-  def apply(bucketName: string, kmsKeyArn: string): S3Destination = {
+  inline def apply(bucketName: string, kmsKeyArn: string): S3Destination = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], kmsKeyArn = kmsKeyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Destination]
   }
   
-  @scala.inline
-  implicit class S3DestinationMutableBuilder[Self <: S3Destination] (val x: Self) extends AnyVal {
+  extension [Self <: S3Destination](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: string): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: string): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPrefix(value: string): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
+    inline def setKeyPrefix(value: string): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPrefixUndefined: Self = StObject.set(x, "keyPrefix", js.undefined)
+    inline def setKeyPrefixUndefined: Self = StObject.set(x, "keyPrefix", js.undefined)
     
-    @scala.inline
-    def setKmsKeyArn(value: string): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setKmsKeyArn(value: string): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
   }
 }

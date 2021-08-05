@@ -52,17 +52,14 @@ object mod {
   }
   object AppCachePlugin {
     
-    @scala.inline
-    def apply(AppCache: AppCache): AppCachePlugin = {
+    inline def apply(AppCache: AppCache): AppCachePlugin = {
       val __obj = js.Dynamic.literal(AppCache = AppCache.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppCachePlugin]
     }
     
-    @scala.inline
-    implicit class AppCachePluginMutableBuilder[Self <: AppCachePlugin] (val x: Self) extends AnyVal {
+    extension [Self <: AppCachePlugin](x: Self) {
       
-      @scala.inline
-      def setAppCache(value: AppCache): Self = StObject.set(x, "AppCache", value.asInstanceOf[js.Any])
+      inline def setAppCache(value: AppCache): Self = StObject.set(x, "AppCache", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,74 +105,52 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCache(value: js.Array[String]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: js.Array[String]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setCacheVarargs(value: String*): Self = StObject.set(x, "cache", js.Array(value :_*))
+      inline def setCacheVarargs(value: String*): Self = StObject.set(x, "cache", js.Array(value :_*))
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setExclude(value: js.Array[String | RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String | RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setFallback(value: js.Array[String]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: js.Array[String]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setFallbackVarargs(value: String*): Self = StObject.set(x, "fallback", js.Array(value :_*))
+      inline def setFallbackVarargs(value: String*): Self = StObject.set(x, "fallback", js.Array(value :_*))
       
-      @scala.inline
-      def setNetwork(value: js.Array[String]): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: js.Array[String]): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkNull: Self = StObject.set(x, "network", null)
+      inline def setNetworkNull: Self = StObject.set(x, "network", null)
       
-      @scala.inline
-      def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+      inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
       
-      @scala.inline
-      def setNetworkVarargs(value: String*): Self = StObject.set(x, "network", js.Array(value :_*))
+      inline def setNetworkVarargs(value: String*): Self = StObject.set(x, "network", js.Array(value :_*))
       
-      @scala.inline
-      def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      @scala.inline
-      def setSettings(value: js.Array[String]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: js.Array[String]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+      inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
       
-      @scala.inline
-      def setSettingsVarargs(value: String*): Self = StObject.set(x, "settings", js.Array(value :_*))
+      inline def setSettingsVarargs(value: String*): Self = StObject.set(x, "settings", js.Array(value :_*))
     }
   }
 }

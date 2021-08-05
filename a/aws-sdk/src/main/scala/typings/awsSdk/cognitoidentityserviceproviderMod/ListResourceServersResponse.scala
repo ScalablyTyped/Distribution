@@ -18,25 +18,19 @@ trait ListResourceServersResponse extends StObject {
 }
 object ListResourceServersResponse {
   
-  @scala.inline
-  def apply(ResourceServers: ResourceServersListType): ListResourceServersResponse = {
+  inline def apply(ResourceServers: ResourceServersListType): ListResourceServersResponse = {
     val __obj = js.Dynamic.literal(ResourceServers = ResourceServers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourceServersResponse]
   }
   
-  @scala.inline
-  implicit class ListResourceServersResponseMutableBuilder[Self <: ListResourceServersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListResourceServersResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationKeyType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationKeyType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceServers(value: ResourceServersListType): Self = StObject.set(x, "ResourceServers", value.asInstanceOf[js.Any])
+    inline def setResourceServers(value: ResourceServersListType): Self = StObject.set(x, "ResourceServers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceServersVarargs(value: ResourceServerType*): Self = StObject.set(x, "ResourceServers", js.Array(value :_*))
+    inline def setResourceServersVarargs(value: ResourceServerType*): Self = StObject.set(x, "ResourceServers", js.Array(value :_*))
   }
 }

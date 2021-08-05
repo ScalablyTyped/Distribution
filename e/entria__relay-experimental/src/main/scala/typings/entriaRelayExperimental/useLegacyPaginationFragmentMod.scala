@@ -19,8 +19,7 @@ object useLegacyPaginationFragmentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useLegacyPaginationFragment[TQuery /* <: OperationType */, TKey /* <: StringDictionary[js.Any] | Null */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
+  inline def useLegacyPaginationFragment[TQuery /* <: OperationType */, TKey /* <: StringDictionary[js.Any] | Null */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
   ReturnTypePaginationFragment[TQuery, TKey, NonNullableFragmentReturn[TKey] & NullableFragmentReturn[TKey]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLegacyPaginationFragment")(fragmentInput.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
   ReturnTypePaginationFragment[TQuery, TKey, NonNullableFragmentReturn[TKey] & NullableFragmentReturn[TKey]]]
   
@@ -52,8 +51,7 @@ object useLegacyPaginationFragmentMod {
   }
   object ReturnTypePaginationFragment {
     
-    @scala.inline
-    def apply[TQuery /* <: OperationType */, TKey, TFragmentData](
+    inline def apply[TQuery /* <: OperationType */, TKey, TFragmentData](
       data: TFragmentData,
       hasNext: Boolean,
       hasPrevious: Boolean,
@@ -67,32 +65,23 @@ object useLegacyPaginationFragmentMod {
       __obj.asInstanceOf[ReturnTypePaginationFragment[TQuery, TKey, TFragmentData]]
     }
     
-    @scala.inline
-    implicit class ReturnTypePaginationFragmentMutableBuilder[Self <: ReturnTypePaginationFragment[?, ?, ?], TQuery /* <: OperationType */, TKey, TFragmentData] (val x: Self & (ReturnTypePaginationFragment[TQuery, TKey, TFragmentData])) extends AnyVal {
+    extension [Self <: ReturnTypePaginationFragment[?, ?, ?], TQuery /* <: OperationType */, TKey, TFragmentData](x: Self & (ReturnTypePaginationFragment[TQuery, TKey, TFragmentData])) {
       
-      @scala.inline
-      def setData(value: TFragmentData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: TFragmentData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasNext(value: Boolean): Self = StObject.set(x, "hasNext", value.asInstanceOf[js.Any])
+      inline def setHasNext(value: Boolean): Self = StObject.set(x, "hasNext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasPrevious(value: Boolean): Self = StObject.set(x, "hasPrevious", value.asInstanceOf[js.Any])
+      inline def setHasPrevious(value: Boolean): Self = StObject.set(x, "hasPrevious", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoadingNext(value: Boolean): Self = StObject.set(x, "isLoadingNext", value.asInstanceOf[js.Any])
+      inline def setIsLoadingNext(value: Boolean): Self = StObject.set(x, "isLoadingNext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoadingPrevious(value: Boolean): Self = StObject.set(x, "isLoadingPrevious", value.asInstanceOf[js.Any])
+      inline def setIsLoadingPrevious(value: Boolean): Self = StObject.set(x, "isLoadingPrevious", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadNext(value: (/* count */ Double, /* options */ js.UndefOr[OnComplete]) => Disposable): Self = StObject.set(x, "loadNext", js.Any.fromFunction2(value))
+      inline def setLoadNext(value: (/* count */ Double, /* options */ js.UndefOr[OnComplete]) => Disposable): Self = StObject.set(x, "loadNext", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadPrevious(value: (/* count */ Double, /* options */ js.UndefOr[OnComplete]) => Disposable): Self = StObject.set(x, "loadPrevious", js.Any.fromFunction2(value))
+      inline def setLoadPrevious(value: (/* count */ Double, /* options */ js.UndefOr[OnComplete]) => Disposable): Self = StObject.set(x, "loadPrevious", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRefetch(value: RefetchFnDynamic[TQuery, TKey, Options]): Self = StObject.set(x, "refetch", value.asInstanceOf[js.Any])
+      inline def setRefetch(value: RefetchFnDynamic[TQuery, TKey, Options]): Self = StObject.set(x, "refetch", value.asInstanceOf[js.Any])
     }
   }
 }

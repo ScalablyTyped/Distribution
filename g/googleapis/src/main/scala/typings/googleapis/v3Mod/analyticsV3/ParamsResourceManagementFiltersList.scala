@@ -35,37 +35,27 @@ trait ParamsResourceManagementFiltersList
 }
 object ParamsResourceManagementFiltersList {
   
-  @scala.inline
-  def apply(): ParamsResourceManagementFiltersList = {
+  inline def apply(): ParamsResourceManagementFiltersList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceManagementFiltersList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceManagementFiltersListMutableBuilder[Self <: ParamsResourceManagementFiltersList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceManagementFiltersList](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def `setMax-results`(value: Double): Self = StObject.set(x, "max-results", value.asInstanceOf[js.Any])
+    inline def `setMax-results`(value: Double): Self = StObject.set(x, "max-results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMax-resultsUndefined`: Self = StObject.set(x, "max-results", js.undefined)
+    inline def `setMax-resultsUndefined`: Self = StObject.set(x, "max-results", js.undefined)
     
-    @scala.inline
-    def `setStart-index`(value: Double): Self = StObject.set(x, "start-index", value.asInstanceOf[js.Any])
+    inline def `setStart-index`(value: Double): Self = StObject.set(x, "start-index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setStart-indexUndefined`: Self = StObject.set(x, "start-index", js.undefined)
+    inline def `setStart-indexUndefined`: Self = StObject.set(x, "start-index", js.undefined)
   }
 }

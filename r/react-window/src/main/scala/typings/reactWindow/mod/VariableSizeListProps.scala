@@ -24,8 +24,7 @@ trait VariableSizeListProps
 }
 object VariableSizeListProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: ComponentType[ListChildComponentProps],
     height: Double | String,
     itemCount: Double,
@@ -36,16 +35,12 @@ object VariableSizeListProps {
     __obj.asInstanceOf[VariableSizeListProps]
   }
   
-  @scala.inline
-  implicit class VariableSizeListPropsMutableBuilder[Self <: VariableSizeListProps] (val x: Self) extends AnyVal {
+  extension [Self <: VariableSizeListProps](x: Self) {
     
-    @scala.inline
-    def setEstimatedItemSize(value: Double): Self = StObject.set(x, "estimatedItemSize", value.asInstanceOf[js.Any])
+    inline def setEstimatedItemSize(value: Double): Self = StObject.set(x, "estimatedItemSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedItemSizeUndefined: Self = StObject.set(x, "estimatedItemSize", js.undefined)
+    inline def setEstimatedItemSizeUndefined: Self = StObject.set(x, "estimatedItemSize", js.undefined)
     
-    @scala.inline
-    def setItemSize(value: Double => Double): Self = StObject.set(x, "itemSize", js.Any.fromFunction1(value))
+    inline def setItemSize(value: Double => Double): Self = StObject.set(x, "itemSize", js.Any.fromFunction1(value))
   }
 }

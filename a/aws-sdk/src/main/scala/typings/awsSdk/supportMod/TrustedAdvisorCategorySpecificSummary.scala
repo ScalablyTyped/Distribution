@@ -13,19 +13,15 @@ trait TrustedAdvisorCategorySpecificSummary extends StObject {
 }
 object TrustedAdvisorCategorySpecificSummary {
   
-  @scala.inline
-  def apply(): TrustedAdvisorCategorySpecificSummary = {
+  inline def apply(): TrustedAdvisorCategorySpecificSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrustedAdvisorCategorySpecificSummary]
   }
   
-  @scala.inline
-  implicit class TrustedAdvisorCategorySpecificSummaryMutableBuilder[Self <: TrustedAdvisorCategorySpecificSummary] (val x: Self) extends AnyVal {
+  extension [Self <: TrustedAdvisorCategorySpecificSummary](x: Self) {
     
-    @scala.inline
-    def setCostOptimizing(value: TrustedAdvisorCostOptimizingSummary): Self = StObject.set(x, "costOptimizing", value.asInstanceOf[js.Any])
+    inline def setCostOptimizing(value: TrustedAdvisorCostOptimizingSummary): Self = StObject.set(x, "costOptimizing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostOptimizingUndefined: Self = StObject.set(x, "costOptimizing", js.undefined)
+    inline def setCostOptimizingUndefined: Self = StObject.set(x, "costOptimizing", js.undefined)
   }
 }

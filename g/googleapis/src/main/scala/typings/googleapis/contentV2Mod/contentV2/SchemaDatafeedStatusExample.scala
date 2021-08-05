@@ -26,31 +26,23 @@ trait SchemaDatafeedStatusExample extends StObject {
 }
 object SchemaDatafeedStatusExample {
   
-  @scala.inline
-  def apply(): SchemaDatafeedStatusExample = {
+  inline def apply(): SchemaDatafeedStatusExample = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDatafeedStatusExample]
   }
   
-  @scala.inline
-  implicit class SchemaDatafeedStatusExampleMutableBuilder[Self <: SchemaDatafeedStatusExample] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDatafeedStatusExample](x: Self) {
     
-    @scala.inline
-    def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+    inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
     
-    @scala.inline
-    def setLineNumber(value: String): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: String): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+    inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

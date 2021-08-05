@@ -14,25 +14,19 @@ trait CredentialsFlows extends StObject {
 }
 object CredentialsFlows {
   
-  @scala.inline
-  def apply(credentials: js.Object, flows: js.Array[js.Object], rev: String): CredentialsFlows = {
+  inline def apply(credentials: js.Object, flows: js.Array[js.Object], rev: String): CredentialsFlows = {
     val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], flows = flows.asInstanceOf[js.Any], rev = rev.asInstanceOf[js.Any])
     __obj.asInstanceOf[CredentialsFlows]
   }
   
-  @scala.inline
-  implicit class CredentialsFlowsMutableBuilder[Self <: CredentialsFlows] (val x: Self) extends AnyVal {
+  extension [Self <: CredentialsFlows](x: Self) {
     
-    @scala.inline
-    def setCredentials(value: js.Object): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: js.Object): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlows(value: js.Array[js.Object]): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
+    inline def setFlows(value: js.Array[js.Object]): Self = StObject.set(x, "flows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowsVarargs(value: js.Object*): Self = StObject.set(x, "flows", js.Array(value :_*))
+    inline def setFlowsVarargs(value: js.Object*): Self = StObject.set(x, "flows", js.Array(value :_*))
     
-    @scala.inline
-    def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
   }
 }

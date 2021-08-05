@@ -91,9 +91,7 @@ object BlobResult {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(blobXml: js.Any): BlobResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(blobXml.asInstanceOf[js.Any]).asInstanceOf[BlobResult]
+  inline def parse(blobXml: js.Any): BlobResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(blobXml.asInstanceOf[js.Any]).asInstanceOf[BlobResult]
   
-  @scala.inline
-  def setHeadersFromBlob(webResource: WebResource, blob: BlobResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHeadersFromBlob")(webResource.asInstanceOf[js.Any], blob.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setHeadersFromBlob(webResource: WebResource, blob: BlobResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHeadersFromBlob")(webResource.asInstanceOf[js.Any], blob.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

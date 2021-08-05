@@ -8,11 +8,9 @@ object vcardsJsStrings {
   
   @js.native
   sealed trait F extends StObject
-  @scala.inline
-  def F: F = "F".asInstanceOf[F]
+  inline def F: F = "F".asInstanceOf[F]
   
   @js.native
   sealed trait M extends StObject
-  @scala.inline
-  def M: M = "M".asInstanceOf[M]
+  inline def M: M = "M".asInstanceOf[M]
 }

@@ -22,20 +22,16 @@ object revertMod extends Shortcut {
   }
   object RevertProps {
     
-    @scala.inline
-    def apply(): RevertProps = {
+    inline def apply(): RevertProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RevertProps]
     }
     
-    @scala.inline
-    implicit class RevertPropsMutableBuilder[Self <: RevertProps] (val x: Self) extends AnyVal {
+    extension [Self <: RevertProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

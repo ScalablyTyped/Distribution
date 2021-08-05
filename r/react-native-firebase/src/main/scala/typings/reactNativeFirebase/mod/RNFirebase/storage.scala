@@ -128,26 +128,20 @@ object storage {
   }
   object DownloadTaskSnapshot {
     
-    @scala.inline
-    def apply(bytesTransferred: Double, ref: Reference, state: TaskState, totalBytes: Double): DownloadTaskSnapshot = {
+    inline def apply(bytesTransferred: Double, ref: Reference, state: TaskState, totalBytes: Double): DownloadTaskSnapshot = {
       val __obj = js.Dynamic.literal(bytesTransferred = bytesTransferred.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], totalBytes = totalBytes.asInstanceOf[js.Any])
       __obj.asInstanceOf[DownloadTaskSnapshot]
     }
     
-    @scala.inline
-    implicit class DownloadTaskSnapshotMutableBuilder[Self <: DownloadTaskSnapshot] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadTaskSnapshot](x: Self) {
       
-      @scala.inline
-      def setBytesTransferred(value: Double): Self = StObject.set(x, "bytesTransferred", value.asInstanceOf[js.Any])
+      inline def setBytesTransferred(value: Double): Self = StObject.set(x, "bytesTransferred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: Reference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Reference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: TaskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: TaskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
+      inline def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,8 +169,7 @@ object storage {
   }
   object FullMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bucket: String,
       fullPath: String,
       generation: String,
@@ -190,41 +183,29 @@ object storage {
       __obj.asInstanceOf[FullMetadata]
     }
     
-    @scala.inline
-    implicit class FullMetadataMutableBuilder[Self <: FullMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: FullMetadata](x: Self) {
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
+      inline def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+      inline def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
+      inline def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMd5HashNull: Self = StObject.set(x, "md5Hash", null)
+      inline def setMd5HashNull: Self = StObject.set(x, "md5Hash", null)
       
-      @scala.inline
-      def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
+      inline def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
       
-      @scala.inline
-      def setMetageneration(value: String): Self = StObject.set(x, "metageneration", value.asInstanceOf[js.Any])
+      inline def setMetageneration(value: String): Self = StObject.set(x, "metageneration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeCreated(value: String): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
+      inline def setTimeCreated(value: String): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+      inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     }
   }
   
@@ -307,65 +288,46 @@ object storage {
   }
   object SettableMetadata {
     
-    @scala.inline
-    def apply(): SettableMetadata = {
+    inline def apply(): SettableMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SettableMetadata]
     }
     
-    @scala.inline
-    implicit class SettableMetadataMutableBuilder[Self <: SettableMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: SettableMetadata](x: Self) {
       
-      @scala.inline
-      def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
+      inline def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheControlNull: Self = StObject.set(x, "cacheControl", null)
+      inline def setCacheControlNull: Self = StObject.set(x, "cacheControl", null)
       
-      @scala.inline
-      def setCacheControlUndefined: Self = StObject.set(x, "cacheControl", js.undefined)
+      inline def setCacheControlUndefined: Self = StObject.set(x, "cacheControl", js.undefined)
       
-      @scala.inline
-      def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
+      inline def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentDispositionNull: Self = StObject.set(x, "contentDisposition", null)
+      inline def setContentDispositionNull: Self = StObject.set(x, "contentDisposition", null)
       
-      @scala.inline
-      def setContentDispositionUndefined: Self = StObject.set(x, "contentDisposition", js.undefined)
+      inline def setContentDispositionUndefined: Self = StObject.set(x, "contentDisposition", js.undefined)
       
-      @scala.inline
-      def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
+      inline def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentEncodingNull: Self = StObject.set(x, "contentEncoding", null)
+      inline def setContentEncodingNull: Self = StObject.set(x, "contentEncoding", null)
       
-      @scala.inline
-      def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
+      inline def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
       
-      @scala.inline
-      def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
+      inline def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentLanguageNull: Self = StObject.set(x, "contentLanguage", null)
+      inline def setContentLanguageNull: Self = StObject.set(x, "contentLanguage", null)
       
-      @scala.inline
-      def setContentLanguageUndefined: Self = StObject.set(x, "contentLanguage", js.undefined)
+      inline def setContentLanguageUndefined: Self = StObject.set(x, "contentLanguage", js.undefined)
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeNull: Self = StObject.set(x, "contentType", null)
+      inline def setContentTypeNull: Self = StObject.set(x, "contentType", null)
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setCustomMetadata(value: Partial[Record[String, String]]): Self = StObject.set(x, "customMetadata", value.asInstanceOf[js.Any])
+      inline def setCustomMetadata(value: Partial[Record[String, String]]): Self = StObject.set(x, "customMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomMetadataUndefined: Self = StObject.set(x, "customMetadata", js.undefined)
+      inline def setCustomMetadataUndefined: Self = StObject.set(x, "customMetadata", js.undefined)
     }
   }
   
@@ -379,26 +341,20 @@ object storage {
   }
   object StorageStatics {
     
-    @scala.inline
-    def apply(TaskEvent: TaskEvent, TaskState: TaskState): StorageStatics = {
+    inline def apply(TaskEvent: TaskEvent, TaskState: TaskState): StorageStatics = {
       val __obj = js.Dynamic.literal(TaskEvent = TaskEvent.asInstanceOf[js.Any], TaskState = TaskState.asInstanceOf[js.Any])
       __obj.asInstanceOf[StorageStatics]
     }
     
-    @scala.inline
-    implicit class StorageStaticsMutableBuilder[Self <: StorageStatics] (val x: Self) extends AnyVal {
+    extension [Self <: StorageStatics](x: Self) {
       
-      @scala.inline
-      def setNative(value: CACHESDIRECTORYPATH): Self = StObject.set(x, "Native", value.asInstanceOf[js.Any])
+      inline def setNative(value: CACHESDIRECTORYPATH): Self = StObject.set(x, "Native", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeUndefined: Self = StObject.set(x, "Native", js.undefined)
+      inline def setNativeUndefined: Self = StObject.set(x, "Native", js.undefined)
       
-      @scala.inline
-      def setTaskEvent(value: TaskEvent): Self = StObject.set(x, "TaskEvent", value.asInstanceOf[js.Any])
+      inline def setTaskEvent(value: TaskEvent): Self = StObject.set(x, "TaskEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskState(value: TaskState): Self = StObject.set(x, "TaskState", value.asInstanceOf[js.Any])
+      inline def setTaskState(value: TaskState): Self = StObject.set(x, "TaskState", value.asInstanceOf[js.Any])
     }
   }
   
@@ -446,8 +402,7 @@ object storage {
   }
   object UploadTaskSnapshot {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bytesTransferred: Double,
       metadata: FullMetadata,
       ref: Reference,
@@ -459,32 +414,23 @@ object storage {
       __obj.asInstanceOf[UploadTaskSnapshot]
     }
     
-    @scala.inline
-    implicit class UploadTaskSnapshotMutableBuilder[Self <: UploadTaskSnapshot] (val x: Self) extends AnyVal {
+    extension [Self <: UploadTaskSnapshot](x: Self) {
       
-      @scala.inline
-      def setBytesTransferred(value: Double): Self = StObject.set(x, "bytesTransferred", value.asInstanceOf[js.Any])
+      inline def setBytesTransferred(value: Double): Self = StObject.set(x, "bytesTransferred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadURL(value: String): Self = StObject.set(x, "downloadURL", value.asInstanceOf[js.Any])
+      inline def setDownloadURL(value: String): Self = StObject.set(x, "downloadURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadURLNull: Self = StObject.set(x, "downloadURL", null)
+      inline def setDownloadURLNull: Self = StObject.set(x, "downloadURL", null)
       
-      @scala.inline
-      def setMetadata(value: FullMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: FullMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: Reference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Reference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: TaskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: TaskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTask(value: StorageTask[UploadTaskSnapshot]): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+      inline def setTask(value: StorageTask[UploadTaskSnapshot]): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
+      inline def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
     }
   }
 }

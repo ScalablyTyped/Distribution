@@ -13,19 +13,15 @@ trait SaveOptions extends StObject {
 }
 object SaveOptions {
   
-  @scala.inline
-  def apply(): SaveOptions = {
+  inline def apply(): SaveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SaveOptions]
   }
   
-  @scala.inline
-  implicit class SaveOptionsMutableBuilder[Self <: SaveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SaveOptions](x: Self) {
     
-    @scala.inline
-    def setIncludeText(value: Boolean): Self = StObject.set(x, "includeText", value.asInstanceOf[js.Any])
+    inline def setIncludeText(value: Boolean): Self = StObject.set(x, "includeText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTextUndefined: Self = StObject.set(x, "includeText", js.undefined)
+    inline def setIncludeTextUndefined: Self = StObject.set(x, "includeText", js.undefined)
   }
 }

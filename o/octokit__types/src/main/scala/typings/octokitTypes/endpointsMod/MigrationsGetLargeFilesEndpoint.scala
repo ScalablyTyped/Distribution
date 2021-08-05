@@ -12,19 +12,15 @@ trait MigrationsGetLargeFilesEndpoint extends StObject {
 }
 object MigrationsGetLargeFilesEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String): MigrationsGetLargeFilesEndpoint = {
+  inline def apply(owner: String, repo: String): MigrationsGetLargeFilesEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsGetLargeFilesEndpoint]
   }
   
-  @scala.inline
-  implicit class MigrationsGetLargeFilesEndpointMutableBuilder[Self <: MigrationsGetLargeFilesEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsGetLargeFilesEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

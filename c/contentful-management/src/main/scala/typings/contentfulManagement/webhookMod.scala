@@ -31,11 +31,9 @@ object webhookMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapWebhook(http: AxiosInstance, data: WebhookProps): WebHooks = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapWebhook")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[WebHooks]
+  inline def wrapWebhook(http: AxiosInstance, data: WebhookProps): WebHooks = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapWebhook")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[WebHooks]
   
-  @scala.inline
-  def wrapWebhookCollection(http: AxiosInstance, data: CollectionProp[WebhookProps]): Collection[WebHooks, WebhookProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapWebhookCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[WebHooks, WebhookProps]]
+  inline def wrapWebhookCollection(http: AxiosInstance, data: CollectionProp[WebhookProps]): Collection[WebHooks, WebhookProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapWebhookCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[WebHooks, WebhookProps]]
   
   trait Doc extends StObject {
     
@@ -43,17 +41,14 @@ object webhookMod {
   }
   object Doc {
     
-    @scala.inline
-    def apply(doc: sysDotid | sysDotcontentTypeDotsysDotid | sysDotenvironmentDotsysDotid): Doc = {
+    inline def apply(doc: sysDotid | sysDotcontentTypeDotsysDotid | sysDotenvironmentDotsysDotid): Doc = {
       val __obj = js.Dynamic.literal(doc = doc.asInstanceOf[js.Any])
       __obj.asInstanceOf[Doc]
     }
     
-    @scala.inline
-    implicit class DocMutableBuilder[Self <: Doc] (val x: Self) extends AnyVal {
+    extension [Self <: Doc](x: Self) {
       
-      @scala.inline
-      def setDoc(value: sysDotid | sysDotcontentTypeDotsysDotid | sysDotenvironmentDotsysDotid): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+      inline def setDoc(value: sysDotid | sysDotcontentTypeDotsysDotid | sysDotenvironmentDotsysDotid): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,18 +61,15 @@ object webhookMod {
   }
   object EqualityConstraint {
     
-    @scala.inline
-    def apply(equals_ : js.Tuple2[Doc, String]): EqualityConstraint = {
+    inline def apply(equals_ : js.Tuple2[Doc, String]): EqualityConstraint = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("equals")(equals_.asInstanceOf[js.Any])
       __obj.asInstanceOf[EqualityConstraint]
     }
     
-    @scala.inline
-    implicit class EqualityConstraintMutableBuilder[Self <: EqualityConstraint] (val x: Self) extends AnyVal {
+    extension [Self <: EqualityConstraint](x: Self) {
       
-      @scala.inline
-      def setEquals_(value: js.Tuple2[Doc, String]): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
+      inline def setEquals_(value: js.Tuple2[Doc, String]): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,17 +81,14 @@ object webhookMod {
   }
   object InConstraint {
     
-    @scala.inline
-    def apply(in: js.Tuple2[Doc, Array[String]]): InConstraint = {
+    inline def apply(in: js.Tuple2[Doc, Array[String]]): InConstraint = {
       val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
       __obj.asInstanceOf[InConstraint]
     }
     
-    @scala.inline
-    implicit class InConstraintMutableBuilder[Self <: InConstraint] (val x: Self) extends AnyVal {
+    extension [Self <: InConstraint](x: Self) {
       
-      @scala.inline
-      def setIn(value: js.Tuple2[Doc, Array[String]]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: js.Tuple2[Doc, Array[String]]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,17 +100,14 @@ object webhookMod {
   }
   object NotConstraint {
     
-    @scala.inline
-    def apply(not: EqualityConstraint | InConstraint | RegexpConstraint): NotConstraint = {
+    inline def apply(not: EqualityConstraint | InConstraint | RegexpConstraint): NotConstraint = {
       val __obj = js.Dynamic.literal(not = not.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotConstraint]
     }
     
-    @scala.inline
-    implicit class NotConstraintMutableBuilder[Self <: NotConstraint] (val x: Self) extends AnyVal {
+    extension [Self <: NotConstraint](x: Self) {
       
-      @scala.inline
-      def setNot(value: EqualityConstraint | InConstraint | RegexpConstraint): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+      inline def setNot(value: EqualityConstraint | InConstraint | RegexpConstraint): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,17 +117,14 @@ object webhookMod {
   }
   object Pattern {
     
-    @scala.inline
-    def apply(pattern: String): Pattern = {
+    inline def apply(pattern: String): Pattern = {
       val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pattern]
     }
     
-    @scala.inline
-    implicit class PatternMutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
+    extension [Self <: Pattern](x: Self) {
       
-      @scala.inline
-      def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,17 +136,14 @@ object webhookMod {
   }
   object RegexpConstraint {
     
-    @scala.inline
-    def apply(regexp: js.Tuple2[Doc, Pattern]): RegexpConstraint = {
+    inline def apply(regexp: js.Tuple2[Doc, Pattern]): RegexpConstraint = {
       val __obj = js.Dynamic.literal(regexp = regexp.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegexpConstraint]
     }
     
-    @scala.inline
-    implicit class RegexpConstraintMutableBuilder[Self <: RegexpConstraint] (val x: Self) extends AnyVal {
+    extension [Self <: RegexpConstraint](x: Self) {
       
-      @scala.inline
-      def setRegexp(value: js.Tuple2[Doc, Pattern]): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+      inline def setRegexp(value: js.Tuple2[Doc, Pattern]): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,8 +252,7 @@ object webhookMod {
   }
   object WebHooks {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delete: () => js.Promise[Unit],
       getCall: String => js.Promise[Record[String, js.Any]],
       getCalls: () => js.Promise[Record[String, js.Any]],
@@ -290,23 +269,17 @@ object webhookMod {
       __obj.asInstanceOf[WebHooks]
     }
     
-    @scala.inline
-    implicit class WebHooksMutableBuilder[Self <: WebHooks] (val x: Self) extends AnyVal {
+    extension [Self <: WebHooks](x: Self) {
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCall(value: String => js.Promise[Record[String, js.Any]]): Self = StObject.set(x, "getCall", js.Any.fromFunction1(value))
+      inline def setGetCall(value: String => js.Promise[Record[String, js.Any]]): Self = StObject.set(x, "getCall", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCalls(value: () => js.Promise[Record[String, js.Any]]): Self = StObject.set(x, "getCalls", js.Any.fromFunction0(value))
+      inline def setGetCalls(value: () => js.Promise[Record[String, js.Any]]): Self = StObject.set(x, "getCalls", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHealth(value: () => js.Promise[Record[String, js.Any]]): Self = StObject.set(x, "getHealth", js.Any.fromFunction0(value))
+      inline def setGetHealth(value: () => js.Promise[Record[String, js.Any]]): Self = StObject.set(x, "getHealth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => js.Promise[WebHooks]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[WebHooks]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -319,27 +292,23 @@ object webhookMod {
   trait WebhookFilter extends StObject
   object WebhookFilter {
     
-    @scala.inline
-    def EqualityConstraint(equals_ : js.Tuple2[Doc, String]): typings.contentfulManagement.webhookMod.EqualityConstraint = {
+    inline def EqualityConstraint(equals_ : js.Tuple2[Doc, String]): typings.contentfulManagement.webhookMod.EqualityConstraint = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("equals")(equals_.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.contentfulManagement.webhookMod.EqualityConstraint]
     }
     
-    @scala.inline
-    def InConstraint(in: js.Tuple2[Doc, Array[String]]): typings.contentfulManagement.webhookMod.InConstraint = {
+    inline def InConstraint(in: js.Tuple2[Doc, Array[String]]): typings.contentfulManagement.webhookMod.InConstraint = {
       val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.contentfulManagement.webhookMod.InConstraint]
     }
     
-    @scala.inline
-    def NotConstraint(not: EqualityConstraint | InConstraint | RegexpConstraint): typings.contentfulManagement.webhookMod.NotConstraint = {
+    inline def NotConstraint(not: EqualityConstraint | InConstraint | RegexpConstraint): typings.contentfulManagement.webhookMod.NotConstraint = {
       val __obj = js.Dynamic.literal(not = not.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.contentfulManagement.webhookMod.NotConstraint]
     }
     
-    @scala.inline
-    def RegexpConstraint(regexp: js.Tuple2[Doc, Pattern]): typings.contentfulManagement.webhookMod.RegexpConstraint = {
+    inline def RegexpConstraint(regexp: js.Tuple2[Doc, Pattern]): typings.contentfulManagement.webhookMod.RegexpConstraint = {
       val __obj = js.Dynamic.literal(regexp = regexp.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.contentfulManagement.webhookMod.RegexpConstraint]
     }
@@ -355,26 +324,20 @@ object webhookMod {
   }
   object WebhookHeader {
     
-    @scala.inline
-    def apply(key: String, value: String): WebhookHeader = {
+    inline def apply(key: String, value: String): WebhookHeader = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebhookHeader]
     }
     
-    @scala.inline
-    implicit class WebhookHeaderMutableBuilder[Self <: WebhookHeader] (val x: Self) extends AnyVal {
+    extension [Self <: WebhookHeader](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecret(value: Boolean): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: Boolean): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+      inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -427,8 +390,7 @@ object webhookMod {
   }
   object WebhookProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       headers: js.Array[WebhookHeader],
       name: String,
       sys: MetaSysProps,
@@ -439,56 +401,39 @@ object webhookMod {
       __obj.asInstanceOf[WebhookProps]
     }
     
-    @scala.inline
-    implicit class WebhookPropsMutableBuilder[Self <: WebhookProps] (val x: Self) extends AnyVal {
+    extension [Self <: WebhookProps](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[WebhookFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[WebhookFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: WebhookFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: WebhookFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setHeaders(value: js.Array[WebhookHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Array[WebhookHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersVarargs(value: WebhookHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: WebhookHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setHttpBasicPassword(value: String): Self = StObject.set(x, "httpBasicPassword", value.asInstanceOf[js.Any])
+      inline def setHttpBasicPassword(value: String): Self = StObject.set(x, "httpBasicPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpBasicPasswordUndefined: Self = StObject.set(x, "httpBasicPassword", js.undefined)
+      inline def setHttpBasicPasswordUndefined: Self = StObject.set(x, "httpBasicPassword", js.undefined)
       
-      @scala.inline
-      def setHttpBasicUsername(value: String): Self = StObject.set(x, "httpBasicUsername", value.asInstanceOf[js.Any])
+      inline def setHttpBasicUsername(value: String): Self = StObject.set(x, "httpBasicUsername", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpBasicUsernameUndefined: Self = StObject.set(x, "httpBasicUsername", js.undefined)
+      inline def setHttpBasicUsernameUndefined: Self = StObject.set(x, "httpBasicUsername", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+      inline def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value :_*))
+      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value :_*))
       
-      @scala.inline
-      def setTransformation(value: WebhookTransformation): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
+      inline def setTransformation(value: WebhookTransformation): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformationUndefined: Self = StObject.set(x, "transformation", js.undefined)
+      inline def setTransformationUndefined: Self = StObject.set(x, "transformation", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -506,52 +451,38 @@ object webhookMod {
   }
   object WebhookTransformation {
     
-    @scala.inline
-    def apply(): WebhookTransformation = {
+    inline def apply(): WebhookTransformation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebhookTransformation]
     }
     
-    @scala.inline
-    implicit class WebhookTransformationMutableBuilder[Self <: WebhookTransformation] (val x: Self) extends AnyVal {
+    extension [Self <: WebhookTransformation](x: Self) {
       
-      @scala.inline
-      def setBody(value: JsonValue): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: JsonValue): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyNull: Self = StObject.set(x, "body", null)
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setContentType(
+      inline def setContentType(
         value: applicationSlashvndDotcontentfulDotmanagementDotv1Plussignjson | (`applicationSlashvndDotcontentfulDotmanagementDotv1PlussignjsonSemicolon charsetEqualssignutf-8`) | applicationSlashjson | (`applicationSlashjsonSemicolon charsetEqualssignutf-8`) | `applicationSlashx-www-form-urlencoded` | (`applicationSlashx-www-form-urlencodedSemicolon charsetEqualssignutf-8`)
       ): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeNull: Self = StObject.set(x, "contentType", null)
+      inline def setContentTypeNull: Self = StObject.set(x, "contentType", null)
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setIncludeContentLength(value: Boolean): Self = StObject.set(x, "includeContentLength", value.asInstanceOf[js.Any])
+      inline def setIncludeContentLength(value: Boolean): Self = StObject.set(x, "includeContentLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeContentLengthNull: Self = StObject.set(x, "includeContentLength", null)
+      inline def setIncludeContentLengthNull: Self = StObject.set(x, "includeContentLength", null)
       
-      @scala.inline
-      def setIncludeContentLengthUndefined: Self = StObject.set(x, "includeContentLength", js.undefined)
+      inline def setIncludeContentLengthUndefined: Self = StObject.set(x, "includeContentLength", js.undefined)
       
-      @scala.inline
-      def setMethod(value: POST | GET | PUT | PATCH | DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: POST | GET | PUT | PATCH | DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodNull: Self = StObject.set(x, "method", null)
+      inline def setMethodNull: Self = StObject.set(x, "method", null)
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     }
   }
 }

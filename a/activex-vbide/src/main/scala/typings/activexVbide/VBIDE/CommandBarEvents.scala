@@ -6,22 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CommandBarEvents extends StObject {
   
-  @JSName("VBIDE.CommandBarEvents_typekey")
+  /* private */ @JSName("VBIDE.CommandBarEvents_typekey")
   var VBIDEDotCommandBarEvents_typekey: CommandBarEvents
 }
 object CommandBarEvents {
   
-  @scala.inline
-  def apply(VBIDEDotCommandBarEvents_typekey: CommandBarEvents): CommandBarEvents = {
+  inline def apply(VBIDEDotCommandBarEvents_typekey: CommandBarEvents): CommandBarEvents = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("VBIDE.CommandBarEvents_typekey")(VBIDEDotCommandBarEvents_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandBarEvents]
   }
   
-  @scala.inline
-  implicit class CommandBarEventsMutableBuilder[Self <: CommandBarEvents] (val x: Self) extends AnyVal {
+  extension [Self <: CommandBarEvents](x: Self) {
     
-    @scala.inline
-    def setVBIDEDotCommandBarEvents_typekey(value: CommandBarEvents): Self = StObject.set(x, "VBIDE.CommandBarEvents_typekey", value.asInstanceOf[js.Any])
+    inline def setVBIDEDotCommandBarEvents_typekey(value: CommandBarEvents): Self = StObject.set(x, "VBIDE.CommandBarEvents_typekey", value.asInstanceOf[js.Any])
   }
 }

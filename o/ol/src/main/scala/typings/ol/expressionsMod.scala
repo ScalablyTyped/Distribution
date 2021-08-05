@@ -64,37 +64,25 @@ object expressionsMod {
     /* 2 */ val STRING: typings.ol.expressionsMod.ValueTypes.STRING & Double = js.native
   }
   
-  @scala.inline
-  def arrayToGlsl(array: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayToGlsl")(array.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def arrayToGlsl(array: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayToGlsl")(array.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def colorToGlsl(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("colorToGlsl")(color.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def colorToGlsl(color: Color): String = ^.asInstanceOf[js.Dynamic].applyDynamic("colorToGlsl")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def colorToGlsl(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("colorToGlsl")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def colorToGlsl(color: Color): String = ^.asInstanceOf[js.Dynamic].applyDynamic("colorToGlsl")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def expressionToGlsl(context: ParsingContext, value: ExpressionValue): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionToGlsl")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def expressionToGlsl(context: ParsingContext, value: ExpressionValue, typeHint: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionToGlsl")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any], typeHint.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def expressionToGlsl(context: ParsingContext, value: ExpressionValue, typeHint: ValueTypes): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionToGlsl")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any], typeHint.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def expressionToGlsl(context: ParsingContext, value: ExpressionValue): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionToGlsl")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def expressionToGlsl(context: ParsingContext, value: ExpressionValue, typeHint: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionToGlsl")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any], typeHint.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def expressionToGlsl(context: ParsingContext, value: ExpressionValue, typeHint: ValueTypes): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionToGlsl")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any], typeHint.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getStringNumberEquivalent(context: ParsingContext, string: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getStringNumberEquivalent")(context.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getStringNumberEquivalent(context: ParsingContext, string: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getStringNumberEquivalent")(context.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getValueType(value: ExpressionValue): ValueTypes | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueType")(value.asInstanceOf[js.Any]).asInstanceOf[ValueTypes | Double]
+  inline def getValueType(value: ExpressionValue): ValueTypes | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueType")(value.asInstanceOf[js.Any]).asInstanceOf[ValueTypes | Double]
   
-  @scala.inline
-  def isTypeUnique(valueType: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeUnique")(valueType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isTypeUnique(valueType: ValueTypes): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeUnique")(valueType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTypeUnique(valueType: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeUnique")(valueType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTypeUnique(valueType: ValueTypes): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeUnique")(valueType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def numberToGlsl(v: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberToGlsl")(v.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def numberToGlsl(v: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberToGlsl")(v.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def stringToGlsl(context: ParsingContext, string: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToGlsl")(context.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringToGlsl(context: ParsingContext, string: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToGlsl")(context.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type ExpressionValue = js.Array[js.Any] | Color | String | Double | Boolean
   
@@ -119,8 +107,7 @@ object expressionsMod {
   }
   object ParsingContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: js.Array[String],
       stringLiteralsMap: StringDictionary[Double],
       variables: js.Array[String]
@@ -129,29 +116,21 @@ object expressionsMod {
       __obj.asInstanceOf[ParsingContext]
     }
     
-    @scala.inline
-    implicit class ParsingContextMutableBuilder[Self <: ParsingContext] (val x: Self) extends AnyVal {
+    extension [Self <: ParsingContext](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setInFragmentShader(value: Boolean): Self = StObject.set(x, "inFragmentShader", value.asInstanceOf[js.Any])
+      inline def setInFragmentShader(value: Boolean): Self = StObject.set(x, "inFragmentShader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInFragmentShaderUndefined: Self = StObject.set(x, "inFragmentShader", js.undefined)
+      inline def setInFragmentShaderUndefined: Self = StObject.set(x, "inFragmentShader", js.undefined)
       
-      @scala.inline
-      def setStringLiteralsMap(value: StringDictionary[Double]): Self = StObject.set(x, "stringLiteralsMap", value.asInstanceOf[js.Any])
+      inline def setStringLiteralsMap(value: StringDictionary[Double]): Self = StObject.set(x, "stringLiteralsMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariables(value: js.Array[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: js.Array[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariablesVarargs(value: String*): Self = StObject.set(x, "variables", js.Array(value :_*))
+      inline def setVariablesVarargs(value: String*): Self = StObject.set(x, "variables", js.Array(value :_*))
     }
   }
 }

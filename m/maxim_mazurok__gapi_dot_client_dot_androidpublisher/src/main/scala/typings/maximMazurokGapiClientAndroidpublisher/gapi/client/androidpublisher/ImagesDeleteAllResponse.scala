@@ -11,22 +11,17 @@ trait ImagesDeleteAllResponse extends StObject {
 }
 object ImagesDeleteAllResponse {
   
-  @scala.inline
-  def apply(): ImagesDeleteAllResponse = {
+  inline def apply(): ImagesDeleteAllResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImagesDeleteAllResponse]
   }
   
-  @scala.inline
-  implicit class ImagesDeleteAllResponseMutableBuilder[Self <: ImagesDeleteAllResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ImagesDeleteAllResponse](x: Self) {
     
-    @scala.inline
-    def setDeleted(value: js.Array[Image]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: js.Array[Image]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
-    @scala.inline
-    def setDeletedVarargs(value: Image*): Self = StObject.set(x, "deleted", js.Array(value :_*))
+    inline def setDeletedVarargs(value: Image*): Self = StObject.set(x, "deleted", js.Array(value :_*))
   }
 }

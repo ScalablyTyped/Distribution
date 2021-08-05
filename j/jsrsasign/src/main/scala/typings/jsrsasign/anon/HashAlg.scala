@@ -18,8 +18,7 @@ trait HashAlg extends StObject {
 }
 object HashAlg {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hashAlg: String,
     sAttr: SignaturePolicyIdentifier,
     sigAlg: String,
@@ -30,22 +29,16 @@ object HashAlg {
     __obj.asInstanceOf[HashAlg]
   }
   
-  @scala.inline
-  implicit class HashAlgMutableBuilder[Self <: HashAlg] (val x: Self) extends AnyVal {
+  extension [Self <: HashAlg](x: Self) {
     
-    @scala.inline
-    def setHashAlg(value: String): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
+    inline def setHashAlg(value: String): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSAttr(value: SignaturePolicyIdentifier): Self = StObject.set(x, "sAttr", value.asInstanceOf[js.Any])
+    inline def setSAttr(value: SignaturePolicyIdentifier): Self = StObject.set(x, "sAttr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigAlg(value: String): Self = StObject.set(x, "sigAlg", value.asInstanceOf[js.Any])
+    inline def setSigAlg(value: String): Self = StObject.set(x, "sigAlg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignerCert(value: String): Self = StObject.set(x, "signerCert", value.asInstanceOf[js.Any])
+    inline def setSignerCert(value: String): Self = StObject.set(x, "signerCert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignerPrvKey(value: String): Self = StObject.set(x, "signerPrvKey", value.asInstanceOf[js.Any])
+    inline def setSignerPrvKey(value: String): Self = StObject.set(x, "signerPrvKey", value.asInstanceOf[js.Any])
   }
 }

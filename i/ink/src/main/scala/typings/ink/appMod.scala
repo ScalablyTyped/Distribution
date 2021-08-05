@@ -26,11 +26,9 @@ object appMod {
     @JSImport("ink/build/components/App", "default.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromError(error: Error): typings.ink.anon.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(error.asInstanceOf[js.Any]).asInstanceOf[typings.ink.anon.Error]
+    inline def getDerivedStateFromError(error: Error): typings.ink.anon.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(error.asInstanceOf[js.Any]).asInstanceOf[typings.ink.anon.Error]
   }
   
   @js.native
@@ -89,20 +87,16 @@ object appMod {
   }
   object Focusable {
     
-    @scala.inline
-    def apply(id: String, isActive: Boolean): Focusable = {
+    inline def apply(id: String, isActive: Boolean): Focusable = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any])
       __obj.asInstanceOf[Focusable]
     }
     
-    @scala.inline
-    implicit class FocusableMutableBuilder[Self <: Focusable] (val x: Self) extends AnyVal {
+    extension [Self <: Focusable](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,35 +133,26 @@ object appMod {
   }
   object State {
     
-    @scala.inline
-    def apply(focusables: js.Array[Focusable], isFocusEnabled: Boolean): State = {
+    inline def apply(focusables: js.Array[Focusable], isFocusEnabled: Boolean): State = {
       val __obj = js.Dynamic.literal(focusables = focusables.asInstanceOf[js.Any], isFocusEnabled = isFocusEnabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setActiveFocusId(value: String): Self = StObject.set(x, "activeFocusId", value.asInstanceOf[js.Any])
+      inline def setActiveFocusId(value: String): Self = StObject.set(x, "activeFocusId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveFocusIdUndefined: Self = StObject.set(x, "activeFocusId", js.undefined)
+      inline def setActiveFocusIdUndefined: Self = StObject.set(x, "activeFocusId", js.undefined)
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFocusables(value: js.Array[Focusable]): Self = StObject.set(x, "focusables", value.asInstanceOf[js.Any])
+      inline def setFocusables(value: js.Array[Focusable]): Self = StObject.set(x, "focusables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusablesVarargs(value: Focusable*): Self = StObject.set(x, "focusables", js.Array(value :_*))
+      inline def setFocusablesVarargs(value: Focusable*): Self = StObject.set(x, "focusables", js.Array(value :_*))
       
-      @scala.inline
-      def setIsFocusEnabled(value: Boolean): Self = StObject.set(x, "isFocusEnabled", value.asInstanceOf[js.Any])
+      inline def setIsFocusEnabled(value: Boolean): Self = StObject.set(x, "isFocusEnabled", value.asInstanceOf[js.Any])
     }
   }
 }

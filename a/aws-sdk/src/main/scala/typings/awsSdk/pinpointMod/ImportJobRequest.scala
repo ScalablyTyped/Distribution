@@ -48,52 +48,37 @@ trait ImportJobRequest extends StObject {
 }
 object ImportJobRequest {
   
-  @scala.inline
-  def apply(Format: Format, RoleArn: string, S3Url: string): ImportJobRequest = {
+  inline def apply(Format: Format, RoleArn: string, S3Url: string): ImportJobRequest = {
     val __obj = js.Dynamic.literal(Format = Format.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], S3Url = S3Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportJobRequest]
   }
   
-  @scala.inline
-  implicit class ImportJobRequestMutableBuilder[Self <: ImportJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ImportJobRequest](x: Self) {
     
-    @scala.inline
-    def setDefineSegment(value: boolean): Self = StObject.set(x, "DefineSegment", value.asInstanceOf[js.Any])
+    inline def setDefineSegment(value: boolean): Self = StObject.set(x, "DefineSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefineSegmentUndefined: Self = StObject.set(x, "DefineSegment", js.undefined)
+    inline def setDefineSegmentUndefined: Self = StObject.set(x, "DefineSegment", js.undefined)
     
-    @scala.inline
-    def setExternalId(value: string): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: string): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
+    inline def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
     
-    @scala.inline
-    def setFormat(value: Format): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Format): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisterEndpoints(value: boolean): Self = StObject.set(x, "RegisterEndpoints", value.asInstanceOf[js.Any])
+    inline def setRegisterEndpoints(value: boolean): Self = StObject.set(x, "RegisterEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisterEndpointsUndefined: Self = StObject.set(x, "RegisterEndpoints", js.undefined)
+    inline def setRegisterEndpointsUndefined: Self = StObject.set(x, "RegisterEndpoints", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Url(value: string): Self = StObject.set(x, "S3Url", value.asInstanceOf[js.Any])
+    inline def setS3Url(value: string): Self = StObject.set(x, "S3Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
+    inline def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentIdUndefined: Self = StObject.set(x, "SegmentId", js.undefined)
+    inline def setSegmentIdUndefined: Self = StObject.set(x, "SegmentId", js.undefined)
     
-    @scala.inline
-    def setSegmentName(value: string): Self = StObject.set(x, "SegmentName", value.asInstanceOf[js.Any])
+    inline def setSegmentName(value: string): Self = StObject.set(x, "SegmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentNameUndefined: Self = StObject.set(x, "SegmentName", js.undefined)
+    inline def setSegmentNameUndefined: Self = StObject.set(x, "SegmentName", js.undefined)
   }
 }

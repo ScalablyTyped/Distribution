@@ -14,15 +14,11 @@ object peerScoreParamsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createPeerScoreParams(): PeerScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerScoreParams")().asInstanceOf[PeerScoreParams]
-  @scala.inline
-  def createPeerScoreParams(p: PartialPeerScoreParams): PeerScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerScoreParams")(p.asInstanceOf[js.Any]).asInstanceOf[PeerScoreParams]
+  inline def createPeerScoreParams(): PeerScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerScoreParams")().asInstanceOf[PeerScoreParams]
+  inline def createPeerScoreParams(p: PartialPeerScoreParams): PeerScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerScoreParams")(p.asInstanceOf[js.Any]).asInstanceOf[PeerScoreParams]
   
-  @scala.inline
-  def createTopicScoreParams(): TopicScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createTopicScoreParams")().asInstanceOf[TopicScoreParams]
-  @scala.inline
-  def createTopicScoreParams(p: PartialTopicScoreParams): TopicScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createTopicScoreParams")(p.asInstanceOf[js.Any]).asInstanceOf[TopicScoreParams]
+  inline def createTopicScoreParams(): TopicScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createTopicScoreParams")().asInstanceOf[TopicScoreParams]
+  inline def createTopicScoreParams(p: PartialTopicScoreParams): TopicScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createTopicScoreParams")(p.asInstanceOf[js.Any]).asInstanceOf[TopicScoreParams]
   
   @JSImport("libp2p-gossipsub/src/score/peer-score-params", "defaultPeerScoreParams")
   @js.native
@@ -32,11 +28,9 @@ object peerScoreParamsMod {
   @js.native
   val defaultTopicScoreParams: TopicScoreParams = js.native
   
-  @scala.inline
-  def validatePeerScoreParams(p: PeerScoreParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePeerScoreParams")(p.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validatePeerScoreParams(p: PeerScoreParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePeerScoreParams")(p.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def validateTopicScoreParams(p: TopicScoreParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateTopicScoreParams")(p.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateTopicScoreParams(p: TopicScoreParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateTopicScoreParams")(p.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait PeerScoreParams extends StObject {
     
@@ -105,8 +99,7 @@ object peerScoreParamsMod {
   }
   object PeerScoreParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       IPColocationFactorThreshold: Double,
       IPColocationFactorWeight: Double,
       IPColocationFactorWhitelist: Set[String],
@@ -124,44 +117,31 @@ object peerScoreParamsMod {
       __obj.asInstanceOf[PeerScoreParams]
     }
     
-    @scala.inline
-    implicit class PeerScoreParamsMutableBuilder[Self <: PeerScoreParams] (val x: Self) extends AnyVal {
+    extension [Self <: PeerScoreParams](x: Self) {
       
-      @scala.inline
-      def setAppSpecificScore(value: String => Double): Self = StObject.set(x, "appSpecificScore", js.Any.fromFunction1(value))
+      inline def setAppSpecificScore(value: String => Double): Self = StObject.set(x, "appSpecificScore", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAppSpecificWeight(value: Double): Self = StObject.set(x, "appSpecificWeight", value.asInstanceOf[js.Any])
+      inline def setAppSpecificWeight(value: Double): Self = StObject.set(x, "appSpecificWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBehaviourPenaltyDecay(value: Double): Self = StObject.set(x, "behaviourPenaltyDecay", value.asInstanceOf[js.Any])
+      inline def setBehaviourPenaltyDecay(value: Double): Self = StObject.set(x, "behaviourPenaltyDecay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBehaviourPenaltyWeight(value: Double): Self = StObject.set(x, "behaviourPenaltyWeight", value.asInstanceOf[js.Any])
+      inline def setBehaviourPenaltyWeight(value: Double): Self = StObject.set(x, "behaviourPenaltyWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecayInterval(value: Double): Self = StObject.set(x, "decayInterval", value.asInstanceOf[js.Any])
+      inline def setDecayInterval(value: Double): Self = StObject.set(x, "decayInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecayToZero(value: Double): Self = StObject.set(x, "decayToZero", value.asInstanceOf[js.Any])
+      inline def setDecayToZero(value: Double): Self = StObject.set(x, "decayToZero", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIPColocationFactorThreshold(value: Double): Self = StObject.set(x, "IPColocationFactorThreshold", value.asInstanceOf[js.Any])
+      inline def setIPColocationFactorThreshold(value: Double): Self = StObject.set(x, "IPColocationFactorThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIPColocationFactorWeight(value: Double): Self = StObject.set(x, "IPColocationFactorWeight", value.asInstanceOf[js.Any])
+      inline def setIPColocationFactorWeight(value: Double): Self = StObject.set(x, "IPColocationFactorWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIPColocationFactorWhitelist(value: Set[String]): Self = StObject.set(x, "IPColocationFactorWhitelist", value.asInstanceOf[js.Any])
+      inline def setIPColocationFactorWhitelist(value: Set[String]): Self = StObject.set(x, "IPColocationFactorWhitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetainScore(value: Double): Self = StObject.set(x, "retainScore", value.asInstanceOf[js.Any])
+      inline def setRetainScore(value: Double): Self = StObject.set(x, "retainScore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicScoreCap(value: Double): Self = StObject.set(x, "topicScoreCap", value.asInstanceOf[js.Any])
+      inline def setTopicScoreCap(value: Double): Self = StObject.set(x, "topicScoreCap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopics(value: Record[String, TopicScoreParams]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+      inline def setTopics(value: Record[String, TopicScoreParams]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     }
   }
   
@@ -248,8 +228,7 @@ object peerScoreParamsMod {
   }
   object TopicScoreParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       firstMessageDeliveriesCap: Double,
       firstMessageDeliveriesDecay: Double,
       firstMessageDeliveriesWeight: Double,
@@ -272,59 +251,41 @@ object peerScoreParamsMod {
       __obj.asInstanceOf[TopicScoreParams]
     }
     
-    @scala.inline
-    implicit class TopicScoreParamsMutableBuilder[Self <: TopicScoreParams] (val x: Self) extends AnyVal {
+    extension [Self <: TopicScoreParams](x: Self) {
       
-      @scala.inline
-      def setFirstMessageDeliveriesCap(value: Double): Self = StObject.set(x, "firstMessageDeliveriesCap", value.asInstanceOf[js.Any])
+      inline def setFirstMessageDeliveriesCap(value: Double): Self = StObject.set(x, "firstMessageDeliveriesCap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstMessageDeliveriesDecay(value: Double): Self = StObject.set(x, "firstMessageDeliveriesDecay", value.asInstanceOf[js.Any])
+      inline def setFirstMessageDeliveriesDecay(value: Double): Self = StObject.set(x, "firstMessageDeliveriesDecay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstMessageDeliveriesWeight(value: Double): Self = StObject.set(x, "firstMessageDeliveriesWeight", value.asInstanceOf[js.Any])
+      inline def setFirstMessageDeliveriesWeight(value: Double): Self = StObject.set(x, "firstMessageDeliveriesWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidMessageDeliveriesDecay(value: Double): Self = StObject.set(x, "invalidMessageDeliveriesDecay", value.asInstanceOf[js.Any])
+      inline def setInvalidMessageDeliveriesDecay(value: Double): Self = StObject.set(x, "invalidMessageDeliveriesDecay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidMessageDeliveriesWeight(value: Double): Self = StObject.set(x, "invalidMessageDeliveriesWeight", value.asInstanceOf[js.Any])
+      inline def setInvalidMessageDeliveriesWeight(value: Double): Self = StObject.set(x, "invalidMessageDeliveriesWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshFailurePenaltyDecay(value: Double): Self = StObject.set(x, "meshFailurePenaltyDecay", value.asInstanceOf[js.Any])
+      inline def setMeshFailurePenaltyDecay(value: Double): Self = StObject.set(x, "meshFailurePenaltyDecay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshFailurePenaltyWeight(value: Double): Self = StObject.set(x, "meshFailurePenaltyWeight", value.asInstanceOf[js.Any])
+      inline def setMeshFailurePenaltyWeight(value: Double): Self = StObject.set(x, "meshFailurePenaltyWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshMessageDeliveriesActivation(value: Double): Self = StObject.set(x, "meshMessageDeliveriesActivation", value.asInstanceOf[js.Any])
+      inline def setMeshMessageDeliveriesActivation(value: Double): Self = StObject.set(x, "meshMessageDeliveriesActivation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshMessageDeliveriesCap(value: Double): Self = StObject.set(x, "meshMessageDeliveriesCap", value.asInstanceOf[js.Any])
+      inline def setMeshMessageDeliveriesCap(value: Double): Self = StObject.set(x, "meshMessageDeliveriesCap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshMessageDeliveriesDecay(value: Double): Self = StObject.set(x, "meshMessageDeliveriesDecay", value.asInstanceOf[js.Any])
+      inline def setMeshMessageDeliveriesDecay(value: Double): Self = StObject.set(x, "meshMessageDeliveriesDecay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshMessageDeliveriesThreshold(value: Double): Self = StObject.set(x, "meshMessageDeliveriesThreshold", value.asInstanceOf[js.Any])
+      inline def setMeshMessageDeliveriesThreshold(value: Double): Self = StObject.set(x, "meshMessageDeliveriesThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshMessageDeliveriesWeight(value: Double): Self = StObject.set(x, "meshMessageDeliveriesWeight", value.asInstanceOf[js.Any])
+      inline def setMeshMessageDeliveriesWeight(value: Double): Self = StObject.set(x, "meshMessageDeliveriesWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshMessageDeliveriesWindow(value: Double): Self = StObject.set(x, "meshMessageDeliveriesWindow", value.asInstanceOf[js.Any])
+      inline def setMeshMessageDeliveriesWindow(value: Double): Self = StObject.set(x, "meshMessageDeliveriesWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeInMeshCap(value: Double): Self = StObject.set(x, "timeInMeshCap", value.asInstanceOf[js.Any])
+      inline def setTimeInMeshCap(value: Double): Self = StObject.set(x, "timeInMeshCap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeInMeshQuantum(value: Double): Self = StObject.set(x, "timeInMeshQuantum", value.asInstanceOf[js.Any])
+      inline def setTimeInMeshQuantum(value: Double): Self = StObject.set(x, "timeInMeshQuantum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeInMeshWeight(value: Double): Self = StObject.set(x, "timeInMeshWeight", value.asInstanceOf[js.Any])
+      inline def setTimeInMeshWeight(value: Double): Self = StObject.set(x, "timeInMeshWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicWeight(value: Double): Self = StObject.set(x, "topicWeight", value.asInstanceOf[js.Any])
+      inline def setTopicWeight(value: Double): Self = StObject.set(x, "topicWeight", value.asInstanceOf[js.Any])
     }
   }
 }

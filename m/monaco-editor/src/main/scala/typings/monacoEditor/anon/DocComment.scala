@@ -11,19 +11,15 @@ trait DocComment extends StObject {
 }
 object DocComment {
   
-  @scala.inline
-  def apply(): DocComment = {
+  inline def apply(): DocComment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocComment]
   }
   
-  @scala.inline
-  implicit class DocCommentMutableBuilder[Self <: DocComment] (val x: Self) extends AnyVal {
+  extension [Self <: DocComment](x: Self) {
     
-    @scala.inline
-    def setDocComment(value: IDocComment): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
+    inline def setDocComment(value: IDocComment): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocCommentUndefined: Self = StObject.set(x, "docComment", js.undefined)
+    inline def setDocCommentUndefined: Self = StObject.set(x, "docComment", js.undefined)
   }
 }

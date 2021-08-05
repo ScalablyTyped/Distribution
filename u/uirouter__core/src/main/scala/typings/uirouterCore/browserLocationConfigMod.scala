@@ -16,14 +16,14 @@ object browserLocationConfigMod {
     def this(router: js.Any, _isHtml5: Boolean) = this()
     def this(router: Unit, _isHtml5: Boolean) = this()
     
-    var _baseHref: js.Any = js.native
+    /* private */ var _baseHref: js.Any = js.native
     
-    var _hashPrefix: js.Any = js.native
+    /* private */ var _hashPrefix: js.Any = js.native
     
-    var _isHtml5: js.Any = js.native
+    /* private */ var _isHtml5: js.Any = js.native
     
     def baseHref(href: String): String = js.native
     
-    var getBaseHref: js.Any = js.native
+    /* private */ var getBaseHref: js.Any = js.native
   }
 }

@@ -10,10 +10,8 @@ object mod {
   /**
     * Simulates latency on express requests when header is provided
     */
-  @scala.inline
-  def apply(): NextFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[NextFunction]
-  @scala.inline
-  def apply(options: Options): NextFunction = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[NextFunction]
+  inline def apply(): NextFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[NextFunction]
+  inline def apply(options: Options): NextFunction = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[NextFunction]
   
   @JSImport("express-delay-header", JSImport.Namespace)
   @js.native
@@ -43,41 +41,30 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCurrentEnv(value: String): Self = StObject.set(x, "currentEnv", value.asInstanceOf[js.Any])
+      inline def setCurrentEnv(value: String): Self = StObject.set(x, "currentEnv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentEnvUndefined: Self = StObject.set(x, "currentEnv", js.undefined)
+      inline def setCurrentEnvUndefined: Self = StObject.set(x, "currentEnv", js.undefined)
       
-      @scala.inline
-      def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
+      inline def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderNameUndefined: Self = StObject.set(x, "headerName", js.undefined)
+      inline def setHeaderNameUndefined: Self = StObject.set(x, "headerName", js.undefined)
       
-      @scala.inline
-      def setNodeEnv(value: String | js.Array[String]): Self = StObject.set(x, "nodeEnv", value.asInstanceOf[js.Any])
+      inline def setNodeEnv(value: String | js.Array[String]): Self = StObject.set(x, "nodeEnv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeEnvUndefined: Self = StObject.set(x, "nodeEnv", js.undefined)
+      inline def setNodeEnvUndefined: Self = StObject.set(x, "nodeEnv", js.undefined)
       
-      @scala.inline
-      def setNodeEnvVarargs(value: String*): Self = StObject.set(x, "nodeEnv", js.Array(value :_*))
+      inline def setNodeEnvVarargs(value: String*): Self = StObject.set(x, "nodeEnv", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeoutFunction(value: (/* next */ js.Function0[Unit], /* ms */ Double) => Unit): Self = StObject.set(x, "timeoutFunction", js.Any.fromFunction2(value))
+      inline def setTimeoutFunction(value: (/* next */ js.Function0[Unit], /* ms */ Double) => Unit): Self = StObject.set(x, "timeoutFunction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTimeoutFunctionUndefined: Self = StObject.set(x, "timeoutFunction", js.undefined)
+      inline def setTimeoutFunctionUndefined: Self = StObject.set(x, "timeoutFunction", js.undefined)
     }
   }
 }

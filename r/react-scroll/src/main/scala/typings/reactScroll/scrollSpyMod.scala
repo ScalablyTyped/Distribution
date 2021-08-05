@@ -39,8 +39,7 @@ object scrollSpyMod extends Shortcut {
   }
   object ScrollSpy {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addSpyHandler: (js.Any, js.Any) => Unit,
       addStateHandler: js.Any => Unit,
       currentPositionY: js.Any => Double,
@@ -58,53 +57,37 @@ object scrollSpyMod extends Shortcut {
       __obj.asInstanceOf[ScrollSpy]
     }
     
-    @scala.inline
-    implicit class ScrollSpyMutableBuilder[Self <: ScrollSpy] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollSpy](x: Self) {
       
-      @scala.inline
-      def setAddSpyHandler(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "addSpyHandler", js.Any.fromFunction2(value))
+      inline def setAddSpyHandler(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "addSpyHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddStateHandler(value: js.Any => Unit): Self = StObject.set(x, "addStateHandler", js.Any.fromFunction1(value))
+      inline def setAddStateHandler(value: js.Any => Unit): Self = StObject.set(x, "addStateHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCurrentPositionY(value: js.Any => Double): Self = StObject.set(x, "currentPositionY", js.Any.fromFunction1(value))
+      inline def setCurrentPositionY(value: js.Any => Double): Self = StObject.set(x, "currentPositionY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsMounted(value: js.Any => Boolean): Self = StObject.set(x, "isMounted", js.Any.fromFunction1(value))
+      inline def setIsMounted(value: js.Any => Boolean): Self = StObject.set(x, "isMounted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMount(value: js.Any => Unit): Self = StObject.set(x, "mount", js.Any.fromFunction1(value))
+      inline def setMount(value: js.Any => Unit): Self = StObject.set(x, "mount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollHandler(value: js.Any => Unit): Self = StObject.set(x, "scrollHandler", js.Any.fromFunction1(value))
+      inline def setScrollHandler(value: js.Any => Unit): Self = StObject.set(x, "scrollHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollSpyContainers(value: js.Array[js.Any]): Self = StObject.set(x, "scrollSpyContainers", value.asInstanceOf[js.Any])
+      inline def setScrollSpyContainers(value: js.Array[js.Any]): Self = StObject.set(x, "scrollSpyContainers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollSpyContainersVarargs(value: js.Any*): Self = StObject.set(x, "scrollSpyContainers", js.Array(value :_*))
+      inline def setScrollSpyContainersVarargs(value: js.Any*): Self = StObject.set(x, "scrollSpyContainers", js.Array(value :_*))
       
-      @scala.inline
-      def setSpyCallbacks(value: js.Array[js.Any]): Self = StObject.set(x, "spyCallbacks", value.asInstanceOf[js.Any])
+      inline def setSpyCallbacks(value: js.Array[js.Any]): Self = StObject.set(x, "spyCallbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpyCallbacksVarargs(value: js.Any*): Self = StObject.set(x, "spyCallbacks", js.Array(value :_*))
+      inline def setSpyCallbacksVarargs(value: js.Any*): Self = StObject.set(x, "spyCallbacks", js.Array(value :_*))
       
-      @scala.inline
-      def setSpySetState(value: js.Array[js.Any]): Self = StObject.set(x, "spySetState", value.asInstanceOf[js.Any])
+      inline def setSpySetState(value: js.Array[js.Any]): Self = StObject.set(x, "spySetState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpySetStateVarargs(value: js.Any*): Self = StObject.set(x, "spySetState", js.Array(value :_*))
+      inline def setSpySetStateVarargs(value: js.Any*): Self = StObject.set(x, "spySetState", js.Array(value :_*))
       
-      @scala.inline
-      def setUnmount(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "unmount", js.Any.fromFunction2(value))
+      inline def setUnmount(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "unmount", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdateStates(value: () => Unit): Self = StObject.set(x, "updateStates", js.Any.fromFunction0(value))
+      inline def setUpdateStates(value: () => Unit): Self = StObject.set(x, "updateStates", js.Any.fromFunction0(value))
     }
   }
   

@@ -38,6 +38,6 @@ trait KeyBinding extends StObject {
   def Rebind(KeyCategory: WdKeyCategory, Command: String): Unit = js.native
   def Rebind(KeyCategory: WdKeyCategory, Command: String, CommandParameter: js.Any): Unit = js.native
   
-  @JSName("Word.KeyBinding_typekey")
+  /* private */ @JSName("Word.KeyBinding_typekey")
   var WordDotKeyBinding_typekey: KeyBinding = js.native
 }

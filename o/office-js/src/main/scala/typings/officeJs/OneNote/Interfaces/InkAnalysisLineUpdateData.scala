@@ -17,19 +17,15 @@ trait InkAnalysisLineUpdateData extends StObject {
 }
 object InkAnalysisLineUpdateData {
   
-  @scala.inline
-  def apply(): InkAnalysisLineUpdateData = {
+  inline def apply(): InkAnalysisLineUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InkAnalysisLineUpdateData]
   }
   
-  @scala.inline
-  implicit class InkAnalysisLineUpdateDataMutableBuilder[Self <: InkAnalysisLineUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: InkAnalysisLineUpdateData](x: Self) {
     
-    @scala.inline
-    def setParagraph(value: InkAnalysisParagraphUpdateData): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+    inline def setParagraph(value: InkAnalysisParagraphUpdateData): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
+    inline def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
   }
 }

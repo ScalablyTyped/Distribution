@@ -11,16 +11,13 @@ trait PickImplcreditCard extends StObject {
 }
 object PickImplcreditCard {
   
-  @scala.inline
-  def apply(creditCard: String): PickImplcreditCard = {
+  inline def apply(creditCard: String): PickImplcreditCard = {
     val __obj = js.Dynamic.literal(creditCard = creditCard.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplcreditCard]
   }
   
-  @scala.inline
-  implicit class PickImplcreditCardMutableBuilder[Self <: PickImplcreditCard] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplcreditCard](x: Self) {
     
-    @scala.inline
-    def setCreditCard(value: String): Self = StObject.set(x, "creditCard", value.asInstanceOf[js.Any])
+    inline def setCreditCard(value: String): Self = StObject.set(x, "creditCard", value.asInstanceOf[js.Any])
   }
 }

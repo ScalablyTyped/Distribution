@@ -10,10 +10,8 @@ object endonerrorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](src: typings.baconjs.observableMod.default[T]): typings.baconjs.observableMod.default[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.default[T]]
-  @scala.inline
-  def default[T](
+  inline def default[T](src: typings.baconjs.observableMod.default[T]): typings.baconjs.observableMod.default[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.default[T]]
+  inline def default[T](
     src: typings.baconjs.observableMod.default[T],
     predicate: js.Function1[/* error */ js.Any, Boolean]
   ): typings.baconjs.observableMod.default[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[T]]

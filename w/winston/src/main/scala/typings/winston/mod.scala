@@ -83,8 +83,7 @@ object mod {
     def this(options: LoggerOptions) = this()
   }
   
-  @scala.inline
-  def Container_=(x: Container): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Container")(x.asInstanceOf[js.Any])
+  inline def Container_=(x: Container): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Container")(x.asInstanceOf[js.Any])
   
   @js.native
   trait ExceptionHandler
@@ -160,87 +159,58 @@ object mod {
     
     object format {
       
-      @scala.inline
-      def apply(transform: TransformFunction): FormatWrap = ^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any]).asInstanceOf[FormatWrap]
+      inline def apply(transform: TransformFunction): FormatWrap = ^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any]).asInstanceOf[FormatWrap]
       
       @JSImport("winston", "Logform.format")
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def align(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("align")().asInstanceOf[typings.logform.mod.Format_]
+      inline def align(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("align")().asInstanceOf[typings.logform.mod.Format_]
       
-      @scala.inline
-      def cli(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")().asInstanceOf[typings.logform.mod.Format_]
-      @scala.inline
-      def cli(opts: CliOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
+      inline def cli(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")().asInstanceOf[typings.logform.mod.Format_]
+      inline def cli(opts: CliOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @scala.inline
-      def colorize(): typings.logform.mod.Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")().asInstanceOf[typings.logform.mod.Colorizer]
-      @scala.inline
-      def colorize(opts: ColorizeOptions): typings.logform.mod.Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Colorizer]
+      inline def colorize(): typings.logform.mod.Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")().asInstanceOf[typings.logform.mod.Colorizer]
+      inline def colorize(opts: ColorizeOptions): typings.logform.mod.Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Colorizer]
       
-      @scala.inline
-      def combine(formats: typings.logform.mod.Format_ *): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(formats.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
+      inline def combine(formats: typings.logform.mod.Format_ *): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(formats.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @scala.inline
-      def errors(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")().asInstanceOf[typings.logform.mod.Format_]
-      @scala.inline
-      def errors(opts: js.Object): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
+      inline def errors(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")().asInstanceOf[typings.logform.mod.Format_]
+      inline def errors(opts: js.Object): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @scala.inline
-      def json(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")().asInstanceOf[typings.logform.mod.Format_]
-      @scala.inline
-      def json(opts: JsonOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
+      inline def json(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")().asInstanceOf[typings.logform.mod.Format_]
+      inline def json(opts: JsonOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @scala.inline
-      def label(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")().asInstanceOf[typings.logform.mod.Format_]
-      @scala.inline
-      def label(opts: LabelOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
+      inline def label(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")().asInstanceOf[typings.logform.mod.Format_]
+      inline def label(opts: LabelOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @scala.inline
-      def logstash(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("logstash")().asInstanceOf[typings.logform.mod.Format_]
+      inline def logstash(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("logstash")().asInstanceOf[typings.logform.mod.Format_]
       
-      @scala.inline
-      def metadata(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")().asInstanceOf[typings.logform.mod.Format_]
-      @scala.inline
-      def metadata(opts: MetadataOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
+      inline def metadata(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")().asInstanceOf[typings.logform.mod.Format_]
+      inline def metadata(opts: MetadataOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @scala.inline
-      def ms(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("ms")().asInstanceOf[typings.logform.mod.Format_]
+      inline def ms(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("ms")().asInstanceOf[typings.logform.mod.Format_]
       
-      @scala.inline
-      def padLevels(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")().asInstanceOf[typings.logform.mod.Format_]
-      @scala.inline
-      def padLevels(opts: PadLevelsOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
+      inline def padLevels(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")().asInstanceOf[typings.logform.mod.Format_]
+      inline def padLevels(opts: PadLevelsOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @scala.inline
-      def prettyPrint(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")().asInstanceOf[typings.logform.mod.Format_]
-      @scala.inline
-      def prettyPrint(opts: PrettyPrintOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
+      inline def prettyPrint(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")().asInstanceOf[typings.logform.mod.Format_]
+      inline def prettyPrint(opts: PrettyPrintOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @scala.inline
-      def printf(templateFunction: js.Function1[/* info */ TransformableInfo, String]): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("printf")(templateFunction.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
+      inline def printf(templateFunction: js.Function1[/* info */ TransformableInfo, String]): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("printf")(templateFunction.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @scala.inline
-      def simple(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("simple")().asInstanceOf[typings.logform.mod.Format_]
+      inline def simple(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("simple")().asInstanceOf[typings.logform.mod.Format_]
       
-      @scala.inline
-      def splat(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("splat")().asInstanceOf[typings.logform.mod.Format_]
+      inline def splat(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("splat")().asInstanceOf[typings.logform.mod.Format_]
       
-      @scala.inline
-      def timestamp(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")().asInstanceOf[typings.logform.mod.Format_]
-      @scala.inline
-      def timestamp(opts: TimestampOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
+      inline def timestamp(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")().asInstanceOf[typings.logform.mod.Format_]
+      inline def timestamp(opts: TimestampOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @scala.inline
-      def uncolorize(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")().asInstanceOf[typings.logform.mod.Format_]
-      @scala.inline
-      def uncolorize(opts: UncolorizeOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
+      inline def uncolorize(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")().asInstanceOf[typings.logform.mod.Format_]
+      inline def uncolorize(opts: UncolorizeOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
     }
     
-    @scala.inline
-    def levels(config: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("levels")(config.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def levels(config: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("levels")(config.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   }
   
   @JSImport("winston", "add")
@@ -250,23 +220,19 @@ object mod {
   @JSImport("winston", "addColors")
   @js.native
   def addColors: js.Function1[/* target */ AbstractConfigSetColors, js.Any] = js.native
-  @scala.inline
-  def addColors_=(x: js.Function1[/* target */ AbstractConfigSetColors, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addColors")(x.asInstanceOf[js.Any])
+  inline def addColors_=(x: js.Function1[/* target */ AbstractConfigSetColors, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addColors")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def add_=(x: js.Function1[/* transport */ typings.winstonTransport.mod.^, Logger]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("add")(x.asInstanceOf[js.Any])
+  inline def add_=(x: js.Function1[/* transport */ typings.winstonTransport.mod.^, Logger]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("add")(x.asInstanceOf[js.Any])
   
   @JSImport("winston", "child")
   @js.native
   def child: js.Function1[/* options */ js.Object, Logger] = js.native
-  @scala.inline
-  def child_=(x: js.Function1[/* options */ js.Object, Logger]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("child")(x.asInstanceOf[js.Any])
+  inline def child_=(x: js.Function1[/* options */ js.Object, Logger]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("child")(x.asInstanceOf[js.Any])
   
   @JSImport("winston", "clear")
   @js.native
   def clear: js.Function0[Logger] = js.native
-  @scala.inline
-  def clear_=(x: js.Function0[Logger]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clear")(x.asInstanceOf[js.Any])
+  inline def clear_=(x: js.Function0[Logger]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clear")(x.asInstanceOf[js.Any])
   
   @JSImport("winston", "config")
   @js.native
@@ -275,27 +241,23 @@ object mod {
   @JSImport("winston", "configure")
   @js.native
   def configure: js.Function1[/* options */ LoggerOptions, Unit] = js.native
-  @scala.inline
-  def configure_=(x: js.Function1[/* options */ LoggerOptions, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("configure")(x.asInstanceOf[js.Any])
+  inline def configure_=(x: js.Function1[/* options */ LoggerOptions, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("configure")(x.asInstanceOf[js.Any])
   
   @JSImport("winston", "createLogger")
   @js.native
   def createLogger: js.Function1[/* options */ js.UndefOr[LoggerOptions], Logger] = js.native
-  @scala.inline
-  def createLogger_=(x: js.Function1[/* options */ js.UndefOr[LoggerOptions], Logger]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createLogger")(x.asInstanceOf[js.Any])
+  inline def createLogger_=(x: js.Function1[/* options */ js.UndefOr[LoggerOptions], Logger]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createLogger")(x.asInstanceOf[js.Any])
   
   @JSImport("winston", "debug")
   @js.native
   def debug: LeveledLogMethod = js.native
-  @scala.inline
-  def debug_=(x: LeveledLogMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
+  inline def debug_=(x: LeveledLogMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
   
   // Pass-through npm level methods routed to the default logger.
   @JSImport("winston", "error")
   @js.native
   def error: LeveledLogMethod = js.native
-  @scala.inline
-  def error_=(x: LeveledLogMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("error")(x.asInstanceOf[js.Any])
+  inline def error_=(x: LeveledLogMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("error")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("winston", "exceptions")
@@ -327,114 +289,81 @@ object mod {
   @JSImport("winston", "exitOnError")
   @js.native
   def exitOnError: js.Function | Boolean = js.native
-  @scala.inline
-  def exitOnError_=(x: js.Function | Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exitOnError")(x.asInstanceOf[js.Any])
+  inline def exitOnError_=(x: js.Function | Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exitOnError")(x.asInstanceOf[js.Any])
   
   object format {
     
-    @scala.inline
-    def apply(transform: TransformFunction): FormatWrap = ^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any]).asInstanceOf[FormatWrap]
+    inline def apply(transform: TransformFunction): FormatWrap = ^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any]).asInstanceOf[FormatWrap]
     
     @JSImport("winston", "format")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def align(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("align")().asInstanceOf[Format_]
+    inline def align(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("align")().asInstanceOf[Format_]
     
-    @scala.inline
-    def cli(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")().asInstanceOf[Format_]
-    @scala.inline
-    def cli(opts: CliOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def cli(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")().asInstanceOf[Format_]
+    inline def cli(opts: CliOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def colorize(): Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")().asInstanceOf[Colorizer]
-    @scala.inline
-    def colorize(opts: ColorizeOptions): Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")(opts.asInstanceOf[js.Any]).asInstanceOf[Colorizer]
+    inline def colorize(): Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")().asInstanceOf[Colorizer]
+    inline def colorize(opts: ColorizeOptions): Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")(opts.asInstanceOf[js.Any]).asInstanceOf[Colorizer]
     
-    @scala.inline
-    def combine(formats: Format_ *): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(formats.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def combine(formats: Format_ *): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(formats.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def errors(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")().asInstanceOf[Format_]
-    @scala.inline
-    def errors(opts: js.Object): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def errors(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")().asInstanceOf[Format_]
+    inline def errors(opts: js.Object): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def json(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")().asInstanceOf[Format_]
-    @scala.inline
-    def json(opts: JsonOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def json(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")().asInstanceOf[Format_]
+    inline def json(opts: JsonOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def label(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")().asInstanceOf[Format_]
-    @scala.inline
-    def label(opts: LabelOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def label(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")().asInstanceOf[Format_]
+    inline def label(opts: LabelOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def logstash(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("logstash")().asInstanceOf[Format_]
+    inline def logstash(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("logstash")().asInstanceOf[Format_]
     
-    @scala.inline
-    def metadata(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")().asInstanceOf[Format_]
-    @scala.inline
-    def metadata(opts: MetadataOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def metadata(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")().asInstanceOf[Format_]
+    inline def metadata(opts: MetadataOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def ms(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("ms")().asInstanceOf[Format_]
+    inline def ms(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("ms")().asInstanceOf[Format_]
     
-    @scala.inline
-    def padLevels(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")().asInstanceOf[Format_]
-    @scala.inline
-    def padLevels(opts: PadLevelsOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def padLevels(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")().asInstanceOf[Format_]
+    inline def padLevels(opts: PadLevelsOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def prettyPrint(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")().asInstanceOf[Format_]
-    @scala.inline
-    def prettyPrint(opts: PrettyPrintOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def prettyPrint(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")().asInstanceOf[Format_]
+    inline def prettyPrint(opts: PrettyPrintOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def printf(templateFunction: js.Function1[/* info */ TransformableInfo, String]): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("printf")(templateFunction.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def printf(templateFunction: js.Function1[/* info */ TransformableInfo, String]): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("printf")(templateFunction.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def simple(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("simple")().asInstanceOf[Format_]
+    inline def simple(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("simple")().asInstanceOf[Format_]
     
-    @scala.inline
-    def splat(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("splat")().asInstanceOf[Format_]
+    inline def splat(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("splat")().asInstanceOf[Format_]
     
-    @scala.inline
-    def timestamp(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")().asInstanceOf[Format_]
-    @scala.inline
-    def timestamp(opts: TimestampOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def timestamp(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")().asInstanceOf[Format_]
+    inline def timestamp(opts: TimestampOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def uncolorize(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")().asInstanceOf[Format_]
-    @scala.inline
-    def uncolorize(opts: UncolorizeOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def uncolorize(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")().asInstanceOf[Format_]
+    inline def uncolorize(opts: UncolorizeOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
   }
   
   @JSImport("winston", "http")
   @js.native
   def http: LeveledLogMethod = js.native
-  @scala.inline
-  def http_=(x: LeveledLogMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("http")(x.asInstanceOf[js.Any])
+  inline def http_=(x: LeveledLogMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("http")(x.asInstanceOf[js.Any])
   
   @JSImport("winston", "info")
   @js.native
   def info: LeveledLogMethod = js.native
-  @scala.inline
-  def info_=(x: LeveledLogMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("info")(x.asInstanceOf[js.Any])
+  inline def info_=(x: LeveledLogMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("info")(x.asInstanceOf[js.Any])
   
   @JSImport("winston", "level")
   @js.native
   def level: String = js.native
-  @scala.inline
-  def level_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("level")(x.asInstanceOf[js.Any])
+  inline def level_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("level")(x.asInstanceOf[js.Any])
   
   // Other pass-through methods routed to the default logger.
   @JSImport("winston", "log")
   @js.native
   def log: LogMethod = js.native
-  @scala.inline
-  def log_=(x: LogMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
+  inline def log_=(x: LogMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("winston", "loggers")
@@ -447,14 +376,12 @@ object mod {
   @JSImport("winston", "loggers")
   @js.native
   def loggers: Container = js.native
-  @scala.inline
-  def loggers_=(x: Container): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loggers")(x.asInstanceOf[js.Any])
+  inline def loggers_=(x: Container): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loggers")(x.asInstanceOf[js.Any])
   
   @JSImport("winston", "profile")
   @js.native
   def profile: js.Function1[/* id */ String | Double, Logger] = js.native
-  @scala.inline
-  def profile_=(x: js.Function1[/* id */ String | Double, Logger]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("profile")(x.asInstanceOf[js.Any])
+  inline def profile_=(x: js.Function1[/* id */ String | Double, Logger]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("profile")(x.asInstanceOf[js.Any])
   
   @JSImport("winston", "query")
   @js.native
@@ -463,8 +390,7 @@ object mod {
     /* callback */ js.UndefOr[js.Function2[/* err */ Error, /* results */ js.Any, Unit]], 
     js.Any
   ] = js.native
-  @scala.inline
-  def query_=(
+  inline def query_=(
     x: js.Function2[
       /* options */ js.UndefOr[QueryOptions], 
       /* callback */ js.UndefOr[js.Function2[/* err */ Error, /* results */ js.Any, Unit]], 
@@ -475,26 +401,22 @@ object mod {
   @JSImport("winston", "remove")
   @js.native
   def remove: js.Function1[/* transport */ typings.winstonTransport.mod.^, Logger] = js.native
-  @scala.inline
-  def remove_=(x: js.Function1[/* transport */ typings.winstonTransport.mod.^, Logger]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remove")(x.asInstanceOf[js.Any])
+  inline def remove_=(x: js.Function1[/* transport */ typings.winstonTransport.mod.^, Logger]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remove")(x.asInstanceOf[js.Any])
   
   @JSImport("winston", "silly")
   @js.native
   def silly: LeveledLogMethod = js.native
-  @scala.inline
-  def silly_=(x: LeveledLogMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("silly")(x.asInstanceOf[js.Any])
+  inline def silly_=(x: LeveledLogMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("silly")(x.asInstanceOf[js.Any])
   
   @JSImport("winston", "startTimer")
   @js.native
   def startTimer: js.Function0[Profiler] = js.native
-  @scala.inline
-  def startTimer_=(x: js.Function0[Profiler]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("startTimer")(x.asInstanceOf[js.Any])
+  inline def startTimer_=(x: js.Function0[Profiler]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("startTimer")(x.asInstanceOf[js.Any])
   
   @JSImport("winston", "stream")
   @js.native
   def stream: js.Function1[/* options */ js.UndefOr[js.Any], ReadableStream] = js.native
-  @scala.inline
-  def stream_=(x: js.Function1[/* options */ js.UndefOr[js.Any], ReadableStream]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
+  inline def stream_=(x: js.Function1[/* options */ js.UndefOr[js.Any], ReadableStream]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
   
   @JSImport("winston", "transport")
   @js.native
@@ -546,20 +468,17 @@ object mod {
   @JSImport("winston", "verbose")
   @js.native
   def verbose: LeveledLogMethod = js.native
-  @scala.inline
-  def verbose_=(x: LeveledLogMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("verbose")(x.asInstanceOf[js.Any])
+  inline def verbose_=(x: LeveledLogMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("verbose")(x.asInstanceOf[js.Any])
   
   @JSImport("winston", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   @JSImport("winston", "warn")
   @js.native
   def warn: LeveledLogMethod = js.native
-  @scala.inline
-  def warn_=(x: LeveledLogMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warn")(x.asInstanceOf[js.Any])
+  inline def warn_=(x: LeveledLogMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warn")(x.asInstanceOf[js.Any])
   
   @js.native
   trait LeveledLogMethod extends StObject {
@@ -589,20 +508,16 @@ object mod {
   }
   object LogEntry {
     
-    @scala.inline
-    def apply(level: String, message: String): LogEntry = {
+    inline def apply(level: String, message: String): LogEntry = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogEntry]
     }
     
-    @scala.inline
-    implicit class LogEntryMutableBuilder[Self <: LogEntry] (val x: Self) extends AnyVal {
+    extension [Self <: LogEntry](x: Self) {
       
-      @scala.inline
-      def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -860,71 +775,50 @@ object mod {
   }
   object LoggerOptions {
     
-    @scala.inline
-    def apply(): LoggerOptions = {
+    inline def apply(): LoggerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    @scala.inline
-    implicit class LoggerOptionsMutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultMeta(value: js.Any): Self = StObject.set(x, "defaultMeta", value.asInstanceOf[js.Any])
+      inline def setDefaultMeta(value: js.Any): Self = StObject.set(x, "defaultMeta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultMetaUndefined: Self = StObject.set(x, "defaultMeta", js.undefined)
+      inline def setDefaultMetaUndefined: Self = StObject.set(x, "defaultMeta", js.undefined)
       
-      @scala.inline
-      def setExceptionHandlers(value: js.Any): Self = StObject.set(x, "exceptionHandlers", value.asInstanceOf[js.Any])
+      inline def setExceptionHandlers(value: js.Any): Self = StObject.set(x, "exceptionHandlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExceptionHandlersUndefined: Self = StObject.set(x, "exceptionHandlers", js.undefined)
+      inline def setExceptionHandlersUndefined: Self = StObject.set(x, "exceptionHandlers", js.undefined)
       
-      @scala.inline
-      def setExitOnError(value: js.Function | Boolean): Self = StObject.set(x, "exitOnError", value.asInstanceOf[js.Any])
+      inline def setExitOnError(value: js.Function | Boolean): Self = StObject.set(x, "exitOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitOnErrorUndefined: Self = StObject.set(x, "exitOnError", js.undefined)
+      inline def setExitOnErrorUndefined: Self = StObject.set(x, "exitOnError", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Format_): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Format_): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setHandleExceptions(value: Boolean): Self = StObject.set(x, "handleExceptions", value.asInstanceOf[js.Any])
+      inline def setHandleExceptions(value: Boolean): Self = StObject.set(x, "handleExceptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleExceptionsUndefined: Self = StObject.set(x, "handleExceptions", js.undefined)
+      inline def setHandleExceptionsUndefined: Self = StObject.set(x, "handleExceptions", js.undefined)
       
-      @scala.inline
-      def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setLevels(value: AbstractConfigSetLevels): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+      inline def setLevels(value: AbstractConfigSetLevels): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+      inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
       
-      @scala.inline
-      def setTransports(value: js.Array[typings.winstonTransport.mod.^] | typings.winstonTransport.mod.^): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
+      inline def setTransports(value: js.Array[typings.winstonTransport.mod.^] | typings.winstonTransport.mod.^): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
+      inline def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
       
-      @scala.inline
-      def setTransportsVarargs(value: typings.winstonTransport.mod.^ *): Self = StObject.set(x, "transports", js.Array(value :_*))
+      inline def setTransportsVarargs(value: typings.winstonTransport.mod.^ *): Self = StObject.set(x, "transports", js.Array(value :_*))
     }
   }
   
@@ -957,53 +851,38 @@ object mod {
   }
   object QueryOptions {
     
-    @scala.inline
-    def apply(fields: js.Any): QueryOptions = {
+    inline def apply(fields: js.Any): QueryOptions = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryOptions]
     }
     
-    @scala.inline
-    implicit class QueryOptionsMutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: QueryOptions](x: Self) {
       
-      @scala.inline
-      def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom(value: Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setOrder(value: asc | desc): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: asc | desc): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+      inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setUntil(value: Date): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
+      inline def setUntil(value: Date): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUntilUndefined: Self = StObject.set(x, "until", js.undefined)
+      inline def setUntilUndefined: Self = StObject.set(x, "until", js.undefined)
     }
   }
 }

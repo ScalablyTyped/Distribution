@@ -33,8 +33,7 @@ trait ASPxClientUploadControlValidationErrorOccurredEventArgs
 }
 object ASPxClientUploadControlValidationErrorOccurredEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorText: String,
     invalidFiles: js.Array[ASPxClientUploadControlInvalidFileInfo],
     showAlert: Boolean,
@@ -44,22 +43,16 @@ object ASPxClientUploadControlValidationErrorOccurredEventArgs {
     __obj.asInstanceOf[ASPxClientUploadControlValidationErrorOccurredEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientUploadControlValidationErrorOccurredEventArgsMutableBuilder[Self <: ASPxClientUploadControlValidationErrorOccurredEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientUploadControlValidationErrorOccurredEventArgs](x: Self) {
     
-    @scala.inline
-    def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
+    inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidFiles(value: js.Array[ASPxClientUploadControlInvalidFileInfo]): Self = StObject.set(x, "invalidFiles", value.asInstanceOf[js.Any])
+    inline def setInvalidFiles(value: js.Array[ASPxClientUploadControlInvalidFileInfo]): Self = StObject.set(x, "invalidFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidFilesVarargs(value: ASPxClientUploadControlInvalidFileInfo*): Self = StObject.set(x, "invalidFiles", js.Array(value :_*))
+    inline def setInvalidFilesVarargs(value: ASPxClientUploadControlInvalidFileInfo*): Self = StObject.set(x, "invalidFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setShowAlert(value: Boolean): Self = StObject.set(x, "showAlert", value.asInstanceOf[js.Any])
+    inline def setShowAlert(value: Boolean): Self = StObject.set(x, "showAlert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationSettings(value: ASPxClientUploadControlValidationSettings): Self = StObject.set(x, "validationSettings", value.asInstanceOf[js.Any])
+    inline def setValidationSettings(value: ASPxClientUploadControlValidationSettings): Self = StObject.set(x, "validationSettings", value.asInstanceOf[js.Any])
   }
 }

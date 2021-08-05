@@ -18,8 +18,7 @@ trait ParametersReposUpdateEndpoint extends StObject {
 }
 object ParametersReposUpdateEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposUpdateEndpoint,
     request: ReposUpdateRequestOptions,
     response: OctokitResponse[ReposUpdateResponseData]
@@ -28,16 +27,12 @@ object ParametersReposUpdateEndpoint {
     __obj.asInstanceOf[ParametersReposUpdateEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposUpdateEndpointMutableBuilder[Self <: ParametersReposUpdateEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposUpdateEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposUpdateEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposUpdateEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposUpdateRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposUpdateRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposUpdateResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposUpdateResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

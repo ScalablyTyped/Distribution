@@ -178,10 +178,8 @@ object mod {
   @js.native
   val ptbr: js.Array[String] = js.native
   
-  @scala.inline
-  def removeStopwords(text: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStopwords")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def removeStopwords(text: js.Array[String], stopwords: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeStopwords")(text.asInstanceOf[js.Any], stopwords.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def removeStopwords(text: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStopwords")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def removeStopwords(text: js.Array[String], stopwords: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeStopwords")(text.asInstanceOf[js.Any], stopwords.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   @JSImport("stopword", "ro")
   @js.native

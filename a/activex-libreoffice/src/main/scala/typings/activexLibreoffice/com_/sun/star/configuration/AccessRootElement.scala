@@ -40,8 +40,7 @@ trait AccessRootElement
      with XLocalizable
 object AccessRootElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AsProperty: Property,
     DefaultAsProperty: XInterface,
     HierarchicalName: String,

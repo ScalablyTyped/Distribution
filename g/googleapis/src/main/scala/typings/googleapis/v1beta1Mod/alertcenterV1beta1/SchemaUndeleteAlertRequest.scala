@@ -18,19 +18,15 @@ trait SchemaUndeleteAlertRequest extends StObject {
 }
 object SchemaUndeleteAlertRequest {
   
-  @scala.inline
-  def apply(): SchemaUndeleteAlertRequest = {
+  inline def apply(): SchemaUndeleteAlertRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUndeleteAlertRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUndeleteAlertRequestMutableBuilder[Self <: SchemaUndeleteAlertRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUndeleteAlertRequest](x: Self) {
     
-    @scala.inline
-    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
   }
 }

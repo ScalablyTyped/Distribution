@@ -18,25 +18,19 @@ trait ListFunctionDefinitionsRequest extends StObject {
 }
 object ListFunctionDefinitionsRequest {
   
-  @scala.inline
-  def apply(): ListFunctionDefinitionsRequest = {
+  inline def apply(): ListFunctionDefinitionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFunctionDefinitionsRequest]
   }
   
-  @scala.inline
-  implicit class ListFunctionDefinitionsRequestMutableBuilder[Self <: ListFunctionDefinitionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListFunctionDefinitionsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -41,52 +41,37 @@ trait ActionSheetOptions
 }
 object ActionSheetOptions {
   
-  @scala.inline
-  def apply(items: js.Array[String]): ActionSheetOptions = {
+  inline def apply(items: js.Array[String]): ActionSheetOptions = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionSheetOptions]
   }
   
-  @scala.inline
-  implicit class ActionSheetOptionsMutableBuilder[Self <: ActionSheetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ActionSheetOptions](x: Self) {
     
-    @scala.inline
-    def setBadges(value: js.Array[PartialBadge]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
+    inline def setBadges(value: js.Array[PartialBadge]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgesUndefined: Self = StObject.set(x, "badges", js.undefined)
+    inline def setBadgesUndefined: Self = StObject.set(x, "badges", js.undefined)
     
-    @scala.inline
-    def setBadgesVarargs(value: PartialBadge*): Self = StObject.set(x, "badges", js.Array(value :_*))
+    inline def setBadgesVarargs(value: PartialBadge*): Self = StObject.set(x, "badges", js.Array(value :_*))
     
-    @scala.inline
-    def setCancelButtonText(value: String): Self = StObject.set(x, "cancelButtonText", value.asInstanceOf[js.Any])
+    inline def setCancelButtonText(value: String): Self = StObject.set(x, "cancelButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelButtonTextUndefined: Self = StObject.set(x, "cancelButtonText", js.undefined)
+    inline def setCancelButtonTextUndefined: Self = StObject.set(x, "cancelButtonText", js.undefined)
     
-    @scala.inline
-    def setDestructiveBtnIndex(value: Double): Self = StObject.set(x, "destructiveBtnIndex", value.asInstanceOf[js.Any])
+    inline def setDestructiveBtnIndex(value: Double): Self = StObject.set(x, "destructiveBtnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestructiveBtnIndexUndefined: Self = StObject.set(x, "destructiveBtnIndex", js.undefined)
+    inline def setDestructiveBtnIndexUndefined: Self = StObject.set(x, "destructiveBtnIndex", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: /* res */ Index => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ Index => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -63,79 +63,55 @@ trait CACertificateDescription extends StObject {
 }
 object CACertificateDescription {
   
-  @scala.inline
-  def apply(): CACertificateDescription = {
+  inline def apply(): CACertificateDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CACertificateDescription]
   }
   
-  @scala.inline
-  implicit class CACertificateDescriptionMutableBuilder[Self <: CACertificateDescription] (val x: Self) extends AnyVal {
+  extension [Self <: CACertificateDescription](x: Self) {
     
-    @scala.inline
-    def setAutoRegistrationStatus(value: AutoRegistrationStatus): Self = StObject.set(x, "autoRegistrationStatus", value.asInstanceOf[js.Any])
+    inline def setAutoRegistrationStatus(value: AutoRegistrationStatus): Self = StObject.set(x, "autoRegistrationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRegistrationStatusUndefined: Self = StObject.set(x, "autoRegistrationStatus", js.undefined)
+    inline def setAutoRegistrationStatusUndefined: Self = StObject.set(x, "autoRegistrationStatus", js.undefined)
     
-    @scala.inline
-    def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
+    inline def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
     
-    @scala.inline
-    def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
+    inline def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
     
-    @scala.inline
-    def setCertificatePem(value: CertificatePem): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
+    inline def setCertificatePem(value: CertificatePem): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatePemUndefined: Self = StObject.set(x, "certificatePem", js.undefined)
+    inline def setCertificatePemUndefined: Self = StObject.set(x, "certificatePem", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setCustomerVersion(value: CustomerVersion): Self = StObject.set(x, "customerVersion", value.asInstanceOf[js.Any])
+    inline def setCustomerVersion(value: CustomerVersion): Self = StObject.set(x, "customerVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerVersionUndefined: Self = StObject.set(x, "customerVersion", js.undefined)
+    inline def setCustomerVersionUndefined: Self = StObject.set(x, "customerVersion", js.undefined)
     
-    @scala.inline
-    def setGenerationId(value: GenerationId): Self = StObject.set(x, "generationId", value.asInstanceOf[js.Any])
+    inline def setGenerationId(value: GenerationId): Self = StObject.set(x, "generationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationIdUndefined: Self = StObject.set(x, "generationId", js.undefined)
+    inline def setGenerationIdUndefined: Self = StObject.set(x, "generationId", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDate(value: DateType): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setOwnedBy(value: AwsAccountId): Self = StObject.set(x, "ownedBy", value.asInstanceOf[js.Any])
+    inline def setOwnedBy(value: AwsAccountId): Self = StObject.set(x, "ownedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnedByUndefined: Self = StObject.set(x, "ownedBy", js.undefined)
+    inline def setOwnedByUndefined: Self = StObject.set(x, "ownedBy", js.undefined)
     
-    @scala.inline
-    def setStatus(value: CACertificateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: CACertificateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setValidity(value: CertificateValidity): Self = StObject.set(x, "validity", value.asInstanceOf[js.Any])
+    inline def setValidity(value: CertificateValidity): Self = StObject.set(x, "validity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidityUndefined: Self = StObject.set(x, "validity", js.undefined)
+    inline def setValidityUndefined: Self = StObject.set(x, "validity", js.undefined)
   }
 }

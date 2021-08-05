@@ -31,8 +31,7 @@ trait XDynamicResultSetListener
 }
 object XDynamicResultSetListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     notify_ : ListEvent => Unit,
@@ -44,10 +43,8 @@ object XDynamicResultSetListener {
     __obj.asInstanceOf[XDynamicResultSetListener]
   }
   
-  @scala.inline
-  implicit class XDynamicResultSetListenerMutableBuilder[Self <: XDynamicResultSetListener] (val x: Self) extends AnyVal {
+  extension [Self <: XDynamicResultSetListener](x: Self) {
     
-    @scala.inline
-    def setNotify_(value: ListEvent => Unit): Self = StObject.set(x, "notify", js.Any.fromFunction1(value))
+    inline def setNotify_(value: ListEvent => Unit): Self = StObject.set(x, "notify", js.Any.fromFunction1(value))
   }
 }

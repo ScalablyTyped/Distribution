@@ -13,16 +13,13 @@ trait DeleteFileSystemPolicyRequest extends StObject {
 }
 object DeleteFileSystemPolicyRequest {
   
-  @scala.inline
-  def apply(FileSystemId: FileSystemId): DeleteFileSystemPolicyRequest = {
+  inline def apply(FileSystemId: FileSystemId): DeleteFileSystemPolicyRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFileSystemPolicyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFileSystemPolicyRequestMutableBuilder[Self <: DeleteFileSystemPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFileSystemPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
   }
 }

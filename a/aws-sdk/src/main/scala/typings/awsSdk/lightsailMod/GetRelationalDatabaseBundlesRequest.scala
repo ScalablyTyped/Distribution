@@ -13,19 +13,15 @@ trait GetRelationalDatabaseBundlesRequest extends StObject {
 }
 object GetRelationalDatabaseBundlesRequest {
   
-  @scala.inline
-  def apply(): GetRelationalDatabaseBundlesRequest = {
+  inline def apply(): GetRelationalDatabaseBundlesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRelationalDatabaseBundlesRequest]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabaseBundlesRequestMutableBuilder[Self <: GetRelationalDatabaseBundlesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabaseBundlesRequest](x: Self) {
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

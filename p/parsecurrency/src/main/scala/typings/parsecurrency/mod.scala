@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(currency: String): ParsedCurrency = ^.asInstanceOf[js.Dynamic].apply(currency.asInstanceOf[js.Any]).asInstanceOf[ParsedCurrency]
+  inline def apply(currency: String): ParsedCurrency = ^.asInstanceOf[js.Dynamic].apply(currency.asInstanceOf[js.Any]).asInstanceOf[ParsedCurrency]
   
   @JSImport("parsecurrency", JSImport.Namespace)
   @js.native
@@ -33,8 +32,7 @@ object mod {
   }
   object ParsedCurrency {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currency: String,
       decimalSeparator: String,
       decimals: String,
@@ -48,32 +46,23 @@ object mod {
       __obj.asInstanceOf[ParsedCurrency]
     }
     
-    @scala.inline
-    implicit class ParsedCurrencyMutableBuilder[Self <: ParsedCurrency] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedCurrency](x: Self) {
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
+      inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimals(value: String): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+      inline def setDecimals(value: String): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupSeparator(value: String): Self = StObject.set(x, "groupSeparator", value.asInstanceOf[js.Any])
+      inline def setGroupSeparator(value: String): Self = StObject.set(x, "groupSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteger(value: String): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
+      inline def setInteger(value: String): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

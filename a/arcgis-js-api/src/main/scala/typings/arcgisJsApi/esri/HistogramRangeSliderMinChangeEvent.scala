@@ -15,23 +15,18 @@ trait HistogramRangeSliderMinChangeEvent extends StObject {
 }
 object HistogramRangeSliderMinChangeEvent {
   
-  @scala.inline
-  def apply(oldValue: Double, value: Double): HistogramRangeSliderMinChangeEvent = {
+  inline def apply(oldValue: Double, value: Double): HistogramRangeSliderMinChangeEvent = {
     val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("min-change")
     __obj.asInstanceOf[HistogramRangeSliderMinChangeEvent]
   }
   
-  @scala.inline
-  implicit class HistogramRangeSliderMinChangeEventMutableBuilder[Self <: HistogramRangeSliderMinChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: HistogramRangeSliderMinChangeEvent](x: Self) {
     
-    @scala.inline
-    def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `min-change`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `min-change`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

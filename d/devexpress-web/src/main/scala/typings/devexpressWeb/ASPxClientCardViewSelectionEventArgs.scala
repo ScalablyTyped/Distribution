@@ -33,8 +33,7 @@ trait ASPxClientCardViewSelectionEventArgs
 }
 object ASPxClientCardViewSelectionEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isAllRecordsOnPage: Boolean,
     isChangedOnServer: Boolean,
     isSelected: Boolean,
@@ -45,19 +44,14 @@ object ASPxClientCardViewSelectionEventArgs {
     __obj.asInstanceOf[ASPxClientCardViewSelectionEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCardViewSelectionEventArgsMutableBuilder[Self <: ASPxClientCardViewSelectionEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCardViewSelectionEventArgs](x: Self) {
     
-    @scala.inline
-    def setIsAllRecordsOnPage(value: Boolean): Self = StObject.set(x, "isAllRecordsOnPage", value.asInstanceOf[js.Any])
+    inline def setIsAllRecordsOnPage(value: Boolean): Self = StObject.set(x, "isAllRecordsOnPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsChangedOnServer(value: Boolean): Self = StObject.set(x, "isChangedOnServer", value.asInstanceOf[js.Any])
+    inline def setIsChangedOnServer(value: Boolean): Self = StObject.set(x, "isChangedOnServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+    inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }
 }

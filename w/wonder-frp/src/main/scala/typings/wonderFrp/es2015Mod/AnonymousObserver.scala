@@ -19,6 +19,5 @@ object AnonymousObserver {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(onNext: js.Function, onError: js.Function, onCompleted: js.Function): typings.wonderFrp.observerAnonymousObserverMod.AnonymousObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompleted.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.observerAnonymousObserverMod.AnonymousObserver]
+  inline def create(onNext: js.Function, onError: js.Function, onCompleted: js.Function): typings.wonderFrp.observerAnonymousObserverMod.AnonymousObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(onNext.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onCompleted.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.observerAnonymousObserverMod.AnonymousObserver]
 }

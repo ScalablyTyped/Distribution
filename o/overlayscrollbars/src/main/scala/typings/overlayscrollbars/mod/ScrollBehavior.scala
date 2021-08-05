@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScrollBehavior extends StObject
 object ScrollBehavior {
   
-  @scala.inline
-  def always: typings.overlayscrollbars.overlayscrollbarsStrings.always = "always".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.always]
+  inline def always: typings.overlayscrollbars.overlayscrollbarsStrings.always = "always".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.always]
   
-  @scala.inline
-  def ifneeded: typings.overlayscrollbars.overlayscrollbarsStrings.ifneeded = "ifneeded".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.ifneeded]
+  inline def ifneeded: typings.overlayscrollbars.overlayscrollbarsStrings.ifneeded = "ifneeded".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.ifneeded]
   
-  @scala.inline
-  def never: typings.overlayscrollbars.overlayscrollbarsStrings.never = "never".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.never]
+  inline def never: typings.overlayscrollbars.overlayscrollbarsStrings.never = "never".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.never]
 }

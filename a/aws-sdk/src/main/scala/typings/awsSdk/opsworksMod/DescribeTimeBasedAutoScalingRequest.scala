@@ -13,19 +13,15 @@ trait DescribeTimeBasedAutoScalingRequest extends StObject {
 }
 object DescribeTimeBasedAutoScalingRequest {
   
-  @scala.inline
-  def apply(InstanceIds: Strings): DescribeTimeBasedAutoScalingRequest = {
+  inline def apply(InstanceIds: Strings): DescribeTimeBasedAutoScalingRequest = {
     val __obj = js.Dynamic.literal(InstanceIds = InstanceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTimeBasedAutoScalingRequest]
   }
   
-  @scala.inline
-  implicit class DescribeTimeBasedAutoScalingRequestMutableBuilder[Self <: DescribeTimeBasedAutoScalingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTimeBasedAutoScalingRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceIds(value: Strings): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
+    inline def setInstanceIds(value: Strings): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdsVarargs(value: String*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
+    inline def setInstanceIdsVarargs(value: String*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
   }
 }

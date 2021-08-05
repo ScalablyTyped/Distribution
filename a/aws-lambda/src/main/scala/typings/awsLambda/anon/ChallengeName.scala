@@ -20,8 +20,7 @@ trait ChallengeName extends StObject {
 }
 object ChallengeName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     challengeName: String,
     session: js.Array[typings.awsLambda.commonMod.ChallengeResult | CustomChallengeResult],
     userAttributes: StringMap
@@ -30,31 +29,22 @@ object ChallengeName {
     __obj.asInstanceOf[ChallengeName]
   }
   
-  @scala.inline
-  implicit class ChallengeNameMutableBuilder[Self <: ChallengeName] (val x: Self) extends AnyVal {
+  extension [Self <: ChallengeName](x: Self) {
     
-    @scala.inline
-    def setChallengeName(value: String): Self = StObject.set(x, "challengeName", value.asInstanceOf[js.Any])
+    inline def setChallengeName(value: String): Self = StObject.set(x, "challengeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadata(value: StringMap): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
+    inline def setClientMetadata(value: StringMap): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadataUndefined: Self = StObject.set(x, "clientMetadata", js.undefined)
+    inline def setClientMetadataUndefined: Self = StObject.set(x, "clientMetadata", js.undefined)
     
-    @scala.inline
-    def setSession(value: js.Array[typings.awsLambda.commonMod.ChallengeResult | CustomChallengeResult]): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: js.Array[typings.awsLambda.commonMod.ChallengeResult | CustomChallengeResult]): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionVarargs(value: (typings.awsLambda.commonMod.ChallengeResult | CustomChallengeResult)*): Self = StObject.set(x, "session", js.Array(value :_*))
+    inline def setSessionVarargs(value: (typings.awsLambda.commonMod.ChallengeResult | CustomChallengeResult)*): Self = StObject.set(x, "session", js.Array(value :_*))
     
-    @scala.inline
-    def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
+    inline def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNotFound(value: Boolean): Self = StObject.set(x, "userNotFound", value.asInstanceOf[js.Any])
+    inline def setUserNotFound(value: Boolean): Self = StObject.set(x, "userNotFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNotFoundUndefined: Self = StObject.set(x, "userNotFound", js.undefined)
+    inline def setUserNotFoundUndefined: Self = StObject.set(x, "userNotFound", js.undefined)
   }
 }

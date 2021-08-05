@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FieldType extends StObject
 object FieldType {
   
-  @scala.inline
-  def Instance: `2` = 2.asInstanceOf[`2`]
+  inline def Instance: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Static: `1` = 1.asInstanceOf[`1`]
+  inline def Static: `1` = 1.asInstanceOf[`1`]
 }

@@ -14,19 +14,15 @@ trait ConfigEventEmitter extends StObject {
 }
 object ConfigEventEmitter {
   
-  @scala.inline
-  def apply(config: IPlayerConfig, eventEmitter: IEventEmitter): ConfigEventEmitter = {
+  inline def apply(config: IPlayerConfig, eventEmitter: IEventEmitter): ConfigEventEmitter = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], eventEmitter = eventEmitter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigEventEmitter]
   }
   
-  @scala.inline
-  implicit class ConfigEventEmitterMutableBuilder[Self <: ConfigEventEmitter] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigEventEmitter](x: Self) {
     
-    @scala.inline
-    def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
+    inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
   }
 }

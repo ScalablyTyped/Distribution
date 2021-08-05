@@ -10,8 +10,7 @@ trait ListBackupsOutput
      with typings.awsSdkClientDynamodbNode.typesListBackupsOutputMod.ListBackupsOutput
 object ListBackupsOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ListBackupsOutput = {
+  inline def apply($metadata: ResponseMetadata): ListBackupsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBackupsOutput]
   }

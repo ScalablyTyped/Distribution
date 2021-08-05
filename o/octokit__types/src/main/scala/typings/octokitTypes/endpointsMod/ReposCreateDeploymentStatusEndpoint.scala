@@ -63,8 +63,7 @@ trait ReposCreateDeploymentStatusEndpoint extends StObject {
 }
 object ReposCreateDeploymentStatusEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deployment_id: Double,
     owner: String,
     repo: String,
@@ -74,55 +73,38 @@ object ReposCreateDeploymentStatusEndpoint {
     __obj.asInstanceOf[ReposCreateDeploymentStatusEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposCreateDeploymentStatusEndpointMutableBuilder[Self <: ReposCreateDeploymentStatusEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposCreateDeploymentStatusEndpoint](x: Self) {
     
-    @scala.inline
-    def setAuto_inactive(value: Boolean): Self = StObject.set(x, "auto_inactive", value.asInstanceOf[js.Any])
+    inline def setAuto_inactive(value: Boolean): Self = StObject.set(x, "auto_inactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuto_inactiveUndefined: Self = StObject.set(x, "auto_inactive", js.undefined)
+    inline def setAuto_inactiveUndefined: Self = StObject.set(x, "auto_inactive", js.undefined)
     
-    @scala.inline
-    def setDeployment_id(value: Double): Self = StObject.set(x, "deployment_id", value.asInstanceOf[js.Any])
+    inline def setDeployment_id(value: Double): Self = StObject.set(x, "deployment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEnvironment(value: production | staging | qa): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: production | staging | qa): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setEnvironment_url(value: String): Self = StObject.set(x, "environment_url", value.asInstanceOf[js.Any])
+    inline def setEnvironment_url(value: String): Self = StObject.set(x, "environment_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironment_urlUndefined: Self = StObject.set(x, "environment_url", js.undefined)
+    inline def setEnvironment_urlUndefined: Self = StObject.set(x, "environment_url", js.undefined)
     
-    @scala.inline
-    def setLog_url(value: String): Self = StObject.set(x, "log_url", value.asInstanceOf[js.Any])
+    inline def setLog_url(value: String): Self = StObject.set(x, "log_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog_urlUndefined: Self = StObject.set(x, "log_url", js.undefined)
+    inline def setLog_urlUndefined: Self = StObject.set(x, "log_url", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: error | failure | inactive | in_progress | queued | pending | success): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: error | failure | inactive | in_progress | queued | pending | success): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget_url(value: String): Self = StObject.set(x, "target_url", value.asInstanceOf[js.Any])
+    inline def setTarget_url(value: String): Self = StObject.set(x, "target_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget_urlUndefined: Self = StObject.set(x, "target_url", js.undefined)
+    inline def setTarget_urlUndefined: Self = StObject.set(x, "target_url", js.undefined)
   }
 }

@@ -49,31 +49,23 @@ trait SchemaTimestampOperatorOptions extends StObject {
 }
 object SchemaTimestampOperatorOptions {
   
-  @scala.inline
-  def apply(): SchemaTimestampOperatorOptions = {
+  inline def apply(): SchemaTimestampOperatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTimestampOperatorOptions]
   }
   
-  @scala.inline
-  implicit class SchemaTimestampOperatorOptionsMutableBuilder[Self <: SchemaTimestampOperatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTimestampOperatorOptions](x: Self) {
     
-    @scala.inline
-    def setGreaterThanOperatorName(value: String): Self = StObject.set(x, "greaterThanOperatorName", value.asInstanceOf[js.Any])
+    inline def setGreaterThanOperatorName(value: String): Self = StObject.set(x, "greaterThanOperatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreaterThanOperatorNameUndefined: Self = StObject.set(x, "greaterThanOperatorName", js.undefined)
+    inline def setGreaterThanOperatorNameUndefined: Self = StObject.set(x, "greaterThanOperatorName", js.undefined)
     
-    @scala.inline
-    def setLessThanOperatorName(value: String): Self = StObject.set(x, "lessThanOperatorName", value.asInstanceOf[js.Any])
+    inline def setLessThanOperatorName(value: String): Self = StObject.set(x, "lessThanOperatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLessThanOperatorNameUndefined: Self = StObject.set(x, "lessThanOperatorName", js.undefined)
+    inline def setLessThanOperatorNameUndefined: Self = StObject.set(x, "lessThanOperatorName", js.undefined)
     
-    @scala.inline
-    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
+    inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
+    inline def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
   }
 }

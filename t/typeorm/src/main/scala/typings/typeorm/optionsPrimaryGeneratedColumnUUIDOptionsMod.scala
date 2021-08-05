@@ -20,26 +20,20 @@ object optionsPrimaryGeneratedColumnUUIDOptionsMod {
   }
   object PrimaryGeneratedColumnUUIDOptions {
     
-    @scala.inline
-    def apply(): PrimaryGeneratedColumnUUIDOptions = {
+    inline def apply(): PrimaryGeneratedColumnUUIDOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PrimaryGeneratedColumnUUIDOptions]
     }
     
-    @scala.inline
-    implicit class PrimaryGeneratedColumnUUIDOptionsMutableBuilder[Self <: PrimaryGeneratedColumnUUIDOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PrimaryGeneratedColumnUUIDOptions](x: Self) {
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

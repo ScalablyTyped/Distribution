@@ -73,35 +73,25 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def access(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def access(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def alt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def alt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def ctrl(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ctrl(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def ctrlShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ctrlShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def primary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def primary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def primaryAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def primaryAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def primaryShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def primaryShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def secondary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def secondary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def shift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def shift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def shiftAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def shiftAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object displayShortcutList {
@@ -110,35 +100,25 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def access(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def access(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def alt(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def alt(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def ctrl(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def ctrl(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def ctrlShift(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def ctrlShift(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def primary(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def primary(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def primaryAlt(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def primaryAlt(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def primaryShift(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def primaryShift(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def secondary(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def secondary(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def shift(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def shift(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def shiftAlt(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def shiftAlt(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
   
   object isKeyboardEvent {
@@ -147,35 +127,25 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def access(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("access")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def access(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("access")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def alt(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("alt")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def alt(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("alt")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def ctrl(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ctrl(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def ctrlShift(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ctrlShift(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def primary(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("primary")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def primary(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("primary")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def primaryAlt(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def primaryAlt(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def primaryShift(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def primaryShift(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def secondary(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def secondary(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def shift(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shift")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shift(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shift")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def shiftAlt(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shiftAlt(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   object modifiers {
@@ -184,35 +154,25 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def access(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def access(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def alt(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")().asInstanceOf[js.Array[String]]
+    inline def alt(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")().asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def ctrl(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")().asInstanceOf[js.Array[String]]
+    inline def ctrl(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")().asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def ctrlShift(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")().asInstanceOf[js.Array[String]]
+    inline def ctrlShift(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")().asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def primary(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def primary(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def primaryAlt(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def primaryAlt(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def primaryShift(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def primaryShift(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def secondary(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def secondary(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def shift(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")().asInstanceOf[js.Array[String]]
+    inline def shift(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")().asInstanceOf[js.Array[String]]
     
-    @scala.inline
-    def shiftAlt(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")().asInstanceOf[js.Array[String]]
+    inline def shiftAlt(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")().asInstanceOf[js.Array[String]]
   }
   
   object rawShortcut {
@@ -221,35 +181,25 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def access(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def access(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def alt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def alt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def ctrl(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ctrl(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def ctrlShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ctrlShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def primary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def primary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def primaryAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def primaryAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def primaryShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def primaryShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def secondary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def secondary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def shift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def shift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def shiftAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def shiftAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object shortcutAriaLabel {
@@ -258,34 +208,24 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def access(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def access(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def alt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def alt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def ctrl(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ctrl(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def ctrlShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ctrlShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def primary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def primary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def primaryAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def primaryAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def primaryShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def primaryShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def secondary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def secondary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def shift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def shift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def shiftAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def shiftAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

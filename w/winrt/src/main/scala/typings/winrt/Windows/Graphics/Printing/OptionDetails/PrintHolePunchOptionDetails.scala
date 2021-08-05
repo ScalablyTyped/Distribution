@@ -10,8 +10,7 @@ trait PrintHolePunchOptionDetails
      with IPrintItemListOptionDetails
 object PrintHolePunchOptionDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorText: String,
     items: IVectorView[js.Any],
     optionId: String,

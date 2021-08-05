@@ -41,51 +41,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoBalloonButtonType extends StObject
 object MsoBalloonButtonType {
   
-  @scala.inline
-  def msoBalloonButtonAbort: `-8` = -8.asInstanceOf[`-8`]
+  inline def msoBalloonButtonAbort: `-8` = -8.asInstanceOf[`-8`]
   
-  @scala.inline
-  def msoBalloonButtonBack: `-5` = -5.asInstanceOf[`-5`]
+  inline def msoBalloonButtonBack: `-5` = -5.asInstanceOf[`-5`]
   
-  @scala.inline
-  def msoBalloonButtonCancel: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoBalloonButtonCancel: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoBalloonButtonClose: `-12` = -12.asInstanceOf[`-12`]
+  inline def msoBalloonButtonClose: `-12` = -12.asInstanceOf[`-12`]
   
-  @scala.inline
-  def msoBalloonButtonIgnore: `-9` = -9.asInstanceOf[`-9`]
+  inline def msoBalloonButtonIgnore: `-9` = -9.asInstanceOf[`-9`]
   
-  @scala.inline
-  def msoBalloonButtonNext: `-6` = -6.asInstanceOf[`-6`]
+  inline def msoBalloonButtonNext: `-6` = -6.asInstanceOf[`-6`]
   
-  @scala.inline
-  def msoBalloonButtonNo: `-4` = -4.asInstanceOf[`-4`]
+  inline def msoBalloonButtonNo: `-4` = -4.asInstanceOf[`-4`]
   
-  @scala.inline
-  def msoBalloonButtonNull: `0` = 0.asInstanceOf[`0`]
+  inline def msoBalloonButtonNull: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoBalloonButtonOK: `-1` = -1.asInstanceOf[`-1`]
+  inline def msoBalloonButtonOK: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def msoBalloonButtonOptions: `-14` = -14.asInstanceOf[`-14`]
+  inline def msoBalloonButtonOptions: `-14` = -14.asInstanceOf[`-14`]
   
-  @scala.inline
-  def msoBalloonButtonRetry: `-7` = -7.asInstanceOf[`-7`]
+  inline def msoBalloonButtonRetry: `-7` = -7.asInstanceOf[`-7`]
   
-  @scala.inline
-  def msoBalloonButtonSearch: `-10` = -10.asInstanceOf[`-10`]
+  inline def msoBalloonButtonSearch: `-10` = -10.asInstanceOf[`-10`]
   
-  @scala.inline
-  def msoBalloonButtonSnooze: `-11` = -11.asInstanceOf[`-11`]
+  inline def msoBalloonButtonSnooze: `-11` = -11.asInstanceOf[`-11`]
   
-  @scala.inline
-  def msoBalloonButtonTips: `-13` = -13.asInstanceOf[`-13`]
+  inline def msoBalloonButtonTips: `-13` = -13.asInstanceOf[`-13`]
   
-  @scala.inline
-  def msoBalloonButtonYes: `-3` = -3.asInstanceOf[`-3`]
+  inline def msoBalloonButtonYes: `-3` = -3.asInstanceOf[`-3`]
   
-  @scala.inline
-  def msoBalloonButtonYesToAll: `-15` = -15.asInstanceOf[`-15`]
+  inline def msoBalloonButtonYesToAll: `-15` = -15.asInstanceOf[`-15`]
 }

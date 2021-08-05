@@ -22,8 +22,7 @@ trait IWorkflow extends StObject {
 }
 object IWorkflow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IWorkflow,
     GetAsLookup: () => ILookup,
     GetAsTypedValue: () => ITypedValue,
@@ -35,25 +34,18 @@ object IWorkflow {
     __obj.asInstanceOf[IWorkflow]
   }
   
-  @scala.inline
-  implicit class IWorkflowMutableBuilder[Self <: IWorkflow] (val x: Self) extends AnyVal {
+  extension [Self <: IWorkflow](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IWorkflow): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IWorkflow): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAsLookup(value: () => ILookup): Self = StObject.set(x, "GetAsLookup", js.Any.fromFunction0(value))
+    inline def setGetAsLookup(value: () => ILookup): Self = StObject.set(x, "GetAsLookup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAsTypedValue(value: () => ITypedValue): Self = StObject.set(x, "GetAsTypedValue", js.Any.fromFunction0(value))
+    inline def setGetAsTypedValue(value: () => ITypedValue): Self = StObject.set(x, "GetAsTypedValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectClass(value: MFBuiltInDocumentClass | MFBuiltInObjectClass | Double): Self = StObject.set(x, "ObjectClass", value.asInstanceOf[js.Any])
+    inline def setObjectClass(value: MFBuiltInDocumentClass | MFBuiltInObjectClass | Double): Self = StObject.set(x, "ObjectClass", value.asInstanceOf[js.Any])
   }
 }

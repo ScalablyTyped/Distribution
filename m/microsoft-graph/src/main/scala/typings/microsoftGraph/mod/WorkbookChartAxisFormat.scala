@@ -16,31 +16,23 @@ trait WorkbookChartAxisFormat
 }
 object WorkbookChartAxisFormat {
   
-  @scala.inline
-  def apply(): WorkbookChartAxisFormat = {
+  inline def apply(): WorkbookChartAxisFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookChartAxisFormat]
   }
   
-  @scala.inline
-  implicit class WorkbookChartAxisFormatMutableBuilder[Self <: WorkbookChartAxisFormat] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookChartAxisFormat](x: Self) {
     
-    @scala.inline
-    def setFont(value: NullableOption[WorkbookChartFont]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: NullableOption[WorkbookChartFont]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontNull: Self = StObject.set(x, "font", null)
+    inline def setFontNull: Self = StObject.set(x, "font", null)
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setLine(value: NullableOption[WorkbookChartLineFormat]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: NullableOption[WorkbookChartLineFormat]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNull: Self = StObject.set(x, "line", null)
+    inline def setLineNull: Self = StObject.set(x, "line", null)
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }
 }

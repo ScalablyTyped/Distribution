@@ -18,22 +18,17 @@ trait AttributeType extends StObject {
 }
 object AttributeType {
   
-  @scala.inline
-  def apply(Name: AttributeNameType): AttributeType = {
+  inline def apply(Name: AttributeNameType): AttributeType = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeType]
   }
   
-  @scala.inline
-  implicit class AttributeTypeMutableBuilder[Self <: AttributeType] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeType](x: Self) {
     
-    @scala.inline
-    def setName(value: AttributeNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: AttributeNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: AttributeValueType): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: AttributeValueType): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

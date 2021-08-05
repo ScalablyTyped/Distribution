@@ -25,25 +25,19 @@ trait SchemaInstanceMoveRequest extends StObject {
 }
 object SchemaInstanceMoveRequest {
   
-  @scala.inline
-  def apply(): SchemaInstanceMoveRequest = {
+  inline def apply(): SchemaInstanceMoveRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceMoveRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceMoveRequestMutableBuilder[Self <: SchemaInstanceMoveRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceMoveRequest](x: Self) {
     
-    @scala.inline
-    def setDestinationZone(value: String): Self = StObject.set(x, "destinationZone", value.asInstanceOf[js.Any])
+    inline def setDestinationZone(value: String): Self = StObject.set(x, "destinationZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationZoneUndefined: Self = StObject.set(x, "destinationZone", js.undefined)
+    inline def setDestinationZoneUndefined: Self = StObject.set(x, "destinationZone", js.undefined)
     
-    @scala.inline
-    def setTargetInstance(value: String): Self = StObject.set(x, "targetInstance", value.asInstanceOf[js.Any])
+    inline def setTargetInstance(value: String): Self = StObject.set(x, "targetInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetInstanceUndefined: Self = StObject.set(x, "targetInstance", js.undefined)
+    inline def setTargetInstanceUndefined: Self = StObject.set(x, "targetInstance", js.undefined)
   }
 }

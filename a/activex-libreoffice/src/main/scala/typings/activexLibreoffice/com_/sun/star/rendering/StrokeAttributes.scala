@@ -79,8 +79,7 @@ trait StrokeAttributes extends StObject {
 }
 object StrokeAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DashArray: SafeArray[Double],
     EndCapType: Double,
     JoinType: Double,
@@ -93,28 +92,20 @@ object StrokeAttributes {
     __obj.asInstanceOf[StrokeAttributes]
   }
   
-  @scala.inline
-  implicit class StrokeAttributesMutableBuilder[Self <: StrokeAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: StrokeAttributes](x: Self) {
     
-    @scala.inline
-    def setDashArray(value: SafeArray[Double]): Self = StObject.set(x, "DashArray", value.asInstanceOf[js.Any])
+    inline def setDashArray(value: SafeArray[Double]): Self = StObject.set(x, "DashArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCapType(value: Double): Self = StObject.set(x, "EndCapType", value.asInstanceOf[js.Any])
+    inline def setEndCapType(value: Double): Self = StObject.set(x, "EndCapType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinType(value: Double): Self = StObject.set(x, "JoinType", value.asInstanceOf[js.Any])
+    inline def setJoinType(value: Double): Self = StObject.set(x, "JoinType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineArray(value: SafeArray[Double]): Self = StObject.set(x, "LineArray", value.asInstanceOf[js.Any])
+    inline def setLineArray(value: SafeArray[Double]): Self = StObject.set(x, "LineArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiterLimit(value: Double): Self = StObject.set(x, "MiterLimit", value.asInstanceOf[js.Any])
+    inline def setMiterLimit(value: Double): Self = StObject.set(x, "MiterLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartCapType(value: Double): Self = StObject.set(x, "StartCapType", value.asInstanceOf[js.Any])
+    inline def setStartCapType(value: Double): Self = StObject.set(x, "StartCapType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = StObject.set(x, "StrokeWidth", value.asInstanceOf[js.Any])
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "StrokeWidth", value.asInstanceOf[js.Any])
   }
 }

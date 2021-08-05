@@ -15,15 +15,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clearStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStyles")().asInstanceOf[Unit]
-  @scala.inline
-  def clearStyles(option: ClearStyleOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStyles")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStyles")().asInstanceOf[Unit]
+  inline def clearStyles(option: ClearStyleOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStyles")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def configureLoadStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureLoadStyles")().asInstanceOf[Unit]
-  @scala.inline
-  def configureLoadStyles(
+  inline def configureLoadStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureLoadStyles")().asInstanceOf[Unit]
+  inline def configureLoadStyles(
     loadStylesFn: js.Function2[
       /* processedStyles */ String, 
       /* rawStyles */ js.UndefOr[String | ThemableArray], 
@@ -31,33 +27,22 @@ object mod {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureLoadStyles")(loadStylesFn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def configureRunMode(mode: Mode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureRunMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configureRunMode(mode: Mode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureRunMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def detokenize(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("detokenize")().asInstanceOf[js.UndefOr[String]]
-  @scala.inline
-  def detokenize(styles: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("detokenize")(styles.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def detokenize(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("detokenize")().asInstanceOf[js.UndefOr[String]]
+  inline def detokenize(styles: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("detokenize")(styles.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
+  inline def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
   
-  @scala.inline
-  def loadStyles(styles: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def loadStyles(styles: String, loadAsync: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadStyles")(styles.asInstanceOf[js.Any], loadAsync.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def loadStyles(styles: ThemableArray): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def loadStyles(styles: ThemableArray, loadAsync: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadStyles")(styles.asInstanceOf[js.Any], loadAsync.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loadStyles(styles: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def loadStyles(styles: String, loadAsync: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadStyles")(styles.asInstanceOf[js.Any], loadAsync.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loadStyles(styles: ThemableArray): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def loadStyles(styles: ThemableArray, loadAsync: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadStyles")(styles.asInstanceOf[js.Any], loadAsync.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def loadTheme(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")().asInstanceOf[Unit]
-  @scala.inline
-  def loadTheme(theme: ITheme): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def loadTheme(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")().asInstanceOf[Unit]
+  inline def loadTheme(theme: ITheme): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def splitStyles(styles: String): ThemableArray = ^.asInstanceOf[js.Dynamic].applyDynamic("splitStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[ThemableArray]
+  inline def splitStyles(styles: String): ThemableArray = ^.asInstanceOf[js.Dynamic].applyDynamic("splitStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[ThemableArray]
   
   /* Rewritten from type alias, can be one of: 
     - typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesNumbers.`1`
@@ -68,16 +53,13 @@ object mod {
   object ClearStyleOptions {
     
     /** both themable and non-themable styles will be cleared */
-    @scala.inline
-    def all: `3` = 3.asInstanceOf[`3`]
+    inline def all: `3` = 3.asInstanceOf[`3`]
     
     /** only non-themable styles will be cleared */
-    @scala.inline
-    def onlyNonThemable: `2` = 2.asInstanceOf[`2`]
+    inline def onlyNonThemable: `2` = 2.asInstanceOf[`2`]
     
     /** only themable styles will be cleared */
-    @scala.inline
-    def onlyThemable: `1` = 1.asInstanceOf[`1`]
+    inline def onlyThemable: `1` = 1.asInstanceOf[`1`]
   }
   
   type ITheme = StringDictionary[String]
@@ -92,32 +74,24 @@ object mod {
   }
   object IThemingInstruction {
     
-    @scala.inline
-    def apply(): IThemingInstruction = {
+    inline def apply(): IThemingInstruction = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IThemingInstruction]
     }
     
-    @scala.inline
-    implicit class IThemingInstructionMutableBuilder[Self <: IThemingInstruction] (val x: Self) extends AnyVal {
+    extension [Self <: IThemingInstruction](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setRawString(value: String): Self = StObject.set(x, "rawString", value.asInstanceOf[js.Any])
+      inline def setRawString(value: String): Self = StObject.set(x, "rawString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawStringUndefined: Self = StObject.set(x, "rawString", js.undefined)
+      inline def setRawStringUndefined: Self = StObject.set(x, "rawString", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -128,11 +102,9 @@ object mod {
   trait Mode extends StObject
   object Mode {
     
-    @scala.inline
-    def async: `1` = 1.asInstanceOf[`1`]
+    inline def async: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def sync: `0` = 0.asInstanceOf[`0`]
+    inline def sync: `0` = 0.asInstanceOf[`0`]
   }
   
   type ThemableArray = js.Array[IThemingInstruction]

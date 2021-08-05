@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ProofreadingErrors")
 @js.native
-class ProofreadingErrors protected ()
+/* private */ class ProofreadingErrors ()
   extends StObject
      with typings.activexWord.Word.ProofreadingErrors {
   
@@ -29,7 +29,7 @@ class ProofreadingErrors protected ()
   /* CompleteClass */
   override val Type: WdProofreadingErrorType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.ProofreadingErrors_typekey")
   var WordDotProofreadingErrors_typekey: typings.activexWord.Word.ProofreadingErrors = js.native
 }

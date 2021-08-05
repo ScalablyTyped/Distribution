@@ -22,6 +22,5 @@ object PolylineColorAppearance {
   @JSImport("cesium", "PolylineColorAppearance.VERTEX_FORMAT")
   @js.native
   def VERTEX_FORMAT: VertexFormat = js.native
-  @scala.inline
-  def VERTEX_FORMAT_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERTEX_FORMAT")(x.asInstanceOf[js.Any])
+  inline def VERTEX_FORMAT_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERTEX_FORMAT")(x.asInstanceOf[js.Any])
 }

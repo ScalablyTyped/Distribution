@@ -98,17 +98,14 @@ object Optimization {
   }
   object LinearOptimizationConstraint {
     
-    @scala.inline
-    def apply(setCoefficient: (String, Double) => LinearOptimizationConstraint): LinearOptimizationConstraint = {
+    inline def apply(setCoefficient: (String, Double) => LinearOptimizationConstraint): LinearOptimizationConstraint = {
       val __obj = js.Dynamic.literal(setCoefficient = js.Any.fromFunction2(setCoefficient))
       __obj.asInstanceOf[LinearOptimizationConstraint]
     }
     
-    @scala.inline
-    implicit class LinearOptimizationConstraintMutableBuilder[Self <: LinearOptimizationConstraint] (val x: Self) extends AnyVal {
+    extension [Self <: LinearOptimizationConstraint](x: Self) {
       
-      @scala.inline
-      def setSetCoefficient(value: (String, Double) => LinearOptimizationConstraint): Self = StObject.set(x, "setCoefficient", js.Any.fromFunction2(value))
+      inline def setSetCoefficient(value: (String, Double) => LinearOptimizationConstraint): Self = StObject.set(x, "setCoefficient", js.Any.fromFunction2(value))
     }
   }
   
@@ -266,8 +263,7 @@ object Optimization {
   }
   object LinearOptimizationService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Status: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Status */ js.Any,
       VariableType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VariableType */ js.Any,
       createEngine: () => LinearOptimizationEngine
@@ -276,17 +272,13 @@ object Optimization {
       __obj.asInstanceOf[LinearOptimizationService]
     }
     
-    @scala.inline
-    implicit class LinearOptimizationServiceMutableBuilder[Self <: LinearOptimizationService] (val x: Self) extends AnyVal {
+    extension [Self <: LinearOptimizationService](x: Self) {
       
-      @scala.inline
-      def setCreateEngine(value: () => LinearOptimizationEngine): Self = StObject.set(x, "createEngine", js.Any.fromFunction0(value))
+      inline def setCreateEngine(value: () => LinearOptimizationEngine): Self = StObject.set(x, "createEngine", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStatus(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Status */ js.Any): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Status */ js.Any): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableType(
+      inline def setVariableType(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VariableType */ js.Any
       ): Self = StObject.set(x, "VariableType", value.asInstanceOf[js.Any])
     }
@@ -356,8 +348,7 @@ object Optimization {
   }
   object LinearOptimizationSolution {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getObjectiveValue: () => Double,
       getStatus: () => Status,
       getVariableValue: String => Double,
@@ -367,20 +358,15 @@ object Optimization {
       __obj.asInstanceOf[LinearOptimizationSolution]
     }
     
-    @scala.inline
-    implicit class LinearOptimizationSolutionMutableBuilder[Self <: LinearOptimizationSolution] (val x: Self) extends AnyVal {
+    extension [Self <: LinearOptimizationSolution](x: Self) {
       
-      @scala.inline
-      def setGetObjectiveValue(value: () => Double): Self = StObject.set(x, "getObjectiveValue", js.Any.fromFunction0(value))
+      inline def setGetObjectiveValue(value: () => Double): Self = StObject.set(x, "getObjectiveValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStatus(value: () => Status): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
+      inline def setGetStatus(value: () => Status): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetVariableValue(value: String => Double): Self = StObject.set(x, "getVariableValue", js.Any.fromFunction1(value))
+      inline def setGetVariableValue(value: String => Double): Self = StObject.set(x, "getVariableValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+      inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     }
   }
 }

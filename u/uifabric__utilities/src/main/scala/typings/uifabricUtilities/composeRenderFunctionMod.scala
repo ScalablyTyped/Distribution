@@ -11,6 +11,5 @@ object composeRenderFunctionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def composeRenderFunction[TProps](outer: IRenderFunction[TProps], inner: IRenderFunction[TProps]): IRenderFunction[TProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("composeRenderFunction")(outer.asInstanceOf[js.Any], inner.asInstanceOf[js.Any])).asInstanceOf[IRenderFunction[TProps]]
+  inline def composeRenderFunction[TProps](outer: IRenderFunction[TProps], inner: IRenderFunction[TProps]): IRenderFunction[TProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("composeRenderFunction")(outer.asInstanceOf[js.Any], inner.asInstanceOf[js.Any])).asInstanceOf[IRenderFunction[TProps]]
 }

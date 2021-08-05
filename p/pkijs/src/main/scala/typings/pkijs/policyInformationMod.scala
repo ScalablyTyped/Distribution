@@ -38,13 +38,10 @@ object policyInformationMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait PolicyInformation extends StObject {
@@ -64,8 +61,7 @@ object policyInformationMod {
   }
   object PolicyInformation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fromSchema: js.Any => Unit,
       policyIdentifier: String,
       policyQualifiers: js.Array[typings.pkijs.policyQualifierInfoMod.default],
@@ -76,26 +72,19 @@ object policyInformationMod {
       __obj.asInstanceOf[PolicyInformation]
     }
     
-    @scala.inline
-    implicit class PolicyInformationMutableBuilder[Self <: PolicyInformation] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyInformation](x: Self) {
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPolicyIdentifier(value: String): Self = StObject.set(x, "policyIdentifier", value.asInstanceOf[js.Any])
+      inline def setPolicyIdentifier(value: String): Self = StObject.set(x, "policyIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyQualifiers(value: js.Array[typings.pkijs.policyQualifierInfoMod.default]): Self = StObject.set(x, "policyQualifiers", value.asInstanceOf[js.Any])
+      inline def setPolicyQualifiers(value: js.Array[typings.pkijs.policyQualifierInfoMod.default]): Self = StObject.set(x, "policyQualifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyQualifiersVarargs(value: typings.pkijs.policyQualifierInfoMod.default*): Self = StObject.set(x, "policyQualifiers", js.Array(value :_*))
+      inline def setPolicyQualifiersVarargs(value: typings.pkijs.policyQualifierInfoMod.default*): Self = StObject.set(x, "policyQualifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
     }
   }
 }

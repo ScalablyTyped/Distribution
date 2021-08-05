@@ -64,79 +64,57 @@ trait SaveDialogSyncOptions extends StObject {
 }
 object SaveDialogSyncOptions {
   
-  @scala.inline
-  def apply(): SaveDialogSyncOptions = {
+  inline def apply(): SaveDialogSyncOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SaveDialogSyncOptions]
   }
   
-  @scala.inline
-  implicit class SaveDialogSyncOptionsMutableBuilder[Self <: SaveDialogSyncOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SaveDialogSyncOptions](x: Self) {
     
-    @scala.inline
-    def setButtonLabel(value: String): Self = StObject.set(x, "buttonLabel", value.asInstanceOf[js.Any])
+    inline def setButtonLabel(value: String): Self = StObject.set(x, "buttonLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonLabelUndefined: Self = StObject.set(x, "buttonLabel", js.undefined)
+    inline def setButtonLabelUndefined: Self = StObject.set(x, "buttonLabel", js.undefined)
     
-    @scala.inline
-    def setDefaultPath(value: String): Self = StObject.set(x, "defaultPath", value.asInstanceOf[js.Any])
+    inline def setDefaultPath(value: String): Self = StObject.set(x, "defaultPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPathUndefined: Self = StObject.set(x, "defaultPath", js.undefined)
+    inline def setDefaultPathUndefined: Self = StObject.set(x, "defaultPath", js.undefined)
     
-    @scala.inline
-    def setFilters(value: js.Array[FileFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[FileFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: FileFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: FileFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setNameFieldLabel(value: String): Self = StObject.set(x, "nameFieldLabel", value.asInstanceOf[js.Any])
+    inline def setNameFieldLabel(value: String): Self = StObject.set(x, "nameFieldLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameFieldLabelUndefined: Self = StObject.set(x, "nameFieldLabel", js.undefined)
+    inline def setNameFieldLabelUndefined: Self = StObject.set(x, "nameFieldLabel", js.undefined)
     
-    @scala.inline
-    def setProperties(
+    inline def setProperties(
       value: js.Array[
           showHiddenFiles | createDirectory | treatPackageAsDirectory | showOverwriteConfirmation | dontAddToRecent
         ]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setPropertiesVarargs(
+    inline def setPropertiesVarargs(
       value: (showHiddenFiles | createDirectory | treatPackageAsDirectory | showOverwriteConfirmation | dontAddToRecent)*
     ): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setSecurityScopedBookmarks(value: Boolean): Self = StObject.set(x, "securityScopedBookmarks", value.asInstanceOf[js.Any])
+    inline def setSecurityScopedBookmarks(value: Boolean): Self = StObject.set(x, "securityScopedBookmarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityScopedBookmarksUndefined: Self = StObject.set(x, "securityScopedBookmarks", js.undefined)
+    inline def setSecurityScopedBookmarksUndefined: Self = StObject.set(x, "securityScopedBookmarks", js.undefined)
     
-    @scala.inline
-    def setShowsTagField(value: Boolean): Self = StObject.set(x, "showsTagField", value.asInstanceOf[js.Any])
+    inline def setShowsTagField(value: Boolean): Self = StObject.set(x, "showsTagField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowsTagFieldUndefined: Self = StObject.set(x, "showsTagField", js.undefined)
+    inline def setShowsTagFieldUndefined: Self = StObject.set(x, "showsTagField", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

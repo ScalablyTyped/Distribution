@@ -38,43 +38,31 @@ trait SeriesAccessibilityOptionsObject extends StObject {
 }
 object SeriesAccessibilityOptionsObject {
   
-  @scala.inline
-  def apply(): SeriesAccessibilityOptionsObject = {
+  inline def apply(): SeriesAccessibilityOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesAccessibilityOptionsObject]
   }
   
-  @scala.inline
-  implicit class SeriesAccessibilityOptionsObjectMutableBuilder[Self <: SeriesAccessibilityOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesAccessibilityOptionsObject](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setExposeAsGroupOnly(value: Boolean): Self = StObject.set(x, "exposeAsGroupOnly", value.asInstanceOf[js.Any])
+    inline def setExposeAsGroupOnly(value: Boolean): Self = StObject.set(x, "exposeAsGroupOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExposeAsGroupOnlyUndefined: Self = StObject.set(x, "exposeAsGroupOnly", js.undefined)
+    inline def setExposeAsGroupOnlyUndefined: Self = StObject.set(x, "exposeAsGroupOnly", js.undefined)
     
-    @scala.inline
-    def setKeyboardNavigation(value: SeriesAccessibilityKeyboardNavigationOptionsObject): Self = StObject.set(x, "keyboardNavigation", value.asInstanceOf[js.Any])
+    inline def setKeyboardNavigation(value: SeriesAccessibilityKeyboardNavigationOptionsObject): Self = StObject.set(x, "keyboardNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardNavigationUndefined: Self = StObject.set(x, "keyboardNavigation", js.undefined)
+    inline def setKeyboardNavigationUndefined: Self = StObject.set(x, "keyboardNavigation", js.undefined)
     
-    @scala.inline
-    def setPointDescriptionFormatter(value: Point => String): Self = StObject.set(x, "pointDescriptionFormatter", js.Any.fromFunction1(value))
+    inline def setPointDescriptionFormatter(value: Point => String): Self = StObject.set(x, "pointDescriptionFormatter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPointDescriptionFormatterUndefined: Self = StObject.set(x, "pointDescriptionFormatter", js.undefined)
+    inline def setPointDescriptionFormatterUndefined: Self = StObject.set(x, "pointDescriptionFormatter", js.undefined)
   }
 }

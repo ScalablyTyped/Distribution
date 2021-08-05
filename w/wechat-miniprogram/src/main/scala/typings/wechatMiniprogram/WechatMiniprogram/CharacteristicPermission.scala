@@ -21,37 +21,27 @@ trait CharacteristicPermission extends StObject {
 }
 object CharacteristicPermission {
   
-  @scala.inline
-  def apply(): CharacteristicPermission = {
+  inline def apply(): CharacteristicPermission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CharacteristicPermission]
   }
   
-  @scala.inline
-  implicit class CharacteristicPermissionMutableBuilder[Self <: CharacteristicPermission] (val x: Self) extends AnyVal {
+  extension [Self <: CharacteristicPermission](x: Self) {
     
-    @scala.inline
-    def setReadEncryptionRequired(value: Boolean): Self = StObject.set(x, "readEncryptionRequired", value.asInstanceOf[js.Any])
+    inline def setReadEncryptionRequired(value: Boolean): Self = StObject.set(x, "readEncryptionRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadEncryptionRequiredUndefined: Self = StObject.set(x, "readEncryptionRequired", js.undefined)
+    inline def setReadEncryptionRequiredUndefined: Self = StObject.set(x, "readEncryptionRequired", js.undefined)
     
-    @scala.inline
-    def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+    inline def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
+    inline def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
     
-    @scala.inline
-    def setWriteEncryptionRequired(value: Boolean): Self = StObject.set(x, "writeEncryptionRequired", value.asInstanceOf[js.Any])
+    inline def setWriteEncryptionRequired(value: Boolean): Self = StObject.set(x, "writeEncryptionRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteEncryptionRequiredUndefined: Self = StObject.set(x, "writeEncryptionRequired", js.undefined)
+    inline def setWriteEncryptionRequiredUndefined: Self = StObject.set(x, "writeEncryptionRequired", js.undefined)
     
-    @scala.inline
-    def setWriteable(value: Boolean): Self = StObject.set(x, "writeable", value.asInstanceOf[js.Any])
+    inline def setWriteable(value: Boolean): Self = StObject.set(x, "writeable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteableUndefined: Self = StObject.set(x, "writeable", js.undefined)
+    inline def setWriteableUndefined: Self = StObject.set(x, "writeable", js.undefined)
   }
 }

@@ -15,22 +15,17 @@ trait AeadAlgorithm extends StObject {
 }
 object AeadAlgorithm {
   
-  @scala.inline
-  def apply(aeadAlgorithm: String, algorithm: String, data: Uint8Array): AeadAlgorithm = {
+  inline def apply(aeadAlgorithm: String, algorithm: String, data: Uint8Array): AeadAlgorithm = {
     val __obj = js.Dynamic.literal(aeadAlgorithm = aeadAlgorithm.asInstanceOf[js.Any], algorithm = algorithm.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[AeadAlgorithm]
   }
   
-  @scala.inline
-  implicit class AeadAlgorithmMutableBuilder[Self <: AeadAlgorithm] (val x: Self) extends AnyVal {
+  extension [Self <: AeadAlgorithm](x: Self) {
     
-    @scala.inline
-    def setAeadAlgorithm(value: String): Self = StObject.set(x, "aeadAlgorithm", value.asInstanceOf[js.Any])
+    inline def setAeadAlgorithm(value: String): Self = StObject.set(x, "aeadAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

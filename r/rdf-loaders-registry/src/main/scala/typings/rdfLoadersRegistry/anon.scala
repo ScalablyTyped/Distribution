@@ -12,17 +12,14 @@ object anon {
   }
   object LoaderRegistry {
     
-    @scala.inline
-    def apply(loaderRegistry: typings.rdfLoadersRegistry.mod.LoaderRegistry): LoaderRegistry = {
+    inline def apply(loaderRegistry: typings.rdfLoadersRegistry.mod.LoaderRegistry): LoaderRegistry = {
       val __obj = js.Dynamic.literal(loaderRegistry = loaderRegistry.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoaderRegistry]
     }
     
-    @scala.inline
-    implicit class LoaderRegistryMutableBuilder[Self <: LoaderRegistry] (val x: Self) extends AnyVal {
+    extension [Self <: LoaderRegistry](x: Self) {
       
-      @scala.inline
-      def setLoaderRegistry(value: typings.rdfLoadersRegistry.mod.LoaderRegistry): Self = StObject.set(x, "loaderRegistry", value.asInstanceOf[js.Any])
+      inline def setLoaderRegistry(value: typings.rdfLoadersRegistry.mod.LoaderRegistry): Self = StObject.set(x, "loaderRegistry", value.asInstanceOf[js.Any])
     }
   }
 }

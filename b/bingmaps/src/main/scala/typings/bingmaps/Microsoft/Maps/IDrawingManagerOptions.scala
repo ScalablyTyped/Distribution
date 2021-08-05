@@ -16,25 +16,19 @@ trait IDrawingManagerOptions
 }
 object IDrawingManagerOptions {
   
-  @scala.inline
-  def apply(): IDrawingManagerOptions = {
+  inline def apply(): IDrawingManagerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDrawingManagerOptions]
   }
   
-  @scala.inline
-  implicit class IDrawingManagerOptionsMutableBuilder[Self <: IDrawingManagerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDrawingManagerOptions](x: Self) {
     
-    @scala.inline
-    def setFillColor(value: String | Color): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: String | Color): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
-    @scala.inline
-    def setStrokeColor(value: String | Color): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+    inline def setStrokeColor(value: String | Color): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+    inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
   }
 }

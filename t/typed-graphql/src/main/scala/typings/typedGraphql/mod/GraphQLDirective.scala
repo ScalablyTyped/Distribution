@@ -21,8 +21,7 @@ trait GraphQLDirective extends StObject {
 }
 object GraphQLDirective {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     args: js.Array[GraphQLArgument],
     description: String,
     name: String,
@@ -34,28 +33,20 @@ object GraphQLDirective {
     __obj.asInstanceOf[GraphQLDirective]
   }
   
-  @scala.inline
-  implicit class GraphQLDirectiveMutableBuilder[Self <: GraphQLDirective] (val x: Self) extends AnyVal {
+  extension [Self <: GraphQLDirective](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[GraphQLArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[GraphQLArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: GraphQLArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: GraphQLArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnField(value: Boolean): Self = StObject.set(x, "onField", value.asInstanceOf[js.Any])
+    inline def setOnField(value: Boolean): Self = StObject.set(x, "onField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnFragment(value: Boolean): Self = StObject.set(x, "onFragment", value.asInstanceOf[js.Any])
+    inline def setOnFragment(value: Boolean): Self = StObject.set(x, "onFragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnOperation(value: Boolean): Self = StObject.set(x, "onOperation", value.asInstanceOf[js.Any])
+    inline def setOnOperation(value: Boolean): Self = StObject.set(x, "onOperation", value.asInstanceOf[js.Any])
   }
 }

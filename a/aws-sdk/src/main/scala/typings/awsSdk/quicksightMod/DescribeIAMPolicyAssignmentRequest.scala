@@ -23,22 +23,17 @@ trait DescribeIAMPolicyAssignmentRequest extends StObject {
 }
 object DescribeIAMPolicyAssignmentRequest {
   
-  @scala.inline
-  def apply(AssignmentName: IAMPolicyAssignmentName, AwsAccountId: AwsAccountId, Namespace: Namespace): DescribeIAMPolicyAssignmentRequest = {
+  inline def apply(AssignmentName: IAMPolicyAssignmentName, AwsAccountId: AwsAccountId, Namespace: Namespace): DescribeIAMPolicyAssignmentRequest = {
     val __obj = js.Dynamic.literal(AssignmentName = AssignmentName.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeIAMPolicyAssignmentRequest]
   }
   
-  @scala.inline
-  implicit class DescribeIAMPolicyAssignmentRequestMutableBuilder[Self <: DescribeIAMPolicyAssignmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIAMPolicyAssignmentRequest](x: Self) {
     
-    @scala.inline
-    def setAssignmentName(value: IAMPolicyAssignmentName): Self = StObject.set(x, "AssignmentName", value.asInstanceOf[js.Any])
+    inline def setAssignmentName(value: IAMPolicyAssignmentName): Self = StObject.set(x, "AssignmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
   }
 }

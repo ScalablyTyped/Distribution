@@ -39,46 +39,32 @@ object CompositeOperation {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ADD: `12` = 12.asInstanceOf[`12`]
+    inline def ADD: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def ATOP: `9` = 9.asInstanceOf[`9`]
+    inline def ATOP: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def ATOP_REVERSE: `10` = 10.asInstanceOf[`10`]
+    inline def ATOP_REVERSE: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def CLEAR: `0` = 0.asInstanceOf[`0`]
+    inline def CLEAR: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def DESTINATION: `2` = 2.asInstanceOf[`2`]
+    inline def DESTINATION: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def INSIDE: `5` = 5.asInstanceOf[`5`]
+    inline def INSIDE: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def INSIDE_REVERSE: `6` = 6.asInstanceOf[`6`]
+    inline def INSIDE_REVERSE: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def OUTSIDE: `7` = 7.asInstanceOf[`7`]
+    inline def OUTSIDE: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def OUTSIDE_REVERSE: `8` = 8.asInstanceOf[`8`]
+    inline def OUTSIDE_REVERSE: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def OVER: `3` = 3.asInstanceOf[`3`]
+    inline def OVER: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def SATURATE: `13` = 13.asInstanceOf[`13`]
+    inline def SATURATE: `13` = 13.asInstanceOf[`13`]
     
-    @scala.inline
-    def SOURCE: `1` = 1.asInstanceOf[`1`]
+    inline def SOURCE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def UNDER: `4` = 4.asInstanceOf[`4`]
+    inline def UNDER: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def XOR: `11` = 11.asInstanceOf[`11`]
+    inline def XOR: `11` = 11.asInstanceOf[`11`]
   }
 }

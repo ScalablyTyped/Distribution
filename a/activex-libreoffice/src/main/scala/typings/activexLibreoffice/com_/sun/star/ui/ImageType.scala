@@ -19,19 +19,14 @@ object ImageType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def COLOR_HIGHCONTRAST: `4` = 4.asInstanceOf[`4`]
+    inline def COLOR_HIGHCONTRAST: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def COLOR_NORMAL: `0` = 0.asInstanceOf[`0`]
+    inline def COLOR_NORMAL: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def SIZE_32: `2` = 2.asInstanceOf[`2`]
+    inline def SIZE_32: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def SIZE_DEFAULT: `0` = 0.asInstanceOf[`0`]
+    inline def SIZE_DEFAULT: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def SIZE_LARGE: `1` = 1.asInstanceOf[`1`]
+    inline def SIZE_LARGE: `1` = 1.asInstanceOf[`1`]
   }
 }

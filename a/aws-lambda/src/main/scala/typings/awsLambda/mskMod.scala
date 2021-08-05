@@ -21,23 +21,18 @@ object mskMod {
   }
   object MSKEvent {
     
-    @scala.inline
-    def apply(eventSourceArn: String, records: StringDictionary[js.Array[MSKRecord]]): MSKEvent = {
+    inline def apply(eventSourceArn: String, records: StringDictionary[js.Array[MSKRecord]]): MSKEvent = {
       val __obj = js.Dynamic.literal(eventSource = "aws:kafka", eventSourceArn = eventSourceArn.asInstanceOf[js.Any], records = records.asInstanceOf[js.Any])
       __obj.asInstanceOf[MSKEvent]
     }
     
-    @scala.inline
-    implicit class MSKEventMutableBuilder[Self <: MSKEvent] (val x: Self) extends AnyVal {
+    extension [Self <: MSKEvent](x: Self) {
       
-      @scala.inline
-      def setEventSource(value: awsColonkafka): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
+      inline def setEventSource(value: awsColonkafka): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSourceArn(value: String): Self = StObject.set(x, "eventSourceArn", value.asInstanceOf[js.Any])
+      inline def setEventSourceArn(value: String): Self = StObject.set(x, "eventSourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecords(value: StringDictionary[js.Array[MSKRecord]]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: StringDictionary[js.Array[MSKRecord]]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,8 +56,7 @@ object mskMod {
   }
   object MSKRecord {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       key: String,
       offset: Double,
       partition: Double,
@@ -75,29 +69,21 @@ object mskMod {
       __obj.asInstanceOf[MSKRecord]
     }
     
-    @scala.inline
-    implicit class MSKRecordMutableBuilder[Self <: MSKRecord] (val x: Self) extends AnyVal {
+    extension [Self <: MSKRecord](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+      inline def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampType(value: CREATE_TIME | LOG_APPEND_TIME): Self = StObject.set(x, "timestampType", value.asInstanceOf[js.Any])
+      inline def setTimestampType(value: CREATE_TIME | LOG_APPEND_TIME): Self = StObject.set(x, "timestampType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

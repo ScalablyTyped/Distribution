@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.HeaderFooter")
 @js.native
-class HeaderFooter protected ()
+/* private */ class HeaderFooter ()
   extends StObject
      with typings.activexExcel.Excel.HeaderFooter {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.HeaderFooter_typekey")
   var ExcelDotHeaderFooter_typekey: typings.activexExcel.Excel.HeaderFooter = js.native
   

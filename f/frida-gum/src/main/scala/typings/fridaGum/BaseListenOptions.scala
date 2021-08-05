@@ -13,19 +13,15 @@ trait BaseListenOptions extends StObject {
 }
 object BaseListenOptions {
   
-  @scala.inline
-  def apply(): BaseListenOptions = {
+  inline def apply(): BaseListenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseListenOptions]
   }
   
-  @scala.inline
-  implicit class BaseListenOptionsMutableBuilder[Self <: BaseListenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BaseListenOptions](x: Self) {
     
-    @scala.inline
-    def setBacklog(value: Double): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
+    inline def setBacklog(value: Double): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBacklogUndefined: Self = StObject.set(x, "backlog", js.undefined)
+    inline def setBacklogUndefined: Self = StObject.set(x, "backlog", js.undefined)
   }
 }

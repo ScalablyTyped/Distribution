@@ -12,17 +12,14 @@ object anon {
   }
   object Push {
     
-    @scala.inline
-    def apply(push: js.Any => Unit): Push = {
+    inline def apply(push: js.Any => Unit): Push = {
       val __obj = js.Dynamic.literal(push = js.Any.fromFunction1(push))
       __obj.asInstanceOf[Push]
     }
     
-    @scala.inline
-    implicit class PushMutableBuilder[Self <: Push] (val x: Self) extends AnyVal {
+    extension [Self <: Push](x: Self) {
       
-      @scala.inline
-      def setPush(value: js.Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: js.Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     }
   }
 }

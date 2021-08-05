@@ -11,11 +11,11 @@ object dropdownSizePosCacheMod {
   @js.native
   class DropdownSizePosCache () extends StObject {
     
-    var _cachedOptions: js.Any = js.native
+    /* private */ var _cachedOptions: js.Any = js.native
     
-    var _displayOnlyOptionsCache: js.Any = js.native
+    /* private */ var _displayOnlyOptionsCache: js.Any = js.native
     
-    var _size: js.Any = js.native
+    /* private */ var _size: js.Any = js.native
     
     /**
       * The chached options array.

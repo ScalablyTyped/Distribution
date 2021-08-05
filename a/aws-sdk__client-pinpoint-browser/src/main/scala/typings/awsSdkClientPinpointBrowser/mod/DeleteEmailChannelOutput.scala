@@ -11,8 +11,7 @@ trait DeleteEmailChannelOutput
      with typings.awsSdkClientPinpointBrowser.typesDeleteEmailChannelOutputMod.DeleteEmailChannelOutput
 object DeleteEmailChannelOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, EmailChannelResponse: UnmarshalledEmailChannelResponse): DeleteEmailChannelOutput = {
+  inline def apply($metadata: ResponseMetadata, EmailChannelResponse: UnmarshalledEmailChannelResponse): DeleteEmailChannelOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], EmailChannelResponse = EmailChannelResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEmailChannelOutput]
   }

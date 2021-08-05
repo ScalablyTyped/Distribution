@@ -19,8 +19,7 @@ trait ChartErrorIndicatorType extends StObject
 object ChartErrorIndicatorType {
   
   /** displays only the lower value. */
-  @scala.inline
-  def LOWER: `3` = 3.asInstanceOf[`3`]
+  inline def LOWER: `3` = 3.asInstanceOf[`3`]
   
   /**
     * error indicators are not displayed.
@@ -37,14 +36,11 @@ object ChartErrorIndicatorType {
     *
     * displays no regression curve.
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /** displays both the upper and lower values. */
-  @scala.inline
-  def TOP_AND_BOTTOM: `1` = 1.asInstanceOf[`1`]
+  inline def TOP_AND_BOTTOM: `1` = 1.asInstanceOf[`1`]
   
   /** displays only the upper value. */
-  @scala.inline
-  def UPPER: `2` = 2.asInstanceOf[`2`]
+  inline def UPPER: `2` = 2.asInstanceOf[`2`]
 }

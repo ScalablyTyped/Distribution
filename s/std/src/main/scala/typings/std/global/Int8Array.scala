@@ -24,6 +24,5 @@ class Int8Array ()
 }
 object Int8Array {
   
-  @scala.inline
-  def apply: Int8ArrayConstructor = js.Dynamic.global.selectDynamic("Int8Array").asInstanceOf[Int8ArrayConstructor]
+  inline def apply: Int8ArrayConstructor = js.Dynamic.global.selectDynamic("Int8Array").asInstanceOf[Int8ArrayConstructor]
 }

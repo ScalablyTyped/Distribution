@@ -14,22 +14,17 @@ trait AccessTokenOptions extends StObject {
 }
 object AccessTokenOptions {
   
-  @scala.inline
-  def apply(identity: String, nbf: Double, ttl: Double): AccessTokenOptions = {
+  inline def apply(identity: String, nbf: Double, ttl: Double): AccessTokenOptions = {
     val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], nbf = nbf.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessTokenOptions]
   }
   
-  @scala.inline
-  implicit class AccessTokenOptionsMutableBuilder[Self <: AccessTokenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AccessTokenOptions](x: Self) {
     
-    @scala.inline
-    def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNbf(value: Double): Self = StObject.set(x, "nbf", value.asInstanceOf[js.Any])
+    inline def setNbf(value: Double): Self = StObject.set(x, "nbf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
   }
 }

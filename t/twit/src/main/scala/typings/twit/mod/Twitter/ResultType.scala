@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResultType extends StObject
 object ResultType {
   
-  @scala.inline
-  def mixed: typings.twit.twitStrings.mixed = "mixed".asInstanceOf[typings.twit.twitStrings.mixed]
+  inline def mixed: typings.twit.twitStrings.mixed = "mixed".asInstanceOf[typings.twit.twitStrings.mixed]
   
-  @scala.inline
-  def popular: typings.twit.twitStrings.popular = "popular".asInstanceOf[typings.twit.twitStrings.popular]
+  inline def popular: typings.twit.twitStrings.popular = "popular".asInstanceOf[typings.twit.twitStrings.popular]
   
-  @scala.inline
-  def recent: typings.twit.twitStrings.recent = "recent".asInstanceOf[typings.twit.twitStrings.recent]
+  inline def recent: typings.twit.twitStrings.recent = "recent".asInstanceOf[typings.twit.twitStrings.recent]
 }

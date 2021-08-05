@@ -11,6 +11,5 @@ object findStrategyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findStrategy(selector: String, isW3C: Boolean, isMobile: Boolean): Using = (^.asInstanceOf[js.Dynamic].applyDynamic("findStrategy")(selector.asInstanceOf[js.Any], isW3C.asInstanceOf[js.Any], isMobile.asInstanceOf[js.Any])).asInstanceOf[Using]
+  inline def findStrategy(selector: String, isW3C: Boolean, isMobile: Boolean): Using = (^.asInstanceOf[js.Dynamic].applyDynamic("findStrategy")(selector.asInstanceOf[js.Any], isW3C.asInstanceOf[js.Any], isMobile.asInstanceOf[js.Any])).asInstanceOf[Using]
 }

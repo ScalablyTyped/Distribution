@@ -14,25 +14,19 @@ trait Explanation extends StObject {
 }
 object Explanation {
   
-  @scala.inline
-  def apply(): Explanation = {
+  inline def apply(): Explanation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Explanation]
   }
   
-  @scala.inline
-  implicit class ExplanationMutableBuilder[Self <: Explanation] (val x: Self) extends AnyVal {
+  extension [Self <: Explanation](x: Self) {
     
-    @scala.inline
-    def setAttribution(value: Double): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+    inline def setAttribution(value: Double): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
+    inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
     
-    @scala.inline
-    def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
+    inline def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureNameUndefined: Self = StObject.set(x, "featureName", js.undefined)
+    inline def setFeatureNameUndefined: Self = StObject.set(x, "featureName", js.undefined)
   }
 }

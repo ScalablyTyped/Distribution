@@ -21,14 +21,14 @@ object alertMod {
        with ComponentInterface
        with OverlayInterface {
     
-    var activeId: js.Any = js.native
+    /* private */ var activeId: js.Any = js.native
     
     /**
       * If `true`, the alert will be dismissed when the backdrop is clicked.
       */
     var backdropDismiss: Boolean = js.native
     
-    var buttonClick: js.Any = js.native
+    /* private */ var buttonClick: js.Any = js.native
     
     /**
       * Array of buttons to be added to the alert.
@@ -37,9 +37,9 @@ object alertMod {
     
     def buttonsChanged(): Unit = js.native
     
-    var callButtonHandler: js.Any = js.native
+    /* private */ var callButtonHandler: js.Any = js.native
     
-    var cbClick: js.Any = js.native
+    /* private */ var cbClick: js.Any = js.native
     
     @JSName("componentDidLoad")
     def componentDidLoad_MAlert(): Unit = js.native
@@ -59,21 +59,21 @@ object alertMod {
     @JSName("disconnectedCallback")
     def disconnectedCallback_MAlert(): Unit = js.native
     
-    var dispatchCancelHandler: js.Any = js.native
+    /* private */ var dispatchCancelHandler: js.Any = js.native
     
     @JSName("el")
     var el_Alert: HTMLIonAlertElement = js.native
     
-    var gesture: js.Any = js.native
+    /* private */ var gesture: js.Any = js.native
     
-    var getValues: js.Any = js.native
+    /* private */ var getValues: js.Any = js.native
     
     /**
       * The main title in the heading of the alert.
       */
     var header: js.UndefOr[String] = js.native
     
-    var inputType: js.Any = js.native
+    /* private */ var inputType: js.Any = js.native
     
     /**
       * Array of input to show in the alert.
@@ -95,7 +95,7 @@ object alertMod {
       */
     var message: js.UndefOr[String | IonicSafeString] = js.native
     
-    var onBackdropTap: js.Any = js.native
+    /* private */ var onBackdropTap: js.Any = js.native
     
     /**
       * Returns a promise that resolves when the alert did dismiss.
@@ -109,21 +109,21 @@ object alertMod {
       */
     def onWillDismiss[T](): js.Promise[OverlayEventDetail[T]] = js.native
     
-    var processedButtons: js.Any = js.native
+    /* private */ var processedButtons: js.Any = js.native
     
-    var processedInputs: js.Any = js.native
+    /* private */ var processedInputs: js.Any = js.native
     
-    var rbClick: js.Any = js.native
+    /* private */ var rbClick: js.Any = js.native
     
-    var renderAlertButtons: js.Any = js.native
+    /* private */ var renderAlertButtons: js.Any = js.native
     
-    var renderAlertInputs: js.Any = js.native
+    /* private */ var renderAlertInputs: js.Any = js.native
     
-    var renderCheckbox: js.Any = js.native
+    /* private */ var renderCheckbox: js.Any = js.native
     
-    var renderInput: js.Any = js.native
+    /* private */ var renderInput: js.Any = js.native
     
-    var renderRadio: js.Any = js.native
+    /* private */ var renderRadio: js.Any = js.native
     
     @JSName("render")
     def render_MAlert(): js.Any = js.native
@@ -140,6 +140,6 @@ object alertMod {
       */
     var translucent: Boolean = js.native
     
-    var wrapperEl: js.Any = js.native
+    /* private */ var wrapperEl: js.Any = js.native
   }
 }

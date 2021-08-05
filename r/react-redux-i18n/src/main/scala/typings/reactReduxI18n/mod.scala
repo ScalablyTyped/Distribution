@@ -34,8 +34,7 @@ object mod {
   @JSImport("react-redux-i18n", "I18n")
   @js.native
   def I18n: I18n = js.native
-  @scala.inline
-  def I18n_=(x: I18n): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("I18n")(x.asInstanceOf[js.Any])
+  inline def I18n_=(x: I18n): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("I18n")(x.asInstanceOf[js.Any])
   
   @JSImport("react-redux-i18n", "Localize")
   @js.native
@@ -61,23 +60,16 @@ object mod {
     def this(props: TranslateProps, context: js.Any) = this()
   }
   
-  @scala.inline
-  def i18nReducer(): Reducer[I18nState, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")().asInstanceOf[Reducer[I18nState, AnyAction]]
-  @scala.inline
-  def i18nReducer(state: js.Any): Reducer[I18nState, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")(state.asInstanceOf[js.Any]).asInstanceOf[Reducer[I18nState, AnyAction]]
-  @scala.inline
-  def i18nReducer(state: js.Any, options: js.Any): Reducer[I18nState, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reducer[I18nState, AnyAction]]
-  @scala.inline
-  def i18nReducer(state: Unit, options: js.Any): Reducer[I18nState, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reducer[I18nState, AnyAction]]
+  inline def i18nReducer(): Reducer[I18nState, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")().asInstanceOf[Reducer[I18nState, AnyAction]]
+  inline def i18nReducer(state: js.Any): Reducer[I18nState, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")(state.asInstanceOf[js.Any]).asInstanceOf[Reducer[I18nState, AnyAction]]
+  inline def i18nReducer(state: js.Any, options: js.Any): Reducer[I18nState, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reducer[I18nState, AnyAction]]
+  inline def i18nReducer(state: Unit, options: js.Any): Reducer[I18nState, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reducer[I18nState, AnyAction]]
   
-  @scala.inline
-  def loadTranslations(translationsObject: TranslationObjects): DispatchCallback[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTranslations")(translationsObject.asInstanceOf[js.Any]).asInstanceOf[DispatchCallback[js.Any]]
+  inline def loadTranslations(translationsObject: TranslationObjects): DispatchCallback[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTranslations")(translationsObject.asInstanceOf[js.Any]).asInstanceOf[DispatchCallback[js.Any]]
   
-  @scala.inline
-  def setLocale(locale: String): DispatchCallback[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[DispatchCallback[js.Any]]
+  inline def setLocale(locale: String): DispatchCallback[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[DispatchCallback[js.Any]]
   
-  @scala.inline
-  def syncTranslationWithStore(store: Store[js.Any, AnyAction]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("syncTranslationWithStore")(store.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def syncTranslationWithStore(store: Store[js.Any, AnyAction]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("syncTranslationWithStore")(store.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type DispatchCallback[S /* <: Action[js.Any] */] = js.Function2[
     /* dispatch */ js.UndefOr[Dispatch[S]], 
@@ -93,20 +85,16 @@ object mod {
   }
   object I18nState {
     
-    @scala.inline
-    def apply(locale: String, translations: TranslationObjects): I18nState = {
+    inline def apply(locale: String, translations: TranslationObjects): I18nState = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
       __obj.asInstanceOf[I18nState]
     }
     
-    @scala.inline
-    implicit class I18nStateMutableBuilder[Self <: I18nState] (val x: Self) extends AnyVal {
+    extension [Self <: I18nState](x: Self) {
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslations(value: TranslationObjects): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: TranslationObjects): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,53 +116,38 @@ object mod {
   }
   object LocalizeProps {
     
-    @scala.inline
-    def apply(value: String | Double | js.Object): LocalizeProps = {
+    inline def apply(value: String | Double | js.Object): LocalizeProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalizeProps]
     }
     
-    @scala.inline
-    implicit class LocalizePropsMutableBuilder[Self <: LocalizeProps] (val x: Self) extends AnyVal {
+    extension [Self <: LocalizeProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDangerousHTML(value: Boolean): Self = StObject.set(x, "dangerousHTML", value.asInstanceOf[js.Any])
+      inline def setDangerousHTML(value: Boolean): Self = StObject.set(x, "dangerousHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDangerousHTMLUndefined: Self = StObject.set(x, "dangerousHTML", js.undefined)
+      inline def setDangerousHTMLUndefined: Self = StObject.set(x, "dangerousHTML", js.undefined)
       
-      @scala.inline
-      def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+      inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTag(value: ReactType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ReactType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def setValue(value: String | Double | js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Double | js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -198,41 +171,30 @@ object mod {
   }
   object TranslateProps {
     
-    @scala.inline
-    def apply(value: String): TranslateProps = {
+    inline def apply(value: String): TranslateProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[TranslateProps]
     }
     
-    @scala.inline
-    implicit class TranslatePropsMutableBuilder[Self <: TranslateProps] (val x: Self) extends AnyVal {
+    extension [Self <: TranslateProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDangerousHTML(value: Boolean): Self = StObject.set(x, "dangerousHTML", value.asInstanceOf[js.Any])
+      inline def setDangerousHTML(value: Boolean): Self = StObject.set(x, "dangerousHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDangerousHTMLUndefined: Self = StObject.set(x, "dangerousHTML", js.undefined)
+      inline def setDangerousHTMLUndefined: Self = StObject.set(x, "dangerousHTML", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTag(value: ReactType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ReactType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

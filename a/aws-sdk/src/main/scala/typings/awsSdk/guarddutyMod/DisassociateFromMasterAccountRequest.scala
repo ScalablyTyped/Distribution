@@ -13,16 +13,13 @@ trait DisassociateFromMasterAccountRequest extends StObject {
 }
 object DisassociateFromMasterAccountRequest {
   
-  @scala.inline
-  def apply(DetectorId: DetectorId): DisassociateFromMasterAccountRequest = {
+  inline def apply(DetectorId: DetectorId): DisassociateFromMasterAccountRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateFromMasterAccountRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateFromMasterAccountRequestMutableBuilder[Self <: DisassociateFromMasterAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateFromMasterAccountRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }
 }

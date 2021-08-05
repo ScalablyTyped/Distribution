@@ -18,25 +18,19 @@ trait GenerateClientCertificateRequest extends StObject {
 }
 object GenerateClientCertificateRequest {
   
-  @scala.inline
-  def apply(): GenerateClientCertificateRequest = {
+  inline def apply(): GenerateClientCertificateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateClientCertificateRequest]
   }
   
-  @scala.inline
-  implicit class GenerateClientCertificateRequestMutableBuilder[Self <: GenerateClientCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateClientCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setTags(value: MapOfStringToString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: MapOfStringToString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

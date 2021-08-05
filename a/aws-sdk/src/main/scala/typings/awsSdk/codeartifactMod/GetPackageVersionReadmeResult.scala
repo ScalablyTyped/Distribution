@@ -39,49 +39,35 @@ trait GetPackageVersionReadmeResult extends StObject {
 }
 object GetPackageVersionReadmeResult {
   
-  @scala.inline
-  def apply(): GetPackageVersionReadmeResult = {
+  inline def apply(): GetPackageVersionReadmeResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPackageVersionReadmeResult]
   }
   
-  @scala.inline
-  implicit class GetPackageVersionReadmeResultMutableBuilder[Self <: GetPackageVersionReadmeResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetPackageVersionReadmeResult](x: Self) {
     
-    @scala.inline
-    def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setReadme(value: String): Self = StObject.set(x, "readme", value.asInstanceOf[js.Any])
+    inline def setReadme(value: String): Self = StObject.set(x, "readme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadmeUndefined: Self = StObject.set(x, "readme", js.undefined)
+    inline def setReadmeUndefined: Self = StObject.set(x, "readme", js.undefined)
     
-    @scala.inline
-    def setVersion(value: PackageVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: PackageVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionRevision(value: PackageVersionRevision): Self = StObject.set(x, "versionRevision", value.asInstanceOf[js.Any])
+    inline def setVersionRevision(value: PackageVersionRevision): Self = StObject.set(x, "versionRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionRevisionUndefined: Self = StObject.set(x, "versionRevision", js.undefined)
+    inline def setVersionRevisionUndefined: Self = StObject.set(x, "versionRevision", js.undefined)
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def set_package(value: PackageName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: PackageName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
+    inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

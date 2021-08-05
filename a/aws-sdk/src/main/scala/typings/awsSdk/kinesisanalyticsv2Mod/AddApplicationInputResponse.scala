@@ -23,34 +23,25 @@ trait AddApplicationInputResponse extends StObject {
 }
 object AddApplicationInputResponse {
   
-  @scala.inline
-  def apply(): AddApplicationInputResponse = {
+  inline def apply(): AddApplicationInputResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddApplicationInputResponse]
   }
   
-  @scala.inline
-  implicit class AddApplicationInputResponseMutableBuilder[Self <: AddApplicationInputResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddApplicationInputResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
+    inline def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationARNUndefined: Self = StObject.set(x, "ApplicationARN", js.undefined)
+    inline def setApplicationARNUndefined: Self = StObject.set(x, "ApplicationARN", js.undefined)
     
-    @scala.inline
-    def setApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "ApplicationVersionId", value.asInstanceOf[js.Any])
+    inline def setApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "ApplicationVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVersionIdUndefined: Self = StObject.set(x, "ApplicationVersionId", js.undefined)
+    inline def setApplicationVersionIdUndefined: Self = StObject.set(x, "ApplicationVersionId", js.undefined)
     
-    @scala.inline
-    def setInputDescriptions(value: InputDescriptions): Self = StObject.set(x, "InputDescriptions", value.asInstanceOf[js.Any])
+    inline def setInputDescriptions(value: InputDescriptions): Self = StObject.set(x, "InputDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDescriptionsUndefined: Self = StObject.set(x, "InputDescriptions", js.undefined)
+    inline def setInputDescriptionsUndefined: Self = StObject.set(x, "InputDescriptions", js.undefined)
     
-    @scala.inline
-    def setInputDescriptionsVarargs(value: InputDescription*): Self = StObject.set(x, "InputDescriptions", js.Array(value :_*))
+    inline def setInputDescriptionsVarargs(value: InputDescription*): Self = StObject.set(x, "InputDescriptions", js.Array(value :_*))
   }
 }

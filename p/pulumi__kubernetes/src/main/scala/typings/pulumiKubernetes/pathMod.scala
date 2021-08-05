@@ -10,9 +10,7 @@ object pathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def quotePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("quotePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def quotePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("quotePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def quoteWindowsPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("quoteWindowsPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def quoteWindowsPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("quoteWindowsPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
 }

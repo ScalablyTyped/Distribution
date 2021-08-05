@@ -18,25 +18,19 @@ trait EnableSecurityHubRequest extends StObject {
 }
 object EnableSecurityHubRequest {
   
-  @scala.inline
-  def apply(): EnableSecurityHubRequest = {
+  inline def apply(): EnableSecurityHubRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnableSecurityHubRequest]
   }
   
-  @scala.inline
-  implicit class EnableSecurityHubRequestMutableBuilder[Self <: EnableSecurityHubRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnableSecurityHubRequest](x: Self) {
     
-    @scala.inline
-    def setEnableDefaultStandards(value: Boolean): Self = StObject.set(x, "EnableDefaultStandards", value.asInstanceOf[js.Any])
+    inline def setEnableDefaultStandards(value: Boolean): Self = StObject.set(x, "EnableDefaultStandards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDefaultStandardsUndefined: Self = StObject.set(x, "EnableDefaultStandards", js.undefined)
+    inline def setEnableDefaultStandardsUndefined: Self = StObject.set(x, "EnableDefaultStandards", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

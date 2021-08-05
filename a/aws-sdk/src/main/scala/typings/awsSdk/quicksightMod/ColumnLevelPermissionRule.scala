@@ -18,31 +18,23 @@ trait ColumnLevelPermissionRule extends StObject {
 }
 object ColumnLevelPermissionRule {
   
-  @scala.inline
-  def apply(): ColumnLevelPermissionRule = {
+  inline def apply(): ColumnLevelPermissionRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnLevelPermissionRule]
   }
   
-  @scala.inline
-  implicit class ColumnLevelPermissionRuleMutableBuilder[Self <: ColumnLevelPermissionRule] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnLevelPermissionRule](x: Self) {
     
-    @scala.inline
-    def setColumnNames(value: ColumnNameList): Self = StObject.set(x, "ColumnNames", value.asInstanceOf[js.Any])
+    inline def setColumnNames(value: ColumnNameList): Self = StObject.set(x, "ColumnNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnNamesUndefined: Self = StObject.set(x, "ColumnNames", js.undefined)
+    inline def setColumnNamesUndefined: Self = StObject.set(x, "ColumnNames", js.undefined)
     
-    @scala.inline
-    def setColumnNamesVarargs(value: String*): Self = StObject.set(x, "ColumnNames", js.Array(value :_*))
+    inline def setColumnNamesVarargs(value: String*): Self = StObject.set(x, "ColumnNames", js.Array(value :_*))
     
-    @scala.inline
-    def setPrincipals(value: PrincipalList): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
+    inline def setPrincipals(value: PrincipalList): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalsUndefined: Self = StObject.set(x, "Principals", js.undefined)
+    inline def setPrincipalsUndefined: Self = StObject.set(x, "Principals", js.undefined)
     
-    @scala.inline
-    def setPrincipalsVarargs(value: String*): Self = StObject.set(x, "Principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: String*): Self = StObject.set(x, "Principals", js.Array(value :_*))
   }
 }

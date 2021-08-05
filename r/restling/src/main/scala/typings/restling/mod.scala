@@ -13,94 +13,56 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def allAsync(requests: js.Array[Options]): typings.bluebird.mod.^[js.Array[RestlingResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allAsync")(requests.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Array[RestlingResult]]]
-  @scala.inline
-  def allAsync(requests: StringDictionary[Options]): typings.bluebird.mod.^[StringDictionary[RestlingResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allAsync")(requests.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[StringDictionary[RestlingResult]]]
+  inline def allAsync(requests: js.Array[Options]): typings.bluebird.mod.^[js.Array[RestlingResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allAsync")(requests.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Array[RestlingResult]]]
+  inline def allAsync(requests: StringDictionary[Options]): typings.bluebird.mod.^[StringDictionary[RestlingResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allAsync")(requests.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[StringDictionary[RestlingResult]]]
   
-  @scala.inline
-  def del(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def del(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def del(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def del(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @scala.inline
-  def get(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def get(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def get(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def get(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @scala.inline
-  def head(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def head(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def head(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def head(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @scala.inline
-  def json(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def json(url: String, data: js.Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def json(url: String, data: js.Any, options: Unit, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def json(url: String, data: js.Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def json(url: String, data: js.Any, options: RestlingOptions, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def json(url: String, data: Unit, options: Unit, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def json(url: String, data: Unit, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def json(url: String, data: Unit, options: RestlingOptions, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def json(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def json(url: String, data: js.Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def json(url: String, data: js.Any, options: Unit, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def json(url: String, data: js.Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def json(url: String, data: js.Any, options: RestlingOptions, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def json(url: String, data: Unit, options: Unit, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def json(url: String, data: Unit, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def json(url: String, data: Unit, options: RestlingOptions, method: String): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @scala.inline
-  def patch(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def patch(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def patch(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def patch(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @scala.inline
-  def patchJson(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def patchJson(url: String, data: js.Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def patchJson(url: String, data: js.Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def patchJson(url: String, data: Unit, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def patchJson(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def patchJson(url: String, data: js.Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def patchJson(url: String, data: js.Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def patchJson(url: String, data: Unit, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("patchJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @scala.inline
-  def post(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def post(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def post(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def post(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @scala.inline
-  def postJson(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def postJson(url: String, data: js.Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def postJson(url: String, data: js.Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def postJson(url: String, data: Unit, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def postJson(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def postJson(url: String, data: js.Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def postJson(url: String, data: js.Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def postJson(url: String, data: Unit, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("postJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @scala.inline
-  def put(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def put(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def put(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def put(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @scala.inline
-  def putJson(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def putJson(url: String, data: js.Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def putJson(url: String, data: js.Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def putJson(url: String, data: Unit, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def putJson(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def putJson(url: String, data: js.Any): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def putJson(url: String, data: js.Any, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def putJson(url: String, data: Unit, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("putJson")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @scala.inline
-  def request(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
-  @scala.inline
-  def request(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def request(url: String): typings.bluebird.mod.^[RestlingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
+  inline def request(url: String, options: RestlingOptions): typings.bluebird.mod.^[RestlingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[RestlingResult]]
   
-  @scala.inline
-  def settleAsync(requests: js.Array[Options]): typings.bluebird.mod.^[js.Array[RestlingResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("settleAsync")(requests.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Array[RestlingResult]]]
-  @scala.inline
-  def settleAsync(requests: StringDictionary[Options]): typings.bluebird.mod.^[StringDictionary[RestlingResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("settleAsync")(requests.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[StringDictionary[RestlingResult]]]
+  inline def settleAsync(requests: js.Array[Options]): typings.bluebird.mod.^[js.Array[RestlingResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("settleAsync")(requests.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Array[RestlingResult]]]
+  inline def settleAsync(requests: StringDictionary[Options]): typings.bluebird.mod.^[StringDictionary[RestlingResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("settleAsync")(requests.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[StringDictionary[RestlingResult]]]
   
   type RestlerOptionsHeader = StringDictionary[String]
   
@@ -194,116 +156,80 @@ object mod {
   }
   object RestlingOptions {
     
-    @scala.inline
-    def apply(): RestlingOptions = {
+    inline def apply(): RestlingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RestlingOptions]
     }
     
-    @scala.inline
-    implicit class RestlingOptionsMutableBuilder[Self <: RestlingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RestlingOptions](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+      inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
       
-      @scala.inline
-      def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDecoding(value: String): Self = StObject.set(x, "decoding", value.asInstanceOf[js.Any])
+      inline def setDecoding(value: String): Self = StObject.set(x, "decoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodingUndefined: Self = StObject.set(x, "decoding", js.undefined)
+      inline def setDecodingUndefined: Self = StObject.set(x, "decoding", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
+      inline def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowRedirectsUndefined: Self = StObject.set(x, "followRedirects", js.undefined)
+      inline def setFollowRedirectsUndefined: Self = StObject.set(x, "followRedirects", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: RestlerOptionsHeader): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: RestlerOptionsHeader): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setMultipart(value: Boolean): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
+      inline def setMultipart(value: Boolean): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
+      inline def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
       
-      @scala.inline
-      def setParser(value: js.Any): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+      inline def setParser(value: js.Any): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
+      inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
+      inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
+      inline def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
       
-      @scala.inline
-      def setXml2js(value: js.Any): Self = StObject.set(x, "xml2js", value.asInstanceOf[js.Any])
+      inline def setXml2js(value: js.Any): Self = StObject.set(x, "xml2js", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXml2jsUndefined: Self = StObject.set(x, "xml2js", js.undefined)
+      inline def setXml2jsUndefined: Self = StObject.set(x, "xml2js", js.undefined)
     }
   }
   
@@ -315,26 +241,20 @@ object mod {
   }
   object RestlingResult {
     
-    @scala.inline
-    def apply(): RestlingResult = {
+    inline def apply(): RestlingResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RestlingResult]
     }
     
-    @scala.inline
-    implicit class RestlingResultMutableBuilder[Self <: RestlingResult] (val x: Self) extends AnyVal {
+    extension [Self <: RestlingResult](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setResponse(value: ServerResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: ServerResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     }
   }
 }

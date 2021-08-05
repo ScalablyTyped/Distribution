@@ -11,10 +11,8 @@ object typeScriptVueExtensionConfigurationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createTypeScriptVueExtensionConfiguration(): TypeScriptVueExtensionConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptVueExtensionConfiguration")().asInstanceOf[TypeScriptVueExtensionConfiguration]
-  @scala.inline
-  def createTypeScriptVueExtensionConfiguration(options: TypeScriptVueExtensionOptions): TypeScriptVueExtensionConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptVueExtensionConfiguration")(options.asInstanceOf[js.Any]).asInstanceOf[TypeScriptVueExtensionConfiguration]
+  inline def createTypeScriptVueExtensionConfiguration(): TypeScriptVueExtensionConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptVueExtensionConfiguration")().asInstanceOf[TypeScriptVueExtensionConfiguration]
+  inline def createTypeScriptVueExtensionConfiguration(options: TypeScriptVueExtensionOptions): TypeScriptVueExtensionConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptVueExtensionConfiguration")(options.asInstanceOf[js.Any]).asInstanceOf[TypeScriptVueExtensionConfiguration]
   
   trait TypeScriptVueExtensionConfiguration extends StObject {
     
@@ -24,20 +22,16 @@ object typeScriptVueExtensionConfigurationMod {
   }
   object TypeScriptVueExtensionConfiguration {
     
-    @scala.inline
-    def apply(compiler: String, enabled: Boolean): TypeScriptVueExtensionConfiguration = {
+    inline def apply(compiler: String, enabled: Boolean): TypeScriptVueExtensionConfiguration = {
       val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeScriptVueExtensionConfiguration]
     }
     
-    @scala.inline
-    implicit class TypeScriptVueExtensionConfigurationMutableBuilder[Self <: TypeScriptVueExtensionConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: TypeScriptVueExtensionConfiguration](x: Self) {
       
-      @scala.inline
-      def setCompiler(value: String): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+      inline def setCompiler(value: String): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
   }
 }

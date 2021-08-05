@@ -18,10 +18,8 @@ object BusyIndicator {
     * @param oListener Object on which to call the given function.
     * @returns <code>this</code> to allow method chaining
     */
-  @scala.inline
-  def attachClose(fnFunction: js.Any): TypeofBusyIndicator = ^.asInstanceOf[js.Dynamic].applyDynamic("attachClose")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[TypeofBusyIndicator]
-  @scala.inline
-  def attachClose(fnFunction: js.Any, oListener: js.Any): TypeofBusyIndicator = (^.asInstanceOf[js.Dynamic].applyDynamic("attachClose")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[TypeofBusyIndicator]
+  inline def attachClose(fnFunction: js.Any): TypeofBusyIndicator = ^.asInstanceOf[js.Dynamic].applyDynamic("attachClose")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[TypeofBusyIndicator]
+  inline def attachClose(fnFunction: js.Any, oListener: js.Any): TypeofBusyIndicator = (^.asInstanceOf[js.Dynamic].applyDynamic("attachClose")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[TypeofBusyIndicator]
   
   /**
     * Registers a handler for the "open" event.
@@ -30,10 +28,8 @@ object BusyIndicator {
     * @param oListener Object on which to call the given function.
     * @returns <code>this</code> to allow method chaining
     */
-  @scala.inline
-  def attachOpen(fnFunction: js.Any): TypeofBusyIndicator = ^.asInstanceOf[js.Dynamic].applyDynamic("attachOpen")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[TypeofBusyIndicator]
-  @scala.inline
-  def attachOpen(fnFunction: js.Any, oListener: js.Any): TypeofBusyIndicator = (^.asInstanceOf[js.Dynamic].applyDynamic("attachOpen")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[TypeofBusyIndicator]
+  inline def attachOpen(fnFunction: js.Any): TypeofBusyIndicator = ^.asInstanceOf[js.Dynamic].applyDynamic("attachOpen")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[TypeofBusyIndicator]
+  inline def attachOpen(fnFunction: js.Any, oListener: js.Any): TypeofBusyIndicator = (^.asInstanceOf[js.Dynamic].applyDynamic("attachOpen")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[TypeofBusyIndicator]
   
   /**
     * Unregisters a handler for the "close" event
@@ -41,8 +37,7 @@ object BusyIndicator {
     * @param oListener Object on which the given function had to be called.
     * @returns <code>this</code> to allow method chaining
     */
-  @scala.inline
-  def detachClose(fnFunction: js.Any, oListener: js.Any): TypeofBusyIndicator = (^.asInstanceOf[js.Dynamic].applyDynamic("detachClose")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[TypeofBusyIndicator]
+  inline def detachClose(fnFunction: js.Any, oListener: js.Any): TypeofBusyIndicator = (^.asInstanceOf[js.Dynamic].applyDynamic("detachClose")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[TypeofBusyIndicator]
   
   /**
     * Unregisters a handler for the "open" event
@@ -50,14 +45,12 @@ object BusyIndicator {
     * @param oListener Object on which the given function had to be called.
     * @returns <code>this</code> to allow method chaining
     */
-  @scala.inline
-  def detachOpen(fnFunction: js.Any, oListener: js.Any): TypeofBusyIndicator = (^.asInstanceOf[js.Dynamic].applyDynamic("detachOpen")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[TypeofBusyIndicator]
+  inline def detachOpen(fnFunction: js.Any, oListener: js.Any): TypeofBusyIndicator = (^.asInstanceOf[js.Dynamic].applyDynamic("detachOpen")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[TypeofBusyIndicator]
   
   /**
     * Removes the BusyIndicator from the screen
     */
-  @scala.inline
-  def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
+  inline def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
   
   /**
     * Displays the BusyIndicator and starts blocking all user input.This only happens after some delay and
@@ -67,6 +60,5 @@ object BusyIndicator {
     * not opened if hide() is called                      before end of the delay. If no delay (or no
     * valid                      delay) is given, the default value is used.
     */
-  @scala.inline
-  def show(iDelay: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(iDelay.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def show(iDelay: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(iDelay.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

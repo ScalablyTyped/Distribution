@@ -28,37 +28,27 @@ trait CreateDatasetGroupRequest extends StObject {
 }
 object CreateDatasetGroupRequest {
   
-  @scala.inline
-  def apply(DatasetGroupName: Name, Domain: Domain): CreateDatasetGroupRequest = {
+  inline def apply(DatasetGroupName: Name, Domain: Domain): CreateDatasetGroupRequest = {
     val __obj = js.Dynamic.literal(DatasetGroupName = DatasetGroupName.asInstanceOf[js.Any], Domain = Domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDatasetGroupRequest]
   }
   
-  @scala.inline
-  implicit class CreateDatasetGroupRequestMutableBuilder[Self <: CreateDatasetGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDatasetGroupRequest](x: Self) {
     
-    @scala.inline
-    def setDatasetArns(value: ArnList): Self = StObject.set(x, "DatasetArns", value.asInstanceOf[js.Any])
+    inline def setDatasetArns(value: ArnList): Self = StObject.set(x, "DatasetArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetArnsUndefined: Self = StObject.set(x, "DatasetArns", js.undefined)
+    inline def setDatasetArnsUndefined: Self = StObject.set(x, "DatasetArns", js.undefined)
     
-    @scala.inline
-    def setDatasetArnsVarargs(value: Arn*): Self = StObject.set(x, "DatasetArns", js.Array(value :_*))
+    inline def setDatasetArnsVarargs(value: Arn*): Self = StObject.set(x, "DatasetArns", js.Array(value :_*))
     
-    @scala.inline
-    def setDatasetGroupName(value: Name): Self = StObject.set(x, "DatasetGroupName", value.asInstanceOf[js.Any])
+    inline def setDatasetGroupName(value: Name): Self = StObject.set(x, "DatasetGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomain(value: Domain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: Domain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

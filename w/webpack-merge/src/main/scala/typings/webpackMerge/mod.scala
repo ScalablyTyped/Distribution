@@ -39,28 +39,22 @@ object mod extends Shortcut {
   }
   object CustomizeOptions {
     
-    @scala.inline
-    def apply(): CustomizeOptions = {
+    inline def apply(): CustomizeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomizeOptions]
     }
     
-    @scala.inline
-    implicit class CustomizeOptionsMutableBuilder[Self <: CustomizeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CustomizeOptions](x: Self) {
       
-      @scala.inline
-      def setCustomizeArray(
+      inline def setCustomizeArray(
         value: ((/* a */ js.Array[js.Any]) | (/* field */ String), /* b */ js.Array[js.Any | String], (/* keyFn */ js.Function1[/* field */ js.Any, String]) | (/* key */ String)) => js.UndefOr[js.Array[js.Any] | CustomizeArrayFunction | Null]
       ): Self = StObject.set(x, "customizeArray", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCustomizeArrayUndefined: Self = StObject.set(x, "customizeArray", js.undefined)
+      inline def setCustomizeArrayUndefined: Self = StObject.set(x, "customizeArray", js.undefined)
       
-      @scala.inline
-      def setCustomizeObject(value: (/* a */ js.Object, /* b */ js.Object, /* key */ String) => js.UndefOr[js.Object | Null]): Self = StObject.set(x, "customizeObject", js.Any.fromFunction3(value))
+      inline def setCustomizeObject(value: (/* a */ js.Object, /* b */ js.Object, /* key */ String) => js.UndefOr[js.Object | Null]): Self = StObject.set(x, "customizeObject", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCustomizeObjectUndefined: Self = StObject.set(x, "customizeObject", js.undefined)
+      inline def setCustomizeObjectUndefined: Self = StObject.set(x, "customizeObject", js.undefined)
     }
   }
   
@@ -74,14 +68,11 @@ object mod extends Shortcut {
   trait MergeStrategy extends StObject
   object MergeStrategy {
     
-    @scala.inline
-    def append: typings.webpackMerge.webpackMergeStrings.append = "append".asInstanceOf[typings.webpackMerge.webpackMergeStrings.append]
+    inline def append: typings.webpackMerge.webpackMergeStrings.append = "append".asInstanceOf[typings.webpackMerge.webpackMergeStrings.append]
     
-    @scala.inline
-    def prepend: typings.webpackMerge.webpackMergeStrings.prepend = "prepend".asInstanceOf[typings.webpackMerge.webpackMergeStrings.prepend]
+    inline def prepend: typings.webpackMerge.webpackMergeStrings.prepend = "prepend".asInstanceOf[typings.webpackMerge.webpackMergeStrings.prepend]
     
-    @scala.inline
-    def replace: typings.webpackMerge.webpackMergeStrings.replace = "replace".asInstanceOf[typings.webpackMerge.webpackMergeStrings.replace]
+    inline def replace: typings.webpackMerge.webpackMergeStrings.replace = "replace".asInstanceOf[typings.webpackMerge.webpackMergeStrings.replace]
   }
   
   type MultipleConfiguration = StringDictionary[

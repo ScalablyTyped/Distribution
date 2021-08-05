@@ -24,8 +24,7 @@ object Modal {
   @JSImport("react-bootstrap", "Modal.Body")
   @js.native
   def Body: Instantiable0[typings.reactBootstrap.modalBodyMod.^] = js.native
-  @scala.inline
-  def Body_=(x: Instantiable0[typings.reactBootstrap.modalBodyMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
+  inline def Body_=(x: Instantiable0[typings.reactBootstrap.modalBodyMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Modal.Dialog")
@@ -36,8 +35,7 @@ object Modal {
   @JSImport("react-bootstrap", "Modal.Dialog")
   @js.native
   def Dialog: Instantiable0[typings.reactBootstrap.modalDialogMod.^] = js.native
-  @scala.inline
-  def Dialog_=(x: Instantiable0[typings.reactBootstrap.modalDialogMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dialog")(x.asInstanceOf[js.Any])
+  inline def Dialog_=(x: Instantiable0[typings.reactBootstrap.modalDialogMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dialog")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Modal.Footer")
@@ -48,8 +46,7 @@ object Modal {
   @JSImport("react-bootstrap", "Modal.Footer")
   @js.native
   def Footer: Instantiable0[typings.reactBootstrap.modalFooterMod.^] = js.native
-  @scala.inline
-  def Footer_=(x: Instantiable0[typings.reactBootstrap.modalFooterMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
+  inline def Footer_=(x: Instantiable0[typings.reactBootstrap.modalFooterMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Modal.Header")
@@ -60,8 +57,7 @@ object Modal {
   @JSImport("react-bootstrap", "Modal.Header")
   @js.native
   def Header: Instantiable0[typings.reactBootstrap.modalHeaderMod.^] = js.native
-  @scala.inline
-  def Header_=(x: Instantiable0[typings.reactBootstrap.modalHeaderMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
+  inline def Header_=(x: Instantiable0[typings.reactBootstrap.modalHeaderMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Modal.Title")
@@ -72,6 +68,5 @@ object Modal {
   @JSImport("react-bootstrap", "Modal.Title")
   @js.native
   def Title: Instantiable0[typings.reactBootstrap.modalTitleMod.^] = js.native
-  @scala.inline
-  def Title_=(x: Instantiable0[typings.reactBootstrap.modalTitleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
+  inline def Title_=(x: Instantiable0[typings.reactBootstrap.modalTitleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
 }

@@ -13,16 +13,13 @@ trait GetDomainSnapshotOption extends StObject {
 }
 object GetDomainSnapshotOption {
   
-  @scala.inline
-  def apply(automatedSnapshotStartHour: Double): GetDomainSnapshotOption = {
+  inline def apply(automatedSnapshotStartHour: Double): GetDomainSnapshotOption = {
     val __obj = js.Dynamic.literal(automatedSnapshotStartHour = automatedSnapshotStartHour.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDomainSnapshotOption]
   }
   
-  @scala.inline
-  implicit class GetDomainSnapshotOptionMutableBuilder[Self <: GetDomainSnapshotOption] (val x: Self) extends AnyVal {
+  extension [Self <: GetDomainSnapshotOption](x: Self) {
     
-    @scala.inline
-    def setAutomatedSnapshotStartHour(value: Double): Self = StObject.set(x, "automatedSnapshotStartHour", value.asInstanceOf[js.Any])
+    inline def setAutomatedSnapshotStartHour(value: Double): Self = StObject.set(x, "automatedSnapshotStartHour", value.asInstanceOf[js.Any])
   }
 }

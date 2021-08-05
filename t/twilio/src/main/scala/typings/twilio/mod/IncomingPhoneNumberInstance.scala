@@ -17,16 +17,13 @@ trait IncomingPhoneNumberInstance
 }
 object IncomingPhoneNumberInstance {
   
-  @scala.inline
-  def apply(delete: RestMethod, get: RestMethod, post: RestMethod, put: RestMethod, update: RestMethod): IncomingPhoneNumberInstance = {
+  inline def apply(delete: RestMethod, get: RestMethod, post: RestMethod, put: RestMethod, update: RestMethod): IncomingPhoneNumberInstance = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncomingPhoneNumberInstance]
   }
   
-  @scala.inline
-  implicit class IncomingPhoneNumberInstanceMutableBuilder[Self <: IncomingPhoneNumberInstance] (val x: Self) extends AnyVal {
+  extension [Self <: IncomingPhoneNumberInstance](x: Self) {
     
-    @scala.inline
-    def setPut(value: RestMethod): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: RestMethod): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

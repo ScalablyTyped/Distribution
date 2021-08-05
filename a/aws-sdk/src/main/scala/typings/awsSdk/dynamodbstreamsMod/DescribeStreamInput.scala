@@ -23,28 +23,21 @@ trait DescribeStreamInput extends StObject {
 }
 object DescribeStreamInput {
   
-  @scala.inline
-  def apply(StreamArn: StreamArn): DescribeStreamInput = {
+  inline def apply(StreamArn: StreamArn): DescribeStreamInput = {
     val __obj = js.Dynamic.literal(StreamArn = StreamArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStreamInput]
   }
   
-  @scala.inline
-  implicit class DescribeStreamInputMutableBuilder[Self <: DescribeStreamInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStreamInput](x: Self) {
     
-    @scala.inline
-    def setExclusiveStartShardId(value: ShardId): Self = StObject.set(x, "ExclusiveStartShardId", value.asInstanceOf[js.Any])
+    inline def setExclusiveStartShardId(value: ShardId): Self = StObject.set(x, "ExclusiveStartShardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveStartShardIdUndefined: Self = StObject.set(x, "ExclusiveStartShardId", js.undefined)
+    inline def setExclusiveStartShardIdUndefined: Self = StObject.set(x, "ExclusiveStartShardId", js.undefined)
     
-    @scala.inline
-    def setLimit(value: PositiveIntegerObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PositiveIntegerObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setStreamArn(value: StreamArn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
+    inline def setStreamArn(value: StreamArn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
   }
 }

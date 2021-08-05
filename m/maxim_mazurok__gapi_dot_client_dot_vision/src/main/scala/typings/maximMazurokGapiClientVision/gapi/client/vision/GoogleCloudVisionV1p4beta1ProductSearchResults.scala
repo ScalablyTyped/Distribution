@@ -23,37 +23,27 @@ trait GoogleCloudVisionV1p4beta1ProductSearchResults extends StObject {
 }
 object GoogleCloudVisionV1p4beta1ProductSearchResults {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p4beta1ProductSearchResults = {
+  inline def apply(): GoogleCloudVisionV1p4beta1ProductSearchResults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1ProductSearchResults]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p4beta1ProductSearchResultsMutableBuilder[Self <: GoogleCloudVisionV1p4beta1ProductSearchResults] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p4beta1ProductSearchResults](x: Self) {
     
-    @scala.inline
-    def setIndexTime(value: String): Self = StObject.set(x, "indexTime", value.asInstanceOf[js.Any])
+    inline def setIndexTime(value: String): Self = StObject.set(x, "indexTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexTimeUndefined: Self = StObject.set(x, "indexTime", js.undefined)
+    inline def setIndexTimeUndefined: Self = StObject.set(x, "indexTime", js.undefined)
     
-    @scala.inline
-    def setProductGroupedResults(value: js.Array[GoogleCloudVisionV1p4beta1ProductSearchResultsGroupedResult]): Self = StObject.set(x, "productGroupedResults", value.asInstanceOf[js.Any])
+    inline def setProductGroupedResults(value: js.Array[GoogleCloudVisionV1p4beta1ProductSearchResultsGroupedResult]): Self = StObject.set(x, "productGroupedResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductGroupedResultsUndefined: Self = StObject.set(x, "productGroupedResults", js.undefined)
+    inline def setProductGroupedResultsUndefined: Self = StObject.set(x, "productGroupedResults", js.undefined)
     
-    @scala.inline
-    def setProductGroupedResultsVarargs(value: GoogleCloudVisionV1p4beta1ProductSearchResultsGroupedResult*): Self = StObject.set(x, "productGroupedResults", js.Array(value :_*))
+    inline def setProductGroupedResultsVarargs(value: GoogleCloudVisionV1p4beta1ProductSearchResultsGroupedResult*): Self = StObject.set(x, "productGroupedResults", js.Array(value :_*))
     
-    @scala.inline
-    def setResults(value: js.Array[GoogleCloudVisionV1p4beta1ProductSearchResultsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[GoogleCloudVisionV1p4beta1ProductSearchResultsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: GoogleCloudVisionV1p4beta1ProductSearchResultsResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: GoogleCloudVisionV1p4beta1ProductSearchResultsResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

@@ -13,22 +13,17 @@ trait VirtualRouterSpec extends StObject {
 }
 object VirtualRouterSpec {
   
-  @scala.inline
-  def apply(): VirtualRouterSpec = {
+  inline def apply(): VirtualRouterSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualRouterSpec]
   }
   
-  @scala.inline
-  implicit class VirtualRouterSpecMutableBuilder[Self <: VirtualRouterSpec] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualRouterSpec](x: Self) {
     
-    @scala.inline
-    def setListeners(value: VirtualRouterListeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+    inline def setListeners(value: VirtualRouterListeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
+    inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
     
-    @scala.inline
-    def setListenersVarargs(value: VirtualRouterListener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+    inline def setListenersVarargs(value: VirtualRouterListener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
   }
 }

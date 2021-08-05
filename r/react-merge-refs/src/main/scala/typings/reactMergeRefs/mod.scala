@@ -13,6 +13,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](refs: js.Array[MutableRefObject[T] | LegacyRef[T]]): RefCallback[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(refs.asInstanceOf[js.Any]).asInstanceOf[RefCallback[T]]
+  inline def default[T](refs: js.Array[MutableRefObject[T] | LegacyRef[T]]): RefCallback[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(refs.asInstanceOf[js.Any]).asInstanceOf[RefCallback[T]]
 }

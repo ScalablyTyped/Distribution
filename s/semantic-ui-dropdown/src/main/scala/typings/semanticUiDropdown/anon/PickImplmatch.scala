@@ -14,17 +14,14 @@ trait PickImplmatch extends StObject {
 }
 object PickImplmatch {
   
-  @scala.inline
-  def apply(`match`: both | value | text): PickImplmatch = {
+  inline def apply(`match`: both | value | text): PickImplmatch = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmatch]
   }
   
-  @scala.inline
-  implicit class PickImplmatchMutableBuilder[Self <: PickImplmatch] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplmatch](x: Self) {
     
-    @scala.inline
-    def setMatch(value: both | value | text): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: both | value | text): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
   }
 }

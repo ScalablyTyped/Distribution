@@ -28,37 +28,27 @@ trait ConfusionMatrix extends StObject {
 }
 object ConfusionMatrix {
   
-  @scala.inline
-  def apply(): ConfusionMatrix = {
+  inline def apply(): ConfusionMatrix = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfusionMatrix]
   }
   
-  @scala.inline
-  implicit class ConfusionMatrixMutableBuilder[Self <: ConfusionMatrix] (val x: Self) extends AnyVal {
+  extension [Self <: ConfusionMatrix](x: Self) {
     
-    @scala.inline
-    def setNumFalseNegatives(value: RecordsCount): Self = StObject.set(x, "NumFalseNegatives", value.asInstanceOf[js.Any])
+    inline def setNumFalseNegatives(value: RecordsCount): Self = StObject.set(x, "NumFalseNegatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumFalseNegativesUndefined: Self = StObject.set(x, "NumFalseNegatives", js.undefined)
+    inline def setNumFalseNegativesUndefined: Self = StObject.set(x, "NumFalseNegatives", js.undefined)
     
-    @scala.inline
-    def setNumFalsePositives(value: RecordsCount): Self = StObject.set(x, "NumFalsePositives", value.asInstanceOf[js.Any])
+    inline def setNumFalsePositives(value: RecordsCount): Self = StObject.set(x, "NumFalsePositives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumFalsePositivesUndefined: Self = StObject.set(x, "NumFalsePositives", js.undefined)
+    inline def setNumFalsePositivesUndefined: Self = StObject.set(x, "NumFalsePositives", js.undefined)
     
-    @scala.inline
-    def setNumTrueNegatives(value: RecordsCount): Self = StObject.set(x, "NumTrueNegatives", value.asInstanceOf[js.Any])
+    inline def setNumTrueNegatives(value: RecordsCount): Self = StObject.set(x, "NumTrueNegatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumTrueNegativesUndefined: Self = StObject.set(x, "NumTrueNegatives", js.undefined)
+    inline def setNumTrueNegativesUndefined: Self = StObject.set(x, "NumTrueNegatives", js.undefined)
     
-    @scala.inline
-    def setNumTruePositives(value: RecordsCount): Self = StObject.set(x, "NumTruePositives", value.asInstanceOf[js.Any])
+    inline def setNumTruePositives(value: RecordsCount): Self = StObject.set(x, "NumTruePositives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumTruePositivesUndefined: Self = StObject.set(x, "NumTruePositives", js.undefined)
+    inline def setNumTruePositivesUndefined: Self = StObject.set(x, "NumTruePositives", js.undefined)
   }
 }

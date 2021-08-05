@@ -10,6 +10,5 @@ object createContentHashMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createContentHash(content: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentHash")(content.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def createContentHash(content: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentHash")(content.asInstanceOf[js.Any]).asInstanceOf[String]
 }

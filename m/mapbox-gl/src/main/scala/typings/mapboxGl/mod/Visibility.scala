@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Visibility extends StObject
 object Visibility {
   
-  @scala.inline
-  def none: typings.mapboxGl.mapboxGlStrings.none = "none".asInstanceOf[typings.mapboxGl.mapboxGlStrings.none]
+  inline def none: typings.mapboxGl.mapboxGlStrings.none = "none".asInstanceOf[typings.mapboxGl.mapboxGlStrings.none]
   
-  @scala.inline
-  def visible: typings.mapboxGl.mapboxGlStrings.visible = "visible".asInstanceOf[typings.mapboxGl.mapboxGlStrings.visible]
+  inline def visible: typings.mapboxGl.mapboxGlStrings.visible = "visible".asInstanceOf[typings.mapboxGl.mapboxGlStrings.visible]
 }

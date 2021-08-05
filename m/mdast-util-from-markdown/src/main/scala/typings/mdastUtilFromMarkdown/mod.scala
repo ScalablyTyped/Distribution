@@ -13,26 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(value: String): Root = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Root]
-  @scala.inline
-  def apply(value: String, encoding: Unit, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
-  @scala.inline
-  def apply(value: String, encoding: BufferEncoding): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Root]
-  @scala.inline
-  def apply(value: String, encoding: BufferEncoding, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
-  @scala.inline
-  def apply(value: String, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
-  @scala.inline
-  def apply(value: Buffer): Root = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Root]
-  @scala.inline
-  def apply(value: Buffer, encoding: Unit, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
-  @scala.inline
-  def apply(value: Buffer, encoding: BufferEncoding): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Root]
-  @scala.inline
-  def apply(value: Buffer, encoding: BufferEncoding, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
-  @scala.inline
-  def apply(value: Buffer, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
+  inline def apply(value: String): Root = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Root]
+  inline def apply(value: String, encoding: Unit, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
+  inline def apply(value: String, encoding: BufferEncoding): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Root]
+  inline def apply(value: String, encoding: BufferEncoding, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
+  inline def apply(value: String, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
+  inline def apply(value: Buffer): Root = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Root]
+  inline def apply(value: Buffer, encoding: Unit, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
+  inline def apply(value: Buffer, encoding: BufferEncoding): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Root]
+  inline def apply(value: Buffer, encoding: BufferEncoding, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
+  inline def apply(value: Buffer, options: Options): Root = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
   
   @JSImport("mdast-util-from-markdown", JSImport.Namespace)
   @js.native
@@ -46,8 +36,7 @@ object mod {
   }
   object MdastExtension {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       enter: Record[Type, js.Function1[/* token */ Token, Unit]],
       exit: Record[Type, js.Function1[/* token */ Token, Unit]]
     ): MdastExtension = {
@@ -55,14 +44,11 @@ object mod {
       __obj.asInstanceOf[MdastExtension]
     }
     
-    @scala.inline
-    implicit class MdastExtensionMutableBuilder[Self <: MdastExtension] (val x: Self) extends AnyVal {
+    extension [Self <: MdastExtension](x: Self) {
       
-      @scala.inline
-      def setEnter(value: Record[Type, js.Function1[/* token */ Token, Unit]]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+      inline def setEnter(value: Record[Type, js.Function1[/* token */ Token, Unit]]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExit(value: Record[Type, js.Function1[/* token */ Token, Unit]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: Record[Type, js.Function1[/* token */ Token, Unit]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,32 +60,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExtensions(value: js.Array[SyntaxExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[SyntaxExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: SyntaxExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: SyntaxExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setMdastExtensions(value: js.Array[MdastExtension]): Self = StObject.set(x, "mdastExtensions", value.asInstanceOf[js.Any])
+      inline def setMdastExtensions(value: js.Array[MdastExtension]): Self = StObject.set(x, "mdastExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMdastExtensionsUndefined: Self = StObject.set(x, "mdastExtensions", js.undefined)
+      inline def setMdastExtensionsUndefined: Self = StObject.set(x, "mdastExtensions", js.undefined)
       
-      @scala.inline
-      def setMdastExtensionsVarargs(value: MdastExtension*): Self = StObject.set(x, "mdastExtensions", js.Array(value :_*))
+      inline def setMdastExtensionsVarargs(value: MdastExtension*): Self = StObject.set(x, "mdastExtensions", js.Array(value :_*))
     }
   }
 }

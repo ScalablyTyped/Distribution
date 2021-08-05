@@ -33,8 +33,7 @@ trait ExportJournalToS3Request extends StObject {
 }
 object ExportJournalToS3Request {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ExclusiveEndTime: Timestamp,
     InclusiveStartTime: Timestamp,
     Name: LedgerName,
@@ -45,22 +44,16 @@ object ExportJournalToS3Request {
     __obj.asInstanceOf[ExportJournalToS3Request]
   }
   
-  @scala.inline
-  implicit class ExportJournalToS3RequestMutableBuilder[Self <: ExportJournalToS3Request] (val x: Self) extends AnyVal {
+  extension [Self <: ExportJournalToS3Request](x: Self) {
     
-    @scala.inline
-    def setExclusiveEndTime(value: Timestamp): Self = StObject.set(x, "ExclusiveEndTime", value.asInstanceOf[js.Any])
+    inline def setExclusiveEndTime(value: Timestamp): Self = StObject.set(x, "ExclusiveEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclusiveStartTime(value: Timestamp): Self = StObject.set(x, "InclusiveStartTime", value.asInstanceOf[js.Any])
+    inline def setInclusiveStartTime(value: Timestamp): Self = StObject.set(x, "InclusiveStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ExportConfiguration(value: S3ExportConfiguration): Self = StObject.set(x, "S3ExportConfiguration", value.asInstanceOf[js.Any])
+    inline def setS3ExportConfiguration(value: S3ExportConfiguration): Self = StObject.set(x, "S3ExportConfiguration", value.asInstanceOf[js.Any])
   }
 }

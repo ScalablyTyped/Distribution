@@ -39,8 +39,7 @@ trait XRangeSelection
 }
 object XRangeSelection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abortRangeSelection: () => Unit,
     acquire: () => Unit,
     addRangeSelectionChangeListener: XRangeSelectionChangeListener => Unit,
@@ -55,25 +54,18 @@ object XRangeSelection {
     __obj.asInstanceOf[XRangeSelection]
   }
   
-  @scala.inline
-  implicit class XRangeSelectionMutableBuilder[Self <: XRangeSelection] (val x: Self) extends AnyVal {
+  extension [Self <: XRangeSelection](x: Self) {
     
-    @scala.inline
-    def setAbortRangeSelection(value: () => Unit): Self = StObject.set(x, "abortRangeSelection", js.Any.fromFunction0(value))
+    inline def setAbortRangeSelection(value: () => Unit): Self = StObject.set(x, "abortRangeSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAddRangeSelectionChangeListener(value: XRangeSelectionChangeListener => Unit): Self = StObject.set(x, "addRangeSelectionChangeListener", js.Any.fromFunction1(value))
+    inline def setAddRangeSelectionChangeListener(value: XRangeSelectionChangeListener => Unit): Self = StObject.set(x, "addRangeSelectionChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddRangeSelectionListener(value: XRangeSelectionListener => Unit): Self = StObject.set(x, "addRangeSelectionListener", js.Any.fromFunction1(value))
+    inline def setAddRangeSelectionListener(value: XRangeSelectionListener => Unit): Self = StObject.set(x, "addRangeSelectionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveRangeSelectionChangeListener(value: XRangeSelectionChangeListener => Unit): Self = StObject.set(x, "removeRangeSelectionChangeListener", js.Any.fromFunction1(value))
+    inline def setRemoveRangeSelectionChangeListener(value: XRangeSelectionChangeListener => Unit): Self = StObject.set(x, "removeRangeSelectionChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveRangeSelectionListener(value: XRangeSelectionListener => Unit): Self = StObject.set(x, "removeRangeSelectionListener", js.Any.fromFunction1(value))
+    inline def setRemoveRangeSelectionListener(value: XRangeSelectionListener => Unit): Self = StObject.set(x, "removeRangeSelectionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartRangeSelection(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "startRangeSelection", js.Any.fromFunction1(value))
+    inline def setStartRangeSelection(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "startRangeSelection", js.Any.fromFunction1(value))
   }
 }

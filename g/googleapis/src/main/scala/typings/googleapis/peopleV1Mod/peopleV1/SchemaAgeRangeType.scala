@@ -21,25 +21,19 @@ trait SchemaAgeRangeType extends StObject {
 }
 object SchemaAgeRangeType {
   
-  @scala.inline
-  def apply(): SchemaAgeRangeType = {
+  inline def apply(): SchemaAgeRangeType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAgeRangeType]
   }
   
-  @scala.inline
-  implicit class SchemaAgeRangeTypeMutableBuilder[Self <: SchemaAgeRangeType] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAgeRangeType](x: Self) {
     
-    @scala.inline
-    def setAgeRange(value: String): Self = StObject.set(x, "ageRange", value.asInstanceOf[js.Any])
+    inline def setAgeRange(value: String): Self = StObject.set(x, "ageRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgeRangeUndefined: Self = StObject.set(x, "ageRange", js.undefined)
+    inline def setAgeRangeUndefined: Self = StObject.set(x, "ageRange", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: SchemaFieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaFieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

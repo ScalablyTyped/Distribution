@@ -16,8 +16,7 @@ trait Interactions extends StObject {
 }
 object Interactions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     excluded_permissions: js.Array[String],
     interactions: Cosign,
     iq_by_action: js.Any,
@@ -27,25 +26,18 @@ object Interactions {
     __obj.asInstanceOf[Interactions]
   }
   
-  @scala.inline
-  implicit class InteractionsMutableBuilder[Self <: Interactions] (val x: Self) extends AnyVal {
+  extension [Self <: Interactions](x: Self) {
     
-    @scala.inline
-    def setExcluded_permissions(value: js.Array[String]): Self = StObject.set(x, "excluded_permissions", value.asInstanceOf[js.Any])
+    inline def setExcluded_permissions(value: js.Array[String]): Self = StObject.set(x, "excluded_permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcluded_permissionsVarargs(value: String*): Self = StObject.set(x, "excluded_permissions", js.Array(value :_*))
+    inline def setExcluded_permissionsVarargs(value: String*): Self = StObject.set(x, "excluded_permissions", js.Array(value :_*))
     
-    @scala.inline
-    def setInteractions(value: Cosign): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
+    inline def setInteractions(value: Cosign): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIq_by_action(value: js.Any): Self = StObject.set(x, "iq_by_action", value.asInstanceOf[js.Any])
+    inline def setIq_by_action(value: js.Any): Self = StObject.set(x, "iq_by_action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
   }
 }

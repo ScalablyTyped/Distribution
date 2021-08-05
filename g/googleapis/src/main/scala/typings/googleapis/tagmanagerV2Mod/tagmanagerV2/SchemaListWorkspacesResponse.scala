@@ -21,28 +21,21 @@ trait SchemaListWorkspacesResponse extends StObject {
 }
 object SchemaListWorkspacesResponse {
   
-  @scala.inline
-  def apply(): SchemaListWorkspacesResponse = {
+  inline def apply(): SchemaListWorkspacesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListWorkspacesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListWorkspacesResponseMutableBuilder[Self <: SchemaListWorkspacesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListWorkspacesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setWorkspace(value: js.Array[SchemaWorkspace]): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
+    inline def setWorkspace(value: js.Array[SchemaWorkspace]): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
+    inline def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
     
-    @scala.inline
-    def setWorkspaceVarargs(value: SchemaWorkspace*): Self = StObject.set(x, "workspace", js.Array(value :_*))
+    inline def setWorkspaceVarargs(value: SchemaWorkspace*): Self = StObject.set(x, "workspace", js.Array(value :_*))
   }
 }

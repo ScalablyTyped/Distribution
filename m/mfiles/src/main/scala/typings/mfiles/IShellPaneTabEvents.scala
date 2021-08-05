@@ -23,49 +23,35 @@ trait IShellPaneTabEvents
 }
 object IShellPaneTabEvents {
   
-  @scala.inline
-  def apply(Register: (Event, js.Function) => Double, Unregister: Double => Unit): IShellPaneTabEvents = {
+  inline def apply(Register: (Event, js.Function) => Double, Unregister: Double => Unit): IShellPaneTabEvents = {
     val __obj = js.Dynamic.literal(Register = js.Any.fromFunction2(Register), Unregister = js.Any.fromFunction1(Unregister))
     __obj.asInstanceOf[IShellPaneTabEvents]
   }
   
-  @scala.inline
-  implicit class IShellPaneTabEventsMutableBuilder[Self <: IShellPaneTabEvents] (val x: Self) extends AnyVal {
+  extension [Self <: IShellPaneTabEvents](x: Self) {
     
-    @scala.inline
-    def setOnHideTab(value: () => Unit): Self = StObject.set(x, "OnHideTab", js.Any.fromFunction0(value))
+    inline def setOnHideTab(value: () => Unit): Self = StObject.set(x, "OnHideTab", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnHideTabUndefined: Self = StObject.set(x, "OnHideTab", js.undefined)
+    inline def setOnHideTabUndefined: Self = StObject.set(x, "OnHideTab", js.undefined)
     
-    @scala.inline
-    def setOnShowTab(value: () => Unit): Self = StObject.set(x, "OnShowTab", js.Any.fromFunction0(value))
+    inline def setOnShowTab(value: () => Unit): Self = StObject.set(x, "OnShowTab", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnShowTabUndefined: Self = StObject.set(x, "OnShowTab", js.undefined)
+    inline def setOnShowTabUndefined: Self = StObject.set(x, "OnShowTab", js.undefined)
     
-    @scala.inline
-    def setOnStarted(value: () => Unit): Self = StObject.set(x, "OnStarted", js.Any.fromFunction0(value))
+    inline def setOnStarted(value: () => Unit): Self = StObject.set(x, "OnStarted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnStartedUndefined: Self = StObject.set(x, "OnStarted", js.undefined)
+    inline def setOnStartedUndefined: Self = StObject.set(x, "OnStarted", js.undefined)
     
-    @scala.inline
-    def setOnStop(value: () => Unit): Self = StObject.set(x, "OnStop", js.Any.fromFunction0(value))
+    inline def setOnStop(value: () => Unit): Self = StObject.set(x, "OnStop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnStopUndefined: Self = StObject.set(x, "OnStop", js.undefined)
+    inline def setOnStopUndefined: Self = StObject.set(x, "OnStop", js.undefined)
     
-    @scala.inline
-    def setOnTabSelected(value: () => Unit): Self = StObject.set(x, "OnTabSelected", js.Any.fromFunction0(value))
+    inline def setOnTabSelected(value: () => Unit): Self = StObject.set(x, "OnTabSelected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnTabSelectedUndefined: Self = StObject.set(x, "OnTabSelected", js.undefined)
+    inline def setOnTabSelectedUndefined: Self = StObject.set(x, "OnTabSelected", js.undefined)
     
-    @scala.inline
-    def setOnTabUnselected(value: () => Unit): Self = StObject.set(x, "OnTabUnselected", js.Any.fromFunction0(value))
+    inline def setOnTabUnselected(value: () => Unit): Self = StObject.set(x, "OnTabUnselected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnTabUnselectedUndefined: Self = StObject.set(x, "OnTabUnselected", js.undefined)
+    inline def setOnTabUnselectedUndefined: Self = StObject.set(x, "OnTabUnselected", js.undefined)
   }
 }

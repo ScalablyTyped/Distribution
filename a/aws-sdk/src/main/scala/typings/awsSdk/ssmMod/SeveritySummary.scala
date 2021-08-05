@@ -38,49 +38,35 @@ trait SeveritySummary extends StObject {
 }
 object SeveritySummary {
   
-  @scala.inline
-  def apply(): SeveritySummary = {
+  inline def apply(): SeveritySummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeveritySummary]
   }
   
-  @scala.inline
-  implicit class SeveritySummaryMutableBuilder[Self <: SeveritySummary] (val x: Self) extends AnyVal {
+  extension [Self <: SeveritySummary](x: Self) {
     
-    @scala.inline
-    def setCriticalCount(value: ComplianceSummaryCount): Self = StObject.set(x, "CriticalCount", value.asInstanceOf[js.Any])
+    inline def setCriticalCount(value: ComplianceSummaryCount): Self = StObject.set(x, "CriticalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriticalCountUndefined: Self = StObject.set(x, "CriticalCount", js.undefined)
+    inline def setCriticalCountUndefined: Self = StObject.set(x, "CriticalCount", js.undefined)
     
-    @scala.inline
-    def setHighCount(value: ComplianceSummaryCount): Self = StObject.set(x, "HighCount", value.asInstanceOf[js.Any])
+    inline def setHighCount(value: ComplianceSummaryCount): Self = StObject.set(x, "HighCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighCountUndefined: Self = StObject.set(x, "HighCount", js.undefined)
+    inline def setHighCountUndefined: Self = StObject.set(x, "HighCount", js.undefined)
     
-    @scala.inline
-    def setInformationalCount(value: ComplianceSummaryCount): Self = StObject.set(x, "InformationalCount", value.asInstanceOf[js.Any])
+    inline def setInformationalCount(value: ComplianceSummaryCount): Self = StObject.set(x, "InformationalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInformationalCountUndefined: Self = StObject.set(x, "InformationalCount", js.undefined)
+    inline def setInformationalCountUndefined: Self = StObject.set(x, "InformationalCount", js.undefined)
     
-    @scala.inline
-    def setLowCount(value: ComplianceSummaryCount): Self = StObject.set(x, "LowCount", value.asInstanceOf[js.Any])
+    inline def setLowCount(value: ComplianceSummaryCount): Self = StObject.set(x, "LowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowCountUndefined: Self = StObject.set(x, "LowCount", js.undefined)
+    inline def setLowCountUndefined: Self = StObject.set(x, "LowCount", js.undefined)
     
-    @scala.inline
-    def setMediumCount(value: ComplianceSummaryCount): Self = StObject.set(x, "MediumCount", value.asInstanceOf[js.Any])
+    inline def setMediumCount(value: ComplianceSummaryCount): Self = StObject.set(x, "MediumCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediumCountUndefined: Self = StObject.set(x, "MediumCount", js.undefined)
+    inline def setMediumCountUndefined: Self = StObject.set(x, "MediumCount", js.undefined)
     
-    @scala.inline
-    def setUnspecifiedCount(value: ComplianceSummaryCount): Self = StObject.set(x, "UnspecifiedCount", value.asInstanceOf[js.Any])
+    inline def setUnspecifiedCount(value: ComplianceSummaryCount): Self = StObject.set(x, "UnspecifiedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnspecifiedCountUndefined: Self = StObject.set(x, "UnspecifiedCount", js.undefined)
+    inline def setUnspecifiedCountUndefined: Self = StObject.set(x, "UnspecifiedCount", js.undefined)
   }
 }

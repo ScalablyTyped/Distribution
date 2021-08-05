@@ -16,22 +16,17 @@ trait GetSavedFileInfoSuccessCallbackResult extends StObject {
 }
 object GetSavedFileInfoSuccessCallbackResult {
   
-  @scala.inline
-  def apply(createTime: Double, errMsg: String, size: Double): GetSavedFileInfoSuccessCallbackResult = {
+  inline def apply(createTime: Double, errMsg: String, size: Double): GetSavedFileInfoSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(createTime = createTime.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavedFileInfoSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetSavedFileInfoSuccessCallbackResultMutableBuilder[Self <: GetSavedFileInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetSavedFileInfoSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

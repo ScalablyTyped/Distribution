@@ -13,8 +13,7 @@ trait XSeekableInputStream
      with XSeekable
 object XSeekableInputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Length: Double,
     Position: Double,
     acquire: () => Unit,

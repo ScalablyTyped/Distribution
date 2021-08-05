@@ -40,25 +40,19 @@ trait SchemaTextOperatorOptions extends StObject {
 }
 object SchemaTextOperatorOptions {
   
-  @scala.inline
-  def apply(): SchemaTextOperatorOptions = {
+  inline def apply(): SchemaTextOperatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTextOperatorOptions]
   }
   
-  @scala.inline
-  implicit class SchemaTextOperatorOptionsMutableBuilder[Self <: SchemaTextOperatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTextOperatorOptions](x: Self) {
     
-    @scala.inline
-    def setExactMatchWithOperator(value: Boolean): Self = StObject.set(x, "exactMatchWithOperator", value.asInstanceOf[js.Any])
+    inline def setExactMatchWithOperator(value: Boolean): Self = StObject.set(x, "exactMatchWithOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactMatchWithOperatorUndefined: Self = StObject.set(x, "exactMatchWithOperator", js.undefined)
+    inline def setExactMatchWithOperatorUndefined: Self = StObject.set(x, "exactMatchWithOperator", js.undefined)
     
-    @scala.inline
-    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
+    inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
+    inline def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
   }
 }

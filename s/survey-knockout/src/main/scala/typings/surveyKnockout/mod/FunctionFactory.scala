@@ -34,6 +34,5 @@ object FunctionFactory {
   @JSImport("survey-knockout", "FunctionFactory.Instance")
   @js.native
   def Instance: FunctionFactory = js.native
-  @scala.inline
-  def Instance_=(x: FunctionFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instance")(x.asInstanceOf[js.Any])
+  inline def Instance_=(x: FunctionFactory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instance")(x.asInstanceOf[js.Any])
 }

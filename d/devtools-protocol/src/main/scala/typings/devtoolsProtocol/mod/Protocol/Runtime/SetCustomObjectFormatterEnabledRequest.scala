@@ -10,16 +10,13 @@ trait SetCustomObjectFormatterEnabledRequest extends StObject {
 }
 object SetCustomObjectFormatterEnabledRequest {
   
-  @scala.inline
-  def apply(enabled: Boolean): SetCustomObjectFormatterEnabledRequest = {
+  inline def apply(enabled: Boolean): SetCustomObjectFormatterEnabledRequest = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetCustomObjectFormatterEnabledRequest]
   }
   
-  @scala.inline
-  implicit class SetCustomObjectFormatterEnabledRequestMutableBuilder[Self <: SetCustomObjectFormatterEnabledRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetCustomObjectFormatterEnabledRequest](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

@@ -24,25 +24,19 @@ trait SchemaPrivateEnvironmentConfig extends StObject {
 }
 object SchemaPrivateEnvironmentConfig {
   
-  @scala.inline
-  def apply(): SchemaPrivateEnvironmentConfig = {
+  inline def apply(): SchemaPrivateEnvironmentConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPrivateEnvironmentConfig]
   }
   
-  @scala.inline
-  implicit class SchemaPrivateEnvironmentConfigMutableBuilder[Self <: SchemaPrivateEnvironmentConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPrivateEnvironmentConfig](x: Self) {
     
-    @scala.inline
-    def setEnablePrivateEnvironment(value: Boolean): Self = StObject.set(x, "enablePrivateEnvironment", value.asInstanceOf[js.Any])
+    inline def setEnablePrivateEnvironment(value: Boolean): Self = StObject.set(x, "enablePrivateEnvironment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePrivateEnvironmentUndefined: Self = StObject.set(x, "enablePrivateEnvironment", js.undefined)
+    inline def setEnablePrivateEnvironmentUndefined: Self = StObject.set(x, "enablePrivateEnvironment", js.undefined)
     
-    @scala.inline
-    def setPrivateClusterConfig(value: SchemaPrivateClusterConfig): Self = StObject.set(x, "privateClusterConfig", value.asInstanceOf[js.Any])
+    inline def setPrivateClusterConfig(value: SchemaPrivateClusterConfig): Self = StObject.set(x, "privateClusterConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateClusterConfigUndefined: Self = StObject.set(x, "privateClusterConfig", js.undefined)
+    inline def setPrivateClusterConfigUndefined: Self = StObject.set(x, "privateClusterConfig", js.undefined)
   }
 }

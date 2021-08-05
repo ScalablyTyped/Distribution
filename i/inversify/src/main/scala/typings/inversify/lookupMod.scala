@@ -15,7 +15,7 @@ object lookupMod {
     extends StObject
        with typings.inversify.interfacesMod.interfaces.Lookup[T] {
     
-    var _map: js.Any = js.native
+    /* private */ var _map: js.Any = js.native
     
     /* CompleteClass */
     override def add(serviceIdentifier: ServiceIdentifier[js.Any], value: T): Unit = js.native

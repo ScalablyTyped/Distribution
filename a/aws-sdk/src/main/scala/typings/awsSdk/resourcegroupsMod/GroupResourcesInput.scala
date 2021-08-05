@@ -18,22 +18,17 @@ trait GroupResourcesInput extends StObject {
 }
 object GroupResourcesInput {
   
-  @scala.inline
-  def apply(Group: GroupString, ResourceArns: ResourceArnList): GroupResourcesInput = {
+  inline def apply(Group: GroupString, ResourceArns: ResourceArnList): GroupResourcesInput = {
     val __obj = js.Dynamic.literal(Group = Group.asInstanceOf[js.Any], ResourceArns = ResourceArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupResourcesInput]
   }
   
-  @scala.inline
-  implicit class GroupResourcesInputMutableBuilder[Self <: GroupResourcesInput] (val x: Self) extends AnyVal {
+  extension [Self <: GroupResourcesInput](x: Self) {
     
-    @scala.inline
-    def setGroup(value: GroupString): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: GroupString): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArns(value: ResourceArnList): Self = StObject.set(x, "ResourceArns", value.asInstanceOf[js.Any])
+    inline def setResourceArns(value: ResourceArnList): Self = StObject.set(x, "ResourceArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnsVarargs(value: ResourceArn*): Self = StObject.set(x, "ResourceArns", js.Array(value :_*))
+    inline def setResourceArnsVarargs(value: ResourceArn*): Self = StObject.set(x, "ResourceArns", js.Array(value :_*))
   }
 }

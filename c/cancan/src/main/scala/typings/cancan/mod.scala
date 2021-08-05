@@ -84,26 +84,20 @@ object mod {
   }
   object Option {
     
-    @scala.inline
-    def apply(): Option = {
+    inline def apply(): Option = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Option]
     }
     
-    @scala.inline
-    implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+    extension [Self <: Option](x: Self) {
       
-      @scala.inline
-      def setCreateError(value: () => js.Any): Self = StObject.set(x, "createError", js.Any.fromFunction0(value))
+      inline def setCreateError(value: () => js.Any): Self = StObject.set(x, "createError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateErrorUndefined: Self = StObject.set(x, "createError", js.undefined)
+      inline def setCreateErrorUndefined: Self = StObject.set(x, "createError", js.undefined)
       
-      @scala.inline
-      def setInstanceOf(value: (/* instance */ js.Any, /* model */ js.Any) => Boolean): Self = StObject.set(x, "instanceOf", js.Any.fromFunction2(value))
+      inline def setInstanceOf(value: (/* instance */ js.Any, /* model */ js.Any) => Boolean): Self = StObject.set(x, "instanceOf", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInstanceOfUndefined: Self = StObject.set(x, "instanceOf", js.undefined)
+      inline def setInstanceOfUndefined: Self = StObject.set(x, "instanceOf", js.undefined)
     }
   }
 }

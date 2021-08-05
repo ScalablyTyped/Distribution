@@ -11,34 +11,29 @@ object reactRequestStrings {
   sealed trait arrayBuffer
     extends StObject
        with ResponseType
-  @scala.inline
-  def arrayBuffer: arrayBuffer = "arrayBuffer".asInstanceOf[arrayBuffer]
+  inline def arrayBuffer: arrayBuffer = "arrayBuffer".asInstanceOf[arrayBuffer]
   
   @js.native
   sealed trait blob
     extends StObject
        with ResponseType
-  @scala.inline
-  def blob: blob = "blob".asInstanceOf[blob]
+  inline def blob: blob = "blob".asInstanceOf[blob]
   
   @js.native
   sealed trait formData
     extends StObject
        with ResponseType
-  @scala.inline
-  def formData: formData = "formData".asInstanceOf[formData]
+  inline def formData: formData = "formData".asInstanceOf[formData]
   
   @js.native
   sealed trait json
     extends StObject
        with ResponseType
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait text
     extends StObject
        with ResponseType
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  inline def text: text = "text".asInstanceOf[text]
 }

@@ -15,22 +15,17 @@ trait SchemaPoolsDeleteRequest extends StObject {
 }
 object SchemaPoolsDeleteRequest {
   
-  @scala.inline
-  def apply(): SchemaPoolsDeleteRequest = {
+  inline def apply(): SchemaPoolsDeleteRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPoolsDeleteRequest]
   }
   
-  @scala.inline
-  implicit class SchemaPoolsDeleteRequestMutableBuilder[Self <: SchemaPoolsDeleteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPoolsDeleteRequest](x: Self) {
     
-    @scala.inline
-    def setAbandonInstances(value: js.Array[String]): Self = StObject.set(x, "abandonInstances", value.asInstanceOf[js.Any])
+    inline def setAbandonInstances(value: js.Array[String]): Self = StObject.set(x, "abandonInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbandonInstancesUndefined: Self = StObject.set(x, "abandonInstances", js.undefined)
+    inline def setAbandonInstancesUndefined: Self = StObject.set(x, "abandonInstances", js.undefined)
     
-    @scala.inline
-    def setAbandonInstancesVarargs(value: String*): Self = StObject.set(x, "abandonInstances", js.Array(value :_*))
+    inline def setAbandonInstancesVarargs(value: String*): Self = StObject.set(x, "abandonInstances", js.Array(value :_*))
   }
 }

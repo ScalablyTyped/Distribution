@@ -50,6 +50,5 @@ object AccountInfo {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def parse(acountInfo: js.Object): typings.dropboxjs.Dropbox.AccountInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(acountInfo.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.AccountInfo]
+  inline def parse(acountInfo: js.Object): typings.dropboxjs.Dropbox.AccountInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(acountInfo.asInstanceOf[js.Any]).asInstanceOf[typings.dropboxjs.Dropbox.AccountInfo]
 }

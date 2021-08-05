@@ -24,8 +24,7 @@ trait Backend extends StObject {
 }
 object Backend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backend: KernelBackend,
     bytes: Double,
     dtype: string | float32 | int32 | bool | complex64,
@@ -36,25 +35,18 @@ object Backend {
     __obj.asInstanceOf[Backend]
   }
   
-  @scala.inline
-  implicit class BackendMutableBuilder[Self <: Backend] (val x: Self) extends AnyVal {
+  extension [Self <: Backend](x: Self) {
     
-    @scala.inline
-    def setBackend(value: KernelBackend): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: KernelBackend): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+    inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDtype(value: string | float32 | int32 | bool | complex64): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+    inline def setDtype(value: string | float32 | int32 | bool | complex64): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefCount(value: Double): Self = StObject.set(x, "refCount", value.asInstanceOf[js.Any])
+    inline def setRefCount(value: Double): Self = StObject.set(x, "refCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
   }
 }

@@ -10,19 +10,15 @@ trait FileSystemGetDirectoryOptions extends StObject {
 }
 object FileSystemGetDirectoryOptions {
   
-  @scala.inline
-  def apply(): FileSystemGetDirectoryOptions = {
+  inline def apply(): FileSystemGetDirectoryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileSystemGetDirectoryOptions]
   }
   
-  @scala.inline
-  implicit class FileSystemGetDirectoryOptionsMutableBuilder[Self <: FileSystemGetDirectoryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemGetDirectoryOptions](x: Self) {
     
-    @scala.inline
-    def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
   }
 }

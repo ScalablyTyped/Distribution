@@ -21,7 +21,6 @@ object modalMod {
     @JSImport("antd-mobile/lib/modal", "default.defaultProps")
     @js.native
     def defaultProps: Animated = js.native
-    @scala.inline
-    def defaultProps_=(x: Animated): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Animated): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

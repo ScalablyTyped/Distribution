@@ -13,19 +13,15 @@ trait ConfirmDeviceResponse extends StObject {
 }
 object ConfirmDeviceResponse {
   
-  @scala.inline
-  def apply(): ConfirmDeviceResponse = {
+  inline def apply(): ConfirmDeviceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfirmDeviceResponse]
   }
   
-  @scala.inline
-  implicit class ConfirmDeviceResponseMutableBuilder[Self <: ConfirmDeviceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmDeviceResponse](x: Self) {
     
-    @scala.inline
-    def setUserConfirmationNecessary(value: BooleanType): Self = StObject.set(x, "UserConfirmationNecessary", value.asInstanceOf[js.Any])
+    inline def setUserConfirmationNecessary(value: BooleanType): Self = StObject.set(x, "UserConfirmationNecessary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserConfirmationNecessaryUndefined: Self = StObject.set(x, "UserConfirmationNecessary", js.undefined)
+    inline def setUserConfirmationNecessaryUndefined: Self = StObject.set(x, "UserConfirmationNecessary", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ trait VastTrackingEvents
 }
 object VastTrackingEvents {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     complete: js.Array[String],
     firstQuartile: js.Array[String],
     midpoint: js.Array[String],
@@ -30,31 +29,22 @@ object VastTrackingEvents {
     __obj.asInstanceOf[VastTrackingEvents]
   }
   
-  @scala.inline
-  implicit class VastTrackingEventsMutableBuilder[Self <: VastTrackingEvents] (val x: Self) extends AnyVal {
+  extension [Self <: VastTrackingEvents](x: Self) {
     
-    @scala.inline
-    def setComplete(value: js.Array[String]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+    inline def setComplete(value: js.Array[String]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleteVarargs(value: String*): Self = StObject.set(x, "complete", js.Array(value :_*))
+    inline def setCompleteVarargs(value: String*): Self = StObject.set(x, "complete", js.Array(value :_*))
     
-    @scala.inline
-    def setFirstQuartile(value: js.Array[String]): Self = StObject.set(x, "firstQuartile", value.asInstanceOf[js.Any])
+    inline def setFirstQuartile(value: js.Array[String]): Self = StObject.set(x, "firstQuartile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstQuartileVarargs(value: String*): Self = StObject.set(x, "firstQuartile", js.Array(value :_*))
+    inline def setFirstQuartileVarargs(value: String*): Self = StObject.set(x, "firstQuartile", js.Array(value :_*))
     
-    @scala.inline
-    def setMidpoint(value: js.Array[String]): Self = StObject.set(x, "midpoint", value.asInstanceOf[js.Any])
+    inline def setMidpoint(value: js.Array[String]): Self = StObject.set(x, "midpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMidpointVarargs(value: String*): Self = StObject.set(x, "midpoint", js.Array(value :_*))
+    inline def setMidpointVarargs(value: String*): Self = StObject.set(x, "midpoint", js.Array(value :_*))
     
-    @scala.inline
-    def setThirdQuartile(value: js.Array[String]): Self = StObject.set(x, "thirdQuartile", value.asInstanceOf[js.Any])
+    inline def setThirdQuartile(value: js.Array[String]): Self = StObject.set(x, "thirdQuartile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThirdQuartileVarargs(value: String*): Self = StObject.set(x, "thirdQuartile", js.Array(value :_*))
+    inline def setThirdQuartileVarargs(value: String*): Self = StObject.set(x, "thirdQuartile", js.Array(value :_*))
   }
 }

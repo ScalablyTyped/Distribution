@@ -9,6 +9,5 @@ object global {
   @JSGlobal("Konva")
   @js.native
   def Konva: js.Any = js.native
-  @scala.inline
-  def Konva_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("Konva")(x.asInstanceOf[js.Any])
+  inline def Konva_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("Konva")(x.asInstanceOf[js.Any])
 }

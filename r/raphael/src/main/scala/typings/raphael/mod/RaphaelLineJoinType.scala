@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RaphaelLineJoinType extends StObject
 object RaphaelLineJoinType {
   
-  @scala.inline
-  def bevel: typings.raphael.raphaelStrings.bevel = "bevel".asInstanceOf[typings.raphael.raphaelStrings.bevel]
+  inline def bevel: typings.raphael.raphaelStrings.bevel = "bevel".asInstanceOf[typings.raphael.raphaelStrings.bevel]
   
-  @scala.inline
-  def miter: typings.raphael.raphaelStrings.miter = "miter".asInstanceOf[typings.raphael.raphaelStrings.miter]
+  inline def miter: typings.raphael.raphaelStrings.miter = "miter".asInstanceOf[typings.raphael.raphaelStrings.miter]
   
-  @scala.inline
-  def round: typings.raphael.raphaelStrings.round = "round".asInstanceOf[typings.raphael.raphaelStrings.round]
+  inline def round: typings.raphael.raphaelStrings.round = "round".asInstanceOf[typings.raphael.raphaelStrings.round]
 }

@@ -18,22 +18,17 @@ trait DeleteStreamingDistributionRequest extends StObject {
 }
 object DeleteStreamingDistributionRequest {
   
-  @scala.inline
-  def apply(Id: String): DeleteStreamingDistributionRequest = {
+  inline def apply(Id: String): DeleteStreamingDistributionRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteStreamingDistributionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteStreamingDistributionRequestMutableBuilder[Self <: DeleteStreamingDistributionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteStreamingDistributionRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
+    inline def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
+    inline def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
   }
 }

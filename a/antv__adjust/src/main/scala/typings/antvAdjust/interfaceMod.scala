@@ -29,71 +29,50 @@ object interfaceMod {
   }
   object AdjustCfg {
     
-    @scala.inline
-    def apply(): AdjustCfg = {
+    inline def apply(): AdjustCfg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AdjustCfg]
     }
     
-    @scala.inline
-    implicit class AdjustCfgMutableBuilder[Self <: AdjustCfg] (val x: Self) extends AnyVal {
+    extension [Self <: AdjustCfg](x: Self) {
       
-      @scala.inline
-      def setAdjustNames(value: js.Array[String]): Self = StObject.set(x, "adjustNames", value.asInstanceOf[js.Any])
+      inline def setAdjustNames(value: js.Array[String]): Self = StObject.set(x, "adjustNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdjustNamesUndefined: Self = StObject.set(x, "adjustNames", js.undefined)
+      inline def setAdjustNamesUndefined: Self = StObject.set(x, "adjustNames", js.undefined)
       
-      @scala.inline
-      def setAdjustNamesVarargs(value: String*): Self = StObject.set(x, "adjustNames", js.Array(value :_*))
+      inline def setAdjustNamesVarargs(value: String*): Self = StObject.set(x, "adjustNames", js.Array(value :_*))
       
-      @scala.inline
-      def setDodgeBy(value: String): Self = StObject.set(x, "dodgeBy", value.asInstanceOf[js.Any])
+      inline def setDodgeBy(value: String): Self = StObject.set(x, "dodgeBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDodgeByUndefined: Self = StObject.set(x, "dodgeBy", js.undefined)
+      inline def setDodgeByUndefined: Self = StObject.set(x, "dodgeBy", js.undefined)
       
-      @scala.inline
-      def setDodgeRatio(value: Double): Self = StObject.set(x, "dodgeRatio", value.asInstanceOf[js.Any])
+      inline def setDodgeRatio(value: Double): Self = StObject.set(x, "dodgeRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDodgeRatioUndefined: Self = StObject.set(x, "dodgeRatio", js.undefined)
+      inline def setDodgeRatioUndefined: Self = StObject.set(x, "dodgeRatio", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setMarginRatio(value: Double): Self = StObject.set(x, "marginRatio", value.asInstanceOf[js.Any])
+      inline def setMarginRatio(value: Double): Self = StObject.set(x, "marginRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginRatioUndefined: Self = StObject.set(x, "marginRatio", js.undefined)
+      inline def setMarginRatioUndefined: Self = StObject.set(x, "marginRatio", js.undefined)
       
-      @scala.inline
-      def setReverseOrder(value: Boolean): Self = StObject.set(x, "reverseOrder", value.asInstanceOf[js.Any])
+      inline def setReverseOrder(value: Boolean): Self = StObject.set(x, "reverseOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseOrderUndefined: Self = StObject.set(x, "reverseOrder", js.undefined)
+      inline def setReverseOrderUndefined: Self = StObject.set(x, "reverseOrder", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setXField(value: String): Self = StObject.set(x, "xField", value.asInstanceOf[js.Any])
+      inline def setXField(value: String): Self = StObject.set(x, "xField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXFieldUndefined: Self = StObject.set(x, "xField", js.undefined)
+      inline def setXFieldUndefined: Self = StObject.set(x, "xField", js.undefined)
       
-      @scala.inline
-      def setYField(value: String): Self = StObject.set(x, "yField", value.asInstanceOf[js.Any])
+      inline def setYField(value: String): Self = StObject.set(x, "yField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYFieldUndefined: Self = StObject.set(x, "yField", js.undefined)
+      inline def setYFieldUndefined: Self = StObject.set(x, "yField", js.undefined)
     }
   }
   
@@ -131,98 +110,68 @@ object interfaceMod {
   }
   object DodgeCfg {
     
-    @scala.inline
-    def apply(xField: String): DodgeCfg = {
+    inline def apply(xField: String): DodgeCfg = {
       val __obj = js.Dynamic.literal(xField = xField.asInstanceOf[js.Any])
       __obj.asInstanceOf[DodgeCfg]
     }
     
-    @scala.inline
-    implicit class DodgeCfgMutableBuilder[Self <: DodgeCfg] (val x: Self) extends AnyVal {
+    extension [Self <: DodgeCfg](x: Self) {
       
-      @scala.inline
-      def setAdjustNames(value: js.Array[String]): Self = StObject.set(x, "adjustNames", value.asInstanceOf[js.Any])
+      inline def setAdjustNames(value: js.Array[String]): Self = StObject.set(x, "adjustNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdjustNamesUndefined: Self = StObject.set(x, "adjustNames", js.undefined)
+      inline def setAdjustNamesUndefined: Self = StObject.set(x, "adjustNames", js.undefined)
       
-      @scala.inline
-      def setAdjustNamesVarargs(value: String*): Self = StObject.set(x, "adjustNames", js.Array(value :_*))
+      inline def setAdjustNamesVarargs(value: String*): Self = StObject.set(x, "adjustNames", js.Array(value :_*))
       
-      @scala.inline
-      def setColumnWidthRatio(value: Double): Self = StObject.set(x, "columnWidthRatio", value.asInstanceOf[js.Any])
+      inline def setColumnWidthRatio(value: Double): Self = StObject.set(x, "columnWidthRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnWidthRatioUndefined: Self = StObject.set(x, "columnWidthRatio", js.undefined)
+      inline def setColumnWidthRatioUndefined: Self = StObject.set(x, "columnWidthRatio", js.undefined)
       
-      @scala.inline
-      def setDefaultSize(value: Double): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
+      inline def setDefaultSize(value: Double): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSizeUndefined: Self = StObject.set(x, "defaultSize", js.undefined)
+      inline def setDefaultSizeUndefined: Self = StObject.set(x, "defaultSize", js.undefined)
       
-      @scala.inline
-      def setDodgeBy(value: String): Self = StObject.set(x, "dodgeBy", value.asInstanceOf[js.Any])
+      inline def setDodgeBy(value: String): Self = StObject.set(x, "dodgeBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDodgeByUndefined: Self = StObject.set(x, "dodgeBy", js.undefined)
+      inline def setDodgeByUndefined: Self = StObject.set(x, "dodgeBy", js.undefined)
       
-      @scala.inline
-      def setDodgePadding(value: Double): Self = StObject.set(x, "dodgePadding", value.asInstanceOf[js.Any])
+      inline def setDodgePadding(value: Double): Self = StObject.set(x, "dodgePadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDodgePaddingUndefined: Self = StObject.set(x, "dodgePadding", js.undefined)
+      inline def setDodgePaddingUndefined: Self = StObject.set(x, "dodgePadding", js.undefined)
       
-      @scala.inline
-      def setDodgeRatio(value: Double): Self = StObject.set(x, "dodgeRatio", value.asInstanceOf[js.Any])
+      inline def setDodgeRatio(value: Double): Self = StObject.set(x, "dodgeRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDodgeRatioUndefined: Self = StObject.set(x, "dodgeRatio", js.undefined)
+      inline def setDodgeRatioUndefined: Self = StObject.set(x, "dodgeRatio", js.undefined)
       
-      @scala.inline
-      def setGroupNum(value: Double): Self = StObject.set(x, "groupNum", value.asInstanceOf[js.Any])
+      inline def setGroupNum(value: Double): Self = StObject.set(x, "groupNum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupNumUndefined: Self = StObject.set(x, "groupNum", js.undefined)
+      inline def setGroupNumUndefined: Self = StObject.set(x, "groupNum", js.undefined)
       
-      @scala.inline
-      def setIntervalPadding(value: Double): Self = StObject.set(x, "intervalPadding", value.asInstanceOf[js.Any])
+      inline def setIntervalPadding(value: Double): Self = StObject.set(x, "intervalPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalPaddingUndefined: Self = StObject.set(x, "intervalPadding", js.undefined)
+      inline def setIntervalPaddingUndefined: Self = StObject.set(x, "intervalPadding", js.undefined)
       
-      @scala.inline
-      def setMarginRatio(value: Double): Self = StObject.set(x, "marginRatio", value.asInstanceOf[js.Any])
+      inline def setMarginRatio(value: Double): Self = StObject.set(x, "marginRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginRatioUndefined: Self = StObject.set(x, "marginRatio", js.undefined)
+      inline def setMarginRatioUndefined: Self = StObject.set(x, "marginRatio", js.undefined)
       
-      @scala.inline
-      def setMaxColumnWidth(value: Double): Self = StObject.set(x, "maxColumnWidth", value.asInstanceOf[js.Any])
+      inline def setMaxColumnWidth(value: Double): Self = StObject.set(x, "maxColumnWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxColumnWidthUndefined: Self = StObject.set(x, "maxColumnWidth", js.undefined)
+      inline def setMaxColumnWidthUndefined: Self = StObject.set(x, "maxColumnWidth", js.undefined)
       
-      @scala.inline
-      def setMinColumnWidth(value: Double): Self = StObject.set(x, "minColumnWidth", value.asInstanceOf[js.Any])
+      inline def setMinColumnWidth(value: Double): Self = StObject.set(x, "minColumnWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinColumnWidthUndefined: Self = StObject.set(x, "minColumnWidth", js.undefined)
+      inline def setMinColumnWidthUndefined: Self = StObject.set(x, "minColumnWidth", js.undefined)
       
-      @scala.inline
-      def setXDimensionLength(value: Double): Self = StObject.set(x, "xDimensionLength", value.asInstanceOf[js.Any])
+      inline def setXDimensionLength(value: Double): Self = StObject.set(x, "xDimensionLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXDimensionLengthUndefined: Self = StObject.set(x, "xDimensionLength", js.undefined)
+      inline def setXDimensionLengthUndefined: Self = StObject.set(x, "xDimensionLength", js.undefined)
       
-      @scala.inline
-      def setXField(value: String): Self = StObject.set(x, "xField", value.asInstanceOf[js.Any])
+      inline def setXField(value: String): Self = StObject.set(x, "xField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYField(value: String): Self = StObject.set(x, "yField", value.asInstanceOf[js.Any])
+      inline def setYField(value: String): Self = StObject.set(x, "yField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYFieldUndefined: Self = StObject.set(x, "yField", js.undefined)
+      inline def setYFieldUndefined: Self = StObject.set(x, "yField", js.undefined)
     }
   }
   
@@ -234,20 +183,16 @@ object interfaceMod {
   }
   object Range {
     
-    @scala.inline
-    def apply(next: Double, pre: Double): Range = {
+    inline def apply(next: Double, pre: Double): Range = {
       val __obj = js.Dynamic.literal(next = next.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any])
       __obj.asInstanceOf[Range]
     }
     
-    @scala.inline
-    implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+    extension [Self <: Range](x: Self) {
       
-      @scala.inline
-      def setNext(value: Double): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: Double): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPre(value: Double): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+      inline def setPre(value: Double): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     }
   }
   
@@ -267,50 +212,36 @@ object interfaceMod {
   }
   object StackCfg {
     
-    @scala.inline
-    def apply(xField: String): StackCfg = {
+    inline def apply(xField: String): StackCfg = {
       val __obj = js.Dynamic.literal(xField = xField.asInstanceOf[js.Any])
       __obj.asInstanceOf[StackCfg]
     }
     
-    @scala.inline
-    implicit class StackCfgMutableBuilder[Self <: StackCfg] (val x: Self) extends AnyVal {
+    extension [Self <: StackCfg](x: Self) {
       
-      @scala.inline
-      def setAdjustNames(value: js.Array[String]): Self = StObject.set(x, "adjustNames", value.asInstanceOf[js.Any])
+      inline def setAdjustNames(value: js.Array[String]): Self = StObject.set(x, "adjustNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdjustNamesUndefined: Self = StObject.set(x, "adjustNames", js.undefined)
+      inline def setAdjustNamesUndefined: Self = StObject.set(x, "adjustNames", js.undefined)
       
-      @scala.inline
-      def setAdjustNamesVarargs(value: String*): Self = StObject.set(x, "adjustNames", js.Array(value :_*))
+      inline def setAdjustNamesVarargs(value: String*): Self = StObject.set(x, "adjustNames", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setReverseOrder(value: Boolean): Self = StObject.set(x, "reverseOrder", value.asInstanceOf[js.Any])
+      inline def setReverseOrder(value: Boolean): Self = StObject.set(x, "reverseOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseOrderUndefined: Self = StObject.set(x, "reverseOrder", js.undefined)
+      inline def setReverseOrderUndefined: Self = StObject.set(x, "reverseOrder", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setXField(value: String): Self = StObject.set(x, "xField", value.asInstanceOf[js.Any])
+      inline def setXField(value: String): Self = StObject.set(x, "xField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYField(value: String): Self = StObject.set(x, "yField", value.asInstanceOf[js.Any])
+      inline def setYField(value: String): Self = StObject.set(x, "yField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYFieldUndefined: Self = StObject.set(x, "yField", js.undefined)
+      inline def setYFieldUndefined: Self = StObject.set(x, "yField", js.undefined)
     }
   }
 }

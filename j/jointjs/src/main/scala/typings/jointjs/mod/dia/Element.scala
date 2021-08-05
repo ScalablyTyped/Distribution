@@ -114,30 +114,21 @@ object Element {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def define(`type`: String): Constructor[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any]).asInstanceOf[Constructor[Element]]
-  @scala.inline
-  def define(`type`: String, defaults: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
-  @scala.inline
-  def define(`type`: String, defaults: js.Any, protoProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
-  @scala.inline
-  def define(`type`: String, defaults: js.Any, protoProps: js.Any, staticProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
-  @scala.inline
-  def define(`type`: String, defaults: js.Any, protoProps: Unit, staticProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
-  @scala.inline
-  def define(`type`: String, defaults: Unit, protoProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
-  @scala.inline
-  def define(`type`: String, defaults: Unit, protoProps: js.Any, staticProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
-  @scala.inline
-  def define(`type`: String, defaults: Unit, protoProps: Unit, staticProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
+  inline def define(`type`: String): Constructor[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any]).asInstanceOf[Constructor[Element]]
+  inline def define(`type`: String, defaults: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
+  inline def define(`type`: String, defaults: js.Any, protoProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
+  inline def define(`type`: String, defaults: js.Any, protoProps: js.Any, staticProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
+  inline def define(`type`: String, defaults: js.Any, protoProps: Unit, staticProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
+  inline def define(`type`: String, defaults: Unit, protoProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
+  inline def define(`type`: String, defaults: Unit, protoProps: js.Any, staticProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
+  inline def define(`type`: String, defaults: Unit, protoProps: Unit, staticProps: js.Any): Constructor[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Element]]
   
   trait Attributes
     extends StObject
        with GenericAttributes[Selectors]
   object Attributes {
     
-    @scala.inline
-    def apply(): Attributes = {
+    inline def apply(): Attributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Attributes]
     }
@@ -159,44 +150,32 @@ object Element {
   }
   object GenericAttributes {
     
-    @scala.inline
-    def apply[T](): GenericAttributes[T] = {
+    inline def apply[T](): GenericAttributes[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenericAttributes[T]]
     }
     
-    @scala.inline
-    implicit class GenericAttributesMutableBuilder[Self <: GenericAttributes[?], T] (val x: Self & GenericAttributes[T]) extends AnyVal {
+    extension [Self <: GenericAttributes[?], T](x: Self & GenericAttributes[T]) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+      inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
       
-      @scala.inline
-      def setMarkup(value: String | MarkupJSON): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
+      inline def setMarkup(value: String | MarkupJSON): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
+      inline def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
       
-      @scala.inline
-      def setPorts(value: Groups): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+      inline def setPorts(value: Groups): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+      inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -218,56 +197,40 @@ object Element {
   }
   object Port {
     
-    @scala.inline
-    def apply(): Port = {
+    inline def apply(): Port = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Port]
     }
     
-    @scala.inline
-    implicit class PortMutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
+    extension [Self <: Port](x: Self) {
       
-      @scala.inline
-      def setArgs(value: StringDictionary[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: StringDictionary[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setAttrs(value: Selectors): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: Selectors): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLabel(value: Markup): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Markup): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setMarkup(value: String | MarkupJSON): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
+      inline def setMarkup(value: String | MarkupJSON): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
+      inline def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
       
-      @scala.inline
-      def setZ(value: Double | auto): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double | auto): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+      inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
     }
   }
   
@@ -283,38 +246,28 @@ object Element {
   }
   object PortGroup {
     
-    @scala.inline
-    def apply(): PortGroup = {
+    inline def apply(): PortGroup = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PortGroup]
     }
     
-    @scala.inline
-    implicit class PortGroupMutableBuilder[Self <: PortGroup] (val x: Self) extends AnyVal {
+    extension [Self <: PortGroup](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: Selectors): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: Selectors): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setLabel(value: Markup): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Markup): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setMarkup(value: String | MarkupJSON): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
+      inline def setMarkup(value: String | MarkupJSON): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
+      inline def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
       
-      @scala.inline
-      def setPosition(value: PositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: PositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }
   }
   
@@ -326,17 +279,14 @@ object Element {
   }
   object PortPosition {
     
-    @scala.inline
-    def apply(angle: Double, x: Double, y: Double): PortPosition = {
+    inline def apply(angle: Double, x: Double, y: Double): PortPosition = {
       val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[PortPosition]
     }
     
-    @scala.inline
-    implicit class PortPositionMutableBuilder[Self <: PortPosition] (val x: Self) extends AnyVal {
+    extension [Self <: PortPosition](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     }
   }
   
@@ -350,26 +300,20 @@ object Element {
   }
   object TranslateOptions {
     
-    @scala.inline
-    def apply(): TranslateOptions = {
+    inline def apply(): TranslateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TranslateOptions]
     }
     
-    @scala.inline
-    implicit class TranslateOptionsMutableBuilder[Self <: TranslateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TranslateOptions](x: Self) {
       
-      @scala.inline
-      def setRestrictedArea(value: BBox): Self = StObject.set(x, "restrictedArea", value.asInstanceOf[js.Any])
+      inline def setRestrictedArea(value: BBox): Self = StObject.set(x, "restrictedArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestrictedAreaUndefined: Self = StObject.set(x, "restrictedArea", js.undefined)
+      inline def setRestrictedAreaUndefined: Self = StObject.set(x, "restrictedArea", js.undefined)
       
-      @scala.inline
-      def setTransition(value: TransitionOptions): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: TransitionOptions): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     }
   }
 }

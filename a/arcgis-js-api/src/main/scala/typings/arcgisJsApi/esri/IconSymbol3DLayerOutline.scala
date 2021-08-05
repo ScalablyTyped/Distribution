@@ -26,8 +26,7 @@ trait IconSymbol3DLayerOutline
 }
 object IconSymbol3DLayerOutline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -39,19 +38,14 @@ object IconSymbol3DLayerOutline {
     __obj.asInstanceOf[IconSymbol3DLayerOutline]
   }
   
-  @scala.inline
-  implicit class IconSymbol3DLayerOutlineMutableBuilder[Self <: IconSymbol3DLayerOutline] (val x: Self) extends AnyVal {
+  extension [Self <: IconSymbol3DLayerOutline](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

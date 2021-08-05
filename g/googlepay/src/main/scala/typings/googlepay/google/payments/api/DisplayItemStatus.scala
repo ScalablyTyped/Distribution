@@ -23,9 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisplayItemStatus extends StObject
 object DisplayItemStatus {
   
-  @scala.inline
-  def FINAL: typings.googlepay.googlepayStrings.FINAL = "FINAL".asInstanceOf[typings.googlepay.googlepayStrings.FINAL]
+  inline def FINAL: typings.googlepay.googlepayStrings.FINAL = "FINAL".asInstanceOf[typings.googlepay.googlepayStrings.FINAL]
   
-  @scala.inline
-  def PENDING: typings.googlepay.googlepayStrings.PENDING = "PENDING".asInstanceOf[typings.googlepay.googlepayStrings.PENDING]
+  inline def PENDING: typings.googlepay.googlepayStrings.PENDING = "PENDING".asInstanceOf[typings.googlepay.googlepayStrings.PENDING]
 }

@@ -18,25 +18,19 @@ trait PreviewAgentsResponse extends StObject {
 }
 object PreviewAgentsResponse {
   
-  @scala.inline
-  def apply(agentPreviews: AgentPreviewList): PreviewAgentsResponse = {
+  inline def apply(agentPreviews: AgentPreviewList): PreviewAgentsResponse = {
     val __obj = js.Dynamic.literal(agentPreviews = agentPreviews.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreviewAgentsResponse]
   }
   
-  @scala.inline
-  implicit class PreviewAgentsResponseMutableBuilder[Self <: PreviewAgentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PreviewAgentsResponse](x: Self) {
     
-    @scala.inline
-    def setAgentPreviews(value: AgentPreviewList): Self = StObject.set(x, "agentPreviews", value.asInstanceOf[js.Any])
+    inline def setAgentPreviews(value: AgentPreviewList): Self = StObject.set(x, "agentPreviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentPreviewsVarargs(value: AgentPreview*): Self = StObject.set(x, "agentPreviews", js.Array(value :_*))
+    inline def setAgentPreviewsVarargs(value: AgentPreview*): Self = StObject.set(x, "agentPreviews", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

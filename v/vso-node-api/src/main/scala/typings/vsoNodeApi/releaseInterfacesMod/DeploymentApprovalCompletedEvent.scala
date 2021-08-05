@@ -14,22 +14,17 @@ trait DeploymentApprovalCompletedEvent extends StObject {
 }
 object DeploymentApprovalCompletedEvent {
   
-  @scala.inline
-  def apply(approval: ReleaseApproval, project: ProjectReference, release: Release): DeploymentApprovalCompletedEvent = {
+  inline def apply(approval: ReleaseApproval, project: ProjectReference, release: Release): DeploymentApprovalCompletedEvent = {
     val __obj = js.Dynamic.literal(approval = approval.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentApprovalCompletedEvent]
   }
   
-  @scala.inline
-  implicit class DeploymentApprovalCompletedEventMutableBuilder[Self <: DeploymentApprovalCompletedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentApprovalCompletedEvent](x: Self) {
     
-    @scala.inline
-    def setApproval(value: ReleaseApproval): Self = StObject.set(x, "approval", value.asInstanceOf[js.Any])
+    inline def setApproval(value: ReleaseApproval): Self = StObject.set(x, "approval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
   }
 }

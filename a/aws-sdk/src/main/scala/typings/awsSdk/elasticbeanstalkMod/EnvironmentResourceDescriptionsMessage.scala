@@ -13,19 +13,15 @@ trait EnvironmentResourceDescriptionsMessage extends StObject {
 }
 object EnvironmentResourceDescriptionsMessage {
   
-  @scala.inline
-  def apply(): EnvironmentResourceDescriptionsMessage = {
+  inline def apply(): EnvironmentResourceDescriptionsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvironmentResourceDescriptionsMessage]
   }
   
-  @scala.inline
-  implicit class EnvironmentResourceDescriptionsMessageMutableBuilder[Self <: EnvironmentResourceDescriptionsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentResourceDescriptionsMessage](x: Self) {
     
-    @scala.inline
-    def setEnvironmentResources(value: EnvironmentResourceDescription): Self = StObject.set(x, "EnvironmentResources", value.asInstanceOf[js.Any])
+    inline def setEnvironmentResources(value: EnvironmentResourceDescription): Self = StObject.set(x, "EnvironmentResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentResourcesUndefined: Self = StObject.set(x, "EnvironmentResources", js.undefined)
+    inline def setEnvironmentResourcesUndefined: Self = StObject.set(x, "EnvironmentResources", js.undefined)
   }
 }

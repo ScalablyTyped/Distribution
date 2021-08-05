@@ -11,19 +11,15 @@ trait DebugOptions extends StObject {
 }
 object DebugOptions {
   
-  @scala.inline
-  def apply(): DebugOptions = {
+  inline def apply(): DebugOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DebugOptions]
   }
   
-  @scala.inline
-  implicit class DebugOptionsMutableBuilder[Self <: DebugOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DebugOptions](x: Self) {
     
-    @scala.inline
-    def setEnableDebugging(value: Boolean): Self = StObject.set(x, "enableDebugging", value.asInstanceOf[js.Any])
+    inline def setEnableDebugging(value: Boolean): Self = StObject.set(x, "enableDebugging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDebuggingUndefined: Self = StObject.set(x, "enableDebugging", js.undefined)
+    inline def setEnableDebuggingUndefined: Self = StObject.set(x, "enableDebugging", js.undefined)
   }
 }

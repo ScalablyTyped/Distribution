@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateKind extends StObject
 object UpdateKind {
   
-  @scala.inline
-  def destroy: typings.pulumiPulumi.pulumiPulumiStrings.destroy = "destroy".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.destroy]
+  inline def destroy: typings.pulumiPulumi.pulumiPulumiStrings.destroy = "destroy".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.destroy]
   
-  @scala.inline
-  def `import`: typings.pulumiPulumi.pulumiPulumiStrings.`import` = "import".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.`import`]
+  inline def `import`: typings.pulumiPulumi.pulumiPulumiStrings.`import` = "import".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.`import`]
   
-  @scala.inline
-  def preview: typings.pulumiPulumi.pulumiPulumiStrings.preview = "preview".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.preview]
+  inline def preview: typings.pulumiPulumi.pulumiPulumiStrings.preview = "preview".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.preview]
   
-  @scala.inline
-  def refresh: typings.pulumiPulumi.pulumiPulumiStrings.refresh = "refresh".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.refresh]
+  inline def refresh: typings.pulumiPulumi.pulumiPulumiStrings.refresh = "refresh".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.refresh]
   
-  @scala.inline
-  def rename: typings.pulumiPulumi.pulumiPulumiStrings.rename = "rename".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.rename]
+  inline def rename: typings.pulumiPulumi.pulumiPulumiStrings.rename = "rename".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.rename]
   
-  @scala.inline
-  def update: typings.pulumiPulumi.pulumiPulumiStrings.update = "update".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.update]
+  inline def update: typings.pulumiPulumi.pulumiPulumiStrings.update = "update".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.update]
 }

@@ -23,8 +23,7 @@ trait ContainerInfo extends StObject {
 }
 object ContainerInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAnchorColumn: () => Integer,
     getAnchorRow: () => Integer,
     getOffsetX: () => Integer,
@@ -34,19 +33,14 @@ object ContainerInfo {
     __obj.asInstanceOf[ContainerInfo]
   }
   
-  @scala.inline
-  implicit class ContainerInfoMutableBuilder[Self <: ContainerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerInfo](x: Self) {
     
-    @scala.inline
-    def setGetAnchorColumn(value: () => Integer): Self = StObject.set(x, "getAnchorColumn", js.Any.fromFunction0(value))
+    inline def setGetAnchorColumn(value: () => Integer): Self = StObject.set(x, "getAnchorColumn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAnchorRow(value: () => Integer): Self = StObject.set(x, "getAnchorRow", js.Any.fromFunction0(value))
+    inline def setGetAnchorRow(value: () => Integer): Self = StObject.set(x, "getAnchorRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOffsetX(value: () => Integer): Self = StObject.set(x, "getOffsetX", js.Any.fromFunction0(value))
+    inline def setGetOffsetX(value: () => Integer): Self = StObject.set(x, "getOffsetX", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOffsetY(value: () => Integer): Self = StObject.set(x, "getOffsetY", js.Any.fromFunction0(value))
+    inline def setGetOffsetY(value: () => Integer): Self = StObject.set(x, "getOffsetY", js.Any.fromFunction0(value))
   }
 }

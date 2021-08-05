@@ -11,49 +11,33 @@ object concordMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getExtensions(context: ConcordContext, configuration: Concord): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getExtensions")(context.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getExtensions(context: ConcordContext, configuration: Concord): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getExtensions")(context.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getField(context: ConcordContext, configuration: Concord, field: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getField")(context.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getField(context: ConcordContext, configuration: Concord, field: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getField")(context.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getMain(context: ConcordContext, configuration: Concord): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMain")(context.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getMain(context: ConcordContext, configuration: Concord): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMain")(context.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def isConditionMatched(context: ConcordContext, condition: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isConditionMatched")(context.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isConditionMatched(context: ConcordContext, condition: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isConditionMatched")(context.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isEnvironment(context: ConcordContext, env: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnvironment")(context.asInstanceOf[js.Any], env.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isEnvironment(context: ConcordContext, env: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnvironment")(context.asInstanceOf[js.Any], env.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isEnvironment(context: ConcordContext, env: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnvironment")(context.asInstanceOf[js.Any], env.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isEnvironment(context: ConcordContext, env: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnvironment")(context.asInstanceOf[js.Any], env.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isGlobMatched(glob: String, relativePath: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isGlobMatched")(glob.asInstanceOf[js.Any], relativePath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isGlobMatched(glob: String, relativePath: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isGlobMatched")(glob.asInstanceOf[js.Any], relativePath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isKeyMatched(context: ConcordContext, key: String): String | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isKeyMatched")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String | Boolean]
+  inline def isKeyMatched(context: ConcordContext, key: String): String | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isKeyMatched")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String | Boolean]
   
-  @scala.inline
-  def isResourceTypeSupported(context: ConcordContext, `type`: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isResourceTypeSupported")(context.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isResourceTypeSupported(context: ConcordContext, `type`: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isResourceTypeSupported")(context.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isTypeMatched(baseType: String, testedType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeMatched")(baseType.asInstanceOf[js.Any], testedType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isTypeMatched(baseType: String, testedType: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeMatched")(baseType.asInstanceOf[js.Any], testedType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isTypeMatched(baseType: Type, testedType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeMatched")(baseType.asInstanceOf[js.Any], testedType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isTypeMatched(baseType: Type, testedType: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeMatched")(baseType.asInstanceOf[js.Any], testedType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isTypeMatched(baseType: String, testedType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeMatched")(baseType.asInstanceOf[js.Any], testedType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isTypeMatched(baseType: String, testedType: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeMatched")(baseType.asInstanceOf[js.Any], testedType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isTypeMatched(baseType: Type, testedType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeMatched")(baseType.asInstanceOf[js.Any], testedType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isTypeMatched(baseType: Type, testedType: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeMatched")(baseType.asInstanceOf[js.Any], testedType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def matchModule(context: ConcordContext, configuration: Concord, request: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("matchModule")(context.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def matchModule(context: ConcordContext, configuration: Concord, request: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("matchModule")(context.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def matchType(context: ConcordContext, configuration: Concord, relativePath: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchType")(context.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], relativePath.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def matchType(context: ConcordContext, configuration: Concord, relativePath: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchType")(context.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], relativePath.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def parseType(`type`: String): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("parseType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type]
+  inline def parseType(`type`: String): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("parseType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type]
   
   trait Concord extends StObject {
     
@@ -69,8 +53,7 @@ object concordMod {
   }
   object Concord {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `[server] main`: String,
       extensions: js.Array[String],
       main: String,
@@ -82,26 +65,19 @@ object concordMod {
       __obj.asInstanceOf[Concord]
     }
     
-    @scala.inline
-    implicit class ConcordMutableBuilder[Self <: Concord] (val x: Self) extends AnyVal {
+    extension [Self <: Concord](x: Self) {
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+      inline def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModules(value: Dictionary[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+      inline def setModules(value: Dictionary[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypes(value: Dictionary[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: Dictionary[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `set[server] main`(value: String): Self = StObject.set(x, "[server] main", value.asInstanceOf[js.Any])
+      inline def `set[server] main`(value: String): Self = StObject.set(x, "[server] main", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,38 +91,28 @@ object concordMod {
   }
   object ConcordContext {
     
-    @scala.inline
-    def apply(): ConcordContext = {
+    inline def apply(): ConcordContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConcordContext]
     }
     
-    @scala.inline
-    implicit class ConcordContextMutableBuilder[Self <: ConcordContext] (val x: Self) extends AnyVal {
+    extension [Self <: ConcordContext](x: Self) {
       
-      @scala.inline
-      def setEnvironments(value: js.Array[String]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
+      inline def setEnvironments(value: js.Array[String]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentsUndefined: Self = StObject.set(x, "environments", js.undefined)
+      inline def setEnvironmentsUndefined: Self = StObject.set(x, "environments", js.undefined)
       
-      @scala.inline
-      def setEnvironmentsVarargs(value: String*): Self = StObject.set(x, "environments", js.Array(value :_*))
+      inline def setEnvironmentsVarargs(value: String*): Self = StObject.set(x, "environments", js.Array(value :_*))
       
-      @scala.inline
-      def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+      inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
+      inline def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
       
-      @scala.inline
-      def setSupportedResourceTypes(value: js.Array[String]): Self = StObject.set(x, "supportedResourceTypes", value.asInstanceOf[js.Any])
+      inline def setSupportedResourceTypes(value: js.Array[String]): Self = StObject.set(x, "supportedResourceTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedResourceTypesUndefined: Self = StObject.set(x, "supportedResourceTypes", js.undefined)
+      inline def setSupportedResourceTypesUndefined: Self = StObject.set(x, "supportedResourceTypes", js.undefined)
       
-      @scala.inline
-      def setSupportedResourceTypesVarargs(value: String*): Self = StObject.set(x, "supportedResourceTypes", js.Array(value :_*))
+      inline def setSupportedResourceTypesVarargs(value: String*): Self = StObject.set(x, "supportedResourceTypes", js.Array(value :_*))
     }
   }
   
@@ -160,29 +126,22 @@ object concordMod {
   }
   object Type {
     
-    @scala.inline
-    def apply(features: js.Array[String]): Type = {
+    inline def apply(features: js.Array[String]): Type = {
       val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+      inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeNull: Self = StObject.set(x, "type", null)
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

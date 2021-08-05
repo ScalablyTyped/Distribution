@@ -20,8 +20,7 @@ object popoverNextComponentsErrorBoundaryMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getDerivedStateFromError(error: js.Any): HasError = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(error.asInstanceOf[js.Any]).asInstanceOf[HasError]
+    inline def getDerivedStateFromError(error: js.Any): HasError = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(error.asInstanceOf[js.Any]).asInstanceOf[HasError]
   }
   
   @js.native

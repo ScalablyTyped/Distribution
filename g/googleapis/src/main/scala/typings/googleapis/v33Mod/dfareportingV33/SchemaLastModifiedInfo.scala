@@ -16,19 +16,15 @@ trait SchemaLastModifiedInfo extends StObject {
 }
 object SchemaLastModifiedInfo {
   
-  @scala.inline
-  def apply(): SchemaLastModifiedInfo = {
+  inline def apply(): SchemaLastModifiedInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLastModifiedInfo]
   }
   
-  @scala.inline
-  implicit class SchemaLastModifiedInfoMutableBuilder[Self <: SchemaLastModifiedInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLastModifiedInfo](x: Self) {
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

@@ -46,52 +46,37 @@ trait SchemaWebApp extends StObject {
 }
 object SchemaWebApp {
   
-  @scala.inline
-  def apply(): SchemaWebApp = {
+  inline def apply(): SchemaWebApp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWebApp]
   }
   
-  @scala.inline
-  implicit class SchemaWebAppMutableBuilder[Self <: SchemaWebApp] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWebApp](x: Self) {
     
-    @scala.inline
-    def setDisplayMode(value: String): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
+    inline def setDisplayMode(value: String): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
+    inline def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
     
-    @scala.inline
-    def setIcons(value: js.Array[SchemaWebAppIcon]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: js.Array[SchemaWebAppIcon]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    @scala.inline
-    def setIconsVarargs(value: SchemaWebAppIcon*): Self = StObject.set(x, "icons", js.Array(value :_*))
+    inline def setIconsVarargs(value: SchemaWebAppIcon*): Self = StObject.set(x, "icons", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStartUrl(value: String): Self = StObject.set(x, "startUrl", value.asInstanceOf[js.Any])
+    inline def setStartUrl(value: String): Self = StObject.set(x, "startUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUrlUndefined: Self = StObject.set(x, "startUrl", js.undefined)
+    inline def setStartUrlUndefined: Self = StObject.set(x, "startUrl", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setVersionCode(value: String): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
+    inline def setVersionCode(value: String): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
+    inline def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
   }
 }

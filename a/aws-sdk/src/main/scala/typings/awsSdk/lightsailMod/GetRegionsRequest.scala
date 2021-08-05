@@ -18,25 +18,19 @@ trait GetRegionsRequest extends StObject {
 }
 object GetRegionsRequest {
   
-  @scala.inline
-  def apply(): GetRegionsRequest = {
+  inline def apply(): GetRegionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRegionsRequest]
   }
   
-  @scala.inline
-  implicit class GetRegionsRequestMutableBuilder[Self <: GetRegionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRegionsRequest](x: Self) {
     
-    @scala.inline
-    def setIncludeAvailabilityZones(value: Boolean): Self = StObject.set(x, "includeAvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setIncludeAvailabilityZones(value: Boolean): Self = StObject.set(x, "includeAvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeAvailabilityZonesUndefined: Self = StObject.set(x, "includeAvailabilityZones", js.undefined)
+    inline def setIncludeAvailabilityZonesUndefined: Self = StObject.set(x, "includeAvailabilityZones", js.undefined)
     
-    @scala.inline
-    def setIncludeRelationalDatabaseAvailabilityZones(value: Boolean): Self = StObject.set(x, "includeRelationalDatabaseAvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setIncludeRelationalDatabaseAvailabilityZones(value: Boolean): Self = StObject.set(x, "includeRelationalDatabaseAvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeRelationalDatabaseAvailabilityZonesUndefined: Self = StObject.set(x, "includeRelationalDatabaseAvailabilityZones", js.undefined)
+    inline def setIncludeRelationalDatabaseAvailabilityZonesUndefined: Self = StObject.set(x, "includeRelationalDatabaseAvailabilityZones", js.undefined)
   }
 }

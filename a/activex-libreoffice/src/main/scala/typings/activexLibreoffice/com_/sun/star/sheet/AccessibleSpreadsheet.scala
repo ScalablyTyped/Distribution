@@ -33,8 +33,7 @@ trait AccessibleSpreadsheet
      with XAccessibleEventBroadcaster
 object AccessibleSpreadsheet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleCaption: XAccessible,
     AccessibleChildCount: Double,
     AccessibleColumnCount: Double,

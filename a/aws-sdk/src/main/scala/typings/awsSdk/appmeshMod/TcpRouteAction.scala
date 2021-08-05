@@ -13,19 +13,15 @@ trait TcpRouteAction extends StObject {
 }
 object TcpRouteAction {
   
-  @scala.inline
-  def apply(weightedTargets: WeightedTargets): TcpRouteAction = {
+  inline def apply(weightedTargets: WeightedTargets): TcpRouteAction = {
     val __obj = js.Dynamic.literal(weightedTargets = weightedTargets.asInstanceOf[js.Any])
     __obj.asInstanceOf[TcpRouteAction]
   }
   
-  @scala.inline
-  implicit class TcpRouteActionMutableBuilder[Self <: TcpRouteAction] (val x: Self) extends AnyVal {
+  extension [Self <: TcpRouteAction](x: Self) {
     
-    @scala.inline
-    def setWeightedTargets(value: WeightedTargets): Self = StObject.set(x, "weightedTargets", value.asInstanceOf[js.Any])
+    inline def setWeightedTargets(value: WeightedTargets): Self = StObject.set(x, "weightedTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightedTargetsVarargs(value: WeightedTarget*): Self = StObject.set(x, "weightedTargets", js.Array(value :_*))
+    inline def setWeightedTargetsVarargs(value: WeightedTarget*): Self = StObject.set(x, "weightedTargets", js.Array(value :_*))
   }
 }

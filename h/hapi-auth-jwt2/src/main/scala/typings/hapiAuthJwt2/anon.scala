@@ -14,23 +14,18 @@ object anon {
   }
   object Credentials {
     
-    @scala.inline
-    def apply(isValid: Boolean): Credentials = {
+    inline def apply(isValid: Boolean): Credentials = {
       val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Credentials]
     }
     
-    @scala.inline
-    implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
+    extension [Self <: Credentials](x: Self) {
       
-      @scala.inline
-      def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,26 +37,20 @@ object anon {
   }
   object ExtraInfo {
     
-    @scala.inline
-    def apply(key: String | js.Array[String]): ExtraInfo = {
+    inline def apply(key: String | js.Array[String]): ExtraInfo = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExtraInfo]
     }
     
-    @scala.inline
-    implicit class ExtraInfoMutableBuilder[Self <: ExtraInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ExtraInfo](x: Self) {
       
-      @scala.inline
-      def setExtraInfo(value: typings.hapiAuthJwt2.mod.ExtraInfo): Self = StObject.set(x, "extraInfo", value.asInstanceOf[js.Any])
+      inline def setExtraInfo(value: typings.hapiAuthJwt2.mod.ExtraInfo): Self = StObject.set(x, "extraInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraInfoUndefined: Self = StObject.set(x, "extraInfo", js.undefined)
+      inline def setExtraInfoUndefined: Self = StObject.set(x, "extraInfo", js.undefined)
       
-      @scala.inline
-      def setKey(value: String | js.Array[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | js.Array[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyVarargs(value: String*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: String*): Self = StObject.set(x, "key", js.Array(value :_*))
     }
   }
 }

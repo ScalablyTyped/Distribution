@@ -28,37 +28,27 @@ trait Organization extends StObject {
 }
 object Organization {
   
-  @scala.inline
-  def apply(): Organization = {
+  inline def apply(): Organization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Organization]
   }
   
-  @scala.inline
-  implicit class OrganizationMutableBuilder[Self <: Organization] (val x: Self) extends AnyVal {
+  extension [Self <: Organization](x: Self) {
     
-    @scala.inline
-    def setAsn(value: String): Self = StObject.set(x, "Asn", value.asInstanceOf[js.Any])
+    inline def setAsn(value: String): Self = StObject.set(x, "Asn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsnOrg(value: String): Self = StObject.set(x, "AsnOrg", value.asInstanceOf[js.Any])
+    inline def setAsnOrg(value: String): Self = StObject.set(x, "AsnOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsnOrgUndefined: Self = StObject.set(x, "AsnOrg", js.undefined)
+    inline def setAsnOrgUndefined: Self = StObject.set(x, "AsnOrg", js.undefined)
     
-    @scala.inline
-    def setAsnUndefined: Self = StObject.set(x, "Asn", js.undefined)
+    inline def setAsnUndefined: Self = StObject.set(x, "Asn", js.undefined)
     
-    @scala.inline
-    def setIsp(value: String): Self = StObject.set(x, "Isp", value.asInstanceOf[js.Any])
+    inline def setIsp(value: String): Self = StObject.set(x, "Isp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIspUndefined: Self = StObject.set(x, "Isp", js.undefined)
+    inline def setIspUndefined: Self = StObject.set(x, "Isp", js.undefined)
     
-    @scala.inline
-    def setOrg(value: String): Self = StObject.set(x, "Org", value.asInstanceOf[js.Any])
+    inline def setOrg(value: String): Self = StObject.set(x, "Org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrgUndefined: Self = StObject.set(x, "Org", js.undefined)
+    inline def setOrgUndefined: Self = StObject.set(x, "Org", js.undefined)
   }
 }

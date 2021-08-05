@@ -44,7 +44,7 @@ trait DialogFrame extends StObject {
   
   val Creator: XlCreator = js.native
   
-  @JSName("Excel.DialogFrame_typekey")
+  /* private */ @JSName("Excel.DialogFrame_typekey")
   var ExcelDotDialogFrame_typekey: DialogFrame = js.native
   
   var Height: Double = js.native

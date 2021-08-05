@@ -23,46 +23,33 @@ trait ClustersConfigDump extends StObject {
 }
 object ClustersConfigDump {
   
-  @scala.inline
-  def apply(): ClustersConfigDump = {
+  inline def apply(): ClustersConfigDump = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClustersConfigDump]
   }
   
-  @scala.inline
-  implicit class ClustersConfigDumpMutableBuilder[Self <: ClustersConfigDump] (val x: Self) extends AnyVal {
+  extension [Self <: ClustersConfigDump](x: Self) {
     
-    @scala.inline
-    def setDynamicActiveClusters(value: js.Array[DynamicCluster]): Self = StObject.set(x, "dynamicActiveClusters", value.asInstanceOf[js.Any])
+    inline def setDynamicActiveClusters(value: js.Array[DynamicCluster]): Self = StObject.set(x, "dynamicActiveClusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicActiveClustersUndefined: Self = StObject.set(x, "dynamicActiveClusters", js.undefined)
+    inline def setDynamicActiveClustersUndefined: Self = StObject.set(x, "dynamicActiveClusters", js.undefined)
     
-    @scala.inline
-    def setDynamicActiveClustersVarargs(value: DynamicCluster*): Self = StObject.set(x, "dynamicActiveClusters", js.Array(value :_*))
+    inline def setDynamicActiveClustersVarargs(value: DynamicCluster*): Self = StObject.set(x, "dynamicActiveClusters", js.Array(value :_*))
     
-    @scala.inline
-    def setDynamicWarmingClusters(value: js.Array[DynamicCluster]): Self = StObject.set(x, "dynamicWarmingClusters", value.asInstanceOf[js.Any])
+    inline def setDynamicWarmingClusters(value: js.Array[DynamicCluster]): Self = StObject.set(x, "dynamicWarmingClusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicWarmingClustersUndefined: Self = StObject.set(x, "dynamicWarmingClusters", js.undefined)
+    inline def setDynamicWarmingClustersUndefined: Self = StObject.set(x, "dynamicWarmingClusters", js.undefined)
     
-    @scala.inline
-    def setDynamicWarmingClustersVarargs(value: DynamicCluster*): Self = StObject.set(x, "dynamicWarmingClusters", js.Array(value :_*))
+    inline def setDynamicWarmingClustersVarargs(value: DynamicCluster*): Self = StObject.set(x, "dynamicWarmingClusters", js.Array(value :_*))
     
-    @scala.inline
-    def setStaticClusters(value: js.Array[StaticCluster]): Self = StObject.set(x, "staticClusters", value.asInstanceOf[js.Any])
+    inline def setStaticClusters(value: js.Array[StaticCluster]): Self = StObject.set(x, "staticClusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticClustersUndefined: Self = StObject.set(x, "staticClusters", js.undefined)
+    inline def setStaticClustersUndefined: Self = StObject.set(x, "staticClusters", js.undefined)
     
-    @scala.inline
-    def setStaticClustersVarargs(value: StaticCluster*): Self = StObject.set(x, "staticClusters", js.Array(value :_*))
+    inline def setStaticClustersVarargs(value: StaticCluster*): Self = StObject.set(x, "staticClusters", js.Array(value :_*))
     
-    @scala.inline
-    def setVersionInfo(value: String): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
+    inline def setVersionInfo(value: String): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
+    inline def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
   }
 }

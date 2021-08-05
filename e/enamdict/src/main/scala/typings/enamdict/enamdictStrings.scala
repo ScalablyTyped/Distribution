@@ -11,20 +11,17 @@ object enamdictStrings {
   sealed trait `given`
     extends StObject
        with NameType
-  @scala.inline
-  def `given`: `given` = "given".asInstanceOf[`given`]
+  inline def `given`: `given` = "given".asInstanceOf[`given`]
   
   @js.native
   sealed trait surname
     extends StObject
        with NameType
-  @scala.inline
-  def surname: surname = "surname".asInstanceOf[surname]
+  inline def surname: surname = "surname".asInstanceOf[surname]
   
   @js.native
   sealed trait unknown
     extends StObject
        with NameType
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
 }

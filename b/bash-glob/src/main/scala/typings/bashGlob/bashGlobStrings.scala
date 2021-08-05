@@ -8,16 +8,13 @@ object bashGlobStrings {
   
   @js.native
   sealed trait end extends StObject
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait files extends StObject
-  @scala.inline
-  def files: files = "files".asInstanceOf[files]
+  inline def files: files = "files".asInstanceOf[files]
   
   @js.native
   sealed trait `match` extends StObject
-  @scala.inline
-  def `match`: `match` = "match".asInstanceOf[`match`]
+  inline def `match`: `match` = "match".asInstanceOf[`match`]
 }

@@ -26,19 +26,15 @@ trait SystemInfoLocale
 }
 object SystemInfoLocale {
   
-  @scala.inline
-  def apply(country: String, language: String): SystemInfoLocale = {
+  inline def apply(country: String, language: String): SystemInfoLocale = {
     val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemInfoLocale]
   }
   
-  @scala.inline
-  implicit class SystemInfoLocaleMutableBuilder[Self <: SystemInfoLocale] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoLocale](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
   }
 }

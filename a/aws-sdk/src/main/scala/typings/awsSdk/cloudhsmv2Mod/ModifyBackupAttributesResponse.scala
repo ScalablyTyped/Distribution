@@ -10,19 +10,15 @@ trait ModifyBackupAttributesResponse extends StObject {
 }
 object ModifyBackupAttributesResponse {
   
-  @scala.inline
-  def apply(): ModifyBackupAttributesResponse = {
+  inline def apply(): ModifyBackupAttributesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyBackupAttributesResponse]
   }
   
-  @scala.inline
-  implicit class ModifyBackupAttributesResponseMutableBuilder[Self <: ModifyBackupAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyBackupAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setBackup(value: Backup): Self = StObject.set(x, "Backup", value.asInstanceOf[js.Any])
+    inline def setBackup(value: Backup): Self = StObject.set(x, "Backup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupUndefined: Self = StObject.set(x, "Backup", js.undefined)
+    inline def setBackupUndefined: Self = StObject.set(x, "Backup", js.undefined)
   }
 }

@@ -63,8 +63,7 @@ trait CompilationJobSummary extends StObject {
 }
 object CompilationJobSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CompilationJobArn: CompilationJobArn,
     CompilationJobName: EntityName,
     CompilationJobStatus: CompilationJobStatus,
@@ -74,61 +73,42 @@ object CompilationJobSummary {
     __obj.asInstanceOf[CompilationJobSummary]
   }
   
-  @scala.inline
-  implicit class CompilationJobSummaryMutableBuilder[Self <: CompilationJobSummary] (val x: Self) extends AnyVal {
+  extension [Self <: CompilationJobSummary](x: Self) {
     
-    @scala.inline
-    def setCompilationEndTime(value: Timestamp): Self = StObject.set(x, "CompilationEndTime", value.asInstanceOf[js.Any])
+    inline def setCompilationEndTime(value: Timestamp): Self = StObject.set(x, "CompilationEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompilationEndTimeUndefined: Self = StObject.set(x, "CompilationEndTime", js.undefined)
+    inline def setCompilationEndTimeUndefined: Self = StObject.set(x, "CompilationEndTime", js.undefined)
     
-    @scala.inline
-    def setCompilationJobArn(value: CompilationJobArn): Self = StObject.set(x, "CompilationJobArn", value.asInstanceOf[js.Any])
+    inline def setCompilationJobArn(value: CompilationJobArn): Self = StObject.set(x, "CompilationJobArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompilationJobName(value: EntityName): Self = StObject.set(x, "CompilationJobName", value.asInstanceOf[js.Any])
+    inline def setCompilationJobName(value: EntityName): Self = StObject.set(x, "CompilationJobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompilationJobStatus(value: CompilationJobStatus): Self = StObject.set(x, "CompilationJobStatus", value.asInstanceOf[js.Any])
+    inline def setCompilationJobStatus(value: CompilationJobStatus): Self = StObject.set(x, "CompilationJobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompilationStartTime(value: Timestamp): Self = StObject.set(x, "CompilationStartTime", value.asInstanceOf[js.Any])
+    inline def setCompilationStartTime(value: Timestamp): Self = StObject.set(x, "CompilationStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompilationStartTimeUndefined: Self = StObject.set(x, "CompilationStartTime", js.undefined)
+    inline def setCompilationStartTimeUndefined: Self = StObject.set(x, "CompilationStartTime", js.undefined)
     
-    @scala.inline
-    def setCompilationTargetDevice(value: TargetDevice): Self = StObject.set(x, "CompilationTargetDevice", value.asInstanceOf[js.Any])
+    inline def setCompilationTargetDevice(value: TargetDevice): Self = StObject.set(x, "CompilationTargetDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompilationTargetDeviceUndefined: Self = StObject.set(x, "CompilationTargetDevice", js.undefined)
+    inline def setCompilationTargetDeviceUndefined: Self = StObject.set(x, "CompilationTargetDevice", js.undefined)
     
-    @scala.inline
-    def setCompilationTargetPlatformAccelerator(value: TargetPlatformAccelerator): Self = StObject.set(x, "CompilationTargetPlatformAccelerator", value.asInstanceOf[js.Any])
+    inline def setCompilationTargetPlatformAccelerator(value: TargetPlatformAccelerator): Self = StObject.set(x, "CompilationTargetPlatformAccelerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompilationTargetPlatformAcceleratorUndefined: Self = StObject.set(x, "CompilationTargetPlatformAccelerator", js.undefined)
+    inline def setCompilationTargetPlatformAcceleratorUndefined: Self = StObject.set(x, "CompilationTargetPlatformAccelerator", js.undefined)
     
-    @scala.inline
-    def setCompilationTargetPlatformArch(value: TargetPlatformArch): Self = StObject.set(x, "CompilationTargetPlatformArch", value.asInstanceOf[js.Any])
+    inline def setCompilationTargetPlatformArch(value: TargetPlatformArch): Self = StObject.set(x, "CompilationTargetPlatformArch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompilationTargetPlatformArchUndefined: Self = StObject.set(x, "CompilationTargetPlatformArch", js.undefined)
+    inline def setCompilationTargetPlatformArchUndefined: Self = StObject.set(x, "CompilationTargetPlatformArch", js.undefined)
     
-    @scala.inline
-    def setCompilationTargetPlatformOs(value: TargetPlatformOs): Self = StObject.set(x, "CompilationTargetPlatformOs", value.asInstanceOf[js.Any])
+    inline def setCompilationTargetPlatformOs(value: TargetPlatformOs): Self = StObject.set(x, "CompilationTargetPlatformOs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompilationTargetPlatformOsUndefined: Self = StObject.set(x, "CompilationTargetPlatformOs", js.undefined)
+    inline def setCompilationTargetPlatformOsUndefined: Self = StObject.set(x, "CompilationTargetPlatformOs", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
+    inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
   }
 }

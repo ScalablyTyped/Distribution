@@ -59,8 +59,7 @@ trait XUntitledNumbers
 }
 object XUntitledNumbers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     UntitledPrefix: String,
     acquire: () => Unit,
     getUntitledPrefix: () => String,
@@ -74,22 +73,16 @@ object XUntitledNumbers {
     __obj.asInstanceOf[XUntitledNumbers]
   }
   
-  @scala.inline
-  implicit class XUntitledNumbersMutableBuilder[Self <: XUntitledNumbers] (val x: Self) extends AnyVal {
+  extension [Self <: XUntitledNumbers](x: Self) {
     
-    @scala.inline
-    def setGetUntitledPrefix(value: () => String): Self = StObject.set(x, "getUntitledPrefix", js.Any.fromFunction0(value))
+    inline def setGetUntitledPrefix(value: () => String): Self = StObject.set(x, "getUntitledPrefix", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLeaseNumber(value: XInterface => Double): Self = StObject.set(x, "leaseNumber", js.Any.fromFunction1(value))
+    inline def setLeaseNumber(value: XInterface => Double): Self = StObject.set(x, "leaseNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReleaseNumber(value: Double => Unit): Self = StObject.set(x, "releaseNumber", js.Any.fromFunction1(value))
+    inline def setReleaseNumber(value: Double => Unit): Self = StObject.set(x, "releaseNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReleaseNumberForComponent(value: XInterface => Unit): Self = StObject.set(x, "releaseNumberForComponent", js.Any.fromFunction1(value))
+    inline def setReleaseNumberForComponent(value: XInterface => Unit): Self = StObject.set(x, "releaseNumberForComponent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUntitledPrefix(value: String): Self = StObject.set(x, "UntitledPrefix", value.asInstanceOf[js.Any])
+    inline def setUntitledPrefix(value: String): Self = StObject.set(x, "UntitledPrefix", value.asInstanceOf[js.Any])
   }
 }

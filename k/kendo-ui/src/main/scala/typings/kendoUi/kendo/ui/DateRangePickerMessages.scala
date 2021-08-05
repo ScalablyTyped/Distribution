@@ -12,25 +12,19 @@ trait DateRangePickerMessages extends StObject {
 }
 object DateRangePickerMessages {
   
-  @scala.inline
-  def apply(): DateRangePickerMessages = {
+  inline def apply(): DateRangePickerMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateRangePickerMessages]
   }
   
-  @scala.inline
-  implicit class DateRangePickerMessagesMutableBuilder[Self <: DateRangePickerMessages] (val x: Self) extends AnyVal {
+  extension [Self <: DateRangePickerMessages](x: Self) {
     
-    @scala.inline
-    def setEndLabel(value: String): Self = StObject.set(x, "endLabel", value.asInstanceOf[js.Any])
+    inline def setEndLabel(value: String): Self = StObject.set(x, "endLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndLabelUndefined: Self = StObject.set(x, "endLabel", js.undefined)
+    inline def setEndLabelUndefined: Self = StObject.set(x, "endLabel", js.undefined)
     
-    @scala.inline
-    def setStartLabel(value: String): Self = StObject.set(x, "startLabel", value.asInstanceOf[js.Any])
+    inline def setStartLabel(value: String): Self = StObject.set(x, "startLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLabelUndefined: Self = StObject.set(x, "startLabel", js.undefined)
+    inline def setStartLabelUndefined: Self = StObject.set(x, "startLabel", js.undefined)
   }
 }

@@ -8,6 +8,5 @@ object gzipSizeStrings {
   
   @js.native
   sealed trait `gzip-size` extends StObject
-  @scala.inline
-  def `gzip-size`: `gzip-size` = "gzip-size".asInstanceOf[`gzip-size`]
+  inline def `gzip-size`: `gzip-size` = "gzip-size".asInstanceOf[`gzip-size`]
 }

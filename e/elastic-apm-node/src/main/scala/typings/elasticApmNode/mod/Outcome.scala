@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Outcome extends StObject
 object Outcome {
   
-  @scala.inline
-  def failure: typings.elasticApmNode.elasticApmNodeStrings.failure = "failure".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.failure]
+  inline def failure: typings.elasticApmNode.elasticApmNodeStrings.failure = "failure".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.failure]
   
-  @scala.inline
-  def success: typings.elasticApmNode.elasticApmNodeStrings.success = "success".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.success]
+  inline def success: typings.elasticApmNode.elasticApmNodeStrings.success = "success".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.success]
   
-  @scala.inline
-  def unknown: typings.elasticApmNode.elasticApmNodeStrings.unknown = "unknown".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.unknown]
+  inline def unknown: typings.elasticApmNode.elasticApmNodeStrings.unknown = "unknown".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.unknown]
 }

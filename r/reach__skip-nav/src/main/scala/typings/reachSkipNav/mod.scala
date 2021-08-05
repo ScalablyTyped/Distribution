@@ -41,20 +41,16 @@ object mod {
   }
   object SkipNavProps {
     
-    @scala.inline
-    def apply(): SkipNavProps = {
+    inline def apply(): SkipNavProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SkipNavProps]
     }
     
-    @scala.inline
-    implicit class SkipNavPropsMutableBuilder[Self <: SkipNavProps] (val x: Self) extends AnyVal {
+    extension [Self <: SkipNavProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: String | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: String | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

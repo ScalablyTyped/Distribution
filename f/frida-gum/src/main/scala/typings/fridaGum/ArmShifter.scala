@@ -19,33 +19,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArmShifter extends StObject
 object ArmShifter {
   
-  @scala.inline
-  def asr: typings.fridaGum.fridaGumStrings.asr = "asr".asInstanceOf[typings.fridaGum.fridaGumStrings.asr]
+  inline def asr: typings.fridaGum.fridaGumStrings.asr = "asr".asInstanceOf[typings.fridaGum.fridaGumStrings.asr]
   
-  @scala.inline
-  def `asr-reg`: typings.fridaGum.fridaGumStrings.`asr-reg` = "asr-reg".asInstanceOf[typings.fridaGum.fridaGumStrings.`asr-reg`]
+  inline def `asr-reg`: typings.fridaGum.fridaGumStrings.`asr-reg` = "asr-reg".asInstanceOf[typings.fridaGum.fridaGumStrings.`asr-reg`]
   
-  @scala.inline
-  def lsl: typings.fridaGum.fridaGumStrings.lsl = "lsl".asInstanceOf[typings.fridaGum.fridaGumStrings.lsl]
+  inline def lsl: typings.fridaGum.fridaGumStrings.lsl = "lsl".asInstanceOf[typings.fridaGum.fridaGumStrings.lsl]
   
-  @scala.inline
-  def `lsl-reg`: typings.fridaGum.fridaGumStrings.`lsl-reg` = "lsl-reg".asInstanceOf[typings.fridaGum.fridaGumStrings.`lsl-reg`]
+  inline def `lsl-reg`: typings.fridaGum.fridaGumStrings.`lsl-reg` = "lsl-reg".asInstanceOf[typings.fridaGum.fridaGumStrings.`lsl-reg`]
   
-  @scala.inline
-  def lsr: typings.fridaGum.fridaGumStrings.lsr = "lsr".asInstanceOf[typings.fridaGum.fridaGumStrings.lsr]
+  inline def lsr: typings.fridaGum.fridaGumStrings.lsr = "lsr".asInstanceOf[typings.fridaGum.fridaGumStrings.lsr]
   
-  @scala.inline
-  def `lsr-reg`: typings.fridaGum.fridaGumStrings.`lsr-reg` = "lsr-reg".asInstanceOf[typings.fridaGum.fridaGumStrings.`lsr-reg`]
+  inline def `lsr-reg`: typings.fridaGum.fridaGumStrings.`lsr-reg` = "lsr-reg".asInstanceOf[typings.fridaGum.fridaGumStrings.`lsr-reg`]
   
-  @scala.inline
-  def ror: typings.fridaGum.fridaGumStrings.ror = "ror".asInstanceOf[typings.fridaGum.fridaGumStrings.ror]
+  inline def ror: typings.fridaGum.fridaGumStrings.ror = "ror".asInstanceOf[typings.fridaGum.fridaGumStrings.ror]
   
-  @scala.inline
-  def `ror-reg`: typings.fridaGum.fridaGumStrings.`ror-reg` = "ror-reg".asInstanceOf[typings.fridaGum.fridaGumStrings.`ror-reg`]
+  inline def `ror-reg`: typings.fridaGum.fridaGumStrings.`ror-reg` = "ror-reg".asInstanceOf[typings.fridaGum.fridaGumStrings.`ror-reg`]
   
-  @scala.inline
-  def rrx: typings.fridaGum.fridaGumStrings.rrx = "rrx".asInstanceOf[typings.fridaGum.fridaGumStrings.rrx]
+  inline def rrx: typings.fridaGum.fridaGumStrings.rrx = "rrx".asInstanceOf[typings.fridaGum.fridaGumStrings.rrx]
   
-  @scala.inline
-  def `rrx-reg`: typings.fridaGum.fridaGumStrings.`rrx-reg` = "rrx-reg".asInstanceOf[typings.fridaGum.fridaGumStrings.`rrx-reg`]
+  inline def `rrx-reg`: typings.fridaGum.fridaGumStrings.`rrx-reg` = "rrx-reg".asInstanceOf[typings.fridaGum.fridaGumStrings.`rrx-reg`]
 }

@@ -98,8 +98,7 @@ object syncFileSystem {
   }
   object FileStatusChangedDetail {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fileEntry: FileEntry,
       status: ToStringLiteral[
           CONFLICTING, 
@@ -114,11 +113,9 @@ object syncFileSystem {
       __obj.asInstanceOf[FileStatusChangedDetail]
     }
     
-    @scala.inline
-    implicit class FileStatusChangedDetailMutableBuilder[Self <: FileStatusChangedDetail] (val x: Self) extends AnyVal {
+    extension [Self <: FileStatusChangedDetail](x: Self) {
       
-      @scala.inline
-      def setAction(
+      inline def setAction(
         value: ToStringLiteral[
               ADDED, 
               /* keyof chrome-apps.anon.ADDED */ typings.chromeApps.chromeAppsStrings.ADDED | UPDATED | DELETED, 
@@ -129,11 +126,9 @@ object syncFileSystem {
             ]
       ): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setDirection(
+      inline def setDirection(
         value: ToStringLiteral[
               LOCALTOREMOTE, 
               /* keyof chrome-apps.anon.LOCALTOREMOTE */ LOCAL_TO_REMOTE | REMOTE_TO_LOCAL, 
@@ -144,14 +139,11 @@ object syncFileSystem {
             ]
       ): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setFileEntry(value: FileEntry): Self = StObject.set(x, "fileEntry", value.asInstanceOf[js.Any])
+      inline def setFileEntry(value: FileEntry): Self = StObject.set(x, "fileEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(
+      inline def setStatus(
         value: ToStringLiteral[
               CONFLICTING, 
               /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
@@ -187,8 +179,7 @@ object syncFileSystem {
   }
   object FileStatusInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fileEntry: FileEntry,
       status: ToStringLiteral[
           CONFLICTING, 
@@ -203,20 +194,15 @@ object syncFileSystem {
       __obj.asInstanceOf[FileStatusInfo]
     }
     
-    @scala.inline
-    implicit class FileStatusInfoMutableBuilder[Self <: FileStatusInfo] (val x: Self) extends AnyVal {
+    extension [Self <: FileStatusInfo](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFileEntry(value: FileEntry): Self = StObject.set(x, "fileEntry", value.asInstanceOf[js.Any])
+      inline def setFileEntry(value: FileEntry): Self = StObject.set(x, "fileEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(
+      inline def setStatus(
         value: ToStringLiteral[
               CONFLICTING, 
               /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 

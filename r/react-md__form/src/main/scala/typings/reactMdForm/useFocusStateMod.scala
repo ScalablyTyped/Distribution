@@ -16,8 +16,7 @@ object useFocusStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useFocusState(hasOnFocusOnBlur: Options): js.Tuple3[Boolean, FocusEventHandler, BlurEventHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusState")(hasOnFocusOnBlur.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[Boolean, FocusEventHandler, BlurEventHandler]]
+  inline def useFocusState(hasOnFocusOnBlur: Options): js.Tuple3[Boolean, FocusEventHandler, BlurEventHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusState")(hasOnFocusOnBlur.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[Boolean, FocusEventHandler, BlurEventHandler]]
   
   type BlurEventHandler = typings.react.mod.FocusEventHandler[FocusElement]
   
@@ -34,26 +33,20 @@ object useFocusStateMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOnBlur(value: FocusEvent[FocusElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[FocusElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: FocusEvent[FocusElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[FocusElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     }
   }
 }

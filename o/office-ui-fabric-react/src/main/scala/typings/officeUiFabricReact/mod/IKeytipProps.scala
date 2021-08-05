@@ -9,8 +9,7 @@ trait IKeytipProps
      with typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
 object IKeytipProps {
   
-  @scala.inline
-  def apply(content: String, keySequences: js.Array[String]): IKeytipProps = {
+  inline def apply(content: String, keySequences: js.Array[String]): IKeytipProps = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], keySequences = keySequences.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeytipProps]
   }

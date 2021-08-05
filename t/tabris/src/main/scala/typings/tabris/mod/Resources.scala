@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("tabris", "Resources")
 @js.native
 class Resources[ResourceType, RawType] protected () extends StObject {
-  protected def this(options: ResourcesConstructorOptions[ResourceType, RawType]) = this()
+  /* protected */ def this(options: ResourcesConstructorOptions[ResourceType, RawType]) = this()
 }
 /* static members */
 object Resources {
@@ -16,8 +16,7 @@ object Resources {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def build[ResourceType](options: ResourceBuildOptions[ResourceType]): ResourceBuilder[ResourceType, ResourceType] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any]).asInstanceOf[ResourceBuilder[ResourceType, ResourceType]]
+  inline def build[ResourceType](options: ResourceBuildOptions[ResourceType]): ResourceBuilder[ResourceType, ResourceType] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any]).asInstanceOf[ResourceBuilder[ResourceType, ResourceType]]
   /**
     * Generates a `ResourceBuilder`, which is a factory for resource dictionaries. The options given here
     * determine the type of the resource, as well as the "raw" type from which to create the resource
@@ -33,6 +32,5 @@ object Resources {
     * converter. For primitives this option must not be given.
     * @param options The configuration of the new `ResourceBuilder`. Requires either a validator or a converter function, or both.
     */
-  @scala.inline
-  def build[ResourceType, RawType](options: ResourceBuildConvertOptions[ResourceType, RawType]): ResourceBuilder[ResourceType, RawType] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any]).asInstanceOf[ResourceBuilder[ResourceType, RawType]]
+  inline def build[ResourceType, RawType](options: ResourceBuildConvertOptions[ResourceType, RawType]): ResourceBuilder[ResourceType, RawType] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any]).asInstanceOf[ResourceBuilder[ResourceType, RawType]]
 }

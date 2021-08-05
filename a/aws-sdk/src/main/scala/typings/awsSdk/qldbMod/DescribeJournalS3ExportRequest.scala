@@ -18,19 +18,15 @@ trait DescribeJournalS3ExportRequest extends StObject {
 }
 object DescribeJournalS3ExportRequest {
   
-  @scala.inline
-  def apply(ExportId: UniqueId, Name: LedgerName): DescribeJournalS3ExportRequest = {
+  inline def apply(ExportId: UniqueId, Name: LedgerName): DescribeJournalS3ExportRequest = {
     val __obj = js.Dynamic.literal(ExportId = ExportId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeJournalS3ExportRequest]
   }
   
-  @scala.inline
-  implicit class DescribeJournalS3ExportRequestMutableBuilder[Self <: DescribeJournalS3ExportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeJournalS3ExportRequest](x: Self) {
     
-    @scala.inline
-    def setExportId(value: UniqueId): Self = StObject.set(x, "ExportId", value.asInstanceOf[js.Any])
+    inline def setExportId(value: UniqueId): Self = StObject.set(x, "ExportId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

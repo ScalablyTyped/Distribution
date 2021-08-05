@@ -74,8 +74,7 @@ trait XLinguProperties
 }
 object XLinguProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultLocale: Locale,
     DefaultLocale_CJK: Locale,
     DefaultLocale_CTL: Locale,
@@ -108,55 +107,38 @@ object XLinguProperties {
     __obj.asInstanceOf[XLinguProperties]
   }
   
-  @scala.inline
-  implicit class XLinguPropertiesMutableBuilder[Self <: XLinguProperties] (val x: Self) extends AnyVal {
+  extension [Self <: XLinguProperties](x: Self) {
     
-    @scala.inline
-    def setDefaultLocale(value: Locale): Self = StObject.set(x, "DefaultLocale", value.asInstanceOf[js.Any])
+    inline def setDefaultLocale(value: Locale): Self = StObject.set(x, "DefaultLocale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLocale_CJK(value: Locale): Self = StObject.set(x, "DefaultLocale_CJK", value.asInstanceOf[js.Any])
+    inline def setDefaultLocale_CJK(value: Locale): Self = StObject.set(x, "DefaultLocale_CJK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLocale_CTL(value: Locale): Self = StObject.set(x, "DefaultLocale_CTL", value.asInstanceOf[js.Any])
+    inline def setDefaultLocale_CTL(value: Locale): Self = StObject.set(x, "DefaultLocale_CTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyphMinLeading(value: Double): Self = StObject.set(x, "HyphMinLeading", value.asInstanceOf[js.Any])
+    inline def setHyphMinLeading(value: Double): Self = StObject.set(x, "HyphMinLeading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyphMinTrailing(value: Double): Self = StObject.set(x, "HyphMinTrailing", value.asInstanceOf[js.Any])
+    inline def setHyphMinTrailing(value: Double): Self = StObject.set(x, "HyphMinTrailing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyphMinWordLength(value: Double): Self = StObject.set(x, "HyphMinWordLength", value.asInstanceOf[js.Any])
+    inline def setHyphMinWordLength(value: Double): Self = StObject.set(x, "HyphMinWordLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHyphAuto(value: Boolean): Self = StObject.set(x, "IsHyphAuto", value.asInstanceOf[js.Any])
+    inline def setIsHyphAuto(value: Boolean): Self = StObject.set(x, "IsHyphAuto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHyphSpecial(value: Boolean): Self = StObject.set(x, "IsHyphSpecial", value.asInstanceOf[js.Any])
+    inline def setIsHyphSpecial(value: Boolean): Self = StObject.set(x, "IsHyphSpecial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIgnoreControlCharacters(value: Boolean): Self = StObject.set(x, "IsIgnoreControlCharacters", value.asInstanceOf[js.Any])
+    inline def setIsIgnoreControlCharacters(value: Boolean): Self = StObject.set(x, "IsIgnoreControlCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSpellAuto(value: Boolean): Self = StObject.set(x, "IsSpellAuto", value.asInstanceOf[js.Any])
+    inline def setIsSpellAuto(value: Boolean): Self = StObject.set(x, "IsSpellAuto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSpellCapitalization(value: Boolean): Self = StObject.set(x, "IsSpellCapitalization", value.asInstanceOf[js.Any])
+    inline def setIsSpellCapitalization(value: Boolean): Self = StObject.set(x, "IsSpellCapitalization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSpellSpecial(value: Boolean): Self = StObject.set(x, "IsSpellSpecial", value.asInstanceOf[js.Any])
+    inline def setIsSpellSpecial(value: Boolean): Self = StObject.set(x, "IsSpellSpecial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSpellUpperCase(value: Boolean): Self = StObject.set(x, "IsSpellUpperCase", value.asInstanceOf[js.Any])
+    inline def setIsSpellUpperCase(value: Boolean): Self = StObject.set(x, "IsSpellUpperCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSpellWithDigits(value: Boolean): Self = StObject.set(x, "IsSpellWithDigits", value.asInstanceOf[js.Any])
+    inline def setIsSpellWithDigits(value: Boolean): Self = StObject.set(x, "IsSpellWithDigits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUseDictionaryList(value: Boolean): Self = StObject.set(x, "IsUseDictionaryList", value.asInstanceOf[js.Any])
+    inline def setIsUseDictionaryList(value: Boolean): Self = StObject.set(x, "IsUseDictionaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWrapReverse(value: Boolean): Self = StObject.set(x, "IsWrapReverse", value.asInstanceOf[js.Any])
+    inline def setIsWrapReverse(value: Boolean): Self = StObject.set(x, "IsWrapReverse", value.asInstanceOf[js.Any])
   }
 }

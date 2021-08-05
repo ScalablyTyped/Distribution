@@ -18,16 +18,13 @@ trait SuspenseListCommonProps extends StObject {
 }
 object SuspenseListCommonProps {
   
-  @scala.inline
-  def apply(children: ReactElement | Iterable[ReactElement]): SuspenseListCommonProps = {
+  inline def apply(children: ReactElement | Iterable[ReactElement]): SuspenseListCommonProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuspenseListCommonProps]
   }
   
-  @scala.inline
-  implicit class SuspenseListCommonPropsMutableBuilder[Self <: SuspenseListCommonProps] (val x: Self) extends AnyVal {
+  extension [Self <: SuspenseListCommonProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactElement | Iterable[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactElement | Iterable[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }
 }

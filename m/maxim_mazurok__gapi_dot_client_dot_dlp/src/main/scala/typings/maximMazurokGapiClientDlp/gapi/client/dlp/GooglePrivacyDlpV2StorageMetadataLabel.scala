@@ -10,19 +10,15 @@ trait GooglePrivacyDlpV2StorageMetadataLabel extends StObject {
 }
 object GooglePrivacyDlpV2StorageMetadataLabel {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2StorageMetadataLabel = {
+  inline def apply(): GooglePrivacyDlpV2StorageMetadataLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2StorageMetadataLabel]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2StorageMetadataLabelMutableBuilder[Self <: GooglePrivacyDlpV2StorageMetadataLabel] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2StorageMetadataLabel](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

@@ -32,27 +32,21 @@ trait ApplyPatchOptions extends StObject {
 }
 object ApplyPatchOptions {
   
-  @scala.inline
-  def apply(): ApplyPatchOptions = {
+  inline def apply(): ApplyPatchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplyPatchOptions]
   }
   
-  @scala.inline
-  implicit class ApplyPatchOptionsMutableBuilder[Self <: ApplyPatchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ApplyPatchOptions](x: Self) {
     
-    @scala.inline
-    def setCompareLine(
+    inline def setCompareLine(
       value: (/* lineNumber */ Double, /* line */ String, /* operation */ `-_` | Space, /* patchContent */ String) => Boolean
     ): Self = StObject.set(x, "compareLine", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCompareLineUndefined: Self = StObject.set(x, "compareLine", js.undefined)
+    inline def setCompareLineUndefined: Self = StObject.set(x, "compareLine", js.undefined)
     
-    @scala.inline
-    def setFuzzFactor(value: Double): Self = StObject.set(x, "fuzzFactor", value.asInstanceOf[js.Any])
+    inline def setFuzzFactor(value: Double): Self = StObject.set(x, "fuzzFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFuzzFactorUndefined: Self = StObject.set(x, "fuzzFactor", js.undefined)
+    inline def setFuzzFactorUndefined: Self = StObject.set(x, "fuzzFactor", js.undefined)
   }
 }

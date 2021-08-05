@@ -26,43 +26,31 @@ trait OrdersCustomBatchRequestEntryRefundItemItem extends StObject {
 }
 object OrdersCustomBatchRequestEntryRefundItemItem {
   
-  @scala.inline
-  def apply(): OrdersCustomBatchRequestEntryRefundItemItem = {
+  inline def apply(): OrdersCustomBatchRequestEntryRefundItemItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrdersCustomBatchRequestEntryRefundItemItem]
   }
   
-  @scala.inline
-  implicit class OrdersCustomBatchRequestEntryRefundItemItemMutableBuilder[Self <: OrdersCustomBatchRequestEntryRefundItemItem] (val x: Self) extends AnyVal {
+  extension [Self <: OrdersCustomBatchRequestEntryRefundItemItem](x: Self) {
     
-    @scala.inline
-    def setAmount(value: MonetaryAmount): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: MonetaryAmount): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setFullRefund(value: Boolean): Self = StObject.set(x, "fullRefund", value.asInstanceOf[js.Any])
+    inline def setFullRefund(value: Boolean): Self = StObject.set(x, "fullRefund", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullRefundUndefined: Self = StObject.set(x, "fullRefund", js.undefined)
+    inline def setFullRefundUndefined: Self = StObject.set(x, "fullRefund", js.undefined)
     
-    @scala.inline
-    def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
+    inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
+    inline def setLineItemIdUndefined: Self = StObject.set(x, "lineItemId", js.undefined)
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
   }
 }

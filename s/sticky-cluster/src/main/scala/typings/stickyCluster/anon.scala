@@ -12,17 +12,14 @@ object anon {
   }
   object Stickyclusterworkerindex {
     
-    @scala.inline
-    def apply(stickycluster_worker_index: Double): Stickyclusterworkerindex = {
+    inline def apply(stickycluster_worker_index: Double): Stickyclusterworkerindex = {
       val __obj = js.Dynamic.literal(stickycluster_worker_index = stickycluster_worker_index.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stickyclusterworkerindex]
     }
     
-    @scala.inline
-    implicit class StickyclusterworkerindexMutableBuilder[Self <: Stickyclusterworkerindex] (val x: Self) extends AnyVal {
+    extension [Self <: Stickyclusterworkerindex](x: Self) {
       
-      @scala.inline
-      def setStickycluster_worker_index(value: Double): Self = StObject.set(x, "stickycluster_worker_index", value.asInstanceOf[js.Any])
+      inline def setStickycluster_worker_index(value: Double): Self = StObject.set(x, "stickycluster_worker_index", value.asInstanceOf[js.Any])
     }
   }
 }

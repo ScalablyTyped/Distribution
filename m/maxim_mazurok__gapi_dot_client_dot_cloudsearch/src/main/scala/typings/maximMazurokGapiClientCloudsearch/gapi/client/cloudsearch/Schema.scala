@@ -14,31 +14,23 @@ trait Schema extends StObject {
 }
 object Schema {
   
-  @scala.inline
-  def apply(): Schema = {
+  inline def apply(): Schema = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Schema]
   }
   
-  @scala.inline
-  implicit class SchemaMutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
+  extension [Self <: Schema](x: Self) {
     
-    @scala.inline
-    def setObjectDefinitions(value: js.Array[ObjectDefinition]): Self = StObject.set(x, "objectDefinitions", value.asInstanceOf[js.Any])
+    inline def setObjectDefinitions(value: js.Array[ObjectDefinition]): Self = StObject.set(x, "objectDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectDefinitionsUndefined: Self = StObject.set(x, "objectDefinitions", js.undefined)
+    inline def setObjectDefinitionsUndefined: Self = StObject.set(x, "objectDefinitions", js.undefined)
     
-    @scala.inline
-    def setObjectDefinitionsVarargs(value: ObjectDefinition*): Self = StObject.set(x, "objectDefinitions", js.Array(value :_*))
+    inline def setObjectDefinitionsVarargs(value: ObjectDefinition*): Self = StObject.set(x, "objectDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setOperationIds(value: js.Array[String]): Self = StObject.set(x, "operationIds", value.asInstanceOf[js.Any])
+    inline def setOperationIds(value: js.Array[String]): Self = StObject.set(x, "operationIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdsUndefined: Self = StObject.set(x, "operationIds", js.undefined)
+    inline def setOperationIdsUndefined: Self = StObject.set(x, "operationIds", js.undefined)
     
-    @scala.inline
-    def setOperationIdsVarargs(value: String*): Self = StObject.set(x, "operationIds", js.Array(value :_*))
+    inline def setOperationIdsVarargs(value: String*): Self = StObject.set(x, "operationIds", js.Array(value :_*))
   }
 }

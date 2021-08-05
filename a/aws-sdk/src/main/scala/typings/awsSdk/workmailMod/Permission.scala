@@ -23,25 +23,19 @@ trait Permission extends StObject {
 }
 object Permission {
   
-  @scala.inline
-  def apply(GranteeId: WorkMailIdentifier, GranteeType: MemberType, PermissionValues: PermissionValues): Permission = {
+  inline def apply(GranteeId: WorkMailIdentifier, GranteeType: MemberType, PermissionValues: PermissionValues): Permission = {
     val __obj = js.Dynamic.literal(GranteeId = GranteeId.asInstanceOf[js.Any], GranteeType = GranteeType.asInstanceOf[js.Any], PermissionValues = PermissionValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[Permission]
   }
   
-  @scala.inline
-  implicit class PermissionMutableBuilder[Self <: Permission] (val x: Self) extends AnyVal {
+  extension [Self <: Permission](x: Self) {
     
-    @scala.inline
-    def setGranteeId(value: WorkMailIdentifier): Self = StObject.set(x, "GranteeId", value.asInstanceOf[js.Any])
+    inline def setGranteeId(value: WorkMailIdentifier): Self = StObject.set(x, "GranteeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGranteeType(value: MemberType): Self = StObject.set(x, "GranteeType", value.asInstanceOf[js.Any])
+    inline def setGranteeType(value: MemberType): Self = StObject.set(x, "GranteeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionValues(value: PermissionValues): Self = StObject.set(x, "PermissionValues", value.asInstanceOf[js.Any])
+    inline def setPermissionValues(value: PermissionValues): Self = StObject.set(x, "PermissionValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionValuesVarargs(value: PermissionType*): Self = StObject.set(x, "PermissionValues", js.Array(value :_*))
+    inline def setPermissionValuesVarargs(value: PermissionType*): Self = StObject.set(x, "PermissionValues", js.Array(value :_*))
   }
 }

@@ -28,8 +28,7 @@ trait SchemaItemDefinition extends StObject {
 }
 object SchemaItemDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowAttributes: String | js.Array[String],
     allowAttributesOf: String | js.Array[String],
     allowContentOf: String | js.Array[String],
@@ -45,58 +44,40 @@ object SchemaItemDefinition {
     __obj.asInstanceOf[SchemaItemDefinition]
   }
   
-  @scala.inline
-  implicit class SchemaItemDefinitionMutableBuilder[Self <: SchemaItemDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaItemDefinition](x: Self) {
     
-    @scala.inline
-    def setAllowAttributes(value: String | js.Array[String]): Self = StObject.set(x, "allowAttributes", value.asInstanceOf[js.Any])
+    inline def setAllowAttributes(value: String | js.Array[String]): Self = StObject.set(x, "allowAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowAttributesOf(value: String | js.Array[String]): Self = StObject.set(x, "allowAttributesOf", value.asInstanceOf[js.Any])
+    inline def setAllowAttributesOf(value: String | js.Array[String]): Self = StObject.set(x, "allowAttributesOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowAttributesOfVarargs(value: String*): Self = StObject.set(x, "allowAttributesOf", js.Array(value :_*))
+    inline def setAllowAttributesOfVarargs(value: String*): Self = StObject.set(x, "allowAttributesOf", js.Array(value :_*))
     
-    @scala.inline
-    def setAllowAttributesVarargs(value: String*): Self = StObject.set(x, "allowAttributes", js.Array(value :_*))
+    inline def setAllowAttributesVarargs(value: String*): Self = StObject.set(x, "allowAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setAllowContentOf(value: String | js.Array[String]): Self = StObject.set(x, "allowContentOf", value.asInstanceOf[js.Any])
+    inline def setAllowContentOf(value: String | js.Array[String]): Self = StObject.set(x, "allowContentOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowContentOfVarargs(value: String*): Self = StObject.set(x, "allowContentOf", js.Array(value :_*))
+    inline def setAllowContentOfVarargs(value: String*): Self = StObject.set(x, "allowContentOf", js.Array(value :_*))
     
-    @scala.inline
-    def setAllowIn(value: String | js.Array[String]): Self = StObject.set(x, "allowIn", value.asInstanceOf[js.Any])
+    inline def setAllowIn(value: String | js.Array[String]): Self = StObject.set(x, "allowIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowInVarargs(value: String*): Self = StObject.set(x, "allowIn", js.Array(value :_*))
+    inline def setAllowInVarargs(value: String*): Self = StObject.set(x, "allowIn", js.Array(value :_*))
     
-    @scala.inline
-    def setAllowWhere(value: String | js.Array[String]): Self = StObject.set(x, "allowWhere", value.asInstanceOf[js.Any])
+    inline def setAllowWhere(value: String | js.Array[String]): Self = StObject.set(x, "allowWhere", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowWhereVarargs(value: String*): Self = StObject.set(x, "allowWhere", js.Array(value :_*))
+    inline def setAllowWhereVarargs(value: String*): Self = StObject.set(x, "allowWhere", js.Array(value :_*))
     
-    @scala.inline
-    def setInheritAllFrom(value: String | js.Array[String]): Self = StObject.set(x, "inheritAllFrom", value.asInstanceOf[js.Any])
+    inline def setInheritAllFrom(value: String | js.Array[String]): Self = StObject.set(x, "inheritAllFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritAllFromVarargs(value: String*): Self = StObject.set(x, "inheritAllFrom", js.Array(value :_*))
+    inline def setInheritAllFromVarargs(value: String*): Self = StObject.set(x, "inheritAllFrom", js.Array(value :_*))
     
-    @scala.inline
-    def setInheritTypesFrom(value: String | js.Array[String]): Self = StObject.set(x, "inheritTypesFrom", value.asInstanceOf[js.Any])
+    inline def setInheritTypesFrom(value: String | js.Array[String]): Self = StObject.set(x, "inheritTypesFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritTypesFromVarargs(value: String*): Self = StObject.set(x, "inheritTypesFrom", js.Array(value :_*))
+    inline def setInheritTypesFromVarargs(value: String*): Self = StObject.set(x, "inheritTypesFrom", js.Array(value :_*))
     
-    @scala.inline
-    def setIsBlock(value: Boolean): Self = StObject.set(x, "isBlock", value.asInstanceOf[js.Any])
+    inline def setIsBlock(value: Boolean): Self = StObject.set(x, "isBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLimit(value: Boolean): Self = StObject.set(x, "isLimit", value.asInstanceOf[js.Any])
+    inline def setIsLimit(value: Boolean): Self = StObject.set(x, "isLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsObject(value: Boolean): Self = StObject.set(x, "isObject", value.asInstanceOf[js.Any])
+    inline def setIsObject(value: Boolean): Self = StObject.set(x, "isObject", value.asInstanceOf[js.Any])
   }
 }

@@ -30,17 +30,14 @@ object privateRouteMod extends Shortcut {
   }
   object PrivateRouteProps {
     
-    @scala.inline
-    def apply(loginPath: String): PrivateRouteProps = {
+    inline def apply(loginPath: String): PrivateRouteProps = {
       val __obj = js.Dynamic.literal(loginPath = loginPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrivateRouteProps]
     }
     
-    @scala.inline
-    implicit class PrivateRoutePropsMutableBuilder[Self <: PrivateRouteProps] (val x: Self) extends AnyVal {
+    extension [Self <: PrivateRouteProps](x: Self) {
       
-      @scala.inline
-      def setLoginPath(value: String): Self = StObject.set(x, "loginPath", value.asInstanceOf[js.Any])
+      inline def setLoginPath(value: String): Self = StObject.set(x, "loginPath", value.asInstanceOf[js.Any])
     }
   }
   

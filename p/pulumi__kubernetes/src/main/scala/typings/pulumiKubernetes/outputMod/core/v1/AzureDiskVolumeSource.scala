@@ -41,8 +41,7 @@ trait AzureDiskVolumeSource extends StObject {
 }
 object AzureDiskVolumeSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cachingMode: String,
     diskName: String,
     diskURI: String,
@@ -54,25 +53,18 @@ object AzureDiskVolumeSource {
     __obj.asInstanceOf[AzureDiskVolumeSource]
   }
   
-  @scala.inline
-  implicit class AzureDiskVolumeSourceMutableBuilder[Self <: AzureDiskVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: AzureDiskVolumeSource](x: Self) {
     
-    @scala.inline
-    def setCachingMode(value: String): Self = StObject.set(x, "cachingMode", value.asInstanceOf[js.Any])
+    inline def setCachingMode(value: String): Self = StObject.set(x, "cachingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskName(value: String): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
+    inline def setDiskName(value: String): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskURI(value: String): Self = StObject.set(x, "diskURI", value.asInstanceOf[js.Any])
+    inline def setDiskURI(value: String): Self = StObject.set(x, "diskURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
   }
 }

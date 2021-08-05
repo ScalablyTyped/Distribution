@@ -32,8 +32,7 @@ trait TextureRegion extends StObject {
 }
 object TextureRegion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     height: Double,
     offsetX: Double,
     offsetY: Double,
@@ -51,43 +50,30 @@ object TextureRegion {
     __obj.asInstanceOf[TextureRegion]
   }
   
-  @scala.inline
-  implicit class TextureRegionMutableBuilder[Self <: TextureRegion] (val x: Self) extends AnyVal {
+  extension [Self <: TextureRegion](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalHeight(value: Double): Self = StObject.set(x, "originalHeight", value.asInstanceOf[js.Any])
+    inline def setOriginalHeight(value: Double): Self = StObject.set(x, "originalHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalWidth(value: Double): Self = StObject.set(x, "originalWidth", value.asInstanceOf[js.Any])
+    inline def setOriginalWidth(value: Double): Self = StObject.set(x, "originalWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderObject(value: js.Any): Self = StObject.set(x, "renderObject", value.asInstanceOf[js.Any])
+    inline def setRenderObject(value: js.Any): Self = StObject.set(x, "renderObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setU(value: Double): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+    inline def setU(value: Double): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setU2(value: Double): Self = StObject.set(x, "u2", value.asInstanceOf[js.Any])
+    inline def setU2(value: Double): Self = StObject.set(x, "u2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV2(value: Double): Self = StObject.set(x, "v2", value.asInstanceOf[js.Any])
+    inline def setV2(value: Double): Self = StObject.set(x, "v2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

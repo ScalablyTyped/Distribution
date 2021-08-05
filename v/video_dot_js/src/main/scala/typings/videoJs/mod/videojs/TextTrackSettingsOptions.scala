@@ -12,19 +12,15 @@ trait TextTrackSettingsOptions
 }
 object TextTrackSettingsOptions {
   
-  @scala.inline
-  def apply(): TextTrackSettingsOptions = {
+  inline def apply(): TextTrackSettingsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextTrackSettingsOptions]
   }
   
-  @scala.inline
-  implicit class TextTrackSettingsOptionsMutableBuilder[Self <: TextTrackSettingsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextTrackSettingsOptions](x: Self) {
     
-    @scala.inline
-    def setPersistTextTrackSettings(value: Boolean): Self = StObject.set(x, "persistTextTrackSettings", value.asInstanceOf[js.Any])
+    inline def setPersistTextTrackSettings(value: Boolean): Self = StObject.set(x, "persistTextTrackSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistTextTrackSettingsUndefined: Self = StObject.set(x, "persistTextTrackSettings", js.undefined)
+    inline def setPersistTextTrackSettingsUndefined: Self = StObject.set(x, "persistTextTrackSettings", js.undefined)
   }
 }

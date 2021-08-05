@@ -64,34 +64,26 @@ object RawDataProvider {
   }
   object Helpers {
     
-    @scala.inline
-    def apply(): Helpers = {
+    inline def apply(): Helpers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Helpers]
     }
     
-    @scala.inline
-    implicit class HelpersMutableBuilder[Self <: Helpers] (val x: Self) extends AnyVal {
+    extension [Self <: Helpers](x: Self) {
       
-      @scala.inline
-      def setLatLngToPixel(
+      inline def setLatLngToPixel(
         value: (/* latitude */ Latitude, /* longitude */ Longitude, /* z */ Zoom, /* tileSize */ TileSize) => PixelCoordinates
       ): Self = StObject.set(x, "latLngToPixel", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setLatLngToPixelUndefined: Self = StObject.set(x, "latLngToPixel", js.undefined)
+      inline def setLatLngToPixelUndefined: Self = StObject.set(x, "latLngToPixel", js.undefined)
       
-      @scala.inline
-      def setParseCSV(value: /* obj */ js.Any => js.Array[js.Any]): Self = StObject.set(x, "parseCSV", js.Any.fromFunction1(value))
+      inline def setParseCSV(value: /* obj */ js.Any => js.Array[js.Any]): Self = StObject.set(x, "parseCSV", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParseCSVUndefined: Self = StObject.set(x, "parseCSV", js.undefined)
+      inline def setParseCSVUndefined: Self = StObject.set(x, "parseCSV", js.undefined)
       
-      @scala.inline
-      def setPixelToLatLng(value: (/* x */ PX, /* y */ PY, /* z */ Zoom, /* tileSize */ TileSize) => GeoCoordinates): Self = StObject.set(x, "pixelToLatLng", js.Any.fromFunction4(value))
+      inline def setPixelToLatLng(value: (/* x */ PX, /* y */ PY, /* z */ Zoom, /* tileSize */ TileSize) => GeoCoordinates): Self = StObject.set(x, "pixelToLatLng", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setPixelToLatLngUndefined: Self = StObject.set(x, "pixelToLatLng", js.undefined)
+      inline def setPixelToLatLngUndefined: Self = StObject.set(x, "pixelToLatLng", js.undefined)
     }
   }
   
@@ -130,34 +122,26 @@ object RawDataProvider {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDataToFeatures(value: /* obj */ js.Any => js.Array[Feature]): Self = StObject.set(x, "dataToFeatures", js.Any.fromFunction1(value))
+      inline def setDataToFeatures(value: /* obj */ js.Any => js.Array[Feature]): Self = StObject.set(x, "dataToFeatures", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDataToFeaturesUndefined: Self = StObject.set(x, "dataToFeatures", js.undefined)
+      inline def setDataToFeaturesUndefined: Self = StObject.set(x, "dataToFeatures", js.undefined)
       
-      @scala.inline
-      def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
+      inline def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUrlUndefined: Self = StObject.set(x, "dataUrl", js.undefined)
+      inline def setDataUrlUndefined: Self = StObject.set(x, "dataUrl", js.undefined)
       
-      @scala.inline
-      def setFeaturesToRows(
+      inline def setFeaturesToRows(
         value: (/* features */ js.Array[Feature], /* x */ X, /* y */ Y, /* z */ Zoom, /* tileSize */ TileSize, /* helpers */ Helpers) => js.Array[Row]
       ): Self = StObject.set(x, "featuresToRows", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setFeaturesToRowsUndefined: Self = StObject.set(x, "featuresToRows", js.undefined)
+      inline def setFeaturesToRowsUndefined: Self = StObject.set(x, "featuresToRows", js.undefined)
     }
   }
   

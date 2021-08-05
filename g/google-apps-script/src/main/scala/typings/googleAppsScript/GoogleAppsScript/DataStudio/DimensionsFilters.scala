@@ -27,8 +27,7 @@ trait DimensionsFilters extends StObject {
 }
 object DimensionsFilters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fieldName: String,
     operator: EQUALS | CONTAINS | RegexpOperator | IN_LIST | IS_NULL | BETWEEN | NumericOperator,
     `type`: INCLUDE | EXCLUDE,
@@ -39,22 +38,16 @@ object DimensionsFilters {
     __obj.asInstanceOf[DimensionsFilters]
   }
   
-  @scala.inline
-  implicit class DimensionsFiltersMutableBuilder[Self <: DimensionsFilters] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionsFilters](x: Self) {
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: EQUALS | CONTAINS | RegexpOperator | IN_LIST | IS_NULL | BETWEEN | NumericOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: EQUALS | CONTAINS | RegexpOperator | IN_LIST | IS_NULL | BETWEEN | NumericOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: INCLUDE | EXCLUDE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: INCLUDE | EXCLUDE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

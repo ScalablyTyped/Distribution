@@ -30,37 +30,27 @@ trait Configurable extends StObject {
 }
 object Configurable {
   
-  @scala.inline
-  def apply(): Configurable = {
+  inline def apply(): Configurable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Configurable]
   }
   
-  @scala.inline
-  implicit class ConfigurableMutableBuilder[Self <: Configurable] (val x: Self) extends AnyVal {
+  extension [Self <: Configurable](x: Self) {
     
-    @scala.inline
-    def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
+    inline def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurableUndefined: Self = StObject.set(x, "configurable", js.undefined)
+    inline def setConfigurableUndefined: Self = StObject.set(x, "configurable", js.undefined)
     
-    @scala.inline
-    def setMultiple_mounts(value: Boolean): Self = StObject.set(x, "multiple_mounts", value.asInstanceOf[js.Any])
+    inline def setMultiple_mounts(value: Boolean): Self = StObject.set(x, "multiple_mounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiple_mountsUndefined: Self = StObject.set(x, "multiple_mounts", js.undefined)
+    inline def setMultiple_mountsUndefined: Self = StObject.set(x, "multiple_mounts", js.undefined)
     
-    @scala.inline
-    def setSource(value: network): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: network): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setWatchable(value: Boolean): Self = StObject.set(x, "watchable", value.asInstanceOf[js.Any])
+    inline def setWatchable(value: Boolean): Self = StObject.set(x, "watchable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchableUndefined: Self = StObject.set(x, "watchable", js.undefined)
+    inline def setWatchableUndefined: Self = StObject.set(x, "watchable", js.undefined)
   }
 }

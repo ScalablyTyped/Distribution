@@ -133,133 +133,92 @@ object typesCreateFunctionOutputMod {
   }
   object CreateFunctionOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): CreateFunctionOutput = {
+    inline def apply($metadata: ResponseMetadata): CreateFunctionOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateFunctionOutput]
     }
     
-    @scala.inline
-    implicit class CreateFunctionOutputMutableBuilder[Self <: CreateFunctionOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateFunctionOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeSha256(value: String): Self = StObject.set(x, "CodeSha256", value.asInstanceOf[js.Any])
+      inline def setCodeSha256(value: String): Self = StObject.set(x, "CodeSha256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeSha256Undefined: Self = StObject.set(x, "CodeSha256", js.undefined)
+      inline def setCodeSha256Undefined: Self = StObject.set(x, "CodeSha256", js.undefined)
       
-      @scala.inline
-      def setCodeSize(value: Double): Self = StObject.set(x, "CodeSize", value.asInstanceOf[js.Any])
+      inline def setCodeSize(value: Double): Self = StObject.set(x, "CodeSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeSizeUndefined: Self = StObject.set(x, "CodeSize", js.undefined)
+      inline def setCodeSizeUndefined: Self = StObject.set(x, "CodeSize", js.undefined)
       
-      @scala.inline
-      def setDeadLetterConfig(value: UnmarshalledDeadLetterConfig): Self = StObject.set(x, "DeadLetterConfig", value.asInstanceOf[js.Any])
+      inline def setDeadLetterConfig(value: UnmarshalledDeadLetterConfig): Self = StObject.set(x, "DeadLetterConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeadLetterConfigUndefined: Self = StObject.set(x, "DeadLetterConfig", js.undefined)
+      inline def setDeadLetterConfigUndefined: Self = StObject.set(x, "DeadLetterConfig", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
       
-      @scala.inline
-      def setEnvironment(value: UnmarshalledEnvironmentResponse): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: UnmarshalledEnvironmentResponse): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
       
-      @scala.inline
-      def setFunctionArn(value: String): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
+      inline def setFunctionArn(value: String): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionArnUndefined: Self = StObject.set(x, "FunctionArn", js.undefined)
+      inline def setFunctionArnUndefined: Self = StObject.set(x, "FunctionArn", js.undefined)
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionNameUndefined: Self = StObject.set(x, "FunctionName", js.undefined)
+      inline def setFunctionNameUndefined: Self = StObject.set(x, "FunctionName", js.undefined)
       
-      @scala.inline
-      def setHandler(value: String): Self = StObject.set(x, "Handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: String): Self = StObject.set(x, "Handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlerUndefined: Self = StObject.set(x, "Handler", js.undefined)
+      inline def setHandlerUndefined: Self = StObject.set(x, "Handler", js.undefined)
       
-      @scala.inline
-      def setKMSKeyArn(value: String): Self = StObject.set(x, "KMSKeyArn", value.asInstanceOf[js.Any])
+      inline def setKMSKeyArn(value: String): Self = StObject.set(x, "KMSKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKMSKeyArnUndefined: Self = StObject.set(x, "KMSKeyArn", js.undefined)
+      inline def setKMSKeyArnUndefined: Self = StObject.set(x, "KMSKeyArn", js.undefined)
       
-      @scala.inline
-      def setLastModified(value: String): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: String): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+      inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
       
-      @scala.inline
-      def setMasterArn(value: String): Self = StObject.set(x, "MasterArn", value.asInstanceOf[js.Any])
+      inline def setMasterArn(value: String): Self = StObject.set(x, "MasterArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterArnUndefined: Self = StObject.set(x, "MasterArn", js.undefined)
+      inline def setMasterArnUndefined: Self = StObject.set(x, "MasterArn", js.undefined)
       
-      @scala.inline
-      def setMemorySize(value: Double): Self = StObject.set(x, "MemorySize", value.asInstanceOf[js.Any])
+      inline def setMemorySize(value: Double): Self = StObject.set(x, "MemorySize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemorySizeUndefined: Self = StObject.set(x, "MemorySize", js.undefined)
+      inline def setMemorySizeUndefined: Self = StObject.set(x, "MemorySize", js.undefined)
       
-      @scala.inline
-      def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+      inline def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
+      inline def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
       
-      @scala.inline
-      def setRuntime(
+      inline def setRuntime(
         value: nodejs | nodejs4Dot3 | nodejs6Dot10 | nodejs8Dot10 | java8 | python2Dot7 | python3Dot6 | dotnetcore1Dot0 | dotnetcore2Dot0 | dotnetcore2Dot1 | `nodejs4Dot3-edge` | go1Dotx | String
       ): Self = StObject.set(x, "Runtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeUndefined: Self = StObject.set(x, "Runtime", js.undefined)
+      inline def setRuntimeUndefined: Self = StObject.set(x, "Runtime", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
       
-      @scala.inline
-      def setTracingConfig(value: UnmarshalledTracingConfigResponse): Self = StObject.set(x, "TracingConfig", value.asInstanceOf[js.Any])
+      inline def setTracingConfig(value: UnmarshalledTracingConfigResponse): Self = StObject.set(x, "TracingConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracingConfigUndefined: Self = StObject.set(x, "TracingConfig", js.undefined)
+      inline def setTracingConfigUndefined: Self = StObject.set(x, "TracingConfig", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
       
-      @scala.inline
-      def setVpcConfig(value: UnmarshalledVpcConfigResponse): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
+      inline def setVpcConfig(value: UnmarshalledVpcConfigResponse): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
+      inline def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
     }
   }
 }

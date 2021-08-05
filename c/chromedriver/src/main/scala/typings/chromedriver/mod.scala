@@ -21,25 +21,17 @@ object mod {
   @js.native
   val path: String = js.native
   
-  @scala.inline
-  def start(): ChildProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[ChildProcess]
-  @scala.inline
-  def start(args: js.Array[String]): ChildProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any]).asInstanceOf[ChildProcess]
+  inline def start(): ChildProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[ChildProcess]
+  inline def start(args: js.Array[String]): ChildProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any]).asInstanceOf[ChildProcess]
   
-  @scala.inline
-  def start_false(args: js.Array[String], returnPromise: `false`): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any], returnPromise.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
-  @scala.inline
-  def start_false(args: Unit, returnPromise: `false`): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any], returnPromise.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  inline def start_false(args: js.Array[String], returnPromise: `false`): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any], returnPromise.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  inline def start_false(args: Unit, returnPromise: `false`): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any], returnPromise.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
   
-  @scala.inline
-  def start_true(args: js.Array[String], returnPromise: `true`): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any], returnPromise.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
-  @scala.inline
-  def start_true(args: Null, returnPromise: `true`): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any], returnPromise.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
-  @scala.inline
-  def start_true(args: Unit, returnPromise: `true`): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any], returnPromise.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
+  inline def start_true(args: js.Array[String], returnPromise: `true`): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any], returnPromise.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
+  inline def start_true(args: Null, returnPromise: `true`): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any], returnPromise.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
+  inline def start_true(args: Unit, returnPromise: `true`): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any], returnPromise.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
   
-  @scala.inline
-  def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
+  inline def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
   
   @JSImport("chromedriver", "version")
   @js.native

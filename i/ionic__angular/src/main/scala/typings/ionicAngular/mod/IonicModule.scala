@@ -17,8 +17,6 @@ object IonicModule {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def forRoot(): ModuleWithProviders[typings.ionicAngular.ionicModuleMod.IonicModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")().asInstanceOf[ModuleWithProviders[typings.ionicAngular.ionicModuleMod.IonicModule]]
-  @scala.inline
-  def forRoot(config: IonicConfig): ModuleWithProviders[typings.ionicAngular.ionicModuleMod.IonicModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")(config.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[typings.ionicAngular.ionicModuleMod.IonicModule]]
+  inline def forRoot(): ModuleWithProviders[typings.ionicAngular.ionicModuleMod.IonicModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")().asInstanceOf[ModuleWithProviders[typings.ionicAngular.ionicModuleMod.IonicModule]]
+  inline def forRoot(config: IonicConfig): ModuleWithProviders[typings.ionicAngular.ionicModuleMod.IonicModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")(config.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[typings.ionicAngular.ionicModuleMod.IonicModule]]
 }

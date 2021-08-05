@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExtractableTextAttributes extends StObject
 object ExtractableTextAttributes {
   
-  @scala.inline
-  def blobColontext: typings.scrivito.scrivitoStrings.blobColontext = "blob:text".asInstanceOf[typings.scrivito.scrivitoStrings.blobColontext]
+  inline def blobColontext: typings.scrivito.scrivitoStrings.blobColontext = "blob:text".asInstanceOf[typings.scrivito.scrivitoStrings.blobColontext]
   
-  @scala.inline
-  def html: typings.scrivito.scrivitoStrings.html = "html".asInstanceOf[typings.scrivito.scrivitoStrings.html]
+  inline def html: typings.scrivito.scrivitoStrings.html = "html".asInstanceOf[typings.scrivito.scrivitoStrings.html]
   
-  @scala.inline
-  def string: typings.scrivito.scrivitoStrings.string = "string".asInstanceOf[typings.scrivito.scrivitoStrings.string]
+  inline def string: typings.scrivito.scrivitoStrings.string = "string".asInstanceOf[typings.scrivito.scrivitoStrings.string]
   
-  @scala.inline
-  def widgetlist: typings.scrivito.scrivitoStrings.widgetlist = "widgetlist".asInstanceOf[typings.scrivito.scrivitoStrings.widgetlist]
+  inline def widgetlist: typings.scrivito.scrivitoStrings.widgetlist = "widgetlist".asInstanceOf[typings.scrivito.scrivitoStrings.widgetlist]
 }

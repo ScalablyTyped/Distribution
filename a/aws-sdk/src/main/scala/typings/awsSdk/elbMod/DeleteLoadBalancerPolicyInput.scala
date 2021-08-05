@@ -18,19 +18,15 @@ trait DeleteLoadBalancerPolicyInput extends StObject {
 }
 object DeleteLoadBalancerPolicyInput {
   
-  @scala.inline
-  def apply(LoadBalancerName: AccessPointName, PolicyName: PolicyName): DeleteLoadBalancerPolicyInput = {
+  inline def apply(LoadBalancerName: AccessPointName, PolicyName: PolicyName): DeleteLoadBalancerPolicyInput = {
     val __obj = js.Dynamic.literal(LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLoadBalancerPolicyInput]
   }
   
-  @scala.inline
-  implicit class DeleteLoadBalancerPolicyInputMutableBuilder[Self <: DeleteLoadBalancerPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLoadBalancerPolicyInput](x: Self) {
     
-    @scala.inline
-    def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
   }
 }

@@ -14,6 +14,5 @@ object Sleeping {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def set(body: Body, isSleeping: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], isSleeping.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(body: Body, isSleeping: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(body.asInstanceOf[js.Any], isSleeping.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

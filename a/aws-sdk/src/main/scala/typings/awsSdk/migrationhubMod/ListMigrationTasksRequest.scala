@@ -23,31 +23,23 @@ trait ListMigrationTasksRequest extends StObject {
 }
 object ListMigrationTasksRequest {
   
-  @scala.inline
-  def apply(): ListMigrationTasksRequest = {
+  inline def apply(): ListMigrationTasksRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMigrationTasksRequest]
   }
   
-  @scala.inline
-  implicit class ListMigrationTasksRequestMutableBuilder[Self <: ListMigrationTasksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListMigrationTasksRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: ResourceName): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: ResourceName): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "ResourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "ResourceName", js.undefined)
   }
 }

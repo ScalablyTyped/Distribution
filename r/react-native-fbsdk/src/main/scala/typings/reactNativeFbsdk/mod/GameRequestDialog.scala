@@ -13,12 +13,10 @@ object GameRequestDialog {
   /**
     * Check if the dialog can be shown.
     */
-  @scala.inline
-  def canShow(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("canShow")().asInstanceOf[js.Promise[js.Any]]
+  inline def canShow(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("canShow")().asInstanceOf[js.Promise[js.Any]]
   
   /**
     * Shows the dialog using the specified content.
     */
-  @scala.inline
-  def show(gameRequestContent: GameRequestContent): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(gameRequestContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def show(gameRequestContent: GameRequestContent): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(gameRequestContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

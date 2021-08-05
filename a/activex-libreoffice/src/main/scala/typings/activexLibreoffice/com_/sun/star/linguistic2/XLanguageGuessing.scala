@@ -80,8 +80,7 @@ trait XLanguageGuessing extends StObject {
 }
 object XLanguageGuessing {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AvailableLanguages: SafeArray[Locale],
     DisabledLanguages: SafeArray[Locale],
     EnabledLanguages: SafeArray[Locale],
@@ -96,34 +95,24 @@ object XLanguageGuessing {
     __obj.asInstanceOf[XLanguageGuessing]
   }
   
-  @scala.inline
-  implicit class XLanguageGuessingMutableBuilder[Self <: XLanguageGuessing] (val x: Self) extends AnyVal {
+  extension [Self <: XLanguageGuessing](x: Self) {
     
-    @scala.inline
-    def setAvailableLanguages(value: SafeArray[Locale]): Self = StObject.set(x, "AvailableLanguages", value.asInstanceOf[js.Any])
+    inline def setAvailableLanguages(value: SafeArray[Locale]): Self = StObject.set(x, "AvailableLanguages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableLanguages(value: SeqEquiv[Locale] => Unit): Self = StObject.set(x, "disableLanguages", js.Any.fromFunction1(value))
+    inline def setDisableLanguages(value: SeqEquiv[Locale] => Unit): Self = StObject.set(x, "disableLanguages", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisabledLanguages(value: SafeArray[Locale]): Self = StObject.set(x, "DisabledLanguages", value.asInstanceOf[js.Any])
+    inline def setDisabledLanguages(value: SafeArray[Locale]): Self = StObject.set(x, "DisabledLanguages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableLanguages(value: SeqEquiv[Locale] => Unit): Self = StObject.set(x, "enableLanguages", js.Any.fromFunction1(value))
+    inline def setEnableLanguages(value: SeqEquiv[Locale] => Unit): Self = StObject.set(x, "enableLanguages", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnabledLanguages(value: SafeArray[Locale]): Self = StObject.set(x, "EnabledLanguages", value.asInstanceOf[js.Any])
+    inline def setEnabledLanguages(value: SafeArray[Locale]): Self = StObject.set(x, "EnabledLanguages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAvailableLanguages(value: () => SafeArray[Locale]): Self = StObject.set(x, "getAvailableLanguages", js.Any.fromFunction0(value))
+    inline def setGetAvailableLanguages(value: () => SafeArray[Locale]): Self = StObject.set(x, "getAvailableLanguages", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisabledLanguages(value: () => SafeArray[Locale]): Self = StObject.set(x, "getDisabledLanguages", js.Any.fromFunction0(value))
+    inline def setGetDisabledLanguages(value: () => SafeArray[Locale]): Self = StObject.set(x, "getDisabledLanguages", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnabledLanguages(value: () => SafeArray[Locale]): Self = StObject.set(x, "getEnabledLanguages", js.Any.fromFunction0(value))
+    inline def setGetEnabledLanguages(value: () => SafeArray[Locale]): Self = StObject.set(x, "getEnabledLanguages", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGuessPrimaryLanguage(value: (String, Double, Double) => Locale): Self = StObject.set(x, "guessPrimaryLanguage", js.Any.fromFunction3(value))
+    inline def setGuessPrimaryLanguage(value: (String, Double, Double) => Locale): Self = StObject.set(x, "guessPrimaryLanguage", js.Any.fromFunction3(value))
   }
 }

@@ -11,14 +11,11 @@ object listenUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hasListeners(listenable: IListenable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasListeners")(listenable.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasListeners(listenable: IListenable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasListeners")(listenable.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def notifyListeners[T](listenable: IListenable, change: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notifyListeners")(listenable.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notifyListeners[T](listenable: IListenable, change: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notifyListeners")(listenable.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerListener(listenable: IListenable, handler: js.Function): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("registerListener")(listenable.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
+  inline def registerListener(listenable: IListenable, handler: js.Function): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("registerListener")(listenable.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   
   @js.native
   trait IListenable extends StObject {

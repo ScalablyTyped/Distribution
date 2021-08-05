@@ -26,58 +26,41 @@ trait IOperation extends StObject {
 }
 object IOperation {
   
-  @scala.inline
-  def apply(): IOperation = {
+  inline def apply(): IOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IOperation]
   }
   
-  @scala.inline
-  implicit class IOperationMutableBuilder[Self <: IOperation] (val x: Self) extends AnyVal {
+  extension [Self <: IOperation](x: Self) {
     
-    @scala.inline
-    def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoneNull: Self = StObject.set(x, "done", null)
+    inline def setDoneNull: Self = StObject.set(x, "done", null)
     
-    @scala.inline
-    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+    inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
-    @scala.inline
-    def setError(value: IStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: IStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorNull: Self = StObject.set(x, "error", null)
+    inline def setErrorNull: Self = StObject.set(x, "error", null)
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: IAny): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: IAny): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataNull: Self = StObject.set(x, "metadata", null)
+    inline def setMetadataNull: Self = StObject.set(x, "metadata", null)
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResponse(value: IAny): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: IAny): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseNull: Self = StObject.set(x, "response", null)
+    inline def setResponseNull: Self = StObject.set(x, "response", null)
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }
 }

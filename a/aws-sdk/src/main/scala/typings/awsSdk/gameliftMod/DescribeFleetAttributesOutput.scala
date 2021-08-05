@@ -18,28 +18,21 @@ trait DescribeFleetAttributesOutput extends StObject {
 }
 object DescribeFleetAttributesOutput {
   
-  @scala.inline
-  def apply(): DescribeFleetAttributesOutput = {
+  inline def apply(): DescribeFleetAttributesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeFleetAttributesOutput]
   }
   
-  @scala.inline
-  implicit class DescribeFleetAttributesOutputMutableBuilder[Self <: DescribeFleetAttributesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFleetAttributesOutput](x: Self) {
     
-    @scala.inline
-    def setFleetAttributes(value: FleetAttributesList): Self = StObject.set(x, "FleetAttributes", value.asInstanceOf[js.Any])
+    inline def setFleetAttributes(value: FleetAttributesList): Self = StObject.set(x, "FleetAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetAttributesUndefined: Self = StObject.set(x, "FleetAttributes", js.undefined)
+    inline def setFleetAttributesUndefined: Self = StObject.set(x, "FleetAttributes", js.undefined)
     
-    @scala.inline
-    def setFleetAttributesVarargs(value: FleetAttributes*): Self = StObject.set(x, "FleetAttributes", js.Array(value :_*))
+    inline def setFleetAttributesVarargs(value: FleetAttributes*): Self = StObject.set(x, "FleetAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

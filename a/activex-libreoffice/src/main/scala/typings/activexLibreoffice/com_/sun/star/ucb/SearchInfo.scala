@@ -34,8 +34,7 @@ trait SearchInfo extends StObject {
 }
 object SearchInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Criteria: SafeArray[SearchCriterium],
     FollowIndirections: Boolean,
     IncludeBase: Boolean,
@@ -47,25 +46,18 @@ object SearchInfo {
     __obj.asInstanceOf[SearchInfo]
   }
   
-  @scala.inline
-  implicit class SearchInfoMutableBuilder[Self <: SearchInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SearchInfo](x: Self) {
     
-    @scala.inline
-    def setCriteria(value: SafeArray[SearchCriterium]): Self = StObject.set(x, "Criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: SafeArray[SearchCriterium]): Self = StObject.set(x, "Criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowIndirections(value: Boolean): Self = StObject.set(x, "FollowIndirections", value.asInstanceOf[js.Any])
+    inline def setFollowIndirections(value: Boolean): Self = StObject.set(x, "FollowIndirections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeBase(value: Boolean): Self = StObject.set(x, "IncludeBase", value.asInstanceOf[js.Any])
+    inline def setIncludeBase(value: Boolean): Self = StObject.set(x, "IncludeBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursion(value: SearchRecursion): Self = StObject.set(x, "Recursion", value.asInstanceOf[js.Any])
+    inline def setRecursion(value: SearchRecursion): Self = StObject.set(x, "Recursion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRespectDocViewRestrictions(value: Boolean): Self = StObject.set(x, "RespectDocViewRestrictions", value.asInstanceOf[js.Any])
+    inline def setRespectDocViewRestrictions(value: Boolean): Self = StObject.set(x, "RespectDocViewRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRespectFolderViewRestrictions(value: Boolean): Self = StObject.set(x, "RespectFolderViewRestrictions", value.asInstanceOf[js.Any])
+    inline def setRespectFolderViewRestrictions(value: Boolean): Self = StObject.set(x, "RespectFolderViewRestrictions", value.asInstanceOf[js.Any])
   }
 }

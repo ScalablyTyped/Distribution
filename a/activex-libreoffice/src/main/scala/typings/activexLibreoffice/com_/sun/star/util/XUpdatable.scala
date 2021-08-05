@@ -16,16 +16,13 @@ trait XUpdatable
 }
 object XUpdatable {
   
-  @scala.inline
-  def apply(acquire: () => Unit, queryInterface: `type` => js.Any, release: () => Unit, update: () => Unit): XUpdatable = {
+  inline def apply(acquire: () => Unit, queryInterface: `type` => js.Any, release: () => Unit, update: () => Unit): XUpdatable = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), update = js.Any.fromFunction0(update))
     __obj.asInstanceOf[XUpdatable]
   }
   
-  @scala.inline
-  implicit class XUpdatableMutableBuilder[Self <: XUpdatable] (val x: Self) extends AnyVal {
+  extension [Self <: XUpdatable](x: Self) {
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

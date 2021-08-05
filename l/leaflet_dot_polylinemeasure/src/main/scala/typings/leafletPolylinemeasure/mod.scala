@@ -15,10 +15,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def polylineMeasure(): PolylineMeasure = ^.asInstanceOf[js.Dynamic].applyDynamic("polylineMeasure")().asInstanceOf[PolylineMeasure]
-    @scala.inline
-    def polylineMeasure(options: PolylineMeasureOptions): PolylineMeasure = ^.asInstanceOf[js.Dynamic].applyDynamic("polylineMeasure")(options.asInstanceOf[js.Any]).asInstanceOf[PolylineMeasure]
+    inline def polylineMeasure(): PolylineMeasure = ^.asInstanceOf[js.Dynamic].applyDynamic("polylineMeasure")().asInstanceOf[PolylineMeasure]
+    inline def polylineMeasure(options: PolylineMeasureOptions): PolylineMeasure = ^.asInstanceOf[js.Dynamic].applyDynamic("polylineMeasure")(options.asInstanceOf[js.Any]).asInstanceOf[PolylineMeasure]
   }
   
   object Control_ {
@@ -82,140 +80,96 @@ object mod {
     }
     object PolylineMeasureOptions {
       
-      @scala.inline
-      def apply(): PolylineMeasureOptions = {
+      inline def apply(): PolylineMeasureOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PolylineMeasureOptions]
       }
       
-      @scala.inline
-      implicit class PolylineMeasureOptionsMutableBuilder[Self <: PolylineMeasureOptions] (val x: Self) extends AnyVal {
+      extension [Self <: PolylineMeasureOptions](x: Self) {
         
-        @scala.inline
-        def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+        inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+        inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
         
-        @scala.inline
-        def setClearControlClasses(value: js.Array[js.Any]): Self = StObject.set(x, "clearControlClasses", value.asInstanceOf[js.Any])
+        inline def setClearControlClasses(value: js.Array[js.Any]): Self = StObject.set(x, "clearControlClasses", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClearControlClassesUndefined: Self = StObject.set(x, "clearControlClasses", js.undefined)
+        inline def setClearControlClassesUndefined: Self = StObject.set(x, "clearControlClasses", js.undefined)
         
-        @scala.inline
-        def setClearControlClassesVarargs(value: js.Any*): Self = StObject.set(x, "clearControlClasses", js.Array(value :_*))
+        inline def setClearControlClassesVarargs(value: js.Any*): Self = StObject.set(x, "clearControlClasses", js.Array(value :_*))
         
-        @scala.inline
-        def setClearControlLabel(value: String): Self = StObject.set(x, "clearControlLabel", value.asInstanceOf[js.Any])
+        inline def setClearControlLabel(value: String): Self = StObject.set(x, "clearControlLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClearControlLabelUndefined: Self = StObject.set(x, "clearControlLabel", js.undefined)
+        inline def setClearControlLabelUndefined: Self = StObject.set(x, "clearControlLabel", js.undefined)
         
-        @scala.inline
-        def setClearControlTitle(value: String): Self = StObject.set(x, "clearControlTitle", value.asInstanceOf[js.Any])
+        inline def setClearControlTitle(value: String): Self = StObject.set(x, "clearControlTitle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClearControlTitleUndefined: Self = StObject.set(x, "clearControlTitle", js.undefined)
+        inline def setClearControlTitleUndefined: Self = StObject.set(x, "clearControlTitle", js.undefined)
         
-        @scala.inline
-        def setClearMeasurementsOnStop(value: Boolean): Self = StObject.set(x, "clearMeasurementsOnStop", value.asInstanceOf[js.Any])
+        inline def setClearMeasurementsOnStop(value: Boolean): Self = StObject.set(x, "clearMeasurementsOnStop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClearMeasurementsOnStopUndefined: Self = StObject.set(x, "clearMeasurementsOnStop", js.undefined)
+        inline def setClearMeasurementsOnStopUndefined: Self = StObject.set(x, "clearMeasurementsOnStop", js.undefined)
         
-        @scala.inline
-        def setCurrentCircle(value: js.Any): Self = StObject.set(x, "currentCircle", value.asInstanceOf[js.Any])
+        inline def setCurrentCircle(value: js.Any): Self = StObject.set(x, "currentCircle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrentCircleUndefined: Self = StObject.set(x, "currentCircle", js.undefined)
+        inline def setCurrentCircleUndefined: Self = StObject.set(x, "currentCircle", js.undefined)
         
-        @scala.inline
-        def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+        inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+        inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
         
-        @scala.inline
-        def setEndCircle(value: js.Any): Self = StObject.set(x, "endCircle", value.asInstanceOf[js.Any])
+        inline def setEndCircle(value: js.Any): Self = StObject.set(x, "endCircle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndCircleUndefined: Self = StObject.set(x, "endCircle", js.undefined)
+        inline def setEndCircleUndefined: Self = StObject.set(x, "endCircle", js.undefined)
         
-        @scala.inline
-        def setFixedLine(value: js.Any): Self = StObject.set(x, "fixedLine", value.asInstanceOf[js.Any])
+        inline def setFixedLine(value: js.Any): Self = StObject.set(x, "fixedLine", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFixedLineUndefined: Self = StObject.set(x, "fixedLine", js.undefined)
+        inline def setFixedLineUndefined: Self = StObject.set(x, "fixedLine", js.undefined)
         
-        @scala.inline
-        def setIntermedCircle(value: js.Any): Self = StObject.set(x, "intermedCircle", value.asInstanceOf[js.Any])
+        inline def setIntermedCircle(value: js.Any): Self = StObject.set(x, "intermedCircle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIntermedCircleUndefined: Self = StObject.set(x, "intermedCircle", js.undefined)
+        inline def setIntermedCircleUndefined: Self = StObject.set(x, "intermedCircle", js.undefined)
         
-        @scala.inline
-        def setMeasureControlClasses(value: js.Array[js.Any]): Self = StObject.set(x, "measureControlClasses", value.asInstanceOf[js.Any])
+        inline def setMeasureControlClasses(value: js.Array[js.Any]): Self = StObject.set(x, "measureControlClasses", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMeasureControlClassesUndefined: Self = StObject.set(x, "measureControlClasses", js.undefined)
+        inline def setMeasureControlClassesUndefined: Self = StObject.set(x, "measureControlClasses", js.undefined)
         
-        @scala.inline
-        def setMeasureControlClassesVarargs(value: js.Any*): Self = StObject.set(x, "measureControlClasses", js.Array(value :_*))
+        inline def setMeasureControlClassesVarargs(value: js.Any*): Self = StObject.set(x, "measureControlClasses", js.Array(value :_*))
         
-        @scala.inline
-        def setMeasureControlLabel(value: String): Self = StObject.set(x, "measureControlLabel", value.asInstanceOf[js.Any])
+        inline def setMeasureControlLabel(value: String): Self = StObject.set(x, "measureControlLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMeasureControlLabelUndefined: Self = StObject.set(x, "measureControlLabel", js.undefined)
+        inline def setMeasureControlLabelUndefined: Self = StObject.set(x, "measureControlLabel", js.undefined)
         
-        @scala.inline
-        def setMeasureControlTitleOff(value: String): Self = StObject.set(x, "measureControlTitleOff", value.asInstanceOf[js.Any])
+        inline def setMeasureControlTitleOff(value: String): Self = StObject.set(x, "measureControlTitleOff", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMeasureControlTitleOffUndefined: Self = StObject.set(x, "measureControlTitleOff", js.undefined)
+        inline def setMeasureControlTitleOffUndefined: Self = StObject.set(x, "measureControlTitleOff", js.undefined)
         
-        @scala.inline
-        def setMeasureControlTitleOn(value: String): Self = StObject.set(x, "measureControlTitleOn", value.asInstanceOf[js.Any])
+        inline def setMeasureControlTitleOn(value: String): Self = StObject.set(x, "measureControlTitleOn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMeasureControlTitleOnUndefined: Self = StObject.set(x, "measureControlTitleOn", js.undefined)
+        inline def setMeasureControlTitleOnUndefined: Self = StObject.set(x, "measureControlTitleOn", js.undefined)
         
-        @scala.inline
-        def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        @scala.inline
-        def setShowMeasurementsClearControl(value: Boolean): Self = StObject.set(x, "showMeasurementsClearControl", value.asInstanceOf[js.Any])
+        inline def setShowMeasurementsClearControl(value: Boolean): Self = StObject.set(x, "showMeasurementsClearControl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowMeasurementsClearControlUndefined: Self = StObject.set(x, "showMeasurementsClearControl", js.undefined)
+        inline def setShowMeasurementsClearControlUndefined: Self = StObject.set(x, "showMeasurementsClearControl", js.undefined)
         
-        @scala.inline
-        def setShowUnitControl(value: Boolean): Self = StObject.set(x, "showUnitControl", value.asInstanceOf[js.Any])
+        inline def setShowUnitControl(value: Boolean): Self = StObject.set(x, "showUnitControl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowUnitControlUndefined: Self = StObject.set(x, "showUnitControl", js.undefined)
+        inline def setShowUnitControlUndefined: Self = StObject.set(x, "showUnitControl", js.undefined)
         
-        @scala.inline
-        def setStartCircle(value: js.Any): Self = StObject.set(x, "startCircle", value.asInstanceOf[js.Any])
+        inline def setStartCircle(value: js.Any): Self = StObject.set(x, "startCircle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartCircleUndefined: Self = StObject.set(x, "startCircle", js.undefined)
+        inline def setStartCircleUndefined: Self = StObject.set(x, "startCircle", js.undefined)
         
-        @scala.inline
-        def setTempLine(value: js.Any): Self = StObject.set(x, "tempLine", value.asInstanceOf[js.Any])
+        inline def setTempLine(value: js.Any): Self = StObject.set(x, "tempLine", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTempLineUndefined: Self = StObject.set(x, "tempLine", js.undefined)
+        inline def setTempLineUndefined: Self = StObject.set(x, "tempLine", js.undefined)
         
-        @scala.inline
-        def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+        inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+        inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
       }
     }
   }

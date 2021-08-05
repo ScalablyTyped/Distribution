@@ -27,28 +27,21 @@ trait SharePhoto extends StObject {
 }
 object SharePhoto {
   
-  @scala.inline
-  def apply(imageUrl: String): SharePhoto = {
+  inline def apply(imageUrl: String): SharePhoto = {
     val __obj = js.Dynamic.literal(imageUrl = imageUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharePhoto]
   }
   
-  @scala.inline
-  implicit class SharePhotoMutableBuilder[Self <: SharePhoto] (val x: Self) extends AnyVal {
+  extension [Self <: SharePhoto](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserGenerated(value: Boolean): Self = StObject.set(x, "userGenerated", value.asInstanceOf[js.Any])
+    inline def setUserGenerated(value: Boolean): Self = StObject.set(x, "userGenerated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserGeneratedUndefined: Self = StObject.set(x, "userGenerated", js.undefined)
+    inline def setUserGeneratedUndefined: Self = StObject.set(x, "userGenerated", js.undefined)
   }
 }

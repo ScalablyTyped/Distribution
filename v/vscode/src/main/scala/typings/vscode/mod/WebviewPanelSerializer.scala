@@ -55,16 +55,13 @@ trait WebviewPanelSerializer[T] extends StObject {
 }
 object WebviewPanelSerializer {
   
-  @scala.inline
-  def apply[T](deserializeWebviewPanel: (WebviewPanel, T) => Thenable[Unit]): WebviewPanelSerializer[T] = {
+  inline def apply[T](deserializeWebviewPanel: (WebviewPanel, T) => Thenable[Unit]): WebviewPanelSerializer[T] = {
     val __obj = js.Dynamic.literal(deserializeWebviewPanel = js.Any.fromFunction2(deserializeWebviewPanel))
     __obj.asInstanceOf[WebviewPanelSerializer[T]]
   }
   
-  @scala.inline
-  implicit class WebviewPanelSerializerMutableBuilder[Self <: WebviewPanelSerializer[?], T] (val x: Self & WebviewPanelSerializer[T]) extends AnyVal {
+  extension [Self <: WebviewPanelSerializer[?], T](x: Self & WebviewPanelSerializer[T]) {
     
-    @scala.inline
-    def setDeserializeWebviewPanel(value: (WebviewPanel, T) => Thenable[Unit]): Self = StObject.set(x, "deserializeWebviewPanel", js.Any.fromFunction2(value))
+    inline def setDeserializeWebviewPanel(value: (WebviewPanel, T) => Thenable[Unit]): Self = StObject.set(x, "deserializeWebviewPanel", js.Any.fromFunction2(value))
   }
 }

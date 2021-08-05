@@ -108,124 +108,85 @@ trait NightwatchTestSettingGeneric extends StObject {
 }
 object NightwatchTestSettingGeneric {
   
-  @scala.inline
-  def apply(): NightwatchTestSettingGeneric = {
+  inline def apply(): NightwatchTestSettingGeneric = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NightwatchTestSettingGeneric]
   }
   
-  @scala.inline
-  implicit class NightwatchTestSettingGenericMutableBuilder[Self <: NightwatchTestSettingGeneric] (val x: Self) extends AnyVal {
+  extension [Self <: NightwatchTestSettingGeneric](x: Self) {
     
-    @scala.inline
-    def setAccess_key(value: String): Self = StObject.set(x, "access_key", value.asInstanceOf[js.Any])
+    inline def setAccess_key(value: String): Self = StObject.set(x, "access_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccess_keyUndefined: Self = StObject.set(x, "access_key", js.undefined)
+    inline def setAccess_keyUndefined: Self = StObject.set(x, "access_key", js.undefined)
     
-    @scala.inline
-    def setCli_args(value: js.Any): Self = StObject.set(x, "cli_args", value.asInstanceOf[js.Any])
+    inline def setCli_args(value: js.Any): Self = StObject.set(x, "cli_args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCli_argsUndefined: Self = StObject.set(x, "cli_args", js.undefined)
+    inline def setCli_argsUndefined: Self = StObject.set(x, "cli_args", js.undefined)
     
-    @scala.inline
-    def setDesiredCapabilities(value: NightwatchDesiredCapabilities): Self = StObject.set(x, "desiredCapabilities", value.asInstanceOf[js.Any])
+    inline def setDesiredCapabilities(value: NightwatchDesiredCapabilities): Self = StObject.set(x, "desiredCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredCapabilitiesUndefined: Self = StObject.set(x, "desiredCapabilities", js.undefined)
+    inline def setDesiredCapabilitiesUndefined: Self = StObject.set(x, "desiredCapabilities", js.undefined)
     
-    @scala.inline
-    def setDisable_colors(value: Boolean): Self = StObject.set(x, "disable_colors", value.asInstanceOf[js.Any])
+    inline def setDisable_colors(value: Boolean): Self = StObject.set(x, "disable_colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisable_colorsUndefined: Self = StObject.set(x, "disable_colors", js.undefined)
+    inline def setDisable_colorsUndefined: Self = StObject.set(x, "disable_colors", js.undefined)
     
-    @scala.inline
-    def setEnd_session_on_fail(value: Boolean): Self = StObject.set(x, "end_session_on_fail", value.asInstanceOf[js.Any])
+    inline def setEnd_session_on_fail(value: Boolean): Self = StObject.set(x, "end_session_on_fail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_session_on_failUndefined: Self = StObject.set(x, "end_session_on_fail", js.undefined)
+    inline def setEnd_session_on_failUndefined: Self = StObject.set(x, "end_session_on_fail", js.undefined)
     
-    @scala.inline
-    def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    @scala.inline
-    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setGlobals(value: NightwatchTestHooks): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+    inline def setGlobals(value: NightwatchTestHooks): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
+    inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
     
-    @scala.inline
-    def setLaunch_url(value: String): Self = StObject.set(x, "launch_url", value.asInstanceOf[js.Any])
+    inline def setLaunch_url(value: String): Self = StObject.set(x, "launch_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunch_urlUndefined: Self = StObject.set(x, "launch_url", js.undefined)
+    inline def setLaunch_urlUndefined: Self = StObject.set(x, "launch_url", js.undefined)
     
-    @scala.inline
-    def setLog_screenshot_data(value: Boolean): Self = StObject.set(x, "log_screenshot_data", value.asInstanceOf[js.Any])
+    inline def setLog_screenshot_data(value: Boolean): Self = StObject.set(x, "log_screenshot_data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog_screenshot_dataUndefined: Self = StObject.set(x, "log_screenshot_data", js.undefined)
+    inline def setLog_screenshot_dataUndefined: Self = StObject.set(x, "log_screenshot_data", js.undefined)
     
-    @scala.inline
-    def setOutput(value: Boolean): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: Boolean): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
-    @scala.inline
-    def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    @scala.inline
-    def setSelenium_host(value: String): Self = StObject.set(x, "selenium_host", value.asInstanceOf[js.Any])
+    inline def setSelenium_host(value: String): Self = StObject.set(x, "selenium_host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelenium_hostUndefined: Self = StObject.set(x, "selenium_host", js.undefined)
+    inline def setSelenium_hostUndefined: Self = StObject.set(x, "selenium_host", js.undefined)
     
-    @scala.inline
-    def setSelenium_port(value: Double): Self = StObject.set(x, "selenium_port", value.asInstanceOf[js.Any])
+    inline def setSelenium_port(value: Double): Self = StObject.set(x, "selenium_port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelenium_portUndefined: Self = StObject.set(x, "selenium_port", js.undefined)
+    inline def setSelenium_portUndefined: Self = StObject.set(x, "selenium_port", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    @scala.inline
-    def setSkip_testcases_on_fail(value: Boolean): Self = StObject.set(x, "skip_testcases_on_fail", value.asInstanceOf[js.Any])
+    inline def setSkip_testcases_on_fail(value: Boolean): Self = StObject.set(x, "skip_testcases_on_fail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkip_testcases_on_failUndefined: Self = StObject.set(x, "skip_testcases_on_fail", js.undefined)
+    inline def setSkip_testcases_on_failUndefined: Self = StObject.set(x, "skip_testcases_on_fail", js.undefined)
     
-    @scala.inline
-    def setUse_xpath(value: Boolean): Self = StObject.set(x, "use_xpath", value.asInstanceOf[js.Any])
+    inline def setUse_xpath(value: Boolean): Self = StObject.set(x, "use_xpath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse_xpathUndefined: Self = StObject.set(x, "use_xpath", js.undefined)
+    inline def setUse_xpathUndefined: Self = StObject.set(x, "use_xpath", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

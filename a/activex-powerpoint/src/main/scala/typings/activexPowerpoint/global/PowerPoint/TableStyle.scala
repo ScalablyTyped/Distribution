@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.TableStyle")
 @js.native
-class TableStyle protected ()
+/* private */ class TableStyle ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.TableStyle {
   
@@ -16,7 +16,7 @@ class TableStyle protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.TableStyle_typekey")
   var PowerPointDotTableStyle_typekey: typings.activexPowerpoint.PowerPoint.TableStyle = js.native
 }

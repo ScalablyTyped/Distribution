@@ -22,8 +22,7 @@ trait Milliseconds extends StObject {
 }
 object Milliseconds {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     days: Double => Double,
     hours: Double => Double,
     minutes: Double => Double,
@@ -36,28 +35,20 @@ object Milliseconds {
     __obj.asInstanceOf[Milliseconds]
   }
   
-  @scala.inline
-  implicit class MillisecondsMutableBuilder[Self <: Milliseconds] (val x: Self) extends AnyVal {
+  extension [Self <: Milliseconds](x: Self) {
     
-    @scala.inline
-    def setDays(value: Double => Double): Self = StObject.set(x, "days", js.Any.fromFunction1(value))
+    inline def setDays(value: Double => Double): Self = StObject.set(x, "days", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHours(value: Double => Double): Self = StObject.set(x, "hours", js.Any.fromFunction1(value))
+    inline def setHours(value: Double => Double): Self = StObject.set(x, "hours", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMinutes(value: Double => Double): Self = StObject.set(x, "minutes", js.Any.fromFunction1(value))
+    inline def setMinutes(value: Double => Double): Self = StObject.set(x, "minutes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMonths(value: Double => Double): Self = StObject.set(x, "months", js.Any.fromFunction1(value))
+    inline def setMonths(value: Double => Double): Self = StObject.set(x, "months", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSeconds(value: Double => Double): Self = StObject.set(x, "seconds", js.Any.fromFunction1(value))
+    inline def setSeconds(value: Double => Double): Self = StObject.set(x, "seconds", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWeeks(value: Double => Double): Self = StObject.set(x, "weeks", js.Any.fromFunction1(value))
+    inline def setWeeks(value: Double => Double): Self = StObject.set(x, "weeks", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setYears(value: Double => Double): Self = StObject.set(x, "years", js.Any.fromFunction1(value))
+    inline def setYears(value: Double => Double): Self = StObject.set(x, "years", js.Any.fromFunction1(value))
   }
 }

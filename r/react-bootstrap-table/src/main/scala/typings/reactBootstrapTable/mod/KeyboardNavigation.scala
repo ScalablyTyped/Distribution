@@ -39,49 +39,35 @@ trait KeyboardNavigation extends StObject {
 }
 object KeyboardNavigation {
   
-  @scala.inline
-  def apply(): KeyboardNavigation = {
+  inline def apply(): KeyboardNavigation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyboardNavigation]
   }
   
-  @scala.inline
-  implicit class KeyboardNavigationMutableBuilder[Self <: KeyboardNavigation] (val x: Self) extends AnyVal {
+  extension [Self <: KeyboardNavigation](x: Self) {
     
-    @scala.inline
-    def setClickToNav(value: Boolean): Self = StObject.set(x, "clickToNav", value.asInstanceOf[js.Any])
+    inline def setClickToNav(value: Boolean): Self = StObject.set(x, "clickToNav", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickToNavUndefined: Self = StObject.set(x, "clickToNav", js.undefined)
+    inline def setClickToNavUndefined: Self = StObject.set(x, "clickToNav", js.undefined)
     
-    @scala.inline
-    def setCustomStyle(value: (/* cell */ js.Any, /* row */ js.Any) => CSSProperties): Self = StObject.set(x, "customStyle", js.Any.fromFunction2(value))
+    inline def setCustomStyle(value: (/* cell */ js.Any, /* row */ js.Any) => CSSProperties): Self = StObject.set(x, "customStyle", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCustomStyleOnEditCell(value: (/* cell */ js.Any, /* row */ js.Any) => CSSProperties): Self = StObject.set(x, "customStyleOnEditCell", js.Any.fromFunction2(value))
+    inline def setCustomStyleOnEditCell(value: (/* cell */ js.Any, /* row */ js.Any) => CSSProperties): Self = StObject.set(x, "customStyleOnEditCell", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCustomStyleOnEditCellUndefined: Self = StObject.set(x, "customStyleOnEditCell", js.undefined)
+    inline def setCustomStyleOnEditCellUndefined: Self = StObject.set(x, "customStyleOnEditCell", js.undefined)
     
-    @scala.inline
-    def setCustomStyleUndefined: Self = StObject.set(x, "customStyle", js.undefined)
+    inline def setCustomStyleUndefined: Self = StObject.set(x, "customStyle", js.undefined)
     
-    @scala.inline
-    def setEnterToEdit(value: Boolean): Self = StObject.set(x, "enterToEdit", value.asInstanceOf[js.Any])
+    inline def setEnterToEdit(value: Boolean): Self = StObject.set(x, "enterToEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterToEditUndefined: Self = StObject.set(x, "enterToEdit", js.undefined)
+    inline def setEnterToEditUndefined: Self = StObject.set(x, "enterToEdit", js.undefined)
     
-    @scala.inline
-    def setEnterToExpand(value: Boolean): Self = StObject.set(x, "enterToExpand", value.asInstanceOf[js.Any])
+    inline def setEnterToExpand(value: Boolean): Self = StObject.set(x, "enterToExpand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterToExpandUndefined: Self = StObject.set(x, "enterToExpand", js.undefined)
+    inline def setEnterToExpandUndefined: Self = StObject.set(x, "enterToExpand", js.undefined)
     
-    @scala.inline
-    def setEnterToSelect(value: Boolean): Self = StObject.set(x, "enterToSelect", value.asInstanceOf[js.Any])
+    inline def setEnterToSelect(value: Boolean): Self = StObject.set(x, "enterToSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterToSelectUndefined: Self = StObject.set(x, "enterToSelect", js.undefined)
+    inline def setEnterToSelectUndefined: Self = StObject.set(x, "enterToSelect", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait RecurringCharge extends StObject {
 }
 object RecurringCharge {
   
-  @scala.inline
-  def apply(): RecurringCharge = {
+  inline def apply(): RecurringCharge = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecurringCharge]
   }
   
-  @scala.inline
-  implicit class RecurringChargeMutableBuilder[Self <: RecurringCharge] (val x: Self) extends AnyVal {
+  extension [Self <: RecurringCharge](x: Self) {
     
-    @scala.inline
-    def setCost(value: MonetaryAmount): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
+    inline def setCost(value: MonetaryAmount): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
+    inline def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
     
-    @scala.inline
-    def setFrequency(value: RecurringChargeFrequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: RecurringChargeFrequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
   }
 }

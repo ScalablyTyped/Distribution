@@ -19,10 +19,8 @@ object mod {
   //=> 'http://sindresorhus.com/baz?a=foo&b=bar'
   ```
   */
-  @scala.inline
-  def apply(url: String): String = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(url: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(url: String): String = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(url: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("normalize-url", JSImport.Namespace)
   @js.native
@@ -198,98 +196,68 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDefaultProtocol(value: String): Self = StObject.set(x, "defaultProtocol", value.asInstanceOf[js.Any])
+      inline def setDefaultProtocol(value: String): Self = StObject.set(x, "defaultProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultProtocolUndefined: Self = StObject.set(x, "defaultProtocol", js.undefined)
+      inline def setDefaultProtocolUndefined: Self = StObject.set(x, "defaultProtocol", js.undefined)
       
-      @scala.inline
-      def setForceHttp(value: Boolean): Self = StObject.set(x, "forceHttp", value.asInstanceOf[js.Any])
+      inline def setForceHttp(value: Boolean): Self = StObject.set(x, "forceHttp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceHttpUndefined: Self = StObject.set(x, "forceHttp", js.undefined)
+      inline def setForceHttpUndefined: Self = StObject.set(x, "forceHttp", js.undefined)
       
-      @scala.inline
-      def setForceHttps(value: Boolean): Self = StObject.set(x, "forceHttps", value.asInstanceOf[js.Any])
+      inline def setForceHttps(value: Boolean): Self = StObject.set(x, "forceHttps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceHttpsUndefined: Self = StObject.set(x, "forceHttps", js.undefined)
+      inline def setForceHttpsUndefined: Self = StObject.set(x, "forceHttps", js.undefined)
       
-      @scala.inline
-      def setNormalizeProtocol(value: Boolean): Self = StObject.set(x, "normalizeProtocol", value.asInstanceOf[js.Any])
+      inline def setNormalizeProtocol(value: Boolean): Self = StObject.set(x, "normalizeProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeProtocolUndefined: Self = StObject.set(x, "normalizeProtocol", js.undefined)
+      inline def setNormalizeProtocolUndefined: Self = StObject.set(x, "normalizeProtocol", js.undefined)
       
-      @scala.inline
-      def setRemoveDirectoryIndex(value: js.Array[RegExp | String]): Self = StObject.set(x, "removeDirectoryIndex", value.asInstanceOf[js.Any])
+      inline def setRemoveDirectoryIndex(value: js.Array[RegExp | String]): Self = StObject.set(x, "removeDirectoryIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveDirectoryIndexUndefined: Self = StObject.set(x, "removeDirectoryIndex", js.undefined)
+      inline def setRemoveDirectoryIndexUndefined: Self = StObject.set(x, "removeDirectoryIndex", js.undefined)
       
-      @scala.inline
-      def setRemoveDirectoryIndexVarargs(value: (RegExp | String)*): Self = StObject.set(x, "removeDirectoryIndex", js.Array(value :_*))
+      inline def setRemoveDirectoryIndexVarargs(value: (RegExp | String)*): Self = StObject.set(x, "removeDirectoryIndex", js.Array(value :_*))
       
-      @scala.inline
-      def setRemoveQueryParameters(value: js.Array[RegExp | String]): Self = StObject.set(x, "removeQueryParameters", value.asInstanceOf[js.Any])
+      inline def setRemoveQueryParameters(value: js.Array[RegExp | String]): Self = StObject.set(x, "removeQueryParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveQueryParametersUndefined: Self = StObject.set(x, "removeQueryParameters", js.undefined)
+      inline def setRemoveQueryParametersUndefined: Self = StObject.set(x, "removeQueryParameters", js.undefined)
       
-      @scala.inline
-      def setRemoveQueryParametersVarargs(value: (RegExp | String)*): Self = StObject.set(x, "removeQueryParameters", js.Array(value :_*))
+      inline def setRemoveQueryParametersVarargs(value: (RegExp | String)*): Self = StObject.set(x, "removeQueryParameters", js.Array(value :_*))
       
-      @scala.inline
-      def setRemoveSingleSlash(value: Boolean): Self = StObject.set(x, "removeSingleSlash", value.asInstanceOf[js.Any])
+      inline def setRemoveSingleSlash(value: Boolean): Self = StObject.set(x, "removeSingleSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveSingleSlashUndefined: Self = StObject.set(x, "removeSingleSlash", js.undefined)
+      inline def setRemoveSingleSlashUndefined: Self = StObject.set(x, "removeSingleSlash", js.undefined)
       
-      @scala.inline
-      def setRemoveTrailingSlash(value: Boolean): Self = StObject.set(x, "removeTrailingSlash", value.asInstanceOf[js.Any])
+      inline def setRemoveTrailingSlash(value: Boolean): Self = StObject.set(x, "removeTrailingSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveTrailingSlashUndefined: Self = StObject.set(x, "removeTrailingSlash", js.undefined)
+      inline def setRemoveTrailingSlashUndefined: Self = StObject.set(x, "removeTrailingSlash", js.undefined)
       
-      @scala.inline
-      def setSortQueryParameters(value: Boolean): Self = StObject.set(x, "sortQueryParameters", value.asInstanceOf[js.Any])
+      inline def setSortQueryParameters(value: Boolean): Self = StObject.set(x, "sortQueryParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortQueryParametersUndefined: Self = StObject.set(x, "sortQueryParameters", js.undefined)
+      inline def setSortQueryParametersUndefined: Self = StObject.set(x, "sortQueryParameters", js.undefined)
       
-      @scala.inline
-      def setStripAuthentication(value: Boolean): Self = StObject.set(x, "stripAuthentication", value.asInstanceOf[js.Any])
+      inline def setStripAuthentication(value: Boolean): Self = StObject.set(x, "stripAuthentication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripAuthenticationUndefined: Self = StObject.set(x, "stripAuthentication", js.undefined)
+      inline def setStripAuthenticationUndefined: Self = StObject.set(x, "stripAuthentication", js.undefined)
       
-      @scala.inline
-      def setStripHash(value: Boolean): Self = StObject.set(x, "stripHash", value.asInstanceOf[js.Any])
+      inline def setStripHash(value: Boolean): Self = StObject.set(x, "stripHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripHashUndefined: Self = StObject.set(x, "stripHash", js.undefined)
+      inline def setStripHashUndefined: Self = StObject.set(x, "stripHash", js.undefined)
       
-      @scala.inline
-      def setStripProtocol(value: Boolean): Self = StObject.set(x, "stripProtocol", value.asInstanceOf[js.Any])
+      inline def setStripProtocol(value: Boolean): Self = StObject.set(x, "stripProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripProtocolUndefined: Self = StObject.set(x, "stripProtocol", js.undefined)
+      inline def setStripProtocolUndefined: Self = StObject.set(x, "stripProtocol", js.undefined)
       
-      @scala.inline
-      def setStripWWW(value: Boolean): Self = StObject.set(x, "stripWWW", value.asInstanceOf[js.Any])
+      inline def setStripWWW(value: Boolean): Self = StObject.set(x, "stripWWW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripWWWUndefined: Self = StObject.set(x, "stripWWW", js.undefined)
+      inline def setStripWWWUndefined: Self = StObject.set(x, "stripWWW", js.undefined)
     }
   }
 }

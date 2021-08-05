@@ -17,22 +17,22 @@ object keyboardManagerMod {
   trait KeyboardManager
     extends Component[Props, js.Object, js.Any] {
     
-    var clearKeyboardTimeout: js.Any = js.native
+    /* private */ var clearKeyboardTimeout: js.Any = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MKeyboardManager(): Unit = js.native
     
-    var handlePageChangeCancel: js.Any = js.native
+    /* private */ var handlePageChangeCancel: js.Any = js.native
     
-    var handlePageChangeConfirm: js.Any = js.native
+    /* private */ var handlePageChangeConfirm: js.Any = js.native
     
-    var handlePageChangeStart: js.Any = js.native
+    /* private */ var handlePageChangeStart: js.Any = js.native
     
-    var keyboardTimeout: js.Any = js.native
+    /* private */ var keyboardTimeout: js.Any = js.native
     
-    var previouslyFocusedTextInput: js.Any = js.native
+    /* private */ var previouslyFocusedTextInput: js.Any = js.native
     
-    var startTimestamp: js.Any = js.native
+    /* private */ var startTimestamp: js.Any = js.native
   }
   
   trait Props extends StObject {
@@ -43,20 +43,16 @@ object keyboardManagerMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(children: OnPageChangeCancel => ReactNode, enabled: Boolean): Props = {
+    inline def apply(children: OnPageChangeCancel => ReactNode, enabled: Boolean): Props = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), enabled = enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: OnPageChangeCancel => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: OnPageChangeCancel => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
   }
 }

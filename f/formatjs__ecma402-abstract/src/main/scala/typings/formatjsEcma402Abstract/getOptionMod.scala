@@ -13,8 +13,7 @@ object getOptionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def GetOption_boolean[T /* <: js.Object */, K /* <: /* keyof T */ String */, F](
+  inline def GetOption_boolean[T /* <: js.Object */, K /* <: /* keyof T */ String */, F](
     opts: T,
     prop: K,
     `type`: boolean_,
@@ -29,8 +28,7 @@ object getOptionMod {
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
     Unit
   ]) | F]
-  @scala.inline
-  def GetOption_boolean[T /* <: js.Object */, K /* <: /* keyof T */ String */, F](opts: T, prop: K, `type`: boolean_, values: Unit, fallback: F): (Exclude[
+  inline def GetOption_boolean[T /* <: js.Object */, K /* <: /* keyof T */ String */, F](opts: T, prop: K, `type`: boolean_, values: Unit, fallback: F): (Exclude[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
     Unit
   ]) | F = (^.asInstanceOf[js.Dynamic].applyDynamic("GetOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], values.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(Exclude[
@@ -38,8 +36,7 @@ object getOptionMod {
     Unit
   ]) | F]
   
-  @scala.inline
-  def GetOption_string[T /* <: js.Object */, K /* <: /* keyof T */ String */, F](
+  inline def GetOption_string[T /* <: js.Object */, K /* <: /* keyof T */ String */, F](
     opts: T,
     prop: K,
     `type`: string_,
@@ -54,8 +51,7 @@ object getOptionMod {
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
     Unit
   ]) | F]
-  @scala.inline
-  def GetOption_string[T /* <: js.Object */, K /* <: /* keyof T */ String */, F](opts: T, prop: K, `type`: string_, values: Unit, fallback: F): (Exclude[
+  inline def GetOption_string[T /* <: js.Object */, K /* <: /* keyof T */ String */, F](opts: T, prop: K, `type`: string_, values: Unit, fallback: F): (Exclude[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
     Unit
   ]) | F = (^.asInstanceOf[js.Dynamic].applyDynamic("GetOption")(opts.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], values.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[(Exclude[

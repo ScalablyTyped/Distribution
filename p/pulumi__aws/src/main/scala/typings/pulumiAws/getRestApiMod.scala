@@ -13,10 +13,8 @@ object getRestApiMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRestApi(args: GetRestApiArgs): js.Promise[GetRestApiResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRestApi")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRestApiResult]]
-  @scala.inline
-  def getRestApi(args: GetRestApiArgs, opts: InvokeOptions): js.Promise[GetRestApiResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRestApi")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRestApiResult]]
+  inline def getRestApi(args: GetRestApiArgs): js.Promise[GetRestApiResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRestApi")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRestApiResult]]
+  inline def getRestApi(args: GetRestApiArgs, opts: InvokeOptions): js.Promise[GetRestApiResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRestApi")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRestApiResult]]
   
   trait GetRestApiArgs extends StObject {
     
@@ -32,23 +30,18 @@ object getRestApiMod {
   }
   object GetRestApiArgs {
     
-    @scala.inline
-    def apply(name: String): GetRestApiArgs = {
+    inline def apply(name: String): GetRestApiArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRestApiArgs]
     }
     
-    @scala.inline
-    implicit class GetRestApiArgsMutableBuilder[Self <: GetRestApiArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetRestApiArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -113,8 +106,7 @@ object getRestApiMod {
   }
   object GetRestApiResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apiKeySource: String,
       arn: String,
       binaryMediaTypes: js.Array[String],
@@ -132,50 +124,35 @@ object getRestApiMod {
       __obj.asInstanceOf[GetRestApiResult]
     }
     
-    @scala.inline
-    implicit class GetRestApiResultMutableBuilder[Self <: GetRestApiResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetRestApiResult](x: Self) {
       
-      @scala.inline
-      def setApiKeySource(value: String): Self = StObject.set(x, "apiKeySource", value.asInstanceOf[js.Any])
+      inline def setApiKeySource(value: String): Self = StObject.set(x, "apiKeySource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryMediaTypes(value: js.Array[String]): Self = StObject.set(x, "binaryMediaTypes", value.asInstanceOf[js.Any])
+      inline def setBinaryMediaTypes(value: js.Array[String]): Self = StObject.set(x, "binaryMediaTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryMediaTypesVarargs(value: String*): Self = StObject.set(x, "binaryMediaTypes", js.Array(value :_*))
+      inline def setBinaryMediaTypesVarargs(value: String*): Self = StObject.set(x, "binaryMediaTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointConfigurations(value: js.Array[GetRestApiEndpointConfiguration]): Self = StObject.set(x, "endpointConfigurations", value.asInstanceOf[js.Any])
+      inline def setEndpointConfigurations(value: js.Array[GetRestApiEndpointConfiguration]): Self = StObject.set(x, "endpointConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointConfigurationsVarargs(value: GetRestApiEndpointConfiguration*): Self = StObject.set(x, "endpointConfigurations", js.Array(value :_*))
+      inline def setEndpointConfigurationsVarargs(value: GetRestApiEndpointConfiguration*): Self = StObject.set(x, "endpointConfigurations", js.Array(value :_*))
       
-      @scala.inline
-      def setExecutionArn(value: String): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
+      inline def setExecutionArn(value: String): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumCompressionSize(value: Double): Self = StObject.set(x, "minimumCompressionSize", value.asInstanceOf[js.Any])
+      inline def setMinimumCompressionSize(value: Double): Self = StObject.set(x, "minimumCompressionSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootResourceId(value: String): Self = StObject.set(x, "rootResourceId", value.asInstanceOf[js.Any])
+      inline def setRootResourceId(value: String): Self = StObject.set(x, "rootResourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
 }

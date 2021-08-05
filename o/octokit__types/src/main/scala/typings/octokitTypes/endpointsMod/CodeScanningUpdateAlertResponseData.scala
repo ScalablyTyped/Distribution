@@ -60,8 +60,7 @@ trait CodeScanningUpdateAlertResponseData extends StObject {
 }
 object CodeScanningUpdateAlertResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     created_at: String,
     dismissed_at: String,
     html_url: String,
@@ -76,49 +75,34 @@ object CodeScanningUpdateAlertResponseData {
     __obj.asInstanceOf[CodeScanningUpdateAlertResponseData]
   }
   
-  @scala.inline
-  implicit class CodeScanningUpdateAlertResponseDataMutableBuilder[Self <: CodeScanningUpdateAlertResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: CodeScanningUpdateAlertResponseData](x: Self) {
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDismissed_at(value: String): Self = StObject.set(x, "dismissed_at", value.asInstanceOf[js.Any])
+    inline def setDismissed_at(value: String): Self = StObject.set(x, "dismissed_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDismissed_by(value: Dictk): Self = StObject.set(x, "dismissed_by", value.asInstanceOf[js.Any])
+    inline def setDismissed_by(value: Dictk): Self = StObject.set(x, "dismissed_by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDismissed_byNull: Self = StObject.set(x, "dismissed_by", null)
+    inline def setDismissed_byNull: Self = StObject.set(x, "dismissed_by", null)
     
-    @scala.inline
-    def setDismissed_reason(value: (`false positive`) | (`wonApostrophet fix`) | (`used in tests`)): Self = StObject.set(x, "dismissed_reason", value.asInstanceOf[js.Any])
+    inline def setDismissed_reason(value: (`false positive`) | (`wonApostrophet fix`) | (`used in tests`)): Self = StObject.set(x, "dismissed_reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDismissed_reasonNull: Self = StObject.set(x, "dismissed_reason", null)
+    inline def setDismissed_reasonNull: Self = StObject.set(x, "dismissed_reason", null)
     
-    @scala.inline
-    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstances(value: js.Array[js.Any]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[js.Any]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesVarargs(value: js.Any*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: js.Any*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRule(value: Severity): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: Severity): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: open | dismissed | fixed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: open | dismissed | fixed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTool(value: Version): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+    inline def setTool(value: Version): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

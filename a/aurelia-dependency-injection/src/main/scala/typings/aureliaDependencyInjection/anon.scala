@@ -19,17 +19,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](get: (Container, PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) => TImpl): `0`[TBase, TImpl, TArgs] = {
+    inline def apply[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](get: (Container, PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) => TImpl): `0`[TBase, TImpl, TArgs] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
       __obj.asInstanceOf[`0`[TBase, TImpl, TArgs]]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`[?, ?, ?], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] (val x: Self & (`0`[TBase, TImpl, TArgs])) extends AnyVal {
+    extension [Self <: `0`[?, ?, ?], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](x: Self & (`0`[TBase, TImpl, TArgs])) {
       
-      @scala.inline
-      def setGet(value: (Container, PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) => TImpl): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (Container, PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) => TImpl): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     }
   }
   
@@ -39,20 +36,16 @@ object anon {
   }
   object `1` {
     
-    @scala.inline
-    def apply(): `1` = {
+    inline def apply(): `1` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`1`]
     }
     
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+    extension [Self <: `1`](x: Self) {
       
-      @scala.inline
-      def setInject(value: js.Any): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
+      inline def setInject(value: js.Any): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
+      inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
     }
   }
   
@@ -64,20 +57,16 @@ object anon {
   }
   object Decorates {
     
-    @scala.inline
-    def apply(): Decorates = {
+    inline def apply(): Decorates = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Decorates]
     }
     
-    @scala.inline
-    implicit class DecoratesMutableBuilder[Self <: Decorates] (val x: Self) extends AnyVal {
+    extension [Self <: Decorates](x: Self) {
       
-      @scala.inline
-      def setDecorates(value: /* key */ js.Any => /* is aurelia-dependency-injection.anon.Get */ Boolean): Self = StObject.set(x, "decorates", js.Any.fromFunction1(value))
+      inline def setDecorates(value: /* key */ js.Any => /* is aurelia-dependency-injection.anon.Get */ Boolean): Self = StObject.set(x, "decorates", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecoratesUndefined: Self = StObject.set(x, "decorates", js.undefined)
+      inline def setDecoratesUndefined: Self = StObject.set(x, "decorates", js.undefined)
     }
   }
   
@@ -87,17 +76,14 @@ object anon {
   }
   object Get {
     
-    @scala.inline
-    def apply(get: (Container, js.Any) => js.Any): Get = {
+    inline def apply(get: (Container, js.Any) => js.Any): Get = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
       __obj.asInstanceOf[Get]
     }
     
-    @scala.inline
-    implicit class GetMutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
+    extension [Self <: Get](x: Self) {
       
-      @scala.inline
-      def setGet(value: (Container, js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (Container, js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     }
   }
   
@@ -111,27 +97,22 @@ object anon {
   }
   object Inject {
     
-    @scala.inline
-    def apply[TArgs /* <: Args[TBase] */, TBase](): Inject[TArgs, TBase] = {
+    inline def apply[TArgs /* <: Args[TBase] */, TBase](): Inject[TArgs, TBase] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Inject[TArgs, TBase]]
     }
     
-    @scala.inline
-    implicit class InjectMutableBuilder[Self <: Inject[?, ?], TArgs /* <: Args[TBase] */, TBase] (val x: Self & (Inject[TArgs, TBase])) extends AnyVal {
+    extension [Self <: Inject[?, ?], TArgs /* <: Args[TBase] */, TBase](x: Self & (Inject[TArgs, TBase])) {
       
-      @scala.inline
-      def setInject(
+      inline def setInject(
         value: js.Array[
               /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
             ]
       ): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
+      inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
       
-      @scala.inline
-      def setInjectVarargs(
+      inline def setInjectVarargs(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any)*
       ): Self = StObject.set(x, "inject", js.Array(value :_*))
     }

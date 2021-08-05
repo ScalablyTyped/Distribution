@@ -23,44 +23,32 @@ object anon {
   }
   object PartialMDCSegmentedButton {
     
-    @scala.inline
-    def apply(): PartialMDCSegmentedButton = {
+    inline def apply(): PartialMDCSegmentedButton = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMDCSegmentedButton]
     }
     
-    @scala.inline
-    implicit class PartialMDCSegmentedButtonMutableBuilder[Self <: PartialMDCSegmentedButton] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMDCSegmentedButton](x: Self) {
       
-      @scala.inline
-      def setGetSegments(value: () => js.Array[SegmentDetail]): Self = StObject.set(x, "getSegments", js.Any.fromFunction0(value))
+      inline def setGetSegments(value: () => js.Array[SegmentDetail]): Self = StObject.set(x, "getSegments", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSegmentsUndefined: Self = StObject.set(x, "getSegments", js.undefined)
+      inline def setGetSegmentsUndefined: Self = StObject.set(x, "getSegments", js.undefined)
       
-      @scala.inline
-      def setHasClass(value: /* className */ String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      inline def setHasClass(value: /* className */ String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasClassUndefined: Self = StObject.set(x, "hasClass", js.undefined)
+      inline def setHasClassUndefined: Self = StObject.set(x, "hasClass", js.undefined)
       
-      @scala.inline
-      def setNotifySelectedChange(value: /* detail */ SegmentDetail => Unit): Self = StObject.set(x, "notifySelectedChange", js.Any.fromFunction1(value))
+      inline def setNotifySelectedChange(value: /* detail */ SegmentDetail => Unit): Self = StObject.set(x, "notifySelectedChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifySelectedChangeUndefined: Self = StObject.set(x, "notifySelectedChange", js.undefined)
+      inline def setNotifySelectedChangeUndefined: Self = StObject.set(x, "notifySelectedChange", js.undefined)
       
-      @scala.inline
-      def setSelectSegment(value: /* indexOrSegmentId */ Double | String => Unit): Self = StObject.set(x, "selectSegment", js.Any.fromFunction1(value))
+      inline def setSelectSegment(value: /* indexOrSegmentId */ Double | String => Unit): Self = StObject.set(x, "selectSegment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelectSegmentUndefined: Self = StObject.set(x, "selectSegment", js.undefined)
+      inline def setSelectSegmentUndefined: Self = StObject.set(x, "selectSegment", js.undefined)
       
-      @scala.inline
-      def setUnselectSegment(value: /* indexOrSegmentId */ Double | String => Unit): Self = StObject.set(x, "unselectSegment", js.Any.fromFunction1(value))
+      inline def setUnselectSegment(value: /* indexOrSegmentId */ Double | String => Unit): Self = StObject.set(x, "unselectSegment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnselectSegmentUndefined: Self = StObject.set(x, "unselectSegment", js.undefined)
+      inline def setUnselectSegmentUndefined: Self = StObject.set(x, "unselectSegment", js.undefined)
     }
   }
   
@@ -85,62 +73,44 @@ object anon {
   }
   object PartialMDCSegmentedButtonAddClass {
     
-    @scala.inline
-    def apply(): PartialMDCSegmentedButtonAddClass = {
+    inline def apply(): PartialMDCSegmentedButtonAddClass = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMDCSegmentedButtonAddClass]
     }
     
-    @scala.inline
-    implicit class PartialMDCSegmentedButtonAddClassMutableBuilder[Self <: PartialMDCSegmentedButtonAddClass] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMDCSegmentedButtonAddClass](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
+      inline def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
       
-      @scala.inline
-      def setGetAttr(value: /* attrName */ String => String | Null): Self = StObject.set(x, "getAttr", js.Any.fromFunction1(value))
+      inline def setGetAttr(value: /* attrName */ String => String | Null): Self = StObject.set(x, "getAttr", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAttrUndefined: Self = StObject.set(x, "getAttr", js.undefined)
+      inline def setGetAttrUndefined: Self = StObject.set(x, "getAttr", js.undefined)
       
-      @scala.inline
-      def setGetRootBoundingClientRect(value: () => ClientRect): Self = StObject.set(x, "getRootBoundingClientRect", js.Any.fromFunction0(value))
+      inline def setGetRootBoundingClientRect(value: () => ClientRect): Self = StObject.set(x, "getRootBoundingClientRect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRootBoundingClientRectUndefined: Self = StObject.set(x, "getRootBoundingClientRect", js.undefined)
+      inline def setGetRootBoundingClientRectUndefined: Self = StObject.set(x, "getRootBoundingClientRect", js.undefined)
       
-      @scala.inline
-      def setHasClass(value: /* className */ String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      inline def setHasClass(value: /* className */ String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasClassUndefined: Self = StObject.set(x, "hasClass", js.undefined)
+      inline def setHasClassUndefined: Self = StObject.set(x, "hasClass", js.undefined)
       
-      @scala.inline
-      def setIsSingleSelect(value: () => Boolean): Self = StObject.set(x, "isSingleSelect", js.Any.fromFunction0(value))
+      inline def setIsSingleSelect(value: () => Boolean): Self = StObject.set(x, "isSingleSelect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSingleSelectUndefined: Self = StObject.set(x, "isSingleSelect", js.undefined)
+      inline def setIsSingleSelectUndefined: Self = StObject.set(x, "isSingleSelect", js.undefined)
       
-      @scala.inline
-      def setNotifySelectedChange(value: /* selected */ Boolean => Unit): Self = StObject.set(x, "notifySelectedChange", js.Any.fromFunction1(value))
+      inline def setNotifySelectedChange(value: /* selected */ Boolean => Unit): Self = StObject.set(x, "notifySelectedChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifySelectedChangeUndefined: Self = StObject.set(x, "notifySelectedChange", js.undefined)
+      inline def setNotifySelectedChangeUndefined: Self = StObject.set(x, "notifySelectedChange", js.undefined)
       
-      @scala.inline
-      def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: /* className */ String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
+      inline def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
       
-      @scala.inline
-      def setSetAttr(value: (/* attrName */ String, /* value */ String) => Unit): Self = StObject.set(x, "setAttr", js.Any.fromFunction2(value))
+      inline def setSetAttr(value: (/* attrName */ String, /* value */ String) => Unit): Self = StObject.set(x, "setAttr", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetAttrUndefined: Self = StObject.set(x, "setAttr", js.undefined)
+      inline def setSetAttrUndefined: Self = StObject.set(x, "setAttr", js.undefined)
     }
   }
 }

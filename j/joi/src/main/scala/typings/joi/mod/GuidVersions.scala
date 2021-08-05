@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GuidVersions extends StObject
 object GuidVersions {
   
-  @scala.inline
-  def uuidv1: typings.joi.joiStrings.uuidv1 = "uuidv1".asInstanceOf[typings.joi.joiStrings.uuidv1]
+  inline def uuidv1: typings.joi.joiStrings.uuidv1 = "uuidv1".asInstanceOf[typings.joi.joiStrings.uuidv1]
   
-  @scala.inline
-  def uuidv2: typings.joi.joiStrings.uuidv2 = "uuidv2".asInstanceOf[typings.joi.joiStrings.uuidv2]
+  inline def uuidv2: typings.joi.joiStrings.uuidv2 = "uuidv2".asInstanceOf[typings.joi.joiStrings.uuidv2]
   
-  @scala.inline
-  def uuidv3: typings.joi.joiStrings.uuidv3 = "uuidv3".asInstanceOf[typings.joi.joiStrings.uuidv3]
+  inline def uuidv3: typings.joi.joiStrings.uuidv3 = "uuidv3".asInstanceOf[typings.joi.joiStrings.uuidv3]
   
-  @scala.inline
-  def uuidv4: typings.joi.joiStrings.uuidv4 = "uuidv4".asInstanceOf[typings.joi.joiStrings.uuidv4]
+  inline def uuidv4: typings.joi.joiStrings.uuidv4 = "uuidv4".asInstanceOf[typings.joi.joiStrings.uuidv4]
   
-  @scala.inline
-  def uuidv5: typings.joi.joiStrings.uuidv5 = "uuidv5".asInstanceOf[typings.joi.joiStrings.uuidv5]
+  inline def uuidv5: typings.joi.joiStrings.uuidv5 = "uuidv5".asInstanceOf[typings.joi.joiStrings.uuidv5]
 }

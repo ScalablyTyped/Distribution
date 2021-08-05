@@ -13,16 +13,13 @@ trait MSArray[T]
 }
 object MSArray {
   
-  @scala.inline
-  def apply[T](length: Double): MSArray[T] = {
+  inline def apply[T](length: Double): MSArray[T] = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSArray[T]]
   }
   
-  @scala.inline
-  implicit class MSArrayMutableBuilder[Self <: MSArray[?], T] (val x: Self & MSArray[T]) extends AnyVal {
+  extension [Self <: MSArray[?], T](x: Self & MSArray[T]) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

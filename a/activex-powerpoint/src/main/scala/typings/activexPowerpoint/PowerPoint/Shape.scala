@@ -180,7 +180,7 @@ trait Shape extends StObject {
   
   val PlaceholderFormat: typings.activexPowerpoint.PowerPoint.PlaceholderFormat = js.native
   
-  @JSName("PowerPoint.Shape_typekey")
+  /* private */ @JSName("PowerPoint.Shape_typekey")
   var PowerPointDotShape_typekey: Shape = js.native
   
   val RTF: String = js.native

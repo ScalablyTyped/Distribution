@@ -15,31 +15,23 @@ trait UserAgent extends StObject {
 }
 object UserAgent {
   
-  @scala.inline
-  def apply(): UserAgent = {
+  inline def apply(): UserAgent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserAgent]
   }
   
-  @scala.inline
-  implicit class UserAgentMutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
+  extension [Self <: UserAgent](x: Self) {
     
-    @scala.inline
-    def setApplicationVersion(value: NullableOption[String]): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
+    inline def setApplicationVersion(value: NullableOption[String]): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVersionNull: Self = StObject.set(x, "applicationVersion", null)
+    inline def setApplicationVersionNull: Self = StObject.set(x, "applicationVersion", null)
     
-    @scala.inline
-    def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
+    inline def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
     
-    @scala.inline
-    def setHeaderValue(value: NullableOption[String]): Self = StObject.set(x, "headerValue", value.asInstanceOf[js.Any])
+    inline def setHeaderValue(value: NullableOption[String]): Self = StObject.set(x, "headerValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderValueNull: Self = StObject.set(x, "headerValue", null)
+    inline def setHeaderValueNull: Self = StObject.set(x, "headerValue", null)
     
-    @scala.inline
-    def setHeaderValueUndefined: Self = StObject.set(x, "headerValue", js.undefined)
+    inline def setHeaderValueUndefined: Self = StObject.set(x, "headerValue", js.undefined)
   }
 }

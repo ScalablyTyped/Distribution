@@ -12,7 +12,7 @@ trait SmartTagRecognizer extends StObject {
   
   var Enabled: Boolean
   
-  @JSName("Excel.SmartTagRecognizer_typekey")
+  /* private */ @JSName("Excel.SmartTagRecognizer_typekey")
   var ExcelDotSmartTagRecognizer_typekey: SmartTagRecognizer
   
   val FullName: String
@@ -25,8 +25,7 @@ trait SmartTagRecognizer extends StObject {
 }
 object SmartTagRecognizer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     Enabled: Boolean,
@@ -41,31 +40,22 @@ object SmartTagRecognizer {
     __obj.asInstanceOf[SmartTagRecognizer]
   }
   
-  @scala.inline
-  implicit class SmartTagRecognizerMutableBuilder[Self <: SmartTagRecognizer] (val x: Self) extends AnyVal {
+  extension [Self <: SmartTagRecognizer](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotSmartTagRecognizer_typekey(value: SmartTagRecognizer): Self = StObject.set(x, "Excel.SmartTagRecognizer_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotSmartTagRecognizer_typekey(value: SmartTagRecognizer): Self = StObject.set(x, "Excel.SmartTagRecognizer_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgID(value: String): Self = StObject.set(x, "progID", value.asInstanceOf[js.Any])
+    inline def setProgID(value: String): Self = StObject.set(x, "progID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
+    inline def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
   }
 }

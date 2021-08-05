@@ -23,28 +23,21 @@ trait BatchListPolicyAttachments extends StObject {
 }
 object BatchListPolicyAttachments {
   
-  @scala.inline
-  def apply(PolicyReference: ObjectReference): BatchListPolicyAttachments = {
+  inline def apply(PolicyReference: ObjectReference): BatchListPolicyAttachments = {
     val __obj = js.Dynamic.literal(PolicyReference = PolicyReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchListPolicyAttachments]
   }
   
-  @scala.inline
-  implicit class BatchListPolicyAttachmentsMutableBuilder[Self <: BatchListPolicyAttachments] (val x: Self) extends AnyVal {
+  extension [Self <: BatchListPolicyAttachments](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: NumberResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: NumberResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPolicyReference(value: ObjectReference): Self = StObject.set(x, "PolicyReference", value.asInstanceOf[js.Any])
+    inline def setPolicyReference(value: ObjectReference): Self = StObject.set(x, "PolicyReference", value.asInstanceOf[js.Any])
   }
 }

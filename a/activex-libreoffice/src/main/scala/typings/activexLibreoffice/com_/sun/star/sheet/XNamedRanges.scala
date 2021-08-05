@@ -54,8 +54,7 @@ trait XNamedRanges
 }
 object XNamedRanges {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
@@ -75,19 +74,14 @@ object XNamedRanges {
     __obj.asInstanceOf[XNamedRanges]
   }
   
-  @scala.inline
-  implicit class XNamedRangesMutableBuilder[Self <: XNamedRanges] (val x: Self) extends AnyVal {
+  extension [Self <: XNamedRanges](x: Self) {
     
-    @scala.inline
-    def setAddNewByName(value: (String, String, CellAddress, Double) => Unit): Self = StObject.set(x, "addNewByName", js.Any.fromFunction4(value))
+    inline def setAddNewByName(value: (String, String, CellAddress, Double) => Unit): Self = StObject.set(x, "addNewByName", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setAddNewFromTitles(value: (CellRangeAddress, Border) => Unit): Self = StObject.set(x, "addNewFromTitles", js.Any.fromFunction2(value))
+    inline def setAddNewFromTitles(value: (CellRangeAddress, Border) => Unit): Self = StObject.set(x, "addNewFromTitles", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOutputList(value: CellAddress => Unit): Self = StObject.set(x, "outputList", js.Any.fromFunction1(value))
+    inline def setOutputList(value: CellAddress => Unit): Self = StObject.set(x, "outputList", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveByName(value: String => Unit): Self = StObject.set(x, "removeByName", js.Any.fromFunction1(value))
+    inline def setRemoveByName(value: String => Unit): Self = StObject.set(x, "removeByName", js.Any.fromFunction1(value))
   }
 }

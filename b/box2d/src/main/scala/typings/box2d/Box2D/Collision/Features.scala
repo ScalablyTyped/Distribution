@@ -28,25 +28,19 @@ trait Features extends StObject {
 }
 object Features {
   
-  @scala.inline
-  def apply(flip: Double, incidentEdge: Double, incidentVertex: Double, referenceEdge: Double): Features = {
+  inline def apply(flip: Double, incidentEdge: Double, incidentVertex: Double, referenceEdge: Double): Features = {
     val __obj = js.Dynamic.literal(flip = flip.asInstanceOf[js.Any], incidentEdge = incidentEdge.asInstanceOf[js.Any], incidentVertex = incidentVertex.asInstanceOf[js.Any], referenceEdge = referenceEdge.asInstanceOf[js.Any])
     __obj.asInstanceOf[Features]
   }
   
-  @scala.inline
-  implicit class FeaturesMutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
+  extension [Self <: Features](x: Self) {
     
-    @scala.inline
-    def setFlip(value: Double): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+    inline def setFlip(value: Double): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncidentEdge(value: Double): Self = StObject.set(x, "incidentEdge", value.asInstanceOf[js.Any])
+    inline def setIncidentEdge(value: Double): Self = StObject.set(x, "incidentEdge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncidentVertex(value: Double): Self = StObject.set(x, "incidentVertex", value.asInstanceOf[js.Any])
+    inline def setIncidentVertex(value: Double): Self = StObject.set(x, "incidentVertex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceEdge(value: Double): Self = StObject.set(x, "referenceEdge", value.asInstanceOf[js.Any])
+    inline def setReferenceEdge(value: Double): Self = StObject.set(x, "referenceEdge", value.asInstanceOf[js.Any])
   }
 }

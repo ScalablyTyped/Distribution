@@ -17,31 +17,23 @@ trait OperationProgress extends StObject {
 }
 object OperationProgress {
   
-  @scala.inline
-  def apply(): OperationProgress = {
+  inline def apply(): OperationProgress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OperationProgress]
   }
   
-  @scala.inline
-  implicit class OperationProgressMutableBuilder[Self <: OperationProgress] (val x: Self) extends AnyVal {
+  extension [Self <: OperationProgress](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setProgressPercent(value: Double): Self = StObject.set(x, "progressPercent", value.asInstanceOf[js.Any])
+    inline def setProgressPercent(value: Double): Self = StObject.set(x, "progressPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressPercentUndefined: Self = StObject.set(x, "progressPercent", js.undefined)
+    inline def setProgressPercentUndefined: Self = StObject.set(x, "progressPercent", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

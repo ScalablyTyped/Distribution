@@ -16,25 +16,19 @@ trait Notification[T] extends StObject {
 }
 object Notification {
   
-  @scala.inline
-  def apply[T](account_id: Double, content: T, id: Double, viewed: Boolean): Notification[T] = {
+  inline def apply[T](account_id: Double, content: T, id: Double, viewed: Boolean): Notification[T] = {
     val __obj = js.Dynamic.literal(account_id = account_id.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], viewed = viewed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Notification[T]]
   }
   
-  @scala.inline
-  implicit class NotificationMutableBuilder[Self <: Notification[?], T] (val x: Self & Notification[T]) extends AnyVal {
+  extension [Self <: Notification[?], T](x: Self & Notification[T]) {
     
-    @scala.inline
-    def setAccount_id(value: Double): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
+    inline def setAccount_id(value: Double): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: T): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: T): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewed(value: Boolean): Self = StObject.set(x, "viewed", value.asInstanceOf[js.Any])
+    inline def setViewed(value: Boolean): Self = StObject.set(x, "viewed", value.asInstanceOf[js.Any])
   }
 }

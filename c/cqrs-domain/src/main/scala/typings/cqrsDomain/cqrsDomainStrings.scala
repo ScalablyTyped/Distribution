@@ -11,34 +11,29 @@ object cqrsDomainStrings {
   sealed trait azuretable
     extends StObject
        with SupportedDBTypes
-  @scala.inline
-  def azuretable: azuretable = "azuretable".asInstanceOf[azuretable]
+  inline def azuretable: azuretable = "azuretable".asInstanceOf[azuretable]
   
   @js.native
   sealed trait inmemory
     extends StObject
        with SupportedDBTypes
-  @scala.inline
-  def inmemory: inmemory = "inmemory".asInstanceOf[inmemory]
+  inline def inmemory: inmemory = "inmemory".asInstanceOf[inmemory]
   
   @js.native
   sealed trait mongodb
     extends StObject
        with SupportedDBTypes
-  @scala.inline
-  def mongodb: mongodb = "mongodb".asInstanceOf[mongodb]
+  inline def mongodb: mongodb = "mongodb".asInstanceOf[mongodb]
   
   @js.native
   sealed trait redis
     extends StObject
        with SupportedDBTypes
-  @scala.inline
-  def redis: redis = "redis".asInstanceOf[redis]
+  inline def redis: redis = "redis".asInstanceOf[redis]
   
   @js.native
   sealed trait tingodb
     extends StObject
        with SupportedDBTypes
-  @scala.inline
-  def tingodb: tingodb = "tingodb".asInstanceOf[tingodb]
+  inline def tingodb: tingodb = "tingodb".asInstanceOf[tingodb]
 }

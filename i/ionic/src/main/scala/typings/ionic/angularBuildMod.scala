@@ -35,7 +35,7 @@ object angularBuildMod {
   class AngularBuildRunner protected () extends BuildRunner[AngularBuildOptions] {
     def this(e: AngularBuildRunnerDeps) = this()
     
-    @JSName("e")
+    /* protected */ @JSName("e")
     val e_AngularBuildRunner: AngularBuildRunnerDeps = js.native
   }
   
@@ -48,17 +48,14 @@ object angularBuildMod {
   }
   object AngularBuildRunnerDeps {
     
-    @scala.inline
-    def apply(config: IConfig, log: ILogger, project: AngularProject, prompt: PromptModule, shell: IShell): AngularBuildRunnerDeps = {
+    inline def apply(config: IConfig, log: ILogger, project: AngularProject, prompt: PromptModule, shell: IShell): AngularBuildRunnerDeps = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
       __obj.asInstanceOf[AngularBuildRunnerDeps]
     }
     
-    @scala.inline
-    implicit class AngularBuildRunnerDepsMutableBuilder[Self <: AngularBuildRunnerDeps] (val x: Self) extends AnyVal {
+    extension [Self <: AngularBuildRunnerDeps](x: Self) {
       
-      @scala.inline
-      def setProject(value: AngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: AngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,19 +10,15 @@ trait RepeaterName extends StObject {
 }
 object RepeaterName {
   
-  @scala.inline
-  def apply(): RepeaterName = {
+  inline def apply(): RepeaterName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RepeaterName]
   }
   
-  @scala.inline
-  implicit class RepeaterNameMutableBuilder[Self <: RepeaterName] (val x: Self) extends AnyVal {
+  extension [Self <: RepeaterName](x: Self) {
     
-    @scala.inline
-    def setRepeaterName(value: js.Any): Self = StObject.set(x, "repeaterName", value.asInstanceOf[js.Any])
+    inline def setRepeaterName(value: js.Any): Self = StObject.set(x, "repeaterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeaterNameUndefined: Self = StObject.set(x, "repeaterName", js.undefined)
+    inline def setRepeaterNameUndefined: Self = StObject.set(x, "repeaterName", js.undefined)
   }
 }

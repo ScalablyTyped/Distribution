@@ -15,31 +15,23 @@ trait IRulerControlParameters extends StObject {
 }
 object IRulerControlParameters {
   
-  @scala.inline
-  def apply(): IRulerControlParameters = {
+  inline def apply(): IRulerControlParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRulerControlParameters]
   }
   
-  @scala.inline
-  implicit class IRulerControlParametersMutableBuilder[Self <: IRulerControlParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IRulerControlParameters](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setOptions(value: Position): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Position): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setState(value: js.Object): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: js.Object): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

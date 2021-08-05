@@ -33,25 +33,19 @@ trait SchemaMonitoredResourceMetadata extends StObject {
 }
 object SchemaMonitoredResourceMetadata {
   
-  @scala.inline
-  def apply(): SchemaMonitoredResourceMetadata = {
+  inline def apply(): SchemaMonitoredResourceMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMonitoredResourceMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaMonitoredResourceMetadataMutableBuilder[Self <: SchemaMonitoredResourceMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMonitoredResourceMetadata](x: Self) {
     
-    @scala.inline
-    def setSystemLabels(value: StringDictionary[js.Any]): Self = StObject.set(x, "systemLabels", value.asInstanceOf[js.Any])
+    inline def setSystemLabels(value: StringDictionary[js.Any]): Self = StObject.set(x, "systemLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemLabelsUndefined: Self = StObject.set(x, "systemLabels", js.undefined)
+    inline def setSystemLabelsUndefined: Self = StObject.set(x, "systemLabels", js.undefined)
     
-    @scala.inline
-    def setUserLabels(value: StringDictionary[String]): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
+    inline def setUserLabels(value: StringDictionary[String]): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)
+    inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)
   }
 }

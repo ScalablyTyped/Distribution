@@ -19,25 +19,19 @@ trait GetUserRequestwaiterWaite extends StObject {
 }
 object GetUserRequestwaiterWaite {
   
-  @scala.inline
-  def apply(): GetUserRequestwaiterWaite = {
+  inline def apply(): GetUserRequestwaiterWaite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetUserRequestwaiterWaite]
   }
   
-  @scala.inline
-  implicit class GetUserRequestwaiterWaiteMutableBuilder[Self <: GetUserRequestwaiterWaite] (val x: Self) extends AnyVal {
+  extension [Self <: GetUserRequestwaiterWaite](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

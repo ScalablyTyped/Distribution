@@ -12,19 +12,15 @@ trait TaskLogReference extends StObject {
 }
 object TaskLogReference {
   
-  @scala.inline
-  def apply(id: Double, location: String): TaskLogReference = {
+  inline def apply(id: Double, location: String): TaskLogReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskLogReference]
   }
   
-  @scala.inline
-  implicit class TaskLogReferenceMutableBuilder[Self <: TaskLogReference] (val x: Self) extends AnyVal {
+  extension [Self <: TaskLogReference](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

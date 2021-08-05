@@ -20,40 +20,29 @@ trait OrderreturnsCreateOrderReturnRequest extends StObject {
 }
 object OrderreturnsCreateOrderReturnRequest {
   
-  @scala.inline
-  def apply(): OrderreturnsCreateOrderReturnRequest = {
+  inline def apply(): OrderreturnsCreateOrderReturnRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderreturnsCreateOrderReturnRequest]
   }
   
-  @scala.inline
-  implicit class OrderreturnsCreateOrderReturnRequestMutableBuilder[Self <: OrderreturnsCreateOrderReturnRequest] (val x: Self) extends AnyVal {
+  extension [Self <: OrderreturnsCreateOrderReturnRequest](x: Self) {
     
-    @scala.inline
-    def setLineItems(value: js.Array[OrderreturnsLineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
+    inline def setLineItems(value: js.Array[OrderreturnsLineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
+    inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
-    @scala.inline
-    def setLineItemsVarargs(value: OrderreturnsLineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: OrderreturnsLineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
-    @scala.inline
-    def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
+    inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
+    inline def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
-    @scala.inline
-    def setReturnMethodType(value: String): Self = StObject.set(x, "returnMethodType", value.asInstanceOf[js.Any])
+    inline def setReturnMethodType(value: String): Self = StObject.set(x, "returnMethodType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnMethodTypeUndefined: Self = StObject.set(x, "returnMethodType", js.undefined)
+    inline def setReturnMethodTypeUndefined: Self = StObject.set(x, "returnMethodType", js.undefined)
   }
 }

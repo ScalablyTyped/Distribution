@@ -16,19 +16,15 @@ trait SchemaSearchResourcesRequest extends StObject {
 }
 object SchemaSearchResourcesRequest {
   
-  @scala.inline
-  def apply(): SchemaSearchResourcesRequest = {
+  inline def apply(): SchemaSearchResourcesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSearchResourcesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSearchResourcesRequestMutableBuilder[Self <: SchemaSearchResourcesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSearchResourcesRequest](x: Self) {
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

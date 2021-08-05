@@ -12,22 +12,17 @@ trait PropertiesHeight extends StObject {
 }
 object PropertiesHeight {
   
-  @scala.inline
-  def apply(properties: Height, value: js.Array[js.Any]): PropertiesHeight = {
+  inline def apply(properties: Height, value: js.Array[js.Any]): PropertiesHeight = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertiesHeight]
   }
   
-  @scala.inline
-  implicit class PropertiesHeightMutableBuilder[Self <: PropertiesHeight] (val x: Self) extends AnyVal {
+  extension [Self <: PropertiesHeight](x: Self) {
     
-    @scala.inline
-    def setProperties(value: Height): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Height): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

@@ -38,52 +38,37 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  @scala.inline
-  def apply(): Resource = {
+  inline def apply(): Resource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Resource]
   }
   
-  @scala.inline
-  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+  extension [Self <: Resource](x: Self) {
     
-    @scala.inline
-    def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
+    inline def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
+    inline def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
     
-    @scala.inline
-    def setIntegerValue(value: Integer): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
+    inline def setIntegerValue(value: Integer): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
+    inline def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
     
-    @scala.inline
-    def setLongValue(value: Long): Self = StObject.set(x, "longValue", value.asInstanceOf[js.Any])
+    inline def setLongValue(value: Long): Self = StObject.set(x, "longValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongValueUndefined: Self = StObject.set(x, "longValue", js.undefined)
+    inline def setLongValueUndefined: Self = StObject.set(x, "longValue", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStringSetValue(value: StringList): Self = StObject.set(x, "stringSetValue", value.asInstanceOf[js.Any])
+    inline def setStringSetValue(value: StringList): Self = StObject.set(x, "stringSetValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringSetValueUndefined: Self = StObject.set(x, "stringSetValue", js.undefined)
+    inline def setStringSetValueUndefined: Self = StObject.set(x, "stringSetValue", js.undefined)
     
-    @scala.inline
-    def setStringSetValueVarargs(value: String*): Self = StObject.set(x, "stringSetValue", js.Array(value :_*))
+    inline def setStringSetValueVarargs(value: String*): Self = StObject.set(x, "stringSetValue", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

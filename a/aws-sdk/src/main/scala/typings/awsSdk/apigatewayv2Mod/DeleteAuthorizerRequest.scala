@@ -18,19 +18,15 @@ trait DeleteAuthorizerRequest extends StObject {
 }
 object DeleteAuthorizerRequest {
   
-  @scala.inline
-  def apply(ApiId: string, AuthorizerId: string): DeleteAuthorizerRequest = {
+  inline def apply(ApiId: string, AuthorizerId: string): DeleteAuthorizerRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], AuthorizerId = AuthorizerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAuthorizerRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAuthorizerRequestMutableBuilder[Self <: DeleteAuthorizerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAuthorizerRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizerId(value: string): Self = StObject.set(x, "AuthorizerId", value.asInstanceOf[js.Any])
+    inline def setAuthorizerId(value: string): Self = StObject.set(x, "AuthorizerId", value.asInstanceOf[js.Any])
   }
 }

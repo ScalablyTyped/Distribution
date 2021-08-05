@@ -10,6 +10,5 @@ object publishBehaviorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def publishBehavior[T](value: T): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("publishBehavior")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def publishBehavior[T](value: T): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("publishBehavior")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

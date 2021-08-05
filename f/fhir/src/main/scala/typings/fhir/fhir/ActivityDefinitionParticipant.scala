@@ -28,29 +28,22 @@ trait ActivityDefinitionParticipant
 }
 object ActivityDefinitionParticipant {
   
-  @scala.inline
-  def apply(`type`: code): ActivityDefinitionParticipant = {
+  inline def apply(`type`: code): ActivityDefinitionParticipant = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityDefinitionParticipant]
   }
   
-  @scala.inline
-  implicit class ActivityDefinitionParticipantMutableBuilder[Self <: ActivityDefinitionParticipant] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityDefinitionParticipant](x: Self) {
     
-    @scala.inline
-    def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

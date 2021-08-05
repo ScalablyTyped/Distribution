@@ -13,19 +13,15 @@ trait ResourceUtilization extends StObject {
 }
 object ResourceUtilization {
   
-  @scala.inline
-  def apply(): ResourceUtilization = {
+  inline def apply(): ResourceUtilization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceUtilization]
   }
   
-  @scala.inline
-  implicit class ResourceUtilizationMutableBuilder[Self <: ResourceUtilization] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceUtilization](x: Self) {
     
-    @scala.inline
-    def setEC2ResourceUtilization(value: EC2ResourceUtilization): Self = StObject.set(x, "EC2ResourceUtilization", value.asInstanceOf[js.Any])
+    inline def setEC2ResourceUtilization(value: EC2ResourceUtilization): Self = StObject.set(x, "EC2ResourceUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEC2ResourceUtilizationUndefined: Self = StObject.set(x, "EC2ResourceUtilization", js.undefined)
+    inline def setEC2ResourceUtilizationUndefined: Self = StObject.set(x, "EC2ResourceUtilization", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait DeviceSecretVerifierConfigType extends StObject {
 }
 object DeviceSecretVerifierConfigType {
   
-  @scala.inline
-  def apply(): DeviceSecretVerifierConfigType = {
+  inline def apply(): DeviceSecretVerifierConfigType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceSecretVerifierConfigType]
   }
   
-  @scala.inline
-  implicit class DeviceSecretVerifierConfigTypeMutableBuilder[Self <: DeviceSecretVerifierConfigType] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceSecretVerifierConfigType](x: Self) {
     
-    @scala.inline
-    def setPasswordVerifier(value: StringType): Self = StObject.set(x, "PasswordVerifier", value.asInstanceOf[js.Any])
+    inline def setPasswordVerifier(value: StringType): Self = StObject.set(x, "PasswordVerifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordVerifierUndefined: Self = StObject.set(x, "PasswordVerifier", js.undefined)
+    inline def setPasswordVerifierUndefined: Self = StObject.set(x, "PasswordVerifier", js.undefined)
     
-    @scala.inline
-    def setSalt(value: StringType): Self = StObject.set(x, "Salt", value.asInstanceOf[js.Any])
+    inline def setSalt(value: StringType): Self = StObject.set(x, "Salt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaltUndefined: Self = StObject.set(x, "Salt", js.undefined)
+    inline def setSaltUndefined: Self = StObject.set(x, "Salt", js.undefined)
   }
 }

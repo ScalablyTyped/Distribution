@@ -21,35 +21,26 @@ trait SimpleFillSymbol
 }
 object SimpleFillSymbol {
   
-  @scala.inline
-  def apply(): SimpleFillSymbol = {
+  inline def apply(): SimpleFillSymbol = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("esriSFS")
     __obj.asInstanceOf[SimpleFillSymbol]
   }
   
-  @scala.inline
-  implicit class SimpleFillSymbolMutableBuilder[Self <: SimpleFillSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleFillSymbol](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setOutline(value: SimpleLineSymbol): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: SimpleLineSymbol): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
-    @scala.inline
-    def setStyle(value: SimpleFillSymbolStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: SimpleFillSymbolStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setType(value: esriSFS): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: esriSFS): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

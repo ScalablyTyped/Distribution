@@ -21,40 +21,29 @@ trait ClassifiedImages extends StObject {
 }
 object ClassifiedImages {
   
-  @scala.inline
-  def apply(images: js.Array[ClassifiedImage]): ClassifiedImages = {
+  inline def apply(images: js.Array[ClassifiedImage]): ClassifiedImages = {
     val __obj = js.Dynamic.literal(images = images.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifiedImages]
   }
   
-  @scala.inline
-  implicit class ClassifiedImagesMutableBuilder[Self <: ClassifiedImages] (val x: Self) extends AnyVal {
+  extension [Self <: ClassifiedImages](x: Self) {
     
-    @scala.inline
-    def setCustom_classes(value: Double): Self = StObject.set(x, "custom_classes", value.asInstanceOf[js.Any])
+    inline def setCustom_classes(value: Double): Self = StObject.set(x, "custom_classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustom_classesUndefined: Self = StObject.set(x, "custom_classes", js.undefined)
+    inline def setCustom_classesUndefined: Self = StObject.set(x, "custom_classes", js.undefined)
     
-    @scala.inline
-    def setImages(value: js.Array[ClassifiedImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[ClassifiedImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesVarargs(value: ClassifiedImage*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: ClassifiedImage*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setImages_processed(value: Double): Self = StObject.set(x, "images_processed", value.asInstanceOf[js.Any])
+    inline def setImages_processed(value: Double): Self = StObject.set(x, "images_processed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages_processedUndefined: Self = StObject.set(x, "images_processed", js.undefined)
+    inline def setImages_processedUndefined: Self = StObject.set(x, "images_processed", js.undefined)
     
-    @scala.inline
-    def setWarnings(value: js.Array[WarningInfo]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[WarningInfo]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    @scala.inline
-    def setWarningsVarargs(value: WarningInfo*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: WarningInfo*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

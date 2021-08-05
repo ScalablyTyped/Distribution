@@ -12,19 +12,15 @@ trait Item extends StObject {
 }
 object Item {
   
-  @scala.inline
-  def apply(quantity: Double, variant: ProductVariant): Item = {
+  inline def apply(quantity: Double, variant: ProductVariant): Item = {
     val __obj = js.Dynamic.literal(quantity = quantity.asInstanceOf[js.Any], variant = variant.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
   
-  @scala.inline
-  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+  extension [Self <: Item](x: Self) {
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariant(value: ProductVariant): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: ProductVariant): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
   }
 }

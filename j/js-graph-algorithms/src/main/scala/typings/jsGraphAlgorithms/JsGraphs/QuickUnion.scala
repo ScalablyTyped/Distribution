@@ -8,7 +8,7 @@ trait QuickUnion extends StObject {
   
   def connected(v: Double, w: Double): Boolean
   
-  var id: js.Any
+  /* private */ var id: js.Any
   
   def root(q: Double): Double
   
@@ -16,8 +16,7 @@ trait QuickUnion extends StObject {
 }
 object QuickUnion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connected: (Double, Double) => Boolean,
     id: js.Any,
     root: Double => Double,
@@ -27,19 +26,14 @@ object QuickUnion {
     __obj.asInstanceOf[QuickUnion]
   }
   
-  @scala.inline
-  implicit class QuickUnionMutableBuilder[Self <: QuickUnion] (val x: Self) extends AnyVal {
+  extension [Self <: QuickUnion](x: Self) {
     
-    @scala.inline
-    def setConnected(value: (Double, Double) => Boolean): Self = StObject.set(x, "connected", js.Any.fromFunction2(value))
+    inline def setConnected(value: (Double, Double) => Boolean): Self = StObject.set(x, "connected", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: Double => Double): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+    inline def setRoot(value: Double => Double): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnion(value: (Double, Double) => Unit): Self = StObject.set(x, "union", js.Any.fromFunction2(value))
+    inline def setUnion(value: (Double, Double) => Unit): Self = StObject.set(x, "union", js.Any.fromFunction2(value))
   }
 }

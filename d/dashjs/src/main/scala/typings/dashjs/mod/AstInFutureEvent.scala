@@ -16,20 +16,16 @@ trait AstInFutureEvent
 }
 object AstInFutureEvent {
   
-  @scala.inline
-  def apply(delay: Double): AstInFutureEvent = {
+  inline def apply(delay: Double): AstInFutureEvent = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("astInFuture")
     __obj.asInstanceOf[AstInFutureEvent]
   }
   
-  @scala.inline
-  implicit class AstInFutureEventMutableBuilder[Self <: AstInFutureEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AstInFutureEvent](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: astInFuture): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: astInFuture): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait AutoMLResult extends StObject {
 }
 object AutoMLResult {
   
-  @scala.inline
-  def apply(): AutoMLResult = {
+  inline def apply(): AutoMLResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoMLResult]
   }
   
-  @scala.inline
-  implicit class AutoMLResultMutableBuilder[Self <: AutoMLResult] (val x: Self) extends AnyVal {
+  extension [Self <: AutoMLResult](x: Self) {
     
-    @scala.inline
-    def setBestRecipeArn(value: Arn): Self = StObject.set(x, "bestRecipeArn", value.asInstanceOf[js.Any])
+    inline def setBestRecipeArn(value: Arn): Self = StObject.set(x, "bestRecipeArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBestRecipeArnUndefined: Self = StObject.set(x, "bestRecipeArn", js.undefined)
+    inline def setBestRecipeArnUndefined: Self = StObject.set(x, "bestRecipeArn", js.undefined)
   }
 }

@@ -23,28 +23,21 @@ trait IDirectionsStepWarning extends StObject {
 }
 object IDirectionsStepWarning {
   
-  @scala.inline
-  def apply(origin: String, severity: String, text: String, to: String, warningType: String): IDirectionsStepWarning = {
+  inline def apply(origin: String, severity: String, text: String, to: String, warningType: String): IDirectionsStepWarning = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], warningType = warningType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDirectionsStepWarning]
   }
   
-  @scala.inline
-  implicit class IDirectionsStepWarningMutableBuilder[Self <: IDirectionsStepWarning] (val x: Self) extends AnyVal {
+  extension [Self <: IDirectionsStepWarning](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningType(value: String): Self = StObject.set(x, "warningType", value.asInstanceOf[js.Any])
+    inline def setWarningType(value: String): Self = StObject.set(x, "warningType", value.asInstanceOf[js.Any])
   }
 }

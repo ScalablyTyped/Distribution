@@ -12,22 +12,17 @@ trait ConfirmationResult extends StObject {
 }
 object ConfirmationResult {
   
-  @scala.inline
-  def apply(confirm: String => js.Promise[User | Null]): ConfirmationResult = {
+  inline def apply(confirm: String => js.Promise[User | Null]): ConfirmationResult = {
     val __obj = js.Dynamic.literal(confirm = js.Any.fromFunction1(confirm), verificationId = null)
     __obj.asInstanceOf[ConfirmationResult]
   }
   
-  @scala.inline
-  implicit class ConfirmationResultMutableBuilder[Self <: ConfirmationResult] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmationResult](x: Self) {
     
-    @scala.inline
-    def setConfirm(value: String => js.Promise[User | Null]): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
+    inline def setConfirm(value: String => js.Promise[User | Null]): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVerificationId(value: String): Self = StObject.set(x, "verificationId", value.asInstanceOf[js.Any])
+    inline def setVerificationId(value: String): Self = StObject.set(x, "verificationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationIdNull: Self = StObject.set(x, "verificationId", null)
+    inline def setVerificationIdNull: Self = StObject.set(x, "verificationId", null)
   }
 }

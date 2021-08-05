@@ -18,19 +18,15 @@ trait Rating extends StObject {
 }
 object Rating {
   
-  @scala.inline
-  def apply(rating: String, videoId: String): Rating = {
+  inline def apply(rating: String, videoId: String): Rating = {
     val __obj = js.Dynamic.literal(rating = rating.asInstanceOf[js.Any], videoId = videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rating]
   }
   
-  @scala.inline
-  implicit class RatingMutableBuilder[Self <: Rating] (val x: Self) extends AnyVal {
+  extension [Self <: Rating](x: Self) {
     
-    @scala.inline
-    def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+    inline def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
   }
 }

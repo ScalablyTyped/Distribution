@@ -15,21 +15,21 @@ object layoutTreeCrawlerMod {
   class LayoutTreeCrawler protected () extends StObject {
     def this(store: Store, optionsProcessor: OptionsProcessor) = this()
     
-    var applyStaticOptions: js.Any = js.native
+    /* private */ var applyStaticOptions: js.Any = js.native
     
-    var assertComponentDataName: js.Any = js.native
+    /* private */ var assertComponentDataName: js.Any = js.native
     
     def crawl(node: LayoutNode, commandName: CommandName): Unit = js.native
     
-    var handleComponent: js.Any = js.native
+    /* private */ var handleComponent: js.Any = js.native
     
-    var isComponentWithOptions: js.Any = js.native
+    /* private */ var isComponentWithOptions: js.Any = js.native
     
-    val optionsProcessor: js.Any = js.native
+    /* private */ val optionsProcessor: js.Any = js.native
     
-    var savePropsToStore: js.Any = js.native
+    /* private */ var savePropsToStore: js.Any = js.native
     
-    var staticOptionsIfPossible: js.Any = js.native
+    /* private */ var staticOptionsIfPossible: js.Any = js.native
     
     val store: Store = js.native
   }
@@ -44,32 +44,24 @@ object layoutTreeCrawlerMod {
   }
   object Data {
     
-    @scala.inline
-    def apply(): Data = {
+    inline def apply(): Data = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPassProps(value: js.Any): Self = StObject.set(x, "passProps", value.asInstanceOf[js.Any])
+      inline def setPassProps(value: js.Any): Self = StObject.set(x, "passProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassPropsUndefined: Self = StObject.set(x, "passProps", js.undefined)
+      inline def setPassPropsUndefined: Self = StObject.set(x, "passProps", js.undefined)
     }
   }
   
@@ -85,30 +77,23 @@ object layoutTreeCrawlerMod {
   }
   object LayoutNode {
     
-    @scala.inline
-    def apply(children: js.Array[LayoutNode], data: Data, id: String, `type`: LayoutType): LayoutNode = {
+    inline def apply(children: js.Array[LayoutNode], data: Data, id: String, `type`: LayoutType): LayoutNode = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayoutNode]
     }
     
-    @scala.inline
-    implicit class LayoutNodeMutableBuilder[Self <: LayoutNode] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutNode](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[LayoutNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[LayoutNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: LayoutNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: LayoutNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: LayoutType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: LayoutType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

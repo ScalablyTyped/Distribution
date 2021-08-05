@@ -16,26 +16,20 @@ object anon {
   }
   object Credentials {
     
-    @scala.inline
-    def apply[TCreds, TSets](): Credentials[TCreds, TSets] = {
+    inline def apply[TCreds, TSets](): Credentials[TCreds, TSets] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Credentials[TCreds, TSets]]
     }
     
-    @scala.inline
-    implicit class CredentialsMutableBuilder[Self <: Credentials[?, ?], TCreds, TSets] (val x: Self & (Credentials[TCreds, TSets])) extends AnyVal {
+    extension [Self <: Credentials[?, ?], TCreds, TSets](x: Self & (Credentials[TCreds, TSets])) {
       
-      @scala.inline
-      def setCredentials(value: NodeCredentials[TCreds]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: NodeCredentials[TCreds]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setSettings(value: NodeSettings[TSets]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: NodeSettings[TSets]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+      inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     }
   }
 }

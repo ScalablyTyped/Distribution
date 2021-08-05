@@ -16,31 +16,23 @@ trait RecordOperation
 }
 object RecordOperation {
   
-  @scala.inline
-  def apply(): RecordOperation = {
+  inline def apply(): RecordOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecordOperation]
   }
   
-  @scala.inline
-  implicit class RecordOperationMutableBuilder[Self <: RecordOperation] (val x: Self) extends AnyVal {
+  extension [Self <: RecordOperation](x: Self) {
     
-    @scala.inline
-    def setRecordingAccessToken(value: NullableOption[String]): Self = StObject.set(x, "recordingAccessToken", value.asInstanceOf[js.Any])
+    inline def setRecordingAccessToken(value: NullableOption[String]): Self = StObject.set(x, "recordingAccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordingAccessTokenNull: Self = StObject.set(x, "recordingAccessToken", null)
+    inline def setRecordingAccessTokenNull: Self = StObject.set(x, "recordingAccessToken", null)
     
-    @scala.inline
-    def setRecordingAccessTokenUndefined: Self = StObject.set(x, "recordingAccessToken", js.undefined)
+    inline def setRecordingAccessTokenUndefined: Self = StObject.set(x, "recordingAccessToken", js.undefined)
     
-    @scala.inline
-    def setRecordingLocation(value: NullableOption[String]): Self = StObject.set(x, "recordingLocation", value.asInstanceOf[js.Any])
+    inline def setRecordingLocation(value: NullableOption[String]): Self = StObject.set(x, "recordingLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordingLocationNull: Self = StObject.set(x, "recordingLocation", null)
+    inline def setRecordingLocationNull: Self = StObject.set(x, "recordingLocation", null)
     
-    @scala.inline
-    def setRecordingLocationUndefined: Self = StObject.set(x, "recordingLocation", js.undefined)
+    inline def setRecordingLocationUndefined: Self = StObject.set(x, "recordingLocation", js.undefined)
   }
 }

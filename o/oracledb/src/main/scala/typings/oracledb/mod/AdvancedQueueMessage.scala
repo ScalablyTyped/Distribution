@@ -49,8 +49,7 @@ trait AdvancedQueueMessage[T] extends StObject {
 }
 object AdvancedQueueMessage {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     correlation: String,
     delay: Double,
     deliveryMode: Double,
@@ -67,40 +66,28 @@ object AdvancedQueueMessage {
     __obj.asInstanceOf[AdvancedQueueMessage[T]]
   }
   
-  @scala.inline
-  implicit class AdvancedQueueMessageMutableBuilder[Self <: AdvancedQueueMessage[?], T] (val x: Self & AdvancedQueueMessage[T]) extends AnyVal {
+  extension [Self <: AdvancedQueueMessage[?], T](x: Self & AdvancedQueueMessage[T]) {
     
-    @scala.inline
-    def setCorrelation(value: String): Self = StObject.set(x, "correlation", value.asInstanceOf[js.Any])
+    inline def setCorrelation(value: String): Self = StObject.set(x, "correlation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryMode(value: Double): Self = StObject.set(x, "deliveryMode", value.asInstanceOf[js.Any])
+    inline def setDeliveryMode(value: Double): Self = StObject.set(x, "deliveryMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionQueue(value: String): Self = StObject.set(x, "exceptionQueue", value.asInstanceOf[js.Any])
+    inline def setExceptionQueue(value: String): Self = StObject.set(x, "exceptionQueue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+    inline def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsgId(value: Buffer): Self = StObject.set(x, "msgId", value.asInstanceOf[js.Any])
+    inline def setMsgId(value: Buffer): Self = StObject.set(x, "msgId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumAttempts(value: Double): Self = StObject.set(x, "numAttempts", value.asInstanceOf[js.Any])
+    inline def setNumAttempts(value: Double): Self = StObject.set(x, "numAttempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalMsgId(value: Buffer): Self = StObject.set(x, "originalMsgId", value.asInstanceOf[js.Any])
+    inline def setOriginalMsgId(value: Buffer): Self = StObject.set(x, "originalMsgId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: Buffer | DBObjectOUT[T]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Buffer | DBObjectOUT[T]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

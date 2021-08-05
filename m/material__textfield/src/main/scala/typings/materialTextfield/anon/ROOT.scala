@@ -10,16 +10,13 @@ trait ROOT extends StObject {
 }
 object ROOT {
   
-  @scala.inline
-  def apply(ROOT: String): ROOT = {
+  inline def apply(ROOT: String): ROOT = {
     val __obj = js.Dynamic.literal(ROOT = ROOT.asInstanceOf[js.Any])
     __obj.asInstanceOf[ROOT]
   }
   
-  @scala.inline
-  implicit class ROOTMutableBuilder[Self <: ROOT] (val x: Self) extends AnyVal {
+  extension [Self <: ROOT](x: Self) {
     
-    @scala.inline
-    def setROOT(value: String): Self = StObject.set(x, "ROOT", value.asInstanceOf[js.Any])
+    inline def setROOT(value: String): Self = StObject.set(x, "ROOT", value.asInstanceOf[js.Any])
   }
 }

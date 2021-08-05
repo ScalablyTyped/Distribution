@@ -10,16 +10,13 @@ trait DefineSuggesterResponse extends StObject {
 }
 object DefineSuggesterResponse {
   
-  @scala.inline
-  def apply(Suggester: SuggesterStatus): DefineSuggesterResponse = {
+  inline def apply(Suggester: SuggesterStatus): DefineSuggesterResponse = {
     val __obj = js.Dynamic.literal(Suggester = Suggester.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineSuggesterResponse]
   }
   
-  @scala.inline
-  implicit class DefineSuggesterResponseMutableBuilder[Self <: DefineSuggesterResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DefineSuggesterResponse](x: Self) {
     
-    @scala.inline
-    def setSuggester(value: SuggesterStatus): Self = StObject.set(x, "Suggester", value.asInstanceOf[js.Any])
+    inline def setSuggester(value: SuggesterStatus): Self = StObject.set(x, "Suggester", value.asInstanceOf[js.Any])
   }
 }

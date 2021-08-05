@@ -11,19 +11,15 @@ trait FixedToolbarEvents extends StObject {
 }
 object FixedToolbarEvents {
   
-  @scala.inline
-  def apply(): FixedToolbarEvents = {
+  inline def apply(): FixedToolbarEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FixedToolbarEvents]
   }
   
-  @scala.inline
-  implicit class FixedToolbarEventsMutableBuilder[Self <: FixedToolbarEvents] (val x: Self) extends AnyVal {
+  extension [Self <: FixedToolbarEvents](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
   }
 }

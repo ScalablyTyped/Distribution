@@ -14,28 +14,21 @@ trait JobPayloadInput extends StObject {
 }
 object JobPayloadInput {
   
-  @scala.inline
-  def apply(urn: String): JobPayloadInput = {
+  inline def apply(urn: String): JobPayloadInput = {
     val __obj = js.Dynamic.literal(urn = urn.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobPayloadInput]
   }
   
-  @scala.inline
-  implicit class JobPayloadInputMutableBuilder[Self <: JobPayloadInput] (val x: Self) extends AnyVal {
+  extension [Self <: JobPayloadInput](x: Self) {
     
-    @scala.inline
-    def setCompressedUrn(value: Boolean): Self = StObject.set(x, "compressedUrn", value.asInstanceOf[js.Any])
+    inline def setCompressedUrn(value: Boolean): Self = StObject.set(x, "compressedUrn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressedUrnUndefined: Self = StObject.set(x, "compressedUrn", js.undefined)
+    inline def setCompressedUrnUndefined: Self = StObject.set(x, "compressedUrn", js.undefined)
     
-    @scala.inline
-    def setRootFilename(value: String): Self = StObject.set(x, "rootFilename", value.asInstanceOf[js.Any])
+    inline def setRootFilename(value: String): Self = StObject.set(x, "rootFilename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootFilenameUndefined: Self = StObject.set(x, "rootFilename", js.undefined)
+    inline def setRootFilenameUndefined: Self = StObject.set(x, "rootFilename", js.undefined)
     
-    @scala.inline
-    def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
+    inline def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
   }
 }

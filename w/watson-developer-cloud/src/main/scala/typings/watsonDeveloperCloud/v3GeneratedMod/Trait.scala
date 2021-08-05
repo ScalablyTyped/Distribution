@@ -30,46 +30,33 @@ trait Trait extends StObject {
 }
 object Trait {
   
-  @scala.inline
-  def apply(category: String, name: String, percentile: Double, trait_id: String): Trait = {
+  inline def apply(category: String, name: String, percentile: Double, trait_id: String): Trait = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], percentile = percentile.asInstanceOf[js.Any], trait_id = trait_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trait]
   }
   
-  @scala.inline
-  implicit class TraitMutableBuilder[Self <: Trait] (val x: Self) extends AnyVal {
+  extension [Self <: Trait](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: js.Array[Trait]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[Trait]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: Trait*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Trait*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentile(value: Double): Self = StObject.set(x, "percentile", value.asInstanceOf[js.Any])
+    inline def setPercentile(value: Double): Self = StObject.set(x, "percentile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw_score(value: Double): Self = StObject.set(x, "raw_score", value.asInstanceOf[js.Any])
+    inline def setRaw_score(value: Double): Self = StObject.set(x, "raw_score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw_scoreUndefined: Self = StObject.set(x, "raw_score", js.undefined)
+    inline def setRaw_scoreUndefined: Self = StObject.set(x, "raw_score", js.undefined)
     
-    @scala.inline
-    def setSignificant(value: Boolean): Self = StObject.set(x, "significant", value.asInstanceOf[js.Any])
+    inline def setSignificant(value: Boolean): Self = StObject.set(x, "significant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignificantUndefined: Self = StObject.set(x, "significant", js.undefined)
+    inline def setSignificantUndefined: Self = StObject.set(x, "significant", js.undefined)
     
-    @scala.inline
-    def setTrait_id(value: String): Self = StObject.set(x, "trait_id", value.asInstanceOf[js.Any])
+    inline def setTrait_id(value: String): Self = StObject.set(x, "trait_id", value.asInstanceOf[js.Any])
   }
 }

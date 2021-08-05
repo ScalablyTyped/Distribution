@@ -18,28 +18,21 @@ trait ListICD10CMInferenceJobsResponse extends StObject {
 }
 object ListICD10CMInferenceJobsResponse {
   
-  @scala.inline
-  def apply(): ListICD10CMInferenceJobsResponse = {
+  inline def apply(): ListICD10CMInferenceJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListICD10CMInferenceJobsResponse]
   }
   
-  @scala.inline
-  implicit class ListICD10CMInferenceJobsResponseMutableBuilder[Self <: ListICD10CMInferenceJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListICD10CMInferenceJobsResponse](x: Self) {
     
-    @scala.inline
-    def setComprehendMedicalAsyncJobPropertiesList(value: ComprehendMedicalAsyncJobPropertiesList): Self = StObject.set(x, "ComprehendMedicalAsyncJobPropertiesList", value.asInstanceOf[js.Any])
+    inline def setComprehendMedicalAsyncJobPropertiesList(value: ComprehendMedicalAsyncJobPropertiesList): Self = StObject.set(x, "ComprehendMedicalAsyncJobPropertiesList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComprehendMedicalAsyncJobPropertiesListUndefined: Self = StObject.set(x, "ComprehendMedicalAsyncJobPropertiesList", js.undefined)
+    inline def setComprehendMedicalAsyncJobPropertiesListUndefined: Self = StObject.set(x, "ComprehendMedicalAsyncJobPropertiesList", js.undefined)
     
-    @scala.inline
-    def setComprehendMedicalAsyncJobPropertiesListVarargs(value: ComprehendMedicalAsyncJobProperties*): Self = StObject.set(x, "ComprehendMedicalAsyncJobPropertiesList", js.Array(value :_*))
+    inline def setComprehendMedicalAsyncJobPropertiesListVarargs(value: ComprehendMedicalAsyncJobProperties*): Self = StObject.set(x, "ComprehendMedicalAsyncJobPropertiesList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

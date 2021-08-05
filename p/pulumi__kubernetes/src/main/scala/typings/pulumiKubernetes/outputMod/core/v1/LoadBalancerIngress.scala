@@ -21,19 +21,15 @@ trait LoadBalancerIngress extends StObject {
 }
 object LoadBalancerIngress {
   
-  @scala.inline
-  def apply(hostname: String, ip: String): LoadBalancerIngress = {
+  inline def apply(hostname: String, ip: String): LoadBalancerIngress = {
     val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancerIngress]
   }
   
-  @scala.inline
-  implicit class LoadBalancerIngressMutableBuilder[Self <: LoadBalancerIngress] (val x: Self) extends AnyVal {
+  extension [Self <: LoadBalancerIngress](x: Self) {
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait Format extends StObject {
 }
 object Format {
   
-  @scala.inline
-  def apply(): Format = {
+  inline def apply(): Format = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Format]
   }
   
-  @scala.inline
-  implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+  extension [Self <: Format](x: Self) {
     
-    @scala.inline
-    def setDistanceInWords(value: js.Object): Self = StObject.set(x, "distanceInWords", value.asInstanceOf[js.Any])
+    inline def setDistanceInWords(value: js.Object): Self = StObject.set(x, "distanceInWords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceInWordsUndefined: Self = StObject.set(x, "distanceInWords", js.undefined)
+    inline def setDistanceInWordsUndefined: Self = StObject.set(x, "distanceInWords", js.undefined)
     
-    @scala.inline
-    def setFormat(value: js.Object): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: js.Object): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

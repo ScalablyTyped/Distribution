@@ -13,19 +13,15 @@ trait RestorePhoneNumberResponse extends StObject {
 }
 object RestorePhoneNumberResponse {
   
-  @scala.inline
-  def apply(): RestorePhoneNumberResponse = {
+  inline def apply(): RestorePhoneNumberResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestorePhoneNumberResponse]
   }
   
-  @scala.inline
-  implicit class RestorePhoneNumberResponseMutableBuilder[Self <: RestorePhoneNumberResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RestorePhoneNumberResponse](x: Self) {
     
-    @scala.inline
-    def setPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberUndefined: Self = StObject.set(x, "PhoneNumber", js.undefined)
+    inline def setPhoneNumberUndefined: Self = StObject.set(x, "PhoneNumber", js.undefined)
   }
 }

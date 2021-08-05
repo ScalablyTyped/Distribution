@@ -13,19 +13,15 @@ trait ListenerRuleConditionHostHeader extends StObject {
 }
 object ListenerRuleConditionHostHeader {
   
-  @scala.inline
-  def apply(values: js.Array[String]): ListenerRuleConditionHostHeader = {
+  inline def apply(values: js.Array[String]): ListenerRuleConditionHostHeader = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleConditionHostHeader]
   }
   
-  @scala.inline
-  implicit class ListenerRuleConditionHostHeaderMutableBuilder[Self <: ListenerRuleConditionHostHeader] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerRuleConditionHostHeader](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

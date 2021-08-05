@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("crypto", "Cipher")
 @js.native
-class Cipher protected () extends Transform {
+/* private */ class Cipher () extends Transform {
   
   def `final`(): Buffer = js.native
   def `final`(output_encoding: BufferEncoding): String = js.native

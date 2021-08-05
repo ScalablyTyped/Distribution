@@ -54,7 +54,7 @@ object backButtonMod {
       */
     var icon: js.UndefOr[String | Null] = js.native
     
-    var onClick: js.Any = js.native
+    /* private */ var onClick: js.Any = js.native
     
     @JSName("render")
     def render_MBackButton(): js.Any = js.native

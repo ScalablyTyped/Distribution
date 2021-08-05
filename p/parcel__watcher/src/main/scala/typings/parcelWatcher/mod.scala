@@ -18,25 +18,17 @@ object mod {
     def unsubscribe(): js.Promise[Unit] = js.native
   }
   
-  @scala.inline
-  def getEventsSince(dirPath: String, snapshotPath: String): js.Promise[js.Array[ParcelWatcherEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventsSince")(dirPath.asInstanceOf[js.Any], snapshotPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ParcelWatcherEvent]]]
-  @scala.inline
-  def getEventsSince(dirPath: String, snapshotPath: String, options: ParcelWatcherOptions): js.Promise[js.Array[ParcelWatcherEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventsSince")(dirPath.asInstanceOf[js.Any], snapshotPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ParcelWatcherEvent]]]
+  inline def getEventsSince(dirPath: String, snapshotPath: String): js.Promise[js.Array[ParcelWatcherEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventsSince")(dirPath.asInstanceOf[js.Any], snapshotPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ParcelWatcherEvent]]]
+  inline def getEventsSince(dirPath: String, snapshotPath: String, options: ParcelWatcherOptions): js.Promise[js.Array[ParcelWatcherEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventsSince")(dirPath.asInstanceOf[js.Any], snapshotPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ParcelWatcherEvent]]]
   
-  @scala.inline
-  def subscribe(dirPath: String, callback: ParcelWatcherCallback): js.Promise[ParcelWatcherSubscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(dirPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParcelWatcherSubscription]]
-  @scala.inline
-  def subscribe(dirPath: String, callback: ParcelWatcherCallback, options: ParcelWatcherOptions): js.Promise[ParcelWatcherSubscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(dirPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParcelWatcherSubscription]]
+  inline def subscribe(dirPath: String, callback: ParcelWatcherCallback): js.Promise[ParcelWatcherSubscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(dirPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParcelWatcherSubscription]]
+  inline def subscribe(dirPath: String, callback: ParcelWatcherCallback, options: ParcelWatcherOptions): js.Promise[ParcelWatcherSubscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(dirPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParcelWatcherSubscription]]
   
-  @scala.inline
-  def unsubscribe(dirPath: String, callback: ParcelWatcherCallback): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(dirPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def unsubscribe(dirPath: String, callback: ParcelWatcherCallback, options: ParcelWatcherOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(dirPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def unsubscribe(dirPath: String, callback: ParcelWatcherCallback): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(dirPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def unsubscribe(dirPath: String, callback: ParcelWatcherCallback, options: ParcelWatcherOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(dirPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def writeSnapshot(dirPath: String, snapshotPath: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSnapshot")(dirPath.asInstanceOf[js.Any], snapshotPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def writeSnapshot(dirPath: String, snapshotPath: String, options: ParcelWatcherOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSnapshot")(dirPath.asInstanceOf[js.Any], snapshotPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeSnapshot(dirPath: String, snapshotPath: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSnapshot")(dirPath.asInstanceOf[js.Any], snapshotPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeSnapshot(dirPath: String, snapshotPath: String, options: ParcelWatcherOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSnapshot")(dirPath.asInstanceOf[js.Any], snapshotPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.parcelWatcher.parcelWatcherStrings.`fs-events`
@@ -48,20 +40,15 @@ object mod {
   trait ParcelWatcherBackend extends StObject
   object ParcelWatcherBackend {
     
-    @scala.inline
-    def `brute-force`: typings.parcelWatcher.parcelWatcherStrings.`brute-force` = "brute-force".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.`brute-force`]
+    inline def `brute-force`: typings.parcelWatcher.parcelWatcherStrings.`brute-force` = "brute-force".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.`brute-force`]
     
-    @scala.inline
-    def `fs-events`: typings.parcelWatcher.parcelWatcherStrings.`fs-events` = "fs-events".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.`fs-events`]
+    inline def `fs-events`: typings.parcelWatcher.parcelWatcherStrings.`fs-events` = "fs-events".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.`fs-events`]
     
-    @scala.inline
-    def inotify: typings.parcelWatcher.parcelWatcherStrings.inotify = "inotify".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.inotify]
+    inline def inotify: typings.parcelWatcher.parcelWatcherStrings.inotify = "inotify".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.inotify]
     
-    @scala.inline
-    def watchman: typings.parcelWatcher.parcelWatcherStrings.watchman = "watchman".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.watchman]
+    inline def watchman: typings.parcelWatcher.parcelWatcherStrings.watchman = "watchman".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.watchman]
     
-    @scala.inline
-    def windows: typings.parcelWatcher.parcelWatcherStrings.windows = "windows".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.windows]
+    inline def windows: typings.parcelWatcher.parcelWatcherStrings.windows = "windows".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.windows]
   }
   
   type ParcelWatcherCallback = js.Function2[
@@ -78,21 +65,17 @@ object mod {
   }
   object ParcelWatcherEvent {
     
-    @scala.inline
-    def apply(path: String, `type`: ParcelWatcherEventType): ParcelWatcherEvent = {
+    inline def apply(path: String, `type`: ParcelWatcherEventType): ParcelWatcherEvent = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParcelWatcherEvent]
     }
     
-    @scala.inline
-    implicit class ParcelWatcherEventMutableBuilder[Self <: ParcelWatcherEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ParcelWatcherEvent](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: ParcelWatcherEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ParcelWatcherEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,14 +87,11 @@ object mod {
   trait ParcelWatcherEventType extends StObject
   object ParcelWatcherEventType {
     
-    @scala.inline
-    def create: typings.parcelWatcher.parcelWatcherStrings.create = "create".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.create]
+    inline def create: typings.parcelWatcher.parcelWatcherStrings.create = "create".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.create]
     
-    @scala.inline
-    def delete: typings.parcelWatcher.parcelWatcherStrings.delete = "delete".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.delete]
+    inline def delete: typings.parcelWatcher.parcelWatcherStrings.delete = "delete".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.delete]
     
-    @scala.inline
-    def update: typings.parcelWatcher.parcelWatcherStrings.update = "update".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.update]
+    inline def update: typings.parcelWatcher.parcelWatcherStrings.update = "update".asInstanceOf[typings.parcelWatcher.parcelWatcherStrings.update]
   }
   
   trait ParcelWatcherOptions extends StObject {
@@ -122,29 +102,22 @@ object mod {
   }
   object ParcelWatcherOptions {
     
-    @scala.inline
-    def apply(): ParcelWatcherOptions = {
+    inline def apply(): ParcelWatcherOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParcelWatcherOptions]
     }
     
-    @scala.inline
-    implicit class ParcelWatcherOptionsMutableBuilder[Self <: ParcelWatcherOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParcelWatcherOptions](x: Self) {
       
-      @scala.inline
-      def setBackend(value: ParcelWatcherBackend): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+      inline def setBackend(value: ParcelWatcherBackend): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
+      inline def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     }
   }
 }

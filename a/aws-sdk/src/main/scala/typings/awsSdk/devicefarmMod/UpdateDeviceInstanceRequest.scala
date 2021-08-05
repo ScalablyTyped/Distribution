@@ -23,31 +23,23 @@ trait UpdateDeviceInstanceRequest extends StObject {
 }
 object UpdateDeviceInstanceRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): UpdateDeviceInstanceRequest = {
+  inline def apply(arn: AmazonResourceName): UpdateDeviceInstanceRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDeviceInstanceRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDeviceInstanceRequestMutableBuilder[Self <: UpdateDeviceInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDeviceInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabels(value: InstanceLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: InstanceLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
-    @scala.inline
-    def setProfileArn(value: AmazonResourceName): Self = StObject.set(x, "profileArn", value.asInstanceOf[js.Any])
+    inline def setProfileArn(value: AmazonResourceName): Self = StObject.set(x, "profileArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileArnUndefined: Self = StObject.set(x, "profileArn", js.undefined)
+    inline def setProfileArnUndefined: Self = StObject.set(x, "profileArn", js.undefined)
   }
 }

@@ -33,8 +33,7 @@ trait XDragGestureRecognizer
 }
 object XDragGestureRecognizer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addDragGestureListener: XDragGestureListener => Unit,
     queryInterface: `type` => js.Any,
@@ -46,16 +45,12 @@ object XDragGestureRecognizer {
     __obj.asInstanceOf[XDragGestureRecognizer]
   }
   
-  @scala.inline
-  implicit class XDragGestureRecognizerMutableBuilder[Self <: XDragGestureRecognizer] (val x: Self) extends AnyVal {
+  extension [Self <: XDragGestureRecognizer](x: Self) {
     
-    @scala.inline
-    def setAddDragGestureListener(value: XDragGestureListener => Unit): Self = StObject.set(x, "addDragGestureListener", js.Any.fromFunction1(value))
+    inline def setAddDragGestureListener(value: XDragGestureListener => Unit): Self = StObject.set(x, "addDragGestureListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveDragGestureListener(value: XDragGestureListener => Unit): Self = StObject.set(x, "removeDragGestureListener", js.Any.fromFunction1(value))
+    inline def setRemoveDragGestureListener(value: XDragGestureListener => Unit): Self = StObject.set(x, "removeDragGestureListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResetRecognizer(value: () => Unit): Self = StObject.set(x, "resetRecognizer", js.Any.fromFunction0(value))
+    inline def setResetRecognizer(value: () => Unit): Self = StObject.set(x, "resetRecognizer", js.Any.fromFunction0(value))
   }
 }

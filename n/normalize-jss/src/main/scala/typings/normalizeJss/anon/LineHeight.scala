@@ -14,22 +14,17 @@ trait LineHeight extends StObject {
 }
 object LineHeight {
   
-  @scala.inline
-  def apply(fontFamily: String, lineHeight: String, textSizeAdjust: String): LineHeight = {
+  inline def apply(fontFamily: String, lineHeight: String, textSizeAdjust: String): LineHeight = {
     val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], textSizeAdjust = textSizeAdjust.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineHeight]
   }
   
-  @scala.inline
-  implicit class LineHeightMutableBuilder[Self <: LineHeight] (val x: Self) extends AnyVal {
+  extension [Self <: LineHeight](x: Self) {
     
-    @scala.inline
-    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextSizeAdjust(value: String): Self = StObject.set(x, "textSizeAdjust", value.asInstanceOf[js.Any])
+    inline def setTextSizeAdjust(value: String): Self = StObject.set(x, "textSizeAdjust", value.asInstanceOf[js.Any])
   }
 }

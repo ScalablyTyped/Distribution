@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Speech")
 @js.native
-class Speech protected ()
+/* private */ class Speech ()
   extends StObject
      with typings.activexExcel.Excel.Speech

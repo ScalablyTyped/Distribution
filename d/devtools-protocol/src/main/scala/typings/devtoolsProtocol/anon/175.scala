@@ -13,22 +13,17 @@ trait `175` extends StObject {
 }
 object `175` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[SetForceUpdateOnPageLoadRequest], returnType: Unit): `175` = {
+  inline def apply(paramsType: js.Array[SetForceUpdateOnPageLoadRequest], returnType: Unit): `175` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`175`]
   }
   
-  @scala.inline
-  implicit class `175MutableBuilder`[Self <: `175`] (val x: Self) extends AnyVal {
+  extension [Self <: `175`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[SetForceUpdateOnPageLoadRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[SetForceUpdateOnPageLoadRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: SetForceUpdateOnPageLoadRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SetForceUpdateOnPageLoadRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

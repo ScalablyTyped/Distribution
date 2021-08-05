@@ -18,28 +18,21 @@ trait BatchListIncomingTypedLinksResponse extends StObject {
 }
 object BatchListIncomingTypedLinksResponse {
   
-  @scala.inline
-  def apply(): BatchListIncomingTypedLinksResponse = {
+  inline def apply(): BatchListIncomingTypedLinksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchListIncomingTypedLinksResponse]
   }
   
-  @scala.inline
-  implicit class BatchListIncomingTypedLinksResponseMutableBuilder[Self <: BatchListIncomingTypedLinksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchListIncomingTypedLinksResponse](x: Self) {
     
-    @scala.inline
-    def setLinkSpecifiers(value: TypedLinkSpecifierList): Self = StObject.set(x, "LinkSpecifiers", value.asInstanceOf[js.Any])
+    inline def setLinkSpecifiers(value: TypedLinkSpecifierList): Self = StObject.set(x, "LinkSpecifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkSpecifiersUndefined: Self = StObject.set(x, "LinkSpecifiers", js.undefined)
+    inline def setLinkSpecifiersUndefined: Self = StObject.set(x, "LinkSpecifiers", js.undefined)
     
-    @scala.inline
-    def setLinkSpecifiersVarargs(value: TypedLinkSpecifier*): Self = StObject.set(x, "LinkSpecifiers", js.Array(value :_*))
+    inline def setLinkSpecifiersVarargs(value: TypedLinkSpecifier*): Self = StObject.set(x, "LinkSpecifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

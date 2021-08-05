@@ -10,8 +10,7 @@ object getDeletedFilesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDeletedFiles(
+  inline def getDeletedFiles(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
   ): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeletedFiles")(compiler.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

@@ -12,22 +12,17 @@ trait UserScopeTeamsAppInstallation
 }
 object UserScopeTeamsAppInstallation {
   
-  @scala.inline
-  def apply(): UserScopeTeamsAppInstallation = {
+  inline def apply(): UserScopeTeamsAppInstallation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserScopeTeamsAppInstallation]
   }
   
-  @scala.inline
-  implicit class UserScopeTeamsAppInstallationMutableBuilder[Self <: UserScopeTeamsAppInstallation] (val x: Self) extends AnyVal {
+  extension [Self <: UserScopeTeamsAppInstallation](x: Self) {
     
-    @scala.inline
-    def setChat(value: NullableOption[Chat]): Self = StObject.set(x, "chat", value.asInstanceOf[js.Any])
+    inline def setChat(value: NullableOption[Chat]): Self = StObject.set(x, "chat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChatNull: Self = StObject.set(x, "chat", null)
+    inline def setChatNull: Self = StObject.set(x, "chat", null)
     
-    @scala.inline
-    def setChatUndefined: Self = StObject.set(x, "chat", js.undefined)
+    inline def setChatUndefined: Self = StObject.set(x, "chat", js.undefined)
   }
 }

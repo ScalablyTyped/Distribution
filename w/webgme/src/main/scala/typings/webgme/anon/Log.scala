@@ -14,16 +14,13 @@ trait Log extends StObject {
 }
 object Log {
   
-  @scala.inline
-  def apply(log: js.Any): Log = {
+  inline def apply(log: js.Any): Log = {
     val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
     __obj.asInstanceOf[Log]
   }
   
-  @scala.inline
-  implicit class LogMutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
+  extension [Self <: Log](x: Self) {
     
-    @scala.inline
-    def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
   }
 }

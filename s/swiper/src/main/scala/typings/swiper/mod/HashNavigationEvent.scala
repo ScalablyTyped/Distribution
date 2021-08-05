@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HashNavigationEvent extends StObject
 object HashNavigationEvent {
   
-  @scala.inline
-  def hashChange: typings.swiper.swiperStrings.hashChange = "hashChange".asInstanceOf[typings.swiper.swiperStrings.hashChange]
+  inline def hashChange: typings.swiper.swiperStrings.hashChange = "hashChange".asInstanceOf[typings.swiper.swiperStrings.hashChange]
   
-  @scala.inline
-  def hashSet: typings.swiper.swiperStrings.hashSet = "hashSet".asInstanceOf[typings.swiper.swiperStrings.hashSet]
+  inline def hashSet: typings.swiper.swiperStrings.hashSet = "hashSet".asInstanceOf[typings.swiper.swiperStrings.hashSet]
 }

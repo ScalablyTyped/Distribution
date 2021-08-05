@@ -18,8 +18,7 @@ trait GitPathAction extends StObject {
 }
 object GitPathAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: GitPathActions,
     base64Content: String,
     path: String,
@@ -30,22 +29,16 @@ object GitPathAction {
     __obj.asInstanceOf[GitPathAction]
   }
   
-  @scala.inline
-  implicit class GitPathActionMutableBuilder[Self <: GitPathAction] (val x: Self) extends AnyVal {
+  extension [Self <: GitPathAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: GitPathActions): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: GitPathActions): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBase64Content(value: String): Self = StObject.set(x, "base64Content", value.asInstanceOf[js.Any])
+    inline def setBase64Content(value: String): Self = StObject.set(x, "base64Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawTextContent(value: String): Self = StObject.set(x, "rawTextContent", value.asInstanceOf[js.Any])
+    inline def setRawTextContent(value: String): Self = StObject.set(x, "rawTextContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPath(value: String): Self = StObject.set(x, "targetPath", value.asInstanceOf[js.Any])
+    inline def setTargetPath(value: String): Self = StObject.set(x, "targetPath", value.asInstanceOf[js.Any])
   }
 }

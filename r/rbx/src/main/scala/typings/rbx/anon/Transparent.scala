@@ -10,16 +10,13 @@ trait Transparent extends StObject {
 }
 object Transparent {
   
-  @scala.inline
-  def apply(transparent: Boolean): Transparent = {
+  inline def apply(transparent: Boolean): Transparent = {
     val __obj = js.Dynamic.literal(transparent = transparent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transparent]
   }
   
-  @scala.inline
-  implicit class TransparentMutableBuilder[Self <: Transparent] (val x: Self) extends AnyVal {
+  extension [Self <: Transparent](x: Self) {
     
-    @scala.inline
-    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
   }
 }

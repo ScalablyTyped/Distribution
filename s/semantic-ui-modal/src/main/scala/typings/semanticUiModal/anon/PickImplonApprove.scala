@@ -15,16 +15,13 @@ trait PickImplonApprove extends StObject {
 }
 object PickImplonApprove {
   
-  @scala.inline
-  def apply(onApprove: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]): PickImplonApprove = {
+  inline def apply(onApprove: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]): PickImplonApprove = {
     val __obj = js.Dynamic.literal(onApprove = onApprove.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonApprove]
   }
   
-  @scala.inline
-  implicit class PickImplonApproveMutableBuilder[Self <: PickImplonApprove] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonApprove](x: Self) {
     
-    @scala.inline
-    def setOnApprove(value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]): Self = StObject.set(x, "onApprove", value.asInstanceOf[js.Any])
+    inline def setOnApprove(value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]): Self = StObject.set(x, "onApprove", value.asInstanceOf[js.Any])
   }
 }

@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LoggingDriverType extends StObject
 object LoggingDriverType {
   
-  @scala.inline
-  def awslogs: typings.dockerode.dockerodeStrings.awslogs = "awslogs".asInstanceOf[typings.dockerode.dockerodeStrings.awslogs]
+  inline def awslogs: typings.dockerode.dockerodeStrings.awslogs = "awslogs".asInstanceOf[typings.dockerode.dockerodeStrings.awslogs]
   
-  @scala.inline
-  def etwlogs: typings.dockerode.dockerodeStrings.etwlogs = "etwlogs".asInstanceOf[typings.dockerode.dockerodeStrings.etwlogs]
+  inline def etwlogs: typings.dockerode.dockerodeStrings.etwlogs = "etwlogs".asInstanceOf[typings.dockerode.dockerodeStrings.etwlogs]
   
-  @scala.inline
-  def fluentd: typings.dockerode.dockerodeStrings.fluentd = "fluentd".asInstanceOf[typings.dockerode.dockerodeStrings.fluentd]
+  inline def fluentd: typings.dockerode.dockerodeStrings.fluentd = "fluentd".asInstanceOf[typings.dockerode.dockerodeStrings.fluentd]
   
-  @scala.inline
-  def gelf: typings.dockerode.dockerodeStrings.gelf = "gelf".asInstanceOf[typings.dockerode.dockerodeStrings.gelf]
+  inline def gelf: typings.dockerode.dockerodeStrings.gelf = "gelf".asInstanceOf[typings.dockerode.dockerodeStrings.gelf]
   
-  @scala.inline
-  def journald: typings.dockerode.dockerodeStrings.journald = "journald".asInstanceOf[typings.dockerode.dockerodeStrings.journald]
+  inline def journald: typings.dockerode.dockerodeStrings.journald = "journald".asInstanceOf[typings.dockerode.dockerodeStrings.journald]
   
-  @scala.inline
-  def `json-file`: typings.dockerode.dockerodeStrings.`json-file` = "json-file".asInstanceOf[typings.dockerode.dockerodeStrings.`json-file`]
+  inline def `json-file`: typings.dockerode.dockerodeStrings.`json-file` = "json-file".asInstanceOf[typings.dockerode.dockerodeStrings.`json-file`]
   
-  @scala.inline
-  def none: typings.dockerode.dockerodeStrings.none = "none".asInstanceOf[typings.dockerode.dockerodeStrings.none]
+  inline def none: typings.dockerode.dockerodeStrings.none = "none".asInstanceOf[typings.dockerode.dockerodeStrings.none]
   
-  @scala.inline
-  def splunk: typings.dockerode.dockerodeStrings.splunk = "splunk".asInstanceOf[typings.dockerode.dockerodeStrings.splunk]
+  inline def splunk: typings.dockerode.dockerodeStrings.splunk = "splunk".asInstanceOf[typings.dockerode.dockerodeStrings.splunk]
   
-  @scala.inline
-  def syslog: typings.dockerode.dockerodeStrings.syslog = "syslog".asInstanceOf[typings.dockerode.dockerodeStrings.syslog]
+  inline def syslog: typings.dockerode.dockerodeStrings.syslog = "syslog".asInstanceOf[typings.dockerode.dockerodeStrings.syslog]
 }

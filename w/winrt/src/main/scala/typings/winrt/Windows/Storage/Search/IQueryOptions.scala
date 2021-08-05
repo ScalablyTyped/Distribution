@@ -39,8 +39,7 @@ trait IQueryOptions extends StObject {
 }
 object IQueryOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applicationSearchFilter: String,
     dateStackOption: DateStackOption,
     fileTypeFilter: IVector[String],
@@ -59,46 +58,32 @@ object IQueryOptions {
     __obj.asInstanceOf[IQueryOptions]
   }
   
-  @scala.inline
-  implicit class IQueryOptionsMutableBuilder[Self <: IQueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IQueryOptions](x: Self) {
     
-    @scala.inline
-    def setApplicationSearchFilter(value: String): Self = StObject.set(x, "applicationSearchFilter", value.asInstanceOf[js.Any])
+    inline def setApplicationSearchFilter(value: String): Self = StObject.set(x, "applicationSearchFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateStackOption(value: DateStackOption): Self = StObject.set(x, "dateStackOption", value.asInstanceOf[js.Any])
+    inline def setDateStackOption(value: DateStackOption): Self = StObject.set(x, "dateStackOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypeFilter(value: IVector[String]): Self = StObject.set(x, "fileTypeFilter", value.asInstanceOf[js.Any])
+    inline def setFileTypeFilter(value: IVector[String]): Self = StObject.set(x, "fileTypeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderDepth(value: FolderDepth): Self = StObject.set(x, "folderDepth", value.asInstanceOf[js.Any])
+    inline def setFolderDepth(value: FolderDepth): Self = StObject.set(x, "folderDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupPropertyName(value: String): Self = StObject.set(x, "groupPropertyName", value.asInstanceOf[js.Any])
+    inline def setGroupPropertyName(value: String): Self = StObject.set(x, "groupPropertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexerOption(value: IndexerOption): Self = StObject.set(x, "indexerOption", value.asInstanceOf[js.Any])
+    inline def setIndexerOption(value: IndexerOption): Self = StObject.set(x, "indexerOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadFromString(value: String => Unit): Self = StObject.set(x, "loadFromString", js.Any.fromFunction1(value))
+    inline def setLoadFromString(value: String => Unit): Self = StObject.set(x, "loadFromString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSaveToString(value: () => String): Self = StObject.set(x, "saveToString", js.Any.fromFunction0(value))
+    inline def setSaveToString(value: () => String): Self = StObject.set(x, "saveToString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetPropertyPrefetch(value: (PropertyPrefetchOptions, IIterable[String]) => Unit): Self = StObject.set(x, "setPropertyPrefetch", js.Any.fromFunction2(value))
+    inline def setSetPropertyPrefetch(value: (PropertyPrefetchOptions, IIterable[String]) => Unit): Self = StObject.set(x, "setPropertyPrefetch", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetThumbnailPrefetch(value: (ThumbnailMode, Double, ThumbnailOptions) => Unit): Self = StObject.set(x, "setThumbnailPrefetch", js.Any.fromFunction3(value))
+    inline def setSetThumbnailPrefetch(value: (ThumbnailMode, Double, ThumbnailOptions) => Unit): Self = StObject.set(x, "setThumbnailPrefetch", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSortOrder(value: IVector[SortEntry]): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: IVector[SortEntry]): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserSearchFilter(value: String): Self = StObject.set(x, "userSearchFilter", value.asInstanceOf[js.Any])
+    inline def setUserSearchFilter(value: String): Self = StObject.set(x, "userSearchFilter", value.asInstanceOf[js.Any])
   }
 }

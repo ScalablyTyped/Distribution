@@ -21,26 +21,20 @@ object anon {
   }
   object Bottom {
     
-    @scala.inline
-    def apply(bottom: Double, left: Double, right: Double, top: Double): Bottom = {
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double): Bottom = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bottom]
     }
     
-    @scala.inline
-    implicit class BottomMutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
+    extension [Self <: Bottom](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,50 +76,36 @@ object anon {
   }
   object Click {
     
-    @scala.inline
-    def apply(): Click = {
+    inline def apply(): Click = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Click]
     }
     
-    @scala.inline
-    implicit class ClickMutableBuilder[Self <: Click] (val x: Self) extends AnyVal {
+    extension [Self <: Click](x: Self) {
       
-      @scala.inline
-      def setClick(value: Boolean): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+      inline def setClick(value: Boolean): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+      inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
       
-      @scala.inline
-      def setMouseleave(value: Boolean): Self = StObject.set(x, "mouseleave", value.asInstanceOf[js.Any])
+      inline def setMouseleave(value: Boolean): Self = StObject.set(x, "mouseleave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseleaveUndefined: Self = StObject.set(x, "mouseleave", js.undefined)
+      inline def setMouseleaveUndefined: Self = StObject.set(x, "mouseleave", js.undefined)
       
-      @scala.inline
-      def setOriginClick(value: Boolean): Self = StObject.set(x, "originClick", value.asInstanceOf[js.Any])
+      inline def setOriginClick(value: Boolean): Self = StObject.set(x, "originClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginClickUndefined: Self = StObject.set(x, "originClick", js.undefined)
+      inline def setOriginClickUndefined: Self = StObject.set(x, "originClick", js.undefined)
       
-      @scala.inline
-      def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      inline def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+      inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
       
-      @scala.inline
-      def setTap(value: Boolean): Self = StObject.set(x, "tap", value.asInstanceOf[js.Any])
+      inline def setTap(value: Boolean): Self = StObject.set(x, "tap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTapUndefined: Self = StObject.set(x, "tap", js.undefined)
+      inline def setTapUndefined: Self = StObject.set(x, "tap", js.undefined)
       
-      @scala.inline
-      def setTouchleave(value: Boolean): Self = StObject.set(x, "touchleave", value.asInstanceOf[js.Any])
+      inline def setTouchleave(value: Boolean): Self = StObject.set(x, "touchleave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchleaveUndefined: Self = StObject.set(x, "touchleave", js.undefined)
+      inline def setTouchleaveUndefined: Self = StObject.set(x, "touchleave", js.undefined)
     }
   }
   
@@ -145,32 +125,24 @@ object anon {
   }
   object FixedLineage {
     
-    @scala.inline
-    def apply(fixedLineage: Boolean, offset: Bottom, size: Height, windowOffset: Bottom): FixedLineage = {
+    inline def apply(fixedLineage: Boolean, offset: Bottom, size: Height, windowOffset: Bottom): FixedLineage = {
       val __obj = js.Dynamic.literal(fixedLineage = fixedLineage.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], windowOffset = windowOffset.asInstanceOf[js.Any], usemapImage = null)
       __obj.asInstanceOf[FixedLineage]
     }
     
-    @scala.inline
-    implicit class FixedLineageMutableBuilder[Self <: FixedLineage] (val x: Self) extends AnyVal {
+    extension [Self <: FixedLineage](x: Self) {
       
-      @scala.inline
-      def setFixedLineage(value: Boolean): Self = StObject.set(x, "fixedLineage", value.asInstanceOf[js.Any])
+      inline def setFixedLineage(value: Boolean): Self = StObject.set(x, "fixedLineage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Bottom): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Bottom): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsemapImage(value: HTMLImageElement): Self = StObject.set(x, "usemapImage", value.asInstanceOf[js.Any])
+      inline def setUsemapImage(value: HTMLImageElement): Self = StObject.set(x, "usemapImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsemapImageNull: Self = StObject.set(x, "usemapImage", null)
+      inline def setUsemapImageNull: Self = StObject.set(x, "usemapImage", null)
       
-      @scala.inline
-      def setWindowOffset(value: Bottom): Self = StObject.set(x, "windowOffset", value.asInstanceOf[js.Any])
+      inline def setWindowOffset(value: Bottom): Self = StObject.set(x, "windowOffset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -182,20 +154,16 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Height = {
+    inline def apply(height: Double, width: Double): Height = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -207,20 +175,16 @@ object anon {
   }
   object Left {
     
-    @scala.inline
-    def apply(left: Double, top: Double): Left = {
+    inline def apply(left: Double, top: Double): Left = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Left]
     }
     
-    @scala.inline
-    implicit class LeftMutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
+    extension [Self <: Left](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -250,38 +214,28 @@ object anon {
   }
   object Mouseenter {
     
-    @scala.inline
-    def apply(): Mouseenter = {
+    inline def apply(): Mouseenter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Mouseenter]
     }
     
-    @scala.inline
-    implicit class MouseenterMutableBuilder[Self <: Mouseenter] (val x: Self) extends AnyVal {
+    extension [Self <: Mouseenter](x: Self) {
       
-      @scala.inline
-      def setClick(value: Boolean): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+      inline def setClick(value: Boolean): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+      inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
       
-      @scala.inline
-      def setMouseenter(value: Boolean): Self = StObject.set(x, "mouseenter", value.asInstanceOf[js.Any])
+      inline def setMouseenter(value: Boolean): Self = StObject.set(x, "mouseenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseenterUndefined: Self = StObject.set(x, "mouseenter", js.undefined)
+      inline def setMouseenterUndefined: Self = StObject.set(x, "mouseenter", js.undefined)
       
-      @scala.inline
-      def setTap(value: Boolean): Self = StObject.set(x, "tap", value.asInstanceOf[js.Any])
+      inline def setTap(value: Boolean): Self = StObject.set(x, "tap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTapUndefined: Self = StObject.set(x, "tap", js.undefined)
+      inline def setTapUndefined: Self = StObject.set(x, "tap", js.undefined)
       
-      @scala.inline
-      def setTouchstart(value: Boolean): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
+      inline def setTouchstart(value: Boolean): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchstartUndefined: Self = StObject.set(x, "touchstart", js.undefined)
+      inline def setTouchstartUndefined: Self = StObject.set(x, "touchstart", js.undefined)
     }
   }
   
@@ -293,20 +247,16 @@ object anon {
   }
   object Scroll {
     
-    @scala.inline
-    def apply(scroll: Left, size: Height): Scroll = {
+    inline def apply(scroll: Left, size: Height): Scroll = {
       val __obj = js.Dynamic.literal(scroll = scroll.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Scroll]
     }
     
-    @scala.inline
-    implicit class ScrollMutableBuilder[Self <: Scroll] (val x: Self) extends AnyVal {
+    extension [Self <: Scroll](x: Self) {
       
-      @scala.inline
-      def setScroll(value: Left): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      inline def setScroll(value: Left): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -316,17 +266,14 @@ object anon {
   }
   object Size {
     
-    @scala.inline
-    def apply(size: Height): Size = {
+    inline def apply(size: Height): Size = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Size]
     }
     
-    @scala.inline
-    implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+    extension [Self <: Size](x: Self) {
       
-      @scala.inline
-      def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

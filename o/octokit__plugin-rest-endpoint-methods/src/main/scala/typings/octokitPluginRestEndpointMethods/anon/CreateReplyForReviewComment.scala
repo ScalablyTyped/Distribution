@@ -62,8 +62,7 @@ trait CreateReplyForReviewComment extends StObject {
 }
 object CreateReplyForReviewComment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkIfMerged: `845`,
     create: `846`,
     createReplyForReviewComment: `847`,
@@ -96,88 +95,60 @@ object CreateReplyForReviewComment {
     __obj.asInstanceOf[CreateReplyForReviewComment]
   }
   
-  @scala.inline
-  implicit class CreateReplyForReviewCommentMutableBuilder[Self <: CreateReplyForReviewComment] (val x: Self) extends AnyVal {
+  extension [Self <: CreateReplyForReviewComment](x: Self) {
     
-    @scala.inline
-    def setCheckIfMerged(value: `845`): Self = StObject.set(x, "checkIfMerged", value.asInstanceOf[js.Any])
+    inline def setCheckIfMerged(value: `845`): Self = StObject.set(x, "checkIfMerged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreate(value: `846`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: `846`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateReplyForReviewComment(value: `847`): Self = StObject.set(x, "createReplyForReviewComment", value.asInstanceOf[js.Any])
+    inline def setCreateReplyForReviewComment(value: `847`): Self = StObject.set(x, "createReplyForReviewComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateReview(value: `848`): Self = StObject.set(x, "createReview", value.asInstanceOf[js.Any])
+    inline def setCreateReview(value: `848`): Self = StObject.set(x, "createReview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateReviewComment(value: `849`): Self = StObject.set(x, "createReviewComment", value.asInstanceOf[js.Any])
+    inline def setCreateReviewComment(value: `849`): Self = StObject.set(x, "createReviewComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletePendingReview(value: `850`): Self = StObject.set(x, "deletePendingReview", value.asInstanceOf[js.Any])
+    inline def setDeletePendingReview(value: `850`): Self = StObject.set(x, "deletePendingReview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteReviewComment(value: `851`): Self = StObject.set(x, "deleteReviewComment", value.asInstanceOf[js.Any])
+    inline def setDeleteReviewComment(value: `851`): Self = StObject.set(x, "deleteReviewComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDismissReview(value: `852`): Self = StObject.set(x, "dismissReview", value.asInstanceOf[js.Any])
+    inline def setDismissReview(value: `852`): Self = StObject.set(x, "dismissReview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet(value: `853`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `853`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetReview(value: `854`): Self = StObject.set(x, "getReview", value.asInstanceOf[js.Any])
+    inline def setGetReview(value: `854`): Self = StObject.set(x, "getReview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetReviewComment(value: `855`): Self = StObject.set(x, "getReviewComment", value.asInstanceOf[js.Any])
+    inline def setGetReviewComment(value: `855`): Self = StObject.set(x, "getReviewComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setList(value: `856`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: `856`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListCommentsForReview(value: `857`): Self = StObject.set(x, "listCommentsForReview", value.asInstanceOf[js.Any])
+    inline def setListCommentsForReview(value: `857`): Self = StObject.set(x, "listCommentsForReview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListCommits(value: `858`): Self = StObject.set(x, "listCommits", value.asInstanceOf[js.Any])
+    inline def setListCommits(value: `858`): Self = StObject.set(x, "listCommits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListFiles(value: `859`): Self = StObject.set(x, "listFiles", value.asInstanceOf[js.Any])
+    inline def setListFiles(value: `859`): Self = StObject.set(x, "listFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListRequestedReviewers(value: `860`): Self = StObject.set(x, "listRequestedReviewers", value.asInstanceOf[js.Any])
+    inline def setListRequestedReviewers(value: `860`): Self = StObject.set(x, "listRequestedReviewers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListReviewComments(value: `861`): Self = StObject.set(x, "listReviewComments", value.asInstanceOf[js.Any])
+    inline def setListReviewComments(value: `861`): Self = StObject.set(x, "listReviewComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListReviewCommentsForRepo(value: `862`): Self = StObject.set(x, "listReviewCommentsForRepo", value.asInstanceOf[js.Any])
+    inline def setListReviewCommentsForRepo(value: `862`): Self = StObject.set(x, "listReviewCommentsForRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListReviews(value: `863`): Self = StObject.set(x, "listReviews", value.asInstanceOf[js.Any])
+    inline def setListReviews(value: `863`): Self = StObject.set(x, "listReviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerge(value: `864`): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    inline def setMerge(value: `864`): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveRequestedReviewers(value: `865`): Self = StObject.set(x, "removeRequestedReviewers", value.asInstanceOf[js.Any])
+    inline def setRemoveRequestedReviewers(value: `865`): Self = StObject.set(x, "removeRequestedReviewers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestReviewers(value: `866`): Self = StObject.set(x, "requestReviewers", value.asInstanceOf[js.Any])
+    inline def setRequestReviewers(value: `866`): Self = StObject.set(x, "requestReviewers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitReview(value: `867`): Self = StObject.set(x, "submitReview", value.asInstanceOf[js.Any])
+    inline def setSubmitReview(value: `867`): Self = StObject.set(x, "submitReview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: `868`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: `868`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateBranch(value: `869`): Self = StObject.set(x, "updateBranch", value.asInstanceOf[js.Any])
+    inline def setUpdateBranch(value: `869`): Self = StObject.set(x, "updateBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateReview(value: `870`): Self = StObject.set(x, "updateReview", value.asInstanceOf[js.Any])
+    inline def setUpdateReview(value: `870`): Self = StObject.set(x, "updateReview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateReviewComment(value: `871`): Self = StObject.set(x, "updateReviewComment", value.asInstanceOf[js.Any])
+    inline def setUpdateReviewComment(value: `871`): Self = StObject.set(x, "updateReviewComment", value.asInstanceOf[js.Any])
   }
 }

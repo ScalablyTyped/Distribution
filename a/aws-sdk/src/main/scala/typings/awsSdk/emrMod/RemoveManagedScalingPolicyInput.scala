@@ -13,16 +13,13 @@ trait RemoveManagedScalingPolicyInput extends StObject {
 }
 object RemoveManagedScalingPolicyInput {
   
-  @scala.inline
-  def apply(ClusterId: ClusterId): RemoveManagedScalingPolicyInput = {
+  inline def apply(ClusterId: ClusterId): RemoveManagedScalingPolicyInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveManagedScalingPolicyInput]
   }
   
-  @scala.inline
-  implicit class RemoveManagedScalingPolicyInputMutableBuilder[Self <: RemoveManagedScalingPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveManagedScalingPolicyInput](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
   }
 }

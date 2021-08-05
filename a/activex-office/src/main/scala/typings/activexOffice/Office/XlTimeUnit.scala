@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlTimeUnit extends StObject
 object XlTimeUnit {
   
-  @scala.inline
-  def xlDays: `0` = 0.asInstanceOf[`0`]
+  inline def xlDays: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlMonths: `1` = 1.asInstanceOf[`1`]
+  inline def xlMonths: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlYears: `2` = 2.asInstanceOf[`2`]
+  inline def xlYears: `2` = 2.asInstanceOf[`2`]
 }

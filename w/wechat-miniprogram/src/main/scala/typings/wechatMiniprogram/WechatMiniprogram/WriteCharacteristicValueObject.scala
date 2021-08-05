@@ -24,31 +24,23 @@ trait WriteCharacteristicValueObject extends StObject {
 }
 object WriteCharacteristicValueObject {
   
-  @scala.inline
-  def apply(characteristicId: String, needNotify: Boolean, serviceId: String, value: ArrayBuffer): WriteCharacteristicValueObject = {
+  inline def apply(characteristicId: String, needNotify: Boolean, serviceId: String, value: ArrayBuffer): WriteCharacteristicValueObject = {
     val __obj = js.Dynamic.literal(characteristicId = characteristicId.asInstanceOf[js.Any], needNotify = needNotify.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteCharacteristicValueObject]
   }
   
-  @scala.inline
-  implicit class WriteCharacteristicValueObjectMutableBuilder[Self <: WriteCharacteristicValueObject] (val x: Self) extends AnyVal {
+  extension [Self <: WriteCharacteristicValueObject](x: Self) {
     
-    @scala.inline
-    def setCallbackId(value: Double): Self = StObject.set(x, "callbackId", value.asInstanceOf[js.Any])
+    inline def setCallbackId(value: Double): Self = StObject.set(x, "callbackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackIdUndefined: Self = StObject.set(x, "callbackId", js.undefined)
+    inline def setCallbackIdUndefined: Self = StObject.set(x, "callbackId", js.undefined)
     
-    @scala.inline
-    def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
+    inline def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedNotify(value: Boolean): Self = StObject.set(x, "needNotify", value.asInstanceOf[js.Any])
+    inline def setNeedNotify(value: Boolean): Self = StObject.set(x, "needNotify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

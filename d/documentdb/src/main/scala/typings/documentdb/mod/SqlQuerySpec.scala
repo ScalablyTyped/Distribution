@@ -14,22 +14,17 @@ trait SqlQuerySpec extends StObject {
 }
 object SqlQuerySpec {
   
-  @scala.inline
-  def apply(parameters: js.Array[SqlParameter], query: String): SqlQuerySpec = {
+  inline def apply(parameters: js.Array[SqlParameter], query: String): SqlQuerySpec = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlQuerySpec]
   }
   
-  @scala.inline
-  implicit class SqlQuerySpecMutableBuilder[Self <: SqlQuerySpec] (val x: Self) extends AnyVal {
+  extension [Self <: SqlQuerySpec](x: Self) {
     
-    @scala.inline
-    def setParameters(value: js.Array[SqlParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[SqlParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersVarargs(value: SqlParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: SqlParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

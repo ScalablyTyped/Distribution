@@ -45,8 +45,7 @@ trait FileWriter extends StObject {
 }
 object FileWriter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: () => Unit,
     error: FileError,
     fileName: String,
@@ -67,52 +66,36 @@ object FileWriter {
     __obj.asInstanceOf[FileWriter]
   }
   
-  @scala.inline
-  implicit class FileWriterMutableBuilder[Self <: FileWriter] (val x: Self) extends AnyVal {
+  extension [Self <: FileWriter](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setError(value: FileError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: FileError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnabort(value: js.Function): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
+    inline def setOnabort(value: js.Function): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnerror(value: js.Function): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
+    inline def setOnerror(value: js.Function): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnprogress(value: js.Function): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
+    inline def setOnprogress(value: js.Function): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnwrite(value: js.Function): Self = StObject.set(x, "onwrite", value.asInstanceOf[js.Any])
+    inline def setOnwrite(value: js.Function): Self = StObject.set(x, "onwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnwriteend(value: js.Function): Self = StObject.set(x, "onwriteend", value.asInstanceOf[js.Any])
+    inline def setOnwriteend(value: js.Function): Self = StObject.set(x, "onwriteend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnwritestart(value: js.Function): Self = StObject.set(x, "onwritestart", value.asInstanceOf[js.Any])
+    inline def setOnwritestart(value: js.Function): Self = StObject.set(x, "onwritestart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyState(value: js.Any): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
+    inline def setReadyState(value: js.Any): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
+    inline def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTruncate(value: Double => Unit): Self = StObject.set(x, "truncate", js.Any.fromFunction1(value))
+    inline def setTruncate(value: Double => Unit): Self = StObject.set(x, "truncate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWrite(value: js.Any => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    inline def setWrite(value: js.Any => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

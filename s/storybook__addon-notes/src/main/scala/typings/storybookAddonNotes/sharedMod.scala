@@ -27,17 +27,14 @@ object sharedMod {
   }
   object DisabledParameter {
     
-    @scala.inline
-    def apply(disable: Boolean): DisabledParameter = {
+    inline def apply(disable: Boolean): DisabledParameter = {
       val __obj = js.Dynamic.literal(disable = disable.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisabledParameter]
     }
     
-    @scala.inline
-    implicit class DisabledParameterMutableBuilder[Self <: DisabledParameter] (val x: Self) extends AnyVal {
+    extension [Self <: DisabledParameter](x: Self) {
       
-      @scala.inline
-      def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+      inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,17 +46,14 @@ object sharedMod {
   }
   object MarkdownParameter {
     
-    @scala.inline
-    def apply(markdown: String): MarkdownParameter = {
+    inline def apply(markdown: String): MarkdownParameter = {
       val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any])
       __obj.asInstanceOf[MarkdownParameter]
     }
     
-    @scala.inline
-    implicit class MarkdownParameterMutableBuilder[Self <: MarkdownParameter] (val x: Self) extends AnyVal {
+    extension [Self <: MarkdownParameter](x: Self) {
       
-      @scala.inline
-      def setMarkdown(value: String): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
+      inline def setMarkdown(value: String): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,37 +76,31 @@ object sharedMod {
   }
   object TextParameter {
     
-    @scala.inline
-    def apply(text: String): TextParameter = {
+    inline def apply(text: String): TextParameter = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextParameter]
     }
     
-    @scala.inline
-    implicit class TextParameterMutableBuilder[Self <: TextParameter] (val x: Self) extends AnyVal {
+    extension [Self <: TextParameter](x: Self) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
   trait _Parameters extends StObject
   object _Parameters {
     
-    @scala.inline
-    def DisabledParameter(disable: Boolean): typings.storybookAddonNotes.sharedMod.DisabledParameter = {
+    inline def DisabledParameter(disable: Boolean): typings.storybookAddonNotes.sharedMod.DisabledParameter = {
       val __obj = js.Dynamic.literal(disable = disable.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.storybookAddonNotes.sharedMod.DisabledParameter]
     }
     
-    @scala.inline
-    def MarkdownParameter(markdown: String): typings.storybookAddonNotes.sharedMod.MarkdownParameter = {
+    inline def MarkdownParameter(markdown: String): typings.storybookAddonNotes.sharedMod.MarkdownParameter = {
       val __obj = js.Dynamic.literal(markdown = markdown.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.storybookAddonNotes.sharedMod.MarkdownParameter]
     }
     
-    @scala.inline
-    def TextParameter(text: String): typings.storybookAddonNotes.sharedMod.TextParameter = {
+    inline def TextParameter(text: String): typings.storybookAddonNotes.sharedMod.TextParameter = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.storybookAddonNotes.sharedMod.TextParameter]
     }

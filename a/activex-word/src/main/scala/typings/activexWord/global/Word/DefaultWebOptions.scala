@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.DefaultWebOptions")
 @js.native
-class DefaultWebOptions protected ()
+/* private */ class DefaultWebOptions ()
   extends StObject
      with typings.activexWord.Word.DefaultWebOptions {
   
@@ -83,7 +83,7 @@ class DefaultWebOptions protected ()
   /* CompleteClass */
   var UseLongFileNames: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.DefaultWebOptions_typekey")
   var WordDotDefaultWebOptions_typekey: typings.activexWord.Word.DefaultWebOptions = js.native
 }

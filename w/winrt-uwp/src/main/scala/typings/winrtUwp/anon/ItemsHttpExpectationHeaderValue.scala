@@ -13,19 +13,15 @@ trait ItemsHttpExpectationHeaderValue extends StObject {
 }
 object ItemsHttpExpectationHeaderValue {
   
-  @scala.inline
-  def apply(items: HttpExpectationHeaderValue, returnValue: Double): ItemsHttpExpectationHeaderValue = {
+  inline def apply(items: HttpExpectationHeaderValue, returnValue: Double): ItemsHttpExpectationHeaderValue = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsHttpExpectationHeaderValue]
   }
   
-  @scala.inline
-  implicit class ItemsHttpExpectationHeaderValueMutableBuilder[Self <: ItemsHttpExpectationHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsHttpExpectationHeaderValue](x: Self) {
     
-    @scala.inline
-    def setItems(value: HttpExpectationHeaderValue): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: HttpExpectationHeaderValue): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

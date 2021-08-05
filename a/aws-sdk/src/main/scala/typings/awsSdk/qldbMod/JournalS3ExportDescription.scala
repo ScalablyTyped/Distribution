@@ -45,8 +45,7 @@ trait JournalS3ExportDescription extends StObject {
 }
 object JournalS3ExportDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ExclusiveEndTime: Timestamp,
     ExportCreationTime: Timestamp,
     ExportId: UniqueId,
@@ -60,31 +59,22 @@ object JournalS3ExportDescription {
     __obj.asInstanceOf[JournalS3ExportDescription]
   }
   
-  @scala.inline
-  implicit class JournalS3ExportDescriptionMutableBuilder[Self <: JournalS3ExportDescription] (val x: Self) extends AnyVal {
+  extension [Self <: JournalS3ExportDescription](x: Self) {
     
-    @scala.inline
-    def setExclusiveEndTime(value: Timestamp): Self = StObject.set(x, "ExclusiveEndTime", value.asInstanceOf[js.Any])
+    inline def setExclusiveEndTime(value: Timestamp): Self = StObject.set(x, "ExclusiveEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportCreationTime(value: Timestamp): Self = StObject.set(x, "ExportCreationTime", value.asInstanceOf[js.Any])
+    inline def setExportCreationTime(value: Timestamp): Self = StObject.set(x, "ExportCreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportId(value: UniqueId): Self = StObject.set(x, "ExportId", value.asInstanceOf[js.Any])
+    inline def setExportId(value: UniqueId): Self = StObject.set(x, "ExportId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclusiveStartTime(value: Timestamp): Self = StObject.set(x, "InclusiveStartTime", value.asInstanceOf[js.Any])
+    inline def setInclusiveStartTime(value: Timestamp): Self = StObject.set(x, "InclusiveStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLedgerName(value: LedgerName): Self = StObject.set(x, "LedgerName", value.asInstanceOf[js.Any])
+    inline def setLedgerName(value: LedgerName): Self = StObject.set(x, "LedgerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ExportConfiguration(value: S3ExportConfiguration): Self = StObject.set(x, "S3ExportConfiguration", value.asInstanceOf[js.Any])
+    inline def setS3ExportConfiguration(value: S3ExportConfiguration): Self = StObject.set(x, "S3ExportConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ExportStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ExportStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

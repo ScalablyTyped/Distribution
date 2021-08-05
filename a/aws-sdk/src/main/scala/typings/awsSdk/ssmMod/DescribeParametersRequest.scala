@@ -28,43 +28,31 @@ trait DescribeParametersRequest extends StObject {
 }
 object DescribeParametersRequest {
   
-  @scala.inline
-  def apply(): DescribeParametersRequest = {
+  inline def apply(): DescribeParametersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeParametersRequest]
   }
   
-  @scala.inline
-  implicit class DescribeParametersRequestMutableBuilder[Self <: DescribeParametersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeParametersRequest](x: Self) {
     
-    @scala.inline
-    def setFilters(value: ParametersFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: ParametersFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: ParametersFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: ParametersFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setParameterFilters(value: ParameterStringFilterList): Self = StObject.set(x, "ParameterFilters", value.asInstanceOf[js.Any])
+    inline def setParameterFilters(value: ParameterStringFilterList): Self = StObject.set(x, "ParameterFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterFiltersUndefined: Self = StObject.set(x, "ParameterFilters", js.undefined)
+    inline def setParameterFiltersUndefined: Self = StObject.set(x, "ParameterFilters", js.undefined)
     
-    @scala.inline
-    def setParameterFiltersVarargs(value: ParameterStringFilter*): Self = StObject.set(x, "ParameterFilters", js.Array(value :_*))
+    inline def setParameterFiltersVarargs(value: ParameterStringFilter*): Self = StObject.set(x, "ParameterFilters", js.Array(value :_*))
   }
 }

@@ -18,28 +18,21 @@ trait DescribeFileSystemAliasesResponse extends StObject {
 }
 object DescribeFileSystemAliasesResponse {
   
-  @scala.inline
-  def apply(): DescribeFileSystemAliasesResponse = {
+  inline def apply(): DescribeFileSystemAliasesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeFileSystemAliasesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeFileSystemAliasesResponseMutableBuilder[Self <: DescribeFileSystemAliasesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFileSystemAliasesResponse](x: Self) {
     
-    @scala.inline
-    def setAliases(value: Aliases): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: Aliases): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
+    inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
     
-    @scala.inline
-    def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

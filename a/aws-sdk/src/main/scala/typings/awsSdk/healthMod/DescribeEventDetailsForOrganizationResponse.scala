@@ -18,31 +18,23 @@ trait DescribeEventDetailsForOrganizationResponse extends StObject {
 }
 object DescribeEventDetailsForOrganizationResponse {
   
-  @scala.inline
-  def apply(): DescribeEventDetailsForOrganizationResponse = {
+  inline def apply(): DescribeEventDetailsForOrganizationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEventDetailsForOrganizationResponse]
   }
   
-  @scala.inline
-  implicit class DescribeEventDetailsForOrganizationResponseMutableBuilder[Self <: DescribeEventDetailsForOrganizationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEventDetailsForOrganizationResponse](x: Self) {
     
-    @scala.inline
-    def setFailedSet(value: DescribeEventDetailsForOrganizationFailedSet): Self = StObject.set(x, "failedSet", value.asInstanceOf[js.Any])
+    inline def setFailedSet(value: DescribeEventDetailsForOrganizationFailedSet): Self = StObject.set(x, "failedSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedSetUndefined: Self = StObject.set(x, "failedSet", js.undefined)
+    inline def setFailedSetUndefined: Self = StObject.set(x, "failedSet", js.undefined)
     
-    @scala.inline
-    def setFailedSetVarargs(value: OrganizationEventDetailsErrorItem*): Self = StObject.set(x, "failedSet", js.Array(value :_*))
+    inline def setFailedSetVarargs(value: OrganizationEventDetailsErrorItem*): Self = StObject.set(x, "failedSet", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccessfulSet(value: DescribeEventDetailsForOrganizationSuccessfulSet): Self = StObject.set(x, "successfulSet", value.asInstanceOf[js.Any])
+    inline def setSuccessfulSet(value: DescribeEventDetailsForOrganizationSuccessfulSet): Self = StObject.set(x, "successfulSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulSetUndefined: Self = StObject.set(x, "successfulSet", js.undefined)
+    inline def setSuccessfulSetUndefined: Self = StObject.set(x, "successfulSet", js.undefined)
     
-    @scala.inline
-    def setSuccessfulSetVarargs(value: OrganizationEventDetails*): Self = StObject.set(x, "successfulSet", js.Array(value :_*))
+    inline def setSuccessfulSetVarargs(value: OrganizationEventDetails*): Self = StObject.set(x, "successfulSet", js.Array(value :_*))
   }
 }

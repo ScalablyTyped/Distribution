@@ -15,81 +15,69 @@ object sparseToDenseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sparseToDense[R /* <: Rank */](
+  inline def sparseToDense[R /* <: Rank */](
     sparseIndices: Tensor[Rank],
     sparseValues: Tensor[Rank],
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def sparseToDense[R /* <: Rank */](
+  inline def sparseToDense[R /* <: Rank */](
     sparseIndices: Tensor[Rank],
     sparseValues: Tensor[Rank],
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     defaultValue: Scalar
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def sparseToDense[R /* <: Rank */](
+  inline def sparseToDense[R /* <: Rank */](
     sparseIndices: Tensor[Rank],
     sparseValues: Tensor[Rank],
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     defaultValue: ScalarLike
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def sparseToDense[R /* <: Rank */](
+  inline def sparseToDense[R /* <: Rank */](
     sparseIndices: Tensor[Rank],
     sparseValues: TensorLike,
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def sparseToDense[R /* <: Rank */](
+  inline def sparseToDense[R /* <: Rank */](
     sparseIndices: Tensor[Rank],
     sparseValues: TensorLike,
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     defaultValue: Scalar
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def sparseToDense[R /* <: Rank */](
+  inline def sparseToDense[R /* <: Rank */](
     sparseIndices: Tensor[Rank],
     sparseValues: TensorLike,
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     defaultValue: ScalarLike
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def sparseToDense[R /* <: Rank */](
+  inline def sparseToDense[R /* <: Rank */](
     sparseIndices: TensorLike,
     sparseValues: Tensor[Rank],
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def sparseToDense[R /* <: Rank */](
+  inline def sparseToDense[R /* <: Rank */](
     sparseIndices: TensorLike,
     sparseValues: Tensor[Rank],
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     defaultValue: Scalar
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def sparseToDense[R /* <: Rank */](
+  inline def sparseToDense[R /* <: Rank */](
     sparseIndices: TensorLike,
     sparseValues: Tensor[Rank],
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     defaultValue: ScalarLike
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def sparseToDense[R /* <: Rank */](
+  inline def sparseToDense[R /* <: Rank */](
     sparseIndices: TensorLike,
     sparseValues: TensorLike,
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def sparseToDense[R /* <: Rank */](
+  inline def sparseToDense[R /* <: Rank */](
     sparseIndices: TensorLike,
     sparseValues: TensorLike,
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     defaultValue: Scalar
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def sparseToDense[R /* <: Rank */](
+  inline def sparseToDense[R /* <: Rank */](
     sparseIndices: TensorLike,
     sparseValues: TensorLike,
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,

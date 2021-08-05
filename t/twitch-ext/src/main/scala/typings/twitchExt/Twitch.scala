@@ -65,26 +65,20 @@ object Twitch {
     }
     object Authorized {
       
-      @scala.inline
-      def apply(channelId: String, clientId: String, token: String, userId: String): Authorized = {
+      inline def apply(channelId: String, clientId: String, token: String, userId: String): Authorized = {
         val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
         __obj.asInstanceOf[Authorized]
       }
       
-      @scala.inline
-      implicit class AuthorizedMutableBuilder[Self <: Authorized] (val x: Self) extends AnyVal {
+      extension [Self <: Authorized](x: Self) {
         
-        @scala.inline
-        def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+        inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+        inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+        inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+        inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
       }
     }
     
@@ -112,29 +106,22 @@ object Twitch {
     }
     object BitsProduct {
       
-      @scala.inline
-      def apply(cost: BitsProductCost, displayName: String, sku: String): BitsProduct = {
+      inline def apply(cost: BitsProductCost, displayName: String, sku: String): BitsProduct = {
         val __obj = js.Dynamic.literal(cost = cost.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any])
         __obj.asInstanceOf[BitsProduct]
       }
       
-      @scala.inline
-      implicit class BitsProductMutableBuilder[Self <: BitsProduct] (val x: Self) extends AnyVal {
+      extension [Self <: BitsProduct](x: Self) {
         
-        @scala.inline
-        def setCost(value: BitsProductCost): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
+        inline def setCost(value: BitsProductCost): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+        inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInDevelopment(value: Boolean): Self = StObject.set(x, "inDevelopment", value.asInstanceOf[js.Any])
+        inline def setInDevelopment(value: Boolean): Self = StObject.set(x, "inDevelopment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInDevelopmentUndefined: Self = StObject.set(x, "inDevelopment", js.undefined)
+        inline def setInDevelopmentUndefined: Self = StObject.set(x, "inDevelopment", js.undefined)
         
-        @scala.inline
-        def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+        inline def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
       }
     }
     
@@ -152,21 +139,17 @@ object Twitch {
     }
     object BitsProductCost {
       
-      @scala.inline
-      def apply(amount: String): BitsProductCost = {
+      inline def apply(amount: String): BitsProductCost = {
         val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any])
         __obj.updateDynamic("type")("bits")
         __obj.asInstanceOf[BitsProductCost]
       }
       
-      @scala.inline
-      implicit class BitsProductCostMutableBuilder[Self <: BitsProductCost] (val x: Self) extends AnyVal {
+      extension [Self <: BitsProductCost](x: Self) {
         
-        @scala.inline
-        def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+        inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: bits): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: bits): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -207,8 +190,7 @@ object Twitch {
     }
     object BitsTransaction {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         displayName: String,
         domainID: String,
         initiator: CURRENT_USER | OTHER,
@@ -221,29 +203,21 @@ object Twitch {
         __obj.asInstanceOf[BitsTransaction]
       }
       
-      @scala.inline
-      implicit class BitsTransactionMutableBuilder[Self <: BitsTransaction] (val x: Self) extends AnyVal {
+      extension [Self <: BitsTransaction](x: Self) {
         
-        @scala.inline
-        def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+        inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDomainID(value: String): Self = StObject.set(x, "domainID", value.asInstanceOf[js.Any])
+        inline def setDomainID(value: String): Self = StObject.set(x, "domainID", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInitiator(value: CURRENT_USER | OTHER): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
+        inline def setInitiator(value: CURRENT_USER | OTHER): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProduct(value: BitsProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+        inline def setProduct(value: BitsProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
+        inline def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransactionReceipt(value: String): Self = StObject.set(x, "transactionReceipt", value.asInstanceOf[js.Any])
+        inline def setTransactionReceipt(value: String): Self = StObject.set(x, "transactionReceipt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+        inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
       }
     }
     
@@ -298,8 +272,7 @@ object Twitch {
     }
     object ClientQueryParams {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         anchor: component | panel | video_overlay,
         language: String,
         locale: String,
@@ -312,29 +285,21 @@ object Twitch {
         __obj.asInstanceOf[ClientQueryParams]
       }
       
-      @scala.inline
-      implicit class ClientQueryParamsMutableBuilder[Self <: ClientQueryParams] (val x: Self) extends AnyVal {
+      extension [Self <: ClientQueryParams](x: Self) {
         
-        @scala.inline
-        def setAnchor(value: component | panel | video_overlay): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+        inline def setAnchor(value: component | panel | video_overlay): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+        inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+        inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMode(value: config | dashboard | viewer): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: config | dashboard | viewer): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlatform(value: mobile | web): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+        inline def setPlatform(value: mobile | web): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPopout(value: `true` | `false`): Self = StObject.set(x, "popout", value.asInstanceOf[js.Any])
+        inline def setPopout(value: `true` | `false`): Self = StObject.set(x, "popout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setState(
+        inline def setState(
           value: testing | hosted_test | approved | released | ready_for_review | in_review | pending_action | uploading
         ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       }
@@ -437,8 +402,7 @@ object Twitch {
     }
     object Context {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         arePlayerControlsVisible: Boolean,
         bitrate: Double,
         bufferSize: Double,
@@ -460,62 +424,43 @@ object Twitch {
         __obj.asInstanceOf[Context]
       }
       
-      @scala.inline
-      implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+      extension [Self <: Context](x: Self) {
         
-        @scala.inline
-        def setArePlayerControlsVisible(value: Boolean): Self = StObject.set(x, "arePlayerControlsVisible", value.asInstanceOf[js.Any])
+        inline def setArePlayerControlsVisible(value: Boolean): Self = StObject.set(x, "arePlayerControlsVisible", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+        inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+        inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplayResolution(value: String): Self = StObject.set(x, "displayResolution", value.asInstanceOf[js.Any])
+        inline def setDisplayResolution(value: String): Self = StObject.set(x, "displayResolution", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGame(value: String): Self = StObject.set(x, "game", value.asInstanceOf[js.Any])
+        inline def setGame(value: String): Self = StObject.set(x, "game", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHlsLatencyBroadcaster(value: Double): Self = StObject.set(x, "hlsLatencyBroadcaster", value.asInstanceOf[js.Any])
+        inline def setHlsLatencyBroadcaster(value: Double): Self = StObject.set(x, "hlsLatencyBroadcaster", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHostingInfo(value: HostedChannelId): Self = StObject.set(x, "hostingInfo", value.asInstanceOf[js.Any])
+        inline def setHostingInfo(value: HostedChannelId): Self = StObject.set(x, "hostingInfo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHostingInfoUndefined: Self = StObject.set(x, "hostingInfo", js.undefined)
+        inline def setHostingInfoUndefined: Self = StObject.set(x, "hostingInfo", js.undefined)
         
-        @scala.inline
-        def setIsFullScreen(value: Boolean): Self = StObject.set(x, "isFullScreen", value.asInstanceOf[js.Any])
+        inline def setIsFullScreen(value: Boolean): Self = StObject.set(x, "isFullScreen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsMuted(value: Boolean): Self = StObject.set(x, "isMuted", value.asInstanceOf[js.Any])
+        inline def setIsMuted(value: Boolean): Self = StObject.set(x, "isMuted", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsPaused(value: Boolean): Self = StObject.set(x, "isPaused", value.asInstanceOf[js.Any])
+        inline def setIsPaused(value: Boolean): Self = StObject.set(x, "isPaused", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsTheatreMode(value: Boolean): Self = StObject.set(x, "isTheatreMode", value.asInstanceOf[js.Any])
+        inline def setIsTheatreMode(value: Boolean): Self = StObject.set(x, "isTheatreMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+        inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMode(value: viewer | dashboard | config): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: viewer | dashboard | config): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlaybackMode(value: video | audio | remote | `chat-only`): Self = StObject.set(x, "playbackMode", value.asInstanceOf[js.Any])
+        inline def setPlaybackMode(value: video | audio | remote | `chat-only`): Self = StObject.set(x, "playbackMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTheme(value: light | dark): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+        inline def setTheme(value: light | dark): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVideoResolution(value: String): Self = StObject.set(x, "videoResolution", value.asInstanceOf[js.Any])
+        inline def setVideoResolution(value: String): Self = StObject.set(x, "videoResolution", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+        inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
       }
     }
     
@@ -536,17 +481,14 @@ object Twitch {
     }
     object Rig {
       
-      @scala.inline
-      def apply(log: String => Unit): Rig = {
+      inline def apply(log: String => Unit): Rig = {
         val __obj = js.Dynamic.literal(log = js.Any.fromFunction1(log))
         __obj.asInstanceOf[Rig]
       }
       
-      @scala.inline
-      implicit class RigMutableBuilder[Self <: Rig] (val x: Self) extends AnyVal {
+      extension [Self <: Rig](x: Self) {
         
-        @scala.inline
-        def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+        inline def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       }
     }
     
@@ -597,8 +539,7 @@ object Twitch {
     }
     object Viewer {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         isLinked: Boolean,
         onChanged: js.Function0[Unit] => Unit,
         opaqueId: String,
@@ -609,35 +550,25 @@ object Twitch {
         __obj.asInstanceOf[Viewer]
       }
       
-      @scala.inline
-      implicit class ViewerMutableBuilder[Self <: Viewer] (val x: Self) extends AnyVal {
+      extension [Self <: Viewer](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdNull: Self = StObject.set(x, "id", null)
+        inline def setIdNull: Self = StObject.set(x, "id", null)
         
-        @scala.inline
-        def setIsLinked(value: Boolean): Self = StObject.set(x, "isLinked", value.asInstanceOf[js.Any])
+        inline def setIsLinked(value: Boolean): Self = StObject.set(x, "isLinked", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnChanged(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onChanged", js.Any.fromFunction1(value))
+        inline def setOnChanged(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onChanged", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOpaqueId(value: String): Self = StObject.set(x, "opaqueId", value.asInstanceOf[js.Any])
+        inline def setOpaqueId(value: String): Self = StObject.set(x, "opaqueId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+        inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
+        inline def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubscriptionStatus(value: ViewerSubscriptionStatus): Self = StObject.set(x, "subscriptionStatus", value.asInstanceOf[js.Any])
+        inline def setSubscriptionStatus(value: ViewerSubscriptionStatus): Self = StObject.set(x, "subscriptionStatus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubscriptionStatusNull: Self = StObject.set(x, "subscriptionStatus", null)
+        inline def setSubscriptionStatusNull: Self = StObject.set(x, "subscriptionStatus", null)
       }
     }
     
@@ -651,17 +582,14 @@ object Twitch {
     }
     object ViewerSubscriptionStatus {
       
-      @scala.inline
-      def apply(tier: String): ViewerSubscriptionStatus = {
+      inline def apply(tier: String): ViewerSubscriptionStatus = {
         val __obj = js.Dynamic.literal(tier = tier.asInstanceOf[js.Any])
         __obj.asInstanceOf[ViewerSubscriptionStatus]
       }
       
-      @scala.inline
-      implicit class ViewerSubscriptionStatusMutableBuilder[Self <: ViewerSubscriptionStatus] (val x: Self) extends AnyVal {
+      extension [Self <: ViewerSubscriptionStatus](x: Self) {
         
-        @scala.inline
-        def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
+        inline def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
       }
     }
     
@@ -693,14 +621,11 @@ object Twitch {
       trait ChangedKey extends StObject
       object ChangedKey {
         
-        @scala.inline
-        def isBitsEnabled: typings.twitchExt.twitchExtStrings.isBitsEnabled = "isBitsEnabled".asInstanceOf[typings.twitchExt.twitchExtStrings.isBitsEnabled]
+        inline def isBitsEnabled: typings.twitchExt.twitchExtStrings.isBitsEnabled = "isBitsEnabled".asInstanceOf[typings.twitchExt.twitchExtStrings.isBitsEnabled]
         
-        @scala.inline
-        def isChatEnabled: typings.twitchExt.twitchExtStrings.isChatEnabled = "isChatEnabled".asInstanceOf[typings.twitchExt.twitchExtStrings.isChatEnabled]
+        inline def isChatEnabled: typings.twitchExt.twitchExtStrings.isChatEnabled = "isChatEnabled".asInstanceOf[typings.twitchExt.twitchExtStrings.isChatEnabled]
         
-        @scala.inline
-        def isSubscriptionStatusAvailable: typings.twitchExt.twitchExtStrings.isSubscriptionStatusAvailable = "isSubscriptionStatusAvailable".asInstanceOf[typings.twitchExt.twitchExtStrings.isSubscriptionStatusAvailable]
+        inline def isSubscriptionStatusAvailable: typings.twitchExt.twitchExtStrings.isSubscriptionStatusAvailable = "isSubscriptionStatusAvailable".asInstanceOf[typings.twitchExt.twitchExtStrings.isSubscriptionStatusAvailable]
       }
     }
   }

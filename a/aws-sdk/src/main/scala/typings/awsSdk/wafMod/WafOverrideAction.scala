@@ -13,16 +13,13 @@ trait WafOverrideAction extends StObject {
 }
 object WafOverrideAction {
   
-  @scala.inline
-  def apply(Type: WafOverrideActionType): WafOverrideAction = {
+  inline def apply(Type: WafOverrideActionType): WafOverrideAction = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[WafOverrideAction]
   }
   
-  @scala.inline
-  implicit class WafOverrideActionMutableBuilder[Self <: WafOverrideAction] (val x: Self) extends AnyVal {
+  extension [Self <: WafOverrideAction](x: Self) {
     
-    @scala.inline
-    def setType(value: WafOverrideActionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: WafOverrideActionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,9 +18,7 @@ object detailsHeaderStylesMod {
   @js.native
   val HEADER_HEIGHT: /* 42 */ Double = js.native
   
-  @scala.inline
-  def getCellStyles(props: CellStyleProps): IStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("getCellStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IStyle]
+  inline def getCellStyles(props: CellStyleProps): IStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("getCellStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IStyle]
   
-  @scala.inline
-  def getStyles(props: IDetailsHeaderStyleProps): IDetailsHeaderStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsHeaderStyles]
+  inline def getStyles(props: IDetailsHeaderStyleProps): IDetailsHeaderStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsHeaderStyles]
 }

@@ -14,6 +14,5 @@ object generateRangePickerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[DateType](generateConfig: GenerateConfig[DateType]): ComponentClass[RangePickerProps[DateType], ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(generateConfig.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[RangePickerProps[DateType], ComponentState]]
+  inline def default[DateType](generateConfig: GenerateConfig[DateType]): ComponentClass[RangePickerProps[DateType], ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(generateConfig.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[RangePickerProps[DateType], ComponentState]]
 }

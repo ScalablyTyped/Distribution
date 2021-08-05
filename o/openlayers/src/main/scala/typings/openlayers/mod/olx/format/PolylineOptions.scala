@@ -13,25 +13,19 @@ trait PolylineOptions extends StObject {
 }
 object PolylineOptions {
   
-  @scala.inline
-  def apply(): PolylineOptions = {
+  inline def apply(): PolylineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolylineOptions]
   }
   
-  @scala.inline
-  implicit class PolylineOptionsMutableBuilder[Self <: PolylineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PolylineOptions](x: Self) {
     
-    @scala.inline
-    def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+    inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
+    inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
     
-    @scala.inline
-    def setGeometryLayout(value: GeometryLayout): Self = StObject.set(x, "geometryLayout", value.asInstanceOf[js.Any])
+    inline def setGeometryLayout(value: GeometryLayout): Self = StObject.set(x, "geometryLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryLayoutUndefined: Self = StObject.set(x, "geometryLayout", js.undefined)
+    inline def setGeometryLayoutUndefined: Self = StObject.set(x, "geometryLayout", js.undefined)
   }
 }

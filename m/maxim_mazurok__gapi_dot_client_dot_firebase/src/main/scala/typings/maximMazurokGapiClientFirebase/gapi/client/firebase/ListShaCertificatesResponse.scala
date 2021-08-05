@@ -11,22 +11,17 @@ trait ListShaCertificatesResponse extends StObject {
 }
 object ListShaCertificatesResponse {
   
-  @scala.inline
-  def apply(): ListShaCertificatesResponse = {
+  inline def apply(): ListShaCertificatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListShaCertificatesResponse]
   }
   
-  @scala.inline
-  implicit class ListShaCertificatesResponseMutableBuilder[Self <: ListShaCertificatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListShaCertificatesResponse](x: Self) {
     
-    @scala.inline
-    def setCertificates(value: js.Array[ShaCertificate]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
+    inline def setCertificates(value: js.Array[ShaCertificate]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
+    inline def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
     
-    @scala.inline
-    def setCertificatesVarargs(value: ShaCertificate*): Self = StObject.set(x, "certificates", js.Array(value :_*))
+    inline def setCertificatesVarargs(value: ShaCertificate*): Self = StObject.set(x, "certificates", js.Array(value :_*))
   }
 }

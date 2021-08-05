@@ -28,34 +28,25 @@ trait ListCertificatesByCARequest extends StObject {
 }
 object ListCertificatesByCARequest {
   
-  @scala.inline
-  def apply(caCertificateId: CertificateId): ListCertificatesByCARequest = {
+  inline def apply(caCertificateId: CertificateId): ListCertificatesByCARequest = {
     val __obj = js.Dynamic.literal(caCertificateId = caCertificateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCertificatesByCARequest]
   }
   
-  @scala.inline
-  implicit class ListCertificatesByCARequestMutableBuilder[Self <: ListCertificatesByCARequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListCertificatesByCARequest](x: Self) {
     
-    @scala.inline
-    def setAscendingOrder(value: AscendingOrder): Self = StObject.set(x, "ascendingOrder", value.asInstanceOf[js.Any])
+    inline def setAscendingOrder(value: AscendingOrder): Self = StObject.set(x, "ascendingOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAscendingOrderUndefined: Self = StObject.set(x, "ascendingOrder", js.undefined)
+    inline def setAscendingOrderUndefined: Self = StObject.set(x, "ascendingOrder", js.undefined)
     
-    @scala.inline
-    def setCaCertificateId(value: CertificateId): Self = StObject.set(x, "caCertificateId", value.asInstanceOf[js.Any])
+    inline def setCaCertificateId(value: CertificateId): Self = StObject.set(x, "caCertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
   }
 }

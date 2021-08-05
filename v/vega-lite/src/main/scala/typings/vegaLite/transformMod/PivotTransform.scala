@@ -39,40 +39,29 @@ trait PivotTransform
 }
 object PivotTransform {
   
-  @scala.inline
-  def apply(pivot: FieldName, value: FieldName): PivotTransform = {
+  inline def apply(pivot: FieldName, value: FieldName): PivotTransform = {
     val __obj = js.Dynamic.literal(pivot = pivot.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotTransform]
   }
   
-  @scala.inline
-  implicit class PivotTransformMutableBuilder[Self <: PivotTransform] (val x: Self) extends AnyVal {
+  extension [Self <: PivotTransform](x: Self) {
     
-    @scala.inline
-    def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
+    inline def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
+    inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    @scala.inline
-    def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+    inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
     
-    @scala.inline
-    def setPivot(value: FieldName): Self = StObject.set(x, "pivot", value.asInstanceOf[js.Any])
+    inline def setPivot(value: FieldName): Self = StObject.set(x, "pivot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: FieldName): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: FieldName): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

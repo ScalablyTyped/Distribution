@@ -48,61 +48,43 @@ trait BundleTask extends StObject {
 }
 object BundleTask {
   
-  @scala.inline
-  def apply(): BundleTask = {
+  inline def apply(): BundleTask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BundleTask]
   }
   
-  @scala.inline
-  implicit class BundleTaskMutableBuilder[Self <: BundleTask] (val x: Self) extends AnyVal {
+  extension [Self <: BundleTask](x: Self) {
     
-    @scala.inline
-    def setBundleId(value: String): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: String): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdUndefined: Self = StObject.set(x, "BundleId", js.undefined)
+    inline def setBundleIdUndefined: Self = StObject.set(x, "BundleId", js.undefined)
     
-    @scala.inline
-    def setBundleTaskError(value: BundleTaskError): Self = StObject.set(x, "BundleTaskError", value.asInstanceOf[js.Any])
+    inline def setBundleTaskError(value: BundleTaskError): Self = StObject.set(x, "BundleTaskError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleTaskErrorUndefined: Self = StObject.set(x, "BundleTaskError", js.undefined)
+    inline def setBundleTaskErrorUndefined: Self = StObject.set(x, "BundleTaskError", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setProgress(value: String): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: String): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setState(value: BundleTaskState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: BundleTaskState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setStorage(value: Storage): Self = StObject.set(x, "Storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: Storage): Self = StObject.set(x, "Storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageUndefined: Self = StObject.set(x, "Storage", js.undefined)
+    inline def setStorageUndefined: Self = StObject.set(x, "Storage", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: DateTime): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: DateTime): Self = StObject.set(x, "UpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "UpdateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "UpdateTime", js.undefined)
   }
 }

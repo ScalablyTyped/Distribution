@@ -18,25 +18,19 @@ trait Predecessor extends StObject {
 }
 object Predecessor {
   
-  @scala.inline
-  def apply(): Predecessor = {
+  inline def apply(): Predecessor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Predecessor]
   }
   
-  @scala.inline
-  implicit class PredecessorMutableBuilder[Self <: Predecessor] (val x: Self) extends AnyVal {
+  extension [Self <: Predecessor](x: Self) {
     
-    @scala.inline
-    def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
-    @scala.inline
-    def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunIdUndefined: Self = StObject.set(x, "RunId", js.undefined)
+    inline def setRunIdUndefined: Self = StObject.set(x, "RunId", js.undefined)
   }
 }

@@ -49,32 +49,24 @@ object tabbableMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
+        inline def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
+        inline def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
         
-        @scala.inline
-        def setOnNavigate(value: (/* nextIndex */ Double, /* focusedElement */ HTMLElement) => Unit): Self = StObject.set(x, "onNavigate", js.Any.fromFunction2(value))
+        inline def setOnNavigate(value: (/* nextIndex */ Double, /* focusedElement */ HTMLElement) => Unit): Self = StObject.set(x, "onNavigate", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnNavigateUndefined: Self = StObject.set(x, "onNavigate", js.undefined)
+        inline def setOnNavigateUndefined: Self = StObject.set(x, "onNavigate", js.undefined)
       }
     }
   }

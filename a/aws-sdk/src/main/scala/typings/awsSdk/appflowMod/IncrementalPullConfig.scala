@@ -13,19 +13,15 @@ trait IncrementalPullConfig extends StObject {
 }
 object IncrementalPullConfig {
   
-  @scala.inline
-  def apply(): IncrementalPullConfig = {
+  inline def apply(): IncrementalPullConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncrementalPullConfig]
   }
   
-  @scala.inline
-  implicit class IncrementalPullConfigMutableBuilder[Self <: IncrementalPullConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IncrementalPullConfig](x: Self) {
     
-    @scala.inline
-    def setDatetimeTypeFieldName(value: DatetimeTypeFieldName): Self = StObject.set(x, "datetimeTypeFieldName", value.asInstanceOf[js.Any])
+    inline def setDatetimeTypeFieldName(value: DatetimeTypeFieldName): Self = StObject.set(x, "datetimeTypeFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatetimeTypeFieldNameUndefined: Self = StObject.set(x, "datetimeTypeFieldName", js.undefined)
+    inline def setDatetimeTypeFieldNameUndefined: Self = StObject.set(x, "datetimeTypeFieldName", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait Id3Insertion extends StObject {
 }
 object Id3Insertion {
   
-  @scala.inline
-  def apply(): Id3Insertion = {
+  inline def apply(): Id3Insertion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Id3Insertion]
   }
   
-  @scala.inline
-  implicit class Id3InsertionMutableBuilder[Self <: Id3Insertion] (val x: Self) extends AnyVal {
+  extension [Self <: Id3Insertion](x: Self) {
     
-    @scala.inline
-    def setId3(value: stringPatternAZaZ0902): Self = StObject.set(x, "Id3", value.asInstanceOf[js.Any])
+    inline def setId3(value: stringPatternAZaZ0902): Self = StObject.set(x, "Id3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId3Undefined: Self = StObject.set(x, "Id3", js.undefined)
+    inline def setId3Undefined: Self = StObject.set(x, "Id3", js.undefined)
     
-    @scala.inline
-    def setTimecode(value: stringPattern010920405090509092): Self = StObject.set(x, "Timecode", value.asInstanceOf[js.Any])
+    inline def setTimecode(value: stringPattern010920405090509092): Self = StObject.set(x, "Timecode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimecodeUndefined: Self = StObject.set(x, "Timecode", js.undefined)
+    inline def setTimecodeUndefined: Self = StObject.set(x, "Timecode", js.undefined)
   }
 }

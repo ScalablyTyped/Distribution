@@ -13,19 +13,15 @@ trait BufferInt16ArrayBytesWrittenNumber extends StObject {
 }
 object BufferInt16ArrayBytesWrittenNumber {
   
-  @scala.inline
-  def apply(buffer: Int16Array, bytesWritten: Double): BufferInt16ArrayBytesWrittenNumber = {
+  inline def apply(buffer: Int16Array, bytesWritten: Double): BufferInt16ArrayBytesWrittenNumber = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesWritten = bytesWritten.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferInt16ArrayBytesWrittenNumber]
   }
   
-  @scala.inline
-  implicit class BufferInt16ArrayBytesWrittenNumberMutableBuilder[Self <: BufferInt16ArrayBytesWrittenNumber] (val x: Self) extends AnyVal {
+  extension [Self <: BufferInt16ArrayBytesWrittenNumber](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: Int16Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: Int16Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
+    inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
   }
 }

@@ -111,14 +111,11 @@ object enumsMod {
   trait AutoPlacement extends StObject
   object AutoPlacement {
     
-    @scala.inline
-    def auto: typings.popperjsCore.popperjsCoreStrings.auto = "auto".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.auto]
+    inline def auto: typings.popperjsCore.popperjsCoreStrings.auto = "auto".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.auto]
     
-    @scala.inline
-    def `auto-end`: typings.popperjsCore.popperjsCoreStrings.`auto-end` = "auto-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`auto-end`]
+    inline def `auto-end`: typings.popperjsCore.popperjsCoreStrings.`auto-end` = "auto-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`auto-end`]
     
-    @scala.inline
-    def `auto-start`: typings.popperjsCore.popperjsCoreStrings.`auto-start` = "auto-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`auto-start`]
+    inline def `auto-start`: typings.popperjsCore.popperjsCoreStrings.`auto-start` = "auto-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`auto-start`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -130,17 +127,13 @@ object enumsMod {
   trait BasePlacement extends StObject
   object BasePlacement {
     
-    @scala.inline
-    def bottom: typings.popperjsCore.popperjsCoreStrings.bottom = "bottom".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.bottom]
+    inline def bottom: typings.popperjsCore.popperjsCoreStrings.bottom = "bottom".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.bottom]
     
-    @scala.inline
-    def left: typings.popperjsCore.popperjsCoreStrings.left = "left".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.left]
+    inline def left: typings.popperjsCore.popperjsCoreStrings.left = "left".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.left]
     
-    @scala.inline
-    def right: typings.popperjsCore.popperjsCoreStrings.right = "right".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.right]
+    inline def right: typings.popperjsCore.popperjsCoreStrings.right = "right".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.right]
     
-    @scala.inline
-    def top: typings.popperjsCore.popperjsCoreStrings.top = "top".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.top]
+    inline def top: typings.popperjsCore.popperjsCoreStrings.top = "top".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.top]
   }
   
   type Boundary = HTMLElement | js.Array[HTMLElement] | typings.popperjsCore.popperjsCoreStrings.clippingParents
@@ -162,41 +155,29 @@ object enumsMod {
   trait ComputedPlacement extends StObject
   object ComputedPlacement {
     
-    @scala.inline
-    def bottom: typings.popperjsCore.popperjsCoreStrings.bottom = "bottom".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.bottom]
+    inline def bottom: typings.popperjsCore.popperjsCoreStrings.bottom = "bottom".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.bottom]
     
-    @scala.inline
-    def `bottom-end`: typings.popperjsCore.popperjsCoreStrings.`bottom-end` = "bottom-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`bottom-end`]
+    inline def `bottom-end`: typings.popperjsCore.popperjsCoreStrings.`bottom-end` = "bottom-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`bottom-end`]
     
-    @scala.inline
-    def `bottom-start`: typings.popperjsCore.popperjsCoreStrings.`bottom-start` = "bottom-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`bottom-start`]
+    inline def `bottom-start`: typings.popperjsCore.popperjsCoreStrings.`bottom-start` = "bottom-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`bottom-start`]
     
-    @scala.inline
-    def left: typings.popperjsCore.popperjsCoreStrings.left = "left".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.left]
+    inline def left: typings.popperjsCore.popperjsCoreStrings.left = "left".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.left]
     
-    @scala.inline
-    def `left-end`: typings.popperjsCore.popperjsCoreStrings.`left-end` = "left-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`left-end`]
+    inline def `left-end`: typings.popperjsCore.popperjsCoreStrings.`left-end` = "left-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`left-end`]
     
-    @scala.inline
-    def `left-start`: typings.popperjsCore.popperjsCoreStrings.`left-start` = "left-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`left-start`]
+    inline def `left-start`: typings.popperjsCore.popperjsCoreStrings.`left-start` = "left-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`left-start`]
     
-    @scala.inline
-    def right: typings.popperjsCore.popperjsCoreStrings.right = "right".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.right]
+    inline def right: typings.popperjsCore.popperjsCoreStrings.right = "right".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.right]
     
-    @scala.inline
-    def `right-end`: typings.popperjsCore.popperjsCoreStrings.`right-end` = "right-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`right-end`]
+    inline def `right-end`: typings.popperjsCore.popperjsCoreStrings.`right-end` = "right-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`right-end`]
     
-    @scala.inline
-    def `right-start`: typings.popperjsCore.popperjsCoreStrings.`right-start` = "right-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`right-start`]
+    inline def `right-start`: typings.popperjsCore.popperjsCoreStrings.`right-start` = "right-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`right-start`]
     
-    @scala.inline
-    def top: typings.popperjsCore.popperjsCoreStrings.top = "top".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.top]
+    inline def top: typings.popperjsCore.popperjsCoreStrings.top = "top".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.top]
     
-    @scala.inline
-    def `top-end`: typings.popperjsCore.popperjsCoreStrings.`top-end` = "top-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`top-end`]
+    inline def `top-end`: typings.popperjsCore.popperjsCoreStrings.`top-end` = "top-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`top-end`]
     
-    @scala.inline
-    def `top-start`: typings.popperjsCore.popperjsCoreStrings.`top-start` = "top-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`top-start`]
+    inline def `top-start`: typings.popperjsCore.popperjsCoreStrings.`top-start` = "top-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`top-start`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -206,11 +187,9 @@ object enumsMod {
   trait Context extends StObject
   object Context {
     
-    @scala.inline
-    def popper: typings.popperjsCore.popperjsCoreStrings.popper = "popper".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.popper]
+    inline def popper: typings.popperjsCore.popperjsCoreStrings.popper = "popper".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.popper]
     
-    @scala.inline
-    def reference: typings.popperjsCore.popperjsCoreStrings.reference = "reference".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.reference]
+    inline def reference: typings.popperjsCore.popperjsCoreStrings.reference = "reference".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.reference]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -227,32 +206,23 @@ object enumsMod {
   trait ModifierPhases_ extends StObject
   object ModifierPhases_ {
     
-    @scala.inline
-    def afterMain: typings.popperjsCore.popperjsCoreStrings.afterMain = "afterMain".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.afterMain]
+    inline def afterMain: typings.popperjsCore.popperjsCoreStrings.afterMain = "afterMain".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.afterMain]
     
-    @scala.inline
-    def afterRead: typings.popperjsCore.popperjsCoreStrings.afterRead = "afterRead".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.afterRead]
+    inline def afterRead: typings.popperjsCore.popperjsCoreStrings.afterRead = "afterRead".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.afterRead]
     
-    @scala.inline
-    def afterWrite: typings.popperjsCore.popperjsCoreStrings.afterWrite = "afterWrite".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.afterWrite]
+    inline def afterWrite: typings.popperjsCore.popperjsCoreStrings.afterWrite = "afterWrite".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.afterWrite]
     
-    @scala.inline
-    def beforeMain: typings.popperjsCore.popperjsCoreStrings.beforeMain = "beforeMain".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.beforeMain]
+    inline def beforeMain: typings.popperjsCore.popperjsCoreStrings.beforeMain = "beforeMain".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.beforeMain]
     
-    @scala.inline
-    def beforeRead: typings.popperjsCore.popperjsCoreStrings.beforeRead = "beforeRead".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.beforeRead]
+    inline def beforeRead: typings.popperjsCore.popperjsCoreStrings.beforeRead = "beforeRead".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.beforeRead]
     
-    @scala.inline
-    def beforeWrite: typings.popperjsCore.popperjsCoreStrings.beforeWrite = "beforeWrite".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.beforeWrite]
+    inline def beforeWrite: typings.popperjsCore.popperjsCoreStrings.beforeWrite = "beforeWrite".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.beforeWrite]
     
-    @scala.inline
-    def main: typings.popperjsCore.popperjsCoreStrings.main = "main".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.main]
+    inline def main: typings.popperjsCore.popperjsCoreStrings.main = "main".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.main]
     
-    @scala.inline
-    def read: typings.popperjsCore.popperjsCoreStrings.read = "read".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.read]
+    inline def read: typings.popperjsCore.popperjsCoreStrings.read = "read".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.read]
     
-    @scala.inline
-    def write: typings.popperjsCore.popperjsCoreStrings.write = "write".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.write]
+    inline def write: typings.popperjsCore.popperjsCoreStrings.write = "write".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.write]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -275,50 +245,35 @@ object enumsMod {
   trait Placement extends StObject
   object Placement {
     
-    @scala.inline
-    def auto: typings.popperjsCore.popperjsCoreStrings.auto = "auto".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.auto]
+    inline def auto: typings.popperjsCore.popperjsCoreStrings.auto = "auto".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.auto]
     
-    @scala.inline
-    def `auto-end`: typings.popperjsCore.popperjsCoreStrings.`auto-end` = "auto-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`auto-end`]
+    inline def `auto-end`: typings.popperjsCore.popperjsCoreStrings.`auto-end` = "auto-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`auto-end`]
     
-    @scala.inline
-    def `auto-start`: typings.popperjsCore.popperjsCoreStrings.`auto-start` = "auto-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`auto-start`]
+    inline def `auto-start`: typings.popperjsCore.popperjsCoreStrings.`auto-start` = "auto-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`auto-start`]
     
-    @scala.inline
-    def bottom: typings.popperjsCore.popperjsCoreStrings.bottom = "bottom".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.bottom]
+    inline def bottom: typings.popperjsCore.popperjsCoreStrings.bottom = "bottom".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.bottom]
     
-    @scala.inline
-    def `bottom-end`: typings.popperjsCore.popperjsCoreStrings.`bottom-end` = "bottom-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`bottom-end`]
+    inline def `bottom-end`: typings.popperjsCore.popperjsCoreStrings.`bottom-end` = "bottom-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`bottom-end`]
     
-    @scala.inline
-    def `bottom-start`: typings.popperjsCore.popperjsCoreStrings.`bottom-start` = "bottom-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`bottom-start`]
+    inline def `bottom-start`: typings.popperjsCore.popperjsCoreStrings.`bottom-start` = "bottom-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`bottom-start`]
     
-    @scala.inline
-    def left: typings.popperjsCore.popperjsCoreStrings.left = "left".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.left]
+    inline def left: typings.popperjsCore.popperjsCoreStrings.left = "left".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.left]
     
-    @scala.inline
-    def `left-end`: typings.popperjsCore.popperjsCoreStrings.`left-end` = "left-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`left-end`]
+    inline def `left-end`: typings.popperjsCore.popperjsCoreStrings.`left-end` = "left-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`left-end`]
     
-    @scala.inline
-    def `left-start`: typings.popperjsCore.popperjsCoreStrings.`left-start` = "left-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`left-start`]
+    inline def `left-start`: typings.popperjsCore.popperjsCoreStrings.`left-start` = "left-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`left-start`]
     
-    @scala.inline
-    def right: typings.popperjsCore.popperjsCoreStrings.right = "right".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.right]
+    inline def right: typings.popperjsCore.popperjsCoreStrings.right = "right".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.right]
     
-    @scala.inline
-    def `right-end`: typings.popperjsCore.popperjsCoreStrings.`right-end` = "right-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`right-end`]
+    inline def `right-end`: typings.popperjsCore.popperjsCoreStrings.`right-end` = "right-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`right-end`]
     
-    @scala.inline
-    def `right-start`: typings.popperjsCore.popperjsCoreStrings.`right-start` = "right-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`right-start`]
+    inline def `right-start`: typings.popperjsCore.popperjsCoreStrings.`right-start` = "right-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`right-start`]
     
-    @scala.inline
-    def top: typings.popperjsCore.popperjsCoreStrings.top = "top".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.top]
+    inline def top: typings.popperjsCore.popperjsCoreStrings.top = "top".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.top]
     
-    @scala.inline
-    def `top-end`: typings.popperjsCore.popperjsCoreStrings.`top-end` = "top-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`top-end`]
+    inline def `top-end`: typings.popperjsCore.popperjsCoreStrings.`top-end` = "top-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`top-end`]
     
-    @scala.inline
-    def `top-start`: typings.popperjsCore.popperjsCoreStrings.`top-start` = "top-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`top-start`]
+    inline def `top-start`: typings.popperjsCore.popperjsCoreStrings.`top-start` = "top-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`top-start`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -328,11 +283,9 @@ object enumsMod {
   trait RootBoundary extends StObject
   object RootBoundary {
     
-    @scala.inline
-    def document: typings.popperjsCore.popperjsCoreStrings.document = "document".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.document]
+    inline def document: typings.popperjsCore.popperjsCoreStrings.document = "document".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.document]
     
-    @scala.inline
-    def viewport: typings.popperjsCore.popperjsCoreStrings.viewport = "viewport".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.viewport]
+    inline def viewport: typings.popperjsCore.popperjsCoreStrings.viewport = "viewport".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.viewport]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -342,11 +295,9 @@ object enumsMod {
   trait Variation extends StObject
   object Variation {
     
-    @scala.inline
-    def end: typings.popperjsCore.popperjsCoreStrings.end = "end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.end]
+    inline def end: typings.popperjsCore.popperjsCoreStrings.end = "end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.end]
     
-    @scala.inline
-    def start: typings.popperjsCore.popperjsCoreStrings.start = "start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.start]
+    inline def start: typings.popperjsCore.popperjsCoreStrings.start = "start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.start]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -362,28 +313,20 @@ object enumsMod {
   trait VariationPlacement extends StObject
   object VariationPlacement {
     
-    @scala.inline
-    def `bottom-end`: typings.popperjsCore.popperjsCoreStrings.`bottom-end` = "bottom-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`bottom-end`]
+    inline def `bottom-end`: typings.popperjsCore.popperjsCoreStrings.`bottom-end` = "bottom-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`bottom-end`]
     
-    @scala.inline
-    def `bottom-start`: typings.popperjsCore.popperjsCoreStrings.`bottom-start` = "bottom-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`bottom-start`]
+    inline def `bottom-start`: typings.popperjsCore.popperjsCoreStrings.`bottom-start` = "bottom-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`bottom-start`]
     
-    @scala.inline
-    def `left-end`: typings.popperjsCore.popperjsCoreStrings.`left-end` = "left-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`left-end`]
+    inline def `left-end`: typings.popperjsCore.popperjsCoreStrings.`left-end` = "left-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`left-end`]
     
-    @scala.inline
-    def `left-start`: typings.popperjsCore.popperjsCoreStrings.`left-start` = "left-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`left-start`]
+    inline def `left-start`: typings.popperjsCore.popperjsCoreStrings.`left-start` = "left-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`left-start`]
     
-    @scala.inline
-    def `right-end`: typings.popperjsCore.popperjsCoreStrings.`right-end` = "right-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`right-end`]
+    inline def `right-end`: typings.popperjsCore.popperjsCoreStrings.`right-end` = "right-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`right-end`]
     
-    @scala.inline
-    def `right-start`: typings.popperjsCore.popperjsCoreStrings.`right-start` = "right-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`right-start`]
+    inline def `right-start`: typings.popperjsCore.popperjsCoreStrings.`right-start` = "right-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`right-start`]
     
-    @scala.inline
-    def `top-end`: typings.popperjsCore.popperjsCoreStrings.`top-end` = "top-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`top-end`]
+    inline def `top-end`: typings.popperjsCore.popperjsCoreStrings.`top-end` = "top-end".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`top-end`]
     
-    @scala.inline
-    def `top-start`: typings.popperjsCore.popperjsCoreStrings.`top-start` = "top-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`top-start`]
+    inline def `top-start`: typings.popperjsCore.popperjsCoreStrings.`top-start` = "top-start".asInstanceOf[typings.popperjsCore.popperjsCoreStrings.`top-start`]
   }
 }

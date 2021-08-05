@@ -395,238 +395,161 @@ trait IBodyDefinition extends StObject {
 }
 object IBodyDefinition {
   
-  @scala.inline
-  def apply(): IBodyDefinition = {
+  inline def apply(): IBodyDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBodyDefinition]
   }
   
-  @scala.inline
-  implicit class IBodyDefinitionMutableBuilder[Self <: IBodyDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: IBodyDefinition](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setAngularSpeed(value: Double): Self = StObject.set(x, "angularSpeed", value.asInstanceOf[js.Any])
+    inline def setAngularSpeed(value: Double): Self = StObject.set(x, "angularSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngularSpeedUndefined: Self = StObject.set(x, "angularSpeed", js.undefined)
+    inline def setAngularSpeedUndefined: Self = StObject.set(x, "angularSpeed", js.undefined)
     
-    @scala.inline
-    def setAngularVelocity(value: Double): Self = StObject.set(x, "angularVelocity", value.asInstanceOf[js.Any])
+    inline def setAngularVelocity(value: Double): Self = StObject.set(x, "angularVelocity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngularVelocityUndefined: Self = StObject.set(x, "angularVelocity", js.undefined)
+    inline def setAngularVelocityUndefined: Self = StObject.set(x, "angularVelocity", js.undefined)
     
-    @scala.inline
-    def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
+    inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
-    @scala.inline
-    def setAxes(value: js.Array[Vector]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+    inline def setAxes(value: js.Array[Vector]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+    inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
-    @scala.inline
-    def setAxesVarargs(value: Vector*): Self = StObject.set(x, "axes", js.Array(value :_*))
+    inline def setAxesVarargs(value: Vector*): Self = StObject.set(x, "axes", js.Array(value :_*))
     
-    @scala.inline
-    def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    @scala.inline
-    def setCollisionFilter(value: ICollisionFilter): Self = StObject.set(x, "collisionFilter", value.asInstanceOf[js.Any])
+    inline def setCollisionFilter(value: ICollisionFilter): Self = StObject.set(x, "collisionFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollisionFilterUndefined: Self = StObject.set(x, "collisionFilter", js.undefined)
+    inline def setCollisionFilterUndefined: Self = StObject.set(x, "collisionFilter", js.undefined)
     
-    @scala.inline
-    def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+    inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
+    inline def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
     
-    @scala.inline
-    def setForce(value: Vector): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Vector): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
+    inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrictionAir(value: Double): Self = StObject.set(x, "frictionAir", value.asInstanceOf[js.Any])
+    inline def setFrictionAir(value: Double): Self = StObject.set(x, "frictionAir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrictionAirUndefined: Self = StObject.set(x, "frictionAir", js.undefined)
+    inline def setFrictionAirUndefined: Self = StObject.set(x, "frictionAir", js.undefined)
     
-    @scala.inline
-    def setFrictionStatic(value: Double): Self = StObject.set(x, "frictionStatic", value.asInstanceOf[js.Any])
+    inline def setFrictionStatic(value: Double): Self = StObject.set(x, "frictionStatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrictionStaticUndefined: Self = StObject.set(x, "frictionStatic", js.undefined)
+    inline def setFrictionStaticUndefined: Self = StObject.set(x, "frictionStatic", js.undefined)
     
-    @scala.inline
-    def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
+    inline def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInertia(value: Double): Self = StObject.set(x, "inertia", value.asInstanceOf[js.Any])
+    inline def setInertia(value: Double): Self = StObject.set(x, "inertia", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInertiaUndefined: Self = StObject.set(x, "inertia", js.undefined)
+    inline def setInertiaUndefined: Self = StObject.set(x, "inertia", js.undefined)
     
-    @scala.inline
-    def setInverseInertia(value: Double): Self = StObject.set(x, "inverseInertia", value.asInstanceOf[js.Any])
+    inline def setInverseInertia(value: Double): Self = StObject.set(x, "inverseInertia", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInverseInertiaUndefined: Self = StObject.set(x, "inverseInertia", js.undefined)
+    inline def setInverseInertiaUndefined: Self = StObject.set(x, "inverseInertia", js.undefined)
     
-    @scala.inline
-    def setInverseMass(value: Double): Self = StObject.set(x, "inverseMass", value.asInstanceOf[js.Any])
+    inline def setInverseMass(value: Double): Self = StObject.set(x, "inverseMass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInverseMassUndefined: Self = StObject.set(x, "inverseMass", js.undefined)
+    inline def setInverseMassUndefined: Self = StObject.set(x, "inverseMass", js.undefined)
     
-    @scala.inline
-    def setIsSensor(value: Boolean): Self = StObject.set(x, "isSensor", value.asInstanceOf[js.Any])
+    inline def setIsSensor(value: Boolean): Self = StObject.set(x, "isSensor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSensorUndefined: Self = StObject.set(x, "isSensor", js.undefined)
+    inline def setIsSensorUndefined: Self = StObject.set(x, "isSensor", js.undefined)
     
-    @scala.inline
-    def setIsSleeping(value: Boolean): Self = StObject.set(x, "isSleeping", value.asInstanceOf[js.Any])
+    inline def setIsSleeping(value: Boolean): Self = StObject.set(x, "isSleeping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSleepingUndefined: Self = StObject.set(x, "isSleeping", js.undefined)
+    inline def setIsSleepingUndefined: Self = StObject.set(x, "isSleeping", js.undefined)
     
-    @scala.inline
-    def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
+    inline def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStaticUndefined: Self = StObject.set(x, "isStatic", js.undefined)
+    inline def setIsStaticUndefined: Self = StObject.set(x, "isStatic", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
+    inline def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
+    inline def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
     
-    @scala.inline
-    def setMotion(value: Double): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
+    inline def setMotion(value: Double): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMotionUndefined: Self = StObject.set(x, "motion", js.undefined)
+    inline def setMotionUndefined: Self = StObject.set(x, "motion", js.undefined)
     
-    @scala.inline
-    def setParent(value: Body): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Body): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setParts(value: js.Array[Body]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+    inline def setParts(value: js.Array[Body]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
+    inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
     
-    @scala.inline
-    def setPartsVarargs(value: Body*): Self = StObject.set(x, "parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: Body*): Self = StObject.set(x, "parts", js.Array(value :_*))
     
-    @scala.inline
-    def setPlugin(value: js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+    inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Vector): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Vector): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setRender(value: IBodyRenderOptions): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: IBodyRenderOptions): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    @scala.inline
-    def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
+    inline def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestitutionUndefined: Self = StObject.set(x, "restitution", js.undefined)
+    inline def setRestitutionUndefined: Self = StObject.set(x, "restitution", js.undefined)
     
-    @scala.inline
-    def setSleepThreshold(value: Double): Self = StObject.set(x, "sleepThreshold", value.asInstanceOf[js.Any])
+    inline def setSleepThreshold(value: Double): Self = StObject.set(x, "sleepThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSleepThresholdUndefined: Self = StObject.set(x, "sleepThreshold", js.undefined)
+    inline def setSleepThresholdUndefined: Self = StObject.set(x, "sleepThreshold", js.undefined)
     
-    @scala.inline
-    def setSlop(value: Double): Self = StObject.set(x, "slop", value.asInstanceOf[js.Any])
+    inline def setSlop(value: Double): Self = StObject.set(x, "slop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlopUndefined: Self = StObject.set(x, "slop", js.undefined)
+    inline def setSlopUndefined: Self = StObject.set(x, "slop", js.undefined)
     
-    @scala.inline
-    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+    inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
     
-    @scala.inline
-    def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
+    inline def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeScaleUndefined: Self = StObject.set(x, "timeScale", js.undefined)
+    inline def setTimeScaleUndefined: Self = StObject.set(x, "timeScale", js.undefined)
     
-    @scala.inline
-    def setTorque(value: Double): Self = StObject.set(x, "torque", value.asInstanceOf[js.Any])
+    inline def setTorque(value: Double): Self = StObject.set(x, "torque", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTorqueUndefined: Self = StObject.set(x, "torque", js.undefined)
+    inline def setTorqueUndefined: Self = StObject.set(x, "torque", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVelocity(value: Vector): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
+    inline def setVelocity(value: Vector): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVelocityUndefined: Self = StObject.set(x, "velocity", js.undefined)
+    inline def setVelocityUndefined: Self = StObject.set(x, "velocity", js.undefined)
     
-    @scala.inline
-    def setVertices(value: js.Array[Vector]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    inline def setVertices(value: js.Array[Vector]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
+    inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
     
-    @scala.inline
-    def setVerticesVarargs(value: Vector*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: Vector*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

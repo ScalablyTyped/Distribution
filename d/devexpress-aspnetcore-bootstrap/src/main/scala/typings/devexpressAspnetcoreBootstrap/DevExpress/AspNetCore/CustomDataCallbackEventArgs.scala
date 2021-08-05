@@ -12,16 +12,13 @@ trait CustomDataCallbackEventArgs
 }
 object CustomDataCallbackEventArgs {
   
-  @scala.inline
-  def apply(result: String, sender: Control): CustomDataCallbackEventArgs = {
+  inline def apply(result: String, sender: Control): CustomDataCallbackEventArgs = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomDataCallbackEventArgs]
   }
   
-  @scala.inline
-  implicit class CustomDataCallbackEventArgsMutableBuilder[Self <: CustomDataCallbackEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CustomDataCallbackEventArgs](x: Self) {
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

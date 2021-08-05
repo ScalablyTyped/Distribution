@@ -23,22 +23,17 @@ trait Elevation extends StObject {
 }
 object Elevation {
   
-  @scala.inline
-  def apply(elevation: Double, latitude: Double, longitude: Double): Elevation = {
+  inline def apply(elevation: Double, latitude: Double, longitude: Double): Elevation = {
     val __obj = js.Dynamic.literal(elevation = elevation.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[Elevation]
   }
   
-  @scala.inline
-  implicit class ElevationMutableBuilder[Self <: Elevation] (val x: Self) extends AnyVal {
+  extension [Self <: Elevation](x: Self) {
     
-    @scala.inline
-    def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
+    inline def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
   }
 }

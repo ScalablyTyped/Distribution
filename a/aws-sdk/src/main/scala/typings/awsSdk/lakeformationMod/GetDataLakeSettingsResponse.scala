@@ -13,19 +13,15 @@ trait GetDataLakeSettingsResponse extends StObject {
 }
 object GetDataLakeSettingsResponse {
   
-  @scala.inline
-  def apply(): GetDataLakeSettingsResponse = {
+  inline def apply(): GetDataLakeSettingsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDataLakeSettingsResponse]
   }
   
-  @scala.inline
-  implicit class GetDataLakeSettingsResponseMutableBuilder[Self <: GetDataLakeSettingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDataLakeSettingsResponse](x: Self) {
     
-    @scala.inline
-    def setDataLakeSettings(value: DataLakeSettings): Self = StObject.set(x, "DataLakeSettings", value.asInstanceOf[js.Any])
+    inline def setDataLakeSettings(value: DataLakeSettings): Self = StObject.set(x, "DataLakeSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLakeSettingsUndefined: Self = StObject.set(x, "DataLakeSettings", js.undefined)
+    inline def setDataLakeSettingsUndefined: Self = StObject.set(x, "DataLakeSettings", js.undefined)
   }
 }

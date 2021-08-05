@@ -23,31 +23,23 @@ trait ActiveTableChangedEventUIParam extends StObject {
 }
 object ActiveTableChangedEventUIParam {
   
-  @scala.inline
-  def apply(): ActiveTableChangedEventUIParam = {
+  inline def apply(): ActiveTableChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActiveTableChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class ActiveTableChangedEventUIParamMutableBuilder[Self <: ActiveTableChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveTableChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setNewActiveTable(value: js.Any): Self = StObject.set(x, "newActiveTable", value.asInstanceOf[js.Any])
+    inline def setNewActiveTable(value: js.Any): Self = StObject.set(x, "newActiveTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewActiveTableUndefined: Self = StObject.set(x, "newActiveTable", js.undefined)
+    inline def setNewActiveTableUndefined: Self = StObject.set(x, "newActiveTable", js.undefined)
     
-    @scala.inline
-    def setOldActiveTable(value: js.Any): Self = StObject.set(x, "oldActiveTable", value.asInstanceOf[js.Any])
+    inline def setOldActiveTable(value: js.Any): Self = StObject.set(x, "oldActiveTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldActiveTableUndefined: Self = StObject.set(x, "oldActiveTable", js.undefined)
+    inline def setOldActiveTableUndefined: Self = StObject.set(x, "oldActiveTable", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

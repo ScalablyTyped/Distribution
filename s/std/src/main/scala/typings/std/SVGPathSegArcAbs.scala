@@ -24,8 +24,7 @@ trait SVGPathSegArcAbs
 }
 object SVGPathSegArcAbs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PATHSEG_ARC_ABS: Double,
     PATHSEG_ARC_REL: Double,
     PATHSEG_CLOSEPATH: Double,
@@ -60,28 +59,20 @@ object SVGPathSegArcAbs {
     __obj.asInstanceOf[SVGPathSegArcAbs]
   }
   
-  @scala.inline
-  implicit class SVGPathSegArcAbsMutableBuilder[Self <: SVGPathSegArcAbs] (val x: Self) extends AnyVal {
+  extension [Self <: SVGPathSegArcAbs](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeArcFlag(value: scala.Boolean): Self = StObject.set(x, "largeArcFlag", value.asInstanceOf[js.Any])
+    inline def setLargeArcFlag(value: scala.Boolean): Self = StObject.set(x, "largeArcFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
+    inline def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
+    inline def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSweepFlag(value: scala.Boolean): Self = StObject.set(x, "sweepFlag", value.asInstanceOf[js.Any])
+    inline def setSweepFlag(value: scala.Boolean): Self = StObject.set(x, "sweepFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

@@ -20,17 +20,14 @@ object focusTrapZoneTypesMod {
   }
   object IFocusTrapZone {
     
-    @scala.inline
-    def apply(focus: () => Unit): IFocusTrapZone = {
+    inline def apply(focus: () => Unit): IFocusTrapZone = {
       val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
       __obj.asInstanceOf[IFocusTrapZone]
     }
     
-    @scala.inline
-    implicit class IFocusTrapZoneMutableBuilder[Self <: IFocusTrapZone] (val x: Self) extends AnyVal {
+    extension [Self <: IFocusTrapZone](x: Self) {
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
   }
   
@@ -118,95 +115,66 @@ object focusTrapZoneTypesMod {
   }
   object IFocusTrapZoneProps {
     
-    @scala.inline
-    def apply(): IFocusTrapZoneProps = {
+    inline def apply(): IFocusTrapZoneProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFocusTrapZoneProps]
     }
     
-    @scala.inline
-    implicit class IFocusTrapZonePropsMutableBuilder[Self <: IFocusTrapZoneProps] (val x: Self) extends AnyVal {
+    extension [Self <: IFocusTrapZoneProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
+      inline def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
+      inline def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IFocusTrapZone]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IFocusTrapZone]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IFocusTrapZone | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IFocusTrapZone | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDisableFirstFocus(value: Boolean): Self = StObject.set(x, "disableFirstFocus", value.asInstanceOf[js.Any])
+      inline def setDisableFirstFocus(value: Boolean): Self = StObject.set(x, "disableFirstFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableFirstFocusUndefined: Self = StObject.set(x, "disableFirstFocus", js.undefined)
+      inline def setDisableFirstFocusUndefined: Self = StObject.set(x, "disableFirstFocus", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setElementToFocusOnDismiss(value: HTMLElement): Self = StObject.set(x, "elementToFocusOnDismiss", value.asInstanceOf[js.Any])
+      inline def setElementToFocusOnDismiss(value: HTMLElement): Self = StObject.set(x, "elementToFocusOnDismiss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementToFocusOnDismissUndefined: Self = StObject.set(x, "elementToFocusOnDismiss", js.undefined)
+      inline def setElementToFocusOnDismissUndefined: Self = StObject.set(x, "elementToFocusOnDismiss", js.undefined)
       
-      @scala.inline
-      def setEnableAriaHiddenSiblings(value: Boolean): Self = StObject.set(x, "enableAriaHiddenSiblings", value.asInstanceOf[js.Any])
+      inline def setEnableAriaHiddenSiblings(value: Boolean): Self = StObject.set(x, "enableAriaHiddenSiblings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableAriaHiddenSiblingsUndefined: Self = StObject.set(x, "enableAriaHiddenSiblings", js.undefined)
+      inline def setEnableAriaHiddenSiblingsUndefined: Self = StObject.set(x, "enableAriaHiddenSiblings", js.undefined)
       
-      @scala.inline
-      def setFirstFocusableSelector(value: String | js.Function0[String]): Self = StObject.set(x, "firstFocusableSelector", value.asInstanceOf[js.Any])
+      inline def setFirstFocusableSelector(value: String | js.Function0[String]): Self = StObject.set(x, "firstFocusableSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstFocusableSelectorFunction0(value: () => String): Self = StObject.set(x, "firstFocusableSelector", js.Any.fromFunction0(value))
+      inline def setFirstFocusableSelectorFunction0(value: () => String): Self = StObject.set(x, "firstFocusableSelector", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFirstFocusableSelectorUndefined: Self = StObject.set(x, "firstFocusableSelector", js.undefined)
+      inline def setFirstFocusableSelectorUndefined: Self = StObject.set(x, "firstFocusableSelector", js.undefined)
       
-      @scala.inline
-      def setFirstFocusableTarget(value: String | (js.Function1[/* element */ HTMLElement, HTMLElement | Null])): Self = StObject.set(x, "firstFocusableTarget", value.asInstanceOf[js.Any])
+      inline def setFirstFocusableTarget(value: String | (js.Function1[/* element */ HTMLElement, HTMLElement | Null])): Self = StObject.set(x, "firstFocusableTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstFocusableTargetFunction1(value: /* element */ HTMLElement => HTMLElement | Null): Self = StObject.set(x, "firstFocusableTarget", js.Any.fromFunction1(value))
+      inline def setFirstFocusableTargetFunction1(value: /* element */ HTMLElement => HTMLElement | Null): Self = StObject.set(x, "firstFocusableTarget", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFirstFocusableTargetUndefined: Self = StObject.set(x, "firstFocusableTarget", js.undefined)
+      inline def setFirstFocusableTargetUndefined: Self = StObject.set(x, "firstFocusableTarget", js.undefined)
       
-      @scala.inline
-      def setFocusPreviouslyFocusedInnerElement(value: Boolean): Self = StObject.set(x, "focusPreviouslyFocusedInnerElement", value.asInstanceOf[js.Any])
+      inline def setFocusPreviouslyFocusedInnerElement(value: Boolean): Self = StObject.set(x, "focusPreviouslyFocusedInnerElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusPreviouslyFocusedInnerElementUndefined: Self = StObject.set(x, "focusPreviouslyFocusedInnerElement", js.undefined)
+      inline def setFocusPreviouslyFocusedInnerElementUndefined: Self = StObject.set(x, "focusPreviouslyFocusedInnerElement", js.undefined)
       
-      @scala.inline
-      def setForceFocusInsideTrap(value: Boolean): Self = StObject.set(x, "forceFocusInsideTrap", value.asInstanceOf[js.Any])
+      inline def setForceFocusInsideTrap(value: Boolean): Self = StObject.set(x, "forceFocusInsideTrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceFocusInsideTrapUndefined: Self = StObject.set(x, "forceFocusInsideTrap", js.undefined)
+      inline def setForceFocusInsideTrapUndefined: Self = StObject.set(x, "forceFocusInsideTrap", js.undefined)
       
-      @scala.inline
-      def setIgnoreExternalFocusing(value: Boolean): Self = StObject.set(x, "ignoreExternalFocusing", value.asInstanceOf[js.Any])
+      inline def setIgnoreExternalFocusing(value: Boolean): Self = StObject.set(x, "ignoreExternalFocusing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreExternalFocusingUndefined: Self = StObject.set(x, "ignoreExternalFocusing", js.undefined)
+      inline def setIgnoreExternalFocusingUndefined: Self = StObject.set(x, "ignoreExternalFocusing", js.undefined)
       
-      @scala.inline
-      def setIsClickableOutsideFocusTrap(value: Boolean): Self = StObject.set(x, "isClickableOutsideFocusTrap", value.asInstanceOf[js.Any])
+      inline def setIsClickableOutsideFocusTrap(value: Boolean): Self = StObject.set(x, "isClickableOutsideFocusTrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsClickableOutsideFocusTrapUndefined: Self = StObject.set(x, "isClickableOutsideFocusTrap", js.undefined)
+      inline def setIsClickableOutsideFocusTrapUndefined: Self = StObject.set(x, "isClickableOutsideFocusTrap", js.undefined)
     }
   }
 }

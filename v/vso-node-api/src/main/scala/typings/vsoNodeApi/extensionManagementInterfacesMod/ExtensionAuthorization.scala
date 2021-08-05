@@ -12,22 +12,17 @@ trait ExtensionAuthorization extends StObject {
 }
 object ExtensionAuthorization {
   
-  @scala.inline
-  def apply(id: String, scopes: js.Array[String]): ExtensionAuthorization = {
+  inline def apply(id: String, scopes: js.Array[String]): ExtensionAuthorization = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionAuthorization]
   }
   
-  @scala.inline
-  implicit class ExtensionAuthorizationMutableBuilder[Self <: ExtensionAuthorization] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionAuthorization](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
   }
 }

@@ -17,8 +17,7 @@ trait IIndirectPropertyIDLevel extends StObject {
 }
 object IIndirectPropertyIDLevel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IIndirectPropertyIDLevel,
     ID: Double,
     LevelType: MFIndirectPropertyIDLevelType,
@@ -28,19 +27,14 @@ object IIndirectPropertyIDLevel {
     __obj.asInstanceOf[IIndirectPropertyIDLevel]
   }
   
-  @scala.inline
-  implicit class IIndirectPropertyIDLevelMutableBuilder[Self <: IIndirectPropertyIDLevel] (val x: Self) extends AnyVal {
+  extension [Self <: IIndirectPropertyIDLevel](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IIndirectPropertyIDLevel): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IIndirectPropertyIDLevel): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelType(value: MFIndirectPropertyIDLevelType): Self = StObject.set(x, "LevelType", value.asInstanceOf[js.Any])
+    inline def setLevelType(value: MFIndirectPropertyIDLevelType): Self = StObject.set(x, "LevelType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToJSON(value: () => String): Self = StObject.set(x, "ToJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => String): Self = StObject.set(x, "ToJSON", js.Any.fromFunction0(value))
   }
 }

@@ -11,19 +11,15 @@ trait CaseExpression extends StObject {
 }
 object CaseExpression {
   
-  @scala.inline
-  def apply(): CaseExpression = {
+  inline def apply(): CaseExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CaseExpression]
   }
   
-  @scala.inline
-  implicit class CaseExpressionMutableBuilder[Self <: CaseExpression] (val x: Self) extends AnyVal {
+  extension [Self <: CaseExpression](x: Self) {
     
-    @scala.inline
-    def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
+    inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
+    inline def setDimensionNameUndefined: Self = StObject.set(x, "dimensionName", js.undefined)
   }
 }

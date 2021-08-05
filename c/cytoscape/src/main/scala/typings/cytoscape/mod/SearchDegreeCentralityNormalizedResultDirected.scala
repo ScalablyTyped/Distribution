@@ -14,19 +14,15 @@ trait SearchDegreeCentralityNormalizedResultDirected extends StObject {
 }
 object SearchDegreeCentralityNormalizedResultDirected {
   
-  @scala.inline
-  def apply(indegree: NodeSingular => js.Any, outdegree: NodeSingular => js.Any): SearchDegreeCentralityNormalizedResultDirected = {
+  inline def apply(indegree: NodeSingular => js.Any, outdegree: NodeSingular => js.Any): SearchDegreeCentralityNormalizedResultDirected = {
     val __obj = js.Dynamic.literal(indegree = js.Any.fromFunction1(indegree), outdegree = js.Any.fromFunction1(outdegree))
     __obj.asInstanceOf[SearchDegreeCentralityNormalizedResultDirected]
   }
   
-  @scala.inline
-  implicit class SearchDegreeCentralityNormalizedResultDirectedMutableBuilder[Self <: SearchDegreeCentralityNormalizedResultDirected] (val x: Self) extends AnyVal {
+  extension [Self <: SearchDegreeCentralityNormalizedResultDirected](x: Self) {
     
-    @scala.inline
-    def setIndegree(value: NodeSingular => js.Any): Self = StObject.set(x, "indegree", js.Any.fromFunction1(value))
+    inline def setIndegree(value: NodeSingular => js.Any): Self = StObject.set(x, "indegree", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutdegree(value: NodeSingular => js.Any): Self = StObject.set(x, "outdegree", js.Any.fromFunction1(value))
+    inline def setOutdegree(value: NodeSingular => js.Any): Self = StObject.set(x, "outdegree", js.Any.fromFunction1(value))
   }
 }

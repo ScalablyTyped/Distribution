@@ -29,43 +29,31 @@ trait OnenotePatchContentCommand extends StObject {
 }
 object OnenotePatchContentCommand {
   
-  @scala.inline
-  def apply(): OnenotePatchContentCommand = {
+  inline def apply(): OnenotePatchContentCommand = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnenotePatchContentCommand]
   }
   
-  @scala.inline
-  implicit class OnenotePatchContentCommandMutableBuilder[Self <: OnenotePatchContentCommand] (val x: Self) extends AnyVal {
+  extension [Self <: OnenotePatchContentCommand](x: Self) {
     
-    @scala.inline
-    def setAction(value: OnenotePatchActionType): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: OnenotePatchActionType): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setContent(value: NullableOption[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: NullableOption[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentNull: Self = StObject.set(x, "content", null)
+    inline def setContentNull: Self = StObject.set(x, "content", null)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setPosition(value: NullableOption[OnenotePatchInsertPosition]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: NullableOption[OnenotePatchInsertPosition]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionNull: Self = StObject.set(x, "position", null)
+    inline def setPositionNull: Self = StObject.set(x, "position", null)
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

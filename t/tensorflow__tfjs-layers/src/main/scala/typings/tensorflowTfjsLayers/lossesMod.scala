@@ -33,46 +33,34 @@ object lossesMod {
   @js.native
   val MSLE_ : js.Function2[/* yTrue */ Tensor[Rank], /* yPred */ Tensor[Rank], Tensor[Rank]] = js.native
   
-  @scala.inline
-  def binaryCrossentropy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryCrossentropy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def binaryCrossentropy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryCrossentropy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @scala.inline
-  def categoricalCrossentropy(target: Tensor[Rank], output: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("categoricalCrossentropy")(target.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
-  @scala.inline
-  def categoricalCrossentropy(target: Tensor[Rank], output: Tensor[Rank], fromLogits: Boolean): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("categoricalCrossentropy")(target.asInstanceOf[js.Any], output.asInstanceOf[js.Any], fromLogits.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def categoricalCrossentropy(target: Tensor[Rank], output: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("categoricalCrossentropy")(target.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def categoricalCrossentropy(target: Tensor[Rank], output: Tensor[Rank], fromLogits: Boolean): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("categoricalCrossentropy")(target.asInstanceOf[js.Any], output.asInstanceOf[js.Any], fromLogits.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @scala.inline
-  def categoricalHinge(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("categoricalHinge")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def categoricalHinge(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("categoricalHinge")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
   @JSImport("@tensorflow/tfjs-layers/dist/losses", "cosine")
   @js.native
   val cosine: js.Function2[/* yTrue */ Tensor[Rank], /* yPred */ Tensor[Rank], Tensor[Rank]] = js.native
   
-  @scala.inline
-  def cosineProximity(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineProximity")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def cosineProximity(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineProximity")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @scala.inline
-  def get(identifierOrFn: String): LossOrMetricFn = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(identifierOrFn.asInstanceOf[js.Any]).asInstanceOf[LossOrMetricFn]
-  @scala.inline
-  def get(identifierOrFn: LossOrMetricFn): LossOrMetricFn = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(identifierOrFn.asInstanceOf[js.Any]).asInstanceOf[LossOrMetricFn]
+  inline def get(identifierOrFn: String): LossOrMetricFn = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(identifierOrFn.asInstanceOf[js.Any]).asInstanceOf[LossOrMetricFn]
+  inline def get(identifierOrFn: LossOrMetricFn): LossOrMetricFn = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(identifierOrFn.asInstanceOf[js.Any]).asInstanceOf[LossOrMetricFn]
   
-  @scala.inline
-  def hinge(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("hinge")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def hinge(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("hinge")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
   @JSImport("@tensorflow/tfjs-layers/dist/losses", "kld")
   @js.native
   val kld: js.Function2[/* yTrue */ Tensor[Rank], /* yPred */ Tensor[Rank], Tensor[Rank]] = js.native
   
-  @scala.inline
-  def kullbackLeiblerDivergence(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("kullbackLeiblerDivergence")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def kullbackLeiblerDivergence(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("kullbackLeiblerDivergence")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @scala.inline
-  def l2Normalize(x: Tensor[Rank]): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("l2Normalize")(x.asInstanceOf[js.Any]).asInstanceOf[Tensor[Rank]]
-  @scala.inline
-  def l2Normalize(x: Tensor[Rank], axis: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("l2Normalize")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def l2Normalize(x: Tensor[Rank]): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("l2Normalize")(x.asInstanceOf[js.Any]).asInstanceOf[Tensor[Rank]]
+  inline def l2Normalize(x: Tensor[Rank], axis: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("l2Normalize")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @scala.inline
-  def logcosh(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("logcosh")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def logcosh(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("logcosh")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
   @JSImport("@tensorflow/tfjs-layers/dist/losses", "mae")
   @js.native
@@ -82,17 +70,13 @@ object lossesMod {
   @js.native
   val mape: js.Function2[/* yTrue */ Tensor[Rank], /* yPred */ Tensor[Rank], Tensor[Rank]] = js.native
   
-  @scala.inline
-  def meanAbsoluteError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("meanAbsoluteError")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def meanAbsoluteError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("meanAbsoluteError")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @scala.inline
-  def meanAbsolutePercentageError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("meanAbsolutePercentageError")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def meanAbsolutePercentageError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("meanAbsolutePercentageError")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @scala.inline
-  def meanSquaredError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("meanSquaredError")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def meanSquaredError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("meanSquaredError")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @scala.inline
-  def meanSquaredLogarithmicError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("meanSquaredLogarithmicError")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def meanSquaredLogarithmicError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("meanSquaredLogarithmicError")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
   @JSImport("@tensorflow/tfjs-layers/dist/losses", "mse")
   @js.native
@@ -102,17 +86,12 @@ object lossesMod {
   @js.native
   val msle: js.Function2[/* yTrue */ Tensor[Rank], /* yPred */ Tensor[Rank], Tensor[Rank]] = js.native
   
-  @scala.inline
-  def poisson(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("poisson")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def poisson(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("poisson")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @scala.inline
-  def sigmoidCrossEntropyWithLogits(labels: Tensor[Rank], logits: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("sigmoidCrossEntropyWithLogits")(labels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def sigmoidCrossEntropyWithLogits(labels: Tensor[Rank], logits: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("sigmoidCrossEntropyWithLogits")(labels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @scala.inline
-  def sparseCategoricalCrossentropy(target: Tensor[Rank], output: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseCategoricalCrossentropy")(target.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
-  @scala.inline
-  def sparseCategoricalCrossentropy(target: Tensor[Rank], output: Tensor[Rank], fromLogits: Boolean): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseCategoricalCrossentropy")(target.asInstanceOf[js.Any], output.asInstanceOf[js.Any], fromLogits.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def sparseCategoricalCrossentropy(target: Tensor[Rank], output: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseCategoricalCrossentropy")(target.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def sparseCategoricalCrossentropy(target: Tensor[Rank], output: Tensor[Rank], fromLogits: Boolean): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseCategoricalCrossentropy")(target.asInstanceOf[js.Any], output.asInstanceOf[js.Any], fromLogits.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @scala.inline
-  def squaredHinge(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredHinge")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def squaredHinge(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredHinge")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
 }

@@ -19,37 +19,27 @@ trait WorkbookChartAxisTitle
 }
 object WorkbookChartAxisTitle {
   
-  @scala.inline
-  def apply(): WorkbookChartAxisTitle = {
+  inline def apply(): WorkbookChartAxisTitle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookChartAxisTitle]
   }
   
-  @scala.inline
-  implicit class WorkbookChartAxisTitleMutableBuilder[Self <: WorkbookChartAxisTitle] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookChartAxisTitle](x: Self) {
     
-    @scala.inline
-    def setFormat(value: NullableOption[WorkbookChartAxisTitleFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: NullableOption[WorkbookChartAxisTitleFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatNull: Self = StObject.set(x, "format", null)
+    inline def setFormatNull: Self = StObject.set(x, "format", null)
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setText(value: NullableOption[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: NullableOption[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextNull: Self = StObject.set(x, "text", null)
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

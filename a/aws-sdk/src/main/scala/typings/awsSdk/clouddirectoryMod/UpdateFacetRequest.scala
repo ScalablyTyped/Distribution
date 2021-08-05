@@ -28,34 +28,25 @@ trait UpdateFacetRequest extends StObject {
 }
 object UpdateFacetRequest {
   
-  @scala.inline
-  def apply(Name: FacetName, SchemaArn: Arn): UpdateFacetRequest = {
+  inline def apply(Name: FacetName, SchemaArn: Arn): UpdateFacetRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFacetRequest]
   }
   
-  @scala.inline
-  implicit class UpdateFacetRequestMutableBuilder[Self <: UpdateFacetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFacetRequest](x: Self) {
     
-    @scala.inline
-    def setAttributeUpdates(value: FacetAttributeUpdateList): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
+    inline def setAttributeUpdates(value: FacetAttributeUpdateList): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUpdatesUndefined: Self = StObject.set(x, "AttributeUpdates", js.undefined)
+    inline def setAttributeUpdatesUndefined: Self = StObject.set(x, "AttributeUpdates", js.undefined)
     
-    @scala.inline
-    def setAttributeUpdatesVarargs(value: FacetAttributeUpdate*): Self = StObject.set(x, "AttributeUpdates", js.Array(value :_*))
+    inline def setAttributeUpdatesVarargs(value: FacetAttributeUpdate*): Self = StObject.set(x, "AttributeUpdates", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: FacetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: FacetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectType(value: ObjectType): Self = StObject.set(x, "ObjectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: ObjectType): Self = StObject.set(x, "ObjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeUndefined: Self = StObject.set(x, "ObjectType", js.undefined)
+    inline def setObjectTypeUndefined: Self = StObject.set(x, "ObjectType", js.undefined)
     
-    @scala.inline
-    def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
   }
 }

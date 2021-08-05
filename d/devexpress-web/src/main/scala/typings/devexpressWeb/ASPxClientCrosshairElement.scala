@@ -16,16 +16,13 @@ trait ASPxClientCrosshairElement extends StObject {
 }
 object ASPxClientCrosshairElement {
   
-  @scala.inline
-  def apply(Series: ASPxClientSeries): ASPxClientCrosshairElement = {
+  inline def apply(Series: ASPxClientSeries): ASPxClientCrosshairElement = {
     val __obj = js.Dynamic.literal(Series = Series.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCrosshairElement]
   }
   
-  @scala.inline
-  implicit class ASPxClientCrosshairElementMutableBuilder[Self <: ASPxClientCrosshairElement] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCrosshairElement](x: Self) {
     
-    @scala.inline
-    def setSeries(value: ASPxClientSeries): Self = StObject.set(x, "Series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: ASPxClientSeries): Self = StObject.set(x, "Series", value.asInstanceOf[js.Any])
   }
 }

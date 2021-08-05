@@ -30,31 +30,23 @@ trait PublishDiagnosticsClientCapabilities extends StObject {
 }
 object PublishDiagnosticsClientCapabilities {
   
-  @scala.inline
-  def apply(): PublishDiagnosticsClientCapabilities = {
+  inline def apply(): PublishDiagnosticsClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublishDiagnosticsClientCapabilities]
   }
   
-  @scala.inline
-  implicit class PublishDiagnosticsClientCapabilitiesMutableBuilder[Self <: PublishDiagnosticsClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: PublishDiagnosticsClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setRelatedInformation(value: Boolean): Self = StObject.set(x, "relatedInformation", value.asInstanceOf[js.Any])
+    inline def setRelatedInformation(value: Boolean): Self = StObject.set(x, "relatedInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedInformationUndefined: Self = StObject.set(x, "relatedInformation", js.undefined)
+    inline def setRelatedInformationUndefined: Self = StObject.set(x, "relatedInformation", js.undefined)
     
-    @scala.inline
-    def setTagSupport(value: ValueSet): Self = StObject.set(x, "tagSupport", value.asInstanceOf[js.Any])
+    inline def setTagSupport(value: ValueSet): Self = StObject.set(x, "tagSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSupportUndefined: Self = StObject.set(x, "tagSupport", js.undefined)
+    inline def setTagSupportUndefined: Self = StObject.set(x, "tagSupport", js.undefined)
     
-    @scala.inline
-    def setVersionSupport(value: Boolean): Self = StObject.set(x, "versionSupport", value.asInstanceOf[js.Any])
+    inline def setVersionSupport(value: Boolean): Self = StObject.set(x, "versionSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionSupportUndefined: Self = StObject.set(x, "versionSupport", js.undefined)
+    inline def setVersionSupportUndefined: Self = StObject.set(x, "versionSupport", js.undefined)
   }
 }

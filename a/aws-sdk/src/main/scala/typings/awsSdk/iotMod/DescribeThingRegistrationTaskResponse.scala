@@ -68,85 +68,59 @@ trait DescribeThingRegistrationTaskResponse extends StObject {
 }
 object DescribeThingRegistrationTaskResponse {
   
-  @scala.inline
-  def apply(): DescribeThingRegistrationTaskResponse = {
+  inline def apply(): DescribeThingRegistrationTaskResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeThingRegistrationTaskResponse]
   }
   
-  @scala.inline
-  implicit class DescribeThingRegistrationTaskResponseMutableBuilder[Self <: DescribeThingRegistrationTaskResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeThingRegistrationTaskResponse](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setFailureCount(value: Count): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
+    inline def setFailureCount(value: Count): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCountUndefined: Self = StObject.set(x, "failureCount", js.undefined)
+    inline def setFailureCountUndefined: Self = StObject.set(x, "failureCount", js.undefined)
     
-    @scala.inline
-    def setInputFileBucket(value: RegistryS3BucketName): Self = StObject.set(x, "inputFileBucket", value.asInstanceOf[js.Any])
+    inline def setInputFileBucket(value: RegistryS3BucketName): Self = StObject.set(x, "inputFileBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputFileBucketUndefined: Self = StObject.set(x, "inputFileBucket", js.undefined)
+    inline def setInputFileBucketUndefined: Self = StObject.set(x, "inputFileBucket", js.undefined)
     
-    @scala.inline
-    def setInputFileKey(value: RegistryS3KeyName): Self = StObject.set(x, "inputFileKey", value.asInstanceOf[js.Any])
+    inline def setInputFileKey(value: RegistryS3KeyName): Self = StObject.set(x, "inputFileKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputFileKeyUndefined: Self = StObject.set(x, "inputFileKey", js.undefined)
+    inline def setInputFileKeyUndefined: Self = StObject.set(x, "inputFileKey", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDate(value: LastModifiedDate): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: LastModifiedDate): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setMessage(value: ErrorMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: ErrorMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setPercentageProgress(value: Percentage): Self = StObject.set(x, "percentageProgress", value.asInstanceOf[js.Any])
+    inline def setPercentageProgress(value: Percentage): Self = StObject.set(x, "percentageProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentageProgressUndefined: Self = StObject.set(x, "percentageProgress", js.undefined)
+    inline def setPercentageProgressUndefined: Self = StObject.set(x, "percentageProgress", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setSuccessCount(value: Count): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
+    inline def setSuccessCount(value: Count): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessCountUndefined: Self = StObject.set(x, "successCount", js.undefined)
+    inline def setSuccessCountUndefined: Self = StObject.set(x, "successCount", js.undefined)
     
-    @scala.inline
-    def setTaskId(value: TaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: TaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
+    inline def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
     
-    @scala.inline
-    def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
+    inline def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
+    inline def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
   }
 }

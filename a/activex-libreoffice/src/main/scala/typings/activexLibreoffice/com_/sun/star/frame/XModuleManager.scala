@@ -30,8 +30,7 @@ trait XModuleManager
 }
 object XModuleManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     identify: XInterface => String,
     queryInterface: `type` => js.Any,
@@ -41,10 +40,8 @@ object XModuleManager {
     __obj.asInstanceOf[XModuleManager]
   }
   
-  @scala.inline
-  implicit class XModuleManagerMutableBuilder[Self <: XModuleManager] (val x: Self) extends AnyVal {
+  extension [Self <: XModuleManager](x: Self) {
     
-    @scala.inline
-    def setIdentify(value: XInterface => String): Self = StObject.set(x, "identify", js.Any.fromFunction1(value))
+    inline def setIdentify(value: XInterface => String): Self = StObject.set(x, "identify", js.Any.fromFunction1(value))
   }
 }

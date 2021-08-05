@@ -16,20 +16,16 @@ trait HexNumber
 }
 object HexNumber {
   
-  @scala.inline
-  def apply(value: String): HexNumber = {
+  inline def apply(value: String): HexNumber = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("HexNumber")
     __obj.asInstanceOf[HexNumber]
   }
   
-  @scala.inline
-  implicit class HexNumberMutableBuilder[Self <: HexNumber] (val x: Self) extends AnyVal {
+  extension [Self <: HexNumber](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.HexNumber): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.HexNumber): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

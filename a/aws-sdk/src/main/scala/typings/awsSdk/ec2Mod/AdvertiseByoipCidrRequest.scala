@@ -18,22 +18,17 @@ trait AdvertiseByoipCidrRequest extends StObject {
 }
 object AdvertiseByoipCidrRequest {
   
-  @scala.inline
-  def apply(Cidr: String): AdvertiseByoipCidrRequest = {
+  inline def apply(Cidr: String): AdvertiseByoipCidrRequest = {
     val __obj = js.Dynamic.literal(Cidr = Cidr.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdvertiseByoipCidrRequest]
   }
   
-  @scala.inline
-  implicit class AdvertiseByoipCidrRequestMutableBuilder[Self <: AdvertiseByoipCidrRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AdvertiseByoipCidrRequest](x: Self) {
     
-    @scala.inline
-    def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

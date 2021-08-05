@@ -39,25 +39,19 @@ trait PlusMapsGeocodeOptions extends StObject {
 }
 object PlusMapsGeocodeOptions {
   
-  @scala.inline
-  def apply(): PlusMapsGeocodeOptions = {
+  inline def apply(): PlusMapsGeocodeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusMapsGeocodeOptions]
   }
   
-  @scala.inline
-  implicit class PlusMapsGeocodeOptionsMutableBuilder[Self <: PlusMapsGeocodeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusMapsGeocodeOptions](x: Self) {
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
+    inline def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
     
-    @scala.inline
-    def setCoordType(value: wgs84 | gcj02 | bd09 | bd09ll): Self = StObject.set(x, "coordType", value.asInstanceOf[js.Any])
+    inline def setCoordType(value: wgs84 | gcj02 | bd09 | bd09ll): Self = StObject.set(x, "coordType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordTypeUndefined: Self = StObject.set(x, "coordType", js.undefined)
+    inline def setCoordTypeUndefined: Self = StObject.set(x, "coordType", js.undefined)
   }
 }

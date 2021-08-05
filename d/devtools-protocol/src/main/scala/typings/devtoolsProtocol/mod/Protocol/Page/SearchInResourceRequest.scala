@@ -33,34 +33,25 @@ trait SearchInResourceRequest extends StObject {
 }
 object SearchInResourceRequest {
   
-  @scala.inline
-  def apply(frameId: FrameId, query: String, url: String): SearchInResourceRequest = {
+  inline def apply(frameId: FrameId, query: String, url: String): SearchInResourceRequest = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchInResourceRequest]
   }
   
-  @scala.inline
-  implicit class SearchInResourceRequestMutableBuilder[Self <: SearchInResourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SearchInResourceRequest](x: Self) {
     
-    @scala.inline
-    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+    inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+    inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRegex(value: Boolean): Self = StObject.set(x, "isRegex", value.asInstanceOf[js.Any])
+    inline def setIsRegex(value: Boolean): Self = StObject.set(x, "isRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRegexUndefined: Self = StObject.set(x, "isRegex", js.undefined)
+    inline def setIsRegexUndefined: Self = StObject.set(x, "isRegex", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

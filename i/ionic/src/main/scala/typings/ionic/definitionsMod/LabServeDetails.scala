@@ -14,22 +14,17 @@ trait LabServeDetails extends StObject {
 }
 object LabServeDetails {
   
-  @scala.inline
-  def apply(address: String, port: Double, projectType: ProjectType): LabServeDetails = {
+  inline def apply(address: String, port: Double, projectType: ProjectType): LabServeDetails = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], projectType = projectType.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabServeDetails]
   }
   
-  @scala.inline
-  implicit class LabServeDetailsMutableBuilder[Self <: LabServeDetails] (val x: Self) extends AnyVal {
+  extension [Self <: LabServeDetails](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectType(value: ProjectType): Self = StObject.set(x, "projectType", value.asInstanceOf[js.Any])
+    inline def setProjectType(value: ProjectType): Self = StObject.set(x, "projectType", value.asInstanceOf[js.Any])
   }
 }

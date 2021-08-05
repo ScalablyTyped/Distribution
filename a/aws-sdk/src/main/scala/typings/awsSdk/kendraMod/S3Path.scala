@@ -18,19 +18,15 @@ trait S3Path extends StObject {
 }
 object S3Path {
   
-  @scala.inline
-  def apply(Bucket: S3BucketName, Key: S3ObjectKey): S3Path = {
+  inline def apply(Bucket: S3BucketName, Key: S3ObjectKey): S3Path = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Path]
   }
   
-  @scala.inline
-  implicit class S3PathMutableBuilder[Self <: S3Path] (val x: Self) extends AnyVal {
+  extension [Self <: S3Path](x: Self) {
     
-    @scala.inline
-    def setBucket(value: S3BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: S3BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: S3ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: S3ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
   }
 }

@@ -11,16 +11,13 @@ trait EditorFactory extends StObject {
 }
 object EditorFactory {
   
-  @scala.inline
-  def apply(getEditor: Column[js.Any] => Editor[js.Any]): EditorFactory = {
+  inline def apply(getEditor: Column[js.Any] => Editor[js.Any]): EditorFactory = {
     val __obj = js.Dynamic.literal(getEditor = js.Any.fromFunction1(getEditor))
     __obj.asInstanceOf[EditorFactory]
   }
   
-  @scala.inline
-  implicit class EditorFactoryMutableBuilder[Self <: EditorFactory] (val x: Self) extends AnyVal {
+  extension [Self <: EditorFactory](x: Self) {
     
-    @scala.inline
-    def setGetEditor(value: Column[js.Any] => Editor[js.Any]): Self = StObject.set(x, "getEditor", js.Any.fromFunction1(value))
+    inline def setGetEditor(value: Column[js.Any] => Editor[js.Any]): Self = StObject.set(x, "getEditor", js.Any.fromFunction1(value))
   }
 }

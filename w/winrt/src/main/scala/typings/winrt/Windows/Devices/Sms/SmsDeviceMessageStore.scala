@@ -13,8 +13,7 @@ trait SmsDeviceMessageStore
      with ISmsDeviceMessageStore
 object SmsDeviceMessageStore {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleteMessageAsync: Double => IAsyncAction,
     deleteMessagesAsync: SmsMessageFilter => IAsyncAction,
     getMessageAsync: Double => IAsyncOperation[ISmsMessage],

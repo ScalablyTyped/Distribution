@@ -48,47 +48,34 @@ object anon {
   }
   object AdditionalOptionspolicyPo {
     
-    @scala.inline
-    def apply(): AdditionalOptionspolicyPo = {
+    inline def apply(): AdditionalOptionspolicyPo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AdditionalOptionspolicyPo]
     }
     
-    @scala.inline
-    implicit class AdditionalOptionspolicyPoMutableBuilder[Self <: AdditionalOptionspolicyPo] (val x: Self) extends AnyVal {
+    extension [Self <: AdditionalOptionspolicyPo](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean | (js.Function1[/* htmlPluginData */ HtmlPluginData, Boolean])): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean | (js.Function1[/* htmlPluginData */ HtmlPluginData, Boolean])): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledFunction1(value: /* htmlPluginData */ HtmlPluginData => Boolean): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
+      inline def setEnabledFunction1(value: /* htmlPluginData */ HtmlPluginData => Boolean): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setHashEnabled(value: StringDictionary[Boolean]): Self = StObject.set(x, "hashEnabled", value.asInstanceOf[js.Any])
+      inline def setHashEnabled(value: StringDictionary[Boolean]): Self = StObject.set(x, "hashEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashEnabledUndefined: Self = StObject.set(x, "hashEnabled", js.undefined)
+      inline def setHashEnabledUndefined: Self = StObject.set(x, "hashEnabled", js.undefined)
       
-      @scala.inline
-      def setHashingMethod(value: sha256 | sha384 | sha512): Self = StObject.set(x, "hashingMethod", value.asInstanceOf[js.Any])
+      inline def setHashingMethod(value: sha256 | sha384 | sha512): Self = StObject.set(x, "hashingMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashingMethodUndefined: Self = StObject.set(x, "hashingMethod", js.undefined)
+      inline def setHashingMethodUndefined: Self = StObject.set(x, "hashingMethod", js.undefined)
       
-      @scala.inline
-      def setNonceEnabled(value: StringDictionary[Boolean]): Self = StObject.set(x, "nonceEnabled", value.asInstanceOf[js.Any])
+      inline def setNonceEnabled(value: StringDictionary[Boolean]): Self = StObject.set(x, "nonceEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceEnabledUndefined: Self = StObject.set(x, "nonceEnabled", js.undefined)
+      inline def setNonceEnabledUndefined: Self = StObject.set(x, "nonceEnabled", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Policy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Policy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     }
   }
 }

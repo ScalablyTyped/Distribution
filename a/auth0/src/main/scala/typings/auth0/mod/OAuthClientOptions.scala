@@ -12,19 +12,15 @@ trait OAuthClientOptions
 }
 object OAuthClientOptions {
   
-  @scala.inline
-  def apply(baseUrl: String): OAuthClientOptions = {
+  inline def apply(baseUrl: String): OAuthClientOptions = {
     val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuthClientOptions]
   }
   
-  @scala.inline
-  implicit class OAuthClientOptionsMutableBuilder[Self <: OAuthClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OAuthClientOptions](x: Self) {
     
-    @scala.inline
-    def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
+    inline def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
   }
 }

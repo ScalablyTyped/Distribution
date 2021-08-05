@@ -17,31 +17,23 @@ trait Digest extends StObject {
 }
 object Digest {
   
-  @scala.inline
-  def apply(): Digest = {
+  inline def apply(): Digest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Digest]
   }
   
-  @scala.inline
-  implicit class DigestMutableBuilder[Self <: Digest] (val x: Self) extends AnyVal {
+  extension [Self <: Digest](x: Self) {
     
-    @scala.inline
-    def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+    inline def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
+    inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
     
-    @scala.inline
-    def setSha384(value: String): Self = StObject.set(x, "sha384", value.asInstanceOf[js.Any])
+    inline def setSha384(value: String): Self = StObject.set(x, "sha384", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha384Undefined: Self = StObject.set(x, "sha384", js.undefined)
+    inline def setSha384Undefined: Self = StObject.set(x, "sha384", js.undefined)
     
-    @scala.inline
-    def setSha512(value: String): Self = StObject.set(x, "sha512", value.asInstanceOf[js.Any])
+    inline def setSha512(value: String): Self = StObject.set(x, "sha512", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha512Undefined: Self = StObject.set(x, "sha512", js.undefined)
+    inline def setSha512Undefined: Self = StObject.set(x, "sha512", js.undefined)
   }
 }

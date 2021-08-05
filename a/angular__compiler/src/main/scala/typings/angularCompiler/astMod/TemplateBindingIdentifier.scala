@@ -12,19 +12,15 @@ trait TemplateBindingIdentifier extends StObject {
 }
 object TemplateBindingIdentifier {
   
-  @scala.inline
-  def apply(source: String, span: AbsoluteSourceSpan): TemplateBindingIdentifier = {
+  inline def apply(source: String, span: AbsoluteSourceSpan): TemplateBindingIdentifier = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateBindingIdentifier]
   }
   
-  @scala.inline
-  implicit class TemplateBindingIdentifierMutableBuilder[Self <: TemplateBindingIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateBindingIdentifier](x: Self) {
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpan(value: AbsoluteSourceSpan): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    inline def setSpan(value: AbsoluteSourceSpan): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
   }
 }

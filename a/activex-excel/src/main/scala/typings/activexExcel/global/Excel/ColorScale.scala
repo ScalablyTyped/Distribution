@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ColorScale")
 @js.native
-class ColorScale protected ()
+/* private */ class ColorScale ()
   extends StObject
      with typings.activexExcel.Excel.ColorScale {
   
@@ -39,7 +39,7 @@ class ColorScale protected ()
   /* CompleteClass */
   override def Delete(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.ColorScale_typekey")
   var ExcelDotColorScale_typekey: typings.activexExcel.Excel.ColorScale = js.native
   

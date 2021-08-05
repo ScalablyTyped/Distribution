@@ -24,7 +24,7 @@ object stylableDependenciesMod {
   class StylableExportsDependency protected () extends StObject {
     def this(exports: js.Any) = this()
     
-    var exports: js.Any = js.native
+    /* private */ var exports: js.Any = js.native
     
     def getExports(): Exports = js.native
     
@@ -43,13 +43,13 @@ object stylableDependenciesMod {
     
     var module: StylableModule = js.native
     
-    var names: js.Any = js.native
+    /* private */ var names: js.Any = js.native
     
     def `type`: String = js.native
     
     def updateHash(hash: js.Any): Unit = js.native
     
-    var weak: js.Any = js.native
+    /* private */ var weak: js.Any = js.native
   }
   /* static members */
   object StylableImportDependency {
@@ -58,8 +58,7 @@ object stylableDependenciesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createWeak(request: String, originModule: StylableModule, importDef: ImportDefinition): StylableImportDependency = (^.asInstanceOf[js.Dynamic].applyDynamic("createWeak")(request.asInstanceOf[js.Any], originModule.asInstanceOf[js.Any], importDef.asInstanceOf[js.Any])).asInstanceOf[StylableImportDependency]
+    inline def createWeak(request: String, originModule: StylableModule, importDef: ImportDefinition): StylableImportDependency = (^.asInstanceOf[js.Dynamic].applyDynamic("createWeak")(request.asInstanceOf[js.Any], originModule.asInstanceOf[js.Any], importDef.asInstanceOf[js.Any])).asInstanceOf[StylableImportDependency]
   }
   
   trait ImportDefinition extends StObject {
@@ -70,23 +69,18 @@ object stylableDependenciesMod {
   }
   object ImportDefinition {
     
-    @scala.inline
-    def apply(defaultImport: String, names: js.Array[String]): ImportDefinition = {
+    inline def apply(defaultImport: String, names: js.Array[String]): ImportDefinition = {
       val __obj = js.Dynamic.literal(defaultImport = defaultImport.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImportDefinition]
     }
     
-    @scala.inline
-    implicit class ImportDefinitionMutableBuilder[Self <: ImportDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: ImportDefinition](x: Self) {
       
-      @scala.inline
-      def setDefaultImport(value: String): Self = StObject.set(x, "defaultImport", value.asInstanceOf[js.Any])
+      inline def setDefaultImport(value: String): Self = StObject.set(x, "defaultImport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
     }
   }
 }

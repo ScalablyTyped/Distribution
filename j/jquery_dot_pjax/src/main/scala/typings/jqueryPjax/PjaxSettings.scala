@@ -55,64 +55,45 @@ trait PjaxSettings
 }
 object PjaxSettings {
   
-  @scala.inline
-  def apply(): PjaxSettings = {
+  inline def apply(): PjaxSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PjaxSettings]
   }
   
-  @scala.inline
-  implicit class PjaxSettingsMutableBuilder[Self <: PjaxSettings] (val x: Self) extends AnyVal {
+  extension [Self <: PjaxSettings](x: Self) {
     
-    @scala.inline
-    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+    inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
+    inline def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
     
-    @scala.inline
-    def setMaxCacheLength(value: Double): Self = StObject.set(x, "maxCacheLength", value.asInstanceOf[js.Any])
+    inline def setMaxCacheLength(value: Double): Self = StObject.set(x, "maxCacheLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCacheLengthUndefined: Self = StObject.set(x, "maxCacheLength", js.undefined)
+    inline def setMaxCacheLengthUndefined: Self = StObject.set(x, "maxCacheLength", js.undefined)
     
-    @scala.inline
-    def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+    inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
+    inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     
-    @scala.inline
-    def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
-    @scala.inline
-    def setScrollTo(value: Double | Boolean): Self = StObject.set(x, "scrollTo", value.asInstanceOf[js.Any])
+    inline def setScrollTo(value: Double | Boolean): Self = StObject.set(x, "scrollTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
+    inline def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
     
-    @scala.inline
-    def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String | js.Function0[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String | js.Function0[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionFunction0(value: () => String): Self = StObject.set(x, "version", js.Any.fromFunction0(value))
+    inline def setVersionFunction0(value: () => String): Self = StObject.set(x, "version", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -17,8 +17,7 @@ object useHighlightedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useHighlighted(hasContainerRefIsLoadingIsBrowsingDatasetSelected: HighlightedProps): js.Tuple3[Highlight, Dispatch[SetStateAction[Highlight]], MutableRefObject[Highlight]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHighlighted")(hasContainerRefIsLoadingIsBrowsingDatasetSelected.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[Highlight, Dispatch[SetStateAction[Highlight]], MutableRefObject[Highlight]]]
+  inline def useHighlighted(hasContainerRefIsLoadingIsBrowsingDatasetSelected: HighlightedProps): js.Tuple3[Highlight, Dispatch[SetStateAction[Highlight]], MutableRefObject[Highlight]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHighlighted")(hasContainerRefIsLoadingIsBrowsingDatasetSelected.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[Highlight, Dispatch[SetStateAction[Highlight]], MutableRefObject[Highlight]]]
   
   trait HighlightedProps extends StObject {
     
@@ -34,8 +33,7 @@ object useHighlightedMod {
   }
   object HighlightedProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       containerRef: MutableRefObject[HTMLElement],
       dataset: CombinedDataset,
       isBrowsing: Boolean,
@@ -45,26 +43,19 @@ object useHighlightedMod {
       __obj.asInstanceOf[HighlightedProps]
     }
     
-    @scala.inline
-    implicit class HighlightedPropsMutableBuilder[Self <: HighlightedProps] (val x: Self) extends AnyVal {
+    extension [Self <: HighlightedProps](x: Self) {
       
-      @scala.inline
-      def setContainerRef(value: MutableRefObject[HTMLElement]): Self = StObject.set(x, "containerRef", value.asInstanceOf[js.Any])
+      inline def setContainerRef(value: MutableRefObject[HTMLElement]): Self = StObject.set(x, "containerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataset(value: CombinedDataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+      inline def setDataset(value: CombinedDataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBrowsing(value: Boolean): Self = StObject.set(x, "isBrowsing", value.asInstanceOf[js.Any])
+      inline def setIsBrowsing(value: Boolean): Self = StObject.set(x, "isBrowsing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
+      inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: Selection): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Selection): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedNull: Self = StObject.set(x, "selected", null)
+      inline def setSelectedNull: Self = StObject.set(x, "selected", null)
     }
   }
 }

@@ -14,8 +14,7 @@ trait CreateURL extends StObject {
 }
 object CreateURL {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createURL: /* repeated */ js.Any => String,
     refine: /* repeated */ js.Any => js.Any,
     searchForItems: /* repeated */ js.Any => js.Any
@@ -24,16 +23,12 @@ object CreateURL {
     __obj.asInstanceOf[CreateURL]
   }
   
-  @scala.inline
-  implicit class CreateURLMutableBuilder[Self <: CreateURL] (val x: Self) extends AnyVal {
+  extension [Self <: CreateURL](x: Self) {
     
-    @scala.inline
-    def setCreateURL(value: /* repeated */ js.Any => String): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
+    inline def setCreateURL(value: /* repeated */ js.Any => String): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
+    inline def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearchForItems(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "searchForItems", js.Any.fromFunction1(value))
+    inline def setSearchForItems(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "searchForItems", js.Any.fromFunction1(value))
   }
 }

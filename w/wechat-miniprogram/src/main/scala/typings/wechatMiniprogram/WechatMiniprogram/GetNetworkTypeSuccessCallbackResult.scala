@@ -29,19 +29,15 @@ trait GetNetworkTypeSuccessCallbackResult extends StObject {
 }
 object GetNetworkTypeSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, networkType: wifi | `2g` | `3g` | `4g` | `5g` | unknown | none): GetNetworkTypeSuccessCallbackResult = {
+  inline def apply(errMsg: String, networkType: wifi | `2g` | `3g` | `4g` | `5g` | unknown | none): GetNetworkTypeSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], networkType = networkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNetworkTypeSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetNetworkTypeSuccessCallbackResultMutableBuilder[Self <: GetNetworkTypeSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetNetworkTypeSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkType(value: wifi | `2g` | `3g` | `4g` | `5g` | unknown | none): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
+    inline def setNetworkType(value: wifi | `2g` | `3g` | `4g` | `5g` | unknown | none): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
   }
 }

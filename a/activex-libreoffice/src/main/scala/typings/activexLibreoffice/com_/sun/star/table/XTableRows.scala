@@ -34,8 +34,7 @@ trait XTableRows
 }
 object XTableRows {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
@@ -52,13 +51,10 @@ object XTableRows {
     __obj.asInstanceOf[XTableRows]
   }
   
-  @scala.inline
-  implicit class XTableRowsMutableBuilder[Self <: XTableRows] (val x: Self) extends AnyVal {
+  extension [Self <: XTableRows](x: Self) {
     
-    @scala.inline
-    def setInsertByIndex(value: (Double, Double) => Unit): Self = StObject.set(x, "insertByIndex", js.Any.fromFunction2(value))
+    inline def setInsertByIndex(value: (Double, Double) => Unit): Self = StObject.set(x, "insertByIndex", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveByIndex(value: (Double, Double) => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction2(value))
+    inline def setRemoveByIndex(value: (Double, Double) => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction2(value))
   }
 }

@@ -10,16 +10,13 @@ trait Opts extends StObject {
 }
 object Opts {
   
-  @scala.inline
-  def apply(opts: Root): Opts = {
+  inline def apply(opts: Root): Opts = {
     val __obj = js.Dynamic.literal(opts = opts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Opts]
   }
   
-  @scala.inline
-  implicit class OptsMutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
+  extension [Self <: Opts](x: Self) {
     
-    @scala.inline
-    def setOpts(value: Root): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+    inline def setOpts(value: Root): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
   }
 }

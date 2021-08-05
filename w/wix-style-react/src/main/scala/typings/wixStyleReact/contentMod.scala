@@ -29,50 +29,36 @@ object contentMod {
   }
   object ContentProps {
     
-    @scala.inline
-    def apply(): ContentProps = {
+    inline def apply(): ContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContentProps]
     }
     
-    @scala.inline
-    implicit class ContentPropsMutableBuilder[Self <: ContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: ContentProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: String | ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String | ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setHideBottomScrollDivider(value: Boolean): Self = StObject.set(x, "hideBottomScrollDivider", value.asInstanceOf[js.Any])
+      inline def setHideBottomScrollDivider(value: Boolean): Self = StObject.set(x, "hideBottomScrollDivider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideBottomScrollDividerUndefined: Self = StObject.set(x, "hideBottomScrollDivider", js.undefined)
+      inline def setHideBottomScrollDividerUndefined: Self = StObject.set(x, "hideBottomScrollDivider", js.undefined)
       
-      @scala.inline
-      def setHideTopScrollDivider(value: Boolean): Self = StObject.set(x, "hideTopScrollDivider", value.asInstanceOf[js.Any])
+      inline def setHideTopScrollDivider(value: Boolean): Self = StObject.set(x, "hideTopScrollDivider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideTopScrollDividerUndefined: Self = StObject.set(x, "hideTopScrollDivider", js.undefined)
+      inline def setHideTopScrollDividerUndefined: Self = StObject.set(x, "hideTopScrollDivider", js.undefined)
       
-      @scala.inline
-      def setScrollProps(value: ScrollableContainerCommonProps): Self = StObject.set(x, "scrollProps", value.asInstanceOf[js.Any])
+      inline def setScrollProps(value: ScrollableContainerCommonProps): Self = StObject.set(x, "scrollProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPropsUndefined: Self = StObject.set(x, "scrollProps", js.undefined)
+      inline def setScrollPropsUndefined: Self = StObject.set(x, "scrollProps", js.undefined)
     }
   }
 }

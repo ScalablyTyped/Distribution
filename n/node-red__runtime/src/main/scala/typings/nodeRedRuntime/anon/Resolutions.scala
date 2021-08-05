@@ -19,34 +19,25 @@ trait Resolutions extends StObject {
 }
 object Resolutions {
   
-  @scala.inline
-  def apply(id: String, path: String, resolutions: String): Resolutions = {
+  inline def apply(id: String, path: String, resolutions: String): Resolutions = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], resolutions = resolutions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resolutions]
   }
   
-  @scala.inline
-  implicit class ResolutionsMutableBuilder[Self <: Resolutions] (val x: Self) extends AnyVal {
+  extension [Self <: Resolutions](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
+    inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
     
-    @scala.inline
-    def setResolutions(value: String): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
+    inline def setResolutions(value: String): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: ProjectUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: ProjectUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

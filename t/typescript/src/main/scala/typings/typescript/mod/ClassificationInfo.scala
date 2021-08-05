@@ -12,19 +12,15 @@ trait ClassificationInfo extends StObject {
 }
 object ClassificationInfo {
   
-  @scala.inline
-  def apply(classification: TokenClass, length: Double): ClassificationInfo = {
+  inline def apply(classification: TokenClass, length: Double): ClassificationInfo = {
     val __obj = js.Dynamic.literal(classification = classification.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassificationInfo]
   }
   
-  @scala.inline
-  implicit class ClassificationInfoMutableBuilder[Self <: ClassificationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ClassificationInfo](x: Self) {
     
-    @scala.inline
-    def setClassification(value: TokenClass): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
+    inline def setClassification(value: TokenClass): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

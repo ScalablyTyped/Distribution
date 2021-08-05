@@ -12,19 +12,15 @@ trait CtxTimeout extends StObject {
 }
 object CtxTimeout {
   
-  @scala.inline
-  def apply(ctx: Print, timeout: js.Any): CtxTimeout = {
+  inline def apply(ctx: Print, timeout: js.Any): CtxTimeout = {
     val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[CtxTimeout]
   }
   
-  @scala.inline
-  implicit class CtxTimeoutMutableBuilder[Self <: CtxTimeout] (val x: Self) extends AnyVal {
+  extension [Self <: CtxTimeout](x: Self) {
     
-    @scala.inline
-    def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

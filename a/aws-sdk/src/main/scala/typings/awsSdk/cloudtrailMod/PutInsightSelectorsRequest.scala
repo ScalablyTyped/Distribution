@@ -18,22 +18,17 @@ trait PutInsightSelectorsRequest extends StObject {
 }
 object PutInsightSelectorsRequest {
   
-  @scala.inline
-  def apply(InsightSelectors: InsightSelectors, TrailName: String): PutInsightSelectorsRequest = {
+  inline def apply(InsightSelectors: InsightSelectors, TrailName: String): PutInsightSelectorsRequest = {
     val __obj = js.Dynamic.literal(InsightSelectors = InsightSelectors.asInstanceOf[js.Any], TrailName = TrailName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutInsightSelectorsRequest]
   }
   
-  @scala.inline
-  implicit class PutInsightSelectorsRequestMutableBuilder[Self <: PutInsightSelectorsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutInsightSelectorsRequest](x: Self) {
     
-    @scala.inline
-    def setInsightSelectors(value: InsightSelectors): Self = StObject.set(x, "InsightSelectors", value.asInstanceOf[js.Any])
+    inline def setInsightSelectors(value: InsightSelectors): Self = StObject.set(x, "InsightSelectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsightSelectorsVarargs(value: InsightSelector*): Self = StObject.set(x, "InsightSelectors", js.Array(value :_*))
+    inline def setInsightSelectorsVarargs(value: InsightSelector*): Self = StObject.set(x, "InsightSelectors", js.Array(value :_*))
     
-    @scala.inline
-    def setTrailName(value: String): Self = StObject.set(x, "TrailName", value.asInstanceOf[js.Any])
+    inline def setTrailName(value: String): Self = StObject.set(x, "TrailName", value.asInstanceOf[js.Any])
   }
 }

@@ -8,21 +8,17 @@ object jqueryNotyStrings {
   
   @js.native
   sealed trait backdrop extends StObject
-  @scala.inline
-  def backdrop: backdrop = "backdrop".asInstanceOf[backdrop]
+  inline def backdrop: backdrop = "backdrop".asInstanceOf[backdrop]
   
   @js.native
   sealed trait button extends StObject
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
+  inline def button: button = "button".asInstanceOf[button]
   
   @js.native
   sealed trait click extends StObject
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
   sealed trait hover extends StObject
-  @scala.inline
-  def hover: hover = "hover".asInstanceOf[hover]
+  inline def hover: hover = "hover".asInstanceOf[hover]
 }

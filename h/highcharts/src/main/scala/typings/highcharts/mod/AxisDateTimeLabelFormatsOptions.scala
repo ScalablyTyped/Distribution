@@ -24,61 +24,43 @@ trait AxisDateTimeLabelFormatsOptions extends StObject {
 }
 object AxisDateTimeLabelFormatsOptions {
   
-  @scala.inline
-  def apply(): AxisDateTimeLabelFormatsOptions = {
+  inline def apply(): AxisDateTimeLabelFormatsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AxisDateTimeLabelFormatsOptions]
   }
   
-  @scala.inline
-  implicit class AxisDateTimeLabelFormatsOptionsMutableBuilder[Self <: AxisDateTimeLabelFormatsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AxisDateTimeLabelFormatsOptions](x: Self) {
     
-    @scala.inline
-    def setDay(value: String | AxisDateTimeLabelFormatsOptionsObject): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: String | AxisDateTimeLabelFormatsOptionsObject): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+    inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
-    @scala.inline
-    def setHour(value: String | AxisDateTimeLabelFormatsOptionsObject): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+    inline def setHour(value: String | AxisDateTimeLabelFormatsOptionsObject): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
+    inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
     
-    @scala.inline
-    def setMillisecond(value: String | AxisDateTimeLabelFormatsOptionsObject): Self = StObject.set(x, "millisecond", value.asInstanceOf[js.Any])
+    inline def setMillisecond(value: String | AxisDateTimeLabelFormatsOptionsObject): Self = StObject.set(x, "millisecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMillisecondUndefined: Self = StObject.set(x, "millisecond", js.undefined)
+    inline def setMillisecondUndefined: Self = StObject.set(x, "millisecond", js.undefined)
     
-    @scala.inline
-    def setMinute(value: String | AxisDateTimeLabelFormatsOptionsObject): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+    inline def setMinute(value: String | AxisDateTimeLabelFormatsOptionsObject): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
+    inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
     
-    @scala.inline
-    def setMonth(value: String | AxisDateTimeLabelFormatsOptionsObject): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: String | AxisDateTimeLabelFormatsOptionsObject): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+    inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
-    @scala.inline
-    def setSecond(value: String | AxisDateTimeLabelFormatsOptionsObject): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: String | AxisDateTimeLabelFormatsOptionsObject): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+    inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
     
-    @scala.inline
-    def setWeek(value: String | AxisDateTimeLabelFormatsOptionsObject): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+    inline def setWeek(value: String | AxisDateTimeLabelFormatsOptionsObject): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
+    inline def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
     
-    @scala.inline
-    def setYear(value: String | AxisDateTimeLabelFormatsOptionsObject): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: String | AxisDateTimeLabelFormatsOptionsObject): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+    inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
   }
 }

@@ -55,8 +55,7 @@ trait DatabaseNumberOfSet
 }
 object DatabaseNumberOfSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -95,28 +94,20 @@ object DatabaseNumberOfSet {
     __obj.asInstanceOf[DatabaseNumberOfSet]
   }
   
-  @scala.inline
-  implicit class DatabaseNumberOfSetMutableBuilder[Self <: DatabaseNumberOfSet] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseNumberOfSet](x: Self) {
     
-    @scala.inline
-    def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataBaseName(value: String): Self = StObject.set(x, "DataBaseName", value.asInstanceOf[js.Any])
+    inline def setDataBaseName(value: String): Self = StObject.set(x, "DataBaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataBaseResource(value: String): Self = StObject.set(x, "DataBaseResource", value.asInstanceOf[js.Any])
+    inline def setDataBaseResource(value: String): Self = StObject.set(x, "DataBaseResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataBaseURL(value: String): Self = StObject.set(x, "DataBaseURL", value.asInstanceOf[js.Any])
+    inline def setDataBaseURL(value: String): Self = StObject.set(x, "DataBaseURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataCommandType(value: Double): Self = StObject.set(x, "DataCommandType", value.asInstanceOf[js.Any])
+    inline def setDataCommandType(value: Double): Self = StObject.set(x, "DataCommandType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTableName(value: String): Self = StObject.set(x, "DataTableName", value.asInstanceOf[js.Any])
+    inline def setDataTableName(value: String): Self = StObject.set(x, "DataTableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetNumber(value: Double): Self = StObject.set(x, "SetNumber", value.asInstanceOf[js.Any])
+    inline def setSetNumber(value: Double): Self = StObject.set(x, "SetNumber", value.asInstanceOf[js.Any])
   }
 }

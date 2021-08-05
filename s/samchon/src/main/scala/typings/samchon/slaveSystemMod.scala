@@ -18,7 +18,7 @@ object slaveSystemMod {
     extends StObject
        with IProtocol {
     
-    var _Complete_process: js.Any = js.native
+    /* private */ var _Complete_process: js.Any = js.native
     
     /**
       * @hidden
@@ -28,7 +28,7 @@ object slaveSystemMod {
     /**
       * @hidden
       */
-    var communicator_ : ICommunicator = js.native
+    /* protected */ var communicator_ : ICommunicator = js.native
     
     /**
       * Sending message.

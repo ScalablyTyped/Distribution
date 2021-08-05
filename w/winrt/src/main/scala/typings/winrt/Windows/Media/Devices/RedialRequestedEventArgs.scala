@@ -9,8 +9,7 @@ trait RedialRequestedEventArgs
      with IRedialRequestedEventArgs
 object RedialRequestedEventArgs {
   
-  @scala.inline
-  def apply(handled: () => Unit): RedialRequestedEventArgs = {
+  inline def apply(handled: () => Unit): RedialRequestedEventArgs = {
     val __obj = js.Dynamic.literal(handled = js.Any.fromFunction0(handled))
     __obj.asInstanceOf[RedialRequestedEventArgs]
   }

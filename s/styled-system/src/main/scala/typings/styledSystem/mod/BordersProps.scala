@@ -12,8 +12,7 @@ trait BordersProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
     ]
 object BordersProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): BordersProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): BordersProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BordersProps[ThemeType]]
   }

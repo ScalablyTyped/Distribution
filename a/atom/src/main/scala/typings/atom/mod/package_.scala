@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def watchPath(
+inline def watchPath(
   rootPath: java.lang.String,
   options: js.Object,
   eventCallback: js.Function1[/* events */ typings.atom.mod.FilesystemChangeEvent, scala.Unit]

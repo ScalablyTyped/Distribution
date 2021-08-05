@@ -15,22 +15,17 @@ trait Recordunicodelabelactions extends StObject {
 }
 object Recordunicodelabelactions {
   
-  @scala.inline
-  def apply(action: String, label: String, unicode: String): Recordunicodelabelactions = {
+  inline def apply(action: String, label: String, unicode: String): Recordunicodelabelactions = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], unicode = unicode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Recordunicodelabelactions]
   }
   
-  @scala.inline
-  implicit class RecordunicodelabelactionsMutableBuilder[Self <: Recordunicodelabelactions] (val x: Self) extends AnyVal {
+  extension [Self <: Recordunicodelabelactions](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnicode(value: String): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
+    inline def setUnicode(value: String): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
   }
 }

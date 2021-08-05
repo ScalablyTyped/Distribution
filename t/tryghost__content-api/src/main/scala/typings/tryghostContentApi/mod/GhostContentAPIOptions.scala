@@ -28,34 +28,25 @@ trait GhostContentAPIOptions extends StObject {
 }
 object GhostContentAPIOptions {
   
-  @scala.inline
-  def apply(key: String, url: String, version: v2 | v3 | canary): GhostContentAPIOptions = {
+  inline def apply(key: String, url: String, version: v2 | v3 | canary): GhostContentAPIOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GhostContentAPIOptions]
   }
   
-  @scala.inline
-  implicit class GhostContentAPIOptionsMutableBuilder[Self <: GhostContentAPIOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GhostContentAPIOptions](x: Self) {
     
-    @scala.inline
-    def setGhostPath(value: String): Self = StObject.set(x, "ghostPath", value.asInstanceOf[js.Any])
+    inline def setGhostPath(value: String): Self = StObject.set(x, "ghostPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGhostPathUndefined: Self = StObject.set(x, "ghostPath", js.undefined)
+    inline def setGhostPathUndefined: Self = StObject.set(x, "ghostPath", js.undefined)
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: v2 | v3 | canary): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: v2 | v3 | canary): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

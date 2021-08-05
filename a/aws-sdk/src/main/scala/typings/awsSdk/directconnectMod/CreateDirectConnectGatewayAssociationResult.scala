@@ -13,19 +13,15 @@ trait CreateDirectConnectGatewayAssociationResult extends StObject {
 }
 object CreateDirectConnectGatewayAssociationResult {
   
-  @scala.inline
-  def apply(): CreateDirectConnectGatewayAssociationResult = {
+  inline def apply(): CreateDirectConnectGatewayAssociationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDirectConnectGatewayAssociationResult]
   }
   
-  @scala.inline
-  implicit class CreateDirectConnectGatewayAssociationResultMutableBuilder[Self <: CreateDirectConnectGatewayAssociationResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDirectConnectGatewayAssociationResult](x: Self) {
     
-    @scala.inline
-    def setDirectConnectGatewayAssociation(value: DirectConnectGatewayAssociation): Self = StObject.set(x, "directConnectGatewayAssociation", value.asInstanceOf[js.Any])
+    inline def setDirectConnectGatewayAssociation(value: DirectConnectGatewayAssociation): Self = StObject.set(x, "directConnectGatewayAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectConnectGatewayAssociationUndefined: Self = StObject.set(x, "directConnectGatewayAssociation", js.undefined)
+    inline def setDirectConnectGatewayAssociationUndefined: Self = StObject.set(x, "directConnectGatewayAssociation", js.undefined)
   }
 }

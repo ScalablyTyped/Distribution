@@ -17,25 +17,19 @@ trait ReferenceEntry
 }
 object ReferenceEntry {
   
-  @scala.inline
-  def apply(fileName: java.lang.String, isDefinition: Boolean, isWriteAccess: Boolean, textSpan: TextSpan): ReferenceEntry = {
+  inline def apply(fileName: java.lang.String, isDefinition: Boolean, isWriteAccess: Boolean, textSpan: TextSpan): ReferenceEntry = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], isDefinition = isDefinition.asInstanceOf[js.Any], isWriteAccess = isWriteAccess.asInstanceOf[js.Any], textSpan = textSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceEntry]
   }
   
-  @scala.inline
-  implicit class ReferenceEntryMutableBuilder[Self <: ReferenceEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ReferenceEntry](x: Self) {
     
-    @scala.inline
-    def setIsDefinition(value: Boolean): Self = StObject.set(x, "isDefinition", value.asInstanceOf[js.Any])
+    inline def setIsDefinition(value: Boolean): Self = StObject.set(x, "isDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInString(value: `true`): Self = StObject.set(x, "isInString", value.asInstanceOf[js.Any])
+    inline def setIsInString(value: `true`): Self = StObject.set(x, "isInString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInStringUndefined: Self = StObject.set(x, "isInString", js.undefined)
+    inline def setIsInStringUndefined: Self = StObject.set(x, "isInString", js.undefined)
     
-    @scala.inline
-    def setIsWriteAccess(value: Boolean): Self = StObject.set(x, "isWriteAccess", value.asInstanceOf[js.Any])
+    inline def setIsWriteAccess(value: Boolean): Self = StObject.set(x, "isWriteAccess", value.asInstanceOf[js.Any])
   }
 }

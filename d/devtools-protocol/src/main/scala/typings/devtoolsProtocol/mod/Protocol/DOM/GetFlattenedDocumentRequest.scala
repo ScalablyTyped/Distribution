@@ -21,25 +21,19 @@ trait GetFlattenedDocumentRequest extends StObject {
 }
 object GetFlattenedDocumentRequest {
   
-  @scala.inline
-  def apply(): GetFlattenedDocumentRequest = {
+  inline def apply(): GetFlattenedDocumentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFlattenedDocumentRequest]
   }
   
-  @scala.inline
-  implicit class GetFlattenedDocumentRequestMutableBuilder[Self <: GetFlattenedDocumentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFlattenedDocumentRequest](x: Self) {
     
-    @scala.inline
-    def setDepth(value: integer): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: integer): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+    inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
-    @scala.inline
-    def setPierce(value: Boolean): Self = StObject.set(x, "pierce", value.asInstanceOf[js.Any])
+    inline def setPierce(value: Boolean): Self = StObject.set(x, "pierce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPierceUndefined: Self = StObject.set(x, "pierce", js.undefined)
+    inline def setPierceUndefined: Self = StObject.set(x, "pierce", js.undefined)
   }
 }

@@ -15,28 +15,21 @@ trait TimelineGroupBase extends StObject {
 }
 object TimelineGroupBase {
   
-  @scala.inline
-  def apply(id: Id): TimelineGroupBase = {
+  inline def apply(id: Id): TimelineGroupBase = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineGroupBase]
   }
   
-  @scala.inline
-  implicit class TimelineGroupBaseMutableBuilder[Self <: TimelineGroupBase] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineGroupBase](x: Self) {
     
-    @scala.inline
-    def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightTitle(value: ReactNode): Self = StObject.set(x, "rightTitle", value.asInstanceOf[js.Any])
+    inline def setRightTitle(value: ReactNode): Self = StObject.set(x, "rightTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightTitleUndefined: Self = StObject.set(x, "rightTitle", js.undefined)
+    inline def setRightTitleUndefined: Self = StObject.set(x, "rightTitle", js.undefined)
     
-    @scala.inline
-    def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

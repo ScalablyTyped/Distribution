@@ -28,29 +28,22 @@ trait AnimationTriggerMetadata
 }
 object AnimationTriggerMetadata {
   
-  @scala.inline
-  def apply(definitions: js.Array[AnimationMetadata], name: String, `type`: AnimationMetadataType): AnimationTriggerMetadata = {
+  inline def apply(definitions: js.Array[AnimationMetadata], name: String, `type`: AnimationMetadataType): AnimationTriggerMetadata = {
     val __obj = js.Dynamic.literal(definitions = definitions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationTriggerMetadata]
   }
   
-  @scala.inline
-  implicit class AnimationTriggerMetadataMutableBuilder[Self <: AnimationTriggerMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationTriggerMetadata](x: Self) {
     
-    @scala.inline
-    def setDefinitions(value: js.Array[AnimationMetadata]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
+    inline def setDefinitions(value: js.Array[AnimationMetadata]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionsVarargs(value: AnimationMetadata*): Self = StObject.set(x, "definitions", js.Array(value :_*))
+    inline def setDefinitionsVarargs(value: AnimationMetadata*): Self = StObject.set(x, "definitions", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: `0`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: `0`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsNull: Self = StObject.set(x, "options", null)
+    inline def setOptionsNull: Self = StObject.set(x, "options", null)
   }
 }

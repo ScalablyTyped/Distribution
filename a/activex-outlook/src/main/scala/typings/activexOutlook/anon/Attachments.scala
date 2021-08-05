@@ -13,8 +13,7 @@ trait Attachments extends StObject {
 }
 object Attachments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Attachments: AttachmentSelection,
     CommandBar: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any
   ): Attachments = {
@@ -22,14 +21,11 @@ object Attachments {
     __obj.asInstanceOf[Attachments]
   }
   
-  @scala.inline
-  implicit class AttachmentsMutableBuilder[Self <: Attachments] (val x: Self) extends AnyVal {
+  extension [Self <: Attachments](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: AttachmentSelection): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: AttachmentSelection): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandBar(
+    inline def setCommandBar(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any
     ): Self = StObject.set(x, "CommandBar", value.asInstanceOf[js.Any])
   }

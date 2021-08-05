@@ -21,49 +21,35 @@ trait BaseMessage extends StObject {
 }
 object BaseMessage {
   
-  @scala.inline
-  def apply(): BaseMessage = {
+  inline def apply(): BaseMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseMessage]
   }
   
-  @scala.inline
-  implicit class BaseMessageMutableBuilder[Self <: BaseMessage] (val x: Self) extends AnyVal {
+  extension [Self <: BaseMessage](x: Self) {
     
-    @scala.inline
-    def setAndroid(value: AndroidConfig): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+    inline def setAndroid(value: AndroidConfig): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
+    inline def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
     
-    @scala.inline
-    def setApns(value: ApnsConfig): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
+    inline def setApns(value: ApnsConfig): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApnsUndefined: Self = StObject.set(x, "apns", js.undefined)
+    inline def setApnsUndefined: Self = StObject.set(x, "apns", js.undefined)
     
-    @scala.inline
-    def setData(value: StringDictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setFcmOptions(value: FcmOptions): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
+    inline def setFcmOptions(value: FcmOptions): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFcmOptionsUndefined: Self = StObject.set(x, "fcmOptions", js.undefined)
+    inline def setFcmOptionsUndefined: Self = StObject.set(x, "fcmOptions", js.undefined)
     
-    @scala.inline
-    def setNotification(value: Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
-    @scala.inline
-    def setWebpush(value: WebpushConfig): Self = StObject.set(x, "webpush", value.asInstanceOf[js.Any])
+    inline def setWebpush(value: WebpushConfig): Self = StObject.set(x, "webpush", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebpushUndefined: Self = StObject.set(x, "webpush", js.undefined)
+    inline def setWebpushUndefined: Self = StObject.set(x, "webpush", js.undefined)
   }
 }

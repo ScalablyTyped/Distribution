@@ -19,8 +19,7 @@ trait AnimationEnd extends StObject {
 }
 object AnimationEnd {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animationEnd: () => Unit,
     autoRotate: Boolean,
     destination: LagLng,
@@ -31,22 +30,16 @@ object AnimationEnd {
     __obj.asInstanceOf[AnimationEnd]
   }
   
-  @scala.inline
-  implicit class AnimationEndMutableBuilder[Self <: AnimationEnd] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationEnd](x: Self) {
     
-    @scala.inline
-    def setAnimationEnd(value: () => Unit): Self = StObject.set(x, "animationEnd", js.Any.fromFunction0(value))
+    inline def setAnimationEnd(value: () => Unit): Self = StObject.set(x, "animationEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
+    inline def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestination(value: LagLng): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: LagLng): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerId(value: Double): Self = StObject.set(x, "markerId", value.asInstanceOf[js.Any])
+    inline def setMarkerId(value: Double): Self = StObject.set(x, "markerId", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ trait ExecutionContext extends StObject {
 }
 object ExecutionContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errors: js.Array[GraphQLError],
     fragments: StringDictionary[FragmentDefinition],
     operation: OperationDefinition,
@@ -35,28 +34,20 @@ object ExecutionContext {
     __obj.asInstanceOf[ExecutionContext]
   }
   
-  @scala.inline
-  implicit class ExecutionContextMutableBuilder[Self <: ExecutionContext] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionContext](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Array[GraphQLError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[GraphQLError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: GraphQLError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: GraphQLError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setFragments(value: StringDictionary[FragmentDefinition]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
+    inline def setFragments(value: StringDictionary[FragmentDefinition]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: OperationDefinition): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: OperationDefinition): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootValue(value: js.Any): Self = StObject.set(x, "rootValue", value.asInstanceOf[js.Any])
+    inline def setRootValue(value: js.Any): Self = StObject.set(x, "rootValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: GraphQLSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: GraphQLSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "variableValues", value.asInstanceOf[js.Any])
+    inline def setVariableValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "variableValues", value.asInstanceOf[js.Any])
   }
 }

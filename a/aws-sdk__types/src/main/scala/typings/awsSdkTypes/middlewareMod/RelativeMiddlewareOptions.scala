@@ -23,34 +23,25 @@ trait RelativeMiddlewareOptions extends StObject {
 }
 object RelativeMiddlewareOptions {
   
-  @scala.inline
-  def apply(relation: Relation, toMiddleware: String): RelativeMiddlewareOptions = {
+  inline def apply(relation: Relation, toMiddleware: String): RelativeMiddlewareOptions = {
     val __obj = js.Dynamic.literal(relation = relation.asInstanceOf[js.Any], toMiddleware = toMiddleware.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelativeMiddlewareOptions]
   }
   
-  @scala.inline
-  implicit class RelativeMiddlewareOptionsMutableBuilder[Self <: RelativeMiddlewareOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RelativeMiddlewareOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRelation(value: Relation): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
+    inline def setRelation(value: Relation): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setToMiddleware(value: String): Self = StObject.set(x, "toMiddleware", value.asInstanceOf[js.Any])
+    inline def setToMiddleware(value: String): Self = StObject.set(x, "toMiddleware", value.asInstanceOf[js.Any])
   }
 }

@@ -15,34 +15,25 @@ trait OptimisticResponseConfig extends StObject {
 }
 object OptimisticResponseConfig {
   
-  @scala.inline
-  def apply(operation: OperationDescriptor): OptimisticResponseConfig = {
+  inline def apply(operation: OperationDescriptor): OptimisticResponseConfig = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptimisticResponseConfig]
   }
   
-  @scala.inline
-  implicit class OptimisticResponseConfigMutableBuilder[Self <: OptimisticResponseConfig] (val x: Self) extends AnyVal {
+  extension [Self <: OptimisticResponseConfig](x: Self) {
     
-    @scala.inline
-    def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: PayloadData): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: PayloadData): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseNull: Self = StObject.set(x, "response", null)
+    inline def setResponseNull: Self = StObject.set(x, "response", null)
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
-    @scala.inline
-    def setUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "updater", js.Any.fromFunction2(value))
+    inline def setUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "updater", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdaterNull: Self = StObject.set(x, "updater", null)
+    inline def setUpdaterNull: Self = StObject.set(x, "updater", null)
     
-    @scala.inline
-    def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
+    inline def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
   }
 }

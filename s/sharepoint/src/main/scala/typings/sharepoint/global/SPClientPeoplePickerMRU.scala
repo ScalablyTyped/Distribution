@@ -29,29 +29,25 @@ object SPClientPeoplePickerMRU {
   
   // = "ClientPeoplePickerMRU";
   /* static member */
-  @scala.inline
-  def GetSPClientPeoplePickerMRU(): typings.sharepoint.SPClientPeoplePickerMRU = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSPClientPeoplePickerMRU")().asInstanceOf[typings.sharepoint.SPClientPeoplePickerMRU]
+  inline def GetSPClientPeoplePickerMRU(): typings.sharepoint.SPClientPeoplePickerMRU = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSPClientPeoplePickerMRU")().asInstanceOf[typings.sharepoint.SPClientPeoplePickerMRU]
   
   // = 1;
   /* static member */
   @JSGlobal("SPClientPeoplePickerMRU.MaxPPMRUItems")
   @js.native
   def MaxPPMRUItems: Double = js.native
-  @scala.inline
-  def MaxPPMRUItems_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxPPMRUItems")(x.asInstanceOf[js.Any])
+  inline def MaxPPMRUItems_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxPPMRUItems")(x.asInstanceOf[js.Any])
   
   // = 200;
   /* static member */
   @JSGlobal("SPClientPeoplePickerMRU.PPMRUDomLocalStoreKey")
   @js.native
   def PPMRUDomLocalStoreKey: String = js.native
-  @scala.inline
-  def PPMRUDomLocalStoreKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PPMRUDomLocalStoreKey")(x.asInstanceOf[js.Any])
+  inline def PPMRUDomLocalStoreKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PPMRUDomLocalStoreKey")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SPClientPeoplePickerMRU.PPMRUVersion")
   @js.native
   def PPMRUVersion: Double = js.native
-  @scala.inline
-  def PPMRUVersion_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PPMRUVersion")(x.asInstanceOf[js.Any])
+  inline def PPMRUVersion_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PPMRUVersion")(x.asInstanceOf[js.Any])
 }

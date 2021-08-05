@@ -19,6 +19,5 @@ object DisplayObject {
   @JSGlobal("createjs.DisplayObject.suppressCrossDomainErrors")
   @js.native
   def suppressCrossDomainErrors: Boolean = js.native
-  @scala.inline
-  def suppressCrossDomainErrors_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suppressCrossDomainErrors")(x.asInstanceOf[js.Any])
+  inline def suppressCrossDomainErrors_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suppressCrossDomainErrors")(x.asInstanceOf[js.Any])
 }

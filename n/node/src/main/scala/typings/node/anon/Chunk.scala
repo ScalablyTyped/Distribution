@@ -13,19 +13,15 @@ trait Chunk extends StObject {
 }
 object Chunk {
   
-  @scala.inline
-  def apply(chunk: js.Any, encoding: BufferEncoding): Chunk = {
+  inline def apply(chunk: js.Any, encoding: BufferEncoding): Chunk = {
     val __obj = js.Dynamic.literal(chunk = chunk.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Chunk]
   }
   
-  @scala.inline
-  implicit class ChunkMutableBuilder[Self <: Chunk] (val x: Self) extends AnyVal {
+  extension [Self <: Chunk](x: Self) {
     
-    @scala.inline
-    def setChunk(value: js.Any): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
+    inline def setChunk(value: js.Any): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
   }
 }

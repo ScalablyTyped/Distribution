@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.SolutionObject")
 @js.native
-class SolutionObject protected ()
+/* private */ class SolutionObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.SolutionObject {
   
   /* CompleteClass */
   override val DOM: IXMLDOMDocument = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.SolutionObject_typekey")
   var InfoPathDotSolutionObject_typekey: typings.activexInfopath.InfoPath.SolutionObject = js.native
   

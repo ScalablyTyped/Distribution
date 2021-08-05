@@ -21,13 +21,11 @@ object SidebarToggleRegion {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleRegion.Left")
   @js.native
   def Left: SidebarToggleRegion = js.native
-  @scala.inline
-  def Left_=(x: SidebarToggleRegion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Left")(x.asInstanceOf[js.Any])
+  inline def Left_=(x: SidebarToggleRegion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Left")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleRegion.Right")
   @js.native
   def Right: SidebarToggleRegion = js.native
-  @scala.inline
-  def Right_=(x: SidebarToggleRegion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Right")(x.asInstanceOf[js.Any])
+  inline def Right_=(x: SidebarToggleRegion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Right")(x.asInstanceOf[js.Any])
 }

@@ -20,24 +20,20 @@ object VerticalAlignments {
   @JSImport("react-foundation/enums", "VerticalAlignments.BOTTOM")
   @js.native
   def BOTTOM: VerticalAlignments = js.native
-  @scala.inline
-  def BOTTOM_=(x: VerticalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOTTOM")(x.asInstanceOf[js.Any])
+  inline def BOTTOM_=(x: VerticalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOTTOM")(x.asInstanceOf[js.Any])
   
   @JSImport("react-foundation/enums", "VerticalAlignments.MIDDLE")
   @js.native
   def MIDDLE: VerticalAlignments = js.native
-  @scala.inline
-  def MIDDLE_=(x: VerticalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIDDLE")(x.asInstanceOf[js.Any])
+  inline def MIDDLE_=(x: VerticalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIDDLE")(x.asInstanceOf[js.Any])
   
   @JSImport("react-foundation/enums", "VerticalAlignments.STRETCH")
   @js.native
   def STRETCH: VerticalAlignments = js.native
-  @scala.inline
-  def STRETCH_=(x: VerticalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRETCH")(x.asInstanceOf[js.Any])
+  inline def STRETCH_=(x: VerticalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRETCH")(x.asInstanceOf[js.Any])
   
   @JSImport("react-foundation/enums", "VerticalAlignments.TOP")
   @js.native
   def TOP: VerticalAlignments = js.native
-  @scala.inline
-  def TOP_=(x: VerticalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP")(x.asInstanceOf[js.Any])
+  inline def TOP_=(x: VerticalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP")(x.asInstanceOf[js.Any])
 }

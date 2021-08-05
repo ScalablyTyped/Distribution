@@ -21,41 +21,35 @@ object DatabaseType {
   @JSImport("mendixmodelsdk", "settings.DatabaseType.Db2")
   @js.native
   def Db2: typings.mendixmodelsdk.settingsMod.settings.DatabaseType = js.native
-  @scala.inline
-  def Db2_=(x: typings.mendixmodelsdk.settingsMod.settings.DatabaseType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Db2")(x.asInstanceOf[js.Any])
+  inline def Db2_=(x: typings.mendixmodelsdk.settingsMod.settings.DatabaseType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Db2")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "settings.DatabaseType.Hsqldb")
   @js.native
   def Hsqldb: typings.mendixmodelsdk.settingsMod.settings.DatabaseType = js.native
-  @scala.inline
-  def Hsqldb_=(x: typings.mendixmodelsdk.settingsMod.settings.DatabaseType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hsqldb")(x.asInstanceOf[js.Any])
+  inline def Hsqldb_=(x: typings.mendixmodelsdk.settingsMod.settings.DatabaseType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hsqldb")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "settings.DatabaseType.MySql")
   @js.native
   def MySql: typings.mendixmodelsdk.settingsMod.settings.DatabaseType = js.native
-  @scala.inline
-  def MySql_=(x: typings.mendixmodelsdk.settingsMod.settings.DatabaseType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MySql")(x.asInstanceOf[js.Any])
+  inline def MySql_=(x: typings.mendixmodelsdk.settingsMod.settings.DatabaseType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MySql")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "settings.DatabaseType.Oracle")
   @js.native
   def Oracle: typings.mendixmodelsdk.settingsMod.settings.DatabaseType = js.native
-  @scala.inline
-  def Oracle_=(x: typings.mendixmodelsdk.settingsMod.settings.DatabaseType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Oracle")(x.asInstanceOf[js.Any])
+  inline def Oracle_=(x: typings.mendixmodelsdk.settingsMod.settings.DatabaseType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Oracle")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "settings.DatabaseType.PostgreSql")
   @js.native
   def PostgreSql: typings.mendixmodelsdk.settingsMod.settings.DatabaseType = js.native
-  @scala.inline
-  def PostgreSql_=(x: typings.mendixmodelsdk.settingsMod.settings.DatabaseType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PostgreSql")(x.asInstanceOf[js.Any])
+  inline def PostgreSql_=(x: typings.mendixmodelsdk.settingsMod.settings.DatabaseType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PostgreSql")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "settings.DatabaseType.SqlServer")
   @js.native
   def SqlServer: typings.mendixmodelsdk.settingsMod.settings.DatabaseType = js.native
-  @scala.inline
-  def SqlServer_=(x: typings.mendixmodelsdk.settingsMod.settings.DatabaseType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SqlServer")(x.asInstanceOf[js.Any])
+  inline def SqlServer_=(x: typings.mendixmodelsdk.settingsMod.settings.DatabaseType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SqlServer")(x.asInstanceOf[js.Any])
 }

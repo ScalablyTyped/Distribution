@@ -17,13 +17,11 @@ object componentsHorizontalMenuConstantsMod {
     @JSImport("wix-ui-core/dist/standalone/src/components/horizontal-menu/constants", "HORIZONTAL_MENU_METADATA.dataHooks")
     @js.native
     def dataHooks: Container = js.native
-    @scala.inline
-    def dataHooks_=(x: Container): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataHooks")(x.asInstanceOf[js.Any])
+    inline def dataHooks_=(x: Container): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataHooks")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/standalone/src/components/horizontal-menu/constants", "HORIZONTAL_MENU_METADATA.displayNames")
     @js.native
     def displayNames: ColumnsLayout = js.native
-    @scala.inline
-    def displayNames_=(x: ColumnsLayout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayNames")(x.asInstanceOf[js.Any])
+    inline def displayNames_=(x: ColumnsLayout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayNames")(x.asInstanceOf[js.Any])
   }
 }

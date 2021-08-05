@@ -43,58 +43,41 @@ trait CreateDomainConfigurationRequest extends StObject {
 }
 object CreateDomainConfigurationRequest {
   
-  @scala.inline
-  def apply(domainConfigurationName: DomainConfigurationName): CreateDomainConfigurationRequest = {
+  inline def apply(domainConfigurationName: DomainConfigurationName): CreateDomainConfigurationRequest = {
     val __obj = js.Dynamic.literal(domainConfigurationName = domainConfigurationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDomainConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class CreateDomainConfigurationRequestMutableBuilder[Self <: CreateDomainConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDomainConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setAuthorizerConfig(value: AuthorizerConfig): Self = StObject.set(x, "authorizerConfig", value.asInstanceOf[js.Any])
+    inline def setAuthorizerConfig(value: AuthorizerConfig): Self = StObject.set(x, "authorizerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizerConfigUndefined: Self = StObject.set(x, "authorizerConfig", js.undefined)
+    inline def setAuthorizerConfigUndefined: Self = StObject.set(x, "authorizerConfig", js.undefined)
     
-    @scala.inline
-    def setDomainConfigurationName(value: DomainConfigurationName): Self = StObject.set(x, "domainConfigurationName", value.asInstanceOf[js.Any])
+    inline def setDomainConfigurationName(value: DomainConfigurationName): Self = StObject.set(x, "domainConfigurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
-    @scala.inline
-    def setServerCertificateArns(value: ServerCertificateArns): Self = StObject.set(x, "serverCertificateArns", value.asInstanceOf[js.Any])
+    inline def setServerCertificateArns(value: ServerCertificateArns): Self = StObject.set(x, "serverCertificateArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCertificateArnsUndefined: Self = StObject.set(x, "serverCertificateArns", js.undefined)
+    inline def setServerCertificateArnsUndefined: Self = StObject.set(x, "serverCertificateArns", js.undefined)
     
-    @scala.inline
-    def setServerCertificateArnsVarargs(value: AcmCertificateArn*): Self = StObject.set(x, "serverCertificateArns", js.Array(value :_*))
+    inline def setServerCertificateArnsVarargs(value: AcmCertificateArn*): Self = StObject.set(x, "serverCertificateArns", js.Array(value :_*))
     
-    @scala.inline
-    def setServiceType(value: ServiceType): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: ServiceType): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceTypeUndefined: Self = StObject.set(x, "serviceType", js.undefined)
+    inline def setServiceTypeUndefined: Self = StObject.set(x, "serviceType", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setValidationCertificateArn(value: AcmCertificateArn): Self = StObject.set(x, "validationCertificateArn", value.asInstanceOf[js.Any])
+    inline def setValidationCertificateArn(value: AcmCertificateArn): Self = StObject.set(x, "validationCertificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationCertificateArnUndefined: Self = StObject.set(x, "validationCertificateArn", js.undefined)
+    inline def setValidationCertificateArnUndefined: Self = StObject.set(x, "validationCertificateArn", js.undefined)
   }
 }

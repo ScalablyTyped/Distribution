@@ -35,52 +35,38 @@ object basicTooltipMod {
   }
   object BasicTooltipProps {
     
-    @scala.inline
-    def apply(): BasicTooltipProps = {
+    inline def apply(): BasicTooltipProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BasicTooltipProps]
     }
     
-    @scala.inline
-    implicit class BasicTooltipPropsMutableBuilder[Self <: BasicTooltipProps] (val x: Self) extends AnyVal {
+    extension [Self <: BasicTooltipProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setEnableChip(value: Boolean): Self = StObject.set(x, "enableChip", value.asInstanceOf[js.Any])
+      inline def setEnableChip(value: Boolean): Self = StObject.set(x, "enableChip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableChipUndefined: Self = StObject.set(x, "enableChip", js.undefined)
+      inline def setEnableChipUndefined: Self = StObject.set(x, "enableChip", js.undefined)
       
-      @scala.inline
-      def setFormat(
+      inline def setFormat(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DataFormatter */ js.Any
       ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setId(value: ReactNode): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: ReactNode): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setRenderContent(value: () => Element): Self = StObject.set(x, "renderContent", js.Any.fromFunction0(value))
+      inline def setRenderContent(value: () => Element): Self = StObject.set(x, "renderContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRenderContentUndefined: Self = StObject.set(x, "renderContent", js.undefined)
+      inline def setRenderContentUndefined: Self = StObject.set(x, "renderContent", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double | String | Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double | String | Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

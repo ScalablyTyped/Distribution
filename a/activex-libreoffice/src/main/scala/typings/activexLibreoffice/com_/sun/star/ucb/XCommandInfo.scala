@@ -60,8 +60,7 @@ trait XCommandInfo
 }
 object XCommandInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Commands: SafeArray[CommandInfo],
     acquire: () => Unit,
     getCommandInfoByHandle: Double => CommandInfo,
@@ -76,25 +75,18 @@ object XCommandInfo {
     __obj.asInstanceOf[XCommandInfo]
   }
   
-  @scala.inline
-  implicit class XCommandInfoMutableBuilder[Self <: XCommandInfo] (val x: Self) extends AnyVal {
+  extension [Self <: XCommandInfo](x: Self) {
     
-    @scala.inline
-    def setCommands(value: SafeArray[CommandInfo]): Self = StObject.set(x, "Commands", value.asInstanceOf[js.Any])
+    inline def setCommands(value: SafeArray[CommandInfo]): Self = StObject.set(x, "Commands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCommandInfoByHandle(value: Double => CommandInfo): Self = StObject.set(x, "getCommandInfoByHandle", js.Any.fromFunction1(value))
+    inline def setGetCommandInfoByHandle(value: Double => CommandInfo): Self = StObject.set(x, "getCommandInfoByHandle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCommandInfoByName(value: String => CommandInfo): Self = StObject.set(x, "getCommandInfoByName", js.Any.fromFunction1(value))
+    inline def setGetCommandInfoByName(value: String => CommandInfo): Self = StObject.set(x, "getCommandInfoByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCommands(value: () => SafeArray[CommandInfo]): Self = StObject.set(x, "getCommands", js.Any.fromFunction0(value))
+    inline def setGetCommands(value: () => SafeArray[CommandInfo]): Self = StObject.set(x, "getCommands", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasCommandByHandle(value: Double => Boolean): Self = StObject.set(x, "hasCommandByHandle", js.Any.fromFunction1(value))
+    inline def setHasCommandByHandle(value: Double => Boolean): Self = StObject.set(x, "hasCommandByHandle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasCommandByName(value: String => Boolean): Self = StObject.set(x, "hasCommandByName", js.Any.fromFunction1(value))
+    inline def setHasCommandByName(value: String => Boolean): Self = StObject.set(x, "hasCommandByName", js.Any.fromFunction1(value))
   }
 }

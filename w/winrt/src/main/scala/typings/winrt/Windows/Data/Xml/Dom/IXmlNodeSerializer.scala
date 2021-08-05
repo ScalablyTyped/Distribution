@@ -12,19 +12,15 @@ trait IXmlNodeSerializer extends StObject {
 }
 object IXmlNodeSerializer {
   
-  @scala.inline
-  def apply(getXml: () => String, innerText: String): IXmlNodeSerializer = {
+  inline def apply(getXml: () => String, innerText: String): IXmlNodeSerializer = {
     val __obj = js.Dynamic.literal(getXml = js.Any.fromFunction0(getXml), innerText = innerText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IXmlNodeSerializer]
   }
   
-  @scala.inline
-  implicit class IXmlNodeSerializerMutableBuilder[Self <: IXmlNodeSerializer] (val x: Self) extends AnyVal {
+  extension [Self <: IXmlNodeSerializer](x: Self) {
     
-    @scala.inline
-    def setGetXml(value: () => String): Self = StObject.set(x, "getXml", js.Any.fromFunction0(value))
+    inline def setGetXml(value: () => String): Self = StObject.set(x, "getXml", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInnerText(value: String): Self = StObject.set(x, "innerText", value.asInstanceOf[js.Any])
+    inline def setInnerText(value: String): Self = StObject.set(x, "innerText", value.asInstanceOf[js.Any])
   }
 }

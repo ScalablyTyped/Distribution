@@ -15,31 +15,23 @@ trait AllowColumnDragging extends StObject {
 }
 object AllowColumnDragging {
   
-  @scala.inline
-  def apply(): AllowColumnDragging = {
+  inline def apply(): AllowColumnDragging = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowColumnDragging]
   }
   
-  @scala.inline
-  implicit class AllowColumnDraggingMutableBuilder[Self <: AllowColumnDragging] (val x: Self) extends AnyVal {
+  extension [Self <: AllowColumnDragging](x: Self) {
     
-    @scala.inline
-    def setAllowColumnDragging(value: Boolean): Self = StObject.set(x, "allowColumnDragging", value.asInstanceOf[js.Any])
+    inline def setAllowColumnDragging(value: Boolean): Self = StObject.set(x, "allowColumnDragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowColumnDraggingUndefined: Self = StObject.set(x, "allowColumnDragging", js.undefined)
+    inline def setAllowColumnDraggingUndefined: Self = StObject.set(x, "allowColumnDragging", js.undefined)
     
-    @scala.inline
-    def setEmptyPanelText(value: String): Self = StObject.set(x, "emptyPanelText", value.asInstanceOf[js.Any])
+    inline def setEmptyPanelText(value: String): Self = StObject.set(x, "emptyPanelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyPanelTextUndefined: Self = StObject.set(x, "emptyPanelText", js.undefined)
+    inline def setEmptyPanelTextUndefined: Self = StObject.set(x, "emptyPanelText", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean | auto): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean | auto): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

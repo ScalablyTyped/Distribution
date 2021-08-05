@@ -11,6 +11,5 @@ object popoverUtilsGetArrowShiftMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getArrowShift(shift: Double, direction: String): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getArrowShift")(shift.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
+  inline def getArrowShift(shift: Double, direction: String): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getArrowShift")(shift.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
 }

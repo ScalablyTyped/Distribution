@@ -14,31 +14,23 @@ trait OauthErrorOptions extends StObject {
 }
 object OauthErrorOptions {
   
-  @scala.inline
-  def apply(): OauthErrorOptions = {
+  inline def apply(): OauthErrorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OauthErrorOptions]
   }
   
-  @scala.inline
-  implicit class OauthErrorOptionsMutableBuilder[Self <: OauthErrorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OauthErrorOptions](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setError_description(value: String): Self = StObject.set(x, "error_description", value.asInstanceOf[js.Any])
+    inline def setError_description(value: String): Self = StObject.set(x, "error_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError_descriptionUndefined: Self = StObject.set(x, "error_description", js.undefined)
+    inline def setError_descriptionUndefined: Self = StObject.set(x, "error_description", js.undefined)
     
-    @scala.inline
-    def setError_uri(value: String): Self = StObject.set(x, "error_uri", value.asInstanceOf[js.Any])
+    inline def setError_uri(value: String): Self = StObject.set(x, "error_uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError_uriUndefined: Self = StObject.set(x, "error_uri", js.undefined)
+    inline def setError_uriUndefined: Self = StObject.set(x, "error_uri", js.undefined)
   }
 }

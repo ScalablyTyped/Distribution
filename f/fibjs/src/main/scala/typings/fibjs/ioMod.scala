@@ -27,11 +27,8 @@ object ioMod {
     extends StObject
        with ClassMemoryStream
   
-  @scala.inline
-  def bridge(stm1: ClassStream, stm2: ClassStream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bridge")(stm1.asInstanceOf[js.Any], stm2.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bridge(stm1: ClassStream, stm2: ClassStream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bridge")(stm1.asInstanceOf[js.Any], stm2.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def copyStream(from: ClassStream, to: ClassStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("copyStream")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def copyStream(from: ClassStream, to: ClassStream, bytes: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("copyStream")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], bytes.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def copyStream(from: ClassStream, to: ClassStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("copyStream")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def copyStream(from: ClassStream, to: ClassStream, bytes: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("copyStream")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], bytes.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

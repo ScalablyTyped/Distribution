@@ -22,7 +22,7 @@ object raygunMessageBuilderMod {
     
     def build(): Message = js.native
     
-    var extractUserProperties: js.Any = js.native
+    /* private */ var extractUserProperties: js.Any = js.native
     
     var message: MessageBuilding = js.native
     

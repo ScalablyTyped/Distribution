@@ -13,19 +13,15 @@ trait ListSecurityConfigurationsInput extends StObject {
 }
 object ListSecurityConfigurationsInput {
   
-  @scala.inline
-  def apply(): ListSecurityConfigurationsInput = {
+  inline def apply(): ListSecurityConfigurationsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSecurityConfigurationsInput]
   }
   
-  @scala.inline
-  implicit class ListSecurityConfigurationsInputMutableBuilder[Self <: ListSecurityConfigurationsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListSecurityConfigurationsInput](x: Self) {
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

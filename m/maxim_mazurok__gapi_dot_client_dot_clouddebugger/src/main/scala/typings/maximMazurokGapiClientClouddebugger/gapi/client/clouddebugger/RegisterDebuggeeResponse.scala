@@ -17,25 +17,19 @@ trait RegisterDebuggeeResponse extends StObject {
 }
 object RegisterDebuggeeResponse {
   
-  @scala.inline
-  def apply(): RegisterDebuggeeResponse = {
+  inline def apply(): RegisterDebuggeeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterDebuggeeResponse]
   }
   
-  @scala.inline
-  implicit class RegisterDebuggeeResponseMutableBuilder[Self <: RegisterDebuggeeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterDebuggeeResponse](x: Self) {
     
-    @scala.inline
-    def setAgentId(value: String): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
+    inline def setAgentId(value: String): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentIdUndefined: Self = StObject.set(x, "agentId", js.undefined)
+    inline def setAgentIdUndefined: Self = StObject.set(x, "agentId", js.undefined)
     
-    @scala.inline
-    def setDebuggee(value: Debuggee): Self = StObject.set(x, "debuggee", value.asInstanceOf[js.Any])
+    inline def setDebuggee(value: Debuggee): Self = StObject.set(x, "debuggee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebuggeeUndefined: Self = StObject.set(x, "debuggee", js.undefined)
+    inline def setDebuggeeUndefined: Self = StObject.set(x, "debuggee", js.undefined)
   }
 }

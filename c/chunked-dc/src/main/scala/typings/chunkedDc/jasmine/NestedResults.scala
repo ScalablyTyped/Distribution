@@ -30,8 +30,7 @@ trait NestedResults
 }
 object NestedResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addResult: Result => Unit,
     description: String,
     failedCount: Double,
@@ -49,37 +48,26 @@ object NestedResults {
     __obj.asInstanceOf[NestedResults]
   }
   
-  @scala.inline
-  implicit class NestedResultsMutableBuilder[Self <: NestedResults] (val x: Self) extends AnyVal {
+  extension [Self <: NestedResults](x: Self) {
     
-    @scala.inline
-    def setAddResult(value: Result => Unit): Self = StObject.set(x, "addResult", js.Any.fromFunction1(value))
+    inline def setAddResult(value: Result => Unit): Self = StObject.set(x, "addResult", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedCount(value: Double): Self = StObject.set(x, "failedCount", value.asInstanceOf[js.Any])
+    inline def setFailedCount(value: Double): Self = StObject.set(x, "failedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetItems(value: () => js.Array[Result]): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
+    inline def setGetItems(value: () => js.Array[Result]): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLog(value: js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    inline def setLog(value: js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPassed(value: () => Boolean): Self = StObject.set(x, "passed", js.Any.fromFunction0(value))
+    inline def setPassed(value: () => Boolean): Self = StObject.set(x, "passed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPassedCount(value: Double): Self = StObject.set(x, "passedCount", value.asInstanceOf[js.Any])
+    inline def setPassedCount(value: Double): Self = StObject.set(x, "passedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRollupCounts(value: NestedResults => Unit): Self = StObject.set(x, "rollupCounts", js.Any.fromFunction1(value))
+    inline def setRollupCounts(value: NestedResults => Unit): Self = StObject.set(x, "rollupCounts", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSkipped(value: Boolean): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
+    inline def setSkipped(value: Boolean): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
   }
 }

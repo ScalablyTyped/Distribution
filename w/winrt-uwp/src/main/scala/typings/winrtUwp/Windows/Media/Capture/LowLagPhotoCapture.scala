@@ -23,8 +23,7 @@ trait LowLagPhotoCapture extends StObject {
 }
 object LowLagPhotoCapture {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     captureAsync: () => IPromiseWithIAsyncOperation[CapturedPhoto],
     finishAsync: () => IPromiseWithIAsyncAction
   ): LowLagPhotoCapture = {
@@ -32,13 +31,10 @@ object LowLagPhotoCapture {
     __obj.asInstanceOf[LowLagPhotoCapture]
   }
   
-  @scala.inline
-  implicit class LowLagPhotoCaptureMutableBuilder[Self <: LowLagPhotoCapture] (val x: Self) extends AnyVal {
+  extension [Self <: LowLagPhotoCapture](x: Self) {
     
-    @scala.inline
-    def setCaptureAsync(value: () => IPromiseWithIAsyncOperation[CapturedPhoto]): Self = StObject.set(x, "captureAsync", js.Any.fromFunction0(value))
+    inline def setCaptureAsync(value: () => IPromiseWithIAsyncOperation[CapturedPhoto]): Self = StObject.set(x, "captureAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFinishAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "finishAsync", js.Any.fromFunction0(value))
+    inline def setFinishAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "finishAsync", js.Any.fromFunction0(value))
   }
 }

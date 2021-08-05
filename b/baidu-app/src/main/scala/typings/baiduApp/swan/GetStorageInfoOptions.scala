@@ -13,16 +13,13 @@ trait GetStorageInfoOptions
 }
 object GetStorageInfoOptions {
   
-  @scala.inline
-  def apply(success: StorageInfo => Unit): GetStorageInfoOptions = {
+  inline def apply(success: StorageInfo => Unit): GetStorageInfoOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetStorageInfoOptions]
   }
   
-  @scala.inline
-  implicit class GetStorageInfoOptionsMutableBuilder[Self <: GetStorageInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetStorageInfoOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: StorageInfo => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: StorageInfo => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

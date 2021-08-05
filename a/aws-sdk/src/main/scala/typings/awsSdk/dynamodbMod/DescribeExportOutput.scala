@@ -13,19 +13,15 @@ trait DescribeExportOutput extends StObject {
 }
 object DescribeExportOutput {
   
-  @scala.inline
-  def apply(): DescribeExportOutput = {
+  inline def apply(): DescribeExportOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeExportOutput]
   }
   
-  @scala.inline
-  implicit class DescribeExportOutputMutableBuilder[Self <: DescribeExportOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeExportOutput](x: Self) {
     
-    @scala.inline
-    def setExportDescription(value: ExportDescription): Self = StObject.set(x, "ExportDescription", value.asInstanceOf[js.Any])
+    inline def setExportDescription(value: ExportDescription): Self = StObject.set(x, "ExportDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportDescriptionUndefined: Self = StObject.set(x, "ExportDescription", js.undefined)
+    inline def setExportDescriptionUndefined: Self = StObject.set(x, "ExportDescription", js.undefined)
   }
 }

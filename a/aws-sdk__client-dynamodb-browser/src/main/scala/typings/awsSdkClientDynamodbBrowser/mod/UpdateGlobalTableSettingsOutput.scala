@@ -10,8 +10,7 @@ trait UpdateGlobalTableSettingsOutput
      with typings.awsSdkClientDynamodbBrowser.typesUpdateGlobalTableSettingsOutputMod.UpdateGlobalTableSettingsOutput
 object UpdateGlobalTableSettingsOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): UpdateGlobalTableSettingsOutput = {
+  inline def apply($metadata: ResponseMetadata): UpdateGlobalTableSettingsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGlobalTableSettingsOutput]
   }

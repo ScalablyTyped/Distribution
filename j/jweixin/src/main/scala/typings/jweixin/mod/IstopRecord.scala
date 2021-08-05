@@ -13,16 +13,13 @@ trait IstopRecord
 }
 object IstopRecord {
   
-  @scala.inline
-  def apply(success: Resouce => Unit): IstopRecord = {
+  inline def apply(success: Resouce => Unit): IstopRecord = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[IstopRecord]
   }
   
-  @scala.inline
-  implicit class IstopRecordMutableBuilder[Self <: IstopRecord] (val x: Self) extends AnyVal {
+  extension [Self <: IstopRecord](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Resouce => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: Resouce => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

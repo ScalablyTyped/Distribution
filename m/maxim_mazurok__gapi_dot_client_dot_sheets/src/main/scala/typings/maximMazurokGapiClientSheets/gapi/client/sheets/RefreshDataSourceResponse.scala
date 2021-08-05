@@ -11,22 +11,17 @@ trait RefreshDataSourceResponse extends StObject {
 }
 object RefreshDataSourceResponse {
   
-  @scala.inline
-  def apply(): RefreshDataSourceResponse = {
+  inline def apply(): RefreshDataSourceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RefreshDataSourceResponse]
   }
   
-  @scala.inline
-  implicit class RefreshDataSourceResponseMutableBuilder[Self <: RefreshDataSourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshDataSourceResponse](x: Self) {
     
-    @scala.inline
-    def setStatuses(value: js.Array[RefreshDataSourceObjectExecutionStatus]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
+    inline def setStatuses(value: js.Array[RefreshDataSourceObjectExecutionStatus]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
+    inline def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
     
-    @scala.inline
-    def setStatusesVarargs(value: RefreshDataSourceObjectExecutionStatus*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: RefreshDataSourceObjectExecutionStatus*): Self = StObject.set(x, "statuses", js.Array(value :_*))
   }
 }

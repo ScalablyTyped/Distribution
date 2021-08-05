@@ -20,8 +20,7 @@ trait PriceHistory extends StObject {
 }
 object PriceHistory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     avgPrice: Double,
     date: String,
     resourceType: MarketResourceConstant,
@@ -33,25 +32,18 @@ object PriceHistory {
     __obj.asInstanceOf[PriceHistory]
   }
   
-  @scala.inline
-  implicit class PriceHistoryMutableBuilder[Self <: PriceHistory] (val x: Self) extends AnyVal {
+  extension [Self <: PriceHistory](x: Self) {
     
-    @scala.inline
-    def setAvgPrice(value: Double): Self = StObject.set(x, "avgPrice", value.asInstanceOf[js.Any])
+    inline def setAvgPrice(value: Double): Self = StObject.set(x, "avgPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: MarketResourceConstant): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: MarketResourceConstant): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStddevPrice(value: Double): Self = StObject.set(x, "stddevPrice", value.asInstanceOf[js.Any])
+    inline def setStddevPrice(value: Double): Self = StObject.set(x, "stddevPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactions(value: Double): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
+    inline def setTransactions(value: Double): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

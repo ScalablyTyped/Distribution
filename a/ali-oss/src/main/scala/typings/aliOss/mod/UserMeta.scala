@@ -12,19 +12,15 @@ trait UserMeta extends StObject {
 }
 object UserMeta {
   
-  @scala.inline
-  def apply(pid: Double, uid: Double): UserMeta = {
+  inline def apply(pid: Double, uid: Double): UserMeta = {
     val __obj = js.Dynamic.literal(pid = pid.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserMeta]
   }
   
-  @scala.inline
-  implicit class UserMetaMutableBuilder[Self <: UserMeta] (val x: Self) extends AnyVal {
+  extension [Self <: UserMeta](x: Self) {
     
-    @scala.inline
-    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

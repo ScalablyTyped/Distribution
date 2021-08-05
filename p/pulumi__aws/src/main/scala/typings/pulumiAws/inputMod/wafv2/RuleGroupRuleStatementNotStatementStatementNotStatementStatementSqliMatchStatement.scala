@@ -29,8 +29,7 @@ trait RuleGroupRuleStatementNotStatementStatementNotStatementStatementSqliMatchS
 }
 object RuleGroupRuleStatementNotStatementStatementNotStatementStatementSqliMatchStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     textTransformations: Input[
       js.Array[
         Input[
@@ -43,21 +42,17 @@ object RuleGroupRuleStatementNotStatementStatementNotStatementStatementSqliMatch
     __obj.asInstanceOf[RuleGroupRuleStatementNotStatementStatementNotStatementStatementSqliMatchStatement]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementNotStatementStatementNotStatementStatementSqliMatchStatementMutableBuilder[Self <: RuleGroupRuleStatementNotStatementStatementNotStatementStatementSqliMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementNotStatementStatementNotStatementStatementSqliMatchStatement](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(
+    inline def setFieldToMatch(
       value: Input[
           RuleGroupRuleStatementNotStatementStatementNotStatementStatementSqliMatchStatementFieldToMatch
         ]
     ): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
+    inline def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
     
-    @scala.inline
-    def setTextTransformations(
+    inline def setTextTransformations(
       value: Input[
           js.Array[
             Input[
@@ -67,8 +62,7 @@ object RuleGroupRuleStatementNotStatementStatementNotStatementStatementSqliMatch
         ]
     ): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformationsVarargs(
+    inline def setTextTransformationsVarargs(
       value: (Input[
           RuleGroupRuleStatementNotStatementStatementNotStatementStatementSqliMatchStatementTextTransformation
         ])*

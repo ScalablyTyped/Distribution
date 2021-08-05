@@ -17,25 +17,19 @@ trait StandardSqlField extends StObject {
 }
 object StandardSqlField {
   
-  @scala.inline
-  def apply(): StandardSqlField = {
+  inline def apply(): StandardSqlField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StandardSqlField]
   }
   
-  @scala.inline
-  implicit class StandardSqlFieldMutableBuilder[Self <: StandardSqlField] (val x: Self) extends AnyVal {
+  extension [Self <: StandardSqlField](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: StandardSqlDataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: StandardSqlDataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

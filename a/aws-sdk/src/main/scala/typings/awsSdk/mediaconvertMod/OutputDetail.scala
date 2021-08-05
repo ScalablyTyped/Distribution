@@ -18,25 +18,19 @@ trait OutputDetail extends StObject {
 }
 object OutputDetail {
   
-  @scala.inline
-  def apply(): OutputDetail = {
+  inline def apply(): OutputDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputDetail]
   }
   
-  @scala.inline
-  implicit class OutputDetailMutableBuilder[Self <: OutputDetail] (val x: Self) extends AnyVal {
+  extension [Self <: OutputDetail](x: Self) {
     
-    @scala.inline
-    def setDurationInMs(value: integer): Self = StObject.set(x, "DurationInMs", value.asInstanceOf[js.Any])
+    inline def setDurationInMs(value: integer): Self = StObject.set(x, "DurationInMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInMsUndefined: Self = StObject.set(x, "DurationInMs", js.undefined)
+    inline def setDurationInMsUndefined: Self = StObject.set(x, "DurationInMs", js.undefined)
     
-    @scala.inline
-    def setVideoDetails(value: VideoDetail): Self = StObject.set(x, "VideoDetails", value.asInstanceOf[js.Any])
+    inline def setVideoDetails(value: VideoDetail): Self = StObject.set(x, "VideoDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoDetailsUndefined: Self = StObject.set(x, "VideoDetails", js.undefined)
+    inline def setVideoDetailsUndefined: Self = StObject.set(x, "VideoDetails", js.undefined)
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxAccountOutgoingQueue Class */
 trait FaxAccountOutgoingQueue extends StObject {
   
-  @JSName("FAXCOMEXLib.FaxAccountOutgoingQueue_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxAccountOutgoingQueue_typekey")
   var FAXCOMEXLibDotFaxAccountOutgoingQueue_typekey: FaxAccountOutgoingQueue
   
   /** Get outgoing job by ID */
@@ -18,8 +18,7 @@ trait FaxAccountOutgoingQueue extends StObject {
 }
 object FaxAccountOutgoingQueue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FAXCOMEXLibDotFaxAccountOutgoingQueue_typekey: FaxAccountOutgoingQueue,
     GetJob: String => IFaxOutgoingJob,
     GetJobs: () => FaxOutgoingJobs
@@ -29,16 +28,12 @@ object FaxAccountOutgoingQueue {
     __obj.asInstanceOf[FaxAccountOutgoingQueue]
   }
   
-  @scala.inline
-  implicit class FaxAccountOutgoingQueueMutableBuilder[Self <: FaxAccountOutgoingQueue] (val x: Self) extends AnyVal {
+  extension [Self <: FaxAccountOutgoingQueue](x: Self) {
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxAccountOutgoingQueue_typekey(value: FaxAccountOutgoingQueue): Self = StObject.set(x, "FAXCOMEXLib.FaxAccountOutgoingQueue_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxAccountOutgoingQueue_typekey(value: FaxAccountOutgoingQueue): Self = StObject.set(x, "FAXCOMEXLib.FaxAccountOutgoingQueue_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetJob(value: String => IFaxOutgoingJob): Self = StObject.set(x, "GetJob", js.Any.fromFunction1(value))
+    inline def setGetJob(value: String => IFaxOutgoingJob): Self = StObject.set(x, "GetJob", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetJobs(value: () => FaxOutgoingJobs): Self = StObject.set(x, "GetJobs", js.Any.fromFunction0(value))
+    inline def setGetJobs(value: () => FaxOutgoingJobs): Self = StObject.set(x, "GetJobs", js.Any.fromFunction0(value))
   }
 }

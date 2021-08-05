@@ -19,8 +19,7 @@ trait GoogleProviderResultRaw extends StObject {
 }
 object GoogleProviderResultRaw {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address_components: js.Array[GoogleProviderResultAddressComponent],
     formatted_address: String,
     geometry: Location,
@@ -31,28 +30,20 @@ object GoogleProviderResultRaw {
     __obj.asInstanceOf[GoogleProviderResultRaw]
   }
   
-  @scala.inline
-  implicit class GoogleProviderResultRawMutableBuilder[Self <: GoogleProviderResultRaw] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleProviderResultRaw](x: Self) {
     
-    @scala.inline
-    def setAddress_components(value: js.Array[GoogleProviderResultAddressComponent]): Self = StObject.set(x, "address_components", value.asInstanceOf[js.Any])
+    inline def setAddress_components(value: js.Array[GoogleProviderResultAddressComponent]): Self = StObject.set(x, "address_components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddress_componentsVarargs(value: GoogleProviderResultAddressComponent*): Self = StObject.set(x, "address_components", js.Array(value :_*))
+    inline def setAddress_componentsVarargs(value: GoogleProviderResultAddressComponent*): Self = StObject.set(x, "address_components", js.Array(value :_*))
     
-    @scala.inline
-    def setFormatted_address(value: String): Self = StObject.set(x, "formatted_address", value.asInstanceOf[js.Any])
+    inline def setFormatted_address(value: String): Self = StObject.set(x, "formatted_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometry(value: Location): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: Location): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
+    inline def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

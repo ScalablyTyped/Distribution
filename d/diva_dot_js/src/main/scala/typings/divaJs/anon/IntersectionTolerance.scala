@@ -10,16 +10,13 @@ trait IntersectionTolerance extends StObject {
 }
 object IntersectionTolerance {
   
-  @scala.inline
-  def apply(intersectionTolerance: Double): IntersectionTolerance = {
+  inline def apply(intersectionTolerance: Double): IntersectionTolerance = {
     val __obj = js.Dynamic.literal(intersectionTolerance = intersectionTolerance.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntersectionTolerance]
   }
   
-  @scala.inline
-  implicit class IntersectionToleranceMutableBuilder[Self <: IntersectionTolerance] (val x: Self) extends AnyVal {
+  extension [Self <: IntersectionTolerance](x: Self) {
     
-    @scala.inline
-    def setIntersectionTolerance(value: Double): Self = StObject.set(x, "intersectionTolerance", value.asInstanceOf[js.Any])
+    inline def setIntersectionTolerance(value: Double): Self = StObject.set(x, "intersectionTolerance", value.asInstanceOf[js.Any])
   }
 }

@@ -38,31 +38,23 @@ trait PlusAccelerometerAcceleration extends StObject {
 }
 object PlusAccelerometerAcceleration {
   
-  @scala.inline
-  def apply(): PlusAccelerometerAcceleration = {
+  inline def apply(): PlusAccelerometerAcceleration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusAccelerometerAcceleration]
   }
   
-  @scala.inline
-  implicit class PlusAccelerometerAccelerationMutableBuilder[Self <: PlusAccelerometerAcceleration] (val x: Self) extends AnyVal {
+  extension [Self <: PlusAccelerometerAcceleration](x: Self) {
     
-    @scala.inline
-    def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
-    @scala.inline
-    def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    inline def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
+    inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
     
-    @scala.inline
-    def setZAxis(value: Double): Self = StObject.set(x, "zAxis", value.asInstanceOf[js.Any])
+    inline def setZAxis(value: Double): Self = StObject.set(x, "zAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZAxisUndefined: Self = StObject.set(x, "zAxis", js.undefined)
+    inline def setZAxisUndefined: Self = StObject.set(x, "zAxis", js.undefined)
   }
 }

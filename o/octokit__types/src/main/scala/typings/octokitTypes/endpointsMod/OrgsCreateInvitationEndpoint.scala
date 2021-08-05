@@ -37,44 +37,32 @@ trait OrgsCreateInvitationEndpoint extends StObject {
 }
 object OrgsCreateInvitationEndpoint {
   
-  @scala.inline
-  def apply(org_ : String): OrgsCreateInvitationEndpoint = {
+  inline def apply(org_ : String): OrgsCreateInvitationEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsCreateInvitationEndpoint]
   }
   
-  @scala.inline
-  implicit class OrgsCreateInvitationEndpointMutableBuilder[Self <: OrgsCreateInvitationEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsCreateInvitationEndpoint](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setInvitee_id(value: Double): Self = StObject.set(x, "invitee_id", value.asInstanceOf[js.Any])
+    inline def setInvitee_id(value: Double): Self = StObject.set(x, "invitee_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitee_idUndefined: Self = StObject.set(x, "invitee_id", js.undefined)
+    inline def setInvitee_idUndefined: Self = StObject.set(x, "invitee_id", js.undefined)
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: admin | direct_member | billing_manager): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: admin | direct_member | billing_manager): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setTeam_ids(value: js.Array[Double]): Self = StObject.set(x, "team_ids", value.asInstanceOf[js.Any])
+    inline def setTeam_ids(value: js.Array[Double]): Self = StObject.set(x, "team_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_idsUndefined: Self = StObject.set(x, "team_ids", js.undefined)
+    inline def setTeam_idsUndefined: Self = StObject.set(x, "team_ids", js.undefined)
     
-    @scala.inline
-    def setTeam_idsVarargs(value: Double*): Self = StObject.set(x, "team_ids", js.Array(value :_*))
+    inline def setTeam_idsVarargs(value: Double*): Self = StObject.set(x, "team_ids", js.Array(value :_*))
   }
 }

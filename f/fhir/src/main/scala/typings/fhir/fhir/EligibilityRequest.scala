@@ -114,136 +114,93 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object EligibilityRequest {
   
-  @scala.inline
-  def apply(): EligibilityRequest = {
+  inline def apply(): EligibilityRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EligibilityRequest]
   }
   
-  @scala.inline
-  implicit class EligibilityRequestMutableBuilder[Self <: EligibilityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EligibilityRequest](x: Self) {
     
-    @scala.inline
-    def setBenefitCategory(value: CodeableConcept): Self = StObject.set(x, "benefitCategory", value.asInstanceOf[js.Any])
+    inline def setBenefitCategory(value: CodeableConcept): Self = StObject.set(x, "benefitCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBenefitCategoryUndefined: Self = StObject.set(x, "benefitCategory", js.undefined)
+    inline def setBenefitCategoryUndefined: Self = StObject.set(x, "benefitCategory", js.undefined)
     
-    @scala.inline
-    def setBenefitSubCategory(value: CodeableConcept): Self = StObject.set(x, "benefitSubCategory", value.asInstanceOf[js.Any])
+    inline def setBenefitSubCategory(value: CodeableConcept): Self = StObject.set(x, "benefitSubCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBenefitSubCategoryUndefined: Self = StObject.set(x, "benefitSubCategory", js.undefined)
+    inline def setBenefitSubCategoryUndefined: Self = StObject.set(x, "benefitSubCategory", js.undefined)
     
-    @scala.inline
-    def setBusinessArrangement(value: String): Self = StObject.set(x, "businessArrangement", value.asInstanceOf[js.Any])
+    inline def setBusinessArrangement(value: String): Self = StObject.set(x, "businessArrangement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusinessArrangementUndefined: Self = StObject.set(x, "businessArrangement", js.undefined)
+    inline def setBusinessArrangementUndefined: Self = StObject.set(x, "businessArrangement", js.undefined)
     
-    @scala.inline
-    def setCoverage(value: Reference): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
+    inline def setCoverage(value: Reference): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
+    inline def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
     
-    @scala.inline
-    def setCreated(value: dateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: dateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setEnterer(value: Reference): Self = StObject.set(x, "enterer", value.asInstanceOf[js.Any])
+    inline def setEnterer(value: Reference): Self = StObject.set(x, "enterer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntererUndefined: Self = StObject.set(x, "enterer", js.undefined)
+    inline def setEntererUndefined: Self = StObject.set(x, "enterer", js.undefined)
     
-    @scala.inline
-    def setFacility(value: Reference): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
+    inline def setFacility(value: Reference): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
+    inline def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
+    inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
-    @scala.inline
-    def setInsurer(value: Reference): Self = StObject.set(x, "insurer", value.asInstanceOf[js.Any])
+    inline def setInsurer(value: Reference): Self = StObject.set(x, "insurer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsurerUndefined: Self = StObject.set(x, "insurer", js.undefined)
+    inline def setInsurerUndefined: Self = StObject.set(x, "insurer", js.undefined)
     
-    @scala.inline
-    def setOrganization(value: Reference): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: Reference): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
+    inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
     
-    @scala.inline
-    def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
+    inline def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatientUndefined: Self = StObject.set(x, "patient", js.undefined)
+    inline def setPatientUndefined: Self = StObject.set(x, "patient", js.undefined)
     
-    @scala.inline
-    def setPriority(value: CodeableConcept): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: CodeableConcept): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setProvider(value: Reference): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: Reference): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    @scala.inline
-    def setServicedDate(value: date): Self = StObject.set(x, "servicedDate", value.asInstanceOf[js.Any])
+    inline def setServicedDate(value: date): Self = StObject.set(x, "servicedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicedDateUndefined: Self = StObject.set(x, "servicedDate", js.undefined)
+    inline def setServicedDateUndefined: Self = StObject.set(x, "servicedDate", js.undefined)
     
-    @scala.inline
-    def setServicedPeriod(value: Period): Self = StObject.set(x, "servicedPeriod", value.asInstanceOf[js.Any])
+    inline def setServicedPeriod(value: Period): Self = StObject.set(x, "servicedPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicedPeriodUndefined: Self = StObject.set(x, "servicedPeriod", js.undefined)
+    inline def setServicedPeriodUndefined: Self = StObject.set(x, "servicedPeriod", js.undefined)
     
-    @scala.inline
-    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def set_businessArrangement(value: Element): Self = StObject.set(x, "_businessArrangement", value.asInstanceOf[js.Any])
+    inline def set_businessArrangement(value: Element): Self = StObject.set(x, "_businessArrangement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_businessArrangementUndefined: Self = StObject.set(x, "_businessArrangement", js.undefined)
+    inline def set_businessArrangementUndefined: Self = StObject.set(x, "_businessArrangement", js.undefined)
     
-    @scala.inline
-    def set_created(value: Element): Self = StObject.set(x, "_created", value.asInstanceOf[js.Any])
+    inline def set_created(value: Element): Self = StObject.set(x, "_created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_createdUndefined: Self = StObject.set(x, "_created", js.undefined)
+    inline def set_createdUndefined: Self = StObject.set(x, "_created", js.undefined)
     
-    @scala.inline
-    def set_servicedDate(value: Element): Self = StObject.set(x, "_servicedDate", value.asInstanceOf[js.Any])
+    inline def set_servicedDate(value: Element): Self = StObject.set(x, "_servicedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_servicedDateUndefined: Self = StObject.set(x, "_servicedDate", js.undefined)
+    inline def set_servicedDateUndefined: Self = StObject.set(x, "_servicedDate", js.undefined)
     
-    @scala.inline
-    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
+    inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
+    inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

@@ -14,31 +14,23 @@ trait DatepickerBeforeShowResponse extends StObject {
 }
 object DatepickerBeforeShowResponse {
   
-  @scala.inline
-  def apply(): DatepickerBeforeShowResponse = {
+  inline def apply(): DatepickerBeforeShowResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatepickerBeforeShowResponse]
   }
   
-  @scala.inline
-  implicit class DatepickerBeforeShowResponseMutableBuilder[Self <: DatepickerBeforeShowResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DatepickerBeforeShowResponse](x: Self) {
     
-    @scala.inline
-    def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

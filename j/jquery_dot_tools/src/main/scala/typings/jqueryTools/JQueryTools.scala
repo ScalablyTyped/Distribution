@@ -21,17 +21,14 @@ object JQueryTools {
   }
   object ToolsStatic {
     
-    @scala.inline
-    def apply(overlay: OverlayStatic): ToolsStatic = {
+    inline def apply(overlay: OverlayStatic): ToolsStatic = {
       val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToolsStatic]
     }
     
-    @scala.inline
-    implicit class ToolsStaticMutableBuilder[Self <: ToolsStatic] (val x: Self) extends AnyVal {
+    extension [Self <: ToolsStatic](x: Self) {
       
-      @scala.inline
-      def setOverlay(value: OverlayStatic): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: OverlayStatic): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,32 +49,24 @@ object JQueryTools {
     }
     object MaskOptions {
       
-      @scala.inline
-      def apply(): MaskOptions = {
+      inline def apply(): MaskOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MaskOptions]
       }
       
-      @scala.inline
-      implicit class MaskOptionsMutableBuilder[Self <: MaskOptions] (val x: Self) extends AnyVal {
+      extension [Self <: MaskOptions](x: Self) {
         
-        @scala.inline
-        def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
         
-        @scala.inline
-        def setLoadSpeed(value: Double): Self = StObject.set(x, "loadSpeed", value.asInstanceOf[js.Any])
+        inline def setLoadSpeed(value: Double): Self = StObject.set(x, "loadSpeed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLoadSpeedUndefined: Self = StObject.set(x, "loadSpeed", js.undefined)
+        inline def setLoadSpeedUndefined: Self = StObject.set(x, "loadSpeed", js.undefined)
         
-        @scala.inline
-        def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+        inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+        inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       }
     }
     
@@ -106,8 +95,7 @@ object JQueryTools {
     }
     object Overlay {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         close: () => Overlay,
         getClosers: () => JQuery,
         getConf: () => OverlayOptions,
@@ -120,29 +108,21 @@ object JQueryTools {
         __obj.asInstanceOf[Overlay]
       }
       
-      @scala.inline
-      implicit class OverlayMutableBuilder[Self <: Overlay] (val x: Self) extends AnyVal {
+      extension [Self <: Overlay](x: Self) {
         
-        @scala.inline
-        def setClose(value: () => Overlay): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+        inline def setClose(value: () => Overlay): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetClosers(value: () => JQuery): Self = StObject.set(x, "getClosers", js.Any.fromFunction0(value))
+        inline def setGetClosers(value: () => JQuery): Self = StObject.set(x, "getClosers", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetConf(value: () => OverlayOptions): Self = StObject.set(x, "getConf", js.Any.fromFunction0(value))
+        inline def setGetConf(value: () => OverlayOptions): Self = StObject.set(x, "getConf", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetOverlay(value: () => JQuery): Self = StObject.set(x, "getOverlay", js.Any.fromFunction0(value))
+        inline def setGetOverlay(value: () => JQuery): Self = StObject.set(x, "getOverlay", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetTrigger(value: () => JQuery): Self = StObject.set(x, "getTrigger", js.Any.fromFunction0(value))
+        inline def setGetTrigger(value: () => JQuery): Self = StObject.set(x, "getTrigger", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsOpened(value: () => Boolean): Self = StObject.set(x, "isOpened", js.Any.fromFunction0(value))
+        inline def setIsOpened(value: () => Boolean): Self = StObject.set(x, "isOpened", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setLoad(value: () => Overlay): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
+        inline def setLoad(value: () => Overlay): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       }
     }
     
@@ -262,116 +242,80 @@ object JQueryTools {
     }
     object OverlayOptions {
       
-      @scala.inline
-      def apply(): OverlayOptions = {
+      inline def apply(): OverlayOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[OverlayOptions]
       }
       
-      @scala.inline
-      implicit class OverlayOptionsMutableBuilder[Self <: OverlayOptions] (val x: Self) extends AnyVal {
+      extension [Self <: OverlayOptions](x: Self) {
         
-        @scala.inline
-        def setClose(value: JQuery): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+        inline def setClose(value: JQuery): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
+        inline def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
+        inline def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
         
-        @scala.inline
-        def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
+        inline def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
+        inline def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
         
-        @scala.inline
-        def setCloseSpeed(value: Double): Self = StObject.set(x, "closeSpeed", value.asInstanceOf[js.Any])
+        inline def setCloseSpeed(value: Double): Self = StObject.set(x, "closeSpeed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCloseSpeedUndefined: Self = StObject.set(x, "closeSpeed", js.undefined)
+        inline def setCloseSpeedUndefined: Self = StObject.set(x, "closeSpeed", js.undefined)
         
-        @scala.inline
-        def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+        inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
         
-        @scala.inline
-        def setEffect(value: String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+        inline def setEffect(value: String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
+        inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
         
-        @scala.inline
-        def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+        inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+        inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
         
-        @scala.inline
-        def setLeft(value: center | Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+        inline def setLeft(value: center | Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+        inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
         
-        @scala.inline
-        def setLoad(value: Boolean): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+        inline def setLoad(value: Boolean): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+        inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
         
-        @scala.inline
-        def setMask(value: String | MaskOptions): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+        inline def setMask(value: String | MaskOptions): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+        inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
         
-        @scala.inline
-        def setOnBeforeClose(value: js.ThisFunction1[/* this */ Overlay, /* event */ JQueryEventObject, Unit]): Self = StObject.set(x, "onBeforeClose", value.asInstanceOf[js.Any])
+        inline def setOnBeforeClose(value: js.ThisFunction1[/* this */ Overlay, /* event */ JQueryEventObject, Unit]): Self = StObject.set(x, "onBeforeClose", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnBeforeCloseUndefined: Self = StObject.set(x, "onBeforeClose", js.undefined)
+        inline def setOnBeforeCloseUndefined: Self = StObject.set(x, "onBeforeClose", js.undefined)
         
-        @scala.inline
-        def setOnBeforeLoad(value: js.ThisFunction1[/* this */ Overlay, /* event */ JQueryEventObject, Unit]): Self = StObject.set(x, "onBeforeLoad", value.asInstanceOf[js.Any])
+        inline def setOnBeforeLoad(value: js.ThisFunction1[/* this */ Overlay, /* event */ JQueryEventObject, Unit]): Self = StObject.set(x, "onBeforeLoad", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnBeforeLoadUndefined: Self = StObject.set(x, "onBeforeLoad", js.undefined)
+        inline def setOnBeforeLoadUndefined: Self = StObject.set(x, "onBeforeLoad", js.undefined)
         
-        @scala.inline
-        def setOnClose(value: js.ThisFunction1[/* this */ Overlay, /* event */ JQueryEventObject, Unit]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
+        inline def setOnClose(value: js.ThisFunction1[/* this */ Overlay, /* event */ JQueryEventObject, Unit]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+        inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
         
-        @scala.inline
-        def setOnLoad(value: js.ThisFunction1[/* this */ Overlay, /* event */ JQueryEventObject, Unit]): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
+        inline def setOnLoad(value: js.ThisFunction1[/* this */ Overlay, /* event */ JQueryEventObject, Unit]): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+        inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
         
-        @scala.inline
-        def setOneInstance(value: Boolean): Self = StObject.set(x, "oneInstance", value.asInstanceOf[js.Any])
+        inline def setOneInstance(value: Boolean): Self = StObject.set(x, "oneInstance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOneInstanceUndefined: Self = StObject.set(x, "oneInstance", js.undefined)
+        inline def setOneInstanceUndefined: Self = StObject.set(x, "oneInstance", js.undefined)
         
-        @scala.inline
-        def setSpeed(value: slow | normal | fast | Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+        inline def setSpeed(value: slow | normal | fast | Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+        inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
         
-        @scala.inline
-        def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+        inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
         
-        @scala.inline
-        def setTop(value: String | Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+        inline def setTop(value: String | Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+        inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       }
     }
     
@@ -385,19 +329,16 @@ object JQueryTools {
     }
     object OverlayStatic {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addEffect: (String, js.ThisFunction2[/* this */ Overlay, /* position */ CssOptions, /* done */ js.Function0[Unit], Unit], js.ThisFunction1[/* this */ Overlay, /* done */ js.Function0[Unit], Unit]) => Unit
       ): OverlayStatic = {
         val __obj = js.Dynamic.literal(addEffect = js.Any.fromFunction3(addEffect))
         __obj.asInstanceOf[OverlayStatic]
       }
       
-      @scala.inline
-      implicit class OverlayStaticMutableBuilder[Self <: OverlayStatic] (val x: Self) extends AnyVal {
+      extension [Self <: OverlayStatic](x: Self) {
         
-        @scala.inline
-        def setAddEffect(
+        inline def setAddEffect(
           value: (String, js.ThisFunction2[/* this */ Overlay, /* position */ CssOptions, /* done */ js.Function0[Unit], Unit], js.ThisFunction1[/* this */ Overlay, /* done */ js.Function0[Unit], Unit]) => Unit
         ): Self = StObject.set(x, "addEffect", js.Any.fromFunction3(value))
       }

@@ -32,58 +32,41 @@ trait GoogleCloudMlV1TrainingOutput extends StObject {
 }
 object GoogleCloudMlV1TrainingOutput {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1TrainingOutput = {
+  inline def apply(): GoogleCloudMlV1TrainingOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1TrainingOutput]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1TrainingOutputMutableBuilder[Self <: GoogleCloudMlV1TrainingOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1TrainingOutput](x: Self) {
     
-    @scala.inline
-    def setBuiltInAlgorithmOutput(value: GoogleCloudMlV1BuiltInAlgorithmOutput): Self = StObject.set(x, "builtInAlgorithmOutput", value.asInstanceOf[js.Any])
+    inline def setBuiltInAlgorithmOutput(value: GoogleCloudMlV1BuiltInAlgorithmOutput): Self = StObject.set(x, "builtInAlgorithmOutput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuiltInAlgorithmOutputUndefined: Self = StObject.set(x, "builtInAlgorithmOutput", js.undefined)
+    inline def setBuiltInAlgorithmOutputUndefined: Self = StObject.set(x, "builtInAlgorithmOutput", js.undefined)
     
-    @scala.inline
-    def setCompletedTrialCount(value: String): Self = StObject.set(x, "completedTrialCount", value.asInstanceOf[js.Any])
+    inline def setCompletedTrialCount(value: String): Self = StObject.set(x, "completedTrialCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedTrialCountUndefined: Self = StObject.set(x, "completedTrialCount", js.undefined)
+    inline def setCompletedTrialCountUndefined: Self = StObject.set(x, "completedTrialCount", js.undefined)
     
-    @scala.inline
-    def setConsumedMLUnits(value: Double): Self = StObject.set(x, "consumedMLUnits", value.asInstanceOf[js.Any])
+    inline def setConsumedMLUnits(value: Double): Self = StObject.set(x, "consumedMLUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumedMLUnitsUndefined: Self = StObject.set(x, "consumedMLUnits", js.undefined)
+    inline def setConsumedMLUnitsUndefined: Self = StObject.set(x, "consumedMLUnits", js.undefined)
     
-    @scala.inline
-    def setHyperparameterMetricTag(value: String): Self = StObject.set(x, "hyperparameterMetricTag", value.asInstanceOf[js.Any])
+    inline def setHyperparameterMetricTag(value: String): Self = StObject.set(x, "hyperparameterMetricTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperparameterMetricTagUndefined: Self = StObject.set(x, "hyperparameterMetricTag", js.undefined)
+    inline def setHyperparameterMetricTagUndefined: Self = StObject.set(x, "hyperparameterMetricTag", js.undefined)
     
-    @scala.inline
-    def setIsBuiltInAlgorithmJob(value: Boolean): Self = StObject.set(x, "isBuiltInAlgorithmJob", value.asInstanceOf[js.Any])
+    inline def setIsBuiltInAlgorithmJob(value: Boolean): Self = StObject.set(x, "isBuiltInAlgorithmJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBuiltInAlgorithmJobUndefined: Self = StObject.set(x, "isBuiltInAlgorithmJob", js.undefined)
+    inline def setIsBuiltInAlgorithmJobUndefined: Self = StObject.set(x, "isBuiltInAlgorithmJob", js.undefined)
     
-    @scala.inline
-    def setIsHyperparameterTuningJob(value: Boolean): Self = StObject.set(x, "isHyperparameterTuningJob", value.asInstanceOf[js.Any])
+    inline def setIsHyperparameterTuningJob(value: Boolean): Self = StObject.set(x, "isHyperparameterTuningJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHyperparameterTuningJobUndefined: Self = StObject.set(x, "isHyperparameterTuningJob", js.undefined)
+    inline def setIsHyperparameterTuningJobUndefined: Self = StObject.set(x, "isHyperparameterTuningJob", js.undefined)
     
-    @scala.inline
-    def setTrials(value: js.Array[GoogleCloudMlV1HyperparameterOutput]): Self = StObject.set(x, "trials", value.asInstanceOf[js.Any])
+    inline def setTrials(value: js.Array[GoogleCloudMlV1HyperparameterOutput]): Self = StObject.set(x, "trials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialsUndefined: Self = StObject.set(x, "trials", js.undefined)
+    inline def setTrialsUndefined: Self = StObject.set(x, "trials", js.undefined)
     
-    @scala.inline
-    def setTrialsVarargs(value: GoogleCloudMlV1HyperparameterOutput*): Self = StObject.set(x, "trials", js.Array(value :_*))
+    inline def setTrialsVarargs(value: GoogleCloudMlV1HyperparameterOutput*): Self = StObject.set(x, "trials", js.Array(value :_*))
   }
 }

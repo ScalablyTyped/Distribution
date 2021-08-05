@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object literalMod {
   
-  @scala.inline
-  def apply(literal: Literal): String = ^.asInstanceOf[js.Dynamic].apply(literal.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(literal: Literal): String = ^.asInstanceOf[js.Dynamic].apply(literal.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@rdfjs/to-ntriples/lib/literal", JSImport.Namespace)
   @js.native

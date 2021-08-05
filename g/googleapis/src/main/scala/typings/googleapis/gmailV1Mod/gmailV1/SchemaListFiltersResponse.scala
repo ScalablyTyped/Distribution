@@ -16,22 +16,17 @@ trait SchemaListFiltersResponse extends StObject {
 }
 object SchemaListFiltersResponse {
   
-  @scala.inline
-  def apply(): SchemaListFiltersResponse = {
+  inline def apply(): SchemaListFiltersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListFiltersResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListFiltersResponseMutableBuilder[Self <: SchemaListFiltersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListFiltersResponse](x: Self) {
     
-    @scala.inline
-    def setFilter(value: js.Array[SchemaFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: js.Array[SchemaFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setFilterVarargs(value: SchemaFilter*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: SchemaFilter*): Self = StObject.set(x, "filter", js.Array(value :_*))
   }
 }

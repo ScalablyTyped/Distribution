@@ -45,56 +45,40 @@ object anon {
   }
   object Absorbsinput {
     
-    @scala.inline
-    def apply(): Absorbsinput = {
+    inline def apply(): Absorbsinput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Absorbsinput]
     }
     
-    @scala.inline
-    implicit class AbsorbsinputMutableBuilder[Self <: Absorbsinput] (val x: Self) extends AnyVal {
+    extension [Self <: Absorbsinput](x: Self) {
       
-      @scala.inline
-      def setAbsorbs_input(value: Boolean): Self = StObject.set(x, "absorbs_input", value.asInstanceOf[js.Any])
+      inline def setAbsorbs_input(value: Boolean): Self = StObject.set(x, "absorbs_input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsorbs_inputUndefined: Self = StObject.set(x, "absorbs_input", js.undefined)
+      inline def setAbsorbs_inputUndefined: Self = StObject.set(x, "absorbs_input", js.undefined)
       
-      @scala.inline
-      def setAlways_accepts_input(value: Boolean): Self = StObject.set(x, "always_accepts_input", value.asInstanceOf[js.Any])
+      inline def setAlways_accepts_input(value: Boolean): Self = StObject.set(x, "always_accepts_input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlways_accepts_inputUndefined: Self = StObject.set(x, "always_accepts_input", js.undefined)
+      inline def setAlways_accepts_inputUndefined: Self = StObject.set(x, "always_accepts_input", js.undefined)
       
-      @scala.inline
-      def setForce_render_below(value: Boolean): Self = StObject.set(x, "force_render_below", value.asInstanceOf[js.Any])
+      inline def setForce_render_below(value: Boolean): Self = StObject.set(x, "force_render_below", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForce_render_belowUndefined: Self = StObject.set(x, "force_render_below", js.undefined)
+      inline def setForce_render_belowUndefined: Self = StObject.set(x, "force_render_below", js.undefined)
       
-      @scala.inline
-      def setIs_showing_menu(value: Boolean): Self = StObject.set(x, "is_showing_menu", value.asInstanceOf[js.Any])
+      inline def setIs_showing_menu(value: Boolean): Self = StObject.set(x, "is_showing_menu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_showing_menuUndefined: Self = StObject.set(x, "is_showing_menu", js.undefined)
+      inline def setIs_showing_menuUndefined: Self = StObject.set(x, "is_showing_menu", js.undefined)
       
-      @scala.inline
-      def setRender_game_behind(value: Boolean): Self = StObject.set(x, "render_game_behind", value.asInstanceOf[js.Any])
+      inline def setRender_game_behind(value: Boolean): Self = StObject.set(x, "render_game_behind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRender_game_behindUndefined: Self = StObject.set(x, "render_game_behind", js.undefined)
+      inline def setRender_game_behindUndefined: Self = StObject.set(x, "render_game_behind", js.undefined)
       
-      @scala.inline
-      def setRender_only_when_topmost(value: Boolean): Self = StObject.set(x, "render_only_when_topmost", value.asInstanceOf[js.Any])
+      inline def setRender_only_when_topmost(value: Boolean): Self = StObject.set(x, "render_only_when_topmost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRender_only_when_topmostUndefined: Self = StObject.set(x, "render_only_when_topmost", js.undefined)
+      inline def setRender_only_when_topmostUndefined: Self = StObject.set(x, "render_only_when_topmost", js.undefined)
       
-      @scala.inline
-      def setShould_steal_mouse(value: Boolean): Self = StObject.set(x, "should_steal_mouse", value.asInstanceOf[js.Any])
+      inline def setShould_steal_mouse(value: Boolean): Self = StObject.set(x, "should_steal_mouse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShould_steal_mouseUndefined: Self = StObject.set(x, "should_steal_mouse", js.undefined)
+      inline def setShould_steal_mouseUndefined: Self = StObject.set(x, "should_steal_mouse", js.undefined)
     }
   }
 }

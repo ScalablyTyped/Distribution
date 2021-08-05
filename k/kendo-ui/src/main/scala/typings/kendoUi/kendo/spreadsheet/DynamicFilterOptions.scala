@@ -10,19 +10,15 @@ trait DynamicFilterOptions extends StObject {
 }
 object DynamicFilterOptions {
   
-  @scala.inline
-  def apply(): DynamicFilterOptions = {
+  inline def apply(): DynamicFilterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DynamicFilterOptions]
   }
   
-  @scala.inline
-  implicit class DynamicFilterOptionsMutableBuilder[Self <: DynamicFilterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DynamicFilterOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

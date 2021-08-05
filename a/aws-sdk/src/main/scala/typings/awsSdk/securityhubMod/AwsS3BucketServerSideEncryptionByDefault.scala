@@ -18,25 +18,19 @@ trait AwsS3BucketServerSideEncryptionByDefault extends StObject {
 }
 object AwsS3BucketServerSideEncryptionByDefault {
   
-  @scala.inline
-  def apply(): AwsS3BucketServerSideEncryptionByDefault = {
+  inline def apply(): AwsS3BucketServerSideEncryptionByDefault = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsS3BucketServerSideEncryptionByDefault]
   }
   
-  @scala.inline
-  implicit class AwsS3BucketServerSideEncryptionByDefaultMutableBuilder[Self <: AwsS3BucketServerSideEncryptionByDefault] (val x: Self) extends AnyVal {
+  extension [Self <: AwsS3BucketServerSideEncryptionByDefault](x: Self) {
     
-    @scala.inline
-    def setKMSMasterKeyID(value: NonEmptyString): Self = StObject.set(x, "KMSMasterKeyID", value.asInstanceOf[js.Any])
+    inline def setKMSMasterKeyID(value: NonEmptyString): Self = StObject.set(x, "KMSMasterKeyID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKMSMasterKeyIDUndefined: Self = StObject.set(x, "KMSMasterKeyID", js.undefined)
+    inline def setKMSMasterKeyIDUndefined: Self = StObject.set(x, "KMSMasterKeyID", js.undefined)
     
-    @scala.inline
-    def setSSEAlgorithm(value: NonEmptyString): Self = StObject.set(x, "SSEAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSSEAlgorithm(value: NonEmptyString): Self = StObject.set(x, "SSEAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSEAlgorithmUndefined: Self = StObject.set(x, "SSEAlgorithm", js.undefined)
+    inline def setSSEAlgorithmUndefined: Self = StObject.set(x, "SSEAlgorithm", js.undefined)
   }
 }

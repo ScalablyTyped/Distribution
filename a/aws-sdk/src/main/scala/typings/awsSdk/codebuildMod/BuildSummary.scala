@@ -33,46 +33,33 @@ trait BuildSummary extends StObject {
 }
 object BuildSummary {
   
-  @scala.inline
-  def apply(): BuildSummary = {
+  inline def apply(): BuildSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildSummary]
   }
   
-  @scala.inline
-  implicit class BuildSummaryMutableBuilder[Self <: BuildSummary] (val x: Self) extends AnyVal {
+  extension [Self <: BuildSummary](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setBuildStatus(value: StatusType): Self = StObject.set(x, "buildStatus", value.asInstanceOf[js.Any])
+    inline def setBuildStatus(value: StatusType): Self = StObject.set(x, "buildStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildStatusUndefined: Self = StObject.set(x, "buildStatus", js.undefined)
+    inline def setBuildStatusUndefined: Self = StObject.set(x, "buildStatus", js.undefined)
     
-    @scala.inline
-    def setPrimaryArtifact(value: ResolvedArtifact): Self = StObject.set(x, "primaryArtifact", value.asInstanceOf[js.Any])
+    inline def setPrimaryArtifact(value: ResolvedArtifact): Self = StObject.set(x, "primaryArtifact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryArtifactUndefined: Self = StObject.set(x, "primaryArtifact", js.undefined)
+    inline def setPrimaryArtifactUndefined: Self = StObject.set(x, "primaryArtifact", js.undefined)
     
-    @scala.inline
-    def setRequestedOn(value: Timestamp): Self = StObject.set(x, "requestedOn", value.asInstanceOf[js.Any])
+    inline def setRequestedOn(value: Timestamp): Self = StObject.set(x, "requestedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedOnUndefined: Self = StObject.set(x, "requestedOn", js.undefined)
+    inline def setRequestedOnUndefined: Self = StObject.set(x, "requestedOn", js.undefined)
     
-    @scala.inline
-    def setSecondaryArtifacts(value: ResolvedSecondaryArtifacts): Self = StObject.set(x, "secondaryArtifacts", value.asInstanceOf[js.Any])
+    inline def setSecondaryArtifacts(value: ResolvedSecondaryArtifacts): Self = StObject.set(x, "secondaryArtifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryArtifactsUndefined: Self = StObject.set(x, "secondaryArtifacts", js.undefined)
+    inline def setSecondaryArtifactsUndefined: Self = StObject.set(x, "secondaryArtifacts", js.undefined)
     
-    @scala.inline
-    def setSecondaryArtifactsVarargs(value: ResolvedArtifact*): Self = StObject.set(x, "secondaryArtifacts", js.Array(value :_*))
+    inline def setSecondaryArtifactsVarargs(value: ResolvedArtifact*): Self = StObject.set(x, "secondaryArtifacts", js.Array(value :_*))
   }
 }

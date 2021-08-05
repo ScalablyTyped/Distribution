@@ -26,35 +26,26 @@ object cloudtrail {
   }
   object TrailEventSelector {
     
-    @scala.inline
-    def apply(): TrailEventSelector = {
+    inline def apply(): TrailEventSelector = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TrailEventSelector]
     }
     
-    @scala.inline
-    implicit class TrailEventSelectorMutableBuilder[Self <: TrailEventSelector] (val x: Self) extends AnyVal {
+    extension [Self <: TrailEventSelector](x: Self) {
       
-      @scala.inline
-      def setDataResources(value: Input[js.Array[Input[TrailEventSelectorDataResource]]]): Self = StObject.set(x, "dataResources", value.asInstanceOf[js.Any])
+      inline def setDataResources(value: Input[js.Array[Input[TrailEventSelectorDataResource]]]): Self = StObject.set(x, "dataResources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataResourcesUndefined: Self = StObject.set(x, "dataResources", js.undefined)
+      inline def setDataResourcesUndefined: Self = StObject.set(x, "dataResources", js.undefined)
       
-      @scala.inline
-      def setDataResourcesVarargs(value: Input[TrailEventSelectorDataResource]*): Self = StObject.set(x, "dataResources", js.Array(value :_*))
+      inline def setDataResourcesVarargs(value: Input[TrailEventSelectorDataResource]*): Self = StObject.set(x, "dataResources", js.Array(value :_*))
       
-      @scala.inline
-      def setIncludeManagementEvents(value: Input[Boolean]): Self = StObject.set(x, "includeManagementEvents", value.asInstanceOf[js.Any])
+      inline def setIncludeManagementEvents(value: Input[Boolean]): Self = StObject.set(x, "includeManagementEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeManagementEventsUndefined: Self = StObject.set(x, "includeManagementEvents", js.undefined)
+      inline def setIncludeManagementEventsUndefined: Self = StObject.set(x, "includeManagementEvents", js.undefined)
       
-      @scala.inline
-      def setReadWriteType(value: Input[String]): Self = StObject.set(x, "readWriteType", value.asInstanceOf[js.Any])
+      inline def setReadWriteType(value: Input[String]): Self = StObject.set(x, "readWriteType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadWriteTypeUndefined: Self = StObject.set(x, "readWriteType", js.undefined)
+      inline def setReadWriteTypeUndefined: Self = StObject.set(x, "readWriteType", js.undefined)
     }
   }
   
@@ -72,24 +63,19 @@ object cloudtrail {
   }
   object TrailEventSelectorDataResource {
     
-    @scala.inline
-    def apply(`type`: Input[String], values: Input[js.Array[Input[String]]]): TrailEventSelectorDataResource = {
+    inline def apply(`type`: Input[String], values: Input[js.Array[Input[String]]]): TrailEventSelectorDataResource = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrailEventSelectorDataResource]
     }
     
-    @scala.inline
-    implicit class TrailEventSelectorDataResourceMutableBuilder[Self <: TrailEventSelectorDataResource] (val x: Self) extends AnyVal {
+    extension [Self <: TrailEventSelectorDataResource](x: Self) {
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -102,17 +88,14 @@ object cloudtrail {
   }
   object TrailInsightSelector {
     
-    @scala.inline
-    def apply(insightType: Input[String]): TrailInsightSelector = {
+    inline def apply(insightType: Input[String]): TrailInsightSelector = {
       val __obj = js.Dynamic.literal(insightType = insightType.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrailInsightSelector]
     }
     
-    @scala.inline
-    implicit class TrailInsightSelectorMutableBuilder[Self <: TrailInsightSelector] (val x: Self) extends AnyVal {
+    extension [Self <: TrailInsightSelector](x: Self) {
       
-      @scala.inline
-      def setInsightType(value: Input[String]): Self = StObject.set(x, "insightType", value.asInstanceOf[js.Any])
+      inline def setInsightType(value: Input[String]): Self = StObject.set(x, "insightType", value.asInstanceOf[js.Any])
     }
   }
 }

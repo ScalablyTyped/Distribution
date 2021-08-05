@@ -18,25 +18,19 @@ trait Layer extends StObject {
 }
 object Layer {
   
-  @scala.inline
-  def apply(): Layer = {
+  inline def apply(): Layer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Layer]
   }
   
-  @scala.inline
-  implicit class LayerMutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
+  extension [Self <: Layer](x: Self) {
     
-    @scala.inline
-    def setArn(value: LayerVersionArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: LayerVersionArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setCodeSize(value: Long): Self = StObject.set(x, "CodeSize", value.asInstanceOf[js.Any])
+    inline def setCodeSize(value: Long): Self = StObject.set(x, "CodeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeSizeUndefined: Self = StObject.set(x, "CodeSize", js.undefined)
+    inline def setCodeSizeUndefined: Self = StObject.set(x, "CodeSize", js.undefined)
   }
 }

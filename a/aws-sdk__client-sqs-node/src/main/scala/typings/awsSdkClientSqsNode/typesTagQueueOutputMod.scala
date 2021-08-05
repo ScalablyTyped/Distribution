@@ -20,17 +20,14 @@ object typesTagQueueOutputMod {
   }
   object TagQueueOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): TagQueueOutput = {
+    inline def apply($metadata: ResponseMetadata): TagQueueOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagQueueOutput]
     }
     
-    @scala.inline
-    implicit class TagQueueOutputMutableBuilder[Self <: TagQueueOutput] (val x: Self) extends AnyVal {
+    extension [Self <: TagQueueOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -23,34 +23,25 @@ trait UsageStatisticsFilter extends StObject {
 }
 object UsageStatisticsFilter {
   
-  @scala.inline
-  def apply(): UsageStatisticsFilter = {
+  inline def apply(): UsageStatisticsFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageStatisticsFilter]
   }
   
-  @scala.inline
-  implicit class UsageStatisticsFilterMutableBuilder[Self <: UsageStatisticsFilter] (val x: Self) extends AnyVal {
+  extension [Self <: UsageStatisticsFilter](x: Self) {
     
-    @scala.inline
-    def setComparator(value: UsageStatisticsFilterComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+    inline def setComparator(value: UsageStatisticsFilterComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+    inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
     
-    @scala.inline
-    def setKey(value: UsageStatisticsFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: UsageStatisticsFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValues(value: listOfString): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: listOfString): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: string*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: string*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

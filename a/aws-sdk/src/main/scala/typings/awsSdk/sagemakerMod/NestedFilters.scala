@@ -18,22 +18,17 @@ trait NestedFilters extends StObject {
 }
 object NestedFilters {
   
-  @scala.inline
-  def apply(Filters: FilterList, NestedPropertyName: ResourcePropertyName): NestedFilters = {
+  inline def apply(Filters: FilterList, NestedPropertyName: ResourcePropertyName): NestedFilters = {
     val __obj = js.Dynamic.literal(Filters = Filters.asInstanceOf[js.Any], NestedPropertyName = NestedPropertyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[NestedFilters]
   }
   
-  @scala.inline
-  implicit class NestedFiltersMutableBuilder[Self <: NestedFilters] (val x: Self) extends AnyVal {
+  extension [Self <: NestedFilters](x: Self) {
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setNestedPropertyName(value: ResourcePropertyName): Self = StObject.set(x, "NestedPropertyName", value.asInstanceOf[js.Any])
+    inline def setNestedPropertyName(value: ResourcePropertyName): Self = StObject.set(x, "NestedPropertyName", value.asInstanceOf[js.Any])
   }
 }

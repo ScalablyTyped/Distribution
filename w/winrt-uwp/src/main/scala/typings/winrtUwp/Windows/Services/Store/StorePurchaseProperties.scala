@@ -15,19 +15,15 @@ trait StorePurchaseProperties extends StObject {
 }
 object StorePurchaseProperties {
   
-  @scala.inline
-  def apply(extendedJsonData: String, name: String): StorePurchaseProperties = {
+  inline def apply(extendedJsonData: String, name: String): StorePurchaseProperties = {
     val __obj = js.Dynamic.literal(extendedJsonData = extendedJsonData.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorePurchaseProperties]
   }
   
-  @scala.inline
-  implicit class StorePurchasePropertiesMutableBuilder[Self <: StorePurchaseProperties] (val x: Self) extends AnyVal {
+  extension [Self <: StorePurchaseProperties](x: Self) {
     
-    @scala.inline
-    def setExtendedJsonData(value: String): Self = StObject.set(x, "extendedJsonData", value.asInstanceOf[js.Any])
+    inline def setExtendedJsonData(value: String): Self = StObject.set(x, "extendedJsonData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -26,20 +26,16 @@ object coachmarkTypesMod {
   }
   object ICoachmark {
     
-    @scala.inline
-    def apply(): ICoachmark = {
+    inline def apply(): ICoachmark = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICoachmark]
     }
     
-    @scala.inline
-    implicit class ICoachmarkMutableBuilder[Self <: ICoachmark] (val x: Self) extends AnyVal {
+    extension [Self <: ICoachmark](x: Self) {
       
-      @scala.inline
-      def setDismiss(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "dismiss", js.Any.fromFunction1(value))
+      inline def setDismiss(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "dismiss", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDismissUndefined: Self = StObject.set(x, "dismiss", js.undefined)
+      inline def setDismissUndefined: Self = StObject.set(x, "dismiss", js.undefined)
     }
   }
   
@@ -230,212 +226,144 @@ object coachmarkTypesMod {
   }
   object ICoachmarkProps {
     
-    @scala.inline
-    def apply(): ICoachmarkProps = {
+    inline def apply(): ICoachmarkProps = {
       val __obj = js.Dynamic.literal(target = null)
       __obj.asInstanceOf[ICoachmarkProps]
     }
     
-    @scala.inline
-    implicit class ICoachmarkPropsMutableBuilder[Self <: ICoachmarkProps] (val x: Self) extends AnyVal {
+    extension [Self <: ICoachmarkProps](x: Self) {
       
-      @scala.inline
-      def setAriaAlertText(value: String): Self = StObject.set(x, "ariaAlertText", value.asInstanceOf[js.Any])
+      inline def setAriaAlertText(value: String): Self = StObject.set(x, "ariaAlertText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaAlertTextUndefined: Self = StObject.set(x, "ariaAlertText", js.undefined)
+      inline def setAriaAlertTextUndefined: Self = StObject.set(x, "ariaAlertText", js.undefined)
       
-      @scala.inline
-      def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
+      inline def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaDescribedByText(value: String): Self = StObject.set(x, "ariaDescribedByText", value.asInstanceOf[js.Any])
+      inline def setAriaDescribedByText(value: String): Self = StObject.set(x, "ariaDescribedByText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaDescribedByTextUndefined: Self = StObject.set(x, "ariaDescribedByText", js.undefined)
+      inline def setAriaDescribedByTextUndefined: Self = StObject.set(x, "ariaDescribedByText", js.undefined)
       
-      @scala.inline
-      def setAriaDescribedByUndefined: Self = StObject.set(x, "ariaDescribedBy", js.undefined)
+      inline def setAriaDescribedByUndefined: Self = StObject.set(x, "ariaDescribedBy", js.undefined)
       
-      @scala.inline
-      def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
+      inline def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelledByText(value: String): Self = StObject.set(x, "ariaLabelledByText", value.asInstanceOf[js.Any])
+      inline def setAriaLabelledByText(value: String): Self = StObject.set(x, "ariaLabelledByText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelledByTextUndefined: Self = StObject.set(x, "ariaLabelledByText", js.undefined)
+      inline def setAriaLabelledByTextUndefined: Self = StObject.set(x, "ariaLabelledByText", js.undefined)
       
-      @scala.inline
-      def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
+      inline def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
       
-      @scala.inline
-      def setBeaconColorOne(value: String): Self = StObject.set(x, "beaconColorOne", value.asInstanceOf[js.Any])
+      inline def setBeaconColorOne(value: String): Self = StObject.set(x, "beaconColorOne", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeaconColorOneUndefined: Self = StObject.set(x, "beaconColorOne", js.undefined)
+      inline def setBeaconColorOneUndefined: Self = StObject.set(x, "beaconColorOne", js.undefined)
       
-      @scala.inline
-      def setBeaconColorTwo(value: String): Self = StObject.set(x, "beaconColorTwo", value.asInstanceOf[js.Any])
+      inline def setBeaconColorTwo(value: String): Self = StObject.set(x, "beaconColorTwo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeaconColorTwoUndefined: Self = StObject.set(x, "beaconColorTwo", js.undefined)
+      inline def setBeaconColorTwoUndefined: Self = StObject.set(x, "beaconColorTwo", js.undefined)
       
-      @scala.inline
-      def setBeakHeight(value: Double): Self = StObject.set(x, "beakHeight", value.asInstanceOf[js.Any])
+      inline def setBeakHeight(value: Double): Self = StObject.set(x, "beakHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeakHeightUndefined: Self = StObject.set(x, "beakHeight", js.undefined)
+      inline def setBeakHeightUndefined: Self = StObject.set(x, "beakHeight", js.undefined)
       
-      @scala.inline
-      def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
+      inline def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeakWidthUndefined: Self = StObject.set(x, "beakWidth", js.undefined)
+      inline def setBeakWidthUndefined: Self = StObject.set(x, "beakWidth", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[ICoachmark]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[ICoachmark]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ ICoachmark | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ ICoachmark | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDelayBeforeCoachmarkAnimation(value: Double): Self = StObject.set(x, "delayBeforeCoachmarkAnimation", value.asInstanceOf[js.Any])
+      inline def setDelayBeforeCoachmarkAnimation(value: Double): Self = StObject.set(x, "delayBeforeCoachmarkAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayBeforeCoachmarkAnimationUndefined: Self = StObject.set(x, "delayBeforeCoachmarkAnimation", js.undefined)
+      inline def setDelayBeforeCoachmarkAnimationUndefined: Self = StObject.set(x, "delayBeforeCoachmarkAnimation", js.undefined)
       
-      @scala.inline
-      def setDelayBeforeMouseOpen(value: Double): Self = StObject.set(x, "delayBeforeMouseOpen", value.asInstanceOf[js.Any])
+      inline def setDelayBeforeMouseOpen(value: Double): Self = StObject.set(x, "delayBeforeMouseOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayBeforeMouseOpenUndefined: Self = StObject.set(x, "delayBeforeMouseOpen", js.undefined)
+      inline def setDelayBeforeMouseOpenUndefined: Self = StObject.set(x, "delayBeforeMouseOpen", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
+      inline def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCollapsedUndefined: Self = StObject.set(x, "isCollapsed", js.undefined)
+      inline def setIsCollapsedUndefined: Self = StObject.set(x, "isCollapsed", js.undefined)
       
-      @scala.inline
-      def setIsPositionForced(value: Boolean): Self = StObject.set(x, "isPositionForced", value.asInstanceOf[js.Any])
+      inline def setIsPositionForced(value: Boolean): Self = StObject.set(x, "isPositionForced", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPositionForcedUndefined: Self = StObject.set(x, "isPositionForced", js.undefined)
+      inline def setIsPositionForcedUndefined: Self = StObject.set(x, "isPositionForced", js.undefined)
       
-      @scala.inline
-      def setMouseProximityOffset(value: Double): Self = StObject.set(x, "mouseProximityOffset", value.asInstanceOf[js.Any])
+      inline def setMouseProximityOffset(value: Double): Self = StObject.set(x, "mouseProximityOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseProximityOffsetUndefined: Self = StObject.set(x, "mouseProximityOffset", js.undefined)
+      inline def setMouseProximityOffsetUndefined: Self = StObject.set(x, "mouseProximityOffset", js.undefined)
       
-      @scala.inline
-      def setOnAnimationOpenEnd(value: () => Unit): Self = StObject.set(x, "onAnimationOpenEnd", js.Any.fromFunction0(value))
+      inline def setOnAnimationOpenEnd(value: () => Unit): Self = StObject.set(x, "onAnimationOpenEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnAnimationOpenEndUndefined: Self = StObject.set(x, "onAnimationOpenEnd", js.undefined)
+      inline def setOnAnimationOpenEndUndefined: Self = StObject.set(x, "onAnimationOpenEnd", js.undefined)
       
-      @scala.inline
-      def setOnAnimationOpenStart(value: () => Unit): Self = StObject.set(x, "onAnimationOpenStart", js.Any.fromFunction0(value))
+      inline def setOnAnimationOpenStart(value: () => Unit): Self = StObject.set(x, "onAnimationOpenStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnAnimationOpenStartUndefined: Self = StObject.set(x, "onAnimationOpenStart", js.undefined)
+      inline def setOnAnimationOpenStartUndefined: Self = StObject.set(x, "onAnimationOpenStart", js.undefined)
       
-      @scala.inline
-      def setOnDismiss(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+      inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      @scala.inline
-      def setOnMouseMove(value: /* e */ MouseEvent => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+      inline def setOnMouseMove(value: /* e */ MouseEvent => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
+      inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
-      @scala.inline
-      def setPersistentBeak(value: Boolean): Self = StObject.set(x, "persistentBeak", value.asInstanceOf[js.Any])
+      inline def setPersistentBeak(value: Boolean): Self = StObject.set(x, "persistentBeak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistentBeakUndefined: Self = StObject.set(x, "persistentBeak", js.undefined)
+      inline def setPersistentBeakUndefined: Self = StObject.set(x, "persistentBeak", js.undefined)
       
-      @scala.inline
-      def setPositioningContainerProps(value: IPositioningContainerProps): Self = StObject.set(x, "positioningContainerProps", value.asInstanceOf[js.Any])
+      inline def setPositioningContainerProps(value: IPositioningContainerProps): Self = StObject.set(x, "positioningContainerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositioningContainerPropsUndefined: Self = StObject.set(x, "positioningContainerProps", js.undefined)
+      inline def setPositioningContainerPropsUndefined: Self = StObject.set(x, "positioningContainerProps", js.undefined)
       
-      @scala.inline
-      def setPreventDismissOnLostFocus(value: Boolean): Self = StObject.set(x, "preventDismissOnLostFocus", value.asInstanceOf[js.Any])
+      inline def setPreventDismissOnLostFocus(value: Boolean): Self = StObject.set(x, "preventDismissOnLostFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDismissOnLostFocusUndefined: Self = StObject.set(x, "preventDismissOnLostFocus", js.undefined)
+      inline def setPreventDismissOnLostFocusUndefined: Self = StObject.set(x, "preventDismissOnLostFocus", js.undefined)
       
-      @scala.inline
-      def setPreventFocusOnMount(value: Boolean): Self = StObject.set(x, "preventFocusOnMount", value.asInstanceOf[js.Any])
+      inline def setPreventFocusOnMount(value: Boolean): Self = StObject.set(x, "preventFocusOnMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventFocusOnMountUndefined: Self = StObject.set(x, "preventFocusOnMount", js.undefined)
+      inline def setPreventFocusOnMountUndefined: Self = StObject.set(x, "preventFocusOnMount", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[ICoachmarkStyleProps, ICoachmarkStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[ICoachmarkStyleProps, ICoachmarkStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: ICoachmarkStyleProps => DeepPartial[ICoachmarkStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: ICoachmarkStyleProps => DeepPartial[ICoachmarkStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTarget(value: HTMLElement | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLElement | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetNull: Self = StObject.set(x, "target", null)
+      inline def setTargetNull: Self = StObject.set(x, "target", null)
       
-      @scala.inline
-      def setTeachingBubbleRef(value: ITeachingBubble): Self = StObject.set(x, "teachingBubbleRef", value.asInstanceOf[js.Any])
+      inline def setTeachingBubbleRef(value: ITeachingBubble): Self = StObject.set(x, "teachingBubbleRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeachingBubbleRefUndefined: Self = StObject.set(x, "teachingBubbleRef", js.undefined)
+      inline def setTeachingBubbleRefUndefined: Self = StObject.set(x, "teachingBubbleRef", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -528,98 +456,68 @@ object coachmarkTypesMod {
   }
   object ICoachmarkStyleProps {
     
-    @scala.inline
-    def apply(isBeaconAnimating: Boolean, isCollapsed: Boolean, isMeasured: Boolean, isMeasuring: Boolean): ICoachmarkStyleProps = {
+    inline def apply(isBeaconAnimating: Boolean, isCollapsed: Boolean, isMeasured: Boolean, isMeasuring: Boolean): ICoachmarkStyleProps = {
       val __obj = js.Dynamic.literal(isBeaconAnimating = isBeaconAnimating.asInstanceOf[js.Any], isCollapsed = isCollapsed.asInstanceOf[js.Any], isMeasured = isMeasured.asInstanceOf[js.Any], isMeasuring = isMeasuring.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICoachmarkStyleProps]
     }
     
-    @scala.inline
-    implicit class ICoachmarkStylePropsMutableBuilder[Self <: ICoachmarkStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ICoachmarkStyleProps](x: Self) {
       
-      @scala.inline
-      def setBeaconColorOne(value: String): Self = StObject.set(x, "beaconColorOne", value.asInstanceOf[js.Any])
+      inline def setBeaconColorOne(value: String): Self = StObject.set(x, "beaconColorOne", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeaconColorOneUndefined: Self = StObject.set(x, "beaconColorOne", js.undefined)
+      inline def setBeaconColorOneUndefined: Self = StObject.set(x, "beaconColorOne", js.undefined)
       
-      @scala.inline
-      def setBeaconColorTwo(value: String): Self = StObject.set(x, "beaconColorTwo", value.asInstanceOf[js.Any])
+      inline def setBeaconColorTwo(value: String): Self = StObject.set(x, "beaconColorTwo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeaconColorTwoUndefined: Self = StObject.set(x, "beaconColorTwo", js.undefined)
+      inline def setBeaconColorTwoUndefined: Self = StObject.set(x, "beaconColorTwo", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDelayBeforeCoachmarkAnimation(value: String): Self = StObject.set(x, "delayBeforeCoachmarkAnimation", value.asInstanceOf[js.Any])
+      inline def setDelayBeforeCoachmarkAnimation(value: String): Self = StObject.set(x, "delayBeforeCoachmarkAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayBeforeCoachmarkAnimationUndefined: Self = StObject.set(x, "delayBeforeCoachmarkAnimation", js.undefined)
+      inline def setDelayBeforeCoachmarkAnimationUndefined: Self = StObject.set(x, "delayBeforeCoachmarkAnimation", js.undefined)
       
-      @scala.inline
-      def setEntityHostHeight(value: String): Self = StObject.set(x, "entityHostHeight", value.asInstanceOf[js.Any])
+      inline def setEntityHostHeight(value: String): Self = StObject.set(x, "entityHostHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityHostHeightUndefined: Self = StObject.set(x, "entityHostHeight", js.undefined)
+      inline def setEntityHostHeightUndefined: Self = StObject.set(x, "entityHostHeight", js.undefined)
       
-      @scala.inline
-      def setEntityHostWidth(value: String): Self = StObject.set(x, "entityHostWidth", value.asInstanceOf[js.Any])
+      inline def setEntityHostWidth(value: String): Self = StObject.set(x, "entityHostWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityHostWidthUndefined: Self = StObject.set(x, "entityHostWidth", js.undefined)
+      inline def setEntityHostWidthUndefined: Self = StObject.set(x, "entityHostWidth", js.undefined)
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setIsBeaconAnimating(value: Boolean): Self = StObject.set(x, "isBeaconAnimating", value.asInstanceOf[js.Any])
+      inline def setIsBeaconAnimating(value: Boolean): Self = StObject.set(x, "isBeaconAnimating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
+      inline def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMeasured(value: Boolean): Self = StObject.set(x, "isMeasured", value.asInstanceOf[js.Any])
+      inline def setIsMeasured(value: Boolean): Self = StObject.set(x, "isMeasured", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMeasuring(value: Boolean): Self = StObject.set(x, "isMeasuring", value.asInstanceOf[js.Any])
+      inline def setIsMeasuring(value: Boolean): Self = StObject.set(x, "isMeasuring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTransformOrigin(value: String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
+      inline def setTransformOrigin(value: String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
+      inline def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -679,104 +577,72 @@ object coachmarkTypesMod {
   }
   object ICoachmarkStyles {
     
-    @scala.inline
-    def apply(): ICoachmarkStyles = {
+    inline def apply(): ICoachmarkStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICoachmarkStyles]
     }
     
-    @scala.inline
-    implicit class ICoachmarkStylesMutableBuilder[Self <: ICoachmarkStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ICoachmarkStyles](x: Self) {
       
-      @scala.inline
-      def setAriaContainer(value: IStyle): Self = StObject.set(x, "ariaContainer", value.asInstanceOf[js.Any])
+      inline def setAriaContainer(value: IStyle): Self = StObject.set(x, "ariaContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaContainerNull: Self = StObject.set(x, "ariaContainer", null)
+      inline def setAriaContainerNull: Self = StObject.set(x, "ariaContainer", null)
       
-      @scala.inline
-      def setAriaContainerUndefined: Self = StObject.set(x, "ariaContainer", js.undefined)
+      inline def setAriaContainerUndefined: Self = StObject.set(x, "ariaContainer", js.undefined)
       
-      @scala.inline
-      def setChildrenContainer(value: IStyle): Self = StObject.set(x, "childrenContainer", value.asInstanceOf[js.Any])
+      inline def setChildrenContainer(value: IStyle): Self = StObject.set(x, "childrenContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenContainerNull: Self = StObject.set(x, "childrenContainer", null)
+      inline def setChildrenContainerNull: Self = StObject.set(x, "childrenContainer", null)
       
-      @scala.inline
-      def setChildrenContainerUndefined: Self = StObject.set(x, "childrenContainer", js.undefined)
+      inline def setChildrenContainerUndefined: Self = StObject.set(x, "childrenContainer", js.undefined)
       
-      @scala.inline
-      def setCollapsed(value: IStyle): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: IStyle): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedNull: Self = StObject.set(x, "collapsed", null)
+      inline def setCollapsedNull: Self = StObject.set(x, "collapsed", null)
       
-      @scala.inline
-      def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      @scala.inline
-      def setEntityHost(value: IStyle): Self = StObject.set(x, "entityHost", value.asInstanceOf[js.Any])
+      inline def setEntityHost(value: IStyle): Self = StObject.set(x, "entityHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityHostNull: Self = StObject.set(x, "entityHost", null)
+      inline def setEntityHostNull: Self = StObject.set(x, "entityHost", null)
       
-      @scala.inline
-      def setEntityHostUndefined: Self = StObject.set(x, "entityHost", js.undefined)
+      inline def setEntityHostUndefined: Self = StObject.set(x, "entityHost", js.undefined)
       
-      @scala.inline
-      def setEntityInnerHost(value: IStyle): Self = StObject.set(x, "entityInnerHost", value.asInstanceOf[js.Any])
+      inline def setEntityInnerHost(value: IStyle): Self = StObject.set(x, "entityInnerHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityInnerHostNull: Self = StObject.set(x, "entityInnerHost", null)
+      inline def setEntityInnerHostNull: Self = StObject.set(x, "entityInnerHost", null)
       
-      @scala.inline
-      def setEntityInnerHostUndefined: Self = StObject.set(x, "entityInnerHost", js.undefined)
+      inline def setEntityInnerHostUndefined: Self = StObject.set(x, "entityInnerHost", js.undefined)
       
-      @scala.inline
-      def setPulsingBeacon(value: IStyle): Self = StObject.set(x, "pulsingBeacon", value.asInstanceOf[js.Any])
+      inline def setPulsingBeacon(value: IStyle): Self = StObject.set(x, "pulsingBeacon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPulsingBeaconNull: Self = StObject.set(x, "pulsingBeacon", null)
+      inline def setPulsingBeaconNull: Self = StObject.set(x, "pulsingBeacon", null)
       
-      @scala.inline
-      def setPulsingBeaconUndefined: Self = StObject.set(x, "pulsingBeacon", js.undefined)
+      inline def setPulsingBeaconUndefined: Self = StObject.set(x, "pulsingBeacon", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setRotateAnimationLayer(value: IStyle): Self = StObject.set(x, "rotateAnimationLayer", value.asInstanceOf[js.Any])
+      inline def setRotateAnimationLayer(value: IStyle): Self = StObject.set(x, "rotateAnimationLayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateAnimationLayerNull: Self = StObject.set(x, "rotateAnimationLayer", null)
+      inline def setRotateAnimationLayerNull: Self = StObject.set(x, "rotateAnimationLayer", null)
       
-      @scala.inline
-      def setRotateAnimationLayerUndefined: Self = StObject.set(x, "rotateAnimationLayer", js.undefined)
+      inline def setRotateAnimationLayerUndefined: Self = StObject.set(x, "rotateAnimationLayer", js.undefined)
       
-      @scala.inline
-      def setScaleAnimationLayer(value: IStyle): Self = StObject.set(x, "scaleAnimationLayer", value.asInstanceOf[js.Any])
+      inline def setScaleAnimationLayer(value: IStyle): Self = StObject.set(x, "scaleAnimationLayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleAnimationLayerNull: Self = StObject.set(x, "scaleAnimationLayer", null)
+      inline def setScaleAnimationLayerNull: Self = StObject.set(x, "scaleAnimationLayer", null)
       
-      @scala.inline
-      def setScaleAnimationLayerUndefined: Self = StObject.set(x, "scaleAnimationLayer", js.undefined)
+      inline def setScaleAnimationLayerUndefined: Self = StObject.set(x, "scaleAnimationLayer", js.undefined)
       
-      @scala.inline
-      def setTranslateAnimationContainer(value: IStyle): Self = StObject.set(x, "translateAnimationContainer", value.asInstanceOf[js.Any])
+      inline def setTranslateAnimationContainer(value: IStyle): Self = StObject.set(x, "translateAnimationContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateAnimationContainerNull: Self = StObject.set(x, "translateAnimationContainer", null)
+      inline def setTranslateAnimationContainerNull: Self = StObject.set(x, "translateAnimationContainer", null)
       
-      @scala.inline
-      def setTranslateAnimationContainerUndefined: Self = StObject.set(x, "translateAnimationContainer", js.undefined)
+      inline def setTranslateAnimationContainerUndefined: Self = StObject.set(x, "translateAnimationContainer", js.undefined)
     }
   }
   

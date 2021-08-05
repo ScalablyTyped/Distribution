@@ -29,8 +29,7 @@ trait XQuerySelectResult
 }
 object XQuerySelectResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BindingNames: SafeArray[String],
     acquire: () => Unit,
     getBindingNames: () => SafeArray[String],
@@ -43,13 +42,10 @@ object XQuerySelectResult {
     __obj.asInstanceOf[XQuerySelectResult]
   }
   
-  @scala.inline
-  implicit class XQuerySelectResultMutableBuilder[Self <: XQuerySelectResult] (val x: Self) extends AnyVal {
+  extension [Self <: XQuerySelectResult](x: Self) {
     
-    @scala.inline
-    def setBindingNames(value: SafeArray[String]): Self = StObject.set(x, "BindingNames", value.asInstanceOf[js.Any])
+    inline def setBindingNames(value: SafeArray[String]): Self = StObject.set(x, "BindingNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBindingNames(value: () => SafeArray[String]): Self = StObject.set(x, "getBindingNames", js.Any.fromFunction0(value))
+    inline def setGetBindingNames(value: () => SafeArray[String]): Self = StObject.set(x, "getBindingNames", js.Any.fromFunction0(value))
   }
 }

@@ -21,33 +21,33 @@ object boxlayoutMod {
   class BoxLayout () extends PanelLayout {
     def this(options: IOptions) = this()
     
-    var _alignment: js.Any = js.native
+    /* private */ var _alignment: js.Any = js.native
     
-    var _box: js.Any = js.native
+    /* private */ var _box: js.Any = js.native
     
-    var _direction: js.Any = js.native
+    /* private */ var _direction: js.Any = js.native
     
-    var _dirty: js.Any = js.native
+    /* private */ var _dirty: js.Any = js.native
     
     /**
       * Fit the layout to the total size required by the widgets.
       */
-    var _fit: js.Any = js.native
+    /* private */ var _fit: js.Any = js.native
     
-    var _fixed: js.Any = js.native
+    /* private */ var _fixed: js.Any = js.native
     
-    var _items: js.Any = js.native
+    /* private */ var _items: js.Any = js.native
     
-    var _sizers: js.Any = js.native
+    /* private */ var _sizers: js.Any = js.native
     
-    var _spacing: js.Any = js.native
+    /* private */ var _spacing: js.Any = js.native
     
     /**
       * Update the layout position and size of the widgets.
       *
       * The parent offset dimensions should be `-1` if unknown.
       */
-    var _update: js.Any = js.native
+    /* private */ var _update: js.Any = js.native
     
     /**
       * Get the content alignment for the box layout.
@@ -98,8 +98,7 @@ object boxlayoutMod {
       *
       * @returns The box layout size basis for the widget.
       */
-    @scala.inline
-    def getSizeBasis(widget: Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeBasis")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getSizeBasis(widget: Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeBasis")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Get the box layout stretch factor for the given widget.
@@ -108,8 +107,7 @@ object boxlayoutMod {
       *
       * @returns The box layout stretch factor for the widget.
       */
-    @scala.inline
-    def getStretch(widget: Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getStretch(widget: Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Set the box layout size basis for the given widget.
@@ -118,8 +116,7 @@ object boxlayoutMod {
       *
       * @param value - The value for the size basis.
       */
-    @scala.inline
-    def setSizeBasis(widget: Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSizeBasis")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setSizeBasis(widget: Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSizeBasis")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Set the box layout stretch factor for the given widget.
@@ -128,8 +125,7 @@ object boxlayoutMod {
       *
       * @param value - The value for the stretch factor.
       */
-    @scala.inline
-    def setStretch(widget: Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setStretch(widget: Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * A type alias for a box layout alignment.
@@ -143,17 +139,13 @@ object boxlayoutMod {
     trait Alignment extends StObject
     object Alignment {
       
-      @scala.inline
-      def center: typings.luminoWidgets.luminoWidgetsStrings.center = "center".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.center]
+      inline def center: typings.luminoWidgets.luminoWidgetsStrings.center = "center".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.center]
       
-      @scala.inline
-      def end: typings.luminoWidgets.luminoWidgetsStrings.end = "end".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.end]
+      inline def end: typings.luminoWidgets.luminoWidgetsStrings.end = "end".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.end]
       
-      @scala.inline
-      def justify: typings.luminoWidgets.luminoWidgetsStrings.justify = "justify".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.justify]
+      inline def justify: typings.luminoWidgets.luminoWidgetsStrings.justify = "justify".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.justify]
       
-      @scala.inline
-      def start: typings.luminoWidgets.luminoWidgetsStrings.start = "start".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.start]
+      inline def start: typings.luminoWidgets.luminoWidgetsStrings.start = "start".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.start]
     }
     
     /**
@@ -168,17 +160,13 @@ object boxlayoutMod {
     trait Direction extends StObject
     object Direction {
       
-      @scala.inline
-      def `bottom-to-top`: typings.luminoWidgets.luminoWidgetsStrings.`bottom-to-top` = "bottom-to-top".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`bottom-to-top`]
+      inline def `bottom-to-top`: typings.luminoWidgets.luminoWidgetsStrings.`bottom-to-top` = "bottom-to-top".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`bottom-to-top`]
       
-      @scala.inline
-      def `left-to-right`: typings.luminoWidgets.luminoWidgetsStrings.`left-to-right` = "left-to-right".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`left-to-right`]
+      inline def `left-to-right`: typings.luminoWidgets.luminoWidgetsStrings.`left-to-right` = "left-to-right".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`left-to-right`]
       
-      @scala.inline
-      def `right-to-left`: typings.luminoWidgets.luminoWidgetsStrings.`right-to-left` = "right-to-left".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`right-to-left`]
+      inline def `right-to-left`: typings.luminoWidgets.luminoWidgetsStrings.`right-to-left` = "right-to-left".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`right-to-left`]
       
-      @scala.inline
-      def `top-to-bottom`: typings.luminoWidgets.luminoWidgetsStrings.`top-to-bottom` = "top-to-bottom".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`top-to-bottom`]
+      inline def `top-to-bottom`: typings.luminoWidgets.luminoWidgetsStrings.`top-to-bottom` = "top-to-bottom".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`top-to-bottom`]
     }
     
     /**
@@ -209,32 +197,24 @@ object boxlayoutMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setAlignment(value: Alignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+        inline def setAlignment(value: Alignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+        inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
         
-        @scala.inline
-        def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+        inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+        inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
         
-        @scala.inline
-        def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+        inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+        inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
       }
     }
   }

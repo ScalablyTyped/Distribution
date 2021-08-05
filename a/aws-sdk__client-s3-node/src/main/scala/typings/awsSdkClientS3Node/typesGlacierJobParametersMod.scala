@@ -18,17 +18,14 @@ object typesGlacierJobParametersMod {
   }
   object GlacierJobParameters {
     
-    @scala.inline
-    def apply(Tier: Standard_ | Bulk | Expedited | String): GlacierJobParameters = {
+    inline def apply(Tier: Standard_ | Bulk | Expedited | String): GlacierJobParameters = {
       val __obj = js.Dynamic.literal(Tier = Tier.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlacierJobParameters]
     }
     
-    @scala.inline
-    implicit class GlacierJobParametersMutableBuilder[Self <: GlacierJobParameters] (val x: Self) extends AnyVal {
+    extension [Self <: GlacierJobParameters](x: Self) {
       
-      @scala.inline
-      def setTier(value: Standard_ | Bulk | Expedited | String): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
+      inline def setTier(value: Standard_ | Bulk | Expedited | String): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
     }
   }
   

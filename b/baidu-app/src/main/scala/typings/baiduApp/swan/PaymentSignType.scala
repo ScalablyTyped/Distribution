@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PaymentSignType extends StObject
 object PaymentSignType {
   
-  @scala.inline
-  def `HMAC-SHA256`: typings.baiduApp.baiduAppStrings.`HMAC-SHA256` = "HMAC-SHA256".asInstanceOf[typings.baiduApp.baiduAppStrings.`HMAC-SHA256`]
+  inline def `HMAC-SHA256`: typings.baiduApp.baiduAppStrings.`HMAC-SHA256` = "HMAC-SHA256".asInstanceOf[typings.baiduApp.baiduAppStrings.`HMAC-SHA256`]
   
-  @scala.inline
-  def MD5: typings.baiduApp.baiduAppStrings.MD5 = "MD5".asInstanceOf[typings.baiduApp.baiduAppStrings.MD5]
+  inline def MD5: typings.baiduApp.baiduAppStrings.MD5 = "MD5".asInstanceOf[typings.baiduApp.baiduAppStrings.MD5]
 }

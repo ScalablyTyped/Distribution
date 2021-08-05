@@ -14,22 +14,17 @@ trait WeakSet[T] extends StObject {
 }
 object WeakSet {
   
-  @scala.inline
-  def apply[T](add: T => WeakSet[T], delete: T => Boolean, has: T => Boolean): WeakSet[T] = {
+  inline def apply[T](add: T => WeakSet[T], delete: T => Boolean, has: T => Boolean): WeakSet[T] = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), delete = js.Any.fromFunction1(delete), has = js.Any.fromFunction1(has))
     __obj.asInstanceOf[WeakSet[T]]
   }
   
-  @scala.inline
-  implicit class WeakSetMutableBuilder[Self <: WeakSet[?], T] (val x: Self & WeakSet[T]) extends AnyVal {
+  extension [Self <: WeakSet[?], T](x: Self & WeakSet[T]) {
     
-    @scala.inline
-    def setAdd(value: T => WeakSet[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: T => WeakSet[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDelete(value: T => Boolean): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: T => Boolean): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHas(value: T => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    inline def setHas(value: T => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
   }
 }

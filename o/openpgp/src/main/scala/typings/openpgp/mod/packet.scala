@@ -144,8 +144,7 @@ object packet {
       * @returns new packetlist object with data from packetlist clone
       */
     /* static member */
-    @scala.inline
-    def fromStructuredClone(packetClone: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStructuredClone")(packetClone.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def fromStructuredClone(packetClone: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStructuredClone")(packetClone.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   }
   
   @JSImport("openpgp", "packet.Literal")
@@ -1397,8 +1396,7 @@ object packet {
     @JSImport("openpgp", "packet.all_packets.Compressed")
     @js.native
     def Compressed: js.Any = js.native
-    @scala.inline
-    def Compressed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Compressed")(x.asInstanceOf[js.Any])
+    inline def Compressed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Compressed")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.Literal
@@ -1406,8 +1404,7 @@ object packet {
     @JSImport("openpgp", "packet.all_packets.Literal")
     @js.native
     def Literal: js.Any = js.native
-    @scala.inline
-    def Literal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Literal")(x.asInstanceOf[js.Any])
+    inline def Literal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Literal")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.Marker
@@ -1415,8 +1412,7 @@ object packet {
     @JSImport("openpgp", "packet.all_packets.Marker")
     @js.native
     def Marker: js.Any = js.native
-    @scala.inline
-    def Marker_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Marker")(x.asInstanceOf[js.Any])
+    inline def Marker_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Marker")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.OnePassSignature
@@ -1424,8 +1420,7 @@ object packet {
     @JSImport("openpgp", "packet.all_packets.OnePassSignature")
     @js.native
     def OnePassSignature: js.Any = js.native
-    @scala.inline
-    def OnePassSignature_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnePassSignature")(x.asInstanceOf[js.Any])
+    inline def OnePassSignature_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnePassSignature")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.PublicKey
@@ -1440,11 +1435,9 @@ object packet {
     @JSImport("openpgp", "packet.all_packets.PublicKeyEncryptedSessionKey")
     @js.native
     def PublicKeyEncryptedSessionKey: js.Any = js.native
-    @scala.inline
-    def PublicKeyEncryptedSessionKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublicKeyEncryptedSessionKey")(x.asInstanceOf[js.Any])
+    inline def PublicKeyEncryptedSessionKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublicKeyEncryptedSessionKey")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def PublicKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublicKey")(x.asInstanceOf[js.Any])
+    inline def PublicKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublicKey")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.PublicSubkey
@@ -1452,8 +1445,7 @@ object packet {
     @JSImport("openpgp", "packet.all_packets.PublicSubkey")
     @js.native
     def PublicSubkey: js.Any = js.native
-    @scala.inline
-    def PublicSubkey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublicSubkey")(x.asInstanceOf[js.Any])
+    inline def PublicSubkey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublicSubkey")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.SecretKey
@@ -1461,8 +1453,7 @@ object packet {
     @JSImport("openpgp", "packet.all_packets.SecretKey")
     @js.native
     def SecretKey: js.Any = js.native
-    @scala.inline
-    def SecretKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SecretKey")(x.asInstanceOf[js.Any])
+    inline def SecretKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SecretKey")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.SecretSubkey
@@ -1470,8 +1461,7 @@ object packet {
     @JSImport("openpgp", "packet.all_packets.SecretSubkey")
     @js.native
     def SecretSubkey: js.Any = js.native
-    @scala.inline
-    def SecretSubkey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SecretSubkey")(x.asInstanceOf[js.Any])
+    inline def SecretSubkey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SecretSubkey")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.Signature
@@ -1479,8 +1469,7 @@ object packet {
     @JSImport("openpgp", "packet.all_packets.Signature")
     @js.native
     def Signature: js.Any = js.native
-    @scala.inline
-    def Signature_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Signature")(x.asInstanceOf[js.Any])
+    inline def Signature_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Signature")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.SymEncryptedAEADProtected
@@ -1488,8 +1477,7 @@ object packet {
     @JSImport("openpgp", "packet.all_packets.SymEncryptedAEADProtected")
     @js.native
     def SymEncryptedAEADProtected: js.Any = js.native
-    @scala.inline
-    def SymEncryptedAEADProtected_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymEncryptedAEADProtected")(x.asInstanceOf[js.Any])
+    inline def SymEncryptedAEADProtected_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymEncryptedAEADProtected")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.SymEncryptedIntegrityProtected
@@ -1497,8 +1485,7 @@ object packet {
     @JSImport("openpgp", "packet.all_packets.SymEncryptedIntegrityProtected")
     @js.native
     def SymEncryptedIntegrityProtected: js.Any = js.native
-    @scala.inline
-    def SymEncryptedIntegrityProtected_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymEncryptedIntegrityProtected")(x.asInstanceOf[js.Any])
+    inline def SymEncryptedIntegrityProtected_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymEncryptedIntegrityProtected")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.SymEncryptedSessionKey
@@ -1506,8 +1493,7 @@ object packet {
     @JSImport("openpgp", "packet.all_packets.SymEncryptedSessionKey")
     @js.native
     def SymEncryptedSessionKey: js.Any = js.native
-    @scala.inline
-    def SymEncryptedSessionKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymEncryptedSessionKey")(x.asInstanceOf[js.Any])
+    inline def SymEncryptedSessionKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymEncryptedSessionKey")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.SymmetricallyEncrypted
@@ -1515,8 +1501,7 @@ object packet {
     @JSImport("openpgp", "packet.all_packets.SymmetricallyEncrypted")
     @js.native
     def SymmetricallyEncrypted: js.Any = js.native
-    @scala.inline
-    def SymmetricallyEncrypted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymmetricallyEncrypted")(x.asInstanceOf[js.Any])
+    inline def SymmetricallyEncrypted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SymmetricallyEncrypted")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.Trust
@@ -1524,8 +1509,7 @@ object packet {
     @JSImport("openpgp", "packet.all_packets.Trust")
     @js.native
     def Trust: js.Any = js.native
-    @scala.inline
-    def Trust_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Trust")(x.asInstanceOf[js.Any])
+    inline def Trust_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Trust")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.UserAttribute
@@ -1533,8 +1517,7 @@ object packet {
     @JSImport("openpgp", "packet.all_packets.UserAttribute")
     @js.native
     def UserAttribute: js.Any = js.native
-    @scala.inline
-    def UserAttribute_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserAttribute")(x.asInstanceOf[js.Any])
+    inline def UserAttribute_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserAttribute")(x.asInstanceOf[js.Any])
     
     /**
       * @see module:packet.Userid
@@ -1542,8 +1525,7 @@ object packet {
     @JSImport("openpgp", "packet.all_packets.Userid")
     @js.native
     def Userid: js.Any = js.native
-    @scala.inline
-    def Userid_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Userid")(x.asInstanceOf[js.Any])
+    inline def Userid_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Userid")(x.asInstanceOf[js.Any])
   }
   
   object clone_ {
@@ -1557,8 +1539,7 @@ object packet {
       * @param options the object passed to and from the web worker
       * @returns a mutated version of the options optject
       */
-    @scala.inline
-    def clonePackets(options: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("clonePackets")(options.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def clonePackets(options: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("clonePackets")(options.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /**
       * Creates an object with the correct prototype from a corresponding packetlist.
@@ -1566,8 +1547,7 @@ object packet {
       * @param method the public api function name to be delegated to the worker
       * @returns a mutated version of the options optject
       */
-    @scala.inline
-    def parseClonedPackets(options: js.Object, method: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parseClonedPackets")(options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def parseClonedPackets(options: js.Object, method: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parseClonedPackets")(options.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   }
   
   /**
@@ -1576,16 +1556,14 @@ object packet {
     * @param packetClone packet clone
     * @returns new packet object with data from packet clone
     */
-  @scala.inline
-  def fromStructuredClone(packetClone: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStructuredClone")(packetClone.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def fromStructuredClone(packetClone: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStructuredClone")(packetClone.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
   /**
     * Allocate a new packet
     * @param tag property name from {@link module:enums.packet}
     * @returns new packet object with type based on tag
     */
-  @scala.inline
-  def newPacketFromTag(tag: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("newPacketFromTag")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def newPacketFromTag(tag: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("newPacketFromTag")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
   object packet {
     
@@ -1593,24 +1571,21 @@ object packet {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def read(input: ReadableStream[Uint8Array], callback: js.Function): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def read(input: ReadableStream[Uint8Array], callback: js.Function): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Generic static Packet Parser function
       * @param input Input stream as string
       * @param callback Function to call with the parsed packet
       * @returns Returns false if the stream was empty and parsing is done, and true otherwise.
       */
-    @scala.inline
-    def read(input: Uint8Array, callback: js.Function): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def read(input: Uint8Array, callback: js.Function): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Whether the packet type supports partial lengths per RFC4880
       * @param tag_type Tag type
       * @returns String of the header
       */
-    @scala.inline
-    def supportsStreaming(tag_type: Integer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsStreaming")(tag_type.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def supportsStreaming(tag_type: Integer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsStreaming")(tag_type.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Writes a packet header version 4 with the given tag_type and length to a
@@ -1619,8 +1594,7 @@ object packet {
       * @param length Length of the payload
       * @returns String of the header
       */
-    @scala.inline
-    def writeHeader(tag_type: Integer, length: Integer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("writeHeader")(tag_type.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def writeHeader(tag_type: Integer, length: Integer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("writeHeader")(tag_type.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Writes a packet header Version 3 with the given tag_type and length to a
@@ -1629,8 +1603,7 @@ object packet {
       * @param length Length of the payload
       * @returns String of the header
       */
-    @scala.inline
-    def writeOldHeader(tag_type: Integer, length: Integer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("writeOldHeader")(tag_type.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def writeOldHeader(tag_type: Integer, length: Integer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("writeOldHeader")(tag_type.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Encodes a given integer of length to the openpgp length specifier to a
@@ -1638,7 +1611,6 @@ object packet {
       * @param length The length to encode
       * @returns String with openpgp length representation
       */
-    @scala.inline
-    def writeSimpleLength(length: Integer): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("writeSimpleLength")(length.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def writeSimpleLength(length: Integer): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("writeSimpleLength")(length.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   }
 }

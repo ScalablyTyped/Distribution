@@ -44,12 +44,10 @@ object Variable {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isVariable(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariable")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isVariable(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariable")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("postman-collection", "Variable.types")
   @js.native
   def types: Any = js.native
-  @scala.inline
-  def types_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
+  inline def types_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
 }

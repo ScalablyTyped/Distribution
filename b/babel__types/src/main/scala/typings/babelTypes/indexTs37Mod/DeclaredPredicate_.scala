@@ -19,20 +19,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object DeclaredPredicate_ {
   
-  @scala.inline
-  def apply(value: Flow): DeclaredPredicate_ = {
+  inline def apply(value: Flow): DeclaredPredicate_ = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("DeclaredPredicate")
     __obj.asInstanceOf[DeclaredPredicate_]
   }
   
-  @scala.inline
-  implicit class DeclaredPredicate_MutableBuilder[Self <: DeclaredPredicate_] (val x: Self) extends AnyVal {
+  extension [Self <: DeclaredPredicate_](x: Self) {
     
-    @scala.inline
-    def setType(value: DeclaredPredicate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DeclaredPredicate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Flow): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Flow): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

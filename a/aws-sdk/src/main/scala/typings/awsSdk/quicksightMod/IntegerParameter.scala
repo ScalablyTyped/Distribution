@@ -18,22 +18,17 @@ trait IntegerParameter extends StObject {
 }
 object IntegerParameter {
   
-  @scala.inline
-  def apply(Name: NonEmptyString, Values: LongList): IntegerParameter = {
+  inline def apply(Name: NonEmptyString, Values: LongList): IntegerParameter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegerParameter]
   }
   
-  @scala.inline
-  implicit class IntegerParameterMutableBuilder[Self <: IntegerParameter] (val x: Self) extends AnyVal {
+  extension [Self <: IntegerParameter](x: Self) {
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: LongList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: LongList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: Long_ *): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Long_ *): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

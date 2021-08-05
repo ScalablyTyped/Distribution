@@ -13,16 +13,13 @@ trait DeleteAgentRequest extends StObject {
 }
 object DeleteAgentRequest {
   
-  @scala.inline
-  def apply(AgentArn: AgentArn): DeleteAgentRequest = {
+  inline def apply(AgentArn: AgentArn): DeleteAgentRequest = {
     val __obj = js.Dynamic.literal(AgentArn = AgentArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAgentRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAgentRequestMutableBuilder[Self <: DeleteAgentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAgentRequest](x: Self) {
     
-    @scala.inline
-    def setAgentArn(value: AgentArn): Self = StObject.set(x, "AgentArn", value.asInstanceOf[js.Any])
+    inline def setAgentArn(value: AgentArn): Self = StObject.set(x, "AgentArn", value.asInstanceOf[js.Any])
   }
 }

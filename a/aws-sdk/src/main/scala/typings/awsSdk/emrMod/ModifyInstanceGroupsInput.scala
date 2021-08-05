@@ -18,28 +18,21 @@ trait ModifyInstanceGroupsInput extends StObject {
 }
 object ModifyInstanceGroupsInput {
   
-  @scala.inline
-  def apply(): ModifyInstanceGroupsInput = {
+  inline def apply(): ModifyInstanceGroupsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyInstanceGroupsInput]
   }
   
-  @scala.inline
-  implicit class ModifyInstanceGroupsInputMutableBuilder[Self <: ModifyInstanceGroupsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyInstanceGroupsInput](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
+    inline def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
     
-    @scala.inline
-    def setInstanceGroups(value: InstanceGroupModifyConfigList): Self = StObject.set(x, "InstanceGroups", value.asInstanceOf[js.Any])
+    inline def setInstanceGroups(value: InstanceGroupModifyConfigList): Self = StObject.set(x, "InstanceGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceGroupsUndefined: Self = StObject.set(x, "InstanceGroups", js.undefined)
+    inline def setInstanceGroupsUndefined: Self = StObject.set(x, "InstanceGroups", js.undefined)
     
-    @scala.inline
-    def setInstanceGroupsVarargs(value: InstanceGroupModifyConfig*): Self = StObject.set(x, "InstanceGroups", js.Array(value :_*))
+    inline def setInstanceGroupsVarargs(value: InstanceGroupModifyConfig*): Self = StObject.set(x, "InstanceGroups", js.Array(value :_*))
   }
 }

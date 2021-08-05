@@ -13,19 +13,15 @@ trait DeleteByteMatchSetResponse extends StObject {
 }
 object DeleteByteMatchSetResponse {
   
-  @scala.inline
-  def apply(): DeleteByteMatchSetResponse = {
+  inline def apply(): DeleteByteMatchSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteByteMatchSetResponse]
   }
   
-  @scala.inline
-  implicit class DeleteByteMatchSetResponseMutableBuilder[Self <: DeleteByteMatchSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteByteMatchSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
   }
 }

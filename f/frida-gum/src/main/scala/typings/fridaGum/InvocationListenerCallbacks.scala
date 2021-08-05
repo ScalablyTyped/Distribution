@@ -14,14 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InvocationListenerCallbacks extends StObject
 object InvocationListenerCallbacks {
   
-  @scala.inline
-  def NativeInvocationListenerCallbacks(): typings.fridaGum.NativeInvocationListenerCallbacks = {
+  inline def NativeInvocationListenerCallbacks(): typings.fridaGum.NativeInvocationListenerCallbacks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.fridaGum.NativeInvocationListenerCallbacks]
   }
   
-  @scala.inline
-  def ScriptInvocationListenerCallbacks(): typings.fridaGum.ScriptInvocationListenerCallbacks = {
+  inline def ScriptInvocationListenerCallbacks(): typings.fridaGum.ScriptInvocationListenerCallbacks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.fridaGum.ScriptInvocationListenerCallbacks]
   }

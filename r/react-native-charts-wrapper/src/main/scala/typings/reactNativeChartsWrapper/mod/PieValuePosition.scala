@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PieValuePosition extends StObject
 object PieValuePosition {
   
-  @scala.inline
-  def INSIDE_SLICE: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.INSIDE_SLICE = "INSIDE_SLICE".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.INSIDE_SLICE]
+  inline def INSIDE_SLICE: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.INSIDE_SLICE = "INSIDE_SLICE".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.INSIDE_SLICE]
   
-  @scala.inline
-  def OUTSIDE_SLICE: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.OUTSIDE_SLICE = "OUTSIDE_SLICE".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.OUTSIDE_SLICE]
+  inline def OUTSIDE_SLICE: typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.OUTSIDE_SLICE = "OUTSIDE_SLICE".asInstanceOf[typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.OUTSIDE_SLICE]
 }

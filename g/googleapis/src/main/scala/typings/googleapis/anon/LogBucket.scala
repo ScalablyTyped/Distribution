@@ -12,25 +12,19 @@ trait LogBucket extends StObject {
 }
 object LogBucket {
   
-  @scala.inline
-  def apply(): LogBucket = {
+  inline def apply(): LogBucket = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogBucket]
   }
   
-  @scala.inline
-  implicit class LogBucketMutableBuilder[Self <: LogBucket] (val x: Self) extends AnyVal {
+  extension [Self <: LogBucket](x: Self) {
     
-    @scala.inline
-    def setLogBucket(value: String): Self = StObject.set(x, "logBucket", value.asInstanceOf[js.Any])
+    inline def setLogBucket(value: String): Self = StObject.set(x, "logBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogBucketUndefined: Self = StObject.set(x, "logBucket", js.undefined)
+    inline def setLogBucketUndefined: Self = StObject.set(x, "logBucket", js.undefined)
     
-    @scala.inline
-    def setLogObjectPrefix(value: String): Self = StObject.set(x, "logObjectPrefix", value.asInstanceOf[js.Any])
+    inline def setLogObjectPrefix(value: String): Self = StObject.set(x, "logObjectPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogObjectPrefixUndefined: Self = StObject.set(x, "logObjectPrefix", js.undefined)
+    inline def setLogObjectPrefixUndefined: Self = StObject.set(x, "logObjectPrefix", js.undefined)
   }
 }

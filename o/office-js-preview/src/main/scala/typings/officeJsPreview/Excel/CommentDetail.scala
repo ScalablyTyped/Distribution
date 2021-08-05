@@ -30,22 +30,17 @@ trait CommentDetail extends StObject {
 }
 object CommentDetail {
   
-  @scala.inline
-  def apply(commentId: String, replyIds: js.Array[String]): CommentDetail = {
+  inline def apply(commentId: String, replyIds: js.Array[String]): CommentDetail = {
     val __obj = js.Dynamic.literal(commentId = commentId.asInstanceOf[js.Any], replyIds = replyIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentDetail]
   }
   
-  @scala.inline
-  implicit class CommentDetailMutableBuilder[Self <: CommentDetail] (val x: Self) extends AnyVal {
+  extension [Self <: CommentDetail](x: Self) {
     
-    @scala.inline
-    def setCommentId(value: String): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
+    inline def setCommentId(value: String): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyIds(value: js.Array[String]): Self = StObject.set(x, "replyIds", value.asInstanceOf[js.Any])
+    inline def setReplyIds(value: js.Array[String]): Self = StObject.set(x, "replyIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyIdsVarargs(value: String*): Self = StObject.set(x, "replyIds", js.Array(value :_*))
+    inline def setReplyIdsVarargs(value: String*): Self = StObject.set(x, "replyIds", js.Array(value :_*))
   }
 }

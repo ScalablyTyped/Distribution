@@ -11,8 +11,7 @@ trait AdBuilder[T]
      with hasTrackingTemplateBuilder[T]
 object AdBuilder {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     build: () => AdWordsOperation[T],
     withCustomParameters: js.Object => T,
     withFinalUrl: String => T,

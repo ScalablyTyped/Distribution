@@ -18,7 +18,7 @@ object optimizerMod {
     /**
       * Compute a map of node depths that we can use to determine a topological sort order.
       */
-    var getNodeDepths: js.Any = js.native
+    /* private */ var getNodeDepths: js.Any = js.native
     
     /**
       * Run the optimizer at the node. This method should not change the parent of the passed in node (it should only affect children).
@@ -37,7 +37,7 @@ object optimizerMod {
       */
     def optimize(root: DataFlowNode): Boolean = js.native
     
-    var `private`: js.Any = js.native
+    /* private */ var `private`: js.Any = js.native
     
     def setModified(): Unit = js.native
   }
@@ -52,6 +52,5 @@ object optimizerMod {
     def run(node: DataFlowNode): Unit = js.native
   }
   
-  @scala.inline
-  def isDataSourceNode(node: DataFlowNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataSourceNode")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDataSourceNode(node: DataFlowNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataSourceNode")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

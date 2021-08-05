@@ -36,8 +36,7 @@ object calendarMod {
     @JSImport("googleapis/build/src/apis/calendar", "VERSIONS.v3")
     @js.native
     def v3: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Calendar] = js.native
-    @scala.inline
-    def v3_=(
+    inline def v3_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Calendar]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3")(x.asInstanceOf[js.Any])
   }
@@ -75,8 +74,7 @@ object calendarMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -120,9 +118,7 @@ object calendarMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def calendar(options: Options): Calendar = ^.asInstanceOf[js.Dynamic].applyDynamic("calendar")(options.asInstanceOf[js.Any]).asInstanceOf[Calendar]
+  inline def calendar(options: Options): Calendar = ^.asInstanceOf[js.Dynamic].applyDynamic("calendar")(options.asInstanceOf[js.Any]).asInstanceOf[Calendar]
   
-  @scala.inline
-  def calendar_v3(version: v3): Calendar = ^.asInstanceOf[js.Dynamic].applyDynamic("calendar")(version.asInstanceOf[js.Any]).asInstanceOf[Calendar]
+  inline def calendar_v3(version: v3): Calendar = ^.asInstanceOf[js.Dynamic].applyDynamic("calendar")(version.asInstanceOf[js.Any]).asInstanceOf[Calendar]
 }

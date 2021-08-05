@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pinLsMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function1[/* options */ js.UndefOr[js.Object], AsyncGenerator[Type, Unit, js.Any]] = ^.asInstanceOf[js.Dynamic].apply(clientOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ js.UndefOr[js.Object], AsyncGenerator[Type, Unit, js.Any]]]
+  inline def apply(clientOptions: ClientOptions): js.Function1[/* options */ js.UndefOr[js.Object], AsyncGenerator[Type, Unit, js.Any]] = ^.asInstanceOf[js.Dynamic].apply(clientOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ js.UndefOr[js.Object], AsyncGenerator[Type, Unit, js.Any]]]
   
   @JSImport("ipfs-http-client/dist/src/pin/ls", JSImport.Namespace)
   @js.native

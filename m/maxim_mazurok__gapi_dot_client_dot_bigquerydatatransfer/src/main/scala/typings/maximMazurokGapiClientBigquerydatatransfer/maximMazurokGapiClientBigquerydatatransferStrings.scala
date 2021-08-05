@@ -8,31 +8,25 @@ object maximMazurokGapiClientBigquerydatatransferStrings {
   
   @js.native
   sealed trait Location extends StObject
-  @scala.inline
-  def Location: Location = "Location".asInstanceOf[Location]
+  inline def Location: Location = "Location".asInstanceOf[Location]
   
   @js.native
   sealed trait Status extends StObject
-  @scala.inline
-  def Status: Status = "Status".asInstanceOf[Status]
+  inline def Status: Status = "Status".asInstanceOf[Status]
   
   @js.native
   sealed trait TransferConfig extends StObject
-  @scala.inline
-  def TransferConfig: TransferConfig = "TransferConfig".asInstanceOf[TransferConfig]
+  inline def TransferConfig: TransferConfig = "TransferConfig".asInstanceOf[TransferConfig]
   
   @js.native
   sealed trait TransferRun extends StObject
-  @scala.inline
-  def TransferRun: TransferRun = "TransferRun".asInstanceOf[TransferRun]
+  inline def TransferRun: TransferRun = "TransferRun".asInstanceOf[TransferRun]
   
   @js.native
   sealed trait bigquerydatatransfer extends StObject
-  @scala.inline
-  def bigquerydatatransfer: bigquerydatatransfer = "bigquerydatatransfer".asInstanceOf[bigquerydatatransfer]
+  inline def bigquerydatatransfer: bigquerydatatransfer = "bigquerydatatransfer".asInstanceOf[bigquerydatatransfer]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

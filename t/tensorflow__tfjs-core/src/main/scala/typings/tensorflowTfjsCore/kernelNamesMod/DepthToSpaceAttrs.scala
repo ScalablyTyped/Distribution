@@ -14,19 +14,15 @@ trait DepthToSpaceAttrs extends StObject {
 }
 object DepthToSpaceAttrs {
   
-  @scala.inline
-  def apply(blockSize: Double, dataFormat: NHWC | NCHW): DepthToSpaceAttrs = {
+  inline def apply(blockSize: Double, dataFormat: NHWC | NCHW): DepthToSpaceAttrs = {
     val __obj = js.Dynamic.literal(blockSize = blockSize.asInstanceOf[js.Any], dataFormat = dataFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[DepthToSpaceAttrs]
   }
   
-  @scala.inline
-  implicit class DepthToSpaceAttrsMutableBuilder[Self <: DepthToSpaceAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: DepthToSpaceAttrs](x: Self) {
     
-    @scala.inline
-    def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
+    inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFormat(value: NHWC | NCHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
+    inline def setDataFormat(value: NHWC | NCHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
   }
 }

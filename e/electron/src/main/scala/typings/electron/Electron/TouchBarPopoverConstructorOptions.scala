@@ -29,34 +29,25 @@ trait TouchBarPopoverConstructorOptions extends StObject {
 }
 object TouchBarPopoverConstructorOptions {
   
-  @scala.inline
-  def apply(items: TouchBar): TouchBarPopoverConstructorOptions = {
+  inline def apply(items: TouchBar): TouchBarPopoverConstructorOptions = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchBarPopoverConstructorOptions]
   }
   
-  @scala.inline
-  implicit class TouchBarPopoverConstructorOptionsMutableBuilder[Self <: TouchBarPopoverConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TouchBarPopoverConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setIcon(value: NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setItems(value: TouchBar): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: TouchBar): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
+    inline def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
+    inline def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
   }
 }

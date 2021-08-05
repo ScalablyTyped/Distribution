@@ -23,31 +23,23 @@ trait NetworkAclAssociation extends StObject {
 }
 object NetworkAclAssociation {
   
-  @scala.inline
-  def apply(): NetworkAclAssociation = {
+  inline def apply(): NetworkAclAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkAclAssociation]
   }
   
-  @scala.inline
-  implicit class NetworkAclAssociationMutableBuilder[Self <: NetworkAclAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkAclAssociation](x: Self) {
     
-    @scala.inline
-    def setNetworkAclAssociationId(value: String): Self = StObject.set(x, "NetworkAclAssociationId", value.asInstanceOf[js.Any])
+    inline def setNetworkAclAssociationId(value: String): Self = StObject.set(x, "NetworkAclAssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkAclAssociationIdUndefined: Self = StObject.set(x, "NetworkAclAssociationId", js.undefined)
+    inline def setNetworkAclAssociationIdUndefined: Self = StObject.set(x, "NetworkAclAssociationId", js.undefined)
     
-    @scala.inline
-    def setNetworkAclId(value: String): Self = StObject.set(x, "NetworkAclId", value.asInstanceOf[js.Any])
+    inline def setNetworkAclId(value: String): Self = StObject.set(x, "NetworkAclId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkAclIdUndefined: Self = StObject.set(x, "NetworkAclId", js.undefined)
+    inline def setNetworkAclIdUndefined: Self = StObject.set(x, "NetworkAclId", js.undefined)
     
-    @scala.inline
-    def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
+    inline def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
   }
 }

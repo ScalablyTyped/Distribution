@@ -17,31 +17,23 @@ trait DeployedFleetAutoscaler extends StObject {
 }
 object DeployedFleetAutoscaler {
   
-  @scala.inline
-  def apply(): DeployedFleetAutoscaler = {
+  inline def apply(): DeployedFleetAutoscaler = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeployedFleetAutoscaler]
   }
   
-  @scala.inline
-  implicit class DeployedFleetAutoscalerMutableBuilder[Self <: DeployedFleetAutoscaler] (val x: Self) extends AnyVal {
+  extension [Self <: DeployedFleetAutoscaler](x: Self) {
     
-    @scala.inline
-    def setAutoscaler(value: String): Self = StObject.set(x, "autoscaler", value.asInstanceOf[js.Any])
+    inline def setAutoscaler(value: String): Self = StObject.set(x, "autoscaler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscalerUndefined: Self = StObject.set(x, "autoscaler", js.undefined)
+    inline def setAutoscalerUndefined: Self = StObject.set(x, "autoscaler", js.undefined)
     
-    @scala.inline
-    def setFleetAutoscalerSpec(value: String): Self = StObject.set(x, "fleetAutoscalerSpec", value.asInstanceOf[js.Any])
+    inline def setFleetAutoscalerSpec(value: String): Self = StObject.set(x, "fleetAutoscalerSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetAutoscalerSpecUndefined: Self = StObject.set(x, "fleetAutoscalerSpec", js.undefined)
+    inline def setFleetAutoscalerSpecUndefined: Self = StObject.set(x, "fleetAutoscalerSpec", js.undefined)
     
-    @scala.inline
-    def setSpecSource(value: SpecSource): Self = StObject.set(x, "specSource", value.asInstanceOf[js.Any])
+    inline def setSpecSource(value: SpecSource): Self = StObject.set(x, "specSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecSourceUndefined: Self = StObject.set(x, "specSource", js.undefined)
+    inline def setSpecSourceUndefined: Self = StObject.set(x, "specSource", js.undefined)
   }
 }

@@ -70,8 +70,7 @@ trait XCharacterData
 }
 object XCharacterData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Attributes: XNamedNodeMap,
     ChildNodes: XNodeList,
     Data: String,
@@ -129,37 +128,26 @@ object XCharacterData {
     __obj.asInstanceOf[XCharacterData]
   }
   
-  @scala.inline
-  implicit class XCharacterDataMutableBuilder[Self <: XCharacterData] (val x: Self) extends AnyVal {
+  extension [Self <: XCharacterData](x: Self) {
     
-    @scala.inline
-    def setAppendData(value: String => Unit): Self = StObject.set(x, "appendData", js.Any.fromFunction1(value))
+    inline def setAppendData(value: String => Unit): Self = StObject.set(x, "appendData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteData(value: (Double, Double) => Unit): Self = StObject.set(x, "deleteData", js.Any.fromFunction2(value))
+    inline def setDeleteData(value: (Double, Double) => Unit): Self = StObject.set(x, "deleteData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetData(value: () => String): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => String): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+    inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsertData(value: (Double, String) => Unit): Self = StObject.set(x, "insertData", js.Any.fromFunction2(value))
+    inline def setInsertData(value: (Double, String) => Unit): Self = StObject.set(x, "insertData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceData(value: (Double, Double, String) => Unit): Self = StObject.set(x, "replaceData", js.Any.fromFunction3(value))
+    inline def setReplaceData(value: (Double, Double, String) => Unit): Self = StObject.set(x, "replaceData", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetData(value: String => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: String => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubStringData(value: (Double, Double) => String): Self = StObject.set(x, "subStringData", js.Any.fromFunction2(value))
+    inline def setSubStringData(value: (Double, Double) => String): Self = StObject.set(x, "subStringData", js.Any.fromFunction2(value))
   }
 }

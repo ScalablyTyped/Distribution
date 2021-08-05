@@ -18,19 +18,15 @@ trait GitImportGitSource extends StObject {
 }
 object GitImportGitSource {
   
-  @scala.inline
-  def apply(overwrite: Boolean, url: String): GitImportGitSource = {
+  inline def apply(overwrite: Boolean, url: String): GitImportGitSource = {
     val __obj = js.Dynamic.literal(overwrite = overwrite.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitImportGitSource]
   }
   
-  @scala.inline
-  implicit class GitImportGitSourceMutableBuilder[Self <: GitImportGitSource] (val x: Self) extends AnyVal {
+  extension [Self <: GitImportGitSource](x: Self) {
     
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

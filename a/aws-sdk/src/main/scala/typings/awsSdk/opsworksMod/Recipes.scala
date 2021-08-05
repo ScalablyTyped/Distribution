@@ -33,58 +33,41 @@ trait Recipes extends StObject {
 }
 object Recipes {
   
-  @scala.inline
-  def apply(): Recipes = {
+  inline def apply(): Recipes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Recipes]
   }
   
-  @scala.inline
-  implicit class RecipesMutableBuilder[Self <: Recipes] (val x: Self) extends AnyVal {
+  extension [Self <: Recipes](x: Self) {
     
-    @scala.inline
-    def setConfigure(value: Strings): Self = StObject.set(x, "Configure", value.asInstanceOf[js.Any])
+    inline def setConfigure(value: Strings): Self = StObject.set(x, "Configure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigureUndefined: Self = StObject.set(x, "Configure", js.undefined)
+    inline def setConfigureUndefined: Self = StObject.set(x, "Configure", js.undefined)
     
-    @scala.inline
-    def setConfigureVarargs(value: String*): Self = StObject.set(x, "Configure", js.Array(value :_*))
+    inline def setConfigureVarargs(value: String*): Self = StObject.set(x, "Configure", js.Array(value :_*))
     
-    @scala.inline
-    def setDeploy(value: Strings): Self = StObject.set(x, "Deploy", value.asInstanceOf[js.Any])
+    inline def setDeploy(value: Strings): Self = StObject.set(x, "Deploy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployUndefined: Self = StObject.set(x, "Deploy", js.undefined)
+    inline def setDeployUndefined: Self = StObject.set(x, "Deploy", js.undefined)
     
-    @scala.inline
-    def setDeployVarargs(value: String*): Self = StObject.set(x, "Deploy", js.Array(value :_*))
+    inline def setDeployVarargs(value: String*): Self = StObject.set(x, "Deploy", js.Array(value :_*))
     
-    @scala.inline
-    def setSetup(value: Strings): Self = StObject.set(x, "Setup", value.asInstanceOf[js.Any])
+    inline def setSetup(value: Strings): Self = StObject.set(x, "Setup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetupUndefined: Self = StObject.set(x, "Setup", js.undefined)
+    inline def setSetupUndefined: Self = StObject.set(x, "Setup", js.undefined)
     
-    @scala.inline
-    def setSetupVarargs(value: String*): Self = StObject.set(x, "Setup", js.Array(value :_*))
+    inline def setSetupVarargs(value: String*): Self = StObject.set(x, "Setup", js.Array(value :_*))
     
-    @scala.inline
-    def setShutdown(value: Strings): Self = StObject.set(x, "Shutdown", value.asInstanceOf[js.Any])
+    inline def setShutdown(value: Strings): Self = StObject.set(x, "Shutdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShutdownUndefined: Self = StObject.set(x, "Shutdown", js.undefined)
+    inline def setShutdownUndefined: Self = StObject.set(x, "Shutdown", js.undefined)
     
-    @scala.inline
-    def setShutdownVarargs(value: String*): Self = StObject.set(x, "Shutdown", js.Array(value :_*))
+    inline def setShutdownVarargs(value: String*): Self = StObject.set(x, "Shutdown", js.Array(value :_*))
     
-    @scala.inline
-    def setUndeploy(value: Strings): Self = StObject.set(x, "Undeploy", value.asInstanceOf[js.Any])
+    inline def setUndeploy(value: Strings): Self = StObject.set(x, "Undeploy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndeployUndefined: Self = StObject.set(x, "Undeploy", js.undefined)
+    inline def setUndeployUndefined: Self = StObject.set(x, "Undeploy", js.undefined)
     
-    @scala.inline
-    def setUndeployVarargs(value: String*): Self = StObject.set(x, "Undeploy", js.Array(value :_*))
+    inline def setUndeployVarargs(value: String*): Self = StObject.set(x, "Undeploy", js.Array(value :_*))
   }
 }

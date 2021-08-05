@@ -26,8 +26,7 @@ trait BookmarksVisibleElements
 }
 object BookmarksVisibleElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,19 +35,14 @@ object BookmarksVisibleElements {
     __obj.asInstanceOf[BookmarksVisibleElements]
   }
   
-  @scala.inline
-  implicit class BookmarksVisibleElementsMutableBuilder[Self <: BookmarksVisibleElements] (val x: Self) extends AnyVal {
+  extension [Self <: BookmarksVisibleElements](x: Self) {
     
-    @scala.inline
-    def setAddBookmark(value: Boolean): Self = StObject.set(x, "addBookmark", value.asInstanceOf[js.Any])
+    inline def setAddBookmark(value: Boolean): Self = StObject.set(x, "addBookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddBookmarkUndefined: Self = StObject.set(x, "addBookmark", js.undefined)
+    inline def setAddBookmarkUndefined: Self = StObject.set(x, "addBookmark", js.undefined)
     
-    @scala.inline
-    def setThumbnail(value: Boolean): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: Boolean): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+    inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
   }
 }

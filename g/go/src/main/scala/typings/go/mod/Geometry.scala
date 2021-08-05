@@ -116,32 +116,28 @@ object Geometry {
   @JSImport("go", "Geometry.Ellipse")
   @js.native
   def Ellipse: EnumValue = js.native
-  @scala.inline
-  def Ellipse_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ellipse")(x.asInstanceOf[js.Any])
+  inline def Ellipse_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ellipse")(x.asInstanceOf[js.Any])
   
   /**For drawing a simple straight line; a value for Geometry.type.*/
   /* static member */
   @JSImport("go", "Geometry.Line")
   @js.native
   def Line: EnumValue = js.native
-  @scala.inline
-  def Line_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Line")(x.asInstanceOf[js.Any])
+  inline def Line_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Line")(x.asInstanceOf[js.Any])
   
   /**For drawing a complex path made of a list of PathFigures; a value for Geometry.type.*/
   /* static member */
   @JSImport("go", "Geometry.Path")
   @js.native
   def Path: EnumValue = js.native
-  @scala.inline
-  def Path_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Path")(x.asInstanceOf[js.Any])
+  inline def Path_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Path")(x.asInstanceOf[js.Any])
   
   /**For drawing a rectangle; a value for Geometry.type.*/
   /* static member */
   @JSImport("go", "Geometry.Rectangle")
   @js.native
   def Rectangle: EnumValue = js.native
-  @scala.inline
-  def Rectangle_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rectangle")(x.asInstanceOf[js.Any])
+  inline def Rectangle_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rectangle")(x.asInstanceOf[js.Any])
   
   /**
     * Given a SVG or GoJS path string, returns a congruent path string with each PathFigure filled.
@@ -149,8 +145,7 @@ object Geometry {
     * @param {string} str
     */
   /* static member */
-  @scala.inline
-  def fillPath(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fillPath")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fillPath(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fillPath")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Produce a Geometry from a string that uses an SVG-like compact path geometry syntax.
@@ -162,10 +157,8 @@ object Geometry {
     * Default is false.
     */
   /* static member */
-  @scala.inline
-  def parse(str: String): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Geometry]
-  @scala.inline
-  def parse(str: String, filled: Boolean): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], filled.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+  inline def parse(str: String): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  inline def parse(str: String, filled: Boolean): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], filled.asInstanceOf[js.Any])).asInstanceOf[Geometry]
   
   /**
     * This static function can be used to write out a Geometry as a string
@@ -176,6 +169,5 @@ object Geometry {
     * @param {Geometry} val
     */
   /* static member */
-  @scala.inline
-  def stringify(`val`: Geometry): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(`val`: Geometry): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -39,8 +39,7 @@ trait InstanceInfo
 }
 object InstanceInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     serverinstanceDatabaseVersion: Double,
     serverinstanceFiletransferPort: Double,
     serverinstanceGuestServerqueryGroup: Double,
@@ -60,49 +59,34 @@ object InstanceInfo {
     __obj.asInstanceOf[InstanceInfo]
   }
   
-  @scala.inline
-  implicit class InstanceInfoMutableBuilder[Self <: InstanceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceInfo](x: Self) {
     
-    @scala.inline
-    def setServerinstanceDatabaseVersion(value: Double): Self = StObject.set(x, "serverinstanceDatabaseVersion", value.asInstanceOf[js.Any])
+    inline def setServerinstanceDatabaseVersion(value: Double): Self = StObject.set(x, "serverinstanceDatabaseVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerinstanceFiletransferPort(value: Double): Self = StObject.set(x, "serverinstanceFiletransferPort", value.asInstanceOf[js.Any])
+    inline def setServerinstanceFiletransferPort(value: Double): Self = StObject.set(x, "serverinstanceFiletransferPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerinstanceGuestServerqueryGroup(value: Double): Self = StObject.set(x, "serverinstanceGuestServerqueryGroup", value.asInstanceOf[js.Any])
+    inline def setServerinstanceGuestServerqueryGroup(value: Double): Self = StObject.set(x, "serverinstanceGuestServerqueryGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerinstanceMaxDownloadTotalBandwidth(value: Double): Self = StObject.set(x, "serverinstanceMaxDownloadTotalBandwidth", value.asInstanceOf[js.Any])
+    inline def setServerinstanceMaxDownloadTotalBandwidth(value: Double): Self = StObject.set(x, "serverinstanceMaxDownloadTotalBandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerinstanceMaxUploadTotalBandwidth(value: Double): Self = StObject.set(x, "serverinstanceMaxUploadTotalBandwidth", value.asInstanceOf[js.Any])
+    inline def setServerinstanceMaxUploadTotalBandwidth(value: Double): Self = StObject.set(x, "serverinstanceMaxUploadTotalBandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerinstancePendingConnectionsPerIp(value: Double): Self = StObject.set(x, "serverinstancePendingConnectionsPerIp", value.asInstanceOf[js.Any])
+    inline def setServerinstancePendingConnectionsPerIp(value: Double): Self = StObject.set(x, "serverinstancePendingConnectionsPerIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerinstancePermissionsVersion(value: Double): Self = StObject.set(x, "serverinstancePermissionsVersion", value.asInstanceOf[js.Any])
+    inline def setServerinstancePermissionsVersion(value: Double): Self = StObject.set(x, "serverinstancePermissionsVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerinstanceServerqueryFloodBanTime(value: Double): Self = StObject.set(x, "serverinstanceServerqueryFloodBanTime", value.asInstanceOf[js.Any])
+    inline def setServerinstanceServerqueryFloodBanTime(value: Double): Self = StObject.set(x, "serverinstanceServerqueryFloodBanTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerinstanceServerqueryFloodCommands(value: Double): Self = StObject.set(x, "serverinstanceServerqueryFloodCommands", value.asInstanceOf[js.Any])
+    inline def setServerinstanceServerqueryFloodCommands(value: Double): Self = StObject.set(x, "serverinstanceServerqueryFloodCommands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerinstanceServerqueryMaxConnectionsPerIp(value: Double): Self = StObject.set(x, "serverinstanceServerqueryMaxConnectionsPerIp", value.asInstanceOf[js.Any])
+    inline def setServerinstanceServerqueryMaxConnectionsPerIp(value: Double): Self = StObject.set(x, "serverinstanceServerqueryMaxConnectionsPerIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerinstanceTemplateChanneladminGroup(value: String): Self = StObject.set(x, "serverinstanceTemplateChanneladminGroup", value.asInstanceOf[js.Any])
+    inline def setServerinstanceTemplateChanneladminGroup(value: String): Self = StObject.set(x, "serverinstanceTemplateChanneladminGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerinstanceTemplateChanneldefaultGroup(value: String): Self = StObject.set(x, "serverinstanceTemplateChanneldefaultGroup", value.asInstanceOf[js.Any])
+    inline def setServerinstanceTemplateChanneldefaultGroup(value: String): Self = StObject.set(x, "serverinstanceTemplateChanneldefaultGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerinstanceTemplateServeradminGroup(value: Double): Self = StObject.set(x, "serverinstanceTemplateServeradminGroup", value.asInstanceOf[js.Any])
+    inline def setServerinstanceTemplateServeradminGroup(value: Double): Self = StObject.set(x, "serverinstanceTemplateServeradminGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerinstanceTemplateServerdefaultGroup(value: String): Self = StObject.set(x, "serverinstanceTemplateServerdefaultGroup", value.asInstanceOf[js.Any])
+    inline def setServerinstanceTemplateServerdefaultGroup(value: String): Self = StObject.set(x, "serverinstanceTemplateServerdefaultGroup", value.asInstanceOf[js.Any])
   }
 }

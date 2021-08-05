@@ -27,28 +27,22 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def addLocale(localeData: Locale): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(localeData.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addLocale(localeData: Locale): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(localeData.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def getDefaultLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultLocale")().asInstanceOf[String]
+  inline def getDefaultLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultLocale")().asInstanceOf[String]
   
   /* static member */
-  @scala.inline
-  def intlDateTimeFormatSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("intlDateTimeFormatSupported")().asInstanceOf[Boolean]
+  inline def intlDateTimeFormatSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("intlDateTimeFormatSupported")().asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def intlDateTimeFormatSupportedLocale(locale: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("intlDateTimeFormatSupportedLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
+  inline def intlDateTimeFormatSupportedLocale(locale: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("intlDateTimeFormatSupportedLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
   
   /* static member */
-  @scala.inline
-  def locale(localeData: Locale): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(localeData.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def locale(localeData: Locale): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(localeData.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def setDefaultLocale(locale: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDefaultLocale(locale: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait TimeAgo extends StObject {

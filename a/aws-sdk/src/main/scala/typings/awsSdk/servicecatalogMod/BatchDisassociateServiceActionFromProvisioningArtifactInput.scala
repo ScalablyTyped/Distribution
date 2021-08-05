@@ -18,25 +18,19 @@ trait BatchDisassociateServiceActionFromProvisioningArtifactInput extends StObje
 }
 object BatchDisassociateServiceActionFromProvisioningArtifactInput {
   
-  @scala.inline
-  def apply(ServiceActionAssociations: ServiceActionAssociations): BatchDisassociateServiceActionFromProvisioningArtifactInput = {
+  inline def apply(ServiceActionAssociations: ServiceActionAssociations): BatchDisassociateServiceActionFromProvisioningArtifactInput = {
     val __obj = js.Dynamic.literal(ServiceActionAssociations = ServiceActionAssociations.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDisassociateServiceActionFromProvisioningArtifactInput]
   }
   
-  @scala.inline
-  implicit class BatchDisassociateServiceActionFromProvisioningArtifactInputMutableBuilder[Self <: BatchDisassociateServiceActionFromProvisioningArtifactInput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDisassociateServiceActionFromProvisioningArtifactInput](x: Self) {
     
-    @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
+    inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
-    @scala.inline
-    def setServiceActionAssociations(value: ServiceActionAssociations): Self = StObject.set(x, "ServiceActionAssociations", value.asInstanceOf[js.Any])
+    inline def setServiceActionAssociations(value: ServiceActionAssociations): Self = StObject.set(x, "ServiceActionAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceActionAssociationsVarargs(value: ServiceActionAssociation*): Self = StObject.set(x, "ServiceActionAssociations", js.Array(value :_*))
+    inline def setServiceActionAssociationsVarargs(value: ServiceActionAssociation*): Self = StObject.set(x, "ServiceActionAssociations", js.Array(value :_*))
   }
 }

@@ -43,43 +43,31 @@ trait TimeInfoProperties extends StObject {
 }
 object TimeInfoProperties {
   
-  @scala.inline
-  def apply(): TimeInfoProperties = {
+  inline def apply(): TimeInfoProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeInfoProperties]
   }
   
-  @scala.inline
-  implicit class TimeInfoPropertiesMutableBuilder[Self <: TimeInfoProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TimeInfoProperties](x: Self) {
     
-    @scala.inline
-    def setEndField(value: String): Self = StObject.set(x, "endField", value.asInstanceOf[js.Any])
+    inline def setEndField(value: String): Self = StObject.set(x, "endField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndFieldUndefined: Self = StObject.set(x, "endField", js.undefined)
+    inline def setEndFieldUndefined: Self = StObject.set(x, "endField", js.undefined)
     
-    @scala.inline
-    def setFullTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "fullTimeExtent", value.asInstanceOf[js.Any])
+    inline def setFullTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "fullTimeExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullTimeExtentUndefined: Self = StObject.set(x, "fullTimeExtent", js.undefined)
+    inline def setFullTimeExtentUndefined: Self = StObject.set(x, "fullTimeExtent", js.undefined)
     
-    @scala.inline
-    def setInterval(value: TimeIntervalProperties): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: TimeIntervalProperties): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setStartField(value: String): Self = StObject.set(x, "startField", value.asInstanceOf[js.Any])
+    inline def setStartField(value: String): Self = StObject.set(x, "startField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartFieldUndefined: Self = StObject.set(x, "startField", js.undefined)
+    inline def setStartFieldUndefined: Self = StObject.set(x, "startField", js.undefined)
     
-    @scala.inline
-    def setTrackIdField(value: String): Self = StObject.set(x, "trackIdField", value.asInstanceOf[js.Any])
+    inline def setTrackIdField(value: String): Self = StObject.set(x, "trackIdField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackIdFieldUndefined: Self = StObject.set(x, "trackIdField", js.undefined)
+    inline def setTrackIdFieldUndefined: Self = StObject.set(x, "trackIdField", js.undefined)
   }
 }

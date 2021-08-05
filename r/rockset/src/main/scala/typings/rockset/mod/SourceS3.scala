@@ -17,28 +17,21 @@ trait SourceS3 extends StObject {
 }
 object SourceS3 {
   
-  @scala.inline
-  def apply(bucket: String): SourceS3 = {
+  inline def apply(bucket: String): SourceS3 = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceS3]
   }
   
-  @scala.inline
-  implicit class SourceS3MutableBuilder[Self <: SourceS3] (val x: Self) extends AnyVal {
+  extension [Self <: SourceS3](x: Self) {
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

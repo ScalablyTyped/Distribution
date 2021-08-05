@@ -12,16 +12,13 @@ trait `0` extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply(file: String | ArrayBuffer | Stream): `0` = {
+  inline def apply(file: String | ArrayBuffer | Stream): `0` = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def setFile(value: String | ArrayBuffer | Stream): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String | ArrayBuffer | Stream): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
   }
 }

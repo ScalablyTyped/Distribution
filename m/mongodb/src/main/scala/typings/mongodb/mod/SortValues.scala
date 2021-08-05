@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SortValues extends StObject
 object SortValues {
   
-  @scala.inline
-  def `-1`: typings.mongodb.mongodbNumbers.`-1` = -1.asInstanceOf[typings.mongodb.mongodbNumbers.`-1`]
+  inline def `-1`: typings.mongodb.mongodbNumbers.`-1` = -1.asInstanceOf[typings.mongodb.mongodbNumbers.`-1`]
   
-  @scala.inline
-  def `1`: typings.mongodb.mongodbNumbers.`1` = 1.asInstanceOf[typings.mongodb.mongodbNumbers.`1`]
+  inline def `1`: typings.mongodb.mongodbNumbers.`1` = 1.asInstanceOf[typings.mongodb.mongodbNumbers.`1`]
 }

@@ -17,8 +17,7 @@ object starsRatingBarUniDriverMod {
   }
   object StarsRatingBarUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -29,14 +28,11 @@ object starsRatingBarUniDriverMod {
       __obj.asInstanceOf[StarsRatingBarUniDriver]
     }
     
-    @scala.inline
-    implicit class StarsRatingBarUniDriverMutableBuilder[Self <: StarsRatingBarUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: StarsRatingBarUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetSelectedRating(value: () => js.Promise[Double]): Self = StObject.set(x, "getSelectedRating", js.Any.fromFunction0(value))
+      inline def setGetSelectedRating(value: () => js.Promise[Double]): Self = StObject.set(x, "getSelectedRating", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSelectRating(value: () => js.Promise[Unit]): Self = StObject.set(x, "selectRating", js.Any.fromFunction0(value))
+      inline def setSelectRating(value: () => js.Promise[Unit]): Self = StObject.set(x, "selectRating", js.Any.fromFunction0(value))
     }
   }
 }

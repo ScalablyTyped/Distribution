@@ -10,16 +10,13 @@ trait IHostNameFactory extends StObject {
 }
 object IHostNameFactory {
   
-  @scala.inline
-  def apply(createHostName: String => HostName): IHostNameFactory = {
+  inline def apply(createHostName: String => HostName): IHostNameFactory = {
     val __obj = js.Dynamic.literal(createHostName = js.Any.fromFunction1(createHostName))
     __obj.asInstanceOf[IHostNameFactory]
   }
   
-  @scala.inline
-  implicit class IHostNameFactoryMutableBuilder[Self <: IHostNameFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IHostNameFactory](x: Self) {
     
-    @scala.inline
-    def setCreateHostName(value: String => HostName): Self = StObject.set(x, "createHostName", js.Any.fromFunction1(value))
+    inline def setCreateHostName(value: String => HostName): Self = StObject.set(x, "createHostName", js.Any.fromFunction1(value))
   }
 }

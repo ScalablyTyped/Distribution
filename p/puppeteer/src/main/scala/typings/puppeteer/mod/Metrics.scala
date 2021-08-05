@@ -47,8 +47,7 @@ trait Metrics extends StObject {
 }
 object Metrics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Documents: Double,
     Frames: Double,
     JSEventListeners: Double,
@@ -67,46 +66,32 @@ object Metrics {
     __obj.asInstanceOf[Metrics]
   }
   
-  @scala.inline
-  implicit class MetricsMutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
+  extension [Self <: Metrics](x: Self) {
     
-    @scala.inline
-    def setDocuments(value: Double): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
+    inline def setDocuments(value: Double): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrames(value: Double): Self = StObject.set(x, "Frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: Double): Self = StObject.set(x, "Frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJSEventListeners(value: Double): Self = StObject.set(x, "JSEventListeners", value.asInstanceOf[js.Any])
+    inline def setJSEventListeners(value: Double): Self = StObject.set(x, "JSEventListeners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJSHeapTotalSize(value: Double): Self = StObject.set(x, "JSHeapTotalSize", value.asInstanceOf[js.Any])
+    inline def setJSHeapTotalSize(value: Double): Self = StObject.set(x, "JSHeapTotalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJSHeapUsedSize(value: Double): Self = StObject.set(x, "JSHeapUsedSize", value.asInstanceOf[js.Any])
+    inline def setJSHeapUsedSize(value: Double): Self = StObject.set(x, "JSHeapUsedSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutCount(value: Double): Self = StObject.set(x, "LayoutCount", value.asInstanceOf[js.Any])
+    inline def setLayoutCount(value: Double): Self = StObject.set(x, "LayoutCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutDuration(value: Double): Self = StObject.set(x, "LayoutDuration", value.asInstanceOf[js.Any])
+    inline def setLayoutDuration(value: Double): Self = StObject.set(x, "LayoutDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: Double): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: Double): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecalcStyleCount(value: Double): Self = StObject.set(x, "RecalcStyleCount", value.asInstanceOf[js.Any])
+    inline def setRecalcStyleCount(value: Double): Self = StObject.set(x, "RecalcStyleCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecalcStyleDuration(value: Double): Self = StObject.set(x, "RecalcStyleDuration", value.asInstanceOf[js.Any])
+    inline def setRecalcStyleDuration(value: Double): Self = StObject.set(x, "RecalcStyleDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptDuration(value: Double): Self = StObject.set(x, "ScriptDuration", value.asInstanceOf[js.Any])
+    inline def setScriptDuration(value: Double): Self = StObject.set(x, "ScriptDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskDuration(value: Double): Self = StObject.set(x, "TaskDuration", value.asInstanceOf[js.Any])
+    inline def setTaskDuration(value: Double): Self = StObject.set(x, "TaskDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
   }
 }

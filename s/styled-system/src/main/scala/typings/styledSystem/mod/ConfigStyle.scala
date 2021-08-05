@@ -32,55 +32,41 @@ trait ConfigStyle extends StObject {
 }
 object ConfigStyle {
   
-  @scala.inline
-  def apply(): ConfigStyle = {
+  inline def apply(): ConfigStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigStyle]
   }
   
-  @scala.inline
-  implicit class ConfigStyleMutableBuilder[Self <: ConfigStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigStyle](x: Self) {
     
-    @scala.inline
-    def setDefaultScale(value: Scale): Self = StObject.set(x, "defaultScale", value.asInstanceOf[js.Any])
+    inline def setDefaultScale(value: Scale): Self = StObject.set(x, "defaultScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultScaleUndefined: Self = StObject.set(x, "defaultScale", js.undefined)
+    inline def setDefaultScaleUndefined: Self = StObject.set(x, "defaultScale", js.undefined)
     
-    @scala.inline
-    def setDefaultScaleVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultScale", js.Array(value :_*))
+    inline def setDefaultScaleVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultScale", js.Array(value :_*))
     
-    @scala.inline
-    def setProperties(
+    inline def setProperties(
       value: js.Array[
           /* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 776 */ js.Any
         ]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setPropertiesVarargs(
+    inline def setPropertiesVarargs(
       value: (/* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 776 */ js.Any)*
     ): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setProperty(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 777 */ js.Any): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 777 */ js.Any): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
-    @scala.inline
-    def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setTransform(value: (/* value */ js.Any, /* scale */ js.UndefOr[Scale]) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+    inline def setTransform(value: (/* value */ js.Any, /* scale */ js.UndefOr[Scale]) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

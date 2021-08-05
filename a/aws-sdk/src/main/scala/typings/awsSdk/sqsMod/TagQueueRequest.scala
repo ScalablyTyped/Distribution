@@ -18,19 +18,15 @@ trait TagQueueRequest extends StObject {
 }
 object TagQueueRequest {
   
-  @scala.inline
-  def apply(QueueUrl: String, Tags: TagMap): TagQueueRequest = {
+  inline def apply(QueueUrl: String, Tags: TagMap): TagQueueRequest = {
     val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagQueueRequest]
   }
   
-  @scala.inline
-  implicit class TagQueueRequestMutableBuilder[Self <: TagQueueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TagQueueRequest](x: Self) {
     
-    @scala.inline
-    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
   }
 }

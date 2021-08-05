@@ -22,19 +22,15 @@ trait TempFileNaming extends StObject {
 }
 object TempFileNaming {
   
-  @scala.inline
-  def apply(prefix: String, suffix: String): TempFileNaming = {
+  inline def apply(prefix: String, suffix: String): TempFileNaming = {
     val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[TempFileNaming]
   }
   
-  @scala.inline
-  implicit class TempFileNamingMutableBuilder[Self <: TempFileNaming] (val x: Self) extends AnyVal {
+  extension [Self <: TempFileNaming](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
   }
 }

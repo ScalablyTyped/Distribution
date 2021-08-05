@@ -10,6 +10,5 @@ object hasKeyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(obj: js.Object, key: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(obj: js.Object, key: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

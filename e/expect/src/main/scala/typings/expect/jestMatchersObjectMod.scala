@@ -18,15 +18,11 @@ object jestMatchersObjectMod {
   @js.native
   val INTERNAL_MATCHER_FLAG: js.Symbol = js.native
   
-  @scala.inline
-  def getMatchers(): MatchersObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getMatchers")().asInstanceOf[MatchersObject]
+  inline def getMatchers(): MatchersObject = ^.asInstanceOf[js.Dynamic].applyDynamic("getMatchers")().asInstanceOf[MatchersObject]
   
-  @scala.inline
-  def getState(): MatcherState = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")().asInstanceOf[MatcherState]
+  inline def getState(): MatcherState = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")().asInstanceOf[MatcherState]
   
-  @scala.inline
-  def setMatchers(matchers: MatchersObject, isInternal: Boolean, expect: Expect): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMatchers")(matchers.asInstanceOf[js.Any], isInternal.asInstanceOf[js.Any], expect.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setMatchers(matchers: MatchersObject, isInternal: Boolean, expect: Expect): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMatchers")(matchers.asInstanceOf[js.Any], isInternal.asInstanceOf[js.Any], expect.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setState(state: PartialMatcherState): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setState")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setState(state: PartialMatcherState): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setState")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

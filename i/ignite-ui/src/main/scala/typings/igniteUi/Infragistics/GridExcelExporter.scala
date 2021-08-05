@@ -17,16 +17,13 @@ trait GridExcelExporter extends StObject {
 }
 object GridExcelExporter {
   
-  @scala.inline
-  def apply(exportGrid: (js.Object, js.Object, js.Object) => Unit): GridExcelExporter = {
+  inline def apply(exportGrid: (js.Object, js.Object, js.Object) => Unit): GridExcelExporter = {
     val __obj = js.Dynamic.literal(exportGrid = js.Any.fromFunction3(exportGrid))
     __obj.asInstanceOf[GridExcelExporter]
   }
   
-  @scala.inline
-  implicit class GridExcelExporterMutableBuilder[Self <: GridExcelExporter] (val x: Self) extends AnyVal {
+  extension [Self <: GridExcelExporter](x: Self) {
     
-    @scala.inline
-    def setExportGrid(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "exportGrid", js.Any.fromFunction3(value))
+    inline def setExportGrid(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "exportGrid", js.Any.fromFunction3(value))
   }
 }

@@ -13,19 +13,15 @@ trait CodeParser extends StObject {
 }
 object CodeParser {
   
-  @scala.inline
-  def apply(collapseNames: js.Any => StringDictionary[js.Any], expandNames: StringDictionary[js.Any] => js.Any): CodeParser = {
+  inline def apply(collapseNames: js.Any => StringDictionary[js.Any], expandNames: StringDictionary[js.Any] => js.Any): CodeParser = {
     val __obj = js.Dynamic.literal(collapseNames = js.Any.fromFunction1(collapseNames), expandNames = js.Any.fromFunction1(expandNames))
     __obj.asInstanceOf[CodeParser]
   }
   
-  @scala.inline
-  implicit class CodeParserMutableBuilder[Self <: CodeParser] (val x: Self) extends AnyVal {
+  extension [Self <: CodeParser](x: Self) {
     
-    @scala.inline
-    def setCollapseNames(value: js.Any => StringDictionary[js.Any]): Self = StObject.set(x, "collapseNames", js.Any.fromFunction1(value))
+    inline def setCollapseNames(value: js.Any => StringDictionary[js.Any]): Self = StObject.set(x, "collapseNames", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpandNames(value: StringDictionary[js.Any] => js.Any): Self = StObject.set(x, "expandNames", js.Any.fromFunction1(value))
+    inline def setExpandNames(value: StringDictionary[js.Any] => js.Any): Self = StObject.set(x, "expandNames", js.Any.fromFunction1(value))
   }
 }

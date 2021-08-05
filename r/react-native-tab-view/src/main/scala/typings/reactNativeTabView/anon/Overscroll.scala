@@ -10,19 +10,15 @@ trait Overscroll extends StObject {
 }
 object Overscroll {
   
-  @scala.inline
-  def apply(): Overscroll = {
+  inline def apply(): Overscroll = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Overscroll]
   }
   
-  @scala.inline
-  implicit class OverscrollMutableBuilder[Self <: Overscroll] (val x: Self) extends AnyVal {
+  extension [Self <: Overscroll](x: Self) {
     
-    @scala.inline
-    def setOverscroll(value: Boolean): Self = StObject.set(x, "overscroll", value.asInstanceOf[js.Any])
+    inline def setOverscroll(value: Boolean): Self = StObject.set(x, "overscroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverscrollUndefined: Self = StObject.set(x, "overscroll", js.undefined)
+    inline def setOverscrollUndefined: Self = StObject.set(x, "overscroll", js.undefined)
   }
 }

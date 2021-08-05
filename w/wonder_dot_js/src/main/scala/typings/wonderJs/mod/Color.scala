@@ -15,8 +15,6 @@ object Color {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.colorMod.Color]
-  @scala.inline
-  def create(colorVal: String): typings.wonderJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(colorVal.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.colorMod.Color]
+  inline def create(): typings.wonderJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.colorMod.Color]
+  inline def create(colorVal: String): typings.wonderJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(colorVal.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.colorMod.Color]
 }

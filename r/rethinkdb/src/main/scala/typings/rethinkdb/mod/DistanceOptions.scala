@@ -25,25 +25,19 @@ trait DistanceOptions extends StObject {
 }
 object DistanceOptions {
   
-  @scala.inline
-  def apply(): DistanceOptions = {
+  inline def apply(): DistanceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DistanceOptions]
   }
   
-  @scala.inline
-  implicit class DistanceOptionsMutableBuilder[Self <: DistanceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DistanceOptions](x: Self) {
     
-    @scala.inline
-    def setGeoSystem(value: WGS84 | unit_sphere): Self = StObject.set(x, "geoSystem", value.asInstanceOf[js.Any])
+    inline def setGeoSystem(value: WGS84 | unit_sphere): Self = StObject.set(x, "geoSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoSystemUndefined: Self = StObject.set(x, "geoSystem", js.undefined)
+    inline def setGeoSystemUndefined: Self = StObject.set(x, "geoSystem", js.undefined)
     
-    @scala.inline
-    def setUnit(value: m | km | mi | nm | ft): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: m | km | mi | nm | ft): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

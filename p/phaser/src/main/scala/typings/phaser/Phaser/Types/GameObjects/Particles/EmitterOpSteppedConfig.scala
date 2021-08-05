@@ -28,22 +28,17 @@ trait EmitterOpSteppedConfig
 }
 object EmitterOpSteppedConfig {
   
-  @scala.inline
-  def apply(end: Double, start: Double, steps: Double): EmitterOpSteppedConfig = {
+  inline def apply(end: Double, start: Double, steps: Double): EmitterOpSteppedConfig = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmitterOpSteppedConfig]
   }
   
-  @scala.inline
-  implicit class EmitterOpSteppedConfigMutableBuilder[Self <: EmitterOpSteppedConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EmitterOpSteppedConfig](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
   }
 }

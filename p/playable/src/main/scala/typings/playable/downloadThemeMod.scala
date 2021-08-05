@@ -16,7 +16,6 @@ object downloadThemeMod {
     @JSImport("playable/dist/src/modules/ui/controls/download/download.theme", "default.downloadSvgFill")
     @js.native
     def downloadSvgFill: Fill = js.native
-    @scala.inline
-    def downloadSvgFill_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("downloadSvgFill")(x.asInstanceOf[js.Any])
+    inline def downloadSvgFill_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("downloadSvgFill")(x.asInstanceOf[js.Any])
   }
 }

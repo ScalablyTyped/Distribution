@@ -12,22 +12,17 @@ trait DialogSelectResultItem extends StObject {
 }
 object DialogSelectResultItem {
   
-  @scala.inline
-  def apply(name: String): DialogSelectResultItem = {
+  inline def apply(name: String): DialogSelectResultItem = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogSelectResultItem]
   }
   
-  @scala.inline
-  implicit class DialogSelectResultItemMutableBuilder[Self <: DialogSelectResultItem] (val x: Self) extends AnyVal {
+  extension [Self <: DialogSelectResultItem](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

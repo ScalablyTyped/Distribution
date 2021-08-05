@@ -12,19 +12,15 @@ trait Frozen extends StObject {
 }
 object Frozen {
   
-  @scala.inline
-  def apply(frozen: Boolean, reversed: Boolean): Frozen = {
+  inline def apply(frozen: Boolean, reversed: Boolean): Frozen = {
     val __obj = js.Dynamic.literal(frozen = frozen.asInstanceOf[js.Any], reversed = reversed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Frozen]
   }
   
-  @scala.inline
-  implicit class FrozenMutableBuilder[Self <: Frozen] (val x: Self) extends AnyVal {
+  extension [Self <: Frozen](x: Self) {
     
-    @scala.inline
-    def setFrozen(value: Boolean): Self = StObject.set(x, "frozen", value.asInstanceOf[js.Any])
+    inline def setFrozen(value: Boolean): Self = StObject.set(x, "frozen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+    inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
   }
 }

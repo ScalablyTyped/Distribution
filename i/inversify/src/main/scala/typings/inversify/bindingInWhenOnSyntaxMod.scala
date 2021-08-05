@@ -21,13 +21,13 @@ object bindingInWhenOnSyntaxMod {
        with BindingOnSyntax[T] {
     def this(binding: Binding[T]) = this()
     
-    var _binding: js.Any = js.native
+    /* private */ var _binding: js.Any = js.native
     
-    var _bindingInSyntax: js.Any = js.native
+    /* private */ var _bindingInSyntax: js.Any = js.native
     
-    var _bindingOnSyntax: js.Any = js.native
+    /* private */ var _bindingOnSyntax: js.Any = js.native
     
-    var _bindingWhenSyntax: js.Any = js.native
+    /* private */ var _bindingWhenSyntax: js.Any = js.native
     
     /* CompleteClass */
     override def inRequestScope(): BindingWhenOnSyntax[T] = js.native

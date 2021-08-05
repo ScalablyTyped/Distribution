@@ -15,8 +15,7 @@ trait ParametersReposListDeployKeysEndpoint extends StObject {
 }
 object ParametersReposListDeployKeysEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposListDeployKeysEndpoint,
     response: OctokitResponse[ReposListDeployKeysResponseData]
   ): ParametersReposListDeployKeysEndpoint = {
@@ -24,13 +23,10 @@ object ParametersReposListDeployKeysEndpoint {
     __obj.asInstanceOf[ParametersReposListDeployKeysEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposListDeployKeysEndpointMutableBuilder[Self <: ParametersReposListDeployKeysEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposListDeployKeysEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposListDeployKeysEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposListDeployKeysEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposListDeployKeysResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposListDeployKeysResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

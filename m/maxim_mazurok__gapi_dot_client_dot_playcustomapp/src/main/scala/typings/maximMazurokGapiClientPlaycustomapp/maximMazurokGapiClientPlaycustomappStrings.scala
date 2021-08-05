@@ -8,11 +8,9 @@ object maximMazurokGapiClientPlaycustomappStrings {
   
   @js.native
   sealed trait playcustomapp extends StObject
-  @scala.inline
-  def playcustomapp: playcustomapp = "playcustomapp".asInstanceOf[playcustomapp]
+  inline def playcustomapp: playcustomapp = "playcustomapp".asInstanceOf[playcustomapp]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

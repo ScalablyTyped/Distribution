@@ -14,22 +14,17 @@ trait Node extends StObject {
 }
 object Node {
   
-  @scala.inline
-  def apply(walkable: Boolean, x: Double, y: Double): Node = {
+  inline def apply(walkable: Boolean, x: Double, y: Double): Node = {
     val __obj = js.Dynamic.literal(walkable = walkable.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   
-  @scala.inline
-  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+  extension [Self <: Node](x: Self) {
     
-    @scala.inline
-    def setWalkable(value: Boolean): Self = StObject.set(x, "walkable", value.asInstanceOf[js.Any])
+    inline def setWalkable(value: Boolean): Self = StObject.set(x, "walkable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

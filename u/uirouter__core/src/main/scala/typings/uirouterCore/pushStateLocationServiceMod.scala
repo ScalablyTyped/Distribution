@@ -32,6 +32,6 @@ object pushStateLocationServiceMod {
       *
       * See: https://html.spec.whatwg.org/dev/semantics.html#the-base-element
       */
-    var _getBasePrefix: js.Any = js.native
+    /* private */ var _getBasePrefix: js.Any = js.native
   }
 }

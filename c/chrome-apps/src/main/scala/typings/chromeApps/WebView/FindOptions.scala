@@ -20,25 +20,19 @@ trait FindOptions extends StObject {
 }
 object FindOptions {
   
-  @scala.inline
-  def apply(): FindOptions = {
+  inline def apply(): FindOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindOptions]
   }
   
-  @scala.inline
-  implicit class FindOptionsMutableBuilder[Self <: FindOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FindOptions](x: Self) {
     
-    @scala.inline
-    def setBackward(value: Boolean): Self = StObject.set(x, "backward", value.asInstanceOf[js.Any])
+    inline def setBackward(value: Boolean): Self = StObject.set(x, "backward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackwardUndefined: Self = StObject.set(x, "backward", js.undefined)
+    inline def setBackwardUndefined: Self = StObject.set(x, "backward", js.undefined)
     
-    @scala.inline
-    def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
+    inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
+    inline def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
   }
 }

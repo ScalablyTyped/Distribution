@@ -18,28 +18,21 @@ trait DescribeStackEventsOutput extends StObject {
 }
 object DescribeStackEventsOutput {
   
-  @scala.inline
-  def apply(): DescribeStackEventsOutput = {
+  inline def apply(): DescribeStackEventsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeStackEventsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeStackEventsOutputMutableBuilder[Self <: DescribeStackEventsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStackEventsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStackEvents(value: StackEvents): Self = StObject.set(x, "StackEvents", value.asInstanceOf[js.Any])
+    inline def setStackEvents(value: StackEvents): Self = StObject.set(x, "StackEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackEventsUndefined: Self = StObject.set(x, "StackEvents", js.undefined)
+    inline def setStackEventsUndefined: Self = StObject.set(x, "StackEvents", js.undefined)
     
-    @scala.inline
-    def setStackEventsVarargs(value: StackEvent*): Self = StObject.set(x, "StackEvents", js.Array(value :_*))
+    inline def setStackEventsVarargs(value: StackEvent*): Self = StObject.set(x, "StackEvents", js.Array(value :_*))
   }
 }

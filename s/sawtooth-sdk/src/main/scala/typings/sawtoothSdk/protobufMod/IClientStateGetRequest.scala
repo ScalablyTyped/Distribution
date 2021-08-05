@@ -14,31 +14,23 @@ trait IClientStateGetRequest extends StObject {
 }
 object IClientStateGetRequest {
   
-  @scala.inline
-  def apply(): IClientStateGetRequest = {
+  inline def apply(): IClientStateGetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientStateGetRequest]
   }
   
-  @scala.inline
-  implicit class IClientStateGetRequestMutableBuilder[Self <: IClientStateGetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IClientStateGetRequest](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressNull: Self = StObject.set(x, "address", null)
+    inline def setAddressNull: Self = StObject.set(x, "address", null)
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setStateRoot(value: String): Self = StObject.set(x, "stateRoot", value.asInstanceOf[js.Any])
+    inline def setStateRoot(value: String): Self = StObject.set(x, "stateRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateRootNull: Self = StObject.set(x, "stateRoot", null)
+    inline def setStateRootNull: Self = StObject.set(x, "stateRoot", null)
     
-    @scala.inline
-    def setStateRootUndefined: Self = StObject.set(x, "stateRoot", js.undefined)
+    inline def setStateRootUndefined: Self = StObject.set(x, "stateRoot", js.undefined)
   }
 }

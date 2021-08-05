@@ -12,11 +12,8 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertSortToOrderBy(sorting: ISortingValues): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertSortToOrderBy")(sorting.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def convertSortToOrderBy(sorting: ISortingValues): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertSortToOrderBy")(sorting.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def isGroupingFun(`val`: String): /* is ng-table.ng-table/src/core/grouping/groupingFunc.IGroupingFunc<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGroupingFun")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is ng-table.ng-table/src/core/grouping/groupingFunc.IGroupingFunc<any> */ Boolean]
-  @scala.inline
-  def isGroupingFun(`val`: Grouping[js.Any]): /* is ng-table.ng-table/src/core/grouping/groupingFunc.IGroupingFunc<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGroupingFun")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is ng-table.ng-table/src/core/grouping/groupingFunc.IGroupingFunc<any> */ Boolean]
+  inline def isGroupingFun(`val`: String): /* is ng-table.ng-table/src/core/grouping/groupingFunc.IGroupingFunc<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGroupingFun")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is ng-table.ng-table/src/core/grouping/groupingFunc.IGroupingFunc<any> */ Boolean]
+  inline def isGroupingFun(`val`: Grouping[js.Any]): /* is ng-table.ng-table/src/core/grouping/groupingFunc.IGroupingFunc<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGroupingFun")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is ng-table.ng-table/src/core/grouping/groupingFunc.IGroupingFunc<any> */ Boolean]
 }

@@ -90,19 +90,13 @@ object mod {
         def this(imageUrl: String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions) = this()
       }
       
-      @scala.inline
-      def geoJson(): GeoJSON_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")().asInstanceOf[GeoJSON_]
-      @scala.inline
-      def geoJson(geojson: Unit, options: GeoJSONOptions[js.Any]): GeoJSON_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON_]
-      @scala.inline
-      def geoJson(geojson: Proj4GeoJSONFeature): GeoJSON_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any]).asInstanceOf[GeoJSON_]
-      @scala.inline
-      def geoJson(geojson: Proj4GeoJSONFeature, options: GeoJSONOptions[js.Any]): GeoJSON_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON_]
+      inline def geoJson(): GeoJSON_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")().asInstanceOf[GeoJSON_]
+      inline def geoJson(geojson: Unit, options: GeoJSONOptions[js.Any]): GeoJSON_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON_]
+      inline def geoJson(geojson: Proj4GeoJSONFeature): GeoJSON_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any]).asInstanceOf[GeoJSON_]
+      inline def geoJson(geojson: Proj4GeoJSONFeature, options: GeoJSONOptions[js.Any]): GeoJSON_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON_]
       
-      @scala.inline
-      def imageOverlay(imageUrl: String, bounds: LatLngBoundsExpression): ImageOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("imageOverlay")(imageUrl.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[ImageOverlay_]
-      @scala.inline
-      def imageOverlay(imageUrl: String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions): ImageOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("imageOverlay")(imageUrl.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ImageOverlay_]
+      inline def imageOverlay(imageUrl: String, bounds: LatLngBoundsExpression): ImageOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("imageOverlay")(imageUrl.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[ImageOverlay_]
+      inline def imageOverlay(imageUrl: String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions): ImageOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("imageOverlay")(imageUrl.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ImageOverlay_]
       
       trait ProjCRSOptions extends StObject {
         
@@ -118,50 +112,36 @@ object mod {
       }
       object ProjCRSOptions {
         
-        @scala.inline
-        def apply(): ProjCRSOptions = {
+        inline def apply(): ProjCRSOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ProjCRSOptions]
         }
         
-        @scala.inline
-        implicit class ProjCRSOptionsMutableBuilder[Self <: ProjCRSOptions] (val x: Self) extends AnyVal {
+        extension [Self <: ProjCRSOptions](x: Self) {
           
-          @scala.inline
-          def setBounds(value: Bounds_): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+          inline def setBounds(value: Bounds_): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+          inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
           
-          @scala.inline
-          def setOrigin(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+          inline def setOrigin(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+          inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
           
-          @scala.inline
-          def setResolutions(value: js.Array[Double]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
+          inline def setResolutions(value: js.Array[Double]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
+          inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
           
-          @scala.inline
-          def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+          inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
           
-          @scala.inline
-          def setScales(value: js.Array[Double]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+          inline def setScales(value: js.Array[Double]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
+          inline def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
           
-          @scala.inline
-          def setScalesVarargs(value: Double*): Self = StObject.set(x, "scales", js.Array(value :_*))
+          inline def setScalesVarargs(value: Double*): Self = StObject.set(x, "scales", js.Array(value :_*))
           
-          @scala.inline
-          def setTransformation(value: Transformation): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
+          inline def setTransformation(value: Transformation): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTransformationUndefined: Self = StObject.set(x, "transformation", js.undefined)
+          inline def setTransformationUndefined: Self = StObject.set(x, "transformation", js.undefined)
         }
       }
     }
@@ -175,21 +155,17 @@ object mod {
   }
   object Proj4GeoJSONFeature {
     
-    @scala.inline
-    def apply(geometry: GeometryObject): Proj4GeoJSONFeature = {
+    inline def apply(geometry: GeometryObject): Proj4GeoJSONFeature = {
       val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], properties = null)
       __obj.updateDynamic("type")("Feature")
       __obj.asInstanceOf[Proj4GeoJSONFeature]
     }
     
-    @scala.inline
-    implicit class Proj4GeoJSONFeatureMutableBuilder[Self <: Proj4GeoJSONFeature] (val x: Self) extends AnyVal {
+    extension [Self <: Proj4GeoJSONFeature](x: Self) {
       
-      @scala.inline
-      def setCrs(value: Properties): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
+      inline def setCrs(value: Properties): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrsUndefined: Self = StObject.set(x, "crs", js.undefined)
+      inline def setCrsUndefined: Self = StObject.set(x, "crs", js.undefined)
     }
   }
 }

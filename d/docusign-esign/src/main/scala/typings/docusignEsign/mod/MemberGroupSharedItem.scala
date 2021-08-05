@@ -30,33 +30,25 @@ trait MemberGroupSharedItem extends StObject {
 }
 object MemberGroupSharedItem {
   
-  @scala.inline
-  def apply(): MemberGroupSharedItem = {
+  inline def apply(): MemberGroupSharedItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MemberGroupSharedItem]
   }
   
-  @scala.inline
-  implicit class MemberGroupSharedItemMutableBuilder[Self <: MemberGroupSharedItem] (val x: Self) extends AnyVal {
+  extension [Self <: MemberGroupSharedItem](x: Self) {
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setGroup(value: /* This object contains information about a group. */ Group): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: /* This object contains information about a group. */ Group): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setShared(value: String): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
+    inline def setShared(value: String): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
+    inline def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
   }
 }

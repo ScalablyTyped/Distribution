@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DispatchMouseEventRequestPointerType extends StObject
 object DispatchMouseEventRequestPointerType {
   
-  @scala.inline
-  def Mouse: mouse = "mouse".asInstanceOf[mouse]
+  inline def Mouse: mouse = "mouse".asInstanceOf[mouse]
   
-  @scala.inline
-  def Pen: pen = "pen".asInstanceOf[pen]
+  inline def Pen: pen = "pen".asInstanceOf[pen]
 }

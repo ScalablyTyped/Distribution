@@ -14,9 +14,9 @@ object displayedGroupCreatorMod {
   @js.native
   class DisplayedGroupCreator () extends StObject {
     
-    var columnUtils: js.Any = js.native
+    /* private */ var columnUtils: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /* private */ def createColumnGroup(originalGroup: js.Any, groupInstanceIdCreator: js.Any, oldColumnsMapped: js.Any): js.Any = js.native
     

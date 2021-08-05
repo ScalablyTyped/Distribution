@@ -11,48 +11,41 @@ object limiterStrings {
   sealed trait day
     extends StObject
        with _Interval
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
   sealed trait hour
     extends StObject
        with _Interval
-  @scala.inline
-  def hour: hour = "hour".asInstanceOf[hour]
+  inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
   sealed trait hr
     extends StObject
        with _Interval
-  @scala.inline
-  def hr: hr = "hr".asInstanceOf[hr]
+  inline def hr: hr = "hr".asInstanceOf[hr]
   
   @js.native
   sealed trait min
     extends StObject
        with _Interval
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
+  inline def min: min = "min".asInstanceOf[min]
   
   @js.native
   sealed trait minute
     extends StObject
        with _Interval
-  @scala.inline
-  def minute: minute = "minute".asInstanceOf[minute]
+  inline def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
   sealed trait sec
     extends StObject
        with _Interval
-  @scala.inline
-  def sec: sec = "sec".asInstanceOf[sec]
+  inline def sec: sec = "sec".asInstanceOf[sec]
   
   @js.native
   sealed trait second
     extends StObject
        with _Interval
-  @scala.inline
-  def second: second = "second".asInstanceOf[second]
+  inline def second: second = "second".asInstanceOf[second]
 }

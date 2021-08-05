@@ -13,16 +13,13 @@ trait Actions_
 }
 object Actions_ {
   
-  @scala.inline
-  def apply(routing: routeActions): Actions_ = {
+  inline def apply(routing: routeActions): Actions_ = {
     val __obj = js.Dynamic.literal(routing = routing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Actions_]
   }
   
-  @scala.inline
-  implicit class Actions_MutableBuilder[Self <: Actions_] (val x: Self) extends AnyVal {
+  extension [Self <: Actions_](x: Self) {
     
-    @scala.inline
-    def setRouting(value: routeActions): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
+    inline def setRouting(value: routeActions): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
   }
 }

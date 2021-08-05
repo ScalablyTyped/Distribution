@@ -10,16 +10,13 @@ trait IsUIVisible extends StObject {
 }
 object IsUIVisible {
   
-  @scala.inline
-  def apply(isUIVisible: Boolean): IsUIVisible = {
+  inline def apply(isUIVisible: Boolean): IsUIVisible = {
     val __obj = js.Dynamic.literal(isUIVisible = isUIVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsUIVisible]
   }
   
-  @scala.inline
-  implicit class IsUIVisibleMutableBuilder[Self <: IsUIVisible] (val x: Self) extends AnyVal {
+  extension [Self <: IsUIVisible](x: Self) {
     
-    @scala.inline
-    def setIsUIVisible(value: Boolean): Self = StObject.set(x, "isUIVisible", value.asInstanceOf[js.Any])
+    inline def setIsUIVisible(value: Boolean): Self = StObject.set(x, "isUIVisible", value.asInstanceOf[js.Any])
   }
 }

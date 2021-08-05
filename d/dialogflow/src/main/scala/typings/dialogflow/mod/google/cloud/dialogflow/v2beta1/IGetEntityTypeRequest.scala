@@ -15,31 +15,23 @@ trait IGetEntityTypeRequest extends StObject {
 }
 object IGetEntityTypeRequest {
   
-  @scala.inline
-  def apply(): IGetEntityTypeRequest = {
+  inline def apply(): IGetEntityTypeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGetEntityTypeRequest]
   }
   
-  @scala.inline
-  implicit class IGetEntityTypeRequestMutableBuilder[Self <: IGetEntityTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IGetEntityTypeRequest](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
+    inline def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -33,31 +33,23 @@ trait SchemaInterconnectAttachmentPartnerMetadata extends StObject {
 }
 object SchemaInterconnectAttachmentPartnerMetadata {
   
-  @scala.inline
-  def apply(): SchemaInterconnectAttachmentPartnerMetadata = {
+  inline def apply(): SchemaInterconnectAttachmentPartnerMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInterconnectAttachmentPartnerMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaInterconnectAttachmentPartnerMetadataMutableBuilder[Self <: SchemaInterconnectAttachmentPartnerMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInterconnectAttachmentPartnerMetadata](x: Self) {
     
-    @scala.inline
-    def setInterconnectName(value: String): Self = StObject.set(x, "interconnectName", value.asInstanceOf[js.Any])
+    inline def setInterconnectName(value: String): Self = StObject.set(x, "interconnectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterconnectNameUndefined: Self = StObject.set(x, "interconnectName", js.undefined)
+    inline def setInterconnectNameUndefined: Self = StObject.set(x, "interconnectName", js.undefined)
     
-    @scala.inline
-    def setPartnerName(value: String): Self = StObject.set(x, "partnerName", value.asInstanceOf[js.Any])
+    inline def setPartnerName(value: String): Self = StObject.set(x, "partnerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartnerNameUndefined: Self = StObject.set(x, "partnerName", js.undefined)
+    inline def setPartnerNameUndefined: Self = StObject.set(x, "partnerName", js.undefined)
     
-    @scala.inline
-    def setPortalUrl(value: String): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
+    inline def setPortalUrl(value: String): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalUrlUndefined: Self = StObject.set(x, "portalUrl", js.undefined)
+    inline def setPortalUrlUndefined: Self = StObject.set(x, "portalUrl", js.undefined)
   }
 }

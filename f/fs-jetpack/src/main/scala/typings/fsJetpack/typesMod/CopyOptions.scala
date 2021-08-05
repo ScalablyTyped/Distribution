@@ -14,39 +14,29 @@ trait CopyOptions extends StObject {
 }
 object CopyOptions {
   
-  @scala.inline
-  def apply(): CopyOptions = {
+  inline def apply(): CopyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyOptions]
   }
   
-  @scala.inline
-  implicit class CopyOptionsMutableBuilder[Self <: CopyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CopyOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+    inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+    inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
     
-    @scala.inline
-    def setMatching(value: String | js.Array[String]): Self = StObject.set(x, "matching", value.asInstanceOf[js.Any])
+    inline def setMatching(value: String | js.Array[String]): Self = StObject.set(x, "matching", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchingUndefined: Self = StObject.set(x, "matching", js.undefined)
+    inline def setMatchingUndefined: Self = StObject.set(x, "matching", js.undefined)
     
-    @scala.inline
-    def setMatchingVarargs(value: String*): Self = StObject.set(x, "matching", js.Array(value :_*))
+    inline def setMatchingVarargs(value: String*): Self = StObject.set(x, "matching", js.Array(value :_*))
     
-    @scala.inline
-    def setOverwrite(value: Boolean | OverwriteFunction): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: Boolean | OverwriteFunction): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteFunction2(
+    inline def setOverwriteFunction2(
       value: (/* srcInspectData */ InspectResult, /* destInspectData */ InspectResult) => Boolean | js.Promise[Boolean]
     ): Self = StObject.set(x, "overwrite", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
   }
 }

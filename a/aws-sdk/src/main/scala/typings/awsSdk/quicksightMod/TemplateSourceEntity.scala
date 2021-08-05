@@ -18,25 +18,19 @@ trait TemplateSourceEntity extends StObject {
 }
 object TemplateSourceEntity {
   
-  @scala.inline
-  def apply(): TemplateSourceEntity = {
+  inline def apply(): TemplateSourceEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateSourceEntity]
   }
   
-  @scala.inline
-  implicit class TemplateSourceEntityMutableBuilder[Self <: TemplateSourceEntity] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateSourceEntity](x: Self) {
     
-    @scala.inline
-    def setSourceAnalysis(value: TemplateSourceAnalysis): Self = StObject.set(x, "SourceAnalysis", value.asInstanceOf[js.Any])
+    inline def setSourceAnalysis(value: TemplateSourceAnalysis): Self = StObject.set(x, "SourceAnalysis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceAnalysisUndefined: Self = StObject.set(x, "SourceAnalysis", js.undefined)
+    inline def setSourceAnalysisUndefined: Self = StObject.set(x, "SourceAnalysis", js.undefined)
     
-    @scala.inline
-    def setSourceTemplate(value: TemplateSourceTemplate): Self = StObject.set(x, "SourceTemplate", value.asInstanceOf[js.Any])
+    inline def setSourceTemplate(value: TemplateSourceTemplate): Self = StObject.set(x, "SourceTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTemplateUndefined: Self = StObject.set(x, "SourceTemplate", js.undefined)
+    inline def setSourceTemplateUndefined: Self = StObject.set(x, "SourceTemplate", js.undefined)
   }
 }

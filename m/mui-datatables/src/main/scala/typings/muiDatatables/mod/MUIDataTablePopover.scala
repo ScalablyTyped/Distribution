@@ -27,67 +27,47 @@ trait MUIDataTablePopover extends StObject {
 }
 object MUIDataTablePopover {
   
-  @scala.inline
-  def apply(): MUIDataTablePopover = {
+  inline def apply(): MUIDataTablePopover = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MUIDataTablePopover]
   }
   
-  @scala.inline
-  implicit class MUIDataTablePopoverMutableBuilder[Self <: MUIDataTablePopover] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTablePopover](x: Self) {
     
-    @scala.inline
-    def setAction(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+    inline def setAction(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setAnchorEl(value: ReactNode): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])
+    inline def setAnchorEl(value: ReactNode): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorElUndefined: Self = StObject.set(x, "anchorEl", js.undefined)
+    inline def setAnchorElUndefined: Self = StObject.set(x, "anchorEl", js.undefined)
     
-    @scala.inline
-    def setAnchorOrigin(value: js.Any): Self = StObject.set(x, "anchorOrigin", value.asInstanceOf[js.Any])
+    inline def setAnchorOrigin(value: js.Any): Self = StObject.set(x, "anchorOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorOriginUndefined: Self = StObject.set(x, "anchorOrigin", js.undefined)
+    inline def setAnchorOriginUndefined: Self = StObject.set(x, "anchorOrigin", js.undefined)
     
-    @scala.inline
-    def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
+    inline def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
+    inline def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
     
-    @scala.inline
-    def setOnClose(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+    inline def setOnClose(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+    inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
-    @scala.inline
-    def setOnExited(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onExited", js.Any.fromFunction1(value))
+    inline def setOnExited(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onExited", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
+    inline def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
     
-    @scala.inline
-    def setOption(value: Boolean): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+    inline def setOption(value: Boolean): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
+    inline def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
     
-    @scala.inline
-    def setRef(value: js.Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: js.Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    @scala.inline
-    def setTransformOrigin(value: js.Any): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
+    inline def setTransformOrigin(value: js.Any): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
+    inline def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
   }
 }

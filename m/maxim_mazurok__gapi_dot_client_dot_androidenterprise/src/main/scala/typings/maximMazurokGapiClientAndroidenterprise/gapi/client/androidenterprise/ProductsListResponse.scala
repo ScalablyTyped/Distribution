@@ -17,34 +17,25 @@ trait ProductsListResponse extends StObject {
 }
 object ProductsListResponse {
   
-  @scala.inline
-  def apply(): ProductsListResponse = {
+  inline def apply(): ProductsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProductsListResponse]
   }
   
-  @scala.inline
-  implicit class ProductsListResponseMutableBuilder[Self <: ProductsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ProductsListResponse](x: Self) {
     
-    @scala.inline
-    def setPageInfo(value: PageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
+    inline def setPageInfo(value: PageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
+    inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
     
-    @scala.inline
-    def setProduct(value: js.Array[Product]): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: js.Array[Product]): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+    inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
-    @scala.inline
-    def setProductVarargs(value: Product*): Self = StObject.set(x, "product", js.Array(value :_*))
+    inline def setProductVarargs(value: Product*): Self = StObject.set(x, "product", js.Array(value :_*))
     
-    @scala.inline
-    def setTokenPagination(value: TokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+    inline def setTokenPagination(value: TokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
+    inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
   }
 }

@@ -34,8 +34,7 @@ trait SunLight
 }
 object SunLight {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ambient: ColorAndIntensity,
     constructor: js.Function,
     diffuse: ColorAndIntensity,
@@ -47,16 +46,12 @@ object SunLight {
     __obj.asInstanceOf[SunLight]
   }
   
-  @scala.inline
-  implicit class SunLightMutableBuilder[Self <: SunLight] (val x: Self) extends AnyVal {
+  extension [Self <: SunLight](x: Self) {
     
-    @scala.inline
-    def setAmbient(value: ColorAndIntensity): Self = StObject.set(x, "ambient", value.asInstanceOf[js.Any])
+    inline def setAmbient(value: ColorAndIntensity): Self = StObject.set(x, "ambient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiffuse(value: ColorAndIntensity): Self = StObject.set(x, "diffuse", value.asInstanceOf[js.Any])
+    inline def setDiffuse(value: ColorAndIntensity): Self = StObject.set(x, "diffuse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: ArrayLike[Double]): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: ArrayLike[Double]): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
   }
 }

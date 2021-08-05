@@ -74,8 +74,7 @@ object mod {
   @JSImport("leaflet", "Editable")
   @js.native
   def Editable: EditableStatic = js.native
-  @scala.inline
-  def Editable_=(x: EditableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Editable")(x.asInstanceOf[js.Any])
+  inline def Editable_=(x: EditableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Editable")(x.asInstanceOf[js.Any])
   
   /**
     * When editing a feature (marker, polyline…), an editor is attached to it. This editor basically knows
@@ -95,8 +94,7 @@ object mod {
   }
   object BaseEditor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disable: () => MarkerEditor | PolylineEditor | PolygonEditor,
       enable: () => MarkerEditor | PolylineEditor | PolygonEditor
     ): BaseEditor = {
@@ -104,14 +102,11 @@ object mod {
       __obj.asInstanceOf[BaseEditor]
     }
     
-    @scala.inline
-    implicit class BaseEditorMutableBuilder[Self <: BaseEditor] (val x: Self) extends AnyVal {
+    extension [Self <: BaseEditor](x: Self) {
       
-      @scala.inline
-      def setDisable(value: () => MarkerEditor | PolylineEditor | PolygonEditor): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      inline def setDisable(value: () => MarkerEditor | PolylineEditor | PolygonEditor): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnable(value: () => MarkerEditor | PolylineEditor | PolygonEditor): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      inline def setEnable(value: () => MarkerEditor | PolylineEditor | PolygonEditor): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     }
   }
   
@@ -191,96 +186,68 @@ object mod {
   }
   object EditOptions {
     
-    @scala.inline
-    def apply(): EditOptions = {
+    inline def apply(): EditOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EditOptions]
     }
     
-    @scala.inline
-    implicit class EditOptionsMutableBuilder[Self <: EditOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EditOptions](x: Self) {
       
-      @scala.inline
-      def setDrawingCSSClass(value: String): Self = StObject.set(x, "drawingCSSClass", value.asInstanceOf[js.Any])
+      inline def setDrawingCSSClass(value: String): Self = StObject.set(x, "drawingCSSClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawingCSSClassUndefined: Self = StObject.set(x, "drawingCSSClass", js.undefined)
+      inline def setDrawingCSSClassUndefined: Self = StObject.set(x, "drawingCSSClass", js.undefined)
       
-      @scala.inline
-      def setEditLayer(
+      inline def setEditLayer(
         value: LayerGroup_[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ILayer */ js.Any
             ]
       ): Self = StObject.set(x, "editLayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditLayerUndefined: Self = StObject.set(x, "editLayer", js.undefined)
+      inline def setEditLayerUndefined: Self = StObject.set(x, "editLayer", js.undefined)
       
-      @scala.inline
-      def setFeaturesLayer(value: LayerGroup_[Polyline | Polygon | Marker]): Self = StObject.set(x, "featuresLayer", value.asInstanceOf[js.Any])
+      inline def setFeaturesLayer(value: LayerGroup_[Polyline | Polygon | Marker]): Self = StObject.set(x, "featuresLayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeaturesLayerUndefined: Self = StObject.set(x, "featuresLayer", js.undefined)
+      inline def setFeaturesLayerUndefined: Self = StObject.set(x, "featuresLayer", js.undefined)
       
-      @scala.inline
-      def setLineGuideOptions(value: js.Object): Self = StObject.set(x, "lineGuideOptions", value.asInstanceOf[js.Any])
+      inline def setLineGuideOptions(value: js.Object): Self = StObject.set(x, "lineGuideOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineGuideOptionsUndefined: Self = StObject.set(x, "lineGuideOptions", js.undefined)
+      inline def setLineGuideOptionsUndefined: Self = StObject.set(x, "lineGuideOptions", js.undefined)
       
-      @scala.inline
-      def setMarkerClass(value: js.Object): Self = StObject.set(x, "markerClass", value.asInstanceOf[js.Any])
+      inline def setMarkerClass(value: js.Object): Self = StObject.set(x, "markerClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerClassUndefined: Self = StObject.set(x, "markerClass", js.undefined)
+      inline def setMarkerClassUndefined: Self = StObject.set(x, "markerClass", js.undefined)
       
-      @scala.inline
-      def setMarkerEditorClass(value: js.Object): Self = StObject.set(x, "markerEditorClass", value.asInstanceOf[js.Any])
+      inline def setMarkerEditorClass(value: js.Object): Self = StObject.set(x, "markerEditorClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerEditorClassUndefined: Self = StObject.set(x, "markerEditorClass", js.undefined)
+      inline def setMarkerEditorClassUndefined: Self = StObject.set(x, "markerEditorClass", js.undefined)
       
-      @scala.inline
-      def setMiddleMarkerClass(value: js.Object): Self = StObject.set(x, "middleMarkerClass", value.asInstanceOf[js.Any])
+      inline def setMiddleMarkerClass(value: js.Object): Self = StObject.set(x, "middleMarkerClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddleMarkerClassUndefined: Self = StObject.set(x, "middleMarkerClass", js.undefined)
+      inline def setMiddleMarkerClassUndefined: Self = StObject.set(x, "middleMarkerClass", js.undefined)
       
-      @scala.inline
-      def setPolygonClass(value: js.Object): Self = StObject.set(x, "polygonClass", value.asInstanceOf[js.Any])
+      inline def setPolygonClass(value: js.Object): Self = StObject.set(x, "polygonClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygonClassUndefined: Self = StObject.set(x, "polygonClass", js.undefined)
+      inline def setPolygonClassUndefined: Self = StObject.set(x, "polygonClass", js.undefined)
       
-      @scala.inline
-      def setPolygonEditorClass(value: js.Object): Self = StObject.set(x, "polygonEditorClass", value.asInstanceOf[js.Any])
+      inline def setPolygonEditorClass(value: js.Object): Self = StObject.set(x, "polygonEditorClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygonEditorClassUndefined: Self = StObject.set(x, "polygonEditorClass", js.undefined)
+      inline def setPolygonEditorClassUndefined: Self = StObject.set(x, "polygonEditorClass", js.undefined)
       
-      @scala.inline
-      def setPolylineClass(value: js.Object): Self = StObject.set(x, "polylineClass", value.asInstanceOf[js.Any])
+      inline def setPolylineClass(value: js.Object): Self = StObject.set(x, "polylineClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolylineClassUndefined: Self = StObject.set(x, "polylineClass", js.undefined)
+      inline def setPolylineClassUndefined: Self = StObject.set(x, "polylineClass", js.undefined)
       
-      @scala.inline
-      def setPolylineEditorClass(value: js.Object): Self = StObject.set(x, "polylineEditorClass", value.asInstanceOf[js.Any])
+      inline def setPolylineEditorClass(value: js.Object): Self = StObject.set(x, "polylineEditorClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolylineEditorClassUndefined: Self = StObject.set(x, "polylineEditorClass", js.undefined)
+      inline def setPolylineEditorClassUndefined: Self = StObject.set(x, "polylineEditorClass", js.undefined)
       
-      @scala.inline
-      def setSkipMiddleMarkers(value: Boolean): Self = StObject.set(x, "skipMiddleMarkers", value.asInstanceOf[js.Any])
+      inline def setSkipMiddleMarkers(value: Boolean): Self = StObject.set(x, "skipMiddleMarkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipMiddleMarkersUndefined: Self = StObject.set(x, "skipMiddleMarkers", js.undefined)
+      inline def setSkipMiddleMarkersUndefined: Self = StObject.set(x, "skipMiddleMarkers", js.undefined)
       
-      @scala.inline
-      def setVertexMarkerClass(value: js.Object): Self = StObject.set(x, "vertexMarkerClass", value.asInstanceOf[js.Any])
+      inline def setVertexMarkerClass(value: js.Object): Self = StObject.set(x, "vertexMarkerClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexMarkerClassUndefined: Self = StObject.set(x, "vertexMarkerClass", js.undefined)
+      inline def setVertexMarkerClassUndefined: Self = StObject.set(x, "vertexMarkerClass", js.undefined)
     }
   }
   
@@ -313,8 +280,7 @@ object mod {
   }
   object EditableMixin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disableEdit: () => Unit,
       editEnabled: () => Boolean,
       enableEdit: () => js.Any,
@@ -324,20 +290,15 @@ object mod {
       __obj.asInstanceOf[EditableMixin]
     }
     
-    @scala.inline
-    implicit class EditableMixinMutableBuilder[Self <: EditableMixin] (val x: Self) extends AnyVal {
+    extension [Self <: EditableMixin](x: Self) {
       
-      @scala.inline
-      def setDisableEdit(value: () => Unit): Self = StObject.set(x, "disableEdit", js.Any.fromFunction0(value))
+      inline def setDisableEdit(value: () => Unit): Self = StObject.set(x, "disableEdit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEditEnabled(value: () => Boolean): Self = StObject.set(x, "editEnabled", js.Any.fromFunction0(value))
+      inline def setEditEnabled(value: () => Boolean): Self = StObject.set(x, "editEnabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableEdit(value: () => js.Any): Self = StObject.set(x, "enableEdit", js.Any.fromFunction0(value))
+      inline def setEnableEdit(value: () => js.Any): Self = StObject.set(x, "enableEdit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggleEdit(value: () => Unit): Self = StObject.set(x, "toggleEdit", js.Any.fromFunction0(value))
+      inline def setToggleEdit(value: () => Unit): Self = StObject.set(x, "toggleEdit", js.Any.fromFunction0(value))
     }
   }
   
@@ -371,23 +332,18 @@ object mod {
   }
   object Map {
     
-    @scala.inline
-    def apply(editOptions: EditOptions, editTools: Editable, editable: Boolean): Map = {
+    inline def apply(editOptions: EditOptions, editTools: Editable, editable: Boolean): Map = {
       val __obj = js.Dynamic.literal(editOptions = editOptions.asInstanceOf[js.Any], editTools = editTools.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any])
       __obj.asInstanceOf[Map]
     }
     
-    @scala.inline
-    implicit class MapMutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
+    extension [Self <: Map](x: Self) {
       
-      @scala.inline
-      def setEditOptions(value: EditOptions): Self = StObject.set(x, "editOptions", value.asInstanceOf[js.Any])
+      inline def setEditOptions(value: EditOptions): Self = StObject.set(x, "editOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditTools(value: Editable): Self = StObject.set(x, "editTools", value.asInstanceOf[js.Any])
+      inline def setEditTools(value: Editable): Self = StObject.set(x, "editTools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+      inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     }
     
     trait MapOptions extends StObject {
@@ -404,26 +360,20 @@ object mod {
     }
     object MapOptions {
       
-      @scala.inline
-      def apply(): MapOptions = {
+      inline def apply(): MapOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MapOptions]
       }
       
-      @scala.inline
-      implicit class MapOptionsMutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
+      extension [Self <: MapOptions](x: Self) {
         
-        @scala.inline
-        def setEditOptions(value: EditOptions): Self = StObject.set(x, "editOptions", value.asInstanceOf[js.Any])
+        inline def setEditOptions(value: EditOptions): Self = StObject.set(x, "editOptions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEditOptionsUndefined: Self = StObject.set(x, "editOptions", js.undefined)
+        inline def setEditOptionsUndefined: Self = StObject.set(x, "editOptions", js.undefined)
         
-        @scala.inline
-        def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+        inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+        inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
       }
     }
   }
@@ -434,8 +384,7 @@ object mod {
        with BaseEditor
   object Marker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disable: () => MarkerEditor | PolylineEditor | PolygonEditor,
       disableEdit: () => Unit,
       editEnabled: () => Boolean,
@@ -469,8 +418,7 @@ object mod {
   }
   object PathEditor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disable: () => MarkerEditor | PolylineEditor | PolygonEditor,
       enable: () => MarkerEditor | PolylineEditor | PolygonEditor,
       reset: () => Unit
@@ -479,11 +427,9 @@ object mod {
       __obj.asInstanceOf[PathEditor]
     }
     
-    @scala.inline
-    implicit class PathEditorMutableBuilder[Self <: PathEditor] (val x: Self) extends AnyVal {
+    extension [Self <: PathEditor](x: Self) {
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
   }
   
@@ -493,8 +439,7 @@ object mod {
        with PolygonEditor
   object Polygon {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disable: () => MarkerEditor | PolylineEditor | PolygonEditor,
       disableEdit: () => Unit,
       editEnabled: () => Boolean,
@@ -524,8 +469,7 @@ object mod {
   }
   object PolygonEditor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disable: () => MarkerEditor | PolylineEditor | PolygonEditor,
       enable: () => MarkerEditor | PolylineEditor | PolygonEditor,
       newHole: LatLng_ => Unit,
@@ -535,11 +479,9 @@ object mod {
       __obj.asInstanceOf[PolygonEditor]
     }
     
-    @scala.inline
-    implicit class PolygonEditorMutableBuilder[Self <: PolygonEditor] (val x: Self) extends AnyVal {
+    extension [Self <: PolygonEditor](x: Self) {
       
-      @scala.inline
-      def setNewHole(value: LatLng_ => Unit): Self = StObject.set(x, "newHole", js.Any.fromFunction1(value))
+      inline def setNewHole(value: LatLng_ => Unit): Self = StObject.set(x, "newHole", js.Any.fromFunction1(value))
     }
   }
   
@@ -550,8 +492,7 @@ object mod {
        with PolylineEditor
   object Polyline {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       continueBackward: () => Unit,
       continueForward: () => Unit,
       disable: () => MarkerEditor | PolylineEditor | PolygonEditor,
@@ -586,8 +527,7 @@ object mod {
   }
   object PolylineEditor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       continueBackward: () => Unit,
       continueForward: () => Unit,
       disable: () => MarkerEditor | PolylineEditor | PolygonEditor,
@@ -598,14 +538,11 @@ object mod {
       __obj.asInstanceOf[PolylineEditor]
     }
     
-    @scala.inline
-    implicit class PolylineEditorMutableBuilder[Self <: PolylineEditor] (val x: Self) extends AnyVal {
+    extension [Self <: PolylineEditor](x: Self) {
       
-      @scala.inline
-      def setContinueBackward(value: () => Unit): Self = StObject.set(x, "continueBackward", js.Any.fromFunction0(value))
+      inline def setContinueBackward(value: () => Unit): Self = StObject.set(x, "continueBackward", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContinueForward(value: () => Unit): Self = StObject.set(x, "continueForward", js.Any.fromFunction0(value))
+      inline def setContinueForward(value: () => Unit): Self = StObject.set(x, "continueForward", js.Any.fromFunction0(value))
     }
   }
 }

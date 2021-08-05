@@ -23,55 +23,39 @@ trait CrossDimensionReachReportCompatibleFields extends StObject {
 }
 object CrossDimensionReachReportCompatibleFields {
   
-  @scala.inline
-  def apply(): CrossDimensionReachReportCompatibleFields = {
+  inline def apply(): CrossDimensionReachReportCompatibleFields = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CrossDimensionReachReportCompatibleFields]
   }
   
-  @scala.inline
-  implicit class CrossDimensionReachReportCompatibleFieldsMutableBuilder[Self <: CrossDimensionReachReportCompatibleFields] (val x: Self) extends AnyVal {
+  extension [Self <: CrossDimensionReachReportCompatibleFields](x: Self) {
     
-    @scala.inline
-    def setBreakdown(value: js.Array[Dimension]): Self = StObject.set(x, "breakdown", value.asInstanceOf[js.Any])
+    inline def setBreakdown(value: js.Array[Dimension]): Self = StObject.set(x, "breakdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakdownUndefined: Self = StObject.set(x, "breakdown", js.undefined)
+    inline def setBreakdownUndefined: Self = StObject.set(x, "breakdown", js.undefined)
     
-    @scala.inline
-    def setBreakdownVarargs(value: Dimension*): Self = StObject.set(x, "breakdown", js.Array(value :_*))
+    inline def setBreakdownVarargs(value: Dimension*): Self = StObject.set(x, "breakdown", js.Array(value :_*))
     
-    @scala.inline
-    def setDimensionFilters(value: js.Array[Dimension]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
+    inline def setDimensionFilters(value: js.Array[Dimension]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
+    inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
     
-    @scala.inline
-    def setDimensionFiltersVarargs(value: Dimension*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+    inline def setDimensionFiltersVarargs(value: Dimension*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setOverlapMetrics(value: js.Array[Metric]): Self = StObject.set(x, "overlapMetrics", value.asInstanceOf[js.Any])
+    inline def setOverlapMetrics(value: js.Array[Metric]): Self = StObject.set(x, "overlapMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlapMetricsUndefined: Self = StObject.set(x, "overlapMetrics", js.undefined)
+    inline def setOverlapMetricsUndefined: Self = StObject.set(x, "overlapMetrics", js.undefined)
     
-    @scala.inline
-    def setOverlapMetricsVarargs(value: Metric*): Self = StObject.set(x, "overlapMetrics", js.Array(value :_*))
+    inline def setOverlapMetricsVarargs(value: Metric*): Self = StObject.set(x, "overlapMetrics", js.Array(value :_*))
   }
 }

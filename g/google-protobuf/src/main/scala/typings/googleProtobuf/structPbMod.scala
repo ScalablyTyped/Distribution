@@ -40,11 +40,9 @@ object structPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): ListValue = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ListValue]
+    inline def deserializeBinary(bytes: Uint8Array): ListValue = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ListValue]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: ListValue, reader: BinaryReader): ListValue = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ListValue]
+    inline def deserializeBinaryFromReader(message: ListValue, reader: BinaryReader): ListValue = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ListValue]
     
     @JSImport("google-protobuf/google/protobuf/struct_pb", "ListValue.extensions")
     @js.native
@@ -53,20 +51,15 @@ object structPbMod {
     @JSImport("google-protobuf/google/protobuf/struct_pb", "ListValue.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def fromJavaScript(value: js.Array[JavaScriptValue]): ListValue = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJavaScript")(value.asInstanceOf[js.Any]).asInstanceOf[ListValue]
+    inline def fromJavaScript(value: js.Array[JavaScriptValue]): ListValue = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJavaScript")(value.asInstanceOf[js.Any]).asInstanceOf[ListValue]
     
-    @scala.inline
-    def serializeBinaryToWriter(message: ListValue, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: ListValue, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: ListValue): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: ListValue): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -74,20 +67,16 @@ object structPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(valuesList: js.Array[typings.googleProtobuf.structPbMod.Value.AsObject]): AsObject = {
+      inline def apply(valuesList: js.Array[typings.googleProtobuf.structPbMod.Value.AsObject]): AsObject = {
         val __obj = js.Dynamic.literal(valuesList = valuesList.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setValuesList(value: js.Array[typings.googleProtobuf.structPbMod.Value.AsObject]): Self = StObject.set(x, "valuesList", value.asInstanceOf[js.Any])
+        inline def setValuesList(value: js.Array[typings.googleProtobuf.structPbMod.Value.AsObject]): Self = StObject.set(x, "valuesList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValuesListVarargs(value: typings.googleProtobuf.structPbMod.Value.AsObject*): Self = StObject.set(x, "valuesList", js.Array(value :_*))
+        inline def setValuesListVarargs(value: typings.googleProtobuf.structPbMod.Value.AsObject*): Self = StObject.set(x, "valuesList", js.Array(value :_*))
       }
     }
   }
@@ -125,11 +114,9 @@ object structPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): Struct = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Struct]
+    inline def deserializeBinary(bytes: Uint8Array): Struct = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Struct]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: Struct, reader: BinaryReader): Struct = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Struct]
+    inline def deserializeBinaryFromReader(message: Struct, reader: BinaryReader): Struct = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Struct]
     
     @JSImport("google-protobuf/google/protobuf/struct_pb", "Struct.extensions")
     @js.native
@@ -138,20 +125,15 @@ object structPbMod {
     @JSImport("google-protobuf/google/protobuf/struct_pb", "Struct.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def fromJavaScript(value: StringDictionary[JavaScriptValue]): Struct = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJavaScript")(value.asInstanceOf[js.Any]).asInstanceOf[Struct]
+    inline def fromJavaScript(value: StringDictionary[JavaScriptValue]): Struct = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJavaScript")(value.asInstanceOf[js.Any]).asInstanceOf[Struct]
     
-    @scala.inline
-    def serializeBinaryToWriter(message: Struct, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: Struct, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: Struct): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: Struct): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -159,20 +141,16 @@ object structPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(fieldsMap: js.Array[js.Tuple2[String, typings.googleProtobuf.structPbMod.Value.AsObject]]): AsObject = {
+      inline def apply(fieldsMap: js.Array[js.Tuple2[String, typings.googleProtobuf.structPbMod.Value.AsObject]]): AsObject = {
         val __obj = js.Dynamic.literal(fieldsMap = fieldsMap.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setFieldsMap(value: js.Array[js.Tuple2[String, typings.googleProtobuf.structPbMod.Value.AsObject]]): Self = StObject.set(x, "fieldsMap", value.asInstanceOf[js.Any])
+        inline def setFieldsMap(value: js.Array[js.Tuple2[String, typings.googleProtobuf.structPbMod.Value.AsObject]]): Self = StObject.set(x, "fieldsMap", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsMapVarargs(value: (js.Tuple2[String, typings.googleProtobuf.structPbMod.Value.AsObject])*): Self = StObject.set(x, "fieldsMap", js.Array(value :_*))
+        inline def setFieldsMapVarargs(value: (js.Tuple2[String, typings.googleProtobuf.structPbMod.Value.AsObject])*): Self = StObject.set(x, "fieldsMap", js.Array(value :_*))
       }
     }
   }
@@ -294,11 +272,9 @@ object structPbMod {
       /* 5 */ val STRUCT_VALUE: typings.googleProtobuf.structPbMod.Value.KindCase.STRUCT_VALUE & Double = js.native
     }
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Value]
+    inline def deserializeBinary(bytes: Uint8Array): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Value]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: Value, reader: BinaryReader): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Value]
+    inline def deserializeBinaryFromReader(message: Value, reader: BinaryReader): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Value]
     
     @JSImport("google-protobuf/google/protobuf/struct_pb", "Value.extensions")
     @js.native
@@ -307,20 +283,15 @@ object structPbMod {
     @JSImport("google-protobuf/google/protobuf/struct_pb", "Value.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def fromJavaScript(value: JavaScriptValue): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJavaScript")(value.asInstanceOf[js.Any]).asInstanceOf[Value]
+    inline def fromJavaScript(value: JavaScriptValue): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJavaScript")(value.asInstanceOf[js.Any]).asInstanceOf[Value]
     
-    @scala.inline
-    def serializeBinaryToWriter(message: Value, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: Value, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: Value): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: Value): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -338,38 +309,28 @@ object structPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(boolValue: Boolean, nullValue: NullValue, numberValue: Double, stringValue: String): AsObject = {
+      inline def apply(boolValue: Boolean, nullValue: NullValue, numberValue: Double, stringValue: String): AsObject = {
         val __obj = js.Dynamic.literal(boolValue = boolValue.asInstanceOf[js.Any], nullValue = nullValue.asInstanceOf[js.Any], numberValue = numberValue.asInstanceOf[js.Any], stringValue = stringValue.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
+        inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setListValue(value: typings.googleProtobuf.structPbMod.ListValue.AsObject): Self = StObject.set(x, "listValue", value.asInstanceOf[js.Any])
+        inline def setListValue(value: typings.googleProtobuf.structPbMod.ListValue.AsObject): Self = StObject.set(x, "listValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setListValueUndefined: Self = StObject.set(x, "listValue", js.undefined)
+        inline def setListValueUndefined: Self = StObject.set(x, "listValue", js.undefined)
         
-        @scala.inline
-        def setNullValue(value: NullValue): Self = StObject.set(x, "nullValue", value.asInstanceOf[js.Any])
+        inline def setNullValue(value: NullValue): Self = StObject.set(x, "nullValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumberValue(value: Double): Self = StObject.set(x, "numberValue", value.asInstanceOf[js.Any])
+        inline def setNumberValue(value: Double): Self = StObject.set(x, "numberValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+        inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStructValue(value: typings.googleProtobuf.structPbMod.Struct.AsObject): Self = StObject.set(x, "structValue", value.asInstanceOf[js.Any])
+        inline def setStructValue(value: typings.googleProtobuf.structPbMod.Struct.AsObject): Self = StObject.set(x, "structValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStructValueUndefined: Self = StObject.set(x, "structValue", js.undefined)
+        inline def setStructValueUndefined: Self = StObject.set(x, "structValue", js.undefined)
       }
     }
   }

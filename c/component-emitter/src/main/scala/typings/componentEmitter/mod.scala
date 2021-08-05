@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Emitter[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Emitter[String]]
-  @scala.inline
-  def apply(obj: js.Object): Emitter[String] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Emitter[String]]
+  inline def apply(): Emitter[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Emitter[String]]
+  inline def apply(obj: js.Object): Emitter[String] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Emitter[String]]
   
   @JSImport("component-emitter", JSImport.Namespace)
   @js.native

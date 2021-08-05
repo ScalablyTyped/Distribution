@@ -31,22 +31,17 @@ trait ViewSelector extends StObject {
 }
 object ViewSelector {
   
-  @scala.inline
-  def apply(getCurrentView: () => LookupValue, isVisible: () => Boolean, setCurrentView: LookupValue => Unit): ViewSelector = {
+  inline def apply(getCurrentView: () => LookupValue, isVisible: () => Boolean, setCurrentView: LookupValue => Unit): ViewSelector = {
     val __obj = js.Dynamic.literal(getCurrentView = js.Any.fromFunction0(getCurrentView), isVisible = js.Any.fromFunction0(isVisible), setCurrentView = js.Any.fromFunction1(setCurrentView))
     __obj.asInstanceOf[ViewSelector]
   }
   
-  @scala.inline
-  implicit class ViewSelectorMutableBuilder[Self <: ViewSelector] (val x: Self) extends AnyVal {
+  extension [Self <: ViewSelector](x: Self) {
     
-    @scala.inline
-    def setGetCurrentView(value: () => LookupValue): Self = StObject.set(x, "getCurrentView", js.Any.fromFunction0(value))
+    inline def setGetCurrentView(value: () => LookupValue): Self = StObject.set(x, "getCurrentView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+    inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCurrentView(value: LookupValue => Unit): Self = StObject.set(x, "setCurrentView", js.Any.fromFunction1(value))
+    inline def setSetCurrentView(value: LookupValue => Unit): Self = StObject.set(x, "setCurrentView", js.Any.fromFunction1(value))
   }
 }

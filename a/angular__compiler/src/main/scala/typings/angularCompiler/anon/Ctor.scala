@@ -14,22 +14,17 @@ trait Ctor extends StObject {
 }
 object Ctor {
   
-  @scala.inline
-  def apply(ctor: js.Any, filePath: String, name: String): Ctor = {
+  inline def apply(ctor: js.Any, filePath: String, name: String): Ctor = {
     val __obj = js.Dynamic.literal(ctor = ctor.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ctor]
   }
   
-  @scala.inline
-  implicit class CtorMutableBuilder[Self <: Ctor] (val x: Self) extends AnyVal {
+  extension [Self <: Ctor](x: Self) {
     
-    @scala.inline
-    def setCtor(value: js.Any): Self = StObject.set(x, "ctor", value.asInstanceOf[js.Any])
+    inline def setCtor(value: js.Any): Self = StObject.set(x, "ctor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

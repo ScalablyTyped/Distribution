@@ -26,16 +26,14 @@ object abstractHistogramMod {
     @JSImport("hdr-histogram-js/AbstractHistogram", "default.decodeFromByteBuffer")
     @js.native
     def decodeFromByteBuffer: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof doDecodeFromByteBuffer */ js.Any = js.native
-    @scala.inline
-    def decodeFromByteBuffer_=(
+    inline def decodeFromByteBuffer_=(
       x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof doDecodeFromByteBuffer */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodeFromByteBuffer")(x.asInstanceOf[js.Any])
     
     @JSImport("hdr-histogram-js/AbstractHistogram", "default.decodeFromCompressedByteBuffer")
     @js.native
     def decodeFromCompressedByteBuffer: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof doDecodeFromCompressedByteBuffer */ js.Any = js.native
-    @scala.inline
-    def decodeFromCompressedByteBuffer_=(
+    inline def decodeFromCompressedByteBuffer_=(
       x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof doDecodeFromCompressedByteBuffer */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodeFromCompressedByteBuffer")(x.asInstanceOf[js.Any])
   }
@@ -94,7 +92,7 @@ object abstractHistogramMod {
     
     def clearCounts(): Unit = js.native
     
-    var computeCountsArrayIndex: js.Any = js.native
+    /* private */ var computeCountsArrayIndex: js.Any = js.native
     
     /**
       * Get a copy of this histogram, corrected for coordinated omission.
@@ -165,7 +163,7 @@ object abstractHistogramMod {
       * @return The total count of values recorded in the histogram within the value range that is
       * {@literal >=} lowestEquivalentValue(<i>value</i>) and {@literal <=} highestEquivalentValue(<i>value</i>)
       */
-    var getCountAtValue: js.Any = js.native
+    /* private */ var getCountAtValue: js.Any = js.native
     
     /**
       * Provide a (conservatively high) estimate of the Histogram's total footprint in bytes
@@ -308,7 +306,7 @@ object abstractHistogramMod {
     def outputPercentileDistribution(percentileTicksPerHalfDistance: Unit, outputValueUnitScalingRatio: Double, useCsvFormat: Boolean): String = js.native
     def outputPercentileDistribution(percentileTicksPerHalfDistance: Unit, outputValueUnitScalingRatio: Unit, useCsvFormat: Boolean): String = js.native
     
-    var recordCountAtValue: js.Any = js.native
+    /* private */ var recordCountAtValue: js.Any = js.native
     
     def recordSingleValue(value: Double): Unit = js.native
     
@@ -331,7 +329,7 @@ object abstractHistogramMod {
       */
     def recordValueWithCount(value: Double, count: Double): Unit = js.native
     
-    var recordValueWithCountAndExpectedInterval: js.Any = js.native
+    /* private */ var recordValueWithCountAndExpectedInterval: js.Any = js.native
     
     /**
       * Record a value in the histogram.
@@ -358,7 +356,7 @@ object abstractHistogramMod {
     
     def reset(): Unit = js.native
     
-    var resetMinNonZeroValue: js.Any = js.native
+    /* private */ var resetMinNonZeroValue: js.Any = js.native
     
     def resize(newHighestTrackableValue: Double): Unit = js.native
     
@@ -410,9 +408,9 @@ object abstractHistogramMod {
     
     def updateMinAndMax(value: Double): Unit = js.native
     
-    var updateMinNonZeroValue: js.Any = js.native
+    /* private */ var updateMinNonZeroValue: js.Any = js.native
     
-    var updatedMaxValue: js.Any = js.native
+    /* private */ var updatedMaxValue: js.Any = js.native
     
     def valueFromIndex(index: Double): Double = js.native
     

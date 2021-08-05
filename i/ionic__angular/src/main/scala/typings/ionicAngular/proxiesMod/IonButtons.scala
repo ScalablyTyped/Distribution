@@ -21,7 +21,7 @@ class IonButtons protected ()
   /* CompleteClass */
   var collapse: Boolean = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

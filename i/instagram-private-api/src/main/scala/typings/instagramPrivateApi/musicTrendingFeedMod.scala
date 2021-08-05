@@ -16,7 +16,7 @@ object musicTrendingFeedMod {
   class MusicTrendingFeed protected () extends Feed[MusicTrendingFeedResponseRootObject, MusicTrendingFeedResponseItemsItem] {
     def this(client: IgApiClient) = this()
     
-    var nextCursor: js.UndefOr[String] = js.native
+    /* protected */ var nextCursor: js.UndefOr[String] = js.native
     
     var product: IgAppModule = js.native
     

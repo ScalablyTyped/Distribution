@@ -23,22 +23,17 @@ trait MergeShardsInput extends StObject {
 }
 object MergeShardsInput {
   
-  @scala.inline
-  def apply(AdjacentShardToMerge: ShardId, ShardToMerge: ShardId, StreamName: StreamName): MergeShardsInput = {
+  inline def apply(AdjacentShardToMerge: ShardId, ShardToMerge: ShardId, StreamName: StreamName): MergeShardsInput = {
     val __obj = js.Dynamic.literal(AdjacentShardToMerge = AdjacentShardToMerge.asInstanceOf[js.Any], ShardToMerge = ShardToMerge.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeShardsInput]
   }
   
-  @scala.inline
-  implicit class MergeShardsInputMutableBuilder[Self <: MergeShardsInput] (val x: Self) extends AnyVal {
+  extension [Self <: MergeShardsInput](x: Self) {
     
-    @scala.inline
-    def setAdjacentShardToMerge(value: ShardId): Self = StObject.set(x, "AdjacentShardToMerge", value.asInstanceOf[js.Any])
+    inline def setAdjacentShardToMerge(value: ShardId): Self = StObject.set(x, "AdjacentShardToMerge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardToMerge(value: ShardId): Self = StObject.set(x, "ShardToMerge", value.asInstanceOf[js.Any])
+    inline def setShardToMerge(value: ShardId): Self = StObject.set(x, "ShardToMerge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
   }
 }

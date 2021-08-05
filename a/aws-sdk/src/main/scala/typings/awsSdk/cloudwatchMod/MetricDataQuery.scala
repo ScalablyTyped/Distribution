@@ -38,46 +38,33 @@ trait MetricDataQuery extends StObject {
 }
 object MetricDataQuery {
   
-  @scala.inline
-  def apply(Id: MetricId): MetricDataQuery = {
+  inline def apply(Id: MetricId): MetricDataQuery = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDataQuery]
   }
   
-  @scala.inline
-  implicit class MetricDataQueryMutableBuilder[Self <: MetricDataQuery] (val x: Self) extends AnyVal {
+  extension [Self <: MetricDataQuery](x: Self) {
     
-    @scala.inline
-    def setExpression(value: MetricExpression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: MetricExpression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
     
-    @scala.inline
-    def setId(value: MetricId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: MetricId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: MetricLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: MetricLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
-    @scala.inline
-    def setMetricStat(value: MetricStat): Self = StObject.set(x, "MetricStat", value.asInstanceOf[js.Any])
+    inline def setMetricStat(value: MetricStat): Self = StObject.set(x, "MetricStat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricStatUndefined: Self = StObject.set(x, "MetricStat", js.undefined)
+    inline def setMetricStatUndefined: Self = StObject.set(x, "MetricStat", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "Period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "Period", js.undefined)
     
-    @scala.inline
-    def setReturnData(value: ReturnData): Self = StObject.set(x, "ReturnData", value.asInstanceOf[js.Any])
+    inline def setReturnData(value: ReturnData): Self = StObject.set(x, "ReturnData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnDataUndefined: Self = StObject.set(x, "ReturnData", js.undefined)
+    inline def setReturnDataUndefined: Self = StObject.set(x, "ReturnData", js.undefined)
   }
 }

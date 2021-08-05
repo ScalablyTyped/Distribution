@@ -19,8 +19,7 @@ trait VersionedTextDocumentIdentifier
 }
 object VersionedTextDocumentIdentifier {
   
-  @scala.inline
-  def apply(uri: DocumentUri): VersionedTextDocumentIdentifier = {
+  inline def apply(uri: DocumentUri): VersionedTextDocumentIdentifier = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any], version = null)
     __obj.asInstanceOf[VersionedTextDocumentIdentifier]
   }
@@ -34,24 +33,18 @@ object VersionedTextDocumentIdentifier {
     * @param uri The document's uri.
     * @param uri The document's text.
     */
-  @scala.inline
-  def create(uri: DocumentUri): VersionedTextDocumentIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any]).asInstanceOf[VersionedTextDocumentIdentifier]
-  @scala.inline
-  def create(uri: DocumentUri, version: Double): VersionedTextDocumentIdentifier = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[VersionedTextDocumentIdentifier]
+  inline def create(uri: DocumentUri): VersionedTextDocumentIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any]).asInstanceOf[VersionedTextDocumentIdentifier]
+  inline def create(uri: DocumentUri, version: Double): VersionedTextDocumentIdentifier = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[VersionedTextDocumentIdentifier]
   
   /**
     * Checks whether the given literal conforms to the [VersionedTextDocumentIdentifier](#VersionedTextDocumentIdentifier) interface.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean]
   
-  @scala.inline
-  implicit class VersionedTextDocumentIdentifierMutableBuilder[Self <: VersionedTextDocumentIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: VersionedTextDocumentIdentifier](x: Self) {
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNull: Self = StObject.set(x, "version", null)
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
   }
 }

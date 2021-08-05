@@ -14,25 +14,19 @@ trait Environment extends StObject {
 }
 object Environment {
   
-  @scala.inline
-  def apply(): Environment = {
+  inline def apply(): Environment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Environment]
   }
   
-  @scala.inline
-  implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
+  extension [Self <: Environment](x: Self) {
     
-    @scala.inline
-    def setAndroidDevice(value: AndroidDevice): Self = StObject.set(x, "androidDevice", value.asInstanceOf[js.Any])
+    inline def setAndroidDevice(value: AndroidDevice): Self = StObject.set(x, "androidDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDeviceUndefined: Self = StObject.set(x, "androidDevice", js.undefined)
+    inline def setAndroidDeviceUndefined: Self = StObject.set(x, "androidDevice", js.undefined)
     
-    @scala.inline
-    def setIosDevice(value: IosDevice): Self = StObject.set(x, "iosDevice", value.asInstanceOf[js.Any])
+    inline def setIosDevice(value: IosDevice): Self = StObject.set(x, "iosDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosDeviceUndefined: Self = StObject.set(x, "iosDevice", js.undefined)
+    inline def setIosDeviceUndefined: Self = StObject.set(x, "iosDevice", js.undefined)
   }
 }

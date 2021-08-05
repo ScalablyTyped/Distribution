@@ -34,31 +34,23 @@ trait SchemaMetricStructuredName extends StObject {
 }
 object SchemaMetricStructuredName {
   
-  @scala.inline
-  def apply(): SchemaMetricStructuredName = {
+  inline def apply(): SchemaMetricStructuredName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMetricStructuredName]
   }
   
-  @scala.inline
-  implicit class SchemaMetricStructuredNameMutableBuilder[Self <: SchemaMetricStructuredName] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMetricStructuredName](x: Self) {
     
-    @scala.inline
-    def setContext(value: StringDictionary[String]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: StringDictionary[String]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
   }
 }

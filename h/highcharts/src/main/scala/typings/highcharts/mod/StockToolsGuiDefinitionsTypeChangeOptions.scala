@@ -20,40 +20,29 @@ trait StockToolsGuiDefinitionsTypeChangeOptions extends StObject {
 }
 object StockToolsGuiDefinitionsTypeChangeOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsTypeChangeOptions = {
+  inline def apply(): StockToolsGuiDefinitionsTypeChangeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsTypeChangeOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsTypeChangeOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsTypeChangeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsTypeChangeOptions](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setTypeCandlestick(value: StockToolsGuiDefinitionsTypeChangeTypeCandlestickOptions): Self = StObject.set(x, "typeCandlestick", value.asInstanceOf[js.Any])
+    inline def setTypeCandlestick(value: StockToolsGuiDefinitionsTypeChangeTypeCandlestickOptions): Self = StObject.set(x, "typeCandlestick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeCandlestickUndefined: Self = StObject.set(x, "typeCandlestick", js.undefined)
+    inline def setTypeCandlestickUndefined: Self = StObject.set(x, "typeCandlestick", js.undefined)
     
-    @scala.inline
-    def setTypeLine(value: StockToolsGuiDefinitionsTypeChangeTypeLineOptions): Self = StObject.set(x, "typeLine", value.asInstanceOf[js.Any])
+    inline def setTypeLine(value: StockToolsGuiDefinitionsTypeChangeTypeLineOptions): Self = StObject.set(x, "typeLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeLineUndefined: Self = StObject.set(x, "typeLine", js.undefined)
+    inline def setTypeLineUndefined: Self = StObject.set(x, "typeLine", js.undefined)
     
-    @scala.inline
-    def setTypeOHLC(value: StockToolsGuiDefinitionsTypeChangeTypeOHLCOptions): Self = StObject.set(x, "typeOHLC", value.asInstanceOf[js.Any])
+    inline def setTypeOHLC(value: StockToolsGuiDefinitionsTypeChangeTypeOHLCOptions): Self = StObject.set(x, "typeOHLC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeOHLCUndefined: Self = StObject.set(x, "typeOHLC", js.undefined)
+    inline def setTypeOHLCUndefined: Self = StObject.set(x, "typeOHLC", js.undefined)
   }
 }

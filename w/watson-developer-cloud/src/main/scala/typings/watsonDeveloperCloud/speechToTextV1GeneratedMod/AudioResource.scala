@@ -21,25 +21,19 @@ trait AudioResource extends StObject {
 }
 object AudioResource {
   
-  @scala.inline
-  def apply(details: AudioDetails, duration: Double, name: String, status: String): AudioResource = {
+  inline def apply(details: AudioDetails, duration: Double, name: String, status: String): AudioResource = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioResource]
   }
   
-  @scala.inline
-  implicit class AudioResourceMutableBuilder[Self <: AudioResource] (val x: Self) extends AnyVal {
+  extension [Self <: AudioResource](x: Self) {
     
-    @scala.inline
-    def setDetails(value: AudioDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: AudioDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

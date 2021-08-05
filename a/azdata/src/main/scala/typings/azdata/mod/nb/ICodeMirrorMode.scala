@@ -12,19 +12,15 @@ trait ICodeMirrorMode extends StObject {
 }
 object ICodeMirrorMode {
   
-  @scala.inline
-  def apply(name: String, version: String): ICodeMirrorMode = {
+  inline def apply(name: String, version: String): ICodeMirrorMode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICodeMirrorMode]
   }
   
-  @scala.inline
-  implicit class ICodeMirrorModeMutableBuilder[Self <: ICodeMirrorMode] (val x: Self) extends AnyVal {
+  extension [Self <: ICodeMirrorMode](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

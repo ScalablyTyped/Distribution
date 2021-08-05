@@ -18,25 +18,19 @@ trait CreateChannelModeratorResponse extends StObject {
 }
 object CreateChannelModeratorResponse {
   
-  @scala.inline
-  def apply(): CreateChannelModeratorResponse = {
+  inline def apply(): CreateChannelModeratorResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateChannelModeratorResponse]
   }
   
-  @scala.inline
-  implicit class CreateChannelModeratorResponseMutableBuilder[Self <: CreateChannelModeratorResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateChannelModeratorResponse](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
+    inline def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
     
-    @scala.inline
-    def setChannelModerator(value: Identity): Self = StObject.set(x, "ChannelModerator", value.asInstanceOf[js.Any])
+    inline def setChannelModerator(value: Identity): Self = StObject.set(x, "ChannelModerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelModeratorUndefined: Self = StObject.set(x, "ChannelModerator", js.undefined)
+    inline def setChannelModeratorUndefined: Self = StObject.set(x, "ChannelModerator", js.undefined)
   }
 }

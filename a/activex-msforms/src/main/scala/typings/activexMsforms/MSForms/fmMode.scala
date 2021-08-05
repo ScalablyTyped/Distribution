@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmMode extends StObject
 object fmMode {
   
-  @scala.inline
-  def fmModeInherit: `-2` = -2.asInstanceOf[`-2`]
+  inline def fmModeInherit: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def fmModeOff: `0` = 0.asInstanceOf[`0`]
+  inline def fmModeOff: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fmModeOn: `-1` = -1.asInstanceOf[`-1`]
+  inline def fmModeOn: `-1` = -1.asInstanceOf[`-1`]
 }

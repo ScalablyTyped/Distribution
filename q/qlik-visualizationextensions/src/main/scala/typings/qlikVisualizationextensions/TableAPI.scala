@@ -28,8 +28,7 @@ object TableAPI {
   }
   object IQDimensionCell {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getPercent: () => Double,
       getPercentOfMax: () => Double,
       qElemNumber: Double,
@@ -41,17 +40,13 @@ object TableAPI {
       __obj.asInstanceOf[IQDimensionCell]
     }
     
-    @scala.inline
-    implicit class IQDimensionCellMutableBuilder[Self <: IQDimensionCell] (val x: Self) extends AnyVal {
+    extension [Self <: IQDimensionCell](x: Self) {
       
-      @scala.inline
-      def setQElemNumber(value: Double): Self = StObject.set(x, "qElemNumber", value.asInstanceOf[js.Any])
+      inline def setQElemNumber(value: Double): Self = StObject.set(x, "qElemNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQState(value: String): Self = StObject.set(x, "qState", value.asInstanceOf[js.Any])
+      inline def setQState(value: String): Self = StObject.set(x, "qState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelect(value: () => Unit): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
+      inline def setSelect(value: () => Unit): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
     }
   }
   
@@ -173,29 +168,22 @@ object TableAPI {
   }
   object IQMeasureCell {
     
-    @scala.inline
-    def apply(getPercent: () => Double, getPercentOfMax: () => Double, qText: String): IQMeasureCell = {
+    inline def apply(getPercent: () => Double, getPercentOfMax: () => Double, qText: String): IQMeasureCell = {
       val __obj = js.Dynamic.literal(getPercent = js.Any.fromFunction0(getPercent), getPercentOfMax = js.Any.fromFunction0(getPercentOfMax), qText = qText.asInstanceOf[js.Any])
       __obj.asInstanceOf[IQMeasureCell]
     }
     
-    @scala.inline
-    implicit class IQMeasureCellMutableBuilder[Self <: IQMeasureCell] (val x: Self) extends AnyVal {
+    extension [Self <: IQMeasureCell](x: Self) {
       
-      @scala.inline
-      def setGetPercent(value: () => Double): Self = StObject.set(x, "getPercent", js.Any.fromFunction0(value))
+      inline def setGetPercent(value: () => Double): Self = StObject.set(x, "getPercent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPercentOfMax(value: () => Double): Self = StObject.set(x, "getPercentOfMax", js.Any.fromFunction0(value))
+      inline def setGetPercentOfMax(value: () => Double): Self = StObject.set(x, "getPercentOfMax", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
+      inline def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQNumUndefined: Self = StObject.set(x, "qNum", js.undefined)
+      inline def setQNumUndefined: Self = StObject.set(x, "qNum", js.undefined)
       
-      @scala.inline
-      def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+      inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -218,32 +206,24 @@ object TableAPI {
   }
   object IQRow {
     
-    @scala.inline
-    def apply(cells: js.Array[js.Any], dimensions: js.Array[IQDimensionCell], measures: js.Array[IQMeasureCell]): IQRow = {
+    inline def apply(cells: js.Array[js.Any], dimensions: js.Array[IQDimensionCell], measures: js.Array[IQMeasureCell]): IQRow = {
       val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], measures = measures.asInstanceOf[js.Any])
       __obj.asInstanceOf[IQRow]
     }
     
-    @scala.inline
-    implicit class IQRowMutableBuilder[Self <: IQRow] (val x: Self) extends AnyVal {
+    extension [Self <: IQRow](x: Self) {
       
-      @scala.inline
-      def setCells(value: js.Array[js.Any]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+      inline def setCells(value: js.Array[js.Any]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellsVarargs(value: js.Any*): Self = StObject.set(x, "cells", js.Array(value :_*))
+      inline def setCellsVarargs(value: js.Any*): Self = StObject.set(x, "cells", js.Array(value :_*))
       
-      @scala.inline
-      def setDimensions(value: js.Array[IQDimensionCell]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: js.Array[IQDimensionCell]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimensionsVarargs(value: IQDimensionCell*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+      inline def setDimensionsVarargs(value: IQDimensionCell*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
       
-      @scala.inline
-      def setMeasures(value: js.Array[IQMeasureCell]): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
+      inline def setMeasures(value: js.Array[IQMeasureCell]): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeasuresVarargs(value: IQMeasureCell*): Self = StObject.set(x, "measures", js.Array(value :_*))
+      inline def setMeasuresVarargs(value: IQMeasureCell*): Self = StObject.set(x, "measures", js.Array(value :_*))
     }
   }
   

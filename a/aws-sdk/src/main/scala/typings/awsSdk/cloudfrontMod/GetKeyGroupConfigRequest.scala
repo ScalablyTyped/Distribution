@@ -13,16 +13,13 @@ trait GetKeyGroupConfigRequest extends StObject {
 }
 object GetKeyGroupConfigRequest {
   
-  @scala.inline
-  def apply(Id: String): GetKeyGroupConfigRequest = {
+  inline def apply(Id: String): GetKeyGroupConfigRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetKeyGroupConfigRequest]
   }
   
-  @scala.inline
-  implicit class GetKeyGroupConfigRequestMutableBuilder[Self <: GetKeyGroupConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetKeyGroupConfigRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

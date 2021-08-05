@@ -15,22 +15,17 @@ trait IPolylineOptions
 }
 object IPolylineOptions {
   
-  @scala.inline
-  def apply(): IPolylineOptions = {
+  inline def apply(): IPolylineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPolylineOptions]
   }
   
-  @scala.inline
-  implicit class IPolylineOptionsMutableBuilder[Self <: IPolylineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPolylineOptions](x: Self) {
     
-    @scala.inline
-    def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    @scala.inline
-    def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
   }
 }

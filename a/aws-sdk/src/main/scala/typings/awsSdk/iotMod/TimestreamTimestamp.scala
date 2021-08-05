@@ -18,19 +18,15 @@ trait TimestreamTimestamp extends StObject {
 }
 object TimestreamTimestamp {
   
-  @scala.inline
-  def apply(unit: TimestreamTimestampUnit, value: TimestreamTimestampValue): TimestreamTimestamp = {
+  inline def apply(unit: TimestreamTimestampUnit, value: TimestreamTimestampValue): TimestreamTimestamp = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimestreamTimestamp]
   }
   
-  @scala.inline
-  implicit class TimestreamTimestampMutableBuilder[Self <: TimestreamTimestamp] (val x: Self) extends AnyVal {
+  extension [Self <: TimestreamTimestamp](x: Self) {
     
-    @scala.inline
-    def setUnit(value: TimestreamTimestampUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: TimestreamTimestampUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: TimestreamTimestampValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TimestreamTimestampValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

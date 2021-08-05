@@ -13,19 +13,15 @@ trait WebCLSampler extends StObject {
 }
 object WebCLSampler {
   
-  @scala.inline
-  def apply(getInfo: SamplerInfo => js.Any, release: () => Unit): WebCLSampler = {
+  inline def apply(getInfo: SamplerInfo => js.Any, release: () => Unit): WebCLSampler = {
     val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction1(getInfo), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[WebCLSampler]
   }
   
-  @scala.inline
-  implicit class WebCLSamplerMutableBuilder[Self <: WebCLSampler] (val x: Self) extends AnyVal {
+  extension [Self <: WebCLSampler](x: Self) {
     
-    @scala.inline
-    def setGetInfo(value: SamplerInfo => js.Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
+    inline def setGetInfo(value: SamplerInfo => js.Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
+    inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
   }
 }

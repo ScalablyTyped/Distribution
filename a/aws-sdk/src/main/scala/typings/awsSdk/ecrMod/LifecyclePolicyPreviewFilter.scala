@@ -13,19 +13,15 @@ trait LifecyclePolicyPreviewFilter extends StObject {
 }
 object LifecyclePolicyPreviewFilter {
   
-  @scala.inline
-  def apply(): LifecyclePolicyPreviewFilter = {
+  inline def apply(): LifecyclePolicyPreviewFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LifecyclePolicyPreviewFilter]
   }
   
-  @scala.inline
-  implicit class LifecyclePolicyPreviewFilterMutableBuilder[Self <: LifecyclePolicyPreviewFilter] (val x: Self) extends AnyVal {
+  extension [Self <: LifecyclePolicyPreviewFilter](x: Self) {
     
-    @scala.inline
-    def setTagStatus(value: TagStatus): Self = StObject.set(x, "tagStatus", value.asInstanceOf[js.Any])
+    inline def setTagStatus(value: TagStatus): Self = StObject.set(x, "tagStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagStatusUndefined: Self = StObject.set(x, "tagStatus", js.undefined)
+    inline def setTagStatusUndefined: Self = StObject.set(x, "tagStatus", js.undefined)
   }
 }

@@ -17,28 +17,21 @@ trait LDAPMessageJsonObject
 }
 object LDAPMessageJsonObject {
   
-  @scala.inline
-  def apply(controls: js.Array[Control], messageID: Double): LDAPMessageJsonObject = {
+  inline def apply(controls: js.Array[Control], messageID: Double): LDAPMessageJsonObject = {
     val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any], messageID = messageID.asInstanceOf[js.Any])
     __obj.asInstanceOf[LDAPMessageJsonObject]
   }
   
-  @scala.inline
-  implicit class LDAPMessageJsonObjectMutableBuilder[Self <: LDAPMessageJsonObject] (val x: Self) extends AnyVal {
+  extension [Self <: LDAPMessageJsonObject](x: Self) {
     
-    @scala.inline
-    def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value :_*))
+    inline def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value :_*))
     
-    @scala.inline
-    def setMessageID(value: Double): Self = StObject.set(x, "messageID", value.asInstanceOf[js.Any])
+    inline def setMessageID(value: Double): Self = StObject.set(x, "messageID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolOp(value: String): Self = StObject.set(x, "protocolOp", value.asInstanceOf[js.Any])
+    inline def setProtocolOp(value: String): Self = StObject.set(x, "protocolOp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolOpUndefined: Self = StObject.set(x, "protocolOp", js.undefined)
+    inline def setProtocolOpUndefined: Self = StObject.set(x, "protocolOp", js.undefined)
   }
 }

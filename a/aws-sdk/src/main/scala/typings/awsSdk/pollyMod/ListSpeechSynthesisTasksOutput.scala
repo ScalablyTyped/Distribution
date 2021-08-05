@@ -18,28 +18,21 @@ trait ListSpeechSynthesisTasksOutput extends StObject {
 }
 object ListSpeechSynthesisTasksOutput {
   
-  @scala.inline
-  def apply(): ListSpeechSynthesisTasksOutput = {
+  inline def apply(): ListSpeechSynthesisTasksOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSpeechSynthesisTasksOutput]
   }
   
-  @scala.inline
-  implicit class ListSpeechSynthesisTasksOutputMutableBuilder[Self <: ListSpeechSynthesisTasksOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListSpeechSynthesisTasksOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSynthesisTasks(value: SynthesisTasks): Self = StObject.set(x, "SynthesisTasks", value.asInstanceOf[js.Any])
+    inline def setSynthesisTasks(value: SynthesisTasks): Self = StObject.set(x, "SynthesisTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynthesisTasksUndefined: Self = StObject.set(x, "SynthesisTasks", js.undefined)
+    inline def setSynthesisTasksUndefined: Self = StObject.set(x, "SynthesisTasks", js.undefined)
     
-    @scala.inline
-    def setSynthesisTasksVarargs(value: SynthesisTask*): Self = StObject.set(x, "SynthesisTasks", js.Array(value :_*))
+    inline def setSynthesisTasksVarargs(value: SynthesisTask*): Self = StObject.set(x, "SynthesisTasks", js.Array(value :_*))
   }
 }

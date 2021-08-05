@@ -14,16 +14,13 @@ trait NotificationFeature[T /* <: js.Function */] extends StObject {
 }
 object NotificationFeature {
   
-  @scala.inline
-  def apply[T /* <: js.Function */](getProvider: typings.vscode.mod.TextDocument => Send[T]): NotificationFeature[T] = {
+  inline def apply[T /* <: js.Function */](getProvider: typings.vscode.mod.TextDocument => Send[T]): NotificationFeature[T] = {
     val __obj = js.Dynamic.literal(getProvider = js.Any.fromFunction1(getProvider))
     __obj.asInstanceOf[NotificationFeature[T]]
   }
   
-  @scala.inline
-  implicit class NotificationFeatureMutableBuilder[Self <: NotificationFeature[?], T /* <: js.Function */] (val x: Self & NotificationFeature[T]) extends AnyVal {
+  extension [Self <: NotificationFeature[?], T /* <: js.Function */](x: Self & NotificationFeature[T]) {
     
-    @scala.inline
-    def setGetProvider(value: typings.vscode.mod.TextDocument => Send[T]): Self = StObject.set(x, "getProvider", js.Any.fromFunction1(value))
+    inline def setGetProvider(value: typings.vscode.mod.TextDocument => Send[T]): Self = StObject.set(x, "getProvider", js.Any.fromFunction1(value))
   }
 }

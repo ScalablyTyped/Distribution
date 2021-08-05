@@ -16,8 +16,7 @@ trait Elements extends StObject {
 }
 object Elements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     elements: js.Array[js.Array[ResolvedElement]],
     selector: String,
     targetSelectorAst: SelectorAstNode
@@ -26,19 +25,14 @@ object Elements {
     __obj.asInstanceOf[Elements]
   }
   
-  @scala.inline
-  implicit class ElementsMutableBuilder[Self <: Elements] (val x: Self) extends AnyVal {
+  extension [Self <: Elements](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[js.Array[ResolvedElement]]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[js.Array[ResolvedElement]]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsVarargs(value: js.Array[ResolvedElement]*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: js.Array[ResolvedElement]*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSelectorAst(value: SelectorAstNode): Self = StObject.set(x, "targetSelectorAst", value.asInstanceOf[js.Any])
+    inline def setTargetSelectorAst(value: SelectorAstNode): Self = StObject.set(x, "targetSelectorAst", value.asInstanceOf[js.Any])
   }
 }

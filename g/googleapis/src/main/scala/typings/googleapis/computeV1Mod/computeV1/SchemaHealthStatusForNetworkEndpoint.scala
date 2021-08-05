@@ -32,37 +32,27 @@ trait SchemaHealthStatusForNetworkEndpoint extends StObject {
 }
 object SchemaHealthStatusForNetworkEndpoint {
   
-  @scala.inline
-  def apply(): SchemaHealthStatusForNetworkEndpoint = {
+  inline def apply(): SchemaHealthStatusForNetworkEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHealthStatusForNetworkEndpoint]
   }
   
-  @scala.inline
-  implicit class SchemaHealthStatusForNetworkEndpointMutableBuilder[Self <: SchemaHealthStatusForNetworkEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHealthStatusForNetworkEndpoint](x: Self) {
     
-    @scala.inline
-    def setBackendService(value: SchemaBackendServiceReference): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
+    inline def setBackendService(value: SchemaBackendServiceReference): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendServiceUndefined: Self = StObject.set(x, "backendService", js.undefined)
+    inline def setBackendServiceUndefined: Self = StObject.set(x, "backendService", js.undefined)
     
-    @scala.inline
-    def setForwardingRule(value: SchemaForwardingRuleReference): Self = StObject.set(x, "forwardingRule", value.asInstanceOf[js.Any])
+    inline def setForwardingRule(value: SchemaForwardingRuleReference): Self = StObject.set(x, "forwardingRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardingRuleUndefined: Self = StObject.set(x, "forwardingRule", js.undefined)
+    inline def setForwardingRuleUndefined: Self = StObject.set(x, "forwardingRule", js.undefined)
     
-    @scala.inline
-    def setHealthCheck(value: SchemaHealthCheckReference): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
+    inline def setHealthCheck(value: SchemaHealthCheckReference): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
+    inline def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
     
-    @scala.inline
-    def setHealthState(value: String): Self = StObject.set(x, "healthState", value.asInstanceOf[js.Any])
+    inline def setHealthState(value: String): Self = StObject.set(x, "healthState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthStateUndefined: Self = StObject.set(x, "healthState", js.undefined)
+    inline def setHealthStateUndefined: Self = StObject.set(x, "healthState", js.undefined)
   }
 }

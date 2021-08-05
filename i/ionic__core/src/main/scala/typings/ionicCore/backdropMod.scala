@@ -15,7 +15,7 @@ object backdropMod {
     extends StObject
        with ComponentInterface {
     
-    var blocker: js.Any = js.native
+    /* private */ var blocker: js.Any = js.native
     
     @JSName("connectedCallback")
     def connectedCallback_MBackdrop(): Unit = js.native
@@ -23,7 +23,7 @@ object backdropMod {
     @JSName("disconnectedCallback")
     def disconnectedCallback_MBackdrop(): Unit = js.native
     
-    var emitTap: js.Any = js.native
+    /* private */ var emitTap: js.Any = js.native
     
     /**
       * Emitted when the backdrop is tapped.

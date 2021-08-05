@@ -85,20 +85,16 @@ object mod {
   }
   object FluentBundleAddResourceOptions {
     
-    @scala.inline
-    def apply(): FluentBundleAddResourceOptions = {
+    inline def apply(): FluentBundleAddResourceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FluentBundleAddResourceOptions]
     }
     
-    @scala.inline
-    implicit class FluentBundleAddResourceOptionsMutableBuilder[Self <: FluentBundleAddResourceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FluentBundleAddResourceOptions](x: Self) {
       
-      @scala.inline
-      def setAllowOverrides(value: Boolean): Self = StObject.set(x, "allowOverrides", value.asInstanceOf[js.Any])
+      inline def setAllowOverrides(value: Boolean): Self = StObject.set(x, "allowOverrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowOverridesUndefined: Self = StObject.set(x, "allowOverrides", js.undefined)
+      inline def setAllowOverridesUndefined: Self = StObject.set(x, "allowOverrides", js.undefined)
     }
   }
   
@@ -112,32 +108,24 @@ object mod {
   }
   object FluentBundleConstructorOptions {
     
-    @scala.inline
-    def apply(): FluentBundleConstructorOptions = {
+    inline def apply(): FluentBundleConstructorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FluentBundleConstructorOptions]
     }
     
-    @scala.inline
-    implicit class FluentBundleConstructorOptionsMutableBuilder[Self <: FluentBundleConstructorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FluentBundleConstructorOptions](x: Self) {
       
-      @scala.inline
-      def setFunctions(value: js.Object): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+      inline def setFunctions(value: js.Object): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+      inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
       
-      @scala.inline
-      def setTransform(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setUseIsolating(value: Boolean): Self = StObject.set(x, "useIsolating", value.asInstanceOf[js.Any])
+      inline def setUseIsolating(value: Boolean): Self = StObject.set(x, "useIsolating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseIsolatingUndefined: Self = StObject.set(x, "useIsolating", js.undefined)
+      inline def setUseIsolatingUndefined: Self = StObject.set(x, "useIsolating", js.undefined)
     }
   }
   
@@ -151,23 +139,18 @@ object mod {
   }
   object RawMessage {
     
-    @scala.inline
-    def apply(attributes: Record[String, Pattern]): RawMessage = {
+    inline def apply(attributes: Record[String, Pattern]): RawMessage = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], value = null)
       __obj.asInstanceOf[RawMessage]
     }
     
-    @scala.inline
-    implicit class RawMessageMutableBuilder[Self <: RawMessage] (val x: Self) extends AnyVal {
+    extension [Self <: RawMessage](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Record[String, Pattern]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Record[String, Pattern]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Pattern): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Pattern): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
     }
   }
   
@@ -184,8 +167,7 @@ object mod {
   }
   object Scope {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cloneForTermReference: js.Object => Scope,
       memoizeIntlObject: (Instantiable2[/* locales */ js.Array[String], js.Any, js.Any], js.Any) => js.Any,
       reportError: String => Unit
@@ -194,17 +176,13 @@ object mod {
       __obj.asInstanceOf[Scope]
     }
     
-    @scala.inline
-    implicit class ScopeMutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
+    extension [Self <: Scope](x: Self) {
       
-      @scala.inline
-      def setCloneForTermReference(value: js.Object => Scope): Self = StObject.set(x, "cloneForTermReference", js.Any.fromFunction1(value))
+      inline def setCloneForTermReference(value: js.Object => Scope): Self = StObject.set(x, "cloneForTermReference", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMemoizeIntlObject(value: (Instantiable2[/* locales */ js.Array[String], js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "memoizeIntlObject", js.Any.fromFunction2(value))
+      inline def setMemoizeIntlObject(value: (Instantiable2[/* locales */ js.Array[String], js.Any, js.Any], js.Any) => js.Any): Self = StObject.set(x, "memoizeIntlObject", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReportError(value: String => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
+      inline def setReportError(value: String => Unit): Self = StObject.set(x, "reportError", js.Any.fromFunction1(value))
     }
   }
 }

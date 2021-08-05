@@ -19,19 +19,15 @@ trait ChildNodeCountUpdatedEvent extends StObject {
 }
 object ChildNodeCountUpdatedEvent {
   
-  @scala.inline
-  def apply(childNodeCount: integer, nodeId: NodeId): ChildNodeCountUpdatedEvent = {
+  inline def apply(childNodeCount: integer, nodeId: NodeId): ChildNodeCountUpdatedEvent = {
     val __obj = js.Dynamic.literal(childNodeCount = childNodeCount.asInstanceOf[js.Any], nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildNodeCountUpdatedEvent]
   }
   
-  @scala.inline
-  implicit class ChildNodeCountUpdatedEventMutableBuilder[Self <: ChildNodeCountUpdatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ChildNodeCountUpdatedEvent](x: Self) {
     
-    @scala.inline
-    def setChildNodeCount(value: integer): Self = StObject.set(x, "childNodeCount", value.asInstanceOf[js.Any])
+    inline def setChildNodeCount(value: integer): Self = StObject.set(x, "childNodeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

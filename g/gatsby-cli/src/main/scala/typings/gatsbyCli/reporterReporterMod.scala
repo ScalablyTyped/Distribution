@@ -153,32 +153,24 @@ object reporterReporterMod {
   }
   object IActivityArgs {
     
-    @scala.inline
-    def apply(): IActivityArgs = {
+    inline def apply(): IActivityArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IActivityArgs]
     }
     
-    @scala.inline
-    implicit class IActivityArgsMutableBuilder[Self <: IActivityArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IActivityArgs](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setParentSpan(value: Span): Self = StObject.set(x, "parentSpan", value.asInstanceOf[js.Any])
+      inline def setParentSpan(value: Span): Self = StObject.set(x, "parentSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentSpanUndefined: Self = StObject.set(x, "parentSpan", js.undefined)
+      inline def setParentSpanUndefined: Self = StObject.set(x, "parentSpan", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

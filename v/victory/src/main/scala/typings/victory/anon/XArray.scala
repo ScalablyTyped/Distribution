@@ -13,19 +13,15 @@ trait XArray
 }
 object XArray {
   
-  @scala.inline
-  def apply(x: js.Array[String]): XArray = {
+  inline def apply(x: js.Array[String]): XArray = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
     __obj.asInstanceOf[XArray]
   }
   
-  @scala.inline
-  implicit class XArrayMutableBuilder[Self <: XArray] (val x: Self) extends AnyVal {
+  extension [Self <: XArray](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Array[String]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Array[String]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXVarargs(value: String*): Self = StObject.set(x, "x", js.Array(value :_*))
+    inline def setXVarargs(value: String*): Self = StObject.set(x, "x", js.Array(value :_*))
   }
 }

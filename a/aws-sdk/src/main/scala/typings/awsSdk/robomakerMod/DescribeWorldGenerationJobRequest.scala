@@ -13,16 +13,13 @@ trait DescribeWorldGenerationJobRequest extends StObject {
 }
 object DescribeWorldGenerationJobRequest {
   
-  @scala.inline
-  def apply(job: Arn): DescribeWorldGenerationJobRequest = {
+  inline def apply(job: Arn): DescribeWorldGenerationJobRequest = {
     val __obj = js.Dynamic.literal(job = job.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeWorldGenerationJobRequest]
   }
   
-  @scala.inline
-  implicit class DescribeWorldGenerationJobRequestMutableBuilder[Self <: DescribeWorldGenerationJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWorldGenerationJobRequest](x: Self) {
     
-    @scala.inline
-    def setJob(value: Arn): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: Arn): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
   }
 }

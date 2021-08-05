@@ -14,28 +14,21 @@ trait GooglePrivacyDlpV2Regex extends StObject {
 }
 object GooglePrivacyDlpV2Regex {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2Regex = {
+  inline def apply(): GooglePrivacyDlpV2Regex = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2Regex]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2RegexMutableBuilder[Self <: GooglePrivacyDlpV2Regex] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2Regex](x: Self) {
     
-    @scala.inline
-    def setGroupIndexes(value: js.Array[Double]): Self = StObject.set(x, "groupIndexes", value.asInstanceOf[js.Any])
+    inline def setGroupIndexes(value: js.Array[Double]): Self = StObject.set(x, "groupIndexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIndexesUndefined: Self = StObject.set(x, "groupIndexes", js.undefined)
+    inline def setGroupIndexesUndefined: Self = StObject.set(x, "groupIndexes", js.undefined)
     
-    @scala.inline
-    def setGroupIndexesVarargs(value: Double*): Self = StObject.set(x, "groupIndexes", js.Array(value :_*))
+    inline def setGroupIndexesVarargs(value: Double*): Self = StObject.set(x, "groupIndexes", js.Array(value :_*))
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
   }
 }

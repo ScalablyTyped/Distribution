@@ -11,17 +11,14 @@ trait `200` extends StObject {
 }
 object `200` {
   
-  @scala.inline
-  def apply(): `200` = {
+  inline def apply(): `200` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("EnumNumberMember")
     __obj.asInstanceOf[`200`]
   }
   
-  @scala.inline
-  implicit class `200MutableBuilder`[Self <: `200`] (val x: Self) extends AnyVal {
+  extension [Self <: `200`](x: Self) {
     
-    @scala.inline
-    def setType(value: EnumNumberMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EnumNumberMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

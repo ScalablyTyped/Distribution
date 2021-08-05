@@ -20,25 +20,19 @@ trait TypeofRotateTimeline extends StObject {
 }
 object TypeofRotateTimeline {
   
-  @scala.inline
-  def apply(ENTRIES: Double, PREV_ROTATION: Double, PREV_TIME: Double, ROTATION: Double): TypeofRotateTimeline = {
+  inline def apply(ENTRIES: Double, PREV_ROTATION: Double, PREV_TIME: Double, ROTATION: Double): TypeofRotateTimeline = {
     val __obj = js.Dynamic.literal(ENTRIES = ENTRIES.asInstanceOf[js.Any], PREV_ROTATION = PREV_ROTATION.asInstanceOf[js.Any], PREV_TIME = PREV_TIME.asInstanceOf[js.Any], ROTATION = ROTATION.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofRotateTimeline]
   }
   
-  @scala.inline
-  implicit class TypeofRotateTimelineMutableBuilder[Self <: TypeofRotateTimeline] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofRotateTimeline](x: Self) {
     
-    @scala.inline
-    def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
+    inline def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_ROTATION(value: Double): Self = StObject.set(x, "PREV_ROTATION", value.asInstanceOf[js.Any])
+    inline def setPREV_ROTATION(value: Double): Self = StObject.set(x, "PREV_ROTATION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_TIME(value: Double): Self = StObject.set(x, "PREV_TIME", value.asInstanceOf[js.Any])
+    inline def setPREV_TIME(value: Double): Self = StObject.set(x, "PREV_TIME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setROTATION(value: Double): Self = StObject.set(x, "ROTATION", value.asInstanceOf[js.Any])
+    inline def setROTATION(value: Double): Self = StObject.set(x, "ROTATION", value.asInstanceOf[js.Any])
   }
 }

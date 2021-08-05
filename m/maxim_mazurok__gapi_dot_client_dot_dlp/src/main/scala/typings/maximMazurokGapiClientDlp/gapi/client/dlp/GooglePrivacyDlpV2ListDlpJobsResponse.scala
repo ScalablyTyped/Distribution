@@ -14,28 +14,21 @@ trait GooglePrivacyDlpV2ListDlpJobsResponse extends StObject {
 }
 object GooglePrivacyDlpV2ListDlpJobsResponse {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2ListDlpJobsResponse = {
+  inline def apply(): GooglePrivacyDlpV2ListDlpJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2ListDlpJobsResponse]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2ListDlpJobsResponseMutableBuilder[Self <: GooglePrivacyDlpV2ListDlpJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2ListDlpJobsResponse](x: Self) {
     
-    @scala.inline
-    def setJobs(value: js.Array[GooglePrivacyDlpV2DlpJob]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
+    inline def setJobs(value: js.Array[GooglePrivacyDlpV2DlpJob]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
+    inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
-    @scala.inline
-    def setJobsVarargs(value: GooglePrivacyDlpV2DlpJob*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: GooglePrivacyDlpV2DlpJob*): Self = StObject.set(x, "jobs", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

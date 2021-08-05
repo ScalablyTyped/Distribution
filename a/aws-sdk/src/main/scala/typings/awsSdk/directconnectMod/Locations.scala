@@ -13,22 +13,17 @@ trait Locations extends StObject {
 }
 object Locations {
   
-  @scala.inline
-  def apply(): Locations = {
+  inline def apply(): Locations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Locations]
   }
   
-  @scala.inline
-  implicit class LocationsMutableBuilder[Self <: Locations] (val x: Self) extends AnyVal {
+  extension [Self <: Locations](x: Self) {
     
-    @scala.inline
-    def setLocations(value: LocationList): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: LocationList): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    @scala.inline
-    def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
   }
 }

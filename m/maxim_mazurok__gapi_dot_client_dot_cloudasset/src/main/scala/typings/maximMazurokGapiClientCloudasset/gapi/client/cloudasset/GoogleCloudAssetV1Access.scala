@@ -17,31 +17,23 @@ trait GoogleCloudAssetV1Access extends StObject {
 }
 object GoogleCloudAssetV1Access {
   
-  @scala.inline
-  def apply(): GoogleCloudAssetV1Access = {
+  inline def apply(): GoogleCloudAssetV1Access = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudAssetV1Access]
   }
   
-  @scala.inline
-  implicit class GoogleCloudAssetV1AccessMutableBuilder[Self <: GoogleCloudAssetV1Access] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudAssetV1Access](x: Self) {
     
-    @scala.inline
-    def setAnalysisState(value: IamPolicyAnalysisState): Self = StObject.set(x, "analysisState", value.asInstanceOf[js.Any])
+    inline def setAnalysisState(value: IamPolicyAnalysisState): Self = StObject.set(x, "analysisState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisStateUndefined: Self = StObject.set(x, "analysisState", js.undefined)
+    inline def setAnalysisStateUndefined: Self = StObject.set(x, "analysisState", js.undefined)
     
-    @scala.inline
-    def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

@@ -8,11 +8,9 @@ object maximMazurokGapiClientTagmanagerStrings {
   
   @js.native
   sealed trait tagmanager extends StObject
-  @scala.inline
-  def tagmanager: tagmanager = "tagmanager".asInstanceOf[tagmanager]
+  inline def tagmanager: tagmanager = "tagmanager".asInstanceOf[tagmanager]
   
   @js.native
   sealed trait v2 extends StObject
-  @scala.inline
-  def v2: v2 = "v2".asInstanceOf[v2]
+  inline def v2: v2 = "v2".asInstanceOf[v2]
 }

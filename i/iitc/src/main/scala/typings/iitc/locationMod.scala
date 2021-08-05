@@ -13,11 +13,9 @@ object locationMod {
       * URL or if neither is present, via Geolocation. If that fails, it
       * returns a map that shows the whole world.
       */
-    @scala.inline
-    def getPosition(): Unit = js.Dynamic.global.applyDynamic("getPosition")().asInstanceOf[Unit]
+    inline def getPosition(): Unit = js.Dynamic.global.applyDynamic("getPosition")().asInstanceOf[Unit]
     
     /** retrieves current position from map and stores it cookies */
-    @scala.inline
-    def storeMapPosition(): Unit = js.Dynamic.global.applyDynamic("storeMapPosition")().asInstanceOf[Unit]
+    inline def storeMapPosition(): Unit = js.Dynamic.global.applyDynamic("storeMapPosition")().asInstanceOf[Unit]
   }
 }

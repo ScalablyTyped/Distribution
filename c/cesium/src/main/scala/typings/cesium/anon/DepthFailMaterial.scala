@@ -36,88 +36,61 @@ trait DepthFailMaterial extends StObject {
 }
 object DepthFailMaterial {
   
-  @scala.inline
-  def apply(): DepthFailMaterial = {
+  inline def apply(): DepthFailMaterial = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DepthFailMaterial]
   }
   
-  @scala.inline
-  implicit class DepthFailMaterialMutableBuilder[Self <: DepthFailMaterial] (val x: Self) extends AnyVal {
+  extension [Self <: DepthFailMaterial](x: Self) {
     
-    @scala.inline
-    def setArcType(value: Property | typings.cesium.mod.ArcType): Self = StObject.set(x, "arcType", value.asInstanceOf[js.Any])
+    inline def setArcType(value: Property | typings.cesium.mod.ArcType): Self = StObject.set(x, "arcType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArcTypeUndefined: Self = StObject.set(x, "arcType", js.undefined)
+    inline def setArcTypeUndefined: Self = StObject.set(x, "arcType", js.undefined)
     
-    @scala.inline
-    def setClampToGround(value: Property | Boolean): Self = StObject.set(x, "clampToGround", value.asInstanceOf[js.Any])
+    inline def setClampToGround(value: Property | Boolean): Self = StObject.set(x, "clampToGround", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClampToGroundUndefined: Self = StObject.set(x, "clampToGround", js.undefined)
+    inline def setClampToGroundUndefined: Self = StObject.set(x, "clampToGround", js.undefined)
     
-    @scala.inline
-    def setClassificationType(value: Property | typings.cesium.mod.ClassificationType): Self = StObject.set(x, "classificationType", value.asInstanceOf[js.Any])
+    inline def setClassificationType(value: Property | typings.cesium.mod.ClassificationType): Self = StObject.set(x, "classificationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassificationTypeUndefined: Self = StObject.set(x, "classificationType", js.undefined)
+    inline def setClassificationTypeUndefined: Self = StObject.set(x, "classificationType", js.undefined)
     
-    @scala.inline
-    def setDepthFailMaterial(value: MaterialProperty): Self = StObject.set(x, "depthFailMaterial", value.asInstanceOf[js.Any])
+    inline def setDepthFailMaterial(value: MaterialProperty): Self = StObject.set(x, "depthFailMaterial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthFailMaterialUndefined: Self = StObject.set(x, "depthFailMaterial", js.undefined)
+    inline def setDepthFailMaterialUndefined: Self = StObject.set(x, "depthFailMaterial", js.undefined)
     
-    @scala.inline
-    def setDistanceDisplayCondition(value: Property): Self = StObject.set(x, "distanceDisplayCondition", value.asInstanceOf[js.Any])
+    inline def setDistanceDisplayCondition(value: Property): Self = StObject.set(x, "distanceDisplayCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceDisplayConditionUndefined: Self = StObject.set(x, "distanceDisplayCondition", js.undefined)
+    inline def setDistanceDisplayConditionUndefined: Self = StObject.set(x, "distanceDisplayCondition", js.undefined)
     
-    @scala.inline
-    def setGranularity(value: Property): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
+    inline def setGranularity(value: Property): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
+    inline def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
     
-    @scala.inline
-    def setMaterial(value: MaterialProperty | typings.cesium.mod.Color): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: MaterialProperty | typings.cesium.mod.Color): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
-    @scala.inline
-    def setPositions(value: Property | js.Array[Cartesian3]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+    inline def setPositions(value: Property | js.Array[Cartesian3]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
+    inline def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
     
-    @scala.inline
-    def setPositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "positions", js.Array(value :_*))
     
-    @scala.inline
-    def setShadows(value: Property | ShadowMode): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
+    inline def setShadows(value: Property | ShadowMode): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
+    inline def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
-    @scala.inline
-    def setShow(value: Property | Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Property | Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Property | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Property | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setZIndex(value: Property | Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Property | Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

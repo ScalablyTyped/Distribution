@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait svgFocusable extends StObject
 object svgFocusable {
   
-  @scala.inline
-  def svgFocusableAuto: `1` = 1.asInstanceOf[`1`]
+  inline def svgFocusableAuto: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def svgFocusableFalse: `3` = 3.asInstanceOf[`3`]
+  inline def svgFocusableFalse: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def svgFocusableNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def svgFocusableNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def svgFocusableTrue: `2` = 2.asInstanceOf[`2`]
+  inline def svgFocusableTrue: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def svgFocusable_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def svgFocusable_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

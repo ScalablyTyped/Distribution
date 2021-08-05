@@ -13,6 +13,5 @@ object relativeTimeFormatMakePartsListMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def MakePartsList(pattern: String, unit: RelativeTimeUnit, parts: js.Array[NumberFormatPart]): js.Array[RelativeTimePart] = (^.asInstanceOf[js.Dynamic].applyDynamic("MakePartsList")(pattern.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], parts.asInstanceOf[js.Any])).asInstanceOf[js.Array[RelativeTimePart]]
+  inline def MakePartsList(pattern: String, unit: RelativeTimeUnit, parts: js.Array[NumberFormatPart]): js.Array[RelativeTimePart] = (^.asInstanceOf[js.Dynamic].applyDynamic("MakePartsList")(pattern.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], parts.asInstanceOf[js.Any])).asInstanceOf[js.Array[RelativeTimePart]]
 }

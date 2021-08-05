@@ -21,25 +21,19 @@ trait SchemaDeidentifySummary extends StObject {
 }
 object SchemaDeidentifySummary {
   
-  @scala.inline
-  def apply(): SchemaDeidentifySummary = {
+  inline def apply(): SchemaDeidentifySummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeidentifySummary]
   }
   
-  @scala.inline
-  implicit class SchemaDeidentifySummaryMutableBuilder[Self <: SchemaDeidentifySummary] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeidentifySummary](x: Self) {
     
-    @scala.inline
-    def setSuccessResourceCount(value: String): Self = StObject.set(x, "successResourceCount", value.asInstanceOf[js.Any])
+    inline def setSuccessResourceCount(value: String): Self = StObject.set(x, "successResourceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessResourceCountUndefined: Self = StObject.set(x, "successResourceCount", js.undefined)
+    inline def setSuccessResourceCountUndefined: Self = StObject.set(x, "successResourceCount", js.undefined)
     
-    @scala.inline
-    def setSuccessStoreCount(value: String): Self = StObject.set(x, "successStoreCount", value.asInstanceOf[js.Any])
+    inline def setSuccessStoreCount(value: String): Self = StObject.set(x, "successStoreCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessStoreCountUndefined: Self = StObject.set(x, "successStoreCount", js.undefined)
+    inline def setSuccessStoreCountUndefined: Self = StObject.set(x, "successStoreCount", js.undefined)
   }
 }

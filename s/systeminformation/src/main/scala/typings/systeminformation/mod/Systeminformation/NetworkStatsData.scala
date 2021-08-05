@@ -30,8 +30,7 @@ trait NetworkStatsData extends StObject {
 }
 object NetworkStatsData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     iface: String,
     ms: Double,
     operstate: String,
@@ -48,40 +47,28 @@ object NetworkStatsData {
     __obj.asInstanceOf[NetworkStatsData]
   }
   
-  @scala.inline
-  implicit class NetworkStatsDataMutableBuilder[Self <: NetworkStatsData] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkStatsData](x: Self) {
     
-    @scala.inline
-    def setIface(value: String): Self = StObject.set(x, "iface", value.asInstanceOf[js.Any])
+    inline def setIface(value: String): Self = StObject.set(x, "iface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
+    inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperstate(value: String): Self = StObject.set(x, "operstate", value.asInstanceOf[js.Any])
+    inline def setOperstate(value: String): Self = StObject.set(x, "operstate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRx_bytes(value: Double): Self = StObject.set(x, "rx_bytes", value.asInstanceOf[js.Any])
+    inline def setRx_bytes(value: Double): Self = StObject.set(x, "rx_bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRx_dropped(value: Double): Self = StObject.set(x, "rx_dropped", value.asInstanceOf[js.Any])
+    inline def setRx_dropped(value: Double): Self = StObject.set(x, "rx_dropped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRx_errors(value: Double): Self = StObject.set(x, "rx_errors", value.asInstanceOf[js.Any])
+    inline def setRx_errors(value: Double): Self = StObject.set(x, "rx_errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRx_sec(value: Double): Self = StObject.set(x, "rx_sec", value.asInstanceOf[js.Any])
+    inline def setRx_sec(value: Double): Self = StObject.set(x, "rx_sec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTx_bytes(value: Double): Self = StObject.set(x, "tx_bytes", value.asInstanceOf[js.Any])
+    inline def setTx_bytes(value: Double): Self = StObject.set(x, "tx_bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTx_dropped(value: Double): Self = StObject.set(x, "tx_dropped", value.asInstanceOf[js.Any])
+    inline def setTx_dropped(value: Double): Self = StObject.set(x, "tx_dropped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTx_errors(value: Double): Self = StObject.set(x, "tx_errors", value.asInstanceOf[js.Any])
+    inline def setTx_errors(value: Double): Self = StObject.set(x, "tx_errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTx_sec(value: Double): Self = StObject.set(x, "tx_sec", value.asInstanceOf[js.Any])
+    inline def setTx_sec(value: Double): Self = StObject.set(x, "tx_sec", value.asInstanceOf[js.Any])
   }
 }

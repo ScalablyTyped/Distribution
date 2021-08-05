@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.SeriesLines")
 @js.native
-class SeriesLines protected ()
+/* private */ class SeriesLines ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.SeriesLines {
   
@@ -31,7 +31,7 @@ class SeriesLines protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.SeriesLines_typekey")
   var PowerPointDotSeriesLines_typekey: typings.activexPowerpoint.PowerPoint.SeriesLines = js.native
   

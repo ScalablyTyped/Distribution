@@ -13,19 +13,15 @@ trait LifecycleEventConfiguration extends StObject {
 }
 object LifecycleEventConfiguration {
   
-  @scala.inline
-  def apply(): LifecycleEventConfiguration = {
+  inline def apply(): LifecycleEventConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LifecycleEventConfiguration]
   }
   
-  @scala.inline
-  implicit class LifecycleEventConfigurationMutableBuilder[Self <: LifecycleEventConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LifecycleEventConfiguration](x: Self) {
     
-    @scala.inline
-    def setShutdown(value: ShutdownEventConfiguration): Self = StObject.set(x, "Shutdown", value.asInstanceOf[js.Any])
+    inline def setShutdown(value: ShutdownEventConfiguration): Self = StObject.set(x, "Shutdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShutdownUndefined: Self = StObject.set(x, "Shutdown", js.undefined)
+    inline def setShutdownUndefined: Self = StObject.set(x, "Shutdown", js.undefined)
   }
 }

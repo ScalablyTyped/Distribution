@@ -12,25 +12,19 @@ trait RUBArray extends StObject {
 }
 object RUBArray {
   
-  @scala.inline
-  def apply(JPY: js.Array[String], RUB: js.Array[String]): RUBArray = {
+  inline def apply(JPY: js.Array[String], RUB: js.Array[String]): RUBArray = {
     val __obj = js.Dynamic.literal(JPY = JPY.asInstanceOf[js.Any], RUB = RUB.asInstanceOf[js.Any])
     __obj.asInstanceOf[RUBArray]
   }
   
-  @scala.inline
-  implicit class RUBArrayMutableBuilder[Self <: RUBArray] (val x: Self) extends AnyVal {
+  extension [Self <: RUBArray](x: Self) {
     
-    @scala.inline
-    def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
+    inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
     
-    @scala.inline
-    def setRUB(value: js.Array[String]): Self = StObject.set(x, "RUB", value.asInstanceOf[js.Any])
+    inline def setRUB(value: js.Array[String]): Self = StObject.set(x, "RUB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRUBVarargs(value: String*): Self = StObject.set(x, "RUB", js.Array(value :_*))
+    inline def setRUBVarargs(value: String*): Self = StObject.set(x, "RUB", js.Array(value :_*))
   }
 }

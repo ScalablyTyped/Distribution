@@ -22,49 +22,35 @@ trait PartialStyleAlignment extends StObject {
 }
 object PartialStyleAlignment {
   
-  @scala.inline
-  def apply(): PartialStyleAlignment = {
+  inline def apply(): PartialStyleAlignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleAlignment]
   }
   
-  @scala.inline
-  implicit class PartialStyleAlignmentMutableBuilder[Self <: PartialStyleAlignment] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleAlignment](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: PartialAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: PartialAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
-    @scala.inline
-    def setBorder(value: PartialBordersDiagonal): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: PartialBordersDiagonal): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    @scala.inline
-    def setFill(value: Fill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: Fill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setFont(value: PartialFontBold): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: PartialFontBold): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setNumFmt(value: String): Self = StObject.set(x, "numFmt", value.asInstanceOf[js.Any])
+    inline def setNumFmt(value: String): Self = StObject.set(x, "numFmt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumFmtUndefined: Self = StObject.set(x, "numFmt", js.undefined)
+    inline def setNumFmtUndefined: Self = StObject.set(x, "numFmt", js.undefined)
     
-    @scala.inline
-    def setProtection(value: PartialProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
+    inline def setProtection(value: PartialProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectionUndefined: Self = StObject.set(x, "protection", js.undefined)
+    inline def setProtectionUndefined: Self = StObject.set(x, "protection", js.undefined)
   }
 }

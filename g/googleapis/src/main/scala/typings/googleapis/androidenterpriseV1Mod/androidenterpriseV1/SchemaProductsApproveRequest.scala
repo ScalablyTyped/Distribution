@@ -28,25 +28,19 @@ trait SchemaProductsApproveRequest extends StObject {
 }
 object SchemaProductsApproveRequest {
   
-  @scala.inline
-  def apply(): SchemaProductsApproveRequest = {
+  inline def apply(): SchemaProductsApproveRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProductsApproveRequest]
   }
   
-  @scala.inline
-  implicit class SchemaProductsApproveRequestMutableBuilder[Self <: SchemaProductsApproveRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProductsApproveRequest](x: Self) {
     
-    @scala.inline
-    def setApprovalUrlInfo(value: SchemaApprovalUrlInfo): Self = StObject.set(x, "approvalUrlInfo", value.asInstanceOf[js.Any])
+    inline def setApprovalUrlInfo(value: SchemaApprovalUrlInfo): Self = StObject.set(x, "approvalUrlInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalUrlInfoUndefined: Self = StObject.set(x, "approvalUrlInfo", js.undefined)
+    inline def setApprovalUrlInfoUndefined: Self = StObject.set(x, "approvalUrlInfo", js.undefined)
     
-    @scala.inline
-    def setApprovedPermissions(value: String): Self = StObject.set(x, "approvedPermissions", value.asInstanceOf[js.Any])
+    inline def setApprovedPermissions(value: String): Self = StObject.set(x, "approvedPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovedPermissionsUndefined: Self = StObject.set(x, "approvedPermissions", js.undefined)
+    inline def setApprovedPermissionsUndefined: Self = StObject.set(x, "approvedPermissions", js.undefined)
   }
 }

@@ -75,69 +75,49 @@ trait CustomStoreOptions
 }
 object CustomStoreOptions {
   
-  @scala.inline
-  def apply(): CustomStoreOptions = {
+  inline def apply(): CustomStoreOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomStoreOptions]
   }
   
-  @scala.inline
-  implicit class CustomStoreOptionsMutableBuilder[Self <: CustomStoreOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CustomStoreOptions](x: Self) {
     
-    @scala.inline
-    def setByKey(value: /* key */ js.Any | String | Double => Promise[js.Any] | JQueryPromise[js.Any]): Self = StObject.set(x, "byKey", js.Any.fromFunction1(value))
+    inline def setByKey(value: /* key */ js.Any | String | Double => Promise[js.Any] | JQueryPromise[js.Any]): Self = StObject.set(x, "byKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setByKeyUndefined: Self = StObject.set(x, "byKey", js.undefined)
+    inline def setByKeyUndefined: Self = StObject.set(x, "byKey", js.undefined)
     
-    @scala.inline
-    def setCacheRawData(value: Boolean): Self = StObject.set(x, "cacheRawData", value.asInstanceOf[js.Any])
+    inline def setCacheRawData(value: Boolean): Self = StObject.set(x, "cacheRawData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheRawDataUndefined: Self = StObject.set(x, "cacheRawData", js.undefined)
+    inline def setCacheRawDataUndefined: Self = StObject.set(x, "cacheRawData", js.undefined)
     
-    @scala.inline
-    def setInsert(value: /* values */ js.Any => Promise[js.Any] | JQueryPromise[js.Any]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+    inline def setInsert(value: /* values */ js.Any => Promise[js.Any] | JQueryPromise[js.Any]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+    inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
-    @scala.inline
-    def setLoad(value: /* options */ LoadOptions => Promise[js.Any] | JQueryPromise[js.Any] | js.Array[js.Any]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: /* options */ LoadOptions => Promise[js.Any] | JQueryPromise[js.Any] | js.Array[js.Any]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadMode(value: processed | raw): Self = StObject.set(x, "loadMode", value.asInstanceOf[js.Any])
+    inline def setLoadMode(value: processed | raw): Self = StObject.set(x, "loadMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadModeUndefined: Self = StObject.set(x, "loadMode", js.undefined)
+    inline def setLoadModeUndefined: Self = StObject.set(x, "loadMode", js.undefined)
     
-    @scala.inline
-    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    @scala.inline
-    def setRemove(value: /* key */ js.Any | String | Double => Promise[Unit] | JQueryPromise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: /* key */ js.Any | String | Double => Promise[Unit] | JQueryPromise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: /* loadOptions */ Filter => Promise[Double] | JQueryPromise[Double]): Self = StObject.set(x, "totalCount", js.Any.fromFunction1(value))
+    inline def setTotalCount(value: /* loadOptions */ Filter => Promise[Double] | JQueryPromise[Double]): Self = StObject.set(x, "totalCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
     
-    @scala.inline
-    def setUpdate(
+    inline def setUpdate(
       value: (/* key */ js.Any | String | Double, /* values */ js.Any) => Promise[js.Any] | JQueryPromise[js.Any]
     ): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
-    @scala.inline
-    def setUseDefaultSearch(value: Boolean): Self = StObject.set(x, "useDefaultSearch", value.asInstanceOf[js.Any])
+    inline def setUseDefaultSearch(value: Boolean): Self = StObject.set(x, "useDefaultSearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDefaultSearchUndefined: Self = StObject.set(x, "useDefaultSearch", js.undefined)
+    inline def setUseDefaultSearchUndefined: Self = StObject.set(x, "useDefaultSearch", js.undefined)
   }
 }

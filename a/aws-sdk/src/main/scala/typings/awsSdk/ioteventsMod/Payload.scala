@@ -18,20 +18,16 @@ trait Payload extends StObject {
 }
 object Payload {
   
-  @scala.inline
-  def apply(contentExpression: ContentExpression, `type`: PayloadType): Payload = {
+  inline def apply(contentExpression: ContentExpression, `type`: PayloadType): Payload = {
     val __obj = js.Dynamic.literal(contentExpression = contentExpression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Payload]
   }
   
-  @scala.inline
-  implicit class PayloadMutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
+  extension [Self <: Payload](x: Self) {
     
-    @scala.inline
-    def setContentExpression(value: ContentExpression): Self = StObject.set(x, "contentExpression", value.asInstanceOf[js.Any])
+    inline def setContentExpression(value: ContentExpression): Self = StObject.set(x, "contentExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PayloadType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PayloadType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

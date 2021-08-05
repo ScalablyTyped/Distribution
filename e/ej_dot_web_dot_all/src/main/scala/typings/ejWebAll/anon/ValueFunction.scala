@@ -10,16 +10,13 @@ trait ValueFunction extends StObject {
 }
 object ValueFunction {
   
-  @scala.inline
-  def apply(valueFunction: String => js.Any): ValueFunction = {
+  inline def apply(valueFunction: String => js.Any): ValueFunction = {
     val __obj = js.Dynamic.literal(valueFunction = js.Any.fromFunction1(valueFunction))
     __obj.asInstanceOf[ValueFunction]
   }
   
-  @scala.inline
-  implicit class ValueFunctionMutableBuilder[Self <: ValueFunction] (val x: Self) extends AnyVal {
+  extension [Self <: ValueFunction](x: Self) {
     
-    @scala.inline
-    def setValueFunction(value: String => js.Any): Self = StObject.set(x, "valueFunction", js.Any.fromFunction1(value))
+    inline def setValueFunction(value: String => js.Any): Self = StObject.set(x, "valueFunction", js.Any.fromFunction1(value))
   }
 }

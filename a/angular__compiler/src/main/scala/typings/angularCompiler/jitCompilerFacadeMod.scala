@@ -66,9 +66,9 @@ object jitCompilerFacadeMod {
     /* CompleteClass */
     override def createParseSourceSpan(kind: String, typeName: String, sourceUrl: String): ParseSourceSpan = js.native
     
-    var elementSchemaRegistry: js.Any = js.native
+    /* private */ var elementSchemaRegistry: js.Any = js.native
     
-    var jitEvaluator: js.Any = js.native
+    /* private */ var jitEvaluator: js.Any = js.native
     
     /**
       * JIT compiles an expression and returns the result of executing that expression.
@@ -79,9 +79,8 @@ object jitCompilerFacadeMod {
       * @param sourceUrl a URL to use for the source map of the compiled expression
       * @param preStatements a collection of statements that should be evaluated before the expression.
       */
-    var jitExpression: js.Any = js.native
+    /* private */ var jitExpression: js.Any = js.native
   }
   
-  @scala.inline
-  def publishFacade(global: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("publishFacade")(global.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def publishFacade(global: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("publishFacade")(global.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

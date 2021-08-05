@@ -15,19 +15,15 @@ trait TypeofTextBox extends StObject {
 }
 object TypeofTextBox {
   
-  @scala.inline
-  def apply(extend: js.Object => TextBox, fn: TextBox): TypeofTextBox = {
+  inline def apply(extend: js.Object => TextBox, fn: TextBox): TypeofTextBox = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTextBox]
   }
   
-  @scala.inline
-  implicit class TypeofTextBoxMutableBuilder[Self <: TypeofTextBox] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTextBox](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => TextBox): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => TextBox): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: TextBox): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: TextBox): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

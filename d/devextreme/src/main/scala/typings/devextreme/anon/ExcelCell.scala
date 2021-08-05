@@ -13,25 +13,19 @@ trait ExcelCell extends StObject {
 }
 object ExcelCell {
   
-  @scala.inline
-  def apply(): ExcelCell = {
+  inline def apply(): ExcelCell = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExcelCell]
   }
   
-  @scala.inline
-  implicit class ExcelCellMutableBuilder[Self <: ExcelCell] (val x: Self) extends AnyVal {
+  extension [Self <: ExcelCell](x: Self) {
     
-    @scala.inline
-    def setExcelCell(value: js.Any): Self = StObject.set(x, "excelCell", value.asInstanceOf[js.Any])
+    inline def setExcelCell(value: js.Any): Self = StObject.set(x, "excelCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelCellUndefined: Self = StObject.set(x, "excelCell", js.undefined)
+    inline def setExcelCellUndefined: Self = StObject.set(x, "excelCell", js.undefined)
     
-    @scala.inline
-    def setGridCell(value: ExcelDataGridCell): Self = StObject.set(x, "gridCell", value.asInstanceOf[js.Any])
+    inline def setGridCell(value: ExcelDataGridCell): Self = StObject.set(x, "gridCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridCellUndefined: Self = StObject.set(x, "gridCell", js.undefined)
+    inline def setGridCellUndefined: Self = StObject.set(x, "gridCell", js.undefined)
   }
 }

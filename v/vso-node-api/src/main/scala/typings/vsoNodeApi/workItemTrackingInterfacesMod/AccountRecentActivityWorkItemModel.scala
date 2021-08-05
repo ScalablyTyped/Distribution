@@ -59,8 +59,7 @@ trait AccountRecentActivityWorkItemModel extends StObject {
 }
 object AccountRecentActivityWorkItemModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activityDate: Date,
     activityType: WorkItemRecentActivityType,
     assignedTo: String,
@@ -76,37 +75,26 @@ object AccountRecentActivityWorkItemModel {
     __obj.asInstanceOf[AccountRecentActivityWorkItemModel]
   }
   
-  @scala.inline
-  implicit class AccountRecentActivityWorkItemModelMutableBuilder[Self <: AccountRecentActivityWorkItemModel] (val x: Self) extends AnyVal {
+  extension [Self <: AccountRecentActivityWorkItemModel](x: Self) {
     
-    @scala.inline
-    def setActivityDate(value: Date): Self = StObject.set(x, "activityDate", value.asInstanceOf[js.Any])
+    inline def setActivityDate(value: Date): Self = StObject.set(x, "activityDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityType(value: WorkItemRecentActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
+    inline def setActivityType(value: WorkItemRecentActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedTo(value: String): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
+    inline def setAssignedTo(value: String): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
+    inline def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityId(value: String): Self = StObject.set(x, "identityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: String): Self = StObject.set(x, "identityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamProject(value: String): Self = StObject.set(x, "teamProject", value.asInstanceOf[js.Any])
+    inline def setTeamProject(value: String): Self = StObject.set(x, "teamProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemType(value: String): Self = StObject.set(x, "workItemType", value.asInstanceOf[js.Any])
+    inline def setWorkItemType(value: String): Self = StObject.set(x, "workItemType", value.asInstanceOf[js.Any])
   }
 }

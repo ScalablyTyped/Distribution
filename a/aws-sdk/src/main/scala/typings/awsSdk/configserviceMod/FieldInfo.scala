@@ -13,19 +13,15 @@ trait FieldInfo extends StObject {
 }
 object FieldInfo {
   
-  @scala.inline
-  def apply(): FieldInfo = {
+  inline def apply(): FieldInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldInfo]
   }
   
-  @scala.inline
-  implicit class FieldInfoMutableBuilder[Self <: FieldInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FieldInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: FieldName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: FieldName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

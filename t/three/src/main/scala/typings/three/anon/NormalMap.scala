@@ -13,19 +13,15 @@ trait NormalMap extends StObject {
 }
 object NormalMap {
   
-  @scala.inline
-  def apply(normalMap: IUniform, normalScale: IUniform): NormalMap = {
+  inline def apply(normalMap: IUniform, normalScale: IUniform): NormalMap = {
     val __obj = js.Dynamic.literal(normalMap = normalMap.asInstanceOf[js.Any], normalScale = normalScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalMap]
   }
   
-  @scala.inline
-  implicit class NormalMapMutableBuilder[Self <: NormalMap] (val x: Self) extends AnyVal {
+  extension [Self <: NormalMap](x: Self) {
     
-    @scala.inline
-    def setNormalMap(value: IUniform): Self = StObject.set(x, "normalMap", value.asInstanceOf[js.Any])
+    inline def setNormalMap(value: IUniform): Self = StObject.set(x, "normalMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalScale(value: IUniform): Self = StObject.set(x, "normalScale", value.asInstanceOf[js.Any])
+    inline def setNormalScale(value: IUniform): Self = StObject.set(x, "normalScale", value.asInstanceOf[js.Any])
   }
 }

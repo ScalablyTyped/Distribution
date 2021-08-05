@@ -42,8 +42,7 @@ trait Axel extends StObject {
 }
 object Axel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bg: (Double, Double, Double) => Unit,
     box: (Double, Double, Double, Double) => Unit,
     brush: String,
@@ -66,58 +65,40 @@ object Axel {
     __obj.asInstanceOf[Axel]
   }
   
-  @scala.inline
-  implicit class AxelMutableBuilder[Self <: Axel] (val x: Self) extends AnyVal {
+  extension [Self <: Axel](x: Self) {
     
-    @scala.inline
-    def setBg(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "bg", js.Any.fromFunction3(value))
+    inline def setBg(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "bg", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBox(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "box", js.Any.fromFunction4(value))
+    inline def setBox(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "box", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setBrush(value: String): Self = StObject.set(x, "brush", value.asInstanceOf[js.Any])
+    inline def setBrush(value: String): Self = StObject.set(x, "brush", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCirc(value: (Double, Double, Double) => Double): Self = StObject.set(x, "circ", js.Any.fromFunction3(value))
+    inline def setCirc(value: (Double, Double, Double) => Double): Self = StObject.set(x, "circ", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursor(value: cursorInterface): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: cursorInterface): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDist(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "dist", js.Any.fromFunction4(value))
+    inline def setDist(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "dist", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDraw(value: js.Function => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction1(value))
+    inline def setDraw(value: js.Function => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFg(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "fg", js.Any.fromFunction3(value))
+    inline def setFg(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "fg", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGoto(value: (Double, Double) => Unit): Self = StObject.set(x, "goto", js.Any.fromFunction2(value))
+    inline def setGoto(value: (Double, Double) => Unit): Self = StObject.set(x, "goto", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLerp(value: (Double, Double, Double) => Double): Self = StObject.set(x, "lerp", js.Any.fromFunction3(value))
+    inline def setLerp(value: (Double, Double, Double) => Double): Self = StObject.set(x, "lerp", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setLine(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "line", js.Any.fromFunction4(value))
+    inline def setLine(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "line", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setPoint(value: (Double, Double, String) => Unit): Self = StObject.set(x, "point", js.Any.fromFunction3(value))
+    inline def setPoint(value: (Double, Double, String) => Unit): Self = StObject.set(x, "point", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrub(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "scrub", js.Any.fromFunction4(value))
+    inline def setScrub(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "scrub", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setText(value: (Double, Double, String) => Unit): Self = StObject.set(x, "text", js.Any.fromFunction3(value))
+    inline def setText(value: (Double, Double, String) => Unit): Self = StObject.set(x, "text", js.Any.fromFunction3(value))
   }
 }

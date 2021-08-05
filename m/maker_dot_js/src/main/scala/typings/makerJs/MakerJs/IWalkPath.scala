@@ -16,8 +16,7 @@ trait IWalkPath
 }
 object IWalkPath {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     layer: String,
     modelContext: IModel,
     offset: IPoint,
@@ -30,10 +29,8 @@ object IWalkPath {
     __obj.asInstanceOf[IWalkPath]
   }
   
-  @scala.inline
-  implicit class IWalkPathMutableBuilder[Self <: IWalkPath] (val x: Self) extends AnyVal {
+  extension [Self <: IWalkPath](x: Self) {
     
-    @scala.inline
-    def setPathContext(value: IPath): Self = StObject.set(x, "pathContext", value.asInstanceOf[js.Any])
+    inline def setPathContext(value: IPath): Self = StObject.set(x, "pathContext", value.asInstanceOf[js.Any])
   }
 }

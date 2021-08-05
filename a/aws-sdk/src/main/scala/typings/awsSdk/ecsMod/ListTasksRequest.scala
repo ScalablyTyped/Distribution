@@ -53,67 +53,47 @@ trait ListTasksRequest extends StObject {
 }
 object ListTasksRequest {
   
-  @scala.inline
-  def apply(): ListTasksRequest = {
+  inline def apply(): ListTasksRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTasksRequest]
   }
   
-  @scala.inline
-  implicit class ListTasksRequestMutableBuilder[Self <: ListTasksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTasksRequest](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setContainerInstance(value: String): Self = StObject.set(x, "containerInstance", value.asInstanceOf[js.Any])
+    inline def setContainerInstance(value: String): Self = StObject.set(x, "containerInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerInstanceUndefined: Self = StObject.set(x, "containerInstance", js.undefined)
+    inline def setContainerInstanceUndefined: Self = StObject.set(x, "containerInstance", js.undefined)
     
-    @scala.inline
-    def setDesiredStatus(value: DesiredStatus): Self = StObject.set(x, "desiredStatus", value.asInstanceOf[js.Any])
+    inline def setDesiredStatus(value: DesiredStatus): Self = StObject.set(x, "desiredStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredStatusUndefined: Self = StObject.set(x, "desiredStatus", js.undefined)
+    inline def setDesiredStatusUndefined: Self = StObject.set(x, "desiredStatus", js.undefined)
     
-    @scala.inline
-    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+    inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
-    @scala.inline
-    def setLaunchType(value: LaunchType): Self = StObject.set(x, "launchType", value.asInstanceOf[js.Any])
+    inline def setLaunchType(value: LaunchType): Self = StObject.set(x, "launchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTypeUndefined: Self = StObject.set(x, "launchType", js.undefined)
+    inline def setLaunchTypeUndefined: Self = StObject.set(x, "launchType", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
-    @scala.inline
-    def setStartedBy(value: String): Self = StObject.set(x, "startedBy", value.asInstanceOf[js.Any])
+    inline def setStartedBy(value: String): Self = StObject.set(x, "startedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedByUndefined: Self = StObject.set(x, "startedBy", js.undefined)
+    inline def setStartedByUndefined: Self = StObject.set(x, "startedBy", js.undefined)
   }
 }

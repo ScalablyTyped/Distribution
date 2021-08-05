@@ -21,19 +21,14 @@ object NodeAttribute {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def FINALIZED: `256` = 256.asInstanceOf[`256`]
+    inline def FINALIZED: `256` = 256.asInstanceOf[`256`]
     
-    @scala.inline
-    def FUSE: `2048` = 2048.asInstanceOf[`2048`]
+    inline def FUSE: `2048` = 2048.asInstanceOf[`2048`]
     
-    @scala.inline
-    def MANDATORY: `512` = 512.asInstanceOf[`512`]
+    inline def MANDATORY: `512` = 512.asInstanceOf[`512`]
     
-    @scala.inline
-    def MASK: `32512` = 32512.asInstanceOf[`32512`]
+    inline def MASK: `32512` = 32512.asInstanceOf[`32512`]
     
-    @scala.inline
-    def READONLY: `1024` = 1024.asInstanceOf[`1024`]
+    inline def READONLY: `1024` = 1024.asInstanceOf[`1024`]
   }
 }

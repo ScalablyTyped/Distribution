@@ -11,8 +11,7 @@ trait GetChannelsOutput
      with typings.awsSdkClientPinpointBrowser.typesGetChannelsOutputMod.GetChannelsOutput
 object GetChannelsOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, ChannelsResponse: UnmarshalledChannelsResponse): GetChannelsOutput = {
+  inline def apply($metadata: ResponseMetadata, ChannelsResponse: UnmarshalledChannelsResponse): GetChannelsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ChannelsResponse = ChannelsResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetChannelsOutput]
   }

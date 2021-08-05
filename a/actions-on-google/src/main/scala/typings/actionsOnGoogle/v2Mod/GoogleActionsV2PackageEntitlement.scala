@@ -18,28 +18,21 @@ trait GoogleActionsV2PackageEntitlement extends StObject {
 }
 object GoogleActionsV2PackageEntitlement {
   
-  @scala.inline
-  def apply(): GoogleActionsV2PackageEntitlement = {
+  inline def apply(): GoogleActionsV2PackageEntitlement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2PackageEntitlement]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2PackageEntitlementMutableBuilder[Self <: GoogleActionsV2PackageEntitlement] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2PackageEntitlement](x: Self) {
     
-    @scala.inline
-    def setEntitlements(value: js.Array[GoogleActionsV2Entitlement]): Self = StObject.set(x, "entitlements", value.asInstanceOf[js.Any])
+    inline def setEntitlements(value: js.Array[GoogleActionsV2Entitlement]): Self = StObject.set(x, "entitlements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitlementsUndefined: Self = StObject.set(x, "entitlements", js.undefined)
+    inline def setEntitlementsUndefined: Self = StObject.set(x, "entitlements", js.undefined)
     
-    @scala.inline
-    def setEntitlementsVarargs(value: GoogleActionsV2Entitlement*): Self = StObject.set(x, "entitlements", js.Array(value :_*))
+    inline def setEntitlementsVarargs(value: GoogleActionsV2Entitlement*): Self = StObject.set(x, "entitlements", js.Array(value :_*))
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
   }
 }

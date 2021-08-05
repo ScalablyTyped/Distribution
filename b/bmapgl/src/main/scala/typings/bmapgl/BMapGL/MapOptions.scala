@@ -20,49 +20,35 @@ trait MapOptions extends StObject {
 }
 object MapOptions {
   
-  @scala.inline
-  def apply(): MapOptions = {
+  inline def apply(): MapOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapOptions]
   }
   
-  @scala.inline
-  implicit class MapOptionsMutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapOptions](x: Self) {
     
-    @scala.inline
-    def setEnableAutoResize(value: Boolean): Self = StObject.set(x, "enableAutoResize", value.asInstanceOf[js.Any])
+    inline def setEnableAutoResize(value: Boolean): Self = StObject.set(x, "enableAutoResize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAutoResizeUndefined: Self = StObject.set(x, "enableAutoResize", js.undefined)
+    inline def setEnableAutoResizeUndefined: Self = StObject.set(x, "enableAutoResize", js.undefined)
     
-    @scala.inline
-    def setEnableHighResolution(value: Boolean): Self = StObject.set(x, "enableHighResolution", value.asInstanceOf[js.Any])
+    inline def setEnableHighResolution(value: Boolean): Self = StObject.set(x, "enableHighResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableHighResolutionUndefined: Self = StObject.set(x, "enableHighResolution", js.undefined)
+    inline def setEnableHighResolutionUndefined: Self = StObject.set(x, "enableHighResolution", js.undefined)
     
-    @scala.inline
-    def setEnableMapClick(value: Boolean): Self = StObject.set(x, "enableMapClick", value.asInstanceOf[js.Any])
+    inline def setEnableMapClick(value: Boolean): Self = StObject.set(x, "enableMapClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableMapClickUndefined: Self = StObject.set(x, "enableMapClick", js.undefined)
+    inline def setEnableMapClickUndefined: Self = StObject.set(x, "enableMapClick", js.undefined)
     
-    @scala.inline
-    def setMapType(value: MapType): Self = StObject.set(x, "mapType", value.asInstanceOf[js.Any])
+    inline def setMapType(value: MapType): Self = StObject.set(x, "mapType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapTypeUndefined: Self = StObject.set(x, "mapType", js.undefined)
+    inline def setMapTypeUndefined: Self = StObject.set(x, "mapType", js.undefined)
     
-    @scala.inline
-    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
-    @scala.inline
-    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
   }
 }

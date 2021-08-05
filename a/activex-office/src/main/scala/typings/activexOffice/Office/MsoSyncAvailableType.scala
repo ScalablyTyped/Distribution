@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoSyncAvailableType extends StObject
 object MsoSyncAvailableType {
   
-  @scala.inline
-  def msoSyncAvailableAnywhere: `2` = 2.asInstanceOf[`2`]
+  inline def msoSyncAvailableAnywhere: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoSyncAvailableNone: `0` = 0.asInstanceOf[`0`]
+  inline def msoSyncAvailableNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoSyncAvailableOffline: `1` = 1.asInstanceOf[`1`]
+  inline def msoSyncAvailableOffline: `1` = 1.asInstanceOf[`1`]
 }

@@ -13,15 +13,15 @@ object methodStubSetterMod {
   class MethodStubSetter[T, ResolveType, RejectType] protected () extends StObject {
     def this(methodToStub: MethodToStub) = this()
     
-    var convertToPropertyIfIsNotAFunction: js.Any = js.native
+    /* private */ var convertToPropertyIfIsNotAFunction: js.Any = js.native
     
-    var groupIndex: js.Any = js.native
+    /* private */ var groupIndex: js.Any = js.native
     
-    var methodToStub: js.Any = js.native
+    /* private */ var methodToStub: js.Any = js.native
     
     def thenCall(func: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
     
-    var thenDoNothing: js.Any = js.native
+    /* private */ var thenDoNothing: js.Any = js.native
     
     def thenReject(rest: Error*): this.type = js.native
     
@@ -41,7 +41,6 @@ object methodStubSetterMod {
     @JSImport("ts-mockito/lib/MethodStubSetter", "MethodStubSetter.globalGroupIndex")
     @js.native
     def globalGroupIndex: js.Any = js.native
-    @scala.inline
-    def globalGroupIndex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalGroupIndex")(x.asInstanceOf[js.Any])
+    inline def globalGroupIndex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalGroupIndex")(x.asInstanceOf[js.Any])
   }
 }

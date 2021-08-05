@@ -18,8 +18,7 @@ trait ParametersBillingGetSharedStorageBillingUserEndpoint extends StObject {
 }
 object ParametersBillingGetSharedStorageBillingUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: BillingGetSharedStorageBillingUserEndpoint,
     request: BillingGetSharedStorageBillingUserRequestOptions,
     response: OctokitResponse[BillingGetSharedStorageBillingUserResponseData]
@@ -28,16 +27,12 @@ object ParametersBillingGetSharedStorageBillingUserEndpoint {
     __obj.asInstanceOf[ParametersBillingGetSharedStorageBillingUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersBillingGetSharedStorageBillingUserEndpointMutableBuilder[Self <: ParametersBillingGetSharedStorageBillingUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersBillingGetSharedStorageBillingUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: BillingGetSharedStorageBillingUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: BillingGetSharedStorageBillingUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: BillingGetSharedStorageBillingUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: BillingGetSharedStorageBillingUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[BillingGetSharedStorageBillingUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[BillingGetSharedStorageBillingUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

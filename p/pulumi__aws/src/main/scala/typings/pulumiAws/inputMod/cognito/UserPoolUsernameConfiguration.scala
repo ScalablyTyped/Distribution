@@ -14,16 +14,13 @@ trait UserPoolUsernameConfiguration extends StObject {
 }
 object UserPoolUsernameConfiguration {
   
-  @scala.inline
-  def apply(caseSensitive: Input[Boolean]): UserPoolUsernameConfiguration = {
+  inline def apply(caseSensitive: Input[Boolean]): UserPoolUsernameConfiguration = {
     val __obj = js.Dynamic.literal(caseSensitive = caseSensitive.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolUsernameConfiguration]
   }
   
-  @scala.inline
-  implicit class UserPoolUsernameConfigurationMutableBuilder[Self <: UserPoolUsernameConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: UserPoolUsernameConfiguration](x: Self) {
     
-    @scala.inline
-    def setCaseSensitive(value: Input[Boolean]): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+    inline def setCaseSensitive(value: Input[Boolean]): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
   }
 }

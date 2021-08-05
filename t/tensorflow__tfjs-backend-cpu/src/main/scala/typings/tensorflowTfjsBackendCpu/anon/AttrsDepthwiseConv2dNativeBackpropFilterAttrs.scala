@@ -17,8 +17,7 @@ trait AttrsDepthwiseConv2dNativeBackpropFilterAttrs extends StObject {
 }
 object AttrsDepthwiseConv2dNativeBackpropFilterAttrs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attrs: DepthwiseConv2dNativeBackpropFilterAttrs,
     backend: MathBackendCPU,
     inputs: DepthwiseConv2dNativeBackpropFilterInputs
@@ -27,16 +26,12 @@ object AttrsDepthwiseConv2dNativeBackpropFilterAttrs {
     __obj.asInstanceOf[AttrsDepthwiseConv2dNativeBackpropFilterAttrs]
   }
   
-  @scala.inline
-  implicit class AttrsDepthwiseConv2dNativeBackpropFilterAttrsMutableBuilder[Self <: AttrsDepthwiseConv2dNativeBackpropFilterAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: AttrsDepthwiseConv2dNativeBackpropFilterAttrs](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: DepthwiseConv2dNativeBackpropFilterAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: DepthwiseConv2dNativeBackpropFilterAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: DepthwiseConv2dNativeBackpropFilterInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: DepthwiseConv2dNativeBackpropFilterInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

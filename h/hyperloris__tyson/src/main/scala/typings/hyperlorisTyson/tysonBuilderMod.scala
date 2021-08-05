@@ -14,9 +14,9 @@ object tysonBuilderMod {
   @js.native
   class TysonBuilder () extends StObject {
     
-    var _factories: js.Any = js.native
+    /* private */ var _factories: js.Any = js.native
     
-    var _serializeNulls: js.Any = js.native
+    /* private */ var _serializeNulls: js.Any = js.native
     
     /**
       * Returns a new instance of Tyson configured with the options currently set in this builder.

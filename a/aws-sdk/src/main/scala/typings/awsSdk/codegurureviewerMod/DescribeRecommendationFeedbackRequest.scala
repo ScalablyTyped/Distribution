@@ -23,25 +23,19 @@ trait DescribeRecommendationFeedbackRequest extends StObject {
 }
 object DescribeRecommendationFeedbackRequest {
   
-  @scala.inline
-  def apply(CodeReviewArn: Arn, RecommendationId: RecommendationId): DescribeRecommendationFeedbackRequest = {
+  inline def apply(CodeReviewArn: Arn, RecommendationId: RecommendationId): DescribeRecommendationFeedbackRequest = {
     val __obj = js.Dynamic.literal(CodeReviewArn = CodeReviewArn.asInstanceOf[js.Any], RecommendationId = RecommendationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRecommendationFeedbackRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRecommendationFeedbackRequestMutableBuilder[Self <: DescribeRecommendationFeedbackRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRecommendationFeedbackRequest](x: Self) {
     
-    @scala.inline
-    def setCodeReviewArn(value: Arn): Self = StObject.set(x, "CodeReviewArn", value.asInstanceOf[js.Any])
+    inline def setCodeReviewArn(value: Arn): Self = StObject.set(x, "CodeReviewArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationId(value: RecommendationId): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
+    inline def setRecommendationId(value: RecommendationId): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
   }
 }

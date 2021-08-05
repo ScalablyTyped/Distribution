@@ -29,31 +29,23 @@ trait SchemaAddMatterPermissionsRequest extends StObject {
 }
 object SchemaAddMatterPermissionsRequest {
   
-  @scala.inline
-  def apply(): SchemaAddMatterPermissionsRequest = {
+  inline def apply(): SchemaAddMatterPermissionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAddMatterPermissionsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAddMatterPermissionsRequestMutableBuilder[Self <: SchemaAddMatterPermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAddMatterPermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setCcMe(value: Boolean): Self = StObject.set(x, "ccMe", value.asInstanceOf[js.Any])
+    inline def setCcMe(value: Boolean): Self = StObject.set(x, "ccMe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCcMeUndefined: Self = StObject.set(x, "ccMe", js.undefined)
+    inline def setCcMeUndefined: Self = StObject.set(x, "ccMe", js.undefined)
     
-    @scala.inline
-    def setMatterPermission(value: SchemaMatterPermission): Self = StObject.set(x, "matterPermission", value.asInstanceOf[js.Any])
+    inline def setMatterPermission(value: SchemaMatterPermission): Self = StObject.set(x, "matterPermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatterPermissionUndefined: Self = StObject.set(x, "matterPermission", js.undefined)
+    inline def setMatterPermissionUndefined: Self = StObject.set(x, "matterPermission", js.undefined)
     
-    @scala.inline
-    def setSendEmails(value: Boolean): Self = StObject.set(x, "sendEmails", value.asInstanceOf[js.Any])
+    inline def setSendEmails(value: Boolean): Self = StObject.set(x, "sendEmails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendEmailsUndefined: Self = StObject.set(x, "sendEmails", js.undefined)
+    inline def setSendEmailsUndefined: Self = StObject.set(x, "sendEmails", js.undefined)
   }
 }

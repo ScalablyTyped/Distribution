@@ -18,25 +18,19 @@ trait BucketPublicAccess extends StObject {
 }
 object BucketPublicAccess {
   
-  @scala.inline
-  def apply(): BucketPublicAccess = {
+  inline def apply(): BucketPublicAccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketPublicAccess]
   }
   
-  @scala.inline
-  implicit class BucketPublicAccessMutableBuilder[Self <: BucketPublicAccess] (val x: Self) extends AnyVal {
+  extension [Self <: BucketPublicAccess](x: Self) {
     
-    @scala.inline
-    def setEffectivePermission(value: EffectivePermission): Self = StObject.set(x, "effectivePermission", value.asInstanceOf[js.Any])
+    inline def setEffectivePermission(value: EffectivePermission): Self = StObject.set(x, "effectivePermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectivePermissionUndefined: Self = StObject.set(x, "effectivePermission", js.undefined)
+    inline def setEffectivePermissionUndefined: Self = StObject.set(x, "effectivePermission", js.undefined)
     
-    @scala.inline
-    def setPermissionConfiguration(value: BucketPermissionConfiguration): Self = StObject.set(x, "permissionConfiguration", value.asInstanceOf[js.Any])
+    inline def setPermissionConfiguration(value: BucketPermissionConfiguration): Self = StObject.set(x, "permissionConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionConfigurationUndefined: Self = StObject.set(x, "permissionConfiguration", js.undefined)
+    inline def setPermissionConfigurationUndefined: Self = StObject.set(x, "permissionConfiguration", js.undefined)
   }
 }

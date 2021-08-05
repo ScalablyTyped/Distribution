@@ -21,8 +21,7 @@ trait After extends StObject {
 }
 object After {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     after: js.Array[String],
     init: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit,
     update: /* repeated */ js.Any => Unit
@@ -31,19 +30,14 @@ object After {
     __obj.asInstanceOf[After]
   }
   
-  @scala.inline
-  implicit class AfterMutableBuilder[Self <: After] (val x: Self) extends AnyVal {
+  extension [Self <: After](x: Self) {
     
-    @scala.inline
-    def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
+    inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
     
-    @scala.inline
-    def setInit(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
+    inline def setInit(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUpdate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

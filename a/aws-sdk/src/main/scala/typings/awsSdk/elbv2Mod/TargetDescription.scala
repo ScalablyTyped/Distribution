@@ -23,28 +23,21 @@ trait TargetDescription extends StObject {
 }
 object TargetDescription {
   
-  @scala.inline
-  def apply(Id: TargetId): TargetDescription = {
+  inline def apply(Id: TargetId): TargetDescription = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetDescription]
   }
   
-  @scala.inline
-  implicit class TargetDescriptionMutableBuilder[Self <: TargetDescription] (val x: Self) extends AnyVal {
+  extension [Self <: TargetDescription](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: ZoneName): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: ZoneName): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setId(value: TargetId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: TargetId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
   }
 }

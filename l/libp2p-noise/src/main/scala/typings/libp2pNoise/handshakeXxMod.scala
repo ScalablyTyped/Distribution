@@ -56,7 +56,7 @@ object handshakeXxMod {
       handshake: XX
     ) = this()
     
-    var connection: WrappedConnection = js.native
+    /* protected */ var connection: WrappedConnection = js.native
     
     /* CompleteClass */
     override def decrypt(ciphertext: bytes, session: NoiseSession): Plaintext = js.native
@@ -68,15 +68,15 @@ object handshakeXxMod {
     
     def finish(): js.Promise[Unit] = js.native
     
-    var getCS: js.Any = js.native
+    /* private */ var getCS: js.Any = js.native
     
     def getRemoteStaticKey(): bytes = js.native
     
     var isInitiator: Boolean = js.native
     
-    var payload: bytes = js.native
+    /* protected */ var payload: bytes = js.native
     
-    var prologue: js.Any = js.native
+    /* private */ var prologue: js.Any = js.native
     
     def propose(): js.Promise[Unit] = js.native
     
@@ -92,8 +92,8 @@ object handshakeXxMod {
     /* protected */ def setRemoteEarlyData(): Unit = js.native
     /* protected */ def setRemoteEarlyData(data: Uint8Array): Unit = js.native
     
-    var staticKeypair: KeyPair = js.native
+    /* protected */ var staticKeypair: KeyPair = js.native
     
-    var xx: XX = js.native
+    /* protected */ var xx: XX = js.native
   }
 }

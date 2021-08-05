@@ -17,25 +17,19 @@ trait MaintenancePolicy extends StObject {
 }
 object MaintenancePolicy {
   
-  @scala.inline
-  def apply(): MaintenancePolicy = {
+  inline def apply(): MaintenancePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaintenancePolicy]
   }
   
-  @scala.inline
-  implicit class MaintenancePolicyMutableBuilder[Self <: MaintenancePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: MaintenancePolicy](x: Self) {
     
-    @scala.inline
-    def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
+    inline def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceVersionUndefined: Self = StObject.set(x, "resourceVersion", js.undefined)
+    inline def setResourceVersionUndefined: Self = StObject.set(x, "resourceVersion", js.undefined)
     
-    @scala.inline
-    def setWindow(value: MaintenanceWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: MaintenanceWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+    inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

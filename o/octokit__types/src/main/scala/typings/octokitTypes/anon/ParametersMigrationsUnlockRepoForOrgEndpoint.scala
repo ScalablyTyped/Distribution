@@ -17,8 +17,7 @@ trait ParametersMigrationsUnlockRepoForOrgEndpoint extends StObject {
 }
 object ParametersMigrationsUnlockRepoForOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: MigrationsUnlockRepoForOrgEndpoint,
     request: MigrationsUnlockRepoForOrgRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersMigrationsUnlockRepoForOrgEndpoint {
     __obj.asInstanceOf[ParametersMigrationsUnlockRepoForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersMigrationsUnlockRepoForOrgEndpointMutableBuilder[Self <: ParametersMigrationsUnlockRepoForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersMigrationsUnlockRepoForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: MigrationsUnlockRepoForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MigrationsUnlockRepoForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: MigrationsUnlockRepoForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: MigrationsUnlockRepoForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait UpdateDistributionResult extends StObject {
 }
 object UpdateDistributionResult {
   
-  @scala.inline
-  def apply(): UpdateDistributionResult = {
+  inline def apply(): UpdateDistributionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDistributionResult]
   }
   
-  @scala.inline
-  implicit class UpdateDistributionResultMutableBuilder[Self <: UpdateDistributionResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDistributionResult](x: Self) {
     
-    @scala.inline
-    def setDistribution(value: Distribution): Self = StObject.set(x, "Distribution", value.asInstanceOf[js.Any])
+    inline def setDistribution(value: Distribution): Self = StObject.set(x, "Distribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionUndefined: Self = StObject.set(x, "Distribution", js.undefined)
+    inline def setDistributionUndefined: Self = StObject.set(x, "Distribution", js.undefined)
     
-    @scala.inline
-    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
   }
 }

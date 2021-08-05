@@ -28,28 +28,21 @@ trait CopyImageRequest extends StObject {
 }
 object CopyImageRequest {
   
-  @scala.inline
-  def apply(DestinationImageName: Name, DestinationRegion: RegionName, SourceImageName: Name): CopyImageRequest = {
+  inline def apply(DestinationImageName: Name, DestinationRegion: RegionName, SourceImageName: Name): CopyImageRequest = {
     val __obj = js.Dynamic.literal(DestinationImageName = DestinationImageName.asInstanceOf[js.Any], DestinationRegion = DestinationRegion.asInstanceOf[js.Any], SourceImageName = SourceImageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyImageRequest]
   }
   
-  @scala.inline
-  implicit class CopyImageRequestMutableBuilder[Self <: CopyImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CopyImageRequest](x: Self) {
     
-    @scala.inline
-    def setDestinationImageDescription(value: Description): Self = StObject.set(x, "DestinationImageDescription", value.asInstanceOf[js.Any])
+    inline def setDestinationImageDescription(value: Description): Self = StObject.set(x, "DestinationImageDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationImageDescriptionUndefined: Self = StObject.set(x, "DestinationImageDescription", js.undefined)
+    inline def setDestinationImageDescriptionUndefined: Self = StObject.set(x, "DestinationImageDescription", js.undefined)
     
-    @scala.inline
-    def setDestinationImageName(value: Name): Self = StObject.set(x, "DestinationImageName", value.asInstanceOf[js.Any])
+    inline def setDestinationImageName(value: Name): Self = StObject.set(x, "DestinationImageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationRegion(value: RegionName): Self = StObject.set(x, "DestinationRegion", value.asInstanceOf[js.Any])
+    inline def setDestinationRegion(value: RegionName): Self = StObject.set(x, "DestinationRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceImageName(value: Name): Self = StObject.set(x, "SourceImageName", value.asInstanceOf[js.Any])
+    inline def setSourceImageName(value: Name): Self = StObject.set(x, "SourceImageName", value.asInstanceOf[js.Any])
   }
 }

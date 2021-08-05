@@ -19,38 +19,28 @@ object anon {
   }
   object PartialICellConfig {
     
-    @scala.inline
-    def apply(): PartialICellConfig = {
+    inline def apply(): PartialICellConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialICellConfig]
     }
     
-    @scala.inline
-    implicit class PartialICellConfigMutableBuilder[Self <: PartialICellConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PartialICellConfig](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
+      inline def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
+      inline def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+      inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+      inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
       
-      @scala.inline
-      def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+      inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     }
   }
 }

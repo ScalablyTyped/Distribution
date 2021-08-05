@@ -18,19 +18,15 @@ trait DeleteAggregationAuthorizationRequest extends StObject {
 }
 object DeleteAggregationAuthorizationRequest {
   
-  @scala.inline
-  def apply(AuthorizedAccountId: AccountId, AuthorizedAwsRegion: AwsRegion): DeleteAggregationAuthorizationRequest = {
+  inline def apply(AuthorizedAccountId: AccountId, AuthorizedAwsRegion: AwsRegion): DeleteAggregationAuthorizationRequest = {
     val __obj = js.Dynamic.literal(AuthorizedAccountId = AuthorizedAccountId.asInstanceOf[js.Any], AuthorizedAwsRegion = AuthorizedAwsRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAggregationAuthorizationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAggregationAuthorizationRequestMutableBuilder[Self <: DeleteAggregationAuthorizationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAggregationAuthorizationRequest](x: Self) {
     
-    @scala.inline
-    def setAuthorizedAccountId(value: AccountId): Self = StObject.set(x, "AuthorizedAccountId", value.asInstanceOf[js.Any])
+    inline def setAuthorizedAccountId(value: AccountId): Self = StObject.set(x, "AuthorizedAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizedAwsRegion(value: AwsRegion): Self = StObject.set(x, "AuthorizedAwsRegion", value.asInstanceOf[js.Any])
+    inline def setAuthorizedAwsRegion(value: AwsRegion): Self = StObject.set(x, "AuthorizedAwsRegion", value.asInstanceOf[js.Any])
   }
 }

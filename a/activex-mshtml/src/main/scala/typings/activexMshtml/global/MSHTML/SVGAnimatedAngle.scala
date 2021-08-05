@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGAnimatedAngle")
 @js.native
-class SVGAnimatedAngle protected ()
+/* private */ class SVGAnimatedAngle ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGAnimatedAngle {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGAnimatedAngle_typekey")
   var MSHTMLDotSVGAnimatedAngle_typekey: typings.activexMshtml.MSHTML.SVGAnimatedAngle = js.native
   

@@ -18,7 +18,7 @@ object slidesMod {
     @JSName("connectedCallback")
     def connectedCallback_MSlides(): Unit = js.native
     
-    var didInit: js.Any = js.native
+    /* private */ var didInit: js.Any = js.native
     
     @JSName("disconnectedCallback")
     def disconnectedCallback_MSlides(): Unit = js.native
@@ -42,7 +42,7 @@ object slidesMod {
       */
     def getSwiper(): js.Promise[js.Any] = js.native
     
-    var initSwiper: js.Any = js.native
+    /* private */ var initSwiper: js.Any = js.native
     
     /**
       * Emitted after the active slide has changed.
@@ -160,9 +160,9 @@ object slidesMod {
       */
     def lockSwipes(lock: Boolean): js.Promise[Unit] = js.native
     
-    var mutationO: js.Any = js.native
+    /* private */ var mutationO: js.Any = js.native
     
-    var normalizeOptions: js.Any = js.native
+    /* private */ var normalizeOptions: js.Any = js.native
     
     /**
       * Options to pass to the swiper instance.
@@ -177,9 +177,9 @@ object slidesMod {
       */
     var pager: Boolean = js.native
     
-    var paginationEl: js.Any = js.native
+    /* private */ var paginationEl: js.Any = js.native
     
-    var readySwiper: js.Any = js.native
+    /* private */ var readySwiper: js.Any = js.native
     
     @JSName("render")
     def render_MSlides(): js.Any = js.native
@@ -189,7 +189,7 @@ object slidesMod {
       */
     var scrollbar: Boolean = js.native
     
-    var scrollbarEl: js.Any = js.native
+    /* private */ var scrollbarEl: js.Any = js.native
     
     /**
       * Transition to the next slide.
@@ -235,11 +235,11 @@ object slidesMod {
       */
     def stopAutoplay(): js.Promise[Unit] = js.native
     
-    var swiper: js.Any = js.native
+    /* private */ var swiper: js.Any = js.native
     
-    var swiperReady: js.Any = js.native
+    /* private */ var swiperReady: js.Any = js.native
     
-    var syncSwiper: js.Any = js.native
+    /* private */ var syncSwiper: js.Any = js.native
     
     /**
       * Update the underlying slider implementation. Call this if you've added or removed

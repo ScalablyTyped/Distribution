@@ -10,16 +10,13 @@ trait ResolveOptions extends StObject {
 }
 object ResolveOptions {
   
-  @scala.inline
-  def apply(ttl: Boolean): ResolveOptions = {
+  inline def apply(ttl: Boolean): ResolveOptions = {
     val __obj = js.Dynamic.literal(ttl = ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveOptions]
   }
   
-  @scala.inline
-  implicit class ResolveOptionsMutableBuilder[Self <: ResolveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveOptions](x: Self) {
     
-    @scala.inline
-    def setTtl(value: Boolean): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: Boolean): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
   }
 }

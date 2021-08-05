@@ -13,19 +13,15 @@ trait FindingStatistics extends StObject {
 }
 object FindingStatistics {
   
-  @scala.inline
-  def apply(): FindingStatistics = {
+  inline def apply(): FindingStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindingStatistics]
   }
   
-  @scala.inline
-  implicit class FindingStatisticsMutableBuilder[Self <: FindingStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: FindingStatistics](x: Self) {
     
-    @scala.inline
-    def setCountBySeverity(value: CountBySeverity): Self = StObject.set(x, "CountBySeverity", value.asInstanceOf[js.Any])
+    inline def setCountBySeverity(value: CountBySeverity): Self = StObject.set(x, "CountBySeverity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountBySeverityUndefined: Self = StObject.set(x, "CountBySeverity", js.undefined)
+    inline def setCountBySeverityUndefined: Self = StObject.set(x, "CountBySeverity", js.undefined)
   }
 }

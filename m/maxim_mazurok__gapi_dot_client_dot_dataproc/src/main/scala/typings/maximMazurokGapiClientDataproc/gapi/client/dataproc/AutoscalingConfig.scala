@@ -15,19 +15,15 @@ trait AutoscalingConfig extends StObject {
 }
 object AutoscalingConfig {
   
-  @scala.inline
-  def apply(): AutoscalingConfig = {
+  inline def apply(): AutoscalingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoscalingConfig]
   }
   
-  @scala.inline
-  implicit class AutoscalingConfigMutableBuilder[Self <: AutoscalingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AutoscalingConfig](x: Self) {
     
-    @scala.inline
-    def setPolicyUri(value: String): Self = StObject.set(x, "policyUri", value.asInstanceOf[js.Any])
+    inline def setPolicyUri(value: String): Self = StObject.set(x, "policyUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUriUndefined: Self = StObject.set(x, "policyUri", js.undefined)
+    inline def setPolicyUriUndefined: Self = StObject.set(x, "policyUri", js.undefined)
   }
 }

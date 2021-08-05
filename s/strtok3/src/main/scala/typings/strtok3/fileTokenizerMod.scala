@@ -17,9 +17,8 @@ object fileTokenizerMod {
   class FileTokenizer protected () extends AbstractTokenizer {
     def this(fd: Double, fileInfo: IFileInfo) = this()
     
-    var fd: js.Any = js.native
+    /* private */ var fd: js.Any = js.native
   }
   
-  @scala.inline
-  def fromFile(sourceFilePath: String): js.Promise[FileTokenizer] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(sourceFilePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileTokenizer]]
+  inline def fromFile(sourceFilePath: String): js.Promise[FileTokenizer] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(sourceFilePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileTokenizer]]
 }

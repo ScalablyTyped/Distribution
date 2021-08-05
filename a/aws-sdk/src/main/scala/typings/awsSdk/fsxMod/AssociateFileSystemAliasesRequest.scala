@@ -20,28 +20,21 @@ trait AssociateFileSystemAliasesRequest extends StObject {
 }
 object AssociateFileSystemAliasesRequest {
   
-  @scala.inline
-  def apply(Aliases: AlternateDNSNames, FileSystemId: FileSystemId): AssociateFileSystemAliasesRequest = {
+  inline def apply(Aliases: AlternateDNSNames, FileSystemId: FileSystemId): AssociateFileSystemAliasesRequest = {
     val __obj = js.Dynamic.literal(Aliases = Aliases.asInstanceOf[js.Any], FileSystemId = FileSystemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateFileSystemAliasesRequest]
   }
   
-  @scala.inline
-  implicit class AssociateFileSystemAliasesRequestMutableBuilder[Self <: AssociateFileSystemAliasesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateFileSystemAliasesRequest](x: Self) {
     
-    @scala.inline
-    def setAliases(value: AlternateDNSNames): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: AlternateDNSNames): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesVarargs(value: AlternateDNSName*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: AlternateDNSName*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
   }
 }

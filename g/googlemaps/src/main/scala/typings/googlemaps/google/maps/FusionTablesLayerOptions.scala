@@ -22,52 +22,37 @@ trait FusionTablesLayerOptions extends StObject {
 }
 object FusionTablesLayerOptions {
   
-  @scala.inline
-  def apply(): FusionTablesLayerOptions = {
+  inline def apply(): FusionTablesLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FusionTablesLayerOptions]
   }
   
-  @scala.inline
-  implicit class FusionTablesLayerOptionsMutableBuilder[Self <: FusionTablesLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FusionTablesLayerOptions](x: Self) {
     
-    @scala.inline
-    def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
+    inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
+    inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
     
-    @scala.inline
-    def setHeatmap(value: FusionTablesHeatmap): Self = StObject.set(x, "heatmap", value.asInstanceOf[js.Any])
+    inline def setHeatmap(value: FusionTablesHeatmap): Self = StObject.set(x, "heatmap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeatmapUndefined: Self = StObject.set(x, "heatmap", js.undefined)
+    inline def setHeatmapUndefined: Self = StObject.set(x, "heatmap", js.undefined)
     
-    @scala.inline
-    def setMap(value: Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setQuery(value: FusionTablesQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: FusionTablesQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setStyles(value: js.Array[FusionTablesStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[FusionTablesStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setStylesVarargs(value: FusionTablesStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: FusionTablesStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
-    @scala.inline
-    def setSuppressInfoWindows(value: Boolean): Self = StObject.set(x, "suppressInfoWindows", value.asInstanceOf[js.Any])
+    inline def setSuppressInfoWindows(value: Boolean): Self = StObject.set(x, "suppressInfoWindows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressInfoWindowsUndefined: Self = StObject.set(x, "suppressInfoWindows", js.undefined)
+    inline def setSuppressInfoWindowsUndefined: Self = StObject.set(x, "suppressInfoWindows", js.undefined)
   }
 }

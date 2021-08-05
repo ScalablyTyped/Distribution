@@ -11,16 +11,13 @@ trait InitOptions extends StObject {
 }
 object InitOptions {
   
-  @scala.inline
-  def apply(env: String | Database): InitOptions = {
+  inline def apply(env: String | Database): InitOptions = {
     val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }
   
-  @scala.inline
-  implicit class InitOptionsMutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InitOptions](x: Self) {
     
-    @scala.inline
-    def setEnv(value: String | Database): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: String | Database): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
   }
 }

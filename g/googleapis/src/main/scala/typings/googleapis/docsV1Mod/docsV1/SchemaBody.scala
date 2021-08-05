@@ -18,22 +18,17 @@ trait SchemaBody extends StObject {
 }
 object SchemaBody {
   
-  @scala.inline
-  def apply(): SchemaBody = {
+  inline def apply(): SchemaBody = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBody]
   }
   
-  @scala.inline
-  implicit class SchemaBodyMutableBuilder[Self <: SchemaBody] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBody](x: Self) {
     
-    @scala.inline
-    def setContent(value: js.Array[SchemaStructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Array[SchemaStructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setContentVarargs(value: SchemaStructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: SchemaStructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
   }
 }

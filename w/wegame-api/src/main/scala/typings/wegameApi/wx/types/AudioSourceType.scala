@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AudioSourceType extends StObject
 object AudioSourceType {
   
-  @scala.inline
-  def auto: typings.wegameApi.wegameApiStrings.auto = "auto".asInstanceOf[typings.wegameApi.wegameApiStrings.auto]
+  inline def auto: typings.wegameApi.wegameApiStrings.auto = "auto".asInstanceOf[typings.wegameApi.wegameApiStrings.auto]
   
-  @scala.inline
-  def buildInMic: typings.wegameApi.wegameApiStrings.buildInMic = "buildInMic".asInstanceOf[typings.wegameApi.wegameApiStrings.buildInMic]
+  inline def buildInMic: typings.wegameApi.wegameApiStrings.buildInMic = "buildInMic".asInstanceOf[typings.wegameApi.wegameApiStrings.buildInMic]
   
-  @scala.inline
-  def camcorder: typings.wegameApi.wegameApiStrings.camcorder = "camcorder".asInstanceOf[typings.wegameApi.wegameApiStrings.camcorder]
+  inline def camcorder: typings.wegameApi.wegameApiStrings.camcorder = "camcorder".asInstanceOf[typings.wegameApi.wegameApiStrings.camcorder]
   
-  @scala.inline
-  def headsetMic: typings.wegameApi.wegameApiStrings.headsetMic = "headsetMic".asInstanceOf[typings.wegameApi.wegameApiStrings.headsetMic]
+  inline def headsetMic: typings.wegameApi.wegameApiStrings.headsetMic = "headsetMic".asInstanceOf[typings.wegameApi.wegameApiStrings.headsetMic]
   
-  @scala.inline
-  def mic: typings.wegameApi.wegameApiStrings.mic = "mic".asInstanceOf[typings.wegameApi.wegameApiStrings.mic]
+  inline def mic: typings.wegameApi.wegameApiStrings.mic = "mic".asInstanceOf[typings.wegameApi.wegameApiStrings.mic]
 }

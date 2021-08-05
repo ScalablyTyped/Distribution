@@ -23,8 +23,7 @@ trait PutClusterCapacityProvidersRequest extends StObject {
 }
 object PutClusterCapacityProvidersRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     capacityProviders: StringList,
     cluster: String,
     defaultCapacityProviderStrategy: CapacityProviderStrategy
@@ -33,22 +32,16 @@ object PutClusterCapacityProvidersRequest {
     __obj.asInstanceOf[PutClusterCapacityProvidersRequest]
   }
   
-  @scala.inline
-  implicit class PutClusterCapacityProvidersRequestMutableBuilder[Self <: PutClusterCapacityProvidersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutClusterCapacityProvidersRequest](x: Self) {
     
-    @scala.inline
-    def setCapacityProviders(value: StringList): Self = StObject.set(x, "capacityProviders", value.asInstanceOf[js.Any])
+    inline def setCapacityProviders(value: StringList): Self = StObject.set(x, "capacityProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityProvidersVarargs(value: String*): Self = StObject.set(x, "capacityProviders", js.Array(value :_*))
+    inline def setCapacityProvidersVarargs(value: String*): Self = StObject.set(x, "capacityProviders", js.Array(value :_*))
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCapacityProviderStrategy(value: CapacityProviderStrategy): Self = StObject.set(x, "defaultCapacityProviderStrategy", value.asInstanceOf[js.Any])
+    inline def setDefaultCapacityProviderStrategy(value: CapacityProviderStrategy): Self = StObject.set(x, "defaultCapacityProviderStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCapacityProviderStrategyVarargs(value: CapacityProviderStrategyItem*): Self = StObject.set(x, "defaultCapacityProviderStrategy", js.Array(value :_*))
+    inline def setDefaultCapacityProviderStrategyVarargs(value: CapacityProviderStrategyItem*): Self = StObject.set(x, "defaultCapacityProviderStrategy", js.Array(value :_*))
   }
 }

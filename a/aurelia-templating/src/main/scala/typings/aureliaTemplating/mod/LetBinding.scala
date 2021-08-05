@@ -30,8 +30,7 @@ trait LetBinding extends StObject {
 }
 object LetBinding {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bind: Scope => Unit,
     sourceExpression: Expression,
     unbind: () => Unit,
@@ -41,19 +40,14 @@ object LetBinding {
     __obj.asInstanceOf[LetBinding]
   }
   
-  @scala.inline
-  implicit class LetBindingMutableBuilder[Self <: LetBinding] (val x: Self) extends AnyVal {
+  extension [Self <: LetBinding](x: Self) {
     
-    @scala.inline
-    def setBind(value: Scope => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
+    inline def setBind(value: Scope => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSourceExpression(value: Expression): Self = StObject.set(x, "sourceExpression", value.asInstanceOf[js.Any])
+    inline def setSourceExpression(value: Expression): Self = StObject.set(x, "sourceExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnbind(value: () => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
+    inline def setUnbind(value: () => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateTarget(value: js.Any => Unit): Self = StObject.set(x, "updateTarget", js.Any.fromFunction1(value))
+    inline def setUpdateTarget(value: js.Any => Unit): Self = StObject.set(x, "updateTarget", js.Any.fromFunction1(value))
   }
 }

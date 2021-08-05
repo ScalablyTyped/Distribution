@@ -30,8 +30,7 @@ trait KmlPolyStyle
 }
 object KmlPolyStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -59,19 +58,14 @@ object KmlPolyStyle {
     __obj.asInstanceOf[KmlPolyStyle]
   }
   
-  @scala.inline
-  implicit class KmlPolyStyleMutableBuilder[Self <: KmlPolyStyle] (val x: Self) extends AnyVal {
+  extension [Self <: KmlPolyStyle](x: Self) {
     
-    @scala.inline
-    def setGetFill(value: () => Boolean): Self = StObject.set(x, "getFill", js.Any.fromFunction0(value))
+    inline def setGetFill(value: () => Boolean): Self = StObject.set(x, "getFill", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOutline(value: () => Boolean): Self = StObject.set(x, "getOutline", js.Any.fromFunction0(value))
+    inline def setGetOutline(value: () => Boolean): Self = StObject.set(x, "getOutline", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFill(value: Boolean => Unit): Self = StObject.set(x, "setFill", js.Any.fromFunction1(value))
+    inline def setSetFill(value: Boolean => Unit): Self = StObject.set(x, "setFill", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOutline(value: Boolean => Unit): Self = StObject.set(x, "setOutline", js.Any.fromFunction1(value))
+    inline def setSetOutline(value: Boolean => Unit): Self = StObject.set(x, "setOutline", js.Any.fromFunction1(value))
   }
 }

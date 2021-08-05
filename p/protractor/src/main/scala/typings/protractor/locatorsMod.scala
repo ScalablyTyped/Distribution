@@ -333,8 +333,7 @@ object locatorsMod {
     def xpath(xpath: String): By = js.native
   }
   
-  @scala.inline
-  def isProtractorLocator(x: Locator): /* is protractor.protractor/built/locators.ProtractorLocator */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProtractorLocator")(x.asInstanceOf[js.Any]).asInstanceOf[/* is protractor.protractor/built/locators.ProtractorLocator */ Boolean]
+  inline def isProtractorLocator(x: Locator): /* is protractor.protractor/built/locators.ProtractorLocator */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProtractorLocator")(x.asInstanceOf[js.Any]).asInstanceOf[/* is protractor.protractor/built/locators.ProtractorLocator */ Boolean]
   
   type Locator = ProtractorLocator | WebDriverLocator
   
@@ -351,35 +350,26 @@ object locatorsMod {
   }
   object ProtractorLocator {
     
-    @scala.inline
-    def apply(findElementsOverride: (WebDriver, WebElement, String) => js.Promise[js.Array[WebElement]]): ProtractorLocator = {
+    inline def apply(findElementsOverride: (WebDriver, WebElement, String) => js.Promise[js.Array[WebElement]]): ProtractorLocator = {
       val __obj = js.Dynamic.literal(findElementsOverride = js.Any.fromFunction3(findElementsOverride))
       __obj.asInstanceOf[ProtractorLocator]
     }
     
-    @scala.inline
-    implicit class ProtractorLocatorMutableBuilder[Self <: ProtractorLocator] (val x: Self) extends AnyVal {
+    extension [Self <: ProtractorLocator](x: Self) {
       
-      @scala.inline
-      def setColumn(value: /* index */ String => Locator): Self = StObject.set(x, "column", js.Any.fromFunction1(value))
+      inline def setColumn(value: /* index */ String => Locator): Self = StObject.set(x, "column", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setFindElementsOverride(value: (WebDriver, WebElement, String) => js.Promise[js.Array[WebElement]]): Self = StObject.set(x, "findElementsOverride", js.Any.fromFunction3(value))
+      inline def setFindElementsOverride(value: (WebDriver, WebElement, String) => js.Promise[js.Array[WebElement]]): Self = StObject.set(x, "findElementsOverride", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRow(value: /* index */ Double => Locator): Self = StObject.set(x, "row", js.Any.fromFunction1(value))
+      inline def setRow(value: /* index */ Double => Locator): Self = StObject.set(x, "row", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+      inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
       
-      @scala.inline
-      def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
+      inline def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
+      inline def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
     }
   }
   

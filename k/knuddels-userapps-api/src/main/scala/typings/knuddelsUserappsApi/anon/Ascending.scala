@@ -15,31 +15,23 @@ trait Ascending extends StObject {
 }
 object Ascending {
   
-  @scala.inline
-  def apply(): Ascending = {
+  inline def apply(): Ascending = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Ascending]
   }
   
-  @scala.inline
-  implicit class AscendingMutableBuilder[Self <: Ascending] (val x: Self) extends AnyVal {
+  extension [Self <: Ascending](x: Self) {
     
-    @scala.inline
-    def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
+    inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
+    inline def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
     
-    @scala.inline
-    def setLabelMapping(value: StringDictionary[String]): Self = StObject.set(x, "labelMapping", value.asInstanceOf[js.Any])
+    inline def setLabelMapping(value: StringDictionary[String]): Self = StObject.set(x, "labelMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelMappingUndefined: Self = StObject.set(x, "labelMapping", js.undefined)
+    inline def setLabelMappingUndefined: Self = StObject.set(x, "labelMapping", js.undefined)
     
-    @scala.inline
-    def setSortIndex(value: Double): Self = StObject.set(x, "sortIndex", value.asInstanceOf[js.Any])
+    inline def setSortIndex(value: Double): Self = StObject.set(x, "sortIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortIndexUndefined: Self = StObject.set(x, "sortIndex", js.undefined)
+    inline def setSortIndexUndefined: Self = StObject.set(x, "sortIndex", js.undefined)
   }
 }

@@ -30,25 +30,19 @@ trait AreaRectangleProps
 }
 object AreaRectangleProps {
   
-  @scala.inline
-  def apply(height: Double | String, width: Double | String, x: Double | String, y: Double | String): AreaRectangleProps = {
+  inline def apply(height: Double | String, width: Double | String, x: Double | String, y: Double | String): AreaRectangleProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaRectangleProps]
   }
   
-  @scala.inline
-  implicit class AreaRectanglePropsMutableBuilder[Self <: AreaRectangleProps] (val x: Self) extends AnyVal {
+  extension [Self <: AreaRectangleProps](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

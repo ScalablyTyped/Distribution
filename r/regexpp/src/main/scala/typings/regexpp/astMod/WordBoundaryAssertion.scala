@@ -22,26 +22,20 @@ trait WordBoundaryAssertion
 }
 object WordBoundaryAssertion {
   
-  @scala.inline
-  def apply(end: Double, negate: Boolean, parent: Alternative | Quantifier, raw: String, start: Double): WordBoundaryAssertion = {
+  inline def apply(end: Double, negate: Boolean, parent: Alternative | Quantifier, raw: String, start: Double): WordBoundaryAssertion = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = "word", negate = negate.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Assertion")
     __obj.asInstanceOf[WordBoundaryAssertion]
   }
   
-  @scala.inline
-  implicit class WordBoundaryAssertionMutableBuilder[Self <: WordBoundaryAssertion] (val x: Self) extends AnyVal {
+  extension [Self <: WordBoundaryAssertion](x: Self) {
     
-    @scala.inline
-    def setKind(value: word): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: word): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegate(value: Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
+    inline def setNegate(value: Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Alternative | Quantifier): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Alternative | Quantifier): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.regexpp.regexppStrings.Assertion): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.regexpp.regexppStrings.Assertion): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

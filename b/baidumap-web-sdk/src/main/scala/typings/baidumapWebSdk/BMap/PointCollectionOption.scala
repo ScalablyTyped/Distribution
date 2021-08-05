@@ -14,31 +14,23 @@ trait PointCollectionOption extends StObject {
 }
 object PointCollectionOption {
   
-  @scala.inline
-  def apply(): PointCollectionOption = {
+  inline def apply(): PointCollectionOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointCollectionOption]
   }
   
-  @scala.inline
-  implicit class PointCollectionOptionMutableBuilder[Self <: PointCollectionOption] (val x: Self) extends AnyVal {
+  extension [Self <: PointCollectionOption](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setShape(value: ShapeType): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: ShapeType): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    @scala.inline
-    def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

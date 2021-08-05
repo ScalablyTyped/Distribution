@@ -13,19 +13,15 @@ trait WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatement extend
 }
 object WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatement {
   
-  @scala.inline
-  def apply(statements: js.Array[WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatement]): WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatement = {
+  inline def apply(statements: js.Array[WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatement]): WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatement = {
     val __obj = js.Dynamic.literal(statements = statements.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatement]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementMutableBuilder[Self <: WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatement](x: Self) {
     
-    @scala.inline
-    def setStatements(value: js.Array[WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+    inline def setStatements(value: js.Array[WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementsVarargs(value: WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatement*): Self = StObject.set(x, "statements", js.Array(value :_*))
+    inline def setStatementsVarargs(value: WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatement*): Self = StObject.set(x, "statements", js.Array(value :_*))
   }
 }

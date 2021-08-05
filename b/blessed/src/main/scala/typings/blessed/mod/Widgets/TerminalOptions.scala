@@ -41,49 +41,35 @@ trait TerminalOptions
 }
 object TerminalOptions {
   
-  @scala.inline
-  def apply(): TerminalOptions = {
+  inline def apply(): TerminalOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TerminalOptions]
   }
   
-  @scala.inline
-  implicit class TerminalOptionsMutableBuilder[Self <: TerminalOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TerminalOptions](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setCursor(value: line | underline | block): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: line | underline | block): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    @scala.inline
-    def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    @scala.inline
-    def setHandler(value: /* userInput */ Buffer => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+    inline def setHandler(value: /* userInput */ Buffer => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+    inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
-    @scala.inline
-    def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+    inline def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
+    inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
     
-    @scala.inline
-    def setTerminal(value: String): Self = StObject.set(x, "terminal", value.asInstanceOf[js.Any])
+    inline def setTerminal(value: String): Self = StObject.set(x, "terminal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminalUndefined: Self = StObject.set(x, "terminal", js.undefined)
+    inline def setTerminalUndefined: Self = StObject.set(x, "terminal", js.undefined)
   }
 }

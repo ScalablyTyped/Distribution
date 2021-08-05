@@ -12,16 +12,13 @@ trait GamepadEventInit
 }
 object GamepadEventInit {
   
-  @scala.inline
-  def apply(gamepad: Gamepad): GamepadEventInit = {
+  inline def apply(gamepad: Gamepad): GamepadEventInit = {
     val __obj = js.Dynamic.literal(gamepad = gamepad.asInstanceOf[js.Any])
     __obj.asInstanceOf[GamepadEventInit]
   }
   
-  @scala.inline
-  implicit class GamepadEventInitMutableBuilder[Self <: GamepadEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: GamepadEventInit](x: Self) {
     
-    @scala.inline
-    def setGamepad(value: Gamepad): Self = StObject.set(x, "gamepad", value.asInstanceOf[js.Any])
+    inline def setGamepad(value: Gamepad): Self = StObject.set(x, "gamepad", value.asInstanceOf[js.Any])
   }
 }

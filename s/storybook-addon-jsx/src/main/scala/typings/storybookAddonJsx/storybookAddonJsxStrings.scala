@@ -8,21 +8,17 @@ object storybookAddonJsxStrings {
   
   @js.native
   sealed trait centered extends StObject
-  @scala.inline
-  def centered: centered = "centered".asInstanceOf[centered]
+  inline def centered: centered = "centered".asInstanceOf[centered]
   
   @js.native
   sealed trait fullscreen extends StObject
-  @scala.inline
-  def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
+  inline def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait padded extends StObject
-  @scala.inline
-  def padded: padded = "padded".asInstanceOf[padded]
+  inline def padded: padded = "padded".asInstanceOf[padded]
 }

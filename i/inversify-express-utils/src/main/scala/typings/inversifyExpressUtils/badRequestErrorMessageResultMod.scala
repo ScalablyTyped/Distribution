@@ -16,13 +16,13 @@ object badRequestErrorMessageResultMod {
        with BadRequestErrorMessageResult {
     def this(message: String, apiController: BaseHttpController) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var apiController: js.Any = js.native
     
     /* CompleteClass */
     override def executeAsync(): js.Promise[HttpResponseMessage] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var message: js.Any = js.native
   }
   
@@ -30,26 +30,22 @@ object badRequestErrorMessageResultMod {
     extends StObject
        with IHttpActionResult {
     
-    var apiController: js.Any
+    /* private */ var apiController: js.Any
     
-    var message: js.Any
+    /* private */ var message: js.Any
   }
   object BadRequestErrorMessageResult {
     
-    @scala.inline
-    def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage], message: js.Any): BadRequestErrorMessageResult = {
+    inline def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage], message: js.Any): BadRequestErrorMessageResult = {
       val __obj = js.Dynamic.literal(apiController = apiController.asInstanceOf[js.Any], executeAsync = js.Any.fromFunction0(executeAsync), message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[BadRequestErrorMessageResult]
     }
     
-    @scala.inline
-    implicit class BadRequestErrorMessageResultMutableBuilder[Self <: BadRequestErrorMessageResult] (val x: Self) extends AnyVal {
+    extension [Self <: BadRequestErrorMessageResult](x: Self) {
       
-      @scala.inline
-      def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
+      inline def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

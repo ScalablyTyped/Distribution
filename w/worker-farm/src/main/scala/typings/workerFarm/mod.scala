@@ -8,23 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(name: String): Workers = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Workers]
-  @scala.inline
-  def apply(name: String, exportedMethods: js.Array[String]): Workers = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], exportedMethods.asInstanceOf[js.Any])).asInstanceOf[Workers]
-  @scala.inline
-  def apply(options: FarmOptions, name: String): Workers = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Workers]
-  @scala.inline
-  def apply(options: FarmOptions, name: String, exportedMethods: js.Array[String]): Workers = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any], exportedMethods.asInstanceOf[js.Any])).asInstanceOf[Workers]
+  inline def apply(name: String): Workers = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Workers]
+  inline def apply(name: String, exportedMethods: js.Array[String]): Workers = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], exportedMethods.asInstanceOf[js.Any])).asInstanceOf[Workers]
+  inline def apply(options: FarmOptions, name: String): Workers = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Workers]
+  inline def apply(options: FarmOptions, name: String, exportedMethods: js.Array[String]): Workers = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any], exportedMethods.asInstanceOf[js.Any])).asInstanceOf[Workers]
   
   @JSImport("worker-farm", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def end(workers: Workers): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("end")(workers.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def end(workers: Workers, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("end")(workers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def end(workers: Workers): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("end")(workers.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def end(workers: Workers, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("end")(workers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait FarmOptions extends StObject {
     
@@ -46,62 +40,44 @@ object mod {
   }
   object FarmOptions {
     
-    @scala.inline
-    def apply(): FarmOptions = {
+    inline def apply(): FarmOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FarmOptions]
     }
     
-    @scala.inline
-    implicit class FarmOptionsMutableBuilder[Self <: FarmOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FarmOptions](x: Self) {
       
-      @scala.inline
-      def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+      inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+      inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
       
-      @scala.inline
-      def setMaxCallTime(value: Double): Self = StObject.set(x, "maxCallTime", value.asInstanceOf[js.Any])
+      inline def setMaxCallTime(value: Double): Self = StObject.set(x, "maxCallTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCallTimeUndefined: Self = StObject.set(x, "maxCallTime", js.undefined)
+      inline def setMaxCallTimeUndefined: Self = StObject.set(x, "maxCallTime", js.undefined)
       
-      @scala.inline
-      def setMaxCallsPerWorker(value: Double): Self = StObject.set(x, "maxCallsPerWorker", value.asInstanceOf[js.Any])
+      inline def setMaxCallsPerWorker(value: Double): Self = StObject.set(x, "maxCallsPerWorker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCallsPerWorkerUndefined: Self = StObject.set(x, "maxCallsPerWorker", js.undefined)
+      inline def setMaxCallsPerWorkerUndefined: Self = StObject.set(x, "maxCallsPerWorker", js.undefined)
       
-      @scala.inline
-      def setMaxConcurrentCalls(value: Double): Self = StObject.set(x, "maxConcurrentCalls", value.asInstanceOf[js.Any])
+      inline def setMaxConcurrentCalls(value: Double): Self = StObject.set(x, "maxConcurrentCalls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConcurrentCallsPerWorker(value: Double): Self = StObject.set(x, "maxConcurrentCallsPerWorker", value.asInstanceOf[js.Any])
+      inline def setMaxConcurrentCallsPerWorker(value: Double): Self = StObject.set(x, "maxConcurrentCallsPerWorker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConcurrentCallsPerWorkerUndefined: Self = StObject.set(x, "maxConcurrentCallsPerWorker", js.undefined)
+      inline def setMaxConcurrentCallsPerWorkerUndefined: Self = StObject.set(x, "maxConcurrentCallsPerWorker", js.undefined)
       
-      @scala.inline
-      def setMaxConcurrentCallsUndefined: Self = StObject.set(x, "maxConcurrentCalls", js.undefined)
+      inline def setMaxConcurrentCallsUndefined: Self = StObject.set(x, "maxConcurrentCalls", js.undefined)
       
-      @scala.inline
-      def setMaxConcurrentWorkers(value: Double): Self = StObject.set(x, "maxConcurrentWorkers", value.asInstanceOf[js.Any])
+      inline def setMaxConcurrentWorkers(value: Double): Self = StObject.set(x, "maxConcurrentWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConcurrentWorkersUndefined: Self = StObject.set(x, "maxConcurrentWorkers", js.undefined)
+      inline def setMaxConcurrentWorkersUndefined: Self = StObject.set(x, "maxConcurrentWorkers", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setWorkerOptions(value: ForkOptions): Self = StObject.set(x, "workerOptions", value.asInstanceOf[js.Any])
+      inline def setWorkerOptions(value: ForkOptions): Self = StObject.set(x, "workerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerOptionsUndefined: Self = StObject.set(x, "workerOptions", js.undefined)
+      inline def setWorkerOptionsUndefined: Self = StObject.set(x, "workerOptions", js.undefined)
     }
   }
   

@@ -12,48 +12,41 @@ object yogBigpipeStrings {
   sealed trait async
     extends StObject
        with mode
-  @scala.inline
-  def async: async = "async".asInstanceOf[async]
+  inline def async: async = "async".asInstanceOf[async]
   
   @js.native
   sealed trait failed
     extends StObject
        with status
-  @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
+  inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
   sealed trait fulfilled
     extends StObject
        with status
-  @scala.inline
-  def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
+  inline def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
   
   @js.native
   sealed trait pending
     extends StObject
        with status
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
+  inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
   sealed trait pipeline
     extends StObject
        with mode
-  @scala.inline
-  def pipeline: pipeline = "pipeline".asInstanceOf[pipeline]
+  inline def pipeline: pipeline = "pipeline".asInstanceOf[pipeline]
   
   @js.native
   sealed trait quickling
     extends StObject
        with mode
-  @scala.inline
-  def quickling: quickling = "quickling".asInstanceOf[quickling]
+  inline def quickling: quickling = "quickling".asInstanceOf[quickling]
   
   @js.native
   sealed trait rendering
     extends StObject
        with status
-  @scala.inline
-  def rendering: rendering = "rendering".asInstanceOf[rendering]
+  inline def rendering: rendering = "rendering".asInstanceOf[rendering]
 }

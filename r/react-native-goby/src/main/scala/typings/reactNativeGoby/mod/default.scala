@@ -13,10 +13,8 @@ object default {
     *
     * @param options Options used to configure the end-user sync and update experience (e.g. when to check for updates?, show an prompt?, install the update immediately?).
     */
-  @scala.inline
-  def apply(): js.Function = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function]
-  @scala.inline
-  def apply(options: GobyOptions): js.Function = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def apply(): js.Function = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function]
+  inline def apply(options: GobyOptions): js.Function = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
   @JSImport("react-native-goby", JSImport.Default)
   @js.native
@@ -46,8 +44,7 @@ object default {
   @JSImport("react-native-goby", "default.DEFAULT_UPDATE_DIALOG")
   @js.native
   def DEFAULT_UPDATE_DIALOG: UpdateDialog = js.native
-  @scala.inline
-  def DEFAULT_UPDATE_DIALOG_=(x: UpdateDialog): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_UPDATE_DIALOG")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_UPDATE_DIALOG_=(x: UpdateDialog): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_UPDATE_DIALOG")(x.asInstanceOf[js.Any])
   
   /**
     * Indicates the status of a deployment (after installing and restarting).
@@ -130,50 +127,41 @@ object default {
   /**
     * Allow Goby to restart the app.
     */
-  @scala.inline
-  def allowRestart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowRestart")().asInstanceOf[Unit]
+  inline def allowRestart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowRestart")().asInstanceOf[Unit]
   
   /**
     * Asks the Goby service whether the configured app deployment has an update available.
     *
     * @param deploymentKey The deployment key to use to query the Goby server for an update.
     */
-  @scala.inline
-  def checkForUpdate(): js.Promise[RemotePackage] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkForUpdate")().asInstanceOf[js.Promise[RemotePackage]]
-  @scala.inline
-  def checkForUpdate(deploymentKey: String): js.Promise[RemotePackage] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkForUpdate")(deploymentKey.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RemotePackage]]
+  inline def checkForUpdate(): js.Promise[RemotePackage] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkForUpdate")().asInstanceOf[js.Promise[RemotePackage]]
+  inline def checkForUpdate(deploymentKey: String): js.Promise[RemotePackage] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkForUpdate")(deploymentKey.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RemotePackage]]
   
   /**
     * Forbid Goby to restart the app.
     */
-  @scala.inline
-  def disallowRestart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disallowRestart")().asInstanceOf[Unit]
+  inline def disallowRestart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disallowRestart")().asInstanceOf[Unit]
   
   /**
     * Retrieves the metadata for an installed update (e.g. description, mandatory).
     *
     * @param updateState The state of the update you want to retrieve the metadata for. Defaults to UpdateState.RUNNING.
     */
-  @scala.inline
-  def getUpdateMetadata(): js.Promise[LocalPackage] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUpdateMetadata")().asInstanceOf[js.Promise[LocalPackage]]
-  @scala.inline
-  def getUpdateMetadata(updateState: UpdateState): js.Promise[LocalPackage] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUpdateMetadata")(updateState.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LocalPackage]]
+  inline def getUpdateMetadata(): js.Promise[LocalPackage] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUpdateMetadata")().asInstanceOf[js.Promise[LocalPackage]]
+  inline def getUpdateMetadata(updateState: UpdateState): js.Promise[LocalPackage] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUpdateMetadata")(updateState.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LocalPackage]]
   
   /**
     * Notifies the Goby runtime that an installed update is considered successful.
     */
-  @scala.inline
-  def notifyAppReady(): js.Promise[StatusReport] = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyAppReady")().asInstanceOf[js.Promise[StatusReport]]
+  inline def notifyAppReady(): js.Promise[StatusReport] = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyAppReady")().asInstanceOf[js.Promise[StatusReport]]
   
   /**
     * Immediately restarts the app.
     *
     * @param onlyIfUpdateIsPending Indicates whether you want the restart to no-op if there isn't currently a pending update.
     */
-  @scala.inline
-  def restartApp(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restartApp")().asInstanceOf[Unit]
-  @scala.inline
-  def restartApp(onlyIfUpdateIsPending: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restartApp")(onlyIfUpdateIsPending.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def restartApp(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restartApp")().asInstanceOf[Unit]
+  inline def restartApp(onlyIfUpdateIsPending: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restartApp")(onlyIfUpdateIsPending.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Allows checking for an update, downloading it and installing it, all with a single call.
@@ -182,30 +170,22 @@ object default {
     * @param syncStatusChangedCallback An optional callback that allows tracking the status of the sync operation, as opposed to simply checking the resolved state via the returned Promise.
     * @param downloadProgressCallback An optional callback that allows tracking the progress of an update while it is being downloaded.
     */
-  @scala.inline
-  def sync(): js.Promise[SyncStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.Promise[SyncStatus]]
-  @scala.inline
-  def sync(options: Unit, syncStatusChangedCallback: Unit, downloadProgressCallback: DownloadProgressCallback): js.Promise[SyncStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any], syncStatusChangedCallback.asInstanceOf[js.Any], downloadProgressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SyncStatus]]
-  @scala.inline
-  def sync(options: Unit, syncStatusChangedCallback: SyncStatusChangedCallback): js.Promise[SyncStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any], syncStatusChangedCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SyncStatus]]
-  @scala.inline
-  def sync(
+  inline def sync(): js.Promise[SyncStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.Promise[SyncStatus]]
+  inline def sync(options: Unit, syncStatusChangedCallback: Unit, downloadProgressCallback: DownloadProgressCallback): js.Promise[SyncStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any], syncStatusChangedCallback.asInstanceOf[js.Any], downloadProgressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SyncStatus]]
+  inline def sync(options: Unit, syncStatusChangedCallback: SyncStatusChangedCallback): js.Promise[SyncStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any], syncStatusChangedCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SyncStatus]]
+  inline def sync(
     options: Unit,
     syncStatusChangedCallback: SyncStatusChangedCallback,
     downloadProgressCallback: DownloadProgressCallback
   ): js.Promise[SyncStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any], syncStatusChangedCallback.asInstanceOf[js.Any], downloadProgressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SyncStatus]]
-  @scala.inline
-  def sync(options: SyncOptions): js.Promise[SyncStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SyncStatus]]
-  @scala.inline
-  def sync(
+  inline def sync(options: SyncOptions): js.Promise[SyncStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SyncStatus]]
+  inline def sync(
     options: SyncOptions,
     syncStatusChangedCallback: Unit,
     downloadProgressCallback: DownloadProgressCallback
   ): js.Promise[SyncStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any], syncStatusChangedCallback.asInstanceOf[js.Any], downloadProgressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SyncStatus]]
-  @scala.inline
-  def sync(options: SyncOptions, syncStatusChangedCallback: SyncStatusChangedCallback): js.Promise[SyncStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any], syncStatusChangedCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SyncStatus]]
-  @scala.inline
-  def sync(
+  inline def sync(options: SyncOptions, syncStatusChangedCallback: SyncStatusChangedCallback): js.Promise[SyncStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any], syncStatusChangedCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SyncStatus]]
+  inline def sync(
     options: SyncOptions,
     syncStatusChangedCallback: SyncStatusChangedCallback,
     downloadProgressCallback: DownloadProgressCallback

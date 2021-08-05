@@ -35,32 +35,24 @@ object subscriptionSubscriptionDelegateMod {
   }
   object SubscriptionDelegate {
     
-    @scala.inline
-    def apply(): SubscriptionDelegate = {
+    inline def apply(): SubscriptionDelegate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SubscriptionDelegate]
     }
     
-    @scala.inline
-    implicit class SubscriptionDelegateMutableBuilder[Self <: SubscriptionDelegate] (val x: Self) extends AnyVal {
+    extension [Self <: SubscriptionDelegate](x: Self) {
       
-      @scala.inline
-      def setOnNotify(value: /* request */ IncomingNotifyRequest => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
+      inline def setOnNotify(value: /* request */ IncomingNotifyRequest => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNotifyUndefined: Self = StObject.set(x, "onNotify", js.undefined)
+      inline def setOnNotifyUndefined: Self = StObject.set(x, "onNotify", js.undefined)
       
-      @scala.inline
-      def setOnRefresh(value: /* request */ OutgoingSubscribeRequest => Unit): Self = StObject.set(x, "onRefresh", js.Any.fromFunction1(value))
+      inline def setOnRefresh(value: /* request */ OutgoingSubscribeRequest => Unit): Self = StObject.set(x, "onRefresh", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRefreshUndefined: Self = StObject.set(x, "onRefresh", js.undefined)
+      inline def setOnRefreshUndefined: Self = StObject.set(x, "onRefresh", js.undefined)
       
-      @scala.inline
-      def setOnTerminated(value: () => Unit): Self = StObject.set(x, "onTerminated", js.Any.fromFunction0(value))
+      inline def setOnTerminated(value: () => Unit): Self = StObject.set(x, "onTerminated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnTerminatedUndefined: Self = StObject.set(x, "onTerminated", js.undefined)
+      inline def setOnTerminatedUndefined: Self = StObject.set(x, "onTerminated", js.undefined)
     }
   }
 }

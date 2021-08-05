@@ -23,8 +23,7 @@ object mediaOverlayUniDriverMod {
   }
   object MediaOverlayUniDriver {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -38,23 +37,17 @@ object mediaOverlayUniDriverMod {
       __obj.asInstanceOf[MediaOverlayUniDriver[T]]
     }
     
-    @scala.inline
-    implicit class MediaOverlayUniDriverMutableBuilder[Self <: MediaOverlayUniDriver[?], T] (val x: Self & MediaOverlayUniDriver[T]) extends AnyVal {
+    extension [Self <: MediaOverlayUniDriver[?], T](x: Self & MediaOverlayUniDriver[T]) {
       
-      @scala.inline
-      def setGetHoverSkin(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getHoverSkin", js.Any.fromFunction0(value))
+      inline def setGetHoverSkin(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getHoverSkin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMediaNode(value: () => js.Promise[T]): Self = StObject.set(x, "getMediaNode", js.Any.fromFunction0(value))
+      inline def setGetMediaNode(value: () => js.Promise[T]): Self = StObject.set(x, "getMediaNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMediaUrl(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getMediaUrl", js.Any.fromFunction0(value))
+      inline def setGetMediaUrl(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getMediaUrl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSkin(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
+      inline def setGetSkin(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHover(value: () => js.Promise[Unit]): Self = StObject.set(x, "hover", js.Any.fromFunction0(value))
+      inline def setHover(value: () => js.Promise[Unit]): Self = StObject.set(x, "hover", js.Any.fromFunction0(value))
     }
   }
 }

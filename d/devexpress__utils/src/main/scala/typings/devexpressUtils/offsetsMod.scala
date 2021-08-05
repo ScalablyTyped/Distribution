@@ -63,16 +63,12 @@ object offsetsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def empty(): Offsets = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Offsets]
+    inline def empty(): Offsets = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Offsets]
     
-    @scala.inline
-    def fromNumber(offset: Double): Offsets = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(offset.asInstanceOf[js.Any]).asInstanceOf[Offsets]
+    inline def fromNumber(offset: Double): Offsets = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(offset.asInstanceOf[js.Any]).asInstanceOf[Offsets]
     
-    @scala.inline
-    def fromOffsets(offsets: IOffsets): Offsets = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOffsets")(offsets.asInstanceOf[js.Any]).asInstanceOf[Offsets]
+    inline def fromOffsets(offsets: IOffsets): Offsets = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOffsets")(offsets.asInstanceOf[js.Any]).asInstanceOf[Offsets]
     
-    @scala.inline
-    def fromSide(horizontal: Double, vertical: Double): Offsets = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSide")(horizontal.asInstanceOf[js.Any], vertical.asInstanceOf[js.Any])).asInstanceOf[Offsets]
+    inline def fromSide(horizontal: Double, vertical: Double): Offsets = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSide")(horizontal.asInstanceOf[js.Any], vertical.asInstanceOf[js.Any])).asInstanceOf[Offsets]
   }
 }

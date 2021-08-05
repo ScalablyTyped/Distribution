@@ -18,8 +18,7 @@ trait SlotInfo extends StObject {
 }
 object SlotInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     firmwareVersion: Version,
     flags: Double,
     hardwareVersion: Version,
@@ -30,22 +29,16 @@ object SlotInfo {
     __obj.asInstanceOf[SlotInfo]
   }
   
-  @scala.inline
-  implicit class SlotInfoMutableBuilder[Self <: SlotInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SlotInfo](x: Self) {
     
-    @scala.inline
-    def setFirmwareVersion(value: Version): Self = StObject.set(x, "firmwareVersion", value.asInstanceOf[js.Any])
+    inline def setFirmwareVersion(value: Version): Self = StObject.set(x, "firmwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardwareVersion(value: Version): Self = StObject.set(x, "hardwareVersion", value.asInstanceOf[js.Any])
+    inline def setHardwareVersion(value: Version): Self = StObject.set(x, "hardwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerID(value: String): Self = StObject.set(x, "manufacturerID", value.asInstanceOf[js.Any])
+    inline def setManufacturerID(value: String): Self = StObject.set(x, "manufacturerID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotDescription(value: String): Self = StObject.set(x, "slotDescription", value.asInstanceOf[js.Any])
+    inline def setSlotDescription(value: String): Self = StObject.set(x, "slotDescription", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait ScoreAttributes extends StObject {
 }
 object ScoreAttributes {
   
-  @scala.inline
-  def apply(): ScoreAttributes = {
+  inline def apply(): ScoreAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScoreAttributes]
   }
   
-  @scala.inline
-  implicit class ScoreAttributesMutableBuilder[Self <: ScoreAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ScoreAttributes](x: Self) {
     
-    @scala.inline
-    def setScoreConfidence(value: ScoreConfidence): Self = StObject.set(x, "ScoreConfidence", value.asInstanceOf[js.Any])
+    inline def setScoreConfidence(value: ScoreConfidence): Self = StObject.set(x, "ScoreConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreConfidenceUndefined: Self = StObject.set(x, "ScoreConfidence", js.undefined)
+    inline def setScoreConfidenceUndefined: Self = StObject.set(x, "ScoreConfidence", js.undefined)
   }
 }

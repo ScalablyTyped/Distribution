@@ -25,8 +25,7 @@ trait CmsDetachedSignature extends StObject {
 }
 object CmsDetachedSignature {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     certificates: IVectorView[Certificate],
     signers: IVectorView[CmsSignerInfo],
     verifySignatureAsync: IInputStream => IPromiseWithIAsyncOperation[SignatureValidationResult]
@@ -35,16 +34,12 @@ object CmsDetachedSignature {
     __obj.asInstanceOf[CmsDetachedSignature]
   }
   
-  @scala.inline
-  implicit class CmsDetachedSignatureMutableBuilder[Self <: CmsDetachedSignature] (val x: Self) extends AnyVal {
+  extension [Self <: CmsDetachedSignature](x: Self) {
     
-    @scala.inline
-    def setCertificates(value: IVectorView[Certificate]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
+    inline def setCertificates(value: IVectorView[Certificate]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigners(value: IVectorView[CmsSignerInfo]): Self = StObject.set(x, "signers", value.asInstanceOf[js.Any])
+    inline def setSigners(value: IVectorView[CmsSignerInfo]): Self = StObject.set(x, "signers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifySignatureAsync(value: IInputStream => IPromiseWithIAsyncOperation[SignatureValidationResult]): Self = StObject.set(x, "verifySignatureAsync", js.Any.fromFunction1(value))
+    inline def setVerifySignatureAsync(value: IInputStream => IPromiseWithIAsyncOperation[SignatureValidationResult]): Self = StObject.set(x, "verifySignatureAsync", js.Any.fromFunction1(value))
   }
 }

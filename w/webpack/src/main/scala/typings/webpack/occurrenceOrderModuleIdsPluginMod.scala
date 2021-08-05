@@ -15,20 +15,16 @@ object occurrenceOrderModuleIdsPluginMod {
   }
   object OccurrenceOrderModuleIdsPluginOptions {
     
-    @scala.inline
-    def apply(): OccurrenceOrderModuleIdsPluginOptions = {
+    inline def apply(): OccurrenceOrderModuleIdsPluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OccurrenceOrderModuleIdsPluginOptions]
     }
     
-    @scala.inline
-    implicit class OccurrenceOrderModuleIdsPluginOptionsMutableBuilder[Self <: OccurrenceOrderModuleIdsPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OccurrenceOrderModuleIdsPluginOptions](x: Self) {
       
-      @scala.inline
-      def setPrioritiseInitial(value: Boolean): Self = StObject.set(x, "prioritiseInitial", value.asInstanceOf[js.Any])
+      inline def setPrioritiseInitial(value: Boolean): Self = StObject.set(x, "prioritiseInitial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrioritiseInitialUndefined: Self = StObject.set(x, "prioritiseInitial", js.undefined)
+      inline def setPrioritiseInitialUndefined: Self = StObject.set(x, "prioritiseInitial", js.undefined)
     }
   }
 }

@@ -73,62 +73,44 @@ object interactionExtentMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBoxStyle(value: StyleLike): Self = StObject.set(x, "boxStyle", value.asInstanceOf[js.Any])
+      inline def setBoxStyle(value: StyleLike): Self = StObject.set(x, "boxStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxStyleFunction2(value: (/* p0 */ FeatureLike, /* p1 */ Double) => Style | js.Array[Style]): Self = StObject.set(x, "boxStyle", js.Any.fromFunction2(value))
+      inline def setBoxStyleFunction2(value: (/* p0 */ FeatureLike, /* p1 */ Double) => Style | js.Array[Style]): Self = StObject.set(x, "boxStyle", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBoxStyleUndefined: Self = StObject.set(x, "boxStyle", js.undefined)
+      inline def setBoxStyleUndefined: Self = StObject.set(x, "boxStyle", js.undefined)
       
-      @scala.inline
-      def setBoxStyleVarargs(value: Style*): Self = StObject.set(x, "boxStyle", js.Array(value :_*))
+      inline def setBoxStyleVarargs(value: Style*): Self = StObject.set(x, "boxStyle", js.Array(value :_*))
       
-      @scala.inline
-      def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+      inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
       
-      @scala.inline
-      def setExtent(value: typings.ol.extentMod.Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      inline def setExtent(value: typings.ol.extentMod.Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+      inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      @scala.inline
-      def setPixelTolerance(value: Double): Self = StObject.set(x, "pixelTolerance", value.asInstanceOf[js.Any])
+      inline def setPixelTolerance(value: Double): Self = StObject.set(x, "pixelTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelToleranceUndefined: Self = StObject.set(x, "pixelTolerance", js.undefined)
+      inline def setPixelToleranceUndefined: Self = StObject.set(x, "pixelTolerance", js.undefined)
       
-      @scala.inline
-      def setPointerStyle(value: StyleLike): Self = StObject.set(x, "pointerStyle", value.asInstanceOf[js.Any])
+      inline def setPointerStyle(value: StyleLike): Self = StObject.set(x, "pointerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerStyleFunction2(value: (/* p0 */ FeatureLike, /* p1 */ Double) => Style | js.Array[Style]): Self = StObject.set(x, "pointerStyle", js.Any.fromFunction2(value))
+      inline def setPointerStyleFunction2(value: (/* p0 */ FeatureLike, /* p1 */ Double) => Style | js.Array[Style]): Self = StObject.set(x, "pointerStyle", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerStyleUndefined: Self = StObject.set(x, "pointerStyle", js.undefined)
+      inline def setPointerStyleUndefined: Self = StObject.set(x, "pointerStyle", js.undefined)
       
-      @scala.inline
-      def setPointerStyleVarargs(value: Style*): Self = StObject.set(x, "pointerStyle", js.Array(value :_*))
+      inline def setPointerStyleVarargs(value: Style*): Self = StObject.set(x, "pointerStyle", js.Array(value :_*))
       
-      @scala.inline
-      def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
+      inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
+      inline def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
     }
   }
 }

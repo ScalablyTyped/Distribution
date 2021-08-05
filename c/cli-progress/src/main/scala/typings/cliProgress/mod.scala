@@ -43,31 +43,27 @@ object mod {
     @JSImport("cli-progress", "Presets.legacy")
     @js.native
     def legacy: Preset = js.native
-    @scala.inline
-    def legacy_=(x: Preset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("legacy")(x.asInstanceOf[js.Any])
+    inline def legacy_=(x: Preset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("legacy")(x.asInstanceOf[js.Any])
     
     /** Unicode Rectangles */
     @JSImport("cli-progress", "Presets.rect")
     @js.native
     def rect: Preset = js.native
-    @scala.inline
-    def rect_=(x: Preset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rect")(x.asInstanceOf[js.Any])
+    inline def rect_=(x: Preset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rect")(x.asInstanceOf[js.Any])
     
     /** Unicode background shades are used for the bar */
     @JSImport("cli-progress", "Presets.shades_classic")
     @js.native
     def shadesClassic: Preset = js.native
     
-    @scala.inline
-    def shadesClassic_=(x: Preset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shades_classic")(x.asInstanceOf[js.Any])
+    inline def shadesClassic_=(x: Preset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shades_classic")(x.asInstanceOf[js.Any])
     
     /** Unicode background shades with grey bar */
     @JSImport("cli-progress", "Presets.shades_grey")
     @js.native
     def shadesGrey: Preset = js.native
     
-    @scala.inline
-    def shadesGrey_=(x: Preset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shades_grey")(x.asInstanceOf[js.Any])
+    inline def shadesGrey_=(x: Preset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shades_grey")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("cli-progress", "SingleBar")
@@ -219,173 +215,118 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlign(value: left | right | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: left | right | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAutopadding(value: Boolean): Self = StObject.set(x, "autopadding", value.asInstanceOf[js.Any])
+      inline def setAutopadding(value: Boolean): Self = StObject.set(x, "autopadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutopaddingChar(value: String): Self = StObject.set(x, "autopaddingChar", value.asInstanceOf[js.Any])
+      inline def setAutopaddingChar(value: String): Self = StObject.set(x, "autopaddingChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutopaddingCharUndefined: Self = StObject.set(x, "autopaddingChar", js.undefined)
+      inline def setAutopaddingCharUndefined: Self = StObject.set(x, "autopaddingChar", js.undefined)
       
-      @scala.inline
-      def setAutopaddingUndefined: Self = StObject.set(x, "autopadding", js.undefined)
+      inline def setAutopaddingUndefined: Self = StObject.set(x, "autopadding", js.undefined)
       
-      @scala.inline
-      def setBarCompleteChar(value: String): Self = StObject.set(x, "barCompleteChar", value.asInstanceOf[js.Any])
+      inline def setBarCompleteChar(value: String): Self = StObject.set(x, "barCompleteChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarCompleteCharUndefined: Self = StObject.set(x, "barCompleteChar", js.undefined)
+      inline def setBarCompleteCharUndefined: Self = StObject.set(x, "barCompleteChar", js.undefined)
       
-      @scala.inline
-      def setBarCompleteString(value: String): Self = StObject.set(x, "barCompleteString", value.asInstanceOf[js.Any])
+      inline def setBarCompleteString(value: String): Self = StObject.set(x, "barCompleteString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarCompleteStringUndefined: Self = StObject.set(x, "barCompleteString", js.undefined)
+      inline def setBarCompleteStringUndefined: Self = StObject.set(x, "barCompleteString", js.undefined)
       
-      @scala.inline
-      def setBarIncompleteChar(value: String): Self = StObject.set(x, "barIncompleteChar", value.asInstanceOf[js.Any])
+      inline def setBarIncompleteChar(value: String): Self = StObject.set(x, "barIncompleteChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarIncompleteCharUndefined: Self = StObject.set(x, "barIncompleteChar", js.undefined)
+      inline def setBarIncompleteCharUndefined: Self = StObject.set(x, "barIncompleteChar", js.undefined)
       
-      @scala.inline
-      def setBarIncompleteString(value: String): Self = StObject.set(x, "barIncompleteString", value.asInstanceOf[js.Any])
+      inline def setBarIncompleteString(value: String): Self = StObject.set(x, "barIncompleteString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarIncompleteStringUndefined: Self = StObject.set(x, "barIncompleteString", js.undefined)
+      inline def setBarIncompleteStringUndefined: Self = StObject.set(x, "barIncompleteString", js.undefined)
       
-      @scala.inline
-      def setBarsize(value: Double): Self = StObject.set(x, "barsize", value.asInstanceOf[js.Any])
+      inline def setBarsize(value: Double): Self = StObject.set(x, "barsize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarsizeUndefined: Self = StObject.set(x, "barsize", js.undefined)
+      inline def setBarsizeUndefined: Self = StObject.set(x, "barsize", js.undefined)
       
-      @scala.inline
-      def setClearOnComplete(value: Boolean): Self = StObject.set(x, "clearOnComplete", value.asInstanceOf[js.Any])
+      inline def setClearOnComplete(value: Boolean): Self = StObject.set(x, "clearOnComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearOnCompleteUndefined: Self = StObject.set(x, "clearOnComplete", js.undefined)
+      inline def setClearOnCompleteUndefined: Self = StObject.set(x, "clearOnComplete", js.undefined)
       
-      @scala.inline
-      def setEmptyOnZero(value: Boolean): Self = StObject.set(x, "emptyOnZero", value.asInstanceOf[js.Any])
+      inline def setEmptyOnZero(value: Boolean): Self = StObject.set(x, "emptyOnZero", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyOnZeroUndefined: Self = StObject.set(x, "emptyOnZero", js.undefined)
+      inline def setEmptyOnZeroUndefined: Self = StObject.set(x, "emptyOnZero", js.undefined)
       
-      @scala.inline
-      def setEtaAsynchronousUpdate(value: Boolean): Self = StObject.set(x, "etaAsynchronousUpdate", value.asInstanceOf[js.Any])
+      inline def setEtaAsynchronousUpdate(value: Boolean): Self = StObject.set(x, "etaAsynchronousUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtaAsynchronousUpdateUndefined: Self = StObject.set(x, "etaAsynchronousUpdate", js.undefined)
+      inline def setEtaAsynchronousUpdateUndefined: Self = StObject.set(x, "etaAsynchronousUpdate", js.undefined)
       
-      @scala.inline
-      def setEtaBuffer(value: Double): Self = StObject.set(x, "etaBuffer", value.asInstanceOf[js.Any])
+      inline def setEtaBuffer(value: Double): Self = StObject.set(x, "etaBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtaBufferUndefined: Self = StObject.set(x, "etaBuffer", js.undefined)
+      inline def setEtaBufferUndefined: Self = StObject.set(x, "etaBuffer", js.undefined)
       
-      @scala.inline
-      def setForceRedraw(value: Boolean): Self = StObject.set(x, "forceRedraw", value.asInstanceOf[js.Any])
+      inline def setForceRedraw(value: Boolean): Self = StObject.set(x, "forceRedraw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceRedrawUndefined: Self = StObject.set(x, "forceRedraw", js.undefined)
+      inline def setForceRedrawUndefined: Self = StObject.set(x, "forceRedraw", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String | (js.Function3[Options, /* params */ Params, /* payload */ js.Any, String])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String | (js.Function3[Options, /* params */ Params, /* payload */ js.Any, String])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatBar(value: (/* progress */ Double, Options) => String): Self = StObject.set(x, "formatBar", js.Any.fromFunction2(value))
+      inline def setFormatBar(value: (/* progress */ Double, Options) => String): Self = StObject.set(x, "formatBar", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatBarUndefined: Self = StObject.set(x, "formatBar", js.undefined)
+      inline def setFormatBarUndefined: Self = StObject.set(x, "formatBar", js.undefined)
       
-      @scala.inline
-      def setFormatFunction3(value: (Options, /* params */ Params, /* payload */ js.Any) => String): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
+      inline def setFormatFunction3(value: (Options, /* params */ Params, /* payload */ js.Any) => String): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFormatTime(value: (/* t */ Double, Options, /* roundToMultipleOf */ Double) => String): Self = StObject.set(x, "formatTime", js.Any.fromFunction3(value))
+      inline def setFormatTime(value: (/* t */ Double, Options, /* roundToMultipleOf */ Double) => String): Self = StObject.set(x, "formatTime", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFormatTimeUndefined: Self = StObject.set(x, "formatTime", js.undefined)
+      inline def setFormatTimeUndefined: Self = StObject.set(x, "formatTime", js.undefined)
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setFormatValue(value: (/* v */ Double, Options, /* type */ String) => String): Self = StObject.set(x, "formatValue", js.Any.fromFunction3(value))
+      inline def setFormatValue(value: (/* v */ Double, Options, /* type */ String) => String): Self = StObject.set(x, "formatValue", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFormatValueUndefined: Self = StObject.set(x, "formatValue", js.undefined)
+      inline def setFormatValueUndefined: Self = StObject.set(x, "formatValue", js.undefined)
       
-      @scala.inline
-      def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
+      inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
+      inline def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
       
-      @scala.inline
-      def setHideCursor(value: Boolean): Self = StObject.set(x, "hideCursor", value.asInstanceOf[js.Any])
+      inline def setHideCursor(value: Boolean): Self = StObject.set(x, "hideCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideCursorNull: Self = StObject.set(x, "hideCursor", null)
+      inline def setHideCursorNull: Self = StObject.set(x, "hideCursor", null)
       
-      @scala.inline
-      def setHideCursorUndefined: Self = StObject.set(x, "hideCursor", js.undefined)
+      inline def setHideCursorUndefined: Self = StObject.set(x, "hideCursor", js.undefined)
       
-      @scala.inline
-      def setLinewrap(value: Boolean): Self = StObject.set(x, "linewrap", value.asInstanceOf[js.Any])
+      inline def setLinewrap(value: Boolean): Self = StObject.set(x, "linewrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinewrapNull: Self = StObject.set(x, "linewrap", null)
+      inline def setLinewrapNull: Self = StObject.set(x, "linewrap", null)
       
-      @scala.inline
-      def setLinewrapUndefined: Self = StObject.set(x, "linewrap", js.undefined)
+      inline def setLinewrapUndefined: Self = StObject.set(x, "linewrap", js.undefined)
       
-      @scala.inline
-      def setNoTTYOutput(value: Boolean): Self = StObject.set(x, "noTTYOutput", value.asInstanceOf[js.Any])
+      inline def setNoTTYOutput(value: Boolean): Self = StObject.set(x, "noTTYOutput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoTTYOutputUndefined: Self = StObject.set(x, "noTTYOutput", js.undefined)
+      inline def setNoTTYOutputUndefined: Self = StObject.set(x, "noTTYOutput", js.undefined)
       
-      @scala.inline
-      def setNotTTYSchedule(value: Double): Self = StObject.set(x, "notTTYSchedule", value.asInstanceOf[js.Any])
+      inline def setNotTTYSchedule(value: Double): Self = StObject.set(x, "notTTYSchedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotTTYScheduleUndefined: Self = StObject.set(x, "notTTYSchedule", js.undefined)
+      inline def setNotTTYScheduleUndefined: Self = StObject.set(x, "notTTYSchedule", js.undefined)
       
-      @scala.inline
-      def setStopOnComplete(value: Boolean): Self = StObject.set(x, "stopOnComplete", value.asInstanceOf[js.Any])
+      inline def setStopOnComplete(value: Boolean): Self = StObject.set(x, "stopOnComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopOnCompleteUndefined: Self = StObject.set(x, "stopOnComplete", js.undefined)
+      inline def setStopOnCompleteUndefined: Self = StObject.set(x, "stopOnComplete", js.undefined)
       
-      @scala.inline
-      def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      @scala.inline
-      def setSynchronousUpdate(value: Boolean): Self = StObject.set(x, "synchronousUpdate", value.asInstanceOf[js.Any])
+      inline def setSynchronousUpdate(value: Boolean): Self = StObject.set(x, "synchronousUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSynchronousUpdateUndefined: Self = StObject.set(x, "synchronousUpdate", js.undefined)
+      inline def setSynchronousUpdateUndefined: Self = StObject.set(x, "synchronousUpdate", js.undefined)
     }
   }
   
@@ -405,32 +346,24 @@ object mod {
   }
   object Params {
     
-    @scala.inline
-    def apply(eta: Double, maxWidth: Double, progress: Double, startTime: Date, total: Double, value: Double): Params = {
+    inline def apply(eta: Double, maxWidth: Double, progress: Double, startTime: Date, total: Double, value: Double): Params = {
       val __obj = js.Dynamic.literal(eta = eta.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Params]
     }
     
-    @scala.inline
-    implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+    extension [Self <: Params](x: Self) {
       
-      @scala.inline
-      def setEta(value: Double): Self = StObject.set(x, "eta", value.asInstanceOf[js.Any])
+      inline def setEta(value: Double): Self = StObject.set(x, "eta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -464,23 +397,18 @@ object mod {
   }
   object Preset {
     
-    @scala.inline
-    def apply(barCompleteChar: String, barIncompleteChar: String, format: String): Preset = {
+    inline def apply(barCompleteChar: String, barIncompleteChar: String, format: String): Preset = {
       val __obj = js.Dynamic.literal(barCompleteChar = barCompleteChar.asInstanceOf[js.Any], barIncompleteChar = barIncompleteChar.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
       __obj.asInstanceOf[Preset]
     }
     
-    @scala.inline
-    implicit class PresetMutableBuilder[Self <: Preset] (val x: Self) extends AnyVal {
+    extension [Self <: Preset](x: Self) {
       
-      @scala.inline
-      def setBarCompleteChar(value: String): Self = StObject.set(x, "barCompleteChar", value.asInstanceOf[js.Any])
+      inline def setBarCompleteChar(value: String): Self = StObject.set(x, "barCompleteChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarIncompleteChar(value: String): Self = StObject.set(x, "barIncompleteChar", value.asInstanceOf[js.Any])
+      inline def setBarIncompleteChar(value: String): Self = StObject.set(x, "barIncompleteChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
   }
 }

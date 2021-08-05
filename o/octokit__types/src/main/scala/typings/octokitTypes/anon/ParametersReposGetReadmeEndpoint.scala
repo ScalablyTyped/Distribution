@@ -18,8 +18,7 @@ trait ParametersReposGetReadmeEndpoint extends StObject {
 }
 object ParametersReposGetReadmeEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposGetReadmeEndpoint,
     request: ReposGetReadmeRequestOptions,
     response: OctokitResponse[ReposGetReadmeResponseData]
@@ -28,16 +27,12 @@ object ParametersReposGetReadmeEndpoint {
     __obj.asInstanceOf[ParametersReposGetReadmeEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposGetReadmeEndpointMutableBuilder[Self <: ParametersReposGetReadmeEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposGetReadmeEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposGetReadmeEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposGetReadmeEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposGetReadmeRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposGetReadmeRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetReadmeResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetReadmeResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

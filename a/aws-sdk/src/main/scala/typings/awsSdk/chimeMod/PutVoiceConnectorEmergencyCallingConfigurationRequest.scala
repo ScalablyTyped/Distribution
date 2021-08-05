@@ -18,19 +18,15 @@ trait PutVoiceConnectorEmergencyCallingConfigurationRequest extends StObject {
 }
 object PutVoiceConnectorEmergencyCallingConfigurationRequest {
   
-  @scala.inline
-  def apply(EmergencyCallingConfiguration: EmergencyCallingConfiguration, VoiceConnectorId: NonEmptyString): PutVoiceConnectorEmergencyCallingConfigurationRequest = {
+  inline def apply(EmergencyCallingConfiguration: EmergencyCallingConfiguration, VoiceConnectorId: NonEmptyString): PutVoiceConnectorEmergencyCallingConfigurationRequest = {
     val __obj = js.Dynamic.literal(EmergencyCallingConfiguration = EmergencyCallingConfiguration.asInstanceOf[js.Any], VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutVoiceConnectorEmergencyCallingConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class PutVoiceConnectorEmergencyCallingConfigurationRequestMutableBuilder[Self <: PutVoiceConnectorEmergencyCallingConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutVoiceConnectorEmergencyCallingConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setEmergencyCallingConfiguration(value: EmergencyCallingConfiguration): Self = StObject.set(x, "EmergencyCallingConfiguration", value.asInstanceOf[js.Any])
+    inline def setEmergencyCallingConfiguration(value: EmergencyCallingConfiguration): Self = StObject.set(x, "EmergencyCallingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
+    inline def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait CheckinNote extends StObject {
 }
 object CheckinNote {
   
-  @scala.inline
-  def apply(name: String, value: String): CheckinNote = {
+  inline def apply(name: String, value: String): CheckinNote = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckinNote]
   }
   
-  @scala.inline
-  implicit class CheckinNoteMutableBuilder[Self <: CheckinNote] (val x: Self) extends AnyVal {
+  extension [Self <: CheckinNote](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

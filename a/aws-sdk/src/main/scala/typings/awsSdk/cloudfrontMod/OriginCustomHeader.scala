@@ -18,19 +18,15 @@ trait OriginCustomHeader extends StObject {
 }
 object OriginCustomHeader {
   
-  @scala.inline
-  def apply(HeaderName: String, HeaderValue: String): OriginCustomHeader = {
+  inline def apply(HeaderName: String, HeaderValue: String): OriginCustomHeader = {
     val __obj = js.Dynamic.literal(HeaderName = HeaderName.asInstanceOf[js.Any], HeaderValue = HeaderValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginCustomHeader]
   }
   
-  @scala.inline
-  implicit class OriginCustomHeaderMutableBuilder[Self <: OriginCustomHeader] (val x: Self) extends AnyVal {
+  extension [Self <: OriginCustomHeader](x: Self) {
     
-    @scala.inline
-    def setHeaderName(value: String): Self = StObject.set(x, "HeaderName", value.asInstanceOf[js.Any])
+    inline def setHeaderName(value: String): Self = StObject.set(x, "HeaderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderValue(value: String): Self = StObject.set(x, "HeaderValue", value.asInstanceOf[js.Any])
+    inline def setHeaderValue(value: String): Self = StObject.set(x, "HeaderValue", value.asInstanceOf[js.Any])
   }
 }

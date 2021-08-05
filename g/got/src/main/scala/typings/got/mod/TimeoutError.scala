@@ -28,13 +28,10 @@ object TimeoutError {
   @js.native
   val ^ : Instantiable0[TimeoutError] = js.native
   
-  @scala.inline
-  implicit class TimeoutErrorMutableBuilder[Self <: TimeoutError] (val x: Self) extends AnyVal {
+  extension [Self <: TimeoutError](x: Self) {
     
-    @scala.inline
-    def setEvent(value: lookup | connect | secureConnect | socket | response | send | request): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: lookup | connect | secureConnect | socket | response | send | request): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: typings.got.gotStrings.TimeoutError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.got.gotStrings.TimeoutError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

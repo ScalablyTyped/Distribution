@@ -20,25 +20,19 @@ trait UpdatesParams extends StObject {
 }
 object UpdatesParams {
   
-  @scala.inline
-  def apply(feed: longpoll | continuous | eventsource, heartbeat: Boolean, since: String, timeout: Double): UpdatesParams = {
+  inline def apply(feed: longpoll | continuous | eventsource, heartbeat: Boolean, since: String, timeout: Double): UpdatesParams = {
     val __obj = js.Dynamic.literal(feed = feed.asInstanceOf[js.Any], heartbeat = heartbeat.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatesParams]
   }
   
-  @scala.inline
-  implicit class UpdatesParamsMutableBuilder[Self <: UpdatesParams] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatesParams](x: Self) {
     
-    @scala.inline
-    def setFeed(value: longpoll | continuous | eventsource): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
+    inline def setFeed(value: longpoll | continuous | eventsource): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeartbeat(value: Boolean): Self = StObject.set(x, "heartbeat", value.asInstanceOf[js.Any])
+    inline def setHeartbeat(value: Boolean): Self = StObject.set(x, "heartbeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

@@ -14,31 +14,23 @@ trait DeleteUserstate extends StObject {
 }
 object DeleteUserstate {
   
-  @scala.inline
-  def apply(): DeleteUserstate = {
+  inline def apply(): DeleteUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteUserstate]
   }
   
-  @scala.inline
-  implicit class DeleteUserstateMutableBuilder[Self <: DeleteUserstate] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteUserstate](x: Self) {
     
-    @scala.inline
-    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+    inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
+    inline def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def `setTarget-msg-id`(value: String): Self = StObject.set(x, "target-msg-id", value.asInstanceOf[js.Any])
+    inline def `setTarget-msg-id`(value: String): Self = StObject.set(x, "target-msg-id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTarget-msg-idUndefined`: Self = StObject.set(x, "target-msg-id", js.undefined)
+    inline def `setTarget-msg-idUndefined`: Self = StObject.set(x, "target-msg-id", js.undefined)
   }
 }

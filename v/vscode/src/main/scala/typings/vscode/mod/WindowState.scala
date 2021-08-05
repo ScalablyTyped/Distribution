@@ -13,16 +13,13 @@ trait WindowState extends StObject {
 }
 object WindowState {
   
-  @scala.inline
-  def apply(focused: Boolean): WindowState = {
+  inline def apply(focused: Boolean): WindowState = {
     val __obj = js.Dynamic.literal(focused = focused.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowState]
   }
   
-  @scala.inline
-  implicit class WindowStateMutableBuilder[Self <: WindowState] (val x: Self) extends AnyVal {
+  extension [Self <: WindowState](x: Self) {
     
-    @scala.inline
-    def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+    inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
   }
 }

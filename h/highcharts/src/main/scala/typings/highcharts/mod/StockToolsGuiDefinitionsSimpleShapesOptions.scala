@@ -20,40 +20,29 @@ trait StockToolsGuiDefinitionsSimpleShapesOptions extends StObject {
 }
 object StockToolsGuiDefinitionsSimpleShapesOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsSimpleShapesOptions = {
+  inline def apply(): StockToolsGuiDefinitionsSimpleShapesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsSimpleShapesOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsSimpleShapesOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsSimpleShapesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsSimpleShapesOptions](x: Self) {
     
-    @scala.inline
-    def setCircle(value: StockToolsGuiDefinitionsSimpleShapesCircleOptions): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: StockToolsGuiDefinitionsSimpleShapesCircleOptions): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+    inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setLabel(value: StockToolsGuiDefinitionsSimpleShapesLabelOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: StockToolsGuiDefinitionsSimpleShapesLabelOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setRectangle(value: StockToolsGuiDefinitionsSimpleShapesRectangleOptions): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
+    inline def setRectangle(value: StockToolsGuiDefinitionsSimpleShapesRectangleOptions): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
+    inline def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
   }
 }

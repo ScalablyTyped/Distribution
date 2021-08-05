@@ -85,94 +85,65 @@ trait SchemaAccount extends StObject {
 }
 object SchemaAccount {
   
-  @scala.inline
-  def apply(): SchemaAccount = {
+  inline def apply(): SchemaAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccount]
   }
   
-  @scala.inline
-  implicit class SchemaAccountMutableBuilder[Self <: SchemaAccount] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccount](x: Self) {
     
-    @scala.inline
-    def setAdultContent(value: Boolean): Self = StObject.set(x, "adultContent", value.asInstanceOf[js.Any])
+    inline def setAdultContent(value: Boolean): Self = StObject.set(x, "adultContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdultContentUndefined: Self = StObject.set(x, "adultContent", js.undefined)
+    inline def setAdultContentUndefined: Self = StObject.set(x, "adultContent", js.undefined)
     
-    @scala.inline
-    def setAdwordsLinks(value: js.Array[SchemaAccountAdwordsLink]): Self = StObject.set(x, "adwordsLinks", value.asInstanceOf[js.Any])
+    inline def setAdwordsLinks(value: js.Array[SchemaAccountAdwordsLink]): Self = StObject.set(x, "adwordsLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdwordsLinksUndefined: Self = StObject.set(x, "adwordsLinks", js.undefined)
+    inline def setAdwordsLinksUndefined: Self = StObject.set(x, "adwordsLinks", js.undefined)
     
-    @scala.inline
-    def setAdwordsLinksVarargs(value: SchemaAccountAdwordsLink*): Self = StObject.set(x, "adwordsLinks", js.Array(value :_*))
+    inline def setAdwordsLinksVarargs(value: SchemaAccountAdwordsLink*): Self = StObject.set(x, "adwordsLinks", js.Array(value :_*))
     
-    @scala.inline
-    def setBusinessInformation(value: SchemaAccountBusinessInformation): Self = StObject.set(x, "businessInformation", value.asInstanceOf[js.Any])
+    inline def setBusinessInformation(value: SchemaAccountBusinessInformation): Self = StObject.set(x, "businessInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusinessInformationUndefined: Self = StObject.set(x, "businessInformation", js.undefined)
+    inline def setBusinessInformationUndefined: Self = StObject.set(x, "businessInformation", js.undefined)
     
-    @scala.inline
-    def setGoogleMyBusinessLink(value: SchemaAccountGoogleMyBusinessLink): Self = StObject.set(x, "googleMyBusinessLink", value.asInstanceOf[js.Any])
+    inline def setGoogleMyBusinessLink(value: SchemaAccountGoogleMyBusinessLink): Self = StObject.set(x, "googleMyBusinessLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleMyBusinessLinkUndefined: Self = StObject.set(x, "googleMyBusinessLink", js.undefined)
+    inline def setGoogleMyBusinessLinkUndefined: Self = StObject.set(x, "googleMyBusinessLink", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReviewsUrl(value: String): Self = StObject.set(x, "reviewsUrl", value.asInstanceOf[js.Any])
+    inline def setReviewsUrl(value: String): Self = StObject.set(x, "reviewsUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewsUrlUndefined: Self = StObject.set(x, "reviewsUrl", js.undefined)
+    inline def setReviewsUrlUndefined: Self = StObject.set(x, "reviewsUrl", js.undefined)
     
-    @scala.inline
-    def setSellerId(value: String): Self = StObject.set(x, "sellerId", value.asInstanceOf[js.Any])
+    inline def setSellerId(value: String): Self = StObject.set(x, "sellerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSellerIdUndefined: Self = StObject.set(x, "sellerId", js.undefined)
+    inline def setSellerIdUndefined: Self = StObject.set(x, "sellerId", js.undefined)
     
-    @scala.inline
-    def setUsers(value: js.Array[SchemaAccountUser]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[SchemaAccountUser]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+    inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
-    @scala.inline
-    def setUsersVarargs(value: SchemaAccountUser*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: SchemaAccountUser*): Self = StObject.set(x, "users", js.Array(value :_*))
     
-    @scala.inline
-    def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
+    inline def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
+    inline def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
     
-    @scala.inline
-    def setYoutubeChannelLinks(value: js.Array[SchemaAccountYouTubeChannelLink]): Self = StObject.set(x, "youtubeChannelLinks", value.asInstanceOf[js.Any])
+    inline def setYoutubeChannelLinks(value: js.Array[SchemaAccountYouTubeChannelLink]): Self = StObject.set(x, "youtubeChannelLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYoutubeChannelLinksUndefined: Self = StObject.set(x, "youtubeChannelLinks", js.undefined)
+    inline def setYoutubeChannelLinksUndefined: Self = StObject.set(x, "youtubeChannelLinks", js.undefined)
     
-    @scala.inline
-    def setYoutubeChannelLinksVarargs(value: SchemaAccountYouTubeChannelLink*): Self = StObject.set(x, "youtubeChannelLinks", js.Array(value :_*))
+    inline def setYoutubeChannelLinksVarargs(value: SchemaAccountYouTubeChannelLink*): Self = StObject.set(x, "youtubeChannelLinks", js.Array(value :_*))
   }
 }

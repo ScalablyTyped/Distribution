@@ -91,8 +91,7 @@ trait ChargeResource
 }
 object ChargeResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addresses: PartialRecordCryptoNamest,
     code: String,
     created_at: Timestamp,
@@ -111,64 +110,44 @@ object ChargeResource {
     __obj.asInstanceOf[ChargeResource]
   }
   
-  @scala.inline
-  implicit class ChargeResourceMutableBuilder[Self <: ChargeResource] (val x: Self) extends AnyVal {
+  extension [Self <: ChargeResource](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: PartialRecordCryptoNamest): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: PartialRecordCryptoNamest): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckout(value: Id): Self = StObject.set(x, "checkout", value.asInstanceOf[js.Any])
+    inline def setCheckout(value: Id): Self = StObject.set(x, "checkout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckoutUndefined: Self = StObject.set(x, "checkout", js.undefined)
+    inline def setCheckoutUndefined: Self = StObject.set(x, "checkout", js.undefined)
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmed_at(value: Timestamp): Self = StObject.set(x, "confirmed_at", value.asInstanceOf[js.Any])
+    inline def setConfirmed_at(value: Timestamp): Self = StObject.set(x, "confirmed_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmed_atUndefined: Self = StObject.set(x, "confirmed_at", js.undefined)
+    inline def setConfirmed_atUndefined: Self = StObject.set(x, "confirmed_at", js.undefined)
     
-    @scala.inline
-    def setCreated_at(value: Timestamp): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: Timestamp): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpires_at(value: Timestamp): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
+    inline def setExpires_at(value: Timestamp): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHosted_url(value: String): Self = StObject.set(x, "hosted_url", value.asInstanceOf[js.Any])
+    inline def setHosted_url(value: String): Self = StObject.set(x, "hosted_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogo_url(value: String): Self = StObject.set(x, "logo_url", value.asInstanceOf[js.Any])
+    inline def setLogo_url(value: String): Self = StObject.set(x, "logo_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogo_urlUndefined: Self = StObject.set(x, "logo_url", js.undefined)
+    inline def setLogo_urlUndefined: Self = StObject.set(x, "logo_url", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: KeyVal): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: KeyVal): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayments(value: js.Array[Block]): Self = StObject.set(x, "payments", value.asInstanceOf[js.Any])
+    inline def setPayments(value: js.Array[Block]): Self = StObject.set(x, "payments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentsVarargs(value: Block*): Self = StObject.set(x, "payments", js.Array(value :_*))
+    inline def setPaymentsVarargs(value: Block*): Self = StObject.set(x, "payments", js.Array(value :_*))
     
-    @scala.inline
-    def setPricing(value: Pricing): Self = StObject.set(x, "pricing", value.asInstanceOf[js.Any])
+    inline def setPricing(value: Pricing): Self = StObject.set(x, "pricing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: charge): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: charge): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeline(value: js.Array[Context]): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
+    inline def setTimeline(value: js.Array[Context]): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimelineVarargs(value: Context*): Self = StObject.set(x, "timeline", js.Array(value :_*))
+    inline def setTimelineVarargs(value: Context*): Self = StObject.set(x, "timeline", js.Array(value :_*))
   }
 }

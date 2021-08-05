@@ -11,19 +11,15 @@ trait GoogleCloudDialogflowV2FulfillmentFeature extends StObject {
 }
 object GoogleCloudDialogflowV2FulfillmentFeature {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2FulfillmentFeature = {
+  inline def apply(): GoogleCloudDialogflowV2FulfillmentFeature = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2FulfillmentFeature]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2FulfillmentFeatureMutableBuilder[Self <: GoogleCloudDialogflowV2FulfillmentFeature] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2FulfillmentFeature](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait CheckboxProps extends StObject {
 }
 object CheckboxProps {
   
-  @scala.inline
-  def apply(listPrefixCls: String, prefixCls: String): CheckboxProps = {
+  inline def apply(listPrefixCls: String, prefixCls: String): CheckboxProps = {
     val __obj = js.Dynamic.literal(listPrefixCls = listPrefixCls.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckboxProps]
   }
   
-  @scala.inline
-  implicit class CheckboxPropsMutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
+  extension [Self <: CheckboxProps](x: Self) {
     
-    @scala.inline
-    def setListPrefixCls(value: String): Self = StObject.set(x, "listPrefixCls", value.asInstanceOf[js.Any])
+    inline def setListPrefixCls(value: String): Self = StObject.set(x, "listPrefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
   }
 }

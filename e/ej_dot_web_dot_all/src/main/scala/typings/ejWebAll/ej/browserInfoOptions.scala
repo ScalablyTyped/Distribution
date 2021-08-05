@@ -16,25 +16,19 @@ trait browserInfoOptions extends StObject {
 }
 object browserInfoOptions {
   
-  @scala.inline
-  def apply(culture: js.Any, isMSPointerEnabled: Boolean, name: String, version: String): browserInfoOptions = {
+  inline def apply(culture: js.Any, isMSPointerEnabled: Boolean, name: String, version: String): browserInfoOptions = {
     val __obj = js.Dynamic.literal(culture = culture.asInstanceOf[js.Any], isMSPointerEnabled = isMSPointerEnabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[browserInfoOptions]
   }
   
-  @scala.inline
-  implicit class browserInfoOptionsMutableBuilder[Self <: browserInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: browserInfoOptions](x: Self) {
     
-    @scala.inline
-    def setCulture(value: js.Any): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
+    inline def setCulture(value: js.Any): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMSPointerEnabled(value: Boolean): Self = StObject.set(x, "isMSPointerEnabled", value.asInstanceOf[js.Any])
+    inline def setIsMSPointerEnabled(value: Boolean): Self = StObject.set(x, "isMSPointerEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

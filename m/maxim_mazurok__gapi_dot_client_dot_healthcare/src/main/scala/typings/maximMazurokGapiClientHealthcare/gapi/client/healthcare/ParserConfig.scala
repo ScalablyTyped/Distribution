@@ -14,25 +14,19 @@ trait ParserConfig extends StObject {
 }
 object ParserConfig {
   
-  @scala.inline
-  def apply(): ParserConfig = {
+  inline def apply(): ParserConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParserConfig]
   }
   
-  @scala.inline
-  implicit class ParserConfigMutableBuilder[Self <: ParserConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ParserConfig](x: Self) {
     
-    @scala.inline
-    def setAllowNullHeader(value: Boolean): Self = StObject.set(x, "allowNullHeader", value.asInstanceOf[js.Any])
+    inline def setAllowNullHeader(value: Boolean): Self = StObject.set(x, "allowNullHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowNullHeaderUndefined: Self = StObject.set(x, "allowNullHeader", js.undefined)
+    inline def setAllowNullHeaderUndefined: Self = StObject.set(x, "allowNullHeader", js.undefined)
     
-    @scala.inline
-    def setSegmentTerminator(value: String): Self = StObject.set(x, "segmentTerminator", value.asInstanceOf[js.Any])
+    inline def setSegmentTerminator(value: String): Self = StObject.set(x, "segmentTerminator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentTerminatorUndefined: Self = StObject.set(x, "segmentTerminator", js.undefined)
+    inline def setSegmentTerminatorUndefined: Self = StObject.set(x, "segmentTerminator", js.undefined)
   }
 }

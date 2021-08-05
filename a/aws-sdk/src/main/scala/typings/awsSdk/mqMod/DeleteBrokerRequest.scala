@@ -13,16 +13,13 @@ trait DeleteBrokerRequest extends StObject {
 }
 object DeleteBrokerRequest {
   
-  @scala.inline
-  def apply(BrokerId: string): DeleteBrokerRequest = {
+  inline def apply(BrokerId: string): DeleteBrokerRequest = {
     val __obj = js.Dynamic.literal(BrokerId = BrokerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBrokerRequest]
   }
   
-  @scala.inline
-  implicit class DeleteBrokerRequestMutableBuilder[Self <: DeleteBrokerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBrokerRequest](x: Self) {
     
-    @scala.inline
-    def setBrokerId(value: string): Self = StObject.set(x, "BrokerId", value.asInstanceOf[js.Any])
+    inline def setBrokerId(value: string): Self = StObject.set(x, "BrokerId", value.asInstanceOf[js.Any])
   }
 }

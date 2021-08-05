@@ -31,36 +31,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleBreak extends StObject
 object styleBreak {
   
-  @scala.inline
-  def styleBreakAlways: `2` = 2.asInstanceOf[`2`]
+  inline def styleBreakAlways: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleBreakAuto: `1` = 1.asInstanceOf[`1`]
+  inline def styleBreakAuto: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleBreakAvoid: `3` = 3.asInstanceOf[`3`]
+  inline def styleBreakAvoid: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleBreakAvoidColumn: `9` = 9.asInstanceOf[`9`]
+  inline def styleBreakAvoidColumn: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def styleBreakAvoidPage: `8` = 8.asInstanceOf[`8`]
+  inline def styleBreakAvoidPage: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def styleBreakColumn: `7` = 7.asInstanceOf[`7`]
+  inline def styleBreakColumn: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def styleBreakLeft: `4` = 4.asInstanceOf[`4`]
+  inline def styleBreakLeft: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def styleBreakNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleBreakNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleBreakPage: `6` = 6.asInstanceOf[`6`]
+  inline def styleBreakPage: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def styleBreakRight: `5` = 5.asInstanceOf[`5`]
+  inline def styleBreakRight: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def styleBreak_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleBreak_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

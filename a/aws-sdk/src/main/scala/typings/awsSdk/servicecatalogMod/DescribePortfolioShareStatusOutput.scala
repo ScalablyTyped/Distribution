@@ -33,43 +33,31 @@ trait DescribePortfolioShareStatusOutput extends StObject {
 }
 object DescribePortfolioShareStatusOutput {
   
-  @scala.inline
-  def apply(): DescribePortfolioShareStatusOutput = {
+  inline def apply(): DescribePortfolioShareStatusOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePortfolioShareStatusOutput]
   }
   
-  @scala.inline
-  implicit class DescribePortfolioShareStatusOutputMutableBuilder[Self <: DescribePortfolioShareStatusOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePortfolioShareStatusOutput](x: Self) {
     
-    @scala.inline
-    def setOrganizationNodeValue(value: OrganizationNodeValue): Self = StObject.set(x, "OrganizationNodeValue", value.asInstanceOf[js.Any])
+    inline def setOrganizationNodeValue(value: OrganizationNodeValue): Self = StObject.set(x, "OrganizationNodeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationNodeValueUndefined: Self = StObject.set(x, "OrganizationNodeValue", js.undefined)
+    inline def setOrganizationNodeValueUndefined: Self = StObject.set(x, "OrganizationNodeValue", js.undefined)
     
-    @scala.inline
-    def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
+    inline def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortfolioIdUndefined: Self = StObject.set(x, "PortfolioId", js.undefined)
+    inline def setPortfolioIdUndefined: Self = StObject.set(x, "PortfolioId", js.undefined)
     
-    @scala.inline
-    def setPortfolioShareToken(value: Id): Self = StObject.set(x, "PortfolioShareToken", value.asInstanceOf[js.Any])
+    inline def setPortfolioShareToken(value: Id): Self = StObject.set(x, "PortfolioShareToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortfolioShareTokenUndefined: Self = StObject.set(x, "PortfolioShareToken", js.undefined)
+    inline def setPortfolioShareTokenUndefined: Self = StObject.set(x, "PortfolioShareToken", js.undefined)
     
-    @scala.inline
-    def setShareDetails(value: ShareDetails): Self = StObject.set(x, "ShareDetails", value.asInstanceOf[js.Any])
+    inline def setShareDetails(value: ShareDetails): Self = StObject.set(x, "ShareDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareDetailsUndefined: Self = StObject.set(x, "ShareDetails", js.undefined)
+    inline def setShareDetailsUndefined: Self = StObject.set(x, "ShareDetails", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ShareStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ShareStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteClusterSecurityGroupMessage extends StObject {
 }
 object DeleteClusterSecurityGroupMessage {
   
-  @scala.inline
-  def apply(ClusterSecurityGroupName: String): DeleteClusterSecurityGroupMessage = {
+  inline def apply(ClusterSecurityGroupName: String): DeleteClusterSecurityGroupMessage = {
     val __obj = js.Dynamic.literal(ClusterSecurityGroupName = ClusterSecurityGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteClusterSecurityGroupMessage]
   }
   
-  @scala.inline
-  implicit class DeleteClusterSecurityGroupMessageMutableBuilder[Self <: DeleteClusterSecurityGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteClusterSecurityGroupMessage](x: Self) {
     
-    @scala.inline
-    def setClusterSecurityGroupName(value: String): Self = StObject.set(x, "ClusterSecurityGroupName", value.asInstanceOf[js.Any])
+    inline def setClusterSecurityGroupName(value: String): Self = StObject.set(x, "ClusterSecurityGroupName", value.asInstanceOf[js.Any])
   }
 }

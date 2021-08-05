@@ -35,46 +35,33 @@ trait Dataset extends StObject {
 }
 object Dataset {
   
-  @scala.inline
-  def apply(): Dataset = {
+  inline def apply(): Dataset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dataset]
   }
   
-  @scala.inline
-  implicit class DatasetMutableBuilder[Self <: Dataset] (val x: Self) extends AnyVal {
+  extension [Self <: Dataset](x: Self) {
     
-    @scala.inline
-    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
-    @scala.inline
-    def setMaxEndTimeNs(value: String): Self = StObject.set(x, "maxEndTimeNs", value.asInstanceOf[js.Any])
+    inline def setMaxEndTimeNs(value: String): Self = StObject.set(x, "maxEndTimeNs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxEndTimeNsUndefined: Self = StObject.set(x, "maxEndTimeNs", js.undefined)
+    inline def setMaxEndTimeNsUndefined: Self = StObject.set(x, "maxEndTimeNs", js.undefined)
     
-    @scala.inline
-    def setMinStartTimeNs(value: String): Self = StObject.set(x, "minStartTimeNs", value.asInstanceOf[js.Any])
+    inline def setMinStartTimeNs(value: String): Self = StObject.set(x, "minStartTimeNs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinStartTimeNsUndefined: Self = StObject.set(x, "minStartTimeNs", js.undefined)
+    inline def setMinStartTimeNsUndefined: Self = StObject.set(x, "minStartTimeNs", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPoint(value: js.Array[DataPoint]): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: js.Array[DataPoint]): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
-    @scala.inline
-    def setPointVarargs(value: DataPoint*): Self = StObject.set(x, "point", js.Array(value :_*))
+    inline def setPointVarargs(value: DataPoint*): Self = StObject.set(x, "point", js.Array(value :_*))
   }
 }

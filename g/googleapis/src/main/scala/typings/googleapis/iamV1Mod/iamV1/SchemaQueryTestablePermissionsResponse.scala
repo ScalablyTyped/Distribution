@@ -22,28 +22,21 @@ trait SchemaQueryTestablePermissionsResponse extends StObject {
 }
 object SchemaQueryTestablePermissionsResponse {
   
-  @scala.inline
-  def apply(): SchemaQueryTestablePermissionsResponse = {
+  inline def apply(): SchemaQueryTestablePermissionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQueryTestablePermissionsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaQueryTestablePermissionsResponseMutableBuilder[Self <: SchemaQueryTestablePermissionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQueryTestablePermissionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPermissions(value: js.Array[SchemaPermission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[SchemaPermission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: SchemaPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: SchemaPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
   }
 }

@@ -20,26 +20,20 @@ trait BinaryExpression
 }
 object BinaryExpression {
   
-  @scala.inline
-  def apply(left: Expression, operator: BinaryOperator, right: Expression): BinaryExpression = {
+  inline def apply(left: Expression, operator: BinaryOperator, right: Expression): BinaryExpression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BinaryExpression")
     __obj.asInstanceOf[BinaryExpression]
   }
   
-  @scala.inline
-  implicit class BinaryExpressionMutableBuilder[Self <: BinaryExpression] (val x: Self) extends AnyVal {
+  extension [Self <: BinaryExpression](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: BinaryOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: BinaryOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.BinaryExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.BinaryExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

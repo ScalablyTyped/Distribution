@@ -18,25 +18,19 @@ trait GetAppsListResponse extends StObject {
 }
 object GetAppsListResponse {
   
-  @scala.inline
-  def apply(): GetAppsListResponse = {
+  inline def apply(): GetAppsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAppsListResponse]
   }
   
-  @scala.inline
-  implicit class GetAppsListResponseMutableBuilder[Self <: GetAppsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAppsListResponse](x: Self) {
     
-    @scala.inline
-    def setAppsList(value: AppsListData): Self = StObject.set(x, "AppsList", value.asInstanceOf[js.Any])
+    inline def setAppsList(value: AppsListData): Self = StObject.set(x, "AppsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppsListArn(value: ResourceArn): Self = StObject.set(x, "AppsListArn", value.asInstanceOf[js.Any])
+    inline def setAppsListArn(value: ResourceArn): Self = StObject.set(x, "AppsListArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppsListArnUndefined: Self = StObject.set(x, "AppsListArn", js.undefined)
+    inline def setAppsListArnUndefined: Self = StObject.set(x, "AppsListArn", js.undefined)
     
-    @scala.inline
-    def setAppsListUndefined: Self = StObject.set(x, "AppsList", js.undefined)
+    inline def setAppsListUndefined: Self = StObject.set(x, "AppsList", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait DialogMessages extends StObject {
 }
 object DialogMessages {
   
-  @scala.inline
-  def apply(): DialogMessages = {
+  inline def apply(): DialogMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogMessages]
   }
   
-  @scala.inline
-  implicit class DialogMessagesMutableBuilder[Self <: DialogMessages] (val x: Self) extends AnyVal {
+  extension [Self <: DialogMessages](x: Self) {
     
-    @scala.inline
-    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setPromptInput(value: String): Self = StObject.set(x, "promptInput", value.asInstanceOf[js.Any])
+    inline def setPromptInput(value: String): Self = StObject.set(x, "promptInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptInputUndefined: Self = StObject.set(x, "promptInput", js.undefined)
+    inline def setPromptInputUndefined: Self = StObject.set(x, "promptInput", js.undefined)
   }
 }

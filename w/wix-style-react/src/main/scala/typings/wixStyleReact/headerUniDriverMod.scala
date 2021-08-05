@@ -17,8 +17,7 @@ object headerUniDriverMod {
   }
   object HeaderUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -29,14 +28,11 @@ object headerUniDriverMod {
       __obj.asInstanceOf[HeaderUniDriver]
     }
     
-    @scala.inline
-    implicit class HeaderUniDriverMutableBuilder[Self <: HeaderUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderUniDriver](x: Self) {
       
-      @scala.inline
-      def setSubtitle(value: () => js.Promise[String]): Self = StObject.set(x, "subtitle", js.Any.fromFunction0(value))
+      inline def setSubtitle(value: () => js.Promise[String]): Self = StObject.set(x, "subtitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTitle(value: () => js.Promise[String]): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
+      inline def setTitle(value: () => js.Promise[String]): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
     }
   }
 }

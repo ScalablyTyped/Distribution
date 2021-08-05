@@ -32,8 +32,7 @@ trait OnEventMetaData extends StObject {
 }
 object OnEventMetaData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     error_code: String,
     error_message: String,
     error_type: String,
@@ -51,43 +50,30 @@ object OnEventMetaData {
     __obj.asInstanceOf[OnEventMetaData]
   }
   
-  @scala.inline
-  implicit class OnEventMetaDataMutableBuilder[Self <: OnEventMetaData] (val x: Self) extends AnyVal {
+  extension [Self <: OnEventMetaData](x: Self) {
     
-    @scala.inline
-    def setError_code(value: String): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
+    inline def setError_code(value: String): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
+    inline def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError_type(value: String): Self = StObject.set(x, "error_type", value.asInstanceOf[js.Any])
+    inline def setError_type(value: String): Self = StObject.set(x, "error_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExit_status(value: ExitStatus): Self = StObject.set(x, "exit_status", value.asInstanceOf[js.Any])
+    inline def setExit_status(value: ExitStatus): Self = StObject.set(x, "exit_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstitution_id(value: String): Self = StObject.set(x, "institution_id", value.asInstanceOf[js.Any])
+    inline def setInstitution_id(value: String): Self = StObject.set(x, "institution_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstitution_name(value: String): Self = StObject.set(x, "institution_name", value.asInstanceOf[js.Any])
+    inline def setInstitution_name(value: String): Self = StObject.set(x, "institution_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstitution_search_query(value: String): Self = StObject.set(x, "institution_search_query", value.asInstanceOf[js.Any])
+    inline def setInstitution_search_query(value: String): Self = StObject.set(x, "institution_search_query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink_session_id(value: String): Self = StObject.set(x, "link_session_id", value.asInstanceOf[js.Any])
+    inline def setLink_session_id(value: String): Self = StObject.set(x, "link_session_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMfa_type(value: String): Self = StObject.set(x, "mfa_type", value.asInstanceOf[js.Any])
+    inline def setMfa_type(value: String): Self = StObject.set(x, "mfa_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
+    inline def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView_name(value: ViewName): Self = StObject.set(x, "view_name", value.asInstanceOf[js.Any])
+    inline def setView_name(value: ViewName): Self = StObject.set(x, "view_name", value.asInstanceOf[js.Any])
   }
 }

@@ -11,16 +11,13 @@ trait GcpServiceAccount extends StObject {
 }
 object GcpServiceAccount {
   
-  @scala.inline
-  def apply(service_account_key_file_json: String): GcpServiceAccount = {
+  inline def apply(service_account_key_file_json: String): GcpServiceAccount = {
     val __obj = js.Dynamic.literal(service_account_key_file_json = service_account_key_file_json.asInstanceOf[js.Any])
     __obj.asInstanceOf[GcpServiceAccount]
   }
   
-  @scala.inline
-  implicit class GcpServiceAccountMutableBuilder[Self <: GcpServiceAccount] (val x: Self) extends AnyVal {
+  extension [Self <: GcpServiceAccount](x: Self) {
     
-    @scala.inline
-    def setService_account_key_file_json(value: String): Self = StObject.set(x, "service_account_key_file_json", value.asInstanceOf[js.Any])
+    inline def setService_account_key_file_json(value: String): Self = StObject.set(x, "service_account_key_file_json", value.asInstanceOf[js.Any])
   }
 }

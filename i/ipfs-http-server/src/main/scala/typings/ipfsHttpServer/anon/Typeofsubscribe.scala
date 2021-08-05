@@ -12,19 +12,15 @@ trait Typeofsubscribe extends StObject {
 }
 object Typeofsubscribe {
   
-  @scala.inline
-  def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options: TypeofoptionsTimeout): Typeofsubscribe = {
+  inline def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options: TypeofoptionsTimeout): Typeofsubscribe = {
     val __obj = js.Dynamic.literal(handler = js.Any.fromFunction2(handler), options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofsubscribe]
   }
   
-  @scala.inline
-  implicit class TypeofsubscribeMutableBuilder[Self <: Typeofsubscribe] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofsubscribe](x: Self) {
     
-    @scala.inline
-    def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+    inline def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions(value: TypeofoptionsTimeout): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: TypeofoptionsTimeout): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

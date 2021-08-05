@@ -26,12 +26,10 @@ object themeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createTheme(
+  inline def createTheme(
     tokens: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any) & StaticTheme
   ): RuntimeTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any]).asInstanceOf[RuntimeTheme]
-  @scala.inline
-  def createTheme(
+  inline def createTheme(
     tokens: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any) & StaticTheme,
     localDebugName: String
   ): RuntimeTheme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any], localDebugName.asInstanceOf[js.Any])).asInstanceOf[RuntimeTheme]
@@ -69,8 +67,7 @@ object themeMod {
   }
   object CommonTheme {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aliases: StringDictionary[hack | Tokens[shorthands]],
       breakpoints: js.Array[Double],
       shorthands: StringDictionary[js.Array[hack]]
@@ -79,20 +76,15 @@ object themeMod {
       __obj.asInstanceOf[CommonTheme]
     }
     
-    @scala.inline
-    implicit class CommonThemeMutableBuilder[Self <: CommonTheme] (val x: Self) extends AnyVal {
+    extension [Self <: CommonTheme](x: Self) {
       
-      @scala.inline
-      def setAliases(value: StringDictionary[hack | Tokens[shorthands]]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: StringDictionary[hack | Tokens[shorthands]]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakpoints(value: js.Array[Double]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+      inline def setBreakpoints(value: js.Array[Double]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakpointsVarargs(value: Double*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
+      inline def setBreakpointsVarargs(value: Double*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
       
-      @scala.inline
-      def setShorthands(value: StringDictionary[js.Array[hack]]): Self = StObject.set(x, "shorthands", value.asInstanceOf[js.Any])
+      inline def setShorthands(value: StringDictionary[js.Array[hack]]): Self = StObject.set(x, "shorthands", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,8 +96,7 @@ object themeMod {
   }
   object RuntimeTheme {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aliases: StringDictionary[hack | Tokens[shorthands]],
       breakpoints: js.Array[Double],
       ref: ThemeRef,
@@ -115,11 +106,9 @@ object themeMod {
       __obj.asInstanceOf[RuntimeTheme]
     }
     
-    @scala.inline
-    implicit class RuntimeThemeMutableBuilder[Self <: RuntimeTheme] (val x: Self) extends AnyVal {
+    extension [Self <: RuntimeTheme](x: Self) {
       
-      @scala.inline
-      def setRef(value: ThemeRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: ThemeRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,8 +128,7 @@ object themeMod {
   }
   object StaticTheme {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aliases: StringDictionary[hack | Tokens[shorthands]],
       breakpoints: js.Array[Double],
       matchers: propertyinkeyofCSSPropert,
@@ -151,14 +139,11 @@ object themeMod {
       __obj.asInstanceOf[StaticTheme]
     }
     
-    @scala.inline
-    implicit class StaticThemeMutableBuilder[Self <: StaticTheme] (val x: Self) extends AnyVal {
+    extension [Self <: StaticTheme](x: Self) {
       
-      @scala.inline
-      def setMatchers(value: propertyinkeyofCSSPropert): Self = StObject.set(x, "matchers", value.asInstanceOf[js.Any])
+      inline def setMatchers(value: propertyinkeyofCSSPropert): Self = StObject.set(x, "matchers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScales(value: BorderWidth): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+      inline def setScales(value: BorderWidth): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
     }
   }
   

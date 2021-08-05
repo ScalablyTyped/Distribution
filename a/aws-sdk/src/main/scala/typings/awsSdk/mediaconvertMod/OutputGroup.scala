@@ -33,46 +33,33 @@ trait OutputGroup extends StObject {
 }
 object OutputGroup {
   
-  @scala.inline
-  def apply(): OutputGroup = {
+  inline def apply(): OutputGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputGroup]
   }
   
-  @scala.inline
-  implicit class OutputGroupMutableBuilder[Self <: OutputGroup] (val x: Self) extends AnyVal {
+  extension [Self <: OutputGroup](x: Self) {
     
-    @scala.inline
-    def setAutomatedEncodingSettings(value: AutomatedEncodingSettings): Self = StObject.set(x, "AutomatedEncodingSettings", value.asInstanceOf[js.Any])
+    inline def setAutomatedEncodingSettings(value: AutomatedEncodingSettings): Self = StObject.set(x, "AutomatedEncodingSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomatedEncodingSettingsUndefined: Self = StObject.set(x, "AutomatedEncodingSettings", js.undefined)
+    inline def setAutomatedEncodingSettingsUndefined: Self = StObject.set(x, "AutomatedEncodingSettings", js.undefined)
     
-    @scala.inline
-    def setCustomName(value: string): Self = StObject.set(x, "CustomName", value.asInstanceOf[js.Any])
+    inline def setCustomName(value: string): Self = StObject.set(x, "CustomName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomNameUndefined: Self = StObject.set(x, "CustomName", js.undefined)
+    inline def setCustomNameUndefined: Self = StObject.set(x, "CustomName", js.undefined)
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setOutputGroupSettings(value: OutputGroupSettings): Self = StObject.set(x, "OutputGroupSettings", value.asInstanceOf[js.Any])
+    inline def setOutputGroupSettings(value: OutputGroupSettings): Self = StObject.set(x, "OutputGroupSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputGroupSettingsUndefined: Self = StObject.set(x, "OutputGroupSettings", js.undefined)
+    inline def setOutputGroupSettingsUndefined: Self = StObject.set(x, "OutputGroupSettings", js.undefined)
     
-    @scala.inline
-    def setOutputs(value: listOfOutput): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: listOfOutput): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
-    @scala.inline
-    def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
   }
 }

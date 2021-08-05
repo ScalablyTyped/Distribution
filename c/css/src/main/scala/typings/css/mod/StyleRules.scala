@@ -14,28 +14,21 @@ trait StyleRules extends StObject {
 }
 object StyleRules {
   
-  @scala.inline
-  def apply(rules: js.Array[Rule | Comment | AtRule]): StyleRules = {
+  inline def apply(rules: js.Array[Rule | Comment | AtRule]): StyleRules = {
     val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleRules]
   }
   
-  @scala.inline
-  implicit class StyleRulesMutableBuilder[Self <: StyleRules] (val x: Self) extends AnyVal {
+  extension [Self <: StyleRules](x: Self) {
     
-    @scala.inline
-    def setParsingErrors(value: js.Array[ParserError]): Self = StObject.set(x, "parsingErrors", value.asInstanceOf[js.Any])
+    inline def setParsingErrors(value: js.Array[ParserError]): Self = StObject.set(x, "parsingErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParsingErrorsUndefined: Self = StObject.set(x, "parsingErrors", js.undefined)
+    inline def setParsingErrorsUndefined: Self = StObject.set(x, "parsingErrors", js.undefined)
     
-    @scala.inline
-    def setParsingErrorsVarargs(value: ParserError*): Self = StObject.set(x, "parsingErrors", js.Array(value :_*))
+    inline def setParsingErrorsVarargs(value: ParserError*): Self = StObject.set(x, "parsingErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setRules(value: js.Array[Rule | Comment | AtRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[Rule | Comment | AtRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesVarargs(value: (Rule | Comment | AtRule)*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: (Rule | Comment | AtRule)*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

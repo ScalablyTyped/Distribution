@@ -13,16 +13,13 @@ trait UnassignInstanceRequest extends StObject {
 }
 object UnassignInstanceRequest {
   
-  @scala.inline
-  def apply(InstanceId: String): UnassignInstanceRequest = {
+  inline def apply(InstanceId: String): UnassignInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnassignInstanceRequest]
   }
   
-  @scala.inline
-  implicit class UnassignInstanceRequestMutableBuilder[Self <: UnassignInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UnassignInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

@@ -32,7 +32,7 @@ object schemaBuilderRdbmsSchemaBuilderMod {
     /* CompleteClass */
     override def build(): js.Promise[Unit] = js.native
     
-    var connection: Connection = js.native
+    /* protected */ var connection: Connection = js.native
     
     /**
       * Creates composite uniques which are missing in db yet.
@@ -109,7 +109,7 @@ object schemaBuilderRdbmsSchemaBuilderMod {
     /**
       * Returns only entities that should be synced in the database.
       */
-    val entityToSyncMetadatas: js.Array[EntityMetadata] = js.native
+    /* protected */ val entityToSyncMetadatas: js.Array[EntityMetadata] = js.native
     
     /**
       * Executes schema sync operations in a proper order.
@@ -131,7 +131,7 @@ object schemaBuilderRdbmsSchemaBuilderMod {
     /**
       * Used to execute schema creation queries in a single connection.
       */
-    var queryRunner: QueryRunner = js.native
+    /* protected */ var queryRunner: QueryRunner = js.native
     
     /**
       * Renames columns.
@@ -159,6 +159,6 @@ object schemaBuilderRdbmsSchemaBuilderMod {
     /**
       * Returns only entities that should be synced in the database.
       */
-    val viewEntityToSyncMetadatas: js.Array[EntityMetadata] = js.native
+    /* protected */ val viewEntityToSyncMetadatas: js.Array[EntityMetadata] = js.native
   }
 }

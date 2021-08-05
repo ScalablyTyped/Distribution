@@ -18,22 +18,17 @@ trait BufferParam extends StObject {
 }
 object BufferParam {
   
-  @scala.inline
-  def apply(newstate: String, oldstate: String, reason: loading | complete | stalled | error): BufferParam = {
+  inline def apply(newstate: String, oldstate: String, reason: loading | complete | stalled | error): BufferParam = {
     val __obj = js.Dynamic.literal(newstate = newstate.asInstanceOf[js.Any], oldstate = oldstate.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferParam]
   }
   
-  @scala.inline
-  implicit class BufferParamMutableBuilder[Self <: BufferParam] (val x: Self) extends AnyVal {
+  extension [Self <: BufferParam](x: Self) {
     
-    @scala.inline
-    def setNewstate(value: String): Self = StObject.set(x, "newstate", value.asInstanceOf[js.Any])
+    inline def setNewstate(value: String): Self = StObject.set(x, "newstate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldstate(value: String): Self = StObject.set(x, "oldstate", value.asInstanceOf[js.Any])
+    inline def setOldstate(value: String): Self = StObject.set(x, "oldstate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: loading | complete | stalled | error): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: loading | complete | stalled | error): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

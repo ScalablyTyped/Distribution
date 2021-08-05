@@ -18,28 +18,21 @@ trait DescribeManagedRuleGroupResponse extends StObject {
 }
 object DescribeManagedRuleGroupResponse {
   
-  @scala.inline
-  def apply(): DescribeManagedRuleGroupResponse = {
+  inline def apply(): DescribeManagedRuleGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeManagedRuleGroupResponse]
   }
   
-  @scala.inline
-  implicit class DescribeManagedRuleGroupResponseMutableBuilder[Self <: DescribeManagedRuleGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeManagedRuleGroupResponse](x: Self) {
     
-    @scala.inline
-    def setCapacity(value: CapacityUnit): Self = StObject.set(x, "Capacity", value.asInstanceOf[js.Any])
+    inline def setCapacity(value: CapacityUnit): Self = StObject.set(x, "Capacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityUndefined: Self = StObject.set(x, "Capacity", js.undefined)
+    inline def setCapacityUndefined: Self = StObject.set(x, "Capacity", js.undefined)
     
-    @scala.inline
-    def setRules(value: RuleSummaries): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: RuleSummaries): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: RuleSummary*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: RuleSummary*): Self = StObject.set(x, "Rules", js.Array(value :_*))
   }
 }

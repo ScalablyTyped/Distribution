@@ -17,31 +17,23 @@ trait RichMediaExitOverride extends StObject {
 }
 object RichMediaExitOverride {
   
-  @scala.inline
-  def apply(): RichMediaExitOverride = {
+  inline def apply(): RichMediaExitOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RichMediaExitOverride]
   }
   
-  @scala.inline
-  implicit class RichMediaExitOverrideMutableBuilder[Self <: RichMediaExitOverride] (val x: Self) extends AnyVal {
+  extension [Self <: RichMediaExitOverride](x: Self) {
     
-    @scala.inline
-    def setClickThroughUrl(value: ClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
+    inline def setClickThroughUrl(value: ClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickThroughUrlUndefined: Self = StObject.set(x, "clickThroughUrl", js.undefined)
+    inline def setClickThroughUrlUndefined: Self = StObject.set(x, "clickThroughUrl", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setExitId(value: String): Self = StObject.set(x, "exitId", value.asInstanceOf[js.Any])
+    inline def setExitId(value: String): Self = StObject.set(x, "exitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitIdUndefined: Self = StObject.set(x, "exitId", js.undefined)
+    inline def setExitIdUndefined: Self = StObject.set(x, "exitId", js.undefined)
   }
 }

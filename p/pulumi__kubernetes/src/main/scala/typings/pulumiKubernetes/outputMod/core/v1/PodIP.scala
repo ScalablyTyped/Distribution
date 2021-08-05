@@ -17,16 +17,13 @@ trait PodIP extends StObject {
 }
 object PodIP {
   
-  @scala.inline
-  def apply(ip: String): PodIP = {
+  inline def apply(ip: String): PodIP = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any])
     __obj.asInstanceOf[PodIP]
   }
   
-  @scala.inline
-  implicit class PodIPMutableBuilder[Self <: PodIP] (val x: Self) extends AnyVal {
+  extension [Self <: PodIP](x: Self) {
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
   }
 }

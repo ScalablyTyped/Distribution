@@ -22,25 +22,19 @@ trait ExecuteBudgetActionRequest extends StObject {
 }
 object ExecuteBudgetActionRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, ActionId: ActionId, BudgetName: BudgetName, ExecutionType: ExecutionType): ExecuteBudgetActionRequest = {
+  inline def apply(AccountId: AccountId, ActionId: ActionId, BudgetName: BudgetName, ExecutionType: ExecutionType): ExecuteBudgetActionRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], ActionId = ActionId.asInstanceOf[js.Any], BudgetName = BudgetName.asInstanceOf[js.Any], ExecutionType = ExecutionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteBudgetActionRequest]
   }
   
-  @scala.inline
-  implicit class ExecuteBudgetActionRequestMutableBuilder[Self <: ExecuteBudgetActionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteBudgetActionRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionId(value: ActionId): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: ActionId): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
+    inline def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionType(value: ExecutionType): Self = StObject.set(x, "ExecutionType", value.asInstanceOf[js.Any])
+    inline def setExecutionType(value: ExecutionType): Self = StObject.set(x, "ExecutionType", value.asInstanceOf[js.Any])
   }
 }

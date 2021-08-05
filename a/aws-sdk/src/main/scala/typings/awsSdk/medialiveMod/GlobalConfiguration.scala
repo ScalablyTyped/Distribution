@@ -40,49 +40,35 @@ trait GlobalConfiguration extends StObject {
 }
 object GlobalConfiguration {
   
-  @scala.inline
-  def apply(): GlobalConfiguration = {
+  inline def apply(): GlobalConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalConfiguration]
   }
   
-  @scala.inline
-  implicit class GlobalConfigurationMutableBuilder[Self <: GlobalConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalConfiguration](x: Self) {
     
-    @scala.inline
-    def setInitialAudioGain(value: integerMinNegative60Max60): Self = StObject.set(x, "InitialAudioGain", value.asInstanceOf[js.Any])
+    inline def setInitialAudioGain(value: integerMinNegative60Max60): Self = StObject.set(x, "InitialAudioGain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialAudioGainUndefined: Self = StObject.set(x, "InitialAudioGain", js.undefined)
+    inline def setInitialAudioGainUndefined: Self = StObject.set(x, "InitialAudioGain", js.undefined)
     
-    @scala.inline
-    def setInputEndAction(value: GlobalConfigurationInputEndAction): Self = StObject.set(x, "InputEndAction", value.asInstanceOf[js.Any])
+    inline def setInputEndAction(value: GlobalConfigurationInputEndAction): Self = StObject.set(x, "InputEndAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputEndActionUndefined: Self = StObject.set(x, "InputEndAction", js.undefined)
+    inline def setInputEndActionUndefined: Self = StObject.set(x, "InputEndAction", js.undefined)
     
-    @scala.inline
-    def setInputLossBehavior(value: InputLossBehavior): Self = StObject.set(x, "InputLossBehavior", value.asInstanceOf[js.Any])
+    inline def setInputLossBehavior(value: InputLossBehavior): Self = StObject.set(x, "InputLossBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputLossBehaviorUndefined: Self = StObject.set(x, "InputLossBehavior", js.undefined)
+    inline def setInputLossBehaviorUndefined: Self = StObject.set(x, "InputLossBehavior", js.undefined)
     
-    @scala.inline
-    def setOutputLockingMode(value: GlobalConfigurationOutputLockingMode): Self = StObject.set(x, "OutputLockingMode", value.asInstanceOf[js.Any])
+    inline def setOutputLockingMode(value: GlobalConfigurationOutputLockingMode): Self = StObject.set(x, "OutputLockingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputLockingModeUndefined: Self = StObject.set(x, "OutputLockingMode", js.undefined)
+    inline def setOutputLockingModeUndefined: Self = StObject.set(x, "OutputLockingMode", js.undefined)
     
-    @scala.inline
-    def setOutputTimingSource(value: GlobalConfigurationOutputTimingSource): Self = StObject.set(x, "OutputTimingSource", value.asInstanceOf[js.Any])
+    inline def setOutputTimingSource(value: GlobalConfigurationOutputTimingSource): Self = StObject.set(x, "OutputTimingSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputTimingSourceUndefined: Self = StObject.set(x, "OutputTimingSource", js.undefined)
+    inline def setOutputTimingSourceUndefined: Self = StObject.set(x, "OutputTimingSource", js.undefined)
     
-    @scala.inline
-    def setSupportLowFramerateInputs(value: GlobalConfigurationLowFramerateInputs): Self = StObject.set(x, "SupportLowFramerateInputs", value.asInstanceOf[js.Any])
+    inline def setSupportLowFramerateInputs(value: GlobalConfigurationLowFramerateInputs): Self = StObject.set(x, "SupportLowFramerateInputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportLowFramerateInputsUndefined: Self = StObject.set(x, "SupportLowFramerateInputs", js.undefined)
+    inline def setSupportLowFramerateInputsUndefined: Self = StObject.set(x, "SupportLowFramerateInputs", js.undefined)
   }
 }

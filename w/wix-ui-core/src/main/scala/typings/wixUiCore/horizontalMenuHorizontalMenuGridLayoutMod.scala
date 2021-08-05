@@ -35,8 +35,7 @@ object horizontalMenuHorizontalMenuGridLayoutMod extends Shortcut {
     @JSImport("wix-ui-core/dist/standalone/src/components/horizontal-menu/horizontal-menu-grid-layout", "HorizontalMenuGridLayout.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   type _To = FC[PickPickHorizontalMenuGri]

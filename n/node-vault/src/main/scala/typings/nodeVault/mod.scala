@@ -12,10 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): client = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[client]
-  @scala.inline
-  def apply(options: VaultOptions): client = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[client]
+  inline def apply(): client = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[client]
+  inline def apply(options: VaultOptions): client = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[client]
   
   @JSImport("node-vault", JSImport.Namespace)
   @js.native
@@ -33,20 +31,16 @@ object mod {
   }
   object RequestOption {
     
-    @scala.inline
-    def apply(method: String, path: String): RequestOption = {
+    inline def apply(method: String, path: String): RequestOption = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestOption]
     }
     
-    @scala.inline
-    implicit class RequestOptionMutableBuilder[Self <: RequestOption] (val x: Self) extends AnyVal {
+    extension [Self <: RequestOption](x: Self) {
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,95 +74,66 @@ object mod {
   }
   object VaultOptions {
     
-    @scala.inline
-    def apply(): VaultOptions = {
+    inline def apply(): VaultOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VaultOptions]
     }
     
-    @scala.inline
-    implicit class VaultOptionsMutableBuilder[Self <: VaultOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VaultOptions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setCommands(value: js.Array[Method]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+      inline def setCommands(value: js.Array[Method]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
+      inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
       
-      @scala.inline
-      def setCommandsVarargs(value: Method*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: Method*): Self = StObject.set(x, "commands", js.Array(value :_*))
       
-      @scala.inline
-      def setDebug(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setMustache(value: js.Any): Self = StObject.set(x, "mustache", value.asInstanceOf[js.Any])
+      inline def setMustache(value: js.Any): Self = StObject.set(x, "mustache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMustacheUndefined: Self = StObject.set(x, "mustache", js.undefined)
+      inline def setMustacheUndefined: Self = StObject.set(x, "mustache", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setNoCustomHTTPVerbs(value: Boolean): Self = StObject.set(x, "noCustomHTTPVerbs", value.asInstanceOf[js.Any])
+      inline def setNoCustomHTTPVerbs(value: Boolean): Self = StObject.set(x, "noCustomHTTPVerbs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoCustomHTTPVerbsUndefined: Self = StObject.set(x, "noCustomHTTPVerbs", js.undefined)
+      inline def setNoCustomHTTPVerbsUndefined: Self = StObject.set(x, "noCustomHTTPVerbs", js.undefined)
       
-      @scala.inline
-      def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
+      inline def setPathPrefix(value: String): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
+      inline def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
       
-      @scala.inline
-      def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
       
-      @scala.inline
-      def `setRequest-promise`(value: js.Any): Self = StObject.set(x, "request-promise", value.asInstanceOf[js.Any])
+      inline def `setRequest-promise`(value: js.Any): Self = StObject.set(x, "request-promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRequest-promiseUndefined`: Self = StObject.set(x, "request-promise", js.undefined)
+      inline def `setRequest-promiseUndefined`: Self = StObject.set(x, "request-promise", js.undefined)
       
-      @scala.inline
-      def setRequestOptions(value: CoreOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+      inline def setRequestOptions(value: CoreOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
+      inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      @scala.inline
-      def setTv4(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "tv4", js.Any.fromFunction1(value))
+      inline def setTv4(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "tv4", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTv4Undefined: Self = StObject.set(x, "tv4", js.undefined)
+      inline def setTv4Undefined: Self = StObject.set(x, "tv4", js.undefined)
     }
   }
   
@@ -415,26 +380,20 @@ object mod {
   }
   object functionConf {
     
-    @scala.inline
-    def apply(method: String, path: String): functionConf = {
+    inline def apply(method: String, path: String): functionConf = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[functionConf]
     }
     
-    @scala.inline
-    implicit class functionConfMutableBuilder[Self <: functionConf] (val x: Self) extends AnyVal {
+    extension [Self <: functionConf](x: Self) {
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchema(value: Query): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: Query): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     }
   }
 }

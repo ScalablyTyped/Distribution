@@ -16,15 +16,13 @@ object ResizeHandler {
     * @param sId The registration ID of the handler to deregister. The ID was provided by function {@link
     * sap.ui.core.ResizeHandler.register}           when the handler was registered.
     */
-  @scala.inline
-  def deregister(sId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregister")(sId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deregister(sId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregister")(sId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Returns a metadata object for class sap.ui.core.ResizeHandler.
     * @returns Metadata object describing this class
     */
-  @scala.inline
-  def getMetadata(): Metadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[Metadata]
+  inline def getMetadata(): Metadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[Metadata]
   
   /**
     * Registers the given event handler for resize events on the given DOM element or control.<b>Note:</b>
@@ -49,8 +47,6 @@ object ResizeHandler {
     * sap.ui.core.ResizeHandler.deregister}.            If the UI5 framework is not yet initialized
     * <code>null</code> is returned.
     */
-  @scala.inline
-  def register(oRef: js.Any, fHandler: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(oRef.asInstanceOf[js.Any], fHandler.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def register(oRef: typings.openui5.sap.ui.core.Control, fHandler: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(oRef.asInstanceOf[js.Any], fHandler.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def register(oRef: js.Any, fHandler: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(oRef.asInstanceOf[js.Any], fHandler.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def register(oRef: typings.openui5.sap.ui.core.Control, fHandler: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(oRef.asInstanceOf[js.Any], fHandler.asInstanceOf[js.Any])).asInstanceOf[String]
 }

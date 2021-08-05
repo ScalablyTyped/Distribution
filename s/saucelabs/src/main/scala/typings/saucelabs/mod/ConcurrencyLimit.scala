@@ -19,37 +19,27 @@ trait ConcurrencyLimit
 }
 object ConcurrencyLimit {
   
-  @scala.inline
-  def apply(): ConcurrencyLimit = {
+  inline def apply(): ConcurrencyLimit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConcurrencyLimit]
   }
   
-  @scala.inline
-  implicit class ConcurrencyLimitMutableBuilder[Self <: ConcurrencyLimit] (val x: Self) extends AnyVal {
+  extension [Self <: ConcurrencyLimit](x: Self) {
     
-    @scala.inline
-    def setMac(value: Double): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+    inline def setMac(value: Double): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
+    inline def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
     
-    @scala.inline
-    def setOverall(value: Double): Self = StObject.set(x, "overall", value.asInstanceOf[js.Any])
+    inline def setOverall(value: Double): Self = StObject.set(x, "overall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverallUndefined: Self = StObject.set(x, "overall", js.undefined)
+    inline def setOverallUndefined: Self = StObject.set(x, "overall", js.undefined)
     
-    @scala.inline
-    def setReal_device(value: Double): Self = StObject.set(x, "real_device", value.asInstanceOf[js.Any])
+    inline def setReal_device(value: Double): Self = StObject.set(x, "real_device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReal_deviceUndefined: Self = StObject.set(x, "real_device", js.undefined)
+    inline def setReal_deviceUndefined: Self = StObject.set(x, "real_device", js.undefined)
     
-    @scala.inline
-    def setScout(value: Double): Self = StObject.set(x, "scout", value.asInstanceOf[js.Any])
+    inline def setScout(value: Double): Self = StObject.set(x, "scout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoutUndefined: Self = StObject.set(x, "scout", js.undefined)
+    inline def setScoutUndefined: Self = StObject.set(x, "scout", js.undefined)
   }
 }

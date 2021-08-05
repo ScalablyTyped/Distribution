@@ -47,43 +47,31 @@ trait RecipientSignatureProvider extends StObject {
 }
 object RecipientSignatureProvider {
   
-  @scala.inline
-  def apply(): RecipientSignatureProvider = {
+  inline def apply(): RecipientSignatureProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipientSignatureProvider]
   }
   
-  @scala.inline
-  implicit class RecipientSignatureProviderMutableBuilder[Self <: RecipientSignatureProvider] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientSignatureProvider](x: Self) {
     
-    @scala.inline
-    def setSealDocumentsWithTabsOnly(value: String): Self = StObject.set(x, "sealDocumentsWithTabsOnly", value.asInstanceOf[js.Any])
+    inline def setSealDocumentsWithTabsOnly(value: String): Self = StObject.set(x, "sealDocumentsWithTabsOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSealDocumentsWithTabsOnlyUndefined: Self = StObject.set(x, "sealDocumentsWithTabsOnly", js.undefined)
+    inline def setSealDocumentsWithTabsOnlyUndefined: Self = StObject.set(x, "sealDocumentsWithTabsOnly", js.undefined)
     
-    @scala.inline
-    def setSealName(value: String): Self = StObject.set(x, "sealName", value.asInstanceOf[js.Any])
+    inline def setSealName(value: String): Self = StObject.set(x, "sealName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSealNameUndefined: Self = StObject.set(x, "sealName", js.undefined)
+    inline def setSealNameUndefined: Self = StObject.set(x, "sealName", js.undefined)
     
-    @scala.inline
-    def setSignatureProviderName(value: String): Self = StObject.set(x, "signatureProviderName", value.asInstanceOf[js.Any])
+    inline def setSignatureProviderName(value: String): Self = StObject.set(x, "signatureProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureProviderNameMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "signatureProviderNameMetadata", value.asInstanceOf[js.Any])
+    inline def setSignatureProviderNameMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "signatureProviderNameMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureProviderNameMetadataUndefined: Self = StObject.set(x, "signatureProviderNameMetadata", js.undefined)
+    inline def setSignatureProviderNameMetadataUndefined: Self = StObject.set(x, "signatureProviderNameMetadata", js.undefined)
     
-    @scala.inline
-    def setSignatureProviderNameUndefined: Self = StObject.set(x, "signatureProviderName", js.undefined)
+    inline def setSignatureProviderNameUndefined: Self = StObject.set(x, "signatureProviderName", js.undefined)
     
-    @scala.inline
-    def setSignatureProviderOptions(value: RecipientSignatureProviderOptions): Self = StObject.set(x, "signatureProviderOptions", value.asInstanceOf[js.Any])
+    inline def setSignatureProviderOptions(value: RecipientSignatureProviderOptions): Self = StObject.set(x, "signatureProviderOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureProviderOptionsUndefined: Self = StObject.set(x, "signatureProviderOptions", js.undefined)
+    inline def setSignatureProviderOptionsUndefined: Self = StObject.set(x, "signatureProviderOptions", js.undefined)
   }
 }

@@ -45,8 +45,7 @@ object GoldenLayout {
   }
   object BrowserWindow {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       getGlInstance: () => typings.openfin.GoldenLayout.GoldenLayout,
       getWindow: () => Window,
@@ -58,26 +57,19 @@ object GoldenLayout {
       __obj.asInstanceOf[BrowserWindow]
     }
     
-    @scala.inline
-    implicit class BrowserWindowMutableBuilder[Self <: BrowserWindow] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserWindow](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetGlInstance(value: () => typings.openfin.GoldenLayout.GoldenLayout): Self = StObject.set(x, "getGlInstance", js.Any.fromFunction0(value))
+      inline def setGetGlInstance(value: () => typings.openfin.GoldenLayout.GoldenLayout): Self = StObject.set(x, "getGlInstance", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWindow(value: () => Window): Self = StObject.set(x, "getWindow", js.Any.fromFunction0(value))
+      inline def setGetWindow(value: () => Window): Self = StObject.set(x, "getWindow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsInitialised(value: Boolean): Self = StObject.set(x, "isInitialised", value.asInstanceOf[js.Any])
+      inline def setIsInitialised(value: Boolean): Self = StObject.set(x, "isInitialised", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopIn(value: () => Unit): Self = StObject.set(x, "popIn", js.Any.fromFunction0(value))
+      inline def setPopIn(value: () => Unit): Self = StObject.set(x, "popIn", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToConfig(value: () => Content): Self = StObject.set(x, "toConfig", js.Any.fromFunction0(value))
+      inline def setToConfig(value: () => Content): Self = StObject.set(x, "toConfig", js.Any.fromFunction0(value))
     }
   }
   
@@ -99,24 +91,19 @@ object GoldenLayout {
   }
   object ComponentConfig {
     
-    @scala.inline
-    def apply(componentName: String, `type`: String): ComponentConfig = {
+    inline def apply(componentName: String, `type`: String): ComponentConfig = {
       val __obj = js.Dynamic.literal(componentName = componentName.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentConfig]
     }
     
-    @scala.inline
-    implicit class ComponentConfigMutableBuilder[Self <: ComponentConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentConfig](x: Self) {
       
-      @scala.inline
-      def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
+      inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentState(value: js.Any): Self = StObject.set(x, "componentState", value.asInstanceOf[js.Any])
+      inline def setComponentState(value: js.Any): Self = StObject.set(x, "componentState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentStateUndefined: Self = StObject.set(x, "componentState", js.undefined)
+      inline def setComponentStateUndefined: Self = StObject.set(x, "componentState", js.undefined)
     }
   }
   
@@ -132,41 +119,30 @@ object GoldenLayout {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setContent(value: js.Array[ItemConfigType]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: js.Array[ItemConfigType]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setContentVarargs(value: ItemConfigType*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: ItemConfigType*): Self = StObject.set(x, "content", js.Array(value :_*))
       
-      @scala.inline
-      def setDimensions(value: Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+      inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      @scala.inline
-      def setLabels(value: Labels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: Labels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+      inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     }
   }
   
@@ -535,50 +511,36 @@ object GoldenLayout {
   }
   object Dimensions {
     
-    @scala.inline
-    def apply(): Dimensions = {
+    inline def apply(): Dimensions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dimensions]
     }
     
-    @scala.inline
-    implicit class DimensionsMutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
+    extension [Self <: Dimensions](x: Self) {
       
-      @scala.inline
-      def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+      inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+      inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
       
-      @scala.inline
-      def setDragProxyHeight(value: Double): Self = StObject.set(x, "dragProxyHeight", value.asInstanceOf[js.Any])
+      inline def setDragProxyHeight(value: Double): Self = StObject.set(x, "dragProxyHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragProxyHeightUndefined: Self = StObject.set(x, "dragProxyHeight", js.undefined)
+      inline def setDragProxyHeightUndefined: Self = StObject.set(x, "dragProxyHeight", js.undefined)
       
-      @scala.inline
-      def setDragProxyWidth(value: Double): Self = StObject.set(x, "dragProxyWidth", value.asInstanceOf[js.Any])
+      inline def setDragProxyWidth(value: Double): Self = StObject.set(x, "dragProxyWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragProxyWidthUndefined: Self = StObject.set(x, "dragProxyWidth", js.undefined)
+      inline def setDragProxyWidthUndefined: Self = StObject.set(x, "dragProxyWidth", js.undefined)
       
-      @scala.inline
-      def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
+      inline def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
+      inline def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
       
-      @scala.inline
-      def setMinItemHeight(value: Double): Self = StObject.set(x, "minItemHeight", value.asInstanceOf[js.Any])
+      inline def setMinItemHeight(value: Double): Self = StObject.set(x, "minItemHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinItemHeightUndefined: Self = StObject.set(x, "minItemHeight", js.undefined)
+      inline def setMinItemHeightUndefined: Self = StObject.set(x, "minItemHeight", js.undefined)
       
-      @scala.inline
-      def setMinItemWidth(value: Double): Self = StObject.set(x, "minItemWidth", value.asInstanceOf[js.Any])
+      inline def setMinItemWidth(value: Double): Self = StObject.set(x, "minItemWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinItemWidthUndefined: Self = StObject.set(x, "minItemWidth", js.undefined)
+      inline def setMinItemWidthUndefined: Self = StObject.set(x, "minItemWidth", js.undefined)
     }
   }
   
@@ -901,60 +863,43 @@ object GoldenLayout {
   }
   object ItemConfig {
     
-    @scala.inline
-    def apply(`type`: String): ItemConfig = {
+    inline def apply(`type`: String): ItemConfig = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ItemConfig]
     }
     
-    @scala.inline
-    implicit class ItemConfigMutableBuilder[Self <: ItemConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ItemConfig](x: Self) {
       
-      @scala.inline
-      def setContent(value: js.Array[ItemConfigType]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: js.Array[ItemConfigType]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setContentVarargs(value: ItemConfigType*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: ItemConfigType*): Self = StObject.set(x, "content", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setId(value: String | js.Array[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String | js.Array[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value :_*))
+      inline def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value :_*))
       
-      @scala.inline
-      def setIsClosable(value: Boolean): Self = StObject.set(x, "isClosable", value.asInstanceOf[js.Any])
+      inline def setIsClosable(value: Boolean): Self = StObject.set(x, "isClosable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsClosableUndefined: Self = StObject.set(x, "isClosable", js.undefined)
+      inline def setIsClosableUndefined: Self = StObject.set(x, "isClosable", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -966,22 +911,19 @@ object GoldenLayout {
   trait ItemConfigType extends StObject
   object ItemConfigType {
     
-    @scala.inline
-    def ComponentConfig(componentName: String, `type`: String): typings.openfin.GoldenLayout.ComponentConfig = {
+    inline def ComponentConfig(componentName: String, `type`: String): typings.openfin.GoldenLayout.ComponentConfig = {
       val __obj = js.Dynamic.literal(componentName = componentName.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.openfin.GoldenLayout.ComponentConfig]
     }
     
-    @scala.inline
-    def ItemConfig(`type`: String): typings.openfin.GoldenLayout.ItemConfig = {
+    inline def ItemConfig(`type`: String): typings.openfin.GoldenLayout.ItemConfig = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.openfin.GoldenLayout.ItemConfig]
     }
     
-    @scala.inline
-    def ReactComponentConfig(component: String, `type`: String): typings.openfin.GoldenLayout.ReactComponentConfig = {
+    inline def ReactComponentConfig(component: String, `type`: String): typings.openfin.GoldenLayout.ReactComponentConfig = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.openfin.GoldenLayout.ReactComponentConfig]
@@ -1016,38 +958,28 @@ object GoldenLayout {
   }
   object Labels {
     
-    @scala.inline
-    def apply(): Labels = {
+    inline def apply(): Labels = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Labels]
     }
     
-    @scala.inline
-    implicit class LabelsMutableBuilder[Self <: Labels] (val x: Self) extends AnyVal {
+    extension [Self <: Labels](x: Self) {
       
-      @scala.inline
-      def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+      inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      @scala.inline
-      def setMaximise(value: String): Self = StObject.set(x, "maximise", value.asInstanceOf[js.Any])
+      inline def setMaximise(value: String): Self = StObject.set(x, "maximise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximiseUndefined: Self = StObject.set(x, "maximise", js.undefined)
+      inline def setMaximiseUndefined: Self = StObject.set(x, "maximise", js.undefined)
       
-      @scala.inline
-      def setMinimise(value: String): Self = StObject.set(x, "minimise", value.asInstanceOf[js.Any])
+      inline def setMinimise(value: String): Self = StObject.set(x, "minimise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimiseUndefined: Self = StObject.set(x, "minimise", js.undefined)
+      inline def setMinimiseUndefined: Self = StObject.set(x, "minimise", js.undefined)
       
-      @scala.inline
-      def setPopout(value: String): Self = StObject.set(x, "popout", value.asInstanceOf[js.Any])
+      inline def setPopout(value: String): Self = StObject.set(x, "popout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopoutUndefined: Self = StObject.set(x, "popout", js.undefined)
+      inline def setPopoutUndefined: Self = StObject.set(x, "popout", js.undefined)
     }
   }
   
@@ -1068,24 +1000,19 @@ object GoldenLayout {
   }
   object ReactComponentConfig {
     
-    @scala.inline
-    def apply(component: String, `type`: String): ReactComponentConfig = {
+    inline def apply(component: String, `type`: String): ReactComponentConfig = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactComponentConfig]
     }
     
-    @scala.inline
-    implicit class ReactComponentConfigMutableBuilder[Self <: ReactComponentConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ReactComponentConfig](x: Self) {
       
-      @scala.inline
-      def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     }
   }
   
@@ -1159,74 +1086,52 @@ object GoldenLayout {
   }
   object Settings {
     
-    @scala.inline
-    def apply(): Settings = {
+    inline def apply(): Settings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setBlockedPopoutsThrowError(value: Boolean): Self = StObject.set(x, "blockedPopoutsThrowError", value.asInstanceOf[js.Any])
+      inline def setBlockedPopoutsThrowError(value: Boolean): Self = StObject.set(x, "blockedPopoutsThrowError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockedPopoutsThrowErrorUndefined: Self = StObject.set(x, "blockedPopoutsThrowError", js.undefined)
+      inline def setBlockedPopoutsThrowErrorUndefined: Self = StObject.set(x, "blockedPopoutsThrowError", js.undefined)
       
-      @scala.inline
-      def setClosePopoutsOnUnload(value: Boolean): Self = StObject.set(x, "closePopoutsOnUnload", value.asInstanceOf[js.Any])
+      inline def setClosePopoutsOnUnload(value: Boolean): Self = StObject.set(x, "closePopoutsOnUnload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosePopoutsOnUnloadUndefined: Self = StObject.set(x, "closePopoutsOnUnload", js.undefined)
+      inline def setClosePopoutsOnUnloadUndefined: Self = StObject.set(x, "closePopoutsOnUnload", js.undefined)
       
-      @scala.inline
-      def setConstrainDragToContainer(value: Boolean): Self = StObject.set(x, "constrainDragToContainer", value.asInstanceOf[js.Any])
+      inline def setConstrainDragToContainer(value: Boolean): Self = StObject.set(x, "constrainDragToContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstrainDragToContainerUndefined: Self = StObject.set(x, "constrainDragToContainer", js.undefined)
+      inline def setConstrainDragToContainerUndefined: Self = StObject.set(x, "constrainDragToContainer", js.undefined)
       
-      @scala.inline
-      def setHasHeaders(value: Boolean): Self = StObject.set(x, "hasHeaders", value.asInstanceOf[js.Any])
+      inline def setHasHeaders(value: Boolean): Self = StObject.set(x, "hasHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasHeadersUndefined: Self = StObject.set(x, "hasHeaders", js.undefined)
+      inline def setHasHeadersUndefined: Self = StObject.set(x, "hasHeaders", js.undefined)
       
-      @scala.inline
-      def setPopoutWholeStack(value: Boolean): Self = StObject.set(x, "popoutWholeStack", value.asInstanceOf[js.Any])
+      inline def setPopoutWholeStack(value: Boolean): Self = StObject.set(x, "popoutWholeStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopoutWholeStackUndefined: Self = StObject.set(x, "popoutWholeStack", js.undefined)
+      inline def setPopoutWholeStackUndefined: Self = StObject.set(x, "popoutWholeStack", js.undefined)
       
-      @scala.inline
-      def setReorderEnabled(value: Boolean): Self = StObject.set(x, "reorderEnabled", value.asInstanceOf[js.Any])
+      inline def setReorderEnabled(value: Boolean): Self = StObject.set(x, "reorderEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReorderEnabledUndefined: Self = StObject.set(x, "reorderEnabled", js.undefined)
+      inline def setReorderEnabledUndefined: Self = StObject.set(x, "reorderEnabled", js.undefined)
       
-      @scala.inline
-      def setSelectionEnabled(value: Boolean): Self = StObject.set(x, "selectionEnabled", value.asInstanceOf[js.Any])
+      inline def setSelectionEnabled(value: Boolean): Self = StObject.set(x, "selectionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionEnabledUndefined: Self = StObject.set(x, "selectionEnabled", js.undefined)
+      inline def setSelectionEnabledUndefined: Self = StObject.set(x, "selectionEnabled", js.undefined)
       
-      @scala.inline
-      def setShowCloseIcon(value: Boolean): Self = StObject.set(x, "showCloseIcon", value.asInstanceOf[js.Any])
+      inline def setShowCloseIcon(value: Boolean): Self = StObject.set(x, "showCloseIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCloseIconUndefined: Self = StObject.set(x, "showCloseIcon", js.undefined)
+      inline def setShowCloseIconUndefined: Self = StObject.set(x, "showCloseIcon", js.undefined)
       
-      @scala.inline
-      def setShowMaximiseIcon(value: Boolean): Self = StObject.set(x, "showMaximiseIcon", value.asInstanceOf[js.Any])
+      inline def setShowMaximiseIcon(value: Boolean): Self = StObject.set(x, "showMaximiseIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowMaximiseIconUndefined: Self = StObject.set(x, "showMaximiseIcon", js.undefined)
+      inline def setShowMaximiseIconUndefined: Self = StObject.set(x, "showMaximiseIcon", js.undefined)
       
-      @scala.inline
-      def setShowPopoutIcon(value: Boolean): Self = StObject.set(x, "showPopoutIcon", value.asInstanceOf[js.Any])
+      inline def setShowPopoutIcon(value: Boolean): Self = StObject.set(x, "showPopoutIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPopoutIconUndefined: Self = StObject.set(x, "showPopoutIcon", js.undefined)
+      inline def setShowPopoutIconUndefined: Self = StObject.set(x, "showPopoutIcon", js.undefined)
     }
   }
   
@@ -1278,8 +1183,7 @@ object GoldenLayout {
   }
   object Tab {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _dragListener: EventEmitter,
       closeElement: JQuery[HTMLElement],
       contentItem: ContentItem,
@@ -1294,35 +1198,25 @@ object GoldenLayout {
       __obj.asInstanceOf[Tab]
     }
     
-    @scala.inline
-    implicit class TabMutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
+    extension [Self <: Tab](x: Self) {
       
-      @scala.inline
-      def setCloseElement(value: JQuery[HTMLElement]): Self = StObject.set(x, "closeElement", value.asInstanceOf[js.Any])
+      inline def setCloseElement(value: JQuery[HTMLElement]): Self = StObject.set(x, "closeElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentItem(value: ContentItem): Self = StObject.set(x, "contentItem", value.asInstanceOf[js.Any])
+      inline def setContentItem(value: ContentItem): Self = StObject.set(x, "contentItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElement(value: JQuery[HTMLElement]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: JQuery[HTMLElement]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader(value: Header): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Header): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetActive(value: Boolean => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction1(value))
+      inline def setSetActive(value: Boolean => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTitle(value: String => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+      inline def setSetTitle(value: String => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTitleElement(value: JQuery[HTMLElement]): Self = StObject.set(x, "titleElement", value.asInstanceOf[js.Any])
+      inline def setTitleElement(value: JQuery[HTMLElement]): Self = StObject.set(x, "titleElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_dragListener(value: EventEmitter): Self = StObject.set(x, "_dragListener", value.asInstanceOf[js.Any])
+      inline def set_dragListener(value: EventEmitter): Self = StObject.set(x, "_dragListener", value.asInstanceOf[js.Any])
     }
   }
 }

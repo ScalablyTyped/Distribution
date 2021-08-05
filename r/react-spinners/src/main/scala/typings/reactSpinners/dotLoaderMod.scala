@@ -23,8 +23,7 @@ object dotLoaderMod {
     @JSImport("react-spinners/DotLoader", "default.defaultProps")
     @js.native
     def defaultProps: LoaderSizeProps = js.native
-    @scala.inline
-    def defaultProps_=(x: LoaderSizeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: LoaderSizeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native

@@ -17,8 +17,7 @@ trait OnChange[DateType] extends StObject {
 }
 object OnChange {
   
-  @scala.inline
-  def apply[DateType](
+  inline def apply[DateType](
     onChange: DateType => Unit,
     onTypeChange: CalendarMode => Unit,
     `type`: CalendarMode,
@@ -29,19 +28,14 @@ object OnChange {
     __obj.asInstanceOf[OnChange[DateType]]
   }
   
-  @scala.inline
-  implicit class OnChangeMutableBuilder[Self <: OnChange[?], DateType] (val x: Self & OnChange[DateType]) extends AnyVal {
+  extension [Self <: OnChange[?], DateType](x: Self & OnChange[DateType]) {
     
-    @scala.inline
-    def setOnChange(value: DateType => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: DateType => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTypeChange(value: CalendarMode => Unit): Self = StObject.set(x, "onTypeChange", js.Any.fromFunction1(value))
+    inline def setOnTypeChange(value: CalendarMode => Unit): Self = StObject.set(x, "onTypeChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: CalendarMode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CalendarMode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: DateType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: DateType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

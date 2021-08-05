@@ -22,9 +22,9 @@ object emitterMapMod {
     
     def has(keys: EmitterAccessor): Boolean = js.native
     
-    var hashKeys: js.Any = js.native
+    /* private */ var hashKeys: js.Any = js.native
     
-    var storage: js.Any = js.native
+    /* private */ var storage: js.Any = js.native
   }
   
   type ApplicationEmitterAccessor = js.Tuple2[application, String]

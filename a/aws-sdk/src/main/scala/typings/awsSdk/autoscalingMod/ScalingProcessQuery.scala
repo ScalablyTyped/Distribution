@@ -18,25 +18,19 @@ trait ScalingProcessQuery extends StObject {
 }
 object ScalingProcessQuery {
   
-  @scala.inline
-  def apply(AutoScalingGroupName: ResourceName): ScalingProcessQuery = {
+  inline def apply(AutoScalingGroupName: ResourceName): ScalingProcessQuery = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScalingProcessQuery]
   }
   
-  @scala.inline
-  implicit class ScalingProcessQueryMutableBuilder[Self <: ScalingProcessQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ScalingProcessQuery](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingProcesses(value: ProcessNames): Self = StObject.set(x, "ScalingProcesses", value.asInstanceOf[js.Any])
+    inline def setScalingProcesses(value: ProcessNames): Self = StObject.set(x, "ScalingProcesses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingProcessesUndefined: Self = StObject.set(x, "ScalingProcesses", js.undefined)
+    inline def setScalingProcessesUndefined: Self = StObject.set(x, "ScalingProcesses", js.undefined)
     
-    @scala.inline
-    def setScalingProcessesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "ScalingProcesses", js.Array(value :_*))
+    inline def setScalingProcessesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "ScalingProcesses", js.Array(value :_*))
   }
 }

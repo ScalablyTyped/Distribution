@@ -11,14 +11,10 @@ object rdsGetSnapshotMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSnapshot(): js.Promise[GetSnapshotResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")().asInstanceOf[js.Promise[GetSnapshotResult]]
-  @scala.inline
-  def getSnapshot(args: Unit, opts: InvokeOptions): js.Promise[GetSnapshotResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSnapshotResult]]
-  @scala.inline
-  def getSnapshot(args: GetSnapshotArgs): js.Promise[GetSnapshotResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSnapshotResult]]
-  @scala.inline
-  def getSnapshot(args: GetSnapshotArgs, opts: InvokeOptions): js.Promise[GetSnapshotResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSnapshotResult]]
+  inline def getSnapshot(): js.Promise[GetSnapshotResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")().asInstanceOf[js.Promise[GetSnapshotResult]]
+  inline def getSnapshot(args: Unit, opts: InvokeOptions): js.Promise[GetSnapshotResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSnapshotResult]]
+  inline def getSnapshot(args: GetSnapshotArgs): js.Promise[GetSnapshotResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSnapshotResult]]
+  inline def getSnapshot(args: GetSnapshotArgs, opts: InvokeOptions): js.Promise[GetSnapshotResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSnapshotResult]]
   
   trait GetSnapshotArgs extends StObject {
     
@@ -60,50 +56,36 @@ object rdsGetSnapshotMod {
   }
   object GetSnapshotArgs {
     
-    @scala.inline
-    def apply(): GetSnapshotArgs = {
+    inline def apply(): GetSnapshotArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetSnapshotArgs]
     }
     
-    @scala.inline
-    implicit class GetSnapshotArgsMutableBuilder[Self <: GetSnapshotArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetSnapshotArgs](x: Self) {
       
-      @scala.inline
-      def setDbInstanceIdentifier(value: String): Self = StObject.set(x, "dbInstanceIdentifier", value.asInstanceOf[js.Any])
+      inline def setDbInstanceIdentifier(value: String): Self = StObject.set(x, "dbInstanceIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbInstanceIdentifierUndefined: Self = StObject.set(x, "dbInstanceIdentifier", js.undefined)
+      inline def setDbInstanceIdentifierUndefined: Self = StObject.set(x, "dbInstanceIdentifier", js.undefined)
       
-      @scala.inline
-      def setDbSnapshotIdentifier(value: String): Self = StObject.set(x, "dbSnapshotIdentifier", value.asInstanceOf[js.Any])
+      inline def setDbSnapshotIdentifier(value: String): Self = StObject.set(x, "dbSnapshotIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbSnapshotIdentifierUndefined: Self = StObject.set(x, "dbSnapshotIdentifier", js.undefined)
+      inline def setDbSnapshotIdentifierUndefined: Self = StObject.set(x, "dbSnapshotIdentifier", js.undefined)
       
-      @scala.inline
-      def setIncludePublic(value: Boolean): Self = StObject.set(x, "includePublic", value.asInstanceOf[js.Any])
+      inline def setIncludePublic(value: Boolean): Self = StObject.set(x, "includePublic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludePublicUndefined: Self = StObject.set(x, "includePublic", js.undefined)
+      inline def setIncludePublicUndefined: Self = StObject.set(x, "includePublic", js.undefined)
       
-      @scala.inline
-      def setIncludeShared(value: Boolean): Self = StObject.set(x, "includeShared", value.asInstanceOf[js.Any])
+      inline def setIncludeShared(value: Boolean): Self = StObject.set(x, "includeShared", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeSharedUndefined: Self = StObject.set(x, "includeShared", js.undefined)
+      inline def setIncludeSharedUndefined: Self = StObject.set(x, "includeShared", js.undefined)
       
-      @scala.inline
-      def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
+      inline def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
+      inline def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
       
-      @scala.inline
-      def setSnapshotType(value: String): Self = StObject.set(x, "snapshotType", value.asInstanceOf[js.Any])
+      inline def setSnapshotType(value: String): Self = StObject.set(x, "snapshotType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotTypeUndefined: Self = StObject.set(x, "snapshotType", js.undefined)
+      inline def setSnapshotTypeUndefined: Self = StObject.set(x, "snapshotType", js.undefined)
     }
   }
   
@@ -210,8 +192,7 @@ object rdsGetSnapshotMod {
   }
   object GetSnapshotResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allocatedStorage: Double,
       availabilityZone: String,
       dbSnapshotArn: String,
@@ -235,98 +216,67 @@ object rdsGetSnapshotMod {
       __obj.asInstanceOf[GetSnapshotResult]
     }
     
-    @scala.inline
-    implicit class GetSnapshotResultMutableBuilder[Self <: GetSnapshotResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetSnapshotResult](x: Self) {
       
-      @scala.inline
-      def setAllocatedStorage(value: Double): Self = StObject.set(x, "allocatedStorage", value.asInstanceOf[js.Any])
+      inline def setAllocatedStorage(value: Double): Self = StObject.set(x, "allocatedStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbInstanceIdentifier(value: String): Self = StObject.set(x, "dbInstanceIdentifier", value.asInstanceOf[js.Any])
+      inline def setDbInstanceIdentifier(value: String): Self = StObject.set(x, "dbInstanceIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbInstanceIdentifierUndefined: Self = StObject.set(x, "dbInstanceIdentifier", js.undefined)
+      inline def setDbInstanceIdentifierUndefined: Self = StObject.set(x, "dbInstanceIdentifier", js.undefined)
       
-      @scala.inline
-      def setDbSnapshotArn(value: String): Self = StObject.set(x, "dbSnapshotArn", value.asInstanceOf[js.Any])
+      inline def setDbSnapshotArn(value: String): Self = StObject.set(x, "dbSnapshotArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbSnapshotIdentifier(value: String): Self = StObject.set(x, "dbSnapshotIdentifier", value.asInstanceOf[js.Any])
+      inline def setDbSnapshotIdentifier(value: String): Self = StObject.set(x, "dbSnapshotIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbSnapshotIdentifierUndefined: Self = StObject.set(x, "dbSnapshotIdentifier", js.undefined)
+      inline def setDbSnapshotIdentifierUndefined: Self = StObject.set(x, "dbSnapshotIdentifier", js.undefined)
       
-      @scala.inline
-      def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+      inline def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+      inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineVersion(value: String): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
+      inline def setEngineVersion(value: String): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludePublic(value: Boolean): Self = StObject.set(x, "includePublic", value.asInstanceOf[js.Any])
+      inline def setIncludePublic(value: Boolean): Self = StObject.set(x, "includePublic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludePublicUndefined: Self = StObject.set(x, "includePublic", js.undefined)
+      inline def setIncludePublicUndefined: Self = StObject.set(x, "includePublic", js.undefined)
       
-      @scala.inline
-      def setIncludeShared(value: Boolean): Self = StObject.set(x, "includeShared", value.asInstanceOf[js.Any])
+      inline def setIncludeShared(value: Boolean): Self = StObject.set(x, "includeShared", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeSharedUndefined: Self = StObject.set(x, "includeShared", js.undefined)
+      inline def setIncludeSharedUndefined: Self = StObject.set(x, "includeShared", js.undefined)
       
-      @scala.inline
-      def setIops(value: Double): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
+      inline def setIops(value: Double): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseModel(value: String): Self = StObject.set(x, "licenseModel", value.asInstanceOf[js.Any])
+      inline def setLicenseModel(value: String): Self = StObject.set(x, "licenseModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
+      inline def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
+      inline def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
       
-      @scala.inline
-      def setOptionGroupName(value: String): Self = StObject.set(x, "optionGroupName", value.asInstanceOf[js.Any])
+      inline def setOptionGroupName(value: String): Self = StObject.set(x, "optionGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotCreateTime(value: String): Self = StObject.set(x, "snapshotCreateTime", value.asInstanceOf[js.Any])
+      inline def setSnapshotCreateTime(value: String): Self = StObject.set(x, "snapshotCreateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotType(value: String): Self = StObject.set(x, "snapshotType", value.asInstanceOf[js.Any])
+      inline def setSnapshotType(value: String): Self = StObject.set(x, "snapshotType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotTypeUndefined: Self = StObject.set(x, "snapshotType", js.undefined)
+      inline def setSnapshotTypeUndefined: Self = StObject.set(x, "snapshotType", js.undefined)
       
-      @scala.inline
-      def setSourceDbSnapshotIdentifier(value: String): Self = StObject.set(x, "sourceDbSnapshotIdentifier", value.asInstanceOf[js.Any])
+      inline def setSourceDbSnapshotIdentifier(value: String): Self = StObject.set(x, "sourceDbSnapshotIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceRegion(value: String): Self = StObject.set(x, "sourceRegion", value.asInstanceOf[js.Any])
+      inline def setSourceRegion(value: String): Self = StObject.set(x, "sourceRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageType(value: String): Self = StObject.set(x, "storageType", value.asInstanceOf[js.Any])
+      inline def setStorageType(value: String): Self = StObject.set(x, "storageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -57,15 +57,13 @@ object smtpTransportMod {
   trait AuthenticationType extends StObject
   object AuthenticationType {
     
-    @scala.inline
-    def AuthenticationTypeLogin(credentials: Credentials, method: String | `false`, user: String): typings.nodemailer.smtpTransportMod.AuthenticationTypeLogin = {
+    inline def AuthenticationTypeLogin(credentials: Credentials, method: String | `false`, user: String): typings.nodemailer.smtpTransportMod.AuthenticationTypeLogin = {
       val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("LOGIN")
       __obj.asInstanceOf[typings.nodemailer.smtpTransportMod.AuthenticationTypeLogin]
     }
     
-    @scala.inline
-    def AuthenticationTypeOAuth2(oauth2: typings.nodemailer.xoauth2Mod.^, user: String): typings.nodemailer.smtpTransportMod.AuthenticationTypeOAuth2 = {
+    inline def AuthenticationTypeOAuth2(oauth2: typings.nodemailer.xoauth2Mod.^, user: String): typings.nodemailer.smtpTransportMod.AuthenticationTypeOAuth2 = {
       val __obj = js.Dynamic.literal(method = "XOAUTH2", oauth2 = oauth2.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("OAUTH2")
       __obj.asInstanceOf[typings.nodemailer.smtpTransportMod.AuthenticationTypeOAuth2]
@@ -82,21 +80,17 @@ object smtpTransportMod {
   }
   object AuthenticationTypeCustom {
     
-    @scala.inline
-    def apply(method: String, pass: String, user: String): AuthenticationTypeCustom = {
+    inline def apply(method: String, pass: String, user: String): AuthenticationTypeCustom = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("CUSTOM")
       __obj.asInstanceOf[AuthenticationTypeCustom]
     }
     
-    @scala.inline
-    implicit class AuthenticationTypeCustomMutableBuilder[Self <: AuthenticationTypeCustom] (val x: Self) extends AnyVal {
+    extension [Self <: AuthenticationTypeCustom](x: Self) {
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: CUSTOM): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: CUSTOM): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,27 +108,21 @@ object smtpTransportMod {
   }
   object AuthenticationTypeLogin {
     
-    @scala.inline
-    def apply(credentials: Credentials, method: String | `false`, user: String): AuthenticationTypeLogin = {
+    inline def apply(credentials: Credentials, method: String | `false`, user: String): AuthenticationTypeLogin = {
       val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("LOGIN")
       __obj.asInstanceOf[AuthenticationTypeLogin]
     }
     
-    @scala.inline
-    implicit class AuthenticationTypeLoginMutableBuilder[Self <: AuthenticationTypeLogin] (val x: Self) extends AnyVal {
+    extension [Self <: AuthenticationTypeLogin](x: Self) {
       
-      @scala.inline
-      def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String | `false`): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String | `false`): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: LOGIN): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: LOGIN): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,27 +140,21 @@ object smtpTransportMod {
   }
   object AuthenticationTypeOAuth2 {
     
-    @scala.inline
-    def apply(oauth2: typings.nodemailer.xoauth2Mod.^, user: String): AuthenticationTypeOAuth2 = {
+    inline def apply(oauth2: typings.nodemailer.xoauth2Mod.^, user: String): AuthenticationTypeOAuth2 = {
       val __obj = js.Dynamic.literal(method = "XOAUTH2", oauth2 = oauth2.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("OAUTH2")
       __obj.asInstanceOf[AuthenticationTypeOAuth2]
     }
     
-    @scala.inline
-    implicit class AuthenticationTypeOAuth2MutableBuilder[Self <: AuthenticationTypeOAuth2] (val x: Self) extends AnyVal {
+    extension [Self <: AuthenticationTypeOAuth2](x: Self) {
       
-      @scala.inline
-      def setMethod(value: XOAUTH2): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: XOAUTH2): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOauth2(value: typings.nodemailer.xoauth2Mod.^): Self = StObject.set(x, "oauth2", value.asInstanceOf[js.Any])
+      inline def setOauth2(value: typings.nodemailer.xoauth2Mod.^): Self = StObject.set(x, "oauth2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: OAUTH2): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: OAUTH2): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,26 +168,20 @@ object smtpTransportMod {
   }
   object MailOptions {
     
-    @scala.inline
-    def apply(): MailOptions = {
+    inline def apply(): MailOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MailOptions]
     }
     
-    @scala.inline
-    implicit class MailOptionsMutableBuilder[Self <: MailOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MailOptions](x: Self) {
       
-      @scala.inline
-      def setAuth(value: typings.nodemailer.smtpConnectionMod.AuthenticationType): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: typings.nodemailer.smtpConnectionMod.AuthenticationType): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setDsn(value: DSNOptions): Self = StObject.set(x, "dsn", value.asInstanceOf[js.Any])
+      inline def setDsn(value: DSNOptions): Self = StObject.set(x, "dsn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDsnUndefined: Self = StObject.set(x, "dsn", js.undefined)
+      inline def setDsnUndefined: Self = StObject.set(x, "dsn", js.undefined)
     }
   }
   
@@ -286,148 +262,102 @@ object smtpTransportMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAuthMethod(value: String): Self = StObject.set(x, "authMethod", value.asInstanceOf[js.Any])
+      inline def setAuthMethod(value: String): Self = StObject.set(x, "authMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthMethodUndefined: Self = StObject.set(x, "authMethod", js.undefined)
+      inline def setAuthMethodUndefined: Self = StObject.set(x, "authMethod", js.undefined)
       
-      @scala.inline
-      def setConnection(value: Socket): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: Socket): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionTimeout(value: ms): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectionTimeout(value: ms): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
+      inline def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
       
-      @scala.inline
-      def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+      inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
       
-      @scala.inline
-      def setCustomAuth(value: CustomAuthenticationHandlers): Self = StObject.set(x, "customAuth", value.asInstanceOf[js.Any])
+      inline def setCustomAuth(value: CustomAuthenticationHandlers): Self = StObject.set(x, "customAuth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomAuthUndefined: Self = StObject.set(x, "customAuth", js.undefined)
+      inline def setCustomAuthUndefined: Self = StObject.set(x, "customAuth", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setGetSocket(
+      inline def setGetSocket(
         value: (Options, /* callback */ js.Function2[/* err */ Error | Null, /* socketOptions */ js.Any, Unit]) => Unit
       ): Self = StObject.set(x, "getSocket", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetSocketUndefined: Self = StObject.set(x, "getSocket", js.undefined)
+      inline def setGetSocketUndefined: Self = StObject.set(x, "getSocket", js.undefined)
       
-      @scala.inline
-      def setGreetingTimeout(value: ms): Self = StObject.set(x, "greetingTimeout", value.asInstanceOf[js.Any])
+      inline def setGreetingTimeout(value: ms): Self = StObject.set(x, "greetingTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreetingTimeoutUndefined: Self = StObject.set(x, "greetingTimeout", js.undefined)
+      inline def setGreetingTimeoutUndefined: Self = StObject.set(x, "greetingTimeout", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setIgnoreTLS(value: Boolean): Self = StObject.set(x, "ignoreTLS", value.asInstanceOf[js.Any])
+      inline def setIgnoreTLS(value: Boolean): Self = StObject.set(x, "ignoreTLS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreTLSUndefined: Self = StObject.set(x, "ignoreTLS", js.undefined)
+      inline def setIgnoreTLSUndefined: Self = StObject.set(x, "ignoreTLS", js.undefined)
       
-      @scala.inline
-      def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+      inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+      inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Logger | Boolean): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger | Boolean): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOpportunisticTLS(value: Boolean): Self = StObject.set(x, "opportunisticTLS", value.asInstanceOf[js.Any])
+      inline def setOpportunisticTLS(value: Boolean): Self = StObject.set(x, "opportunisticTLS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpportunisticTLSUndefined: Self = StObject.set(x, "opportunisticTLS", js.undefined)
+      inline def setOpportunisticTLSUndefined: Self = StObject.set(x, "opportunisticTLS", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setRequireTLS(value: Boolean): Self = StObject.set(x, "requireTLS", value.asInstanceOf[js.Any])
+      inline def setRequireTLS(value: Boolean): Self = StObject.set(x, "requireTLS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireTLSUndefined: Self = StObject.set(x, "requireTLS", js.undefined)
+      inline def setRequireTLSUndefined: Self = StObject.set(x, "requireTLS", js.undefined)
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       
-      @scala.inline
-      def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+      inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
       
-      @scala.inline
-      def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketTimeout(value: ms): Self = StObject.set(x, "socketTimeout", value.asInstanceOf[js.Any])
+      inline def setSocketTimeout(value: ms): Self = StObject.set(x, "socketTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketTimeoutUndefined: Self = StObject.set(x, "socketTimeout", js.undefined)
+      inline def setSocketTimeoutUndefined: Self = StObject.set(x, "socketTimeout", js.undefined)
       
-      @scala.inline
-      def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
+      inline def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
       
-      @scala.inline
-      def setTls(value: ConnectionOptions): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+      inline def setTls(value: ConnectionOptions): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+      inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
       
-      @scala.inline
-      def setTransactionLog(value: Boolean): Self = StObject.set(x, "transactionLog", value.asInstanceOf[js.Any])
+      inline def setTransactionLog(value: Boolean): Self = StObject.set(x, "transactionLog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionLogUndefined: Self = StObject.set(x, "transactionLog", js.undefined)
+      inline def setTransactionLogUndefined: Self = StObject.set(x, "transactionLog", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -510,20 +440,16 @@ object smtpTransportMod {
   }
   object SentMessageInfo {
     
-    @scala.inline
-    def apply(envelope: Envelope, messageId: String): SentMessageInfo = {
+    inline def apply(envelope: Envelope, messageId: String): SentMessageInfo = {
       val __obj = js.Dynamic.literal(envelope = envelope.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SentMessageInfo]
     }
     
-    @scala.inline
-    implicit class SentMessageInfoMutableBuilder[Self <: SentMessageInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SentMessageInfo](x: Self) {
       
-      @scala.inline
-      def setEnvelope(value: Envelope): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
+      inline def setEnvelope(value: Envelope): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     }
   }
 }

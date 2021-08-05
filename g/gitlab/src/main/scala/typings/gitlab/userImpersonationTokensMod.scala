@@ -36,10 +36,8 @@ object userImpersonationTokensMod {
   trait ImpersonationTokenScope extends StObject
   object ImpersonationTokenScope {
     
-    @scala.inline
-    def api: typings.gitlab.gitlabStrings.api = "api".asInstanceOf[typings.gitlab.gitlabStrings.api]
+    inline def api: typings.gitlab.gitlabStrings.api = "api".asInstanceOf[typings.gitlab.gitlabStrings.api]
     
-    @scala.inline
-    def read_user: typings.gitlab.gitlabStrings.read_user = "read_user".asInstanceOf[typings.gitlab.gitlabStrings.read_user]
+    inline def read_user: typings.gitlab.gitlabStrings.read_user = "read_user".asInstanceOf[typings.gitlab.gitlabStrings.read_user]
   }
 }

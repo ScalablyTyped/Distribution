@@ -96,6 +96,5 @@ object DeleteExpressionSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(expression: IUnaryExpressionSyntax): typings.typescriptServices.TypeScript.DeleteExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.DeleteExpressionSyntax]
+  inline def create1(expression: IUnaryExpressionSyntax): typings.typescriptServices.TypeScript.DeleteExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.DeleteExpressionSyntax]
 }

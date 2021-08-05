@@ -97,21 +97,16 @@ object workspaceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Workspace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Workspace]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Workspace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Workspace]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WorkspaceState): Workspace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Workspace]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WorkspaceState, opts: CustomResourceOptions): Workspace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Workspace]
+    inline def get(name: String, id: Input[ID]): Workspace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Workspace]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Workspace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Workspace]
+    inline def get(name: String, id: Input[ID], state: WorkspaceState): Workspace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Workspace]
+    inline def get(name: String, id: Input[ID], state: WorkspaceState, opts: CustomResourceOptions): Workspace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Workspace]
     
     /**
       * Returns true if the given object is an instance of Workspace.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/workspaces/workspace.Workspace */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/workspaces/workspace.Workspace */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/workspaces/workspace.Workspace */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/workspaces/workspace.Workspace */ Boolean]
   }
   
   trait WorkspaceArgs extends StObject {
@@ -158,53 +153,38 @@ object workspaceMod {
   }
   object WorkspaceArgs {
     
-    @scala.inline
-    def apply(bundleId: Input[String], directoryId: Input[String], userName: Input[String]): WorkspaceArgs = {
+    inline def apply(bundleId: Input[String], directoryId: Input[String], userName: Input[String]): WorkspaceArgs = {
       val __obj = js.Dynamic.literal(bundleId = bundleId.asInstanceOf[js.Any], directoryId = directoryId.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkspaceArgs]
     }
     
-    @scala.inline
-    implicit class WorkspaceArgsMutableBuilder[Self <: WorkspaceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: WorkspaceArgs](x: Self) {
       
-      @scala.inline
-      def setBundleId(value: Input[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+      inline def setBundleId(value: Input[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryId(value: Input[String]): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
+      inline def setDirectoryId(value: Input[String]): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootVolumeEncryptionEnabled(value: Input[Boolean]): Self = StObject.set(x, "rootVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
+      inline def setRootVolumeEncryptionEnabled(value: Input[Boolean]): Self = StObject.set(x, "rootVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootVolumeEncryptionEnabledUndefined: Self = StObject.set(x, "rootVolumeEncryptionEnabled", js.undefined)
+      inline def setRootVolumeEncryptionEnabledUndefined: Self = StObject.set(x, "rootVolumeEncryptionEnabled", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUserName(value: Input[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: Input[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserVolumeEncryptionEnabled(value: Input[Boolean]): Self = StObject.set(x, "userVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
+      inline def setUserVolumeEncryptionEnabled(value: Input[Boolean]): Self = StObject.set(x, "userVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserVolumeEncryptionEnabledUndefined: Self = StObject.set(x, "userVolumeEncryptionEnabled", js.undefined)
+      inline def setUserVolumeEncryptionEnabledUndefined: Self = StObject.set(x, "userVolumeEncryptionEnabled", js.undefined)
       
-      @scala.inline
-      def setVolumeEncryptionKey(value: Input[String]): Self = StObject.set(x, "volumeEncryptionKey", value.asInstanceOf[js.Any])
+      inline def setVolumeEncryptionKey(value: Input[String]): Self = StObject.set(x, "volumeEncryptionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeEncryptionKeyUndefined: Self = StObject.set(x, "volumeEncryptionKey", js.undefined)
+      inline def setVolumeEncryptionKeyUndefined: Self = StObject.set(x, "volumeEncryptionKey", js.undefined)
       
-      @scala.inline
-      def setWorkspaceProperties(value: Input[typings.pulumiAws.inputMod.workspaces.WorkspaceWorkspaceProperties]): Self = StObject.set(x, "workspaceProperties", value.asInstanceOf[js.Any])
+      inline def setWorkspaceProperties(value: Input[typings.pulumiAws.inputMod.workspaces.WorkspaceWorkspaceProperties]): Self = StObject.set(x, "workspaceProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkspacePropertiesUndefined: Self = StObject.set(x, "workspaceProperties", js.undefined)
+      inline def setWorkspacePropertiesUndefined: Self = StObject.set(x, "workspaceProperties", js.undefined)
     }
   }
   
@@ -267,80 +247,56 @@ object workspaceMod {
   }
   object WorkspaceState {
     
-    @scala.inline
-    def apply(): WorkspaceState = {
+    inline def apply(): WorkspaceState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkspaceState]
     }
     
-    @scala.inline
-    implicit class WorkspaceStateMutableBuilder[Self <: WorkspaceState] (val x: Self) extends AnyVal {
+    extension [Self <: WorkspaceState](x: Self) {
       
-      @scala.inline
-      def setBundleId(value: Input[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+      inline def setBundleId(value: Input[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+      inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
       
-      @scala.inline
-      def setComputerName(value: Input[String]): Self = StObject.set(x, "computerName", value.asInstanceOf[js.Any])
+      inline def setComputerName(value: Input[String]): Self = StObject.set(x, "computerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputerNameUndefined: Self = StObject.set(x, "computerName", js.undefined)
+      inline def setComputerNameUndefined: Self = StObject.set(x, "computerName", js.undefined)
       
-      @scala.inline
-      def setDirectoryId(value: Input[String]): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
+      inline def setDirectoryId(value: Input[String]): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryIdUndefined: Self = StObject.set(x, "directoryId", js.undefined)
+      inline def setDirectoryIdUndefined: Self = StObject.set(x, "directoryId", js.undefined)
       
-      @scala.inline
-      def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+      inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
       
-      @scala.inline
-      def setRootVolumeEncryptionEnabled(value: Input[Boolean]): Self = StObject.set(x, "rootVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
+      inline def setRootVolumeEncryptionEnabled(value: Input[Boolean]): Self = StObject.set(x, "rootVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootVolumeEncryptionEnabledUndefined: Self = StObject.set(x, "rootVolumeEncryptionEnabled", js.undefined)
+      inline def setRootVolumeEncryptionEnabledUndefined: Self = StObject.set(x, "rootVolumeEncryptionEnabled", js.undefined)
       
-      @scala.inline
-      def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUserName(value: Input[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: Input[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+      inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
       
-      @scala.inline
-      def setUserVolumeEncryptionEnabled(value: Input[Boolean]): Self = StObject.set(x, "userVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
+      inline def setUserVolumeEncryptionEnabled(value: Input[Boolean]): Self = StObject.set(x, "userVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserVolumeEncryptionEnabledUndefined: Self = StObject.set(x, "userVolumeEncryptionEnabled", js.undefined)
+      inline def setUserVolumeEncryptionEnabledUndefined: Self = StObject.set(x, "userVolumeEncryptionEnabled", js.undefined)
       
-      @scala.inline
-      def setVolumeEncryptionKey(value: Input[String]): Self = StObject.set(x, "volumeEncryptionKey", value.asInstanceOf[js.Any])
+      inline def setVolumeEncryptionKey(value: Input[String]): Self = StObject.set(x, "volumeEncryptionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeEncryptionKeyUndefined: Self = StObject.set(x, "volumeEncryptionKey", js.undefined)
+      inline def setVolumeEncryptionKeyUndefined: Self = StObject.set(x, "volumeEncryptionKey", js.undefined)
       
-      @scala.inline
-      def setWorkspaceProperties(value: Input[typings.pulumiAws.inputMod.workspaces.WorkspaceWorkspaceProperties]): Self = StObject.set(x, "workspaceProperties", value.asInstanceOf[js.Any])
+      inline def setWorkspaceProperties(value: Input[typings.pulumiAws.inputMod.workspaces.WorkspaceWorkspaceProperties]): Self = StObject.set(x, "workspaceProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkspacePropertiesUndefined: Self = StObject.set(x, "workspaceProperties", js.undefined)
+      inline def setWorkspacePropertiesUndefined: Self = StObject.set(x, "workspaceProperties", js.undefined)
     }
   }
 }

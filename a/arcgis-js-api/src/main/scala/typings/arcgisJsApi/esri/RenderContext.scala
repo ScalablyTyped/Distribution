@@ -48,8 +48,7 @@ trait RenderContext
 }
 object RenderContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindRenderTarget: () => Unit,
     camera: RenderCamera,
     constructor: js.Function,
@@ -63,22 +62,16 @@ object RenderContext {
     __obj.asInstanceOf[RenderContext]
   }
   
-  @scala.inline
-  implicit class RenderContextMutableBuilder[Self <: RenderContext] (val x: Self) extends AnyVal {
+  extension [Self <: RenderContext](x: Self) {
     
-    @scala.inline
-    def setBindRenderTarget(value: () => Unit): Self = StObject.set(x, "bindRenderTarget", js.Any.fromFunction0(value))
+    inline def setBindRenderTarget(value: () => Unit): Self = StObject.set(x, "bindRenderTarget", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCamera(value: RenderCamera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: RenderCamera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGl(value: WebGLRenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
+    inline def setGl(value: WebGLRenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetWebGLState(value: () => Unit): Self = StObject.set(x, "resetWebGLState", js.Any.fromFunction0(value))
+    inline def setResetWebGLState(value: () => Unit): Self = StObject.set(x, "resetWebGLState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSunLight(value: SunLight): Self = StObject.set(x, "sunLight", value.asInstanceOf[js.Any])
+    inline def setSunLight(value: SunLight): Self = StObject.set(x, "sunLight", value.asInstanceOf[js.Any])
   }
 }

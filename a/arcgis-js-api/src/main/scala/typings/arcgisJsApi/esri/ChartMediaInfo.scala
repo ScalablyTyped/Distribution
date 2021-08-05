@@ -15,16 +15,13 @@ trait ChartMediaInfo extends StObject {
 }
 object ChartMediaInfo {
   
-  @scala.inline
-  def apply(value: ChartMediaInfoValue): ChartMediaInfo = {
+  inline def apply(value: ChartMediaInfoValue): ChartMediaInfo = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartMediaInfo]
   }
   
-  @scala.inline
-  implicit class ChartMediaInfoMutableBuilder[Self <: ChartMediaInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ChartMediaInfo](x: Self) {
     
-    @scala.inline
-    def setValue(value: ChartMediaInfoValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ChartMediaInfoValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

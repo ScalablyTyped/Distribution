@@ -16,16 +16,13 @@ trait InspectorAsTableProps
 }
 object InspectorAsTableProps {
   
-  @scala.inline
-  def apply(): InspectorAsTableProps = {
+  inline def apply(): InspectorAsTableProps = {
     val __obj = js.Dynamic.literal(table = true)
     __obj.asInstanceOf[InspectorAsTableProps]
   }
   
-  @scala.inline
-  implicit class InspectorAsTablePropsMutableBuilder[Self <: InspectorAsTableProps] (val x: Self) extends AnyVal {
+  extension [Self <: InspectorAsTableProps](x: Self) {
     
-    @scala.inline
-    def setTable(value: `true`): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: `true`): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
   }
 }

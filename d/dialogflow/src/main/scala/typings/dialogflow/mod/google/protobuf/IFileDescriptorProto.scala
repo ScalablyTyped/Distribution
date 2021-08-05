@@ -46,142 +46,97 @@ trait IFileDescriptorProto extends StObject {
 }
 object IFileDescriptorProto {
   
-  @scala.inline
-  def apply(): IFileDescriptorProto = {
+  inline def apply(): IFileDescriptorProto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFileDescriptorProto]
   }
   
-  @scala.inline
-  implicit class IFileDescriptorProtoMutableBuilder[Self <: IFileDescriptorProto] (val x: Self) extends AnyVal {
+  extension [Self <: IFileDescriptorProto](x: Self) {
     
-    @scala.inline
-    def setDependency(value: js.Array[String]): Self = StObject.set(x, "dependency", value.asInstanceOf[js.Any])
+    inline def setDependency(value: js.Array[String]): Self = StObject.set(x, "dependency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependencyNull: Self = StObject.set(x, "dependency", null)
+    inline def setDependencyNull: Self = StObject.set(x, "dependency", null)
     
-    @scala.inline
-    def setDependencyUndefined: Self = StObject.set(x, "dependency", js.undefined)
+    inline def setDependencyUndefined: Self = StObject.set(x, "dependency", js.undefined)
     
-    @scala.inline
-    def setDependencyVarargs(value: String*): Self = StObject.set(x, "dependency", js.Array(value :_*))
+    inline def setDependencyVarargs(value: String*): Self = StObject.set(x, "dependency", js.Array(value :_*))
     
-    @scala.inline
-    def setEnumType(value: js.Array[IEnumDescriptorProto]): Self = StObject.set(x, "enumType", value.asInstanceOf[js.Any])
+    inline def setEnumType(value: js.Array[IEnumDescriptorProto]): Self = StObject.set(x, "enumType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumTypeNull: Self = StObject.set(x, "enumType", null)
+    inline def setEnumTypeNull: Self = StObject.set(x, "enumType", null)
     
-    @scala.inline
-    def setEnumTypeUndefined: Self = StObject.set(x, "enumType", js.undefined)
+    inline def setEnumTypeUndefined: Self = StObject.set(x, "enumType", js.undefined)
     
-    @scala.inline
-    def setEnumTypeVarargs(value: IEnumDescriptorProto*): Self = StObject.set(x, "enumType", js.Array(value :_*))
+    inline def setEnumTypeVarargs(value: IEnumDescriptorProto*): Self = StObject.set(x, "enumType", js.Array(value :_*))
     
-    @scala.inline
-    def setExtension(value: js.Array[IFieldDescriptorProto]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: js.Array[IFieldDescriptorProto]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionNull: Self = StObject.set(x, "extension", null)
+    inline def setExtensionNull: Self = StObject.set(x, "extension", null)
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setExtensionVarargs(value: IFieldDescriptorProto*): Self = StObject.set(x, "extension", js.Array(value :_*))
+    inline def setExtensionVarargs(value: IFieldDescriptorProto*): Self = StObject.set(x, "extension", js.Array(value :_*))
     
-    @scala.inline
-    def setMessageType(value: js.Array[IDescriptorProto]): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: js.Array[IDescriptorProto]): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTypeNull: Self = StObject.set(x, "messageType", null)
+    inline def setMessageTypeNull: Self = StObject.set(x, "messageType", null)
     
-    @scala.inline
-    def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
+    inline def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
     
-    @scala.inline
-    def setMessageTypeVarargs(value: IDescriptorProto*): Self = StObject.set(x, "messageType", js.Array(value :_*))
+    inline def setMessageTypeVarargs(value: IDescriptorProto*): Self = StObject.set(x, "messageType", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptions(value: IFileOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IFileOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsNull: Self = StObject.set(x, "options", null)
+    inline def setOptionsNull: Self = StObject.set(x, "options", null)
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPublicDependency(value: js.Array[Double]): Self = StObject.set(x, "publicDependency", value.asInstanceOf[js.Any])
+    inline def setPublicDependency(value: js.Array[Double]): Self = StObject.set(x, "publicDependency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicDependencyNull: Self = StObject.set(x, "publicDependency", null)
+    inline def setPublicDependencyNull: Self = StObject.set(x, "publicDependency", null)
     
-    @scala.inline
-    def setPublicDependencyUndefined: Self = StObject.set(x, "publicDependency", js.undefined)
+    inline def setPublicDependencyUndefined: Self = StObject.set(x, "publicDependency", js.undefined)
     
-    @scala.inline
-    def setPublicDependencyVarargs(value: Double*): Self = StObject.set(x, "publicDependency", js.Array(value :_*))
+    inline def setPublicDependencyVarargs(value: Double*): Self = StObject.set(x, "publicDependency", js.Array(value :_*))
     
-    @scala.inline
-    def setService(value: js.Array[IServiceDescriptorProto]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: js.Array[IServiceDescriptorProto]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNull: Self = StObject.set(x, "service", null)
+    inline def setServiceNull: Self = StObject.set(x, "service", null)
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
-    @scala.inline
-    def setServiceVarargs(value: IServiceDescriptorProto*): Self = StObject.set(x, "service", js.Array(value :_*))
+    inline def setServiceVarargs(value: IServiceDescriptorProto*): Self = StObject.set(x, "service", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceCodeInfo(value: ISourceCodeInfo): Self = StObject.set(x, "sourceCodeInfo", value.asInstanceOf[js.Any])
+    inline def setSourceCodeInfo(value: ISourceCodeInfo): Self = StObject.set(x, "sourceCodeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCodeInfoNull: Self = StObject.set(x, "sourceCodeInfo", null)
+    inline def setSourceCodeInfoNull: Self = StObject.set(x, "sourceCodeInfo", null)
     
-    @scala.inline
-    def setSourceCodeInfoUndefined: Self = StObject.set(x, "sourceCodeInfo", js.undefined)
+    inline def setSourceCodeInfoUndefined: Self = StObject.set(x, "sourceCodeInfo", js.undefined)
     
-    @scala.inline
-    def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+    inline def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyntaxNull: Self = StObject.set(x, "syntax", null)
+    inline def setSyntaxNull: Self = StObject.set(x, "syntax", null)
     
-    @scala.inline
-    def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
+    inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
     
-    @scala.inline
-    def setWeakDependency(value: js.Array[Double]): Self = StObject.set(x, "weakDependency", value.asInstanceOf[js.Any])
+    inline def setWeakDependency(value: js.Array[Double]): Self = StObject.set(x, "weakDependency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeakDependencyNull: Self = StObject.set(x, "weakDependency", null)
+    inline def setWeakDependencyNull: Self = StObject.set(x, "weakDependency", null)
     
-    @scala.inline
-    def setWeakDependencyUndefined: Self = StObject.set(x, "weakDependency", js.undefined)
+    inline def setWeakDependencyUndefined: Self = StObject.set(x, "weakDependency", js.undefined)
     
-    @scala.inline
-    def setWeakDependencyVarargs(value: Double*): Self = StObject.set(x, "weakDependency", js.Array(value :_*))
+    inline def setWeakDependencyVarargs(value: Double*): Self = StObject.set(x, "weakDependency", js.Array(value :_*))
     
-    @scala.inline
-    def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_packageNull: Self = StObject.set(x, "package", null)
+    inline def set_packageNull: Self = StObject.set(x, "package", null)
     
-    @scala.inline
-    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
+    inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

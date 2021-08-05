@@ -79,46 +79,33 @@ trait GeoJSONOptions[P]
 }
 object GeoJSONOptions {
   
-  @scala.inline
-  def apply[P](): GeoJSONOptions[P] = {
+  inline def apply[P](): GeoJSONOptions[P] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeoJSONOptions[P]]
   }
   
-  @scala.inline
-  implicit class GeoJSONOptionsMutableBuilder[Self <: GeoJSONOptions[?], P] (val x: Self & GeoJSONOptions[P]) extends AnyVal {
+  extension [Self <: GeoJSONOptions[?], P](x: Self & GeoJSONOptions[P]) {
     
-    @scala.inline
-    def setCoordsToLatLng(value: /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) => LatLng_): Self = StObject.set(x, "coordsToLatLng", js.Any.fromFunction1(value))
+    inline def setCoordsToLatLng(value: /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) => LatLng_): Self = StObject.set(x, "coordsToLatLng", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCoordsToLatLngUndefined: Self = StObject.set(x, "coordsToLatLng", js.undefined)
+    inline def setCoordsToLatLngUndefined: Self = StObject.set(x, "coordsToLatLng", js.undefined)
     
-    @scala.inline
-    def setFilter(value: /* geoJsonFeature */ Feature[GeometryObject, P] => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: /* geoJsonFeature */ Feature[GeometryObject, P] => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setOnEachFeature(value: (/* feature */ Feature[GeometryObject, P], /* layer */ Layer) => Unit): Self = StObject.set(x, "onEachFeature", js.Any.fromFunction2(value))
+    inline def setOnEachFeature(value: (/* feature */ Feature[GeometryObject, P], /* layer */ Layer) => Unit): Self = StObject.set(x, "onEachFeature", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnEachFeatureUndefined: Self = StObject.set(x, "onEachFeature", js.undefined)
+    inline def setOnEachFeatureUndefined: Self = StObject.set(x, "onEachFeature", js.undefined)
     
-    @scala.inline
-    def setPointToLayer(value: (/* geoJsonPoint */ Feature[Point, P], /* latlng */ LatLng_) => Layer): Self = StObject.set(x, "pointToLayer", js.Any.fromFunction2(value))
+    inline def setPointToLayer(value: (/* geoJsonPoint */ Feature[Point, P], /* latlng */ LatLng_) => Layer): Self = StObject.set(x, "pointToLayer", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPointToLayerUndefined: Self = StObject.set(x, "pointToLayer", js.undefined)
+    inline def setPointToLayerUndefined: Self = StObject.set(x, "pointToLayer", js.undefined)
     
-    @scala.inline
-    def setStyle(value: PathOptions | StyleFunction[P]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: PathOptions | StyleFunction[P]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleFunction1(value: /* feature */ js.UndefOr[Feature[GeometryObject, P]] => PathOptions): Self = StObject.set(x, "style", js.Any.fromFunction1(value))
+    inline def setStyleFunction1(value: /* feature */ js.UndefOr[Feature[GeometryObject, P]] => PathOptions): Self = StObject.set(x, "style", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

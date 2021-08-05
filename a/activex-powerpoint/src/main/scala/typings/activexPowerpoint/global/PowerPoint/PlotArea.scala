@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.PlotArea")
 @js.native
-class PlotArea protected ()
+/* private */ class PlotArea ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.PlotArea {
   
@@ -59,7 +59,7 @@ class PlotArea protected ()
   /* CompleteClass */
   var Position: XlChartElementPosition = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.PlotArea_typekey")
   var PowerPointDotPlotArea_typekey: typings.activexPowerpoint.PowerPoint.PlotArea = js.native
   

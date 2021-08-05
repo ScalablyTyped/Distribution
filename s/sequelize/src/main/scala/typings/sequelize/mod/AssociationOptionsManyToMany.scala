@@ -15,8 +15,7 @@ trait AssociationOptionsManyToMany
      with AssociationOptions
 object AssociationOptionsManyToMany {
   
-  @scala.inline
-  def apply(): AssociationOptionsManyToMany = {
+  inline def apply(): AssociationOptionsManyToMany = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociationOptionsManyToMany]
   }

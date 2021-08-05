@@ -14,31 +14,23 @@ trait GetWorkspaceStatusResponse extends StObject {
 }
 object GetWorkspaceStatusResponse {
   
-  @scala.inline
-  def apply(): GetWorkspaceStatusResponse = {
+  inline def apply(): GetWorkspaceStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetWorkspaceStatusResponse]
   }
   
-  @scala.inline
-  implicit class GetWorkspaceStatusResponseMutableBuilder[Self <: GetWorkspaceStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetWorkspaceStatusResponse](x: Self) {
     
-    @scala.inline
-    def setMergeConflict(value: js.Array[MergeConflict]): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
+    inline def setMergeConflict(value: js.Array[MergeConflict]): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
+    inline def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
     
-    @scala.inline
-    def setMergeConflictVarargs(value: MergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
+    inline def setMergeConflictVarargs(value: MergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkspaceChange(value: js.Array[Entity]): Self = StObject.set(x, "workspaceChange", value.asInstanceOf[js.Any])
+    inline def setWorkspaceChange(value: js.Array[Entity]): Self = StObject.set(x, "workspaceChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceChangeUndefined: Self = StObject.set(x, "workspaceChange", js.undefined)
+    inline def setWorkspaceChangeUndefined: Self = StObject.set(x, "workspaceChange", js.undefined)
     
-    @scala.inline
-    def setWorkspaceChangeVarargs(value: Entity*): Self = StObject.set(x, "workspaceChange", js.Array(value :_*))
+    inline def setWorkspaceChangeVarargs(value: Entity*): Self = StObject.set(x, "workspaceChange", js.Array(value :_*))
   }
 }

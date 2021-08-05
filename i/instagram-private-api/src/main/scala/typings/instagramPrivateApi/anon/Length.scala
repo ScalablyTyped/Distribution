@@ -12,19 +12,15 @@ trait Length extends StObject {
 }
 object Length {
   
-  @scala.inline
-  def apply(length: Double, source_type: String): Length = {
+  inline def apply(length: Double, source_type: String): Length = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], source_type = source_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Length]
   }
   
-  @scala.inline
-  implicit class LengthMutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
+  extension [Self <: Length](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_type(value: String): Self = StObject.set(x, "source_type", value.asInstanceOf[js.Any])
+    inline def setSource_type(value: String): Self = StObject.set(x, "source_type", value.asInstanceOf[js.Any])
   }
 }

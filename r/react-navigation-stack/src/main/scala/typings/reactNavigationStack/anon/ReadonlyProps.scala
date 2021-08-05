@@ -30,8 +30,7 @@ trait ReadonlyProps extends StObject {
 }
 object ReadonlyProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     descriptors: StackDescriptorMap,
     navigation: StackNavigationHelpers,
     screenProps: js.Any,
@@ -41,43 +40,30 @@ object ReadonlyProps {
     __obj.asInstanceOf[ReadonlyProps]
   }
   
-  @scala.inline
-  implicit class ReadonlyPropsMutableBuilder[Self <: ReadonlyProps] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyProps](x: Self) {
     
-    @scala.inline
-    def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+    inline def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachInactiveScreens(value: Boolean): Self = StObject.set(x, "detachInactiveScreens", value.asInstanceOf[js.Any])
+    inline def setDetachInactiveScreens(value: Boolean): Self = StObject.set(x, "detachInactiveScreens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachInactiveScreensUndefined: Self = StObject.set(x, "detachInactiveScreens", js.undefined)
+    inline def setDetachInactiveScreensUndefined: Self = StObject.set(x, "detachInactiveScreens", js.undefined)
     
-    @scala.inline
-    def setHeaderMode(value: StackHeaderMode): Self = StObject.set(x, "headerMode", value.asInstanceOf[js.Any])
+    inline def setHeaderMode(value: StackHeaderMode): Self = StObject.set(x, "headerMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderModeUndefined: Self = StObject.set(x, "headerMode", js.undefined)
+    inline def setHeaderModeUndefined: Self = StObject.set(x, "headerMode", js.undefined)
     
-    @scala.inline
-    def setKeyboardHandlingEnabled(value: Boolean): Self = StObject.set(x, "keyboardHandlingEnabled", value.asInstanceOf[js.Any])
+    inline def setKeyboardHandlingEnabled(value: Boolean): Self = StObject.set(x, "keyboardHandlingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardHandlingEnabledUndefined: Self = StObject.set(x, "keyboardHandlingEnabled", js.undefined)
+    inline def setKeyboardHandlingEnabledUndefined: Self = StObject.set(x, "keyboardHandlingEnabled", js.undefined)
     
-    @scala.inline
-    def setMode(value: StackCardMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: StackCardMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setNavigation(value: StackNavigationHelpers): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: StackNavigationHelpers): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenProps(value: js.Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+    inline def setScreenProps(value: js.Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: NavigationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: NavigationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

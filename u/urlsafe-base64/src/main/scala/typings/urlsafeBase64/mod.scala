@@ -11,18 +11,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decode(base64: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base64.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def decode(base64: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base64.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @scala.inline
-  def encode(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def validate(base64: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(base64.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def validate(base64: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(base64.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("urlsafe-base64", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 }

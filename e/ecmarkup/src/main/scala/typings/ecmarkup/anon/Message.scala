@@ -18,23 +18,18 @@ trait Message
 }
 object Message {
   
-  @scala.inline
-  def apply(message: String, ruleId: String): Message = {
+  inline def apply(message: String, ruleId: String): Message = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("global")
     __obj.asInstanceOf[Message]
   }
   
-  @scala.inline
-  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+  extension [Self <: Message](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: global): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: global): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

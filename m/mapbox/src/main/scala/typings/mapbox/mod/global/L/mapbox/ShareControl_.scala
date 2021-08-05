@@ -11,16 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ShareControl_ {
   
-  @scala.inline
-  def apply(onAdd: Map_ => js.Any): ShareControl_ = {
+  inline def apply(onAdd: Map_ => js.Any): ShareControl_ = {
     val __obj = js.Dynamic.literal(onAdd = js.Any.fromFunction1(onAdd))
     __obj.asInstanceOf[ShareControl_]
   }
   
-  @scala.inline
-  implicit class ShareControl_MutableBuilder[Self <: ShareControl_] (val x: Self) extends AnyVal {
+  extension [Self <: ShareControl_](x: Self) {
     
-    @scala.inline
-    def setOnAdd(value: Map_ => js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+    inline def setOnAdd(value: Map_ => js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
   }
 }

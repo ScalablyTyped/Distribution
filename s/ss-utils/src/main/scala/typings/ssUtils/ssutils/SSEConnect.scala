@@ -22,8 +22,7 @@ trait SSEConnect
 }
 object SSEConnect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channels: String,
     displayName: String,
     heartbeatIntervalMs: Double,
@@ -39,25 +38,18 @@ object SSEConnect {
     __obj.asInstanceOf[SSEConnect]
   }
   
-  @scala.inline
-  implicit class SSEConnectMutableBuilder[Self <: SSEConnect] (val x: Self) extends AnyVal {
+  extension [Self <: SSEConnect](x: Self) {
     
-    @scala.inline
-    def setHeartbeatIntervalMs(value: Double): Self = StObject.set(x, "heartbeatIntervalMs", value.asInstanceOf[js.Any])
+    inline def setHeartbeatIntervalMs(value: Double): Self = StObject.set(x, "heartbeatIntervalMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeartbeatUrl(value: String): Self = StObject.set(x, "heartbeatUrl", value.asInstanceOf[js.Any])
+    inline def setHeartbeatUrl(value: String): Self = StObject.set(x, "heartbeatUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleTimeoutMs(value: Double): Self = StObject.set(x, "idleTimeoutMs", value.asInstanceOf[js.Any])
+    inline def setIdleTimeoutMs(value: Double): Self = StObject.set(x, "idleTimeoutMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnRegisterUrl(value: String): Self = StObject.set(x, "unRegisterUrl", value.asInstanceOf[js.Any])
+    inline def setUnRegisterUrl(value: String): Self = StObject.set(x, "unRegisterUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateSubscriberUrl(value: String): Self = StObject.set(x, "updateSubscriberUrl", value.asInstanceOf[js.Any])
+    inline def setUpdateSubscriberUrl(value: String): Self = StObject.set(x, "updateSubscriberUrl", value.asInstanceOf[js.Any])
   }
 }

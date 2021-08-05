@@ -18,25 +18,19 @@ trait DiskMap extends StObject {
 }
 object DiskMap {
   
-  @scala.inline
-  def apply(): DiskMap = {
+  inline def apply(): DiskMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiskMap]
   }
   
-  @scala.inline
-  implicit class DiskMapMutableBuilder[Self <: DiskMap] (val x: Self) extends AnyVal {
+  extension [Self <: DiskMap](x: Self) {
     
-    @scala.inline
-    def setNewDiskName(value: ResourceName): Self = StObject.set(x, "newDiskName", value.asInstanceOf[js.Any])
+    inline def setNewDiskName(value: ResourceName): Self = StObject.set(x, "newDiskName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewDiskNameUndefined: Self = StObject.set(x, "newDiskName", js.undefined)
+    inline def setNewDiskNameUndefined: Self = StObject.set(x, "newDiskName", js.undefined)
     
-    @scala.inline
-    def setOriginalDiskPath(value: NonEmptyString): Self = StObject.set(x, "originalDiskPath", value.asInstanceOf[js.Any])
+    inline def setOriginalDiskPath(value: NonEmptyString): Self = StObject.set(x, "originalDiskPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalDiskPathUndefined: Self = StObject.set(x, "originalDiskPath", js.undefined)
+    inline def setOriginalDiskPathUndefined: Self = StObject.set(x, "originalDiskPath", js.undefined)
   }
 }

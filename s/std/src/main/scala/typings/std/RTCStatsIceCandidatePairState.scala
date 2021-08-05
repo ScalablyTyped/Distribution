@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCStatsIceCandidatePairState extends StObject
 object RTCStatsIceCandidatePairState {
   
-  @scala.inline
-  def cancelled: typings.std.stdStrings.cancelled = "cancelled".asInstanceOf[typings.std.stdStrings.cancelled]
+  inline def cancelled: typings.std.stdStrings.cancelled = "cancelled".asInstanceOf[typings.std.stdStrings.cancelled]
   
-  @scala.inline
-  def failed: typings.std.stdStrings.failed = "failed".asInstanceOf[typings.std.stdStrings.failed]
+  inline def failed: typings.std.stdStrings.failed = "failed".asInstanceOf[typings.std.stdStrings.failed]
   
-  @scala.inline
-  def frozen: typings.std.stdStrings.frozen = "frozen".asInstanceOf[typings.std.stdStrings.frozen]
+  inline def frozen: typings.std.stdStrings.frozen = "frozen".asInstanceOf[typings.std.stdStrings.frozen]
   
-  @scala.inline
-  def inprogress: typings.std.stdStrings.inprogress = "inprogress".asInstanceOf[typings.std.stdStrings.inprogress]
+  inline def inprogress: typings.std.stdStrings.inprogress = "inprogress".asInstanceOf[typings.std.stdStrings.inprogress]
   
-  @scala.inline
-  def succeeded: typings.std.stdStrings.succeeded = "succeeded".asInstanceOf[typings.std.stdStrings.succeeded]
+  inline def succeeded: typings.std.stdStrings.succeeded = "succeeded".asInstanceOf[typings.std.stdStrings.succeeded]
   
-  @scala.inline
-  def waiting: typings.std.stdStrings.waiting = "waiting".asInstanceOf[typings.std.stdStrings.waiting]
+  inline def waiting: typings.std.stdStrings.waiting = "waiting".asInstanceOf[typings.std.stdStrings.waiting]
 }

@@ -13,16 +13,13 @@ trait DeleteInfrastructureConfigurationRequest extends StObject {
 }
 object DeleteInfrastructureConfigurationRequest {
   
-  @scala.inline
-  def apply(infrastructureConfigurationArn: InfrastructureConfigurationArn): DeleteInfrastructureConfigurationRequest = {
+  inline def apply(infrastructureConfigurationArn: InfrastructureConfigurationArn): DeleteInfrastructureConfigurationRequest = {
     val __obj = js.Dynamic.literal(infrastructureConfigurationArn = infrastructureConfigurationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInfrastructureConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteInfrastructureConfigurationRequestMutableBuilder[Self <: DeleteInfrastructureConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInfrastructureConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setInfrastructureConfigurationArn(value: InfrastructureConfigurationArn): Self = StObject.set(x, "infrastructureConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setInfrastructureConfigurationArn(value: InfrastructureConfigurationArn): Self = StObject.set(x, "infrastructureConfigurationArn", value.asInstanceOf[js.Any])
   }
 }

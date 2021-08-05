@@ -21,19 +21,14 @@ object PopupMenuDirection {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def EXECUTE_DEFAULT: `0` = 0.asInstanceOf[`0`]
+    inline def EXECUTE_DEFAULT: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def EXECUTE_DOWN: `1` = 1.asInstanceOf[`1`]
+    inline def EXECUTE_DOWN: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def EXECUTE_LEFT: `4` = 4.asInstanceOf[`4`]
+    inline def EXECUTE_LEFT: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def EXECUTE_RIGHT: `8` = 8.asInstanceOf[`8`]
+    inline def EXECUTE_RIGHT: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def EXECUTE_UP: `2` = 2.asInstanceOf[`2`]
+    inline def EXECUTE_UP: `2` = 2.asInstanceOf[`2`]
   }
 }

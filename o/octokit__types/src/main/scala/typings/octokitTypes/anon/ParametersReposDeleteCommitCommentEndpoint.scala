@@ -17,8 +17,7 @@ trait ParametersReposDeleteCommitCommentEndpoint extends StObject {
 }
 object ParametersReposDeleteCommitCommentEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposDeleteCommitCommentEndpoint,
     request: ReposDeleteCommitCommentRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersReposDeleteCommitCommentEndpoint {
     __obj.asInstanceOf[ParametersReposDeleteCommitCommentEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposDeleteCommitCommentEndpointMutableBuilder[Self <: ParametersReposDeleteCommitCommentEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposDeleteCommitCommentEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposDeleteCommitCommentEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposDeleteCommitCommentEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposDeleteCommitCommentRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposDeleteCommitCommentRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

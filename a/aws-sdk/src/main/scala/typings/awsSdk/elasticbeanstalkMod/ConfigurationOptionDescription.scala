@@ -63,82 +63,57 @@ trait ConfigurationOptionDescription extends StObject {
 }
 object ConfigurationOptionDescription {
   
-  @scala.inline
-  def apply(): ConfigurationOptionDescription = {
+  inline def apply(): ConfigurationOptionDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigurationOptionDescription]
   }
   
-  @scala.inline
-  implicit class ConfigurationOptionDescriptionMutableBuilder[Self <: ConfigurationOptionDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationOptionDescription](x: Self) {
     
-    @scala.inline
-    def setChangeSeverity(value: ConfigurationOptionSeverity): Self = StObject.set(x, "ChangeSeverity", value.asInstanceOf[js.Any])
+    inline def setChangeSeverity(value: ConfigurationOptionSeverity): Self = StObject.set(x, "ChangeSeverity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSeverityUndefined: Self = StObject.set(x, "ChangeSeverity", js.undefined)
+    inline def setChangeSeverityUndefined: Self = StObject.set(x, "ChangeSeverity", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: ConfigurationOptionDefaultValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: ConfigurationOptionDefaultValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
-    @scala.inline
-    def setMaxLength(value: OptionRestrictionMaxLength): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: OptionRestrictionMaxLength): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLengthUndefined: Self = StObject.set(x, "MaxLength", js.undefined)
+    inline def setMaxLengthUndefined: Self = StObject.set(x, "MaxLength", js.undefined)
     
-    @scala.inline
-    def setMaxValue(value: OptionRestrictionMaxValue): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: OptionRestrictionMaxValue): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "MaxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "MaxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: OptionRestrictionMinValue): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: OptionRestrictionMinValue): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "MinValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "MinValue", js.undefined)
     
-    @scala.inline
-    def setName(value: ConfigurationOptionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ConfigurationOptionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: OptionNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: OptionNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
     
-    @scala.inline
-    def setRegex(value: OptionRestrictionRegex): Self = StObject.set(x, "Regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: OptionRestrictionRegex): Self = StObject.set(x, "Regex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexUndefined: Self = StObject.set(x, "Regex", js.undefined)
+    inline def setRegexUndefined: Self = StObject.set(x, "Regex", js.undefined)
     
-    @scala.inline
-    def setUserDefined(value: UserDefinedOption): Self = StObject.set(x, "UserDefined", value.asInstanceOf[js.Any])
+    inline def setUserDefined(value: UserDefinedOption): Self = StObject.set(x, "UserDefined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDefinedUndefined: Self = StObject.set(x, "UserDefined", js.undefined)
+    inline def setUserDefinedUndefined: Self = StObject.set(x, "UserDefined", js.undefined)
     
-    @scala.inline
-    def setValueOptions(value: ConfigurationOptionPossibleValues): Self = StObject.set(x, "ValueOptions", value.asInstanceOf[js.Any])
+    inline def setValueOptions(value: ConfigurationOptionPossibleValues): Self = StObject.set(x, "ValueOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueOptionsUndefined: Self = StObject.set(x, "ValueOptions", js.undefined)
+    inline def setValueOptionsUndefined: Self = StObject.set(x, "ValueOptions", js.undefined)
     
-    @scala.inline
-    def setValueOptionsVarargs(value: ConfigurationOptionPossibleValue*): Self = StObject.set(x, "ValueOptions", js.Array(value :_*))
+    inline def setValueOptionsVarargs(value: ConfigurationOptionPossibleValue*): Self = StObject.set(x, "ValueOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setValueType(value: ConfigurationOptionValueType): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
+    inline def setValueType(value: ConfigurationOptionValueType): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueTypeUndefined: Self = StObject.set(x, "ValueType", js.undefined)
+    inline def setValueTypeUndefined: Self = StObject.set(x, "ValueType", js.undefined)
   }
 }

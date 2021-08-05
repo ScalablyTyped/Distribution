@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useClickOutside(): HookReturnTuple = ^.asInstanceOf[js.Dynamic].applyDynamic("useClickOutside")().asInstanceOf[HookReturnTuple]
+  inline def useClickOutside(): HookReturnTuple = ^.asInstanceOf[js.Dynamic].applyDynamic("useClickOutside")().asInstanceOf[HookReturnTuple]
   
   type HookReturnTuple = js.Tuple2[js.Function1[/* node */ js.UndefOr[Element | Null], Unit], Boolean]
 }

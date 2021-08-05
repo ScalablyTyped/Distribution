@@ -10,16 +10,13 @@ trait SkipWaitingRequest extends StObject {
 }
 object SkipWaitingRequest {
   
-  @scala.inline
-  def apply(scopeURL: String): SkipWaitingRequest = {
+  inline def apply(scopeURL: String): SkipWaitingRequest = {
     val __obj = js.Dynamic.literal(scopeURL = scopeURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkipWaitingRequest]
   }
   
-  @scala.inline
-  implicit class SkipWaitingRequestMutableBuilder[Self <: SkipWaitingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SkipWaitingRequest](x: Self) {
     
-    @scala.inline
-    def setScopeURL(value: String): Self = StObject.set(x, "scopeURL", value.asInstanceOf[js.Any])
+    inline def setScopeURL(value: String): Self = StObject.set(x, "scopeURL", value.asInstanceOf[js.Any])
   }
 }

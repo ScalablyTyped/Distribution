@@ -18,25 +18,19 @@ trait StartPreciseCoverageParameterType extends StObject {
 }
 object StartPreciseCoverageParameterType {
   
-  @scala.inline
-  def apply(): StartPreciseCoverageParameterType = {
+  inline def apply(): StartPreciseCoverageParameterType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartPreciseCoverageParameterType]
   }
   
-  @scala.inline
-  implicit class StartPreciseCoverageParameterTypeMutableBuilder[Self <: StartPreciseCoverageParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: StartPreciseCoverageParameterType](x: Self) {
     
-    @scala.inline
-    def setCallCount(value: Boolean): Self = StObject.set(x, "callCount", value.asInstanceOf[js.Any])
+    inline def setCallCount(value: Boolean): Self = StObject.set(x, "callCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallCountUndefined: Self = StObject.set(x, "callCount", js.undefined)
+    inline def setCallCountUndefined: Self = StObject.set(x, "callCount", js.undefined)
     
-    @scala.inline
-    def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
+    inline def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
+    inline def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
   }
 }

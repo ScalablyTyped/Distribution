@@ -18,22 +18,17 @@ trait ReadOptions extends StObject {
 }
 object ReadOptions {
   
-  @scala.inline
-  def apply(): ReadOptions = {
+  inline def apply(): ReadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadOptions]
   }
   
-  @scala.inline
-  implicit class ReadOptionsMutableBuilder[Self <: ReadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReadOptions](x: Self) {
     
-    @scala.inline
-    def setFieldMask(value: js.Array[String | FieldPath]): Self = StObject.set(x, "fieldMask", value.asInstanceOf[js.Any])
+    inline def setFieldMask(value: js.Array[String | FieldPath]): Self = StObject.set(x, "fieldMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldMaskUndefined: Self = StObject.set(x, "fieldMask", js.undefined)
+    inline def setFieldMaskUndefined: Self = StObject.set(x, "fieldMask", js.undefined)
     
-    @scala.inline
-    def setFieldMaskVarargs(value: (String | FieldPath)*): Self = StObject.set(x, "fieldMask", js.Array(value :_*))
+    inline def setFieldMaskVarargs(value: (String | FieldPath)*): Self = StObject.set(x, "fieldMask", js.Array(value :_*))
   }
 }

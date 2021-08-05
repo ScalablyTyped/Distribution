@@ -28,8 +28,7 @@ trait ExcludedLocation
 }
 object ExcludedLocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCampaign: () => Campaign,
     getCampaignType: () => CampaignType,
     getCountryCode: () => String,
@@ -44,31 +43,22 @@ object ExcludedLocation {
     __obj.asInstanceOf[ExcludedLocation]
   }
   
-  @scala.inline
-  implicit class ExcludedLocationMutableBuilder[Self <: ExcludedLocation] (val x: Self) extends AnyVal {
+  extension [Self <: ExcludedLocation](x: Self) {
     
-    @scala.inline
-    def setGetCampaignType(value: () => CampaignType): Self = StObject.set(x, "getCampaignType", js.Any.fromFunction0(value))
+    inline def setGetCampaignType(value: () => CampaignType): Self = StObject.set(x, "getCampaignType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCountryCode(value: () => String): Self = StObject.set(x, "getCountryCode", js.Any.fromFunction0(value))
+    inline def setGetCountryCode(value: () => String): Self = StObject.set(x, "getCountryCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTargetType(value: () => TargetType): Self = StObject.set(x, "getTargetType", js.Any.fromFunction0(value))
+    inline def setGetTargetType(value: () => TargetType): Self = StObject.set(x, "getTargetType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTargetingStatus(value: () => TargetingStatus): Self = StObject.set(x, "getTargetingStatus", js.Any.fromFunction0(value))
+    inline def setGetTargetingStatus(value: () => TargetingStatus): Self = StObject.set(x, "getTargetingStatus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVideoCampaign(value: () => Campaign): Self = StObject.set(x, "getVideoCampaign", js.Any.fromFunction0(value))
+    inline def setGetVideoCampaign(value: () => Campaign): Self = StObject.set(x, "getVideoCampaign", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

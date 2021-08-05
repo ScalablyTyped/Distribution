@@ -17,20 +17,16 @@ object contactItemBuilderDriverMod {
   }
   object ContactItemBuilderDriver {
     
-    @scala.inline
-    def apply(exists: () => Boolean, getSubtitle: () => String, getTitle: () => String): ContactItemBuilderDriver = {
+    inline def apply(exists: () => Boolean, getSubtitle: () => String, getTitle: () => String): ContactItemBuilderDriver = {
       val __obj = js.Dynamic.literal(exists = js.Any.fromFunction0(exists), getSubtitle = js.Any.fromFunction0(getSubtitle), getTitle = js.Any.fromFunction0(getTitle))
       __obj.asInstanceOf[ContactItemBuilderDriver]
     }
     
-    @scala.inline
-    implicit class ContactItemBuilderDriverMutableBuilder[Self <: ContactItemBuilderDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ContactItemBuilderDriver](x: Self) {
       
-      @scala.inline
-      def setGetSubtitle(value: () => String): Self = StObject.set(x, "getSubtitle", js.Any.fromFunction0(value))
+      inline def setGetSubtitle(value: () => String): Self = StObject.set(x, "getSubtitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     }
   }
 }

@@ -15,19 +15,15 @@ trait TypeofTreeView extends StObject {
 }
 object TypeofTreeView {
   
-  @scala.inline
-  def apply(extend: js.Object => TreeView, fn: TreeView): TypeofTreeView = {
+  inline def apply(extend: js.Object => TreeView, fn: TreeView): TypeofTreeView = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTreeView]
   }
   
-  @scala.inline
-  implicit class TypeofTreeViewMutableBuilder[Self <: TypeofTreeView] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTreeView](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => TreeView): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => TreeView): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: TreeView): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: TreeView): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

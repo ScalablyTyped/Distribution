@@ -18,25 +18,19 @@ trait DescribeExclusionsRequest extends StObject {
 }
 object DescribeExclusionsRequest {
   
-  @scala.inline
-  def apply(exclusionArns: BatchDescribeExclusionsArnList): DescribeExclusionsRequest = {
+  inline def apply(exclusionArns: BatchDescribeExclusionsArnList): DescribeExclusionsRequest = {
     val __obj = js.Dynamic.literal(exclusionArns = exclusionArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeExclusionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeExclusionsRequestMutableBuilder[Self <: DescribeExclusionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeExclusionsRequest](x: Self) {
     
-    @scala.inline
-    def setExclusionArns(value: BatchDescribeExclusionsArnList): Self = StObject.set(x, "exclusionArns", value.asInstanceOf[js.Any])
+    inline def setExclusionArns(value: BatchDescribeExclusionsArnList): Self = StObject.set(x, "exclusionArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusionArnsVarargs(value: Arn*): Self = StObject.set(x, "exclusionArns", js.Array(value :_*))
+    inline def setExclusionArnsVarargs(value: Arn*): Self = StObject.set(x, "exclusionArns", js.Array(value :_*))
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
   }
 }

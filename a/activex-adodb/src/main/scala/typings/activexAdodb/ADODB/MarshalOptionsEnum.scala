@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MarshalOptionsEnum extends StObject
 object MarshalOptionsEnum {
   
-  @scala.inline
-  def adMarshalAll: `0` = 0.asInstanceOf[`0`]
+  inline def adMarshalAll: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def adMarshalModifiedOnly: `1` = 1.asInstanceOf[`1`]
+  inline def adMarshalModifiedOnly: `1` = 1.asInstanceOf[`1`]
 }

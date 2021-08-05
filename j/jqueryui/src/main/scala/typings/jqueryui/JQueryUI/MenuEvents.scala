@@ -17,37 +17,27 @@ trait MenuEvents extends StObject {
 }
 object MenuEvents {
   
-  @scala.inline
-  def apply(): MenuEvents = {
+  inline def apply(): MenuEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MenuEvents]
   }
   
-  @scala.inline
-  implicit class MenuEventsMutableBuilder[Self <: MenuEvents] (val x: Self) extends AnyVal {
+  extension [Self <: MenuEvents](x: Self) {
     
-    @scala.inline
-    def setBlur(value: (/* event */ JQueryEventObject, /* ui */ MenuUIParams) => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction2(value))
+    inline def setBlur(value: (/* event */ JQueryEventObject, /* ui */ MenuUIParams) => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+    inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
     
-    @scala.inline
-    def setCreate(value: (/* event */ JQueryEventObject, /* ui */ MenuUIParams) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ JQueryEventObject, /* ui */ MenuUIParams) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setFocus(value: (/* event */ JQueryEventObject, /* ui */ MenuUIParams) => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction2(value))
+    inline def setFocus(value: (/* event */ JQueryEventObject, /* ui */ MenuUIParams) => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
-    @scala.inline
-    def setSelect(value: (/* event */ JQueryEventObject, /* ui */ MenuUIParams) => Unit): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
+    inline def setSelect(value: (/* event */ JQueryEventObject, /* ui */ MenuUIParams) => Unit): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

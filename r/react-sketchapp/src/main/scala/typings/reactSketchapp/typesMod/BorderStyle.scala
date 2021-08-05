@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BorderStyle extends StObject
 object BorderStyle {
   
-  @scala.inline
-  def dashed: typings.reactSketchapp.reactSketchappStrings.dashed = "dashed".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.dashed]
+  inline def dashed: typings.reactSketchapp.reactSketchappStrings.dashed = "dashed".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.dashed]
   
-  @scala.inline
-  def dotted: typings.reactSketchapp.reactSketchappStrings.dotted = "dotted".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.dotted]
+  inline def dotted: typings.reactSketchapp.reactSketchappStrings.dotted = "dotted".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.dotted]
   
-  @scala.inline
-  def solid: typings.reactSketchapp.reactSketchappStrings.solid = "solid".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.solid]
+  inline def solid: typings.reactSketchapp.reactSketchappStrings.solid = "solid".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.solid]
 }

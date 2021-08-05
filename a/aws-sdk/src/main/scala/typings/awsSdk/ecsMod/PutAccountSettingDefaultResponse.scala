@@ -10,19 +10,15 @@ trait PutAccountSettingDefaultResponse extends StObject {
 }
 object PutAccountSettingDefaultResponse {
   
-  @scala.inline
-  def apply(): PutAccountSettingDefaultResponse = {
+  inline def apply(): PutAccountSettingDefaultResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutAccountSettingDefaultResponse]
   }
   
-  @scala.inline
-  implicit class PutAccountSettingDefaultResponseMutableBuilder[Self <: PutAccountSettingDefaultResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutAccountSettingDefaultResponse](x: Self) {
     
-    @scala.inline
-    def setSetting(value: Setting): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: Setting): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingUndefined: Self = StObject.set(x, "setting", js.undefined)
+    inline def setSettingUndefined: Self = StObject.set(x, "setting", js.undefined)
   }
 }

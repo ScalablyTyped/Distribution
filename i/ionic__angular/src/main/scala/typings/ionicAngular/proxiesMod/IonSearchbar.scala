@@ -73,7 +73,7 @@ class IonSearchbar protected ()
   /* CompleteClass */
   var disabled: Boolean = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /**
     * Returns the native `<input>` element used under the hood.
@@ -123,5 +123,5 @@ class IonSearchbar protected ()
   /* CompleteClass */
   var `type`: text | password | email | number | search | tel | url = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

@@ -25,8 +25,7 @@ trait XDecryptionResultListener
 }
 object XDecryptionResultListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     decrypted: (Double, SecurityOperationStatus) => Unit,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XDecryptionResultListener {
     __obj.asInstanceOf[XDecryptionResultListener]
   }
   
-  @scala.inline
-  implicit class XDecryptionResultListenerMutableBuilder[Self <: XDecryptionResultListener] (val x: Self) extends AnyVal {
+  extension [Self <: XDecryptionResultListener](x: Self) {
     
-    @scala.inline
-    def setDecrypted(value: (Double, SecurityOperationStatus) => Unit): Self = StObject.set(x, "decrypted", js.Any.fromFunction2(value))
+    inline def setDecrypted(value: (Double, SecurityOperationStatus) => Unit): Self = StObject.set(x, "decrypted", js.Any.fromFunction2(value))
   }
 }

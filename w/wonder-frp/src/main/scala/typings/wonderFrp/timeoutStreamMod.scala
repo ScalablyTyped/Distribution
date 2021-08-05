@@ -13,7 +13,7 @@ object timeoutStreamMod {
   class TimeoutStream protected () extends BaseStream {
     def this(time: Double, scheduler: Scheduler) = this()
     
-    var _time: js.Any = js.native
+    /* private */ var _time: js.Any = js.native
   }
   /* static members */
   object TimeoutStream {
@@ -22,7 +22,6 @@ object timeoutStreamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(time: Double, scheduler: Scheduler): TimeoutStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[TimeoutStream]
+    inline def create(time: Double, scheduler: Scheduler): TimeoutStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[TimeoutStream]
   }
 }

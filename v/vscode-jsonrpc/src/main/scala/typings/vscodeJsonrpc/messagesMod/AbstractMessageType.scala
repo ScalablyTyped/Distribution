@@ -11,9 +11,9 @@ abstract class AbstractMessageType protected ()
      with MessageType {
   def this(_method: String, _numberOfParams: Double) = this()
   
-  var _method: js.Any = js.native
+  /* private */ var _method: js.Any = js.native
   
-  var _numberOfParams: js.Any = js.native
+  /* private */ var _numberOfParams: js.Any = js.native
   
   /* CompleteClass */
   override val method: String = js.native

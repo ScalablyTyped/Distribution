@@ -12,25 +12,19 @@ trait GetAccountBalanceResponse extends StObject {
 }
 object GetAccountBalanceResponse {
   
-  @scala.inline
-  def apply(): GetAccountBalanceResponse = {
+  inline def apply(): GetAccountBalanceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAccountBalanceResponse]
   }
   
-  @scala.inline
-  implicit class GetAccountBalanceResponseMutableBuilder[Self <: GetAccountBalanceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccountBalanceResponse](x: Self) {
     
-    @scala.inline
-    def setAvailableBalance(value: CurrencyAmount): Self = StObject.set(x, "AvailableBalance", value.asInstanceOf[js.Any])
+    inline def setAvailableBalance(value: CurrencyAmount): Self = StObject.set(x, "AvailableBalance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableBalanceUndefined: Self = StObject.set(x, "AvailableBalance", js.undefined)
+    inline def setAvailableBalanceUndefined: Self = StObject.set(x, "AvailableBalance", js.undefined)
     
-    @scala.inline
-    def setOnHoldBalance(value: CurrencyAmount): Self = StObject.set(x, "OnHoldBalance", value.asInstanceOf[js.Any])
+    inline def setOnHoldBalance(value: CurrencyAmount): Self = StObject.set(x, "OnHoldBalance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnHoldBalanceUndefined: Self = StObject.set(x, "OnHoldBalance", js.undefined)
+    inline def setOnHoldBalanceUndefined: Self = StObject.set(x, "OnHoldBalance", js.undefined)
   }
 }

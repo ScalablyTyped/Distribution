@@ -10,8 +10,7 @@ trait PutBucketWebsiteInput
      with typings.awsSdkClientS3Node.typesPutBucketWebsiteInputMod.PutBucketWebsiteInput
 object PutBucketWebsiteInput {
   
-  @scala.inline
-  def apply(Bucket: String, WebsiteConfiguration: WebsiteConfiguration): PutBucketWebsiteInput = {
+  inline def apply(Bucket: String, WebsiteConfiguration: WebsiteConfiguration): PutBucketWebsiteInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], WebsiteConfiguration = WebsiteConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketWebsiteInput]
   }

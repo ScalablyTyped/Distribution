@@ -13,15 +13,13 @@ trait SimpleStatement
      with Statement
 object SimpleStatement {
   
-  @scala.inline
-  def ExpressionStatement(expression: Expression): typings.solidityParserAntlr.mod.ExpressionStatement = {
+  inline def ExpressionStatement(expression: Expression): typings.solidityParserAntlr.mod.ExpressionStatement = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExpressionStatement")
     __obj.asInstanceOf[typings.solidityParserAntlr.mod.ExpressionStatement]
   }
   
-  @scala.inline
-  def VariableDeclarationStatement(variables: js.Array[ASTNode]): typings.solidityParserAntlr.mod.VariableDeclarationStatement = {
+  inline def VariableDeclarationStatement(variables: js.Array[ASTNode]): typings.solidityParserAntlr.mod.VariableDeclarationStatement = {
     val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("VariableDeclarationStatement")
     __obj.asInstanceOf[typings.solidityParserAntlr.mod.VariableDeclarationStatement]

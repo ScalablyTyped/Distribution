@@ -13,19 +13,15 @@ trait DataSourceSchemaWithOptionsModel
 }
 object DataSourceSchemaWithOptionsModel {
   
-  @scala.inline
-  def apply(): DataSourceSchemaWithOptionsModel = {
+  inline def apply(): DataSourceSchemaWithOptionsModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceSchemaWithOptionsModel]
   }
   
-  @scala.inline
-  implicit class DataSourceSchemaWithOptionsModelMutableBuilder[Self <: DataSourceSchemaWithOptionsModel] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceSchemaWithOptionsModel](x: Self) {
     
-    @scala.inline
-    def setModel(value: DataSourceSchemaModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: DataSourceSchemaModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

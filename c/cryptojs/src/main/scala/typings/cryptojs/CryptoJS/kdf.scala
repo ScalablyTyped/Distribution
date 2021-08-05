@@ -22,17 +22,14 @@ object kdf {
   }
   object KdfStatic {
     
-    @scala.inline
-    def apply(OpenSSL: IKdfImpl): KdfStatic = {
+    inline def apply(OpenSSL: IKdfImpl): KdfStatic = {
       val __obj = js.Dynamic.literal(OpenSSL = OpenSSL.asInstanceOf[js.Any])
       __obj.asInstanceOf[KdfStatic]
     }
     
-    @scala.inline
-    implicit class KdfStaticMutableBuilder[Self <: KdfStatic] (val x: Self) extends AnyVal {
+    extension [Self <: KdfStatic](x: Self) {
       
-      @scala.inline
-      def setOpenSSL(value: IKdfImpl): Self = StObject.set(x, "OpenSSL", value.asInstanceOf[js.Any])
+      inline def setOpenSSL(value: IKdfImpl): Self = StObject.set(x, "OpenSSL", value.asInstanceOf[js.Any])
     }
   }
 }

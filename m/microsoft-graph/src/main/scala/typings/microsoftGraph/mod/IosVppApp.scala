@@ -43,94 +43,65 @@ trait IosVppApp
 }
 object IosVppApp {
   
-  @scala.inline
-  def apply(): IosVppApp = {
+  inline def apply(): IosVppApp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosVppApp]
   }
   
-  @scala.inline
-  implicit class IosVppAppMutableBuilder[Self <: IosVppApp] (val x: Self) extends AnyVal {
+  extension [Self <: IosVppApp](x: Self) {
     
-    @scala.inline
-    def setAppStoreUrl(value: NullableOption[String]): Self = StObject.set(x, "appStoreUrl", value.asInstanceOf[js.Any])
+    inline def setAppStoreUrl(value: NullableOption[String]): Self = StObject.set(x, "appStoreUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppStoreUrlNull: Self = StObject.set(x, "appStoreUrl", null)
+    inline def setAppStoreUrlNull: Self = StObject.set(x, "appStoreUrl", null)
     
-    @scala.inline
-    def setAppStoreUrlUndefined: Self = StObject.set(x, "appStoreUrl", js.undefined)
+    inline def setAppStoreUrlUndefined: Self = StObject.set(x, "appStoreUrl", js.undefined)
     
-    @scala.inline
-    def setApplicableDeviceType(value: NullableOption[IosDeviceType]): Self = StObject.set(x, "applicableDeviceType", value.asInstanceOf[js.Any])
+    inline def setApplicableDeviceType(value: NullableOption[IosDeviceType]): Self = StObject.set(x, "applicableDeviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicableDeviceTypeNull: Self = StObject.set(x, "applicableDeviceType", null)
+    inline def setApplicableDeviceTypeNull: Self = StObject.set(x, "applicableDeviceType", null)
     
-    @scala.inline
-    def setApplicableDeviceTypeUndefined: Self = StObject.set(x, "applicableDeviceType", js.undefined)
+    inline def setApplicableDeviceTypeUndefined: Self = StObject.set(x, "applicableDeviceType", js.undefined)
     
-    @scala.inline
-    def setBundleId(value: NullableOption[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: NullableOption[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdNull: Self = StObject.set(x, "bundleId", null)
+    inline def setBundleIdNull: Self = StObject.set(x, "bundleId", null)
     
-    @scala.inline
-    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+    inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
-    @scala.inline
-    def setLicensingType(value: NullableOption[VppLicensingType]): Self = StObject.set(x, "licensingType", value.asInstanceOf[js.Any])
+    inline def setLicensingType(value: NullableOption[VppLicensingType]): Self = StObject.set(x, "licensingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicensingTypeNull: Self = StObject.set(x, "licensingType", null)
+    inline def setLicensingTypeNull: Self = StObject.set(x, "licensingType", null)
     
-    @scala.inline
-    def setLicensingTypeUndefined: Self = StObject.set(x, "licensingType", js.undefined)
+    inline def setLicensingTypeUndefined: Self = StObject.set(x, "licensingType", js.undefined)
     
-    @scala.inline
-    def setReleaseDateTime(value: NullableOption[String]): Self = StObject.set(x, "releaseDateTime", value.asInstanceOf[js.Any])
+    inline def setReleaseDateTime(value: NullableOption[String]): Self = StObject.set(x, "releaseDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDateTimeNull: Self = StObject.set(x, "releaseDateTime", null)
+    inline def setReleaseDateTimeNull: Self = StObject.set(x, "releaseDateTime", null)
     
-    @scala.inline
-    def setReleaseDateTimeUndefined: Self = StObject.set(x, "releaseDateTime", js.undefined)
+    inline def setReleaseDateTimeUndefined: Self = StObject.set(x, "releaseDateTime", js.undefined)
     
-    @scala.inline
-    def setTotalLicenseCount(value: Double): Self = StObject.set(x, "totalLicenseCount", value.asInstanceOf[js.Any])
+    inline def setTotalLicenseCount(value: Double): Self = StObject.set(x, "totalLicenseCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalLicenseCountUndefined: Self = StObject.set(x, "totalLicenseCount", js.undefined)
+    inline def setTotalLicenseCountUndefined: Self = StObject.set(x, "totalLicenseCount", js.undefined)
     
-    @scala.inline
-    def setUsedLicenseCount(value: Double): Self = StObject.set(x, "usedLicenseCount", value.asInstanceOf[js.Any])
+    inline def setUsedLicenseCount(value: Double): Self = StObject.set(x, "usedLicenseCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedLicenseCountUndefined: Self = StObject.set(x, "usedLicenseCount", js.undefined)
+    inline def setUsedLicenseCountUndefined: Self = StObject.set(x, "usedLicenseCount", js.undefined)
     
-    @scala.inline
-    def setVppTokenAccountType(value: VppTokenAccountType): Self = StObject.set(x, "vppTokenAccountType", value.asInstanceOf[js.Any])
+    inline def setVppTokenAccountType(value: VppTokenAccountType): Self = StObject.set(x, "vppTokenAccountType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVppTokenAccountTypeUndefined: Self = StObject.set(x, "vppTokenAccountType", js.undefined)
+    inline def setVppTokenAccountTypeUndefined: Self = StObject.set(x, "vppTokenAccountType", js.undefined)
     
-    @scala.inline
-    def setVppTokenAppleId(value: NullableOption[String]): Self = StObject.set(x, "vppTokenAppleId", value.asInstanceOf[js.Any])
+    inline def setVppTokenAppleId(value: NullableOption[String]): Self = StObject.set(x, "vppTokenAppleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVppTokenAppleIdNull: Self = StObject.set(x, "vppTokenAppleId", null)
+    inline def setVppTokenAppleIdNull: Self = StObject.set(x, "vppTokenAppleId", null)
     
-    @scala.inline
-    def setVppTokenAppleIdUndefined: Self = StObject.set(x, "vppTokenAppleId", js.undefined)
+    inline def setVppTokenAppleIdUndefined: Self = StObject.set(x, "vppTokenAppleId", js.undefined)
     
-    @scala.inline
-    def setVppTokenOrganizationName(value: NullableOption[String]): Self = StObject.set(x, "vppTokenOrganizationName", value.asInstanceOf[js.Any])
+    inline def setVppTokenOrganizationName(value: NullableOption[String]): Self = StObject.set(x, "vppTokenOrganizationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVppTokenOrganizationNameNull: Self = StObject.set(x, "vppTokenOrganizationName", null)
+    inline def setVppTokenOrganizationNameNull: Self = StObject.set(x, "vppTokenOrganizationName", null)
     
-    @scala.inline
-    def setVppTokenOrganizationNameUndefined: Self = StObject.set(x, "vppTokenOrganizationName", js.undefined)
+    inline def setVppTokenOrganizationNameUndefined: Self = StObject.set(x, "vppTokenOrganizationName", js.undefined)
   }
 }

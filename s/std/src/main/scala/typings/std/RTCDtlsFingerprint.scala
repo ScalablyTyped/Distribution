@@ -12,25 +12,19 @@ trait RTCDtlsFingerprint extends StObject {
 }
 object RTCDtlsFingerprint {
   
-  @scala.inline
-  def apply(): RTCDtlsFingerprint = {
+  inline def apply(): RTCDtlsFingerprint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCDtlsFingerprint]
   }
   
-  @scala.inline
-  implicit class RTCDtlsFingerprintMutableBuilder[Self <: RTCDtlsFingerprint] (val x: Self) extends AnyVal {
+  extension [Self <: RTCDtlsFingerprint](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: java.lang.String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: java.lang.String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    @scala.inline
-    def setValue(value: java.lang.String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: java.lang.String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

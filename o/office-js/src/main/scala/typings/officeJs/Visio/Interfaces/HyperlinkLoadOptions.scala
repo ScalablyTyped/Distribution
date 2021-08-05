@@ -49,43 +49,31 @@ trait HyperlinkLoadOptions extends StObject {
 }
 object HyperlinkLoadOptions {
   
-  @scala.inline
-  def apply(): HyperlinkLoadOptions = {
+  inline def apply(): HyperlinkLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HyperlinkLoadOptions]
   }
   
-  @scala.inline
-  implicit class HyperlinkLoadOptionsMutableBuilder[Self <: HyperlinkLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HyperlinkLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setAddress(value: Boolean): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: Boolean): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Boolean): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Boolean): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setExtraInfo(value: Boolean): Self = StObject.set(x, "extraInfo", value.asInstanceOf[js.Any])
+    inline def setExtraInfo(value: Boolean): Self = StObject.set(x, "extraInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraInfoUndefined: Self = StObject.set(x, "extraInfo", js.undefined)
+    inline def setExtraInfoUndefined: Self = StObject.set(x, "extraInfo", js.undefined)
     
-    @scala.inline
-    def setSubAddress(value: Boolean): Self = StObject.set(x, "subAddress", value.asInstanceOf[js.Any])
+    inline def setSubAddress(value: Boolean): Self = StObject.set(x, "subAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubAddressUndefined: Self = StObject.set(x, "subAddress", js.undefined)
+    inline def setSubAddressUndefined: Self = StObject.set(x, "subAddress", js.undefined)
   }
 }

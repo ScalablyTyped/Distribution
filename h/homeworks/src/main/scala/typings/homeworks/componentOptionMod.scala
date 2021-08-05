@@ -14,25 +14,25 @@ object componentOptionMod {
   class WorksOption protected () extends HomeworksManager {
     def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
     
-    @JSName("$element")
+    /* private */ @JSName("$element")
     var $element: js.Any = js.native
     
-    @JSName("$option")
+    /* private */ @JSName("$option")
     var $option: js.Any = js.native
     
     var disabled: js.Any = js.native
     
-    var elementRef: js.Any = js.native
+    /* private */ var elementRef: js.Any = js.native
     
     var label: String = js.native
     
-    var m_disabled: js.Any = js.native
+    /* private */ var m_disabled: js.Any = js.native
     
-    var m_label: js.Any = js.native
+    /* private */ var m_label: js.Any = js.native
     
-    var m_selected: js.Any = js.native
+    /* private */ var m_selected: js.Any = js.native
     
-    var m_value: js.Any = js.native
+    /* private */ var m_value: js.Any = js.native
     
     def ngAfterViewInit(): Unit = js.native
     
@@ -42,9 +42,9 @@ object componentOptionMod {
     
     var optionChild: ElementRef[js.Any] = js.native
     
-    var propagateChange: js.Any = js.native
+    /* private */ var propagateChange: js.Any = js.native
     
-    var propagateTouch: js.Any = js.native
+    /* private */ var propagateTouch: js.Any = js.native
     
     def render(): Unit = js.native
     

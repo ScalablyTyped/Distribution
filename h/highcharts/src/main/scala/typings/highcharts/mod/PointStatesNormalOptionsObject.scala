@@ -15,19 +15,15 @@ trait PointStatesNormalOptionsObject extends StObject {
 }
 object PointStatesNormalOptionsObject {
   
-  @scala.inline
-  def apply(): PointStatesNormalOptionsObject = {
+  inline def apply(): PointStatesNormalOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointStatesNormalOptionsObject]
   }
   
-  @scala.inline
-  implicit class PointStatesNormalOptionsObjectMutableBuilder[Self <: PointStatesNormalOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: PointStatesNormalOptionsObject](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
   }
 }

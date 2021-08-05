@@ -23,23 +23,18 @@ object layerHostTypesMod {
   }
   object ILayerHostProps {
     
-    @scala.inline
-    def apply(): ILayerHostProps = {
+    inline def apply(): ILayerHostProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILayerHostProps]
     }
     
-    @scala.inline
-    implicit class ILayerHostPropsMutableBuilder[Self <: ILayerHostProps] (val x: Self) extends AnyVal {
+    extension [Self <: ILayerHostProps](x: Self) {
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[ILayerHost]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[ILayerHost]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ ILayerHost | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ ILayerHost | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
     }
   }
 }

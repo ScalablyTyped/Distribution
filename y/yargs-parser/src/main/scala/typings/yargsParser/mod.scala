@@ -29,24 +29,19 @@ object mod extends Shortcut {
   }
   object Arguments {
     
-    @scala.inline
-    def apply($0: String, _underscore: js.Array[String]): Arguments = {
+    inline def apply($0: String, _underscore: js.Array[String]): Arguments = {
       val __obj = js.Dynamic.literal($0 = $0.asInstanceOf[js.Any])
       __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
       __obj.asInstanceOf[Arguments]
     }
     
-    @scala.inline
-    implicit class ArgumentsMutableBuilder[Self <: Arguments] (val x: Self) extends AnyVal {
+    extension [Self <: Arguments](x: Self) {
       
-      @scala.inline
-      def set$0(value: String): Self = StObject.set(x, "$0", value.asInstanceOf[js.Any])
+      inline def set$0(value: String): Self = StObject.set(x, "$0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_underscore(value: js.Array[String]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
+      inline def set_underscore(value: js.Array[String]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_underscoreVarargs(value: String*): Self = StObject.set(x, "_", js.Array(value :_*))
+      inline def set_underscoreVarargs(value: String*): Self = StObject.set(x, "_", js.Array(value :_*))
     }
   }
   
@@ -99,8 +94,7 @@ object mod extends Shortcut {
   }
   object Configuration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `boolean-negation`: Boolean,
       `camel-case-expansion`: Boolean,
       `combine-arrays`: Boolean,
@@ -136,53 +130,37 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Configuration]
     }
     
-    @scala.inline
-    implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+    extension [Self <: Configuration](x: Self) {
       
-      @scala.inline
-      def `setBoolean-negation`(value: Boolean): Self = StObject.set(x, "boolean-negation", value.asInstanceOf[js.Any])
+      inline def `setBoolean-negation`(value: Boolean): Self = StObject.set(x, "boolean-negation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCamel-case-expansion`(value: Boolean): Self = StObject.set(x, "camel-case-expansion", value.asInstanceOf[js.Any])
+      inline def `setCamel-case-expansion`(value: Boolean): Self = StObject.set(x, "camel-case-expansion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCombine-arrays`(value: Boolean): Self = StObject.set(x, "combine-arrays", value.asInstanceOf[js.Any])
+      inline def `setCombine-arrays`(value: Boolean): Self = StObject.set(x, "combine-arrays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDot-notation`(value: Boolean): Self = StObject.set(x, "dot-notation", value.asInstanceOf[js.Any])
+      inline def `setDot-notation`(value: Boolean): Self = StObject.set(x, "dot-notation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDuplicate-arguments-array`(value: Boolean): Self = StObject.set(x, "duplicate-arguments-array", value.asInstanceOf[js.Any])
+      inline def `setDuplicate-arguments-array`(value: Boolean): Self = StObject.set(x, "duplicate-arguments-array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFlatten-duplicate-arrays`(value: Boolean): Self = StObject.set(x, "flatten-duplicate-arrays", value.asInstanceOf[js.Any])
+      inline def `setFlatten-duplicate-arrays`(value: Boolean): Self = StObject.set(x, "flatten-duplicate-arrays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHalt-at-non-option`(value: Boolean): Self = StObject.set(x, "halt-at-non-option", value.asInstanceOf[js.Any])
+      inline def `setHalt-at-non-option`(value: Boolean): Self = StObject.set(x, "halt-at-non-option", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setNegation-prefix`(value: String): Self = StObject.set(x, "negation-prefix", value.asInstanceOf[js.Any])
+      inline def `setNegation-prefix`(value: String): Self = StObject.set(x, "negation-prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setParse-numbers`(value: Boolean): Self = StObject.set(x, "parse-numbers", value.asInstanceOf[js.Any])
+      inline def `setParse-numbers`(value: Boolean): Self = StObject.set(x, "parse-numbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPopulate--`(value: Boolean): Self = StObject.set(x, "populate--", value.asInstanceOf[js.Any])
+      inline def `setPopulate--`(value: Boolean): Self = StObject.set(x, "populate--", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSet-placeholder-key`(value: Boolean): Self = StObject.set(x, "set-placeholder-key", value.asInstanceOf[js.Any])
+      inline def `setSet-placeholder-key`(value: Boolean): Self = StObject.set(x, "set-placeholder-key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShort-option-groups`(value: Boolean): Self = StObject.set(x, "short-option-groups", value.asInstanceOf[js.Any])
+      inline def `setShort-option-groups`(value: Boolean): Self = StObject.set(x, "short-option-groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStrip-aliased`(value: Boolean): Self = StObject.set(x, "strip-aliased", value.asInstanceOf[js.Any])
+      inline def `setStrip-aliased`(value: Boolean): Self = StObject.set(x, "strip-aliased", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStrip-dashed`(value: Boolean): Self = StObject.set(x, "strip-dashed", value.asInstanceOf[js.Any])
+      inline def `setStrip-dashed`(value: Boolean): Self = StObject.set(x, "strip-dashed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUnknown-options-as-args`(value: Boolean): Self = StObject.set(x, "unknown-options-as-args", value.asInstanceOf[js.Any])
+      inline def `setUnknown-options-as-args`(value: Boolean): Self = StObject.set(x, "unknown-options-as-args", value.asInstanceOf[js.Any])
     }
   }
   
@@ -205,8 +183,7 @@ object mod extends Shortcut {
   }
   object DetailedArguments {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aliases: StringDictionary[js.Array[String]],
       argv: Arguments,
       configuration: Configuration,
@@ -216,26 +193,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DetailedArguments]
     }
     
-    @scala.inline
-    implicit class DetailedArgumentsMutableBuilder[Self <: DetailedArguments] (val x: Self) extends AnyVal {
+    extension [Self <: DetailedArguments](x: Self) {
       
-      @scala.inline
-      def setAliases(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgv(value: Arguments): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
+      inline def setArgv(value: Arguments): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfiguration(value: Configuration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+      inline def setConfiguration(value: Configuration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorNull: Self = StObject.set(x, "error", null)
+      inline def setErrorNull: Self = StObject.set(x, "error", null)
       
-      @scala.inline
-      def setNewAliases(value: StringDictionary[Boolean]): Self = StObject.set(x, "newAliases", value.asInstanceOf[js.Any])
+      inline def setNewAliases(value: StringDictionary[Boolean]): Self = StObject.set(x, "newAliases", value.asInstanceOf[js.Any])
     }
   }
   
@@ -289,113 +259,78 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlias(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setArray(value: js.Array[typings.yargsParser.anon.Boolean | String]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      inline def setArray(value: js.Array[typings.yargsParser.anon.Boolean | String]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
+      inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
       
-      @scala.inline
-      def setArrayVarargs(value: (typings.yargsParser.anon.Boolean | String)*): Self = StObject.set(x, "array", js.Array(value :_*))
+      inline def setArrayVarargs(value: (typings.yargsParser.anon.Boolean | String)*): Self = StObject.set(x, "array", js.Array(value :_*))
       
-      @scala.inline
-      def setBoolean(value: js.Array[String]): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+      inline def setBoolean(value: js.Array[String]): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
+      inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
       
-      @scala.inline
-      def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value :_*))
+      inline def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value :_*))
       
-      @scala.inline
-      def setCoerce(value: StringDictionary[js.Function1[/* arg */ js.Any, js.Any]]): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
+      inline def setCoerce(value: StringDictionary[js.Function1[/* arg */ js.Any, js.Any]]): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
+      inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
       
-      @scala.inline
-      def setConfig(value: String | js.Array[String] | StringDictionary[Boolean]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: String | js.Array[String] | StringDictionary[Boolean]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setConfigVarargs(value: String*): Self = StObject.set(x, "config", js.Array(value :_*))
+      inline def setConfigVarargs(value: String*): Self = StObject.set(x, "config", js.Array(value :_*))
       
-      @scala.inline
-      def setConfiguration(value: PartialConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+      inline def setConfiguration(value: PartialConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+      inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
       
-      @scala.inline
-      def setCount(value: js.Array[String]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: js.Array[String]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setCountVarargs(value: String*): Self = StObject.set(x, "count", js.Array(value :_*))
+      inline def setCountVarargs(value: String*): Self = StObject.set(x, "count", js.Array(value :_*))
       
-      @scala.inline
-      def setDefault(value: StringDictionary[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: StringDictionary[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setEnvPrefix(value: String): Self = StObject.set(x, "envPrefix", value.asInstanceOf[js.Any])
+      inline def setEnvPrefix(value: String): Self = StObject.set(x, "envPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvPrefixUndefined: Self = StObject.set(x, "envPrefix", js.undefined)
+      inline def setEnvPrefixUndefined: Self = StObject.set(x, "envPrefix", js.undefined)
       
-      @scala.inline
-      def setNarg(value: StringDictionary[Double]): Self = StObject.set(x, "narg", value.asInstanceOf[js.Any])
+      inline def setNarg(value: StringDictionary[Double]): Self = StObject.set(x, "narg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNargUndefined: Self = StObject.set(x, "narg", js.undefined)
+      inline def setNargUndefined: Self = StObject.set(x, "narg", js.undefined)
       
-      @scala.inline
-      def setNormalize(value: js.Array[String]): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
+      inline def setNormalize(value: js.Array[String]): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+      inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
       
-      @scala.inline
-      def setNormalizeVarargs(value: String*): Self = StObject.set(x, "normalize", js.Array(value :_*))
+      inline def setNormalizeVarargs(value: String*): Self = StObject.set(x, "normalize", js.Array(value :_*))
       
-      @scala.inline
-      def setNumber(value: js.Array[String]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: js.Array[String]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      @scala.inline
-      def setNumberVarargs(value: String*): Self = StObject.set(x, "number", js.Array(value :_*))
+      inline def setNumberVarargs(value: String*): Self = StObject.set(x, "number", js.Array(value :_*))
       
-      @scala.inline
-      def setString(value: js.Array[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: js.Array[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+      inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
       
-      @scala.inline
-      def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value :_*))
+      inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value :_*))
     }
   }
   

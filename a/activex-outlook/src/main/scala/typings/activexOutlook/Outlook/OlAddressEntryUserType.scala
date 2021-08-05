@@ -31,36 +31,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlAddressEntryUserType extends StObject
 object OlAddressEntryUserType {
   
-  @scala.inline
-  def olExchangeAgentAddressEntry: `3` = 3.asInstanceOf[`3`]
+  inline def olExchangeAgentAddressEntry: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olExchangeDistributionListAddressEntry: `1` = 1.asInstanceOf[`1`]
+  inline def olExchangeDistributionListAddressEntry: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olExchangeOrganizationAddressEntry: `4` = 4.asInstanceOf[`4`]
+  inline def olExchangeOrganizationAddressEntry: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def olExchangePublicFolderAddressEntry: `2` = 2.asInstanceOf[`2`]
+  inline def olExchangePublicFolderAddressEntry: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olExchangeRemoteUserAddressEntry: `5` = 5.asInstanceOf[`5`]
+  inline def olExchangeRemoteUserAddressEntry: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def olExchangeUserAddressEntry: `0` = 0.asInstanceOf[`0`]
+  inline def olExchangeUserAddressEntry: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olLdapAddressEntry: `20` = 20.asInstanceOf[`20`]
+  inline def olLdapAddressEntry: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def olOtherAddressEntry: `40` = 40.asInstanceOf[`40`]
+  inline def olOtherAddressEntry: `40` = 40.asInstanceOf[`40`]
   
-  @scala.inline
-  def olOutlookContactAddressEntry: `10` = 10.asInstanceOf[`10`]
+  inline def olOutlookContactAddressEntry: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def olOutlookDistributionListAddressEntry: `11` = 11.asInstanceOf[`11`]
+  inline def olOutlookDistributionListAddressEntry: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def olSmtpAddressEntry: `30` = 30.asInstanceOf[`30`]
+  inline def olSmtpAddressEntry: `30` = 30.asInstanceOf[`30`]
 }

@@ -18,37 +18,27 @@ trait ISubscription extends StObject {
 }
 object ISubscription {
   
-  @scala.inline
-  def apply(qos: QoS, topic: String): ISubscription = {
+  inline def apply(qos: QoS, topic: String): ISubscription = {
     val __obj = js.Dynamic.literal(qos = qos.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscription]
   }
   
-  @scala.inline
-  implicit class ISubscriptionMutableBuilder[Self <: ISubscription] (val x: Self) extends AnyVal {
+  extension [Self <: ISubscription](x: Self) {
     
-    @scala.inline
-    def setNl(value: Boolean): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
+    inline def setNl(value: Boolean): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNlUndefined: Self = StObject.set(x, "nl", js.undefined)
+    inline def setNlUndefined: Self = StObject.set(x, "nl", js.undefined)
     
-    @scala.inline
-    def setQos(value: QoS): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
+    inline def setQos(value: QoS): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRap(value: Boolean): Self = StObject.set(x, "rap", value.asInstanceOf[js.Any])
+    inline def setRap(value: Boolean): Self = StObject.set(x, "rap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRapUndefined: Self = StObject.set(x, "rap", js.undefined)
+    inline def setRapUndefined: Self = StObject.set(x, "rap", js.undefined)
     
-    @scala.inline
-    def setRh(value: Double): Self = StObject.set(x, "rh", value.asInstanceOf[js.Any])
+    inline def setRh(value: Double): Self = StObject.set(x, "rh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRhUndefined: Self = StObject.set(x, "rh", js.undefined)
+    inline def setRhUndefined: Self = StObject.set(x, "rh", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

@@ -17,22 +17,17 @@ trait MapOverlayProps
 }
 object MapOverlayProps {
   
-  @scala.inline
-  def apply(bounds: js.Tuple2[Coordinate, Coordinate]): MapOverlayProps = {
+  inline def apply(bounds: js.Tuple2[Coordinate, Coordinate]): MapOverlayProps = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOverlayProps]
   }
   
-  @scala.inline
-  implicit class MapOverlayPropsMutableBuilder[Self <: MapOverlayProps] (val x: Self) extends AnyVal {
+  extension [Self <: MapOverlayProps](x: Self) {
     
-    @scala.inline
-    def setBounds(value: js.Tuple2[Coordinate, Coordinate]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: js.Tuple2[Coordinate, Coordinate]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: ImageURISource | ImageRequireSource): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ImageURISource | ImageRequireSource): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

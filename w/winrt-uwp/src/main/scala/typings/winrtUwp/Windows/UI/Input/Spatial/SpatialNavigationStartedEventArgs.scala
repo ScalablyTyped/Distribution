@@ -22,8 +22,7 @@ trait SpatialNavigationStartedEventArgs extends StObject {
 }
 object SpatialNavigationStartedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     interactionSourceKind: js.Any,
     isNavigatingX: js.Any,
     isNavigatingY: js.Any,
@@ -34,22 +33,16 @@ object SpatialNavigationStartedEventArgs {
     __obj.asInstanceOf[SpatialNavigationStartedEventArgs]
   }
   
-  @scala.inline
-  implicit class SpatialNavigationStartedEventArgsMutableBuilder[Self <: SpatialNavigationStartedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialNavigationStartedEventArgs](x: Self) {
     
-    @scala.inline
-    def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
+    inline def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNavigatingX(value: js.Any): Self = StObject.set(x, "isNavigatingX", value.asInstanceOf[js.Any])
+    inline def setIsNavigatingX(value: js.Any): Self = StObject.set(x, "isNavigatingX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNavigatingY(value: js.Any): Self = StObject.set(x, "isNavigatingY", value.asInstanceOf[js.Any])
+    inline def setIsNavigatingY(value: js.Any): Self = StObject.set(x, "isNavigatingY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNavigatingZ(value: js.Any): Self = StObject.set(x, "isNavigatingZ", value.asInstanceOf[js.Any])
+    inline def setIsNavigatingZ(value: js.Any): Self = StObject.set(x, "isNavigatingZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTryGetPointerPose(value: js.Any): Self = StObject.set(x, "tryGetPointerPose", value.asInstanceOf[js.Any])
+    inline def setTryGetPointerPose(value: js.Any): Self = StObject.set(x, "tryGetPointerPose", value.asInstanceOf[js.Any])
   }
 }

@@ -17,22 +17,17 @@ trait ThreeTrianglesSet
 }
 object ThreeTrianglesSet {
   
-  @scala.inline
-  def apply(greenUpTriangle: Icon, redDownTriangle: Icon, yellowDash: Icon): ThreeTrianglesSet = {
+  inline def apply(greenUpTriangle: Icon, redDownTriangle: Icon, yellowDash: Icon): ThreeTrianglesSet = {
     val __obj = js.Dynamic.literal(greenUpTriangle = greenUpTriangle.asInstanceOf[js.Any], redDownTriangle = redDownTriangle.asInstanceOf[js.Any], yellowDash = yellowDash.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreeTrianglesSet]
   }
   
-  @scala.inline
-  implicit class ThreeTrianglesSetMutableBuilder[Self <: ThreeTrianglesSet] (val x: Self) extends AnyVal {
+  extension [Self <: ThreeTrianglesSet](x: Self) {
     
-    @scala.inline
-    def setGreenUpTriangle(value: Icon): Self = StObject.set(x, "greenUpTriangle", value.asInstanceOf[js.Any])
+    inline def setGreenUpTriangle(value: Icon): Self = StObject.set(x, "greenUpTriangle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedDownTriangle(value: Icon): Self = StObject.set(x, "redDownTriangle", value.asInstanceOf[js.Any])
+    inline def setRedDownTriangle(value: Icon): Self = StObject.set(x, "redDownTriangle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYellowDash(value: Icon): Self = StObject.set(x, "yellowDash", value.asInstanceOf[js.Any])
+    inline def setYellowDash(value: Icon): Self = StObject.set(x, "yellowDash", value.asInstanceOf[js.Any])
   }
 }

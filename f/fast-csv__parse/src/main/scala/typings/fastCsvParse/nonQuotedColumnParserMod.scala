@@ -13,10 +13,10 @@ object nonQuotedColumnParserMod {
   class NonQuotedColumnParser protected () extends StObject {
     def this(parserOptions: ParserOptions) = this()
     
-    val columnFormatter: js.Any = js.native
+    /* private */ val columnFormatter: js.Any = js.native
     
     def parse(scanner: Scanner): String | Null = js.native
     
-    val parserOptions: js.Any = js.native
+    /* private */ val parserOptions: js.Any = js.native
   }
 }

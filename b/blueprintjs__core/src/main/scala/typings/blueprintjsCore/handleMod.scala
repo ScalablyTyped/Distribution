@@ -28,10 +28,10 @@ object handleMod {
     def beginHandleTouchMovement(event: typings.std.TouchEvent): Unit = js.native
     
     /** Clamp value and invoke callback if it differs from current value */
-    var changeValue: js.Any = js.native
+    /* private */ var changeValue: js.Any = js.native
     
     /** Clamp value between min and max props */
-    var clamp: js.Any = js.native
+    /* private */ var clamp: js.Any = js.native
     
     /** Convert client pixel to value between min and max. */
     def clientToValue(clientPixel: Double): Double = js.native
@@ -42,36 +42,36 @@ object handleMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MHandle(): Unit = js.native
     
-    var endHandleMovement: js.Any = js.native
+    /* private */ var endHandleMovement: js.Any = js.native
     
-    var endHandleTouchMovement: js.Any = js.native
+    /* private */ var endHandleTouchMovement: js.Any = js.native
     
-    var getHandleElementCenterPixel: js.Any = js.native
+    /* private */ var getHandleElementCenterPixel: js.Any = js.native
     
-    var getHandleMidpointAndOffset: js.Any = js.native
+    /* private */ var getHandleMidpointAndOffset: js.Any = js.native
     
-    var getStyleProperties: js.Any = js.native
+    /* private */ var getStyleProperties: js.Any = js.native
     
-    var handleElement: js.Any = js.native
+    /* private */ var handleElement: js.Any = js.native
     
-    var handleHandleMovement: js.Any = js.native
+    /* private */ var handleHandleMovement: js.Any = js.native
     
-    var handleHandleTouchMovement: js.Any = js.native
+    /* private */ var handleHandleTouchMovement: js.Any = js.native
     
-    var handleKeyDown: js.Any = js.native
+    /* private */ var handleKeyDown: js.Any = js.native
     
-    var handleKeyUp: js.Any = js.native
+    /* private */ var handleKeyUp: js.Any = js.native
     
-    var handleMoveEndedAt: js.Any = js.native
+    /* private */ var handleMoveEndedAt: js.Any = js.native
     
-    var handleMovedTo: js.Any = js.native
+    /* private */ var handleMovedTo: js.Any = js.native
     
     def mouseEventClientOffset(event: MouseEvent[HTMLElement, NativeMouseEvent]): Double = js.native
     def mouseEventClientOffset(event: typings.std.MouseEvent): Double = js.native
     
-    var refHandlers: js.Any = js.native
+    /* private */ var refHandlers: js.Any = js.native
     
-    var removeDocumentEventListeners: js.Any = js.native
+    /* private */ var removeDocumentEventListeners: js.Any = js.native
     
     @JSName("state")
     var state_Handle: IsMoving = js.native
@@ -89,8 +89,7 @@ object handleMod {
     @JSImport("@blueprintjs/core/lib/esm/components/slider/handle", "Handle.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IHandleState extends StObject {
@@ -100,20 +99,16 @@ object handleMod {
   }
   object IHandleState {
     
-    @scala.inline
-    def apply(): IHandleState = {
+    inline def apply(): IHandleState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IHandleState]
     }
     
-    @scala.inline
-    implicit class IHandleStateMutableBuilder[Self <: IHandleState] (val x: Self) extends AnyVal {
+    extension [Self <: IHandleState](x: Self) {
       
-      @scala.inline
-      def setIsMoving(value: Boolean): Self = StObject.set(x, "isMoving", value.asInstanceOf[js.Any])
+      inline def setIsMoving(value: Boolean): Self = StObject.set(x, "isMoving", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMovingUndefined: Self = StObject.set(x, "isMoving", js.undefined)
+      inline def setIsMovingUndefined: Self = StObject.set(x, "isMoving", js.undefined)
     }
   }
   
@@ -139,8 +134,7 @@ object handleMod {
   }
   object IInternalHandleProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       max: Double,
       min: Double,
       stepSize: Double,
@@ -153,38 +147,27 @@ object handleMod {
       __obj.asInstanceOf[IInternalHandleProps]
     }
     
-    @scala.inline
-    implicit class IInternalHandlePropsMutableBuilder[Self <: IInternalHandleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IInternalHandleProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setLabel(value: Element | String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Element | String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepSize(value: Double): Self = StObject.set(x, "stepSize", value.asInstanceOf[js.Any])
+      inline def setStepSize(value: Double): Self = StObject.set(x, "stepSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickSize(value: Double): Self = StObject.set(x, "tickSize", value.asInstanceOf[js.Any])
+      inline def setTickSize(value: Double): Self = StObject.set(x, "tickSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickSizeRatio(value: Double): Self = StObject.set(x, "tickSizeRatio", value.asInstanceOf[js.Any])
+      inline def setTickSizeRatio(value: Double): Self = StObject.set(x, "tickSizeRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     }
   }
 }

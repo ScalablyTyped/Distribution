@@ -11,8 +11,7 @@ trait GestureRecognizer
      with IGestureRecognizer
 object GestureRecognizer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoProcessInertia: Boolean,
     canBeDoubleTap: PointerPoint => Boolean,
     completeGesture: () => Unit,

@@ -10,22 +10,17 @@ trait TransitTableTransitTimeRow extends StObject {
 }
 object TransitTableTransitTimeRow {
   
-  @scala.inline
-  def apply(): TransitTableTransitTimeRow = {
+  inline def apply(): TransitTableTransitTimeRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitTableTransitTimeRow]
   }
   
-  @scala.inline
-  implicit class TransitTableTransitTimeRowMutableBuilder[Self <: TransitTableTransitTimeRow] (val x: Self) extends AnyVal {
+  extension [Self <: TransitTableTransitTimeRow](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[TransitTableTransitTimeRowTransitTimeValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[TransitTableTransitTimeRowTransitTimeValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: TransitTableTransitTimeRowTransitTimeValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: TransitTableTransitTimeRowTransitTimeValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

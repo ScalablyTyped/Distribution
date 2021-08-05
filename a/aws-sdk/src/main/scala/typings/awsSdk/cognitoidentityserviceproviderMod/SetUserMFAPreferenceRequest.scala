@@ -23,28 +23,21 @@ trait SetUserMFAPreferenceRequest extends StObject {
 }
 object SetUserMFAPreferenceRequest {
   
-  @scala.inline
-  def apply(AccessToken: TokenModelType): SetUserMFAPreferenceRequest = {
+  inline def apply(AccessToken: TokenModelType): SetUserMFAPreferenceRequest = {
     val __obj = js.Dynamic.literal(AccessToken = AccessToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetUserMFAPreferenceRequest]
   }
   
-  @scala.inline
-  implicit class SetUserMFAPreferenceRequestMutableBuilder[Self <: SetUserMFAPreferenceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetUserMFAPreferenceRequest](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSMSMfaSettings(value: SMSMfaSettingsType): Self = StObject.set(x, "SMSMfaSettings", value.asInstanceOf[js.Any])
+    inline def setSMSMfaSettings(value: SMSMfaSettingsType): Self = StObject.set(x, "SMSMfaSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSMSMfaSettingsUndefined: Self = StObject.set(x, "SMSMfaSettings", js.undefined)
+    inline def setSMSMfaSettingsUndefined: Self = StObject.set(x, "SMSMfaSettings", js.undefined)
     
-    @scala.inline
-    def setSoftwareTokenMfaSettings(value: SoftwareTokenMfaSettingsType): Self = StObject.set(x, "SoftwareTokenMfaSettings", value.asInstanceOf[js.Any])
+    inline def setSoftwareTokenMfaSettings(value: SoftwareTokenMfaSettingsType): Self = StObject.set(x, "SoftwareTokenMfaSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareTokenMfaSettingsUndefined: Self = StObject.set(x, "SoftwareTokenMfaSettings", js.undefined)
+    inline def setSoftwareTokenMfaSettingsUndefined: Self = StObject.set(x, "SoftwareTokenMfaSettings", js.undefined)
   }
 }

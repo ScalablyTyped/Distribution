@@ -42,43 +42,31 @@ trait SchemaValue extends StObject {
 }
 object SchemaValue {
   
-  @scala.inline
-  def apply(): SchemaValue = {
+  inline def apply(): SchemaValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaValue]
   }
   
-  @scala.inline
-  implicit class SchemaValueMutableBuilder[Self <: SchemaValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaValue](x: Self) {
     
-    @scala.inline
-    def setCarrierRateName(value: String): Self = StObject.set(x, "carrierRateName", value.asInstanceOf[js.Any])
+    inline def setCarrierRateName(value: String): Self = StObject.set(x, "carrierRateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierRateNameUndefined: Self = StObject.set(x, "carrierRateName", js.undefined)
+    inline def setCarrierRateNameUndefined: Self = StObject.set(x, "carrierRateName", js.undefined)
     
-    @scala.inline
-    def setFlatRate(value: SchemaPrice): Self = StObject.set(x, "flatRate", value.asInstanceOf[js.Any])
+    inline def setFlatRate(value: SchemaPrice): Self = StObject.set(x, "flatRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatRateUndefined: Self = StObject.set(x, "flatRate", js.undefined)
+    inline def setFlatRateUndefined: Self = StObject.set(x, "flatRate", js.undefined)
     
-    @scala.inline
-    def setNoShipping(value: Boolean): Self = StObject.set(x, "noShipping", value.asInstanceOf[js.Any])
+    inline def setNoShipping(value: Boolean): Self = StObject.set(x, "noShipping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoShippingUndefined: Self = StObject.set(x, "noShipping", js.undefined)
+    inline def setNoShippingUndefined: Self = StObject.set(x, "noShipping", js.undefined)
     
-    @scala.inline
-    def setPricePercentage(value: String): Self = StObject.set(x, "pricePercentage", value.asInstanceOf[js.Any])
+    inline def setPricePercentage(value: String): Self = StObject.set(x, "pricePercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricePercentageUndefined: Self = StObject.set(x, "pricePercentage", js.undefined)
+    inline def setPricePercentageUndefined: Self = StObject.set(x, "pricePercentage", js.undefined)
     
-    @scala.inline
-    def setSubtableName(value: String): Self = StObject.set(x, "subtableName", value.asInstanceOf[js.Any])
+    inline def setSubtableName(value: String): Self = StObject.set(x, "subtableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtableNameUndefined: Self = StObject.set(x, "subtableName", js.undefined)
+    inline def setSubtableNameUndefined: Self = StObject.set(x, "subtableName", js.undefined)
   }
 }

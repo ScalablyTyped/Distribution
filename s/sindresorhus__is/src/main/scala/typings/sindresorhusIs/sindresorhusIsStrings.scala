@@ -11,237 +11,203 @@ object sindresorhusIsStrings {
   sealed trait Array
     extends StObject
        with TypeName
-  @scala.inline
-  def Array: Array = "Array".asInstanceOf[Array]
+  inline def Array: Array = "Array".asInstanceOf[Array]
   
   @js.native
   sealed trait ArrayBuffer
     extends StObject
        with TypeName
-  @scala.inline
-  def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
+  inline def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
   
   @js.native
   sealed trait AsyncFunction
     extends StObject
        with TypeName
-  @scala.inline
-  def AsyncFunction: AsyncFunction = "AsyncFunction".asInstanceOf[AsyncFunction]
+  inline def AsyncFunction: AsyncFunction = "AsyncFunction".asInstanceOf[AsyncFunction]
   
   @js.native
   sealed trait Buffer
     extends StObject
        with TypeName
-  @scala.inline
-  def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
+  inline def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
   
   @js.native
   sealed trait DataView
     extends StObject
        with TypeName
-  @scala.inline
-  def DataView: DataView = "DataView".asInstanceOf[DataView]
+  inline def DataView: DataView = "DataView".asInstanceOf[DataView]
   
   @js.native
   sealed trait Date
     extends StObject
        with TypeName
-  @scala.inline
-  def Date: Date = "Date".asInstanceOf[Date]
+  inline def Date: Date = "Date".asInstanceOf[Date]
   
   @js.native
   sealed trait Error
     extends StObject
        with TypeName
-  @scala.inline
-  def Error: Error = "Error".asInstanceOf[Error]
+  inline def Error: Error = "Error".asInstanceOf[Error]
   
   @js.native
   sealed trait Float32Array
     extends StObject
        with TypeName
-  @scala.inline
-  def Float32Array: Float32Array = "Float32Array".asInstanceOf[Float32Array]
+  inline def Float32Array: Float32Array = "Float32Array".asInstanceOf[Float32Array]
   
   @js.native
   sealed trait Float64Array
     extends StObject
        with TypeName
-  @scala.inline
-  def Float64Array: Float64Array = "Float64Array".asInstanceOf[Float64Array]
+  inline def Float64Array: Float64Array = "Float64Array".asInstanceOf[Float64Array]
   
   @js.native
   sealed trait Function
     extends StObject
        with TypeName
-  @scala.inline
-  def Function: Function = "Function".asInstanceOf[Function]
+  inline def Function: Function = "Function".asInstanceOf[Function]
   
   @js.native
   sealed trait GeneratorFunction
     extends StObject
        with TypeName
-  @scala.inline
-  def GeneratorFunction: GeneratorFunction = "GeneratorFunction".asInstanceOf[GeneratorFunction]
+  inline def GeneratorFunction: GeneratorFunction = "GeneratorFunction".asInstanceOf[GeneratorFunction]
   
   @js.native
   sealed trait Int16Array
     extends StObject
        with TypeName
-  @scala.inline
-  def Int16Array: Int16Array = "Int16Array".asInstanceOf[Int16Array]
+  inline def Int16Array: Int16Array = "Int16Array".asInstanceOf[Int16Array]
   
   @js.native
   sealed trait Int32Array
     extends StObject
        with TypeName
-  @scala.inline
-  def Int32Array: Int32Array = "Int32Array".asInstanceOf[Int32Array]
+  inline def Int32Array: Int32Array = "Int32Array".asInstanceOf[Int32Array]
   
   @js.native
   sealed trait Int8Array
     extends StObject
        with TypeName
-  @scala.inline
-  def Int8Array: Int8Array = "Int8Array".asInstanceOf[Int8Array]
+  inline def Int8Array: Int8Array = "Int8Array".asInstanceOf[Int8Array]
   
   @js.native
   sealed trait Map
     extends StObject
        with TypeName
-  @scala.inline
-  def Map: Map = "Map".asInstanceOf[Map]
+  inline def Map: Map = "Map".asInstanceOf[Map]
   
   @js.native
   sealed trait Object
     extends StObject
        with TypeName
-  @scala.inline
-  def Object: Object = "Object".asInstanceOf[Object]
+  inline def Object: Object = "Object".asInstanceOf[Object]
   
   @js.native
   sealed trait Observable
     extends StObject
        with TypeName
-  @scala.inline
-  def Observable: Observable = "Observable".asInstanceOf[Observable]
+  inline def Observable: Observable = "Observable".asInstanceOf[Observable]
   
   @js.native
   sealed trait Promise
     extends StObject
        with TypeName
-  @scala.inline
-  def Promise: Promise = "Promise".asInstanceOf[Promise]
+  inline def Promise: Promise = "Promise".asInstanceOf[Promise]
   
   @js.native
   sealed trait RegExp
     extends StObject
        with TypeName
-  @scala.inline
-  def RegExp: RegExp = "RegExp".asInstanceOf[RegExp]
+  inline def RegExp: RegExp = "RegExp".asInstanceOf[RegExp]
   
   @js.native
   sealed trait Set
     extends StObject
        with TypeName
-  @scala.inline
-  def Set: Set = "Set".asInstanceOf[Set]
+  inline def Set: Set = "Set".asInstanceOf[Set]
   
   @js.native
   sealed trait SharedArrayBuffer
     extends StObject
        with TypeName
-  @scala.inline
-  def SharedArrayBuffer: SharedArrayBuffer = "SharedArrayBuffer".asInstanceOf[SharedArrayBuffer]
+  inline def SharedArrayBuffer: SharedArrayBuffer = "SharedArrayBuffer".asInstanceOf[SharedArrayBuffer]
   
   @js.native
   sealed trait URL
     extends StObject
        with TypeName
-  @scala.inline
-  def URL: URL = "URL".asInstanceOf[URL]
+  inline def URL: URL = "URL".asInstanceOf[URL]
   
   @js.native
   sealed trait Uint16Array
     extends StObject
        with TypeName
-  @scala.inline
-  def Uint16Array: Uint16Array = "Uint16Array".asInstanceOf[Uint16Array]
+  inline def Uint16Array: Uint16Array = "Uint16Array".asInstanceOf[Uint16Array]
   
   @js.native
   sealed trait Uint32Array
     extends StObject
        with TypeName
-  @scala.inline
-  def Uint32Array: Uint32Array = "Uint32Array".asInstanceOf[Uint32Array]
+  inline def Uint32Array: Uint32Array = "Uint32Array".asInstanceOf[Uint32Array]
   
   @js.native
   sealed trait Uint8Array
     extends StObject
        with TypeName
-  @scala.inline
-  def Uint8Array: Uint8Array = "Uint8Array".asInstanceOf[Uint8Array]
+  inline def Uint8Array: Uint8Array = "Uint8Array".asInstanceOf[Uint8Array]
   
   @js.native
   sealed trait Uint8ClampedArray
     extends StObject
        with TypeName
-  @scala.inline
-  def Uint8ClampedArray: Uint8ClampedArray = "Uint8ClampedArray".asInstanceOf[Uint8ClampedArray]
+  inline def Uint8ClampedArray: Uint8ClampedArray = "Uint8ClampedArray".asInstanceOf[Uint8ClampedArray]
   
   @js.native
   sealed trait WeakMap
     extends StObject
        with TypeName
-  @scala.inline
-  def WeakMap: WeakMap = "WeakMap".asInstanceOf[WeakMap]
+  inline def WeakMap: WeakMap = "WeakMap".asInstanceOf[WeakMap]
   
   @js.native
   sealed trait WeakSet
     extends StObject
        with TypeName
-  @scala.inline
-  def WeakSet: WeakSet = "WeakSet".asInstanceOf[WeakSet]
+  inline def WeakSet: WeakSet = "WeakSet".asInstanceOf[WeakSet]
   
   @js.native
   sealed trait boolean
     extends StObject
        with TypeName
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
   sealed trait `null`
     extends StObject
        with TypeName
-  @scala.inline
-  def `null`: `null` = "null".asInstanceOf[`null`]
+  inline def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
   sealed trait number
     extends StObject
        with TypeName
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
   sealed trait string
     extends StObject
        with TypeName
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait symbol
     extends StObject
        with TypeName
-  @scala.inline
-  def symbol: symbol = "symbol".asInstanceOf[symbol]
+  inline def symbol: symbol = "symbol".asInstanceOf[symbol]
   
   @js.native
   sealed trait undefined
     extends StObject
        with TypeName
-  @scala.inline
-  def undefined: undefined = "undefined".asInstanceOf[undefined]
+  inline def undefined: undefined = "undefined".asInstanceOf[undefined]
 }

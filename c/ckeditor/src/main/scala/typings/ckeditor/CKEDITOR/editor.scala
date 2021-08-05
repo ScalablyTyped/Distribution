@@ -436,464 +436,312 @@ object editor {
   }
   object eventObject {
     
-    @scala.inline
-    def apply(): eventObject = {
+    inline def apply(): eventObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[eventObject]
     }
     
-    @scala.inline
-    implicit class eventObjectMutableBuilder[Self <: eventObject] (val x: Self) extends AnyVal {
+    extension [Self <: eventObject](x: Self) {
       
-      @scala.inline
-      def setActiveEnterModeChange(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "activeEnterModeChange", js.Any.fromFunction1(value))
+      inline def setActiveEnterModeChange(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "activeEnterModeChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActiveEnterModeChangeUndefined: Self = StObject.set(x, "activeEnterModeChange", js.undefined)
+      inline def setActiveEnterModeChangeUndefined: Self = StObject.set(x, "activeEnterModeChange", js.undefined)
       
-      @scala.inline
-      def setActiveFilterChange(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "activeFilterChange", js.Any.fromFunction1(value))
+      inline def setActiveFilterChange(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "activeFilterChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActiveFilterChangeUndefined: Self = StObject.set(x, "activeFilterChange", js.undefined)
+      inline def setActiveFilterChangeUndefined: Self = StObject.set(x, "activeFilterChange", js.undefined)
       
-      @scala.inline
-      def setAfterCommandExec(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "afterCommandExec", js.Any.fromFunction1(value))
+      inline def setAfterCommandExec(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "afterCommandExec", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterCommandExecUndefined: Self = StObject.set(x, "afterCommandExec", js.undefined)
+      inline def setAfterCommandExecUndefined: Self = StObject.set(x, "afterCommandExec", js.undefined)
       
-      @scala.inline
-      def setAfterInsertHtml(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "afterInsertHtml", js.Any.fromFunction1(value))
+      inline def setAfterInsertHtml(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "afterInsertHtml", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterInsertHtmlUndefined: Self = StObject.set(x, "afterInsertHtml", js.undefined)
+      inline def setAfterInsertHtmlUndefined: Self = StObject.set(x, "afterInsertHtml", js.undefined)
       
-      @scala.inline
-      def setAfterPaste(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "afterPaste", js.Any.fromFunction1(value))
+      inline def setAfterPaste(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "afterPaste", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterPasteFromWord(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "afterPasteFromWord", js.Any.fromFunction1(value))
+      inline def setAfterPasteFromWord(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "afterPasteFromWord", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterPasteFromWordUndefined: Self = StObject.set(x, "afterPasteFromWord", js.undefined)
+      inline def setAfterPasteFromWordUndefined: Self = StObject.set(x, "afterPasteFromWord", js.undefined)
       
-      @scala.inline
-      def setAfterPasteUndefined: Self = StObject.set(x, "afterPaste", js.undefined)
+      inline def setAfterPasteUndefined: Self = StObject.set(x, "afterPaste", js.undefined)
       
-      @scala.inline
-      def setAfterSetData(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "afterSetData", js.Any.fromFunction1(value))
+      inline def setAfterSetData(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "afterSetData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterSetDataUndefined: Self = StObject.set(x, "afterSetData", js.undefined)
+      inline def setAfterSetDataUndefined: Self = StObject.set(x, "afterSetData", js.undefined)
       
-      @scala.inline
-      def setAfterUndoImage(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "afterUndoImage", js.Any.fromFunction1(value))
+      inline def setAfterUndoImage(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "afterUndoImage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterUndoImageUndefined: Self = StObject.set(x, "afterUndoImage", js.undefined)
+      inline def setAfterUndoImageUndefined: Self = StObject.set(x, "afterUndoImage", js.undefined)
       
-      @scala.inline
-      def setAriaEditorHelpLabel(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "ariaEditorHelpLabel", js.Any.fromFunction1(value))
+      inline def setAriaEditorHelpLabel(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "ariaEditorHelpLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAriaEditorHelpLabelUndefined: Self = StObject.set(x, "ariaEditorHelpLabel", js.undefined)
+      inline def setAriaEditorHelpLabelUndefined: Self = StObject.set(x, "ariaEditorHelpLabel", js.undefined)
       
-      @scala.inline
-      def setAriaWidget(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "ariaWidget", js.Any.fromFunction1(value))
+      inline def setAriaWidget(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "ariaWidget", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAriaWidgetUndefined: Self = StObject.set(x, "ariaWidget", js.undefined)
+      inline def setAriaWidgetUndefined: Self = StObject.set(x, "ariaWidget", js.undefined)
       
-      @scala.inline
-      def setAutogrow(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "autogrow", js.Any.fromFunction1(value))
+      inline def setAutogrow(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "autogrow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAutogrowUndefined: Self = StObject.set(x, "autogrow", js.undefined)
+      inline def setAutogrowUndefined: Self = StObject.set(x, "autogrow", js.undefined)
       
-      @scala.inline
-      def setBeforeCommandExec(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "beforeCommandExec", js.Any.fromFunction1(value))
+      inline def setBeforeCommandExec(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "beforeCommandExec", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeCommandExecUndefined: Self = StObject.set(x, "beforeCommandExec", js.undefined)
+      inline def setBeforeCommandExecUndefined: Self = StObject.set(x, "beforeCommandExec", js.undefined)
       
-      @scala.inline
-      def setBeforeDestroy(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "beforeDestroy", js.Any.fromFunction1(value))
+      inline def setBeforeDestroy(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "beforeDestroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeDestroyUndefined: Self = StObject.set(x, "beforeDestroy", js.undefined)
+      inline def setBeforeDestroyUndefined: Self = StObject.set(x, "beforeDestroy", js.undefined)
       
-      @scala.inline
-      def setBeforeGetData(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "beforeGetData", js.Any.fromFunction1(value))
+      inline def setBeforeGetData(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "beforeGetData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeGetDataUndefined: Self = StObject.set(x, "beforeGetData", js.undefined)
+      inline def setBeforeGetDataUndefined: Self = StObject.set(x, "beforeGetData", js.undefined)
       
-      @scala.inline
-      def setBeforeModeUnload(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "beforeModeUnload", js.Any.fromFunction1(value))
+      inline def setBeforeModeUnload(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "beforeModeUnload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeModeUnloadUndefined: Self = StObject.set(x, "beforeModeUnload", js.undefined)
+      inline def setBeforeModeUnloadUndefined: Self = StObject.set(x, "beforeModeUnload", js.undefined)
       
-      @scala.inline
-      def setBeforeSetMode(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "beforeSetMode", js.Any.fromFunction1(value))
+      inline def setBeforeSetMode(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "beforeSetMode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeSetModeUndefined: Self = StObject.set(x, "beforeSetMode", js.undefined)
+      inline def setBeforeSetModeUndefined: Self = StObject.set(x, "beforeSetMode", js.undefined)
       
-      @scala.inline
-      def setBeforeUndoImage(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "beforeUndoImage", js.Any.fromFunction1(value))
+      inline def setBeforeUndoImage(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "beforeUndoImage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeUndoImageUndefined: Self = StObject.set(x, "beforeUndoImage", js.undefined)
+      inline def setBeforeUndoImageUndefined: Self = StObject.set(x, "beforeUndoImage", js.undefined)
       
-      @scala.inline
-      def setBlur(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction1(value))
+      inline def setBlur(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+      inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
       
-      @scala.inline
-      def setChange(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+      inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
-      @scala.inline
-      def setConfigLoaded(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "configLoaded", js.Any.fromFunction1(value))
+      inline def setConfigLoaded(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "configLoaded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConfigLoadedUndefined: Self = StObject.set(x, "configLoaded", js.undefined)
+      inline def setConfigLoadedUndefined: Self = StObject.set(x, "configLoaded", js.undefined)
       
-      @scala.inline
-      def setContentDirChanged(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "contentDirChanged", js.Any.fromFunction1(value))
+      inline def setContentDirChanged(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "contentDirChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContentDirChangedUndefined: Self = StObject.set(x, "contentDirChanged", js.undefined)
+      inline def setContentDirChangedUndefined: Self = StObject.set(x, "contentDirChanged", js.undefined)
       
-      @scala.inline
-      def setContentDom(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "contentDom", js.Any.fromFunction1(value))
+      inline def setContentDom(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "contentDom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContentDomInvalidated(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "contentDomInvalidated", js.Any.fromFunction1(value))
+      inline def setContentDomInvalidated(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "contentDomInvalidated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContentDomInvalidatedUndefined: Self = StObject.set(x, "contentDomInvalidated", js.undefined)
+      inline def setContentDomInvalidatedUndefined: Self = StObject.set(x, "contentDomInvalidated", js.undefined)
       
-      @scala.inline
-      def setContentDomUndefined: Self = StObject.set(x, "contentDom", js.undefined)
+      inline def setContentDomUndefined: Self = StObject.set(x, "contentDom", js.undefined)
       
-      @scala.inline
-      def setContentDomUnload(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "contentDomUnload", js.Any.fromFunction1(value))
+      inline def setContentDomUnload(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "contentDomUnload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContentDomUnloadUndefined: Self = StObject.set(x, "contentDomUnload", js.undefined)
+      inline def setContentDomUnloadUndefined: Self = StObject.set(x, "contentDomUnload", js.undefined)
       
-      @scala.inline
-      def setCustomConfigLoaded(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "customConfigLoaded", js.Any.fromFunction1(value))
+      inline def setCustomConfigLoaded(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "customConfigLoaded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomConfigLoadedUndefined: Self = StObject.set(x, "customConfigLoaded", js.undefined)
+      inline def setCustomConfigLoadedUndefined: Self = StObject.set(x, "customConfigLoaded", js.undefined)
       
-      @scala.inline
-      def setDataFiltered(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "dataFiltered", js.Any.fromFunction1(value))
+      inline def setDataFiltered(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "dataFiltered", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDataFilteredUndefined: Self = StObject.set(x, "dataFiltered", js.undefined)
+      inline def setDataFilteredUndefined: Self = StObject.set(x, "dataFiltered", js.undefined)
       
-      @scala.inline
-      def setDataReady(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "dataReady", js.Any.fromFunction1(value))
+      inline def setDataReady(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "dataReady", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDataReadyUndefined: Self = StObject.set(x, "dataReady", js.undefined)
+      inline def setDataReadyUndefined: Self = StObject.set(x, "dataReady", js.undefined)
       
-      @scala.inline
-      def setDestroy(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setDialogHide(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "dialogHide", js.Any.fromFunction1(value))
+      inline def setDialogHide(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "dialogHide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDialogHideUndefined: Self = StObject.set(x, "dialogHide", js.undefined)
+      inline def setDialogHideUndefined: Self = StObject.set(x, "dialogHide", js.undefined)
       
-      @scala.inline
-      def setDialogShow(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "dialogShow", js.Any.fromFunction1(value))
+      inline def setDialogShow(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "dialogShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDialogShowUndefined: Self = StObject.set(x, "dialogShow", js.undefined)
+      inline def setDialogShowUndefined: Self = StObject.set(x, "dialogShow", js.undefined)
       
-      @scala.inline
-      def setDirChanged(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "dirChanged", js.Any.fromFunction1(value))
+      inline def setDirChanged(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "dirChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDirChangedUndefined: Self = StObject.set(x, "dirChanged", js.undefined)
+      inline def setDirChangedUndefined: Self = StObject.set(x, "dirChanged", js.undefined)
       
-      @scala.inline
-      def setDoubleclick(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "doubleclick", js.Any.fromFunction1(value))
+      inline def setDoubleclick(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "doubleclick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDoubleclickUndefined: Self = StObject.set(x, "doubleclick", js.undefined)
+      inline def setDoubleclickUndefined: Self = StObject.set(x, "doubleclick", js.undefined)
       
-      @scala.inline
-      def setDragend(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "dragend", js.Any.fromFunction1(value))
+      inline def setDragend(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "dragend", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDragendUndefined: Self = StObject.set(x, "dragend", js.undefined)
+      inline def setDragendUndefined: Self = StObject.set(x, "dragend", js.undefined)
       
-      @scala.inline
-      def setDragstart(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "dragstart", js.Any.fromFunction1(value))
+      inline def setDragstart(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "dragstart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDragstartUndefined: Self = StObject.set(x, "dragstart", js.undefined)
+      inline def setDragstartUndefined: Self = StObject.set(x, "dragstart", js.undefined)
       
-      @scala.inline
-      def setDrop(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
+      inline def setDrop(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+      inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
       
-      @scala.inline
-      def setElementsPathUpdate(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "elementsPathUpdate", js.Any.fromFunction1(value))
+      inline def setElementsPathUpdate(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "elementsPathUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setElementsPathUpdateUndefined: Self = StObject.set(x, "elementsPathUpdate", js.undefined)
+      inline def setElementsPathUpdateUndefined: Self = StObject.set(x, "elementsPathUpdate", js.undefined)
       
-      @scala.inline
-      def setFileUploadRequest(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "fileUploadRequest", js.Any.fromFunction1(value))
+      inline def setFileUploadRequest(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "fileUploadRequest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFileUploadRequestUndefined: Self = StObject.set(x, "fileUploadRequest", js.undefined)
+      inline def setFileUploadRequestUndefined: Self = StObject.set(x, "fileUploadRequest", js.undefined)
       
-      @scala.inline
-      def setFileUploadResponse(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "fileUploadResponse", js.Any.fromFunction1(value))
+      inline def setFileUploadResponse(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "fileUploadResponse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFileUploadResponseUndefined: Self = StObject.set(x, "fileUploadResponse", js.undefined)
+      inline def setFileUploadResponseUndefined: Self = StObject.set(x, "fileUploadResponse", js.undefined)
       
-      @scala.inline
-      def setFloatingSpaceLayout(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "floatingSpaceLayout", js.Any.fromFunction1(value))
+      inline def setFloatingSpaceLayout(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "floatingSpaceLayout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFloatingSpaceLayoutUndefined: Self = StObject.set(x, "floatingSpaceLayout", js.undefined)
+      inline def setFloatingSpaceLayoutUndefined: Self = StObject.set(x, "floatingSpaceLayout", js.undefined)
       
-      @scala.inline
-      def setFocus(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
+      inline def setFocus(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+      inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
-      @scala.inline
-      def setGetData(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+      inline def setGetData(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
+      inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
       
-      @scala.inline
-      def setGetSnapshot(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "getSnapshot", js.Any.fromFunction1(value))
+      inline def setGetSnapshot(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "getSnapshot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSnapshotUndefined: Self = StObject.set(x, "getSnapshot", js.undefined)
+      inline def setGetSnapshotUndefined: Self = StObject.set(x, "getSnapshot", js.undefined)
       
-      @scala.inline
-      def setInsertElement(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "insertElement", js.Any.fromFunction1(value))
+      inline def setInsertElement(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "insertElement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInsertElementUndefined: Self = StObject.set(x, "insertElement", js.undefined)
+      inline def setInsertElementUndefined: Self = StObject.set(x, "insertElement", js.undefined)
       
-      @scala.inline
-      def setInsertHtml(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "insertHtml", js.Any.fromFunction1(value))
+      inline def setInsertHtml(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "insertHtml", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInsertHtmlUndefined: Self = StObject.set(x, "insertHtml", js.undefined)
+      inline def setInsertHtmlUndefined: Self = StObject.set(x, "insertHtml", js.undefined)
       
-      @scala.inline
-      def setInsertText(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "insertText", js.Any.fromFunction1(value))
+      inline def setInsertText(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "insertText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
+      inline def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
       
-      @scala.inline
-      def setInstanceReady(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "instanceReady", js.Any.fromFunction1(value))
+      inline def setInstanceReady(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "instanceReady", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInstanceReadyUndefined: Self = StObject.set(x, "instanceReady", js.undefined)
+      inline def setInstanceReadyUndefined: Self = StObject.set(x, "instanceReady", js.undefined)
       
-      @scala.inline
-      def setKey(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+      inline def setKey(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLangLoaded(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "langLoaded", js.Any.fromFunction1(value))
+      inline def setLangLoaded(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "langLoaded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLangLoadedUndefined: Self = StObject.set(x, "langLoaded", js.undefined)
+      inline def setLangLoadedUndefined: Self = StObject.set(x, "langLoaded", js.undefined)
       
-      @scala.inline
-      def setLoadSnapshot(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "loadSnapshot", js.Any.fromFunction1(value))
+      inline def setLoadSnapshot(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "loadSnapshot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadSnapshotUndefined: Self = StObject.set(x, "loadSnapshot", js.undefined)
+      inline def setLoadSnapshotUndefined: Self = StObject.set(x, "loadSnapshot", js.undefined)
       
-      @scala.inline
-      def setLoaded(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "loaded", js.Any.fromFunction1(value))
+      inline def setLoaded(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "loaded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+      inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
       
-      @scala.inline
-      def setLockSnapshot(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "lockSnapshot", js.Any.fromFunction1(value))
+      inline def setLockSnapshot(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "lockSnapshot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLockSnapshotUndefined: Self = StObject.set(x, "lockSnapshot", js.undefined)
+      inline def setLockSnapshotUndefined: Self = StObject.set(x, "lockSnapshot", js.undefined)
       
-      @scala.inline
-      def setMaximize(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "maximize", js.Any.fromFunction1(value))
+      inline def setMaximize(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "maximize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMaximizeUndefined: Self = StObject.set(x, "maximize", js.undefined)
+      inline def setMaximizeUndefined: Self = StObject.set(x, "maximize", js.undefined)
       
-      @scala.inline
-      def setMenuShow(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "menuShow", js.Any.fromFunction1(value))
+      inline def setMenuShow(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "menuShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMenuShowUndefined: Self = StObject.set(x, "menuShow", js.undefined)
+      inline def setMenuShowUndefined: Self = StObject.set(x, "menuShow", js.undefined)
       
-      @scala.inline
-      def setMode(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "mode", js.Any.fromFunction1(value))
+      inline def setMode(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "mode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setNotificationHide(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "notificationHide", js.Any.fromFunction1(value))
+      inline def setNotificationHide(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "notificationHide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotificationHideUndefined: Self = StObject.set(x, "notificationHide", js.undefined)
+      inline def setNotificationHideUndefined: Self = StObject.set(x, "notificationHide", js.undefined)
       
-      @scala.inline
-      def setNotificationShow(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "notificationShow", js.Any.fromFunction1(value))
+      inline def setNotificationShow(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "notificationShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotificationShowUndefined: Self = StObject.set(x, "notificationShow", js.undefined)
+      inline def setNotificationShowUndefined: Self = StObject.set(x, "notificationShow", js.undefined)
       
-      @scala.inline
-      def setNotificationUpdate(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "notificationUpdate", js.Any.fromFunction1(value))
+      inline def setNotificationUpdate(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "notificationUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotificationUpdateUndefined: Self = StObject.set(x, "notificationUpdate", js.undefined)
+      inline def setNotificationUpdateUndefined: Self = StObject.set(x, "notificationUpdate", js.undefined)
       
-      @scala.inline
-      def setPaste(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
+      inline def setPaste(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPasteFromWord(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "pasteFromWord", js.Any.fromFunction1(value))
+      inline def setPasteFromWord(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "pasteFromWord", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPasteFromWordUndefined: Self = StObject.set(x, "pasteFromWord", js.undefined)
+      inline def setPasteFromWordUndefined: Self = StObject.set(x, "pasteFromWord", js.undefined)
       
-      @scala.inline
-      def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
+      inline def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
       
-      @scala.inline
-      def setPluginsLoaded(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "pluginsLoaded", js.Any.fromFunction1(value))
+      inline def setPluginsLoaded(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "pluginsLoaded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPluginsLoadedUndefined: Self = StObject.set(x, "pluginsLoaded", js.undefined)
+      inline def setPluginsLoadedUndefined: Self = StObject.set(x, "pluginsLoaded", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "readOnly", js.Any.fromFunction1(value))
+      inline def setReadOnly(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "readOnly", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setRemoveFormatCleanup(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "removeFormatCleanup", js.Any.fromFunction1(value))
+      inline def setRemoveFormatCleanup(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "removeFormatCleanup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveFormatCleanupUndefined: Self = StObject.set(x, "removeFormatCleanup", js.undefined)
+      inline def setRemoveFormatCleanupUndefined: Self = StObject.set(x, "removeFormatCleanup", js.undefined)
       
-      @scala.inline
-      def setRequired(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "required", js.Any.fromFunction1(value))
+      inline def setRequired(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "required", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setResize(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
+      inline def setResize(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setSave(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+      inline def setSave(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSaveSnapshot(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "saveSnapshot", js.Any.fromFunction1(value))
+      inline def setSaveSnapshot(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "saveSnapshot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSaveSnapshotUndefined: Self = StObject.set(x, "saveSnapshot", js.undefined)
+      inline def setSaveSnapshotUndefined: Self = StObject.set(x, "saveSnapshot", js.undefined)
       
-      @scala.inline
-      def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+      inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
       
-      @scala.inline
-      def setSelectionChange(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
+      inline def setSelectionChange(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "selectionChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
+      inline def setSelectionChangeUndefined: Self = StObject.set(x, "selectionChange", js.undefined)
       
-      @scala.inline
-      def setSetData(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+      inline def setSetData(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
+      inline def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
       
-      @scala.inline
-      def setStylesSet(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "stylesSet", js.Any.fromFunction1(value))
+      inline def setStylesSet(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "stylesSet", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesSetUndefined: Self = StObject.set(x, "stylesSet", js.undefined)
+      inline def setStylesSetUndefined: Self = StObject.set(x, "stylesSet", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+      inline def setTemplate(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      @scala.inline
-      def setToDataFormat(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "toDataFormat", js.Any.fromFunction1(value))
+      inline def setToDataFormat(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "toDataFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToDataFormatUndefined: Self = StObject.set(x, "toDataFormat", js.undefined)
+      inline def setToDataFormatUndefined: Self = StObject.set(x, "toDataFormat", js.undefined)
       
-      @scala.inline
-      def setToHtml(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "toHtml", js.Any.fromFunction1(value))
+      inline def setToHtml(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "toHtml", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToHtmlUndefined: Self = StObject.set(x, "toHtml", js.undefined)
+      inline def setToHtmlUndefined: Self = StObject.set(x, "toHtml", js.undefined)
       
-      @scala.inline
-      def setUnlockSnapshot(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "unlockSnapshot", js.Any.fromFunction1(value))
+      inline def setUnlockSnapshot(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "unlockSnapshot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnlockSnapshotUndefined: Self = StObject.set(x, "unlockSnapshot", js.undefined)
+      inline def setUnlockSnapshotUndefined: Self = StObject.set(x, "unlockSnapshot", js.undefined)
       
-      @scala.inline
-      def setUpdateSnapshot(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "updateSnapshot", js.Any.fromFunction1(value))
+      inline def setUpdateSnapshot(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "updateSnapshot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateSnapshotUndefined: Self = StObject.set(x, "updateSnapshot", js.undefined)
+      inline def setUpdateSnapshotUndefined: Self = StObject.set(x, "updateSnapshot", js.undefined)
       
-      @scala.inline
-      def setWidgetDefinition(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "widgetDefinition", js.Any.fromFunction1(value))
+      inline def setWidgetDefinition(value: /* evt */ eventInfo => Unit): Self = StObject.set(x, "widgetDefinition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWidgetDefinitionUndefined: Self = StObject.set(x, "widgetDefinition", js.undefined)
+      inline def setWidgetDefinitionUndefined: Self = StObject.set(x, "widgetDefinition", js.undefined)
     }
   }
 }

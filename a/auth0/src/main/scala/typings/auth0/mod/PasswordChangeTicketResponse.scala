@@ -10,16 +10,13 @@ trait PasswordChangeTicketResponse extends StObject {
 }
 object PasswordChangeTicketResponse {
   
-  @scala.inline
-  def apply(ticket: String): PasswordChangeTicketResponse = {
+  inline def apply(ticket: String): PasswordChangeTicketResponse = {
     val __obj = js.Dynamic.literal(ticket = ticket.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordChangeTicketResponse]
   }
   
-  @scala.inline
-  implicit class PasswordChangeTicketResponseMutableBuilder[Self <: PasswordChangeTicketResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PasswordChangeTicketResponse](x: Self) {
     
-    @scala.inline
-    def setTicket(value: String): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
+    inline def setTicket(value: String): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
   }
 }

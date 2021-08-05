@@ -11,19 +11,15 @@ trait MultipleChoiceSubmission extends StObject {
 }
 object MultipleChoiceSubmission {
   
-  @scala.inline
-  def apply(): MultipleChoiceSubmission = {
+  inline def apply(): MultipleChoiceSubmission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultipleChoiceSubmission]
   }
   
-  @scala.inline
-  implicit class MultipleChoiceSubmissionMutableBuilder[Self <: MultipleChoiceSubmission] (val x: Self) extends AnyVal {
+  extension [Self <: MultipleChoiceSubmission](x: Self) {
     
-    @scala.inline
-    def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
+    inline def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnswerUndefined: Self = StObject.set(x, "answer", js.undefined)
+    inline def setAnswerUndefined: Self = StObject.set(x, "answer", js.undefined)
   }
 }

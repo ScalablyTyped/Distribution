@@ -18,23 +18,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SequenceExpression_ {
   
-  @scala.inline
-  def apply(expressions: js.Array[Expression]): SequenceExpression_ = {
+  inline def apply(expressions: js.Array[Expression]): SequenceExpression_ = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("SequenceExpression")
     __obj.asInstanceOf[SequenceExpression_]
   }
   
-  @scala.inline
-  implicit class SequenceExpression_MutableBuilder[Self <: SequenceExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: SequenceExpression_](x: Self) {
     
-    @scala.inline
-    def setExpressions(value: js.Array[Expression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+    inline def setExpressions(value: js.Array[Expression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionsVarargs(value: Expression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: Expression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: SequenceExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SequenceExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

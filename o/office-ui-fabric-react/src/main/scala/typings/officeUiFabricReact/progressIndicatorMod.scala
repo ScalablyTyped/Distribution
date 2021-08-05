@@ -34,7 +34,6 @@ object progressIndicatorMod {
     @JSImport("office-ui-fabric-react/lib/components/ProgressIndicator", "ProgressIndicatorBase.defaultProps")
     @js.native
     def defaultProps: Description = js.native
-    @scala.inline
-    def defaultProps_=(x: Description): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Description): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

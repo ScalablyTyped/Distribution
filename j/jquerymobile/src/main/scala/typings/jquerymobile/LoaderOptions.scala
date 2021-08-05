@@ -18,43 +18,31 @@ trait LoaderOptions extends StObject {
 }
 object LoaderOptions {
   
-  @scala.inline
-  def apply(): LoaderOptions = {
+  inline def apply(): LoaderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoaderOptions]
   }
   
-  @scala.inline
-  implicit class LoaderOptionsMutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoaderOptions](x: Self) {
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTextVisible(value: Boolean): Self = StObject.set(x, "textVisible", value.asInstanceOf[js.Any])
+    inline def setTextVisible(value: Boolean): Self = StObject.set(x, "textVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextVisibleUndefined: Self = StObject.set(x, "textVisible", js.undefined)
+    inline def setTextVisibleUndefined: Self = StObject.set(x, "textVisible", js.undefined)
     
-    @scala.inline
-    def setTextonly(value: Boolean): Self = StObject.set(x, "textonly", value.asInstanceOf[js.Any])
+    inline def setTextonly(value: Boolean): Self = StObject.set(x, "textonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextonlyUndefined: Self = StObject.set(x, "textonly", js.undefined)
+    inline def setTextonlyUndefined: Self = StObject.set(x, "textonly", js.undefined)
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ trait PCClassRendererResult
 }
 object PCClassRendererResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -30,10 +29,8 @@ object PCClassRendererResult {
     __obj.asInstanceOf[PCClassRendererResult]
   }
   
-  @scala.inline
-  implicit class PCClassRendererResultMutableBuilder[Self <: PCClassRendererResult] (val x: Self) extends AnyVal {
+  extension [Self <: PCClassRendererResult](x: Self) {
     
-    @scala.inline
-    def setRenderer(value: PointCloudUniqueValueRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: PointCloudUniqueValueRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
   }
 }

@@ -21,25 +21,19 @@ trait SchemaCompanionClickThroughOverride extends StObject {
 }
 object SchemaCompanionClickThroughOverride {
   
-  @scala.inline
-  def apply(): SchemaCompanionClickThroughOverride = {
+  inline def apply(): SchemaCompanionClickThroughOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCompanionClickThroughOverride]
   }
   
-  @scala.inline
-  implicit class SchemaCompanionClickThroughOverrideMutableBuilder[Self <: SchemaCompanionClickThroughOverride] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCompanionClickThroughOverride](x: Self) {
     
-    @scala.inline
-    def setClickThroughUrl(value: SchemaClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
+    inline def setClickThroughUrl(value: SchemaClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickThroughUrlUndefined: Self = StObject.set(x, "clickThroughUrl", js.undefined)
+    inline def setClickThroughUrlUndefined: Self = StObject.set(x, "clickThroughUrl", js.undefined)
     
-    @scala.inline
-    def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
+    inline def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
+    inline def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
   }
 }

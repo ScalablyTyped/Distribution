@@ -60,6 +60,5 @@ trait User[T /* <: Attributes */]
 }
 object User {
   
-  @scala.inline
-  def apply: UserConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("User").asInstanceOf[UserConstructor]
+  inline def apply: UserConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("User").asInstanceOf[UserConstructor]
 }

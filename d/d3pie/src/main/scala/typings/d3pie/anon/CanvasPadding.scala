@@ -18,43 +18,31 @@ trait CanvasPadding extends StObject {
 }
 object CanvasPadding {
   
-  @scala.inline
-  def apply(): CanvasPadding = {
+  inline def apply(): CanvasPadding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanvasPadding]
   }
   
-  @scala.inline
-  implicit class CanvasPaddingMutableBuilder[Self <: CanvasPadding] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasPadding](x: Self) {
     
-    @scala.inline
-    def setCanvasPadding(value: Bottom): Self = StObject.set(x, "canvasPadding", value.asInstanceOf[js.Any])
+    inline def setCanvasPadding(value: Bottom): Self = StObject.set(x, "canvasPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanvasPaddingUndefined: Self = StObject.set(x, "canvasPadding", js.undefined)
+    inline def setCanvasPaddingUndefined: Self = StObject.set(x, "canvasPadding", js.undefined)
     
-    @scala.inline
-    def setColors(value: Background): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: Background): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setCssPrefix(value: String): Self = StObject.set(x, "cssPrefix", value.asInstanceOf[js.Any])
+    inline def setCssPrefix(value: String): Self = StObject.set(x, "cssPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssPrefixUndefined: Self = StObject.set(x, "cssPrefix", js.undefined)
+    inline def setCssPrefixUndefined: Self = StObject.set(x, "cssPrefix", js.undefined)
     
-    @scala.inline
-    def setGradient(value: ColorEnabled): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+    inline def setGradient(value: ColorEnabled): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
+    inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
     
-    @scala.inline
-    def setPieCenterOffset(value: X): Self = StObject.set(x, "pieCenterOffset", value.asInstanceOf[js.Any])
+    inline def setPieCenterOffset(value: X): Self = StObject.set(x, "pieCenterOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPieCenterOffsetUndefined: Self = StObject.set(x, "pieCenterOffset", js.undefined)
+    inline def setPieCenterOffsetUndefined: Self = StObject.set(x, "pieCenterOffset", js.undefined)
   }
 }

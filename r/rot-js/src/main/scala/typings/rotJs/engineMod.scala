@@ -61,8 +61,7 @@ object engineMod {
   }
   object Engine {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _lock: Double,
       _scheduler: typings.rotJs.schedulerSchedulerMod.default[js.Any],
       lock: () => Engine,
@@ -73,23 +72,17 @@ object engineMod {
       __obj.asInstanceOf[Engine]
     }
     
-    @scala.inline
-    implicit class EngineMutableBuilder[Self <: Engine] (val x: Self) extends AnyVal {
+    extension [Self <: Engine](x: Self) {
       
-      @scala.inline
-      def setLock(value: () => Engine): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
+      inline def setLock(value: () => Engine): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStart(value: () => Engine): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Engine): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnlock(value: () => Engine): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
+      inline def setUnlock(value: () => Engine): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_lock(value: Double): Self = StObject.set(x, "_lock", value.asInstanceOf[js.Any])
+      inline def set_lock(value: Double): Self = StObject.set(x, "_lock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_scheduler(value: typings.rotJs.schedulerSchedulerMod.default[js.Any]): Self = StObject.set(x, "_scheduler", value.asInstanceOf[js.Any])
+      inline def set_scheduler(value: typings.rotJs.schedulerSchedulerMod.default[js.Any]): Self = StObject.set(x, "_scheduler", value.asInstanceOf[js.Any])
     }
   }
 }

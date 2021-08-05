@@ -300,541 +300,364 @@ object buttonButtonMod {
   // export const DefaultButton = Button as React.FC<ButtonDefaultProps>;
   // export const AnchorButton = Button as React.FC<ButtonAnchorProps>;
   // or just create a wrapper component.
-  @scala.inline
-  def default(
+  inline def default(
     props: ForwardRefProps[
       HTMLAnchorElement | HTMLButtonElement, 
       ButtonAnchorProps & ButtonKindProps & ButtonDefaultProps
     ]
   ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_T_JSXElementConstructorAnyR[T /* <: JSXElementConstructor[js.Any] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_T_JSXElementConstructorAnyR[T /* <: JSXElementConstructor[js.Any] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_a[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[a] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_a[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[a] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_abbr[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[abbr] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_abbr[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[abbr] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_address[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[address] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_address[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[address] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_animate[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[animate] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_animate[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[animate] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_animateMotion[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[animateMotion] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_animateMotion[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[animateMotion] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_animateTransform[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[animateTransform] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_animateTransform[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[animateTransform] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_area[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[area] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_area[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[area] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_article[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[article] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_article[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[article] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_aside[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[aside] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_aside[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[aside] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_audio[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[audio] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_audio[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[audio] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_b[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[b] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_b[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[b] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_base[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[base] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_base[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[base] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_bdi[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[bdi] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_bdi[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[bdi] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_bdo[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[bdo] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_bdo[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[bdo] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_big[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[big] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_big[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[big] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_blockquote[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[blockquote] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_blockquote[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[blockquote] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_body[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[body] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_body[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[body] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_br[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[br] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_br[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[br] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_button[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[button] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_button[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[button] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_canvas[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[canvas] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_canvas[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[canvas] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_caption[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[caption] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_caption[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[caption] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_circle[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[circle] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_circle[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[circle] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_cite[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[cite] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_cite[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[cite] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_clipPath[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[clipPath] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_clipPath[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[clipPath] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_code[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[code] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_code[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[code] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_col[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[col] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_col[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[col] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_colgroup[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[colgroup] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_colgroup[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[colgroup] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_data[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[data] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_data[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[data] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_datalist[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[datalist] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_datalist[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[datalist] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_dd[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dd] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_dd[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dd] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_defs[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[defs] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_defs[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[defs] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_del[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[del] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_del[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[del] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_desc[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[desc_] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_desc[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[desc_] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_details[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[details] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_details[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[details] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_dfn[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dfn] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_dfn[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dfn] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_dialog[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dialog] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_dialog[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dialog] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_div[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[div] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_div[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[div] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_dl[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dl] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_dl[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dl] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_dt[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dt] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_dt[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[dt] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_ellipse[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ellipse] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_ellipse[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ellipse] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_em[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[em] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_em[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[em] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_embed[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[embed] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_embed[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[embed] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feBlend[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feBlend] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feBlend[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feBlend] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feColorMatrix[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feColorMatrix] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feColorMatrix[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feColorMatrix] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feComponentTransfer[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feComponentTransfer] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feComponentTransfer[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feComponentTransfer] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feComposite[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feComposite] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feComposite[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feComposite] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feConvolveMatrix[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feConvolveMatrix] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feConvolveMatrix[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feConvolveMatrix] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feDiffuseLighting[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feDiffuseLighting] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feDiffuseLighting[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feDiffuseLighting] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feDisplacementMap[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feDisplacementMap] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feDisplacementMap[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feDisplacementMap] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feDistantLight[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feDistantLight] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feDistantLight[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feDistantLight] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feDropShadow[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feDropShadow] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feDropShadow[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feDropShadow] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feFlood[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFlood] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feFlood[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFlood] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feFuncA[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFuncA] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feFuncA[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFuncA] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feFuncB[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFuncB] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feFuncB[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFuncB] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feFuncG[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFuncG] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feFuncG[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFuncG] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feFuncR[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFuncR] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feFuncR[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feFuncR] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feGaussianBlur[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feGaussianBlur] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feGaussianBlur[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feGaussianBlur] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feImage[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feImage] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feImage[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feImage] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feMerge[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feMerge] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feMerge[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feMerge] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feMergeNode[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feMergeNode] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feMergeNode[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feMergeNode] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feMorphology[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feMorphology] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feMorphology[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feMorphology] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feOffset[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feOffset] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feOffset[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feOffset] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_fePointLight[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[fePointLight] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_fePointLight[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[fePointLight] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feSpecularLighting[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feSpecularLighting] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feSpecularLighting[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feSpecularLighting] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feSpotLight[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feSpotLight] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feSpotLight[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feSpotLight] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feTile[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feTile] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feTile[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feTile] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_feTurbulence[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feTurbulence] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_feTurbulence[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[feTurbulence] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_fieldset[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[fieldset] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_fieldset[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[fieldset] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_figcaption[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[figcaption] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_figcaption[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[figcaption] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_figure[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[figure] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_figure[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[figure] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_filter[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[filter] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_filter[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[filter] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_footer[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[footer] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_footer[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[footer] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_foreignObject[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[foreignObject] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_foreignObject[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[foreignObject] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_form[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[form] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_form[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[form] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_g[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[g] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_g[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[g] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_h1[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h1] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_h1[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h1] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_h2[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h2] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_h2[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h2] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_h3[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h3] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_h3[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h3] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_h4[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h4] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_h4[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h4] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_h5[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h5] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_h5[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h5] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_h6[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h6] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_h6[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[h6] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_head[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[head] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_head[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[head] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_header[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[header] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_header[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[header] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_hgroup[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[hgroup] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_hgroup[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[hgroup] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_hr[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[hr] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_hr[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[hr] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_html[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[html] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_html[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[html] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_i[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[i] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_i[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[i] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_iframe[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[iframe] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_iframe[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[iframe] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_image[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[image] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_image[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[image] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_img[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[img] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_img[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[img] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_input[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[input] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_input[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[input] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_ins[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ins] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_ins[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ins] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_kbd[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[kbd] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_kbd[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[kbd] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_keygen[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[keygen] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_keygen[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[keygen] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_label[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[label] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_label[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[label] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_legend[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[legend] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_legend[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[legend] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_li[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[li] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_li[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[li] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_line[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[line] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_line[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[line] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_linearGradient[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[linearGradient] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_linearGradient[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[linearGradient] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_link[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[link] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_link[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[link] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_main[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[main] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_main[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[main] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_map[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[map] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_map[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[map] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_mark[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[mark] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_mark[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[mark] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_marker[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[marker] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_marker[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[marker] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_mask[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[mask] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_mask[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[mask] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_menu[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[menu] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_menu[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[menu] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_menuitem[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[menuitem] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_menuitem[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[menuitem] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_meta[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[meta] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_meta[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[meta] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_metadata[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[metadata] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_metadata[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[metadata] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_meter[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[meter] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_meter[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[meter] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_mpath[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[mpath] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_mpath[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[mpath] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_nav[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[nav] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_nav[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[nav] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_noindex[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[noindex] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_noindex[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[noindex] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_noscript[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[noscript] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_noscript[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[noscript] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_object[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[`object`] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_object[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[`object`] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_ol[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ol] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_ol[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ol] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_optgroup[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[optgroup] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_optgroup[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[optgroup] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_option[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[option] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_option[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[option] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_output[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[output] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_output[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[output] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_p[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[p] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_p[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[p] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_param[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[param] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_param[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[param] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_path[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[path] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_path[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[path] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_pattern[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[pattern] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_pattern[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[pattern] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_picture[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[picture] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_picture[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[picture] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_polygon[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[polygon] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_polygon[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[polygon] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_polyline[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[polyline] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_polyline[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[polyline] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_pre[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[pre] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_pre[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[pre] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_progress[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[progress] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_progress[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[progress] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_q[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[q] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_q[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[q] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_radialGradient[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[radialGradient] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_radialGradient[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[radialGradient] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_rect[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[rect] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_rect[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[rect] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_rp[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[rp] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_rp[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[rp] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_rt[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[rt] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_rt[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[rt] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_ruby[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ruby] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_ruby[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ruby] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_s[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[s] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_s[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[s] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_samp[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[samp] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_samp[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[samp] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_script[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[script] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_script[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[script] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_section[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[section] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_section[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[section] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_select[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[select] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_select[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[select] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_slot[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[slot] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_slot[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[slot] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_small[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[small] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_small[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[small] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_source[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[source] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_source[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[source] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_span[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[span] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_span[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[span] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_stop[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[stop] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_stop[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[stop] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_strong[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[strong] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_strong[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[strong] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_style[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[style] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_style[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[style] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_sub[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[sub] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_sub[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[sub] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_summary[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[summary] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_summary[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[summary] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_sup[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[sup] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_sup[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[sup] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_svg[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[svg] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_svg[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[svg] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_switch[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[switch] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_switch[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[switch] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_symbol[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[symbol] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_symbol[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[symbol] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_table[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[table] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_table[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[table] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_tbody[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[tbody] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_tbody[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[tbody] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_td[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[td] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_td[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[td] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_template[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[template] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_template[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[template] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_text[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[text] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_text[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[text] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_textPath[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[textPath] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_textPath[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[textPath] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_textarea[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[textarea] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_textarea[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[textarea] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_tfoot[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[tfoot] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_tfoot[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[tfoot] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_th[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[th] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_th[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[th] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_thead[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[thead] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_thead[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[thead] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_time[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[time] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_time[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[time] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_title[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[title] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_title[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[title] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_tr[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[tr] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_tr[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[tr] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_track[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[track] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_track[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[track] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_tspan[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[tspan] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_tspan[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[tspan] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_u[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[u] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_u[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[u] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_ul[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ul] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_ul[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[ul] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_use[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[use] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_use[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[use] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_var[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[`var`] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_var[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[`var`] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_video[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[video] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_video[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[video] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_view[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[view] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_view[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[view] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_wbr[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[wbr] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_wbr[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[wbr] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  @scala.inline
-  def default_webview[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[webview] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_webview[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[webview] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   /* Inlined parent carbon-components-react.carbon-components-react/lib/components/Button/Button.ButtonBaseProps */
   /* Inlined parent std.Omit<carbon-components-react.carbon-components-react/typings/shared.ReactAnchorAttr<std.HTMLAnchorElement>, 'href'> */
@@ -1231,1159 +1054,776 @@ object buttonButtonMod {
   }
   object ButtonAnchorProps {
     
-    @scala.inline
-    def apply(as: Unit, href: String): ButtonAnchorProps = {
+    inline def apply(as: Unit, href: String): ButtonAnchorProps = {
       val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any])
       __obj.asInstanceOf[ButtonAnchorProps]
     }
     
-    @scala.inline
-    implicit class ButtonAnchorPropsMutableBuilder[Self <: ButtonAnchorProps] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonAnchorProps](x: Self) {
       
-      @scala.inline
-      def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
+      inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAboutUndefined: Self = StObject.set(x, "about", js.undefined)
+      inline def setAboutUndefined: Self = StObject.set(x, "about", js.undefined)
       
-      @scala.inline
-      def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+      inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
+      inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      @scala.inline
-      def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
+      inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
+      inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      @scala.inline
-      def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
+      inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      @scala.inline
-      def `setAria-autocomplete`(value: none_ | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: none_ | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
+      inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      @scala.inline
-      def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
+      inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      @scala.inline
-      def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
+      inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
-      @scala.inline
-      def `setAria-colcount`(value: Double): Self = StObject.set(x, "aria-colcount", value.asInstanceOf[js.Any])
+      inline def `setAria-colcount`(value: Double): Self = StObject.set(x, "aria-colcount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-colcountUndefined`: Self = StObject.set(x, "aria-colcount", js.undefined)
+      inline def `setAria-colcountUndefined`: Self = StObject.set(x, "aria-colcount", js.undefined)
       
-      @scala.inline
-      def `setAria-colindex`(value: Double): Self = StObject.set(x, "aria-colindex", value.asInstanceOf[js.Any])
+      inline def `setAria-colindex`(value: Double): Self = StObject.set(x, "aria-colindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-colindexUndefined`: Self = StObject.set(x, "aria-colindex", js.undefined)
+      inline def `setAria-colindexUndefined`: Self = StObject.set(x, "aria-colindex", js.undefined)
       
-      @scala.inline
-      def `setAria-colspan`(value: Double): Self = StObject.set(x, "aria-colspan", value.asInstanceOf[js.Any])
+      inline def `setAria-colspan`(value: Double): Self = StObject.set(x, "aria-colspan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-colspanUndefined`: Self = StObject.set(x, "aria-colspan", js.undefined)
+      inline def `setAria-colspanUndefined`: Self = StObject.set(x, "aria-colspan", js.undefined)
       
-      @scala.inline
-      def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
+      inline def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
+      inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      @scala.inline
-      def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
+      inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
-      @scala.inline
-      def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
+      inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
+      inline def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
       
-      @scala.inline
-      def `setAria-details`(value: String): Self = StObject.set(x, "aria-details", value.asInstanceOf[js.Any])
+      inline def `setAria-details`(value: String): Self = StObject.set(x, "aria-details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
+      inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      @scala.inline
-      def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
+      inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      @scala.inline
-      def `setAria-dropeffect`(value: none_ | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: none_ | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
+      inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
-      @scala.inline
-      def `setAria-errormessage`(value: String): Self = StObject.set(x, "aria-errormessage", value.asInstanceOf[js.Any])
+      inline def `setAria-errormessage`(value: String): Self = StObject.set(x, "aria-errormessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
+      inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      @scala.inline
-      def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
+      inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
-      @scala.inline
-      def `setAria-flowto`(value: String): Self = StObject.set(x, "aria-flowto", value.asInstanceOf[js.Any])
+      inline def `setAria-flowto`(value: String): Self = StObject.set(x, "aria-flowto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
+      inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      @scala.inline
-      def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
+      inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      @scala.inline
-      def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
+      inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      @scala.inline
-      def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
+      inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      @scala.inline
-      def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
+      inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
-      @scala.inline
-      def `setAria-keyshortcuts`(value: String): Self = StObject.set(x, "aria-keyshortcuts", value.asInstanceOf[js.Any])
+      inline def `setAria-keyshortcuts`(value: String): Self = StObject.set(x, "aria-keyshortcuts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-keyshortcutsUndefined`: Self = StObject.set(x, "aria-keyshortcuts", js.undefined)
+      inline def `setAria-keyshortcutsUndefined`: Self = StObject.set(x, "aria-keyshortcuts", js.undefined)
       
-      @scala.inline
-      def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      @scala.inline
-      def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+      inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+      inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
       
-      @scala.inline
-      def `setAria-level`(value: Double): Self = StObject.set(x, "aria-level", value.asInstanceOf[js.Any])
+      inline def `setAria-level`(value: Double): Self = StObject.set(x, "aria-level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
+      inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      @scala.inline
-      def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
+      inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      @scala.inline
-      def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
+      inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      @scala.inline
-      def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
+      inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      @scala.inline
-      def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
+      inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      @scala.inline
-      def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
+      inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
-      @scala.inline
-      def `setAria-owns`(value: String): Self = StObject.set(x, "aria-owns", value.asInstanceOf[js.Any])
+      inline def `setAria-owns`(value: String): Self = StObject.set(x, "aria-owns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-ownsUndefined`: Self = StObject.set(x, "aria-owns", js.undefined)
+      inline def `setAria-ownsUndefined`: Self = StObject.set(x, "aria-owns", js.undefined)
       
-      @scala.inline
-      def `setAria-placeholder`(value: String): Self = StObject.set(x, "aria-placeholder", value.asInstanceOf[js.Any])
+      inline def `setAria-placeholder`(value: String): Self = StObject.set(x, "aria-placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-placeholderUndefined`: Self = StObject.set(x, "aria-placeholder", js.undefined)
+      inline def `setAria-placeholderUndefined`: Self = StObject.set(x, "aria-placeholder", js.undefined)
       
-      @scala.inline
-      def `setAria-posinset`(value: Double): Self = StObject.set(x, "aria-posinset", value.asInstanceOf[js.Any])
+      inline def `setAria-posinset`(value: Double): Self = StObject.set(x, "aria-posinset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
+      inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      @scala.inline
-      def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
+      inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      @scala.inline
-      def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
+      inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
-      @scala.inline
-      def `setAria-relevant`(
+      inline def `setAria-relevant`(
         value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
+      inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      @scala.inline
-      def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
+      inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
-      @scala.inline
-      def `setAria-roledescription`(value: String): Self = StObject.set(x, "aria-roledescription", value.asInstanceOf[js.Any])
+      inline def `setAria-roledescription`(value: String): Self = StObject.set(x, "aria-roledescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-roledescriptionUndefined`: Self = StObject.set(x, "aria-roledescription", js.undefined)
+      inline def `setAria-roledescriptionUndefined`: Self = StObject.set(x, "aria-roledescription", js.undefined)
       
-      @scala.inline
-      def `setAria-rowcount`(value: Double): Self = StObject.set(x, "aria-rowcount", value.asInstanceOf[js.Any])
+      inline def `setAria-rowcount`(value: Double): Self = StObject.set(x, "aria-rowcount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-rowcountUndefined`: Self = StObject.set(x, "aria-rowcount", js.undefined)
+      inline def `setAria-rowcountUndefined`: Self = StObject.set(x, "aria-rowcount", js.undefined)
       
-      @scala.inline
-      def `setAria-rowindex`(value: Double): Self = StObject.set(x, "aria-rowindex", value.asInstanceOf[js.Any])
+      inline def `setAria-rowindex`(value: Double): Self = StObject.set(x, "aria-rowindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-rowindexUndefined`: Self = StObject.set(x, "aria-rowindex", js.undefined)
+      inline def `setAria-rowindexUndefined`: Self = StObject.set(x, "aria-rowindex", js.undefined)
       
-      @scala.inline
-      def `setAria-rowspan`(value: Double): Self = StObject.set(x, "aria-rowspan", value.asInstanceOf[js.Any])
+      inline def `setAria-rowspan`(value: Double): Self = StObject.set(x, "aria-rowspan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
+      inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      @scala.inline
-      def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
+      inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
-      @scala.inline
-      def `setAria-setsize`(value: Double): Self = StObject.set(x, "aria-setsize", value.asInstanceOf[js.Any])
+      inline def `setAria-setsize`(value: Double): Self = StObject.set(x, "aria-setsize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
+      inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      @scala.inline
-      def `setAria-sort`(value: none_ | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: none_ | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
+      inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
-      @scala.inline
-      def `setAria-valuemax`(value: Double): Self = StObject.set(x, "aria-valuemax", value.asInstanceOf[js.Any])
+      inline def `setAria-valuemax`(value: Double): Self = StObject.set(x, "aria-valuemax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-valuemaxUndefined`: Self = StObject.set(x, "aria-valuemax", js.undefined)
+      inline def `setAria-valuemaxUndefined`: Self = StObject.set(x, "aria-valuemax", js.undefined)
       
-      @scala.inline
-      def `setAria-valuemin`(value: Double): Self = StObject.set(x, "aria-valuemin", value.asInstanceOf[js.Any])
+      inline def `setAria-valuemin`(value: Double): Self = StObject.set(x, "aria-valuemin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-valueminUndefined`: Self = StObject.set(x, "aria-valuemin", js.undefined)
+      inline def `setAria-valueminUndefined`: Self = StObject.set(x, "aria-valuemin", js.undefined)
       
-      @scala.inline
-      def `setAria-valuenow`(value: Double): Self = StObject.set(x, "aria-valuenow", value.asInstanceOf[js.Any])
+      inline def `setAria-valuenow`(value: Double): Self = StObject.set(x, "aria-valuenow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-valuenowUndefined`: Self = StObject.set(x, "aria-valuenow", js.undefined)
+      inline def `setAria-valuenowUndefined`: Self = StObject.set(x, "aria-valuenow", js.undefined)
       
-      @scala.inline
-      def `setAria-valuetext`(value: String): Self = StObject.set(x, "aria-valuetext", value.asInstanceOf[js.Any])
+      inline def `setAria-valuetext`(value: String): Self = StObject.set(x, "aria-valuetext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
+      inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
       
-      @scala.inline
-      def setAs(value: Unit): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Unit): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCapitalize(value: String): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
+      inline def setAutoCapitalize(value: String): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
+      inline def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
       
-      @scala.inline
-      def setAutoCorrect(value: String): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
+      inline def setAutoCorrect(value: String): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
+      inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
-      @scala.inline
-      def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
+      inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
+      inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
-      @scala.inline
-      def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
+      inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
+      inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      @scala.inline
-      def setDangerouslySetInnerHTML(value: Html): Self = StObject.set(x, "dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
+      inline def setDangerouslySetInnerHTML(value: Html): Self = StObject.set(x, "dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDangerouslySetInnerHTMLUndefined: Self = StObject.set(x, "dangerouslySetInnerHTML", js.undefined)
+      inline def setDangerouslySetInnerHTMLUndefined: Self = StObject.set(x, "dangerouslySetInnerHTML", js.undefined)
       
-      @scala.inline
-      def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+      inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
+      inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
       
-      @scala.inline
-      def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
+      inline def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
+      inline def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: String | Double | js.Array[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String | Double | js.Array[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+      inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
       
-      @scala.inline
-      def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+      inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+      inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      @scala.inline
-      def setHasIconOnly(value: Boolean): Self = StObject.set(x, "hasIconOnly", value.asInstanceOf[js.Any])
+      inline def setHasIconOnly(value: Boolean): Self = StObject.set(x, "hasIconOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasIconOnlyUndefined: Self = StObject.set(x, "hasIconOnly", js.undefined)
+      inline def setHasIconOnlyUndefined: Self = StObject.set(x, "hasIconOnly", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefLang(value: String): Self = StObject.set(x, "hrefLang", value.asInstanceOf[js.Any])
+      inline def setHrefLang(value: String): Self = StObject.set(x, "hrefLang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefLangUndefined: Self = StObject.set(x, "hrefLang", js.undefined)
+      inline def setHrefLangUndefined: Self = StObject.set(x, "hrefLang", js.undefined)
       
-      @scala.inline
-      def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
+      inline def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconDescriptionUndefined: Self = StObject.set(x, "iconDescription", js.undefined)
+      inline def setIconDescriptionUndefined: Self = StObject.set(x, "iconDescription", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
+      inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      @scala.inline
-      def setInputMode(value: none_ | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: none_ | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
+      inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
-      @scala.inline
-      def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+      inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
+      inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
       
-      @scala.inline
-      def setItemID(value: String): Self = StObject.set(x, "itemID", value.asInstanceOf[js.Any])
+      inline def setItemID(value: String): Self = StObject.set(x, "itemID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemIDUndefined: Self = StObject.set(x, "itemID", js.undefined)
+      inline def setItemIDUndefined: Self = StObject.set(x, "itemID", js.undefined)
       
-      @scala.inline
-      def setItemProp(value: String): Self = StObject.set(x, "itemProp", value.asInstanceOf[js.Any])
+      inline def setItemProp(value: String): Self = StObject.set(x, "itemProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemPropUndefined: Self = StObject.set(x, "itemProp", js.undefined)
+      inline def setItemPropUndefined: Self = StObject.set(x, "itemProp", js.undefined)
       
-      @scala.inline
-      def setItemRef(value: String): Self = StObject.set(x, "itemRef", value.asInstanceOf[js.Any])
+      inline def setItemRef(value: String): Self = StObject.set(x, "itemRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemRefUndefined: Self = StObject.set(x, "itemRef", js.undefined)
+      inline def setItemRefUndefined: Self = StObject.set(x, "itemRef", js.undefined)
       
-      @scala.inline
-      def setItemScope(value: Boolean): Self = StObject.set(x, "itemScope", value.asInstanceOf[js.Any])
+      inline def setItemScope(value: Boolean): Self = StObject.set(x, "itemScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
+      inline def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
       
-      @scala.inline
-      def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+      inline def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
+      inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+      inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
       
-      @scala.inline
-      def setOnAbort(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
+      inline def setOnAbort(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
+      inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
       
-      @scala.inline
-      def setOnAnimationEnd(value: AnimationEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
+      inline def setOnAnimationEnd(value: AnimationEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
+      inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
       
-      @scala.inline
-      def setOnAnimationIteration(value: AnimationEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
+      inline def setOnAnimationIteration(value: AnimationEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAnimationIterationUndefined: Self = StObject.set(x, "onAnimationIteration", js.undefined)
+      inline def setOnAnimationIterationUndefined: Self = StObject.set(x, "onAnimationIteration", js.undefined)
       
-      @scala.inline
-      def setOnAnimationStart(value: AnimationEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
+      inline def setOnAnimationStart(value: AnimationEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
+      inline def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
       
-      @scala.inline
-      def setOnAuxClick(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
+      inline def setOnAuxClick(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
+      inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
       
-      @scala.inline
-      def setOnBeforeInput(value: FormEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
+      inline def setOnBeforeInput(value: FormEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
+      inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      @scala.inline
-      def setOnBlur(value: FocusEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnCanPlay(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
+      inline def setOnCanPlay(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCanPlayThrough(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
+      inline def setOnCanPlayThrough(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
+      inline def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
       
-      @scala.inline
-      def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
+      inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: FormEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: FormEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnCompositionEnd(value: CompositionEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
+      inline def setOnCompositionEnd(value: CompositionEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
+      inline def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
       
-      @scala.inline
-      def setOnCompositionStart(value: CompositionEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
+      inline def setOnCompositionStart(value: CompositionEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
+      inline def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
       
-      @scala.inline
-      def setOnCompositionUpdate(value: CompositionEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
+      inline def setOnCompositionUpdate(value: CompositionEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
+      inline def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
       
-      @scala.inline
-      def setOnContextMenu(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+      inline def setOnContextMenu(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
+      inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      @scala.inline
-      def setOnCopy(value: ClipboardEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
+      inline def setOnCopy(value: ClipboardEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
+      inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
-      @scala.inline
-      def setOnCut(value: ClipboardEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
+      inline def setOnCut(value: ClipboardEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
+      inline def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
       
-      @scala.inline
-      def setOnDoubleClick(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+      inline def setOnDoubleClick(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
+      inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
       
-      @scala.inline
-      def setOnDrag(value: DragEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+      inline def setOnDrag(value: DragEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragEnd(value: DragEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+      inline def setOnDragEnd(value: DragEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
+      inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
       
-      @scala.inline
-      def setOnDragEnter(value: DragEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
+      inline def setOnDragEnter(value: DragEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
+      inline def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
       
-      @scala.inline
-      def setOnDragExit(value: DragEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
+      inline def setOnDragExit(value: DragEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragExitUndefined: Self = StObject.set(x, "onDragExit", js.undefined)
+      inline def setOnDragExitUndefined: Self = StObject.set(x, "onDragExit", js.undefined)
       
-      @scala.inline
-      def setOnDragLeave(value: DragEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
+      inline def setOnDragLeave(value: DragEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
+      inline def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
       
-      @scala.inline
-      def setOnDragOver(value: DragEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
+      inline def setOnDragOver(value: DragEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
+      inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
       
-      @scala.inline
-      def setOnDragStart(value: DragEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      inline def setOnDragStart(value: DragEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
+      inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
       
-      @scala.inline
-      def setOnDrop(value: DragEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
+      inline def setOnDrop(value: DragEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
+      inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
-      @scala.inline
-      def setOnDurationChange(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
+      inline def setOnDurationChange(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
+      inline def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
       
-      @scala.inline
-      def setOnEmptied(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
+      inline def setOnEmptied(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
+      inline def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
       
-      @scala.inline
-      def setOnEncrypted(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
+      inline def setOnEncrypted(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
+      inline def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
       
-      @scala.inline
-      def setOnEnded(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
+      inline def setOnEnded(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
+      inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
       
-      @scala.inline
-      def setOnError(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: FocusEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnInput(value: FormEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: FormEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
+      inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
-      @scala.inline
-      def setOnInvalid(value: FormEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+      inline def setOnInvalid(value: FormEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
+      inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnKeyPress(value: KeyboardEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+      inline def setOnKeyPress(value: KeyboardEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
+      inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
       
-      @scala.inline
-      def setOnKeyUp(value: KeyboardEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      inline def setOnKeyUp(value: KeyboardEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
+      inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+      inline def setOnLoad(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadStart(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
+      inline def setOnLoadStart(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
+      inline def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setOnLoadedData(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
+      inline def setOnLoadedData(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
+      inline def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
       
-      @scala.inline
-      def setOnLoadedMetadata(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
+      inline def setOnLoadedMetadata(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
+      inline def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
       
-      @scala.inline
-      def setOnMouseDown(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+      inline def setOnMouseDown(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
+      inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
       
-      @scala.inline
-      def setOnMouseEnter(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnMouseLeave(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      @scala.inline
-      def setOnMouseMove(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+      inline def setOnMouseMove(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
+      inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
-      @scala.inline
-      def setOnMouseOut(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
+      inline def setOnMouseOut(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
+      inline def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
       
-      @scala.inline
-      def setOnMouseOver(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
+      inline def setOnMouseOver(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
+      inline def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
       
-      @scala.inline
-      def setOnMouseUp(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+      inline def setOnMouseUp(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
+      inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
-      @scala.inline
-      def setOnPaste(value: ClipboardEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
+      inline def setOnPaste(value: ClipboardEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
+      inline def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
       
-      @scala.inline
-      def setOnPause(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
+      inline def setOnPause(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
+      inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
       
-      @scala.inline
-      def setOnPlay(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
+      inline def setOnPlay(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
+      inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
       
-      @scala.inline
-      def setOnPlaying(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
+      inline def setOnPlaying(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
+      inline def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
       
-      @scala.inline
-      def setOnPointerCancel(value: PointerEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
+      inline def setOnPointerCancel(value: PointerEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
+      inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
       
-      @scala.inline
-      def setOnPointerDown(value: PointerEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+      inline def setOnPointerDown(value: PointerEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
+      inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
       
-      @scala.inline
-      def setOnPointerEnter(value: PointerEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+      inline def setOnPointerEnter(value: PointerEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
+      inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
       
-      @scala.inline
-      def setOnPointerLeave(value: PointerEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+      inline def setOnPointerLeave(value: PointerEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
+      inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
       
-      @scala.inline
-      def setOnPointerMove(value: PointerEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+      inline def setOnPointerMove(value: PointerEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
+      inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
       
-      @scala.inline
-      def setOnPointerOut(value: PointerEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
+      inline def setOnPointerOut(value: PointerEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
+      inline def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
       
-      @scala.inline
-      def setOnPointerOver(value: PointerEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
+      inline def setOnPointerOver(value: PointerEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
+      inline def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
       
-      @scala.inline
-      def setOnPointerUp(value: PointerEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+      inline def setOnPointerUp(value: PointerEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
+      inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
       
-      @scala.inline
-      def setOnProgress(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+      inline def setOnProgress(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+      inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
       
-      @scala.inline
-      def setOnRateChange(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
+      inline def setOnRateChange(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
+      inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
       
-      @scala.inline
-      def setOnReset(value: FormEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      inline def setOnReset(value: FormEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
-      @scala.inline
-      def setOnScroll(value: UIEvent[HTMLAnchorElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: UIEvent[HTMLAnchorElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+      inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      @scala.inline
-      def setOnSeeked(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
+      inline def setOnSeeked(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
+      inline def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
       
-      @scala.inline
-      def setOnSeeking(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
+      inline def setOnSeeking(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
+      inline def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setOnStalled(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
+      inline def setOnStalled(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
+      inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
-      @scala.inline
-      def setOnSubmit(value: FormEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      inline def setOnSubmit(value: FormEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
+      inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
-      @scala.inline
-      def setOnSuspend(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
+      inline def setOnSuspend(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
+      inline def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
       
-      @scala.inline
-      def setOnTimeUpdate(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
+      inline def setOnTimeUpdate(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
+      inline def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
       
-      @scala.inline
-      def setOnTouchCancel(value: TouchEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
+      inline def setOnTouchCancel(value: TouchEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
+      inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
       
-      @scala.inline
-      def setOnTouchEnd(value: TouchEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+      inline def setOnTouchEnd(value: TouchEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
+      inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
       
-      @scala.inline
-      def setOnTouchMove(value: TouchEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+      inline def setOnTouchMove(value: TouchEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
+      inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
       
-      @scala.inline
-      def setOnTouchStart(value: TouchEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      inline def setOnTouchStart(value: TouchEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+      inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
       
-      @scala.inline
-      def setOnTransitionEnd(value: TransitionEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
+      inline def setOnTransitionEnd(value: TransitionEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
+      inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
       
-      @scala.inline
-      def setOnVolumeChange(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
+      inline def setOnVolumeChange(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
+      inline def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
       
-      @scala.inline
-      def setOnWaiting(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
+      inline def setOnWaiting(value: SyntheticEvent[HTMLAnchorElement, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
+      inline def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
       
-      @scala.inline
-      def setOnWheel(value: WheelEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
+      inline def setOnWheel(value: WheelEvent[HTMLAnchorElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
+      inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      @scala.inline
-      def setPing(value: String): Self = StObject.set(x, "ping", value.asInstanceOf[js.Any])
+      inline def setPing(value: String): Self = StObject.set(x, "ping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPingUndefined: Self = StObject.set(x, "ping", js.undefined)
+      inline def setPingUndefined: Self = StObject.set(x, "ping", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      @scala.inline
-      def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
+      inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
+      inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
-      @scala.inline
-      def setReferrerPolicy(value: HTMLAttributeReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+      inline def setReferrerPolicy(value: HTMLAttributeReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
+      inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
       
-      @scala.inline
-      def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
       
-      @scala.inline
-      def setRenderIcon(value: js.Any): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
+      inline def setRenderIcon(value: js.Any): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderIconUndefined: Self = StObject.set(x, "renderIcon", js.undefined)
+      inline def setRenderIconUndefined: Self = StObject.set(x, "renderIcon", js.undefined)
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      @scala.inline
-      def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
+      inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+      inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      @scala.inline
-      def setSize(value: ButtonSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ButtonSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+      inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
+      inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
       
-      @scala.inline
-      def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
       
-      @scala.inline
-      def setSpellCheck(value: Booleanish): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
+      inline def setSpellCheck(value: Booleanish): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
+      inline def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSuppressContentEditableWarning(value: Boolean): Self = StObject.set(x, "suppressContentEditableWarning", value.asInstanceOf[js.Any])
+      inline def setSuppressContentEditableWarning(value: Boolean): Self = StObject.set(x, "suppressContentEditableWarning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressContentEditableWarningUndefined: Self = StObject.set(x, "suppressContentEditableWarning", js.undefined)
+      inline def setSuppressContentEditableWarningUndefined: Self = StObject.set(x, "suppressContentEditableWarning", js.undefined)
       
-      @scala.inline
-      def setSuppressHydrationWarning(value: Boolean): Self = StObject.set(x, "suppressHydrationWarning", value.asInstanceOf[js.Any])
+      inline def setSuppressHydrationWarning(value: Boolean): Self = StObject.set(x, "suppressHydrationWarning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
+      inline def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTooltipAlignment(value: TooltipAlignment): Self = StObject.set(x, "tooltipAlignment", value.asInstanceOf[js.Any])
+      inline def setTooltipAlignment(value: TooltipAlignment): Self = StObject.set(x, "tooltipAlignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipAlignmentUndefined: Self = StObject.set(x, "tooltipAlignment", js.undefined)
+      inline def setTooltipAlignmentUndefined: Self = StObject.set(x, "tooltipAlignment", js.undefined)
       
-      @scala.inline
-      def setTooltipPosition(value: TooltipPosition): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
+      inline def setTooltipPosition(value: TooltipPosition): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
+      inline def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
       
-      @scala.inline
-      def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+      inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setTypeof(value: String): Self = StObject.set(x, "typeof", value.asInstanceOf[js.Any])
+      inline def setTypeof(value: String): Self = StObject.set(x, "typeof", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
+      inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      @scala.inline
-      def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
+      inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
-      @scala.inline
-      def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
+      inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+      inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
   
@@ -2411,56 +1851,40 @@ object buttonButtonMod {
   }
   object ButtonBaseIsolatedProps {
     
-    @scala.inline
-    def apply(): ButtonBaseIsolatedProps = {
+    inline def apply(): ButtonBaseIsolatedProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonBaseIsolatedProps]
     }
     
-    @scala.inline
-    implicit class ButtonBaseIsolatedPropsMutableBuilder[Self <: ButtonBaseIsolatedProps] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonBaseIsolatedProps](x: Self) {
       
-      @scala.inline
-      def setHasIconOnly(value: Boolean): Self = StObject.set(x, "hasIconOnly", value.asInstanceOf[js.Any])
+      inline def setHasIconOnly(value: Boolean): Self = StObject.set(x, "hasIconOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasIconOnlyUndefined: Self = StObject.set(x, "hasIconOnly", js.undefined)
+      inline def setHasIconOnlyUndefined: Self = StObject.set(x, "hasIconOnly", js.undefined)
       
-      @scala.inline
-      def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
+      inline def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconDescriptionUndefined: Self = StObject.set(x, "iconDescription", js.undefined)
+      inline def setIconDescriptionUndefined: Self = StObject.set(x, "iconDescription", js.undefined)
       
-      @scala.inline
-      def setRenderIcon(value: js.Any): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
+      inline def setRenderIcon(value: js.Any): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderIconUndefined: Self = StObject.set(x, "renderIcon", js.undefined)
+      inline def setRenderIconUndefined: Self = StObject.set(x, "renderIcon", js.undefined)
       
-      @scala.inline
-      def setSize(value: ButtonSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ButtonSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
       
-      @scala.inline
-      def setTooltipAlignment(value: TooltipAlignment): Self = StObject.set(x, "tooltipAlignment", value.asInstanceOf[js.Any])
+      inline def setTooltipAlignment(value: TooltipAlignment): Self = StObject.set(x, "tooltipAlignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipAlignmentUndefined: Self = StObject.set(x, "tooltipAlignment", js.undefined)
+      inline def setTooltipAlignmentUndefined: Self = StObject.set(x, "tooltipAlignment", js.undefined)
       
-      @scala.inline
-      def setTooltipPosition(value: TooltipPosition): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
+      inline def setTooltipPosition(value: TooltipPosition): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
+      inline def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
     }
   }
   
@@ -2476,32 +1900,24 @@ object buttonButtonMod {
   }
   object ButtonBaseProps {
     
-    @scala.inline
-    def apply(): ButtonBaseProps = {
+    inline def apply(): ButtonBaseProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonBaseProps]
     }
     
-    @scala.inline
-    implicit class ButtonBasePropsMutableBuilder[Self <: ButtonBaseProps] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonBaseProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     }
   }
   
@@ -2821,826 +2237,554 @@ object buttonButtonMod {
   }
   object ButtonDefaultProps {
     
-    @scala.inline
-    def apply(as: Unit, href: Unit): ButtonDefaultProps = {
+    inline def apply(as: Unit, href: Unit): ButtonDefaultProps = {
       val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any])
       __obj.asInstanceOf[ButtonDefaultProps]
     }
     
-    @scala.inline
-    implicit class ButtonDefaultPropsMutableBuilder[Self <: ButtonDefaultProps] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonDefaultProps](x: Self) {
       
-      @scala.inline
-      def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
+      inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAboutUndefined: Self = StObject.set(x, "about", js.undefined)
+      inline def setAboutUndefined: Self = StObject.set(x, "about", js.undefined)
       
-      @scala.inline
-      def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+      inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
+      inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      @scala.inline
-      def setAs(value: Unit): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Unit): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCapitalize(value: String): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
+      inline def setAutoCapitalize(value: String): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
+      inline def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
       
-      @scala.inline
-      def setAutoCorrect(value: String): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
+      inline def setAutoCorrect(value: String): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
+      inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
+      inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
+      inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setContentEditable(value: Booleanish | typings.react.reactStrings.inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | typings.react.reactStrings.inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
-      @scala.inline
-      def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
+      inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
+      inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      @scala.inline
-      def setDangerouslySetInnerHTML(value: Html): Self = StObject.set(x, "dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
+      inline def setDangerouslySetInnerHTML(value: Html): Self = StObject.set(x, "dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDangerouslySetInnerHTMLUndefined: Self = StObject.set(x, "dangerouslySetInnerHTML", js.undefined)
+      inline def setDangerouslySetInnerHTMLUndefined: Self = StObject.set(x, "dangerouslySetInnerHTML", js.undefined)
       
-      @scala.inline
-      def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+      inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
+      inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
       
-      @scala.inline
-      def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
+      inline def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
+      inline def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: String | Double | js.Array[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String | Double | js.Array[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+      inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+      inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      @scala.inline
-      def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
+      inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
-      @scala.inline
-      def setFormEncType(value: String): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
+      inline def setFormEncType(value: String): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormEncTypeUndefined: Self = StObject.set(x, "formEncType", js.undefined)
+      inline def setFormEncTypeUndefined: Self = StObject.set(x, "formEncType", js.undefined)
       
-      @scala.inline
-      def setFormMethod(value: String): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
+      inline def setFormMethod(value: String): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormMethodUndefined: Self = StObject.set(x, "formMethod", js.undefined)
+      inline def setFormMethodUndefined: Self = StObject.set(x, "formMethod", js.undefined)
       
-      @scala.inline
-      def setFormNoValidate(value: Boolean): Self = StObject.set(x, "formNoValidate", value.asInstanceOf[js.Any])
+      inline def setFormNoValidate(value: Boolean): Self = StObject.set(x, "formNoValidate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormNoValidateUndefined: Self = StObject.set(x, "formNoValidate", js.undefined)
+      inline def setFormNoValidateUndefined: Self = StObject.set(x, "formNoValidate", js.undefined)
       
-      @scala.inline
-      def setFormTarget(value: String): Self = StObject.set(x, "formTarget", value.asInstanceOf[js.Any])
+      inline def setFormTarget(value: String): Self = StObject.set(x, "formTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormTargetUndefined: Self = StObject.set(x, "formTarget", js.undefined)
+      inline def setFormTargetUndefined: Self = StObject.set(x, "formTarget", js.undefined)
       
-      @scala.inline
-      def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+      inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setHref(value: Unit): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: Unit): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
+      inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      @scala.inline
-      def setInputMode(
+      inline def setInputMode(
         value: none | typings.react.reactStrings.text | typings.react.reactStrings.tel | typings.react.reactStrings.url | typings.react.reactStrings.email | typings.react.reactStrings.numeric | typings.react.reactStrings.decimal | typings.react.reactStrings.search
       ): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
+      inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
-      @scala.inline
-      def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+      inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
+      inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
       
-      @scala.inline
-      def setItemID(value: String): Self = StObject.set(x, "itemID", value.asInstanceOf[js.Any])
+      inline def setItemID(value: String): Self = StObject.set(x, "itemID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemIDUndefined: Self = StObject.set(x, "itemID", js.undefined)
+      inline def setItemIDUndefined: Self = StObject.set(x, "itemID", js.undefined)
       
-      @scala.inline
-      def setItemProp(value: String): Self = StObject.set(x, "itemProp", value.asInstanceOf[js.Any])
+      inline def setItemProp(value: String): Self = StObject.set(x, "itemProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemPropUndefined: Self = StObject.set(x, "itemProp", js.undefined)
+      inline def setItemPropUndefined: Self = StObject.set(x, "itemProp", js.undefined)
       
-      @scala.inline
-      def setItemRef(value: String): Self = StObject.set(x, "itemRef", value.asInstanceOf[js.Any])
+      inline def setItemRef(value: String): Self = StObject.set(x, "itemRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemRefUndefined: Self = StObject.set(x, "itemRef", js.undefined)
+      inline def setItemRefUndefined: Self = StObject.set(x, "itemRef", js.undefined)
       
-      @scala.inline
-      def setItemScope(value: Boolean): Self = StObject.set(x, "itemScope", value.asInstanceOf[js.Any])
+      inline def setItemScope(value: Boolean): Self = StObject.set(x, "itemScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
+      inline def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
       
-      @scala.inline
-      def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+      inline def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
+      inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnAbort(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
+      inline def setOnAbort(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
+      inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
       
-      @scala.inline
-      def setOnAnimationEnd(value: AnimationEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
+      inline def setOnAnimationEnd(value: AnimationEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
+      inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
       
-      @scala.inline
-      def setOnAnimationIteration(value: AnimationEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
+      inline def setOnAnimationIteration(value: AnimationEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAnimationIterationUndefined: Self = StObject.set(x, "onAnimationIteration", js.undefined)
+      inline def setOnAnimationIterationUndefined: Self = StObject.set(x, "onAnimationIteration", js.undefined)
       
-      @scala.inline
-      def setOnAnimationStart(value: AnimationEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
+      inline def setOnAnimationStart(value: AnimationEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
+      inline def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
       
-      @scala.inline
-      def setOnAuxClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
+      inline def setOnAuxClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
+      inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
       
-      @scala.inline
-      def setOnBeforeInput(value: FormEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
+      inline def setOnBeforeInput(value: FormEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
+      inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      @scala.inline
-      def setOnBlur(value: FocusEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnCanPlay(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
+      inline def setOnCanPlay(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCanPlayThrough(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
+      inline def setOnCanPlayThrough(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
+      inline def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
       
-      @scala.inline
-      def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
+      inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: FormEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: FormEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnCompositionEnd(value: CompositionEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
+      inline def setOnCompositionEnd(value: CompositionEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
+      inline def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
       
-      @scala.inline
-      def setOnCompositionStart(value: CompositionEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
+      inline def setOnCompositionStart(value: CompositionEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
+      inline def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
       
-      @scala.inline
-      def setOnCompositionUpdate(value: CompositionEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
+      inline def setOnCompositionUpdate(value: CompositionEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
+      inline def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
       
-      @scala.inline
-      def setOnContextMenu(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+      inline def setOnContextMenu(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
+      inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      @scala.inline
-      def setOnCopy(value: ClipboardEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
+      inline def setOnCopy(value: ClipboardEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
+      inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
-      @scala.inline
-      def setOnCut(value: ClipboardEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
+      inline def setOnCut(value: ClipboardEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
+      inline def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
       
-      @scala.inline
-      def setOnDoubleClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+      inline def setOnDoubleClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
+      inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
       
-      @scala.inline
-      def setOnDrag(value: DragEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+      inline def setOnDrag(value: DragEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragEnd(value: DragEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+      inline def setOnDragEnd(value: DragEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
+      inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
       
-      @scala.inline
-      def setOnDragEnter(value: DragEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
+      inline def setOnDragEnter(value: DragEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
+      inline def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
       
-      @scala.inline
-      def setOnDragExit(value: DragEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
+      inline def setOnDragExit(value: DragEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragExitUndefined: Self = StObject.set(x, "onDragExit", js.undefined)
+      inline def setOnDragExitUndefined: Self = StObject.set(x, "onDragExit", js.undefined)
       
-      @scala.inline
-      def setOnDragLeave(value: DragEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
+      inline def setOnDragLeave(value: DragEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
+      inline def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
       
-      @scala.inline
-      def setOnDragOver(value: DragEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
+      inline def setOnDragOver(value: DragEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
+      inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
       
-      @scala.inline
-      def setOnDragStart(value: DragEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      inline def setOnDragStart(value: DragEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
+      inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
       
-      @scala.inline
-      def setOnDrop(value: DragEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
+      inline def setOnDrop(value: DragEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
+      inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
-      @scala.inline
-      def setOnDurationChange(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
+      inline def setOnDurationChange(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
+      inline def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
       
-      @scala.inline
-      def setOnEmptied(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
+      inline def setOnEmptied(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
+      inline def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
       
-      @scala.inline
-      def setOnEncrypted(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
+      inline def setOnEncrypted(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
+      inline def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
       
-      @scala.inline
-      def setOnEnded(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
+      inline def setOnEnded(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
+      inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
       
-      @scala.inline
-      def setOnError(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: FocusEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnInput(value: FormEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: FormEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
+      inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
-      @scala.inline
-      def setOnInvalid(value: FormEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+      inline def setOnInvalid(value: FormEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
+      inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnKeyPress(value: KeyboardEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+      inline def setOnKeyPress(value: KeyboardEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
+      inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
       
-      @scala.inline
-      def setOnKeyUp(value: KeyboardEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      inline def setOnKeyUp(value: KeyboardEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
+      inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+      inline def setOnLoad(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadStart(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
+      inline def setOnLoadStart(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
+      inline def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setOnLoadedData(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
+      inline def setOnLoadedData(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
+      inline def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
       
-      @scala.inline
-      def setOnLoadedMetadata(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
+      inline def setOnLoadedMetadata(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
+      inline def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
       
-      @scala.inline
-      def setOnMouseDown(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+      inline def setOnMouseDown(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
+      inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
       
-      @scala.inline
-      def setOnMouseEnter(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnMouseLeave(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      @scala.inline
-      def setOnMouseMove(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+      inline def setOnMouseMove(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
+      inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
-      @scala.inline
-      def setOnMouseOut(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
+      inline def setOnMouseOut(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
+      inline def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
       
-      @scala.inline
-      def setOnMouseOver(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
+      inline def setOnMouseOver(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
+      inline def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
       
-      @scala.inline
-      def setOnMouseUp(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+      inline def setOnMouseUp(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
+      inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
-      @scala.inline
-      def setOnPaste(value: ClipboardEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
+      inline def setOnPaste(value: ClipboardEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
+      inline def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
       
-      @scala.inline
-      def setOnPause(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
+      inline def setOnPause(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
+      inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
       
-      @scala.inline
-      def setOnPlay(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
+      inline def setOnPlay(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
+      inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
       
-      @scala.inline
-      def setOnPlaying(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
+      inline def setOnPlaying(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
+      inline def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
       
-      @scala.inline
-      def setOnPointerCancel(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
+      inline def setOnPointerCancel(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
+      inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
       
-      @scala.inline
-      def setOnPointerDown(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+      inline def setOnPointerDown(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
+      inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
       
-      @scala.inline
-      def setOnPointerEnter(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+      inline def setOnPointerEnter(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
+      inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
       
-      @scala.inline
-      def setOnPointerLeave(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+      inline def setOnPointerLeave(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
+      inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
       
-      @scala.inline
-      def setOnPointerMove(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+      inline def setOnPointerMove(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
+      inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
       
-      @scala.inline
-      def setOnPointerOut(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
+      inline def setOnPointerOut(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
+      inline def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
       
-      @scala.inline
-      def setOnPointerOver(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
+      inline def setOnPointerOver(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
+      inline def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
       
-      @scala.inline
-      def setOnPointerUp(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+      inline def setOnPointerUp(value: PointerEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
+      inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
       
-      @scala.inline
-      def setOnProgress(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+      inline def setOnProgress(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+      inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
       
-      @scala.inline
-      def setOnRateChange(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
+      inline def setOnRateChange(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
+      inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
       
-      @scala.inline
-      def setOnReset(value: FormEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      inline def setOnReset(value: FormEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
-      @scala.inline
-      def setOnScroll(value: UIEvent[HTMLButtonElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: UIEvent[HTMLButtonElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+      inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      @scala.inline
-      def setOnSeeked(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
+      inline def setOnSeeked(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
+      inline def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
       
-      @scala.inline
-      def setOnSeeking(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
+      inline def setOnSeeking(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
+      inline def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setOnStalled(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
+      inline def setOnStalled(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
+      inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
-      @scala.inline
-      def setOnSubmit(value: FormEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      inline def setOnSubmit(value: FormEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
+      inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
-      @scala.inline
-      def setOnSuspend(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
+      inline def setOnSuspend(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
+      inline def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
       
-      @scala.inline
-      def setOnTimeUpdate(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
+      inline def setOnTimeUpdate(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
+      inline def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
       
-      @scala.inline
-      def setOnTouchCancel(value: TouchEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
+      inline def setOnTouchCancel(value: TouchEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
+      inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
       
-      @scala.inline
-      def setOnTouchEnd(value: TouchEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+      inline def setOnTouchEnd(value: TouchEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
+      inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
       
-      @scala.inline
-      def setOnTouchMove(value: TouchEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+      inline def setOnTouchMove(value: TouchEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
+      inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
       
-      @scala.inline
-      def setOnTouchStart(value: TouchEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      inline def setOnTouchStart(value: TouchEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+      inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
       
-      @scala.inline
-      def setOnTransitionEnd(value: TransitionEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
+      inline def setOnTransitionEnd(value: TransitionEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
+      inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
       
-      @scala.inline
-      def setOnVolumeChange(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
+      inline def setOnVolumeChange(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
+      inline def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
       
-      @scala.inline
-      def setOnWaiting(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
+      inline def setOnWaiting(value: SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
+      inline def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
       
-      @scala.inline
-      def setOnWheel(value: WheelEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
+      inline def setOnWheel(value: WheelEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
+      inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      @scala.inline
-      def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
+      inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
+      inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      @scala.inline
-      def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
+      inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+      inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      @scala.inline
-      def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+      inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
+      inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
       
-      @scala.inline
-      def setSpellCheck(value: Booleanish): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
+      inline def setSpellCheck(value: Booleanish): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
+      inline def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSuppressContentEditableWarning(value: Boolean): Self = StObject.set(x, "suppressContentEditableWarning", value.asInstanceOf[js.Any])
+      inline def setSuppressContentEditableWarning(value: Boolean): Self = StObject.set(x, "suppressContentEditableWarning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressContentEditableWarningUndefined: Self = StObject.set(x, "suppressContentEditableWarning", js.undefined)
+      inline def setSuppressContentEditableWarningUndefined: Self = StObject.set(x, "suppressContentEditableWarning", js.undefined)
       
-      @scala.inline
-      def setSuppressHydrationWarning(value: Boolean): Self = StObject.set(x, "suppressHydrationWarning", value.asInstanceOf[js.Any])
+      inline def setSuppressHydrationWarning(value: Boolean): Self = StObject.set(x, "suppressHydrationWarning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
+      inline def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTranslate(value: typings.react.reactStrings.yes | typings.react.reactStrings.no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: typings.react.reactStrings.yes | typings.react.reactStrings.no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+      inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      @scala.inline
-      def setType(value: submit | reset | typings.react.reactStrings.button): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: submit | reset | typings.react.reactStrings.button): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setTypeof(value: String): Self = StObject.set(x, "typeof", value.asInstanceOf[js.Any])
+      inline def setTypeof(value: String): Self = StObject.set(x, "typeof", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
+      inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      @scala.inline
-      def setUnselectable(value: typings.react.reactStrings.on | typings.react.reactStrings.off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: typings.react.reactStrings.on | typings.react.reactStrings.off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
+      inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
-      @scala.inline
-      def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
       
-      @scala.inline
-      def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
+      inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+      inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
   
@@ -3657,23 +2801,17 @@ object buttonButtonMod {
   trait ButtonKind extends StObject
   object ButtonKind {
     
-    @scala.inline
-    def danger: typings.carbonComponentsReact.carbonComponentsReactStrings.danger = "danger".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.danger]
+    inline def danger: typings.carbonComponentsReact.carbonComponentsReactStrings.danger = "danger".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.danger]
     
-    @scala.inline
-    def `danger--primary`: typings.carbonComponentsReact.carbonComponentsReactStrings.`danger--primary` = "danger--primary".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.`danger--primary`]
+    inline def `danger--primary`: typings.carbonComponentsReact.carbonComponentsReactStrings.`danger--primary` = "danger--primary".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.`danger--primary`]
     
-    @scala.inline
-    def ghost: typings.carbonComponentsReact.carbonComponentsReactStrings.ghost = "ghost".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.ghost]
+    inline def ghost: typings.carbonComponentsReact.carbonComponentsReactStrings.ghost = "ghost".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.ghost]
     
-    @scala.inline
-    def primary: typings.carbonComponentsReact.carbonComponentsReactStrings.primary = "primary".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.primary]
+    inline def primary: typings.carbonComponentsReact.carbonComponentsReactStrings.primary = "primary".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.primary]
     
-    @scala.inline
-    def secondary: typings.carbonComponentsReact.carbonComponentsReactStrings.secondary = "secondary".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.secondary]
+    inline def secondary: typings.carbonComponentsReact.carbonComponentsReactStrings.secondary = "secondary".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.secondary]
     
-    @scala.inline
-    def tertiary: typings.carbonComponentsReact.carbonComponentsReactStrings.tertiary = "tertiary".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.tertiary]
+    inline def tertiary: typings.carbonComponentsReact.carbonComponentsReactStrings.tertiary = "tertiary".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.tertiary]
   }
   
   trait ButtonKindProps extends StObject {
@@ -3682,20 +2820,16 @@ object buttonButtonMod {
   }
   object ButtonKindProps {
     
-    @scala.inline
-    def apply(): ButtonKindProps = {
+    inline def apply(): ButtonKindProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonKindProps]
     }
     
-    @scala.inline
-    implicit class ButtonKindPropsMutableBuilder[Self <: ButtonKindProps] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonKindProps](x: Self) {
       
-      @scala.inline
-      def setKind(value: ButtonKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: ButtonKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     }
   }
   
@@ -3711,32 +2845,24 @@ object buttonButtonMod {
   }
   object ButtonRenderIconRenderProps {
     
-    @scala.inline
-    def apply(): ButtonRenderIconRenderProps = {
+    inline def apply(): ButtonRenderIconRenderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonRenderIconRenderProps]
     }
     
-    @scala.inline
-    implicit class ButtonRenderIconRenderPropsMutableBuilder[Self <: ButtonRenderIconRenderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonRenderIconRenderProps](x: Self) {
       
-      @scala.inline
-      def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
+      inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      @scala.inline
-      def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
   
@@ -3751,23 +2877,17 @@ object buttonButtonMod {
   trait ButtonSize extends StObject
   object ButtonSize {
     
-    @scala.inline
-    def default: typings.carbonComponentsReact.carbonComponentsReactStrings.default = "default".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.default]
+    inline def default: typings.carbonComponentsReact.carbonComponentsReactStrings.default = "default".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.default]
     
-    @scala.inline
-    def field: typings.carbonComponentsReact.carbonComponentsReactStrings.field = "field".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.field]
+    inline def field: typings.carbonComponentsReact.carbonComponentsReactStrings.field = "field".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.field]
     
-    @scala.inline
-    def lg: typings.carbonComponentsReact.carbonComponentsReactStrings.lg = "lg".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.lg]
+    inline def lg: typings.carbonComponentsReact.carbonComponentsReactStrings.lg = "lg".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.lg]
     
-    @scala.inline
-    def sm: typings.carbonComponentsReact.carbonComponentsReactStrings.sm = "sm".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.sm]
+    inline def sm: typings.carbonComponentsReact.carbonComponentsReactStrings.sm = "sm".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.sm]
     
-    @scala.inline
-    def small: typings.carbonComponentsReact.carbonComponentsReactStrings.small = "small".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.small]
+    inline def small: typings.carbonComponentsReact.carbonComponentsReactStrings.small = "small".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.small]
     
-    @scala.inline
-    def xl: typings.carbonComponentsReact.carbonComponentsReactStrings.xl = "xl".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.xl]
+    inline def xl: typings.carbonComponentsReact.carbonComponentsReactStrings.xl = "xl".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.xl]
   }
   
   type SafeProps[P] = Omit[

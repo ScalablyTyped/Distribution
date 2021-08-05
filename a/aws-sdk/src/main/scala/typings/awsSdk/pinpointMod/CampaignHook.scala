@@ -23,31 +23,23 @@ trait CampaignHook extends StObject {
 }
 object CampaignHook {
   
-  @scala.inline
-  def apply(): CampaignHook = {
+  inline def apply(): CampaignHook = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CampaignHook]
   }
   
-  @scala.inline
-  implicit class CampaignHookMutableBuilder[Self <: CampaignHook] (val x: Self) extends AnyVal {
+  extension [Self <: CampaignHook](x: Self) {
     
-    @scala.inline
-    def setLambdaFunctionName(value: string): Self = StObject.set(x, "LambdaFunctionName", value.asInstanceOf[js.Any])
+    inline def setLambdaFunctionName(value: string): Self = StObject.set(x, "LambdaFunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaFunctionNameUndefined: Self = StObject.set(x, "LambdaFunctionName", js.undefined)
+    inline def setLambdaFunctionNameUndefined: Self = StObject.set(x, "LambdaFunctionName", js.undefined)
     
-    @scala.inline
-    def setMode(value: Mode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Mode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
-    @scala.inline
-    def setWebUrl(value: string): Self = StObject.set(x, "WebUrl", value.asInstanceOf[js.Any])
+    inline def setWebUrl(value: string): Self = StObject.set(x, "WebUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebUrlUndefined: Self = StObject.set(x, "WebUrl", js.undefined)
+    inline def setWebUrlUndefined: Self = StObject.set(x, "WebUrl", js.undefined)
   }
 }

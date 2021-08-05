@@ -13,10 +13,8 @@ object commonProductMod {
   trait Product extends StObject
   object Product {
     
-    @scala.inline
-    def chrome: typings.puppeteerCore.puppeteerCoreStrings.chrome = "chrome".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.chrome]
+    inline def chrome: typings.puppeteerCore.puppeteerCoreStrings.chrome = "chrome".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.chrome]
     
-    @scala.inline
-    def firefox: typings.puppeteerCore.puppeteerCoreStrings.firefox = "firefox".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.firefox]
+    inline def firefox: typings.puppeteerCore.puppeteerCoreStrings.firefox = "firefox".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.firefox]
   }
 }

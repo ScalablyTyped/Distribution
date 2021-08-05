@@ -19,43 +19,31 @@ trait FromTag extends StObject {
 }
 object FromTag {
   
-  @scala.inline
-  def apply(): FromTag = {
+  inline def apply(): FromTag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FromTag]
   }
   
-  @scala.inline
-  implicit class FromTagMutableBuilder[Self <: FromTag] (val x: Self) extends AnyVal {
+  extension [Self <: FromTag](x: Self) {
     
-    @scala.inline
-    def setFromDisplayName(value: String): Self = StObject.set(x, "fromDisplayName", value.asInstanceOf[js.Any])
+    inline def setFromDisplayName(value: String): Self = StObject.set(x, "fromDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromDisplayNameUndefined: Self = StObject.set(x, "fromDisplayName", js.undefined)
+    inline def setFromDisplayNameUndefined: Self = StObject.set(x, "fromDisplayName", js.undefined)
     
-    @scala.inline
-    def setFromTag(value: String): Self = StObject.set(x, "fromTag", value.asInstanceOf[js.Any])
+    inline def setFromTag(value: String): Self = StObject.set(x, "fromTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromTagUndefined: Self = StObject.set(x, "fromTag", js.undefined)
+    inline def setFromTagUndefined: Self = StObject.set(x, "fromTag", js.undefined)
     
-    @scala.inline
-    def setFromUri(value: URI): Self = StObject.set(x, "fromUri", value.asInstanceOf[js.Any])
+    inline def setFromUri(value: URI): Self = StObject.set(x, "fromUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUriUndefined: Self = StObject.set(x, "fromUri", js.undefined)
+    inline def setFromUriUndefined: Self = StObject.set(x, "fromUri", js.undefined)
     
-    @scala.inline
-    def setToDisplayName(value: String): Self = StObject.set(x, "toDisplayName", value.asInstanceOf[js.Any])
+    inline def setToDisplayName(value: String): Self = StObject.set(x, "toDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToDisplayNameUndefined: Self = StObject.set(x, "toDisplayName", js.undefined)
+    inline def setToDisplayNameUndefined: Self = StObject.set(x, "toDisplayName", js.undefined)
     
-    @scala.inline
-    def setToUri(value: URI): Self = StObject.set(x, "toUri", value.asInstanceOf[js.Any])
+    inline def setToUri(value: URI): Self = StObject.set(x, "toUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUriUndefined: Self = StObject.set(x, "toUri", js.undefined)
+    inline def setToUriUndefined: Self = StObject.set(x, "toUri", js.undefined)
   }
 }

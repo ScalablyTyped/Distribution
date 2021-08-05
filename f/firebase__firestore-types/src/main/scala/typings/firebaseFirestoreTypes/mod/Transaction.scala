@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/firestore-types", "Transaction")
 @js.native
-class Transaction protected () extends StObject {
+/* private */ class Transaction () extends StObject {
   
   def delete(documentRef: DocumentReference[js.Any]): Transaction = js.native
   

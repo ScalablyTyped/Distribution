@@ -22,11 +22,11 @@ object errorsMod {
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type K extends keyof ErrorParams ? [ErrorParams[K]] : [] is not an array type */ data: js.Array[js.Any]
     ): FirebaseError = js.native
     
-    val errors: js.Any = js.native
+    /* private */ val errors: js.Any = js.native
     
-    val service: js.Any = js.native
+    /* private */ val service: js.Any = js.native
     
-    val serviceName: js.Any = js.native
+    /* private */ val serviceName: js.Any = js.native
   }
   
   @JSImport("@firebase/util/dist/src/errors", "FirebaseError")

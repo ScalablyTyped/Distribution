@@ -16,13 +16,13 @@ object tagExclusionMod {
   class TagExclusion () extends Exclusion[ITagExclusionDescriptor] {
     def this(descriptor: Partial[ITagExclusionDescriptor]) = this()
     
-    val contentTags: js.Any = js.native
+    /* private */ val contentTags: js.Any = js.native
     
-    val existenceTags: js.Any = js.native
+    /* private */ val existenceTags: js.Any = js.native
     
-    var getDocumentationNode: js.Any = js.native
+    /* private */ var getDocumentationNode: js.Any = js.native
     
-    var parseTagsWithContents: js.Any = js.native
+    /* private */ var parseTagsWithContents: js.Any = js.native
   }
   
   type IContentTags = StringDictionary[String]
@@ -35,20 +35,16 @@ object tagExclusionMod {
   }
   object ITagExclusionDescriptor {
     
-    @scala.inline
-    def apply(): ITagExclusionDescriptor = {
+    inline def apply(): ITagExclusionDescriptor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITagExclusionDescriptor]
     }
     
-    @scala.inline
-    implicit class ITagExclusionDescriptorMutableBuilder[Self <: ITagExclusionDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: ITagExclusionDescriptor](x: Self) {
       
-      @scala.inline
-      def setTags(value: Content): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Content): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

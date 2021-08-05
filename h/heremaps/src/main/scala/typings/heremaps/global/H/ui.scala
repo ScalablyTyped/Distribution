@@ -172,12 +172,9 @@ object ui {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createDefault(map: typings.heremaps.H.Map_, mapTypes: DefaultLayers): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
-    @scala.inline
-    def createDefault(map: typings.heremaps.H.Map_, mapTypes: DefaultLayers, opt_locale: String): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any], opt_locale.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
-    @scala.inline
-    def createDefault(map: typings.heremaps.H.Map_, mapTypes: DefaultLayers, opt_locale: Localization): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any], opt_locale.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
+    inline def createDefault(map: typings.heremaps.H.Map_, mapTypes: DefaultLayers): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
+    inline def createDefault(map: typings.heremaps.H.Map_, mapTypes: DefaultLayers, opt_locale: String): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any], opt_locale.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
+    inline def createDefault(map: typings.heremaps.H.Map_, mapTypes: DefaultLayers, opt_locale: Localization): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any], opt_locale.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
     /**
       * This function creates the default UI including the zoom control,
       * map settings control and scalebar and panorama discovery control.
@@ -202,12 +199,9 @@ object ui {
       * @returns {H.ui.UI} - the UI instance configured with the default controls
       */
     /* static member */
-    @scala.inline
-    def createDefault(map: typings.heremaps.H.Map_, mapTypes: MapTypes): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
-    @scala.inline
-    def createDefault(map: typings.heremaps.H.Map_, mapTypes: MapTypes, opt_locale: String): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any], opt_locale.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
-    @scala.inline
-    def createDefault(map: typings.heremaps.H.Map_, mapTypes: MapTypes, opt_locale: Localization): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any], opt_locale.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
+    inline def createDefault(map: typings.heremaps.H.Map_, mapTypes: MapTypes): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
+    inline def createDefault(map: typings.heremaps.H.Map_, mapTypes: MapTypes, opt_locale: String): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any], opt_locale.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
+    inline def createDefault(map: typings.heremaps.H.Map_, mapTypes: MapTypes, opt_locale: Localization): typings.heremaps.H.ui.UI = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefault")(map.asInstanceOf[js.Any], mapTypes.asInstanceOf[js.Any], opt_locale.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.ui.UI]
   }
   
   /**

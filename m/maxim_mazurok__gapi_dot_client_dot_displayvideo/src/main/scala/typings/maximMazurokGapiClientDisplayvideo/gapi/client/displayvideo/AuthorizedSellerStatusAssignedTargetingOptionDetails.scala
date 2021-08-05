@@ -14,25 +14,19 @@ trait AuthorizedSellerStatusAssignedTargetingOptionDetails extends StObject {
 }
 object AuthorizedSellerStatusAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): AuthorizedSellerStatusAssignedTargetingOptionDetails = {
+  inline def apply(): AuthorizedSellerStatusAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthorizedSellerStatusAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class AuthorizedSellerStatusAssignedTargetingOptionDetailsMutableBuilder[Self <: AuthorizedSellerStatusAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizedSellerStatusAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setAuthorizedSellerStatus(value: String): Self = StObject.set(x, "authorizedSellerStatus", value.asInstanceOf[js.Any])
+    inline def setAuthorizedSellerStatus(value: String): Self = StObject.set(x, "authorizedSellerStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizedSellerStatusUndefined: Self = StObject.set(x, "authorizedSellerStatus", js.undefined)
+    inline def setAuthorizedSellerStatusUndefined: Self = StObject.set(x, "authorizedSellerStatus", js.undefined)
     
-    @scala.inline
-    def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
+    inline def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
+    inline def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
   }
 }

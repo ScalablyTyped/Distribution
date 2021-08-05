@@ -15,25 +15,19 @@ trait ConfigDetails extends StObject {
 }
 object ConfigDetails {
   
-  @scala.inline
-  def apply(): ConfigDetails = {
+  inline def apply(): ConfigDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigDetails]
   }
   
-  @scala.inline
-  implicit class ConfigDetailsMutableBuilder[Self <: ConfigDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigDetails](x: Self) {
     
-    @scala.inline
-    def setAntennaDemodDecodeDetails(value: AntennaDemodDecodeDetails): Self = StObject.set(x, "antennaDemodDecodeDetails", value.asInstanceOf[js.Any])
+    inline def setAntennaDemodDecodeDetails(value: AntennaDemodDecodeDetails): Self = StObject.set(x, "antennaDemodDecodeDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntennaDemodDecodeDetailsUndefined: Self = StObject.set(x, "antennaDemodDecodeDetails", js.undefined)
+    inline def setAntennaDemodDecodeDetailsUndefined: Self = StObject.set(x, "antennaDemodDecodeDetails", js.undefined)
     
-    @scala.inline
-    def setEndpointDetails(value: EndpointDetails): Self = StObject.set(x, "endpointDetails", value.asInstanceOf[js.Any])
+    inline def setEndpointDetails(value: EndpointDetails): Self = StObject.set(x, "endpointDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointDetailsUndefined: Self = StObject.set(x, "endpointDetails", js.undefined)
+    inline def setEndpointDetailsUndefined: Self = StObject.set(x, "endpointDetails", js.undefined)
   }
 }

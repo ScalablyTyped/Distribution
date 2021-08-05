@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ɵangularPackagesFormsFormsN () extends StObject {
   
-  var _accessors: js.Any = js.native
+  /* private */ var _accessors: js.Any = js.native
   
-  var _isSameGroup: js.Any = js.native
+  /* private */ var _isSameGroup: js.Any = js.native
   
   /**
     * @description

@@ -13,17 +13,14 @@ object anon {
   }
   object Persist {
     
-    @scala.inline
-    def apply(_persist: PersistState): Persist = {
+    inline def apply(_persist: PersistState): Persist = {
       val __obj = js.Dynamic.literal(_persist = _persist.asInstanceOf[js.Any])
       __obj.asInstanceOf[Persist]
     }
     
-    @scala.inline
-    implicit class PersistMutableBuilder[Self <: Persist] (val x: Self) extends AnyVal {
+    extension [Self <: Persist](x: Self) {
       
-      @scala.inline
-      def set_persist(value: PersistState): Self = StObject.set(x, "_persist", value.asInstanceOf[js.Any])
+      inline def set_persist(value: PersistState): Self = StObject.set(x, "_persist", value.asInstanceOf[js.Any])
     }
   }
 }

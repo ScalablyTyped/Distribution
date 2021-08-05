@@ -16,20 +16,16 @@ trait PublicKeyCredentialParameters extends StObject {
 }
 object PublicKeyCredentialParameters {
   
-  @scala.inline
-  def apply(alg: Double): PublicKeyCredentialParameters = {
+  inline def apply(alg: Double): PublicKeyCredentialParameters = {
     val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("public-key")
     __obj.asInstanceOf[PublicKeyCredentialParameters]
   }
   
-  @scala.inline
-  implicit class PublicKeyCredentialParametersMutableBuilder[Self <: PublicKeyCredentialParameters] (val x: Self) extends AnyVal {
+  extension [Self <: PublicKeyCredentialParameters](x: Self) {
     
-    @scala.inline
-    def setAlg(value: Double): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+    inline def setAlg(value: Double): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `public-key`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `public-key`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

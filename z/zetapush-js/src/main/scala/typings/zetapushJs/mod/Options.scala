@@ -18,43 +18,31 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(sandboxId: String): Options = {
+  inline def apply(sandboxId: String): Options = {
     val __obj = js.Dynamic.literal(sandboxId = sandboxId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setApiUrl(value: String): Self = StObject.set(x, "apiUrl", value.asInstanceOf[js.Any])
+    inline def setApiUrl(value: String): Self = StObject.set(x, "apiUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiUrlUndefined: Self = StObject.set(x, "apiUrl", js.undefined)
+    inline def setApiUrlUndefined: Self = StObject.set(x, "apiUrl", js.undefined)
     
-    @scala.inline
-    def setForceHttps(value: Boolean): Self = StObject.set(x, "forceHttps", value.asInstanceOf[js.Any])
+    inline def setForceHttps(value: Boolean): Self = StObject.set(x, "forceHttps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceHttpsUndefined: Self = StObject.set(x, "forceHttps", js.undefined)
+    inline def setForceHttpsUndefined: Self = StObject.set(x, "forceHttps", js.undefined)
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setSandboxId(value: String): Self = StObject.set(x, "sandboxId", value.asInstanceOf[js.Any])
+    inline def setSandboxId(value: String): Self = StObject.set(x, "sandboxId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransports(value: js.Array[js.Any]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
+    inline def setTransports(value: js.Array[js.Any]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
+    inline def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
     
-    @scala.inline
-    def setTransportsVarargs(value: js.Any*): Self = StObject.set(x, "transports", js.Array(value :_*))
+    inline def setTransportsVarargs(value: js.Any*): Self = StObject.set(x, "transports", js.Array(value :_*))
   }
 }

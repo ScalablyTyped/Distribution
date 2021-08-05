@@ -23,34 +23,25 @@ trait DescribeJobQueuesRequest extends StObject {
 }
 object DescribeJobQueuesRequest {
   
-  @scala.inline
-  def apply(): DescribeJobQueuesRequest = {
+  inline def apply(): DescribeJobQueuesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeJobQueuesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeJobQueuesRequestMutableBuilder[Self <: DescribeJobQueuesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeJobQueuesRequest](x: Self) {
     
-    @scala.inline
-    def setJobQueues(value: StringList): Self = StObject.set(x, "jobQueues", value.asInstanceOf[js.Any])
+    inline def setJobQueues(value: StringList): Self = StObject.set(x, "jobQueues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobQueuesUndefined: Self = StObject.set(x, "jobQueues", js.undefined)
+    inline def setJobQueuesUndefined: Self = StObject.set(x, "jobQueues", js.undefined)
     
-    @scala.inline
-    def setJobQueuesVarargs(value: String*): Self = StObject.set(x, "jobQueues", js.Array(value :_*))
+    inline def setJobQueuesVarargs(value: String*): Self = StObject.set(x, "jobQueues", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait ICoreWindowDialogFactory extends StObject {
 }
 object ICoreWindowDialogFactory {
   
-  @scala.inline
-  def apply(createWithTitle: String => CoreWindowDialog): ICoreWindowDialogFactory = {
+  inline def apply(createWithTitle: String => CoreWindowDialog): ICoreWindowDialogFactory = {
     val __obj = js.Dynamic.literal(createWithTitle = js.Any.fromFunction1(createWithTitle))
     __obj.asInstanceOf[ICoreWindowDialogFactory]
   }
   
-  @scala.inline
-  implicit class ICoreWindowDialogFactoryMutableBuilder[Self <: ICoreWindowDialogFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ICoreWindowDialogFactory](x: Self) {
     
-    @scala.inline
-    def setCreateWithTitle(value: String => CoreWindowDialog): Self = StObject.set(x, "createWithTitle", js.Any.fromFunction1(value))
+    inline def setCreateWithTitle(value: String => CoreWindowDialog): Self = StObject.set(x, "createWithTitle", js.Any.fromFunction1(value))
   }
 }

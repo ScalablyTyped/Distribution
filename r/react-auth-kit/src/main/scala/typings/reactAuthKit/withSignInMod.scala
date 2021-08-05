@@ -13,8 +13,7 @@ object withSignInMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[P /* <: withSignInProps */](Component: ComponentType[P]): FC[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[FC[P]]
+  inline def default[P /* <: withSignInProps */](Component: ComponentType[P]): FC[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[FC[P]]
   
   trait withSignInProps extends StObject {
     
@@ -22,17 +21,14 @@ object withSignInMod {
   }
   object withSignInProps {
     
-    @scala.inline
-    def apply(signIn: signInFunctionParams => Boolean): withSignInProps = {
+    inline def apply(signIn: signInFunctionParams => Boolean): withSignInProps = {
       val __obj = js.Dynamic.literal(signIn = js.Any.fromFunction1(signIn))
       __obj.asInstanceOf[withSignInProps]
     }
     
-    @scala.inline
-    implicit class withSignInPropsMutableBuilder[Self <: withSignInProps] (val x: Self) extends AnyVal {
+    extension [Self <: withSignInProps](x: Self) {
       
-      @scala.inline
-      def setSignIn(value: signInFunctionParams => Boolean): Self = StObject.set(x, "signIn", js.Any.fromFunction1(value))
+      inline def setSignIn(value: signInFunctionParams => Boolean): Self = StObject.set(x, "signIn", js.Any.fromFunction1(value))
     }
   }
 }

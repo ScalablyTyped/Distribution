@@ -10,6 +10,5 @@ object controlledMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isControlled[P](props: P, valueProp: /* keyof P */ String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isControlled")(props.asInstanceOf[js.Any], valueProp.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isControlled[P](props: P, valueProp: /* keyof P */ String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isControlled")(props.asInstanceOf[js.Any], valueProp.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

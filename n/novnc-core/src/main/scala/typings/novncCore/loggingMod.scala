@@ -15,24 +15,17 @@ object loggingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLogging(): debug | info | warn | error | none = ^.asInstanceOf[js.Dynamic].applyDynamic("get_logging")().asInstanceOf[debug | info | warn | error | none]
+  inline def getLogging(): debug | info | warn | error | none = ^.asInstanceOf[js.Dynamic].applyDynamic("get_logging")().asInstanceOf[debug | info | warn | error | none]
   
-  @scala.inline
-  def initLogging(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init_logging")().asInstanceOf[Unit]
+  inline def initLogging(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init_logging")().asInstanceOf[Unit]
   
-  @scala.inline
-  def initLogging_debug(level: debug): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init_logging")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initLogging_debug(level: debug): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init_logging")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def initLogging_error(level: error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init_logging")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initLogging_error(level: error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init_logging")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def initLogging_info(level: info): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init_logging")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initLogging_info(level: info): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init_logging")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def initLogging_none(level: none): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init_logging")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initLogging_none(level: none): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init_logging")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def initLogging_warn(level: warn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init_logging")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initLogging_warn(level: warn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init_logging")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

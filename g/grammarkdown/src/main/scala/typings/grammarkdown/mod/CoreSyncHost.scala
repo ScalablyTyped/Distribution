@@ -29,22 +29,16 @@ object CoreSyncHost {
     * @param file The file name for the content.
     * @param hostFallback An optional host to use as a fallback for operations not supported by this host.
     */
-  @scala.inline
-  def forFile(content: String): typings.grammarkdown.hostMod.StringSyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any]).asInstanceOf[typings.grammarkdown.hostMod.StringSyncHost]
-  @scala.inline
-  def forFile(content: String, file: String): typings.grammarkdown.hostMod.StringSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[typings.grammarkdown.hostMod.StringSyncHost]
-  @scala.inline
-  def forFile(content: String, file: String, hostFallback: typings.grammarkdown.hostMod.CoreSyncHost): typings.grammarkdown.hostMod.StringSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[typings.grammarkdown.hostMod.StringSyncHost]
-  @scala.inline
-  def forFile(content: String, file: Unit, hostFallback: typings.grammarkdown.hostMod.CoreSyncHost): typings.grammarkdown.hostMod.StringSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[typings.grammarkdown.hostMod.StringSyncHost]
+  inline def forFile(content: String): typings.grammarkdown.hostMod.StringSyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any]).asInstanceOf[typings.grammarkdown.hostMod.StringSyncHost]
+  inline def forFile(content: String, file: String): typings.grammarkdown.hostMod.StringSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[typings.grammarkdown.hostMod.StringSyncHost]
+  inline def forFile(content: String, file: String, hostFallback: typings.grammarkdown.hostMod.CoreSyncHost): typings.grammarkdown.hostMod.StringSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[typings.grammarkdown.hostMod.StringSyncHost]
+  inline def forFile(content: String, file: Unit, hostFallback: typings.grammarkdown.hostMod.CoreSyncHost): typings.grammarkdown.hostMod.StringSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[typings.grammarkdown.hostMod.StringSyncHost]
   
   /**
     * Creates a `CoreSyncHost`.
     * @param options The options used to configure the host.
     * @param hostFallback An optional host to use as a fallback for operations not supported by this host.
     */
-  @scala.inline
-  def from(options: CoreSyncHostOptions): typings.grammarkdown.hostMod.CoreSyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(options.asInstanceOf[js.Any]).asInstanceOf[typings.grammarkdown.hostMod.CoreSyncHost]
-  @scala.inline
-  def from(options: CoreSyncHostOptions, hostFallback: typings.grammarkdown.hostMod.CoreSyncHost): typings.grammarkdown.hostMod.CoreSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[typings.grammarkdown.hostMod.CoreSyncHost]
+  inline def from(options: CoreSyncHostOptions): typings.grammarkdown.hostMod.CoreSyncHost = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(options.asInstanceOf[js.Any]).asInstanceOf[typings.grammarkdown.hostMod.CoreSyncHost]
+  inline def from(options: CoreSyncHostOptions, hostFallback: typings.grammarkdown.hostMod.CoreSyncHost): typings.grammarkdown.hostMod.CoreSyncHost = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[typings.grammarkdown.hostMod.CoreSyncHost]
 }

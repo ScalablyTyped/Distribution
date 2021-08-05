@@ -38,43 +38,31 @@ trait CreateSavingsPlanRequest extends StObject {
 }
 object CreateSavingsPlanRequest {
   
-  @scala.inline
-  def apply(commitment: Amount, savingsPlanOfferingId: SavingsPlanOfferingId): CreateSavingsPlanRequest = {
+  inline def apply(commitment: Amount, savingsPlanOfferingId: SavingsPlanOfferingId): CreateSavingsPlanRequest = {
     val __obj = js.Dynamic.literal(commitment = commitment.asInstanceOf[js.Any], savingsPlanOfferingId = savingsPlanOfferingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSavingsPlanRequest]
   }
   
-  @scala.inline
-  implicit class CreateSavingsPlanRequestMutableBuilder[Self <: CreateSavingsPlanRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSavingsPlanRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setCommitment(value: Amount): Self = StObject.set(x, "commitment", value.asInstanceOf[js.Any])
+    inline def setCommitment(value: Amount): Self = StObject.set(x, "commitment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseTime(value: DateTime): Self = StObject.set(x, "purchaseTime", value.asInstanceOf[js.Any])
+    inline def setPurchaseTime(value: DateTime): Self = StObject.set(x, "purchaseTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseTimeUndefined: Self = StObject.set(x, "purchaseTime", js.undefined)
+    inline def setPurchaseTimeUndefined: Self = StObject.set(x, "purchaseTime", js.undefined)
     
-    @scala.inline
-    def setSavingsPlanOfferingId(value: SavingsPlanOfferingId): Self = StObject.set(x, "savingsPlanOfferingId", value.asInstanceOf[js.Any])
+    inline def setSavingsPlanOfferingId(value: SavingsPlanOfferingId): Self = StObject.set(x, "savingsPlanOfferingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setUpfrontPaymentAmount(value: Amount): Self = StObject.set(x, "upfrontPaymentAmount", value.asInstanceOf[js.Any])
+    inline def setUpfrontPaymentAmount(value: Amount): Self = StObject.set(x, "upfrontPaymentAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpfrontPaymentAmountUndefined: Self = StObject.set(x, "upfrontPaymentAmount", js.undefined)
+    inline def setUpfrontPaymentAmountUndefined: Self = StObject.set(x, "upfrontPaymentAmount", js.undefined)
   }
 }

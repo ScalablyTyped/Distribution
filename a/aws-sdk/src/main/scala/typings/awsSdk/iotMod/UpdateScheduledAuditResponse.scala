@@ -13,19 +13,15 @@ trait UpdateScheduledAuditResponse extends StObject {
 }
 object UpdateScheduledAuditResponse {
   
-  @scala.inline
-  def apply(): UpdateScheduledAuditResponse = {
+  inline def apply(): UpdateScheduledAuditResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateScheduledAuditResponse]
   }
   
-  @scala.inline
-  implicit class UpdateScheduledAuditResponseMutableBuilder[Self <: UpdateScheduledAuditResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateScheduledAuditResponse](x: Self) {
     
-    @scala.inline
-    def setScheduledAuditArn(value: ScheduledAuditArn): Self = StObject.set(x, "scheduledAuditArn", value.asInstanceOf[js.Any])
+    inline def setScheduledAuditArn(value: ScheduledAuditArn): Self = StObject.set(x, "scheduledAuditArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledAuditArnUndefined: Self = StObject.set(x, "scheduledAuditArn", js.undefined)
+    inline def setScheduledAuditArnUndefined: Self = StObject.set(x, "scheduledAuditArn", js.undefined)
   }
 }

@@ -17,20 +17,16 @@ object anon {
   }
   object Password {
     
-    @scala.inline
-    def apply(password: String, username: String): Password = {
+    inline def apply(password: String, username: String): Password = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[Password]
     }
     
-    @scala.inline
-    implicit class PasswordMutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
+    extension [Self <: Password](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,8 +38,7 @@ object anon {
   }
   object Request {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       request: AxiosInterceptorManager[AxiosRequestConfig],
       response: AxiosInterceptorManager[AxiosResponse[js.Any]]
     ): Request = {
@@ -51,14 +46,11 @@ object anon {
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setRequest(value: AxiosInterceptorManager[AxiosRequestConfig]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: AxiosInterceptorManager[AxiosRequestConfig]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: AxiosInterceptorManager[AxiosResponse[js.Any]]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: AxiosInterceptorManager[AxiosResponse[js.Any]]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
 }

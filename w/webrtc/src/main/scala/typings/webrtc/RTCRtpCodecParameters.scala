@@ -18,28 +18,21 @@ trait RTCRtpCodecParameters extends StObject {
 }
 object RTCRtpCodecParameters {
   
-  @scala.inline
-  def apply(mimeType: String): RTCRtpCodecParameters = {
+  inline def apply(mimeType: String): RTCRtpCodecParameters = {
     val __obj = js.Dynamic.literal(mimeType = mimeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpCodecParameters]
   }
   
-  @scala.inline
-  implicit class RTCRtpCodecParametersMutableBuilder[Self <: RTCRtpCodecParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpCodecParameters](x: Self) {
     
-    @scala.inline
-    def setChannels(value: Double): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: Double): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdpFmtpLine(value: String): Self = StObject.set(x, "sdpFmtpLine", value.asInstanceOf[js.Any])
+    inline def setSdpFmtpLine(value: String): Self = StObject.set(x, "sdpFmtpLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdpFmtpLineUndefined: Self = StObject.set(x, "sdpFmtpLine", js.undefined)
+    inline def setSdpFmtpLineUndefined: Self = StObject.set(x, "sdpFmtpLine", js.undefined)
   }
 }

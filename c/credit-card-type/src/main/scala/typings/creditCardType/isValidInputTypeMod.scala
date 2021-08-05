@@ -10,6 +10,5 @@ object isValidInputTypeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isValidInputType[T](cardNumber: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidInputType")(cardNumber.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidInputType[T](cardNumber: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidInputType")(cardNumber.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

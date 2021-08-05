@@ -49,194 +49,162 @@ object outputTypesUnionMod {
   trait _OutputTypesUnion extends StObject
   object _OutputTypesUnion {
     
-    @scala.inline
-    def AbortMultipartUploadOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesAbortMultipartUploadOutputMod.AbortMultipartUploadOutput = {
+    inline def AbortMultipartUploadOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesAbortMultipartUploadOutputMod.AbortMultipartUploadOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesAbortMultipartUploadOutputMod.AbortMultipartUploadOutput]
     }
     
-    @scala.inline
-    def AbortVaultLockOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesAbortVaultLockOutputMod.AbortVaultLockOutput = {
+    inline def AbortVaultLockOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesAbortVaultLockOutputMod.AbortVaultLockOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesAbortVaultLockOutputMod.AbortVaultLockOutput]
     }
     
-    @scala.inline
-    def AddTagsToVaultOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesAddTagsToVaultOutputMod.AddTagsToVaultOutput = {
+    inline def AddTagsToVaultOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesAddTagsToVaultOutputMod.AddTagsToVaultOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesAddTagsToVaultOutputMod.AddTagsToVaultOutput]
     }
     
-    @scala.inline
-    def CompleteMultipartUploadOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesCompleteMultipartUploadOutputMod.CompleteMultipartUploadOutput = {
+    inline def CompleteMultipartUploadOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesCompleteMultipartUploadOutputMod.CompleteMultipartUploadOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesCompleteMultipartUploadOutputMod.CompleteMultipartUploadOutput]
     }
     
-    @scala.inline
-    def CompleteVaultLockOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesCompleteVaultLockOutputMod.CompleteVaultLockOutput = {
+    inline def CompleteVaultLockOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesCompleteVaultLockOutputMod.CompleteVaultLockOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesCompleteVaultLockOutputMod.CompleteVaultLockOutput]
     }
     
-    @scala.inline
-    def CreateVaultOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesCreateVaultOutputMod.CreateVaultOutput = {
+    inline def CreateVaultOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesCreateVaultOutputMod.CreateVaultOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesCreateVaultOutputMod.CreateVaultOutput]
     }
     
-    @scala.inline
-    def DeleteArchiveOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesDeleteArchiveOutputMod.DeleteArchiveOutput = {
+    inline def DeleteArchiveOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesDeleteArchiveOutputMod.DeleteArchiveOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesDeleteArchiveOutputMod.DeleteArchiveOutput]
     }
     
-    @scala.inline
-    def DeleteVaultAccessPolicyOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesDeleteVaultAccessPolicyOutputMod.DeleteVaultAccessPolicyOutput = {
+    inline def DeleteVaultAccessPolicyOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesDeleteVaultAccessPolicyOutputMod.DeleteVaultAccessPolicyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesDeleteVaultAccessPolicyOutputMod.DeleteVaultAccessPolicyOutput]
     }
     
-    @scala.inline
-    def DeleteVaultNotificationsOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesDeleteVaultNotificationsOutputMod.DeleteVaultNotificationsOutput = {
+    inline def DeleteVaultNotificationsOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesDeleteVaultNotificationsOutputMod.DeleteVaultNotificationsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesDeleteVaultNotificationsOutputMod.DeleteVaultNotificationsOutput]
     }
     
-    @scala.inline
-    def DeleteVaultOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesDeleteVaultOutputMod.DeleteVaultOutput = {
+    inline def DeleteVaultOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesDeleteVaultOutputMod.DeleteVaultOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesDeleteVaultOutputMod.DeleteVaultOutput]
     }
     
-    @scala.inline
-    def DescribeJobOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesDescribeJobOutputMod.DescribeJobOutput = {
+    inline def DescribeJobOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesDescribeJobOutputMod.DescribeJobOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesDescribeJobOutputMod.DescribeJobOutput]
     }
     
-    @scala.inline
-    def DescribeVaultOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesDescribeVaultOutputMod.DescribeVaultOutput = {
+    inline def DescribeVaultOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesDescribeVaultOutputMod.DescribeVaultOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesDescribeVaultOutputMod.DescribeVaultOutput]
     }
     
-    @scala.inline
-    def GetDataRetrievalPolicyOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesGetDataRetrievalPolicyOutputMod.GetDataRetrievalPolicyOutput = {
+    inline def GetDataRetrievalPolicyOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesGetDataRetrievalPolicyOutputMod.GetDataRetrievalPolicyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesGetDataRetrievalPolicyOutputMod.GetDataRetrievalPolicyOutput]
     }
     
-    @scala.inline
-    def GetVaultAccessPolicyOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesGetVaultAccessPolicyOutputMod.GetVaultAccessPolicyOutput = {
+    inline def GetVaultAccessPolicyOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesGetVaultAccessPolicyOutputMod.GetVaultAccessPolicyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesGetVaultAccessPolicyOutputMod.GetVaultAccessPolicyOutput]
     }
     
-    @scala.inline
-    def GetVaultLockOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesGetVaultLockOutputMod.GetVaultLockOutput = {
+    inline def GetVaultLockOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesGetVaultLockOutputMod.GetVaultLockOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesGetVaultLockOutputMod.GetVaultLockOutput]
     }
     
-    @scala.inline
-    def GetVaultNotificationsOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesGetVaultNotificationsOutputMod.GetVaultNotificationsOutput = {
+    inline def GetVaultNotificationsOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesGetVaultNotificationsOutputMod.GetVaultNotificationsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesGetVaultNotificationsOutputMod.GetVaultNotificationsOutput]
     }
     
-    @scala.inline
-    def InitiateJobOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesInitiateJobOutputMod.InitiateJobOutput = {
+    inline def InitiateJobOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesInitiateJobOutputMod.InitiateJobOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesInitiateJobOutputMod.InitiateJobOutput]
     }
     
-    @scala.inline
-    def InitiateMultipartUploadOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesInitiateMultipartUploadOutputMod.InitiateMultipartUploadOutput = {
+    inline def InitiateMultipartUploadOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesInitiateMultipartUploadOutputMod.InitiateMultipartUploadOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesInitiateMultipartUploadOutputMod.InitiateMultipartUploadOutput]
     }
     
-    @scala.inline
-    def InitiateVaultLockOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesInitiateVaultLockOutputMod.InitiateVaultLockOutput = {
+    inline def InitiateVaultLockOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesInitiateVaultLockOutputMod.InitiateVaultLockOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesInitiateVaultLockOutputMod.InitiateVaultLockOutput]
     }
     
-    @scala.inline
-    def ListJobsOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesListJobsOutputMod.ListJobsOutput = {
+    inline def ListJobsOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesListJobsOutputMod.ListJobsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesListJobsOutputMod.ListJobsOutput]
     }
     
-    @scala.inline
-    def ListMultipartUploadsOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesListMultipartUploadsOutputMod.ListMultipartUploadsOutput = {
+    inline def ListMultipartUploadsOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesListMultipartUploadsOutputMod.ListMultipartUploadsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesListMultipartUploadsOutputMod.ListMultipartUploadsOutput]
     }
     
-    @scala.inline
-    def ListPartsOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesListPartsOutputMod.ListPartsOutput = {
+    inline def ListPartsOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesListPartsOutputMod.ListPartsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesListPartsOutputMod.ListPartsOutput]
     }
     
-    @scala.inline
-    def ListProvisionedCapacityOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesListProvisionedCapacityOutputMod.ListProvisionedCapacityOutput = {
+    inline def ListProvisionedCapacityOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesListProvisionedCapacityOutputMod.ListProvisionedCapacityOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesListProvisionedCapacityOutputMod.ListProvisionedCapacityOutput]
     }
     
-    @scala.inline
-    def ListTagsForVaultOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesListTagsForVaultOutputMod.ListTagsForVaultOutput = {
+    inline def ListTagsForVaultOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesListTagsForVaultOutputMod.ListTagsForVaultOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesListTagsForVaultOutputMod.ListTagsForVaultOutput]
     }
     
-    @scala.inline
-    def ListVaultsOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesListVaultsOutputMod.ListVaultsOutput = {
+    inline def ListVaultsOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesListVaultsOutputMod.ListVaultsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesListVaultsOutputMod.ListVaultsOutput]
     }
     
-    @scala.inline
-    def PurchaseProvisionedCapacityOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesPurchaseProvisionedCapacityOutputMod.PurchaseProvisionedCapacityOutput = {
+    inline def PurchaseProvisionedCapacityOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesPurchaseProvisionedCapacityOutputMod.PurchaseProvisionedCapacityOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesPurchaseProvisionedCapacityOutputMod.PurchaseProvisionedCapacityOutput]
     }
     
-    @scala.inline
-    def RemoveTagsFromVaultOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesRemoveTagsFromVaultOutputMod.RemoveTagsFromVaultOutput = {
+    inline def RemoveTagsFromVaultOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesRemoveTagsFromVaultOutputMod.RemoveTagsFromVaultOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesRemoveTagsFromVaultOutputMod.RemoveTagsFromVaultOutput]
     }
     
-    @scala.inline
-    def SetDataRetrievalPolicyOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesSetDataRetrievalPolicyOutputMod.SetDataRetrievalPolicyOutput = {
+    inline def SetDataRetrievalPolicyOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesSetDataRetrievalPolicyOutputMod.SetDataRetrievalPolicyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesSetDataRetrievalPolicyOutputMod.SetDataRetrievalPolicyOutput]
     }
     
-    @scala.inline
-    def SetVaultAccessPolicyOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesSetVaultAccessPolicyOutputMod.SetVaultAccessPolicyOutput = {
+    inline def SetVaultAccessPolicyOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesSetVaultAccessPolicyOutputMod.SetVaultAccessPolicyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesSetVaultAccessPolicyOutputMod.SetVaultAccessPolicyOutput]
     }
     
-    @scala.inline
-    def SetVaultNotificationsOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesSetVaultNotificationsOutputMod.SetVaultNotificationsOutput = {
+    inline def SetVaultNotificationsOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesSetVaultNotificationsOutputMod.SetVaultNotificationsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesSetVaultNotificationsOutputMod.SetVaultNotificationsOutput]
     }
     
-    @scala.inline
-    def UploadArchiveOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesUploadArchiveOutputMod.UploadArchiveOutput = {
+    inline def UploadArchiveOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesUploadArchiveOutputMod.UploadArchiveOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesUploadArchiveOutputMod.UploadArchiveOutput]
     }
     
-    @scala.inline
-    def UploadMultipartPartOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesUploadMultipartPartOutputMod.UploadMultipartPartOutput = {
+    inline def UploadMultipartPartOutput($metadata: ResponseMetadata): typings.awsSdkClientGlacierNode.typesUploadMultipartPartOutputMod.UploadMultipartPartOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientGlacierNode.typesUploadMultipartPartOutputMod.UploadMultipartPartOutput]
     }

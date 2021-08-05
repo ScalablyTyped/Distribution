@@ -14,13 +14,13 @@ object abstractJsEmitterMod {
   @js.native
   abstract class AbstractJsEmitterVisitor () extends AbstractEmitterVisitor {
     
-    var _visitClassConstructor: js.Any = js.native
+    /* private */ var _visitClassConstructor: js.Any = js.native
     
-    var _visitClassGetter: js.Any = js.native
+    /* private */ var _visitClassGetter: js.Any = js.native
     
-    var _visitClassMethod: js.Any = js.native
+    /* private */ var _visitClassMethod: js.Any = js.native
     
-    var _visitParams: js.Any = js.native
+    /* private */ var _visitParams: js.Any = js.native
     
     def visitCastExpr(ast: CastExpr, ctx: EmitterVisitorContext): js.Any = js.native
     

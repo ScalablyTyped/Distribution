@@ -19,32 +19,24 @@ object anon {
   }
   object PartialObserverUploadTask {
     
-    @scala.inline
-    def apply(): PartialObserverUploadTask = {
+    inline def apply(): PartialObserverUploadTask = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialObserverUploadTask]
     }
     
-    @scala.inline
-    implicit class PartialObserverUploadTaskMutableBuilder[Self <: PartialObserverUploadTask] (val x: Self) extends AnyVal {
+    extension [Self <: PartialObserverUploadTask](x: Self) {
       
-      @scala.inline
-      def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setError(value: /* error */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* error */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setNext(value: /* value */ UploadTaskSnapshot => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: /* value */ UploadTaskSnapshot => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     }
   }
 }

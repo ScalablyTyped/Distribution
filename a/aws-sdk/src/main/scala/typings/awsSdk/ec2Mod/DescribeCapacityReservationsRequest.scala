@@ -33,49 +33,35 @@ trait DescribeCapacityReservationsRequest extends StObject {
 }
 object DescribeCapacityReservationsRequest {
   
-  @scala.inline
-  def apply(): DescribeCapacityReservationsRequest = {
+  inline def apply(): DescribeCapacityReservationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCapacityReservationsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeCapacityReservationsRequestMutableBuilder[Self <: DescribeCapacityReservationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCapacityReservationsRequest](x: Self) {
     
-    @scala.inline
-    def setCapacityReservationIds(value: CapacityReservationIdSet): Self = StObject.set(x, "CapacityReservationIds", value.asInstanceOf[js.Any])
+    inline def setCapacityReservationIds(value: CapacityReservationIdSet): Self = StObject.set(x, "CapacityReservationIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityReservationIdsUndefined: Self = StObject.set(x, "CapacityReservationIds", js.undefined)
+    inline def setCapacityReservationIdsUndefined: Self = StObject.set(x, "CapacityReservationIds", js.undefined)
     
-    @scala.inline
-    def setCapacityReservationIdsVarargs(value: CapacityReservationId*): Self = StObject.set(x, "CapacityReservationIds", js.Array(value :_*))
+    inline def setCapacityReservationIdsVarargs(value: CapacityReservationId*): Self = StObject.set(x, "CapacityReservationIds", js.Array(value :_*))
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: DescribeCapacityReservationsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: DescribeCapacityReservationsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

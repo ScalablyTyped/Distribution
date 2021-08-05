@@ -18,25 +18,19 @@ trait DisassociateResourceResponse extends StObject {
 }
 object DisassociateResourceResponse {
   
-  @scala.inline
-  def apply(): DisassociateResourceResponse = {
+  inline def apply(): DisassociateResourceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisassociateResourceResponse]
   }
   
-  @scala.inline
-  implicit class DisassociateResourceResponseMutableBuilder[Self <: DisassociateResourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateResourceResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationArn(value: ApplicationArn): Self = StObject.set(x, "applicationArn", value.asInstanceOf[js.Any])
+    inline def setApplicationArn(value: ApplicationArn): Self = StObject.set(x, "applicationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationArnUndefined: Self = StObject.set(x, "applicationArn", js.undefined)
+    inline def setApplicationArnUndefined: Self = StObject.set(x, "applicationArn", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
+    inline def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
   }
 }

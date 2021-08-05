@@ -21,26 +21,20 @@ object ifabricconfigMod {
   }
   object IFabricConfig {
     
-    @scala.inline
-    def apply(): IFabricConfig = {
+    inline def apply(): IFabricConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFabricConfig]
     }
     
-    @scala.inline
-    implicit class IFabricConfigMutableBuilder[Self <: IFabricConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IFabricConfig](x: Self) {
       
-      @scala.inline
-      def setFontBaseUrl(value: String): Self = StObject.set(x, "fontBaseUrl", value.asInstanceOf[js.Any])
+      inline def setFontBaseUrl(value: String): Self = StObject.set(x, "fontBaseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontBaseUrlUndefined: Self = StObject.set(x, "fontBaseUrl", js.undefined)
+      inline def setFontBaseUrlUndefined: Self = StObject.set(x, "fontBaseUrl", js.undefined)
       
-      @scala.inline
-      def setMergeStyles(value: IStyleSheetConfig): Self = StObject.set(x, "mergeStyles", value.asInstanceOf[js.Any])
+      inline def setMergeStyles(value: IStyleSheetConfig): Self = StObject.set(x, "mergeStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeStylesUndefined: Self = StObject.set(x, "mergeStyles", js.undefined)
+      inline def setMergeStylesUndefined: Self = StObject.set(x, "mergeStyles", js.undefined)
     }
   }
 }

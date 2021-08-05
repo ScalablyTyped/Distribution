@@ -13,8 +13,7 @@ object yearinfoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def rebuildYear(year: Double, options: ParsedOptions): YearInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("rebuildYear")(year.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[YearInfo]
+  inline def rebuildYear(year: Double, options: ParsedOptions): YearInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("rebuildYear")(year.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[YearInfo]
   
   trait YearInfo extends StObject {
     
@@ -40,8 +39,7 @@ object yearinfoMod {
   }
   object YearInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       mdaymask: js.Array[Double],
       mmask: js.Array[Double],
       mrange: js.Array[Double],
@@ -56,59 +54,41 @@ object yearinfoMod {
       __obj.asInstanceOf[YearInfo]
     }
     
-    @scala.inline
-    implicit class YearInfoMutableBuilder[Self <: YearInfo] (val x: Self) extends AnyVal {
+    extension [Self <: YearInfo](x: Self) {
       
-      @scala.inline
-      def setMdaymask(value: js.Array[Double]): Self = StObject.set(x, "mdaymask", value.asInstanceOf[js.Any])
+      inline def setMdaymask(value: js.Array[Double]): Self = StObject.set(x, "mdaymask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMdaymaskVarargs(value: Double*): Self = StObject.set(x, "mdaymask", js.Array(value :_*))
+      inline def setMdaymaskVarargs(value: Double*): Self = StObject.set(x, "mdaymask", js.Array(value :_*))
       
-      @scala.inline
-      def setMmask(value: js.Array[Double]): Self = StObject.set(x, "mmask", value.asInstanceOf[js.Any])
+      inline def setMmask(value: js.Array[Double]): Self = StObject.set(x, "mmask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMmaskVarargs(value: Double*): Self = StObject.set(x, "mmask", js.Array(value :_*))
+      inline def setMmaskVarargs(value: Double*): Self = StObject.set(x, "mmask", js.Array(value :_*))
       
-      @scala.inline
-      def setMrange(value: js.Array[Double]): Self = StObject.set(x, "mrange", value.asInstanceOf[js.Any])
+      inline def setMrange(value: js.Array[Double]): Self = StObject.set(x, "mrange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMrangeVarargs(value: Double*): Self = StObject.set(x, "mrange", js.Array(value :_*))
+      inline def setMrangeVarargs(value: Double*): Self = StObject.set(x, "mrange", js.Array(value :_*))
       
-      @scala.inline
-      def setNextyearlen(value: `365` | `366`): Self = StObject.set(x, "nextyearlen", value.asInstanceOf[js.Any])
+      inline def setNextyearlen(value: `365` | `366`): Self = StObject.set(x, "nextyearlen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNmdaymask(value: js.Array[Double]): Self = StObject.set(x, "nmdaymask", value.asInstanceOf[js.Any])
+      inline def setNmdaymask(value: js.Array[Double]): Self = StObject.set(x, "nmdaymask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNmdaymaskVarargs(value: Double*): Self = StObject.set(x, "nmdaymask", js.Array(value :_*))
+      inline def setNmdaymaskVarargs(value: Double*): Self = StObject.set(x, "nmdaymask", js.Array(value :_*))
       
-      @scala.inline
-      def setWdaymask(value: js.Array[Double]): Self = StObject.set(x, "wdaymask", value.asInstanceOf[js.Any])
+      inline def setWdaymask(value: js.Array[Double]): Self = StObject.set(x, "wdaymask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWdaymaskVarargs(value: Double*): Self = StObject.set(x, "wdaymask", js.Array(value :_*))
+      inline def setWdaymaskVarargs(value: Double*): Self = StObject.set(x, "wdaymask", js.Array(value :_*))
       
-      @scala.inline
-      def setWnomask(value: js.Array[Double]): Self = StObject.set(x, "wnomask", value.asInstanceOf[js.Any])
+      inline def setWnomask(value: js.Array[Double]): Self = StObject.set(x, "wnomask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWnomaskNull: Self = StObject.set(x, "wnomask", null)
+      inline def setWnomaskNull: Self = StObject.set(x, "wnomask", null)
       
-      @scala.inline
-      def setWnomaskVarargs(value: Double*): Self = StObject.set(x, "wnomask", js.Array(value :_*))
+      inline def setWnomaskVarargs(value: Double*): Self = StObject.set(x, "wnomask", js.Array(value :_*))
       
-      @scala.inline
-      def setYearlen(value: `365` | `366`): Self = StObject.set(x, "yearlen", value.asInstanceOf[js.Any])
+      inline def setYearlen(value: `365` | `366`): Self = StObject.set(x, "yearlen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearordinal(value: Double): Self = StObject.set(x, "yearordinal", value.asInstanceOf[js.Any])
+      inline def setYearordinal(value: Double): Self = StObject.set(x, "yearordinal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearweekday(value: Double): Self = StObject.set(x, "yearweekday", value.asInstanceOf[js.Any])
+      inline def setYearweekday(value: Double): Self = StObject.set(x, "yearweekday", value.asInstanceOf[js.Any])
     }
   }
 }

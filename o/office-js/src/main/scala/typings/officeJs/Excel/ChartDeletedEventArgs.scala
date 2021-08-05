@@ -49,26 +49,20 @@ trait ChartDeletedEventArgs extends StObject {
 }
 object ChartDeletedEventArgs {
   
-  @scala.inline
-  def apply(chartId: String, source: EventSource | Local | Remote, worksheetId: String): ChartDeletedEventArgs = {
+  inline def apply(chartId: String, source: EventSource | Local | Remote, worksheetId: String): ChartDeletedEventArgs = {
     val __obj = js.Dynamic.literal(chartId = chartId.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ChartDeleted")
     __obj.asInstanceOf[ChartDeletedEventArgs]
   }
   
-  @scala.inline
-  implicit class ChartDeletedEventArgsMutableBuilder[Self <: ChartDeletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ChartDeletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setChartId(value: String): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
+    inline def setChartId(value: String): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ChartDeleted): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChartDeleted): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
+    inline def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
   }
 }

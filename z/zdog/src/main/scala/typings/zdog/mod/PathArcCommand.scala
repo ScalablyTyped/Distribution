@@ -13,16 +13,13 @@ trait PathArcCommand
 }
 object PathArcCommand {
   
-  @scala.inline
-  def apply(arc: js.Tuple2[VectorOptions, VectorOptions]): PathArcCommand = {
+  inline def apply(arc: js.Tuple2[VectorOptions, VectorOptions]): PathArcCommand = {
     val __obj = js.Dynamic.literal(arc = arc.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathArcCommand]
   }
   
-  @scala.inline
-  implicit class PathArcCommandMutableBuilder[Self <: PathArcCommand] (val x: Self) extends AnyVal {
+  extension [Self <: PathArcCommand](x: Self) {
     
-    @scala.inline
-    def setArc(value: js.Tuple2[VectorOptions, VectorOptions]): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
+    inline def setArc(value: js.Tuple2[VectorOptions, VectorOptions]): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
   }
 }

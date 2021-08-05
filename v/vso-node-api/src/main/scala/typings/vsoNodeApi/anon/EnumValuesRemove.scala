@@ -10,16 +10,13 @@ trait EnumValuesRemove extends StObject {
 }
 object EnumValuesRemove {
   
-  @scala.inline
-  def apply(enumValues: Remove): EnumValuesRemove = {
+  inline def apply(enumValues: Remove): EnumValuesRemove = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesRemove]
   }
   
-  @scala.inline
-  implicit class EnumValuesRemoveMutableBuilder[Self <: EnumValuesRemove] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesRemove](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Remove): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Remove): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

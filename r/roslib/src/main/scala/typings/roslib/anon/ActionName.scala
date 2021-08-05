@@ -16,8 +16,7 @@ trait ActionName extends StObject {
 }
 object ActionName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actionName: java.lang.String,
     ros: typings.roslib.mod.Ros,
     serverName: java.lang.String,
@@ -27,19 +26,14 @@ object ActionName {
     __obj.asInstanceOf[ActionName]
   }
   
-  @scala.inline
-  implicit class ActionNameMutableBuilder[Self <: ActionName] (val x: Self) extends AnyVal {
+  extension [Self <: ActionName](x: Self) {
     
-    @scala.inline
-    def setActionName(value: java.lang.String): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: java.lang.String): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRos(value: typings.roslib.mod.Ros): Self = StObject.set(x, "ros", value.asInstanceOf[js.Any])
+    inline def setRos(value: typings.roslib.mod.Ros): Self = StObject.set(x, "ros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerName(value: java.lang.String): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: java.lang.String): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait levelPtsUpdatedData extends StObject {
 }
 object levelPtsUpdatedData {
   
-  @scala.inline
-  def apply(details: LevelDetails, drift: Double, level: Double): levelPtsUpdatedData = {
+  inline def apply(details: LevelDetails, drift: Double, level: Double): levelPtsUpdatedData = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], drift = drift.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.asInstanceOf[levelPtsUpdatedData]
   }
   
-  @scala.inline
-  implicit class levelPtsUpdatedDataMutableBuilder[Self <: levelPtsUpdatedData] (val x: Self) extends AnyVal {
+  extension [Self <: levelPtsUpdatedData](x: Self) {
     
-    @scala.inline
-    def setDetails(value: LevelDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: LevelDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrift(value: Double): Self = StObject.set(x, "drift", value.asInstanceOf[js.Any])
+    inline def setDrift(value: Double): Self = StObject.set(x, "drift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

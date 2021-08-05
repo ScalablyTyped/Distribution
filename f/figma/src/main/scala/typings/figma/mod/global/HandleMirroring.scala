@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HandleMirroring extends StObject
 object HandleMirroring {
   
-  @scala.inline
-  def ANGLE: typings.figma.figmaStrings.ANGLE = "ANGLE".asInstanceOf[typings.figma.figmaStrings.ANGLE]
+  inline def ANGLE: typings.figma.figmaStrings.ANGLE = "ANGLE".asInstanceOf[typings.figma.figmaStrings.ANGLE]
   
-  @scala.inline
-  def ANGLE_AND_LENGTH: typings.figma.figmaStrings.ANGLE_AND_LENGTH = "ANGLE_AND_LENGTH".asInstanceOf[typings.figma.figmaStrings.ANGLE_AND_LENGTH]
+  inline def ANGLE_AND_LENGTH: typings.figma.figmaStrings.ANGLE_AND_LENGTH = "ANGLE_AND_LENGTH".asInstanceOf[typings.figma.figmaStrings.ANGLE_AND_LENGTH]
   
-  @scala.inline
-  def NONE: typings.figma.figmaStrings.NONE = "NONE".asInstanceOf[typings.figma.figmaStrings.NONE]
+  inline def NONE: typings.figma.figmaStrings.NONE = "NONE".asInstanceOf[typings.figma.figmaStrings.NONE]
 }

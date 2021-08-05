@@ -25,16 +25,13 @@ trait InputEvent
 }
 object InputEvent {
   
-  @scala.inline
-  def apply(Modifiers: Double, Source: XInterface): InputEvent = {
+  inline def apply(Modifiers: Double, Source: XInterface): InputEvent = {
     val __obj = js.Dynamic.literal(Modifiers = Modifiers.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputEvent]
   }
   
-  @scala.inline
-  implicit class InputEventMutableBuilder[Self <: InputEvent] (val x: Self) extends AnyVal {
+  extension [Self <: InputEvent](x: Self) {
     
-    @scala.inline
-    def setModifiers(value: Double): Self = StObject.set(x, "Modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: Double): Self = StObject.set(x, "Modifiers", value.asInstanceOf[js.Any])
   }
 }

@@ -22,6 +22,5 @@ trait BindSource extends StObject {
 }
 object BindSource {
   
-  @scala.inline
-  def apply: BindSource = ^.asInstanceOf[js.Dynamic].selectDynamic("BindSource").asInstanceOf[BindSource]
+  inline def apply: BindSource = ^.asInstanceOf[js.Dynamic].selectDynamic("BindSource").asInstanceOf[BindSource]
 }

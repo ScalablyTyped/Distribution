@@ -11,8 +11,6 @@ object visibleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Boolean]
-  @scala.inline
-  def default(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Boolean]
+  inline def default(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -18,43 +18,31 @@ trait Col extends StObject {
 }
 object Col {
   
-  @scala.inline
-  def apply(): Col = {
+  inline def apply(): Col = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Col]
   }
   
-  @scala.inline
-  implicit class ColMutableBuilder[Self <: Col] (val x: Self) extends AnyVal {
+  extension [Self <: Col](x: Self) {
     
-    @scala.inline
-    def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+    inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColUndefined: Self = StObject.set(x, "col", js.undefined)
+    inline def setColUndefined: Self = StObject.set(x, "col", js.undefined)
     
-    @scala.inline
-    def setColspan(value: Double): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])
+    inline def setColspan(value: Double): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColspanUndefined: Self = StObject.set(x, "colspan", js.undefined)
+    inline def setColspanUndefined: Self = StObject.set(x, "colspan", js.undefined)
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
-    @scala.inline
-    def setRowspan(value: Double): Self = StObject.set(x, "rowspan", value.asInstanceOf[js.Any])
+    inline def setRowspan(value: Double): Self = StObject.set(x, "rowspan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowspanUndefined: Self = StObject.set(x, "rowspan", js.undefined)
+    inline def setRowspanUndefined: Self = StObject.set(x, "rowspan", js.undefined)
     
-    @scala.inline
-    def setScreen(value: String): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+    inline def setScreen(value: String): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
+    inline def setScreenUndefined: Self = StObject.set(x, "screen", js.undefined)
   }
 }

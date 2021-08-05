@@ -18,25 +18,19 @@ trait DocumentAttributeValueCountPair extends StObject {
 }
 object DocumentAttributeValueCountPair {
   
-  @scala.inline
-  def apply(): DocumentAttributeValueCountPair = {
+  inline def apply(): DocumentAttributeValueCountPair = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentAttributeValueCountPair]
   }
   
-  @scala.inline
-  implicit class DocumentAttributeValueCountPairMutableBuilder[Self <: DocumentAttributeValueCountPair] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentAttributeValueCountPair](x: Self) {
     
-    @scala.inline
-    def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
-    @scala.inline
-    def setDocumentAttributeValue(value: DocumentAttributeValue): Self = StObject.set(x, "DocumentAttributeValue", value.asInstanceOf[js.Any])
+    inline def setDocumentAttributeValue(value: DocumentAttributeValue): Self = StObject.set(x, "DocumentAttributeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentAttributeValueUndefined: Self = StObject.set(x, "DocumentAttributeValue", js.undefined)
+    inline def setDocumentAttributeValueUndefined: Self = StObject.set(x, "DocumentAttributeValue", js.undefined)
   }
 }

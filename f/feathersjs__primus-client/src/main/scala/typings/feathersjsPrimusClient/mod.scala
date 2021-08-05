@@ -10,10 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(socket: js.Any): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def default(socket: js.Any, options: FeathersPrimusClientOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default(socket: js.Any): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def default(socket: js.Any, options: FeathersPrimusClientOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   trait FeathersPrimusClientOptions extends StObject {
     
@@ -21,20 +19,16 @@ object mod {
   }
   object FeathersPrimusClientOptions {
     
-    @scala.inline
-    def apply(): FeathersPrimusClientOptions = {
+    inline def apply(): FeathersPrimusClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FeathersPrimusClientOptions]
     }
     
-    @scala.inline
-    implicit class FeathersPrimusClientOptionsMutableBuilder[Self <: FeathersPrimusClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FeathersPrimusClientOptions](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

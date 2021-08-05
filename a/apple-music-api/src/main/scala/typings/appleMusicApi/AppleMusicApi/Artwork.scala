@@ -25,52 +25,37 @@ trait Artwork extends StObject {
 }
 object Artwork {
   
-  @scala.inline
-  def apply(height: Double, url: String, width: Double): Artwork = {
+  inline def apply(height: Double, url: String, width: Double): Artwork = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Artwork]
   }
   
-  @scala.inline
-  implicit class ArtworkMutableBuilder[Self <: Artwork] (val x: Self) extends AnyVal {
+  extension [Self <: Artwork](x: Self) {
     
-    @scala.inline
-    def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
+    inline def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
+    inline def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColor1(value: String): Self = StObject.set(x, "textColor1", value.asInstanceOf[js.Any])
+    inline def setTextColor1(value: String): Self = StObject.set(x, "textColor1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColor1Undefined: Self = StObject.set(x, "textColor1", js.undefined)
+    inline def setTextColor1Undefined: Self = StObject.set(x, "textColor1", js.undefined)
     
-    @scala.inline
-    def setTextColor2(value: String): Self = StObject.set(x, "textColor2", value.asInstanceOf[js.Any])
+    inline def setTextColor2(value: String): Self = StObject.set(x, "textColor2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColor2Undefined: Self = StObject.set(x, "textColor2", js.undefined)
+    inline def setTextColor2Undefined: Self = StObject.set(x, "textColor2", js.undefined)
     
-    @scala.inline
-    def setTextColor3(value: String): Self = StObject.set(x, "textColor3", value.asInstanceOf[js.Any])
+    inline def setTextColor3(value: String): Self = StObject.set(x, "textColor3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColor3Undefined: Self = StObject.set(x, "textColor3", js.undefined)
+    inline def setTextColor3Undefined: Self = StObject.set(x, "textColor3", js.undefined)
     
-    @scala.inline
-    def setTextColor4(value: String): Self = StObject.set(x, "textColor4", value.asInstanceOf[js.Any])
+    inline def setTextColor4(value: String): Self = StObject.set(x, "textColor4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColor4Undefined: Self = StObject.set(x, "textColor4", js.undefined)
+    inline def setTextColor4Undefined: Self = StObject.set(x, "textColor4", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

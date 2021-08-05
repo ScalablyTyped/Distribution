@@ -18,25 +18,19 @@ trait AwsLambdaFunctionEnvironment extends StObject {
 }
 object AwsLambdaFunctionEnvironment {
   
-  @scala.inline
-  def apply(): AwsLambdaFunctionEnvironment = {
+  inline def apply(): AwsLambdaFunctionEnvironment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsLambdaFunctionEnvironment]
   }
   
-  @scala.inline
-  implicit class AwsLambdaFunctionEnvironmentMutableBuilder[Self <: AwsLambdaFunctionEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: AwsLambdaFunctionEnvironment](x: Self) {
     
-    @scala.inline
-    def setError(value: AwsLambdaFunctionEnvironmentError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: AwsLambdaFunctionEnvironmentError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
-    @scala.inline
-    def setVariables(value: FieldMap): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: FieldMap): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariablesUndefined: Self = StObject.set(x, "Variables", js.undefined)
+    inline def setVariablesUndefined: Self = StObject.set(x, "Variables", js.undefined)
   }
 }

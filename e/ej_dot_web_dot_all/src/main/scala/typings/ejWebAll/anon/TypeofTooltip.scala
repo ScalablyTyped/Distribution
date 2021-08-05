@@ -15,19 +15,15 @@ trait TypeofTooltip extends StObject {
 }
 object TypeofTooltip {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Tooltip): TypeofTooltip = {
+  inline def apply(Locale: js.Any, fn: Tooltip): TypeofTooltip = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTooltip]
   }
   
-  @scala.inline
-  implicit class TypeofTooltipMutableBuilder[Self <: TypeofTooltip] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTooltip](x: Self) {
     
-    @scala.inline
-    def setFn(value: Tooltip): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Tooltip): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

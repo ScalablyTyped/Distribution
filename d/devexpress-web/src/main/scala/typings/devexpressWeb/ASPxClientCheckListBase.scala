@@ -24,8 +24,7 @@ trait ASPxClientCheckListBase
 }
 object ASPxClientCheckListBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Focus: () => Unit,
     GetCaption: () => String,
@@ -72,13 +71,10 @@ object ASPxClientCheckListBase {
     __obj.asInstanceOf[ASPxClientCheckListBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientCheckListBaseMutableBuilder[Self <: ASPxClientCheckListBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCheckListBase](x: Self) {
     
-    @scala.inline
-    def setGetItem(value: Double => ASPxClientListEditItem): Self = StObject.set(x, "GetItem", js.Any.fromFunction1(value))
+    inline def setGetItem(value: Double => ASPxClientListEditItem): Self = StObject.set(x, "GetItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemCount(value: () => Double): Self = StObject.set(x, "GetItemCount", js.Any.fromFunction0(value))
+    inline def setGetItemCount(value: () => Double): Self = StObject.set(x, "GetItemCount", js.Any.fromFunction0(value))
   }
 }

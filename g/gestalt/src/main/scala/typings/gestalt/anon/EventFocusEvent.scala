@@ -14,19 +14,15 @@ trait EventFocusEvent extends StObject {
 }
 object EventFocusEvent {
   
-  @scala.inline
-  def apply(event: FocusEvent[HTMLInputElement], value: String): EventFocusEvent = {
+  inline def apply(event: FocusEvent[HTMLInputElement], value: String): EventFocusEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventFocusEvent]
   }
   
-  @scala.inline
-  implicit class EventFocusEventMutableBuilder[Self <: EventFocusEvent] (val x: Self) extends AnyVal {
+  extension [Self <: EventFocusEvent](x: Self) {
     
-    @scala.inline
-    def setEvent(value: FocusEvent[HTMLInputElement]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: FocusEvent[HTMLInputElement]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

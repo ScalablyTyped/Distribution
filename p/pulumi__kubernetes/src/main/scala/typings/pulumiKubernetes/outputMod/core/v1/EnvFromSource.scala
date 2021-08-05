@@ -26,22 +26,17 @@ trait EnvFromSource extends StObject {
 }
 object EnvFromSource {
   
-  @scala.inline
-  def apply(configMapRef: ConfigMapEnvSource, prefix: String, secretRef: SecretEnvSource): EnvFromSource = {
+  inline def apply(configMapRef: ConfigMapEnvSource, prefix: String, secretRef: SecretEnvSource): EnvFromSource = {
     val __obj = js.Dynamic.literal(configMapRef = configMapRef.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], secretRef = secretRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvFromSource]
   }
   
-  @scala.inline
-  implicit class EnvFromSourceMutableBuilder[Self <: EnvFromSource] (val x: Self) extends AnyVal {
+  extension [Self <: EnvFromSource](x: Self) {
     
-    @scala.inline
-    def setConfigMapRef(value: ConfigMapEnvSource): Self = StObject.set(x, "configMapRef", value.asInstanceOf[js.Any])
+    inline def setConfigMapRef(value: ConfigMapEnvSource): Self = StObject.set(x, "configMapRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretRef(value: SecretEnvSource): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
+    inline def setSecretRef(value: SecretEnvSource): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
   }
 }

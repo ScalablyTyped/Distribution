@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.FormFields")
 @js.native
-class FormFields protected ()
+/* private */ class FormFields ()
   extends StObject
      with typings.activexWord.Word.FormFields {
   
@@ -32,7 +32,7 @@ class FormFields protected ()
   /* CompleteClass */
   var Shaded: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.FormFields_typekey")
   var WordDotFormFields_typekey: typings.activexWord.Word.FormFields = js.native
 }

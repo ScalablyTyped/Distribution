@@ -18,8 +18,7 @@ trait CPSignersAsync extends StObject {
 }
 object CPSignersAsync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: (// tslint:disable-line ban-types
   js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double],
     Item: (// tslint:disable-line ban-types
@@ -29,30 +28,25 @@ object CPSignersAsync {
     __obj.asInstanceOf[CPSignersAsync]
   }
   
-  @scala.inline
-  implicit class CPSignersAsyncMutableBuilder[Self <: CPSignersAsync] (val x: Self) extends AnyVal {
+  extension [Self <: CPSignersAsync](x: Self) {
     
-    @scala.inline
-    def setCount(
+    inline def setCount(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
     ): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountFunction1(
+    inline def setCountFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Count", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItem(
+    inline def setItem(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[js.Function1[/* index */ Double, CPSigner]]]) | (PromisifiedFunction[js.Function1[/* index */ Double, CPSigner]])
     ): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemFunction1(
+    inline def setItemFunction1(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any]) | (/* index */ Double) => CPSigner | js.Promise[Unpacked[js.Any]]

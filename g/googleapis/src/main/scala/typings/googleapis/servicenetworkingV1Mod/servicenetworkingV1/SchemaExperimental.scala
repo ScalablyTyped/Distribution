@@ -17,19 +17,15 @@ trait SchemaExperimental extends StObject {
 }
 object SchemaExperimental {
   
-  @scala.inline
-  def apply(): SchemaExperimental = {
+  inline def apply(): SchemaExperimental = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExperimental]
   }
   
-  @scala.inline
-  implicit class SchemaExperimentalMutableBuilder[Self <: SchemaExperimental] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExperimental](x: Self) {
     
-    @scala.inline
-    def setAuthorization(value: SchemaAuthorizationConfig): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
+    inline def setAuthorization(value: SchemaAuthorizationConfig): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationUndefined: Self = StObject.set(x, "authorization", js.undefined)
+    inline def setAuthorizationUndefined: Self = StObject.set(x, "authorization", js.undefined)
   }
 }

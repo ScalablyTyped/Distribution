@@ -23,22 +23,17 @@ trait NodeGroupScalingConfig extends StObject {
 }
 object NodeGroupScalingConfig {
   
-  @scala.inline
-  def apply(desiredSize: Double, maxSize: Double, minSize: Double): NodeGroupScalingConfig = {
+  inline def apply(desiredSize: Double, maxSize: Double, minSize: Double): NodeGroupScalingConfig = {
     val __obj = js.Dynamic.literal(desiredSize = desiredSize.asInstanceOf[js.Any], maxSize = maxSize.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeGroupScalingConfig]
   }
   
-  @scala.inline
-  implicit class NodeGroupScalingConfigMutableBuilder[Self <: NodeGroupScalingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: NodeGroupScalingConfig](x: Self) {
     
-    @scala.inline
-    def setDesiredSize(value: Double): Self = StObject.set(x, "desiredSize", value.asInstanceOf[js.Any])
+    inline def setDesiredSize(value: Double): Self = StObject.set(x, "desiredSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+    inline def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
   }
 }

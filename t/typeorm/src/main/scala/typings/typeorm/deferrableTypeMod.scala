@@ -13,10 +13,8 @@ object deferrableTypeMod {
   trait DeferrableType extends StObject
   object DeferrableType {
     
-    @scala.inline
-    def `INITIALLY DEFERRED`: typings.typeorm.typeormStrings.`INITIALLY DEFERRED` = ("INITIALLY DEFERRED").asInstanceOf[typings.typeorm.typeormStrings.`INITIALLY DEFERRED`]
+    inline def `INITIALLY DEFERRED`: typings.typeorm.typeormStrings.`INITIALLY DEFERRED` = ("INITIALLY DEFERRED").asInstanceOf[typings.typeorm.typeormStrings.`INITIALLY DEFERRED`]
     
-    @scala.inline
-    def `INITIALLY IMMEDIATE`: typings.typeorm.typeormStrings.`INITIALLY IMMEDIATE` = ("INITIALLY IMMEDIATE").asInstanceOf[typings.typeorm.typeormStrings.`INITIALLY IMMEDIATE`]
+    inline def `INITIALLY IMMEDIATE`: typings.typeorm.typeormStrings.`INITIALLY IMMEDIATE` = ("INITIALLY IMMEDIATE").asInstanceOf[typings.typeorm.typeormStrings.`INITIALLY IMMEDIATE`]
   }
 }

@@ -21,13 +21,13 @@ object commonConsoleMessageMod {
       stackTraceLocations: js.Array[ConsoleMessageLocation]
     ) = this()
     
-    var _args: js.Any = js.native
+    /* private */ var _args: js.Any = js.native
     
-    var _stackTraceLocations: js.Any = js.native
+    /* private */ var _stackTraceLocations: js.Any = js.native
     
-    var _text: js.Any = js.native
+    /* private */ var _text: js.Any = js.native
     
-    var _type: js.Any = js.native
+    /* private */ var _type: js.Any = js.native
     
     /**
       * @returns An array of arguments passed to the console.
@@ -74,32 +74,24 @@ object commonConsoleMessageMod {
   }
   object ConsoleMessageLocation {
     
-    @scala.inline
-    def apply(): ConsoleMessageLocation = {
+    inline def apply(): ConsoleMessageLocation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConsoleMessageLocation]
     }
     
-    @scala.inline
-    implicit class ConsoleMessageLocationMutableBuilder[Self <: ConsoleMessageLocation] (val x: Self) extends AnyVal {
+    extension [Self <: ConsoleMessageLocation](x: Self) {
       
-      @scala.inline
-      def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+      inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
+      inline def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+      inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -127,61 +119,42 @@ object commonConsoleMessageMod {
   trait ConsoleMessageType extends StObject
   object ConsoleMessageType {
     
-    @scala.inline
-    def assert: typings.puppeteerCore.puppeteerCoreStrings.assert = "assert".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.assert]
+    inline def assert: typings.puppeteerCore.puppeteerCoreStrings.assert = "assert".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.assert]
     
-    @scala.inline
-    def clear: clear_ = "clear".asInstanceOf[clear_]
+    inline def clear: clear_ = "clear".asInstanceOf[clear_]
     
-    @scala.inline
-    def count: typings.puppeteerCore.puppeteerCoreStrings.count = "count".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.count]
+    inline def count: typings.puppeteerCore.puppeteerCoreStrings.count = "count".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.count]
     
-    @scala.inline
-    def debug: typings.puppeteerCore.puppeteerCoreStrings.debug = "debug".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.debug]
+    inline def debug: typings.puppeteerCore.puppeteerCoreStrings.debug = "debug".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.debug]
     
-    @scala.inline
-    def dir: typings.puppeteerCore.puppeteerCoreStrings.dir = "dir".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.dir]
+    inline def dir: typings.puppeteerCore.puppeteerCoreStrings.dir = "dir".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.dir]
     
-    @scala.inline
-    def dirxml: typings.puppeteerCore.puppeteerCoreStrings.dirxml = "dirxml".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.dirxml]
+    inline def dirxml: typings.puppeteerCore.puppeteerCoreStrings.dirxml = "dirxml".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.dirxml]
     
-    @scala.inline
-    def endGroup: typings.puppeteerCore.puppeteerCoreStrings.endGroup = "endGroup".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.endGroup]
+    inline def endGroup: typings.puppeteerCore.puppeteerCoreStrings.endGroup = "endGroup".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.endGroup]
     
-    @scala.inline
-    def error: typings.puppeteerCore.puppeteerCoreStrings.error = "error".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.error]
+    inline def error: typings.puppeteerCore.puppeteerCoreStrings.error = "error".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.error]
     
-    @scala.inline
-    def info: typings.puppeteerCore.puppeteerCoreStrings.info = "info".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.info]
+    inline def info: typings.puppeteerCore.puppeteerCoreStrings.info = "info".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.info]
     
-    @scala.inline
-    def log: typings.puppeteerCore.puppeteerCoreStrings.log = "log".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.log]
+    inline def log: typings.puppeteerCore.puppeteerCoreStrings.log = "log".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.log]
     
-    @scala.inline
-    def profile: typings.puppeteerCore.puppeteerCoreStrings.profile = "profile".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.profile]
+    inline def profile: typings.puppeteerCore.puppeteerCoreStrings.profile = "profile".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.profile]
     
-    @scala.inline
-    def profileEnd: typings.puppeteerCore.puppeteerCoreStrings.profileEnd = "profileEnd".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.profileEnd]
+    inline def profileEnd: typings.puppeteerCore.puppeteerCoreStrings.profileEnd = "profileEnd".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.profileEnd]
     
-    @scala.inline
-    def startGroup: typings.puppeteerCore.puppeteerCoreStrings.startGroup = "startGroup".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.startGroup]
+    inline def startGroup: typings.puppeteerCore.puppeteerCoreStrings.startGroup = "startGroup".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.startGroup]
     
-    @scala.inline
-    def startGroupCollapsed: typings.puppeteerCore.puppeteerCoreStrings.startGroupCollapsed = "startGroupCollapsed".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.startGroupCollapsed]
+    inline def startGroupCollapsed: typings.puppeteerCore.puppeteerCoreStrings.startGroupCollapsed = "startGroupCollapsed".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.startGroupCollapsed]
     
-    @scala.inline
-    def table: typings.puppeteerCore.puppeteerCoreStrings.table = "table".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.table]
+    inline def table: typings.puppeteerCore.puppeteerCoreStrings.table = "table".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.table]
     
-    @scala.inline
-    def timeEnd: typings.puppeteerCore.puppeteerCoreStrings.timeEnd = "timeEnd".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.timeEnd]
+    inline def timeEnd: typings.puppeteerCore.puppeteerCoreStrings.timeEnd = "timeEnd".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.timeEnd]
     
-    @scala.inline
-    def trace: typings.puppeteerCore.puppeteerCoreStrings.trace = "trace".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.trace]
+    inline def trace: typings.puppeteerCore.puppeteerCoreStrings.trace = "trace".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.trace]
     
-    @scala.inline
-    def verbose: typings.puppeteerCore.puppeteerCoreStrings.verbose = "verbose".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.verbose]
+    inline def verbose: typings.puppeteerCore.puppeteerCoreStrings.verbose = "verbose".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.verbose]
     
-    @scala.inline
-    def warning: typings.puppeteerCore.puppeteerCoreStrings.warning = "warning".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.warning]
+    inline def warning: typings.puppeteerCore.puppeteerCoreStrings.warning = "warning".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.warning]
   }
 }

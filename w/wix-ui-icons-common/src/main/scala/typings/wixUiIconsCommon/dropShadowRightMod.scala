@@ -22,20 +22,16 @@ object dropShadowRightMod extends Shortcut {
   }
   object DropShadowRightProps {
     
-    @scala.inline
-    def apply(): DropShadowRightProps = {
+    inline def apply(): DropShadowRightProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropShadowRightProps]
     }
     
-    @scala.inline
-    implicit class DropShadowRightPropsMutableBuilder[Self <: DropShadowRightProps] (val x: Self) extends AnyVal {
+    extension [Self <: DropShadowRightProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

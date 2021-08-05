@@ -19,25 +19,19 @@ trait OnErrorDeployment extends StObject {
 }
 object OnErrorDeployment {
   
-  @scala.inline
-  def apply(): OnErrorDeployment = {
+  inline def apply(): OnErrorDeployment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnErrorDeployment]
   }
   
-  @scala.inline
-  implicit class OnErrorDeploymentMutableBuilder[Self <: OnErrorDeployment] (val x: Self) extends AnyVal {
+  extension [Self <: OnErrorDeployment](x: Self) {
     
-    @scala.inline
-    def setDeploymentName(value: String): Self = StObject.set(x, "deploymentName", value.asInstanceOf[js.Any])
+    inline def setDeploymentName(value: String): Self = StObject.set(x, "deploymentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentNameUndefined: Self = StObject.set(x, "deploymentName", js.undefined)
+    inline def setDeploymentNameUndefined: Self = StObject.set(x, "deploymentName", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

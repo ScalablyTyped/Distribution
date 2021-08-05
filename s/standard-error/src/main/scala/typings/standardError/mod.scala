@@ -30,8 +30,7 @@ object mod {
        with /* key */ StringDictionary[js.Any]
   object StandardError {
     
-    @scala.inline
-    def apply(message: String, name: String): StandardError = {
+    inline def apply(message: String, name: String): StandardError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[StandardError]
     }

@@ -17,31 +17,23 @@ trait VpnGatewayStatusTunnel extends StObject {
 }
 object VpnGatewayStatusTunnel {
   
-  @scala.inline
-  def apply(): VpnGatewayStatusTunnel = {
+  inline def apply(): VpnGatewayStatusTunnel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpnGatewayStatusTunnel]
   }
   
-  @scala.inline
-  implicit class VpnGatewayStatusTunnelMutableBuilder[Self <: VpnGatewayStatusTunnel] (val x: Self) extends AnyVal {
+  extension [Self <: VpnGatewayStatusTunnel](x: Self) {
     
-    @scala.inline
-    def setLocalGatewayInterface(value: Double): Self = StObject.set(x, "localGatewayInterface", value.asInstanceOf[js.Any])
+    inline def setLocalGatewayInterface(value: Double): Self = StObject.set(x, "localGatewayInterface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalGatewayInterfaceUndefined: Self = StObject.set(x, "localGatewayInterface", js.undefined)
+    inline def setLocalGatewayInterfaceUndefined: Self = StObject.set(x, "localGatewayInterface", js.undefined)
     
-    @scala.inline
-    def setPeerGatewayInterface(value: Double): Self = StObject.set(x, "peerGatewayInterface", value.asInstanceOf[js.Any])
+    inline def setPeerGatewayInterface(value: Double): Self = StObject.set(x, "peerGatewayInterface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerGatewayInterfaceUndefined: Self = StObject.set(x, "peerGatewayInterface", js.undefined)
+    inline def setPeerGatewayInterfaceUndefined: Self = StObject.set(x, "peerGatewayInterface", js.undefined)
     
-    @scala.inline
-    def setTunnelUrl(value: String): Self = StObject.set(x, "tunnelUrl", value.asInstanceOf[js.Any])
+    inline def setTunnelUrl(value: String): Self = StObject.set(x, "tunnelUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnelUrlUndefined: Self = StObject.set(x, "tunnelUrl", js.undefined)
+    inline def setTunnelUrlUndefined: Self = StObject.set(x, "tunnelUrl", js.undefined)
   }
 }

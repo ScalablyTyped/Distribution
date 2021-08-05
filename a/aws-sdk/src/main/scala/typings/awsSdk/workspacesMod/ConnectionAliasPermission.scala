@@ -18,19 +18,15 @@ trait ConnectionAliasPermission extends StObject {
 }
 object ConnectionAliasPermission {
   
-  @scala.inline
-  def apply(AllowAssociation: BooleanObject, SharedAccountId: AwsAccount): ConnectionAliasPermission = {
+  inline def apply(AllowAssociation: BooleanObject, SharedAccountId: AwsAccount): ConnectionAliasPermission = {
     val __obj = js.Dynamic.literal(AllowAssociation = AllowAssociation.asInstanceOf[js.Any], SharedAccountId = SharedAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionAliasPermission]
   }
   
-  @scala.inline
-  implicit class ConnectionAliasPermissionMutableBuilder[Self <: ConnectionAliasPermission] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionAliasPermission](x: Self) {
     
-    @scala.inline
-    def setAllowAssociation(value: BooleanObject): Self = StObject.set(x, "AllowAssociation", value.asInstanceOf[js.Any])
+    inline def setAllowAssociation(value: BooleanObject): Self = StObject.set(x, "AllowAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedAccountId(value: AwsAccount): Self = StObject.set(x, "SharedAccountId", value.asInstanceOf[js.Any])
+    inline def setSharedAccountId(value: AwsAccount): Self = StObject.set(x, "SharedAccountId", value.asInstanceOf[js.Any])
   }
 }

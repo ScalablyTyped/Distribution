@@ -12,14 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Options extends StObject
 object Options {
   
-  @scala.inline
-  def OptionsWithUri(uri: String | Url): typings.request.mod.OptionsWithUri = {
+  inline def OptionsWithUri(uri: String | Url): typings.request.mod.OptionsWithUri = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.request.mod.OptionsWithUri]
   }
   
-  @scala.inline
-  def OptionsWithUrl(url: String | Url): typings.request.mod.OptionsWithUrl = {
+  inline def OptionsWithUrl(url: String | Url): typings.request.mod.OptionsWithUrl = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.request.mod.OptionsWithUrl]
   }

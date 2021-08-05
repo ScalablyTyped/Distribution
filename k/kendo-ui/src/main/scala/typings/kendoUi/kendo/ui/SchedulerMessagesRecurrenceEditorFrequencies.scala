@@ -18,43 +18,31 @@ trait SchedulerMessagesRecurrenceEditorFrequencies extends StObject {
 }
 object SchedulerMessagesRecurrenceEditorFrequencies {
   
-  @scala.inline
-  def apply(): SchedulerMessagesRecurrenceEditorFrequencies = {
+  inline def apply(): SchedulerMessagesRecurrenceEditorFrequencies = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorFrequencies]
   }
   
-  @scala.inline
-  implicit class SchedulerMessagesRecurrenceEditorFrequenciesMutableBuilder[Self <: SchedulerMessagesRecurrenceEditorFrequencies] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerMessagesRecurrenceEditorFrequencies](x: Self) {
     
-    @scala.inline
-    def setDaily(value: String): Self = StObject.set(x, "daily", value.asInstanceOf[js.Any])
+    inline def setDaily(value: String): Self = StObject.set(x, "daily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDailyUndefined: Self = StObject.set(x, "daily", js.undefined)
+    inline def setDailyUndefined: Self = StObject.set(x, "daily", js.undefined)
     
-    @scala.inline
-    def setMonthly(value: String): Self = StObject.set(x, "monthly", value.asInstanceOf[js.Any])
+    inline def setMonthly(value: String): Self = StObject.set(x, "monthly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthlyUndefined: Self = StObject.set(x, "monthly", js.undefined)
+    inline def setMonthlyUndefined: Self = StObject.set(x, "monthly", js.undefined)
     
-    @scala.inline
-    def setNever(value: String): Self = StObject.set(x, "never", value.asInstanceOf[js.Any])
+    inline def setNever(value: String): Self = StObject.set(x, "never", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeverUndefined: Self = StObject.set(x, "never", js.undefined)
+    inline def setNeverUndefined: Self = StObject.set(x, "never", js.undefined)
     
-    @scala.inline
-    def setWeekly(value: String): Self = StObject.set(x, "weekly", value.asInstanceOf[js.Any])
+    inline def setWeekly(value: String): Self = StObject.set(x, "weekly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeeklyUndefined: Self = StObject.set(x, "weekly", js.undefined)
+    inline def setWeeklyUndefined: Self = StObject.set(x, "weekly", js.undefined)
     
-    @scala.inline
-    def setYearly(value: String): Self = StObject.set(x, "yearly", value.asInstanceOf[js.Any])
+    inline def setYearly(value: String): Self = StObject.set(x, "yearly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearlyUndefined: Self = StObject.set(x, "yearly", js.undefined)
+    inline def setYearlyUndefined: Self = StObject.set(x, "yearly", js.undefined)
   }
 }

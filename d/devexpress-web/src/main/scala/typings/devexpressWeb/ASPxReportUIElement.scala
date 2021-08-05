@@ -21,19 +21,15 @@ trait ASPxReportUIElement extends StObject {
 }
 object ASPxReportUIElement {
   
-  @scala.inline
-  def apply(model: js.Any, templateName: String): ASPxReportUIElement = {
+  inline def apply(model: js.Any, templateName: String): ASPxReportUIElement = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], templateName = templateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxReportUIElement]
   }
   
-  @scala.inline
-  implicit class ASPxReportUIElementMutableBuilder[Self <: ASPxReportUIElement] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxReportUIElement](x: Self) {
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateName(value: String): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: String): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
   }
 }

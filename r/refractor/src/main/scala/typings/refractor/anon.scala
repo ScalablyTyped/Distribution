@@ -62,8 +62,7 @@ object anon {
   }
   object ElementEnvironment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       code: js.UndefOr[String] & String,
       element: js.UndefOr[Element] & Element,
       grammar: js.UndefOr[Grammar] & Grammar,
@@ -73,74 +72,51 @@ object anon {
       __obj.asInstanceOf[ElementEnvironment]
     }
     
-    @scala.inline
-    implicit class ElementEnvironmentMutableBuilder[Self <: ElementEnvironment] (val x: Self) extends AnyVal {
+    extension [Self <: ElementEnvironment](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      @scala.inline
-      def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
+      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
       
-      @scala.inline
-      def setCode(value: js.UndefOr[String] & String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: js.UndefOr[String] & String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setElement(value: js.UndefOr[Element] & Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: js.UndefOr[Element] & Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrammar(value: js.UndefOr[Grammar] & Grammar): Self = StObject.set(x, "grammar", value.asInstanceOf[js.Any])
+      inline def setGrammar(value: js.UndefOr[Grammar] & Grammar): Self = StObject.set(x, "grammar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightedCode(value: String): Self = StObject.set(x, "highlightedCode", value.asInstanceOf[js.Any])
+      inline def setHighlightedCode(value: String): Self = StObject.set(x, "highlightedCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightedCodeUndefined: Self = StObject.set(x, "highlightedCode", js.undefined)
+      inline def setHighlightedCodeUndefined: Self = StObject.set(x, "highlightedCode", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: js.UndefOr[String] & String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: js.UndefOr[String] & String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: js.Array[String | Token]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: js.Array[String | Token]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setParentVarargs(value: (String | Token)*): Self = StObject.set(x, "parent", js.Array(value :_*))
+      inline def setParentVarargs(value: (String | Token)*): Self = StObject.set(x, "parent", js.Array(value :_*))
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -173,8 +149,7 @@ object anon {
   }
   object ElementHighlightedEnviron {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       code: js.UndefOr[String] & String,
       element: js.UndefOr[Element] & Element,
       grammar: js.UndefOr[Grammar] & Grammar,
@@ -185,71 +160,49 @@ object anon {
       __obj.asInstanceOf[ElementHighlightedEnviron]
     }
     
-    @scala.inline
-    implicit class ElementHighlightedEnvironMutableBuilder[Self <: ElementHighlightedEnviron] (val x: Self) extends AnyVal {
+    extension [Self <: ElementHighlightedEnviron](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      @scala.inline
-      def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
+      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
       
-      @scala.inline
-      def setCode(value: js.UndefOr[String] & String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: js.UndefOr[String] & String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setElement(value: js.UndefOr[Element] & Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: js.UndefOr[Element] & Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrammar(value: js.UndefOr[Grammar] & Grammar): Self = StObject.set(x, "grammar", value.asInstanceOf[js.Any])
+      inline def setGrammar(value: js.UndefOr[Grammar] & Grammar): Self = StObject.set(x, "grammar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightedCode(value: js.UndefOr[String] & String): Self = StObject.set(x, "highlightedCode", value.asInstanceOf[js.Any])
+      inline def setHighlightedCode(value: js.UndefOr[String] & String): Self = StObject.set(x, "highlightedCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: js.UndefOr[String] & String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: js.UndefOr[String] & String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: js.Array[String | Token]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: js.Array[String | Token]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setParentVarargs(value: (String | Token)*): Self = StObject.set(x, "parent", js.Array(value :_*))
+      inline def setParentVarargs(value: (String | Token)*): Self = StObject.set(x, "parent", js.Array(value :_*))
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -282,89 +235,62 @@ object anon {
   }
   object RequiredEnvironmentselect {
     
-    @scala.inline
-    def apply(selector: js.UndefOr[String] & String): RequiredEnvironmentselect = {
+    inline def apply(selector: js.UndefOr[String] & String): RequiredEnvironmentselect = {
       val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredEnvironmentselect]
     }
     
-    @scala.inline
-    implicit class RequiredEnvironmentselectMutableBuilder[Self <: RequiredEnvironmentselect] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredEnvironmentselect](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      @scala.inline
-      def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
+      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setGrammar(value: Grammar): Self = StObject.set(x, "grammar", value.asInstanceOf[js.Any])
+      inline def setGrammar(value: Grammar): Self = StObject.set(x, "grammar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrammarUndefined: Self = StObject.set(x, "grammar", js.undefined)
+      inline def setGrammarUndefined: Self = StObject.set(x, "grammar", js.undefined)
       
-      @scala.inline
-      def setHighlightedCode(value: String): Self = StObject.set(x, "highlightedCode", value.asInstanceOf[js.Any])
+      inline def setHighlightedCode(value: String): Self = StObject.set(x, "highlightedCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightedCodeUndefined: Self = StObject.set(x, "highlightedCode", js.undefined)
+      inline def setHighlightedCodeUndefined: Self = StObject.set(x, "highlightedCode", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setParent(value: js.Array[String | Token]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: js.Array[String | Token]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setParentVarargs(value: (String | Token)*): Self = StObject.set(x, "parent", js.Array(value :_*))
+      inline def setParentVarargs(value: (String | Token)*): Self = StObject.set(x, "parent", js.Array(value :_*))
       
-      @scala.inline
-      def setSelector(value: js.UndefOr[String] & String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: js.UndefOr[String] & String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -397,8 +323,7 @@ object anon {
   }
   object RequiredEnvironmenttypeco {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: (js.UndefOr[Record[String, String]]) & (Record[String, String]),
       classes: js.UndefOr[js.Array[String]] & js.Array[String],
       content: js.UndefOr[String] & String,
@@ -411,65 +336,45 @@ object anon {
       __obj.asInstanceOf[RequiredEnvironmenttypeco]
     }
     
-    @scala.inline
-    implicit class RequiredEnvironmenttypecoMutableBuilder[Self <: RequiredEnvironmenttypeco] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredEnvironmenttypeco](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: (js.UndefOr[Record[String, String]]) & (Record[String, String])): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: (js.UndefOr[Record[String, String]]) & (Record[String, String])): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClasses(value: js.UndefOr[js.Array[String]] & js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: js.UndefOr[js.Array[String]] & js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setContent(value: js.UndefOr[String] & String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: js.UndefOr[String] & String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setGrammar(value: Grammar): Self = StObject.set(x, "grammar", value.asInstanceOf[js.Any])
+      inline def setGrammar(value: Grammar): Self = StObject.set(x, "grammar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrammarUndefined: Self = StObject.set(x, "grammar", js.undefined)
+      inline def setGrammarUndefined: Self = StObject.set(x, "grammar", js.undefined)
       
-      @scala.inline
-      def setHighlightedCode(value: String): Self = StObject.set(x, "highlightedCode", value.asInstanceOf[js.Any])
+      inline def setHighlightedCode(value: String): Self = StObject.set(x, "highlightedCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightedCodeUndefined: Self = StObject.set(x, "highlightedCode", js.undefined)
+      inline def setHighlightedCodeUndefined: Self = StObject.set(x, "highlightedCode", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: js.UndefOr[String] & String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: js.UndefOr[String] & String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: js.Array[String | Token]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: js.Array[String | Token]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setParentVarargs(value: (String | Token)*): Self = StObject.set(x, "parent", js.Array(value :_*))
+      inline def setParentVarargs(value: (String | Token)*): Self = StObject.set(x, "parent", js.Array(value :_*))
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
-      @scala.inline
-      def setTag(value: js.UndefOr[String] & String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: js.UndefOr[String] & String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: js.UndefOr[String] & String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.UndefOr[String] & String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -502,8 +407,7 @@ object anon {
   }
   object TokenizeEnvironment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       code: js.UndefOr[String] & String,
       grammar: js.UndefOr[Grammar] & Grammar,
       language: js.UndefOr[String] & String
@@ -512,77 +416,53 @@ object anon {
       __obj.asInstanceOf[TokenizeEnvironment]
     }
     
-    @scala.inline
-    implicit class TokenizeEnvironmentMutableBuilder[Self <: TokenizeEnvironment] (val x: Self) extends AnyVal {
+    extension [Self <: TokenizeEnvironment](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      @scala.inline
-      def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
+      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
       
-      @scala.inline
-      def setCode(value: js.UndefOr[String] & String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: js.UndefOr[String] & String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setGrammar(value: js.UndefOr[Grammar] & Grammar): Self = StObject.set(x, "grammar", value.asInstanceOf[js.Any])
+      inline def setGrammar(value: js.UndefOr[Grammar] & Grammar): Self = StObject.set(x, "grammar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightedCode(value: String): Self = StObject.set(x, "highlightedCode", value.asInstanceOf[js.Any])
+      inline def setHighlightedCode(value: String): Self = StObject.set(x, "highlightedCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightedCodeUndefined: Self = StObject.set(x, "highlightedCode", js.undefined)
+      inline def setHighlightedCodeUndefined: Self = StObject.set(x, "highlightedCode", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: js.UndefOr[String] & String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: js.UndefOr[String] & String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: js.Array[String | Token]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: js.Array[String | Token]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setParentVarargs(value: (String | Token)*): Self = StObject.set(x, "parent", js.Array(value :_*))
+      inline def setParentVarargs(value: (String | Token)*): Self = StObject.set(x, "parent", js.Array(value :_*))
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   

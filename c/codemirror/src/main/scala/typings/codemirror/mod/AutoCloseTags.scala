@@ -35,49 +35,35 @@ trait AutoCloseTags extends StObject {
 }
 object AutoCloseTags {
   
-  @scala.inline
-  def apply(emptyTags: js.Array[String]): AutoCloseTags = {
+  inline def apply(emptyTags: js.Array[String]): AutoCloseTags = {
     val __obj = js.Dynamic.literal(emptyTags = emptyTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoCloseTags]
   }
   
-  @scala.inline
-  implicit class AutoCloseTagsMutableBuilder[Self <: AutoCloseTags] (val x: Self) extends AnyVal {
+  extension [Self <: AutoCloseTags](x: Self) {
     
-    @scala.inline
-    def setDontCloseTags(value: js.Array[String]): Self = StObject.set(x, "dontCloseTags", value.asInstanceOf[js.Any])
+    inline def setDontCloseTags(value: js.Array[String]): Self = StObject.set(x, "dontCloseTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDontCloseTagsUndefined: Self = StObject.set(x, "dontCloseTags", js.undefined)
+    inline def setDontCloseTagsUndefined: Self = StObject.set(x, "dontCloseTags", js.undefined)
     
-    @scala.inline
-    def setDontCloseTagsVarargs(value: String*): Self = StObject.set(x, "dontCloseTags", js.Array(value :_*))
+    inline def setDontCloseTagsVarargs(value: String*): Self = StObject.set(x, "dontCloseTags", js.Array(value :_*))
     
-    @scala.inline
-    def setEmptyTags(value: js.Array[String]): Self = StObject.set(x, "emptyTags", value.asInstanceOf[js.Any])
+    inline def setEmptyTags(value: js.Array[String]): Self = StObject.set(x, "emptyTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyTagsVarargs(value: String*): Self = StObject.set(x, "emptyTags", js.Array(value :_*))
+    inline def setEmptyTagsVarargs(value: String*): Self = StObject.set(x, "emptyTags", js.Array(value :_*))
     
-    @scala.inline
-    def setIndentTags(value: js.Array[String]): Self = StObject.set(x, "indentTags", value.asInstanceOf[js.Any])
+    inline def setIndentTags(value: js.Array[String]): Self = StObject.set(x, "indentTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentTagsUndefined: Self = StObject.set(x, "indentTags", js.undefined)
+    inline def setIndentTagsUndefined: Self = StObject.set(x, "indentTags", js.undefined)
     
-    @scala.inline
-    def setIndentTagsVarargs(value: String*): Self = StObject.set(x, "indentTags", js.Array(value :_*))
+    inline def setIndentTagsVarargs(value: String*): Self = StObject.set(x, "indentTags", js.Array(value :_*))
     
-    @scala.inline
-    def setWhenClosing(value: Boolean): Self = StObject.set(x, "whenClosing", value.asInstanceOf[js.Any])
+    inline def setWhenClosing(value: Boolean): Self = StObject.set(x, "whenClosing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhenClosingUndefined: Self = StObject.set(x, "whenClosing", js.undefined)
+    inline def setWhenClosingUndefined: Self = StObject.set(x, "whenClosing", js.undefined)
     
-    @scala.inline
-    def setWhenOpening(value: Boolean): Self = StObject.set(x, "whenOpening", value.asInstanceOf[js.Any])
+    inline def setWhenOpening(value: Boolean): Self = StObject.set(x, "whenOpening", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhenOpeningUndefined: Self = StObject.set(x, "whenOpening", js.undefined)
+    inline def setWhenOpeningUndefined: Self = StObject.set(x, "whenOpening", js.undefined)
   }
 }

@@ -14,19 +14,15 @@ trait SyncEventType extends StObject {
 }
 object SyncEventType {
   
-  @scala.inline
-  def apply(SyncEventType: MsoSyncEventType, Wb: Workbook): SyncEventType = {
+  inline def apply(SyncEventType: MsoSyncEventType, Wb: Workbook): SyncEventType = {
     val __obj = js.Dynamic.literal(SyncEventType = SyncEventType.asInstanceOf[js.Any], Wb = Wb.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncEventType]
   }
   
-  @scala.inline
-  implicit class SyncEventTypeMutableBuilder[Self <: SyncEventType] (val x: Self) extends AnyVal {
+  extension [Self <: SyncEventType](x: Self) {
     
-    @scala.inline
-    def setSyncEventType(value: MsoSyncEventType): Self = StObject.set(x, "SyncEventType", value.asInstanceOf[js.Any])
+    inline def setSyncEventType(value: MsoSyncEventType): Self = StObject.set(x, "SyncEventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWb(value: Workbook): Self = StObject.set(x, "Wb", value.asInstanceOf[js.Any])
+    inline def setWb(value: Workbook): Self = StObject.set(x, "Wb", value.asInstanceOf[js.Any])
   }
 }

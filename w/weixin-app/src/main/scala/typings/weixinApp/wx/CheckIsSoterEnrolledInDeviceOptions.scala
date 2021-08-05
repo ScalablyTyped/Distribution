@@ -17,22 +17,17 @@ trait CheckIsSoterEnrolledInDeviceOptions
 }
 object CheckIsSoterEnrolledInDeviceOptions {
   
-  @scala.inline
-  def apply(checkAuthMode: AuthModes): CheckIsSoterEnrolledInDeviceOptions = {
+  inline def apply(checkAuthMode: AuthModes): CheckIsSoterEnrolledInDeviceOptions = {
     val __obj = js.Dynamic.literal(checkAuthMode = checkAuthMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckIsSoterEnrolledInDeviceOptions]
   }
   
-  @scala.inline
-  implicit class CheckIsSoterEnrolledInDeviceOptionsMutableBuilder[Self <: CheckIsSoterEnrolledInDeviceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CheckIsSoterEnrolledInDeviceOptions](x: Self) {
     
-    @scala.inline
-    def setCheckAuthMode(value: AuthModes): Self = StObject.set(x, "checkAuthMode", value.asInstanceOf[js.Any])
+    inline def setCheckAuthMode(value: AuthModes): Self = StObject.set(x, "checkAuthMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ IsEnrolled => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ IsEnrolled => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

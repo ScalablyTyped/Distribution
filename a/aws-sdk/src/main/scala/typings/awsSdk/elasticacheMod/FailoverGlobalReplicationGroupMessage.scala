@@ -23,22 +23,17 @@ trait FailoverGlobalReplicationGroupMessage extends StObject {
 }
 object FailoverGlobalReplicationGroupMessage {
   
-  @scala.inline
-  def apply(GlobalReplicationGroupId: String, PrimaryRegion: String, PrimaryReplicationGroupId: String): FailoverGlobalReplicationGroupMessage = {
+  inline def apply(GlobalReplicationGroupId: String, PrimaryRegion: String, PrimaryReplicationGroupId: String): FailoverGlobalReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(GlobalReplicationGroupId = GlobalReplicationGroupId.asInstanceOf[js.Any], PrimaryRegion = PrimaryRegion.asInstanceOf[js.Any], PrimaryReplicationGroupId = PrimaryReplicationGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailoverGlobalReplicationGroupMessage]
   }
   
-  @scala.inline
-  implicit class FailoverGlobalReplicationGroupMessageMutableBuilder[Self <: FailoverGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: FailoverGlobalReplicationGroupMessage](x: Self) {
     
-    @scala.inline
-    def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryRegion(value: String): Self = StObject.set(x, "PrimaryRegion", value.asInstanceOf[js.Any])
+    inline def setPrimaryRegion(value: String): Self = StObject.set(x, "PrimaryRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryReplicationGroupId(value: String): Self = StObject.set(x, "PrimaryReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setPrimaryReplicationGroupId(value: String): Self = StObject.set(x, "PrimaryReplicationGroupId", value.asInstanceOf[js.Any])
   }
 }

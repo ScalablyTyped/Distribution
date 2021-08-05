@@ -96,34 +96,25 @@ trait ClientConfig extends StObject {
 }
 object ClientConfig {
   
-  @scala.inline
-  def apply(codec: vp8_ | h264_, mode: live | rtc): ClientConfig = {
+  inline def apply(codec: vp8_ | h264_, mode: live | rtc): ClientConfig = {
     val __obj = js.Dynamic.literal(codec = codec.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientConfig]
   }
   
-  @scala.inline
-  implicit class ClientConfigMutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ClientConfig](x: Self) {
     
-    @scala.inline
-    def setCodec(value: vp8_ | h264_): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: vp8_ | h264_): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: live | rtc): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: live | rtc): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyServer(value: String): Self = StObject.set(x, "proxyServer", value.asInstanceOf[js.Any])
+    inline def setProxyServer(value: String): Self = StObject.set(x, "proxyServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyServerUndefined: Self = StObject.set(x, "proxyServer", js.undefined)
+    inline def setProxyServerUndefined: Self = StObject.set(x, "proxyServer", js.undefined)
     
-    @scala.inline
-    def setTurnServer(value: js.Array[Forceturn]): Self = StObject.set(x, "turnServer", value.asInstanceOf[js.Any])
+    inline def setTurnServer(value: js.Array[Forceturn]): Self = StObject.set(x, "turnServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTurnServerUndefined: Self = StObject.set(x, "turnServer", js.undefined)
+    inline def setTurnServerUndefined: Self = StObject.set(x, "turnServer", js.undefined)
     
-    @scala.inline
-    def setTurnServerVarargs(value: Forceturn*): Self = StObject.set(x, "turnServer", js.Array(value :_*))
+    inline def setTurnServerVarargs(value: Forceturn*): Self = StObject.set(x, "turnServer", js.Array(value :_*))
   }
 }

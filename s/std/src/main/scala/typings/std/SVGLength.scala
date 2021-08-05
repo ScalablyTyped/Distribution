@@ -43,8 +43,7 @@ trait SVGLength extends StObject {
 }
 object SVGLength {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SVG_LENGTHTYPE_CM: Double,
     SVG_LENGTHTYPE_EMS: Double,
     SVG_LENGTHTYPE_EXS: Double,
@@ -67,58 +66,40 @@ object SVGLength {
     __obj.asInstanceOf[SVGLength]
   }
   
-  @scala.inline
-  implicit class SVGLengthMutableBuilder[Self <: SVGLength] (val x: Self) extends AnyVal {
+  extension [Self <: SVGLength](x: Self) {
     
-    @scala.inline
-    def setConvertToSpecifiedUnits(value: Double => Unit): Self = StObject.set(x, "convertToSpecifiedUnits", js.Any.fromFunction1(value))
+    inline def setConvertToSpecifiedUnits(value: Double => Unit): Self = StObject.set(x, "convertToSpecifiedUnits", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNewValueSpecifiedUnits(value: (Double, Double) => Unit): Self = StObject.set(x, "newValueSpecifiedUnits", js.Any.fromFunction2(value))
+    inline def setNewValueSpecifiedUnits(value: (Double, Double) => Unit): Self = StObject.set(x, "newValueSpecifiedUnits", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSVG_LENGTHTYPE_CM(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_CM", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_CM(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_CM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_LENGTHTYPE_EMS(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_EMS", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_EMS(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_EMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_LENGTHTYPE_EXS(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_EXS", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_EXS(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_EXS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_LENGTHTYPE_IN(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_IN", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_IN(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_IN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_LENGTHTYPE_MM(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_MM", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_MM(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_MM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_LENGTHTYPE_NUMBER(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_NUMBER", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_NUMBER(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_NUMBER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_LENGTHTYPE_PC(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_PC", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_PC(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_PC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_LENGTHTYPE_PERCENTAGE(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_PERCENTAGE", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_PERCENTAGE(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_PERCENTAGE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_LENGTHTYPE_PT(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_PT", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_PT(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_PT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_LENGTHTYPE_PX(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_PX", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_PX(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_PX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVG_LENGTHTYPE_UNKNOWN(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_UNKNOWN", value.asInstanceOf[js.Any])
+    inline def setSVG_LENGTHTYPE_UNKNOWN(value: Double): Self = StObject.set(x, "SVG_LENGTHTYPE_UNKNOWN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitType(value: Double): Self = StObject.set(x, "unitType", value.asInstanceOf[js.Any])
+    inline def setUnitType(value: Double): Self = StObject.set(x, "unitType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueAsString(value: java.lang.String): Self = StObject.set(x, "valueAsString", value.asInstanceOf[js.Any])
+    inline def setValueAsString(value: java.lang.String): Self = StObject.set(x, "valueAsString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueInSpecifiedUnits(value: Double): Self = StObject.set(x, "valueInSpecifiedUnits", value.asInstanceOf[js.Any])
+    inline def setValueInSpecifiedUnits(value: Double): Self = StObject.set(x, "valueInSpecifiedUnits", value.asInstanceOf[js.Any])
   }
 }

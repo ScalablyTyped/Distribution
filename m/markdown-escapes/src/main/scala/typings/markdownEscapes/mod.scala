@@ -48,26 +48,20 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCommonmark(value: Boolean): Self = StObject.set(x, "commonmark", value.asInstanceOf[js.Any])
+      inline def setCommonmark(value: Boolean): Self = StObject.set(x, "commonmark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonmarkUndefined: Self = StObject.set(x, "commonmark", js.undefined)
+      inline def setCommonmarkUndefined: Self = StObject.set(x, "commonmark", js.undefined)
       
-      @scala.inline
-      def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
+      inline def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGfmUndefined: Self = StObject.set(x, "gfm", js.undefined)
+      inline def setGfmUndefined: Self = StObject.set(x, "gfm", js.undefined)
     }
   }
   

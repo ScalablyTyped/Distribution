@@ -73,71 +73,50 @@ trait DispatchMouseEventRequest extends StObject {
 }
 object DispatchMouseEventRequest {
   
-  @scala.inline
-  def apply(`type`: mousePressed | mouseReleased | mouseMoved | mouseWheel, x: Double, y: Double): DispatchMouseEventRequest = {
+  inline def apply(`type`: mousePressed | mouseReleased | mouseMoved | mouseWheel, x: Double, y: Double): DispatchMouseEventRequest = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DispatchMouseEventRequest]
   }
   
-  @scala.inline
-  implicit class DispatchMouseEventRequestMutableBuilder[Self <: DispatchMouseEventRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DispatchMouseEventRequest](x: Self) {
     
-    @scala.inline
-    def setButton(value: MouseButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: MouseButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setButtons(value: integer): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: integer): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setClickCount(value: integer): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
+    inline def setClickCount(value: integer): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
+    inline def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
     
-    @scala.inline
-    def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
+    inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaXUndefined: Self = StObject.set(x, "deltaX", js.undefined)
+    inline def setDeltaXUndefined: Self = StObject.set(x, "deltaX", js.undefined)
     
-    @scala.inline
-    def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
+    inline def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaYUndefined: Self = StObject.set(x, "deltaY", js.undefined)
+    inline def setDeltaYUndefined: Self = StObject.set(x, "deltaY", js.undefined)
     
-    @scala.inline
-    def setModifiers(value: integer): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: integer): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
+    inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
-    @scala.inline
-    def setPointerType(value: mouse | pen): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
+    inline def setPointerType(value: mouse | pen): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerTypeUndefined: Self = StObject.set(x, "pointerType", js.undefined)
+    inline def setPointerTypeUndefined: Self = StObject.set(x, "pointerType", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: TimeSinceEpoch): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: TimeSinceEpoch): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    @scala.inline
-    def setType(value: mousePressed | mouseReleased | mouseMoved | mouseWheel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: mousePressed | mouseReleased | mouseMoved | mouseWheel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

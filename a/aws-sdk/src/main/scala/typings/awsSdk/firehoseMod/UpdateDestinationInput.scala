@@ -53,8 +53,7 @@ trait UpdateDestinationInput extends StObject {
 }
 object UpdateDestinationInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentDeliveryStreamVersionId: DeliveryStreamVersionId,
     DeliveryStreamName: DeliveryStreamName,
     DestinationId: DestinationId
@@ -63,52 +62,36 @@ object UpdateDestinationInput {
     __obj.asInstanceOf[UpdateDestinationInput]
   }
   
-  @scala.inline
-  implicit class UpdateDestinationInputMutableBuilder[Self <: UpdateDestinationInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDestinationInput](x: Self) {
     
-    @scala.inline
-    def setCurrentDeliveryStreamVersionId(value: DeliveryStreamVersionId): Self = StObject.set(x, "CurrentDeliveryStreamVersionId", value.asInstanceOf[js.Any])
+    inline def setCurrentDeliveryStreamVersionId(value: DeliveryStreamVersionId): Self = StObject.set(x, "CurrentDeliveryStreamVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationId(value: DestinationId): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
+    inline def setDestinationId(value: DestinationId): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticsearchDestinationUpdate(value: ElasticsearchDestinationUpdate): Self = StObject.set(x, "ElasticsearchDestinationUpdate", value.asInstanceOf[js.Any])
+    inline def setElasticsearchDestinationUpdate(value: ElasticsearchDestinationUpdate): Self = StObject.set(x, "ElasticsearchDestinationUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticsearchDestinationUpdateUndefined: Self = StObject.set(x, "ElasticsearchDestinationUpdate", js.undefined)
+    inline def setElasticsearchDestinationUpdateUndefined: Self = StObject.set(x, "ElasticsearchDestinationUpdate", js.undefined)
     
-    @scala.inline
-    def setExtendedS3DestinationUpdate(value: ExtendedS3DestinationUpdate): Self = StObject.set(x, "ExtendedS3DestinationUpdate", value.asInstanceOf[js.Any])
+    inline def setExtendedS3DestinationUpdate(value: ExtendedS3DestinationUpdate): Self = StObject.set(x, "ExtendedS3DestinationUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedS3DestinationUpdateUndefined: Self = StObject.set(x, "ExtendedS3DestinationUpdate", js.undefined)
+    inline def setExtendedS3DestinationUpdateUndefined: Self = StObject.set(x, "ExtendedS3DestinationUpdate", js.undefined)
     
-    @scala.inline
-    def setHttpEndpointDestinationUpdate(value: HttpEndpointDestinationUpdate): Self = StObject.set(x, "HttpEndpointDestinationUpdate", value.asInstanceOf[js.Any])
+    inline def setHttpEndpointDestinationUpdate(value: HttpEndpointDestinationUpdate): Self = StObject.set(x, "HttpEndpointDestinationUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpEndpointDestinationUpdateUndefined: Self = StObject.set(x, "HttpEndpointDestinationUpdate", js.undefined)
+    inline def setHttpEndpointDestinationUpdateUndefined: Self = StObject.set(x, "HttpEndpointDestinationUpdate", js.undefined)
     
-    @scala.inline
-    def setRedshiftDestinationUpdate(value: RedshiftDestinationUpdate): Self = StObject.set(x, "RedshiftDestinationUpdate", value.asInstanceOf[js.Any])
+    inline def setRedshiftDestinationUpdate(value: RedshiftDestinationUpdate): Self = StObject.set(x, "RedshiftDestinationUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedshiftDestinationUpdateUndefined: Self = StObject.set(x, "RedshiftDestinationUpdate", js.undefined)
+    inline def setRedshiftDestinationUpdateUndefined: Self = StObject.set(x, "RedshiftDestinationUpdate", js.undefined)
     
-    @scala.inline
-    def setS3DestinationUpdate(value: S3DestinationUpdate): Self = StObject.set(x, "S3DestinationUpdate", value.asInstanceOf[js.Any])
+    inline def setS3DestinationUpdate(value: S3DestinationUpdate): Self = StObject.set(x, "S3DestinationUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3DestinationUpdateUndefined: Self = StObject.set(x, "S3DestinationUpdate", js.undefined)
+    inline def setS3DestinationUpdateUndefined: Self = StObject.set(x, "S3DestinationUpdate", js.undefined)
     
-    @scala.inline
-    def setSplunkDestinationUpdate(value: SplunkDestinationUpdate): Self = StObject.set(x, "SplunkDestinationUpdate", value.asInstanceOf[js.Any])
+    inline def setSplunkDestinationUpdate(value: SplunkDestinationUpdate): Self = StObject.set(x, "SplunkDestinationUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplunkDestinationUpdateUndefined: Self = StObject.set(x, "SplunkDestinationUpdate", js.undefined)
+    inline def setSplunkDestinationUpdateUndefined: Self = StObject.set(x, "SplunkDestinationUpdate", js.undefined)
   }
 }

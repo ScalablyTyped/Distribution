@@ -29,7 +29,6 @@ object colorPickerMod {
     @JSImport("office-ui-fabric-react/lib/components/ColorPicker", "ColorPickerBase.defaultProps")
     @js.native
     def defaultProps: PartialIColorPickerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialIColorPickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialIColorPickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

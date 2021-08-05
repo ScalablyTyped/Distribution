@@ -16,7 +16,7 @@ object optionsReaderMod {
     
     def document: js.UndefOr[Document] = js.native
     
-    var globalContext: js.Any = js.native
+    /* private */ var globalContext: js.Any = js.native
     
     def window: js.UndefOr[Window] = js.native
   }

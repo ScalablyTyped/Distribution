@@ -19,25 +19,19 @@ trait AccountYouTubeChannelLink extends StObject {
 }
 object AccountYouTubeChannelLink {
   
-  @scala.inline
-  def apply(): AccountYouTubeChannelLink = {
+  inline def apply(): AccountYouTubeChannelLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountYouTubeChannelLink]
   }
   
-  @scala.inline
-  implicit class AccountYouTubeChannelLinkMutableBuilder[Self <: AccountYouTubeChannelLink] (val x: Self) extends AnyVal {
+  extension [Self <: AccountYouTubeChannelLink](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

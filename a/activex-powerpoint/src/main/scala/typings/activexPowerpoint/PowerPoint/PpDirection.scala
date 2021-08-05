@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpDirection extends StObject
 object PpDirection {
   
-  @scala.inline
-  def ppDirectionLeftToRight: `1` = 1.asInstanceOf[`1`]
+  inline def ppDirectionLeftToRight: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppDirectionMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def ppDirectionMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def ppDirectionRightToLeft: `2` = 2.asInstanceOf[`2`]
+  inline def ppDirectionRightToLeft: `2` = 2.asInstanceOf[`2`]
 }

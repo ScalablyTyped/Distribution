@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BoundObjectFrame extends StObject {
   
-  @JSName("Access.BoundObjectFrame_typekey")
+  /* private */ @JSName("Access.BoundObjectFrame_typekey")
   var AccessDotBoundObjectFrame_typekey: BoundObjectFrame = js.native
   
   var Action: Double = js.native

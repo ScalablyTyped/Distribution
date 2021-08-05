@@ -13,6 +13,5 @@ class DataObjectFormatCollection ()
   extends typings.xadesjs.xmlMod.DataObjectFormatCollection
 object DataObjectFormatCollection {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.DataObjectFormatCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("DataObjectFormatCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.DataObjectFormatCollection]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.DataObjectFormatCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("DataObjectFormatCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.DataObjectFormatCollection]]
 }

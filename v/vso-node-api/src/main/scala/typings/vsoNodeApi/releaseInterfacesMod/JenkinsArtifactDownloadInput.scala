@@ -12,19 +12,15 @@ trait JenkinsArtifactDownloadInput
 }
 object JenkinsArtifactDownloadInput {
   
-  @scala.inline
-  def apply(alias: String, artifactDownloadMode: String, artifactItems: js.Array[String], artifactType: String): JenkinsArtifactDownloadInput = {
+  inline def apply(alias: String, artifactDownloadMode: String, artifactItems: js.Array[String], artifactType: String): JenkinsArtifactDownloadInput = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], artifactDownloadMode = artifactDownloadMode.asInstanceOf[js.Any], artifactItems = artifactItems.asInstanceOf[js.Any], artifactType = artifactType.asInstanceOf[js.Any])
     __obj.asInstanceOf[JenkinsArtifactDownloadInput]
   }
   
-  @scala.inline
-  implicit class JenkinsArtifactDownloadInputMutableBuilder[Self <: JenkinsArtifactDownloadInput] (val x: Self) extends AnyVal {
+  extension [Self <: JenkinsArtifactDownloadInput](x: Self) {
     
-    @scala.inline
-    def setArtifactItems(value: js.Array[String]): Self = StObject.set(x, "artifactItems", value.asInstanceOf[js.Any])
+    inline def setArtifactItems(value: js.Array[String]): Self = StObject.set(x, "artifactItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactItemsVarargs(value: String*): Self = StObject.set(x, "artifactItems", js.Array(value :_*))
+    inline def setArtifactItemsVarargs(value: String*): Self = StObject.set(x, "artifactItems", js.Array(value :_*))
   }
 }

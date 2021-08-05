@@ -10,16 +10,13 @@ trait SpatialManipulationDelta extends StObject {
 }
 object SpatialManipulationDelta {
   
-  @scala.inline
-  def apply(translation: js.Any): SpatialManipulationDelta = {
+  inline def apply(translation: js.Any): SpatialManipulationDelta = {
     val __obj = js.Dynamic.literal(translation = translation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialManipulationDelta]
   }
   
-  @scala.inline
-  implicit class SpatialManipulationDeltaMutableBuilder[Self <: SpatialManipulationDelta] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialManipulationDelta](x: Self) {
     
-    @scala.inline
-    def setTranslation(value: js.Any): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
+    inline def setTranslation(value: js.Any): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
   }
 }

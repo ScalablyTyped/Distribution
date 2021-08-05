@@ -30,8 +30,7 @@ trait IAsyncOperationWithProgress[TResult, TProgress]
 }
 object IAsyncOperationWithProgress {
   
-  @scala.inline
-  def apply[TResult, TProgress](
+  inline def apply[TResult, TProgress](
     cancel: () => Unit,
     close: () => Unit,
     completed: (/* asyncInfo */ IAsyncOperationWithProgress[TResult, TProgress], /* asyncStatus */ AsyncStatus) => Unit,
@@ -45,18 +44,14 @@ object IAsyncOperationWithProgress {
     __obj.asInstanceOf[IAsyncOperationWithProgress[TResult, TProgress]]
   }
   
-  @scala.inline
-  implicit class IAsyncOperationWithProgressMutableBuilder[Self <: IAsyncOperationWithProgress[?, ?], TResult, TProgress] (val x: Self & (IAsyncOperationWithProgress[TResult, TProgress])) extends AnyVal {
+  extension [Self <: IAsyncOperationWithProgress[?, ?], TResult, TProgress](x: Self & (IAsyncOperationWithProgress[TResult, TProgress])) {
     
-    @scala.inline
-    def setCompleted(
+    inline def setCompleted(
       value: (/* asyncInfo */ IAsyncOperationWithProgress[TResult, TProgress], /* asyncStatus */ AsyncStatus) => Unit
     ): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetResults(value: () => TResult): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
+    inline def setGetResults(value: () => TResult): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProgress(value: (/* asyncInfo */ IAsyncOperationWithProgress[TResult, TProgress], TProgress) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
+    inline def setProgress(value: (/* asyncInfo */ IAsyncOperationWithProgress[TResult, TProgress], TProgress) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
   }
 }

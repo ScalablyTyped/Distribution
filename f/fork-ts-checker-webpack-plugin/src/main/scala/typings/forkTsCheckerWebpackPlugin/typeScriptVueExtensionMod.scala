@@ -12,6 +12,5 @@ object typeScriptVueExtensionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createTypeScriptVueExtension(configuration: TypeScriptVueExtensionConfiguration): TypeScriptExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptVueExtension")(configuration.asInstanceOf[js.Any]).asInstanceOf[TypeScriptExtension]
+  inline def createTypeScriptVueExtension(configuration: TypeScriptVueExtensionConfiguration): TypeScriptExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptVueExtension")(configuration.asInstanceOf[js.Any]).asInstanceOf[TypeScriptExtension]
 }

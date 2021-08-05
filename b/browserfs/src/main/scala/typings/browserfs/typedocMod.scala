@@ -82,8 +82,7 @@ object typedocMod {
   }
   object BrowserFS {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BFSRequire: FnCall,
       FileSystem: AsyncMirror,
       initialize: FileSystem => Unit,
@@ -93,20 +92,15 @@ object typedocMod {
       __obj.asInstanceOf[BrowserFS]
     }
     
-    @scala.inline
-    implicit class BrowserFSMutableBuilder[Self <: BrowserFS] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserFS](x: Self) {
       
-      @scala.inline
-      def setBFSRequire(value: FnCall): Self = StObject.set(x, "BFSRequire", value.asInstanceOf[js.Any])
+      inline def setBFSRequire(value: FnCall): Self = StObject.set(x, "BFSRequire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystem(value: AsyncMirror): Self = StObject.set(x, "FileSystem", value.asInstanceOf[js.Any])
+      inline def setFileSystem(value: AsyncMirror): Self = StObject.set(x, "FileSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialize(value: FileSystem => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+      inline def setInitialize(value: FileSystem => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInstall(value: js.Any => Unit): Self = StObject.set(x, "install", js.Any.fromFunction1(value))
+      inline def setInstall(value: js.Any => Unit): Self = StObject.set(x, "install", js.Any.fromFunction1(value))
     }
   }
 }

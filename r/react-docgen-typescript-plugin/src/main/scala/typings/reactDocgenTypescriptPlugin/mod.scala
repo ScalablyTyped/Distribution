@@ -27,15 +27,14 @@ object mod {
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
     ): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var name: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var options: js.Any = js.native
   }
   @JSImport("react-docgen-typescript-plugin/dist", JSImport.Default)
   @js.native
   def default: DocgenPluginType = js.native
-  @scala.inline
-  def default_=(x: DocgenPluginType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: DocgenPluginType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

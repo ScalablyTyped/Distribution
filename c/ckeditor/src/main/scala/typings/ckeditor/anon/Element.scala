@@ -13,19 +13,15 @@ trait Element extends StObject {
 }
 object Element {
   
-  @scala.inline
-  def apply(element: element, item: js.Any): Element = {
+  inline def apply(element: element, item: js.Any): Element = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
   
-  @scala.inline
-  implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+  extension [Self <: Element](x: Self) {
     
-    @scala.inline
-    def setElement(value: element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

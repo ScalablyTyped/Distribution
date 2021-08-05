@@ -12,22 +12,17 @@ trait AllowDisabling extends StObject {
 }
 object AllowDisabling {
   
-  @scala.inline
-  def apply(allowDisabling: Boolean): AllowDisabling = {
+  inline def apply(allowDisabling: Boolean): AllowDisabling = {
     val __obj = js.Dynamic.literal(allowDisabling = allowDisabling.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllowDisabling]
   }
   
-  @scala.inline
-  implicit class AllowDisablingMutableBuilder[Self <: AllowDisabling] (val x: Self) extends AnyVal {
+  extension [Self <: AllowDisabling](x: Self) {
     
-    @scala.inline
-    def setAllowDisabling(value: Boolean): Self = StObject.set(x, "allowDisabling", value.asInstanceOf[js.Any])
+    inline def setAllowDisabling(value: Boolean): Self = StObject.set(x, "allowDisabling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDefault(value: Boolean): Self = StObject.set(x, "includeDefault", value.asInstanceOf[js.Any])
+    inline def setIncludeDefault(value: Boolean): Self = StObject.set(x, "includeDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDefaultUndefined: Self = StObject.set(x, "includeDefault", js.undefined)
+    inline def setIncludeDefaultUndefined: Self = StObject.set(x, "includeDefault", js.undefined)
   }
 }

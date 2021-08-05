@@ -11,16 +11,13 @@ trait IToastNotificationFactory extends StObject {
 }
 object IToastNotificationFactory {
   
-  @scala.inline
-  def apply(createToastNotification: XmlDocument => ToastNotification): IToastNotificationFactory = {
+  inline def apply(createToastNotification: XmlDocument => ToastNotification): IToastNotificationFactory = {
     val __obj = js.Dynamic.literal(createToastNotification = js.Any.fromFunction1(createToastNotification))
     __obj.asInstanceOf[IToastNotificationFactory]
   }
   
-  @scala.inline
-  implicit class IToastNotificationFactoryMutableBuilder[Self <: IToastNotificationFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IToastNotificationFactory](x: Self) {
     
-    @scala.inline
-    def setCreateToastNotification(value: XmlDocument => ToastNotification): Self = StObject.set(x, "createToastNotification", js.Any.fromFunction1(value))
+    inline def setCreateToastNotification(value: XmlDocument => ToastNotification): Self = StObject.set(x, "createToastNotification", js.Any.fromFunction1(value))
   }
 }

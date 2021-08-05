@@ -13,19 +13,15 @@ trait CopyProductOutput extends StObject {
 }
 object CopyProductOutput {
   
-  @scala.inline
-  def apply(): CopyProductOutput = {
+  inline def apply(): CopyProductOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyProductOutput]
   }
   
-  @scala.inline
-  implicit class CopyProductOutputMutableBuilder[Self <: CopyProductOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CopyProductOutput](x: Self) {
     
-    @scala.inline
-    def setCopyProductToken(value: Id): Self = StObject.set(x, "CopyProductToken", value.asInstanceOf[js.Any])
+    inline def setCopyProductToken(value: Id): Self = StObject.set(x, "CopyProductToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyProductTokenUndefined: Self = StObject.set(x, "CopyProductToken", js.undefined)
+    inline def setCopyProductTokenUndefined: Self = StObject.set(x, "CopyProductToken", js.undefined)
   }
 }

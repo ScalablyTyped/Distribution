@@ -13,16 +13,13 @@ trait DescribePartnerEventSourceRequest extends StObject {
 }
 object DescribePartnerEventSourceRequest {
   
-  @scala.inline
-  def apply(Name: EventSourceName): DescribePartnerEventSourceRequest = {
+  inline def apply(Name: EventSourceName): DescribePartnerEventSourceRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePartnerEventSourceRequest]
   }
   
-  @scala.inline
-  implicit class DescribePartnerEventSourceRequestMutableBuilder[Self <: DescribePartnerEventSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePartnerEventSourceRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: EventSourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EventSourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

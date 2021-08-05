@@ -10,10 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(obj: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  @scala.inline
-  def default(obj: js.Object, options: OmitOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def default(obj: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def default(obj: js.Object, options: OmitOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   trait OmitOptions extends StObject {
     
@@ -21,20 +19,16 @@ object mod {
   }
   object OmitOptions {
     
-    @scala.inline
-    def apply(): OmitOptions = {
+    inline def apply(): OmitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OmitOptions]
     }
     
-    @scala.inline
-    implicit class OmitOptionsMutableBuilder[Self <: OmitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OmitOptions](x: Self) {
       
-      @scala.inline
-      def setOmitZero(value: Boolean): Self = StObject.set(x, "omitZero", value.asInstanceOf[js.Any])
+      inline def setOmitZero(value: Boolean): Self = StObject.set(x, "omitZero", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOmitZeroUndefined: Self = StObject.set(x, "omitZero", js.undefined)
+      inline def setOmitZeroUndefined: Self = StObject.set(x, "omitZero", js.undefined)
     }
   }
 }

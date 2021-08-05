@@ -28,8 +28,7 @@ trait XSpreadsheets2
 }
 object XSpreadsheets2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
@@ -52,10 +51,8 @@ object XSpreadsheets2 {
     __obj.asInstanceOf[XSpreadsheets2]
   }
   
-  @scala.inline
-  implicit class XSpreadsheets2MutableBuilder[Self <: XSpreadsheets2] (val x: Self) extends AnyVal {
+  extension [Self <: XSpreadsheets2](x: Self) {
     
-    @scala.inline
-    def setImportSheet(value: (XSpreadsheetDocument, String, Double) => Double): Self = StObject.set(x, "importSheet", js.Any.fromFunction3(value))
+    inline def setImportSheet(value: (XSpreadsheetDocument, String, Double) => Double): Self = StObject.set(x, "importSheet", js.Any.fromFunction3(value))
   }
 }

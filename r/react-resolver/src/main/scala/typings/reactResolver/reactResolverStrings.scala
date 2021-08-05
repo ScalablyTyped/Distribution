@@ -8,6 +8,5 @@ object reactResolverStrings {
   
   @js.native
   sealed trait resolve extends StObject
-  @scala.inline
-  def resolve: resolve = "resolve".asInstanceOf[resolve]
+  inline def resolve: resolve = "resolve".asInstanceOf[resolve]
 }

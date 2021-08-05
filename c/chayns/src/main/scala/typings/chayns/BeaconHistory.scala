@@ -13,19 +13,15 @@ trait BeaconHistory extends StObject {
 }
 object BeaconHistory {
   
-  @scala.inline
-  def apply(id: Double, timestamp: Double): BeaconHistory = {
+  inline def apply(id: Double, timestamp: Double): BeaconHistory = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeaconHistory]
   }
   
-  @scala.inline
-  implicit class BeaconHistoryMutableBuilder[Self <: BeaconHistory] (val x: Self) extends AnyVal {
+  extension [Self <: BeaconHistory](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

@@ -55,21 +55,16 @@ object dashboardMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Dashboard = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Dashboard]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Dashboard = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Dashboard]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DashboardState): Dashboard = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Dashboard]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DashboardState, opts: CustomResourceOptions): Dashboard = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Dashboard]
+    inline def get(name: String, id: Input[ID]): Dashboard = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Dashboard]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Dashboard = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Dashboard]
+    inline def get(name: String, id: Input[ID], state: DashboardState): Dashboard = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Dashboard]
+    inline def get(name: String, id: Input[ID], state: DashboardState, opts: CustomResourceOptions): Dashboard = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Dashboard]
     
     /**
       * Returns true if the given object is an instance of Dashboard.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/dashboard.Dashboard */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/dashboard.Dashboard */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/dashboard.Dashboard */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/dashboard.Dashboard */ Boolean]
   }
   
   trait DashboardArgs extends StObject {
@@ -86,20 +81,16 @@ object dashboardMod {
   }
   object DashboardArgs {
     
-    @scala.inline
-    def apply(dashboardBody: Input[String], dashboardName: Input[String]): DashboardArgs = {
+    inline def apply(dashboardBody: Input[String], dashboardName: Input[String]): DashboardArgs = {
       val __obj = js.Dynamic.literal(dashboardBody = dashboardBody.asInstanceOf[js.Any], dashboardName = dashboardName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DashboardArgs]
     }
     
-    @scala.inline
-    implicit class DashboardArgsMutableBuilder[Self <: DashboardArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DashboardArgs](x: Self) {
       
-      @scala.inline
-      def setDashboardBody(value: Input[String]): Self = StObject.set(x, "dashboardBody", value.asInstanceOf[js.Any])
+      inline def setDashboardBody(value: Input[String]): Self = StObject.set(x, "dashboardBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDashboardName(value: Input[String]): Self = StObject.set(x, "dashboardName", value.asInstanceOf[js.Any])
+      inline def setDashboardName(value: Input[String]): Self = StObject.set(x, "dashboardName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,32 +113,24 @@ object dashboardMod {
   }
   object DashboardState {
     
-    @scala.inline
-    def apply(): DashboardState = {
+    inline def apply(): DashboardState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DashboardState]
     }
     
-    @scala.inline
-    implicit class DashboardStateMutableBuilder[Self <: DashboardState] (val x: Self) extends AnyVal {
+    extension [Self <: DashboardState](x: Self) {
       
-      @scala.inline
-      def setDashboardArn(value: Input[String]): Self = StObject.set(x, "dashboardArn", value.asInstanceOf[js.Any])
+      inline def setDashboardArn(value: Input[String]): Self = StObject.set(x, "dashboardArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDashboardArnUndefined: Self = StObject.set(x, "dashboardArn", js.undefined)
+      inline def setDashboardArnUndefined: Self = StObject.set(x, "dashboardArn", js.undefined)
       
-      @scala.inline
-      def setDashboardBody(value: Input[String]): Self = StObject.set(x, "dashboardBody", value.asInstanceOf[js.Any])
+      inline def setDashboardBody(value: Input[String]): Self = StObject.set(x, "dashboardBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDashboardBodyUndefined: Self = StObject.set(x, "dashboardBody", js.undefined)
+      inline def setDashboardBodyUndefined: Self = StObject.set(x, "dashboardBody", js.undefined)
       
-      @scala.inline
-      def setDashboardName(value: Input[String]): Self = StObject.set(x, "dashboardName", value.asInstanceOf[js.Any])
+      inline def setDashboardName(value: Input[String]): Self = StObject.set(x, "dashboardName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDashboardNameUndefined: Self = StObject.set(x, "dashboardName", js.undefined)
+      inline def setDashboardNameUndefined: Self = StObject.set(x, "dashboardName", js.undefined)
     }
   }
 }

@@ -13,19 +13,15 @@ trait StartEntitiesDetectionV2JobResponse extends StObject {
 }
 object StartEntitiesDetectionV2JobResponse {
   
-  @scala.inline
-  def apply(): StartEntitiesDetectionV2JobResponse = {
+  inline def apply(): StartEntitiesDetectionV2JobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartEntitiesDetectionV2JobResponse]
   }
   
-  @scala.inline
-  implicit class StartEntitiesDetectionV2JobResponseMutableBuilder[Self <: StartEntitiesDetectionV2JobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartEntitiesDetectionV2JobResponse](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
   }
 }

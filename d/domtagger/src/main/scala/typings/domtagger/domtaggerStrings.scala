@@ -8,6 +8,5 @@ object domtaggerStrings {
   
   @js.native
   sealed trait svg extends StObject
-  @scala.inline
-  def svg: svg = "svg".asInstanceOf[svg]
+  inline def svg: svg = "svg".asInstanceOf[svg]
 }

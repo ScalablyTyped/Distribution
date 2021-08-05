@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLPerformanceTiming")
 @js.native
-class IHTMLPerformanceTiming protected ()
+/* private */ class IHTMLPerformanceTiming ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLPerformanceTiming {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IHTMLPerformanceTiming_typekey")
   var MSHTMLDotIHTMLPerformanceTiming_typekey: typings.activexMshtml.MSHTML.IHTMLPerformanceTiming = js.native
   

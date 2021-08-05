@@ -20,49 +20,35 @@ trait UIkitScrollspyOptions extends StObject {
 }
 object UIkitScrollspyOptions {
   
-  @scala.inline
-  def apply(): UIkitScrollspyOptions = {
+  inline def apply(): UIkitScrollspyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UIkitScrollspyOptions]
   }
   
-  @scala.inline
-  implicit class UIkitScrollspyOptionsMutableBuilder[Self <: UIkitScrollspyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitScrollspyOptions](x: Self) {
     
-    @scala.inline
-    def setCls(value: String): Self = StObject.set(x, "cls", value.asInstanceOf[js.Any])
+    inline def setCls(value: String): Self = StObject.set(x, "cls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClsUndefined: Self = StObject.set(x, "cls", js.undefined)
+    inline def setClsUndefined: Self = StObject.set(x, "cls", js.undefined)
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def `setOffset-left`(value: Double): Self = StObject.set(x, "offset-left", value.asInstanceOf[js.Any])
+    inline def `setOffset-left`(value: Double): Self = StObject.set(x, "offset-left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOffset-leftUndefined`: Self = StObject.set(x, "offset-left", js.undefined)
+    inline def `setOffset-leftUndefined`: Self = StObject.set(x, "offset-left", js.undefined)
     
-    @scala.inline
-    def `setOffset-top`(value: Double): Self = StObject.set(x, "offset-top", value.asInstanceOf[js.Any])
+    inline def `setOffset-top`(value: Double): Self = StObject.set(x, "offset-top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOffset-topUndefined`: Self = StObject.set(x, "offset-top", js.undefined)
+    inline def `setOffset-topUndefined`: Self = StObject.set(x, "offset-top", js.undefined)
     
-    @scala.inline
-    def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+    inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
   }
 }

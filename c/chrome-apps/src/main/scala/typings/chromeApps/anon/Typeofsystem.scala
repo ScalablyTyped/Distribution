@@ -70,8 +70,7 @@ trait Typeofsystem extends StObject {
 }
 object Typeofsystem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cpu: Typeofcpu,
     display: Typeofdisplay,
     memory: Typeofmemory,
@@ -83,25 +82,18 @@ object Typeofsystem {
     __obj.asInstanceOf[Typeofsystem]
   }
   
-  @scala.inline
-  implicit class TypeofsystemMutableBuilder[Self <: Typeofsystem] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofsystem](x: Self) {
     
-    @scala.inline
-    def setCpu(value: Typeofcpu): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+    inline def setCpu(value: Typeofcpu): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay(value: Typeofdisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: Typeofdisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemory(value: Typeofmemory): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+    inline def setMemory(value: Typeofmemory): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetwork(value: Typeofnetwork): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: Typeofnetwork): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerSource(value: TypeofpowerSource): Self = StObject.set(x, "powerSource", value.asInstanceOf[js.Any])
+    inline def setPowerSource(value: TypeofpowerSource): Self = StObject.set(x, "powerSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorage(value: TypeofstorageEjectDevice): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: TypeofstorageEjectDevice): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
   }
 }

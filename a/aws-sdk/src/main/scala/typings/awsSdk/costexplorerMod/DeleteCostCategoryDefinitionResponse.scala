@@ -18,25 +18,19 @@ trait DeleteCostCategoryDefinitionResponse extends StObject {
 }
 object DeleteCostCategoryDefinitionResponse {
   
-  @scala.inline
-  def apply(): DeleteCostCategoryDefinitionResponse = {
+  inline def apply(): DeleteCostCategoryDefinitionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteCostCategoryDefinitionResponse]
   }
   
-  @scala.inline
-  implicit class DeleteCostCategoryDefinitionResponseMutableBuilder[Self <: DeleteCostCategoryDefinitionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCostCategoryDefinitionResponse](x: Self) {
     
-    @scala.inline
-    def setCostCategoryArn(value: Arn): Self = StObject.set(x, "CostCategoryArn", value.asInstanceOf[js.Any])
+    inline def setCostCategoryArn(value: Arn): Self = StObject.set(x, "CostCategoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostCategoryArnUndefined: Self = StObject.set(x, "CostCategoryArn", js.undefined)
+    inline def setCostCategoryArnUndefined: Self = StObject.set(x, "CostCategoryArn", js.undefined)
     
-    @scala.inline
-    def setEffectiveEnd(value: ZonedDateTime): Self = StObject.set(x, "EffectiveEnd", value.asInstanceOf[js.Any])
+    inline def setEffectiveEnd(value: ZonedDateTime): Self = StObject.set(x, "EffectiveEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveEndUndefined: Self = StObject.set(x, "EffectiveEnd", js.undefined)
+    inline def setEffectiveEndUndefined: Self = StObject.set(x, "EffectiveEnd", js.undefined)
   }
 }

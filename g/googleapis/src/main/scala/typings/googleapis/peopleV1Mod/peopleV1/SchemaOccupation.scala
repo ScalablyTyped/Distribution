@@ -21,25 +21,19 @@ trait SchemaOccupation extends StObject {
 }
 object SchemaOccupation {
   
-  @scala.inline
-  def apply(): SchemaOccupation = {
+  inline def apply(): SchemaOccupation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOccupation]
   }
   
-  @scala.inline
-  implicit class SchemaOccupationMutableBuilder[Self <: SchemaOccupation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOccupation](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: SchemaFieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaFieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

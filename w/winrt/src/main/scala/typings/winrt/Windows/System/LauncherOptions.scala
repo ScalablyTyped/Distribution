@@ -11,8 +11,7 @@ trait LauncherOptions
      with ILauncherOptions
 object LauncherOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentType: String,
     desiredRemainingView: ViewSizePreference,
     displayApplicationPicker: Boolean,

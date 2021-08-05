@@ -10,16 +10,13 @@ trait Behavior extends StObject {
 }
 object Behavior {
   
-  @scala.inline
-  def apply(tick: () => Unit): Behavior = {
+  inline def apply(tick: () => Unit): Behavior = {
     val __obj = js.Dynamic.literal(tick = js.Any.fromFunction0(tick))
     __obj.asInstanceOf[Behavior]
   }
   
-  @scala.inline
-  implicit class BehaviorMutableBuilder[Self <: Behavior] (val x: Self) extends AnyVal {
+  extension [Self <: Behavior](x: Self) {
     
-    @scala.inline
-    def setTick(value: () => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction0(value))
+    inline def setTick(value: () => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction0(value))
   }
 }

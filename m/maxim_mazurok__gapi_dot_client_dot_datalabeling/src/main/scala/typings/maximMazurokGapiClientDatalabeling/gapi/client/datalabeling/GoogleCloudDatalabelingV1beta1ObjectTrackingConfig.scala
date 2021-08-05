@@ -17,31 +17,23 @@ trait GoogleCloudDatalabelingV1beta1ObjectTrackingConfig extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1ObjectTrackingConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1ObjectTrackingConfig = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1ObjectTrackingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ObjectTrackingConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ObjectTrackingConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ObjectTrackingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1ObjectTrackingConfig](x: Self) {
     
-    @scala.inline
-    def setAnnotationSpecSet(value: String): Self = StObject.set(x, "annotationSpecSet", value.asInstanceOf[js.Any])
+    inline def setAnnotationSpecSet(value: String): Self = StObject.set(x, "annotationSpecSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationSpecSetUndefined: Self = StObject.set(x, "annotationSpecSet", js.undefined)
+    inline def setAnnotationSpecSetUndefined: Self = StObject.set(x, "annotationSpecSet", js.undefined)
     
-    @scala.inline
-    def setClipLength(value: Double): Self = StObject.set(x, "clipLength", value.asInstanceOf[js.Any])
+    inline def setClipLength(value: Double): Self = StObject.set(x, "clipLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipLengthUndefined: Self = StObject.set(x, "clipLength", js.undefined)
+    inline def setClipLengthUndefined: Self = StObject.set(x, "clipLength", js.undefined)
     
-    @scala.inline
-    def setOverlapLength(value: Double): Self = StObject.set(x, "overlapLength", value.asInstanceOf[js.Any])
+    inline def setOverlapLength(value: Double): Self = StObject.set(x, "overlapLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlapLengthUndefined: Self = StObject.set(x, "overlapLength", js.undefined)
+    inline def setOverlapLengthUndefined: Self = StObject.set(x, "overlapLength", js.undefined)
   }
 }

@@ -25,35 +25,27 @@ trait MetricStructuredName extends StObject {
 }
 object MetricStructuredName {
   
-  @scala.inline
-  def apply(): MetricStructuredName = {
+  inline def apply(): MetricStructuredName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricStructuredName]
   }
   
-  @scala.inline
-  implicit class MetricStructuredNameMutableBuilder[Self <: MetricStructuredName] (val x: Self) extends AnyVal {
+  extension [Self <: MetricStructuredName](x: Self) {
     
-    @scala.inline
-    def setContext(
+    inline def setContext(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.MetricStructuredName & TopLevel[js.Any]
     ): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
   }
 }

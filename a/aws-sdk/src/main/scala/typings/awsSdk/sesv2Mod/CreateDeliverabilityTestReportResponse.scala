@@ -18,19 +18,15 @@ trait CreateDeliverabilityTestReportResponse extends StObject {
 }
 object CreateDeliverabilityTestReportResponse {
   
-  @scala.inline
-  def apply(DeliverabilityTestStatus: DeliverabilityTestStatus, ReportId: ReportId): CreateDeliverabilityTestReportResponse = {
+  inline def apply(DeliverabilityTestStatus: DeliverabilityTestStatus, ReportId: ReportId): CreateDeliverabilityTestReportResponse = {
     val __obj = js.Dynamic.literal(DeliverabilityTestStatus = DeliverabilityTestStatus.asInstanceOf[js.Any], ReportId = ReportId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeliverabilityTestReportResponse]
   }
   
-  @scala.inline
-  implicit class CreateDeliverabilityTestReportResponseMutableBuilder[Self <: CreateDeliverabilityTestReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDeliverabilityTestReportResponse](x: Self) {
     
-    @scala.inline
-    def setDeliverabilityTestStatus(value: DeliverabilityTestStatus): Self = StObject.set(x, "DeliverabilityTestStatus", value.asInstanceOf[js.Any])
+    inline def setDeliverabilityTestStatus(value: DeliverabilityTestStatus): Self = StObject.set(x, "DeliverabilityTestStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportId(value: ReportId): Self = StObject.set(x, "ReportId", value.asInstanceOf[js.Any])
+    inline def setReportId(value: ReportId): Self = StObject.set(x, "ReportId", value.asInstanceOf[js.Any])
   }
 }

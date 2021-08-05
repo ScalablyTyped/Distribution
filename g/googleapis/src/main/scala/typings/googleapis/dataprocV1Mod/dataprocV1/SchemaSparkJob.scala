@@ -63,73 +63,51 @@ trait SchemaSparkJob extends StObject {
 }
 object SchemaSparkJob {
   
-  @scala.inline
-  def apply(): SchemaSparkJob = {
+  inline def apply(): SchemaSparkJob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSparkJob]
   }
   
-  @scala.inline
-  implicit class SchemaSparkJobMutableBuilder[Self <: SchemaSparkJob] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSparkJob](x: Self) {
     
-    @scala.inline
-    def setArchiveUris(value: js.Array[String]): Self = StObject.set(x, "archiveUris", value.asInstanceOf[js.Any])
+    inline def setArchiveUris(value: js.Array[String]): Self = StObject.set(x, "archiveUris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchiveUrisUndefined: Self = StObject.set(x, "archiveUris", js.undefined)
+    inline def setArchiveUrisUndefined: Self = StObject.set(x, "archiveUris", js.undefined)
     
-    @scala.inline
-    def setArchiveUrisVarargs(value: String*): Self = StObject.set(x, "archiveUris", js.Array(value :_*))
+    inline def setArchiveUrisVarargs(value: String*): Self = StObject.set(x, "archiveUris", js.Array(value :_*))
     
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setFileUris(value: js.Array[String]): Self = StObject.set(x, "fileUris", value.asInstanceOf[js.Any])
+    inline def setFileUris(value: js.Array[String]): Self = StObject.set(x, "fileUris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUrisUndefined: Self = StObject.set(x, "fileUris", js.undefined)
+    inline def setFileUrisUndefined: Self = StObject.set(x, "fileUris", js.undefined)
     
-    @scala.inline
-    def setFileUrisVarargs(value: String*): Self = StObject.set(x, "fileUris", js.Array(value :_*))
+    inline def setFileUrisVarargs(value: String*): Self = StObject.set(x, "fileUris", js.Array(value :_*))
     
-    @scala.inline
-    def setJarFileUris(value: js.Array[String]): Self = StObject.set(x, "jarFileUris", value.asInstanceOf[js.Any])
+    inline def setJarFileUris(value: js.Array[String]): Self = StObject.set(x, "jarFileUris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJarFileUrisUndefined: Self = StObject.set(x, "jarFileUris", js.undefined)
+    inline def setJarFileUrisUndefined: Self = StObject.set(x, "jarFileUris", js.undefined)
     
-    @scala.inline
-    def setJarFileUrisVarargs(value: String*): Self = StObject.set(x, "jarFileUris", js.Array(value :_*))
+    inline def setJarFileUrisVarargs(value: String*): Self = StObject.set(x, "jarFileUris", js.Array(value :_*))
     
-    @scala.inline
-    def setLoggingConfig(value: SchemaLoggingConfig): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
+    inline def setLoggingConfig(value: SchemaLoggingConfig): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
+    inline def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
     
-    @scala.inline
-    def setMainClass(value: String): Self = StObject.set(x, "mainClass", value.asInstanceOf[js.Any])
+    inline def setMainClass(value: String): Self = StObject.set(x, "mainClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainClassUndefined: Self = StObject.set(x, "mainClass", js.undefined)
+    inline def setMainClassUndefined: Self = StObject.set(x, "mainClass", js.undefined)
     
-    @scala.inline
-    def setMainJarFileUri(value: String): Self = StObject.set(x, "mainJarFileUri", value.asInstanceOf[js.Any])
+    inline def setMainJarFileUri(value: String): Self = StObject.set(x, "mainJarFileUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainJarFileUriUndefined: Self = StObject.set(x, "mainJarFileUri", js.undefined)
+    inline def setMainJarFileUriUndefined: Self = StObject.set(x, "mainJarFileUri", js.undefined)
     
-    @scala.inline
-    def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

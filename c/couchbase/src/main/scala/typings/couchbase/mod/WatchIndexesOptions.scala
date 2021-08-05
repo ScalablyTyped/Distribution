@@ -13,19 +13,15 @@ trait WatchIndexesOptions extends StObject {
 }
 object WatchIndexesOptions {
   
-  @scala.inline
-  def apply(): WatchIndexesOptions = {
+  inline def apply(): WatchIndexesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WatchIndexesOptions]
   }
   
-  @scala.inline
-  implicit class WatchIndexesOptionsMutableBuilder[Self <: WatchIndexesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WatchIndexesOptions](x: Self) {
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

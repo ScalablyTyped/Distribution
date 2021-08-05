@@ -18,22 +18,17 @@ trait RemoteParticipantComposingChangedEventArgs extends StObject {
 }
 object RemoteParticipantComposingChangedEventArgs {
   
-  @scala.inline
-  def apply(isComposing: Boolean, participantAddress: String, transportId: String): RemoteParticipantComposingChangedEventArgs = {
+  inline def apply(isComposing: Boolean, participantAddress: String, transportId: String): RemoteParticipantComposingChangedEventArgs = {
     val __obj = js.Dynamic.literal(isComposing = isComposing.asInstanceOf[js.Any], participantAddress = participantAddress.asInstanceOf[js.Any], transportId = transportId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteParticipantComposingChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class RemoteParticipantComposingChangedEventArgsMutableBuilder[Self <: RemoteParticipantComposingChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteParticipantComposingChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setIsComposing(value: Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
+    inline def setIsComposing(value: Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantAddress(value: String): Self = StObject.set(x, "participantAddress", value.asInstanceOf[js.Any])
+    inline def setParticipantAddress(value: String): Self = StObject.set(x, "participantAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportId(value: String): Self = StObject.set(x, "transportId", value.asInstanceOf[js.Any])
+    inline def setTransportId(value: String): Self = StObject.set(x, "transportId", value.asInstanceOf[js.Any])
   }
 }

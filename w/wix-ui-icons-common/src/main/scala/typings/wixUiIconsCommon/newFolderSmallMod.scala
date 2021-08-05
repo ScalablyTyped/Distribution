@@ -22,20 +22,16 @@ object newFolderSmallMod extends Shortcut {
   }
   object NewFolderSmallProps {
     
-    @scala.inline
-    def apply(): NewFolderSmallProps = {
+    inline def apply(): NewFolderSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NewFolderSmallProps]
     }
     
-    @scala.inline
-    implicit class NewFolderSmallPropsMutableBuilder[Self <: NewFolderSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: NewFolderSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

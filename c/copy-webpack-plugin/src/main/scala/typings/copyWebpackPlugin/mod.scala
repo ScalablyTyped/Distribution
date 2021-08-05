@@ -40,26 +40,20 @@ object mod extends Shortcut {
   }
   object CopyPluginOptions {
     
-    @scala.inline
-    def apply(patterns: js.Array[StringPattern | ObjectPattern]): CopyPluginOptions = {
+    inline def apply(patterns: js.Array[StringPattern | ObjectPattern]): CopyPluginOptions = {
       val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
       __obj.asInstanceOf[CopyPluginOptions]
     }
     
-    @scala.inline
-    implicit class CopyPluginOptionsMutableBuilder[Self <: CopyPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CopyPluginOptions](x: Self) {
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPatterns(value: js.Array[StringPattern | ObjectPattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+      inline def setPatterns(value: js.Array[StringPattern | ObjectPattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternsVarargs(value: (StringPattern | ObjectPattern)*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: (StringPattern | ObjectPattern)*): Self = StObject.set(x, "patterns", js.Array(value :_*))
     }
   }
   
@@ -159,85 +153,60 @@ object mod extends Shortcut {
   }
   object ObjectPattern {
     
-    @scala.inline
-    def apply(from: String): ObjectPattern = {
+    inline def apply(from: String): ObjectPattern = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
       __obj.asInstanceOf[ObjectPattern]
     }
     
-    @scala.inline
-    implicit class ObjectPatternMutableBuilder[Self <: ObjectPattern] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectPattern](x: Self) {
       
-      @scala.inline
-      def setCacheTransform(value: Boolean | String | js.Object): Self = StObject.set(x, "cacheTransform", value.asInstanceOf[js.Any])
+      inline def setCacheTransform(value: Boolean | String | js.Object): Self = StObject.set(x, "cacheTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheTransformUndefined: Self = StObject.set(x, "cacheTransform", js.undefined)
+      inline def setCacheTransformUndefined: Self = StObject.set(x, "cacheTransform", js.undefined)
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setFilter(value: /* resourcePath */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* resourcePath */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
+      inline def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
+      inline def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobOptions(value: js.Object): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
+      inline def setGlobOptions(value: js.Object): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobOptionsUndefined: Self = StObject.set(x, "globOptions", js.undefined)
+      inline def setGlobOptionsUndefined: Self = StObject.set(x, "globOptions", js.undefined)
       
-      @scala.inline
-      def setNoErrorOnMissing(value: Boolean): Self = StObject.set(x, "noErrorOnMissing", value.asInstanceOf[js.Any])
+      inline def setNoErrorOnMissing(value: Boolean): Self = StObject.set(x, "noErrorOnMissing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoErrorOnMissingUndefined: Self = StObject.set(x, "noErrorOnMissing", js.undefined)
+      inline def setNoErrorOnMissingUndefined: Self = StObject.set(x, "noErrorOnMissing", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToType(value: file | dir | template): Self = StObject.set(x, "toType", value.asInstanceOf[js.Any])
+      inline def setToType(value: file | dir | template): Self = StObject.set(x, "toType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToTypeUndefined: Self = StObject.set(x, "toType", js.undefined)
+      inline def setToTypeUndefined: Self = StObject.set(x, "toType", js.undefined)
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
       
-      @scala.inline
-      def setTransform(
+      inline def setTransform(
         value: (/* content */ Buffer, /* absoluteFrom */ String) => String | Buffer | (js.Promise[String | Buffer])
       ): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTransformPath(value: (/* targetPath */ String, /* absolutePath */ String) => String | js.Promise[String]): Self = StObject.set(x, "transformPath", js.Any.fromFunction2(value))
+      inline def setTransformPath(value: (/* targetPath */ String, /* absolutePath */ String) => String | js.Promise[String]): Self = StObject.set(x, "transformPath", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTransformPathUndefined: Self = StObject.set(x, "transformPath", js.undefined)
+      inline def setTransformPathUndefined: Self = StObject.set(x, "transformPath", js.undefined)
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   
@@ -251,20 +220,16 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
     }
   }
   

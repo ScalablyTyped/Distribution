@@ -13,16 +13,13 @@ trait MessageDescriptorHtml
 }
 object MessageDescriptorHtml {
   
-  @scala.inline
-  def apply(html: String): MessageDescriptorHtml = {
+  inline def apply(html: String): MessageDescriptorHtml = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageDescriptorHtml]
   }
   
-  @scala.inline
-  implicit class MessageDescriptorHtmlMutableBuilder[Self <: MessageDescriptorHtml] (val x: Self) extends AnyVal {
+  extension [Self <: MessageDescriptorHtml](x: Self) {
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait VoiceConnectorSettings extends StObject {
 }
 object VoiceConnectorSettings {
   
-  @scala.inline
-  def apply(): VoiceConnectorSettings = {
+  inline def apply(): VoiceConnectorSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VoiceConnectorSettings]
   }
   
-  @scala.inline
-  implicit class VoiceConnectorSettingsMutableBuilder[Self <: VoiceConnectorSettings] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceConnectorSettings](x: Self) {
     
-    @scala.inline
-    def setCdrBucket(value: String): Self = StObject.set(x, "CdrBucket", value.asInstanceOf[js.Any])
+    inline def setCdrBucket(value: String): Self = StObject.set(x, "CdrBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCdrBucketUndefined: Self = StObject.set(x, "CdrBucket", js.undefined)
+    inline def setCdrBucketUndefined: Self = StObject.set(x, "CdrBucket", js.undefined)
   }
 }

@@ -50,8 +50,7 @@ object mod {
     }
     object EdgeHandlesApi {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         destroy: () => Unit,
         disable: () => Unit,
         disableDrawMode: () => Unit,
@@ -65,32 +64,23 @@ object mod {
         __obj.asInstanceOf[EdgeHandlesApi]
       }
       
-      @scala.inline
-      implicit class EdgeHandlesApiMutableBuilder[Self <: EdgeHandlesApi] (val x: Self) extends AnyVal {
+      extension [Self <: EdgeHandlesApi](x: Self) {
         
-        @scala.inline
-        def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+        inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+        inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDisableDrawMode(value: () => Unit): Self = StObject.set(x, "disableDrawMode", js.Any.fromFunction0(value))
+        inline def setDisableDrawMode(value: () => Unit): Self = StObject.set(x, "disableDrawMode", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+        inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setEnableDrawMode(value: () => Unit): Self = StObject.set(x, "enableDrawMode", js.Any.fromFunction0(value))
+        inline def setEnableDrawMode(value: () => Unit): Self = StObject.set(x, "enableDrawMode", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+        inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setStart(value: String => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+        inline def setStart(value: String => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+        inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       }
     }
     
@@ -207,188 +197,130 @@ object mod {
     }
     object EdgeHandlesOptions {
       
-      @scala.inline
-      def apply(): EdgeHandlesOptions = {
+      inline def apply(): EdgeHandlesOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[EdgeHandlesOptions]
       }
       
-      @scala.inline
-      implicit class EdgeHandlesOptionsMutableBuilder[Self <: EdgeHandlesOptions] (val x: Self) extends AnyVal {
+      extension [Self <: EdgeHandlesOptions](x: Self) {
         
-        @scala.inline
-        def setCancel(value: (/* sourceNode */ NodeSingular, /* cancelledTargets */ js.Any) => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction2(value))
+        inline def setCancel(value: (/* sourceNode */ NodeSingular, /* cancelledTargets */ js.Any) => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+        inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
         
-        @scala.inline
-        def setComplete(
+        inline def setComplete(
           value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular, /* addedEles */ EdgeCollection) => Unit
         ): Self = StObject.set(x, "complete", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+        inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
         
-        @scala.inline
-        def setDisableBrowserGestures(value: Boolean): Self = StObject.set(x, "disableBrowserGestures", value.asInstanceOf[js.Any])
+        inline def setDisableBrowserGestures(value: Boolean): Self = StObject.set(x, "disableBrowserGestures", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisableBrowserGesturesUndefined: Self = StObject.set(x, "disableBrowserGestures", js.undefined)
+        inline def setDisableBrowserGesturesUndefined: Self = StObject.set(x, "disableBrowserGestures", js.undefined)
         
-        @scala.inline
-        def setDrawoff(value: () => Unit): Self = StObject.set(x, "drawoff", js.Any.fromFunction0(value))
+        inline def setDrawoff(value: () => Unit): Self = StObject.set(x, "drawoff", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDrawoffUndefined: Self = StObject.set(x, "drawoff", js.undefined)
+        inline def setDrawoffUndefined: Self = StObject.set(x, "drawoff", js.undefined)
         
-        @scala.inline
-        def setDrawon(value: () => Unit): Self = StObject.set(x, "drawon", js.Any.fromFunction0(value))
+        inline def setDrawon(value: () => Unit): Self = StObject.set(x, "drawon", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDrawonUndefined: Self = StObject.set(x, "drawon", js.undefined)
+        inline def setDrawonUndefined: Self = StObject.set(x, "drawon", js.undefined)
         
-        @scala.inline
-        def setEdgeParams(value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular, /* i */ Double) => js.Any): Self = StObject.set(x, "edgeParams", js.Any.fromFunction3(value))
+        inline def setEdgeParams(value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular, /* i */ Double) => js.Any): Self = StObject.set(x, "edgeParams", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setEdgeParamsUndefined: Self = StObject.set(x, "edgeParams", js.undefined)
+        inline def setEdgeParamsUndefined: Self = StObject.set(x, "edgeParams", js.undefined)
         
-        @scala.inline
-        def setEdgeType(value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular) => js.UndefOr[String]): Self = StObject.set(x, "edgeType", js.Any.fromFunction2(value))
+        inline def setEdgeType(value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular) => js.UndefOr[String]): Self = StObject.set(x, "edgeType", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setEdgeTypeUndefined: Self = StObject.set(x, "edgeType", js.undefined)
+        inline def setEdgeTypeUndefined: Self = StObject.set(x, "edgeType", js.undefined)
         
-        @scala.inline
-        def setGhostEdgeParams(value: () => js.Any): Self = StObject.set(x, "ghostEdgeParams", js.Any.fromFunction0(value))
+        inline def setGhostEdgeParams(value: () => js.Any): Self = StObject.set(x, "ghostEdgeParams", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGhostEdgeParamsUndefined: Self = StObject.set(x, "ghostEdgeParams", js.undefined)
+        inline def setGhostEdgeParamsUndefined: Self = StObject.set(x, "ghostEdgeParams", js.undefined)
         
-        @scala.inline
-        def setHandleInDrawMode(value: Boolean): Self = StObject.set(x, "handleInDrawMode", value.asInstanceOf[js.Any])
+        inline def setHandleInDrawMode(value: Boolean): Self = StObject.set(x, "handleInDrawMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHandleInDrawModeUndefined: Self = StObject.set(x, "handleInDrawMode", js.undefined)
+        inline def setHandleInDrawModeUndefined: Self = StObject.set(x, "handleInDrawMode", js.undefined)
         
-        @scala.inline
-        def setHandleNodes(value: String): Self = StObject.set(x, "handleNodes", value.asInstanceOf[js.Any])
+        inline def setHandleNodes(value: String): Self = StObject.set(x, "handleNodes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHandleNodesUndefined: Self = StObject.set(x, "handleNodes", js.undefined)
+        inline def setHandleNodesUndefined: Self = StObject.set(x, "handleNodes", js.undefined)
         
-        @scala.inline
-        def setHandlePosition(value: /* node */ NodeSingular => String): Self = StObject.set(x, "handlePosition", js.Any.fromFunction1(value))
+        inline def setHandlePosition(value: /* node */ NodeSingular => String): Self = StObject.set(x, "handlePosition", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setHandlePositionUndefined: Self = StObject.set(x, "handlePosition", js.undefined)
+        inline def setHandlePositionUndefined: Self = StObject.set(x, "handlePosition", js.undefined)
         
-        @scala.inline
-        def setHide(value: /* sourceNode */ NodeSingular => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
+        inline def setHide(value: /* sourceNode */ NodeSingular => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+        inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
         
-        @scala.inline
-        def setHoverDelay(value: Double): Self = StObject.set(x, "hoverDelay", value.asInstanceOf[js.Any])
+        inline def setHoverDelay(value: Double): Self = StObject.set(x, "hoverDelay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHoverDelayUndefined: Self = StObject.set(x, "hoverDelay", js.undefined)
+        inline def setHoverDelayUndefined: Self = StObject.set(x, "hoverDelay", js.undefined)
         
-        @scala.inline
-        def setHoverout(value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular) => Unit): Self = StObject.set(x, "hoverout", js.Any.fromFunction2(value))
+        inline def setHoverout(value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular) => Unit): Self = StObject.set(x, "hoverout", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setHoveroutUndefined: Self = StObject.set(x, "hoverout", js.undefined)
+        inline def setHoveroutUndefined: Self = StObject.set(x, "hoverout", js.undefined)
         
-        @scala.inline
-        def setHoverover(value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular) => Unit): Self = StObject.set(x, "hoverover", js.Any.fromFunction2(value))
+        inline def setHoverover(value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular) => Unit): Self = StObject.set(x, "hoverover", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setHoveroverUndefined: Self = StObject.set(x, "hoverover", js.undefined)
+        inline def setHoveroverUndefined: Self = StObject.set(x, "hoverover", js.undefined)
         
-        @scala.inline
-        def setLoopAllowed(value: /* node */ NodeSingular => Boolean): Self = StObject.set(x, "loopAllowed", js.Any.fromFunction1(value))
+        inline def setLoopAllowed(value: /* node */ NodeSingular => Boolean): Self = StObject.set(x, "loopAllowed", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setLoopAllowedUndefined: Self = StObject.set(x, "loopAllowed", js.undefined)
+        inline def setLoopAllowedUndefined: Self = StObject.set(x, "loopAllowed", js.undefined)
         
-        @scala.inline
-        def setNoEdgeEventsInDraw(value: Boolean): Self = StObject.set(x, "noEdgeEventsInDraw", value.asInstanceOf[js.Any])
+        inline def setNoEdgeEventsInDraw(value: Boolean): Self = StObject.set(x, "noEdgeEventsInDraw", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoEdgeEventsInDrawUndefined: Self = StObject.set(x, "noEdgeEventsInDraw", js.undefined)
+        inline def setNoEdgeEventsInDrawUndefined: Self = StObject.set(x, "noEdgeEventsInDraw", js.undefined)
         
-        @scala.inline
-        def setNodeLoopOffset(value: Double): Self = StObject.set(x, "nodeLoopOffset", value.asInstanceOf[js.Any])
+        inline def setNodeLoopOffset(value: Double): Self = StObject.set(x, "nodeLoopOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNodeLoopOffsetUndefined: Self = StObject.set(x, "nodeLoopOffset", js.undefined)
+        inline def setNodeLoopOffsetUndefined: Self = StObject.set(x, "nodeLoopOffset", js.undefined)
         
-        @scala.inline
-        def setNodeParams(value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular) => js.Any): Self = StObject.set(x, "nodeParams", js.Any.fromFunction2(value))
+        inline def setNodeParams(value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular) => js.Any): Self = StObject.set(x, "nodeParams", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setNodeParamsUndefined: Self = StObject.set(x, "nodeParams", js.undefined)
+        inline def setNodeParamsUndefined: Self = StObject.set(x, "nodeParams", js.undefined)
         
-        @scala.inline
-        def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+        inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+        inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
         
-        @scala.inline
-        def setPreviewoff(
+        inline def setPreviewoff(
           value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular, /* previewEles */ EdgeCollection) => Unit
         ): Self = StObject.set(x, "previewoff", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setPreviewoffUndefined: Self = StObject.set(x, "previewoff", js.undefined)
+        inline def setPreviewoffUndefined: Self = StObject.set(x, "previewoff", js.undefined)
         
-        @scala.inline
-        def setPreviewon(
+        inline def setPreviewon(
           value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular, /* previewEles */ EdgeCollection) => Unit
         ): Self = StObject.set(x, "previewon", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setPreviewonUndefined: Self = StObject.set(x, "previewon", js.undefined)
+        inline def setPreviewonUndefined: Self = StObject.set(x, "previewon", js.undefined)
         
-        @scala.inline
-        def setShow(value: /* sourceNode */ NodeSingular => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+        inline def setShow(value: /* sourceNode */ NodeSingular => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+        inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
         
-        @scala.inline
-        def setSnap(value: Boolean): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
+        inline def setSnap(value: Boolean): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSnapFrequency(value: Double): Self = StObject.set(x, "snapFrequency", value.asInstanceOf[js.Any])
+        inline def setSnapFrequency(value: Double): Self = StObject.set(x, "snapFrequency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSnapFrequencyUndefined: Self = StObject.set(x, "snapFrequency", js.undefined)
+        inline def setSnapFrequencyUndefined: Self = StObject.set(x, "snapFrequency", js.undefined)
         
-        @scala.inline
-        def setSnapThreshold(value: Double): Self = StObject.set(x, "snapThreshold", value.asInstanceOf[js.Any])
+        inline def setSnapThreshold(value: Double): Self = StObject.set(x, "snapThreshold", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSnapThresholdUndefined: Self = StObject.set(x, "snapThreshold", js.undefined)
+        inline def setSnapThresholdUndefined: Self = StObject.set(x, "snapThreshold", js.undefined)
         
-        @scala.inline
-        def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
+        inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
         
-        @scala.inline
-        def setStart(value: /* sourceNode */ NodeSingular => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+        inline def setStart(value: /* sourceNode */ NodeSingular => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+        inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
         
-        @scala.inline
-        def setStop(value: /* sourceNode */ NodeSingular => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
+        inline def setStop(value: /* sourceNode */ NodeSingular => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+        inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
       }
     }
   }

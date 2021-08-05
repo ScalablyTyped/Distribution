@@ -18,8 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebhookNotification extends StObject
 object WebhookNotification {
   
-  @scala.inline
-  def AccountUpdaterNotification(
+  inline def AccountUpdaterNotification(
     accountUpdaterDailyReport: AccountUpdaterDailyReport,
     kind: AccountUpdaterNotificationKind,
     timestamp: Date
@@ -28,20 +27,17 @@ object WebhookNotification {
     __obj.asInstanceOf[typings.braintree.mod.AccountUpdaterNotification]
   }
   
-  @scala.inline
-  def DisputeNotification(dispute: Dispute, kind: DisputeNotificationKind, timestamp: Date): typings.braintree.mod.DisputeNotification = {
+  inline def DisputeNotification(dispute: Dispute, kind: DisputeNotificationKind, timestamp: Date): typings.braintree.mod.DisputeNotification = {
     val __obj = js.Dynamic.literal(dispute = dispute.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.braintree.mod.DisputeNotification]
   }
   
-  @scala.inline
-  def PaymentMethodNotification(kind: PaymentMethodNotificationKind, revokedPaymentMethodMetadata: CustomerId, timestamp: Date): typings.braintree.mod.PaymentMethodNotification = {
+  inline def PaymentMethodNotification(kind: PaymentMethodNotificationKind, revokedPaymentMethodMetadata: CustomerId, timestamp: Date): typings.braintree.mod.PaymentMethodNotification = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], revokedPaymentMethodMetadata = revokedPaymentMethodMetadata.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.braintree.mod.PaymentMethodNotification]
   }
   
-  @scala.inline
-  def SubMerchantAccountApprovedNotification(
+  inline def SubMerchantAccountApprovedNotification(
     kind: SubMerchantAccountApprovedNotificationKind,
     merchantAccount: MerchantAccount,
     timestamp: Date
@@ -50,8 +46,7 @@ object WebhookNotification {
     __obj.asInstanceOf[typings.braintree.mod.SubMerchantAccountApprovedNotification]
   }
   
-  @scala.inline
-  def SubMerchantAccountDeclinedNotification(
+  inline def SubMerchantAccountDeclinedNotification(
     kind: SubMerchantAccountDeclinedNotificationKind,
     merchantAccount: MerchantAccount,
     timestamp: Date
@@ -60,14 +55,12 @@ object WebhookNotification {
     __obj.asInstanceOf[typings.braintree.mod.SubMerchantAccountDeclinedNotification]
   }
   
-  @scala.inline
-  def SubscriptionNotification(kind: SubscriptionNotificationKind, subscription: Subscription, timestamp: Date): typings.braintree.mod.SubscriptionNotification = {
+  inline def SubscriptionNotification(kind: SubscriptionNotificationKind, subscription: Subscription, timestamp: Date): typings.braintree.mod.SubscriptionNotification = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.braintree.mod.SubscriptionNotification]
   }
   
-  @scala.inline
-  def TransactionNotification(kind: TransactionNotificationKind, timestamp: Date, transaction: Transaction): typings.braintree.mod.TransactionNotification = {
+  inline def TransactionNotification(kind: TransactionNotificationKind, timestamp: Date, transaction: Transaction): typings.braintree.mod.TransactionNotification = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], transaction = transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.braintree.mod.TransactionNotification]
   }

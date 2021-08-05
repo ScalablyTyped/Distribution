@@ -40,8 +40,7 @@ trait XExtendedTextConversion
 }
 object XExtendedTextConversion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getConversion: (String, Double, Double, Locale, Double, Double) => String,
     getConversionWithOffset: (String, Double, Double, Locale, Double, Double, js.Array[SeqEquiv[Double]]) => String,
@@ -54,10 +53,8 @@ object XExtendedTextConversion {
     __obj.asInstanceOf[XExtendedTextConversion]
   }
   
-  @scala.inline
-  implicit class XExtendedTextConversionMutableBuilder[Self <: XExtendedTextConversion] (val x: Self) extends AnyVal {
+  extension [Self <: XExtendedTextConversion](x: Self) {
     
-    @scala.inline
-    def setGetConversionWithOffset(value: (String, Double, Double, Locale, Double, Double, js.Array[SeqEquiv[Double]]) => String): Self = StObject.set(x, "getConversionWithOffset", js.Any.fromFunction7(value))
+    inline def setGetConversionWithOffset(value: (String, Double, Double, Locale, Double, Double, js.Array[SeqEquiv[Double]]) => String): Self = StObject.set(x, "getConversionWithOffset", js.Any.fromFunction7(value))
   }
 }

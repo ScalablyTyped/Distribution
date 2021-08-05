@@ -13,16 +13,13 @@ trait CancelQueryRequest extends StObject {
 }
 object CancelQueryRequest {
   
-  @scala.inline
-  def apply(QueryId: QueryId): CancelQueryRequest = {
+  inline def apply(QueryId: QueryId): CancelQueryRequest = {
     val __obj = js.Dynamic.literal(QueryId = QueryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelQueryRequest]
   }
   
-  @scala.inline
-  implicit class CancelQueryRequestMutableBuilder[Self <: CancelQueryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelQueryRequest](x: Self) {
     
-    @scala.inline
-    def setQueryId(value: QueryId): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
+    inline def setQueryId(value: QueryId): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
   }
 }

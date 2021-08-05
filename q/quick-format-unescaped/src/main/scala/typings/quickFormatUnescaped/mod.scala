@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(fmt: String, parameters: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(fmt: String, parameters: js.Array[js.Any], options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(fmt: String, parameters: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(fmt: String, parameters: js.Array[js.Any], options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("quick-format-unescaped", JSImport.Namespace)
   @js.native
@@ -24,17 +22,14 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(stringify: js.Any => String): Options = {
+    inline def apply(stringify: js.Any => String): Options = {
       val __obj = js.Dynamic.literal(stringify = js.Any.fromFunction1(stringify))
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setStringify(value: js.Any => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+      inline def setStringify(value: js.Any => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
     }
   }
 }

@@ -26,8 +26,7 @@ trait XDeath extends StObject {
 }
 object XDeath {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     count: Double,
     exchange: String,
     queue: String,
@@ -40,34 +39,24 @@ object XDeath {
     __obj.asInstanceOf[XDeath]
   }
   
-  @scala.inline
-  implicit class XDeathMutableBuilder[Self <: XDeath] (val x: Self) extends AnyVal {
+  extension [Self <: XDeath](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
+    inline def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOriginal-expiration`(value: js.Any): Self = StObject.set(x, "original-expiration", value.asInstanceOf[js.Any])
+    inline def `setOriginal-expiration`(value: js.Any): Self = StObject.set(x, "original-expiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOriginal-expirationUndefined`: Self = StObject.set(x, "original-expiration", js.undefined)
+    inline def `setOriginal-expirationUndefined`: Self = StObject.set(x, "original-expiration", js.undefined)
     
-    @scala.inline
-    def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: rejected | expired | maxlen): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: rejected | expired | maxlen): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRouting-keys`(value: js.Array[String]): Self = StObject.set(x, "routing-keys", value.asInstanceOf[js.Any])
+    inline def `setRouting-keys`(value: js.Array[String]): Self = StObject.set(x, "routing-keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRouting-keysVarargs`(value: String*): Self = StObject.set(x, "routing-keys", js.Array(value :_*))
+    inline def `setRouting-keysVarargs`(value: String*): Self = StObject.set(x, "routing-keys", js.Array(value :_*))
     
-    @scala.inline
-    def setTime(value: _empty): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: _empty): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

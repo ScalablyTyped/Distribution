@@ -19,8 +19,7 @@ trait TransformationRule extends StObject {
 }
 object TransformationRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apply: (js.Array[js.Array[String]], Double) => Unit,
     literal: js.Array[String],
     new_category: String,
@@ -31,25 +30,18 @@ object TransformationRule {
     __obj.asInstanceOf[TransformationRule]
   }
   
-  @scala.inline
-  implicit class TransformationRuleMutableBuilder[Self <: TransformationRule] (val x: Self) extends AnyVal {
+  extension [Self <: TransformationRule](x: Self) {
     
-    @scala.inline
-    def setApply(value: (js.Array[js.Array[String]], Double) => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    inline def setApply(value: (js.Array[js.Array[String]], Double) => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLiteral(value: js.Array[String]): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
+    inline def setLiteral(value: js.Array[String]): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiteralVarargs(value: String*): Self = StObject.set(x, "literal", js.Array(value :_*))
+    inline def setLiteralVarargs(value: String*): Self = StObject.set(x, "literal", js.Array(value :_*))
     
-    @scala.inline
-    def setNew_category(value: String): Self = StObject.set(x, "new_category", value.asInstanceOf[js.Any])
+    inline def setNew_category(value: String): Self = StObject.set(x, "new_category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOld_category(value: String): Self = StObject.set(x, "old_category", value.asInstanceOf[js.Any])
+    inline def setOld_category(value: String): Self = StObject.set(x, "old_category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredicate(value: Predicate): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
+    inline def setPredicate(value: Predicate): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
   }
 }

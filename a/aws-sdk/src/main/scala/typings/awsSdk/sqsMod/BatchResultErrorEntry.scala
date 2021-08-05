@@ -28,28 +28,21 @@ trait BatchResultErrorEntry extends StObject {
 }
 object BatchResultErrorEntry {
   
-  @scala.inline
-  def apply(Code: String, Id: String, SenderFault: Boolean): BatchResultErrorEntry = {
+  inline def apply(Code: String, Id: String, SenderFault: Boolean): BatchResultErrorEntry = {
     val __obj = js.Dynamic.literal(Code = Code.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], SenderFault = SenderFault.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchResultErrorEntry]
   }
   
-  @scala.inline
-  implicit class BatchResultErrorEntryMutableBuilder[Self <: BatchResultErrorEntry] (val x: Self) extends AnyVal {
+  extension [Self <: BatchResultErrorEntry](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setSenderFault(value: Boolean): Self = StObject.set(x, "SenderFault", value.asInstanceOf[js.Any])
+    inline def setSenderFault(value: Boolean): Self = StObject.set(x, "SenderFault", value.asInstanceOf[js.Any])
   }
 }

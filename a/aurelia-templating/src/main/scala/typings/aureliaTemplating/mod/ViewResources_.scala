@@ -154,8 +154,6 @@ object ViewResources_ {
     * @param target Target class to extract metadata based on convention
     * @param existing If supplied, all custom element / attribute metadata extracted from convention will be apply to this instance
     */
-  @scala.inline
-  def convention(target: js.Function): HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")(target.asInstanceOf[js.Any]).asInstanceOf[HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource]
-  @scala.inline
-  def convention(target: js.Function, existing: HtmlBehaviorResource): HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource = (^.asInstanceOf[js.Dynamic].applyDynamic("convention")(target.asInstanceOf[js.Any], existing.asInstanceOf[js.Any])).asInstanceOf[HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource]
+  inline def convention(target: js.Function): HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")(target.asInstanceOf[js.Any]).asInstanceOf[HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource]
+  inline def convention(target: js.Function, existing: HtmlBehaviorResource): HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource = (^.asInstanceOf[js.Dynamic].applyDynamic("convention")(target.asInstanceOf[js.Any], existing.asInstanceOf[js.Any])).asInstanceOf[HtmlBehaviorResource | ValueConverterResource | BindingBehaviorResource | ViewEngineHooksResource]
 }

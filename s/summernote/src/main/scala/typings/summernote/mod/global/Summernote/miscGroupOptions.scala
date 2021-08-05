@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait miscGroupOptions extends StObject
 object miscGroupOptions {
   
-  @scala.inline
-  def codeview: typings.summernote.summernoteStrings.codeview = "codeview".asInstanceOf[typings.summernote.summernoteStrings.codeview]
+  inline def codeview: typings.summernote.summernoteStrings.codeview = "codeview".asInstanceOf[typings.summernote.summernoteStrings.codeview]
   
-  @scala.inline
-  def fullscreen: typings.summernote.summernoteStrings.fullscreen = "fullscreen".asInstanceOf[typings.summernote.summernoteStrings.fullscreen]
+  inline def fullscreen: typings.summernote.summernoteStrings.fullscreen = "fullscreen".asInstanceOf[typings.summernote.summernoteStrings.fullscreen]
   
-  @scala.inline
-  def help: typings.summernote.summernoteStrings.help = "help".asInstanceOf[typings.summernote.summernoteStrings.help]
+  inline def help: typings.summernote.summernoteStrings.help = "help".asInstanceOf[typings.summernote.summernoteStrings.help]
   
-  @scala.inline
-  def redo: typings.summernote.summernoteStrings.redo = "redo".asInstanceOf[typings.summernote.summernoteStrings.redo]
+  inline def redo: typings.summernote.summernoteStrings.redo = "redo".asInstanceOf[typings.summernote.summernoteStrings.redo]
   
-  @scala.inline
-  def undo: typings.summernote.summernoteStrings.undo = "undo".asInstanceOf[typings.summernote.summernoteStrings.undo]
+  inline def undo: typings.summernote.summernoteStrings.undo = "undo".asInstanceOf[typings.summernote.summernoteStrings.undo]
 }

@@ -33,31 +33,23 @@ trait SchemaConsistentHashLoadBalancerSettings extends StObject {
 }
 object SchemaConsistentHashLoadBalancerSettings {
   
-  @scala.inline
-  def apply(): SchemaConsistentHashLoadBalancerSettings = {
+  inline def apply(): SchemaConsistentHashLoadBalancerSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConsistentHashLoadBalancerSettings]
   }
   
-  @scala.inline
-  implicit class SchemaConsistentHashLoadBalancerSettingsMutableBuilder[Self <: SchemaConsistentHashLoadBalancerSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConsistentHashLoadBalancerSettings](x: Self) {
     
-    @scala.inline
-    def setHttpCookie(value: SchemaConsistentHashLoadBalancerSettingsHttpCookie): Self = StObject.set(x, "httpCookie", value.asInstanceOf[js.Any])
+    inline def setHttpCookie(value: SchemaConsistentHashLoadBalancerSettingsHttpCookie): Self = StObject.set(x, "httpCookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpCookieUndefined: Self = StObject.set(x, "httpCookie", js.undefined)
+    inline def setHttpCookieUndefined: Self = StObject.set(x, "httpCookie", js.undefined)
     
-    @scala.inline
-    def setHttpHeaderName(value: String): Self = StObject.set(x, "httpHeaderName", value.asInstanceOf[js.Any])
+    inline def setHttpHeaderName(value: String): Self = StObject.set(x, "httpHeaderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpHeaderNameUndefined: Self = StObject.set(x, "httpHeaderName", js.undefined)
+    inline def setHttpHeaderNameUndefined: Self = StObject.set(x, "httpHeaderName", js.undefined)
     
-    @scala.inline
-    def setMinimumRingSize(value: String): Self = StObject.set(x, "minimumRingSize", value.asInstanceOf[js.Any])
+    inline def setMinimumRingSize(value: String): Self = StObject.set(x, "minimumRingSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumRingSizeUndefined: Self = StObject.set(x, "minimumRingSize", js.undefined)
+    inline def setMinimumRingSizeUndefined: Self = StObject.set(x, "minimumRingSize", js.undefined)
   }
 }

@@ -33,34 +33,25 @@ trait ImportKeyMaterialRequest extends StObject {
 }
 object ImportKeyMaterialRequest {
   
-  @scala.inline
-  def apply(EncryptedKeyMaterial: CiphertextType, ImportToken: CiphertextType, KeyId: KeyIdType): ImportKeyMaterialRequest = {
+  inline def apply(EncryptedKeyMaterial: CiphertextType, ImportToken: CiphertextType, KeyId: KeyIdType): ImportKeyMaterialRequest = {
     val __obj = js.Dynamic.literal(EncryptedKeyMaterial = EncryptedKeyMaterial.asInstanceOf[js.Any], ImportToken = ImportToken.asInstanceOf[js.Any], KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportKeyMaterialRequest]
   }
   
-  @scala.inline
-  implicit class ImportKeyMaterialRequestMutableBuilder[Self <: ImportKeyMaterialRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ImportKeyMaterialRequest](x: Self) {
     
-    @scala.inline
-    def setEncryptedKeyMaterial(value: CiphertextType): Self = StObject.set(x, "EncryptedKeyMaterial", value.asInstanceOf[js.Any])
+    inline def setEncryptedKeyMaterial(value: CiphertextType): Self = StObject.set(x, "EncryptedKeyMaterial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationModel(value: ExpirationModelType): Self = StObject.set(x, "ExpirationModel", value.asInstanceOf[js.Any])
+    inline def setExpirationModel(value: ExpirationModelType): Self = StObject.set(x, "ExpirationModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationModelUndefined: Self = StObject.set(x, "ExpirationModel", js.undefined)
+    inline def setExpirationModelUndefined: Self = StObject.set(x, "ExpirationModel", js.undefined)
     
-    @scala.inline
-    def setImportToken(value: CiphertextType): Self = StObject.set(x, "ImportToken", value.asInstanceOf[js.Any])
+    inline def setImportToken(value: CiphertextType): Self = StObject.set(x, "ImportToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidTo(value: DateType): Self = StObject.set(x, "ValidTo", value.asInstanceOf[js.Any])
+    inline def setValidTo(value: DateType): Self = StObject.set(x, "ValidTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidToUndefined: Self = StObject.set(x, "ValidTo", js.undefined)
+    inline def setValidToUndefined: Self = StObject.set(x, "ValidTo", js.undefined)
   }
 }

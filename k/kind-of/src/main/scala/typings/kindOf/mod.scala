@@ -56,62 +56,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(thing: String): string = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[string]
-  @scala.inline
-  def apply(thing: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(thing: js.Array[js.Any]): array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[array]
-  @scala.inline
-  def apply(thing: js.Function1[/* repeated */ js.Any, js.Any]): function | generatorfunction = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[function | generatorfunction]
-  @scala.inline
-  def apply(thing: js.Promise[js.Any]): promise = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[promise]
-  @scala.inline
-  def apply(thing: js.Symbol): symbol = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[symbol]
-  @scala.inline
-  def apply(thing: Boolean): boolean = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[boolean]
-  @scala.inline
-  def apply(thing: Double): number = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[number]
-  @scala.inline
-  def apply(thing: Null): `null` = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[`null`]
-  @scala.inline
-  def apply(thing: Unit): undefined = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[undefined]
-  @scala.inline
-  def apply(thing: Buffer): buffer = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[buffer]
-  @scala.inline
-  def apply(thing: Date): date = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[date]
-  @scala.inline
-  def apply(thing: Error): error = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[error]
-  @scala.inline
-  def apply(thing: Float32Array): float32array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[float32array]
-  @scala.inline
-  def apply(thing: Float64Array): float64array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[float64array]
-  @scala.inline
-  def apply(thing: Int16Array): int16array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[int16array]
-  @scala.inline
-  def apply(thing: Int32Array): int32array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[int32array]
-  @scala.inline
-  def apply(thing: Int8Array): int8array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[int8array]
-  @scala.inline
-  def apply(thing: Iterator[js.Any, js.Any, Unit]): generator | stringiterator | arrayiterator | mapiterator | setiterator = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[generator | stringiterator | arrayiterator | mapiterator | setiterator]
-  @scala.inline
-  def apply(thing: Map[js.Any, js.Any]): map = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[map]
-  @scala.inline
-  def apply(thing: RegExp): regexp = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[regexp]
-  @scala.inline
-  def apply(thing: Set[js.Any]): set = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[set]
-  @scala.inline
-  def apply(thing: Uint16Array): uint16array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[uint16array]
-  @scala.inline
-  def apply(thing: Uint32Array): uint32array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[uint32array]
-  @scala.inline
-  def apply(thing: Uint8Array): uint8array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[uint8array]
-  @scala.inline
-  def apply(thing: Uint8ClampedArray): uint8clampedarray = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[uint8clampedarray]
-  @scala.inline
-  def apply(thing: WeakMap[js.Any, js.Any]): weakmap = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[weakmap]
-  @scala.inline
-  def apply(thing: WeakSet[js.Any]): weakset = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[weakset]
+  inline def apply(thing: String): string = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[string]
+  inline def apply(thing: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(thing: js.Array[js.Any]): array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[array]
+  inline def apply(thing: js.Function1[/* repeated */ js.Any, js.Any]): function | generatorfunction = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[function | generatorfunction]
+  inline def apply(thing: js.Promise[js.Any]): promise = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[promise]
+  inline def apply(thing: js.Symbol): symbol = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[symbol]
+  inline def apply(thing: Boolean): boolean = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[boolean]
+  inline def apply(thing: Double): number = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[number]
+  inline def apply(thing: Null): `null` = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[`null`]
+  inline def apply(thing: Unit): undefined = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[undefined]
+  inline def apply(thing: Buffer): buffer = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[buffer]
+  inline def apply(thing: Date): date = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[date]
+  inline def apply(thing: Error): error = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[error]
+  inline def apply(thing: Float32Array): float32array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[float32array]
+  inline def apply(thing: Float64Array): float64array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[float64array]
+  inline def apply(thing: Int16Array): int16array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[int16array]
+  inline def apply(thing: Int32Array): int32array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[int32array]
+  inline def apply(thing: Int8Array): int8array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[int8array]
+  inline def apply(thing: Iterator[js.Any, js.Any, Unit]): generator | stringiterator | arrayiterator | mapiterator | setiterator = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[generator | stringiterator | arrayiterator | mapiterator | setiterator]
+  inline def apply(thing: Map[js.Any, js.Any]): map = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[map]
+  inline def apply(thing: RegExp): regexp = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[regexp]
+  inline def apply(thing: Set[js.Any]): set = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[set]
+  inline def apply(thing: Uint16Array): uint16array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[uint16array]
+  inline def apply(thing: Uint32Array): uint32array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[uint32array]
+  inline def apply(thing: Uint8Array): uint8array = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[uint8array]
+  inline def apply(thing: Uint8ClampedArray): uint8clampedarray = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[uint8clampedarray]
+  inline def apply(thing: WeakMap[js.Any, js.Any]): weakmap = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[weakmap]
+  inline def apply(thing: WeakSet[js.Any]): weakset = ^.asInstanceOf[js.Dynamic].apply(thing.asInstanceOf[js.Any]).asInstanceOf[weakset]
   
   @JSImport("kind-of", JSImport.Namespace)
   @js.native

@@ -42,49 +42,35 @@ trait TaskPresentationOptions extends StObject {
 }
 object TaskPresentationOptions {
   
-  @scala.inline
-  def apply(): TaskPresentationOptions = {
+  inline def apply(): TaskPresentationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskPresentationOptions]
   }
   
-  @scala.inline
-  implicit class TaskPresentationOptionsMutableBuilder[Self <: TaskPresentationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TaskPresentationOptions](x: Self) {
     
-    @scala.inline
-    def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setEcho(value: Boolean): Self = StObject.set(x, "echo", value.asInstanceOf[js.Any])
+    inline def setEcho(value: Boolean): Self = StObject.set(x, "echo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEchoUndefined: Self = StObject.set(x, "echo", js.undefined)
+    inline def setEchoUndefined: Self = StObject.set(x, "echo", js.undefined)
     
-    @scala.inline
-    def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
-    @scala.inline
-    def setPanel(value: TaskPanelKind): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+    inline def setPanel(value: TaskPanelKind): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+    inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
     
-    @scala.inline
-    def setReveal(value: TaskRevealKind): Self = StObject.set(x, "reveal", value.asInstanceOf[js.Any])
+    inline def setReveal(value: TaskRevealKind): Self = StObject.set(x, "reveal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevealUndefined: Self = StObject.set(x, "reveal", js.undefined)
+    inline def setRevealUndefined: Self = StObject.set(x, "reveal", js.undefined)
     
-    @scala.inline
-    def setShowReuseMessage(value: Boolean): Self = StObject.set(x, "showReuseMessage", value.asInstanceOf[js.Any])
+    inline def setShowReuseMessage(value: Boolean): Self = StObject.set(x, "showReuseMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowReuseMessageUndefined: Self = StObject.set(x, "showReuseMessage", js.undefined)
+    inline def setShowReuseMessageUndefined: Self = StObject.set(x, "showReuseMessage", js.undefined)
   }
 }

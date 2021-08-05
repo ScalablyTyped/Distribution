@@ -18,8 +18,7 @@ trait ParametersAppsCreateContentAttachmentEndpoint extends StObject {
 }
 object ParametersAppsCreateContentAttachmentEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: AppsCreateContentAttachmentEndpoint,
     request: AppsCreateContentAttachmentRequestOptions,
     response: OctokitResponse[AppsCreateContentAttachmentResponseData]
@@ -28,16 +27,12 @@ object ParametersAppsCreateContentAttachmentEndpoint {
     __obj.asInstanceOf[ParametersAppsCreateContentAttachmentEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersAppsCreateContentAttachmentEndpointMutableBuilder[Self <: ParametersAppsCreateContentAttachmentEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersAppsCreateContentAttachmentEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: AppsCreateContentAttachmentEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: AppsCreateContentAttachmentEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: AppsCreateContentAttachmentRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: AppsCreateContentAttachmentRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[AppsCreateContentAttachmentResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[AppsCreateContentAttachmentResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

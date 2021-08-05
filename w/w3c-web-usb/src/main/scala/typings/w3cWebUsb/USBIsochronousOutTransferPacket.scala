@@ -12,19 +12,15 @@ trait USBIsochronousOutTransferPacket extends StObject {
 }
 object USBIsochronousOutTransferPacket {
   
-  @scala.inline
-  def apply(bytesWritten: Double, status: USBTransferStatus): USBIsochronousOutTransferPacket = {
+  inline def apply(bytesWritten: Double, status: USBTransferStatus): USBIsochronousOutTransferPacket = {
     val __obj = js.Dynamic.literal(bytesWritten = bytesWritten.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[USBIsochronousOutTransferPacket]
   }
   
-  @scala.inline
-  implicit class USBIsochronousOutTransferPacketMutableBuilder[Self <: USBIsochronousOutTransferPacket] (val x: Self) extends AnyVal {
+  extension [Self <: USBIsochronousOutTransferPacket](x: Self) {
     
-    @scala.inline
-    def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
+    inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: USBTransferStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: USBTransferStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

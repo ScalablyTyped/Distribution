@@ -21,8 +21,7 @@ trait IntentFollowUpPrompt extends StObject {
 }
 object IntentFollowUpPrompt {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     prompt: Input[IntentFollowUpPromptPrompt],
     rejectionStatement: Input[IntentFollowUpPromptRejectionStatement]
   ): IntentFollowUpPrompt = {
@@ -30,13 +29,10 @@ object IntentFollowUpPrompt {
     __obj.asInstanceOf[IntentFollowUpPrompt]
   }
   
-  @scala.inline
-  implicit class IntentFollowUpPromptMutableBuilder[Self <: IntentFollowUpPrompt] (val x: Self) extends AnyVal {
+  extension [Self <: IntentFollowUpPrompt](x: Self) {
     
-    @scala.inline
-    def setPrompt(value: Input[IntentFollowUpPromptPrompt]): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: Input[IntentFollowUpPromptPrompt]): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectionStatement(value: Input[IntentFollowUpPromptRejectionStatement]): Self = StObject.set(x, "rejectionStatement", value.asInstanceOf[js.Any])
+    inline def setRejectionStatement(value: Input[IntentFollowUpPromptRejectionStatement]): Self = StObject.set(x, "rejectionStatement", value.asInstanceOf[js.Any])
   }
 }

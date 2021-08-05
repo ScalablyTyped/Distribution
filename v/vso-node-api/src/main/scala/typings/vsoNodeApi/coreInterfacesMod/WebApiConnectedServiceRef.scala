@@ -12,19 +12,15 @@ trait WebApiConnectedServiceRef extends StObject {
 }
 object WebApiConnectedServiceRef {
   
-  @scala.inline
-  def apply(id: String, url: String): WebApiConnectedServiceRef = {
+  inline def apply(id: String, url: String): WebApiConnectedServiceRef = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebApiConnectedServiceRef]
   }
   
-  @scala.inline
-  implicit class WebApiConnectedServiceRefMutableBuilder[Self <: WebApiConnectedServiceRef] (val x: Self) extends AnyVal {
+  extension [Self <: WebApiConnectedServiceRef](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

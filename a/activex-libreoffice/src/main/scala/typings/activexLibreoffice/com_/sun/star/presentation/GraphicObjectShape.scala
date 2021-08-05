@@ -17,8 +17,7 @@ trait GraphicObjectShape
      with typings.activexLibreoffice.com_.sun.star.drawing.GraphicObjectShape
 object GraphicObjectShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bookmark: String,
     DimColor: Color,
     DimHide: Boolean,

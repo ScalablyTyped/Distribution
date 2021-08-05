@@ -18,19 +18,15 @@ trait EnterpriseAdminDeleteUserFromEnterpriseEndpoint extends StObject {
 }
 object EnterpriseAdminDeleteUserFromEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(enterprise: String, scim_user_id: String): EnterpriseAdminDeleteUserFromEnterpriseEndpoint = {
+  inline def apply(enterprise: String, scim_user_id: String): EnterpriseAdminDeleteUserFromEnterpriseEndpoint = {
     val __obj = js.Dynamic.literal(enterprise = enterprise.asInstanceOf[js.Any], scim_user_id = scim_user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminDeleteUserFromEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminDeleteUserFromEnterpriseEndpointMutableBuilder[Self <: EnterpriseAdminDeleteUserFromEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminDeleteUserFromEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScim_user_id(value: String): Self = StObject.set(x, "scim_user_id", value.asInstanceOf[js.Any])
+    inline def setScim_user_id(value: String): Self = StObject.set(x, "scim_user_id", value.asInstanceOf[js.Any])
   }
 }

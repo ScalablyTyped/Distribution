@@ -14,19 +14,15 @@ trait MlUpdateJob[T]
 }
 object MlUpdateJob {
   
-  @scala.inline
-  def apply[T](body: T, job_id: String): MlUpdateJob[T] = {
+  inline def apply[T](body: T, job_id: String): MlUpdateJob[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], job_id = job_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlUpdateJob[T]]
   }
   
-  @scala.inline
-  implicit class MlUpdateJobMutableBuilder[Self <: MlUpdateJob[?], T] (val x: Self & MlUpdateJob[T]) extends AnyVal {
+  extension [Self <: MlUpdateJob[?], T](x: Self & MlUpdateJob[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
+    inline def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
   }
 }

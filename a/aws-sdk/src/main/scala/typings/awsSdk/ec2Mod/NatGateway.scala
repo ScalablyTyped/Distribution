@@ -63,85 +63,59 @@ trait NatGateway extends StObject {
 }
 object NatGateway {
   
-  @scala.inline
-  def apply(): NatGateway = {
+  inline def apply(): NatGateway = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NatGateway]
   }
   
-  @scala.inline
-  implicit class NatGatewayMutableBuilder[Self <: NatGateway] (val x: Self) extends AnyVal {
+  extension [Self <: NatGateway](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
-    @scala.inline
-    def setDeleteTime(value: DateTime): Self = StObject.set(x, "DeleteTime", value.asInstanceOf[js.Any])
+    inline def setDeleteTime(value: DateTime): Self = StObject.set(x, "DeleteTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteTimeUndefined: Self = StObject.set(x, "DeleteTime", js.undefined)
+    inline def setDeleteTimeUndefined: Self = StObject.set(x, "DeleteTime", js.undefined)
     
-    @scala.inline
-    def setFailureCode(value: String): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
+    inline def setFailureCode(value: String): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
+    inline def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
     
-    @scala.inline
-    def setFailureMessage(value: String): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
+    inline def setFailureMessage(value: String): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureMessageUndefined: Self = StObject.set(x, "FailureMessage", js.undefined)
+    inline def setFailureMessageUndefined: Self = StObject.set(x, "FailureMessage", js.undefined)
     
-    @scala.inline
-    def setNatGatewayAddresses(value: NatGatewayAddressList): Self = StObject.set(x, "NatGatewayAddresses", value.asInstanceOf[js.Any])
+    inline def setNatGatewayAddresses(value: NatGatewayAddressList): Self = StObject.set(x, "NatGatewayAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNatGatewayAddressesUndefined: Self = StObject.set(x, "NatGatewayAddresses", js.undefined)
+    inline def setNatGatewayAddressesUndefined: Self = StObject.set(x, "NatGatewayAddresses", js.undefined)
     
-    @scala.inline
-    def setNatGatewayAddressesVarargs(value: NatGatewayAddress*): Self = StObject.set(x, "NatGatewayAddresses", js.Array(value :_*))
+    inline def setNatGatewayAddressesVarargs(value: NatGatewayAddress*): Self = StObject.set(x, "NatGatewayAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setNatGatewayId(value: String): Self = StObject.set(x, "NatGatewayId", value.asInstanceOf[js.Any])
+    inline def setNatGatewayId(value: String): Self = StObject.set(x, "NatGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNatGatewayIdUndefined: Self = StObject.set(x, "NatGatewayId", js.undefined)
+    inline def setNatGatewayIdUndefined: Self = StObject.set(x, "NatGatewayId", js.undefined)
     
-    @scala.inline
-    def setProvisionedBandwidth(value: ProvisionedBandwidth): Self = StObject.set(x, "ProvisionedBandwidth", value.asInstanceOf[js.Any])
+    inline def setProvisionedBandwidth(value: ProvisionedBandwidth): Self = StObject.set(x, "ProvisionedBandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedBandwidthUndefined: Self = StObject.set(x, "ProvisionedBandwidth", js.undefined)
+    inline def setProvisionedBandwidthUndefined: Self = StObject.set(x, "ProvisionedBandwidth", js.undefined)
     
-    @scala.inline
-    def setState(value: NatGatewayState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: NatGatewayState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
+    inline def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

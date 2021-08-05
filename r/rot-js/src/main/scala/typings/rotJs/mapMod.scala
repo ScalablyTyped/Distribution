@@ -26,8 +26,7 @@ object mapMod {
     @JSImport("rot-js/lib/map", "default.Arena")
     @js.native
     def Arena: Instantiable0[typings.rotJs.arenaMod.default] = js.native
-    @scala.inline
-    def Arena_=(x: Instantiable0[typings.rotJs.arenaMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arena")(x.asInstanceOf[js.Any])
+    inline def Arena_=(x: Instantiable0[typings.rotJs.arenaMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arena")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/map", "default.Cellular")
@@ -45,8 +44,7 @@ object mapMod {
         /* options */ js.UndefOr[PartialOptionsBorn], 
         typings.rotJs.cellularMod.default
       ] = js.native
-    @scala.inline
-    def Cellular_=(
+    inline def Cellular_=(
       x: Instantiable3[
           /* width */ Double, 
           /* height */ Double, 
@@ -71,8 +69,7 @@ object mapMod {
         /* options */ js.UndefOr[PartialOptionsCorridorLength], 
         typings.rotJs.diggerMod.default
       ] = js.native
-    @scala.inline
-    def Digger_=(
+    inline def Digger_=(
       x: Instantiable3[
           /* width */ Double, 
           /* height */ Double, 
@@ -89,8 +86,7 @@ object mapMod {
     @JSImport("rot-js/lib/map", "default.DividedMaze")
     @js.native
     def DividedMaze: Instantiable0[typings.rotJs.dividedmazeMod.default] = js.native
-    @scala.inline
-    def DividedMaze_=(x: Instantiable0[typings.rotJs.dividedmazeMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DividedMaze")(x.asInstanceOf[js.Any])
+    inline def DividedMaze_=(x: Instantiable0[typings.rotJs.dividedmazeMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DividedMaze")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/map", "default.EllerMaze")
@@ -100,8 +96,7 @@ object mapMod {
     @JSImport("rot-js/lib/map", "default.EllerMaze")
     @js.native
     def EllerMaze: Instantiable0[typings.rotJs.ellermazeMod.default] = js.native
-    @scala.inline
-    def EllerMaze_=(x: Instantiable0[typings.rotJs.ellermazeMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EllerMaze")(x.asInstanceOf[js.Any])
+    inline def EllerMaze_=(x: Instantiable0[typings.rotJs.ellermazeMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EllerMaze")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rot-js/lib/map", "default.IceyMaze")
@@ -119,8 +114,7 @@ object mapMod {
         /* regularity */ js.UndefOr[Double], 
         typings.rotJs.iceymazeMod.default
       ] = js.native
-    @scala.inline
-    def IceyMaze_=(
+    inline def IceyMaze_=(
       x: Instantiable3[
           /* width */ Double, 
           /* height */ Double, 
@@ -144,8 +138,7 @@ object mapMod {
         /* options */ PartialOptionsCellHeight, 
         typings.rotJs.rogueMod.default
       ] = js.native
-    @scala.inline
-    def Rogue_=(
+    inline def Rogue_=(
       x: Instantiable3[
           /* width */ Double, 
           /* height */ Double, 
@@ -169,8 +162,7 @@ object mapMod {
         /* options */ PartialOptionsRoomDugPercentage, 
         typings.rotJs.uniformMod.default
       ] = js.native
-    @scala.inline
-    def Uniform_=(
+    inline def Uniform_=(
       x: Instantiable3[
           /* width */ Double, 
           /* height */ Double, 

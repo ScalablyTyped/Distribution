@@ -18,9 +18,9 @@ object manualreseteventMod {
   class ManualResetEvent () extends StObject {
     def this(initialState: Boolean) = this()
     
-    var _signaled: js.Any = js.native
+    /* private */ var _signaled: js.Any = js.native
     
-    var _waiters: js.Any = js.native
+    /* private */ var _waiters: js.Any = js.native
     
     /**
       * Gets a value indicating whether the event is signaled.

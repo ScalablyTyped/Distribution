@@ -10,8 +10,7 @@ trait PhoneNumberValidateInput
      with typings.awsSdkClientPinpointBrowser.typesPhoneNumberValidateInputMod.PhoneNumberValidateInput
 object PhoneNumberValidateInput {
   
-  @scala.inline
-  def apply(NumberValidateRequest: NumberValidateRequest): PhoneNumberValidateInput = {
+  inline def apply(NumberValidateRequest: NumberValidateRequest): PhoneNumberValidateInput = {
     val __obj = js.Dynamic.literal(NumberValidateRequest = NumberValidateRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneNumberValidateInput]
   }

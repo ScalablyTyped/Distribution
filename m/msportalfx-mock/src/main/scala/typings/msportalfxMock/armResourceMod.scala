@@ -23,8 +23,7 @@ object armResourceMod {
   }
   object Resource {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       kind: String,
       location: String,
@@ -39,14 +38,11 @@ object armResourceMod {
       __obj.asInstanceOf[Resource]
     }
     
-    @scala.inline
-    implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+    extension [Self <: Resource](x: Self) {
       
-      @scala.inline
-      def setResourceGroup(value: String): Self = StObject.set(x, "resourceGroup", value.asInstanceOf[js.Any])
+      inline def setResourceGroup(value: String): Self = StObject.set(x, "resourceGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfLinkUri(value: String): Self = StObject.set(x, "selfLinkUri", value.asInstanceOf[js.Any])
+      inline def setSelfLinkUri(value: String): Self = StObject.set(x, "selfLinkUri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,33 +80,25 @@ object armResourceMod {
   }
   object ResourceBase {
     
-    @scala.inline
-    def apply(id: String, kind: String, location: String, name: String, tags: StringMap[String], `type`: String): ResourceBase = {
+    inline def apply(id: String, kind: String, location: String, name: String, tags: StringMap[String], `type`: String): ResourceBase = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceBase]
     }
     
-    @scala.inline
-    implicit class ResourceBaseMutableBuilder[Self <: ResourceBase] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceBase](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringMap[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringMap[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

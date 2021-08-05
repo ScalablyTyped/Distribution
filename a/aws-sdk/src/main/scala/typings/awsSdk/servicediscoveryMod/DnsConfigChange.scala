@@ -13,19 +13,15 @@ trait DnsConfigChange extends StObject {
 }
 object DnsConfigChange {
   
-  @scala.inline
-  def apply(DnsRecords: DnsRecordList): DnsConfigChange = {
+  inline def apply(DnsRecords: DnsRecordList): DnsConfigChange = {
     val __obj = js.Dynamic.literal(DnsRecords = DnsRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[DnsConfigChange]
   }
   
-  @scala.inline
-  implicit class DnsConfigChangeMutableBuilder[Self <: DnsConfigChange] (val x: Self) extends AnyVal {
+  extension [Self <: DnsConfigChange](x: Self) {
     
-    @scala.inline
-    def setDnsRecords(value: DnsRecordList): Self = StObject.set(x, "DnsRecords", value.asInstanceOf[js.Any])
+    inline def setDnsRecords(value: DnsRecordList): Self = StObject.set(x, "DnsRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsRecordsVarargs(value: DnsRecord*): Self = StObject.set(x, "DnsRecords", js.Array(value :_*))
+    inline def setDnsRecordsVarargs(value: DnsRecord*): Self = StObject.set(x, "DnsRecords", js.Array(value :_*))
   }
 }

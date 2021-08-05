@@ -85,82 +85,57 @@ trait SchemaSecurityPolicyRule extends StObject {
 }
 object SchemaSecurityPolicyRule {
   
-  @scala.inline
-  def apply(): SchemaSecurityPolicyRule = {
+  inline def apply(): SchemaSecurityPolicyRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecurityPolicyRule]
   }
   
-  @scala.inline
-  implicit class SchemaSecurityPolicyRuleMutableBuilder[Self <: SchemaSecurityPolicyRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSecurityPolicyRule](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setEnableLogging(value: Boolean): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
+    inline def setEnableLogging(value: Boolean): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
+    inline def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMatch(value: SchemaSecurityPolicyRuleMatcher): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: SchemaSecurityPolicyRuleMatcher): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
-    @scala.inline
-    def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+    inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setRateLimitOptions(value: SchemaSecurityPolicyRuleRateLimitOptions): Self = StObject.set(x, "rateLimitOptions", value.asInstanceOf[js.Any])
+    inline def setRateLimitOptions(value: SchemaSecurityPolicyRuleRateLimitOptions): Self = StObject.set(x, "rateLimitOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateLimitOptionsUndefined: Self = StObject.set(x, "rateLimitOptions", js.undefined)
+    inline def setRateLimitOptionsUndefined: Self = StObject.set(x, "rateLimitOptions", js.undefined)
     
-    @scala.inline
-    def setRuleTupleCount(value: Double): Self = StObject.set(x, "ruleTupleCount", value.asInstanceOf[js.Any])
+    inline def setRuleTupleCount(value: Double): Self = StObject.set(x, "ruleTupleCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleTupleCountUndefined: Self = StObject.set(x, "ruleTupleCount", js.undefined)
+    inline def setRuleTupleCountUndefined: Self = StObject.set(x, "ruleTupleCount", js.undefined)
     
-    @scala.inline
-    def setTargetResources(value: js.Array[String]): Self = StObject.set(x, "targetResources", value.asInstanceOf[js.Any])
+    inline def setTargetResources(value: js.Array[String]): Self = StObject.set(x, "targetResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetResourcesUndefined: Self = StObject.set(x, "targetResources", js.undefined)
+    inline def setTargetResourcesUndefined: Self = StObject.set(x, "targetResources", js.undefined)
     
-    @scala.inline
-    def setTargetResourcesVarargs(value: String*): Self = StObject.set(x, "targetResources", js.Array(value :_*))
+    inline def setTargetResourcesVarargs(value: String*): Self = StObject.set(x, "targetResources", js.Array(value :_*))
   }
 }

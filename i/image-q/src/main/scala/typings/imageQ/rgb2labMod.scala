@@ -11,6 +11,5 @@ object rgb2labMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def rgb2lab(r: Double, g: Double, b: Double): A = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb2lab")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[A]
+  inline def rgb2lab(r: Double, g: Double, b: Double): A = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb2lab")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[A]
 }

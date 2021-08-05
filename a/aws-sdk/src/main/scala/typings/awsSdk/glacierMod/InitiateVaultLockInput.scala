@@ -23,25 +23,19 @@ trait InitiateVaultLockInput extends StObject {
 }
 object InitiateVaultLockInput {
   
-  @scala.inline
-  def apply(accountId: String, vaultName: String): InitiateVaultLockInput = {
+  inline def apply(accountId: String, vaultName: String): InitiateVaultLockInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitiateVaultLockInput]
   }
   
-  @scala.inline
-  implicit class InitiateVaultLockInputMutableBuilder[Self <: InitiateVaultLockInput] (val x: Self) extends AnyVal {
+  extension [Self <: InitiateVaultLockInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicy(value: VaultLockPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: VaultLockPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
-    @scala.inline
-    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+    inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

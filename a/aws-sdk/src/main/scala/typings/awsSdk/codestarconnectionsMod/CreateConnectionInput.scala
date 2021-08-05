@@ -28,37 +28,27 @@ trait CreateConnectionInput extends StObject {
 }
 object CreateConnectionInput {
   
-  @scala.inline
-  def apply(ConnectionName: ConnectionName): CreateConnectionInput = {
+  inline def apply(ConnectionName: ConnectionName): CreateConnectionInput = {
     val __obj = js.Dynamic.literal(ConnectionName = ConnectionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConnectionInput]
   }
   
-  @scala.inline
-  implicit class CreateConnectionInputMutableBuilder[Self <: CreateConnectionInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateConnectionInput](x: Self) {
     
-    @scala.inline
-    def setConnectionName(value: ConnectionName): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
+    inline def setConnectionName(value: ConnectionName): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostArn(value: HostArn): Self = StObject.set(x, "HostArn", value.asInstanceOf[js.Any])
+    inline def setHostArn(value: HostArn): Self = StObject.set(x, "HostArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostArnUndefined: Self = StObject.set(x, "HostArn", js.undefined)
+    inline def setHostArnUndefined: Self = StObject.set(x, "HostArn", js.undefined)
     
-    @scala.inline
-    def setProviderType(value: ProviderType): Self = StObject.set(x, "ProviderType", value.asInstanceOf[js.Any])
+    inline def setProviderType(value: ProviderType): Self = StObject.set(x, "ProviderType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderTypeUndefined: Self = StObject.set(x, "ProviderType", js.undefined)
+    inline def setProviderTypeUndefined: Self = StObject.set(x, "ProviderType", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

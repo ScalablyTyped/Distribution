@@ -69,17 +69,14 @@ object redirectHandlerMod {
   }
   object LocationAdapter {
     
-    @scala.inline
-    def apply(assign: String => Unit): LocationAdapter = {
+    inline def apply(assign: String => Unit): LocationAdapter = {
       val __obj = js.Dynamic.literal(assign = js.Any.fromFunction1(assign))
       __obj.asInstanceOf[LocationAdapter]
     }
     
-    @scala.inline
-    implicit class LocationAdapterMutableBuilder[Self <: LocationAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: LocationAdapter](x: Self) {
       
-      @scala.inline
-      def setAssign(value: String => Unit): Self = StObject.set(x, "assign", js.Any.fromFunction1(value))
+      inline def setAssign(value: String => Unit): Self = StObject.set(x, "assign", js.Any.fromFunction1(value))
     }
   }
   

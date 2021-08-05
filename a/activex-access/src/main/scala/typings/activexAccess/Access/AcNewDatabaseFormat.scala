@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcNewDatabaseFormat extends StObject
 object AcNewDatabaseFormat {
   
-  @scala.inline
-  def acNewDatabaseFormatAccess2000: `9` = 9.asInstanceOf[`9`]
+  inline def acNewDatabaseFormatAccess2000: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def acNewDatabaseFormatAccess2002: `10` = 10.asInstanceOf[`10`]
+  inline def acNewDatabaseFormatAccess2002: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def acNewDatabaseFormatAccess2007: `12` = 12.asInstanceOf[`12`]
+  inline def acNewDatabaseFormatAccess2007: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def acNewDatabaseFormatUserDefault: `0` = 0.asInstanceOf[`0`]
+  inline def acNewDatabaseFormatUserDefault: `0` = 0.asInstanceOf[`0`]
 }

@@ -13,8 +13,7 @@ trait IContactPickerActivatedEventArgs
 }
 object IContactPickerActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contactPickerUI: ContactPickerUI,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
@@ -24,10 +23,8 @@ object IContactPickerActivatedEventArgs {
     __obj.asInstanceOf[IContactPickerActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class IContactPickerActivatedEventArgsMutableBuilder[Self <: IContactPickerActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IContactPickerActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setContactPickerUI(value: ContactPickerUI): Self = StObject.set(x, "contactPickerUI", value.asInstanceOf[js.Any])
+    inline def setContactPickerUI(value: ContactPickerUI): Self = StObject.set(x, "contactPickerUI", value.asInstanceOf[js.Any])
   }
 }

@@ -28,37 +28,27 @@ trait WorkspaceConnectionStatus extends StObject {
 }
 object WorkspaceConnectionStatus {
   
-  @scala.inline
-  def apply(): WorkspaceConnectionStatus = {
+  inline def apply(): WorkspaceConnectionStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceConnectionStatus]
   }
   
-  @scala.inline
-  implicit class WorkspaceConnectionStatusMutableBuilder[Self <: WorkspaceConnectionStatus] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceConnectionStatus](x: Self) {
     
-    @scala.inline
-    def setConnectionState(value: ConnectionState): Self = StObject.set(x, "ConnectionState", value.asInstanceOf[js.Any])
+    inline def setConnectionState(value: ConnectionState): Self = StObject.set(x, "ConnectionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStateCheckTimestamp(value: Timestamp): Self = StObject.set(x, "ConnectionStateCheckTimestamp", value.asInstanceOf[js.Any])
+    inline def setConnectionStateCheckTimestamp(value: Timestamp): Self = StObject.set(x, "ConnectionStateCheckTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStateCheckTimestampUndefined: Self = StObject.set(x, "ConnectionStateCheckTimestamp", js.undefined)
+    inline def setConnectionStateCheckTimestampUndefined: Self = StObject.set(x, "ConnectionStateCheckTimestamp", js.undefined)
     
-    @scala.inline
-    def setConnectionStateUndefined: Self = StObject.set(x, "ConnectionState", js.undefined)
+    inline def setConnectionStateUndefined: Self = StObject.set(x, "ConnectionState", js.undefined)
     
-    @scala.inline
-    def setLastKnownUserConnectionTimestamp(value: Timestamp): Self = StObject.set(x, "LastKnownUserConnectionTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastKnownUserConnectionTimestamp(value: Timestamp): Self = StObject.set(x, "LastKnownUserConnectionTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastKnownUserConnectionTimestampUndefined: Self = StObject.set(x, "LastKnownUserConnectionTimestamp", js.undefined)
+    inline def setLastKnownUserConnectionTimestampUndefined: Self = StObject.set(x, "LastKnownUserConnectionTimestamp", js.undefined)
     
-    @scala.inline
-    def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "WorkspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "WorkspaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceIdUndefined: Self = StObject.set(x, "WorkspaceId", js.undefined)
+    inline def setWorkspaceIdUndefined: Self = StObject.set(x, "WorkspaceId", js.undefined)
   }
 }

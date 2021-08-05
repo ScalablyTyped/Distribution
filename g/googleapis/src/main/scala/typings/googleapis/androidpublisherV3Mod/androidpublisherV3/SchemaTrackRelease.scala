@@ -42,55 +42,39 @@ trait SchemaTrackRelease extends StObject {
 }
 object SchemaTrackRelease {
   
-  @scala.inline
-  def apply(): SchemaTrackRelease = {
+  inline def apply(): SchemaTrackRelease = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTrackRelease]
   }
   
-  @scala.inline
-  implicit class SchemaTrackReleaseMutableBuilder[Self <: SchemaTrackRelease] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTrackRelease](x: Self) {
     
-    @scala.inline
-    def setCountryTargeting(value: SchemaCountryTargeting): Self = StObject.set(x, "countryTargeting", value.asInstanceOf[js.Any])
+    inline def setCountryTargeting(value: SchemaCountryTargeting): Self = StObject.set(x, "countryTargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryTargetingUndefined: Self = StObject.set(x, "countryTargeting", js.undefined)
+    inline def setCountryTargetingUndefined: Self = StObject.set(x, "countryTargeting", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReleaseNotes(value: js.Array[SchemaLocalizedText]): Self = StObject.set(x, "releaseNotes", value.asInstanceOf[js.Any])
+    inline def setReleaseNotes(value: js.Array[SchemaLocalizedText]): Self = StObject.set(x, "releaseNotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseNotesUndefined: Self = StObject.set(x, "releaseNotes", js.undefined)
+    inline def setReleaseNotesUndefined: Self = StObject.set(x, "releaseNotes", js.undefined)
     
-    @scala.inline
-    def setReleaseNotesVarargs(value: SchemaLocalizedText*): Self = StObject.set(x, "releaseNotes", js.Array(value :_*))
+    inline def setReleaseNotesVarargs(value: SchemaLocalizedText*): Self = StObject.set(x, "releaseNotes", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setUserFraction(value: Double): Self = StObject.set(x, "userFraction", value.asInstanceOf[js.Any])
+    inline def setUserFraction(value: Double): Self = StObject.set(x, "userFraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserFractionUndefined: Self = StObject.set(x, "userFraction", js.undefined)
+    inline def setUserFractionUndefined: Self = StObject.set(x, "userFraction", js.undefined)
     
-    @scala.inline
-    def setVersionCodes(value: js.Array[String]): Self = StObject.set(x, "versionCodes", value.asInstanceOf[js.Any])
+    inline def setVersionCodes(value: js.Array[String]): Self = StObject.set(x, "versionCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCodesUndefined: Self = StObject.set(x, "versionCodes", js.undefined)
+    inline def setVersionCodesUndefined: Self = StObject.set(x, "versionCodes", js.undefined)
     
-    @scala.inline
-    def setVersionCodesVarargs(value: String*): Self = StObject.set(x, "versionCodes", js.Array(value :_*))
+    inline def setVersionCodesVarargs(value: String*): Self = StObject.set(x, "versionCodes", js.Array(value :_*))
   }
 }

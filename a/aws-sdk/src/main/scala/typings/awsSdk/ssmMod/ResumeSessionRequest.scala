@@ -13,16 +13,13 @@ trait ResumeSessionRequest extends StObject {
 }
 object ResumeSessionRequest {
   
-  @scala.inline
-  def apply(SessionId: SessionId): ResumeSessionRequest = {
+  inline def apply(SessionId: SessionId): ResumeSessionRequest = {
     val __obj = js.Dynamic.literal(SessionId = SessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResumeSessionRequest]
   }
   
-  @scala.inline
-  implicit class ResumeSessionRequestMutableBuilder[Self <: ResumeSessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResumeSessionRequest](x: Self) {
     
-    @scala.inline
-    def setSessionId(value: SessionId): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: SessionId): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
   }
 }

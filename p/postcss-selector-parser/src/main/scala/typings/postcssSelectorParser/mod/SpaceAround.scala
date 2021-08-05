@@ -12,19 +12,15 @@ trait SpaceAround extends StObject {
 }
 object SpaceAround {
   
-  @scala.inline
-  def apply(after: String, before: String): SpaceAround = {
+  inline def apply(after: String, before: String): SpaceAround = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpaceAround]
   }
   
-  @scala.inline
-  implicit class SpaceAroundMutableBuilder[Self <: SpaceAround] (val x: Self) extends AnyVal {
+  extension [Self <: SpaceAround](x: Self) {
     
-    @scala.inline
-    def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
   }
 }

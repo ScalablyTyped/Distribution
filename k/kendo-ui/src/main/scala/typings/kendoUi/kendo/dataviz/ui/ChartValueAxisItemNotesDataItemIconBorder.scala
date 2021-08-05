@@ -12,25 +12,19 @@ trait ChartValueAxisItemNotesDataItemIconBorder extends StObject {
 }
 object ChartValueAxisItemNotesDataItemIconBorder {
   
-  @scala.inline
-  def apply(): ChartValueAxisItemNotesDataItemIconBorder = {
+  inline def apply(): ChartValueAxisItemNotesDataItemIconBorder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartValueAxisItemNotesDataItemIconBorder]
   }
   
-  @scala.inline
-  implicit class ChartValueAxisItemNotesDataItemIconBorderMutableBuilder[Self <: ChartValueAxisItemNotesDataItemIconBorder] (val x: Self) extends AnyVal {
+  extension [Self <: ChartValueAxisItemNotesDataItemIconBorder](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

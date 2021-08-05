@@ -43,52 +43,37 @@ trait RegisterInstanceRequest extends StObject {
 }
 object RegisterInstanceRequest {
   
-  @scala.inline
-  def apply(StackId: String): RegisterInstanceRequest = {
+  inline def apply(StackId: String): RegisterInstanceRequest = {
     val __obj = js.Dynamic.literal(StackId = StackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterInstanceRequest]
   }
   
-  @scala.inline
-  implicit class RegisterInstanceRequestMutableBuilder[Self <: RegisterInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnameUndefined: Self = StObject.set(x, "Hostname", js.undefined)
+    inline def setHostnameUndefined: Self = StObject.set(x, "Hostname", js.undefined)
     
-    @scala.inline
-    def setInstanceIdentity(value: InstanceIdentity): Self = StObject.set(x, "InstanceIdentity", value.asInstanceOf[js.Any])
+    inline def setInstanceIdentity(value: InstanceIdentity): Self = StObject.set(x, "InstanceIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdentityUndefined: Self = StObject.set(x, "InstanceIdentity", js.undefined)
+    inline def setInstanceIdentityUndefined: Self = StObject.set(x, "InstanceIdentity", js.undefined)
     
-    @scala.inline
-    def setPrivateIp(value: String): Self = StObject.set(x, "PrivateIp", value.asInstanceOf[js.Any])
+    inline def setPrivateIp(value: String): Self = StObject.set(x, "PrivateIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateIpUndefined: Self = StObject.set(x, "PrivateIp", js.undefined)
+    inline def setPrivateIpUndefined: Self = StObject.set(x, "PrivateIp", js.undefined)
     
-    @scala.inline
-    def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
+    inline def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
+    inline def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
     
-    @scala.inline
-    def setRsaPublicKey(value: String): Self = StObject.set(x, "RsaPublicKey", value.asInstanceOf[js.Any])
+    inline def setRsaPublicKey(value: String): Self = StObject.set(x, "RsaPublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaPublicKeyFingerprint(value: String): Self = StObject.set(x, "RsaPublicKeyFingerprint", value.asInstanceOf[js.Any])
+    inline def setRsaPublicKeyFingerprint(value: String): Self = StObject.set(x, "RsaPublicKeyFingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaPublicKeyFingerprintUndefined: Self = StObject.set(x, "RsaPublicKeyFingerprint", js.undefined)
+    inline def setRsaPublicKeyFingerprintUndefined: Self = StObject.set(x, "RsaPublicKeyFingerprint", js.undefined)
     
-    @scala.inline
-    def setRsaPublicKeyUndefined: Self = StObject.set(x, "RsaPublicKey", js.undefined)
+    inline def setRsaPublicKeyUndefined: Self = StObject.set(x, "RsaPublicKey", js.undefined)
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
   }
 }

@@ -6,14 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object basenameMod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(path: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(path: js.Any, suffix: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(path: Unit, suffix: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(path: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(path: js.Any, suffix: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(path: Unit, suffix: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("locutus/php/filesystem/basename", JSImport.Namespace)
   @js.native

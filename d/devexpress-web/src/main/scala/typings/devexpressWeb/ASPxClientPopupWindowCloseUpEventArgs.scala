@@ -18,16 +18,13 @@ trait ASPxClientPopupWindowCloseUpEventArgs
 }
 object ASPxClientPopupWindowCloseUpEventArgs {
   
-  @scala.inline
-  def apply(closeReason: ASPxClientPopupControlCloseReason, window: ASPxClientPopupWindow): ASPxClientPopupWindowCloseUpEventArgs = {
+  inline def apply(closeReason: ASPxClientPopupControlCloseReason, window: ASPxClientPopupWindow): ASPxClientPopupWindowCloseUpEventArgs = {
     val __obj = js.Dynamic.literal(closeReason = closeReason.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientPopupWindowCloseUpEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientPopupWindowCloseUpEventArgsMutableBuilder[Self <: ASPxClientPopupWindowCloseUpEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientPopupWindowCloseUpEventArgs](x: Self) {
     
-    @scala.inline
-    def setCloseReason(value: ASPxClientPopupControlCloseReason): Self = StObject.set(x, "closeReason", value.asInstanceOf[js.Any])
+    inline def setCloseReason(value: ASPxClientPopupControlCloseReason): Self = StObject.set(x, "closeReason", value.asInstanceOf[js.Any])
   }
 }

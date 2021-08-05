@@ -13,19 +13,15 @@ trait CancelCapacityReservationResult extends StObject {
 }
 object CancelCapacityReservationResult {
   
-  @scala.inline
-  def apply(): CancelCapacityReservationResult = {
+  inline def apply(): CancelCapacityReservationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelCapacityReservationResult]
   }
   
-  @scala.inline
-  implicit class CancelCapacityReservationResultMutableBuilder[Self <: CancelCapacityReservationResult] (val x: Self) extends AnyVal {
+  extension [Self <: CancelCapacityReservationResult](x: Self) {
     
-    @scala.inline
-    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
   }
 }

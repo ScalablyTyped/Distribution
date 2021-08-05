@@ -58,67 +58,47 @@ trait ExecuteStatementRequest extends StObject {
 }
 object ExecuteStatementRequest {
   
-  @scala.inline
-  def apply(resourceArn: Arn, secretArn: Arn, sql: SqlStatement): ExecuteStatementRequest = {
+  inline def apply(resourceArn: Arn, secretArn: Arn, sql: SqlStatement): ExecuteStatementRequest = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], secretArn = secretArn.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteStatementRequest]
   }
   
-  @scala.inline
-  implicit class ExecuteStatementRequestMutableBuilder[Self <: ExecuteStatementRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteStatementRequest](x: Self) {
     
-    @scala.inline
-    def setContinueAfterTimeout(value: Boolean): Self = StObject.set(x, "continueAfterTimeout", value.asInstanceOf[js.Any])
+    inline def setContinueAfterTimeout(value: Boolean): Self = StObject.set(x, "continueAfterTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinueAfterTimeoutUndefined: Self = StObject.set(x, "continueAfterTimeout", js.undefined)
+    inline def setContinueAfterTimeoutUndefined: Self = StObject.set(x, "continueAfterTimeout", js.undefined)
     
-    @scala.inline
-    def setDatabase(value: DbName): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: DbName): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
-    @scala.inline
-    def setIncludeResultMetadata(value: Boolean): Self = StObject.set(x, "includeResultMetadata", value.asInstanceOf[js.Any])
+    inline def setIncludeResultMetadata(value: Boolean): Self = StObject.set(x, "includeResultMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeResultMetadataUndefined: Self = StObject.set(x, "includeResultMetadata", js.undefined)
+    inline def setIncludeResultMetadataUndefined: Self = StObject.set(x, "includeResultMetadata", js.undefined)
     
-    @scala.inline
-    def setParameters(value: SqlParametersList): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: SqlParametersList): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: SqlParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: SqlParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetOptions(value: ResultSetOptions): Self = StObject.set(x, "resultSetOptions", value.asInstanceOf[js.Any])
+    inline def setResultSetOptions(value: ResultSetOptions): Self = StObject.set(x, "resultSetOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetOptionsUndefined: Self = StObject.set(x, "resultSetOptions", js.undefined)
+    inline def setResultSetOptionsUndefined: Self = StObject.set(x, "resultSetOptions", js.undefined)
     
-    @scala.inline
-    def setSchema(value: DbName): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: DbName): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setSecretArn(value: Arn): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
+    inline def setSecretArn(value: Arn): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSql(value: SqlStatement): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: SqlStatement): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionId(value: Id): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: Id): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
   }
 }

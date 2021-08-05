@@ -10,9 +10,7 @@ object runtimeConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Any]
+  inline def default(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def setConfig(configValue: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(configValue.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setConfig(configValue: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(configValue.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

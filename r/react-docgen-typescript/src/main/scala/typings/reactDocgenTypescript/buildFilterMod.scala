@@ -12,6 +12,5 @@ object buildFilterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buildFilter(opts: ParserOptions): PropFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("buildFilter")(opts.asInstanceOf[js.Any]).asInstanceOf[PropFilter]
+  inline def buildFilter(opts: ParserOptions): PropFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("buildFilter")(opts.asInstanceOf[js.Any]).asInstanceOf[PropFilter]
 }

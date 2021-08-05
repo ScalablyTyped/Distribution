@@ -23,31 +23,23 @@ trait CreateCachePolicyResult extends StObject {
 }
 object CreateCachePolicyResult {
   
-  @scala.inline
-  def apply(): CreateCachePolicyResult = {
+  inline def apply(): CreateCachePolicyResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCachePolicyResult]
   }
   
-  @scala.inline
-  implicit class CreateCachePolicyResultMutableBuilder[Self <: CreateCachePolicyResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCachePolicyResult](x: Self) {
     
-    @scala.inline
-    def setCachePolicy(value: CachePolicy): Self = StObject.set(x, "CachePolicy", value.asInstanceOf[js.Any])
+    inline def setCachePolicy(value: CachePolicy): Self = StObject.set(x, "CachePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCachePolicyUndefined: Self = StObject.set(x, "CachePolicy", js.undefined)
+    inline def setCachePolicyUndefined: Self = StObject.set(x, "CachePolicy", js.undefined)
     
-    @scala.inline
-    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
   }
 }

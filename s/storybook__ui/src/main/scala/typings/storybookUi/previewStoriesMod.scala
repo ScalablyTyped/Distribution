@@ -24,25 +24,20 @@ object previewStoriesMod {
     @JSImport("@storybook/ui/dist/components/preview/preview.stories", "default.component")
     @js.native
     def component: NamedExoticComponent[PreviewProps] = js.native
-    @scala.inline
-    def component_=(x: NamedExoticComponent[PreviewProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
+    inline def component_=(x: NamedExoticComponent[PreviewProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/preview/preview.stories", "default.decorators")
     @js.native
     def decorators: js.Array[DecoratorFunction[StoryFnReactReturnType]] = js.native
-    @scala.inline
-    def decorators_=(x: js.Array[DecoratorFunction[StoryFnReactReturnType]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
+    inline def decorators_=(x: js.Array[DecoratorFunction[StoryFnReactReturnType]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/preview/preview.stories", "default.title")
     @js.native
     def title: String = js.native
-    @scala.inline
-    def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
+    inline def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def noTabs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("noTabs")().asInstanceOf[Element]
+  inline def noTabs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("noTabs")().asInstanceOf[Element]
   
-  @scala.inline
-  def withTabs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("withTabs")().asInstanceOf[Element]
+  inline def withTabs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("withTabs")().asInstanceOf[Element]
 }

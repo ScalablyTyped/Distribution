@@ -18,19 +18,15 @@ trait CloudID extends StObject {
 }
 object CloudID {
   
-  @scala.inline
-  def apply(cloudID: String, encryptedData: String): CloudID = {
+  inline def apply(cloudID: String, encryptedData: String): CloudID = {
     val __obj = js.Dynamic.literal(cloudID = cloudID.asInstanceOf[js.Any], encryptedData = encryptedData.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudID]
   }
   
-  @scala.inline
-  implicit class CloudIDMutableBuilder[Self <: CloudID] (val x: Self) extends AnyVal {
+  extension [Self <: CloudID](x: Self) {
     
-    @scala.inline
-    def setCloudID(value: String): Self = StObject.set(x, "cloudID", value.asInstanceOf[js.Any])
+    inline def setCloudID(value: String): Self = StObject.set(x, "cloudID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
+    inline def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
   }
 }

@@ -29,7 +29,7 @@ trait Index extends StObject {
   def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: Unit, DDL: Boolean): Property = js.native
   
-  @JSName("DAO.Index_typekey")
+  /* private */ @JSName("DAO.Index_typekey")
   var DAODotIndex_typekey: Index = js.native
   
   val DistinctCount: Double = js.native

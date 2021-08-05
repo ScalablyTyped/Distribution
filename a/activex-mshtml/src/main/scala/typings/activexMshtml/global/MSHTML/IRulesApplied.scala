@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IRulesApplied")
 @js.native
-class IRulesApplied protected ()
+/* private */ class IRulesApplied ()
   extends StObject
      with typings.activexMshtml.MSHTML.IRulesApplied {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IRulesApplied_typekey")
   var MSHTMLDotIRulesApplied_typekey: typings.activexMshtml.MSHTML.IRulesApplied = js.native
   

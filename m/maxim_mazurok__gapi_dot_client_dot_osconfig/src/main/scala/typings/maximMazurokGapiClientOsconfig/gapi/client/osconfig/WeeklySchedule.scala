@@ -11,19 +11,15 @@ trait WeeklySchedule extends StObject {
 }
 object WeeklySchedule {
   
-  @scala.inline
-  def apply(): WeeklySchedule = {
+  inline def apply(): WeeklySchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeeklySchedule]
   }
   
-  @scala.inline
-  implicit class WeeklyScheduleMutableBuilder[Self <: WeeklySchedule] (val x: Self) extends AnyVal {
+  extension [Self <: WeeklySchedule](x: Self) {
     
-    @scala.inline
-    def setDayOfWeek(value: String): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
+    inline def setDayOfWeek(value: String): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
+    inline def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
   }
 }

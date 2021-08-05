@@ -13,16 +13,13 @@ trait DeleteUsageLimitMessage extends StObject {
 }
 object DeleteUsageLimitMessage {
   
-  @scala.inline
-  def apply(UsageLimitId: String): DeleteUsageLimitMessage = {
+  inline def apply(UsageLimitId: String): DeleteUsageLimitMessage = {
     val __obj = js.Dynamic.literal(UsageLimitId = UsageLimitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteUsageLimitMessage]
   }
   
-  @scala.inline
-  implicit class DeleteUsageLimitMessageMutableBuilder[Self <: DeleteUsageLimitMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteUsageLimitMessage](x: Self) {
     
-    @scala.inline
-    def setUsageLimitId(value: String): Self = StObject.set(x, "UsageLimitId", value.asInstanceOf[js.Any])
+    inline def setUsageLimitId(value: String): Self = StObject.set(x, "UsageLimitId", value.asInstanceOf[js.Any])
   }
 }

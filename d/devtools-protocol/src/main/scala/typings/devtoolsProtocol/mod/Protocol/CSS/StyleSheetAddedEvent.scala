@@ -13,16 +13,13 @@ trait StyleSheetAddedEvent extends StObject {
 }
 object StyleSheetAddedEvent {
   
-  @scala.inline
-  def apply(header: CSSStyleSheetHeader): StyleSheetAddedEvent = {
+  inline def apply(header: CSSStyleSheetHeader): StyleSheetAddedEvent = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleSheetAddedEvent]
   }
   
-  @scala.inline
-  implicit class StyleSheetAddedEventMutableBuilder[Self <: StyleSheetAddedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: StyleSheetAddedEvent](x: Self) {
     
-    @scala.inline
-    def setHeader(value: CSSStyleSheetHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: CSSStyleSheetHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }
 }

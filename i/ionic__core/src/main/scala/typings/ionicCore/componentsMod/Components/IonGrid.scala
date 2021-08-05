@@ -13,16 +13,13 @@ trait IonGrid extends StObject {
 }
 object IonGrid {
   
-  @scala.inline
-  def apply(fixed: Boolean): IonGrid = {
+  inline def apply(fixed: Boolean): IonGrid = {
     val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonGrid]
   }
   
-  @scala.inline
-  implicit class IonGridMutableBuilder[Self <: IonGrid] (val x: Self) extends AnyVal {
+  extension [Self <: IonGrid](x: Self) {
     
-    @scala.inline
-    def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
   }
 }

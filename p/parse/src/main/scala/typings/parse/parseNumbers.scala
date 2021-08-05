@@ -8,11 +8,9 @@ object parseNumbers {
   
   @js.native
   sealed trait `-1` extends StObject
-  @scala.inline
-  def `-1`: `-1` = -1.asInstanceOf[`-1`]
+  inline def `-1`: `-1` = -1.asInstanceOf[`-1`]
   
   @js.native
   sealed trait `1` extends StObject
-  @scala.inline
-  def `1`: `1` = 1.asInstanceOf[`1`]
+  inline def `1`: `1` = 1.asInstanceOf[`1`]
 }

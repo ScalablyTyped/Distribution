@@ -12,8 +12,7 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mapPlainTextIndex(
+  inline def mapPlainTextIndex(
     value: String,
     markup: String,
     indexInPlainText: Double,

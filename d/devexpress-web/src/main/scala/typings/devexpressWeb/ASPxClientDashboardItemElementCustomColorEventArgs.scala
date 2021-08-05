@@ -39,8 +39,7 @@ trait ASPxClientDashboardItemElementCustomColorEventArgs
 }
 object ASPxClientDashboardItemElementCustomColorEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetColor: () => String,
     GetMeasures: () => js.Array[ASPxClientDashboardItemDataMeasure],
     GetTargetElement: () => ASPxClientDashboardItemDataAxisPointTuple,
@@ -51,22 +50,16 @@ object ASPxClientDashboardItemElementCustomColorEventArgs {
     __obj.asInstanceOf[ASPxClientDashboardItemElementCustomColorEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardItemElementCustomColorEventArgsMutableBuilder[Self <: ASPxClientDashboardItemElementCustomColorEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardItemElementCustomColorEventArgs](x: Self) {
     
-    @scala.inline
-    def setGetColor(value: () => String): Self = StObject.set(x, "GetColor", js.Any.fromFunction0(value))
+    inline def setGetColor(value: () => String): Self = StObject.set(x, "GetColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMeasures(value: () => js.Array[ASPxClientDashboardItemDataMeasure]): Self = StObject.set(x, "GetMeasures", js.Any.fromFunction0(value))
+    inline def setGetMeasures(value: () => js.Array[ASPxClientDashboardItemDataMeasure]): Self = StObject.set(x, "GetMeasures", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTargetElement(value: () => ASPxClientDashboardItemDataAxisPointTuple): Self = StObject.set(x, "GetTargetElement", js.Any.fromFunction0(value))
+    inline def setGetTargetElement(value: () => ASPxClientDashboardItemDataAxisPointTuple): Self = StObject.set(x, "GetTargetElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
+    inline def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetColor(value: String => Unit): Self = StObject.set(x, "SetColor", js.Any.fromFunction1(value))
+    inline def setSetColor(value: String => Unit): Self = StObject.set(x, "SetColor", js.Any.fromFunction1(value))
   }
 }

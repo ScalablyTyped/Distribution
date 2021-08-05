@@ -17,12 +17,9 @@ object theseTMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTheseM[M](M: Monad[M]): TheseM[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheseM")(M.asInstanceOf[js.Any]).asInstanceOf[TheseM[M]]
-  @scala.inline
-  def getTheseM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](M: Monad1[M]): TheseM1[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheseM")(M.asInstanceOf[js.Any]).asInstanceOf[TheseM1[M]]
-  @scala.inline
-  def getTheseM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](M: Monad2[M]): TheseM2[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheseM")(M.asInstanceOf[js.Any]).asInstanceOf[TheseM2[M]]
+  inline def getTheseM[M](M: Monad[M]): TheseM[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheseM")(M.asInstanceOf[js.Any]).asInstanceOf[TheseM[M]]
+  inline def getTheseM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](M: Monad1[M]): TheseM1[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheseM")(M.asInstanceOf[js.Any]).asInstanceOf[TheseM1[M]]
+  inline def getTheseM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](M: Monad2[M]): TheseM2[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheseM")(M.asInstanceOf[js.Any]).asInstanceOf[TheseM2[M]]
   
   trait TheseM[M] extends StObject {
     
@@ -71,8 +68,7 @@ object theseTMod {
   }
   object TheseM {
     
-    @scala.inline
-    def apply[M](
+    inline def apply[M](
       bimap: (TheseT[M, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => TheseT[M, js.Any, js.Any],
       both: (js.Any, js.Any) => TheseT[M, js.Any, js.Any],
       fold: (TheseT[M, js.Any, js.Any], js.Function1[
@@ -100,19 +96,15 @@ object theseTMod {
       __obj.asInstanceOf[TheseM[M]]
     }
     
-    @scala.inline
-    implicit class TheseMMutableBuilder[Self <: TheseM[?], M] (val x: Self & TheseM[M]) extends AnyVal {
+    extension [Self <: TheseM[?], M](x: Self & TheseM[M]) {
       
-      @scala.inline
-      def setBimap(
+      inline def setBimap(
         value: (TheseT[M, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => TheseT[M, js.Any, js.Any]
       ): Self = StObject.set(x, "bimap", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setBoth(value: (js.Any, js.Any) => TheseT[M, js.Any, js.Any]): Self = StObject.set(x, "both", js.Any.fromFunction2(value))
+      inline def setBoth(value: (js.Any, js.Any) => TheseT[M, js.Any, js.Any]): Self = StObject.set(x, "both", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFold(
+      inline def setFold(
         value: (TheseT[M, js.Any, js.Any], js.Function1[
               js.Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, R> */ js.Any
@@ -126,36 +118,27 @@ object theseTMod {
             ]) => js.Any
       ): Self = StObject.set(x, "fold", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setGetMonad(value: Semigroup[js.Any] => Ap[js.Any, M]): Self = StObject.set(x, "getMonad", js.Any.fromFunction1(value))
+      inline def setGetMonad(value: Semigroup[js.Any] => Ap[js.Any, M]): Self = StObject.set(x, "getMonad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLeft(value: js.Any => TheseT[M, js.Any, js.Any]): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
+      inline def setLeft(value: js.Any => TheseT[M, js.Any, js.Any]): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLeftM(
+      inline def setLeftM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, E> */ js.Any => TheseT[M, js.Any, js.Any]
       ): Self = StObject.set(x, "leftM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMap(value: (TheseT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => TheseT[M, js.Any, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+      inline def setMap(value: (TheseT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => TheseT[M, js.Any, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMapLeft(value: (TheseT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => TheseT[M, js.Any, js.Any]): Self = StObject.set(x, "mapLeft", js.Any.fromFunction2(value))
+      inline def setMapLeft(value: (TheseT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => TheseT[M, js.Any, js.Any]): Self = StObject.set(x, "mapLeft", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRight(value: js.Any => TheseT[M, js.Any, js.Any]): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
+      inline def setRight(value: js.Any => TheseT[M, js.Any, js.Any]): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRightM(
+      inline def setRightM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ js.Any => TheseT[M, js.Any, js.Any]
       ): Self = StObject.set(x, "rightM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSwap(value: TheseT[M, js.Any, js.Any] => TheseT[M, js.Any, js.Any]): Self = StObject.set(x, "swap", js.Any.fromFunction1(value))
+      inline def setSwap(value: TheseT[M, js.Any, js.Any] => TheseT[M, js.Any, js.Any]): Self = StObject.set(x, "swap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToTuple(value: (TheseT[M, js.Any, js.Any], js.Any, js.Any) => js.Any): Self = StObject.set(x, "toTuple", js.Any.fromFunction3(value))
+      inline def setToTuple(value: (TheseT[M, js.Any, js.Any], js.Any, js.Any) => js.Any): Self = StObject.set(x, "toTuple", js.Any.fromFunction3(value))
     }
   }
   
@@ -206,8 +189,7 @@ object theseTMod {
   }
   object TheseM1 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       bimap: (TheseT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => TheseT1[M, js.Any, js.Any],
       both: (js.Any, js.Any) => TheseT1[M, js.Any, js.Any],
       fold: (TheseT1[M, js.Any, js.Any], js.Function1[
@@ -235,19 +217,15 @@ object theseTMod {
       __obj.asInstanceOf[TheseM1[M]]
     }
     
-    @scala.inline
-    implicit class TheseM1MutableBuilder[Self <: TheseM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & TheseM1[M]) extends AnyVal {
+    extension [Self <: TheseM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & TheseM1[M]) {
       
-      @scala.inline
-      def setBimap(
+      inline def setBimap(
         value: (TheseT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => TheseT1[M, js.Any, js.Any]
       ): Self = StObject.set(x, "bimap", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setBoth(value: (js.Any, js.Any) => TheseT1[M, js.Any, js.Any]): Self = StObject.set(x, "both", js.Any.fromFunction2(value))
+      inline def setBoth(value: (js.Any, js.Any) => TheseT1[M, js.Any, js.Any]): Self = StObject.set(x, "both", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFold(
+      inline def setFold(
         value: (TheseT1[M, js.Any, js.Any], js.Function1[
               js.Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, R> */ js.Any
@@ -261,36 +239,27 @@ object theseTMod {
             ]) => js.Any
       ): Self = StObject.set(x, "fold", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setGetMonad(value: Semigroup[js.Any] => Chain[js.Any, M]): Self = StObject.set(x, "getMonad", js.Any.fromFunction1(value))
+      inline def setGetMonad(value: Semigroup[js.Any] => Chain[js.Any, M]): Self = StObject.set(x, "getMonad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLeft(value: js.Any => TheseT1[M, js.Any, js.Any]): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
+      inline def setLeft(value: js.Any => TheseT1[M, js.Any, js.Any]): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLeftM(
+      inline def setLeftM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, E> */ js.Any => TheseT1[M, js.Any, js.Any]
       ): Self = StObject.set(x, "leftM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMap(value: (TheseT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => TheseT1[M, js.Any, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+      inline def setMap(value: (TheseT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => TheseT1[M, js.Any, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMapLeft(value: (TheseT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => TheseT1[M, js.Any, js.Any]): Self = StObject.set(x, "mapLeft", js.Any.fromFunction2(value))
+      inline def setMapLeft(value: (TheseT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => TheseT1[M, js.Any, js.Any]): Self = StObject.set(x, "mapLeft", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRight(value: js.Any => TheseT1[M, js.Any, js.Any]): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
+      inline def setRight(value: js.Any => TheseT1[M, js.Any, js.Any]): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRightM(
+      inline def setRightM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ js.Any => TheseT1[M, js.Any, js.Any]
       ): Self = StObject.set(x, "rightM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSwap(value: TheseT1[M, js.Any, js.Any] => TheseT1[M, js.Any, js.Any]): Self = StObject.set(x, "swap", js.Any.fromFunction1(value))
+      inline def setSwap(value: TheseT1[M, js.Any, js.Any] => TheseT1[M, js.Any, js.Any]): Self = StObject.set(x, "swap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToTuple(value: (TheseT1[M, js.Any, js.Any], js.Any, js.Any) => js.Any): Self = StObject.set(x, "toTuple", js.Any.fromFunction3(value))
+      inline def setToTuple(value: (TheseT1[M, js.Any, js.Any], js.Any, js.Any) => js.Any): Self = StObject.set(x, "toTuple", js.Any.fromFunction3(value))
     }
   }
   
@@ -341,8 +310,7 @@ object theseTMod {
   }
   object TheseM2 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       bimap: (TheseT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => TheseT2[M, js.Any, js.Any, js.Any],
       both: (js.Any, js.Any) => TheseT2[M, js.Any, js.Any, js.Any],
       fold: (TheseT2[M, js.Any, js.Any, js.Any], js.Function1[
@@ -370,19 +338,15 @@ object theseTMod {
       __obj.asInstanceOf[TheseM2[M]]
     }
     
-    @scala.inline
-    implicit class TheseM2MutableBuilder[Self <: TheseM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & TheseM2[M]) extends AnyVal {
+    extension [Self <: TheseM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & TheseM2[M]) {
       
-      @scala.inline
-      def setBimap(
+      inline def setBimap(
         value: (TheseT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => TheseT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "bimap", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setBoth(value: (js.Any, js.Any) => TheseT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "both", js.Any.fromFunction2(value))
+      inline def setBoth(value: (js.Any, js.Any) => TheseT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "both", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFold(
+      inline def setFold(
         value: (TheseT2[M, js.Any, js.Any, js.Any], js.Function1[
               js.Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, R, B> */ js.Any
@@ -396,40 +360,31 @@ object theseTMod {
             ]) => js.Any
       ): Self = StObject.set(x, "fold", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setGetMonad(value: Semigroup[js.Any] => Map[js.Any, M]): Self = StObject.set(x, "getMonad", js.Any.fromFunction1(value))
+      inline def setGetMonad(value: Semigroup[js.Any] => Map[js.Any, M]): Self = StObject.set(x, "getMonad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLeft(value: js.Any => TheseT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
+      inline def setLeft(value: js.Any => TheseT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLeftM(
+      inline def setLeftM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, R, E> */ js.Any => TheseT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "leftM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMap(
+      inline def setMap(
         value: (TheseT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => TheseT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMapLeft(
+      inline def setMapLeft(
         value: (TheseT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => TheseT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "mapLeft", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRight(value: js.Any => TheseT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
+      inline def setRight(value: js.Any => TheseT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRightM(
+      inline def setRightM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, R, A> */ js.Any => TheseT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "rightM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSwap(value: TheseT2[M, js.Any, js.Any, js.Any] => TheseT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "swap", js.Any.fromFunction1(value))
+      inline def setSwap(value: TheseT2[M, js.Any, js.Any, js.Any] => TheseT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "swap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToTuple(value: (TheseT2[M, js.Any, js.Any, js.Any], js.Any, js.Any) => js.Any): Self = StObject.set(x, "toTuple", js.Any.fromFunction3(value))
+      inline def setToTuple(value: (TheseT2[M, js.Any, js.Any, js.Any], js.Any, js.Any) => js.Any): Self = StObject.set(x, "toTuple", js.Any.fromFunction3(value))
     }
   }
   

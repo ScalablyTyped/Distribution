@@ -28,19 +28,15 @@ trait BackgroundAudioError extends StObject {
 }
 object BackgroundAudioError {
   
-  @scala.inline
-  def apply(errCode: Double, errMsg: String): BackgroundAudioError = {
+  inline def apply(errCode: Double, errMsg: String): BackgroundAudioError = {
     val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundAudioError]
   }
   
-  @scala.inline
-  implicit class BackgroundAudioErrorMutableBuilder[Self <: BackgroundAudioError] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundAudioError](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

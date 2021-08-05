@@ -84,21 +84,16 @@ object partitionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Partition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Partition]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Partition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Partition]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PartitionState): Partition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Partition]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PartitionState, opts: CustomResourceOptions): Partition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Partition]
+    inline def get(name: String, id: Input[ID]): Partition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Partition]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Partition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Partition]
+    inline def get(name: String, id: Input[ID], state: PartitionState): Partition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Partition]
+    inline def get(name: String, id: Input[ID], state: PartitionState, opts: CustomResourceOptions): Partition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Partition]
     
     /**
       * Returns true if the given object is an instance of Partition.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/partition.Partition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/partition.Partition */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/partition.Partition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/partition.Partition */ Boolean]
   }
   
   trait PartitionArgs extends StObject {
@@ -132,8 +127,7 @@ object partitionMod {
   }
   object PartitionArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       databaseName: Input[String],
       partitionValues: Input[js.Array[Input[String]]],
       tableName: Input[String]
@@ -142,38 +136,27 @@ object partitionMod {
       __obj.asInstanceOf[PartitionArgs]
     }
     
-    @scala.inline
-    implicit class PartitionArgsMutableBuilder[Self <: PartitionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PartitionArgs](x: Self) {
       
-      @scala.inline
-      def setCatalogId(value: Input[String]): Self = StObject.set(x, "catalogId", value.asInstanceOf[js.Any])
+      inline def setCatalogId(value: Input[String]): Self = StObject.set(x, "catalogId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatalogIdUndefined: Self = StObject.set(x, "catalogId", js.undefined)
+      inline def setCatalogIdUndefined: Self = StObject.set(x, "catalogId", js.undefined)
       
-      @scala.inline
-      def setDatabaseName(value: Input[String]): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+      inline def setDatabaseName(value: Input[String]): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setPartitionValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "partitionValues", value.asInstanceOf[js.Any])
+      inline def setPartitionValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "partitionValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartitionValuesVarargs(value: Input[String]*): Self = StObject.set(x, "partitionValues", js.Array(value :_*))
+      inline def setPartitionValuesVarargs(value: Input[String]*): Self = StObject.set(x, "partitionValues", js.Array(value :_*))
       
-      @scala.inline
-      def setStorageDescriptor(value: Input[typings.pulumiAws.inputMod.glue.PartitionStorageDescriptor]): Self = StObject.set(x, "storageDescriptor", value.asInstanceOf[js.Any])
+      inline def setStorageDescriptor(value: Input[typings.pulumiAws.inputMod.glue.PartitionStorageDescriptor]): Self = StObject.set(x, "storageDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageDescriptorUndefined: Self = StObject.set(x, "storageDescriptor", js.undefined)
+      inline def setStorageDescriptorUndefined: Self = StObject.set(x, "storageDescriptor", js.undefined)
       
-      @scala.inline
-      def setTableName(value: Input[String]): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: Input[String]): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -223,71 +206,50 @@ object partitionMod {
   }
   object PartitionState {
     
-    @scala.inline
-    def apply(): PartitionState = {
+    inline def apply(): PartitionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartitionState]
     }
     
-    @scala.inline
-    implicit class PartitionStateMutableBuilder[Self <: PartitionState] (val x: Self) extends AnyVal {
+    extension [Self <: PartitionState](x: Self) {
       
-      @scala.inline
-      def setCatalogId(value: Input[String]): Self = StObject.set(x, "catalogId", value.asInstanceOf[js.Any])
+      inline def setCatalogId(value: Input[String]): Self = StObject.set(x, "catalogId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatalogIdUndefined: Self = StObject.set(x, "catalogId", js.undefined)
+      inline def setCatalogIdUndefined: Self = StObject.set(x, "catalogId", js.undefined)
       
-      @scala.inline
-      def setCreationTime(value: Input[String]): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+      inline def setCreationTime(value: Input[String]): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+      inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
       
-      @scala.inline
-      def setDatabaseName(value: Input[String]): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+      inline def setDatabaseName(value: Input[String]): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
+      inline def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
       
-      @scala.inline
-      def setLastAccessedTime(value: Input[String]): Self = StObject.set(x, "lastAccessedTime", value.asInstanceOf[js.Any])
+      inline def setLastAccessedTime(value: Input[String]): Self = StObject.set(x, "lastAccessedTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastAccessedTimeUndefined: Self = StObject.set(x, "lastAccessedTime", js.undefined)
+      inline def setLastAccessedTimeUndefined: Self = StObject.set(x, "lastAccessedTime", js.undefined)
       
-      @scala.inline
-      def setLastAnalyzedTime(value: Input[String]): Self = StObject.set(x, "lastAnalyzedTime", value.asInstanceOf[js.Any])
+      inline def setLastAnalyzedTime(value: Input[String]): Self = StObject.set(x, "lastAnalyzedTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastAnalyzedTimeUndefined: Self = StObject.set(x, "lastAnalyzedTime", js.undefined)
+      inline def setLastAnalyzedTimeUndefined: Self = StObject.set(x, "lastAnalyzedTime", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setPartitionValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "partitionValues", value.asInstanceOf[js.Any])
+      inline def setPartitionValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "partitionValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartitionValuesUndefined: Self = StObject.set(x, "partitionValues", js.undefined)
+      inline def setPartitionValuesUndefined: Self = StObject.set(x, "partitionValues", js.undefined)
       
-      @scala.inline
-      def setPartitionValuesVarargs(value: Input[String]*): Self = StObject.set(x, "partitionValues", js.Array(value :_*))
+      inline def setPartitionValuesVarargs(value: Input[String]*): Self = StObject.set(x, "partitionValues", js.Array(value :_*))
       
-      @scala.inline
-      def setStorageDescriptor(value: Input[typings.pulumiAws.inputMod.glue.PartitionStorageDescriptor]): Self = StObject.set(x, "storageDescriptor", value.asInstanceOf[js.Any])
+      inline def setStorageDescriptor(value: Input[typings.pulumiAws.inputMod.glue.PartitionStorageDescriptor]): Self = StObject.set(x, "storageDescriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageDescriptorUndefined: Self = StObject.set(x, "storageDescriptor", js.undefined)
+      inline def setStorageDescriptorUndefined: Self = StObject.set(x, "storageDescriptor", js.undefined)
       
-      @scala.inline
-      def setTableName(value: Input[String]): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: Input[String]): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
     }
   }
 }

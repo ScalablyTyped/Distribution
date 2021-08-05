@@ -12,6 +12,5 @@ object useBackButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(ref: RefObject[NavigationContainerRef]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(ref: RefObject[NavigationContainerRef]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

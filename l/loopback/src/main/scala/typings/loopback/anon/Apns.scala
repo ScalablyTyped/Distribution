@@ -12,19 +12,15 @@ trait Apns extends StObject {
 }
 object Apns {
   
-  @scala.inline
-  def apply(apns: CerData, gcm: ServerApiKey): Apns = {
+  inline def apply(apns: CerData, gcm: ServerApiKey): Apns = {
     val __obj = js.Dynamic.literal(apns = apns.asInstanceOf[js.Any], gcm = gcm.asInstanceOf[js.Any])
     __obj.asInstanceOf[Apns]
   }
   
-  @scala.inline
-  implicit class ApnsMutableBuilder[Self <: Apns] (val x: Self) extends AnyVal {
+  extension [Self <: Apns](x: Self) {
     
-    @scala.inline
-    def setApns(value: CerData): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
+    inline def setApns(value: CerData): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcm(value: ServerApiKey): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
+    inline def setGcm(value: ServerApiKey): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
   }
 }

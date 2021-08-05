@@ -18,8 +18,7 @@ trait JSONFormatter extends StObject {
 }
 object JSONFormatter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: () => js.Object,
     getText: () => String,
     onError: String => Unit,
@@ -30,22 +29,16 @@ object JSONFormatter {
     __obj.asInstanceOf[JSONFormatter]
   }
   
-  @scala.inline
-  implicit class JSONFormatterMutableBuilder[Self <: JSONFormatter] (val x: Self) extends AnyVal {
+  extension [Self <: JSONFormatter](x: Self) {
     
-    @scala.inline
-    def setGet(value: () => js.Object): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => js.Object): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnError(value: String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet(value: js.Object => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: js.Object => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
   }
 }

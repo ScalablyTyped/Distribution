@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.CalloutFormat")
 @js.native
-class CalloutFormat protected ()
+/* private */ class CalloutFormat ()
   extends StObject
      with typings.activexExcel.Excel.CalloutFormat {
   
@@ -50,7 +50,7 @@ class CalloutFormat protected ()
   /* CompleteClass */
   override val DropType: MsoCalloutDropType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.CalloutFormat_typekey")
   var ExcelDotCalloutFormat_typekey: typings.activexExcel.Excel.CalloutFormat = js.native
   

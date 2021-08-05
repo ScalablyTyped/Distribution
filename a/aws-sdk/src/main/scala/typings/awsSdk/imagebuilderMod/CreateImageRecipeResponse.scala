@@ -23,31 +23,23 @@ trait CreateImageRecipeResponse extends StObject {
 }
 object CreateImageRecipeResponse {
   
-  @scala.inline
-  def apply(): CreateImageRecipeResponse = {
+  inline def apply(): CreateImageRecipeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateImageRecipeResponse]
   }
   
-  @scala.inline
-  implicit class CreateImageRecipeResponseMutableBuilder[Self <: CreateImageRecipeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateImageRecipeResponse](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setImageRecipeArn(value: ImageRecipeArn): Self = StObject.set(x, "imageRecipeArn", value.asInstanceOf[js.Any])
+    inline def setImageRecipeArn(value: ImageRecipeArn): Self = StObject.set(x, "imageRecipeArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageRecipeArnUndefined: Self = StObject.set(x, "imageRecipeArn", js.undefined)
+    inline def setImageRecipeArnUndefined: Self = StObject.set(x, "imageRecipeArn", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

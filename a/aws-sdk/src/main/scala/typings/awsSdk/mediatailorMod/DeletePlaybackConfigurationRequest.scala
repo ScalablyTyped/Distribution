@@ -13,16 +13,13 @@ trait DeletePlaybackConfigurationRequest extends StObject {
 }
 object DeletePlaybackConfigurationRequest {
   
-  @scala.inline
-  def apply(Name: string): DeletePlaybackConfigurationRequest = {
+  inline def apply(Name: string): DeletePlaybackConfigurationRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePlaybackConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeletePlaybackConfigurationRequestMutableBuilder[Self <: DeletePlaybackConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePlaybackConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

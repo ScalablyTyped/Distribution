@@ -15,17 +15,14 @@ trait Root
 }
 object Root {
   
-  @scala.inline
-  def apply(children: js.Array[Node]): Root = {
+  inline def apply(children: js.Array[Node]): Root = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("root")
     __obj.asInstanceOf[Root]
   }
   
-  @scala.inline
-  implicit class RootMutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
+  extension [Self <: Root](x: Self) {
     
-    @scala.inline
-    def setType(value: root): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: root): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

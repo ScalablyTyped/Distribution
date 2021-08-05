@@ -13,22 +13,17 @@ trait Interconnects extends StObject {
 }
 object Interconnects {
   
-  @scala.inline
-  def apply(): Interconnects = {
+  inline def apply(): Interconnects = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Interconnects]
   }
   
-  @scala.inline
-  implicit class InterconnectsMutableBuilder[Self <: Interconnects] (val x: Self) extends AnyVal {
+  extension [Self <: Interconnects](x: Self) {
     
-    @scala.inline
-    def setInterconnects(value: InterconnectList): Self = StObject.set(x, "interconnects", value.asInstanceOf[js.Any])
+    inline def setInterconnects(value: InterconnectList): Self = StObject.set(x, "interconnects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterconnectsUndefined: Self = StObject.set(x, "interconnects", js.undefined)
+    inline def setInterconnectsUndefined: Self = StObject.set(x, "interconnects", js.undefined)
     
-    @scala.inline
-    def setInterconnectsVarargs(value: Interconnect*): Self = StObject.set(x, "interconnects", js.Array(value :_*))
+    inline def setInterconnectsVarargs(value: Interconnect*): Self = StObject.set(x, "interconnects", js.Array(value :_*))
   }
 }

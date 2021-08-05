@@ -18,25 +18,19 @@ trait S3Location extends StObject {
 }
 object S3Location {
   
-  @scala.inline
-  def apply(): S3Location = {
+  inline def apply(): S3Location = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3Location]
   }
   
-  @scala.inline
-  implicit class S3LocationMutableBuilder[Self <: S3Location] (val x: Self) extends AnyVal {
+  extension [Self <: S3Location](x: Self) {
     
-    @scala.inline
-    def setBucket(value: S3Bucket): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: S3Bucket): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
-    @scala.inline
-    def setKey(value: S3Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: S3Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

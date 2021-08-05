@@ -20,20 +20,16 @@ object optionsValueTransformerMod {
   }
   object ValueTransformer {
     
-    @scala.inline
-    def apply(from: js.Any => js.Any, to: js.Any => js.Any): ValueTransformer = {
+    inline def apply(from: js.Any => js.Any, to: js.Any => js.Any): ValueTransformer = {
       val __obj = js.Dynamic.literal(from = js.Any.fromFunction1(from), to = js.Any.fromFunction1(to))
       __obj.asInstanceOf[ValueTransformer]
     }
     
-    @scala.inline
-    implicit class ValueTransformerMutableBuilder[Self <: ValueTransformer] (val x: Self) extends AnyVal {
+    extension [Self <: ValueTransformer](x: Self) {
       
-      @scala.inline
-      def setFrom(value: js.Any => js.Any): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
+      inline def setFrom(value: js.Any => js.Any): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTo(value: js.Any => js.Any): Self = StObject.set(x, "to", js.Any.fromFunction1(value))
+      inline def setTo(value: js.Any => js.Any): Self = StObject.set(x, "to", js.Any.fromFunction1(value))
     }
   }
 }

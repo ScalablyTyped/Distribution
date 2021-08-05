@@ -11,16 +11,13 @@ trait PickImplallowCategorySele extends StObject {
 }
 object PickImplallowCategorySele {
   
-  @scala.inline
-  def apply(allowCategorySelection: Boolean): PickImplallowCategorySele = {
+  inline def apply(allowCategorySelection: Boolean): PickImplallowCategorySele = {
     val __obj = js.Dynamic.literal(allowCategorySelection = allowCategorySelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplallowCategorySele]
   }
   
-  @scala.inline
-  implicit class PickImplallowCategorySeleMutableBuilder[Self <: PickImplallowCategorySele] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplallowCategorySele](x: Self) {
     
-    @scala.inline
-    def setAllowCategorySelection(value: Boolean): Self = StObject.set(x, "allowCategorySelection", value.asInstanceOf[js.Any])
+    inline def setAllowCategorySelection(value: Boolean): Self = StObject.set(x, "allowCategorySelection", value.asInstanceOf[js.Any])
   }
 }

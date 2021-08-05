@@ -56,48 +56,35 @@ trait CreateSupressionListEntry extends StObject {
 }
 object CreateSupressionListEntry {
   
-  @scala.inline
-  def apply(recipient: String): CreateSupressionListEntry = {
+  inline def apply(recipient: String): CreateSupressionListEntry = {
     val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSupressionListEntry]
   }
   
-  @scala.inline
-  implicit class CreateSupressionListEntryMutableBuilder[Self <: CreateSupressionListEntry] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSupressionListEntry](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setNon_transactional(value: Boolean): Self = StObject.set(x, "non_transactional", value.asInstanceOf[js.Any])
+    inline def setNon_transactional(value: Boolean): Self = StObject.set(x, "non_transactional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNon_transactionalUndefined: Self = StObject.set(x, "non_transactional", js.undefined)
+    inline def setNon_transactionalUndefined: Self = StObject.set(x, "non_transactional", js.undefined)
     
-    @scala.inline
-    def setRecipient(value: String): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+    inline def setRecipient(value: String): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(
+    inline def setSource(
       value: (`Spam Complaint`) | (`List Unsubscribe`) | (`Bounce Rule`) | (`Unsubscribe Link`) | (`Manually Added`) | Compliance
     ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setTransactional(value: Boolean): Self = StObject.set(x, "transactional", value.asInstanceOf[js.Any])
+    inline def setTransactional(value: Boolean): Self = StObject.set(x, "transactional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionalUndefined: Self = StObject.set(x, "transactional", js.undefined)
+    inline def setTransactionalUndefined: Self = StObject.set(x, "transactional", js.undefined)
     
-    @scala.inline
-    def setType(value: transactional | non_transactional): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: transactional | non_transactional): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

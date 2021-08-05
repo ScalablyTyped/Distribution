@@ -17,29 +17,22 @@ trait AddCheckConstraintOptions
 }
 object AddCheckConstraintOptions {
   
-  @scala.inline
-  def apply(): AddCheckConstraintOptions = {
+  inline def apply(): AddCheckConstraintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("check")
     __obj.asInstanceOf[AddCheckConstraintOptions]
   }
   
-  @scala.inline
-  implicit class AddCheckConstraintOptionsMutableBuilder[Self <: AddCheckConstraintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddCheckConstraintOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: check): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: check): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhere(value: AnyWhereOptions): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: AnyWhereOptions): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+    inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

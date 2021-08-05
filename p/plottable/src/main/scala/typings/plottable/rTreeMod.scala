@@ -94,17 +94,17 @@ object rTreeMod {
       */
     def locateNearestY(xy: Point): js.Array[T] = js.native
     
-    var maxNodeChildren: js.Any = js.native
+    /* private */ var maxNodeChildren: js.Any = js.native
     
     def query(predicate: js.Function1[/* b */ RTreeBounds, Boolean]): js.Array[T] = js.native
     
     def queryNodes(predicate: js.Function1[/* b */ RTreeNode[T], QueryPredicateResult]): js.Array[RTreeNode[T]] = js.native
     
-    var root: js.Any = js.native
+    /* private */ var root: js.Any = js.native
     
-    var size: js.Any = js.native
+    /* private */ var size: js.Any = js.native
     
-    var splitStrategy: js.Any = js.native
+    /* private */ var splitStrategy: js.Any = js.native
   }
   
   @JSImport("plottable/build/src/utils/rTree", "RTreeBounds")
@@ -114,7 +114,7 @@ object rTreeMod {
     
     def area(): Double = js.native
     
-    var areaCached: js.Any = js.native
+    /* private */ var areaCached: js.Any = js.native
     
     def contains(xy: Point): Boolean = js.native
     
@@ -143,8 +143,7 @@ object rTreeMod {
       *
       * If `p.x` is inside the bounds returns `0`.
       */
-    @scala.inline
-    def absoluteDistanceToFarEdgeX(bounds: RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToFarEdgeX")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def absoluteDistanceToFarEdgeX(bounds: RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToFarEdgeX")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns the orthogonal absolute distance in the y-dimension from point
@@ -152,8 +151,7 @@ object rTreeMod {
       *
       * If `p.y` is inside the bounds returns `0`.
       */
-    @scala.inline
-    def absoluteDistanceToFarEdgeY(bounds: RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToFarEdgeY")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def absoluteDistanceToFarEdgeY(bounds: RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToFarEdgeY")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns the orthogonal absolute distance in the x-dimension from point
@@ -161,8 +159,7 @@ object rTreeMod {
       *
       * If `p.x` is inside the bounds returns `0`.
       */
-    @scala.inline
-    def absoluteDistanceToNearEdgeX(bounds: RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToNearEdgeX")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def absoluteDistanceToNearEdgeX(bounds: RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToNearEdgeX")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns the orthogonal absolute distance in the y-dimension from point
@@ -170,14 +167,11 @@ object rTreeMod {
       *
       * If `p.y` is inside the bounds returns `0`.
       */
-    @scala.inline
-    def absoluteDistanceToNearEdgeY(bounds: RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToNearEdgeY")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def absoluteDistanceToNearEdgeY(bounds: RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToNearEdgeY")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def bounds(bounds: Bounds): RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(bounds.asInstanceOf[js.Any]).asInstanceOf[RTreeBounds]
+    inline def bounds(bounds: Bounds): RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(bounds.asInstanceOf[js.Any]).asInstanceOf[RTreeBounds]
     
-    @scala.inline
-    def distanceSquaredToFarEdge(bounds: RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceSquaredToFarEdge")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def distanceSquaredToFarEdge(bounds: RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceSquaredToFarEdge")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns the distance squared from `p` to the nearest edge of `bounds`. If
@@ -185,50 +179,40 @@ object rTreeMod {
       *
       * https://gamedev.stackexchange.com/questions/44483/how-do-i-calculate-distance-between-a-point-and-an-axis-aligned-rectangle
       */
-    @scala.inline
-    def distanceSquaredToNearEdge(bounds: RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceSquaredToNearEdge")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def distanceSquaredToNearEdge(bounds: RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceSquaredToNearEdge")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def entityBounds(bounds: IEntityBounds): RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("entityBounds")(bounds.asInstanceOf[js.Any]).asInstanceOf[RTreeBounds]
+    inline def entityBounds(bounds: IEntityBounds): RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("entityBounds")(bounds.asInstanceOf[js.Any]).asInstanceOf[RTreeBounds]
     
     /**
       * Returns true if `a` overlaps `b` in the x and y axes.
       *
       * Touching counts as overlap.
       */
-    @scala.inline
-    def isBoundsOverlapBounds(a: RTreeBounds, b: RTreeBounds): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoundsOverlapBounds")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isBoundsOverlapBounds(a: RTreeBounds, b: RTreeBounds): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoundsOverlapBounds")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Returns true if `a` overlaps `b` in the x axis only.
       *
       * Touching counts as overlap.
       */
-    @scala.inline
-    def isBoundsOverlapX(a: RTreeBounds, b: RTreeBounds): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoundsOverlapX")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isBoundsOverlapX(a: RTreeBounds, b: RTreeBounds): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoundsOverlapX")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Returns true if `a` overlaps `b` in the y axis only.
       *
       * Touching counts as overlap.
       */
-    @scala.inline
-    def isBoundsOverlapY(a: RTreeBounds, b: RTreeBounds): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoundsOverlapY")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isBoundsOverlapY(a: RTreeBounds, b: RTreeBounds): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoundsOverlapY")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def pointPair(p0: Point, p1: Point): RTreeBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("pointPair")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[RTreeBounds]
+    inline def pointPair(p0: Point, p1: Point): RTreeBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("pointPair")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[RTreeBounds]
     
-    @scala.inline
-    def points(points: js.Array[Point]): RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("points")(points.asInstanceOf[js.Any]).asInstanceOf[RTreeBounds]
+    inline def points(points: js.Array[Point]): RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("points")(points.asInstanceOf[js.Any]).asInstanceOf[RTreeBounds]
     
-    @scala.inline
-    def union(b0: RTreeBounds, b1: RTreeBounds): RTreeBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(b0.asInstanceOf[js.Any], b1.asInstanceOf[js.Any])).asInstanceOf[RTreeBounds]
+    inline def union(b0: RTreeBounds, b1: RTreeBounds): RTreeBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(b0.asInstanceOf[js.Any], b1.asInstanceOf[js.Any])).asInstanceOf[RTreeBounds]
     
-    @scala.inline
-    def unionAll(bounds: js.Array[RTreeBounds]): RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("unionAll")(bounds.asInstanceOf[js.Any]).asInstanceOf[RTreeBounds]
+    inline def unionAll(bounds: js.Array[RTreeBounds]): RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("unionAll")(bounds.asInstanceOf[js.Any]).asInstanceOf[RTreeBounds]
     
-    @scala.inline
-    def xywh(x: Double, y: Double, w: Double, h: Double): RTreeBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("xywh")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[RTreeBounds]
+    inline def xywh(x: Double, y: Double, w: Double, h: Double): RTreeBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("xywh")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[RTreeBounds]
   }
   
   @JSImport("plottable/build/src/utils/rTree", "RTreeNode")
@@ -299,15 +283,12 @@ object rTreeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def valueNode[T](bounds: RTreeBounds, value: T): RTreeNode[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("valueNode")(bounds.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[RTreeNode[T]]
+    inline def valueNode[T](bounds: RTreeBounds, value: T): RTreeNode[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("valueNode")(bounds.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[RTreeNode[T]]
   }
   
-  @scala.inline
-  def createMinimizingNodePredicate[T](point: Point, nearFn: IDistanceFunction, farFn: IDistanceFunction): js.Function1[/* node */ RTreeNode[T], QueryPredicateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinimizingNodePredicate")(point.asInstanceOf[js.Any], nearFn.asInstanceOf[js.Any], farFn.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* node */ RTreeNode[T], QueryPredicateResult]]
+  inline def createMinimizingNodePredicate[T](point: Point, nearFn: IDistanceFunction, farFn: IDistanceFunction): js.Function1[/* node */ RTreeNode[T], QueryPredicateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinimizingNodePredicate")(point.asInstanceOf[js.Any], nearFn.asInstanceOf[js.Any], farFn.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* node */ RTreeNode[T], QueryPredicateResult]]
   
-  @scala.inline
-  def createNodeSort[T](point: Point, distanceFn: IDistanceFunction): js.Function2[/* a */ RTreeNode[T], /* b */ RTreeNode[T], Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNodeSort")(point.asInstanceOf[js.Any], distanceFn.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* a */ RTreeNode[T], /* b */ RTreeNode[T], Double]]
+  inline def createNodeSort[T](point: Point, distanceFn: IDistanceFunction): js.Function2[/* a */ RTreeNode[T], /* b */ RTreeNode[T], Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNodeSort")(point.asInstanceOf[js.Any], distanceFn.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* a */ RTreeNode[T], /* b */ RTreeNode[T], Double]]
   
   type IDistanceFunction = js.Function2[/* bounds */ RTreeBounds, /* p */ Point, Double]
 }

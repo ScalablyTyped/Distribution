@@ -39,22 +39,17 @@ trait GetSchemaResponse extends StObject {
 }
 object GetSchemaResponse {
   
-  @scala.inline
-  def apply(build: () => js.Any, printJson: () => String, setFields: Fields => GetSchemaResponse): GetSchemaResponse = {
+  inline def apply(build: () => js.Any, printJson: () => String, setFields: Fields => GetSchemaResponse): GetSchemaResponse = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), printJson = js.Any.fromFunction0(printJson), setFields = js.Any.fromFunction1(setFields))
     __obj.asInstanceOf[GetSchemaResponse]
   }
   
-  @scala.inline
-  implicit class GetSchemaResponseMutableBuilder[Self <: GetSchemaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSchemaResponse](x: Self) {
     
-    @scala.inline
-    def setBuild(value: () => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
+    inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFields(value: Fields => GetSchemaResponse): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
+    inline def setSetFields(value: Fields => GetSchemaResponse): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
   }
 }

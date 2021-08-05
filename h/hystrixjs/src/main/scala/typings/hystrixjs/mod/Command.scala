@@ -10,16 +10,13 @@ trait Command extends StObject {
 }
 object Command {
   
-  @scala.inline
-  def apply(execute: /* repeated */ js.Any => js.Thenable[js.Any]): Command = {
+  inline def apply(execute: /* repeated */ js.Any => js.Thenable[js.Any]): Command = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
     __obj.asInstanceOf[Command]
   }
   
-  @scala.inline
-  implicit class CommandMutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
+  extension [Self <: Command](x: Self) {
     
-    @scala.inline
-    def setExecute(value: /* repeated */ js.Any => js.Thenable[js.Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: /* repeated */ js.Any => js.Thenable[js.Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }
 }

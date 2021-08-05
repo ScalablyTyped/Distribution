@@ -45,23 +45,18 @@ object wikiMod {
   }
   object WikifierOptions {
     
-    @scala.inline
-    def apply(profile: String): WikifierOptions = {
+    inline def apply(profile: String): WikifierOptions = {
       val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any])
       __obj.asInstanceOf[WikifierOptions]
     }
     
-    @scala.inline
-    implicit class WikifierOptionsMutableBuilder[Self <: WikifierOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WikifierOptions](x: Self) {
       
-      @scala.inline
-      def setIgnoreTerminatorCase(value: Boolean): Self = StObject.set(x, "ignoreTerminatorCase", value.asInstanceOf[js.Any])
+      inline def setIgnoreTerminatorCase(value: Boolean): Self = StObject.set(x, "ignoreTerminatorCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreTerminatorCaseUndefined: Self = StObject.set(x, "ignoreTerminatorCase", js.undefined)
+      inline def setIgnoreTerminatorCaseUndefined: Self = StObject.set(x, "ignoreTerminatorCase", js.undefined)
       
-      @scala.inline
-      def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     }
   }
 }

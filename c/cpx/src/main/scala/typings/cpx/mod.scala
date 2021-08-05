@@ -23,36 +23,27 @@ object mod {
     def open(): Unit = js.native
   }
   
-  @scala.inline
-  def copy(source: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def copy(source: String, dest: String, callback: js.Function1[/* error */ Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def copy(
+  inline def copy(source: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def copy(source: String, dest: String, callback: js.Function1[/* error */ Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def copy(
     source: String,
     dest: String,
     options: Unit,
     callback: js.Function1[/* error */ Error | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def copy(source: String, dest: String, options: AsyncOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def copy(
+  inline def copy(source: String, dest: String, options: AsyncOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def copy(
     source: String,
     dest: String,
     options: AsyncOptions,
     callback: js.Function1[/* error */ Error | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def copySync(source: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copySync")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def copySync(source: String, dest: String, options: SyncOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copySync")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def copySync(source: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copySync")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def copySync(source: String, dest: String, options: SyncOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copySync")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def watch(source: String, dest: String): Watcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Watcher]
-  @scala.inline
-  def watch(source: String, dest: String, options: WatchOptions): Watcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Watcher]
+  inline def watch(source: String, dest: String): Watcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Watcher]
+  inline def watch(source: String, dest: String, options: WatchOptions): Watcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Watcher]
   
   trait AsyncOptions
     extends StObject
@@ -63,20 +54,16 @@ object mod {
   }
   object AsyncOptions {
     
-    @scala.inline
-    def apply(): AsyncOptions = {
+    inline def apply(): AsyncOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsyncOptions]
     }
     
-    @scala.inline
-    implicit class AsyncOptionsMutableBuilder[Self <: AsyncOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncOptions](x: Self) {
       
-      @scala.inline
-      def setTransform(value: /* filepath */ String => js.Array[Transform]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* filepath */ String => js.Array[Transform]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   
@@ -99,44 +86,32 @@ object mod {
   }
   object SyncOptions {
     
-    @scala.inline
-    def apply(): SyncOptions = {
+    inline def apply(): SyncOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SyncOptions]
     }
     
-    @scala.inline
-    implicit class SyncOptionsMutableBuilder[Self <: SyncOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SyncOptions](x: Self) {
       
-      @scala.inline
-      def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
+      inline def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleanUndefined: Self = StObject.set(x, "clean", js.undefined)
+      inline def setCleanUndefined: Self = StObject.set(x, "clean", js.undefined)
       
-      @scala.inline
-      def setDereference(value: Boolean): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
+      inline def setDereference(value: Boolean): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
+      inline def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
       
-      @scala.inline
-      def setIncludeEmptyDirs(value: Boolean): Self = StObject.set(x, "includeEmptyDirs", value.asInstanceOf[js.Any])
+      inline def setIncludeEmptyDirs(value: Boolean): Self = StObject.set(x, "includeEmptyDirs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeEmptyDirsUndefined: Self = StObject.set(x, "includeEmptyDirs", js.undefined)
+      inline def setIncludeEmptyDirsUndefined: Self = StObject.set(x, "includeEmptyDirs", js.undefined)
       
-      @scala.inline
-      def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
+      inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveUndefined: Self = StObject.set(x, "preserve", js.undefined)
+      inline def setPreserveUndefined: Self = StObject.set(x, "preserve", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
   
@@ -149,20 +124,16 @@ object mod {
   }
   object WatchOptions {
     
-    @scala.inline
-    def apply(): WatchOptions = {
+    inline def apply(): WatchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WatchOptions]
     }
     
-    @scala.inline
-    implicit class WatchOptionsMutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WatchOptions](x: Self) {
       
-      @scala.inline
-      def setInitialCopy(value: Boolean): Self = StObject.set(x, "initialCopy", value.asInstanceOf[js.Any])
+      inline def setInitialCopy(value: Boolean): Self = StObject.set(x, "initialCopy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialCopyUndefined: Self = StObject.set(x, "initialCopy", js.undefined)
+      inline def setInitialCopyUndefined: Self = StObject.set(x, "initialCopy", js.undefined)
     }
   }
 }

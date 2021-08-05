@@ -20,11 +20,11 @@ object colorScaleMod {
   class Color () extends Scale[String, String] {
     def this(scaleType: String) = this()
     
-    var _d3Scale: js.Any = js.native
+    /* private */ var _d3Scale: js.Any = js.native
     
-    var _rangeLength: js.Any = js.native
+    /* private */ var _rangeLength: js.Any = js.native
     
-    var _tracker: js.Any = js.native
+    /* private */ var _tracker: js.Any = js.native
   }
   /* static members */
   object Color {
@@ -36,25 +36,20 @@ object colorScaleMod {
     @JSImport("plottable/build/src/scales/colorScale", "Color._LOOP_LIGHTEN_FACTOR")
     @js.native
     def _LOOP_LIGHTEN_FACTOR: js.Any = js.native
-    @scala.inline
-    def _LOOP_LIGHTEN_FACTOR_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LOOP_LIGHTEN_FACTOR")(x.asInstanceOf[js.Any])
+    inline def _LOOP_LIGHTEN_FACTOR_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LOOP_LIGHTEN_FACTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/scales/colorScale", "Color._MAXIMUM_COLORS_FROM_CSS")
     @js.native
     def _MAXIMUM_COLORS_FROM_CSS: js.Any = js.native
-    @scala.inline
-    def _MAXIMUM_COLORS_FROM_CSS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAXIMUM_COLORS_FROM_CSS")(x.asInstanceOf[js.Any])
+    inline def _MAXIMUM_COLORS_FROM_CSS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAXIMUM_COLORS_FROM_CSS")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def _getPlottableColors(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_getPlottableColors")().asInstanceOf[js.Any]
+    inline def _getPlottableColors(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_getPlottableColors")().asInstanceOf[js.Any]
     
     @JSImport("plottable/build/src/scales/colorScale", "Color._plottableColorCache")
     @js.native
     def _plottableColorCache: js.Any = js.native
-    @scala.inline
-    def _plottableColorCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_plottableColorCache")(x.asInstanceOf[js.Any])
+    inline def _plottableColorCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_plottableColorCache")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def invalidateColorCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidateColorCache")().asInstanceOf[Unit]
+    inline def invalidateColorCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidateColorCache")().asInstanceOf[Unit]
   }
 }

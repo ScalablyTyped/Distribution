@@ -12,16 +12,13 @@ trait OnHeaderClickEventArgs[T /* <: SlickData */]
 }
 object OnHeaderClickEventArgs {
   
-  @scala.inline
-  def apply[T /* <: SlickData */](column: Column[T], grid: Grid[T]): OnHeaderClickEventArgs[T] = {
+  inline def apply[T /* <: SlickData */](column: Column[T], grid: Grid[T]): OnHeaderClickEventArgs[T] = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnHeaderClickEventArgs[T]]
   }
   
-  @scala.inline
-  implicit class OnHeaderClickEventArgsMutableBuilder[Self <: OnHeaderClickEventArgs[?], T /* <: SlickData */] (val x: Self & OnHeaderClickEventArgs[T]) extends AnyVal {
+  extension [Self <: OnHeaderClickEventArgs[?], T /* <: SlickData */](x: Self & OnHeaderClickEventArgs[T]) {
     
-    @scala.inline
-    def setColumn(value: Column[T]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Column[T]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
   }
 }

@@ -13,10 +13,8 @@ object mod {
     * @param defaultMode - If set to true, the validator will ignore the .validaterc file and will use the [configuration defaults](https://github.com/IBM/openapi-validator#default-values).
     * @returns Validation results
     */
-  @scala.inline
-  def apply(openApiDoc: StringDictionary[js.Any]): js.Promise[validatorResult] = ^.asInstanceOf[js.Dynamic].apply(openApiDoc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[validatorResult]]
-  @scala.inline
-  def apply(openApiDoc: StringDictionary[js.Any], defaultMode: validatorParameterDefaultMode): js.Promise[validatorResult] = (^.asInstanceOf[js.Dynamic].apply(openApiDoc.asInstanceOf[js.Any], defaultMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[validatorResult]]
+  inline def apply(openApiDoc: StringDictionary[js.Any]): js.Promise[validatorResult] = ^.asInstanceOf[js.Dynamic].apply(openApiDoc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[validatorResult]]
+  inline def apply(openApiDoc: StringDictionary[js.Any], defaultMode: validatorParameterDefaultMode): js.Promise[validatorResult] = (^.asInstanceOf[js.Dynamic].apply(openApiDoc.asInstanceOf[js.Any], defaultMode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[validatorResult]]
   
   @JSImport("ibm-openapi-validator", JSImport.Namespace)
   @js.native
@@ -35,26 +33,20 @@ object mod {
   }
   object validatorResult {
     
-    @scala.inline
-    def apply(errors: js.Array[js.Any | validatorResultItem], warnings: js.Array[js.Any | validatorResultItem]): validatorResult = {
+    inline def apply(errors: js.Array[js.Any | validatorResultItem], warnings: js.Array[js.Any | validatorResultItem]): validatorResult = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
       __obj.asInstanceOf[validatorResult]
     }
     
-    @scala.inline
-    implicit class validatorResultMutableBuilder[Self <: validatorResult] (val x: Self) extends AnyVal {
+    extension [Self <: validatorResult](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[js.Any | validatorResultItem]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[js.Any | validatorResultItem]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: (js.Any | validatorResultItem)*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: (js.Any | validatorResultItem)*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setWarnings(value: js.Array[js.Any | validatorResultItem]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: js.Array[js.Any | validatorResultItem]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningsVarargs(value: (js.Any | validatorResultItem)*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+      inline def setWarningsVarargs(value: (js.Any | validatorResultItem)*): Self = StObject.set(x, "warnings", js.Array(value :_*))
     }
   }
   
@@ -66,20 +58,16 @@ object mod {
   }
   object validatorResultItem {
     
-    @scala.inline
-    def apply(message: String, path: String): validatorResultItem = {
+    inline def apply(message: String, path: String): validatorResultItem = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[validatorResultItem]
     }
     
-    @scala.inline
-    implicit class validatorResultItemMutableBuilder[Self <: validatorResultItem] (val x: Self) extends AnyVal {
+    extension [Self <: validatorResultItem](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

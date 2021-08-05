@@ -24,8 +24,7 @@ trait Triggers extends StObject {
 }
 object Triggers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     URI: String,
     create: (String, js.Object, CbCallback) => Unit,
     delete: (String, CbCallback) => Unit,
@@ -39,31 +38,22 @@ object Triggers {
     __obj.asInstanceOf[Triggers]
   }
   
-  @scala.inline
-  implicit class TriggersMutableBuilder[Self <: Triggers] (val x: Self) extends AnyVal {
+  extension [Self <: Triggers](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (String, js.Object, CbCallback) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
+    inline def setCreate(value: (String, js.Object, CbCallback) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDelete(value: (String, CbCallback) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
+    inline def setDelete(value: (String, CbCallback) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFetchDefinitions(value: CbCallback => Unit): Self = StObject.set(x, "fetchDefinitions", js.Any.fromFunction1(value))
+    inline def setFetchDefinitions(value: CbCallback => Unit): Self = StObject.set(x, "fetchDefinitions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
+    inline def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: (String, js.Object, CbCallback) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+    inline def setUpdate(value: (String, js.Object, CbCallback) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

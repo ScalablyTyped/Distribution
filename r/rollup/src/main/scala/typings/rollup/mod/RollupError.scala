@@ -17,34 +17,25 @@ trait RollupError
 }
 object RollupError {
   
-  @scala.inline
-  def apply(message: String): RollupError = {
+  inline def apply(message: String): RollupError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollupError]
   }
   
-  @scala.inline
-  implicit class RollupErrorMutableBuilder[Self <: RollupError] (val x: Self) extends AnyVal {
+  extension [Self <: RollupError](x: Self) {
     
-    @scala.inline
-    def setParserError(value: Error): Self = StObject.set(x, "parserError", value.asInstanceOf[js.Any])
+    inline def setParserError(value: Error): Self = StObject.set(x, "parserError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParserErrorUndefined: Self = StObject.set(x, "parserError", js.undefined)
+    inline def setParserErrorUndefined: Self = StObject.set(x, "parserError", js.undefined)
     
-    @scala.inline
-    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
-    @scala.inline
-    def setWatchFiles(value: js.Array[String]): Self = StObject.set(x, "watchFiles", value.asInstanceOf[js.Any])
+    inline def setWatchFiles(value: js.Array[String]): Self = StObject.set(x, "watchFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchFilesUndefined: Self = StObject.set(x, "watchFiles", js.undefined)
+    inline def setWatchFilesUndefined: Self = StObject.set(x, "watchFiles", js.undefined)
     
-    @scala.inline
-    def setWatchFilesVarargs(value: String*): Self = StObject.set(x, "watchFiles", js.Array(value :_*))
+    inline def setWatchFilesVarargs(value: String*): Self = StObject.set(x, "watchFiles", js.Array(value :_*))
   }
 }

@@ -37,37 +37,27 @@ trait SchemaApplicationInfo extends StObject {
 }
 object SchemaApplicationInfo {
   
-  @scala.inline
-  def apply(): SchemaApplicationInfo = {
+  inline def apply(): SchemaApplicationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApplicationInfo]
   }
   
-  @scala.inline
-  implicit class SchemaApplicationInfoMutableBuilder[Self <: SchemaApplicationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApplicationInfo](x: Self) {
     
-    @scala.inline
-    def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+    inline def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
+    inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
-    @scala.inline
-    def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
     
-    @scala.inline
-    def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
+    inline def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstructionUndefined: Self = StObject.set(x, "instruction", js.undefined)
+    inline def setInstructionUndefined: Self = StObject.set(x, "instruction", js.undefined)
     
-    @scala.inline
-    def setUris(value: js.Array[String]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
+    inline def setUris(value: js.Array[String]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
+    inline def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
     
-    @scala.inline
-    def setUrisVarargs(value: String*): Self = StObject.set(x, "uris", js.Array(value :_*))
+    inline def setUrisVarargs(value: String*): Self = StObject.set(x, "uris", js.Array(value :_*))
   }
 }

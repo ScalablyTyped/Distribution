@@ -21,25 +21,19 @@ trait SchemaGooglePrivacyDlpV2Proximity extends StObject {
 }
 object SchemaGooglePrivacyDlpV2Proximity {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2Proximity = {
+  inline def apply(): SchemaGooglePrivacyDlpV2Proximity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Proximity]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2ProximityMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Proximity] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2Proximity](x: Self) {
     
-    @scala.inline
-    def setWindowAfter(value: Double): Self = StObject.set(x, "windowAfter", value.asInstanceOf[js.Any])
+    inline def setWindowAfter(value: Double): Self = StObject.set(x, "windowAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowAfterUndefined: Self = StObject.set(x, "windowAfter", js.undefined)
+    inline def setWindowAfterUndefined: Self = StObject.set(x, "windowAfter", js.undefined)
     
-    @scala.inline
-    def setWindowBefore(value: Double): Self = StObject.set(x, "windowBefore", value.asInstanceOf[js.Any])
+    inline def setWindowBefore(value: Double): Self = StObject.set(x, "windowBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowBeforeUndefined: Self = StObject.set(x, "windowBefore", js.undefined)
+    inline def setWindowBeforeUndefined: Self = StObject.set(x, "windowBefore", js.undefined)
   }
 }

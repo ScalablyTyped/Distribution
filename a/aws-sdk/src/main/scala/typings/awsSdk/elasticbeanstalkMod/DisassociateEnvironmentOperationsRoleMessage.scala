@@ -13,16 +13,13 @@ trait DisassociateEnvironmentOperationsRoleMessage extends StObject {
 }
 object DisassociateEnvironmentOperationsRoleMessage {
   
-  @scala.inline
-  def apply(EnvironmentName: EnvironmentName): DisassociateEnvironmentOperationsRoleMessage = {
+  inline def apply(EnvironmentName: EnvironmentName): DisassociateEnvironmentOperationsRoleMessage = {
     val __obj = js.Dynamic.literal(EnvironmentName = EnvironmentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateEnvironmentOperationsRoleMessage]
   }
   
-  @scala.inline
-  implicit class DisassociateEnvironmentOperationsRoleMessageMutableBuilder[Self <: DisassociateEnvironmentOperationsRoleMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateEnvironmentOperationsRoleMessage](x: Self) {
     
-    @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
   }
 }

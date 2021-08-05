@@ -13,9 +13,7 @@ object formattingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertToKeyframes(frames: KeyFrames): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToKeyframes")(frames.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def convertToKeyframes(frames: KeyFrames): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToKeyframes")(frames.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  @scala.inline
-  def convertToStyles(`object`: NestedCSSProperties): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToStyles")(`object`.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def convertToStyles(`object`: NestedCSSProperties): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToStyles")(`object`.asInstanceOf[js.Any]).asInstanceOf[Styles]
 }

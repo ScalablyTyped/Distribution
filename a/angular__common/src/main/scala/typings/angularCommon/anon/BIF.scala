@@ -10,19 +10,15 @@ trait BIF extends StObject {
 }
 object BIF {
   
-  @scala.inline
-  def apply(BIF: js.Array[String]): BIF = {
+  inline def apply(BIF: js.Array[String]): BIF = {
     val __obj = js.Dynamic.literal(BIF = BIF.asInstanceOf[js.Any])
     __obj.asInstanceOf[BIF]
   }
   
-  @scala.inline
-  implicit class BIFMutableBuilder[Self <: BIF] (val x: Self) extends AnyVal {
+  extension [Self <: BIF](x: Self) {
     
-    @scala.inline
-    def setBIF(value: js.Array[String]): Self = StObject.set(x, "BIF", value.asInstanceOf[js.Any])
+    inline def setBIF(value: js.Array[String]): Self = StObject.set(x, "BIF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBIFVarargs(value: String*): Self = StObject.set(x, "BIF", js.Array(value :_*))
+    inline def setBIFVarargs(value: String*): Self = StObject.set(x, "BIF", js.Array(value :_*))
   }
 }

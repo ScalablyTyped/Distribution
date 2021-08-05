@@ -10,19 +10,15 @@ trait GetLabelsOptions extends StObject {
 }
 object GetLabelsOptions {
   
-  @scala.inline
-  def apply(): GetLabelsOptions = {
+  inline def apply(): GetLabelsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLabelsOptions]
   }
   
-  @scala.inline
-  implicit class GetLabelsOptionsMutableBuilder[Self <: GetLabelsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetLabelsOptions](x: Self) {
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

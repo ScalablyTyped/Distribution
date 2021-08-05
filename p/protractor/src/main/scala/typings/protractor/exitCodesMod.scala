@@ -23,14 +23,12 @@ object exitCodesMod {
     @JSImport("protractor/built/exitCodes", "BrowserError.CODE")
     @js.native
     def CODE: Double = js.native
-    @scala.inline
-    def CODE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CODE")(x.asInstanceOf[js.Any])
+    inline def CODE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CODE")(x.asInstanceOf[js.Any])
     
     @JSImport("protractor/built/exitCodes", "BrowserError.ERR_MSGS")
     @js.native
     def ERR_MSGS: js.Array[String] = js.native
-    @scala.inline
-    def ERR_MSGS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_MSGS")(x.asInstanceOf[js.Any])
+    inline def ERR_MSGS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_MSGS")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("protractor/built/exitCodes", "ConfigError")
@@ -49,8 +47,7 @@ object exitCodesMod {
     @JSImport("protractor/built/exitCodes", "ConfigError.CODE")
     @js.native
     def CODE: Double = js.native
-    @scala.inline
-    def CODE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CODE")(x.asInstanceOf[js.Any])
+    inline def CODE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CODE")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("protractor/built/exitCodes", "ErrorHandler")
@@ -63,11 +60,9 @@ object exitCodesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isError(errMsgs: js.Array[String], e: Error): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isError")(errMsgs.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isError(errMsgs: js.Array[String], e: Error): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isError")(errMsgs.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def parseError(e: Error): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseError")(e.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def parseError(e: Error): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseError")(e.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   @JSImport("protractor/built/exitCodes", "IError")
@@ -101,22 +96,18 @@ object exitCodesMod {
     @JSImport("protractor/built/exitCodes", "ProtractorError.CODE")
     @js.native
     def CODE: Double = js.native
-    @scala.inline
-    def CODE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CODE")(x.asInstanceOf[js.Any])
+    inline def CODE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CODE")(x.asInstanceOf[js.Any])
     
     @JSImport("protractor/built/exitCodes", "ProtractorError.ERR_MSGS")
     @js.native
     def ERR_MSGS: js.Array[String] = js.native
-    @scala.inline
-    def ERR_MSGS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_MSGS")(x.asInstanceOf[js.Any])
+    inline def ERR_MSGS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_MSGS")(x.asInstanceOf[js.Any])
     
     @JSImport("protractor/built/exitCodes", "ProtractorError.SUPRESS_EXIT_CODE")
     @js.native
     def SUPRESS_EXIT_CODE: Boolean = js.native
-    @scala.inline
-    def SUPRESS_EXIT_CODE_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUPRESS_EXIT_CODE")(x.asInstanceOf[js.Any])
+    inline def SUPRESS_EXIT_CODE_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUPRESS_EXIT_CODE")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def log(logger: Logger, code: Double, message: String, stack: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(logger.asInstanceOf[js.Any], code.asInstanceOf[js.Any], message.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def log(logger: Logger, code: Double, message: String, stack: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(logger.asInstanceOf[js.Any], code.asInstanceOf[js.Any], message.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

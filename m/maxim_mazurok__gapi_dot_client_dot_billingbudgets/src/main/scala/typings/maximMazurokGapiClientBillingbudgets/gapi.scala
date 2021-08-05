@@ -24,17 +24,14 @@ object gapi {
       }
       object BillingAccountsResource {
         
-        @scala.inline
-        def apply(budgets: BudgetsResource): BillingAccountsResource = {
+        inline def apply(budgets: BudgetsResource): BillingAccountsResource = {
           val __obj = js.Dynamic.literal(budgets = budgets.asInstanceOf[js.Any])
           __obj.asInstanceOf[BillingAccountsResource]
         }
         
-        @scala.inline
-        implicit class BillingAccountsResourceMutableBuilder[Self <: BillingAccountsResource] (val x: Self) extends AnyVal {
+        extension [Self <: BillingAccountsResource](x: Self) {
           
-          @scala.inline
-          def setBudgets(value: BudgetsResource): Self = StObject.set(x, "budgets", value.asInstanceOf[js.Any])
+          inline def setBudgets(value: BudgetsResource): Self = StObject.set(x, "budgets", value.asInstanceOf[js.Any])
         }
       }
       
@@ -96,59 +93,42 @@ object gapi {
       }
       object GoogleCloudBillingBudgetsV1Budget {
         
-        @scala.inline
-        def apply(): GoogleCloudBillingBudgetsV1Budget = {
+        inline def apply(): GoogleCloudBillingBudgetsV1Budget = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleCloudBillingBudgetsV1Budget]
         }
         
-        @scala.inline
-        implicit class GoogleCloudBillingBudgetsV1BudgetMutableBuilder[Self <: GoogleCloudBillingBudgetsV1Budget] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleCloudBillingBudgetsV1Budget](x: Self) {
           
-          @scala.inline
-          def setAmount(value: GoogleCloudBillingBudgetsV1BudgetAmount): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+          inline def setAmount(value: GoogleCloudBillingBudgetsV1BudgetAmount): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+          inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
           
-          @scala.inline
-          def setBudgetFilter(value: GoogleCloudBillingBudgetsV1Filter): Self = StObject.set(x, "budgetFilter", value.asInstanceOf[js.Any])
+          inline def setBudgetFilter(value: GoogleCloudBillingBudgetsV1Filter): Self = StObject.set(x, "budgetFilter", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBudgetFilterUndefined: Self = StObject.set(x, "budgetFilter", js.undefined)
+          inline def setBudgetFilterUndefined: Self = StObject.set(x, "budgetFilter", js.undefined)
           
-          @scala.inline
-          def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+          inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+          inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
           
-          @scala.inline
-          def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+          inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+          inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setNotificationsRule(value: GoogleCloudBillingBudgetsV1NotificationsRule): Self = StObject.set(x, "notificationsRule", value.asInstanceOf[js.Any])
+          inline def setNotificationsRule(value: GoogleCloudBillingBudgetsV1NotificationsRule): Self = StObject.set(x, "notificationsRule", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNotificationsRuleUndefined: Self = StObject.set(x, "notificationsRule", js.undefined)
+          inline def setNotificationsRuleUndefined: Self = StObject.set(x, "notificationsRule", js.undefined)
           
-          @scala.inline
-          def setThresholdRules(value: js.Array[GoogleCloudBillingBudgetsV1ThresholdRule]): Self = StObject.set(x, "thresholdRules", value.asInstanceOf[js.Any])
+          inline def setThresholdRules(value: js.Array[GoogleCloudBillingBudgetsV1ThresholdRule]): Self = StObject.set(x, "thresholdRules", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setThresholdRulesUndefined: Self = StObject.set(x, "thresholdRules", js.undefined)
+          inline def setThresholdRulesUndefined: Self = StObject.set(x, "thresholdRules", js.undefined)
           
-          @scala.inline
-          def setThresholdRulesVarargs(value: GoogleCloudBillingBudgetsV1ThresholdRule*): Self = StObject.set(x, "thresholdRules", js.Array(value :_*))
+          inline def setThresholdRulesVarargs(value: GoogleCloudBillingBudgetsV1ThresholdRule*): Self = StObject.set(x, "thresholdRules", js.Array(value :_*))
         }
       }
       
@@ -162,26 +142,20 @@ object gapi {
       }
       object GoogleCloudBillingBudgetsV1BudgetAmount {
         
-        @scala.inline
-        def apply(): GoogleCloudBillingBudgetsV1BudgetAmount = {
+        inline def apply(): GoogleCloudBillingBudgetsV1BudgetAmount = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleCloudBillingBudgetsV1BudgetAmount]
         }
         
-        @scala.inline
-        implicit class GoogleCloudBillingBudgetsV1BudgetAmountMutableBuilder[Self <: GoogleCloudBillingBudgetsV1BudgetAmount] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleCloudBillingBudgetsV1BudgetAmount](x: Self) {
           
-          @scala.inline
-          def setLastPeriodAmount(value: js.Any): Self = StObject.set(x, "lastPeriodAmount", value.asInstanceOf[js.Any])
+          inline def setLastPeriodAmount(value: js.Any): Self = StObject.set(x, "lastPeriodAmount", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLastPeriodAmountUndefined: Self = StObject.set(x, "lastPeriodAmount", js.undefined)
+          inline def setLastPeriodAmountUndefined: Self = StObject.set(x, "lastPeriodAmount", js.undefined)
           
-          @scala.inline
-          def setSpecifiedAmount(value: GoogleTypeMoney): Self = StObject.set(x, "specifiedAmount", value.asInstanceOf[js.Any])
+          inline def setSpecifiedAmount(value: GoogleTypeMoney): Self = StObject.set(x, "specifiedAmount", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSpecifiedAmountUndefined: Self = StObject.set(x, "specifiedAmount", js.undefined)
+          inline def setSpecifiedAmountUndefined: Self = StObject.set(x, "specifiedAmount", js.undefined)
         }
       }
       
@@ -228,66 +202,48 @@ object gapi {
       }
       object GoogleCloudBillingBudgetsV1Filter {
         
-        @scala.inline
-        def apply(): GoogleCloudBillingBudgetsV1Filter = {
+        inline def apply(): GoogleCloudBillingBudgetsV1Filter = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleCloudBillingBudgetsV1Filter]
         }
         
-        @scala.inline
-        implicit class GoogleCloudBillingBudgetsV1FilterMutableBuilder[Self <: GoogleCloudBillingBudgetsV1Filter] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleCloudBillingBudgetsV1Filter](x: Self) {
           
-          @scala.inline
-          def setCreditTypes(value: js.Array[String]): Self = StObject.set(x, "creditTypes", value.asInstanceOf[js.Any])
+          inline def setCreditTypes(value: js.Array[String]): Self = StObject.set(x, "creditTypes", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCreditTypesTreatment(value: String): Self = StObject.set(x, "creditTypesTreatment", value.asInstanceOf[js.Any])
+          inline def setCreditTypesTreatment(value: String): Self = StObject.set(x, "creditTypesTreatment", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCreditTypesTreatmentUndefined: Self = StObject.set(x, "creditTypesTreatment", js.undefined)
+          inline def setCreditTypesTreatmentUndefined: Self = StObject.set(x, "creditTypesTreatment", js.undefined)
           
-          @scala.inline
-          def setCreditTypesUndefined: Self = StObject.set(x, "creditTypes", js.undefined)
+          inline def setCreditTypesUndefined: Self = StObject.set(x, "creditTypes", js.undefined)
           
-          @scala.inline
-          def setCreditTypesVarargs(value: String*): Self = StObject.set(x, "creditTypes", js.Array(value :_*))
+          inline def setCreditTypesVarargs(value: String*): Self = StObject.set(x, "creditTypes", js.Array(value :_*))
           
-          @scala.inline
-          def setLabels(
+          inline def setLabels(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: std.Array<any>}
             */ typings.maximMazurokGapiClientBillingbudgets.maximMazurokGapiClientBillingbudgetsStrings.GoogleCloudBillingBudgetsV1Filter & TopLevel[js.Any]
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+          inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
           
-          @scala.inline
-          def setProjects(value: js.Array[String]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+          inline def setProjects(value: js.Array[String]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
+          inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
           
-          @scala.inline
-          def setProjectsVarargs(value: String*): Self = StObject.set(x, "projects", js.Array(value :_*))
+          inline def setProjectsVarargs(value: String*): Self = StObject.set(x, "projects", js.Array(value :_*))
           
-          @scala.inline
-          def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+          inline def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+          inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
           
-          @scala.inline
-          def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
+          inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
           
-          @scala.inline
-          def setSubaccounts(value: js.Array[String]): Self = StObject.set(x, "subaccounts", value.asInstanceOf[js.Any])
+          inline def setSubaccounts(value: js.Array[String]): Self = StObject.set(x, "subaccounts", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSubaccountsUndefined: Self = StObject.set(x, "subaccounts", js.undefined)
+          inline def setSubaccountsUndefined: Self = StObject.set(x, "subaccounts", js.undefined)
           
-          @scala.inline
-          def setSubaccountsVarargs(value: String*): Self = StObject.set(x, "subaccounts", js.Array(value :_*))
+          inline def setSubaccountsVarargs(value: String*): Self = StObject.set(x, "subaccounts", js.Array(value :_*))
         }
       }
       
@@ -304,29 +260,22 @@ object gapi {
       }
       object GoogleCloudBillingBudgetsV1ListBudgetsResponse {
         
-        @scala.inline
-        def apply(): GoogleCloudBillingBudgetsV1ListBudgetsResponse = {
+        inline def apply(): GoogleCloudBillingBudgetsV1ListBudgetsResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleCloudBillingBudgetsV1ListBudgetsResponse]
         }
         
-        @scala.inline
-        implicit class GoogleCloudBillingBudgetsV1ListBudgetsResponseMutableBuilder[Self <: GoogleCloudBillingBudgetsV1ListBudgetsResponse] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleCloudBillingBudgetsV1ListBudgetsResponse](x: Self) {
           
-          @scala.inline
-          def setBudgets(value: js.Array[GoogleCloudBillingBudgetsV1Budget]): Self = StObject.set(x, "budgets", value.asInstanceOf[js.Any])
+          inline def setBudgets(value: js.Array[GoogleCloudBillingBudgetsV1Budget]): Self = StObject.set(x, "budgets", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBudgetsUndefined: Self = StObject.set(x, "budgets", js.undefined)
+          inline def setBudgetsUndefined: Self = StObject.set(x, "budgets", js.undefined)
           
-          @scala.inline
-          def setBudgetsVarargs(value: GoogleCloudBillingBudgetsV1Budget*): Self = StObject.set(x, "budgets", js.Array(value :_*))
+          inline def setBudgetsVarargs(value: GoogleCloudBillingBudgetsV1Budget*): Self = StObject.set(x, "budgets", js.Array(value :_*))
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         }
       }
       
@@ -361,41 +310,30 @@ object gapi {
       }
       object GoogleCloudBillingBudgetsV1NotificationsRule {
         
-        @scala.inline
-        def apply(): GoogleCloudBillingBudgetsV1NotificationsRule = {
+        inline def apply(): GoogleCloudBillingBudgetsV1NotificationsRule = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleCloudBillingBudgetsV1NotificationsRule]
         }
         
-        @scala.inline
-        implicit class GoogleCloudBillingBudgetsV1NotificationsRuleMutableBuilder[Self <: GoogleCloudBillingBudgetsV1NotificationsRule] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleCloudBillingBudgetsV1NotificationsRule](x: Self) {
           
-          @scala.inline
-          def setDisableDefaultIamRecipients(value: Boolean): Self = StObject.set(x, "disableDefaultIamRecipients", value.asInstanceOf[js.Any])
+          inline def setDisableDefaultIamRecipients(value: Boolean): Self = StObject.set(x, "disableDefaultIamRecipients", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDisableDefaultIamRecipientsUndefined: Self = StObject.set(x, "disableDefaultIamRecipients", js.undefined)
+          inline def setDisableDefaultIamRecipientsUndefined: Self = StObject.set(x, "disableDefaultIamRecipients", js.undefined)
           
-          @scala.inline
-          def setMonitoringNotificationChannels(value: js.Array[String]): Self = StObject.set(x, "monitoringNotificationChannels", value.asInstanceOf[js.Any])
+          inline def setMonitoringNotificationChannels(value: js.Array[String]): Self = StObject.set(x, "monitoringNotificationChannels", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMonitoringNotificationChannelsUndefined: Self = StObject.set(x, "monitoringNotificationChannels", js.undefined)
+          inline def setMonitoringNotificationChannelsUndefined: Self = StObject.set(x, "monitoringNotificationChannels", js.undefined)
           
-          @scala.inline
-          def setMonitoringNotificationChannelsVarargs(value: String*): Self = StObject.set(x, "monitoringNotificationChannels", js.Array(value :_*))
+          inline def setMonitoringNotificationChannelsVarargs(value: String*): Self = StObject.set(x, "monitoringNotificationChannels", js.Array(value :_*))
           
-          @scala.inline
-          def setPubsubTopic(value: String): Self = StObject.set(x, "pubsubTopic", value.asInstanceOf[js.Any])
+          inline def setPubsubTopic(value: String): Self = StObject.set(x, "pubsubTopic", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPubsubTopicUndefined: Self = StObject.set(x, "pubsubTopic", js.undefined)
+          inline def setPubsubTopicUndefined: Self = StObject.set(x, "pubsubTopic", js.undefined)
           
-          @scala.inline
-          def setSchemaVersion(value: String): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
+          inline def setSchemaVersion(value: String): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSchemaVersionUndefined: Self = StObject.set(x, "schemaVersion", js.undefined)
+          inline def setSchemaVersionUndefined: Self = StObject.set(x, "schemaVersion", js.undefined)
         }
       }
       
@@ -409,26 +347,20 @@ object gapi {
       }
       object GoogleCloudBillingBudgetsV1ThresholdRule {
         
-        @scala.inline
-        def apply(): GoogleCloudBillingBudgetsV1ThresholdRule = {
+        inline def apply(): GoogleCloudBillingBudgetsV1ThresholdRule = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleCloudBillingBudgetsV1ThresholdRule]
         }
         
-        @scala.inline
-        implicit class GoogleCloudBillingBudgetsV1ThresholdRuleMutableBuilder[Self <: GoogleCloudBillingBudgetsV1ThresholdRule] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleCloudBillingBudgetsV1ThresholdRule](x: Self) {
           
-          @scala.inline
-          def setSpendBasis(value: String): Self = StObject.set(x, "spendBasis", value.asInstanceOf[js.Any])
+          inline def setSpendBasis(value: String): Self = StObject.set(x, "spendBasis", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSpendBasisUndefined: Self = StObject.set(x, "spendBasis", js.undefined)
+          inline def setSpendBasisUndefined: Self = StObject.set(x, "spendBasis", js.undefined)
           
-          @scala.inline
-          def setThresholdPercent(value: Double): Self = StObject.set(x, "thresholdPercent", value.asInstanceOf[js.Any])
+          inline def setThresholdPercent(value: Double): Self = StObject.set(x, "thresholdPercent", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setThresholdPercentUndefined: Self = StObject.set(x, "thresholdPercent", js.undefined)
+          inline def setThresholdPercentUndefined: Self = StObject.set(x, "thresholdPercent", js.undefined)
         }
       }
       
@@ -452,32 +384,24 @@ object gapi {
       }
       object GoogleTypeMoney {
         
-        @scala.inline
-        def apply(): GoogleTypeMoney = {
+        inline def apply(): GoogleTypeMoney = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleTypeMoney]
         }
         
-        @scala.inline
-        implicit class GoogleTypeMoneyMutableBuilder[Self <: GoogleTypeMoney] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleTypeMoney](x: Self) {
           
-          @scala.inline
-          def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+          inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+          inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
           
-          @scala.inline
-          def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
+          inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
+          inline def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
           
-          @scala.inline
-          def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+          inline def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+          inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
         }
       }
     }

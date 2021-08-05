@@ -46,71 +46,50 @@ object mod {
   }
   object CoverageIstanbulReporter {
     
-    @scala.inline
-    def apply(): CoverageIstanbulReporter = {
+    inline def apply(): CoverageIstanbulReporter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CoverageIstanbulReporter]
     }
     
-    @scala.inline
-    implicit class CoverageIstanbulReporterMutableBuilder[Self <: CoverageIstanbulReporter] (val x: Self) extends AnyVal {
+    extension [Self <: CoverageIstanbulReporter](x: Self) {
       
-      @scala.inline
-      def setCombineBrowserReports(value: Boolean): Self = StObject.set(x, "combineBrowserReports", value.asInstanceOf[js.Any])
+      inline def setCombineBrowserReports(value: Boolean): Self = StObject.set(x, "combineBrowserReports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCombineBrowserReportsUndefined: Self = StObject.set(x, "combineBrowserReports", js.undefined)
+      inline def setCombineBrowserReportsUndefined: Self = StObject.set(x, "combineBrowserReports", js.undefined)
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setFixWebpackSourcePaths(value: Boolean): Self = StObject.set(x, "fixWebpackSourcePaths", value.asInstanceOf[js.Any])
+      inline def setFixWebpackSourcePaths(value: Boolean): Self = StObject.set(x, "fixWebpackSourcePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixWebpackSourcePathsUndefined: Self = StObject.set(x, "fixWebpackSourcePaths", js.undefined)
+      inline def setFixWebpackSourcePathsUndefined: Self = StObject.set(x, "fixWebpackSourcePaths", js.undefined)
       
-      @scala.inline
-      def setInstrumentation(value: js.Any): Self = StObject.set(x, "instrumentation", value.asInstanceOf[js.Any])
+      inline def setInstrumentation(value: js.Any): Self = StObject.set(x, "instrumentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstrumentationUndefined: Self = StObject.set(x, "instrumentation", js.undefined)
+      inline def setInstrumentationUndefined: Self = StObject.set(x, "instrumentation", js.undefined)
       
-      @scala.inline
-      def `setReport-config`(value: js.Any): Self = StObject.set(x, "report-config", value.asInstanceOf[js.Any])
+      inline def `setReport-config`(value: js.Any): Self = StObject.set(x, "report-config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setReport-configUndefined`: Self = StObject.set(x, "report-config", js.undefined)
+      inline def `setReport-configUndefined`: Self = StObject.set(x, "report-config", js.undefined)
       
-      @scala.inline
-      def setReports(value: js.Array[String]): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
+      inline def setReports(value: js.Array[String]): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
+      inline def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
       
-      @scala.inline
-      def setReportsVarargs(value: String*): Self = StObject.set(x, "reports", js.Array(value :_*))
+      inline def setReportsVarargs(value: String*): Self = StObject.set(x, "reports", js.Array(value :_*))
       
-      @scala.inline
-      def setSkipFilesWithNoCoverage(value: Boolean): Self = StObject.set(x, "skipFilesWithNoCoverage", value.asInstanceOf[js.Any])
+      inline def setSkipFilesWithNoCoverage(value: Boolean): Self = StObject.set(x, "skipFilesWithNoCoverage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipFilesWithNoCoverageUndefined: Self = StObject.set(x, "skipFilesWithNoCoverage", js.undefined)
+      inline def setSkipFilesWithNoCoverageUndefined: Self = StObject.set(x, "skipFilesWithNoCoverage", js.undefined)
       
-      @scala.inline
-      def setThresholds(value: ThresholdConfig): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
+      inline def setThresholds(value: ThresholdConfig): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
+      inline def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -130,38 +109,28 @@ object mod {
   }
   object Threshold {
     
-    @scala.inline
-    def apply(): Threshold = {
+    inline def apply(): Threshold = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Threshold]
     }
     
-    @scala.inline
-    implicit class ThresholdMutableBuilder[Self <: Threshold] (val x: Self) extends AnyVal {
+    extension [Self <: Threshold](x: Self) {
       
-      @scala.inline
-      def setBranches(value: Double): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+      inline def setBranches(value: Double): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
+      inline def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
       
-      @scala.inline
-      def setFunctions(value: Double): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+      inline def setFunctions(value: Double): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+      inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
       
-      @scala.inline
-      def setLines(value: Double): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: Double): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+      inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
       
-      @scala.inline
-      def setStatements(value: Double): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+      inline def setStatements(value: Double): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
+      inline def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
     }
   }
   
@@ -181,32 +150,24 @@ object mod {
   }
   object ThresholdConfig {
     
-    @scala.inline
-    def apply(): ThresholdConfig = {
+    inline def apply(): ThresholdConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThresholdConfig]
     }
     
-    @scala.inline
-    implicit class ThresholdConfigMutableBuilder[Self <: ThresholdConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ThresholdConfig](x: Self) {
       
-      @scala.inline
-      def setEach(value: ThresholdsEach): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
+      inline def setEach(value: ThresholdsEach): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
+      inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
       
-      @scala.inline
-      def setEmitWarning(value: Boolean): Self = StObject.set(x, "emitWarning", value.asInstanceOf[js.Any])
+      inline def setEmitWarning(value: Boolean): Self = StObject.set(x, "emitWarning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitWarningUndefined: Self = StObject.set(x, "emitWarning", js.undefined)
+      inline def setEmitWarningUndefined: Self = StObject.set(x, "emitWarning", js.undefined)
       
-      @scala.inline
-      def setGlobal(value: Threshold): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Threshold): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     }
   }
   
@@ -219,20 +180,16 @@ object mod {
   }
   object ThresholdsEach {
     
-    @scala.inline
-    def apply(): ThresholdsEach = {
+    inline def apply(): ThresholdsEach = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThresholdsEach]
     }
     
-    @scala.inline
-    implicit class ThresholdsEachMutableBuilder[Self <: ThresholdsEach] (val x: Self) extends AnyVal {
+    extension [Self <: ThresholdsEach](x: Self) {
       
-      @scala.inline
-      def setOverrides(value: StringDictionary[Threshold]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: StringDictionary[Threshold]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     }
   }
   
@@ -245,20 +202,16 @@ object mod {
     }
     object ConfigOptions {
       
-      @scala.inline
-      def apply(): ConfigOptions = {
+      inline def apply(): ConfigOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ConfigOptions]
       }
       
-      @scala.inline
-      implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ConfigOptions](x: Self) {
         
-        @scala.inline
-        def setCoverageIstanbulReporter(value: CoverageIstanbulReporter): Self = StObject.set(x, "coverageIstanbulReporter", value.asInstanceOf[js.Any])
+        inline def setCoverageIstanbulReporter(value: CoverageIstanbulReporter): Self = StObject.set(x, "coverageIstanbulReporter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCoverageIstanbulReporterUndefined: Self = StObject.set(x, "coverageIstanbulReporter", js.undefined)
+        inline def setCoverageIstanbulReporterUndefined: Self = StObject.set(x, "coverageIstanbulReporter", js.undefined)
       }
     }
   }

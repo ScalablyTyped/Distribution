@@ -23,52 +23,37 @@ trait Application extends StObject {
 }
 object Application {
   
-  @scala.inline
-  def apply(): Application = {
+  inline def apply(): Application = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Application]
   }
   
-  @scala.inline
-  implicit class ApplicationMutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
+  extension [Self <: Application](x: Self) {
     
-    @scala.inline
-    def setAppTracks(value: js.Array[AppTrackInfo]): Self = StObject.set(x, "appTracks", value.asInstanceOf[js.Any])
+    inline def setAppTracks(value: js.Array[AppTrackInfo]): Self = StObject.set(x, "appTracks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppTracksUndefined: Self = StObject.set(x, "appTracks", js.undefined)
+    inline def setAppTracksUndefined: Self = StObject.set(x, "appTracks", js.undefined)
     
-    @scala.inline
-    def setAppTracksVarargs(value: AppTrackInfo*): Self = StObject.set(x, "appTracks", js.Array(value :_*))
+    inline def setAppTracksVarargs(value: AppTrackInfo*): Self = StObject.set(x, "appTracks", js.Array(value :_*))
     
-    @scala.inline
-    def setManagedProperties(value: js.Array[ManagedProperty]): Self = StObject.set(x, "managedProperties", value.asInstanceOf[js.Any])
+    inline def setManagedProperties(value: js.Array[ManagedProperty]): Self = StObject.set(x, "managedProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedPropertiesUndefined: Self = StObject.set(x, "managedProperties", js.undefined)
+    inline def setManagedPropertiesUndefined: Self = StObject.set(x, "managedProperties", js.undefined)
     
-    @scala.inline
-    def setManagedPropertiesVarargs(value: ManagedProperty*): Self = StObject.set(x, "managedProperties", js.Array(value :_*))
+    inline def setManagedPropertiesVarargs(value: ManagedProperty*): Self = StObject.set(x, "managedProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPermissions(value: js.Array[ApplicationPermission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[ApplicationPermission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: ApplicationPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: ApplicationPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait IAilment extends StObject {
 }
 object IAilment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     detected: () => js.Promise[Boolean],
     getMessage: () => js.Promise[String],
     getTreatmentSteps: () => js.Promise[js.Array[PatientTreatmentStep]],
@@ -33,31 +32,22 @@ object IAilment {
     __obj.asInstanceOf[IAilment]
   }
   
-  @scala.inline
-  implicit class IAilmentMutableBuilder[Self <: IAilment] (val x: Self) extends AnyVal {
+  extension [Self <: IAilment](x: Self) {
     
-    @scala.inline
-    def setDetected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "detected", js.Any.fromFunction0(value))
+    inline def setDetected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "detected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMessage(value: () => js.Promise[String]): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
+    inline def setGetMessage(value: () => js.Promise[String]): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTreatmentSteps(value: () => js.Promise[js.Array[PatientTreatmentStep]]): Self = StObject.set(x, "getTreatmentSteps", js.Any.fromFunction0(value))
+    inline def setGetTreatmentSteps(value: () => js.Promise[js.Array[PatientTreatmentStep]]): Self = StObject.set(x, "getTreatmentSteps", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplicit(value: Boolean): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
+    inline def setImplicit(value: Boolean): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjects(value: js.Array[ProjectType]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+    inline def setProjects(value: js.Array[ProjectType]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
+    inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
     
-    @scala.inline
-    def setProjectsVarargs(value: ProjectType*): Self = StObject.set(x, "projects", js.Array(value :_*))
+    inline def setProjectsVarargs(value: ProjectType*): Self = StObject.set(x, "projects", js.Array(value :_*))
   }
 }

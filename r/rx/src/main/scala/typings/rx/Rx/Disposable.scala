@@ -13,19 +13,15 @@ trait Disposable
 }
 object Disposable {
   
-  @scala.inline
-  def apply(dispose: () => Unit): Disposable = {
+  inline def apply(dispose: () => Unit): Disposable = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
     __obj.asInstanceOf[Disposable]
   }
   
-  @scala.inline
-  implicit class DisposableMutableBuilder[Self <: Disposable] (val x: Self) extends AnyVal {
+  extension [Self <: Disposable](x: Self) {
     
-    @scala.inline
-    def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
+    inline def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDisposedUndefined: Self = StObject.set(x, "isDisposed", js.undefined)
+    inline def setIsDisposedUndefined: Self = StObject.set(x, "isDisposed", js.undefined)
   }
 }

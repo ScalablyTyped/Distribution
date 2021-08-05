@@ -13,16 +13,13 @@ trait SetBreakpointOnFunctionCallResponse extends StObject {
 }
 object SetBreakpointOnFunctionCallResponse {
   
-  @scala.inline
-  def apply(breakpointId: BreakpointId): SetBreakpointOnFunctionCallResponse = {
+  inline def apply(breakpointId: BreakpointId): SetBreakpointOnFunctionCallResponse = {
     val __obj = js.Dynamic.literal(breakpointId = breakpointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetBreakpointOnFunctionCallResponse]
   }
   
-  @scala.inline
-  implicit class SetBreakpointOnFunctionCallResponseMutableBuilder[Self <: SetBreakpointOnFunctionCallResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SetBreakpointOnFunctionCallResponse](x: Self) {
     
-    @scala.inline
-    def setBreakpointId(value: BreakpointId): Self = StObject.set(x, "breakpointId", value.asInstanceOf[js.Any])
+    inline def setBreakpointId(value: BreakpointId): Self = StObject.set(x, "breakpointId", value.asInstanceOf[js.Any])
   }
 }

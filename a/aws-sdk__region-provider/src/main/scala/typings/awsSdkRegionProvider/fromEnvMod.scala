@@ -15,10 +15,8 @@ object fromEnvMod {
   @js.native
   val ENV_REGION: /* "AWS_REGION" */ String = js.native
   
-  @scala.inline
-  def fromEnv(): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")().asInstanceOf[Provider[String]]
-  @scala.inline
-  def fromEnv(hasEnvironmentVariableName: EnvConfiguration): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")(hasEnvironmentVariableName.asInstanceOf[js.Any]).asInstanceOf[Provider[String]]
+  inline def fromEnv(): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")().asInstanceOf[Provider[String]]
+  inline def fromEnv(hasEnvironmentVariableName: EnvConfiguration): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")(hasEnvironmentVariableName.asInstanceOf[js.Any]).asInstanceOf[Provider[String]]
   
   trait EnvConfiguration extends StObject {
     
@@ -26,20 +24,16 @@ object fromEnvMod {
   }
   object EnvConfiguration {
     
-    @scala.inline
-    def apply(): EnvConfiguration = {
+    inline def apply(): EnvConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EnvConfiguration]
     }
     
-    @scala.inline
-    implicit class EnvConfigurationMutableBuilder[Self <: EnvConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: EnvConfiguration](x: Self) {
       
-      @scala.inline
-      def setEnvironmentVariableName(value: String): Self = StObject.set(x, "environmentVariableName", value.asInstanceOf[js.Any])
+      inline def setEnvironmentVariableName(value: String): Self = StObject.set(x, "environmentVariableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentVariableNameUndefined: Self = StObject.set(x, "environmentVariableName", js.undefined)
+      inline def setEnvironmentVariableNameUndefined: Self = StObject.set(x, "environmentVariableName", js.undefined)
     }
   }
 }

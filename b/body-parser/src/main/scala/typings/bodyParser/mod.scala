@@ -12,10 +12,8 @@ object mod {
   
   // for docs go to https://github.com/expressjs/body-parser/tree/1.19.0#body-parser
   /** @deprecated */
-  @scala.inline
-  def apply(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[NextHandleFunction]
-  @scala.inline
-  def apply(options: OptionsJson & OptionsText & OptionsUrlencoded): NextHandleFunction = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
+  inline def apply(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[NextHandleFunction]
+  inline def apply(options: OptionsJson & OptionsText & OptionsUrlencoded): NextHandleFunction = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
   
   @JSImport("body-parser", JSImport.Namespace)
   @js.native
@@ -25,37 +23,29 @@ object mod {
     * Returns middleware that only parses json and only looks at requests
     * where the Content-Type header matches the type option.
     */
-  @scala.inline
-  def json(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("json")().asInstanceOf[NextHandleFunction]
-  @scala.inline
-  def json(options: OptionsJson): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
+  inline def json(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("json")().asInstanceOf[NextHandleFunction]
+  inline def json(options: OptionsJson): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
   
   /**
     * Returns middleware that parses all bodies as a Buffer and only looks at requests
     * where the Content-Type header matches the type option.
     */
-  @scala.inline
-  def raw(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")().asInstanceOf[NextHandleFunction]
-  @scala.inline
-  def raw(options: Options): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
+  inline def raw(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")().asInstanceOf[NextHandleFunction]
+  inline def raw(options: Options): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
   
   /**
     * Returns middleware that parses all bodies as a string and only looks at requests
     * where the Content-Type header matches the type option.
     */
-  @scala.inline
-  def text(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("text")().asInstanceOf[NextHandleFunction]
-  @scala.inline
-  def text(options: OptionsText): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
+  inline def text(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("text")().asInstanceOf[NextHandleFunction]
+  inline def text(options: OptionsText): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
   
   /**
     * Returns middleware that only parses urlencoded bodies and only looks at requests
     * where the Content-Type header matches the type option
     */
-  @scala.inline
-  def urlencoded(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("urlencoded")().asInstanceOf[NextHandleFunction]
-  @scala.inline
-  def urlencoded(options: OptionsUrlencoded): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("urlencoded")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
+  inline def urlencoded(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("urlencoded")().asInstanceOf[NextHandleFunction]
+  inline def urlencoded(options: OptionsUrlencoded): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("urlencoded")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
   
   trait Options extends StObject {
     
@@ -90,46 +80,34 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setInflate(value: Boolean): Self = StObject.set(x, "inflate", value.asInstanceOf[js.Any])
+      inline def setInflate(value: Boolean): Self = StObject.set(x, "inflate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInflateUndefined: Self = StObject.set(x, "inflate", js.undefined)
+      inline def setInflateUndefined: Self = StObject.set(x, "inflate", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double | String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double | String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setType(value: String | js.Array[String] | (js.Function1[/* req */ IncomingMessage, js.Any])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | js.Array[String] | (js.Function1[/* req */ IncomingMessage, js.Any])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeFunction1(value: /* req */ IncomingMessage => js.Any): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+      inline def setTypeFunction1(value: /* req */ IncomingMessage => js.Any): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
       
-      @scala.inline
-      def setVerify(
+      inline def setVerify(
         value: (/* req */ IncomingMessage, /* res */ ServerResponse, /* buf */ Buffer, /* encoding */ String) => Unit
       ): Self = StObject.set(x, "verify", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
+      inline def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
     }
   }
   
@@ -151,26 +129,20 @@ object mod {
   }
   object OptionsJson {
     
-    @scala.inline
-    def apply(): OptionsJson = {
+    inline def apply(): OptionsJson = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsJson]
     }
     
-    @scala.inline
-    implicit class OptionsJsonMutableBuilder[Self <: OptionsJson] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsJson](x: Self) {
       
-      @scala.inline
-      def setReviver(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
+      inline def setReviver(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
+      inline def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
   
@@ -187,20 +159,16 @@ object mod {
   }
   object OptionsText {
     
-    @scala.inline
-    def apply(): OptionsText = {
+    inline def apply(): OptionsText = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsText]
     }
     
-    @scala.inline
-    implicit class OptionsTextMutableBuilder[Self <: OptionsText] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsText](x: Self) {
       
-      @scala.inline
-      def setDefaultCharset(value: String): Self = StObject.set(x, "defaultCharset", value.asInstanceOf[js.Any])
+      inline def setDefaultCharset(value: String): Self = StObject.set(x, "defaultCharset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCharsetUndefined: Self = StObject.set(x, "defaultCharset", js.undefined)
+      inline def setDefaultCharsetUndefined: Self = StObject.set(x, "defaultCharset", js.undefined)
     }
   }
   
@@ -223,26 +191,20 @@ object mod {
   }
   object OptionsUrlencoded {
     
-    @scala.inline
-    def apply(): OptionsUrlencoded = {
+    inline def apply(): OptionsUrlencoded = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsUrlencoded]
     }
     
-    @scala.inline
-    implicit class OptionsUrlencodedMutableBuilder[Self <: OptionsUrlencoded] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsUrlencoded](x: Self) {
       
-      @scala.inline
-      def setExtended(value: Boolean): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
+      inline def setExtended(value: Boolean): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedUndefined: Self = StObject.set(x, "extended", js.undefined)
+      inline def setExtendedUndefined: Self = StObject.set(x, "extended", js.undefined)
       
-      @scala.inline
-      def setParameterLimit(value: Double): Self = StObject.set(x, "parameterLimit", value.asInstanceOf[js.Any])
+      inline def setParameterLimit(value: Double): Self = StObject.set(x, "parameterLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameterLimitUndefined: Self = StObject.set(x, "parameterLimit", js.undefined)
+      inline def setParameterLimitUndefined: Self = StObject.set(x, "parameterLimit", js.undefined)
     }
   }
 }

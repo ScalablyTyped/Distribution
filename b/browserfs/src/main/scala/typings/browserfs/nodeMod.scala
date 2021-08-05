@@ -46,23 +46,17 @@ object nodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def BFSRequire(module: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def BFSRequire(module: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def BFSRequire_bfsutils(module: bfs_utils): TypeofBFSUtils = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[TypeofBFSUtils]
+  inline def BFSRequire_bfsutils(module: bfs_utils): TypeofBFSUtils = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[TypeofBFSUtils]
   
-  @scala.inline
-  def BFSRequire_buffer(module: buffer): Typeofbuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[Typeofbuffer]
+  inline def BFSRequire_buffer(module: buffer): Typeofbuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[Typeofbuffer]
   
-  @scala.inline
-  def BFSRequire_fs(module: fs): FSModule = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[FSModule]
+  inline def BFSRequire_fs(module: fs): FSModule = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[FSModule]
   
-  @scala.inline
-  def BFSRequire_path(module: path): PlatformPath = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[PlatformPath]
+  inline def BFSRequire_path(module: path): PlatformPath = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[PlatformPath]
   
-  @scala.inline
-  def BFSRequire_process(module: process): Process = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[Process]
+  inline def BFSRequire_process(module: process): Process = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[Process]
   
   @JSImport("browserfs/dist/node", "EmscriptenFS")
   @js.native
@@ -113,37 +107,27 @@ object nodeMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def EEXIST(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EEXIST")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def EEXIST(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EEXIST")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
       
-      @scala.inline
-      def EISDIR(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EISDIR")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def EISDIR(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EISDIR")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
       
-      @scala.inline
-      def ENOENT(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOENT")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def ENOENT(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOENT")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
       
-      @scala.inline
-      def ENOTDIR(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOTDIR")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def ENOTDIR(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOTDIR")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
       
-      @scala.inline
-      def ENOTEMPTY(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOTEMPTY")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def ENOTEMPTY(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOTEMPTY")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
       
-      @scala.inline
-      def EPERM(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EPERM")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def EPERM(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EPERM")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
       
-      @scala.inline
-      def FileError(code: ErrorCode, p: String): typings.browserfs.apiErrorMod.ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("FileError")(code.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def FileError(code: ErrorCode, p: String): typings.browserfs.apiErrorMod.ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("FileError")(code.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
       
       /**
         * Creates an ApiError object from a buffer.
         */
-      @scala.inline
-      def fromBuffer(buffer: Buffer): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
-      @scala.inline
-      def fromBuffer(buffer: Buffer, i: Double): typings.browserfs.apiErrorMod.ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def fromBuffer(buffer: Buffer): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def fromBuffer(buffer: Buffer, i: Double): typings.browserfs.apiErrorMod.ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
       
-      @scala.inline
-      def fromJSON(json: js.Any): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def fromJSON(json: js.Any): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
     }
     
     @JSImport("browserfs/dist/node", "Errors.ErrorCode")
@@ -224,8 +208,7 @@ object nodeMod {
     @JSImport("browserfs/dist/node", "FileSystem.AsyncMirror")
     @js.native
     def AsyncMirror: TypeofAsyncMirror = js.native
-    @scala.inline
-    def AsyncMirror_=(x: TypeofAsyncMirror): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AsyncMirror")(x.asInstanceOf[js.Any])
+    inline def AsyncMirror_=(x: TypeofAsyncMirror): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AsyncMirror")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node", "FileSystem.Dropbox")
@@ -245,8 +228,7 @@ object nodeMod {
     @JSImport("browserfs/dist/node", "FileSystem.Dropbox")
     @js.native
     def Dropbox: TypeofDropbox = js.native
-    @scala.inline
-    def Dropbox_=(x: TypeofDropbox): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dropbox")(x.asInstanceOf[js.Any])
+    inline def Dropbox_=(x: TypeofDropbox): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dropbox")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node", "FileSystem.Emscripten")
@@ -262,8 +244,7 @@ object nodeMod {
     @JSImport("browserfs/dist/node", "FileSystem.Emscripten")
     @js.native
     def Emscripten: TypeofEmscripten = js.native
-    @scala.inline
-    def Emscripten_=(x: TypeofEmscripten): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Emscripten")(x.asInstanceOf[js.Any])
+    inline def Emscripten_=(x: TypeofEmscripten): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Emscripten")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node", "FileSystem.FolderAdapter")
@@ -281,8 +262,7 @@ object nodeMod {
     @JSImport("browserfs/dist/node", "FileSystem.FolderAdapter")
     @js.native
     def FolderAdapter: TypeofFolderAdapter = js.native
-    @scala.inline
-    def FolderAdapter_=(x: TypeofFolderAdapter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FolderAdapter")(x.asInstanceOf[js.Any])
+    inline def FolderAdapter_=(x: TypeofFolderAdapter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FolderAdapter")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node", "FileSystem.HTML5FS")
@@ -312,8 +292,7 @@ object nodeMod {
     @JSImport("browserfs/dist/node", "FileSystem.HTML5FS")
     @js.native
     def HTML5FS: TypeofHTML5FS = js.native
-    @scala.inline
-    def HTML5FS_=(x: TypeofHTML5FS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTML5FS")(x.asInstanceOf[js.Any])
+    inline def HTML5FS_=(x: TypeofHTML5FS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTML5FS")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node", "FileSystem.InMemory")
@@ -323,8 +302,7 @@ object nodeMod {
     @JSImport("browserfs/dist/node", "FileSystem.InMemory")
     @js.native
     def InMemory: TypeofInMemory = js.native
-    @scala.inline
-    def InMemory_=(x: TypeofInMemory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InMemory")(x.asInstanceOf[js.Any])
+    inline def InMemory_=(x: TypeofInMemory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InMemory")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node", "FileSystem.IndexedDB")
@@ -349,8 +327,7 @@ object nodeMod {
     @JSImport("browserfs/dist/node", "FileSystem.IndexedDB")
     @js.native
     def IndexedDB: TypeofIndexedDB = js.native
-    @scala.inline
-    def IndexedDB_=(x: TypeofIndexedDB): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndexedDB")(x.asInstanceOf[js.Any])
+    inline def IndexedDB_=(x: TypeofIndexedDB): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndexedDB")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node", "FileSystem.IsoFS")
@@ -372,8 +349,7 @@ object nodeMod {
     @JSImport("browserfs/dist/node", "FileSystem.IsoFS")
     @js.native
     def IsoFS: TypeofIsoFS = js.native
-    @scala.inline
-    def IsoFS_=(x: TypeofIsoFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsoFS")(x.asInstanceOf[js.Any])
+    inline def IsoFS_=(x: TypeofIsoFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsoFS")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node", "FileSystem.LocalStorage")
@@ -386,8 +362,7 @@ object nodeMod {
     @JSImport("browserfs/dist/node", "FileSystem.LocalStorage")
     @js.native
     def LocalStorage: TypeofLocalStorage = js.native
-    @scala.inline
-    def LocalStorage_=(x: TypeofLocalStorage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LocalStorage")(x.asInstanceOf[js.Any])
+    inline def LocalStorage_=(x: TypeofLocalStorage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LocalStorage")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node", "FileSystem.MountableFileSystem")
@@ -400,8 +375,7 @@ object nodeMod {
     @JSImport("browserfs/dist/node", "FileSystem.MountableFileSystem")
     @js.native
     def MountableFileSystem: TypeofMountableFileSystem = js.native
-    @scala.inline
-    def MountableFileSystem_=(x: TypeofMountableFileSystem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MountableFileSystem")(x.asInstanceOf[js.Any])
+    inline def MountableFileSystem_=(x: TypeofMountableFileSystem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MountableFileSystem")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node", "FileSystem.OverlayFS")
@@ -426,8 +400,7 @@ object nodeMod {
     @JSImport("browserfs/dist/node", "FileSystem.OverlayFS")
     @js.native
     def OverlayFS: TypeofOverlayFS = js.native
-    @scala.inline
-    def OverlayFS_=(x: TypeofOverlayFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OverlayFS")(x.asInstanceOf[js.Any])
+    inline def OverlayFS_=(x: TypeofOverlayFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OverlayFS")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node", "FileSystem.WorkerFS")
@@ -446,8 +419,7 @@ object nodeMod {
     @JSImport("browserfs/dist/node", "FileSystem.WorkerFS")
     @js.native
     def WorkerFS: TypeofWorkerFS = js.native
-    @scala.inline
-    def WorkerFS_=(x: TypeofWorkerFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkerFS")(x.asInstanceOf[js.Any])
+    inline def WorkerFS_=(x: TypeofWorkerFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WorkerFS")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node", "FileSystem.XmlHttpRequest")
@@ -482,8 +454,7 @@ object nodeMod {
     @JSImport("browserfs/dist/node", "FileSystem.XmlHttpRequest")
     @js.native
     def XmlHttpRequest: TypeofXmlHttpRequest = js.native
-    @scala.inline
-    def XmlHttpRequest_=(x: TypeofXmlHttpRequest): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XmlHttpRequest")(x.asInstanceOf[js.Any])
+    inline def XmlHttpRequest_=(x: TypeofXmlHttpRequest): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XmlHttpRequest")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("browserfs/dist/node", "FileSystem.ZipFS")
@@ -505,28 +476,21 @@ object nodeMod {
     @JSImport("browserfs/dist/node", "FileSystem.ZipFS")
     @js.native
     def ZipFS: TypeofZipFS = js.native
-    @scala.inline
-    def ZipFS_=(x: TypeofZipFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZipFS")(x.asInstanceOf[js.Any])
+    inline def ZipFS_=(x: TypeofZipFS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZipFS")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def configure(config: FileSystemConfiguration, cb: BFSOneArgCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def configure(config: FileSystemConfiguration, cb: BFSOneArgCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getFileSystem(config: FileSystemConfiguration, cb: BFSCallback[FileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getFileSystem(config: FileSystemConfiguration, cb: BFSCallback[FileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def initialize(rootfs: FileSystem): FileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(rootfs.asInstanceOf[js.Any]).asInstanceOf[FileSystem]
+  inline def initialize(rootfs: FileSystem): FileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(rootfs.asInstanceOf[js.Any]).asInstanceOf[FileSystem]
   
-  @scala.inline
-  def install(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def install(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerFileSystem(name: String, fs: FileSystemConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFileSystem")(name.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerFileSystem(name: String, fs: FileSystemConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFileSystem")(name.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("browserfs/dist/node", "setImmediate")
   @js.native
   def setImmediate: js.Function1[/* cb */ js.Function, js.Any] = js.native
-  @scala.inline
-  def setImmediate_=(x: js.Function1[/* cb */ js.Function, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setImmediate")(x.asInstanceOf[js.Any])
+  inline def setImmediate_=(x: js.Function1[/* cb */ js.Function, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setImmediate")(x.asInstanceOf[js.Any])
 }

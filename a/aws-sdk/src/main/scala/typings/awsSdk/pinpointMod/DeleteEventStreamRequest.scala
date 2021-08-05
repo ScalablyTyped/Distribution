@@ -13,16 +13,13 @@ trait DeleteEventStreamRequest extends StObject {
 }
 object DeleteEventStreamRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string): DeleteEventStreamRequest = {
+  inline def apply(ApplicationId: string): DeleteEventStreamRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEventStreamRequest]
   }
   
-  @scala.inline
-  implicit class DeleteEventStreamRequestMutableBuilder[Self <: DeleteEventStreamRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEventStreamRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }
 }

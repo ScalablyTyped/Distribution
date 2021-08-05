@@ -23,31 +23,23 @@ trait TokenValidityUnitsType extends StObject {
 }
 object TokenValidityUnitsType {
   
-  @scala.inline
-  def apply(): TokenValidityUnitsType = {
+  inline def apply(): TokenValidityUnitsType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TokenValidityUnitsType]
   }
   
-  @scala.inline
-  implicit class TokenValidityUnitsTypeMutableBuilder[Self <: TokenValidityUnitsType] (val x: Self) extends AnyVal {
+  extension [Self <: TokenValidityUnitsType](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: TimeUnitsType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: TimeUnitsType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenUndefined: Self = StObject.set(x, "AccessToken", js.undefined)
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "AccessToken", js.undefined)
     
-    @scala.inline
-    def setIdToken(value: TimeUnitsType): Self = StObject.set(x, "IdToken", value.asInstanceOf[js.Any])
+    inline def setIdToken(value: TimeUnitsType): Self = StObject.set(x, "IdToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdTokenUndefined: Self = StObject.set(x, "IdToken", js.undefined)
+    inline def setIdTokenUndefined: Self = StObject.set(x, "IdToken", js.undefined)
     
-    @scala.inline
-    def setRefreshToken(value: TimeUnitsType): Self = StObject.set(x, "RefreshToken", value.asInstanceOf[js.Any])
+    inline def setRefreshToken(value: TimeUnitsType): Self = StObject.set(x, "RefreshToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshTokenUndefined: Self = StObject.set(x, "RefreshToken", js.undefined)
+    inline def setRefreshTokenUndefined: Self = StObject.set(x, "RefreshToken", js.undefined)
   }
 }

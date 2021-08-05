@@ -21,7 +21,7 @@ object regexInspectorMod {
     /* CompleteClass */
     override def getDependencies(func: js.Function): js.Array[Dependency] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var getParameterNames: js.Any = js.native
   }
   
@@ -29,12 +29,11 @@ object regexInspectorMod {
     extends StObject
        with Inspector {
     
-    var getParameterNames: js.Any
+    /* private */ var getParameterNames: js.Any
   }
   object RegexInspector {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       findConstructor: Constructor => Constructor,
       getDependencies: js.Function => js.Array[Dependency],
       getParameterNames: js.Any
@@ -43,11 +42,9 @@ object regexInspectorMod {
       __obj.asInstanceOf[RegexInspector]
     }
     
-    @scala.inline
-    implicit class RegexInspectorMutableBuilder[Self <: RegexInspector] (val x: Self) extends AnyVal {
+    extension [Self <: RegexInspector](x: Self) {
       
-      @scala.inline
-      def setGetParameterNames(value: js.Any): Self = StObject.set(x, "getParameterNames", value.asInstanceOf[js.Any])
+      inline def setGetParameterNames(value: js.Any): Self = StObject.set(x, "getParameterNames", value.asInstanceOf[js.Any])
     }
   }
 }

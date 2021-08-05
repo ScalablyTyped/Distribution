@@ -12,7 +12,7 @@ trait Relation extends StObject {
   def CreateField(): Field = js.native
   def CreateField(Name: String): Field = js.native
   
-  @JSName("DAO.Relation_typekey")
+  /* private */ @JSName("DAO.Relation_typekey")
   var DAODotRelation_typekey: Relation = js.native
   
   def Fields(Item: String): Field = js.native

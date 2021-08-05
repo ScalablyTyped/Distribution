@@ -18,19 +18,15 @@ trait Intent extends StObject {
 }
 object Intent {
   
-  @scala.inline
-  def apply(intentName: IntentName, intentVersion: Version): Intent = {
+  inline def apply(intentName: IntentName, intentVersion: Version): Intent = {
     val __obj = js.Dynamic.literal(intentName = intentName.asInstanceOf[js.Any], intentVersion = intentVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Intent]
   }
   
-  @scala.inline
-  implicit class IntentMutableBuilder[Self <: Intent] (val x: Self) extends AnyVal {
+  extension [Self <: Intent](x: Self) {
     
-    @scala.inline
-    def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
+    inline def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentVersion(value: Version): Self = StObject.set(x, "intentVersion", value.asInstanceOf[js.Any])
+    inline def setIntentVersion(value: Version): Self = StObject.set(x, "intentVersion", value.asInstanceOf[js.Any])
   }
 }

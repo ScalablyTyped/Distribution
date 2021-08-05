@@ -10,19 +10,15 @@ trait PlotIkhKijunLineOptions extends StObject {
 }
 object PlotIkhKijunLineOptions {
   
-  @scala.inline
-  def apply(): PlotIkhKijunLineOptions = {
+  inline def apply(): PlotIkhKijunLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotIkhKijunLineOptions]
   }
   
-  @scala.inline
-  implicit class PlotIkhKijunLineOptionsMutableBuilder[Self <: PlotIkhKijunLineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotIkhKijunLineOptions](x: Self) {
     
-    @scala.inline
-    def setStyles(value: PlotIkhKijunLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: PlotIkhKijunLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

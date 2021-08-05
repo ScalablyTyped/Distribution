@@ -11,22 +11,17 @@ trait BatchDeleteMessagesRequest extends StObject {
 }
 object BatchDeleteMessagesRequest {
   
-  @scala.inline
-  def apply(): BatchDeleteMessagesRequest = {
+  inline def apply(): BatchDeleteMessagesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDeleteMessagesRequest]
   }
   
-  @scala.inline
-  implicit class BatchDeleteMessagesRequestMutableBuilder[Self <: BatchDeleteMessagesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteMessagesRequest](x: Self) {
     
-    @scala.inline
-    def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    @scala.inline
-    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
   }
 }

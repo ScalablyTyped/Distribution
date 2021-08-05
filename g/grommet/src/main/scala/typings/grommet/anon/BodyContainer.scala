@@ -17,37 +17,27 @@ trait BodyContainer extends StObject {
 }
 object BodyContainer {
   
-  @scala.inline
-  def apply(): BodyContainer = {
+  inline def apply(): BodyContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BodyContainer]
   }
   
-  @scala.inline
-  implicit class BodyContainerMutableBuilder[Self <: BodyContainer] (val x: Self) extends AnyVal {
+  extension [Self <: BodyContainer](x: Self) {
     
-    @scala.inline
-    def setBody(value: BoxProps): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: BoxProps): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setContainer(value: BoxProps): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: BoxProps): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setFooter(value: BoxProps): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: BoxProps): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+    inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
-    @scala.inline
-    def setHeader(value: BoxProps): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: BoxProps): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
   }
 }

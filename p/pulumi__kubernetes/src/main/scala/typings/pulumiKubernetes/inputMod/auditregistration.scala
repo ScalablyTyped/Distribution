@@ -35,38 +35,28 @@ object auditregistration {
     }
     object AuditSink {
       
-      @scala.inline
-      def apply(): AuditSink = {
+      inline def apply(): AuditSink = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AuditSink]
       }
       
-      @scala.inline
-      implicit class AuditSinkMutableBuilder[Self <: AuditSink] (val x: Self) extends AnyVal {
+      extension [Self <: AuditSink](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: Input[auditregistrationDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: Input[auditregistrationDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+        inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
         
-        @scala.inline
-        def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.AuditSink]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.AuditSink]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setSpec(value: Input[AuditSinkSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+        inline def setSpec(value: Input[AuditSinkSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+        inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
       }
     }
     
@@ -87,20 +77,16 @@ object auditregistration {
     }
     object AuditSinkSpec {
       
-      @scala.inline
-      def apply(policy: Input[Policy], webhook: Input[Webhook]): AuditSinkSpec = {
+      inline def apply(policy: Input[Policy], webhook: Input[Webhook]): AuditSinkSpec = {
         val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], webhook = webhook.asInstanceOf[js.Any])
         __obj.asInstanceOf[AuditSinkSpec]
       }
       
-      @scala.inline
-      implicit class AuditSinkSpecMutableBuilder[Self <: AuditSinkSpec] (val x: Self) extends AnyVal {
+      extension [Self <: AuditSinkSpec](x: Self) {
         
-        @scala.inline
-        def setPolicy(value: Input[Policy]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+        inline def setPolicy(value: Input[Policy]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebhook(value: Input[Webhook]): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
+        inline def setWebhook(value: Input[Webhook]): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
       }
     }
     
@@ -121,26 +107,20 @@ object auditregistration {
     }
     object Policy {
       
-      @scala.inline
-      def apply(level: Input[String]): Policy = {
+      inline def apply(level: Input[String]): Policy = {
         val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
         __obj.asInstanceOf[Policy]
       }
       
-      @scala.inline
-      implicit class PolicyMutableBuilder[Self <: Policy] (val x: Self) extends AnyVal {
+      extension [Self <: Policy](x: Self) {
         
-        @scala.inline
-        def setLevel(value: Input[String]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+        inline def setLevel(value: Input[String]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStages(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
+        inline def setStages(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
+        inline def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
         
-        @scala.inline
-        def setStagesVarargs(value: Input[String]*): Self = StObject.set(x, "stages", js.Array(value :_*))
+        inline def setStagesVarargs(value: Input[String]*): Self = StObject.set(x, "stages", js.Array(value :_*))
       }
     }
     
@@ -171,32 +151,24 @@ object auditregistration {
     }
     object ServiceReference {
       
-      @scala.inline
-      def apply(name: Input[String], namespace: Input[String]): ServiceReference = {
+      inline def apply(name: Input[String], namespace: Input[String]): ServiceReference = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
         __obj.asInstanceOf[ServiceReference]
       }
       
-      @scala.inline
-      implicit class ServiceReferenceMutableBuilder[Self <: ServiceReference] (val x: Self) extends AnyVal {
+      extension [Self <: ServiceReference](x: Self) {
         
-        @scala.inline
-        def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+        inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+        inline def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+        inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       }
     }
     
@@ -217,23 +189,18 @@ object auditregistration {
     }
     object Webhook {
       
-      @scala.inline
-      def apply(clientConfig: Input[WebhookClientConfig]): Webhook = {
+      inline def apply(clientConfig: Input[WebhookClientConfig]): Webhook = {
         val __obj = js.Dynamic.literal(clientConfig = clientConfig.asInstanceOf[js.Any])
         __obj.asInstanceOf[Webhook]
       }
       
-      @scala.inline
-      implicit class WebhookMutableBuilder[Self <: Webhook] (val x: Self) extends AnyVal {
+      extension [Self <: Webhook](x: Self) {
         
-        @scala.inline
-        def setClientConfig(value: Input[WebhookClientConfig]): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
+        inline def setClientConfig(value: Input[WebhookClientConfig]): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThrottle(value: Input[WebhookThrottleConfig]): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+        inline def setThrottle(value: Input[WebhookThrottleConfig]): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
+        inline def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
       }
     }
     
@@ -271,32 +238,24 @@ object auditregistration {
     }
     object WebhookClientConfig {
       
-      @scala.inline
-      def apply(): WebhookClientConfig = {
+      inline def apply(): WebhookClientConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[WebhookClientConfig]
       }
       
-      @scala.inline
-      implicit class WebhookClientConfigMutableBuilder[Self <: WebhookClientConfig] (val x: Self) extends AnyVal {
+      extension [Self <: WebhookClientConfig](x: Self) {
         
-        @scala.inline
-        def setCaBundle(value: Input[String]): Self = StObject.set(x, "caBundle", value.asInstanceOf[js.Any])
+        inline def setCaBundle(value: Input[String]): Self = StObject.set(x, "caBundle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCaBundleUndefined: Self = StObject.set(x, "caBundle", js.undefined)
+        inline def setCaBundleUndefined: Self = StObject.set(x, "caBundle", js.undefined)
         
-        @scala.inline
-        def setService(value: Input[ServiceReference]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+        inline def setService(value: Input[ServiceReference]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+        inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
         
-        @scala.inline
-        def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+        inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       }
     }
     
@@ -317,26 +276,20 @@ object auditregistration {
     }
     object WebhookThrottleConfig {
       
-      @scala.inline
-      def apply(): WebhookThrottleConfig = {
+      inline def apply(): WebhookThrottleConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[WebhookThrottleConfig]
       }
       
-      @scala.inline
-      implicit class WebhookThrottleConfigMutableBuilder[Self <: WebhookThrottleConfig] (val x: Self) extends AnyVal {
+      extension [Self <: WebhookThrottleConfig](x: Self) {
         
-        @scala.inline
-        def setBurst(value: Input[Double]): Self = StObject.set(x, "burst", value.asInstanceOf[js.Any])
+        inline def setBurst(value: Input[Double]): Self = StObject.set(x, "burst", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBurstUndefined: Self = StObject.set(x, "burst", js.undefined)
+        inline def setBurstUndefined: Self = StObject.set(x, "burst", js.undefined)
         
-        @scala.inline
-        def setQps(value: Input[Double]): Self = StObject.set(x, "qps", value.asInstanceOf[js.Any])
+        inline def setQps(value: Input[Double]): Self = StObject.set(x, "qps", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQpsUndefined: Self = StObject.set(x, "qps", js.undefined)
+        inline def setQpsUndefined: Self = StObject.set(x, "qps", js.undefined)
       }
     }
   }

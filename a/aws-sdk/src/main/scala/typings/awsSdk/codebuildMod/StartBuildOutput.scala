@@ -13,19 +13,15 @@ trait StartBuildOutput extends StObject {
 }
 object StartBuildOutput {
   
-  @scala.inline
-  def apply(): StartBuildOutput = {
+  inline def apply(): StartBuildOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartBuildOutput]
   }
   
-  @scala.inline
-  implicit class StartBuildOutputMutableBuilder[Self <: StartBuildOutput] (val x: Self) extends AnyVal {
+  extension [Self <: StartBuildOutput](x: Self) {
     
-    @scala.inline
-    def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+    inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
   }
 }

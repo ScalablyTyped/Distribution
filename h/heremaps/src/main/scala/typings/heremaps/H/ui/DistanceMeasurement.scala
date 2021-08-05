@@ -36,53 +36,38 @@ object DistanceMeasurement {
   }
   object Options {
     
-    @scala.inline
-    def apply(lineStyle: SpatialStyle | typings.heremaps.H.map.SpatialStyle.Options): Options = {
+    inline def apply(lineStyle: SpatialStyle | typings.heremaps.H.map.SpatialStyle.Options): Options = {
       val __obj = js.Dynamic.literal(lineStyle = lineStyle.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlignment(value: LayoutAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+      inline def setAlignment(value: LayoutAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+      inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
-      @scala.inline
-      def setDistanceFormatter(value: /* n */ Double => Unit): Self = StObject.set(x, "distanceFormatter", js.Any.fromFunction1(value))
+      inline def setDistanceFormatter(value: /* n */ Double => Unit): Self = StObject.set(x, "distanceFormatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDistanceFormatterUndefined: Self = StObject.set(x, "distanceFormatter", js.undefined)
+      inline def setDistanceFormatterUndefined: Self = StObject.set(x, "distanceFormatter", js.undefined)
       
-      @scala.inline
-      def setEndIcon(value: Icon): Self = StObject.set(x, "endIcon", value.asInstanceOf[js.Any])
+      inline def setEndIcon(value: Icon): Self = StObject.set(x, "endIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndIconUndefined: Self = StObject.set(x, "endIcon", js.undefined)
+      inline def setEndIconUndefined: Self = StObject.set(x, "endIcon", js.undefined)
       
-      @scala.inline
-      def setLineStyle(value: SpatialStyle | typings.heremaps.H.map.SpatialStyle.Options): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+      inline def setLineStyle(value: SpatialStyle | typings.heremaps.H.map.SpatialStyle.Options): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitIcon(value: Icon): Self = StObject.set(x, "splitIcon", value.asInstanceOf[js.Any])
+      inline def setSplitIcon(value: Icon): Self = StObject.set(x, "splitIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitIconUndefined: Self = StObject.set(x, "splitIcon", js.undefined)
+      inline def setSplitIconUndefined: Self = StObject.set(x, "splitIcon", js.undefined)
       
-      @scala.inline
-      def setStartIcon(value: Icon): Self = StObject.set(x, "startIcon", value.asInstanceOf[js.Any])
+      inline def setStartIcon(value: Icon): Self = StObject.set(x, "startIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartIconUndefined: Self = StObject.set(x, "startIcon", js.undefined)
+      inline def setStartIconUndefined: Self = StObject.set(x, "startIcon", js.undefined)
       
-      @scala.inline
-      def setStopoverIcon(value: Icon): Self = StObject.set(x, "stopoverIcon", value.asInstanceOf[js.Any])
+      inline def setStopoverIcon(value: Icon): Self = StObject.set(x, "stopoverIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopoverIconUndefined: Self = StObject.set(x, "stopoverIcon", js.undefined)
+      inline def setStopoverIconUndefined: Self = StObject.set(x, "stopoverIcon", js.undefined)
     }
   }
 }

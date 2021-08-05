@@ -12,8 +12,7 @@ object tapStopToDisconnectReporterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def tapStopToDisconnectReporter(
+  inline def tapStopToDisconnectReporter(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
     reporter: ReporterRpcClient,
     state: ForkTsCheckerWebpackPluginState

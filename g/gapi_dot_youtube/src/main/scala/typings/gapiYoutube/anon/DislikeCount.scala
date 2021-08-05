@@ -33,8 +33,7 @@ trait DislikeCount extends StObject {
 }
 object DislikeCount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commentCount: Double,
     dislikeCount: Double,
     favoriteCount: Double,
@@ -45,22 +44,16 @@ object DislikeCount {
     __obj.asInstanceOf[DislikeCount]
   }
   
-  @scala.inline
-  implicit class DislikeCountMutableBuilder[Self <: DislikeCount] (val x: Self) extends AnyVal {
+  extension [Self <: DislikeCount](x: Self) {
     
-    @scala.inline
-    def setCommentCount(value: Double): Self = StObject.set(x, "commentCount", value.asInstanceOf[js.Any])
+    inline def setCommentCount(value: Double): Self = StObject.set(x, "commentCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDislikeCount(value: Double): Self = StObject.set(x, "dislikeCount", value.asInstanceOf[js.Any])
+    inline def setDislikeCount(value: Double): Self = StObject.set(x, "dislikeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFavoriteCount(value: Double): Self = StObject.set(x, "favoriteCount", value.asInstanceOf[js.Any])
+    inline def setFavoriteCount(value: Double): Self = StObject.set(x, "favoriteCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLikeCount(value: Double): Self = StObject.set(x, "likeCount", value.asInstanceOf[js.Any])
+    inline def setLikeCount(value: Double): Self = StObject.set(x, "likeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewCount(value: Double): Self = StObject.set(x, "viewCount", value.asInstanceOf[js.Any])
+    inline def setViewCount(value: Double): Self = StObject.set(x, "viewCount", value.asInstanceOf[js.Any])
   }
 }

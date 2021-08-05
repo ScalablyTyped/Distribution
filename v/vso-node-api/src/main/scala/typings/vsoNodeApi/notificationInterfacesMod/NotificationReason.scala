@@ -13,22 +13,17 @@ trait NotificationReason extends StObject {
 }
 object NotificationReason {
   
-  @scala.inline
-  def apply(notificationReasonType: NotificationReasonType, targetIdentities: js.Array[IdentityRef]): NotificationReason = {
+  inline def apply(notificationReasonType: NotificationReasonType, targetIdentities: js.Array[IdentityRef]): NotificationReason = {
     val __obj = js.Dynamic.literal(notificationReasonType = notificationReasonType.asInstanceOf[js.Any], targetIdentities = targetIdentities.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationReason]
   }
   
-  @scala.inline
-  implicit class NotificationReasonMutableBuilder[Self <: NotificationReason] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationReason](x: Self) {
     
-    @scala.inline
-    def setNotificationReasonType(value: NotificationReasonType): Self = StObject.set(x, "notificationReasonType", value.asInstanceOf[js.Any])
+    inline def setNotificationReasonType(value: NotificationReasonType): Self = StObject.set(x, "notificationReasonType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdentities(value: js.Array[IdentityRef]): Self = StObject.set(x, "targetIdentities", value.asInstanceOf[js.Any])
+    inline def setTargetIdentities(value: js.Array[IdentityRef]): Self = StObject.set(x, "targetIdentities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdentitiesVarargs(value: IdentityRef*): Self = StObject.set(x, "targetIdentities", js.Array(value :_*))
+    inline def setTargetIdentitiesVarargs(value: IdentityRef*): Self = StObject.set(x, "targetIdentities", js.Array(value :_*))
   }
 }

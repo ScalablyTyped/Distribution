@@ -16,19 +16,15 @@ trait SimpleOrientationSensorOrientationChangedEventArgs extends StObject {
 }
 object SimpleOrientationSensorOrientationChangedEventArgs {
   
-  @scala.inline
-  def apply(orientation: SimpleOrientation, timestamp: Date): SimpleOrientationSensorOrientationChangedEventArgs = {
+  inline def apply(orientation: SimpleOrientation, timestamp: Date): SimpleOrientationSensorOrientationChangedEventArgs = {
     val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleOrientationSensorOrientationChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class SimpleOrientationSensorOrientationChangedEventArgsMutableBuilder[Self <: SimpleOrientationSensorOrientationChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleOrientationSensorOrientationChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setOrientation(value: SimpleOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: SimpleOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

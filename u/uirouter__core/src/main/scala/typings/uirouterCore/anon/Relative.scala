@@ -11,19 +11,15 @@ trait Relative extends StObject {
 }
 object Relative {
   
-  @scala.inline
-  def apply(): Relative = {
+  inline def apply(): Relative = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Relative]
   }
   
-  @scala.inline
-  implicit class RelativeMutableBuilder[Self <: Relative] (val x: Self) extends AnyVal {
+  extension [Self <: Relative](x: Self) {
     
-    @scala.inline
-    def setRelative(value: StateOrName): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+    inline def setRelative(value: StateOrName): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
+    inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
   }
 }

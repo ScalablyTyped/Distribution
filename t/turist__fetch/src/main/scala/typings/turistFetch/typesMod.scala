@@ -39,46 +39,34 @@ object typesMod {
   }
   object FetchOptions {
     
-    @scala.inline
-    def apply(): FetchOptions = {
+    inline def apply(): FetchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FetchOptions]
     }
     
-    @scala.inline
-    implicit class FetchOptionsMutableBuilder[Self <: FetchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FetchOptions](x: Self) {
       
-      @scala.inline
-      def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setOnRedirect(value: (/* res */ Response, FetchOptions) => Unit): Self = StObject.set(x, "onRedirect", js.Any.fromFunction2(value))
+      inline def setOnRedirect(value: (/* res */ Response, FetchOptions) => Unit): Self = StObject.set(x, "onRedirect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRedirectUndefined: Self = StObject.set(x, "onRedirect", js.undefined)
+      inline def setOnRedirectUndefined: Self = StObject.set(x, "onRedirect", js.undefined)
       
-      @scala.inline
-      def setOnRetry(value: (/* error */ default, FetchOptions) => Unit): Self = StObject.set(x, "onRetry", js.Any.fromFunction2(value))
+      inline def setOnRetry(value: (/* error */ default, FetchOptions) => Unit): Self = StObject.set(x, "onRetry", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRetryUndefined: Self = StObject.set(x, "onRetry", js.undefined)
+      inline def setOnRetryUndefined: Self = StObject.set(x, "onRetry", js.undefined)
       
-      @scala.inline
-      def setRetry(
+      inline def setRetry(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RetryOptions */ js.Any
       ): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+      inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     }
   }
 }

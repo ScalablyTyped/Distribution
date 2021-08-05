@@ -35,22 +35,17 @@ trait SearchResult extends StObject {
 }
 object SearchResult {
   
-  @scala.inline
-  def apply(endOffset: SafeArray[Double], startOffset: SafeArray[Double], subRegExpressions: Double): SearchResult = {
+  inline def apply(endOffset: SafeArray[Double], startOffset: SafeArray[Double], subRegExpressions: Double): SearchResult = {
     val __obj = js.Dynamic.literal(endOffset = endOffset.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any], subRegExpressions = subRegExpressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResult]
   }
   
-  @scala.inline
-  implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
+  extension [Self <: SearchResult](x: Self) {
     
-    @scala.inline
-    def setEndOffset(value: SafeArray[Double]): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
+    inline def setEndOffset(value: SafeArray[Double]): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartOffset(value: SafeArray[Double]): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
+    inline def setStartOffset(value: SafeArray[Double]): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubRegExpressions(value: Double): Self = StObject.set(x, "subRegExpressions", value.asInstanceOf[js.Any])
+    inline def setSubRegExpressions(value: Double): Self = StObject.set(x, "subRegExpressions", value.asInstanceOf[js.Any])
   }
 }

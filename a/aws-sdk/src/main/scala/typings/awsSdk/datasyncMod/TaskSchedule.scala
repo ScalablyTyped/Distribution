@@ -13,16 +13,13 @@ trait TaskSchedule extends StObject {
 }
 object TaskSchedule {
   
-  @scala.inline
-  def apply(ScheduleExpression: ScheduleExpressionCron): TaskSchedule = {
+  inline def apply(ScheduleExpression: ScheduleExpressionCron): TaskSchedule = {
     val __obj = js.Dynamic.literal(ScheduleExpression = ScheduleExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskSchedule]
   }
   
-  @scala.inline
-  implicit class TaskScheduleMutableBuilder[Self <: TaskSchedule] (val x: Self) extends AnyVal {
+  extension [Self <: TaskSchedule](x: Self) {
     
-    @scala.inline
-    def setScheduleExpression(value: ScheduleExpressionCron): Self = StObject.set(x, "ScheduleExpression", value.asInstanceOf[js.Any])
+    inline def setScheduleExpression(value: ScheduleExpressionCron): Self = StObject.set(x, "ScheduleExpression", value.asInstanceOf[js.Any])
   }
 }

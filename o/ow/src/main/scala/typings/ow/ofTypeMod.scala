@@ -13,10 +13,7 @@ object ofTypeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](source: js.Array[T], predicate: Predicate[T]): String | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[String | Boolean]
-  @scala.inline
-  def default[T](source: IterableIterator[T], predicate: Predicate[T]): String | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[String | Boolean]
-  @scala.inline
-  def default[T](source: Set[T], predicate: Predicate[T]): String | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[String | Boolean]
+  inline def default[T](source: js.Array[T], predicate: Predicate[T]): String | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[String | Boolean]
+  inline def default[T](source: IterableIterator[T], predicate: Predicate[T]): String | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[String | Boolean]
+  inline def default[T](source: Set[T], predicate: Predicate[T]): String | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[String | Boolean]
 }

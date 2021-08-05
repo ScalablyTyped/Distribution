@@ -18,26 +18,20 @@ trait PlaybackTimeUpdatedEvent
 }
 object PlaybackTimeUpdatedEvent {
   
-  @scala.inline
-  def apply(timeToEnd: Double): PlaybackTimeUpdatedEvent = {
+  inline def apply(timeToEnd: Double): PlaybackTimeUpdatedEvent = {
     val __obj = js.Dynamic.literal(timeToEnd = timeToEnd.asInstanceOf[js.Any], time = null)
     __obj.updateDynamic("type")("playbackTimeUpdated")
     __obj.asInstanceOf[PlaybackTimeUpdatedEvent]
   }
   
-  @scala.inline
-  implicit class PlaybackTimeUpdatedEventMutableBuilder[Self <: PlaybackTimeUpdatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PlaybackTimeUpdatedEvent](x: Self) {
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeNull: Self = StObject.set(x, "time", null)
+    inline def setTimeNull: Self = StObject.set(x, "time", null)
     
-    @scala.inline
-    def setTimeToEnd(value: Double): Self = StObject.set(x, "timeToEnd", value.asInstanceOf[js.Any])
+    inline def setTimeToEnd(value: Double): Self = StObject.set(x, "timeToEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: playbackTimeUpdated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: playbackTimeUpdated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

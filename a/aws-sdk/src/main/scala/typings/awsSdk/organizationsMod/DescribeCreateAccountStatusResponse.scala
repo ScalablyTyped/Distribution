@@ -13,19 +13,15 @@ trait DescribeCreateAccountStatusResponse extends StObject {
 }
 object DescribeCreateAccountStatusResponse {
   
-  @scala.inline
-  def apply(): DescribeCreateAccountStatusResponse = {
+  inline def apply(): DescribeCreateAccountStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCreateAccountStatusResponse]
   }
   
-  @scala.inline
-  implicit class DescribeCreateAccountStatusResponseMutableBuilder[Self <: DescribeCreateAccountStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCreateAccountStatusResponse](x: Self) {
     
-    @scala.inline
-    def setCreateAccountStatus(value: CreateAccountStatus): Self = StObject.set(x, "CreateAccountStatus", value.asInstanceOf[js.Any])
+    inline def setCreateAccountStatus(value: CreateAccountStatus): Self = StObject.set(x, "CreateAccountStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateAccountStatusUndefined: Self = StObject.set(x, "CreateAccountStatus", js.undefined)
+    inline def setCreateAccountStatusUndefined: Self = StObject.set(x, "CreateAccountStatus", js.undefined)
   }
 }

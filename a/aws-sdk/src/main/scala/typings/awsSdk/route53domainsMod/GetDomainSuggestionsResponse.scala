@@ -13,22 +13,17 @@ trait GetDomainSuggestionsResponse extends StObject {
 }
 object GetDomainSuggestionsResponse {
   
-  @scala.inline
-  def apply(): GetDomainSuggestionsResponse = {
+  inline def apply(): GetDomainSuggestionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDomainSuggestionsResponse]
   }
   
-  @scala.inline
-  implicit class GetDomainSuggestionsResponseMutableBuilder[Self <: GetDomainSuggestionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDomainSuggestionsResponse](x: Self) {
     
-    @scala.inline
-    def setSuggestionsList(value: DomainSuggestionsList): Self = StObject.set(x, "SuggestionsList", value.asInstanceOf[js.Any])
+    inline def setSuggestionsList(value: DomainSuggestionsList): Self = StObject.set(x, "SuggestionsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionsListUndefined: Self = StObject.set(x, "SuggestionsList", js.undefined)
+    inline def setSuggestionsListUndefined: Self = StObject.set(x, "SuggestionsList", js.undefined)
     
-    @scala.inline
-    def setSuggestionsListVarargs(value: DomainSuggestion*): Self = StObject.set(x, "SuggestionsList", js.Array(value :_*))
+    inline def setSuggestionsListVarargs(value: DomainSuggestion*): Self = StObject.set(x, "SuggestionsList", js.Array(value :_*))
   }
 }

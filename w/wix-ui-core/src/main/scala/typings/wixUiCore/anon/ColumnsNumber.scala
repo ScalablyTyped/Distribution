@@ -10,16 +10,13 @@ trait ColumnsNumber extends StObject {
 }
 object ColumnsNumber {
   
-  @scala.inline
-  def apply(columns: Double): ColumnsNumber = {
+  inline def apply(columns: Double): ColumnsNumber = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnsNumber]
   }
   
-  @scala.inline
-  implicit class ColumnsNumberMutableBuilder[Self <: ColumnsNumber] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnsNumber](x: Self) {
     
-    @scala.inline
-    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
   }
 }

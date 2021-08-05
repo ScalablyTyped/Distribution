@@ -18,22 +18,17 @@ trait EncryptionConfiguration extends StObject {
 }
 object EncryptionConfiguration {
   
-  @scala.inline
-  def apply(encryptionType: EncryptionType): EncryptionConfiguration = {
+  inline def apply(encryptionType: EncryptionType): EncryptionConfiguration = {
     val __obj = js.Dynamic.literal(encryptionType = encryptionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionConfiguration]
   }
   
-  @scala.inline
-  implicit class EncryptionConfigurationMutableBuilder[Self <: EncryptionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionConfiguration](x: Self) {
     
-    @scala.inline
-    def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
+    inline def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKey(value: KmsKey): Self = StObject.set(x, "kmsKey", value.asInstanceOf[js.Any])
+    inline def setKmsKey(value: KmsKey): Self = StObject.set(x, "kmsKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyUndefined: Self = StObject.set(x, "kmsKey", js.undefined)
+    inline def setKmsKeyUndefined: Self = StObject.set(x, "kmsKey", js.undefined)
   }
 }

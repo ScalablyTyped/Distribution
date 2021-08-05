@@ -20,8 +20,7 @@ trait RoomEvents extends StObject {
 }
 object RoomEvents {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowUserCountChance: Boolean,
     allowUserEnter: Boolean,
     allowUserExit: Boolean,
@@ -31,19 +30,14 @@ object RoomEvents {
     __obj.asInstanceOf[RoomEvents]
   }
   
-  @scala.inline
-  implicit class RoomEventsMutableBuilder[Self <: RoomEvents] (val x: Self) extends AnyVal {
+  extension [Self <: RoomEvents](x: Self) {
     
-    @scala.inline
-    def setAllowUserCountChance(value: Boolean): Self = StObject.set(x, "allowUserCountChance", value.asInstanceOf[js.Any])
+    inline def setAllowUserCountChance(value: Boolean): Self = StObject.set(x, "allowUserCountChance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUserEnter(value: Boolean): Self = StObject.set(x, "allowUserEnter", value.asInstanceOf[js.Any])
+    inline def setAllowUserEnter(value: Boolean): Self = StObject.set(x, "allowUserEnter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUserExit(value: Boolean): Self = StObject.set(x, "allowUserExit", value.asInstanceOf[js.Any])
+    inline def setAllowUserExit(value: Boolean): Self = StObject.set(x, "allowUserExit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUserVariablesUpdate(value: Boolean): Self = StObject.set(x, "allowUserVariablesUpdate", value.asInstanceOf[js.Any])
+    inline def setAllowUserVariablesUpdate(value: Boolean): Self = StObject.set(x, "allowUserVariablesUpdate", value.asInstanceOf[js.Any])
   }
 }

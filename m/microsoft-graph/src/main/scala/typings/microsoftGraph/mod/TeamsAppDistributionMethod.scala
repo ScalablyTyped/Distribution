@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TeamsAppDistributionMethod extends StObject
 object TeamsAppDistributionMethod {
   
-  @scala.inline
-  def organization: typings.microsoftGraph.microsoftGraphStrings.organization = "organization".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.organization]
+  inline def organization: typings.microsoftGraph.microsoftGraphStrings.organization = "organization".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.organization]
   
-  @scala.inline
-  def sideloaded: typings.microsoftGraph.microsoftGraphStrings.sideloaded = "sideloaded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sideloaded]
+  inline def sideloaded: typings.microsoftGraph.microsoftGraphStrings.sideloaded = "sideloaded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sideloaded]
   
-  @scala.inline
-  def store: typings.microsoftGraph.microsoftGraphStrings.store = "store".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.store]
+  inline def store: typings.microsoftGraph.microsoftGraphStrings.store = "store".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.store]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

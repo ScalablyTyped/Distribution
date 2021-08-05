@@ -24,28 +24,21 @@ trait TimedTextPadding extends StObject {
 }
 object TimedTextPadding {
   
-  @scala.inline
-  def apply(after: Double, before: Double, end: Double, start: Double, unit: TimedTextUnit): TimedTextPadding = {
+  inline def apply(after: Double, before: Double, end: Double, start: Double, unit: TimedTextUnit): TimedTextPadding = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimedTextPadding]
   }
   
-  @scala.inline
-  implicit class TimedTextPaddingMutableBuilder[Self <: TimedTextPadding] (val x: Self) extends AnyVal {
+  extension [Self <: TimedTextPadding](x: Self) {
     
-    @scala.inline
-    def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBefore(value: Double): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    inline def setBefore(value: Double): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit(value: TimedTextUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: TimedTextUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
   }
 }

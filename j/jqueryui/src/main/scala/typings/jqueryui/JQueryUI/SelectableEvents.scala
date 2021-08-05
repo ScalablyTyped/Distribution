@@ -25,49 +25,35 @@ trait SelectableEvents extends StObject {
 }
 object SelectableEvents {
   
-  @scala.inline
-  def apply(): SelectableEvents = {
+  inline def apply(): SelectableEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectableEvents]
   }
   
-  @scala.inline
-  implicit class SelectableEventsMutableBuilder[Self <: SelectableEvents] (val x: Self) extends AnyVal {
+  extension [Self <: SelectableEvents](x: Self) {
     
-    @scala.inline
-    def setSelected(value: (/* event */ JQueryEventObject, /* ui */ Selected) => Unit): Self = StObject.set(x, "selected", js.Any.fromFunction2(value))
+    inline def setSelected(value: (/* event */ JQueryEventObject, /* ui */ Selected) => Unit): Self = StObject.set(x, "selected", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    @scala.inline
-    def setSelecting(value: (/* event */ JQueryEventObject, /* ui */ Selecting) => Unit): Self = StObject.set(x, "selecting", js.Any.fromFunction2(value))
+    inline def setSelecting(value: (/* event */ JQueryEventObject, /* ui */ Selecting) => Unit): Self = StObject.set(x, "selecting", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSelectingUndefined: Self = StObject.set(x, "selecting", js.undefined)
+    inline def setSelectingUndefined: Self = StObject.set(x, "selecting", js.undefined)
     
-    @scala.inline
-    def setStart(value: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+    inline def setStart(value: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setStop(value: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction2(value))
+    inline def setStop(value: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     
-    @scala.inline
-    def setUnselected(value: (/* event */ JQueryEventObject, /* ui */ Unselected) => Unit): Self = StObject.set(x, "unselected", js.Any.fromFunction2(value))
+    inline def setUnselected(value: (/* event */ JQueryEventObject, /* ui */ Unselected) => Unit): Self = StObject.set(x, "unselected", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnselectedUndefined: Self = StObject.set(x, "unselected", js.undefined)
+    inline def setUnselectedUndefined: Self = StObject.set(x, "unselected", js.undefined)
     
-    @scala.inline
-    def setUnselecting(value: (/* event */ JQueryEventObject, /* ui */ Unselecting) => Unit): Self = StObject.set(x, "unselecting", js.Any.fromFunction2(value))
+    inline def setUnselecting(value: (/* event */ JQueryEventObject, /* ui */ Unselecting) => Unit): Self = StObject.set(x, "unselecting", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnselectingUndefined: Self = StObject.set(x, "unselecting", js.undefined)
+    inline def setUnselectingUndefined: Self = StObject.set(x, "unselecting", js.undefined)
   }
 }

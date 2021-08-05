@@ -10,19 +10,15 @@ trait `11` extends StObject {
 }
 object `11` {
   
-  @scala.inline
-  def apply(): `11` = {
+  inline def apply(): `11` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`11`]
   }
   
-  @scala.inline
-  implicit class `11MutableBuilder`[Self <: `11`] (val x: Self) extends AnyVal {
+  extension [Self <: `11`](x: Self) {
     
-    @scala.inline
-    def setBreakpoints(value: js.Object): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+    inline def setBreakpoints(value: js.Object): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
+    inline def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
   }
 }

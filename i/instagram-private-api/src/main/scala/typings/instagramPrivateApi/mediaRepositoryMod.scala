@@ -41,7 +41,7 @@ object mediaRepositoryMod {
   class MediaRepository protected () extends Repository {
     def this(client: IgApiClient) = this()
     
-    var applyConfigureDefaults: js.Any = js.native
+    /* private */ var applyConfigureDefaults: js.Any = js.native
     
     def blocked(): js.Promise[js.Array[String]] = js.native
     
@@ -76,7 +76,7 @@ object mediaRepositoryMod {
     
     def like(options: LikeRequestOptions): js.Promise[js.Any] = js.native
     
-    var likeAction: js.Any = js.native
+    /* private */ var likeAction: js.Any = js.native
     
     def likeComment(commentId: String): js.Promise[js.Any] = js.native
     
@@ -145,7 +145,6 @@ object mediaRepositoryMod {
     @JSImport("instagram-private-api/dist/repositories/media.repository", "MediaRepository.stringifyStoryStickers")
     @js.native
     def stringifyStoryStickers: js.Any = js.native
-    @scala.inline
-    def stringifyStoryStickers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stringifyStoryStickers")(x.asInstanceOf[js.Any])
+    inline def stringifyStoryStickers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stringifyStoryStickers")(x.asInstanceOf[js.Any])
   }
 }

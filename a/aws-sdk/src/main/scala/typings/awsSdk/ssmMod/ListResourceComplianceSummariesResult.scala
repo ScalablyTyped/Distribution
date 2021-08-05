@@ -18,28 +18,21 @@ trait ListResourceComplianceSummariesResult extends StObject {
 }
 object ListResourceComplianceSummariesResult {
   
-  @scala.inline
-  def apply(): ListResourceComplianceSummariesResult = {
+  inline def apply(): ListResourceComplianceSummariesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListResourceComplianceSummariesResult]
   }
   
-  @scala.inline
-  implicit class ListResourceComplianceSummariesResultMutableBuilder[Self <: ListResourceComplianceSummariesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListResourceComplianceSummariesResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceComplianceSummaryItems(value: ResourceComplianceSummaryItemList): Self = StObject.set(x, "ResourceComplianceSummaryItems", value.asInstanceOf[js.Any])
+    inline def setResourceComplianceSummaryItems(value: ResourceComplianceSummaryItemList): Self = StObject.set(x, "ResourceComplianceSummaryItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceComplianceSummaryItemsUndefined: Self = StObject.set(x, "ResourceComplianceSummaryItems", js.undefined)
+    inline def setResourceComplianceSummaryItemsUndefined: Self = StObject.set(x, "ResourceComplianceSummaryItems", js.undefined)
     
-    @scala.inline
-    def setResourceComplianceSummaryItemsVarargs(value: ResourceComplianceSummaryItem*): Self = StObject.set(x, "ResourceComplianceSummaryItems", js.Array(value :_*))
+    inline def setResourceComplianceSummaryItemsVarargs(value: ResourceComplianceSummaryItem*): Self = StObject.set(x, "ResourceComplianceSummaryItems", js.Array(value :_*))
   }
 }

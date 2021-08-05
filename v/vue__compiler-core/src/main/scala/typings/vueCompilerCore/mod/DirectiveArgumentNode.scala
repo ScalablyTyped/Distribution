@@ -13,8 +13,7 @@ trait DirectiveArgumentNode
 }
 object DirectiveArgumentNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     elements: js.Array[String] | (js.Tuple2[String, ExpressionNode]) | (js.Tuple3[String, ExpressionNode, ExpressionNode]) | (js.Tuple4[String, ExpressionNode, ExpressionNode, ObjectExpression]),
     loc: SourceLocation
   ): DirectiveArgumentNode = {
@@ -23,15 +22,12 @@ object DirectiveArgumentNode {
     __obj.asInstanceOf[DirectiveArgumentNode]
   }
   
-  @scala.inline
-  implicit class DirectiveArgumentNodeMutableBuilder[Self <: DirectiveArgumentNode] (val x: Self) extends AnyVal {
+  extension [Self <: DirectiveArgumentNode](x: Self) {
     
-    @scala.inline
-    def setElements(
+    inline def setElements(
       value: js.Array[String] | (js.Tuple2[String, ExpressionNode]) | (js.Tuple3[String, ExpressionNode, ExpressionNode]) | (js.Tuple4[String, ExpressionNode, ExpressionNode, ObjectExpression])
     ): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value :_*))
   }
 }

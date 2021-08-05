@@ -14,22 +14,17 @@ trait ILanguage extends StObject {
 }
 object ILanguage {
   
-  @scala.inline
-  def apply(ID: Double, LanguageCode: String, Name: String): ILanguage = {
+  inline def apply(ID: Double, LanguageCode: String, Name: String): ILanguage = {
     val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any], LanguageCode = LanguageCode.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILanguage]
   }
   
-  @scala.inline
-  implicit class ILanguageMutableBuilder[Self <: ILanguage] (val x: Self) extends AnyVal {
+  extension [Self <: ILanguage](x: Self) {
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

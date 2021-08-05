@@ -15,19 +15,15 @@ trait RegionViewOptions extends StObject {
 }
 object RegionViewOptions {
   
-  @scala.inline
-  def apply(): RegionViewOptions = {
+  inline def apply(): RegionViewOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegionViewOptions]
   }
   
-  @scala.inline
-  implicit class RegionViewOptionsMutableBuilder[Self <: RegionViewOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RegionViewOptions](x: Self) {
     
-    @scala.inline
-    def setPreventDestroy(value: Boolean): Self = StObject.set(x, "preventDestroy", value.asInstanceOf[js.Any])
+    inline def setPreventDestroy(value: Boolean): Self = StObject.set(x, "preventDestroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDestroyUndefined: Self = StObject.set(x, "preventDestroy", js.undefined)
+    inline def setPreventDestroyUndefined: Self = StObject.set(x, "preventDestroy", js.undefined)
   }
 }

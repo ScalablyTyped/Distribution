@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.SignaturesCollection")
 @js.native
-class SignaturesCollection protected ()
+/* private */ class SignaturesCollection ()
   extends StObject
      with typings.activexInfopath.InfoPath.SignaturesCollection {
   
@@ -16,7 +16,7 @@ class SignaturesCollection protected ()
   /* CompleteClass */
   override def Create(): typings.activexInfopath.InfoPath.SignatureObject = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.SignaturesCollection_typekey")
   var InfoPathDotSignaturesCollection_typekey: typings.activexInfopath.InfoPath.SignaturesCollection = js.native
   

@@ -19,8 +19,7 @@ trait PredominantCategoriesResult
 }
 object PredominantCategoriesResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     predominantCategoryInfos: js.Array[PredominantCategoriesResultPredominantCategoryInfos],
@@ -30,13 +29,10 @@ object PredominantCategoriesResult {
     __obj.asInstanceOf[PredominantCategoriesResult]
   }
   
-  @scala.inline
-  implicit class PredominantCategoriesResultMutableBuilder[Self <: PredominantCategoriesResult] (val x: Self) extends AnyVal {
+  extension [Self <: PredominantCategoriesResult](x: Self) {
     
-    @scala.inline
-    def setPredominantCategoryInfos(value: js.Array[PredominantCategoriesResultPredominantCategoryInfos]): Self = StObject.set(x, "predominantCategoryInfos", value.asInstanceOf[js.Any])
+    inline def setPredominantCategoryInfos(value: js.Array[PredominantCategoriesResultPredominantCategoryInfos]): Self = StObject.set(x, "predominantCategoryInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredominantCategoryInfosVarargs(value: PredominantCategoriesResultPredominantCategoryInfos*): Self = StObject.set(x, "predominantCategoryInfos", js.Array(value :_*))
+    inline def setPredominantCategoryInfosVarargs(value: PredominantCategoriesResultPredominantCategoryInfos*): Self = StObject.set(x, "predominantCategoryInfos", js.Array(value :_*))
   }
 }

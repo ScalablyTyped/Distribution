@@ -35,8 +35,7 @@ trait AuthSetting extends StObject {
 }
 object AuthSetting {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     scopeDotaddress: String,
     scopeDotinvoiceTitle: String,
     scopeDotrecord: String,
@@ -56,46 +55,32 @@ object AuthSetting {
     __obj.asInstanceOf[AuthSetting]
   }
   
-  @scala.inline
-  implicit class AuthSettingMutableBuilder[Self <: AuthSetting] (val x: Self) extends AnyVal {
+  extension [Self <: AuthSetting](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+    inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setScopeDotaddress(value: String): Self = StObject.set(x, "scope.address", value.asInstanceOf[js.Any])
+    inline def setScopeDotaddress(value: String): Self = StObject.set(x, "scope.address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDotinvoiceTitle(value: String): Self = StObject.set(x, "scope.invoiceTitle", value.asInstanceOf[js.Any])
+    inline def setScopeDotinvoiceTitle(value: String): Self = StObject.set(x, "scope.invoiceTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDotrecord(value: String): Self = StObject.set(x, "scope.record", value.asInstanceOf[js.Any])
+    inline def setScopeDotrecord(value: String): Self = StObject.set(x, "scope.record", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDotuserInfo(value: String): Self = StObject.set(x, "scope.userInfo", value.asInstanceOf[js.Any])
+    inline def setScopeDotuserInfo(value: String): Self = StObject.set(x, "scope.userInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDotuserLocation(value: String): Self = StObject.set(x, "scope.userLocation", value.asInstanceOf[js.Any])
+    inline def setScopeDotuserLocation(value: String): Self = StObject.set(x, "scope.userLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDotwerun(value: String): Self = StObject.set(x, "scope.werun", value.asInstanceOf[js.Any])
+    inline def setScopeDotwerun(value: String): Self = StObject.set(x, "scope.werun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeDotwritePhotosAlbum(value: String): Self = StObject.set(x, "scope.writePhotosAlbum", value.asInstanceOf[js.Any])
+    inline def setScopeDotwritePhotosAlbum(value: String): Self = StObject.set(x, "scope.writePhotosAlbum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ ErrMsgResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ ErrMsgResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

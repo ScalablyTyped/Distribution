@@ -24,8 +24,7 @@ trait PaymentsLiteDialogResponse
 }
 object PaymentsLiteDialogResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     app_id: Double,
     payment_id: Double,
     product_id: String,
@@ -37,31 +36,22 @@ object PaymentsLiteDialogResponse {
     __obj.asInstanceOf[PaymentsLiteDialogResponse]
   }
   
-  @scala.inline
-  implicit class PaymentsLiteDialogResponseMutableBuilder[Self <: PaymentsLiteDialogResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentsLiteDialogResponse](x: Self) {
     
-    @scala.inline
-    def setApp_id(value: Double): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
+    inline def setApp_id(value: Double): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloper_payload(value: String): Self = StObject.set(x, "developer_payload", value.asInstanceOf[js.Any])
+    inline def setDeveloper_payload(value: String): Self = StObject.set(x, "developer_payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloper_payloadUndefined: Self = StObject.set(x, "developer_payload", js.undefined)
+    inline def setDeveloper_payloadUndefined: Self = StObject.set(x, "developer_payload", js.undefined)
     
-    @scala.inline
-    def setPayment_id(value: Double): Self = StObject.set(x, "payment_id", value.asInstanceOf[js.Any])
+    inline def setPayment_id(value: Double): Self = StObject.set(x, "payment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProduct_id(value: String): Self = StObject.set(x, "product_id", value.asInstanceOf[js.Any])
+    inline def setProduct_id(value: String): Self = StObject.set(x, "product_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchase_time(value: Double): Self = StObject.set(x, "purchase_time", value.asInstanceOf[js.Any])
+    inline def setPurchase_time(value: Double): Self = StObject.set(x, "purchase_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchase_token(value: String): Self = StObject.set(x, "purchase_token", value.asInstanceOf[js.Any])
+    inline def setPurchase_token(value: String): Self = StObject.set(x, "purchase_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigned_request(value: String): Self = StObject.set(x, "signed_request", value.asInstanceOf[js.Any])
+    inline def setSigned_request(value: String): Self = StObject.set(x, "signed_request", value.asInstanceOf[js.Any])
   }
 }

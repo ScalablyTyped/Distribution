@@ -23,8 +23,7 @@ trait UpdateExpression_
 }
 object UpdateExpression_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     argument: Expression,
     end: Double,
     loc: SourceLocation,
@@ -37,19 +36,14 @@ object UpdateExpression_ {
     __obj.asInstanceOf[UpdateExpression_]
   }
   
-  @scala.inline
-  implicit class UpdateExpression_MutableBuilder[Self <: UpdateExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateExpression_](x: Self) {
     
-    @scala.inline
-    def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: PlussignPlussign | `--`): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: PlussignPlussign | `--`): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: UpdateExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UpdateExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

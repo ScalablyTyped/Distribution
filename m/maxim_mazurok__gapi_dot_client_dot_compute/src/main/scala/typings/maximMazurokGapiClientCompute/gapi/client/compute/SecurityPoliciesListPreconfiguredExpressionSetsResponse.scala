@@ -10,19 +10,15 @@ trait SecurityPoliciesListPreconfiguredExpressionSetsResponse extends StObject {
 }
 object SecurityPoliciesListPreconfiguredExpressionSetsResponse {
   
-  @scala.inline
-  def apply(): SecurityPoliciesListPreconfiguredExpressionSetsResponse = {
+  inline def apply(): SecurityPoliciesListPreconfiguredExpressionSetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityPoliciesListPreconfiguredExpressionSetsResponse]
   }
   
-  @scala.inline
-  implicit class SecurityPoliciesListPreconfiguredExpressionSetsResponseMutableBuilder[Self <: SecurityPoliciesListPreconfiguredExpressionSetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityPoliciesListPreconfiguredExpressionSetsResponse](x: Self) {
     
-    @scala.inline
-    def setPreconfiguredExpressionSets(value: SecurityPoliciesWafConfig): Self = StObject.set(x, "preconfiguredExpressionSets", value.asInstanceOf[js.Any])
+    inline def setPreconfiguredExpressionSets(value: SecurityPoliciesWafConfig): Self = StObject.set(x, "preconfiguredExpressionSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreconfiguredExpressionSetsUndefined: Self = StObject.set(x, "preconfiguredExpressionSets", js.undefined)
+    inline def setPreconfiguredExpressionSetsUndefined: Self = StObject.set(x, "preconfiguredExpressionSets", js.undefined)
   }
 }

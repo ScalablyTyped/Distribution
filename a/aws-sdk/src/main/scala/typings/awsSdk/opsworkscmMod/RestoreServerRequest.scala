@@ -28,31 +28,23 @@ trait RestoreServerRequest extends StObject {
 }
 object RestoreServerRequest {
   
-  @scala.inline
-  def apply(BackupId: BackupId, ServerName: ServerName): RestoreServerRequest = {
+  inline def apply(BackupId: BackupId, ServerName: ServerName): RestoreServerRequest = {
     val __obj = js.Dynamic.literal(BackupId = BackupId.asInstanceOf[js.Any], ServerName = ServerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreServerRequest]
   }
   
-  @scala.inline
-  implicit class RestoreServerRequestMutableBuilder[Self <: RestoreServerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreServerRequest](x: Self) {
     
-    @scala.inline
-    def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
+    inline def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setKeyPair(value: KeyPair): Self = StObject.set(x, "KeyPair", value.asInstanceOf[js.Any])
+    inline def setKeyPair(value: KeyPair): Self = StObject.set(x, "KeyPair", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPairUndefined: Self = StObject.set(x, "KeyPair", js.undefined)
+    inline def setKeyPairUndefined: Self = StObject.set(x, "KeyPair", js.undefined)
     
-    @scala.inline
-    def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
   }
 }

@@ -21,25 +21,19 @@ trait SchemaDatastoreIODetails extends StObject {
 }
 object SchemaDatastoreIODetails {
   
-  @scala.inline
-  def apply(): SchemaDatastoreIODetails = {
+  inline def apply(): SchemaDatastoreIODetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDatastoreIODetails]
   }
   
-  @scala.inline
-  implicit class SchemaDatastoreIODetailsMutableBuilder[Self <: SchemaDatastoreIODetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDatastoreIODetails](x: Self) {
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

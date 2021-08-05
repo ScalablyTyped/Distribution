@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Floor")
 @js.native
-class Floor protected ()
+/* private */ class Floor ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Floor {
   
@@ -43,7 +43,7 @@ class Floor protected ()
   /* CompleteClass */
   var PictureType: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Floor_typekey")
   var PowerPointDotFloor_typekey: typings.activexPowerpoint.PowerPoint.Floor = js.native
   

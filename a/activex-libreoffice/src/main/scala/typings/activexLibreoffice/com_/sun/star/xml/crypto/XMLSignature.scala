@@ -14,8 +14,7 @@ trait XMLSignature
      with XInitialization
 object XMLSignature {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     generate: (XXMLSignatureTemplate, XSecurityEnvironment) => XXMLSignatureTemplate,
     initialize: SeqEquiv[js.Any] => Unit,

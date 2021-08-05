@@ -16,25 +16,19 @@ trait BufferChangeParam extends StObject {
 }
 object BufferChangeParam {
   
-  @scala.inline
-  def apply(bufferPercent: Double, duration: Double, metadata: js.Any, position: Double): BufferChangeParam = {
+  inline def apply(bufferPercent: Double, duration: Double, metadata: js.Any, position: Double): BufferChangeParam = {
     val __obj = js.Dynamic.literal(bufferPercent = bufferPercent.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferChangeParam]
   }
   
-  @scala.inline
-  implicit class BufferChangeParamMutableBuilder[Self <: BufferChangeParam] (val x: Self) extends AnyVal {
+  extension [Self <: BufferChangeParam](x: Self) {
     
-    @scala.inline
-    def setBufferPercent(value: Double): Self = StObject.set(x, "bufferPercent", value.asInstanceOf[js.Any])
+    inline def setBufferPercent(value: Double): Self = StObject.set(x, "bufferPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

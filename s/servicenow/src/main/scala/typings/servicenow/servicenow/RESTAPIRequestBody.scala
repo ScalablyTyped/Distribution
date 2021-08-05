@@ -18,8 +18,7 @@ trait RESTAPIRequestBody[T] extends StObject {
 }
 object RESTAPIRequestBody {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     data: T,
     dataStream: js.Object,
     dataString: String,
@@ -30,22 +29,16 @@ object RESTAPIRequestBody {
     __obj.asInstanceOf[RESTAPIRequestBody[T]]
   }
   
-  @scala.inline
-  implicit class RESTAPIRequestBodyMutableBuilder[Self <: RESTAPIRequestBody[?], T] (val x: Self & RESTAPIRequestBody[T]) extends AnyVal {
+  extension [Self <: RESTAPIRequestBody[?], T](x: Self & RESTAPIRequestBody[T]) {
     
-    @scala.inline
-    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataStream(value: js.Object): Self = StObject.set(x, "dataStream", value.asInstanceOf[js.Any])
+    inline def setDataStream(value: js.Object): Self = StObject.set(x, "dataStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataString(value: String): Self = StObject.set(x, "dataString", value.asInstanceOf[js.Any])
+    inline def setDataString(value: String): Self = StObject.set(x, "dataString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
+    inline def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNextEntry(value: () => js.Any): Self = StObject.set(x, "nextEntry", js.Any.fromFunction0(value))
+    inline def setNextEntry(value: () => js.Any): Self = StObject.set(x, "nextEntry", js.Any.fromFunction0(value))
   }
 }

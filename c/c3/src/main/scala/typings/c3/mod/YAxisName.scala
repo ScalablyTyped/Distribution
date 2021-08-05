@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait YAxisName extends StObject
 object YAxisName {
   
-  @scala.inline
-  def y: typings.c3.c3Strings.y = "y".asInstanceOf[typings.c3.c3Strings.y]
+  inline def y: typings.c3.c3Strings.y = "y".asInstanceOf[typings.c3.c3Strings.y]
   
-  @scala.inline
-  def y2: typings.c3.c3Strings.y2 = "y2".asInstanceOf[typings.c3.c3Strings.y2]
+  inline def y2: typings.c3.c3Strings.y2 = "y2".asInstanceOf[typings.c3.c3Strings.y2]
 }

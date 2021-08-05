@@ -22,8 +22,7 @@ trait WebResponseInfo
 }
 object WebResponseInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -40,25 +39,18 @@ object WebResponseInfo {
     __obj.asInstanceOf[WebResponseInfo]
   }
   
-  @scala.inline
-  implicit class WebResponseInfoMutableBuilder[Self <: WebResponseInfo] (val x: Self) extends AnyVal {
+  extension [Self <: WebResponseInfo](x: Self) {
     
-    @scala.inline
-    def setGet_body(value: () => String): Self = StObject.set(x, "get_body", js.Any.fromFunction0(value))
+    inline def setGet_body(value: () => String): Self = StObject.set(x, "get_body", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_headers(value: () => js.Any): Self = StObject.set(x, "get_headers", js.Any.fromFunction0(value))
+    inline def setGet_headers(value: () => js.Any): Self = StObject.set(x, "get_headers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_statusCode(value: () => Double): Self = StObject.set(x, "get_statusCode", js.Any.fromFunction0(value))
+    inline def setGet_statusCode(value: () => Double): Self = StObject.set(x, "get_statusCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_body(value: String => Unit): Self = StObject.set(x, "set_body", js.Any.fromFunction1(value))
+    inline def setSet_body(value: String => Unit): Self = StObject.set(x, "set_body", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_headers(value: js.Any => Unit): Self = StObject.set(x, "set_headers", js.Any.fromFunction1(value))
+    inline def setSet_headers(value: js.Any => Unit): Self = StObject.set(x, "set_headers", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_statusCode(value: Double => Unit): Self = StObject.set(x, "set_statusCode", js.Any.fromFunction1(value))
+    inline def setSet_statusCode(value: Double => Unit): Self = StObject.set(x, "set_statusCode", js.Any.fromFunction1(value))
   }
 }

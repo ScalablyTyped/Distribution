@@ -21,8 +21,7 @@ trait PushSubscription extends StObject {
 }
 object PushSubscription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endpoint: java.lang.String,
     getKey: PushEncryptionKeyName => ArrayBuffer | Null,
     options: PushSubscriptionOptions,
@@ -33,28 +32,20 @@ object PushSubscription {
     __obj.asInstanceOf[PushSubscription]
   }
   
-  @scala.inline
-  implicit class PushSubscriptionMutableBuilder[Self <: PushSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: PushSubscription](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: java.lang.String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: java.lang.String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTime(value: Double): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: Double): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTimeNull: Self = StObject.set(x, "expirationTime", null)
+    inline def setExpirationTimeNull: Self = StObject.set(x, "expirationTime", null)
     
-    @scala.inline
-    def setGetKey(value: PushEncryptionKeyName => ArrayBuffer | Null): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
+    inline def setGetKey(value: PushEncryptionKeyName => ArrayBuffer | Null): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOptions(value: PushSubscriptionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: PushSubscriptionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToJSON(value: () => PushSubscriptionJSON): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => PushSubscriptionJSON): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnsubscribe(value: () => js.Promise[scala.Boolean]): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+    inline def setUnsubscribe(value: () => js.Promise[scala.Boolean]): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
   }
 }

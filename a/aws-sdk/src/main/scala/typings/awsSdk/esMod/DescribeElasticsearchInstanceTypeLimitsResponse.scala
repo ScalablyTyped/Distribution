@@ -10,19 +10,15 @@ trait DescribeElasticsearchInstanceTypeLimitsResponse extends StObject {
 }
 object DescribeElasticsearchInstanceTypeLimitsResponse {
   
-  @scala.inline
-  def apply(): DescribeElasticsearchInstanceTypeLimitsResponse = {
+  inline def apply(): DescribeElasticsearchInstanceTypeLimitsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeElasticsearchInstanceTypeLimitsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeElasticsearchInstanceTypeLimitsResponseMutableBuilder[Self <: DescribeElasticsearchInstanceTypeLimitsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeElasticsearchInstanceTypeLimitsResponse](x: Self) {
     
-    @scala.inline
-    def setLimitsByRole(value: LimitsByRole): Self = StObject.set(x, "LimitsByRole", value.asInstanceOf[js.Any])
+    inline def setLimitsByRole(value: LimitsByRole): Self = StObject.set(x, "LimitsByRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitsByRoleUndefined: Self = StObject.set(x, "LimitsByRole", js.undefined)
+    inline def setLimitsByRoleUndefined: Self = StObject.set(x, "LimitsByRole", js.undefined)
   }
 }

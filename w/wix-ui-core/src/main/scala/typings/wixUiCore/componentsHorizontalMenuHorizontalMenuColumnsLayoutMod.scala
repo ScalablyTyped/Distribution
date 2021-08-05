@@ -36,14 +36,12 @@ object componentsHorizontalMenuHorizontalMenuColumnsLayoutMod extends Shortcut {
     @JSImport("wix-ui-core/src/components/horizontal-menu/horizontal-menu-columns-layout", "HorizontalMenuColumnsLayout.defaultProps")
     @js.native
     def defaultProps: ColumnsNumber = js.native
-    @scala.inline
-    def defaultProps_=(x: ColumnsNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ColumnsNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/src/components/horizontal-menu/horizontal-menu-columns-layout", "HorizontalMenuColumnsLayout.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   type _To = FC[PickPickHorizontalMenuColColumnGap]

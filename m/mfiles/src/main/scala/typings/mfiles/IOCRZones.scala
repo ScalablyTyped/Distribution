@@ -18,8 +18,7 @@ trait IOCRZones extends StObject {
 }
 object IOCRZones {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (Double, IOCRZone) => Unit,
     Clone: () => IOCRZones,
     Count: Double,
@@ -30,22 +29,16 @@ object IOCRZones {
     __obj.asInstanceOf[IOCRZones]
   }
   
-  @scala.inline
-  implicit class IOCRZonesMutableBuilder[Self <: IOCRZones] (val x: Self) extends AnyVal {
+  extension [Self <: IOCRZones](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Double, IOCRZone) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Double, IOCRZone) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClone(value: () => IOCRZones): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IOCRZones): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => IOCRZone): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IOCRZone): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

@@ -18,25 +18,19 @@ trait LoggerOptions extends StObject {
 }
 object LoggerOptions {
   
-  @scala.inline
-  def apply(): LoggerOptions = {
+  inline def apply(): LoggerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoggerOptions]
   }
   
-  @scala.inline
-  implicit class LoggerOptionsMutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoggerOptions](x: Self) {
     
-    @scala.inline
-    def setLogger(value: (/* message */ js.UndefOr[String], /* state */ js.UndefOr[LoggerState]) => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction2(value))
+    inline def setLogger(value: (/* message */ js.UndefOr[String], /* state */ js.UndefOr[LoggerState]) => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoggerLevel(value: String): Self = StObject.set(x, "loggerLevel", value.asInstanceOf[js.Any])
+    inline def setLoggerLevel(value: String): Self = StObject.set(x, "loggerLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggerLevelUndefined: Self = StObject.set(x, "loggerLevel", js.undefined)
+    inline def setLoggerLevelUndefined: Self = StObject.set(x, "loggerLevel", js.undefined)
     
-    @scala.inline
-    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+    inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
   }
 }

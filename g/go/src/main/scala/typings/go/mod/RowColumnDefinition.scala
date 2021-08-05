@@ -96,22 +96,19 @@ object RowColumnDefinition {
   @JSImport("go", "RowColumnDefinition.Default")
   @js.native
   def Default: EnumValue = js.native
-  @scala.inline
-  def Default_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+  inline def Default_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
   
   /**The default .sizing if none is specified on the Table Panel's rowSizing and columnSizing.*/
   /* static member */
   @JSImport("go", "RowColumnDefinition.None")
   @js.native
   def None: EnumValue = js.native
-  @scala.inline
-  def None_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /**If a Table Panel is larger than all the rows then this .sizing grants this row and any others with the same value the extra space, apportioned proportionally between them*/
   /* static member */
   @JSImport("go", "RowColumnDefinition.ProportionalExtra")
   @js.native
   def ProportionalExtra: EnumValue = js.native
-  @scala.inline
-  def ProportionalExtra_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProportionalExtra")(x.asInstanceOf[js.Any])
+  inline def ProportionalExtra_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProportionalExtra")(x.asInstanceOf[js.Any])
 }

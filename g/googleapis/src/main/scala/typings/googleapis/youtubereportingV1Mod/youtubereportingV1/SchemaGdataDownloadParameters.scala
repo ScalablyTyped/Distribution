@@ -21,25 +21,19 @@ trait SchemaGdataDownloadParameters extends StObject {
 }
 object SchemaGdataDownloadParameters {
   
-  @scala.inline
-  def apply(): SchemaGdataDownloadParameters = {
+  inline def apply(): SchemaGdataDownloadParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGdataDownloadParameters]
   }
   
-  @scala.inline
-  implicit class SchemaGdataDownloadParametersMutableBuilder[Self <: SchemaGdataDownloadParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGdataDownloadParameters](x: Self) {
     
-    @scala.inline
-    def setAllowGzipCompression(value: Boolean): Self = StObject.set(x, "allowGzipCompression", value.asInstanceOf[js.Any])
+    inline def setAllowGzipCompression(value: Boolean): Self = StObject.set(x, "allowGzipCompression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowGzipCompressionUndefined: Self = StObject.set(x, "allowGzipCompression", js.undefined)
+    inline def setAllowGzipCompressionUndefined: Self = StObject.set(x, "allowGzipCompression", js.undefined)
     
-    @scala.inline
-    def setIgnoreRange(value: Boolean): Self = StObject.set(x, "ignoreRange", value.asInstanceOf[js.Any])
+    inline def setIgnoreRange(value: Boolean): Self = StObject.set(x, "ignoreRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreRangeUndefined: Self = StObject.set(x, "ignoreRange", js.undefined)
+    inline def setIgnoreRangeUndefined: Self = StObject.set(x, "ignoreRange", js.undefined)
   }
 }

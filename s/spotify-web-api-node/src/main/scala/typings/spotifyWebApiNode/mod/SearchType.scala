@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchType extends StObject
 object SearchType {
   
-  @scala.inline
-  def album: typings.spotifyWebApiNode.spotifyWebApiNodeStrings.album = "album".asInstanceOf[typings.spotifyWebApiNode.spotifyWebApiNodeStrings.album]
+  inline def album: typings.spotifyWebApiNode.spotifyWebApiNodeStrings.album = "album".asInstanceOf[typings.spotifyWebApiNode.spotifyWebApiNodeStrings.album]
   
-  @scala.inline
-  def artist: typings.spotifyWebApiNode.spotifyWebApiNodeStrings.artist = "artist".asInstanceOf[typings.spotifyWebApiNode.spotifyWebApiNodeStrings.artist]
+  inline def artist: typings.spotifyWebApiNode.spotifyWebApiNodeStrings.artist = "artist".asInstanceOf[typings.spotifyWebApiNode.spotifyWebApiNodeStrings.artist]
   
-  @scala.inline
-  def playlist: typings.spotifyWebApiNode.spotifyWebApiNodeStrings.playlist = "playlist".asInstanceOf[typings.spotifyWebApiNode.spotifyWebApiNodeStrings.playlist]
+  inline def playlist: typings.spotifyWebApiNode.spotifyWebApiNodeStrings.playlist = "playlist".asInstanceOf[typings.spotifyWebApiNode.spotifyWebApiNodeStrings.playlist]
   
-  @scala.inline
-  def track: typings.spotifyWebApiNode.spotifyWebApiNodeStrings.track = "track".asInstanceOf[typings.spotifyWebApiNode.spotifyWebApiNodeStrings.track]
+  inline def track: typings.spotifyWebApiNode.spotifyWebApiNodeStrings.track = "track".asInstanceOf[typings.spotifyWebApiNode.spotifyWebApiNodeStrings.track]
 }

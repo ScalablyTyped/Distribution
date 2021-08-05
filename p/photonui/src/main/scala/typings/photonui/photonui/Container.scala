@@ -27,8 +27,7 @@ trait Container
 }
 object Container {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     child: Widget,
@@ -60,25 +59,18 @@ object Container {
     __obj.asInstanceOf[Container]
   }
   
-  @scala.inline
-  implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+  extension [Self <: Container](x: Self) {
     
-    @scala.inline
-    def setChild(value: Widget): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
+    inline def setChild(value: Widget): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildName(value: String): Self = StObject.set(x, "childName", value.asInstanceOf[js.Any])
+    inline def setChildName(value: String): Self = StObject.set(x, "childName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNode(value: HTMLElement): Self = StObject.set(x, "containerNode", value.asInstanceOf[js.Any])
+    inline def setContainerNode(value: HTMLElement): Self = StObject.set(x, "containerNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalChildExpansion(value: Boolean): Self = StObject.set(x, "horizontalChildExpansion", value.asInstanceOf[js.Any])
+    inline def setHorizontalChildExpansion(value: Boolean): Self = StObject.set(x, "horizontalChildExpansion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveChild(value: Widget => Unit): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
+    inline def setRemoveChild(value: Widget => Unit): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVerticalChildExpansion(value: Boolean): Self = StObject.set(x, "verticalChildExpansion", value.asInstanceOf[js.Any])
+    inline def setVerticalChildExpansion(value: Boolean): Self = StObject.set(x, "verticalChildExpansion", value.asInstanceOf[js.Any])
   }
 }

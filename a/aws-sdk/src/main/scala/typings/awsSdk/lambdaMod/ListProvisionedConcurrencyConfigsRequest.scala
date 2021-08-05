@@ -23,28 +23,21 @@ trait ListProvisionedConcurrencyConfigsRequest extends StObject {
 }
 object ListProvisionedConcurrencyConfigsRequest {
   
-  @scala.inline
-  def apply(FunctionName: FunctionName): ListProvisionedConcurrencyConfigsRequest = {
+  inline def apply(FunctionName: FunctionName): ListProvisionedConcurrencyConfigsRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProvisionedConcurrencyConfigsRequest]
   }
   
-  @scala.inline
-  implicit class ListProvisionedConcurrencyConfigsRequestMutableBuilder[Self <: ListProvisionedConcurrencyConfigsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListProvisionedConcurrencyConfigsRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: MaxProvisionedConcurrencyConfigListItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: MaxProvisionedConcurrencyConfigListItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

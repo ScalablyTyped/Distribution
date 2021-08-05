@@ -44,40 +44,29 @@ trait Break extends StObject {
 }
 object Break {
   
-  @scala.inline
-  def apply(): Break = {
+  inline def apply(): Break = {
     val __obj = js.Dynamic.literal(break = "break", buffer_overflow = "buffer_overflow", device_lost = "device_lost", disconnected = "disconnected", frame_error = "frame_error", overrun = "overrun", parity_error = "parity_error", system_error = "system_error", timeout = "timeout")
     __obj.asInstanceOf[Break]
   }
   
-  @scala.inline
-  implicit class BreakMutableBuilder[Self <: Break] (val x: Self) extends AnyVal {
+  extension [Self <: Break](x: Self) {
     
-    @scala.inline
-    def setBreak(value: break): Self = StObject.set(x, "break", value.asInstanceOf[js.Any])
+    inline def setBreak(value: break): Self = StObject.set(x, "break", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuffer_overflow(value: buffer_overflow): Self = StObject.set(x, "buffer_overflow", value.asInstanceOf[js.Any])
+    inline def setBuffer_overflow(value: buffer_overflow): Self = StObject.set(x, "buffer_overflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevice_lost(value: device_lost): Self = StObject.set(x, "device_lost", value.asInstanceOf[js.Any])
+    inline def setDevice_lost(value: device_lost): Self = StObject.set(x, "device_lost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisconnected(value: disconnected): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
+    inline def setDisconnected(value: disconnected): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrame_error(value: frame_error): Self = StObject.set(x, "frame_error", value.asInstanceOf[js.Any])
+    inline def setFrame_error(value: frame_error): Self = StObject.set(x, "frame_error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrun(value: overrun): Self = StObject.set(x, "overrun", value.asInstanceOf[js.Any])
+    inline def setOverrun(value: overrun): Self = StObject.set(x, "overrun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParity_error(value: parity_error): Self = StObject.set(x, "parity_error", value.asInstanceOf[js.Any])
+    inline def setParity_error(value: parity_error): Self = StObject.set(x, "parity_error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystem_error(value: system_error): Self = StObject.set(x, "system_error", value.asInstanceOf[js.Any])
+    inline def setSystem_error(value: system_error): Self = StObject.set(x, "system_error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: timeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: timeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait PromptFailedResult extends StObject {
 }
 object PromptFailedResult {
   
-  @scala.inline
-  def apply(canceled: Boolean): PromptFailedResult = {
+  inline def apply(canceled: Boolean): PromptFailedResult = {
     val __obj = js.Dynamic.literal(canceled = canceled.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromptFailedResult]
   }
   
-  @scala.inline
-  implicit class PromptFailedResultMutableBuilder[Self <: PromptFailedResult] (val x: Self) extends AnyVal {
+  extension [Self <: PromptFailedResult](x: Self) {
     
-    @scala.inline
-    def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
+    inline def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
   }
 }

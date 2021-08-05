@@ -27,8 +27,7 @@ trait ASPxClientRadarDiagram
 }
 object ASPxClientRadarDiagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DiagramToPoint: (js.Any, js.Any) => ASPxClientControlCoordinates,
     PointToDiagram: (Double, Double) => ASPxClientDiagramCoordinates,
     axisX: ASPxClientAxisBase,
@@ -39,13 +38,10 @@ object ASPxClientRadarDiagram {
     __obj.asInstanceOf[ASPxClientRadarDiagram]
   }
   
-  @scala.inline
-  implicit class ASPxClientRadarDiagramMutableBuilder[Self <: ASPxClientRadarDiagram] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRadarDiagram](x: Self) {
     
-    @scala.inline
-    def setDiagramToPoint(value: (js.Any, js.Any) => ASPxClientControlCoordinates): Self = StObject.set(x, "DiagramToPoint", js.Any.fromFunction2(value))
+    inline def setDiagramToPoint(value: (js.Any, js.Any) => ASPxClientControlCoordinates): Self = StObject.set(x, "DiagramToPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPointToDiagram(value: (Double, Double) => ASPxClientDiagramCoordinates): Self = StObject.set(x, "PointToDiagram", js.Any.fromFunction2(value))
+    inline def setPointToDiagram(value: (Double, Double) => ASPxClientDiagramCoordinates): Self = StObject.set(x, "PointToDiagram", js.Any.fromFunction2(value))
   }
 }

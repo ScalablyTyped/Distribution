@@ -18,22 +18,17 @@ trait UsbBulkInEndpointDescriptor extends StObject {
 }
 object UsbBulkInEndpointDescriptor {
   
-  @scala.inline
-  def apply(endpointNumber: Double, maxPacketSize: Double, pipe: UsbBulkInPipe): UsbBulkInEndpointDescriptor = {
+  inline def apply(endpointNumber: Double, maxPacketSize: Double, pipe: UsbBulkInPipe): UsbBulkInEndpointDescriptor = {
     val __obj = js.Dynamic.literal(endpointNumber = endpointNumber.asInstanceOf[js.Any], maxPacketSize = maxPacketSize.asInstanceOf[js.Any], pipe = pipe.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsbBulkInEndpointDescriptor]
   }
   
-  @scala.inline
-  implicit class UsbBulkInEndpointDescriptorMutableBuilder[Self <: UsbBulkInEndpointDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: UsbBulkInEndpointDescriptor](x: Self) {
     
-    @scala.inline
-    def setEndpointNumber(value: Double): Self = StObject.set(x, "endpointNumber", value.asInstanceOf[js.Any])
+    inline def setEndpointNumber(value: Double): Self = StObject.set(x, "endpointNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPacketSize(value: Double): Self = StObject.set(x, "maxPacketSize", value.asInstanceOf[js.Any])
+    inline def setMaxPacketSize(value: Double): Self = StObject.set(x, "maxPacketSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipe(value: UsbBulkInPipe): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
+    inline def setPipe(value: UsbBulkInPipe): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
   }
 }

@@ -23,8 +23,7 @@ object themeListenerMod extends Shortcut {
   }
   object Broadcast {
     
-    @scala.inline
-    def apply[S](
+    inline def apply[S](
       getState: () => S,
       setState: S => Unit,
       subscribe: js.Function1[/* state */ S, Unit] => Double,
@@ -34,20 +33,15 @@ object themeListenerMod extends Shortcut {
       __obj.asInstanceOf[Broadcast[S]]
     }
     
-    @scala.inline
-    implicit class BroadcastMutableBuilder[Self <: Broadcast[?], S] (val x: Self & Broadcast[S]) extends AnyVal {
+    extension [Self <: Broadcast[?], S](x: Self & Broadcast[S]) {
       
-      @scala.inline
-      def setGetState(value: () => S): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => S): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetState(value: S => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+      inline def setSetState(value: S => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubscribe(value: js.Function1[/* state */ S, Unit] => Double): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+      inline def setSubscribe(value: js.Function1[/* state */ S, Unit] => Double): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnsubscribe(value: Double => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
+      inline def setUnsubscribe(value: Double => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
     }
   }
   
@@ -57,20 +51,16 @@ object themeListenerMod extends Shortcut {
   }
   object MuiContext {
     
-    @scala.inline
-    def apply[S](): MuiContext[S] = {
+    inline def apply[S](): MuiContext[S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MuiContext[S]]
     }
     
-    @scala.inline
-    implicit class MuiContextMutableBuilder[Self <: MuiContext[?], S] (val x: Self & MuiContext[S]) extends AnyVal {
+    extension [Self <: MuiContext[?], S](x: Self & MuiContext[S]) {
       
-      @scala.inline
-      def set__THEMING__(value: Broadcast[S]): Self = StObject.set(x, "__THEMING__", value.asInstanceOf[js.Any])
+      inline def set__THEMING__(value: Broadcast[S]): Self = StObject.set(x, "__THEMING__", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__THEMING__Undefined: Self = StObject.set(x, "__THEMING__", js.undefined)
+      inline def set__THEMING__Undefined: Self = StObject.set(x, "__THEMING__", js.undefined)
     }
   }
   
@@ -84,8 +74,7 @@ object themeListenerMod extends Shortcut {
   }
   object ThemeListener {
     
-    @scala.inline
-    def apply[S](
+    inline def apply[S](
       initial: MuiContext[S] => S | Null,
       subscribe: (MuiContext[S], js.Function1[/* state */ S, Unit]) => Double | Null,
       unsubscribe: (MuiContext[S], Double) => Unit
@@ -94,17 +83,13 @@ object themeListenerMod extends Shortcut {
       __obj.asInstanceOf[ThemeListener[S]]
     }
     
-    @scala.inline
-    implicit class ThemeListenerMutableBuilder[Self <: ThemeListener[?], S] (val x: Self & ThemeListener[S]) extends AnyVal {
+    extension [Self <: ThemeListener[?], S](x: Self & ThemeListener[S]) {
       
-      @scala.inline
-      def setInitial(value: MuiContext[S] => S | Null): Self = StObject.set(x, "initial", js.Any.fromFunction1(value))
+      inline def setInitial(value: MuiContext[S] => S | Null): Self = StObject.set(x, "initial", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubscribe(value: (MuiContext[S], js.Function1[/* state */ S, Unit]) => Double | Null): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
+      inline def setSubscribe(value: (MuiContext[S], js.Function1[/* state */ S, Unit]) => Double | Null): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnsubscribe(value: (MuiContext[S], Double) => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
+      inline def setUnsubscribe(value: (MuiContext[S], Double) => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction2(value))
     }
   }
   

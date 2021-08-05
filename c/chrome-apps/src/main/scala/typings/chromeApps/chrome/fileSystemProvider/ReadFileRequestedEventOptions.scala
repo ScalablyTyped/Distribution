@@ -22,22 +22,17 @@ trait ReadFileRequestedEventOptions
 }
 object ReadFileRequestedEventOptions {
   
-  @scala.inline
-  def apply(fileSystemId: String, length: double, offset: double, openRequestId: integer, requestId: integer): ReadFileRequestedEventOptions = {
+  inline def apply(fileSystemId: String, length: double, offset: double, openRequestId: integer, requestId: integer): ReadFileRequestedEventOptions = {
     val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], openRequestId = openRequestId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadFileRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class ReadFileRequestedEventOptionsMutableBuilder[Self <: ReadFileRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReadFileRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setLength(value: double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenRequestId(value: integer): Self = StObject.set(x, "openRequestId", value.asInstanceOf[js.Any])
+    inline def setOpenRequestId(value: integer): Self = StObject.set(x, "openRequestId", value.asInstanceOf[js.Any])
   }
 }

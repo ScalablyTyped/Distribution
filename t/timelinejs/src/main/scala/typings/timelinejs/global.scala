@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  @scala.inline
-  def createStoryJS(config: ITimeLineConfiguration): Unit = js.Dynamic.global.applyDynamic("createStoryJS")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def createStoryJS(config: ITimeLineConfiguration): Unit = js.Dynamic.global.applyDynamic("createStoryJS")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

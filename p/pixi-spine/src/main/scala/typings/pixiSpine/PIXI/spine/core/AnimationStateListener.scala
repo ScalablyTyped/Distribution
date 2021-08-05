@@ -20,49 +20,35 @@ trait AnimationStateListener extends StObject {
 }
 object AnimationStateListener {
   
-  @scala.inline
-  def apply(): AnimationStateListener = {
+  inline def apply(): AnimationStateListener = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnimationStateListener]
   }
   
-  @scala.inline
-  implicit class AnimationStateListenerMutableBuilder[Self <: AnimationStateListener] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationStateListener](x: Self) {
     
-    @scala.inline
-    def setComplete(value: /* entry */ TrackEntry => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* entry */ TrackEntry => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setDispose(value: /* entry */ TrackEntry => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
+    inline def setDispose(value: /* entry */ TrackEntry => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
+    inline def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
     
-    @scala.inline
-    def setEnd(value: /* entry */ TrackEntry => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+    inline def setEnd(value: /* entry */ TrackEntry => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setEvent(value: (/* entry */ TrackEntry, /* event */ Event) => Unit): Self = StObject.set(x, "event", js.Any.fromFunction2(value))
+    inline def setEvent(value: (/* entry */ TrackEntry, /* event */ Event) => Unit): Self = StObject.set(x, "event", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setInterrupt(value: /* entry */ TrackEntry => Unit): Self = StObject.set(x, "interrupt", js.Any.fromFunction1(value))
+    inline def setInterrupt(value: /* entry */ TrackEntry => Unit): Self = StObject.set(x, "interrupt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInterruptUndefined: Self = StObject.set(x, "interrupt", js.undefined)
+    inline def setInterruptUndefined: Self = StObject.set(x, "interrupt", js.undefined)
     
-    @scala.inline
-    def setStart(value: /* entry */ TrackEntry => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* entry */ TrackEntry => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

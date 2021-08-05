@@ -28,22 +28,17 @@ object Occluder {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def computeOccludeePoint(
+  inline def computeOccludeePoint(
     occluderBoundingSphere: BoundingSphere,
     occludeePosition: Cartesian3,
     positions: js.Array[Cartesian3]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("computeOccludeePoint")(occluderBoundingSphere.asInstanceOf[js.Any], occludeePosition.asInstanceOf[js.Any], positions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def computeOccludeePointFromRectangle(rectangle: Rectangle): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeOccludeePointFromRectangle")(rectangle.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def computeOccludeePointFromRectangle(rectangle: Rectangle, ellipsoid: Ellipsoid): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("computeOccludeePointFromRectangle")(rectangle.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def computeOccludeePointFromRectangle(rectangle: Rectangle): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeOccludeePointFromRectangle")(rectangle.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def computeOccludeePointFromRectangle(rectangle: Rectangle, ellipsoid: Ellipsoid): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("computeOccludeePointFromRectangle")(rectangle.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def fromBoundingSphere(occluderBoundingSphere: BoundingSphere, cameraPosition: Cartesian3): Occluder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundingSphere")(occluderBoundingSphere.asInstanceOf[js.Any], cameraPosition.asInstanceOf[js.Any])).asInstanceOf[Occluder]
-  @scala.inline
-  def fromBoundingSphere(occluderBoundingSphere: BoundingSphere, cameraPosition: Cartesian3, result: Occluder): Occluder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundingSphere")(occluderBoundingSphere.asInstanceOf[js.Any], cameraPosition.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Occluder]
+  inline def fromBoundingSphere(occluderBoundingSphere: BoundingSphere, cameraPosition: Cartesian3): Occluder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundingSphere")(occluderBoundingSphere.asInstanceOf[js.Any], cameraPosition.asInstanceOf[js.Any])).asInstanceOf[Occluder]
+  inline def fromBoundingSphere(occluderBoundingSphere: BoundingSphere, cameraPosition: Cartesian3, result: Occluder): Occluder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundingSphere")(occluderBoundingSphere.asInstanceOf[js.Any], cameraPosition.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Occluder]
 }

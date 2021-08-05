@@ -17,20 +17,16 @@ object whiteSpacePropsTypeMod {
   }
   object WhiteSpacePropsType {
     
-    @scala.inline
-    def apply(): WhiteSpacePropsType = {
+    inline def apply(): WhiteSpacePropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WhiteSpacePropsType]
     }
     
-    @scala.inline
-    implicit class WhiteSpacePropsTypeMutableBuilder[Self <: WhiteSpacePropsType] (val x: Self) extends AnyVal {
+    extension [Self <: WhiteSpacePropsType](x: Self) {
       
-      @scala.inline
-      def setSize(value: xs | sm | md | lg | xl): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: xs | sm | md | lg | xl): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

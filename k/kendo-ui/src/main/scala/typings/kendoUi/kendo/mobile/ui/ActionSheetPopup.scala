@@ -14,31 +14,23 @@ trait ActionSheetPopup extends StObject {
 }
 object ActionSheetPopup {
   
-  @scala.inline
-  def apply(): ActionSheetPopup = {
+  inline def apply(): ActionSheetPopup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActionSheetPopup]
   }
   
-  @scala.inline
-  implicit class ActionSheetPopupMutableBuilder[Self <: ActionSheetPopup] (val x: Self) extends AnyVal {
+  extension [Self <: ActionSheetPopup](x: Self) {
     
-    @scala.inline
-    def setDirection(value: Double | String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Double | String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

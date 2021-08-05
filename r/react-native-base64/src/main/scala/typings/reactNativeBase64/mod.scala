@@ -19,20 +19,16 @@ object mod extends Shortcut {
   }
   object Base64 {
     
-    @scala.inline
-    def apply(decode: String => String, encode: String => String): Base64 = {
+    inline def apply(decode: String => String, encode: String => String): Base64 = {
       val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
       __obj.asInstanceOf[Base64]
     }
     
-    @scala.inline
-    implicit class Base64MutableBuilder[Self <: Base64] (val x: Self) extends AnyVal {
+    extension [Self <: Base64](x: Self) {
       
-      @scala.inline
-      def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      inline def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncode(value: String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     }
   }
   

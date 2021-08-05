@@ -41,47 +41,34 @@ object sketchMod {
   }
   object SketchPickerProps {
     
-    @scala.inline
-    def apply(): SketchPickerProps = {
+    inline def apply(): SketchPickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SketchPickerProps]
     }
     
-    @scala.inline
-    implicit class SketchPickerPropsMutableBuilder[Self <: SketchPickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: SketchPickerProps](x: Self) {
       
-      @scala.inline
-      def setDisableAlpha(value: Boolean): Self = StObject.set(x, "disableAlpha", value.asInstanceOf[js.Any])
+      inline def setDisableAlpha(value: Boolean): Self = StObject.set(x, "disableAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableAlphaUndefined: Self = StObject.set(x, "disableAlpha", js.undefined)
+      inline def setDisableAlphaUndefined: Self = StObject.set(x, "disableAlpha", js.undefined)
       
-      @scala.inline
-      def setOnSwatchHover(value: (/* color */ ColorResult, /* event */ MouseEvent) => Unit): Self = StObject.set(x, "onSwatchHover", js.Any.fromFunction2(value))
+      inline def setOnSwatchHover(value: (/* color */ ColorResult, /* event */ MouseEvent) => Unit): Self = StObject.set(x, "onSwatchHover", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSwatchHoverUndefined: Self = StObject.set(x, "onSwatchHover", js.undefined)
+      inline def setOnSwatchHoverUndefined: Self = StObject.set(x, "onSwatchHover", js.undefined)
       
-      @scala.inline
-      def setPresetColors(value: js.Array[PresetColor]): Self = StObject.set(x, "presetColors", value.asInstanceOf[js.Any])
+      inline def setPresetColors(value: js.Array[PresetColor]): Self = StObject.set(x, "presetColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresetColorsUndefined: Self = StObject.set(x, "presetColors", js.undefined)
+      inline def setPresetColorsUndefined: Self = StObject.set(x, "presetColors", js.undefined)
       
-      @scala.inline
-      def setPresetColorsVarargs(value: PresetColor*): Self = StObject.set(x, "presetColors", js.Array(value :_*))
+      inline def setPresetColorsVarargs(value: PresetColor*): Self = StObject.set(x, "presetColors", js.Array(value :_*))
       
-      @scala.inline
-      def setStyles(value: PartialClassesSketchPicke): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: PartialClassesSketchPicke): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -111,8 +98,7 @@ object sketchMod {
   }
   object SketchPickerStylesProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Alpha: CSSProperties,
       Hue: CSSProperties,
       Saturation: CSSProperties,
@@ -129,32 +115,23 @@ object sketchMod {
       __obj.asInstanceOf[SketchPickerStylesProps]
     }
     
-    @scala.inline
-    implicit class SketchPickerStylesPropsMutableBuilder[Self <: SketchPickerStylesProps] (val x: Self) extends AnyVal {
+    extension [Self <: SketchPickerStylesProps](x: Self) {
       
-      @scala.inline
-      def setActiveColor(value: CSSProperties): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
+      inline def setActiveColor(value: CSSProperties): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlpha(value: CSSProperties): Self = StObject.set(x, "Alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: CSSProperties): Self = StObject.set(x, "Alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: CSSProperties): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: CSSProperties): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControls(value: CSSProperties): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      inline def setControls(value: CSSProperties): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHue(value: CSSProperties): Self = StObject.set(x, "Hue", value.asInstanceOf[js.Any])
+      inline def setHue(value: CSSProperties): Self = StObject.set(x, "Hue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaturation(value: CSSProperties): Self = StObject.set(x, "Saturation", value.asInstanceOf[js.Any])
+      inline def setSaturation(value: CSSProperties): Self = StObject.set(x, "Saturation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliders(value: CSSProperties): Self = StObject.set(x, "sliders", value.asInstanceOf[js.Any])
+      inline def setSliders(value: CSSProperties): Self = StObject.set(x, "sliders", value.asInstanceOf[js.Any])
     }
   }
 }

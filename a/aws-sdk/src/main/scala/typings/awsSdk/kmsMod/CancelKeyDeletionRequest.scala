@@ -13,16 +13,13 @@ trait CancelKeyDeletionRequest extends StObject {
 }
 object CancelKeyDeletionRequest {
   
-  @scala.inline
-  def apply(KeyId: KeyIdType): CancelKeyDeletionRequest = {
+  inline def apply(KeyId: KeyIdType): CancelKeyDeletionRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelKeyDeletionRequest]
   }
   
-  @scala.inline
-  implicit class CancelKeyDeletionRequestMutableBuilder[Self <: CancelKeyDeletionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelKeyDeletionRequest](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
   }
 }

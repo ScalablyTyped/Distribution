@@ -12,19 +12,15 @@ trait FileSystem extends StObject {
 }
 object FileSystem {
   
-  @scala.inline
-  def apply(name: String, root: DirectoryEntry): FileSystem = {
+  inline def apply(name: String, root: DirectoryEntry): FileSystem = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystem]
   }
   
-  @scala.inline
-  implicit class FileSystemMutableBuilder[Self <: FileSystem] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystem](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: DirectoryEntry): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: DirectoryEntry): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

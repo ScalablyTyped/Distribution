@@ -84,44 +84,32 @@ object web {
   }
   object WebBuilderConfig {
     
-    @scala.inline
-    def apply(): WebBuilderConfig = {
+    inline def apply(): WebBuilderConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebBuilderConfig]
     }
     
-    @scala.inline
-    implicit class WebBuilderConfigMutableBuilder[Self <: WebBuilderConfig] (val x: Self) extends AnyVal {
+    extension [Self <: WebBuilderConfig](x: Self) {
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      @scala.inline
-      def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+      inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
+      inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       
-      @scala.inline
-      def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+      inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
       
-      @scala.inline
-      def setTheme(value: WebTheme | String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: WebTheme | String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setUrls(value: WebBuilderUrls): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+      inline def setUrls(value: WebBuilderUrls): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+      inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     }
   }
   
@@ -131,20 +119,16 @@ object web {
   }
   object WebBuilderUrls {
     
-    @scala.inline
-    def apply(): WebBuilderUrls = {
+    inline def apply(): WebBuilderUrls = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebBuilderUrls]
     }
     
-    @scala.inline
-    implicit class WebBuilderUrlsMutableBuilder[Self <: WebBuilderUrls] (val x: Self) extends AnyVal {
+    extension [Self <: WebBuilderUrls](x: Self) {
       
-      @scala.inline
-      def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+      inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
     }
   }
   
@@ -206,131 +190,90 @@ object web {
   }
   object WebConfig {
     
-    @scala.inline
-    def apply(): WebConfig = {
+    inline def apply(): WebConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebConfig]
     }
     
-    @scala.inline
-    implicit class WebConfigMutableBuilder[Self <: WebConfig] (val x: Self) extends AnyVal {
+    extension [Self <: WebConfig](x: Self) {
       
-      @scala.inline
-      def setBuilder(value: WebBuilderConfig): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
+      inline def setBuilder(value: WebBuilderConfig): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuilderDotconcurrency(value: Double): Self = StObject.set(x, "builder.concurrency", value.asInstanceOf[js.Any])
+      inline def setBuilderDotconcurrency(value: Double): Self = StObject.set(x, "builder.concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuilderDotconcurrencyUndefined: Self = StObject.set(x, "builder.concurrency", js.undefined)
+      inline def setBuilderDotconcurrencyUndefined: Self = StObject.set(x, "builder.concurrency", js.undefined)
       
-      @scala.inline
-      def setBuilderDotdest(value: String): Self = StObject.set(x, "builder.dest", value.asInstanceOf[js.Any])
+      inline def setBuilderDotdest(value: String): Self = StObject.set(x, "builder.dest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuilderDotdestUndefined: Self = StObject.set(x, "builder.dest", js.undefined)
+      inline def setBuilderDotdestUndefined: Self = StObject.set(x, "builder.dest", js.undefined)
       
-      @scala.inline
-      def setBuilderDotext(value: String): Self = StObject.set(x, "builder.ext", value.asInstanceOf[js.Any])
+      inline def setBuilderDotext(value: String): Self = StObject.set(x, "builder.ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuilderDotextUndefined: Self = StObject.set(x, "builder.ext", js.undefined)
+      inline def setBuilderDotextUndefined: Self = StObject.set(x, "builder.ext", js.undefined)
       
-      @scala.inline
-      def setBuilderDottheme(value: WebTheme | String): Self = StObject.set(x, "builder.theme", value.asInstanceOf[js.Any])
+      inline def setBuilderDottheme(value: WebTheme | String): Self = StObject.set(x, "builder.theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuilderDotthemeUndefined: Self = StObject.set(x, "builder.theme", js.undefined)
+      inline def setBuilderDotthemeUndefined: Self = StObject.set(x, "builder.theme", js.undefined)
       
-      @scala.inline
-      def setBuilderDoturls(value: WebBuilderUrls): Self = StObject.set(x, "builder.urls", value.asInstanceOf[js.Any])
+      inline def setBuilderDoturls(value: WebBuilderUrls): Self = StObject.set(x, "builder.urls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuilderDoturlsDotext(value: String): Self = StObject.set(x, "builder.urls.ext", value.asInstanceOf[js.Any])
+      inline def setBuilderDoturlsDotext(value: String): Self = StObject.set(x, "builder.urls.ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuilderDoturlsDotextUndefined: Self = StObject.set(x, "builder.urls.ext", js.undefined)
+      inline def setBuilderDoturlsDotextUndefined: Self = StObject.set(x, "builder.urls.ext", js.undefined)
       
-      @scala.inline
-      def setBuilderDoturlsUndefined: Self = StObject.set(x, "builder.urls", js.undefined)
+      inline def setBuilderDoturlsUndefined: Self = StObject.set(x, "builder.urls", js.undefined)
       
-      @scala.inline
-      def setBuilderUndefined: Self = StObject.set(x, "builder", js.undefined)
+      inline def setBuilderUndefined: Self = StObject.set(x, "builder", js.undefined)
       
-      @scala.inline
-      def setServer(value: WebServerConfig): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: WebServerConfig): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerDotport(value: Double): Self = StObject.set(x, "server.port", value.asInstanceOf[js.Any])
+      inline def setServerDotport(value: Double): Self = StObject.set(x, "server.port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerDotportUndefined: Self = StObject.set(x, "server.port", js.undefined)
+      inline def setServerDotportUndefined: Self = StObject.set(x, "server.port", js.undefined)
       
-      @scala.inline
-      def setServerDotsync(value: Boolean): Self = StObject.set(x, "server.sync", value.asInstanceOf[js.Any])
+      inline def setServerDotsync(value: Boolean): Self = StObject.set(x, "server.sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerDotsyncOptions(value: WebServerSyncOptions): Self = StObject.set(x, "server.syncOptions", value.asInstanceOf[js.Any])
+      inline def setServerDotsyncOptions(value: WebServerSyncOptions): Self = StObject.set(x, "server.syncOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerDotsyncOptionsDotbrowser(value: js.Array[String]): Self = StObject.set(x, "server.syncOptions.browser", value.asInstanceOf[js.Any])
+      inline def setServerDotsyncOptionsDotbrowser(value: js.Array[String]): Self = StObject.set(x, "server.syncOptions.browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerDotsyncOptionsDotbrowserUndefined: Self = StObject.set(x, "server.syncOptions.browser", js.undefined)
+      inline def setServerDotsyncOptionsDotbrowserUndefined: Self = StObject.set(x, "server.syncOptions.browser", js.undefined)
       
-      @scala.inline
-      def setServerDotsyncOptionsDotbrowserVarargs(value: String*): Self = StObject.set(x, "server.syncOptions.browser", js.Array(value :_*))
+      inline def setServerDotsyncOptionsDotbrowserVarargs(value: String*): Self = StObject.set(x, "server.syncOptions.browser", js.Array(value :_*))
       
-      @scala.inline
-      def setServerDotsyncOptionsDotnotify(value: Boolean): Self = StObject.set(x, "server.syncOptions.notify", value.asInstanceOf[js.Any])
+      inline def setServerDotsyncOptionsDotnotify(value: Boolean): Self = StObject.set(x, "server.syncOptions.notify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerDotsyncOptionsDotnotifyUndefined: Self = StObject.set(x, "server.syncOptions.notify", js.undefined)
+      inline def setServerDotsyncOptionsDotnotifyUndefined: Self = StObject.set(x, "server.syncOptions.notify", js.undefined)
       
-      @scala.inline
-      def setServerDotsyncOptionsDotopen(value: Boolean): Self = StObject.set(x, "server.syncOptions.open", value.asInstanceOf[js.Any])
+      inline def setServerDotsyncOptionsDotopen(value: Boolean): Self = StObject.set(x, "server.syncOptions.open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerDotsyncOptionsDotopenUndefined: Self = StObject.set(x, "server.syncOptions.open", js.undefined)
+      inline def setServerDotsyncOptionsDotopenUndefined: Self = StObject.set(x, "server.syncOptions.open", js.undefined)
       
-      @scala.inline
-      def setServerDotsyncOptionsUndefined: Self = StObject.set(x, "server.syncOptions", js.undefined)
+      inline def setServerDotsyncOptionsUndefined: Self = StObject.set(x, "server.syncOptions", js.undefined)
       
-      @scala.inline
-      def setServerDotsyncUndefined: Self = StObject.set(x, "server.sync", js.undefined)
+      inline def setServerDotsyncUndefined: Self = StObject.set(x, "server.sync", js.undefined)
       
-      @scala.inline
-      def setServerDottheme(value: WebTheme | String): Self = StObject.set(x, "server.theme", value.asInstanceOf[js.Any])
+      inline def setServerDottheme(value: WebTheme | String): Self = StObject.set(x, "server.theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerDotthemeUndefined: Self = StObject.set(x, "server.theme", js.undefined)
+      inline def setServerDotthemeUndefined: Self = StObject.set(x, "server.theme", js.undefined)
       
-      @scala.inline
-      def setServerDotwatch(value: Boolean): Self = StObject.set(x, "server.watch", value.asInstanceOf[js.Any])
+      inline def setServerDotwatch(value: Boolean): Self = StObject.set(x, "server.watch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerDotwatchUndefined: Self = StObject.set(x, "server.watch", js.undefined)
+      inline def setServerDotwatchUndefined: Self = StObject.set(x, "server.watch", js.undefined)
       
-      @scala.inline
-      def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+      inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
       
-      @scala.inline
-      def setStatic(value: WebStaticConfig): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+      inline def setStatic(value: WebStaticConfig): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticDotmount(value: String): Self = StObject.set(x, "static.mount", value.asInstanceOf[js.Any])
+      inline def setStaticDotmount(value: String): Self = StObject.set(x, "static.mount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticDotmountUndefined: Self = StObject.set(x, "static.mount", js.undefined)
+      inline def setStaticDotmountUndefined: Self = StObject.set(x, "static.mount", js.undefined)
       
-      @scala.inline
-      def setStaticDotpath(value: String): Self = StObject.set(x, "static.path", value.asInstanceOf[js.Any])
+      inline def setStaticDotpath(value: String): Self = StObject.set(x, "static.path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticDotpathUndefined: Self = StObject.set(x, "static.path", js.undefined)
+      inline def setStaticDotpathUndefined: Self = StObject.set(x, "static.path", js.undefined)
       
-      @scala.inline
-      def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
+      inline def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
     }
   }
   
@@ -348,44 +291,32 @@ object web {
   }
   object WebServerConfig {
     
-    @scala.inline
-    def apply(): WebServerConfig = {
+    inline def apply(): WebServerConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebServerConfig]
     }
     
-    @scala.inline
-    implicit class WebServerConfigMutableBuilder[Self <: WebServerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: WebServerConfig](x: Self) {
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncOptions(value: WebServerSyncOptions): Self = StObject.set(x, "syncOptions", value.asInstanceOf[js.Any])
+      inline def setSyncOptions(value: WebServerSyncOptions): Self = StObject.set(x, "syncOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncOptionsUndefined: Self = StObject.set(x, "syncOptions", js.undefined)
+      inline def setSyncOptionsUndefined: Self = StObject.set(x, "syncOptions", js.undefined)
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
       
-      @scala.inline
-      def setTheme(value: WebTheme | String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: WebTheme | String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+      inline def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+      inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
     }
   }
   
@@ -400,35 +331,26 @@ object web {
   }
   object WebServerSyncOptions {
     
-    @scala.inline
-    def apply(): WebServerSyncOptions = {
+    inline def apply(): WebServerSyncOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebServerSyncOptions]
     }
     
-    @scala.inline
-    implicit class WebServerSyncOptionsMutableBuilder[Self <: WebServerSyncOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WebServerSyncOptions](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: js.Array[String]): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: js.Array[String]): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
+      inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
       
-      @scala.inline
-      def setBrowserVarargs(value: String*): Self = StObject.set(x, "browser", js.Array(value :_*))
+      inline def setBrowserVarargs(value: String*): Self = StObject.set(x, "browser", js.Array(value :_*))
       
-      @scala.inline
-      def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
+      inline def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
+      inline def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     }
   }
   
@@ -440,26 +362,20 @@ object web {
   }
   object WebStaticConfig {
     
-    @scala.inline
-    def apply(): WebStaticConfig = {
+    inline def apply(): WebStaticConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebStaticConfig]
     }
     
-    @scala.inline
-    implicit class WebStaticConfigMutableBuilder[Self <: WebStaticConfig] (val x: Self) extends AnyVal {
+    extension [Self <: WebStaticConfig](x: Self) {
       
-      @scala.inline
-      def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
+      inline def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountUndefined: Self = StObject.set(x, "mount", js.undefined)
+      inline def setMountUndefined: Self = StObject.set(x, "mount", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
 }

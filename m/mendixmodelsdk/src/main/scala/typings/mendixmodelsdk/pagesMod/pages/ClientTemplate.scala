@@ -76,8 +76,7 @@ object ClientTemplate {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
+  inline def create(model: IModel): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -85,8 +84,7 @@ object ClientTemplate {
     * of the parent Button element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInButtonUnderCaption(container: Button): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInButtonUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
+  inline def createInButtonUnderCaption(container: Button): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInButtonUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -94,8 +92,7 @@ object ClientTemplate {
     * of the parent ControlBarButton element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInControlBarButtonUnderCaption(container: ControlBarButton): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
+  inline def createInControlBarButtonUnderCaption(container: ControlBarButton): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -106,8 +103,7 @@ object ClientTemplate {
     *  8.1.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCustomWidgetUnderLabelTemplate(container: CustomWidget): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderLabelTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
+  inline def createInCustomWidgetUnderLabelTemplate(container: CustomWidget): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderLabelTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -118,8 +114,7 @@ object ClientTemplate {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataGridUnderCaption(container: DataGrid): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
+  inline def createInDataGridUnderCaption(container: DataGrid): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -130,8 +125,7 @@ object ClientTemplate {
     *  8.6.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDynamicImageViewerUnderAlternativeText(container: DynamicImageViewer): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderAlternativeText")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
+  inline def createInDynamicImageViewerUnderAlternativeText(container: DynamicImageViewer): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderAlternativeText")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -139,8 +133,7 @@ object ClientTemplate {
     * of the parent DynamicText element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInDynamicTextUnderContent(container: DynamicText): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicTextUnderContent")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
+  inline def createInDynamicTextUnderContent(container: DynamicText): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicTextUnderContent")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -148,8 +141,7 @@ object ClientTemplate {
     * of the parent GroupBox element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderCaption(container: GroupBox): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
+  inline def createInGroupBoxUnderCaption(container: GroupBox): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -160,8 +152,7 @@ object ClientTemplate {
     *  7.18.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInInputWidgetUnderLabelTemplate(container: InputWidget): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInputWidgetUnderLabelTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
+  inline def createInInputWidgetUnderLabelTemplate(container: InputWidget): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInputWidgetUnderLabelTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -172,8 +163,7 @@ object ClientTemplate {
     *  8.12.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInInputWidgetUnderScreenReaderLabel(container: InputWidget): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInputWidgetUnderScreenReaderLabel")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
+  inline def createInInputWidgetUnderScreenReaderLabel(container: InputWidget): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInputWidgetUnderScreenReaderLabel")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -184,8 +174,7 @@ object ClientTemplate {
     *  8.6.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInStaticImageViewerUnderAlternativeText(container: StaticImageViewer): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderAlternativeText")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
+  inline def createInStaticImageViewerUnderAlternativeText(container: StaticImageViewer): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderAlternativeText")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -196,8 +185,7 @@ object ClientTemplate {
     *  8.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderBadge(container: TabPage): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderBadge")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
+  inline def createInTabPageUnderBadge(container: TabPage): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderBadge")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -208,8 +196,7 @@ object ClientTemplate {
     *  7.23.0 to 8.0.0
     */
   /* static member */
-  @scala.inline
-  def createInWidgetObjectUnderLabelTemplate(container: WidgetObject): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetObjectUnderLabelTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
+  inline def createInWidgetObjectUnderLabelTemplate(container: WidgetObject): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetObjectUnderLabelTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -220,20 +207,17 @@ object ClientTemplate {
     *  7.23.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValueUnderTextTemplate(container: WidgetValue): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderTextTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
+  inline def createInWidgetValueUnderTextTemplate(container: WidgetValue): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderTextTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

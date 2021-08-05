@@ -17,13 +17,10 @@ object CharacterCompressionType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def PUNCTUATION_AND_KANA: `2` = 2.asInstanceOf[`2`]
+    inline def PUNCTUATION_AND_KANA: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def PUNCTUATION_ONLY: `1` = 1.asInstanceOf[`1`]
+    inline def PUNCTUATION_ONLY: `1` = 1.asInstanceOf[`1`]
   }
 }

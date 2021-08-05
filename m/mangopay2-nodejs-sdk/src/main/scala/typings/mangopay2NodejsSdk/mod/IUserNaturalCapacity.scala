@@ -20,19 +20,15 @@ trait IUserNaturalCapacity extends StObject {
 }
 object IUserNaturalCapacity {
   
-  @scala.inline
-  def apply(): IUserNaturalCapacity = {
+  inline def apply(): IUserNaturalCapacity = {
     val __obj = js.Dynamic.literal(Declarative = "DECLARATIVE", Normal = "NORMAL")
     __obj.asInstanceOf[IUserNaturalCapacity]
   }
   
-  @scala.inline
-  implicit class IUserNaturalCapacityMutableBuilder[Self <: IUserNaturalCapacity] (val x: Self) extends AnyVal {
+  extension [Self <: IUserNaturalCapacity](x: Self) {
     
-    @scala.inline
-    def setDeclarative(value: DECLARATIVE): Self = StObject.set(x, "Declarative", value.asInstanceOf[js.Any])
+    inline def setDeclarative(value: DECLARATIVE): Self = StObject.set(x, "Declarative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal(value: NORMAL): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: NORMAL): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
   }
 }

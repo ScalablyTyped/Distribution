@@ -9,8 +9,7 @@ trait AnimationStateAdapter2
      with AnimationStateListener2
 object AnimationStateAdapter2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     complete: TrackEntry => Unit,
     dispose: TrackEntry => Unit,
     end: TrackEntry => Unit,

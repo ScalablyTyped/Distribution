@@ -15,19 +15,15 @@ trait AppointmentOrganizer extends StObject {
 }
 object AppointmentOrganizer {
   
-  @scala.inline
-  def apply(address: String, displayName: String): AppointmentOrganizer = {
+  inline def apply(address: String, displayName: String): AppointmentOrganizer = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppointmentOrganizer]
   }
   
-  @scala.inline
-  implicit class AppointmentOrganizerMutableBuilder[Self <: AppointmentOrganizer] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentOrganizer](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
   }
 }

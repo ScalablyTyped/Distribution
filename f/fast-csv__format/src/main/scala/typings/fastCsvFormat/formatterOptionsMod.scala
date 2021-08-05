@@ -76,110 +76,76 @@ object formatterOptionsMod {
   }
   object FormatterOptionsArgs {
     
-    @scala.inline
-    def apply[I /* <: Row */, O /* <: Row */](): FormatterOptionsArgs[I, O] = {
+    inline def apply[I /* <: Row */, O /* <: Row */](): FormatterOptionsArgs[I, O] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormatterOptionsArgs[I, O]]
     }
     
-    @scala.inline
-    implicit class FormatterOptionsArgsMutableBuilder[Self <: FormatterOptionsArgs[?, ?], I /* <: Row */, O /* <: Row */] (val x: Self & (FormatterOptionsArgs[I, O])) extends AnyVal {
+    extension [Self <: FormatterOptionsArgs[?, ?], I /* <: Row */, O /* <: Row */](x: Self & (FormatterOptionsArgs[I, O])) {
       
-      @scala.inline
-      def setAlwaysWriteHeaders(value: Boolean): Self = StObject.set(x, "alwaysWriteHeaders", value.asInstanceOf[js.Any])
+      inline def setAlwaysWriteHeaders(value: Boolean): Self = StObject.set(x, "alwaysWriteHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysWriteHeadersUndefined: Self = StObject.set(x, "alwaysWriteHeaders", js.undefined)
+      inline def setAlwaysWriteHeadersUndefined: Self = StObject.set(x, "alwaysWriteHeaders", js.undefined)
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setEscape(value: String): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      inline def setEscape(value: String): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Boolean | js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Boolean | js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersNull: Self = StObject.set(x, "headers", null)
+      inline def setHeadersNull: Self = StObject.set(x, "headers", null)
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setIncludeEndRowDelimiter(value: Boolean): Self = StObject.set(x, "includeEndRowDelimiter", value.asInstanceOf[js.Any])
+      inline def setIncludeEndRowDelimiter(value: Boolean): Self = StObject.set(x, "includeEndRowDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeEndRowDelimiterUndefined: Self = StObject.set(x, "includeEndRowDelimiter", js.undefined)
+      inline def setIncludeEndRowDelimiterUndefined: Self = StObject.set(x, "includeEndRowDelimiter", js.undefined)
       
-      @scala.inline
-      def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
       
-      @scala.inline
-      def setQuote(value: String | Boolean): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+      inline def setQuote(value: String | Boolean): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuoteColumns(value: QuoteColumns): Self = StObject.set(x, "quoteColumns", value.asInstanceOf[js.Any])
+      inline def setQuoteColumns(value: QuoteColumns): Self = StObject.set(x, "quoteColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuoteColumnsUndefined: Self = StObject.set(x, "quoteColumns", js.undefined)
+      inline def setQuoteColumnsUndefined: Self = StObject.set(x, "quoteColumns", js.undefined)
       
-      @scala.inline
-      def setQuoteColumnsVarargs(value: Boolean*): Self = StObject.set(x, "quoteColumns", js.Array(value :_*))
+      inline def setQuoteColumnsVarargs(value: Boolean*): Self = StObject.set(x, "quoteColumns", js.Array(value :_*))
       
-      @scala.inline
-      def setQuoteHeaders(value: QuoteColumns): Self = StObject.set(x, "quoteHeaders", value.asInstanceOf[js.Any])
+      inline def setQuoteHeaders(value: QuoteColumns): Self = StObject.set(x, "quoteHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuoteHeadersUndefined: Self = StObject.set(x, "quoteHeaders", js.undefined)
+      inline def setQuoteHeadersUndefined: Self = StObject.set(x, "quoteHeaders", js.undefined)
       
-      @scala.inline
-      def setQuoteHeadersVarargs(value: Boolean*): Self = StObject.set(x, "quoteHeaders", js.Array(value :_*))
+      inline def setQuoteHeadersVarargs(value: Boolean*): Self = StObject.set(x, "quoteHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
+      inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
       
-      @scala.inline
-      def setRowDelimiter(value: String): Self = StObject.set(x, "rowDelimiter", value.asInstanceOf[js.Any])
+      inline def setRowDelimiter(value: String): Self = StObject.set(x, "rowDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowDelimiterUndefined: Self = StObject.set(x, "rowDelimiter", js.undefined)
+      inline def setRowDelimiterUndefined: Self = StObject.set(x, "rowDelimiter", js.undefined)
       
-      @scala.inline
-      def setTransform(value: RowTransformFunction[I, O]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: RowTransformFunction[I, O]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformFunction1(value: I => O): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransformFunction1(value: I => O): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformFunction2(value: (I, /* cb */ RowTransformCallback[O]) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+      inline def setTransformFunction2(value: (I, /* cb */ RowTransformCallback[O]) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setWriteBOM(value: Boolean): Self = StObject.set(x, "writeBOM", value.asInstanceOf[js.Any])
+      inline def setWriteBOM(value: Boolean): Self = StObject.set(x, "writeBOM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteBOMUndefined: Self = StObject.set(x, "writeBOM", js.undefined)
+      inline def setWriteBOMUndefined: Self = StObject.set(x, "writeBOM", js.undefined)
       
-      @scala.inline
-      def setWriteHeaders(value: Boolean): Self = StObject.set(x, "writeHeaders", value.asInstanceOf[js.Any])
+      inline def setWriteHeaders(value: Boolean): Self = StObject.set(x, "writeHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteHeadersUndefined: Self = StObject.set(x, "writeHeaders", js.undefined)
+      inline def setWriteHeadersUndefined: Self = StObject.set(x, "writeHeaders", js.undefined)
     }
   }
   

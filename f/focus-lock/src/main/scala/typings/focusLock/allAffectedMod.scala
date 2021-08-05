@@ -12,8 +12,6 @@ object allAffectedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAllAffectedNodes(node: js.Array[HTMLElement]): js.Array[HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllAffectedNodes")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLInputElement]]
-  @scala.inline
-  def getAllAffectedNodes(node: HTMLElement): js.Array[HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllAffectedNodes")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLInputElement]]
+  inline def getAllAffectedNodes(node: js.Array[HTMLElement]): js.Array[HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllAffectedNodes")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLInputElement]]
+  inline def getAllAffectedNodes(node: HTMLElement): js.Array[HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllAffectedNodes")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLInputElement]]
 }

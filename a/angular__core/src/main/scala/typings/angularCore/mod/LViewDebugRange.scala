@@ -34,28 +34,21 @@ trait LViewDebugRange extends StObject {
 }
 object LViewDebugRange {
   
-  @scala.inline
-  def apply(content: js.Array[LViewDebugRangeContent], end: Double, length: Double, start: Double): LViewDebugRange = {
+  inline def apply(content: js.Array[LViewDebugRangeContent], end: Double, length: Double, start: Double): LViewDebugRange = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[LViewDebugRange]
   }
   
-  @scala.inline
-  implicit class LViewDebugRangeMutableBuilder[Self <: LViewDebugRange] (val x: Self) extends AnyVal {
+  extension [Self <: LViewDebugRange](x: Self) {
     
-    @scala.inline
-    def setContent(value: js.Array[LViewDebugRangeContent]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Array[LViewDebugRangeContent]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentVarargs(value: LViewDebugRangeContent*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: LViewDebugRangeContent*): Self = StObject.set(x, "content", js.Array(value :_*))
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

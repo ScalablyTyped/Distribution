@@ -13,16 +13,13 @@ trait DescribeDomainInput extends StObject {
 }
 object DescribeDomainInput {
   
-  @scala.inline
-  def apply(name: DomainName): DescribeDomainInput = {
+  inline def apply(name: DomainName): DescribeDomainInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDomainInput]
   }
   
-  @scala.inline
-  implicit class DescribeDomainInputMutableBuilder[Self <: DescribeDomainInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDomainInput](x: Self) {
     
-    @scala.inline
-    def setName(value: DomainName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: DomainName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

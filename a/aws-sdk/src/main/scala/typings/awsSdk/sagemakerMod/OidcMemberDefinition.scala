@@ -13,19 +13,15 @@ trait OidcMemberDefinition extends StObject {
 }
 object OidcMemberDefinition {
   
-  @scala.inline
-  def apply(Groups: Groups): OidcMemberDefinition = {
+  inline def apply(Groups: Groups): OidcMemberDefinition = {
     val __obj = js.Dynamic.literal(Groups = Groups.asInstanceOf[js.Any])
     __obj.asInstanceOf[OidcMemberDefinition]
   }
   
-  @scala.inline
-  implicit class OidcMemberDefinitionMutableBuilder[Self <: OidcMemberDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: OidcMemberDefinition](x: Self) {
     
-    @scala.inline
-    def setGroups(value: Groups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: Groups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value :_*))
   }
 }

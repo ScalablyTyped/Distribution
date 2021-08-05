@@ -106,8 +106,7 @@ object basic {
        with SVGCircleSelector
   object CircleSelectors {
     
-    @scala.inline
-    def apply(): CircleSelectors = {
+    inline def apply(): CircleSelectors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CircleSelectors]
     }
@@ -119,8 +118,7 @@ object basic {
        with SVGEllipseSelector
   object EllipseSelectors {
     
-    @scala.inline
-    def apply(): EllipseSelectors = {
+    inline def apply(): EllipseSelectors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EllipseSelectors]
     }
@@ -132,8 +130,7 @@ object basic {
        with SVGImageSelector
   object ImageSelectors {
     
-    @scala.inline
-    def apply(): ImageSelectors = {
+    inline def apply(): ImageSelectors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageSelectors]
     }
@@ -145,8 +142,7 @@ object basic {
        with SVGPathSelector
   object PathSelectors {
     
-    @scala.inline
-    def apply(): PathSelectors = {
+    inline def apply(): PathSelectors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PathSelectors]
     }
@@ -158,8 +154,7 @@ object basic {
        with SVGPolygonSelector
   object PolygonSelectors {
     
-    @scala.inline
-    def apply(): PolygonSelectors = {
+    inline def apply(): PolygonSelectors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PolygonSelectors]
     }
@@ -171,8 +166,7 @@ object basic {
        with SVGPolylineSelector
   object PolylineSelectors {
     
-    @scala.inline
-    def apply(): PolylineSelectors = {
+    inline def apply(): PolylineSelectors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PolylineSelectors]
     }
@@ -184,8 +178,7 @@ object basic {
        with SVGRectSelector
   object RectSelectors {
     
-    @scala.inline
-    def apply(): RectSelectors = {
+    inline def apply(): RectSelectors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RectSelectors]
     }
@@ -201,20 +194,16 @@ object basic {
   }
   object TextBlockSelectors {
     
-    @scala.inline
-    def apply(): TextBlockSelectors = {
+    inline def apply(): TextBlockSelectors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextBlockSelectors]
     }
     
-    @scala.inline
-    implicit class TextBlockSelectorsMutableBuilder[Self <: TextBlockSelectors] (val x: Self) extends AnyVal {
+    extension [Self <: TextBlockSelectors](x: Self) {
       
-      @scala.inline
-      def setDotcontent(value: SVGTextAttributes): Self = StObject.set(x, ".content", value.asInstanceOf[js.Any])
+      inline def setDotcontent(value: SVGTextAttributes): Self = StObject.set(x, ".content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotcontentUndefined: Self = StObject.set(x, ".content", js.undefined)
+      inline def setDotcontentUndefined: Self = StObject.set(x, ".content", js.undefined)
     }
   }
 }

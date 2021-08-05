@@ -20,31 +20,23 @@ trait InstanceManagedByIgmErrorInstanceActionDetails extends StObject {
 }
 object InstanceManagedByIgmErrorInstanceActionDetails {
   
-  @scala.inline
-  def apply(): InstanceManagedByIgmErrorInstanceActionDetails = {
+  inline def apply(): InstanceManagedByIgmErrorInstanceActionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceManagedByIgmErrorInstanceActionDetails]
   }
   
-  @scala.inline
-  implicit class InstanceManagedByIgmErrorInstanceActionDetailsMutableBuilder[Self <: InstanceManagedByIgmErrorInstanceActionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceManagedByIgmErrorInstanceActionDetails](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    @scala.inline
-    def setVersion(value: ManagedInstanceVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: ManagedInstanceVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

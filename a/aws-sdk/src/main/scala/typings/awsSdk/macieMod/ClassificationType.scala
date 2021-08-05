@@ -18,19 +18,15 @@ trait ClassificationType extends StObject {
 }
 object ClassificationType {
   
-  @scala.inline
-  def apply(continuous: S3ContinuousClassificationType, oneTime: S3OneTimeClassificationType): ClassificationType = {
+  inline def apply(continuous: S3ContinuousClassificationType, oneTime: S3OneTimeClassificationType): ClassificationType = {
     val __obj = js.Dynamic.literal(continuous = continuous.asInstanceOf[js.Any], oneTime = oneTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassificationType]
   }
   
-  @scala.inline
-  implicit class ClassificationTypeMutableBuilder[Self <: ClassificationType] (val x: Self) extends AnyVal {
+  extension [Self <: ClassificationType](x: Self) {
     
-    @scala.inline
-    def setContinuous(value: S3ContinuousClassificationType): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
+    inline def setContinuous(value: S3ContinuousClassificationType): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneTime(value: S3OneTimeClassificationType): Self = StObject.set(x, "oneTime", value.asInstanceOf[js.Any])
+    inline def setOneTime(value: S3OneTimeClassificationType): Self = StObject.set(x, "oneTime", value.asInstanceOf[js.Any])
   }
 }

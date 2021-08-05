@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(filename: String): ReadStream = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[ReadStream]
-  @scala.inline
-  def apply(filename: String, options: GulpZipOptions): ReadStream = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadStream]
+  inline def apply(filename: String): ReadStream = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[ReadStream]
+  inline def apply(filename: String, options: GulpZipOptions): ReadStream = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadStream]
   
   @JSImport("gulp-zip", JSImport.Namespace)
   @js.native
@@ -38,26 +36,20 @@ object mod {
   }
   object GulpZipOptions {
     
-    @scala.inline
-    def apply(): GulpZipOptions = {
+    inline def apply(): GulpZipOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GulpZipOptions]
     }
     
-    @scala.inline
-    implicit class GulpZipOptionsMutableBuilder[Self <: GulpZipOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GulpZipOptions](x: Self) {
       
-      @scala.inline
-      def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+      inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
-      @scala.inline
-      def setModifiedTime(value: Date): Self = StObject.set(x, "modifiedTime", value.asInstanceOf[js.Any])
+      inline def setModifiedTime(value: Date): Self = StObject.set(x, "modifiedTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedTimeUndefined: Self = StObject.set(x, "modifiedTime", js.undefined)
+      inline def setModifiedTimeUndefined: Self = StObject.set(x, "modifiedTime", js.undefined)
     }
   }
 }

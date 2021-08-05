@@ -58,8 +58,7 @@ trait Distribution extends StObject {
 }
 object Distribution {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ARN: String,
     DistributionConfig: DistributionConfig,
     DomainName: String,
@@ -72,49 +71,34 @@ object Distribution {
     __obj.asInstanceOf[Distribution]
   }
   
-  @scala.inline
-  implicit class DistributionMutableBuilder[Self <: Distribution] (val x: Self) extends AnyVal {
+  extension [Self <: Distribution](x: Self) {
     
-    @scala.inline
-    def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveTrustedKeyGroups(value: ActiveTrustedKeyGroups): Self = StObject.set(x, "ActiveTrustedKeyGroups", value.asInstanceOf[js.Any])
+    inline def setActiveTrustedKeyGroups(value: ActiveTrustedKeyGroups): Self = StObject.set(x, "ActiveTrustedKeyGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveTrustedKeyGroupsUndefined: Self = StObject.set(x, "ActiveTrustedKeyGroups", js.undefined)
+    inline def setActiveTrustedKeyGroupsUndefined: Self = StObject.set(x, "ActiveTrustedKeyGroups", js.undefined)
     
-    @scala.inline
-    def setActiveTrustedSigners(value: ActiveTrustedSigners): Self = StObject.set(x, "ActiveTrustedSigners", value.asInstanceOf[js.Any])
+    inline def setActiveTrustedSigners(value: ActiveTrustedSigners): Self = StObject.set(x, "ActiveTrustedSigners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveTrustedSignersUndefined: Self = StObject.set(x, "ActiveTrustedSigners", js.undefined)
+    inline def setActiveTrustedSignersUndefined: Self = StObject.set(x, "ActiveTrustedSigners", js.undefined)
     
-    @scala.inline
-    def setAliasICPRecordals(value: AliasICPRecordals): Self = StObject.set(x, "AliasICPRecordals", value.asInstanceOf[js.Any])
+    inline def setAliasICPRecordals(value: AliasICPRecordals): Self = StObject.set(x, "AliasICPRecordals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasICPRecordalsUndefined: Self = StObject.set(x, "AliasICPRecordals", js.undefined)
+    inline def setAliasICPRecordalsUndefined: Self = StObject.set(x, "AliasICPRecordals", js.undefined)
     
-    @scala.inline
-    def setAliasICPRecordalsVarargs(value: AliasICPRecordal*): Self = StObject.set(x, "AliasICPRecordals", js.Array(value :_*))
+    inline def setAliasICPRecordalsVarargs(value: AliasICPRecordal*): Self = StObject.set(x, "AliasICPRecordals", js.Array(value :_*))
     
-    @scala.inline
-    def setDistributionConfig(value: DistributionConfig): Self = StObject.set(x, "DistributionConfig", value.asInstanceOf[js.Any])
+    inline def setDistributionConfig(value: DistributionConfig): Self = StObject.set(x, "DistributionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgressInvalidationBatches(value: integer): Self = StObject.set(x, "InProgressInvalidationBatches", value.asInstanceOf[js.Any])
+    inline def setInProgressInvalidationBatches(value: integer): Self = StObject.set(x, "InProgressInvalidationBatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

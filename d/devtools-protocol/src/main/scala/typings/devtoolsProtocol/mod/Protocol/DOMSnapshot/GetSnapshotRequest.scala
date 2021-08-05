@@ -28,37 +28,27 @@ trait GetSnapshotRequest extends StObject {
 }
 object GetSnapshotRequest {
   
-  @scala.inline
-  def apply(computedStyleWhitelist: js.Array[String]): GetSnapshotRequest = {
+  inline def apply(computedStyleWhitelist: js.Array[String]): GetSnapshotRequest = {
     val __obj = js.Dynamic.literal(computedStyleWhitelist = computedStyleWhitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class GetSnapshotRequestMutableBuilder[Self <: GetSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setComputedStyleWhitelist(value: js.Array[String]): Self = StObject.set(x, "computedStyleWhitelist", value.asInstanceOf[js.Any])
+    inline def setComputedStyleWhitelist(value: js.Array[String]): Self = StObject.set(x, "computedStyleWhitelist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputedStyleWhitelistVarargs(value: String*): Self = StObject.set(x, "computedStyleWhitelist", js.Array(value :_*))
+    inline def setComputedStyleWhitelistVarargs(value: String*): Self = StObject.set(x, "computedStyleWhitelist", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeEventListeners(value: Boolean): Self = StObject.set(x, "includeEventListeners", value.asInstanceOf[js.Any])
+    inline def setIncludeEventListeners(value: Boolean): Self = StObject.set(x, "includeEventListeners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeEventListenersUndefined: Self = StObject.set(x, "includeEventListeners", js.undefined)
+    inline def setIncludeEventListenersUndefined: Self = StObject.set(x, "includeEventListeners", js.undefined)
     
-    @scala.inline
-    def setIncludePaintOrder(value: Boolean): Self = StObject.set(x, "includePaintOrder", value.asInstanceOf[js.Any])
+    inline def setIncludePaintOrder(value: Boolean): Self = StObject.set(x, "includePaintOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludePaintOrderUndefined: Self = StObject.set(x, "includePaintOrder", js.undefined)
+    inline def setIncludePaintOrderUndefined: Self = StObject.set(x, "includePaintOrder", js.undefined)
     
-    @scala.inline
-    def setIncludeUserAgentShadowTree(value: Boolean): Self = StObject.set(x, "includeUserAgentShadowTree", value.asInstanceOf[js.Any])
+    inline def setIncludeUserAgentShadowTree(value: Boolean): Self = StObject.set(x, "includeUserAgentShadowTree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUserAgentShadowTreeUndefined: Self = StObject.set(x, "includeUserAgentShadowTree", js.undefined)
+    inline def setIncludeUserAgentShadowTreeUndefined: Self = StObject.set(x, "includeUserAgentShadowTree", js.undefined)
   }
 }

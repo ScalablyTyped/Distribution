@@ -33,8 +33,7 @@ trait ASPxClientEvent[T] extends StObject {
 }
 object ASPxClientEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     AddHandler: T => Unit,
     ClearHandlers: () => Unit,
     FireEvent: (js.Any, ASPxClientEventArgs) => Unit,
@@ -44,19 +43,14 @@ object ASPxClientEvent {
     __obj.asInstanceOf[ASPxClientEvent[T]]
   }
   
-  @scala.inline
-  implicit class ASPxClientEventMutableBuilder[Self <: ASPxClientEvent[?], T] (val x: Self & ASPxClientEvent[T]) extends AnyVal {
+  extension [Self <: ASPxClientEvent[?], T](x: Self & ASPxClientEvent[T]) {
     
-    @scala.inline
-    def setAddHandler(value: T => Unit): Self = StObject.set(x, "AddHandler", js.Any.fromFunction1(value))
+    inline def setAddHandler(value: T => Unit): Self = StObject.set(x, "AddHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearHandlers(value: () => Unit): Self = StObject.set(x, "ClearHandlers", js.Any.fromFunction0(value))
+    inline def setClearHandlers(value: () => Unit): Self = StObject.set(x, "ClearHandlers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFireEvent(value: (js.Any, ASPxClientEventArgs) => Unit): Self = StObject.set(x, "FireEvent", js.Any.fromFunction2(value))
+    inline def setFireEvent(value: (js.Any, ASPxClientEventArgs) => Unit): Self = StObject.set(x, "FireEvent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveHandler(value: T => Unit): Self = StObject.set(x, "RemoveHandler", js.Any.fromFunction1(value))
+    inline def setRemoveHandler(value: T => Unit): Self = StObject.set(x, "RemoveHandler", js.Any.fromFunction1(value))
   }
 }

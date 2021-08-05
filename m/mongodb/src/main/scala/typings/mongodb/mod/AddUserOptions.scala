@@ -16,31 +16,23 @@ trait AddUserOptions
 }
 object AddUserOptions {
   
-  @scala.inline
-  def apply(fsync: Boolean): AddUserOptions = {
+  inline def apply(fsync: Boolean): AddUserOptions = {
     val __obj = js.Dynamic.literal(fsync = fsync.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddUserOptions]
   }
   
-  @scala.inline
-  implicit class AddUserOptionsMutableBuilder[Self <: AddUserOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddUserOptions](x: Self) {
     
-    @scala.inline
-    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
+    inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
     
-    @scala.inline
-    def setFsync(value: Boolean): Self = StObject.set(x, "fsync", value.asInstanceOf[js.Any])
+    inline def setFsync(value: Boolean): Self = StObject.set(x, "fsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoles(value: js.Array[js.Object]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: js.Array[js.Object]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+    inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    @scala.inline
-    def setRolesVarargs(value: js.Object*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: js.Object*): Self = StObject.set(x, "roles", js.Array(value :_*))
   }
 }

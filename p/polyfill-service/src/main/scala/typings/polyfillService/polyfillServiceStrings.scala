@@ -12,27 +12,23 @@ object polyfillServiceStrings {
   sealed trait always
     extends StObject
        with PolyfillFlag
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
   sealed trait gated
     extends StObject
        with PolyfillFlag
-  @scala.inline
-  def gated: gated = "gated".asInstanceOf[gated]
+  inline def gated: gated = "gated".asInstanceOf[gated]
   
   @js.native
   sealed trait ignore
     extends StObject
        with Unknown
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
   sealed trait polyfill
     extends StObject
        with Unknown
-  @scala.inline
-  def polyfill: polyfill = "polyfill".asInstanceOf[polyfill]
+  inline def polyfill: polyfill = "polyfill".asInstanceOf[polyfill]
 }

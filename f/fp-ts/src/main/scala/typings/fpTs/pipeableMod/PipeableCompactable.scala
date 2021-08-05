@@ -20,8 +20,7 @@ trait PipeableCompactable[F] extends StObject {
 }
 object PipeableCompactable {
   
-  @scala.inline
-  def apply[F](
+  inline def apply[F](
     compact: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Option<A>> */ js.Any => js.Any,
     separate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Either<A, B>> */ js.Any => Separated[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, 
@@ -32,16 +31,13 @@ object PipeableCompactable {
     __obj.asInstanceOf[PipeableCompactable[F]]
   }
   
-  @scala.inline
-  implicit class PipeableCompactableMutableBuilder[Self <: PipeableCompactable[?], F] (val x: Self & PipeableCompactable[F]) extends AnyVal {
+  extension [Self <: PipeableCompactable[?], F](x: Self & PipeableCompactable[F]) {
     
-    @scala.inline
-    def setCompact(
+    inline def setCompact(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Option<A>> */ js.Any => js.Any
     ): Self = StObject.set(x, "compact", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSeparate(
+    inline def setSeparate(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Either<A, B>> */ js.Any => Separated[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any

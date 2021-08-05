@@ -17,20 +17,16 @@ object anomalyBloodhoundTypesMod {
   }
   object IReportType {
     
-    @scala.inline
-    def apply(id: String, timeoutTime: Double): IReportType = {
+    inline def apply(id: String, timeoutTime: Double): IReportType = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], timeoutTime = timeoutTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[IReportType]
     }
     
-    @scala.inline
-    implicit class IReportTypeMutableBuilder[Self <: IReportType] (val x: Self) extends AnyVal {
+    extension [Self <: IReportType](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutTime(value: Double): Self = StObject.set(x, "timeoutTime", value.asInstanceOf[js.Any])
+      inline def setTimeoutTime(value: Double): Self = StObject.set(x, "timeoutTime", value.asInstanceOf[js.Any])
     }
   }
   

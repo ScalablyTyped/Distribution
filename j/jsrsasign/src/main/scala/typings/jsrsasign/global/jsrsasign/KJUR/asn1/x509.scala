@@ -1020,15 +1020,13 @@ object x509 {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def appendByNameToArray_authorityinfoaccess(
+    inline def appendByNameToArray_authorityinfoaccess(
       name: authorityinfoaccess,
       extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
       a: js.Array[js.Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendByNameToArray")(name.asInstanceOf[js.Any], extParams.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def appendByNameToArray_authoritykeyidentifier(
+    inline def appendByNameToArray_authoritykeyidentifier(
       name: authoritykeyidentifier,
       extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
       a: js.Array[js.Any]
@@ -1049,43 +1047,37 @@ object x509 {
       * KJUR.asn1.x509.Extension.appendByNameToArray("KeyUsage", {'bin':'11'}, a);
       */
     /* static member */
-    @scala.inline
-    def appendByNameToArray_basicconstraints(
+    inline def appendByNameToArray_basicconstraints(
       name: basicconstraints,
       extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
       a: js.Array[js.Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendByNameToArray")(name.asInstanceOf[js.Any], extParams.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def appendByNameToArray_crldistributionpoints(
+    inline def appendByNameToArray_crldistributionpoints(
       name: crldistributionpoints,
       extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
       a: js.Array[js.Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendByNameToArray")(name.asInstanceOf[js.Any], extParams.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def appendByNameToArray_extkeyusage(
+    inline def appendByNameToArray_extkeyusage(
       name: extkeyusage,
       extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
       a: js.Array[js.Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendByNameToArray")(name.asInstanceOf[js.Any], extParams.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def appendByNameToArray_issueraltname(
+    inline def appendByNameToArray_issueraltname(
       name: issueraltname,
       extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
       a: js.Array[js.Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendByNameToArray")(name.asInstanceOf[js.Any], extParams.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def appendByNameToArray_keyusage(
+    inline def appendByNameToArray_keyusage(
       name: keyusage,
       extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
       a: js.Array[js.Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendByNameToArray")(name.asInstanceOf[js.Any], extParams.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def appendByNameToArray_subjectaltname(
+    inline def appendByNameToArray_subjectaltname(
       name: subjectaltname,
       extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
       a: js.Array[js.Any]
@@ -1362,8 +1354,7 @@ object x509 {
       * KJUR.asn1.x509.OID.atype2obj('CN') → 2.5.4.3
       * KJUR.asn1.x509.OID.atype2obj('OU') → 2.5.4.11
       */
-    @scala.inline
-    def atype2obj(atype: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atype2obj")(atype.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def atype2obj(atype: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atype2obj")(atype.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** for short attribute type name and oid (ex. 'C' and '2.5.4.6') */
     @JSGlobal("jsrsasign.KJUR.asn1.x509.OID.atype2oidList")
@@ -1376,8 +1367,7 @@ object x509 {
       * @example
       * var asn1ObjOID = OID.name2obj('SHA1withRSA');
       */
-    @scala.inline
-    def name2obj(name: String): typings.jsrsasign.jsrsasign.KJUR.asn1.DERObjectIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("name2obj")(name.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.KJUR.asn1.DERObjectIdentifier]
+    inline def name2obj(name: String): typings.jsrsasign.jsrsasign.KJUR.asn1.DERObjectIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("name2obj")(name.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.KJUR.asn1.DERObjectIdentifier]
     
     /**
       * convert OID name to OID value
@@ -1389,8 +1379,7 @@ object x509 {
       * @example
       * KJUR.asn1.x509.OID.name2oid("authorityInfoAccess") → 1.3.6.1.5.5.7.1.1
       */
-    @scala.inline
-    def name2oid(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name2oid")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def name2oid(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name2oid")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** for oid name and oid (ex. 'keyUsage' and '2.5.29.15') */
     @JSGlobal("jsrsasign.KJUR.asn1.x509.OID.name2oidList")
@@ -1410,8 +1399,7 @@ object x509 {
       * KJUR.asn1.x509.OID.oid2atype("1.3.6.1.4.1.311.60.2.1.3") → jurisdictionOfIncorporationC
       * KJUR.asn1.x509.OID.oid2atype("0.1.2.3.4") → 0.1.2.3.4 // unregistered OID
       */
-    @scala.inline
-    def oid2atype(oid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oid2atype")(oid.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def oid2atype(oid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oid2atype")(oid.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * convert OID to name
@@ -1423,10 +1411,8 @@ object x509 {
       * @example
       * KJUR.asn1.x509.OID.oid2name("1.3.6.1.5.5.7.1.1") → 'authorityInfoAccess'
       */
-    @scala.inline
-    def oid2name(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oid2name")().asInstanceOf[String]
-    @scala.inline
-    def oid2name(oid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oid2name")(oid.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def oid2name(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oid2name")().asInstanceOf[String]
+    inline def oid2name(oid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oid2name")(oid.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** for caching name and DERObjectIdentifier object */
     object objCache
@@ -1557,8 +1543,7 @@ object x509 {
       * KJUR.asn1.x509.RDN.parseString("CN=john+OU=test+OU=t1") → ["CN=john", "OU=test", "OU=t1"]
       */
     /* static member */
-    @scala.inline
-    def parseString(s: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(s.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def parseString(s: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(s.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
   
   /**
@@ -2051,8 +2036,7 @@ object x509 {
       * KJUR.asn1.x509.X500Name.ldapToOneline('O=a/a,C=US')  → '/C=US/O=a\/a'
       */
     /* static member */
-    @scala.inline
-    def ldapToOneline(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ldapToOneline")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ldapToOneline(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ldapToOneline")(s.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * convert OpenSSL oneline distinguished name format string to LDAP(RFC 2253) format
@@ -2069,8 +2053,7 @@ object x509 {
       * KJUR.asn1.x509.X500Name.onelineToLDAP("/C=US/O=a,a") → 'O=a\,a,C=US'
       */
     /* static member */
-    @scala.inline
-    def onelineToLDAP(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("onelineToLDAP")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def onelineToLDAP(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("onelineToLDAP")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object X509Util {
@@ -2147,9 +2130,7 @@ object x509 {
       *   sighex: '0102030405..'
       * });
       */
-    @scala.inline
-    def newCertPEM(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("newCertPEM")().asInstanceOf[String]
-    @scala.inline
-    def newCertPEM(param: Cakey): String = ^.asInstanceOf[js.Dynamic].applyDynamic("newCertPEM")(param.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def newCertPEM(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("newCertPEM")().asInstanceOf[String]
+    inline def newCertPEM(param: Cakey): String = ^.asInstanceOf[js.Dynamic].applyDynamic("newCertPEM")(param.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

@@ -22,8 +22,7 @@ trait PlayReadyLicenseSession extends StObject {
 }
 object PlayReadyLicenseSession {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     configureMediaProtectionManager: MediaProtectionManager => Unit,
     createLAServiceRequest: () => IPlayReadyLicenseAcquisitionServiceRequest
   ): PlayReadyLicenseSession = {
@@ -31,13 +30,10 @@ object PlayReadyLicenseSession {
     __obj.asInstanceOf[PlayReadyLicenseSession]
   }
   
-  @scala.inline
-  implicit class PlayReadyLicenseSessionMutableBuilder[Self <: PlayReadyLicenseSession] (val x: Self) extends AnyVal {
+  extension [Self <: PlayReadyLicenseSession](x: Self) {
     
-    @scala.inline
-    def setConfigureMediaProtectionManager(value: MediaProtectionManager => Unit): Self = StObject.set(x, "configureMediaProtectionManager", js.Any.fromFunction1(value))
+    inline def setConfigureMediaProtectionManager(value: MediaProtectionManager => Unit): Self = StObject.set(x, "configureMediaProtectionManager", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateLAServiceRequest(value: () => IPlayReadyLicenseAcquisitionServiceRequest): Self = StObject.set(x, "createLAServiceRequest", js.Any.fromFunction0(value))
+    inline def setCreateLAServiceRequest(value: () => IPlayReadyLicenseAcquisitionServiceRequest): Self = StObject.set(x, "createLAServiceRequest", js.Any.fromFunction0(value))
   }
 }

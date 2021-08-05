@@ -14,16 +14,10 @@ object hideCaretMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def enableHideCaretOnScroll(componentEl: HTMLElement): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("enableHideCaretOnScroll")(componentEl.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def enableHideCaretOnScroll(componentEl: HTMLElement, inputEl: Unit, scrollEl: HTMLIonContentElement): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableHideCaretOnScroll")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], scrollEl.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def enableHideCaretOnScroll(componentEl: HTMLElement, inputEl: HTMLInputElement): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableHideCaretOnScroll")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def enableHideCaretOnScroll(componentEl: HTMLElement, inputEl: HTMLInputElement, scrollEl: HTMLIonContentElement): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableHideCaretOnScroll")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], scrollEl.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def enableHideCaretOnScroll(componentEl: HTMLElement, inputEl: HTMLTextAreaElement): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableHideCaretOnScroll")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def enableHideCaretOnScroll(componentEl: HTMLElement, inputEl: HTMLTextAreaElement, scrollEl: HTMLIonContentElement): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableHideCaretOnScroll")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], scrollEl.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def enableHideCaretOnScroll(componentEl: HTMLElement): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("enableHideCaretOnScroll")(componentEl.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def enableHideCaretOnScroll(componentEl: HTMLElement, inputEl: Unit, scrollEl: HTMLIonContentElement): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableHideCaretOnScroll")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], scrollEl.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def enableHideCaretOnScroll(componentEl: HTMLElement, inputEl: HTMLInputElement): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableHideCaretOnScroll")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def enableHideCaretOnScroll(componentEl: HTMLElement, inputEl: HTMLInputElement, scrollEl: HTMLIonContentElement): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableHideCaretOnScroll")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], scrollEl.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def enableHideCaretOnScroll(componentEl: HTMLElement, inputEl: HTMLTextAreaElement): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableHideCaretOnScroll")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def enableHideCaretOnScroll(componentEl: HTMLElement, inputEl: HTMLTextAreaElement, scrollEl: HTMLIonContentElement): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("enableHideCaretOnScroll")(componentEl.asInstanceOf[js.Any], inputEl.asInstanceOf[js.Any], scrollEl.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
 }

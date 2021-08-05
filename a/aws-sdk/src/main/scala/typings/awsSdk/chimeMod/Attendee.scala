@@ -23,31 +23,23 @@ trait Attendee extends StObject {
 }
 object Attendee {
   
-  @scala.inline
-  def apply(): Attendee = {
+  inline def apply(): Attendee = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Attendee]
   }
   
-  @scala.inline
-  implicit class AttendeeMutableBuilder[Self <: Attendee] (val x: Self) extends AnyVal {
+  extension [Self <: Attendee](x: Self) {
     
-    @scala.inline
-    def setAttendeeId(value: GuidString): Self = StObject.set(x, "AttendeeId", value.asInstanceOf[js.Any])
+    inline def setAttendeeId(value: GuidString): Self = StObject.set(x, "AttendeeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttendeeIdUndefined: Self = StObject.set(x, "AttendeeId", js.undefined)
+    inline def setAttendeeIdUndefined: Self = StObject.set(x, "AttendeeId", js.undefined)
     
-    @scala.inline
-    def setExternalUserId(value: ExternalUserIdType): Self = StObject.set(x, "ExternalUserId", value.asInstanceOf[js.Any])
+    inline def setExternalUserId(value: ExternalUserIdType): Self = StObject.set(x, "ExternalUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalUserIdUndefined: Self = StObject.set(x, "ExternalUserId", js.undefined)
+    inline def setExternalUserIdUndefined: Self = StObject.set(x, "ExternalUserId", js.undefined)
     
-    @scala.inline
-    def setJoinToken(value: JoinTokenString): Self = StObject.set(x, "JoinToken", value.asInstanceOf[js.Any])
+    inline def setJoinToken(value: JoinTokenString): Self = StObject.set(x, "JoinToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinTokenUndefined: Self = StObject.set(x, "JoinToken", js.undefined)
+    inline def setJoinTokenUndefined: Self = StObject.set(x, "JoinToken", js.undefined)
   }
 }

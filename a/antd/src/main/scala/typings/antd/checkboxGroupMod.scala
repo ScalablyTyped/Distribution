@@ -34,47 +34,34 @@ object checkboxGroupMod extends Shortcut {
   }
   object AbstractCheckboxGroupProps {
     
-    @scala.inline
-    def apply(): AbstractCheckboxGroupProps = {
+    inline def apply(): AbstractCheckboxGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AbstractCheckboxGroupProps]
     }
     
-    @scala.inline
-    implicit class AbstractCheckboxGroupPropsMutableBuilder[Self <: AbstractCheckboxGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: AbstractCheckboxGroupProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Array[CheckboxOptionType | String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[CheckboxOptionType | String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOptionsVarargs(value: (CheckboxOptionType | String)*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: (CheckboxOptionType | String)*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -94,44 +81,32 @@ object checkboxGroupMod extends Shortcut {
   }
   object CheckboxGroupContext {
     
-    @scala.inline
-    def apply(cancelValue: String => Unit, registerValue: String => Unit): CheckboxGroupContext = {
+    inline def apply(cancelValue: String => Unit, registerValue: String => Unit): CheckboxGroupContext = {
       val __obj = js.Dynamic.literal(cancelValue = js.Any.fromFunction1(cancelValue), registerValue = js.Any.fromFunction1(registerValue))
       __obj.asInstanceOf[CheckboxGroupContext]
     }
     
-    @scala.inline
-    implicit class CheckboxGroupContextMutableBuilder[Self <: CheckboxGroupContext] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxGroupContext](x: Self) {
       
-      @scala.inline
-      def setCancelValue(value: String => Unit): Self = StObject.set(x, "cancelValue", js.Any.fromFunction1(value))
+      inline def setCancelValue(value: String => Unit): Self = StObject.set(x, "cancelValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRegisterValue(value: String => Unit): Self = StObject.set(x, "registerValue", js.Any.fromFunction1(value))
+      inline def setRegisterValue(value: String => Unit): Self = StObject.set(x, "registerValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToggleOption(value: /* option */ CheckboxOptionType => Unit): Self = StObject.set(x, "toggleOption", js.Any.fromFunction1(value))
+      inline def setToggleOption(value: /* option */ CheckboxOptionType => Unit): Self = StObject.set(x, "toggleOption", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToggleOptionUndefined: Self = StObject.set(x, "toggleOption", js.undefined)
+      inline def setToggleOptionUndefined: Self = StObject.set(x, "toggleOption", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -151,50 +126,36 @@ object checkboxGroupMod extends Shortcut {
   }
   object CheckboxGroupProps {
     
-    @scala.inline
-    def apply(): CheckboxGroupProps = {
+    inline def apply(): CheckboxGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CheckboxGroupProps]
     }
     
-    @scala.inline
-    implicit class CheckboxGroupPropsMutableBuilder[Self <: CheckboxGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxGroupProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: js.Array[CheckboxValueType]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Array[CheckboxValueType]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDefaultValueVarargs(value: CheckboxValueType*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: CheckboxValueType*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* checkedValue */ js.Array[CheckboxValueType] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* checkedValue */ js.Array[CheckboxValueType] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Array[CheckboxValueType]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[CheckboxValueType]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: CheckboxValueType*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: CheckboxValueType*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -212,41 +173,30 @@ object checkboxGroupMod extends Shortcut {
   }
   object CheckboxOptionType {
     
-    @scala.inline
-    def apply(value: CheckboxValueType): CheckboxOptionType = {
+    inline def apply(value: CheckboxValueType): CheckboxOptionType = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckboxOptionType]
     }
     
-    @scala.inline
-    implicit class CheckboxOptionTypeMutableBuilder[Self <: CheckboxOptionType] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxOptionType](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* e */ CheckboxChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* e */ CheckboxChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setValue(value: CheckboxValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: CheckboxValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
